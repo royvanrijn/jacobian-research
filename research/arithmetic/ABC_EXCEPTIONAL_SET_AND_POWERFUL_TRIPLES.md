@@ -6855,6 +6855,41 @@ valuation degrees in a way that couples different edges.
 
 #### Exact arithmetic sectors and determinant limits
 
+For minimally repaired primitive quotients, actual cyclotomic
+splitting gives a saving using all three radical bounds.
+Opposite primitive \(q\)-th powers yield the coefficient
+\(1/(\tau(q)+2)\), with \(1/4\) for squares and \(1/6\) for
+sixth powers. The fixed-factor count transfers the norm
+recovery used for Erdős #943. For same-side weighted powers
+it also gives a direct repaired-height bound when the target
+binomial splits into several nonlinear rational factors.
+A Gaussian norm family with trivial squarefree kernels
+attains the full repaired exponent when the original summand
+radical cap is dropped, even with comparable heights and a
+wholly diffuse target spectrum.
+[Cyclotomic factors and minimal repair](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md)
+
+For genuine square kernels with one short primitive summand,
+angular packing in the imaginary quadratic field saves on
+a near-dyadic-power target. The dyadic order permits a
+subpower bound on the eligible ideal classes, so the count
+pays only the summand kernel and target coefficient radicals.
+[Angular packing of primitive square kernels](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md#angular-packing-of-primitive-square-kernels-and-near-power-targets)
+
+
+Signed valuation phases allow savings without exact power
+divisibility on either free letter. The two basis variables
+can overlap in prime support and the count applies to distinct
+exact rational outputs. This excludes phase concentration on
+more than \(1/3\) of the two free masses when the remaining
+letter has positive nonatomic mass, and covers logarithmically
+many genuinely short degree windows. A microscopic entropy
+bound explains why the same small-height-product condition
+does not follow from the weak degree measures.
+[Signed valuation phases](ABC_SIGNED_VALUATION_PHASES.md)
+
+
+
 With independent exact valuation orders on just two letters,
 the count has exponent \((f+r/2+\eta)\lambda+\varepsilon\).
 Here \(f\lambda\) caps the joint coefficient radical on those
@@ -6869,6 +6904,8 @@ or \(1/3\) whenever the third spectrum contains a positive
 nonatomic part. Using the bounds in all three orientations
 excludes joint coefficient radical exponent below \(5\lambda/12\)
 by a fixed margin when all three letters admit high exact orders.
+For orders at least \(\lambda^{-\alpha}\), \(\alpha>2/3\), a thin-band
+modulus raises the threshold to \(4\lambda/9\).
 [Two valuation grids](ABC_TWO_VALUATION_GRIDS.md)
 
 
@@ -6881,8 +6918,11 @@ whose full target divisors can be combined into a single CRT
 modulus. Its numerical weight can exceed the actual shift width
 even where a fixed-shift estimate gives no saving. The general
 affordable-record count still needs a bound that uses the small
-radical of the third letter across shifts.
-[Fine valuation divisibility](ABC_FINE_VALUATION_DIVISIBILITY.md)
+radical of the third letter across shifts. A separate affine bound
+controls the occupancy of many short-interval fibres by their
+smaller residual nonatomic mass, including sparse matchings.
+[Affine count for sparse interval fibres](ABC_SPARSE_AFFINE_CONTENT.md)
+· [Fine valuation divisibility](ABC_FINE_VALUATION_DIVISIBILITY.md)
 · [Common rows with a varying shift](ABC_AGGREGATE_SHIFT_DICTIONARY_STARS.md)
 
 For one-target minimal repair, primitive row content can absorb
@@ -6890,12 +6930,63 @@ the entire extra common-slope Taylor divisor. Actual primitive
 examples attain precisely the original Taylor valuation after
 that content is removed. On the broad diffuse profile the exact
 one-root interpolation test also excludes every support with
-effective horizontal area at most \(16/19\), allowing nonnested
+effective horizontal area at most one, allowing nonnested
 supports. Paid subdivisions of only the narrow real variables
 can be matched by finite-place depth on a diffuse modulus.
 [Primitive content after repair](ABC_MINIMAL_REPAIR_PROJECTIVE_CONTENT.md)
 · [Effective area for exact Taylor supports](ABC_EXACT_TAYLOR_EFFECTIVE_AREA.md)
 · [The cost of real subdivision](ABC_WEIGHTED_HILBERT_TAYLOR.md#paying-for-short-real-intervals-by-additional-finite-place-precision)
+
+
+Occupied-interval counts are not forced by overlapping
+records, short difference determinants, or simultaneous record
+entropy using only the two free radical caps. One primitive
+matching attains the unsaved occupied-interval count for
+every affordable slot record in those relaxed hypotheses.
+Any global use of the interval bounds must retain the
+small radical of the third letter across the distinct targets.
+[Separated-interval obstruction](ABC_OVERLAPPING_FULL_RECORD_COUNTEREXAMPLES.md#simultaneous-separation-of-target-intervals)
+
+
+For minimally repaired quotients, the genuine weighted
+binomial norm can be counted in a narrow real chart even
+when it is irreducible and all ideal classes vary with the
+coefficients. In a pure prime-power field the matching
+class torsion is subpower. The full embedding determinant
+also gives a count after paying for real charts when neither
+summand is short. The distinct quadratic norm split uses
+a square norm defect and an actual reference solution; it
+removes the reference ideal from the radical count and
+does not require a short summand.
+[Primitive norm ray packing](ABC_PRIMITIVE_NORM_RAY_PACKING.md)
+· [Quadratic reference-ideal split](ABC_MINIMAL_REPAIR_IDEAL_CONTENT_SPLIT.md)
+
+The unrestricted repaired proof obligation can be stated
+as an average modular incidence of support records with
+bounded-height representatives. The true occurrence count
+has the same exponent as the primitive quotient count. At
+prime size \(Q>N^{2+\eta}\), the principal and bounded-order
+multiplicative modes now give a power saving. The entire
+remaining obligation is a saving for the signed Jacobi-sum
+correlation with all three high-order transforms. Smaller
+aggregate moduli \(Q=N^\beta\), \(1\le\beta<3/2\), attain
+the generic false-positive exponent \(3-\beta\) on explicit
+bounded-height dictionaries with all three actual radical caps.
+[True support occurrence](ABC_MINIMAL_REPAIR_SUPPORT_OCCURRENCE.md)
+· [Jacobi-sum reduction](ABC_MODULAR_JACOBI_INCIDENCE.md)
+· [False incidences at smaller moduli](ABC_MODULAR_FALSE_INCIDENCES.md)
+
+At the support primes themselves, minimally repaired
+Pythagorean power families pass the first two layers with
+\(Y^{1/M-o(1)}\) distinct target radicals. For polynomial
+models the Wronskian bounds the total formal depth and
+excludes simultaneous depth three. At actual primitive
+integer parameters with fixed-degree forms, subpower
+coefficients, and irreducible factors of degree at most four,
+passing depth three forces a power loss in the parameter
+count. This leaves unrestricted integer occurrence open.
+[Second-layer counterexample](ABC_MINIMAL_REPAIR_SUPPORT_OCCURRENCE.md#correct-heights-and-repair-through-the-second-support-layer)
+· [Polynomial support depth](ABC_POLYNOMIAL_SUPPORT_DEPTH.md)
 
 ### Scope of the few-prime sum-product approach
 

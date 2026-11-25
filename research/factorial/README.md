@@ -249,6 +249,46 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Terminal-six light-row separation from outer mean 7/25 to 3/5 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_PAIRED_LIGHT_ROWS.md) |
 | Terminal-six coprimality for every ordinary two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_ALL_PROFILES.md) |
 | Terminal-seven separation at curvature at least 73/10 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_HIGH_CURVATURE.md) |
+| A computable cutoff in bounded private cubic windows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_BOUNDED_PRIVATE_CUBIC.md) |
+| A computable cutoff in bounded private quadratic fields | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_PRIVATE_QUADRATIC_WINDOW.md) |
+| Effective private cubic field corridor | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_PRIVATE_CUBIC_FIELD.md) |
+| Effective private quadratic corridor including mixed scales | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_PRIVATE_QUADRATIC_CORRIDOR.md) |
+| A computable cutoff in bounded shared quartic windows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_BOUNDED_SHARED_QUARTIC.md) |
+| Shared terminal seven above curvature 17/4 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_SHARED_HIGH_CURVATURE.md) |
+| Terminal seven with private total degree at least two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_PRIVATE_ROWS.md) |
+| Terminal seven with one private linear row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_PRIVATE_LINEAR.md) |
+| Terminal seven above shared outer mean 19/20 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_NEAR_FLAT.md) |
+| Terminal seven in six fully shared reciprocal bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_PAIRED_LIGHT.md) |
+| One or two large (1,2) rows at terminal seven | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_MARKED_LIGHT_TAIL.md) |
+| Terminal seven for 635 retained shared-row lists | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_RETAINED_ROWS.md) |
+| A sole large (2,4) row at terminal seven | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_MARKED_24_TAIL.md) |
+| Small outer mean at terminal seven under reciprocal cap 1/8 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_SMALL_OUTER.md) |
+| Terminal seven on the upper shared outer-mean interval | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_UPPER_BRIDGE.md) |
+| Terminal seven with reciprocal cap 1/8 through outer mean 12/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_LIGHT_CAP_EXTENSION.md) |
+| Cross-order skew transfer for the first middle terminal-seven band | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_CROSS_SKEW.md) |
+| Terminal seven across the two middle shared reciprocal bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_RETAINED_BANDS.md) |
+| Terminal seven from shared outer mean 3/4 to 22/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_LATE_BRIDGE.md) |
+| Terminal-seven coprimality for every ordinary two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SEVEN_ALL_PROFILES.md) |
+| Terminal-eight separation at curvature at least 15/2 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_HIGH_CURVATURE.md) |
+| Computable shared-saddle and fold transversality | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_TRANSVERSALITY.md) |
+| Effective one-private thermal fields and positive endpoint | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_PRIVATE_THERMAL_ENDPOINT.md) |
+| Effective one-private entry near the positive real axis | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_POSITIVE_ENTRY.md) |
+| Effective one-private exclusion near the negative real axis | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_NEGATIVE_BOUNDARY.md) |
+| Effective one-private interior and all-field subcritical threshold | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_INTERIOR.md) |
+| Shared terminal eight at curvature at least 19/4 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_SHARED_HIGH_CURVATURE.md) |
+| Terminal eight with private total degree at least two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_PRIVATE_ROWS.md) |
+| Terminal eight with one private linear row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_PRIVATE_LINEAR.md) |
+| Shared terminal eight above outer mean 19/20 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_NEAR_FLAT.md) |
+| Shared terminal eight below outer mean 1/10 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_SMALL_OUTER.md) |
+| Shared terminal eight with light rows through outer mean 12/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_PAIRED_LIGHT.md) |
+| Terminal eight for 242 retained shared-row lists | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_RETAINED_ROWS.md) |
+| Terminal eight for all three marked singleton supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_MARKED_SINGLETONS.md) |
+| Shared terminal eight above outer mean 22/25 through 19/20 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_UPPER_BRIDGE.md) |
+| Shared terminal eight in the stated paired reciprocal bands through outer mean 7/10 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_PAIRED_BRIDGE.md) |
+| Effective regular contour cover for fixed shared interior bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_REGULAR_COVER.md) |
+| Effective simple-fold comparison for fixed shared subcritical bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_SUBCRITICAL_FOLD.md) |
+| Terminal eight above the middle light-row caps | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_RETAINED_BANDS.md) |
+| Terminal-eight paired bridge from outer mean 7/10 to 18/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_PAIRED_BRIDGE_72.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -336,14 +376,14 @@ Scope limits:
 - Terminal five also holds for W(X)(A+B M(Y)) with W and nonconstant M on disjoint variable sets.
 - At fixed terminals, small curvature and the explicit large-curvature criteria exclude common roots. The positive-curvature diffuse model yields uniform small-relative-gap closure through terminal 22, with no upper bound on dimension or exponents.
 - A private variable on each side and shared curvature at least 4 log 8 give all-terminal closure. Mirrored profiles with paired equal positive Gamma shapes have simple unit-circle roots at each individual order; generic degreewise composition does not transfer consecutive coprimality.
-- Arbitrary ordinary two-monomial profiles are covered through terminal six. One mirrored unit-gap pair and a constant plus any monomial of total degree up to three are covered at every order. An absolute unevaluated terminal cutoff is proved for all constant-plus-monomial profiles.
+- Arbitrary ordinary two-monomial profiles are covered through terminal seven. One mirrored unit-gap pair and a constant plus any monomial of total degree up to three are covered at every order. An absolute unevaluated terminal cutoff is proved for all constant-plus-monomial profiles.
 - At every terminal the explicit weak-curvature bound and the explicit large-outer-loss bound cover endpoint ranges. Strong diffuse curvature gives strict interlacing uniformly in degree, and diffuse coprimality eventually holds at every fixed positive s. For fully shared profiles with bounded midpoint curvature, the coefficient-phase link is uniform across degrees. For a fixed fully shared support, the conditional contour has a two-sheet stationary map, with eventual exclusion near noncusp real scales and on bounded cusp windows.
 - An exact Rice contour gives the upper stationary equation for arbitrary supports and a monotone lower phase. For fixed fully shared equal-degree profiles at and above the cusp, both saddles contribute near the equal-modulus graph and their consecutive phases separate. Private profiles have exact single-sheet geometry and local boundary exclusions. The diffuse moving critical window and same-orientation unit-gap prime and post-prime terminals are closed in their stated scopes.
 - Eventual coprimality is proved for every fixed ordinary two-monomial support, with a profile-dependent nonexplicit cutoff. The full complex simple-fold neighborhoods are covered. The real quartic and private cubic critical transitions are included. The exactly diffuse model has one eventual threshold for all positive couplings. Uniform radial and centered stationary localization apply to varying profiles.
 - Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
 - A three-column ordinary factorial row identification has regular endpoint moments in orders two through four and a certified collision in the physical interpolation. This excludes physical-interval nonvanishing as a general transfer proof. The discrete endpoint question and the unrestricted two-column interval remain open.
 - The exact joint measure closure has a specific diagonal diffuse law and an independent signed center parameter. An all-order physical binary transfer is proved with untouched independent private degree at least two on both sides.
-- All ordinary two-monomial supports satisfy consecutive coprimality above one absolute unevaluated terminal cutoff. At any N>=3, only 10^-16 N^(-8/3)<S<64 remains to test. Every ordinary two-monomial profile is covered through terminal six. The remaining finite prefix starts at terminal seven, where S>=73/10 is also covered. Prescribed finite prime-power screens can all fail inside any positive curvature interval.
+- Every ordinary two-monomial profile is covered through terminal seven and above one absolute unevaluated cutoff. At terminal eight, private rows and several linked shared ranges are covered. There are also computable bounded shared quartic cutoffs, regular and fold transversality margins, and an all-field cutoff for one-private-linear profiles with 0<=sigma<=1+delta.
 
 Tracked obligations (computed states):
 

@@ -64,7 +64,13 @@ Here is the proof for a fixed \(M\) after collinearity on a nondegenerate line. 
 
 If the weight of \(M/\gcd(c,M)\) tends to zero, the intercept \(c\) retains essentially the entire original weight of \(M\) on its support. Strip and fix the root parts supported on the line coefficients as above, then divide the fixed coefficient gcd. Since \(u,v\) are units at the primes of \(M\) and \(a,b\) are coprime, the large-weight divisor of the fixed shift survives. Its high-valuation part is again a positive-weight \(k\)-full modulus. This case does not require close residual caps. If both remaining free degree measures have positive nonatomic mass, either can supply an additional full modulus of arbitrarily small normalized cost from a compact positive band. Freeze such a modulus on one letter; the other satisfies a fixed unit congruence since all variable roots are prime to the line coefficients after support stripping. Apply the same one-letter grouped counting argument and then swap the letters. This bounds the fixed-record exponent by the smaller nonatomic mass. If just one remaining free measure has positive nonatomic mass, use its cheap full modulus to release the wholly atomic other letter, at arbitrarily small cost. If neither does, use the fixed shift modulus and the amplified two-letter grouped congruence to release their exact primitive ratio and therefore both values. The support stripping only decreases each nonatomic mass, by domination of weak measures. This proves the fixed-record bound, uniformly by the subsequence argument, then summation over at most \(n^{\rho+o(1)}\) target-lock records proves (SL4).
 
-The conditional statement only needs that a sample in the original fixed pair record lives in a single target interval of the specified width. That interval may be chosen differently for each original fixed pair record. It need not have small absolute height or a prescribed centre.
+The interval may be chosen separately for each fixed pair
+record and can be translated to any centre. The bound applies
+to its occupancy. Summing over all occupied intervals of an
+arbitrary record fibre would require an independent count of
+those intervals.
+[The numerical interval entropy criterion](ABC_WIDE_COFACTOR_CONGRUENCES.md#numerical-interval-entropy)
+· [Amplified full-modulus count (GW)](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-bounded-number-of-small-roots)
 
 ### A fixed-cost sector beyond the elementary interval and projective bounds
 

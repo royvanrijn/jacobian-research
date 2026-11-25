@@ -148,8 +148,8 @@ follows from the sequential comparison used here.
 ## The fixed-terminal obligation
 
 The absolute eventual theorem leaves only finitely many possible
-terminal orders, starting at seven by the
-[complete terminal-six theorem](MULTIVARIATE_TERMINAL_SIX_ALL_PROFILES.md).
+terminal orders, starting at eight by the
+[complete terminal-seven theorem](MULTIVARIATE_TERMINAL_SEVEN_ALL_PROFILES.md).
 Each such order still includes arbitrary dimension and exponents. The
 [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
@@ -210,8 +210,55 @@ covers \(7/25\le u\le3/5\), and the
 [diffuse Cayley certificate](MULTIVARIATE_TERMINAL_SIX_DIFFUSE_CAYLEY.md)
 covers \(3/5\le u\le18/25\). Together with the intermediate and
 near-flat certificates, this completes terminal six.
-At terminal seven, a [fixed-ray certificate](MULTIVARIATE_TERMINAL_SEVEN_HIGH_CURVATURE.md)
-covers every ordinary profile with \(S\ge73/10\).
+At terminal seven, the [private-degree proof](MULTIVARIATE_TERMINAL_SEVEN_PRIVATE_ROWS.md)
+and the [one-private-linear proof](MULTIVARIATE_TERMINAL_SEVEN_PRIVATE_LINEAR.md)
+cover every profile with a private row. For fully shared profiles,
+the [joint high-curvature proof](MULTIVARIATE_TERMINAL_SEVEN_SHARED_HIGH_CURVATURE.md)
+covers \(S\ge17/4\). At lower curvature the
+[retained-row replay](MULTIVARIATE_TERMINAL_SEVEN_RETAINED_ROWS.md)
+and the two marked extensions for
+[(1,2) rows](MULTIVARIATE_TERMINAL_SEVEN_MARKED_LIGHT_TAIL.md)
+and [(2,4) rows](MULTIVARIATE_TERMINAL_SEVEN_MARKED_24_TAIL.md)
+cover every profile with some sixth-order reciprocal above \(1/8\).
+At or below that cap, the [small-outer-mean proof](MULTIVARIATE_TERMINAL_SEVEN_SMALL_OUTER.md)
+covers \(u\le1/10\), and the
+[extended cap-one-eighth replay](MULTIVARIATE_TERMINAL_SEVEN_LIGHT_CAP_EXTENSION.md)
+covers \(1/10\le u\le12/25\). The
+[paired Bernstein bands](MULTIVARIATE_TERMINAL_SEVEN_PAIRED_LIGHT.md)
+cover the stated smaller caps from \(12/25\) to \(22/25\).
+The [upper Cayley bridge](MULTIVARIATE_TERMINAL_SEVEN_UPPER_BRIDGE.md)
+covers \(22/25\le u\le19/20\), and the
+[near-flat Cayley proof](MULTIVARIATE_TERMINAL_SEVEN_NEAR_FLAT.md)
+covers \(u\ge19/20\), both with unrestricted reciprocals.
+Between \(12/25\) and \(22/25\), the
+[cross-order skew transfer](MULTIVARIATE_TERMINAL_SEVEN_CROSS_SKEW.md),
+[two retained bands](MULTIVARIATE_TERMINAL_SEVEN_RETAINED_BANDS.md)
+and [late Cayley bridge](MULTIVARIATE_TERMINAL_SEVEN_LATE_BRIDGE.md)
+cover all remaining shared profiles, completing terminal seven.
+At terminal eight, the [private-degree proof](MULTIVARIATE_TERMINAL_EIGHT_PRIVATE_ROWS.md)
+and the [private linear proof](MULTIVARIATE_TERMINAL_EIGHT_PRIVATE_LINEAR.md)
+cover every profile with a private row. The
+[shared high-curvature proof](MULTIVARIATE_TERMINAL_EIGHT_SHARED_HIGH_CURVATURE.md)
+covers \(S\ge19/4\), including the
+[fixed-ray range](MULTIVARIATE_TERMINAL_EIGHT_HIGH_CURVATURE.md)
+\(S\ge15/2\). At lower curvature, the
+[retained rows](MULTIVARIATE_TERMINAL_EIGHT_RETAINED_ROWS.md)
+and the [three marked singletons](MULTIVARIATE_TERMINAL_EIGHT_MARKED_SINGLETONS.md)
+cover all fully shared profiles with a seventh-order reciprocal
+above \(1/8\). The [small outer-mean](MULTIVARIATE_TERMINAL_EIGHT_SMALL_OUTER.md)
+and [paired light-row](MULTIVARIATE_TERMINAL_EIGHT_PAIRED_LIGHT.md)
+proofs cover reciprocal cap \(1/8\) through \(u=12/25\), and the
+[paired bridge](MULTIVARIATE_TERMINAL_EIGHT_PAIRED_BRIDGE.md)
+and its [continuation](MULTIVARIATE_TERMINAL_EIGHT_PAIRED_BRIDGE_72.md)
+extend that light-row result to \(u=18/25\) under their stated
+reciprocal caps. The
+[middle retained bands](MULTIVARIATE_TERMINAL_EIGHT_RETAINED_BANDS.md)
+cover all profiles above those caps and at or below \(1/8\)
+throughout the same bands. Thus \(u\le18/25\) is covered for
+every shared profile. For \(u\ge22/25\), the
+[upper bridge](MULTIVARIATE_TERMINAL_EIGHT_UPPER_BRIDGE.md)
+and [near-flat theorem](MULTIVARIATE_TERMINAL_EIGHT_NEAR_FLAT.md)
+cover unrestricted reciprocals.
 
 Across all terminals, the [explicit high-curvature theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_CURVATURE_BOUND.md)
 and the [Hermite-edge comparison](MULTIVARIATE_EFFECTIVE_WEAK_CURVATURE_HERMITE_EDGE.md)
@@ -220,9 +267,34 @@ The [effective stationary-fiber bounds](MULTIVARIATE_EFFECTIVE_STATIONARY_FIBER_
 give a finite net for bounded-curvature profiles on interior field
 rectangles. The [inverse-map estimates](MULTIVARIATE_EFFECTIVE_STATIONARY_INVERTIBILITY.md)
 then quantify root geometry away from critical values and localize
-the fold at very small curvature. Extracting a numerical terminal
-cutoff still requires quantitative moment contour estimates,
-including critical and boundary field windows.
+the fold at very small curvature. Real-lattice expansions now give computable order cutoffs inside
+bounded [shared quartic](MULTIVARIATE_EFFECTIVE_BOUNDED_SHARED_QUARTIC.md)
+and [one-private cubic](MULTIVARIATE_EFFECTIVE_BOUNDED_PRIVATE_CUBIC.md)
+windows. The one-private proof also has effective
+[quadratic](MULTIVARIATE_EFFECTIVE_PRIVATE_QUADRATIC_CORRIDOR.md)
+and [escaping cubic-field](MULTIVARIATE_EFFECTIVE_PRIVATE_CUBIC_FIELD.md)
+corridors. The [effective thermal endpoint](MULTIVARIATE_EFFECTIVE_PRIVATE_THERMAL_ENDPOINT.md)
+and [positive-boundary entry](MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_POSITIVE_ENTRY.md)
+cover the small positive angle sector for a single private linear row
+on a computable band \(0\le\sigma\le1+\delta\). The
+[negative-boundary proof](MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_NEGATIVE_BOUNDARY.md)
+covers the sector near the negative real axis for \(0\le\sigma\le5/4\).
+The [effective interior comparison](MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_INTERIOR.md)
+covers the intervening strip on the latter band, away from its real
+boundaries by any prescribed positive angle. These give one
+computable all-field cutoff on \(0\le\sigma\le1+\delta\).
+For bounded positive shared curvature the
+[effective transversality bounds](MULTIVARIATE_EFFECTIVE_SHARED_TRANSVERSALITY.md)
+quantify the real-field slopes for separated regular pairs and fold
+directions away from the classified singleton geometry. The
+[regular contour cover](MULTIVARIATE_EFFECTIVE_SHARED_REGULAR_COVER.md)
+uses actual saddle activation to exclude roots in fixed interior
+supercritical bands and in the regular part of subcritical bands,
+including the inactive singleton rays. The
+[effective fold comparison](MULTIVARIATE_EFFECTIVE_SHARED_SUBCRITICAL_FOLD.md)
+includes every Airy scale in those fixed subcritical interior bands.
+A global effective cutoff still requires quantitative comparisons
+in the remaining shared boundary, critical, and private regimes.
 
 A prescribed finite set of primes and precisions alone cannot give
 a universal exclusion. The
@@ -257,7 +329,7 @@ over any characteristic-zero field by the rational Bézout identity.
 Both pure monomial coefficients are nonzero at every order, so
 the univariate reduction in \(t\) covers all projective coefficient
 choices. An all-degree proof still requires coverage of the terminals
-from seven through \(N_*-1\), or an argument that applies directly
+from eight through \(N_*-1\), or an argument that applies directly
 at every terminal.
 
 ## The discrete row-merger route
@@ -291,5 +363,8 @@ throughout the physical Gaussian interpolation. An
 [ordinary three-monomial example](SFC_PHYSICAL_ROW_MERGE_INTERIOR_COLLISION.md)
 has regular endpoints for the window of orders two through four
 and a common projective zero at a physical squared correlation
-strictly between \(21/25\) and \(17/20\). The discrete endpoint
-transfer and the general binary interpolation remain open.
+strictly between \(21/25\) and \(17/20\). At the exact coefficient
+direction the [arithmetic obstruction](SFC_ORDINARY_SEARCH_NEAR_PHYSICAL_COLLISION.md)
+excludes every nonzero rational homogeneous form through degree
+eighteen, including an ordinary quadratic moment. The discrete
+endpoint transfer and the general binary interpolation remain open.

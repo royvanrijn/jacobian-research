@@ -311,7 +311,7 @@ evaluation rows open.
 
 [The effective horizontal area bound](ABC_EXACT_TAYLOR_EFFECTIVE_AREA.md)
 excludes arbitrary nonnested one-root supports of effective area at
-most \(16/19\) on the same broad profile.
+most one on the same broad profile.
 
 ## Paying for short real intervals by additional finite-place precision
 

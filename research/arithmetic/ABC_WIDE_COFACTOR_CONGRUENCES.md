@@ -2362,8 +2362,15 @@ of the individual fibres to vary.
 The [affine rank argument](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md)
 extends fixed-record sparsity to short windows along polynomial
 progressions and other bounded integer parameter systems at
-every balanced endpoint. The general separated-target count
-still requires a uniform cover or a different global bound.
+every balanced endpoint. A further full target lock makes a
+wider interval fibre affine in a different parameter range.
+Its shifted line either provides separate residue classes or
+transfers a full modulus to the intercept. The resulting
+occupancy is controlled by the smaller residual nonatomic mass.
+[Affine count for sparse interval fibres](ABC_SPARSE_AFFINE_CONTENT.md)
+
+The general separated-target count still requires a uniform
+cover or a different global bound.
 
 ## Progressions in a wholly diffuse target dictionary
 

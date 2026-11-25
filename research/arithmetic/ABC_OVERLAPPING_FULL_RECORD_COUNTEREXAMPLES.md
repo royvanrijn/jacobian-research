@@ -126,6 +126,29 @@ have numerical weight greater than one before the additions. The common
 fibre count can still attain the remaining exponent \(d-29/100\) in
 the two limits.
 
+## Simultaneous separation of target intervals
+
+The same actual primitive matching can attain the full count
+of occupied target intervals after every affordable slot record.
+Use the parameters \(L,n,d,J,\beta,P\) of the construction above.
+Thus the symbol \(d\) in the calculations below is \(1/3\).
+
+Fix a slot subset \(I\) of cost \(t_I\) whose combined numerical weight \(J_I\) is greater than one. Its assignments give fixed full products \(F\mid U,\ G\mid V\), with \(\log_XFG=J_I+o_X(1)\). Both \(F,G\) have positive numerical weight, because each complete letter weighs one. Choose
+\[
+     0<\delta_I<\min(J_I-1,w_F,w_G)
+\]
+where \(w_F,w_G\) are the prescribed numerical slot weights. Inside any one such record, take a bin of \(T\)-values of width \(X^{\delta_I}\). Differences of its Cartesian pairs \((U,V)\) from a selected base pair give determinants divisible by \(FG\). They can also be evaluated on \((\Delta U,\Delta T)\), of numerical determinant height at most \(1+\delta_I\). Thus all these pairs lie on an affine line, uniformly in the bin. An axis line gives one point, since differences in the other variable are multiples of \(F\) or \(G\) larger than the bin width. A nonaxis line projects injectively to both complete values. With residual root cap \(a\) on one letter and \(b\) on the other, any candidate bin therefore has multiplicity at most
+\[
+       n^{\min(a,b)+o_X(1)}\le n^{d-t_I/2+o_X(1)} .
+\]
+
+In constructing the simultaneous entropy example, sample the Cartesian edges independently with probability
+\(\pi=(P^J\log X)^{-1}=n^{-d+o_X(1)}\) as in that construction. Across all assignments for \(I\) and all bins, the number of candidate colliding edge pairs is at most the total candidate edge count \(n^{2d+o_X(1)}\) times the maximum bin multiplicity above. Consequently the expected number of sampled pairs in one common record and bin is at most \(n^{d-t_I/2+o_X(1)}\), negligible compared with the mean sample size \(P^J/\log X=n^{d-o_X(1)}\). There are finitely many relevant \(I\) at each fixed \(m\). For a version with pairwise separation, count also pairs from neighboring bins, multiplying the same bound by a fixed constant. The deletion rule then gives separation at all smaller bin widths as well.
+
+Use these extra collision counts in the random choice from the original construction, with simultaneous binomial fibre caps for all \(I\), and delete the exceptional edges. Keep the original complete-label thinning and discard targets of radical at most \(n^d\) as there. The retained set still has \(n^{d-o_X(1)}\) edges. For every indicated affordable subset \(I\), every one of its fixed record fibres is pairwise \(X^{\delta_I}\)-separated on the targets, and the sum over fixed records of occupied numerical bins equals the full edge count. At least one fixed record for each \(I\) with \(t_I<d\) meets \(n^{d-t_I-o_X(1)}\) bins. The same holds for every affordable union of fixed slot subsets, since it is just another \(I\). All prior entropy saturation remains valid by the fibre caps and the retained total size.
+
+Thus simultaneous record entropy, complete-label matching, the use of two genuine diffuse root laws, and the exact lifting of short difference determinants do not imply a saving in occupied intervals. The missing arithmetic in this model is the target small-radical hypothesis.
+
 ## A relative-residue statement that does survive
 
 Suppose two records prescribe \(F\mid U_i\) and \(G_i\mid V_i\) in

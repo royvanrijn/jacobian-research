@@ -282,3 +282,87 @@ with two ramified boundary fibres and the two-contact
 letter of height greater than \(1/2\) as the short letter, or
 with all three heights one, still contains configurations
 outside these lock and linear-form criteria.
+
+## Linear and nonlinear factor counts on a primitive carrier
+
+Consider a fixed-degree projective carrier given by
+homogeneous binary forms \(F_A,F_B,F_C\), with
+\(F_A+F_B=F_C\), no common geometric zero, and coefficients
+of subpower height uniformly in the chosen carrier. For
+primitive homogeneous inputs \((s,t)\), the complete
+primitive additive values have maximal size
+\(X^{1+o_X(1)}\), and \(\max(|s|,|t|)=X^{1/k+o_X(1)}\),
+where \(k\) is the degree of the carrier. These are the
+resultant height comparisons above.
+
+Let \(\ell\) count distinct rational linear factors over all
+three forms, and \(m\) count distinct nonlinear irreducible
+rational factors. Count factors without multiplicity.
+Except on the fixed resultant and coefficient support,
+the radical prime sets of all these factors are disjoint
+and are exactly allocated from the original complete terms.
+Exceptional support contributes subpower possible values,
+as in the fixed-carrier argument. Refine the factor root
+caps at subpower cost in each fixed budget. Write \(B_L\)
+for the total normalized root cap on the linear factors,
+and \(\beta_1,\ldots,\beta_m\) for the caps on the
+nonlinear factors. At a balanced budget,
+\(B_L+\sum_i\beta_i\le1+o(1)\).
+
+For each nonlinear factor \(f_i\), fix its complete value
+at cost \(\beta_i+o(1)\), by radical enumeration and the
+fixed-support bound. This determines \((s,t)\) up to
+subpower by the coefficient-uniform norm completion from the cyclotomic split.
+[Uniform norm completion](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md#direct-target-bounds-for-reducible-weighted-powers) To see
+uniformity, for a factor of degree \(D\) and leading
+coefficient \(a\), let \(\theta\) be a zero of
+\(f_i(X,1)\). The algebraic integer \(a s-a\theta t\)
+has prescribed nonzero norm \(a^{D-1}f_i(s,t)\).
+There are at most divisor-many ideals of this norm
+uniformly in the field degree. For a fixed ideal,
+the logarithmic archimedean box has diameter \(O(\log X)\)
+and the generators form a unit coset. In fixed degree,
+nontrivial logarithmic vectors of units have uniform
+positive separation: quotient units with close log
+vectors have all conjugates bounded by two, hence
+obey one of finitely many bounded-coefficient monic
+polynomials. Torsion size is bounded in fixed degree.
+The desired subpower count follows. Thus the original
+normalized exponent \(d\) is at most \(\min_i\beta_i\).
+
+If \(\ell\ge3\), choose the three cheapest rational linear
+factors. Their complete signed values satisfy a fixed
+primitive additive relation after multiplying each by a
+nonzero coefficient of subpower height. These coefficients
+can be taken from the pairwise minors of the three forms.
+The coefficients are nonzero since the forms are distinct
+up to scalars. The gcd of the resulting additive values
+divides a nonzero polynomial-height determinant of
+subpower size, by primitive \((s,t)\). Two independent
+forms recover the parameter projectively with subpower
+height loss, so their derived primitive additive triple
+has numerical height \(X^{1/k+o_X(1)}\). Its radical
+has cap given by the combined root masses of the
+selected factors, up to the subpower coefficient support.
+The limiting small-budget one-third theorem therefore
+gives
+\(d\le B_L/\ell\). The original normalization is
+preserved because both the derived height and the
+relative radical budget rescale by the same \(k\).
+
+Combining the bounds gives \(d\le1/(\ell+m)\) for
+\(\ell\ge3\), and \(d\le1/m\) for \(m>0\) in general.
+Thus \(\ell\ge3\) and \(\ell+m\ge4\), or \(m\ge4\),
+gives \(d\le1/4\) without a nonatomic assumption.
+This includes split quadratic carriers but also applies
+to higher-degree mixed factorization types. The
+irreducible quadratic carrier with two linear factors
+and one nonlinear factor is outside this result.
+
+For minimally repaired quotients, combine the same
+bound with the balanced lower radical cap on the
+primitive target to convert the exponent in \(X\)
+to a strict exponent below \(1/M\) in the repaired
+height, after leaving sufficiently small strict
+normalization allowances. No extra arithmetic
+information comes from the common padding.

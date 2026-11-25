@@ -2139,3 +2139,35 @@ row content. For the uncentred Taylor determinant the new fullness
 can be entirely absorbed by this content, and the original
 primitive valuation is sharp on an explicit family.
 [Primitive content after repair](ABC_MINIMAL_REPAIR_PROJECTIVE_CONTENT.md)
+
+A different count applies when the primitive quotient itself
+factors into independent cyclotomic norm values. Opposite
+primitive \(q\)-th powers give limiting coefficient
+\(1/(\tau(q)+2)\) before repair. For same-side weighted
+powers, two nonlinear rational factors of the primitive
+target can give a repaired exponent \(1/(2M)\) when the
+coefficient radical cost is negligible. With an irreducible
+quadratic norm, bounded squarefree kernels alone still allow
+the full repaired exponent, even on a diffuse target profile.
+[Primitive cyclotomic split and its norm counterexample](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md)
+
+
+In the primitive weighted norm case, a normal-closure
+determinant cancels the reference ideal denominator and
+bounds the number of rays. For prime-power binomial fields,
+the matching class-group torsion is subpower even as the
+coefficients vary. For quadratic norms with square norm
+defect, a separate factorization through an actual reference
+solution gives rational factors and cancels its common ideal
+without any short-height requirement.
+[Primitive norm ray packing](ABC_PRIMITIVE_NORM_RAY_PACKING.md)
+· [Splitting after cancelling the reference ideal](ABC_MINIMAL_REPAIR_IDEAL_CONTENT_SPLIT.md)
+
+The minimally repaired exponent is also the exponent of
+occurring balanced three-support unions. A finite number
+of random external-prime tests approximates the count
+with a power-small error while retaining the exact height
+and all three radical conditions. On the target marginal
+alone, the corresponding exact reduction is a weighted
+sum of fixed-target counts.
+[True support occurrence and modular averaging](ABC_MINIMAL_REPAIR_SUPPORT_OCCURRENCE.md)

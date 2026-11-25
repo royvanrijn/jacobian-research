@@ -499,3 +499,12 @@ Together with \(f+z\ge2/3\), this forces \(f\ge4/9\).
 For a fixed margin \(\zeta\) below \(4/9\) the same
 diagonal contradiction excludes every actual endpoint,
 giving a uniform saving on the stated sector.
+
+An exact single valuation grid is unnecessary if the
+positions on the two free letters cluster in a bounded or
+sufficiently slowly growing list of fine phases. A signed
+two-basis representation controls the product of the two
+rational root heights, and amplification counts distinct
+exact outputs even when their two input bases have common
+prime support.
+[Signed valuation phases](ABC_SIGNED_VALUATION_PHASES.md)

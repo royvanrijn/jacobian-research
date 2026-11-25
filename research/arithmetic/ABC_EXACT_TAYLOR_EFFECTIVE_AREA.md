@@ -19,7 +19,7 @@ saving by the exact universal support-dependent Taylor weights
 requires \(K>4/7\). In particular the range of sufficiently small
 supports excluded in this way is genuinely nonnested. Since
 \(K\le A\), this contains the entire region \(A\le4/7\), and
-also larger supports with sufficiently high projection overlap.
+also larger supports with sufficiently high projection overlap. The shifted-median refinement below excludes \(K\le1\).
 
 ## Absorbing the toric overlap cost
 
@@ -336,3 +336,100 @@ The argument is on the limiting normalized scale. A fixed
 strict root-record budget margin leaves positive slack after
 toric overlap absorption, so the \(o(1)\) horizontal lattice
 thickening shift does not alter the boundary assertion.
+
+## The unit-area strengthening
+
+The same argument actually excludes \(K\le1\). Suppose such
+a support saves. The previous overlap reduction and
+large-area comparison show \(A\le9/8\), \(u=3s>17/20\),
+\(B/g<1/2\), \(h/g<1/(2Q)\), and \(E/s<v=K/(4D)\le3/4\).
+In what follows \(a\ge0\) denotes the absolute value of the
+common median tilt. The case \(a=0\) contradicts the retained
+moment, so assume \(a>0\).
+
+### Tilts of size at most one
+
+The retained moment gives \(h/g\ge(3-v)/a\), since
+\((2+u-v)u/(2u-1)\) is decreasing in \(u\) on the range
+under consideration. The small-period folded density estimate
+gives \(E/g\ge a/(2(2+a))\), using
+\(u^2/(2u-1)\ge1\). The horizontal upper constraint implies
+\(Q\le a/(2(3-v))\le2/9<1/4\).
+The last estimate in (2) yields
+\[
+ DF=2t\,DQ\ge\frac{1}{9(1-t)}-tQ\ge1/12.
+\]
+The final lower bound follows by minimizing the right side
+with \(Q=1/4\), at \(t=1/3\).
+
+More precisely \(h A Q\le B<gK/2\) gives
+\(h/g<K/(2 A Q)\), and we use \(A\ge K\). Inequality (1)
+therefore gives
+\[
+ \frac{B}{gK}\ge
+   \frac{(3-v)F}{a}+\frac{Da}{3K}
+   \ge2\sqrt{\frac{(3-v)DF}{3K}}\ge\frac12.
+\]
+Here \(2/(2+a)\ge2/3\), \(3-v\ge9/4\), and \(K\le1\).
+This contradicts \(B<gK/2\).
+
+### Tilts of size at least two
+
+The one-period fold gives \(E/g\ge u^2/(2(2u-1))\ge1/2\).
+Then \(B/(gK)\ge F+D/K\ge F+D\) by (1).
+A possible success would have \(D\le1/2\). The triangular
+bound in this range and \(F\ge Q-1/4\) imply
+\[
+ F+D\ge3/4-D+(3/2)D^2\ge7/12,
+\]
+again impossible.
+
+### Intermediate tilts
+
+For \(1<a<2\), put \(z=\min(1/2,(2-a)/(2u))\). The
+period-and-remainder folded estimate gives \(E\ge c(a,u)a s^2\),
+where \(c(a,u)=(3/(2a))((1-z)^2+z^2)\). Since
+\(a h\ge(2+u-v)s\),
+\[
+ \frac{Eh}{g^2}\ge
+ c(a,u)\frac{(2+u-v)u^3}{3(2u-1)^2}
+ \ge\frac{31}{50}\left(1-\frac{K}{12D}\right).                  \tag{6}
+\]
+For the second inequality, the logarithmic derivative of
+\(c(a,u)\) in \(u\) is zero on the capped branch and on the
+remaining branch is at most \(1/(2u)\). This follows from
+\(4z(1-2z)\le1-2z+2z^2\), whose difference is a positive
+quadratic. The logarithmic derivative of the whole middle
+expression is thus at most
+\[
+ \frac{7}{2u}-\frac4{2u-1}+\frac{1}{2+u-v}
+ \le-\frac12+\frac1{2+u-v}<0.
+\]
+The inequality before the strict sign follows from \(u\le1\),
+and \(2+u-v>2\) follows from \(u>17/20\) and \(v\le3/4\).
+Thus it suffices to evaluate at \(u=1\), where
+\(c(a,1)\ge31/50\). In fact on writing \(a=2-2z\), this
+is equivalent to \(150z^2-88z+13\ge0\), which has negative
+discriminant.
+
+As in (4), the horizontal constraint, (1), and (6) reduce
+success to
+\[
+ F+\frac{62}{25}DQ-\frac{31}{150}Q<\frac12 .
+\]
+This inequality is ruled out by (2). In detail put
+\(p=62/25\) and \(q=31/150\). Applying \(DQ\ge(2-Q)/9\)
+and \(F\ge Q-1/4\) first yields \(Q<179/466\).
+Applying the same bound for \(DQ\) and \(F=2Qt\)
+then yields \(t<125/716\). The half-density estimate gives
+\[
+ F+pDQ-qQ\ge
+ \frac{p}{18t(1-t)}-\left(\frac p2+q-2t\right)\frac{179}{466}.
+\]
+This expression decreases up to \(t=125/716\). As an
+exact derivative bound, \(p(1-2t)/(18t^2)-2(179/466)\)
+at that endpoint is \(1780700413/819140625>0\), so
+retaining the additional factor \(1/(1-t)^2\) only
+strengthens the sign. Its value at the endpoint exceeds
+\(1/2\) by \(267508951/7745793750\). This completes the
+exclusion at effective area \(K\le1\).
