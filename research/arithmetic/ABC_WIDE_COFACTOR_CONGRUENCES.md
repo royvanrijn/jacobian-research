@@ -2346,9 +2346,24 @@ A pair \((Y,T)\) determines the edge by (PQ4). If the family has
 Indeed \(H(T\mid Y)=H(\mathrm{edge}\mid Y)\ge(d-t-o(1))\log n\),
 and \(H(T\mid I,Y)\le(\epsilon+o(1))\log n\). Equivalently, there
 must be at least \(n^{d-t-\epsilon-o(1)}\) occupied intervals of
-width \(X^\delta\) on at least one record. The uniform endpoint
-obstruction is now the number of such separated intervals met
-by an actual affordable fibre.
+width \(X^\delta\) on at least one record. The quantitative endpoint obstruction is a bound on
+the separated intervals met by actual affordable fibres. An
+aggregate estimate suffices. If \(\mathcal I_\delta(Y)\) is
+the set of occupied interval indices on record \(Y\), then
+\[
+  \sum_Y|\mathcal I_\delta(Y)|\ \le\ \#\mathrm{edges}\
+       \le\ n^{\epsilon+o(1)}\sum_Y|\mathcal I_\delta(Y)|.
+\]
+To close the reduction it is enough to bound this sum by
+\(n^{1/3-\sigma+o(1)}\) for an absolute \(\sigma>0\) with a
+window chosen for \(\epsilon<\sigma\). This allows the sizes
+of the individual fibres to vary.
+
+The [affine rank argument](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md)
+extends fixed-record sparsity to short windows along polynomial
+progressions and other bounded integer parameter systems at
+every balanced endpoint. The general separated-target count
+still requires a uniform cover or a different global bound.
 
 ## Progressions in a wholly diffuse target dictionary
 
@@ -2389,6 +2404,33 @@ supply no power bound on either the doubling or the energy.
 [Green–Ruzsa, Theorem 1.1](https://arxiv.org/abs/math/0505198)
 · [Reiher–Schoen, Theorem 1.1](https://arxiv.org/abs/2308.10245)
 · [Petridis, Theorem 1.1](https://arxiv.org/abs/1101.3507)
+
+### Progression rigidity of the three complete letters
+
+The cofactor determinant also works on an arbitrary-step
+progression \(T=T_0+Qj\) of index diameter \(H_0\), on a fixed
+affordable record. Reduce the signed equation modulo \(F\).
+If the progression indices are measured from a chosen solution,
+\(G\Delta v\equiv \pm Q\Delta j\bmod F\) with a fixed sign.
+Thus \(F\) divides \(\Delta j_1\Delta v_2-\Delta j_2\Delta v_1\).
+When \(H_0\ll n^C\) at fixed \(C\), its absolute value is
+smaller than \(F\) by the numerical surplus above the shorter
+letter. It must vanish, so \(v\) is an affine function of the
+target index on the sample. The exact relation then gives the
+same conclusion for \(u\). Every moving complete letter in the
+sample lies in an arithmetic progression of index diameter
+at most \(H_0\). To see this even for a rational slope, put it
+in lowest terms; admissible indices occupy one class modulo
+its denominator. Reindexing makes the step integral.
+
+Consequently, when at least two of the three original letters
+have wholly nonatomic degree measures, the progression bound
+holds for the fixed-record targets even if the target itself
+has atoms. Two distinct triples have different values in at
+least two letters by the signed relation. Thus some wholly
+diffuse letter moves and counts the sample injectively. The
+bounded-doubling and normalized-energy conclusions then apply
+also to this class of fixed-record targets.
 
 ## A diffuse target family with no cheap heavy-lock record
 

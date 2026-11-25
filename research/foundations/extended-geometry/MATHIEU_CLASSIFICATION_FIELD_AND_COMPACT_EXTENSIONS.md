@@ -3297,3 +3297,389 @@ The fibre \(X\) is a torsor, since \(\ker\nu=\mathrm{Spin}(q_n)\), and the centr
 For the lower bound let \(F=K(S_b^-)\) be the field of the negative norm sphere in \(b\) coordinates. Its level is exactly \(b\) by Hoffmann separation, and \(\pi\simeq-\pi\) over \(F\) by Pfister roundness. The two forms \(q_n\) and \(-q_n\) can therefore be realized as subforms of the same anisotropic \(\pi_F\). Since \(2n>b\), their subspaces intersect nontrivially. The norm of a nonzero vector in this intersection is some \(a\ne0\), and \(q_n\) represents both \(a\) and \(-a\). The corresponding two Clifford vectors have product of spinor norms \(-a^2\), so rescaling by \(1/a\) gives a point of \(X(F)\). The torsor is smooth, and the completed local ring at this \(F\)-point embeds its function field into an iterated Laurent series field over \(F\). Anisotropy of \(\pi_F\) persists there, which gives \(s(K(X))\ge b\).
 
 This treats the central class in the kernel of \(\mathrm{Spin}(q_n)\to\mathrm{SO}(q_n)\). A different central involution that maps to \(-I\) pulls back the previously proved orthogonal obstruction when \(n\) is even and is not a power of two. Indeed the twisted central isogeny to the negative \(\mathrm{SO}(q_n)\)-torsor is equivariant and geometrically surjective, and preserves the normalized trace. The kernel-central torsor itself still needs a regular moment calculation.
+
+
+## Point-free torus quotients over real closed fields
+
+**Theorem (A point-free torus quotient decides the classification).**
+
+Let \(K\) be real closed and let \(X\) be an affine geometrically homogeneous space of a connected reductive \(K\)-group \(G\). Put \(D=G_{\mathrm{der}}\) and \(Y=\operatorname{Spec} K[X]^D\). If \(Y(K)=\varnothing\), then the normalized trace kernel on \(K[X]\) is Mathieu–Zhao exactly when \(D\) acts trivially. If \(D\) acts nontrivially, the conclusion gives a regular pure phase and one regular multiplier with infinitely many nonzero marked moments. There is no restriction on the geometric stabilizer beyond affineness. In particular the quotient need not come from a product decomposition of \(X\).
+
+Over \(K(i)\), the quotient description in the [generic fibre theorem](#lifting-regular-counterexamples-from-a-generic-invariant-fibre) gives \(Y=(G/D)/\operatorname{im}H\) for a geometric stabilizer \(H\). The effective quotient of the \(K\)-torus \(G/D\) then acts simply transitively on \(Y\), so \(Y\) is a torsor under a \(K\)-torus.
+
+Every \(K\)-torus is a product of split, norm-one, and restriction-of-scalars tori for \(K(i)/K\). For the integral assertion, let \(M\) be the character lattice, \(\sigma\) the conjugation involution, and \(M^\pm\) its eigensublattices. The quotient \(M/(M^++M^-)\) embeds in \(M^+/2M^+\oplus M^-/2M^-\) by \(x\mapsto (x+\sigma x,x-\sigma x)\) modulo two. The image injects into each summand: if one projection is zero, subtract the corresponding integral eigenvector from \(x\) and the difference lies in the other eigensublattice. Thus the image is the graph of an isomorphism between subspaces. Choose integral bases of the eigensublattices whose first basis vectors match this graph modulo two. Each matched pair \(e^+,e^-\) contributes the swapped pair \((e^++e^-)/2,(e^+-e^-)/2\) in \(M\), while the unmatched basis vectors contribute the rank-one trivial and sign lattices. This proves the product decomposition. [Casselman, *Computing with real tori*, §2](https://personal.math.ubc.ca/~cass/research/pdf/RealTori.pdf)
+
+Hilbert 90, also after restriction of scalars, gives trivial first cohomology for the split and restriction-of-scalars factors. For the norm-one factor, the norm sequence identifies the first cohomology with \(K^\times/N(K(i)^\times)\), a group with two classes. Its nontrivial torsor is
+\[
+                         u^2+v^2=-1 .
+\]
+The torsor \(Y\) is the product of the factor torsors, and at least one norm-one class is nontrivial because \(Y(K)\) is empty. In particular \(F=K(Y)\) has level two. The upper bound follows from the displayed equation, and level one is impossible since \(Y\) is geometrically integral and \(i\notin F\).
+
+Suppose \(D\) acts nontrivially. Choose a \(K\)-almost simple factor of \(D\) with nontrivial action, using the connected images of the factors of the simply connected cover. Its kernel on \(X\) is finite. An isotropic factor has a split rank-one subgroup over \(K\). An anisotropic factor over a real closed field is compact and has a compact rank-one root subgroup, an image of \(\mathrm{SL}_1((-1,-1)_K)\) by a central isogeny. The equation on \(Y\) splits that quaternion algebra over \(F\), by the norm criterion in the [generic fibre theorem](#lifting-regular-counterexamples-from-a-generic-invariant-fibre). In either case we have an active split rank-one subgroup of \(D_F\) on the generic fibre. Activity holds because the chosen \(K\)-rank-one group acts nontrivially on \(X\) and localization at nonzero \(D\)-invariants is injective. The normal invariant-fibre theorem for \(D\) now gives the regular counterexample on \(X\).
+
+If \(D\) acts trivially then \(X=Y\). Over the algebraic closure the torus torsor becomes an algebraic torus with normalized trace equal to constant term. The torus theorem and base change of the trace give the Mathieu–Zhao property over \(K\).
+
+In particular, adjoining any point-free torus torsor to either exceptional compact quotient gives a regular counterexample. The conclusion also covers coupled stabilizers whenever the resulting torus quotient has no rational point. The original exceptional products have a pointed split torus quotient, whose function field has infinite level.
+
+## Higher Laurent terms at exceptional mirror endpoints
+
+**Theorem (An endpoint obstruction for an arbitrary reflection-odd Laurent profile).**
+
+Let \(M\) be a compact smooth manifold with a full-support probability measure \(\mu\), and let \(A,B_1,\ldots,B_d,U\) be continuous real functions with \(U\ge0\). Consider the real Laurent phase
+\[
+                P(x,t)=A(x)+\sum_{j=1}^d B_j(x)(t^j-t^{-j}).
+\]
+Suppose \(a=\max_M A\) and that for constants \(b_j\) one has \(A-a=O(U)\), \(B_j-b_j=O(U)\) as \(U\to0\). If
+\[
+                  \limsup_{\delta\downarrow0}
+                     \delta^{-1/2}\mu\{U\le\delta\}=\infty ,
+\]
+then \(P=0\) is the only phase of this form with all positive moments zero under \(\Lambda=\mu\otimes\operatorname{CT}_t\). The same holds with a global minimum in place of a global maximum.
+
+To prove this, set \(t=e^{i\theta}\) and write \(P=A+i\phi(x,\theta)\), where \(\phi=2\sum_j B_j(x)\sin(j\theta)\). If \(P\) is pure its first moment gives \(\int A\,d\mu=0\). If \(a=0\), full support gives \(A=0\), and the second moment of the purely imaginary phase then forces \(\phi=0\). Otherwise \(a>0\). The Cauchy transform of \(P\) equals \(1/z\) on \(\operatorname{Re}z>a\), by expansion at infinity and holomorphic continuation. Its integrand has positive real part throughout that half-plane.
+
+Choose a critical point \(\theta_0\) of the frozen trigonometric polynomial \(\phi_0(\theta)=2\sum_j b_j\sin(j\theta)\). A constant \(\phi_0\) allows any point. Write \(z=a+i\phi_0(\theta_0)+\delta\) for real \(\delta>0\). On \(U(x)\le\delta\) and \(|\theta-\theta_0|\le\sqrt\delta\), the real part of \(z-P\) is at least \(\delta\) and \(|z-P|\le C\delta\). Indeed the coefficients vary by \(O(\delta)\) and the angle contributes \(O(|\theta-\theta_0|^2)\) by stationarity. The real part of the reciprocal is therefore at least \(C^{-2}/\delta\) there. Integrating and using positivity elsewhere gives a lower bound proportional to \(\delta^{-1/2}\mu\{U\le\delta\}\). This contradicts boundedness of \(1/z\) along the same approach. For a minimum replace \(P\) by \(-P\).
+
+For both exceptional groups one can take \(U\) to be the squared angular mirror product. The two-mirror sublevel estimate above gives \(\mu\{U\le\delta\}\gg \sqrt{\delta}\log(1/\delta)\) on the angular sphere and hence on the full compact quotient by pullback. Thus the result applies to any number of reflection-odd Laurent harmonics whose coefficients are constant modulo \(U\), with the center also constant modulo \(U\) and extremal there. The coefficient corrections may depend on the full compact quotient. This extends the three-term endpoint test to profiles whose opposite Laurent terms cannot be combined into a single root product.
+
+The regular version transfers to all real closed fields for these algebraic quotient models. In fixed finite-dimensional coefficient spaces, each trace identity is polynomial in the coefficients, and the ideal generated by all the trace identities is finitely generated. Divisibility by the specified \(U\) can be imposed by including the regular quotient functions in the coefficient data. The extremum and nonzero conditions are first-order conditions over the real algebraic numbers. A violation over a real closed field would thus give a violation over \(\mathbb R\) by real closed field transfer.
+
+## Stationary supporting points of complex phases
+
+**Theorem (A quadratic supporting-point test).**
+
+Let \(M\) be a compact smooth \(n\)-dimensional manifold with a smooth positive probability density, and let \(P=A+iB\) be a smooth complex-valued phase. Suppose \(a=\max A>0\). Fix \(z_0=a+i b\) and assume that every point of \(P^{-1}(z_0)\) is a nondegenerate maximum of \(A\). Let \(x_j\) be the points in this fibre at which \(dB=0\). In local coordinates at these points write \(z_0-P(x_j+y)=y^{\mathsf T}(S_j+i T_j)y+o(|y|^2)\), where \(S_j\) is positive definite and \(T_j\) is real symmetric. Let \(w_j>0\) be the coordinate density at \(x_j\). If
+\[
+                         \sum_j \frac{w_j}{\sqrt{\det(S_j+iT_j)}}\ne0 ,
+\]
+then \(P\) is not pure. Each reciprocal square root is defined by the Gaussian integral, or by continuation from \(T_j=0\). The criterion holds whenever there is just one stationary point in the fibre, when the stationary points form one symmetry orbit preserving \(P\) and the density, or when \(n\le2\) and at least one stationary point exists.
+
+For an integer \(k>n/2\), purity implies
+\[
+                         \int_M (z-P)^{-k}\,d\mu=z^{-k}
+                         \qquad(\operatorname{Re}z>a).
+\]
+Each point of the fibre is isolated by the Morse maximum assumption, and the fibre is compact, hence finite. Off small disjoint neighborhoods of the fibre, \(z_0-P\) is bounded away from zero. Multiply the identity at \(z=z_0+\delta\) by \(\delta^{k-n/2}\) and use \(y=\sqrt\delta\,u\) at each fibre point. The real part bounds the rescaled integrand in absolute value by \(C(1+|u|^2)^{-k}\). If \(dB\ne0\) at a point, the rescaled integrand tends to zero off the hyperplane \(dB(u)=0\), so its contribution to the limit vanishes. At a stationary point the limit is
+\[
+                    w_j\int_{\mathbb R^n}
+                      (1+u^{\mathsf T}(S_j+iT_j)u)^{-k}\,du
+                   =\frac{\pi^{n/2}\Gamma(k-n/2)}{\Gamma(k)}
+                              \frac{w_j}{\sqrt{\det(S_j+iT_j)}} .
+\]
+For the equality, use the Laplace integral for the inverse power followed by the complex Gaussian integral. The latter follows by normalizing the real part to the identity and orthogonally diagonalizing the remaining real symmetric matrix. Dominated convergence is justified by \(k>n/2\), and the scaled right side tends to zero. This proves the criterion. When \(n\le2\), the argument of each summand is strictly between \(-\pi/2\) and \(\pi/2\), because it is \(-\frac12\sum_{\ell=1}^n\arctan\lambda_\ell\) for the eigenvalues of \(S_j^{-1/2}T_jS_j^{-1/2}\). Thus the stationary contributions cannot cancel.
+
+This test makes no assumption on the Laurent support of a phase on either full exceptional compact product, evaluated on the compact quotient times the unit split-variable circle. In particular, if a supporting point of the resulting complex phase is the unique stationary point at its complex supporting value, and every point at that value is a Morse maximum of the supporting real projection, then some positive pure moment is nonzero. The supporting projection can be chosen after a constant complex rotation of the phase.
+
+On a negative definite sphere, identify the complex quadric with the positive sphere by \(z=i x\), so the normalized trace uses the ordinary sphere and a ground-field phase becomes \(A(x)+i B(x)\) with \(A\) even and \(B\) odd under \(x\mapsto-x\). If \(A\) has a nondegenerate maximum only at \(x_0,-x_0\), and \(B\) is stationary with \(B(x_0)\ne0\), the two points lie at distinct complex supporting values and the test applies. In dimension two it also applies when \(B(x_0)=0\). For example, it rules out all nonzero phases with a diagonal quadratic even part having a simple largest coefficient and an odd part \(\sum_j b_j x_j^{2d_j+1}\), \(d_j\ge1\), on both the negative ternary sphere and the norm-minus-one quaternion torsor. At the maximizing axis the odd part is stationary. If its value there is zero, its quadratic term vanishes there too, so the two Gaussian contributions are positive in either dimension. For a pure phase the even part has mean zero, ensuring the positive supporting value used in the test. The argument transfers to real closed fields in fixed polynomial degree by the same finite-coefficient argument as above.
+
+
+## Signed conditional cancellation on the icosahedral mirror chart
+
+**Lemma (All-sheet local constant moments).**
+
+Let \(k\) have characteristic zero, let \(L/k(y)\) be a finite extension with geometrically integral function field over \(k\), and let \(f\in L\). Put
+\[
+                    c_m=\operatorname{CT}_{y=\infty}
+                                    \operatorname{Tr}_{L/k(y)}(f^m).
+\]
+If \(c_m=0\) for all sufficiently large \(m\), then all the positive \(c_m\) vanish. More precisely, exactly one of the following descriptions applies to a nonzero \(f\).
+
+1. The function \(f\) has no pole above \(y=\infty\), and its value is zero at every point above \(y=\infty\).
+2. The function \(f\) has a pole above \(y=\infty\), all its poles lie above \(y=\infty\), and its value is zero at every point above \(y=0\).
+
+Each description suffices for vanishing. The points are taken on the nonsingular projective curve after extending constants to an algebraic closure.
+
+Work over an algebraic closure of \(k\). The trace-residue identity gives
+\[
+                    c_m=-\sum_{q\mid y=\infty}
+                                      \operatorname{Res}_q f^m\,dy/y .
+\]
+At a point with \(f(q)=a_q\) finite and \(e_q=-\operatorname{ord}_q y>0\), the corresponding summand on the right is \(e_q a_q^m\). If there are no common poles, eventual vanishing forces all \(a_q=0\) by the Vandermonde matrix for the distinct nonzero \(a_q\), since their multiplicities are positive integers.
+
+Otherwise write \(x=f\). At each common pole \(q\), let \(d_q=-\operatorname{ord}_q f\) and use the local parameter \(v=x^{-1/d_q}\). Write \(y=C_qv^{-e_q}\exp(g_q(v))\) with \(g_q(0)=0\). The residue there is \(d_qm[v^{d_qm}]g_q\). Multiply the \(y\)-values of the \(d_q\) inverse branches at each common pole and then over all common poles. The resulting algebraic function \(H(x)\) satisfies
+\[
+                    H(x)=C x^{\sum_{\rm common} e_q}
+                         \prod_{\substack{q\mid y=\infty\\ f(q)\ {\rm finite}}}
+                                  (1-a_q/x)^{-e_q}
+                         \exp\!\left(-\sum_{m\ge1}\frac{c_m}{m x^m}\right),
+                         \qquad C\ne0 .
+\]
+When the \(c_m\) eventually vanish, the logarithmic derivative of the exponential can have no pole of order two or higher, since the exponential is algebraic. A nonconstant polynomial in \(1/x\) would give such a pole at every point above \(x=0\). Thus \(c_m=0\) for all positive \(m\) and \(H\in k(x)\).
+
+In the normal closure over \(k(x)\), fix a valuation over \(x=\infty\). Exactly the inverse branches included in \(H\) have negative \(y\)-valuation. Their subset is therefore the unique subset of this cardinality of smallest total valuation. Since every conjugate product equals \(H\), the subset is invariant under the Galois group. Transitivity on the inverse branches now forces it to be the whole set. Hence all poles of \(f\) lie above \(y=\infty\). The residue theorem now expresses \(c_m\) as the weighted sum of the \(m\)-th powers of the values of \(f\) above \(y=0\), with weights \(\operatorname{ord}_q y>0\). The same Vandermonde argument makes all these values zero. Conversely, the residue formula gives sufficiency in both cases.
+
+**Theorem (The signed icosahedral fixed-interval test).**
+
+Use the icosahedral mirror chart with height \(w\), and put \(\rho=\sqrt w\). Freeze the conditional angle modulo \(\theta\mapsto\theta+\pi\) and average the two angles and both signs of \(\xi\). Dilate the uniform radial coordinate by \(s=(1+t)\rho\). Use the conditional scalar constant term with the Jacobian \(ds/(1+t)\) on the fixed interval, before integrating \(s\) or adding the moving endpoint correction. For any regular angular Laurent phase \(P\in K[p,r,J][t,t^{-1}]\), these conditional scalar moments vanish identically at all sufficiently large orders if and only if one of the following holds.
+
+1. The Laurent support is strictly positive (or \(P=0\)).
+2. The phase has an actual pole of order \(b>0\) at \(t=0\). Write \(T=1+t\) and expand uniquely as \(P=t^{-b}\sum_j T^j F_j\), with \(F_j\in K[p,r,J]\). For each nonzero coefficient let \(d_j\) denote its weighted degree with weights \(6,10,15\) on \(p,r,J\), in the expression \(E(p,r)+J O(p,r)\), and let \(k_j\) be its order of divisibility by \(J\) in the angular ring. Then the conditions are exactly
+\[
+                                d_j<j\le b+k_j .
+\]
+
+Over a real closed field, through pole order \(15\), every such phase that is also globally pure is safe against all regular multipliers. Pole order \(15\) is the first at which a two-sided regular phase can pass the conditional scalar test. A passing two-sided phase of this order has a nonzero second global moment.
+
+Here the coefficient field may be extended to include the algebraic constants of the mirror chart. To identify the fixed-interval operator, use \(y=T/t\), so \(dt/(tT)=-dy/y\). Over the field of the independent parameters \(s,\cos\theta,\sin\theta\), where the last two satisfy the circle equation, put \(\rho=s/T\), \(w=\rho^2\), and adjoin the square roots \(R,\xi\) from the mirror chart. The extension has degree four even after algebraic closure of the parameter field. The first square root has simple branch points at \(\rho=\pm1,\pm5\). For the second, the norm of \(X=\xi^2\) to the \(y\)-field is
+\[
+          \frac{(w^2-22w+45)^2-\cos^2\theta\,(9-w)^2(25-w)(1-w)}{8100}.
+\]
+The numerator has simple roots at the generic \(\cos\theta\), all with finite nonzero \(w\). Indeed the rational function \((w^2-22w+45)^2/((9-w)^2(25-w)(1-w))\) is nonconstant and separable, with relatively prime numerator and denominator. The difference of numerator and denominator is \(576w\). These simple roots remain simple under \(w=\rho^2\) and the Möbius change in \(y\). Thus the norm is nonsquare, so \(X\) is nonsquare in the first extension.
+
+Changing the sign of \(R\) interchanges the two angles and changing the sign of \(\xi\) gives the two orientation values. The four-sheet normalized field trace is precisely their average. The constant moments in the theorem are therefore the moments in the lemma divided by four. The coefficients \(p,r,J\) are integral away from \(y=0\), by the reconstruction formulas, and the transformed \(t\) has a pole at \(y=1\). Thus the only possible poles of the phase lie above \(0,1,\infty\). At \(y=\infty\) the chart with \(\rho=s\) is generically dominant onto the angular quotient, so the first branch of the lemma is equivalent to strictly positive Laurent support.
+
+For the second branch, first consider \(y=0\), where \(T\to0\) and \(\rho=s/T\) has a pole of order one. The leading values of \(p,r,J\), divided by \(\rho^6,\rho^{10},\rho^{15}\), are those in the mirror-height calculation above, including the chosen square root of \(f_\infty\) for \(J\). Every nonzero weighted homogeneous expression in the reduced form \(E(p,r)+JO(p,r)\) has nonzero leading value there. At a given weight, parity decides whether the expression is even or has one factor \(J\). In the even polynomial the monomials with fixed \(3i+5j\) give distinct powers of \((1+u)/(1-u)\) after removing one common factor from \((1-u)^{i+2j}(1+u)^{2i+3j}\). They are linearly independent, and the factor \(J_\infty\) in the odd case is nonzero. Consequently the term \(t^{-b}T^j F_j\) has order \(j-d_j\) there, with a leading factor \(s^{d_j}\). Terms of the same order have distinct \(d_j\), so their leading values cannot cancel for the independent parameter \(s\). Vanishing at all points above \(y=0\) is equivalent to \(j>d_j\) for every nonzero term.
+
+At \(y=1\), \(T\) and \(t\) have simple poles, and \(\rho=s/T\) goes to zero. The divisor \(J=0\) in the angular quotient is prime. Its preimage on the sphere is the union of the reflection conics, each appearing with multiplicity one. The rotational group is transitive on the mirrors, since the full reflection group is transitive and its central inversion fixes every mirror. Reducedness also descends: an invariant function divisible upstairs by every mirror form is divisible by their product, and the quotient by this invariant product is again invariant. The \(w=0\) chart parametrizes the generic point of the divisor. For example \(p\) varies between distinct limiting values \(0\) and \(-1/8\) at the two choices \(\cos\theta=\mp1\). At the latter choice \(a=5/64\) and \(\xi^2=1\). Thus \(J/\rho=4a\xi/\alpha\) is generically nonzero there. A coefficient divisible by \(J^{k_j}\) but not by \(J^{k_j+1}\) has order \(k_j\) on a generic branch, with leading factor \(s^{k_j}\). The same independence in \(s\) prevents cancellation at a tied lowest order \(b-j+k_j\). Absence of poles above \(y=1\) is equivalent to \(j\le b+k_j\). This proves the characterization.
+
+Finally, \(d_j\ge15 k_j\), by multiplicativity of the weighted degree. This follows from the same injective leading substitution at \(y=0\), or by taking the degree of a quotient by \(J^{k_j}\). Hence \(b\ge14k_j+1\). For \(b\le14\), all nonzero coefficients have \(k_j=0\) and \(j\le b\). Their Laurent support is nonpositive, and global purity forces the constant coefficient to vanish by positivity of the second moment of that coefficient. For \(b=15\), the only term with \(j>b\) is \(j=16\), and then \(F_{16}=cJ\) for a scalar \(c\). The lower coefficients have degree at most \(14\) and are orientation-even. Thus a two-sided phase of this order has the form
+\[
+                  P=P_{\rm even}+cJ t^{-15}(1+t)^{16},\qquad c\ne0 ,
+\]
+where \(P_{\rm even}\) has nonpositive Laurent support. The cross term in \(\Lambda(P^2)\) vanishes by orientation symmetry. The even part contributes the trace of the square of its constant coefficient, and the odd part contributes \(c^2\binom{32}{30}\Lambda(J^2)>0\) over a real closed field. This excludes global purity. The phase \(J t^{-15}(1+t)^{16}\) passes the conditional test, so the two-sided threshold for that test is sharp. Above pole order \(15\), the conditional characterization leaves a moving-endpoint moment problem.
+
+
+## Quaternion splitting over a quadratic torus quotient
+
+**Theorem (The Brauer test for a quadratic torus quotient).**
+
+Let \(K\) have characteristic zero, let \(G\) be connected reductive, and let \(X\) be affine and geometrically homogeneous under \(G\). Put \(D=G_{\mathrm{der}}\), \(Y=\operatorname{Spec}K[X]^D\), and \(F=K(Y)\). Suppose the torus acting simply transitively on \(Y\) splits over a quadratic extension \(E=K(\sqrt a)\). The torus decomposition above over \(E/K\) presents \(Y\) as a product of rational factors with torsors \(N_{E/K}(z_j)=b_j\) for the norm-one torus. Then
+\[
+                 \ker\!\bigl(\operatorname{Br}(K)\longrightarrow
+                                  \operatorname{Br}(F)\bigr)
+                        =\big\langle (a,b_j)_K : j\big\rangle.
+\]
+More generally, over any finite extension \(L/K\) the kernel for \(L(Y)/L\) is generated by the restrictions of the same classes.
+
+Let \(B\) be a quaternion algebra over such an \(L\). Suppose \(D\) contains an active subgroup that is a central image of \(\operatorname{Res}_{L/K}\mathrm{SL}_1(B)\). If \([B]\) belongs to the displayed subgroup after restriction to \(L\), then \(X\) has a regular counterexample with infinitely many nonzero marked moments. For that quaternion subgroup, this membership criterion is also necessary for it to contain an \(F\)-split rank-one subgroup after passing to the generic invariant fibre.
+
+The proof of the integral decomposition of the torus uses only the quadratic Galois involution. Hilbert 90 and restriction of scalars again dispose of the split and induced factors. The torsors for the sign factors are the norm conics with the points at infinity deleted. The smooth projective model of \(N_{E/K}(z_j)=b_j\) is the Severi–Brauer conic of \((a,b_j)_K\). The rational factors contribute only independent transcendental variables. Amitsur's theorem for a product of Severi–Brauer varieties gives the formula for the Brauer kernel. For completeness, it follows by applying the single-variety theorem one factor at a time. Over the function field of the product of the earlier factors, a class that is killed by adding the last factor differs from a multiple of that factor's Brauer class by a class already killed. Purely transcendental extensions preserve the Brauer group of constants injectively. The same proof works after extending the base to \(L\), where some of the conics may split. [Peyre, *Products of Severi–Brauer varieties and Galois cohomology*, introduction](https://www-fourier.ujf-grenoble.fr/~peyre/publications/textes/coniques.pdf)
+
+Since \(Y\) is geometrically integral, \(L\otimes_K F=L(Y)\) is a field. When \(B\) splits there, the restricted group contains the scalar copy of \(\mathrm{SL}_{2,F}\) in \(\operatorname{Res}_{L(Y)/F}\mathrm{SL}_{2,L(Y)}\). Its image acts nontrivially on the generic fibre. Indeed the original active \(K\)-almost simple subgroup has finite kernel on \(X\), and base change and localization preserve the kernel for the action of this subgroup. The split rank-one obstruction for the normal subgroup \(D\) gives the regular witness. Conversely, if \(B\) is division over \(L(Y)\), its norm-one group is anisotropic. A nontrivial split one-parameter torus in its restriction of scalars would give one over \(L(Y)\) by adjunction. The central image is then anisotropic as well, which proves the stated necessity for this subgroup.
+
+
+## Quaternion splitting over an arbitrary torus quotient
+
+**Theorem (The Brauer test for any torus quotient).**
+
+Keep \(Y\) and \(F\) as above, with no restriction on the splitting field of the torus \(T\) acting simply transitively on \(Y\). Let \(M=X^*(T_{\bar K})\), and write \(\tau=[Y]\in H^1(K,T)\). Then
+\[
+                    \ker\!\bigl(\operatorname{Br}(K)
+                                      \longrightarrow\operatorname{Br}(F)\bigr)
+                    =\tau\mathbin{\smile} H^1(K,M),
+\]
+where the cup product uses evaluation of a character on a torus point. The equality holds over each finite base extension, with the restricted torsor class. In particular the preceding exact test for a quaternion subgroup, including a restriction of scalars, applies to every derived-invariant torus quotient. Membership of the quaternion class in this image over the defining field of an active subgroup gives a ground-field regular counterexample.
+
+Write \(\bar Y=Y_{\bar K}\) and let \(\Gamma=\operatorname{Gal}(\bar K/K)\). Since \(\bar Y\) is a split torus as a variety, its Picard group is zero and its units modulo constants are \(M\). The exact sequences of discrete Galois modules are
+\[
+  1\longrightarrow\bar K^\times\longrightarrow \bar K[\bar Y]^\times
+           \longrightarrow M\longrightarrow0,\qquad
+  1\longrightarrow\bar K[\bar Y]^\times\longrightarrow\bar K(Y)^\times
+           \longrightarrow\operatorname{Div}(\bar Y)\longrightarrow0 .
+\]
+The divisor group is a permutation module with \(H^1=0\) by Shapiro's lemma, using finite orbits and continuity. Thus \(H^2(K,\bar K[\bar Y]^\times)\to H^2(K,\bar K(Y)^\times)\) is injective. The latter group identifies with the relative Brauer group for \(\bar K(Y)/F\). The first exact sequence therefore identifies the Brauer kernel with the image of the connecting map from \(H^1(K,M)\).
+
+For the cup product formula choose \(y_0\in \bar Y\) and lift a character \(\chi\) to the unit \(s(\chi)\) taking the value \(\chi(t)\) at \(y_0t\). If \(\gamma y_0=y_0\tau_\gamma\), then \(\gamma s(\chi)=s(\gamma\chi)(\gamma\chi)(\tau_\gamma^{-1})\). Applying the coboundary to a character cocycle \(c\) gives the cocycle \((\gamma c_\eta)(\tau_\gamma^{-1})\) in degree two. This is the inverse of the evaluation cup product and has the same image. Base extension preserves the argument. The subgroup assertion now follows by the normal invariant-fibre argument of the quadratic case. [Skorobogatov, *Torsors and the Brauer group in number theory*, §3.4](https://wwwf.imperial.ac.uk/~anskor/IUM-IC.PDF)
+
+Point-freeness alone does not imply any quaternion splitting over general fields. For example, let \(l/k\) be Galois with group \(A_5\), take an independent variable \(x\), and set \(K=k(x)\), \(E=l(x)\). One can obtain \(l/k\) by permuting five independent variables over \(\mathbb Q\) and taking the fixed field. The torsor \(N_{E/K}(z)=x\) has no \(K\)-point, since the \(x\)-valuation of a norm is a multiple of \(60\). Its character module fits into \(0\to\mathbb Z\to\mathbb Z[A_5]\to M\to0\). Consequently \(H^1(K,M)=H^1(A_5,M)=H^2(A_5,\mathbb Z)=0\), by inflation and restriction, Shapiro's lemma, and the perfectness of \(A_5\). Its function field kills no nonzero constant Brauer class. This gives an explicit limit of quaternion splitting by a point-free torus quotient.
+
+
+## Regular witnesses on isomorphism torsors of division algebras
+
+**Theorem (An isomorphism torsor detected by a subfield quotient).**
+
+Let \(A,B\) be central simple algebras of the same degree \(n\) over a characteristic-zero field \(K\). Let \(E\subset A\) be a finite separable field, put \(r=n/[E:K]\ge2\), and let \(X=\operatorname{Isom}_{K\text{-alg}}(A,B)\). If
+\[
+                         [A_E]\in \langle r[B_E]\rangle
+                               \quad\text{in }\operatorname{Br}(E),
+\]
+then the normalized trace on \(X\) has a regular pure phase with one regular multiplier detecting infinitely many orders. This can hold with both \(A\) and \(B\) division and \(X(K)=\varnothing\).
+
+Let \(C=C_A(E)\) be the centralizer. It is central simple of degree \(r\) over \(E\) with class \([A_E]\). The image \(S\) of \(\operatorname{Res}_{E/K}\mathrm{GL}_1(C)\) in \(\mathrm{PGL}_1(A)\) is connected reductive and acts on \(X\) by precomposition. Set \(Y=X/\!/S\) and \(F=K(Y)\). Restricting an isomorphism to \(E\) gives an \(S\)-invariant map, so the matrix coefficients of the universal restriction give an embedding \(E\otimes_K F\hookrightarrow B_F\). Over an algebraic closure this embedding has \(r\)-dimensional eigenspaces for all the primitive idempotents: the same statement holds for \(E\subset A\), by transitivity of the Galois action on the embeddings of \(E\).
+
+Since \(Y\) is geometrically integral, \(F_E=F\otimes_K E\) is a field. The factor \(F_E\) of \(E\otimes_K F_E\) given by multiplication yields an idempotent in \(B_{F_E}\) of reduced rank \(r\). Thus \(\operatorname{ind}(B_{F_E})\mid r\) and \(r[B_{F_E}]=0\). The assumed Brauer relation splits \(C_{F_E}\). The subgroup \(\operatorname{Res}_{F_E/F}\mathrm{SL}_1(C_{F_E})\) of the precomposition group, up to a finite central kernel, now contains the scalar copy of the split \(\mathrm{SL}_{2,F}\) in its \(\mathrm{SL}_r\). Precomposition is faithful on geometric points of \(X\), hence this subgroup acts on the generic invariant fibre nontrivially. The generic-orbit theorem for a reductive subgroup produces the regular witness on \(X\). [Knus–Merkurjev–Rost–Tignol, *The Book of Involutions*, §§1.B–C](https://www.maths.ed.ac.uk/~aar/papers/involutions.pdf)
+
+For Galois \(E/K\), the formula above gives the exact Brauer kernel over \(E\) of this invariant quotient:
+\[
+                         \ker\bigl(\operatorname{Br}(E)
+                                   \longrightarrow\operatorname{Br}(F_E)\bigr)
+                                  =\langle r[B_E]\rangle .
+\]
+Indeed \(Y\) is the variety of balanced embeddings \(E\hookrightarrow B\), meaning that all geometric eigenspaces have dimension \(r\). Over an algebraic closure the embedding variety is a single conjugacy class with reductive centralizer, and the restriction map from the isomorphism torsor is the quotient by that centralizer. This descends the identification. Over \(E\), specifying an embedding is specifying an ordered decomposition into \([E:K]\) summands of rank \(r\), since \(E\otimes_K E\) is split. Project to one summand, viewed as a right ideal of reduced rank \(r\) in \(\mathrm{SB}_r(B_E)\). Over the field of that generalized Severi–Brauer variety, write \(B=M_k(D)\). The chosen summand has \(D\)-dimension \(r/\deg D\), so it extends to a fixed ordered decomposition. On the open chart transverse to the complementary sums in this decomposition, the other summands are graphs of \(D\)-linear maps. The direct-sum condition is open in this product of affine spaces. Thus \(F_E\) is purely transcendental over the generalized Severi–Brauer function field. The Brauer kernel of the latter field is generated by \(r[B_E]\). One proof uses the Picard obstruction sequence on the smooth proper Grassmannian form. Its geometric Picard group is generated by the Plücker bundle. Lifts of the defining projective cocycle act on the \(r\)-th exterior power, and a scalar acts there by its \(r\)-th power, so the obstruction class of the generator is \(r[B_E]\) up to sign. The Brauer group of the variety injects into that of its function field, and a purely transcendental extension adds no constant kernel. In particular, when \(r=2\), the displayed Brauer condition is necessary as well as sufficient for this choice of \(S_F\) to contain a split rank-one subgroup. If its quaternion algebra is still division over \(F_E\), a split one-parameter torus in the determinant-one restriction of scalars would contradict anisotropy over \(F_E\) by adjunction. Any split rank-one subgroup maps into the semisimple derived group, so the central torus of \(S_F\) cannot supply one.
+
+Here is an example with no split rank on either side over the ground field. Over \(K=\mathbb Q(i)(u,v,s,t)\), take
+\[
+        B=(u,v)_4,\qquad A=(u,v)_2\otimes_K(s,t)_2,\qquad E=K(\sqrt{s}) .
+\]
+The symbols use their indicated degrees. Both \(A\) and \(B\) are division of degree four. Embed \(K\) into the iterated Laurent series field in the four variables. In each symbol algebra assign to its two generators the corresponding coordinate valuations divided by the symbol degree. In the tensor product assign the two independent pairs of coordinate valuations. The standard monomial basis has distinct valuation classes modulo \(\mathbb Z^4\), so a nonzero linear combination has a unique smallest term. In a product the product of the two smallest terms remains strictly smallest. This proves absence of zero divisors over the Laurent field and therefore over \(K\). The symbol identity \(2[(u,v)_4]=[(u,v)_2]\) follows by squaring the Kummer character of \(u\). The right hand side is nonzero by the same valuation calculation. Thus \(B\) has period four, while \(A\) has period two, so \(X(K)\) is empty. The subfield \(E\) lies in the second quaternion factor of \(A\). Its restriction makes \([A_E]=[(u,v)_2]_E=2[B_E]\), which is the criterion with \(r=2\). The same construction works in every degree \(2^h\) with \(h\ge2\). Adjoin a primitive \(2^h\)-th root of unity to the constant field, take \(B=(u,v)_{2^h}\), and tensor \((u,v)_2\) with \(h-1\) quaternion symbols in disjoint pairs \((s_j,t_j)\) to form \(A\). The multiquadratic subfield \(E=K(\sqrt{s_1},\ldots,\sqrt{s_{h-1}})\) has \(r=2\), and \([A_E]=2^{h-1}[B_E]\) is in the required subgroup. The valuation and period arguments are unchanged.
+
+## Conditional moments with zeros away from the height endpoints
+
+**Theorem (Regular angular amplitudes have additional conditional zeros).**
+
+Use the octahedral joint chart (H14), with \(S\in[1/2,2]\) and \(\sqrt S\) uniform, or the icosahedral mirror chart, with \(w\in[0,1]\) and \(\sqrt w\) uniform. Include the orientation sign. For any nonconstant real regular angular amplitude \(A\) and any \(m\ge1\), the conditional moment of \(A^{2m}\) has a complex zero away from the two endpoints of the chosen radial interval. In the octahedral chart this statement concerns the Laurent polynomial in \(S\) on \(S\ne0\). In particular these conditional moments cannot be scalar multiples of products of powers of the radial parameter and its two endpoint factors. This excludes separation of a regular amplitude into a single beta-type radial moment factor and an independent angular moment, as used in the direct moving-endpoint cancellation.
+
+In the icosahedral chart let \(d>0\) be the weighted degree of \(A\), with weights \(6,10,15\) for \(p,r,J\) in its reduced expression, and let \(k\) be its order of divisibility by \(J\). The conditional moment \(C_{2m}(w)\) is a polynomial. Its degree is exactly \(md\): the leading substitution at \(w\to+\infty\) is faithful and real, and the limiting even power has positive integral. At \(w=0\), \(J/\sqrt w\) is generically nonzero and the limiting chart is dominant on the irreducible mirror divisor. Thus the leading term of \(A/(\sqrt w)^k\) there has positive even moment, giving \(\operatorname{ord}_0 C_{2m}=mk\) with \(k\le d/15\).
+
+At \(w=1\), write \(v=\sqrt{1-w}\). On each orientation sheet the first variation of \((p,r)\) is a nonsingular real linear image of \(v(\cos\theta,\sin\theta)\), and the sheet is smooth over the \((p,r)\)-plane. Let \(\ell\) be the smaller order of \(A\) at these two smooth points. Its leading Taylor polynomial has a positive even moment on the first-order ellipse on a sheet attaining this order. Hence \(\operatorname{ord}_1 C_{2m}=m\ell\). To bound \(\ell\), restrict the sheet and the equation \(A=0\) to a generic line in the \((p,r)\)-plane through the endpoint. This preserves the local vanishing order. The curve \(J^2=f(p,r)\) on the plane over the line has degree at most five, and the reduced polynomial for \(A\) has ordinary degree at most \(d/6\). Bézout gives \(\ell\le5d/6\). The two endpoint multiplicities therefore sum to at most \(9md/10\), strictly below the degree. In fact at least \(md/10\) of the zeros, counted with multiplicity, are away from the endpoints.
+
+In the octahedral chart write \(A=\sum a_{ij\epsilon}p^i q^j J^\epsilon\), \(\epsilon\in\{0,1\}\), and set
+\[
+       d_\infty=\max_{a_{ij\epsilon}\ne0}(2i+3j+9\epsilon/2),
+       \qquad d_0=\max_{a_{ij\epsilon}\ne0}(j+3\epsilon/2).
+\]
+The formulas (H14) and the oriented formula (with \(H^2=B(1-B)/5832\)) give pole orders \(d_\infty,d_0\) at \(S=\infty,0\), respectively. For clarity, at infinity the leading factors for \(p,q,J\) are nonzero constants times \(B,B^2,HB^2\). At a fixed order and parity, the powers \(B^{i+2j}\) are distinct. At zero, the leading factors are constants times \(1-B,B(1-B),HB(1-B)\). At a fixed order and parity, \(j\) is fixed and the powers of \(1-B\) separate the remaining terms. The two signs of \(H\) separate the parities. All these continuations are real in the angular formulas for positive \(S\), so the leading even moments are strictly positive. Thus \(S^{2md_0}C_{2m}(S)\) is a polynomial of degree \(2m(d_\infty+d_0)\) with nonzero constant coefficient.
+
+At \(S=2\) the orders of \(p,q,J\) are \(1,2,2\). The leading factors are constants times \(1+3B,B(1+3B),H(1+3B)\). After taking out common factors at each fixed order and parity, the leading expressions are distinct powers of \(B/(1+3B)\). At \(S=1/2\) use \(p-1/4,q,J\), all of order one, with leading factors proportional to \(3B-1,B,H\). At a fixed order and parity the powers of \((3B-1)/B\) give the same independence. Denote the orders of \(A\) at the two ends by \(\ell_2,\ell_{1/2}\). These calculations and positivity give the corresponding moment orders \(2m\ell_2,2m\ell_{1/2}\). Moreover
+\[
+      \ell_2\le\max (i+2j+2\epsilon)\le(d_\infty+d_0)/2,\qquad
+      \ell_{1/2}\le\max (i+j+\epsilon)\le d_\infty/2 .
+\]
+In the second bound the shift from \(p\) to \(p-1/4\) cannot increase the maximum. If \(d_0>0\), at least \(md_0\) zeros counted with multiplicity remain away from both endpoints. If \(d_0=0\), the amplitude is a nonconstant polynomial in \(p\) alone. Since \(p\) takes distinct endpoint values \(0,1/4\) with simple approach, the sum of the two orders is at most \(\deg_p A=d_\infty/2\), which again leaves additional zeros.
+
+The proof holds over every real closed field. The conditional moments and nonvanishing leading coefficients in each finite degree are given by the chart formulas and finite positive-definite moment integrals. Equivalently, for any fixed \(A\)-degree and \(m\), the polynomial degree and endpoint multiplicity assertions transfer over the real algebraic coefficients. The obstructions concern angular amplitudes and leave coupled dependence on the Laurent scalar and the conditional angle in the overall moment problem.
+
+
+### No separated radial law in one octahedral orientation parity
+
+**Theorem (Octahedral separation fails for either orientation parity).**
+
+Use the octahedral chart (H14), including the orientation sign, and let \(A\) be a nonconstant real regular angular amplitude that is even or odd under \(J\mapsto-J\). There is no radial function \(L(S)\) and no sequence of constants \(c_m\) for which
+\[
+                  \mathbb E[A^{2m}\mid S]=c_m L(S)^{2m}
+                                      \qquad(m\ge1)
+\]
+throughout the interior of the radial interval. Here \(L\) need not be rational or have any prescribed zero set. The assertion also holds over every real closed field if separation is written as the polynomial identities \(C_{2m}\propto C_2^m\) for the conditional moments.
+
+If separation holds, \(C_2(S)\ne0\) as a polynomial by positivity, and all the \(c_m\) are nonzero. The condition then says \(C_{2m}\propto C_2^m\). Consider a complex nonzero \(c\notin\{1/2,2\}\) at which \(C_2(c)=0\). With \(z\) the conditional circle parameter, write \(B=(2+z+z^{-1})/4\) and take \(H\) proportional to \(z-z^{-1}\). At \(S=c\) the evaluated \(A\) is a Laurent polynomial with inversion parity \(A(z^{-1})=\pm A(z)\). The vanishing of every constant term of \(A^{2m}\) forces \(A=0\) on that fibre by Duistermaat–van der Kallen, since the support of any nonzero \(A^2\) is symmetric under inversion. This argument also applies to the first nonzero coefficient after dividing by \((S-c)^e\), where \(e\) is the vanishing order of the amplitude in the chart. Thus \(C_2\) has order exactly \(2e\) at \(c\). Indeed, if its order were greater, separation would force all even constant moments of that first nonzero coefficient to vanish. Its order cannot be smaller, by the square formula.
+
+Write \(A=J^\epsilon F(p,q)\) with \(\epsilon=0\) or \(1\). At each such \(c\) the even part of the chart parametrizes the parabola
+\[
+                         L_c(p,q)=c(9q-p)-6p^2+2p=0 .
+\]
+This follows from (H14) by eliminating \(B\). The slope of \(p\) as a function of \(B\) is nonzero for the allowed \(c\), and \(J\) is generically nonzero along the chart fibre. Hence vanishing identically there is equivalent to \(L_c\mid F\) over the algebraic closure. The identity \(L_c(p,q)=(c-S)(9q-p)\) in the chart shows that the order \(e\) is exactly the multiplicity of this factor. In particular all zeros of \(C_2\) away from \(0,1/2,2\) have been accounted for by actual fibre factors of \(F\).
+
+Remove these factors from \(A\) and write \(A_0=A/\prod_c L_c^{e_c}\). Choose the product real by pairing conjugate roots, since the coefficients of \(A\) are real. Put \(N=\sum_c e_c\). Each removed factor has pole orders \(4,1\) at \(S=\infty,0\), and vanishing orders \(1,0\) at \(S=2,1/2\), by (H14). Write \(d_\infty,d_0,\ell_2,\ell_{1/2}\) for the orders of \(A\) in the preceding theorem, and use a superscript \(0\) for \(A_0\). Order additivity gives
+\[
+       d_\infty+d_0-\ell_2-\ell_{1/2}-N
+               =d_\infty^0+d_0^0-\ell_2^0-\ell_{1/2}^0+3N>0 .
+\]
+The strict inequality follows from the preceding theorem for nonconstant \(A_0\); for constant \(A_0\) it follows from \(N>0\). But the polynomial \(S^{2d_0}C_2(S)\) has degree \(2(d_\infty+d_0)\) and nonzero constant coefficient. The accounted zeros, at the endpoints and at the selected \(c\)'s, have total multiplicity \(2(\ell_2+\ell_{1/2}+N)\). This contradiction proves the assertion. The same proof works over a real closed field with its algebraic closure in place of the complex field. [Duistermaat and van der Kallen, *Constant terms in powers of a Laurent polynomial*](https://webspace.science.uu.nl/~kalle101/powers.pdf)
+
+
+## Rigidity of the separated angular moment laws
+
+**Lemma (The inverse-branch product detects a two-pole cover).**
+
+Let \(k\subset\Omega\) be algebraically closed fields of characteristic zero, and let \(C/\Omega\) be a smooth projective connected curve. Let \(f,y\in\Omega(C)\) be nonconstant. Suppose that \(f\) has exactly two poles \(q_0,q_\infty\), and that \(y\) has its only zero at \(q_0\) and its only pole at \(q_\infty\). If
+\[
+                       -\operatorname{Res}_{q_\infty} f^m\,dy/y\in k
+                                  \qquad(m\ge1),
+\]
+then one of the following holds.
+
+1. The cover \(f:C\to\mathbb P^1\) descends to \(k\) up to isomorphism over \(\Omega\).
+2. The cover factors through a map \(C\to D\) of degree greater than one, totally ramified at \(q_0\) and at \(q_\infty\). Their images in \(D\) are distinct.
+
+In particular, if \(k\subset\Omega\) are algebraically closed and a Laurent polynomial in \(\Omega[z,z^{-1}]\) with both signs of exponents has all its scalar moments in \(k\), it has the form \(p(bz^e)\) for \(p\in k[z,z^{-1}]\), \(b\in\Omega^\times\) and \(e\ge1\).
+
+To prove the lemma put \(x=f\), and let \(\mathcal J\) be the inverse branches of \(f\) at \(x=\infty\) tending to \(q_\infty\). Take the product \(H(x)\) of their \(y\)-values in the normal closure of \(\Omega(C)/\Omega(x)\). Put \(a=-\operatorname{ord}_{q_\infty}y>0\) and \(d=-\operatorname{ord}_{q_\infty}f>0\). At \(q_\infty\), in the local parameter \(u=x^{-1/d}\), write \(y=c u^{-a}\exp(g(u))\) with \(g(0)=0\). Multiplying over all \(d\) branches and using the residue identity gives
+\[
+                    H(x)=c' x^a
+                       \exp\!\left(-\sum_{m\ge1}
+                          \frac{-\operatorname{Res}_{q_\infty} f^m\,dy/y}
+                               {m x^m}\right),\qquad c'\in\Omega^\times .
+\]
+Thus \(H/c'\in k((1/x))\). A polynomial relation over \(\Omega(x)\) for this series gives one over \(k(x)\), by clearing denominators and separating the finitely many coefficients of \(\Omega\) in a \(k\)-linearly independent basis. [Pakovich, *On rational functions orthogonal to all powers of a given rational function on a curve*, §§2, 6](https://arxiv.org/abs/0910.2105)
+
+At the chosen place over \(x=\infty\), the branches in \(\mathcal J\) have negative \(y\)-valuation and all the other branches have positive \(y\)-valuation. Their subset is uniquely distinguished among subsets of its cardinality by smallest total valuation. The stabilizer of \(H\) in the normal-closure group therefore equals the setwise stabilizer of \(\mathcal J\). Partition the inverse branches by membership in every translate of \(\mathcal J\). If the partition is discrete, the core of the stabilizer of \(\mathcal J\) is trivial, so the normal closure generated by \(H\) is the full normal closure of \(f\). It is the base extension of the normal closure of \(H/c'\) over \(k(x)\). The group remains the same under extension of algebraically closed constants, and the subgroup defining \(C\) gives the descended cover. If some class of the partition has size greater than one, transitivity makes all classes the same size. The invariant partition gives an intermediate curve \(D\). The inertia orbits at infinity upstairs are \(\mathcal J\) and its complement. On the classes of the partition these give two distinct orbits, since no class mixes the two types. Consequently each of the two places of \(D\) above infinity has exactly one preimage on \(C\), with full ramification in \(C\to D\).
+
+For the Laurent assertion, first divide all nonzero exponents by their greatest common divisor \(e\), writing the phase in \(z^e\). This leaves its moments unchanged. Apply the lemma to the new variable as \(y\) on the projective line. In the second case \(D\) is rational by Riemann–Hurwitz, and a coordinate on \(D\) with its sole zero and pole at the two images pulls back to a scalar times a power of the new variable. This contradicts primitivity of its Laurent support. In the first case the descended rational curve has two poles defined over \(k\). A coordinate with its zero and pole there differs from the new variable by a scalar or by inversion followed by a scalar. Absorb inversion into \(p\).
+
+**Theorem (Neither exceptional angular chart has a separated radial moment law).**
+
+In the octahedral joint chart (H14) or the signed icosahedral mirror chart, let \(A\) be a nonconstant real regular angular amplitude. Write \(C_{2m}(s)\) for its conditional even moments, where \(s=S\) or \(s=w\) respectively. Then the identities \(C_{2m}(s)\propto C_2(s)^m\) cannot all hold. In particular an arbitrary radial rescaling of a single angular distribution cannot realize the conditional even moments of such an amplitude. This includes amplitudes mixing the two orientation parities, and permits arbitrary radial factors rather than just factors supported at the chart endpoints. This theorem concerns the conditional angular laws before final height integration.
+
+Work first over \(\mathbb R\). The chart formulas express the conditional moments by Laurent scalar moments, including the double-cover trace in the icosahedral case. Normalize \(f=A^2/C_2\). If the asserted proportionality holds, all moments of \(f\) are constants.
+
+For the octahedral chart take \(z\) with \(B=(2+z+z^{-1})/4\), so \(H\) in the oriented chart is proportional to \(z-z^{-1}\). A nonconstant angular \(A\) depends on \(z\). Indeed a \(z\)-independent amplitude must be orientation-even. At \(B=0\) its value is polynomial in \(S\), since \(p=(2-S)/6\) and \(q=J=0\). The exact pole-order formula at \(S=0\) for a regular polynomial then forces independence of \(q\). A polynomial of \(p\) alone independent of \(B\) is constant since \(p\) varies linearly for generic \(S\). For positive \(S\) the continued chart gives real functions on the conditional circle, so the nonconstant phase \(f\) has both signs of Laurent exponents. The lemma over \(\Omega=\overline{\mathbb C(S)}\) writes \(f=p(bz^e)\). Taking square roots after adjoining \(b^{1/e}\) and \(\sqrt{C_2}\), we obtain
+\[
+                          A(S,z)=h(S)\,a_0(\beta(S)z)
+\]
+with a fixed complex Laurent polynomial \(a_0\) and \(h,\beta\in\Omega^\times\). Indeed the fixed Laurent polynomial \(p(z^e)\) is a square in \(\Omega[z,z^{-1}]\) by this substitution, hence is a square in \(\mathbb C[z,z^{-1}]\) by factorization. The extreme exponents of \(a_0\) are \(-n,n\) with \(n>0\), since the support of the real \(A(S,z)\) at positive generic \(S\) is symmetric.
+
+The two linear factors in the formula for \(J\) give pairs \(z_i,z_i^{-1}\) with equal values of \(A\), at
+\[
+             B_1=-\frac1{2S-1},\qquad
+             B_2=-\frac S{(2S-1)(S-2)},\qquad
+             z_i+z_i^{-1}=4B_i-2.
+\]
+At these pairs \(p,q\) agree and \(J=0\). Thus \(a_0(\beta z_i)=a_0(\beta/z_i)\) in a common finite extension of the \(S\)-field. Consider a place where \(\beta\) has nonzero valuation. If either \(z_i\) has nonzero valuation, the extremal exponents of \(a_0\) force the respective pole orders to be \(n|v(\beta)+v(z_i)|\) and \(n|v(\beta)-v(z_i)|\). Equality forces \(v(\beta)=0\), a contradiction. In particular places above \(S=1/2\) or \(2\) are excluded. If both \(z_i\) are units, taking leading terms forces each residue \(z_i^{2n}=1\).
+
+There is no simultaneous torsion of this kind at any finite \(S\) other than \(0\) away from \(1/2,2\). Indeed, put \(x=B_1\), \(y'=B_2\); eliminating \(S\) gives \(y'=x(1-x)/(1+3x)\). If the two \(z_i\) are roots of unity, \(4x\) and \(4y'\) are algebraic integers, with each conjugate of \(x\) in \([0,1]\). But \(0\le x(1-x)/(1+3x)\le1/9\) on that interval. Hence every conjugate of \(4y'\) lies in \([0,4/9]\), forcing \(y'=0\) by its algebraic norm. This requires \(x=0\) or \(1\), corresponding to \(S=\infty\) or \(0\). These last places cannot support zeros or poles of \(\beta\) either. In fact \(\beta^{2n}\) is a constant times \(A_n(S)/A_{-n}(S)\), where the \(A_{\pm n}\) are the extreme Fourier coefficients. This ratio belongs to \(\mathbb C(\sqrt S)\) and has modulus one along generic positive \(S\) by reality, so it has valuation zero at \(0\) and at infinity. We conclude that \(\beta\) has no zeros or poles on the complete curve of its finite field of definition and is constant.
+
+Since \(z_1(S)\) is nonconstant, the equality \(a_0(\beta z_1)=a_0(\beta/z_1)\) for constant \(\beta\) is now an identity in the circle variable. It makes \(A\) orientation-even. The single-parity separation theorem above gives the contradiction.
+
+For the icosahedral chart work over \(\Omega=\overline{\mathbb C(w)}\) on the smooth genus-one curve
+\[
+                     Y^2=-45\xi^4+d\xi^2-\frac{16}{5}w,
+                           \qquad d=w^2-22w+45.
+\]
+The logarithmic coordinate \(y=\alpha \xi^2-d/(2\alpha)+iY\) has one double zero and one double pole at the two infinities. The reconstruction formulas make \(A\) polynomial in \(\xi,Y\) over the coefficient field after adjoining \(\sqrt w\), so there are no other possible poles. The two infinities are exchanged by ordinary conjugation of the fibre for \(0<w<1\): the two leading values of \(Y/\xi^2\) are opposite purely imaginary constants. Since \(A\) is real, it has poles at both or at neither. If at neither, \(A\) is constant on the generic curve and is fixed by the involution \(\kappa\) over the circle. The regular intersection theorem for the mirror circle then makes \(A\) constant globally.
+
+Otherwise apply the lemma to \(f=A^2/C_2(w)\) on this curve. The conditional moments are \(-\frac12\operatorname{Res}_{q_\infty} f^m dy/y\), because the conditional circle averages both sheets and the trace of \(f^m\) over \(y\) is Laurent, with possible poles only at \(0,\infty\). The cover cannot descend to \(\mathbb C\), since the genus-one curve has nonconstant \(j\). For example at \(w=0\), two quartic branch points coalesce while the other two remain distinct, so the branch cross ratio tends to \(1\) in a suitable ordering and the Legendre formula for \(j\) has a pole. More explicitly the invariant is
+\[
+                   j(w)=\frac{16(d^2+1728w)^3}
+                                   {144w(d^2-576w)^2}.
+\]
+The lemma therefore yields a map to \(D\) of degree \(b>1\) totally ramified at both infinities. Riemann–Hurwitz makes \(D\) rational, since ramification forbids a map to a curve of genus one or more. The difference of the two infinities has exact order two in the Picard group: \(y\) gives twice the difference, and a function with a single simple pole would make the genus-one curve rational. A coordinate on \(D\) with zero and pole at the two images consequently pulls back to a constant times \(y^{b/2}\). Thus \(f\) and \(A^2\) are fixed by \(\kappa\), the involution fixing \(y\). But \(A^2\) is regular in the angular ring, so the regular intersection theorem makes \(A^2\) scalar, again forcing \(A\) scalar. This contradiction proves the assertion.
+
+The result holds over every real closed field. For each bounded angular degree, choose a rational interior height \(s_*\) with \(C_2(s_*)\ne0\). The asserted separation would impose \(C_{2m}(s)C_2(s_*)^m=C_{2m}(s_*)C_2(s)^m\). These are polynomial equations in finitely many coefficients over real algebraic numbers, with a finitely generated ideal even when all \(m\) are included. Nonconstancy and the inequality \(C_2(s_*)\ne0\) are finite first-order conditions. A failure over any real closed field would transfer to \(\mathbb R\).
+
+### The icosahedral conditional moments detect the height
+
+**Corollary (The normalized mirror moments determine the height algebraically).**
+
+Let \(P\in\mathbb R[t,t^{-1},p,r,J]\) be regular with genuine angular dependence, and take its conditional even moments \(C_{2m}(t,w)\) on the signed icosahedral mirror chart, before extracting any scalar constant term in \(t\). Then \(w\) is algebraic over
+\[
+                   M=\mathbb C\bigl(C_{2m}(t,w)/C_2(t,w)^m:m\ge1\bigr).
+\]
+In particular these normalized moments cannot all be rational functions of \(w'=(1+t)^2w\) alone. This prevents transporting the entire conditional even-moment law from the dilated height by a regular phase, even when the phase itself has mixed Laurent and angular coefficients.
+
+Over the algebraic closure of \(\mathbb C(t,w)\), use the same mirror curve, logarithmic coordinate \(y\), and \(f=P^2/C_2\). The generic \(C_2\) is nonzero by positivity at real \(t,w\). Conjugation at real \(t,w\) exchanges the two infinities, so a pole at one forces a pole at the other. If there are no poles, \(P\) is fixed by \(\kappa\) and the regular intersection theorem makes it scalar Laurent in \(t\). Otherwise apply the inverse-branch lemma with the relative algebraic closure of \(M\) as its field of constants. The totally ramified factor case makes \(P^2\) fixed by \(\kappa\), again forcing \(P\) to be scalar in the angular variables. Here one can use that the angular function field is geometrically integral over \(\mathbb R(t)\), so an element algebraic over \(\mathbb R(t)\) belongs to \(\mathbb R(t)\). The remaining case descends the genus-one curve to the constant field of the lemma. Its nonconstant rational invariant \(j(w)\) is then algebraic over \(M\), so \(w\) is algebraic over \(M\) as well. The last assertion follows from algebraic independence of \(w\) and \(w'\).
+
+
+
+**Corollary (An octahedral phase with an odd component detects the height).**
+
+Let \(P\in\mathbb R[t,t^{-1},p,q,J]\) have a nonzero component odd under \(J\mapsto-J\). Form the conditional moment field \(M\) from \(C_{2m}(t,S)/C_2(t,S)^m\) on the octahedral chart. Then \(S\) is algebraic over \(M\). In particular no such phase transports the entire normalized even-moment law from the dilated height \(T^2S\) alone. A regular octahedral phase with a transported normalized law would have to be orientation-even.
+
+Suppose \(S\) is transcendental over \(M\). Work over the algebraic closure \(k\) of \(M\) inside \(\Omega=\overline{\mathbb C(t,S)}\). If \(M=\mathbb C\), enlarge \(k\) by adding \(t\) and taking the relative algebraic closure. In either case \(S\) remains transcendental over \(k\) and \(\Omega\) is algebraic over \(k(S)\). Apply the Laurent part of the inverse-branch lemma to \(P^2/C_2\) with constants in \(k\), and take its square root as above. Then \(P=h\,a_0(\beta z)\) with \(a_0\) over \(k\), and extreme exponents \(\pm n\) by reality at generic real parameters. The same two octahedral branch identifications hold, and the valuation argument away from \(S=0,\infty\) excludes zeros and poles of \(\beta\) there. At \(S=0,\infty\), \(z_1\) tends to \(1,-1\), respectively, and is nonconstant. For either residue \(\epsilon=\pm1\) and any nonzero exponent \(j\), \(z_1^j-z_1^{-j}\) has the same valuation as \(z_1-\epsilon\), by its simple zero at \(\epsilon\) in characteristic zero. Thus
+\[
+                       \sum_j (a_0)_j\beta^j
+                                    (z_1^j-z_1^{-j})=0
+\]
+would have a unique term of lowest valuation if \(v(\beta)\ne0\), using the appropriate extreme exponent. This excludes zeros and poles at the last two places. Hence \(\beta\in k\), and the nonconstant \(z_1\) forces the fixed shape to be even under inversion as before. This contradicts the odd component of \(P\).
+
+
+## Partial index reduction on an isomorphism torsor
+
+**Theorem (A split rank-one action from partial index reduction).**
+
+Use the isomorphism torsor \(X=\operatorname{Isom}_{K\text{-alg}}(A,B)\) and centralizer quotient of the preceding construction, with \(A,B\) of degree \(n\) and with \(E/K\) Galois inside \(A\). Put \(r=n/[E:K]\ge2\). The derived subgroup of the precomposition centralizer has positive split rank over the generic invariant quotient field precisely when
+\[
+             \gcd_{1\le i\le n}
+                \left\{\frac{r}{\gcd(i,r)}
+                          \operatorname{ind}(A_E\otimes B_E^{\otimes i})\right\}
+                            < r .
+\]
+In that case \(X\) admits a regular pure phase with a fixed regular multiplier whose marked moments are nonzero infinitely often. In particular this applies to a new family where the centralizer algebra becomes a matrix algebra over a division algebra of smaller index that still exceeds one.
+
+Indeed the generic quotient field after extending constants to \(E\) is purely transcendental over \(E(\mathrm{SB}_r(B_E))\), by the ordered decomposition of right ideals used above. The index on that function field is the displayed gcd, by the generalized Severi–Brauer index formula (with \(r\mid n\)). A purely transcendental extension preserves index, by specialization or by embedding into a Laurent series field. The centralizer algebra \(C_{F_E}\) therefore has the displayed index \(d\) and degree \(r\). If \(d<r\), then \(C_{F_E}\simeq M_{r/d}(D')\) over a division algebra \(D'\), and the scalar operations on two summands give an \(\mathrm{SL}_{2,F_E}\) in its norm-one group. The scalar copy of \(\mathrm{SL}_{2,F}\) in the restriction of scalars acts nontrivially on the generic fibre by precomposition, hence lifts to a regular counterexample by the generic-orbit theorem. If \(d=r\), the norm-one group over \(F_E\) is anisotropic. Its restriction of scalars and its central image remain anisotropic, as in the split criterion above. [Karpenko, *Three theorems on common splitting fields of central simple algebras*, formula in Lemma III.2](https://sites.ualberta.ca/~karpenko/publ/lnk.pdf)
+
+For example let \(n=2^h\) with \(h\ge3\), \(r=n/2\), and take \(K=\mathbb Q(\zeta_n)(u,v,s,t)\),
+\[
+                    B=(u,v)_n,\qquad A=(u,v)_r\otimes_K(s,t)_2 ,
+                   \qquad E=K(\sqrt{s}) .
+\]
+Both \(A,B\) are division over \(K\) by the disjoint coordinate valuations, with periods \(r,n\) respectively. Over \(E\) the first Brauer class is \(2[B_E]\), and \(B_E\) still has period \(n\), by the same valuation of monomials with denominators in the \(u,v\) directions. The term \(i=n-2\) bounds the displayed index by \(r/2\), since \(2[B_E]+(n-2)[B_E]=0\). Conversely, the Brauer kernel of the quotient extension over \(E\) is \(\langle r[B_E]\rangle\), so \(2[B_E]\) has period \(r/2\) there, giving equality of the index with \(r/2\). In particular the centralizer does not split over this quotient field, and the partial index drop supplies the split rank-one action. The original torsor is point-free and both original acting forms are anisotropic.

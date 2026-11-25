@@ -57,6 +57,43 @@ they force positive scaled-degree mass above an explicit cutoff
 when the largest opposite-coordinate masses are small.
 [Residual upper quantiles](ABC_RESIDUAL_QUANTILE_SPECTRUM.md)
 
+For every actual balanced endpoint, an affordable pair of full
+divisors reduces the count to distinct targets over a fixed record.
+In each sufficiently short numerical interval such a fibre contributes
+at arbitrarily small normalized exponent. This forces almost the
+entire conditional target entropy to lie in the choice of numerical
+interval, for any fixed positive interval exponent small enough for
+the chosen loss. The affine rank bound extends fixed-record sparsity to every
+balanced profile in short windows centred at linear functions of
+boundedly many small integer parameters. This includes ordinary
+and polynomial progressions with arbitrary coefficients.
+Counting separated targets, or covering them by sufficiently
+few such systems, remains open. A separate digit construction
+shows that progression sparsity alone cannot give a power
+saving on additive energy.
+[Fixed-record interval entropy](ABC_WIDE_COFACTOR_CONGRUENCES.md#numerical-interval-entropy)
+· [Affine rank and the additive obstruction](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md)
+
+There is a reverse powerful-number transfer. Repair only \(c\)
+to order \(M\), by its least possible common multiplier.
+The new height is \(\prod_{p\mid c}p^{\max(M,v_p(c))}\).
+For \(M\) a sufficiently large fixed multiple of \(1/\lambda\),
+a uniform exponent saving below \(1/M\) in the corresponding
+minimal-repair count on the balanced radical sector is equivalent
+to the desired uniform small-budget saving. Unrestricted
+multipliers always supply a leading \(1/M\) exponent from a
+fixed quotient, so the transfer requires control of the
+minimally repaired quotients.
+[The minimally repaired quotient exponent](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md#the-exponent-of-the-minimally-repaired-primitive-count)
+· [Reverse transfer](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md#a-reverse-transfer-by-repairing-only-the-target)
+
+Across overlapping affordable records, primitive complete
+heights and the two free radical caps alone allow simultaneous
+saturation of every fixed slot-subset count, even with
+minimal additive energy in the record fibres. The
+small-budget construction has unrestricted target radical.
+[Overlapping record counterexamples](ABC_OVERLAPPING_FULL_RECORD_COUNTEREXAMPLES.md)
+
 Pointwise bounds for the size of \(c\) are a separate route to finiteness. With \(R=\operatorname{rad}(abc)\), Stewart–Yu give \(\log c\ll R^{1/3}(\log R)^3\). Pasten's Theorem 1.4 gives \(\log c\le \eta^{-1}\exp(C\sqrt{\log R\log\log R})\) when \(a\le c^{1-\eta}\), and the same expression with \(\min\{P^+(a),P^+(b),P^+(c)\}\) in place of \(\eta^{-1}\) in the second part. Soulé's November preprint claims \(c\ll_\varepsilon R^{24+\varepsilon}\) in Theorem B, which would give finiteness for fixed \(\lambda<1/24\). In its genus-six fibration the degree used to prove this is \(-13k/2\) in place of the claimed lower bound \(-3k\). The corrected coefficient leaves the proof of the pointwise bound open. [Torsion calculation](ABC_SOULE_TORSION_AUDIT.md#torsion-lengths-and-the-degree-calculation) [Stewart–Yu, Theorem 1](https://uwaterloo.ca/pure-mathematics/sites/default/files/uploads/documents/s0012-7094-01-10815-6.pdf) · [Pasten, Theorem 1.4](https://arxiv.org/html/2312.03566v1) · [Soulé, Theorem B](https://arxiv.org/html/2611.05217v1)
 
 At the endpoint \(\lambda=1\), Bright gives infinitely many triples with \(c/R\) growing at least as \(\exp(C\sqrt{\log c}/\log\log c)\) for an explicit positive constant \(C\). For any fixed \(0<\lambda<1\) this lower bound on \(c/R\) has a subpower scale in \(c\). [Bright, Theorem 3.1](https://cs.curtisbright.com/reports/abc-lower.pdf)

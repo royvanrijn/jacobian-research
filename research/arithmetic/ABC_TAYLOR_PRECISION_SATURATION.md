@@ -942,4 +942,289 @@ calculation above already give a strict upper
 coefficient below the continuous constant. Thus a
 possible escape for the actual sparse determinant
 must have bounded summed slice area and an
-asymmetric column mean.
+asymmetric column mean at this stage. The next argument excludes
+that range as well.
+
+## The full discrete column-mean obstruction
+
+Keep the broad profile with density \(1/6\) on \([2,4]\) for
+each letter. Let \(A=\mathcal A\) be the sum of the horizontal
+slice lengths, \(s=(s_A+s_B)/2\), \(g=2s-1/3\), and \(B\) the
+primitive column mean. The whole-support mean is a lower
+bound for the largest mean over subsets of any specified size,
+so this argument also applies when the determinant uses the
+worst such subset.
+
+The generic exact-error Taylor bound (ST9) combined with the
+column-mean height (ST13) cannot save on this profile, even
+with arbitrary asymmetric retained submeasures, signed nonzero
+integer multipliers, sparse integer slices, and the finite
+strip cap. It remains possible to seek further valuation from
+the actual shape of the support or from a different determinant
+basis. The obstruction concerns the stated order estimate.
+
+### Optimizing the centered thickening
+
+Write \(Z_W\) for the one-sided zonotope area and \(E_W\) for the error
+of the best tilt on side \(W\). The bounds used below are
+\[
+ Z_W\ge\frac34s_W^3,\qquad
+ Z_W\ge\frac12s_W E_W.
+\]
+The first is the periodic-window estimate preceding ST11. For the
+second, write \(q=r/i\) and use the measure \(|i|d\nu_W'\), of mass
+\(h_W\ge s_W\). The determinant integral giving the zonotope area
+is half the two-fold mean of \(|q-q'|\) against that measure. Minimizing
+the inner integral in \(q'\) yields \(Z_W\ge h_W E_W/2\). This applies
+also to signed multipliers.
+
+For any \(0<\delta\le1\), sweep each support slice by
+\([-\delta v_W/2,\delta v_W/2]\) for a best unit-vertical tilt \(v_W\).
+The swept pieces have disjoint interiors, combined area \(\delta A\),
+and the same centroid as the original sample. The convex hull is the
+Minkowski sum with the sweep segment. By CM1,
+\[
+ B_W\ge\frac{2\sqrt2}{3}\sqrt{\delta A\max
+          \left(\frac34s_W^3,\frac12s_W E_W\right)}
+          -\frac{\delta E_W}{2}.
+\]
+Consequently
+\[
+ B_W\ge L(A,s_W)=
+ \begin{cases}
+ (2/9)A s_W,& A\le(27/8)s_W,\\
+ \sqrt{2A/3}\, s_W^{3/2}-(3/4)s_W^2,& A\ge(27/8)s_W.
+ \end{cases}                                                    \tag{1}
+\]
+Indeed take \(E_*=(3/2)s_W^2\). For \(E_W\le E_*\) the optimized
+lower bound with \(Z_W\ge3s_W^3/4\) is worst at \(E_W=E_*\).
+The stationary value of \(\delta\) there is \(8A/(27s_W)\).
+For \(E_W\ge E_*\) the bound with \(Z_W\ge s_W E_W/2\) has interior
+maximum \((2/9)A s_W\) whenever \(E_W\ge(4/9)A s_W\).
+In the remaining range the endpoint \(\delta=1\) gives a concave
+function of \(E_W\), whose endpoint values are the second branch
+of (1) and \((2/9)A s_W\). The former is at most the latter by
+completing the square. Zero mass is interpreted by continuity.
+
+Suppose first that \(A\le9/8\), so \(s_*=8A/27\le d\). The difference
+between the first and second formulas in (1) is
+\((2/9)A s_W(1-\sqrt{s_W/s_*})^2\), used only for \(s_W\le s_*\).
+As \(u(1-\sqrt u)^2\le1-u\) on \([0,1]\), this difference is at
+most \((2/9)A(d-s_W)\). Summing yields
+\[
+                 B\ge (4/9)A g.                                \tag{2}
+\]
+For \(A\ge9/8\), both sides use the second line of (1). Factoring
+\(s_W^{3/2}\), replacing \(\sqrt{s_W}\) in the negative term by
+\(\sqrt d\), and applying Jensen yields
+\[
+ B\ge 2s^{3/2}\left(\sqrt{2A/3}-(3/4)\sqrt d\right).
+\]
+Since \(g^2\le3s^3\), this gives
+\[
+                 B/g\ge c\sqrt A-1/2,\qquad c=2\sqrt2/3.          \tag{3}
+\]
+
+### Taylor comparisons
+
+A potential success has \(g>0\), \(w>0\), \(b>0\), \(b+\mu<g\),
+and \(w\le4\mu\). Taking rank-size parameter \(y=A\) only increases
+the upper bound on the Taylor gain \(G\), since the original parameter
+satisfies \(y\le A\). Let \(t=bA/w\), let \(J\) denote the vertical
+range of the support, put \(n=J+1\), and let \(\phi_J(t)=\Psi_J(t,1)\)
+as in (ST9). Then
+\[
+ \frac{G}{g}\le\frac{4A\phi_J(t)}{A+4t}.                         \tag{4}
+\]
+This follows from \(b+w/4\le g\). Independently \(G\le bA/2\) by
+\(\phi_J(t)\le t/2\). The horizontal bound \(B\ge hA/n\), where
+\(h=(h_A+h_B)/2\ge s\ge g\), follows by averaging the one-sided
+width cost on each slice and applying Cauchy. Success would therefore
+have \(n\ge3\) and \(B<w\phi_J(t)\).
+
+For \(t\le1\), \(\phi_J(t)=t/2\); for \(1\le t\le3\),
+\(\phi_J(t)=t/4+1/2-1/(4t)\). The function is concave on its
+whole domain, as follows either from the strip formula or by
+integrating its inverse count. On the second branch
+\(9\phi_J(t)-4t\) is maximized at \(t=3/\sqrt7\), with value \(A_0\).
+On the first branch it is at most \(1/2<A_0\). For \(t\ge3\) it
+decreases because the derivative at \(t=3\) is \(5/18<4/9\).
+Thus (4) is at most \((4/9)A\) whenever \(A\ge A_0\).
+Together with (2) this excludes \(A_0\le A\le9/8\).
+
+Now assume \(A\ge9/8\), and write \(Y=c\sqrt A-1/2\).
+For \(t\le1\), (4) is at most \(2A/(A+4)\). This is at most
+\(1/2\le Y\) when \(A\le4/3\). For \(A\ge4/3\) it is at most
+\(\sqrt A/2\le Y\). For \(1\le t\le3\) and \(A\le9/4\), we have
+\(1/2\le Y\le1\). That (4) is at most \(Y\) is equivalent to
+\((4Y-A)t+A/t\ge A(2-Y)\). By AM--GM it suffices that
+\(16Y\ge A(4+(2-Y)^2)\), which also implies \(4Y>A\). The last
+inequality follows from \(A=(9/8)(Y+1/2)^2\),
+\((Y+1/2)^2/Y\le9/4\), and \(4+(2-Y)^2\le25/4\).
+
+Before the finite strip cap is crossed, the unlimited strip
+count is at least \((\tau^2+\tau)/2\). Integrating the resulting
+upper bound for the inverse count, and then using
+\(\sqrt{2u+1/4}\le \sqrt{2u}+1/(8\sqrt{2u})\) for \(u>0\),
+gives \(\phi_J(t)\le c\sqrt t-1/2+1/(4\sqrt{2t})\).
+For \(t\ge1\) this is at most \(c\sqrt t-8/25\), and for
+\(t\ge3\) it is at most \(c\sqrt t-19/48\).
+If \(\phi_J(t)\le c\sqrt t-\lambda\), the maximum over real
+\(\sqrt t\) of the right side of (4) with that bound is
+\(\sqrt{c^2A+4\lambda^2}-2\lambda\). For \(\lambda=8/25\)
+and \(A\ge9/4\) this is at most \(Y\), since
+\(c\sqrt A\ge\sqrt2\) and \(39/100\le(7/25)\sqrt2\).
+For \(\lambda=19/48\) and \(A\ge9/8\), the same follows from
+\(c\sqrt A\ge1\) and \(13/24\le7/12\).
+This completes the comparison in the uncapped range.
+
+For the capped range \(t\ge Jn/2\), write \(v=b/g\). A potential
+success and the horizontal bound give \(v>v_0=t/(n\phi_J(t))\).
+The formula
+\[
+ \phi_J(t)=\frac{t}{2n}+\frac{n-1}{2}
+                  -\frac{n(n^2-1)}{24t}
+\]
+shows \(\phi_J(t)/t\le (4J-1)/(3Jn)<4/(3n)\), since this ratio
+decreases by concavity and vanishes at zero before division.
+In particular \(v_0>1/2\). From \(wb\le4g^2v(1-v)\) and its
+decrease for \(v\ge v_0\), we get
+\[
+ \frac{G^2}{A g^2}
+    \le4\left(\frac{\phi_J(t)}n-\frac{t}{n^2}\right)
+    \le\frac23-\frac4{3n}.
+\]
+The last expression before the upper bound decreases for
+\(t\ge Jn/2\) and has its maximum there. Also \(G/g\le4A/(3n)\)
+by \(b\le g\) and the bound for \(\phi_J(t)/t\).
+Set \(x=\sqrt A\), \(c_n=\sqrt{2/3-4/(3n)}\), and
+\(X_n=1/(2(c-c_n))\). If \(x\ge X_n\) the first bound is at
+most \(cx-1/2\). From \(\sqrt{9/8}\) to \(X_n\) use the
+second bound, by concavity of \(cx-1/2-4x^2/(3n)\) and the
+endpoint checks. At the left endpoint the difference is
+\(1/2-3/(2n)\ge0\). At the right endpoint one needs
+\(c_n(c-c_n)\ge2/(3n)\). Squaring the equivalent comparison
+\(c c_n\ge2(n-1)/(3n)\) has difference
+\(4(n-3)(n+1)/(27n^2)\ge0\).
+This proves \(G/g\le Y\) also in the capped range, finishing
+the exclusion by (3).
+
+### The remaining small-area range
+
+The common centroid supplies a two-sided tilted segment even when
+the free directions and the wider slice shapes are asymmetric. This
+completes the exclusion for \(A<A_0\).
+
+Suppose the criterion succeeds and let \(Q=\sum_j p_j^2\), where
+\(p_j=\ell_j/A\) is the fraction of the sample on wider level \(j\).
+The horizontal argument used above retains the stronger bound
+\(B\ge h A Q\): on a slice the direction's horizontal contribution
+to the average difference between its support and a sample point
+is at least \(|i_W|\ell_j/2\). This holds on each side separately
+and summing gives the assertion. Since \(G\le bA/2\) and
+\(b<g\le s\le h\), success implies \(Q<1/2\).
+
+Choose an integer median \(j_0\) of the sample levels and split the
+sample into two sets of equal length, respectively below and above
+the median, splitting its own level if needed. Put
+\[
+ D=\sum_j p_j|j-j_0|.
+\]
+The two barycenters lie in \(P\), are opposite about the full sample
+centroid, and have vertical coordinates differing by \(2D\).
+Thus their segment, after translating to the sample centroid and
+shearing back to the raw normal coordinates \((i,r)\), has endpoints
+\(\pm D(-a,1)\) for some real \(a\) whenever \(D>0\). On either
+side this gives the same absolute tilt error, so
+\[
+ B\ge 2 D E,\qquad
+ E=\frac12\sum_{W=A,B}\int|r-a i_W(r)|\,d\nu_W'(r).               \tag{5}
+\]
+
+The discrete distribution has the exact estimates
+\[
+                       D\ge1/3,\qquad DQ\ge1/6.                 \tag{6}
+\]
+To prove them translate \(j_0\) to zero. If \(D\le1/2\), the
+three-point probability \(q_0=1-D,\ q_{\pm1}=D/2\) is a
+pointwise majorant of \(1-D-(1-3D/2)|j|\). Thus
+\(\sum p_jq_j\ge1-2D+3D^2/2=\sum q_j^2\).
+Cauchy yields \(Q\ge1-2D+3D^2/2\). With \(Q<1/2\), this
+implies \(D>1/3\), and \(D(1-2D+3D^2/2)\) is increasing,
+with value \(1/6\) at \(D=1/3\). If \(D>1/2\) and
+\(Q\ge9/25\), the desired bound for the product follows
+immediately. Otherwise convolve the integer distribution with a
+uniform variable on \([-1/2,1/2]\). Its density has squared
+integral \(Q\) and its absolute first moment is \(D+p_0/4\).
+For any real density with squared integral \(Q\) and absolute
+moment \(m\), Cauchy applied to \((1-|x|/R)_+\) gives
+\(1-m/R\le\sqrt{2QR/3}\). Taking \(R=3m\) gives
+\(Qm\ge2/9\). Using \(p_0\le\sqrt Q\), we get in our case
+\[
+              DQ\ge2/9-Q^{3/2}/4
+                  \ge2/9-27/500>1/6.
+\]
+This establishes (6).
+
+We next show \(s>3/10\). Let \(s_*=8A/27\), which is less
+than \(d/2\) since \(A<A_0<8/15\). If some mass \(s_W\le s_*\),
+write that mass as \(v\), the other mass as \(u\), and
+\(x=v/s_*\). The other mass \(u\) exceeds \(s_*\), since
+\(u+v>d\). By (1), a necessary condition for
+\(B<gA/2\) is
+\[
+       \frac29\{u+v(2\sqrt x-x)\}<\frac{u+v-d}{2}.
+\]
+The right minus left side increases with \(u\le d\). Even at
+\(u=d\) the inequality fails because
+\[
+ v(9/4-2\sqrt x+x)
+   =s_* x(9/4-2\sqrt x+x)\le (5/4)s_*<d.
+\]
+The function of \(x\) in the middle has derivative
+\(9/4-3\sqrt x+2x>0\). Both masses must therefore exceed
+\(s_*\). Now (1) gives \(B\ge(4/9)A s\), and
+\(B<gA/2\) forces \(s>3/10\).
+
+By (5), \(B<G\le sA/2\) and (6) give
+\(E/s<A/(4D)\le3A/4<2/5\).
+Here \(A_0<8/15\) follows from \(119^2<7\cdot45^2\).
+We may now apply the folded-distance argument of ST4--ST5
+to the common tilt \(a\), independently of the original
+chart tilt. Its hypotheses are \(3s\ge4/5\) and
+\(E/s<2/5\), and it gives
+\[
+                             Eh\ge(6/5)s^3.                     \tag{7}
+\]
+For clarity, let \(a_*=|a|\). The retained moment of the average
+of the two side measures is at least \((2+3s)s\), so
+\(a_* h+E\ge(2+3s)s\) and \(a_*h>(12/5)s\).
+For \(a_*\ge2\), folding \([2,4]\) into one period gives
+\(E\ge(3/2)s^2\), and \(h\ge s\) suffices. For \(0<a_*\le1\),
+folded numerical-distance density at most \((2+a_*)/(3a_*)\)
+gives \(E\ge a_*s^2/2\). For \(1<a_*<2\) split \([2,4]\)
+into one period and a remainder of length \(2-a_*\).
+Each part's folded numerical-distance density is at most
+\(1/3\). Optimizing the retained split gives
+\(E\ge(3/2)s^2((1-z)^2+z^2)\), where
+\(z=\min(1/2,(2-a_*)/(6s))\). In the case \(z=1/2\),
+\(a_*\le2-3s\le6/5\). Otherwise \(a_*\le2-(8/5)z\) and
+\((1-z)^2+z^2\ge(2-(8/5)z)/3\) by completing the square.
+Thus \(E\ge a_*s^2/2\) in this last range as well. These density
+bounds apply to signed marks because \(|r-ai|\) is at least
+the folded distance to \(a_*\mathbb Z\). The case \(a_*=0\)
+violates the retained moment and the strict bound on \(E/s\).
+
+Finally, multiplying \(B\ge h A Q\) by (5), and comparing
+with \(B^2<b^2A^2/4\), forces
+\[
+ A>\frac{8 DQ Eh}{b^2}
+   \ge\frac{48 DQ s^3}{5 b^2}
+   \ge\frac8{15}.
+\]
+The last step uses (6) and \(b^2<g^2\le3s^3\). This contradicts
+\(A<A_0<8/15\). Thus the full sparse ST13 criterion cannot
+save on this broad profile under the stated one-root exact-error
+hypotheses.
+
+[The weighted interpolation refinement](ABC_WEIGHTED_HILBERT_TAYLOR.md) uses the actual exponent set to compute the best universal local Taylor weight. It rules out two-level single-root supports and nested toric supports with any fixed number of roots on the same broad profile.

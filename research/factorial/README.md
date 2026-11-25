@@ -198,7 +198,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Half-line cubic zero separation at large negative temperature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_NEGATIVE_TEMPERATURE.md) |
 | Double-zero exclusion in the bounded one-private cubic window | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_CUBIC_DOUBLE_LIMITS.md) |
 | Terminal-six separation in high-curvature and private-degree bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md) |
-| Reduction of the general eventual problem to a finite set of cubic temperatures | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Reduction of the general eventual problem to the bounded cubic order speed | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
 | Certified zero separation at zero temperature for the half-line cubic | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_ZERO_TEMPERATURE.md) |
 | A variable-prime Eisenstein criterion at every terminal | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md) |
 | Terminal-six coprimality for one small private side with low shared curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_SMALL_SHARED.md) |
@@ -219,6 +219,18 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Interior physical Gaussian collision for an ordinary three-column support | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_ROW_MERGE_INTERIOR_COLLISION.md) |
 | Uniform closure of the joint factorial curvature and relative centers | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_JOINT_CURVATURE_PROFILE_CLOSURE.md) |
 | Physical binary merger regularity with reserved private degrees | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_BINARY_RESIDUAL_PRIVATE.md) |
+| Opposite Gamma factor pairing and radial separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_GAMMA_ROOT_ANNULUS.md) |
+| One shared asymmetric row with arbitrary mirrored padding | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_GAMMA_ROOT_ANNULUS.md) |
+| Variable-prime coprimality from two opposing exponent rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSITE_MARKED_ROW_PRIME.md) |
+| Global simplicity and distinct heights of half-line cubic zeros | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_RICCATI_POSITIVITY.md) |
+| An explicit positive-temperature cubic tail bound | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_EXPLICIT_POSITIVE_TAIL.md) |
+| Compact field reduction for all positive-temperature cubic speeds | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_SPEED_COMPACT_FIELD.md) |
+| No vanishing order speed at upper cubic zeros for T at least two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_POSITIVE_SPEED_CERTIFICATE.md) |
+| Terminal-six separation in nine coupled fully shared bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_JOINT_RAY_BANDS.md) |
+| Uniform eventual Strong Factorial for all ordinary two-monomial profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Fully shared terminal-six separation for curvature at least four | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_HYBRID_CURVATURE.md) |
+| Quantitative endpoint attenuation and ordinary shared factor links | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORDINARY_ADJACENT_COEFFICIENT_ATTENUATION.md) |
+| Fully shared terminal-six separation for normalized outer mean at least 9/10 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT_EXTENSION.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -312,11 +324,9 @@ Scope limits:
 - Eventual coprimality is proved for every fixed ordinary two-monomial support, with a profile-dependent nonexplicit cutoff. The full complex simple-fold neighborhoods are covered. The real quartic and private cubic critical transitions are included. The exactly diffuse model has one eventual threshold for all positive couplings. Uniform radial and centered stationary localization apply to varying profiles.
 - Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
 - Fully shared supports and supports with private variables on both sides have an absolute eventual threshold. The only residual unbounded-terminal regime has bounded curvature and private variables on exactly one side. Unrestricted fixed-terminal closure is open, starting at six. Prescribed finite prime-power screens can all fail inside any positive curvature interval.
-- Any degree-unbounded counterexample is reduced to a single private linear row near critical curvature and a bounded moving cubic model. Its limiting temperature belongs to a finite candidate set from same-height distinct model zeros or zero order speed at a simple zero. At terminal six, private degree at least three or weighted curvature S+P at least 34/5 gives angular coprimality. The unrestricted all-terminal theorem remains open.
-- Any degree-unbounded counterexample is reduced to a single private linear row near critical curvature and a bounded moving cubic model. Its limiting temperature belongs to a finite candidate set from same-height distinct model zeros or zero order speed at a simple zero. At terminal six, private degree at least three or weighted curvature S+P at least 34/5 gives angular coprimality. The model is certified at temperature zero, and the fixed-terminal criterion includes variable-prime and small shared-curvature results in their stated scopes. The unrestricted all-terminal theorem remains open.
-- Terminal six is proved for all profiles with private variables, for fully shared total curvature at least six, and in the explicit near-flat and diffuse shared bands. The joint curvature measure retains the true factorial row densities across all degrees. An unbounded-order obstruction would require one of finitely many cubic temperatures outside [-2,2]. The unrestricted all-terminal theorem remains open.
 - A three-column ordinary factorial row identification has regular endpoint moments in orders two through four and a certified collision in the physical interpolation. This excludes physical-interval nonvanishing as a general transfer proof. The discrete endpoint question and the unrestricted two-column interval remain open.
 - The exact joint measure closure has a specific diagonal diffuse law and an independent signed center parameter. An all-order physical binary transfer is proved with untouched independent private degree at least two on both sides.
+- All ordinary two-monomial supports satisfy consecutive coprimality above one absolute unevaluated terminal cutoff. The global cubic zero comparison and the compact positive speed certificate discharge the unbounded-order obstruction. At terminal six all private profiles and fully shared profiles with curvature at least four are covered. Intermediate fully shared profiles outside the additional relative-gap and arithmetic bands remain open.
 
 Tracked obligations (computed states):
 

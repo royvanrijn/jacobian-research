@@ -175,6 +175,18 @@ quotient of \(R^1\phi_*B\), giving
  \deg\phi_*(\omega_{X/Y}-B)=-11k+\frac{9k}{2}=-\frac{13k}{2}.
 \]
 
+For clarity, the generic generation used in the degree comparison
+can be verified on a fixed root component. At a Weierstrass point
+\(p\) of \(D\), also \(\nu p\) is Weierstrass. Proposition 4(iii)
+gives \(h^0(M+p)=h^0(M+\nu p)=0\) for every root \(M\).
+The residual divisor of \(K_D-p-\nu p\) is \(p+\nu p\)
+on this fibre since both points are Weierstrass. In the basepoint
+criterion of §3.5.3 the two residual points \(R_i\) are therefore
+the original branch points, and the two vanishings suffice.
+Generic generation follows by openness on the same component.
+There is no need to replace the double cover of a fibre by one
+defined from a different square root in §6.3.3.
+
 ## Consequence for the pointwise bound
 
 With \(L=\omega_{X/Y}-B\), the intersection calculation gives

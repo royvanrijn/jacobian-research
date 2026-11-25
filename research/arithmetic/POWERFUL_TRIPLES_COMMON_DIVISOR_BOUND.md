@@ -1996,3 +1996,141 @@ target core and absorb the fixed supported coefficients
 into the unit residue. A fixed exact ratio recovers the
 pair by its fixed sum and coefficients. This completes
 the generalized fixed-target estimate.
+
+
+## The exponent of the minimally repaired primitive count
+
+Prescribe arbitrary orders \(s_A,s_B,s_C\ge1\), with
+\(M=\max s_i\). Allow a fixed nonempty sector \(\mathcal S\)
+of primitive quotients \(u_A+u_B=u_C=W\). It can include
+radical or valuation constraints on the quotients. For a
+deficient prime \(p\) on its unique quotient letter \(i\),
+meaning \(0<v_p(u_i)<s_i\), set
+\(k_p=\max_j(s_j-v_p(u_j))\). Put
+\[
+             Z(\boldsymbol u)=\prod_{\text{deficient }p}p^{k_p},
+       \qquad H(\boldsymbol u)=W Z(\boldsymbol u).
+\]
+As in (GU1), \(Z\) is the least multiplier that repairs the
+prescribed orders. Let \(Q_{\mathcal S}(Y)\) count the primitive
+quotients in \(\mathcal S\) with \(H\le Y\), and let
+\(A_{\mathcal S}(Y)\) count all triples having the prescribed
+orders and quotient in \(\mathcal S\), up to height \(Y\).
+Then, for fixed orders,
+\[
+ \limsup_{Y\to\infty}\frac{\log A_{\mathcal S}(Y)}{\log Y}
+ =
+ \max\left\{\frac1M,\
+       \limsup_{Y\to\infty}\frac{\log Q_{\mathcal S}(Y)}{\log Y}\right\}.
+ \tag{MPA}
+\]
+The relevant positive Dirichlet series for summing over
+primitive quotients is \(\sum_{\boldsymbol u\in\mathcal S}
+H(\boldsymbol u)^{-s}\). Its abscissa of convergence is the
+second exponent when \(\mathcal S\) is infinite.
+
+For the two lower bounds, use \(Z\) as common divisor, or
+choose one quotient and multiply its minimally repaired triple
+by arbitrary \(M\)-th powers. For the upper bound, for each
+quotient let \(P=\operatorname{rad}(u_Au_Bu_C)\). Write any
+allowed multiplier \(g\) as \(Z f b\), with \(f\) supported
+on \(P\) and \(b\) coprime to \(P\). Then \(b\) is \(M\)-full.
+There are \(Y^{o(1)}\) choices of \(f\le Y\), uniformly in
+\(P\le Y^3\), by the fixed-support Rankin bound. The number of
+possible \(b\) is \(O_M((Y/H)^{1/M})\) after dropping \(f\)
+from the height constraint. It follows that
+\[
+ A_{\mathcal S}(Y)\ll_{\boldsymbol s,\varepsilon}
+ Y^{1/M+\varepsilon}
+ \sum_{\substack{\boldsymbol u\in\mathcal S\\H(\boldsymbol u)\le Y}}
+                      H(\boldsymbol u)^{-1/M}.
+\]
+Dyadic summation proves (MPA), and the same summation gives the
+Dirichlet-series assertion. The term \(1/M\) in the unrestricted
+count persists even when the primitive quotient series is
+summable strictly below \(1/M\).
+
+## A reverse transfer by repairing only the target
+
+Take orders \((1,1,M)\). For \(R=\operatorname{rad}(c)\), the
+least multiplier and the resulting target are exactly
+\[
+  Z_M(c)=\prod_{p\mid c}p^{(M-v_p(c))_+},\qquad
+  H_M(c)=c Z_M(c)=\prod_{p\mid c}p^{\max(v_p(c),M)}.
+ \tag{MPR}
+\]
+In particular \(R^M\le H_M(c)\le R^M c\). The map
+\((a,b,c)\mapsto (Z_Ma,Z_Mb,H_M(c))\) is injective because the
+primitive quotient recovers the input. If all target valuations
+are at most \(M\), the new target is exactly \(R^M\), regardless
+of their individual sizes. With scaled spectra of mass \(l_C\),
+limit measure \(\nu_C\), numerical height \(h_C\), and escaped
+moment \(e_C=h_C-\int r\,d\nu_C(r)\), \(ML\to q>0\) gives
+\[
+ \lim \log_X H_M
+     = q l_C+\int(r-q)_+\,d\nu_C(r)+e_C .
+\]
+This follows by writing the excess integral as the full moment
+minus the integral of \(\min(r,q)\), so large valuations that
+escape the degree scale are included.
+
+Let \(0<\xi<1/3\). For fixed \(\lambda,M\) define
+\(\mathcal S_{\lambda,\xi}\) by
+\[
+ c^{(1/3-\xi)\lambda}\le\operatorname{rad}(c)
+                  \le c^{(1/3+\xi)\lambda},\qquad
+ \operatorname{rad}(ab)\le c^{(2/3+\xi)\lambda}.
+\]
+Write \(Q_{\lambda,\xi,M}(Y)\) for its minimally repaired count.
+The following two existence statements are equivalent.
+
+- The unrestricted exceptional-set count has an absolute
+  coefficient gap below \(1/3\) at all sufficiently small fixed
+  budgets.
+- There are constants \(K,\xi,\sigma>0\), with \(0<\xi<1/3\),
+  \(0<\sigma<1\) and
+  \((1-\sigma)(1/3+\xi+1/K)<1/3\), such that for every
+  sufficiently small fixed \(\lambda\), and \(M=\lceil K/\lambda\rceil\),
+  \[
+      Q_{\lambda,\xi,M}(Y)\ll_{\lambda,M,\varepsilon}
+                          Y^{(1-\sigma)/M+\varepsilon}.
+   \tag{MRG}
+  \]
+
+For the reverse transfer to abc, the sector covers every
+strict exception except those with a letter whose radical is
+at most \(c^{(1/3-\xi/2)\lambda}\). Indeed a target above the
+upper cap pushes one summand below that threshold by
+primitivity, and an excessive \(\operatorname{rad}(ab)\)
+pushes the target below the lower cap. These omitted families
+already have a fixed saving by the [one-letter quarter bound](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-quarter-inequality-for-a-letter-of-small-radical-mass).
+On the remaining family, \(c\le X\) gives
+\(H_M(c)\le X^{1+M(1/3+\xi)\lambda}\).
+Using (MRG) and \(1/M\le\lambda/K\) gives the desired power
+saving by the displayed condition on the constants.
+In the other direction, the sector has original total radical
+at most \(c^{(1+2\xi)\lambda}\), and \(H_M(c)\le Y\) implies
+\(c\le Y^{1/(M(1/3-\xi)\lambda)}\) by the lower radical cap.
+Apply the hypothesized abc gap \(\delta_0>0\) at budget
+\((1+3\xi)\lambda\), absorbing the bounded \(c\) cases. The
+resulting exponent is at most
+\((1/3-\delta_0)(1+3\xi)/(M(1/3-\xi))+\varepsilon\).
+First take \(\xi\) small in terms of \(\delta_0\), then choose
+\(\sigma>0\) leaving a strict margin, and finally take \(K\)
+large enough for the required inequality.
+
+This places the remaining abc problem in a specific
+one-prescribed-order tail of the powerful-triple count.
+The [one-order weighted sector](#one-prescribed-fullness-order-and-captured-scaled-degrees)
+has an extra restriction on the unprescribed degree spectra.
+In the transfer above, (MPR) forces
+\[
+ (1/3-\xi)\lambda-1/M
+ \ \le\ \frac{\log Z_M(c)}{M\log c}
+ \ \le\ (1/3+\xi)\lambda ,
+\]
+so these quotients generally incur a positive normalized
+repair cost. A bound for small repairs, or a power bound on
+the unrestricted padded count with its unavoidable
+\(Y^{1/M}\) term, does not give (MRG).
+

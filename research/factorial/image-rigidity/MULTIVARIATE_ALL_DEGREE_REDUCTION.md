@@ -1,4 +1,4 @@
-# A reduction for all-degree multivariate Strong Factorial
+# Uniform eventual Strong Factorial for two monomials
 
 Let \(a,b\) be distinct nonnegative integer exponent columns and
 remove rows on which they agree. Throughout, the factorial moments
@@ -10,6 +10,12 @@ are the ordinary ones,
 Write \(S=\sum_i(b_i-a_i)^2/\max(a_i,b_i)\).
 A row is private when one entry is zero. A profile is fully shared
 when there are no private rows.
+
+There is an absolute terminal cutoff above which the consecutive
+factorial moments are coprime for every ordinary two-monomial
+profile. The proof of this uniform eventual result appears below.
+The cutoff is unevaluated. Coprimality at every earlier terminal
+requires a separate argument.
 
 **Theorem.** For each fixed \(s_0>0\) there is a terminal
 \(N_0(s_0)\) such that every fully shared profile with \(S\ge s_0\)
@@ -64,22 +70,13 @@ gives the exact linked interpolation near the critical endpoint.
 
 ## The remaining large-order regime
 
-**Corollary.** Every sequence of common roots with terminals tending
-to infinity has a subsequence with one private linear variable,
-bounded curvature, and shared endpoint curvature \(\sigma\to1\).
-Both fields tend to the positive endpoint. The scaled temperatures
-and fields in the moving cubic model are bounded. Any limiting
-temperature belongs to one of these two finite sets.
+**Theorem.** There is an absolute \(N_*\) such that
+\(\gcd(Q_{N-1},Q_N)=1\) for all \(N\ge N_*\) and all ordinary
+two-monomial profiles. The conclusion holds over every
+characteristic-zero field.
 
-- A temperature at which two distinct model zeros have the same
-  imaginary coordinate. In this case the subsequence has nonzero
-  \(\Delta\), and both \(|\Delta|/n^{1/3}\) and its reciprocal are
-  bounded.
-- A temperature with a simple zero \(H\) and
-  \(2H-T H_T=0\). In this case the subsequence has \(\Delta=0\).
-
-To prove the reduction, first use the preceding support-type
-corollary. The
+Suppose an unbounded sequence of terminals has common roots.
+First use the preceding support-type corollary. The
 [uniform one-private comparison](MULTIVARIATE_UNIFORM_ONE_PRIVATE_REGULAR_COMPLEMENT.md)
 excludes private total degree at least two and all strictly
 supercritical limits for private degree one. It localizes critical
@@ -89,41 +86,69 @@ does the same at strictly subcritical limits, including zero
 shared curvature. The
 [uniform endpoint comparison](MULTIVARIATE_PRIVATE_ENDPOINT_UNIFORM_THERMAL_TAILS.md)
 then excludes all strictly subcritical limits and every escaping
-temperature or scaled field at critical curvature.
+temperature or scaled field at critical curvature. Along a
+subsequence the only private row is linear, the shared endpoint
+curvature \(\sigma\) tends to one, and the cubic temperatures and
+both scaled fields stay bounded.
 
-In the remaining bounded window, the model fields have the same
-limiting imaginary coordinate. For nonzero \(\Delta\), their scaled
-real drift is \(\ell(n+1)^{2/3}\Delta\log(1+1/n)\), up to an \(O(1/n)\)
-change due to rescaling the first field. If both model fields had the
-same limit, the
-[double-zero and simple-branch comparison](MULTIVARIATE_PRIVATE_CUBIC_DOUBLE_LIMITS.md)
-would exclude the pair. If \(\Delta=0\), the two model limits coincide.
-The same comparison forces a simple zero with vanishing order
-derivative. The [zero-separation theorem](MULTIVARIATE_HALF_LINE_CUBIC_ZERO_SEPARATION.md)
-and its [negative-temperature extension](MULTIVARIATE_HALF_LINE_CUBIC_NEGATIVE_TEMPERATURE.md)
-show that both exceptional temperature sets are finite. Their
-membership remains unevaluated outside the interval \([-2,2]\)
-excluded by the [extended interval certificate](MULTIVARIATE_HALF_LINE_CUBIC_EXTENDED_TEMPERATURES.md).
-The [first linked corrections](MULTIVARIATE_PRIVATE_CUBIC_LINKED_SIMPLE_LIMITS.md)
-give additional necessary conditions at simple candidates. They
-constrain the integer degree drift at a same-height crossing and
-the possible first-order row coefficients at a speed zero.
+Use the [moving cubic interpolation](MULTIVARIATE_MOVING_PRIVATE_CUBIC_MODEL.md).
+Write \(n=N-1\), \(\epsilon_j=j^{-1/3}\), and
+\[
+ T_j=\ell^2(1-\sigma)/\epsilon_j,\qquad
+ H_j=\ell\xi_j/\epsilon_j^2.
+\]
+Both \(T_j\) converge along a subsequence to the same real
+\(T_*\). At a common root the exact drift is
+\(\xi_N-\xi_n=\Delta\log(1+1/n)\in\mathbb R\), so the two scaled
+limits have equal imaginary height. Uniform interpolation makes
+both limits zeros at \(T_*\). The
+[global Riccati comparison](MULTIVARIATE_HALF_LINE_CUBIC_RICCATI_POSITIVITY.md)
+forces the limits to be the same simple zero \(H_*\).
 
-The curvature rescaling by itself does not discretize the limiting
-temperature. For example, append a private linear row and choose
-shared rows \((A,A+1)\), \((A,A-1)\) with \(A=n^2\), in a total
-number \(m=A(1-2^{-2/3}T_0 n^{-1/3})+O(1)\). The number \(m\)
-can have either required parity. Choose the orientation counts so
-that \(\Delta-1\) is their signed difference. Then any prescribed
-finite \(T_0\) and any finite limit of \(\Delta/n^{1/3}\) are
-attainable. Indeed \(\sigma=m/A\) and \(c_2\to1/2\), which
-gives \(T\to T_0\). This is a construction of limiting profile
-data.
+For each actual profile the normalized interpolation near this
+simple zero has a unique branch \(h(T,\epsilon)\). On a fixed
+small field circle around \(H_*\), uniform convergence to the
+model gives that one root by Rouché. On a smaller disk the
+field derivatives converge uniformly to \(F_H\), which stays
+close to its nonzero value at the center. Thus the exponentially
+small interpolation residual at either integer order moves its
+field by only an exponentially small amount. The same convergence
+for the temperature derivative gives \(h_T\to H_T\) along the
+adjacent intervals. The bounded first \(\epsilon\) derivative
+of the interpolation gives bounded \(h_\epsilon\) there.
+These are the local estimates in the
+[simple-branch comparison](MULTIVARIATE_PRIVATE_CUBIC_DOUBLE_LIMITS.md).
+In physical field coordinates the interpolation branch is
+\(\xi(\epsilon)=\epsilon^2 h(T(\epsilon),\epsilon)/\ell\), with
+\(T(\epsilon)=\ell^2(1-\sigma)/\epsilon\). Its derivative is
+\[
+ \xi'(\epsilon)=\frac{\epsilon}{\ell}
+       (2h-T h_T+\epsilon h_\epsilon).
+\]
+Since \(\ell\) is bounded above and away from zero, integration
+from \(\epsilon_n\) to \(\epsilon_N\) gives
+\[
+ \xi_N-\xi_n=-\frac{2H_*-T_*H_T(T_*)+o(1)}{3\ell n^{5/3}} .
+\]
+For nonzero \(\Delta\) this contradicts the exact drift of
+size at least \(\log(1+1/n)\). For \(\Delta=0\) it forces
+\(2H_*-T_*H_T(T_*)=0\).
+
+The Riccati comparison excludes zero speed for \(T\le0\), and
+the [extended interval certificate](MULTIVARIATE_HALF_LINE_CUBIC_EXTENDED_TEMPERATURES.md)
+excludes it for \(0\le T\le2\).
+For \(T\ge2\) the [compact field theorem](MULTIVARIATE_HALF_LINE_CUBIC_SPEED_COMPACT_FIELD.md)
+and the [positive speed certificate](MULTIVARIATE_HALF_LINE_CUBIC_POSITIVE_SPEED_CERTIFICATE.md)
+exclude it throughout the upper half-plane. Conjugation gives
+the result at lower fields, and there are no real zeros.
+This contradicts the existence of the initial sequence and
+proves the uniform eventual assertion. No estimate of \(N_*\)
+follows from the sequential comparison used here.
 
 ## The fixed-terminal obligation
 
-An absolute eventual theorem would leave finitely many terminal
-orders starting at six. Each such order still includes arbitrary
+The absolute eventual theorem leaves only finitely many possible
+terminal orders, starting at six. Each such order still includes arbitrary
 dimension and exponents. The
 [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
@@ -144,21 +169,26 @@ The [uniform curvature closure](MULTIVARIATE_JOINT_CURVATURE_PROFILE_CLOSURE.md)
 identifies the actual diffuse part as a diagonal density \(r\,dr\).
 Its error is uniform in the two curvature indices, and the relative
 centers have one additional signed diffuse parameter.
+The [endpoint comparison](MULTIVARIATE_ORDINARY_ADJACENT_COEFFICIENT_ATTENUATION.md)
+quantifies the decline of each coefficient multiplier at fixed
+distance from an endpoint and retains four additional cross-order
+links at terminal six.
 At terminal six, [one-private-side separation](MULTIVARIATE_TERMINAL_SIX_ONE_PRIVATE_SIDE.md)
 and the [two-private linear certificate](MULTIVARIATE_TERMINAL_SIX_TWO_PRIVATE_LINEAR.md),
 together with the [other private-degree criteria](MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md),
 cover every profile with any private variable. Thus the remaining
-terminal-six family is fully shared. The same linked angular theorem
-covers \(S\ge6\), and the
-[effective relative-gap bands](MULTIVARIATE_TERMINAL_SIX_DIFFUSE_BANDS.md)
-give explicit angular separation for \(5/4\le S\le6\) under the
-respective relative-gap bounds. The
-[near-flat certificate](MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT.md)
-covers the order-five outer mean \(u\ge24/25\). In particular
-it covers \(S\le1/11\). To see this, if \(\eta=\max |b-a|/r\)
+terminal-six family is fully shared. The
+[combined curvature certificate](MULTIVARIATE_TERMINAL_SIX_HYBRID_CURVATURE.md)
+covers every fully shared profile with \(S\ge4\).
+The [effective relative-gap bands](MULTIVARIATE_TERMINAL_SIX_DIFFUSE_BANDS.md)
+and [nine linked outer-mean bands](MULTIVARIATE_TERMINAL_SIX_JOINT_RAY_BANDS.md)
+cover additional profiles in the intermediate range. The
+[extended near-flat certificate](MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT_EXTENSION.md)
+covers the order-five outer mean \(u\ge9/10\). In particular
+it covers \(S\le1/5\). To see this, if \(\eta=\max |b-a|/r\)
 then \(\eta\le S\) by integrality, and the coefficient bound in
 the diffuse-band note gives
-\(u\ge \exp(-2S/[5(1-\eta)])\ge1-2S/[5(1-S)]\ge24/25\).
+\(u\ge \exp(-2S/[5(1-\eta)])\ge1-2S/[5(1-S)]\ge9/10\).
 Arbitrary fully shared profiles between these proved ranges remain open.
 
 A prescribed finite set of primes and precisions alone cannot give
@@ -173,16 +203,26 @@ The [marked-row Eisenstein criterion](MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md)
 gives examples in every degree using a prime selected from the
 exponent data. It can also extend any fixed profile by two balanced
 shared rows with arbitrarily small added curvature, preserving
-private degrees and total-degree difference.
+private degrees and total-degree difference. The
+[opposite marked-row test](MULTIVARIATE_OPPOSITE_MARKED_ROW_PRIME.md)
+uses two rows with overlapping below-prime windows. It
+covers balanced, arbitrarily small-curvature marks even
+when their common maximum prevents isolating one row at
+the chosen prime.
+
+The [paired Gamma annulus](MULTIVARIATE_PAIRED_GAMMA_ROOT_ANNULUS.md)
+also gives explicit coprimality tests in the physical coefficient
+ratio. Exactly mirrored row pairs contribute no radial width,
+so the comparison can certify asymmetric profiles with an
+arbitrary mirrored part.
 
 At each terminal, coprimality over \(\mathbb Q\) gives the assertion
 over any characteristic-zero field by the rational Bézout identity.
 Both pure monomial coefficients are nonzero at every order, so
 the univariate reduction in \(t\) covers all projective coefficient
 choices. The two moments at orders one and two already lie in the
-low-terminal theorem. An all-degree proof requires both eventual
-exclusion and coverage of every terminal it leaves below its cutoff,
-or an argument that works directly at every terminal.
+low-terminal theorem. An all-degree proof still requires coverage of all terminals below
+the cutoff, or an argument that works directly at every terminal.
 
 ## The discrete row-merger route
 
