@@ -1,0 +1,195 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{array,booktabs,microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\DeclareMathOperator{\CT}{CT}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Tr}{Tr}
+
+\title{The primitive balanced-degree spectrum\\in the two-pair Image problem}
+\author{Roy van Rijn}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Over every characteristic-zero field, the balanced degrees admitting radially
+primitive, absolutely nonpower two-pair Image counterexamples are precisely
+\(4,6,7,8,\ldots\). All pure balanced phases through degree three are safe,
+as are all pure radially primitive balanced quintics. One explicit integer
+family realizes the failure degrees with a common marker of balanced degree one that detects
+every positive power. We also prove that an abelian variety with
+Rosati-compatible rank-two multiplication by a CM field has ordinary
+primes of density one after finite extension if at most two conjugate
+embedding pairs have Hodge multiplicities \((1,1)\). The full geometric
+endomorphism algebra may be larger than the acting field. In the quintic
+proof, this theorem supplies ordinary reduction for factors of cyclic
+covers whose Frobenius coefficients detect nonzero polynomial moments.
+\end{abstract}
+
+\section{Introduction}
+
+Let \(K\) be a field of characteristic zero. For
+\(\xi=(\xi_1,\xi_2)\) and \(z=(z_1,z_2)\), define the contraction on monomials by
+\(\mathcal E(\xi^\alpha z^\beta)=\partial_z^\alpha z^\beta\) and extend
+linearly. The Image space is the sum of the images of
+\(\xi_i-\partial_{z_i}\), \(i=1,2\), and equals \(\ker\mathcal E\)
+\cite[Theorem~3.3]{image}.
+A phase \(F\) is pure if \(\mathcal E(F^m)=0\) for all \(m\geq1\).
+It is safe if for every fixed polynomial \(Q\), \(\mathcal E(QF^m)=0\)
+for all sufficiently large \(m\). Balanced degree \(d\) means bidegree
+\((d,d)\) in \((\xi,z)\). A nonzero balanced phase is radially primitive
+if \(R=\xi_1z_1+\xi_2z_2\) does not divide it. It is absolutely nonpower if
+it is no nonzero scalar multiple of a proper power over an algebraic closure.
+
+\begin{theorem}\label{thm:spectrum}
+Let \(K\) have characteristic zero.
+\begin{enumerate}
+\item Every pure two-pair balanced phase of degree at most three is safe.
+\item Every pure, radially primitive two-pair balanced phase of degree five
+      is safe.
+\item In degree four and every degree at least six there are explicit integer,
+      radially primitive, absolutely nonpower two-pair balanced phases \(F\)
+      with \(\mathcal E(F^m)=0\) and \(\mathcal E(ZF^m)\ne0\) for every
+      \(m\geq1\), with the common linear marker \(Z=\xi_1z_2\) in the
+      balanced coordinates.
+\end{enumerate}
+Consequently the primitive, absolutely nonpower balanced counterexample
+degrees are \(4,6,7,8,\ldots\).
+\end{theorem}
+
+The Special Image Conjecture asserts safety for every pure phase in the
+original polynomial ring \cite[Conjecture~3.1]{image}. A single quartic
+witness already refutes that assertion in two pairs. The question here is
+which balanced degrees can carry a failure with the radial factor
+removed. Allowing radial factors, the balanced failure spectrum starts
+at four and contains every higher degree. Indeed, multiplying the quartic by
+\(R^{d-4}\) leaves its restriction to \(R=1\) unchanged, and
+\eqref{eq:spectrum-contraction} changes pure and marked contractions only
+by nonzero factorial ratios. Among phases divisible by \(R\), the failure
+degrees start at five, since a divisible quartic restricts to sphere
+degree at most three. Radial primitivity is the condition that degree in the
+original balanced ring agrees with least degree on the sphere.
+
+Long's Hopf identity gives the quartic seed \cite{longcompact}. We give a
+joint endpoint identity that lets the seed be multiplied by selected
+quadratic and cubic factors while retaining the same marker. This
+produces degrees \(4+2a+3b\) for \(a,b\geq0\). Proving that five is genuinely
+missing requires controlling arbitrary primitive quintic coefficients.
+
+An abelian variety of dimension \(g\) has ordinary reduction at a good
+prime when its Newton slopes consist of \(g\) zeros and \(g\) ones.
+
+\begin{theorem}[Ordinary reduction with rank-two CM multiplication]\label{lem:rank-two}
+Let \(J\) be an abelian variety of dimension \(2e>0\) over a number field \(L\).
+Suppose a CM field \(E\) of degree \(2e\) embeds in
+\(\End^0(J_{\overline L})\) and a polarization induces complex conjugation
+on \(E\) by its Rosati involution. For each conjugate pair of embeddings of
+\(E\), consider the multiplicities of the two embeddings on holomorphic
+one-forms. Suppose at most two pairs have multiplicities \((1,1)\). Then
+there is a finite extension of the number field over which the ordinary
+primes of \(J\) have natural density one.
+\end{theorem}
+
+Theorem~\ref{lem:rank-two} concerns all abelian varieties with the stated
+action and signature. Its relative-rank-two range includes signatures with
+two balanced pairs. At a prime split in \(E\), a nonordinary balanced
+pair forces divisibility of the Frobenius trace at \emph{both} places of
+that pair. With at most two balanced pairs this supplies the remaining
+divisibility beyond the contribution from the definite pairs. The Weil
+bound puts the normalized trace norm in a finite set of integers. After
+adjoining enough torsion, the norm is congruent to its largest possible
+value, forcing equality. Equality contradicts the two local divisibilities
+at the nonordinary balanced pair.
+
+The link to polynomial moments comes from the interval integration after
+angular averaging. Integration divides a term of height \(j\) by \(j+1\).
+At special moment orders and primes, the largest height is \(p-1\), so
+one prime denominator isolates one coefficient of a power of the leading
+face. The same coefficient occurs as the Frobenius scalar on a
+one-dimensional eigenspace of the coherent cohomology of a cyclic cover.
+An ordinary Jacobian makes that scalar nonzero. This rules out purity even
+though individual terms of the original moment can cancel in
+characteristic zero.
+
+The proof of safety starts with the leading binary form on the conic at
+infinity. If its intersection orders are all small, the volume extends
+across a proper resolution and a nonzero constant exponential period is
+impossible. The borderline intersection order gives a single nonzero
+coefficient under the prime test. Higher order leaves finitely many
+supporting faces, where the cyclic-cover argument applies except in
+explicit cases that reduce to safe phases by a change of coordinates.
+The quadratic-height analysis below uses the general root and face tests
+from Section~\ref{sec:quintic}. Those tests are independent of the collision
+analysis, which uses quadratic height to finish the remaining cases.
+
+\input{construction}
+\input{quintics}
+\input{ordinarity}
+\input{proper-volume}
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{99}
+
+\bibitem{image}
+A. van den Essen, D. Wright, and W. Zhao, On the Image Conjecture,
+\emph{J. Algebra} \textbf{340} (2011), 211--224,
+arXiv:\href{https://arxiv.org/abs/1008.3962v2}{1008.3962v2}.
+
+\bibitem{cubicsphere}
+R. van Rijn, \emph{Cubic sphere moments and the two-pair Image problem},
+preprint, 2026.
+\href{https://github.com/royvanrijn/jacobian-research/blob/57ca19131af2e3e3c6cea45abae9a94176d610f7/unpublished/cubic-sphere-image/cubic-sphere-image.pdf}{Versioned PDF}.
+
+\bibitem{longcompact}
+C. D. Long, \emph{The Mathieu Property for Compact Connected Lie
+Groups}, arXiv:\href{https://arxiv.org/abs/2609.16178v1}{2609.16178v1}, 2026,
+Theorem~3.1.
+
+\bibitem{chen-dirks-mustata}
+Q. Chen, B. Dirks, and M. Musta\c{t}\u{a}, \emph{An introduction to
+\(V\)-filtrations}, arXiv:\href{https://arxiv.org/abs/2402.07816v1}{2402.07816v1},
+2024.
+
+\bibitem{kashiwara-b-functions}
+M. Kashiwara, B-functions and holonomic systems. Rationality of roots of
+B-functions, \emph{Invent. Math.} \textbf{38} (1976), 33--53.
+
+\bibitem{ogus}
+A. Ogus, Hodge cycles and crystalline cohomology, in
+\emph{Hodge Cycles, Motives, and Shimura Varieties},
+Lecture Notes in Math. \textbf{900}, Springer, 1982, 357--414,
+\href{https://publications.ias.edu/sites/default/files/Number45.pdf}{Proposition~2.7.2}.
+
+\bibitem{sawin}
+W. F. Sawin, Ordinary primes for abelian surfaces,
+\emph{C. R. Math. Acad. Sci. Paris} \textbf{354} (2016), 566--568,
+arXiv:\href{https://arxiv.org/abs/1506.04784v2}{1506.04784v2}.
+
+\bibitem{fite}
+F. Fit\'e, Ordinary primes for some varieties with extra endomorphisms,
+\emph{Publ. Mat.} \textbf{68} (2024), 27--40,
+arXiv:\href{https://arxiv.org/abs/2005.10185v3}{2005.10185v3}.
+
+\bibitem{cantoral}
+V. Cantoral Farf\'an, W. Li, E. Mantovan, R. Pries, and Y. Tang,
+\emph{Positive density of primes of ordinary reduction for abelian
+varieties of simple signature}, arXiv:\href{https://arxiv.org/abs/2508.11174v1}{2508.11174v1},
+2025.
+
+\bibitem{muger-tuset}
+M. M\"uger and L. Tuset, On the moments of a polynomial in one variable,
+arXiv:\href{https://arxiv.org/abs/1910.12148v1}{1910.12148v1}, Theorem~2.1.
+
+\end{thebibliography}
+\end{document}

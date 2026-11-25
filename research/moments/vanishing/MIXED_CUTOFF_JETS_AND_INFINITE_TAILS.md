@@ -48,7 +48,7 @@ quotient, local and completed versions.
 
 In the ternary Gaussian and normalized two-sphere degree-at-most-three
 settings, the retained [Gaussian Theorem `thm:cubic`, equation `eq:cutoff`](../../../results/gaussian-boundary/manuscript.tex)
-and [sphere Theorem `thm:sphere`, equation `eq:cutoff`](../../../unpublished/cubic-sphere-image/main.tex)
+and [sphere Theorem `thm:sphere`, equation `eq:cutoff`](../../../results/cubic-sphere-image/main.tex)
 supply C=3. Degree-at-most-three
 perturbations therefore give
 
@@ -214,7 +214,7 @@ are not claimed.
 
 ## 5. A genuine index-seven sphere slice and its complete moment ideal
 
-The [constant-profile calculation](../../../unpublished/cubic-sphere-image/finite.tex),
+The [constant-profile calculation](../../../results/cubic-sphere-image/finite.tex),
 Proposition `prop:finite-constant-profile` and equation
 `eq:constant-profile-triangular`, gives the following polynomial graph
 through P*. Fix its frame coefficients a=d=1,c=0 and put

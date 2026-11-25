@@ -1996,3 +1996,138 @@ target core and absorb the fixed supported coefficients
 into the unit residue. A fixed exact ratio recovers the
 pair by its fixed sum and coefficients. This completes
 the generalized fixed-target estimate.
+
+## The exponent of the minimally repaired primitive count
+
+Fix orders \(s_A,s_B,s_C\ge1\), let \(M=\max_i s_i\), and let
+\(\mathcal S\) be a nonempty sector of ordered positive primitive
+quotients \(u_A+u_B=u_C=W\). A prime \(p\) is deficient if its
+positive valuation on its quotient letter is below that letter's
+required order. Define the least permitted common multiplier and
+its resulting height by
+\[
+ Z(\boldsymbol u)=\prod_{p\ \mathrm{deficient}}
+       p^{\max_i(s_i-v_p(u_i))},
+ \qquad H(\boldsymbol u)=WZ(\boldsymbol u).
+\]
+Let \(Q_{\mathcal S}(Y)\) count quotients with \(H\le Y\), and let
+\(A_{\mathcal S}(Y)\) count all triples of the prescribed orders
+with quotient in \(\mathcal S\) and height at most \(Y\).
+Then
+\[
+ \limsup_{Y\to\infty}\frac{\log A_{\mathcal S}(Y)}{\log Y}
+ =\max\left\{\frac1M,\
+       \limsup_{Y\to\infty}\frac{\log Q_{\mathcal S}(Y)}{\log Y}\right\}.
+ \tag{MPA}
+\]
+For an infinite \(\mathcal S\), the second exponent is the
+abscissa of convergence of \(\sum_{\boldsymbol u\in\mathcal S}
+H(\boldsymbol u)^{-s}\).
+
+Each prime of a primitive quotient divides at most one letter.
+At a deficient prime, the common multiplier must have positive
+valuation and hence at least \(\max_i(s_i-v_p(u_i))\). Taking
+exactly these valuations and zero valuations at all other primes
+gives \(Z\). Each quotient yields its minimally repaired triple,
+and any one such triple yields \(\gg_{\boldsymbol u,M}Y^{1/M}\)
+triples by further scaling by \(M\)-th powers. These give both
+lower bounds in (MPA).
+
+For the upper bound write any allowed common multiplier as
+\(Zfb\), where \(f\) is supported on \(P=\operatorname{rad}(u_Au_Bu_C)\)
+and \(b\) is \(M\)-full and coprime to \(P\). For \(H\le Y\) one has
+\(P\le Y^3\). Rankin's bound gives, for each \(\eta>0\),
+\[
+ \#\{f\le Y:\operatorname{rad}(f)\mid P\}
+ \le Y^\eta\prod_{p\mid P}(1-p^{-\eta})^{-1}
+ \ll_\eta Y^{2\eta}.
+\]
+For the last inequality, every sufficiently large prime contributes
+a local factor at most \(p^{\eta/3}\). The elementary \(M\)-full
+count is \(O_M((Y/H)^{1/M})\) once the constraint from \(f\) has
+been dropped. Thus
+\[
+ A_{\mathcal S}(Y)\ll_{\boldsymbol s,\varepsilon}
+ Y^{1/M+\varepsilon}
+ \sum_{\substack{\boldsymbol u\in\mathcal S\\H(\boldsymbol u)\le Y}}
+ H(\boldsymbol u)^{-1/M}.
+\]
+Dyadic summation proves the upper exponent in (MPA) and convergence
+of the positive Dirichlet series strictly above the stated abscissa.
+Strictly below it, the partial sums at height \(Y\) are at least
+\(Y^{-s}Q_{\mathcal S}(Y)\) for real \(s\ge0\), which is unbounded
+on a subsequence. For \(s<0\) the terms of the infinite series
+already fail to tend to zero.
+
+## A reverse transfer by repairing only the target
+
+For orders \((1,1,M)\), only the target \(c\) of a primitive
+triple \((a,b,c)\) needs repair. Put \(R=\operatorname{rad}(c)\).
+The multiplier and resulting height are
+\[
+ Z_M(c)=\prod_{p\mid c}p^{(M-v_p(c))_+},\qquad
+ H_M(c)=cZ_M(c)=\prod_{p\mid c}p^{\max(v_p(c),M)}.
+ \tag{MPR}
+\]
+In particular \(R^M\le H_M(c)\le cR^M\), with \(H_M(c)=R^M\)
+when every target valuation is at most \(M\). The minimally
+repaired triple recovers \((a,b,c)\) on dividing by its gcd.
+
+For fixed \(0<\xi<1/3\) and \(\lambda>0\), take the sector
+\[
+ c^{(1/3-\xi)\lambda}
+ \le \operatorname{rad}(c)\le c^{(1/3+\xi)\lambda},
+ \qquad \operatorname{rad}(ab)\le c^{(2/3+\xi)\lambda}.
+\]
+Write \(Q_{\lambda,\xi,M}(Y)\) for its minimally repaired count.
+The following two existence statements are equivalent, using the
+[small-one-letter saving](ABC_WIDE_COFACTOR_CONGRUENCES.md#small-radical-on-any-one-letter)
+in the direction from repaired counts to exceptional counts.
+
+1. The unrestricted primitive \(abc\) count with
+   \(\operatorname{rad}(abc)<c^\lambda\) has a fixed positive
+   coefficient gap below \(1/3\) at every sufficiently small fixed
+   budget \(\lambda\).
+2. There are fixed \(K,\xi,\sigma>0\), with \(0<\xi<1/3\),
+   \(0<\sigma<1\) and \((1-\sigma)(1/3+\xi+1/K)<1/3\), such
+   that for every sufficiently small fixed \(\lambda\) and
+   \(M=\lceil K/\lambda\rceil\),
+   \[
+    Q_{\lambda,\xi,M}(Y)\ll_{\lambda,M,\varepsilon}
+             Y^{(1-\sigma)/M+\varepsilon}
+             \qquad(\varepsilon>0).
+    \tag{MRG}
+   \]
+
+For \(2\Rightarrow1\), a strict exception outside the sector has
+some letter \(T\) with \(\operatorname{rad}(T)\le
+c^{(1/3-\xi/2)\lambda}\). A target above its upper cap forces one
+of the summands below that threshold, since the three radicals
+multiply to less than \(c^\lambda\). An excessive summand
+radical product forces the target below its lower cap. The
+small-one-letter saving counts all these exceptions with a fixed
+gap. On the sector, \(c\le X\) gives
+\(H_M(c)\le X^{1+M(1/3+\xi)\lambda}\). Apply (MRG) and
+\(1/M\le\lambda/K\). Choose the exponent allowance in (MRG)
+after fixing \(\lambda\) and \(M\).
+
+For \(1\Rightarrow2\), let \(\delta_0>0\) be the gap in the
+exceptional count. The sector has total radical at most
+\(c^{(1+2\xi)\lambda}\), and \(H_M(c)\le Y\) implies
+\(c\le Y^{1/(M(1/3-\xi)\lambda)}\). Apply the gap at budget
+\((1+3\xi)\lambda\). The exponent, before the arbitrary allowance,
+is at most \((1/3-\delta_0)(1+3\xi)/(M(1/3-\xi))\).
+First choose \(\xi\) sufficiently small in terms of \(\delta_0\),
+then choose \(\sigma>0\) leaving a strict margin, and finally
+choose \(K\) large enough for \((1-\sigma)(1/3+\xi+1/K)<1/3\).
+
+The saving in (MRG) is open. A bound of order \(Y^{1/M}\) for
+the count including arbitrary further dilations is compatible
+with both equality and a strict saving for the minimally repaired
+count, by (MPA). Also
+\[
+ (1/3-\xi)\lambda-\frac1M
+ \le\frac{\log Z_M(c)}{M\log c}\le(1/3+\xi)\lambda,
+\]
+so a bound restricted to negligible repair costs need not reach
+this sector.

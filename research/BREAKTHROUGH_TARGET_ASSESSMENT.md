@@ -375,8 +375,8 @@ quadratic-complement manuscript proves that the kernel of the normalized
 rotation-and-scaling trace is Mathieu–Zhao exactly in dimensions one and
 two, with sharp witness bounds in higher dimension. Both manuscripts are
 under review at Hexagon.
-[Ground-field manuscript](../results/published/mathieu-ground-fields/) ·
-[Quadratic-complement manuscript](../results/published/mathieu-quadratic-complements/)
+[Ground-field manuscript](../results/mathieu-ground-fields/) ·
+[Quadratic-complement manuscript](../results/mathieu-quadratic-complements/)
 
 For connected homogeneous spaces over real closed fields, the next targets
 are the traces on the two exceptional compact Laurent products
@@ -708,7 +708,7 @@ terminal orders \(N\ge2\). The proof combines the theorem through
 cutoff from \(N=3150\). The manuscript is ready for mathematical review.
 External specialist review and independent replay remain open.
 [Univariate binomial proof](factorial/image-rigidity/ORDINARY_BINOMIAL_RESIDUAL_REGION.md) ·
-[Manuscript and verification](../unpublished/strong-factorial-binomials/)
+[Manuscript and verification](../results/strong-factorial-binomials/)
 
 **Next milestone.** Prove coprimality for the actual consecutive moment
 polynomials of arbitrary multivariate binomials at terminal six. Arbitrary

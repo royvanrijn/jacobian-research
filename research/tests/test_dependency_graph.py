@@ -314,6 +314,18 @@ class DependencyGraphTests(unittest.TestCase):
                       quotient["components"])
         self.assertIn("independent grounding required", graph.to_dot())
 
+    def test_refuted_equivalent_goals_have_no_open_blockers(self):
+        self.node("A", "falsified")
+        self.node("B", "falsified")
+        self.equivalence()
+        self.rule("USES-REFUTED", ["A"])
+        evaluation = self.graph().evaluate()
+        for member in ("A", "B"):
+            self.assertEqual(evaluation[member]["state"], "falsified")
+            self.assertEqual(evaluation[member]["blockers"], [])
+        self.assertEqual([(blocker["id"], blocker["state"])
+                          for blocker in evaluation["CLAIM"]["blockers"]], [("A", "falsified")])
+
     def test_proving_either_equivalent_member_propagates_without_circular_provenance(self):
         for ground in ("A", "B"):
             with self.subTest(ground=ground):

@@ -1,0 +1,27 @@
+{
+  "title": "Asymptotic counts for powerful triples with arbitrary common divisor",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "An alternating expansion and a quantitative primitive-quotient law for full triples under a stated quotient count, with an unconditional expansion in the large-deficiency sector.",
+  "status": "draft",
+  "published": false,
+  "catalogued_on": "2026-11-25",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+  "abstract": "We count ordered positive triples \\(a+b=c\\le X\\) with prescribed fullness orders and arbitrary common divisor. Assuming a stated bound for primitive quotients with a small product of deficient primes, we obtain an expansion in powers \\(X^{1/(M+j)}\\), where \\(M\\) is the largest prescribed order, for sufficiently large comparable fixed orders. The coefficients have strictly alternating signs, and the positive leading coefficient is an absolutely convergent sum over primitive quotients. The expansion holds in \\(\\ell^1\\) over those quotients and gives a limiting law with a power-saving error in total variation. The contribution from quotients with a large product of deficient primes has an unconditional expansion. The proof combines a coprimality-uniform full-integer count with the cost of restoring divisibility after taking out the common divisor.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "verification_record": "verification.json",
+  "verification": {
+    "scope": "Written common-divisor factorization, coprimality-uniform full-integer expansion, error summation, quotient-law normalization, scoped primary-source inspection and rendered PDF review.",
+    "limits": "The full expansion assumes a dyadic quotient count. Making it unconditional requires a citable proof of the small-budget endpoint inputs. External review and formal verification remain unperformed."
+  },
+  "next_steps": [
+    "Obtain specialist review of the uniform degree dependence in the signed monomial estimates and the endpoint nonatomic-mass theorem.",
+    "Supply a citable proof of the exact endpoint input before claiming an unconditional full expansion in the paper.",
+    "Review the mathematical statements and exact edition with the author before submission."
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "date": "2026-11-25",
+  "edition": {
+    "file": "primitive-balanced-image-spectrum.pdf",
+    "sha256": "a207b25460e0c06a04b761a2d4d2087f8ad97951da6cc055be4eaa4fdfe00b57",
+    "pages": 13,
+    "status": "Prepared for Hexagon"
+  },
+  "scope": "Characteristic-zero primitive balanced two-pair Image spectrum and density-one ordinary reduction after finite extension for Rosati-compatible rank-two CM multiplication with at most two balanced embedding pairs.",
+  "proof_dependencies": [
+    {
+      "claim": "Stable leading form",
+      "method": "Weierstrass sublevel estimate and regularity of the resolved volume, followed by the proper graph direct image, positive V-filtration and Fourier obstruction. Lemma 3 includes the proper-volume argument."
+    },
+    {
+      "claim": "Unstable leading form",
+      "method": "Supporting-line census, prime denominator isolation, cyclic eigensheaves, ordinary reduction and two trace-preserving repeated-root shears."
+    },
+    {
+      "claim": "The rank-two ordinary-reduction theorem",
+      "method": "Common relative Frobenius trace from degree polynomials, ordinary slopes on split components, both trace divisibilities from a failing balanced pair, and a Katz–Ogus torsion congruence forcing equality in the Weil bound."
+    },
+    {
+      "claim": "Original witnesses and arbitrary markers",
+      "method": "Bihomogeneous contraction and marker balancing, joint endpoint moments, and exact radial and simple-root specializations."
+    }
+  ],
+  "checks": {
+    "latex": {
+      "command": "SOURCE_DATE_EPOCH=1795564800 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=primitive-balanced-image-spectrum main.tex",
+      "environment": "Ubuntu 24.04, TeX Live 2023, pdfTeX 1.40.25, latexmk 4.83, Poppler 24.02.0",
+      "outcome": "Built from a fresh extraction of the upload ZIP without unresolved references or layout warnings. All 13 pages of the reviewed PDF were rendered and visually inspected. The extracted-source rebuild had identical extracted text and identical 110 DPI page rasters. Its PDF differed only in the trailer ID.",
+      "extracted_source_rebuild_sha256": "4b38667ea10a7a698f984c3ddaa89b1822dd65b23fe2404587f0a8206feb69cd"
+    },
+    "finite_replay": {
+      "commands": [
+        "python3 -I verify_faces.py",
+        "python3 -I verify_witnesses.py"
+      ],
+      "environment": "CPython 3.12.3, Python standard library, fresh verification ZIP extraction, no repository access required",
+      "outcomes": [
+        "Replayed 14 quintic supporting lines and 73 support/partition cases, and all lower-degree supporting-line cases, including the exact character dimensions and signatures.",
+        "Checked 22 unmarked and 22 marked original contractions, eight Laurent power/marker pairs, and radial and simple-root specializations.",
+        "Negative controls rejected omission of the height-5/2 line and detected the nonzero first contraction 8! after adding R^7 to the septic. Both scripts reject optimized execution."
+      ],
+      "scope_limit": "The written proof supplies the all-order identities, exhaustiveness, analytic period obstruction and arithmetic theorems. Finite replays check the enumerations and identities explicitly identified in the dependency inventory."
+    },
+    "literature": {
+      "record": "ordinary-reduction-literature.md",
+      "outcome": "Checked the closest theorem and its assumptions against the primary sources, including the relative-rank-two case of Cantoral Farfán–Li–Mantovan–Pries–Tang, Fité, Sawin and the original Katz–Ogus bounded-trace argument. Identified the precise extension in scope and the overlap for an order-five factor."
+    },
+    "repository_navigation": {
+      "outcome": "Scoped coverage, evidence, reference and local proof-source checks pass for the paper. The isolated repository audit resolved 519 TeX proof links and passed the portfolio inventory.",
+      "repository_wide_blocker": "Both make render-navigation and make check-navigation stop on the pre-existing changed supporting checker error for FACTORIAL-UNIFORM-BOUNDED-QUARTIC-CUSP-EXCLUSION. The accompanying generated views were refreshed for this paper's changes using the repository renderer."
+    }
+  },
+  "review": {
+    "contextual_internal_math_review": true,
+    "independent_formal_verification": false,
+    "external_human_review": false,
+    "external_replay": false,
+    "publication": false,
+    "pdf_only_reader_reviews": [
+      {
+        "reviewer": "Isolated internal AI reader",
+        "supplied_context": "Compiled PDF and the working guide's five review prompts. No source files, scripts or earlier explanations.",
+        "edition_sha256": "5aefa5b8e82369971d77d5273917e82802ff4ef79749bf9754254866217feb42",
+        "answers": [
+          "Identified both main results and their scopes.",
+          "Recovered the joint endpoint mechanism and the leading-form, sphere-moment and cyclic-cover steps.",
+          "Located the analytic bottleneck in the proper-volume lemma and the arithmetic bottleneck in the repeated-root and ordinary-reduction arguments.",
+          "Identified radial primitivity, the restriction to two pairs and the finite arithmetic base extension.",
+          "Recomputed the supporting lines and the repeated-cubic shear. Requested more explicit instructions for replay of the reference and case-analysis steps."
+        ],
+        "revision": "Made the proper-on-support hypothesis explicit, identified the shared prime congruence, supplied the binomial counts and degree formula, tabulated the integer-height root cases and clarified why the primitive factor suffices. Replaced the monodromy argument with the Katz–Ogus torsion proof before fresh review."
+      },
+      {
+        "reviewer": "Fresh isolated internal AI reader",
+        "supplied_context": "Final compiled PDF and the working guide's five review prompts. No source files, scripts, previous reviews or earlier explanations.",
+        "edition_sha256": "a207b25460e0c06a04b761a2d4d2087f8ad97951da6cc055be4eaa4fdfe00b57",
+        "answers": [
+          "Recovered the exact failure spectrum with its common integer witness marker, and Theorem 2 with extra endomorphisms and at most two balanced pairs.",
+          "Explained the sphere contraction, the endpoint identity, leading-root and supporting-face reduction, the Frobenius coefficient, and the trace-preserving collision shears.",
+          "Identified the V-filtration and Fourier argument as the main conceptual obstacle, and the two conjugate trace divisibilities as the critical arithmetic step.",
+          "Recovered the two-pair, characteristic-zero and radial hypotheses and the finite-extension qualification on density.",
+          "Recomputed all degree-1, 2, 3 and 5 supporting-line rows and the signatures for orders 7, 9, 10, 11 and 15, including lower-order vanishings in the collision cases. Identified the cited V-filtration and small-dimensional ordinarity results as remaining external inputs to a mathematical replay."
+        ],
+        "disposition": "No substantive flaw reported. The reviewer suggested stating the exclusion of p=2 and the Frobenius convention earlier. The proof excludes p=2 explicitly and specifies p-power Frobenius at the comparison step. The reviewed bytes are retained."
+      }
+    ],
+    "remaining_uncertainties": [
+      "An external specialist has not checked the proper direct image and V-filtration argument or the arithmetic theorem.",
+      "The primary-source comparison establishes a difference in scope from the closest stated theorem. Priority for the broader statement has not been established."
+    ]
+  }
+}

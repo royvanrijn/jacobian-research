@@ -13,7 +13,7 @@ actual theorem statements and hypotheses, identify the closest applicable result
 and remaining gap, and use that review to guide new proofs and computations.
 Do not infer novelty or an unsolved status merely from an unsuccessful search.
 
-- results/: current editions of released or submitted papers, including the results/published/ collection. Record pending submissions in paper metadata.
+- results/: current editions of released or submitted papers. Record pending submissions in paper metadata.
 - unpublished/: manuscripts in preparation.
 - research/: current principal results, exact proof support and open questions by topic.
 - research/MATH_STATUS.json: current mathematical status and proof dependency DAG; publication is separate.

@@ -13,7 +13,7 @@ Read [the root instructions](../AGENTS.md) before starting; use
 | `research/MATH_STATUS.json` | Structured current mathematical status | Stated scope, proof dependencies, source pins, open gaps and separate assurance flags |
 | `research/STATUS.md`, `research/SCOPES.md`, `research/DEPENDENCIES.md` | Generated navigation | Status, scope audit and implication diagrams from `make render-navigation`; edit the structured source |
 | `unpublished/` | Manuscripts in preparation | Paper source, current PDF, build instructions, metadata, verification scope and next review tasks |
-| `results/<paper>/` or `results/published/<paper>/` | Current edition of a released or submitted paper | Best current source and PDF, build instructions, local revision status, verification scope and review tasks |
+| `results/<paper>/` | Current edition of a released or submitted paper | Best current source and PDF, build instructions, local revision status, verification scope and review tasks |
 | `published/` inside a paper directory | Immutable deposited edition | Exact deposited files, checksums, identifiers and submission metadata |
 | `working-guide/` | Reusable working standards | Policies and reusable procedures, without per-result progress records |
 

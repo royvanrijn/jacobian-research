@@ -1,26 +1,27 @@
 {
-  "title": "Additive representations by powerful integers",
+  "title": "Primitive sums of powerful integers and the abc endpoint",
   "author": {
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "A saving of 1/(153k) for primitive diagonal powerful triples using minimum-energy subsets, adaptive amplification and a choice of fixed summand.",
+  "summary": "A strict primitive-triple exponent derived from explicitly stated small-budget abc box hypotheses, a reverse transfer by the least target multiplier, and an independent determinant saving of 1/(153k).",
   "status": "draft",
   "published": false,
   "catalogued_on": "2026-11-24",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-  "abstract": "For all sufficiently large \\(k\\), the number of primitive\n\\(k\\)-full triples \\(a+b=c\\le X\\) is\n\\(O_{k,\\varepsilon}(X^{(2-1/153)/k+\\varepsilon})\\).\nWe compress each triple at fixed \\(c\\) to a rational congruence\nand count its solutions using a rectangular determinant.\nA minimum-energy subset controls the loss of precision\nunder Newton divided differences. The partition depth and\namplification order depend on the factorization of the modulus. For fixed offsets \\(p=r+u,\\ q=r+v\\)\nwe also save a fixed multiple of \\(1/r\\) over \\(1/p+1/q\\).\nFor representations by two positive \\(k\\)-full integers,\nwe give pointwise bounds of \\(O_\\varepsilon(N^{3/10+\\varepsilon})\\) for \\(k=2\\)\nand \\(O_{k,\\varepsilon}(N^{1/(k+1)+\\varepsilon})\\) for \\(k\\ge3\\).\nThe graph bounds for these estimates apply also to large\ncoprime differences.",
+  "abstract": "Assuming two stated small-budget \\(abc\\) box estimates, we obtain\n\\(O_{p,q,r,\\eps}(X^{(1/3-\\delta)\\lambda_0+\\eps})\\) for the count of ordered primitive\n\\(p,q,r\\)-full triples \\(a+b=c\\le X\\), where\n\\(\\lambda_0=1/p+1/q+1/r\\) is sufficiently small and\n\\(\\delta>0\\) is absolute. Fullness forces point masses at the\nlimiting one-third coefficient.\nA congruence determinant gives\n\\(O_{k,\\eps}(X^{(2-1/153)/k+\\eps})\\) for large equal orders \\(k\\)\nand an order-\\(1/r\\) saving for large \\(r\\) at fixed offsets.\nPointwise counts of two \\(k\\)-full summands are\n\\(O_\\eps(N^{3/10+\\eps})\\) for \\(k=2\\) and \\(O_{k,\\eps}(N^{1/(k+1)+\\eps})\\)\nfor \\(k\\ge3\\). Under the box hypotheses, a saving in a count with least\ntarget multipliers is equivalent to a strict saving for small-budget \\(abc\\) triples.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "verification_record": "verification.json",
   "verification": {
-    "scope": "Written proofs, scoped primary-source inspection, exact arithmetic parameter checks, rational certificate replay and visual review of the twenty-two-page PDF.",
-    "limits": "Independent PDF-only review, specialist review, formal verification and exhaustive priority search remain unperformed."
+    "scope": "Proof review of the strict transfer and the two directions of the repair equivalence under the named endpoint hypotheses. Prior written graph and determinant proofs are retained. The current edition includes fresh exact parameter and certificate replays, a standalone LaTeX build, and layout review. An internal PDF-only reader review informed the final wording and verification links.",
+    "limits": "The full analytic proof of the endpoint hypotheses remains outside this manuscript and needs specialist review. External specialist review, formal verification and a broader literature comparison remain unperformed."
   },
   "next_steps": [
-    "Obtain specialist review of the short rational monomial congruence proof, especially the powerful divisor selection, and its application to all fixed offsets.",
-    "Complete a priority comparison and review the manuscript with the author before submission."
+    "Review the full proof chain for the limiting one-third box bound and endpoint balance and nonatomic mass, including the signed monomial counts, real strips and congruence amplification.",
+    "Obtain specialist review of the explicit determinant count, the radical-sector equivalence and their verification files.",
+    "Seek a uniform saving for distinct least-multiplier quotients in the balanced radical sector of Theorem 20."
   ]
 }

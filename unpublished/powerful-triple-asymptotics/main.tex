@@ -1,0 +1,527 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[margin=1.12in]{geometry}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Asymptotic counts for powerful triples with arbitrary common divisor},pdfauthor={Roy van Rijn}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\DeclareMathOperator{\rad}{rad}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\sord}{\boldsymbol{s}}
+
+\title[Asymptotic counts for powerful triples]{Asymptotic counts for powerful triples with arbitrary common divisor}
+\author{Roy van Rijn}
+\urladdr{\url{https://orcid.org/0009-0000-2808-0645}}
+\subjclass[2020]{11D45, 11N37}
+\keywords{powerful integers, additive triples, asymptotic expansions, primitive quotients}
+
+\begin{document}
+\begin{abstract}
+We count ordered positive triples \(a+b=c\le X\) with prescribed fullness
+orders and arbitrary common divisor. Assuming a stated bound for primitive
+quotients with a small product of deficient primes, we obtain an expansion in powers
+\(X^{1/(M+j)}\), where \(M\) is the largest prescribed order, for sufficiently
+large comparable fixed orders. The coefficients have strictly alternating
+signs, and the positive leading coefficient is an absolutely convergent sum over
+primitive quotients. The expansion holds in \(\ell^1\) over those quotients
+and gives a limiting law with a power-saving error in total variation.
+The contribution from quotients with a large product of deficient primes
+has an unconditional expansion. The proof combines a coprimality-uniform
+full-integer count with the cost of restoring divisibility after taking out
+the common divisor.
+\end{abstract}
+\maketitle
+
+\section{Introduction and main results}
+
+For an integer \(s\ge2\), a positive integer is \(s\)-full if every prime
+that divides it occurs to exponent at least \(s\). In particular, \(1\) is
+\(s\)-full. Fix three orders \(\sord=(s_1,s_2,s_3)\), and put
+\[
+  m=\min_i s_i,\qquad M=\max_i s_i.
+\]
+Let \(A_{\sord}(X)\) count ordered positive triples \(a+b=c\le X\) whose
+entries are respectively \(s_1\)-, \(s_2\)-, and \(s_3\)-full. Dividing by
+\(g=\gcd(a,b,c)\) gives a unique primitive quotient \(q=(u,v,w)\), with
+\(u+v=w\) and \(\gcd(u,v,w)=1\). Let \(a_q(X)\) count the triples with
+quotient \(q\).
+
+The quotient \(1+1=2\) explains the scale of the count. For any
+\(M\)-full odd integer \(b\), the common divisor \(2^M b\) gives a triple
+of the required orders with largest entry \(2^{M+1}b\). Taking \(b\) to
+range over odd \(M\)-th powers already gives \(\gg_M X^{1/M}\) triples.
+In general, the part of \(g\) supported on primes of \(uvw\) must restore
+fullness at certain primes. The remaining part of \(g\) varies over
+\(M\)-full integers coprime to \(uvw\). This second part produces the
+asymptotic terms. The cost of the first part can be used to show that
+the resulting series over all primitive quotients converges.
+
+Browning and Verzobio \cite[Theorem~1.1]{BV} count primitive triples of
+fixed nearby orders. For \(s_i=k\) their upper-bound exponent is
+\(2/k-1/k^2+O(k^{-5/2})\), apart from the arbitrary exponent allowance.
+Their theorem fixes the common divisor to one. A primitive quotient in the
+present count can have a prime of any positive valuation in its entries.
+On the one-integer side, Cohen and Davis \cite[\S\S6--7]{CD} give two-term
+estimates for the number of \(M\)-full integers. We use a related expansion
+with a variable coprimality restriction and an error that can be summed
+over primitive quotients.
+
+Write \((q_1,q_2,q_3)=(u,v,w)\) and call a prime \(p\) deficient for
+\(q\) if \(0<v_p(q_i)<s_i\) for some \(i\). Let \(D(q)\) be the product
+of the deficient primes, with an empty product equal to one. For powers
+of two \(Y,H\), let \(Q(Y,H)\) count primitive quotients satisfying
+\(Y\le w<2Y\) and \(H\le D(q)<2H\).
+
+\begin{hypothesis}[Primitive quotient count]\label{hyp:quotient}
+For the prescribed orders there is \(0<\kappa<1\) such that, for every
+\(\eps>0\),
+\begin{equation}\label{eq:quotient}
+  Q(Y,H)\ll_{\sord,\eps}Y^{(1-\kappa)/M+\eps}H^{m/M}
+   \qquad (Y\ge2,\ 1\le H\le Y^{20/M}).
+\end{equation}
+\end{hypothesis}
+
+The hypothesis is needed only for the displayed range of \(H\). A simple
+radical count suffices above it. Section~\ref{sec:endpoint} derives
+\eqref{eq:quotient} from two further hypotheses about small-budget
+\(abc\) triples.
+
+\begin{theorem}\label{thm:main}
+Assume Hypothesis~\ref{hyp:quotient}, \(M/m\le 11/10\), and let \(J\ge0\) be
+an integer with
+\begin{equation}\label{eq:range}
+  M\ge 16(J+1)^2,\qquad M\ge 100(J+1)/\kappa.
+\end{equation}
+Then there are absolutely summable real functions \(\mu_j\) on the ordered
+primitive quotients, with \((-1)^j\mu_j(q)>0\) for every \(q\), such that,
+for every \(\eps>0\),
+\begin{equation}\label{eq:main}
+  \sum_q\left|a_q(X)-\sum_{j=0}^{J}\mu_j(q) X^{1/(M+j)}\right|
+   \ll_{\sord,J,\eps} X^{1/(M+J+1)+\eps}\qquad (X\ge 1).
+\end{equation}
+In particular
+\begin{equation}\label{eq:scalar}
+\begin{aligned}
+  A_{\sord}(X)&=\sum_{j=0}^J C_{\sord,j}X^{1/(M+j)}
+       +O_{\sord,J,\eps}\bigl(X^{1/(M+J+1)+\eps}\bigr),\\
+  C_{\sord,j}&=\sum_q\mu_j(q),\quad (-1)^jC_{\sord,j}>0.
+\end{aligned}
+\end{equation}
+\end{theorem}
+
+The leading exponent is \(1/M\), including when the orders differ. For
+equal orders \(k\), this gives \(A_{(k,k,k)}(X)\sim C_{(k,k,k),0}X^{1/k}\).
+For a fixed \(\kappa>0\) the admissible number of terms grows at least
+as a constant multiple of \(\sqrt M\) as \(M\) tends to infinity. The
+orders are fixed when taking the limit in \(X\).
+
+\begin{corollary}\label{cor:law}
+Assume the hypotheses of Theorem~\ref{thm:main} with \(J=0\). For sufficiently
+large \(X\), choose a triple counted by \(A_{\sord}(X)\) uniformly and let
+\(\mathbb P_X\) be the law of its primitive quotient. There is a limiting law
+\(\mathbb P_\infty(q)=\mu_0(q)/C_{\sord,0}\), and
+\[
+  \|\mathbb P_X-\mathbb P_\infty\|_{\mathrm{TV}}
+  \ll_{\sord,\eps} X^{-1/(M(M+1))+\eps}.
+\]
+There is \(\delta>0\), depending on the orders, such that
+\(\mathbb P_X(w>T)+\mathbb P_\infty(w>T)\ll_{\sord}T^{-\delta}\)
+uniformly for sufficiently large \(X\) and all \(T\ge1\).
+\end{corollary}
+
+\begin{proposition}\label{prop:sector}
+Suppose \(M/m\le11/10\), \(M>20\), and \(M\ge16(J+1)^2\). The expansion
+\eqref{eq:main} holds unconditionally with the sum restricted to
+\(q\) with \(D(q)>w^{20/M}\). The corresponding scalar expansion has
+strictly alternating coefficients and a positive leading coefficient.
+\end{proposition}
+
+\section{The common divisor}\label{sec:divisor}
+
+Put \(P(q)=\rad(uvw)\). The three entries of a primitive additive quotient
+are pairwise coprime, so a prime of \(P(q)\) divides exactly one entry.
+Split the common divisor uniquely as \(g=fb\), where all primes of \(f\)
+divide \(P(q)\) and \((b,P(q))=1\). For \(p\mid P(q)\) put
+\[
+  K_p=\max_i(s_i-v_p(q_i)).
+\]
+At least two valuations \(v_p(q_i)\) are zero, so \(K_p\ge m\). A positive
+valuation of \(f\) at \(p\) can be any integer at least \(K_p\). Valuation
+zero is allowed precisely when \(p\nmid D(q)\). Let \(\mathcal F(q)\)
+be the resulting set of positive integers \(f\). At a prime outside
+\(P(q)\), all three quotient valuations are zero. Hence the coprime part
+\(b\) can be any \(M\)-full integer coprime to \(P(q)\). Writing
+\(B_M(U;P)\) for the number of those integers at most \(U\), we have
+\begin{equation}\label{eq:fibres}
+  a_q(X)=\sum_{f\in\mathcal F(q)} B_M\bigl(X/(wf);P(q)\bigr).
+\end{equation}
+For the quotient \(1+1=2\), for example, \(K_2=\max(s_1,s_2,s_3-1)\),
+and \(\mathcal F(q)=\{2^e:e\ge K_2\}\). This gives a full description of
+the triples in that quotient, including the family in the introduction.
+
+For every \(\sigma>0\) and \(\eps>0\) the Euler product of the local sums
+gives
+\begin{equation}\label{eq:repair}
+  \sum_{f\in\mathcal F(q)} f^{-\sigma}
+    \le D(q)^{-m\sigma}\prod_{p\mid P(q)}(1-p^{-\sigma})^{-1}
+    \ll_{\sigma,\eps} D(q)^{-m\sigma}w^\eps.
+\end{equation}
+For the last inequality, all but finitely many of the local factors are
+at most \(p^{\eps/3}\), and \(P(q)\le w^3\). The same comparison gives
+\(C^{\omega(P(q))}\ll_{C,\eps} w^\eps\) for any fixed \(C\ge1\), where
+\(\omega(P)\) is the number of distinct prime divisors of \(P\).
+
+Set \(\lambda_0=\sum_i s_i^{-1}\). At a nondeficient prime the valuation
+already pays for its contribution to the radical. Thus
+\begin{equation}\label{eq:radical}
+  P(q)\le D(q)\prod_i q_i^{1/s_i}\le D(q)w^{\lambda_0}.
+\end{equation}
+This gives the unconditional bound
+\begin{equation}\label{eq:two}
+ Q(Y,H)\ll_{\sord,\eps}Y^{2\lambda_0/3+\eps}H^{2/3}.
+\end{equation}
+Indeed, the two entries with smallest radicals have radical product at
+most \(P(q)^{2/3}\). Those two radicals are coprime, so fixing their
+product leaves at most \(2^{\omega(P')}\) assignments, where \(P'\) is
+the product. There are three choices of the omitted entry and the two
+retained values determine it. For a fixed radical \(R\) and \(n\le 2Y\),
+Rankin's inequality bounds the number of possible values of \(n\) by
+\((2Y)^\alpha\prod_{p\mid R}(1-p^{-\alpha})^{-1}\) for every
+\(\alpha>0\). If \(R\le 2Y\), the product is \(O_{\alpha,\beta}(Y^\beta)\)
+for each \(\beta>0\) by the same local comparison as in
+\eqref{eq:repair}. Summing over \(P'\ll_{\sord}Y^{2\lambda_0/3}H^{2/3}\)
+then proves \eqref{eq:two}, since \(H\ll Y^3\) and all allowances can
+be chosen arbitrarily small. This is the two-smallest-radicals argument
+used in \cite[Proposition~1.1]{BBLT}, here applied to \eqref{eq:radical}.
+
+\section{Full integers subject to a coprimality restriction}\label{sec:single}
+
+For squarefree \(P\) define
+\[
+  \rho_P=\prod_{p\mid P}(1-p^{-1}),\qquad
+  \zeta_P(t)=\zeta(t)\prod_{p\mid P}(1-p^{-t}).
+\]
+Set \(a_j=M+j\) for \(0\le j\le J\) and, initially for real \(t>1/M\),
+define \(G(t;P)\) by
+\begin{equation}\label{eq:euler}
+  \prod_{p\nmid P}\left(1+\sum_{\ell\ge M} p^{-\ell t}\right)
+   =G(t;P)\prod_{j=0}^J\zeta_P(a_jt).
+\end{equation}
+
+\begin{lemma}\label{lem:single}
+If \(M\ge16(J+1)^2\) and \(1/(M+J+1)<\sigma<1/(M+J)\), then uniformly
+for squarefree \(P\) and \(U>0\),
+\begin{align}
+ B_M(U;P)&=\sum_{j=0}^J b_j(P)U^{1/a_j}
+        +O_{M,J,\sigma}\bigl(2^{(J+1)\omega(P)}U^\sigma\bigr),\label{eq:one}\\
+ b_j(P)&=\rho_P G(1/a_j;P)\prod_{i\ne j}\zeta_P(a_i/a_j).
+ \label{eq:b}
+\end{align}
+The coefficients are bounded uniformly in \(P\), satisfy
+\((-1)^j b_j(P)>0\), and the coefficient with index \(j\) is independent
+of the truncation index \(J\ge j\).
+\end{lemma}
+
+\begin{proof}
+At a prime outside \(P\), multiplying the factor on the left of
+\eqref{eq:euler} by \(\prod_{j=0}^J(1-p^{-a_jt})\) cancels every
+positive exponent below \(M+J+1\), since \(M>J\). The product defining
+\(G(t;P)\) therefore has absolutely summable Dirichlet coefficients at
+each real \(\sigma>1/(M+J+1)\), uniformly in \(P\). To see this at the
+coefficient level, the sum of absolute values of the nonconstant local
+coefficients weighted by \(p^{-\ell\sigma}\) is
+\(O_{M,J,\sigma}(p^{-(M+J+1)\sigma})\), from the geometric series in
+\eqref{eq:euler}. At each real point \(1/a_j\) all factors in the Euler
+product for \(G\) are positive, and absolute convergence gives a strictly
+positive product.
+
+We first count product powers. For a nonempty subset \(I\subseteq
+\{0,\ldots,J\}\), write \(d=|I|\), \(A_I=\sum_{i\in I}a_i\), and
+\(e_I=(d-1)(1+J/M)/A_I\). For \(U\ge1\), the number \(F_I(U;P)\) of
+tuples of positive integers \(x_i\) coprime to \(P\) with
+\(\prod_{i\in I}x_i^{a_i}\le U\) satisfies
+\begin{equation}\label{eq:hyperbola}
+ F_I(U;P)=\rho_P\sum_{i\in I}U^{1/a_i}\prod_{j\in I\setminus\{i\}}
+           \zeta_P(a_j/a_i)
+      +O_{M,J}\bigl(2^{d\omega(P)}U^{e_I}\bigr).
+\end{equation}
+For \(d=1\), this follows by inclusion--exclusion in the coprime
+count. For \(d\ge2\), let \(V=U^{1/A_I}\). Some coordinate is at most
+\(V\), so use inclusion--exclusion on those coordinates. For a nonempty
+proper subset \(K\) of coordinates constrained by \(x_i\le V\), apply
+induction to \(I\setminus K=B\) at height \(U/\prod_{j\in K}x_j^{a_j}\).
+If \(b=|B|\), then for every \(j\in K\),
+\[
+  a_j e_B\le (1-1/b)(1+J/M)^2<1.
+\]
+Indeed \((1+J/M)^2<1+1/(J+1)\) under the size condition for \(M\).
+Summing the inductive errors over the small coordinates therefore gives
+\[
+ O_{M,J}\bigl(2^{b\omega(P)}V^{|K|+(b-1)(1+J/M)}\bigr),
+\]
+which fits the error in \eqref{eq:hyperbola}.
+
+For the main terms use, for fixed real \(t>0\), \(t\ne1\),
+\begin{equation}\label{eq:weighted}
+  \sum_{\substack{x\le V\\(x,P)=1}}x^{-t}
+  =\zeta_P(t)+\rho_P\frac{V^{1-t}}{1-t}
+      +O_t(2^{\omega(P)}V^{-t}).
+\end{equation}
+Partial summation proves the unrestricted formula, with the zeta
+constant defined by continuation for \(0<t<1\). Apply it to
+\(V/d'\) for divisors \(d'\mid P\) with \(d'\le V\), multiplying by
+\(\mu(d')d'^{-t}\), where \(\mu\) is the M\"obius function. For each
+omitted \(d'>V\), both corresponding main terms are
+\(O_t(V^{-t})\). This proves the stated uniform error.
+
+Fix a pole index \(i\), and for \(j\ne i\) in \(I\) write
+\(Z_j=\zeta_P(a_j/a_i)\) and
+\(R_j=\rho_P V^{1-a_j/a_i}/(1-a_j/a_i)\). The alternating sum over
+nonempty \(K\subseteq I\setminus\{i\}\) of products with \(Z_j+R_j\)
+on \(K\) and \(Z_j\) elsewhere equals
+\(\prod_{j\ne i} Z_j+(-1)^d\prod_{j\ne i}R_j\). The first product gives
+the corresponding main term in \eqref{eq:hyperbola}. The second
+product, after multiplication by \(\rho_P U^{1/a_i}\), contributes
+\[
+  (-1)^d\rho_P^d V^d\frac{a_i^{d-1}}{\prod_{j\ne i}(a_i-a_j)}.
+\]
+The fractions sum to one by comparing leading coefficients in the
+Lagrange interpolation formula for \(z^{d-1}\). The resulting term
+cancels the leading contribution \((-1)^{d+1}\rho_P^dV^d\) from the
+box with all coordinates at most \(V\). That box has error
+\(O_{M,J}(2^{d\omega(P)}V^{d-1})\), by the coprime single-variable
+count in each slot. In a product using an error from \eqref{eq:weighted},
+one slot contributes \(V^{-a_j/a_i}\), canceling its share of the initial
+\(V^{A_I/a_i}\). The initial share from \(i\) is \(V\). Each of the
+other slots contributes at most \(V^{1+J/M}\) after combining it with
+its initial share, since either \(Z_j\) is bounded or \(R_j\) brings
+\(V^{1-a_j/a_i}\). This gives the error of \eqref{eq:hyperbola}.
+
+For \(I=\{0,\ldots,J\}\) we have \(e_I<1/(M+J+1)\), by
+\((1-1/(J+1))(1+(J+1)/M)^2<1\). Convolve \eqref{eq:hyperbola} with
+the coefficients of \(G\). Extending each main coefficient to include
+the terms with the convolution variable greater than \(U\) costs
+\(O_{M,J,\sigma}(U^\sigma)\) by absolute convergence at \(\sigma\).
+The summed errors have the bound in \eqref{eq:one} since \(e_I<\sigma\).
+Uniform boundedness of \(b_j(P)\) follows from absolute convergence of
+\(G\) and \(|\zeta_P(t)|\le|\zeta(t)|\) for fixed real \(t>0\),
+\(t\ne1\). For \(U<1\) the count is zero, and each proposed term is
+\(O(U^\sigma)\). Exactly \(j\) factors in the product in \eqref{eq:b}
+have arguments in \((0,1)\), where \(\zeta\) is negative by its
+alternating series representation. All other factors are positive.
+Finally, increasing \(J\) changes \(G(t;P)\) by dividing by the added
+\(\zeta_P(a_i t)\). At an existing evaluation point \(1/a_j\), the added
+factors are finite and cancel in \eqref{eq:b}.
+\end{proof}
+
+\section{Summation over primitive quotients}\label{sec:sum}
+
+Choose \(\sigma\) just above \(1/(M+J+1)\) and below
+\(1/(M+J)\). We first show that for some \(\delta>0\),
+\begin{equation}\label{eq:majorant}
+ \sum_{q:\,w>T} 2^{(J+1)\omega(P(q))}w^{-\sigma}
+                 \sum_{f\in\mathcal F(q)} f^{-\sigma}
+    \ll_{\sord,J,\sigma}T^{-\delta}\qquad(T\ge1).
+\end{equation}
+For \(w\) and \(D(q)\) in their respective dyadic bins \(Y,H\), the
+contribution is bounded by the bin count times
+\(O_{\sord,J,\sigma,\eps}(Y^{-\sigma+\eps}H^{-m\sigma})\) by
+\eqref{eq:repair}. Write \(h=\log H/\log Y\). For \(h\le20/M\),
+Hypothesis~\ref{hyp:quotient} bounds the exponent of \(Y\) by
+\[
+ -\frac{\kappa}{M}+(1/M-\sigma)(1+mh)+O(\eps)
+ \le -\frac{\kappa}{M}+\frac{21(J+1)}{M^2}+O(\eps).
+\]
+This is negative with a fixed margin at fixed orders by \eqref{eq:range}.
+For \(h>20/M\), use \eqref{eq:two}. The exponent becomes at most
+\[
+  \frac{2\lambda_0}{3}-\sigma-(m\sigma-2/3)h+O(\eps).
+\]
+Here \(\lambda_0\le 33/(10M)\) and
+\(m\sigma>(10/11)(16/17)>5/6\), by the order ratio and the bound
+\(M\ge16(J+1)^2\). These estimates give a fixed negative margin
+of order \(1/M\), since \(2\lambda_0/3\le 11/(5M)\) whereas
+\((m\sigma-2/3)h>10/(3M)\). The number of \(H\)-bins is
+\(O(1+\log Y)\) because \(D(q)\le w^3\). Taking the exponent
+allowances sufficiently small and summing the resulting geometric
+bound over dyadic \(Y\) proves \eqref{eq:majorant}.
+
+By \eqref{eq:fibres} and Lemma~\ref{lem:single} the coefficient at an
+individual quotient is
+\begin{equation}\label{eq:mu}
+ \mu_j(q)= b_j(P(q)),w^{-1/a_j}
+                    \sum_{f\in\mathcal F(q)}f^{-1/a_j}.
+\end{equation}
+The local exponent ranges defining \(\mathcal F(q)\) are nonempty. The
+uniform bound for \(b_j(P)\), together with \(\sigma<1/a_j\) and
+\eqref{eq:majorant}, gives absolute convergence and the tail
+\(\sum_{w>T}|\mu_j(q)|\ll T^{-\delta}\). The sign of each weight is
+\((-1)^j\) by Lemma~\ref{lem:single}. The triangle inequality, applied
+first to each \(f\)-summation, bounds the left side of \eqref{eq:main}
+by \(X^\sigma\) times the convergent series in \eqref{eq:majorant}
+at \(T=1\). We can choose \(\sigma<1/(M+J+1)+\eps\), completing the
+proof of Theorem~\ref{thm:main}.
+
+For Proposition~\ref{prop:sector}, restrict to \(D(q)>w^{20/M}\).
+The same second exponent estimate applies, with
+\(h\ge20/M-\log 2/\log Y\) in the dyadic bins. The difference costs
+only a constant factor in the summation. The quotient \(1+1=2\) lies
+in this sector when \(M>20\). This proves nonvanishing of all the
+sector coefficients from \eqref{eq:mu}.
+
+For Corollary~\ref{cor:law}, take \(J=0\) in \eqref{eq:main}, and divide
+by \(A_{\sord}(X)\asymp_{\sord}X^{1/M}\). The error made by replacing
+\(X^{1/M}/A_{\sord}(X)\) with \(1/C_{\sord,0}\) is bounded in
+\(\ell^1\) by the same order, since \(\sum_q\mu_0(q)=C_{\sord,0}\).
+This gives the total-variation estimate. Restricting the sum of
+remainders to \(w>T\), its bound becomes \(O(X^\sigma T^{-\delta})\)
+by \eqref{eq:majorant}. Use that bound and the coefficient tail from
+\eqref{eq:mu}, then divide by \(A_{\sord}(X)\) to obtain the asserted
+uniform tail.
+
+\section{The small-budget counting input}\label{sec:endpoint}
+
+The upper bound \eqref{eq:quotient} can be reduced to two statements about
+primitive additive triples of small radical. To state the second, use
+boxes of factorizations \(q_i=c_i\prod_{e=1}^E x_{i,e}^e\) with positive
+\(c_i\) fixed within each box, pairwise coprime roots within each entry, and primitive
+totals satisfying \(q_1+q_2=q_3\) and \(Y\le q_3<2Y\). The integer
+\(x_{i,e}\) lies in \([B_{i,e},2B_{i,e})\), where \(B_{i,e}\) is a power
+of two. Define the count exponent \(d_0\) as the logarithm of the number of
+solutions divided by \(\log Y\). The logarithmic root sizes are
+\[
+ L_{i,e}=\frac{\log B_{i,e}}{\log Y},\qquad L=\sum_{i,e}L_{i,e}.
+\]
+We need the following inputs.
+
+\begin{hypothesis}[Small-budget counts and endpoint profiles]\label{hyp:endpoint}
+\leavevmode
+\begin{enumerate}
+\item For every \(\eta>0\) and all sufficiently small fixed \(\lambda>0\),
+the number of ordered positive primitive \(u+v=w\le X\) with
+\(\rad(uvw)<w^\lambda\) is
+\(O_{\lambda,\eta,\eps}(X^{(1/3+\eta)\lambda+\eps})\) for every \(\eps>0\).
+\item A profile is obtained by fixing \(E\) and taking height limits of
+\(d_0\), \(L_{i,e}\), and \(\log c_i/\log Y\) through populated boxes
+as \(Y\to\infty\). The cutoff \(E\) may vary between profiles. Retain
+the same notation for the limiting exponents and the total root mass \(L\). Along
+any sequence of the resulting profiles with \(L>0\) tending to zero and
+total coefficient exponent \(o(L)\), one has \(\limsup d_0/L\le1/3\).
+When \(d_0/L\to1/3\), every simultaneous
+weak limit of the finite measures
+\begin{equation}\label{eq:measures}
+  \nu_i=\sum_e\frac{L_{i,e}}{L}\,\delta_{eL}
+\end{equation}
+has total nonatomic mass at least \(1/2\) summed over the three entries.
+Here \(\delta_r\) is unit point mass at \(r\).
+\end{enumerate}
+\end{hypothesis}
+
+The exponent \(1/3\) in the second input alone would permit three point
+masses at scaled degree three. The nonatomic mass condition rules out
+that profile, which is forced when the quotients are almost full.
+
+\begin{proposition}\label{prop:endpoint}
+Hypothesis~\ref{hyp:endpoint} implies that there are absolute
+\(\kappa,\theta>0\) such that \eqref{eq:quotient} holds for all sufficiently
+large fixed orders with \(M/m\le1+\theta\). In fact the same bound holds
+for all \(H\ge1\).
+\end{proposition}
+
+\begin{proof}
+Suppose no such constants exist. For each integer \(n\ge2\) one can
+choose a triple of fixed orders with \(m\ge n\), \(M/m\le1+1/n\), for
+which the assertion with \(\kappa=1/n\) fails for some \(\eps>0\).
+For each fixed triple of orders there are unbounded heights in dyadic
+bins witnessing the failure. Select a height subsequence on which
+\(\log H/\log Y\to h\). This is possible by \(D(q)\le w^3\).
+The lower count exponent along that subsequence is at least
+\((1-1/n)/M+(m/M)h\).
+
+By \eqref{eq:two},
+\((m/M-2/3)h\le (2/3)\lambda_0-(1-1/n)/M\), so \(h=O(1/M)\) as
+\(n\to\infty\). By \eqref{eq:radical}, any fixed budget strictly
+larger than \(\lambda_0+h\) applies at sufficiently large heights in
+that subsequence. For a fixed \(\eta\in(0,1/3)\) and sufficiently large
+\(n\), apply Hypothesis~\ref{hyp:endpoint}(1) at these fixed budgets
+and decrease the budget to \(\lambda_0+h\), after taking the height
+limit and letting the exponent allowance tend to zero. This gives
+\[
+ (m/M-1/3-\eta)Mh\le(1/3+\eta)M\lambda_0-(1-1/n).
+\]
+As \(n\to\infty\), \(m/M\to1\) and \(M\lambda_0\to3\). Letting
+\(\eta\downarrow0\) shows that \(Mh\to0\).
+
+For these bins we use the valuation factorization of
+Bernert, Browning, Lichtman and Ter\"av\"ainen \cite[Lemma~2.2]{BBLT}.
+It preserves prime valuations through a cutoff \(E\) in their own
+coordinates. A valuation \(j>E\) is written as
+\(j=k\lfloor j/k\rfloor+r\) with \(0\le r<k\), and contributes to
+coordinate \(k\) and to the exceptional coefficient \(c_i\). For an
+arbitrarily small fixed \(\rho>0\), their construction takes
+\(k=\lceil1/\rho\rceil\) and \(E=6\lceil\rho^{-2}\rceil\), and gives
+\(c_i\le q_i^\rho\). Thus \(\rho\) can be taken sufficiently small at
+each fixed triple of orders that \(k\ge M\) and \(\rho=o(1/M)\) as
+\(n\to\infty\). Every root at an index below its entry's required order
+then consists of primes occurring to exactly that index in the quotient.
+In particular the product of these roots equals \(D(q)\). This equality
+includes the case in which a letter has no deficient primes.
+
+Freeze the three coefficients and split the roots dyadically, keeping
+one box with at least the average count. The coefficient choices cost
+\(Y^{3\rho+o(1)}\), and the number \(O((1+\log Y)^{3E})\) of dyadic
+boxes costs \(Y^{o(1)}\) at fixed \(n\). Along a further height
+subsequence take limits of all the box exponents. In the resulting
+profile,
+\begin{align*}
+ d_0&\ge (1-1/n)/M+(m/M)h-3\rho,\\
+ L&\le\lambda_0+h+3\rho,\qquad \sum_i\sum_{e<s_i} L_{i,e}\le h.
+\end{align*}
+The total root mass bound follows from \eqref{eq:radical}, since the
+product of the roots is bounded by the radical times the product of the
+exceptional coefficients. This last comparison follows prime by prime
+from the valuation construction, or from \cite[Lemma~2.2]{BBLT}.
+Counting all root tuples gives \(d_0\le L\) in the height limit. Thus
+\(L\gg1/M\), and the total coefficient exponent is at most
+\(3\rho=o(L)\) as \(n\to\infty\). The exponent bound
+in Hypothesis~\ref{hyp:endpoint}(2) now forces \(ML\to3\) and
+\(d_0/L\to1/3\).
+
+The measures \eqref{eq:measures} have first moments at most one
+by \(q_i\le2Y\) and the height limit. They are tight,
+and their total mass, summed over \(i\), is one. Their mass at indices
+below a required order tends to zero by the bound for the low roots.
+At every other index \(eL\ge s_i L\to3\). Every simultaneous weak
+limit is therefore supported on \([3,\infty)\). The moment bound
+gives each limiting measure mass at most \(1/3\), and hence each has
+mass exactly \(1/3\). The same moment bound then forces all three
+measures to be \(\tfrac13\delta_3\). This contradicts the nonatomic
+mass condition and proves the proposition.
+\end{proof}
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+\bibitem{BBLT}
+C.~Bernert, T.~Browning, J.~D. Lichtman, and J.~Ter\"av\"ainen,
+\emph{Bounds on the exceptional set in the \(abc\) conjecture},
+\href{https://arxiv.org/abs/2410.12234v2}{arXiv:2410.12234v2}, 2026.
+
+\bibitem{BV}
+T.~Browning and M.~Verzobio, \emph{Sums of three powerful numbers},
+\href{https://arxiv.org/abs/2608.24512v1}{arXiv:2608.24512v1}, 2026.
+
+\bibitem{CD}
+E.~Cohen and K.~J. Davis, \emph{Elementary estimates for certain types of
+integers}, Acta Sci. Math. (Szeged) \textbf{31} (1970), 363--371.
+\href{https://acta.bibl.u-szeged.hu/14284/1/math_031_fasc_003_004_363-371.pdf}{Journal archive}.
+\end{thebibliography}
+\end{document}

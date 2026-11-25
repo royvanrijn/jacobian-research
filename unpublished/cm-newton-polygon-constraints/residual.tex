@@ -1,0 +1,94 @@
+\subsection{Realization over prime fields}
+
+The rank-two bound is sharp for prime-field data even when the
+auxiliary torsion level is fixed arbitrarily high.
+
+\begin{proposition}[Finite-field sharpness]\label{prop:sharpness}
+Fix a totally real field \(F\) of degree \(e\), put \(E=F(i)\),
+and fix an odd rational prime \(\ell\) and \(N\ge1\). For each
+\(0\le r<e/2\), and for every sufficiently large rational prime
+\(p\) split completely in \(E\) and congruent to \(1\) modulo
+\(\ell^{2N}\), there is an abelian variety over \(\mathbb F_p\)
+of dimension \(2e\) with the following properties. It admits a
+Rosati-compatible rank-two action by \(E\), all \(e\) split pairs
+have dimensions \((1,1)\), exactly \(r\) pairs are nonordinary,
+and its \(\ell^N\)-torsion is rational.
+\end{proposition}
+
+\begin{proof}
+Let \(M=\ell^{2N}\) and let \(I\subset\mathcal O_F\) be the product
+of any \(r\) distinct primes over \(p\). We first choose
+\(\tau\in I\) with \(\tau\equiv 2\pmod{M\mathcal O_F}\) and
+\(\Q(\tau)=F\), such that \(|\sigma(\tau)|\ll_{F,M}p^{r/e}\)
+for each real embedding \(\sigma\).
+
+Here is the lattice argument. Write \(I=\beta J\), where \(J\) comes
+from a fixed finite list of fractional ideal class representatives.
+The logarithmic unit lattice of \(F\) has a bounded fundamental
+domain in the hyperplane of coordinate sum zero. Multiplying
+\(\beta\) by a unit lets us bound each \(|\sigma(\beta)|\) by
+a constant times \(|\Nm_{F/\Q}(\beta)|^{1/e}\), hence by a constant
+times \(p^{r/e}\). Transport a fixed \(\Z\)-basis of the lattice
+\(J\) to a basis of \(I\). All its coordinates in the real embeddings
+are bounded by \(O_F(p^{r/e})\). Since \(I\) is coprime to \(M\), the
+congruence is a nonempty coset modulo \(MI\) in \(I\). Reducing a
+representative in a fundamental parallelepiped gives the required
+size bound. If \(F\) has \(s\) proper subfields, vary this
+representative by \(MI\)-basis combinations with coefficients in
+\(\{0,\ldots,s\}\). In grid coordinates each proper subfield
+meets at most \((s+1)^{e-1}\) points, since it lies in a
+proper affine hyperplane. Some point avoids all the subfields.
+This preserves the bound with a larger fixed constant.
+
+For sufficiently large \(p\), the strict inequality
+\(|\sigma(\tau)|<2\sqrt p\) follows from \(r/e<1/2\).
+The norm is nonzero and bounded in absolute value by
+\(O_{F,M}(p^r)\), so \(p^{r+1}\) cannot divide it. Thus
+\(v_{\mathfrak q}(\tau)=1\) at the selected primes, and
+\(\tau\) is a unit at the other primes of \(F\) over \(p\).
+Let \(\pi\) be a root of \(X^2-\tau X+p\). This is a Weil
+\(p\)-integer, since the quadratics in all real embeddings
+have nonreal conjugate roots of modulus \(\sqrt p\).
+The field \(C=\Q(\pi)=F(\pi)\) is CM of degree \(2e\),
+using \(\tau=\pi+p/\pi\). At the selected primes the
+quadratic is Eisenstein with slopes \((1/2,1/2)\).
+At every other prime over \(p\) it splits by Hensel's lemma
+with slopes \((0,1)\).
+
+By Honda--Tate \cite[Theorem~1]{tate}, \(\pi\) is the Frobenius
+of a simple abelian variety \(B/\mathbb F_p\) up to isogeny.
+The only potentially fractional local endomorphism invariant
+over \(p\) has the form \(2\cdot(1/2)=1\) modulo \(1\).
+All invariants vanish, so the rational endomorphism algebra over
+\(\mathbb F_p\) is \(C\), and \(B\) has dimension \(e\).
+By Waterhouse \cite[Theorem~6.1]{waterhouse}, choose \(B\) with
+endomorphism ring \(\mathcal O_C\).
+The number \(\eta=(\pi-1)/\ell^N\) belongs to that ring, since
+it satisfies the monic equation
+\[
+ \eta^2+\frac{2-\tau}{\ell^N}\eta
+       +\frac{1-\tau+p}{\ell^{2N}}=0
+\]
+over \(\mathcal O_F\). Therefore Frobenius acts trivially on
+\(B[\ell^N]\).
+
+On \(A=B^2\), let \(F\) act diagonally and let \(i\) act by
+the matrix with rows \((0,-1)\) and \((1,0)\).
+On \(B\), Rosati sends \(\pi\) to \(p/\pi\), so it fixes
+\(F=\Q(\pi+p/\pi)\). The product Rosati involution fixes the
+diagonal action and sends the rotation matrix to its negative.
+Over \(\Q_p\), the height-two \(F\)-components of \(B\)
+follow from the relative quadratic Frobenius polynomial.
+The action of \(i\) splits at both places above each prime of \(F\).
+Each of the two eigenspaces inherits the height-two component
+of \(B\) at that prime, with slope sum one. Thus exactly
+the selected \(r\) pairs are nonordinary, and all \(\ell^N\)-torsion
+is rational as claimed.
+\end{proof}
+
+The primes in the proposition exist by Chebotarev. Taking
+\(r=\lfloor(e-1)/2\rfloor\) realizes the bound for every all-balanced
+signature over prime fields. The examples vary with \(p\).
+A conclusion about the density of the residual pattern for a fixed
+characteristic-zero variety requires global input beyond these
+split Frobenius and torsion data.

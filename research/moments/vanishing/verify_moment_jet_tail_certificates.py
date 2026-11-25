@@ -30,7 +30,7 @@ DIRECTORY = Path(__file__).resolve().parent
 ROOT = DIRECTORY.parents[2]
 FIXTURES = DIRECTORY / "moment_jet_tail_certificate_examples.json"
 PROOF = DIRECTORY / "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md"
-CONTEXT = ROOT / "unpublished/cubic-sphere-image/finite.tex"
+CONTEXT = ROOT / "results/cubic-sphere-image/finite.tex"
 
 
 def literal_instances():

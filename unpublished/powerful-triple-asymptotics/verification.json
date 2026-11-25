@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-25",
+  "proof_status": "Written conditional proof of the full expansion and quotient law, and written unconditional proof in the large-deficiency sector. The signed monomial estimates behind the small-budget endpoint inputs are outside the proof of this manuscript.",
+  "internal_checks": [
+    "Checked the local valuation ranges with and without deficiency, the exact common-divisor factorization, and the Euler-product majorant in Section 2.",
+    "Checked the coprimality dependence, hyperbola inclusion-exclusion, cancellation by interpolation, Dirichlet convolution, coefficient signs and extension down to heights below one in Section 3.",
+    "Checked both deficiency ranges, summability before the sum over primitive quotients, the dyadic cutoff error in the unconditional sector, and the uniform tail after normalization in Section 4.",
+    "Checked the fixed-cutoff height limits in Proposition 5.2 before varying the orders, and the point-mass contradiction through the valuation cutoff, weak limit and first-moment inequality.",
+    "Compared the common-divisor proof to commit 1182d51. The comparable-order expansion and summability sections agree with the retained research proof.",
+    "Built with latexmk 4.83 and pdfTeX 1.40.25 on Ubuntu 24.04 under WSL. The final LaTeX log had no warnings, overfull boxes or missing references. Rendered and visually inspected all seven pages."
+  ],
+  "source_checks": [
+    {
+      "citation": "Browning and Verzobio, Sums of three powerful numbers, arXiv:2608.24512v1",
+      "locator": "Introduction, equation (1.1) and Theorem 1.1",
+      "scope": "Exact coprimality requirement and fixed-offset upper bound, including its diagonal exponent. The result counts primitive triples."
+    },
+    {
+      "citation": "Cohen and Davis, Elementary estimates for certain types of integers, Acta Sci. Math. (Szeged), 31 (1970), 363–371",
+      "locator": "Theorem 4 and Section 7",
+      "scope": "Two-term single-integer expansion. The paper proves its own uniform version with a coprimality restriction."
+    },
+    {
+      "citation": "Bernert, Browning, Lichtman and Teräväinen, Bounds on the exceptional set in the abc conjecture, arXiv:2410.12234v2",
+      "locator": "Propositions 1.1 and 2.1, and Lemma 2.2",
+      "scope": "Two-smallest-radicals comparison and the prime-valuation decomposition. The decomposition gives fixed cutoffs for each fixed exponent loss and leaves valuations below its compression index at their own coordinates."
+    }
+  ],
+  "edition_sha256": {
+    "main.tex": "9bdcbb6634c70035f8cd673c7074af6901efe05a0c294c729a675011372d1e08",
+    "paper.pdf": "593345ec0a52d1f50b93221f8a3a629cca280158cfadf0042874fc473e894cda"
+  },
+  "pdf_only_internal_review": {
+    "reader": "Isolated AI reader in a fresh conversation context",
+    "supplied_context": "Only the compiled PDF and five reader-review questions. The reader had no research discussion or supporting source.",
+    "reviewed_pdf_sha256": "affd92383b09a591135aff42dd6022ea234ce52efb38533e692c2953740a9aa2",
+    "findings": {
+      "contribution": "The conditional absolutely summable expansion and quotient law, with the unconditional large-deficiency expansion.",
+      "mechanism": "The common divisor has a valuation-restoring part and a coprime M-full part. The first supplies the summability penalty and the second supplies the asymptotic powers and zeta signs.",
+      "hard_step": "Lemma 3.1, in particular the interpolation cancellation of the all-small box, and the weighted tail in Section 4, which takes the small-deficiency quotient estimate as an input.",
+      "limits": "Comparable fixed orders, explicit truncation constraints, and an assumed small-deficiency quotient estimate for the full expansion.",
+      "obstacles": "The PDF-only scope excludes checking literature priority and imported source proofs. The reader found no substantive inconsistency and asked that the two Section 5 inputs be identified as hypotheses on first mention and that the finite-height probability be defined at sufficiently large heights."
+    },
+    "revisions": "Clarified both points and used iterated box limits matching the endpoint input. The reader rechecked PDF c66eb369636e405d3a353cc940623c260f572b9896b7995f003a66a99d39a29b, confirmed the initial fixes, and asked for the variation of the cutoff between fixed-cutoff profiles to be stated explicitly. The final edition makes that variation and the total coefficient exponent explicit. Rebuilt and reinspected the affected pages."
+  },
+  "independent_pdf_only_review": "unperformed",
+  "external_specialist_review": "unperformed",
+  "formal_verification": "unperformed",
+  "priority_review": "Scoped comparison with primary sources cited in the article. Historical priority remains unverified.",
+  "published": false
+}

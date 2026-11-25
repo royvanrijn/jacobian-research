@@ -426,10 +426,14 @@ class DependencyGraph:
 
         This is a route explanation, not a claim that all listed blockers are
         jointly necessary. One repaired alternative may suffice.
+        A falsified premise terminates its route. A falsified target has no
+        unresolved proof obligations.
         """
         _require(node_id in self.nodes, f"unknown graph node: {node_id}")
         if evaluation is None:
             return self.evaluate()[node_id]["blockers"]
+        if evaluation[node_id]["state"] == "falsified":
+            return []
         found = []
 
         def visit(current: str, path: list[str], ancestors: frozenset[str] = frozenset()) -> None:
@@ -445,9 +449,10 @@ class DependencyGraph:
                     found.append({"type": "assumption", "id": assumption, "state": "open", "path": path})
                 return
             routes = record["routes"]
-            if not routes:
+            if record["state"] == "falsified" or not routes:
                 found.append({"type": "node", "id": current, "state": record["state"], "path": path,
                               "stale_sources": record["stale_sources"]})
+                return
             for route in routes:
                 route_path = [*path, route["id"]]
                 if route["state"] in {"unverified", "refuted"} or route["stale_sources"]:

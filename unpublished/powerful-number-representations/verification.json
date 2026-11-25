@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-24",
-  "proof_status": "complete written arguments with explicit external theorem inputs",
+  "date": "2026-11-25",
+  "proof_status": "Written determinant and graph proofs with explicit external theorem inputs. The strict endpoint transfer and the least-multiplier equivalence are proved in the manuscript under the stated box hypotheses.",
   "internal_checks": [
     "Checked canonical uniqueness, gcd normalization, signed common-neighbor recovery, rational reconstruction and the binary dyadic bounds.",
     "Checked signed fixed-edge counting for real and imaginary quadratic fields, split and irreducible binomials, and the irreducibility of the mixed affine cubics.",
@@ -37,7 +37,7 @@
     "Checked the determinant divisibility including error rows, the Newton precision after selecting the minimizing subset, the modulus floors and the dyadic transfer without additional height slack.",
     "Replayed the exact inequalities for the proposed 1/320, the improved c-based 1/300 and the adaptive-target 1/153 parameter choices. Verified the initial-row optimization and the finite prime-power height ceiling calculation.",
     "Checked the three dyadic cases when the target is chosen by residual-factor size, including the extra saving from a small exceptional target. Ran 3396 exact signed adaptive-target compression tests.",
-    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all twenty-two PDF pages."
+    "Built the November 24 edition and rendered and visually inspected its twenty-two pages."
   ],
   "numerical_exponents": [
     {
@@ -80,8 +80,8 @@
     }
   ],
   "edition_sha256": {
-    "main.tex": "f34ffcf83dc4e1337b18efcc0d087c583a23001eb5fce20c65c66f3d91f1ed6c",
-    "paper.pdf": "02bf0cee8bdf42583a961a1aad486217c2cc60053c0f72c1e2a344e030f426d4"
+    "main.tex": "70b61cc6c2225288e71a262333dedf4bcbf1575c26c51ac1a9f0c6dcb8e17f8f",
+    "paper.pdf": "1dbae5a1f70ce3fd69b760a129caca227d730224a387a9b37535d4cd0436d580"
   },
   "independent_pdf_only_review": "unperformed",
   "external_specialist_review": "unperformed",
@@ -352,5 +352,56 @@
       }
     ],
     "diagnostic_signed_target_cases": 3396
+  },
+  "current_edition_checks": {
+    "date": "2026-11-25",
+    "proof_review": [
+      "Checked the small-budget contradiction in Theorem 19, including the limits at fixed budget and truncation before the budget tends to zero, preservation of minimum valuation in the Bernert–Browning–Lichtman–Teräväinen factorization, total-mass saturation and moment rigidity.",
+      "Checked the capped-radical consequence of endpoint balance and both implications of Theorem 20. The reverse direction uses the capped-letter saving. The forward implication from the abc saving uses only the exact target multiplier, injectivity and the height bounds."
+    ],
+    "endpoint_review_scope": {
+      "required_inputs": [
+        "ABC_OMITTED_COORDINATE_GRAPH.md, A limiting small-budget coefficient of 1/3",
+        "ABC_WIDE_COFACTOR_CONGRUENCES.md, Necessary conditions at normalized exponent 1/3, including Nonatomic mass in the scaled degrees"
+      ],
+      "limits": "The full signed-congruence and real-strip proof chain is outside the manuscript. Its end-to-end specialist review remains open."
+    },
+    "primary_source_checks": [
+      {
+        "citation": "Browning and Verzobio, Sums of three powerful numbers, arXiv:2608.24512v1",
+        "locator": "Definition (1.1), trivial bound (1.3), Theorems 1.1 and 1.2",
+        "scope": "Identical primitive ordered positive count and fixed-offset hypotheses; the leading exponent is 2/r, with a saving from 1/p+1/q of 1/r^2+O_(u,v)(r^(-5/2)). Theorem 1.2 provides the old coefficient-uniform surface input."
+      },
+      {
+        "citation": "Bernert, Browning, Lichtman and Teräväinen, Bounds on the exceptional set in the abc conjecture, arXiv:2410.12234v2",
+        "locator": "Proposition 2.1 and Lemma 2.2 with proof",
+        "scope": "Anatomic box and radical comparison only. Inspected the quotient-remainder construction to verify the fullness threshold on retained indices."
+      }
+    ],
+    "internal_replays_from_repository_root": [
+      "python3 research/arithmetic/verify_powerful_adaptive_determinant.py",
+      "python3 research/arithmetic/verify_powerful_fixed_offset_constraints.py verify research/arithmetic/powerful_even_order_divisible_by_six_certificate.json.gz",
+      "python3 research/arithmetic/verify_powerful_fixed_offset_constraints.py verify research/arithmetic/powerful_two_power_even_certificate.json.gz",
+      "python3 research/arithmetic/verify_powerful_fixed_offset_constraints.py verify research/arithmetic/powerful_two_power_odd_certificate.json.gz"
+    ],
+    "replay_outcome": "All four commands passed. The adaptive parameters include the three rational saving controls and prime-power ceiling 7/2080. This checks the stated finite inequalities and certificates.",
+    "render_review": {
+      "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+      "toolchain": "Ubuntu 24.04 under WSL, Latexmk 4.83, pdfTeX 1.40.25 (TeX Live 2023/Debian), Poppler",
+      "outcome": "Built 25 pages without unresolved citations or references or box warnings. Rendered all pages and visually inspected the first page, revised sections, references and whole-document page layout."
+    }
+  },
+  "pdf_only_internal_review": {
+    "reader": "Isolated AI reader in a fresh conversation context",
+    "supplied_context": "Only the compiled 25-page PDF and five review questions.",
+    "reviewed_pdf_sha256": "a7700bdd236c36f0a58c3748797e98f45f92464a42e5807d9d72dd088b436309",
+    "findings": {
+      "contribution": "The adaptive determinant gives a fixed proportion saving for primitive triples. The separate strict endpoint saving and repair equivalence use explicit analytic box inputs.",
+      "mechanism": "The congruence determinant is forced both to vanish and, by a minimizing row selection and Newton differences, to be nonzero if a box contains too many pairs. The endpoint transfer instead contradicts the requisite nonatomic mass.",
+      "hard_step": "Lemma 18 in Section 9.4, followed by the residual-factor case split.",
+      "limits": "The endpoint hypotheses are taken as inputs, and the strict endpoint transfer supplies no numerical gap or threshold.",
+      "obstacles": "The abstract could mark the stronger bound as conditional more directly. Certificate-dependent coefficients lacked a route from the PDF to the verification files. The reader found no concrete contradiction."
+    },
+    "revisions": "Made the assumption explicit at the start of the abstract and added direct links to the rational certificates and both verification scripts. The five linked files at commit 1182d51 were compared byte-for-byte with the locally replayed files. Rebuilt the paper."
   }
 }

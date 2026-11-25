@@ -1,0 +1,116 @@
+\section{A proper-volume obstruction}\label{sec:proper-volume}
+
+The obstruction uses the fact that the original volume form extends
+regularly to a proper model over the line of phase values. The
+\(V\)-filtration records this regularity at the zero fiber. A nonzero
+polynomial period would force the same volume class to have a nonzero
+image in a module supported at zero, where its filtration degree is
+impossible.
+
+\begin{lemma}\label{lem:proper-volume}
+Let \(Y\) be a smooth irreducible complex algebraic variety of dimension
+\(n\), let \(f:Y\to\mathbb A^1_s\) be a proper nonconstant morphism, and
+let \(\omega\) be a regular algebraic \(n\)-form on \(Y\). For any compact
+closed \(n\)-cycle \(\gamma\) on \(Y(\mathbb C)\), the entire function
+\[
+ P_\gamma(\tau)=\int_\gamma e^{-\tau f}\omega
+\]
+cannot be a nonzero polynomial.
+\end{lemma}
+
+\begin{proof}
+Factor \(f=\pi\circ i_f\), with \(i_f:Y\hookrightarrow
+Y\times\mathbb A^1_s\) its graph and \(\pi\) the projection. Put
+\(\mathcal B_f=i_{f+}\mathcal O_Y\) and
+\(\mathcal M=\mathcal H^0(\pi_+\mathcal B_f)\), using left
+\(\mathcal D\)-modules. Use the decreasing Kashiwara--Malgrange
+filtration along \(s=0\), with
+\(\partial_s s-\alpha\) nilpotent on \(\operatorname{gr}_V^\alpha\).
+The graph generator \(e_f=\delta(s-f)\) belongs to
+\(V^{>0}\mathcal B_f\). This is the graph-generator consequence of
+strict negativity of the Bernstein--Sato roots
+\cite[Corollary~5.2]{kashiwara-b-functions}
+\cite[Corollary~5.15 and Example~5.19]{chen-dirks-mustata}.
+In particular at each point of the graph over zero the generator
+lies in \(V^\alpha\) for some rational \(\alpha>0\) locally.
+Quasi-compactness of the fiber gives a common positive index
+by taking the minimum over finitely many neighborhoods.
+Off \(s=0\) every filtration piece is the whole graph module, and
+off the graph there is nothing to check. Thus the top relative
+form \(\omega e_f\) represents a degree-zero class in the relative
+de Rham complex with coefficients in \(V^\alpha\mathcal B_f\).
+The direct-image theorem for a smooth projection
+\cite[Theorem~8.1]{chen-dirks-mustata} requires properness on the support
+of the module. Here the support is the graph and the restriction of
+\(\pi\) to it identifies with the proper map \(f\). The theorem therefore
+identifies the image of the filtered complex with the corresponding
+filtration piece of \(\mathcal M\). Consequently the class
+\(m=[\omega e_f]\) satisfies
+\[
+ m\in V^\alpha\mathcal M\quad\text{at }s=0,\qquad \alpha>0.
+\]
+This step applies to the actual volume class even if the zero fiber
+has a positive-dimensional critical locus.
+
+We next check that the period respects the relations on the Fourier
+transform of \(m\). Write \(M=\Gamma(\mathbb A^1_s,\mathcal M)\).
+The graph action \cite[Equation~(27)]{chen-dirks-mustata} identifies
+the graph module along \(Y\) with \(\mathcal O_Y[\partial_s]e_f\),
+with actions
+\[
+ \begin{split}
+ v(a\partial_s^j e_f)&=v(a)\partial_s^j e_f
+                     -a\,v(f)\partial_s^{j+1}e_f,\\
+ s(a\partial_s^j e_f)&=fa\partial_s^j e_f
+                     -j a\partial_s^{j-1}e_f
+ \end{split}
+\]
+for any local vector field \(v\) on \(Y\).
+The Fourier convention is \(\tau=\partial_s\) and
+\(\partial_\tau=-s\), which preserves the Weyl relation. Therefore
+\(\widehat M\) is represented by degree-\(n\) hypercohomology on \(Y\) of
+\[
+ \bigl(\Omega_Y^\bullet[\tau],\,d_Y-\tau\,df\wedge\bigr),
+ \qquad \partial_\tau\text{ acting by }\partial/\partial\tau-f.
+\]
+Indeed the relative de Rham complex of the projection uses the shift
+by \(n\), and global sections on the affine target are exact.
+One can compute this hypercohomology on a finite affine open cover of
+\(Y\), whose finite intersections are affine since \(Y\) is separated.
+This description uses the full polynomial parameter ring
+\(\mathbb C[\tau]\).
+
+At any \(\tau_0\in\mathbb C\), substituting \(\tau=\tau_0\)
+in the total \v{C}ech complex commutes with both differentials.
+After analytification, multiplying by \(e^{-\tau_0 f}\) turns the
+specialized twisted differential into the ordinary holomorphic de
+Rham differential. The affine intersections analytify to Stein
+spaces, so the resulting \v{C}ech complex computes holomorphic de
+Rham hypercohomology. Its class pairs with \(\gamma\) by analytic
+de Rham comparison. A \v{C}ech coboundary thus has zero period
+even when there is no global algebraic primitive. For a Weyl
+operator \(A\), the class \(A\widehat m\) is represented by a global
+polynomial family of top forms. Differentiating its exponential
+integral on the fixed compact cycle realizes \(\partial_\tau\)
+as \(\partial/\partial\tau-f\) on such a family. It follows that
+evaluation on \(\gamma\) sends \(A\widehat m\) to \(A P_\gamma\)
+and respects all relations on the cyclic submodule
+\(\widehat N=\mathbb C[\tau]\langle\partial_\tau\rangle\,\widehat m\).
+
+If \(P_\gamma\) were a nonzero polynomial, it would generate the
+polynomial module \(\mathbb C[\tau]\) under Weyl operators, since
+differentiation first produces a nonzero constant. The period
+evaluation would give a surjection
+\(\widehat N\to\mathbb C[\tau]\) taking \(\widehat m\) to \(P_\gamma\).
+Inverse Fourier transform sends the polynomial module
+\(D_\tau/D_\tau\partial_\tau\) to the point module
+\(\delta_0=D_s/D_s s\), where \(D_u=\mathbb C[u]\langle\partial_u\rangle\).
+It would give a quotient of a submodule of \(M\) sending \(m\)
+nontrivially to \(\delta_0\). The induced filtration on submodules
+and strictness for morphisms
+\cite[Proposition~3.19(ii) and Corollary~3.20]{chen-dirks-mustata}
+put the image of \(m\) in \(V^\alpha\delta_0\). For \(\alpha>0\)
+the point module has zero such piece
+\cite[Example~3.18]{chen-dirks-mustata}.
+The contradiction proves the lemma.
+\end{proof}

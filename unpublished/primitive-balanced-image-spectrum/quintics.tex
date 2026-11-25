@@ -1,0 +1,296 @@
+\section{Safety in least sphere degree five}\label{sec:quintic}
+
+Write a sphere phase in the normal monomials \(x^i t^j\) with \(i\ge0\)
+and \(y^i t^j\) with \(i>0\). Its leading symbol of degree \(d\), restricted
+to the cone \(t^2+2xy=0\), gives a binary form \(h_d(u,v)\) of degree \(2d\)
+by \((x,y,t)=(u^2,-v^2/2,uv)\). This identification sends the degree-\(d\)
+normal monomials to distinct binary monomials. The \(\mathrm{SL}_2\) action
+on \((u,v)\) induces linear isometries of the sphere, by congruence on
+\(\left(\begin{smallmatrix}x&t\\t&-2y\end{smallmatrix}\right)\).
+They preserve \(\Lambda\), since the sphere trace in each even homogeneous
+degree is proportional to the Gaussian trace with covariance inverse to
+\(t^2+2xy\), and the odd-degree traces are zero. This proportionality
+follows by integrating each normal monomial. In particular we may move a
+geometric root of \(h_d\) to either coordinate point after scalar extension.
+
+\subsection{The leading root threshold}\label{sec:leading-threshold}
+
+Suppose every root of \(h_d\) has multiplicity less than \(d\). Embed the
+finitely generated coefficient field in \(\mathbb C\). Compactify the sphere
+by the smooth projective quadric with boundary conic \(D\). Its affine
+residue volume \(\omega\) has divisor \(-2D\) by adjunction. In local
+coordinates \((u,z)\) with \(D=\{u=0\}\), write the phase as \(F/u^d\).
+At a boundary root of multiplicity \(r>0\), Weierstrass preparation writes
+\(F\) as a unit times a monic degree-\(r\) polynomial in \(z\). For fixed
+\(u\), the set \(|F|\le\delta\) lies in the union of \(r\) planar disks of
+radius \(O(\delta^{1/r})\). Thus on \(|f|\le M\) the squared volume density
+has local integral bounded by a constant times
+\[
+ \int_{|u|<\epsilon}|u|^{-4+2d/r}\,d^2u,
+\]
+which is finite since \(r<d\). Away from the roots, the region \(|f|\le M\)
+stays away from \(D\).
+
+Resolve the pencil and remove its fibre over infinity. On the resulting
+smooth surface \(Y\), \(f:Y\to\mathbb A^1\) is proper. The pulled-back
+volume form is algebraic and holomorphic on \(Y\), since a divisorial pole
+would give an infinite squared integral in a bounded-\(f\) chart.
+Take the compact cycle \(\Gamma=\{y=\overline x,\ t\in\mathbb R,\
+2|x|^2+t^2=1\}\), which lies in the original affine chart. For
+\(-1<t<1\), write \(x=\sqrt{(1-t^2)/2}\,e^{i\theta}\). In these coordinates
+the residue form is a nonzero constant multiple of \(d\theta\wedge dt\),
+using its expression \(\pm dx\wedge dt/(2x)\) in the chart \(x\ne0\).
+Consequently \(\int_\Gamma\omega\ne0\), and integrating \(f^m\omega\)
+against \(\Gamma\) gives \((\int_\Gamma\omega)\Lambda(f^m)\).
+Since the exponential series converges uniformly on the compact cycle on
+bounded \(\tau\)-sets, purity would give the nonzero constant period
+\(\int_\Gamma e^{-\tau f}\omega=\int_\Gamma\omega\).
+Lemma~\ref{lem:proper-volume}, proved below, excludes this. Thus a pure
+phase has a leading root of multiplicity at least \(d\).
+
+Here is the prime-isolation rule used in the remaining cases. Work over
+a number field at a good odd prime \(p\) where all coefficients are
+integral. If the angular constant term of \(h^m\) is a polynomial
+\(C_m(t)\) of degree at most \(p-1\), then
+\begin{equation}\label{eq:prime-isolation}
+                 p\Lambda(h^m)\equiv [t^{p-1}]C_m(t)\pmod{\mathfrak p}.
+\end{equation}
+Indeed the integral kills odd heights and divides even-height coefficients
+by \(j+1\). The only denominator divisible by \(p\) in the given range is
+the denominator at the even height \(p-1\).
+
+An exact multiplicity \(d\) is also impossible under purity. Move that
+root to \(u=0\). In the literal Laurent substitution \(y=(1-t^2)/(2x)\),
+every monomial \(x^i t^j\) has \(i+j\le d\), and the part on equality is
+\(t^d L(x/t)\) for \(L(z)=z^{-d}h_d(z,1)\). With the chosen root, \(L\) is
+a polynomial with nonzero constant. At a good prime \(p=1\bmod d\) put
+\(m=(p-1)/d\). The coefficient at height \(p-1\) is
+\(\operatorname{CT}L^m=L(0)^m\), a unit, so \eqref{eq:prime-isolation}
+applies. This argument may be made after
+one number-field specialization preserving the leading identity and its
+specified nonzero constants. Indeed a finitely generated coefficient
+algebra over \(\mathbb Q\), localized to keep these constants nonzero, has a
+maximal-ideal quotient that is a number field, and all rational moment
+identities specialize. We use the same specialization argument in the
+prime tests below, keeping the required distinct roots and support
+coefficients nonzero. Primes in the progression \(1\) modulo a positive
+integer are infinite, for example by the elementary cyclotomic argument.
+
+\subsection{Supporting faces for multiplicity at least six}\label{sec:face-support}
+
+Let \(d=5\) and move a root of multiplicity at least six to \(v=0\).
+All degree-five normal terms now have negative angular exponent, since
+their \(v\)-exponents are \(5-i\) for angular exponent \(i\). If the phase
+has no positive angular terms, purity forces its zero-angle core to
+vanish by the interval moment theorem \cite[Theorem 2.1]{muger-tuset}.
+The negative support then gives eventual mixed vanishing for every fixed
+marker. Otherwise take the upper supporting line \(j+\rho i=H\) of the
+literal Laurent support over angular exponent zero. A convex combination
+of nodes reaching angle zero has height less than five, since all
+equality nodes of \(i+j\le5\) have negative angle. This gives \(H<5\).
+For any degree-five node \(j+\rho i=5+(\rho-1)i\le H\) with \(i<0\),
+so \(\rho>1\). In negative angle \(-b\), only the highest Laurent term
+of each \(y^b t^r\) can lie on the upper boundary. Thus the possible face
+nodes satisfy
+\[
+ -5\le i\le4,\qquad \max(0,-2i)\le j\le
+ \begin{cases}5-i,&i<0,\\4-i,&i\ge0.\end{cases}
+\]
+A face with no opposite signs must contain a core node at angle zero.
+Its height \(H\) is a positive integer, since the support contains nodes
+of both signs and all negative-angle nodes have positive height.
+At \(m=(p-1)/H\) for good primes \(p\equiv1\bmod H\), the core coefficient
+to the \(m\)th power occupies the top angular-constant slot. Equation
+\eqref{eq:prime-isolation} excludes it. For a two-node crossing face, write its
+angles \(-b,a\) and heights \(j_-,j_+\). Set \(M=aj_-+bj_+\) and choose
+a good prime \(p\equiv1\bmod M\), writing \(k=(p-1)/M\).
+At exponent \(m=(a+b)k\), angular cancellation uses \(ak\) negative and
+\(bk\) positive terms, giving height \(p-1\). The coefficient is the
+product of \(\binom{(a+b)k}{ak}\) and a unit monomial in the two
+coefficients. The factorials have arguments below \(p\) because
+\(M\ge2ab\ge a+b\). Equation \eqref{eq:prime-isolation} excludes this case.
+
+The remaining lines are listed below. To obtain the list, take the line
+through every pair of allowed nodes of opposite signs, keep those with
+\(\rho>1\), \(H<5\), at least one degree-five node on or below the line,
+and at least three equality nodes. An actual crossing face occupies both
+signs and at least three listed nodes.
+\[
+\begin{array}{c|c|l@{\qquad}c|c|l}
+\rho&H&i&\rho&H&i\\ \hline
+5/3&5/3&-5,-2,1&2&2&-3,-2,-1,0,1\\
+3/2&5/2&-5,-3,-1,1&3/2&3&-4,-2,0,2\\
+2&3&-2,-1,0,1&3&3&-1,0,1\\
+4/3&10/3&-5,-2,1&3/2&7/2&-3,-1,1\\
+4/3&11/3&-4,-1,2&5/4&15/4&-5,-1,3\\
+4/3&4&-3,0,3&3/2&4&-2,0,2\\
+2&4&-1,0,1,2&3/2&9/2&-1,1,3
+\end{array}
+\]
+
+At \(\rho=H=2\), normal terms have weight at most two for weights
+\((x,y,t)=(2,0,1)\). After exchanging \(x,y\), the literal Laurent height
+is at most two. Regularity then allows at most a simple negative angular
+pole. Section~\ref{sec:quadratic-height} proves safety for every such pure
+phase of least sphere degree five.
+
+\subsection{The cyclic-cover obstruction on a face}\label{sec:cyclic-face}
+
+For a noninteger height \(H=n/q\) in lowest terms, the angular Laurent
+polynomial of the face is \(z^{-b}P(z^q)\), where \(-b,a\) are its occupied
+extreme angles. The table gives the same \(q\) as the denominator of \(\rho\).
+In an integer-height row, first divide the angles by their common step if
+the displayed angles are all multiples of two or three, and then put
+\(q=1\) and \(n=H\). Angular compression leaves constant terms unchanged.
+In these coordinates \(\deg P=(a+b)/q\), because both extreme terms
+are occupied. For a prime \(p=nk+1\) and moment order \(qk\), the constant angular term has
+height at most \(qkH=p-1\). A product contributing at that height uses
+only equality nodes of the supporting line. The only interval coefficient
+with denominator divisible by \(p\) is the one of height \(p-1\). Thus
+multiplying the moment by \(p\) and reducing gives
+\[
+ [z^{bk}]P(z)^{qk}=[z^{p-1}]\bigl(z^{n-b}P(z)^q\bigr)^k.
+\tag{*}\label{eq:face-scalar}
+\]
+The raw degree-\(2n\) branch form in the second expression has endpoint
+exponents \(n-b,n-a\), and each root of \(P\) has its multiplicity multiplied
+by \(q\). When all nonzero exponents are less than \(n\), the normalized
+cyclic cover \(w^n=z^{n-b}P(z)^q\) detects \eqref{eq:face-scalar} in its
+character-one \(H^1(O)\) line. In fact the character-one sheaf is \(O(-2)\)
+and its \v{C}ech generator \(w/z\) maps to
+\(wz^{-p}(z^{n-b}P(z)^q)^k\) under Frobenius. Projection to the line gives
+exactly the selected coefficient. More generally the character-\(i\)
+dimension is \(-1+\sum_j\{i a_j/n\}\) for branch exponents \(a_j\), by
+dividing the local Kummer generator \(w^i\) by the branch coordinate to
+power \(\lfloor i a_j/n\rfloor\). All the covers used here are connected,
+as the branch exponents have greatest common divisor one with \(n\).
+The rational idempotents of the cyclic deck group give Jacobian factors
+up to isogeny. The factor for a divisor \(s>1\) of \(n\) has action by
+\(\mathbb Q(\zeta_s)\), and its dimension is the sum of the coherent
+character dimensions for characters of order \(s\). Complex conjugation
+interchanges the coherent and holomorphic-one-form characters, preserving
+the unordered multiplicities of each conjugate pair.
+Ordinary reduction makes Frobenius invertible on coherent \(H^1\).
+It suffices for the primitive factor to be ordinary because the
+character-one line belongs to that factor. The nonzero scalar then
+excludes the face by \eqref{eq:prime-isolation} and \eqref{eq:face-scalar}.
+Work away from the finitely many primes of bad reduction for the curve,
+cover, and deck action. Adjoin the required roots of unity and take
+ordinary primes of absolute degree one, so they lie in the required
+prime progression.
+
+For heights three and four the compressed angular sets, up to sign, are
+subsets of \(\{-2,-1,0,1\}\) or \(\{-1,0,1\}\). The branch exponents
+are displayed below. The first two cases of the cubic partition are
+all distinct and one double root. The third is a triple root.
+\[
+\begin{array}{c|c|c|c}
+H & \deg P & \text{distinct roots} & \text{coincident roots}\\ \hline
+3 & 2 &(2,1,1,2)&(2,2,2)\\
+3 & 3 &(1,1,1,1,2)&(1,2,1,2),\ (1,3,2)\\
+4 & 2 &(3,1,1,3)&(3,2,3)\\
+4 & 3 &(2,1,1,1,3)&(2,2,1,3),\ (2,3,3)
+\end{array}
+\]
+At height three the distinct quadratic and cubic root configurations
+give genus two and three, respectively. In genus three the Jacobian has imaginary quadratic action
+by \(\mathbb Q(\zeta_3)\). At height four the distinct-root quadratic
+configuration has genus three, with an elliptic order-two factor and a
+surface with order-four action. The distinct-root cubic configuration
+has genus four, with an elliptic order-two factor and an imaginary
+quadratic threefold. All repeated configurations have genus at most two,
+except the triple cubic root at height three whose raw exponent equals
+three. There \eqref{eq:face-scalar} is a unit times \(\binom{3k}{2k}\).
+The genus at most two cases have ordinary primes of density one after
+finite extension \cite{sawin}. For the genus-four case, first pass to a
+common extension containing the roots of unity over which the elliptic
+factor has density-one ordinarity. Apply Fit\'e's theorem over that same
+field to the threefold with imaginary quadratic multiplication.
+Its positive-density ordinary set intersects both the elliptic ordinary
+set and the absolute degree-one primes in a set of positive density.
+The same theorem gives the required primes for the genus-three case
+\cite[Theorem~1]{fite}.
+
+The noninteger heights with \(n\in\{7,9,10,11,15\}\) have quadratic \(P\).
+For distinct roots the primitive signatures in increasing character order
+are as follows.
+\[
+\begin{array}{c|c|c}
+n&\text{branch exponents}&\text{primitive signature}\\ \hline
+7 &(4,2,2,6)&(1,1,2,0,1,1)\\
+9 &(8,2,2,6)&(1,1,2,0,1,1)\\
+10&(5,3,3,9)&(1,2,0,1)\\
+11&(7,3,3,9)&(1,1,2,0,0,2,2,0,1,1)\\
+15&(10,4,4,12)&(1,1,0,2,0,2,1,1)
+\end{array}
+\]
+In each row the primitive factor has rank two over \(\mathbb Q(\zeta_n)\)
+and at most two conjugate pairs of multiplicities \((1,1)\), so
+Theorem~\ref{lem:rank-two} applies. The deck action preserves the
+Jacobian polarization, so its Rosati involution inverts the deck generator
+and induces complex conjugation on \(\mathbb Q(\zeta_n)\). For \(n=9\)
+there is also an elliptic factor of order three. For \(n=10\) the
+additional factors have orders two and five, with dimensions one and
+two, respectively. For \(n=15\) they have orders three and five, again
+with dimensions one and two. There are no lower-order factors for
+\(n=7,11\). If the roots coincide, merge the two equal interior
+exponents. The character formula gives dimension zero at every lower
+order in all five cases. The primitive factor has rank one over its
+cyclotomic field. After
+adjoining the field, its crystalline components at good degree-one primes
+have height one and are ordinary. This proves exclusion in all five
+rows, including the repeated-root cases.
+
+For example, the height \(7/2\) face has angles \(-3,-1,1\).
+Writing it as \(z^{-3}P(z^2)\), at \(p=7k+1\) the moment of order \(2k\)
+detects \([z^{3k}]P(z)^{2k}\). The associated cover is
+\(w^7=z^4P(z)^2\). When \(P\) has distinct roots, the Jacobian is a
+sixfold with rank-two \(\mathbb Q(\zeta_7)\)-action. Its character pairs
+\((1,6)\) and \((2,5)\) are balanced, while \((3,4)\) has multiplicities
+\((2,0)\). The two balanced pairs are precisely the situation in which
+the extra trace divisibility in Theorem~\ref{lem:rank-two} is used.
+
+\subsection{The order-five collisions}
+
+At height \(5/3\) a distinct-root quadratic gives exponents \((3,3,4)\) and
+genus two. At height \(5/2\) the positive extreme is \(1\) and the negative
+extreme is \(-3\) or \(-5\). In both cases distinct roots give exponents
+\((4,2,2,2)\) and a rank-two order-five Jacobian, so
+Theorem~\ref{lem:rank-two} applies. Merging two of the exponents \(2\)
+gives genus two. There remain only the raw exponents exceeding five:
+the repeated quadratic root at height \(5/3\) and the triple cubic root
+at height \(5/2\).
+
+For these cases use the sphere automorphism
+\[
+ \theta_{c,r}:(x,y,t)\longmapsto
+ \bigl(x-cy^r t-c^2y^{2r+1}/2,\ y,\ t+cy^{r+1}\bigr).
+\]
+It preserves \(\Lambda\): its locally nilpotent derivation in the
+Laurent \(y\)-chart is \(cy^{r+1}\partial_t\), and integration gives
+zero by the endpoint formula, since \(x=0\) at \(t=\pm1\). Thus it also
+preserves purity and safety by transporting markers.
+
+At height \(5/3\), the face is \(Bx+Ay^2t+Cy^5\), with
+\(A^2+2BC=0\) in the repeated-root case. It is the leading part of
+\(B\theta_{-A/B,2}(x)\) for weights \((5,1,3)\). The inverse shear gives
+\(Bx+P_4(y)+(a+b y)t\), where \(\deg P_4\le4\). The possible \(y^4\) term
+is excluded by the two-node test. The next possible tie is between \(y^3\)
+and \(yt\), since both have slope \(3/2\) from the node of \(Bx\). If both
+occur, a distinct-root face gives the order-three cover with exponents
+\((2,2,2)\), and a repeated-root face is the leading part of
+\(B\theta_{-b/B,1}(x)\) for weights \((3,1,2)\). Invert this shear as well.
+Any pure phase left has degree at most two.
+
+At height \(5/2\), the triple-root face is the leading part of
+\(B\theta_{c,1}(xt)\) for weights \((3,1,2)\). Indeed its face cubic is
+\(B(z+c/4)^3\), as follows by expanding the shear and replacing
+\(xy=(1-t^2)/2\). The inverse shear gives
+\(x(Bt+a)+P_4(y)+tP_2(y)+d t^2\) with \(\deg P_i\le i\). The slopes from
+\(Bxt\) to \(y^4,y^2t,y^3\) are \(7/5,4/3,5/4\), respectively, each strictly
+largest once the earlier terms have been removed. The two-node test
+removes all three. Again the remaining degree is at most two.
+
+Section~\ref{sec:quadratic-height} gives safety for every pure phase of
+degree at most two. This completes the unstable-leading branch and proves
+safety for every pure phase of least sphere degree five.
