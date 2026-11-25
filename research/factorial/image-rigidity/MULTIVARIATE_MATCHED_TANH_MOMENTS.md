@@ -82,3 +82,160 @@ respectively. Their formulas and geometric tails are derived in the
 The [fully shared terminal-nine proof](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md#matched-skew-parameter)
 uses \(p=2\) and \(\eta=1/206\) at \(n=8\), and uses the
 within-order bounds for each subsequent vector.
+
+## Exact tanh transport and moment errors at every order
+
+In the \(T\) coordinate the elementary transfer takes the form
+\[
+ T'=\frac{n^2T}{n^2-1+(1-2a)T},\qquad
+ T'-T=\frac{T(1+(2a-1)T)}{n^2-1+(1-2a)T}>0.
+\]
+In particular every unsigned \(V_p\) strictly increases for a nonempty
+profile. The midpoint comparison also has a version with one higher
+moment on the error side. If \(T_i\le T_*\) for all factors, then
+\[
+ \left|M_p'-R^pM_p\right|
+       \le \frac{p n^{2p}}{(n^2-1-T_*)^{p+1}}\,V_{p+1}.
+ \tag{4}
+\]
+Write \(T'=RT(1-\xi)^{-1}\) with
+\(\xi=(2a-1)T/(n^2-1)\). The mean value bound on
+\((1-\xi)^{-p}\) is
+\(p|\xi|(1-T_* /(n^2-1))^{-p-1}\) for its deviation from one.
+Multiply by \(R^pT^p\), use \(|2a-1|\le1\), and sum.
+For fixed \(p\), (4) retains an \(n^{-2}\) factor and gains one
+power of \(T_i\) in the error.
+
+For fully shared ordinary rows put \(S=\sum_i d_i^2/(\ell_i+d_i)\).
+Since \(\ell_i\ge1\), the row curvature is at least
+\((d_i/\ell_i)^2/(1+d_i/\ell_i)\ge d_i/\ell_i-1\).
+Each of the \(d_i\) factors of this row has
+\(T_{i,h}\le d_i/(2\ell_i+d_i)\) at either order. Thus one
+can use \(T_*=(S+1)/(S+3)\) in (4) and
+\(V_{p+1}\le T_*^p S\), because
+\(\sum_h T_{i,h}\le d_i^2/(2\ell_i+d_i)\) on each row.
+
+Signed skew can reverse across an adjacent pair at arbitrarily
+small total curvature. Fix \(n\ge2\), put \(K=4n+3\), choose an
+odd integer \(A\ge3\) and let \(B=KA+4\). Use one increasing
+unit row with smaller exponent \((A-1)/2\) and \(K^2\)
+decreasing unit rows with smaller exponent \((B-1)/2\).
+At order \(j\) the respective factors are
+\(T_A=(j-1)/(jA+1)\) and \(T_B=(j-1)/(jB+1)\). Hence
+\[
+ \frac{T_A}{T_B}-K=\frac{4j+1-K}{jA+1},
+\]
+and \(T_A^2-K^2T_B^2\) is negative at \(j=n\) and positive
+at \(j=n+1\). The total curvature tends to zero as \(A\to\infty\).
+Any proof using the signed second moment must allow this reversal.
+
+## A failure of independent errors in the near-flat angular comparison
+
+An all-order extension of the terminal-nine grouped model needs to
+carry cancellations through the Cayley transform. In fact the
+quadratic exponential model with independent coefficient errors admits
+false shared roots at every fixed even lower order \(n=2m\ge28\),
+even with its matched moments fixed at exact ordinary values.
+
+Take the two mirrored unit-row pairs
+\((\ell,\ell+1),(\ell+1,\ell)\) and
+\((2\ell,2\ell+1),(2\ell+1,2\ell)\), and let \(\ell\to\infty\).
+Denote the normalized polynomials by \(P_n,P_{n+1}\), and let
+\(\delta=1-u\) be the lower outer deficit. Each of the two different
+lower-order factors \(T\) is \(\Theta(\delta)\). At \(k=m-1,m,m+1\)
+the normalized log coefficient relative to its Gaussian reference is
+\(\sigma=\tau+E_{\rm true}\). Here \(\tau\) retains the cubic and
+quintic mean-defect terms and \(E_{\rm true}\) comprises the higher
+ones. In this mirrored profile the signed terms vanish. To check
+their signs, set \(b_j=2j/(n-1)-1\) and \(k_0=\min(k,n-k)\). The
+log coefficient correction from one mirrored pair is
+\[
+  2\sum_{j=0}^{k_0-1}
+      \left(\operatorname{artanh}(b_jT)-b_j\operatorname{artanh}T\right).
+\]
+This follows by pairing the normalized Gauss logarithms at \(j\)
+and \(n-1-j\). For \(j<k_0\) one has \(-1\le b_j<0\), so
+every summand has nonnegative coefficients in its odd-power series.
+At all three indices the cubic coefficient is strictly positive.
+Consequently \(0<\tau=\Theta(\delta^3)\) and \(E_{\rm true}\ge0\).
+
+With the retained quantities set to their exact values, use the
+quadratic exponential model
+\[
+ e^\sigma \in 1+\tau+\tfrac12\tau^2+[-W,W],\qquad
+ W=\frac{L^3}{6(1-L)}+E(1+L),\qquad
+ L\ge\tau+E,\quad E\ge E_{\rm true},\quad L<1 .
+\]
+These are the coefficientwise error intervals from the quadratic
+remainder and omitted logarithm estimate. Each such central
+interval has room of order at least \(\delta^{12}\) on both sides of
+the true coefficient. For the upper side use
+\[
+ e^\sigma-1-\tau-\tfrac12\tau^2
+   \le e^L-1-L-\tfrac12 L^2+E(1+L).
+\]
+The difference between \(L^3/[6(1-L)]\) and the exponential tail on
+the right is at least \(L^4/8\), by comparing the series termwise.
+For the lower side \(e^\sigma-1-\tau-\tau^2/2\ge0\), and
+\(W\ge L^3/6\). Multiplication by the positive Gaussian reference
+coefficients preserves these orders of slack.
+
+By the [linked Hermite limit](MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md#exact-cancellation-in-the-cayley-transform)
+the upper polynomial has a root \(t=e^{i\theta}\) with
+\(\pi-\theta=\Theta(\sqrt\delta)\) for all sufficiently large \(\ell\).
+Indeed a simple nonzero imaginary Hermite root gives a unique nearby
+Cayley root, and reciprocal conjugation of the mirrored profile
+fixes that root. In the same bounded Cayley scale the lower polynomial is
+\(O(\delta^{m})\). Its reciprocity makes \(G=(-t)^{-m}P_n(t)\) real.
+If \(G\le0\), add \(-G(-z)^m\) to \(P_n(z)\). If \(G>0\), add
+\[
+       \frac{G}{2+2\cos\theta}(-z)^{m-1}(1+z)^2.
+\]
+The first increment evaluated at \(t\), after division by \((-t)^m\),
+is \(-G\). The second has the same property because
+\((1+t)^2/(-t)=-(2+2\cos\theta)\).
+Both increments are nonnegative for negative real \(z\), and their
+coefficient modifications have size \(O(\delta^{m-1})=o(\delta^{12})\).
+They fit the three independent remainder intervals. The modifications
+leave the outer coefficients and all retained model parameters fixed.
+They also preserve coefficient positivity and binomial-normalized
+strict log convexity, since the true logarithmic second differences
+there are positive of order \(\delta\).
+The independent coefficient mean-defect caps allow this perturbation
+as well. For each of these three indices, the mean-defect series for one
+factor divided by \(\operatorname{artanh} T\) is \(c_k T^2+O(T^4)\)
+with \(c_k>0\). The actual defect per unit outer loss is a weighted
+average of these ratios at the two tanh values. The ratio of those
+values tends to two and the two weights tend to \(2/3,1/3\).
+Thus the actual defect is separated from the cap that uses the largest
+tanh value by \(\Theta(\delta^3)\). The perturbation is smaller than
+this margin. The modified pair has the exact common root \(t\).
+The construction concerns the enlarged error model and leaves the
+exact ordinary angular question open.
+
+## What a paired angular estimate must control
+
+An antisymmetric logarithmic perturbation of a reciprocal reference
+has zero first angular derivative at every simple unit-circle root.
+Indeed, let \(P_\epsilon(z)=\sum_k b_k e^{\epsilon h_k}z^k\)
+with \(b_{n-k}=b_k\) and \(h_{n-k}=-h_k\), all real. For real
+\(\epsilon\), the nearby branch from a simple unit root satisfies
+\(z(-\epsilon)=1/\overline{z(\epsilon)}\), by the coefficient
+reflection and uniqueness of the branch. Its argument is therefore
+even in \(\epsilon\). This puts the first signed-skew contribution
+to the angle at quadratic order. The symmetric mean defect also
+contributes to the angle. A uniform argument needs adjacent-order
+bounds on the two angular changes, including the transformed
+remainders, compared with the gaps of the linked reference pair.
+
+Grouping by degree before taking absolute bounds preserves the
+near-flat cancellation. With \(X=\sum x\) and \(\lambda=\sqrt X\),
+the order-\(X^r\) log coefficient is a polynomial in the index
+of degree at most \(r+1\) by the Gauss power sums. After exponentiation
+the order-\(X^p\) coefficient has degree at most \(2p\). In the
+order-\(j\) Cayley transform a factor of \(\lambda^h\) adds degree at
+most \(h\). The alternating binomial sum kills the entire group
+when \(2p+h<j\). At \(2p+h=j\) only the highest index degrees
+survive, giving the linked Hermite anchors from the quadratic log
+term. The moment bounds can be applied to these groups while
+preserving both facts.

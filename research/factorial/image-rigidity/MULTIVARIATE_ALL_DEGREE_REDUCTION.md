@@ -278,14 +278,22 @@ For reciprocals at or below that cap the
 covers \(u\le19/200\), and the
 [matched light-row proof](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md)
 and its [extension](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_EXTENSION.md)
-extend separation to \(u=12/25\). In the three stated later mean
-bands, the [retained bands](MULTIVARIATE_TERMINAL_NINE_RETAINED_BANDS.md)
-cover those light-row profiles above the smaller caps. The
+extend separation to \(u=12/25\). The
+[matched upper light bands](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_UPPER.md)
+continue the full \(1/8\) reciprocal cap through \(u=.55\), and
+continue lighter caps through \(u=.76\). The
+[retained bands](MULTIVARIATE_TERMINAL_NINE_RETAINED_BANDS.md)
+supply the complementary caps throughout \([.62,.76]\) and also
+cover the stated higher-reciprocal scope on \([.75,.85]\). The
 [upper bridge](MULTIVARIATE_TERMINAL_NINE_UPPER_BRIDGE.md)
-covers its three stated upper mean intervals without a reciprocal cap.
+covers \(22/25\le u\le19/20\) without a reciprocal cap.
+The [near-flat separation](MULTIVARIATE_TERMINAL_NINE_NEAR_FLAT.md)
+continues this coverage to every \(u\ge19/20\), using the exact Cayley
+cancellations in the transformed error terms.
 The [marked upper-row proof](MULTIVARIATE_TERMINAL_NINE_UPPER_MARKED_ROWS.md)
-covers the stated high outer-mean ranges when certain unit rows
-are present. The
+covers the stated high outer-mean ranges for rows \((3,4)\) and
+\((4,5)\). The [marked \((2,3)\) proof](MULTIVARIATE_TERMINAL_NINE_MARKED_TWO_THREE.md)
+covers that row in either orientation for \(u\ge19/25\). The
 [linked Hermite proof](MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md)
 gives an explicit small-curvature terminal-nine bound and a
 computable root-angle separation radius at every fixed terminal.

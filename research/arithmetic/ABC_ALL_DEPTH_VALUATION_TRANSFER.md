@@ -134,3 +134,31 @@ or \((3,3,9)\) and any coordinatewise multiples. The
 period argument above still applies, with the three orders
 included in the least common multiple.
 [Three-order prime-primary support bound](ABC_MISMATCHED_GRID_NUMBER_FIELDS.md#a-support-only-bound-from-a-single-prime-in-the-three-orders)
+
+
+## Grouped fourth moments and the boundary of the external rows
+
+The diagonal-surface estimate in Zhang can retain a
+sparse dictionary when several valuation layers are
+grouped into one high power. With \(\beta=3/\sqrt j\),
+the saving term for the group of layers divisible by
+\(j\) has coefficients
+\((4-(1-\beta)_+-k\beta)_+\) on layer \(kj\).
+Mixed \(L^2,L^4,L^4\) Hölder then gives a new permuted
+linear family. These individual-moment estimates still
+have the \(L/2\) diagonal floor.
+[Grouped valuation moments](ABC_GROUPED_VALUATION_FOURTH_MOMENTS.md)
+
+The audited Zhang, Li and Zeng arithmetic rows admit
+formal narrow prime-degree profiles at
+\(2\lambda/3-O(\lambda^{3/2}\sqrt{\log(1/\lambda)})\)
+even with moving selectors. This includes the new
+grouped-moment and prime-power rows. For these profiles
+the active prime degrees are numerous and microscopically
+small, but close enough together to fit a narrow interval
+grid. Actual boxes with those properties can instead be
+released by selecting a cheap full divisor from the small
+primes of the complementary letter. This comparison
+identifies an arithmetic saving outside the audited
+external row families.
+[Formal witness and the full-modulus separation](ABC_EXTERNAL_MOVING_ROWS_LIMIT.md)

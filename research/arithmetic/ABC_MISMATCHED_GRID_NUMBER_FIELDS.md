@@ -420,3 +420,22 @@ exponent-divisibility condition on the \(r\)-full letter.
 Under discriminant multiplicity the exponent becomes
 \(1/r+\varepsilon\). The height cut here is on complete
 values, as in the powerful-triple count.
+
+
+## Conductor limits beyond fixed valuation grids
+
+At a good tame specialization prime the inertia order
+is exactly the geometric branch order divided by its
+gcd with the actual valuation. This yields a weighted
+conductor calculation even for profiles that cannot
+be captured by three exact power orders. On balanced
+prime-degree profiles with microscopic masses,
+the good-prime root-discriminant charge is at least
+\((85/126-o(1))L\). For balanced profiles uniform
+over long intervals of consecutive degrees it is at
+least \((4/9-o(1))L\), with an exact weighted formula
+in the imbalanced case. These bounds hold uniformly
+in the branch orders at good primes. A moving twist
+that produces an unramified fibre point at such a
+prime must carry the same inertia order itself.
+[Tame conductor and the twisting cost](ABC_TAME_CONDUCTOR_PROFILES.md)

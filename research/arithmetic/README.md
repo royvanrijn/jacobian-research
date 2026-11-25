@@ -593,6 +593,17 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Compression of a signed grid in a valuation strip to two coordinates | Internal result | proved | [Source](ABC_SPARSE_VALUATION_GRID_COMPRESSION.md) |
 | A two-letter release saving for unrelated sparse valuation grids | Internal result | proved | [Source](ABC_SPARSE_VALUATION_GRID_COMPRESSION.md) |
 | Sparse diffuse valuation supports avoiding every fixed-rank small grid | Internal result | proved | [Source](ABC_SPARSE_VALUATION_GRID_COMPRESSION.md) |
+| Exact formal tame conductor frontier on consecutive valuation laws | Internal result | proved | [Source](ABC_TAME_CONDUCTOR_PROFILES.md) |
+| A twist that unramifies a fibre must carry its tame inertia | Internal result | proved | [Source](ABC_TAME_CONDUCTOR_PROFILES.md) |
+| Weighted independent entropy certifies an affordable common valuation grid | Internal result | proved | [Source](ABC_VALUATION_ENTROPY_GRID.md) |
+| Coupled difference entropy can hide two incompatible grids | Internal result | proved | [Source](ABC_VALUATION_ENTROPY_GRID.md) |
+| Small prime divisors release microscopic valuation bands | Internal result | proved | [Source](ABC_VALUATION_ENTROPY_GRID.md) |
+| Grouped valuation fourth moments with sparse root lifting | Internal result | proved | [Source](ABC_GROUPED_VALUATION_FOURTH_MOMENTS.md) |
+| Permuted mixed Hölder inequalities using grouped valuation moments | Internal result | proved | [Source](ABC_GROUPED_VALUATION_FOURTH_MOMENTS.md) |
+| A narrow prime-degree profile survives the audited moving external rows | Internal result | proved | [Source](ABC_EXTERNAL_MOVING_ROWS_LIMIT.md) |
+| The diagonal floor for same-target coefficient-box collisions | Internal result | proved | [Source](ABC_EXTERNAL_MOVING_ROWS_LIMIT.md) |
+| An anisotropic exact-output congruence bound by triangular descent | Internal result | proved | [Source](ABC_ANISOTROPIC_RATIONAL_CONGRUENCES.md) |
+| A growing-rank release bound on polynomially sparse signed grids | Internal result | proved | [Source](ABC_ANISOTROPIC_RATIONAL_CONGRUENCES.md) |
 
 **Computed obligations:** 108 unresolved; 18 resolved within their exact scope.
 

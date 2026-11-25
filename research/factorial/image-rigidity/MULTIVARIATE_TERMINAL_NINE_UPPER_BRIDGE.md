@@ -1,14 +1,10 @@
-# Shared terminal-nine angular separation in verified upper bands
+# Shared terminal-nine angular separation from outer mean .88 to .95
 
 Let two distinct ordinary exponent columns have only shared unequal
 rows. Let \(u\) be the order-eight outer geometric mean after positive
-endpoint normalization and removal of the binomial factors. If
-\[
- u\in[.880,.895]\ \cup[.900,.905]\ \cup[.910,.915],
-\]
-the order-eight and order-nine polynomials have disjoint root
-arguments under independent positive rescalings. The decimals
-are exact rationals.
+endpoint normalization and removal of the binomial factors. For
+\(22/25\le u\le19/20\), the order-eight and order-nine polynomials
+have disjoint root arguments under independent positive rescalings.
 This holds in arbitrary dimension and for arbitrary positive
 exponents. Rational Bézout gives coprimality in characteristic zero.
 
@@ -42,6 +38,23 @@ shared factors, so \(x_h\le(u_-^{-2}-1)/7\). The checker uses
 the minimum of this last bound, \(1/41\), and the maximum of
 the separate unit and nonunit bounds. Write it as \(c\).
 The matched order-nine reciprocals are at most \(8c/(9-c)\).
+
+For a matched factor let \(a=h/d\), so its adjacent reciprocal is
+\(x'=8x/(9-ax)\). The ratio of the adjacent outer logarithms lies
+between the weighted endpoint bounds
+\[
+  \frac{\log(1+(64/9)c)}{\log(1+7c)}
+  \le \rho\le
+  1+\frac{\log(1/(1-c/9))}{\log(1+7c)} .
+\]
+In fact \(1+(64/9)x\le1+8x'\le(1+7x)/(1-x/9)\).
+Dividing their logarithms by \(\log(1+7x)\) gives bounds at each
+factor. The first logarithm ratio decreases with \(x\) and the
+last increases, as seen by comparing the numerator and
+denominator derivatives before integration from zero. The
+profile ratio is their weighted average with positive
+weights \(\log(1+7x)\). The reference ratio \(64/63\) is the
+limiting value at zero and belongs to every such interval.
 
 ## Interval coefficient model and ray exclusion
 
@@ -100,9 +113,9 @@ At each fixed \(u\) continue along the straight coefficient segment
 from the actual arrays to the symmetric reference with ratio
 \(64/63\). The model is convex as an affine enclosure using the
 independent scalar, quadratic-product and remainder intervals.
-It contains both arrays. Continue the two reference arrays within each connected certified
-band to its left endpoint. The checker evaluates the same Gaussian
-anchor signs at all of those endpoints. The leading estimate keeps the scaled
+It contains both arrays. Continue the two reference arrays along
+the band to \(u=22/25\). Each independently replayed subband
+also has certified anchor signs at its own left endpoint. The leading estimate keeps the scaled
 roots in \(|X|<2\), which maps into the physical left half-plane
 since \(4(1-u)<1\). The seven rays are disjoint inside this region
 and continue without a root crossing.
@@ -124,9 +137,13 @@ octic has no real root, since the eighth power of the difference
 of two distinct real monomials has strictly positive factorial
 moment. This completes the angular separation.
 
-The replay certifies 741,493 projection cells for the displayed bands.
-Run it from the repository root.
+The exact replay certifies 1,896,328 projection cells across 196
+order, ray, and subband checks. The checker validates the expected
+cell counts for each order on each subband. The full replay or any
+subband can be run from the repository root. Subband bounds use
+integer thousandths and must be table knots.
 
 ~~~sh
 python3 research/factorial/image-rigidity/verify_multivariate_terminal_nine_upper_bridge.py
+python3 research/factorial/image-rigidity/verify_multivariate_terminal_nine_upper_bridge.py 915 920
 ~~~

@@ -32,6 +32,17 @@ selector. Distinct prime-degree profiles still evade this
 row family.
 [All-depth certificate and fibre transfer](ABC_ALL_DEPTH_VALUATION_TRANSFER.md)
 
+Grouping divisible layers extends the exposed fourth-moment
+estimate to a sparse root dictionary of larger height.
+The new mixed \(L^2,L^4,L^4\) rows strengthen several
+concentrated valuation profiles. The audited external
+rows, even with moving selectors, still admit
+formal narrow prime-degree profiles near \(2\lambda/3\).
+In the same-target collision argument the diagonal arm
+alone is at least \(\lambda/3\) on balanced data.
+[Grouped moments](ABC_GROUPED_VALUATION_FOURTH_MOMENTS.md)
+· [Moving-selector limitation](ABC_EXTERNAL_MOVING_ROWS_LIMIT.md)
+
 For the small-budget limit, the graph argument gives
 \[
 N_\lambda(X)\ll_{\lambda,\eta,\varepsilon}X^{(1/3+\eta)\lambda+\varepsilon}
@@ -6924,6 +6935,26 @@ profiles can avoid positive mass on every such bounded-rank
 grid.
 [Sparse valuation grid compression](ABC_SPARSE_VALUATION_GRID_COMPRESSION.md)
 
+Independent weighted difference entropy gives a common
+grid criterion even when the literal degree supports
+are full. A bounded-information coupling of two draws
+does not give the same conclusion, as shown by two
+coprime-step grids meeting only the endpoint release
+mass. On the complementary letter, selecting actual
+small primes inside high valuation layers gives a cheap
+full modulus even when its scaled degree law is
+atomic. Together with two shrinking free-letter degree
+bands this gives limiting normalized exponent zero
+on that sector.
+[Entropy and full divisors inside a layer](ABC_VALUATION_ENTROPY_GRID.md)
+
+A direct anisotropic rational congruence count also
+allows a growing number of signed bases on polynomially
+sparse width products. It uses a triangular derivative
+descent through a bounded number of equations at each
+fixed budget, retaining the same actual full modulus.
+[Anisotropic monomial congruences](ABC_ANISOTROPIC_RATIONAL_CONGRUENCES.md)
+
 
 
 With independent exact valuation orders on just two letters,
@@ -6988,6 +7019,16 @@ monodromy. The fixed-signature polynomial bound still
 gives a subpower height count for primitive exact-power
 Fermat–Catalan triples with all orders variable.
 [Mixed valuation orders and specialization fields](ABC_MISMATCHED_GRID_NUMBER_FIELDS.md)
+
+On dense consecutive valuation profiles, a regular
+three-point cover pays at least \(4L/9-o(L)\) in
+good-prime root discriminant, with equality in the
+formal optimization at signature \((2,4,6)\).
+For prime-degree profiles the lower charge is
+\(85L/126-o(L)\). Changing inertia orders does not
+remove this cost, and a moving twist producing an
+unramified point must carry the same local inertia.
+[Tame conductor bounds and the twisting cost](ABC_TAME_CONDUCTOR_PROFILES.md)
 
 For one-target minimal repair, primitive row content can absorb
 the entire extra common-slope Taylor divisor. Actual primitive

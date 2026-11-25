@@ -97,6 +97,12 @@ def certify_coefficient_direction(reduced, cubic, quartic, variance, second):
     require(not variance_reduced.is_zero(), "Variance remains a unit")
     squared_phase = reduce_polynomial(second)(field_parameter) / variance_reduced
 
+    # The phase coordinate is z = i*s, and z**2 = -squared_phase.
+    require(
+        (-squared_phase) ** ((PRIME**DEGREE - 1) // 2) == field(-1),
+        "Nonsquare phase residue in the degree-102 field",
+    )
+
     rows = []
     for j in range(10):
         for k in range(19 - 2 * j):
@@ -141,6 +147,7 @@ def main():
 
     certify_coefficient_direction(reduced, cubic, quartic, variance, second)
     print("Direction: 100 independent mixed powers t^k (s^2)^j with k + 2j <= 18")
+    print("Direction: quadratic phase extension modulo 389, giving residue degree 204")
 
 
 if __name__ == "__main__":

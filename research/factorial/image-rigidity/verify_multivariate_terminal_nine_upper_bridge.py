@@ -21,8 +21,24 @@ ORDERS = (8, 9)
 REFERENCE_RATIO = Q(64, 63)
 SCALE = 100000
 DISK = Q(2)
-FINE_PRECISION_START = Q(47, 50)
-REPLAY_BANDS = ((880, 895), (900, 905), (910, 915))
+FAST_BANDS = {905, 925, 935, 940, 945}
+FAST_BAND_ORDERS = {(915, 9)}
+EXPECTED_CELLS = {
+    880: (36644, 64365),
+    885: (38588, 75390),
+    890: (44509, 79712),
+    895: (56005, 83839),
+    900: (63341, 108800),
+    905: (16415, 28961),
+    910: (86469, 143675),
+    915: (127177, 40461),
+    920: (121043, 187482),
+    925: (18084, 35456),
+    930: (82212, 177224),
+    935: (16136, 38257),
+    940: (16370, 47848),
+    945: (16089, 45776),
+}
 RAYS = {
     880: (120667, 106504, 81134, 71533, 48649, 39002, 18433),
     885: (120273, 106199, 80975, 71407, 48588, 38958, 18416),
@@ -49,10 +65,10 @@ def reciprocal_cap(u):
     return min(Q(1,41),(u**-2-1)/7, max(Q(1, 8*lower+1), (1-u)/(8*u-1)))
 
 
-def nominal(order, u):
+def nominal(order, u, fine):
     ratio = 1 if order == 8 else REFERENCE_RATIO
     def power(exponent):
-        if u >= FINE_PRECISION_START:
+        if fine:
             return precise_power(u, exponent)
         return interval(*power_bounds(u, exponent))
     return tuple(scalar(comb(order,k))*power(ratio*Q(k*(order-k),order-1))
@@ -79,14 +95,14 @@ def vectors(order):
 
 
 @lru_cache(maxsize=8192)
-def model(order, u):
+def model(order, u, fine):
     c8 = reciprocal_cap(u[0])
     cap = c8 if order == 8 else 8*c8/(9-c8)
     midpoint = sum(u)/2
     p = interval(1-u[1],1-u[0])
     lam = p.sqrt()
     scale = tuple(lam**degree for degree in range(order+1))
-    reference = nominal(order, midpoint)
+    reference = nominal(order, midpoint, fine)
     outer_log = -log(interval(*u))
     mean = log(interval(u[0]/midpoint,u[1]/midpoint))
     if order == 9:
@@ -138,8 +154,8 @@ def sum_intervals(terms):
 
 
 @lru_cache(maxsize=8192)
-def disk_check(order,u):
-    _,_,coarse,_=model(order,u)
+def disk_check(order,u,fine):
+    _,_,coarse,_=model(order,u,fine)
     return coarse[-1][1].lo*DISK**order > sum(
         max(abs(c.lo),abs(c.hi))*DISK**d for d,c in coarse[:-1])
 
@@ -205,28 +221,30 @@ def projected_sign(order,x,y,base,groups,coarse,fine):
 def verify_ray(order,left,right,index):
     pending=[((Q(left,1000),Q(right,1000)),interval(Q(0),DISK),0)]
     accepted=0
+    fast = left in FAST_BANDS or (left, order) in FAST_BAND_ORDERS
+    split_scale = 24 if fast else 120
     while pending:
         u,x,depth=pending.pop()
-        if not disk_check(order,u):
+        if not disk_check(order,u,fast):
             require(depth<24,("disk failure",order,u))
             pending.extend((half,x,depth+1) for half in bisect_u(u))
             continue
-        base,groups,coarse,p=model(order,u)
+        base,groups,coarse,p=model(order,u,fast)
         levels=tuple(sorted(ray_at(left,right,index,t) for t in u))
         y=height(p,x,interval(*levels))
-        if projected_sign(order,x,y,base,groups,coarse,Q(left,1000)>=FINE_PRECISION_START):
+        if projected_sign(order,x,y,base,groups,coarse,fast):
             accepted+=1
             continue
         require(depth<36,("ray failure",order,left,right,index,u,x.shown()))
-        if 120*(u[1]-u[0])>Q(x.hi-x.lo,GRID):
+        if split_scale*(u[1]-u[0])>Q(x.hi-x.lo,GRID):
             pending.extend((half,x,depth+1) for half in bisect_u(u))
         else:
             pending.extend((u,half,depth+1) for half in bisect(x))
     return accepted
 
 
-def reciprocal_quotient(order,u,z):
-    coeffs=nominal(order,u)
+def reciprocal_quotient(order,u,z,fine):
+    coeffs=nominal(order,u,fine)
     if order%2:
         coeffs=tuple(sum_intervals(scalar((-1)**(k-l))*coeffs[l] for l in range(k+1))
                      for k in range(order))
@@ -250,7 +268,7 @@ def verify_anchor(anchor):
     for order in ORDERS:
         last=switches=0
         for i,z in enumerate(positions):
-            val=reciprocal_quotient(order,u,z)
+            val=reciprocal_quotient(order,u,z,anchor in FAST_BANDS)
             new=1 if val.lo>0 else -1 if val.hi<0 else 0
             require(new != 0,("anchor sign",order,i,val.shown()))
             if i:
@@ -261,24 +279,31 @@ def verify_anchor(anchor):
 
 
 def main():
-    keys=tuple(RAYS)
-    bands = REPLAY_BANDS if len(argv)==1 else (tuple(map(int,argv[1:3])),)
+    keys = tuple(RAYS)
+    first, last = (880, 950) if len(argv) == 1 else tuple(map(int, argv[1:3]))
+    require(first in keys and last in keys and first < last, "replay band")
+    selected = tuple(map(int, argv[3:]))
+    require(not selected or (len(selected) == 2 and selected[0] in ORDERS
+                             and selected[1] in range(7)), "replay ray")
+    verify_anchor(first)
     total = 0
-    for first,last in bands:
-        require(first in keys and last in keys and first<last,"replay band")
-        verify_anchor(first)
-        for left,right in zip(keys,keys[1:]):
-            if not first<=left<right<=last:
-                continue
-            for order in ORDERS:
-                for i in range(7):
-                    if len(argv)>3 and (order,i)!=tuple(map(int,argv[3:])):
-                        continue
-                    n=verify_ray(order,left,right,i)
-                    total+=n
-                    print(left,right,order,i,n,flush=True)
-    print("Certified",total,"Cayley cells",flush=True)
+    for left, right in zip(keys, keys[1:]):
+        if not first <= left < right <= last:
+            continue
+        for order in ORDERS:
+            order_total = 0
+            for index in range(7):
+                if selected and (order, index) != selected:
+                    continue
+                cells = verify_ray(order, left, right, index)
+                order_total += cells
+                print(left, right, order, index, cells, flush=True)
+            if not selected:
+                require(order_total == EXPECTED_CELLS[left][order-8],
+                        ("replay cell count", left, right, order, order_total))
+            total += order_total
+    print(f"Certified {total} Cayley projection cells.", flush=True)
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()

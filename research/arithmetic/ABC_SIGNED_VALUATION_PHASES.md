@@ -293,3 +293,23 @@ reduces the rank while preserving every degree, allowing
 the two-basis estimate above. A sparse diffuse profile
 alone does not imply the width condition.
 [Rank compression and sparse-profile obstruction](ABC_SPARSE_VALUATION_GRID_COMPRESSION.md)
+
+
+An independent entropy criterion can certify a common
+progression for the weighted valuation laws even when
+their literal supports are full. Bounded independent
+Ruzsa distance and small entropy-effective size give
+the cheap common grid. The same criterion with coupled
+difference entropy fails on a two-grid example.
+[Weighted valuation entropy](ABC_VALUATION_ENTROPY_GRID.md)
+
+For boxes with more signed digit coordinates, a
+triangular determinant descent gives an anisotropic
+rational congruence bound when \(k\) exceeds an
+exponential-in-dimension constant times the product
+of the coordinate height parameters. The dimension
+may grow in the outer budget limit on polynomially
+sparse digit boxes. The coordinates and their orders
+are fixed at each individual budget before the
+height limit.
+[Anisotropic exact-output congruences](ABC_ANISOTROPIC_RATIONAL_CONGRUENCES.md)
