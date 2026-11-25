@@ -6716,6 +6716,69 @@ We have excluded every limiting \(d>5/12\). The fixed-truncation and dyadic pass
 
 ## The unrestricted one-third endpoint
 
+Prescribing the actual parity defects on all three primitive letters
+allows a second use of the affordable divisor records. The resulting
+conic has a rational model of controlled height and each full power
+gives half its numerical weight as parameter precision. The real
+interval near a short letter supplies the matching factor of one half
+in the determinant bound. This proves an absolute gap below \(1/3\)
+for an absolute positive parity-defect budget, including arbitrary
+nonatomic distributions of the even valuation degrees and macroscopic
+primes. After the squarefree kernels have been counted, their support
+gives the full odd-valuation weight at subpower cost.
+[Square kernels and actual full divisors](ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md)
+
+For fixed abelian varieties over varying bounded-degree prime-power
+extensions, a canonical-height ball can be covered by smaller balls
+whose differences lie in proper subfields. The discriminant controls
+the spacing, and genus-theory rank bounds use each subfield's own
+discriminant. This gives a subpower bound uniformly in the field,
+and a count \(X^{f\lambda+\varepsilon}\) on the Euclidean signatures
+\((3,3,3)\) and \((2,4,4)\) with joint defect radical at most
+\(X^{f\lambda}\). Both conclusions apply directly to primitive
+quotients under minimal repair. The fixed-base literature also gives
+these two signature counts. A moving Legendre curve gives a separate
+saving when a fourth determinant has a cheap squarefree kernel.
+[Euclidean signatures and bounded-height points](ABC_EUCLIDEAN_GRID_POINT_COUNTS.md)
+
+For varying shifts, two primitive columns in the same row with a
+common target power record force its cofactor to divide one nonzero
+difference determinant. A weighted power difference then gives
+subpower column-pair codegree. The complete-label application raises
+the required cofactor-dictionary exponent from \(1/12\) to \(1/6\)
+at the minimum nonatomic endpoint. This estimate keeps the third
+letter's arithmetic even when the shift is tall.
+[Codegrees for varying shifts](ABC_SHIFT_DICTIONARY_WEIGHTED_CODEGREES.md)
+
+High-order monomial coordinates in a nondegenerate relation can
+be released even if they occur on several terms. A low-degree
+component with a point at which exactly one coordinate vanishes
+would have a function-field unit ratio of excessive order at
+that point. When it has no such point, an arithmetic
+Nullstellensatz fixes the prime support of each coordinate.
+This gives a new mixed off-diagonal bound through prime-incidence
+splitting and a fixed-target bound for powerful integers on a few
+prescribed valuation layers. On the original equation it also
+saves when more than two thirds of the radical budget is captured
+by an arbitrary slowly growing set of high valuation positions. At the balanced endpoint the
+diagonal still permits distinct targets with one pair each.
+[Nondegenerate power relations and collisions](ABC_NONDEGENERATE_POWER_COLLISIONS.md)
+
+The uniform missing estimate is still a power saving for the
+distinct height-admissible targets of small radical in an affordable
+two-divisor record. If its normalized cost is \(t\), a sufficient
+conditional fibre bound is \(n^{1/3-t-\sigma}\) for some absolute
+\(\sigma>0\) on one affordable pair in each balanced sequence,
+with allowances smaller than \(\sigma\) fixed before the height
+limit. The local graph and residue constraints alone leave this
+possibility open. In particular, broad formal laws supported on
+prime valuation indices have no cheap parity record or fixed
+Euclidean defect record, and a target cofactor dictionary can
+retain its full radical cap. These are profile obstructions to
+the new estimates and do not supply primitive triples at
+saturation.
+[Affordable full-divisor records](ABC_WIDE_COFACTOR_CONGRUENCES.md#affordable-whole-coordinate-pair-locks-at-every-balanced-endpoint)
+
 A strict uniform gap below \(1/3\) at all sufficiently small fixed
 budgets is equivalent, given the limiting one-third bound, to
 excluding every sequence of actual populated anatomic boxes with

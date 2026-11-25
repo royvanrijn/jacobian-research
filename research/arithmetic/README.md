@@ -604,6 +604,17 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The diagonal floor for same-target coefficient-box collisions | Internal result | proved | [Source](ABC_EXTERNAL_MOVING_ROWS_LIMIT.md) |
 | An anisotropic exact-output congruence bound by triangular descent | Internal result | proved | [Source](ABC_ANISOTROPIC_RATIONAL_CONGRUENCES.md) |
 | A growing-rank release bound on polynomially sparse signed grids | Internal result | proved | [Source](ABC_ANISOTROPIC_RATIONAL_CONGRUENCES.md) |
+| Uniform height count on a fixed abelian variety over moving prime-power extensions | Internal result | proved | [Source](ABC_EUCLIDEAN_GRID_POINT_COUNTS.md) |
+| Bounded-height Euclidean prime-primary valuation-grid counts | Internal result | proved | [Source](ABC_EUCLIDEAN_GRID_POINT_COUNTS.md) |
+| A parity saving from one additional radical-capped determinant | Internal result | proved | [Source](ABC_EUCLIDEAN_GRID_POINT_COUNTS.md) |
+| A uniform small-budget saving for small joint squarefree kernels | Internal result | proved | [Source](ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md) |
+| Full odd-valuation powers count toward projective parameter recovery | Internal result | proved | [Source](ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md) |
+| Weighted power differences bound column-pair codegrees with varying shifts | Internal result | proved | [Source](ABC_SHIFT_DICTIONARY_WEIGHTED_CODEGREES.md) |
+| Target cofactor ratios bound column-pair codegrees before recording their cofactors | Internal result | proved | [Source](ABC_SHIFT_DICTIONARY_WEIGHTED_CODEGREES.md) |
+| Complete-label saturation forces the target power-cofactor dictionary to full capacity | Internal result | proved | [Source](ABC_SHIFT_DICTIONARY_WEIGHTED_CODEGREES.md) |
+| Uniform nondegenerate power counts from exclusive coordinate zeros | Internal result | proved | [Source](ABC_NONDEGENERATE_POWER_COLLISIONS.md) |
+| Mixed off-diagonal power collisions with shared selected prime factors | Internal result | proved | [Source](ABC_NONDEGENERATE_POWER_COLLISIONS.md) |
+| A small-budget saving for arbitrary sparse high valuation positions | Internal result | proved | [Source](ABC_NONDEGENERATE_POWER_COLLISIONS.md) |
 
 **Computed obligations:** 108 unresolved; 18 resolved within their exact scope.
 

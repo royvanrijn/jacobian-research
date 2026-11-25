@@ -239,3 +239,10 @@ when \(2p+h<j\). At \(2p+h=j\) only the highest index degrees
 survive, giving the linked Hermite anchors from the quadratic log
 term. The moment bounds can be applied to these groups while
 preserving both facts.
+
+The [paired angular expansion](MULTIVARIATE_MATCHED_SECOND_ORDER_ANGLES.md)
+makes this comparison through the second and fourth orders in the
+near-flat Cayley scale, uniformly in the degree for the respective
+truncated models. The skew correction starts quadratically and the
+leading fourth-order coefficient depends on the order through \(jR_j\).
+The exact angular remainder at the linked Hermite gap scale remains open.

@@ -4959,3 +4959,141 @@ In the second case \(g=\operatorname{diag}(g',\lambda)\), using the invariant co
 Write \(F=K(X/H)^S\). The geometrically transitive generic \(S\times H\) orbit is a torsor by the generic invariant fibre theorem and freeness. Its two projections twist \(B_0,B_1\) by determinant-one complex isometries, giving Hermitian forms with the original determinant classes modulo \(N_{E_F/F}(E_F^\times)\), where the split étale convention applies if needed. Their quaternionifications are isometric over \(F\). The ratio of their diagonal determinants is therefore a reduced norm. This follows from the Pfaffian identity for quaternionic Hermitian matrices, as in the central isometry torsor calculation. Since the complex norm subgroup lies in the quaternion reduced norm subgroup, the hypothesis gives \(-1\in\mathrm{Nrd}(D_F^\times)\). The Hamilton norm is the sum of four squares, so \(s(F)\le4\). The standard scalar form of \(S\) is isotropic over \(F\) by its five-square subform, or \(S\) is split if \(E_F\) splits. This yields an active split rank-one action on the generic fibre and the regular witness.
 
 For the diagonal sign forms of odd \(r\), the difference of scalar Witt classes is \(8r\langle1\rangle\) up to sign. The torsor has a point over \(K\) if \(s(K)\le4\), or over \(K(S_4^-)\) otherwise, by Hermitian Witt cancellation. The image is a smooth point of the quotient, giving the exact level lower bound by completion as in the block theorem. Over a real closed field, any twist by an \(H\)-cocycle preserves the norm class of the complex determinant. The source Hermitian form still has odd negative index, so its quaternionification cannot be isometric to the definite target. This proves point-freeness. In the indicated compact connected example the entire fixed quaternionic space is negative definite and the positive block has no fixed vector. The centralizer is compact, and the connected normalizer acts by inner automorphisms, giving the assertion on the commuting identity component.
+
+
+## Weighted interval densities and angular monodromy
+
+**Theorem (No polynomial weighted density for linear invariant heights).**
+
+On the pointed compact octahedral quotient take \(x\) to be any nonconstant affine-linear combination of \(p=p_2\) and \(q=p_3\) on its angular sphere quotient. On the icosahedral quotient take any nonconstant affine-linear combination of \(p,h\) from (H4). For any real regular function \(D\ne0\) on the full compact quotient, the pushforward of \(D^{2m}\) times Haar probability by \(x\) has no polynomial density for any \(m\ge1\). More strongly, a single nonzero local analytic density on an open interval of regular values cannot equal a single-valued rational function of the height. In particular a weighted interval witness with this coordinate is impossible, irrespective of how the weight vanishes at its critical points. The exclusion also holds after replacing \(x\) by a polynomial in \(x\) that is injective on its compact range.
+
+Begin by applying the left-circle Reynolds projection to \(D^{2m}\), obtaining an angular regular function \(L\). It is nonnegative on the real angular quotient, and its trace is strictly positive. The complex oriented angular plane covers have equations
+\[
+       J^2=q\,\Delta(p,q),\qquad
+       \Delta=p^2-4p^3-4q-27q^2+18pq
+       \quad\text{or}\quad J^2=f(p,h),
+\]
+where in the second equation \(f\) is the polynomial written on the right of (H4) with the sphere norm set to one and with a constant rescaling of \(J\). The area form is a nonzero constant times \(dp\wedge dq/J\) or \(dp\wedge dh/J\), by the invariant Jacobian formula. For a generic height value \(s\), the conditional affine curve \(C_s^\circ\) is a smooth double cover of an affine line in a coordinate \(z\). Its compactification \(C_s\) is elliptic or of genus two. Let \(\omega_s=dz/J\), holomorphic on the compactification. On a physical open interval of regular values the density is, up to a fixed nonzero normalization, the period of \(L\,\omega_s\) over the sum of the real compact ovals that carry area. Orient these ovals to make \(\omega_s\) positive. The same cycles give a positive period for the unweighted area. These assertions follow by coarea on the oriented quotient, avoiding the finitely many height values of its singular points and of singular fibres. The compact real angular level has no boundary on the remaining smooth affine curve, so it is a union of whole ovals.
+
+In particular the cycle \(\gamma_s\) has nonzero image in \(H_1(C_s,\mathbb Q)\), because the holomorphic differential \(\omega_s\) has nonzero period on it. The weighted differential has poles only at infinity, and its period is a functional on \(H_1(C_s^\circ,\mathbb Q)\). If the density agrees locally with a rational function, that period is single-valued under analytic continuation on the smooth parameter line with the rational poles removed. Therefore the period functional vanishes on the span of all \(g\gamma_s-\gamma_s\), where \(g\) ranges over monodromy. Removing finitely many additional parameter values does not change the monodromy image. We show that this span is the whole affine homology for each pencil.
+
+First consider the cubic cases, namely the two individual octahedral invariants and the icosahedral invariant \(p\). For the height \(p\) on the octahedral quotient the cubic \(q\,\Delta\) at \(p=1/4\) is \(q^2(1-54q)/2\), with exactly one double root. For the height \(q\), divide the equation by its nonzero parameter \(q\) after adjoining its square root. At \(q=0\) the resulting cubic \(\Delta(p,0)=p^2(1-4p)\) has the same kind of degeneration. For the icosahedral height \(p\), the cubic in \(h\) at \(p=0\) is \(h^2(4-25h)\). The discriminants are nonzero generically, as one also verifies directly from the displayed polynomials. In each case the three-root ratio is nonconstant, since two roots collide while the third remains distinct. After a finite base change and a squared scaling of the vertical coordinate, the family becomes a pullback of the Legendre family along this nonconstant root ratio. Away from finitely many branch values this map is a finite covering. The [Legendre monodromy](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf) contains independent transvections around \(0\) and \(1\), so any finite-index subgroup has irreducible rational homology action. The cubic has a single point at infinity, hence its affine and compact first homology agree. For a nonzero cycle the span of its orbit differences is a nonzero invariant subspace, and therefore all of homology.
+
+For the other cases we use the following explicit monodromy criterion. For a degree-\(d\) polynomial double cover of the affine line with distinct branch roots, reduction of affine homology modulo two identifies it with the even subsets of the \(d\) finite roots. An arc between consecutive roots lifts to a cycle corresponding to their pair, and the \(d-1\) consecutive arcs form a basis. This follows by lifting a tree joining the roots, which gives a spine of the branched affine cover. The half-twists on consecutive roots act by transvections on their lifted cycles, and modulo two these are exactly the adjacent permutations on the even-subset space. Thus the homology reduction of any lifted joining arc is the vector of its pair. A fibre with exactly one pair colliding and all others distinct has monodromy a nontrivial power of the transvection along that lifted arc. Indeed near the collision the half-difference of the roots, after any necessary quadratic base change, is a vanishing local parameter to positive order. If the graph of monodromy translates of the colliding pair is connected on the finite roots, their lifted cycles span affine homology over \(\mathbb Q\) by reduction modulo two. Since \(\gamma_s\) has nonzero compact class, it pairs nontrivially with at least one translate. The corresponding transvection power puts that translate into the span of the differences. The span is monodromy invariant, hence contains the full orbit and gives all affine homology. This argument also handles the two points at infinity in the quartic case.
+
+For a mixed octahedral height normalize it to \(s=q+a p\) with \(a\ne0\). The fibre polynomial has degree four in \(p\). One root comes from \(q=0\), and the other three, from \(\Delta(p,s-ap)\), are permuted transitively since the discriminant curve \(\Delta=0\) is irreducible. For instance it is parametrized by the repeated root of the original cubic \(Z^3-Z^2+pZ-q\). To find a collision with the distinguished root, the cubic discriminant and the resultant with the distinguished factor are
+\[
+ \operatorname{disc}_p\Delta(p,s-ap)
+       =16(9a-27s+1)^3(a^3+a^2+s),\qquad
+ \operatorname{Res}_p(\Delta(p,s-ap),s-ap)=s^2(a-4s).
+\]
+At \(s=a/4\) the cubic is squarefree unless \(a=-4/9\) or \(-1/2\), and at either exceptional slope it is squarefree at \(s=0\). In the chosen fibre the distinguished root meets one cubic root and the other two stay distinct. The orbit of that pair joins the distinguished root to each cubic root, so the graph criterion applies.
+
+For a mixed icosahedral height, or for \(h\) alone, normalize it to \(s=h+a p\). The fibre is a quintic in \(p\) with constant nonzero leading coefficient. The discriminant curve \(f=0\) is irreducible, since all reflecting mirrors have one common image in the reflection quotient. Its coordinate ring remains integral after this linear change, so the five finite roots are permuted transitively. For all real slopes there is a fibre with exactly one double root and the others distinct. At \(s=0\) the polynomial is \(p^2\) times a cubic whose constant term and discriminant are
+\[
+        4(a^2-4a-16),\qquad -6400(a-7)(3a+4)^3(5a-36)^5 .
+\]
+Thus this fibre works off the five exceptional slopes. At those slopes use the discriminant factorization
+\[
+ \operatorname{disc}_p f(p,s-ap)
+     =-131072000\,s^2(3a-81s+4)^3(5a+25s-36)^5\,Q(a,s),
+\]
+where
+\[
+ \begin{split}
+ Q={}&a^5-15a^4+40a^3+240a^2-640a-1792\\
+    &+(1000a^2-12000a+35200)s+10000s^2 .
+ \end{split}
+\]
+The discriminant of \(Q\) in \(s\) is \(-40000(a-8)^5\), so its two roots are distinct at all five slopes. Its values at \((3a+4)/81\) and \((36-5a)/25\) are \((9a-8)^3(9a^2-111a+376)/6561\) and \((a-8)^4(a+17)\), respectively, nonzero at the five slopes. At least one root of \(Q\) is nonzero, giving a simple discriminant zero and hence the claimed fibre. The orbit graph of its pair is connected: it has an edge and a transitive action on five vertices, so all its components have equal size dividing five.
+
+In all cases the vanishing of the period on orbit differences therefore forces its value on the physical cycle to be zero. The weight \(L\) has positive total mass, so the density is positive on some regular interval. This contradicts a polynomial density. The same argument applies after an injective polynomial reparametrization of the compact height range: a polynomial density in the new variable pulls back to a polynomial density in the old one, using the constant sign of the derivative on the interior. The angular and scalar moment formulas, and the moments required by a proposed polynomial-density identity of fixed degrees, descend to finitely generated ordered coefficient fields. Equality of pushforward measures on the compact interval is determined by polynomial moments. Thus ordered specialization gives the exclusion over real closed fields as well.
+
+
+## Galois fields of scalar Laurent Cauchy transforms
+
+**Theorem (A normal scalar Cauchy field is rational).**
+
+Let \(k\) be algebraically closed of characteristic zero, and let \(P(t)\in k(t)\). Take formal scalar constant term at \(t=0\). If the field generated over \(k(z)\) by
+\[
+             \mathcal C_P(z)=\operatorname{CT}_t\frac1{z-P(t)}
+\]
+is normal, it is a rational function field over \(k\). For nonconstant \(P\), its degree over \(k(z)\) is at most the number of poles of \(P\) on the projective line. In particular, if \(P\) is Laurent with poles at both zero and infinity, a normal Cauchy field is quadratic and \(P=A t^d+B+C t^{-d}\) with \(d\ge1\) and \(AC\ne0\). Conversely every such trinomial has a quadratic Cauchy field.
+
+If \(P\) is regular at zero the transform is \(1/(z-P(0))\). Otherwise let \(a>0\) be its pole order there. In a splitting field of \(P(t)=z\), let \(\mathcal I\) be the \(a\) branches tending to zero over \(z=\infty\). The local residue formula for Laurent moments, as in [Duistermaat and van der Kallen, §2](https://webspace.science.uu.nl/~kalle101/powers.pdf), gives
+\[
+                  \mathcal C_P(z)=-\sum_{i\in\mathcal I}\frac{t_i'(z)}{t_i(z)}.
+\]
+Indeed the meromorphic integrand is \(dt/[t(z-P(t))]\). Near zero it has no residue at zero and each of the small roots contributes the displayed residue. The calculation can be made over the complex numbers after choosing a finitely generated field of definition, or in Puiseux expansions at infinity.
+
+Let \(G\) be the geometric monodromy group. The Cauchy germ has stabilizer exactly the set stabilizer of \(\mathcal I\). In one direction this follows from the sum formula. For the other, at infinity a small branch has \(t_i'/t_i\sim-1/(az)\). A branch tending to a finite nonzero pole has logarithmic derivative \(o(z^{-1})\), while a branch tending to infinity has leading logarithmic derivative \(1/(bz)\), where \(b\) is the pole order there. If a translate contains fewer than \(a\) small branches, its sum with the negative sign has coefficient strictly less than one at \(z^{-1}\). Thus equality with the original germ forces preservation of \(\mathcal I\).
+
+If the field is normal, its stabilizer \(N\) fixes every translate of \(\mathcal I\). Partition the roots by their membership in these translates. Monodromy at infinity belongs to \(N\) and each of its cycles belongs to one part. The part containing a small branch is consequently exactly \(\mathcal I\): the full small cycle lies in it, and \(\mathcal I\) itself distinguishes these branches from the others. By transitivity the parts are the translates of \(\mathcal I\), so there are \([G:N]\) parts and each is a union of pole cycles. This gives the degree bound. The point stabilizer of a small branch lies in \(N\), since it fixes that branch's part. Thus the Cauchy field is a subfield of \(k(t)\), and Lüroth gives its rationality.
+
+In the Laurent case with poles at both ends, the partition has exactly two parts. It follows that \(a=b\) and the field is quadratic. Choose its rational parameter \(u\). The two poles of \(z\) on this intermediate line are simple, since the inertia at infinity acts trivially on the two parts. Choose the zero and pole of \(u\) at those two points. Each point has a single preimage on the \(t\)-line, one at zero and one at infinity. Hence \(u\) is a constant times \(t^{\pm a}\), and \(z\) has the asserted trinomial form. Conversely scalar extraction for such a trinomial yields \(((z-B)^2-4AC)^{-1/2}\), which generates a quadratic field.
+
+**Corollary (Exact averaging of the sphere witness over distinct axes cannot be rational).**
+
+Fix distinct unit axes \(\xi_j\) in the geometric rotation orbit of an axis on the unit sphere and put \(v_j=\langle\xi_j,x\rangle\). Take at least two of them, and nonzero weights \(c_j\) with sum one. The averaged conditional scalar moments of the finitely many phases
+\[
+                 t+v_j+\frac{v_j^2-1}{4t}
+\]
+cannot be realized as the local scalar moments of any single rational scalar phase over the angular function field, even allowing arbitrary poles and rational angular coefficients. In particular the finite rotation average of the sphere witness cannot produce a phase on either exceptional product by exact scalar moment descent.
+
+Extend the angular function field to an algebraic closure and regard it as the constant field in \(z\). The required Cauchy transform would be
+\[
+                     \sum_j c_j (z^2-2v_jz+1)^{-1/2}.
+\]
+The quadratics have simple roots and pairwise disjoint root sets over that constant field: a common root would have to be zero by subtracting the two polynomials, while the constant coefficient is one. Their square classes are independent by the valuations at those roots. The displayed sum has trivial stabilizer in the multiquadratic Galois group since each sign character occurs with a nonzero coefficient. Write \(d\) for the number of axes. The transform generates the full multiquadratic field of degree \(2^d\). It has genus \(1+2^{d-1}(d-2)\) by Riemann–Hurwitz, since the \(2d\) disjoint branch points each have inertia of order two and infinity is unramified. For \(d\ge2\) this is a normal field of positive genus, which the theorem excludes. This concerns equality of the conditional sequences before the final angular integration.
+
+
+## The rank-three unitary stabilizer boundary
+
+**Theorem (The full special-unitary double quotient has a rational invariant field).**
+
+Let \(D=(-1,-1)_K\) be division over a characteristic-zero field, and let \(n\ge2\). Take the quaternionic isometry torsor \(X\) from \(I_{n-r}\perp-I_r\) to \(I_n\). Let both the target subgroup \(S\) and the source subgroup \(H\) be the full special unitary groups of the standard complex planes in the two forms. Then \(K(X/H)^S\) is a purely transcendental field of degree \(n+2\) over \(K\).
+
+Over \(E=K(i)\), identify the torsor with the split symplectic group by using a reference isometry that multiplies each negative coordinate by the central scalar \(i\) of the coefficient extension. Both special unitary groups become the standard special linear subgroups on complementary Lagrangians. Write the resulting symplectic matrix in blocks as
+\[
+ g=\begin{pmatrix}P&Q\\R&T\end{pmatrix}.
+\]
+On the open set with \(P,Q\) invertible, put \(B=P^{-1}Q,\ C=RP^{-1}\); these matrices are symmetric and \(T=CPB+P^{-\mathsf T}\). For the two full general linear groups on complementary Lagrangians, \(P\) transforms as \(sPh^{-1}\), \(B\) as \(hBh^{\mathsf T}\), and \(P^{\mathsf T}CP\) as \(h^{-\mathsf T}P^{\mathsf T}CP h^{-1}\). Thus the characteristic coefficients of \(P^{\mathsf T}T=I+P^{\mathsf T}CPB\) are invariants. Denote the elementary symmetric functions in its eigenvalues \(k_j\) by \(e_j\), and put \(e_0=1\).
+
+Over an algebraic closure, at a generic point one can normalize \(P\) and \(B\) to the identity and diagonalize the remaining symmetric matrix by an orthogonal change of basis. Hence the general linear double orbits are distinguished generically by the unordered \(k_j\). For the special linear double orbits add \(d_P=\det P\) and \(d_Q=\det Q\). If these determinants agree for two points in a generic general linear orbit, the translating pair has determinants either both \(+1\) or both \(-1\), by the respective transformation rules \(\det s/\det h\) and \(\det s\det h\). The latter case can be adjusted by the simultaneous sign flip of one eigenline in the generic general linear stabilizer. Thus the augmented invariants give a single geometric generic orbit. They are algebraically independent: consecutive symplectic coordinate pairs give diagonal \(P,Q,R,T\) with \(P_{jj}T_{jj}=k_j\), \(Q_{jj}R_{jj}=k_j-1\), and the nonzero entries of \(P,Q\) can be chosen to prescribe their determinants independently. The geometric quotient field over \(E\) is therefore \(E(e_1,\ldots,e_n,d_P,d_Q)\).
+
+Let \(\delta=(-1)^r\). The compact conjugation of the symplectic group interchanges \(P,T\) and \(Q,-R\) on entries, together with coefficient conjugation. The reference isometry changes this by the right sign matrix of determinant \(\delta\) on each \(n\)-block. Thus the semilinear descent fixes the \(e_j\) and sends \(d_P\) to \(\delta\det T\), and \(d_Q\) to \(\delta(-1)^n\det R\). The block identities give
+\[
+          d_P\det T=e_n,\qquad
+          d_Q\det R=\prod_j(k_j-1).
+\]
+Consequently the field has a real model with \(e_1,\ldots,e_n\) and two complex coordinates of norms \(\delta e_n\) and \(\delta\sum_{j=0}^n(-1)^j e_j\). Taking real and imaginary parts of the two determinant coordinates gives four fixed generators. The two norm equations solve for \(e_n\) and \(e_{n-1}\), leaving the four generators and \(e_1,\ldots,e_{n-2}\) algebraically independent. This proves the rationality statement.
+
+**Corollary (The rank-three compact-subgroup test has one complex-unitary boundary).**
+
+In quaternionic rank three with odd negative rank, over a real closed field the quotients by all geometrically proper reductive subgroups of the source special unitary group have regular counterexamples. For the quotient by the full source special unitary group, no connected reductive subgroup of the compact target has active split rank one on its generic invariant fibre. This last assertion determines the reach of the subgroup method, without deciding the trace on the full-unitary quotient.
+
+For the positive assertion take \(S=\mathrm{SU}(3)\) and use the two-plane test. In the geometric fibre, a generic pair of symmetric matrices has simple relative spectrum. Its simultaneous stabilizer in \(\mathrm{SL}_3\) is diagonal signs in a generic eigenbasis. Every nonidentity such sign is noncentral. The conjugacy class of any one of these signs cannot lie in a proper closed subgroup, since its normal closure in \(\mathrm{SL}_3\) is the whole group. Hence for a generic eigenbasis no nonidentity sign belongs to the given proper \(H\), by avoidance of finitely many proper closed sets. This gives generic freeness. The determinant comparison then gives level four and the active split action. The same argument replaces the coordinate-line freeness hypothesis of the full-target part of the two-plane theorem in any rank when \(H\) is geometrically proper and does not contain \(-I_n\) if \(n\) is even.
+
+For the boundary case, the preceding rationality theorem makes the invariant field for \(S=\mathrm{SU}(3)\) formally real. For \(S=\mathrm{Sp}(2)\) fixing a target line, first twist the source by a cocycle in \(H\) to make its negative rank one if it had been three. A sign change on two negative lines is determinant one and gives that twist. The twisted isometry torsor maps equivariantly and dominantly to \(X/H\). Its quotient by \(S\) parametrizes the isometric embeddings of a fixed positive target line in the source, and is smooth with a real point, since the new source has positive lines. Thus its formally real field contains \(K(X/H)^S\). These two subgroup types exhaust the proper simple factors of rank at least two in compact \(\mathrm{Sp}(3)\), by the defining symplectic representation calculation in the small-twist boundary. A larger subgroup containing either type has a subfield of the corresponding formally real field. The function field of \(X/H\) has level at least four by the smooth point over \(K(S_4^-)\), so rank-one compact factors stay anisotropic over all its invariant subfields. The full target has invariant field \(K\). This exhausts the connected reductive subgroups.
+
+
+## Direct moments on the remaining rank-three special-unitary quotient
+
+**Proposition (The elementary spectral and determinant coordinates give no affine pure phase).**
+
+Use the rank-three full-special-unitary quotient of the previous theorem over a real closed field, with \(r\) odd. The functions \(e_1,d_P,d_Q\) and their conjugates from the double quotient are regular, by their polynomial expressions in the symplectic matrix blocks. In the real affine-linear span of \(e_1\) and the two real components of each determinant, the only pure function is zero. In this span the first four moments already suffice.
+
+Work on the compact geometric reference group \(\mathrm{Sp}(3)\), which computes the normalized trace on the twist by base change. There \(k_1,k_2,k_3\) are the squared cosines of the compact \(U(3)\)-double coset. Their unordered law is the constant-weight Jacobi law of symmetry parameter one, by the [type CI integration formula](https://arxiv.org/abs/math-ph/0111005), with eigenangle change \(k_j=(1+\cos(2\theta_j))/2\). Equivalently on \(0<x<y<z<1\) the ordered density is \(180(y-x)(z-x)(z-y)\). The moduli of the determinants are \(\sqrt N,\sqrt M\), where \(N=xyz\) and \(M=(1-x)(1-y)(1-z)\). Their phases can be independently averaged over two ordinary circles. Indeed left and right \(U(3)\)-translations change the phases by the product and ratio of the two determinants of the translating matrices, and that map of two circles is surjective. These translations fix the spectral variables.
+
+Because \(r\) is odd, the two real components of each regular determinant phase are purely imaginary on the compact reference: the twist sends \(d_P\) to \(-\overline{d_P}\) there, and likewise for \(d_Q\). Normalize the real components as \(d+\sigma d\) and \((d-\sigma d)/i\), where \(\sigma\) is the semilinear descent of functions. Write \(u,v\ge0\) for the sums of the squares of their two real coefficients in each determinant arm. If the coefficient of \(e_1\) is zero, the first moment removes the constant and strict square negativity on the compact reference removes any nonzero imaginary linear combination. Otherwise scale that coefficient to one, and use the first moment to get the center \(A=x+y+z-3/2\).
+
+Write \(\mathbb E\) for the normalized spectral integral. The second and third moments of the resulting phase are
+\[
+ \mathbb E(A^2)-2(u+v)\mathbb E(N),\qquad -6(u-v)\mathbb E(AN).
+\]
+Here symmetry interchanges \(N,M\) and negates \(A\). Direct simplex integration gives \(\mathbb E(A^2)=3/28,\ \mathbb E(N)=1/14,\ \mathbb E(AN)=3/140\), so vanishing forces \(u=v=3/8\). The fourth moment is then
+\[
+ \mathbb E(A^4)-12(u+v)\mathbb E(A^2N)
+           +6(u^2+v^2)\mathbb E(N^2)+24uv\mathbb E(NM)=-25/448.
+\]
+The four entries used here are \(19/560,\,11/840,\,1/84,\,1/420\), respectively. They follow by multiplying the polynomial by the displayed Vandermonde density and using the ordered-simplex monomial integral \(1/[(i+1)(i+j+2)(i+j+k+3)]\) for \(x^i y^j z^k\). The moment identities are rational and pass to every real closed ground field. This calculation leaves higher regular spectral and determinant combinations as candidates on the full-unitary rank-three quotient.

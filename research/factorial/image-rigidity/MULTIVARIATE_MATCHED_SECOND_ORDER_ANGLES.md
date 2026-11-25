@@ -1,4 +1,4 @@
-# Matched second-order angular interlacing at every degree
+# Matched second- and fourth-order angular interlacing at every degree
 
 Let \(n\ge2\) and \(N=n+1\). Match the Gauss factors of an ordinary
 fully shared profile as in the
@@ -213,11 +213,112 @@ Their difference at the same height is at most
 It is smaller than half either displayed gap, so the same signs
 hold after the correction (3).
 
+## The fourth-order angular model
+
+The same method gives
+\[
+ \Theta_{j,y}(\lambda)
+ =y\bigl(1+\lambda^2B_j(y)+\lambda^4 C_j(-y^2)\bigr)+O(\lambda^6)
+ \tag{9}
+\]
+at fixed degree. Write \(J=jR_j\), \(Y=z_0^2\) and normalize the
+unsigned and signed power sums by \(R_j^m\). The coefficient \(C_j(Y)\)
+is a rational polynomial homogeneous of degree two in \(J,R_j,Y\).
+It has ordinary degree at most four in the normalized moments.
+Its coefficient \(\ell^1\) norm is exactly \(43859/3240<14\).
+Consequently the leading part at fixed variance is quadratic in
+\(j,y^2\), with no residual \(R_j\) dependence except through \(J\).
+The fourth-order divided-angle coefficient \(yC_j(-y^2)\) has
+maximum weighted degree \(5/2\) when the weights of \(j,y\) are \(1,1/2\).
+
+Here is the finite symbolic calculation of \(C_j\).
+At log order \(r\), expand the centered chord polynomial
+\[
+ \frac{(-1)^{r+1}}r
+ \left(\sum_{h=0}^{k-1}h^r-\frac{k}{j}\sum_{h=0}^{j-1}h^r\right),
+ \qquad k=j/2+v .
+\]
+Multiply its even powers of \(v\) by \(V_{j,r}\) and its odd powers
+by the signed moment of degree \(r\). After substituting \(w=\lambda v\),
+take the log coefficients \(L_\ell(w)\) through \(\lambda^4\), with
+\(Rw^2/2\) removed as the leading term. Only \(r\le5\) can contribute,
+by the bound \(r+1\) for the centered polynomial degree.
+The exponential coefficients are computed by
+\[
+ E_0=1,\qquad
+ E_\ell(w)=\frac1\ell\sum_{a=1}^{\ell}a L_a(w) E_{\ell-a}(w).
+\]
+The order-\(\lambda^\ell\) polynomial of (4) is
+\[
+ P_\ell(z)=\sum_{\substack{p=0,2,4\\p\le\ell}}
+   c_p\,E_{\ell-p}(-\partial_z)H_{j+p}(z),\qquad
+ (c_0,c_2,c_4)=\left(1,\frac j{24},\frac{j(5j-2)}{5760}\right).
+ \tag{10}
+\]
+These \(c_p\) come from (5) through degree four.
+The recurrence \(H_{j+p+1}=zH_{j+p}+(j+p)R H_{j+p-1}\)
+writes every \(H_{j+p}\) as a polynomial combination of \(H_j,H_j'\).
+Its derivatives at an anchor reduce by the \(K_m\) recurrence above.
+Revert the root series through degree four: if \(b_a\) are the
+displacements already computed, then
+\[
+ b_\ell=-[\lambda^\ell]\sum_{k=0}^{\ell}\lambda^k
+    \sum_{a=0}^{\ell-k}
+    \frac{P_k^{(a)}(z_0)}{a!\,H_j'(z_0)}
+          \left(\sum_{r=1}^{\ell-1} b_r\lambda^r\right)^a.
+\]
+The symbolic check forms \(b_4/z_0\), verifies that it is even in
+\(z_0\), and substitutes \(J,Y\) and the normalized moments.
+It checks the degree and norm claims above exactly. Parity of the
+angle then gives (9). Separate finite controls expand the Gauss
+coefficients directly and revert the root series by generic
+power-series substitution in the quotient by \(H_j\).
+
+**Fourth-order model interlacing.** If \(nX\le1/1000\), the two
+maps \(y\mapsto y(1+XB_j(y)+X^2C_j(-y^2))\) preserve the same
+strict alternating order. To see this, use the outward coefficient
+norm bound \(20\). In the common range \(y^2\le4N\), every variable
+in the homogeneous part has modulus at most \(6n\) and each
+normalized moment has modulus at most one. Hence
+\[
+ |C_j(-y^2)|\le720n^2,\qquad
+ \left|\partial_y\big(y C_j(-y^2)\big)\right|\le3600n^2.
+\]
+The derivative estimate uses the factor \(1+2b\le5\) for a term
+of degree \(b\) in \(Y\).
+At fixed \(Y\), the physical variables change by
+\(|\Delta J|\le X\) and \(|\Delta R|\le1/n\).
+Their contribution to \(|\Delta C|\) is at most \(240(1+nX)\),
+by differentiating the homogeneous monomials.
+Each normalized moment changes by at most \(26X/n\), since
+\(m(1+X/n)^{m-1}\le26\) for \(m\le5,\ X\le1,\ n\ge2\).
+Thus a moment monomial changes by at most \(104X/n\), giving
+\[
+ |\Delta C|\le240(1+nX)+74880nX\le80000(1+nX).
+\]
+Put \(\chi=nX\). By (8) the two fourth-order maps have slope at
+least \(1/2\). The sum of the two order-to-order correction differences
+at the same height is bounded by
+\[
+      \bigl(\chi+25\chi^2+80000\chi^2(1+\chi)\bigr)\frac{y}{n^2}
+                  <\frac{y}{8n^2}.
+\]
+This is smaller than half either Hermite gap used above.
+The comparison, like the second-order theorem, is for the truncated
+angular model. A sufficient exact remainder bound would compare the
+two errors in (9) at each pair of neighboring anchors across the
+orders. For \(nX\le1/1000\), an absolute difference less than
+\(y/(32 n^2)\), where \(y\) is the lower-order anchor height,
+would preserve the model's inequalities. Indeed, the model retains
+at least half the Hermite gap before the common-height correction,
+and \(\tfrac18-(.001+25(.001)^2+80000(.001)^2(1+.001))>\tfrac1{32}\).
+The fixed-degree \(O(\lambda^6)\) expansion leaves this uniform
+remainder bound open.
+
 The [exact algebra checker](verify_multivariate_matched_second_order_angles.py)
-reconstructs the first three coefficients of (4) directly from
-truncated Gauss products for several rational factor lists and degrees.
-It also checks the angular formula by exact polynomial reduction
-modulo each corresponding Hermite polynomial. Replay with
+verifies the symbolic normalized quartic identities. Its independent
+finite controls pass 100 second-order and 78 fourth-order coefficient
+and root-reduction checks on rational Gauss factor lists. Replay with SymPy installed.
 
 ~~~sh
 python3 -O research/factorial/image-rigidity/verify_multivariate_matched_second_order_angles.py

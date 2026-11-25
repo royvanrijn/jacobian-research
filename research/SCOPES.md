@@ -2532,6 +2532,8 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | MOM-MATHIEU-REDUCTIVE-HOMOGENEOUS-SPACES-LEM-NORMALIZERPOSITIVE | claim | proved / partial | In the exact notation/hypotheses of ../results/mathieu-reductive-homogeneous-spaces/main.tex: For every $m\geq1$, \begin{equation} \h(P_4^m)=0,\qquad \h(Q_4P_4^m)=\beta_m =\frac{2m}{3m+1}\frac{(2m)!(4m)!}{(6m)!}>0. \end{equation} | [../results/mathieu-reductive-homogeneous-spaces/main.tex](../results/mathieu-reductive-homogeneous-spaces/main.tex): lem:normalizerpositive;line552 |
 | MOM-MATHIEU-REDUCTIVE-HOMOGENEOUS-SPACES-PROP-LINEDOUBLET | claim | proved / partial | In the exact notation/hypotheses of ../results/mathieu-reductive-homogeneous-spaces/main.tex: Suppose an irreducible $G$-module $V$ has a nonzero $H$-stable line $\C\xi$, and some homomorphism $\SL_2\to G$ has a defining two-dimensional submodule $W\subseteq V$. Then $\C[G/H]$ contains fixed functions $P,Q$ with \[ \h(P^m)=0,\qquad \h(QP^m)>0\qquad(m\geq1). \] | [../results/mathieu-reductive-homogeneous-spaces/main.tex](../results/mathieu-reductive-homogeneous-spaces/main.tex): prop:linedoublet;line675 |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-QUATERNION-NORM-TORSOR | claim | proved / partial | A quaternion norm torsor splits the quaternion algebra already over its coordinate ring. Its product with either exceptional homogeneous form is equivariantly isomorphic over the torsor to the corresponding split quotient via self-normalization, including point-free forms. The fixed split pair pulls back regularly with the same marked moments. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Regular exceptional witnesses after a quaternion norm torsor). |
+| MATHIEU-GROUND-FIELDS-EXCEPTIONAL-ROW-SHEAR-SAFETY-MARGIN | claim | proved / partial | For the published exceptional binary forms, a strict row-shear margin above the denominator boundary yields pure but safe functions. At the upper derivative threshold a compact positive square survives. In the stated band below the denominator boundary a prime-isolated unmarked moment rules out purity. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Proposition (A strict row-shear margin forces safety). |
+| MATHIEU-GROUND-FIELDS-EXCEPTIONAL-SCALAR-WEIGHT-REAL-DESCENT-OBSTRUCTION | claim | proved / partial | For the scalar substitution tagged by a compact circle weight, the real linear symmetrization of a complex pure phase has a positive moment at twice the first nonzero conditional constant weight, and its norm has a positive moment at that order. The published exceptional witnesses fail at their first such conditional order. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (The scalar weight substitution does not make a complex witness real and pure). |
 | MOMENTS-SPARSE-PARETO | claim | proved / partial | In a Gaussian Witt frame, every pure phase with both degree<=4 and at most four nonzero monomials is safe. Thus a degree-at-most-four counterexample needs at least five terms. This bound alone does not exclude a denser cubic or prove product-order Pareto minimality of a five-term quartic. | [../results/sparse-minimality-gaussian-moments-dimension-three/main.tex](../results/sparse-minimality-gaussian-moments-dimension-three/main.tex): thm:sparse |
 | MOMENTS-THREE-PAIR-FAILURE | claim | proved / partial | Explicit four-term f=tau(t-y)(wz+vt), g=y has E3(f^m)=0 and coefficient [t]E3(g f^m)=(-1)^(m-1)(m+1)!m! !=0 for every m>=1. | [../results/three-pair-image-counterexample/main.tex](../results/three-pair-image-counterexample/main.tex): thm:main |
 | MOM-MANUSCRIPT-LEM-EXCEPTIONALORBIT | claim | proved / partial | In the exact notation/hypotheses of ../results/gaussian-boundary/manuscript.tex: If $d\ne0$, every phase in \eqref{eq:shearfamily} is equivalent to $P_*$ under a complex orthogonal linear change and nonzero scalar multiplication. If $d=0$, it is one-sided in suitable Gaussian coordinates. | [../results/gaussian-boundary/manuscript.tex](../results/gaussian-boundary/manuscript.tex): lem:exceptionalorbit;line486 |
@@ -2545,6 +2547,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | MATHIEU-GROUND-FIELDS-OCTAHEDRAL-CLEARED-HEIGHT-SECOND-OBSTRUCTION | claim | proved / partial | For the displayed regular phase with \(p_2^2\) denominator clearing, arbitrary integer scalar-prefactor exponent and positive integer dilation exponent, vanishing of the first moment forces a strictly positive second moment. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): The direct denominator clearing for the octahedral height |
 | MATHIEU-GROUND-FIELDS-COMPACT-TRINOMIAL-STATIONARY-PRODUCT-OBSTRUCTION | claim | proved / partial | With a nondegenerate extremal orbit of the center and stationary opposite Laurent product, a pure trinomial must have vanishing product but cannot have both coefficients vanish at that orbit. This excludes reflection-linear phases at such an extremal orbit even when the Laurent coefficient has singular zeros. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A stationary opposite product at an axial extremum). |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-MIRROR-SUBLEVEL-OBSTRUCTION | claim | proved / partial | For a real Laurent trinomial on a compact two- or three-dimensional manifold, a high-mass small sublevel set on which the center approaches a global extremum and the opposite product approaches a constant gives a global Cauchy-transform obstruction. The squared product of intersecting mirrors on both exceptional quotients has the requisite sublevel mass. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Large sublevel mass excludes a pure trinomial). |
+| MATHIEU-GROUND-FIELDS-SCALAR-CAUCHY-NORMAL-FIELD | claim | proved / partial | A normal local constant-term Cauchy field of a rational scalar phase is rational and has degree at most the number of poles. For a two-sided Laurent phase normality forces a quadratic field and a symmetric trinomial in a scalar power, via the exact monodromy stabilizer of the small-root set. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A normal scalar Cauchy field is rational). |
 | MATHIEU-GROUND-FIELDS-ANISOTROPIC-CUBIC-REDUCED-BRANCH | claim | proved / partial | Over every characteristic-zero field, a cubic regular phase on a four-dimensional anisotropic norm quadric with a geometrically reduced cubic leading divisor on the quadric at infinity is not pure, including with arbitrary lower-degree terms. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Reduced branch divisors |
 | MATHIEU-GROUND-FIELDS-DIMENSION-FOUR-QUARTIC-K3 | claim | proved / partial | In any four-dimensional nondegenerate norm quadric over a characteristic-zero field, a quartic phase has infinitely many nonzero moments if the double cover of the quadric at infinity along the leading divisor is smooth or has only rational double points. Lower terms are arbitrary. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): An exclusion criterion for quartic phases, leading residue and K3 test |
 | MATHIEU-GROUND-FIELDS-HIGHER-DEGREE-FROBENIUS-CRITERION | claim | proved / partial | For degree at least three on a four-dimensional nondegenerate norm quadric with smooth leading divisor, the leading prime-order residue equals the Frobenius coefficient on the unique one-dimensional summand of top coherent cohomology of the associated cyclic cover. A nonzero good residue excludes purity, and weak ordinarity of the cover would imply infinitely many nonzero moments. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): A Frobenius criterion in higher degree |
@@ -3877,6 +3880,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | MATHIEU-GROUND-FIELDS-CENTRAL-SPINOR-TORSOR-LEVEL | claim | proved / partial | For the kernel-central twist of the compact Spin group of the positive n-dimensional sum of squares over a real closed field, the level of the function field is the least power of two at least n. The acting group stays anisotropic over the torsor field and thus over every invariant quotient field, identifying the boundary of the generic split construction for these twists. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Anisotropy over the central spinor-norm torsor). |
 | MATHIEU-GROUND-FIELDS-PFISTER-ORIENTED-ISOMETRY-TORSORS | claim | proved / partial | Pfister neighbours supply a generic split rank-one action on oriented isometry torsors over characteristic-zero fields. An explicit eleven-dimensional example has no rational point and both original orthogonal groups are anisotropic over the ground field. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A Pfister witness on a point-free isometry torsor). |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-GRADIENT-FOURTH-MOMENT | claim | proved / partial | The regular gradient-normalized three-term transfer fails for the basic degree-four and degree-six harmonic invariants and both mirror products. The axial test and second moment determine the two parameters, and the fourth moment is nonzero at those parameters. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A fourth-moment obstruction for the basic invariant gradients). |
+| MATHIEU-GROUND-FIELDS-EXCEPTIONAL-ORBIT-AVERAGE-SCALAR-CAUCHY-OBSTRUCTION | claim | proved / partial | The averaged sphere conditional sequence of two or more distinct axes has a normal multiquadratic scalar Cauchy field of positive genus. It cannot be realized by any rational scalar phase via local constant term, even with rational angular coefficients and arbitrary poles. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Corollary (Exact averaging of the sphere witness over distinct axes cannot be rational). |
 | MATHIEU-GROUND-FIELDS-LEGENDRE-DIRECT-CLEARING-OBSTRUCTION | claim | proved / partial | Natural denominator powers, arbitrary polynomial height factors, and rational scalar rescaling fail to regularize the transferred Legendre phase into a pure one on the four stated exceptional arrangement charts. Every regular member has nonzero moments along infinitely many multiples of every prescribed order. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Direct Legendre clearing retains nonzero pure moments). |
 | MATHIEU-GROUND-FIELDS-SIGNED-SCALAR-WIDTH-TWO-RIGIDITY | claim | proved / partial | The first five conditional moments determine the transferred Laurent phase up to scalar rescaling among support in degrees minus two through two. The pole at infinity persists and an odd order zero of the height also forces a coefficient pole. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Proposition (Uniqueness at scalar width two). |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-ANGULAR-INTERVAL-DENSITY-OBSTRUCTION | claim | proved / partial | For any finite rotation group without a common fixed point, nonconstant invariant C³ angular coordinates on the unit sphere have unbounded interval density by a local critical-point area estimate. This excludes unweighted polynomial-density witnesses from both exceptional angular quotients and forces any regular weight in that construction to vanish at saddles and degenerate critical points. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Proposition (A regular angular coordinate has no bounded interval density). |
@@ -3974,6 +3978,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | MATHIEU-GROUND-FIELDS-TORUS-QUOTIENT-BRAUER-TEST | claim | proved / partial | For any derived-invariant torus quotient over a characteristic-zero field, the Brauer kernel is the cup product of its torsor class with first cohomology of its character lattice. Exact splitting criterion for quaternion roots over finite extensions and an explicit point-free norm torsor with zero Brauer kernel. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (The Brauer test for any torus quotient). |
 | MATHIEU-GROUND-FIELDS-CLASSICAL-MIXED-SIGN-ODD-STABILIZER | claim | proved / partial | Identifies regular counterexamples on finite odd quotients of mixed-sign classical isometry torsors by stripping a common summand in the generic fibre. Applies to the non-power-of-two changed ranks of the central theorem and to orthogonal rank-two sign change with two common unit directions by the two exterior-square eigenspaces in dimension four. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Regular witnesses on mixed-sign classical twists with odd stabilizer). |
 | MATHIEU-GROUND-FIELDS-PFISTER-HERMITIAN-ISOMETRY-TORSORS | claim | proved / partial | The Pfister-neighbour quotient produces regular witnesses on hermitian isometry torsors, with explicit point-free special unitary and quaternionic examples where both original groups are anisotropic over the ground field. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (A Pfister witness on a point-free hermitian isometry torsor). |
+| MATHIEU-GROUND-FIELDS-EXCEPTIONAL-ANGULAR-WEIGHTED-DENSITY-MONODROMY | claim | proved / partial | For every nonconstant affine-linear combination of the two basic angular invariants on either full exceptional compact quotient, monodromy on affine curve homology excludes any nonzero polynomial weighted density even for unrestricted regular weights using the full quotient. Even powers of a nonzero regular real weight have positive mass. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (No polynomial weighted density for linear invariant heights). |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-CONDITIONAL-DEGREE-GROWTH | claim | proved / partial | On the full octahedral coordinate-mirror and icosahedral fifteen-mirror products, the largest balanced half-matrix degree gives the exact conditional degree slope along arbitrarily large multiples of every prescribed order. A nonconstant first conditional moment forces slopes at least two and three, respectively, excluding the full conditional Legendre sequence for any real regular Laurent phase. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (The conditional Legendre law has no regular realization). |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-FULL-PRIME-POWER-OBSTRUCTION | claim | proved / partial | On the full compact exceptional products, the highest balanced half-matrix-degree terms along a supporting line in Laurent exponent give a three-variable Frobenius carry test. A single good residue-field detection forces infinitely many global nonzero moments even with arbitrary lower terms. Includes mixed-degree examples with nonzero effective left-circle weights on both quotients. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Prime-power moments on a full exceptional quotient). |
 | MATHIEU-GROUND-FIELDS-EXCEPTIONAL-ANGULAR-NONSEPARATION | claim | proved / partial | Rules out an arbitrary separated radial scale for all nonconstant regular angular amplitudes on both exceptional charts, including mixed orientation parity. Uses octahedral node relations and the nonisotrivial icosahedral mirror curve. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Neither exceptional angular chart has a separated radial moment law). |
@@ -4206,6 +4211,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | RHT-ALL-FIELD-ALL-EXTENSION-FINITE-ETALE-MARKED-TRACE | claim | proved / partial | For ANY char0 K, ANY extension L/K, arbitrary elements of A_L,B_L, ANY finite-etale q between TWO GIVEN affine reductive homogeneous varieties, Lambda_Z(h q*a)=Lambda_X(Tq(h)a), Tq=Tr/d. Extend to algebraic closure, use geometric theorem and matrix/normalized trace base-change, then faithfully descend. No cover/lift descends as an assumption. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section25.4 E1--E2 |
 | MATHIEU-GROUND-FIELDS-CLASSICAL-CONNECTED-REPEATED-BLOCK-STABILIZERS | claim | proved / partial | At the diagonal block thresholds, compact connected standard classical subgroups repeated on the positive source blocks yield point-free homogeneous quotients with regular counterexamples and exact invariant level er. The generic stabilizer is trivial by an invertible-matrix line in a first-block plane. At minimal ambient rank the commuting identity component is compact. Includes quaternionic rank three with connected Sp(1) stabilizer. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Regular witnesses with connected compact stabilizer and commutant). |
 | RHT-FINITE-ETALE-ONE-FIXED-MARKER-EXACT-ORDERS | claim | proved / partial | For EVERY phase f downstairs and ONE fixed h upstairs, ALL r>=0 give Lambda_Z(h(q*f)^r)=Lambda_X(Tq(h)f^r). Tq(h) is ONE fixed downstairs marker and the complete surviving-order set is identical. Conversely downstairs a uses q*a because Tq(q*a)=a. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section25.4 E3 |
+| MATHIEU-GROUND-FIELDS-QUATERNIONIC-ODD-SIGN-COMPLEX-UNITARY-STABILIZER | claim | proved / partial | For quaternionic Hermitian isometry torsors with the indicated determinant class and five-square standard subform, a generic two-plane comparison gives a split generic fibre for complex special-unitary stabilizers. In odd sign rank and ambient rank at least four it covers all reductive subgroups of the complex-unitary source, with no fixed source line required, and gives exact level. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (Two complementary planes give regular witnesses on odd quaternionic twists). |
 | RHT-DESCENDING-FINITE-QUOTIENT-PHASE-MARKER-DESCENT | claim | proved / partial | No arbitrary phase is made invariant by phase averaging. For a phase already descending through finite-etale q BETWEEN TWO given reductive homogeneous varieties/forms, Tq pushes ANY fixed upstairs marker down with identical moments; no preexisting invariant marker is required. This is conditional fixed-witness transport, not creation of a pure unsafe starting phase. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Sections8,12,22,25.4 |
 | RHT-FINITE-ETALE-PURITY-FORWARD | claim | proved / partial | For each fixed downstairs f, purity implies purity of q*f by the h=1 unmarked moment identity. No pure starting phase is seeded. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section25.4 |
 | RHT-FINITE-ETALE-PURITY-REVERSE | claim | proved / partial | For each fixed downstairs f, purity of q*f implies purity of f by the same scalar moment identity, read in reverse. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section25.4 |
@@ -4213,8 +4219,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | RHT-FINITE-ETALE-SAFETY-REVERSE | claim | proved / partial | For each fixed downstairs f, safety of q*f implies safety of f: pull each fixed downstairs a up to q*a and use Tq(q*a)=a. Cutoff may depend on that fixed marker. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section25.4 |
 | RHT-FINITE-ETALE-UNSAFETY-FORWARD | claim | proved / partial | A given downstairs fixed unsafe marker a pulls to q*a with identical surviving orders. This is an implication for a GIVEN witness, not creation of one. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section25.4 |
 | RHT-FINITE-ETALE-UNSAFETY-REVERSE | claim | proved / partial | A GIVEN upstairs fixed unsafe h pushes to Tq(h) with identical infinite surviving orders, so Tq(h)!=0. No witness is inferred from the theorem alone. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section25.4 |
+| MATHIEU-GROUND-FIELDS-QUATERNIONIC-SPECIAL-UNITARY-DOUBLE-QUOTIENT-RATIONALITY | claim | proved / partial | For the quaternionic sign torsor, the invariant field of the full source and target special unitary subgroups is purely transcendental of degree n+2 for n at least two. Invariants are the symmetric spectral coordinates and two determinant coordinates, with conjugation expressed by two norm relations. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Theorem (The full special-unitary double quotient has a rational invariant field). |
 | RHT-FINITE-ETALE-PURE-SAFE-UNSAFE-IFF | claim | proved / partial | The six separately proved directions yield fixed-phase purity/safety/unsafety iff under finite-etale pullback; pure unsafety likewise. Only two varieties with GIVEN reductive homogeneous presentations are asserted. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section25.4 |
+| MATHIEU-GROUND-FIELDS-QUATERNIONIC-RANK-THREE-FULL-SPECIAL-UNITARY-BOUNDARY | claim | proved / partial | For odd negative rank in quaternionic rank three, the quotient by any geometrically proper reductive subgroup of the source special unitary group has a regular witness. For the full source special unitary subgroup, no compact target reductive subgroup gives an active generic split action, by rationality and a comparison twist for the symplectic rank-two subgroup. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Corollary (The rank-three compact-subgroup test has one complex-unitary boundary). |
 | RHT-GEOMETRIC-FORM-FINITE-ETALE-MARKED-TRACE | claim | proved / partial | For ANY finite-etale q BETWEEN TWO geometrically homogeneous affine K-forms as stated, E1--E3 and all fixed-phase iff consequences descend from algebraic closure using normalized trace and finite-locally-free matrix trace base-change. Neither form needs a K-point or a K-quotient presentation. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section26 |
+| MATHIEU-GROUND-FIELDS-QUATERNIONIC-RANK-THREE-AFFINE-SPECTRAL-MOMENTS | claim | proved / partial | On the remaining full special-unitary rank-three quotient, the first four moments rule out every nonzero affine-linear phase in the spectral sum and the real components of both determinant coordinates. The compact-reference calculation uses the exact ordered Jacobi law and independent determinant phases. | [foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md): Proposition (The elementary spectral and determinant coordinates give no affine pure phase). |
 | GAUSSIAN-ORDINARY-BINOMIAL-TWO-DIMENSIONAL-RADIAL-SCHEME | claim | proved / complete | For independent standard Gaussian X,Y and T=(X^2+Y^2)/2, the phase T^a(A+B T^d) has the exact ordinary moments at every order. For each support and terminal M>=2, the consecutive moment ideal has Hilbert series (1+...+t^(M-2))(1+...+t^(M-1)) and length M(M-1). Over every commutative Q-algebra vanishing at M-1,M forces coefficient-ideal and literal phase power 2M-2 to vanish. | [factorial/image-rigidity/ORDINARY_BINOMIAL_MOMENT_SCHEMES_AND_GAUSSIAN_TRANSFER.md](factorial/image-rigidity/ORDINARY_BINOMIAL_MOMENT_SCHEMES_AND_GAUSSIAN_TRANSFER.md): Two literal Gaussian laws |
 | GAUSSIAN-ORDINARY-BINOMIAL-TWO-BLOCK-DIAGONAL-SCHEME | claim | proved / complete | For independent standard Gaussian X,Y,Z, U=X^2(Y^2+Z^2) has moment (2k)! at order k. For U^a(A+B U^d) the moment quotient is exactly the ordinary (2a,2d) quotient. For each support and terminal M>=2, the consecutive moment ideal has Hilbert series (1+...+t^(M-2))(1+...+t^(M-1)) and length M(M-1). Over every commutative Q-algebra vanishing at M-1,M forces coefficient-ideal and literal phase power 2M-2 to vanish. | [factorial/image-rigidity/ORDINARY_BINOMIAL_MOMENT_SCHEMES_AND_GAUSSIAN_TRANSFER.md](factorial/image-rigidity/ORDINARY_BINOMIAL_MOMENT_SCHEMES_AND_GAUSSIAN_TRANSFER.md): Two literal Gaussian laws |
 | GAUSSIAN-ORDINARY-BINOMIAL-SHARP-ORIGINAL-MARKED-CUTOFF | claim | proved / complete | In either stated radial binomial family, at each support and M>=2 the two unmarked equations force all original-marked moments of H^r to vanish for r>=2M-2 over every commutative Q-algebra. At r=2M-3 a rational original marker survives in the universal quotient. | [factorial/image-rigidity/ORDINARY_BINOMIAL_MOMENT_SCHEMES_AND_GAUSSIAN_TRANSFER.md](factorial/image-rigidity/ORDINARY_BINOMIAL_MOMENT_SCHEMES_AND_GAUSSIAN_TRANSFER.md): Two literal Gaussian laws |
@@ -9785,13 +9794,13 @@ Tracked obligations from the catalogue:
 
 [All-order two-sided transfer for matched tanh moments](factorial/image-rigidity/MULTIVARIATE_MATCHED_TANH_MOMENTS.md)
 
-**Exact scope:** Matched ordinary Gauss factors at orders n and n+1 satisfy an exact tanh ratio identity. It gives support-independent errors for signed moments and valid Jensen lower bounds for unsigned defect moments.
+**Exact scope:** Matched ordinary Gauss factors at orders n and n+1 satisfy an exact tanh ratio identity. It gives support-independent errors for signed moments and valid Jensen lower bounds for unsigned defect moments. The exact tanh-coordinate transfer strictly increases unsigned power sums and yields a signed error bounded by one higher unsigned moment. Signed second moments can reverse sign even at arbitrarily small curvature.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** DERIVE-FACTORIAL-MULTIVARIATE-MATCHED-TANH-MOMENTS (stale).
+**Current blockers:** none in declared routes.
 
 ### FACTORIAL-MULTIVARIATE-TERMINAL-NINE-SHARED-MATCHED-LIGHT
 
@@ -9799,11 +9808,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Fully shared ordinary profiles with order-eight reciprocal cap 1/8 and 9/100<=u<=11/25 have disjoint root arguments at terminal nine.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** DERIVE-FACTORIAL-MULTIVARIATE-MATCHED-TANH-MOMENTS (stale).
+**Current blockers:** none in declared routes.
 
 ### FACTORIAL-MULTIVARIATE-TERMINAL-NINE-UPPER-MARKED-ROWS
 
@@ -9823,11 +9832,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Every fully shared ordinary profile with reciprocal cap 1/8 and u from .44 through .48 has disjoint root arguments at terminal nine.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** DERIVE-FACTORIAL-MULTIVARIATE-MATCHED-TANH-MOMENTS (stale).
+**Current blockers:** none in declared routes.
 
 ### FACTORIAL-MULTIVARIATE-TERMINAL-NINE-RETAINED-BANDS
 
@@ -9858,6 +9867,90 @@ Tracked obligations from the catalogue:
 [Terminal-nine angular separation with a marked (2,3) row](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_MARKED_TWO_THREE.md)
 
 **Exact scope:** For fully shared ordinary profiles with u>=19/25, a row with entries (2,3) in either orientation suffices for order-eight and order-nine argument separation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-NINE-NEAR-FLAT
+
+[Terminal-nine angular separation from outer mean .95 to the flat limit](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_NEAR_FLAT.md)
+
+**Exact scope:** The order-eight and order-nine ordinary factorial moments of every fully shared distinct binomial have disjoint root arguments when the order-eight outer mean u is at least 19/20.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-MATCHED-TANH-INDEPENDENT-ERROR-OBSTRUCTION
+
+[Independent coefficient boxes can admit false shared roots at every even lower order from 28](factorial/image-rigidity/MULTIVARIATE_MATCHED_TANH_MOMENTS.md)
+
+**Exact scope:** With the exact factor moments fixed at genuine mirrored ordinary profiles, the finite quadratic exponential model with independent coefficient remainder intervals admits a common nonreal root at every fixed even lower order n>=28. The example preserves reciprocal symmetry, positive coefficients, strict logarithmic convexity and strict real-axis positivity of the lower polynomial.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-NINE-SHARED-MATCHED-UPPER
+
+[Matched terminal-nine light-ray bands from outer mean .48 to .76](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_UPPER.md)
+
+**Exact scope:** The ordinary fully shared moment pair at orders 8 and 9 separates on [.48,.55], [.55,.62], [.62,.70] and [.70,.76] under the respective reciprocal caps 1/8, 1/10, 3/40 and 11/200.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-MATCHED-LOW-ORDER-ANGULAR-MODELS
+
+[Matched second- and fourth-order angular model interlacing in every degree](factorial/image-rigidity/MULTIVARIATE_MATCHED_SECOND_ORDER_ANGLES.md)
+
+**Exact scope:** For every n>=2 and fully shared ordinary factorial profile, the matched truncated second and fourth angular models interlace under nX<=1/100 and nX<=1/1000 respectively. The uniform remainder needed to transfer the assertion to exact angles remains open.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-NINE-MIDUPPER-BRIDGE
+
+[Unrestricted fully shared terminal nine from outer mean .76 to .88](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_MIDUPPER_BRIDGE.md)
+
+**Exact scope:** For ordinary fully shared profiles with 19/25<=u<=22/25, the order-eight and order-nine polynomials have disjoint root arguments without a reciprocal cap.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-NINE-RETAINED-MID-BAND
+
+[Terminal-nine shared band from .55 to .62 at reciprocal cap 1/8](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_MID_BAND.md)
+
+**Exact scope:** For ordinary fully shared profiles with .55<=u<=.62 and maximal reciprocal at most 1/8, the order-eight and order-nine root arguments are disjoint.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TERMINAL-NINE-COMPLETE
+
+[Terminal nine for every ordinary multivariate two-monomial profile](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_ALL_PROFILES.md)
+
+**Exact scope:** For every distinct ordinary support pair in any finite dimension, the order-eight and order-nine moment polynomials have disjoint root arguments under independent positive rescalings. Their rational Bezout identity transfers coprimality to every characteristic-zero field.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -9950,6 +10043,7 @@ Tracked obligations from the catalogue:
 | FACT-MULTIVARIATE-LINKED-GAMMA-LARGE-OUTER-LOSS | claim | proved / partial | For the enlarged linked Gamma model and n>=2, the bound u^(2/(n+1))<=1/(8n(n+1)) suffices for disjoint root arguments at the consecutive orders. | [factorial/image-rigidity/MULTIVARIATE_LINKED_GAMMA_ANGLE_COMPACTIFICATION.md](factorial/image-rigidity/MULTIVARIATE_LINKED_GAMMA_ANGLE_COMPACTIFICATION.md): Explicit large outer loss in every degree |
 | FACT-MULTIVARIATE-LOG-FACTORIAL-INTEGRAL | claim | proved / partial | The logarithm of the ordinary factorial is the finite sum of the logarithm Laplace integrals in (5). | [factorial/image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md): A common measure for all orders, equation (5) |
 | FACT-MULTIVARIATE-MARKED-ROW-EISENSTEIN-VALUATIONS | claim | proved / partial | The prime interval ensures a unit at the constant term and valuation one for all other factorial terms at the terminal, after an affine rescaling if needed. | [factorial/image-rigidity/MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md](factorial/image-rigidity/MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md): Marked-row inequality and its Eisenstein proof |
+| FACT-MULTIVARIATE-MATCHED-LOW-ORDER-ANGULAR-MODELS-REPLAY | claim | proved / partial | The normalized quartic coefficient has degree two and exact coefficient norm 43859/3240. The independent finite expansions verify 100 second-order and 78 fourth-order root-coefficient controls. | [factorial/image-rigidity/MULTIVARIATE_MATCHED_SECOND_ORDER_ANGLES.md](factorial/image-rigidity/MULTIVARIATE_MATCHED_SECOND_ORDER_ANGLES.md): Exact angular coefficient, Comparison across the two orders, and The fourth-order angular model; [factorial/image-rigidity/verify_multivariate_matched_second_order_angles.py](factorial/image-rigidity/verify_multivariate_matched_second_order_angles.py): Exact symbolic checks of matched angular model coefficients |
 | FACT-MULTIVARIATE-MIRRORED-TERMINAL-SIX-ANGLE-CERTIFICATE | claim | proved / partial | The mirrored ratio bounds allow an angle quadratic and angle cubic whose values strictly alternate at the two roots of the quadratic. The outward-rounded Arb replay covers all parameter ranges in 7,849 rectangles. | [factorial/image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md](factorial/image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md): The interval certificate for the signs; [factorial/image-rigidity/verify_multivariate_mirrored_terminal_six.py](factorial/image-rigidity/verify_multivariate_mirrored_terminal_six.py): Three covering interval branches |
 | FACT-MULTIVARIATE-MIRRORED-UNIT-GAP-AMPLITUDE-SEPARATION | claim | proved / partial | For the shared mirrored unit-gap family in the exact phase-match example, the squared Gaussian amplitudes of two distinct stationary fiber points cannot have positive ratio. In particular even arbitrary nonzero integer contour weights cannot satisfy the necessary equal-degree amplitude condition. | [factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_SADDLE_PHASE_MATCH.md](factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_SADDLE_PHASE_MATCH.md): The squared Gaussian amplitudes are separated |
 | FACT-MULTIVARIATE-MIXED-UNIT-GAP-EULERIAN-RESIDUALS | claim | proved / partial | At odd prime terminal p, balanced increasing and decreasing unit gaps with the stated base bounds and minima are coprime when j=0 or the stated Eulerian residual test succeeds, including the explicit resultant sufficient bound. | [factorial/image-rigidity/MULTIVARIATE_UNIT_GAP_PRIME_TERMINALS.md](factorial/image-rigidity/MULTIVARIATE_UNIT_GAP_PRIME_TERMINALS.md): Equal numbers of increasing and decreasing rows |
@@ -9995,13 +10089,17 @@ Tracked obligations from the catalogue:
 | FACT-MULTIVARIATE-TERMINAL-NINE-HERMITE-NEAR-FLAT-REPLAY | claim | proved / partial | The rational replay isolates 17 distinct Hermite heights and verifies X_8 <= 2^-104. | [factorial/image-rigidity/MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md](factorial/image-rigidity/MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md): Transfer to root arguments and a reproducible bound; [factorial/image-rigidity/verify_multivariate_fixed_terminal_hermite.py](factorial/image-rigidity/verify_multivariate_fixed_terminal_hermite.py): Exact terminal-nine Hermite radius |
 | FACT-MULTIVARIATE-TERMINAL-NINE-HIGH-CURVATURE-REPLAY | claim | proved / partial | 92 exact radial cells across seven rational rays at both orders. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_HIGH_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_HIGH_CURVATURE.md): Curvature cap, exact fixed rays, and binomial anchor sectors; [factorial/image-rigidity/verify_multivariate_terminal_nine_high_curvature.py](factorial/image-rigidity/verify_multivariate_terminal_nine_high_curvature.py): Exact terminal-nine fixed-ray replay |
 | FACT-MULTIVARIATE-TERMINAL-NINE-MARKED-TWO-THREE-REPLAY | claim | proved / partial | Exact comparison on 327,949 Cayley cells across 350 order, ray and subband checks, with two core anchors. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_MARKED_TWO_THREE.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_MARKED_TWO_THREE.md): The residual reciprocal bound, The two linked coefficient arrays, and Cayley exclusions and the anchor; [factorial/image-rigidity/verify_multivariate_terminal_nine_marked_two_three.py](factorial/image-rigidity/verify_multivariate_terminal_nine_marked_two_three.py): Exact terminal-nine marked (2,3) ray certificate |
+| FACT-MULTIVARIATE-TERMINAL-NINE-MIDUPPER-BRIDGE-REPLAY | claim | proved / partial | 3,785,361 exact projection cells across 168 order, ray and subband checks with exact sector anchors. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_MIDUPPER_BRIDGE.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_MIDUPPER_BRIDGE.md): Ordinary reciprocal caps and Coefficient enclosure and ray continuity; [factorial/image-rigidity/verify_multivariate_terminal_nine_midupper_bridge.py](factorial/image-rigidity/verify_multivariate_terminal_nine_midupper_bridge.py): Exact terminal-nine middle-upper Cayley checks |
+| FACT-MULTIVARIATE-TERMINAL-NINE-NEAR-FLAT-REPLAY | claim | proved / partial | 53,298 exact Cayley projection cells across all fourteen paired ray checks with Hermite anchors. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_NEAR_FLAT.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_NEAR_FLAT.md): Common scale, grouped Cayley cancellations, leading dominance and ray separation; [factorial/image-rigidity/verify_multivariate_terminal_nine_near_flat.py](factorial/image-rigidity/verify_multivariate_terminal_nine_near_flat.py): Exact terminal-nine near-flat Cayley replay |
 | FACT-MULTIVARIATE-TERMINAL-NINE-PRIVATE-LINEAR-REPLAY | claim | proved / partial | 700 row types, 92 high-strength and 13,399 low-strength radial cells. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_PRIVATE_LINEAR.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_PRIVATE_LINEAR.md): Shared reciprocal bounds, common log moment envelope and strict Bernstein rays; [factorial/image-rigidity/verify_multivariate_terminal_nine_private_linear.py](factorial/image-rigidity/verify_multivariate_terminal_nine_private_linear.py): Terminal-nine one-private-linear replay |
 | FACT-MULTIVARIATE-TERMINAL-NINE-PRIVATE-ROWS-REPLAY | claim | proved / partial | 420 row-index inequalities, 7 skew tests, 848 high, 6,376 shared-curvature and 8,077 outer-mean radial cells. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_PRIVATE_ROWS.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_PRIVATE_ROWS.md): Private allocation bounds, high and shared-curvature strips, and linked outer-mean projections; [factorial/image-rigidity/verify_multivariate_terminal_nine_private_rows.py](factorial/image-rigidity/verify_multivariate_terminal_nine_private_rows.py): Exact terminal-nine private-row replay |
 | FACT-MULTIVARIATE-TERMINAL-NINE-RETAINED-BANDS-REPLAY | claim | proved / partial | Exact comparisons of retained factors, both annular tests and paired ray signs on three closed bands. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_BANDS.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_BANDS.md): Finite enumeration and tighter tail cap and Annuli and paired rays; [factorial/image-rigidity/verify_multivariate_terminal_nine_retained_bands.py](factorial/image-rigidity/verify_multivariate_terminal_nine_retained_bands.py): Exact terminal-nine two-scale retained bands |
+| FACT-MULTIVARIATE-TERMINAL-NINE-RETAINED-MID-BAND-REPLAY | claim | proved / partial | 18,768 light-row radial cells, exact enumeration of four lists, 951 radial cells for three lists, and 6,461 matched cells for the marked singleton. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_MID_BAND.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_MID_BAND.md): Exact retained lists and The marked unit row; [factorial/image-rigidity/verify_multivariate_terminal_nine_retained_mid_band.py](factorial/image-rigidity/verify_multivariate_terminal_nine_retained_mid_band.py): Exact enumeration and paired marked projections on the .55 to .62 band |
 | FACT-MULTIVARIATE-TERMINAL-NINE-RETAINED-ROWS-REPLAY | claim | proved / partial | 93 nonempty retained lists, 280 outer-mean cells, and 25,837 exact radial cells. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_ROWS.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_ROWS.md): Retained factors and the tail and Two ray bounds on the same coefficient arrays; [factorial/image-rigidity/verify_multivariate_terminal_nine_retained_rows.py](factorial/image-rigidity/verify_multivariate_terminal_nine_retained_rows.py): Terminal-nine retained-row replay |
 | FACT-MULTIVARIATE-TERMINAL-NINE-SHARED-HIGH-CURVATURE-REPLAY | claim | proved / partial | 14,738 exact radial cells, with the squared other-row loss 7/8 and all seven separating rays. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_HIGH_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_HIGH_CURVATURE.md): Outer-mean row caps, linked coefficients and exact ray replay; [factorial/image-rigidity/verify_multivariate_terminal_nine_shared_high_curvature.py](factorial/image-rigidity/verify_multivariate_terminal_nine_shared_high_curvature.py): Terminal-nine shared high-curvature replay |
 | FACT-MULTIVARIATE-TERMINAL-NINE-SHARED-MATCHED-EXTENSION-REPLAY | claim | proved / partial | 7,977 and 12,544 exact radial cells on the two extension bands. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_EXTENSION.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_EXTENSION.md): Independent enlarged annulus and the matched seven continuing rays; [factorial/image-rigidity/verify_multivariate_terminal_nine_shared_matched_extension.py](factorial/image-rigidity/verify_multivariate_terminal_nine_shared_matched_extension.py): Exact terminal-nine paired continuation |
 | FACT-MULTIVARIATE-TERMINAL-NINE-SHARED-MATCHED-LIGHT-REPLAY | claim | proved / partial | 20,351 exact radial cells and two Gaussian anchors. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md): Matched skew parameter and Exact projection and continuation; [factorial/image-rigidity/verify_multivariate_terminal_nine_shared_matched_light.py](factorial/image-rigidity/verify_multivariate_terminal_nine_shared_matched_light.py): Terminal-nine matched light replay |
+| FACT-MULTIVARIATE-TERMINAL-NINE-SHARED-MATCHED-UPPER-REPLAY | claim | proved / partial | 83,981 outward-dyadic projection cells in four closed bands with exact Gaussian anchors and annuli. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_UPPER.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_UPPER.md): Ordinary reciprocal bounds and Common coefficient and ray displacement; [factorial/image-rigidity/verify_multivariate_terminal_nine_shared_matched_upper.py](factorial/image-rigidity/verify_multivariate_terminal_nine_shared_matched_upper.py): Exact fused coefficient and ray replay; [factorial/image-rigidity/verify_multivariate_terminal_nine_shared_matched_upper.cpp](factorial/image-rigidity/verify_multivariate_terminal_nine_shared_matched_upper.cpp): Optional checked native Bernstein projection arithmetic |
 | FACT-MULTIVARIATE-TERMINAL-NINE-SMALL-OUTER-REPLAY | claim | proved / partial | 28 exact outer-mean cells, 3,164 radial cells and rigorous Gaussian anchor balls. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SMALL_OUTER.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_SMALL_OUTER.md): Joint bounds from the same outer mean and Gaussian anchors and exact ray replay; [factorial/image-rigidity/verify_multivariate_terminal_nine_small_outer.py](factorial/image-rigidity/verify_multivariate_terminal_nine_small_outer.py): Terminal-nine small outer-mean replay |
 | FACT-MULTIVARIATE-TERMINAL-NINE-UPPER-BRIDGE-REPLAY | claim | proved / partial | 1,896,328 exact projection cells across 196 order, ray and subband checks on 14 closed subbands, with exact anchor signs and leading dominance. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_UPPER_BRIDGE.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_UPPER_BRIDGE.md): Bounds on ordinary reciprocals, Interval coefficient model and ray exclusion, and Sector counts; [factorial/image-rigidity/verify_multivariate_terminal_nine_upper_bridge.py](factorial/image-rigidity/verify_multivariate_terminal_nine_upper_bridge.py): Exact terminal-nine upper interval projections |
 | FACT-MULTIVARIATE-TERMINAL-NINE-UPPER-MARKED-ROWS-REPLAY | claim | proved / partial | 36 octic and 48 nonic disk intervals for (3,4), and 46 each for (4,5). | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_UPPER_MARKED_ROWS.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_NINE_UPPER_MARKED_ROWS.md): Residual profiles and their coefficient enclosures and exact marked root disks; [factorial/image-rigidity/verify_multivariate_terminal_nine_upper_marked_rows.py](factorial/image-rigidity/verify_multivariate_terminal_nine_upper_marked_rows.py): Terminal-nine marked unit-row replay |
@@ -11104,7 +11202,7 @@ Tracked obligations from the catalogue:
 - **GAP-ORDINARY-LOWER-FOUR-THREE-GAP-COPRIMALITY** (mathematical; proved / discharged): For a=4 and d in {6,9,10}, the actual ordinary rational pair is coprime throughout the former residual range 13<=N<N_*, where N_* is the earlier uniform cutoff.
 - **GAP-ORDINARY-LOWER-FOUR-TWO-GAP-COPRIMALITY** (mathematical; proved / discharged): For a=4 and d in {6,10}, the actual ordinary rational pair is coprime throughout the former residual range 13<=N<N_*, where N_* is the earlier uniform cutoff.
 - **GAP-ORDINARY-LOWER-FOUR-GAP-SIX-COPRIMALITY** (mathematical; proved / discharged): For a=4,d=6, the actual ordinary rational pair is coprime throughout the former residual range 13<=N<N_*, where N_* is the earlier uniform cutoff.
-- **GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC** (mathematical; open): Every nonzero ordinary two-monomial polynomial in any finite dimension and over every characteristic-zero field has a nonzero factorial moment in every consecutive pair of positive orders. Terminals 2 through 8, the entire univariate case, and a computable absolute eventual range are proved. Open cases start at terminal 9.
+- **GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC** (mathematical; open): Every nonzero ordinary two-monomial polynomial in any finite dimension and over every characteristic-zero field has a nonzero factorial moment in every consecutive pair of positive orders. Terminals 2 through 9, the entire univariate case, and a computable absolute eventual range are proved. Open cases start at terminal 10.
 
 Tracked obligations from the catalogue:
 
@@ -11133,7 +11231,7 @@ Tracked obligations from the catalogue:
 - **GAP-ORDINARY-BINOMIAL-ALL-ORDER-SQUAREFREENESS — mathematical; open.** [Decide whether the actual repeated-root triple set is EMPTY: for EVERY integer a>=0,d>=1,m>=2, prove gcd_Q(A_(m;a,d),A_(m;a,d)_prime)=1, or exhibit an actual repeated-root triple. A support-uniform eventual cutoff and finiteness of this set do not prove emptiness.](factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md)
 - **GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF — mathematical; open.** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md)
 - **GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY — mathematical; open.** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](factorial/image-rigidity/canonical-density/moment_pair_obstructions.md)
-- **GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC — mathematical; open.** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=9 below the computable absolute cutoff.](factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md)
+- **GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC — mathematical; open.** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=10 below the computable absolute cutoff.](factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md)
 
 ## Dixmier and Weyl algebras
 
@@ -21802,6 +21900,160 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
+### ARITH-ABC-ABELIAN-POINTS-OVER-BOUNDED-PRIME-POWER-EXTENSIONS
+
+[Uniform height count on a fixed abelian variety over moving prime-power extensions](arithmetic/ABC_EUCLIDEAN_GRID_POINT_COUNTS.md)
+
+**Exact scope:** For fixed A/K, prime ell and degree cap d on a containing Galois ell-extension, the canonical-height B count over each subfield is exp(O(B/log(2+B))) uniformly. The rank bound uses each subfield's own discriminant, and small intra-ball differences live in proper subfields.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-EUCLIDEAN-PRIME-PRIMARY-VALUATION-GRID-COUNTS
+
+[Bounded-height Euclidean prime-primary valuation-grid counts](arithmetic/ABC_EUCLIDEAN_GRID_POINT_COUNTS.md)
+
+**Exact scope:** On (3,3,3) and (2,4,4), up to permutation and multiples, a prescribed defective support S allows exp(O(1+omega(S)+log X/loglog(10X))) primitive triples. Summing defects up to X^(f lambda) costs X^(f lambda+epsilon), and the same exponent transfers to minimally repaired primitive quotients. The two signature bounds also follow from fixed-base elliptic point counts.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-LEGENDRE-FOURTH-DETERMINANT-PARITY-COUNT
+
+[A parity saving from one additional radical-capped determinant](arithmetic/ABC_EUCLIDEAN_GRID_POINT_COUNTS.md)
+
+**Exact scope:** The three primitive squarefree kernels have joint cap X^(f lambda). A reduced slope r of height X^(tau lambda) supplies a nonzero determinant with squarefree kernel at most X^(g lambda). The count is O_epsilon(X^((f+g+3tau)lambda+epsilon)) via rational two-torsion on the corresponding Legendre twist.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-THREE-SQUARE-KERNEL-AFFORDABLE-PROJECTIVE-LOCK-SAVING
+
+[A uniform small-budget saving for small joint squarefree kernels](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md)
+
+**Exact scope:** For absolute f,delta,lambda0>0, primitive triples of fixed radical budget lambda<lambda0 and joint squarefree kernels at most c^(f lambda) count O_(lambda,epsilon)(X^((1/3−delta)lambda+epsilon)). Cassels supplies a controlled conic; actual full divisors and short real charts give parameter uniqueness, uniformly across the balanced profile shapes and prime sizes.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-ODD-PRIME-CHARGED-PROJECTIVE-SELECTOR
+
+[Full odd-valuation powers count toward projective parameter recovery](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md)
+
+**Exact scope:** For joint odd radical mass f, full odd numerical weight W and smallest height h, one may record the exact powers on the kernel support for subpower cost. With maximum even-prime normalized mass tau, W<=h and the box allowances, the selector costs f+(h−W)(1−f)/(2+h−W)+tau. For W>h by a margin the cost is f.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-SHIFT-DICTIONARY-DUAL-WEIGHTED-DIFFERENCE-CODEGREES
+
+[Weighted power differences bound column-pair codegrees with varying shifts](arithmetic/ABC_SHIFT_DICTIONARY_WEIGHTED_CODEGREES.md)
+
+**Exact scope:** For primitive columns (y,k) and target T=Fxy±Gk=Wz^q, the recorded row (x,W,q) has subpower column-pair codegree by the nonzero difference determinant. M<=X^epsilon(P+B sqrt(P)) for recorded row count P and column count B. The bound covers q varying up to O(log X).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-FIXED-COLUMN-TARGET-COFACTOR-RATIO-CODEGREES
+
+[Target cofactor ratios bound column-pair codegrees before recording their cofactors](arithmetic/ABC_SHIFT_DICTIONARY_WEIGHTED_CODEGREES.md)
+
+**Exact scope:** For monochromatic target power order q in a column-pair star, the normalized cofactor ratio and a divisor of the column determinant determine subpower many rows. This gives an averaged ratio-dictionary Cauchy bound and applies to separable cofactors.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-MINIMUM-ENDPOINT-COFACTOR-DICTIONARY-FULL-SIZE
+
+[Complete-label saturation forces the target power-cofactor dictionary to full capacity](arithmetic/ABC_SHIFT_DICTIONARY_WEIGHTED_CODEGREES.md)
+
+**Exact scope:** On the minimum nonatomic complete-label endpoint, a cofactor dictionary of exponent u gives exponent at most max(1/6+u,1/4+u/2). Saturation forces u>=1/6 and at exponent 1/8 the local count is 5/16.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-NONDEGENERATE-PATTERNED-POWER-RELATION-COUNT
+
+[Uniform nondegenerate power counts from exclusive coordinate zeros](arithmetic/ABC_NONDEGENERATE_POWER_COLLISIONS.md)
+
+**Exact scope:** For pairwise coprime integral coordinates of height H and a nondegenerate s-term weighted monomial relation, each exponent spread at least E, the count is O(H^(C_(m,s) E^(−1/(2(m−1)))+epsilon)) for fixed exponents and arbitrary coefficients. A low-degree component without an exclusive coordinate zero gives fixed prime supports by arithmetic Nullstellensatz, while a component with such a zero has degree of order at least sqrt(E).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-PRIMITIVE-MIXED-OFFDIAGONAL-HIGH-VALUATION-PATTERNS
+
+[Mixed off-diagonal power collisions with shared selected prime factors](arithmetic/ABC_NONDEGENERATE_POWER_COLLISIONS.md)
+
+**Exact scope:** After selecting bounded lists of high valuation positions of masses alpha_A,alpha_B in two dictionaries of caps l_A,l_B, pairwise incidence splitting gives off-diagonal exponent 2(l_A+l_B−alpha_A−alpha_B)+o(1). The argument also allows a slowly growing pattern count. It leaves the diagonal distinct-target obstruction and does not eliminate fully diffuse saturation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-SPARSE-HIGH-VALUATION-POSITIONS-UNIFORM-SAVING
+
+[A small-budget saving for arbitrary sparse high valuation positions](arithmetic/ABC_NONDEGENERATE_POWER_COLLISIONS.md)
+
+**Exact scope:** For fixed kappa,eta>0 and E=ceil(kappa/lambda), at most c log E/loglog E selected letter-degree positions of order at least E may retain all but defect radical X^((1/3−eta)lambda). The primitive count is X^((1/3−eta/2)lambda+epsilon) for sufficiently small fixed lambda. Indices above a fixed inner cutoff are moved to the defect cheaply using actual height. No divisibility or mesh hypothesis.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -21958,6 +22210,8 @@ Tracked obligations from the catalogue:
 | EXT-ABC-BEHREND-NEAR-LINEAR-PROGRESSION-FREE-SETS | claim | proved / partial | For all sufficiently large N there is a subset of [1,N] of cardinality N^(1-o(1)) containing no nontrivial three-term arithmetic progression. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Limits of the graph condition |
 | EXT-ABC-BELYI-THREE-POINT-DESCENT | claim | proved / partial | A finite connected cover of the projective line branched only at 0,1,infinity admits a model over a number field, with deck transformations defined after a fixed extension. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A three-point cover with a p-group, Belyi §4 and its forward direction |
 | EXT-ABC-BRIGHT-ENDPOINT-LOWER-BOUND | claim | proved / partial | For infinitely many positive primitive abc triples, c/rad(abc) >= exp(C sqrt(log c)/log log c) for an explicit positive constant C. | [arithmetic/sources/bright-abc-lower-bound.pdf](arithmetic/sources/bright-abc-lower-bound.pdf): Theorem 3.1 |
+| EXT-ABC-BROWNAWELL-MASSER-FUNCTION-FIELD-UNIT-HEIGHT | claim | proved / partial | For a nondegenerate unit sum 1+u_1+...+u_r=0 in a characteristic-zero function field of genus g over algebraically closed constants, each unit ratio has function degree O_r(\|S\|+g) for the finite zero and pole set S. | [arithmetic/sources/fuchs-zannier-composite-rational-functions.pdf](arithmetic/sources/fuchs-zannier-composite-rational-functions.pdf): Lemma 2.2, stating Brownawell–Masser |
+| EXT-ABC-CASSELS-ISOTROPIC-TERNARY-SMALL-ZERO | claim | proved / partial | An integral isotropic quadratic form in three variables of coefficient height H has a nonzero integral zero of sup norm O(H). Theorem 1.1 in Fukshansky's survey states Cassels' theorem in general dimension. | [arithmetic/sources/fukshansky-cassels-1204.1938.pdf](arithmetic/sources/fukshansky-cassels-1204.1938.pdf): Theorem 1.1 (Cassels' Theorem) |
 | EXT-ABC-CHAN-KOYMANS-QUADRATIC-THIRD-TORSION | claim | proved / partial | Theorem 1.1 bounds the size of the 3-torsion of the quadratic class group by a constant times the signed squarefree radicand in absolute value raised to 1597/5000. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaging and the finite affine form |
 | EXT-ABC-CLUCKERS-COMTE-LOESER-FIXED-PRIME-CHARTS | claim | proved / partial | Theorem 3.2.3 gives T_r maps over a fixed Q_p. The indexing residue-ring sorts are finite over the fixed field, so the number of maps is bounded uniformly in each family of coefficients. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): The logarithmic Jacobian and local lifts |
 | EXT-ABC-CLUCKERS-FOREY-LOESER-UNIFORM-CHARTS | claim | proved / partial | Theorem 3.1.4 gives boundedly many T_r maps for each member of a definable family over all local fields of sufficiently large residue characteristic. Their domain dimension is the fiber dimension and both the threshold and count are uniform in the family parameter. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): The logarithmic Jacobian and local lifts |
@@ -21966,17 +22220,21 @@ Tracked obligations from the catalogue:
 | EXT-ABC-DIAO-DETERMINANT-SQUARE-SIEVE-INPUTS | claim | proved / partial | Exact source inputs for the arbitrary short-shift adaptation: balanced interval determinants, error-height penalty, odd-degree elimination and square sieve, together with the quadratic-field transform and lattice estimates for small squarefree right-hand sides. | [arithmetic/sources/diao-small-pell-2610.28001v1.pdf](arithmetic/sources/diao-small-pell-2610.28001v1.pdf): Lemmas 3.3–3.4, 4.2–4.4, Corollary 3.2 and Sections 5–7 |
 | EXT-ABC-DIAO-SMALL-PELL-FIRST-MOMENT | claim | proved / partial | Diao Theorem 1.3 gives O(T^(1-c/theta^2)) nonsquare D<T with fundamental positive Pell unit at most D^theta, uniformly for theta in the stated interval starting at 3. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Small-coefficient determinant-one families |
 | EXT-ABC-DISCRIMINANT-MULTIPLICITY-CONJECTURE | claim | open / partial | For each fixed degree and each epsilon>0, the number of fields of the given absolute discriminant D is O(D^epsilon). This is an assumption in the support-subpower reduction for arbitrary fixed hyperbolic valuation orders. | [arithmetic/sources/pierce-turnage-butterbaugh-wood-1902.02008v3.pdf](arithmetic/sources/pierce-turnage-butterbaugh-wood-1902.02008v3.pdf): Conjecture 1.4 and Corollary 1.8 |
+| EXT-ABC-DUJELLA-BOUNDED-HEIGHT-ELLIPTIC-TORSION | claim | proved / partial | Dujella Theorem 1.1 and Corollary 1.3 over a fixed number field. With a rational point of order ell, the count at exponential height B at least exp(max(h(E),e)) is at most exp(C log B/log log B), after the fixed height comparison. The constant depends on the base and ell. | [arithmetic/sources/dujella-bounded-height-2312.03655v1.pdf](arithmetic/sources/dujella-bounded-height-2312.03655v1.pdf): Theorem 1.1 and Corollary 1.3 |
 | EXT-ABC-EVERTSE-UNIFORM-THUE-MAHLER | claim | proved / partial | Theorem 1 bounds the number of unit cosets uniformly in the form and allowed finite places, for irreducible binary forms of fixed degree at least three. For fixed nonzero integral value M and fixed degree the resulting rational-integer count is O_epsilon(\|M\|^epsilon). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): A uniform fixed-coefficient estimate |
+| EXT-ABC-FIXED-DEGREE-WEIGHTED-POWER-DIFFERENCE | claim | proved / partial | Zeng's reproduced Lemma 3.1 bounds positive solutions of a U^e−b V^e=m≠0 by X^epsilon for fixed e and polynomial heights, uniformly in a,b,m and without root coprimality. The argument uses an integral norm factor, ideal divisors and uniform bounded-degree unit separation. | [arithmetic/sources/zeng-abc-modulus-locking-2611.00621v1.pdf](arithmetic/sources/zeng-abc-modulus-locking-2611.00621v1.pdf): Section 3.1, Lemma 3.1 |
 | EXT-ABC-GOWERS-ADDITIVE-ENERGY-INVERSE | claim | proved / partial | For a finite set S in Z^n with additive energy at least eta\|S\|^3, eta>0 fixed, there is U contained in S with \|U\|>=c_eta\|S\| and \|U-U\|<=C_eta\|S\|. | [arithmetic/sources/gowers-new-proof-szemeredi-2001.pdf](arithmetic/sources/gowers-new-proof-szemeredi-2001.pdf): Proposition 7.3 |
 | EXT-ABC-GREEN-RUZSA-FREIMAN | claim | proved / partial | By Green–Ruzsa Theorem 1.1 a finite set in an abelian group with \|A+A\|<=K\|A\| lies in a coset progression of rank and size factor bounded in K. In the integers the finite subgroup is trivial, and properness identifies cardinality with coefficient-box volume. | [arithmetic/sources/green-ruzsa-freiman-math0505198v2.pdf](arithmetic/sources/green-ruzsa-freiman-math0505198v2.pdf): Theorem 1.1, specialized to the torsion-free group Z |
 | EXT-ABC-HEATH-BROWN-UNIFORM-SKEW-CURVE-HEIGHT | claim | proved / partial | For an irreducible curve of degree d in projective three-space, primitive integral coordinate vectors of sup norm <=B are O_(d,epsilon)(B^(2/d+epsilon)), uniformly in the curve. | [arithmetic/sources/heath-brown-curves-math0405392v1.pdf](arithmetic/sources/heath-brown-curves-math0405392v1.pdf): Theorem 5 |
 | EXT-ABC-KANE-LARGE-RADICAL-COUNT | claim | proved / partial | Kane's Theorems 1–2 give the lower and upper box exponents for independently bounded radicals. In the aggregate, N_lambda(X)=X^(lambda-1+o(1)) for fixed 2<=lambda<=3. | [arithmetic/sources/kane-abc-restricted-radicals-2015.pdf](arithmetic/sources/kane-abc-restricted-radicals-2015.pdf): Theorems 1–2, applied with logarithmic radical boxes and arbitrarily small exponent slack |
+| EXT-ABC-KRICK-PARDO-SOMBRA-ARITHMETIC-NULLSTELLENSATZ | claim | proved / partial | At fixed dimension, degree and number of integer polynomials, if they have no common complex zero and their coefficient heights are polynomial in H, their integer polynomial ideal contains a nonzero integer of polynomial height in H. | [arithmetic/sources/krick-pardo-sombra-nullstellensatz-math9911094.pdf](arithmetic/sources/krick-pardo-sombra-nullstellensatz-math9911094.pdf): Theorem 1 |
 | EXT-ABC-MONTGOMERY-VAUGHAN-BRUN-TITCHMARSH | claim | proved / partial | For x>0 and y>1, pi(x+y)-pi(x)<=2y/log y. | [arithmetic/sources/montgomery-vaughan-large-sieve-1973.pdf](arithmetic/sources/montgomery-vaughan-large-sieve-1973.pdf): Theorem 2, equation (1.12) |
 | EXT-ABC-MONTGOMERY-VAUGHAN-SPACED-ADDITIVE-LARGE-SIEVE | claim | proved / partial | The squared additive transforms at delta-spaced points on the circle are bounded by (length plus inverse spacing) times the coefficient square sum, with an absolute constant. | [arithmetic/sources/montgomery-vaughan-large-sieve-1973.pdf](arithmetic/sources/montgomery-vaughan-large-sieve-1973.pdf): Theorem 1, equation (1.4), p. 119 |
 | EXT-ABC-PASTEN-POINTWISE | claim | proved / partial | For primitive positive abc triples let R=rad(abc). Theorem 1.4 bounds log c by exp(C sqrt(log R log log R)) times eta^-1 when a<=c^(1-eta), and times the least of the three largest prime factors in the second version. | [arithmetic/sources/pasten-subexponential-abc-2312.03566v1.pdf](arithmetic/sources/pasten-subexponential-abc-2312.03566v1.pdf): Theorem 1.4(1)–(2) |
 | EXT-ABC-PETRIDIS-SUMSET-ITERATION | claim | proved / partial | If finite nonempty sets A,B in an abelian group satisfy \|A+B\|<=K\|A\|, a nonempty X contained in A satisfies \|X+hB\|<=K^h\|X\| for each h>=1. In particular \|U-U\|<=K\|U\| implies \|U+U\|<=K^2\|U\|. | [arithmetic/sources/petridis-plunnecke-1101.3507v3.pdf](arithmetic/sources/petridis-plunnecke-1101.3507v3.pdf): Theorem 3.1 |
 | EXT-ABC-QUADRATIC-ODD-TORSION-FIRST-MOMENT | claim | proved / partial | The fixed-prime ell>=5 first moment of h_ell over squarefree quadratic radicands of either sign up to T is O_(ell,epsilon)(T^(3/2-3/(2ell+2)+epsilon)). The real and imaginary statements use separate primary theorems. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Square and odd prime powers |
 | EXT-ABC-QUADRATIC-THREE-TORSION-FIRST-MOMENT | claim | proved / partial | Davenport–Heilbronn for both signs, in Taniguchi–Thorne Theorem 1.2. The sum of the sizes of the 3-torsion subgroups over quadratic fields of absolute discriminant at most T is O(T). | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Summing the fixed-coefficient estimate |
+| EXT-ABC-ROSEN-CYCLIC-PRIME-CLASS-RANK | claim | proved / partial | The ell-rank upstairs in a cyclic extension of degree ell is at most ell times the sum of the downstairs ell-rank and the number of ramified places, as stated in Dujella's Lemma 4.5. | [arithmetic/sources/dujella-bounded-height-2312.03655v1.pdf](arithmetic/sources/dujella-bounded-height-2312.03655v1.pdf): Lemma 4.5 |
 | EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS | claim | proved / partial | Theorem 1.2 and Corollaries 1.3–1.4 give moments of both signs, with exponent (5k+13)/18 for 1≤k≤4. The discussion of Scholz reflection bounds the change in 3-rank between the two reflected fields by one. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaging and the finite affine form |
 | EXT-ABC-STEWART-YU-SUBEXPONENTIAL | claim | proved / partial | For positive primitive abc triples with R=rad(abc), log c <= C R^(1/3)(log R)^3 with an effectively computable absolute constant. | [arithmetic/sources/stewart-yu-abc-ii-2001.pdf](arithmetic/sources/stewart-yu-abc-ii-2001.pdf): Theorem 1 |
 | EXT-ABC-TAO-ENTROPY-INVERSE-COMMON-PROGRESSION | claim | proved / partial | Tao Theorem 1.11(ii),(iii) takes bounded independent Ruzsa distance to bounded transport entropy and bounded entropy doubling. A law of bounded doubling is a bounded transport distance from uniform on a bounded-rank coset progression of size comparable to exp of its entropy. | [arithmetic/sources/tao-entropy-inverse-0906.4387v5.pdf](arithmetic/sources/tao-entropy-inverse-0906.4387v5.pdf): Theorem 1.11(ii)–(iii), Proposition 5.2 and Section 6 |

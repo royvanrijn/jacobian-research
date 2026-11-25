@@ -264,39 +264,13 @@ cover unrestricted reciprocals. The
 [late shared bridge](MULTIVARIATE_TERMINAL_EIGHT_LATE_BRIDGE.md)
 covers \(18/25\le u\le22/25\), also for unrestricted reciprocals.
 Together these results complete terminal eight.
-At terminal nine the [fixed-ray proof](MULTIVARIATE_TERMINAL_NINE_HIGH_CURVATURE.md)
-covers all profiles with \(S\ge1493/200\). The
-[private-degree proof](MULTIVARIATE_TERMINAL_NINE_PRIVATE_ROWS.md)
-and the [private-linear proof](MULTIVARIATE_TERMINAL_NINE_PRIVATE_LINEAR.md)
-cover every profile with a private variable. For fully shared
-profiles the [shared high-curvature proof](MULTIVARIATE_TERMINAL_NINE_SHARED_HIGH_CURVATURE.md)
-covers \(S\ge53/10\). At smaller curvature the
-[retained rows](MULTIVARIATE_TERMINAL_NINE_RETAINED_ROWS.md)
-cover every profile with reciprocal above \(1/8\) at order eight.
-For reciprocals at or below that cap the
-[small outer-mean proof](MULTIVARIATE_TERMINAL_NINE_SMALL_OUTER.md)
-covers \(u\le19/200\), and the
-[matched light-row proof](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md)
-and its [extension](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_EXTENSION.md)
-extend separation to \(u=12/25\). The
-[matched upper light bands](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_UPPER.md)
-continue the full \(1/8\) reciprocal cap through \(u=.55\), and
-continue lighter caps through \(u=.76\). The
-[retained bands](MULTIVARIATE_TERMINAL_NINE_RETAINED_BANDS.md)
-supply the complementary caps throughout \([.62,.76]\) and also
-cover the stated higher-reciprocal scope on \([.75,.85]\). The
-[upper bridge](MULTIVARIATE_TERMINAL_NINE_UPPER_BRIDGE.md)
-covers \(22/25\le u\le19/20\) without a reciprocal cap.
-The [near-flat separation](MULTIVARIATE_TERMINAL_NINE_NEAR_FLAT.md)
-continues this coverage to every \(u\ge19/20\), using the exact Cayley
-cancellations in the transformed error terms.
-The [marked upper-row proof](MULTIVARIATE_TERMINAL_NINE_UPPER_MARKED_ROWS.md)
-covers the stated high outer-mean ranges for rows \((3,4)\) and
-\((4,5)\). The [marked \((2,3)\) proof](MULTIVARIATE_TERMINAL_NINE_MARKED_TWO_THREE.md)
-covers that row in either orientation for \(u\ge19/25\). The
-[linked Hermite proof](MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md)
-gives an explicit small-curvature terminal-nine bound and a
-computable root-angle separation radius at every fixed terminal.
+The [terminal-nine theorem](MULTIVARIATE_TERMINAL_NINE_ALL_PROFILES.md)
+covers both private cases and every fully shared profile. The proof
+combines linked matched rays, exact retained rows, and the near-flat
+Cayley comparison. Thus all terminals through nine are complete.
+The [linked Hermite proof](MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md)
+independently gives a computable small-curvature separation radius
+at every fixed terminal.
 
 Across all terminals, the [explicit high-curvature theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_CURVATURE_BOUND.md)
 and the [Hermite-edge comparison](MULTIVARIATE_EFFECTIVE_WEAK_CURVATURE_HERMITE_EDGE.md)
@@ -389,7 +363,7 @@ over any characteristic-zero field by the rational Bézout identity.
 Both pure monomial coefficients are nonzero at every order, so
 the univariate reduction in \(t\) covers all projective coefficient
 choices. An all-degree proof still requires coverage of the terminals
-from nine through \(N_*-1\), or an argument that applies directly
+from ten through \(N_*-1\), or an argument that applies directly
 at every terminal.
 
 ## The discrete row-merger route

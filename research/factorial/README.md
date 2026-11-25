@@ -312,13 +312,20 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Shared terminal nine at total curvature at least 53/10 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_HIGH_CURVATURE.md) |
 | Shared terminal nine with reciprocal cap 1/8 and small outer mean | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SMALL_OUTER.md) |
 | Shared terminal nine for all nonempty retained profiles at cap 1/8 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_ROWS.md) |
-| All-order two-sided transfer for matched tanh moments | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_MOMENTS.md) |
-| Matched light shared terminal nine through outer mean 11/25 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md) |
+| All-order two-sided transfer for matched tanh moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_MOMENTS.md) |
+| Matched light shared terminal nine through outer mean 11/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md) |
 | Terminal-nine separation for two marked unit rows at high outer mean | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_UPPER_MARKED_ROWS.md) |
-| Extension of the terminal-nine matched light rays through u=12/25 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_EXTENSION.md) |
+| Extension of the terminal-nine matched light rays through u=12/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_EXTENSION.md) |
 | Terminal-nine retained rows above the smaller caps in three mid-to-upper bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_BANDS.md) |
 | Unrestricted shared terminal nine from outer mean .88 to .95 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_UPPER_BRIDGE.md) |
 | Terminal-nine angular separation with a marked (2,3) row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_MARKED_TWO_THREE.md) |
+| Terminal-nine angular separation from outer mean .95 to the flat limit | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_NEAR_FLAT.md) |
+| Independent coefficient boxes can admit false shared roots at every even lower order from 28 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_MOMENTS.md) |
+| Matched terminal-nine light-ray bands from outer mean .48 to .76 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_UPPER.md) |
+| Matched second- and fourth-order angular model interlacing in every degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_SECOND_ORDER_ANGLES.md) |
+| Unrestricted fully shared terminal nine from outer mean .76 to .88 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_MIDUPPER_BRIDGE.md) |
+| Terminal-nine shared band from .55 to .62 at reciprocal cap 1/8 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_MID_BAND.md) |
+| Terminal nine for every ordinary multivariate two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_ALL_PROFILES.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -442,6 +449,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Decide whether the actual repeated-root triple set is EMPTY: for EVERY integer a>=0,d>=1,m>=2, prove gcd_Q(A_(m;a,d),A_(m;a,d)_prime)=1, or exhibit an actual repeated-root triple. A support-uniform eventual cutoff and finiteness of this set do not prove emptiness.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-ALL-ORDER-SQUAREFREENESS
 - **mathematical / open:** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF
 - **mathematical / open:** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
-- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=9 below the computable absolute cutoff.](image-rigidity/MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
+- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=10 below the computable absolute cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.
