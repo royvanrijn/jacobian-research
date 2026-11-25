@@ -2134,3 +2134,8 @@ repair cost. A bound for small repairs, or a power bound on
 the unrestricted padded count with its unavoidable
 \(Y^{1/M}\) term, does not give (MRG).
 
+Under one-target repair, homogeneous determinants inherit common
+row content. For the uncentred Taylor determinant the new fullness
+can be entirely absorbed by this content, and the original
+primitive valuation is sharp on an explicit family.
+[Primitive content after repair](ABC_MINIMAL_REPAIR_PROJECTIVE_CONTENT.md)

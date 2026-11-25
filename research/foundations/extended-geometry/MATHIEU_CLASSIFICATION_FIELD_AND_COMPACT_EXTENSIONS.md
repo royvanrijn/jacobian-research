@@ -3683,3 +3683,236 @@ For example let \(n=2^h\) with \(h\ge3\), \(r=n/2\), and take \(K=\mathbb Q(\zet
                    \qquad E=K(\sqrt{s}) .
 \]
 Both \(A,B\) are division over \(K\) by the disjoint coordinate valuations, with periods \(r,n\) respectively. Over \(E\) the first Brauer class is \(2[B_E]\), and \(B_E\) still has period \(n\), by the same valuation of monomials with denominators in the \(u,v\) directions. The term \(i=n-2\) bounds the displayed index by \(r/2\), since \(2[B_E]+(n-2)[B_E]=0\). Conversely, the Brauer kernel of the quotient extension over \(E\) is \(\langle r[B_E]\rangle\), so \(2[B_E]\) has period \(r/2\) there, giving equality of the index with \(r/2\). In particular the centralizer does not split over this quotient field, and the partial index drop supplies the split rank-one action. The original torsor is point-free and both original acting forms are anisotropic.
+
+
+## A flat quaternion height and its conditional Poisson law
+
+**Theorem (A regular squared-uniform height on the negative quaternion torsor).**
+
+Let \(X_-=\{x:N(x)=-1\}\) for the Hamilton quaternion algebra over a real closed field. Write \(x=a+x_1i+x_2j+x_3k\), with \(i,j,k\) the quaternion generators. Then
+\[
+                     D=-\bigl((x^3)_2^2+(x^3)_3^2\bigr)
+                       =-(4a^2+1)^2(x_2^2+x_3^2)
+\]
+has the squared-uniform trace law. In particular on \(X_-\times\mathbb G_m\), with the split scalar coordinate \(t\), there is a regular all-order bad pair
+\[
+       P=t^{-1}(1+t)\bigl(1-(1+t)^2D\bigr)^2,\qquad Q=t .
+\]
+
+In the flat quaternion formula for \(x^3\), write the compact-reference coordinates as \(i_{\mathbb C}(\cos\theta,\sin\theta\,n_1,\sin\theta\,n_2,\sin\theta\,n_3)\). Here \(i_{\mathbb C}^2=-1\) is scalar, \(\theta\) is uniform on the circle, and \(n\) is uniform on the two-sphere independently of \(\theta\). Thus \(D=\sin^2\theta(1-n_1^2)\). Its moments are
+\[
+                     \frac{(1/2)_m}{m!}\frac{m!}{(3/2)_m}
+                                    =\frac1{2m+1}.
+\]
+On the torsor \(x^2-2ax-1=0\), so the asserted degree-six regular expression for \(D\) follows from \(x^3=(4a^2+1)x+2a\). Put \(T=1+t\) and \(I_m(T)=\int_0^T(1-z^2)^{2m}\,dz\). Averaging the \(m\)-th power on \(X_-\) gives \(t^{-m}T^{m-1}I_m(T)\). The endpoint difference \(I_m(1+t)-I_m(1)\) is divisible by \(t^{2m+1}\). The polynomial \(T^{m-1}\) then gives zero pure moment and \(Q\)-marked moment
+\[
+                     I_m(1)=\frac{4^{2m}((2m)!)^2}{(4m+1)!}.
+\]
+All moment identities have rational coefficients and transfer to real closed fields by base change.
+
+**Theorem (Poisson fibres of the flat quaternion trace).**
+
+Use \(a,x_1,x_2,x_3\) for the coordinates under the flat trace before the power pullback. Write \(r=\sqrt{-(x_2^2+x_3^2)}\) on its compact reference cycle. The variable \(r\) is uniform on \([0,1]\). The angle in the \((x_2,x_3)\)-plane is uniform and independent of the other coordinates. Conditional on \(r\in(0,1)\), put \(\rho=\sqrt{1-r^2}\) and \((a,x_1)=i_{\mathbb C}\rho(\cos\gamma,\sin\gamma)\). The law of \(\gamma\) has density
+\[
+                     \frac{1-q^2}{1-2q\cos(2\gamma)+q^2}
+                                      \frac{d\gamma}{2\pi},
+                     \qquad q=\frac{1-r}{1+r}.
+\]
+For this fixed-radius law no nonzero real Laurent phase in the complementary angle can have all pure moments zero. More generally the complex Laurent phases pure for this law are exactly the polynomials in the circle variable or its inverse that vanish at both Poisson centres for that variable, including zero.
+
+To compute the density, start with \(u=\cos\theta\), \(v=\sin\theta\,n_1\), on the real reference sphere. The first coordinate has arcsine density, and \(v\) is uniform on \([-\sqrt{1-u^2},\sqrt{1-u^2}]\) conditional on \(u\). Thus their joint density is \(du\,dv/(2\pi(1-u^2))\) on the disk. The angle of \((n_2,n_3)\) is independent and uniform. Passing to polar coordinates \(u+iv=\rho e^{i\gamma}\) gives \(r\,dr\,d\gamma/(2\pi(1-(1-r^2)\cos^2\gamma))\), which is the stated Poisson density.
+
+For the purity assertion set \(z=e^{i\gamma}\) and
+\[
+                     y=\frac{z^2-q}{1-qz^2},\qquad
+                     \eta=\frac12\,\frac{dy}{y}.
+\]
+The weighted circle integral is \((2\pi i_{\mathbb C})^{-1}\int_{|z|=1}P(z)^m\eta\). If a Laurent phase \(P\) has poles at both \(0,\infty\), let \(\mathcal J\) be the inverse branches of \(P(z)=u\) tending to \(z=0\) as \(u\to\infty\). With \(d=|\mathcal J|\), write \(y(z)=c\exp g(u^{-1/d})\) at \(z=0\). The product of the \(y\)-values on \(\mathcal J\) has expansion
+\[
+              H(u)=c^d\exp\!\left(\sum_{m\ge1}
+                      \frac{\operatorname{Res}_{z=0}P(z)^m\,dy/y}{m u^m}\right).
+\]
+If the moments vanish, the residues at the two simple zeros \(z=\pm\sqrt q\) of \(y\) give
+\[
+                      H(u)=c^d\bigl(1-P(\sqrt q)/u\bigr)
+                                   \bigl(1-P(-\sqrt q)/u\bigr).
+\]
+Thus \(H\) is rational. On the branches near \(0\) the limiting \(y\)-value is \(-q\), while on those near \(\infty\) it is \(-q^{-1}\). The product on \(\mathcal J\) is distinguished by its limiting value from the products on all other subsets of the same size: replacing any selected branch changes that value by a nontrivial power of \(q^{-2}\). Rationality of \(H\) therefore forces \(\mathcal J\) to be invariant under the transitive inverse-branch group, contradicting the presence of poles at both ends.
+
+If \(P\) is polynomial in \(z\), the moment is just the mean of \(P(\sqrt q)^m,P(-\sqrt q)^m\). Their simultaneous vanishing for all powers forces both values to be zero. The case of a polynomial in \(z^{-1}\) follows by inversion, using the two centres for the inverted coordinate. On the negative reference fibre the real involution sends \(z\) to \(-z^{-1}\) and conjugates coefficients. Hence the support of a real Laurent phase is symmetric. The one-sided alternatives then give only the zero phase.
+
+This Poisson law gives an explicit complex all-order witness on the negative quaternion torsor with a real multiplier. In flat coordinates put
+\[
+           F=(a+i_{\mathbb C}x_1)^2(1+a^2),\qquad
+           G=(a-i_{\mathbb C}x_1)^2+(a+i_{\mathbb C}x_1)^2 .
+\]
+The phase \(F\) is polynomial in \(z^2\) on each Poisson fibre and vanishes at \(z=\pm\sqrt q\). In fact
+\[
+       F=-\rho^2 z^2+\frac{\rho^4}{4}(z^4+2z^2+1),
+       \qquad
+       F(0)=\rho^4/4.
+\]
+For the marked trace the positive \(z^2\) part of \(G\) gives zero. Its other part is \(-\rho^2 z^{-2}\), producing just the residue at zero, of value \(4r(\rho^4/4)^m\). Integrating the uniform \(r\) gives
+\[
+                  \Lambda_{\rm flat}(F^m)=0,\qquad
+                  \Lambda_{\rm flat}(GF^m)=\frac{2}{4^m(2m+1)} .
+\]
+Composition with \(x\mapsto x^3\) gives these identities on the original norm-minus-one torsor over \(K(i_{\mathbb C})\). The phase has complex coefficients. The real ground-field problem on \(X_-\) alone allows cancellations between different radii and is outside the conditional classification.
+
+## A restriction on full-quotient phases with two left weights
+
+**Theorem (An opposite left-weight pair reduces to an angular product).**
+
+Let \(X=\mathrm{SO}(3)/\Gamma\) be either full exceptional compact quotient and use one left maximal circle. Work on \(X\times\mathbb G_m\), where the split scalar is denoted \(t\). Suppose that a regular phase \(P\) has just the two opposite nonzero weights \(h,-h\) for the effective left circle. Write \(P=U+V\) with \(U,V\) in those weight spaces and put \(R=UV\), a regular function on the angular quotient times \(\mathbb G_m\). Then \(P\) is pure exactly when \(R\) is pure. For a pure phase \(P\), it is safe against every fixed regular multiplier exactly when \(R\) is safe on the angular quotient times \(\mathbb G_m\). Here safety means eventual vanishing of the marked moments.
+
+In particular, if \(P\) is real in either exceptional model, the family of its left-circle and angular conditional even moments cannot have a separated radial law at generic real \(t\). On the icosahedral mirror chart, the normalized conditional moment field of \(P\), before extracting the scalar constant term, determines the original height algebraically. The same assertion holds on the octahedral joint chart whenever \(R\) has a nonzero orientation-odd part. These exclude transport of the entire indicated law from \(T^2w\) or \(T^2S\) alone for such full-quotient phases, where \(T=1+t\).
+
+Indeed left-circle averaging gives \(R_L(P^{2m})=\binom{2m}{m}R^m\) and \(R_L(P^{2m+1})=0\). This proves the purity equivalence. For a fixed multiplier \(Q\), split it into finitely many circle weights over the complexification. If \(Q_j\) has weight \(j\), only the binomial term whose \(U\)-count minus \(V\)-count is \(d=-j/h\) contributes. If \(d\) is integral and the parity fits, this is a scalar binomial coefficient times
+\[
+                   R^{(m-|d|)/2}\,Q_j U^{\max(d,0)} V^{\max(-d,0)}
+\]
+at power \(m\), with the factor after \(R^{(m-|d|)/2}\) a fixed angular multiplier. Thus safety of \(R\) implies safety of \(P\), also over the real field by linearity. Conversely take an angular multiplier for \(R\) and use it unchanged on the even powers of \(P\).
+
+For real \(P\), the two coefficients \(U,V\) are compact conjugates. The angular \(R\) cannot be scalar Laurent in \(t\): after passing to the generic scalar field, this would make \(U\) a unit regular on the compact homogeneous quotient, and its pullback to the semisimple group has only constant units. This contradicts the nonzero weight. If \(C_{2m}^P\) denotes the doubly conditional even moment of \(P\) and \(C_m^R\) the angular conditional moment of \(R\), their relation is \(C_{2m}^P=\binom{2m}{m}C_m^R\). Hence the normalized field of the \(C_{2m}^P\) contains all \(C_{2m}^R/(C_2^R)^m\), by taking the appropriate ratios of \(C_{4m}^P\) and \(C_4^P\). A separated radial law for \(P\) would give one for \(R\), which has been excluded. The conditional height results for \(R\) give the two height assertions. Purity and safety here concern the final integrated traces; the separation and transport obstructions concern only the conditional moments.
+
+## Pfister neighbours in oriented isometry torsors
+
+**Theorem (A Pfister witness on a point-free isometry torsor).**
+
+Let \(q_1,q_2\) be nondegenerate \(n\)-dimensional quadratic forms over a field \(K\) of characteristic zero, with \(n\ge4\) and determinant ratio a square. Fix a determinant component \(X=\operatorname{Isom}^{\rm or}(q_1,q_2)\). Suppose that \(q_1=\langle c\rangle\perp q_1'\), that \(q_2\perp\langle-c\rangle\) is a subform of a Pfister form \(\pi\), and that \(q_1'\) contains a subform similar to a subform of \(\pi\) of dimension strictly greater than \(\frac12\dim\pi\). Then \(X\) has a regular pure phase with a fixed regular multiplier whose marked moments are nonzero infinitely often. This can occur with both orthogonal groups anisotropic over \(K\) and \(X(K)=\varnothing\).
+
+The subgroup \(S=\mathrm{SO}(q_1')\) acts by precomposition. The map taking an isometry to the image of the chosen vector of norm \(c\) identifies the invariant quotient with \(\{v:q_2(v)=c\}\). Over an algebraic closure, an isometry of that line extends to the fixed determinant component, and each fibre is an \(S\)-torsor. This gives the affine invariant quotient over \(K\) by base change. Over its function field \(F\), \(q_2\perp\langle-c\rangle\) is isotropic. The Pfister form \(\pi_F\) is therefore hyperbolic. Every subform of a scalar multiple of \(\pi_F\) of dimension greater than half meets a maximal totally isotropic subspace. In particular \(q_1'\) is isotropic over \(F\). Its special orthogonal group has a split rank-one subgroup, acting nontrivially on the generic \(S\)-torsor. The generic-orbit theorem supplies the regular witness over \(K\). [Lam, *Introduction to Quadratic Forms over Fields*, Theorem X.1.7](https://bookstore.ams.org/gsm-67)
+
+For a point-free example of dimension \(11\), take \(K=\mathbb Q(u_1,u_2,u_3,u_4)\) and \(\pi=\bigotimes_{i=1}^4\langle1,u_i\rangle\). Index its diagonal monomials \(u^v\) by \(v\in(\mathbb F_2)^4\) with coordinate vectors \(e_i\). Let \(q_2\) use all indices except \(0,e_1,e_2,e_1+e_3,e_2+e_3\). Let \(Q_0\) use the nine indices
+\[
+         \bigl(\langle e_1,e_2,e_3\rangle\setminus\{0,e_1\}\bigr)
+                 \cup\{e_4,e_4+e_2,e_4+e_3\},
+\]
+and set \(\sigma=e_1+e_2+e_3+e_4\) and \(q_1=\langle-1\rangle\perp Q_0\perp\langle-u^\sigma\rangle\). The sum of the omitted indices for \(q_2\) is zero. The sum of the nine indices in \(Q_0\) is \(\sigma\), which is not among them. Both determinants are squares. In an iterated Laurent series extension in the \(u_i\), the diagonal coefficient valuations of each form are distinct modulo \(2\mathbb Z^4\), so any nonzero vector gives a unique lowest-valuation term of its norm. Thus both forms are anisotropic already over \(K\). In an ordering with all \(u_i>0\), \(q_2\) cannot represent \(-1\), although \(q_1\) does. The isometry torsor is therefore point-free. With \(c=-1\), \(q_2\perp\langle1\rangle\) is a subform of \(\pi\) and \(Q_0\) is a nine-dimensional subform of the sixteen-dimensional Pfister form. The theorem applies.
+
+
+## A zero-weight term in the full exceptional products
+
+**Lemma (Normalized even moments detect a scalar centre).**
+
+Let \(u,v\) be two independent real parameters in an open region. Suppose a family of compactly supported real laws is symmetric about a rational centre \(a(u,v)\), and its moments \(C_j(u,v)\) are rational functions. Assume \(C_2>0\) in the region. Then
+\[
+                     a^2/C_2
+          \quad\text{is algebraic over}\quad
+                     M=\mathbb C(C_{2m}/C_2^m:m\ge1).
+\]
+For a single real parameter, a constant normalized even law similarly forces \(a^2/C_2\) to be constant on each connected interval.
+
+Indeed the normalized cosine transform of each law is an entire function \(\Phi_{u,v}(\zeta)\), with Taylor coefficients determined by the normalized even moments. Symmetry about the centre gives
+\[
+                \Phi_{u,v}(\zeta)=
+                  \cos\!\left(\frac{a}{\sqrt{C_2}}\zeta\right)
+                            \Phi_{u,v}^{\,0}(\zeta),
+\]
+where \(\Phi_{u,v}^{\,0}\) is the cosine transform after centring and scaling. If the normalized even moments are fixed along an arc, the first factor cannot have a varying nonzero \(a^2/C_2\) there: its varying real zeros would have an accumulation point among the zeros of a fixed entire function with value one at zero.
+
+For the field assertion, all relevant rational functions have real coefficients. If \(M\) has transcendence degree zero, use this arc argument directly. If it has transcendence degree two, the claim is automatic. Otherwise choose a nonconstant real rational \(b\in M\). If \(a^2/C_2\) were transcendental over \(M\), the real map \((b,a^2/C_2)\) would have nonzero Jacobian on an open subset. Use these as local real coordinates there, and take a connected arc with \(b\) fixed at a regular real value. Every normalized even moment is algebraic over \(\mathbb C(b)\). Choosing the value of \(b\) outside the countable exceptional set of zeros of the leading coefficients of these algebraic relations makes each moment take finitely many possible values on that arc. They are continuous and consequently constant there. The varying second coordinate then contradicts the cosine-transform argument. The one-parameter assertion follows from the same argument with a fixed transform.
+
+**Theorem (A scalar centre preserves the full-quotient height obstruction).**
+
+Let \(P=a(t)+U+V\) be real and regular on either full exceptional compact quotient times the split scalar \(t\), with \(U,V\) a nonzero pair of opposite left-circle weights and with \(a(t)\) scalar Laurent. Put \(R=UV\), regular on the angular quotient times the split scalar. Form the field \(M\) from the normalized conditional even moments of \(P\) after averaging the left circle and the conditional angular law, before extracting the constant term in \(t\).
+
+On the icosahedral mirror chart \(w\) is algebraic over \(M\). On the octahedral joint chart \(S\) is algebraic over \(M\) if \(R\) has a nonzero orientation-odd component. In either chart, at generic fixed real \(t\), the normalized conditional even moments cannot be independent of the height. Thus adding a scalar centre to the opposite left pair does not restore the separated law, and in the stated height-field cases it does not allow transport of the normalized even law from the dilated height alone.
+
+For real \(t\) and physical height, the conditional law of \(P\) is symmetric about \(a(t)\): a half-period of the active left weight changes \(U+V\) to its negative. Put \(Z=a^2/C_2^P\). The preceding lemma makes \(Z\) algebraic over \(M\). If \(C_j^R\) is the angular conditional moment of \(R\), the binomial formula gives
+\[
+       \frac{C_{2m}^P}{(C_2^P)^m}
+          =\sum_{j=0}^m \binom{2m}{2j}\binom{2j}{j} Z^{m-j}
+                                   \frac{C_j^R}{(C_2^P)^j}.
+\]
+The nonzero diagonal coefficients recover all normalized even moments of \(R\) in \(M(Z)\), by triangular inversion and division by the indicated second moment of \(R\). The angular \(R\) has genuine angular dependence, by the constant-unit argument for opposite weight pairs. The previously proved height-field tests for \(R\) give the first two conclusions. For the fixed-\(t\) assertion apply the one-parameter lemma and the same triangular inversion, followed by the exceptional angular nonseparation theorem. All these arguments concern conditional moments; the remaining final height integral and Laurent extraction are part of the original purity problem.
+
+## Real odd harmonics in the flat quaternion model
+
+**Theorem (A one-dimensional arcsine mixture with imaginary amplitude is not pure).**
+
+Let \(a,b\) be real analytic functions on a neighbourhood of a compact interval with positive continuous probability density. With \(\theta\) independently uniform on a circle, the phase
+\[
+                              a(r)+i b(r)\cos\theta
+\]
+has a nonzero positive moment unless both functions are identically zero. The same proof allows a signed amplitude \(b\) that is analytic locally up to sign at its zeros.
+
+The cases \(b\equiv0\) or \(a\equiv0\) follow from the second moment. Otherwise suppose purity. For large positive \(z\), expansion of the resolvent and circle integration give
+\[
+                         I(z)=\int
+                   \frac{d\mu(r)}{\sqrt{(z-a(r))^2+b(r)^2}}=\frac1z ,
+\]
+with the positive square root for real \(z\). If \(b\) has no zeros, the positive integral extends real analytically through the whole real axis and contradicts the pole of \(1/z\). Otherwise let \(c\) be the largest value of \(a\) at a zero of \(b\). The positive integral is real analytic for \(z>c\). Thus \(c<0\) is again excluded by its regularity at zero. If \(c>0\), at a point \(r_0\) with \(a(r_0)=c,\ b(r_0)=0\) the square root is bounded above by a constant times \((z-c)+|r-r_0|\). With positive density, this makes \(I(z)\) diverge as \(z\downarrow c\), contradicting \(1/z\).
+
+Finally let \(c=0\). We show \(zI(z)\to0\) as \(z\downarrow0\). Away from the finitely many common zeros this is immediate. At a common zero put \(v=r-r_0\), and let \(k,\ell\ge1\) be the orders of \(a,b\). If \(\ell\le k\), the square root bounds \(z+|v|^\ell\) from below up to a positive factor: it bounds \(|b|\), and \(z\le|z-a|+|a|\) with \(|a|\lesssim |b|\). Dominated convergence applies. If \(\ell>k\), outside the range \(z/2\le a(r)\le2z\) one has \(|z-a|\gtrsim z+|a|\), giving the same conclusion. Inside that range, \(|v|\asymp z^{1/k}\), \(|b|\gtrsim z^{\ell/k}\), and \(|a'|\gtrsim z^{(k-1)/k}\). On the at most two local monotone branches, substitute \(u=a(r)\). Their contributions to \(zI(z)\) are bounded by a constant times
+\[
+                        z^{1/k}\int_{z/2}^{2z}
+                        \frac{du}{\sqrt{(z-u)^2+c_0 z^{2\ell/k}}}
+                          = O\bigl(z^{1/k}(1+|\log z|)\bigr)
+\]
+with \(c_0>0\). This also works with a one-sided interval at an endpoint. Thus \(zI(z)\to0\), contrary to purity.
+
+For the flat quaternion law put \(D=-(x_2^2+x_3^2)\). A real regular phase of the form
+\[
+           A(D)+B(D)\operatorname{Re}_{K}\bigl((x_2+i_{\mathbb C}x_3)^h\bigr)
+               +C(D)\operatorname{Im}_{K}\bigl((x_2+i_{\mathbb C}x_3)^h\bigr)
+\]
+with \(A,B,C\) polynomials and an integer \(h\ge1\) has a nonzero pure moment unless it is zero. Here the real and imaginary parts mean coefficient conjugation in the ground-field polynomial algebra. If \(h\) is even, the phase takes real values on the compact reference cycle and square positivity applies. If \(h\) is odd, the circle at fixed \(r=\sqrt D\) gives an imaginary arcsine term with amplitude \(r^h\sqrt{B(r^2)^2+C(r^2)^2}\); this is locally analytic up to sign at its zeros. The flat radius is uniform, so the theorem applies. The moments are polynomial in the coefficients, so their simultaneous vanishing in any fixed degree gives a finitely defined system and the exclusion transfers to real closed fields. It also holds for their odd-power pullbacks to the negative quaternion torsor.
+
+**Lemma (A fixed-divisor norm obstruction for a descended Legendre phase).**
+
+In the flat quaternion function field adjoin \(b\) with \(b^2=x_2^2+x_3^2\), and write
+\[
+       c=x_2/b,\quad d=x_3/b,\quad r=-i_{\mathbb C}b,\quad
+       z^2=-\frac{(a+i_{\mathbb C}x_1)^2}{1+b^2},\quad
+       w=\frac{z^2-(1-r)/(1+r)}{1-z^2(1-r)/(1+r)} .
+\]
+Here \(c^2+d^2=1\); the Poisson uniformizer \(w\) is defined over the real field of the double cover because conjugation inverts \(z^2\) and \((1-r)/(1+r)\) simultaneously. The deck involution \(\tau\) sends \((b,c,d,w)\) to \((-b,-c,-d,w^{-1})\).
+
+There is no nonzero \(\tau\)-invariant real rational phase \(b f(c,d)+B(b,c,d)w+C(b,c,d)w^{-1}\) with \(f\ne0\) and \(BC=(1+b^2)f^2/4\). Thus the exact Legendre construction with centre \(b f\) and this radius does not descend through this cover, even with rational coefficients. Indeed invariance forces \(C=\tau B\). The prime \(b^2+1\) is irreducible over the formally real circle function field \(K(c,d)\) and is fixed by \(\tau\). The valuation of \(B\tau B\) there is even, while the required radius factor has odd valuation.
+
+## Hermitian isometry torsors detected by a Pfister neighbour
+
+**Theorem (A Pfister witness on a point-free hermitian isometry torsor).**
+
+Let \(D\) be a quadratic field extension of \(K\) or a quaternion division algebra over \(K\), with its canonical involution, and \(\operatorname{char}K=0\). Let \(h_1,h_2\) be nondegenerate hermitian forms of rank \(n\ge3\) over \(D\), and let \(q_i(v)=h_i(v,v)\) denote their scalar quadratic forms. In the quadratic field case fix a determinant fibre of the isometry space using a determinant value of the required norm in \(D^\times\), so the fibre is a torsor for the special unitary groups. In the quaternion case use the entire isometry torsor. Suppose that \(h_1=\langle c\rangle_D\perp h_1'\), that \(q_2\perp\langle-c\rangle\) is contained in a quadratic Pfister form \(\pi\), and that the scalar form of \(h_1'\) contains a subform similar to a subform of \(\pi\) of dimension greater than \(\frac12\dim\pi\). Then the torsor admits a regular pure phase with a fixed regular multiplier whose marked moments are nonzero infinitely often.
+
+Use the source stabilizer \(S\) of the distinguished length-\(c\) vector. Its invariant quotient is the affine quadric \(Y=\{v:h_2(v,v)=c\}\). Geometrically in the quadratic case the vector is a pair consisting of a vector and a covector with nonzero pairing, and a determinant-one map can take any such pair to another by extending on the complement. In the quaternion case after splitting, a vector is a symplectic two-frame of nonzero pairing; extending symplectic bases proves the same quotient and shows that the fibres are \(S\)-torsors. These descriptions descend by base change of affine invariants. The function field \(F=K(Y)\) makes \(\pi\) hyperbolic. Hence the scalar form of \(h_1'\) is isotropic by its neighbour. If \(D_F\) splits, the source stabilizer is already a split special linear or symplectic group. Otherwise an isotropic vector in the scalar form is an isotropic hermitian vector, and the resulting hermitian hyperbolic plane gives a split one-parameter torus by reciprocal scaling of its two basis vectors. This has determinant one in the quadratic case. The split rank-one group obtained in \(S_F\) acts nontrivially on the generic fibre, and the generic-orbit theorem lifts its witness. For the scalar norm forms in these two cases, see [Hu, *Hasse Principle for Simply Connected Groups over Function Fields of Surfaces*, §§2.3–2.4](https://arxiv.org/pdf/1203.1075).
+
+In the quadratic field case, use the preceding eleven-dimensional example for the diagonal coefficients of the hermitian forms and extend its ground field by an independent variable \(v\). Take \(D=K(\sqrt{-v})\), with \(v\) positive in the chosen ordering. The scalar forms are the previous quadratic forms tensored with \(\langle1,v\rangle\). Their determinant ratio as hermitian forms is a square, supplying the required determinant fibre. The Pfister criterion holds with \(\pi\) also tensored with \(\langle1,v\rangle\), and the neighbour now has dimension \(18>16\).
+
+For a quaternion example of rank six take an independent positive-variable field \(K=\mathbb Q(u_1,u_2,u_3,v,w)\) and \(D=(-v,-w)\). Let \(\pi_0=\bigotimes_{i=1}^3\langle1,u_i\rangle\). Take \(h_2\) diagonal with any six distinct nonidentity monomials from \(\pi_0\), and \(h_1=\langle-1\rangle_D\perp h_0\), with \(h_0\) formed from any five distinct nonidentity monomials of the same form. Use \(\pi=\pi_0\otimes\langle1,v\rangle\otimes\langle1,w\rangle\). The scalar \(q_2\perp\langle1\rangle\) is contained in \(\pi\), and the scalar form of \(h_0\) has dimension \(20>16\). In both examples the distinct coefficient valuations modulo twice the value group persist for the scalar forms after tensoring, proving anisotropy over \(K\). Both torsors are point-free because in the positive ordering \(h_2\) cannot represent \(-1\) while \(h_1\) does.
+
+
+## A global obstruction at a transverse zero of the imaginary radius
+
+**Theorem (The rightmost real contact obstructs purity).**
+
+Let \(M\) be a smooth compact manifold of dimension two or three with a positive smooth probability density. Let \(A,B\) be real smooth functions and set \(P=A+B(t-t^{-1})/2\). Suppose \(B\not\equiv0\). If \(B\) has no zeros, then \(P\) is not pure. Otherwise put \(c=\max_{\{B=0\}}A\). Suppose that at every point of \(\{A=c,B=0\}\) the function \(B\) is transverse to zero and \(A\) restricted to that hypersurface has a nondegenerate maximum. Then \(P\) is not pure for the integrated Laurent trace. Here \(c\) is taken on the zero set of \(B\) and is allowed to lie below the global maximum of \(A\). In particular the test applies to both full exceptional compact quotients and allows nonzero left-circle weights in both coefficients.
+
+If \(P\) were pure, the Cauchy formula for the scalar circle, followed by integration, would give
+\[
+               I(z)=\int_M\big((z-A)^2+B^2\big)^{-1/2}\,d\mu=1/z
+\]
+for large positive real \(z\), using the positive square root. The positive integral is real analytic on the real interval \(z>c\). Thus the identity extends there until the first pole of \(1/z\). If \(B\) has no zeros, or if \(c<0\), analyticity at zero contradicts that pole.
+
+If \(c\ge0\), put \(\delta=z-c\) and take local coordinates \(u,v\) at one of the finitely many maximal contacts, with \(u=B\) and
+\[
+                     A(u,v)=c-|v|^2+u\,a(u,v).
+\]
+Here the Morse lemma is used on the zero hypersurface, and \(\dim v=\dim M-1\). Put \(s=\delta+|v|^2\). With a cutoff equal to one near the contact, the integral in the normal direction has the form
+\[
+               J(s,v)=\int
+                  \frac{\phi(u,v)\,du}{\sqrt{(s-u a(u,v))^2+u^2}},
+                     \qquad \phi(0,v)>0
+\]
+near \(v=0\). The estimates near \(s=0^+\), uniform for small \(v\), are
+\[
+              J(s,v)=O(1+|\log s|),\qquad
+              \partial_s J(s,v)=
+              -\frac{2\phi(0,v)}{\sqrt{1+a(0,v)^2}\,s}
+                          +O(1+|\log s|).
+\]
+For the derivative, replace \(a(u,v)\) and \(\phi(u,v)\) by their values at \(u=0\) on a small fixed interval in \(u\). Since \((s-u a)^2+u^2\) is comparable to \(s^2+u^2\) for bounded \(a\), the derivative errors are bounded by constants times \(|u|/(s^2+u^2)\) and \(u^2/(s^2+u^2)^{3/2}\). Both integrals are \(O(1+|\log s|)\). The frozen normal integral is explicit by completing the square, and differentiation yields the displayed \(1/s\) term. The first estimate also follows directly from comparability.
+
+The error integrates to a bounded quantity in \(v\) for both tangent dimensions one and two. The first estimate therefore makes \(I(z)\) bounded as \(z\downarrow c\), excluding \(c=0\). If \(c>0\), the negative leading terms of \(I'(z)\) contribute a nonzero multiple in magnitude of \(\int_{|v|<\epsilon}(\delta+|v|^2)^{-1}dv\). This tends to infinity in both tangent dimensions. The contacts have the same sign in this calculation, and the derivative away from their neighbourhoods is bounded. This contradicts the derivative of \(1/z\) at \(c>0\).

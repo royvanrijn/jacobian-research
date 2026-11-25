@@ -6852,6 +6852,51 @@ valuation degrees in a way that couples different edges.
 [Primitive matching and curve cover](ABC_DIFFUSE_FACTOR_GRAPH.md#complete-letter-curve-covers-of-the-cubic-matching)
 · [Balanced large-budget two-divisor obstruction](ABC_DIFFUSE_FACTOR_GRAPH.md#primitive-two-divisor-fibres-attaining-the-unsaved-count)
 
+
+#### Exact arithmetic sectors and determinant limits
+
+With independent exact valuation orders on just two letters,
+the count has exponent \((f+r/2+\eta)\lambda+\varepsilon\).
+Here \(f\lambda\) caps the joint coefficient radical on those
+letters and \(r\lambda\) caps the radical of the third. The
+orders may vary, with product at least a large fixed multiple
+of \(1/\lambda\). A full modulus and an anisotropic determinant
+handle the case without a large high-order prime. A single
+macroscopic prime gives the third variable of a generalized
+Fermat surface in the complementary case. At saturation
+this bounds the sum of two actual divisibility masses by \(1/2\),
+or \(1/3\) whenever the third spectrum contains a positive
+nonatomic part. Using the bounds in all three orientations
+excludes joint coefficient radical exponent below \(5\lambda/12\)
+by a fixed margin when all three letters admit high exact orders.
+[Two valuation grids](ABC_TWO_VALUATION_GRIDS.md)
+
+
+A small residual coefficient radical gives a \(7\lambda/24\)
+exponent for triples with fine exact valuation divisibility on
+all three letters. The grid has vanishing scaled mesh and so
+allows wholly diffuse limiting profiles. On variable-shift
+fibres, near-product density yields fixed multiplicative rows
+whose full target divisors can be combined into a single CRT
+modulus. Its numerical weight can exceed the actual shift width
+even where a fixed-shift estimate gives no saving. The general
+affordable-record count still needs a bound that uses the small
+radical of the third letter across shifts.
+[Fine valuation divisibility](ABC_FINE_VALUATION_DIVISIBILITY.md)
+· [Common rows with a varying shift](ABC_AGGREGATE_SHIFT_DICTIONARY_STARS.md)
+
+For one-target minimal repair, primitive row content can absorb
+the entire extra common-slope Taylor divisor. Actual primitive
+examples attain precisely the original Taylor valuation after
+that content is removed. On the broad diffuse profile the exact
+one-root interpolation test also excludes every support with
+effective horizontal area at most \(16/19\), allowing nonnested
+supports. Paid subdivisions of only the narrow real variables
+can be matched by finite-place depth on a diffuse modulus.
+[Primitive content after repair](ABC_MINIMAL_REPAIR_PROJECTIVE_CONTENT.md)
+· [Effective area for exact Taylor supports](ABC_EXACT_TAYLOR_EFFECTIVE_AREA.md)
+· [The cost of real subdivision](ABC_WEIGHTED_HILBERT_TAYLOR.md#paying-for-short-real-intervals-by-additional-finite-place-precision)
+
 ### Scope of the few-prime sum-product approach
 
 At fixed \(L\), set \(n=X^L\). For a balanced box, the number of

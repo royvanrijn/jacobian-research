@@ -148,8 +148,9 @@ follows from the sequential comparison used here.
 ## The fixed-terminal obligation
 
 The absolute eventual theorem leaves only finitely many possible
-terminal orders, starting at six. Each such order still includes arbitrary
-dimension and exponents. The
+terminal orders, starting at seven by the
+[complete terminal-six theorem](MULTIVARIATE_TERMINAL_SIX_ALL_PROFILES.md).
+Each such order still includes arbitrary dimension and exponents. The
 [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
 the relative center. A certified separation of that family gives
@@ -184,12 +185,44 @@ The [effective relative-gap bands](MULTIVARIATE_TERMINAL_SIX_DIFFUSE_BANDS.md)
 and [nine linked outer-mean bands](MULTIVARIATE_TERMINAL_SIX_JOINT_RAY_BANDS.md)
 cover additional profiles in the intermediate range. The
 [extended near-flat certificate](MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT_EXTENSION.md)
-covers the order-five outer mean \(u\ge9/10\). In particular
-it covers \(S\le1/5\). To see this, if \(\eta=\max |b-a|/r\)
-then \(\eta\le S\) by integrality, and the coefficient bound in
-the diffuse-band note gives
-\(u\ge \exp(-2S/[5(1-\eta)])\ge1-2S/[5(1-S)]\ge9/10\).
-Arbitrary fully shared profiles between these proved ranges remain open.
+and the [intermediate Cayley certificate](MULTIVARIATE_TERMINAL_SIX_INTERMEDIATE_CAYLEY.md)
+together cover the order-five outer mean \(u\ge18/25\).
+This includes \(S\le4/9\). Indeed, if
+\(\eta=\max_i |b_i-a_i|/\max(a_i,b_i)\) then \(\eta\le S\) by
+integrality. The coefficient bound in the diffuse-band note gives
+\[
+ u\ge\exp\!\left(-\frac{2S}{5(1-\eta)}\right)\ge e^{-8/25}
+ >\frac{18}{25};
+\]
+the last inequality follows from
+\(e^x\le1+x+x^2/[2(1-x/3)]\) at \(x=8/25\), by the exponential
+series. When \(S<4\), the
+[retained-row certificate](MULTIVARIATE_TERMINAL_SIX_RETAINED_ROWS.md)
+covers every profile with a Gauss reciprocal above \(1/8\) except
+when the retained list consists of a single row of unordered
+exponents \((1,2)\). The
+[marked-row tail certificate](MULTIVARIATE_TERMINAL_SIX_MARKED_ROW_TAIL.md)
+covers that list for the whole range \(S<4\), completing the
+case of at least one reciprocal above \(1/8\). For reciprocal cap
+\(1/8\), the first joint ray band covers \(0<u\le7/25\), the
+[paired Bernstein certificate](MULTIVARIATE_TERMINAL_SIX_PAIRED_LIGHT_ROWS.md)
+covers \(7/25\le u\le3/5\), and the
+[diffuse Cayley certificate](MULTIVARIATE_TERMINAL_SIX_DIFFUSE_CAYLEY.md)
+covers \(3/5\le u\le18/25\). Together with the intermediate and
+near-flat certificates, this completes terminal six.
+At terminal seven, a [fixed-ray certificate](MULTIVARIATE_TERMINAL_SEVEN_HIGH_CURVATURE.md)
+covers every ordinary profile with \(S\ge73/10\).
+
+Across all terminals, the [explicit high-curvature theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_CURVATURE_BOUND.md)
+and the [Hermite-edge comparison](MULTIVARIATE_EFFECTIVE_WEAK_CURVATURE_HERMITE_EDGE.md)
+confine possible counterexamples to \(10^{-16}N^{-8/3}<S<64\).
+The [effective stationary-fiber bounds](MULTIVARIATE_EFFECTIVE_STATIONARY_FIBER_LOCALIZATION.md)
+give a finite net for bounded-curvature profiles on interior field
+rectangles. The [inverse-map estimates](MULTIVARIATE_EFFECTIVE_STATIONARY_INVERTIBILITY.md)
+then quantify root geometry away from critical values and localize
+the fold at very small curvature. Extracting a numerical terminal
+cutoff still requires quantitative moment contour estimates,
+including critical and boundary field windows.
 
 A prescribed finite set of primes and precisions alone cannot give
 a universal exclusion. The
@@ -208,7 +241,10 @@ private degrees and total-degree difference. The
 uses two rows with overlapping below-prime windows. It
 covers balanced, arbitrarily small-curvature marks even
 when their common maximum prevents isolating one row at
-the chosen prime.
+the chosen prime. For terminal \(p+1\) with \(p\) an odd prime, the
+[mixed unit-gap Newton-width criterion](MULTIVARIATE_TERMINAL_SIX_UNIT_GAP_NEWTON_WIDTH.md)
+certifies coprimality on additional profiles and gives row changes
+and additions that preserve its valuation test.
 
 The [paired Gamma annulus](MULTIVARIATE_PAIRED_GAMMA_ROOT_ANNULUS.md)
 also gives explicit coprimality tests in the physical coefficient
@@ -220,9 +256,9 @@ At each terminal, coprimality over \(\mathbb Q\) gives the assertion
 over any characteristic-zero field by the rational Bézout identity.
 Both pure monomial coefficients are nonzero at every order, so
 the univariate reduction in \(t\) covers all projective coefficient
-choices. The two moments at orders one and two already lie in the
-low-terminal theorem. An all-degree proof still requires coverage of all terminals below
-the cutoff, or an argument that works directly at every terminal.
+choices. An all-degree proof still requires coverage of the terminals
+from seven through \(N_*-1\), or an argument that applies directly
+at every terminal.
 
 ## The discrete row-merger route
 
@@ -233,6 +269,16 @@ coefficient curvatures. For nonproportional shared rows the
 gives an explicit flattening threshold and a decrease of the leading
 stationary curvature. These comparisons leave the corresponding
 root transfer open.
+
+There is a discrete transfer for arithmetic certificates. The
+[initial-form merger](SFC_PADIC_ROW_MERGER_INITIAL_FORMS.md)
+combines two ordinary exponent rows by separating their base-\(p\)
+digits. One diagonal change of the monomial coefficients preserves
+all weighted moment initial forms through any prescribed order,
+including for arbitrary support size. Iterating the merger reduces
+these finite-window certificates to a single exponent row. The
+transfer proves coprimality when the initial forms exclude common
+residue zeros and leaves the lifting of a residue collision open.
 
 There is an [all-order physical binary transfer](SFC_PHYSICAL_BINARY_RESIDUAL_PRIVATE.md)
 when untouched independent rows leave at least two units of private

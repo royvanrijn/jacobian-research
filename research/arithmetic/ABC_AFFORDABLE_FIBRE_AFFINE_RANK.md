@@ -295,12 +295,12 @@ Suppose \(T\) has a band of scaled degrees in \([s,S]\) permitting the selection
 
 For a putative normalized fibre count exponent \(r=a-\delta\), fix an integer \(m\ge2\). The following three strict inequalities are incompatible with that count:
 \[
-        m\delta<p,\qquad
+        \delta<p,\qquad
         m\beta+\zeta<a-p-m\delta,\qquad
         e+s m\beta-\binom m2 S_U p>H .                              \tag{FS1}
 \]
 
-To prove this write \(U=Fxy\), with \(x\) the selected root block of cap \(p\). Make the simple bipartite graph of the \(x,y\) values. Each solution gives a distinct edge after selecting one factorization per solution, since \(xy\) and the fixed data determine the complete letters. The two caps for graph vertices are \(n^{p+o(1)},n^{a-p+o(1)}\). By the power mean, ordered \(m\)-stars with a common \(y\) number at least \(n^{mp+a-p-m\delta+o(1)}\). Stars repeating some \(x\) count at most \(\binom m2 n^{(m-1)p+a-p+o(1)}\), which is negligible by the first inequality. Thus some distinct fixed \(x_1,\ldots,x_m\) have at least \(n^{a-p-m\delta+o(1)}\) common \(y\) values.
+To prove this write \(U=Fxy\), with \(x\) the selected root block of cap \(p\). Make the simple bipartite graph of the \(x,y\) values. Each solution gives a distinct edge after selecting one factorization per solution, since \(xy\) and the fixed data determine the complete letters. The two caps for graph vertices are \(n^{p+o(1)},n^{a-p+o(1)}\). Choose \(0<\eta<p-\delta\) and discard columns of degree below \(n^{p-\delta-\eta}\). This loses at most \(n^{a-\delta-\eta+o(1)}\) edges. The surviving columns have degrees tending to infinity, so distinct ordered \(m\)-stars count \((1-o(1))\sum_y d_y^m\), where \(d_y\) is the degree at \(y\). By the power mean that sum is at least \(n^{mp+a-p-m\delta+o(1)}\). Thus some distinct fixed \(x_1,\ldots,x_m\) have at least \(n^{a-p-m\delta+o(1)}\) common \(y\) values.
 
 The target in row \(i\) is \(T_i(y)=\epsilon V+\omega Fx_i y\). Record its chosen band roots on each row, and the tail on row one if used. Let \(M_i\mid T_i(y)\) be the product of the complete powers recorded on row \(i\); the band and tail supports are disjoint on the same row. Across rows the locks need not be pairwise coprime. Rather, for \(i\ne j\) any prime of \(\gcd(M_i,M_j)\) is prime to \(Fy\) by primitivity and \(Fy\mid U_i\). From
 \[
@@ -320,3 +320,48 @@ For an exact comparison with just locking a single \(T\) value's factors, set \(
  =\frac{809}{3000}<\frac{17}{60}.
 \]
 Here the row method works with \(m=24,\ s=4,\ \beta=1/320,\ p=1/120000,\ e=\zeta=0\), and \(\delta=1/12000000\). The total recorded band cap is \(3/40\) and the overlap penalty is \(966/120000\). All three inequalities (FS1) are strict. This formal profile demonstrates scope beyond single-target CRT with the given fixed shift and residual box. It does not assert the existence of overflowing fibres. The displayed theorem does not require assumptions about target root counts versus the residual \(U\) cap.
+
+### A uniform gap for comparable residual root caps
+
+Fix \(0<a_0\le a_1<\infty\) and \(H_0,w_0,B_0>0\). Consider fixed-shift primitive pairs \(U,T\) as above, now with full records \(F\mid U\) and \(M\mid T\) both fixed (possibly unit). Assume the residual root boxes of \(U/F\) and \(T/M\) have normalized root caps \(a_U,a_T\in[a_0,a_1]\), numerical heights at most \(H_0\), with prelimit root moments giving the residual numerical heights up to vanishing precision errors. Assume one of \(F,M,V\) has numerical weight at least \(w_0\) and radical at most \(n^{B_0+o(1)}\). There are \(\sigma,\gamma,L_0>0\), depending only on the indicated bounds, such that, for \(L<L_0\) and \(|a_U-a_T|<\gamma\), the normalized fixed-record count is at most
+\[
+           n^{\min(a_U,a_T)-\sigma+o_X(1)}.
+\]
+Here the constants and \(o_X(1)\) use the same fixed-budget and fixed-factorization conventions as the surrounding root-box arguments. All numerical data of the shift and records can vary with \(X\) within the given polynomial height assumptions. The count fixes the numerical shift and the product values of the complete recorded factors, not only their supports.
+
+Otherwise choose a diagonal countersequence with \(L\to0\), root caps tending to the same \(a\in[a_0,a_1]\), and normalized count tending to \(a\). Pass to weak limits of the two residual degree measures \(\nu_U,\nu_T\) of mass \(a\), and limiting residual heights \(H_U,H_T\), with escaped moments \(e_U,e_T\). Tightness follows from the bounded numerical first moments. In the fixed integer supplying the hypothesis, retain the
+prime powers \(p^k\) with \(kL\ge\kappa=w_0/(4B_0)\).
+The discarded weight is at most \(w_0/3\) with sufficiently
+small tolerances by the radical bound. The remaining divisor
+has positive fixed numerical weight and fullness of order
+\(1/L\). If it comes from a free-letter record, exchange the
+letters so that this record is \(F\).
+
+When the modulus comes from \(F\mid U\), primitivity gives
+a unit congruence for \(T/M\) under it. Indeed the fixed shift and \(M\) are units modulo \(F\). Freeze the residual \(T\) roots outside shrinking windows around finitely many positive atoms and the zero atom, with upper-tail root mass as small as desired. As in the affine rank proof, group the positive windows, with their narrow products as the small variables and their degree discrepancies, and the zero window, as a single \(X^{o(1)}\) correction. Under the given positive full modulus, amplified (GW) releases the exact residual value at arbitrarily small normalized counting cost. This uses positive full weight and \(k_0L\) bounded below, uniform in the target unit and fixed coefficients. If no positive windows remain, use direct rational reconstruction for the small correction. Taking any finite atom list first, then increasing that list, thus gives \(a\le \nu_T^{\rm na}(\mathbb R_{\ge0})\). So \(\nu_T\) is wholly nonatomic.
+
+This gives a compact positive band of \(T/M\) of positive diffuse root mass. It supplies a further complete lock of arbitrarily small positive root cost, and fixed positive numerical weight with normalized fullness bounded below. Freeze it, impose the unit congruence on \(U/F\), and run the same argument. Taking the new lock cost arbitrarily small shows that \(\nu_U\) is wholly nonatomic. All locked factors of the opposite letter are units by primitivity, regardless of whether the original \(M\) also had positive numerical weight.
+
+When the original positive modulus comes from the fixed
+shift \(V\), there are two cases. If either residual measure
+has positive diffuse mass, its cheap full band supplies a
+modulus on that letter. The preceding argument forces the
+opposite residual measure to be wholly diffuse. Apply it
+back to obtain two wholly diffuse measures. If both are
+purely atomic, group the residual windows on both sides.
+Their exact ratio is a unit with fixed residue modulo the
+positive full divisor of \(V\), including the fixed factors
+\(F,M\) in the twist. The amplified count releases their
+ratio and hence both complete free values at arbitrarily
+small normalized cost, contradicting saturation.
+
+Apply (FS1) with \(U/F\) as residual varied side and the factors of \(T/M\) as the target bands and optional tail, ignoring the already fixed \(M\) in the lcm count. Then apply it in the opposite orientation. If \(s_T\) is the essential supremum of the support of \(\nu_T\), the saturation consequence of (FS1) gives \(H_U\ge e_T+a s_T\), by taking positive compact nonatomic bands approaching \(s_T\). In particular \(s_T<\infty\), and likewise \(s_U<\infty\). Nonatomicity and positive mass give
+\[
+        H_U\ge e_T+a s_T>e_T+\int r\,d\nu_T(r)=H_T .
+\]
+Interchanging \(U,T\) gives \(H_T>H_U\), a contradiction. This proves the uniform strict gap by the diagonal argument. The modulus hypothesis matters for this derivation of wholly nonatomic residual profiles. Merely fixing a large integer with no positive weighted power divisor is insufficient for the amplified step.
+
+Several of the same reconstructions work with a varying shift
+dictionary when multiplicative rows have enough common columns.
+The interval version uses the dictionary's numerical width.
+[Common rows with varying shifts](ABC_AGGREGATE_SHIFT_DICTIONARY_STARS.md)

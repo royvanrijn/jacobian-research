@@ -237,4 +237,5 @@ values \((5-\sqrt{10})/2,(5+\sqrt{10})/2\) throughout the
 allowed \(r\)-interval. Coefficient convergence on bounded
 sets and simplicity of the limiting roots then give uniform
 angular separation for \(u\) sufficiently close to one.
-A full intermediate-range proof at terminal six remains open.
+The [complete terminal-six proof](MULTIVARIATE_TERMINAL_SIX_ALL_PROFILES.md)
+assembles the subsequent linked certificates for the intermediate range.

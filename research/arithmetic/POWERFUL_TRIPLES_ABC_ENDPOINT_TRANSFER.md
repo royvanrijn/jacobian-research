@@ -183,6 +183,19 @@ would again give two measures supported on
 \([3,\infty)\). In particular the gap for boxes does
 not require exact absence of the low degree coordinates.
 
+
+Exact divisibility by orders on a finer grid yields a separate
+\(7\lambda/24\) counting sector through a uniform generalized
+Fermat estimate. Its scaled grid mesh can tend to zero, so the
+sector also allows wholly diffuse limiting profiles.
+[Fine valuation divisibility](ABC_FINE_VALUATION_DIVISIBILITY.md)
+
+The rectangular full-modulus argument needs exact divisibility
+on only two letters. It allows coprime orders and places no
+valuation-grid condition on the third letter.
+[Two valuation grids](ABC_TWO_VALUATION_GRIDS.md)
+
+
 ## Large-step valuation spectra and the small-budget endpoint
 
 Consider ordered primitive positive triples at radical budget

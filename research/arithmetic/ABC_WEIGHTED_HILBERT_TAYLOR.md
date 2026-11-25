@@ -307,3 +307,101 @@ cannot give a positive uniform comparison at smaller rank
 either. These obstructions leave general nonnested multiroot
 supports and additional arithmetic restrictions on the
 evaluation rows open.
+
+
+[The effective horizontal area bound](ABC_EXACT_TAYLOR_EFFECTIVE_AREA.md)
+excludes arbitrary nonnested one-root supports of effective area at
+most \(16/19\) on the same broad profile.
+
+## Paying for short real intervals by additional finite-place precision
+
+This comparison concerns a first determinant using the exact
+error variable, with the same finite monomial support at all
+places. Let \(\mathcal B\) be any selected set of columns,
+including an arbitrary prescribed-size subminor, and write \(S\)
+for the corresponding sheared exponent set \((I-qj,j)\).
+For nonnegative horizontal weights \(\boldsymbol B\) and a
+nonnegative vertical weight \(E\), write
+\(\mathcal W(S;\boldsymbol B,E)\) for the minimum total weight
+of an interpolation basis on \(S\). Here the weight of the
+polynomial monomial \(x^\alpha j^k\) is
+\(\boldsymbol B\cdot\alpha+Ek\). When some weights vanish, one
+can restrict to the fixed finite monomial set obtained by
+reducing in each coordinate at its distinct coordinate values.
+
+Suppose, in addition to the finite-place chart, the real
+variables obey \(z_i/z_{0i}=1+t_i\) with \(|t_i|\ll n^{-c_i}\).
+Keep \(v\) in its usual height box, without an additional
+real restriction on it. After taking the centres out of
+the monomial columns, the determinant expands in products of
+\(t_i\) and the original wider powers \(v^j\). Its generic
+Taylor bound gives a discount in the original Archimedean column
+weight sum equal to the formal weight
+\[
+                   \mathcal W(S;L\boldsymbol c,0).
+ \tag{AR1}
+\]
+More precisely this is the least real Taylor weight of a
+nonzero coefficient in the unconstrained formal model.
+For a given \(j\), the coefficient vectors on its original
+columns are restrictions of \(\prod_i\binom{I_i}{\alpha_i}\).
+A nonzero determinant term must use precisely the original
+number of columns for that \(j\), because vectors from
+different \(j\)'s have disjoint column support. The weighted
+basis problem therefore splits over \(j\). Vertical degree
+is free when \(E=0\), so interpolating in \(j\) realizes that
+same direct sum in the sheared problem. On any fixed
+\(j\) the shear is a coordinate translation preserving
+every horizontal weighted degree filtration. This proves
+(AR1), using the independent formal row variables to see
+noncancellation among the surviving coefficients. The product
+of the extracted centre monomials and the primitive row
+multipliers supplies the original Archimedean height bound,
+up to an inner subpower loss. Every term uses the same
+multiset of wider exponents from the chosen columns. Replacing
+\(z_i\) by \(z_{0i}\) in those coefficient bounds changes
+them by bounded factors at fixed support and height-box
+scales. Counting the intervals themselves uses a normalized
+chart cost \(\sum_i c_i+o(1)\) if one pays for the full
+logarithmic covers of the \(z_i\).
+
+The finite-place minimum has the superadditivity property
+\[
+ \mathcal W(S;\boldsymbol B+\boldsymbol D,E)
+ \ \ge\
+ \mathcal W(S;\boldsymbol B,E)+\mathcal W(S;\boldsymbol D,0)
+ \tag{AR2}
+\]
+for \(\boldsymbol D\ge0\). Each basis has the sum of its two
+weights on the right, and each weight is at least its
+individual minimum. Thus the same weight discount can be
+supplied by finite-place precision on a diffusely supported
+full modulus. To make this precise, assume a positive
+normalized prime mass on which \(e_p L\) is bounded below
+and the maximum individual prime mass tends to zero.
+Take the original total shallow costs bounded, with a fixed
+number \(m\) of narrow root groups. For any large fixed \(K\),
+choose a block of modulus primes with normalized mass
+\(1/K+o(1)\), rounded up. At its primes increase the narrow
+depths by \(D_i=\lceil Kc_i\rceil\). For each \(i\) the
+primes where the original depth is within \(D_i\) of \(e_p\)
+have normalized mass \(O(L)\), by the individual lower
+bound for \(e_p L\) and the total depth budget. Discard those
+primes before making the block choice. This permits all
+the depth increases with at most
+\(\sum_i c_i+m/K+o(1)\) additional normalized chart cost.
+At those primes apply (AR2). Homogeneity in \(\boldsymbol D\)
+and the block's prime mass show that the additional
+finite-place gain is at least (AR1) after summing log weights.
+Finitely many exceptional primes of the fixed support may
+be discarded at each inner limit. Any strict margin in the
+chart budgets absorbs \(m/K\).
+
+Thus nominal Archimedean subdivisions in the narrow variables
+alone cannot make the exact-error Taylor coefficient test
+succeed where the flexible finite-place chart did not.
+The argument applies to each selected subminor, with no
+exchange between the extrema over column sets and bases.
+It leaves open cheaper real covers of the actual sample,
+simultaneous real restrictions on wider variables, and
+further cancellations tied to actual arithmetic evaluations.
