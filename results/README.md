@@ -5,6 +5,7 @@ preserves verified public deposits and their checksums.
 
 | Current paper | Result | Deposit or submission |
 |---|---|---|
+| [The primitive balanced-degree spectrum in the two-pair Image problem](primitive-balanced-image-spectrum/) | Determines the exact primitive balanced-degree failure spectrum and proves density-one ordinary reduction after finite extension for rank-two CM multiplication with at most two balanced embedding pairs. | Hexagon pending · reserved `hexagon:2611.01080` |
 | [The Strong Factorial Conjecture for Univariate Binomials](strong-factorial-binomials/) | Proves that two consecutive positive factorial moments of a nonzero univariate binomial cannot both vanish over a characteristic-zero field. | Hexagon processing · reserved `hexagon:2611.01063v1` |
 | [Cubic sphere moments and the two-pair Image problem](cubic-sphere-image/) | Classifies pure cubic sphere phases and proves the sharp two-pair cubic Image cutoff and balanced degree-four failure boundary. | Hexagon under review · reserved `hexagon:2611.01060v1` |
 | [The Mathieu Property over Fields of Characteristic Zero: Classification and Ground-Field Obstructions](mathieu-ground-fields/) | Classifies normalized Reynolds kernels for split reductive actions in characteristic zero and extends the classification over real closed fields and on compact homogeneous spaces. | Hexagon under review · reserved `hexagon:2611.01051v1` |

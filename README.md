@@ -8,6 +8,7 @@ Current PDFs and sources are linked below. The [paper catalogue](results/) recor
 
 | Paper | Main result | Read |
 |---|---|---|
+| **The primitive balanced-degree spectrum in the two-pair Image problem** | Determines the exact primitive balanced-degree failure spectrum and proves density-one ordinary reduction after finite extension for rank-two CM multiplication with at most two balanced embedding pairs. | [Paper and verification](results/primitive-balanced-image-spectrum/) · Hexagon pending |
 | **The Strong Factorial Conjecture for Univariate Binomials** | Proves that two consecutive positive factorial moments of a nonzero univariate binomial cannot both vanish over a characteristic-zero field. | [Paper and verification](results/strong-factorial-binomials/) · Hexagon processing |
 | **Cubic sphere moments and the two-pair Image problem** | Classifies pure cubic sphere phases and proves the sharp two-pair cubic Image cutoff and balanced degree-four failure boundary. | [Paper and verification](results/cubic-sphere-image/) · Hexagon under review |
 | **The Mathieu Property over Fields of Characteristic Zero: Classification and Ground-Field Obstructions** | Classifies normalized Reynolds kernels for split reductive actions in characteristic zero and extends the classification over real closed fields and on compact homogeneous spaces. | [Paper and verification](results/mathieu-ground-fields/) · Hexagon under review |

@@ -5,7 +5,7 @@
     "orcid": "0009-0000-2808-0645"
   },
   "summary": "Determines the exact primitive, absolutely nonpower balanced failure spectrum in two contraction pairs and proves density-one ordinary reduction after finite extension for Rosati-compatible rank-two CM multiplication with at most two balanced pairs.",
-  "status": "ready-for-review",
+  "status": "submission-pending",
   "published": false,
   "catalogued_on": "2026-11-25",
   "source": "main.tex",
@@ -16,7 +16,7 @@
   "abstract_source": "main.tex",
   "verification_record": "verification.json",
   "next_steps": [
-    "Contributor review of the exact upload package, deposit declarations, AI-use disclosures, and license choice.",
+    "Record the public version and seal the deposited files once Hexagon releases the submission.",
     "Specialist review of the proper direct-image argument and the rank-two ordinary-reduction theorem."
   ],
   "source_bundle": "primitive-balanced-image-spectrum-hexagon-source.zip",
@@ -29,7 +29,7 @@
   },
   "submission": {
     "venue": "Hexagon",
-    "status": "prepared",
+    "status": "pending",
     "prepared_on": "2026-11-25",
     "upload": "primitive-balanced-image-spectrum-hexagon-source.zip",
     "primary_category_suggestion": "math.AG",
@@ -46,7 +46,10 @@
       "cyclic covers"
     ],
     "provenance": "AI-PROVENANCE.md",
-    "distribution_license": "Contributor to select at deposit"
+    "reserved_identifier": "hexagon:2611.01080",
+    "submitted_on": "2026-11-25",
+    "updated_on": "2026-11-25",
+    "status_source": "Author confirmation"
   },
   "reproducibility_archive": "primitive-balanced-image-spectrum-verification.zip",
   "checksums": "SHA256SUMS.txt",

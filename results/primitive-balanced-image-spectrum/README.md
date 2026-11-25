@@ -26,11 +26,11 @@ and distinguishes finite replay, PDF-only internal review, and external
 mathematical review. The [literature comparison](ordinary-reduction-literature.md)
 records the precise arithmetic theorem overlap and scope.
 
-## Hexagon preparation
+## Hexagon submission
 
-The TeX archive is the upload candidate. The verification archive is
-separate from the TeX upload. The contributor will choose the distribution
-license and confirm the deposit declarations at submission.
+Submitted to Hexagon. The submission is pending under the reserved
+identifier `hexagon:2611.01080`. The source ZIP and separate
+verification ZIP are retained with the paper.
 
 [AI provenance](AI-PROVENANCE.md) · [Announcement](ANNOUNCEMENT.md) ·
 [Mathematical dependency inventory](supplement/DEPENDENCIES.md)
