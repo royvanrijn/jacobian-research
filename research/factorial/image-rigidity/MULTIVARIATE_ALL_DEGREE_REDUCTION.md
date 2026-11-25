@@ -150,8 +150,8 @@ follows from the sequential comparison used here.
 ## The fixed-terminal obligation
 
 The absolute eventual theorem leaves only finitely many possible
-terminal orders, starting at eleven by the
-[complete terminal-ten theorem](MULTIVARIATE_TERMINAL_TEN_ALL_PROFILES.md).
+terminal orders, starting at twelve by the
+[complete terminal-eleven theorem](MULTIVARIATE_TERMINAL_ELEVEN_ALL_PROFILES.md).
 Each such order still includes arbitrary dimension and exponents. The
 [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
@@ -276,10 +276,14 @@ covers all private profiles and all fully shared profiles. Its upper
 middle band uses seventeen exact retained lists and the same cubic
 matched model as the lighter bands. The consecutive pairs through
 terminal ten are therefore complete. The
-[terminal-eleven fixed rays](MULTIVARIATE_TERMINAL_ELEVEN_HIGH_CURVATURE.md)
-separate all profiles with \(S\ge8\) or total private degree at
-least four, and give shared-curvature cutoffs for the nine other
-private configurations.
+[terminal-eleven theorem](MULTIVARIATE_TERMINAL_ELEVEN_ALL_PROFILES.md)
+combines the exact private and retained cases with the shared
+moving-ray and Cayley bands. All terminals through eleven are
+complete. At terminal twelve the
+[fixed rays](MULTIVARIATE_TERMINAL_TWELVE_HIGH_CURVATURE.md)
+cover \(S\ge8\), and the
+[private-degree theorem](MULTIVARIATE_TERMINAL_TWELVE_PRIVATE_DEGREES.md)
+covers every profile with total private degree at least two.
 
 Across all terminals, the [explicit high-curvature theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_CURVATURE_BOUND.md)
 and the [uniform weak-curvature theorem](MULTIVARIATE_UNIFORM_WEAK_CURVATURE_ANGLE_SEPARATION.md)
