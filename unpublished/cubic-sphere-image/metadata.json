@@ -5,7 +5,7 @@
     "orcid": "0009-0000-2808-0645"
   },
   "summary": "Classifies pure cubic sphere phases and proves the sharp two-pair cubic Image cutoff and balanced degree-four failure boundary.",
-  "status": "submission-pending",
+  "status": "parked",
   "published": false,
   "catalogued_on": "2026-11-17",
   "source": "main.tex",
@@ -27,7 +27,10 @@
   "submission": {
     "venue": "Hexagon",
     "reserved_identifier": "hexagon:2611.01060v1",
-    "status": "under-review",
-    "updated_on": "2026-11-25"
-  }
+    "status": "cancelled",
+    "updated_on": "2026-11-25",
+    "cancelled_on": "2026-11-25",
+    "status_source": "Author confirmation"
+  },
+  "parked_on": "2026-11-25"
 }

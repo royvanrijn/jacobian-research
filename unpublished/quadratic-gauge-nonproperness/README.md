@@ -1,6 +1,6 @@
 # The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps
 
-**Unpublished · draft.**
+**Unpublished · parked.**
 
 Computes the exact reduced nonproperness locus, complete boundary fiber table and discriminant order for the quadratic-gauge maps.
 

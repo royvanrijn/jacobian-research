@@ -6,7 +6,7 @@
   },
   "summary": "Computes the exact reduced nonproperness locus, boundary fibre table and discriminant order for the quadratic-gauge maps.",
   "published": false,
-  "status": "draft",
+  "status": "parked",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
@@ -27,5 +27,6 @@
   "revised_on": "2026-11-17",
   "verification_record": "verification.json",
   "source_archive": "source.zip",
-  "source_bundle": "source.zip"
+  "source_bundle": "source.zip",
+  "parked_on": "2026-11-25"
 }

@@ -6,7 +6,7 @@
   },
   "summary": "Reduces marked Gaussian moment series to base markers for a constant quadratic fibre, extends actual generation to nilpotent coefficient content, and computes the exact scalar specialization defect.",
   "published": false,
-  "status": "ready-for-review",
+  "status": "parked",
   "source": "main.tex",
   "pdf": "gaussian_marker_reduction_constant_quadratic_fibre.pdf",
   "build": "latexmk -pdf -jobname=gaussian_marker_reduction_constant_quadratic_fibre -interaction=nonstopmode -halt-on-error main.tex",
@@ -22,5 +22,6 @@
   "abstract_format": "latex",
   "incorporates": [
     "A Specialization Obstruction in Gaussian Marker Generation"
-  ]
+  ],
+  "parked_on": "2026-11-25"
 }

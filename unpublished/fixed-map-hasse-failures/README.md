@@ -1,6 +1,6 @@
 # Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map
 
-**Unpublished · draft.**
+**Unpublished · parked.**
 
 Classifies every Hasse-failing rational parameter on one line of a fixed degree-five Jacobian-one map and proves the exact target-height asymptotic `N(B) ~ C B²/log B`.
 

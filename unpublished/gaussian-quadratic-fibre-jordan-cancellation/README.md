@@ -1,6 +1,6 @@
 # Gaussian Moment Vanishing with One Base Variable and Constant Quadratic Fibres
 
-**Unpublished · ready for review.**
+**Unpublished · parked.**
 
 Classifies Gaussian phases with one unrestricted ordinary base variable and a constant quadratic fibre matrix, including arbitrary Jordan blocks. Purity, safety and a polynomial unit period are equivalent to finite rational identities. The determinant-one precision matrix gives a sufficient mixed-moment bound. Block triangular affine normalization extends the result to arbitrary means and correlated real Gaussian laws with positive-definite covariance.
 

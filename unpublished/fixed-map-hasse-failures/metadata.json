@@ -6,7 +6,7 @@
   },
   "summary": "Classifies every Hasse-failing rational parameter on one target line of a fixed degree-five Jacobian-one map and proves an exact target-height asymptotic C B^2/log B.",
   "published": false,
-  "status": "draft",
+  "status": "parked",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
@@ -24,5 +24,6 @@
     "type": "publication",
     "subtype": "preprint"
   },
-  "source_bundle": "source.zip"
+  "source_bundle": "source.zip",
+  "parked_on": "2026-11-25"
 }

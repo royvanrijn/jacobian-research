@@ -6,7 +6,7 @@
   },
   "summary": "Classifies Gaussian moment vanishing with one ordinary base variable and constant quadratic fibres, including arbitrary Jordan blocks and nondegenerate correlated real Gaussian laws.",
   "published": false,
-  "status": "ready-for-review",
+  "status": "parked",
   "source": "main.tex",
   "pdf": "gaussian_moments_one_base_constant_quadratic_fibres.pdf",
   "build": "latexmk -pdf -jobname=gaussian_moments_one_base_constant_quadratic_fibres -interaction=nonstopmode -halt-on-error main.tex",
@@ -19,5 +19,6 @@
   "source_bundle": "gaussian_moments_one_base_source.zip",
   "abstract": "We study complex Gaussian phases with one unrestricted base variable and\nany number of quadratic fibre variables, whose quadratic matrix is\nconstant. Vanishing of every positive pure moment is equivalent to\npolynomiality of every marked moment series and to explicit finite\nrational identities. The proof allows arbitrary Jordan blocks: purity\nforces each nonzero primary block to be cyclic with an affine source,\nand a polynomial precision matrix of determinant one cancels every\nmarked-period pole. We give a sufficient degree bound and a formal\nstationary-phase proof of the leading-coefficient obstruction used in\nthe reduction. Affine normalization also covers correlated real Gaussian\nlaws with positive-definite covariance. A counterexample with two base\nvariables explains why the one-base hypothesis matters.",
   "abstract_source": "main.tex",
-  "abstract_format": "latex"
+  "abstract_format": "latex",
+  "parked_on": "2026-11-25"
 }

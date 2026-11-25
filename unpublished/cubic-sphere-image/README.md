@@ -2,7 +2,7 @@
 
 [Read the paper](cubic-sphere-image.pdf) · [LaTeX source](main.tex) · [Source bundle](source.zip) · [Verification record](verification.json)
 
-Roy van Rijn. **Under review at Hexagon.** Reserved `hexagon:2611.01060v1`. Updated November 25, 2026.
+Roy van Rijn. **Parked.** The Hexagon submission `hexagon:2611.01060v1` was cancelled in favor of the [Balanced Image paper](../../results/primitive-balanced-image-spectrum/).
 External mathematical review and formal verification remain open.
 
 The paper classifies all pure phases in the full sixteen-dimensional filtered space of degree at most three on `t²+2xy=1`. It proves the sharp mixed-moment cutoff `m > 3 deg(g)`, transfers it to bihomogeneous bidegree `(3,3)` in two contraction pairs over every characteristic-zero field, and reproduces Long's quartic witness to establish that balanced degree four is the first failure.

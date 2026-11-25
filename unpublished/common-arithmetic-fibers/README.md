@@ -1,6 +1,6 @@
 # Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber
 
-**Unpublished · draft.**
+**Unpublished · parked.**
 
 Gives a quadratic-gauge proof and Lean formalization of prescribed full finite etale Keller fibres. The characteristic-zero existence conclusion also follows from Ulam Theorem 5.2; the explicit coefficient specialization is included in the paper and [literature comparison](LITERATURE_AUDIT.md).
 
