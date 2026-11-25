@@ -52,3 +52,23 @@ tmp/
 # Current released-paper bibliographies regenerated from the retained .bib source.
 /results/generalized-vanishing-two-variables/main.bbl
 /results/generalized-vanishing-two-variables/generalized-vanishing-two-variables.bbl
+# Bulk artifacts retained externally; see external-artifacts.json.
+/research/arithmetic/abc_height_fulloc_improved_unit_certificate.part2.xz
+/research/arithmetic/abc_height_fulloc_improved_unit_certificate.part3.xz
+/research/arithmetic/abc_height_fulloc_improved_unit_certificate.part1.xz
+/research/arithmetic/abc_height_fulloc_unit_certificate.part1.xz
+/research/arithmetic/abc_height_fulloc_unit_certificate.part2.xz
+/research/arithmetic/abc_height_fulloc_unit_certificate.part3.xz
+/research/arithmetic/abc_height_fulloc_certificate.json.gz
+/to_process/Jacobian_research_recovery_2026-11-22.zip
+/research/arithmetic/abc_height_fulloc_improved_unit_certificate.part4.xz
+/research/arithmetic/abc_budget_988_delta.json.xz
+/research/arithmetic/abc_budget_987_delta.json.xz
+/research/arithmetic/abc_budget_986_delta.json.xz
+/research/arithmetic/abc_height_fulloc_delta.jsonl.gz
+/research/meridional-rank/representations/sources/davis-coxeter-groups-second-edition-2025.pdf
+/research/arithmetic/abc_budget_985_delta.json.xz
+/research/arithmetic/sources/voight-quaternion-algebras-author.pdf
+/research/arithmetic/abc_budget_*_delta.json.xz
+/research/arithmetic/abc_height_fulloc*certificate*.xz
+/research/arithmetic/abc_height_fulloc*.gz

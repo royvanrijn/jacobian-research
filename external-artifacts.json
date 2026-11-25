@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "description": "Bulk files stored outside Git. Local ignored symlinks preserve original paths; a fresh checkout requires restoring these files before running dependent checkers. Hashes identify bytes, not verification outcomes.",
+  "external_root": "/home/royvanrijn/research-large-artifacts/2026-11-25",
+  "historical_commit": "158ab5205",
+  "restore": "Copy each external_root/path to its original path, or create an ignored local symlink. Verify SHA-256 against this manifest. Original committed bytes also remain in Git history.",
+  "files": [
+    {
+      "path": "research/arithmetic/abc_height_fulloc_improved_unit_certificate.part2.xz",
+      "sha256": "f7495bcdf6274b840201dc5d545bc31cd568e0b05f871dddf0312a47a494a79a"
+    },
+    {
+      "path": "research/arithmetic/abc_height_fulloc_improved_unit_certificate.part3.xz",
+      "sha256": "88a1fdff5afbfb34291fdb48d09f1c6de584be3862a698ed61ddc5c4bc6f8c87"
+    },
+    {
+      "path": "research/arithmetic/abc_height_fulloc_improved_unit_certificate.part1.xz",
+      "sha256": "c8dc3733f0174000853499588341a5b1e5c0db1d49c72baa32917b17d0ca41ea"
+    },
+    {
+      "path": "research/arithmetic/abc_height_fulloc_unit_certificate.part1.xz",
+      "sha256": "20d6d965f29f9699c966cc5d96b1c7765d26e09bee7026dc3f181e4367712064"
+    },
+    {
+      "path": "research/arithmetic/abc_height_fulloc_unit_certificate.part2.xz",
+      "sha256": "9b8d5f94660c462ab30c7e86e3cb2e26b4a49369a917f1d4612fdd27558c75f0"
+    },
+    {
+      "path": "research/arithmetic/abc_height_fulloc_unit_certificate.part3.xz",
+      "sha256": "49094b75a6f46b5ddc25bb4b4479407789745cda6d7ba6a71dceeb1a7884b359"
+    },
+    {
+      "path": "research/arithmetic/abc_height_fulloc_certificate.json.gz",
+      "sha256": "b0dca3012b7b1dd5698a4f67051f41e53d55962888f0328bbd35e85c3a367a96"
+    },
+    {
+      "path": "to_process/Jacobian_research_recovery_2026-11-22.zip",
+      "sha256": "2ddaf0e5b5a9feb5b93925afcb9c8bd410311d55a48a54d845d48388dc985229"
+    },
+    {
+      "path": "research/arithmetic/abc_height_fulloc_improved_unit_certificate.part4.xz",
+      "sha256": "299862d47187f29ffccf1f3b1c6003745172daf97c4b7b361e4e3ebec509b789"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_988_delta.json.xz",
+      "sha256": "eb874967684826909f4fd3948a22b532bc9cafb41d2f8ec5b16b6579348941ab"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_987_delta.json.xz",
+      "sha256": "e3cd6d6b9ca4ceedbc7466ac609119bee377b803ee2db19271595ad85681cdb8"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_986_delta.json.xz",
+      "sha256": "6233ee9add4b1438d95c94f268d0624e9ecc90bc8e086540baf70b7e9e9afa52"
+    },
+    {
+      "path": "research/arithmetic/abc_height_fulloc_delta.jsonl.gz",
+      "sha256": "c9b7d6629192173b5852fcd8a96116be6b54f07e998a1922013b7b651ba6e8b8"
+    },
+    {
+      "path": "research/meridional-rank/representations/sources/davis-coxeter-groups-second-edition-2025.pdf",
+      "sha256": "617be601db21b79aa50f6ce551ea20f4409ec274817b86757168bc93f6554669"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_985_delta.json.xz",
+      "sha256": "993af2ae6d514616fe5d44162a39d3bfef2f034701860f533212c3628a7a33b2"
+    },
+    {
+      "path": "research/arithmetic/sources/voight-quaternion-algebras-author.pdf",
+      "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0"
+    }
+  ]
+}
