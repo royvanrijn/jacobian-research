@@ -4,15 +4,25 @@ Roy van Rijn · Draft in preparation
 
 [PDF](paper.pdf) · [LaTeX source](main.tex) · [Metadata](metadata.json) · [Verification record](verification.json)
 
-The headline theorem saves \(2^{-16}/k\) over \(2/k\) for
+The headline theorem saves \(1/(153k)\) over \(2/k\) for
 primitive diagonal \(k\)-full triples. For fixed offsets
-\(p=r+u,\ q=r+v\), it saves \(2^{-17}/r\) over \(1/p+1/q\)
-for sufficiently large \(r\). Section 9.3 proves the bound
-by applying Newton divided differences to the rectangular
-determinant for the compressed congruence. Section 9.2 gives
-the direct compression and the earlier \(k^{-3/2}\) saving.
-The general modular estimate covers heights up to \(n^{C/r}\)
-for every fixed \(C\).
+\(p=r+u,\ q=r+v\), it saves \(1/(306r)\) over \(1/p+1/q\)
+for sufficiently large \(r\). Section 9.4 combines
+minimum-energy subset selection with adaptive amplification.
+Fixing \(c\) gives a saving of \(1/(300k)\).
+Choosing the fixed summand by residual-factor size proves
+the headline bound. Section 9.3 gives the fixed-depth
+divided-difference estimate, and Section 9.2 gives the
+compression and the earlier \(k^{-3/2}\) saving.
+
+The [parameter checker](../../research/arithmetic/verify_powerful_adaptive_determinant.py)
+replays the strict inequalities at \(1/320\), \(1/300\)
+and \(1/153\) and the prime-power ceiling calculation.
+Run it from this directory with
+
+~~~sh
+python3 ../../research/arithmetic/verify_powerful_adaptive_determinant.py
+~~~
 
 The draft retains the fixed-offset graph estimates and the two-power
 weighted graph bound of Section 9.1. Its exact certificates give

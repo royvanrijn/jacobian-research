@@ -43,6 +43,26 @@ def initial_rows(checker, budget):
     return root[:-2] + root[-1:]
 
 
+
+def tail_fourier_rows(checker):
+    """Use exact affine bounds on the unexposed Fourier mass."""
+    rows = []
+    primes = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31)
+    first_hidden = {2: 8, 3: 9, 5: 25}
+    for letter in LETTERS:
+        for cutoff in (8, 9, 10, 12, 15, 18, 20, 24, 32):
+            penalties = [(cutoff - first_hidden.get(q, q), q)
+                         for q in primes if first_hidden.get(q, q) < cutoff]
+            coefficients = checker.add(
+                (cutoff, checker.var(letter)),
+                *((i - cutoff, checker.var(f"{letter}{i}")) for i in EARLY),
+                (-sum(weight for weight, _ in penalties), checker.var(f"F{letter}")),
+                *((weight, checker.var(f"{letter}{i}"))
+                  for weight, q in penalties for i in EARLY if i % q == 0),
+            )
+            rows.append(checker.row(coefficients, 1))
+    return rows
+
 def branch_rows(checker, node, signed=False, *, short="a"):
     """Return the disjunction of affine upper bounds for one arithmetic inequality."""
     require(short in LETTERS, "invalid short letter")
@@ -103,6 +123,54 @@ def branch_rows(checker, node, signed=False, *, short="a"):
     objective = variable("D")
     kind = node["type"]
     total = affine_sum(*[(1, variable(letter)) for letter in LETTERS])
+
+
+    if kind == "holder3":
+        require(signed and set(node) == {"type", "C", "O"}, "unexpected Hölder metadata")
+        c = node["C"]
+        require(c in LETTERS, "invalid locked letter")
+        a, b = [letter for letter in LETTERS if letter != c]
+        locked = subset(node["O"])
+        modulus = lower_weight(c, locked)
+
+        def cases(letter):
+            free = variable(letter)
+            below = affine_sum((1, modulus), (-1, free))
+            above = affine_sum((1, modulus), (-2, free))
+            return (
+                (affine_sum((2, free), (-Fraction(33, 40), modulus)), [row(below)]),
+                (affine_sum((Fraction(27, 20), free), (-Fraction(7, 40), modulus)),
+                 [row(affine_sum((-1, below))), row(above)]),
+                (free, [row(affine_sum((-1, above)))]),
+            )
+
+        base = affine_sum((1, objective), (-1, mass(c, locked)))
+        return [[row(affine_sum((1, base), (-Fraction(1, 2), left), (-Fraction(1, 2), right)))]
+                + left_region + right_region
+                for (left, left_region), (right, right_region) in product(cases(a), cases(b))]
+
+    if kind == "rlock":
+        require(signed and set(node) == {"type", "C", "I", "J", "O", "g"},
+                "unexpected rational lock metadata")
+        c, degree = node["C"], node["g"]
+        require(c in LETTERS and type(degree) is int and 1 <= degree <= 6,
+                "invalid rational lock letter or degree")
+        a, b = [letter for letter in LETTERS if letter != c]
+        left, right, locked = (subset(node[field]) for field in ("I", "J", "O"))
+        require(degree == 1 or all(i in EARLY and i % degree == 0 for i in left | right),
+                "invalid common power for rational lock")
+
+        def height(letter, group):
+            if degree == 1:
+                return upper_weight(letter, group)
+            return weighted_early(letter, group, degree)
+
+        base = affine_sum((1, objective), (-1, variable(a)), (-1, variable(b)),
+                          (1, mass(a, left)), (1, mass(b, right)), (-1, mass(c, locked)))
+        excess = affine_sum((1, height(a, left)), (1, height(b, right)),
+                            (-1, lower_weight(c, locked)))
+        return [[row(base), row(excess)],
+                [row(affine_sum((1, base), (-1, excess))), row(affine_sum((-1, excess)))]]
 
     if kind == "tailgeo":
         require(set(node) == {"type", "I", "J", "K"}, "unexpected geometry metadata")
@@ -206,13 +274,13 @@ def check_leaf(checker, node, rows, threshold):
 
 def verify(certificate, at_budget=None):
     require(set(certificate) == {"schema_version", "budget", "threshold", "tree"}
-            and certificate["schema_version"] in (1, 2), "unknown tall-term certificate schema")
+            and certificate["schema_version"] in (1, 2, 3), "unknown tall-term certificate schema")
     budget, threshold = Fraction(certificate["budget"]), Fraction(certificate["threshold"])
     require(0 < budget <= 1 and threshold > 0, "invalid certificate budget or threshold")
     budget_change = Fraction(0) if at_budget is None else at_budget - budget
     checker = load_checker()
     counts = Counter()
-    signed = certificate["schema_version"] == 2
+    signed = certificate["schema_version"] >= 2
 
     @lru_cache(maxsize=8192)
     def expand(metadata):
@@ -232,7 +300,10 @@ def verify(certificate, at_budget=None):
                 "missing affine branch")
         return max(walk(child, rows + added) for child, added in zip(children, branches, strict=True))
 
-    upper = walk(certificate["tree"], initial_rows(checker, budget))
+    root = initial_rows(checker, budget)
+    if certificate["schema_version"] == 3:
+        root += tail_fourier_rows(checker)
+    upper = walk(certificate["tree"], root)
     result = {"budget": str(budget), "threshold": str(threshold), "upper": str(upper), **counts}
     if at_budget is not None:
         result["evaluated_budget"] = str(at_budget)

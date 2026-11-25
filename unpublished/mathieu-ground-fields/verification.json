@@ -1,0 +1,21 @@
+{
+  "edition": "Companion manuscript, November 2026",
+  "source_sha256": "530d3d31633acf7c6f132dc49d37b03d7e908d7a8514bc827bf5a7cc21aaf052",
+  "pdf_sha256": "7e29a2bef21d44c67eb3d4ecca92f7197f85ad532e8057a0b9b0602d6ccf2d84",
+  "pages": 11,
+  "build": "Clean temporary directory, standalone main.tex, latexmk -pdf -jobname=mathieu-ground-fields -interaction=nonstopmode -halt-on-error. Exit 0 with no warnings or overfull boxes reported.",
+  "layout": "All eleven final pages rendered with Poppler at 85 dpi and inspected in two contact sheets. Compared first pagination and tightened the bibliography.",
+  "bounded_checks": [
+    "Replayed the deposited complex preprint checker, including its direct exceptional and radial controls.",
+    "Verified the B3 first-moment ratio -5/3 by exact Dirichlet integration on the sphere.",
+    "Compared seven degree-two sphere moment coefficients with the determinant generating formula in an exact trace-free diagonal example."
+  ],
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "open_mathematics": [
+    "The two compact exceptional products over real closed fields.",
+    "General anisotropic nonsplit homogeneous spaces over their ground fields.",
+    "Disconnected nonsplit cases outside the split and toral criteria."
+  ]
+}

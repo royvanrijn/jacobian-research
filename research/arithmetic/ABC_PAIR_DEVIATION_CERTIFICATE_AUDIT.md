@@ -197,6 +197,30 @@ and lowers the diagonal term. The direct congruence-energy estimate
 uses the same lower bound for the modulus of its locked letter.
 [Grouped collision and direct residue bounds](ABC_OMITTED_COORDINATE_GRAPH.md#direct-congruence-bound-from-two-residue-energies)
 
+
+### A Fourier bound on aggregate tail mass
+
+For one letter \(T\), let \(F_T\) be the full grouped Fourier
+quantity, the maximum mass of degrees divisible by a common prime.
+Write \(e_T=\sum_{i\le6}i\alpha_{T,i}\). For a prime \(q\) let \(m_q\)
+be the smallest degree \(i\ge7\) with least prime factor \(q\).
+Thus \(m_2=8\), \(m_3=9\), \(m_5=25\) and \(m_q=q\) for \(q\ge7\).
+For any fixed \(t\ge7\), one has the affine inequality
+\[
+ e_T+t\tau_T
+ \le 1+\sum_q(t-m_q)_+
+   \left(F_T-\sum_{\substack{i\le6\\q\mid i}}\alpha_{T,i}\right).
+\]
+Subtract the complete weighted height from the left-hand side, discard
+negative terms \((t-i)\alpha_{T,i}\) for \(i\ge7\), and assign each
+remaining term to its least prime \(q\). For a given \(q\), its weight
+is at most \(t-m_q\), and the early multiples of \(q\) already consume
+part of its Fourier mass allowance. At \(t=7\) the formula gives the
+usual tail height inequality. The additional inequalities can be
+imposed using the current projected variables and apply uniformly
+to unknown distributions of higher degrees.
+
+
 ### Exact certificates at fixed radical budgets
 
 The additional rows give the following upper certificates for the
@@ -206,8 +230,14 @@ inequality for the two tall terms.
 
 | Radical budget | Upper bound for \(D\) | Leaves |
 | --- | --- | --- |
-| \(7/10\) | \(43/100\) | 12,769 |
-| \(4/5\) | \(49/100\) | 17,760 |
+| \(7/10\) | \(2/5\) | 7,268 |
+| \(4/5\) | \(9/20\) | 21,808 |
+
+These trees start with the aggregate Fourier tail inequalities at
+cutoffs \(8,9,10,12,15,18,20,24,32\). Their branches also use the
+[interpolated energy bound and the reduced-fraction count](ABC_OMITTED_COORDINATE_GRAPH.md#uniform-energy-bounds-from-interpolation).
+The archive retains the earlier \(43/100\) and \(49/100\) trees
+for reweighting at other budgets.
 
 At each split, the diagonal and off-diagonal terms, or the geometry
 alternatives, give a disjunction of affine inequalities. For a sum
@@ -227,7 +257,7 @@ A leaf with bound \(b\) and multiplier \(m\) on the radical budget
 row at budget \(\lambda_0\) gives the bound \(b+m(\lambda-\lambda_0)\)
 at any fixed \(0<\lambda\le1\). Taking the largest of these bounds in
 each tree and the smallest across the available trees gives an
-upper exponent function. For example, \(\lambda=3/4\) gives \(1349/2844\).
+upper exponent function. For example, \(\lambda=3/4\) gives \(1773/4012\).
 The verifier option `--at-budget 3/4` evaluates this function exactly.
 
 ### Height refinements of the budget-one tree

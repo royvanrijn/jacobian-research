@@ -1,0 +1,29 @@
+{
+  "title": "Mathieu's Conjectures over Fields of Characteristic Zero",
+  "subtitle": "Split Homogeneous Spaces, Compact Groups, and Ground-Field Obstructions",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "status": "draft",
+  "summary": "Complete Mathieu–Zhao classification for split identity component in characteristic zero, active split rank-one obstructions over arbitrary fields, and compact and real-closed results.",
+  "source": "main.tex",
+  "pdf": "mathieu-ground-fields.pdf",
+  "build": "latexmk -pdf -jobname=mathieu-ground-fields -interaction=nonstopmode -halt-on-error main.tex",
+  "publication_boundary": "Companion to Hexagon 2611.00556v1. The compact exceptional real products and general anisotropic nonsplit individual homogeneous spaces remain open.",
+  "published": false,
+  "catalogued_on": "2026-11-25",
+  "abstract": "Let \\(K\\) be any field of characteristic zero. For an affine reductive\nhomogeneous space \\(G/H\\) with \\(G^\\circ\\) split, we prove that its normalized\nReynolds kernel is Mathieu--Zhao exactly when \\([G^\\circ,G^\\circ]\\subseteq H\\).\nMore generally, one nontrivial action of a split \\(\\SL_2\\) gives a fixed\nmarked counterexample over \\(K\\), including when the acting group is\nnonsplit. The proof transfers a rank-one witness along the principal\norbits of the action. A moment recurrence and Hilbert irreducibility\nchoose a ground-field parameter with infinitely many surviving marked\norders. We also classify the kernel on compact Hausdorff homogeneous\nspaces and on connected reductive groups over real closed fields, and\ngive a ground-field nullcone criterion in the toral case.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "verification_record": "verification.json",
+  "verification": {
+    "scope": "Written proof, local mathematical audit, exact reflection-density and low-degree moment checks, clean LaTeX build, and rendered-page inspection.",
+    "limits": "The finite checks do not prove all-order statements. Independent mathematical review of the new transfer arguments and external review have not been performed."
+  },
+  "next_steps": [
+    "Obtain independent review of the principal-orbit transfer and arithmetic specialization.",
+    "Review the title, attribution, and proof scope with the author before any submission.",
+    "Treat the two compact exceptional products and the anisotropic nonsplit cases as separate research obligations."
+  ]
+}

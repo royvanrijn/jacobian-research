@@ -461,7 +461,138 @@ The initial upper bound and \(F\le6\delta_L\) give
 Thus the coefficient of \(\lambda^{3/2}\sqrt\ell\) in the saving
 can be taken to be \(1/(18\sqrt{14})-o(1)\) as \(\lambda\to0\).
 
-### A matching order within the exponent inequalities
+### A proportional saving from powerful-modulus compression
+
+For every fixed \(0<\lambda\le10^{-6}\) and \(\varepsilon>0\),
+\[
+ N_\lambda(X)\ll_{\lambda,\varepsilon}
+ X^{(2/3-10^{-10})\lambda+\varepsilon}.
+ \tag{16}
+\]
+Use the divided-difference congruence bound in Section 9.3 of
+[Additive representations by powerful integers](../../unpublished/powerful-number-representations/main.tex).
+For \(k\ge12288\), a \(k\)-full modulus \(n\), and a unit \(K\bmod n\),
+it gives \(O_{k,\rho}(n^{1/(2k)+\rho})\) positive unit rational pairs
+satisfying \(VT^k\equiv K\pmod n\) when
+\[
+ H(T)\le n^{\tau/k},\qquad H(V)\le n^{\tau 2^{-16}},
+ \qquad \tau=65/64 .
+\]
+The dimension \(16(\lfloor k/4096\rfloor+1)\le k/192\) for this range,
+and the remaining numerical inequalities of that lemma hold there.
+Its constants may depend on \(k\).
+
+Write \(\eta=10^{-10}\), \(\zeta=3\cdot10^{-6}\), and
+\(D=(2/3-\eta)\lambda\). Work in \(Y/2<c\le Y\).
+Choose \(0<\rho\le\min(\eta\lambda/100,\varepsilon/10)\).
+Factor each letter as \(\ell=\ell_0\prod_{i=1}^d\ell_i^i\) by
+BBLT Lemma 2.2, so that \(\ell_0\le Y^\rho\).
+Fix the three coefficients and the dyadic intervals for
+the \(\ell_i\). Count the triples admitting coordinates in
+that box. Measure every mass \(x_{\ell,i}\) by the logarithm
+to base \(Y\) of the lower endpoint. As above let \(p_i=\sum_\ell x_{\ell,i}\),
+\(L=\sum_i p_i\), and \(S_\ell=\sum_i x_{\ell,i}\).
+The radical comparison gives \(L\le\lambda+3\rho\), and the
+height upper bounds give \(W=\sum_i(i-1)p_i\le3-L\).
+There are \(O_\rho(Y^{4\rho})\) choices of coefficients and intervals
+for large \(Y\). [BBLT v2, Lemma 2.2](https://arxiv.org/html/2410.12234v2#S2)
+
+Retain the actual product of the coordinate scales in the moment
+and geometry estimates. Fixing two letters, grouped Fourier
+counting, and the geometry estimate give the following box
+exponents, each with loss at most \(\rho\):
+\[
+ S_{\ell_1}+S_{\ell_2},\qquad
+ 2L/3-F/6,\qquad
+ \max\{L-s,L-1+w\}.
+\]
+The last expression holds for every selection of mass \(s\)
+and weighted mass \(w\) as in (9). The geometry denominator
+is \(\gg_d Y\): the complete value of \(c\) is at least \(Y/2\)
+and the lower and upper weighted scales differ by a bounded
+factor at the fixed cutoff \(d\).
+The divisor losses can be taken as small as \(\rho\) for each fixed \(d\).
+[BBLT v2, proofs of Propositions 3.1 and 4.1](https://arxiv.org/html/2410.12234v2)
+
+If any displayed exponent is at most \(D\), the box has the
+required bound. In the remaining boxes the inequalities
+\(D\le S_{\ell_1}+S_{\ell_2}\), \(D\le2L/3-F/6\), and (9)
+hold with this fixed \(D\). In particular,
+\[
+ (1-3\eta/2)\lambda\le L\le\lambda+3\rho,\qquad
+ S_\ell\le L-D,\qquad J:=2L/3-D\le2\eta\lambda,\qquad
+ F\le6J .
+\]
+
+Apply (10) at \(u_*=1-L+D\). Since \(D>F\), we have
+\(W>u_*\). Set \(\theta=u_*/W\). The weighted height bound
+and \(R(u_*)\le L-D+F\) give
+\[
+ \tfrac14\le\theta\le\tfrac13+15\eta,\qquad
+ 0\le R(u_*)-\theta L\le F+\frac{3J}{3-L}\le8J .
+\]
+For the fractional threshold \(v\), the identity in the concentration
+argument gives \(E:=\sum_i p_i|1-(i-1)/v|\le 64\eta\lambda\).
+We have \(W\ge(1-2\lambda)/(1/3+15\eta)\) and
+\(\lvert W/v-L\rvert\le E\). Consequently the center
+\(j_*=v+1\) and its weighted absolute deviation satisfy
+\[
+ \frac{3-1/1024}{\lambda}\le j_*\le\frac{3+1/256}{\lambda},
+ \qquad A:=\sum_i p_i|i-j_*|=vE\le 200\eta .
+\]
+Indeed \(W/(L+E)\le v\le3/(L-E)\);
+use \(L+E\le (1+65\eta)\lambda\),
+\(L-E\ge(1-131\eta/2)\lambda\), and \(\lambda\le10^{-6}\).
+
+Set \(k=\lfloor(1-\zeta)j_*\rfloor\).
+Then \((3-1/256)/\lambda\le k\le(3+1/256)/\lambda\), in
+particular \(k\ge12288\). Fix the entire tuple \((c_i)\)
+in its box and use the \(k\)-full divisor
+\[
+ n=\prod_{i\ge k}c_i^i .
+\]
+The discarded weighted mass is at most \(A/\zeta\), since
+\(i<k\) implies \(i\le j_*\) and \(|i-j_*|\ge\zeta j_*\).
+For large \(Y\), the loss from \(c_0\) and the dyadic endpoints
+gives \(\sum_i i x_{c,i}\ge1-2\rho\).
+It follows that \(n\ge Y^{1-2\rho-A/\zeta}\ge Y^{99/100}\).
+
+Compress the other letters by
+\[
+ T=\prod_i\frac{a_i}{b_i},\qquad
+ V=\frac{a_0}{b_0}\prod_i\left(\frac{a_i}{b_i}\right)^{i-k}.
+\]
+They are unit fractions at \(n\) by primitivity, and
+\(VT^k=a/b\equiv-1\pmod n\). This ratio and the fixed \(c\)
+recover \(a,b\). We have
+\(\log_Y H(T)\le L-D+\rho\le(1/3+1/1024)\lambda\), where \(\rho\)
+absorbs the dyadic factors for large \(Y\).
+For \(V\) the bound is
+\[
+ \frac{\log H(V)}{\log Y}
+ \le 2\rho+\sum_i|i-k|p_i
+ \le 2\rho+A+(\zeta j_*+1)L
+ \le 2\rho+200\eta+4\zeta+2\lambda
+ <3/200000 .
+\]
+One \(\rho\) pays for the exceptional coefficient and the other
+for the bounded dyadic factors at fixed \(d\).
+The exact comparisons
+\[
+ (3+1/256)(1/3+1/1024)<(99/100)\tau,
+ \qquad 3/200000 < (99/100)\tau 2^{-16}
+\]
+put both heights within the congruence lemma. The fixed tuple
+therefore admits \(O_{k,\rho}(Y^{128\lambda/767+\rho})\)
+pairs. The number of \(c\)-tuples is \(O_d(Y^{S_c})\), where
+\(S_c\le(1/3+2\eta)\lambda\). Since
+\(1/3+2\eta+128/767<501/1000\), each such box contributes
+\(O_{\lambda,\rho}(Y^{501\lambda/1000+\rho})\), below \(Y^{D+\rho}\). The range of \(k\) is finite for fixed
+\(\lambda\), so the modulus-count constants can be maximized
+over that range. Summing the boxes and then the dyadic ranges
+proves (16).
+
+### A matching order for the Fourier and two-group estimates
 
 There are budgets tending to zero for which the Fourier, geometry,
 height and two-letter counting inequalities permit
@@ -545,20 +676,19 @@ even with the new height information.
 The [exact certificates with two tall terms](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md#exact-certificates-at-fixed-radical-budgets)
 prove that for every \(\varepsilon>0\),
 \[
- N_{7/10}(X)\ll_\varepsilon X^{43/100+\varepsilon},
- \qquad N_{4/5}(X)\ll_\varepsilon X^{49/100+\varepsilon}.
+ N_{7/10}(X)\ll_\varepsilon X^{2/5+\varepsilon},
+ \qquad N_{4/5}(X)\ll_\varepsilon X^{9/20+\varepsilon}.
 \]
 These bounds also apply to smaller budgets by inclusion of the sets.
 Reweighting the tree leaves gives \(N_{3/4}(X)\ll_\varepsilon
-X^{1349/2844+\varepsilon}\).
+X^{1773/4012+\varepsilon}\).
 
 
 At budget \(7/10\), Li's radical-budget preprint reports \(109/250\).
 His later twisted-energy preprint reports \(24811/50480\) at \(4/5\)
 and \(677/1240\) at \(9/10\). The new certificates lower the first
-two of those exponents. At \(3/4\), the radical-budget preprint's
-reported \(35/76\) is stronger than the value obtained by reweighting
-these trees. [Li, radical budget, v2, Theorem 1.2](https://rstation.ai/problems/math/papers/17/v2) ·
+two of those exponents. Reweighting also lowers the
+radical-budget preprint's reported \(35/76\) at \(3/4\). [Li, radical budget, v2, Theorem 1.2](https://rstation.ai/problems/math/papers/17/v2) ·
 [Li, squares and twisted energy, v3, Theorem 1.2](https://rstation.ai/problems/math/papers/28/v3)
 
 
@@ -570,7 +700,7 @@ their complete values are at least \(Y/4\) and the exceptional
 coefficients cost \(Y^{O(\eta)}\). In a convergent subsequence of the
 projected masses, the complete-tail upper heights and the tall
 whole-tail lower heights therefore hold. The grouped collision,
-geometry and direct residue-energy bounds give their finite
+geometry, higher residue moments and the reduced-fraction count give their finite
 disjunctions in the limit. A count exponent above a verified bound
 would produce a feasible exponent point above that bound. The
 argument also transfers the reweighted certificates since the
@@ -585,3 +715,194 @@ give
 \]
 The transfer uses the same two tall terms, with the three choices of
 the shorter label made inside the original ordering.
+
+For the full range \(0<\lambda\le1\), the higher residue moments and
+the reduced-fraction count give the stronger uniform bound
+\(N_\lambda(X)\ll_\varepsilon X^{287/500+\varepsilon}\).
+The analytic proof classifies boxes by their largest coordinate
+masses and applies over all degrees in the anatomic factorization.
+[Uniform analytic bound](ABC_OMITTED_COORDINATE_GRAPH.md#a-uniform-analytic-exponent-of-287500)
+
+## A small-budget bound from higher moments and two tall terms
+
+For all sufficiently small fixed radical budgets \(\lambda>0\), the
+anatomic box exponent satisfies
+\[
+D\le \lambda/2+O(\lambda^{3/2}).
+\]
+Consequently \(N_\lambda(X)\ll_{\lambda,\varepsilon}
+X^{\lambda/2+C\lambda^{3/2}+\varepsilon}\) for an absolute constant
+\(C\).
+
+Work in the full anatomic coordinates, with mass \(\alpha_{T,i}\)
+in degree \(i\), letter totals \(L_T\), and \(L=\sum_T L_T\le\lambda\).
+If some frozen coordinates of letter \(C\) have weight at least
+\(2\lambda\) and total mass \(f_C\), the uniform higher-moment bound
+gives residue energy exponents at most \(L_A,L_B\) for the two
+free letters. The direct residue bound therefore gives
+\[
+ D\le (L-L_C)/2+f_C. \tag{A}
+\]
+This applies whichever letter is locked. [Uniform energy bound and its box transfer](ABC_OMITTED_COORDINATE_GRAPH.md#uniform-energy-bounds-from-interpolation)
+
+### One possible high-degree coordinate per letter
+
+Put \(K=\lceil\lambda^{-1/2}\rceil\). It suffices to consider
+\(D>L/2+3\lambda/K\). For each letter \(T\), set
+\[
+\theta_T=D-(L-L_T)/2-3\lambda/K>0.
+\]
+The coordinates of degree \(i\ge K\) with mass at most \(\theta_T\)
+have total weight less than \(2\lambda\). Otherwise freeze them
+until their weight first reaches \(2\lambda\). Before the last
+coordinate the frozen mass is less than \(2\lambda/K\), and the
+last costs at most \(\theta_T\). This contradicts (A). On each
+letter at most one coordinate can have mass greater than
+\(\theta_T\), since \(2\theta_T>L_T\). Call the exceptional
+high-degree coordinate dominant when it exists. The total
+weight outside the dominant coordinate on any letter is
+\(O(\sqrt\lambda)\), since low degrees contribute at most
+\(KL_T\) and the other high degrees less than \(2\lambda\).
+
+Order the positive triple so that \(a\le b\) and the largest
+term \(c\) is on the dyadic scale \(X\). The two tall letters
+\(b,c\) have height one in the limiting normalized box, and thus
+each has a dominant coordinate of degree at least \(1/(2\lambda)\).
+Write their masses as \(\beta,\gamma\).
+
+If all three letters have dominant coordinates, freeze every other
+coordinate. The remaining equation is a generalized Fermat surface
+in three primitive roots, with arbitrary nonzero coefficients. Use
+Browning–Verzobio's coefficient-uniform Theorem 1.2, distinguishing
+one tall degree as \(r\) and the other as \(p\). The root box
+sides are at most \(X^\lambda\). Because \(p,r\ge1/(2\lambda)\),
+each of its three terms has exponent \(O(\lambda^{3/2})\). Hence
+\[
+D\le L-\sum_T\beta_T+O(\lambda^{3/2}),
+\]
+where \(\beta_T\) are the three dominant masses. As
+\(\sum_T\beta_T\ge\sum_T\theta_T=3D-L-9\lambda/K\), this gives
+\(D\le L/2+O(\lambda^{3/2})\). [Browning–Verzobio, Theorem 1.2](https://arxiv.org/html/2608.24512v1#S1)
+
+### Two-tall strip bound
+
+In the other case the short letter has no dominant coordinate and
+\(a\le X^{h}\) with \(h=O(\sqrt\lambda)\). Freeze the non-dominant
+coordinates on the tall pair. Their two remaining positive roots
+\(u,v\) lie in dyadic ranges of scales \(U,V\), with \(UV\le X^\lambda\)
+and \(\gcd(u,v)=1\). The tall powers obey
+\[
+0<Cv^q-Bu^p\le X^h,\qquad Bu^p,Cv^q\asymp X,
+\qquad p,q\ge1/(2\lambda).
+\tag{B}
+\]
+The number of such pairs is \(O_{p,q,\lambda}(X^{O(\lambda^{3/2})})\),
+uniformly in the positive frozen coefficients \(B,C\).
+
+First let \(g=\gcd(p,q)\ge3\). The relative difference between
+the ratios \(u^{p/g}/v^{q/g}\) of any two pairs is
+\(O(X^{-1+h})\) by (B). A nonzero relative difference is at least
+\(\gg X^{-2/g}\), since its reduced rational denominator is at
+most the product of two root powers, each \(O(X^{1/g})\).
+For small \(\lambda\), all ratios are therefore equal. Coprimality
+of the two roots makes each ratio a reduced fraction, so the pair
+is unique.
+
+Suppose \(g\le2\). Normalize by \(t=u/U\), \(s=v/V\), and put
+\(s_0(t)=\kappa t^{p/q}\) for the exact positive power graph.
+On solutions of (B), \(s-s_0(t)=O(X^{-1+h})\), and \(\kappa\)
+is bounded above and away from zero by constants depending on the
+fixed powers. The same bound gives at most one integer \(v\)
+for each \(u\). Take
+\(m=\lfloor(10\lambda)^{-1/2}\rfloor-1\) and \(k=(m+1)^2\).
+The \(k\) monomials \(t^is^j\) with \(0\le i,j\le m\) restrict
+to distinct powers on the exact graph, because
+\(p/g,q/g\gg1/\lambda\) and \(m=O(\lambda^{-1/2})\).
+On \(k\) distinct normalized first coordinates \(t_0<\cdots<t_{k-1}\),
+apply the triangular divided-difference row transform to their
+monomial matrix. Its determinant divides the original determinant
+by the ordinary Vandermonde in the \(t_j\).
+
+For the exact graph this transformed determinant is bounded away
+from zero. Indeed, with \(x_j=t_j^{1/(q/g)}\), the original
+determinant is a positive column factor times a generalized
+Vandermonde in the \(x_j\). It factors as the ordinary Vandermonde
+in the \(x_j\) times a Schur polynomial with nonnegative
+coefficients. The polynomial is at least one on \(x_j\ge1\) and
+the quotient of the two ordinary Vandermondes is bounded away
+from zero on the dyadic range. [Macdonald, Chapter I, Sections 3 and 5](https://math.berkeley.edu/~corteel/MATH249/macdonald.pdf)
+
+The transformed exact entries
+are bounded by derivatives of the fixed monomials up to order
+\(k-1\). For the perturbed graph the entry in row \(j\) differs
+by \(O(X^{-1+h}U^j)\) from the exact one, using the explicit
+Lagrange formula for a divided difference and the spacing
+\(t_{i+1}-t_i\ge1/U\). This error tends uniformly to zero since
+\(\lambda k\le1/10\). The transformed perturbed determinant is
+therefore nonzero and bounded above.
+
+If all \(k\) values of \(t\) lie in an interval of length
+\(\Delta=X^{-2\lambda/(m+2)}\), undo the row transform and then
+multiply the columns by \(U^iV^j\). The result is a nonzero
+integer determinant of absolute value
+\[
+\ll (UV)^{mk/2}\Delta^{k(k-1)/2}
+\le X^{-mk\lambda/2}.
+\]
+The inequality uses \(k-1=m(m+2)\), and is impossible for
+large \(X\). Each normalized interval of length \(\Delta\)
+has at most \(k-1\) points, giving the stated strip bound. [Huxley, introduction on determinant methods for points near curves](https://www.numdam.org/item/ASNSP_1994_4_21_3_357_0/)
+
+Restoring the frozen coordinates on the tall pair, which determines
+the whole short term by subtraction, now gives
+\[
+D\le L_B+L_C-\beta-\gamma+O(\lambda^{3/2}).
+\]
+Release all coordinates other than the two dominant coordinates
+in the geometry row as well. The total released
+weight is \(O(\sqrt\lambda)\), so its second term is negative and
+its first term yields \(D\le\beta+\gamma\). Averaging these bounds
+proves \(D\le L/2+O(\lambda^{3/2})\). For the anatomic reduction, run the
+argument with the budget \(\lambda+O(\eta)\) at each fixed truncation
+and subtract \(O(\eta)\) from the box count exponent to absorb the
+arithmetic losses. The tall heights are then at least \(1-O(\eta)\),
+which still forces both tall dominant degrees to be \(\gg1/\lambda\).
+The determinant estimates retain their strict margins, and the
+weighted height of the short term remains \(O(\sqrt\lambda)\) in the
+two-tall case. Taking \(\eta\) sufficiently small in terms of
+\(\lambda,\varepsilon\), and summing the height shells, gives the
+asserted count.
+[BBLT v2, Proposition 4.1](https://arxiv.org/html/2410.12234v2#S4)
+
+### The leading coefficient for whole-coordinate bounds
+
+For integers \(p\) tending to infinity, take \(\beta=1/(p+1)\) and
+\(\lambda=6\beta\). Give each letter mass \(\beta\) in degree one and
+mass \(\beta\) in degree \(p\). All heights are one. These profiles
+permit \(D=3\beta=\lambda/2\) under the whole-coordinate bounds used
+above.
+
+The pair and Fourier upper exponents are \(4\beta\) and \(7\beta/2\).
+A geometry release including degree \(p\) on any letter contributes
+weighted excess at least \(1-2\beta\), and a release with only
+degree-one coordinates has mass at most \(3\beta\). For the direct
+residue row, a nonempty lock costs at least \(\beta\), and the ideal
+energy on each released letter is at least its diagonal mass
+\(2\beta\). The empty lock gives no congruence saving. In a grouped
+collision, releasing at most \(\beta\) mass on the second letter gives
+diagonal exponent at least \(3\beta\). Releasing it entirely sets
+the energy modulus to one, so the off-diagonal exponent is at least
+\(3\beta\). For a paired shift, the diagonal exponent suffices
+unless both free letters are entirely released. Then the shift
+exponent is one and the off-diagonal bound is larger than \(3\beta\).
+
+For a partial-modulus rational row with common power \(g>1\), each
+free group releases at most \(\beta\) mass. For \(g=1\), a total
+release of \(3\beta\) has weighted height at least \(1+\beta\), and
+releasing \(4\beta\) has height two. With lock height at most one
+and nonempty lock cost at least \(\beta\), these cases also have
+right-hand side at least \(3\beta\). With an empty lock its height
+penalty cancels at least the released mass. Freezing the three
+degree-one coordinates for the generalized Fermat estimate costs
+\(3\beta\). This gives the stated obstruction within these
+exponent bounds.

@@ -33,7 +33,11 @@
     "Checked the full determinant divisibility via expansion in comparison and error rows, including when the total Vandermonde valuation exceeds the available congruence precision.",
     "Checked the selected-prime average starting from twice the matrix dimension, the pruning threshold, and the entrywise precision loss under the triangular Newton transform.",
     "Checked stability of the comparison determinant at the selected prime and verified the height slack required when the modulus c is below X. Ran 37 exact local determinant tests and 1005 integer parameter checks.",
-    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all nineteen PDF pages."
+    "Checked the subset exchange argument, weighted prime average, and the effect of the bounded deeper modulus and discarded prime powers. Ran 125 exact exchange diagnostics and seven prime-adic examples approaching the exchange constant.",
+    "Checked the determinant divisibility including error rows, the Newton precision after selecting the minimizing subset, the modulus floors and the dyadic transfer without additional height slack.",
+    "Replayed the exact inequalities for the proposed 1/320, the improved c-based 1/300 and the adaptive-target 1/153 parameter choices. Verified the initial-row optimization and the finite prime-power height ceiling calculation.",
+    "Checked the three dyadic cases when the target is chosen by residual-factor size, including the extra saving from a small exceptional target. Ran 3396 exact signed adaptive-target compression tests.",
+    "Built the standalone LaTeX source, checked diagnostics, and rendered and visually inspected all twenty-two PDF pages."
   ],
   "numerical_exponents": [
     {
@@ -76,8 +80,8 @@
     }
   ],
   "edition_sha256": {
-    "main.tex": "aaf18c087d57ba5c14bdf4084a4f749f76734bce74307fac0c1f1bca47edc6c9",
-    "paper.pdf": "f45231b3459ca7475fa643227c3a96ac70763d007464cbc76fb88a296d0e1c86"
+    "main.tex": "f34ffcf83dc4e1337b18efcc0d087c583a23001eb5fce20c65c66f3d91f1ed6c",
+    "paper.pdf": "02bf0cee8bdf42583a961a1aad486217c2cc60053c0f72c1e2a344e030f426d4"
   },
   "independent_pdf_only_review": "unperformed",
   "external_specialist_review": "unperformed",
@@ -282,5 +286,71 @@
       "modulus_exponent": 80,
       "vandermonde_valuation": 105
     }
+  },
+  "adaptive_determinant": {
+    "diagonal_saving": "1/(153k) for all sufficiently large k",
+    "fixed_offsets_saving": "1/(306r) for all sufficiently large r in terms of the offsets",
+    "modular_lemma": "For each modular profile and k-full n, count positive rational unit pairs with H(T)<=n^(theta/k), H(V)<=n^(residual_height) and V T^k=K modulo n by O_(k,epsilon)(n^((1-saving)/k+epsilon)), uniformly in K.",
+    "proof": "Section 9.4",
+    "parameters": [
+      {
+        "range": "q1 <= 1-1/300",
+        "depth": 1,
+        "amplification": 1,
+        "max_v_degree": 7,
+        "t_degree_rate": "3/100",
+        "precision_loss_upper": "24/25",
+        "height_gap_lower": "1/150",
+        "saving": "1/300"
+      },
+      {
+        "range": "q1 > 1-1/300",
+        "depth": 3,
+        "amplification": 4,
+        "max_v_degree": 4,
+        "t_degree_rate": "48/3125",
+        "precision_loss_upper": "15624/15625",
+        "height_gap_lower": "2/46875",
+        "saving": "1/300"
+      },
+      {
+        "saving": "1/153",
+        "range": "q1 <= 1-1/153",
+        "depth": 1,
+        "amplification": 1,
+        "max_v_degree": 7,
+        "t_degree_rate": "3/100",
+        "precision_loss_upper": "7344/7625",
+        "height_gap_lower": "53/7625"
+      },
+      {
+        "saving": "1/153",
+        "range": "q1 > 1-1/153",
+        "depth": 3,
+        "amplification": 4,
+        "max_v_degree": 4,
+        "t_degree_rate": "3817/250000",
+        "precision_loss_upper": "777297697/777750000",
+        "height_gap_lower": "29473/972187500"
+      }
+    ],
+    "parameter_checker": "arithmetic/verify_powerful_adaptive_determinant.py",
+    "parameter_checker_sha256": "520707268fbd7daf2e6e368191b35b89b498f30e382a00bf886291ff38a5bc38",
+    "prime_power_ceiling_for_limiting_inequalities": "7/2080",
+    "diagnostic_exchange_cases": 125,
+    "diagnostic_prime_adic_sharpness_cases": 7,
+    "modular_profiles": [
+      {
+        "theta": "1",
+        "residual_height": "1/300",
+        "saving": "1/300"
+      },
+      {
+        "theta": "306/305",
+        "residual_height": "1/305",
+        "saving": "1/153"
+      }
+    ],
+    "diagnostic_signed_target_cases": 3396
   }
 }

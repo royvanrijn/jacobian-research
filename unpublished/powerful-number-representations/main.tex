@@ -21,12 +21,12 @@
 \begin{abstract}
 For all sufficiently large \(k\), the number of primitive
 \(k\)-full triples \(a+b=c\le X\) is
-\(O_{k,\eps}(X^{(2-2^{-16})/k+\eps})\).
+\(O_{k,\eps}(X^{(2-1/153)/k+\eps})\).
 We compress each triple at fixed \(c\) to a rational congruence
 and count its solutions using a rectangular determinant.
-Newton divided differences preserve enough local precision
-to prove that the determinant is nonzero in one selected
-prime-adic comparison. For fixed offsets \(p=r+u,\ q=r+v\)
+A minimum-energy subset controls the loss of precision
+under Newton divided differences. The partition depth and
+amplification order depend on the factorization of the modulus. For fixed offsets \(p=r+u,\ q=r+v\)
 we also save a fixed multiple of \(1/r\) over \(1/p+1/q\).
 For representations by two positive \(k\)-full integers,
 we give pointwise bounds of \(O_\eps(N^{3/10+\eps})\) for \(k=2\)
@@ -47,6 +47,22 @@ Browning and Verzobio \cite[Theorem~1.1]{BV} save
 leading saving for every fixed pair of offsets using the
 common-neighbor method. Direct compression gives a stronger
 large-order saving.
+
+\begin{theorem}\label{thm:adaptive-triples}
+For all sufficiently large \(k\) and every \(\eps>0\),
+\[
+ N_{k,k,k}(X)\ll_{k,\eps}X^{(2-1/153)/k+\eps}.
+\]
+For fixed nonnegative integers \(u\ge v\) and all sufficiently
+large \(r\) in terms of \(u,v\),
+\[
+ N_{r+u,r+v,r}(X)\ll_{u,v,r,\eps}
+ X^{1/(r+u)+1/(r+v)-1/(306r)+\eps}.
+\]
+\end{theorem}
+
+A fixed partition depth and ordinary row pruning give the
+following intermediate estimate.
 
 \begin{theorem}\label{thm:divided-difference-triples}
 Put \(\delta=2^{-16}\). For all sufficiently large \(k\) and
@@ -1586,6 +1602,256 @@ gives \(O_{k,\eps}(X^{3/(2k)+\eps})\), which is stronger
 than the required bound. The fixed-offset assertion
 follows from monotonicity in the three orders and the
 \(O_{u,v}(r^{-2})\) difference between \(2/r\) and \(1/p+1/q\).
+
+\subsection{Minimum-energy subsets and adaptive depth}
+\label{sec:adaptive-triples}
+
+\begin{lemma}\label{lem:adaptive-rational}
+For either of the triples of parameters
+\[
+ (\theta,\nu,\sigma)=(1,1/300,1/300)
+             \quad\text{or}\quad (306/305,1/305,1/153),
+\]
+and for sufficiently large \(k\) and a \(k\)-full modulus \(n\),
+the number of positive rational unit pairs \((T,V)\) with
+\[
+ VT^k\equiv K\pmod n,\qquad
+ H(T)\le n^{\theta/k},\qquad H(V)\le n^\nu
+\]
+is \(O_{k,\eps}(n^{(1-\sigma)/k+\eps})\), uniformly in the unit \(K\).
+\end{lemma}
+
+\begin{proof}
+Amplify by coordinatewise products of order \(\ell\) using
+\eqref{eq:rational-amplification}. Each amplified pair has
+\(H(T)\le n^{\ell\theta/k}\), \(H(V)\le n^{\ell\nu}\), and
+\(VT^k\equiv K^\ell\pmod n\). Distinct amplified pairs have
+distinct rational \(T\), since \(T\) determines \(V\bmod n\)
+and the parameters below have \(2\ell\nu<1\).
+
+Use the \(D=(m+1)(h+1)\) monomials \(V^iT^j\) with
+\(0\le i\le m\) and \(0\le j\le h<k\). After the unit
+scaling of Section~9.3 their comparison weights are the
+distinct nonnegative integers \(mk-ki+j\).
+As before, let \(\kappa>0\) be the Vandermonde quotient on
+the diagonal at \(1\). For \(n=\prod_pp^{e_p}\) and an
+integer depth \(\alpha\ge1\), put
+\[
+ a_p=\lfloor\alpha e_p/k\rfloor,\qquad
+ Q_\alpha=\prod_{p\mid n}p^{a_p},\qquad
+ q_\alpha=\frac{k\log Q_\alpha}{\log n}.
+\]
+We work with \(n>1\). Partition the pairs by \(T\) modulo
+\(\widetilde Q_\alpha=\prod_{p\mid n}p^{\max(a_p,1+v_p(\kappa))}\).
+The ratio \(\widetilde Q_\alpha/Q_\alpha\) is at most
+\(\kappa^2\), since \(a_p\ge1\). All constants involving
+\(\kappa\) depend only on \(k,m,h\).
+
+Assume \(\alpha(D-1)\le k\). The comparison matrix
+\(B\) has entries \(T_s^{mk-ki+j}\), and the unit-scaled
+evaluation matrix \(A\) satisfies \(A\equiv B\bmod p^{e_p}\)
+for every \(p\mid n\). For \(D\) rows in one class,
+every minor of \(B\) of order \(b\) has valuation at
+least \(a_p\binom b2\).
+As in Section~9.3, expansion in comparison and error
+rows gives valuation at least \(a_p\binom D2\) for
+\(\det A\), because
+\((D-b)e_p+a_p\binom b2\ge a_p\binom D2\)
+by \(e_p\ge(D-1)a_p\).
+The integer determinant obtained by clearing denominators
+of the original evaluation matrix has the same valuation
+at each prime dividing \(n\). Its magnitude is at most
+\(D!n^{D\ell(\theta h/k+m\nu)}\). It therefore vanishes for large
+\(n\) whenever
+\begin{equation}\label{eq:adaptive-height}
+ \ell(\theta h/k+m\nu)<\frac{q_\alpha(D-1)}{2k}
+\end{equation}
+with a positive gap independent of \(n\) for each \(k\).
+
+Suppose a class contains \(2D\) amplified pairs. For their
+distinct rational \(T\)-coordinates define the nonnegative
+weights
+\[
+ w_p(i,j)=v_p(T_i-T_j)-a_p .
+\]
+The denominators of the differences are units at \(p\mid n\).
+The cross-numerator of each difference has magnitude at
+most \(n^{2\ell\theta/k}\). Thus
+\[
+ \sum_{p\mid n} w_p(i,j)\log p
+ \le (2\ell\theta-q_\alpha)\frac{\log n}{k}.
+\]
+Let \(\eta>0\) be a fixed small number, chosen using the
+parameter margins below. Use primes with \(v_p(\kappa)<\eta e_p\)
+and let \(n_g\) be their full-power part of \(n\).
+The discarded product is at most \(\kappa^{1/\eta}\),
+so that \(\log n/\log n_g=1+O_k(1/\log n)\) for large \(n\).
+Averaging over the selected primes with weights
+\(e_p\log p/\log n_g\) gives one prime with
+\[
+ \frac{1}{e_p}\sum_{1\le i<j\le2D}w_p(i,j)
+ \le \binom{2D}{2}\frac{2\ell\theta-q_\alpha}{k}
+                  \frac{\log n}{\log n_g}.
+\]
+At that prime choose a \(D\)-element subset \(S\)
+minimizing \(\sum_{\{i,j\}\subset S}w_p(i,j)\).
+Exchanging \(i\in S\) with any \(x\notin S\) gives
+\[
+ \sum_{j\in S\setminus\{i\}}w_p(i,j)
+ \le\sum_{j\in S\setminus\{i\}}w_p(x,j).
+\]
+Summing over the \(D\) outside points bounds the incident
+weight at \(i\) by the total weight divided by \(D\).
+Hence every row in \(S\) satisfies
+\[
+ \frac{1}{e_p}\sum_{j\in S\setminus\{i\}}v_p(T_i-T_j)
+ \le\frac{\alpha(D-1)}{k}
+   +\frac{(2D-1)(2\ell\theta-q_\alpha)}{k}
+                         \frac{\log n}{\log n_g}.
+\]
+If the right side is at most \(1-2\eta\), the Newton
+transformation of Section~9.3 leaves precision at least
+\(2\eta e_p\) in every entry of \(A-B\).
+The transformed comparison matrix is integral and has
+determinant the Vandermonde quotient of the selected rows.
+The deeper partition makes its valuation exactly
+\(v_p(\kappa)<\eta e_p\).
+The transformed \(A\) therefore has nonzero determinant,
+contradicting \eqref{eq:adaptive-height}.
+
+Write \(h=\lfloor\beta k\rfloor\) and \(d=(m+1)\beta\), so
+\(D=dk+O(1)\).
+For \(n\) large in terms of \(k\), the strict limiting
+conditions are
+\begin{equation}\label{eq:adaptive-parameters}
+ \alpha d<1,\qquad
+ d(\alpha+4\ell\theta-2q_\alpha)<1,\qquad
+ \ell(\theta\beta+m\nu)<q_\alpha d/2 .
+\end{equation}
+The first two use the maximum possible loss, and the last
+compares the per-row exponents of the determinant.
+The floor in \(h\) and the shift from \(D\) to \(D-1\)
+change the limiting conditions by \(O(1/k)\).
+The modulus floors are included in \(q_\alpha\).
+The factor \(D!\) is absorbed by the strict gap in
+\eqref{eq:adaptive-height} for large \(n\).
+Since \(q_1\ge1/2\) and \(q_\alpha\ge\alpha q_1\) for integer
+\(\alpha\), we use the following parameters. The loss and
+gap in the last two columns are an upper and lower bound,
+respectively, in \eqref{eq:adaptive-parameters}.
+\[
+\begin{array}{cc|rrrr|rr}
+ \sigma & \text{range}&\alpha&\ell&m&\beta
+       &\text{precision loss}&\text{height gap}\\ \hline
+ 1/300&q_1\le1-\sigma &1&1&7&3/100 &24/25&1/150\\
+ 1/300&q_1>1-\sigma  &3&4&4&48/3125 &15624/15625&2/46875\\
+ 1/153&q_1\le1-\sigma &1&1&7&3/100 &7344/7625&53/7625\\
+ 1/153&q_1>1-\sigma  &3&4&4&3817/250000 &777297697/777750000&29473/972187500
+\end{array}
+\]
+All four rows have \(\alpha d<1\). The precision margins let us
+fix \(\eta>0\), then take \(k\) and \(n\) large enough to
+absorb the indicated errors. The bounded range of \(n\)
+for each \(k\) is absorbed in the implied constant.
+
+Each class has fewer than \(2D\) amplified pairs.
+The amplification bound gives \(O_{k,\eps}(Q_\alpha^{1/\ell}n^\eps)\)
+original pairs.
+In the low-\(q_1\) cases \(Q_1\le n^{(1-\sigma)/k}\), and in the
+high cases \(Q_3^{1/4}\le n^{3/(4k)}\).
+This proves the lemma.
+\end{proof}
+
+The first parameter triple gives the diagonal saving
+\(1/(300k)\) by a dyadic count in \(c\).
+In a range \(Y<c\le2Y\), compress as in Section~9.2.
+The height of \(T=R(a)/R(b)\) is at most \(c^{1/k}\).
+If \(H(V)\le c^{1/300}\), count compressed pairs with the lemma.
+Otherwise one of \(W(a),W(b)\) exceeds \(c^{1/300}\),
+so its root product is at most \(c^{(1-1/300)/k}\).
+Choose that summand by the tuple bound and one other
+\(k\)-full summand up to \(2Y\). Both cases give
+\(O_{k,\eps}(Y^{(2-1/300)/k+\eps})\) triples.
+
+To prove Theorem~\ref{thm:adaptive-triples}, put
+\(\sigma=1/153\), fix a dyadic range \(Y<c\le Z=2Y\),
+and again write \(m=R(m)^kW(m)\) for each of \(a,b,c\).
+If at least two residual factors \(W(m)\) exceed
+\(Z^{\sigma/2}\), both corresponding root products are
+at most \(Z^{(1-\sigma/2)/k}\).
+Choose these two summands by the elementary tuple count
+of Section~9.2. They determine the third and contribute
+\(O_{k,\eps}(Z^{(2-\sigma)/k+\eps})\) triples.
+
+If exactly one residual factor exceeds \(Z^{\sigma/2}\),
+fix that summand as the target \(n\).
+When \(n\le Z^{1-\sigma/2}\), the large residual factor
+forces \(R(n)\le Z^{(1-\sigma)/k}\).
+Choose \(n\) by the tuple count and one other \(k\)-full
+summand up to \(Z\), giving
+\(O_{k,\eps}(Z^{(2-\sigma)/k+\eps})\) triples.
+If no residual factor exceeds \(Z^{\sigma/2}\), fix
+\(n=c\), which meets \(n>Z^{1-\sigma/2}\) for all
+sufficiently large \(Z\) since \(c>Z/2\).
+
+In the remaining cases \(n>Z^{1-\sigma/2}\) and the two
+other residual factors are at most \(Z^{\sigma/2}\).
+Their compressed ratio \(VT^k\) is congruent to \(-1\bmod n\)
+when \(n=c\) and to \(1\bmod n\) when \(n=a\) or \(b\).
+In the latter cases use \(c\) as the numerator of the
+ratio. In each case the ratio determines the two summands
+by the sum or difference equation. Their coprimality with
+\(n\) gives unit fractions. The height bounds are
+\[
+ H(T)\le Z^{1/k}\le n^{306/(305k)},\qquad
+ H(V)\le Z^{\sigma/2}\le n^{1/305}.
+\]
+The second parameter triple in Lemma~\ref{lem:adaptive-rational}
+gives \(O_{k,\eps}(n^{(1-\sigma)/k+\eps})\) pairs at each
+of the \(O_k(Z^{1/k})\) possible targets.
+Sum the dyadic intervals to prove the diagonal bound.
+The fixed-offset conclusion follows by monotonicity as
+in Section~9.2.
+
+\paragraph{Parameter limits.}
+With \(L>D\) initial rows the exchange argument bounds each
+incident weight by the total divided by \(L-D\).
+The factor \(\binom L2/(L-D)\) is minimized at \(L=2D-1\)
+and \(L=2D\). Selecting a larger subset before dropping
+rows to dimension \(D\) decreases the denominator of the
+exchange bound. For a monomial family within widths \(m,h\),
+the rowwise denominator estimate depends on those widths,
+and \(D\le(m+1)(h+1)\). Thus at each fixed limiting \(d,m\)
+the full rectangle attains the smallest possible \(\beta\)
+in \eqref{eq:adaptive-parameters}.
+
+The exchange estimate at \(L=2D\) is asymptotically sharp
+for the valuation weights alone. Partition \(2D\) rows
+into \(D-2\) pairs and one group of size four, with weight
+\(w>0\) within each group and zero between groups.
+These are excess valuations at a sufficiently large prime:
+choose distinct next digits for distinct groups and place
+the rows within a group at exact pairwise distance
+\(p^{-a_p-w}\). Every \(D\)-row selection has a row of weight
+at least \(w\), while the total weight is \((D+4)w\).
+
+For \(n=p^k\), a single depth is an integer
+\(\alpha=q_\alpha\). To obtain the target count from the
+number of classes, the amplification must have
+\(\ell\ge\alpha+1\). For \(\theta\ge1\), eliminating \(d\)
+and \(\beta\) from \eqref{eq:adaptive-parameters} gives the upper
+limit on the residual height exponent
+\[
+ \nu<
+ \frac{\alpha/(2\ell)-1/(m+1)}{m(4\ell-\alpha)}.
+\]
+For a positive numerator this expression decreases with
+\(\ell\). At \(\ell=\alpha+1\) its maximum over positive
+integers \(\alpha,m\) is \(7/2080\), at \(\alpha=3,m=4\).
+Indeed, \((1/2-1/(m+1))/m\le1/12\) gives a bound of
+\(1/300\) for \(\alpha\ge7\), and \(m\ge51\) gives a bound
+of \(1/(2m(3\alpha+4))<1/300\). The remaining finite
+comparison uses rational arithmetic.
 
 \section{Limits of the fixed-offset box constraints}
 For \(u>v\), the surface-only cost bounds in

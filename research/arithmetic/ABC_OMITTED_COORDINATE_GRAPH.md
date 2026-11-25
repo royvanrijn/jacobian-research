@@ -6,7 +6,7 @@ summand and a common power among selected coordinates of the other two
 summands. The box comparison below gives a strict gain over the four methods
 used in the first version of Browning, Lichtman and Teräväinen and the box
 estimates used in the later joint paper with Bernert.
-[Powerful-number graph, Proposition 10](../../unpublished/powerful-number-representations/main.tex) · [Browning–Lichtman–Teräväinen, §3](https://arxiv.org/html/2410.12234v1#S3) · [Bernert–Browning–Lichtman–Teräväinen, §§2–4](https://arxiv.org/html/2410.12234v2#S2)
+[Powerful-number graph, codegree estimate](POWERFUL_SUM_GRAPHS.md#codegrees-for-any-omitted-exponent) · [Browning–Lichtman–Teräväinen, §3](https://arxiv.org/html/2410.12234v1#S3) · [Bernert–Browning–Lichtman–Teräväinen, §§2–4](https://arxiv.org/html/2410.12234v2#S2)
 
 ## Box bound
 
@@ -742,3 +742,521 @@ complement consists of \(x_{c,4}=ps\) with \(p>X^u\) prime and
 \(s\ll X^{12631/479600}\), since \(11335/95920-u=12631/479600<\ell\).
 For large \(X\) the cofactor is below \(X^\ell\), and every divisor
 containing \(p\) is above \(X^u\).
+
+### Higher multiplicative moments for a residue lock
+
+Fix a modulus \(M\asymp X^w\), and let \(G=(\mathbb Z/M\mathbb Z)^\times\).
+The argument also uses the one-element group if \(M=1\).
+For each coordinate \(i\) take an integer set \(\mathcal X_i\) of units
+modulo \(M\) in an interval contained in \([1,C_iX^{\alpha_i}]\).
+The intervals and the sets need no distribution assumption.
+Give this coordinate a fixed positive power \(e_i\), and put
+\[
+ F_i(\chi)=\sum_{x\in\mathcal X_i}\chi(x)^{e_i},
+ \qquad \mathbb E_\chi f(\chi)=\frac{1}{|G|}
+                   \sum_{\chi\in\widehat G}f(\chi).
+\]
+The scales and modulus are bounded by fixed powers of \(X\),
+and the coordinate powers are fixed. Integer tuples are counted with multiplicity here.
+This bounds counts of distinct monomial products because a represented
+product has at least one tuple. For a fixed number of coordinates, the
+divisor bound also bounds the multiplicity of each product at subpower
+cost.
+
+For an integer \(h\ge1\) fixed independently of \(X\), orthogonality
+expresses \(\mathbb E_\chi |F_i(\chi)|^{2h}\) as the number of solutions to
+\[
+ (x_1\cdots x_h)^{e_i}\equiv (y_1\cdots y_h)^{e_i}\pmod M,\qquad
+ x_j,y_j\in\mathcal X_i.
+\]
+There are \(O(X^{h\alpha_i})\) choices on the first side. For each,
+the product on the other side lies in
+\([1,O(X^{h\alpha_i})]\) and in one of
+\(O_{e_i,\varepsilon}(X^\varepsilon)\) residue classes.
+The latter bound follows from the size of the kernel of the
+\(e_i\)-th power map on \(G\), by the prime-power unit groups and the
+Chinese remainder theorem. Each possible integer product on the
+second side has divisor-many factorizations since \(h\) is fixed.
+Consequently
+\[
+ \mathbb E_\chi |F_i(\chi)|^{2h}
+ \ll X^{h\alpha_i+(h\alpha_i-w)_++\varepsilon}. \tag{4}
+\]
+If only \(M\gg X^w\) is known, the same upper bound holds with that
+lower exponent.
+
+For a coordinate set \(J\), integer \(k\ge1\), and any unit twist
+\(\gamma\), write \(E(J,k;\gamma)\) for the number of choices of
+\(k\) copies of all its coordinates on each side satisfying
+\[
+ \prod_{\ell=1}^k\prod_{i\in J}x_{i,\ell}^{e_i}
+ \equiv \gamma\prod_{\ell=1}^k\prod_{i\in J}y_{i,\ell}^{e_i}\pmod M.
+\]
+Orthogonality gives
+\[
+ E(J,k;\gamma)=
+ \mathbb E_\chi\overline{\chi(\gamma)}
+        \prod_{i\in J}|F_i(\chi)|^{2k}
+ \le E(J,k;1).
+\]
+For a disjoint split \(J=J_1\sqcup J_2\), Cauchy–Schwarz therefore gives
+\[
+ E(J,k;\gamma)\le
+ \bigl(E(J_1,2k;1)E(J_2,2k;1)\bigr)^{1/2}. \tag{5}
+\]
+This can be iterated to any fixed depth. For example, if each
+coordinate \(i\) is placed at depth \(d_i\) in a binary split,
+(4) gives the exponent
+\[
+ k\sum_{i\in J}\alpha_i+
+ \sum_{i\in J}\bigl(k\alpha_i-w/2^{d_i}\bigr)_+.
+\]
+There is also a direct version without the binary-depth restriction.
+Choose fixed integers \(h_i\ge1\) with \(\sum_{i\in J}1/h_i\le1\).
+Hölder on the normalized character average and (4) give
+\[
+ E(J,k;\gamma)\ll
+ X^{\,k\sum_{i\in J}\alpha_i+
+       \sum_{i\in J}(k\alpha_i-w/h_i)_++\varepsilon}. \tag{6}
+\]
+The gap when the reciprocal sum is below one can be assigned to
+the constant function one. Interpolating between adjacent integer
+orders gives additional bounds.
+
+These statements cover a root group
+\(\prod_{i\in J}x_i^{i/g}\) with \(g\mid i\) on the group.
+Use \(e_i=i/g\) for the group itself or \(e_i=i\) after raising
+the group to power \(g\). An additional fixed exterior power
+can be absorbed into the \(e_i\) in the same way.
+If the grouped products range over a smaller set, enlarge it to
+all products of unit coordinates in their boxes and count tuples.
+If other coordinates have already been frozen in each copy,
+their monomial products are units and contribute only \(\gamma\).
+Freezing them has cost equal to their number of copies times
+their total coordinate mass. Thus the estimates apply uniformly
+in the boxed twists needed in the collision argument.
+[Zeng, Corollary 3.2, Lemma 3.3 and Proposition 4.1](https://hexagonmath.org/pdf/2611.00621v1)
+
+### Uniform energy bounds from interpolation
+
+Write \(y=L_T\), \(w\) for the modulus exponent, and \(\alpha\) for one
+coordinate mass. In normalized Hölder take reciprocal weight
+\(t=\alpha/y\) and interpolate the logarithm of the norm between
+\(1/(m+1)\le t\le1/m\). For fixed \(t\) the penalty beyond the diagonal
+mass \(\alpha\) is the chord, as a function of the reciprocal weight,
+between \((\alpha-w/(m+1))_+\) and \((\alpha-w/m)_+\). The weights
+sum to one. For a fixed dimension, coordinates below an arbitrarily
+small mass threshold can be frozen in both copies, with a vanishing
+loss and a uniform upper bound on the remaining moment orders.
+
+Put \(q=w/y\). If the chord crosses the kink, its penalty divided by
+\(\alpha\) is
+\[
+ (1-q/((m+1)t))(m+1)(1-mt).
+\]
+Its maximum is at most \((\sqrt{m+1}-\sqrt{mq})^2\). On the active
+range \(m/(m+1)\le q\le(m+1)/m\), this bound decreases with \(m\) at
+fixed \(q\). A chord wholly in the positive range gives the relative
+penalty \((1-q)_+\), which is also at most
+\((\sqrt{2}-\sqrt q)_+^2\). Thus the full residue energy exponent \(K_T\)
+obeys
+\[
+ K_T\le y+(\sqrt{2y}-\sqrt w)_+^2. \tag{7}
+\]
+The case \(y=0\) follows by the trivial bound on the number of
+tuples. At \(w\ge2y\) the exponent is at most \(y\).
+
+The same choice \(t=\alpha/y\) gives a convex upper bound in \(w\).
+At \(w=0,y,2y\) it is at most \(2y,(4-2\sqrt2)y,y\), respectively.
+Linear interpolation in \(w\), using \(4-2\sqrt2\le47/40\), yields the
+rational bound
+\[
+ K_T\le \max\{2y-\tfrac{33}{40}w,\;
+               \tfrac{27}{20}y-\tfrac7{40}w,\;
+               y\}. \tag{8}
+\]
+It uses only the full mass of the released letter and the lower
+height of the frozen modulus. One may thus keep the higher
+coordinate masses aggregated in the exponent program.
+
+### Using higher moments on both released letters
+
+Fix a residue lock \(O_C\) on \(C\) with mass \(f_C\) and modulus
+lower exponent \(w_C\). Choose \(J_T\) and integers \(h_{T,i}\)
+as in (6) on each released letter \(T=A,B\).
+Freeze both copies of the coordinates outside \(J_T\) when
+counting the congruence energy. The bound at \(k=1\) gives
+\[
+ K_T=2L_T-\sum_{i\in J_T}\min(\alpha_{T,i},w_C/h_{T,i})
+\]
+as an upper exponent for that energy, up to \(\varepsilon\).
+The signed equation makes the residue of one complete value a
+fixed unit multiple of the residue of the other.
+The same residue Cauchy–Schwarz argument as above gives the
+box exponent
+\[
+ D\le f_C+\frac{K_A+K_B}{2}+\varepsilon. \tag{9}
+\]
+The analogous substitution into the grouped collision inequality
+uses \(w_B\) and the mass of the released coordinates of \(A\)
+in place of its full mass. In a projected model the unexposed
+higher coordinates may stay outside \(J_T\), at the usual
+freezing cost. A fixed projection has only finitely many other
+coordinates in the underlying anatomic box.
+
+At the asymmetric profile, work in units of \(1/95920\).
+Take \(C=c\) and \(O_C=\{4\}\).
+Then \(f_C=11335\) and \(w_C=45340\).
+For both free letters take \(J_T=\{1,2,3,4,5\}\) and
+\((h_{T,1},\ldots,h_{T,5})=(10,8,4,3,25)\).
+Their reciprocal sum is \(509/600\).
+In every case \(h_{T,i}\alpha_{T,i}\le45340\), so
+\(K_A=31714\) and \(K_B=32103\). Equation (9) gives
+\[
+ D\le \frac{86487}{191840}+\varepsilon.
+\]
+One can also lock \(\{3,5\}\) on the short letter \(a\).
+The mass is \(10487\) and the modulus exponent \(33993\).
+For both free letters choose orders \((8,6,3,3,25)\)
+with reciprocal sum \(599/600\).
+Only degrees \(1\) and \(4\) incur a penalty, and they
+have total penalty
+\(4504-33993/8+11335-33993/3=2071/8\) per free letter.
+The resulting exponent is \(342791/767360+\varepsilon\).
+
+### Counting two omitted powers with a partial modulus
+
+On \(C\), freeze a coordinate set of mass \(f_C\), whose product
+with the fixed coefficient gives a modulus \(M\gg X^{w_C}\).
+On each of the other letters \(T=A,B\), select a nonempty group
+\(I_T\) whose degrees are all divisible by a fixed \(g\ge2\).
+The selected groups are on distinct letters. Their root values are
+\[
+ u_T=\prod_{i\in I_T}x_{T,i}^{i/g}.
+\]
+Write \(p_T=\sum_{i\in I_T}\alpha_{T,i}\), and take any upper
+exponent \(H_T\) for the size of \(u_T\).
+Freeze the complementary coordinates on \(A\) and \(B\).
+Writing \(P_A,P_B\) for their products with the respective fixed
+coefficients and signs, the additive relation gives
+\[
+ (u_A/u_B)^g\equiv -P_B/P_A\pmod M.
+\]
+Primitivity makes the coefficients and both roots units modulo
+\(M\). It also makes \(\gcd(u_A,u_B)=1\), since each root divides
+the corresponding complete value. The power congruence gives
+\(O_{g,\varepsilon}(X^\varepsilon)\) admissible residue classes \(r\)
+for \(u_A/u_B\), by the prime-power unit groups and the Chinese
+remainder theorem.
+
+For one class \(r\), let \(1\le u_A\le U\), \(1\le u_B\le V\)
+with \(U\ll X^{H_A}\) and \(V\ll X^{H_B}\).
+Choose a pair \((u_0,v_0)\) in the class with largest numerator.
+For every pair \((u,v)\) in it, \(uv_0-u_0v\) is divisible by \(M\)
+and has absolute value at most \(UV\). Two pairs with the same
+determinant differ by an integer multiple of \((u_0,v_0)\), since
+that vector is primitive. Their first coordinates both lie in
+\([1,u_0]\), so they coincide. This gives \(O(1+UV/M)\) pairs
+uniformly in \(U,V\), including \(M=1\).
+
+The two roots determine the two complete free values, and the
+signed equation then determines the third complete value.
+The divisor bound controls the number of choices of coordinates
+representing each of the three values. Restoring the frozen choices
+gives the uniform box bound
+\[
+ D\le f_C+L_A+L_B-p_A-p_B+(H_A+H_B-w_C)_++\varepsilon. \tag{10}
+\]
+The two root groups need only have a common fixed divisor
+of their degrees. One may conservatively freeze every
+unexposed higher coordinate. If the tail of a large \(C\) is
+entirely frozen, the height complement can give the same
+improved lower bound for \(w_C\) as in the other residue rows.
+The reduced-fraction argument is the rectangular form of the
+angular reconstruction in the full-letter graph above.
+[Powerful-number graph, codegree estimate](POWERFUL_SUM_GRAPHS.md#codegrees-for-any-omitted-exponent)
+
+### A symmetric profile separating the two bounds
+
+Take each letter to have degree masses
+\[
+ \alpha_1=\frac{19}{150},\qquad
+ \alpha_4=\frac{30}{150},\qquad
+ \alpha_{11}=\frac1{150},
+\]
+and zero mass in the other degrees.
+Each total mass is \(1/3\) and each weighted height is one.
+For the energy methods, consider the ideal substituted exponent
+\(K=2s-\min(s,w)\), where \(s\) is the free mass and \(w\) is
+the frozen modulus exponent. It is at least as strong as the
+moment exponents above. In fact the sum of the savings in
+(6), at \(k=1\), is at most \(\sum_i\alpha_i\) and at most
+\(w\sum_i1/h_i\le w\). Interpolated moment bounds satisfy the
+same two constraints. In a collision row, freezing additional
+coordinates on the energy side cannot improve the ideal energy
+contribution. The sum of their freezing cost and half of the
+ideal exponent is \(L-\tfrac12\min(s,w)\), which is minimized
+at the largest free mass.
+
+It suffices to enumerate the eight masks on \(\{1,4,11\}\),
+including the degree-\(11\) coordinate individually. Let
+\(m(I),h(I)\) be the mass and weighted height of a mask. The
+row minima are
+\[
+\begin{array}{c|rrrrrr}
+ \text{row}&\text{pair}&\text{Fourier}&\text{geometry}&
+ \text{ideal collision}&\text{ideal direct}&\text{shift}\\
+ \hline
+ \text{minimum}&2/3&17/30&3/5&8/15&8/15&169/300 .
+\end{array}
+\]
+For the ideal direct bound, the mass and lower height of
+\(O_C=\{4\}\) are \(1/5\) and \(4/5\). It attains the
+minimum \(8/15\).
+For the ideal collision bound, the minimum uses \(I_B=\{4\}\).
+Its difference cap is zero and its complementary modulus
+has exponent \(1/5\), so \(K=7/15\).
+With \(f_B=2/15\) and \(L_C=1/3\), the off-diagonal term is
+\(8/15\). The exact scan takes all free masks, all target masks,
+and all their subgroup locks and includes the degree-\(11\)
+difference cap. The full-letter common-power graph also has
+minimum \(8/15\), with just degree \(4\) omitted on both free
+letters. Every allowed common-power group removes at most
+\(1/5\) of each free letter's mass, and the two degree-\(4\)
+roots have combined height \(2/5<1/2\).
+
+The stronger bound (10) instead uses \(O_C=\{4\}\) and
+\(I_A=I_B=\{4\}\). Its power is \(g=4\), its two root heights
+are \(1/5\) each, and their sum is below \(w_C=4/5\).
+Thus (8) gives
+\[
+ D\le\frac15+2\left(\frac13-\frac15\right)+\varepsilon
+     =\frac7{15}+\varepsilon.
+\]
+This \(8/15\) obstruction concerns the ideal energy and the
+other listed rows without the partial-modulus rational count.
+
+### A symmetric obstruction including the partial-modulus rational count
+
+Give all three letters the profile
+\[
+ (\alpha_1,\alpha_3,\alpha_4)=\frac1{12}(1,1,2),
+ \qquad \alpha_i=0\quad(i\notin\{1,3,4\}).
+\]
+Every letter has mass \(1/3\) and weighted height one.
+The point \(D=1/2\) survives both the ideal moment constraints
+and (10), along with the earlier geometric, collision, and shift
+bounds. The exact row minima are \(2/3\) for the pair bound,
+\(7/12\) for the Fourier bound, \(1/2\) for geometry, \(1/2\)
+for the ideal direct energy, \(1/2\) for the ideal collision
+energy, \(5/8\) for the paired shift, and \(1/2\) for the rational count.
+
+For example, locking degree \(4\) and releasing just degree \(4\)
+on both free letters makes the rational row attain \(1/2\).
+The degree-one version of the rational row also permits \(1/2\).
+In units of \(1/12\), any lock has \(w\le4f\), so
+\(f+(H_A+H_B-w)_+\ge (H_A+H_B)/4\). On each letter, the root
+mass minus one fourth of its weight is at most one, attained
+by releasing degrees \(1,3\). The resulting lower bound on the
+right-hand side is \(8-1-1=6\).
+[Exact check of the two symmetric profiles](verify_abc_higher_moment_obstructions.py)
+
+### A uniform analytic exponent of \(287/500\)
+
+Put \(d_0=287/500\). In a height shell, the largest letter and the
+larger addend both have size comparable to the shell height. Call
+these two letters tall and label them \(B,C\). Label the remaining
+letter \(A\). Their weighted heights are \(1,1\), up to the usual
+arbitrarily small loss, and the weighted height of \(A\) is at most
+one. This argument keeps all original coordinates of the fixed
+anatomic decomposition, including the degrees above six.
+
+Write \(L_T=\sum_i\alpha_{T,i}\) and \(L=\sum_T L_T\le1\).
+The pair bound gives \(D\le L-\max_T L_T\).
+Set
+\[
+ x=1-d_0=.426,\qquad z=2d_0-1=.148.
+\]
+Suppose the pair bound exceeds \(d_0\). Then
+\[
+ z\le L_T\le x,\qquad L_B+L_C\ge d_0 .
+ \tag{11}
+\]
+Indeed \(L_T\le L-d_0\) for each letter, and each mass is at least
+\(L-2(L-d_0)\). We also use the geometry row
+\[
+ D\le\max\{L-s,L-1+w-s\}
+\]
+for a set of released coordinates with ordinary mass \(s\) and
+weighted mass \(w\).
+
+Write \(P(y,w)=(\sqrt{2y}-\sqrt w)_+^2\). The energy exponent
+of the full released letter \(T\) is at most \(L_T+P(L_T,w)\)
+by (7), and is always at most \(2L_T\). We also use the finer
+interpolation estimates in the paragraph preceding (7). For
+\(q=w/y\ge1\), the penalty for a chord with index \(m\) vanishes
+unless its coordinate mass is larger than \(w/(m+1)\).
+Among chords with \(m\ge m_0\), the relative penalty is at most
+\((\sqrt{m_0+1}-\sqrt{m_0q})_+^2\). The absolute penalty of one
+chord with index \(m\) is at most
+\[
+ y\,\frac{[m+1-mq]_+^2}{4m(m+1)},
+\]
+by maximizing the product of the two linear factors in the chord.
+Both this penalty and \(P(y,w)\) decrease with the available
+modulus weight \(w\). In (9), a lock of mass \(f\) on \(T\)
+therefore gives the upper bound
+\[
+ f+\frac{L-L_T}{2}+\frac{P_U+P_V}{2},
+\]
+where \(P_U,P_V\) are any valid bounds for the two sums of
+interpolation penalties at that lock weight.
+
+For one more row, release a single coordinate of degree \(i\ge2\)
+and mass \(b\) on letter \(T\). The grouped collision estimate (1)
+has zero difference-fibre penalty on this letter. A nonzero
+difference of two \(i\)-th powers determines their gap up to
+divisor-many choices, and each gap determines the lower base.
+With \(f=L_T-b\), the resulting row is
+\[
+ D\le f+\max\{L_V,\,(L_V+K_U)/2\}. \tag{12}
+\]
+Here \(U,V\) are the other two letters in either order, and \(K_U\)
+is the available energy exponent with modulus equal to the
+weighted frozen mass of \(T\).
+
+**Large individual coordinates.** Put \(h=.1592\) and \(c_0=.283\).
+If any non-degree-one coordinate has mass \(b\ge c_0\), use (12)
+with \(U\) the smaller other mass and \(K_U\le2L_U\). The
+off-diagonal exponent is at most \((3+x)/4-c_0=.5735\),
+and the diagonal is at most \(1-z-c_0=.569\).
+
+If a tall letter has degree-one mass \(b\ge h\), lock all its
+other coordinates, of mass \(L_T-b\) and weight \(1-b\).
+For \(b\le.25\), (9) gives at most
+\((1+x)/2-h+P(x,.75)\). For \(b\ge.25\) it gives at most
+\((1+x)/2-.25+P(x,1-x)\). Both are below \(.55706\).
+
+If a tall letter has a degree-two or degree-three coordinate
+with \(h\le b<c_0\), use (12) with \(U\) the larger other mass.
+The diagonal is at most \((1+x)/2-b\). The off-diagonal is
+bounded by
+\[
+ (1+x)/2-b+\tfrac12P(x,1-3b).
+\]
+This is convex in \(b\). Its endpoint values at \(h,c_0\) are
+below \(.57386\) and \(.57283\), respectively.
+
+**Two tall letters with large high-degree coordinates.** Suppose
+both have a coordinate of degree at least four with masses
+\(b_B,b_C\ge h\). Each is at most \(.25\). Let
+\(G(b)=b+P(x,4b)\). The singleton lock on either tall letter
+gives \(D\le .5+G(b_T)-L_T/2\) by (9). If both bounds exceed
+\(d_0\), (11) implies \(G(b_B)+G(b_C)>5d_0/2-1=.435\).
+The function \(G\) is convex and increasing on \([h,.25]\),
+as \(h>8x/25\). Put \(S=b_B+b_C\). If \(S\le x\), convexity
+and monotonicity give
+\(G(b_B)+G(b_C)\le G(.25)+G(x-.25)<.43306<.435\), a contradiction.
+Thus \(S>x\).
+
+Suppose at least one of the chosen degrees is at least five.
+In the geometric bound, release all coordinates except the two
+chosen tall coordinates. Their excluded mass is \(S\le .5\),
+and their excluded weight minus mass is at least \(3S+h\).
+Since \(3x+h>2-d_0\), both branches are at most \(d_0\).
+It remains to handle two chosen coordinates of degree four.
+Let \(h_A\) be the weighted height of the short letter.
+If \(h_A\ge x\), apply (10) with the entire short letter locked
+and only the two degree-four coordinates released on the tall
+letters. Their roots have combined height \(S\). The exponent
+is at most \(L-S+(S-h_A)_+=\max\{L-S,L-h_A\}\le d_0\).
+For \(h_A<x\), release all coordinates except the two chosen
+degree-four coordinates in the geometry row. Their excluded
+weight is \(4S\), so the released weight is at most
+\(h_A+2-4S<2-3x<1\). This gives \(D\le S\le .5\).
+
+**A tall letter with no large coordinates.** We are left with a
+tall letter all of whose coordinates have mass below \(h\).
+Among these tall letters label one of largest mass \(C\).
+The other tall letter \(B\) has every coordinate
+mass at most \(.25\), and at most one exceeds or equals \(h\).
+Indeed any such coordinate must have degree at least four, and
+two different such degrees would use weighted height at least
+\(9h>1\).
+
+Put \(u=.097\). If the third-largest mass on \(C\) is at least
+\(u\), write \(i<j<k\) for the degrees of its three largest
+coordinates. If \(k\ge5\), lock that coordinate. Its mass is at
+most \(h\), its weight is at least \(5u\), and \(L_C\ge3u\).
+The exponent is at most \(.5+h-3u/2+P(x,5u)<.56507\).
+
+Otherwise \(k\le4\). Lock all coordinates except the ones of
+degrees \(i,j\), whose masses are \(a,b\). Its weight is at
+least \(1-ia-jb\), and its mass is \(L_C-a-b\). The exponent
+is at most
+\[
+ (1+x)/2-a-b+P(x,1-ia-jb).
+\]
+This is convex in \(a,b\). The point lies in the polygon
+\([u,h]^2\cap\{ia+jb\le1-ku\}\), because the degree-\(k\)
+coordinate has mass at least \(u\). At its vertices the
+strict upper bounds are \(.52557,.52557,.53881,.56676\) for
+the degree triples \((1,2,3),(1,2,4),(1,3,4),(2,3,4)\),
+respectively.
+
+Suppose the third-largest mass is below \(u\), and write \(b\)
+for the largest. Partition the coordinates of \(C\) into two
+bins by adding coordinates in decreasing mass order to the
+lighter bin. Their final mass difference is at most
+\(\max\{u,2b-L_C\}\). Until a first sign change the running
+difference is the largest mass minus the sum of the masses
+placed so far. A sign change can first occur at the third
+coordinate or later, and limits every subsequent difference
+to its mass.
+
+If the difference is at most \(u\), choose the bin of weight
+at least \(.5\). Its mass is at most \((L_C+u)/2\). We bound
+the released penalties at weight \(.5\). Put
+\[
+ g_2=(\sqrt3-\sqrt{1/x})^2,\qquad
+ g_3=(2-\sqrt{1.5/x})^2 .
+\]
+On \(A\), a chord with \(m=1\) can contribute only for a mass
+larger than \(.25\), and hence at most one contributes. If none
+does, the total is at most \(xg_2\). If its mass is at most
+\(.28\), its absolute penalty is at most
+\(2(.28-.25)(1-.28/x)\), and the others total at most
+\((x-.25)g_2\). If its mass is at least \(.28\), its penalty is
+at most \((x-.25)^2/(2x)\), while the others have no contributing
+chord with \(m\le2\) and add at most \((x-.28)g_3\).
+The maximum of these three bounds is below \(.03859\).
+
+On \(B\), all masses are at most \(.25\), so no \(m=1\) chord
+contributes. An \(m=2\) contribution requires mass greater
+than \(1/6\), and thus can occur at most once. Its absolute
+penalty is at most \(x(3-1/x)^2/24\), and all other penalties
+total at most \((x-1/6)g_3\). If no \(m=2\) chord contributes,
+use \(xg_3\). The maximum is below \(.01152\).
+Consequently (9) gives
+\(D<.5+u/2+(.03859+.01152)/2=.573555<d_0\).
+
+It remains to assume \(2b-L_C>u\). Then \(L_C<2h-u=.2214\).
+If both tall letters had every mass below \(h\), our choice of
+\(C\) would give \(L_C\ge d_0/2\) by (11), which is impossible.
+The other tall letter \(B\) therefore has a coordinate of
+degree at least four with mass \(b_B\ge h\). By (11),
+\(L_B>d_0-2h+u=.3526\). Locking that singleton gives
+\[
+ D\le .5+G(b_B)-L_B/2\le .75-L_B/2<.5737,
+\]
+using the same monotonicity \(G(b_B)\le G(.25)=.25\).
+
+The decimal thresholds above are rational. The [exact arithmetic check](verify_abc_analytic_574_constants.py)
+bounds each square root by consecutive multiples
+of \(10^{-12}\), using integer square roots. The classifications
+have slack to absorb dyadic-shell and fixed-coefficient errors,
+with the corresponding \(O(\eta)\) loss in the geometry
+and pair branches. Freezing coordinates below a fixed
+arbitrarily small mass threshold retains uniform moment orders
+as in (7). Taking the decomposition and shell losses arbitrarily
+small proves the \(287/500+\varepsilon\) exponent for the count.
