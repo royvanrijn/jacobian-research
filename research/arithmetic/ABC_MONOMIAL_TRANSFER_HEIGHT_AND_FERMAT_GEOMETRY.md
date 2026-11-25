@@ -86,6 +86,15 @@ This contradiction proves the claimed small-output count. The proof
 also gives the outside-pool numerical lower bound for output cross
 determinants without imposing any cap on the output height.
 
+The bound is uniform enough for piecewise rational charts. With at
+most \(n^{\theta+o_X(1)}\) possible nonconstant charts of the stated
+degree and polynomial coefficient-height bounds, the union of
+their small-output row sets has size at most
+\(n^{\theta+\rho+o_X(1)}\), regardless of how the chart is selected
+at each row. An affordable subfamily of exponent \(r>\theta\) thus
+cannot be covered in this way at all sufficiently small fixed \(L\),
+by choosing \(0<\rho<r-\theta\).
+
 ### Tuple charts and the pure-term pattern
 
 Let the fibre size be \(N=n^{r+o_X(1)}\), with \(r\ge r_0>0\), and
@@ -106,7 +115,7 @@ the raw forms and restrict to points where their denominator is
 nonzero. If the specialized rational function is instead evaluated
 after cancellation at removable points, there are at most a
 bounded number of such queries per nonexceptional complement.
-The original ordered-pair set can be arbitrary, since we bound the
+The original tuple collection can be arbitrary, since we bound the
 whole query slice and sum over complements.
 
 After replacing the query direction by \(Gv/(Fu)\) or its
@@ -146,6 +155,11 @@ the usual fixed rational-map height comparison.
 · [Positive height after division](ABC_AFFORDABLE_FIBRE_DETERMINANT_COMPLEXITY.md#positive-height-after-division)
 
 ## Exact orders and the genus of the coarse Fermat curve
+
+
+The calculation below restates the effective-order formula (EC5)
+and applies it to the least-repair question.
+[Effective-order cover](ABC_EXACT_POWER_REPAIR_COEFFICIENTS.md#the-effective-orders-determine-the-weighted-fermat-curve)
 
 Fix nonzero rational coefficients \(A,B,C\), positive integers
 \(a,b,c\ge2\), and \(J=\operatorname{lcm}(a,b,c)\). Let \(W\) be

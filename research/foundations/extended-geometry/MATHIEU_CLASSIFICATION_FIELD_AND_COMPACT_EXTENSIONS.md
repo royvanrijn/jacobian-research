@@ -5561,7 +5561,7 @@ No generic freeness condition for a second subgroup is needed. In particular the
 
 Let \(F=K(Y)\) and use the fibre of the right \(H\)-torsor \(X\to Y\) at the \(F\)-generic point. Choose a geometric isometry \(g\) in the fibre. The cocycle \(g^{-1}\sigma(g)\) has values in \(H\), hence in the source special unitary group. Twist the standard source complex Hermitian form by this cocycle. Its determinant class in \(F^\times/N(F(i)^\times)\) remains \((-1)^r\) because the twisting maps preserve the exterior volume. On quaternionifying, the twisted form is isometric to the target \(I_n\), since \(g\) intertwines the two descents. If the Hamilton algebra splits over \(F\), its norm represents \(-1\). Otherwise \(F(i)\) is a field, and diagonalizing the descended complex Hermitian form also diagonalizes its quaternionification. The comparison of products of diagonal coefficients under this quaternionic isometry gives \(-1\in \operatorname{Nrd}((-1,-1)_F^\times)\), by the Pfaffian determinant identity used in the two-plane calculation. The use of the complex determinant is valid modulo quaternion reduced norms because complex norms lie among those reduced norms. Thus \(s(F)\le4\).
 
-For the lower bound, if \(s(K)\le4\) take \(K'=K\). Otherwise take \(K'=K(S_4^-)\), the function field of the norm-minus-one quaternion quadric. Its level is four: it has level at most four by the equation, and the four-square form stays anisotropic by Hoffmann separation for the anisotropic five-square projective quadric. Over either choice of \(K'\), the Hamilton norm represents \(-1\), so \(X\) has a \(K'\)-point, obtained by an anti-isometry on each negative line and identity on the other lines. Its image gives a smooth \(K'\)-point of \(Y\). The completion at that point embeds \(K(Y)\) in an iterated Laurent series field over \(K'\). The level of \(K'\) cannot drop there by the leading term of a sum of squares. This proves the lower bound \(\min(s(K),4)\). [Hoffmann, Theorem 1](https://eudml.org/doc/174821)
+For the lower bound, if \(s(K)\le4\) take \(K'=K\). Otherwise take \(K'=K(S_4^-)\), the function field of the norm-minus-one quaternion quadric. Its level is four: it has level at most four by the equation, and the four-square form stays anisotropic by Hoffmann separation for the anisotropic five-square projective quadric. Over either choice of \(K'\), the Hamilton norm represents \(-1\), so \(X\) has a \(K'\)-point, obtained by an anti-isometry on each negative line and identity on the other lines. Its image gives a smooth \(K'\)-point of \(Y\). The completion at that point embeds \(K(Y)\) in an iterated Laurent series field over \(K'\). The level of \(K'\) cannot drop there by the leading term of a sum of squares. This proves the lower bound \(\min(s(K),4)\). [Hoffmann, Theorem 1](https://doi.org/10.1007/BF02572626)
 
 On the product with the five-dimensional norm-one quadric, choose \(a\in F^4\) with \(\sum a_i^2=-1\). Use the vectors \(e_1=(1,0,0,0,0)\), \(e_2=(0,a_1,a_2,a_3,a_4)\), and multiply both by a common regular denominator. Over a real closed field this denominator can be chosen real on the pointed reference form by multiplying it by its transform under the commuting involution for the sign twist, as in the positive sphere criterion. With \(R=q(e_1)\) after this multiplication and \(U,V\) as in (R1), the regular phase \(\big[(1+U)((1+U)^2V-(2+U)R)\big]^3\) has zero pure moments, and the marker \(U^3\) gives \((3m)!\Lambda_Y(R^{3m})/(5/2)_{3m}\ne0\) at every \(m\ge1\). Every other stated product follows from the level-four criterion for compact factors. These constructions use the original quotient as invariant base.
 
@@ -6041,7 +6041,7 @@ In a level-two case take an anti-sign character in \(V\). If \(n\ge3\), two of i
 
 **Examples.** For \(n=2\), take \(\Lambda=\langle(4,0),(0,4),(2,2)\rangle\) and assign to \((2,2)\) the norm class for \([D]\), with trivial classes on the two axes. Both normal-factor invariant fields leave \(D\) division, while the diagonal field splits it. This gives a regular counterexample for a point-free coupled twist over any of the fields in the theorem. Over a real closed field with these signs, the two normal-factor quotients are pointed compact \(\mathrm{SU}_2/\mu_4\).
 
-In contrast, over a real closed field take \(\Lambda=\langle(8,0),(4,2)\rangle\) with sign one on \((4,2)\) and zero on \((8,0)\). The full space has level two, and both axis sublattices have sign zero. Every anti-sign character has residues \((0,2)\) modulo four. The three tests exclude all split-rank generic-fibre constructions for this space, which leaves its individual trace open.
+In contrast, over a real closed field take \(\Lambda=\langle(8,0),(4,2)\rangle\) with sign one on \((4,2)\) and zero on \((8,0)\). The full space has level two, and both axis sublattices have sign zero. Every anti-sign character has residues \((0,2)\) modulo four. The three tests exclude a split subgroup of the original group on a generic invariant fibre. The commuting-action theorem below gives a regular witness on the generic diagonal fibre.
 
 
 
@@ -6196,9 +6196,9 @@ This is real for the compact antipodal left structure and the split scalar struc
 
 **Theorem (A diagonal or normal factor detects the Brauer class in three quaternion factors).**
 
-Let \(K\) have characteristic zero, let \(G,X,H\) be as in the principal-stabilizer character theorem, and suppose \(G\) has three active normal factors isomorphic over \(K\) to \(C=\mathrm{SL}_1(D)\) for a division quaternion algebra \(D\). If \(D\) splits over \(K(X)\), then it splits over \(K(X)^S\) for a normal factor or a diagonal on two of the three factors. Consequently \(X\) has a regular Mathieu–Zhao counterexample. The geometric stabilizer \(H\) may have arbitrary components. Over a real closed field this settles the level-two trace whenever there are at least three active compact rank-one factors.
+Let \(K\) have characteristic zero and let \(X\) be an affine geometrically homogeneous space of a connected reductive group. Suppose its simply connected derived cover has three active normal factors isomorphic over \(K\) to \(C=\mathrm{SL}_1(D)\) for a division quaternion algebra \(D\). If \(D\) splits over \(K(X)\), then it splits over \(K(X)^S\) for a normal factor or a diagonal on two of the three factors. Consequently \(X\) has a regular Mathieu–Zhao counterexample. The geometric stabilizer \(H\) may have arbitrary components. Over a real closed field this settles the level-two trace whenever there are at least three active compact rank-one factors.
 
-**Proof.** Choose a geometric stabilizer character \(\chi\) with \(o(\chi)=[D]\). We show first that for any pair of active isomorphic rank-one factors \(C_1,C_2\), if \(\chi\) is trivial on the intersection of \(H\) with their diagonal center, then a diagonal or one of these factors detects \([D]\). We work geometrically to calculate the stabilizer. Put \(H_{12}=H\cap(C_1\times C_2)\). It is normal in the reductive stabilizer \(H\), so its identity component is reductive. The generic diagonal stabilizer is computed from \(H_{12}\) by independent general conjugations in the two factors.
+**Proof.** Work with the reductive cover \(G\) given by the simply connected derived group times the connected center, and write \(H\) for its geometric stabilizer. Choose a rational map \(X\dashrightarrow\mathrm{SB}(D)\) and pull back the geometric hyperplane line bundle across codimension one, as in the odd-stabilizer argument below. The resulting \(L\) admits a geometric \(G\)-linearization and hence gives a character \(\chi\) on \(H\). For existence of the linearization, the big cell of \(G_{\overline K}\) is a product of affine space and a split torus, and its complementary divisors are principal because \(\operatorname{Pic}(G_{\overline K})=0\). Thus \(\operatorname{Pic}(G_{\overline K}\times X_{\overline K})=\operatorname{Pic}(X_{\overline K})\) as in the rank-one proof. Normalize the action isomorphism at the group identity. For each fixed geometric point of \(X\), its composition discrepancy is a unit on \(G_{\overline K}\times G_{\overline K}\), hence a constant times a character. Both identity normalizations make that unit one. On any semisimple subgroup the linearization is unique, so the Galois comparison maps commute with that subgroup action. Consequently triviality of \(\chi\) on its principal stabilizer makes \([D]\) vanish over its invariant field by the invariant-section argument. This works also if \(X_{\overline K}\) has nonconstant units. We show first that for any pair of active isomorphic rank-one factors \(C_1,C_2\), if \(\chi\) is trivial on the intersection of \(H\) with their diagonal center, then a diagonal or one of these factors detects \([D]\). We work geometrically to calculate the stabilizer. Put \(H_{12}=H\cap(C_1\times C_2)\). It is normal in the reductive stabilizer \(H\), so its identity component is reductive. The generic diagonal stabilizer is computed from \(H_{12}\) by independent general conjugations in the two factors.
 
 If a projection of \(H_{12}^{\circ}\) is a whole factor, the derived Lie algebra shows that \(H_{12}^{\circ}\) is a graph of an isomorphism. The alternative of containing a normal factor contradicts activity. After geometric conjugation the graph is the ordinary diagonal. Its normalizer in the pair consists of \((g,g)\) and \((g,-g)\). A conjugate of a point in the second component belongs to the diagonal only if the relative conjugating matrix \(r\) satisfies \(rxr^{-1}=-x\) for some \(x\in\mathrm{SL}_2\). This implies \(xrx^{-1}=-r\) and hence \(\operatorname{tr}r=0\), a condition avoided generically. Thus the generic stabilizer is contained in the graph, where \(\chi\) is trivial. A general intersection of two graphs has dimension one, since it is the centralizer of a general relative matrix. This gives the split diagonal action on the generic fibre.
 
@@ -6219,3 +6219,525 @@ Let \(K\) be real closed and let \(X\) be a compact homogeneous form for two sim
 Indeed the connected stabilizer is trivial, a graph, or a torus, by the classification of the two projections used in the proof. The first two cases have no nontrivial characters and hence no Hamilton class in the constant Brauer kernel. A two-dimensional torus is a product of maximal tori. The two normal-factor quotients give an equivariant isomorphism from \(X\) to the product of the resulting rank-one spaces, since it does so geometrically. The geometric stabilizer characters and their descent obstructions decompose accordingly. Since \(\operatorname{Br}(K)\) has order two, at least one of the rank-one quotient spaces splits the Hamilton class. This is the invariant field of the opposite factor.
 
 If the stabilizer is a one-dimensional torus, choose geometric coordinates \((z^a,z^b)\) with coprime integers \(a,b\). If the diagonal central involution is absent, the pair argument applies directly. Otherwise both \(a,b\) are odd, and \(H\cap C_1,H\cap C_2\) have orders \(|b|,|a|\), respectively. An odd power of any character with Hamilton obstruction then kills both these finite groups and keeps its obstruction. Thus a normal factor gives the witness. This last rank-one stabilizer argument also holds over any characteristic-zero field for two isomorphic division quaternion factors, with splitting of their quaternion class over \(K(X)\) in place of level two. \(\square\)
+
+## Exceptional leading biforms from a bilinear pencil
+
+**Theorem (A real bilinear pencil reduces exceptional Laurent moments to a binary cyclic cover).**
+
+Let \(X=\mathrm{SU}_2/\Gamma\) be either exceptional compact quotient over a real closed field, with the scalar coordinate \(t\) on its split \(\mathbb G_m\) factor. Fix \(j=4\) or \(6\), and a right \(\Gamma\)-invariant binary form \(G\) of degree \(2j\) whose zero divisor is supported on the three exceptional rotation orbits. Let \(B_0,B_1\) span a pencil of bilinear forms in the left vector \(u\) and the homogenized scalar vector \(s\). Assume the pencil is stable under compact antipodal conjugation in \(u\) and split conjugation in \(s\), and that its determinant has two distinct roots. Let \(F\) be a binary form of degree \(2j\) whose divisor is invariant under the induced real structure on the pencil coordinates \((B_0,B_1)\). Put \(W=F(B_0,B_1)\).
+
+If a real regular Laurent phase \(P\) of greatest half-matrix degree \(jk\), \(k\ge1\), has entire leading symbol
+\[
+              G(v)^k \bigl(t^{-j}W(u;1,t)\bigr)^k
+\]
+up to a nonzero scalar, then \(P\) and every nonconstant polynomial in \(P\) have infinitely many nonzero pure moments among multiples of any prescribed positive integer \(M\). The divisor \(W=0\) need not be smooth.
+
+**Proof.** The two singular bilinear forms in the pencil have rank one. Their left factors are independent and their right factors are independent, since otherwise the determinant would vanish identically. Consequently, after changing the basis of the pencil and making invertible changes in the \(u\) and \(s\) variables independently, the two bilinear basis forms become \(u_0s_0\) and \(u_1s_1\). Write \(F_0\) for the corresponding binary form in this basis. The real structure on the two-dimensional pencil squares to minus the identity: the left linear forms carry the antipodal antilinear map of square \(-1\), and the scalar linear forms carry ordinary conjugation. The induced projective real structure is fixed-point-free. The divisor of \(F_0\) is therefore antipodal, up to choice of projective coordinates.
+
+Work first with algebraic coefficients. Adjoin a primitive \(jkM\)-th root of unity and let \(m=(p-1)/(jk)\) and \(r=(p-1)/j\) at a good degree-one prime of residue characteristic \(p\). The leading residue of \(p\Lambda(P^m)\) is, up to a unit, the product of the right central coefficient in \(G^r\) and
+\[
+             [u_0^{p-1}u_1^{p-1}s_0^{p-1}s_1^{p-1}]\,W^r .
+\]
+This is the rank-one cone computation, with the \(s\)-coefficient taken by scalar balancing. The quotient by \((u_0^p,u_1^p,s_0^p,s_1^p)\) is invariant under the two independent linear changes in characteristic \(p\), and its bidegree \((2p-2,2p-2)\) is a line. Thus the new coordinate bases change the displayed coefficient by a unit. In the two rank-one pencil coordinates it is exactly
+\[
+                    [z_0^{p-1}z_1^{p-1}]F_0(z_0,z_1)^r .
+\]
+If a root of \(F_0\) has multiplicity at least \(j\), antipodality and the total degree force two roots of multiplicity \(j\). The coefficient is then a unit at every sufficiently good prime, by the same change-of-basis argument. In the remaining case the character-one eigenspace on the normalized cyclic \(j\)-cover has dimension one, with Frobenius scalar this coefficient. The imaginary quadratic multiplication field \(\mathbb Q(\zeta_j)\) and the simple-signature ordinarity lemma give density-one ordinary primes after finite extension, as in the lowest full degree test. The \(G\)-coefficient is already a unit by the three-branch descent. Thus the residue is nonzero infinitely often, with \(M\mid m\).
+
+For real closed coefficients the pencil identity and stability, determinant condition, and divisor conditions persist under finite specialization of the coefficient data. The assumed vanishing tail among multiples of \(M\) is equivalent to finitely many moment equations in this degree. Hence a violation would specialize to real algebraic coefficients. Finally a polynomial transform of degree \(a>0\) replaces \(k\) by \(ak\) without changing the other conditions. \(\square\)
+
+For example the pencil spanned by \(u_0(s_0+i s_1)\) and \(u_1(s_0-i s_1)\) is stable and has two distinct rank-one forms. Take \(F=Z_0^{2j}+Z_1^{2j}+(Z_0Z_1)^j\) in these coordinates. It is real for the induced antipodal structure and has simple roots. The resulting \(W\) couples the two binary vectors, is singular at the base points of the pencil, and meets neither the separated leading-symbol hypothesis nor the smooth biform hypothesis above.
+
+## The maximal-torus component and a non-toral boundary in two factors
+
+**Corollary (A maximal torus as identity component suffices at level two).**
+
+Let \(K\) be real closed and let the active group be the product of two compact simply connected rank-one factors. If the geometric stabilizer has identity component a maximal torus of the product, every level-two twisted space has a regular Mathieu–Zhao counterexample.
+
+Indeed take a pointed compact reference with \(H^\circ=T_1\times T_2\). The stabilizer is the preimage of a subgroup of the two-coordinate Weyl group. The normalizer of \(H\) is the product of the two torus normalizers, since the Weyl group is abelian and the identity component of \(H\) is characteristic. Choose the twist representative \(a\) to be the identity or a compact Weyl representative in each coordinate. Its square has coordinate \(-1\) exactly where \(a\) acts by the Weyl reflection. A character of \(H\) restricts to exponents \((m_1,m_2)\) on the torus. Whenever the stabilizer uses a Weyl reflection at index \(i\), conjugation within \(H\) forces \(m_i=0\). If \(\chi(a^2)=-1\), some index \(i\) has \(m_i\) odd and the twist uses the Weyl reflection there. The stabilizer then projects into \(T_i\), and the corresponding rank-one quotient is the Weyl twist of \(C_i/T_i\). Equivalently the character \(z\mapsto z\) from this coordinate is invariant for the twisted descent, is trivial on the opposite factor's intersection with \(H\), and has Hamilton obstruction. Thus the opposite factor splits over its invariant field. \(\square\)
+
+**Example (A disconnected one-dimensional stabilizer beyond all three subgroup tests).**
+
+Let the two factors be the same compact group \(C=\mathrm{SL}_1((-1,-1)_K)\), let \(T\) be its standard norm-one circle, and let \(i\in T(K)\) and \(j\in N_C(T)(K)\) satisfy \(i^2=j^2=-1\) and \(ji=-ij\). Take the pointed geometric stabilizer generated by
+\[
+                    H^\circ=\{(z,z^2):z\in T\},\qquad b=(j,j).
+\]
+Then \(H/H^\circ\) is cyclic of order four and \(b^2=(-1,-1)\notin H^\circ\). The element \(a=(1,i)\) normalizes \(H\) and \(a^2=(1,-1)\) has the same class as \(b^2\) in this cyclic quotient. Conjugation by \(a\) inverts the cyclic quotient. The character trivial on \(H^\circ\) and sending \(b\) to \(i=\sqrt{-1}\) is therefore invariant for the twisted descent \(gH\mapsto\overline g\,aH\), with \(\chi(a^2)=-1\). This form is point-free and has level two.
+
+Every character of \(H\) is trivial on \(H^\circ\), since \(b\) inverts that torus. Both Hamilton-obstruction characters send \(b^2\) to \(-1\). The first and second normal stabilizers contain \((i,1)\) and \((1,-1)\), respectively, both in the class of \(b^2\). The generic diagonal stabilizer contains the diagonal involution \(b^2\), and is central by the one-dimensional incidence calculation. Thus the Hamilton class survives all three invariant fields. The commuting-action theorem below nevertheless gives a regular witness on this space. Over a real closed field the rank-one factors of any connected reductive subgroup of \(C\times C\) are normal factors or diagonals up to conjugacy, so the generic split-rank method cannot decide this individual trace. This is a level-two example with a positive-dimensional non-toral stabilizer.
+
+## Odd stabilizers and all higher-rank compact cases at level two
+
+**Theorem (An odd principal rank-one stabilizer preserves the two-primary Brauer kernel).**
+
+Let \(K\) have characteristic zero and let \(X\) be an affine geometrically homogeneous space of a connected reductive group. Let \(S\) be a \(K\)-subgroup of the acting group geometrically isomorphic to \(\mathrm{SL}_2\), whose central involution acts nontrivially on \(X\). Then the two-primary parts of the constant Brauer kernels over \(K(X)\) and over \(K(X)^S\) agree.
+
+In particular, if \(S=\mathrm{SL}_1(D)\) for a division quaternion algebra \(D\) that splits over \(K(X)\), then \(X\) has a regular Mathieu–Zhao counterexample. Over a real closed field every level-two compact homogeneous form with an active compact simple factor of absolute rank at least two satisfies this criterion, for arbitrary geometric stabilizer.
+
+**Proof.** A general geometric \(S\)-stabilizer misses the central involution, since its fixed locus is a proper closed subset. The stabilizer on the geometric generic invariant fibre is reductive, as that fibre is affine and geometrically homogeneous. A positive-dimensional reductive subgroup of \(\mathrm{SL}_2\) contains its involution, as does any finite subgroup of even order. Therefore the geometric generic stabilizer is finite of odd order \(N\).
+
+Let a two-primary class \([A]\in\operatorname{Br}(K)\) split over \(K(X)\). Choose a rational map \(X\dashrightarrow\mathrm{SB}(A)\). Its domain contains every codimension-one point by properness. The geometric hyperplane line bundle, or its dual for the opposite convention, pulls back and extends uniquely to a line bundle \(L\) on \(X_{\overline K}\). The Galois isomorphisms on this bundle compose with the scalar cocycle for \([A]\), since that is true for the hyperplane bundle and the extensions are unique.
+
+Every geometric line bundle on \(X\) admits a unique \(S_{\overline K}\)-linearization up to isomorphism. To see this directly, the projection induces an isomorphism \(\operatorname{Pic}(X_{\overline K})\to\operatorname{Pic}(\mathrm{SL}_2\times X_{\overline K})\). On the open where the upper-left matrix entry is nonzero this is homotopy invariance for \(\mathbb G_m\times\mathbb A^2\times X_{\overline K}\). The omitted divisor is irreducible and principal, so divisor class localization gives the same result on the product. Thus the pullbacks by the action and the projection are isomorphic, and their isomorphism can be normalized to the identity at the group identity. Any unit on \(S_{\overline K}\times S_{\overline K}\times X_{\overline K}\) is independent of the group coordinates, by restriction to the group fibres, which have only constant units. The normalized isomorphism therefore satisfies the composition law. The same observation on one group factor gives uniqueness and ensures that the Galois comparison isomorphisms commute with the linearization.
+
+The bundle \(L^{\otimes N}\) has trivial geometric generic stabilizer character, so has a one-dimensional space of \(S\)-invariant sections over \(\overline K(X)^S\), as in the principal-stabilizer character proof. On this line its Galois comparison makes \(N[A]\) a coboundary over the invariant field. Since \(N\) is odd and the class is two-primary, the class itself vanishes there. The reverse inclusion of the kernels follows by extending scalars to \(K(X)\).
+
+When \([D]\) is the class in question, \(S\) is split on the generic invariant fibre and acts nontrivially there. This gives the regular witness by the generic split rank-one theorem. Over a real closed field use a compact long-root subgroup in the active higher-rank factor, working in the simply connected cover if needed. Its central involution is noncentral in the factor, so activity makes it act nontrivially, by the long-root argument above. The Hamilton algebra is its quaternion algebra and is split by the level-two hypothesis. \(\square\)
+
+## Finite polyhedral projections in two compact rank-one factors
+
+**Theorem (A finite polyhedral projection suffices at level two).**
+
+Let \(K\) be real closed, let \(C=\mathrm{SL}_1((-1,-1)_K)\), and let \(X\) be an affine geometrically homogeneous \(C\times C\)-space with finite geometric stabilizer \(H\). If the projection of \(H\) to either factor is binary tetrahedral, octahedral, or icosahedral, then every such \(X\) of level two has a regular Mathieu–Zhao counterexample. In fact a normal factor splits over its invariant field.
+
+**Proof.** Use a pointed compact reference, and write \(P_i\) for the projections of \(H\) and \(H_i=H\cap C_i\) for its intersections with the normal factors. Work with the first projection polyhedral. Goursat's lemma describes \(H\) as the inverse image of the graph of an isomorphism \(P_1/H_1\to P_2/H_2\). At level two choose a stabilizer character \(\chi\) with Hamilton obstruction, using the principal-stabilizer character formula. For a normal factor the generic stabilizer is \(H_i\). Killing its character by an odd power preserves the obstruction.
+
+The normal subgroups of \(2T,2O,2I\) are obtained from those of \(A_4,S_4,A_5\) by taking their inverse images, together with the trivial subgroup. Indeed an even-order subgroup contains the unique involution, and none of the three rotation groups has a nontrivial normal odd-order subgroup. Thus \(H_1\), apart from the center or the whole projection, is trivial, \(Q_8\), or \(2T\). The trivial case is immediate and the \(2T\) case is killed by the third power, since \(2T\) abelianizes to \(C_3\). When \(H_1=Q_8\), its three nontrivial one-dimensional characters are permuted transitively by conjugation by \(P_1\). Since \(H\) projects onto \(P_1\), the restriction of \(\chi\) to \(H_1\) is invariant under this conjugation and hence trivial. If \(H_1=P_1\), Goursat's lemma gives \(H=P_1\times P_2\). The \(2T\) case again uses the third power. In the \(2O\) and \(2I\) cases the first normalizer quotient is trivial and the form is the product of a pointed first factor and the twisted second factor. Over the function field of the second factor the generic fibre of the first action has a rational point, so extension to its function field is injective on Brauer groups. This makes the first factor split over its invariant field.
+
+It remains that \(H_1\) is the central group of order two. The common quotient is \(A_4,S_4\), or \(A_5\). The finite subgroup list shows respectively that the second projection must also be \(2T,2O\), or \(2I\), with \(H_2\) its center. Cyclic and binary dihedral groups have a cyclic subgroup of index at most two, which none of these common quotients has. The normal-subgroup lists distinguish the three binary polyhedral groups. For \(2O\) and \(2I\) both projection normalizers equal the projections themselves. The graph of an isomorphism in the product of the two centerless projective groups is self-normalizing there. Consequently \(H\) is self-normalizing and the form is pointed, contrary to level two.
+
+For \(2T\), the compact octahedral normalizer realizes all automorphisms of the projective \(A_4\), by its faithful action on the four Sylow three subgroups. After conjugation in the second factor one can therefore assume
+\[
+                 H=\{(g,\epsilon g):g\in 2T,\ \epsilon=\pm1\}.
+\]
+The normalizer is \(\{(g,\epsilon g):g\in2O,\ \epsilon=\pm1\}\), since the two projective coordinates must induce the same automorphism of \(A_4\) and its centralizer in \(S_4\) is trivial. A nontrivial twist can be represented by \((a,a)\) with \(a\in2O\setminus2T\). Its square belongs to \(\operatorname{diag}(2T)\). Every character of \(H\) has values of order dividing three on this subgroup, so no invariant character evaluates to \(-1\) on the square. Thus the Hamilton algebra cannot split over \(K(X)\) in this last case. The cases in which it does split have a normal-factor witness by the generic split rank-one theorem. \(\square\)
+
+## Exceptional leading symbols from a pencil of higher binary degree
+
+**Theorem (A binomial scalar reduction detects nonaligned low-width phases).**
+
+Let \(X\) be either pointed compact exceptional quotient over a real closed field. Fix \(j=4\) or \(6\), an integer \(d\mid 2j\) with \(1\le d\le j\), and a right invariant binary form \(G\) of degree \(2j\) whose zero divisor is supported on the three exceptional rotation orbits. Let \(L_0,L_1\) be independent scalar binary linear forms, let \(H_0,H_1\) be nonzero left binary forms of degree \(2j/d\), and set
+\[
+ W=L_0^{a_0}L_1^{a_1}(H_0L_0+H_1L_1)^d,
+ \qquad a_0+a_1=2j-d,\qquad 0\le a_i\le j .
+\]
+Put \(F=H_0^{j-a_0}H_1^{j-a_1}\), and assume its divisor is stable under compact antipodal conjugation of the left projective line. This holds, in particular, for left forms real for the compact structure. If a real regular Laurent phase \(P\) of greatest half-matrix degree \(jk\), \(k>0\), has leading symbol
+\[
+             G(v)^k\bigl(t^{-j}W(u;1,t)\bigr)^k
+\]
+up to a nonzero scalar, it and every nonconstant polynomial in \(P\) have nonzero pure moments infinitely often in every prescribed divisible sequence.
+
+**Proof.** At a good degree-one prime \(p\) with \(p\equiv1\bmod jk\), put \(r=(p-1)/j\) and \(m=(p-1)/(jk)\). As in the bilinear-pencil test, the leading moment residue is the product of the right central coefficient of \(G^r\) and the four-variable central coefficient of \(W^r\), up to a unit. In the latter coefficient use \(L_0,L_1\) as the scalar coordinates. This changes vanishing by no more than an invertible factor, since the target bidegree is the top line of the quotient by the \(p\)-th powers of the four coordinates. The expansion in these scalar coordinates has a unique contributing term, and yields
+\[
+ [u_0^{p-1}u_1^{p-1}L_0^{p-1}L_1^{p-1}]W^r
+   =
+ \binom{dr}{(j-a_1)r}
+ [u_0^{p-1}u_1^{p-1}]F^r .
+\]
+Here \(0\le(j-a_1)r\le dr\le p-1\), so the binomial is a unit. The right coefficient is a unit by three-branch cyclic descent. The binary \(F\)-coefficient is a unit at infinitely many simultaneous good primes: the antipodal divisor either consists of a pair of roots of multiplicity \(j\), or all its multiplicities are smaller than \(j\) and the character-one ordinary-reduction argument for the cyclic \(j\)-cover applies. Taking the coefficient field to contain the appropriate additional roots of unity forces any prescribed divisor of \(m\) at these primes. Polynomial transforms preserve the factorization of the leading symbol with a larger \(k\). Finally the proof for real closed coefficients follows by the same finite algebraic specialization of a proposed vanishing tail as for the bilinear pencil. \(\square\)
+
+For the octahedral half degree \(4\) take \(d=2,\ a_0=a_1=3,\ L_0=s_0,\ L_1=s_1\). The top scalar profile is \(t^{-1}(H_0+tH_1)^2\), a trinomial with potentially different left binary forms at its two ends. For half degree \(6\) on either exceptional quotient, \(d=3,\ a_0=4,\ a_1=5\) gives \(t^{-1}(H_0+tH_1)^3\), with four consecutive scalar exponents. In both cases \(H_0,H_1\) may be independent compact-real quartic binary forms. The divisor of \(W\) can contain an irreducible component of bidegree \((4,1)\), so these families go beyond biforms obtained from a bilinear pencil or from a smooth curve of bidegree \((2,2)\) or \((4,4)\).
+
+## Two compact rank-one factors with a one-dimensional stabilizer component
+
+**Theorem (The one-dimensional component reduces the level-two subgroup test to one residue class).**
+
+Let \(X\) be an affine geometrically homogeneous space for two compact simply connected rank-one factors over a real closed field. Suppose the identity component of its geometric stabilizer has dimension one.
+
+If that component is supported in one factor, then every level-two form has a regular counterexample from a split normal factor. Otherwise write it, on a pointed reference, as
+\[
+                 H^\circ=\{(z^a,z^b):z\in T\},\qquad
+                 ab\ne0,\quad\gcd(a,b)=1,
+\]
+in the two standard compact tori. Put \(R=(T\times T)/H^\circ\) and let \(m\) be the order of the toral part of \(H/H^\circ\) in \(R\). The following are the possibilities at level two.
+
+- If \(H\) is toral and the twist is Weyl, either normal-factor invariant field splits the Hamilton algebra.
+- If \(H\) is toral and the twist is nontrivial toral, level two occurs precisely for even \(m\). The diagonal gives a regular counterexample unless \(m\equiv2\bmod4\) and \(a,b\) have different parities.
+- If \(H\) is non-toral, level two occurs precisely for its nontrivial twist when \(m\equiv2\bmod4\) and \(a,b\) have different parities.
+
+In the indicated residue class for a toral twist and in the non-toral level-two case, no connected reductive subgroup splits in semisimple rank over its generic invariant field. This criterion determines the reach of the split subgroup test on the original action. The commuting-action theorem below settles the traces throughout these residual cases.
+
+**Proof.** If \(H^\circ=T\times1\), the other component data are a finite subgroup of the product of the first Weyl group \(C_2\) with the second compact factor. If that subgroup is not a graph of a surjective sign on its second projection, \(H\) is a product of \(T\) or \(N_C(T)\) with the finite second projection. For the product, the equivariant twists also separate. The first factor is pointed or is the negative ternary sphere. If it is pointed, adjoining its function field to that of the second factor is injective on Brauer groups by the smooth point. If it is negative, its own function field already splits the Hamilton algebra. In either case one of the normal-factor invariant fields splits. If the component subgroup is a graph of a surjective sign, \(H\cap C_1=T\), and conjugation by a Weyl element in \(H\) inverts this torus. Every stabilizer character is trivial on it. The first normal factor now splits by the character criterion.
+
+If both projections of \(H^\circ\) are nontrivial, \(N(H^\circ)/H^\circ\) has identity component \(R\) and a second component represented by the simultaneous Weyl lift \(j=(j_1,j_2)\). This follows because independent inversion in just one coordinate does not preserve the connected subtorus with both exponents nonzero. Write \(\delta=j^2\) in \(R\). Under its primitive character \((b,-a)\) this is \((-1)^{b-a}\), and \(j\) inverts \(R\).
+
+If \(H\) is toral, a Weyl twist descends to the Weyl twist on each projection to \(C_i/T_i\). These negative ternary spheres have level two. A nontrivial toral twist has character lattice \(m(b,-a)\mathbb Z\) and sign one on its generator. The toral Brauer formula then gives level two precisely when \(m\) is even. Neither axis has a nonzero character, and the diagonal detects the Hamilton class precisely when \(mb\equiv-ma\bmod4\). This gives the asserted residue class.
+
+For non-toral \(H\), write \(A=\mu_m\subset R\). The other component of \(H/H^\circ\) is \(A b_0\), where \(b_0\) is a Weyl lift with \(b_0^2=\delta\in A\). A commuting twist representative can be taken in \(R\), by multiplying it by a Weyl element in \(H\). The normalizer there consists of the elements whose squares lie in \(A\), so the sole nontrivial twist is represented by \(\alpha\in R(K)\) whose square generates \(A\). Characters of \(H\) kill \(H^\circ\), by conjugation by \(b_0\). They send \(A\) to signs, again by inversion. Hamilton obstruction means \(\chi(\alpha^2)=-1\), forcing \(m\) even and fixing the character on \(A\). Invariance under twisted conjugation on \(b_0\) then reads \(-\chi(b_0)=\overline{\chi(b_0)}\). Since \(\chi(b_0)^2=\chi(\delta)\), the condition holds precisely when \(\chi(\delta)=-1\). This is exactly \(\delta=-1\) with \(m/2\) odd. Conversely in that case assigning \(\chi(b_0)=i\) or \(-i\) defines the required invariant character.
+
+For these non-toral twists each normal-factor intersection maps onto \(A\): the restrictions of \((b,-a)\) to the two coordinate tori are nonzero power maps. So every Hamilton-obstruction character is nontrivial on both normal stabilizers. The generic diagonal stabilizer is central by the dimension-one calculation for a paired Weyl coset, and contains the diagonal involution, whose image in \(R\) is \(\delta\). Thus its character is nontrivial as well. The exact principal-stabilizer formula shows that none of the three fields splits the Hamilton algebra. Every connected semisimple rank-one subgroup of the product is a normal factor or a diagonal up to conjugation, which proves the assertion for the whole generic split-rank method. \(\square\)
+
+## Finite odd-dihedral projections in two compact factors
+
+**Theorem (Odd-dihedral projections with odd-dihedral or cyclic partners).**
+
+Let \(K\) be real closed and let \(X\) be a geometrically homogeneous affine space for two compact simply connected rank-one factors with finite geometric stabilizer \(H\). Write \(P_i\) for the projections of \(H\), and take \(P_1=\operatorname{Dic}_{m_1}\) with \(m_1\ge3\) odd, using the presentation
+\[
+ r_1^{2m_1}=1,\qquad j_1^2=r_1^{m_1}=-1,\qquad j_1 r_1 j_1^{-1}=r_1^{-1}.
+\]
+If \(P_2=\operatorname{Dic}_{m_2}\) with \(m_2\ge3\) odd, every level-two form has a regular Mathieu–Zhao counterexample.
+
+If \(P_2=\mu_n\) is cyclic, the same holds except possibly in this exact family for the generic split-rank method: the common Goursat quotient is \(C_2\), \(n\equiv0\bmod8\), and the nontrivial twist comes from the nonidentity class in \((P_1\times P_2)/H\). That family does have level two, with both normal projections pointed and the Hamilton class surviving the diagonal invariant field. No connected reductive subgroup of the two factors gives a generic split-rank action there.
+
+**Proof.** Use a pointed compact reference and choose a normalizer lift \(a=(a_1,a_2)\) of the commuting involution. The normal-factor quotients are the respective twisted rank-one spaces with stabilizers \(P_i\). If either has level two, the opposite normal factor splits over its invariant field and yields the regular pair. In particular any nontrivial projected twist on \(\operatorname{Dic}_{m_i}\) with \(m_i\) odd gives this conclusion by the rank-one level computation. For a nontrivial projected twist on an even cyclic \(P_i\), the toral and Weyl cases both have level two. This includes \(P_i=\mu_2\), where the Hamilton obstruction on the central order-two character is nontrivial. A product of a pointed factor with any rank-one twist has a Hamilton splitting exactly when the twisted factor does, by Brauer injectivity at a smooth point of the pointed factor.
+
+Write \(H_i=H\cap C_i\) for the kernels of the other projection. By Goursat's lemma \(H\) is the fibre product for an identification \(P_1/H_1\simeq P_2/H_2=Q\). Every proper normal subgroup of an odd-parameter dicyclic group lies in the rotation subgroup: if it contains a Weyl element, it contains \(r_i^2\) by normality and \(r_i^{m_i}\) by taking the square, hence all rotations. Therefore the nontrivial quotients of \(P_1\) are dicyclic with odd parameter, including \(C_4\), and ordinary dihedral of odd parameter, including \(C_2\). Its abelianization is \(C_4\).
+
+Suppose both projections are odd-parameter dicyclic. After excluding projected level-two twists, we have \(a\in P_1\times P_2\). Multiplying by \(H\) makes its first coordinate one, and the second defines a central element of \(Q\) of order dividing two. If \(Q\) is nontrivial dicyclic, its central involution lifts to the central \(-1\) in \(P_2\). This representative has square one and cannot give Hamilton obstruction. The ordinary odd dihedral quotients of order greater than two have trivial center. We are left with \(Q=C_2\), in which \(H\) consists of the pairs with equal Weyl parity and a nontrivial twist has lift \(a=(1,j_2)\). Let \(\chi\) be a character with Hamilton obstruction. The twist fixes the element \(b=(j_1,j_2)\) under conjugation, so \(\chi(b)\) is real by twisted Galois invariance. Hence \(\chi((-1,-1))=\chi(b^2)=1\). This makes the diagonal split over its invariant field and gives the regular witness.
+
+Now suppose \(P_2=\mu_n\). If \(n\) is odd, the common quotient is trivial by the abelianization of \(P_1\), so the problem is a product of rank-one spaces. Once the projection \(P_1\) is pointed, the other quotient detects any Hamilton splitting on the product. For \(n\) even the projected twists can be assumed pointed by the preceding reduction. The common quotient then has order one, two, or four. The product case is immediate, and in the order-four case \(H_1=\langle r_1^2\rangle\) has odd order. Raising a Hamilton-obstruction character to that odd order makes it trivial on \(H_1\), giving the first normal-factor witness.
+
+For \(Q=C_2\), let \(z\) generate \(\mu_n\). The common sign is Weyl parity on \(P_1\) and exponent parity on \(\mu_n\). The nontrivial remaining twist is represented by \(a=(1,z)\), which centralizes \(H\), so invariant stabilizer characters are real signs. Hamilton obstruction means \(\chi(1,z^2)=-1\), which forces \(4\mid n\). The element \(b=(j_1,z)\) belongs to \(H\), so \(1=\chi(b^2)=\chi(-1,z^2)\) and \(\chi(-1,1)=-1\). The value on the diagonal involution is therefore \(-(-1)^{n/4}\). If \(n\equiv4\bmod8\), the diagonal gives a regular witness. If \(n\equiv0\bmod8\), every such character is nontrivial there, whereas the two normal quotient spaces are pointed. These twists have level two: choose the nontrivial sign on each of the cyclic groups \(\langle r_1\rangle\) and \(\langle z^2\rangle\), and extend over \(b\) by either sign. The conjugation and square relations permit the extension since \(m_1\) is odd and \(n/2\) is even. Its value on \(a^2\) is \(-1\). The exact three-subgroup criterion excludes split rank in the original action in this family. The commuting-action theorem below gives regular witnesses on the generic diagonal fibres. \(\square\)
+
+## Moving one axis through the split scalar
+
+**Theorem (A real regular moving-axis phase with eventual purity is safe).**
+
+Let \(K\) be real closed, let \(\Gamma\subset\mathrm{SO}_3(K)\) be a finite rotation group, and use the compact Haar trace followed by scalar Laurent constant term on \((\mathrm{SO}_3/\Gamma)\times\mathbb G_m\). Let \(\Phi\) be a nonzero real \(\Gamma\)-invariant homogeneous ternary polynomial of degree \(d>0\). Allow any moving vector \(v(t)\in K(i)(t)^3\) and any scalar rescaling \(b(t)\in K(i)(t)\). Suppose
+\[
+                         P(g,t)=b(t)\Phi(g^{-1}v(t))
+\]
+is real and regular on the full compact product. If its pure moments vanish eventually, it is zero or its Laurent support lies strictly on one side of zero. In either case every fixed regular multiplier has eventually vanishing marked moments. In particular this route cannot turn a complex null-axis phase into a regular witness on either exceptional product, even with a rational moving axis and complex intermediate expressions.
+
+**Proof.** Let \(\lambda\) denote Haar trace on the compact group alone, and write \(q\) for the sum of three squares. For \(m\ge1\), the spherical identity
+\[
+       \lambda\bigl(\Phi(g^{-1}v)^{2m}\bigr)=c_m q(v)^{dm},
+       \qquad c_m=\int_{S^2}\Phi^{2m}>0,
+\]
+holds as an identity of polynomials in the vector \(v\). For real \(v\) this follows from spherical transitivity at each radius, and the real vectors are Zariski dense. It therefore holds also over the complex rational function field. The spherical moments and strict positivity extend to real closed fields by their polynomial formulas and real-closed transfer.
+
+Set \(R(t)=\lambda(P^2)/c_1\). By regularity and reality, \(R\) belongs to \(K[t,t^{-1}]\), even if the displayed moving vector and rescaling separately have poles. The identity gives \(R=b^2q(v)^d\) and \(\lambda(P^{2m})=c_mR^m\). If \(P\ne0\), let its extreme scalar exponents be \(e_-\) and \(e_+\). The coefficients of \(t^{2e_-}\) and \(t^{2e_+}\) in \(\lambda(P^2)\) are the traces of the squares of the corresponding real nonzero coefficients of \(P\). Both are positive, so \(R\ne0\) and its extreme exponents are \(2e_-\) and \(2e_+\). Eventual purity forces \(\operatorname{CT}_tR^m=0\) eventually. Applying the [Laurent power theorem of Duistermaat and van der Kallen](https://webspace.science.uu.nl/~kalle101/powers.pdf) to a sufficiently high power of \(R\) makes its scalar support one-sided with strict sign. The same is then true of \(P\), by the extreme exponents just computed. Against any fixed Laurent multiplier the support of a high enough power of \(P\) misses exponent zero. \(\square\)
+
+
+**Corollary (Moving a fixed group orbit or spinor phase gives the same obstruction).**
+
+In the same compact product, let \(U\) be any fixed complex regular function on the compact quotient. Suppose \(P(g,t)=b(t)U(a(t)g)\) is real regular, with \(a(t)\) a rational point of the complexified left group and \(b(t)\) rational. If \(P\ne0\), its moments cannot vanish eventually unless the scalar exponents of \(P\) have one strict sign.
+
+The same conclusion holds on \((\mathrm{SU}_2/\Gamma)\times\mathbb G_m\) for the real part of \(b(t)F(\ell(t)g)\), with a moving complex rational row \(\ell(t)\in K(i)(t)^2\) and a fixed homogeneous binary invariant \(F\) of positive degree \(d\), whenever this real part is regular. These conclusions apply to the normalized full compact trace.
+
+For the first assertion compact invariance holds under the complexified left group by Zariski density, so the conditional even moments are \(b(t)^{2m}\lambda(U^{2m})\). If \(P\ne0\), all \(\lambda(U^{2m})\) are nonzero, since otherwise the corresponding real even power of \(P\) would have zero compact average at a generic real value of \(t\). The conditional second moment determines \(b(t)^2\) up to a nonzero scalar, and the even moments factor as nonzero scalar multiples of its powers. The preceding argument applies.
+
+For the spinor assertion take real \(t\) where the given expressions are defined. The compact left group is transitive on unit rows. On the first row \(F\) has a circular value distribution, since left rotation of that row by a unit scalar rotates \(F\) by its positive weight \(d\). Thus
+\[
+ \lambda\bigl((\operatorname{Re}[bF(\ell g)])^{2m}\bigr)
+       =c_m\bigl(b\overline b\,(\ell\overline\ell^{\,\mathsf T})^d\bigr)^m,
+ \quad c_m=\lambda\bigl((\operatorname{Re}F(\mathrm{row}_1(g)))^{2m}\bigr)>0.
+\]
+The identity on real \(t\) gives the rational function identity. Again the real Laurent conditional second moment forces the same one-sided conclusion. \(\square\)
+
+
+## Odd common quotients and the two-dihedral Klein-four boundary
+
+**Proposition (An odd common quotient preserves a normal-factor test).**
+
+Let \(X\) be a level-two homogeneous form for two compact simply connected rank-one factors over a real closed field, with finite geometric stabilizer \(H\). Let \(P_1,P_2\) be its projections and \(Q\) its common Goursat quotient. If \(|Q|\) is odd, a normal factor gives a regular Mathieu–Zhao counterexample.
+
+In fact the projection from \(X\) to the product of the two projected rank-one twists is finite of degree \([P_1\times P_2:H]=|Q|\). The Hamilton algebra splits over its source and therefore splits over the function field of the target, by restriction and corestriction. For two compact rank-one forms the product field splits the Hamilton algebra only when one factor field does, by the rank-one level and product-level computation above. This also applies if a factor is pointed, by specialization at its smooth point, or if a factor is a Weyl twist with its already split Hamilton algebra. Thus a projected rank-one twist detects the class, which is the invariant field test for the opposite normal factor. \(\square\)
+
+**Theorem (The Klein-four coupling has an exact level-two boundary).**
+
+Suppose the two finite projections are \(P_i=\operatorname{Dic}_{m_i}\) with both \(m_i\) even and at least two, and the common Goursat quotient is \(V_4\). Use the rotation generators \(r_i\) and Weyl generators \(j_i\) of the presentations above. If a level-two twist exists, \(m_1,m_2\) differ modulo four. In every level-two twist in this family the Hamilton algebra survives both normal-factor invariant fields and the diagonal invariant field. The following table specifies the twists of level two; a listed lift represents an involution coset in the normalizer quotient.
+
+| Identification of the two abelianizations | Twist lift | Condition for level two |
+|---|---|---|
+| Rotation classes match | \((1,r_2)\) | \(m_1,m_2\) differ modulo four |
+| Rotation classes match | \((1,j_2)\) or \((1,r_2j_2)\) | None |
+| Rotation classes match | \((n_1,n_2)\), \(n_i^2=r_i\) in the compact tori | \(m_1,m_2\) differ modulo four |
+| Rotation classes do not match | \((1,r_2)\) | \(m_1\equiv2,\ m_2\equiv0\bmod4\) |
+| Rotation classes do not match | \((1,j_2)\) | \(m_1\equiv0,\ m_2\equiv2\bmod4\) |
+| Rotation classes do not match | \((1,r_2j_2)\) | None |
+
+If a projection is \(Q_8\), use its octahedral normalizer to choose matching rotation classes. The table concerns split rank in the original group. The commuting-action theorem below settles the traces throughout these level-two boundary cases.
+
+**Proof.** In each projection the kernel of the map to \(V_4\) is \(\langle r_i^2\rangle\). For \(m_i\ge4\), the rotation subgroup of \(P_i\) is characteristic, and its normalizer in the compact group consists of \(\operatorname{Dic}_{2m_i}\). Indeed a normalizing toral element must have square in the rotations in order to carry the Weyl coset to itself, and multiplying by a Weyl element accounts for the other component. On the abelianization the elements of \(P_i\) act trivially. A lift \(n_i\) outside it interchanges the two Weyl classes and fixes the rotation class. For \(Q_8\) the normalizer induces all permutations of the three nontrivial classes. Its quotient by \(Q_8\) is \(S_3\), and an involution modulo \(H\) can induce only the identity or a transposition there.
+
+A normalizer lift must induce the same automorphism on the common \(V_4\) in the two coordinates. If that action is trivial, both coordinates lie in \(P_i\); multiplying by \(H\) leaves the mismatch represented by one of the three nonidentity classes of \(P_2\). If the action is a transposition, its fixed class must match in the two coordinates. Choose it as the rotation in any \(Q_8\) factor. For matching rotations the paired lift \(n=(n_1,n_2)\) has square in \(H\) and acts by the common transposition on \((P_1\times P_2)/H\). An involution in the coset of \(n\) can have only a mismatch fixed by this transposition. The two fixed mismatches differ by the image of the transposition minus the identity, hence give conjugate twists. For unmatched rotations in factors of order at least sixteen no transposition can induce the same action in the two projections. These are precisely the lifts in the table, aside from the identity twist.
+
+Put \(x=(r_1^2,1)\), \(y=(1,r_2^2)\). In the matching case take \(u=(r_1,r_2),v=(j_1,j_2)\). A character of \(H\) sends \(x,y,u\) to signs since \(v\) inverts their torus. Because \(u^2=xy\), the signs of \(x,y\) agree; write the common value \(s\). Thus
+\[
+                     \chi(v)^2=s^{(m_1+m_2)/2}.
+\]
+For the lift \((1,r_2)\), Hamilton obstruction forces \(s=-1\) by evaluation on its square \(y\). Its conjugation multiplies the character of \(v\) by \(s\), so twisted invariance requires \(\chi(v)^2=-1\). This is the mismatch condition on the parameters. Either Weyl lift in the second factor conjugates \(u\) by a factor \(y^{-1}\). Its square forces \(s=-1\) for Hamilton obstruction, incompatible with the reality of \(\chi(u)\). For the paired outside lift \(n\), Hamilton obstruction requires \(\chi(u)=-1\), since \(n^2=u\). The conjugated \(v\) differs by \(u^{-1}\) and again \(\chi(v)^2=-1\) is required. This forces \(s=-1\) and the same parameter mismatch. Conversely all these compatible assignments define a character, using the toral generators with \(u^2=xy\) and the Weyl square relation.
+
+For the unmatched case choose Weyl generators so the paired lifts are \(u=(r_1,j_2),v=(j_1,r_2)\). Conjugation within \(H\) again makes the values of \(x,y\) signs, and the commutator of \(u,v\) gives \(xy^{-1}\), so both have value \(s\). The square relations give
+\[
+               \chi(u)^2=s^{1+m_2/2},\qquad
+               \chi(v)^2=s^{1+m_1/2}.
+\]
+The lift \((1,r_2)\) forces \(s=-1\). Its conjugation negates the character of \(u\) and preserves that of \(v\); hence \(\chi(u)\) must be imaginary and \(\chi(v)\) real. The lift \((1,j_2)\) can have Hamilton obstruction only if \(s=-1\) and \(m_2/2\) is odd, and then it requires \(\chi(u)\) real and \(\chi(v)\) imaginary. The lift \((1,r_2j_2)\) has the same square as \((1,j_2)\) but requires \(\chi(u)\) imaginary, which is incompatible with \(m_2/2\) odd. These assignments are sufficient when compatible: \(x,y,u,v\) have the stated square relations, the mixed commutator \(xy^{-1}\), and normal forms \(x^i y^j u^\epsilon v^\eta\) for \(i\bmod m_1,\ j\bmod m_2,\ \epsilon,\eta\in\{0,1\}\).
+
+In every allowed case \(s=-1\) and \((m_1+m_2)/2\) is odd. Thus the Hamilton-obstruction character is nontrivial on both normal stabilizers and on the diagonal central element, with respective tests on \(x,y,(-1,-1)\). The exact principal-stabilizer formula proves the claimed failure of all three generic quotient fields. \(\square\)
+
+## Split commuting groups on generic adjoint quaternion torsors
+
+**Theorem (A central principal stabilizer suffices when the quaternion class splits on the total space).**
+
+Let \(K\) have characteristic zero, let \(X\) be affine and geometrically homogeneous for a connected reductive group, and let \(S=\mathrm{SL}_1(D)\) be a subgroup for a quaternion algebra \(D\) over \(K\). Suppose the geometric principal \(S\)-stabilizer is contained in the center of \(S\), and \(D\) splits over \(K(X)\). Then \(X\) has a regular Mathieu–Zhao counterexample. If \(D\) stays division over \(F=K(X)^S\), the generic fibre is an adjoint quaternion torsor whose commuting group splits over \(F\).
+
+**Proof.** The geometric generic fibre is an affine homogeneous space under \(S_F\) by the non-normal generic orbit theorem. Its function field is \(K(X)\). If \(D_F\) splits, its original rank-one action suffices. If the principal stabilizer is trivial, the odd-stabilizer theorem gives splitting of \(D_F\) as well. In the remaining case the generic fibre is a torsor under \(\mathrm{PGL}_1(D_F)\) for its original action. It can be written as
+\[
+                         T=\operatorname{Isom}(B,D_F)
+\]
+for a quaternion algebra \(B\) over \(F\), with original action by postcomposition and commuting action by \(\mathrm{PGL}_1(B)\) by precomposition. This is the usual torsor descent: trivialize the original torsor over the separable closure, and its right cocycle twists the split matrix algebra defining the commuting group.
+
+The constant Brauer kernel over \(F(T)\) is generated by \([D_F]-[B]\). Indeed after splitting \(B,D_F\) an isomorphism is conjugation by an invertible matrix up to scalar. The projective space of all matrices descends to \(\mathrm{SB}(D_F\otimes_F B^{\mathrm{op}})\): the two projective descent matrices act on a matrix by left multiplication and inverse right multiplication, respectively. Its invertible-matrix open is \(T\). The Severi–Brauer kernel theorem gives the asserted subgroup. One can also see the kernel from the descended hyperplane bundle, which generates the geometric Picard group of the projective space and has obstruction \([D_F]-[B]\). Compare [Gille and Szamuely, Chapter 5](https://www.cambridge.org/core/books/abs/central-simple-algebras-and-galois-cohomology/severibrauer-varieties/362A76027CCCF64169608ED036A6AC5C).
+
+Since \([D_F]\ne0\) but splits over \(F(T)\), and \([D_F]-[B]\) has order at most two, they are equal. Hence \([B]=0\). The commuting split group acts geometrically transitively. The conditional trace for the original group is invariant under the commuting action by uniqueness, so it is the normalized trace for the split action as well. The split rank-one obstruction on that fibre and the generic-fibre lifting theorem give a regular pair over \(K\). \(\square\)
+
+**Theorem (Two quaternion factors suffice when their class splits on the total space).**
+
+Let \(K\) have characteristic zero and \(X\) be affine and geometrically homogeneous under a connected reductive \(K\)-group. Suppose the simply connected derived cover has two active normal factors isomorphic to \(C=\mathrm{SL}_1(D)\) for the same quaternion algebra \(D\). If \(D\) splits over \(K(X)\), then \(X\) has a regular Mathieu–Zhao counterexample. Over a real closed field this settles every level-two compact homogeneous form with at least two active compact rank-one factors, for arbitrary geometric stabilizer. Together with the higher-rank theorem, level two remains to be decided only when there is a single active compact rank-one factor.
+
+**Proof.** Use the reductive cover and the geometric subgroup \(H_{12}=H\cap(C_1\times C_2)\) from the three-factor argument. Take \(S\) diagonal on the two factors. That argument gives the following generic stabilizers.
+
+- If \(H_{12}^\circ\) is a graph, a generic intersection with the diagonal lies in the connected graph. Its character on a linearized line bundle is trivial there, because the graph is semisimple. Thus the Brauer class \([D]\) disappears on the diagonal invariant field by the invariant-section argument of the three-factor proof.
+- If one projected component is finite, or if the two toral projections have no paired Weyl coset of full dimension, the generic diagonal stabilizer is central. The preceding theorem yields the witness, whether the splitting is for the original or the commuting action.
+- The remaining case has \(H_{12}^\circ=T_1\times T_2\) and a paired Weyl coset. The Brauer descent line bundle of the three-factor argument gives a character \(\chi\) of \(H\). Conjugation by the simultaneous Weyl element forces \(\chi\) to be trivial on both tori, and hence on the diagonal center. The pair argument then gives splitting of the original action on a diagonal or normal invariant fibre. Explicitly, if \(\chi\) is nontrivial on the paired Weyl coset it must be trivial on one of the two normal intersections, since two nontrivial single Weyl signs would multiply to the trivial paired sign.
+
+In the graph case the principal diagonal stabilizer is proper. In the central case the generic orbit is positive-dimensional. Normal factors used in the last case are active by assumption. The normalized trace in every case therefore admits the claimed regular witness. The graph and paired Weyl arguments use the descent line of a rational map to \(\mathrm{SB}(D)\), so they apply also to an ambient reductive group with nonconstant geometric units. The assertion over real closed fields follows because all compact simply connected rank-one factors have the same Hamilton quaternion algebra. If there are no active simple factors, the torus trace case is already settled separately. \(\square\)
+
+## Isotropy on rank-two isometry torsors
+
+Let \(F\) have characteristic zero. For a quaternion algebra \(D/F\) with canonical conjugation write \(\pi_D\) for its reduced norm. For a quadratic field \(E/F\) write \(\pi_E\) for its norm form. The scalar form of a diagonal Hermitian form \(\langle a_1,\ldots,a_n\rangle\) is \(\pi_D\otimes\langle a_1,\ldots,a_n\rangle\) or \(\pi_E\otimes\langle a_1,\ldots,a_n\rangle\), respectively. It takes the value \(h(v,v)\) on the underlying \(F\)-space, so its isotropy is equivalent to Hermitian isotropy.
+
+**Theorem (Quaternionic rank two).**
+
+Let \(h_0,h_1\) be nonsingular Hermitian forms of rank two over \(D\). Let \(T=\operatorname{Isom}(h_1,h_0)\). If \(h_0\) is isotropic over \(F(T)\), at least one of \(h_0,h_1\) is isotropic over \(F\).
+
+**Proof.** If \(D\) splits, both scalar forms are hyperbolic. Otherwise normalize the forms by a common scalar and diagonalize, writing \(h_0=\langle1,u\rangle_D\) and \(h_1=\langle a,b\rangle_D\). Let \(q_0=\pi_D\otimes\langle1,u\rangle\), a three-fold Pfister form. We may assume \(q_0\) is anisotropic over \(F\).
+
+First choose a vector \(v=(x,y)\) of \(h_0\)-norm \(a\), over the function field \(F_1\) of its norm quadric. Its projective equation has form \(q_0\perp\langle-a\rangle\) of dimension nine. If this form is isotropic then \(F_1/F\) is rational. Otherwise Hoffmann's separation theorem with \(8<9\) preserves anisotropy of every anisotropic eight-dimensional form over \(F\). In particular \(q_0\) remains anisotropic over \(F_1\). [Hoffmann, Isotropy of quadratic forms over the function field of a quadric](https://doi.org/10.1007/BF02572626)
+
+On \(N_D(x)\ne0\) the vector
+\[
+             w=(-\bar x^{-1}u\bar y,1)x
+\]
+spans the perpendicular \(D\)-line to \(v\) and has norm \(ua\). Indeed its inner product with \(v\) is zero and its norm is \(uN_D(x)+u^2N_D(y)\). The remaining column must be \(wz\) with \(N_D(z)=c=b/(ua)\). Consequently \(F(T)=F_1(\psi)\), where \(\psi=\pi_D\perp\langle-c\rangle\) is the five-dimensional projective form of the second norm equation. It is a subform of the three-fold Pfister form \(\eta=\pi_D\otimes\langle1,-c\rangle\).
+
+If \(q_0\) becomes isotropic over \(F(T)\), it becomes hyperbolic there. The form \(\psi\) must be anisotropic over \(F_1\), as a rational quadric field preserves anisotropy of \(q_0\). The Cassels–Pfister subform theorem puts a scalar multiple of \(\psi\) inside \(q_0\). Since \(\psi\) represents \(1\) and \(q_0\) is round, \(\psi\) itself embeds in \(q_0\). The Witt difference of \(q_0,\eta\) lies in \(I^3(F_1)\) and cancellation of \(\psi\) leaves a representative of dimension at most six. The Arason–Pfister Hauptsatz makes the difference zero. It follows that \(\pi_D\otimes\langle u,c\rangle\) is hyperbolic over \(F_1\). This form is similar to the scalar form \(\pi_D\otimes\langle a,b\rangle\), since \(c/u=b/(u^2a)\). The first norm quadric preserves anisotropy of every eight-dimensional form, so \(h_1\) is isotropic over \(F\). \(\square\)
+
+**Theorem (Unitary rank three).**
+
+Let \(h_0,h_1\) be nonsingular Hermitian forms of rank three over \(E/F\) with equal determinants in \(F^\times/N_{E/F}(E^\times)\). Choose volumes of the same norm on their determinant lines and let \(T=\operatorname{Isom}^{+}(h_1,h_0)\) be the volume-preserving isometry torsor. If \(h_0\) is isotropic over \(F(T)\), at least one of \(h_0,h_1\) is isotropic over \(F\).
+
+**Proof.** Scale both forms by a common scalar to make their determinants norms. This is possible because the determinant scales by a cube and the norm-class quotient has exponent two. Let \(q_i\) be their scalar forms and \(\Pi_i=q_i\perp\pi_E\). For \(h_1=\langle a,b,c\rangle_E\), the coefficient \(c/(ab)\) is a norm, so \(\Pi_1\simeq\pi_E\otimes\langle1,a,b,ab\rangle\) is a three-fold Pfister form. The same holds for \(\Pi_0\). Each \(q_i\) is a six-dimensional subform, so \(q_i\) is isotropic exactly when \(\Pi_i\) is hyperbolic.
+
+Assume \(\Pi_0\) is anisotropic over \(F\) and splits over \(F(T)\). The first column \(v\) of an isometry, of norm \(a\), gives the norm quadric field \(F_1=F(\psi_1)\) for \(\psi_1=q_0\perp\langle-a\rangle\). Over \(F_1\) let \(q_v\) be the scalar form of \(v^\perp\), so \(q_0\simeq a\pi_E\perp q_v\). The second column, of norm \(b\), gives \(F_2=F_1(\psi_2)\) for \(\psi_2=q_v\perp\langle-b\rangle\). The third column is uniquely prescribed in the perpendicular line by the volume condition, and its norm is \(c\) by the norm of the determinant of an orthogonal frame. Thus \(F_2=F(T)\).
+
+If \(\Pi_0\) splits over \(F_1\), then \(\psi_1\) is anisotropic over \(F\) and embeds up to similarity in \(\Pi_0\). Remove the similarity factor by taking a common nonzero value in \(q_0\) and using roundness. Cancellation of \(q_0\) shows that \(-a\) is represented by \(\pi_E\). The summand \(\pi_E\perp a\pi_E\) of \(\Pi_1\) is isotropic, so \(h_1\) is isotropic over \(F\).
+
+If \(\Pi_0\) stays anisotropic over \(F_1\), then \(\psi_2\) is anisotropic there and embeds up to similarity in \(\Pi_0\). A nonzero value in \(q_v\) removes the similarity factor as before. Cancelling \(q_v\) shows that \(-b\) is represented by \(\pi_E\perp a\pi_E\), so \(\Pi_1\) splits over \(F_1\). If \(\Pi_1\) were anisotropic over \(F\), the subform theorem applied to \(\psi_1\) would make \(q_0\) a subform of a scalar multiple of \(\Pi_1\). The Witt difference of that multiple and \(\Pi_0\) lies in \(I^3(F)\) and has a representative of dimension at most four after cancellation of \(q_0\). The Hauptsatz would make the forms isometric, contrary to the anisotropy of \(\Pi_0\) over \(F_1\). Thus \(h_1\) is isotropic over \(F\) in this case too. At either step an isotropic projective quadric has rational function field and cannot split an anisotropic form. \(\square\)
+
+The quadratic-form inputs in these two proofs are the Subform Theorem in §22, the Hauptsatz in §23 and the Separation Theorem in §26 of [Elman, Karpenko and Merkurjev, *The Algebraic and Geometric Theory of Quadratic Forms*](https://sites.ualberta.ca/~karpenko/publ/Kniga.pdf).
+
+## Regular witnesses from rank-two commuting actions
+
+**Theorem (Generic free action).**
+
+Let \(K\) have characteristic zero and let \(X\) be affine and geometrically homogeneous under a connected reductive \(K\)-group. Suppose it has a subgroup \(S=\operatorname{Sp}(h_0)\) of quaternionic rank two or \(S=\operatorname{SU}(h_0)\) of unitary rank three as in the isometry-torsor theorems. Suppose the geometric principal \(S\)-stabilizer is trivial and \(h_0\) is isotropic over \(K(X)\). Then the normalized trace on \(X\) has a regular Mathieu–Zhao counterexample.
+
+**Proof.** Put \(F=K(X)^S\). The generic invariant fibre is an \(S_F\)-torsor by geometric homogeneity and freeness. Twisting the Hermitian space by its torsor cocycle gives \(h_1\) over the same base algebra as \(h_0\). The special unitary cocycle descends the determinant volume as well, so the determinants agree in the norm-class quotient. The fibre identifies with the corresponding isometry torsor by descent, with \(S_F\) acting by postcomposition. If the quadratic algebra has split over \(F\) in the unitary case, \(S_F\) is already split. Over a field quadratic algebra, the two preceding theorems imply that either \(h_0\) or \(h_1\) is isotropic over \(F\). An isotropic vector extends to a hyperbolic Hermitian plane and hence positive split rank in the respective group. If it is \(h_1\), its group acts geometrically transitively by precomposition and commutes with \(S_F\). Uniqueness makes the conditional \(S\)-trace invariant under this second action, so it equals the second normalized trace. Apply the split rank-one obstruction to the group with positive split rank, followed by the generic invariant-fibre lifting theorem to obtain a regular pair on \(X\). \(\square\)
+
+The same argument works if the principal stabilizer is the full center, provided the two adjoint forms have underlying algebras of the same Brauer class over their center. Here the generic fibre is the adjoint isomorphism torsor of the associated algebras with involution, using the component of inner automorphisms in unitary type. With the class hypothesis one can write the commuting involution as adjoint to a Hermitian form \(h_1\) over the same quaternion or quadratic algebra. In the unitary case rescale \(h_1\) to match determinant classes and choose a determinant volume. The isometry torsor for that choice maps to the adjoint torsor by taking projective isometries. Over a separable closure this is the central quotient map, hence it is dominant and embeds the adjoint torsor function field in the isometry torsor field. The isotropy assumption survives this passage. The resulting positive-rank adjoint group acts on the adjoint torsor, so the trace and lifting argument applies there.
+
+**Corollary (Compact forms of level at most four with finite geometric stabilizer).**
+
+Let \(K\) be real closed, let \(G\) be connected reductive of compact type, and let \(X\) be an affine geometrically homogeneous \(G\)-space with finite geometric stabilizer. Suppose \(K(X)\) has level at most four. If an active simple factor has absolute rank at least three or type \(G_2\), then \(X\) has a regular Mathieu–Zhao counterexample. In types \(A_2\) and \(C_2\) the same conclusion holds when the simply connected factor acts with trivial geometric principal stabilizer, or in the full-center case under the Brauer-class hypothesis just stated.
+
+**Proof.** Pass to the reductive cover with simply connected derived group. In a compact simple factor of type \(C_\ell\), \(\ell\ge3\), the quaternionic block of rank two gives a compact \(\operatorname{Sp}(2)\) with center intersecting the ambient center trivially. In a simply laced factor of rank at least three, two adjacent simple roots give a compact simply connected \(A_2\). Its center has order three, and some outside simple root is adjacent to just one of the chosen roots. Its Cartan pairing with the two coroots shows that neither nonidentity element of the \(A_2\) center is central in the ambient group. In types \(B_\ell\) for \(\ell\ge3\) and \(F_4\), take adjacent long simple roots. Here the ambient center has order prime to three. For \(G_2\) take the long-root subsystem, whose simple coroots can be chosen as \(\beta^\vee,\alpha^\vee+\beta^\vee\) for simple short \(\alpha\) and long \(\beta\). They form a lattice basis and hence the subgroup is simply connected. The compact conjugation preserves these subgroups since their root systems are stable under negation. The root subgroups for the simple-root pairs are simply connected since the chosen coroots are a subset of a basis. The \(G_2\) ambient center is trivial.
+
+For each chosen proper \(S\), the intersection of its conjugates in the ambient group is trivial: it is normal in the simple factor, hence central, and its center intersection is trivial. For a finite geometric stabilizer \(H\) of \(G\), the general \(S\)-stabilizer is therefore trivial. Indeed, for each nonidentity \(h\in H\), the elements \(g\) of the geometric ambient group satisfying \(ghg^{-1}\in S\) form a proper closed subset. There are only finitely many such subsets. The same finite-stabilizer argument in ranks two applies to a simply connected factor when \(H\) meets that factor trivially.
+
+Over \(K\) the compact \(\operatorname{Sp}(2)\) and \(\operatorname{SU}(3)\) have Hermitian forms with scalar forms \(8\langle1\rangle\) and \(6\langle1\rangle\), respectively. If \(-1\) is a sum of four squares over \(K(X)\), the Pfister form \(8\langle1\rangle\) is isotropic and hence hyperbolic there. Its six-dimensional subform is isotropic as well. The generic free action theorem gives the result. The full-center version uses the same isotropy input on the adjoint torsor. \(\square\)
+
+
+**Corollary (Small stabilizers in classical factors).**
+
+Keep the real closed and level hypotheses, and allow \(H\) to have positive dimension. In the simply connected cover write \(H_S\) for the intersection of \(H\) with a chosen simple factor. The following bounds on \(\dim H_S\) suffice for a regular witness.
+
+| Compact simple factor | Bound |
+| --- | --- |
+| \(\operatorname{SU}(n)\), \(n\ge4\) | \(\dim H_S<2(n-3)\) |
+| \(\operatorname{Sp}(n)\), \(n\ge3\) | \(\dim H_S<2n-4\) |
+| \(\operatorname{Spin}(n)\), \(n\ge7\) | \(\dim H_S<n-6\) |
+
+**Proof.** The subgroup on a fixed block is compact \(\operatorname{SU}(3)\) in the first and third rows and \(\operatorname{Sp}(2)\) in the second. Work geometrically to test generic freeness. Conjugate block subgroups for \(\operatorname{SL}_n\) include the copies of \(\operatorname{SL}_3\) fixing an \((n-3)\)-plane \(U\) pointwise and preserving a complementary three-plane \(V\). A nonidentity \(h\) belongs to this copy only if \(U\subseteq\ker(h-1)\) and \(\operatorname{im}(h-1)\subseteq V\). For \(r=\operatorname{rank}(h-1)\) these are Grassmann conditions of codimension \(r(n-3)\) each on the two choices. Complementarity is open. Thus each \(h\ne1\) cuts out codimension at least \(2(n-3)\) on the space of decompositions. The incidence over \(H_S\setminus\{1\}\) has smaller dimension than that space by the bound on \(\dim H_S\). A general block has trivial intersection with \(H_S\).
+
+For the symplectic block the parameter is a nondegenerate \((2n-4)\)-plane in the natural \(2n\)-dimensional symplectic module. The condition that \(h\ne1\) fix this plane pointwise has codimension at least \(2n-4\), since its fixed space is contained in a hyperplane. For the spin group use \(\operatorname{SU}(3)\) on the underlying real orthogonal six-plane and lift its embedding from \(\operatorname{SO}(n)\) to \(\operatorname{Spin}(n)\) by simple connectedness. The embedded subgroup intersects the spin kernel trivially. A nonidentity \(h\) with nonidentity orthogonal image can belong to a general conjugate only if it fixes the chosen nondegenerate \((n-6)\)-plane pointwise, a condition of codimension at least \(n-6\). Both dimension bounds exclude nontrivial intersections for a general conjugate. The generic free action theorem applies in all three rows using \(8\langle1\rangle\) or \(6\langle1\rangle\) as before. \(\square\)
+
+
+## Two-invariant denominator clearings on the exceptional products
+
+**Theorem (A necessary coefficient identity for two-invariant clearing).**
+
+On either exceptional compact product use the regular invariants \(h,hv\) and the conditional law in the direct denominator-clearing theorem. Set \((e,\beta)=(2,6)\) in the octahedral case and \((5,30)\) in the icosahedral case. Let
+\[
+       G(h,v)=\sum_{i,j}g_{ij}h^i v^j,\qquad
+       0\le j\le i-N,\qquad N\ge1.
+\]
+The coefficients are in a real closed field. Suppose there is a unique nonzero term \(g_{LJ}h^L v^J\) of greatest weight \(w=eL+J\), using weight \(ei+j\). For \(T=1+t\), \(a\ge0\) and \(b\ge1\) integers, put
+\[
+                  P=t^{-1}T^aG(h,v)(1-T^{2b}v)^N.
+\]
+This is regular since every term has enough factors of \(h\) to absorb the powers of \(v\). Put \(d=2(w+N)\) and \(k=a+2bN\). Unless \(k=sd+1\) for an integer \(s\ge1\), the phase has nonzero pure moments in infinitely many orders divisible by every prescribed positive integer. In that remaining residue class the same conclusion holds unless
+\[
+ \sum_{ei+j=w-1}\frac{g_{ij}}{g_{LJ}}\,\mathcal R_{i-L}(L/d)
+                  =\beta L+N\Theta_s,\qquad
+ \Theta_s=
+ \begin{cases}
+     0,&s<2b,\\[2pt]
+     \displaystyle\prod_{\nu=s-2b+1}^{s}\frac{\nu}{\nu+1/d},&s\ge2b .
+ \end{cases}                                                     \tag{1}
+\]
+Here \(\mathcal R_\Delta(n)\) is the rational function agreeing with \(C_{n+\Delta}/C_n\) at sufficiently large integers \(n\), with \(C_n\) the leading conditional coefficients from (H17). Explicitly write
+\[
+        C_n=\kappa^n\binom{\rho n}{\rho n/2},
+   \qquad (\rho,\kappa)=(2,-1/48)\ \text{or}\ (4,36\gamma^2/16),
+   \qquad \gamma=-1/135 .
+\]
+For \(\Delta\ge0\),
+\[
+       \mathcal R_\Delta(z)=
+       \kappa^\Delta\frac{(\rho z+1)_{\rho\Delta}}
+                          {(\rho z/2+1)_{\rho\Delta/2}^{\,2}},
+       \qquad
+       \mathcal R_{-\Delta}(z)=\mathcal R_\Delta(z-\Delta)^{-1}.
+\]
+Each of these values at \(z=L/d\) is finite and nonzero. In particular every clearing with a unique term of greatest weight and a gap of at least two to the next term fails. If terms of weight \(w-1\) are allowed, equation (1) is a proper linear condition on their coefficients after fixing \(g_{LJ}\).
+
+**Proof.** For algebraic real coefficients, take any place of their number field above the rational primes in the argument. The residue degree may be arbitrary because all binomial tests concern elements of the prime field and a fixed nonzero coefficient combination is a unit at every place outside a finite set. Infinitely many rational primes lie in either progression \(1,-1\bmod dM\) by Dirichlet's theorem. Exclude the finite set of denominator primes of the coefficients and the conditional trace formula. [Dirichlet's original proof in translation](https://arxiv.org/abs/0808.1408)
+
+For an order \(m\), integrate over the conditional law at fixed \(v\), and then take the Laurent constant term. The resulting polynomial in \(v\) has degree at most \((w+N)m\). Divide its top two coefficients by \(g_{LJ}^m(-1)^{Nm} C_{Lm}\). They are
+\[
+   \binom{km}{m},\qquad
+   m\left[\left(\sum_{ei+j=w-1}
+           \frac{g_{ij}}{g_{LJ}}\mathcal R_{i-L}(Lm)-\beta L\right)
+                         \binom{km}{m}
+                    -N\binom{km-2b}{m}\right].                     \tag{2}
+\]
+The top term uses the greatest-weight monomial in every factor and the highest \(v\)-power in \((1-T^{2b}v)^{Nm}\). A loss of one degree can come from the second coefficient of \(\mathbb E[h^{Lm}\mid v]\), choosing precisely one weight-\(w-1\) monomial of \(G\), or losing one \(v\)-power in the \(Nm\) factors. These three contributions give (2).
+
+Finally \(\int v^j=1/(2j+1)\). Use primes \(\ell=dm+1\) with \(m\) divisible by \(M\). As in the direct clearing, the top coefficient supplies a nonzero residue after multiplying the moment by \(\ell\), unless \(k=sd+1\) with \(s\ge1\). In that case use primes \(\ell=dm-1\). Then precisely the penultimate integration denominator has negative valuation, the leading binomial \(\binom{km}{m}\) is a unit, and the second binomial divided by it reduces to \(\Theta_s\). The ratios \(\mathcal R_{i-L}(Lm)\) reduce to \(\mathcal R_{i-L}(L/d)\). The required values are finite and nonzero since \(0<\rho L/d<1\) and the factorial ratios are products of powers of constants and integer translates of \(\rho L/d\) and \(\rho L/(2d)\). Also \(C_{Lm}\) is a unit at all sufficiently large primes under consideration because \(\rho Lm<\ell\). Thus failure of (1) forces a nonzero residue at all sufficiently large primes in this second progression, proving the assertion over algebraic real coefficients.
+
+For general real closed coefficients, if all large moments in a sequence of multiples vanish, regard those moment equalities as polynomial equations with rational coefficients in the finitely many \(g_{ij}\). The ideal they generate is finitely generated. Keep the nonvanishing hypotheses and support by a finite list of polynomial inequalities. The real closed field of real algebraic numbers then supplies a specialization with all the same moment equalities and the same nonvanishing conditions. The prime-order test contradicts that specialization. \(\square\)
+
+
+## The octonion factor and its remaining negative quadric
+
+**Theorem (An isotropy test for an octonion factor).**
+
+Let \(K\) have characteristic zero, let \(C\) be an octonion algebra over \(K\) with norm \(\pi\), and put \(S=\operatorname{Aut}(C)\). Suppose \(X\) is an affine geometrically homogeneous space under a connected reductive \(K\)-group with active normal factor \(S\). Suppose \(\pi\) is isotropic over \(K(X)\). Put \(F=K(X)^S\), and let \(H_S\) be the intersection of a geometric stabilizer with \(S_{\overline K}\). Then \(X\) has a regular Mathieu–Zhao counterexample if any of the following holds.
+
+- The dimension of \(H_S\) is at most four.
+- The identity component of \(H_S\) has type \(A_1\times A_1\).
+- The identity component of \(H_S\) has type \(A_2\), and either \(H_S\) is disconnected or \(\pi\) is isotropic over \(F\).
+
+The only remaining proper stabilizer type is connected \(A_2\) with \(\pi\) anisotropic over \(F\). In that case the generic \(S\)-fibre is \(S_F\)-equivariantly the affine quadric \(q(x)=-1\), where \(q\) is the restriction of \(\pi\) to the seven-dimensional trace-zero subspace of \(C\). For a compact factor over a real closed field the hypothesis on \(\pi\) is precisely level at most four in \(K(X)\).
+
+**Proof.** Write \(V\) for the trace-zero octonions. Over the algebraic closure, \(S\) is transitive on each \(q(x)=c\ne0\), with a stabilizer of type long \(A_2\). Over \(K\), a vector \(x_0\) of nonzero norm in \(V\) generates a quadratic étale subalgebra of \(C\). Its stabilizer \(J\) is the special unitary group of the perpendicular Hermitian three-space. The scalar form is the restriction of \(\pi\) to the six-dimensional perpendicular space of \(1,x_0\). If the quadratic algebra splits, \(J\) is split. If \(\pi\) splits over a field extension, that scalar form is isotropic there, since its dimension exceeds four. See [Asok, Hoyois and Wendt, *Generically split octonion algebras and \(\mathbb A^1\)-homotopy theory*, §2.3](https://arxiv.org/abs/1704.03657).
+
+The geometric stabilizer is reductive by affineness, and its intersection with the normal factor is a normal subgroup of that stabilizer. Thus \(H_S^\circ\) is reductive. For a subgroup \(H_S\) of dimension at most four, we show that a general vector of \(V_{\overline K}\) has trivial \(H_S\)-stabilizer. The weights of \(V\) on a maximal torus of \(S\) are \(0,\pm\lambda_1,\pm\lambda_2,\pm\lambda_3\), where \(\lambda_1+\lambda_2+\lambda_3=0\) and \(\lambda_1,\lambda_2\) generate the character lattice. Thus a nonidentity semisimple element fixes a subspace of dimension at most three, and fixes a line if none of the three characters takes value \(1\). Any element with nontrivial semisimple part fixes a subspace of its semisimple part's fixed space. For \(\dim H_S\le3\) the union of these fixed spaces has dimension at most six.
+
+For \(\dim H_S=4\), the identity component has type \(A_1\) with a one-dimensional central torus. Its maximal torus is a maximal torus of \(S\). The semisimple parts in this torus with fixed space of dimension three lie on the three equations \(\lambda_i=1\), a locus of dimension at most one. For a fixed semisimple part up to \(H_S^\circ\)-conjugacy, allow also a unipotent part in its centralizer. The dimension of the resulting family is at most \(\dim H_S^\circ-2\): the conjugacy class has dimension \(\dim H_S^\circ-\dim Z\), and the unipotent variety of the centralizer \(Z\) has dimension \(\dim Z-2\), since its identity component is reductive of rank two. Thus the total dimension of elements with nontrivial semisimple part and fixed space of dimension at least two in \(H_S^\circ\) is at most three. All remaining such elements fix at most a line.
+
+For the possible component outside \(H_S^\circ\), let \(\alpha\) be the root of its derived group relative to that maximal torus. The normalizer of \(H_S^\circ\) has component group of order two. Indeed a normalizing Weyl element preserves \(\{\alpha,-\alpha\}\), whose stabilizer of order four is generated by the reflections in \(\alpha\) and its perpendicular root \(\beta\). The latter has the other root length. Every component representative outside \(H_S^\circ\) then lies in the product of the root group of type \(A_1\) for \(\alpha\) and the nonidentity normalizer coset of the torus of the root group of type \(A_1\) for \(\beta\). In the double cover by the two \(\mathrm{SL}_2\) groups, that coset has eigenvalues \(i,-i\) on the second standard module, up to ordering. The restriction of \(V\) to the product is the tensor of the two standard modules plus the symmetric square of the short-root standard module. For example the six nonzero weights in the \(\alpha\)-short case have pairs of coroot values \((2,0),(-2,0),(\pm1,\pm1)\), which gives this decomposition together with the zero weight. The fixed space in the nonidentity component is a line for a general first-factor eigenvalue. Fixed space of dimension at least two requires that eigenvalue to be in a finite set, by the tensor and symmetric-square weights. Its locus has dimension at most three, since the corresponding traces in the first \(\mathrm{SL}_2\) are fixed and the normalizer coset of the second torus has dimension one. No element in this component has trivial semisimple part. Therefore the union of fixed spaces for elements with nontrivial semisimple part again has dimension at most six.
+
+It remains to exclude nonidentity unipotents in \(H_S^\circ\). A torus has none. For the groups of semisimple rank one and dimension at most four, restrict the orthogonal module to the simply connected \(\mathrm{SL}_2\) covering the derived group. If it contains an irreducible summand of dimension at least three, the union of fixed lines of its nontrivial unipotents in that summand has dimension at most two: one chooses a unipotent radical by a point of \(\mathbb P^1\) and a vector in its fixed line. A general projection to that summand rules out every nontrivial unipotent. Otherwise the nontrivial summands are standard modules. Their multiplicity is even by the invariant symmetric form, so a general pair of standard vectors is independent and again rules out every nontrivial unipotent. The full action on \(V\) is faithful, so these exhaust the possibilities. This proves generic freeness. The conditions are invariant under scalar multiplication of a vector, so a general vector of given nonzero norm also has trivial stabilizer over the algebraic closure. Equivalently, the subgroup \(J\) acts generically freely on \(X\), since \(J\cap gH_Sg^{-1}\) is conjugate to the \(H_S\)-stabilizer of \(g^{-1}x_0\). Its six-dimensional scalar form is isotropic over \(K(X)\), so the rank-two commuting-action theorem applies.
+
+For dimension greater than four and a proper stabilizer the connected root system must be \(A_1\times A_1\) or long \(A_2\). Indeed its rank is at most two, and in rank two its roots form a closed subsystem relative to a maximal torus of \(S\). Among proper closed root subsystems of \(G_2\), the ones of rank two are the orthogonal long and short pair, and the three long pairs. The short \(A_2\) is excluded by closure under root addition. The normalizer of the \(A_1\times A_1\) subgroup is the subgroup itself: a Weyl element preserving the subsystem must preserve its long pair, and its stabilizer in the Weyl group of \(S\) has order four, exactly the Weyl group of the subsystem. This subgroup has a \(K\)-defined model as the stabilizer of a quaternion subalgebra. The connected long \(A_2\) has normalizer quotient of order two acting by sign on its fixed line in \(V\). Both signs are attained by transitivity on \(q(x)=c\ne0\). Its full normalizer is self-normalizing, since any normalizing element also normalizes the identity component.
+
+A geometric self-normalizing stabilizer with a pointed \(K\)-model has only the pointed form of the generic \(S_F\)-fibre. This follows from descent by its equivariant automorphism group, which is the normalizer quotient. The \(A_1\times A_1\) subgroup and the full normalizer of long \(A_2\) have such models. A smooth \(F\)-point on the fibre implies injectivity on isotropy of anisotropic quadratic forms when passing to the fibre function field. Indeed that field embeds in an iterated Laurent series field over \(F\) by completion at the smooth point, and anisotropy persists there by valuations. Hence \(\pi\) is isotropic over \(F\) in those cases. The octonion group then splits, and its active action on the fibre gives a regular witness by the split rank-one obstruction and generic-fibre transfer.
+
+For connected long \(A_2\), descent by the two signs identifies the generic fibre with \(q(x)=c\) for some \(c\in F^\times\), since all twists of the pointed norm sphere are obtained by scaling its norm value by a square class. If \(\pi\) is anisotropic over \(F\) and splits over its function field, \(q\perp\langle-c\rangle\) is an anisotropic eight-dimensional form (an isotropic quadric has rational function field) and is similar to a subform of \(\pi\) by the Cassels–Pfister subform theorem. Both it and \(\pi\) represent a common nonzero value in \(q\), so roundness removes the scale factor. Witt cancellation of \(q\) gives \(\langle-c\rangle\simeq\langle1\rangle\). Rescaling the coordinates therefore gives \(q(x)=-1\) as claimed. Finally the norm of compact octonions over a real closed field is \(8\langle1\rangle\). Its isotropy over an extension has the same condition as level at most four, by the power-of-two theorem for finite levels. \(\square\)
+
+
+## A second coefficient test for exceptional denominator clearing
+
+**Theorem (The next shifted-prime condition).**
+
+Use the notation of the two-invariant clearing theorem, and suppose \(k=sd+1\) with \(s\ge1\). Fix a positive divisor \(M\) for the moment orders and suppose \(3\nmid dM\). Then eventual pure-moment vanishing in the multiples of \(M\) requires the following identity. Put \(x=3/d\), define
+\[
+   (r,\alpha,\chi)=(1,-6,-3)\quad\text{or}\quad(2,-15,-30)
+\]
+for octahedral or icosahedral height, respectively, and write \(A(z)=1+\alpha z+\chi z^2\). Define Laurent polynomials
+\[
+       D_j(Y)=\sum_{ei+\ell=w-j}\frac{g_{i\ell}}{g_{LJ}}Y^{i-L}
+                    \qquad(j=1,2)
+\]
+and a scalar linear map \(B(Y^\Delta)=\mathcal R_\Delta(Lx)\). Extend \(B\) coefficientwise in \(z\). For \(j=1,2\) put
+\[
+ \begin{aligned}
+     U_j&=[z^j]A(z)^{rLx}\,
+      B\left(1+xzD_1(A(z)^rY)+xz^2D_2(Y)+\binom{x}{2}z^2D_1(Y)^2\right),\\
+     \Theta_j&=\begin{cases}
+          0,&3s<2bj,\\[1pt]
+          \displaystyle\prod_{\nu=3s-2bj+1}^{3s}\frac{\nu}{\nu+x},&3s\ge2bj.
+                        \end{cases}
+ \end{aligned}
+\]
+All values defining \(B\) are finite, since \(0<\rho L/d<1\) and \(3\nmid d\) make \(\rho Lx\) and \(\rho Lx/2\) nonintegral. The required identity is
+\[
+                         U_2-Nx\Theta_1 U_1+\binom{Nx}{2}\Theta_2=0.      \tag{3}
+\]
+Failure of this identity implies infinitely many nonzero pure moments of orders divisible by \(M\).
+
+**Proof.** Through relative order two at \(v=\infty\), the conditional law gives
+\[
+                  J_n(v)=C_n v^{en}\bigl(A(1/v)^{rn}+O(v^{-3})\bigr).
+\]
+For the octahedral law, both \(-24A(v)/v^2\) and \(24\sqrt{B(v)^2}/v^2\) from (H3), with the positive leading branch for the latter, agree with \(1-6/v-3/v^2\) through this order. Thus every circle-average term has the same factor at those orders. In the icosahedral law the coefficient \(c_1(v)\) used in the proof of (H17) is \(\gamma v^3(1-15/v-30/v^2)\) by (H5). Any term using \(c_j(v)\) for \(j\ge2\) loses at least three degrees. These give the displayed expansion.
+
+Set \(z=1/v\) and \(Y=h/v^e\). Through relative order two, \(G=g_{LJ}v^wY^L(1+zD_1(Y)+z^2D_2(Y))\). At order \(m\), conditional averaging of the normalized term \(Y^{Lm+\Delta}\), after division by \(C_{Lm}\), gives \(\mathcal R_\Delta(Lm) A(z)^{r(Lm+\Delta)}\). Expansion of \(G^m\) through order \(z^2\) gives the formula defining \(U_j\) with \(m\) in place of \(x\), defining the corresponding functions \(U_j(m)\). The term of relative degree loss two after taking the scalar constant term is therefore
+\[
+ g_{LJ}^m(-1)^{Nm}C_{Lm}
+ \left[ U_2(m)\binom{km}{m}-Nm\,U_1(m)\binom{km-2b}{m}
+                            +\binom{Nm}{2}\binom{km-4b}{m}\right].
+\]
+For algebraic coefficients take large rational primes \(p=dm-3\) in the progression \(-3\bmod dM\) and any place above each of them outside the finite set of bad places. All integrated denominators \(2j+1\) are \(p\)-units except \(p\) itself, which belongs to the displayed coefficient. The leading binomial is a unit because \(km=s p+(m+3s)\). For \(j=1,2\), the quotient of \(\binom{km-2bj}{m}\) by the leading binomial has residue zero if \(m+3s-2bj<m\), and otherwise the residue is the product defining \(\Theta_j\) by direct cancellation. The normalization \(C_{Lm}\) is a unit by \(\rho L/d<1\), and \(m\) reduces to \(x\). Consequently a nonzero left side of (3) gives a nonzero residue of \(p\) times the moment at all sufficiently large primes in the progression. The real closed specialization argument for the first coefficient condition applies to this condition too. \(\square\)
+
+**Corollary (A single clearing power times a real-rooted polynomial).**
+
+On either exceptional product take \(G=h^L R(v)\) with \(R\) a nonzero real-rooted polynomial of degree \(J\le L-N\). If \(3\nmid d=2(eL+J+N)\), the resulting regular phase has infinitely many nonzero pure moments in the multiples of every positive integer prime to three. More generally, write \(R(v)/(\operatorname{lc}(R)v^J)=1+\delta v^{-1}+\epsilon v^{-2}+\cdots\). It suffices that \(\epsilon-\delta^2/2\le0\).
+
+**Proof.** Use the first coefficient test unless \(k=sd+1\) and \(\delta-\beta L=N\Theta_s\). Suppose these two conditions hold. Here \(D_j\) is constant and \(U_1=x(\delta-\beta L)\ge0\). Expanding the logarithm of the series whose coefficients are \(U_j\) gives
+\[
+ U_2=x\left(\epsilon-\tfrac12\delta^2+rL(\chi-\tfrac12\alpha^2)\right)
+                                         +\tfrac12 x^2(\delta-\beta L)^2.
+\]
+The real-rooted case has \(\epsilon-\delta^2/2=-\frac12\sum \lambda_i^2\), with \(\lambda_i\) the roots of \(R\). In the stated generality this difference is nonpositive, and \(r(\chi-\alpha^2/2)\) is \(-21\) or \(-285\). Since \(Nx\le1/2\), \(N\le L\) and \(0\le\Theta_s\le1\), we have \(U_2\le -21Lx+x^2N^2/2<0\). Both other terms of (3) are nonpositive. Thus (3) cannot hold. The theorem gives the claimed nonzero orders. \(\square\)
+
+
+**Corollary (A linear scalar multiplier and the third shifted prime).**
+
+Let \(G=h^L(v+\delta)\) up to a nonzero scalar, so \(L\ge N+1\). If \(5\nmid dM\), the cleared phase has infinitely many nonzero pure moments in the multiples of \(M\), whether or not the progression for the second test is available.
+
+**Proof.** It suffices to treat \(k=sd+1\), \(s\ge1\), and the first coefficient condition \(\delta-\beta L=N\Theta_s\). Use \(p=dm-5\equiv-5\bmod dM\). As before only the coefficient with relative loss three has denominator \(p\). Put \(x=5/d\), \(n=Lx\), \(y=Nx\), and now set
+\[
+       E_j=\begin{cases}
+              0,&5s<2bj,\\[1pt]
+              \displaystyle\prod_{\nu=5s-2bj+1}^{5s}\frac{\nu}{\nu+x},
+                        &5s\ge2bj .
+            \end{cases}
+\]
+For \(j=1,2,3\), the ratio of \(\binom{km-2bj}{m}\) to \(\binom{km}{m}\) reduces to \(E_j\). Each belongs to \([0,1]\). Write \(U_j\) for the \(j\)-th conditional coefficient of the normalized clearing power after reduction at \(m=x\). The tested residue, divided by its unit normalization, is the reduction of
+\[
+                 U_3-yE_1 U_2+\binom y2 E_2 U_1-\binom y3 E_3.        \tag{4}
+\]
+This follows by counting how many factors in \((1-T^{2b}v)^{Nm}\) supply a relative loss of one.
+
+The additional conditional coefficient in \(J_m/(C_mv^{em})\) beyond \(A(z)^{rm}\), at \(z^3\), is
+\[
+             D(m)=
+          \begin{cases}
+           32m(1-m)/(2m-1),&\text{octahedral},\\
+           -340(2m)(2m-1)/(2m-1/2),&\text{icosahedral}
+          \end{cases}
+\]
+for positive integers \(m\). In the octahedral case the branch \(24\sqrt{B(v)^2}/v^2\) of (H3) has cubic coefficient \(-32\), whereas \(-24 A(v)/v^2\) has cubic coefficient zero. In the normalized circle average the correction is \(32m\) times the ratio of \(\mathbb E[(1-\cos\theta)^{m-1}\cos\theta]\) to \(\mathbb E[(1-\cos\theta)^m]\). Using the central binomial coefficient for these moments gives \(D(m)\). In the icosahedral case exactly one \(c_2(v)p^{-2}\) can replace two \(c_1(v)p^{-1}\) at this loss. The ratio of the leading coefficient of \(c_2\) to \(\gamma^2\) is \(340\) by (H5). The remaining ratio is \((2m-1)\binom{-1/2}{2m-1}/\binom{-1/2}{2m}\), giving the stated formula. These expressions at \(n=Lx\) have finite values in the ranges below.
+
+Write \(c_2=21\) or \(285\) and \(c_3=90\) or \(3150\), respectively. These are the negatives of the quadratic and cubic coefficients of \(r\log A(z)\). Now \(U_1=x(\delta-\beta L)\in[0,y]\) and
+\[
+ \begin{aligned}
+    U_2&=x(-\delta^2/2-c_2 L)+U_1^2/2<0,\\
+    U_3&=x(\delta^3/3-c_3 L)+D(n)+x(-\delta^2/2-c_2 L)U_1+U_1^3/6 .
+ \end{aligned}
+\]
+Here \(0<y<1\). In the octahedral case \(5/6\le n\le5/4\), \(y\le5/6\), and \(D(n)\ge-(16/3)n\). Since \(\delta\ge6L\) and \(L\ge2\),
+\[
+ U_3\ \ge\ n\left(72L^2-15L-90-21\cdot(5/6)-16/3\right)>1 .
+\]
+For the icosahedral case \(5/12\le n\le1/2\), \(y\le5/12\), and \(D(n)\ge0\). The bound \(\delta\ge30L\) gives
+\[
+ U_3\ \ge\ n\left(9000L^2-(375/2)L-3150-285\cdot(5/12)\right)>1 .
+\]
+In both estimates we used \(U_1\le y\). The term \(-yE_1 U_2\) in (4) is nonnegative. The two remaining terms have absolute sum less than one, because \(0<y<1\), \(U_1<1\), and \(E_j\le1\). Thus (4) is nonzero. All the normalizations are units at large primes and the same specialization argument applies over real closed fields. \(\square\)

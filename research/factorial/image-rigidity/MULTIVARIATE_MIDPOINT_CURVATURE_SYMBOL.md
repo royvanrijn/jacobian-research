@@ -103,3 +103,29 @@ bounds. Finally \(B_4\le S_*\delta^2\) and
 \(\Lambda\le S_*\delta\), since the nonzero integer \(d_i\) have
 \(|d_i|\ge1\). These inequalities give the signed-cancellation
 specialization.
+
+
+## Ordinary angular separation with signed cancellation
+
+**Corollary.** For \(n\ge1\) and \(N=n+1\), the ordinary
+orders \(n,N\) have disjoint root arguments whenever
+\[
+ S_*\ge13,\qquad \delta\le1/60,\qquad
+ \tfrac{11}{2}|K|+34 B_4+\tfrac{2\Lambda}{n}\le10^{-8}.
+\]
+In particular, if \(K=0\) and \(n\ge1/\delta\), it suffices
+that \(S_*\delta^2\le10^{-8}/36\), with the same lower curvature
+and relative gap hypotheses.
+
+For \(n\ge2\) use the
+[general analytic lift](MULTIVARIATE_DIFFUSE_ABSOLUTE_ANGLE_LIFT.md#general-analytic-lift)
+with Gaussian parameter \(S_*\) and \(U=\varepsilon_n/10\).
+The normalized polynomial samples agree exactly with that lift.
+The Gamma logarithm is real-symmetric, and the lemma gives
+\(\|E_j''\|\le10jU\) and
+\(\|E_N''-E_n''\|\le10U\le13U\) on its required disk. The
+hypothesis gives \(U\le10^{-9}\). For \(n=1\) the first moment
+has negative real argument and the second moment is positive
+on the real line by the integral of a nonzero real binomial
+squared. A rational Bézout identity gives coprimality over
+every characteristic-zero field.

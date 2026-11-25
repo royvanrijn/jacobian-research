@@ -153,6 +153,194 @@ into intervals of width \(MY\), and also into unit classes modulo
 obeys \(J\ge S^2/(S+2E_M)\) by Cauchy–Schwarz. This is a spreading
 bound on any such set.
 
+
+## Discounting the step in a two-letter bound
+
+Fix \(\eta,\varepsilon>0\) and fixed nonnegative
+\(\rho_1,\rho_2,\mu,\tau\), with
+\(B=\rho_1+\rho_2+\mu+\tau>0\) sufficiently small in terms of
+\(\eta\). Let \(M\) be a fixed step for this count, possibly
+depending on \(X\), with \(\operatorname{rad}(M)\le X^\mu\).
+Count oriented pairs \(X<u<v\le2X\) in a common unit class
+modulo \(M\) with
+\[
+ \operatorname{rad}(u)\le X^{\rho_1},\qquad
+ \operatorname{rad}(v)\le X^{\rho_2},\qquad
+                   0<(v-u)/M\le X^\tau .
+\]
+Sum over all unit classes. The pair count is
+\[
+ \ll_{\eta,\varepsilon,\rho_1,\rho_2,\mu,\tau}
+ X^{\,J+\eta B+\varepsilon},\qquad
+ J=\tfrac12\min\{\rho_1+\rho_2,\ \rho_1+\tau,\ \rho_2+\tau\}.        \tag{PI6}
+\]
+The constant is uniform in \(M\) and in any restrictions on the
+sets of allowed endpoints. In particular for a common radical
+cap \(X^\rho\) the exponent before the allowances is
+\(\min\{\rho,(\rho+\tau)/2\}\). One unit progression block of
+parameter width \(X^\tau\) therefore has occupancy at most
+\(O(X^{\min\{\tau,\rho/2,(\rho+\tau)/4\}+\eta B+\varepsilon})\), after
+resizing the allowances and using the trivial index bound.
+
+Write \(j=(v-u)/M\), \(g=\gcd(u,v)\), and
+\((a,b,c)=(u/g,Mj/g,v/g)\). Primitivity and the unit-class
+condition give \(g\mid j\) and \(\gcd(g,M)=1\). Put
+\(s=\log_X g\), \(r_1=\log_X\operatorname{rad}(a)\),
+\(r_2=\log_X\operatorname{rad}(c)\). The height of the
+primitive triple is comparable to \(X^{1-s}\). Its
+unpriced radical in base \(X\) is at most
+\(r_1+r_2+\mu+\tau-s\le B-s\).
+Thus its relative radical budget is at most \(B\), since
+\(B<1\). Bin \(s,r_1,r_2\) with sufficiently small fixed
+mesh, and use the anatomic reduction in dyadic height
+shells within each bin. The bin and truncation errors
+can sum to an arbitrarily small fixed part of \(\eta B\),
+with the budgets fixed before the height limit.
+
+Freeze the prime-supported parts of all original anatomic
+roots on primes dividing \(M\) by the uniform fixed-support
+bound. These parts are placed at the same degrees as the
+original roots, with raw caps retained and dictionary cost
+zero. The uncharged split parts count within the original
+raw cap sum after dyadic refinement, since their product is
+the original root. The residual roots on \(b\) have summed
+raw cap at most \(\tau-s\) in base \(X\) up to the
+truncation and binning allowances: every remaining prime
+of \(b\) divides \(j/g\). The exceptional coefficient
+exponents and their enumeration loss tend to zero with
+the chosen anatomic allowance. The other charged costs
+are at most \(r_1,r_2\) up to the same allowances, and
+these two letters are units on the step primes. The
+two-cheapest dictionary bound (GD3) now gives the
+primitive count exponent
+\(\frac12\min\{r_1+r_2,r_1+\tau-s,r_2+\tau-s\}\),
+with an arbitrarily small allowance in terms of \(B\).
+[The two-letter effective cost](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md#the-two-letter-effective-cost)
+
+For a given primitive triple, the exponent for recovering
+\(g\) is at most
+\(v_0=\min\{s,\rho_1-r_1,\rho_2-r_2\}\).
+Indeed \(g\le X^s\) at its binned scale. The part of \(g\)
+on \(\operatorname{rad}(ac)\) has divisor-support count
+\(X^{o_X(1)}\). Its outside part uses radical budget at
+most \(X^{\rho_i-r_i}\) for each of the two endpoints,
+and the one-variable radical count applies. Since
+\(r_i+v_0\le\rho_i\) and \(v_0\le s\), every one of the
+three branches of the GD3 exponent, after adding \(v_0\),
+is at most its corresponding branch in \(J\). For
+example,
+\[
+ v_0+(r_1+\tau-s)/2\le(\rho_1+\tau)/2.
+\]
+This proves (PI6). No injectivity of primitive normalization
+over different progression blocks or unit classes is needed.
+[Primitive scaling count](#counting-nearby-pairs-across-all-blocks)
+
+For \(\tau<\rho\), a dictionary of size \(X^{\rho-o(1)}\)
+at the common radical cap can be made separated by more than
+\(X^\tau\) in the progression parameter inside each unit
+class, by deleting a power-smaller set. Take the allowance
+\(\eta B+\varepsilon<(\rho-\tau)/2\), and remove one endpoint
+of each offending pair. More generally, unit progression
+cells of that parameter width contain at least
+\(S^2/(S+2E)\) occupied cells for a set of size \(S\)
+with the pair bound \(E\) in (PI6).
+
+
+If the physical span satisfies \(MX^\tau\le X^{1-\nu}\)
+for a fixed \(\nu>0\), the same bound (PI6) holds for
+arbitrary \(M\) with \(B\) in the allowance replaced by
+\(B_0=\rho_1+\rho_2+\tau>0\), sufficiently small in terms of
+\(\eta,\nu\). In the divided triple, decompose \(a,c\) as
+before and apply the anatomic construction to \(j/g\)
+alone on the short letter. Include \(M\) in that letter's
+fixed coefficient, so the raw caps of the variable roots
+sum to at most \(r_1+r_2+\tau-s\) up to arbitrarily small
+losses in base \(X\). This is a small budget relative to
+\(X/g\). The short-to-tall ratio is at most \(X^{-\nu}\)
+up to an absolute factor, and only the short letter has
+a possibly large fixed coefficient. The short-letter
+version (SHF4) of GD3 therefore gives exactly the same
+primitive bound and scaling argument. This includes
+squarefree steps of large numerical size. The exponent
+for one progression block again follows by counting its
+distinct pairs and using the trivial parameter cap.
+[Grouped count with a large fixed short coefficient](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md#grouped-dictionaries-with-a-large-coefficient-on-the-short-letter)
+
+### Arbitrary radical of the step
+
+There is a complementary bound with no radical condition
+on \(M\). Let \(0\le\tau\le 1/2\) be fixed and
+\(\rho_1+\rho_2>0\) sufficiently small. With the same endpoints
+and unit-class convention, the exponent for the pair count is
+at most
+\[
+                  \tau+(\rho_1+\rho_2)/3                          \tag{PI7}
+\]
+up to \(\eta(\rho_1+\rho_2)+\varepsilon\). If the physical gap
+satisfies \(MX^\tau\le X^{1-\kappa}\) for fixed \(\kappa>0\),
+the improved exponent
+\[
+                         \tau+\tfrac12\min(\rho_1,\rho_2)           \tag{PI8}
+\]
+is valid. The same improved exponent holds when \(M\) has a
+prescribed divisor of size at least \(X^\nu\) and fullness at
+least \(\lfloor a/(\rho_1+\rho_2)\rfloor\), with
+\(\nu,a>0\) fixed independently of the small endpoint budget.
+
+For each \(j\), enumerate the divisor-many \(g\mid j\).
+The normalized two endpoints are now a primitive pair of
+height comparable to \(X/g\) with fixed difference \(Mj/g\).
+Their endpoint budget relative to this height is at most
+\(2(\rho_1+\rho_2)\). Apply the arbitrary fixed-shift
+one-third sum bound to obtain (PI7). Under the physical gap
+condition the normalized short term has relative gap at
+least a fixed numerical power of \(X/g\), since division by
+\(g\) does not change its ratio to the endpoints. Under the
+full-step condition its positive-weight full divisor survives
+unchanged because \(\gcd(g,M)=1\). In either case use the
+half-cheapest fixed-shift bound to prove (PI8). The
+truncation error and exponents can be absorbed uniformly
+over the fixed shifts. Summing over the at most \(X^\tau\)
+choices of \(j\) proves the bounds. All counts allow the
+unrestricted set of unit residue classes.
+[Fixed-shift one-third sum bound](ABC_FIXED_SHIFT_TWO_ROOT_BOUND.md#releasing-two-original-roots)
+· [Half-cheapest fixed-shift bound](ABC_FULL_SHIFT_DICTIONARIES_AND_CODEGREES.md#a-fixed-shift-count-without-a-radical-cap-on-the-shift)
+
+These estimates apply to progression blocks centred and stepped
+separately in each fixed original record. For example, if a target
+dictionary has radical cap \(n^z\), a cover by \(n^s\) unit blocks
+of parameter width \(n^h\) and steps of radical cap \(n^\mu\) costs
+at most \(s+\min\{h,z/2,(z+h)/4\}\) in base \(n=X^L\), up to
+arbitrarily small normalized allowances with fixed \(z,h,\mu\).
+For an affordable record of unsaved exponent \(r\), a strict
+margin below \(r\) in this expression gives a saving. An
+unrestricted use still requires an upper bound on the number
+of occupied blocks.
+
+
+For highly full endpoints, the one-block bound in (PI6)
+also holds with arbitrary radical and physical span of
+the step. Write \(\Lambda=2\rho+\tau\) for the common-cap
+case. At sufficiently small fixed \(\Lambda\), it is
+enough to require both endpoints to be
+\(\lceil\kappa/\Lambda\rceil\)-full for any fixed
+\(\kappa>0\). The high valuation roots survive gcd
+division outside a prime support of cost \(O(\Lambda^2)\).
+The quotient of the gap by the step is a single small
+root, and the high-coordinate determinant release
+applies even when the complete gap is tall.
+[Highly full progression inputs](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md#progression-occupancies-with-highly-full-inputs)
+
+
+A weighted low-root variant gives an occupancy bound
+\(\min\{\tau,3\rho/5,(2\rho+\tau)/5\}\) for a common
+radical cap \(X^\rho\) with arbitrary step, including
+values with low valuations and no physical gap. Use the
+smaller of that bound and the sharper estimates above
+when their hypotheses apply.
+[General-step progression occupancy](ABC_GENERAL_STEP_PROGRESSION_OCCUPANCY.md)
+
 ## Stopping a full divisor above the block width
 
 The following bound does not use the \(abc\) counts. Fix an integer

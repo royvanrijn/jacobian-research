@@ -290,7 +290,20 @@ consecutive pairs through terminal thirteen are complete. The
 [terminal-fourteen fixed rays](MULTIVARIATE_TERMINAL_FOURTEEN_HIGH_CURVATURE.md)
 cover \(S\ge8\), every total private degree at least four, and the
 listed lower private-degree cases above their shared-curvature
-thresholds. Terminal fourteen is the first remaining fixed terminal.
+thresholds. The [terminal-fourteen retained profiles](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_PROFILES.md)
+cover every private profile and all fully shared profiles with a
+reciprocal above \(1/8\). The [terminal-fourteen group disks](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_DISKS.md)
+and their [retained complements](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_MIDDLE.md)
+cover every fully shared profile on \([.64,.76]\). The
+[lower-middle group disks](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_LOW_MID.md)
+cover \([.50,.63]\) at cap \(1/40\) and \([.63,.64]\) at cap \(1/44\).
+The [upper proof](MULTIVARIATE_TERMINAL_FOURTEEN_HIGH_U.md)
+and the [retained bridge](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_BRIDGE.md)
+cover \([.76,.855]\). The
+[retained upper complements](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_UPPER.md)
+complete the range \([.855,1)\), so all fully shared profiles
+with \(u\in[.64,1)\) are covered.
+Terminal fourteen is the first remaining fixed terminal.
 The [linked-skew supplement](MULTIVARIATE_TERMINAL_THIRTEEN_LINKED_CAYLEY.md)
 demonstrates a common separating ray that moves with the matched
 signed second moment on a narrow upper band.
@@ -311,9 +324,20 @@ extends the excess-loss estimate to smooth test functions and gives
 explicit bounds for the whole even and odd logarithmic corrections at
 common grid locations. The [higher signed-moment centering](MULTIVARIATE_CENTERED_HIGHER_SIGNED_TANH.md)
 reduces the independent skew remainder by taking out a larger exact
-multiple of the matched second moment. The [midpoint-grid comparison](MULTIVARIATE_MATCHED_FRACTIONAL_LOG_TRANSPORT.md)
+multiple of the matched second moment. The [sharp capped moment bounds](MULTIVARIATE_SHARP_SKEW_CONDITIONED_TANH_MOMENTS.md)
+give an attained simultaneous envelope for the full kernels at fixed skew.
+The [midpoint-grid comparison](MULTIVARIATE_MATCHED_FRACTIONAL_LOG_TRANSPORT.md)
 carries the full-kernel estimate through to interpolants of the normalized
-log coefficients. A [Gaussian comparison path](MULTIVARIATE_FACTORIAL_GAUSSIAN_ANNULUS_HOMOTOPY.md)
+log coefficients. The [holomorphic matched log transport](MULTIVARIATE_HOLOMORPHIC_MATCHED_LOG_TRANSPORT.md)
+bounds all complex derivatives of the exact normalized Gamma chord
+difference by the excess outer loss and gives the two same-degree
+multipliers for the upper moment. At circle-rooted references, an
+integrated root-product estimate controls the first angular variation
+of the matched chord by the reference root spacing. The [alternating binomial estimate](MULTIVARIATE_ANALYTIC_FRACTIONAL_BINOMIAL_TRANSPORT.md)
+carries this analytic transport through exponentiation and the
+alternating sum against the upper-grid lift. The [angular sensitivity bound](MULTIVARIATE_ANGULAR_PHASE_CONDITIONING.md)
+shows exponential phase sensitivity to general bounded log-coefficient
+directions at angles separated from the negative ray. A [Gaussian comparison path](MULTIVARIATE_FACTORIAL_GAUSSIAN_ANNULUS_HOMOTOPY.md)
 keeps a narrow normalized root annulus. For the Gaussian references,
 the explicit all-degree comparisons apply at all physical time ratios
 for [\(s\ge13\)](MULTIVARIATE_DIFFUSE_EXPLICIT_S13_INTERLACING.md) and
@@ -325,6 +349,32 @@ preserves cancellation by applying the analytic coefficient multiplier
 to each nonvanishing Gaussian half separately. For the ordinary
 moments, this gives angular separation at every terminal \(N\) with
 \(S\ge13\) and \(S\eta N\le10^{-6}\).
+The [degree-independent diffuse lift](MULTIVARIATE_DIFFUSE_ABSOLUTE_ANGLE_LIFT.md)
+centers the analytic multiplier at the shifted saddle, applies its
+linear part exactly and couples the radial phase comparisons. This gives
+the additional ordinary range \(S\ge13,\ S\eta\le10^{-9}\) at every
+terminal. The [signed midpoint curvature test](MULTIVARIATE_MIDPOINT_CURVATURE_SYMBOL.md)
+improves the small-gap condition when the signed cubic row sum cancels.
+The [matched-tanh phase lift](MULTIVARIATE_MATCHED_TANH_ORDINARY_ANGLE_LIFT.md)
+gives an actual all-order angular criterion in the matched moments,
+with common Gaussian strength \(2\sum_i r_i\ge13\), signed second
+moment \(\sum_i\epsilon_i r_i^2\), and unsigned second and third moments.
+The [curvature-eight centered lift](MULTIVARIATE_DIFFUSE_S8_CENTERED_ANGLE_LIFT.md)
+covers \(8\le S\le13\) for \(n\ge600\) with \(S\eta\le5\cdot10^{-12}\).
+The [smaller-disk centered lift](MULTIVARIATE_DIFFUSE_S6_CENTERED_ANGLE_LIFT.md)
+covers \(6\le S\le8\) for \(n\ge10000\) with \(S\eta\le4\cdot10^{-15}\).
+The [abstract paired half lift](MULTIVARIATE_DIFFUSE_ABSTRACT_PAIRED_HALF_LIFT.md)
+uses the [Gaussian comparison at \(16/3\)](MULTIVARIATE_DIFFUSE_EXPLICIT_S16_OVER_3_INTERLACING.md)
+to reach \(16/3\le S\le6\) for \(n\ge10^7\) and
+\(S\eta\le5\cdot10^{-24}\).
+The curvature-eight and curvature-six signed matched-moment criteria allow larger individual gaps
+when the row orientations cancel. The underlying Gaussian
+comparisons use an adjacent saddle estimate before transferring
+the exact factorial coefficients.
+In the weak-curvature window the [fourth-order angular model](MULTIVARIATE_MATCHED_SECOND_ORDER_ANGLES.md)
+preserves the reference interlacing. The remaining exact phase
+comparison would follow from a paired angular remainder smaller than
+\(y/(32n^2)\) at the neighboring Hermite anchors in its stated window.
 
 Across all terminals, the [explicit high-curvature theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_CURVATURE_BOUND.md)
 and the [uniform weak-curvature theorem](MULTIVARIATE_UNIFORM_WEAK_CURVATURE_ANGLE_SEPARATION.md)

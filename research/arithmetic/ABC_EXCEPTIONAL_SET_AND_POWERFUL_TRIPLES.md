@@ -43,6 +43,26 @@ alone is at least \(\lambda/3\) on balanced data.
 [Grouped moments](ABC_GROUPED_VALUATION_FOURTH_MOMENTS.md)
 · [Moving-selector limitation](ABC_EXTERNAL_MOVING_ROWS_LIMIT.md)
 
+
+Pasten's conductor-dependent Faltings height bound is
+\(h(E)\ll M\phi(D)\log\ell\) for an admissible
+factorization \(N_E=DM\) and a prime \(\ell\nmid N_E\).
+It gives \(h(E)\ll N_E\log\log N_E\) in general and
+\(h(E)\ll_S N_E\) for curves semistable outside a fixed
+set \(S\). These are bounds on height at a given conductor.
+The introduction records the stronger \(N_E^{1/3+\varepsilon}\)
+height bound in the special Frey setting. Our relevant
+quantity here is the number of occurring support records
+at polynomial radical budget. Bilu and Luca prove finite
+exceptions to the common-torsion explanation for
+multiplicatively dependent pairs of nonzero sums from two
+fixed, almost disjoint finitely generated multiplicative
+groups. Their group hypotheses are fixed, whereas the
+supports in our secant and transfer dictionaries can vary
+through the height limit.
+[Pasten, Theorem 1.1 and Corollaries 1.2–1.3](https://arxiv.org/html/2609.17390v1#S1)
+· [Bilu–Luca, Theorem 1.2](https://arxiv.org/html/2607.28857v1#S1.SS1)
+
 For the small-budget limit, the graph argument gives
 \[
 N_\lambda(X)\ll_{\lambda,\eta,\varepsilon}X^{(1/3+\eta)\lambda+\varepsilon}
@@ -6727,22 +6747,32 @@ convert this to a global count. Any fixed positive fraction
 of radical weight on a prescribed pool of polylogarithmic
 cardinality suffices for a strict saving, with no fixed
 upper limit on the logarithmic power of its cardinality.
-The same counting principle gives a fixed-value fibre
-exponent strictly below \(2/9\) at balance, and transfers
-to least-repaired primitive quotients in the corresponding
-discounted sectors.
+The weighted two-letter inequality gives a fixed-value
+fibre exponent \((1/6+o(1))\lambda\) at balance. In general
+the pointwise exponent is at most one quarter of the
+radical budget outside the prescribed primitive letter,
+up to the usual small-budget allowance. This also bounds
+the pointwise count at a prescribed least-repaired target.
+[Fixed complete values and prescribed least-repaired targets](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md#fixed-complete-values-and-prescribed-least-repaired-targets)
 
 At saturation, the logarithmic radical weight is
 asymptotically concentrated on primes whose occurrence
 frequencies are \(p^{-1+o(1)}\) in the weighted mean.
 Anatomic root marginals attain the sum of their numerical
-height caps in entropy. At positive limiting heights,
-bounded groups of high-degree roots can be charged by
-joint dictionary cardinalities. The same saturation
-argument gives nearly maximal aggregate joint entropy
-and vanishing total pair mutual information across any
-disjoint within-letter high-root pairing.
-[Effective radical budget](ABC_EFFECTIVE_RADICAL_BUDGET.md)
+height caps in entropy. Write \(W_T\) for the charged
+joint dictionary exponent on letter \(T\). In original
+height shells the improved count is
+\[
+                      D\le \tfrac12\bigl(W-\max_T W_T\bigr)+o(\lambda),
+                       \qquad W=\sum_T W_T .
+\]
+The allowed within-letter groups have bounded size or
+boundedly many shrinking valuation windows. Already
+frozen roots retain their raw caps and have zero
+conditional dictionary cost. Equality at \(W/3\) forces
+balance of all three effective costs. A zero numerical
+short height is handled by releasing the tall pair in the
+real short strip. [Effective radical budget](ABC_EFFECTIVE_RADICAL_BUDGET.md)
 · [Grouped root dictionaries](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md)
 
 A prescribed cheap full lock also permits direct signed
@@ -6754,8 +6784,15 @@ shrinking valuation windows may be arbitrarily large at
 fixed truncation, by the wide-cofactor count. Two
 simultaneous locks permit dictionaries spanning all three
 letters and bound their joint cap sum from below by
-\(2\lambda/3\) at saturation. The projected pair bounds
-do not control arbitrary three-way dependence.
+\(2\lambda/3\) at saturation. A fixed real height gap gives the tall-pair bound without a
+lock and permits three-letter groups with only one full lock
+on a tall letter. Abstract modular dictionaries can attain the
+square-root count while satisfying the signed diagonal moment
+bounds on arbitrary unions of groups. An arithmetic improvement
+has to use restrictions on the actual values beyond those
+moment bounds and the local pair entropies.
+[Real and modular joint dictionaries](ABC_REAL_STRIP_GROUP_DICTIONARIES.md)
+· [Signed residue moment obstruction](ABC_THREE_RESIDUE_DICTIONARY_MOMENT_OBSTRUCTION.md)
 
 The effective budget also accepts conditional prices
 along ordered prime supports. A sublogarithmic next-symbol
@@ -7467,3 +7504,265 @@ uses a finite set of fixed degrees. Its stated exponent is independent of the sm
 These comparisons identify the scope of the argument.
 [Binyamini, Cluckers and Kato, Corollary 8](https://arxiv.org/html/2401.03982v2)
 · [Zeng, Complete modulus locking](https://hexagonmath.org/pdf/2611.00621v1)
+
+
+### Recent reductions for the balanced endpoint
+
+At any fixed \(r<1/6\), rows with two distinct primes of
+ambient occurrence at most \(X^{r\lambda}\) incur an absolute
+exponent loss of order \(\lambda\), with the margin depending
+on \(r\). A single rare prime on one letter forces the other
+two letters to have nonatomic mass at least \(1/3-r\) each.
+These conditions hold across the whole balanced endpoint.
+The two-prime saving transfers to least-repaired primitive
+quotients, with no count of extra common multiples. Typical
+affordable divisor records also give many rows with the same
+powered divisor, and with controlled additional support
+intersection. Near one third a count for these actual
+common-modulus fibres must still retain the complete radical
+budget and the numerical height restrictions.
+[Rare occurrences and common powerful moduli](ABC_RARE_PRIME_OCCURRENCE.md)
+
+One quantitative target is to find, in any putative saturating
+box, a prescribed root record \(\mathcal R\) and two letters
+\(U,V\) with admissible conditional groups for which
+\[
+        2H(\mathcal R)+
+          \sum_{G\subset U\text{ or }V} H(\boldsymbol x_G\mid\mathcal R)
+                     \le (2/3-\eta)\lambda\log X
+\]
+for an absolute \(\eta>0\). The weighted dictionary bound
+(GD4) would then contradict saturation. Small divisor
+packets provide many candidate records, but the common-divisor
+star bound alone supplies lower bounds on their multiplicity.
+An upper bound for the actual three-letter incidence is needed
+to force the stipulated conditional compression.
+[Conditional dictionary inequality](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md#conditional-dictionary-inequality)
+· [Common rows across a shift dictionary](ABC_AGGREGATE_SHIFT_DICTIONARY_STARS.md)
+
+For fixed affordable fibres, the projective packing gap
+forces a positive lower numerical weight on typical rational
+output secants even after excluding a prescribed polynomial-height
+prime pool. Consequently nonconstant rational charts of a degree
+fixed before the height limit can produce height \(n^K\) outputs
+on only \(n^{o(1)}\) rows in the small-budget exponent sense, for each
+fixed \(K\). This closes the small-output branch of the pure-term
+two-mixed-factor reduction, including charts with opposing
+orientations and more than two slots. Counting enough original
+tuples whose transferred outputs obey the requisite radical cap
+is still open.
+[Rational output height on affordable fibres](ABC_MONOMIAL_TRANSFER_HEIGHT_AND_FERMAT_GEOMETRY.md#a-uniform-small-output-bound-for-rational-charts)
+
+The Darmon–Granville argument uses full triangle-cover indices
+and a fixed coefficient support. In contrast, the ordinary
+weighted projective curve has the effective common orders as
+its inertia, including genus zero for pairwise coprime high
+orders. The exact common multiplier then lifts every primitive
+ratio to an exact-power point, with its height depending on
+the primitive valuations. For least repair, a count must
+control the cost of these lifts at varying supports. The
+fine valuation grid supplies such control on its sector,
+but the small width of a valuation window alone imposes no
+common exact divisibility.
+[Effective orders and weighted Fermat curves](ABC_EXACT_POWER_REPAIR_COEFFICIENTS.md#the-effective-orders-determine-the-weighted-fermat-curve)
+· [Fine valuation divisibility](ABC_FINE_VALUATION_DIVISIBILITY.md)
+· [Darmon–Granville, Theorem 2](https://www.math.mcgill.ca/darmon/pub/Articles/Research/12.Granville/pub12.pdf)
+
+In the #943 lifting calculation, let two edges have a common
+right kernel \(d\) and normalized left values \(A_iS\), with
+\(S=\alpha^kg^j\). Write their right values as
+\(\kappa_2d^jc_i^k\) and allow targets \(N_i\) to vary.
+Eliminating \(S\) gives
+\[
+ \kappa_2d^j(A_2c_1^k-A_1c_2^k)=A_2N_1-A_1N_2 .
+\]
+The lifting step transfers after fixing the nonzero weighted
+target difference, since the right-hand side is precisely
+the Pell or Thue datum. Fixing an ordinary shift \(N_1-N_2\)
+does not fix that datum when \(A_1\ne A_2\). A useful aggregate
+transfer would need control of the weighted differences across
+the actual target support dictionary, followed by recovery of
+the common scale from a target or from an equally strong
+arithmetic datum.
+[Pell recovery](ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md#2-the-actual-cubic-and-norm-equations)
+· [Mixed-power lifting](ERDOS_943_MIXED_POWER_KERNEL_GCD_WEIGHTS.md#2-an-exact-fixed-level-lifting-problem)
+
+
+### Fixed shifts, high fullness, and fresh radicals in secants
+
+The fixed-value strategy can dispense with a radical budget
+on the prescribed shift. Above half the cheaper dictionary
+cost, fixed-residue moments force both variable summands
+into bounded lists of narrow roots with wider cofactors.
+Each original root of positive numerical weight costs at
+least the normalized fibre exponent. Fixing both complements
+and releasing one high root per side gives one third of
+the combined dictionary cost in original height shells.
+The nondegenerate monomial estimate releases the whole
+bounded list and gives
+\[
+       D\le\max\{\min(W_U,W_V)/2,B\}+o(\lambda)
+\]
+for bounded high groups, where \(B\) is the cost of the
+low-degree singletons. The fixed coefficients can have
+positive numerical height for this last bound.
+[Two-root fixed-shift count](ABC_FIXED_SHIFT_TWO_ROOT_BOUND.md)
+· [Arbitrary shifts with high free degrees](ABC_FULL_SHIFT_DICTIONARIES_AND_CODEGREES.md#arbitrary-shifts-with-high-free-degrees)
+
+For each \(\eta>0\) and sufficiently large fixed \(k\),
+the resulting ordered count of sums of two \(k\)-full
+integers at every prescribed \(N\) is
+\[
+                      O_{k,\eta,\varepsilon}
+                         (N^{(1/2+\eta)/k+\varepsilon}).
+\]
+The proof allows arbitrary common divisors. It fixes the
+parts of the primitive quotients supported on the common
+divisor and preserves all other original high valuations.
+The unequal-fullness version uses half the smaller
+reciprocal fullness when the two thresholds are proportional
+to \(k\). The same fixed-shift count controls codegrees
+after eliminating the shared row factor in a varying-shift
+graph, using a full shift divisor or the high-degree
+hypothesis on both targets.
+[Pointwise powerful sums](ABC_FIXED_SHIFT_TWO_ROOT_BOUND.md#sums-of-two-highly-full-integers-at-every-target)
+· [Weighted codegrees](ABC_FULL_SHIFT_DICTIONARIES_AND_CODEGREES.md#weighted-differences-in-a-varying-shift-graph)
+
+At saturation, a typical joint divisor record of product \(G\)
+inside an allowed group has occurrence frequency
+\(G^{-1}X^{o(\lambda)}\). This gives many rows with extra
+overlap arbitrarily small relative to their common record
+inside the group. The bound across unrestricted positions
+is anisotropic, and an explicit abstract support model
+attains the remaining loss. In a maximal balanced fixed-value
+fibre, the two free letters each need at least \(1/6\)
+nonatomic mass, with the atom at scaled degree zero
+included in the atomic budget.
+[Joint divisor occurrences](ABC_DIVISOR_RECORD_RECIPROCITY.md)
+
+A near-full family of \(m\)-tuples from an affordable fibre
+of exponent \(r\) requires primitive radical cap at least
+\(4r\) under a polynomial transfer. For a signed product
+of input ratios, the two pure products recover the original
+rows after discarding costly overlaps. If their charged
+radical caps are \(A_1,A_2\), the remaining output term
+needs fresh radical exponent at least
+\(2mr-\min(A_1,A_2)\). Fresh primes avoid all three original
+letters of each input row. For balanced pairs in cheap
+records the required fresh radical in the projective
+secant approaches \(2r\). This excludes low fresh-radical
+compression. The unrestricted count would need control
+of many actual secants, including the sector with large
+fresh radical.
+[Polynomial thresholds and fresh radicals](ABC_POLYNOMIAL_TRANSFER_RADICAL_THRESHOLD.md)
+
+
+### Dispersion of secant valuations and fixed-shift applications
+
+Finite-window concentration of fresh secant powers is a
+power-sparse relation in a positive-exponent affordable
+fibre. Fix two anchors with a large common neighbourhood.
+The ratio of their secant values is a nonconstant projective
+function of the query. A cheap full divisor on one
+original query letter fixes that ratio modulo the
+divisor. When boundedly many shrinking windows capture
+its two secants' numerical height, the wide-cofactor
+bound recovers the projective query at arbitrarily small
+remaining cost. This argument permits a bounded radical
+defect on each edge. After projective peeling, it gives
+an \(r/2\) lower bound, up to fixed allowances, on
+exact-power defects in a fibre of exponent \(r\) in base
+\(n=X^L\), for every order above a sufficiently large
+fixed threshold, including orders chosen by individual edges.
+The diffuse numerical degree law also has root cost at
+least \(r/2\) when it has no mass at zero or infinity
+and its root cost is integrable.
+[Finite-window secants and defect counts](ABC_FINITE_WINDOW_SECANT_GRAPHS.md)
+
+The half coefficient for highly full fixed-shift pairs has
+a strict saving for each fixed pair of proportional fullness
+thresholds. At equality the more highly full term would
+exhaust its root-height budget at the minimum degree.
+It can then be compressed into one narrow root and a
+vanishing-height cofactor. Mutual modulus locks force
+boundedly many original high positions on both terms,
+and their simultaneous release contradicts the positive
+fibre exponent. For arbitrary common divisors and fixed
+coefficients, the underlying fixed-shift estimate gives
+additive energy at most \(n^{5l/2+o(1)}\) for a complete-value
+dictionary of exponent and raw cost \(l>0\) with no atom at
+scaled degree zero. A single large high-degree packet also
+reduces varying-shift codegrees, even if division by the
+common gcd removes some of its primes.
+[Strict fixed-target saving](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md)
+· [Energy and large-packet codegrees](ABC_NONPRIMITIVE_FIXED_SHIFT_ENERGY.md)
+
+The two-cheapest dictionary bound charges the quotient of
+a progression gap by its fixed step. For endpoint radical
+caps \(\rho_1,\rho_2\) in base \(X\) and parameter gap at
+most \(X^\tau\), the exponent for all close pairs is at
+most
+\(\tfrac12\min(\rho_1+\rho_2,\rho_1+\tau,\rho_2+\tau)\)
+up to the small-budget allowance. The step radical still
+enters the hypothesis guaranteeing an anatomic budget.
+For a fixed physical gap, that hypothesis can be dropped:
+the large step remains a fixed coefficient on a short
+letter. For highly full endpoints no shortness of the
+physical gap is needed either. A bounded-degree release
+can instead keep one determined low root on the shift.
+An upper count of occupied blocks in unrestricted
+affordable fibres remains open.
+[Progression pair counts](ABC_POWERED_PROGRESSION_OCCUPANCY.md#discounting-the-step-in-a-two-letter-bound)
+· [Arbitrary large coefficient and a determined low root](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md#a-prescribed-coefficient-of-arbitrary-height-with-one-low-root)
+
+
+Even without a step radical, physical gap or fullness
+condition, the occupancy of one unit progression block of
+parameter width \(X^\tau\) with endpoint radical at most
+\(X^\rho\) is bounded by the exponent
+\(\min\{\tau,3\rho/5,(2\rho+\tau)/5\}\), up to the
+small-budget and height allowances. The proof combines
+the two-letter count with a low-degree error on only one
+tall letter and a modular uniqueness count for the low
+part when the step is large. It charges each prime that
+becomes low after gcd division against the radical of
+the other original endpoint.
+[General-step progression occupancy](ABC_GENERAL_STEP_PROGRESSION_OCCUPANCY.md)
+
+## Output profiles of secants and products
+
+A near-full relation of primitive monomial ratios at the fresh radical
+threshold produces a second normalized \(1/3\) family. The pure
+output degree laws are explicit weighted dilations of the input
+letter laws. For a cross secant, the output pair-excess inequalities
+force fresh nonatomic root mass at least
+\(2/3-\min_{U\ne V}(c_U+c_V)\) in the original \(X^L\) units.
+At the minimum nonatomic total this is \(1/3\), and such secants
+must have numerical height exponent 2 in the original height
+variable, bounded scaled degrees and no escaped numerical weight.
+The transfer applies at arbitrary
+nonatomic totals, with the height and tail loss controlled by the
+specific input pair excess.
+
+Fixed binary polynomials of the products require at least \(m/3\)
+fresh radical exponent per distinct irreducible factor, up to
+arbitrarily small fixed losses outside a power-smaller set.
+Nonlinear factors are counted by fixed-field norm recovery,
+extending the Pell counting mechanism and the minimally repaired
+cyclotomic split. An adaptive exact \(q\)-th power quotient has the
+stronger floor \((m/3-o(1))\tau(q)\) for its secant. A macroscopic
+degree grid cannot carry the nonatomic input mass, so any power
+order on a near-full relation has \(qL\to0\). This permits using
+the small-budget counting bounds after taking the exact roots.
+[Primitive secant transfer and adaptive power-class bounds](ABC_SECANT_ENDPOINT_TRANSFER.md)
+
+For two fixed columns of the arithmetic graph, one compressed
+valuation core suffices for the fixed-cofactor and reduced-ratio
+codegree counts, with the other target's complete valuation list.
+This gives a power deficit for multiplicatively consistent
+rectangles in dense eligible graphs. A prime-labelled Latin
+dictionary shows why marginal cofactor cardinalities alone cannot
+force a ratio deficit. The unresolved step is to derive a
+cofactor-ratio deficit or a comparable constraint on small-radical
+secants from the original ternary equation at arbitrary profiles.
+[One-sided compressed-core codegrees](ABC_COMPRESSED_CORE_WEIGHTED_CODEGREES.md)

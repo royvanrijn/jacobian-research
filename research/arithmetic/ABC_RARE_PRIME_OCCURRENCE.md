@@ -262,6 +262,33 @@ discard size is \((\rho-2b(g))/3\) up to arbitrarily small losses.
 This proves (RP4). It uses the radical cap for each complete triple,
 including all three letters.
 
+A shorter sequence can control overlap with the entire previous
+union. For any fixed \(0<\tau<\rho/(2b_0)-1\), one can choose
+\(\lfloor(\log X)^\tau\rfloor\) ordered rows of the fibre, starting
+with \(z\), such that each row shares outside \(G\) radical weight
+less than \(\rho\lambda\log X\) with the union of all preceding
+supports. Choose \(a\in[0,1)\) so that
+\[
+             2b_0<(1-a)\rho,\qquad a>1-\frac1{1+\tau}.
+\]
+At a given step the previous union has
+\(O((\log X)^{1+\tau}/\log\log X)\) primes. Assign zero price to
+the primes of \(G\), price \(a\log_X p\) to the remaining primes
+in that union, and the ordinary price to all others. The polynomial
+logarithmic size bound on the union gives (EB3) by summing its
+\(j\)-th possible contribution at most \((j+1)^{-a}\).
+The separately zero-priced support of \(G\) has \(o(\log X)\)
+primes. A bad row has effective budget at most
+\((1-b(g)-(1-a)\rho)\lambda\). By (EB4) its count is power smaller
+than the whole fibre, uniformly at every step. The already chosen
+rows also have smaller count. Thus the selection can continue.
+In a bounded scaled-degree band of squarefree coordinates,
+stripping the previous supports and \(G\) gives pairwise coprime
+powered products. Outside \(G\) this removes at most
+\(\rho\lambda\log X\) of each row's radical weight. For an upper
+scaled-degree bound \(v\) the associated numerical-height loss
+is at most \(v\rho+o(1)\) in base \(X\).
+
 In a balanced limiting profile, fix a positive compact range
 \([u,v]\), \(u>0\), on a letter \(T\) with positive nonatomic
 mass there. Given any small bound on individual coordinate caps,
@@ -307,6 +334,54 @@ letters. Every pair of distinct rows in that fibre therefore
 shares outside radical of weight \((2b+o_X(1))\lambda\log X\).
 This construction concerns prime supports and does not impose
 the additive equation.
+
+## Minimally repaired quotients with rare primes
+
+Fix \(\ell>0\), \(0\le r<1/6\), a sufficiently small fixed
+\(\lambda>0\), and a fixed positive integer repair order \(M\).
+Let \(\mathcal Q\) be any family of distinct primitive quotients
+\(a+b=c\) in the sector
+\[
+  \operatorname{rad}(abc)<c^\lambda,\qquad
+  \operatorname{rad}(c)\ge c^{\ell\lambda},\qquad
+  H_M(c)=\prod_{p\mid c}p^{\max(v_p(c),M)}\le Y .
+\]
+Here \(H_M\) is the target height after the least repair with orders
+\((1,1,M)\). Put \(t=\min\{1,1/(M\ell\lambda)\}\). Count rows in
+\(\mathcal Q\) in which at least two distinct primes each occur in
+at most \(Y^{rt\lambda}\) members of \(\mathcal Q\). There are
+\(\delta,\lambda_0>0\), depending only on \(r\), such that for
+\(0<\lambda<\lambda_0\) this count is
+\[
+       O_{\lambda,M,\ell,r,\varepsilon}
+                     \bigl(Y^{(1/3-\delta)t\lambda+\varepsilon}\bigr)
+ \tag{RP8}
+\]
+for every \(\varepsilon>0\), uniformly in \(\mathcal Q\).
+Occurrence may equivalently be measured on the minimally repaired
+representatives, because the least repair multiplier is supported
+on primes of the quotient.
+[Target minimal repair](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md#a-reverse-transfer-by-repairing-only-the-target)
+
+Indeed \(H_M(c)\ge c\) and \(H_M(c)\ge\operatorname{rad}(c)^M
+\ge c^{M\ell\lambda}\), so every quotient has \(c\le Y^t\).
+Choose \(0<\kappa<1\) with \(r/(1-\kappa)<1/6\). The quotients
+with \(c\le Y^{(1-\kappa)t}\) satisfy (RP8) by the unrestricted
+one-third estimate with an allowance sufficiently small in terms
+of \(\kappa\). For the others use original height shells \(X/2<c\le X\)
+with \(Y^{(1-\kappa)t}<X\le 2Y^t\).
+In each shell the absolute occurrence threshold is at most
+\(X^{(r/(1-\kappa))\lambda}\). Apply the two-rare-prime theorem
+and sum over the shells. The \(O(\log Y)\) factor is absorbed into
+the height allowance.
+
+In the range \(M\ell\lambda\ge1\), the exponent in (RP8) is
+\((1/3-\delta)/(M\ell)\) before the allowance. The argument counts
+primitive quotients with a single least repair each, so it incurs
+no contribution from arbitrary common multipliers.
+[Unrestricted one-third estimate](ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13)
+
+## Remaining arithmetic problem
 
 These results impose occurrence constraints across the entire
 balanced endpoint. They leave open the case in which the

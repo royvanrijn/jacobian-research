@@ -384,12 +384,38 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Explicit small-coupling angular interlacing for the linked Gaussian reference | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_SMALL_COUPLING_INTERLACING.md) |
 | Matched tanh transport for the assembled fractional log coefficients | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_FRACTIONAL_LOG_TRANSPORT.md) |
 | A radial bound preserved by the factorial-to-Gaussian path | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FACTORIAL_GAUSSIAN_ANNULUS_HOMOTOPY.md) |
-| Terminal thirteen for light shared profiles on the certified bands | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_SHARED_LIGHT.md) |
-| Terminal thirteen for every private profile and all shared reciprocals above 1/8 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_PROFILES.md) |
+| Terminal thirteen for light shared profiles on the certified bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_SHARED_LIGHT.md) |
+| Terminal thirteen for every private profile and all shared reciprocals above 1/8 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_PROFILES.md) |
 | Terminal thirteen for the upper fully shared Cayley bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_CAYLEY.md) |
 | Terminal thirteen for the .930 to .934 linked-skew Cayley band | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_LINKED_CAYLEY.md) |
-| Terminal thirteen for retained complements of the shared reciprocal caps | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_BANDS.md) |
-| Terminal thirteen for tightened retained complements in the shared middle bands | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_FALLBACKS.md) |
+| Terminal thirteen for retained complements of the shared reciprocal caps | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_BANDS.md) |
+| Terminal thirteen for tightened retained complements in the shared middle bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_FALLBACKS.md) |
+| Terminal thirteen for shared profiles on the grouped root-disk bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_SHARED_DISKS.md) |
+| Terminal thirteen for the remaining retained bridge complements | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_BRIDGES.md) |
+| Terminal thirteen for every ordinary two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_ALL_PROFILES.md) |
+| Terminal fourteen fixed-ray separation at high curvature and private degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_HIGH_CURVATURE.md) |
+| Polynomial diffuse tolerance for ordinary factorial angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_POLYNOMIAL_ANGLE_LIFT.md) |
+| A degree-independent diffuse tolerance for ordinary factorial angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_ABSOLUTE_ANGLE_LIFT.md) |
+| Signed midpoint-curvature cancellation in ordinary factorial angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIDPOINT_CURVATURE_SYMBOL.md) |
+| Higher tanh moments conditioned on the signed second moment | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SKEW_CONDITIONED_TANH_MOMENTS.md) |
+| Terminal fourteen for all private and large-reciprocal profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_PROFILES.md) |
+| Terminal fourteen shared middle band by grouped root disks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_DISKS.md) |
+| Terminal fourteen near the flat limit | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_HIGH_U.md) |
+| Holomorphic excess-loss transport for consecutive factorial log coefficients | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HOLOMORPHIC_MATCHED_LOG_TRANSPORT.md) |
+| Matched factorial transport through the alternating binomial sum | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ANALYTIC_FRACTIONAL_BINOMIAL_TRANSPORT.md) |
+| Exponential phase sensitivity to bounded reciprocal log-coefficient errors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ANGULAR_PHASE_CONDITIONING.md) |
+| An actual all-order angular separation criterion in matched tanh moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_ORDINARY_ANGLE_LIFT.md) |
+| Sharp simultaneous capped moment bounds at fixed skew | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARP_SKEW_CONDITIONED_TANH_MOMENTS.md) |
+| Explicit adjacent Gaussian phase comparison down to curvature eight | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_EXPLICIT_S8_INTERLACING.md) |
+| Explicit adjacent Gaussian phase comparison down to curvature six | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_EXPLICIT_S6_INTERLACING.md) |
+| Centered factorial angular separation down to curvature eight | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_S8_CENTERED_ANGLE_LIFT.md) |
+| Centered factorial angular separation down to curvature six | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_S6_CENTERED_ANGLE_LIFT.md) |
+| Terminal fourteen shared lower-middle grouped disks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_LOW_MID.md) |
+| Terminal fourteen retained complement on [.64,.76] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_MIDDLE.md) |
+| Terminal fourteen retained complements on [.855,1) | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_UPPER.md) |
+| Explicit Gaussian paired-saddle angular separation down to curvature 16/3 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_EXPLICIT_S16_OVER_3_INTERLACING.md) |
+| A uniform centered factorial transfer for arbitrary analytic half disks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_ABSTRACT_PAIRED_HALF_LIFT.md) |
+| Terminal fourteen retained bridge on [.76,.855] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_BRIDGE.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -484,7 +510,7 @@ Scope limits:
 - Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
 - A three-column ordinary factorial row identification has regular endpoint moments in orders two through four and a certified collision in the physical interpolation. This excludes physical-interval nonvanishing as a general transfer proof. The discrete endpoint question and the unrestricted two-column interval remain open.
 - The exact joint measure closure has a specific diagonal diffuse law and an independent signed center parameter. An all-order physical binary transfer is proved with untouched independent private degree at least two on both sides.
-- Every ordinary two-monomial profile is covered through terminal twelve. Above a computable absolute unevaluated cutoff, every profile has disjoint consecutive root arguments, even after independent positive rescalings. Uniform weak- and high-curvature angular exclusion applies at every terminal. The remaining fixed terminals start at thirteen.
+- Every ordinary two-monomial profile is covered through terminal thirteen. Above a computable absolute unevaluated cutoff, every profile has disjoint consecutive root arguments, even after independent positive rescalings. Uniform weak- and high-curvature angular exclusion applies at every terminal. The remaining fixed terminals start at fourteen.
 
 Tracked obligations (computed states):
 
@@ -513,6 +539,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Decide whether the actual repeated-root triple set is EMPTY: for EVERY integer a>=0,d>=1,m>=2, prove gcd_Q(A_(m;a,d),A_(m;a,d)_prime)=1, or exhibit an actual repeated-root triple. A support-uniform eventual cutoff and finiteness of this set do not prove emptiness.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-ALL-ORDER-SQUAREFREENESS
 - **mathematical / open:** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF
 - **mathematical / open:** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
-- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=13 below the computable absolute cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
+- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=14 below the computable absolute cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

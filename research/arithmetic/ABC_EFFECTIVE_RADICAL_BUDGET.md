@@ -406,6 +406,15 @@ the probability of any individual marginal value is
 at most \(X^{-(1/9+\delta_1)\lambda}\) after reducing
 \(\delta_1\) to absorb the height allowances.
 
+
+The stronger two-letter dictionary bound now gives a fixed complete
+value exponent \((1/6+o(1))\lambda\) at balance. It charges the
+prescribed original root positions at zero and retains their raw
+caps for the modulus estimates. The same bound gives at least
+\(X^{(1/6-o(1))\lambda}\) different complete values on each letter
+in a balanced saturating family.
+[Fixed complete values](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md#fixed-complete-values-and-prescribed-least-repaired-targets)
+
 For a different application put
 \(K=\log X/(\log\log X)^2\) and choose
 \[

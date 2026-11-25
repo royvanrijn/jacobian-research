@@ -694,6 +694,64 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Eligible tuple refinement recovers pure tags from an output denominator | Internal result | proved | [Source](ABC_PURE_TERM_DENOMINATOR_RECOVERY.md) |
 | Pure polynomial transfer charts require a larger radical budget on large outputs | Internal result | proved | [Source](ABC_PURE_TERM_DENOMINATOR_RECOVERY.md) |
 | Small-output local rigidity eliminates two-slot additive transfers | Internal result | proved | [Source](ABC_PURE_TERM_DENOMINATOR_RECOVERY.md) |
+| Weighted group dictionary quarter bound in the original height shells | Internal result | proved | [Source](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md) |
+| The two cheapest charged letter dictionaries bound the box count | Internal result | proved | [Source](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md) |
+| Conditional two-letter root entropy under a prescribed record | Internal result | proved | [Source](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md) |
+| Real logarithmic moments charge the tall pair without a full lock | Internal result | proved | [Source](ABC_REAL_STRIP_GROUP_DICTIONARIES.md) |
+| A real gap and one full tall divisor charge all three joint dictionaries | Internal result | proved | [Source](ABC_REAL_STRIP_GROUP_DICTIONARIES.md) |
+| A uniform small-budget saving for two rare prime occurrences | Internal result | proved | [Source](ABC_RARE_PRIME_OCCURRENCE.md) |
+| Typical affordable divisor records recur in large rows with controlled extra support | Internal result | proved | [Source](ABC_RARE_PRIME_OCCURRENCE.md) |
+| Rare-prime saving for minimally repaired primitive quotients | Internal result | proved | [Source](ABC_RARE_PRIME_OCCURRENCE.md) |
+| Nonconstant rational charts preserve a positive numerical output secant scale | Internal result | proved | [Source](ABC_MONOMIAL_TRANSFER_HEIGHT_AND_FERMAT_GEOMETRY.md) |
+| All output heights in fixed-arity pure-term polynomial transfers | Internal result | proved | [Source](ABC_MONOMIAL_TRANSFER_HEIGHT_AND_FERMAT_GEOMETRY.md) |
+| Three abstract residue components can attain the square-root dictionary count | Internal result | proved | [Source](ABC_THREE_RESIDUE_DICTIONARY_MOMENT_OBSTRUCTION.md) |
+| Fixed complete-value fibres cost at most one quarter of the outside radical budget | Internal result | proved | [Source](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md) |
+| Pointwise least-repair count at a prescribed repaired target | Internal result | proved | [Source](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md) |
+| Fixed shifts force concentration by one-residue dictionary moments | Internal result | proved | [Source](ABC_FIXED_SHIFT_TWO_ROOT_BOUND.md) |
+| One third of the sum of the free dictionary costs at arbitrary fixed shifts | Internal result | proved | [Source](ABC_FIXED_SHIFT_TWO_ROOT_BOUND.md) |
+| A fixed-shift bound in terms of high root costs and low degrees | Internal result | proved | [Source](ABC_FIXED_SHIFT_TWO_ROOT_BOUND.md) |
+| Ordered sums of two highly full integers at arbitrary targets | Internal result | proved | [Source](ABC_FIXED_SHIFT_TWO_ROOT_BOUND.md) |
+| Half the cheaper dictionary cost at a full or short-scale fixed shift | Internal result | proved | [Source](ABC_FULL_SHIFT_DICTIONARIES_AND_CODEGREES.md) |
+| At an arbitrary fixed shift high groups cost half the cheaper dictionary | Internal result | proved | [Source](ABC_FULL_SHIFT_DICTIONARIES_AND_CODEGREES.md) |
+| Weighted varying-shift codegrees from the fixed-shift count | Internal result | proved | [Source](ABC_FULL_SHIFT_DICTIONARIES_AND_CODEGREES.md) |
+| Unequal high-fullness summands use the smaller reciprocal order | Internal result | proved | [Source](ABC_FULL_SHIFT_DICTIONARIES_AND_CODEGREES.md) |
+| All-degree grouped dictionaries via high projections of a lock | Internal result | proved | [Source](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md) |
+| Typical joint divisor records have reciprocal frequencies inside allowed groups | Internal result | proved | [Source](ABC_DIVISOR_RECORD_RECIPROCITY.md) |
+| Arbitrarily small extra support overlap inside a common-divisor group | Internal result | proved | [Source](ABC_DIVISOR_RECORD_RECIPROCITY.md) |
+| Two-letter overlap controls whole-record fibres | Internal result | proved | [Source](ABC_DIVISOR_RECORD_RECIPROCITY.md) |
+| Fixed-target saturation forces small atoms on each free letter | Internal result | proved | [Source](ABC_DIVISOR_RECORD_RECIPROCITY.md) |
+| Prime-labelled supports obstruct inverse-product frequency across many groups | Internal result | proved | [Source](ABC_DIVISOR_RECORD_RECIPROCITY.md) |
+| Polynomial transfers of affordable tuples require radical exponent at least four times the fibre exponent | Internal result | proved | [Source](ABC_POLYNOMIAL_TRANSFER_RADICAL_THRESHOLD.md) |
+| Bivariate expansion raises the output radical threshold | Internal result | proved | [Source](ABC_POLYNOMIAL_TRANSFER_RADICAL_THRESHOLD.md) |
+| Monomial ratio products require large fresh radical outside all original letters | Internal result | proved | [Source](ABC_POLYNOMIAL_TRANSFER_RADICAL_THRESHOLD.md) |
+| A single compressed term forces the fixed-shift fibre into the low-degree budget | Internal result | proved | [Source](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md) |
+| A uniform strict half-coefficient saving for two highly full summands | Internal result | proved | [Source](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md) |
+| Strict varying-shift codegrees at a high degree floor | Internal result | proved | [Source](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md) |
+| The two-cheapest dictionary bound permits an arbitrary fixed coefficient on a short letter | Internal result | proved | [Source](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md) |
+| High roots can be released with one determined low root | Internal result | proved | [Source](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md) |
+| Arbitrary large coefficients with two high-letter variable parts and a short parameter | Internal result | proved | [Source](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md) |
+| Nonprimitive fixed shifts retain the high-root and low-degree dictionary bounds | Internal result | proved | [Source](ABC_NONPRIMITIVE_FIXED_SHIFT_ENERGY.md) |
+| Large high-degree divisor packets reduce arbitrary-shift codegrees | Internal result | proved | [Source](ABC_NONPRIMITIVE_FIXED_SHIFT_ENERGY.md) |
+| Diffuse complete-value dictionaries expand under addition and subtraction | Internal result | proved | [Source](ABC_NONPRIMITIVE_FIXED_SHIFT_ENERGY.md) |
+| Two-cheapest radical costs control nearby pairs in progressions | Internal result | proved | [Source](ABC_POWERED_PROGRESSION_OCCUPANCY.md) |
+| Nearby-pair bounds at arbitrary progression steps | Internal result | proved | [Source](ABC_POWERED_PROGRESSION_OCCUPANCY.md) |
+| Highly full inputs in progression blocks of arbitrary span | Internal result | proved | [Source](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md) |
+| Numerically finite-window secants form a power-sparse graph | Internal result | proved | [Source](ABC_FINITE_WINDOW_SECANT_GRAPHS.md) |
+| Defect costs bound codegrees for finite-window secant graphs | Internal result | proved | [Source](ABC_FINITE_WINDOW_SECANT_GRAPHS.md) |
+| Two prescribed linear forms have a finite-window count by their defect costs | Internal result | proved | [Source](ABC_FINITE_WINDOW_SECANT_GRAPHS.md) |
+| Exact-power defect floors for all sufficiently large adaptive orders | Internal result | proved | [Source](ABC_FINITE_WINDOW_SECANT_GRAPHS.md) |
+| Positive-scale secant limits need positive nonatomic root cost | Internal result | proved | [Source](ABC_FINITE_WINDOW_SECANT_GRAPHS.md) |
+| A weighted two-cheapest count with arbitrary fixed coefficients and low degrees | Internal result | proved | [Source](ABC_GENERAL_STEP_PROGRESSION_OCCUPANCY.md) |
+| Low radical bounds nearby-pair costs for arbitrary progression steps | Internal result | proved | [Source](ABC_GENERAL_STEP_PROGRESSION_OCCUPANCY.md) |
+| Uniform occupancy of arbitrary-step progressions by small-radical integers | Internal result | proved | [Source](ABC_GENERAL_STEP_PROGRESSION_OCCUPANCY.md) |
+| Low fresh radical transfers a product relation to a new one-third endpoint | Internal result | proved | [Source](ABC_SECANT_ENDPOINT_TRANSFER.md) |
+| A secant at the fresh-radical threshold inherits the endpoint pair excess restrictions | Internal result | proved | [Source](ABC_SECANT_ENDPOINT_TRANSFER.md) |
+| Each distinct irreducible polynomial factor consumes the full product exponent in fresh radical | Internal result | proved | [Source](ABC_SECANT_ENDPOINT_TRANSFER.md) |
+| Exact power classes require a cyclotomic fresh radical surplus at adaptive orders | Internal result | proved | [Source](ABC_SECANT_ENDPOINT_TRANSFER.md) |
+| Macroscopic valuation grids leave at least the summed nonatomic radical mass | Internal result | proved | [Source](ABC_SECANT_ENDPOINT_TRANSFER.md) |
+| One compressed valuation core suffices for the weighted two-column codegree | Internal result | proved | [Source](ABC_COMPRESSED_CORE_WEIGHTED_CODEGREES.md) |
+| A one-sided compressed core makes multiplicatively consistent rectangles sparse | Internal result | proved | [Source](ABC_COMPRESSED_CORE_WEIGHTED_CODEGREES.md) |
+| A Latin prime dictionary prevents a ratio deficit from marginal capacities alone | Internal result | proved | [Source](ABC_COMPRESSED_CORE_WEIGHTED_CODEGREES.md) |
 
 **Computed obligations:** 107 unresolved; 19 resolved within their exact scope.
 

@@ -8,6 +8,29 @@ Let \(r_k(N)\) count the ordered representations of \(N\) as the sum of two posi
 \]
 This improves the bound in Corollary 2 for every \(k\ge3\). Priority for (1) remains unverified.
 
+
+For each \(\eta>0\) and sufficiently large fixed \(k\),
+the fixed-shift argument gives
+\(r_k(N)\ll_{k,\eta,\varepsilon}N^{(1/2+\eta)/k+\varepsilon}\)
+uniformly in \(N\), with arbitrary common divisor. It
+combines one-residue moments with a coefficient-uniform
+count for two remaining large-degree roots. The theorem
+above applies at every fixed \(k\ge3\). Releasing a bounded
+list also gives a version for unequal fullness.
+[Fixed-shift powerful sum bound](ABC_FIXED_SHIFT_TWO_ROOT_BOUND.md#sums-of-two-highly-full-integers-at-every-target)
+· [Unequal fullness](ABC_FULL_SHIFT_DICTIONARIES_AND_CODEGREES.md#unequal-powerfulness-at-an-arbitrary-target)
+
+
+When fullness thresholds are proportional to \(k\), the
+leading half coefficient also admits a strict fixed saving.
+For two \(k\)-full summands there is an absolute \(\delta>0\)
+such that all sufficiently large fixed \(k\) give the
+pointwise exponent \((1/2-\delta)/k+\varepsilon\).
+The target and common divisor remain arbitrary.
+The proof uses concentration when the high order
+exhausts the root-height budget.
+[Strict fixed-shift saving](ABC_FIXED_SHIFT_STRICT_HALF_SAVING.md#why-equality-of-the-raw-and-full-height-budgets-is-impossible)
+
 ## Canonical factors and fixed-coordinate multiplicity
 
 The canonical factorization of a \(k\)-full integer is \(m=\prod_{j=k}^{2k-1}a_j^j\), with the \(a_j\) for \(j>k\) squarefree and pairwise coprime. The factor \(a_k\) may share primes with those factors. For an exponent \(qk+r\ge k\), \(0\le r<k\), a prime belongs only to \(a_k\) with exponent \(q\) if \(r=0\). Otherwise it belongs to \(a_{k+r}\) with exponent one and to \(a_k\) with exponent \(q-1\). This shows both existence and uniqueness. Replacing any one coordinate by a divisor of itself preserves the canonical conditions.
