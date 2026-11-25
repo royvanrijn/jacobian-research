@@ -5,7 +5,6 @@ from fractions import Fraction
 from functools import lru_cache
 import gzip
 import json
-from math import lcm
 from pathlib import Path
 import sys
 
@@ -14,7 +13,7 @@ from verify_abc_grouped_fulloc_certificate import (
     load_repaired_certificate,
     sparse_branches,
 )
-from verify_abc_height_fulloc_certificate import LETTERS, branch_rows
+from verify_abc_height_fulloc_certificate import LETTERS, branch_rows, check_leaf, sparse_rows
 from verify_abc_pair_deviation_certificate import require
 
 
@@ -42,43 +41,6 @@ def read_delta(path):
     with gzip.open(path, "rt", encoding="utf-8") as source:
         require(json.loads(next(source)) == SCHEMA, "unexpected height-delta header")
         return replacement_index(map(json.loads, source))
-
-
-def sparse_rows(rows):
-    """Use one common denominator for each row and retain its nonzero coefficients."""
-    result = []
-    for row, bound in rows:
-        denominator = lcm(bound.denominator, *(value.denominator for value in row))
-        rhs = bound.numerator * (denominator // bound.denominator)
-        coefficients = tuple((i, v.numerator * (denominator // v.denominator))
-                             for i, v in enumerate(row) if v)
-        result.append((denominator, rhs, coefficients))
-    return tuple(result)
-
-
-def check_leaf(checker, node, rows, limit):
-    require(set(node) == {"type", "y", "bound"} and isinstance(node["y"], dict)
-            and node["y"], "invalid rational leaf")
-    terms = []
-    for row_text, multiplier_text in node["y"].items():
-        index, multiplier = int(row_text), Fraction(multiplier_text)
-        require(str(index) == row_text and 0 <= index < len(rows) and multiplier > 0,
-                "invalid leaf row or multiplier")
-        denominator, rhs, coefficients = rows[index]
-        terms.append((multiplier.numerator, multiplier.denominator * denominator, rhs, coefficients))
-
-    common = lcm(*(denominator for _, denominator, _, _ in terms))
-    vector = [0] * checker.N
-    right = 0
-    for numerator, denominator, rhs, coefficients in terms:
-        scale = numerator * (common // denominator)
-        right += scale * rhs
-        for i, value in coefficients:
-            vector[i] += scale * value
-    require(vector[checker.D] == common and min(vector) >= 0, "invalid leaf dual coefficients")
-    bound = Fraction(right, common)
-    require(bound == Fraction(node["bound"]) <= limit, "invalid leaf dual bound")
-    return bound
 
 
 def verify(height_replacements):

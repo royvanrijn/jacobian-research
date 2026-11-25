@@ -232,6 +232,8 @@ inequality for the two tall terms.
 | --- | --- | --- |
 | \(7/10\) | \(2/5\) | 7,268 |
 | \(4/5\) | \(9/20\) | 21,808 |
+| \(9/10\) | \(13/25\) | 3,344 |
+| \(1\) | \(11/20\) | 280,510 |
 
 These trees start with the aggregate Fourier tail inequalities at
 cutoffs \(8,9,10,12,15,18,20,24,32\). Their branches also use the

@@ -7,7 +7,7 @@ from functools import lru_cache
 import gzip
 from itertools import product
 import json
-from math import gcd
+from math import gcd, lcm
 from pathlib import Path
 from types import ModuleType
 
@@ -253,22 +253,40 @@ def branch_rows(checker, node, signed=False, *, short="a"):
     return [[row(diagonal)]] + off_branches
 
 
-def check_leaf(checker, node, rows, threshold):
+def sparse_rows(rows):
+    """Use one common denominator for each row and retain its nonzero coefficients."""
+    result = []
+    for row, bound in rows:
+        denominator = lcm(bound.denominator, *(value.denominator for value in row))
+        rhs = bound.numerator * (denominator // bound.denominator)
+        coefficients = tuple((i, v.numerator * (denominator // v.denominator))
+                             for i, v in enumerate(row) if v)
+        result.append((denominator, rhs, coefficients))
+    return tuple(result)
+
+
+def check_leaf(checker, node, rows, limit):
     require(set(node) == {"type", "y", "bound"} and isinstance(node["y"], dict)
             and node["y"], "invalid rational leaf")
-    vector = [Fraction(0)] * checker.N
-    bound = Fraction(0)
-    for name, text in node["y"].items():
-        require(name.isdigit(), "invalid row index")
-        index = int(name)
-        multiplier = Fraction(text)
-        require(str(index) == name and index < len(rows) and multiplier > 0,
-                "invalid leaf multiplier")
-        coefficients, right = rows[index]
-        vector = [a + multiplier * b for a, b in zip(vector, coefficients, strict=True)]
-        bound += multiplier * right
-    require(vector[checker.D] == 1 and min(vector) >= 0, "invalid dual coefficients")
-    require(bound == Fraction(node["bound"]) <= threshold, "invalid rational leaf bound")
+    terms = []
+    for row_text, multiplier_text in node["y"].items():
+        index, multiplier = int(row_text), Fraction(multiplier_text)
+        require(str(index) == row_text and 0 <= index < len(rows) and multiplier > 0,
+                "invalid leaf row or multiplier")
+        denominator, rhs, coefficients = rows[index]
+        terms.append((multiplier.numerator, multiplier.denominator * denominator, rhs, coefficients))
+
+    common = lcm(*(denominator for _, denominator, _, _ in terms))
+    vector = [0] * checker.N
+    right = 0
+    for numerator, denominator, rhs, coefficients in terms:
+        scale = numerator * (common // denominator)
+        right += scale * rhs
+        for i, value in coefficients:
+            vector[i] += scale * value
+    require(vector[checker.D] == common and min(vector) >= 0, "invalid leaf dual coefficients")
+    bound = Fraction(right, common)
+    require(bound == Fraction(node["bound"]) <= limit, "invalid leaf dual bound")
     return bound
 
 
@@ -284,14 +302,16 @@ def verify(certificate, at_budget=None):
 
     @lru_cache(maxsize=8192)
     def expand(metadata):
-        return branch_rows(checker, json.loads(metadata), signed)
+        return tuple(sparse_rows(rows) for rows in branch_rows(checker, json.loads(metadata), signed))
 
     def walk(node, rows):
         kind = node["type"]
         counts[kind] += 1
         if kind == "leaf":
             bound = check_leaf(checker, node, rows, threshold)
-            return bound + Fraction(node["y"].get("0", 0)) * budget_change
+            if budget_change:
+                bound += Fraction(node["y"].get("0", 0)) * budget_change
+            return bound
         metadata = json.dumps({key: value for key, value in node.items() if key != "children"},
                               sort_keys=True, separators=(",", ":"))
         branches = expand(metadata)
@@ -303,7 +323,7 @@ def verify(certificate, at_budget=None):
     root = initial_rows(checker, budget)
     if certificate["schema_version"] == 3:
         root += tail_fourier_rows(checker)
-    upper = walk(certificate["tree"], root)
+    upper = walk(certificate["tree"], sparse_rows(root))
     result = {"budget": str(budget), "threshold": str(threshold), "upper": str(upper), **counts}
     if at_budget is not None:
         result["evaluated_budget"] = str(at_budget)

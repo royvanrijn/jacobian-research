@@ -929,7 +929,7 @@ The resulting exponent is \(342791/767360+\varepsilon\).
 On \(C\), freeze a coordinate set of mass \(f_C\), whose product
 with the fixed coefficient gives a modulus \(M\gg X^{w_C}\).
 On each of the other letters \(T=A,B\), select a nonempty group
-\(I_T\) whose degrees are all divisible by a fixed \(g\ge2\).
+\(I_T\) whose degrees are all divisible by a fixed \(g\ge1\).
 The selected groups are on distinct letters. Their root values are
 \[
  u_T=\prod_{i\in I_T}x_{T,i}^{i/g}.
@@ -1028,7 +1028,7 @@ roots have combined height \(2/5<1/2\).
 The stronger bound (10) instead uses \(O_C=\{4\}\) and
 \(I_A=I_B=\{4\}\). Its power is \(g=4\), its two root heights
 are \(1/5\) each, and their sum is below \(w_C=4/5\).
-Thus (8) gives
+Thus (10) gives
 \[
  D\le\frac15+2\left(\frac13-\frac15\right)+\varepsilon
      =\frac7{15}+\varepsilon.
@@ -1061,202 +1061,500 @@ by releasing degrees \(1,3\). The resulting lower bound on the
 right-hand side is \(8-1-1=6\).
 [Exact check of the two symmetric profiles](verify_abc_higher_moment_obstructions.py)
 
-### A uniform analytic exponent of \(287/500\)
+### A uniform analytic exponent of \(4/7\)
 
-Put \(d_0=287/500\). In a height shell, the largest letter and the
-larger addend both have size comparable to the shell height. Call
-these two letters tall and label them \(B,C\). Label the remaining
-letter \(A\). Their weighted heights are \(1,1\), up to the usual
-arbitrarily small loss, and the weighted height of \(A\) is at most
-one. This argument keeps all original coordinates of the fixed
-anatomic decomposition, including the degrees above six.
+Put \(d_0=4/7\). In a height shell the largest letter and the
+larger addend both have size comparable to the shell height.
+Label these two letters \(B,C\), and label the remaining letter
+\(A\). The weighted heights of \(B,C\) can be taken to be one,
+and the weighted height of \(A\), denoted \(h_A\), is at most
+one. Small shell and exceptional-coefficient errors are
+absorbed in the final exponent loss. Keep all original
+coordinates of the fixed anatomic decomposition.
 
-Write \(L_T=\sum_i\alpha_{T,i}\) and \(L=\sum_T L_T\le1\).
-The pair bound gives \(D\le L-\max_T L_T\).
-Set
+Write \(L_T=\sum_i\alpha_{T,i}\), \(L=\sum_T L_T\le1\), and set
 \[
- x=1-d_0=.426,\qquad z=2d_0-1=.148.
+ x=1-d_0=3/7,\qquad z=2d_0-1=1/7,\qquad F=4-6d_0=4/7.
 \]
-Suppose the pair bound exceeds \(d_0\). Then
+We may suppose the pair and Fourier bounds do not already
+give \(D\le d_0\). Their consequences are
 \[
- z\le L_T\le x,\qquad L_B+L_C\ge d_0 .
+ z\le L_T\le x,\qquad L_B+L_C\ge d_0,\qquad
+ \sum_T F_T\le F,\qquad F_T\ge\max_{i\ge2}\alpha_{T,i}.
  \tag{11}
 \]
-Indeed \(L_T\le L-d_0\) for each letter, and each mass is at least
-\(L-2(L-d_0)\). We also use the geometry row
-\[
- D\le\max\{L-s,L-1+w-s\}
-\]
-for a set of released coordinates with ordinary mass \(s\) and
-weighted mass \(w\).
+For the first two statements, each mass is at most \(L-d_0\).
+Subtracting the other two shows each mass is at least
+\(2d_0-L\ge z\). The geometry row for released mass \(s\) and
+released weight \(w\) is \(D\le\max(L-s,L-1+w-s)\).
 
-Write \(P(y,w)=(\sqrt{2y}-\sqrt w)_+^2\). The energy exponent
-of the full released letter \(T\) is at most \(L_T+P(L_T,w)\)
-by (7), and is always at most \(2L_T\). We also use the finer
-interpolation estimates in the paragraph preceding (7). For
-\(q=w/y\ge1\), the penalty for a chord with index \(m\) vanishes
-unless its coordinate mass is larger than \(w/(m+1)\).
-Among chords with \(m\ge m_0\), the relative penalty is at most
-\((\sqrt{m_0+1}-\sqrt{m_0q})_+^2\). The absolute penalty of one
-chord with index \(m\) is at most
+Use \(P(y,w)=(\sqrt{2y}-\sqrt w)_+^2\). The full released energy
+on a letter of mass \(y\) is at most \(y+P(y,w)\) by (7),
+and is always at most \(2y\). The function \(P\) is increasing
+in \(y\), decreasing in \(w\), and jointly convex. For convexity,
 \[
- y\,\frac{[m+1-mq]_+^2}{4m(m+1)},
+ P(y,w)=\sup_{0<t\le1}\{2(1-t)y+(1-1/t)w\}.
 \]
-by maximizing the product of the two linear factors in the chord.
-Both this penalty and \(P(y,w)\) decrease with the available
-modulus weight \(w\). In (9), a lock of mass \(f\) on \(T\)
-therefore gives the upper bound
-\[
- f+\frac{L-L_T}{2}+\frac{P_U+P_V}{2},
-\]
-where \(P_U,P_V\) are any valid bounds for the two sums of
-interpolation penalties at that lock weight.
+All interpolation penalties decrease with the available weight.
+For \(q=w/y\ge1\), a chord with index \(m\) can contribute only
+when the coordinate mass exceeds \(w/(m+1)\). The relative
+penalty on chords with \(m\ge m_0\) is bounded by
+\((\sqrt{m_0+1}-\sqrt{m_0q})_+^2\). The absolute penalty of a
+single chord with index \(m\) is at most
+\(y[m+1-mq]_+^2/(4m(m+1))\), by maximizing the product of
+the two linear factors in the chord. Direct residue counting
+by (9) gives \(D\le f+(K_U+K_V)/2\) for a lock of mass
+\(f\) on the third letter.
 
-For one more row, release a single coordinate of degree \(i\ge2\)
-and mass \(b\) on letter \(T\). The grouped collision estimate (1)
-has zero difference-fibre penalty on this letter. A nonzero
-difference of two \(i\)-th powers determines their gap up to
-divisor-many choices, and each gap determines the lower base.
-With \(f=L_T-b\), the resulting row is
+Releasing only a single coordinate of degree \(i\ge2\) and
+mass \(b\) on \(T\) gives zero difference-fibre penalty in the
+grouped collision estimate (1). A nonzero difference of
+\(i\)-th powers determines their gap up to divisor-many
+choices, and then determines the lower base. Thus, for either
+ordering of the other two letters \(U,V\), with \(f=L_T-b\),
 \[
- D\le f+\max\{L_V,\,(L_V+K_U)/2\}. \tag{12}
+ D\le f+\max\{L_V,(L_V+K_U)/2\}. \tag{12}
 \]
-Here \(U,V\) are the other two letters in either order, and \(K_U\)
-is the available energy exponent with modulus equal to the
-weighted frozen mass of \(T\).
+The modulus in \(K_U\) has weight equal to the frozen
+weighted mass on \(T\).
 
-**Large individual coordinates.** Put \(h=.1592\) and \(c_0=.283\).
-If any non-degree-one coordinate has mass \(b\ge c_0\), use (12)
-with \(U\) the smaller other mass and \(K_U\le2L_U\). The
-off-diagonal exponent is at most \((3+x)/4-c_0=.5735\),
-and the diagonal is at most \(1-z-c_0=.569\).
+**Large coordinates and early degrees.** Set
+\[
+ c_0=2/7,\qquad h=.152,\qquad u=.09.
+\]
+If any degree-\(i\) coordinate with \(i\ge2\) has mass \(b\ge c_0\),
+take \(U\) to have the smaller other mass in (12), and use
+\(K_U\le2L_U\). The two branches are at most
+\((3+x)/4-c_0\) and \(1-z-c_0\), respectively, both equal to
+\(d_0\).
 
 If a tall letter has degree-one mass \(b\ge h\), lock all its
-other coordinates, of mass \(L_T-b\) and weight \(1-b\).
-For \(b\le.25\), (9) gives at most
-\((1+x)/2-h+P(x,.75)\). For \(b\ge.25\) it gives at most
-\((1+x)/2-.25+P(x,1-x)\). Both are below \(.55706\).
-
-If a tall letter has a degree-two or degree-three coordinate
-with \(h\le b<c_0\), use (12) with \(U\) the larger other mass.
-The diagonal is at most \((1+x)/2-b\). The off-diagonal is
-bounded by
+other coordinates. The mass term in (9) is at most
+\((1+x)/2-b\), and its weight is \(1-b\). Splitting at \(b=.25\)
+bounds the exponent by the larger of
 \[
- (1+x)/2-b+\tfrac12P(x,1-3b).
+ (1+x)/2-h+P(x,.75),\qquad (1+x)/2-.25+P(x,1-x).
 \]
-This is convex in \(b\). Its endpoint values at \(h,c_0\) are
-below \(.57386\) and \(.57283\), respectively.
+This is below \(.56587\).
 
-**Two tall letters with large high-degree coordinates.** Suppose
-both have a coordinate of degree at least four with masses
-\(b_B,b_C\ge h\). Each is at most \(.25\). Let
-\(G(b)=b+P(x,4b)\). The singleton lock on either tall letter
-gives \(D\le .5+G(b_T)-L_T/2\) by (9). If both bounds exceed
-\(d_0\), (11) implies \(G(b_B)+G(b_C)>5d_0/2-1=.435\).
-The function \(G\) is convex and increasing on \([h,.25]\),
-as \(h>8x/25\). Put \(S=b_B+b_C\). If \(S\le x\), convexity
-and monotonicity give
-\(G(b_B)+G(b_C)\le G(.25)+G(x-.25)<.43306<.435\), a contradiction.
-Thus \(S>x\).
-
-Suppose at least one of the chosen degrees is at least five.
-In the geometric bound, release all coordinates except the two
-chosen tall coordinates. Their excluded mass is \(S\le .5\),
-and their excluded weight minus mass is at least \(3S+h\).
-Since \(3x+h>2-d_0\), both branches are at most \(d_0\).
-It remains to handle two chosen coordinates of degree four.
-Let \(h_A\) be the weighted height of the short letter.
-If \(h_A\ge x\), apply (10) with the entire short letter locked
-and only the two degree-four coordinates released on the tall
-letters. Their roots have combined height \(S\). The exponent
-is at most \(L-S+(S-h_A)_+=\max\{L-S,L-h_A\}\le d_0\).
-For \(h_A<x\), release all coordinates except the two chosen
-degree-four coordinates in the geometry row. Their excluded
-weight is \(4S\), so the released weight is at most
-\(h_A+2-4S<2-3x<1\). This gives \(D\le S\le .5\).
-
-**A tall letter with no large coordinates.** We are left with a
-tall letter all of whose coordinates have mass below \(h\).
-Among these tall letters label one of largest mass \(C\).
-The other tall letter \(B\) has every coordinate
-mass at most \(.25\), and at most one exceeds or equals \(h\).
-Indeed any such coordinate must have degree at least four, and
-two different such degrees would use weighted height at least
-\(9h>1\).
-
-Put \(u=.097\). If the third-largest mass on \(C\) is at least
-\(u\), write \(i<j<k\) for the degrees of its three largest
-coordinates. If \(k\ge5\), lock that coordinate. Its mass is at
-most \(h\), its weight is at least \(5u\), and \(L_C\ge3u\).
-The exponent is at most \(.5+h-3u/2+P(x,5u)<.56507\).
-
-Otherwise \(k\le4\). Lock all coordinates except the ones of
-degrees \(i,j\), whose masses are \(a,b\). Its weight is at
-least \(1-ia-jb\), and its mass is \(L_C-a-b\). The exponent
-is at most
+We can also settle short degree-one mass \(a\ge c_0\) when
+\(h_A\ge .5\). Lock its complement at weight at least \(.5-a\).
+The two tall masses sum to at most \(1-L_A\), and each is at
+most \(x\). By monotonicity and convexity in the masses, the
+sum of their penalties is at most the sum at the masses
+\(x,1-L_A-x\). Therefore
 \[
- (1+x)/2-a-b+P(x,1-ia-jb).
+ D\le (1+L_A)/2-a+
+ \tfrac12\{P(x,.5-a)+P(1-L_A-x,.5-a)\}.
 \]
-This is convex in \(a,b\). The point lies in the polygon
-\([u,h]^2\cap\{ia+jb\le1-ku\}\), because the degree-\(k\)
-coordinate has mass at least \(u\). At its vertices the
-strict upper bounds are \(.52557,.52557,.53881,.56676\) for
-the degree triples \((1,2,3),(1,2,4),(1,3,4),(2,3,4)\),
-respectively.
+This is convex in \(L_A\in[a,x]\). At its two endpoints the
+right-hand sides are convex in \(a\in[c_0,x]\), by joint
+convexity of \(P\). The resulting endpoint bounds are below
+\(.539\).
 
-Suppose the third-largest mass is below \(u\), and write \(b\)
-for the largest. Partition the coordinates of \(C\) into two
-bins by adding coordinates in decreasing mass order to the
-lighter bin. Their final mass difference is at most
-\(\max\{u,2b-L_C\}\). Until a first sign change the running
-difference is the largest mass minus the sum of the masses
-placed so far. A sign change can first occur at the third
-coordinate or later, and limits every subsequent difference
-to its mass.
+Now let a tall letter \(T\) have a degree-two or degree-three
+coordinate of mass \(b\in[h,c_0]\). Use (12) with \(U\) the
+larger other mass. The diagonal term is at most
+\((1+x)/2-b\), and the available weight is at least
+\(w_0=1-3b\). For \(b\le.175\), all remaining coordinate
+masses may be assumed at most \(c_0\). The only case unhandled
+so far would be a larger short degree-one mass when
+\(h_A<.5\). Then release all of the short letter and the
+chosen early coordinate. The two geometry branches are
+at most \(1-c_0-h<d_0\) and
+\(.5-c_0+2(.175)<d_0\).
 
-If the difference is at most \(u\), choose the bin of weight
-at least \(.5\). Its mass is at most \((L_C+u)/2\). We bound
-the released penalties at weight \(.5\). Put
+For \(b\le.175\), put
 \[
- g_2=(\sqrt3-\sqrt{1/x})^2,\qquad
- g_3=(2-\sqrt{1.5/x})^2 .
+ g_m(w)=(\sqrt{m+1}-\sqrt{mw/x})_+^2 .
 \]
-On \(A\), a chord with \(m=1\) can contribute only for a mass
-larger than \(.25\), and hence at most one contributes. If none
-does, the total is at most \(xg_2\). If its mass is at most
-\(.28\), its absolute penalty is at most
-\(2(.28-.25)(1-.28/x)\), and the others total at most
-\((x-.25)g_2\). If its mass is at least \(.28\), its penalty is
-at most \((x-.25)^2/(2x)\), while the others have no contributing
-chord with \(m\le2\) and add at most \((x-.28)g_3\).
-The maximum of these three bounds is below \(.03859\).
-
-On \(B\), all masses are at most \(.25\), so no \(m=1\) chord
-contributes. An \(m=2\) contribution requires mass greater
-than \(1/6\), and thus can occur at most once. Its absolute
-penalty is at most \(x(3-1/x)^2/24\), and all other penalties
-total at most \((x-1/6)g_3\). If no \(m=2\) chord contributes,
-use \(xg_3\). The maximum is below \(.01152\).
-Consequently (9) gives
-\(D<.5+u/2+(.03859+.01152)/2=.573555<d_0\).
-
-It remains to assume \(2b-L_C>u\). Then \(L_C<2h-u=.2214\).
-If both tall letters had every mass below \(h\), our choice of
-\(C\) would give \(L_C\ge d_0/2\) by (11), which is impossible.
-The other tall letter \(B\) therefore has a coordinate of
-degree at least four with mass \(b_B\ge h\). By (11),
-\(L_B>d_0-2h+u=.3526\). Locking that singleton gives
+At weight \(w=w_0\), \(w\ge x\). Without an \(m=1\) penalty
+the total released penalty on \(U\) is at most \(xg_2(w)\).
+An \(m=1\) penalty requires a coordinate of mass \(a>w/2\).
+It is at most \(2(a-w/2)(1-a/x)\), which is increasing for
+\(w/2\le a\le c_0\) throughout this range of \(w\).
+Its upper bound at \(c_0\) is
+\(2(c_0-w/2)_+(1-c_0/x)\). The other total mass is at most
+\(x-w/2\) and has no \(m=1\) contribution. For
+\(b\le.161\) we have \(w\ge6x/5\), so this other mass is at
+most \(w/3\) and contributes only with \(m\ge3\).
+Thus the off-diagonal bound is at most
 \[
- D\le .5+G(b_B)-L_B/2\le .75-L_B/2<.5737,
+ (1+x)/2-b+
+ \tfrac12\max\bigl\{xg_2(w),\,
+ 2(c_0-w/2)_+(1-c_0/x)+(x-w/2)g_m(w)\bigr\},\qquad w=1-3b,
 \]
-using the same monotonicity \(G(b_B)\le G(.25)=.25\).
+with \(m=3\) on \([h,.161]\) and \(m=2\) on \([.161,.175]\).
+These functions are convex on their intervals. In particular,
+the last product is convex because both factors are
+nonnegative and decreasing, the first affine and the second
+convex. Their endpoint bounds are below \(.56705\).
 
-The decimal thresholds above are rational. The [exact arithmetic check](verify_abc_analytic_574_constants.py)
-bounds each square root by consecutive multiples
-of \(10^{-12}\), using integer square roots. The classifications
-have slack to absorb dyadic-shell and fixed-coefficient errors,
-with the corresponding \(O(\eta)\) loss in the geometry
-and pair branches. Freezing coordinates below a fixed
-arbitrarily small mass threshold retains uniform moment orders
-as in (7). Taking the decomposition and shell losses arbitrarily
-small proves the \(287/500+\varepsilon\) exponent for the count.
+For \(.175\le b\le 11/42\), use the convex bound
+\((1+x)/2-b+P(x,1-3b)/2\), whose endpoint values are below \(.568\).
+For \(b\ge11/42\), \(w_0\le x/2\). A released letter of mass
+\(y\ge2w_0\) has interpolation penalty \(y-w_0\) at this
+weight. Both endpoints of every proportional interpolation
+chord are in the linear range. For \(y<2w_0\), (7) gives
+penalty at most \(P(2w_0,w_0)=w_0\). In either case the
+penalty is at most \(x-w_0\). The off-diagonal exponent is
+at most \(x+b/2\le d_0\).
+
+**Two tall letters with large high-degree coordinates.**
+Suppose each has a coordinate of degree at least four and
+mass \(b_B,b_C\ge h\). Write \(S=b_B+b_C\le.5\) and
+\(G(b)=b+P(x,4b)\). A singleton lock on \(T\) gives
+\(D\le .5+G(b_T)-L_T/2\). If both bounds exceed \(d_0\), then
+\[
+ G(b_B)+G(b_C)>2d_0-1+(L_B+L_C)/2\ge 3/7 .
+ \tag{13}
+\]
+Here \(G\) is convex and increasing on \([h,.25]\), since
+\(h>8x/25\). Also \(L_T\le1-3 b_T\), because every
+remaining coordinate has weight at least its mass.
+
+These conditions force \(S>.42\). If \(S\le.42\) and both
+masses are at most \(.228\), their \(G\)-sum is at most
+\(G(.192)+G(.228)<.42245\) by convexity and monotonicity.
+If one exceeds \(.228\), the other is below \(.192\).
+The tall mass sum is then at most
+\(1-3(.228)+2G(.192)-z<.56204<d_0\), contradicting (11).
+
+If \(S\ge x\) and at least one of the two degrees is at
+least five, release everything except the chosen coordinates.
+Their excluded weight minus mass is at least \(3S+h>2-d_0\),
+and their excluded mass is at most \(.5\). Both geometry
+branches are at most \(d_0\). If \(S\ge x\) and both degrees
+are four, use (10) for \(h_A\ge x\), with the whole short
+letter locked and the two degree-four coordinates released.
+This gives \(D\le\max(L-S,L-h_A)\le d_0\). For \(h_A<x\),
+release everything except the chosen coordinates in the
+geometry row. The released weight is at most
+\(h_A+2-4S<2-3x<1\), so \(D\le S\).
+
+It remains to consider \(.42<S<x\). The singleton failures
+and convexity bound \((L_B+L_C)/2\) by
+\(G(.25)+G(x-.25)-z<.29223\). Also \(F_A\le F-S<F-.42\).
+Put \(\tau=(4d_0-2)/3=2/21\). If a coordinate on \(A\)
+of degree at least four has mass \(a\ge\tau\), its singleton
+lock gives at most \(.29223+a+P(x,4a)\), a convex expression
+on \([\tau,.25]\) whose endpoint bounds are below \(.54224\).
+A degree-three mass \(a\ge .08\) likewise gives at most
+\(.29223+a+P(x,3a)\), with both endpoint bounds on
+\([.08,F-.42]\) below \(.56226\).
+
+Assume therefore that all degree-at-least-four masses on
+\(A\) are below \(\tau\) and its degree-three mass is below
+\(.08\). Set \(r=2-d_0-3S>0\).
+When the short degree-at-least-four coordinates have total
+excess, meaning weight minus mass, at least \(r\), omit
+them greedily up to the first crossing of \(r\). Their total
+mass is at most \(r/3+\tau=d_0-S\). If their excess is below
+\(r\) but the short degree-three coordinate supplies the rest,
+omit all those higher coordinates and the degree-three
+coordinate. Their mass is at most \(r/3+.08<d_0-S\).
+With these omissions in addition to the two tall exclusions,
+the second geometry branch is at most \(2-3S-r=d_0\).
+
+If the entire short excess from degrees at least three is
+below \(r\), the short height satisfies
+\(h_A\le x+F-S+r\) because \(\alpha_{A,2}\le F_A\).
+Release everything except the two chosen tall coordinates.
+The second branch is at most
+\(h_A+1-3S\le x+F+3-d_0-7S<.489\), and the first is \(S\).
+
+**A tall letter with only small coordinates.** We are left
+with at least one tall letter all of whose masses are below
+\(h\). Take \(C\) of greatest mass among those tall letters.
+The other tall letter \(B\) has all masses at most \(.25\)
+and at most one mass at least \(h\), since all such masses
+must now have degree at least four and \(9h>1\).
+
+If the third-largest mass of \(C\) is at least \(u\), let
+\(i<j<k\) be the degrees of its three largest coordinates.
+For \(k\ge6\), lock that coordinate. Its mass is at most
+\(h\), its weight at least \(6u\), and \(L_C\ge3u\).
+This gives \(D\le .5+h-3u/2+P(x,6u)<.55348\).
+
+For \(k\le5\), lock all coordinates except degrees \(i,j\),
+whose masses we denote by \(a,b\).
+The height inequality gives \(ia+jb\le1-ku\) and
+\[
+ L_C\le M(a,b)=\min\{x,1-(i-1)a-(j-1)b-(k-1)u\}.
+\]
+Indeed the degree-\(k\) mass is at least \(u\) and all other
+weights are at least their masses. The direct-residue
+exponent is at most
+\[
+ .5+M(a,b)/2-a-b+P(x,1-ia-jb).
+\]
+On each side of the affine boundary in \(M\), this is convex.
+Check the vertices of the polygon
+\([u,h]^2\cap\{ia+jb\le1-ku\}\) split by that boundary.
+All nonempty cases with \(1\le i<j<k\le5\) have bounds
+below \(.56822\).
+
+If the third-largest mass is below \(u\), write \(b\) for
+the largest and place coordinates in descending mass order
+in whichever of two bins is lighter. The final mass
+difference is at most \(\max\{u,2b-L_C\}\). Before the first
+sign change, the running difference is the largest mass
+minus the sum of the others assigned. A sign change first
+occurs at the third coordinate or later and all subsequent
+differences are at most that coordinate's mass.
+
+If the difference is at most \(u\), choose the bin of
+weight at least \(.5\). Its mass is at most \((L_C+u)/2\).
+At weight \(.5\) write \(g_2=g_2(.5)\), \(g_3=g_3(.5)\).
+A contributing \(m=1\) chord on \(A\) is unique and requires
+mass larger than \(.25\). If it is absent, the penalty is
+at most \(xg_2\). If its mass is at most \(.28\), its
+penalty is at most \(2(.28-.25)(1-.28/x)\) and the rest is
+at most \((x-.25)g_2\). If its mass is at least \(.28\),
+the penalty is at most \((x-.25)^2/(2x)\) and the other
+mass contributes only with \(m\ge3\), at most
+\((x-.28)g_3\). These give \(P_A<.03969\).
+On \(B\), \(m=1\) is absent and an \(m=2\) penalty occurs
+at most once, as it requires mass greater than \(1/6>h\).
+The penalty is at most the larger of
+\(xg_3\) and \(x(3-1/x)^2/24+(x-1/6)g_3\), giving
+\(P_B<.01231\). By (9),
+\(D<.5+u/2+(.03969+.01231)/2=.571<d_0\).
+
+If \(2b-L_C>u\), then \(L_C<2h-u=.214<d_0/2\).
+Both tall letters cannot have all masses below \(h\) by the
+choice of \(C\) and (11). Thus \(B\) has a degree-at-least-four
+coordinate with mass at least \(h\) and
+\(L_B>d_0-2h+u\). Its singleton lock gives
+\(D\le .5+G(.25)-L_B/2=.75-L_B/2<.57129\).
+
+The [constant check](verify_abc_analytic_four_sevenths_constants.py)
+verifies the numerical inequalities using exact rational bounds
+on the radicals. The case
+thresholds and inequalities are stable under an arbitrarily
+small perturbation of shell weights, yielding the indicated
+\(X^\varepsilon\) loss after shell summation and the fixed
+anatomic decomposition. Tiny released coordinates may be
+frozen as in (7) to bound the required moment orders
+uniformly.
+
+### A determinant bound at the joint \(1/2\) profile
+
+Consider primitive triples whose coordinates on each letter have
+scales \(Y,Y,Y^2\) at degrees \(1,3,4\), respectively, where
+\(Y=X^{1/12}\). Write the coordinates as \(x_T,y_T,z_T\).
+Fixed exceptional coefficients and signs may be attached to the
+three products. Their subpower contributions can be included in
+the exponent loss. For this profile the box count satisfies
+\[
+ D\le \frac{249}{500}+\varepsilon. \tag{14}
+\]
+The proof separates a divisor range and uses two quartic congruence
+estimates for the remaining prime factors.
+
+#### Quartic congruence estimates
+
+Let \(p\) be a prime with \(p\ge Y^{2-12\delta}\), where
+\(\delta=1/500\), and let \(\gamma\) be a unit modulo \(p^4\).
+Uniformly in \(\gamma\), for positive integers \(x\ll Y\) and
+\(z\ll Y^2\) that are units modulo \(p\), we have
+\[
+ \begin{aligned}
+ \#\{(x,z):xz^4\equiv\gamma\pmod{p^4}\}
+     &\ll_\varepsilon Y^{21/25+\varepsilon},\\
+ \#\{(x,z):xz^{-4}\equiv\gamma\pmod{p^4}\}
+     &\ll_\varepsilon Y^{3/4+\varepsilon}.
+ \end{aligned} \tag{15}
+\]
+For the first congruence cut the \(z\) range into intervals of
+length \(H=Y^h\) with \(h=29/20\), and for the second use \(h=5/3\).
+All intervals have length less than \(p\) for large \(Y\).
+
+Take \(R=100\). For the first congruence use the monomials
+\(x^a z^b\) with \(0\le a\le R\), \(0\le b\le4a\).
+Group them by \(w=b-4a\), so the monomials at each fixed weight are
+\(z^w t^a\) with \(t=xz^4\) and consecutive \(a\).
+For the second congruence use \(0\le a\le R\),
+\(0\le b\le4(R-a)\) and group by \(w=b+4a\), with \(t=xz^{-4}\).
+Take a square matrix evaluating the chosen monomials at any
+matching number of solutions in one interval.
+In a weight class of length \(\ell\), replace the columns by the
+evaluations of
+\[
+ z^w t^{a_0}(t-\gamma)^j,\qquad j=0,\ldots,\ell-1,
+\]
+where \(a_0\) is the first \(a\) in that class and an integer
+representative of \(\gamma\) is used.
+These are integral linear combinations of the original monomials
+in the same class, with a triangular change of determinant one.
+Since \(z\) is a \(p\)-adic unit, column \(j\) is divisible by
+\(p^{4j}\), including when \(w\) or the exponent of \(z\) in \(t\)
+is negative. Thus the determinant is divisible by \(p^{4S}\), where
+\[
+ S=\sum_w\binom{\ell_w}{2}
+   =4\binom{R+1}{3}+\binom{R+1}{2}
+   =\frac{R(R+1)(4R-1)}6 .
+\]
+Both monomial families have the same multiset of weight-class
+lengths. In the second family the length at \(w\) is
+\(1+\lfloor w/4\rfloor\) for \(0\le w\le4R\), and in the first
+family the lengths appear in reverse order.
+
+Translate \(z\) by the left endpoint of the interval.
+Within each fixed \(a\) the exponents \(b\) run from zero to their
+maximum, so this translation also preserves the determinant.
+Its absolute value is at most a constant times
+\(Y^{A+hB}\), where \(A=\sum a\) and \(B=\sum b\) over the chosen
+monomials. Put \(A_0=R(R+1)(8R+7)/6\).
+For the first family \((A,B)=(A_0,2A_0)\).
+For the second family \((A,B)=(S,2A_0)\).
+In units of \(\log Y\), the lower bound for the modulus exponent
+of the determinant is \((8-48\delta)S\).
+At \(R=100\) its excess over \(A+hB\) is \(53833/5\) for the
+first family and \(1633574/15\) for the second.
+All the evaluation determinants therefore vanish for sufficiently
+large \(Y\). The points in the interval lie on a nonzero polynomial
+\(F(x,z)\in\mathbb Z[x,z]\) of total degree at most \(5R\).
+If there are fewer points than monomials this already bounds their
+number by a constant, or the same conclusion follows from the
+linear dependence of the evaluation columns.
+
+Factor \(F\) into primitive irreducible polynomials over
+\(\mathbb Q\). A factor of total degree less than five for the
+first congruence has nonzero reduction modulo \(p\), and its
+substitution \(x=\gamma z^{-4}\) is a nonzero Laurent polynomial.
+Indeed the kernel of this substitution is the ideal generated by
+\(xz^4-\gamma\), of total degree five. Thus the factor gives
+\(O_R(1)\) possible residues \(z\bmod p\). The interval has length
+less than \(p\), and \(x\ll Y<p\) is fixed by its residue once
+\(z\) is chosen. For the second congruence, the same argument
+uses the substitution \(x=\gamma z^4\) and factors of degree less
+than four. The kernel is generated by \(x-\gamma z^4\), of
+total degree four.
+
+For an absolutely irreducible factor of degree \(d\) above the
+respective cutoff, apply the coefficient-uniform Bombieri–Pila
+bound in the square of side \(O(H)\) enclosing the translated
+interval and the \(x\) range. It gives \(O_{R,\varepsilon}
+(H^{1/d+\varepsilon})\) points. A rationally irreducible factor
+that is geometrically reducible has \(O_R(1)\) rational points,
+since these lie in the intersection of distinct conjugate
+components and Bézout's bound applies.
+Summing over factors and \(O(Y^{2-h})\) intervals gives
+\(Y^{2-h+h/5+\varepsilon}=Y^{21/25+\varepsilon}\) for the first
+congruence, and \(Y^{2-h+h/4+\varepsilon}=Y^{3/4+\varepsilon}\)
+for the second.
+[Bombieri–Pila, Theorem 5](https://people.maths.ox.ac.uk/pila/Ovals.pdf)
+
+#### Divisors and small cofactors
+
+Suppose a quartic coordinate on any letter has a divisor
+\(m\asymp X^\theta\) with
+\(\delta\le\theta\le1/6-\delta\).
+Use that letter as \(C\) and release only the two degree-four
+coordinates on the other letters. Their combined rooted height
+is \(1/3\), and fixing the remaining coordinates there costs
+\(1/3\). One can either lock \(m^4\) alone or lock \(m^4y_C^3\),
+fixing \(m\) and, in the latter case, \(y_C\).
+The two resulting rational-lock bounds, before the exponent
+loss, are
+\[
+ \max\left\{\frac13+\theta,\frac23-3\theta\right\},
+ \qquad
+ \max\left\{\frac5{12}+\theta,\frac12-3\theta\right\}.
+\]
+Use the second for \(\theta\le1/16\) and the first otherwise.
+Both are at most \(1/2-\delta\) on their stated portions.
+Choosing one divisor for each tuple and summing over its dyadic
+sizes contributes only a logarithmic loss.
+
+In the remaining tuples every quartic coordinate has the form
+\(z_T=p_T s_T\) with \(p_T>X^{1/6-\delta}\) prime and
+\(s_T\ll X^\delta\). Indeed a prime factor at least \(X^\delta\)
+must be larger than \(X^{1/6-\delta}\). If every prime factor is
+smaller than \(X^\delta\), a first partial product of those
+factors reaching \(X^\delta\) is at most \(X^{2\delta}\), a
+divisor in the excluded range. The large prime is unique for
+large \(X\) because two such factors would have product larger
+than the quartic coordinate.
+
+#### The graph at a fixed quartic coordinate
+
+Fix \(z_C\), and freeze \(s_A,s_B\), which costs \(O(X^{2\delta})\)
+choices. Put \(M=z_C^4\asymp Y^8\), and absorb the fixed signs,
+cofactors and exceptional coefficients into
+\(P=c_A x_A y_A^3\) and \(Q=c_B x_B y_B^3\).
+The remaining equation implies
+\[
+ P\alpha^4+Q\beta^4\equiv0\pmod M,\qquad
+ \alpha=p_A,\ \beta=p_B .
+\]
+There are \(O(Y^2)\) possible \(P\) and likewise \(Q\).
+They have fixed signs and heights at most
+\(Y^{4+48\delta+o(1)}\), smaller than \(M\).
+All these products and primes are units modulo \(M\) on any
+edge, and the two primes of a witness are distinct by
+primitivity.
+
+Build a simple graph on the coefficients \(P,Q\), using a
+witness pair \((\alpha,\beta)\) on each edge. For fixed \(P,Q\)
+the congruence determines \(Y^{o(1)}\) residue classes for
+\(\alpha/\beta\). The angular determinant bound for coprime
+pairs of height \(O(Y^2)\) gives \(O(1)\) pairs in each class.
+The two complete values then determine the value on \(C\).
+Every such value determines divisor-many tuples. This bounds
+the original count by the number of graph edges up to
+\(Y^{o(1)}\).
+
+Fix distinct \(P_1,P_2\) and consider their common neighbours
+\(Q\), with the corresponding edge witnesses
+\((\alpha_i,\beta_i)\) for \(i=1,2\).
+Dividing the two congruences shows
+\[
+ \left(\frac{\alpha_1\beta_2}{\alpha_2\beta_1}\right)^4
+ \equiv P_2/P_1\pmod M.
+\]
+The reduced fraction has height \(O(Y^4)\), so the angular
+bound again gives \(O(1)\) fractions per unit root class, since
+\(M\asymp Y^8\). Thus there are \(Y^{o(1)}\) fractions in all.
+
+If both prime pairs differ within their letter, the displayed
+numerator and denominator are coprime. The cross-letter
+primitivity applies to \(\alpha_i,\beta_i\), and the
+two within-letter differences give the other two needed
+coprimalities. Factoring the two products recovers the four
+primes up to bounded multiplicity. Then the first edge
+congruence fixes \(Q\bmod M\), and its height and fixed sign
+give at most one \(Q\). If both primes repeat within their
+letter, the congruences instead give \(P_1\equiv P_2\pmod M\).
+Their heights and fixed sign rule this out.
+
+If just the \(A\) prime repeats, the recovered fraction is
+\(\beta_2/\beta_1\), which determines both distinct \(B\) primes.
+The first edge now gives \(Q\alpha^{-4}\equiv\kappa\pmod{p_C^4}\)
+for a fixed unit \(\kappa\). Freeze \(y_B\), with \(O(Y)\) choices.
+The second estimate in (15) bounds the remaining choices of
+\(x_B,\alpha\) by \(Y^{3/4+\varepsilon}\).
+If just the \(B\) prime repeats, recover the two \(A\) primes
+instead and get \(Q\beta^4\equiv\kappa\pmod{p_C^4}\).
+Freezing \(y_B\) now gives the first estimate in (15), at most
+\(Y^{21/25+\varepsilon}\) choices.
+The common-neighbour count is therefore
+\(O_\varepsilon(Y^{46/25+\varepsilon})\).
+
+Cauchy–Schwarz for the degrees gives
+\(O_\varepsilon(Y^{3+(46/25)/2+\varepsilon})
+=O_\varepsilon(Y^{98/25+\varepsilon})\) edges.
+Restoring the \(O(Y^2)\) choices of the full \(z_C\) and the
+\(O(X^{2\delta})\) choices of the two cofactors gives the exponent
+\[
+ \frac{98/25+2}{12}+2\delta=\frac{373}{750}
+\]
+on this stratum. The divisor stratum gives the larger
+\(249/500\), proving (14). The strict determinant and counting
+inequalities also tolerate small perturbations in the box
+scales, with a correspondingly small exponent loss. Unselected
+coordinates can first be frozen. Their weighted height is small
+in a small neighborhood of the profile because the three selected
+degrees already account for nearly the full height.
+[Exact determinant and exponent checks](verify_abc_quartic_determinant.py)
