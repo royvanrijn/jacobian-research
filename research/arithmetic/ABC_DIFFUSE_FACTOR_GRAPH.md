@@ -3509,6 +3509,74 @@ most \(z=0.16\) up to the rounding losses, also strictly
 below the star exponent. This disproves the supposed
 range for \(d\), proving (DN5).
 
+## An all-scale progression bound for complete letters
+
+Work at \(d=1/3,\ \Gamma=1/2\), with \(c=1/6\) and \(n=X^L\). Fix a column letter \(U\) and put \(s_*=\max_{T\ne U}\sup\operatorname{supp}\nu_{T,\rm na}\). The complete-label realization gives simple additive graphs whose edge exponent is arbitrarily close to \(2c\), every part cap is arbitrarily close to \(c\), and the exact values of an edge are determined by its labels. Keep one outside representation per complete value, at fixed-truncation divisor loss. The complete \(U\)-vertices can be regularized to have degrees at least \(n^{c-\delta_0}\), where \(\delta_0>0\) is arbitrarily small. Remove the vertices below this cutoff after taking the input graph deficit and part-cap error sufficiently smaller than \(\delta_0\). The removed edges have a strict saving from the original count exponent by the \(U\)-part cap.
+
+### Interval and residue conditions
+
+For a fixed \(0<s<s_*\), a fixed \(\tau\ge0\), and any prescribed exponent tolerance \(\epsilon>0\), take the regularized graph with losses sufficiently small in terms of these parameters and the profile. Uniformly for every interval \(I\) and every integer progression \(r+Q\mathbb Z\) with \(Q\ge1\) and \(|I|/Q\le X^\tau\), the regularized complete column set obeys
+\[
+ \bigl|\mathcal U\cap I\cap(r+Q\mathbb Z)\bigr|
+ \ \le\ X^{(\min(c,\tau/s)+\epsilon+o(1))L}.
+ \tag{AC1}
+\]
+The \(o(1)\) term has the usual small-budget and fixed-truncation order. The case \(Q>2X\) is immediate on the ambient complete-value range, so the numerical height of \(Q\) can be assumed polynomial. The exponent bound is uniform in \(I,r,Q\), even when they depend on the height. In particular one can take a finite grid of \(\tau\)'s and use the same graph losses to obtain, with any additional prescribed tolerance, the statement for all \(0\le\tau\le1\) simultaneously. Taking \(s\uparrow s_*\) gives the limiting coefficient \(1/s_*\).
+
+### Counting good stars over an arbitrarily small column subset
+
+Let \(\mathcal S=\mathcal U\cap I\cap(r+Q\mathbb Z)\). A compact positive continuity band \([s,S]\) on an opposite target \(T\) has positive nonatomic mass \(H\), for some \(S>s\). To see this when \(s\) is in a gap of the support, use a narrower band farther above \(s\) and use \(s\) as its lower degree bound. Choose \(p>\tau/s\) with \(p<\min(c,\tau/s+\epsilon/3)\), when \(\tau/s<c\) and the total part-cap bound is insufficient. Choose a fixed \(m\) so that \(mH>p\). The rows lie on the remaining letter. Each fixed \(u\in\mathcal S\) belongs to at least \(n^{m(c-\delta_0)+o(1)}\) ordered stars of distinct rows. For that \(u\), as a row varies its complete target \(t_i=\varepsilon u+a_i\) determines the row, where \(\varepsilon\) is fixed and the complete row offsets \(a_i\) are distinct.
+
+For each slot let \(P_i\) be the original outside
+radical of its target. A star is bad at slot \(i\) if
+\(P_i\) shares normalized radical mass at least \(\xi\)
+with \(Q\prod_{j\ne i}P_j\). Take \(\xi>0\) fixed with
+\(s(p-m\xi)>\tau\). For a fixed column \(u\), hold all
+row slots except \(i\) fixed. The product with which
+\(P_i\) is compared is then fixed and has polynomial
+height. The [divisor allocation estimate](#counting-shared-prime-divisors) counts at most \(n^{c+\delta-\xi+o(1)}\) offending outside target labels, where \(\delta\) includes the outside-window cap error. A complete target and the fixed \(u\) determine its row, so the whole bad-star count for this \(u\) is at most \(n^{m(c+\delta)-\xi+o(1)}\), times a constant depending on \(m\). Take \(m(\delta_0+\delta)\ll\xi\). This comparison gives a saving relative to the good-star lower bound for each \(u\) separately, regardless of \(|\mathcal S|\).
+
+Sum over \(u\in\mathcal S\) and average over the at most \(n^{m(c+\delta)+o(1)}\) row tuples. Some fixed tuple has at least
+\[
+ |\mathcal S|\, n^{-m(\delta_0+\delta)+o(1)}
+\]
+good columns from \(\mathcal S\). This order of counting is needed when \(\mathcal S\) may have cardinality of substantially smaller exponent than \(c\).
+
+### CRT reconstruction within the given interval
+
+On the fixed rows, record outside blocks from the supplying band, of combined normalized mass \(p\) up to arbitrarily small errors. Since each outside coordinate cap can be made arbitrarily small, the selected mass can reach \(p/m\) on each row at arbitrarily small overshoot. Their positions are prescribed from the box, and the original root values have at most \(n^{p+o(1)}\) records. The original roots in the bounded scale band are squarefree. Strip all primes dividing \(Q\) and all primes occurring in two or more recorded blocks. On the good columns the stripped root mass is at most \(m\xi\), using the single union tested at each slot. The surviving full divisors have pairwise disjoint primes and are coprime to \(Q\), and their product has numerical weight at least \(s(p-m\xi)\), up to errors.
+
+Each such divisor of \(t_i\) gives a fixed affine residue for \(u\). Together with \(u\equiv r\bmod Q\) they give a progression with step \(Q X^{s(p-m\xi)+o(1)}>|I|\), so there is at most one column for each record. Combining with the good-star lower bound gives \(|\mathcal S|\le n^{p+m(\delta_0+\delta)+o(1)}\). Take the losses small compared with \(\epsilon\). The total-part cap handles \(\tau/s+\epsilon\ge c\). The comparison also works for \(\tau=0\), or directly an ordinary progression with \(|I|\le Q\) meets the interval in at most two values. This proves (AC1).
+
+### Consequences for ordinary and generalized progressions
+
+**Ordinary progressions.** A progression of any polynomial-height step and \(X^{O(L)}\) terms has intersection exponent \(o(1)\) with the regularized \(U\)-part, in the small-budget limit. More quantitatively (AC1) gives exponent at most \(\zeta/s_*+o(1)\) for a progression of \(X^\zeta\) terms, up to arbitrary extraction loss. At the symmetric \(c\delta_3+c\operatorname{Unif}[2,4]\) profile, a subset of fixed normalized exponent \(v>0\) therefore requires any containing progression to have at least \(X^{4v-o(1)}\) terms. In particular an interval containing such a subset has at least that numerical width.
+
+**Generalized progressions.** A generalized arithmetic progression of fixed rank \(R\) and coefficient-box volume at most \(X^{\kappa L}\), with \(\kappa\) fixed, meets the regularized \(U\)-part in at most \(X^{((1-1/R)\kappa+o(1))L}\) values, with arbitrarily small input losses. Slice along a side of maximal coefficient exponent. Its exponent is at least the actual volume exponent divided by \(R\), and each slice is an ordinary progression of \(X^{O(L)}\) terms and contributes exponent \(o(1)\). If the selected step exceeds \(2X\), its slice contributes at most one complete value. This works irrespective of duplicate representations. More generally the same proof saves the exponent of the largest side for any presentation for which the number of other coefficient choices has the corresponding bound. For each fixed \(R\), a generalized progression of normalized volume \(c+\delta\) therefore excludes a near-full column subset whenever \((1-1/R)(c+\delta)<c\).
+
+**Previously frozen column factors.** Suppose the selected columns in addition have a prescribed full factor \(F\) from \(U\), after freezing roots of normalized cost \(b\). Fix their values and apply the same proof with the known residue \(u\equiv0\bmod F\) in addition to \(u\equiv r\bmod Q\). The product of the opposite row locks is coprime to \(F\) by primitivity, so no new strip loss is needed for \(F\). If \(|I|/\operatorname{lcm}(F,Q)\le X^\tau\) for the frozen records, the resulting upper column exponent is \(b+\tau/s_*\), up to the same limiting errors. In particular, with \(Q=1\), a fixed reliable numerical weight \(w=\log_X F\) reduces the interval exponent in (AC1) from \(h=\log_X|I|\) to \((h-w)_+\), with only the standalone record cost \(b\).
+
+### Modular progressions with a short parameter range
+
+Let \(\mathcal S\) consist of the regularized complete \(U\)-values in an interval of numerical width at most \(X^h\), for which
+\[
+ u\equiv A+d j\pmod M,\qquad 0\le j<J\le X^\zeta .
+\]
+Here \(j\) is integral, \(M\) has polynomial height, and \(M\ge X^\beta\). For fixed exponents in the small-budget limit, the normalized exponent of \(\mathcal S\) is at most
+\[
+ \min\!\left(c,\;\frac{(h+\zeta-\beta)_++\zeta}{s_*}\right)
+ \tag{AC2}
+\]
+up to arbitrary graph and extraction losses. This bound is uniform in \(A,d,M\), including noninvertible steps and repeated representations. In particular a modular progression with \(X^{O(L)}\) terms and modulus of numerical weight at least \(1-o(1)\) contains only \(X^{o(L)}\) regularized complete values in the limiting exponent sense.
+
+To prove the claim, choose \(s<s_*\) and \(p>(h+\zeta-\beta)_+/s\), with an arbitrarily small fixed margin. If \(p\ge c\), the total part cap suffices. Choose finitely many opposite supplying rows and strip all mutual overlaps and primes of \(M\) by good-star averaging on \(\mathcal S\), as in (AC1). Each recorded lock tuple costs at most \(n^{p+o(1)}\), has a fixed CRT condition \(u\equiv K\bmod N\) with \(\gcd(M,N)=1\), and has weight \(\log_X N\ge sp-o(1)\) up to arbitrarily small stripping losses. We fix the ordinary column representation losses small enough that the selected rows retain \(\mathcal S\) up to a smaller fixed normalized exponent loss.
+
+For one such record, all differences of admissible pairs \((u,j)\) lie in the lattice
+\[
+ \Lambda=\{(x,y)\in\mathbb Z^2:x\equiv0\pmod N,\ x-dy\equiv0\pmod M\}.
+\]
+It has index \(MN\), since any \(y\) permits one class of \(x\) modulo \(MN\) by CRT. But any determinant of two differences has absolute value at most \(2X^{h+\zeta}<MN\) for large height. Thus all admissible pairs lie on an affine line. If the line has constant \(j\), the same CRT modulus \(MN\) directly gives at most one \(u\) in the interval. If it has constant \(u\) the claim is immediate. Otherwise the primitive integral direction has nonzero integral \(j\)-component, and the full set of integral points on the line inside the \(j\)-range projects to an ordinary progression of at most \(J+1\) terms in \(u\). Apply (AC1) to this ordinary progression, at exponent \(\zeta/s_*\) up to arbitrary losses. That application is valid uniformly over records using graphs with the smaller of the tolerances needed by the two counts. Counting the records and allowing \(p\) to approach \((h+\zeta-\beta)_+/s\), then \(s\uparrow s_*\), proves (AC2).
+
 ## A uniform obstruction to bounded-rank additive progressions
 
 For every fixed rank bound \(R\ge1\) there is

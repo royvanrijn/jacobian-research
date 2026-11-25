@@ -393,6 +393,7 @@ fully replayed certificates.
 | \(987/1000\) | \(534990173281/1000000324000\) | 19,888 | 407,079 | [abc_budget_987_delta.json.xz](abc_budget_987_delta.json.xz) |
 | \(247/250\) | \(5349904295969/10000008030000\) | 20,282 | 482,561 | [abc_budget_988_delta.json.xz](abc_budget_988_delta.json.xz) |
 | \(989/1000\) | \(21399616776161/40000031360000\) | 20,676 | 583,496 | [abc_budget_989_delta.json.xz](abc_budget_989_delta.json.xz) |
+| \(99/100\) | \(26749499961979/50000000001500\) | 21,103 | 743,497 | [abc_budget_990_delta.json.xz](abc_budget_990_delta.json.xz) |
 
 The [standard verifier](verify_abc_height_fulloc_certificate.py) pins
 the source archive and selected tree hashes. It checks the root-row
@@ -401,10 +402,10 @@ rational leaf duals in the resulting tree. The replacement rows include
 primitive ratio locks, fixed Hölder moments and, in some trees, the
 [local Mordell packing bound](ABC_MORDELL_LOCAL_PACKING.md).
 
-For example, replay the budget \(989/1000\) tree from the repository root.
+For example, replay the budget \(99/100\) tree from the repository root.
 
 ```sh
-python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 989/1000
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 99/100
 ```
 
 ### Reweighting between and beyond the new budgets
@@ -605,4 +606,17 @@ reweighted leaf bounds.
 ```sh
 python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 989/1000 --at-budget 4945001/5000000
 python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 4945001/5000000
+```
+
+### Reweighting the \(99/100\) certificate
+
+At radical budget \(9900001/10000000\), the \(99/100\) retarget
+gives the exact upper exponent \(213996134798720789/400000197200000000\).
+The sparse strict unit tree gives \(10700004027900621/20000009240000000\)
+at that budget. Both are maxima of the respective rational
+reweighted leaf bounds.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 99/100 --at-budget 9900001/10000000
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 9900001/10000000
 ```

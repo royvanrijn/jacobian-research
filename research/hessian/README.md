@@ -54,6 +54,7 @@ Scope limits:
 - The ordinary trace defect has an intrinsic logarithmic spectrum -i/e and normalized trace -rank/2. A generic target derivative has a non-dense maximal Bergman domain in the ramified case; dense-domain arguments cannot supply automatic integrality without proving the inverse condition.
 - Whole root charts transfer any r>1 unramified multiplicity to an actual degree-rd plane Keller map with cyclic deck subgroup and a specified affine pseudo-plane source image. The new marked ramified prime has nonpolar common coordinate, and selected opens are not full finite intermediate normalizations. This architecture remains unexcluded.
 - Cotangent doubling sends HC4 through potential degree d+1 to planar inversion through degree d. Tang gives the other direction. The published planar degree-104 theorem gives HC4 through 105 under Tang. The residual Laurent route gives HC4 through 125 under Tang and its stated external inputs.
+- The cotangent gradient is polynomially equivalent to the planar map times the identity. Under Tang, HC4 excludes generic degrees two through four and every geometric A4 action. Whole affine fibres transfer in both directions in the cotangent form.
 
 Tracked obligations (computed states):
 

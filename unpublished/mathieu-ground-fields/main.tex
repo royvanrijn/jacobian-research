@@ -4,6 +4,10 @@
 \usepackage[letterpaper,margin=1.08in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={The Mathieu Property over Fields of Characteristic Zero: Classification and Ground-Field Obstructions},
+  pdfauthor={Roy van Rijn}
+}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
@@ -21,79 +25,83 @@
 \newcommand{\Lie}{\operatorname{Lie}}
 \newcommand{\dd}{\,\mathrm d}
 \DeclareMathOperator{\Ad}{Ad}
-\title{Mathieu's Conjectures over Fields of Characteristic Zero\\
-\large Split Homogeneous Spaces, Compact Groups, and Ground-Field Obstructions}
+\title{The Mathieu Property over Fields of Characteristic Zero:\\
+\large Classification and Ground-Field Obstructions}
 \author{Roy van Rijn}
 \date{November 2026}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Let \(K\) be any field of characteristic zero. For an affine reductive
-homogeneous space \(G/H\) with \(G^\circ\) split, we prove that its normalized
-Reynolds kernel is Mathieu--Zhao exactly when \([G^\circ,G^\circ]\subseteq H\).
-More generally, one nontrivial action of a split \(\SL_2\) gives a fixed
-marked counterexample over \(K\), including when the acting group is
-nonsplit. The proof transfers a rank-one witness along the principal
-orbits of the action. A moment recurrence and Hilbert irreducibility
-choose a ground-field parameter with infinitely many surviving marked
-orders. We also classify the kernel on compact Hausdorff homogeneous
-spaces and on connected reductive groups over real closed fields, and
-give a ground-field nullcone criterion in the toral case.
+Let \(K\) be a field of characteristic zero and \(X\) an affine geometrically
+homogeneous space of a group \(G\) with split reductive identity component.
+The normalized Reynolds kernel on \(K[X]\) is Mathieu--Zhao if and only if
+\([G^\circ,G^\circ]\) acts trivially. A single active split \(\SL_2\) already
+gives a fixed marked counterexample for a connected reductive acting group.
+Both results allow \(X(K)=\varnothing\). The proof transfers witnesses along
+principal orbits and specializes marked-moment recurrences over the ground
+field. We also classify connected reductive groups and compact adjoint
+semisimple torsors over real closed fields, and representative functions
+on compact Hausdorff homogeneous spaces. A long-root subgroup gives a
+further obstruction when a split central torus acts alongside an active
+compact factor of rank at least two.
 \end{abstract}
 
 \section{Introduction}
 
-Let \(X=G/H\) be an affine homogeneous space of a linear algebraic group
-over a field \(K\) of characteristic zero. Assume that \(G^\circ\) and
-\(H^\circ\) are reductive. Its normalized Reynolds functional
-\(\Lambda_X:K[X]\to K\) is the projection onto the invariant constants.
-Call \(P\) \emph{pure} if \(\Lambda_X(P^m)=0\) for every \(m\ge1\).
-It is \emph{safe} if every fixed \(Q\in K[X]\) satisfies
-\(\Lambda_X(QP^m)=0\) for all sufficiently large \(m\).
-The kernel is Mathieu--Zhao precisely when every pure function is safe.
-
-Mathieu's first conjecture posed this implication for representative
-functions on compact connected Lie groups \cite{Mathieu}. His second
-asked whether pure functions on complex reductive spherical pairs are
-unstable. Long classified the compact connected group case and the
-complex spherical case \cite{Long,LongSpherical}. Over \(\CC\) the
-classification of Reynolds kernels holds on arbitrary reductive
-homogeneous spaces, with binary octahedral and icosahedral quotients
-supplying the exceptional rank-one witnesses \cite{Complex}. The
-ground-field question is different. The compact real quaternion
-norm-one group has strictly positive squared trace on every nonzero
-real regular function. Over the complex numbers its normalized trace
-has a counterexample.
+Let \(K\) be a field of characteristic zero. Let \(X\) be a smooth affine
+\(K\)-variety with a geometrically transitive action of a linear algebraic
+\(K\)-group \(G\) with reductive identity component. Thus \(X_{\overline K}\)
+is a homogeneous quotient and its geometric stabilizers have reductive
+identity component by the affine Matsushima criterion \cite{Matsushima}.
+If \(x\in X(K)\), we may write \(X=G/H\) with \(H=G_x\).
+The normalized Reynolds functional \(\Lambda_X:K[X]\to K\) projects onto
+the invariant constants. A function \(P\) is \emph{pure} if
+\(\Lambda_X(P^m)=0\) for every \(m\ge1\). It is \emph{safe} if for each
+fixed \(Q\in K[X]\) one has \(\Lambda_X(QP^m)=0\) for all sufficiently
+large \(m\). The kernel is Mathieu--Zhao precisely when every pure
+function is safe. We call \((P,Q)\) a witness if \(P\) is pure and
+\(\Lambda_X(QP^m)\ne0\) at infinitely many orders \(m\).
 
 \begin{theorem}\label{thm:main}
-Suppose that \(G^\circ\) is split over \(K\). Then
+Suppose \(G^\circ\) is split over \(K\). Then
 \[
- \ker\Lambda_{G/H}\text{ is Mathieu--Zhao}
- \quad\Longleftrightarrow\quad [G^\circ,G^\circ]\subseteq H .
+ \ker\Lambda_X\text{ is Mathieu--Zhao}
+ \quad\Longleftrightarrow\quad
+ [G^\circ,G^\circ]\text{ acts trivially on }X.
 \]
-When containment fails there are \(P,Q\in K[G/H]\) such that \(P\) is
-pure and \(\Lambda_{G/H}(QP^m)\ne0\) for infinitely many \(m\). For
-connected \(G\) the same containment criterion characterizes equality
-of the pure set with the geometric nullcone on \(K[G/H]\).
+For \(X=G/H\), the right-hand condition is
+\([G^\circ,G^\circ]\subseteq H\). For connected \(G\), it also
+characterizes equality of the pure set and the geometric nullcone on
+\(K[X]\).
 \end{theorem}
 
-The negative direction is a consequence of an obstruction that depends
-only on one subgroup. If a \(K\)-homomorphism from split \(\SL_2\) acts
-nontrivially on \(X\), a general stabilizer either determines a
-normalizer quotient of \(\SL_2\) or supplies an adjoint covariant.
-A witness on the normalizer quotient can have poles after pullback.
-Clearing them by an invariant denominator preserves purity. To preserve
-marked nonvanishing over \(K\), we use a recurrence and choose the
-denominator by arithmetic specialization.
+Mathieu's first conjecture posed the purity-to-safety implication for
+representative functions on compact connected Lie groups \cite{Mathieu}.
+His second asked whether pure functions on complex reductive spherical
+pairs are unstable. Long classified the compact connected group case
+and the complex spherical case \cite{Long,LongSpherical}.
+The classification on arbitrary complex reductive homogeneous spaces
+was proved in \cite{Complex}. Over the ground field the answer can change:
+on the real quaternion norm-one group every nonzero real regular
+function has positive squared trace, while its complexification is
+\(\SL_2\) and admits a witness.
 
-For example, on the symmetric-matrix model of
-\(\SL_3/\SO(2,1)\), the split subgroup \(\SO(2,1)\) acts by conjugation
-after one fixed change of matrix coordinates. The general stabilizer
-consists of sign changes of three distinct orthogonal eigenlines.
-It fixes no adjoint vector. The unordered eigenlines nevertheless
-give a rational map to the octahedral normalizer quotient, so the
-normalizer argument applies.
+The negative direction of Theorem~\ref{thm:main} uses only one active
+split \(\SL_2\) and works even when \(G\) is nonsplit. A general
+stabilizer either supplies an adjoint covariant or determines a
+normalizer quotient of \(\SL_2\). In the second case an invariant
+denominator clears poles in the transferred witness. A recurrence
+and Hilbert irreducibility select parameters so a single ground-field
+multiplier detects infinitely many orders.
+
+The absence of rational points also matters for compact groups.
+Over a real closed field, a torsor for a compact adjoint semisimple
+group has Mathieu--Zhao trace exactly when it has a rational point
+(Theorem~\ref{thm:torsor}). For instance, the isomorphism torsor from
+the quaternion division algebra to the split matrix algebra carries
+commuting compact and split adjoint actions with the same normalized
+trace.
 
 We use the term \emph{geometric nullcone} for the points whose orbit
 closure over an algebraic closure contains zero. For an individual
@@ -116,9 +124,9 @@ left trace on \(K[G]\). We use these facts also for central isogenies
 and products.
 
 \begin{lemma}\label{lem:splitrank}
-For split \(S=\SL_2\), every proper reductive stabilizer \(L\) gives
-a pure regular function on \(S/L\) and one fixed multiplier with
-infinitely many nonzero marked moments, over \(K\).
+For split \(S=\SL_2\), the quotients by the split diagonal torus
+normalizer and the two standard finite groups \(2O,2I\) admit
+witnesses over \(K\).
 \end{lemma}
 
 \begin{proof}
@@ -139,39 +147,11 @@ For \(f_4,f_8,f_{12}\), the groups are respectively the torus
 normalizer, \(2O\) and \(2I\). The pure moments vanish over \(\QQ\).
 The quartic has nonzero marked moments at all positive orders.
 For the two exceptional forms there are nonzero marked moments at
-orders \(m\) for which \(28m-3\), respectively \(66m-5\), is prime.
-These are the formulas of \cite[Theorem~1.2 and Lemma~5.1]{Complex}.
+orders \(m\) for which \(28m-3\), respectively \(66m-5\), is prime
+\cite[Theorem~1.2 and Lemma~5.1]{Complex}. In each progression the
+residue is coprime to the modulus, so Dirichlet's theorem gives
+infinitely many such orders.
 
-The same conclusions hold for any nonzero scalar multiple of a conjugate
-form of those degrees. Indeed, write \(A=am\), \(B=bm\), and
-\(H_k^{(B)}=[t^k]f(v+tu)^B\). The left diagonal torus selects \(k=B\)
-in the pure moment and \(k=B-b\) in the marked moment. The corresponding
-marked summand is \(U^A F^{a+k-B}H_k^{(B)}\). Scaling \(f\) by \(\lambda\)
-scales that summand by \(\lambda^{(n-1)m-1}\), and scales the one pure
-summand by a nonzero scalar. Right translation by the conjugating
-matrix preserves the left trace.
-
-It remains to find such a form over \(K\). A nonzero vector in a
-one-dimensional geometric invariant space can be taken over \(K\),
-because taking invariants is a coaction kernel and commutes with base
-change. For a positive-dimensional proper \(L\), use the quartic of
-the normalizer of \(L^\circ\), which is a torus. For a noncentral
-finite cyclic group use the centralizer torus. For a binary dihedral
-group of order \(4r\) with \(r\ge3\), the cyclic subgroup generated by
-elements of order greater than four is characteristic. Its centralizer
-is a torus normalized by \(L\). For a central \(L\) choose any split
-torus. In each case the torus normalizer has a unique invariant line
-of degree four. For \(Q_8\), use its normalizer, which over the algebraic
-closure is \(2O\). Indeed \(Q_8\) is normal in \(2O\), its centralizer
-is the center, and its automorphism group has order \(24\).
-For \(2T,2O,2I\), use degrees \(8,8,12\), respectively.
-The octic is invariant under \(2T\subset 2O\). Uniqueness of these
-lines follows because the ratio of two independent invariants of
-degree \(n\) would give a nonconstant map \(\mathbb P^1\to\mathbb P^1\)
-of degree at most \(n\) with a full generic projective group orbit in
-each generic fiber. The projective orders \(12,24,60\) exceed the
-respective degrees. This exhausts the finite cases by the classification
-in \cite{Flicker}.
 \end{proof}
 
 For use when a principal stabilizer is central, write a traceless
@@ -186,70 +166,119 @@ If \(R_S\) denotes the conjugation Reynolds projection, then
  R_S(Q_{\rm ad}P_{\rm ad}^m)=\beta_m r^{3m-1},\qquad
  \beta_m=\frac{2m}{3m+1}\frac{(2m)!(4m)!}{(6m)!}.
 \end{equation}
-To check this, take \(Z=ww^*-\|w\|^2I/2\) with \(w=(x,y)^{\mathsf T}\).
-Then \(u=\bar x y\), \(v=x\bar y\), \(a=|x|^2-|y|^2\).
-The quartic normalizer pair on the matrix with columns
-\(w,(-\bar y,\bar x)^{\mathsf T}\) becomes the displayed adjoint pair,
-because its two parenthesized factors multiply to
-\((1+|x|^2u)(1-|y|^2u)=1+au-u^3v\).
-The radial identity of \cite[Section~5]{Complex} gives
-\eqref{eq:adjoint}, using \(r(Z)=\|w\|^4\). The Hermitian matrices
-obtained this way are all the traceless Hermitian matrices, a
-Zariski-dense real form. Thus the identities of polynomial Reynolds
-projections hold over every characteristic-zero field.
+For \(Z=ww^*-I/2\) with \(w=(x,y)^{\mathsf T}\) a unit vector,
+\(u=\bar x y\), \(v=x\bar y\), \(a=|x|^2-|y|^2\), and
+\[
+                1+au-u^3v=(1+|x|^2u)(1-|y|^2u).
+\]
+Under the uniform unit-sphere measure, \(s=|x|^2\) is uniform
+on \([0,1]\) and the angle of \(u\) is uniform. Put \(n=2m\).
+Angular averaging selects degree \(k=n\) in \(u\) for the pure
+moment and \(k=n-2\) for the marked one. Expanding the two factors
+and integrating in \(s\) gives the common prefactor
+\((2n)!^2/(2n+k+1)!\) times
+\[
+ \sum_{p+q=k}\frac{(-1)^q(n+p)!(n+q)!}
+ {p!\,q!\,(2n-p)!\,(2n-q)!}.
+\]
+For \(k=n\), the factorial ratios cancel and the sum is zero.
+For \(k=n-2\), it equals
+\[
+ \frac{1}{(n-2)!}\int_0^1\!\int_0^1
+ x^ny^n(1-x)(1-y)(x-y)^{n-2}\dd y\,\dd x .
+\]
+Integrate on \(y=xt\), \(0<t<1\), and double by symmetry to
+obtain the displayed factor \(\beta_m\).
+
+At general radius, scaling \(Z\) by \(c\) multiplies \(r\) by \(c^2\).
+A term of \(u\)-weight \(k\) in \((1+au-u^3v)^{4m}\) has total degree
+\(2k\) in the matrix entries, with \(u,a,v\) of weights \(1,0,-1\).
+The selected pure and marked terms thus have total degrees \(6m\)
+and \(6m-2\). This proves \eqref{eq:adjoint} on the entire traceless
+Hermitian real form. Zariski density gives the polynomial Reynolds
+identities over every characteristic-zero field.
 
 \section{Principal stabilizers}\label{sec:principal}
 
-Let a split \(S=\SL_2\) act nontrivially on \(X\) through \(G^\circ\),
-with \(G\) connected for the moment. We use two facts about the action.
-There is a dense invariant open \(U\) with closed geometric orbits
-and a single geometric conjugacy class of stabilizers. If that class
-is noncentral, there is a rational equivariant map \(X\dashrightarrow
-S/N_S(L)\), where \(L\) is the stabilizer of some \(K\)-point of \(U\).
+Suppose \(G\) is connected and let \(S\to G\) be a nontrivial rank-one
+action with \(S_{\overline K}\simeq\SL_2\). We establish the principal
+orbit statement for this geometric type, and then use splitness to
+descend a particular normalizer quotient.
 
-For the first fact it is enough to use a finitely generated model
-embedded in \(\CC\). Choose a compact form \(C\) of \(G_\CC\) containing
-the standard compact subgroup of \(S_\CC\). A compact form of \(H_\CC\)
-can be conjugated into \(C\), and we may replace \(H_\CC\) by that
-conjugate using a \(G_\CC\)-equivariant isomorphism of quotients
-\cite[Theorems~3.7--3.8]{AdamsTaibi}. The compact conjugation then
-defines an antiholomorphic involution on \(X_\CC\), with a dense
-compact orbit of fixed points. Choose an embedding into a
-finite-dimensional \(S_\CC\)-module compatible with that
-conjugation, by taking an invariant space of algebra generators
-closed under it. In a compact invariant Hermitian metric real on
-the fixed real form, every real vector has zero norm derivative
-in the \(i\Lie(\SU_2)\) directions. Its orbit is closed by
-Kempf--Ness \cite{KempfNess}. The compact orbit therefore meets both
-the principal Luna stratum and the maximal-dimension orbit locus
-\cite{Luna}. On the principal stratum a nonclosed orbit would
-have to be larger than its closed orbit, whose dimension is
-already maximal. Thus the inverse image of this stratum is the
-desired open. Uniqueness and base change of invariant algebras
-give descent to \(K\).
+\begin{lemma}\label{lem:principal}
+There is a dense \(S\)-invariant open \(U\subseteq X\) on which all
+geometric \(S\)-orbits are closed and their stabilizers are conjugate.
+The common stabilizer is proper and reductive.
+\end{lemma}
 
-For the second fact, \(G(K)\) is Zariski dense. One way to see this is
-to choose regular semisimple Lie algebra vectors spanning \(\Lie(G)\)
-and take the associated maximal \(K\)-tori. Each torus has dense
-\(K\)-points by the norm map from restriction of scalars of a split
-torus. Multiplication of the tori is dominant by its differential at
-the identity. Thus \(U\) has a \(K\)-point \(x_0\). Set \(L=S_{x_0}\).
-It is reductive by the affine Matsushima criterion \cite{Matsushima}.
-If \(L\) is noncentral, \(N=N_S(L)\) is proper and reductive, as the
-rank-one subgroup list shows. For a finite noncyclic \(L\) its
-centralizer and normalizer are finite. For a noncentral cyclic \(L\),
-the normalizer preserves the centralizer torus. If \(L^\circ\) is
-a torus, the normalizer preserves that torus. The map in question
-sends a point with stabilizer \(sLs^{-1}\) to \(sN\). More formally,
-the image of
+\begin{proof}
+Work first over \(\CC\) using an embedding of an algebraic closure of
+a finitely generated field of definition. Choose a compact form \(C\)
+of \(G_\CC\) containing the image of a compact form of \(S_\CC\).
+After choosing a geometric base point, conjugate its stabilizer so
+that a Zariski-dense compact subgroup of it lies in \(C\).
+These choices are possible by compact-form conjugacy and containment
+\cite[Theorems~3.7--3.8]{AdamsTaibi}. The conjugated quotient is
+\(G_\CC\)-equivariantly isomorphic to the original. Compact conjugation
+gives an antiholomorphic involution of the quotient and a Zariski-dense
+compact \(C\)-orbit of fixed points.
+
+Embed the quotient into a finite-dimensional \(S_\CC\)-module by
+taking a stable space of algebra generators closed under the
+involution. Average a Hermitian metric and choose it real on the
+fixed real form. For any fixed real vector \(v\) and any
+\(A\in\Lie(\SU_2)\), the vector \(Av\) is real. Hence
+\(\operatorname{Re}\langle iAv,v\rangle=0\), which gives a closed
+orbit by the Kempf--Ness criterion \cite{KempfNess}.
+The compact orbit meets the intersection of the maximal orbit dimension
+locus and the inverse image of the open principal Luna stratum
+\cite[Part~III, \S3]{Luna}.
+The closed orbit in each fiber over that stratum has the same
+stabilizer type and thus maximal dimension. Any nonclosed orbit
+there would have that closed orbit in its boundary and would have
+strictly larger dimension. This proves the assertion on the inverse
+image of the principal stratum. The geometric principal open
+descends by uniqueness and base change of invariant algebras.
+The closed orbits have reductive stabilizers by Matsushima
+\cite{Matsushima}. If their stabilizer were all of \(S\), the action
+would be trivial on a dense open.
+\end{proof}
+
+Suppose now \(S=\SL_{2,K}\) and let \(L\) represent the stabilizer
+class over \(\overline K\). If \(L\) is noncentral, attach a group
+\(M(L)\) as follows. When \(L^\circ\) is a torus, use its normalizer.
+For a finite noncentral cyclic \(L\), use the normalizer of its
+centralizer torus. For binary dihedral \(L\) of order \(4r\) with
+\(r\ge3\), use the normalizer of the centralizer torus of the
+characteristic rotation subgroup generated by elements of order
+greater than four. For \(Q_8,2T,2O,2I\), use the full normalizer.
+It is \(2O,2O,2O,2I\), respectively. Indeed \(Q_8\) and \(2T\)
+are normal in \(2O\), the centralizer of a finite noncyclic subgroup
+is the center, and the finite subgroup list rules out proper finite
+overgroups of \(2O\) and \(2I\) \cite{Flicker}.
+
+In all cases \(N_S(L)\subseteq M(L)\) and the assignment commutes
+with conjugation and Galois. The group \(M(L)\) is conjugate to a
+self-normalizing \(K\)-subgroup \(M_0\), namely the split diagonal
+torus normalizer or the stabilizer of \(f_8\) or \(f_{12}\) in
+Lemma~\ref{lem:splitrank}. The torus normalizer is self-normalizing
+by its identity component. The two finite groups are self-normalizing
+by maximality among finite groups. Conjugate \(L\) so \(M(L)=M_0\).
+Over \(\overline K\) the rule
 \[
- S\times U^L\longrightarrow U\times S/N,\qquad
- (s,y)\longmapsto(sy,sN)
+             S_x=sLs^{-1}\ \longmapsto\ sM_0
 \]
-is a constructible graph with one geometric point over each point
-of \(U\). The dominating component of its closure is birational
-to \(U\) by generic separability in characteristic zero. This
-gives the rational map \(\phi\) over \(K\).
+defines a rational equivariant map. Indeed, the image of
+\((s,y)\mapsto(sy,sM_0)\) from \(S\times U^L\) is a constructible
+graph with one geometric point over each point of \(U\).
+For \(y\in U^L\), containment \(L\subseteq S_y\) is equality by
+conjugacy, including equality of the numbers of components. The
+unique dominating component of the graph closure is birational to
+\(U\) by generic separability. For each Galois automorphism
+\(\sigma\) write \(\sigma L=hLh^{-1}\). Since both attached groups
+are \(M_0\), we have \(h\in M_0\). Replacing \(L\) by \(\sigma L\)
+therefore leaves the graph unchanged. This descends the map
+\(\phi:X\dashrightarrow S/M_0\) over \(K\) without a rational point of \(X\).
 
 \subsection*{The two types of witness}
 
@@ -274,7 +303,7 @@ adjoint phases over \(K\), whose marked sequences are generically
 nonzero.
 
 If \(L\) is noncentral, pull back the witnesses \(P_0,Q_0\) of
-Lemma~\ref{lem:splitrank} by \(\phi\). Denote the two rational functions
+Lemma~\ref{lem:splitrank} by \(\phi:X\dashrightarrow S/M_0\). Denote the two rational functions
 by \(p,q\). Their translates span a finite-dimensional rational
 submodule. Its common denominator ideal \(I\) in \(K[X]\) is nonzero
 and \(S\)-stable. Over \(\CC\), choose a nonzero \(a\in I\). Write
@@ -292,13 +321,17 @@ after field extension. For each member of that span the regular pair
 \((dp,dq)\) is pure and has marked moments
 \begin{equation}\label{eq:factor}
  \Lambda_X((dq)(dp)^m)
-    =\Lambda_X(d^{m+1})\,\Lambda_{S/N}(Q_0P_0^m).
+    =\Lambda_X(d^{m+1})\,\Lambda_{S/M_0}(Q_0P_0^m).
 \end{equation}
 Indeed, on the open of definition the \(S\)-projection gives constant
 rank-one moments, times \(d^{m+1}\) in the marked case. The identities
 extend by regularity, and \(\Lambda_X\circ R_S=\Lambda_X\).
 The nonzero complex parameter above shows that the polynomial sequence
 in \eqref{eq:factor} is not eventually zero.
+
+The same denominator argument applies to any reductive subgroup of
+\(G\), using a compatible compact form of \(G_\CC\). We will use this
+observation for a rank-one group times a central torus.
 
 \section{Arithmetic specialization}\label{sec:arithmetic}
 
@@ -312,6 +345,7 @@ infinitely many \(b_m\) nonzero.
 \end{lemma}
 
 \begin{proof}
+If there are no parameters, there is nothing to specialize.
 Write \(A(m,\boldsymbol u)\) for the first coefficient. Remove its
 content in \(E[m]\) when tracking its zeros, and choose \(M\) beyond
 the fixed integer zeros and the recurrence cutoff. Choose
@@ -338,7 +372,7 @@ rational values where a minimal polynomial of a primitive element
 has no coefficient poles or multiple roots. A root of the specialized
 polynomial is algebraic over \(\QQ\), so it has a simple root in
 \(\QQ_p\) for infinitely many \(p\), by Schur's prime-divisor theorem
-and Hensel's lemma. Perturb the rational parameters to algebraically
+(see \cite[Section~7]{Complex}) and Hensel's lemma. Perturb the rational parameters to algebraically
 independent values sufficiently close in \(\QQ_p\), and lift the
 simple root there to get the required embedding.
 
@@ -350,75 +384,115 @@ larger than the degree of \(A\) in \(m\). Make the substitution
                          u=a+\frac{c}{1+b t^\ell}.
 \]
 For every \(t\in E\), the reciprocal denominator is integral at the
-chosen places: the summands have unequal valuations, since
-\(v_{p_i}(b)=1\). Thus the local conditions always hold. The extension
-\(E(t)/E(u)\) has degree \(\ell\). By coprimality it preserves
-irreducibility of every factor in \(m\) of degree at least two.
+chosen places. For \(t\ne0\), the valuations of the two summands are
+\(0\) and \(1+\ell v_{p_i}(t)\), distinct since \(v_{p_i}(t)\in\mathbb Z\).
+Thus the local conditions always hold. The rational map has degree
+\(\ell\), so \([E(t):E(u)]=\ell\). If \(\theta\) is a root of an
+irreducible factor of degree \(e\ge2\), the degree of
+\(E(t,\theta)/E(u)\) is divisible by \(\ell\) and \(e\), and is at
+most \(\ell e\). Coprimality forces equality, preserving irreducibility.
 If no local conditions are needed, take \(u=t\). The field \(E\) is
 Hilbertian \cite[Chapter~13]{FriedJarden}. Specialize \(t\) to
-preserve the degrees and irreducibility of the nonlinear factors,
-avoiding the finitely many poles and zeros of \(b_{m_0}\). Linear
+preserve the degrees and irreducibility of the nonlinear factors.
+Avoid poles of all coefficients and factors, zeros of the scalar
+factor, and zeros of \(b_{m_0}\). Linear
 roots have negative valuation at one assigned prime and hence
 cannot be integers. The resulting first coefficient is nonzero
 at every integer \(m\ge M\). Backward recurrence from an eventual
 zero tail would give \(b_{m_0}=0\), a contradiction.
 \end{proof}
 
+\begin{lemma}\label{lem:shift}
+Let \(X\) be affine and geometrically homogeneous under a connected
+reductive group over a characteristic-zero field \(k\). For
+\(F,B\in k[X]\) with \(F\ne0\), the sequence \(\Lambda_X(BF^m)\)
+satisfies a scalar polynomial recurrence with nonzero first
+coefficient at all sufficiently large integer indices.
+\end{lemma}
+
+\begin{proof}
+A finite extension providing a point of \(X\) exists by taking the
+residue field of a closed point. The orbit map pulls the functions
+and the normalized trace back to the connected group. A recurrence
+over the finite extension descends by expanding the coefficients
+in a field basis and taking a component with nonzero first coefficient.
+It therefore suffices to prove the assertion on the group.
+
+The zero-dimensional case is constant. Otherwise take a nonzero
+left-invariant volume form \(\omega\) on the group.
+The frame \(D_i\) of infinitesimal left translations preserves it, and
+\(\Lambda(D_i a)=0\). Every regular \((\dim G-1)\)-form is a sum of
+\(a_i\iota_{D_i}\omega\), with differential \(\sum_i D_i(a_i)\omega\).
+Thus the trace on top forms annihilates regular exact forms.
+
+On the smooth affine open \(F\ne0\), over \(k(\nu)\), use the
+connection \(\mathrm d+\nu\,\mathrm dF/F\wedge\). Its top de Rham
+cohomology is finite-dimensional. Indeed, descend the data to a finitely
+generated subfield, embed that field with the parameter \(\nu\) into
+\(\CC\), and apply holonomic direct-image finiteness to this integrable
+connection \cite[Theorem~3.2.3]{HTT}. On the affine open, cohomology of
+the complex of global forms commutes with field extension.
+This gives the algebraic Mellin shift for these moments
+\cite[Section~1.3]{LoeserSabbah}. The classes
+of \(B\omega,FB\omega,\ldots\) are linearly dependent. Drop any initial
+zero coefficients and reindex the resulting recurrence. In a relation
+among the forms, the primitive for the twisted exact term has bounded
+\(F\)-denominators and finitely many poles in \(\nu\). At sufficiently
+large integers \(\nu=m\), multiplication by \(F^m\) turns the
+relation into an ordinary regular exact form. Applying the trace
+and clearing parameter denominators proves the claim.
+\end{proof}
+
 \begin{theorem}\label{thm:active}
-Over every characteristic-zero field, a nontrivial action of a split
-\(\SL_2\) on an affine reductive homogeneous space of a connected group
-gives a fixed marked counterexample to the Mathieu--Zhao property.
+Over any characteristic-zero field, let \(X\) be affine and geometrically
+homogeneous under a connected reductive group. If a homomorphism from
+split \(\SL_2\) to the acting group induces a nontrivial action on \(X\),
+then \(K[X]\) admits a witness, including when \(X(K)\) is empty.
 \end{theorem}
 
 \begin{proof}
-Take a finitely generated field of definition for the preceding
-constructions and finite parameter spans. In the central case it
-suffices to specialize the sequences
-\(\Lambda_X(r(Z)^{3m-1})\), since the factors \(\beta_m\)
-in \eqref{eq:adjoint} are nonzero. In the noncentral case use the
-whole product sequence \eqref{eq:factor}, so that the possibility
-of gaps in the rank-one marked sequence is included. Each sequence
-is polynomial in the parameters and is generically not eventually
-zero.
-
-These scalar sequences satisfy polynomial recurrences over the
-parameter field. They are mixed moments of a regular function on
-the acting group, or on a product of acting groups, by pullback.
-On a connected group the invariant volume form \(\omega\) identifies
-the trace with a functional on top forms annihilating exact forms.
-Infinitesimal left translations give a frame preserving \(\omega\)
-and integrate to zero. For a nonzero phase \(F\) over the parameter
-field, use top cohomology of the connection
-\(\mathrm d+\nu\,\mathrm dF/F\wedge\) on \(F\ne0\).
-It is finite-dimensional over the rational field in \(\nu\) by
-the algebraic Mellin shift \cite[Section~1.3]{LoeserSabbah}.
-The classes of \(B\omega,FB\omega,\ldots\), for a fixed multiplier \(B\),
-are therefore linearly dependent. At a sufficiently large integer
-\(m\), multiplication by \(F^m\) turns each twisted exact term into
-an ordinary regular exact form. This gives the recurrence for
-\(\Lambda(BF^m)\). After clearing denominators the relation is
-polynomial in the parameters for all sufficiently large integers.
-In \eqref{eq:factor} use phase \(d\otimes P_0\) and multiplier
-\(d\otimes Q_0\). In the central case use \(r^3,r^2\) and shift
-the index by one. Lemma~\ref{lem:specialize} now gives the asserted
-fixed pair over the finitely generated field and hence over \(K\).
+Choose a finitely generated field of definition for the constructions
+and their finite parameter spans. For central \(L\), use the polynomial
+sequence \(\Lambda_X(r(Z)^{3m-1})\) and the nonzero factors
+\(\beta_m\) in \eqref{eq:adjoint}. Its recurrence follows from
+Lemma~\ref{lem:shift} with phase \(r^3\), multiplier \(r^2\), and an
+index shift. For noncentral \(L\), use the entire product sequence
+in \eqref{eq:factor}, which accounts for gaps in the rank-one marked
+sequence. It is a mixed moment on \(X\times S/M_0\) with phase
+\(d\otimes P_0\) and multiplier \(d\otimes Q_0\). In each case the
+complex parameter from the preceding construction shows the sequence
+is generically not eventually zero. Apply Lemma~\ref{lem:shift}
+over the parameter field and clear denominators to obtain a polynomial
+recurrence. Lemma~\ref{lem:specialize} gives one parameter value and
+hence one fixed pair over the field of definition.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:main}]
-Suppose \(D=[G^\circ,G^\circ]\) is not contained in \(H\). On the
-\(K\)-defined open-and-closed component \(G^\circ H/H\) some split
-almost simple factor acts nontrivially, after a central cover.
-A root subgroup of an active factor gives an action as in
-Theorem~\ref{thm:active}. Extend the pair by zero to the other
-components. Its marked moments are multiplied by the reciprocal
-of the number of geometric components. If \(D\subseteq H\), the
-geometric components are tori. The component average and
-finite-trace separation of \cite[Section~7]{Complex}, followed
-by the Laurent theorem \cite{DvK}, prove the Mathieu--Zhao property
-over the algebraic closure, hence over \(K\). For connected \(G\)
-the Laurent support half-space criterion also proves geometric
-instability of pure functions in this toral case. The opposite
-case has a marked witness outside the nullcone by the weight bound.
+The geometric components of \(X\) are the orbits of \(G^\circ\).
+If \(D=[G^\circ,G^\circ]\) is active, choose a Galois orbit of
+components with active \(D\)-action. It gives an open-and-closed
+factor with finite separable constant field \(E/K\), a geometrically
+integral homogeneous \(G^\circ_E\)-space \(Y\) over \(E\).
+Some root subgroup of the split derived group acts nontrivially
+on \(Y\), since their images generate the derived group.
+Theorem~\ref{thm:active} supplies a pair on \(Y\).
+On this factor the trace is \(r^{-1}\operatorname{Tr}_{E/K}\circ
+\Lambda_Y\), where \(r\) counts all geometric components of \(X\).
+This follows by base change and the equal-weight average of the
+geometric component traces. Nondegeneracy of the field-trace
+pairing shows that some member \(c\) of a fixed \(K\)-basis of \(E\)
+satisfies \(\operatorname{Tr}_{E/K}(c\Lambda_Y(QP^m))\ne0\) at
+infinitely many marked orders. Extend \(P,cQ\) by zero to get a
+witness on \(X\).
+
+If \(D\) acts trivially, the geometric components are homogeneous
+spaces of a torus. The component average and finite-trace separation
+of \cite[Section~7]{Complex}, followed by the Laurent theorem
+\cite{DvK}, prove the Mathieu--Zhao property over the algebraic
+closure, hence over \(K\). For connected \(G\), the Laurent
+support half-space criterion also gives geometric instability
+of every pure function. In the active case the marked witness
+lies outside the nullcone by the weight bound.
 \end{proof}
 
 \section{Real closed fields and the nonsplit boundary}\label{sec:real}
@@ -432,8 +506,8 @@ or \(G\) is \(K\)-anisotropic.
 For the positive compact case, a nonzero \(f\) has nonzero squared
 trace. One can embed a finitely generated field of definition of the
 group and \(f\) into \(\RR\), preserving the negative definiteness of
-the derived Killing form and the anisotropic central torus. For the
-first condition preserve the signs of the principal minors. The
+the derived Killing form and the anisotropic central torus. Preserve the sign of the squared
+trace as well if it is nonzero. For the first condition preserve the signs of the principal minors. The
 anisotropic central torus over a real closed field is a product of
 norm-one tori for \(K(i)/K\), so include this model isomorphism in
 the field of definition. On the compact real identity group
@@ -533,96 +607,199 @@ a rank-one subgroup over \(K\). If the center has a split direction,
 there is a nontrivial \(K\)-character, and Proposition~\ref{prop:central}
 applies. This completes Theorem~\ref{thm:realgroup}.
 
-\subsection*{The two compact products}
+\subsection{Active long-root subgroups}
 
-For connected homogeneous spaces over real closed fields,
-Theorem~\ref{thm:active} handles the active noncompact factors.
-Remove inactive factors. When the remaining derived group is
-compact, a central cover expresses the group as a split torus
-times a compact-type group. The projection of the connected
-stabilizer to the split factor is contained in the stabilizer:
-the split part of its connected center maps trivially to the
-compact group, and its anisotropic part has no split characters.
-Quotient out that split subtorus. In the resulting product
-\(T\times C\), the stabilizer \(H'\) has finite projection
-\(\Gamma\) to \(T\). Write \(L'\) for its projection to \(C\).
-There is a homogeneous quotient map to
-\((T/\Gamma)\times(C/L')\). The compact derived group is active
-there whenever it was active before, because \(H'\cap C\) has
-finite index in \(L'\).
+\begin{theorem}\label{thm:longroot}
+Let \(X\) be affine and geometrically homogeneous under a connected
+reductive group \(G\) over a characteristic-zero field \(K\).
+Suppose a split central torus \(T\) acts nontrivially. If \(G\) contains
+a \(K\)-subgroup \(S\) which geometrically is a long-root \(\SL_2\)
+in an active almost simple factor of rank at least two, then \(K[X]\)
+admits a witness. Over a real closed field such a subgroup exists
+in every active compact almost simple factor of rank at least two.
+\end{theorem}
 
-If one of the split and derived directions is absent, square
-positivity or the Laurent theorem applies. Otherwise use a
-character on \(T/\Gamma\) and an active compact rank-one subgroup
-of \(C\). The principal-orbit argument applies to \(C/L'\).
-For a central principal stabilizer there is an adjoint covariant
-with values in the compact Lie algebra and the angular construction
-\eqref{eq:angular} applies. For a noncentral stabilizer there is
-a rational map to its normalizer quotient. If that normalizer
-lies in a torus normalizer, pull back the axis-square angular
-witness on the unoriented two-sphere. An invariant denominator
-clears the finitely many Laurent coefficients and preserves the
-marked moments by compact square positivity. The compact
-rank-one normalizer list leaves two products,
+\begin{proof}
+Choose a geometric simple system in which the long root \(\beta\)
+is simple.
+For a neighboring simple root \(\alpha\), the Cartan integer
+\(\langle\alpha,\beta^\vee\rangle=-1\), since \(\beta\) is long.
+The element \(\beta^\vee(-1)\) is therefore noncentral in the
+almost simple factor. It acts nontrivially since the factor acts
+nontrivially and its kernel is central. If this central element
+of \(S\) belonged to a principal stabilizer, it would fix the
+entire principal open of Lemma~\ref{lem:principal}. Thus a finite
+principal stabilizer omits the unique involution in \(S\). It has
+odd order and is cyclic. A proper positive-dimensional reductive
+principal stabilizer has a torus as identity component.
+
+We first choose a nonzero \(S\)-invariant \(t\in K[X]\) of
+nontrivial \(T\)-weight. In fact every irreducible module of the
+almost simple factor over \(\overline K\) has a vector fixed by the long-root
+subgroup. To see this, pass to its simply connected cover. If
+there are at least two long simple roots, for each fundamental
+weight choose a long simple root whose coroot pairs to zero with
+that weight. The associated rank-one subgroup fixes the highest
+vector. All long roots are conjugate. The root systems with only
+one long simple root are \(C_r\) and \(G_2\), with \(B_2=C_2\).
+For \(G_2\) the fundamental module for the long simple root is
+the adjoint module, with a fixed vector in the kernel of that
+root on the Cartan subalgebra. For \(C_r\) it suffices to handle
+the last fundamental module, the primitive exterior power of
+degree \(r\) of the symplectic module. With the long-root subgroup
+on \(e_1,f_1\), a lowering operator for \(-\epsilon_1-\epsilon_r\)
+applied to \(e_1\wedge\cdots\wedge e_r\) gives, up to a scalar,
 \[
-                 (\SU_2/2O)\times\Gm,\qquad
-                 (\SU_2/2I)\times\Gm ,
+ (e_1\wedge f_1-e_r\wedge f_r)\wedge e_2\wedge\cdots\wedge e_{r-1}.
 \]
-where \(\SU_2\) is the compact real algebraic form. A finite
-stabilizer at a point of the compact orbit lies in the compact
-rank-one group by the norm-minimality argument and polar decomposition.
-Its noncyclic finite normalizer is likewise compact, since the
-positive part of a normalizing element centralizes the finite
-subgroup. Thus the products use the usual compact finite subgroups.
+This vector is fixed by the long-root subgroup. For sums of
+fundamental weights, multiply nonzero left \(S\)-invariants in
+the spaces of right highest-weight matrix coefficients in the
+coordinate ring of the simply connected group. Their product
+is nonzero and lies in the space for the sum of the weights.
+The matrix coefficient decomposition identifies that space
+with the dual irreducible module, and duality preserves
+the existence of invariants. This proves the assertion for
+every irreducible. Each nonzero \(T\)-weight space in \(K[X]\)
+therefore has \(S\)-invariants by base change, and the active
+split torus supplies one of nontrivial weight.
 
-For these two products the left circle quotient pushes Haar to
-uniform area on the two-sphere modulo the projective finite rotation
-group. Adjoining inversion gives the reflection group \(B_3\) or
-\(H_3\). In its two nonradial basic invariant coordinates the density
-on the regular image is proportional to the inverse square root of
-the discriminant. Indeed the tangential Jacobian differs from the
-full Jacobian of the three basic invariants by the constant
-length of the gradient of the radial quadratic on the sphere.
-The full Jacobian is the product of reflecting linear forms
-\cite{Chevalley,Steinberg}. This identifies the density that a
-real Laurent normalizer on these coordinates must handle. The direct
-substitution \(p=t^{-1}(1+t)f((1+t)x)^2\), with \(f\) the discriminant,
-already has a nonzero first moment for this density. Indeed integrate
-the divergence of \(x f^{3/2}\) on the bounded two-dimensional
-image. The field vanishes on the boundary and has bounded first
-derivatives, so its divergence integrates to zero. Hence
+Write \(q\) for the negative Killing form on \(\mathfrak s=\Lie(S)\),
+and choose \(\xi\in\mathfrak s(K)\) with \(q(\xi)\ne0\).
+If the principal stabilizer is nontrivial, it determines a
+nonisotropic line in \(\mathfrak s\). This is the Lie algebra of
+its torus centralizer in the cyclic case or of its identity
+component in the positive-dimensional case. The line is rational
+in the point by the graph argument of Section~\ref{sec:principal}
+over \(\overline K\). Since it depends only on the stabilizer,
+it descends and is \(T\)-invariant. Put \(A=1\) and
 \[
- \int \bigl(f^2+2f\,x\cdot\nabla f\bigr)f^{-1/2}\dd x
-   =-\frac53\int f^{3/2}\dd x .
+                  B=\frac{\langle z,\xi\rangle_q^2}{q(z)q(\xi)}
 \]
-The left side is the unnormalized first constant-term moment of \(p\).
-This accounts for the failure of the unmodified polynomial-density
-seed.
+for a representative \(z\) of the line. If the principal stabilizer
+is trivial, take a nonzero regular adjoint covariant as in
+Section~\ref{sec:principal}, with coordinate functions of one
+\(T\)-weight. Divide by a nonzero \(S\)-invariant function of that
+weight and clear its denominator by an \(S\times T\)-invariant
+element using the compact square argument. This gives a regular
+\(T\)-invariant adjoint covariant \(Z\ne0\). Set \(A=q(Z)\) and
+\(B=\langle Z,\xi\rangle_q^2/q(\xi)\).
 
-\subsection*{An anisotropic arithmetic test case}
-
-The split rank-one obstruction does not decide anisotropic
-individual forms over a general field. For example, the quaternion
-algebra \((2,3)_{\QQ}\) is division by its Hilbert symbol at \(3\),
-but it splits over \(\RR\). Its norm-one group is anisotropic over
-\(\QQ\), and its real trace is outside the compact positivity
-case. On any anisotropic norm-one quadric, two simple witness
-classes can be ruled out. A nonzero homogeneous linear phase
-has nonzero second moment by the inverse norm form. For the even
-degree-two class, absorb the constant into the norm equation and
-write the phase as \(q_A(x)=q(x,Ax)\), where \(A\) is self-adjoint
-for \(q\). In dimension \(n\), its \(m\)-th normalized sphere
-moment equals
+In both cases \(R_S(B^j)=A^j/(2j+1)\) on the open of definition.
+For a compact real axis this is the spherical average of the
+\(2j\)-th power of the direction cosine. For vectors the same
+averaging formula is polynomial and hence holds throughout the
+complexified adjoint space. For lines it follows on their
+homogeneous space from the compact orbit. Define
 \[
- \frac{m!}{(n/2)_m}[z^m]\det(I-zA)^{-1/2}.
+ P=d\,t^{-1}(1+t)\bigl(A-(1+t)^2B\bigr)^2,\qquad Q=t,
 \]
-This follows by diagonalization on a dense open of the complex
-self-adjoint matrices and the Gaussian radial integral, then by
-polynomial continuation. If all positive moments vanish, \(A\)
-is nilpotent. A nonzero self-adjoint nilpotent would give a
-nonzero isotropic vector: take \(A^r v\ne0\) with \(2r\) at least
-the nilpotence index. Thus \(A=0\). This calculation leaves
-inhomogeneous and higher-degree phases open.
+where \(d\) is an \(S\times T\)-invariant denominator. The
+expressions to be cleared are finite under \(S\times T\):
+the axis terms are matrix coefficients of the rank-one group,
+and \(t^{-1}\) is a weight vector. In the covariant case a
+denominator for \(t^{-1}\) alone suffices as \(Z\) varies.
+Taking the constant term in \(t\), after the \(S\)-average,
+uses the same integral as in \eqref{eq:angular}. For all \(m\ge1\),
+\[
+        \Lambda_X(P^m)=0,\qquad
+        \Lambda_X(tP^m)=F_m(1)\Lambda_X((dA^2)^m).
+\]
+In particular these identities are valid for finite parameter
+spans of invariant denominators and, when needed, covariants.
+
+Over \(\CC\), the denominator can be chosen nonnegative and positive
+somewhere on the compact orbit by the compact square construction.
+In the covariant case the regular \(T\)-invariant adjoint maps
+are stable under compact conjugations, so choose a nonzero map
+with compact real values on that orbit. The squared radius is
+then positive on a dense open subset of the compact orbit.
+Consequently \(\Lambda_X((dA^2)^m)\) is positive for every
+positive order at those complex parameters. The coaction equations
+and the common denominator ideal commute with base change.
+Choose finite parameter spans over a finitely generated field of
+definition whose complexifications contain these choices.
+Lemmas~\ref{lem:shift} and \ref{lem:specialize} give one ground-field
+parameter with infinitely many nonzero marked moments.
+
+Over a real closed field, a maximal torus of a compact factor
+is anisotropic and conjugation acts on its roots by inversion.
+The subgroup for the opposite long-root pair descends to \(K\).
+This proves the last assertion.
+\end{proof}
+
+\subsection{Compact adjoint torsors}
+
+\begin{theorem}\label{thm:torsor}
+Let \(K\) be real closed and \(C\) a connected adjoint semisimple
+group of compact type. For a \(C\)-torsor \(X\), the normalized
+trace on \(K[X]\) has Mathieu--Zhao kernel if and only if
+\(X(K)\ne\varnothing\).
+\end{theorem}
+
+\begin{proof}
+If \(X\) has a point, identify it with \(C\) and use strict square
+positivity. In general write \(X\) as a right torsor. After choosing
+a point over \(K(i)\), the descent involution has the form
+\(g\mapsto c\,\sigma(g)\), with \(c\,\sigma(c)=1\) and \(\sigma\)
+the original conjugation of \(C\). The commuting group of left
+translations descends to the inner form \(C_c\) with conjugation
+\(\operatorname{Int}(c)\sigma\). Its action is geometrically
+transitive. The two normalized traces coincide: each commuting
+action preserves the other's normalized trace by uniqueness,
+and each action has only constant invariants.
+
+If \(C_c\) is compact, its conjugation is conjugate to \(\sigma\)
+by an inner automorphism \(\operatorname{Int}(a)\). Over \(\RR\)
+this is conjugacy of compact forms \cite[Theorem~3.8]{AdamsTaibi}.
+Over \(K\) it follows by the real specialization principle above.
+Negative definiteness of the Killing forms and the existence
+of \(a\) satisfying the conjugacy identity are finite algebraic
+conditions in a presentation of the group and its involutions.
+Adjointness then gives \(c=a\sigma(a)^{-1}\), so the point with
+coordinate \(a\) descends to \(K\).
+Thus if \(X(K)\) is empty, \(C_c\) has positive split rank.
+Its action gives a witness by Theorem~\ref{thm:active}, and the
+same witness applies to the trace for \(C\).
+\end{proof}
+
+The point criterion also holds for compact semisimple groups with
+odd-order center. A cocycle that is trivial in the adjoint
+cohomology set comes from the center. Conjugation fixes every
+geometric point of the center, since the center lies in a compact
+maximal torus. A central cocycle therefore has order dividing two
+and is trivial when the center has odd order. A nontrivial adjoint
+class gives a noncompact commuting inner form by the proof above.
+
+For example, let \(D\) be a quaternion division algebra over any
+characteristic-zero field and \(X=\operatorname{Isom}_{K\text{-alg}}
+(D,M_2(K))\). A nonzero reduced-trace-zero \(\xi\in D\) gives the
+split adjoint covariant \(Z(\phi)=\phi(\xi)\). Its radius is
+\(r(Z)=4\xi^2\in K^\times\). Thus \eqref{eq:adjoint} gives an
+explicit pair with nonzero marked moments at every positive order.
+By the commuting-action argument this is also a witness for the
+action of \(\PGL_1(D)\).
+
+\subsection{Open ground-field cases}
+
+The split obstruction does not classify individual anisotropic
+nonsplit spaces over general fields. A basic arithmetic example
+is the norm-one group of the quaternion division algebra
+\((2,3)_{\QQ}\), which has positive real split rank but no
+\(\QQ\)-split rank-one subgroup.
+
+Even over a real closed field, the connected group classification
+and the adjoint torsor theorem leave general homogeneous spaces
+open. Two test cases are
+\[
+                (\SU_2/2O)\times\Gm,\qquad
+                (\SU_2/2I)\times\Gm ,
+\]
+where \(\SU_2\) denotes the compact algebraic form. A nontrivial
+finite cyclic stabilizer determines an axis and leads to the
+angular identity. The binary octahedral and icosahedral stabilizers
+have no invariant axis. The complex witnesses for their split
+quotients do not give witnesses over the real ground field.
 
 \section{Compact homogeneous spaces}
 
@@ -719,8 +896,8 @@ vanishing, since the trace of a product pairs only dual types and
 a fixed multiplier has finitely many types.
 \end{proof}
 
-Finally suppose \(D=[G^\circ,G^\circ]\subseteq H\), without a splitness
-assumption. Let \(T=G^\circ/D\), \(M=X^*(T_{\overline K})\), and let
+Finally suppose \(D=[G^\circ,G^\circ]\) acts trivially on \(X\),
+with \(G^\circ\) possibly nonsplit. Let \(T=G^\circ/D\), \(M=X^*(T_{\overline K})\), and let
 \(\Gamma\) be a finite Galois group acting on \(M\) and the geometric
 components. For a representative \(i\) of each component orbit
 \(\alpha\), let \(\Gamma_i\) be its stabilizer and \(M_i\subset M\)
@@ -851,14 +1028,11 @@ from ordered fields to quantifier elimination,
 R. Appenzeller, Semisimple algebraic groups over real closed fields,
 \href{https://arxiv.org/abs/2601.07732}{arXiv:2601.07732}, \S5.8.
 
-\bibitem{Chevalley}
-C. Chevalley, Invariants of finite groups generated by reflections,
-\emph{Amer. J. Math.} 77 (1955), 778--782.
-
-\bibitem{Steinberg}
-R. Steinberg, Invariants of finite reflection groups,
-\emph{Canad. J. Math.} 12 (1960), 616--618.
-\href{https://doi.org/10.4153/CJM-1960-055-3}{DOI}.
+\bibitem{HTT}
+R. Hotta, K. Takeuchi and T. Tanisaki,
+\emph{D-Modules, Perverse Sheaves, and Representation Theory},
+Progress in Mathematics 236, Birkh\"auser, 2008.
+\href{https://doi.org/10.1007/978-0-8176-4523-6}{DOI}.
 
 \bibitem{Fausk}
 H. Fausk, Equivariant homotopy theory for pro-spectra,

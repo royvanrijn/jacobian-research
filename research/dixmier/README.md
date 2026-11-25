@@ -74,6 +74,7 @@ Scope limits:
 - The subsequent primary audit corrects an intermediate odd-coefficient identity in arXiv:1401.5141v1 Proposition2.6. It gives no theorem counterexample and makes no claim about the uninspected publisher proof. No all-order extension is imported; the retained coprime and selfadjoint power-of-two classifications remain unchanged.
 - Leading-term cancellation eliminates generic orders (4,4) in the exact-first-image regular scalar Long chart. The larger generic order is at least six, and a fourth-order member requires an even partner and lies beyond the selfadjoint exclusion.
 - Rank-two Weyl assignments whose positions are polynomials in the multiplication variables are cotangent lifts up to a polynomial momentum shear. Surjectivity for this class is equivalent to JC2, including at equal degree cutoffs. Published planar inversion through degree 104 therefore gives unconditional surjectivity through Bernstein degree 104 on that class.
+- The ordered polynomial symbols of positional Weyl assignments are polynomially equivalent to the positional Keller map times the identity. In rank two this excludes generic degrees two through four and every geometric A4 action, regardless of Bernstein degree.
 
 Tracked obligations (computed states):
 

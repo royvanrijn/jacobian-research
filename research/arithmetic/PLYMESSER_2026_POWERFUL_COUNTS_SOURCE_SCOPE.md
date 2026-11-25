@@ -75,3 +75,30 @@ The two new PDFs retained for this note are exact author-tagged release files, w
 * [Plymesser quadratic paper](sources/plymesser-powerful-quadratics-hexagon2611.00699-v1.0.1.pdf), repository tag v1.1.1, manuscript version 1.0.1, SHA256 1c1f06fa1f2b496582ceebbaf85fdf9ec85846a6a6363bb4a9a44dd80449178e.
 
 Existing Chan, Reuss, Heath-Brown, Browning--Verzobio and Trifonov primary PDFs are reused at their existing paths and pins. No old source pin, principal state, gap or assurance is altered by this source-scope note.
+
+## 7. Focused 7/19 recheck: Chan, Blomer--Schobel and Heath-Brown
+
+Rechecked 25 November 2026 against the actual primary statements and the proof passages below. Write
+\[
+ S_l(X)=\#\{m\le X:m,m+l\ \text{positive square-full}\},\qquad
+ r(N)=\#\{(u,v)>0:u,v\ \text{square-full},\ u+v=N\}.
+\]
+These are different counting problems. The first allows a constant depending on a fixed shift; the second needs a bound uniform in the prescribed target.
+
+**Where the exponents belong.** [Chan's 2012 Theorem 4](https://doi.org/10.1017/S144678871200016X) gives S_l(X)<<_l X^(7/19)log X. Theorem 3 instead makes the shift dependence explicit in d_3(l)X^(2/5)log²X. In [Blomer--Schobel's author version](https://www.researchgate.net/profile/Anita-Schoebel-2/publication/268024970_Twins_of_powerful_numbers/links/67816b208210a977a17fb2d5/Twins-of-powerful-numbers.pdf), Theorem 1 is shift-uniform and Corollary 2 explicitly treats positive prescribed sums with exponent 2/(2k+1). Their Theorem 3 improves the fixed-difference square-full exponent to any gamma_2>61/180; it does not state that sharper exponent uniformly in a growing shift. [Reuss, exact v2, Theorems 1 and 4](https://arxiv.org/pdf/1212.3150v2) gives X^(29/100+epsilon) for the consecutive case; its general determinant estimate permits dependence on h. None of these sharper fixed-difference statements can be substituted directly for a uniform bound on r(N).
+
+The two Chan papers must also be distinguished. [Chan, arXiv:1407.0054, Theorem 4 and Lemma 4](https://arxiv.org/pdf/1407.0054), is the coefficient-unit modular box-completion result used in the repository's own 7/19 proof. It is not the 2012 fixed-difference theorem with the same numerical exponent. Its explicit error is O_epsilon((K+L)q^(-1/2+epsilon)+q^(1/2+epsilon)).
+
+**The exact Blomer--Schobel transfer gate.** Their Proposition 1 requires 0<Delta<1/2 and counts rational approximations with error Delta/Q². Equation (2.3), for their normalized nonzero difference d and X comparable to either powerful term, bounds the approximation error by
+\[
+ \frac{2|d|}{M_j^2}\frac{N_jM_j}{X}.
+\]
+Since Q=2M_j, the sufficient Delta supplied by this argument is proportional to |d|N_jM_j/X. The following displayed choice Delta asymp N_jM_j/X absorbs the fixed d into its constants, as their text explicitly permits. In an all-variables scale T with X asymp T^5, fixed d gives Delta asymp T^(-3). Letting |d| asymp X instead gives a supplied Delta of order T², outside Proposition 1. This explains the failure of the direct growing-shift substitution. It does not rule out a different auxiliary curve, a new parameterization, or a separate estimate for positive sums.
+
+**The exact Heath-Brown bridge.** [Browning--Van Valckenborgh, arXiv:1106.4472v1, Theorem 2](https://arxiv.org/pdf/1106.4472v1), gives B^(3/5)log^12 B for primitive square-full triples. Its Section 4 combines diagonal-conic and diagonal-cubic slices; its discussion immediately after Theorem 2 identifies the all-six-variables scale B^(1/5) as the obstruction to improving that exponent. This is the same balanced scale that limits the repository's two-graph exponent optimization, although the two counting problems and the required frequency bounds differ. The official record still lists [arXiv:2601.07817v1](https://arxiv.org/abs/2601.07817v1). Theorem 1.1 counts all square-full triples u+v=w<=B, including nonprimitive ones, with exponent 3/5-3/1555+epsilon; it requires w itself to be square-full. Its Theorem 1.3 is the genuinely coefficient-uniform primitive diagonal-cubic estimate. Setting one coordinate equal to 1 makes it applicable to nonzero-coefficient binary cubic equations with prescribed right-hand side. The primitive hypothesis must also be checked when all three coordinates vary. Sections 4--6 use lifted bilinear congruences, rational lines and lattice determinants to retain more information than a raw modular box count. They offer a method to investigate, rather than an automatic pointwise consequence of Theorem 1.1.
+
+[The August 2026 Browning--Verzobio preprint](https://arxiv.org/abs/2608.24512v1) still cites Heath-Brown for the square-full triple case. Its Theorem 1.2 is coefficient-uniform in rectangular generalized-Fermat boxes; its new main counting theorem concerns sufficiently large fullness orders. Neither displayed result closes the prescribed-sum cycle frequency problem here.
+
+**Research consequence.** The repository's current unconditional pointwise claim is 3/10, established internally in [the dual-graph proof](ERDOS_943_DUAL_KERNEL_GRAPHS.md), rather than its earlier 7/19 bound. The productive transfer problem is to exploit the common target N when counting families of compatible slices, lines or cycles. Bounding each completed slice by N^epsilon does not bound the number of slices. The [critical rectangular criterion](ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md) records one precise sufficient cycle estimate for reaching 5/17, its equivalent residual, and the actual sectors already controlled using the uniform cubic theorem. That cycle estimate and the resulting global 5/17 bound remain open. No converse from a pointwise representation bound to that cycle estimate is asserted.
+
+This focused search verifies the cited comparisons and identifies method gates. It does not establish a worldwide priority claim or completeness of the literature search. It adds no imported premise to the existing 7/19 or 3/10 proofs.

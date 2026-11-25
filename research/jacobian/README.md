@@ -73,6 +73,7 @@ Scope limits:
 - For every p>=17 the explicit inverse slice gives M admissible rounds adding 17M coordinates over a fixed-coordinate scaffold, with exact inverse degree max(D_*,2M+1). Complete-basis saturation also has no uniform ceiling in this range.
 - The exact inverse-line data of the 48-variable cubic give thirteen exact-index-3 grade-prefix witnesses with inverse degrees 5,7,...,29 in dimensions 3,4,6,9,13,19,28,38,42,45,46,47,48. They supply the nonvanishing side of the length-three shuffle threshold directly.
 - The candidate cubic index-four ceiling 207, also for the retained scaffold with arbitrary restart rounds, is equivalent to the 103 weighted class identities U_104 through U_206. Any failing grade in the block gives an exact-index-four triangular witness of inverse degree 209 through 413.
+- Every noninvertible plane Keller map has generic degree at least five by the published low-sheet exclusions and birational inversion. The exact product descriptions carry field degree and permutation action to Hessian and positional Weyl assignments.
 
 Tracked obligations (computed states):
 

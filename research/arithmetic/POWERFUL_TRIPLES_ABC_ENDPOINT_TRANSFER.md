@@ -182,3 +182,191 @@ a diagonal sequence with \(\tau\to0\) and \(d\to1/3\)
 would again give two measures supported on
 \([3,\infty)\). In particular the gap for boxes does
 not require exact absence of the low degree coordinates.
+
+## Large-step valuation spectra and the small-budget endpoint
+
+Consider ordered primitive positive triples at radical budget
+\(\lambda\), and prescribe on each selected letter \(T\) a
+positive integer \(q_T\) and a set \(R_T\) of at most \(K\)
+residues modulo \(q_T\), where \(q_T\lambda\ge\kappa>0\).
+Let the captured radical on that letter be
+\[
+ P_T=\prod_{\substack{p\mid T\\ v_p(T)\bmod q_T\in R_T}}p .
+\]
+Suppose at least \(b_T\lambda\log c\) is captured, in the
+sense that \(\log P_T\ge b_T\lambda\log c\). Here
+\(K,\kappa\), and the positive margins in the statements
+below are fixed, while \(q_T,R_T\) may vary between budgets
+and are fixed before the height limit at a given budget.
+
+At a limiting endpoint \(d=1/3\), these conditions force
+atomic mass at least \(b_T\) on the corresponding weak
+degree measure. In each of the following sectors there are
+\(\delta,\lambda_*>0\) giving an upper count
+\(O_{\lambda,\mathbf q,\mathbf R,\varepsilon}
+(X^{(1/3-\delta)\lambda+\varepsilon})\) for fixed
+\(0<\lambda\le\lambda_*\). The saving depends
+on the fixed capture parameters.
+
+- \(b_U+b_V\ge1/3+\epsilon\) on a pair, for fixed \(\epsilon>0\).
+- \(\sum_T b_T\ge1/2+\epsilon\) across all three.
+- Two letters have all their nonzero valuations in their
+  respective prescribed residue sets.
+- One letter is \(p\)-full with \(p\lambda\ge3-\tau\) and
+  another captures \(b\lambda\log c\) for fixed \(b>0\),
+  for a sufficiently small \(\tau>0\) depending on the
+  displayed fixed parameters.
+
+For example the third case covers two exact powers
+\(x^{q_U},y^{q_V}\) with \(q_U\lambda,q_V\lambda\ge\kappa\),
+without requiring either lower fullness threshold near three.
+The fourth covers one critically full letter and one large
+exact power, even when the latter's order is far smaller
+than the former's. A bounded alphabet of exact valuation
+degrees on a letter can be used in place of its residue
+classes in all the conclusions.
+
+### Proof of the endpoint transfer
+
+If a uniform saving failed, choose a sequence
+\(\lambda_j\to0\) with count exponent
+\((1/3-o(1))\lambda_j\), and extract fixed-truncation
+anatomic boxes as in the [two-full-letter transfer](#corollary-a-small-budget-saving-with-two-full-letters).
+The radical budget and the one-third upper bound force
+\(L_j/\lambda_j\to1\) and normalized box exponent
+\(D_j/L_j\to1/3\). Choose truncation loss
+\(o(\lambda_j)\) and compression index \(k_j\) with
+\(k_jL_j\to\infty\). The packed root then has normalized
+mass \(o(1)\) by the first-moment bound. Valuations below the truncation retain their exact
+degree indices. Primes of higher valuation contribute
+vanishing normalized root mass since the compression
+index times \(L_j\) tends to infinity. The exceptional coefficient and box choices
+cost \(o(\lambda_j)\) at fixed \(j\) before passage
+to small budget.
+
+For a captured letter let \(\sigma_{T,j}\) be the
+submeasure on the nonpacked captured coordinates.
+Its mass is at least \(b_T-o(1)\) and its first moment
+is bounded. Its support is in
+\[
+ \bigcup_{r\in R_{T,j}}
+    \{rL_j+n q_{T,j}L_j:n\in\mathbb Z_{\ge0}\},
+\]
+using the nonnegative residue representatives. The
+mesh \(a_j=q_{T,j}L_j\) is bounded below by
+\(\kappa/2\). Pass to a subsequence on which these
+meshes tend to a finite positive limit or to infinity,
+and on which each of the at most \(K\) phase offsets
+converges in \([0,\infty]\). On every bounded scaled
+interval the number of mesh positions is uniformly
+finite. If the mesh tends to infinity only the initial
+offsets can remain. Hence each weak limit of these
+captured submeasures is purely atomic. Tightness follows
+from its bounded first moment, so its total mass is at
+least \(b_T\). It is dominated by the full letter
+measure \(\nu_T\), proving the claim about atomic mass.
+
+At the endpoint each full letter measure has total
+mass \(1/3\), each pair has nonatomic mass total at
+least \(1/3\), and all three have nonatomic total at
+least \(1/2\). These are directly incompatible with
+the first three sectors. For the last take a contrary
+sequence with \(\tau_j\to0\). The critical full letter's
+measure is supported in \([3,\infty)\), so its mass
+and first moment force \((1/3)\delta_3\). The pair
+inequalities then force the other letters to be wholly
+nonatomic, incompatible with positive captured mass.
+The quantifiers give fixed strict saving constants
+depending only on the stated fixed parameters.
+
+## Uniformly bounded diffuse density at the one-full endpoint
+
+Consider a limiting box of normalized count exponent \(d=1/3\)
+in which the weak scaled-degree measure of one letter \(A\)
+is supported on \([3,\infty)\). Then the existing endpoint
+balance gives
+\[
+ \nu_A=\tfrac13\delta_3,\qquad
+ \nu_B=\nu_{B,\mathrm{na}},\qquad
+ \nu_C=\nu_{C,\mathrm{na}}.
+\]
+The low-degree corollary gives these nonatomic statements. Both diffuse letters have
+uniformly bounded densities on their entire scaled-degree
+supports: for an absolute \(C_0\),
+\[
+ \nu_T(I)\le C_0 |I| \quad (T=B,C)
+ \tag{OF}
+\]
+for every interval \(I\), including intervals at zero.
+
+The pair excess is zero for \((A,B)\) and \((A,C)\),
+because their nonatomic masses are \(0\) and \(1/3\).
+Thus the complementary-letter bound (VM2) gives uniformly bounded
+scaled supports and no escaped first moments on both \(B,C\). The [short-height theorem](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-strict-saving-when-the-short-term-is-small)
+bounds their numerical heights below
+by an absolute positive constant \(h_*\), since the count
+exponent is \(1/3\). Take an absolute bound \(R\) for the
+supports and choose \(a>0\) sufficiently small that the
+numerical contribution below \(a\) is at most \(h_*/2\).
+Each diffuse letter therefore has uniformly positive
+root mass in \([a,R]\), since its numerical contribution
+there is at least \(h_*/2\).
+
+Take \(T=B\). Start with an interval \(I\) with continuity
+endpoints, length \(\sigma>0\), and mass \(t=\nu_B(I)>0\).
+Freeze \(B\)-roots outside \(I\) at normalized cost
+\(1/3-t+o(1)\). On \(C\) choose a whole-coordinate block
+in the positive band of mass \(\mu\in[\lambda t,2\lambda t]\)
+up to vanishing errors, for a sufficiently small absolute
+\(\lambda>0\). There is enough mass since \(t\le1/3\),
+and degree positions have vanishing individual mass on the
+nonatomic modulus letter. Its numerical weight \(w\) lies
+between \(a\lambda t\) and \(2R\lambda t\). Set \(kL\to a/2\).
+With frozen factors included in the unit target, this gives
+a signed rational monomial congruence for the two free terms.
+
+On \(A\) group its shrinking degree-three window as one root
+of normalized height cap \(1/3+o(1)\), with all other factors
+and signed exponent corrections of vanishing numerical
+height. On \(B\) group the free patch \(I\) at a representative
+positive scale within it as a second root of normalized
+height \(t+o(1)\). The wider signed rational factor has
+numerical height at most \(\sigma t+o(1)\). For intervals
+touching zero one can use a positive midpoint. The counting
+statement (UW) is uniform in the signed exponents, so a
+representative scale tending to zero between tests causes
+no change in the constants. All choices for any one
+interval are fixed before the small-budget limit.
+
+Use (UW) unamplified. For each exact represented rational
+ratio, choose one actual tuple. This gives exact-fibre
+bound one (the two primitive complete terms are determined
+by their ratio), irrespective of prime overlap in the
+wide multiplier. Thus no \(\sigma t/r_I\) exact-fibre
+cost appears when the representative of \(I\) is small.
+The height constants relative to the full modulus can be
+taken as \(O(1/(\lambda t))\) on the atom root and
+\(O(1/\lambda)\) on the patch root. The wider normalized
+height relative to the modulus is at most
+\(\sigma/(a\lambda)+o(1)\). Therefore the (UW) width
+condition holds when \(\sigma<C_1t\), for an absolute
+\(C_1>0\). Choose \(\lambda\) first, small enough that
+the modulus freeze plus the normalized chart cost
+\(B_2 w/(a/2)\) is at most \(t/2\). Then the count
+would give \(d\le1/3-t/2<1/3\), a contradiction.
+This proves \(t\ll\sigma\) uniformly in the interval.
+Approximation by continuity endpoints proves the same
+for all intervals. Disjoint interval decompositions of
+open sets and measure regularity prove the density
+assertion.
+
+In particular if the second letter is also full at a
+scaled threshold \(3-\tau\), (OF) forces
+\(\tau\ge1/(6C_0)\) at such a limiting box: a measure
+of density at most \(C_0\), mass \(1/3\), and support
+above \(3-\tau\) has first moment at least
+\[
+ \frac13(3-\tau)+\frac{(1/3)^2}{2C_0}.
+\]
+This is the moment of the leftmost constant-density
+interval of that mass and must be at most one.

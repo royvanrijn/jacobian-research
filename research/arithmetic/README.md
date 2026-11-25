@@ -387,8 +387,26 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Growing additive doubling of near-capacity complete subsets | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 | Atomic factor information in complete-label graphs | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 | A small-budget saving with two full letters | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| A small-budget saving with one full letter above threshold | Internal result | proved | [Source](ABC_ONE_FULL_LETTER_ENDPOINT.md) |
+| Degree measures at the single-full-letter threshold | Internal result | proved | [Source](ABC_ONE_FULL_LETTER_ENDPOINT.md) |
+| Vanishing relative additive energy at complete-letter capacity | Internal result | proved | [Source](ABC_COMPLETE_LETTER_ADDITIVE_ENERGY.md) |
+| Higher additive moments and density of complete additive triples | Internal result | proved | [Source](ABC_COMPLETE_LETTER_ADDITIVE_ENERGY.md) |
+| Critical rectangular cycle criterion and coefficient-sensitive bounds | Internal result | proved | [Source](ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md) |
+| A weighted primitive quotient saving for comparable fullness orders | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Alternating asymptotic terms for comparable powerful triples | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Large-step valuation spectra force atomic mass | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Strict small-budget saving from captured radical mass in valuation classes | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Uniformly bounded diffuse density at the one-full endpoint | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| An all-scale progression bound for regularized complete letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A short modular progression bound for complete letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| All-scale ordinary and modular progression bounds on regularized complete letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Fixed-rank modular progressions on regularized complete letters | Internal result | proved | [Source](ABC_MODULAR_PROGRESSION_SLICING.md) |
+| Quantitative low-degree mass on both diffuse letters | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
+| A saving with a near-full letter and narrow residue bands | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
+| A quantitative lower bound on low degrees at the one-full endpoint | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
+| A count saving with one near-full letter and narrow valuation-residue bands | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
 
-**Computed obligations:** 103 unresolved; 18 resolved within their exact scope.
+**Computed obligations:** 105 unresolved; 18 resolved within their exact scope.
 
 
 Scope limits:
@@ -517,6 +535,8 @@ Scope limits:
 - Actual-capacity extension preserves old raw congruence bounds. It proves conditional pair/ratio/capacity reverses; every curve uses its own norm degree and exact post-content modulus, verticalD2 is required for the reverse, and the positive-saving capacity estimate remains OPEN.
 - Actual six-cycle divisor reconstruction closes the singular g_*<=sqrt(T) sector; low kernel-side lcm costs at most T^(2+epsilon). For odd prime targets every proper-power U/V sector costs T^(1+epsilon). Full/residual bounds are equivalent and OPEN; no prescribed-sum exponent improves here.
 - Actual unweighted singular cycles with H(P/Q)<=T^(1/4), or reduced cubic-center height<=T^(1/6), now meet the balanced T^(2+epsilon) target. The product-balanced sector is smaller still, and prime2mod3 has a structural empty sector. Both full/refined-residual cycle estimates remain OPEN; the coefficient-dependent first-term loss is not a uniform maximum-box saving. Uniform arbitrary positive coefficients are covered on the weighted ratio sector H(rho)<=T^(17/44) at T=N^(11/50), by the fixed-squareclass<2X center count; the complementary weighted sector remains open.
+- Critical localization gives a new unconditional coefficient discount and narrows a sufficient5/17 cycle criterion to shaped root/kernel ranges and squarefree coefficients with kappa_max^134*kappa_min^117<=n. Five actual sectors meet its26/51 cycle budget, including unweighted ratio height<=n^(11/136) by shaped-cap cancellation. The full/residual rectangular count and actual global5/17 bound remain OPEN; no older balanced T^2 gap is discharged.
+- For sufficiently large fixed comparable fullness orders, the greatest order M governs the leading full-triple count. The asymptotic expansion is summable over primitive quotients, giving a total-variation convergence rate and a uniform power tail.
 
 Tracked obligations (computed states):
 
@@ -597,5 +617,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Prove a positive-saving content-aware total capacity for ACTUAL covers of the exact NO-short/SOME-full complement at delta1/8.](ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md) — GAP-ARITH-ERDOS943-POSITIVE-SAVING-ACTUAL-CURVE-CAPACITY
 - **mathematical / open:** [Bound the actual cycles with both kernel lcms>8T^2 after removing the singular g_*<=sqrt(T) sector; on odd prime targets proper-power product ratios may also be removed.](ERDOS_943_SIX_CYCLES.md) — GAP-ARITH-ERDOS943-BALANCED-SIX-CYCLE-RESIDUAL
 - **mathematical / open:** [Count the actual high-lcm residual cycles after removing small coherent gcd and the now-counted small product-ratio/cubic-center sectors; equivalently close the full pointwise balanced C6 bound.](ERDOS_943_COHERENT_PRODUCT_RATIO.md) — GAP-ARITH-ERDOS943-COHERENT-PRODUCT-RATIO-RESIDUAL
+- **mathematical / open:** [Prove the critical rectangular cycle budget26/51 for the small weighted squarefree coefficient family in(H); this suffices for the all-target5/17 bound.](ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md) — GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-CYCLE-BUDGET
+- **mathematical / open:** [Count the critical cycles after the proved lcm, shared-neighbor root-gcd, coherent-gcd and both product-ratio sectors are removed; this is exactly equivalent to(H), still open.](ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md) — GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-RESIDUAL
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

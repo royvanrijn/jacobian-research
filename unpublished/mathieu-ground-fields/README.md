@@ -1,17 +1,15 @@
-# Mathieu's Conjectures over Fields of Characteristic Zero
+# The Mathieu Property over Fields of Characteristic Zero: Classification and Ground-Field Obstructions
 
-*Split Homogeneous Spaces, Compact Groups, and Ground-Field Obstructions*
+The flagship theorem classifies the normalized Reynolds kernel on an affine geometrically homogeneous space over any characteristic-zero field with split reductive identity component. An active split rank-one subgroup gives a fixed marked witness, including for a space without a rational point. The paper also classifies connected reductive groups and compact adjoint semisimple torsors over real closed fields, and representative functions on compact Hausdorff homogeneous spaces. The long-root theorem treats an active split central torus coupled with an active compact factor of rank at least two.
 
-Companion manuscript to the [released complex classification](https://hexagonmath.org/2611.00556v1).
+[Manuscript PDF](mathieu-ground-fields.pdf) · [LaTeX source](main.tex) · [Hexagon source ZIP](mathieu-ground-fields-hexagon-source.zip) · [Submission metadata](metadata.json) · [Verification](verification.json)
 
-The main theorem classifies the Reynolds kernel for split identity component over every characteristic-zero field and proves the obstruction from an active split rank-one subgroup in nonsplit groups. It also treats compact Hausdorff homogeneous spaces, connected reductive groups over real closed fields, the universal rational-algebra formulation, and the ground-field toral nullcone.
+## Publication scope
 
-The connected real closed homogeneous-space classification reduces to the two compact exceptional products. The manuscript records an explicit obstruction to the unmodified discriminant-density seed. For anisotropic nonsplit groups it records the limits of the split-root argument and a low-degree obstruction on anisotropic norm-one quadrics.
+The [deposited complex classification](https://hexagonmath.org/2611.00556v1) supplies the exceptional split moment identities and the complex classification used here. The [quadratic-complement manuscript](../mathieu-quadratic-complements/) gives the separate dimension classification and sharp witness bounds. The general anisotropic nonsplit problem and the two compact exceptional products over real closed fields remain open.
 
-[PDF](mathieu-ground-fields.pdf) · [LaTeX source](main.tex) · [Metadata](metadata.json) · [Verification](verification.json)
+## Hexagon submission
 
-## Publication boundary
+Upload the source ZIP with entry point `main.tex`. The metadata includes the title, author and ORCID, plain-text abstract, suggested subject and cross-lists, and a provenance draft. The final contributor and human-understanding declarations and the license are author inputs. [Hexagon submission](https://hexagonmath.org/submit)
 
-The complex counterexamples and their exceptional moment calculations are in the deposited paper. The present proof starts from those rank-one moment identities and adds principal-orbit transfer and arithmetic specialization. The [quadratic complement manuscript](../mathieu-quadratic-complements/) concerns a different trace and its sharp dimension classification. The [finite mixed-moment manuscript](../finite-tests-for-mixed-moments/) develops an effective general test rather than a homogeneous-space classification.
-
-Build with `latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex`. Mathematical review of the new principal-orbit and arithmetic specialization arguments remains open. The proof does not claim a full classification of nonsplit homogeneous spaces.
+Build from an extracted ZIP with `latexmk -pdf -jobname=mathieu-ground-fields -interaction=nonstopmode -halt-on-error main.tex`. The verification record identifies the reviewed edition and the scope of the proof audit and exact checks.

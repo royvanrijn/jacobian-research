@@ -72,6 +72,10 @@
     {
       "path": "research/arithmetic/abc_budget_989_delta.json.xz",
       "sha256": "6e6d4db857846d68ebdb48ede230ff6126fd26a0840ae91d61be8e61194d8e67"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_990_delta.json.xz",
+      "sha256": "95bd3807ea70bf9fa7dd4fe95d9d6521d24613f81c36b2ed2db4e36d38fe98ee"
     }
   ]
 }

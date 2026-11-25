@@ -5,7 +5,7 @@ Drafts and standalone notes with their current review status.
 | Paper | Status |
 |---|---|
 | [The Strong Factorial Conjecture for Univariate Binomials](strong-factorial-binomials/) | ready for review |
-| [Mathieu’s Conjectures over Fields of Characteristic Zero](mathieu-ground-fields/) | draft |
+| [The Mathieu Property over Fields of Characteristic Zero: Classification and Ground-Field Obstructions](mathieu-ground-fields/) | ready for review |
 | [Finite Tests for Mixed Moments of Regular Functions](finite-tests-for-mixed-moments/) | draft |
 | [The Mathieu property for quadratic complements](mathieu-quadratic-complements/) | ready for review |
 | [Cubic sphere moments and the two-pair Image problem](cubic-sphere-image/) | ready for review |

@@ -1,29 +1,38 @@
 {
-  "title": "Mathieu's Conjectures over Fields of Characteristic Zero",
-  "subtitle": "Split Homogeneous Spaces, Compact Groups, and Ground-Field Obstructions",
+  "title": "The Mathieu Property over Fields of Characteristic Zero: Classification and Ground-Field Obstructions",
   "author": {
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "status": "draft",
-  "summary": "Complete Mathieu–Zhao classification for split identity component in characteristic zero, active split rank-one obstructions over arbitrary fields, and compact and real-closed results.",
+  "status": "ready-for-review",
+  "summary": "Classifies the Mathieu–Zhao property for split reductive actions in characteristic zero, including spaces without rational points. Gives further real-closed, compact Hausdorff and ground-field obstruction theorems.",
   "source": "main.tex",
   "pdf": "mathieu-ground-fields.pdf",
   "build": "latexmk -pdf -jobname=mathieu-ground-fields -interaction=nonstopmode -halt-on-error main.tex",
-  "publication_boundary": "Companion to Hexagon 2611.00556v1. The compact exceptional real products and general anisotropic nonsplit individual homogeneous spaces remain open.",
+  "publication_boundary": "Companion to Hexagon 2611.00556v1. The compact exceptional real products and the general anisotropic nonsplit classification remain open. The quadratic-complement classification is a separate manuscript.",
   "published": false,
   "catalogued_on": "2026-11-25",
-  "abstract": "Let \\(K\\) be any field of characteristic zero. For an affine reductive\nhomogeneous space \\(G/H\\) with \\(G^\\circ\\) split, we prove that its normalized\nReynolds kernel is Mathieu--Zhao exactly when \\([G^\\circ,G^\\circ]\\subseteq H\\).\nMore generally, one nontrivial action of a split \\(\\SL_2\\) gives a fixed\nmarked counterexample over \\(K\\), including when the acting group is\nnonsplit. The proof transfers a rank-one witness along the principal\norbits of the action. A moment recurrence and Hilbert irreducibility\nchoose a ground-field parameter with infinitely many surviving marked\norders. We also classify the kernel on compact Hausdorff homogeneous\nspaces and on connected reductive groups over real closed fields, and\ngive a ground-field nullcone criterion in the toral case.",
+  "abstract": "Let \\(K\\) be a field of characteristic zero and \\(X\\) an affine geometrically\nhomogeneous space of a group \\(G\\) with split reductive identity component.\nThe normalized Reynolds kernel on \\(K[X]\\) is Mathieu--Zhao if and only if\n\\([G^\\circ,G^\\circ]\\) acts trivially. A single active split \\(\\SL_2\\) already\ngives a fixed marked counterexample for a connected reductive acting group.\nBoth results allow \\(X(K)=\\varnothing\\). The proof transfers witnesses along\nprincipal orbits and specializes marked-moment recurrences over the ground\nfield. We also classify connected reductive groups and compact adjoint\nsemisimple torsors over real closed fields, and representative functions\non compact Hausdorff homogeneous spaces. A long-root subgroup gives a\nfurther obstruction when a split central torus acts alongside an active\ncompact factor of rank at least two.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "verification_record": "verification.json",
   "verification": {
-    "scope": "Written proof, local mathematical audit, exact reflection-density and low-degree moment checks, clean LaTeX build, and rendered-page inspection.",
-    "limits": "The finite checks do not prove all-order statements. Independent mathematical review of the new transfer arguments and external review have not been performed."
+    "scope": "Written proofs, PDF-only internal review of principal-orbit transfer and arithmetic specialization, bounded exact moment checks, clean source-archive rebuild, and visual inspection.",
+    "limits": "External mathematical review and formal verification remain pending."
   },
-  "next_steps": [
-    "Obtain independent review of the principal-orbit transfer and arithmetic specialization.",
-    "Review the title, attribution, and proof scope with the author before any submission.",
-    "Treat the two compact exceptional products and the anisotropic nonsplit cases as separate research obligations."
-  ]
+  "hexagon_submission": {
+    "url": "https://hexagonmath.org/submit",
+    "source_archive": "mathieu-ground-fields-hexagon-source.zip",
+    "title": "The Mathieu Property over Fields of Characteristic Zero: Classification and Ground-Field Obstructions",
+    "subject": "math.GR",
+    "suggested_cross_list": [
+      "math.AG",
+      "math.RT"
+    ],
+    "abstract": "We classify the Mathieu–Zhao property for affine geometrically homogeneous spaces over every field of characteristic zero when the acting group has split reductive identity component. The criterion is trivial action of the connected derived group. One active split SL2 already gives a counterexample for a connected reductive acting group, even for a space with no rational point. The proof transfers rank-one witnesses along principal orbits and specializes a recurrence while preserving infinitely many marked moments. We also classify connected reductive groups and compact adjoint semisimple torsors over real closed fields, and representative functions on compact Hausdorff homogeneous spaces. A long-root obstruction applies when a split central torus acts nontrivially alongside an active compact factor of rank at least two.",
+    "suggested_comments": "Companion to Hexagon 2611.00556v1. This paper treats ground-field descent, real closed fields and compact Hausdorff homogeneous spaces.",
+    "provenance_draft": "ChatGPT (OpenAI) assisted with mathematical arguments, literature checks, exposition, proof review and verification code. The proof was audited in a separate internal review using only the compiled PDF, and exact arithmetic checked selected moment identities. Independent external mathematical review has not yet occurred.",
+    "status": "Source and metadata prepared for author submission.",
+    "contributor_inputs": "Sign in with ORCID and choose the license, contributor designation and human-understanding declaration for this manuscript."
+  }
 }

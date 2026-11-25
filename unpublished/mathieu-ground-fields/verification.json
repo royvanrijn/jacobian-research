@@ -1,21 +1,40 @@
 {
-  "edition": "Companion manuscript, November 2026",
-  "source_sha256": "530d3d31633acf7c6f132dc49d37b03d7e908d7a8514bc827bf5a7cc21aaf052",
-  "pdf_sha256": "7e29a2bef21d44c67eb3d4ecca92f7197f85ad532e8057a0b9b0602d6ccf2d84",
-  "pages": 11,
-  "build": "Clean temporary directory, standalone main.tex, latexmk -pdf -jobname=mathieu-ground-fields -interaction=nonstopmode -halt-on-error. Exit 0 with no warnings or overfull boxes reported.",
-  "layout": "All eleven final pages rendered with Poppler at 85 dpi and inspected in two contact sheets. Compared first pagination and tightened the bibliography.",
+  "edition": "Expanded ground-field companion, November 2026",
+  "source_sha256": "d504b55419b10c7a26e20b80a7c9cf943f714c63aaf606abc4a4471b6a688fd9",
+  "pdf_sha256": "ebe4f359a0be5016785c8f5170212cc200c71ef20b31e54c76365be880e4e56d",
+  "source_archive_sha256": "037d9ae22129b618b45310e6aa30c3368a4337ec351541cebd4b0aad3e0cacb5",
+  "pages": 13,
+  "build": "Extracted the submission ZIP in a clean temporary directory. The sole entry point main.tex is byte-identical to the registered source. latexmk completed with no final-log warnings or overfull boxes.",
+  "layout": "Rendered all 13 pages with Poppler at 90 dpi and visually inspected all pages in contact sheets.",
+  "blind_reader": {
+    "reviewer": "Separate ChatGPT reviewer with no inherited conversation and instructed to read only the compiled PDF. Internal review.",
+    "reviewed_pdf_sha256": "7843c5a488799b4318cb23f0de750db089e4a27a8cd7a9f1462c68e180e7bd3f",
+    "supplied_context": "Compiled PDF and five editorial questions plus a request to audit principal-orbit transfer and arithmetic specialization.",
+    "new_results": "Split classification, active split rank one without rational points, field descent, real-closed classifications, long-root obstruction, and compact and toral refinements.",
+    "mechanism": "Closed principal orbits give an adjoint covariant or a descended normalizer map. Invariant denominators preserve purity. Arithmetic specialization preserves infinitely many marked orders.",
+    "hardest_step": "Uniform specialization of the first polynomial recurrence coefficient (Section 4), with the rational map and denominator transfer as the geometric bottleneck (Section 3).",
+    "limitations": "Unresolved compact exceptional products and general anisotropic nonsplit spaces. The witness exists over the base field, without a general explicit expression for the specialized pair.",
+    "verification_obstacles": "The exceptional moment identities and finite-trace separation use the deposited complex manuscript. Specify scalar exclusions in the Hilbert specialization, identify long roots in a geometric simple system, and justify infinitude in the prime progressions.",
+    "revisions": "Explicit finite avoidance conditions including the scalar factor, geometric simple-root wording, Dirichlet's theorem for the exceptional subsequences, and a direct adjoint moment calculation.",
+    "rechecked_pdf_sha256": "ebe4f359a0be5016785c8f5170212cc200c71ef20b31e54c76365be880e4e56d",
+    "recheck": "The PDF-only reviewer confirmed the scalar-factor and degree-zero exclusion, geometric root wording, exceptional infinitude, and direct adjoint calculation. The reviewer also checked the odd-order-center extension and quaternion example and reported no new substantive defect."
+  },
+  "mathematical_audit": [
+    "Principal open: compact conjugation gives closed maximal-dimensional orbits in the principal Luna stratum. Stabilizer conjugacy and self-normalization give Galois descent of the normalizer map without a ground-field point.",
+    "Invariant denominator: finite coefficient module gives a denominator ideal compatible with flat base change. A compact square establishes nonzero radial powers in the full marked product sequence.",
+    "Arithmetic: verified the line reduction, p-adic embeddings near poles, integral reciprocal under the prime-degree change of variable, coprimality argument, finite exceptions under Hilbert specialization, and backward propagation.",
+    "Recurrence: holonomic direct-image finiteness over the parameter field, bounded denominators in the twisted primitive, and descent from a finite point field by a basis coefficient."
+  ],
   "bounded_checks": [
-    "Replayed the deposited complex preprint checker, including its direct exceptional and radial controls.",
-    "Verified the B3 first-moment ratio -5/3 by exact Dirichlet integration on the sphere.",
-    "Compared seven degree-two sphere moment coefficients with the determinant generating formula in an exact trace-free diagonal example."
+    "Replayed the complex companion checker, including exact exceptional invariants, direct moment and prime-coefficient checks, radial identities, and negative controls.",
+    "Checked the angular constant-term and adjoint beta formulas by independent finite sums over the rationals at orders 1 through 16."
   ],
   "independent_replay": false,
   "external_review": false,
   "formal_verification": false,
   "open_mathematics": [
-    "The two compact exceptional products over real closed fields.",
+    "The binary octahedral and binary icosahedral compact products with a split Laurent factor.",
     "General anisotropic nonsplit homogeneous spaces over their ground fields.",
-    "Disconnected nonsplit cases outside the split and toral criteria."
+    "Disconnected nonsplit cases outside the stated split and toral criteria."
   ]
 }
