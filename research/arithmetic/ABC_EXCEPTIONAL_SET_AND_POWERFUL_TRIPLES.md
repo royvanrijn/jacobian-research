@@ -20,6 +20,18 @@ November preprints use collision counts modulo parts of the third letter. Hongmi
 
 Chunping Zeng's Theorem 1.1 claims \(U=11680007/20000012<0.584\) for \(0<\lambda\le1\), using grouped power differences, 32 third-letter modulus choices and an exact rational tree. The program witness at \(D=7/12\) and the strict separation in §8 compare exponent programs. The archived rational tree and the arithmetic argument have separate review obligations. The 20 November archive proposes the stricter \(5845/10009\) and adds a pair-deviation split. The [certificate audit](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) checks that split against the exact ancestor rows. [Zeng, Theorem 1.1 and §§3–8](https://hexagonmath.org/pdf/2611.00621v1) · [19 November certificate archive](https://doi.org/10.5281/zenodo.24354214) · [20 November update](https://doi.org/10.5281/zenodo.24407593)
 
+Hanxin Zhang's August preprint gives the claimed uniform
+exponent \(34/59\) for \(0<\lambda\le1\), retaining all
+valuation layers. Its exact all-depth checker replays at
+the pinned source revision. The new prime-power fibre
+estimate adds an arithmetic row on divisibility sums
+rather than fixed small valuation indices. It excludes
+mass concentrated at a common high prime degree even
+when that degree lies outside every fixed low-index
+selector. Distinct prime-degree profiles still evade this
+row family.
+[All-depth certificate and fibre transfer](ABC_ALL_DEPTH_VALUATION_TRANSFER.md)
+
 For the small-budget limit, the graph argument gives
 \[
 N_\lambda(X)\ll_{\lambda,\eta,\varepsilon}X^{(1/3+\eta)\lambda+\varepsilon}
@@ -5994,6 +6006,19 @@ Dyadic summation proves (DU) with
 \(\eta_0=\min(1,c_D)/(27\cdot4096)\).
 [Diao, Theorem 1.3](https://arxiv.org/html/2610.28001v1#S1.SS3)
 
+The small-determinant saving also holds for arbitrary nonzero
+determinants of absolute size at most \(c^{\eta_0\lambda^3}\),
+with the same type of bounds on the two multipliers and on
+the product of odd overlaps. A uniform estimate for coprime
+pairs at small distance extends Diao's balanced determinant
+argument and the unbalanced quadratic-field argument.
+When the quadratic norm splits, factoring the difference
+of squares preserves the squarefree kernel product and
+halves the numerical height exponent, so the split branch
+descends. The resulting small-budget saving is an absolute
+multiple of \(\lambda^3\) on this sector.
+[Small nonunit determinants](ABC_SMALL_NONUNIT_DETERMINANTS.md)
+
 ## Averaged full \((2,3,6)\) count with a Mordell height lower bound
 
 Fix an orientation of the full signature. Write the primitive
@@ -6888,6 +6913,17 @@ bound explains why the same small-height-product condition
 does not follow from the weak degree measures.
 [Signed valuation phases](ABC_SIGNED_VALUATION_PHASES.md)
 
+Several genuinely unrelated grids can also be released.
+A short kernel vector in the actual valuation strip reduces
+a bounded-rank signed progression to two bases. If the
+product of digit widths is \(o(1/L)\), the resulting
+two-coordinate height product is \(o(L)\) even for
+mismatched steps and offsets. Sparsity of the degree
+support alone is insufficient: polynomially sparse diffuse
+profiles can avoid positive mass on every such bounded-rank
+grid.
+[Sparse valuation grid compression](ABC_SPARSE_VALUATION_GRID_COMPRESSION.md)
+
 
 
 With independent exact valuation orders on just two letters,
@@ -6924,6 +6960,34 @@ smaller residual nonatomic mass, including sparse matchings.
 [Affine count for sparse interval fibres](ABC_SPARSE_AFFINE_CONTENT.md)
 · [Fine valuation divisibility](ABC_FINE_VALUATION_DIVISIBILITY.md)
 · [Common rows with a varying shift](ABC_AGGREGATE_SHIFT_DICTIONARY_STARS.md)
+
+A cyclic-cover descent gives a uniform count for two
+weighted \(d\)-th powers and a third weighted
+\(\ell\)-th power when \(d=\ell^j\) and the cover has
+genus at least two. The point count in each primitive
+coefficient fibre grows at most exponentially in the
+number of coefficient primes. Summing coefficient defects
+costs just their joint radical exponent \(f+h\). This
+improves the repaired count whenever that exponent is
+below the balanced target mass. It includes two exact
+eighth-power grids with a square kernel on the third
+letter, and does not require a height gap.
+[Prime-power Fermat descent and divisibility masses](ABC_PRIME_POWER_FERMAT_DESCENT.md)
+
+The three-point cover argument gives a height-free
+polynomial bound in the defect radical for arbitrary fixed
+hyperbolic signatures. Discriminant multiplicity would
+make the support cost subpower by bounding both the number
+of specialization fields and their class group torsion.
+For a hyperbolic prime-primary part of the signature,
+a cover with prime-group monodromy gives this stronger
+bound unconditionally, including \((2,4,8)\), \((4,4,4)\)
+and \((3,3,9)\). Pairwise coprime signatures have perfect
+triangle group and admit no nontrivial solvable three-point
+monodromy. The fixed-signature polynomial bound still
+gives a subpower height count for primitive exact-power
+Fermat–Catalan triples with all orders variable.
+[Mixed valuation orders and specialization fields](ABC_MISMATCHED_GRID_NUMBER_FIELDS.md)
 
 For one-target minimal repair, primitive row content can absorb
 the entire extra common-slope Taylor divisor. Actual primitive
@@ -6968,7 +7032,14 @@ has the same exponent as the primitive quotient count. At
 prime size \(Q>N^{2+\eta}\), the principal and bounded-order
 multiplicative modes now give a power saving. The entire
 remaining obligation is a saving for the signed Jacobi-sum
-correlation with all three high-order transforms. Smaller
+correlation with all three high-order transforms.
+Explicit primitive dictionaries on every fixed balanced
+cap profile show that absolute values can attain the
+full elementary upper bound even at those large primes.
+Summing one character variable exactly before taking
+absolute values still leaves a lower bound of order
+\(N^{3/2-o(1)}\) on such examples.
+[Absolute Jacobi sharpness](ABC_ABSOLUTE_JACOBI_SHARPNESS.md) Smaller
 aggregate moduli \(Q=N^\beta\), \(1\le\beta<3/2\), attain
 the generic false-positive exponent \(3-\beta\) on explicit
 bounded-height dictionaries with all three actual radical caps.
@@ -6982,11 +7053,14 @@ Pythagorean power families pass the first two layers with
 models the Wronskian bounds the total formal depth and
 excludes simultaneous depth three. At actual primitive
 integer parameters with fixed-degree forms, subpower
-coefficients, and irreducible factors of degree at most four,
-passing depth three forces a power loss in the parameter
-count. This leaves unrestricted integer occurrence open.
+coefficients, and irreducible factors of degree at most nine,
+passing depth three leaves at most \(H^{9/5+o(1)}\)
+primitive parameter pairs. The extension uses a formally
+low-depth factor and a uniform count for actual power
+equations in its binary-form values. This leaves unrestricted integer occurrence open.
 [Second-layer counterexample](ABC_MINIMAL_REPAIR_SUPPORT_OCCURRENCE.md#correct-heights-and-repair-through-the-second-support-layer)
 · [Polynomial support depth](ABC_POLYNOMIAL_SUPPORT_DEPTH.md)
+· [Primitive binary-form power counts](ABC_BINARY_POWER_TWISTS.md)
 
 ### Scope of the few-prime sum-product approach
 

@@ -14,8 +14,10 @@ when there are no private rows.
 There is an absolute terminal cutoff above which the consecutive
 factorial moments are coprime for every ordinary two-monomial
 profile. The proof of this uniform eventual result appears below.
-The cutoff is unevaluated. Coprimality at every earlier terminal
-requires a separate argument.
+The [effective absolute theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL.md)
+specifies a terminating computation of an absolute cutoff.
+Its numerical value is unevaluated. Coprimality at the earlier
+terminals requires a separate argument.
 
 **Theorem.** For each fixed \(s_0>0\) there is a terminal
 \(N_0(s_0)\) such that every fully shared profile with \(S\ge s_0\)
@@ -148,8 +150,8 @@ follows from the sequential comparison used here.
 ## The fixed-terminal obligation
 
 The absolute eventual theorem leaves only finitely many possible
-terminal orders, starting at eight by the
-[complete terminal-seven theorem](MULTIVARIATE_TERMINAL_SEVEN_ALL_PROFILES.md).
+terminal orders, starting at nine by the
+[complete terminal-eight theorem](MULTIVARIATE_TERMINAL_EIGHT_ALL_PROFILES.md).
 Each such order still includes arbitrary dimension and exponents. The
 [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
@@ -258,7 +260,35 @@ throughout the same bands. Thus \(u\le18/25\) is covered for
 every shared profile. For \(u\ge22/25\), the
 [upper bridge](MULTIVARIATE_TERMINAL_EIGHT_UPPER_BRIDGE.md)
 and [near-flat theorem](MULTIVARIATE_TERMINAL_EIGHT_NEAR_FLAT.md)
-cover unrestricted reciprocals.
+cover unrestricted reciprocals. The
+[late shared bridge](MULTIVARIATE_TERMINAL_EIGHT_LATE_BRIDGE.md)
+covers \(18/25\le u\le22/25\), also for unrestricted reciprocals.
+Together these results complete terminal eight.
+At terminal nine the [fixed-ray proof](MULTIVARIATE_TERMINAL_NINE_HIGH_CURVATURE.md)
+covers all profiles with \(S\ge1493/200\). The
+[private-degree proof](MULTIVARIATE_TERMINAL_NINE_PRIVATE_ROWS.md)
+and the [private-linear proof](MULTIVARIATE_TERMINAL_NINE_PRIVATE_LINEAR.md)
+cover every profile with a private variable. For fully shared
+profiles the [shared high-curvature proof](MULTIVARIATE_TERMINAL_NINE_SHARED_HIGH_CURVATURE.md)
+covers \(S\ge53/10\). At smaller curvature the
+[retained rows](MULTIVARIATE_TERMINAL_NINE_RETAINED_ROWS.md)
+cover every profile with reciprocal above \(1/8\) at order eight.
+For reciprocals at or below that cap the
+[small outer-mean proof](MULTIVARIATE_TERMINAL_NINE_SMALL_OUTER.md)
+covers \(u\le19/200\), and the
+[matched light-row proof](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md)
+and its [extension](MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_EXTENSION.md)
+extend separation to \(u=12/25\). In the three stated later mean
+bands, the [retained bands](MULTIVARIATE_TERMINAL_NINE_RETAINED_BANDS.md)
+cover those light-row profiles above the smaller caps. The
+[upper bridge](MULTIVARIATE_TERMINAL_NINE_UPPER_BRIDGE.md)
+covers its three stated upper mean intervals without a reciprocal cap.
+The [marked upper-row proof](MULTIVARIATE_TERMINAL_NINE_UPPER_MARKED_ROWS.md)
+covers the stated high outer-mean ranges when certain unit rows
+are present. The
+[linked Hermite proof](MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md)
+gives an explicit small-curvature terminal-nine bound and a
+computable root-angle separation radius at every fixed terminal.
 
 Across all terminals, the [explicit high-curvature theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_CURVATURE_BOUND.md)
 and the [Hermite-edge comparison](MULTIVARIATE_EFFECTIVE_WEAK_CURVATURE_HERMITE_EDGE.md)
@@ -293,8 +323,30 @@ supercritical bands and in the regular part of subcritical bands,
 including the inactive singleton rays. The
 [effective fold comparison](MULTIVARIATE_EFFECTIVE_SHARED_SUBCRITICAL_FOLD.md)
 includes every Airy scale in those fixed subcritical interior bands.
-A global effective cutoff still requires quantitative comparisons
-in the remaining shared boundary, critical, and private regimes.
+The [shared real-boundary proof](MULTIVARIATE_EFFECTIVE_SHARED_REAL_BOUNDARIES.md)
+completes the all-field comparisons for fixed positive shared bands
+separated from criticality. The
+[vanishing-curvature theorem](MULTIVARIATE_EFFECTIVE_VANISHING_CURVATURE.md)
+gives a computable absolute small-curvature cutoff, including the
+full physical Hermite fold. The
+[both-private](MULTIVARIATE_EFFECTIVE_BOTH_PRIVATE_LINEAR.md)
+and [one-private](MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_REGULAR_COMPLEMENT.md)
+comparisons make the large-order thresholds computable on every
+private support type. The
+[effective global reduction](MULTIVARIATE_EFFECTIVE_GLOBAL_REDUCTION.md)
+therefore confines the remaining global cutoff problem to
+fully shared profiles approaching the quartic transition,
+with curvature in one fixed positive band.
+The [effective critical entry](MULTIVARIATE_EFFECTIVE_SHARED_CRITICAL_ENTRY.md)
+then localizes both physical fields to any prescribed neighborhood
+of the moving quartic center. The
+[escaping-field bound](MULTIVARIATE_EFFECTIVE_SHARED_ESCAPING_QUARTIC_FIELDS.md),
+[supercritical thermal comparison](MULTIVARIATE_EFFECTIVE_SHARED_BOUNDED_THERMAL_CUSP.md),
+and [subcritical thermal regular](MULTIVARIATE_EFFECTIVE_SHARED_SUBCRITICAL_THERMAL_REGULAR.md)
+and [fold](MULTIVARIATE_EFFECTIVE_SHARED_SUBCRITICAL_THERMAL_FOLD.md)
+comparisons cover the remaining scales. The
+[absolute hierarchy](MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL.md)
+combines these estimates with the bounded quartic window.
 
 A prescribed finite set of primes and precisions alone cannot give
 a universal exclusion. The
@@ -329,7 +381,7 @@ over any characteristic-zero field by the rational Bézout identity.
 Both pure monomial coefficients are nonzero at every order, so
 the univariate reduction in \(t\) covers all projective coefficient
 choices. An all-degree proof still requires coverage of the terminals
-from eight through \(N_*-1\), or an argument that applies directly
+from nine through \(N_*-1\), or an argument that applies directly
 at every terminal.
 
 ## The discrete row-merger route

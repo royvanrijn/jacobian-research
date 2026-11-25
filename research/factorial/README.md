@@ -289,6 +289,35 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Effective simple-fold comparison for fixed shared subcritical bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_SUBCRITICAL_FOLD.md) |
 | Terminal eight above the middle light-row caps | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_RETAINED_BANDS.md) |
 | Terminal-eight paired bridge from outer mean 7/10 to 18/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_PAIRED_BRIDGE_72.md) |
+| Effective absolute bounds on an elementary Airy contour | Internal result | proved | [Source](image-rigidity/AIRY_EFFECTIVE_ELEMENTARY_JOINT_NORM.md) |
+| Computable absolute cutoff at small shared curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_VANISHING_CURVATURE.md) |
+| Effective cutoff for ordinary profiles with private variables on both sides | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_BOTH_PRIVATE_LINEAR.md) |
+| Effective all-field shared cutoff on fixed bands away from criticality | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_REAL_BOUNDARIES.md) |
+| Computable cutoff for every one-private-side ordinary profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_REGULAR_COMPLEMENT.md) |
+| Effective all-degree reduction to fully shared near-critical profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_GLOBAL_REDUCTION.md) |
+| Terminal-eight separation at light-row cap .04 from .72 to .76 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_PAIRED_LATE.md) |
+| Unrestricted shared terminal-eight bridge from .72 to .88 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_LATE_BRIDGE.md) |
+| Terminal-eight coprimality for every ordinary two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_ALL_PROFILES.md) |
+| Effective entry into the shared quartic neighborhood | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_CRITICAL_ENTRY.md) |
+| Effective exclusion of escaping shared quartic fields | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_ESCAPING_QUARTIC_FIELDS.md) |
+| Effective bounded supercritical thermal comparison at the shared cusp | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_BOUNDED_THERMAL_CUSP.md) |
+| Effective localization in bounded subcritical thermal fields | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_SUBCRITICAL_THERMAL_REGULAR.md) |
+| Effective consecutive comparison in both subcritical thermal fold disks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_SHARED_SUBCRITICAL_THERMAL_FOLD.md) |
+| Computable absolute eventual cutoff for Multivariate SFC(2) | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL.md) |
+| Explicit linked Hermite radius at every fixed terminal | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md) |
+| Terminal-nine separation in the explicit Hermite radius | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md) |
+| Unrestricted terminal-nine separation at S >= 1493/200 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_HIGH_CURVATURE.md) |
+| Terminal nine for total private degree at least two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_PRIVATE_ROWS.md) |
+| Terminal nine for one private linear row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_PRIVATE_LINEAR.md) |
+| Shared terminal nine at total curvature at least 53/10 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_HIGH_CURVATURE.md) |
+| Shared terminal nine with reciprocal cap 1/8 and small outer mean | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SMALL_OUTER.md) |
+| Shared terminal nine for all nonempty retained profiles at cap 1/8 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_ROWS.md) |
+| All-order two-sided transfer for matched tanh moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_MOMENTS.md) |
+| Matched light shared terminal nine through outer mean 11/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_LIGHT.md) |
+| Terminal-nine separation for two marked unit rows at high outer mean | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_UPPER_MARKED_ROWS.md) |
+| Extension of the terminal-nine matched light rays through u=12/25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_SHARED_MATCHED_EXTENSION.md) |
+| Terminal-nine retained rows above the smaller caps in three mid-to-upper bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_RETAINED_BANDS.md) |
+| Unrestricted shared terminal nine on three upper mean intervals | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_NINE_UPPER_BRIDGE.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -383,7 +412,7 @@ Scope limits:
 - Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
 - A three-column ordinary factorial row identification has regular endpoint moments in orders two through four and a certified collision in the physical interpolation. This excludes physical-interval nonvanishing as a general transfer proof. The discrete endpoint question and the unrestricted two-column interval remain open.
 - The exact joint measure closure has a specific diagonal diffuse law and an independent signed center parameter. An all-order physical binary transfer is proved with untouched independent private degree at least two on both sides.
-- Every ordinary two-monomial profile is covered through terminal seven and above one absolute unevaluated cutoff. At terminal eight, private rows and several linked shared ranges are covered. There are also computable bounded shared quartic cutoffs, regular and fold transversality margins, and an all-field cutoff for one-private-linear profiles with 0<=sigma<=1+delta.
+- Every ordinary two-monomial profile is covered through terminal eight and above a computable absolute unevaluated cutoff. At terminal nine all private profiles are covered, along with fully shared S>=53/10, all heavier retained rows at reciprocal cap 1/8, and the shared small outer-mean and explicit Hermite ranges. The remaining fixed terminals are open.
 
 Tracked obligations (computed states):
 

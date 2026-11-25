@@ -117,7 +117,9 @@ It bounds the absolute contour mass \(T_j\) by
                     |\lambda|^{-1/2},&|j^{2/3}\lambda|>R_0.
      \end{cases}
 \]
-All these constants are computable. On the compact scaled disk,
+A direct effective version for the elementary orientation is the
+[finite absolute Airy-contour bound](AIRY_EFFECTIVE_ELEMENTARY_JOINT_NORM.md).
+On the compact scaled disk,
 the minimum of \(|U|+|U'|\) is certified positive by interval
 subdivision, since Airy's equation makes their simultaneous
 vanishing impossible. On the other range use the

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prove linked terminal-eight separation at fully shared curvature at least 17/4."""
+"""Prove linked terminal-eight separation at fully shared curvature at least 19/4."""
 
 from fractions import Fraction as Q
 from functools import lru_cache
@@ -29,29 +29,49 @@ from verify_multivariate_terminal_six_private_angles import (
 
 CURVATURE = Q(19, 4)
 FLOOR_CAP = Q(1, 7)
+MARKED_START = 92
+MARKED_CURVATURE = Q(4, 3)
+MARKED_OUTER_SQUARE = Q(6, 35)
 RAYS = {
     0: (91360, 65613, 30940, -13225, -49942, -80972),
     24: (89867, 64295, 25308, -15948, -54468, -83956),
     48: (87985, 62124, 20956, -17557, -56837, -85224),
     72: (85758, 60162, 17086, -19013, -58650, -85669),
+    92: (83574, 57717, 13768, -21135, -60275, -86136),
     96: (83137, 57228, 13104, -21559, -60600, -86230),
     120: (80197, 55062, 10876, -22823, -61286, -85478),
     132: (79343, 53954, 10654, -24011, -62032, -85512),
 }
 
 
-def possible_rows():
-    """Rows that can raise the order-seven cap above its floor."""
-    for gap in range(1, int(EXISTING_CURVATURE * (1 + 1 / (7 * FLOOR_CAP))) + 1):
-        for lower in range(1, int(gap / (7 * FLOOR_CAP) - Q(1, 6)) + 1):
+def possible_rows(floor):
+    """Return each row above the given reciprocal floor in the curvature band."""
+    gap_bound = int(EXISTING_CURVATURE * (1 + 1 / (7 * floor)))
+    for gap in range(1, gap_bound + 1):
+        lower_bound = int(gap / (7 * floor) - Q(1, 7))
+        for lower in range(1, lower_bound + 1):
             curvature = Q(gap**2, lower + gap)
-            x7 = Q(gap, 7 * lower + 1)
-            if x7 <= FLOOR_CAP or curvature >= EXISTING_CURVATURE:
+            if Q(gap, 7 * lower + 1) <= floor or curvature >= EXISTING_CURVATURE:
                 continue
-            u_squared = prod(Q(7 * lower + h, 7 * lower + 6 * gap + h)
-                             for h in range(1, gap + 1))
-            other_loss = exponential_lower(Q(7, 8) * max(CURVATURE - curvature, 0))
-            yield x7, Q(gap, 8 * lower + 1), u_squared / other_loss
+            outer_square = prod(Q(7 * lower + h, 7 * lower + 6 * gap + h)
+                                for h in range(1, gap + 1))
+            yield lower, gap, curvature, outer_square
+
+
+def profile_outer_square(core_square, core_curvature):
+    # The individual loss is 3/7 for the log mean, or 6/7 for its square.
+    other_loss = exponential_lower(Q(6, 7) * max(CURVATURE - core_curvature, 0))
+    return core_square / other_loss
+
+
+def marked_exclusion():
+    threshold = Q(MARKED_START, 1000)**2
+    for _, _, curvature, outer_square in possible_rows(Q(1, 8)):
+        pair_cap = profile_outer_square(MARKED_OUTER_SQUARE * outer_square,
+                                        MARKED_CURVATURE + curvature)
+        require(pair_cap < threshold, ("second retained row after marking", curvature))
+    require(threshold * exponential_lower(Q(45, 14)) > MARKED_OUTER_SQUARE,
+            "marked remainder curvature below 15/4")
 
 
 def reciprocal_caps(rows, outer_lower):
@@ -171,7 +191,13 @@ def verify():
     require(Q(1, 112) > Q(1, 120), "Gaussian endpoint attenuation")
     require(exponential_lower(Q(3, 7) * CURVATURE) * Q(knots[-1], 1000) > 1,
             "outer mean cutoff")
-    rows = tuple(possible_rows())
+    marked_exclusion()
+    rows = tuple((Q(d, 7*a+1), Q(d, 8*a+1), profile_outer_square(v2, s))
+                 for a, d, s, v2 in possible_rows(FLOOR_CAP))
+    marked = (Q(1, 4), Q(2, 9),
+              profile_outer_square(MARKED_OUTER_SQUARE, MARKED_CURVATURE))
+    require(marked in rows, "marked row identity")
+    unmarked = tuple(row for row in rows if row != marked)
     require(all(x7 <= 1 and x8 <= 1 for x7, x8, _ in rows), "convexity range")
     total_caps = {j: coefficient_bounds(j, (), CURVATURE) for j in (7, 8)}
     for j in (7, 8):
@@ -182,7 +208,8 @@ def verify():
                 ("large circle", j))
     total = 0
     for left, right in zip(knots, knots[1:]):
-        cells = sum(verify_knot(j, i, left, right, rows, total_caps)
+        candidates = unmarked if left >= MARKED_START else rows
+        cells = sum(verify_knot(j, i, left, right, candidates, total_caps)
                     for j in (7, 8) for i in range(6))
         total += cells
         print(f"[{left}/1000,{right}/1000]: {cells} radial cells.", flush=True)

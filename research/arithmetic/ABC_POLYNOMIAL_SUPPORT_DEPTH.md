@@ -222,6 +222,68 @@ bound \(O_{d,\varepsilon}(B^{2/d+\varepsilon})\) gives
 [Heath-Brown, The density of rational points on curves and surfaces](https://arxiv.org/abs/math/0405392)
 
 The other angular and rank branches are unaffected.
-For factors of degree five or greater this square-divisor
-argument alone does not give the same large-divisor
-estimate.
+
+
+## Depth three via a formally deficient factor
+
+There is a stronger estimate covering higher-degree forms.
+Under the assumptions of (2), let \(F_i\) be any distinct
+formal irreducible factor of \(ABC\) with \(r_i=v_{F_i}(D)<3\).
+In constants rank three, (1) ensures that there is such a
+factor. In rank two one can choose a factor coprime to
+\(D\) by the rank-two argument above.
+
+Outside a set \(\mathcal S\) whose prime product is
+\(H^{o(1)}\), any prime of \(F_i(s,t)\) satisfies
+\[
+                   v_p(D(s,t))=r_i v_p(F_i(s,t)).
+\]
+Take \(\mathcal S\) to contain the primes of the
+homogeneous resultant of \(F_i\) and \(D/F_i^{r_i}\)
+and the relevant scalar contents. The nonzero resultant
+has subpower size and bounds common prime divisors at a
+primitive pair. By (2) the evaluated factor is supported
+on \(\mathcal S\) if \(r_i=0\); it is cube-full away from
+\(\mathcal S\) if \(r_i=1\), and square-full away from
+\(\mathcal S\) if \(r_i=2\).
+
+Consequently a deficient factor of degree \(d\ge5\)
+gives the bound \(H^{d/5+o(1)}\) for \(r_i=2\), and
+\(H^{d/6+o(1)}\) for \(r_i=1\). The argument uses the
+prime-power kernel choices on the actual values of a
+single factor and the uniform primitive fixed-power count.
+A rank-two factor or any factor with \(r_i=0\) gives
+at most \(H^{1+o(1)}\) pairs for all degrees, by the
+fixed-support and fixed-value counts.
+[Primitive powerful values of binary forms](ABC_BINARY_POWER_TWISTS.md#square-full-and-cube-full-values)
+
+For completeness, a deficient factor of degree at most
+three allows at most \(H^{3/2+o(1)}\) pairs. Its values
+are square-full away from \(\mathcal S\). The integers
+supported on \(\mathcal S\) in the polynomial height
+range have subpower count, and the square-full count at
+most \(U\) is \(O(U^{1/2})\) by the representation
+\(u^2v^3\) with \(v\) squarefree. Fixing an irreducible
+nonlinear value costs only subpower many pairs, while a
+linear value costs \(O(H)\) and has cap \(O(H^{1+o(1)})\).
+
+For a quartic deficient factor, \(|F_i(s,t)|<H^{15/4}\)
+costs \(O(H^{7/4+o(1)})\) by the real root localization
+used above. Otherwise the largest square divisor \(r^2\)
+of its absolute value satisfies
+\(r^2\ge |F_i(s,t)|^{2/3}H^{-o(1)}\).
+Indeed an exponent \(e\ge2\) contributes at least
+\(2e/3\) to the maximal square divisor, and the product
+of the primes having exponent one divides
+\(\prod_{p\in\mathcal S}p\). Thus \(r\ge H^{5/4-o(1)}\).
+For \(r\le H^{7/4}\) the projective congruence packing
+above sums to \(O(H^{7/4+o(1)})\). For larger \(r\),
+the quartic curve argument above gives \(O(H^{3/2+o(1)})\).
+
+In particular, if all formal factors have degree at
+most nine, (2) has at most \(H^{9/5+o(1)}\) primitive
+parameter pairs. The same conclusion holds whenever
+there is a deficient factor of degree at most nine,
+irrespective of all other factor degrees. A deficient
+factor of degree ten or eleven with \(r_i=1\) also
+gives a power saving, using the cube-full bound.

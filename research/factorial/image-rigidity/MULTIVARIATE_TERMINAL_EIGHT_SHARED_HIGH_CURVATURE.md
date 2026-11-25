@@ -24,17 +24,41 @@ outer mean \(v_i\), it gives
  u\le v_i\exp\!\left[-\frac37\max(19/4-s_i,0)\right],
  \qquad u\le \exp(-57/28)<.132.
 \]
-Enumerate the integer rows with \(d_i/(7a_i+1)>1/7\) and
-\(s_i<15/2\), using
-\(a_i<d_i-1/7\) and \(d_i<15\).
-Their squared row means are rational, so the first displayed
-inequality excludes a candidate over a given interval of \(u\)
-by an exact comparison with a positive Taylor lower bound.
+At reciprocal floor \(t\), the integer candidates obey
+\(a_i<d_i/(7t)-1/7\) and
+\(d_i<(15/2)(1+1/(7t))\). Their squared row means are rational.
+The first displayed inequality excludes a candidate over a given
+interval of \(u\) by comparing its lower endpoint squared with
+\(v_i^2\exp[-(6/7)\max(S_0-s_i,0)]\), where \(S_0=19/4\).
+The checker uses a positive Taylor lower bound on the inverse
+exponential. The factor \(6/7\) comes from squaring the \(u\)
+bound.
 Rows below the floor have order-seven reciprocal at most
 \(1/7\) and order-eight reciprocal at most \(1/(8-1/7)\),
 by the matched Gauss relation
 \(x'=7x/(8-\gamma x)\), \(0<\gamma\le1\).
-The surviving candidates give the remaining cap at each order.
+The surviving candidates above \(t=1/7\) give the remaining cap
+at each order.
+
+When \(u\ge23/250\), first separate a possible row of unordered
+exponents \((1,3)\). Its squared outer mean is \(6/35\) and
+its curvature is \(4/3\). If any other row exceeds reciprocal
+\(1/8\), enumerate it with \(t=1/8\) and use both exact row
+means. The squared outer mean of the whole profile then has
+upper bound
+\[
+ (6/35)v_i^2\exp[-(6/7)\max(19/4-4/3-s_i,0)] .
+\]
+The checker verifies that this is strictly less than
+\((23/250)^2\) for every candidate, also excluding a second
+\((1,3)\) row. The squared residual outer mean is at least
+\((23/250)^2/(6/35)\), which is strictly above
+\(\exp[-(6/7)(15/4)]\) by an exact Taylor check.
+The residual curvature is therefore less than \(15/4\).
+This case is covered by the independent
+[marked singleton certificate](MULTIVARIATE_TERMINAL_EIGHT_MARKED_SINGLETONS.md).
+For the remaining profiles in \(u\ge23/250\) remove \((1,3)\)
+from the row candidates. For \(u\le23/250\) keep the full list.
 
 ## Joint coefficient bounds and ray replay
 
@@ -77,7 +101,7 @@ and the strict Bernstein projections from the
 At \(u=0\) both anchors are binomial \(1+t^j\), with
 successive upper sectors \(8,7,8,7,8,7,8\). Exact evaluations of
 the two binomial cosine polynomials verify these counts at
-the first knot. The later ray exclusions hold in 5,536 accepted
+the first knot. The later ray exclusions hold in 5,434 accepted
 radial cells. Continuation along the symmetric arrays and then
 along straight coefficient segments preserves the counts.
 Joining the last sector to its reflection gives one real

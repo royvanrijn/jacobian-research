@@ -357,6 +357,15 @@ The candidate height cutoff is fixed throughout the
 prime average. In particular the small-budget limit
 is taken only after bounds at each fixed budget.
 
+There are actual primitive three-cap dictionaries for
+every fixed balanced cap profile on which the elementary
+absolute-value upper bound is attained, even at
+\(Q>N^{2+\delta}\). If one character sum is performed
+exactly first, the remaining absolute sum can still have
+size \(N^{3/2-o(1)}\). In both constructions every tuple
+fails the integer equation.
+[Sharpness of the two absolute-value bounds](ABC_ABSOLUTE_JACOBI_SHARPNESS.md)
+
 The Fourier estimates for smooth-number convolutions
 in congruence classes address a different population.
 Jain's construction of smooth summands bounds the

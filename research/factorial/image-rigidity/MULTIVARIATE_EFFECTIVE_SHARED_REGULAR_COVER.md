@@ -34,9 +34,9 @@ compensated chord centering from the
 The effective fiber rectangle encloses every upper saddle on
 the target rectangle, for ordinary and limiting profiles.
 The row approximation controls phases and their derivatives on
-each bounded contour neighborhood avoiding the retained cuts:
-approximate the curvature transform by its retained sum plus
-the diffuse constant, and integrate with the chord normalization.
+each bounded contour neighborhood avoiding the retained cuts.
+Approximate the curvature transform by its retained sum plus
+the diffuse constant and integrate with the chord normalization.
 A small enough retained cutoff keeps every omitted pole outside
 the neighborhood. The errors in the phase and its derivatives are therefore
 computable.
@@ -46,7 +46,7 @@ For a fixed limiting profile, put \(p_L=\max_{d_i>0}(-a_i/d_i)\),
 when the respective list is empty. Use the domain formed by
 both open half-planes and the two real gaps \((p_L,0)\),
 \((1,p_R)\). Circles and polygon loops in it have winding
-number zero around every point on the outer removed rays:
+number zero around every point on the outer removed rays because
 each ray connects those points to infinity without crossing
 the loop. Their winding number is constant on \([0,1]\),
 which they also avoid. Consequently a loop with winding one
@@ -156,7 +156,8 @@ amplitude and the strict phase losses give a computable
 zero-free threshold in the cell.
 If two terms contribute at a regular balance, write the
 uniform local expansion in the notation of the
-[effective consecutive comparison](MULTIVARIATE_EFFECTIVE_SHARED_TRANSVERSALITY.md#use-in-a-certified-regular-contour-chart):
+[effective consecutive comparison](MULTIVARIATE_EFFECTIVE_SHARED_TRANSVERSALITY.md#use-in-a-certified-regular-contour-chart)
+in the form
 \[
  I_j(w)=A_1(w)e^{jP_1(w)}+A_2(w)e^{jP_2(w)}+R_j(w),
  \qquad |R_j|\le \frac Ej
@@ -178,10 +179,11 @@ regular balance by the real-part divider between the saddles.
 In the subcritical band, the
 [classification of vertical fibers](MULTIVARIATE_EFFECTIVE_SHARED_TRANSVERSALITY.md#the-exact-exceptional-geometry)
 allows a zero slope only at an exceptional one-row profile on a
-horizontal equal-modulus ray. That ray is inactive by the
-[active-arc proof](MULTIVARIATE_UNIFORM_SUBCRITICAL_BANDS.md#the-active-arc-and-vertical-fibers):
-its regular component goes to unbounded fields, whereas activity
-is constant along it and the limiting root scales are bounded.
+horizontal equal-modulus ray. In the
+[active-arc proof](MULTIVARIATE_UNIFORM_SUBCRITICAL_BANDS.md#the-active-arc-and-vertical-fibers),
+the ray is inactive because its regular component goes to
+unbounded fields, activity is constant along it, and limiting
+root scales are bounded.
 Such a point has a one-term witness with the other crossing
 coefficient zero. Therefore the slope test is required only
 where the slope is strictly nonzero, and it persists

@@ -157,7 +157,8 @@ vector of centers modulo one. It suffices that
 The first inequality ensures \(P'\ge P/k_1\ge P^{1/2}\),
 even for composite \(P\). The second controls the changes
 within the intervals. The conditions \(D H^s\le P^{1/2}\) and
-\(D H^sho\le	heta/2\) work instead if the centers are bounded
+\(D H^s
+ho\le	heta/2\) work instead if the centers are bounded
 integer combinations of \(s\) generating phases plus
 rational offsets of denominator dividing a fixed \(D\).
 First multiply by \(D\), and approximate the generating
@@ -282,3 +283,13 @@ to \(L\), and \(\xi_1\xi_2 E_0\gg L^2/E_0\).
 Thus independent single-base rounding has a larger
 combined height product than the shared two-basis
 representation can attain in the clustered sector.
+
+
+The small-product criterion also covers several unrelated
+signed valuation grids of bounded total rank when the
+product of their coefficient widths is \(o(1/L)\).
+A short kernel relation in the actual valuation strip
+reduces the rank while preserving every degree, allowing
+the two-basis estimate above. A sparse diffuse profile
+alone does not imply the width condition.
+[Rank compression and sparse-profile obstruction](ABC_SPARSE_VALUATION_GRID_COMPRESSION.md)

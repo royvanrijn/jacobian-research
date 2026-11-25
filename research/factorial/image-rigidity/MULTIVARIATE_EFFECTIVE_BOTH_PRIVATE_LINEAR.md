@@ -38,16 +38,27 @@ to write
 \]
 Here \(G,H,R_x\) vanish at \(0,1\), their second derivatives
 have bounds \(O(W),O(W),O(W/x)\), and
-\(\partial_x R_x''=O(W/x^2)\). These constants are computable:
-the factors \(1/(x_i/m_i)\) are bounded by \(65\), and
-the real Stirling remainder and its derivatives are bounded
-by differentiating the positive-argument Binet integral
-or the trigamma integral used in the varying-profile proof.
-The summed reciprocal factors satisfy \(\sum_i1/m_i\le W\).
+\(\partial_x R_x''=O(W/x^2)\). To bound all constants, use
+\[
+ \psi'(1+x y)=\int_0^\infty e^{-xyt}\frac{t}{e^t-1}\,dt,\qquad
+ \left|\frac{t}{e^t-1}-1+\frac t2\right|\le t^2 .
+\]
+For \(t\le1\), the last inequality follows by writing the
+denominator after division by \(t\) as \(1+t/2+\eta\) with
+\(0\le\eta\le t^2/2\). For \(t\ge1\), the kernel lies between
+zero and one. The two explicit kernel terms give \(G''\)
+and \(H''\) after multiplication by \(x^2d_i^2\) and summation.
+The remaining integral is at most \(2/(xy)^3\). Its order
+derivative costs an additional \(yt\) under the integral.
+Using \(x_i(u)\ge m_i/65\) and \(m_i\ge1\) bounds the resulting
+sums by computable multiples of \(W\). For the center
+use \(\mu_x=\sum_i d_i\int_0^1\psi(1+x x_i(u))\,du\).
+The same kernel then gives
+\(\mu'_x=\Delta/x+O(W/x^2)\) because \(\sum_i|d_i|/m_i\le W\).
 The endpoint conditions bound the functions and their first
-derivatives by the same second-derivative bounds.
-In particular this also gives computable constants in (2),
-(4), (5), and (6) of the both-private comparison.
+derivatives by their second-derivative bounds. This gives
+computable constants in (2), (4), (5), and (6) of the both-private
+comparison.
 In (4) use \(|r_i|\le W/2\) and expand the single rational
 factor \(1/(1+r_i(2u-1))\). All constants can be used for
 \(n\) and \(N\) in the same profile.
@@ -64,8 +75,7 @@ coefficient differs from \(k\log\rho_L\) or \(k\log\rho_R\)
 by at most \(C(k+k^2)/j\), by the endpoint-subtracted estimates.
 For coefficients beyond a chosen index, the bounds (2)
 of the both-private comparison give geometric tails on \(|z|\le R\),
-including their first two logarithmic derivatives before taking
-the logarithms. Thus for any prescribed tolerance the two
+including the tails after applying \(z\partial_z\) once or twice. Thus for any prescribed tolerance the two
 halves approximate \((1-\rho_L z)^{-1}\), \((1-\rho_R z)^{-1}\)
 and their derivatives to that tolerance above a computable order.
 To compute it, bound a common geometric tail first, then use the
@@ -200,3 +210,9 @@ a positive minimum of
 proof. The bound \(C_3/n\) is eventually smaller, completing
 this range. The maximum of the computed bounds in the
 three ranges gives the absolute terminal threshold.
+
+Together with the [one-versus-higher private degree cutoff](MULTIVARIATE_ONE_PRIVATE_LINEAR_TAIL.md)
+and the [all-order result when both private degrees are at least two](MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md#all-orders-when-both-private-exponent-sums-are-at-least-two),
+this computes a cutoff for every ordinary profile with private
+variables on both sides. For the mixed private-degree cases the
+uniform terminal \(361\) suffices.

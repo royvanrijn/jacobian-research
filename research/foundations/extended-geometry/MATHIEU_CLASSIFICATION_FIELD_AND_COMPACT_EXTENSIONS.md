@@ -4398,3 +4398,388 @@ For the Hamilton quaternionic isometry torsor from \(I_{n-r}\perp-I_r\) to \(I_n
 Put \(d=2r+1\) and take \(r\) identical quaternionic rank-\(d\) blocks in the target, with diagonal \(S=\mathrm{SU}(d)\) preserving the standard complex plane over \(E=K(i)\) and its volume in each block. Besides the block projections and their intertwiners, pull back the \(E\)-plane and its exterior volume in the first block. These are \(S\)-invariant over the field \(L=K(X)^S\). If \(D_L\) splits, its level is at most two and the desired split rank-one action follows. Otherwise the pulled-back \(E_L\)-plane and its translate by \(j\) span the quaternionic block over \(E_L\), as in the odd determinant construction. The Gram matrix on that plane is \(E_L\)-valued and has determinant one in a basis with the prescribed exterior volume. Diagonalizing it as an \(E_L\)-Hermitian form gives the diagonal coefficient form \(B_0\) over \(L\), with determinant in the norm group from \(E_L\). This diagonalizes the quaternionic form as well, since the chosen \(E_L\)-basis spans the block over \(D_L\). Thus its scalar form is \(4\langle1\rangle\otimes B_0\).
 
 Applying (W3) with \(k=r,\ e=4\) gives the same Pfister multiple obstruction as for repeated oriented unitary blocks. If \(s(L)\ge8r\), the anisotropic Pfister form \(4r\langle1\rangle\) tensored with \(B_0\perp-d\langle1\rangle\) would have anisotropic dimension \(8r\). Reduction to an anisotropic multiple would leave a rank-two form whose signed determinant is a value of that Pfister form, since it was a norm from \(E_L\). The rank-two multiple is then isotropic, a contradiction. Hence \(s(L)\le4r\). Odd-degree descent gives the same bound on the finite invariant quotient. The scalar form \(2d\langle1\rangle\) of \(S\) is isotropic there, and its split rank-one action on the generic fibre is active since the stabilizers are finite. The lower bound on the level follows from the smooth point over a field of level \(\min(s(K),4r)\) used in the smaller-block theorem.
+
+
+## Moment transfer of the signed scalar construction
+
+**Theorem (A rational witness on the original split scalar).**
+
+Let \(v\) be any of the squared-uniform arrangement heights on the exceptional compact quotients. Put \(r=(v-1)/4\). On the original split scalar define
+\[
+                P_* = v(t-1)^2+2r(1-t^{-1})+\frac{r^2}{v}t^{-2}.
+\]
+If the scalar constant term is taken before angular integration, then for each \(m\ge1\)
+\[
+             \Lambda(P_*^m)=0,\qquad
+             \Lambda(t^{-1}P_*^m)=-\frac{2}{2m+1}.                 \tag{V1}
+\]
+The two conditional constant terms are polynomials in \(v\), so these integrated expressions exist despite the coefficient poles at \(v=0\). This reproduces the sign-and-inversion moments by a conditional Laurent representative over the original field.
+
+In the extension with \(w^2=v\), the signed phase of the interval construction is \(A t+B/t+C\) with \(A=(1+w)/2,\ B=(w-1)/2,\ C=-w\). Rescale its scalar by \(t\mapsto wt/A\). This does not affect unmarked constant terms and gives the phase
+\[
+                           L=w(t-1)+(r/w)t^{-1}.
+\]
+Its square is \(P_*\) over the original field. For arbitrary coefficients \(A,B,C\), put \(D=C^2-4AB\). The scalar constant term of \((A t+B/t+C)^j\) is \(D^{j/2}\mathcal L_j(C/\sqrt D)\), where \(\mathcal L_j\) is the Legendre polynomial. This follows from the scalar Cauchy transform \(((z-C)^2-4AB)^{-1/2}\) at infinity. Differentiation with respect to \(B\) in the term at \(j+1\) gives
+\[
+          \operatorname{CT}_t\bigl(t^{-1}(A t+B/t+C)^j\bigr)
+            =\frac{2A}{j+1}D^{(j-1)/2}\mathcal L'_j(C/\sqrt D),
+\]
+using the Legendre derivative recurrence. For \(L\) one has \(D=1,\ A=w,\ C=-w\), so the two conditional constant terms in (V1) are \(\mathcal L_{2m}(w)\) and \(-2w\mathcal L'_{2m}(w)/(2m+1)\). Both are even in \(w\). The squared-uniform law turns their trace into integration with uniform \(w\in[-1,1]\). Orthogonality and one integration by parts give (V1).
+
+**Proposition (Uniqueness at scalar width two).**
+
+Work over any characteristic-zero function field containing \(v\). If a Laurent polynomial supported in \([-2,2]\) has the same first five conditional scalar moments as \(P_*\), it is \(P_*(\lambda t)\) for some nonzero field element \(\lambda\). In particular its constant coefficient retains the pole at \(v=\infty\). Where \(v\) has odd positive valuation and \(v-1\) is a unit, no such representative has all coefficients of nonnegative valuation.
+
+Write the Laurent polynomial as \(a t^2+b t+c+d/t+e/t^2\). The first moment fixes \(c=(3v-1)/2\). Put \(X=bd,\ Y=ae,\ Z=ad^2+eb^2\). After subtracting \(c\), the second through fifth moments are
+\[
+                  2(X+Y),\qquad 3Z,\qquad
+                  6(X+Y)^2+12XY,\qquad (20X+30Y)Z .
+\]
+These follow by balancing the scalar exponents in each expansion. For \(P_*\) the values are \(X=4vr,\ Y=r^2,\ Z=8vr^2\). Since \(Z\ne0\), these moments determine \(X,Y,Z\) in their indicated order. The two products \(ad^2,eb^2\) have sum \(Z\) and product \(YX^2\), so both equal \(4vr^2\). This determines \(a,b,e\) from \(d\ne0\) and gives the asserted rescaling with \(\lambda=-2r/d\). At a positive odd valuation of \(v\), the product \(ae=r^2\) is a unit. If all coefficients had nonnegative valuation, both \(a,e\) would be units and \(ad^2=4vr^2\) would have even valuation, a contradiction.
+
+## A regular gradient normalization of the transferred phase
+
+**Theorem (A fourth-moment obstruction for the basic invariant gradients).**
+
+On the octahedral angular sphere use either \(f=p_2-1/5\) or the mirror product of degree nine. On the icosahedral angular sphere use either \(f=p+1/21\) from (H4) or the mirror product \(J\) of degree fifteen. Let \(\ell\) be its homogeneous harmonic degree, and put \(U=|\nabla_{S^2}f|^2/(\ell(\ell+1))\). For all real \(\alpha,\beta\), the regular phase
+\[
+                      R=t+f-\frac{\alpha f^2+\beta U}{2t}
+\]
+is nonpure on the full compact exceptional product.
+
+These four polynomials have harmonic degrees \(4,9,6,15\), respectively. For the first and third this follows by harmonic decomposition and the basic invariant degrees, since there is no intermediate positive harmonic degree with this symmetry. Subtracting the indicated spherical mean removes the constant. For the mirror products the ambient Laplacian preserves the anti-invariant character and lowers degree, so it gives zero by divisibility by the product of reflecting forms. The extrema of the first and third are the nondegenerate extrema already described. For a mirror product all nonzero extremal values occur in chambers. Along a unit tangent geodesic in a chamber the second derivative of the logarithm of each absolute linear factor is \(-1-(\ell_i(e)/\ell_i(x))^2\). Hence the logarithm of the absolute product has negative definite Hessian in the chamber. All its nonzero global extrema on the sphere are nondegenerate.
+
+At such an extremum \(U=0\) and both \(f\) and \(U\) are stationary. The opposite-product endpoint theorem forces the opposite product to vanish if \(R\) is pure, so \(\alpha=0\). With \(\alpha=0\), the second moment and integration by parts give \(\beta=1\). In fact \(\Lambda(U)=\Lambda(f^2)\) since \(-\Delta f=\ell(\ell+1)f\). Also \(\Lambda(f^2 U)=\Lambda(f^4)/3\), by applying the same integration by parts with test \(f^3\). Thus at the only remaining parameters the fourth moment is \(-\Lambda(f^4)+(3/2)\Lambda(U^2)\). Dividing by the positive \(\Lambda(f^4)\), its values for the four functions in the order above are
+\[
+                   -\frac9{89},\qquad -\frac{152}{2025},\qquad
+                   -\frac{20}{209},\qquad -\frac{5083}{86400}.
+\]
+For a direct calculation in squared Cartesian coordinates \(a,b,c\), use
+\[
+       \Lambda(a^i b^j c^k)=
+       \frac{(2i)!(2j)!(2k)!(i+j+k)!}{i!j!k!(2i+2j+2k+1)!}.
+\]
+For \(f\) polynomial in \(a,b,c\) the ambient gradient norm is \(4(af_a^2+bf_b^2+cf_c^2)\). For the octahedral mirror product write \(f=x_1x_2x_3 B\), \(B=(a-b)(a-c)(b-c)\), and use the sum of \(bc(B+2aB_a)^2\) and its cyclic variants. For the icosahedral mirror product use \(f^2\) in (H4) and the ambient gradient norm from the mirror conditional circle. In each case subtract \(\ell^2 f^2\) from the ambient gradient norm to get the spherical norm, divide by \(\ell(\ell+1)\), square, and apply the displayed monomial trace. These computations and the endpoint arguments extend to real closed fields.
+
+To relate the normalization to (V1), if \(v=d^2/h\) with regular \(d,h\), rescaling the scalar there by \(1/d\) and multiplying the phase by \(h\) gives the regular square
+\[
+                            \left(t-d+\frac{d^2-h}{4t}\right)^2 .
+\]
+The preceding theorem tests the corresponding square root for ordinary gradient choices of \(h\) and for the normalization by the second moment. It identifies the fourth moment remaining after the forced adjustment of the first two parameters.
+
+## An obstruction to pulling back the full Hopf distribution
+
+**Proposition (The exceptional quotients do not carry an invariant Hopf pushforward).**
+
+Let \(X\) be either binary octahedral or binary icosahedral compact three-manifold with its positive smooth Haar density. A \(C^1\) map \(X\to\mathbb C^2\) with \(\mathrm{SU}_2\)-invariant pushforward probability is identically zero. The assertion holds if the density is multiplied by any strictly positive smooth function and renormalized.
+
+The support of the pushforward is the image, since the source density has full support and the source is compact. A nonconstant radius in an invariant image would make it contain an annulus: the radius takes an interval of values by connectedness and \(\mathrm{SU}_2\) acts transitively on each sphere. A \(C^1\) image of a compact three-manifold has empty interior in four dimensions. Thus the radius is constant. If it is positive, normalize it to one. The pushforward on \(S^3\) would then be normalized spherical area. At a critical point, the image of a coordinate ball of radius \(\epsilon\) has volume \(o(\epsilon^3)\), since the differential has rank at most two and its transverse variation is \(o(\epsilon)\). Its preimage contains a ball of measure bounded below by a positive multiple of \(\epsilon^3\). This contradicts the smooth spherical pushforward. The map is therefore a local diffeomorphism and hence a covering of \(S^3\). The target is simply connected and the source has nontrivial finite fundamental group, so no such covering exists. This excludes a pullback of the full invariant measure in the [Hopf-sphere construction](https://arxiv.org/abs/2609.16178), even when nonholomorphic regular coordinates are allowed.
+
+## Sharpness of the subgroup method in quaternionic sign rank two
+
+**Theorem (The generic split-fibre method starts at rank ten for two quaternionic sign changes).**
+
+Let \(K\) be real closed. Let \(X\) be the quaternionic isometry torsor from \(I_{n-2}\perp-I_2\) to \(I_n\), and take any reductive source subgroup \(H\) giving an affine homogeneous quotient \(Y=X/H\). If \(2\le n\le9\), no connected reductive subgroup of the compact target group has an active split rank-one subgroup on its generic invariant fibre in \(Y\). In rank ten the repeated complex-plane construction gives such an action for finite odd \(H\).
+
+The torsor has a point over \(F_8=K(S_8^-)\) of level eight by the same Witt cancellation as for the repeated blocks. Its image is a smooth point on \(Y\), so every invariant subfield under consideration has level at least eight, or infinite level. Hence compact factors of types \(A_1,A_2,A_3,B_3,C_2,D_4\) stay anisotropic: their standard scalar quadratic forms of dimensions at most eight stay anisotropic. The same holds for \(G_2\) by its octonion norm of dimension eight. Tori do not give split rank-one groups.
+
+For any other proper simple factor, restrict the defining complex symplectic representation of dimension \(2n\le18\) to that factor. The following are the possible nontrivial summands with an invariant alternating form, after grouping dual pairs and symmetric irreducibles of even multiplicity.
+\[
+\begin{array}{c|l}
+ \text{type}&\text{allowable summands}\\ \hline
+ A_\ell,\ \ell\ge4 & \text{standard and dual, one pair}\\
+ B_\ell,\ \ell\ge4 & \text{two copies of the vector representation for }B_4\\
+ C_3 & \text{one, two or three standard copies, or the primitive exterior cube}\\
+ C_\ell,\ \ell\ge4 & \text{one or two standard copies}\\
+ D_\ell,\ \ell\ge5,\ \text{or exceptional rank at least four} & \text{none}.
+\end{array}
+\]
+For the dimension check, apply the Weyl dimension formula to the fundamental weights and then to sums whose dimensions are still at most eighteen. In type \(A_\ell\) the other small irreducibles are exterior or symmetric squares, and each nonselfdual one has dimension more than nine. In type \(B_4\) the sixteen-dimensional spin representation is orthogonal, and higher spin representations exceed the dimension bound. The corresponding half-spin representations of \(D_5\) form a dual pair of dimension sixteen each. The vector representations of \(D_\ell\) are orthogonal and too large to occur twice. For \(C_3\) the two fourteen-dimensional fundamentals are the orthogonal primitive exterior square and the symplectic primitive exterior cube. For \(C_\ell\), \(\ell\ge4\), the nonstandard fundamentals and all further weights have dimension above eighteen. The nonzero exceptional representations in the last row also exceed eighteen. These dimension checks use the compact representation types, as in the quaternionic representation tables of [Gorodski and Podestà](https://www.emis.de/journals/JLT/vol.15_no.1/gorodla2e.pdf).
+
+Except for three standard copies of \(C_3\), every factor in the table contains an involution with negative quaternionic multiplicity two. For the standard-dual pair choose an element with two negative coordinates on the standard block. For the doubled \(B_4\) vector representation use two real sign changes on both copies. With standard symplectic copies choose two negative quaternionic coordinates in one copy or one in each of two copies. For the primitive exterior cube of \(C_3\) start with two negative quaternionic coordinates on the standard representation. There are eight negative complex weights on the full exterior cube and four on its standard contraction summand, leaving four on the primitive cube. In the compact target, any involution with this multiplicity is conjugate to \(n_0=\operatorname{diag}(I_{n-2},-I_2)\). Since \(n_0\) is the torsor cocycle, the quotient by the corresponding factor has a real point and its invariant field is formally real. The invariant subfield of any larger subgroup is then formally real too, as in the small-rank argument.
+
+The exceptional representation by three standard \(C_3\) copies fills all eighteen complex dimensions and occurs only at \(n=9\). Its compact centralizer acts on the three-dimensional real multiplicity space through \(\mathrm O(3)\), so any other semisimple factor of a larger subgroup has type \(A_1\). Let \(F_{16}=K(S_{16}^-)\) have level sixteen. Over it the source form \(I_7\perp-I_2\) is isometric to three copies of \(I_1\perp-I_2\). The two scalar forms have Witt classes differing by \(32\langle1\rangle\), hyperbolic over \(F_{16}\), and Hermitian Witt cancellation applies. This repeated decomposition gives a point of the quotient by the diagonal \(\mathrm{Sp}(3)\) over \(F_{16}\), by the same descent of block intertwiners as in the three-block theorem. Consequently its invariant field has level at least sixteen and the standard twelve-dimensional scalar form of this \(\mathrm{Sp}(3)\) stays anisotropic there. It stays anisotropic over the smaller invariants of \(Y\) and of a larger \(S\). The remaining rank-one factors were already excluded by the level-eight bound. The full target group has invariant field \(K\) and is compact. This proves the boundary.
+
+
+## Natural denominator clearings of the Legendre transfer
+
+**Theorem (Direct Legendre clearing retains nonzero pure moments).**
+
+Use any of the following height and denominator pairs: the octahedral coordinate height with \(h=p_2\), the octahedral long-root height with \(h=(1-3p)(p-9q)\), the icosahedral vertex height with \(h=\nabla p\cdot\nabla p\), or the icosahedral mirror height with \(h=H=-80ab\). Let \(g\) be a nonzero polynomial, \(L,b\ge1\), and let \(\lambda\ne0\) be any rational scalar rescaling on the full quotient. For the family
+\[
+                          h^L g(v)\,P_*(\lambda t)^b
+\]
+every regular member has nonzero pure moments at infinitely many multiples of each prescribed positive order. More generally this nonvanishing holds under \(eL+\deg g\ge b\), where \(e=2,5,5,14\), respectively, even when the phase is only rational and the scalar constant term is taken first.
+
+Put \(J_n(v)=\mathbb E[h^n\mid v]\). These are polynomials of degree \(en\), integral at all sufficiently good odd places, with nonzero leading coefficients. For the coordinate and vertex cases use (H17). For the long-root case in (H15), at \(v=\infty\) write \(u/v=\cos\theta\) to leading order. The leading terms of \(r,k\) are \((\cos^2\theta-1)v^2/16\) and \((\cos^2\theta-1)(\cos\theta-1)v^3/96\). Hence the leading conditional coefficient of \(h^n\) is a nonzero scalar power times the arcsine moment of \((1-\cos\theta)^{3n}(1+\cos\theta)^{2n}\). Polynomiality follows by averaging (H15), which replaces the even powers of \(u\) by powers of \((1-v)(9-v)\) times circle moments. For the mirror case the leading form of \(H\) is a nonzero multiple of \(p^3r\) in the notation of the mirror-height section. Its leading conditional coefficient is the arcsine moment of \((1-u)^{5n}(1+u)^{9n}\) times a nonzero scalar power. Polynomiality follows from that section's two-sign averaging. In both arcsine cases the beta formula shows that the leading coefficient is an \(\ell\)-unit at good primes \(\ell>2en\). The same bound applies to (H17), using its displayed binomial formulas.
+
+The scalar constant term of the \(m\)-th power is unaffected by \(\lambda\). After the conditional angular average it is
+\[
+                        g(v)^m J_{Lm}(v)\,\mathcal L_{2bm}(\sqrt v).
+\]
+Its degree is \(D_0m\) with \(D_0=\deg g+eL+b\). Choose large primes \(\ell=2D_0m+1\), imposing any prescribed divisibility of \(m\). The leading Legendre coefficient is \(2^{-2bm}\binom{4bm}{2bm}\), a unit since \(eL+\deg g\ge b\). The other two leading factors are units by the preceding calculation and good reduction of the leading coefficient of \(g\). Thus the term of degree \(D_0m\) supplies the unique pole at \(\ell\) in the angular trace, because integration divides the coefficient of \(v^k\) by \(2k+1\). This proves nonvanishing. With nonalgebraic coefficients specialize to a number field keeping the leading coefficient nonzero, as the traced expression after scalar extraction is polynomial in the coefficients of \(g\). Dirichlet's theorem provides the primes in each prescribed sequence of multiples.
+
+Finally, at a generic simple pole of \(v\) from the chosen denominator \(h\), the scalar constant term before angular averaging has leading factor \(h^L g(v)\mathcal L_{2b}(\sqrt v)\), of valuation \(L-\deg g-b\). In each case such a simple pole exists. A regular Laurent phase therefore requires \(L\ge\deg g+b\), which implies the inequality already used.
+
+
+## Conditional degree growth on the full exceptional quotients
+
+**Theorem (The conditional Legendre law has no regular realization).**
+
+Use the octahedral coordinate-mirror height \(v=9q/p\) or the icosahedral fifteen-mirror height \(v=w\). Let \(P=\sum_e P_e t^e\) be a real regular Laurent phase on the corresponding full compact quotient times the split scalar. Set \(F_m(v)=\mathbb E_v R_L\operatorname{CT}_t(P^m)\), where \(R_L\) averages over the effective left circle and \(\mathbb E_v\) is the conditional angular average. Then \(F_m\) is a polynomial. If the scalar exponents meet both sides of zero or include zero, put
+\[
+  D=\max\{j:(0,j)\in\operatorname{conv}\{(e,j_e):P_e\ne0\}\},
+\]
+where \(j_e\) is the half-matrix degree of \(P_e\). One has \(\deg_v F_m\le mD/2\), with equality for arbitrarily large \(m\) divisible by any given positive integer. If the scalar exponents lie strictly on one side of zero, every \(F_m\) vanishes.
+
+In particular, if \(F_1\) is nonconstant, the degree is at least \(2m\) on such an infinite subsequence for \(2O\), and at least \(3m\) for \(2I\). Thus \(F_m(v)=\mathcal L_{2m}(\sqrt v)\) at every order is impossible for a regular Laurent phase, including phases with arbitrary left-circle weights and arbitrary scalar support.
+
+For the proof use the faithful circle evaluations at infinity from the full exceptional endpoint theorem. In half-matrix degree \(j\) they send the leading symbol to \(v^{j/2}\) times a Laurent polynomial in the angular variable \(y\) and left weight variable \(z\). Write \(B_e(y,z)\) for the Laurent polynomial of \(P_e\) in degree \(j_e\), after removing that power of \(v\). It is nonzero by faithfulness, and reality gives invariance under \((y,z)\mapsto(1/\bar y,-1/\bar z)\) with conjugation on coefficients. Hence its support is stable under negating the two exponents. Conditional averages are polynomials by the angular formulas. For a product of degree at most \(j\), its \(v^{j/2}\) coefficient in the expansion at infinity after these two averages is the constant term of its degree-\(j\) symbol. This follows by multiplying in the graded algebra and taking the circle limit at infinity, as in the full endpoint argument. When \(j\) is odd this coefficient is zero, since the conditional average is a polynomial.
+
+Choose a rational supporting slope \(\alpha\) so that \(D=\max_e(j_e+\alpha e)\), and let \(I\) be the indices attaining the maximum. This also works when zero is an endpoint of the scalar exponents, by choosing the slope so that only the exponent zero attains the maximum. In a term of \(P^m\) with total exponent zero, the sum of the contributing scalar coefficient degrees is at most \(mD\). Equality requires that all indices lie in \(I\). Therefore the \(v^{mD/2}\) coefficient of \(F_m\), at integral \(mD/2\), is
+\[
+                \operatorname{CT}_{t,y,z}\Sigma^m,\qquad
+       \Sigma=\sum_{e\in I}t^e B_e(y,z).
+\]
+For each \(e\in I\) the Newton polytope of \(\Sigma\) contains \((e,0,0)\) by the support symmetry. Since zero lies in the convex hull of \(I\), the full polytope contains the origin. The product rule for Newton polytopes gives the same property for every power \(\Sigma^M\). Apply [Duistermaat–van der Kallen, Theorem 1](https://webspace.science.uu.nl/~kalle101/powers.pdf) to \(\Sigma^M\), taking \(M\) large, divisible by the prescribed integer and with \(MD/2\) integral. Some multiple of \(M\) gives a nonzero coefficient. This proves the degree assertion. All coefficient identities extend to a real closed field by embedding an ordered finitely generated field of definition of \(P\) into \(\mathbb R\).
+
+If \(F_1\) is nonconstant, \(P_0\) is nonconstant and \(j_0\le D\). The smallest positive degrees of right binary invariant forms are eight and twelve for \(2O\) and \(2I\), so \(j_0\ge4\) or \(6\), respectively. Equivalently these bounds follow from the least positive homogeneous degrees of the angular cone, since the graded left-weight pieces use the same right binary forms. The Legendre sequence has degree \(m\) and first term \((3v-1)/2\), giving the claimed impossibility. Global unmarked vanishing imposes only \(\int_0^1 F_m(w^2)\,dw=0\). A regular phase satisfying that weaker condition can have higher conditional degrees.
+
+**Corollary (Polynomial amplitudes for the rational Legendre transfer).**
+
+For any squared-uniform arrangement height \(v\), integer \(b\ge1\), and polynomial \(g\) of degree less than \(b\), the rational phase \(g(v)P_*^b\) has zero pure moments in the order of integration of (V1). Its \(m\)-th moment with the fixed multiplier \(t^{-1}\) is
+\[
+                   -\frac{2\,g(1)^m}{2bm+1}.
+\]
+In particular \(g(1)\ne0\) gives an all-order rational witness. For the two heights in the theorem, none of the conditional pure moment sequences with \(g\ne0\) and \(b+\deg g<2\) for \(2O\), or \(b+\deg g<3\) for \(2I\), can be realized by a regular Laurent phase.
+
+The pure conditional term is \(g(w^2)^m\mathcal L_{2bm}(w)\), which integrates to zero by orthogonality. The conditional marked term uses \(w g(w^2)^m \mathcal L'_{2bm}(w)\) as in (V1). In integration by parts the derivative of \(w g(w^2)^m\) has degree \(2m\deg g<2bm\), so its integral against the Legendre polynomial vanishes. The endpoint term gives the formula. The conditional degrees are \((b+\deg g)m\), so the last assertion follows from the theorem.
+
+
+## Classical sign twists with an even finite stabilizer
+
+**Theorem (The diagonal block test with an involution in the stabilizer).**
+
+Let \(K\) have characteristic zero. Let \(D\) be \(K\), \(K(i)\), or \((-1,-1)_K\), with scalar dimension \(e=1,2,4\), respectively, and the split conventions of the classical isometry construction. Take \(X\) to be the connected isometry torsor from \(I_{n-r}\perp-I_r\) to \(I_n\). Assume \(r\) is a power of two, with \(r\ge2\) in the orthogonal and special unitary cases. Let \(h\) be a nonidentity involution in the source group, diagonal in a source isometry basis, and set \(a=p_--q_-\), where \(p_-,q_-\) count the positive and negative source coordinates flipped by \(h\). Over a real closed field the basis hypothesis holds for every involution.
+
+Put \(d=\lfloor n/r\rfloor\). For \(e=1,2\) assume \(d\ge r+1\) and take \(S=\mathrm{SO}(I_d)\) or \(\mathrm{SU}(I_d)\) diagonally on \(r\) identical target blocks. For \(e=4\) assume \(d\ge2r+1\) and take \(S=\mathrm{SU}(I_d)\) acting on the standard complex plane in each of the \(r\) quaternionic blocks. In all cases \(S\) fixes the complement.
+
+- If \(a\not\equiv r\bmod 2r\), the field \(K(X/\langle h\rangle)^S\) has level \(\min(s(K),er)\). The generic fibre has an active split rank-one action, yielding a regular Mathieu–Zhao counterexample. Both conclusions hold on \(X/H\) for any finite source subgroup \(H\) containing \(\langle h\rangle\) with odd geometric index.
+- If \(a\equiv r\bmod 2r\) and \(K\) is formally real, the invariant field for this \(S\) is formally real.
+- Over a real closed \(K\), the quotient \(X/\langle h\rangle\) has a \(K\)-point exactly when \(a=-r\), and in that case its trace kernel is Mathieu–Zhao.
+
+In particular the quaternionic case with \(r=2\) starts at rank ten. It includes a single quaternionic line flip, every involution with balanced sign support, and the central involution \(-I_n\) when \(n\not\equiv2\bmod4\). The analogous central criterion for any \(r\) in the theorem is \(n\not\equiv r\bmod 2r\), whenever \(-I_n\) belongs to the source group.
+
+Write \(F=K(X/\langle h\rangle)^S\) and \(1=\langle1\rangle\) in the Witt ring. The generic orbit of \(S\times\langle h\rangle\) on \(X\) is geometrically transitive by the generic invariant fibre theorem, applied to \(X/\langle h\rangle\). The orbit is free unless \(h\) is central and belongs to \(S\). Indeed for noncentral \(h\), a generic stabilizer would require every conjugate of \(h\) into the target group to belong to \(S\), by closedness. Its conjugacy class generates a noncentral normal subgroup of the almost simple target, which cannot lie in \(S\). For central \(h\in S\) one has \(h=-I_n\), \(n=rd\), and \(d\) even. Then \(F=K(X)^S\) and we use the generic \(S\)-torsor on \(X\).
+
+In the free case project the generic orbit cocycle to \(\langle h\rangle\), with square class \(\delta\in F^\times/F^{\times2}\). A geometric isometry representing the orbit descends to an isometry after twisting each form by the corresponding projection of the cocycle. In the source this multiplies the form on the minus eigenspace of \(h\) by \(\delta\), as is seen by rescaling that eigenspace by \(\sqrt\delta\). In the target this gives \(r\) copies of one form and leaves the fixed complement unchanged. The form is oriented quadratic in the orthogonal case, complex Hermitian with prescribed volume in the special unitary case, and the quaternionification of such a complex Hermitian form in the quaternionic case. For the central case \(h\in S\), the same target description holds for the generic \(S\)-torsor and we set \(\delta=1\).
+
+The level lower bound follows as in the smaller-block argument. Let \(K_0=K\) if \(s(K)\le er\), and otherwise let \(K_0=K(S_{er}^-)\), which has level \(er\). In either case the difference of the scalar forms, \(2er\langle1\rangle\) up to sign, is hyperbolic, so \(X\) has a point over \(K_0\) by Witt cancellation, with the usual determinant adjustment for oriented or special isometries. Its image is a smooth point of \(X/\langle h\rangle\). Completion at that point gives the level lower bound for its function field and hence for \(F\).
+
+For the upper bound assume \(s(F)>er\), so \(s(F)\ge2er\) and in the Hermitian cases the coefficient algebra remains a division algebra. Diagonalize the descended quadratic or complex Hermitian block and write \(B_0\) for its diagonal coefficient form. The scalar form of each block is \(e\langle1\rangle\otimes B_0\). With \(\beta=[B_0]-d\cdot1\), comparison of the twisted forms gives
+\[
+              (er\cdot1)\beta=-2er\cdot1+
+                            a(e\cdot1)(\langle\delta\rangle-1).
+\]
+The initial source–target difference is \(-2er\cdot1\), and twisting the source minus eigenspace adds \((\langle\delta\rangle-1)\) times its scalar Witt class \(a(e\cdot1)\).
+
+Write \(I\) for the fundamental ideal of the Witt ring and \(u=\log_2(er)\). In the orthogonal case \(\beta\) has even rank and trivial signed discriminant, so \(\beta\in I^2\). In the two Hermitian cases its signed discriminant is a norm from \(F(i)\). Modulo \(I^2\), \(\beta\) is represented by \(\langle1,-\det B_0\rangle\). Multiplying this form by \(2\langle1\rangle\) makes it hyperbolic by roundness and the norm condition. Hence \((2\cdot1)\beta\in I^3\). In every case \((er\cdot1)\beta\in I^{u+2}\). If \(2r\mid a\), the correction term belongs to \(I^{u+2}\) as well, so \(2er\cdot1\in I^{u+2}\). The [Arason–Pfister Hauptsatz](https://link.springer.com/article/10.1007/BF01404657) makes this form hyperbolic because its dimension is \(2^{u+1}<2^{u+2}\).
+
+Otherwise \(a\not\equiv r\bmod 2r\) implies \(a=2^v b\) with \(b\) odd and \(2^v<r\). The form \((er\cdot1)(\beta+2\cdot1)\) has anisotropic dimension divisible by \(2er\), by the Pfister multiple reduction with the even-rank multiplier \(\beta+2\cdot1\). The other side of the identity is an odd multiple of a form similar to a Pfister form of dimension \(2^{v+1}e\). If that Pfister form were anisotropic, its multiple would have anisotropic dimension congruent to \(2^{v+1}e\) modulo \(2^{v+2}e\), by the same reduction. This is impossible since \(2^{v+2}e\) divides \(2er\). Thus the correction term is hyperbolic. Again \(2er\cdot1\in I^{u+2}\) and the Hauptsatz makes it hyperbolic. This contradicts \(s(F)>er\) and proves the level assertion.
+
+The standard scalar dimension of \(S\) is \(ed>er\) for \(e=1,2\), and \(2d>4r\) for \(e=4\). Its form is isotropic over \(F\), giving split rank one (or using the split isometry group if the coefficient algebra splits). The fibre action is active because the stabilizers are finite. The generic fibre theorem supplies the regular witness. If \(H\) contains \(\langle h\rangle\) with odd geometric index, the invariant fields have odd relative degree. For \(L=K(X)^S\), the geometric degree is the ratio of the orders of the effective actions of \(H\) and \(\langle h\rangle\) on the geometrically extended field \(L\). This ratio divides the index and is unchanged over \(K\). Springer descends isotropy and preserves the level. In particular, over a real closed field any finite source subgroup of geometric order twice an odd number has a \(K\)-defined subgroup of order two, since conjugation acts on the odd set of geometric Sylow two-subgroups.
+
+For \(a\equiv r\bmod 2r\), twist \(X\) by the constant quadratic cocycle \(h\) over \(K(i)/K\) on the source. The resulting isometry torsor \(X'\) has \(r+a\) negative source lines. This number is divisible by \(2r\) and no larger than \(rd\). Its compact target cocycle is that many sign changes, so it is conjugate into the diagonal \(S\) by using exactly \((r+a)/r\) negative lines per block. Thus \(X'/\!/S\) has a \(K\)-point. This quotient is smooth, since geometrically it is a homogeneous space of the source isometry group. Its function field is formally real if \(K\) is. The dominant map \(X'\to X/\langle h\rangle\) then gives the formal reality of \(F\).
+
+Over a real closed field, any rational point of \(X/\langle h\rangle\) lifts to a point on \(X\) or on \(X'\), by the two possible cocycles of the double cover. The original torsor has no point by its nonzero negative rank. The twist \(X'\) has a point exactly when \(r+a=0\), by its source signature and the determinant adjustment. Compact positivity gives the Mathieu–Zhao assertion in this case. For the central involution \(a=n-2r\), which gives the claimed rank congruence.
+
+
+**Corollary (Simultaneous sign changes in the finite stabilizer).**
+
+Use the hypotheses on the classical torsor and the diagonal subgroup \(S\) from the block theorem. Let \(A\) be an elementary abelian two-subgroup diagonal in a single source sign basis. For each sign character \(\chi\) of \(A\), let \(a_\chi\) be the signed rank of its eigenspace, and put \(a(h)=\sum_{\chi(h)=-1}a_\chi\).
+
+Suppose that each \(a_\chi\) for \(\chi\ne1\) is divisible by \(r\), and that \(a(h)\) is divisible by \(2r\) for every \(h\in A\). Then \(K(X/A)^S\) has level \(\min(s(K),er)\) and \(X/A\) has a regular counterexample. The same conclusions hold for any finite source subgroup containing \(A\) with odd geometric index. In the other direction, if \(K\) is formally real and some \(h\) has \(a(h)\equiv r\bmod 2r\), the same invariant field is formally real. Over a real closed field \(X/A\) has a point exactly when some \(h\in A\) has \(a(h)=-r\).
+
+If \(A\) contains \(-I_n\) and \(-I_n\in S\), first replace \(A\) by a complement to that central order-two subgroup. The invariant field is unchanged. Every occupied character took value \(-1\) on \(-I_n\), so restriction to the complement is injective on the occupied characters. The hypotheses on nontrivial signed ranks and on \(a(h)\) are thus preserved. After this replacement the generic \(S\times A\) orbit on \(X\) is free by the same conjugacy argument, applied to the finitely many nonidentity elements. The generic cocycle of \(A\) gives square classes \(\delta_\chi\) under all its characters, with \(\delta_{\chi\psi}=\delta_\chi\delta_\psi\) modulo squares. The source correction in the Witt identity is now
+\[
+                    (e\cdot1)\sum_{\chi\ne1}a_\chi
+                                       (\langle\delta_\chi\rangle-1).
+\]
+With \(c_\chi=a_\chi/r\), reduce \(\sum_{\chi\ne1}c_\chi(\langle\delta_\chi\rangle-1)\) modulo \(I^2\). It is represented by \(\langle\prod_\chi\delta_\chi^{c_\chi}\rangle-1\), by multiplication of square classes. The character \(\prod_\chi\chi^{c_\chi}\) is trivial because its value at \(h\) is \((-1)^{a(h)/r}=1\). The correction consequently belongs to \(I^{u+2}\), and the block proof gives the exact level and split action. If a central subgroup was removed, pass from the quotient by the complement to \(X/A\) over the identical invariant field. The action is still active since stabilizers remain finite. The argument for odd index is the same field-degree descent as in the block theorem.
+
+If an \(h\) has the indicated complementary congruence, \(K(X/A)^S\) is a subfield of the formally real field \(K(X/\langle h\rangle)^S\). For the rational point assertion, the possible twists of the finite cover over a real closed field are the quadratic cocycles of \(A\), parametrized by its elements. The twist indexed by \(h\) has negative rank \(r+a(h)\), as above.
+
+For example, take quaternionic sign rank two in rank ten. Let \(A\) be generated by two independent flips, each on a different signed pair consisting of one positive and one negative quaternionic line. Then each occupied nontrivial character has signed rank zero. This gives a point-free quotient with geometric stabilizer of order four and a regular counterexample. Its two signed-pair eigenspaces give split directions in the commuting group. For an example with compact commuting identity component in the same rank, give the two negative lines one nontrivial sign character of \(A\cong (C_2)^2\). Give two positive blocks of rank two the other two nontrivial characters, and give the four remaining positive lines the trivial character. The nontrivial signed ranks are \(-2,2,2\). Each nonidentity element flips two of these blocks, so its signed flip count is \(0\) or \(4\). The quotient is point-free, has a regular counterexample, and its commuting identity component is compact because all the character spaces are definite.
+
+
+## An interval density obstruction on the exceptional angular quotients
+
+**Proposition (A regular angular coordinate has no bounded interval density).**
+
+Let \(\Gamma\) be a finite rotation group of \(S^2\) with no common fixed point, and let \(f:S^2\to\mathbb R\) be a nonconstant, \(\Gamma\)-invariant \(C^3\) function. Its pushforward of normalized spherical area cannot have bounded density with respect to Lebesgue measure. In fact \(f\) has a critical point \(x\) where the area of \(\{|f-f(x)|\le\epsilon\}\) is at least a constant times \(\epsilon\log(1/\epsilon)\), \(\epsilon^{5/6}\), or \(\epsilon^{2/3}\), for all sufficiently small \(\epsilon>0\).
+
+If any critical point has degenerate Hessian, diagonalize the quadratic term in a local chart at that point. For rank one, the rectangle of side lengths proportional to \(\epsilon^{1/2}\) in the quadratic direction and \(\epsilon^{1/3}\) in the null direction lies in the sublevel strip by the Taylor remainder estimate. Its area is bounded below by a constant times \(\epsilon^{5/6}\). For rank zero a disk of radius proportional to \(\epsilon^{1/3}\) gives the \(\epsilon^{2/3}\) bound. Otherwise \(f\) is Morse. The global minima and maxima are each unions of \(\Gamma\)-orbits of size at least two, since there is no common fixed point. The Morse count on \(S^2\) then gives at least one saddle. At a saddle the Morse lemma gives local coordinates with \(f-f(x)=uv\). The area of \(\{|uv|\le\epsilon\}\) in a fixed small square is bounded below by a constant times \(\epsilon\log(1/\epsilon)\). None of these estimates is compatible with bounded density.
+
+For \(2O\) and \(2I\) the same conclusion applies to every nonconstant regular real function fixed by the effective left circle on the full compact quotient. Its pullback to \(S^2\) is invariant under the octahedral or icosahedral rotation group. The angular trace is exactly spherical area, since the angular map from the pointed compact group pushes Haar probability to spherical probability before the finite right quotient. Therefore the polynomial-density interval witness cannot use an unweighted regular angular coordinate on these quotients. If one uses an angular weight \(D\) in that construction, then \(D\) must vanish at every saddle and every degenerate critical point of the chosen coordinate: otherwise the nonnegative weight \(D^2\) is bounded below on a neighborhood of that point and the same sublevel estimate excludes polynomial density for the second weight moment. This argument leaves weights vanishing at those critical points available, as well as phases using the full left-circle dependence.
+
+
+## A second interval for the octahedral coordinate-mirror trace
+
+**Theorem (The range of the octahedral conditional projection).**
+
+Use the octahedral coordinate-mirror height \(v=9q/p\), with \(p=p_2\) and \(q=p_3\). The polynomial range of the conditional average on the regular angular ring is exactly
+\[
+  \left\{\,F\in K[v]:
+            \int_0^3 F(w^2)\,dw=3\int_0^1 F(w^2)\,dw\,\right\}.
+\]
+Here polynomial integration is rational, so the assertion holds over every characteristic-zero field for the split angular presentation of the moment formulas. For the full compact quotient, apply the effective left-circle Reynolds projection first. Odd orientation terms have zero conditional average, so the same range describes the full projection. In particular, after scalar constant-term extraction, all unmarked and marked moments of a regular Laurent phase can be computed using \(\frac12\int_1^3 F(w^2)\,dw\) on its conditional polynomials.
+
+Write \(M_k(v)=\mathbb E[p^k\mid v]\). By (H3),
+\[
+       M_k(w^2)= (w/3)^k\mathcal L_k(c(w)),
+       \qquad c(w)=\frac{-w^4+6w^2+3}{8w}.
+\]
+The monomials of the reflection-invariant ring give \(9^{-j}v^j M_k(v)\) with \(0\le j\le k\), and the odd part of the angular ring has zero conditional projection by inversion. To prove the linear identity for these moments, let
+\[
+   Q_c(W)=W^4-6W^2+8cW-3,\qquad
+   S_s(c)=\sum_{Q_c(W)=0}\frac{W^s}{Q_c'(W)} .
+\]
+For \(s\ge0\) the sum is zero for \(s<3\). For \(s\ge3\) it is the coefficient of \(z^{s-3}\) in \((1-6z^2+8cz^3-3z^4)^{-1}\), by the partial fractions of \(1/Q_c\) at infinity. Thus \(\deg_c S_s\le \lfloor(s-3)/3\rfloor\). For \(k\ge1\) and \(0\le j\le k\),
+\[
+     \int_{-1}^1 \mathcal L_k(c)S_{k+2j+1}(c)\,dc=0
+\]
+by Legendre orthogonality and \(k+2j+1\le 3k+1\). For the constant monomial the corresponding sum is \(S_1(c)=0\).
+
+For an arbitrary polynomial \(F\), let \(G(w)=\int_0^w F(s^2)\,ds\). Differentiating the root equation gives
+\[
+    \sum_{Q_c(W)=0}\frac{W F(W^2)}{Q_c'(W)}
+                  =-\frac18\frac{d}{dc}\sum_{Q_c(W)=0}G(W).
+\]
+The sum on the right before differentiation is a symmetric polynomial in the roots and extends across collisions. At \(c=1\) the roots are \(1,1,1,-3\), and at \(c=-1\) they are \(-1,-1,-1,3\). The integral of the left side from \(-1\) to \(1\) is therefore \((G(3)-3G(1))/4\), since \(G\) is odd. For \(F(v)=v^j M_k(v)\), the left side equals \(3^{-k}\mathcal L_k(c)S_{k+2j+1}(c)\). This proves the asserted range inclusion and the continued trace formula.
+
+For equality, the conditional mean of \(p^i q^j\) has exact degree \(2i+3j\): its leading coefficient is the nonzero circle moment of \(((\cos\theta-1)/24)^{i+j}/9^j\). Every integer at least two is \(2i+3j\) for some \(i,j\ge0\). The constant and one such mean for each degree from two to \(D\) are independent. On degree at most \(D\ge1\) the integral condition has codimension one because it fails on \(v\), so these means span its kernel. The case \(D=0\) is immediate.
+
+**Corollary (No powered Legendre transfer on the octahedral coordinate height).**
+
+For any integer \(b\ge1\) and any nonzero real polynomial \(g\) with \(\deg g<b\), the pure conditional moment sequences \(g(v)^m\mathcal L_{2bm}(\sqrt v)\) cannot be realized by a regular Laurent phase on the full octahedral product. In fact the conditional moment at any even \(m>0\) in this sequence is outside the range of the conditional projection even as an individual polynomial.
+
+Its compact integral is zero by orthogonality. Its integral over \(1<w<3\) is strictly positive at even \(m\) because \(g(w^2)^m\ge0\) and \(\mathcal L_{2bm}(w)>0\) for \(w>1\). The latter follows, for example, from the real-root theorem for orthogonal polynomials on \([-1,1]\) and their positive leading coefficients. This contradicts the range identity. The conclusion over real closed fields follows by specialization of the finitely many coefficients to an ordered subfield of \(\mathbb R\), using the rational conditional and integration formulas.
+
+
+## Finite rotation stabilizers of classical sign twists
+
+**Theorem (The diagonal block test for finite toral stabilizers).**
+
+Use the classical sign torsor \(X\), scalar dimension \(e\), power-of-two negative rank \(r\), and subgroup \(S\) from the diagonal block theorem. Suppose \(K(i)\) is a field and write \(U_1\) for its norm-one torus. Let \(A\) be a finite source subgroup acting in a source sign basis as follows. In the orthogonal case it acts by \(U_1\)-characters on definite two-planes \(\pm I_2\) and fixes the remaining lines. In the special unitary and quaternionic cases it acts by \(U_1\)-characters on signed lines, using the fixed complex subfield in the quaternionic case. Assume that \(A\) meets the geometric center of the source group trivially.
+
+For each nontrivial character \(\chi:A\to U_1\), let \(a_\chi\) be the signed rank of the blocks carrying \(\chi\), with a two-plane counted as two orthogonal coordinates. Suppose \(r\mid a_\chi\) for each such character and
+\[
+           \prod_{\chi\ne 1}\chi^{a_\chi/r}
+                \ \text{is a square in }\operatorname{Hom}_K(A,U_1).
+\]
+Then \(K(X/A)^S\) has level \(\min(s(K),er)\) and \(X/A\) has a regular Mathieu–Zhao counterexample. These conclusions pass to any finite source subgroup containing \(A\) with odd geometric index.
+
+To see this, put \(F=K(X/A)^S\). The generic geometric orbit of \(S\times A\) on \(X\) is free by the conjugacy argument in the block theorem, now applied to each geometric element of \(A\). The projection of the cocycle to \(A\), and then along each character to \(U_1\), gives a class
+\[
+              [\delta_\chi]\in F^\times/N_{F(i)/F}F(i)^\times
+                       =H^1(F,U_1).
+\]
+Use the split étale norm if \(F(i)\) splits. Twisting a unit complex line by this cocycle gives the Hermitian line with coefficient \(\delta_\chi\): its norm-one frame torsor is the norm equation with that right side, up to inverting the coefficient, which gives the same norm class. The orthogonal two-plane is the scalar form of that line. In the quaternionic case the line quaternionifies to the signed quaternionic line with this coefficient because the original circle action is left multiplication through the complex subfield. Hence the comparison of scalar forms from the block proof has source correction
+\[
+                      (e\cdot1)\sum_{\chi\ne1}
+                               a_\chi(\langle\delta_\chi\rangle-1).
+\]
+In the orthogonal case a change of a norm representative preserves the two-plane scalar form. The same holds for the higher scalar dimensions in the other cases.
+
+Let \(u=\log_2(er)\) and set \(\eta=\sum_{\chi\ne1}(a_\chi/r)(\langle\delta_\chi\rangle-1)\). Its signed discriminant belongs to the norm group. Indeed, the product of the norm classes is the class induced by the character product in the hypothesis, which is trivial since the norm quotient has exponent two. Thus \((2\cdot1)\eta\in I^3\) by the binary Pfister argument of the block theorem. If \(er\ge2\), the correction \((er\cdot1)\eta\) belongs to \(I^{u+2}\). This covers all of the stated cases, including \(r=1,e=4\). If \(s(F)>er\), the target comparison puts \(2er\cdot1\) in \(I^{u+2}\), contradicting the Hauptsatz as before. The matching level lower bound follows from the same point over \(K(S_{er}^-)\), or over \(K\) if \(s(K)\le er\). The standard form of \(S\) is isotropic at this level and the finite stabilizer makes its split rank-one action active on the generic fibre. Apply the generic fibre theorem and odd-index descent as in the block case.
+
+For example, over a real closed field take the rank-ten quaternionic torsor of negative rank two. For every integer \(k\ge2\) let \(A\) be cyclic of order \(2^k\), with a faithful character \(\chi\) into \(U_1\). Give four positive lines character \(\chi\), the two negative lines character \(\chi^2\), and the four remaining positive lines the trivial character. The signed ranks \(4,-2\) satisfy the theorem with character product \(\chi^2(\chi^2)^{-1}=1\). The only nontrivial real cocycle of this constant cyclic group is its involution. It flips precisely the four positive lines of character \(\chi\), so the two possible source signatures have negative ranks two and six. Thus \(X/A\) has no rational point. The characters \(\chi,\chi^2,1\) are distinct even up to inversion, and all their spaces are definite. The source centralizer therefore has compact identity component. These quotients give regular counterexamples with arbitrary powers of two as the orders of the finite stabilizers.
+
+
+**Corollary (Constant cyclic stabilizers over a real closed field).**
+
+Keep the rank bounds of the diagonal block theorem for the classical sign torsor \(X\) over a real closed field \(K\). Let \(A\) be a constant finite cyclic source subgroup of even order, and let \(h\) be its unique involution. If the signed rank \(a(h)\) of its minus eigenspace satisfies \(a(h)\not\equiv r\bmod 2r\), then \(X/A\) has a regular Mathieu–Zhao counterexample. The invariant field for the subgroup described below has level \(er\). The same conclusions hold on \(X/H\) for any finite \(H\) containing \(A\) with odd geometric index. The quotient \(X/A\) has a \(K\)-point exactly when \(a(h)=-r\).
+
+It suffices to pass to the two-primary part of \(A\) and use odd-index descent. Choose block size \(d=r+1\) in the orthogonal and special unitary cases, and \(d=2r+1\) in the quaternionic case. The proofs of the block and toral level bounds only need these lower bounds and \(rd\le n\). This choice makes \(d\) odd, so the acting diagonal group \(S\) contains no nonidentity central two-element of the target in the three cases. In the unitary case, a scalar in \(S\) when the fixed complement is zero has order dividing \(d\), which is odd. Thus the generic action of \(S\times A\) is free even if \(A\) meets the source center. We may use the cocycle comparison from the toral proof. For \(|A|=2\), the involution calculation already gives the claim with this \(d\).
+
+Suppose \(|A|=2^k\) with \(k\ge2\). A finite cyclic action preserves a positive-negative decomposition of the source. To obtain it, average a positive definite form over the finite group, use the self-adjoint operator representing the indefinite form with respect to that positive one, and separate its positive and negative eigenspaces. Diagonalize the action on the definite summands into circle characters in the Hermitian cases and into real rotation planes and sign lines in the orthogonal case. This uses the spectral theorem for an isometry of a definite form, which over a real closed field follows from diagonalization over \(K(i)\); in the quaternionic case, complex conjugate eigenvalues merge into quaternionic lines. All circle characters are powers of a faithful \(\chi:A\to U_1\). The \(U_1\)-torsor class induced by the source cocycle along \(\chi^j\) equals \([\delta]^j\) in the norm quotient. It is therefore trivial for even \(j\) and \([\delta]\) for odd \(j\). The signed rank of the odd-exponent blocks is exactly \(a(h)\), including both coordinates in each orthogonal plane.
+
+In the orthogonal case, the nontrivial sign lines are acted on by the sign character of \(A\) and are fixed by \(h\), since \(k\ge2\). Let \(\varepsilon\) be the square class of the induced sign cocycle. Its image in the norm quotient agrees with the class induced by \(\chi^{2^{k-1}}\), which is trivial. Hence \(\varepsilon\) is a norm. The number of sign lines is even because the source group is special orthogonal. Their combined scalar Witt correction is zero: their signed rank is even and \(2\langle1\rangle(\langle\varepsilon\rangle-1)=0\) by roundness. Thus in every case the total source correction is
+\[
+                      a(h)(e\cdot1)(\langle\delta\rangle-1).
+\]
+The two cases of the single-involution Witt comparison now give level \(er\), and the resulting split rank-one action yields the regular witness. The rational point assertion uses the two quadratic cocycles of the original constant cyclic group, indexed by \(1\) and \(h\), with negative ranks \(r\) and \(r+a(h)\).
+
+
+## Continued periods for the long-root and fifteen-mirror heights
+
+**Theorem (A second period for each mirror-circle trace).**
+
+Let \(F(v)\) be the angular conditional polynomial of a regular function on the compact quotient, after applying the left-circle Reynolds projection if necessary. On the octahedral long-root chart (H15), and on the icosahedral fifteen-mirror chart, respectively, one has
+\[
+        \int_1^3 F(w^2)\,dw=2\int_0^1 F(w^2)\,dw,\qquad
+        \int_1^5 F(w^2)\,dw=4\int_0^1 F(w^2)\,dw.
+\]
+The identities hold coefficientwise for a regular Laurent function, including any marked power. For either chart, and any \(b\ge1\) and nonzero real polynomial \(g\) with \(\deg g<b\), the conditional polynomial \(g(v)^m\mathcal L_{2bm}(\sqrt v)\) is outside the regular range at every positive even \(m\). Together with the coordinate-mirror range theorem, this excludes the powered Legendre realization on three of the exceptional height charts.
+
+We use the following algebraic fact about the angular quotient. Let \(\mathcal Q\) be the complex unit sphere, let \(\Gamma\subset\mathrm{SO}(3)\) be the rotation group, and let \(\Omega\) be its invariant algebraic area form. For any \(\Gamma\)-invariant regular function \(f\), with compact mean \(\lambda(f)\), the form \((f-\lambda(f))\Omega\) is the exterior derivative of a regular \(\Gamma\)-invariant one-form on \(\mathcal Q\). Indeed, each positive-degree spherical harmonic \(h\) of degree \(j\) has \(\Delta h=-j(j+1)h\), so a primitive for \(h\Omega\) is \(-\iota_{\nabla_{\mathcal Q}h}\Omega/[j(j+1)]\). The spherical gradient is regular on \(\mathcal Q\). Decompose the polynomial into spherical harmonics and average the primitive under \(\Gamma\).
+
+For any dominant algebraic map from an irreducible surface \(T\) to \(\mathcal Q/\Gamma\), the invariant primitive pulls back as a regular form on the smooth locus of \(T\). Here is a local verification. Choose a generic lift to \(\mathcal Q\) over a finite extension of the function field of \(T\) and normalize \(T\) in that extension. The normalization maps to \(\mathcal Q\) by the finite fibre product, so the pulled-back primitive is regular at its codimension-one points. At a divisor of the smooth locus of \(T\) a genuine pole of a rational one-form cannot disappear under finite pullback in characteristic zero. To see this, use a basis consisting of \(dt/t\) and regular tangential differentials at a uniformizer \(t\). In the extension \(t=s^e a\), with \(a\) a unit, \(dt/t=e\,ds/s+da/a\). The map on leading logarithmic coefficients is injective, by separability on tangential differentials and \(e\ne0\) on the normal coefficient. Thus a negative order in this logarithmic basis remains negative, and a logarithmic residue of order zero remains nonzero. Regularity at every divisor gives regularity on the smooth locus. Consequently on any closed smooth oriented real two-cycle in that locus, the pullback of \(f\Omega\) has integral equal to \(\lambda(f)\) times the integral of the pulled-back area form, by Stokes' theorem. The pullback identities initially computed at generic points extend across the cycle.
+
+For (H15) take \(T\) to be the smooth surface
+\[
+                 u^2+y^2=(1-w^2)(9-w^2).
+\]
+Set \(v=w^2\), \(a=3-v+u\), and use \(p,q,r,k\) from (H15). The signed angular invariant can be taken as \(J=wary/216\). In fact \(q=ay^2/864\), \(k=ra/6\), and the angular cubic discriminant is \(f=vrk/9\), giving \(J^2=qf\). These polynomials define a dominant map to the rotation quotient, since the inverse rational height and the formula for \(u\) recover \(v,u\) from the reflection invariants. The pulled-back area form is a fixed nonzero scalar times \(dw\wedge du/y\). This follows from the physical conditional density (H15) with the orientation retained, using \(u=\sqrt{(1-v)(9-v)}\cos\theta\), \(y=\sqrt{(1-v)(9-v)}\sin\theta\). On a physical open patch the absolute density identifies the ratio of the two real forms up to a constant sign. The ratio is rational, and the patch is Zariski dense, so the signed identity holds algebraically.
+
+Use the closed real two-cycle on this complex surface with \(1\le w\le3\), and \(u=i\rho\cos\theta,\ y=i\rho\sin\theta\), where \(\rho=\sqrt{(w^2-1)(9-w^2)}\). Both endpoint circles collapse smoothly, since the zeros of \(\rho^2\) are simple. In these coordinates the form \(dw\wedge du/y\) is \(-dw\wedge d\theta\). The angular average of the pullback of \(f\) on the continued circle equals \(F(v)\): expanding in \(u,y\), the circle average of every monomial is a polynomial in \((1-v)(9-v)\), with odd exponents integrating to zero. Hence the normalized period on the cycle is \(\frac12\int_1^3 F(w^2)\,dw\). The algebraic primitive argument identifies it with the physical mean \(\int_0^1 F(w^2)\,dw\).
+
+For the fifteen-mirror chart start with the surface \(u^2+y^2=(1-w^2)(25-w^2)\) and set
+\[
+ v=w^2,\quad d=v^2-22v+45,\quad
+ X=\frac{d+(9-v)u}{90},\qquad Y=\frac{(9-v)y}{2\alpha},\quad \alpha=3\sqrt5 .
+\]
+Take the double cover \(\xi^2=X\). The mirror formulas
+\[
+       p=((v-3)X+\xi Y)/24,\quad
+       r=3p(1-X)-X^2+X-16vX/45,\quad
+       J=4w(45p^2+13p+1-5r)\xi/\alpha
+\]
+define the dominant map to the oriented angular quotient. The inverse rational mirror height and the signed chart formulas recover the source coordinates generically up to finite choices. The polynomial relations hold by the physical chart, and this double cover is irreducible because \(X\) has simple zeros, as also seen on the cycle below. The pulled-back area form is a fixed nonzero scalar times the pullback of \(dw\wedge du/y\). As in the octahedral case, the real conditional density, now uniform in \(w,\theta\) and in the sign of \(\xi\), proves this algebraically on a physical open patch.
+
+Take \(1\le w\le5\) with \(u=i\rho\cos\theta,\ y=i\rho\sin\theta\) and \(\rho=\sqrt{(w^2-1)(25-w^2)}\) on the base. Lift the whole cycle to the double cover. The only branch points are \(v=11\pm2\sqrt{19}\), \(\cos\theta=0\), where the real and imaginary parts of \(X\) are transverse. At such a point \(d'(v)\ne0\), \(9-v\ne0\) and \(\rho\ne0\), so this follows by differentiating in \(w,\theta\). Locally the lifted cycle is the oriented simple branched cover \(\xi\mapsto\xi^2\) of a disk. Thus the lifted cycle is compact, closed, and smooth in the smooth locus of the algebraic surface. At the base endpoints \(X\) is nonzero, so there is no branching there. The normalized period on the lift is \(\frac14\int_1^5 F(w^2)\,dw\). Indeed the mean over the two signs of \(\xi\) reduces the integrand to a polynomial in \(X,Y,v,w\). Its circle averages are polynomial in \(w\) by the same expansion as on the physical chart, where they equal \(F(w^2)\). The algebraic primitive again proves equality with the physical mean.
+
+The period identities for the conditional polynomials extend to real closed fields by their rational integration formulas and specialization of finitely many coefficients. Finally, \(g(v)^m\mathcal L_{2bm}(\sqrt v)\) integrates to zero on the physical interval by Legendre orthogonality, and to a strictly positive number on the continued interval at even \(m\), by the same argument as for the coordinate mirrors. This proves the range obstruction.
+
+
+## Many simultaneous rotations in a finite abelian stabilizer
+
+**Theorem (A signed-rank criterion for abelian stabilizers).**
+
+For a classical sign torsor as in the block theorem over a real closed \(K\), let \(A\) be a constant finite abelian source subgroup and set \(V=A[2]\). For an element \(h\in V\), let \(a(h)\) denote its signed negative-eigenspace rank. Assume either that the source type is special unitary or quaternionic, that \(A\) is elementary abelian, or that in the orthogonal case \(A\) acts on definite rotation planes and fixed lines as in the finite toral theorem. Then \(X/A\) has a regular Mathieu–Zhao counterexample in either of the following cases.
+
+- For every \(h\in V\), \(a(h)\equiv0\bmod 2r\).
+- For \(r=2\), for every \(h\in V\), \(a(h)\not\equiv2\bmod4\).
+
+The diagonal quotient field used for these conclusions has level \(er\). Both conclusions descend to a finite source supergroup of odd geometric index. The criterion imposes congruences on the signed ranks of the involutions without a divisibility hypothesis on the separate character multiplicities.
+
+Pass to the two-primary subgroup of \(A\) and take the smallest permitted block size as in the constant cyclic argument. This removes the geometric central kernel of the generic \(S\times A\) action. In the unitary and quaternionic cases decompose into circle characters on signed lines. A common definite decomposition is obtained using an invariant positive form, and the commuting definite isometries diagonalize simultaneously over \(K(i)\). For quaternionic representations this can be seen in the defining complex representation: its simultaneous eigenspaces are paired under the quaternionic structure by complex conjugation, and on a real-character eigenspace one chooses a quaternionic orthonormal basis. In the orthogonal toral case use its given rotation planes. Because \(A\) is finite abelian, two circle characters have the same restriction to \(V\) exactly when their ratio is a square. Hence they induce the same class in \(F^\times/N F(i)^\times\), where \(F\) is the generic invariant field. The source correction may use any square-class representatives of those norm classes. Changing a representative does not change the block scalar Witt class, since the scalar dimension per block is a multiple of two. For elementary abelian sign actions use the induced square classes themselves.
+
+Choose a basis of \(V\) and the dual sign characters, with representative scalars \(\delta_1,\ldots,\delta_l\) for their induced classes. Write \(d_j=\langle\delta_j\rangle-1\) in the Witt ring. A character corresponds to a subset \(C\) of the dual basis, and its induced form may be represented by \(\langle\prod_{j\in C}\delta_j\rangle\). Let \(a_C\) be the signed rank of all the blocks with that character restriction. The correction to the Witt identity is \((e\cdot1)\eta\) where
+\[
+           \eta=\sum_{\emptyset\ne J\subseteq\{1,\ldots,l\}}
+                       A_J\prod_{j\in J} d_j,\qquad
+           A_J=\sum_{C\supseteq J}a_C .
+\]
+For the involution with basis support \(I\), its signed rank is
+\[
+            a(h_I)=\sum_{\emptyset\ne J\subseteq I}
+                                   (-2)^{|J|-1}A_J.
+\]
+This follows by expanding the indicator that a character has odd intersection with \(I\).
+
+Write \(b=\log_2 r\), \(u=\log_2(er)\). If all \(a(h_I)\) are divisible by \(2r\), subset inversion shows that \(2^{|J|-1}A_J\) is divisible by \(2r\). Each summand of \(\eta\) therefore lies in \(I_{\mathrm W}^{b+2}\), where \(I_{\mathrm W}\) is the fundamental ideal: for \(|J|\le b+2\), its coefficient is divisible by \(2^{b+2-|J|}\), and larger \(|J|\) already give the required power. Consequently the correction lies in \(I_{\mathrm W}^{u+2}\). The block theorem comparison gives \(s(F)=er\).
+
+For \(r=2\) suppose no \(a(h)\equiv2\bmod4\). The parity \(a(h)\bmod2\) is a linear functional on \(V\). If it vanishes identically, use the first case. Otherwise take the basis so it is the first coordinate. Then \(A_{\{1\}}\) is odd, \(4\mid A_{\{j\}}\) for \(j>1\), and \(2\mid A_{\{i,j\}}\) when \(i,j>1\) by applying the signed-rank formula to \(h_i+h_j\). Modulo \(I_{\mathrm W}^3\), \(\eta\) is therefore \(d_1 B\) with \(B\) of odd rank. The scalar comparison in the block proof puts \((e\cdot1)\eta\) in \(I_{\mathrm W}^{u+1}\), since the target term belongs to \(I_{\mathrm W}^{u+2}\) and the original signature difference belongs to \(I_{\mathrm W}^{u+1}\). Reducing modulo \(I_{\mathrm W}^{u+1}\) now puts \((e\cdot1)d_1\) in that ideal. This form is similar to a Pfister form of dimension \(2e=2^u<2^{u+1}\), so it is hyperbolic by the Hauptsatz. Thus \((e\cdot1)\eta\in I_{\mathrm W}^{u+2}\) also in the second case. The same comparison gives the level, and the generic split action and odd descent give the regular witness.
+
+For instance, in quaternionic rank ten, use \(A=(C_4)^2\) and give the three nontrivial sign characters on \(V=(C_2)^2\) signed ranks \(1,3,-2\), using any lifts to circle characters on \(A\). The four remaining positive coordinates have trivial character. The three nontrivial involutions have signed ranks \(4,-1,1\), so this meets the second criterion. The only possible negative ranks of the source twists are \(2,6,1,3\), all positive. The quotient is point-free. The character restrictions separate the three occupied nontrivial character spaces, each of which is definite, so the commuting identity component is compact.

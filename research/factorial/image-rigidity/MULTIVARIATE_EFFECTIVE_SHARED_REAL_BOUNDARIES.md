@@ -5,7 +5,7 @@ curvature, and chord-centered field of the
 [shared saddle comparison](MULTIVARIATE_UNIFORM_SUPERCRITICAL_SUPPORTS.md).
 In particular \(w_N-w_n=-\Delta\log(N/n)\) at a common root.
 
-**Theorem.** For positive rational \(W_-\le W_+\) and
+**Theorem.** For positive rational \(W_-\le W_+\) and rational
 \(0<\kappa<1\), a terminating finite search computes a uniform
 consecutive coprimality cutoff for every fully shared ordinary
 profile on \(W_-\le W\le W_+\) satisfying either
