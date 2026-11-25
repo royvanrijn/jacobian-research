@@ -53,7 +53,7 @@ Scope limits:
 - A nonempty unramified boundary anchors every polar ramified prime by n>q^2. Minimal Borisov Case2 folds are excluded; remaining polar folds have transverse degree one and types (2,1,5) or (p,p+1,p^2+p+1). A smooth affine noncontracting survivor, without a supplied Keller target pair, shows where finite-target trace compatibility is still required.
 - The ordinary trace defect has an intrinsic logarithmic spectrum -i/e and normalized trace -rank/2. A generic target derivative has a non-dense maximal Bergman domain in the ramified case; dense-domain arguments cannot supply automatic integrality without proving the inverse condition.
 - Whole root charts transfer any r>1 unramified multiplicity to an actual degree-rd plane Keller map with cyclic deck subgroup and a specified affine pseudo-plane source image. The new marked ramified prime has nonpolar common coordinate, and selected opens are not full finite intermediate normalizations. This architecture remains unexcluded.
-- The bounded cotangent converse sends HC4 through potential degree d+1 to planar inversion through degree d. Tang supplies the forward direction. Published planar inversion through 104 gives HC4 through 105 under Tang. The preprint route gives HC4 through 108 under both premises and forces base degrees 72 and 108 for any hypothetical HC4 counterexample of potential degree at most 125.
+- Cotangent doubling sends HC4 through potential degree d+1 to planar inversion through degree d. Tang gives the other direction. The published planar degree-104 theorem gives HC4 through 105 under Tang. The residual Laurent route gives HC4 through 125 under Tang and its stated external inputs.
 
 Tracked obligations (computed states):
 

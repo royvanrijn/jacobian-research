@@ -68,6 +68,10 @@
     {
       "path": "research/arithmetic/sources/voight-quaternion-algebras-author.pdf",
       "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_989_delta.json.xz",
+      "sha256": "6e6d4db857846d68ebdb48ede230ff6126fd26a0840ae91d61be8e61194d8e67"
     }
   ]
 }

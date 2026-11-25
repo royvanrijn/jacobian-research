@@ -479,7 +479,7 @@ in its dictionary at least \(q_{i,*}\). The count of common
 complete columns has normalized exponent at most
 \[
  \sum_{i=1}^m u_i + \frac{1}{L\prod_{i=1}^m q_{i,*}}+o(1).
- \tag{MP3}
+ \tag{MP2}
 \]
 The constants above can depend on the degrees, held fixed
 before the height limit. For two rows the rectangular bound
@@ -2310,7 +2310,7 @@ three letters (including empty blocks), of total normalized
 root cost \(p<c\) and total numerical weight \(w\). Then
 \[
  w+s_*(c-p)\le1.
- \tag{MP1}
+ \tag{MXP1}
 \]
 In particular the three distinguished blocks can all be atomic.
 The weighted contribution \(s_*(c-p)\) is available from
@@ -2350,7 +2350,7 @@ Indeed its count is \(\int\prod_i |S_i|^{m_i}\).
 
 ### One distinguished lock per letter
 
-If (MP1) fails, choose \(s<s_*\) and \(0<z<c-p\) with
+If (MXP1) fails, choose \(s<s_*\) and \(0<z<c-p\) with
 \(w+sz>1\). A compact positive continuity band \([s,S]\)
 above this lower cutoff has positive nonatomic mass on
 some letter. With sufficiently many copies of that letter,
@@ -2401,18 +2401,18 @@ at most
 At the exact endpoint first fix the positive numerical
 and cost margins and then let the graph losses decrease.
 Both exponents fall strictly below the mixed moment
-lower bound, which proves (MP1).
+lower bound, which proves (MXP1).
 
 ### Consequences for degree profiles
 
 For any finite collection of atomic windows of combined
-mass below \(c\), (MP1) bounds the selected excess
+mass below \(c\), (MXP1) bounds the selected excess
 weight above \(s_*\) by \(1-cs_*\). When the combined atomic mass
 above \(s_*\) is strictly below \(c\), increasing finite
 selections gives the bound for the whole upper tail.
 In particular, if \(s_*=6\), an atom at \(r>6\)
 cannot occur. Its mass is at most \(1/r<c\) by the
-numerical moment, so selecting it would violate (MP1).
+numerical moment, so selecting it would violate (MXP1).
 Hence all three full degree measures are supported in
 \([0,6]\) in this case.
 
@@ -2454,7 +2454,7 @@ mixed moment argument, using \(m\) total slots. Then
  \ \ge\
  \min\left\{\frac{(W_{\rm lock}-1)_+}{S_{\rm sum}},
                 \frac{c-\mu+\rho}{m-1}\right\}.
- \tag{MP2}
+ \tag{MXP2}
 \]
 If \(W_{\rm lock}>1\), strip overlap of root mass less
 than \(\xi\) on each outside slot, for any fixed
@@ -2486,7 +2486,7 @@ On at least one letter require nonatomic mass above
 \(9/10000\) in \([399/100,4]\). Then
 \[
  d<\frac13-\frac1{50000000}.
- \tag{MP2}
+ \tag{MXP3}
 \]
 This sector contains the symmetric high-atom profile
 used to separate (RP3) from the independent tests.
@@ -2519,7 +2519,64 @@ the gap available from the record count is
 \]
 Both branches contradict the mixed moment lower bound.
 All the comparisons are strict under arbitrarily small
-truncation and box losses, proving (MP3).
+truncation and box losses, proving (MXP3).
+
+### Atomic factor information in complete-label graphs
+
+At the minimum nonatomic endpoint, take a graph whose edge
+exponent is arbitrarily close to \(2c\) and complete part
+caps are \(c+o(1)\). Choose any prescribed root block on
+each of a fixed set \(I\) of letters, with numerical weights
+\(w_i\). Let \(F_i\) denote the complete product of that
+block, as a function of the chosen complete vertex, and
+let \(w=\sum_{i\in I}w_i\).
+For a uniformly sampled edge write \(N_0=L\log X\) and
+\(\mathcal I_i=-N_0^{-1}\log\Pr(F_i)\).
+With \(s_*=\max_j\sup\operatorname{supp}\nu_{j,\rm na}>0\),
+the limiting weights satisfy
+\[
+ \liminf\sum_{i\in I}\frac{H(F_i)}{N_0}
+ \ \ge\ \max\left\{0,\,
+       c-\frac{(1-w)_+}{s_*}\right\}.
+ \tag{MXP4}
+\]
+The same lower bound, minus any fixed positive tolerance,
+holds for \(\sum_{i\in I}\mathcal I_i\) outside an
+exponentially sparse edge subset, with sufficiently small
+initial graph and atom-window losses.
+
+Indeed, write \(u\) for the displayed candidate lower
+bound. If \(u>0\), cover the event
+\(\sum_{i\in I}\mathcal I_i\le u-\epsilon\)
+by finitely many information boxes with nonnegative upper
+corners \(u_i\) satisfying \(\sum_i u_i\le u-\epsilon/2\).
+On each such box, which selects edges of the complete
+graph, the block value on letter \(i\) has dictionary
+size at most \(n^{u_i}\), by the probability definition.
+The proof of (MXP1) uses only the dictionary
+sizes of its distinguished slots, not the normalized raw
+root costs that bounded them. For small fixed graph loss,
+choose a nonatomic band lower degree \(s<s_*\) close to
+\(s_*\), and filler mass just below \(c-\sum_i u_i\).
+Then the blocked mixed additive tuple has total root
+dictionary cost strictly below \(c\) and numerical weight
+strictly above one. The same overlap and entropy argument
+gives a fixed loss from exponent \(2c\) for the selected
+edges. Summing the finitely many boxes proves sparsity,
+and taking expectations of the nonnegative information
+variables proves the stated lower bound.
+
+For the symmetric profile \(c\delta_3+c\operatorname{Unif}[2,4]\)
+use its full atomic windows as the three possible blocks.
+Each has weight \(1/2\). The inequality gives normalized
+information at least \(1/24\) for every individual atomic
+block, at least \(1/6\) for every pair, and hence total
+normalized entropy at least \(1/4\). The same lower
+bounds hold for the grouped atomic radical roots: given
+the grouped root, allocation of its prime factors to
+the fixed atom-window positions has only divisor-many
+possibilities, so the atomic full block function is
+determined up to conditional entropy \(o(N_0)\).
 
 ## Converting high-degree blocks to common factors with diffuse locks
 
@@ -2548,7 +2605,7 @@ weight as \(W\), and each complete term as \(r_i+Qy\)
 with \(r_i\) fixed on its letter. On each part the \(y\)'s
 lie in an interval of length at most \(X/Q\) up to the
 height factor of the original box. The mixed moment
-argument for (MP1) goes through for the reduced sets.
+argument for (MXP1) goes through for the reduced sets.
 Their three-term equation has a fixed additive offset,
 which adds a complex exponential of modulus one to the
 triple Fourier integrand. Balanced mixed relations have
@@ -2591,7 +2648,7 @@ The dictionary cost is at most \(c-\kappa\) up to
 rounding from the outside positions.
 
 Count and strip the outside overlaps by the union
-argument for (MP1). A uniform small overlap threshold
+argument for (MXP1). A uniform small overlap threshold
 makes their numerical loss less than one third of the
 weight margin. For the other \(k\) slots use a fixed
 threshold \(\xi>0\) on the numerical weight of each
@@ -2611,7 +2668,7 @@ height margin.
 The residue count (MS17), with the strictly smaller
 record cost than \(c\), bounds these tuples below the
 mixed moment exponent. The outside-overlap branch
-also has a strict deficit by (MP1). Consequently the
+also has a strict deficit by (MXP1). Consequently the
 mixed moment count persists on tuples containing a
 pair of residual-block slots with full gcd of weight at
 least \(\xi\). If \(k=1\), there is no such pair and the
@@ -2646,7 +2703,7 @@ most \(S b_0+o(1)\), proving (MC1).
 ### Support and further packing after conversion
 
 The same synchronized affine coordinates in the proof of
-(MP1) give
+(MXP1) give
 \[
  W+w+s_*(c-p)\le1
  \tag{MC2}
@@ -2661,7 +2718,7 @@ Taking \(p=w=0\) recovers \(W+cs_*\le1\).
 
 In particular every atom at \(r>12-s_*\) can be made
 common up to arbitrary tolerance. Its mass \(\beta\)
-is at most \(1/r<c\), and (MP1) gives
+is at most \(1/r<c\), and (MXP1) gives
 \((r-s_*)\beta\le1-cs_*\). Therefore
 \(cr-(r-s_*)\beta\ge c(r+s_*)-1>1\).
 Use a sufficiently small continuity window about \(r\)
@@ -3451,6 +3508,92 @@ reconstructed for each fixing. Their exponent is at
 most \(z=0.16\) up to the rounding losses, also strictly
 below the star exponent. This disproves the supposed
 range for \(d\), proving (DN5).
+
+## A uniform obstruction to bounded-rank additive progressions
+
+For every fixed rank bound \(R\ge1\) there is
+\(\delta_R>0\) with the following property at
+\(d=1/3,\Gamma=1/2\). Within any one complete letter, a
+generalized arithmetic progression of rank at most \(R\)
+and coefficient-box volume at most
+\(X^{(c+\delta_R)L}\) contains at most
+\(X^{(c-\delta_R+o(1))L}\) distinct complete values,
+where \(c=1/6\). The progression may depend on the
+height and the box. The result applies to arbitrary
+presentations, including ones that represent a value
+more than once.
+
+To choose parameters uniformly, use (DN1) and (MS11).
+A fixed positive lower bound for the nonatomic moment,
+together with nonatomic mass \(c\) and support in
+\([0,6]\), supplies an absolute \(b_0>0\) and \(H>0\)
+so that a compact continuity band within \([b_0,7]\)
+has nonatomic mass at least \(H\) on every letter.
+Indeed take a sufficiently small lower cutoff that its
+complement carries at least half the moment, and then
+divide by the upper degree bound to obtain a mass bound.
+Let \(k_0\in(0,1]\) be the constant in the
+[one-letter real strip count](#counting-distinct-terms-and-ratios-in-strips).
+Fix \(a_0>0\) below \(\min(H/4,c/(4R))\), choose
+\(B>64R/(k_0 b_0)\) with \(B\ge2\), and put
+\(a_j=a_0B^{-j}\) for \(0\le j\le R+1\).
+
+Write the progression as \(\{b+\sum_i d_i u_i:
+0\le u_i<N_i\}\), and put \(n=X^L\). One of the
+\(R+1\) intervals \([a_{j+1},a_j)\) contains no side
+exponent \(\log N_i/\log n\). Thus each side has
+exponent below \(a_{j+1}\) or at least \(a_j\).
+Put \(p=a_j/4\), \(\tau=b_0p/4\), and
+\(\xi=b_0p/28\).
+
+If one side of exponent at least \(a_j\) has step
+\(|d_i|\ge X^{1-\tau}\), hold the other coefficients
+fixed. There are at most \(n^{c+\delta_R-a_j}\) such
+slices. If \(|d_i|>2X\), each slice contains at most one
+eligible value for large \(X\). Otherwise \(|d_i|\) has
+polynomial height and every slice lies in one residue
+class modulo it. Select outside roots of normalized
+cost \(p\) in the supplying band. The divisor-allocation
+bound discards at most \(n^{c-\xi+o(1)}\) values with
+radical overlap of root mass at least \(\xi\) with
+\(|d_i|\), up to arbitrarily small window losses.
+Strip these fixed step primes on the other values.
+There is weight at least \(b_0p-7\xi\) left in the
+stripped full blocks. Their product with \(|d_i|\)
+exceeds the complete height range since
+\(1-\tau+b_0p-7\xi>1\). Each slice and block record
+therefore contains at most one complete value.
+The good exponent is at most \(c+\delta_R-a_j+p\).
+
+If every side of exponent at least \(a_j\) has step
+below \(X^{1-\tau}\), fix the sides of exponent below
+\(a_{j+1}\). Their total cost is at most \(R a_{j+1}\).
+Every remaining slice has diameter at most
+\(R n^{c+\delta_R} X^{1-\tau}\). At sufficiently small
+\(L\) this has relative width at most \(O(X^{-\tau/2})\)
+among the complete values of the box, which have
+numerical height tending to one. The strip estimate
+bounds the exponent by
+\[
+ c-k_0\tau/2+R a_{j+1}<c-k_0\tau/4 .
+\]
+All margins are uniform once \(R\) is fixed, since
+\(a_j\ge a_R>0\). Take \(\delta_R\) small relative to
+these margins and absorb the graph and truncation
+losses. This proves the assertion.
+
+In particular a subset of normalized size \(c-o(1)\)
+of any complete letter has additive doubling tending
+to infinity. For a fixed doubling bound, the
+Green–Ruzsa form of Freiman's theorem puts the subset
+inside a proper progression of bounded rank and volume
+a bounded multiple of its cardinality. Its finite
+subgroup is trivial in the integers, and the progression
+contradicts the count above. This conclusion applies
+to low-degree profiles as well. The rank bound depends
+on the doubling bound, so the argument permits
+unbounded doubling with zero limiting exponent.
+[Green–Ruzsa, Theorem 1.1](https://arxiv.org/pdf/math/0505198v2)
 
 ## Limits of the graph condition
 

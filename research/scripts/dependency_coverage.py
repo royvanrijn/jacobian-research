@@ -7,16 +7,20 @@ those statements or certify complete expansion of their mathematical imports.
 from __future__ import annotations
 
 from collections import Counter
-import hashlib
 import json
 import os
 from pathlib import Path
 import re
 import subprocess
 
+from external_artifacts import artifact_manifest, repository_path, sha256_file
+
 ROLES = {"proof", "manuscript", "formal-support", "imported-source",
          "scope", "evidence", "reference", "documentation"}
-SUFFIXES = {".md", ".tex", ".lean", ".typ", ".py", ".c", ".cpp", ".json", ".pdf", ".txt", ".toml", ".html", ".gz", ".xz", ".bib", ".bbl", ".zip", ".yml", ".yaml"}
+SUFFIXES = {
+    ".md", ".tex", ".lean", ".typ", ".py", ".c", ".cpp", ".json", ".pdf", ".txt",
+    ".toml", ".html", ".gz", ".xz", ".bib", ".bbl", ".zip", ".yml", ".yaml",
+}
 GENERATED = {"README.md", "STATUS.md", "SCOPES.md", "DEPENDENCIES.md", "COVERAGE.md", "REFERENCES.md", "BOUNDS.md", "OPPORTUNITIES.md"}
 GUIDES = {"DEPENDENCY_GUIDE.md", "REPRODUCE.md", "MATH_STATUS.json"}
 TOPICS = {"moments", "factorial", "jacobian", "hessian", "dixmier",
@@ -28,23 +32,27 @@ class CoverageError(ValueError):
 
 
 def inventory_paths(root: Path, repository: Path) -> list[str]:
-    """Ask Git for retained current mathematical and scope documents.
+    """Find retained current mathematical and scope documents.
 
     Generated navigation, tooling documentation and immutable deposited archives
-    are excluded explicitly. Current paper revisions remain in the inventory.
+    are excluded explicitly. Current paper revisions and manifest entries for\n    externalized research evidence remain in the inventory.
     """
     root, repository = Path(root).resolve(), Path(repository).resolve()
     names = subprocess.check_output(
         ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard",
          "--", "research", "results", "unpublished"], cwd=repository).decode().split("\0")
+    _, external = artifact_manifest(repository)
     selected = set()
-    for name in names:
-        path = repository / name
+    for name in set(names) | external.keys():
         parts = Path(name).parts
-        if not name or not path.is_file() or (path.suffix.lower() not in SUFFIXES
-                                              and path.name not in {"lean-toolchain", "Makefile"}):
+        if not parts or parts[0] not in {"research", "results", "unpublished"}:
             continue
-        if "published" in parts or ".lake" in parts or "__pycache__" in parts:
+        path = repository / name
+        if name not in external and not path.is_file():
+            continue
+        if path.suffix.lower() not in SUFFIXES and path.name not in {"lean-toolchain", "Makefile"}:
+            continue
+        if {"published", ".lake", "__pycache__"}.intersection(parts):
             continue
         if parts[0] == "research":
             relative = path.relative_to(root)
@@ -59,9 +67,12 @@ def inventory_paths(root: Path, repository: Path) -> list[str]:
 
 
 def _read(root: Path, repository: Path, value: str) -> Path:
-    path = (root / value).resolve()
-    if Path(value).is_absolute() or not path.is_relative_to(repository.resolve()):
-        raise CoverageError("coverage path escapes repository: " + value)
+    try:
+        if Path(value).is_absolute():
+            raise ValueError(value)
+        path = repository_path(root / value, repository)
+    except ValueError as error:
+        raise CoverageError("coverage path escapes repository: " + value) from error
     if not path.is_file():
         raise CoverageError("missing coverage source: " + value)
     return path
@@ -115,6 +126,7 @@ def coverage_state(data: dict, graph, paths: list[str] | None = None) -> dict:
     """Return omissions and freshness, without changing files or recorded states."""
     root, repository = graph.root, graph.repository
     wanted = set(inventory_paths(root, repository) if paths is None else paths)
+    _, external = artifact_manifest(repository)
     coverage = data.get("graph", {}).get("coverage", {})
     errors, rows = [], []
     if coverage.get("schema_version") != 1:
@@ -144,7 +156,10 @@ def coverage_state(data: dict, graph, paths: list[str] | None = None) -> dict:
         except CoverageError as error:
             errors.append(str(error))
             continue
-        actual = hashlib.sha256(path.read_bytes()).hexdigest()
+        actual = sha256_file(path)
+        external_digest = external.get(Path(os.path.relpath(root / value, repository)).as_posix())
+        if external_digest is not None and actual != external_digest:
+            errors.append("changed external artifact bytes: " + value)
         if actual != record.get("sha256"):
             errors.append("changed coverage source: " + value)
         role = record.get("role")

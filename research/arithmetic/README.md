@@ -313,6 +313,10 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The limiting small-budget coefficient 1/3 for primitive abc triples | Internal result | proved | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
 | Strict residual mass in balanced limiting abc boxes | Internal result | proved | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
 | Balance and residual mass at normalized exponent one third | Internal result | proved | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| Small-budget abc bound for primitive powerful triples | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Strict small-budget saving for primitive powerful triples | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Primitive representations of a full prescribed target | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Sharp large-order powerful triple count with arbitrary common divisor | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
 | A sparse exact improvement at unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
 | Explicit valuation-degree window exclusions at the one-third boundary | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | Local mass restrictions at equality of the nonatomic total | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
@@ -371,6 +375,18 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Partial degree grouping on complete columns | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A count saving in a partial-group sector | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A joint support restriction from common factors on several letters | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A trimmed packing bound using mixed additive moments | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A deficit inequality for balanced profiles | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A quantitative saving in a three-letter mixed-lock sector | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Converting high-degree blocks to common factors with diffuse locks | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Support and further packing after common-factor conversion | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| An iterated inequality for the full atomic spectrum | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Selective phase quantiles on complete columns | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A count saving from selective phase grouping with one supplying row | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A uniform obstruction to bounded-rank additive progressions | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Growing additive doubling of near-capacity complete subsets | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Atomic factor information in complete-label graphs | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A small-budget saving with two full letters | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
 
 **Computed obligations:** 103 unresolved; 18 resolved within their exact scope.
 
@@ -571,12 +587,12 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Bound the ordered distinct unit collisions c_1^2 d_1^3 = c_2^2 d_2^3 modulo b^3 summed over squarefree b between B and 2B, with squarefree d_i comparable to B and c_i comparable to B^(3/4), by O_epsilon(B^(2+epsilon)). The current bound is O_epsilon(B^(71/28+epsilon)). A sufficient asymmetric estimate for the full one-third pointwise goal is equation (9).](ERDOS_943_OFF_DIAGONAL_COLLISIONS.md) — GAP-ARITH-ERDOS943-OFF-DIAGONAL-TWO
 - **mathematical / open:** [At T comparable to N^(1/5), prove O_epsilon(T^(2-eta+epsilon)) compatible distinct squarefree kernel pairs with unit fraction witnesses of height O(T^2), for some absolute 0<eta<=1. The current mean is O_epsilon(T^(1+epsilon)) and the pointwise construction attains order T. This estimate would improve the square-full balanced box via the kernel graph.](POWERFUL_SUM_GRAPHS.md) — GAP-ARITH-ERDOS943-POINTWISE-KERNEL-PAIR-SAVING
 - **mathematical / open:** [Bound the number of simple six-cycles in every balanced coprime square-full kernel graph by O_epsilon(T^(2+epsilon)) with T comparable to N^(1/5). The current bound is of the desired order on average, while the pointwise codegree bound gives O_epsilon(T^(3+epsilon)).](ERDOS_943_SIX_CYCLES.md) — GAP-ARITH-ERDOS943-BALANCED-SIX-CYCLE-POINTWISE
-- **mathematical / open:** [Improve the all-fixed-offset exponent error from O_(u,v)(r^(-11/5)) to O_(u,v)(r^(-5/2)).](../../unpublished/powerful-number-representations/main.tex) — GAP-ARITH-POWERFUL-FIXED-OFFSET-SHARP-ERROR
+- **mathematical / open:** [For unequal fixed offsets u>v, improve the error in the aligned common-neighbor graph argument itself from O_(u,v)(r^(-11/5)) to O_(u,v)(r^(-5/2)) after the leading saving 2/r^2. The numerical count at that threshold follows from the stronger abc endpoint bound.](POWERFUL_MONOMIAL_TAYLOR_REFINEMENT.md) — GAP-ARITH-POWERFUL-FIXED-OFFSET-SHARP-ERROR
 - **mathematical / open:** [Prove that for every fixed 0<lambda<1 only finitely many positive primitive triples a+b=c satisfy rad(abc)<c^lambda.](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) — GAP-ARITH-ABC-CONJECTURE
 - **verification / open:** [Audit the source proof of Soulé arXiv:2611.05217v1 Theorem B and its preceding arithmetic-geometric estimates before relying on c<<R^(24+epsilon) for all positive primitive triples.](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) — GAP-ARITH-ABC-SOULE-POINTWISE-AUDIT
 - **verification / open:** [Obtain review outside the project of the arithmetic hypotheses and proof of the FullOC collision inequalities and their application to the 7/12 counting bound. The scoped internal arithmetic review and finite exact replays are recorded.](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) — GAP-ARITH-ABC-ZENG-ARITHMETIC-APPLICATION
 - **mathematical / open:** [Fix delta=1/8. For N comparable to T5, bound by O_epsilon(T^(2-eta+epsilon)) for some absolute eta>0 the distinct ordered squarefree unit kernel pairs having SOME reduced unit witness <=4T² but NO such witness <=T^(9/8). This is an open frequency bound for the precise complement, not all long witness tuples. Theorem7 identifies its conditional relation to the existing full-pair target.](ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md) — GAP-ARITH-ERDOS943-LONG-COMPLEMENT-KERNEL-PAIR-SAVING
-- **mathematical / open:** [Determine the optimum of the grouped-root exponent program and obtain stronger counts near radical budget one. The six-index grouped program still permits D=4/7, while the largest-letter tail lock excludes all lifts of that witness. Determine how to incorporate the actual largest height into a new global optimization.](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) — GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING
+- **mathematical / open:** [Improve the internally certified unit-budget exponent 7133338393/13333343040 for primitive positive abc triples. The sparse refinement of the ordered-tall tree already improves the earlier 107/200 and 27/50 levels.](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) — GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING
 - **mathematical / open:** [Can the exact NO-short/SOME-full kernel-pair complement be covered by uniformly few actual Q-auxiliary curves whose cusp remainders retain a sufficient power of N? See GAP-ARITH-ERDOS943-ECONOMICAL-CONTENT-RETAINING-AUXILIARY-COVER.](ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md) — GAP-ARITH-ERDOS943-ECONOMICAL-CONTENT-RETAINING-AUXILIARY-COVER
 - **mathematical / open:** [Prove a positive-saving content-aware total capacity for ACTUAL covers of the exact NO-short/SOME-full complement at delta1/8.](ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md) — GAP-ARITH-ERDOS943-POSITIVE-SAVING-ACTUAL-CURVE-CAPACITY
 - **mathematical / open:** [Bound the actual cycles with both kernel lcms>8T^2 after removing the singular g_*<=sqrt(T) sector; on odd prime targets proper-power product ratios may also be removed.](ERDOS_943_SIX_CYCLES.md) — GAP-ARITH-ERDOS943-BALANCED-SIX-CYCLE-RESIDUAL

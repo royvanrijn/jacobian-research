@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <iostream>
 #include <numeric>
+#include <string_view>
 #include <vector>
 
 using std::int64_t;
@@ -235,7 +236,12 @@ bool coprime_mod(std::vector<int> dividend, std::vector<int> divisor) {
 }
 
 
-int main() {
+int main(int argc, char** argv) {
+    const bool list_pairs = argc == 2 && std::string_view(argv[1]) == "--list-gcd-pairs";
+    if (argc != 1 && !list_pairs) {
+        std::cerr << "Usage: " << argv[0] << " [--list-gcd-pairs]\n";
+        return 2;
+    }
     for (int p = 2; int64_t(p) * p <= modulus; ++p) {
         if (modulus % p == 0) return 1;
     }
@@ -289,6 +295,13 @@ int main() {
               << "Supports reaching degree tests: " << refined_pairs << '\n'
               << "Excluded by degree and prime blocks: " << block << '\n'
               << "Excluded by Newton allocations: " << polygon << '\n';
+    if (list_pairs) {
+        for (int n = first_terminal; n <= last_terminal; ++n) {
+            for (const auto& [a, d] : survivors[n]) {
+                std::cout << "Replay pair " << n << ' ' << a << ' ' << d << '\n';
+            }
+        }
+    }
     std::vector<int> inverses(last_terminal + 1);
     for (int k = 1; k <= last_terminal; ++k) inverses[k] = inverse_mod(k);
     int64_t modular = 0, unresolved = 0;

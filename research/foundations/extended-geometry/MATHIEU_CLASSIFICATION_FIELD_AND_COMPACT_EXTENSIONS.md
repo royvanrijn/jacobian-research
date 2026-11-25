@@ -1542,6 +1542,135 @@ that descends to the original rotation quotient and is regular on the product is
 
 In the regular rotation-invariant Laurent ring write such a function as $H_0(p,q,t)+JH_1(p,q,t)$, with polynomial dependence on $p,q$ and Laurent dependence on $t$. The even and odd parts under inversion can be considered separately, since inversion commutes with the half-turn. The even part is scalar by the preceding reflection test. For the odd part, the half-turn reverses $s=3J/(2p)$. Hence $pH_1(p,vp/9,t)$ is an odd polynomial in $d=p-A(v)$ with coefficients in $K[t,t^{-1},v]$. It is therefore $(p-A(v))H(v,u,t)$ for a polynomial in $v,u$ with Laurent coefficients in $t$. As $p\to0$ at generic $q,t$, the left side vanishes, while $p-A(v)$ has a pole of order two. If $H$ is nonzero, its highest part in $v,u$ gives a nonzero leading coefficient at that pole by $u/v\to-3q/4$. This is impossible and the odd part is zero.
 
+### The two octahedral arrangements and a uniform conditional coordinate
+
+The three coordinate mirrors and the six long-root mirrors of $B_3$ give different rational heights. On the unit sphere, put $p=p_2$, $q=p_3$, and let $f$ be the discriminant of $Z^3-Z^2+pZ-q$. Set
+$$
+ r=1-3p,\qquad k=p-9q,\qquad X=\frac{9q}{p},\qquad V=\frac{9f}{rk}.
+$$
+Here $X$ is the height from the coordinate mirrors, and $V$ is the squared height from the long-root mirrors. In fact the product of the long-root linear forms is, up to sign, the Vandermonde in the three squared coordinates. Its square is $f$, and the squared norm of its gradient is $4rk$ on the sphere, by expansion in the elementary symmetric functions.
+
+**Theorem.** The joint law of $(X,V,1-X-V)$ is Dirichlet with parameters $(1/2,1/2,1/2)$. There is also a joint law retaining all the reflection-invariant coordinates. Put
+$$
+       S=\frac{2rp}{k},\qquad
+       B=\frac{X}{5-2(S+S^{-1})}.
+$$
+Then $\sqrt S$ is uniform on $[1/\sqrt 2,\sqrt 2]$ and $B$ is independent of $\sqrt S$ with the arcsine law on $[0,1]$. The original angular coordinates are recovered by
+$$
+       p=\frac{(2-S)(1+(2S-1)B)}{6},\qquad
+       q=\frac{(2-S)(2S-1)}{9S}\,Bp.                              \tag{H14}
+$$
+Thus every joint moment of $p,q$ is an integral against an independent uniform and arcsine pair. No identification of two sheets is required in (H14).
+
+To prove this, use the density $(qf)^{-1/2}$ in $(p,q)$, up to normalization. In $(r,k)$ the equation of the level $V=v$ is
+$$
+        27f=-9k^2+12rk+4r^3-4r^2=3vrk.
+$$
+Put $u=6k/r-3+v$ and $L^2=(1-v)(9-v)$. The inverse formulas are
+$$
+ \begin{aligned}
+ r&=\frac{(u-1)^2-v^2+8v}{16},&
+ k&=\frac{r(3-v+u)}6,\\
+ p&=\frac{(3-v+u)(5-v-u)}{48},&
+ q&=\frac{(3-v+u)(L^2-u^2)}{864}.
+ \end{aligned}                                                    \tag{H15}
+$$
+The determinant of $(v,u)\mapsto(r,k)$ is $k/8$. As $f=vrk/9$, substituting in the density gives a constant multiple of $dv\,du/\sqrt{v(L^2-u^2)}$. The entire region $0<v<1$, $-L<u<L$ is attained. Indeed $3-v>L$ and $5-v>L$ there, so $p,q$ and $f$ are positive. The cubic has three distinct real roots of sum one and positive second and third elementary symmetric functions. They must all be positive, since two negative roots and a positive sum would make the second symmetric function negative. Conversely on the regular compact image, $v>0$, $3-v+u>0$ since $k/r>0$, and $5-v-u>0$ since $p>0$. Thus $v<4$, and $L^2-u^2>0$ then forces $v<1$. This verifies the ranges needed for the change of variables. It follows that $v$ has the squared-uniform law and $u$ at fixed $v$ has the arcsine law on $[-L,L]$.
+
+Write $a=5-v$, so $L^2=a^2-16$. By (H15),
+$$
+              x=X=\frac{L^2-u^2}{2(a-u)} .
+$$
+For $0<x<1-v$, the two inverse branches are $u_\pm=x\pm\sqrt{(a-x)^2-16}$. Put $D_\pm=a-u_\pm$, so $D_+D_-=16$. The sum of their density contributions is
+$$
+ \frac{\sqrt{D_+}+\sqrt{D_-}}{\pi\sqrt{2x}\sqrt{(a-x)^2-16}}
+                =\frac1{\pi\sqrt{x(1-v-x)}}.
+$$
+The first equality for the density contributions follows from $L^2-u_\pm^2=2xD_\pm$ and $|du_\pm/dx|=D_\pm/\sqrt{(a-x)^2-16}$. This gives the conditional beta split of $1-v$ and proves the Dirichlet law.
+
+Put $z=1-v-x$. At these two inverse points, $S=(a-u)/4$, as follows either from (H15) or from $r=(1-x)(a-u)/8$. Thus the two possible $S$ are reciprocal positive numbers satisfying $S+S^{-1}=2+z/2$. Their probabilities are proportional to their square roots. A useful polynomial conditional formula is
+$$
+       \mathbb E[r^n\mid X,V]
+          =\left(\frac{1-X}{2}\right)^n C_n(1-X-V),\qquad n\ge0,
+$$
+where $C_0=1$, $C_1=1+z/2$, and $C_{n+2}=(2+z/2)C_{n+1}-C_n$. This follows by taking the probability-weighted sum of the two powers of $S$.
+
+To obtain the uniform parameter, write $\rho=\sqrt S$ and $w=\rho-\rho^{-1}$. Then $z=2w^2$, and the probability of a choice of sign for a given $|w|$ is
+$$
+                          \frac{\rho}{\rho+\rho^{-1}}
+                           =\frac{d\rho}{dw}.
+$$
+Since $\sqrt z$ is uniform on $[0,1]$, the signed $w$ has density $\sqrt 2\,d\rho/dw$ on $[-1/\sqrt 2,1/\sqrt 2]$. The variable $\rho$ is therefore uniform on $[1/\sqrt 2,\sqrt 2]$. The Dirichlet law also makes $B=X/(1-z)$ arcsine and independent of $z$. The branch probabilities for $S$ depend only on $z$, so the independence persists with $\rho$. The identities $1-z=(2-S)(2S-1)/S$ and $r=(1-X)S/2$ yield (H14). The orientation generator $J$ can be retained as well: conditional on $p,q$, inversion makes its sign equiprobable and $J^2=qv r k/9$.
+
+**Corollary.** The two-height field $K(t,X,V)$ intersects $K[t,t^{-1},p,q]$ only in $K[t,t^{-1}]$ over any characteristic-zero field $K$.
+
+Fix $X=x$. The other value of $p$ at fixed $x,v$ is $(2A(x)-x/3-p)/(1-3p)$, by the quadratic equation
+$$
+          v(1-3p)(1-x)=36\bigl(-p^2+2A(x)p-x/9\bigr)
+$$
+from (H3) and the definition of $V$. In terms of $r=1-3p$ the involution is $r\mapsto(1-x)^2/(4r)$. A regular polynomial becomes a polynomial in $r$ over $K(t,x)$ after $q=xp/9$. Such a polynomial is invariant under the reciprocal involution only if it is independent of $r$. Any rational function of $x=9q/p$ that is regular must also be independent of $x$: take the limit along every line through $(p,q)=(0,0)$, where the polynomial has one value for all $x$.
+
+#### An endpoint algebra with the full angular function field
+
+The uniform parameter in (H14) gives another joint endpoint identity. Fix $N\ge1$ and put
+$$
+   G(W)=(2-W)(2W-1),\qquad T=1+t,\qquad W=T^2S,\qquad
+                         E=\frac{T}{t}G(W)^N .
+$$
+Use formal constant term at $t=0$, extending the trace to expressions that may also have a pole at $t=-1$. For $r\ge1$, $j\in\mathbb Z$ and $\ell\ge0$,
+$$
+ \begin{aligned}
+ \Lambda(E^r W^j B^\ell)&=0,\\
+ \Lambda(tE^r W^j B^\ell)
+   &=\frac{(1/2)_\ell}{\ell!}\,
+       \frac{\displaystyle\int_{1/\sqrt{2}}^{\sqrt{2}}
+                         G(s^2)^{Nr}s^{2j}\,ds}{\sqrt 2-1/\sqrt 2}.
+ \end{aligned}                                                     \tag{H16}
+$$
+Indeed, after substituting $s=T\sqrt S$, the integrand has prefactor $t^{-r}T^{r-1}$ and limits $T/\sqrt 2,T\sqrt 2$. Replacing the limits by the original endpoints changes the integral by a multiple of $t^{Nr+1}$, since $G(s^2)^{Nr}$ vanishes to order $Nr$ at both endpoints. The factor $s^{2j}$ is regular near this interval for every integral $j$. The prefactor then gives (H16). These identities make every element of the ideal generated by $E$ in $K[E,W,W^{-1},B]$ pure. By (H14) and $T=E/(E-G(W)^N)$, the fraction field of that algebra is the full angular Laurent function field.
+
+**Theorem.** For this endpoint algebra,
+$$
+            K[E,W,W^{-1},B]\cap K[t,t^{-1},p,q]=K.
+$$
+The same conclusion holds for polynomials in $E$ whose coefficients are rational in $W,B$ and regular at the generic divisor $W=2$. More generally, if the coefficient of $E^r$ has a pole there of order at most $(N-1)r$, absorb that pole by using the generator with $N=1$ and multiplying its coefficient by $G(W)^{(N-1)r}$. Hence the intersection still consists of constants when this amount of pole is allowed in the joint endpoint coefficients.
+
+Suppose $P$ belongs to both rings and write
+$$
+                      P=t^{-b}\sum_{i,j} a_{ij}(T)p^i q^j
+$$
+with $b\ge0$ and $a_{ij}\in K[T]$. In the endpoint coordinates, $S=W/T^2$ and $t=G(W)^N/(E-G(W)^N)$. A polynomial in $E$ with coefficients regular at generic $W=2$ is regular at the three divisors used below. They have $E=0$, $E=G(W)^N$, and $W=2$, with $B$ left as an independent variable.
+
+At $E=0$, the variable $T$ has a simple zero at generic $W$. Formula (H14) gives leading terms proportional to $B S^2$ in $p$ and $B^2 S^3$ in $q$. A term with $a_{ij}$ of order $l$ at $T=0$ therefore has order $l-4i-6j$, with leading coefficient proportional to $W^{2i+3j}B^{i+2j}$. At a common order these monomials are distinct, since the two exponents determine $i,j$. Thus for every nonzero $a_{ij}$ one has $\operatorname{ord}_{T=0} a_{ij}\ge4i+6j$.
+
+At $E=G(W)^N$, the variable $T$ has a simple pole at generic $W$, and $S$ tends to zero. Here $p\to(1-B)/3$ and $q$ has leading term $-2B(1-B)T^2/(27W)$. The order of a term in $T$ is $\deg a_{ij}-b+2j$. At a common order the leading coefficients have distinct powers $W^{-j}$ for distinct $j$, and for fixed $j$ the powers of $1-B$ from distinct $i$ are independent. It follows that $\deg a_{ij}\le b-2j$. The two bounds give
+$$
+                  \operatorname{ord}_{T=1}a_{ij}
+                         \le b-4i-8j .
+$$
+
+At $W=2$, with $E,B$ generic, $t$ vanishes to order $N$ and $S-2$ vanishes to order one. For $N=1$ the leading coefficient of $S-2$ is a nonzero rational function of $E$, and for $N>1$ it is one. Hence $p$ and $q$ vanish to orders one and two, with leading coefficients proportional to $(1+3B)$ and $B(1+3B)$ respectively. If $e=\operatorname{ord}_{T=1}a_{ij}$, the order of a summand in $W-2$ is $Ne+i+2j-Nb$. At a common lowest order, group the summands by $D=i+2j$. Their leading coefficients are, up to nonzero factors over $K(E)$, the polynomials $(1+3B)^{i+j}B^j$ of degree $D$. Within a group of fixed $D$ they have distinct orders at $B=0$ and form an independent family with nonzero top-degree terms. To rule out cancellation across groups as well, observe that $Ne+D$ is fixed. Consequently different groups carry different powers of the leading coefficient of $t$ or of $S-2$. If $N>1$, the leading coefficient of $S-2$ is one and that of $t$ is a nonzero constant times $E^{-1}$. The groups then have distinct powers of $E$, and cannot cancel. For $N=1$, their coefficients in $E$ are proportional to $E^{-e}(1-\gamma/E)^D$ with a fixed nonzero $\gamma$. Since $e+D$ is fixed, these are proportional to a common power of $E^{-1}$ times $(E-\gamma)^D$, and are again independent. The same factors occur for every member of a fixed group because $e,D$ are fixed. Thus no lowest-order terms cancel.
+
+If $i+j>0$, the degree bounds give
+$$
+        Ne+i+2j-Nb\ \le\ -(4N-1)i-(8N-2)j<0.
+$$
+Any such term would force a pole at $W=2$. Therefore $P$ is scalar. Its coefficient $a_{00}$ has degree at most $b$ and is divisible by $(T-1)^b$, again by regularity at $W=2$. Hence $P$ is constant. This proves the intersection theorem. The joint law (H14) also describes the regular ring outside this polynomial endpoint algebra.
+
+#### Dilations depending on the independent coordinate
+
+The conditional endpoint calculation allows the dilation to vary with $B$. For example, let $T_B=1+tA(B)$ with $A$ rational and bounded on the arcsine interval. Conditional integration in $\sqrt S$ treats $A(B)$ as constant. With a factor vanishing at both endpoints the same endpoint error gives pure rational phases. The following regularity obstruction applies even to these variable dilations.
+
+**Proposition.** Let $F(p,q)$ be a nonconstant regular polynomial, expressed as $F(S,B)$ by (H14). If $A(B)\in K(B)$ is nonzero, $a\ge0$ and $b\in\mathbb Z$, the expression
+$$
+                  t^{-b}(1+tA(B))^a F((1+tA(B))^2S,B)
+$$
+is not in $K[t,t^{-1},p,q]$.
+
+Write $F(S,B)$ as a Laurent polynomial in $S$. Its highest $S$ exponent is the weighted degree $d>0$ of $F(p,q)$ for weights $2,3$. Indeed, the leading terms of $p,q$ in (H14) are $-BS^2/3$ and $2B^2S^3/27$. Distinct pairs $(i,j)$ of monomial exponents at weight $d=2i+3j$ have distinct exponents $i+2j$ of $B$. Hence the coefficient $f_d(B)$ of $S^d$ is nonconstant and has degree at most $d$.
+
+If the displayed expression is Laurent in $t$, its highest coefficient in $t$ is $A(B)^{2d+a} f_d(B) S^d$. This holds even if some lower $S$ powers give rational terms in $t$, by looking at $t=\infty$. For any finite pole of $A$, its fibre in $B$ has a generic affine point with $S$ a unit, by (H14). Regularity there would require $f_d$ to vanish to order at least $2d+a$, more than its degree. Thus $A$ is a polynomial. At the generic divisor $p^2=3q$ the variable $B$ has a pole and $S=2$ is a unit. The nonconstant polynomial $A^{2d+a} f_d$ gives a pole there, a contradiction. This leaves deformations involving both uniform and arcsine coordinates, or other ways to use their joint law, outside the endpoint exclusion.
+
 ### The icosahedral conditional differential
 
 For the icosahedral formula (H6), put $y^2=-F(v,p)$ and let $C_v$ be the smooth projective curve of this function field over $\mathbb Q(v)$. The quartic is squarefree and has two rational points $I_+,I_-$ at infinity, distinguished by $y/p^2\to\pm4320$. The conditional differential

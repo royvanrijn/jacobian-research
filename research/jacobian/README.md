@@ -42,7 +42,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Successive restart universality and exact all-round equivalence | Internal result | proved | [Source](subtree-shuffling/SUCCESSIVE_RESTART_UNIVERSALITY.md) |
 | A line of nonproper singleton fibres in the retained three-dimensional Keller map | Internal result | proved | [Source](../EXTERNAL_MATHEMATICAL_TRANSFERS.md) |
 
-**Computed obligations:** 20 unresolved; 5 resolved within their exact scope.
+**Computed obligations:** 21 unresolved; 5 resolved within their exact scope.
 
 
 Scope limits:
@@ -63,7 +63,7 @@ Scope limits:
 - Alternating Laurent extensions have surjective etale Jacobian-one charts over the whole affine target, but no polynomial affine-space realization over the displayed affine base, by normalization units. This does not exclude their abstract A_n actions through different extensions.
 - One fixed rational determinant-one A3 map carries infinitely many whole A10 field fibres of the original paired pencil. Arala known concentrated-inertia pencils extend this root-field transfer overQ to every admissible n=m²+1, oddm>=3, with genericS_n and coordinate degree<=20n-54. Arbitrary rational finite-etale families have a fixed A4 compiler; each minimum-rank2^(n-2) alternating Hasse product family now occurs in one fixed A4 map with genericS_(2^(n-2)). A fixed A3 compiler for the product family remains open.
 - Known graded cyclic-cone constructions give polynomial A3 maps with geometricA_n for every evenn>=6; admissible degrees have regular arithmeticA_n overQ(sqrt(-3)). No novelty or plane realization is claimed. All faithful transitive planeA4 actions are excluded. The reported naturalA5 theorem remains a primary-source verification obligation here; architecture-specific obstructions do not give a universal plane exclusion.
-- The published complex planar degree bound is 104. The additional preprint route excludes degrees through 107 under its explicit Theorem 2.1 premise and retains the single unordered pair (72,108) below degree 125.
+- Published complex planar inversion holds through degree 104. The GGHV reduction gives the bound through 107 under its explicit premise. The reported Laurent exclusions give a route through degree 124 under reduction, transcription and certificate assumptions.
 - A separate complete grade29 root-relation packet extends the established whole-piece zero interval to19–29. This finite certificate is distinct from the already sharp inverse-degree29 theorem; any claim about the entire one-generator algebra needs a further complete tail argument.
 - The classical index-four cyclic model has nonzero words in every internal grade, yet inverse degree seven. Whole-piece extinction is therefore unavailable at every Engel index p>=4; the remaining fixed-p4 problem concerns the weighted inverse sums.
 - The complete new replay through grade55 supplies the remaining cube-zero tail and proves total dimension235, sharp cyclic odd-leaf threshold39, and the exact p<=3 versus p>=4 boundary for universal one-generator nilpotence. The positive cube-zero theorem and negative index-four example have separate proof routes.

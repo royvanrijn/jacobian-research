@@ -248,10 +248,21 @@
         "limitations": "The procedure invokes two specialist algorithms and gives neither size nor complexity bounds. Cutoffs depend on the multiplier. The final Euler example gives the empty list for f=q.",
         "verification_obstacles": "The initial reader requested precise localization and integration interfaces, a justification that the recurrence is nonzero and a way to compute initial moments. The final reader confirmed those changes and checked the added Euler example without identifying a remaining mathematical gap."
       }
+    },
+    "source_reliance_revision": {
+      "date": "2026-11-25",
+      "prior_pdf_sha256": "1d140aa43dcfd14c1b5359f785c719ef01299e12a45a82fa93a6b9f60b3a828a",
+      "current_pdf_sha256": "a50d356b08ccfa360f28db6bf60a42a5e5c4f33288fba0c112cb861012b17810",
+      "changes": "The introduction now locates the direct dimension and witness proof over the ground field before giving the independent complex comparison. The instability proof gives its Hilbert–Mumford weight calculation and credits Long afterward. The bibliography identifies Long's versioned manuscript explicitly as a preprint.",
+      "check": "The pinned primary manuscript was inspected at the same revision. The local direct proof does not import Long's theorem, instability lemma, or endpoint identity. Theorem 1.1 of the preprint is used for the historical comparison over the complex numbers, and Proposition 5.1 is credited for the endpoint method.",
+      "layout": "An isolated LaTeX build was warning-free. All 15 pages were compared at 90 dpi. Changed pages 2, 3 and 10–15 were visually inspected. The pinned version URL is an active link and the source ZIP reproduces the revised main.tex.",
+      "prior_review_scope": "The prior PDF-only review covered the mathematical proofs. This change received a source and rendered-PDF inspection of the affected passages.",
+      "pdf_only_check": "Fresh no-history reader received the compiled PDFs alone. The reader located all three citations to item [5], including the historical complex comparison on p. 2, the endpoint substitution proved on pp. 3–4 and the weight argument proved on p. 10. The reader confirmed that the direct theorem and examples do not import Long's results."
     }
   },
   "artifact_hashes": {
-    "main.tex": "e695c19d58fb97563f0bb5354134a862ddbbe06b384dee04c369acbde31cb562",
-    "mathieu-quadratic-complements.pdf": "1d140aa43dcfd14c1b5359f785c719ef01299e12a45a82fa93a6b9f60b3a828a"
+    "main.tex": "37fa0e9e25dd9c4f955d9a5901ead6df19dcb8d4643b4a236d120f8b842c53b1",
+    "mathieu-quadratic-complements.pdf": "a50d356b08ccfa360f28db6bf60a42a5e5c4f33288fba0c112cb861012b17810",
+    "mathieu-quadratic-complements-hexagon-source.zip": "54f2fa30943c6ca91e4badd74f3e02bb206051c9d5b12915054b9425aee89d9f"
   }
 }

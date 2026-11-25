@@ -31,6 +31,23 @@ Every program reports zero unresolved cases. The manuscript
 specifies the enumeration bounds and proves that the applicable filters
 cover every possibility.
 
+The central verifier's table stores one 16-bit entry per odd argument
+and covers arguments through 1,156,520,634. A replay with g++ 13.3.0,
+eight threads and undefined-behavior instrumentation took 11.63 seconds
+and used 1,133,864 KiB of peak resident memory on Ubuntu 24.04.
+The decimal square-root estimate used by the sieve is corrected in
+both directions by exact integer squares.
+
+An additional replay checks the 64 polynomial pairs left after the
+arithmetic sieve in a different prime field, using FLINT's gcd.
+Install python-flint and run this command after the C++ build above.
+
+    set -o pipefail
+    "$check_dir/verify_ordinary_binomial_residual" --list-gcd-pairs | python3 crosscheck_central_gcds.py
+
+This check uses the pairs exported by the C++ sieve. The argument in
+Section 3 of the article justifies the coverage of that sieve.
+
 ## Padé inequalities
 
 Run the three scripts with Python 3 and its standard library.

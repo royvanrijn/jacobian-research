@@ -920,3 +920,112 @@ Assume \(\epsilon\le1/1000000\). Take ten fixed complete rows with common column
 This follows from the ordered-star count on the complete-label graph with capacities \(c+\gamma_0\), using the conservative \(68\gamma_0\) edge loss. Choose one outside band block per target row of mass \(3/400\) up to the arbitrarily small rounding loss and freeze them at total cost at most \(.0751\). Strip primes dividing the product of all fixed row differences, discarding columns whose radical overlap on any row has root mass at least \(\xi=.0005\). Their exponent is at most \(c+\gamma_0-\xi+o(1)\), below the selected column exponent. The combined root-mass loss is at most \(10\xi=.005\), so the pairwise coprime target modulus gives \(b_Q\in[.07,.0751]\) and \(w\ge.075\cdot3.9-.005\cdot4=.2725\). Use \(\kappa=3.9\).
 
 Apply the half-rank determinant with \(M=16,r=1/5\) on the specified partial \(U\) group. Then \(B\le .201/5+16(.0011)=.0578\), below \(b_Q(17)r/4\ge .0595\). The Taylor precision is \(1.7<\kappa\), \(r<5\), and the retained modulus has positive weight since \(4B=.2312<w\). The actual chart cost is at most .0751, giving total count exponent at most .1502, a contradiction to the common columns. This proves (PG3).
+
+## Selective phase quantiles on complete columns
+
+Work at \(d=1/3,\ \Gamma=1/2\), with \(c=1/6\). Fix a target letter \(U\), and write
+\[
+ s_*=\max_{T\ne U}\sup\operatorname{supp}\nu_{T,\rm na}.
+\]
+For every \(a\in(0,1]\) and Borel set \(J\subseteq[0,\infty)\) with \(\nu_U(J)=c+g>c\),
+\[
+ \boxed{\displaystyle
+       \int_J \|r/a\|\,d\nu_U(r)\ \ge\ \frac{s_*g^2}{310}.}
+ \tag{SP1}
+\]
+This tests the discrepancy of retained roots alone, with the remaining roots frozen at a cost below the column exponent. The balance \(g\) is the difference between the retained mass and \(c\).
+
+At a fixed spacing, let \(A_U(a)=\int\|r/a\|\,d\nu_{U,\rm at}(r)\). For every Borel set \(I\) of nonatomic mass \(t>0\), (SP1) gives
+\[
+ A_U(a)+\int_I\|r/a\|\,d\nu_{U,\rm na}(r)
+     \ \ge\ \frac{s_*t^2}{310} .
+ \tag{SP2}
+\]
+Indeed remove the countable set of atoms from \(I\) and add all the atoms back as a separate disjoint piece. More generally, if only a prescribed collection of whole atoms is included, of mass \(c-p\), the same inequality holds with its partial atomic phase discrepancy and with \((t-p)^2\) on the right when \(t>p\). Thus no finite atomic list hypothesis is needed.
+
+In particular
+\[
+ \nu_{U,\rm na}\{r:\|r/a\|\le\theta\}
+ \ \le\ \frac{310\,\theta}{s_*}
+          +\sqrt{\frac{310A_U(a)}{s_*}} .
+ \tag{SP3}
+\]
+The same upper bound with \(\theta=\sigma/a\) applies to the mass below scaled degree \(\sigma>0\). Indeed \(\|r/a\|\le\sigma/a\) there. These consequences use \(t^2\le ut+v\Rightarrow t\le u+\sqrt v\). If all positive atoms lie on lattices \(a_j\mathbb Z\) apart from atomic mass \(p_j\), the trimmed form directly gives
+\[
+ \nu_{U,\rm na}\{r:\|r/a_j\|\le\theta\}
+ \ \le\ 2p_j+\frac{1240\theta}{s_*},
+\]
+since \(t>2p_j\) implies \((t-p_j)^2>t^2/4\). The full discrepancy consequence at \(g=c\) is \(s_*/11160\), while (SP1) also permits excluding arbitrary outlying degree bands.
+
+### Proof of the residual estimate
+
+It suffices to use a finite union \(J\) of bounded intervals with continuity endpoints for \(\nu_U\). Every Borel set can be approximated in \(\nu_U\)-symmetric difference by these unions. To check this, enclose a compact subset inside an open superset whose measure difference is arbitrarily small, then cover the compact set by finitely many inside intervals with endpoints avoiding the countable set of atom locations. The same approximation controls the integral since the phase function is bounded by \(1/2\).
+
+Choose an opposite letter \(T\) and a compact band \([s,S]\) on it of positive nonatomic mass, with \(0<s<S<2s\) and continuity endpoints. By (MS11), \(s\le6\). Use the [complete-label graph](ABC_DIFFUSE_FACTOR_GRAPH.md#complete-values-determined-by-single-outside-labels) to take any fixed number \(m\) of complete rows on the remaining letter, with common \(U\)-columns of exponent arbitrarily close to \(c\). They have distinct fixed complete row values. On the \(i\)-th row, the complete \(T\)-value has form \(\epsilon u+t_i\), where \(u\) is the common complete \(U\)-value, \(\epsilon=\pm1\) is fixed, and the fixed offsets \(t_i\) are distinct.
+
+Select original outside root positions on these rows from the supplying \(T\) band, of total normalized mass \(0.496g\) up to arbitrarily small rounding losses. This can be arranged by prescribing \(0.496g/m\) on each row once \(m\) is large enough, and taking the outside-window errors small enough relative to \(m,g\). Freeze their values at normalized cost at most \(0.497g\). Put \(D=\prod_{i<j}(t_i-t_j)\). Discard the columns on which any outside \(T_i\)-radical has overlap of mass at least \(\xi\) with \(D\), where \(0<\xi<0.0005g/m\) is fixed. The [divisor allocation argument](ABC_DIFFUSE_FACTOR_GRAPH.md#counting-shared-prime-divisors) and row uniqueness bound those columns with a strict saving from \(c\), after taking the graph and extraction losses small enough. Strip primes of \(D\) from the frozen blocks, losing root mass less than \(m\xi\) up to vanishing errors. The resulting full blocks are pairwise coprime because any common prime divides the corresponding shift difference. Their product \(n\) gives a single fixed residue for \(u\bmod n\), which is a unit by primitivity. For \(kL\to s\), each retained valuation is in \([k,2k)\) since the band roots are squarefree and \(S<2s\). The shallow record \(Q_n=\operatorname{rad}(n)\) has mass \(b_Q\le0.497g\), with lower bound \(b=0.495g\), and the modulus weight satisfies \(w\ge0.495gs\). The selected roots were counted before stripping, so no new record charge is required.
+
+On \(U\) freeze the root coordinates outside \(J\), at cost \(c-g+o(1)\) since the total root mass is \(2c\). Any fixed exceptional coefficient can be absorbed into the frozen product at arbitrarily small cost. Every factor of the frozen product is a unit modulo \(n\). For a retained original degree \(r=eL\), assign the nearest nonnegative multiple \(ia\). Take the \(i\)-th power of its original root into the integer narrow root \(z\), and use the common exponent \(q=\lfloor a/L\rfloor\). Put the correction into the wide rational multiplier \(v\). Then the unit congruence is \(v z^q\equiv K\bmod n\), and the normalized narrow and numerical wide heights satisfy
+\[
+ h\le \frac1a+\frac16\le\frac7{6a},
+ \qquad
+ E\le a\int_J\|r/a\|\,d\nu_U(r).
+\]
+For the first estimate use \(i\le r/a+1/2\), total mass \(1/3\), and first moment at most one. For the second, the signed rounding errors have height at most the sum of their absolute weights. The errors from flooring \(a/L\) contribute at most \(L\sum i\beta_e=o(1)\) for fixed \(a\). Weak convergence controls the remaining integral on the continuity set. All errors can be absorbed into the strict margins below.
+
+Suppose the discrepancy is at most \(sg^2/310\). In the [one-root determinant (QD2)](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-quantitative-congruence-estimate-for-one-grouped-root) take rank fraction \(\alpha=1/2\), \(M=\lceil19/(ag)\rceil\), and \(r_0=asg/19\). As \(s\le6\) and \(g\le c\), one has \(r_0\le a/19<qL+o(1)\). The Taylor order obeys
+\[
+ \frac{(M+1)r_0}{2}
+ \le \frac{s}{2}\left(1+\frac{2ag}{19}\right)
+ \le\frac{29s}{57}<s.
+\]
+The determinant and reconstruction parameters have the strict margins
+\[
+ \begin{aligned}
+ B=hr_0+EM
+   &\le sg\left(\frac7{114}+\frac{19+1/6}{310}\right)
+      =\frac{871}{7068}\,sg
+      <\frac{99}{800}\,sg,\\
+ \frac{b(M+1)r_0}{4}
+   &\ge \frac{0.495}{4}\,sg=\frac{99}{800}\,sg,
+ \qquad 4B<0.495sg\le w .
+ \end{aligned}
+\]
+Thus the normalized chart exponent is at most \(b_Q\le0.497g\). Each resulting pair \((z,v)\) determines \(u\) given the fixed roots, hence the column up to divisor-many representations at fixed truncation. Total normalized counting cost is at most
+\[
+ c-g+0.497g+0.497g=c-0.006g.
+\]
+The discarded bad-overlap columns have their own strict saving. Take the input star and extraction losses smaller than both margins. This contradicts the near-full column exponent. We have proved strict discrepancy \(>sg^2/310\) for every such band. Let \(s\) tend to \(s_*\) to get (SP1).
+
+
+
+### An infinite-atom example with a low diffuse component
+
+Let \(V,T\) each have \(c\delta_3+c\,\mathrm{Unif}[2,4]\). Take \(\epsilon=10^{-6}\), and on \(U\) use
+\[
+ \begin{split}
+  \nu_{U,\rm at}&=\sum_{j\ge1}c\,2^{-j}\,
+                 \delta_{9/2+\epsilon2^{-j}},\\
+  \nu_{U,\rm na}&=\tfrac1{20}\,\mathrm{Unif}[0,\epsilon]
+      +\tfrac7{60}\,\mathrm{Unif}\bigl[1,\,23/7-(29/21)\epsilon\bigr].
+ \end{split}
+\]
+The uniform laws each have mass one before multiplying by their coefficients. Every letter has mass \(1/3\), nonatomic mass \(c\), and first moment one. On \(U\) the atomic shift contributes \(\epsilon/18\) to the moment and the low diffuse component adds \(\epsilon/40\), both offset by the decrease \(29\epsilon/360\) in the higher diffuse component.
+
+All degrees are below \(4.501\). Since \(s_*=4\) across the letters, the left side of (MXP1) is at most \(4c+(4.501-4)c<1\). The fractional three-letter pack of mass \(c\) has weight below one, and the pack at mass \(1/3\) below two. The diffuse support bound (MS11) holds. For (MS12), the \(U\)-atomic mass is \(c\) above degree four, and the opposite profiles lie in \([0,4]\) with moment one, so each gives the required compressed moment for \(s\le4\). Every block of mass \(\beta<c/m\) also has \(mw<1\), so (RP1) supplies no common factor. The full phase inequality (DN2) has a margin on all three letters: each higher diffuse uniform interval has length at least two, so its phase average for every \(0<a\le1\) is at least \(1/8\), by integrating the complete periods. Every opposite support endpoint is at most four.
+
+The partial unweighted grouping test (PG2) also holds. On \(U\), for selected mass \(m\le1/4\) the largest possible captured ordinary moment is at most \(3/4+\epsilon/18+121/588\): select all the atoms and at most \(1/12\) of the top mass of the high interval. The average on its upper fraction \(5/7\) is at most \(121/49\). For \(m\ge1/4\), the clipping base \(1/m\le4\) loses at least \(1/12\) from the atomic moment alone. Thus the unweighted residual exceeds \(0.044\), while the right side of (PG2) is at most \(4(0.0829/8)=0.04145\). On \(V,T\), for \(m\le0.23\) the residual is at least \(1-4m\ge0.08\). For \(0.23<m\le0.3\) the omitted mass is at least \(1/30\) at degree at least two, giving residual at least \(1/15\). For \(m>0.3\), clipping at \(10/3\) on the diffuse band gives residual at least \(1/54\). When \(m>0.23\) the right side of (PG2) is negative for \(2\le M\le10\) and at most \(4(0.0829/4)/11<0.008\) for \(M\ge11\).
+
+Nevertheless at \(a=1/2\), the \(U\)-atom list and the low diffuse interval have joint phase discrepancy \(29\epsilon/180\). This follows by summing \(2\epsilon\sum_{j\ge1}c4^{-j}=\epsilon/9\) from the atoms and \(\epsilon/20\) from the low interval. With \(t=1/20\) and \(s_*=4\), the right side of (SP2) is \(1/31000\), a contradiction. Infinitely many distinct atomic scales occur in a fixed compact interval, so the finite-positive-basis hypothesis in (IF1) cannot be used.
+
+### A nearby count saving with one supplying row
+
+Consider a limiting profile of total root mass \(1/3\) on each letter, with \(|c_W-c|\le10^{-7}\) on each letter. Suppose an opposite letter \(T\) has nonatomic mass \(>0.025\) in \([3,4]\). On \(U\) suppose some continuity set \(J\) of root mass at least \(c+0.0499\) satisfies
+\[
+  \int_J\|2r\|\,d\nu_U(r)\le10^{-6}.
+\]
+Then \(d<1/3-10^{-6}\).
+
+For if \(d=2c-\varepsilon\) with \(0\le\varepsilon\le10^{-6}\), the [near-minimum complete-label reduction](ABC_DIFFUSE_FACTOR_GRAPH.md#the-complete-label-reduction-close-to-minimum-mass), using the three caps \(c+10^{-7}\), retains edge exponent at least \(2c-35\varepsilon-68\cdot10^{-7}\) up to arbitrarily small losses. This is the same bound used in (MS16), since \(\gamma=\sum c_W-3c\le3\cdot10^{-7}\). Equivalently the simultaneous anchors cost at most \(7\varepsilon+12\cdot10^{-7}\), and the vector factor dictionary step adds at most four times that deficit plus \(8\cdot10^{-7}\). Fix one complete row on the remaining letter, by averaging. Its common \(U\)-columns have exponent at least \(c-35\varepsilon-69\cdot10^{-7}>c-0.000042\), up to arbitrarily small losses.
+
+Take \(g=0.0499\), \(s=3\), and \(a=1/2\) in the preceding count. One supplying row has enough \(T\)-outside roots in \([3,4]\) for root cost \(0.496g<0.025\). There is no row-overlap deletion, and the \(U\)-residue is a unit by primitivity. Use lower and upper record masses \(0.495g\) and \(0.497g\) as above. The freeze outside \(J\) costs at most \(c-g\), while \(10^{-6}<sg^2/310\) supplies the determinant condition. The resulting bound \(c-0.006g=c-0.0002994\) contradicts the fixed-row column count. The displayed hypotheses all hold for the infinite-atom example, using a continuity enlargement of its low interval and atomic cluster.

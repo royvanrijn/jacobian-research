@@ -11,9 +11,10 @@ from __future__ import annotations
 
 from collections import defaultdict, deque
 from copy import deepcopy
-import hashlib
 from pathlib import Path, PurePosixPath, PureWindowsPath
 import re
+
+from external_artifacts import repository_path, sha256_file
 
 
 NODE_STATES = {"proved", "open", "unverified", "partial", "falsified", "refuted"}
@@ -66,10 +67,10 @@ class DependencyGraph:
         _require(not PurePosixPath(value).is_absolute()
                  and not PureWindowsPath(value).drive,
                  f"absolute graph source path: {value}")
-        path = (self.root / value).resolve()
-        _require(path.is_relative_to(self.repository),
-                 f"graph source escapes repository: {value}")
-        return path
+        try:
+            return repository_path(self.root / value, self.repository)
+        except ValueError as error:
+            raise GraphValidationError(f"graph source escapes repository: {value}") from error
 
     def _source(self, source: dict, owner: str) -> None:
         _require(isinstance(source, dict), f"invalid source record: {owner}")
@@ -250,7 +251,7 @@ class DependencyGraph:
             path = self._path(source["path"])
             if path not in cache:
                 try:
-                    cache[path] = hashlib.sha256(path.read_bytes()).hexdigest()
+                    cache[path] = sha256_file(path)
                 except OSError:
                     cache[path] = None
             actual = cache[path]

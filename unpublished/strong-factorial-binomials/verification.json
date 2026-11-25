@@ -13,11 +13,11 @@
     },
     {
       "location": "Section 4 and Appendices D–E",
-      "basis": "Rotated exponential truncations have a monomial Wronskian and give a nonzero integral resultant. Its complex upper bound contradicts an integer lower bound from p-adic valuation estimates and prime support. The largest terminals require a separate count of square multiples and the two-height endpoint comparison."
+      "basis": "Section 4 derives the rotated truncations and nonzero monomial Wronskian, including the simple-pole coefficients and p-adic progression estimates. The large-order arguments derive monotonic extensions of the independently checked endpoints. Nguyen-Dang's preprint provides the Laguerre template."
     },
     {
       "location": "Appendices B–C",
-      "basis": "Squarefreeness at constant support uses the derivative identity and uniform contour estimates. At large relative gaps, the electronic Positive-exponent Boundary appendix supplies the prime-power and contour proof inputs. Appendix C converts the analytic conclusions to the physical consecutive orders and gives the smaller exact finite domains."
+      "basis": "Appendix B proves constant-support squarefreeness. Appendix C proves the physical-shape derivative bridge and the prime-power branch, including the adjoint rank condition and Artin–Hasse descent. The accompanying written Positive-exponent Boundary contour proof gives the three unbounded branches. Exact arithmetic covers the finite domains and the numerical contour guards."
     }
   ],
   "sources": [
@@ -59,7 +59,7 @@
     {
       "reference": "Nguyen-Dang",
       "identifier": "https://hexagonmath.org/pdf/2611.00087v1",
-      "inspected": "Proposition 3.9 and Section 3.2.1, the Laguerre Padé norm argument adapted in Section 4."
+      "inspected": "Preprint, Proposition 3.9 and Section 3.2.1, the Laguerre norm comparison. Cited for the method. Section 4 supplies the binomial truncation, Wronskian and local estimates directly."
     },
     {
       "reference": "Rosser and Schoenfeld",
@@ -81,22 +81,26 @@
     },
     "layout": {
       "passed": true,
-      "pages": 35,
-      "renderer": "Poppler pdftoppm 24.02.0 at 75 dpi",
+      "pages": 41,
+      "renderer": "Poppler pdftoppm 24.02.0 at 78 dpi for all pages and 115 dpi for detail",
       "embedded_fonts": 24,
       "type3_fonts": false,
       "external_bibliography_links": 10,
       "detailed_pages_rasterized_at_115_dpi": [
-        8,
-        11,
+        12,
+        13,
+        24,
+        25,
+        26,
         27,
         33,
-        34
+        39,
+        40
       ]
     },
     "arithmetic": {
       "passed": true,
-      "environment": "Ubuntu 24.04, g++ 13.3.0 with C++20 and OpenMP (eight threads), Python 3.12.3, python-flint 0.9.0 for the gap-six import.",
+      "environment": "Ubuntu 24.04, g++ 13.3.0 with C++20 and OpenMP (eight threads), Python 3.12.3. Optional separate central gcd replay used python-flint 0.9.0.",
       "finite": {
         "verify_initial_terminals.cpp": {
           "pairs": 217952,
@@ -134,10 +138,31 @@
         }
       },
       "numerical": {
-        "verify_pade_intervals.py": "Prime sums, scalar bounds and directed angular margins above 0.07043766 and 0.08954722 in the two moderate-angle bands.",
-        "verify_hard_pade_endpoints.py": "All ten rows pass the rational two-height endpoint tests.",
-        "verify_large_tail.py": "All rational endpoint comparisons in the large-order argument pass.",
-        "positive_boundary": "The analytical lower-one, lower-two and relative-gap scripts and the gap-six contour constants passed. Supplement README gives the exact commands."
+        "verify_pade_intervals.py": "Exact checks of the constants and endpoint margins in both annulus rows, the Section 4 Padé losses, prime sums and the proper-coset bound π(x)log(x)/x<1.256 for x≥40. The two lower-order angular grid margins exceed 0.07043766 and 0.08954722. The high-order κ/η table has margin above 0.08327281.",
+        "verify_hard_pade_endpoints.py": "Order-range contiguity, gap bounds, convexity and all ten two-height endpoint rows pass with certified surplus above 0.02398705.",
+        "verify_large_tail.py": "The large-order δ cutoff has margin above 0.07433714. The four final surpluses exceed 0.36583399, 1.63745803, 0.83970068 and 0.30820244. The written derivative bounds on the two branches of Q are at most 0.075.",
+        "positive_boundary": "The local standard-library rational checker and all four analytical snapshot replays passed. They cover the gap-six constants and cutoffs, the gap-ten and lower-one bounds, all 47 corner Bernstein coefficients and the relative-gap estimates.",
+        "negative_controls": "Each Padé verifier rejects Python optimization that disables assertions."
+      },
+      "sanitized_replay": {
+        "result": "All five finite checkers passed under undefined-behavior instrumentation with zero unresolved cases.",
+        "compiler_options": "-std=c++20 -O2 -g -Wall -Wextra -Werror -fopenmp -fsanitize=undefined -fno-sanitize-recover=all",
+        "central_sieve": {
+          "maximum_argument": 1156520634,
+          "elapsed_seconds": 11.32,
+          "peak_resident_kib": 1133796
+        },
+        "scope": "Repeated the final central checker with --list-gcd-pairs. These runs check calculations and compiler-visible undefined behavior on the enumerated domains."
+      },
+      "independent_algorithm_crosscheck": {
+        "scope": "All 64 pairs exported by the central arithmetic sieve.",
+        "method": "Rebuild both monic reciprocal polynomials in Python and compute the gcd with FLINT over the independently trial-division-certified prime 2147483647.",
+        "result": "All 64 gcds have degree zero. A malformed pair list and an unsupported C++ option were rejected.",
+        "limits": "Shares the list of pairs output by the central sieve. Covers the final gcds."
+      },
+      "pade_coefficient_controls": {
+        "method": "Direct factorial-quotient sum compared with the partial-fraction formula in exact Python fractions.",
+        "scope": "2,048 identities, with 1≤a≤4 and 1≤d,m,ℓ≤8."
       }
     },
     "electronic_proof_appendix": {
@@ -146,17 +171,35 @@
       "source_and_input_files": 36,
       "member_hashes_pass": true,
       "replay_from_fresh_extraction_passes": true,
-      "scope": "Written positive-exponent boundary proof routes with exact input files. Historical cross-links may refer to excluded material that is outside those proof routes."
+      "scope": "The standalone written contour-proof.md consolidates all three contour arguments used in Appendix C. The checksummed archive retains the original sources and exact inputs for replay. The boundary proof replays with the Python standard library.",
+      "written_proof": "supplement/positive-boundary/contour-proof.md",
+      "local_checker": "supplement/positive-boundary/verify_contour_constants.py"
     },
     "repository": {
-      "paper_portfolio_metadata": "Passed.",
-      "paper_scope": "Coverage of 21 inventory documents and 23 declarations, 51 explicit TeX proof links, and 10 bibliography entries passed.",
-      "global_navigation": "Repository-wide check remains blocked by older canonical SFC inventory and declaration mappings and by in-flight coverage changes in extended geometry.",
-      "global_markdown_links": "Unrelated broken relative link in research/arithmetic/ABC_RESIDUAL_QUANTILE_SPECTRUM.md."
+      "scope": "Edition pins, source closure, bibliography locators and current graph mappings for the two revised papers.",
+      "validation": "Targeted navigation validation of the scoped edition records and paper portfolio."
     }
   },
   "review": {
     "blind_reader": {
+      "performed": true,
+      "reviewer": "Fresh no-history internal reader.",
+      "supplied_context": "Only the two compiled PDFs and the blind-review questions. No workspace, source, archive, web or research history.",
+      "previous_pdf_sha256": "de4ef22425ef51014f429ef294b873dbf7a2d9d465388b68ff05033d353bd452",
+      "final_pdf_sha256": "4e06d4d6640553729ccc2ddab5250f2f2697cb8f413592a7c8c0a24c2bc7ff49",
+      "answers": {
+        "contribution": "Consecutive coprimality for all normalized moment-polynomial pairs of univariate binomials over fields of characteristic zero.",
+        "conceptual_reason": "Shared Newton slopes and factorial prime support restrict possible factors. A nonzero Padé resultant in the remaining unbounded region has incompatible divisibility and complex size bounds.",
+        "hardest_step": "Lemma 14 and its explicit tail identity are on pp. 10–13. Appendix D reduces the intermediate region, and Appendix E, pp. 34–40, closes the large-order Padé comparison.",
+        "limitations": "Two terms in one variable in characteristic zero. The proof includes exact finite computations and certified parameter comparisons.",
+        "verification_obstacles": "The three contour proofs, numerical enclosures and finite verifiers are supplied separately. The PDF identifies where they enter. The reader traced the partial fractions, terminal ranges and contour dependencies in the revised PDF."
+      },
+      "endpoint_spot_checks": "From the printed formulas the reader separately reproduced the preliminary cutoff, four final surpluses, all ten large-gap endpoint margins and the stated Padé-loss caps numerically. These checks were ordinary numerical spot checks."
+    },
+    "external_human_review": false,
+    "independent_external_replay": false,
+    "formal_verification": false,
+    "prior_pdf_only_review": {
       "performed": true,
       "reviewer": "Fresh no-history internal AI reader with a PDF-only recheck.",
       "supplied_context": "Only the two compiled PDF editions and the paper-guide questions. Workspace sources, research history and the electronic supplement were excluded.",
@@ -170,38 +213,38 @@
         "verification_obstacles": "The written Positive-exponent Boundary appendix is needed for Lemma 20, and the exact programs are needed to reproduce the computational parts. The final PDF explicitly identifies those two parts of the separately supplied supplement. The blind reader independently reproduced finite set sizes in Proposition 7 and Appendices B and C."
       },
       "revisions": "Defined b and s before they are used in Lemmas 4–5, identified the uniform filter d²<21(a+d) that gives 326,146 cases, rewrote the introductory explanation of the two resultant bounds, and identified both supplement parts. The same isolated reader checked the new PDF."
-    },
-    "external_human_review": false,
-    "independent_external_replay": false,
-    "formal_verification": false
+    }
   },
   "artifact_hashes": {
     "arithmetic.tex": "a232a3401fb75441eca0cbf2cc4e36104122d2dc837cf4b3c691c5797917431b",
     "constant-support.tex": "c94f2e3ec94afbb5d333a48d49edc1d20d032f4881ea6bcde00bcf73c2d9981d",
     "initial-terminals.tex": "155da91cf7e8f16ffd4b0251a070432f995aa9ecba920a2fd1755674cf7eb6f0",
-    "main.tex": "ba8a96348e5800396c869939b8be22f5f99f32d6cd7ec842429eb1c5b04b9e6c",
-    "pade.tex": "917086beee4ca0c01b5162647e072ecadfb595574fd5d279d8c6f890d7675889",
-    "positive-boundary.tex": "1edaac56c1e7c1ce7569a05c74ddb8d13b05375a7d8e5ec24f0a600e2c561efc",
+    "main.tex": "d6fa9541a9bb0a52060c4ffb1ef49b7932312130fe7768f3f6bee01aab190f21",
+    "pade.tex": "47302813c0be7330c0dea2aaa3cdedf4583caadbff76ac800f88d50ea0fad93e",
+    "positive-boundary.tex": "61a2352171b63bef599dc69565aabd9e10805adfbd5ee5c5f53ba38417fc8945",
     "reduction-proofs.tex": "ac0d9fdd14696b251df6adf1920bad05b268ec58a63078d039efedd054e49ed0",
-    "reductions.tex": "ff298785ae247af7cf66605027d9385b67e21edb5dc6c1f8f5e6e6b1a1879684",
+    "reductions.tex": "a112a92cbbe3f2cf6dcc96a2349faff9010c14f4af16d05a582bc1b7dc2e056e",
     "references.tex": "44a45cdfc26d19e03cd79e3d579fd1b1c56767be3f12f57d189b0b3fc67b7e48",
-    "tail-finite.tex": "4affdf885345d50cd117daed35b6a24b9f967a52c3dd510658cdc4edcdcce020",
-    "tail-large.tex": "96065e6b409d822cf6f5bc746fe854bdef1f50d34bcc7b003b9b354956ffbb41",
-    "strong-factorial-binomials.pdf": "de4ef22425ef51014f429ef294b873dbf7a2d9d465388b68ff05033d353bd452",
-    "supplement/verify_constant_support.cpp": "8d4a3e7adc2c29a704f17fdfe1f3387b807dac0e4ff72ff4ce00f6bd2e922726",
-    "supplement/verify_hard_pade_endpoints.py": "3e59d01f7892c763a35f4eed3621f21444a18f26dce1714e98b136fc6c07b2ac",
-    "supplement/verify_initial_terminals.cpp": "bf12a18026bfffc1a070e8d8f54b6a89f53a1fb6fb4342c37bc2917fd74858f1",
-    "supplement/verify_large_tail.py": "f21bfee7c6edc646f3d8e8003f5c562b699b0e48e897fb64d30bb8b10f86ad7d",
-    "supplement/verify_ordinary_binomial_residual.cpp": "712ecd8059458d58278d0bc6dafb0a7eb5d15c8ddece046da5cf37dc0247c1ea",
-    "supplement/verify_pade_intervals.py": "1f6abba23b73999c4791fe2adfd24807fe5397369761a526d7f40a0678be74f3",
-    "supplement/verify_positive_boundary.cpp": "c9400707abce282e23ba8aa67d8c98510e3f6bf348364a179b5a9523d140931a",
-    "supplement/verify_small_support.cpp": "087b2eb09c6b361a0cfad565e846d0d1888a32c4b61bfb86f02af40350239c3e",
-    "README.md": "deaf0c2e7f50cfdca926c643858d8bbf9ee1179b013b1148ad195903f0ddfd6f",
+    "tail-finite.tex": "6546041bd365ffe174fa66833b5eec81e816ea31bf1562ebfe30f9b3790b176b",
+    "tail-large.tex": "ebef8776c83bdf8d0db63b17b30e982701dfd6d2f45c71fee4da7fedacb6d216",
+    "strong-factorial-binomials.pdf": "4e06d4d6640553729ccc2ddab5250f2f2697cb8f413592a7c8c0a24c2bc7ff49",
     "metadata.json": "6704e3ef75a8b849b09f940c0cd8b9ce71a93ff8f16d25d44c71643a5aff79b1",
-    "supplement/README.md": "01431700d700d3900421d96dc2276dd73bacbc79d9d6a2b19681d650936fee9f",
+    "README.md": "deaf0c2e7f50cfdca926c643858d8bbf9ee1179b013b1148ad195903f0ddfd6f",
+    "supplement/README.md": "2695f6897128d8caaab001d1bf83a9531eda4311027a498e67a4dcf7aa07c755",
+    "supplement/crosscheck_central_gcds.py": "5a92557e6f3444c71d2ddf46061484faf2daa450aa3f588fa5c947d62a082330",
     "supplement/positive-boundary/ARCHIVE_SHA256SUMS": "29ad98b20561b5868cc767fed39f56bf0a65cc61f517569f93f8aaf8217b82b4",
-    "supplement/positive-boundary/README.md": "6b56e9e8e216b332aa95eece134670f173705732c7de704ebceef525ca078b9a",
+    "supplement/positive-boundary/README.md": "bcaa683b1b460320447bc4255579edfa8aa587cbefe4eba3a46dc3999fd6382e",
     "supplement/positive-boundary/SHA256SUMS": "79b21013c8135b3b1c3e67cdfb041239693a1e47e581f3dd44b5ee48af6b00f7",
-    "supplement/positive-boundary/proof-snapshot.zip": "e0e6ba8972e5a7f5ce2c2cf4da46de05a15a0052f0cefbe25d3ef4dc11b2eeae"
+    "supplement/positive-boundary/contour-proof.md": "499d5b1a5dacefb8848308a5a012b79e6993ec75d53f98bb5d906d98d6a4b1a3",
+    "supplement/positive-boundary/proof-snapshot.zip": "e0e6ba8972e5a7f5ce2c2cf4da46de05a15a0052f0cefbe25d3ef4dc11b2eeae",
+    "supplement/positive-boundary/verify_contour_constants.py": "4826045068ccdabd879d7db4b90d9ea70447740dd80e9bc07d222a11bdac51a8",
+    "supplement/verify_constant_support.cpp": "8d4a3e7adc2c29a704f17fdfe1f3387b807dac0e4ff72ff4ce00f6bd2e922726",
+    "supplement/verify_hard_pade_endpoints.py": "034c37acb9465f17a0d7624c91884182b655e23d62dc11742e03491693a4262d",
+    "supplement/verify_initial_terminals.cpp": "bf12a18026bfffc1a070e8d8f54b6a89f53a1fb6fb4342c37bc2917fd74858f1",
+    "supplement/verify_large_tail.py": "01eaf66e4a4940ac93b60f5fad092567619e3beda1b23ad3351586dd8d409f14",
+    "supplement/verify_ordinary_binomial_residual.cpp": "10d97bcc2273042f90ff8e0c2aeb59fe081047ff56903a40cba5a96399d97633",
+    "supplement/verify_pade_intervals.py": "a2d02ce7d7e71869a5217c52d8aab1e35ace5ce60897be2ceeafa2bfab7f128c",
+    "supplement/verify_positive_boundary.cpp": "c9400707abce282e23ba8aa67d8c98510e3f6bf348364a179b5a9523d140931a",
+    "supplement/verify_small_support.cpp": "087b2eb09c6b361a0cfad565e846d0d1888a32c4b61bfb86f02af40350239c3e"
   }
 }

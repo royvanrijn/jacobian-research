@@ -197,6 +197,39 @@ maximal-rank hypotheses; (5) is consistent with Cornwell--Hemminger's
 lower-bound conjecture. It also explains concretely why multiplying the
 companion's one-unit deficit is invalid.
 
+### Exact bridge and braid indices for the two-cables
+
+Each companion in the theorem is nontrivial and has bridge number \(b\),
+by the four-bridge and uniform companion theorems used above. Its
+preferred \((2,Q)\)-cable with \(Q\) odd is a knot in the companion solid
+torus with algebraic winding number two. Every meridian disk thus
+meets the cable at least twice, and a meridian disk of the standard
+two-strand pattern meets it in exactly two points. The geometric index
+is therefore two. Schubert's satellite bridge inequality, in
+[Schultens's proof](sources/schultens-bridge-additivity.pdf), Definition 2
+and Theorem 1, gives \(\operatorname{bridge}(C_{2,Q}(K))\ge 2b\).
+The displayed cable braid has \(2b\) strands. Since the bridge number is
+at most the braid index, both indices equal \(2b\).
+
+The complex augmentation rank is at most the meridional rank in the
+stated \(U=1\), \(\mu\ne1\) convention. Indeed, the converse direction of
+Cornwell's correspondence gives an irreducible rank-one meridional
+representation of dimension equal to the augmentation rank. If
+\(m_1,\ldots,m_r\) generate the cable group by meridians, the sum of the
+lines \(\operatorname{im}(\rho(m_i)-I)\) is nonzero and stable under each
+\(\rho(m_i)\) and its inverse. It is therefore the full representation,
+of dimension at most \(r\). Hence for every stated companion and slope
+\[
+  2b-1\le \operatorname{ar}_{\mathbb C}(C_{2,Q}(K))\le
+  \operatorname{mr}(C_{2,Q}(K))\le
+  \operatorname{bridge}(C_{2,Q}(K))=2b.
+\]
+On this family the meridional rank conjecture is equivalent, cable by
+cable, to excluding generation by \(2b-1\) meridians. An augmentation
+of rank \(2b\) suffices. If a cable has meridional rank below its bridge
+number, both its meridional rank and its complex augmentation rank are
+exactly \(2b-1\).
+
 ## 6. Independent satellite-group check and odd-p limitation
 
 A p-strand closed braid pattern has group F_p semidirect Z. If its fiber

@@ -6,7 +6,7 @@ The small-angle checks use scalar inequalities. Neither enumerates supports.
 """
 
 from decimal import Decimal, Context, ROUND_CEILING, ROUND_FLOOR, localcontext
-from math import isqrt
+from math import factorial, isqrt
 
 
 PRECISION = 45
@@ -57,6 +57,13 @@ class Interval:
 
     def __rtruediv__(self, other):
         return Interval(other) / self
+
+    def __pow__(self, exponent):
+        assert isinstance(exponent, int) and exponent >= 0
+        result = Interval(1)
+        for _ in range(exponent):
+            result *= self
+        return result
 
     def log(self):
         assert self.lower > 0
@@ -110,7 +117,7 @@ def verify_prime_estimates():
     total, count = Interval(0), 0
     for n in range(2, 3001):
         prime = all(n % p for p in range(2, isqrt(n) + 1))
-        if not prime and n not in estimates and n != 300:
+        if not prime and n not in estimates and n not in (40, 300):
             continue
         log_n = Interval(n).log()
         if prime:
@@ -119,8 +126,11 @@ def verify_prime_estimates():
         for start, limit in estimates.items():
             if n >= start:
                 assert (total - log_n).upper < Decimal(limit), (n, start)
+        if 40 <= n <= 300:
+            assert (count * log_n / n).upper < Decimal("1.256"), n
         if 117 <= n <= 300:
             assert (count * log_n / n).upper < Decimal("1.224"), n
+    # For x >= 300 the Dusart bound is smaller than both constants.
     assert (1 + Interval("1.2762") / Interval(300).log()).upper < Decimal("1.224")
 
 
@@ -130,6 +140,57 @@ def g_over_s(alpha):
     right = -(1 - right_shift).log() - right_shift
     left = left_shift - (1 - alpha) * (1 + left_shift / (1 - alpha)).log()
     return largest(right, left) / (alpha * alpha)
+
+
+def verify_ratio_bounds():
+    """Check both rows of the ratio lemma at their lowest terminal."""
+    q = Interval
+    rows = [
+        (25, 3, ".224", "1.218", ".52", q(7) / 8, 10),
+        (200, 2, ".368", "1.033", ".24", q(19) / 20, 13),
+    ]
+    for n, c, a, growth, tail, eta, gap in rows:
+        a, growth, tail = map(q, (a, growth, tail))
+        log_n = q(n).log()
+        sigma = 2 * log_n + c
+        assert (-q(c) / 2).exp().upper < a.lower
+        assert ((log_n + q(c) / 2) / (n - 1)).exp().upper < growth.lower
+        assert (q(1).exp() * a * growth**5 / 5).upper < tail.lower
+        assert (2 * (1 - sigma / 4).exp()).upper < tail.lower
+        short_terms = sum((a * growth**k)**k / factorial(k) for k in range(1, 5))
+        coefficient_sum = 2 * short_terms + 2 * tail**5 / (1 - tail)
+        assert coefficient_sum.upper < eta.lower
+        assert sigma.lower > gap - 1
+        annulus_margin = q(gap * (n - 1)) / (2 * (2*n - 1)) + (1 - eta).log()
+        assert annulus_margin.lower > 0
+    print("Both annulus rows verified at their first terminals.")
+
+
+def verify_pade_loss_and_angle_guards():
+    """Check the constants shared between the Padé lemma and Appendix D."""
+    q = Interval
+    caps = [
+        (q(".03"), q(".128")),
+        (q(".1"), q(".134")),
+        (q(1) / 3, q(".160")),
+        (q(".5"), q(".176")),
+        (q(".75"), q(7) / 32),
+        (q(".75"), q(".218")),
+    ]
+    for alpha, cap in caps:
+        assert g_over_s(alpha).upper < cap.lower
+    # arcsin(sqrt(.03)) < .111*pi/2 from the alternating sine series.
+    t = q(".111") * PI / 2
+    assert (t - t**3 / 6).lower > q(".03").sqrt().upper
+    assert (1 / q(".97").sqrt()).upper < q("1.0156").lower
+    assert (4 * q(2).log() / PI * q(".03").sqrt()).upper < q(".153").lower
+    assert (2 * q("1.006") / PI).upper < q(".641").lower
+    # The normalized beta maximum costs at most log(1+W)+1 < 5.
+    assert ((q(100) / 3).log() + 1).upper < 5
+    first_m = 2199
+    stirling_slack = q(".01") * (first_m + 1) + (2 * PI / first_m).log() / 2 - 5
+    assert stirling_slack.lower > 0
+    assert (1 / q(first_m)).upper < q(".001").lower
 
 
 def verify_intermediate_scalar_bounds():
@@ -221,6 +282,7 @@ def verify_intermediate_scalar_bounds():
              (".28",".45",".170",".315",".62"),
              (".45",".60",".190",".370",".53"),
              (".60",".75",".218",".420",".08")]
+    high_worst = Decimal(9)
     for left,right,kappa,eta,margin in table:
         left,right,kappa,eta = map(q,(left,right,kappa,eta))
         assert g_over_s(right).upper < kappa.lower
@@ -234,11 +296,14 @@ def verify_intermediate_scalar_bounds():
                     + q(".45")*largest(0,q("1.01")+((1-right)/right).log()))
             charge = (u+b.log())/2-q(".49")+q("2.46")*(b/n).sqrt()
             above(gain - charge, margin)
+            high_worst = min(high_worst, (gain-charge).lower)
             above(1-2*kappa*eta-q(".5")-1/sigma, "0")
     u = q(20000).log()
     gain = u-q("1.011")-q(".218")*(q(".42")*q("6.75")+q(".75"))
     charge = (u+q(300).log())/2-q(".49")+q("2.46")*(q(300)/20000).sqrt()
     above(gain-charge, "0")
+    display = high_worst.quantize(Decimal(".00000001"), rounding=ROUND_FLOOR)
+    print(f"High-order moderate-angle table margin exceeds {display}.")
     print("Intermediate scalar and endpoint comparisons passed.")
 
 
@@ -292,6 +357,10 @@ def verify_moderate_angles(n_min, n_max, gap_max, bins, excess, min_margin,
 
 
 def main():
+    if not __debug__:
+        raise RuntimeError("run the exact checks without Python's -O option")
+    verify_ratio_bounds()
+    verify_pade_loss_and_angle_guards()
     verify_prime_estimates()
     verify_intermediate_scalar_bounds()
     fine_bins = [(Interval(k) / 200, Interval(k + (1 if k < 10 else 2)) / 200)

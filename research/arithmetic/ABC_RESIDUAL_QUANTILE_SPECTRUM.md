@@ -117,7 +117,7 @@ In particular
 \]
 The estimate allows a weak limiting atom at \(\theta\) and includes escaped first moments.
 
-Use the fixed-factor count and exact quantitative determinant parameters from [An explicit positive-degree mass in terms of numerical height](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#an-explicit-positive-degree-mass-in-terms-of-numerical-height). For the quantile rounding convention see [Upper quantiles after fixed root locks](research/arithmetic/#one-coordinate-rounding-and-the-resulting-inequalities).
+Use the fixed-factor count and exact quantitative determinant parameters from [An explicit positive-degree mass in terms of numerical height](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#an-explicit-positive-degree-mass-in-terms-of-numerical-height). For the quantile rounding convention see [Upper quantiles after fixed root locks](#one-coordinate-rounding-and-the-resulting-inequalities).
 
 ### Prelimit tails, round-up, and median dispersion
 

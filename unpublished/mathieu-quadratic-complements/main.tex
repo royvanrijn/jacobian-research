@@ -88,9 +88,11 @@ of a polynomial, and multiplication by \(q^M\) selects the leading
 coefficient. The same calculation identifies the least polynomial
 degree needed to detect a failure for this \(F\).
 
-Over \(\mathbb C\), Long's spherical classification already gives the
-dimension cutoff and the existence of fixed detecting multipliers
-\cite[Thm.~1.1]{Long}. To see that it applies, write
+Sections~\ref{sec:positive}--\ref{sec:cutoff} prove the dimension
+cutoff over \(K\) by direct trace calculations and give explicit
+detecting multipliers. The complex cutoff and the existence of
+fixed detecting multipliers also follow from Long's spherical
+classification \cite[Thm.~1.1]{Long}. For that comparison, write
 \(q=2xy+q_0(z)\) for \(N\ge3\), with \(b_0\) the symmetric bilinear
 form of \(q_0\). The isometries
 \[
@@ -793,14 +795,15 @@ moment vanishes whenever \(m\delta+b>0\).
 \end{lemma}
 
 \begin{proof}
-This is the weight argument in Long's instability lemma
-\cite[Lem.~2.1]{Long}. Over \(\overline K\), the affine
-Hilbert--Mumford criterion supplies a one-parameter subgroup taking
+Over \(\overline K\), the affine Hilbert--Mumford criterion
+supplies a one-parameter subgroup taking
 a nonzero \(f\in\mathcal N\) to zero \cite[p.~1]{Kempf}.
 All its weights on \(f\) are then positive. Every weight in \(h f^m\)
 is at least \(b+m\delta\), and trace invariance kills nonzero weights.
 For \(h=1\) this gives purity at every positive order. Scalar extension
 preserves the trace, so these equalities descend to \(K\).
+The same weight argument appears in Long's instability lemma
+\cite[Lem.~2.1]{Long}.
 The cases \(f=0\) or \(h=0\) are immediate.
 \end{proof}
 
@@ -1181,9 +1184,8 @@ de fonctions multiformes}, Comment. Math. Helv. \textbf{66} (1991), 458--503.
 \bibitem{Long}
 C.~D. Long,
 \emph{A Classification of Mathieu's Second Conjecture for Reductive
-Spherical Pairs}, 2026.\par\nopagebreak
-GitHub \href{https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs}{\nolinkurl{long-mathematics/mathieu-second-conjecture-spherical-pairs}},
-\href{https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex}{rev.~\texttt{e9edac2}}.
+Spherical Pairs}, preprint, September 2026.
+\href{https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex}{Manuscript at revision \texttt{e9edac2}}.
 
 \bibitem{Milne}
 J.~S. Milne,

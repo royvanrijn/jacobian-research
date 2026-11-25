@@ -71,6 +71,13 @@ navigation and immutable deposited editions. A new retained source, new named
 declaration, unregistered theorem reference in a TeX proof or new bibliography
 entry makes the checks fail until its mapping is reconciled.
 
+Native C and C++ evidence and the research files listed in
+[the bulk artifact manifest](../external-artifacts.json) are part of the
+source inventory. Restore external artifacts to their recorded repository
+paths before checking navigation. A local symlink at a manifest path can
+point to the corresponding file under the manifest's external root.
+The inventory checks the restored bytes against both recorded digests.
+
 Coverage completeness means the retained material is represented. It does not
 mean all mathematical gaps are solved, every external proof has been expanded,
 or every possible logical consequence has been discovered. Known missing inputs

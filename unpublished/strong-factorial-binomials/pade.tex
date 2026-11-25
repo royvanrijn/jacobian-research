@@ -11,8 +11,11 @@ Its key feature is that an integral polynomial approximates the
 same polynomial to high order after multiplication by each of the
 \(d\) exponentials \(e^{-\omega z}\), \(\omega^d=1\).
 The resulting Wronskian makes at least one of the approximants
-nonzero above every root of \(F\). This adapts the Laguerre norm
-argument of Nguyen-Dang \cite[Proposition~3.9]{nguyen-dang}.
+nonzero above every root of \(F\). The comparison of an integer
+resultant with its local estimates adapts the Laguerre construction
+in Nguyen-Dang's preprint \cite[Proposition~3.9]{nguyen-dang}.
+The following proof derives the rotated truncations, their
+Wronskian and both local estimates for the binomial moments.
 
 \begin{lemma}[Padé resultant inequality]\label{lem:resultant}
 Assume \(N\ge200\), \(a,d\ge1\) and \(d<3a\). Set
@@ -61,21 +64,28 @@ coefficient is \(d^m\), and the coefficients of degrees \(r+1\)
 through \(bm\) vanish.
 
 For \(\omega^d=1\) put \(E_\omega(z)=e^{-\omega z}Q(\omega z)\).
-Then \(E_\omega-B\) has order at least \(bm+1\) at zero. Form
-the Wronskian of \(B\) and the \(d\) functions \(E_\omega\),
-with derivative orders \(0,\ldots,d\). After factoring out
-the exponentials its determinant is a polynomial of degree
-at most \(dm+dr=dbm\). Its leading coefficient comes from
-row zero of the \(B\) column and the determinant
-\(((-\omega)^i)_{1\le i\le d,\,\omega^d=1}\), up to nonzero
-factors. This determinant is Vandermonde times
-\(\prod_{\omega^d=1}(-\omega)\). Subtract the \(B\) column
-from the other columns and take constant linear combinations
-to give those \(d\) series distinct initial orders. They
-have orders at least \(bm+1,\ldots,bm+d\), respectively.
-After subtracting the sum of the row derivative orders, the
-determinant therefore vanishes to order at least \(dbm\).
-It is a nonzero constant times \(z^{dbm}\). At any nonzero
+Let \(T=e^{-z}Q-B\), which vanishes to order at least \(bm+1\).
+Since \(B(\omega z)=B(z)\), we have \(E_\omega-B=T(\omega z)\).
+Form the Wronskian of \(B\) and the \(d\) functions \(E_\omega\)
+with derivative orders \(0,\ldots,d\). Factor \(e^{-\omega z}\)
+out of each \(E_\omega\) column. The resulting polynomial
+determinant has degree at most \(dm+dr=dbm\).
+Its top coefficient comes from row zero of the \(B\) column
+and the determinant \(((-\omega)^i)_{1\le i\le d,\,\omega^d=1}\),
+which is a Vandermonde determinant times
+\(\prod_{\omega^d=1}(-\omega)\). The top coefficient is nonzero.
+
+To calculate the vanishing order, subtract the \(B\) column
+from the original \(E_\omega\) columns. The invertible
+change of columns taking the sums
+\(d^{-1}\sum_{\omega^d=1}\omega^{-(bm+j)}T(\omega z)\),
+for \(1\le j\le d\), retains one residue class of exponents in
+each column. Their orders are at least \(bm+j\).
+In each determinant term the derivatives subtract at most
+\(\sum_{i=0}^d i\) from the total order, so the Wronskian vanishes
+to order at least \(dbm\). Removing the exponential factors
+preserves this order. Hence the polynomial determinant is a
+nonzero multiple of \(z^{dbm}\). At any nonzero
 root of \(B\) the zeroth row consequently has
 \(Q(\omega z)\ne0\) for at least one \(\omega\).
 Choose \(G\) to be the minimal polynomial of such a rotation
@@ -100,14 +110,22 @@ Let \(p\) be prime and \(e=v_p(z)>0\) in an embedding into
 \(s_p(n)/(p-1)\le\log_p(n+1)\), since
 \(p^{u/(p-1)}\le u+1\) for each digit \(u\), and the product
 of the \(u+1\) counts integers whose digits do not exceed
-those of \(n\). If \(e\le\mu\), use \eqref{eq:pade-coeff}
-on the coefficient of \(z^{r-j}\). Its valuation is at least
-\(j\mu-\log_p(M+1)\) by Legendre's formula. If \(e>\mu\), the
-\(p\)-adic exponential converges and \(Q(z)\) is the negative
-tail at a root of \(G\). In \eqref{eq:pade-beta} the factorial
-quotient loses at most \((m+\ell)\mu+\log_p(M+1)\).
-The resulting bound on the valuation of a tail term
-increases with \(\ell\). In both cases,
+those of \(n\). If \(e\le\mu\), the coefficient of \(z^{r-j}\) in
+\eqref{eq:pade-coeff} contains the integer factor \((m+j)!/m!\).
+By Legendre's formula its valuation is at least
+\(j\mu-\log_p(M+1)\), since \(m+j\le bm\).
+The valuation after multiplication by \(z^{r-j}\) is at least
+\(re-\log_p(M+1)\).
+If \(e>\mu\), the \(p\)-adic exponential converges and \(Q(z)\)
+is the negative tail at a root of \(G\). In \eqref{eq:pade-beta}
+put \(n=am+v\le(b-1)m\). Legendre's formula gives
+\[
+ v_p\!\left(\frac{n!}{(n+m+\ell)!}\right)
+ \ge -(m+\ell)\mu-\mu s_p(n)
+ \ge -(m+\ell)\mu-\log_p(M+1).
+\]
+After multiplication by \(z^{bm+\ell}\), the bound increases
+with \(\ell\) and has its minimum at \(\ell=1\). In both cases,
 \begin{equation}\label{eq:pade-local}
  v_p(Q(z))\ \ge\ (bm+1)e-N\min(e,\mu)-\log_p(M+1).
 \end{equation}
@@ -135,11 +153,16 @@ bound the first integrand using \(((1+u)^d-1)^m\le(1+u)^{dm}\)
 and reserve \(e^{-u}\) for integration. The maximum of the
 remaining exponent divided by \(m\) is
 \(g_+(\rho_0-1/m)\), where \(g_+(v)=b\log(b/v)-b+v\).
-Since \(\rho_0-b/2=a/2-s/14>19a/56>1/m\), one has
-\(g_+(\rho_0-1/m)\le g_+(\rho_0)+1/m\).
-Thus \(|Q(z)|<R^{bm+1}/L(z)^N\). The Stirling lower bound on
-\(m!\) gives the stated simpler gain because
-\(0.01(m+1)+\tfrac12\log(2\pi/m)>0\) for \(m\ge199\).
+Since \(\rho_0-b/2=a/2-s/14>19a/56>1/m\), the interval
+\([\rho_0-1/m,\rho_0]\) lies in \((b/2,b)\), where
+\(g_+'(v)=1-b/v>-1\). Therefore
+\(g_+(\rho_0-1/m)<g_+(\rho_0)+1/m\) and
+\(|Q(z)|<R^{bm+1}/L(z)^N\).
+Stirling's lower bound gives the simpler gain once
+\(0.01(m+1)+\tfrac12\log(2\pi/m)>0\).
+This expression increases for \(m\ge199\), since its derivative
+is \(0.01-1/(2m)\). At \(199\) it is positive by \(2\pi>6\)
+and \(e^4>199/6\), using the first five terms of the exponential series.
 When \(d=1\), use the first integral directly, with
 \(((1+u)^d-1)^m=u^m\). The tangent inequality
 \[
@@ -166,8 +189,16 @@ by \(s\), are the functions
  \qquad
  K_-^2\int_0^1\frac{u\,du}{1-\alpha+\alpha K_-u}.
 \end{equation}
-Both increase for \(0<\alpha\le3/4\). In the second derivative
-test the sign is that of \(K_-(1-u/2)-(1-\alpha)/7>0\).
+The first integrand increases since \(K_+\) increases and
+\(1-\alpha K_+u\) decreases. For the second, put
+\(D_-=1-\alpha+\alpha K_-u\). Its derivative with respect to
+\(\alpha\) is
+\[
+ \frac{uK_-}{D_-^2}
+ \left(K_-(1-u/2)-\frac{1-\alpha}{7}\right),
+\]
+which is nonnegative for \(0\le u\le1\), since
+\(K_-/2\ge25/112>1/7\) on \(0\le\alpha\le3/4\).
 At \(\alpha=.03,.1,1/3,.5,.75\), upper bounds for both
 functions are respectively \(.128,.134,.160,.176,7/32\).
 
@@ -180,11 +211,28 @@ Partial fractions in the tail formula yield
  \frac{(-1)^{j-1}\binom{\ell-1}{j-1}}
       {\prod_{i=0}^m(am+di+j)} .
 \]
-Here one expands \(1/(am+di+1)_\ell\) into simple fractions,
-and sums over \(i\) using
-\(\sum_i(-1)^i\binom mi/(x+di)
-=d^m m!/\prod_{i=0}^m(x+di)\), verified by residues.
-For \(e>\mu\), this gives
+Indeed the coefficient of \(1/(x+j)\) in \(1/(x+1)_\ell\) is
+\[
+ \left(\prod_{\substack{1\le u\le\ell\\u\ne j}}(u-j)\right)^{-1}
+ =\frac{(-1)^{j-1}}{(\ell-1)!}\binom{\ell-1}{j-1}.
+\]
+Apply this to \(x=am+di\) in the factorial expansion of the
+tail. The remaining sum over \(i\) is
+\(\sum_i(-1)^i\binom mi/(x+di)=d^m m!/\prod_{i=0}^m(x+di)\).
+The coefficient of \(1/(x+di)\) on the right is
+\(m!/\prod_{t\ne i}(t-i)=(-1)^i\binom mi\).
+In both identities, matching the simple poles leaves a polynomial
+that tends to zero at infinity.
+
+For \(e>\mu\), the tail term indexed by \(\ell,j\) has
+valuation at least
+\[
+ (bm+1)e+m v_p(d)
+  -v_p\!\left(\prod_{i=0}^m(am+di+j)\right)+(\ell-1)(e-\mu),
+\]
+using \(v_p((\ell-1)!)\le(\ell-1)\mu\).
+At fixed \(j\) the weakest bound is at \(\ell=j\).
+Taking the infimum gives
 \begin{equation}\label{eq:pade-progression}
  v_p(Q(z))\ge (bm+1)e+m v_p(d)-
  \sup_{j\ge1}\left\{v_p\!\left(\prod_{i=0}^m(am+di+j)\right)
@@ -197,8 +245,11 @@ Write \(U_i(j)\) for the reverse Newton ordinates
 \[
  U_i(j)=v_p((bi-dj+1)_{dj})-v_p\binom ij,\qquad i=N-1,N.
 \]
-For \(L_p=\lfloor\log_p M\rfloor\), direct factorial counting
-gives \(U_i(j)\le dj/(p-1)+L_p\). The concave hull has the
+For \(L_p=\lfloor\log_p M\rfloor\), the \(dj\) factorial
+arguments contain at most \(dj/p^\nu+1\) multiples of \(p^\nu\)
+for \(1\le\nu\le L_p\), and none for \(\nu>L_p\).
+Summing and dropping the binomial valuation gives
+\(U_i(j)\le dj/(p-1)+L_p\). The concave hull has the
 same affine upper bound, so its value at \(h\) bounds the
 sum of the largest \(h\) valuations of roots of \(R_i\).
 In particular

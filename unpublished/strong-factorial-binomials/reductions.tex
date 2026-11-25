@@ -95,12 +95,11 @@ then \(P_{N-1},P_N\) are coprime.
 \end{lemma}
 
 \begin{proof}
-The upper bound on the
-normalized coefficients in \eqref{eq:normalized-coefficients}
-is symmetric in \(k,m-k\).
-
-Suppose \(s\ge\sigma_N\). Let \(C\) be the constant term \(3\) or \(2\)
-in \(\sigma_N\), and use the following bounds for \(m=N-1,N\).
+Suppose \(s\ge\sigma_N\). The coefficient bound in
+\eqref{eq:normalized-coefficients} is symmetric in \(k,m-k\).
+Write \(\sigma_N=2\log N+C\) and take \(m=N-1\) or \(N\).
+The following rational constants bound the short and long parts
+of the coefficient sum.
 \[
 \begin{array}{c|cccc}
  N&A&E&q&\eta\\ \hline
@@ -108,28 +107,45 @@ in \(\sigma_N\), and use the following bounds for \(m=N-1,N\).
  N\ge200&.368&1.033&.24&19/20
 \end{array}
 \]
-For \(1\le k\le4\), the right side of
-\eqref{eq:normalized-coefficients} is at most
-\((AE^k)^k/k!\). Here \(A\ge e^{-C/2}\) and
-\(E\ge\exp((\log N+C/2)/(N-1))\).
+For \(1\le k\le4\), use \(\binom mk\le N^k/k!\) in
+\eqref{eq:normalized-coefficients}. The factor \(N^k\) cancels
+\(\exp(-k\log N)\). The resulting bound is \((AE^k)^k/k!\), since
+\[
+ A\ge e^{-C/2},\qquad
+ E\ge \exp\!\left(\frac{\log N+C/2}{N-1}\right).
+\]
 For \(5\le k\le m/2\), put \(u=k/m\) and use
 \(\binom mk\le(e/u)^k\). The logarithm of the resulting bound,
 divided by \(k\), is \(1-\log u-\sigma_N(1-u)/2\).
-By convexity its maximum is at an endpoint.
-The tabulated \(q\) bounds both endpoint exponentials, which
-are at most \(eAE^5/5\) and \(2e\,e^{-\sigma_N/4}\).
-The bounds on \(E\) and on the second endpoint are checked
-at the smallest \(N\) in each row, where they are largest.
-In both rows
+Its second derivative in \(u\) is \(1/u^2>0\), so it is bounded
+above by the larger value at \(u=5/m\) and \(u=1/2\).
+The corresponding exponentials are bounded by \(eAE^5/5\)
+and \(2e\,e^{-\sigma_N/4}\).
+On a row with fixed \(C\), the quotient \((\log N+C/2)/(N-1)\)
+decreases because its derivative has numerator
+\(1-1/N-\log N-C/2<0\). The second endpoint exponential
+decreases because \(\sigma_N\) increases.
+Thus it suffices to check the bounds on \(E\) and \(q\) at
+\(N=25\) and \(N=200\), respectively.
+
+The two rows satisfy
 \[
  2\sum_{k=1}^{4}\frac{(AE^k)^k}{k!}+\frac{2q^5}{1-q}<\eta .
 \]
-Consequently \(\sum_{k=1}^{m-1}c_{m,k}<\eta\). At any root
-of \(P_m(w/G_m)\) with \(|w|\le1\), the constant term gives
-\(|w|^m>1-\eta\). The reciprocal polynomial gives
-\(|w|^m<(1-\eta)^{-1}\) when \(|w|\ge1\).
+The supplement checks this rational inequality and encloses the
+exponentials at the two endpoints. By symmetry the displayed
+sum bounds \(\sum_{k=1}^{m-1}c_{m,k}\), including the middle
+coefficient when \(m\) is even. At a root \(w\) of \(P_m(w/G_m)\) with \(|w|\le1\),
+\(1\le |w|^m+\sum_{k=1}^{m-1}c_{m,k}<|w|^m+\eta\).
+Apply the same argument to \(1/w\) in the reversed polynomial
+when \(|w|\ge1\). Every root in the normalized variable then
+satisfies
+\[
+ (1-\eta)^{1/m}<|w|<(1-\eta)^{-1/m}.
+\]
 
-By Lemma~\ref{lem:center-ratio} the two annuli are disjoint since
+At a common root the two values of \(|w|\) have ratio \(G_N/G_{N-1}\).
+By Lemma~\ref{lem:center-ratio} this is too large for the two annuli, since
 \[
  \frac d2\log\!\left(\frac N{N-1}\right)
               \frac{N(N-1)}{2N-1}
@@ -138,9 +154,11 @@ By Lemma~\ref{lem:center-ratio} the two annuli are disjoint since
 \]
 For the last inequality, \(d>s\ge\sigma_N\) gives \(d\ge10\)
 in the first row and \(d\ge13\) in the second. The minimum
-of the displayed rational lower bound in each row occurs at
-its smallest \(N\) and smallest \(d\). This contradicts
-a common root and proves the assertion.
+of the rational lower bound in each row occurs at the smallest
+\(N\) and the smallest \(d\). The resulting bounds are \(120/49\)
+and \(2587/798\), which exceed \(\log 8\) and \(\log 20\),
+respectively. The supplement encloses both logarithms and
+checks the lower bounds on \(d\). This contradicts a common root.
 \end{proof}
 
 

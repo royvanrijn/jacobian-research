@@ -121,3 +121,64 @@ Indeed, the exponent preceding \(\varepsilon\) on the right is
 common-neighbor argument, improving the \(O_{u,v}(r^{-11/5})\)
 error for unequal offsets is a separate estimate in that
 method. [The aligned graph estimate](POWERFUL_MONOMIAL_TAYLOR_REFINEMENT.md)
+
+## Corollary. Low scaled degrees in at least two letters
+
+At any limiting \(abc\) box with normalized count exponent \(d=1/3\),
+at least two of the three weak degree measures give positive root mass
+to \([0,3)\). If exactly two do, those two measures are wholly
+nonatomic and the remaining measure is \(\frac13\delta_3\).
+
+Indeed, every letter measure has mass \(1/3\) and first moment at most
+one. A measure with zero mass below three is then
+\(\frac13\delta_3\) by the same height argument as in the strict
+saving theorem. The endpoint diffusion theorem implies that when
+one letter has zero nonatomic mass, the other two letters have
+nonatomic mass \(1/3\) each. Neither can equal \(\frac13\delta_3\),
+so each must have positive mass below three.
+[The endpoint diffusion theorem](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees)
+
+## Corollary. A small-budget saving with two full letters
+
+There are absolute constants \(\tau,\delta,\lambda_*>0\)
+with the following property. For fixed \(0<\lambda\le\lambda_*\),
+impose \(p\)-fullness and \(q\)-fullness on any prescribed two
+letters, with
+\[
+ \min(p,q)\lambda\ge3-\tau.
+\]
+The number of ordered positive primitive \(abc\) triples
+with these two fullness conditions, \(c\le X\), and
+\(\operatorname{rad}(abc)<c^\lambda\) is
+\[
+ O_{\lambda,p,q,\varepsilon}
+ \bigl(X^{(1/3-\delta)\lambda+\varepsilon}\bigr).
+\]
+The third letter can have arbitrary valuation degrees.
+
+If the bound failed for every choice of the three positive
+constants, take a sequence with \(\lambda_j\to0\),
+\(\min(p_j,q_j)\lambda_j\ge3-o(1)\) and count
+exponent at least \((1/3-o(1))\lambda_j\). Fix the
+positions of the two full letters on a subsequence.
+Form the anatomic boxes with truncation loss
+\(o(\lambda_j)\), as in the three-letter proof.
+The radical budget gives \(L_j\le(1+o(1))\lambda_j\),
+and the limiting one-third box bound gives
+\(\limsup D_j/L_j\le1/3\). Thus
+\(L_j/\lambda_j\to1\) and \(D_j/L_j\to1/3\).
+The two full letters have no roots at indices below
+their respective orders, taking the compression index
+above both orders. Since \(p_jL_j,q_jL_j\ge3-o(1)\),
+their two weak degree measures are supported on
+\([3,\infty)\). The preceding low-degree corollary
+requires positive mass below three on at least two
+letters, giving the contradiction.
+
+The same limiting argument applies to boxes in which
+each of two letters has normalized root mass at most
+\(\tau\) below scaled degree \(3-\tau\). For otherwise
+a diagonal sequence with \(\tau\to0\) and \(d\to1/3\)
+would again give two measures supported on
+\([3,\infty)\). In particular the gap for boxes does
+not require exact absence of the low degree coordinates.

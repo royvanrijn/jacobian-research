@@ -131,6 +131,15 @@ def below(actual, bound, label="upper bound"):
     assert value.hi < Q(bound), (label, float(value.lo), float(value.hi), bound)
 
 
+def report_lower(actual, bound, label):
+    above(actual, bound, label)
+    lower = Interval(actual).lo
+    scaled = lower * 10**8
+    integer = scaled.numerator // scaled.denominator
+    whole, decimals = divmod(integer, 10**8)
+    print(f"{label} >= {whole}.{decimals:08d} (required > {bound})")
+
+
 def maximum(a, b):
     a, b = Interval(a), Interval(b)
     return Interval(max(a.lo,b.lo), max(a.hi,b.hi))
@@ -186,6 +195,25 @@ def check_core():
 
 
 def check_parameter_reduction():
+    above(log(1 - 1/N), "-.001", "log order loss")
+    above(-log(Q(".03")), "3.5", "small-angle t threshold")
+    below(log(4/Q(".97")), "1.417", "weak angular coefficient")
+    below(Q(".001") + Q(2,3)*(Q("1.01") + Q(".128")*Q(".27"))
+          - log(Q(".97"))/3, ".71", "left-half-plane loss")
+    below(Q("1.01")/25 + 2*Q(".128")*Q(".03"), ".049", "proper-coset baseline per rotation")
+    below(Q(".111")*Q(".256"), ".0285", "proper-coset angular slope loss")
+    below(Q(".001") + Q(".96")*Q("1.417") + Q(".049") + Q(".111")*Q("1.266"),
+          "1.608", "proper-coset angular constant")
+    below(Q(".211")*Q(".256"), ".055", "small b angular slope loss")
+    below(Q(".001") + Q(".9")*Q("1.417") + Q(".211")*Q("1.266"),
+          "1.70", "small b angular constant")
+    below(Q(".001") + Q(".98")*Q("1.417") + Q(".025") + Q(".111")*Q("2.459"),
+          "1.72", "small B angular constant")
+    below(Q(".001") + Q(".98")*Q("1.417") + Q(".025") + Q(".19"),
+          "1.64", "small delta angular constant")
+    below(Q(".001") + Q("1.39") + Q(".009") + Q(".19"),
+          "1.60", "final angular constant")
+    below(1/(exp(8)-1), ".001", "large-prime sum remainder")
     below(Q("3.001")*(1+C/log(8)), "4.848", "proper-coset digit ratio")
     below(Q("4.848")/2, "2.43")
     below(Q("4.848")*(50/N)**Q(1,3), ".121")
@@ -208,6 +236,13 @@ def check_parameter_reduction():
     below(SIGMA/Q(".03")**2/N, Q(1,4))
     below(Q("2.001")*(1+C/(U/2)), "2.35")
     below(Q("2.001")*Q("1.03")*(1+C/(U/2)), "2.42")
+    below(log(Q("1.03"))-Q(".54")+Q("2.42"), "1.91", "small b norm charge")
+    below(1/(2*N*log(8)), ".001", "V rounding in prime sum ratios")
+    above((3*N)**Q(1,2), exp(8).hi, "log square-root cutoff for b >= 3")
+    above(Q("10.08")*(8*U/3+Q("1.62"))*exp((U+Q("3.5"))/3),
+          exp(8).hi, "small B norm split threshold")
+    above(Interval(102400)**Q(1,4)*(2*U+log(51))*exp(U/2),
+          exp(8).hi, "small d norm split threshold")
     for ell,u,kappa,lower,upper in [
             (".03",".1",".134","13.07","12.45"),
             (".1",".5",".176","11.54","11.08"),
@@ -262,6 +297,10 @@ def check_degree_and_lattice():
                    -2*(U+Q(".47"))/Q("2.24")*(1+log(W+1))/W
     above(delta_at_top, "1.6")
     above(LOG2+log(2048)/4, "2.59")
+    above(4*Q("2.59")-Q(".001"), 4*C, "prime-count slack for V")
+    above((U+Q(".47"))/Q("2.24"), 2, "spacing of progression valuation jumps")
+    above(Interval(2048)**Q(1,4)*exp(U/2)*2*U,
+          exp(8).hi, "norm split threshold after B lower bound")
     below(6*(Q("3.24")*U+1)/(U+Q(".95")-log(Q("2.5"))-10-Q("3.24")*U/8192), 61)
     above((U+Q(".47"))/Q("2.24"), "6.9")
     below(1-log(6)+log(1+Q("1.5")/Q("6.9")), "-.595")
@@ -270,6 +309,8 @@ def check_degree_and_lattice():
     below((2/PI)*x/(1-x*x)**Q(1,2)*(Q("1.266")+Q(".256")*U), ".19")
     j0 = Q("6.65")+6*Q("3.24")*U/16384
     delta = Q(".045")
+    above((Q(".98")-9*delta)*Q(15,32)-1/U-delta*6*Q("3.24")/16384,
+          0, "small delta surplus derivative")
     above((Q(".98")-9*delta)*t_min-log(delta)-log(Q("3.24")*U)
           -Q("2.101")-j0*delta, ".10")
     below(3000/N*(9*U+j0), ".14")
@@ -286,6 +327,8 @@ def check_degree_and_lattice():
                   *Interval(Q(32,7))**Q(2,9) \
                   *(1/(1-eta**Q(-2,3))+1/(1-eta**Q(-7,3)))
     below(coefficient, "3.4")
+    above(log(eta)+log(Q(32,7)*N*(N-1))/3, Q(3,7),
+          "decrease of lattice log-weighted summand")
     below(log(eta)+log(Q(32,7))/3
           +log(eta)*eta**Q(-7,3)/(1-eta**Q(-7,3)), 1)
 
@@ -314,8 +357,21 @@ def check_last_comparison():
     above(numerator/(Q("3.24")*U), ".0502", "first multiplier bound")
     w0 = Q(6,5)
     ell,u = Q(".21"),Q("1.4")
-    above(norm_lower(ell,u,w0)-wt(Interval(ell),Interval(w0)), ".074")
+    report_lower(norm_lower(ell,u,w0)-wt(Interval(ell),Interval(w0)),
+                 ".074", "delta cutoff surplus")
+    above(norm_lower(Q(".045"),Q(".21"),w0), 0, "positive outer norm lower bound")
     below(Q(2,25)*v0(Q(".21"),w0)/norm_lower(Q(".045"),Q(".21"),w0), ".675")
+    x_min, w_max = Q(".045"), Q(9)
+    above(U+log(Q("2.5")*x_min)+Q("3.06"), 14, "first lattice numerator")
+    above(U+log(x_min/(2*w_max))/3+1, 14, "second lattice numerator")
+    above(U+log(Q("2.5")*x_min), 8, "logarithm in prime-count derivative")
+    above(15*x_min*N, exp(8).hi, "large-prime split starts above e^8")
+    above(2*x_min*N, 7481, "prime-sum lower bound applies to P")
+    below(1+log(Q(5,6)+1/(6*N))-LOG2, ".127", "equal-height loss")
+    below(Q(3,40), ".08", "first norm logarithmic derivative")
+    below((1+Q(3,8192))/(U+Q(".127")), ".08", "second norm logarithmic derivative")
+    above((C-Q(".02"))*8-2*Q(".02")*C, 0, "decrease of rational prime-count factor")
+    below(Q(".21")*(2+Q(3,4096)), ".43", "digit loss derivative")
     for ell,u,w,J,test,margin in [
         (".045",".10",None,15,None,".36"),
         (".10",".14","9","1.26",".109","1.63"),
@@ -325,18 +381,23 @@ def check_last_comparison():
         ell,u,J = Q(ell),Q(u),Q(J)
         if w is not None:
             w = Q(w)
-            above(norm_lower(ell,u,w)-wt(Interval(ell),Interval(w)), test)
+            report_lower(norm_lower(ell,u,w)-wt(Interval(ell),Interval(w)),
+                         test, f"v cutoff surplus with delta in [{ell}, {u}]")
         av = v0(u,w0)
+        above(av, 40, "V0 bound on final row")
         threshold = minimum(av,U+Q(".127")+wt(Interval(ell),Interval(w0))+av/8192)
         z = U+log(Q("2.5")*ell)
         extra = maximum(0,Q("1.017")*Interval(u/(2*w0))**Q(1,3)-Q("1.96")*ell)
         loss = u*(Q("2.5")*av/z*(1+C/z)+2*(U+Q(".127"))+av/4096) \
             +2*u*wt(Interval(u),Interval(w0))+extra
-        above(U-log(J*threshold)-Q("2.061")-loss, margin, "final Padé surplus")
+        report_lower(U-log(J*threshold)-Q("2.061")-loss, margin,
+                     f"final Padé surplus with delta in [{ell}, {u}]")
         below(log(Q("2.5")*ell)-(log(u/Q("2.4"))+Q(".001"))/3, ".02")
 
 
 if __name__ == "__main__":
+    if not __debug__:
+        raise SystemExit("Verification requires assertions. Run Python without -O.")
     check_core()
     check_parameter_reduction()
     check_degree_and_lattice()

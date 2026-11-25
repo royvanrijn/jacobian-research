@@ -1,10 +1,11 @@
 \section{The large relative gaps}
 \label{app:positive-boundary}
 
-The electronic proof appendix \textit{Positive-exponent Boundary}
-contains the contour estimates and the exact finite checks used in
-this section. The following argument specifies the ranges in which
-each of those proofs is needed.
+We separate the prime-power gaps from the three contour estimates.
+The arithmetic proof for prime-power gaps is given below. The
+electronic appendix \textit{Positive-exponent Boundary} gives the
+quantitative contour bounds, their derivations and the exact
+constant checks.
 
 \begin{lemma}
 \label{lem:positive-boundary}
@@ -29,10 +30,13 @@ Coefficient comparison gives, with \(\gamma=N\),
  \gamma Q_{N,\gamma+1,d}
   =(\gamma+dN)Q_{N,\gamma,d}-dxQ_{N,\gamma,d}'.
 \]
-Consequently the actual pair has a common root exactly when
-\(Q_{N,N,d}\) has a multiple root. The prime-power proof in the
-electronic appendix gives squarefreeness at
-\(d=3,4,5,7,8,9\) for this integral shape. The separate
+In fact the lower reciprocal is \(Q_{N-1,N,d}\), so at a
+common root the derivative of \(Q_{N,N,d}\) vanishes. The second
+identity then makes the upper reciprocal a nonzero scalar multiple
+of \(Q_{N,N,d}\) there. Conversely, a multiple root of
+\(Q_{N,N,d}\) makes both reciprocals vanish. The prime-power
+argument in the next subsection gives squarefreeness at
+\(d=3,4,5,7,8,9\). The separate
 gap-six contour proof gives it at \(d=6\) for \(N\ge10000\).
 
 For \(d\ge10\), the lower-one contour proof gives squarefreeness of
@@ -66,8 +70,9 @@ For \(N\ge200\) and \(d\ge25\), one has
 \[
  N<512d/3,\qquad \frac{3d}{4}>2\log(512d/3)+2 .
 \]
-The second inequality holds at \(d=25\) and its margin increases.
-For \(N<200\) the ratio bound is smaller still.
+At \(d=25\) the margin exceeds \(3/100\), and its derivative
+\(3/4-2/d\) is positive. For \(N<200\), use
+\(\sigma_N\le 2\log 199+3<14<3d/4\).
 
 For \(a=1,d\ge10\) below the contour threshold,
 a potential failure has \(d\le19\).
@@ -75,10 +80,13 @@ For \(20\le d\le38\) the threshold is \(5000\), and
 \[
  \frac{d^2}{d+1}\ge\frac{400}{21}>2\log(5000)+2 .
 \]
-For \(d\ge39\) the threshold is \(128(d+1)\), and the
-same comparison holds at \(39\) with an increasing margin.
-The orders \(N<200\) again satisfy the weaker ratio bound
-with room.
+For \(d\ge39\) the threshold is \(128(d+1)\). The difference
+\(d^2/(d+1)-2\log(128(d+1))-2\) exceeds \(18\) at \(39\),
+and its derivative \(1-1/(d+1)^2-2/(d+1)\) is positive.
+For \(N<200\) and \(d\ge20\), the upper bound
+\(\sigma_N<14<400/21\) suffices. The electronic comparison
+script certifies the displayed logarithmic inequalities by
+rational bounds.
 
 The supplemental finite checker therefore needs only the families
 \[
@@ -120,3 +128,200 @@ a=1,\ d=6&9\,975&535&9\,440
 Every possible even degree is excluded, and no modular fallback
 is needed.
 \end{proof}
+
+\subsection{The prime-power gaps}
+
+We prove the squarefreeness needed above for \(q=p^r\),
+where \(p\) is prime and \(r\ge1\). Use \(n=N\), \(\gamma=n\)
+and
+\[
+ T(t)=t^n Q_{n,\gamma,q}(1/t),\qquad
+ R(z)=z^{qn}T((-1)^{q+1}z^{-q}),\qquad M=\gamma+qn.
+\]
+Both changes of variable are unramified away from zero, and both
+\(T(0)\) and \(R(0)\) are nonzero. Write \(D=d/dz\), \(\theta=zD\)
+and define
+\[
+ \mathcal A=z-zD+\gamma+q-1,\qquad
+ \Pi_{n,q}(t)=\prod_{j=0}^{n-1}(t+qj),\qquad
+ B_n=\Pi_{n,q}(\mathcal A)1 .
+\]
+
+\paragraph{The rank condition.}
+The polynomial \(R\) solves \(LR=0\) for the monic operator
+\[
+ L=z^{-q-1}\left[
+ \theta\prod_{\ell=0}^{q-1}(\theta-M-\ell)-z^q(\theta-qn)\right].
+\]
+Indeed consecutive coefficients \(r_k=[z^{q(n-k)}]R\) satisfy
+\((k+1)r_{k+1}=(-1)^{q+1}(n-k)(\gamma+qk)_q r_k\),
+which is the equation at \(z^{q(n-k)}\) after multiplying by
+\(z^{q+1}\). Put \(U=1-D\). We will use the adjoint solutions
+\[
+ f_\omega(z)=e^{-\omega z}z^{1-M}B_n(\omega z),
+ \qquad \omega^q=1.
+\]
+To derive them, set
+\[
+ \begin{aligned}
+ C(x)&=(1-x)^{-\gamma}
+       \left(\frac{1-(1-x)^q}{qx}\right)^{-n-1},\\
+ A_0(x)&=(1-x)((1-x)^q-1),\\
+ b_0(x)&=(M-1)((1-x)^q-1)+qn.
+ \end{aligned}
+\]
+The residue \(n![x^n](C(x)e^{zx})\) equals \(B_n\).
+In fact the substitution \(v=1-(1-x)^q\) makes it
+\[
+ q^n n![v^n](1-v)^{-(\gamma+q-1)/q}
+                  e^{z(1-(1-v)^{1/q})}.
+\]
+With \(v=qt\) the generating function in \(n\) is
+\((1-qt)^{-(\gamma+q-1)/q}e^{z(1-(1-qt)^{1/q})}\).
+Writing it as \(F(t,z)\), differentiation gives
+\((1-qt)F_t=\mathcal A F\), \(F(0,z)=1\). This proves the
+claimed residue formula. Logarithmic differentiation gives
+\(A_0 C'=((n+1)A_0/x-A_0'+b_0)C\). Taking the residue of
+\((e^{zx}A_0 C x^{-n-1})'\) therefore yields
+\[
+ [zA_0(D)+b_0(D)]B_n
+ =z(U^{q+1}-U)B_n+(M-1)(U^q-1)B_n+qnB_n=0.
+\]
+The divergence form \(L=z^{-q}D z^{M+q}D^q z^{-M}-D+qn/z\)
+gives \(L^*=(-1)^{q+1}z^{-M}D^q z^{M+q}D z^{-q}+D+qn/z\).
+For \(f_1=e^{-z}z^{1-M}B_n\) the first term becomes
+\(e^{-z}z^{-M}[zU^{q+1}+(M-1)U^q]B_n\), using
+\(U^qz=zU^q-qU^{q-1}\). The last two terms give
+\(e^{-z}z^{-M}[-zU+qn+1-M]B_n\).
+This proves \(L^*f_1=0\), and substitution of \(\omega z\)
+gives the remaining solutions.
+
+Write \(L=\sum_{k=0}^{q+1}a_kD^k\). The bilinear expression
+\[
+ \sum_{k=1}^{q+1}\sum_{i=0}^{k-1}
+ (-1)^i(a_k f_\omega)^{(i)} R^{(k-1-i)}
+\]
+has derivative \(f_\omega LR-RL^*f_\omega=0\), by cancellation of
+adjacent summands. It is zero because it is a rational function of
+\(z\) times \(e^{-\omega z}\), which cannot be a nonzero constant.
+At a multiple root \(z_0\ne0\) of \(R\), the first two coordinates
+of its jet vanish, and its coordinates \(R'',\ldots,R^{(q)}\)
+are not all zero by uniqueness for the ordinary equation \(LR=0\).
+They give a common nonzero nullvector of the restricted rows of
+these expressions. In the column multiplying \(R^{(j)}\), \(2\le
+j\le q\), the term of highest derivative of \(f_\omega\) is
+\((-1)^{q-j}f_\omega^{(q-j)}\), since \(a_{q+1}=1\).
+The restricted rows are therefore triangular transforms of the
+jets \(f_\omega,\ldots,f_\omega^{(q-2)}\). Removing the common
+power gauge and the nonzero exponential row factors gives a column
+dependence among \(\omega^j(U^jB_n)(\omega z_0)\), \(0\le j\le q-2\).
+The relation \(Uz=zU-1\) shows that \((zU)^j\) differs from
+\(z^jU^j\) by a combination of \(z^iU^i\), \(i<j\).
+Using \(\mathcal A=zU+\gamma+q-1\) and \(z_0\ne0\), the dependence
+becomes
+\[
+ [\Pi_{n,q}(\mathcal A)P(\mathcal A)1](\omega z_0)=0
+ \quad\text{for every }\omega^q=1
+\]
+for some nonzero \(P\) of degree at most \(q-2\).
+The dependent evaluation matrix has algebraic entries, so this
+condition transfers to \(\overline{\Q}_p\).
+
+\paragraph{Excluding the dependence.}
+Normalize \(v(p)=1\), work in a complete algebraically closed
+extension of \(\Q_p\), and let \(\mathcal O\) be its valuation ring.
+Set \(b_r=1+p+\cdots+p^{r-1}\). Every interval of \(qk\) consecutive
+integers contains \(qk/p^\ell\) multiples of \(p^\ell\) for
+\(1\le\ell\le r\). Thus \(v((\gamma)_{qk})\ge b_r k\), and
+\(v(z_0)\ge b_r/q\). Otherwise the leading term of \(R(z_0)\)
+would have uniquely least valuation. In particular
+\(v(u)\ge b_r\) for \(u=z_0^q\).
+
+Here is the invariant under descent from \(q=p^r\) to \(p^{r-1}\).
+Allow an operator and seed
+\[
+ A=c-zD+z+\sum_{i\ge1}a_i z^{p^i},\quad
+ c\in\Z_p,\quad a_i\in p\Z_p,\qquad
+ h\in\mathcal O[[z]],\quad \bar h=\overline{h(0)}\ne0 .
+\]
+For \(u\ne0\), \(v(u)\ge b_r\), and primitive \(P\in\mathcal O[t]\)
+with \(\deg\bar P\le q-2\), the cyclic coefficient vector of
+\(\Pi_{n,q}(A)P(A)h\) modulo \(z^q-u\) is nonzero.
+Here the component \(j\) of the vector of a series \(\sum f_kz^k\)
+is \(\sum_{k\ge0}f_{qk+j}u^k\). These sums converge since \(v(u)>0\),
+and their simultaneous vanishing is equivalent to vanishing at
+the \(q\) distinct roots of \(z^q=u\).
+
+At \(r=1\) reduce the vector modulo the maximal ideal.
+The reduced ring is \(k[z]/(z^p)\), where \(k\) is the residue field,
+\(h\) reduces to a constant unit, and \(\Pi_{n,p}(\bar A)=\bar A^n\).
+The matrix of \(\bar A=z-zD+\bar c\) is triangular with distinct
+diagonal entries \(\bar c-j\), \(0\le j<p\). They are all the
+elements of \(\mathbb F_p\). Its vector \(1\) is cyclic because
+\(\bar A^j1\) is monic of degree \(j\) for \(j<p\), so \(1\) has
+a nonzero projection to each eigenspace. Vanishing would force
+\(\bar P\) to vanish at all \(p-1\) nonzero eigenvalues, impossible
+by its degree.
+
+At \(r\ge2\) use the integral unit series
+\[
+ E(z)=\exp\!\left(\sum_{i\ge0}z^{p^i}/p^i\right)
+     =\prod_{p\nmid m}(1-z^m)^{-\mu(m)/m},
+\]
+where \(\mu\) is the M\"obius function. The product identity follows
+by taking formal logarithms and summing \(\mu\) over divisors.
+Each factor and its inverse are integral because their exponents
+are in \(\Z_p\) and the binomial coefficients are integral there
+by continuity from nonnegative integers. The conjugation \(E^{-1}AE\)
+subtracts \(zD\log E=\sum_{i\ge0}z^{p^i}\) from \(A\).
+It preserves vanishing after changing the seed to \(E^{-1}h\),
+since the series and their inverses converge at every point of the
+fiber. In residue \(j\bmod p\), set \(y=z^p\),
+\(b=a_1-1\), and \(w=by/p\). Write \(e_j\in\{0,\ldots,p-1\}\)
+for the representative of \(c-j\bmod p\). The new block operator
+is \(e_j+pL_j\), with
+\[
+ L_j=\frac{c-j-e_j}{p}-w\frac d{dw}+w+
+        \sum_{i\ge1}\frac{(a_{i+1}-1)p^{p^i-1}}{b^{p^i}}w^{p^i}.
+\]
+This is in the same class. If \(E^{-1}h=\sum_{j=0}^{p-1}z^j
+\widetilde h_j(y)\), the new seed
+\(h_j(w)=\widetilde h_j(pw/b)\) reduces to the constant
+\(\overline{h(0)}(-1)^j/j!\ne0\), using the first \(p\)
+coefficients of \(e^{-z}\). Put \(q'=q/p\). The new fiber parameter
+is \(u_*=(b/p)^{q'}u\), with \(v(u_*)\ge b_r-q'=b_{r-1}\).
+If the original cyclic vector vanishes, the block vectors
+\[
+ \Pi_{n,q}(e_j+pL_j)P(e_j+pL_j)h_j
+             \pmod{w^{q'}-u_*}
+\]
+all vanish. Indeed for each \(y^{{q'}}=u\), the evaluations on the
+\(p\) roots of \(z^p=y\) separate these \(p\) residue blocks by a
+Vandermonde matrix.
+
+If \(e_j\ne0\), absorb the first factor into the seed \(\widehat h_j\).
+This still reduces to a constant unit. The cyclic vectors of
+\(L_j^i\widehat h_j\), \(0\le i<q'\), form a unit basis since
+their reductions are polynomials of successively increasing degree
+with unit leading coefficient in \(k[w]/(w^{q'})\).
+The higher vectors are integral. Expanding \(P(e_j+pL_j)\)
+in divided Taylor coefficients \(P^{[i]}(e_j)\) and inverting
+the unit basis gives \(v(P^{[i]}(e_j))\ge q'-i>0\) for \(i<q'\):
+all terms with \(i\ge q'\) are divisible by \(p^{q'}\).
+Hence
+\[
+ \bar P(t)=(t^{p-1}-1)^{q'}H(t),\qquad \deg H\le q'-2.
+\]
+The first unit coefficient of \(P\) occurs at an index at most
+\(q'-2\). Choose a coefficient \(\kappa\) of \(P(pt)\) of
+least valuation, so \(v(\kappa)\le q'-2\).
+Then \(Q(t)=P(pt)/\kappa\) is primitive and \(\deg\bar Q\le q'-2\).
+In the unique block \(e_j=0\),
+\(\Pi_{n,q}(pL_j)=p^n\Pi_{n,q'}(L_j)\), and division by
+\(p^n\kappa\) contradicts the induction hypothesis at \(q'\).
+This proves the invariant.
+
+Finally the original \(\mathcal A,1\) belong to this class.
+Scaling the dependent polynomial \(P\) to be primitive, the
+rank condition contradicts the invariant. This proves
+squarefreeness at every prime-power gap needed in this appendix.

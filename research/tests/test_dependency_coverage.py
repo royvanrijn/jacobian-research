@@ -2,6 +2,7 @@
 
 from copy import deepcopy
 import hashlib
+import json
 from pathlib import Path
 import subprocess
 import sys
@@ -69,6 +70,42 @@ class CoverageTests(unittest.TestCase):
                         "theorem exported : True := imported_input\n")
         self.assertEqual([(row["locator"], row["kind"]) for row in declarations(path)],
                          [("imported_input", "axiom"), ("exported", "theorem")])
+
+    def test_manifest_lists_ignored_artifacts_and_requires_the_expected_symlink_and_digest(self):
+        subprocess.run(["git", "init", "-q", str(self.repository)], check=True)
+        (self.repository / ".gitignore").write_text("/research/bulk.xz\n")
+        external = tempfile.TemporaryDirectory()
+        self.addCleanup(external.cleanup)
+        external_root = Path(external.name)
+        target = external_root / "research/bulk.xz"
+        target.parent.mkdir()
+        target.write_bytes(b"original evidence")
+        digest = hashlib.sha256(target.read_bytes()).hexdigest()
+        (self.repository / "external-artifacts.json").write_text(json.dumps({
+            "schema_version": 1, "external_root": str(external_root),
+            "files": [{"path": "research/bulk.xz", "sha256": digest}],
+        }))
+        path = self.root / "bulk.xz"
+        try:
+            path.symlink_to(target)
+        except (NotImplementedError, OSError):
+            self.skipTest("symbolic links are unavailable")
+        record = deepcopy(self.data["graph"]["coverage"]["documents"][0])
+        record.update(path="bulk.xz", sha256=digest, role="evidence", statements=[])
+        self.data["graph"]["coverage"]["documents"].append(record)
+
+        self.assertIn("bulk.xz", inventory_paths(self.root, self.repository))
+        self.assertTrue(check_coverage(self.data, self.graph)["complete"])
+        target.write_bytes(b"changed evidence")
+        with self.assertRaisesRegex(CoverageError, "changed external artifact bytes"):
+            check_coverage(self.data, self.graph)
+
+        wrong = target.with_name("wrong.xz")
+        wrong.write_bytes(b"original evidence")
+        path.unlink()
+        path.symlink_to(wrong)
+        with self.assertRaisesRegex(CoverageError, "coverage path escapes repository"):
+            check_coverage(self.data, self.graph)
 
     def test_inventory_excludes_generated_and_archived_editions_but_keeps_current_sources(self):
         subprocess.run(["git", "init", "-q", str(self.repository)], check=True)

@@ -7,6 +7,8 @@ import os
 from pathlib import Path, PurePosixPath, PureWindowsPath
 import re
 
+from external_artifacts import repository_path
+
 
 _TEX_SUFFIXES = {".tex", ".sty", ".cls", ".ltx"}
 
@@ -18,10 +20,7 @@ def _within(path: Path, repository: Path) -> bool:
 def _source_path(value: str, root: Path, repository: Path) -> Path:
     if not isinstance(value, str) or not value or PurePosixPath(value).is_absolute() or PureWindowsPath(value).drive:
         raise ValueError(f"invalid repository-relative source path: {value}")
-    path = (root / value).resolve()
-    if not _within(path, repository):
-        raise ValueError(f"source escapes repository: {value}")
-    return path
+    return repository_path(root / value, repository)
 
 
 def _tex_without_comments(text: str) -> str:
@@ -113,8 +112,11 @@ def source_closure(paths: list[str], root: Path, repository: Path) -> list[dict]
     visited = set()
 
     def enqueue(path: Path, locator: str, tex_root: Path | None = None) -> None:
-        path = path.resolve()
-        if not _within(path, repository) or not path.is_file():
+        try:
+            path = repository_path(path, repository)
+        except ValueError:
+            return
+        if not path.is_file():
             return
         found.setdefault(path, locator)
         context = tex_root if path.suffix.lower() in _TEX_SUFFIXES else None

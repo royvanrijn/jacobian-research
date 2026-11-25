@@ -109,9 +109,10 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Sharp universal pure-to-safe boundary in Gaussian dimension and degree | Internal result | proved | [Source](vanishing/AFFINE_GAUSSIAN_LAURENT_MEAN_VARIANCE_AND_SHARP_DEGREE_BOUNDARY.md) |
 | Nonlinear Hopf profiles and affine seed obstructions | Internal result | proved | [Source](../foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md) |
 | Primitive degree seven and every balanced degree at least six | Internal result | proved | [Source](../foundations/extended-geometry/PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md) |
-| Stripped-Hopf Dirichlet law and a complete quintic subalgebra obstruction | Internal result | stale | [Source](../foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) |
+| Stripped-Hopf Dirichlet law and a complete quintic subalgebra obstruction | Internal result | proved | [Source](../foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) |
+| All-terminal binomial moment schemes in two radial Gaussian laws | Internal result | proved | [Source](../factorial/image-rigidity/ORDINARY_BINOMIAL_MOMENT_SCHEMES_AND_GAUSSIAN_TRANSFER.md) |
 
-**Computed obligations:** 33 unresolved; 4 resolved within their exact scope.
+**Computed obligations:** 34 unresolved; 4 resolved within their exact scope.
 
 
 Scope limits:
@@ -163,13 +164,15 @@ Scope limits:
 - Nonlinear single-profile dilations over every characteristic-zero field have an exact early purity test and composite unsafe primitive degree. Affine multiples of the quartic and sextic seeds cannot give primitive degree-five/seven counterexamples. These restricted classes do not settle global degree five; the separate joint Hopf-profile product realizes degree seven outside them.
 - The joint Hopf algebra gives explicit primitive absolute nonpower Image witnesses in degree four and every degree>=6, with the same balanced-degree-one marker Z nonzero at every order. The former global septic gap is realized; global degree five remains open. Pure and ambient-safe phases inside the specified subalgebra have exact ideal classifications.
 - The stripped Hopf pair B=2y-(2+x)t^2,C=2y-t^2 has a proved all-order half-parameter Dirichlet law. An exact integer certificate excludes ALL least-degree-five pure phases in K[B,C], with an independent native first-five route. This does not resolve the global primitive degree-five gap.
+- The normalized stripped-Hopf and rational octahedral Dirichlet subalgebras have identical mixed moments in both directions. Their normalized five-term charts fail purity by order five. Every polynomial automorphism image of the stripped chart has the same bound and least degree a+4b, where a,b are the least degrees of the transformed Hopf coordinates x,t. The exact stripped-chart orbit degrees are all odd composites and primes at least five outside 7 mod 12. The three-height winding-one quintic box and all its automorphism images satisfy the same twelve-moment test and are safe under purity. The original primitive quintic existence question is equivalent to the least-degree-five pure unsafe phase question on the Hopf quadric.
+- For the radial variables (X^2+Y^2)/2 and X^2(Y^2+Z^2) in the stated standard Gaussian laws, consecutive binomial moment schemes have exact length M(M-1) and sharp original-marked cutoff 2M-2 at every terminal M>=2.
 
 Tracked obligations (computed states):
 
 - **mathematical / open:** [General safety-to-purity/original-vacuum primitivity.](README.md) — MOMENTS-SAFETY-PURITY
 - **mathematical / open:** [Constant quadratic fibre over two ordinary bases.](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) — MOMENTS-TWO-BASE-SAFETY
 - **mathematical / open:** [Determine whether the first sixteen Gaussian moments force purity away from the exceptional orbit for ternary phases of degree at most three. The exact local cutoff on that orbit is sixteen.](vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md) — GAP-TERNARY-PURE-PREFIX
-- **mathematical / open:** [Decide whether a primitive two-pair Image witness exists in odd balanced degree five, requiring F mod R nonzero from the start.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — GAP-IMAGE2-PRIMITIVE-DEGREE-FIVE
+- **mathematical / open:** [Decide existence of a radially primitive two-pair Image witness in balanced degree five, the sole degree left in the existence spectrum.](../foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md) — GAP-IMAGE2-PRIMITIVE-DEGREE-FIVE
 - **verification / open:** [Specify the group/nullcone and audit the nullcone-to-eventual-marker implication used in the Image moment-nullcone assertions.](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) — VERIFY-IMAGE2-NULLCONE-APPLICATION
 - **mathematical / open:** [Does a radial-primitive nonproper-power two-pair Image witness exist in global balanced degree5, or can degree5 be excluded in the unrestricted class? The separate joint Hopf-profile family realizes degree7 and every balanced degree>=6 with one fixed original marker at every order. The restricted two-height prime13 threshold retains its family-specific scope.](../foundations/extended-geometry/PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md) — GAP-IMAGE2-ODD-PRIME-PRIMITIVE
 

@@ -9,6 +9,8 @@ there is no common factor.
 
 Write \(t=\log(1/\alpha)\), \(V=\log(M+1)\) and
 \(\sigma=2U+2\), where \(U=\log N\).
+Throughout this appendix,
+\(\log m=U+\log(1-1/N)>U-1/(N-1)>U-.001\).
 From Lemma~\ref{lem:gap-caps} we may use \(d\le233\) below
 \(20{,}000\) and \(d\le565\) throughout the appendix.
 If \(X\) bounds the prime divisors of the lifted norm \(K\), the
@@ -16,8 +18,13 @@ right side of \eqref{eq:pade-norm} is at most
 \begin{equation}\label{eq:intermediate-prime-head}
  S(X)+\pi(X)V/N,\qquad S(X)=\sum_{p\le X}\frac{\log p}{p-1}.
 \end{equation}
-In the applications below \(V/\log X<j+.001\) whenever
-\(M\le X^j\), since \(M\ge7N\) and \(X\ge9\).
+In the applications below \(M\le X^j\), \(M\ge7N\) and
+\(X\ge9\) give
+\[
+ \frac{V}{\log X}
+ \le j+\frac{\log(1+1/M)}{\log X}
+ <j+\frac{1}{7N\log9}<j+.001 .
+\]
 The baseline from Lemma~\ref{lem:resultant} is
 \(\log\Lambda> U-1.011-g\). The weaker constant \(1.016\)
 also suffices for the estimates of proper cosets.
@@ -29,17 +36,26 @@ For each of the pairs
           (117,.425),(137,.449),(150,.45),(343,.49)
 \]
 one has \(S(x)<\log x-c\) for \(x\ge x_0\).
-Also \(\pi(x)\log x/x<1.224\) for \(x\ge117\).
+For the prime count one has
+\[
+ \frac{\pi(x)\log x}{x}<
+ \begin{cases}
+  1.256 & (x\ge40),\\
+  1.224 & (x\ge117),
+ \end{cases}
+\]
+with the smaller bound on the overlap.
 \end{lemma}
 
 \begin{proof}
 For \(S(x)-\log x\) below \(3000\), check the listed left endpoints
 and the primes, since the function decreases between primes.
-For the prime count, check \(117\) and the primes up to \(300\),
-since \(\log x/x\) decreases for \(x>e\).
-After these ranges the bounds in Lemma~\ref{lem:prime-estimates}
-suffice. The supplement uses directed interval arithmetic for the
-finite comparisons.
+For the prime count, check \(40\) and \(117\) and the primes
+up to \(300\), since between primes the multiplier \(\log x/x\)
+decreases for \(x>e\). For \(x\ge300\),
+Lemma~\ref{lem:prime-estimates} gives
+\(1+1.2762/\log x\le1+1.2762/\log300<1.224\).
+The supplement encloses the logarithms at all these checkpoints.
 \end{proof}
 
 \subsection{Proper rotation cosets}
@@ -54,10 +70,10 @@ and \(4d\le2H<P\). In particular,
 The first inequality uses \(M=dN/\alpha<PN/(4\alpha)\),
 and the second uses \(M<dN^2\).
 
-If \(k_0=1\) and \(d\ge3\), the inequality
-\((4d)^{d+1}<dN^2\) gives \(d<U\). Indeed
-\(d\log(4d)-\log d\) increases for \(d\ge3\) and exceeds
-\(2U\) at \(d=U\) for \(U\ge\log2200\).
+If \(k_0=1\) and \(d\ge3\), then \(P^{d+1}=M<dN^2\).
+Together with \(4d<P\) this gives \(4(4d)^d<N^2\).
+In particular \(d\log(4d)<2U\), so \(d<U\) because
+\(\log(4d)\ge\log12>2\).
 Use \(X=(UN^2)^{1/4}>P\) and \(s<3U/4\) in the
 baseline with \(g\le7s/32\). The resulting surplus over
 \eqref{eq:intermediate-prime-head} is at least
@@ -65,10 +81,15 @@ baseline with \(g\le7s/32\). The resulting surplus over
  U-1.016-\frac{21}{128}U
  -\log X+.22-4.001\cdot1.256\,X/N.
 \]
-This exceeds \(1.10\) at \(N=2200\) and increases thereafter.
-If \(k_0=1,d=2\), use \(X=(2N^2)^{1/3}\), \(s<1.5\) and
-the prime bound with \(c=.33\) in place of \(.22\).
-The surplus exceeds \(.95\) at \(N=2200\) and increases.
+Here \(\log X=U/2+(\log U)/4\).
+The derivative of the terms linear or logarithmic in \(U\) is
+\(1-21/128-1/2-1/(4U)>0\), and \(X/N\) decreases because
+\(-1/2+1/(4U)<0\). The surplus therefore exceeds the certified
+value \(1.10\) at \(N=2200\).
+If \(k_0=1,d=2\), take \(X=(2N^2)^{1/3}\) and \(s<1.5\).
+Now \(\log X=(2U+\log2)/3\), so the surplus again increases.
+With the prime-sum correction \(.33\) in place of \(.22\),
+it exceeds \(.95\) at \(N=2200\).
 
 Suppose \(k_0\ge2\) and \(\alpha\ge.03\). For
 \(\alpha\in[\ell,u]\) put \(X=\sqrt{N/(4\ell)}\).
@@ -81,10 +102,12 @@ lower bound
        +\tfrac13\log((1-u)/u)
 \]
 on \(\log\Lambda\), using \(g\le\kappa s\).
-The upper bound from \eqref{eq:intermediate-prime-head} is
-\(\log X+c+3.001\cdot1.256\,X/N\).
-The following lower margins at \(N=2200\) suffice since the
-gain grows faster than \(\log X\) and \(X/N\) decreases.
+In every row \(X>40\), so \eqref{eq:intermediate-prime-head}
+is bounded above by \(\log X+c+3.001\cdot1.256\,X/N\).
+The lower bound on the gain has slope \(1-4\kappa/3>1/2\)
+in \(U\). The logarithmic part \(\log X\) of the upper bound
+has slope \(1/2\), and \(X/N\) decreases. It remains to check
+the following margins at \(N=2200\).
 \[
 \begin{array}{cccc}
 \toprule
@@ -98,12 +121,15 @@ gain grows faster than \(\log X\) and \(X/N\) decreases.
 \]
 
 For \(\alpha<.03\) and \(q\ge3\), take
-\(X=N^{2/3}/4^{1/3}>P\). We have \(M<X^4\).
+\(X=N^{2/3}/4^{1/3}>P\). From \(4d<P\) we obtain
+\(M<dN^2<XN^2/4=X^4\).
 If \(D\) bounds \(d\), the baseline exceeds
 \(U-1.016-.00384D\).
 Subtracting the upper bound
 \(\log X-.22+4.001(X/N)(1+1.2762/\log X)\)
-gives a surplus which increases with \(N\) for a fixed \(D\).
+gives a surplus that increases for fixed \(D\), since
+\(\log X\) has slope \(2/3\) in \(U\) and
+\((X/N)(1+1.2762/\log X)\) decreases.
 At \(N=2200,D=233\) and \(N=20{,}000,D=565\) it
 exceeds \(1.08\) and \(.68\), respectively.
 
@@ -131,21 +157,35 @@ Lemma~\ref{lem:local-gap} gives \(H<222\) and \(d\le110\).
 For \(N\le3500\) these caps give \(aN+H<X_{154}=17{,}051{,}707\),
 so \(d\le76\).
 
-On a parameter interval \(\ell\le\alpha\le u\), order
-the \(d\) rotations by increasing absolute argument and use
-\(c_j=\cos(\pi j/d)\), an upper bound for the cosine of
-the argument in position \(j\). To state the pointwise gain,
-let \(W=(1-u-c)/u\) for \(c\ge0\).
-Substitute \(v=1-e^{-x/d}\) in the exponent of the second
-integrand in \eqref{eq:pade-integrals}. Its logarithm divided
-by \(m\) is at most \(-Wx+\log(1-e^{-x})\).
-For \(W>0\) the maximum is \(-J(W)\), where
+Let \(\ell\le\alpha\le u\) and order the \(d\) rotations by
+increasing absolute argument, starting at index zero. An arc
+centered at angle zero and containing \(j+1\) arguments has
+length at least \(2\pi j/d\), by the rotation spacing.
+Thus \(c_j=\cos(\pi j/d)\) bounds the cosine in position \(j\).
+
+For a nonnegative upper bound \(c\) on the cosine, set
+\(W=(1-u-c)/u\). In the second integrand in
+\eqref{eq:pade-integrals}, write \(v=1-e^{-x/d}\).
+Use \(v\le x/d\) and \(\Re z/m\le bc\) to bound the logarithm
+of the original integrand, divided by \(m\), by
+\[
+ -\frac{1-\alpha-c}{\alpha}x+\log(1-e^{-x})
+ \le -Wx+\log(1-e^{-x}).
+\]
+For \(W>0\) the derivative on the right vanishes only at
+\(e^{-x}=W/(1+W)\), and the second derivative is negative.
+The maximum is \(-J(W)\), where
 \(J(W)=(1+W)\log(1+W)-W\log W\).
-Thus a lower bound for the log gain, minus \(\log m\), is
-\(\Phi_u(c)=\max\{-1.01+J(W),\log W\}\),
-by the same Stirling estimate as in Lemma~\ref{lem:resultant}.
-Here \(J(W)<5\), which is absorbed by the Stirling slack at
-\(m\ge2199\).
+The original integral over \(0\le v\le1\) is at most
+\(e^{-mJ(W)}\). Since \(J(W)<1+\log(1+W)\le
+1+\log(100/3)<5\), Stirling's inequality gives
+\((m!e^{mJ(W)})^{1/(m+1)}>me^{-1.01+J(W)}\).
+Indeed \(.01(m+1)+\tfrac12\log(2\pi/m)-5\) is positive at
+\(m=2199\) and has derivative \(.01-1/(2m)>0\).
+The linear gain in Lemma~\ref{lem:resultant} is at least \(mW\).
+Together the two gains give
+\(\Phi_u(c)=\max\{-1.01+J(W),\log W\}\) after subtracting
+\(\log m\).
 For \(c<0\) use \(W=(1-u)/u\) in the integrand and
 replace \(\log W\) in this maximum by \(\log(W(1-c))\).
 For \(c\ge0,W\le0\) use the baseline
@@ -160,8 +200,14 @@ when this improves the baseline. It follows by discarding
 the beta tail factor and maximizing the remaining exponent.
 The loss at \(\alpha\) is zero for \(c\le1-\alpha\) and
 otherwise the same formula with \(\alpha\) in place of \(u\).
-It increases with \(\alpha\), since the derivative has the sign
-of \(\log(c/(1-\alpha))-c+(1-\alpha)\ge0\).
+For \(c>1-\alpha\) the derivative of the loss is
+\[
+ \frac d{\alpha^2}
+ \left(\log\frac{c}{1-\alpha}-c+1-\alpha\right)\ge0.
+\]
+For the inequality, \(\log(c/(1-\alpha))\) is the integral
+of \(1/x\ge1\) from \(1-\alpha\) to \(c\le1\).
+This permits evaluating the loss at the upper endpoint \(u\).
 
 By Lemma~\ref{lem:degree-cap}, a prime bound is
 \(\max(a+2d-1,\sqrt M)\). It lies between \(X_1\) and \(X_0\),
@@ -174,16 +220,19 @@ The upper bound for the right side of the norm inequality is therefore
 \begin{equation}\label{eq:moderate-norm}
  \log X_0-c_0+2.001(1+1.2762/\log X_1)X_0/N.
 \end{equation}
-Use \(c_0=.39\) in the smaller band and \(c_0=.45\) in the
-larger band. The first term grows with slope at most \(1/2\)
-in \(U\) and the last decreases, while the lower bound
-\(\log(N-1)+d^{-1}\sum_j\Phi_u(c_j)\) grows with slope greater
-than one. Since \(d\ell\le s<2U+2\), compare at
-\(N=\max\{N_{\min},\exp((d\ell-2)/2)\}\).
-Use the following subdivision of \([.03,.75]\).
+Use \(c_0=.39\) in the first band, where \(X_1>100\), and
+\(c_0=.45\) in the second, where \(X_1>150\).
+In \(U\), \(\log X_0\) is the maximum of a constant and an
+affine function of slope \(1/2\). The quotient \(X_0/N\) is
+the maximum of two decreasing functions, and \(1/\log X_1\)
+also decreases. Thus the norm bound grows at most at rate
+\(1/2\). The angular lower bound
+\(\log(N-1)+d^{-1}\sum_j\Phi_u(c_j)\) grows at rate \(N/(N-1)>1\).
+Since \(d\ell\le s<2U+2\), the first eligible order is
+bounded below by \(\max\{N_{\min},\exp((d\ell-2)/2)\}\).
+For each \(d\) and each interval of the following subdivision,
+the interval checker evaluates the surplus at that lower bound.
 Intervals with \(d(1/\ell-1)<5\) contain no eligible support.
-The margins are obtained by outward rounding as described in
-the supplement.
 \[
 \begin{array}{rrlc}
 \toprule
@@ -197,8 +246,13 @@ N_{\min}&d_{\max}&\text{interval widths}&\text{surplus exceeds}\\
 
 Now take \(20{,}000\le N<e^{15}\). The gap table gives the
 successive caps \(D=257,300,565\) at starting orders
-\(20{,}000,32{,}768,65{,}536\). In each range \(D/N<.015\),
-so \((1+\alpha)^2 b\le D(1+\alpha)^2/\alpha<N\).
+\(20{,}000,32{,}768,65{,}536\). In each range \(D/N<.015\).
+Since \((1+\alpha)^2/\alpha\) decreases on \([.03,.75]\),
+\[
+ \frac{(1+\alpha)^2b}{N}
+ \le\frac D N\frac{(1+\alpha)^2}{\alpha}
+ <.015\frac{1.03^2}{.03}<1.
+\]
 Hence \(\sqrt M\) bounds the norm primes. Using
 \(S(\sqrt M)<\log\sqrt M-.49\), the right side of the norm inequality is below
 \begin{equation}\label{eq:moderate-high-norm}
@@ -217,10 +271,17 @@ Thus, with \(S_0=\min(2U+2,Du)\) and
   +.45\max\{0,1.01+\log((1-u)/u)\}
   -\bigl(\tfrac12(U+\log b_0)-.49+2.46\sqrt{b_0/N}\bigr).
 \]
-The gain grows at rate at least \(1-2\kappa\eta\), the
-logarithmic term on the norm side at rate at most
-\(1/2+1/(2U+2)\), and the square-root term decreases.
-The following minima are taken over the three left endpoints.
+Where \(S_0\) is differentiable in \(U\), its derivative is
+zero or two. Thus the lower bound on the gain grows at rate
+at least \(1-2\kappa\eta\). The logarithmic term in the
+upper bound grows at most at rate \(1/2+1/(2U+2)\), since
+\((\log b_0)'\le2/(2U+2)<1\). The latter inequality also
+makes \(\sqrt{b_0/N}\) decrease. The checker verifies
+\(1-2\kappa\eta>1/2+1/(2U+2)\) at each starting order,
+where the comparison is tightest. It also checks
+\(\cos(\pi\eta)<1-u\) and the upper bound \(\kappa\)
+on \(g/s\) at \(u\). The table records the least certified
+surplus across the three starting orders for each interval.
 For \(d\le9\) the same argument before adding the left half-plane
 gain uses \(\kappa=.218,\eta=.42,\ s\le6.75,\ b\le300\),
 and gives a positive surplus at \(N=20{,}000\) increasing thereafter.
@@ -259,7 +320,10 @@ with \(d\le D\). In \eqref{eq:intermediate-prime-head},
 use \(X/N\le1.03\) and \(X>1.03\sqrt{20N/.03}\).
 At \(N=2200,D=233\) the surplus exceeds \(.17\), and at
 \(N=20{,}000,D=565\) it exceeds \(.08\).
-The right side of the norm inequality minus \(U\) decreases thereafter for each fixed \(D\).
+For fixed \(D\), the gain bound minus \(U\) is constant.
+After using \(X/N\le1.03\) in the norm bound, its remaining
+\(N\)-dependence is through the decreasing reciprocal of
+\(\log(1.03\sqrt{20N/.03})\).
 For \(10\le d\le19\), inserting each \(d\) in
 \eqref{eq:pade-angles} gives \(\log\Lambda>U+2.41\),
 against a right side of the norm inequality below \(U+2.052\) by \(X>343\).
@@ -272,8 +336,11 @@ For an antipodal coset with \(d=2\), write \(c=|\cos\theta|\),
 The two gains have product at least
 \(m^2A_0(1+c)\max\{B_0,A_0-c/\alpha\}\).
 On \(0\le c\le1-\alpha(1+B_0)\) this is a concave quadratic
-in \(c\) and increases on the rest of its domain. The smaller endpoint gives
-the lower bound \(m^2A_0B_0(2-\alpha(1+B_0))\).
+in \(c\) and is linear increasing on the rest of its domain.
+The two endpoint values in the quadratic range, divided by
+\(m^2A_0\), are \(A_0\) and \(B_0(2-\alpha(1+B_0))\).
+The second is smaller because \(A_0>32\) and \(B_0<1\).
+This gives the lower bound \(m^2A_0B_0(2-\alpha(1+B_0))\).
 In particular \(\log\Lambda>U+t/2-.2\).
 For \(d=3\) the small-coset bound gives
 \(U+2t/3-.435>U+t/2-.2\).
@@ -283,7 +350,10 @@ Since \(X>117\), the right side of the norm inequality is at most
  U+\mu+\log(1.03)-.425+
        2.001\cdot1.03\cdot1.224\,e^\mu.
 \]
-As \(t=U-\log d+2\mu\), the surplus is minimized at \(\mu=0\)
+Substitute \(t=U-\log d+2\mu\) in the gain \(U+t/2-.2\).
+The linear terms in \(\mu\) cancel in the surplus, while the
+remaining negative multiple of \(e^\mu\) is smallest at
+\(\mu=0\). The resulting bound increases with \(U\)
 and exceeds \(.96\) at \(N=2200\).
 This proves the first conclusion of Proposition~\ref{prop:middle-tail}.
 
@@ -343,8 +413,10 @@ Their right side of the norm inequality is at most
 For unequal heights, one of the two windows
 \([bm-2H,bm]\), \(m=N-1,N\), contains \(qp^2\)
 with \(1\le q\le Q=M/P^2=P/64\).
-At fixed \(q\) each window contains at most one such \(p>P\)
-by the spacing of the squares. Their digit charge is at most \(2QV/N\).
+At fixed \(q\) each window contains at most one such \(p>P\),
+since consecutive integer squares multiplied by \(q\) are
+spaced by more than \(2P>2H\) there.
+Thus the digit charge is at most \(2QV/N\).
 Put \(Z=b(N-1)-2H\). Since \(Z>.9995M\) and \(Q>12\),
 the first sum in \eqref{eq:pade-norm} on these primes is at most
 \[
@@ -365,11 +437,16 @@ The primes \(p\le P\) contribute at most
 \[
  \frac{V}{\zeta}<3-\frac{3\log4-.001}{\zeta}.
 \]
-The displayed bound and its product with \(1+1.2762/\zeta\)
-are increasing in \(\zeta\). At the upper corner of each row
-they are bounded by \(A_v,A_c\), respectively.
-In the last three rows both are less than three because
-\(3\log4-.001>3\cdot1.2762\).
+Put \(k=3\log4-.001\) and \(c_1=1.2762\).
+Both \(3-k/\zeta\) and
+\[
+ (3-k/\zeta)(1+c_1/\zeta)
+ =3-\frac{k-3c_1}{\zeta}-\frac{kc_1}{\zeta^2}
+\]
+increase in \(\zeta\), since \(k>3c_1\).
+This also bounds both by three. In each row the upper corner
+has its largest \(N\) and \(b/N=5D/6\), so the checker
+evaluates there to obtain \(A_v,A_c\).
 Combining the three ranges of primes, using \(S(P)<\log P-.49\)
 and \(P/(P-1)<1.002\), gives the upper bound
 \begin{equation}\label{eq:hard-upper}
@@ -380,17 +457,25 @@ and \(P/(P-1)<1.002\), gives the upper bound
 For the lower bound let \(E=D/b\).
 The errors in \eqref{eq:pade-angles} satisfy
 \(J<.883\sqrt\alpha\) and \(r/d<.641\sqrt\alpha\).
-Indeed \(\arcsin x+x\sqrt{1-x^2}\le2x\) and
-\(\arcsin x\le1.006x\) for \(x^2\le.03\).
+Indeed the derivative of \(\arcsin x+x\sqrt{1-x^2}\)
+is \(2\sqrt{1-x^2}\le2\). For the second estimate,
+convexity bounds \((1-y)^{-1/2}\) on \(0\le y\le.03\)
+by the chord from \(1\) to \(1/\sqrt{.97}<1.0156\).
+Integrating the resulting upper bound \(1+.52x^2\) gives
+\(\arcsin x\le x+.52x^3/3<1.006x\) for \(0<x^2\le.03\).
 For \(d\ge20\), use
 \(\log C'>t-.6932-1.031E\),
 \(g_0\le1.01+.128DE\), and \(g_0/d\le1.01/d+.128E\).
-At fixed \(b\), the functions
-\((1-1/d)(\log(b/d)-.6932)\) and
-\([2\log(2d/\pi)-1.01]/d\) decrease as \(d\) increases
-from the chosen \(d\ge20\) to \(D\). For the first,
-use \(t<U<15\) at the chosen \(d\).
-Thus \(\log\Lambda\) exceeds
+At fixed \(b\), the derivatives of
+\((1-1/x)(\log(b/x)-.6932)\) and
+\([2\log(2x/\pi)-1.01]/x\), multiplied by \(x^2\), are
+\[
+ \log(b/x)-.6932-x+1,\qquad 3.01-2\log(2x/\pi),
+\]
+respectively. Both are negative for \(d\le x\le D\), since
+\(x\ge20\) and \(\log(b/x)\le t<U<15\).
+Substituting \(D\) for \(d\) in these two decreasing terms
+and bounding the errors with \(E\) gives
 \begin{equation}\label{eq:hard-lower}
  \begin{aligned}
  L={}&U-.001+(1-1/D)(t_D-.6932)
@@ -408,20 +493,36 @@ respectively. For \(10\le d\le19\) retain the positive term
 \(2\log(2d/\pi)/d\ge2\log(38/\pi)/19\) in
 \eqref{eq:pade-angles}.
 
-At fixed \(N\), \(L\) is concave in \(w\).
-The bound \(R\) is convex in \(w\) provided
+For fixed \(U\), the lower bound \(L\) is affine in \(w\)
+minus a nonnegative linear combination of \(e^{-w}\),
+\(e^{-w/2}\) and \(e^{-3w/2}\). It is therefore concave.
+For \(R\) only the \(P/N\) and \(\xi/P\) terms have nonzero
+second derivatives in \(w\). Their sum gives
 \[
- (P^2/N)\left(A_c+\frac{2(v+.001+6)}{64}\right)
-      \ge 2.004D(6-\xi).
+ R_{ww}=
+ \frac{P}{9N}\left(A_c+\frac{2(v+.001+6)}{64}\right)
+      +\frac{2.004D}{9P}(\xi-6).
 \]
-This follows by differentiating the \(P/N\) and \(\xi/P\)
-terms twice. The left side increases with \(U,w\), while
-the right side decreases. It suffices to check \(w=0\) at the
-lower \(N\) endpoint in each row for its largest \(D\).
-At fixed \(w\), \(L\) grows with \(U\) at rate at least \(1.5\),
-whereas \(R\) grows at rate at most \(2/3+2\cdot .71/64\).
-The digit term with \(P/N\) and the two equal-height terms
-decrease since \(\xi>3\).
+To prove \(R_{ww}\ge0\), multiply by \(9P\) and compare the
+positive term with \(2.004D(6-\xi)\).
+The positive term increases in \(U,w\) because
+\(P^2/N=16e^{U/3+2w/3}\) and \(v=2U+w\).
+The term \(D(6-\xi)\) decreases in \(U,w\).
+Where it is positive, it increases with \(D\) because its
+derivative in \(D\) is \(7-\xi>1\).
+It suffices to check \(w=0\) at the smallest order in each row
+with its largest \(D\).
+
+For fixed \(w\), \(L\) grows with \(U\) at rate at least \(1.5\),
+since its negative exponential terms increase towards zero.
+The \(U\)-derivative of \((P/N)(A_c+(v+.001)/32)\) equals
+\[
+ \frac PN\left(\frac1{16}-\frac{A_c+(v+.001)/32}{3}\right)<0,
+\]
+since \(A_c>2\).
+The two equal-height terms decrease because their derivatives
+have the signs of \(1-2\xi/3\) and \(1-\xi\), and \(\xi>3\).
+Thus \(R\) grows at rate at most \(2/3+2\cdot .71/64\).
 The supplement checks the convexity inequality and the surplus
 at the two endpoints of \(w\) at the smallest \(N\) in each row.
 For \(d\ge20\) the certified margins are given in the table.

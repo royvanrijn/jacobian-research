@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Exact-rational endpoint certificate for the two norm comparisons for b > N in the intermediate range."""
 from fractions import Fraction as Q
+from math import factorial
 
 class Interval:
     """Exact rational interval."""
@@ -43,6 +44,12 @@ def log_base(r):
 LOG2 = log_base(Q(2))
 LOG4 = 2*LOG2
 PI = Interval("3.14159", "3.14160")
+
+
+def arctan_reciprocal(denominator):
+    x = Q(1, denominator)
+    partial = sum((-1)**j * x**(2*j + 1) / (2*j + 1) for j in range(8))
+    return Interval(partial, partial + x**17 / 17)
 
 def log_rational(r):
     r = Q(r)
@@ -110,14 +117,43 @@ def bounds(N, B, D, vp, digit, gain=None):
              -(Q(".641")*(Q("1.7032")+Q(".128")*D*A)+Q(".883"))*root(A,2))
     return L-R
 
+def verify_order_ranges():
+    # Check that the table covers all integer orders in [3150, e^15).
+    lower_exp = sum(Q(15**j, factorial(j)) for j in range(71))
+    exp_tail = Q(15**71, factorial(71)) / (1 - Q(15, 72))
+    assert ROWS[0][0] == 3150
+    assert all(begin[0] == end[1] + 1 for end, begin in zip(ROWS, ROWS[1:]))
+    assert ROWS[-1][1] < lower_exp < lower_exp + exp_tail < ROWS[-1][1] + 1
+
+    # The record endpoints X_G come from the prime-gap table in Section 3.
+    global_caps = [(354, 6000, 10726904659), (456, 10000, 42652618343),
+                   (468, 19999, 182226896239), (516, 32767, 461690510011),
+                   (602, 65535, 2614941710599), (1132, 3269017, 43841547845541059)]
+    for gap, terminal, endpoint in global_caps:
+        assert (4 * (2 * log(terminal) + 3)).hi < gap
+        assert gap * (Q(terminal * (5*terminal - 11), 6) + 2) < endpoint
+    previous = 354
+    local_caps = [(320, 5000, 3842610773), (292, 4150, 2300942549),
+                  (288, 3467, 1453168141), (282, 3295, 1294268491)]
+    for gap, terminal, endpoint in local_caps:
+        previous_h, previous_d = previous - 1, previous // 2 - 1
+        assert Q(previous_h, gap) < Q(3150, 2)
+        assert Q(5 * previous_d * terminal**2, 6) + previous_h < endpoint
+        previous = gap
+    for _, terminal, gap, _, _, _, _ in ROWS:
+        applicable = [upper for cap, upper, _ in global_caps + local_caps if cap == gap]
+        assert applicable == [terminal]
+
+
 def main():
-    assert 354*(Q(6000*(5*6000-11),6)+2) < 10726904659
-    assert Q(5*176*5000**2,6)+353 < 3842610773
-    assert Q(5*159*4150**2,6)+319 < 2300942549
-    assert Q(5*145*3467**2,6)+291 < 1453168141
-    assert Q(5*143*3295**2,6)+287 < 1294268491
+    if not __debug__:
+        raise RuntimeError("run the exact checks without Python's -O option")
+    verify_order_ranges()
+    machin = 16 * arctan_reciprocal(5) - 4 * arctan_reciprocal(239)
+    assert PI.lo < machin.lo < machin.hi < PI.hi
     assert (4*root(3000**2,3)).lo > 830
     assert 1-Q(1,3000)-Q(2*467,3000**2) > Q(".9995")
+    assert 1-Q(1,20000)-Q(2*1131,20000**2) > Q(".9995")
     assert Q(1)/(Q(".9995")-Q(1,830)) < Q("1.002")
     assert Q("1.002")*(Q(2,3)+Q(1,24)) < Q(".71")
     assert LOG2.hi < Q(".6932")
@@ -137,9 +173,10 @@ def main():
                 +Q(".153")+Q(".001")-2*log(38/PI)/19)
     assert loss2.hi < Q(".2") and loss3.hi < Q(".435")
     assert loss49.hi < Q(".68") and loss1019.hi < Q(".925")
+    smallest_surplus = Q(10)
     for N, Nmax, G, D, vp, digit, margin in ROWS:
         assert D == G//2-1
-        assert N >= 1001
+        assert 4*D < N
         assert (4*root(N*N,3)).lo > max(Q(5*G,2),830)
         U = log(N)
         xi = U-log(D)+Q(".337")
@@ -156,13 +193,19 @@ def main():
         assert (amax*(1+Q("1.2762")/zmax)).hi < digit
         endpoints = [Q(1), Q(5*D,6)]
         vals = [bounds(N,B,D,vp,digit) for B in endpoints]
-        assert min(x.lo for x in vals) > margin
+        lower = min(x.lo for x in vals)
+        assert lower > margin
+        smallest_surplus = min(smallest_surplus, lower)
         print("large d", N, [float(x.lo) for x in vals])
         for small_D, f, cost in SMALL:
             vals = [bounds(N,B,small_D,vp,digit,(f,cost))
                     for B in [Q(1),Q(5*small_D,6)]]
             assert min(x.lo for x in vals) > Q("3.8")
             print("small d", N, small_D, [float(x.lo) for x in vals])
+
+    assert smallest_surplus > Q(".02398705")
+    print("All order ranges and two-height endpoint checks passed, with surplus > .02398705.")
+
 
 if __name__ == "__main__":
     main()
