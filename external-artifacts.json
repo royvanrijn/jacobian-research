@@ -34,10 +34,6 @@
       "sha256": "b0dca3012b7b1dd5698a4f67051f41e53d55962888f0328bbd35e85c3a367a96"
     },
     {
-      "path": "to_process/Jacobian_research_recovery_2026-11-22.zip",
-      "sha256": "2ddaf0e5b5a9feb5b93925afcb9c8bd410311d55a48a54d845d48388dc985229"
-    },
-    {
       "path": "research/arithmetic/abc_height_fulloc_improved_unit_certificate.part4.xz",
       "sha256": "299862d47187f29ffccf1f3b1c6003745172daf97c4b7b361e4e3ebec509b789"
     },
