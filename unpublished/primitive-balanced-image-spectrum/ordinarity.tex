@@ -1,0 +1,132 @@
+\section{Proof of the ordinary-reduction theorem}\label{sec:ordinarity}
+
+Fix a complex embedding of the base field. The rational Betti \(H^1\) is
+two-dimensional over \(E\), and Hodge conjugation exchanges the embeddings
+in each pair. The two holomorphic multiplicities of such a pair therefore
+sum to two. We call the pair \emph{balanced} when both are one.
+
+\begin{proof}[Proof of Theorem~\ref{lem:rank-two}]
+Work over a finite extension containing a normal closure of \(E\), with the
+endomorphisms and polarization defined. Choose a rational prime \(\ell\)
+away from the discriminant of \(E\) and the index of the endomorphism
+order in \(\mathcal O_E\). Take \(N\) with \(\ell^N>2^{2e+1}\) and further
+extend the base to make \(J[\ell^N]\) rational and to contain the
+\(\ell^N\)-th roots of unity. The absolute degree-one primes have density one,
+since primes of higher residue degree have norm at least the square of
+their underlying rational prime.
+At a good such prime of residue characteristic \(p\), outside a finite
+set, \(p\ne\ell\) and \(E\otimes\mathbb Q_p\) splits. The actual
+endomorphism order in \(E\) has completion \(\mathcal O_E\otimes\mathbb Z_p\)
+away from finitely many primes. Its idempotents split the \(p\)-divisible
+group, and the crystalline summands have rank two.
+
+Here are the trace comparisons used below. For an actual endomorphism
+\(h\) of the reduction, the characteristic polynomial on \(H^1\) is
+the degree polynomial of \(h\), both in \(\ell\)-adic and in crystalline
+cohomology. Its value at a sufficiently large integer \(m\) equals
+\(\deg([m]-h)\), by the exterior algebra description of cohomology
+and the action on top cohomology. Take a rational basis of \(E\) made
+of integral endomorphisms \(a\) and apply this to \(a\pi_p\), where
+\(\pi_p\) is the \(p\)-power Frobenius of the reduction. The
+nondegenerate field-trace pairing identifies the relative traces in
+the two cohomologies as the scalar extensions of one element
+\(\tau\in E\), determined by
+\(\Tr_{E/\mathbb Q}(a\tau)=\Tr(a\pi_p\mid H^1)\).
+The same argument with \(a\) alone identifies the ranks of the
+crystalline summands with the rank-two Betti comparison ranks.
+Every embedding of \(\tau\) gives a sum of two Frobenius eigenvalues,
+which are algebraic integers of absolute value \(\sqrt p\) under
+every complex embedding. Hence \(\tau\in\mathcal O_E\) and
+\[
+                             |N_{E/\mathbb Q}(\tau)|\leq 2^{2e}p^e.
+\]
+
+The split crystalline components have slopes in \([0,1]\), with sum
+given by the dimension of the corresponding \(p\)-divisible factor.
+The dimensions agree with the characteristic-zero Hodge
+multiplicities in the split idempotent pieces, since the ranks in
+the Lie algebra are preserved by good reduction. In each conjugate pair
+of type \((0,2)\), the component of dimension two has both slopes one.
+Its trace is divisible by \(p\).
+In a nonordinary pair of type \((1,1)\), the two slopes of the
+nonordinary component lie strictly between zero and one, since they
+sum to one. The polarization pairs that component with slopes obtained
+by subtracting its slopes from one. Both component traces are therefore
+divisible by \(p\). The slopes show that each trace has positive
+\(p\)-adic valuation, and integrality of the relative trace at each
+split place makes that valuation at least one.
+If \(b\) is the number of pairs of type \((1,1)\), nonordinarity implies
+\[
+                         p^{e-b+2}\mid N_{E/\mathbb Q}(\tau).
+\]
+Indeed all \(e-b+2\) places counted here are distinct and have degree one.
+For \(b\leq2\) the normalized trace norm belongs to a fixed finite set
+of integers at every nonordinary degree-one prime.
+
+We now use a torsion congruence, as in the ordinary-reduction argument
+attributed to Katz by Ogus \cite[Proposition~2.7.2]{ogus}. At our good
+degree-one prime, Frobenius acts as the identity modulo \(\ell^N\) on
+the Tate module, and \(p\equiv1\pmod{\ell^N}\). For every element \(a\)
+of the integral endomorphism order in \(E\) we obtain
+\[
+  \Tr_{E/\mathbb Q}(a\tau)
+    =\Tr(a\pi_p\mid H^1)
+    \equiv\Tr(a\mid H^1)
+    =\Tr_{E/\mathbb Q}(2a)
+    \pmod{\ell^N}.
+\]
+The order completes at \(\ell\) to \(\mathcal O_E\otimes\mathbb Z_\ell\),
+where the field-trace pairing is perfect by the choice of \(\ell\).
+Thus \(\tau\equiv2\) in this completion modulo \(\ell^N\). Taking the
+norm and using the congruence for \(p\) gives
+\[
+ p^{-e}N_{E/\mathbb Q}(\tau) \equiv 2^{2e}\pmod{\ell^N}.
+\]
+If reduction were nonordinary, the integer on the left would lie in
+\([-2^{2e},2^{2e}]\). The modulus forces it to equal \(2^{2e}\).
+Equality in the product Weil bound forces \(|\sigma(\tau)|=2\sqrt p\)
+for every complex embedding \(\sigma\) of \(E\), so
+\(\tau\overline{\tau}=4p\) in \(E\). At either split place of a
+nonordinary balanced pair, the left side has valuation at least two
+because both traces are divisible by \(p\). The right side has
+valuation one for \(p\ne2\). This contradiction excludes all
+nonordinary absolute degree-one primes outside the finite exclusions
+over the chosen extension, proving the density claim.
+\end{proof}
+
+\subsection{Comparison with ordinary-reduction theorems}
+
+Sawin determines the density of ordinary primes for abelian surfaces and
+uses a Weil bound and algebraic Chebotarev to control an integral,
+normalized Frobenius trace \cite[Theorem~1 and Corollary~2]{sawin}.
+Fit\'e's results apply to certain threefolds, fourfolds, and higher-dimensional
+varieties with extra endomorphisms. In particular, a Galois endomorphism
+subfield of degree \(g=\dim J\) gives positive density of \(p\)-rank
+at least \(\lceil g/2\rceil\) \cite[Theorems~1--4 and Corollary~5]{fite}.
+These results supply several small-dimensional cases of the cover
+argument.
+
+Cantoral Farf\'an, Li, Mantovan, Pries, and Tang use a relative trace norm
+to prove density-one ordinarity after finite extension for simple
+signature with full geometric endomorphism algebra a CM field
+\cite[Assumptions~2.1 and~2.5, Proposition~3.12, and Theorem~4.18]{cantoral}.
+In relative rank two, simple signature permits one balanced conjugate
+pair. Theorem~\ref{lem:rank-two} extends the potentially density-one part
+of that rank-two result to two balanced pairs and to an acting field
+\(E\) inside an arbitrary full geometric endomorphism algebra. The
+additional divisibility is the trace contribution of the second
+member of the nonordinary balanced pair. The proof works at split
+primes after base extension. The results of \cite[Theorems~4.18--4.19]{cantoral}
+also address higher relative rank, ordinary density over the original
+field in certain cases, and \(\mu\)-ordinary reduction.
+
+The primitive factors of cyclic orders \(7,9,11,15\) in the quintic
+argument have dimensions \(6,6,10,8\), respectively, and the indicated
+cyclotomic action has exactly two balanced pairs in each case. The
+theorem applies to each smooth member with those branch exponents,
+including members with additional endomorphisms. By comparison, the
+order-five four-branch case has one balanced pair. Its exponents
+\((4,2,2,2)\) become \((1,3,3,3)\) on changing the deck generator,
+giving the Moonen family treated in
+\cite[Corollary~5.1 and \S5.2]{cantoral} under the endomorphism hypotheses
+there.

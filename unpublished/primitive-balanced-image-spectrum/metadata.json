@@ -1,0 +1,57 @@
+{
+  "title": "The primitive balanced-degree spectrum in the two-pair Image problem",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Determines the exact primitive, absolutely nonpower balanced failure spectrum in two contraction pairs and proves density-one ordinary reduction after finite extension for Rosati-compatible rank-two CM multiplication with at most two balanced pairs.",
+  "status": "ready-for-review",
+  "published": false,
+  "catalogued_on": "2026-11-25",
+  "source": "main.tex",
+  "pdf": "primitive-balanced-image-spectrum.pdf",
+  "build": "SOURCE_DATE_EPOCH=1795564800 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=primitive-balanced-image-spectrum main.tex",
+  "abstract": "Over every characteristic-zero field, the balanced degrees admitting radially primitive, absolutely nonpower two-pair Image counterexamples are precisely \\(4,6,7,8,\\ldots\\). All pure balanced phases through degree three are safe, as are all pure radially primitive balanced quintics. One explicit integer family realizes the failure degrees with a common marker of balanced degree one that detects every positive power. We also prove that an abelian variety with Rosati-compatible rank-two multiplication by a CM field has ordinary primes of density one after finite extension if at most two conjugate embedding pairs have Hodge multiplicities \\((1,1)\\). The full geometric endomorphism algebra may be larger than the acting field. In the quintic proof, this theorem supplies ordinary reduction for factors of cyclic covers whose Frobenius coefficients detect nonzero polynomial moments.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "verification_record": "verification.json",
+  "next_steps": [
+    "Contributor review of the exact upload package, deposit declarations, AI-use disclosures, and license choice.",
+    "Specialist review of the proper direct-image argument and the rank-two ordinary-reduction theorem."
+  ],
+  "source_bundle": "primitive-balanced-image-spectrum-hexagon-source.zip",
+  "source_bundle_members": {
+    "main.tex": "main.tex",
+    "construction.tex": "construction.tex",
+    "quintics.tex": "quintics.tex",
+    "ordinarity.tex": "ordinarity.tex",
+    "proper-volume.tex": "proper-volume.tex"
+  },
+  "submission": {
+    "venue": "Hexagon",
+    "status": "prepared",
+    "prepared_on": "2026-11-25",
+    "upload": "primitive-balanced-image-spectrum-hexagon-source.zip",
+    "primary_category_suggestion": "math.AG",
+    "cross_list_suggestions": [
+      "math.NT",
+      "math.RA"
+    ],
+    "keywords": [
+      "Special Image Conjecture",
+      "balanced polynomials",
+      "Mathieu subspaces",
+      "ordinary reduction",
+      "CM fields",
+      "cyclic covers"
+    ],
+    "provenance": "AI-PROVENANCE.md",
+    "distribution_license": "Contributor to select at deposit"
+  },
+  "reproducibility_archive": "primitive-balanced-image-spectrum-verification.zip",
+  "checksums": "SHA256SUMS.txt",
+  "verification": {
+    "scope": "Written proofs and primary-source comparison, exact finite replays from an extracted archive, internal PDF-only reader review, and visual inspection of the revised PDF.",
+    "limits": "External mathematical review and reproduction by an external reviewer have not been performed. The paper is not formally verified."
+  }
+}

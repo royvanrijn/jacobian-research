@@ -3,7 +3,7 @@
 \usepackage[expansion=false]{microtype}
 \usepackage{xcolor}
 \usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
-\hypersetup{pdftitle={Additive representations by powerful integers},pdfauthor={Roy van Rijn}}
+\hypersetup{pdftitle={Primitive sums of powerful integers and the abc endpoint},pdfauthor={Roy van Rijn}}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
@@ -13,40 +13,40 @@
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\C}{\mathbb C}
 \newcommand{\Rel}{\ll_{\eps}}
-\title[Additive representations by powerful integers]{Additive representations by powerful integers}
+\title[Primitive sums of powerful integers]{Primitive sums of powerful integers and the \(abc\) endpoint}
 \author{Roy van Rijn}
 \subjclass[2020]{11D45, 11D72, 11N25, 11G50}
-\keywords{powerful numbers, rational reconstruction, bipartite graphs, Campana points}
+\keywords{powerful numbers, radical, \(abc\) triples, rational congruences, Campana points}
 \begin{document}
 \begin{abstract}
-For all sufficiently large \(k\), the number of primitive
-\(k\)-full triples \(a+b=c\le X\) is
-\(O_{k,\eps}(X^{(2-1/153)/k+\eps})\).
-We compress each triple at fixed \(c\) to a rational congruence
-and count its solutions using a rectangular determinant.
-A minimum-energy subset controls the loss of precision
-under Newton divided differences. The partition depth and
-amplification order depend on the factorization of the modulus. For fixed offsets \(p=r+u,\ q=r+v\)
-we also save a fixed multiple of \(1/r\) over \(1/p+1/q\).
-For representations by two positive \(k\)-full integers,
-we give pointwise bounds of \(O_\eps(N^{3/10+\eps})\) for \(k=2\)
-and \(O_{k,\eps}(N^{1/(k+1)+\eps})\) for \(k\ge3\).
-The graph bounds for these estimates apply also to large
-coprime differences.
+Assuming two stated small-budget \(abc\) box estimates, we obtain
+\(O_{p,q,r,\eps}(X^{(1/3-\delta)\lambda_0+\eps})\) for the count of ordered primitive
+\(p,q,r\)-full triples \(a+b=c\le X\), where
+\(\lambda_0=1/p+1/q+1/r\) is sufficiently small and
+\(\delta>0\) is absolute. Fullness forces point masses at the
+limiting one-third coefficient.
+A congruence determinant gives
+\(O_{k,\eps}(X^{(2-1/153)/k+\eps})\) for large equal orders \(k\)
+and an order-\(1/r\) saving for large \(r\) at fixed offsets.
+Pointwise counts of two \(k\)-full summands are
+\(O_\eps(N^{3/10+\eps})\) for \(k=2\) and \(O_{k,\eps}(N^{1/(k+1)+\eps})\)
+for \(k\ge3\). Under the box hypotheses, a saving in a count with least
+target multipliers is equivalent to a strict saving for small-budget \(abc\) triples.
+
 \end{abstract}
 \maketitle
 
 \section{Introduction}
 A positive integer \(m\) is \(k\)-full if \(p^k\mid m\) for every prime
-\(p\mid m\). Let \(N_{p,q,r}(X)\) count triples of positive \(p\)-full,
+\(p\mid m\). Let \(N_{p,q,r}(X)\) count ordered triples of positive \(p\)-full,
 \(q\)-full, and \(r\)-full integers \(a,b,c\), respectively, with
 \(a+b=c\le X\) and \(\gcd(a,b,c)=1\).
-Browning and Verzobio \cite[Theorem~1.1]{BV} save
-\(1/r^2+O_{u,v}(r^{-5/2})\) over \(1/p+1/q\) when
-\(p=r+u\) and \(q=r+v\) have fixed offsets. We double the
-leading saving for every fixed pair of offsets using the
-common-neighbor method. Direct compression gives a stronger
-large-order saving.
+For fixed offsets \(p=r+u, q=r+v\) with \(u\ge v\ge0\), Browning and
+Verzobio \cite[Theorem~1.1]{BV} save \(1/r^2+O_{u,v}(r^{-5/2})\)
+over \(1/p+1/q\). Theorem~\ref{thm:adaptive-triples} saves order \(1/r\)
+using rational congruences. Theorem~\ref{thm:abc-endpoint-transfer}
+reduces the stronger bound with exponent at most \((1-3\delta)/r+\eps\)
+to two small-budget estimates, using the incompatibility between fullness and a diffuse valuation distribution.
 
 \begin{theorem}\label{thm:adaptive-triples}
 For all sufficiently large \(k\) and every \(\eps>0\),
@@ -1953,11 +1953,265 @@ fiber cardinality bounds used in the surface step. The
 congruence input in Theorem~\ref{thm:monomial} supplies
 information beyond those cardinality constraints.
 
+\section{Transfer from the small-budget \texorpdfstring{\(abc\)}{abc} endpoint}
+\label{sec:abc-endpoint-transfer}
+
+Write \(\lambda_0=1/p+1/q+1/r\). Since \(\rad(n)\le n^{1/s}\)
+for \(s\)-full \(n\), the triples counted by \(N_{p,q,r}(X)\)
+satisfy
+\begin{equation}\label{eq:radical-full}
+  \rad(abc)\le a^{1/p}b^{1/q}c^{1/r}<c^{\lambda_0}.
+\end{equation}
+To get below the limiting one-third coefficient in that radical
+budget, one must use more than \eqref{eq:radical-full}. The minimum
+valuations on the three letters give such information. At the
+endpoint, the total radical budget and the three separate height
+bounds force all of the root mass onto a single scaled degree on
+each letter. We now state the precise box estimates the argument needs.
+
+For \(c\in[Y,2Y)\) use the factorization
+\[
+   n=n_0\prod_{e=1}^{d_0} n_e^e
+       \qquad (n=a,b,c)
+\]
+of Bernert, Browning, Lichtman and Ter\"av\"ainen
+\cite[Lemma~2.2]{BBLT}. With loss parameter \(0<\rho<1\), the
+coefficient \(n_0\) is at most \(n^\rho\), and
+\(\prod_{e\ge1}n_e\) differs from \(\rad(n)\) by factors between
+\(n^{-\rho}\) and \(n^\rho\). More specifically, valuations through
+the cutoff \(d_0\) are entered at their own degree, while valuations
+above the cutoff are processed by division by the compression index
+\(\lceil 1/\rho\rceil\). This places their quotients at that index and
+their remainders in \(n_0\). In particular, if the compression index
+is at least \(s\), an \(s\)-full letter has \(n_e=1\) for every
+\(e<s\).
+
+Fix the three coefficients and a dyadic interval for each root, with
+lower endpoints \(U_{T,e}\), where \(T\) ranges over \(a,b,c\). For
+fixed truncation, take the height limit along a sequence of such
+boxes. Write \(L_{T,e}\) for the limit of \(\log_Y U_{T,e}\) and
+\(D\) for the limiting count exponent to base \(Y\). Define
+\[
+  L_T=\sum_e L_{T,e},\qquad L=\sum_T L_T,\qquad
+  \nu_T=\sum_e \frac{L_{T,e}}{L}\,\delta_{eL}\quad(L>0).
+\]
+Here \(\delta_x\) is the point mass at \(x\). The count exponent and
+the root exponents can always be taken along a subsequence at fixed
+truncation. All limits across truncations and budgets refer to these
+fixed-truncation limits.
+
+\paragraph{Endpoint hypotheses.}
+For fixed-truncation box limits drawn from budgets
+\(\rad(abc)<c^\lambda\) as \(\lambda\to0\), with truncation
+loss \(\rho=o(\lambda)\) and \(L\asymp\lambda\), assume the
+following estimates.
+\begin{enumerate}
+\item The normalized count satisfies \(\limsup D/L\le1/3\).
+\item If \(D/L\to1/3\), then each \(L_T/L\to1/3\) and the
+sum of the nonatomic masses of the three weak limiting
+measures \(\nu_T\) is at least \(1/2\).
+\end{enumerate}
+The same hypotheses apply to boxes counted with additional
+restrictions on their members. Indeed the unrestricted box count
+has exponent at least that of the restricted box, and the first
+hypothesis forces the same normalized limit when the restricted
+exponent already reaches \(1/3\).
+
+\begin{theorem}\label{thm:abc-endpoint-transfer}
+Under the endpoint hypotheses there are absolute constants
+\(0<\delta<1/3\) and \(\lambda_*>0\) such that, for every triple of integer orders
+\(p,q,r\ge2\) with \(\lambda_0\le\lambda_*\) and every
+\(\eps>0\),
+\[
+  N_{p,q,r}(X)\ll_{p,q,r,\eps}
+          X^{(1/3-\delta)\lambda_0+\eps}.
+\]
+Under the same hypotheses, for each fixed \(0<\gamma<1/3\) there
+are constants \(\delta_\gamma,\lambda_\gamma>0\) with the following
+property. For each fixed \(0<\lambda\le\lambda_\gamma\), the
+number of ordered positive primitive triples with \(c\le X\),
+\(\rad(abc)<c^\lambda\), and at least one letter \(T\) satisfying
+\(\rad(T)\le c^{(1/3-\gamma)\lambda}\) is
+\(O_{\lambda,\gamma,\eps}(X^{(1/3-\delta_\gamma)\lambda+\eps})\).
+\end{theorem}
+
+\begin{proof}
+For either assertion, if there is no fixed saving then there is
+a sequence of budgets \(\lambda_j\to0\) with count exponents at
+least \((1/3-o(1))\lambda_j\), taking the height limit at each
+fixed budget and fixed orders. For the first assertion
+\(\lambda_j=1/p_j+1/q_j+1/r_j\), and
+\eqref{eq:radical-full} supplies the budget. Passing from cumulative
+counts to shells loses only an arbitrarily small exponent, since
+a bound by a fixed positive power on all sufficiently large
+shells sums to a bound by the same power. Choose
+\(\rho_j=o(\lambda_j)\), with the compression index at least
+\(\max(p_j,q_j,r_j)\) for the first assertion. There are
+\(O(Y^{3\rho_j})\) coefficient choices and
+\(O_{d_0}((1+\log Y)^{3d_0})\) dyadic boxes on each shell. Thus we
+can take fixed-budget limits on boxes having
+\(D_j\ge(1/3-o(1))\lambda_j\).
+
+The radical comparison gives \(L_j\le\lambda_j+O(\rho_j)\), and
+counting all root tuples gives \(D_j\le L_j\). Thus \(L_j\asymp\lambda_j\).
+The first endpoint hypothesis now forces \(L_j/\lambda_j\to1\)
+and \(D_j/L_j\to1/3\). The second gives
+\(L_{T,j}/L_j\to1/3\) on every letter. The first moments of the
+measures are at most one, since
+\(\sum_e e L_{T,e,j}\le1\) by the numerical height bound.
+This gives tightness and preserves the masses in weak limits.
+
+In the full case, write \(s_{T,j}\) for the order of letter \(T\).
+All its roots with positive mass have degree at least \(s_{T,j}\),
+so \(s_{T,j} L_{T,j}\le1\). In particular
+\(\limsup_j s_{T,j}\lambda_j\le3\). Since the three
+\(1/(s_{T,j}\lambda_j)\) add to one, each tends to \(1/3\).
+Therefore \(s_{T,j}L_j\to3\), and every limiting measure is
+supported on \([3,\infty)\). It has mass \(1/3\) and first
+moment at most one by lower semicontinuity. The only such
+measure is \(\frac13\delta_3\), contradicting the stipulated
+nonatomic mass.
+
+In the capped-radical case, fix the capped letter on a subsequence.
+The letterwise radical comparison gives
+\(L_{T,j}\le(1/3-\gamma)\lambda_j+O(\rho_j)\), contradicting
+\(L_{T,j}/L_j\to1/3\). Each contradiction gives a fixed
+positive gap in its stated parameter range.
+\end{proof}
+
+For equal orders \(k\), the exponent in
+Theorem~\ref{thm:abc-endpoint-transfer} is
+\((1-3\delta)/k+\eps\), compared with the elementary \(2/k\)
+and the \((2-1/153)/k+\eps\) of
+Theorem~\ref{thm:adaptive-triples}. For fixed offsets above \(r\)
+it is at most \((1-3\delta)/r+\eps\), while the exponent of
+Browning and Verzobio \cite[Theorem~1.1]{BV} is
+\(2/r+O_{u,v}(r^{-2})+\eps\).
+The box argument gives existence of a gap and an order
+threshold, without numerical values for either.
+
+\section{The reverse transfer by the least target multiplier}
+\label{sec:reverse-transfer}
+
+For a positive primitive triple \(a+b=c\) we impose fullness only
+on the target. The least positive integer multiplier making it
+\(M\)-full is
+\[
+  Z_M(c)=\prod_{\ell\mid c}\ell^{(M-v_\ell(c))_+},
+  \qquad H_M(c)=c Z_M(c)
+  =\prod_{\ell\mid c}\ell^{\max(M,v_\ell(c))},
+\]
+where \(x_+=\max(x,0)\). In fact \(Z_M(c)\) divides every
+admissible common multiplier. For example, at order \(4\) the
+triple \((1,8,9)\) is sent to \((9,72,81)\). The common
+divisor of the image is exactly \(Z_M(c)\), so division recovers
+the original triple. With \(R=\rad(c)\),
+\begin{equation}\label{eq:repair-height}
+   R^M\le H_M(c)\le R^M c .
+\end{equation}
+
+For \(0<\xi<1/3\), let \(Q_{\lambda,\xi,M}(Y)\) count the
+distinct primitive quotients after this least-multiplier construction,
+with \(H_M(c)\le Y\), in the sector
+\begin{equation}\label{eq:repair-sector}
+  c^{(1/3-\xi)\lambda}\le\rad(c)\le c^{(1/3+\xi)\lambda},
+  \qquad \rad(ab)\le c^{(2/3+\xi)\lambda}.
+\end{equation}
+The quotient is counted once, regardless of other multipliers
+that are available. Write \(E_\lambda(X)\) for the number of
+positive ordered primitive triples with \(c\le X\) and
+\(\rad(abc)<c^\lambda\).
+
+\begin{theorem}\label{thm:reverse-transfer}
+Under the endpoint hypotheses the following are equivalent.
+\begin{enumerate}
+\item There is an absolute \(\delta_0>0\) such that for all
+sufficiently small fixed \(\lambda>0\) and every \(\eps>0\),
+\[
+ E_\lambda(X)\ll_{\lambda,\eps}
+                   X^{(1/3-\delta_0)\lambda+\eps}.
+\]
+\item There are \(K>0\), \(0<\xi<1/3\) and \(0<\sigma<1\)
+with \((1-\sigma)(1/3+\xi+1/K)<1/3\) such that, for all
+sufficiently small fixed \(\lambda>0\), with
+\(M=\lceil K/\lambda\rceil\), and every \(\eps>0\),
+\[
+ Q_{\lambda,\xi,M}(Y)\ll_{\lambda,M,\eps}
+                   Y^{(1-\sigma)/M+\eps}.
+\]
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Suppose the second estimate holds. An exception
+\(\rad(abc)<c^\lambda\) outside \eqref{eq:repair-sector}
+has at least one radical at most \(c^{(1/3-\xi/2)\lambda}\).
+Indeed a target radical below the lower bound already does so.
+A target radical above the upper bound forces the product of the
+two summand radicals below \(c^{(2/3-\xi)\lambda}\) by
+primitivity. Finally if \(\rad(ab)>c^{(2/3+\xi)\lambda}\), the
+target radical is below the lower bound. The capped-radical
+estimate of Theorem~\ref{thm:abc-endpoint-transfer} thus gives
+a fixed saving outside the sector. Inside the sector,
+\eqref{eq:repair-height} gives \(H_M(c)\le X^{1+M(1/3+\xi)\lambda}\).
+By injectivity, the exponent in the original height, before the
+arbitrary loss, is at most
+\[
+ (1-\sigma)(1/M+(1/3+\xi)\lambda)
+ \le(1-\sigma)(1/3+\xi+1/K)\lambda.
+\]
+The strict inequality in the hypothesis gives the desired gap.
+
+Conversely suppose the first estimate holds, with
+\(\delta_0\) reduced to lie in \((0,1/3)\) if necessary.
+The sector has \(\rad(abc)\le c^{(1+2\xi)\lambda}\) and
+\(H_M(c)\le Y\) forces
+\(c\le Y^{1/(M(1/3-\xi)\lambda)}\).
+Use the first estimate at budget \((1+3\xi)\lambda\).
+The exponent in \(Y\) is at most
+\[
+ \frac{(1/3-\delta_0)(1+3\xi)}{M(1/3-\xi)}+\eps
+\]
+after rescaling the arbitrary loss. Fix any \(\sigma\in(0,3\delta_0)\).
+At \(\xi=0\) this exponent before the loss is strictly less
+than \((1-\sigma)/M\), and \((1-\sigma)(1/3+\xi)<1/3\).
+Both inequalities persist for sufficiently small \(\xi>0\).
+Then choose \(K\) large enough for
+\((1-\sigma)(1/3+\xi+1/K)<1/3\).
+\end{proof}
+
+The implication from the first estimate to the second uses only
+\eqref{eq:repair-height} and the radical restrictions. The other
+implication also uses the separate saving outside that sector.
+If arbitrary multipliers are allowed, any one repaired triple
+can be multiplied by \(t^M\), giving \(\gg Y^{1/M}\) triples
+from a single quotient. Consequently a strict saving below
+\(1/M\) requires control of the distinct least-multiplier quotients.
+
+\paragraph{Verification files.}
+The exact rational certificates are available for orders
+\href{https://raw.githubusercontent.com/royvanrijn/jacobian-research/1182d516125dc3ba7a83bac34ef0a358db1f10d8/research/arithmetic/powerful_even_order_divisible_by_six_certificate.json.gz}{divisible by six}
+and for the two-power graph bounds at
+\href{https://raw.githubusercontent.com/royvanrijn/jacobian-research/1182d516125dc3ba7a83bac34ef0a358db1f10d8/research/arithmetic/powerful_two_power_even_certificate.json.gz}{even}
+and
+\href{https://raw.githubusercontent.com/royvanrijn/jacobian-research/1182d516125dc3ba7a83bac34ef0a358db1f10d8/research/arithmetic/powerful_two_power_odd_certificate.json.gz}{odd}
+orders. Run the
+\href{https://raw.githubusercontent.com/royvanrijn/jacobian-research/1182d516125dc3ba7a83bac34ef0a358db1f10d8/research/arithmetic/verify_powerful_fixed_offset_constraints.py}{certificate verifier}
+with the argument \texttt{verify} followed by the certificate filename.
+The
+\href{https://raw.githubusercontent.com/royvanrijn/jacobian-research/1182d516125dc3ba7a83bac34ef0a358db1f10d8/research/arithmetic/verify_powerful_adaptive_determinant.py}{determinant parameter check}
+replays the rational inequalities underlying the explicit savings.
+
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
 exposition, proof review and verification code.
 
 \begin{thebibliography}{9}
+
+\bibitem{BBLT}
+C.~Bernert, T.~Browning, J.~D.~Lichtman and J.~Ter\"av\"ainen,
+\emph{Bounds on the exceptional set in the \(abc\) conjecture},
+2026, \href{https://arxiv.org/abs/2410.12234v2}{arXiv:2410.12234v2}.
 
 \bibitem{BS}
 V.~Blomer and A.~Sch\"obel,

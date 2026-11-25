@@ -1,0 +1,259 @@
+\section{Sharp numerical bounds from the signature}\label{sec:numerical}
+
+A numerical component of height \(h\) and dimension \(m\) is
+a convex polygon with slopes in \([0,1]\), endpoints \((0,0)\)
+and \((h,m)\), and integral breakpoints. Equivalently, each
+reduced slope \(a/c\) occurs with multiplicity divisible by \(c\)
+\cite[\S1.1]{oort}. The polygon order used here is pointwise order
+on the prefix sums \(S_j\) of the ordered slopes. Duality sends
+\(S_j\) to \(j-m+S_{h-j}\), so it preserves this order.
+
+Orient the Hodge multiplicities as \((m_i,h-m_i)\) with
+\(m_i\le h/2\), and let \(b\) be the number of positive \(m_i\).
+The ordinary slack at the \(j\)-th norm bound, before the strict
+unit margin, is
+\begin{equation}\label{eq:ordinary-slack}
+ D_j=\sum_i\min(j,h-j,m_i).
+\end{equation}
+Indeed the ordinary two blocks have a total rounded prefix of
+\(j-\min(j,h-j,m_i)\). If \(b>0\), an excess \(\Delta_j\) above
+the ordinary rounded prefix is allowed precisely when
+\(\Delta_j\le D_j-1\). The all-definite case is ordinary immediately.
+
+\begin{proof}[Proof of Corollary~\ref{cor:ranktwo}]
+The sum of the two slopes on each balanced side is one.
+An ordinary balanced pair has zero excess at the only index
+\(j=1\). For a nonordinary pair both slopes on both sides are
+strictly positive, so each rounded first prefix is one and the
+excess is two. As the ordinary slack is \(b\), the strict margin
+gives \(2r\le b-1\). Each such pair removes two units of
+\(p\)-rank, giving the stated bound. With no balanced pair,
+each split component is definite and ordinary.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:rankfour}]
+In a nonordinary pair of type \((2,2)\), each side has fewer than
+two zero slopes, since two zero slopes would force the other
+two to be one. The sum of the two rounded prefixes at \(j=2\)
+is therefore at least two on this pair, compared with zero in
+the ordinary case. Its slack is two, and definite pairs add
+no slack. This violates the strict unit margin.
+\end{proof}
+
+\begin{theorem}[Least polygon with fixed endpoint multiplicities]\label{thm:extremal}
+Fix \(h,m\), and fix the numbers \(z,o\) of zero and unit slopes
+of a numerical component. Set \(q=h-z-o\), \(w=m-o\).
+If \(q=0\) the polygon is ordinary. Otherwise \(0<w<q\).
+The least possible interior polygon is the chord from \((0,0)\) to
+\((q,w)\) when \(w=1\) or \(q-w=1\). In the remaining cases it
+joins \((0,0)\), \((q-w,1)\), and \((q,w)\), with interior slopes
+\[
+ \left(\frac{1}{q-w}\right)^{q-w},\qquad
+ \left(\frac{w-1}{w}\right)^w .
+\]
+Consequently the least possible paired excess at each \(j\)
+is attained simultaneously and is
+\begin{equation}\label{eq:interval}
+  \mathbf 1_{z<j<h-o}+\mathbf 1_{o<j<h-z}.
+\end{equation}
+The same expression is zero for ordinary endpoints.
+\end{theorem}
+
+\begin{proof}
+Write \(a=q-w\) and \(c=w\). Each proper interior vertex
+\((x,y)\) has integer coordinates with \(y\ge1\) and
+\(y\ge x-a+1\). The second bound follows because the remaining
+slopes are strictly less than one. If \(c=1\) there is no such
+vertex because its ordinate would be strictly between zero and one.
+If \(a=1\) the same holds after dualizing.
+
+For \(a,c\ge2\), the displayed two slopes are increasing, with
+equality possible when \(a=c=2\), in which case the middle point is
+collinear. The resulting lower convex polygon is the maximum of
+the lines \(x/a\) and \(x-a+1-(x-a)/c\).
+At any proper vertex the first line is bounded by \(1\) if
+\(x\le a\), and by \(x-a+1\) if \(x\ge a\).
+The second line is bounded by \(1\) when \(x\le a\), and by
+\(x-a+1\) otherwise. Thus both lie below every vertex. Convexity
+puts the proposed polygon below every joining segment, including
+the isoclinic chord.
+
+Restore the zero and unit tails. From \(j=z+1\) through
+\(j=h-m=z+a\), the first interior segment has rounded prefix one.
+At \(j=h-m+t\), \(1\le t<c\), the next segment has rounded prefix
+\(1+t\), while at \(t=c\) the prefix equals \(c\). Hence excess
+over the ordinary prefix is one precisely for \(z<j<h-o\).
+If \(a=1\) or \(c=1\), taking the ceiling of the chord gives
+the same strict interval. Dualizing swaps \(z,o\). Since duality
+preserves order, the minimizer supplies both terms in
+\eqref{eq:interval} simultaneously.
+\end{proof}
+
+The symmetric specialization of this polygon, with equal numbers
+of extreme slopes and equal residual dimension and codimension,
+appears in Achter and Pries \cite[Definition~2.4]{achterpries}.
+The oriented component statement gives an endpoint-only feasibility
+test for the strict simultaneous bounds. For each pair select
+either the ordinary endpoints or integers
+\(0\le z\le h-m-1\), \(0\le o\le m-1\).
+Test the sum of \eqref{eq:interval} against \(D_j-1\) and minimize
+\(\sum_i(z_i+o_i)\). Any feasible endpoints lift to numerical
+polygons by Theorem~\ref{thm:extremal}, and every admissible
+collection gives feasible endpoints. This proves exactness.
+
+\begin{proposition}[When the inequalities force ordinary reduction]\label{prop:signatures}
+The only signatures for which the numerical restrictions force the
+ordinary polygon are all-definite signatures, one mixed pair of type
+\((1,h-1)\), two mixed pairs in rank two, and one mixed pair of
+type \((2,2)\) in rank four. Definite pairs can be appended freely
+to all cases.
+\end{proposition}
+
+\begin{proof}
+If a lone mixed pair has \(m=1\), then at \(j=1\) the slack
+is one. A nonordinary block on its dimension-one side cannot
+have a unit slope, so the complementary block has no zero, and
+the paired rounded prefix increases by at least one.
+The rank-two and rank-four exceptions follow from the arguments
+for Corollaries~\ref{cor:ranktwo} and~\ref{cor:rankfour}.
+
+For the converse, in one mixed pair replace the last zero and
+first unit slope by two copies of \(1/2\), preserving duality.
+This is the least nonordinary paired polygon for that pair.
+In fact a nonordinary block with endpoint losses \(a,c\ge1\) has
+prefix at the ordinary kink \(h-m\) at least \(1/2\) by
+Theorem~\ref{thm:extremal}, while its other integer prefixes
+are at least ordinary. The replacement has excess
+\[
+        \Delta_j=\mathbf 1_{j=m}+\mathbf 1_{j=h-m}
+\]
+by \eqref{eq:interval}. For \(h=2\) and \(b\ge3\), the slack is
+at least three at its only index, so the replacement is allowed.
+For \(h>2\) and at least two mixed pairs, choose any mixed pair.
+If its two affected indices are distinct, the slack is at least
+two at each. If they coincide, then \(m=h/2\ge2\), and at that
+index the modified pair contributes at least two to the slack
+while a second pair contributes at least one. Finally if there is
+one mixed pair with \(m\ge2\), the slack at both affected indices
+is \(m\). The replacement fails the strict unit margin precisely
+when they coincide at \(m=2\), the already listed rank-four case.
+This gives a witness in every other signature.
+\end{proof}
+
+The total number of signatures up to dimension \(G\) is
+\[
+ \sum_{h=1}^G
+ \left(\binom{\lfloor h/2\rfloor+\lfloor G/h\rfloor+1}
+                    {\lfloor h/2\rfloor+1}-1\right)
+\]
+by counting multisets of \(e\) multiplicities and summing over \(e\).
+For \(G=30\) this is 1188. The four disjoint cases of
+Proposition~\ref{prop:signatures} give 111, 81, 14 and 7,
+respectively. The first count is
+\(\sum_{h=1}^{30}\lfloor30/h\rfloor\), the second omits \(h=1\),
+and the remaining cases count \(2\le e\le15\) and \(1\le e\le7\).
+
+\begin{theorem}[Sharp numerical \(p\)-rank]\label{thm:sharp-prank}
+If \(b=0\), the minimum is \(eh\). Otherwise put
+\[
+ H=\lfloor h/2\rfloor,\qquad L_j=\max(0,2b+1-D_j)
+ \quad (1\le j\le H).
+\]
+The sharp minimum is \(h(e-b)+M\), where the mixed contribution
+\(M\) is as follows.
+\begin{itemize}
+\item If all mixed multiplicities are one, then
+\[
+ M=\begin{cases}
+  2\lceil(b+1)/2\rceil, & h=2,\\
+  h+H(b-1), & h\text{ odd},\\
+  h+(H-1)(b-1)+\lceil(b-1)/2\rceil, & h\ge4\text{ even}.
+ \end{cases}
+\]
+\item If \(h=4\) and all mixed multiplicities are two, then \(M=b+3\).
+\item In every other case with some mixed multiplicity at least two,
+\[
+ M=\begin{cases}
+  \displaystyle\sum_{j=1}^H L_j, & h\text{ odd},\\
+  \displaystyle\sum_{j=1}^{H-1}L_j+\lceil L_H/2\rceil,
+      & h\text{ even}.
+ \end{cases}
+\]
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+For a mixed pair write \(P_j=2-\Delta_j\), using the minimizing
+endpoints. The simultaneous condition is
+\(\sum P_j\ge L_j\) for \(1\le j\le H\).
+For a nonordinary pair, \(o<H\) and
+\[
+ P_j=\mathbf 1_{j\le z}+\mathbf 1_{j\le o}
+             +\mathbf 1_{j\ge h-z}.
+\]
+For an ordinary pair, \(P_j=2\).
+If \(h\) is odd, summing \(P_j\) gives exactly \(z+o\) for a
+nonordinary pair and \(h-1\) for an ordinary pair. If \(h\) is even,
+give the index \(H\) weight one half. This weighted sum has the
+same two values, and \(P_H\) is always even.
+These observations give the lower bounds in the last case.
+
+For sharpness there, use only nonordinary pairs. Think of the two
+endpoint counts as slots of capacities
+\(\min(H,h-m_i-1)\) and \(m_i-1\).
+Choose lengths in the slots with prescribed tail counts \(L_j\)
+for \(j<H\), and \(L_H\) in odd rank or \(\lceil L_H/2\rceil\)
+in even rank at \(H\). At these lengths the third indicator in
+\(P_j\) is absent except at the even midpoint, where it doubles
+the contribution of a slot of length \(H\).
+For a decreasing list of tail counts a feasible assignment
+exists if each count is at most the number of slots with capacity
+at least its index. To see this, sort the lengths and capacities
+and match in decreasing order.
+
+At \(j=1\) there are \(b\) zero slots and at least one unit slot.
+For \(2\le j<H\), and for \(j=H\) in odd rank, the \(b\)
+zero slots suffice since \(D_j\ge b+1\).
+At the even midpoint only unbalanced pairs supply a zero slot.
+Let their number be \(u\). For \(H\ge3\), if there is any
+balanced pair, then \(D_H\ge u+3(b-u)\) and \(L_H\le u\).
+If there is none, \(u=b\) already suffices. For \(H=2\) in
+this case \(u\ge1\), \(L_H=u+1\), and
+\(\lceil(u+1)/2\rceil\le u\). The resulting assignment
+attains the lower bounds.
+
+If all mixed multiplicities are one and \(h\ge3\), at least
+one pair is ordinary. Otherwise all \(o=0\) and each \(P_1\)
+is at most one, whereas \(L_1=b+1\).
+With \(c\ge1\) ordinary pairs, each index needs at least
+\(T=\max(0,b+1-2c)\) further units of \(P_j\).
+In odd rank choose \(T\) remaining zero endpoints of length \(H\).
+In even rank use \(\lceil T/2\rceil\) of length \(H\) and the
+remaining \(T-\lceil T/2\rceil\) of length \(H-1\).
+There are enough slots because \(T\le b-c\), and they attain
+the weighted lower bound for this \(c\). Increasing \(c\) costs
+\(h\) and can save at most \(h-1\) of this lower bound, so
+\(c=1\) is optimal. Rank two follows directly by counting
+ordinary pairs.
+
+Finally in rank four with all mixed multiplicities two,
+every nonordinary pair has \(P_2=0\), so at least one
+ordinary pair is necessary. With \(c\) such pairs,
+the lower bound is \(4c+\max(0,b+1-2c)\), from index one.
+It is minimized at \(c=1\), and is attained with one endpoint
+of length one in each of the other pairs.
+\end{proof}
+
+The dimension-30 table includes exact polygon multiplicities
+as well as endpoint minima. The endpoint formula gives feasibility
+and optimization. Individual polygons with fixed endpoints can
+differ in admissibility. For instance, at \(h=8,m=4,z=2,o=1\)
+the extremal interior \((1/2)^2,(2/3)^3\) passes with one mixed
+pair, while the alternative \((3/5)^5\) fails at \(j=4\).
+For full multiplicities one can transfer the paired rounded
+profiles of integral convex paths instead. The verification
+replays retain both the numerical minima and the historical full
+counts. The closed formula gives minima for \(5{,}475{,}208\)
+signatures through dimension 200, of which 2145 force ordinarity.
+The companion verification archive contains the dimension-30 table,
+the larger summary, and the replays for both computations.

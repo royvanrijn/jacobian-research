@@ -1,0 +1,207 @@
+\section{Reduction to spherical moments}\label{sec:sphere}
+
+Contraction kills the image of each \(\xi_i-\partial_{z_i}\). Applying
+this operator to \(\xi^{\alpha-e_i}z^\beta\) replaces one outer factor
+\(\xi_i\) by \(\partial_{z_i}\) modulo its image. Induction on the
+\(\xi\)-degree shows that every \(H-\mathcal E(H)\) belongs to the sum
+of the two images, proving the kernel identity.
+
+Introduce the four balanced bilinears
+\[
+ R=\xi_1z_1+\xi_2z_2,\quad Z=\xi_1z_2,\quad
+ W=2\xi_2z_1,\quad T=\xi_1z_1-\xi_2z_2,
+ \qquad T^2+2ZW=R^2.
+\]
+They generate the balanced subring, with the displayed relation.
+Generation follows by pairing one \(\xi_i\) with one \(z_j\). The normal
+monomials modulo the relation in homogeneous degree \(d\) number
+\((d+1)^2\), the dimension of the original bidegree-\((d,d)\) space,
+so there is no further relation. Restrict at \(R=1\), writing
+\((x,y,t)=(Z,W,T)\) there. The sphere algebra and its trace are
+\[
+ A_K=K[x,y,t]/(t^2+2xy-1),\qquad
+ \Lambda(h)=\operatorname{CT}_x\frac12\int_{-1}^1
+    h\biggl(x,\frac{1-t^2}{2x},t\biggr)\,dt.
+\]
+The integral is the rational polynomial rule with value \(1/(j+1)\)
+on \(t^j\) for even \(j\), and zero for odd \(j\), including the factor
+\(1/2\). If \(H\) has bidegree \((d,d)\) and sphere restriction \(h\), then
+\begin{equation}\label{eq:spectrum-contraction}
+ \mathcal E(H)=(d+1)!\,\Lambda(h).
+\end{equation}
+To check this, take an original monomial with \(\xi_1\)-exponent \(i\)
+and \(z_1\)-exponent \(j\). Both sides vanish for \(i\ne j\) by angular
+weight. For \(i=j\) the sphere integral is the beta integral
+\(i!(d-i)!/(d+1)!\), and its contraction is \(i!(d-i)!\).
+
+The least sphere degree of \(h\) is \(d\) exactly when \(R\) does not
+divide \(H\). Indeed homogenizing the normal monomials \(x^at^b\),
+\(y^ct^b\) with \(c>0\) recovers \(H\), and each has filtration degree
+\(a+b\) or \(c+b\), respectively. We use \emph{pure} for the condition
+\(\Lambda(h^m)=0\) for every \(m\geq 1\) and \emph{safe} for the assertion
+that \(\Lambda(gh^m)=0\) eventually for each fixed \(g\in A_K\).
+
+Sphere safety gives the required vanishing against arbitrary original
+polynomial markers. For a bihomogeneous marker \(Q\) of bidegree
+\((a,b)\), contraction against \(H^m\) is zero if \(a>b\). For \(b\ge a\),
+its output has degree \(b-a\) in \(z\), and for every \(|\gamma|=b-a\),
+\[
+ \partial_z^\gamma\mathcal E(QH^m)
+   =\mathcal E(\xi^\gamma QH^m).
+\]
+The marker on the right is balanced. There are finitely many such
+derivatives, so their eventual vanishing by
+\eqref{eq:spectrum-contraction} forces eventual vanishing of the
+output. A general marker is the sum of finitely many bihomogeneous
+ones. Conversely any fixed sphere marker with infinitely many nonzero
+mixed moments lifts to a balanced marker by homogenization.
+
+\section{Quadratic height and the degrees below four}\label{sec:quadratic-height}
+
+We first treat phases whose Laurent expression after eliminating \(y\)
+has degree at most two in \(t\). A coefficient of \(x^{-j}\), \(j>0\),
+is divisible by \((1-t^2)^j\), so only a simple pole at \(x=0\) is possible.
+With no pole, the angular core must vanish for purity by the interval
+polynomial theorem \cite[Theorem~2.1]{muger-tuset}. All nonzero angular exponents are then positive,
+giving safety. With a pole, scale the phase and write
+\[
+ h=x^{-1}(A-Bt^2+Ct),\qquad A,B,C\in K[x],\quad A(0)=B(0)=1,\quad C(0)=0.
+\]
+Put \(D=A+C^2/(4B)\) and \(M=\sqrt{D/B}\), with \(M(0)=1\).
+In completing the square, set \(t=C/(2B)+Mz\). The endpoints in \(z\)
+are congruent to \(\pm1\) modulo \(x\). The integrand \((1-z^2)^m\)
+has contact order \(m\) there, so returning the endpoints to \(\pm1\)
+changes its integral by a multiple of \(x^{m+1}\). Therefore
+\[
+ \Lambda(h^m)=\frac12\int_{-1}^1(1-z^2)^m\,dz\;[x^m]D^mM.
+\]
+The factor given by the integral is a nonzero rational number.
+The conditions \([x^m]D^mM=0\) determine each successive coefficient of
+\(M\) since \(D(0)=1\). Differentiating \(D^m\) shows that the unique
+solution is \(M=1-xD'/D\). In particular
+\begin{equation}\label{eq:quintic-quadratic-height}
+ B=\frac{D^3}{(D-xD')^2}.
+\end{equation}
+
+Suppose the phase has least sphere degree at most five, so \(\deg B\le4\).
+At any finite zero or pole \(\alpha\) of \(D\) of order \(r\ne0\),
+we have \(\alpha\ne0\), \(\operatorname{ord}_\alpha(D-xD')=r-1\), and
+\(\operatorname{ord}_\alpha B=r+2\). There are no other finite zeros of
+\(B\) by \eqref{eq:quintic-quadratic-height}. If \(n\) is the degree of
+\(D\) at infinity and \(s\) counts its distinct finite zeros and poles
+over an algebraic closure, summing valuations gives \(\deg B=n+2s\).
+When \(n\ne1\), the leading coefficient of \(D-xD'\) is \(1-n\)
+times that of \(D\), hence \(\deg B=n\) and \(D\) is constant.
+When \(n=1\), the bound \(\deg B\le4\) forces \(s=1\), so \(D\) is
+linear and \(B=D^3\). Then \(B\) divides \(C^2\), and \(C=xD^2P\)
+for a polynomial \(P\). Since \(A=D-x^2DP^2/4\) has degree at most six,
+\(P\) has degree at most one. The phase has exact degree four, because
+its \(x^{-1}Bt^2\) term has degree four and its other terms have degree
+at most four.
+
+In the constant case \(D=B=1\). With \(c=C/x\), the phase is
+\(2y+ct-xc^2/4\), the image of \(2y\) under the polynomial shear
+\((x,t,y)\mapsto(x,t+xa,y-at-xa^2/2)\) with \(a=-c/2\).
+The derivation \(xa\partial_t\) in the literal Laurent chart kills the
+trace by integration at \(t=\pm1\). Each boundary value is a polynomial
+in \(x\) since \(y=0\) there, and the extra factor \(x\) kills its constant
+term. The shear is its finite exponential on each regular polynomial,
+so both directions preserve the trace and safety. Thus in quadratic
+height every pure phase of least degree at most five is safe or has
+degree four.
+
+Here is the exclusion in degrees \(d=1,2,3\), using the leading-form
+test proved in Section~\ref{sec:leading-threshold}. In a pure phase the
+binary leading form has a root of multiplicity greater than \(d\).
+Move the root to the point \(v=0\) in the parametrization
+\((x,y,t)=(u^2,-v^2/2,uv)\). Every degree-\(d\) normal monomial then
+has negative angle \(i\). If the phase has no positive angle it is
+safe by the interval theorem and one-sided support. Otherwise, use the
+supporting-line and two-term tests of Section~\ref{sec:face-support} with
+\(d\) in place of five. The allowed nodes have \(-d\le i\le d-1\) and
+\(\max(0,-2i)\le j\), with \(i+j\le d\) for \(i<0\) and
+\(i+j\le d-1\) otherwise. A crossing line \(j+\rho i=H\) has
+\(\rho>1\) and \(H<d\).
+
+Joining opposite-sign nodes in that range gives no line with three
+or more nodes for \(d=1,2\). For \(d=3\) the only such lines are
+\((\rho,H)=(2,2)\), with angles \(-1,0,1\), and
+\((\rho,H)=(3/2,3/2)\), with angles \(-3,-1,1\). The former has
+quadratic height after interchanging \(x,y\), so is safe by the
+preceding argument. The latter has face \(Bx+Ayt+Cy^3\) with all
+three coefficients nonzero. Its order-three cover has branch
+exponents \(2,2,2\) when the face quadratic has distinct roots, so its
+elliptic Jacobian supplies the ordinary-prime obstruction of
+Section~\ref{sec:cyclic-face}. If the quadratic repeats, then
+\(A^2+2BC=0\). The face is \(B\) times the leading part of
+\(x\mapsto x-cyt-c^2y^3/2\) with \(c=-A/B\), in the shear fixing
+\(y\) and sending \(t\) to \(t+cy^2\). Its inverse preserves the weights
+\((3,1,2)\) on \((x,y,t)\) and removes the cubic part, leaving
+degree at most two. This last phase is safe by the preceding
+low-degree cases. Degree zero is immediate since a nonzero constant
+has nonzero first moment. The sharper mixed-moment bound for cubics
+is proved in \cite{cubicsphere}.
+
+\section{Explicit primitive witnesses}\label{sec:witnesses}
+
+The following construction uses the quartic endpoint mechanism of
+Long \cite[Theorem~3.1]{longcompact}. A joint endpoint identity allows
+an additional cubic factor while keeping all positive power moments
+zero. Set
+\[
+ U=1+x,\qquad w=tU,\qquad
+ e=\frac{U}{x}(1-w^2)=U\bigl(2y-(2+x)t^2\bigr),\qquad
+ g=e+w^2=U(2y-t^2).
+\]
+For integers \(r\ge1\) and \(s\ge0\) put
+\[
+ J_{r,s}(V)=\frac12\int_{-V}^V z^s(1-z^2)^r\,dz.
+\]
+Here the endpoints are evaluated in a polynomial primitive.
+Both endpoint integrands vanish to order at least \(r\) at \(V=1\),
+so \(J_{r,s}(V)-J_{r,s}(1)\) is divisible by \((V-1)^{r+1}\).
+The substitution \(z=tU\) gives
+\[
+ \Lambda(e^r w^s)=[x^r]U^{r-1}J_{r,s}(U)=0,\qquad
+ \Lambda(xe^r w^s)=[x^{r-1}]U^{r-1}J_{r,s}(U)=J_{r,s}(1).
+\]
+In each coefficient the endpoint error is of order at least \(r+1\),
+and the remaining factor \(U^{r-1}\) is monic of degree \(r-1\).
+Thus in all polynomials divisible by \(e\) in \(K[e,w]\), the trace
+vanishes, and the \(x\)-marked trace agrees with the interval
+substitution \(e=1-z^2\), \(w=z\). In particular, for \(a,b\ge0\),
+the phase \(e(1+w)^a g^b\) is pure. Its \(x\)-marked \(m\)th power
+has trace
+\begin{equation}\label{eq:spectrum-beta}
+ \frac12\int_{-1}^1(1-z^2)^m(1+z)^{am}\,dz
+ =2^{(a+2)m}\frac{((a+1)m)!\,m!}{((a+2)m+1)!}.
+\end{equation}
+The factor \(g^b\) disappears from this integral since \(g=e+w^2=1\)
+under the marked substitution. Equation \eqref{eq:spectrum-beta}
+follows by putting \(z=2u-1\) and integrating the beta monomial
+\(u^{(a+1)m}(1-u)^m\).
+
+The corresponding integer forms can be written using
+\[
+ L=R+Z,\quad D=2WR^2-(2R+Z)T^2,\quad E=2WR-T^2,\quad
+ A_2=R^2+TL,\quad G_3=LE.
+\]
+For \(a,b\ge0\) set \(F_{a,b}=LD\,A_2^aG_3^b\) and \(d=4+2a+3b\).
+Each factor is balanced homogeneous, and the sphere restriction is
+\(e(1+w)^a g^b\). Equations \eqref{eq:spectrum-contraction} and
+\eqref{eq:spectrum-beta} give
+\[
+ \mathcal E(F_{a,b}^m)=0,\qquad
+ \mathcal E(ZF_{a,b}^m)=(dm+2)!\,2^{(a+2)m}
+             \frac{((a+1)m)!\,m!}{((a+2)m+1)!}\ne0
+ \qquad(m\ge1).
+\]
+At \((\xi_1,\xi_2,z_1,z_2)=(1,1,1,-1)\) we have \(R=0\) and
+\(F_{a,b}=-4(-2)^a4^b\ne0\), which proves radial primitivity.
+Specializing \(\xi_1=z_1=1\), \(z_2=0\), \(\xi_2=u\) yields
+\(2^a(4u-2)(4u-1)^b\), with a simple zero at \(u=1/2\). Any scalar
+multiple of a proper power would specialize to zero or to a scalar
+multiple of a proper power. Hence these forms remain nonpowers over
+every field extension. Taking \(a=b=0\) realizes degree four,
+taking \(b=0\) realizes every even degree at least six, and taking
+\(b=1\) realizes every odd degree at least seven.

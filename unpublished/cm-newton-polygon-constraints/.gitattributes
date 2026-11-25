@@ -1,0 +1,4 @@
+README.md -text -eol whitespace=cr-at-eol
+global.tex -text -eol whitespace=cr-at-eol
+moments.tex -text -eol whitespace=cr-at-eol
+residual.tex -text -eol whitespace=cr-at-eol

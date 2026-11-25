@@ -6,6 +6,6 @@ The paper proves the power-law threshold for the least additive basis order, the
 
 [PDF](paper.pdf) · [LaTeX](main.tex) · [Source bundle](source.zip) · [Metadata](metadata.json) · [Verification](verification.json)
 
-The [power-law research note](../../../research/arithmetic/RANDOM_PRIME_SEMIGROUP_BASIS_THRESHOLD.md) and [logarithmic research note](../../../research/arithmetic/RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) record the supporting results and their evidence. The manuscript contains its complete arguments and bibliography.
+The [power-law research note](../../research/arithmetic/RANDOM_PRIME_SEMIGROUP_BASIS_THRESHOLD.md) and [logarithmic research note](../../research/arithmetic/RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) record the supporting results and their evidence. The manuscript contains its complete arguments and bibliography.
 
 Build from this directory with `latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex`. The source bundle contains the single LaTeX file. Independent mathematical review is pending.

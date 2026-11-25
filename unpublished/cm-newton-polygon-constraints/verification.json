@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "date": "2026-11-25",
+  "edition": {
+    "file": "cm-newton-polygon-constraints.pdf",
+    "sha256": "524d3e9dc0eb2e05e88cac09592f5436969f821421040603ac4e7376542d87a4",
+    "pages": 15
+  },
+  "build": {
+    "command": "SOURCE_DATE_EPOCH=1795564800 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-polygon-constraints main.tex",
+    "environment": "Ubuntu 24.04, TeX Live 2023, pdfTeX 1.40.25, latexmk 4.83, Poppler",
+    "result": "Built without LaTeX or layout warnings. The rendered edition was visually checked."
+  },
+  "replays": {
+    "endpoint_minima": {
+      "command": "python3 -I verification/verify_cm_newton_endpoint_bounds.py --bound 200",
+      "result": "Five million four hundred seventy-five thousand two hundred eight minima through dimension 200, including 2,145 ordinary-forcing signatures. All 1,188 dimension-30 minima and a brute endpoint test on 401 signatures through dimension 20 agree.",
+      "json_lines_minima_sha256": "fcaf6e7f71ae8108da41b5ddd439625112bb40f39f1031328fed514d381dee53"
+    },
+    "full_historical_counts": {
+      "command": "python3 -I verification/verify_cm_newton_vertex_census.py",
+      "result": "An integral-breakpoint enumeration independently reproduces all 1,188 historical rows, including the 8,073,364 candidate and 3,846,011 surviving polygon multiplicities and the minimum p-ranks."
+    },
+    "moment_covers": {
+      "commands": [
+        "python3 -I verification/verify_cm_moment_cover_faces.py",
+        "python3 -I verification/verify_cm_newton_infinite_moment_families.py"
+      ],
+      "result": "The former replays three rational residues, the split p=19 case, and 69 bounded branch multisets across 20 combinations. The latter checks the split nonordinary p=73 selection and connected-conductor examples at 37 in orders 342, 12,663 and 468,540."
+    }
+  },
+  "review": {
+    "external_human_review": false,
+    "formal_verification": false,
+    "pdf_only_internal_review": {
+      "previous_pdf_sha256": "06898e1cfa2f91b1d951774cb483aa18f9704302c69b139b4b8c4ce354e26340",
+      "proof_edited_pdf_sha256": "8b82a27251c2c0c1a50d77383739316ad535a7646c429c4bdaa005a635ac6cc3",
+      "final_pdf_sha256": "524d3e9dc0eb2e05e88cac09592f5436969f821421040603ac4e7376542d87a4",
+      "context": "The compiled PDF and five reader prompts only.",
+      "findings": [
+        "Recovered the simultaneous norm theorem, fixed-endpoint polygon, closed minimum, complete numerical classification and linked projective-monodromy theorem.",
+        "Reconstructed the strict norm argument, half-weighted midpoint and endpoint-slot assignment, and Galois-stable linkage proof.",
+        "Identified the quaternionic polarization and Hodge commutant as the most compressed steps and checked the argument.",
+        "Distinguished numerical sharpness, prime-field examples varying with the prime and the finite-extension density results for fixed varieties.",
+        "Found two typesetting errors and a missing proof-navigation step for the two rank corollaries. Independently reproduced the selected coefficient calculations at 73 and 37."
+      ],
+      "disposition": "Restored both explicit corollary proofs, corrected both displays, and clarified the quaternionic and Hodge steps, the Hasse coefficient extraction and the companion census."
+    }
+  },
+  "remaining": [
+    "Density-one ordinary reduction in the independent projective monodromy cases with three balanced pairs.",
+    "External specialist review and priority for the oriented extremal polygon, closed minimum, projective linkage criterion and moment applications."
+  ]
+}

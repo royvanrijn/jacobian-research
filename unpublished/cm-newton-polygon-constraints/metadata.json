@@ -1,0 +1,35 @@
+{
+  "title": "Frobenius norm bounds for Newton polygons with CM field action",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Simultaneous relative Frobenius norm bounds, a closed formula for sharp numerical p-rank, global ordinarity for projectively linked three-pair actions, and cyclic-cover applications.",
+  "status": "ready-for-review",
+  "published": false,
+  "catalogued_on": "2026-11-25",
+  "source": "main.tex",
+  "pdf": "cm-newton-polygon-constraints.pdf",
+  "build": "SOURCE_DATE_EPOCH=1795564800 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-polygon-constraints main.tex",
+  "abstract": "Let an abelian variety over a number field have a Rosati-compatible action of a CM field of degree \\(2e\\), and let \\(h\\) be the relative rank of its first cohomology. If at least one conjugate Hodge pair is mixed, we prove simultaneous strict bounds on the rational-prime valuations of the norms of all intermediate relative Frobenius coefficients. The bounds hold at all good absolute degree-one primes outside a finite set after one finite base extension, and they constrain every corresponding Newton polygon. In relative rank two with \\(b>0\\) balanced pairs they give \\(p\\)-rank at least \\(\\dim A-2\\lfloor(b-1)/2\\rfloor\\). In relative rank four they give density-one ordinary reduction after finite extension if exactly one conjugate pair is mixed and its type is \\((2,2)\\). This holds in arbitrarily large dimensions and with extra geometric endomorphisms. A least polygon with prescribed zero and unit multiplicities gives a closed formula for the sharp numerical minimum \\(p\\)-rank in every signature. We classify precisely when it forces ordinarity and realize the first surviving rank-two polygon over prime fields with any prescribed auxiliary torsion level. In relative rank two with three balanced pairs, linked projective monodromy gives density-one ordinarity after finite extension. We also give infinite cyclic-cover moment exclusions, including cases certified by a selected Frobenius line on a nonordinary Jacobian factor.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "source_bundle": "cm-newton-polygon-constraints-source.zip",
+  "source_bundle_members": {
+    "main.tex": "main.tex",
+    "numerical.tex": "numerical.tex",
+    "residual.tex": "residual.tex",
+    "global.tex": "global.tex",
+    "moments.tex": "moments.tex"
+  },
+  "verification_record": "verification.json",
+  "checksums": "SHA256SUMS.txt",
+  "next_steps": [
+    "External specialist review of the global criterion, residue types, and priority comparison.",
+    "Investigate ordinary reduction for the remaining independent projective monodromy cases."
+  ],
+  "verification": {
+    "scope": "Written proofs, primary-source audit, exact numerical and moment replays, and internal PDF-only reader review.",
+    "limits": "External review, formal verification and priority remain open."
+  }
+}

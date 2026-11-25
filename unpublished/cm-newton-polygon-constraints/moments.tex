@@ -1,0 +1,218 @@
+\section{An application to polynomial moments}
+
+A normalizer of the acting CM field can strengthen the rank-two
+bound. Suppose a group of invertible geometric quasi-endomorphisms normalizes
+\(E\). After defining representatives of its finite image in
+\(\operatorname{Aut}(E)\) over a finite base extension, the
+embeddings in the same orbit have isomorphic Frobenius components
+at good split primes outside finitely many exceptions.
+Consequently the nonordinary balanced pairs form a union of orbits
+on conjugate pairs. For \(b=3\), for example, a transitive action
+on its three pairs forces ordinarity. More generally, simultaneous
+vanishing of coherent Frobenius in \(\lceil b/2\rceil\) distinct
+rank-two balanced pairs contradicts Corollary~\ref{cor:ranktwo}.
+On either side of a balanced pair the coherent space has
+dimension one, so its zero Frobenius scalar makes the pair
+nonordinary. A single isolated moment coefficient usually supplies
+just one such scalar.
+
+The arbitrary-rank result also gives a moment obstruction without
+a symmetry of the cover. Write \(f\) on the sphere quadric
+\(t^2+2xy=1\) as a Laurent polynomial in \(x,t\), by substituting
+\(y=(1-t^2)/(2x)\). Its sphere moment is
+\[
+ \mathcal A(f^m)=\operatorname{CT}_x\,\frac12
+                       \int_{-1}^1 f(x,t)^m\,dt ,
+\]
+interpreted as a rational linear functional on the Laurent chart.
+Assign weight \(2i+j\) to \(x^it^j\).
+
+\begin{proposition}[A squarefree sextic face]\label{prop:sextic}
+Suppose the greatest Laurent weight of \(f\) is four, with
+initial form \(t^4z^{-2}P(z)\), where \(z=x/t^2\) and \(P\)
+has degree four, is squarefree, and has nonzero constant term.
+Then over any characteristic-zero field some positive power
+has nonzero sphere moment. All smaller Laurent weights are
+allowed. If the phase has normal-form degree at most six,
+its least sphere degree is exactly six.
+\end{proposition}
+
+\begin{proof}
+If the moments all vanish, specialize the finitely generated
+coefficient algebra over \(\Q\) to a number field after inverting
+the leading and constant coefficients of \(P\) and its discriminant.
+The vanishing identities and the specified initial form survive.
+At a good prime of degree one with rational characteristic
+\(p=4k+1\), the largest possible \(t\)-degree in the angular
+constant term of \(f^k\) is \(4k=p-1\).
+Integration of an even \(t\)-degree \(j\) divides by \(j+1\)
+and odd degrees integrate to zero. Multiplying by \(p\) and
+reducing modulo the prime therefore gives
+\[
+       p\mathcal A(f^k)\equiv [z^{2k}]P(z)^k\pmod p .
+\]
+Only the initial form can contribute to this top degree.
+
+The normalized cyclic cover \(W^4=z^2P(z)\) has branch
+exponents \((2,1,1,1,1,2)\), including infinity.
+Its primitive order-four Jacobian factor has \(\Q(i)\)-rank
+four and coherent signature \((1,3)\), by the fractional-part
+formula. It is ordinary at the degree-one primes supplied by
+Proposition~\ref{prop:signatures} after finite extension.
+Here the deck action again supplies the polarization-compatible
+field, and the degree-one split primes satisfy \(p=4k+1\).
+The coherent \(H^1\) comparison of the curve with its Jacobian
+is equivariant for the deck action.
+For the character of \(W\), the coherent eigensheaf has generators
+\(W\) on the finite chart and \(z^{-2}W\) at infinity. The
+\v{C}ech quotient has basis the class of \(z^{-1}W\).
+Its Frobenius image is
+\(z^{-p}W^p=z^{-p+2k}P(z)^kW\); the coefficient of the basis class
+is exactly \([z^{2k}]P(z)^k\). Ordinary Frobenius is bijective
+on coherent \(H^1\), so this scalar is nonzero at these primes.
+This contradicts purity.
+
+In the normal form, the negative angular exponents come from
+monomials involving \(y\), with at most one of \(x,y\) present.
+The \(x^{-2}t^8\) term in the initial form comes from \(y^2t^4\)
+with nonzero coefficient. This term has degree six and cannot
+be supplied by a term of lower degree. Thus the stated normal-form
+degree bound gives least sphere degree six.
+\end{proof}
+
+\subsection{From Hasse--Witt restraints to endpoint bounds}
+
+At a split prime the stable rank of coherent Frobenius on an
+embedding component is its slope-zero multiplicity. In
+particular, the rank of the first Frobenius map bounds this
+multiplicity from above \cite[Definition~2.1 and Lemma~2.2]{bouw}.
+Using the complementary component gives an upper bound on the
+unit-slope multiplicity as well.
+
+\begin{proposition}[Testing simultaneous rank restraints]\label{prop:rankcaps}
+Suppose a split mixed pair has endpoint restraints \(z\le R\)
+and \(o\le R'\), obtained from coherent ranks on the corresponding
+components. If the ordinary endpoints fit both restraints, use
+them. Otherwise set
+\[
+       z=\min(R,h-m-1),\qquad o=\min(R',m-1).
+\]
+For all pairs, the simultaneous inequalities are numerically
+compatible with the given endpoint restraints exactly when
+these choices pass \eqref{eq:interval} with the strict unit
+margin. If a definite pair violates its endpoint restraints
+there is no compatible polygon.
+\end{proposition}
+
+\begin{proof}
+The ordinary endpoints give zero excess. Once they are
+unavailable, a nonordinary choice is necessary, and the proposed
+values are coordinatewise largest among allowable endpoints.
+Each interval in \eqref{eq:interval} can only shrink as either
+endpoint multiplicity increases. Thus if the displayed choices
+fail the test, every collection of slopes fails it. If they pass,
+Theorem~\ref{thm:extremal} realizes the simultaneous numerical
+inequalities.
+\end{proof}
+
+For \(h\ge3\), a vanishing coherent line on a pair of type
+\((1,h-1)\) can be matched numerically by slopes
+\(0^{h-2},1/2,1/2\) on its dimension-one side. The paired excess
+is two at no index, and the ordinary slack of this pair is one at
+every index. Thus if another mixed pair stays ordinary, the
+chosen pair can fail while all inequalities hold. A test of one
+line typically needs another computation. The next examples
+supply one explicitly.
+
+\subsection{Arbitrarily large supporting faces}
+
+The prime-isolation argument also works with a prime power.
+If the highest angular-constant height at a chosen moment order
+is \(p^r-1\), and the Laurent coefficients are integral at the
+prime, multiplying the moment by \(p^r\) isolates this highest
+coefficient modulo the prime. Indeed every smaller height has
+interval denominator of valuation less than \(r\).
+For the Kummer model \(W^n=F(z)\) whose selected coherent line
+has generator \(W/z\), Frobenius to the \(r\)-th power
+acts on this line when \(p^r-1=nk\). Its scalar is
+\([z^{p^r-1}]F(z)^k\), by projecting
+\(z^{-p^r}W^{p^r}=z^{-p^r}F(z)^k W\) onto the generator.
+
+\begin{proposition}[Powering a sextic face]\label{prop:scaled}
+For every \(L\ge1\), the highest-weight form
+\[
+       t^{4L} z^{-2L}P(z)^L,\qquad z=x/t^2 ,
+\]
+with \(P\) as in Proposition~\ref{prop:sextic}, forces a nonzero
+power moment, with arbitrary strictly lower-weight terms.
+For phases of normal-form degree at most \(6L\) the least sphere
+degree is exactly \(6L\).
+\end{proposition}
+
+\begin{proof}
+Use the same connected conductor-four cover as in
+Proposition~\ref{prop:sextic}; its Hasse coefficient is nonzero at
+the good degree-one primes after one extension. Further adjoining
+\(\zeta_{4L}\) keeps the conclusion at all but finitely many such
+primes. With \(p=4Lk+1\), the moment at order \(k\) isolates
+\([z^{2Lk}]P^{Lk}\), the original scalar at conductor-four
+exponent \(Lk\). The negative endpoint has leading monomial
+\(y^{2L}t^{4L}\) up to a nonzero scalar. Specialization from an
+arbitrary characteristic-zero coefficient field works as in
+Proposition~\ref{prop:sextic}.
+\end{proof}
+
+\begin{example}[A selected line on a nonordinary split cover]
+Take \(P=(z-1)^2(z-5)^3\) and \(W^9=z^5P(z)\) over
+\(\mathbb F_{73}\). Its primitive relative rank is two, with
+three balanced pairs. The scalars on characters \(2\) and \(4\)
+are zero and \(22\), respectively, by coefficient extraction
+with the branch exponents reduced modulo nine. Explicitly, for
+character \(i\) let \((a_0,a_1,a_5)\) be the least residues of
+\((5i,2i,3i)\) modulo nine. The scalar is
+\[
+       [z^{72-8a_0}](z-1)^{8a_1}(z-5)^{8a_5}\pmod {73}.
+\]
+Thus the pair
+\((2,7)\) fails and the pair \((4,5)\) is ordinary. Its unit
+trace ensures that the relative trace norm is nonzero.
+Two bad pairs would give norm divisibility by \(73^4\),
+incompatible with the Weil bound \(64\cdot73^3\). This makes
+the pair \((1,8)\) ordinary, so the selected scalar on character
+one is nonzero, while the primitive factor is nonordinary.
+
+Let \(73\nmid L\), and take highest weight \(9L\) with form
+\(t^{9L}z^{-4L}P(z)^L\). With coefficients integral at 73,
+all strictly lower weights are allowed, and the top form need
+only have the specified reduction. Choose \(r\) with
+\(73^r\equiv1\pmod {9L}\), and take moment order
+\((73^r-1)/(9L)\). Prime-power isolation extracts the
+\(r\)-fold scalar on the original connected cover.
+It is nonzero, so the moment is nonzero. With normal-form
+degree at most \(13L\), the negative endpoint gives
+least sphere degree \(13L\). The exact coefficient
+replay also gives the selected scalar \(11\bmod73\).
+\end{example}
+
+\begin{example}[Increasing connected conductor]
+Set \(N=(37^r-1)/4\) for \(r\ge2\) and
+\(P=(z-1)^2(z-3)^3\). At highest weight \(N\) with initial
+form \(t^N z^{-4}P(z)\), the fourth moment is nonzero for all
+strictly lower terms integral at 37. In fact it gives
+\([z^{16}]P^4\equiv32\pmod {37}\) after multiplication by
+\(37^r\). The connected cover \(W^N=z^{N-4}P(z)\) has this
+selected scalar for Frobenius to the \(r\)-th power.
+
+The primitive factor is nonordinary at 37. For a primitive
+character \(i\), put \(x=i/N\). Its coherent dimension is
+\(1+\lfloor4x\rfloor-\lfloor2x\rfloor-\lfloor3x\rfloor\);
+this is two for \(1/4<x<1/3\) and one for \(0<x<1/4\).
+Since \(9\mid N\), the character \(i=N/3-1\) is primitive.
+It has ratio in \((1/4,1/3)\), while the representative
+\(37^{r-1}i\equiv N/3-37^{r-1}\pmod N\) has ratio in
+\((0,1/4)\). The unequal dimensions in a Frobenius orbit
+prevent coherent Frobenius on the factor from being invertible.
+The selected line still has nonzero iterated scalar. The
+negative endpoint gives least sphere degree \(N+4\) if the
+normal-form degree is at most \(N+4\).
+\end{example}

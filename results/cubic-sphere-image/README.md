@@ -2,7 +2,8 @@
 
 [Read the paper](cubic-sphere-image.pdf) · [LaTeX source](main.tex) · [Source bundle](source.zip) · [Verification record](verification.json)
 
-Roy van Rijn. Local manuscript; no public deposit or submission is recorded. External mathematical review and formal verification have not occurred.
+Roy van Rijn. **Under review at Hexagon.** Reserved `hexagon:2611.01060v1`. Updated November 25, 2026.
+External mathematical review and formal verification remain open.
 
 The paper classifies all pure phases in the full sixteen-dimensional filtered space of degree at most three on `t²+2xy=1`. It proves the sharp mixed-moment cutoff `m > 3 deg(g)`, transfers it to bihomogeneous bidegree `(3,3)` in two contraction pairs over every characteristic-zero field, and reproduces Long's quartic witness to establish that balanced degree four is the first failure.
 
@@ -31,4 +32,4 @@ The verifier regenerates the moment polynomials, checks every displayed eliminat
 
 The edition hashes, compilation, arithmetic replay, page inspection, primary-source locators and actual PDF-only review are recorded in `verification.json`. An isolated AI blind-reader check is internal review and does not represent external human review.
 
-Before submission: obtain specialist review of the proper direct-image/Fourier period argument and the exhaustive boundary resolution, and independent replay of the finite calculation. No unrestricted Image conjecture, general mixture of bidegrees, or result with additional contraction pairs is claimed.
+Specialist review of the proper direct-image/Fourier period argument and the exhaustive boundary resolution remains open, along with independent replay of the finite calculation. No unrestricted Image conjecture, general mixture of bidegrees, or result with additional contraction pairs is claimed.
