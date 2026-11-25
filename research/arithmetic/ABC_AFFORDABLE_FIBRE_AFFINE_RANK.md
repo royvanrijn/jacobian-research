@@ -365,3 +365,52 @@ Several of the same reconstructions work with a varying shift
 dictionary when multiplicative rows have enough common columns.
 The interval version uses the dictionary's numerical width.
 [Common rows with varying shifts](ABC_AGGREGATE_SHIFT_DICTIONARY_STARS.md)
+
+## A modular progression cover implies affine sparsity
+
+Fix \(r\ge1\), \(0<\theta<1\) and
+\(0<\varepsilon_0<(1-\theta)/(r+1)\). Put
+\(\beta=\theta-(1-\theta)/(r+1)+\varepsilon_0\). In the
+setting of (AF1), let \(S\subseteq[1,X]\) be the distinct
+targets of the subfamily. At fixed \(L\), take
+\[
+ (8^{r+3}\log X)^{2/(r\varepsilon_0)}<y\le n^C
+\]
+with \(C\) fixed and \(y\le X\). Suppose that for each prime
+in \([y,2y]\), reduction of \(S\) is contained in a
+generalized arithmetic progression of rank at most \(r\)
+and cardinality at most \(p^\theta\). In the iterated
+small-budget limit the count is at most
+\[
+                        y^{\max(\beta,0)}+n^{o(1)}.          \tag{AF6}
+\]
+Here the \(o(1)\) bound expresses an arbitrarily small
+fixed normalized allowance for sufficiently small \(L\).
+
+If the threshold \(|S|\ge y^\beta\) is met, Croot–Mao–Yip,
+Theorem 1.12, covers \(S\) by a bounded number of translates
+of a rank-at-most-\(r\) generalized arithmetic progression
+in \(\mathbb Z\) of cardinality \(O_r(y)\). Discard zero
+generators. In any generalized arithmetic progression in
+\(\mathbb Z\), the number of allowed coefficients of one
+nonzero generator is at most the cardinality of the
+progression, since all values along that generator alone
+are distinct. Thus the integer coefficients are bounded by
+\(n^{C+o(1)}\) with no hypothesis on the integer steps or
+on uniqueness of representations. Use these coefficients
+and the constant feature in (AF1) with zero error on each
+translate. Below the threshold the first term of (AF6)
+already bounds the size.
+[Croot–Mao–Yip, Theorem 1.12](https://arxiv.org/html/2510.08862v2#S1.SS2)
+
+A radical cap for one complete letter cannot furnish this
+modular hypothesis by itself. At fixed \(k\ge2\), the set
+of \(k\)-th powers in \([X/2,X]\) has radicals at most
+\(X^{1/k}\). Its roots occupy a consecutive interval of
+length \(\gg_k X^{1/k}\). Repeated residues of these roots
+then give the entire set of \(k\)-th powers modulo every
+prime \(p\) below this length, with cardinality
+\(1+(p-1)/\gcd(k,p-1)\gg_k p\). This example concerns one
+letter. The missing input for using (AF6) on actual fibres
+is a progression restriction valid at many independent
+primes from the three-letter relation.

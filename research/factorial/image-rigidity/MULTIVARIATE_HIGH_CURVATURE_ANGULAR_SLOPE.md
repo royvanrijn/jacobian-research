@@ -11,7 +11,8 @@ For every \(N\ge256\) with
                          S\ge 2\log N+5,                   \tag{1}
 \]
 the ordinary factorial moment polynomials of orders \(N-1,N\)
-are coprime. The criterion is uniform in the dimension, the
+have disjoint root arguments under independent positive rescalings,
+and are coprime. The criterion is uniform in the dimension, the
 exponents, and the characteristic-zero coefficient field. In
 particular it also applies when \(\sum_i a_i=\sum_i b_i\).
 
@@ -107,10 +108,9 @@ zero and writing
 gives \(|\delta_m|<7\theta/15\). The exact root equation
 gives \(m\theta=(2j_m+1)\pi+\delta_m\) for some integer \(j_m\).
 
-If \(t\) were a common root of the physical polynomials,
-conjugation would give \(0<\arg t\le\pi\). The two normalized
-roots have the same angle \(\theta=\arg t\), since \(G_m>0\).
-Subtracting their phase equations would give
+Suppose the two normalized polynomials have roots with equal
+arguments. By conjugation their common angle can be written as
+\(0<\theta\le\pi\). Subtracting their phase equations gives
 \[
  2\pi(j_N-j_{N-1})=\theta-\delta_N+\delta_{N-1}
        \ \in\ (\theta/15,29\theta/15)\ \subset\ (0,2\pi),

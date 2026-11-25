@@ -278,6 +278,18 @@ valuation degrees, these orders recover no positive limiting
 radical mass. The result therefore leaves that part of the
 unrestricted endpoint open.
 
+For fixed coefficients, Achenjang, Arango-Piñeros and
+Vemulapalli obtain a precise asymptotic for distinct primitive
+images for every Euclidean signature, including \((2,3,6)\).
+For a fixed equation \(F\) with points and positive Jacobian
+rank \(r(F)\), the main term is a constant times
+\((\log H)^{r(F)/2}\) at Weil height \(H\), and the primitive
+points form finitely many cosets of a finite-index subgroup.
+The rank, regulator, coset data and error constants depend on
+\(F\). This does not supply a uniform rank or point bound
+when the coefficients move with \(X\), as required above.
+[Achenjang–Arango-Piñeros–Vemulapalli, Theorems 1.1 and 1.4](https://arxiv.org/html/2611.31699v1#S1)
+
 ## A parity count using a fourth determinant
 
 A direct Legendre twist gives a complementary estimate using

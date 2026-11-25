@@ -6716,6 +6716,44 @@ We have excluded every limiting \(d>5/12\). The fixed-truncation and dyadic pass
 
 ## The unrestricted one-third endpoint
 
+An actual two-letter power norm can count distinct targets at
+equal heights. Fix full divisors \(F,G\) of the two summands and
+retain a target packet \(T=C R^k\). For a degree-\(q\) binomial norm
+the finite-place embedding determinant uses precision
+\((FG)^{(q-1)/2}C_0^{\binom{q-1}{2}}\), where \(C_0\) is the
+part of \(C\) at its good primes. The archimedean size is controlled
+by \(R\). Already paid coefficient supports can contribute their
+full locks. The resulting spherical \((2,2,4)\) sector has
+exponent \((1/3-1/100)\lambda+\varepsilon\) under the stated
+caps. Dense prime valuation indices leave the two binomial
+coefficient records too expensive.
+[Finite-place norm target counts](ABC_FINITE_PLACE_NORM_TARGET_COUNTS.md)
+
+The small-budget bound transfers in the reverse direction to
+one-letter powered-number spacing. Normalizing a nearby pair in
+a unit progression block charges only the radical of its step
+in the derived triple. This gives quantitative local occupancy
+and a global nearby-pair bound, with improved scaling recovery
+for full integers. A second elementary argument stops a smooth
+full divisor just above the block width. It gives subpower
+occupancy on blocks of normalized length \(n^h\) from any
+positive diffuse high-valuation component of the actual target,
+even with macroscopic primes elsewhere. Both estimates still
+permit one target in each of many different blocks.
+[Powered progression occupancy](ABC_POWERED_PROGRESSION_OCCUPANCY.md)
+
+An invertible \(p\)-adic Jacobian can be charged once by using
+nearby zeros over the algebraic closure. For a square system,
+the sum of its two largest Smith valuations is a sufficient
+residual-depth threshold. A generic finite reference fibre
+preserves the original congruences and allows residue labels.
+In the primitive-kernel one-root argument this removes the
+separate terminal inequality. The strengthened rank conditions
+still fail on the symmetric diffuse test profile, across
+arbitrary retained submeasures and fixed mesh choices.
+[Multivariate approximate zeros](ABC_MULTIVARIATE_APPROXIMATE_ZEROES.md)
+· [One-root target count and symmetric obstruction](ABC_ALGEBRAIC_ROOT_TARGET_OCCUPANCY.md)
+
 Prescribing the actual parity defects on all three primitive letters
 allows a second use of the affordable divisor records. The resulting
 conic has a rational model of controlled height and each full power
@@ -6892,6 +6930,19 @@ exceptional orders on a resolution.
 [Auxiliary-curve terminal](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-diffuse-terminal-count-on-auxiliary-curves)
 · [Higher-dimensional descent](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#dimension-descent-from-diffuse-locks-on-bounded-degree-full-components)
 
+At a balanced endpoint the curve terminal can also start with
+no paid full divisor. If the good-model exceptional support takes
+away all nonatomic mass, the supported parts that were already
+recorded supply a fixed positive-weight full modulus for the
+purely atomic terminal. If nonatomic mass survives, the original
+diffuse branch argument applies. Separately, a rational
+parametrization of the complete integer values with at least
+two distinct poles admits only subpower many parameters at
+each fixed budget, by a uniform ideal-divisor and unit count.
+These are per-curve counts. The number of curves needed for
+an economical cover of an arbitrary pair fibre remains open.
+[Curve terminals without a paid lock](ABC_CURVE_TERMINALS_WITHOUT_PAID_LOCKS.md)
+
 A first determinant can also retain Taylor rank past the
 least individual lifting order by capping each term at the
 available prime-power precision. This yields a strict saving
@@ -6953,6 +7004,82 @@ valuation degrees in a way that couples different edges.
 
 
 #### Exact arithmetic sectors and determinant limits
+
+An affordable record also couples distinct targets without
+common-neighbor stars. Short integral additive relations on
+the targets lift to exact relations on both summands. For
+a fixed relative affine shape, counts for the normalized
+patterns determine the three common contents by a rank-two
+linear relation. The tuple count pays only the joint
+defect-prime support. When two letters have normalized
+progression products with no defects above the length \(k\),
+Pratt's long-progression theorem bounds their shapes and
+forces the third full divisor to be \(O(k(\log k)^3)\).
+This excludes such configurations with a sufficiently tall
+fixed divisor and leaves the unrestricted shape and defect
+dictionaries open.
+[Additive patterns and common contents](ABC_AFFORDABLE_FIBRE_ADDITIVE_PATTERNS.md)
+
+A different constraint works on arbitrary sparse matchings.
+After fixing concentrated supports, crossing two residual
+summands gives a new primitive additive relation and a
+normalized determinant. If the initial divisor-record cost is
+\(t\), saturation requires an almost-all determinant radical
+exponent at least \(2/3-4t\) when that is positive, up to
+arbitrarily small allowances. A fixed target divisor further
+divides each normalized determinant. Small quotient determinants
+can therefore exclude some sparse fibres. Large-radical
+determinants remain possible under this estimate.
+[Determinants of distinct targets](ABC_AFFORDABLE_FIBRE_DETERMINANT_COMPLEXITY.md)
+
+Complete odds quotients at three or four actual targets also
+give a higher-order common-neighbor bound. Fixed relative odds
+put the targets into independent linear forms in two primitive
+common factors. A small mixed valuation defect bounds the
+number of completions of those forms. Three actual targets
+suffice at any fixed order \(q\ge3\), using a cyclic twist,
+the primitive cubic count, or a quartic elliptic map.
+Four actual targets suffice for parity, by the elliptic count
+with rational \(2\)-torsion. The original summand kernels are
+unrestricted in both target-only results. For example, if
+the target \(q\)-defect has normalized mass at most \(1/72\)
+and total nonatomic mass is at most \(1/2+1/60\), the
+three-target count excludes the limiting coefficient \(1/3\).
+The fixed-odds argument uses actual witnesses and their
+target valuations. Bounding the mixed-defect dictionaries
+on general stars remains a separate arithmetic step.
+[Three-target bounds for fixed valuation orders](ABC_THREE_TARGET_PRIME_ORDER_STARS.md)
+· [Four-target parity and mixed kernels](ABC_MULTI_TARGET_MIXED_KERNEL_COUNTS.md)
+
+A common multiplier chosen to make all three letters exact powers
+has a pointwise cost at every microscopic degree shared by the
+three valuation spectra. With \(Q\) the least common multiple of
+the chosen orders, the sum of the normalized log repaired height
+\(\log(mc)/Q\) and the log coefficient radical is at least
+\(\sum_e\min_i\log\operatorname{rad}_e(a_i)\). The minimum of the
+joint cost is given by primewise CRT, including when the orders
+are chosen after observing the triple. For pairwise coprime orders
+an unrestricted height benchmark of \(Y^{1/Q}\) already occurs
+in distinct minimally repaired heights of primitive squarefree
+quotients. The two facts rule out a height-only transfer on
+microscopically matching spectra even after removing arbitrary
+common multipliers. Weakly matching degree limits can still have
+small repair cost, by the disjoint-grid example.
+[Exact-power repair obstruction](ABC_EXACT_POWER_REPAIR_OBSTRUCTION.md)
+· [Coefficient records and the effective orders](ABC_EXACT_POWER_REPAIR_COEFFICIENTS.md)
+
+For general orders the common-repair support condition is the
+primitive grid given by the three effective shared orders. These
+orders also give the ramification indices of the normalized
+weighted Fermat cover. In particular large pairwise coprime
+orders give the projective line, while shared orders impose
+actual degree divisibility away from the coefficient primes.
+This calculation leaves the one-target minimal-fullness
+equivalence (MRG) as a distinct problem. Its restricted count
+uses the primitive summand radicals along with the repaired
+target height.
+[Weighted Fermat cover](ABC_EXACT_POWER_REPAIR_COEFFICIENTS.md#the-effective-orders-determine-the-weighted-fermat-curve)
+· [One-target minimal repair](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md#a-reverse-transfer-by-repairing-only-the-target)
 
 For minimally repaired primitive quotients, actual cyclotomic
 splitting gives a saving using all three radical bounds.

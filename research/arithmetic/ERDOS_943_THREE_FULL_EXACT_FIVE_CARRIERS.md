@@ -194,6 +194,8 @@ Both entries defining \(\rho_\eta\) are nonnegative. An additional estimate
 \]
 would therefore imply \(r_3(N)\ll_\epsilon N^{1/4-\eta+\epsilon}\). Independent epsilon losses are divided in advance. Estimate (15), for any fixed positive \(\eta\) uniformly over all \(N\), remains open. It is only a sufficient condition: a saving for \(r_3(N)\) alone does not imply it, since the weights can substantially exceed their actual fiber sizes.
 
+The [coherent-cycle bound](ERDOS_943_THREE_FULL_COHERENT_CYCLES.md) gives the independent unconditional estimate \(r_3(N)\ll_\epsilon N^{33/134+\epsilon}\), and hence a saving of \(1/268\) below exponent \(1/4\). This resolves the uniform representation-saving question. It does not establish the support-capacity estimate (15), which remains open.
+
 ## 6. The balanced limitation of independent carrier freezing
 
 **Proposition 6.** Independent application of the mixed-product box menu followed by unrestricted carrier-pair summation does not improve the current full-\(3\)-full bound in its balanced numerical box.

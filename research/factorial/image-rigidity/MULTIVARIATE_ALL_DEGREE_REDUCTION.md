@@ -150,8 +150,8 @@ follows from the sequential comparison used here.
 ## The fixed-terminal obligation
 
 The absolute eventual theorem leaves only finitely many possible
-terminal orders, starting at nine by the
-[complete terminal-eight theorem](MULTIVARIATE_TERMINAL_EIGHT_ALL_PROFILES.md).
+terminal orders, starting at eleven by the
+[complete terminal-ten theorem](MULTIVARIATE_TERMINAL_TEN_ALL_PROFILES.md).
 Each such order still includes arbitrary dimension and exponents. The
 [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
@@ -271,10 +271,31 @@ Cayley comparison. Thus all terminals through nine are complete.
 The [linked Hermite proof](MULTIVARIATE_FIXED_TERMINAL_HERMITE_SEPARATION.md)
 independently gives a computable small-curvature separation radius
 at every fixed terminal.
+The [terminal-ten theorem](MULTIVARIATE_TERMINAL_TEN_ALL_PROFILES.md)
+covers all private profiles and all fully shared profiles. Its upper
+middle band uses seventeen exact retained lists and the same cubic
+matched model as the lighter bands. The consecutive pairs through
+terminal ten are therefore complete. The
+[terminal-eleven fixed rays](MULTIVARIATE_TERMINAL_ELEVEN_HIGH_CURVATURE.md)
+separate all profiles with \(S\ge8\) or total private degree at
+least four, and give shared-curvature cutoffs for the nine other
+private configurations.
 
 Across all terminals, the [explicit high-curvature theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_CURVATURE_BOUND.md)
-and the [Hermite-edge comparison](MULTIVARIATE_EFFECTIVE_WEAK_CURVATURE_HERMITE_EDGE.md)
-confine possible counterexamples to \(10^{-16}N^{-8/3}<S<64\).
+and the [uniform weak-curvature theorem](MULTIVARIATE_UNIFORM_WEAK_CURVATURE_ANGLE_SEPARATION.md)
+confine a possible counterexample to \(\eta_*/2<S<64\), where
+\(\eta_*>0\) is a computable absolute rational. The
+[matched Gauss remainder](MULTIVARIATE_MATCHED_GAUSS_UNIFORM_REMAINDER.md)
+also supplies the explicit sufficient angular range
+\(S\le10^{-18}N^{-13/6}\). The [earlier Hermite-edge estimate](MULTIVARIATE_EFFECTIVE_WEAK_CURVATURE_HERMITE_EDGE.md)
+gives a second explicit weak-curvature range for smaller orders.
+For all ordinary profiles the
+[absolute eventual angular theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL_ANGLES.md)
+gives a computable cutoff under independent positive rescaling.
+It compares modulus equations to control the difference of real
+fields before subtracting phases. At the one-private cubic scale,
+the signed imaginary speed gives a uniform strict margin on each
+bounded model window. The numerical cutoff is unevaluated.
 The [effective stationary-fiber bounds](MULTIVARIATE_EFFECTIVE_STATIONARY_FIBER_LOCALIZATION.md)
 give a finite net for bounded-curvature profiles on interior field
 rectangles. The [inverse-map estimates](MULTIVARIATE_EFFECTIVE_STATIONARY_INVERTIBILITY.md)
@@ -363,7 +384,7 @@ over any characteristic-zero field by the rational Bézout identity.
 Both pure monomial coefficients are nonzero at every order, so
 the univariate reduction in \(t\) covers all projective coefficient
 choices. An all-degree proof still requires coverage of the terminals
-from ten through \(N_*-1\), or an argument that applies directly
+from eleven through \(N_*-1\), or an argument that applies directly
 at every terminal.
 
 ## The discrete row-merger route

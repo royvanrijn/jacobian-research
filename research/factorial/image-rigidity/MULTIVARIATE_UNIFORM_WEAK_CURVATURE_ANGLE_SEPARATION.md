@@ -9,6 +9,10 @@ terminal \(N=n+1\ge2\), the two factorial moment polynomials have
 disjoint root arguments if \(W\le\eta_*\).
 In particular, they are coprime over every characteristic-zero field.
 The cap is uniform in the exponent rows and dimension.
+In terms of \(S=\sum_i (b_i-a_i)^2/\max(a_i,b_i)\) over unequal
+rows, \(S\le\eta_*/2\) is sufficient. Each row midpoint lies
+between half its maximum exponent and its maximum exponent,
+which gives \(S\le W\le2S\).
 For fully shared profiles and \(n\ge2\), it is also enough that
 \(nX\le\eta_*\), where \(X\) is the order-\(n\) Gauss reciprocal sum.
 The proof specifies a finite choice of the cap and compares roots across orders.
@@ -40,11 +44,19 @@ the effective comparison holds at every root separately and is
 independent of any relation between the two real parts.
 
 The large-field and one-saddle regions there exclude single-order
-roots. Its regular two-saddle region and fixed small fold region
-exhaust the remaining bounded \(y\)-interval. Both fields enter
-the same region since \(y\) is common and \(|\Re\xi_j|\) is
-uniformly small. Shrink the physical curvature cap as needed
-after fixing the two regions.
+roots. The following choice makes the cover at the model fold
+\(y_c=2\sqrt2\) explicit. Let \(r_f>0\) be a uniform radius for
+an admitted disk about the actual fold \(\xi_{\rm fold}\), including
+the final Airy label and branch margins below. Choose a positive
+rational \(r<r_f/4\). Decrease the curvature cap so that
+\(|\xi_{\rm fold}-iy_c|\le r\) and \(8\varepsilon\le r\).
+For \(|y-y_c|\le r\), both fields then lie within \(3r<r_f\) of
+\(\xi_{\rm fold}\). Their horizontal segment remains in that disk.
+Use the regular two-saddle estimates on \(0\le y\le y_c-r/2\)
+and the regular one-saddle exclusion on \(y_c+r/2\le y\le Y\),
+where \(Y>y_c+r\) is the large-field cutoff.
+Both regular ranges overlap the fold range. These choices treat
+both fields in the same chart for every common \(y\).
 
 ## Regular modulus comparison
 
@@ -203,9 +215,12 @@ An absolute all-order cap can now be taken as
 \[
                  \eta_*=\min(W_{\rm a},10^{-18}N_{\rm a}^{-3}).
 \]
-For \(3\le N<N_{\rm a}\), use \(S\le W\) and the
+Each row has \((a_i+b_i)/2\le\max(a_i,b_i)\), so \(S\le W\).
+For \(3\le N<N_{\rm a}\) the cap therefore gives
+\(S\le10^{-18}N_{\rm a}^{-3}\le10^{-18}N^{-13/6}\).
+Apply the
 [explicit matched Gauss remainder](MULTIVARIATE_MATCHED_GAUSS_UNIFORM_REMAINDER.md)
-at the smaller curvature cap. For \(N=2\) the first moment has one
+at these orders. For \(N=2\) the first moment has one
 negative real root. The second moment is strictly positive on
 real arguments since it is the expectation of a square and the
 two monomials are distinct.

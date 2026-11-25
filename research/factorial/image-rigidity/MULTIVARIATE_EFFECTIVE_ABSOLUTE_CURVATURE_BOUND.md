@@ -9,8 +9,10 @@ rows and put
    +\sum_{a_ib_i=0}\max(a_i,b_i).
 \]
 
-**Theorem.** If \(S\ge64\), then \(\gcd(Q_{N-1},Q_N)=1\) for every
-terminal \(N\ge2\), over every characteristic-zero field.
+**Theorem.** If \(S\ge64\), then \(Q_{N-1},Q_N\) have disjoint
+root arguments for every terminal \(N\ge2\), including under
+independent positive rescalings. Thus \(\gcd(Q_{N-1},Q_N)=1\)
+over every characteristic-zero field.
 
 This makes the large-curvature step of the
 [uniform eventual proof](MULTIVARIATE_ALL_DEGREE_REDUCTION.md)
@@ -45,7 +47,7 @@ At a root with argument \(0<\theta\le\pi\), the two half arguments
 give \(m\theta=(2j+1)\pi+\delta_m\), with
 \(|\delta_m|<\theta/4\). The arguments are taken from their real
 values on the positive radius. Subtracting these two phase equations
-at a common physical root would put an integer multiple of \(2\pi\)
+at roots with equal arguments would put an integer multiple of \(2\pi\)
 strictly between \(\theta/2\) and \(3\theta/2\), which is impossible.
 
 For \(N\ge256\) the cited angular comparison applies when
@@ -191,9 +193,9 @@ For normalized log radius \(\lambda\) and argument \(\theta\), put
  J_m(\lambda,\theta)=\mathcal L_m(e^{\lambda+i\theta})
                      -\mathcal U_m(e^{-\lambda-i\theta})
 \]
-using the two half logarithms. If \(t\) is a common physical root,
-both normalized roots have the same \(0<\theta\le\pi\) after
-conjugation. At the corresponding radii \(\lambda_n,\lambda_N\) the
+using the two half logarithms. Suppose the two normalized
+polynomials have roots with equal arguments. By conjugation let
+their common argument satisfy \(0<\theta\le\pi\). At the corresponding radii \(\lambda_n,\lambda_N\) the
 root equations are
 \[
      m(\lambda_m+i\theta)

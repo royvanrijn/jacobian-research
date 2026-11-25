@@ -1,0 +1,135 @@
+# A full curve without a paid lock and a rational curve with two poles
+
+## The balanced curve terminal without an initial lock
+
+Keep the good-model and narrow-projection hypotheses in the
+[diffuse terminal count on auxiliary curves](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-diffuse-terminal-count-on-auxiliary-curves).
+In particular the exact complete odds have degree \(O(1/L)\),
+the narrow projection is nonconstant of projective height
+\(X^{O(L)+o_X(1)}\), and all algebraic data have polynomial
+height and fixed degrees in the inner limit at each \(L\).
+Assume the chart is in an actual balanced endpoint sequence,
+with the original full valuation records on all three letters.
+Then its curve terminal costs arbitrarily small normalized
+exponent, even without a previously fixed positive-weight
+full divisor.
+
+Indeed, use the existing good-model construction and record
+the full parts of all three letters on the resulting exceptional
+prime support at subpower cost. That support is contained in
+the prime divisors of one polynomial-height integer at fixed
+\(L\), so the fixed-support estimate is uniform. Refine the root
+boxes as in the existing terminal. If some retained residual
+measure has positive nonatomic mass, the existing diffuse
+terminal applies with that letter and no initial full divisor.
+
+Suppose all residual measures are purely atomic. The
+[balanced nonatomic constraint](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees)
+gives an original letter with positive nonatomic mass.
+The full prime splitting on that letter is an exact split of
+its degree measure: a retained good prime and a removed bad
+prime carry their original complete valuation degree. On each
+bounded continuity band the two weak limiting measures sum
+to the original measure. Since the residual measure is purely
+atomic, some compact positive degree band \([s,S]\), with
+\(s>0\), has removed mass \(\beta>0\) and therefore removed
+numerical weight at least \(s\beta\). In particular the complete
+bad-supported part \(B\) of that letter is already fixed and
+satisfies \(\log_X B\ge w_0>0\) for a fixed \(w_0\) in the
+subsequence. Its radical is at most \(n^{b+o(1)}\), where
+\(n=X^L\) and a finite \(b\) comes from the original letter
+cap.
+
+Choose \(\kappa>0\) so that \(\kappa(b+1)<w_0/3\).
+Delete from \(B\) all prime powers of order below
+\(k=\lfloor\kappa/L\rfloor\). This loses logarithmic
+weight at most
+\[
+           k\log_X\operatorname{rad}(B)\le\kappa(b+o(1)),
+\]
+so the remaining full divisor is fixed, \(k\)-full, and
+has weight at least \(2w_0/3\) with strict room after
+taking the outer budget small. The two opposite complete
+letters are units there by primitivity, and their ratio has
+fixed residue by the signed additive equation. Those
+opposite residual measures are purely atomic. Apply the
+[existing amplified atomic terminal](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#fallback-when-the-original-chart-fixed-a-full-modulus)
+with this divisor. The fixed support factors enter its
+unit twist. This gives arbitrarily small additional
+normalized exponent and recovers the primitive triple.
+The proof uses the fixed-support cost only in the inner
+height limit, before obtaining the weak measures and
+choosing \(\kappa\). It is a per-curve conclusion.
+
+## A uniform fixed-budget count for two geometric poles
+
+Fix \(m,D,A,H>0\). Let \(X\ge2\), and let
+\(f_1,\ldots,f_m\in\mathbb Q(z)\) be rational functions
+whose reduced numerator and denominator degrees are at
+most \(D\), with coefficients of height at most \(X^A\)
+after clearing denominators. Suppose their combined pole
+set on \(\mathbf P^1_{\overline{\mathbb Q}}\) has at least
+two distinct points. For every \(\epsilon>0\), the number
+of reduced rational parameters of projective height at
+most \(X^H\) for which every \(f_i\) is defined and
+integer is \(O_{m,D,A,H,\epsilon}(X^\epsilon)\), uniformly
+in the functions. No radical or additive hypothesis is
+used. At fixed \(L\) the degrees and height exponents
+may depend on \(L\).
+
+Write \(f_i=N_i(a,b)/D_i(a,b)\) with coprime homogeneous
+integer forms of the same degree evaluated at
+\(\gcd(a,b)=1\). The two affine Bézout-resultant
+identities, homogenized, show that \(D_i(a,b)\) divides
+a fixed nonzero integer times a power of \(a\), and
+also a fixed nonzero integer times a power of \(b\).
+Indeed \(D_i(a,b)\mid N_i(a,b)\). Thus \(D_i(a,b)\mid J_i\)
+for a fixed integer \(J_i\ne0\) of polynomial height.
+The parameters with \(ab=0\) contribute at most two.
+
+Split the denominator forms over a common field of bounded
+degree. Scale each linear factor to have algebraic integer
+coefficients, so that the product of the factors of a form
+is a rational integer multiple of that form. For instance
+for \(D_i(X,Y)=c\prod (X-\alpha_jY)\), use
+\(cX-c\alpha_jY\), after treating factors \(Y\) separately.
+The root bound gives polynomial height in all embeddings
+for these factors and their values. The principal ideal
+generated by an evaluated linear factor divides a fixed
+nonzero polynomial-height integer ideal. The possible ideals
+number \(X^{o_X(1)}\) uniformly in the bounded-degree field:
+above a rational prime \(p^e\) there are at most \(d\) primes,
+each of exponent at most \(de\), where \(d\) is the field
+degree bound. The product of these counts is bounded by
+a fixed power of the ordinary divisor function.
+
+For any fixed ideal choose an occurring generator as
+reference. All conjugate absolute values of all occurring
+generators are between \(X^{-O(1)}\) and \(X^{O(1)}\);
+the lower bound follows from their nonzero integral norm.
+The ratios to the reference are units with archimedean log
+vectors of size \(O(\log X)\). In bounded degree the nonzero
+unit log vectors have uniform positive separation. In fact
+a unit with log vector of norm at most \(\log 2\) has all
+conjugates at most two, hence belongs to the finite set of
+roots of bounded-coefficient monic polynomials of degree
+at most \(d\). Zero vectors are torsion by Kronecker's
+theorem, with bounded torsion in bounded degree. Apply the
+same observation to quotients to obtain the separation
+for every pair of distinct log vectors. Ordinary packing
+then yields \(O_d((1+\log X)^d)\) generator choices per ideal,
+up to that bounded torsion.
+
+Choose two nonproportional linear factors corresponding
+to the two distinct poles. Their values range over
+\(X^{o_X(1)}\) possibilities each and determine \((a,b)\)
+by an invertible two-by-two system over the splitting
+field. This proves the uniform count. In the one-pole
+case this conclusion can fail even for \(f(z)=z\).
+The pole/unit viewpoint is classical in the study of
+individual genus-zero curves. The displayed bound uses
+polynomial coefficient heights to make the count uniform
+across the varying rational functions rather than using
+finiteness for one fixed curve. [Alvanos, Bilu and Poulakis,
+Theorem 1.1 and §2](https://arxiv.org/pdf/0907.2097)
+
