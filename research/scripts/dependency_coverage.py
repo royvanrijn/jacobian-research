@@ -14,6 +14,7 @@ import re
 import subprocess
 
 from external_artifacts import artifact_manifest, repository_path, sha256_file
+from publication_paths import is_deposited_path
 
 ROLES = {"proof", "manuscript", "formal-support", "imported-source",
          "scope", "evidence", "reference", "documentation"}
@@ -52,7 +53,7 @@ def inventory_paths(root: Path, repository: Path) -> list[str]:
             continue
         if path.suffix.lower() not in SUFFIXES and path.name not in {"lean-toolchain", "Makefile"}:
             continue
-        if {"published", ".lake", "__pycache__"}.intersection(parts):
+        if is_deposited_path(parts) or {".lake", "__pycache__"}.intersection(parts):
             continue
         if parts[0] == "research":
             relative = path.relative_to(root)

@@ -6,7 +6,13 @@
   },
   "summary": "Proves the power-law basis order, the critical multiplier threshold and strictly intermediate cofiniteness at equality, with almost-sure reversibility by finite prime additions or removals.",
   "published": false,
-  "status": "ready-for-review",
+  "submission": {
+    "venue": "Hexagon",
+    "reserved_identifier": "hexagon:2611.01049v2",
+    "status": "under-review",
+    "updated_on": "2026-11-25"
+  },
+  "status": "submission-pending",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",

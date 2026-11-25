@@ -21,6 +21,7 @@ from dependency_coverage import CoverageError, check_coverage, coverage_state, r
 from dependency_bounds import bounds_records, bound_comparisons
 from dependency_references import check_references, reference_state, render_references
 from dependency_tex_links import tex_proof_link_report, tex_proof_registration_issues
+from publication_paths import result_paper_directories
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parent
@@ -223,7 +224,9 @@ def render_topic(topic: dict, evaluation: dict | None = None) -> str:
             metadata = ROOT / paper / "metadata.json"
             paper_meta = json.loads(metadata.read_text()) if metadata.is_file() else {}
             if paper_meta.get("status") == "submission-pending":
-                state = "Submission pending at " + paper_meta["submission"]["venue"]
+                submission = paper_meta["submission"]
+                state = "Under review" if submission.get("status") == "under-review" else "Submission pending"
+                state += " at " + submission["venue"]
                 source = str(paper / "README.md")
             else:
                 state = "Published preprints"
@@ -378,9 +381,12 @@ def check_portfolio() -> tuple[int, int]:
     counts = []
     for collection in ("results", "unpublished"):
         directory = REPOSITORY / collection
-        assert all((folder / "metadata.json").is_file() for folder in directory.iterdir() if folder.is_dir()), (
-            f"uncatalogued paper directory in {collection}")
-        folders = sorted(directory.glob("*/metadata.json"))
+        if collection == "results":
+            paper_directories = result_paper_directories(directory)
+        else:
+            paper_directories = [path for path in directory.iterdir() if path.is_dir()]
+        folders = sorted(paper / "metadata.json" for paper in paper_directories)
+        assert all(path.is_file() for path in folders), f"uncatalogued paper directory in {collection}"
         assert folders, f"no {collection} metadata"
         counts.append(len(folders))
         for path in folders:

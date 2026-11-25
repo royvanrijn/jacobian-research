@@ -142,7 +142,13 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Uniform weighted squarefree twin correlations | Internal result | proved | [Source](SQUAREFREE_TWIN_CORRELATION_NEAR_ZERO.md) |
 | Uniform isolation of the twin-prime coefficient | Internal result | proved | [Source](SQUAREFREE_TWIN_CORRELATION_NEAR_ZERO.md) |
 | Signed doubling criterion for a quantitative twin-prime lower bound | Internal result | proved | [Source](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) |
+| Higher-order one-sided extraction of the twin-prime coefficient | Internal result | proved | [Source](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) |
+| Large-divisor reduction of the fixed twin-prime estimate | Internal result | proved | [Source](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) |
+| Reweighting obstruction to transfer from other prime shifts | Internal result | proved | [Source](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) |
 | Small-cofactor reduction for the weighted twin doubling combination | Internal result | proved | [Source](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) |
+| Opposite prime counts with matched shifted-prime divisor and parity data | Internal result | proved | [Source](ROUGH_TWIN_PARITY_ENTROPY.md) |
+| Cutoff variation isolating the prime term in a rough parity sum | Internal result | proved | [Source](ROUGH_TWIN_PARITY_ENTROPY.md) |
+| Localization of the signed large-divisor sum to rough factors | Internal result | proved | [Source](ROUGH_TWIN_PARITY_ENTROPY.md) |
 | Column-wise entropy transfer at the power-rough pair scale | Internal result | proved | [Source](ROUGH_TWIN_PARITY_ENTROPY.md) |
 | Information lower bounds for marked columns and the full rough-pair array | Internal result | proved | [Source](ROUGH_TWIN_PARITY_ENTROPY.md) |
 | Relative entropy lower bound for detection in prime-only dilation columns | Internal result | proved | [Source](LARGE_DILATION_ENTROPY_TEST.md) |
@@ -258,69 +264,69 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Even Laurent passport leaf reduction outside an exponentially small tuple set | Internal result | proved | [Source](HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md) |
 | Short rational monomial congruences over powerful moduli | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Doubled leading saving for all fixed powerfulness offsets | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| Fourier bound for powerful triples at arbitrary fixed orders | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Logarithmically stronger powerful-triple saving from grouped Fourier moments | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Omitted-coordinate graph bound in abc boxes | Internal result | proved | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
+| Fourier bound for powerful triples at arbitrary fixed orders | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Logarithmically stronger powerful-triple saving from grouped Fourier moments | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Omitted-coordinate graph bound in abc boxes | Internal result | stale | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
 | Short-witness saving and exact long-complement reduction for square-full kernels | Internal result | proved | [Source](ERDOS_943_SHORT_WITNESS_KERNEL_PAIRS.md) |
 | Stronger savings for even diagonal powerful triples | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| Exact 7/12 optimum of the FullOC exponent program | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| The 7/12 upper bound for the abc exceptional set | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Exact 7/12 optimum of the FullOC exponent program | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| The 7/12 upper bound for the abc exceptional set | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
 | Weighted two-power graphs for diagonal powerful triples | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| The 1747/3000 upper certificate for grouped FullOC | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| The 1747/3000 upper bound for the abc exceptional set | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| The 1747/3000 upper certificate for grouped FullOC | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| The 1747/3000 upper bound for the abc exceptional set | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
 | Rectangular rational congruence bound over powerful moduli | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Square-root growth of the saving coefficient for primitive powerful triples | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Divided-difference congruence bound over powerful moduli | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Fixed-proportion saving for primitive powerful triples | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
-| A strict analytic saving at every fixed radical budget | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| A small-budget saving of order lambda^(3/2) sqrt(log(1/lambda)) | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Exact ordered-tall certificates through unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| Exceptional-set bounds from two tall terms | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| The 29/50 upper certificate at unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
-| The 29/50 upper bound for the abc exceptional set | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| A strict analytic saving at every fixed radical budget | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| A small-budget saving of order lambda^(3/2) sqrt(log(1/lambda)) | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Exact ordered-tall certificates through unit radical budget | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| Exceptional-set bounds from two tall terms | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| The 29/50 upper certificate at unit radical budget | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| The 29/50 upper bound for the abc exceptional set | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
 | Adaptive determinant bound over powerful moduli | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Saving of 1/(153k) for primitive powerful triples | Unpublished; independent review pending | proved | [Source](../../unpublished/powerful-number-representations/README.md) |
 | Primitive energy, the modular cusp and the exact full/long/high-order reduction | Internal result | proved | [Source](ERDOS_943_VISIBLE_FRACTION_ENERGY_AND_MODULAR_CUSP.md) |
-| Proportional small-budget abc saving by powerful-modulus compression | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Exceptional-set exponent lambda/2+O(lambda^(3/2)) | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| A uniform analytic abc exceptional-set exponent of 4/7 | Internal result | proved | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
-| Scalable amplification for rational congruences over powerful moduli | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Primitive triples with prime valuations in a fixed-width interval | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Heavy-coordinate stability near half the abc radical budget | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Separated-degree near-half profiles obstruct one-base compression | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Scalable powerful-modulus congruence with an independent exponent | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Dominant-divisor locking for single-heavy abc boxes | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| An exact curve obstructs a uniform three-variable unit congruence count | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Auxiliary surfaces and transverse curves for three-variable prime-power congruences | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Auxiliary curves from Weierstrass division in every retained class | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Coprime ternary monomial counting over powerful moduli | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| The coprime ternary congruence cuts the two-heavy abc profiles | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| A fixed-proportion small-budget saving below the half exponent | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Uniform small-budget coefficient 6/13 | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Height-free residual radical count for hyperbolic prime-power signatures | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Explicit small-budget abc coefficient below 5/11 | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Four coprime roots with a bounded degree relation compress to three | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| Residual radical bounds for two Euclidean signatures | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| An explicit gap below the small-budget coefficient 3/7 | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| A square–cube residual radical count | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| A Pell saving for small determinant-one coefficients | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Proportional small-budget abc saving by powerful-modulus compression | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Exceptional-set exponent lambda/2+O(lambda^(3/2)) | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| A uniform analytic abc exceptional-set exponent of 4/7 | Internal result | stale | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
+| Scalable amplification for rational congruences over powerful moduli | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Primitive triples with prime valuations in a fixed-width interval | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Heavy-coordinate stability near half the abc radical budget | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Separated-degree near-half profiles obstruct one-base compression | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Scalable powerful-modulus congruence with an independent exponent | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Dominant-divisor locking for single-heavy abc boxes | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| An exact curve obstructs a uniform three-variable unit congruence count | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Auxiliary surfaces and transverse curves for three-variable prime-power congruences | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Auxiliary curves from Weierstrass division in every retained class | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Coprime ternary monomial counting over powerful moduli | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| The coprime ternary congruence cuts the two-heavy abc profiles | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| A fixed-proportion small-budget saving below the half exponent | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Uniform small-budget coefficient 6/13 | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Height-free residual radical count for hyperbolic prime-power signatures | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Explicit small-budget abc coefficient below 5/11 | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Four coprime roots with a bounded degree relation compress to three | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| Residual radical bounds for two Euclidean signatures | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| An explicit gap below the small-budget coefficient 3/7 | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| A square–cube residual radical count | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| A Pell saving for small determinant-one coefficients | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
 | Nearly linear kernel counts for every diagonal Pade degree | Internal result | proved | [Source](ALL_DEGREE_DIAGONAL_PADE_KERNEL_RESTRICTION.md) |
 | Uniform bounds for actual rational witness families of compatible square-full kernels | Internal result | proved | [Source](ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md) |
 | Actual auxiliary curves, exact cusp-remainder content and a conditional saving bridge | Internal result | proved | [Source](ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md) |
-| The small-budget coefficient 8/19 for primitive abc triples | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| The small-budget coefficient 13/31 for primitive abc triples | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| The limiting small-budget coefficient 5/12 for primitive abc triples | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
-| The limiting small-budget coefficient 1/3 for primitive abc triples | Internal result | proved | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
+| The small-budget coefficient 8/19 for primitive abc triples | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| The small-budget coefficient 13/31 for primitive abc triples | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| The limiting small-budget coefficient 5/12 for primitive abc triples | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| The limiting small-budget coefficient 1/3 for primitive abc triples | Internal result | stale | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
 | Strict residual mass in balanced limiting abc boxes | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
 | Balance and residual mass at normalized exponent one third | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
-| Small-budget abc bound for primitive powerful triples | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| Small-budget abc bound for primitive powerful triples | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
 | Strict small-budget saving for primitive powerful triples | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
 | Primitive representations of a full prescribed target | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
 | Sharp large-order powerful triple count with arbitrary common divisor | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
-| A sparse exact improvement at unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| A sparse exact improvement at unit radical budget | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
 | Explicit valuation-degree window exclusions at the one-third boundary | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | Local mass restrictions at equality of the nonatomic total | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| Exact sparse certificates beyond radical budget nine tenths | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| Exact sparse certificates beyond radical budget nine tenths | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
 | A strict saving below one third for short-height abc triples | Internal result | stale | [Source](ABC_SHORT_HEIGHT_AND_REAL_GAP.md) |
 | A local mass bound for the tall pair across a positive height gap | Internal result | stale | [Source](ABC_SHORT_HEIGHT_AND_REAL_GAP.md) |
 | The pair nonatomic excess bounds high numerical degree weight | Internal result | stale | [Source](ABC_VARIABLE_MESH_DEGREE_GROUPING.md) |
@@ -413,10 +419,10 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A joint valuation repair criterion for a strict small-budget saving | Internal result | stale | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
 | A pooled phase inequality on unrestricted small-budget profiles | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A strict phase-sector saving away from minimum nonatomic mass | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| A twelve-leaf improvement near unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| A twelve-leaf improvement near unit radical budget | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
 | A phase count saving using low and high valuation bands together | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A one-group determinant obstruction at the symmetric diffuse profile | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
-| A counting contradiction to Carella's v3 smooth-number corollary | Internal result | proved | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
+| A counting contradiction to Carella's v3 smooth-number corollary | Internal result | stale | [Source](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) |
 | Joint primitive height and fractional valuation-deficiency bounds | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
 | A global powerful-triple bound with a mandatory repair tail | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
 | Alternating powerful-triple terms with only two prescribed full letters | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
@@ -427,11 +433,35 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A primitive-kernel height saving for the one-group determinant | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A wider fixed-difference endpoint exclusion from the primitive kernel | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A primitive additive graph attaining the endpoint edge exponent despite progression avoidance | Internal result | stale | [Source](ABC_MODULAR_PROGRESSION_SLICING.md) |
-| A strict improvement through unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| A strict improvement through unit radical budget | Internal result | stale | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
 | A broader endpoint exclusion from the shared row factor | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A degree-profile inequality from shared rows and Newton breakpoints | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A quarter inequality for the least root mass in a small-budget box | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| A global small-budget count when one letter has a smaller radical | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| Unequal full sums at fixed targets of small radical | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Aggregate powerful sums with a small original-target radical | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| A strict quarter-coefficient quotient saving at very small target radical | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| A pointwise powerful-sum exponent below a half at high full targets | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| A quarter-based aggregate bound at very small target radicals | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| A sparse-support projective height inequality at the minimum diffuse endpoint | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A two-root Newton count by specializing one grouped coordinate | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Projective heights improve the two-root specialization count | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Newton specialization counts for several disjoint groups | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Root spacing improves sliced residue estimates | Internal result | stale | [Source](ABC_OMITTED_COORDINATE_GRAPH.md) |
+| A square-quotient weighted tail for actual rectangular six-cycles | Internal result | proved | [Source](ERDOS_943_COUPLED_PATH_ROOT_GCD.md) |
+| A global inequality for low root mass and diffuse degrees | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| A strict quarter saving from finite-band concentration on an opposite letter | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| A strict quarter saving at the opposite letter's fullness threshold | Internal result | stale | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| A strict quarter quotient saving with one prescribed full summand | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Fixed-target savings with one full summand and an opposite radical cap | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| An aggregate saving with one full summand and two radical caps | Internal result | stale | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Counting exact specialization values with their residue classes | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| An endpoint profile excluded by the stronger specialization count | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A width obstruction for the improved chart bound at the broad symmetric profile | Internal result | stale | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Positive common atomic factors are impossible at the broad symmetric endpoint | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| Each atom dictionary has normalized information at least one twelfth | Internal result | stale | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
 
-**Computed obligations:** 105 unresolved; 18 resolved within their exact scope.
+**Computed obligations:** 107 unresolved; 17 resolved within their exact scope.
 
 
 Scope limits:
@@ -623,6 +653,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Does the unmodified critical k-fold random prime sumset have a natural density? The explicit profinite lower bound on gaps has a sharp finite-modulus approximation. The empirical conditional intensity and unexposed-support overlap would together identify the density.](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) — GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY
 - **mathematical / open:** [For 0<gamma<1-1/k, obtain a pointwise representation asymptotic or fluctuation law that accounts for arithmetic effects. The current asymptotic averages through x in fixed residue classes.](RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md) — GAP-ARITH-RANDOM-PRIME-POINTWISE-REPRESENTATIONS
 - **mathematical / open:** [For some positive t_X=o(1/log log X), prove a positive limiting lower bound for T_X(t_X,t_X)/(t_X^2 X/(log X)^2), or prove convergence on a fixed rescaled real interval to a function whose analytic continuation has positive value at zero. Either would give a quantitative twin-prime lower bound. The former is equivalent to that lower bound by coefficient isolation.](SQUAREFREE_TWIN_CORRELATION_NEAR_ZERO.md) — GAP-ARITH-SQUAREFREE-TWIN-POSITIVE-SMALL-PARAMETER
+- **mathematical / open:** [For fixed c>0 and odd r of the proved extraction order, prove a lower bound of order t^3 B_X for D_r T_X(t) at t=c/L along an unbounded sequence, or a lower bound of order 1/L for the normalized positive-window interpolant there. This is equivalent to a lower bound of order B_X/L for the twin-prime count. Strict positivity of the Euler statistic already suffices for infinitude at this order. On dyadic intervals the equivalent large-divisor target is the one-sided lower bound for R_X(D) in (B1). On the same dyadic intervals (P2) and (P3) give the rough parity comparison and the rough bilinear remainder as alternative formulations.](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) — GAP-ARITH-SQUAREFREE-TWIN-HIGHER-ORDER-SIGN
 - **mathematical / open:** [Prove for some fixed c>0, t=c/log log X, a positive signed margin at scale t^3*X/(log X)^2 in the restricted equation bq-ap=2 with a,b<=X^delta and p,q>X^(1/3), sufficient to exceed the truncation error. The current lifted weighted-dilation theorem requires marks absent from the terms carrying the quadratic coefficient.](TWIN_CORRELATION_DOUBLING_AND_DILATION.md) — GAP-ARITH-SQUAREFREE-TWIN-SIGNED-COFACTOR-ESTIMATE
 - **mathematical / open:** [Prove a positive one-sided parity margin of order 1/(log X)^2 for the degree-at-most-three squarefree power-rough twin correlation. For the permissive column route, show d=o(b) and lower-bound the mean over prime shifts 2p at the same sparse scale, or obtain the margin directly.](ROUGH_TWIN_PARITY_ENTROPY.md) — GAP-ARITH-ROUGH-TWIN-ONE-SIDED-PARITY
 - **mathematical / open:** [Do three pairwise coprime positive 4-full integers satisfy a+b=c at unrestricted height?](ERDOS_939_PRIMITIVE_FOUR_FULL_TRIPLES.md) — GAP-ARITH-ERDOS939-PRIMITIVE-FOUR-FULL-EXISTENCE

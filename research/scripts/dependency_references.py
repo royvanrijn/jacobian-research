@@ -5,6 +5,8 @@ from pathlib import Path
 import re
 from urllib.parse import urlsplit
 
+from publication_paths import result_paper_directories
+
 VERIFICATIONS = {"source_read", "citation_only", "application_pending"}
 USE_ROLES = {"context", "mathematical_input", "application_unverified"}
 ANTECEDENT_RELATIONS = {"known_result", "classical_corollary", "classical_method", "comparison_only"}
@@ -106,8 +108,10 @@ def own_publication_urls(repository):
     """Own public identifiers remain authoritative in paper metadata."""
     import json
     urls = set()
-    for pattern in ("results/*/metadata.json", "results/*/published/metadata.json"):
-        for path in repository.glob(pattern):
+    for paper in result_paper_directories(repository / "results"):
+        for path in (paper / "metadata.json", paper / "published" / "metadata.json"):
+            if not path.is_file():
+                continue
             meta = json.loads(path.read_text())
             pending = [meta]
             while pending:

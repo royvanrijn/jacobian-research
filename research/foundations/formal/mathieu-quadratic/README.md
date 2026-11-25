@@ -13,7 +13,7 @@ Lean axioms of the principal declarations.
 
 ## Statements in the current draft
 
-The [paper draft](../../../../unpublished/mathieu-quadratic-complements/main.tex)
+The [paper](../../../../results/published/mathieu-quadratic-complements/main.tex)
 opens over the rational sum of squares with
 \(p=(1+x)(1+2x-y^2-z^2)/q\). The main theorem uses the distinct product
 family \(F_{α,β,γ}=q^{-α}(1+q)^β W^γ\).

@@ -5,8 +5,14 @@
     "orcid": "0009-0000-2808-0645"
   },
   "summary": "Classifies quadratic-complement traces in characteristic zero, proves the joint minima for explicit witnesses and gives a bounded one-order test for all multipliers. It also classifies the real special orthogonal Reynolds projection.",
-  "status": "ready-for-review",
+  "status": "submission-pending",
   "published": false,
+  "submission": {
+    "venue": "Hexagon",
+    "reserved_identifier": "hexagon:2611.01050v2",
+    "status": "under-review",
+    "updated_on": "2026-11-25"
+  },
   "catalogued_on": "2026-11-24",
   "source": "main.tex",
   "pdf": "mathieu-quadratic-complements.pdf",
@@ -21,7 +27,6 @@
   },
   "next_steps": [
     "Obtain specialist review of the exponent-shift algorithm, angular interpolation proof and sharp numerator obstruction.",
-    "Find smaller test orders and multiplier degrees and explicit criteria in higher angular degree.",
-    "Review the manuscript with the author before any submission."
+    "Find smaller test orders and multiplier degrees and explicit criteria in higher angular degree."
   ]
 }

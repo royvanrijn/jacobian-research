@@ -96,8 +96,8 @@ after removing \(t+1\) from the quintic, are
 The larger root \(X_*\) of \(B\) lies in \((1.438,1.439)\).
 At the two sextic endpoints,
 \[
- C_{y_0,z_0}(X_*)\in(-.800,-.790),\qquad
- C_{y_1,z_1}(X_*)\in(.095,.105).
+ C_{y_0,z_0}(X_*)\in(-.801,-.789),\qquad
+ C_{y_1,z_1}(X_*)\in(.094,.106).
 \]
 For direct rational enclosures use \(w\in(.07349,.07350)\),
 \(v\in(.02053959,.02053960)\),
@@ -217,6 +217,9 @@ The combined central perturbation therefore has the form
 \((t-t^5)+2(t^2-t^4)=t(1-t)(1+t)^3\). The discrepancy in
 their coefficients is \(O(\varepsilon^3)\), since
 \(4\beta-5\eta=O(\varepsilon^4)\) and \(w-y=O(\varepsilon)\).
+Each individual skew is \(O(\varepsilon^2)\) uniformly, since its
+constant and linear terms in each local \(x_i\) cancel and
+\(\sum_i x_i^2\le(\sum_i x_i)^2=O(\varepsilon^2)\).
 The remaining even skew errors are \(O(\varepsilon^4)\).
 Consequently the order-six limit after division by
 \(\varepsilon^3\) is

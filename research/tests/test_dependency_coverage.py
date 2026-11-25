@@ -109,17 +109,20 @@ class CoverageTests(unittest.TestCase):
 
     def test_inventory_excludes_generated_and_archived_editions_but_keeps_current_sources(self):
         subprocess.run(["git", "init", "-q", str(self.repository)], check=True)
-        current = self.repository / "results/paper"
-        (current / "published").mkdir(parents=True)
-        (current / "main.tex").write_text("Current theorem.\n")
-        (current / "published/main.tex").write_text("Archived theorem.\n")
+        current_papers = ["results/paper", "results/published/grouped-paper"]
+        for paper in current_papers:
+            current = self.repository / paper
+            (current / "published").mkdir(parents=True)
+            (current / "main.tex").write_text("Current theorem.\n")
+            (current / "published/main.tex").write_text("Archived theorem.\n")
         (self.root / "README.md").write_text("Generated index.\n")
         (self.root / "MATH_STATUS.json").write_text("{}\n")
         (self.root / "moments").mkdir()
         (self.root / "moments/README.md").write_text("Generated guide.\n")
         paths = inventory_paths(self.root, self.repository)
-        self.assertIn("../results/paper/main.tex", paths)
-        self.assertNotIn("../results/paper/published/main.tex", paths)
+        for paper in current_papers:
+            self.assertIn(f"../{paper}/main.tex", paths)
+            self.assertNotIn(f"../{paper}/published/main.tex", paths)
         self.assertNotIn("README.md", paths)
         self.assertNotIn("MATH_STATUS.json", paths)
         self.assertNotIn("moments/README.md", paths)

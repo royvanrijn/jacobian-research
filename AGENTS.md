@@ -13,13 +13,13 @@ actual theorem statements and hypotheses, identify the closest applicable result
 and remaining gap, and use that review to guide new proofs and computations.
 Do not infer novelty or an unsolved status merely from an unsuccessful search.
 
-- results/: current editions of released or submitted papers. Record pending submissions in paper metadata and preserve exact public deposits under published/.
+- results/: current editions of released or submitted papers, including the results/published/ collection. Record pending submissions in paper metadata.
 - unpublished/: manuscripts in preparation.
 - research/: current principal results, exact proof support and open questions by topic.
 - research/MATH_STATUS.json: current mathematical status and proof dependency DAG; publication is separate.
 
-Preserve the exact deposited files and their checksums under results/<paper>/published/.
-Keep the best current source, PDF and review record at results/<paper>/ top level.
+Preserve the exact deposited files and their checksums in published/ inside each paper directory.
+Keep the best current source, PDF and review record at the top level of its paper directory.
 Merge a revision from unpublished/ into its released paper rather than maintaining
 two current homes.
 Do not infer publication, independent replay, formal verification or external

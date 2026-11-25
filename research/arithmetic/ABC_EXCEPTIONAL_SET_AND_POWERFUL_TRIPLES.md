@@ -26,6 +26,23 @@ N_\lambda(X)\ll_{\lambda,\eta,\varepsilon}X^{(1/3+\eta)\lambda+\varepsilon}
 \]
 for each fixed \(\eta>0\) and sufficiently small fixed \(\lambda>0\). It combines counts of signed monomials modulo full integers with counts in real short strips. Both estimates allow a bounded number of anatomic factors with unbounded degrees in the limit. When the normalized count exponent exceeds \(1/3\), the mass split forces a saving from one of the two counts. [Small-budget proof](ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13)
 
+A radical bottleneck on one letter gives a stronger count at small
+budgets. If that letter's radical is at most \(c^{\vartheta\lambda}\),
+the limiting coefficient is at most
+\(\min(1/3,(1+\vartheta)/4)\). The box inequality underlying this
+bound is \(4d\le1+\min_i l_i\).
+[The quarter inequality and its count consequence](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-quarter-inequality-for-a-letter-of-small-radical-mass)
+
+If \(l_C<d\), the diffuse mass on each opposite letter is at least
+\(d-c_C\), where \(c_C\) is the nonatomic mass on \(C\). At equality
+in the quarter bound this excludes an opposite letter whose numerical
+height lies on finitely many scaled degrees. Applied to powerful
+sums, it gives an exponent below \(1/(2p)\) at small-radical targets
+when one summand is \(p\)-full and the other has radical at most
+\(N^{1/p}\), including representations with common divisors.
+[The diffuse mass inequality](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-global-inequality-for-a-low-mass-letter-and-diffuse-degrees)
+· [The one-full transfer](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md#one-full-summand-and-a-small-target-radical)
+
 There are absolute \(h_*,\sigma>0\) such that, for sufficiently small fixed \(\lambda\), the subcount with \(\min(a,b)\le c^{h_*}\) is \(O_{\lambda,\varepsilon}(X^{(1/3-\sigma)\lambda+\varepsilon})\). The proof isolates a movable interval of scaled valuation degrees and uses a full modulus on the other tall term. [Short-height sector bound](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-strict-saving-when-the-short-term-is-small)
 
 At normalized exponent \(1/3\), if the total nonatomic degree mass
@@ -733,7 +750,7 @@ prove that for every \(\varepsilon>0\),
  N_{7/10}(X)&\ll_\varepsilon X^{2/5+\varepsilon},&
  N_{4/5}(X)&\ll_\varepsilon X^{9/20+\varepsilon},\\
  N_{9/10}(X)&\ll_\varepsilon X^{1/2+\varepsilon},&
- N_1(X)&\ll_\varepsilon X^{42800023737/80000047360+\varepsilon}.
+ N_1(X)&\ll_\varepsilon X^{1070000267/2000000686+\varepsilon}.
 \end{aligned}
 \]
 These bounds also apply to smaller budgets by inclusion of the sets.

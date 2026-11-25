@@ -1939,6 +1939,155 @@ and random assignment argument as in (MS15) applies, with
 a separate copy of the record map on each position of
 the relation. In particular the \(m\) sets may coincide.
 
+## Joint record entropy with one progression fibre
+
+Take a distribution on finitely many signed additive tuples
+\(\boldsymbol x=(x_1,\ldots,x_m)\), \(m\ge3\), with
+\(\sum_i x_i=0\). On each slot let \(K_i\) be a function of \(x_i\)
+recording a divisor \(F_i\) of \(x_i\). Assume the divisors on each
+tuple are pairwise coprime. Write \(\boldsymbol K=(K_1,\ldots,K_m)\).
+For a fixed record vector, put \(Q=\prod_i F_i\), and let \(J\)
+bound the maximum occupancy in a residue class modulo \(Q\) on
+any one distinguished slot. The slot may depend on the record
+vector. It suffices to use the least available occupancy bound.
+Then
+\[
+ (m-1)H(\boldsymbol x)-(m-2)\sum_i H(x_i\mid\boldsymbol K)
+ \le (m-1)H(\boldsymbol K)+\mathbb E\log J .
+ \tag{JR1}
+\]
+No lower bound on \(Q\) relative to the numerical heights is needed.
+
+To prove (JR1), condition on a record vector and write
+\(\mathcal R\) for the residue array at the \(F_i\), omitting the
+known diagonal zeros. Write \(\mathcal R_i\) for its \(i\)-th row
+and \(a=(m-2)/(m-1)\). The column argument in (MS17) gives
+\(H(\mathcal R)\le a\sum_i H(\mathcal R_i)\).
+With \(\mathcal R\) and the distinguished value \(x_j\) fixed,
+any \(m-2\) of the remaining \(m-1\) entries determine the last.
+Average the \(m-1\) resulting subadditivity bounds, then use that
+conditioning reduces entropy. This gives
+\[
+ \begin{aligned}
+ H(\boldsymbol x\mid\mathcal R)
+ &\le H(x_j\mid\mathcal R)+a\sum_{i\ne j}H(x_i\mid\mathcal R,x_j)\\
+ &\le a\sum_i H(x_i\mid\mathcal R)+\frac{\log J}{m-1}.
+ \end{aligned}
+\]
+The last step follows because \(\mathcal R\) gives a full residue
+of \(x_j\bmod Q\). Also \(H(\mathcal R_i)+H(x_i\mid\mathcal R)
+\le H(x_i)\), since the row is a function of its value and of the
+fixed record. Add the inequalities and average over records.
+For each record vector this also gives the finite count
+\[
+ \#\{\boldsymbol x\text{ with these records}\}
+ \le J^{1/(m-1)}\prod_i N_i^{(m-2)/(m-1)},
+ \tag{JR2}
+\]
+where \(N_i\) bound the respective record fibre sizes. This follows
+by taking the uniform distribution on that fibre.
+
+### Application to complete-label graphs
+
+At \(d=1/3\), \(\Gamma=1/2\), use a regularized near-full primitive
+graph of complete values, with \(c=1/6\) and \(n=X^L\).
+On each letter choose a record function \(K_T\) of the complete
+value specifying a divisor. The product of the three divisors
+on the edges under consideration has numerical weight at least
+\(w-o(1)\). On a letter \(T\) allow all those values to lie in an
+interval of length at most \(X^{h_T+o(1)}\). The \(h_T\) are the
+exponents of the interval lengths, so an interval need not begin
+at zero. Set
+\[
+ s_T=\max_{U\ne T}\sup\operatorname{supp}\nu_{U,\mathrm{na}},
+ \qquad
+ \eta=\min_T\min\left(c,\frac{(h_T-w)_+}{s_T}\right).
+\]
+Here \(s_T>0\), since both opposite nonatomic measures have mass
+\(c\). The progression bound (AC1), applied on an appropriate
+distinguished slot, gives \(\log J\le(\eta+o(1))\log n\) up to
+the arbitrarily small graph and approximation losses. It applies
+uniformly to all record vectors because (AC1) is uniform in
+the modulus and residue class, with a finite grid of interval
+exponents. One can regularize all three parts at once by pruning
+vertices below the chosen slightly reduced degree threshold.
+The part caps bound the number of removed edges.
+
+Use the uniform edge distribution and introduce the normalized
+entropies \(a_T=H(K_T)/\log n\), \(a=H(\boldsymbol K)/\log n\).
+Apply (JR1) for \(m=3\), with \(H(\boldsymbol x)\) close to
+\(2c\log n\) and each \(H(x_T)\le(c+o(1))\log n\).
+Since \(H(x_T\mid\boldsymbol K)\le H(x_T)-H(K_T)\), the
+limiting inequality is
+\[
+ 2a-\sum_T a_T+\eta\ge c .
+ \tag{JR3}
+\]
+The stronger finite form (JR1) keeps the actual conditional
+entropies \(H(x_T\mid\boldsymbol K)\). For records given by fixed
+blocks, the total divisor weight is the sum of their weights;
+for variable divisors use a lower bound uniform on the
+considered edges.
+
+There is also a pointwise version outside exponentially sparse
+edges. With \(\mathcal I=-\log\Pr(\boldsymbol K)/\log n\) and
+\(\mathcal I_T=-\log\Pr(K_T)/\log n\), one has
+\(2\mathcal I-\sum_T\mathcal I_T+\eta\ge c\) up to any fixed
+positive tolerance, after taking sufficiently small regularization
+and profile losses. In fact, on each of finitely many information
+boxes with \(\mathcal I\le u\) and \(\mathcal I_T\ge v_T\), there
+are at most \(n^u\) joint records. The lower degree bound
+\(n^{c-o(1)}\) for each retained complete vertex makes its
+record fibre size at most \(n^{c-v_T+o(1)}\), by counting
+the edges with that record on letter \(T\). Applying (JR2)
+and summing gives exponent
+\(u+(3c-\sum_T v_T+\eta)/2+o(1)\). A fixed violation gives
+a strict deficit from \(2c\) on a sufficiently fine grid.
+
+In particular, if the product of the dictionary sizes has
+normalized exponent at most \(p<c\), then
+\(2a-\sum_Ta_T\le\sum_Ta_T\le p\). Thus
+\[
+ w+(c-p)s_T\le h_T \qquad(T=A,B,C).
+ \tag{JR4}
+\]
+This gives an interval-width consequence even when all three
+complete terms have numerical height one. For the broad symmetric
+profile, a near-full family confined on any letter to an interval
+of length \(X^{3/4+o(1)}\) requires a dictionary exponent at
+least \(5/48\) for a complete degree-three atom factor on any
+letter. Indeed \(s_T=4,w=1/2\) and
+\(1/6-(3/4-1/2)/4=5/48\).
+
+### Excluding three small atom dictionaries with a deterministic relation
+
+At the broad symmetric profile
+\(c\delta_3+c\operatorname{Unif}[2,4]\), take all three records
+to be the entire degree-three atom factors of their letters.
+Their product has numerical weight \(3/2\), so \(J=1\) on
+these fibres and \(\eta=0\). By (CA2), each \(a_T\ge c/2\).
+Therefore (JR3) gives
+\[
+ a\ge\frac{c+\sum_T a_T}{2}\ge\frac{5c}{4}=\frac5{24}.
+ \tag{JR5}
+\]
+The complete values on any pair of letters determine the edge.
+Their pair entropy is \(2c+o(1)\) in normalized units and their
+marginal entropies total at most \(2c+o(1)\). The record
+functions on that pair consequently have mutual information
+\(o(\log n)\). In particular
+\[
+ \liminf\sum_T\frac{H(K_T\mid(K_U)_{U\ne T})}{\log n}
+ \ \ge\ \liminf\frac{3c-\sum_T a_T}{2}.
+\]
+Thus a family where every atom record is determined by the other
+two up to vanishing normalized conditional entropy must have
+\(a_T\to c\) for all three letters. If each marginal is at the
+individual lower endpoint \(c/2\), the normalized conditional
+entropy of each single atom factor given the other two is at
+least \(c/4=1/24\), by (JR5) and the two marginal upper bounds
+on their pair entropy.
+
 ## Repeated locks force a common full factor
 
 At \(d=1/3,\ \Gamma=1/2\), put \(c=1/6\) and use the
@@ -3662,6 +3811,295 @@ to low-degree profiles as well. The rank bound depends
 on the doubling bound, so the argument permits
 unbounded doubling with zero limiting exponent.
 [Green–Ruzsa, Theorem 1.1](https://arxiv.org/pdf/math/0505198v2)
+
+## Atomic common factors at the broad symmetric endpoint
+
+Suppose all three limiting measures are
+\[
+ \nu_W=c\delta_3+c\,\operatorname{Unif}[2,4],\qquad c=1/6,
+\]
+at \(d=1/3,\Gamma=1/2\). The near-full complete-label graph excludes a common factor of positive numerical weight carried by the original roots of any one degree-three atom window. Consequently each full atom-window factor dictionary needs normalized exponent at least \(c/2\) on any arbitrarily near-full edge subset. The same lower bound holds for the normalized information of each atom factor outside an exponentially sparse family, and hence for each individual atom factor entropy.
+
+### A modulus already common to the atom window
+
+Suppose a factor \(F\) divides all complete \(A\)-values on an arbitrarily
+near-full graph and is carried by their full atom-window factors. Assume
+each nonzero valuation of \(F\) is \((3+o(1))/L\), uniformly across its
+primes. For instance, this holds when \(F\) is the greatest common divisor
+of two original full atom-window factors. Pass to a subsequence with
+numerical weight \(W=\lim\log_XF>0\). For \(Q=\operatorname{rad}F\), the
+normalized root mass is \(b=\lim\log_X Q/L=W/3>0\).
+
+Since each \(A\)-value lies in residue zero modulo \(F\) in an interval of
+numerical width at most one, (AC1) with any opposing supplying degree
+\(s<4\) shows \(c\le(1-W)_+/s\). To apply it, regularize this near-full
+graph on \(A\) after the common-factor selection, with arbitrarily small
+additional losses. Its retained \(A\)-part has size exponent arbitrarily
+close to \(c\), because the opposite part caps remain \(c\). Each opposite
+profile has positive nonatomic mass above every \(s<4\). Its locks are
+automatically coprime to \(F\) on every original edge by primitivity. In
+the limit \(s\uparrow4\) this gives \(W\le1/3\), hence \(b\le1/9\).
+
+On the other two letters retain the atom window and the diffuse interval \([3-6t,3+6t]\), where \(t=(101/200)b\) is its mass on each letter. Freeze all remaining original factors, at normalized cost \(2(c-t)\) up to arbitrarily small errors. Group the retained roots unweighted at degree \(q=\lfloor3/L\rfloor\) in the ratio of those two letters. Its narrow and wider heights have bounds
+\[
+ h=c+t\le401/1800,\qquad E=3t^2.
+\]
+For the wider bound one uses the equal positive and negative deviation moments from each identical retained profile; their sum on one letter is \(3t^2\), since the conditional diffuse radius is \(6t\). Negligible packed and endpoint errors can be frozen or carried in the correction. Restoring the fixed factors multiplies the unit target by a fixed unit, and the original ratio is congruent to a fixed sign modulo \(F\) on every edge. No modulus record charge is needed for this already common factor.
+
+Take \(kL\to3\), below all selected valuations, and use the shallow residue classes modulo \(Q\), of normalized cost \(b\). To check the first one-root determinant, take \(M+1=\lceil4h/b\rceil\). Then
+\[
+ \frac{3}{M}\left(\frac b2-\frac{h}{M+1}\right)
+ \ \ge\ \frac{3b^2}{16h}
+ \ \ge\ \frac{5400}{6416}b^2
+ \ >\ 3(101/200)^2 b^2 = E .
+\]
+In detail \(h/(M+1)\le b/4\) and \(M<4h/b\). All parameters are fixed after the positive limiting \(b\) is chosen. One can therefore take a rank fraction \(\alpha<1\) arbitrarily close to one and a normalized horizontal degree \(r_0\) close below \(3/(\alpha(M+1))\), so \(h r_0+ME< b\alpha(M+1)r_0/2\) and \(\alpha(M+1)r_0<3\). The bounded-degree Newton proof uses only rank drop, so no Hensel terminal bound is needed.
+
+On each chart a nonzero auxiliary polynomial of fixed wider degree, with polynomial coefficient heights, is available. The Newton-breakpoint argument recovers the remaining outside factors of both free letters. Primitivity puts each counted prime on a single letter, and its grouped multiplier is one. A prime outside the support of the nonzero auxiliary coefficients can occur only at a valuation breakpoint. Each such exceptional position has arbitrarily small outside cap. The outside roots omitted from the interval are already frozen. Thus after fixing the chart and frozen records there are only subpower and arbitrarily small exponent choices of the two outside labels. Apply (EN2) to complete the triples. The resulting normalized upper bound is
+\[
+ 2(c-t)+b=2c-\frac b{100}<2c .
+ \tag{CA1}
+\]
+This contradicts an arbitrarily near-full edge count.
+[The one-root determinant and valuation breakpoints](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#newton-breakpoints-in-the-residue-determinant)
+
+### Sparsity of atom-window overlaps
+
+Fix \(\xi>0\). Among regularized complete vertices on a letter,
+ordered pairs whose atom-window factors have gcd of numerical
+weight at least \(\xi\) have exponent at most \(2c-\epsilon_\xi\)
+for some \(\epsilon_\xi>0\) when the graph and window losses are
+sufficiently small. Otherwise there are \(n^{2c-o(1)}\) such
+pairs, and a fixed first vertex has \(n^{c-o(1)}\) partners
+by the part cap. Pigeonhole their gcd with the first vertex
+at divisor-many cost. The resulting divisor is carried by
+the exact atom-window factors of all selected partners, and
+its prime valuations remain in the window at three.
+Each partner has near-full graph degree, so the selected
+edges have exponent \(2c-o(1)\), contradicting (CA1).
+
+### Individual atomic information
+
+Suppose some arbitrarily near-full edge family on the same profile has a
+dictionary of full atom-window factors on \(A\) of exponent \(u<c/2\).
+Thin to injective complete-label maps and prune low-degree \(A\)-vertices,
+so every retained \(A\)-vertex still has degree exponent close to \(c\).
+Prime color globally by letter: independently assign each prime a letter,
+and retain triples for which all their primes have the corresponding
+letter colors. This loses only \(X^{o_X(1)}\) at fixed budget, since every
+triple has \(O(\log X/\log\log X)\) distinct primes. Factors from
+different complete parts are then coprime. Regularize degrees after
+coloring if necessary.
+
+Use ordered pairs of distinct edges sharing a complete \(C\)-vertex. The count is at least \(n^{3c-o(1)}\), in normalized exponents with \(n=X^L\), by the degree second moment and subtraction of the diagonal. With signs absorbed in the entries this gives distinct pairs in
+\[
+ a_1+b_1=a_2+b_2 .
+\]
+The quadruple determines its \(C\)-vertex. On each of \(a_1,a_2\) mark the whole prescribed atom-window factor, of weight \(1/2+o(1)\) and dictionary cost at most \(u\). On both \(B\)-entries mark outside factors from one bounded positive diffuse band, with combined root mass \(z>0\), choosing \(z\) small enough that \(2u+z<c\). Their combined numerical weight is at least \(s z+o(1)>0\) for a fixed lower degree \(s>0\).
+
+Quadruples in which the two \(B\)-outside records have radical overlap at
+least \(\xi>0\) in normalized root mass are exponentially fewer: fixing
+\(b_1\) bounds the possible \(b_2\) outside labels by \(n^{c-\xi+o(1)}\)
+by divisor allocation, and after \(a_1\) is chosen the last entry is
+determined. Choose all window losses much smaller than \(\xi\). In the
+remaining quadruples strip shared \(B\) primes, losing at most
+\(2S\xi+o(1)\) numerical weight, where \(S\) bounds their degrees. If the
+full gcd of the two \(A\)-atom locks also has numerical weight below
+\(\xi'\), keep just the larger of the two powers at each shared prime.
+This loses at most \(\xi'\) numerical weight. The surviving full divisors
+are pairwise coprime. Take \(\xi,\xi'\) so small that their total weight
+is still strictly greater than one. The records counted before this
+deterministic stripping have total exponent at most \(2u+z<c\).
+
+Use the fixed-record residue packing inequality (MS17) for the four-term
+equation, with its numerical height at most \(X^{1+o(1)}\). If the product
+of the four coprime moduli exceeds twice the ambient height, its number of
+tuples for fixed records is at most the product of the four record-fibre
+sizes to power \(2/3\). Summing by Hölder gives normalized exponent at
+most \((8c+2u+z)/3<3c\). The quadruple count at exponent \(3c-o(1)\) thus
+persists where the \(A\)-atom gcd has numerical weight at least \(\xi'\).
+
+For each ordered \(A\) pair there are at most \(|\mathcal B|\) completions, since one of the \(B\)-entries determines the other. The \(n^{3c-o(1)}\) count therefore gives \(n^{2c-o(1)}\) ordered
+\(A\) pairs with atom gcd of weight at least \(\xi'\), contradicting
+the overlap bound.
+
+All margins in the extraction can be fixed before taking the limits: choose \(u<c/2\), then \(z,\xi,\xi'\), and then the initial near-full graph and outside-window tolerances. For the common-factor obstruction one can pass to a subsequence with \(b\) in the compact positive range supplied by \(\xi'\), and take the extraction tolerances smaller than the resulting fixed saving. Finally, if atom-factor pointwise information were below some fixed \(u<c/2\) on a subset of edges with exponent arbitrarily close to \(2c\), that subset would have a dictionary of exponent at most \(u\), by the definition of information. The above contradiction rules this out. For the original near-full graph with uniform edge measure, let
+\(F_T\) denote the full atom-window factor on letter \(T\).
+Taking expectations and then \(u\uparrow c/2\) gives
+\[
+ \liminf\frac{H(F_T)}{\log n}\ge\frac c2=\frac1{12}
+ \qquad(T=A,B,C).
+ \tag{CA2}
+\]
+
+## Repeated atomic records at the broad symmetric endpoint
+
+Assume the minimum nonatomic endpoint with
+\[
+ d=\frac13,\qquad c=\frac16,\qquad
+ \nu_W=c\delta_3+c\,\operatorname{Unif}[2,4]\quad (W=A,B,C).
+\]
+Use the near-full complete-label graphs, outside coordinate caps and
+atom windows of the endpoint argument. Put \(n=X^L\). A prescribed
+atomic record on one complete part is a product of chosen prime powers
+from its shrinking degree-three window, where a chosen prime is kept
+with its assigned full exponent. The chosen divisor can depend on the
+complete vertex, whose original representation is fixed. Its
+numerical weight is \(\log_X F\). We consider finitely many such
+record types, and can put each record's weight into a fixed small
+interval before applying the proof.
+
+For type \(i\), let \(w_i\) be the limiting numerical weight and let
+\(\alpha_i\ge0\) be an upper dictionary exponent on an arbitrarily
+near-full edge family. Types can belong to the same complete part.
+For every fixed nonnegative integral multiplicity vector
+\((m_i)\), one has
+\[
+ \sum_i m_i\alpha_i\ \ge\
+ \min\left\{c,\frac{\sum_i m_i w_i-1/3}{4}\right\}.
+ \tag{RA1}
+\]
+For the pointwise version use
+\(I_i=-\log\Pr(F_i=\text{actual})/\log n\), with probabilities
+from the uniform edge distribution. Formula (RA1) holds with
+\(\alpha_i\) replaced by \(I_i\), up to any fixed positive tolerance,
+outside an exponentially sparse edge family. The corresponding
+inequality for \(\sum_i m_i H(F_i)/\log n\) follows by expectation,
+with a limit inferior at the exact endpoint.
+
+Use the [sparsity of atom-window overlaps](#sparsity-of-atom-window-overlaps).
+The same pair bound holds for subfactors and includes repeated
+vertices, since diagonal pairs have normalized exponent at most \(c\).
+
+### Counting with repeated records
+
+Write \(P=\sum_i m_i\alpha_i\) and \(W=\sum_i m_iw_i\).
+A strict failure gives \(P<c\) and \(W+4(c-P)>1\). Fix \(s<4\)
+and \(0<z<c-P\) with \(W+sz>1\). Pick a fixed compact nonatomic
+band above \(s\) close to four on a supplying letter. Use as many
+separate copies of this letter as necessary to provide outside
+lock cost \(z+o(1)\) in the band. The rounding loss tends to zero
+with the outside-coordinate cap. Pick one separate slot per
+occurrence of each prescribed atom type. Add empty slots so the
+counts on all signed complete parts are even, the total count
+\(m\ge4\), and there is an empty slot on a different part from
+the supplying letter. Signs on the slots are chosen to obtain
+the balanced mixed additive relation.
+
+Globally color primes by their complete letter before taking the
+mixed moments. This loses only a subpower factor at fixed budget.
+Prune low-degree complete vertices after this selection and fix
+one admissible original representation and outside label per
+complete value. Deleting unused vertices is harmless.
+The common large Fourier spectrum estimate in *Rich mixed additive
+relations* yields \(n^{(m-1)c-o(1)}\) ordered tuples in this
+balanced relation, with all graph losses made sufficiently small
+after the fixed margins, multiplicities, and thresholds.
+
+Exclude tuples where any pair of atomic slots of the same letter
+has full atom gcd of numerical weight at least \(\xi>0\). Fix the
+offending two complete values, then fix all but one of the other
+slots. The last value is determined by the signed additive
+relation. The preceding pair bound and the complete part caps
+give an exponent strictly below \((m-1)c\). Thus all these
+exclusions have a fixed positive deficit once graph losses
+are sufficiently small.
+
+For an outside slot, exclude the tuples where its radical shares
+normalized root mass at least \(\xi'>0\) with the union of the
+other locks on its letter. Fix all complete values except this
+slot and an empty slot of a different letter. The union of
+the other same-letter locks is fixed, and has polynomial height
+since the number of slots is fixed. The outside divisor
+allocation bound permits at most
+\(n^{c-\xi'+o(1)}\) choices of outside label for the offending
+slot, with the fixed-truncation caps made arbitrarily close to
+their endpoint values. The label determines its complete value.
+The empty slot is then determined by the additive relation. This
+again yields a fixed deficit below \((m-1)c\). Prime coloring
+already ensures coprimality between different letters.
+
+On each remaining tuple, delete from every outside lock all its
+primes shared with any other lock. The total numerical weight
+lost is at most \(Sk\xi'+o(1)\), where \(k\) is the fixed number
+of outside slots and \(S\) is the band's upper degree bound.
+At each prime shared among the atomic locks retain the largest
+power, breaking ties deterministically. The atomic weight lost
+is at most the sum of the pairwise logarithmic gcds, hence at
+most \(\binom{m}{2}\xi+o(1)\). At a single prime, this follows
+by summing the minima with a slot attaining the largest
+valuation. Take \(\xi,\xi'\) so small that the product of the
+remaining pairwise coprime moduli has numerical weight strictly
+above one. It therefore exceeds twice the absolute height of
+all signed entries.
+
+The total original record cost is \(P+z+o(1)<c\). Stripping is
+deterministic once the original record tuple is fixed, so the
+fixed-record bound (MS17), summed by Hölder over the original
+dictionaries, gives the upper exponent
+\[
+ \frac{m(m-2)}{m-1}c+\frac{P+z}{m-1}+o(1)<(m-1)c .
+\]
+This contradicts the mixed moment lower bound after the sparse
+exceptional tuples are removed. It proves (RA1).
+
+For the information version, cover a strict failure event in
+the finitely many nonnegative information coordinates with
+positive multiplicity by finitely many boxes with small fixed
+mesh and upper corners \(\alpha_i\). Each such box determines
+an edge subfamily and restricts type \(i\)'s values to at most
+\(n^{\alpha_i}\) possibilities. The strict failure margin persists
+at the upper corners. Applying the dictionary version to a
+near-full box would contradict (RA1), yielding the pointwise
+sparsity assertion. Nonnegativity gives the entropy statement.
+
+### Information of atomic subfactors
+
+If a prescribed atom subfactor has normalized radical mass
+\(\beta\in[0,c]\), its numerical weight is \(3\beta\). Repeating
+it \(j\ge1\) times gives
+\[
+ \alpha\ge
+ \max\left\{0,\sup_{j\ge1}
+       \min\left(\frac{c}{j},
+          \frac{3\beta}{4}-\frac{1}{12j}\right)\right\}.
+ \tag{RA2}
+\]
+In particular every divisor retaining half of the degree-three
+atom's root mass, \(\beta=1/12\), needs dictionary exponent
+at least \(1/24\), by taking \(j=4\). This is stronger than the
+earlier tests for a single distinguished slot per letter and for
+the full atom alone. For example, as formal assignments to these
+listed types, give the three full atoms information \(1/12\)
+each and the half atom on \(A\) information \(1/30\).
+The one-distinguished-per-letter test (MXP4) on the half atom
+and either other full atom asks only for a combined \(5/48\),
+whereas these information values sum to \(7/60>5/48\).
+The half atom alone needs zero by that test, two full atoms
+require \(1/6\) exactly, and adding a third listed type on the
+remaining letter keeps the sum at least \(c\). All individual
+full atom lower bounds also hold. Yet four copies of the half
+atom have total weight one and total cost \(2/15<c\), violating
+(RA1).
+
+One may also take in (JR3) a positive-weight atom subfactor
+\(K_A\) on \(A\) and the entire atom factors \(F_B,F_C\).
+Their weight sum is strictly greater than one. Since
+\(H(F_B,F_C)\le H(F_B)+H(F_C)\), we obtain
+\[
+ \frac{H(K_A\mid F_B,F_C)}{\log n}\ \ge\
+ \frac12\left(c+\frac{H(K_A)-H(F_B)-H(F_C)}{\log n}\right)-o(1).
+ \tag{RA3}
+\]
+If the two full atom entropies approach \(c/2\) each, then the
+conditional entropy of any positive-weight subfactor on \(A\)
+is at least half its own entropy in normalized units.
+For a half-mass atom subfactor, (RA2) gives a lower bound \(1/48\).
+
+The formal assignment of dictionary exponents
+\(\alpha_i=\beta_i/2\) to every atomic subfactor of radical mass
+\(\beta_i\) satisfies every instance of (RA1). Indeed \(W=6P\), and
+\(W+4(c-P)=4c+2P\le1\) when \(P\le c\).
 
 ## Limits of the graph condition
 

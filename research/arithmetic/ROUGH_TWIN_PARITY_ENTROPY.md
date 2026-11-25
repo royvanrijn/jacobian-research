@@ -18,6 +18,288 @@ On the support of \(G_3\) in these sums, the only configurations are two primes 
 \]
 A bound \(C(G_3)\ge -U(G_3)+c/(\log X)^2\) with a fixed \(c>0\) would give \(\gg X/(\log X)^2\) twin primes in \((X,2X]\). The factor-count restriction matters. Two squarefree semiprimes also have parity product \(+1\).
 
+## Divisibility data and opposite prime counts
+
+The classical Selberg example uses \(1+\lambda(n)\) to weight integers
+of even prime-factor parity. Here the weights also match the local
+density \(1/\varphi(d)\) for odd divisors of \(p+2\). A correction at
+\(3\) and \(5\) makes the global signed sums agree as well.
+[Ford, p. 1664, for the classical example and the twin-prime local density](https://www.ford126.web.illinois.edu/wwwpapers/asymsieve.pdf)
+
+Put \(B_X=X/(\log X)^2\), \(L_X=\log\log X\), and write
+\(\mathfrak S_2=2\prod_{q>2}(1-(q-1)^{-2})\), with \(q\) prime.
+For odd \(n\), set
+\[
+ f(n)=\prod_{q\mid n}\frac{q-1}{q-2},
+ \qquad C=\frac12\prod_{q>2}\left(1+\frac1{q(q-2)}\right)
+         =\mathfrak S_2^{-1}.
+\]
+Define \(\chi(n)=1\) on \((n,15)=1\), \(\chi(n)=-9/10\) on
+\((n,15)>1,\ 9\nmid n,\ 25\nmid n\), and \(\chi(n)=0\) otherwise.
+For \(n\in I_X=(X+2,2X+2]\) odd, use
+\[
+ w_X^\pm(n)=\frac{f(n)}{C\log(n-2)}
+                      \bigl(1\pm\chi(n)\lambda(n)\bigr),
+\]
+where \(\lambda(n)=(-1)^{\Omega(n)}\). Extend both weights by zero
+outside the stated support.
+
+**Theorem.** For all sufficiently large \(X\), the weights \(w_X^\pm\)
+lie in \([0,1]\). For every fixed \(K>0\), there is \(A_K\) such that,
+uniformly for odd \(d\le X\exp(-A_K L_X^2)\) and
+\(X+2\le U\le2X+2\),
+\[
+ \begin{split}
+ \sum_{n\le U,\ d\mid n} w_X^\pm(n)
+     &=\frac{\operatorname{Li}(U-2)-\operatorname{Li}(X)}{\varphi(d)}
+                        +O_K\!\left(\frac{f(d)X}{d(\log X)^K}\right),\\
+ \sum_{n\le U,\ d\mid n}\mu^2(n)w_X^\pm(n)
+     &=(\operatorname{Li}(U-2)-\operatorname{Li}(X))\,g_{\rm sf}(d)
+                        +O_K\!\left(\frac{f(d)X}{d(\log X)^K}\right),
+ \end{split}                                                     \tag{P1}
+\]
+where \(g_{\rm sf}(d)=0\) if \(d\) is not squarefree and otherwise
+\[
+ g_{\rm sf}(d)=
+ \left(\prod_{q>2}\left(1-\frac1{q(q-1)}\right)\right)
+        \prod_{q\mid d}\frac{q-1}{q(q-1)-1}.
+\]
+Both \(\sum_{n\le U}w_X^\pm(n)\lambda(n)\) and
+\(\sum_{n\le U}w_X^\pm(n)\mu(n)\) are \(O_K(X/(\log X)^K)\)
+uniformly over these prefixes. The plus model gives zero weight to
+every prime in \(I_X\). The minus model has prime weight
+\((2\mathfrak S_2+o(1))B_X\).
+
+For the unfiltered sums, write \(n=dm\) and expand
+\(f(dm)=f(d)\sum_{e\mid m,\,(e,d)=1}h(e)\), where \(h\) is supported
+on odd squarefree integers and \(h(q)=1/(q-2)\). Put \(Y=X/d\).
+Counting odd multiples of \(e\) gives the unsigned main term
+\[
+ f(d)\frac{U-X-2}{2d}
+     \prod_{\substack{q>2\\q\nmid d}}(1+h(q)/q)
+ = C\frac{U-X-2}{\varphi(d)} .
+\]
+Here \(f(q)/(1+h(q)/q)=q/(q-1)\). The floor and product-tail error is
+\(O(f(d)Y^{3/4})\) since \(\sum_e h(e)/e^{3/4}<\infty\).
+With an inserted \(\lambda(n)\), complete multiplicativity replaces
+the inner count by an odd Liouville sum. For \(e\le\sqrt Y\) apply
+the classical estimate \(O(t\exp(-c\sqrt{\log t}))\) for the
+summatory Liouville function, also valid on odd integers by separating
+even terms. For \(e>\sqrt Y\) bound absolutely using the convergence
+at \(3/4\). Together these give
+\(O(f(d)Y\exp(-c'\sqrt{\log Y}))\) uniformly in the prefix. The
+corresponding bounds for \(\mu\) and \(\lambda\) follow from the
+classical zero-free region.
+[Montgomery and Vaughan, (6.17) and Exercise 6.2.1.11](sources/montgomery-vaughan-prime-number-theorem-ch6.pdf)
+
+For the squarefree sums, \(d\) must be squarefree and
+\((m,2d)=1\). For the two sequences
+\(\mu^2(m)f(m)\mathbf1_{(m,2d)=1}\) and
+\(\mu(m)f(m)\mathbf1_{(m,2d)=1}\), factor their Dirichlet series as
+\(\zeta(s)J_d(s)\) and \(H_d(s)/\zeta(s)\), respectively. At
+\(q\nmid2d\) the factors of \(J_d,H_d\) are
+\[
+ (1+f(q)q^{-s})(1-q^{-s}),\qquad
+ \frac{1-f(q)q^{-s}}{1-q^{-s}} .
+\]
+At \(q\mid2d\) they are \(1-q^{-s}\) and \((1-q^{-s})^{-1}\).
+At \(\sigma=1-1/L_X\) the absolute coefficient norms of the two
+correction series are \(L_X^{O(1)}\), uniformly in \(d\le X\).
+The factors away from \(2d\) have bounded absolute product for
+\(\sigma\ge3/4\). For the remaining factors,
+\(\sum_{q\mid 2d}q^{-\sigma}=O(\log L_X)\) by splitting at
+\((\log X)^2\) and using Mertens below the split.
+
+Convolution with \(1\) gives the unsigned main term
+\(f(d)(U-X-2)J_d(1)/d\) and an error
+\(O(f(d)Y^\sigma L_X^{O(1)})\). Convolution with \(\mu\) and splitting
+at \(\sqrt Y\) gives for the signed sum
+\[
+ O\!\left(f(d)Y L_X^{O(1)}
+     \left(e^{-c'\sqrt{\log Y}}+Y^{-1/(2L_X)}\right)\right).
+\]
+This uses the Möbius estimate up to the split and the weighted
+absolute norm beyond it. The Euler identities
+\[
+ \frac{J_1(1)}C=\prod_{q>2}\left(1-\frac1{q(q-1)}\right),\qquad
+ \frac{f(d)J_d(1)}{dJ_1(1)}
+      =\prod_{q\mid d}\frac{q-1}{q(q-1)-1}
+\]
+give the asserted squarefree density.
+These are also the shifted-prime local factors. Conditional on
+\(d\mid p+2\) for squarefree odd \(d\), excluding \(q^2\mid p+2\)
+retains a factor \(1-1/q\) for \(q\mid d\) and
+\(1-1/\varphi(q^2)\) for \(q\nmid d,\ q>2\). Multiplication by
+\(1/\varphi(d)\) gives \(g_{\rm sf}(d)\).
+
+Both signed errors give arbitrary powers of \((\log X)^{-1}\)
+when \(Y\ge\exp(A_K L_X^2)\) with \(A_K\) large. Inserting \(\chi\)
+is a fixed linear combination of divisibility tests at moduli
+\([d,e]\) for \(e\mid225\), and increasing \(A_K\) accommodates these
+moduli. Partial summation with \(1/(C\log(n-2))\) then gives (P1).
+Mertens gives \(f(n)\ll L_X\) on \(I_X\), so \(w_X^\pm(n)\le1\)
+for large \(X\).
+
+For the global signed sums the term without the perturbation
+already has the signed error just proved. In the perturbation,
+\(\lambda^2=1\) and \(\lambda\mu=\mu^2\). The required unsigned
+averages of \(\chi\), with or without the squarefree mask, are zero
+in the local main term. Indeed, the local mass at \(3,5\) for
+both valuations zero is \(3/8\); the mass for both at most one
+and at least one positive is
+\((1-1/6)(1-1/20)-3/8=5/12\). Thus \(3/8-(9/10)(5/12)=0\).
+The valuations at other primes leave this identity unchanged.
+Finally \(\chi(p)=1,\ \lambda(p)=-1\) at primes \(p>5\), so the
+claimed prime weights follow from the prime number theorem.
+
+The averaged error in (P1) is \(O_K(X(\log X)^{-K})\) even after
+multiplying the error at \(d\) by any fixed divisor-function power,
+on choosing a larger \(A_K\). The unsquarefree divisor data therefore
+give the same small-divisor main term \(\mathfrak S_2X+o(X/L_X)\)
+in [equation (B1)](TWIN_CORRELATION_DOUBLING_AND_DILATION.md#the-large-divisor-sum-in-the-twin-prime-estimate)
+for both models. With \(\log(n-2)\Lambda(n)\) as the full test,
+the two models give \(o(X/L_X)\) and \(2\mathfrak S_2X+o(X/L_X)\),
+respectively. Proper prime powers are negligible. Their
+large-divisor remainders are therefore
+\(-\mathfrak S_2X+o(X/L_X)\) and \(+\mathfrak S_2X+o(X/L_X)\).
+The models constrain what can be deduced from divisor totals and
+global parity averages. The additional support condition that
+\(n-2\) is prime is absent from these test sequences.
+
+## A cutoff variation on power-rough shifted primes
+
+For fixed \(1/4<\eta<1/3\), use the actual prime set
+\[
+ {\cal R}_\eta(X)=\{X<p\le2X:\ p\ {\rm prime},\
+                  \mu^2(p+2)=1,\ P^-(p+2)>X^\eta\}.
+\]
+Fix any \(A>0\) and take \(D_-=\sqrt X/(\log X)^{A+1}\),
+\(D_+=\sqrt X/(\log X)^A\). Define
+\[
+ J_D(n)=\sum_{\substack{d\mid n\\d\le D}}\mu(d)\log(D/d),\qquad
+ V_X(n)=\frac{J_{D_+}(n)-J_{D_-}(n)}{\log(D_+/D_-)}.
+\]
+
+**Theorem.** If \(N_2(I)\) counts the twins with lower endpoint
+in \(I=(X,2X]\), then
+\[
+ \sum_{p\in{\cal R}_\eta(X)}
+       \bigl(1-\mu(p+2)+V_X(p+2)\bigr)
+   =3N_2(I)+O_A(B_X L_X/\log X).                               \tag{P2}
+\]
+Thus a positive lower bound of order \(B_X/L_X\) for the signed
+sum in (P2) along an unbounded sequence suffices. Both cutoffs
+in the divisor statistic are within the Bombieri–Vinogradov
+range when \(A\) is taken sufficiently large.
+
+Indeed, \(V_X(n)\) averages \(\sum_{d\mid n,d\le D}\mu(d)\) over
+\(D_-\le D\le D_+\) with measure \(dD/(D\log(D_+/D_-))\).
+A squarefree \(X^\eta\)-rough \(n\in(X+2,2X+2]\) has at most three
+prime factors. At a prime, \(V_X(n)=1\) and \(\mu(n)=-1\).
+For a product of three primes, each prime is
+\(O(X^{1-2\eta})<D_-\) and each pairwise product is
+\(>X^{2\eta}>D_+\) for large \(X\). Hence \(V_X(n)=-2\)
+and \(\mu(n)=-1\), giving zero total. A semiprime with smaller
+factor \(q\le D_-\) has \(V_X(n)=0\) and \(\mu(n)=1\).
+The remaining semiprimes have \(0\le V_X(n)\le1\).
+
+For each smaller prime factor
+\(D_-<q\le\sqrt{2X+2}\), the dimension-two upper sieve on the
+forms \(r\) and \(qr-2\) gives \(O(X/(q(\log X)^2))\) possible
+other prime factors \(r\). The Euler factor at the prime \(q\)
+is bounded uniformly, and a small fixed-power sieve cutoff
+gives a negligible CRT error on intervals of length at least
+a constant times \(\sqrt X\). The reciprocal-prime sum over
+this range of \(q\) is \(O_A(L_X/\log X)\) by Mertens.
+This gives the leakage bound in (P2).
+
+The analytic estimate in (P2) is for the divisor
+variation and parity on the same power-rough support.
+The signed shifted-prime estimate in Lichtman's Theorem 1.2
+averages over all primes in its interval, and the proof's strong
+cancellation on integers with occupied subpower prime bands
+does not cover this support.
+
+## The large-divisor estimate after removing small factors
+
+In [the large-divisor reduction](TWIN_CORRELATION_DOUBLING_AND_DILATION.md#the-large-divisor-sum-in-the-twin-prime-estimate)
+one can remove the short \(m\)-ranges without changing the required
+precision. Put \(D=X^{1/3}\) and \(z=X^{c/L_X}\) for a sufficiently
+small fixed \(c>0\), and let \(P(z)\) be the product of odd primes at
+most \(z\).
+
+**Theorem.** With \(I=(X,2X]\) and \(N_2(I)\) its twin-prime count,
+\[
+ (\log X)^2 N_2(I)=\mathfrak S_2 X+
+ \sum_{\substack{d>D,\ m\ge2\\X<md-2\le2X\\md-2\ {\rm prime}\\
+                 (md,P(z))=1}}
+       \mu(d)\log m\,\log(md-2)
+       +o(X/L_X).                                               \tag{P3}
+\]
+In the remainder, both \(m\) and \(d\) are \(z\)-rough, with
+\(z<m\le(2X+2)/D\) and \(D<d\le(2X+2)/z\).
+
+To prove this, insert \(\mathbf1_{(p+2,P(z))=1}\) before expanding
+\(\Lambda(p+2)\). Every prime \(p+2\) survives, and proper prime powers
+and the conversion to \((\log X)^2 N_2(I)\) cost \(o(X/L_X)\).
+For \(d\le D\) only \((d,P(z))=1\) is needed. Apply upper and
+lower Bonferroni truncations to the roughness condition at consecutive
+even and odd orders of size \(K L_X\), with \(K\) a sufficiently large
+fixed constant. Their moduli \(de\), with \(e\mid P(z)\), are at most
+\(X^{5/12}\) when \(c\) is small enough. The prime progression main
+term at each \(de\) has density \(1/(\varphi(d)\varphi(e))\).
+The product
+\[
+ V(z)=\prod_{3\le q\le z,\ q\ {\rm prime}}
+                         \left(1-\frac1{q-1}\right)
+\]
+differs from either truncated main factor by
+\(O((\log X)^{-M})\) for any prescribed \(M\) when \(K\) is large.
+Indeed the degree-\(j\) product tail is at most
+\((\sum_{3\le q\le z}1/(q-1))^j/j!\), and the reciprocal sum over
+primes is \(L_X+O(\log L_X)\).
+
+The progression errors, summed over \(d,e\), have multiplicity at
+most \(\tau(de)\). The divisor-weighted Bombieri–Vinogradov bound
+here follows from Cauchy–Schwarz, unweighted Bombieri–Vinogradov
+with a sufficiently large logarithmic saving, and the trivial error
+\(O(X/\varphi(de))\) for prime counts at these moduli.
+Partial summation introduces at most \(O((\log X)^2)\) for the
+logarithmic weights. Both this error and the summed Bonferroni
+factor error are \(o(X/L_X)\).
+
+It remains to evaluate the two divisor sums in the small-divisor
+main term with \((d,P(z))=1\) and a factor \(V(z)\).
+Extend \(a(d)=\mathbf1_{d\ {\rm odd}}\mu(d)/\varphi(d)\) by zero
+on even \(d\). The restricted sequence is \(a*g_z\), where \(g_z\)
+is multiplicative, with \(g_z(q^j)=(q-1)^{-j}\) for odd primes
+\(q\le z\) and zero on other prime powers. Thus
+\(V(z)\sum_e g_z(e)=1\). Rankin's bound with exponent \(1/\log z\)
+gives
+\[
+ V(z)\sum_{e>\sqrt D}g_z(e)\ll
+    \exp\!\left(-\frac{\log D}{2\log z}\right)
+    =(\log X)^{-1/(6c)} .
+\]
+For the bounded product factor in this bound, take the ratio of
+the tilted and untilted Euler products. Its logarithm is
+\(O(\sum_{q\le z}(q^{1/\log z}-1)/q)=O(1)\) by Mertens.
+
+For \(e\le\sqrt D\) the cutoff \(D/e\) in the \(a\)-sum is at least
+\(\sqrt D\), so the estimates in (B1) give limits \(0\) and
+\(-\mathfrak S_2\) for \(\sum a\) and \(\sum a\log\), with
+arbitrarily large logarithmic savings. For \(e>\sqrt D\) use the
+absolute bounds for these sums and the Rankin tail, taking \(c\)
+small enough to pay the extra logarithmic factors.
+The two normalized restricted sums thus have the same limits to
+the required accuracy. The small-divisor main term is
+\(\mathfrak S_2X+o(X/L_X)\), proving (P3).
+
+The remaining signed estimate is a bilinear sum with a prime
+condition on \(md-2\) and with both factors exceeding the indicated
+cutoffs. In particular, sieve information at the prime bands
+below \(z\) is already absorbed into the evaluated term.
+
 ## Entropy comparison at the rough-pair scale
 
 Let \(H\) be an integer tending to infinity with \(H\le\sqrt{\log X}\), and let

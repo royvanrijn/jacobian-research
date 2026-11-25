@@ -108,7 +108,8 @@ nonnegative tail is bounded by \(E_r(t)\). This includes \(U_{X,\delta}\)
 below, whose omitted quadratic coefficient is at most \(X^{1/3}\).
 
 Strict positivity of the exact statistic already suffices for
-infinitude at \(r=O(\log L)\). To see this, let \(v=A\log L/L\)
+infinitude when \(r\le K_0\log L\) for fixed \(K_0\).
+To see this, let \(v=A\log L/L\)
 with \(A\) a sufficiently large fixed constant. The weighted lower
 sieve gives \(T_X(v)\gg B_X v^J L^{2A}\) for the fixed \(J\) in
 the squarefree correlation note. The degrees at most \(r+2\) contribute
@@ -122,7 +123,7 @@ and replacing \(v\) by \(t\) costs at most the factor \((t/v)^M\)
 in the lower bound. Thus
 \[
  \frac{E_r(t)}{t^2}
- \ \gg\ B_X\exp\!\big(-O_{c,J,r/\log L}(\log L\log\log L)\big)
+ \ \gg\ B_X\exp\!\big(-O_{c,J,K_0}(\log L\log\log L)\big)
  \ \longrightarrow\ \infty.
 \]
 If \(\mathcal D_r T_X(t)>0\), (A1) gives
@@ -179,6 +180,182 @@ the normalized Taylor statistic or its finite-difference version
 along an unbounded sequence. The uniform sieve bounds control the
 remainder. The required sign and size of the arithmetic statistic
 remain open.
+
+## The large-divisor sum in the twin-prime estimate
+
+Let \(I=(X,2X]\), let \(N_2(I)=\#\{p\in I:p,\ p+2\text{ prime}\}\),
+and let \(\mathfrak S_2=2\prod_{q>2}(1-(q-1)^{-2})\), with \(q\) prime.
+Use the classical expansion \(\Lambda(n)=\sum_{d\mid n}\mu(d)\log(n/d)\).
+[Tao, equations (1)–(3) and the Euler product](https://terrytao.wordpress.com/2016/07/17/notes-on-the-bombieri-asymptotic-sieve/)
+
+**Theorem.** For \(D=X^{1/2}/(\log X)^A\) with a sufficiently large
+fixed \(A\), define
+\[
+ R_X(D)=
+ \sum_{2\le m\le (2X+2)/D}\log m
+ \sum_{\substack{d>D\\ X<md-2\le 2X\\ md-2\ {\rm prime}}}
+             \mu(d)\log(md-2).
+\]
+Then
+\[
+ (\log X)^2 N_2(I)=\mathfrak S_2 X+R_X(D)+o(X/L).               \tag{B1}
+\]
+In particular the quantitative target on \(I\) is equivalent to
+\(R_X(D)\ge-\mathfrak S_2 X+\kappa X/L\) for some fixed \(\kappa>0\)
+along an unbounded sequence, with \(\kappa\) allowed to change.
+Every summand in \(R_X(D)\) has \(md\) composite.
+
+To prove (B1), expand \(\Lambda(p+2)\) in
+\(\sum_{p\in I}\log p\,\Lambda(p+2)\).
+Divisors \(d>D\) give \(R_X(D)\) on putting \(m=(p+2)/d\), since
+\(\log m=0\) at \(m=1\). All divisors here are odd for large \(X\).
+For \(d\le D\), apply the classical Bombieri–Vinogradov theorem
+at each prefix length between \(X\) and \(2X\) to the class
+\(-2\bmod d\). Partial summation with \(\log p\log((p+2)/d)\)
+costs \(O((\log X)^2)\) in the total error, by integrating the
+summed progression error. With \(A\) large the small-divisor
+contribution is
+\[
+ \left(\int_X^{2X}\log(x+2)\,dx\right)\!
+       \sum_{\substack{d\le D\\d\ {\rm odd}}}\frac{\mu(d)}{\varphi(d)}
+ -X\sum_{\substack{d\le D\\d\ {\rm odd}}}
+                         \frac{\mu(d)\log d}{\varphi(d)}
+ +O\big(X(\log X)^{-2}\big).
+\]
+[Johnston, Theorem 1.1 for the classical distribution estimate](sources/johnston-2510.10853v3.pdf)
+
+The Dirichlet series of \(g(d)=\mathbf 1_{d\ {\rm odd}}\mu(d)/\varphi(d)\)
+is \(H(s)/\zeta(1+s)\), where
+\[
+ H(s)=\frac1{1-2^{-1-s}}
+ \prod_{q>2}\frac{1-q^{-s}/(q-1)}{1-q^{-1-s}},
+ \qquad H(0)=\mathfrak S_2.
+\]
+The Euler factors give coefficients \(h(n)\) of \(H\) with
+\(\sum_n |h(n)|n^\eta<\infty\) for fixed \(0<\eta<1/2\).
+The classical zero-free estimate for the Mertens function and
+partial summation give, for any fixed \(K\),
+\(\sum_{n\le Y}\mu(n)/n=O_K((\log Y)^{-K})\) and
+\(\sum_{n\le Y}\mu(n)\log n/n=-1+O_K((\log Y)^{-K})\).
+The limits are the value and negative derivative of
+\(1/\zeta(1+s)\) at \(s=0\). Convolving with \(h\), and splitting
+its variable at \(\sqrt D\), gives the same estimates for the two
+sums over \(d\), with limits \(0\) and \(-\mathfrak S_2\).
+Thus the small-divisor contribution is
+\(\mathfrak S_2 X+O(X(\log X)^{-2})\).
+
+Proper prime powers \(p+2\) contribute \(O(\sqrt X(\log X)^3)\).
+For the prime terms the logarithmic weight is
+\((\log X)^2+O(\log X)\) on \(I\). The uniform twin upper sieve bounds
+their number by \(O(B_X)\), so replacing their weights by
+\((\log X)^2\) costs \(o(X/L)\). This proves (B1).
+The higher-order extraction applies on \(I\) as well, by coefficient
+domination by \(T_{2X}\). Its required positive lower bound on \(I\)
+therefore reduces to the one-sided estimate for \(R_X(D)\) above.
+Cancellation for the unweighted Möbius function on shifted primes
+does not estimate the sum over the growing family \(m\ge2\).
+
+## Reweighting test for transfer from other shifts
+
+Put \(I_h=\{n:n,\ n+h\in I,\ n\ {\rm odd}\}\) for even \(h\).
+Write \(T_{X,h}^{I}(v)=\sum_{n\in I_h}\mu^2(n)\mu^2(n+h)
+v^{\omega(n)+\omega(n+h)}\) and normalize by
+\(F_{X,h}^{I}(u)=T_{X,h}^{I}(u/L)/((u/L)^2B_X)\), with the
+removable value at zero understood.
+
+**Theorem.** For each sufficiently large \(X\) there are nonnegative
+prime weights \(w_X\), equal to \(1\) outside \(I\), such that the
+multiplicative function
+\[
+ f_{v,X}(n)=\mu^2(n)v^{\omega(n)}\prod_{q\mid n}w_X(q)
+ \qquad(q\ {\rm prime})
+\]
+has gap-two correlation on \(I\) with quadratic coefficient zero.
+For every fixed \(C\), its normalized correlations on \(I_h\) satisfy
+\[
+ \big|F_{X,h}^{I,*}(u)-F_{X,h}^{I}(u)\big|
+       \ll_C \frac{L^3}{\log X}
+ \qquad (|u|\le C,\quad h\ {\rm even},\quad h\ne0,\pm2).
+                                                                    \tag{B2}
+\]
+Moreover, for \(q\le\lfloor L\rfloor\), every residue \(a\bmod q\)
+and every interval \(J\subset I\),
+\[
+ \sum_{\substack{p\in J\\p\equiv a\bmod q}}\big(w_X(p)-1\big)
+   \ll B_X\exp(-(\log X)^{1/3}).                                  \tag{B3}
+\]
+Thus macroscopic prime marginals in these progressions and the other
+shift correlations can agree to finer than the precision in (A3)
+while the gap-two quadratic coefficient vanishes in the reweighted
+model.
+
+To construct the weights, set \(y=\lfloor L\rfloor\),
+\(W=\operatorname{lcm}(1,\dots,y)\), and partition \(I\) into blocks of
+length comparable to \(H=X\exp(-(\log X)^{1/3})\). Chebyshev's bound
+gives \(\log W=O(y)\). In each block and reduced residue modulo \(W\),
+let \(P\) count its primes and \(Q\) count the lower endpoints \(p\)
+of twin pairs there, including those with \(p+2\) just outside \(I\).
+Siegel–Walfisz gives \(P\asymp H/(\varphi(W)\log X)\) uniformly.
+The dimension-two upper sieve in the residue class gives
+\[
+ Q\ll \frac H{W(\log X)^2}
+             \prod_{\substack{q\mid W\\q>2}}\!(1-2/q)^{-1}.
+\]
+The product is over primes. One may use the Selberg argument in the
+squarefree correlation note up to a small fixed power of \(X\),
+omitting primes dividing \(W\). Its CRT error is \(O(X^{1/4}(\log X)^2)\)
+with sieve weight cutoff \(X^{1/8}\), negligible here. Mertens'
+product bound gives \(Q/P\ll(1+\log y)/\log X\).
+Set the weight of every removed lower endpoint to zero and that
+of every other prime in the block and residue to \(P/(P-Q)\).
+No odd composite in \(I\) has a prime factor in \(I\), so the only
+altered endpoint weights in \(I_h\) are prime weights. In particular
+every twin pair in \(I\) has zero weight. Exact balance in full
+blocks and \(q\mid W\) imply (B3), since each of at most two partial
+blocks has total deleted mass \(O(H/(\log X)^2)\) by the same sieve
+without a progression.
+[Green, Proposition 4.2](sources/green-roth-primes-2005.pdf)
+
+For (B2), put \(v=|u|/L\). First delete the lower twin endpoints
+without rescaling. An affected term at shift \(h\ne0,\pm2\) has
+two prime forms \(p,p+2\) and a squarefree form \(p+h\) or \(p-h\).
+These forms are distinct and contribute a term of absolute value
+at most \(v^{1+\omega(p\pm h)}\). For each sign, omit primes at most
+three and primes dividing \(h(h\mp 2)\) from the Selberg sieve.
+The other primes below \(X^\gamma\), for small fixed \(\gamma>0\),
+have two forbidden prime classes and an additional class forbidden
+with probability \(1-v\). The expected sieve product is bounded by
+\(O(L^3(\log X)^{v-3})\). Indeed the omitted divisors of the nonzero
+integer \(h(h\mp2)\) cost at most \(O(L^3)\) in the product, by
+Mertens and splitting at \(\log X\). The prime-factor logarithm
+bound in the squarefree correlation note for the third form gives
+another factor \(v\), either directly or from the allowance of one
+prescribed prime divisor; the logarithms of prescribed primes sum
+against \(1/q\) to \(O(\log X)\). A prescribed prime in an omitted
+class costs the same factor \(v\) in the original weight.
+The CRT errors are negligible after summing the prescriptions.
+The total deleted weight is therefore
+\(O(v^2 X L^3(\log X)^{v-3})\).
+
+Rescaling the remaining weights changes terms by a relative
+\(O((1+\log y)/\log X)\). The shifted version of the two-class
+upper sieve bounds their unscaled mass by
+\(O(v^2 X L^2(\log X)^{2v-2})\), uniformly in nonzero \(h\).
+Here one omits primes dividing \(h\), at Euler product cost \(O(L^2)\).
+If both prescribed primes coincide at a prime dividing \(h\),
+the progression has that prime only once in its modulus, and the
+original weight pays \(v^2\) for its two occurrences.
+The corresponding sum uses
+\(\sum_{q<X^\gamma}(\log q)^2/q\ll(\log X)^2\).
+These are the forced-prime estimates from the squarefree
+correlation note with the indicated local changes.
+Divide the two loss estimates by \(v^2B_X\) to obtain (B2).
+The assertion at \(u=0\) follows by continuity.
+
+The construction changes the arithmetic weights. It demonstrates
+that a transfer based only on these progression marginals and
+off-target correlations requires additional information about
+gap two, even at the extraction precision.
 
 ## Reduction to a two-prime equation
 

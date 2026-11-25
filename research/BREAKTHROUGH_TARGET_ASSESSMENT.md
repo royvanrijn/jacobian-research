@@ -1,12 +1,25 @@
 # Breakthrough target assessment
 
-The objective remains a result with major external mathematical impact.
-The restricted-prime binary theorem is established internally under its
-stated analytic imports. The assessment below identifies the remaining
-targets, including shorter windows and dependent correlations.
-Primary target: the unrestricted Strong Factorial Conjecture. MRC is deferred after the current fixed-input checkpoint, at the user's request. One secondary check: unrestricted Gaussian safety-to-purity through the canonical Wick-marker detection obligation described below.
-The other candidates are audited here, not pursued as parallel family-expansion
-programmes. Assessment date: 18 November 2026.
+Updated 25 November 2026.
+
+- **Primary target.** Prove the unrestricted Strong Factorial Conjecture.
+  The internal univariate binomial theorem covers every terminal order.
+  The first unresolved support-size milestone is uniform coprimality for
+  arbitrary multivariate binomials, starting with orders five and six.
+  [Strong Factorial assessment](#strong-factorial-conjecture-primary-target)
+- **Secondary target.** Test whether every Gaussian phase with unit
+  period \(1-t\) has a nonpolynomial period for some canonical Wick-power
+  marker fixed for that phase. A proof would establish unrestricted
+  safety-to-purity.
+  [Gaussian assessment](#gaussian-safety-to-purity)
+- **Other frontiers.** The current candidates are plane Keller boundary
+  geometry, regular witnesses on the remaining compact Mathieu spaces,
+  every-target prime-semigroup counts in power-short windows, and a
+  strict saving at the balanced small-budget \(abc\) endpoint.
+- **Deferred.** Both fixed knot inputs have exact meridional-rank
+  certificates. The three-meridian implication remains the target if this
+  programme resumes.
+  [Meridional-rank assessment](#meridional-rank-deferred-after-the-current-checkpoint)
 
 ## Plane Jacobian conjecture
 
@@ -28,9 +41,17 @@ constructs plane counterexamples to the prime-to-characteristic formulation
 over every algebraically closed positive-characteristic field. These do not
 by themselves settle characteristic zero.
 
-**Repository evidence.** Polynomial higher-dimensional compilers, finite-fibre
-realizations and numerous scoped plane exclusions are retained. Their
-dimensions and hypotheses matter. The current work establishes a
+**Repository evidence.** The explicit characteristic-zero Keller collision
+in dimension three has an internal proof. In the plane, birational inversion
+and the exclusions through generic degree four force at least five generic
+sheets for any counterexample. Cotangent doubling preserves the whole scheme
+fibres, finite locus, normalization and geometric permutation action. The
+same lower bound transfers to positional rank-two Weyl assignments and,
+under Tang's structural alternative, complex four-variable Hessian gradients.
+[Dimension-three construction](jacobian/cubic-reduction/PROOF12.md) ·
+[Cotangent transfer](jacobian/monodromy-theory/COTANGENT_MONODROMY_TRANSFER.md)
+
+The repository also establishes a
 [uniform radial lifting mechanism](jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md):
 the selected odd-prime BGV maps have a compatible determinant-one polynomial
 lift modulo every p^n, but the constructed exact p-adic lift is provably
@@ -195,6 +216,12 @@ certification within the existing work on nonproperness at infinity.
    codifferent in a source-finite frame, automatic sixth-moment trace
    perfection, and elimination or realization of the remaining ramified
    polar folds with the full finite target normalization and trace pairing.
+   In the exceptional index-two chart \((t,s)\), a candidate pair with
+   Jacobian \(Js\) must give polynomials in the original coordinates
+   \((a,b)\) after substituting \(s=b\) and \(t=(a-b^{-2})/b\). The marked
+   quadratic ruling-six model has already been excluded.
+   [Exceptional whole charts](hessian/hc4-triangular-graphs/EXCEPTIONAL_POLAR_FOLD_WHOLE_CHARTS_AND_BIRATIONAL_IMAGES.md),
+   [marked ruling-six exclusion](jacobian/affine-complements/RULING_SIX_SQUARE_DEFORMATION_AND_MARKED_QUADRATIC_EXCLUSION.md),
    [Codifferent criterion](hessian/hc4-triangular-graphs/CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md),
    [trace criterion](hessian/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md),
    [ramified polar folds](hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md).
@@ -306,9 +333,59 @@ coefficients retain medium bilinear boxes and lose the existing periodic
 fallback. The retained local checks cover the finite identities used by
 this route.
 
-**Impact test.** A pointwise lower bound in a power-short window would
-extend the established binary theorem. A pointwise dependent three-factor
-asymptotic would extend the correlation theory to a different configuration.
+**Current priorities.** For \(C_{12}\), obtain a lower bound of the expected
+logarithmic size in the central window of radius \(N^\theta\), for some
+fixed \(0<\theta<1\) and every sufficiently large admissible \(N\). The
+Eisenstein semigroup already has matching lower and upper orders for fixed
+\(2/3<\theta<1\). For the dependent system \(a+b=N,\ b+c=N+12\) with
+\(a,b,c\in C_{12}\), obtain an every-target joint asymptotic. Its upper bound
+is uniform and the natural-scale lower bound currently holds for a positive
+proportion of targets.
+[Binary window frontier](arithmetic/BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#the-central-binary-conjecture) ·
+[Shared-summand completion target](arithmetic/SHARED_SUMMAND_C12_CORRELATION.md#8-precise-completion-target)
+
+## Arithmetic exception bounds
+
+The \(abc\) exceptional-set count \(N_\lambda(X)\) for primitive positive
+triples \(a+b=c\) with \(c\le X\) and \(\operatorname{rad}(abc)\le c^\lambda\)
+has upper exponent \((1/3+\eta)\lambda+\varepsilon\) for each fixed
+\(\eta>0\) and sufficiently small fixed \(\lambda>0\). The priority is a
+uniform strict saving below
+the coefficient \(1/3\) at small budgets. A broad symmetric degree profile
+survives the current determinant and specialization estimates. Test
+estimates for the actual factor graph against this profile, using the
+constraints on common factors of the degree-three atoms. A strict saving
+would improve the exceptional-set count. Finiteness is a separate goal.
+[Small-budget bound](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13) ·
+[Surviving symmetric profile](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md#the-broad-symmetric-profile-under-the-improved-chart-budget) ·
+[Atomic common factors](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md#atomic-common-factors-at-the-broad-symmetric-endpoint)
+
+For Hall's conjecture, seek a uniform power bound for the height of the first
+point in an occupied cubic descent branch. The generator-index bound for
+primitive irreducible squarefree inputs and the Padé bound for further points
+in a suitable occupied branch isolate that first-height problem.
+[Hall cubic fields and Padé approximation](arithmetic/HALL_CUBIC_FIELDS_AND_PADE.md)
+
+## Mathieu property over ground fields
+
+The ground-field manuscript classifies normalized Reynolds kernels for
+geometrically homogeneous spaces with split reductive identity component
+in characteristic zero, including spaces without rational points. The
+quadratic-complement manuscript proves that the kernel of the normalized
+rotation-and-scaling trace is Mathieu–Zhao exactly in dimensions one and
+two, with sharp witness bounds in higher dimension. Both manuscripts are
+under review at Hexagon.
+[Ground-field manuscript](../results/published/mathieu-ground-fields/) ·
+[Quadratic-complement manuscript](../results/published/mathieu-quadratic-complements/)
+
+For connected homogeneous spaces over real closed fields, the next targets
+are the traces on the two exceptional compact Laurent products
+\((\mathrm{SU}_2/2O)\times\mathbb G_m\) and
+\((\mathrm{SU}_2/2I)\times\mathbb G_m\), and on individual compact twists
+without rational points in the remaining compact commuting-group case.
+The required witnesses must lie in the original regular function rings.
+The general anisotropic nonsplit ground-field problem remains open.
+[Reduction of the mixed real-closed case](foundations/extended-geometry/MATHIEU_CLASSIFICATION_FIELD_AND_COMPACT_EXTENSIONS.md#reduction-of-the-mixed-real-closed-case-without-rational-points)
 
 ## Meridional rank: deferred after the current checkpoint
 
@@ -362,7 +439,7 @@ meridional generating number four in every even-order orbifold quotient.
 The universal three-meridian implication remains open.
 
 
-For the fixed input \(T(5,19;2,1)\), the new finite-field certificate
+For the fixed input \(T(5,19;2,1)\), the finite-field certificate
 proves \(\operatorname{mr}=b=5\). It verifies all 78 crossings
 over \(\mathbb F_{37}\). Meridian images fix hyperplanes in dimension
 five and the image has zero common fixed space, so four meridians
@@ -371,11 +448,16 @@ The meridian images are involutions, so the lower bound also holds
 in the order-two orbifold group.
 [Rank-five proof and replay](meridional-rank/representations/THREE_MERIDIAN_FRONTIER_AUDIT.md#an-exact-rank-five-certificate-for-t51921).
 
-The seven-sheet cover argument still rules out three meridional
-involutions in the order-two orbifold group and every inverted
-generating pair in the actual deck class. The double branched cover
-has ordinary rank and Heegaard genus two, and its deck action fixes
+For \(T(5,19;2,1)\), the independent seven-sheet cover argument rules out
+three meridional involutions in the order-two orbifold group and every
+inverted generating pair in the actual deck class. Its double branched
+cover has ordinary rank and Heegaard genus two, and its deck action fixes
 every two-dimensional word trace over every field.
+
+The two fixed-input certificates complete the checkpoint. If work resumes,
+the target is the universal marked implication or an actual generating
+triple for a knot of bridge number four.
+[Three-meridian frontier](meridional-rank/representations/THREE_MERIDIAN_FRONTIER_AUDIT.md#exact-available-transfer-and-missing-step)
 
 
 ## Gaussian safety-to-purity
@@ -594,8 +676,16 @@ finite Gaussian stabilization. These witnesses are unsafe, so this
 does not exclude a reduction restricted to safe inputs, a time change,
 or an implication that retains only safety and purity.
 
-**Impact test.** A general vacuum-rigidity principle could be substantial.
-More support or degree classifications alone fail the requested test.
+**Secondary work.** Prove that every complex polynomial phase with unit
+\(1-t\) has a nonpolynomial period for some fixed canonical Wick-power
+marker, or exhibit a phase with unit \(1-t\) for which every one of those
+periods is polynomial. Such a phase would refute the proposed detection test.
+To refute safety-to-purity it would also have to be safe against every
+original polynomial marker. The computable Gaussian purity prefix answers
+whether all pure moments vanish in a fixed degree and dimension. The
+canonical-marker question concerns eventual mixed-moment vanishing.
+[Linear-vacuum and marker examples](moments/vanishing/POLYNOMIAL_SEEDS_AND_PURE_MARKER_DELAY.md) ·
+[Computable purity prefix](foundations/extended-geometry/GAUSSIAN_COMPUTABLE_UNIFORM_PURITY_PREFIX.md)
 
 ## Strong Factorial Conjecture: primary target
 
@@ -611,16 +701,33 @@ its [author preprint](https://people.math.sc.edu/rocks/BradyRocksSFC2015.pdf)
 also distinguishes complete cases from partial binomial results.
 The audit found no general support-independent consecutive-moment theorem.
 
-**Repository evidence.** Ordinary binomials through degree six and selected
-higher support families have internal proofs. The
-[ordinary constant-plus-power theorem](factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex)
-already covers A+BX^d for every positive integer d and every starting index.
-Its uniform contour proof and finite certificates do not treat arbitrary
-monomial products or supports. The remaining degree-seven residue families
-are narrower than the central objective. Full Furter
-rigidity already has a credited internal reproduction of liqsweep's
-critical-value argument; its factorial transfer is a specific all-dimensional
-family, rather than arbitrary supports.
+**Repository evidence.** The internal theorem covers every univariate
+binomial \(X^a(A+BX^d)\) over every characteristic-zero field, for all
+terminal orders \(N\ge2\). The proof combines the theorem through
+\(N=24\), exact certificates for \(25\le N\le3149\), and a uniform Padé
+cutoff from \(N=3150\). The manuscript is ready for mathematical review.
+External specialist review and independent replay remain open.
+[Univariate binomial proof](factorial/image-rigidity/ORDINARY_BINOMIAL_RESIDUAL_REGION.md) ·
+[Manuscript and verification](../unpublished/strong-factorial-binomials/)
+
+**Next milestone.** Prove coprimality for the actual consecutive moment
+polynomials of arbitrary multivariate binomials at terminal six. Arbitrary
+two-monomial supports are covered through terminal five. Disjoint
+nonconstant supports and several classes with private exponents have
+all-terminal proofs. At terminal six, independent coefficient bounds can
+admit common roots. Retain the constraints linking the two orders through
+the same exponent rows and close the intermediate-curvature range.
+[Multivariate status](factorial/README.md) ·
+[Terminal-six coefficient links](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_COEFFICIENT_LINKS.md)
+
+For an all-terminal argument, the shared-support saddle analysis gives
+local results for a fixed exponent profile. A uniform proof must identify
+which saddles contribute on the original contour through changes of
+dominance and account for all common-root candidates as the exponents vary.
+Full Furter rigidity has a credited internal reproduction of liqsweep's
+critical-value proof, with a factorial transfer for a specific
+all-dimensional family.
+[Shared-support saddle analysis](factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md)
 
 The [unrestricted-mechanism audit](factorial/image-rigidity/UNRESTRICTED_SFC_MECHANISMS.tex)
 proves two route obstructions: even a two-term phase can require scalar

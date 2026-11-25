@@ -1481,3 +1481,518 @@ proof of (LR2) and (LQ6) applies with \(\lambda\) replaced by
 After division by \(g\), one has \(u\le W^\alpha\), so all
 three quotient branches use this smaller height budget.
 The multiplier bounds are unchanged.
+
+## One full summand and a small target radical
+
+The quarter saving extends to one prescribed full summand when the
+other summand has a radical bound. Write \(\sigma=1/4-\delta\).
+There are absolute positive \(\delta,c_*\) such that for sufficiently
+large fixed \(p\), the number of representations \(A+B=N\) with
+\(A\) \(p\)-full, \(\operatorname{rad}(B)\le N^{1/p}\), and
+\(\operatorname{rad}(N)\le N^{c_*/p}\), is
+\(O_{p,\varepsilon}(N^{(1/2-\delta)/p+\varepsilon})\) with
+arbitrary common divisor. The aggregate count with \(N\le X\),
+\(\operatorname{rad}(B)\le X^{1/p}\), and
+\(\operatorname{rad}(N)\le X^\nu\) is
+\(O_{p,\nu,\varepsilon}(X^{2\sigma/p+(1-2\sigma)\nu+\varepsilon})\)
+for \(0\le\nu\le c_*/p\).
+
+### The primitive quotient with a fractional repair cost
+
+For \(u+v=W\) a primitive quotient, prescribe fullness
+order \(p\) only on \(u\). Allow the other summand \(v\)
+arbitrary valuations. Put \(h=\log u/\log W\), and
+assume
+\[
+ \operatorname{rad}(v)\le W^{b_B},\qquad
+ \operatorname{rad}(W)\le W^{b_C},\qquad
+   h/p+b_B+b_C\le\rho .
+\]
+Let \(D=\prod_{0<v_\ell(u)<p}\ell^{1-v_\ell(u)/p}\),
+and let \(Z=D^p\) be the mandatory integer multiplier.
+Fix any \(\gamma>1/4\). There are \(\tau,\delta,\rho_*>0\)
+such that, for fixed \(0<\rho\le\rho_*\) and \(b_C\le\tau\rho\),
+the quotient count in \(W\asymp Y,D\asymp H\) is
+\[
+ \ll_{p,b_B,b_C,\rho,\varepsilon}
+      Y^{(1/4-\delta)\rho+\varepsilon}H^\gamma.
+ \tag{QF2}
+\]
+The implied constants do not depend on the bins.
+
+In a failing sequence with \(\rho,\delta,\tau\to0\), fix
+each parameter choice, take its unbounded height sequence
+and pass to \(z=\lim\log_Y H\) before changing parameters.
+Counting the two unprescribed complete terms by their
+radicals gives \(Q\ll Y^{b_B+b_C+\varepsilon}\), so
+\(z=O(\rho)\). Form anatomic boxes with losses \(o(\rho)\)
+and compression greater than \(p\), and split numerical
+heights before passing to the limiting profile.
+The complete radical bound is
+\(\operatorname{rad}(uvW)\le D u^{1/p}\operatorname{rad}(vW)\).
+Thus \(L\le\rho+z+o(\rho)\), \(L_C\le b_C+o(\rho)\),
+and (LQ1) gives \(D_{\rm box}\le(\rho+z+b_C)/4+o(\rho)\).
+The failed estimate and \(\gamma>1/4\) imply \(z=o(\rho)\),
+\(L/\rho\to1\), \(d\to1/4\), and \(l_C=0\). Thus each
+summand has normalized root mass \(1/2\).
+
+The unprescribed summand root bound gives
+\(\liminf b_B/\rho\ge1/2\). On \(u\) the logarithmic mass
+of the primes of degree below \((1-\theta)p\) is at most
+\((\log D)/\theta\), for fixed \(\theta>0\).
+These are exact original degree positions. The root
+moment at each fixed parameter choice is at most its
+actual numerical height, using lower dyadic root
+endpoints in the height limit. Hence
+\[
+ h/(p\rho)\ \ge\ (1-\theta)(L/\rho)(1/2-o(1)).
+\]
+Since \(b_B/\rho+h/(p\rho)\le1\), both ratios tend to \(1/2\).
+If the limiting numerical height \(h^*>0\), then
+\(p\rho\to2h^*\), the limiting degree measure is supported
+on \([2h^*,\infty)\), and its half mass and moment at most
+\(h^*\) make it \((1/2)\delta_{2h^*}\) with no escaped
+moment. Thus \(u\) is finite-scale. If \(h^*=0\), then
+\(u\) is numerically short and is releasable anyway.
+Either outcome contradicts (LQ8) with \(l_C=0\). This proves (QF2).
+[At \(l_C=0\), both opposite letters must be diffuse](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-global-inequality-for-a-low-mass-letter-and-diffuse-degrees)
+
+Without the condition \(b_C\le\tau\rho\), the same
+elementary argument, (LQ1), and the height limit give, for
+every fixed \(\eta>0\) at sufficiently small fixed \(\rho\),
+\[
+ Q(Y,H)\ll
+       Y^{\rho/4+b_C/4+\eta\rho+\varepsilon}H^\gamma .
+ \tag{QF3}
+\]
+Indeed \(z=O(\rho)\) as above, and the box upper exponent
+already contradicts any failure since \(\gamma>1/4\).
+
+### Fixed-target count with arbitrary common divisor
+
+For sufficiently large fixed \(p\), let \(N\) be a target
+with \(\operatorname{rad}(N)\le N^{c/p}\), with \(c>0\)
+small and fixed. Count \(A+B=N\) with \(A\) \(p\)-full,
+\(\operatorname{rad}(B)\le N^{1/p}\), and arbitrary gcd.
+Then
+\[
+ r(N)\ \ll_{p,\varepsilon}
+ N^{2\sigma/p+\varepsilon}\operatorname{rad}(N)^\gamma,
+ \qquad \sigma=1/4-\delta .
+ \tag{QF4}
+\]
+In particular decreasing \(c\) so that \(\gamma c\le\delta\)
+gives fixed-target exponent at most \((1/2-\delta)/p\).
+
+For \(g=\gcd(A,B)\mid N\), put \(W=N/g\). If
+\(W>N^{1/8}\), the quotient has
+\(b_B\le\log_W N^{1/p}\le8/p\) and
+\(b_C=\log_W\operatorname{rad}(W)\le8c/p\).
+Use \(\rho=1/p+b_B+b_C\), rounding the upper bounds upward
+on an arbitrarily fine finite grid so that the implied
+constants are uniform in \(N,g\). Choose \(c<\tau/16\)
+to preserve the sector margin. Every deficient prime of
+\(A/g\) divides \(g\), since \(A\) is full, and it is
+coprime to \(W\). Thus \(D\le R_{\rm rem}\), where
+\(R_{\rm rem}=\operatorname{rad}(N)/\operatorname{rad}(W)\).
+Summing the deficiency bins in (QF2) gives
+\[
+ W^{\sigma/p}N^{\sigma/p}
+       \operatorname{rad}(W)^\sigma R_{\rm rem}^\gamma N^\varepsilon
+ \le N^{2\sigma/p+\varepsilon}\operatorname{rad}(N)^\gamma .
+\]
+For \(W\le N^{1/8}\), remove the deficient prime powers of
+\(A/g\). Their supports divide \(g\) and the allowable
+exponents are bounded by \(p\), so the coefficient choices
+cost at most \(N^\varepsilon\) by the fixed-support bound. Count the remaining full part in
+\(W^{1/p+\varepsilon}\) ways. This lower-height branch fits
+(QF4), and summing over the divisors \(g\) proves the bound.
+
+### Aggregate count with both original radical caps
+
+For sufficiently large fixed \(p\), count \(A+B=N\le X\)
+with only \(A\) prescribed \(p\)-full, and
+\(\operatorname{rad}(B)\le X^{1/p}\),
+\(\operatorname{rad}(N)\le X^\nu\).
+For some sufficiently small fixed \(c>0\), and
+\(0\le\nu\le c/p\), the count is
+\[
+ \ll_{p,\nu,\varepsilon}X^{2\sigma/p+(1-2\sigma)\nu+\varepsilon}.
+ \tag{QF5}
+\]
+For \(\nu\le\delta/p\) as well, this exponent is strictly
+below \(1/(2p)\).
+
+To verify the multiplier bound, at fixed quotient \(u,v,W\)
+put \(R_B=\operatorname{rad}(v)\), \(R_C=\operatorname{rad}(W)\)
+and \(P=\operatorname{rad}(uvW)\). Split \(g=f g_0\), where
+\(f\) is \(P\)-supported and \(g_0\) is coprime to \(P\).
+Then \(g_0\) is \(p\)-full. The deficient primes in \(Z\)
+all divide \(f\), and none divides \(vW\), so they occur in
+both original radicals. The height count and fixed-radical
+count bound the number of possible \(g_0\) by the minimum
+of
+\[
+ (X/(Wf))^{1/p},\qquad
+ \frac{X^{1/p}}{R_B\operatorname{rad}(Z)},\qquad
+ \frac{X^\nu}{R_C\operatorname{rad}(Z)}
+\]
+up to \(X^\varepsilon\). The count is zero if any range
+is below one. For each fixed radical of \(g_0\), the integer
+multiplicity is \(O_\varepsilon(X^\varepsilon)\).
+The allowed support factors of \(f\) have total \(f^{-a}\) sum
+\(O_{a,\varepsilon}(X^\varepsilon)\) for each fixed \(a>0\), by
+the product \(\prod_{\ell\mid P}(1-\ell^{-a})^{-1}\).
+Use weights \(\sigma,\sigma,1-2\sigma\) on the three multiplier bounds.
+Summing the allowed \(f\) by the Euler bound
+at exponent \(a=\sigma/p\), and using
+\(\operatorname{rad}(Z)\ge Z^{1/p}\), gives the multiplier
+count
+\[
+ X^{2\sigma/p+(1-2\sigma)\nu+\varepsilon}
+ W^{-\sigma/p+\varepsilon}
+       R_B^{-\sigma}R_C^{-(1-2\sigma)} Z^{-1/p}.
+\]
+Using only the last radical count and counting \(f\) at
+subpower cost also gives
+\(X^{\nu+\varepsilon}R_C^{-1}Z^{-1/p}\).
+The caps here are on the original values. In particular, the
+primes of \(Z\) enter both radicals independently of \(g_0\).
+
+Take dyadic bins \(W\asymp Y,R_B,R_C,Z\). As usual, set
+\(b_i=\log_Y R_i\) to within finite-grid exponent loss.
+Fix a small absolute \(b_*>0\) in the allowed budget range.
+When both \(b_i\le b_*\) and \(b_C\le c_0(1/p+b_B)\), choose
+\(c_0<\tau/4\) and use (QF2) with \(\rho=1/p+b_B+b_C\).
+Its quotient estimate
+\(Y^{\sigma/p}R_B^\sigma R_C^\sigma Z^{\gamma/p}Y^\varepsilon\)
+cancels the height and \(B\)-radical terms. The remaining
+target-radical exponent is negative since \(\sigma<1/4\),
+and the repair bins sum geometrically if \(1/4<\gamma<1\).
+The other bins contribute logarithms.
+
+When both \(b_i\le b_*\) but \(b_C>c_0(1/p+b_B)\), use
+(QF3) and the pure target-radical multiplier. The height
+and radical part of their product, beyond \(X^\nu\), is
+at most
+\[
+ (Y^{1/p}R_B)^{\,1/4+\eta}
+ R_C^{-(1/2-2\eta)}
+ \le (Y^{1/p}R_B)^{\,1/4+\eta-c_0(1/2-2\eta)}.
+\]
+The repair bins still sum geometrically. With \(\delta,\eta\)
+small compared with \(c_0\), the displayed exponent is a
+positive number strictly below \(\sigma\) by a fixed margin.
+Since \(Y\le X\), \(R_B\le X^{1/p}\), and \(\nu\le c/p\)
+with \(c\) sufficiently small, this branch is covered by
+(QF5). One may take \(c_0\le1/8\) and
+\(\delta,\eta\le c_0/16\), then \(c\le c_0/16\).
+
+Finally if either \(b_B\) or \(b_C\) exceeds \(b_*\),
+then \(Y\le X^{1/(pb_*)}\) since both original caps are at
+most \(X^{1/p}\). The elementary quotient estimate fixing
+the target and the prescribed summand gives
+\(Y^{1/p+\varepsilon}R_C D\). The pure target-radical
+multiplier cancels \(R_C D\) since \(D=Z^{1/p}\).
+The branch contributes at most
+\(X^{\nu+1/(p^2b_*)+\varepsilon}\), smaller than the exponent in (QF5)
+for large \(p\) and sufficiently small fixed \(c\).
+Every use of a variable \(b_i\) is by a finite upper grid
+with fixed slack; dyadic factors and the logarithmic
+number of bins are absorbed into the exponent allowance.
+
+### Scalar asymptotics in the one-full primitive quotient sector
+
+Impose only \(p\)-fullness on the original first summand. On its
+primitive quotient \(u+v=W\), impose the conditions of (QF2),
+namely
+\[
+ \operatorname{rad}(v)\le W^{b_B},\qquad
+ \operatorname{rad}(W)\le W^{b_C},\qquad
+ (\log_W u)/p+b_B+b_C\le\rho,\qquad b_C\le\tau\rho .
+\]
+Use fixed \(1/4<\gamma<1\), and let \(\sigma_0=1/4-\delta\) be the
+constant of (QF2) for this \(\gamma\). For fixed \(p,J\) with
+\[
+ p\ge16(J+1)^2,\qquad
+ \max\{\sigma_0\rho,\gamma/p\}<1/(p+J+1),
+\]
+and \(\rho\) in the allowed range, the original count with height
+at most \(X\) and arbitrary common divisor is
+\[
+ \sum_{j=0}^{J} C_j X^{1/(p+j)}
+ +O_{p,b_B,b_C,\rho,J,\varepsilon}
+       (X^{1/(p+J+1)+\varepsilon}),
+ \qquad (-1)^j C_j>0
+ \tag{QF6}
+\]
+if the primitive sector is nonempty. The coefficients are sums
+of the scalar coefficients from (PC) over the indicated quotients
+and their allowed support factors. The radical caps here are on
+the primitive quotient. The original target and second summand
+may have large radicals.
+
+For a fixed quotient write \(P=\operatorname{rad}(uvW)\) and
+\(g=f g_0\) as in the preceding aggregate count. Thus \(f\) is
+\(P\)-supported, \(g_0\) is coprime to \(P\), and \(g_0\) is
+\(p\)-full. The allowable \(f\) repair \(u\), so they are divisible
+by \(Z=D^p\). Conversely such a supported \(f\) with \(p\)-full
+\(fu\), together with any coprime \(p\)-full \(g_0\), gives an
+original triple from this quotient. Each original triple determines
+its quotient and both factors of its gcd uniquely. For fixed
+\(a>0\), (GU3) gives
+\[
+ \sum_{f\text{ allowed}} f^{-a}\ll_{a,\varepsilon} W^\varepsilon Z^{-a}.
+\]
+Indeed it suffices to sum over \(f=Z f'\), with \(f'\) supported on
+\(P\), and apply the fixed-support Euler product.
+
+Use (PC) with \(M=p\) to count \(g_0\) up to \(X/(Wf)\). Choose
+\(a\) just above \(1/(p+J+1)\) and below \(1/(p+J)\). The hypotheses
+ensure that
+\(a>\max\{\sigma_0\rho,\gamma/p,3/(4p)\}\).
+The scalar expansion error, and the tails from extending each
+coefficient sum past \(Wf=X\), are bounded by \(X^a\) times
+\(\sum_{\text{quotients}} W^{-a+\varepsilon} Z^{-a}\).
+Count a dyadic box \(W\asymp Y,Z\asymp H\) by (QF2), at cost
+\(O(Y^{\sigma_0\rho+\varepsilon}H^{\gamma/p})\). Both dyadic
+sums converge, since \(a>\sigma_0\rho\) and \(a>\gamma/p\).
+Taking \(a\) sufficiently close to the endpoint gives the error
+in (QF6). The same convergent majorant proves absolute convergence
+of each coefficient sum, because each \(1/(p+j)>a\).
+All terms of each coefficient sum have the same strict sign by
+(PC), giving the alternating signs.
+
+For example, take \(b_B=1/p\), \(b_C=c_*/p\),
+\(\rho=(2+c_*)/p\) and \(\gamma=1/2\), with \(c_*>0\)
+sufficiently small. This works for every fixed \(J\) and all
+sufficiently large \(p\). Set \(W=4^t\), \(v=1\), \(u=W-1\)
+with \(3\nmid t\) and \(t\) large enough that \(2\le W^{c_*/p}\).
+Since \(v_3(4^t-1)=1\), the mandatory repair \(g=Z\) has
+\(v_3(g)=p-1\). Hence the two original letters \(gv\) and \(gW\)
+both have valuation \(p-1\) at three, while \(gu\) is \(p\)-full.
+
+## An exact-power summand at a full fixed target
+
+For every \(c_0,\eta>0\) there is an absolute-in-the-orders cutoff
+\(\lambda_*(c_0,\eta)>0\) with the following property. Fix positive
+integers \(p,q,r\), put \(\lambda=1/p+1/q\), and assume
+\(\lambda\le\lambda_*\) and \(r\lambda\ge c_0\).
+For each prescribed \(r\)-full \(N\), count ordered positive
+solutions
+\[
+ A+B=N,\qquad A=x^p,\qquad B\text{ is }q\text{-full},
+\]
+with arbitrary common divisor. For every \(\varepsilon>0\)
+this count is
+\[
+ O_{c_0,\eta,p,q,r,\varepsilon}
+     \left(N^{\eta\lambda+\varepsilon}\right).
+ \tag{EP}
+\]
+This permits unequal \(p,q\), with the same absolute normalized
+cutoff, and an \(r\) at least a fixed multiple of their harmonic scale. For a nonsymmetric admissible representation, take \(g=6^{pJ}\) with \(pJ\ge\max(q,r)\),
+and set \(A=g,\ B=2g,\ N=3g\).
+
+### Fixing the gcd and the complete gcd-supported parts
+
+Take \(0<\eta\le1\), set \(\tau=\eta/8\), and choose
+\(0<\kappa\le c_0\tau/8\). These are fixed before the
+small-order limit. Fix \(g=\gcd(A,B)\mid N\) and write \(W=N/g\).
+Freeze the complete \(\operatorname{rad}(g)\)-supported parts
+\(A_s,B_s\) of both original summands. There are \(N^\varepsilon\)
+possibilities, uniformly in \(g\mid N\), by counting integers
+at most \(N\) on a prescribed radical support. For example
+the fixed-support Rankin product with a sufficiently small
+positive exponent proves this bound. Both \(A_s,B_s\) are
+multiples of \(g\). With fixed positive integers
+\(A_0=A_s/g,\ B_0=B_s/g\), the primitive quotient equation
+becomes
+\[
+ A_0y^p+B_0 V=W,
+ \qquad V\text{ is }q\text{-full}.
+\]
+Neither \(y\) nor \(V\) has a prime on the support of \(g\).
+In particular \(A_0y^p\) and \(B_0V\) are coprime, and both
+are coprime to \(W\). The coefficients \(A_0,B_0\) enter the counts through unit
+residues and the fixed equation.
+
+If \(W\le N^\tau\), count either \(y\le W^{1/p}\) or the
+\(q\)-full integer \(V\le W\), since either determines
+the solution for fixed coefficients. Their minimum is at
+most \(W^{\lambda+\varepsilon}\). Thus this branch and the
+divisor-many outer choices fit (EP).
+
+Suppose \(W>N^\tau\). Put \(k=\lfloor\kappa/\lambda\rfloor\)
+and let \(n\mid W\) consist of all complete prime powers
+in \(W\) of valuation at least \(k\). If a prime power in
+\(W/n\) has original target exponent \(e_N\) and reduced
+exponent \(0<e_W<k\), then its exponent in \(g\) is at least
+\(r-k\). Consequently
+\[
+ \log(W/n)\le\frac{k}{r-k}\log g,\qquad
+ \frac{k}{r-k}\le\frac{\kappa}{c_0-\kappa}<\tau/2.
+\]
+Thus \(n>N^{\tau/2}\) is a fixed \(k\)-full modulus determined by
+\(N\) and \(g\).
+
+### Boxing the second summand
+
+At fixed \(p,q,r\) take \(K=\lceil\max(q,\lambda^{-2})\rceil\).
+Write \(V\) in its exact degrees \(q,\ldots,K^2\), with one
+additional degree-\(K\) root combining all primes of actual
+valuation \(e>K^2\). For such a prime write
+\(e=K\lfloor e/K\rfloor+(e\bmod K)\). The product of the
+remainders has logarithm at most
+\[
+ K\sum_{v_\ell(V)>K^2}\log\ell\le\log N/K .
+\]
+Every degree-root base is at most \(N^{1/q}\), and the sum
+of all logarithms of these roots is at most \((\log N)/q\),
+because all represented positive degrees are at least \(q\).
+The squarefree exact degree slots and the extra packed
+slot may be kept separate even if the packed slot degree
+also occurs among the exact ones. The number of slots is
+finite at each fixed order choice. Dyadically box these roots
+at a power-of-\(\log N\) cost depending only on that choice.
+All coefficient, divisor, and boxing losses can be made
+arbitrarily small compared with \(\lambda\) in the
+\(N\)-exponent at each fixed order choice.
+
+We justify the remaining uniform assertion by contradiction.
+If (EP) failed for arbitrarily small order budgets, choose
+fixed order triples \((p_j,q_j,r_j)\) with \(\lambda_j\to0\),
+and for each such choice an unbounded sequence of targets
+witnessing failure with a positive exponent allowance. Take
+the target-height limit first for each order triple,
+selecting over the divisor-many \(g\), the two supported
+coefficients, and the fixed-order root boxes. Thus a selected
+box can be assumed to contain solutions of count exponent
+at least \((\eta/2)\lambda_j\) in \(N\). At each fixed \(j\)
+pass to a further subsequence so that the dyadic root height
+exponents have limits. All normalized root masses and
+numerical weights below refer to these limits before \(j\)
+tends to infinity.
+
+Set \(\xi=\eta/32\). There are at most \(1/\xi\) root slots
+of \(V\) of normalized mass at least \(\xi\), since the
+sum of the normalized masses is at most \(1/(q\lambda)\le1\).
+The complement of those slots has numerical weight tending
+to zero. Otherwise along a subsequence its weight tends to
+some \(w>0\). Keep just its slots of degree at least
+\(w/(4\lambda)\); the discarded part has weight at most
+\(w/4+o(1)\). Greedy grouping of the remaining slots into
+blocks of mass at most \(2\xi+o(1)\) gives boundedly many
+blocks, since each completed block except the last costs
+at least \(\xi-o(1)\). One block has positive lower
+numerical weight \(w'>0\) on a subsequence. Freeze the
+values of the roots in that block at exponent cost at most
+\((2\xi+o(1))\lambda\). Their full product \(m\) divides
+\(V\), is a modulus of size at least \(N^{w'/2}\), and
+\(A_0,W\) are units modulo \(m\) by quotient primitivity.
+Then \(y^p\equiv W/A_0\bmod m\). The \(p\)-th power map on
+units has kernel of size \(N^{o(1)}\) at each fixed \(p\),
+by CRT and the unit groups of prime powers. Since
+\(y\le N^{1/p}\le N^\lambda<m\) for small enough \(\lambda\),
+this congruence gives at most \(N^\varepsilon\) values of
+\(y\), each determining the solution. This contradicts
+the selected exponent \((\eta/2)\lambda\), since
+\(2\xi=\eta/16\).
+
+### Counting under the full target core
+
+It follows that the selected boxes express \(V\) by boundedly
+many roots of height \(N^{O(\lambda)}\) and a cofactor
+of height \(N^{o(1)}\); the latter includes the packing
+remainder. Apply the amplified bounded-root modulus
+estimate (GW) under the fixed \(n\):
+\[
+ \frac{y^p}{V}\equiv-\frac{B_0}{A_0}\pmod n .
+\]
+All variables and coefficients are units by primitivity.
+One exact ratio \(y^p/V\) determines the positive primitive
+pair \(A_0y^p,B_0V\), or equivalently determines it by the
+fixed sum \(W\). Select one representation per exact ratio.
+The number of short roots is bounded by \(m_*=2+\lceil
+1/\xi\rceil\), independently of \(j\). Pad with units to keep the dimension fixed. Choose the amplification order \(\ell\) sufficiently
+large in terms of \(\kappa,m_*,\eta\), before letting
+\(\lambda_j\to0\), so that
+\[
+ 2(m_*^2+m_*)/(\kappa\ell)<\eta/4.
+\]
+The relative narrow height constants in (GW) are bounded
+in terms of \(\ell,\kappa,\tau,m_*\), using
+\(\log_N n\ge\tau/2\). The amplified wider relative
+height tends to zero along the chosen order sequence.
+The exponents of the short variables are fixed in each
+inner box and the required lower cutoff on \(k\) is
+independent of them. Thus (GW), after amplification,
+gives normalized exponent at most
+\(2(m_*^2+m_*)/(\kappa\ell)\) up to arbitrarily small
+inner height allowances. This contradicts the selected
+\(\eta/2\) lower exponent and proves (EP).
+
+For this amplification, colour primes
+by their sign in the exact rational output, retain a
+subpower fraction so no cancellation can occur in
+products of outputs, and choose one actual coordinatewise
+tuple product for each exact output product. The divisor
+bound gives at most a subpower of factorizations of any
+one such product, since its numerator and denominator
+each split into fixed \(\ell\) parts. Apply the
+unamplified (GW) bound to the selected amplified tuples
+with exact-fibre bound one and target raised to the
+\(\ell\)-th power. This is valid here since all exact
+outputs have polynomial height and one output
+determines the solution.
+
+### Full fixed targets with an approximate valuation basis
+
+[The bounded-basis valuation condition (AB1)](ABC_WIDE_COFACTOR_CONGRUENCES.md#adaptive-finite-basis-approximation-of-prime-valuations)
+also works when one releases the first summand modulo an opposite full block.
+
+
+Fix \(c_0,\eta>0\) and \(m,H\). For sufficiently small
+fixed \(\lambda>0\), let \(N\) be \(r\)-full and
+\(r\lambda\ge c_0,\ q\lambda\ge1\), with \(q,r\) fixed
+before the target height limit. Count \(A+B=N\) with \(B\)
+\(q\)-full, arbitrary gcd, and (AB1) on \(A\) with \(X_0=N\).
+There are \(\delta_*,\lambda_*>0\) such that at
+\(\delta\le\delta_*,\lambda\le\lambda_*\) the count is
+
+\[
+ O_{c_0,\eta,m,H,\lambda,q,r,\varepsilon}
+       \bigl(N^{\eta\lambda+\varepsilon}\bigr).
+ \tag{EP1}
+\]
+
+Use the gcd, coefficient and full quotient-core construction
+from the exact-power theorem. Freeze the \(g\)-supported
+parts in full; the approximate valuation condition restricts
+to the primes outside \(g\). For \(W\le N^{\eta/8}\) count
+only the genuinely \(q\)-full part of \(B\), at cost
+\(W^{1/q+\varepsilon}\). Otherwise the fixed \(W\)
+has a full modulus at numerical weight bounded below by
+a positive constant. In a failure let \(\lambda,\delta\to0\),
+always taking each fixed parameter height limit first and
+pigeonholing the finite exponent lists in (AB2). The
+remaining original parts of \(A\) and \(B\) are written as
+fixed coefficients times their narrow/wide factorizations.
+The part of \(A\) without its coefficient is releasable
+by (AB2).
+
+In the high-block stopping proof for \(B\), if positive
+numerical weight persists outside finitely many heavy
+roots, a bounded-cost block of \(B\) has weight bounded
+below and fullness comparable to \(1/\lambda\). Freeze
+it and release \(A\) in the resulting unit congruence
+by (GW), using the exact-output amplification above.
+Choose the amplification order sufficiently large after
+selecting the limiting block weight and fullness constant,
+and before taking the order limit. The freeze costs less than the selected normalized exponent,
+and the release can have arbitrarily small additional cost. Therefore \(B\) is releasable. Apply (GW) to the
+complete ratio of the unfixed parts under the fixed full
+target core and absorb the fixed supported coefficients
+into the unit residue. A fixed exact ratio recovers the
+pair by its fixed sum and coefficients. This completes
+the generalized fixed-target estimate.

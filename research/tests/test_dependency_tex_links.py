@@ -192,9 +192,17 @@ Use Lemma~\ref{lem:input}.
         text = (r"\documentclass{article}\begin{theorem}\label{thm:old}X.\end{theorem}"
                 r"\begin{proof}Use\ref{lem:missing}.\end{proof}")
         self.write("paper/published/main.tex", text)
+        self.write("../results/published/grouped-paper/published/main.tex", text)
         self.write("sources/external.tex", text)
         self.assertEqual(tex_proof_link_report(self.data, self.graph()),
                          {"links": [], "issues": []})
+
+    def test_current_tex_editions_in_published_group_are_inspected(self):
+        self.write("../results/published/grouped-paper/main.tex",
+                   r"\documentclass{article}\input{missing}")
+        report = tex_proof_link_report(self.data, self.graph())
+        self.assertEqual([item["kind"] for item in report["issues"]], ["missing_input"])
+        self.assertEqual(report["issues"][0]["reference"], "missing")
 
     def test_late_named_global_proof_does_not_become_an_input_proposition_proof(self):
         self.write("main.tex", r"""\documentclass{article}

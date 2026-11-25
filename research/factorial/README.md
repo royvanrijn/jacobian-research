@@ -144,6 +144,12 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Diffuse-support separation through terminal 22 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md) |
 | Terminal six for arbitrary mirrored profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md) |
 | All-order Strong Factorial for a constant and any monomial of total degree three | Internal result | proved | [Source](image-rigidity/CONSTANT_PLUS_TOTAL_DEGREE_THREE_ALL_ORDERS.md) |
+| An explicit weak-curvature exclusion at every terminal | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_WEAK_CURVATURE_ALL_TERMINALS.md) |
+| Consecutive interlacing in the strongly curved diffuse model | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_LOW_TEMPERATURE_INTERLACING.md) |
+| A degree-two stationary map for fully shared supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SADDLE_MAP_TWO_SHEETS.md) |
+| Uniform eventual coprimality on compact subcritical diffuse bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_LOW_TEMPERATURE_INTERLACING.md) |
+| Eventual diffuse coprimality at the exact critical coupling | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_CRITICAL_COUPLING.md) |
+| Uniform consecutive-order coefficient phases for varying shared supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_VARYING_PROFILE_PHASE.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -232,6 +238,7 @@ Scope limits:
 - At fixed terminals, small curvature and the explicit large-curvature criteria exclude common roots. The positive-curvature diffuse model yields uniform small-relative-gap closure through terminal 22, with no upper bound on dimension or exponents.
 - A private variable on each side and shared curvature at least 4 log 8 give all-terminal closure. Mirrored profiles with paired equal positive Gamma shapes have simple unit-circle roots at each individual order; generic degreewise composition does not transfer consecutive coprimality.
 - Arbitrary supports are covered through terminal five, and mirrored supports through terminal six. One mirrored unit-gap pair and a constant plus any monomial of total degree up to three are covered at every order. An absolute unevaluated terminal cutoff is proved for all constant-plus-monomial profiles.
+- At every terminal the explicit weak-curvature bound and the explicit large-outer-loss bound cover endpoint ranges. Strong diffuse curvature gives strict interlacing uniformly in degree, and diffuse coprimality eventually holds at every fixed positive s. For fully shared profiles with bounded midpoint curvature, the coefficient-phase link is uniform across degrees. For a fixed fully shared support, the conditional contour has a two-sheet stationary map, with eventual exclusion near noncusp real scales and on bounded cusp windows.
 
 Tracked obligations (computed states):
 

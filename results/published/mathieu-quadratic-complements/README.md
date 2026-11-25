@@ -1,6 +1,6 @@
 # The Mathieu property for quadratic complements
 
-**Unpublished manuscript, ready for mathematical review**
+**Under review at Hexagon.** Reserved identifier `hexagon:2611.01050v2`. Updated November 25, 2026.
 
 The normalized rotation-and-scaling trace on a nondegenerate quadratic
 complement in characteristic zero has a Mathieu–Zhao kernel exactly in
@@ -42,10 +42,10 @@ The single source file contains the bibliography and builds on its own.
 ## Proof and review
 
 The written arguments are in the paper and the supporting research notes
-on the [dimension classification](../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md),
-[rank-two moments](../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md),
-[sharp multiplier bounds](../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_MULTIPLIER_BOUNDS.md),
-and [isotropic counterexamples](../../research/foundations/extended-geometry/ISOTROPIC_QUADRATIC_COMPLEMENT_COUNTEREXAMPLES.md).
+on the [dimension classification](../../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_DIMENSION_CLASSIFICATION.md),
+[rank-two moments](../../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_UNIFORM_NORMALIZER_COUNTEREXAMPLES.md),
+[sharp multiplier bounds](../../../research/foundations/extended-geometry/QUADRATIC_COMPLEMENT_SHARP_MULTIPLIER_BOUNDS.md),
+and [isotropic counterexamples](../../../research/foundations/extended-geometry/ISOTROPIC_QUADRATIC_COMPLEMENT_COUNTEREXAMPLES.md).
 The verification record pins the revised edition and records the bounded
 arithmetic checks and PDF-only internal review. External specialist review
 and independent external replay remain open.

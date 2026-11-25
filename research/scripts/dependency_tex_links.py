@@ -11,6 +11,8 @@ import os
 from pathlib import Path, PurePosixPath, PureWindowsPath
 import re
 
+from publication_paths import is_deposited_path
+
 CLAIM_ENVS = {"theorem", "lemma", "proposition", "corollary", "claim", "assertion",
               "thm", "lem", "prop", "cor"}
 CLAIM_LABEL = re.compile(r"^(?:thm|lem|prop|cor|claim|assert)(?::|[-_.])", re.I)
@@ -197,11 +199,14 @@ def _paths(data: dict, graph) -> list[Path]:
         if PurePosixPath(value).is_absolute() or PureWindowsPath(value).drive:
             continue
         path = (graph.root / value).resolve()
+        if not path.is_relative_to(graph.repository):
+            continue
+        parts = path.relative_to(graph.repository).parts
         # Deposited snapshots and primary-source mirrors are evidence leaves,
         # not another current paper whose entire internal proof is inventoried.
-        if "published" in path.parts or "sources" in path.parts:
+        if is_deposited_path(parts) or "sources" in parts:
             continue
-        if path.is_relative_to(graph.repository) and path.suffix == ".tex" and path.is_file():
+        if path.suffix == ".tex" and path.is_file():
             paths.append(path)
     return sorted(set(paths))
 

@@ -1958,3 +1958,249 @@ give divisibility per row of order at most \(L D_L^{1/m}\).
 With \(M\) fixed and \(m\ge2\) these bounds cannot force
 rank drop. The specialization method handles repeated
 weights by counting the exceptional specializations.
+
+### An exclusion using two roots and projective row heights
+
+Keep the profile of the two-root specialization example, changing only \(\delta\) to \(47/5000=0.0094\) in the definitions of \(r_0,r_1,r_2\). Keep \(\sigma=1/500\), the same two free groups, and the same modulus letter and shallow record. The rational wider height now has coefficient \(E=13/15000\), and the normalized grouped-root heights are still \(h_1=1/4,\ h_2=1/12\). The two-root chart budget \(\mu+2b_Q<c\) still holds.
+
+Take \(M=66\). Center each horizontal rectangle at the same horizontal point. For \(|j-33|\le26\), take widths \((0.26,0.655)\); for the other fourteen levels take widths \((0.135,0.61)\). Thus
+\[
+ \mathcal A=53(0.26)(0.655)+14(0.135)(0.61)
+             =\frac{25447}{2500}=10.1788.
+\]
+The first group's projection width at residual \(u\) is
+\(\max(0.26+52|u|,0.135+66|u|)\). Its atom has \(u=0\), and its diffuse residual \(u\) is uniform on \([\delta-\sigma,\delta+\sigma]\), so integrate at breakpoint \((0.26-0.135)/14\). The second group's width is \(\max(0.655+52|u|,0.61+66|u|)\), and its diffuse residual satisfies \(|u|\le0.002\), where the first branch applies. Hence
+\[
+ B(P)=\frac{5562169}{33600000}<0.165541,\qquad
+ \sqrt{2(0.99)\mathcal A}\in(4.4893,4.4894).
+\]
+With \(b=0.05535\) and \(\kappa=4.5\), one has \(y<\kappa\) and \((2/3)by>0.16565\). Thus (TN1) with the row bound (TN3), together with (TN2) exclude this explicit profile.
+
+For comparison, with the same two grouped roots, no rectangular Taylor criterion (TN1) has enough height room, for any permitted shallow divisor and modulus root selection. For any such choice write \(b=b_Q\) (the largest permitted bound for that selector) and \(C=2/3,\ K_0=\sqrt{2h_1h_2}=1/\sqrt{24}\). The chart budget requires \(\mu+2b<c\). The available numerical modulus weight gives \(\kappa b\le w\le4.6\mu\), since all modulus degrees have scaled support at most \(4.6\) and there is no escaped moment. At a putative rectangular determinant, AM–GM gives
+\[
+ E<\frac{\kappa}{M}\left(Cb-\frac{K_0}{\sqrt{M+1}}\right).
+\]
+Indeed for \(y=\sqrt{2\alpha(M+1)r_1r_2}<\kappa\), the narrow height contribution \(h_1r_1+h_2r_2\) is at least \(K_0 y/\sqrt{\alpha(M+1)}\). Put \(x=K_0/(Cb\sqrt{M+1})\in(0,1)\). It follows that
+\[
+ E<
+ 4.6\, C^3(c-2b)b^2
+ \frac{x^2(1-x)}{K_0^2-C^2 b^2x^2}.
+\]
+Use \((c-2b)b^2\le c^3/27\) and \(C^2b^2/K_0^2\le2/27\). For \(x\le37/50\) bound the numerator factor by \(4/27\) and the denominator factor below by \(1-(2/27)(37/50)^2\). For \(x>37/50\) use that \(x^2(1-x)\) decreases on this interval, and bound the denominator factor below by \(1-2/27\). The resulting respective upper bounds on \(E\) are \(0.0008660791\) and \(0.0008624588\), both strictly below \(13/15000\). The comparison fixes the two target groups.
+
+## Counting specialization values together with their residue classes
+
+In the setting of (TN4), the count satisfies
+\[
+ d\le\mu+\max\left(
+    b_Q+2c-t_1,\ 2b_Q+2c-\min_{j\ge2}t_j
+ \right)
+ \tag{TC1}
+\]
+up to arbitrarily small extraction and truncation losses. For \(m=2\)
+these two terms inside the maximum are \(b_Q+t_2\) and \(2b_Q+t_1\).
+The bound also applies if some of the outside labels have already been
+frozen. In that case \(t_j\) are the retained outside masses, and the
+cost \(2c-\sum_j t_j\) of freezing the rest is included in (TC1).
+Freezing atomic mass adds its own root cost.
+
+For the specialization where the polynomial survives, choose the
+exact \(z_2,\ldots,z_m\) from their full dictionaries and the residue
+of \(z_1\). Each exact rational value is a unit at the modulus primes and
+determines its own residue. These choices determine
+the full chart and hence its fixed polynomial. The breakpoint argument
+recovers the group-one outside factors with arbitrarily small loss.
+The normalized cost after fixing the modulus and before counting
+any frozen outside labels is \(b_Q+\sum_{j\ge2}t_j\).
+
+For the exceptional specialization, let \(S_{i,r}\) be the subdictionary
+of exact \(z_i\) in the residue \(r\bmod Q\), and \(S_i\) the full
+dictionary, for \(i\ge2\). On every chart
+\((r_1,\ldots,r_m)\), use the same polynomial zero estimate as in
+(TN5) with these subdictionaries. The bound is a constant times
+\(\sum_{j\ge2}\prod_{i\ge2,\,i\ne j}|S_{i,r_i}|\), even though the
+coefficient polynomial itself may vary with the chart. Sum over the
+charts. For each \(j\) the product is independent of \(r_1,r_j\),
+giving at most \(Q^2\) for those choices. For each other \(i\) its
+sum is exactly \(|S_i|\). The exceptional vectors consequently have
+normalized cost at most
+\(2b_Q+\sum_{i\ge2}t_i-\min_{j\ge2}t_j\). Their exact values recover
+the corresponding outside labels up to divisor allocations. Adding
+\(t_1\) for the remaining outside labels and applying (EN2) proves
+(TC1).
+
+### An endpoint profile excluded by the improved chart count
+
+Put
+\[
+ \rho=\frac{13-\sqrt5}{82}=\frac1{6+\phi},\quad
+ d_1=\frac3{50},\quad d_2=\frac8{75},\quad
+ \delta=\frac3{250},\quad \sigma=\frac1{500},
+ \qquad \phi=\frac{1+\sqrt5}{2}.
+\]
+Set
+\[
+ r_0=\frac{75-(9/2)\delta}{17+8\rho},\qquad
+ r_1=r_0+\delta,\qquad r_2=\rho r_0 .
+\]
+Give the two free letters identical measures
+\[
+ \nu_U=\nu_V=c\delta_{r_0}
+        +d_1\operatorname{Unif}[r_1-\sigma,r_1+\sigma]
+        +d_2\operatorname{Unif}[r_2-\sigma,r_2+\sigma],
+\]
+and give the modulus letter
+\[
+ \nu_T=c\delta_{657/160}
+        +\tfrac1{16}\operatorname{Unif}[4.5,4.6]
+        +\tfrac5{48}\operatorname{Unif}[0,0.6].
+\]
+All weights sum to \(1/3\), all first moments are one, and the nonatomic masses are \(c\). In fact \((c+d_1)r_0+d_1\delta+d_2r_2=1\). Group 1 contains the atom at \(r_0\) and the interval around \(r_1\), grouped at \(r_0\); group 2 contains the interval around \(r_2\), grouped at \(r_2\). The resulting parameters are
+\[
+ t_1=2d_1=0.12,\quad t_2=2d_2=\frac{16}{75},\quad
+ h_1=\frac{17}{75},\quad h_2=\frac8{75},\quad
+ E=d_1\delta+d_2\sigma/2=\frac{31}{37500}.
+\]
+Select modulus roots of mass \(0.0592\) from the nonatomic \([4.5,4.6]\) band on \(T\). The band has mass \(1/16>0.0592\). Its radical gives \(b\ge0.05915,\ b_Q\le0.05925,\ \mu\le0.05925\), with arbitrarily small extraction losses and \(\kappa=4.5\).
+
+In the rectangular first determinant take \(\alpha=0.99,\ M=69\) and horizontal degree coefficients \(r_1'=0.26,\ r_2'=0.55\). Then
+\[
+ y=\sqrt{2(0.99)(70)(0.26)(0.55)}
+      =\sqrt{19.8198}\in(4.451,4.453),\qquad
+ B=0.17464<\tfrac23(0.05915)y.
+\]
+The nonexceptional count costs at most \(0.1185+16/75<1/3\), and the exceptional count at most \(3(0.05925)+0.12<1/3\). Thus (TC1) excludes the profile at \(d=1/3\) and \(\Gamma=1/2\).
+
+The old budget \(\mu+2b_Q+\max(t_1,t_2)<1/3\) cannot prove a saving by the rectangular first determinant with these same groups even after optimizing the determinant parameters, full modulus selection and shallow divisor. In fact it requires \(\mu+2b<0.12\) with \(b\le b_Q\), and \(\kappa b\le w\le4.6\mu\). Put \(C=2/3\), \(K^2=2h_1h_2\), and \(x=K/(Cb\sqrt{M+1})\in(0,1)\). AM--GM on the narrow height terms, followed by the Taylor comparison and its precision condition, requires
+\[
+ E<4.6 C^3(0.12-2b)b^2
+       \frac{x^2(1-x)}{K^2-C^2 b^2 x^2}
+ \le \frac{4.6 C^3(0.12)^3(4/729)}
+              {K^2-C^2(0.12)^2/4}<0.000277 .
+\]
+This uses \((0.12-2b)b^2\le(0.12)^3/27\) and \(x^2(1-x)\le4/27\). It is incompatible with \(E=31/37500\).
+
+### One-root compatibility of the same profile
+
+In every orientation of these three profiles the maximal supplying tail values satisfy
+\[
+ \kappa p\le\frac{23}{80},\qquad
+ \kappa p^2\le\frac{23}{1280}.
+ \tag{TC2}
+\]
+For \(T\) this follows by considering the \([0,0.6]\) component and then the mass \(1/16\) at degrees at most \(4.6\). For the two identical free letters the lower band is below \(0.55\), and above it the tail mass is at most \(3/50\) at degree at most \(4.17\).
+
+Recall the general necessary product test for a successful sparse projective one-group determinant. If the horizontal volume is \(\mathcal A\), the largest horizontal slice width \(R\), and the gap between extreme wide indices \(J\), then the width height \(B\) satisfies \(B\ge hR\) and \(B\ge J E'\), where \(E'\) is the degree discrepancy at the induced shifted mesh spacing. Also \(\mathcal A\le(J+1)R\). Thus \(B<p\mathcal A/2\), \(\mathcal A<\kappa\) would give \(h<p(J+1)/2\) and \(E'<\kappa p/(2J)\). For the positive multipliers of (PS1), \(h\ge1/3\), so \(J\ge4\).
+A nonpositive induced mesh gives \(E'\ge1\) and is incompatible with the width bound.
+For a positive mesh (TC2) now gives
+\[
+ E'<23/640,\qquad E'h<\frac5{16}\,\frac{23}{1280}=\frac{23}{4096}.
+ \tag{TC3}
+\]
+
+On either free letter we prove \(E'/a\ge0.00588\) for every positive induced mesh \(a\) and every positive assignment. For \(a\le0.004\), integrate complete mesh periods in both diffuse intervals to get \(E'/a\ge c/8\). For \(0.004<a\le0.024\), minimum average distance in a uniform interval of length \(0.004\) gives numerical \(E'\ge0.001c=1/6000\), so \(E'/a>0.00588\). For \(a\ge1\), the lower interval lies below the least positive mesh point and on its own gives the result.
+
+Suppose instead \(0.024<a<1\) and \(E'/a<0.00588\). Both diffuse intervals lie entirely in a single nearest-integer phase cell. Indeed their mean distances to the mesh modulo one are respectively at most \(0.00588/d_1\) and \(0.00588/d_2\), so the center's distance differs by at most \(\sigma/(2a)\le1/24\) from this upper bound; any point in the interval differs in turn by at most \(\sigma/a\le1/12\) from its center. These sums are strictly below \(1/2\), which excludes touching a nearest-cell boundary. Jensen's inequality therefore lower bounds each interval's contribution by its center distance, with no rounding loss.
+
+Put \(x=r_0/a\), and let \(n\) be the nearest integer. The phase discrepancy from the atom implies \(|x-n|<441/12500\). Since \(\delta/a<1/2\), the phase distances of the atom and the nearby upper center sum to at least \(\delta/a\). Using \(c-d_1=d_2\), and \(\rho<1\), yields
+\[
+ E'/a\ge (d_1\delta/r_0)x+d_2(\|x\|+\|\rho x\|)
+       \ge \frac9{52000}\left(n-\frac{441}{12500}\right)
+                            +\frac8{75}\|\rho n\|.
+\]
+Also the first term \((d_1\delta/r_0)x\) before replacing \(x\) by \(n\) implies \(x<34\), hence \(4\le n\le34\). Use the rational interval \(0.13126746<\rho<0.13126747\), obtained by squaring for the expression \((13-\sqrt5)/82\). For each \(n=4,\ldots,34\), replace \(\|\rho n\|\) by the smaller of the two endpoint distances, or zero if the rational interval contains an integer. The minimum of the resulting expression is at \(n=15\), with exact value \(57480433/9750000000>0.00588\). This finite check uses only the displayed endpoints and integer floors. It contradicts the hypothetical small discrepancy.
+
+On \(T\), the diffuse interval \([0,0.6]\) alone gives \(E'/a\ge(5/48)/8\) when \(a\le0.6\) by complete periods, and for \(a>0.6\) it lies entirely below the first positive mesh point and gives more. Thus all orientations have \(E'h\ge (1-E')E'/a\ge(1-23/640)(0.00588)>23/4096\) under the putative \(E'\) bound in (TC3). This proves compatibility with (PS1) in every orientation.
+
+### The broad symmetric profile under the improved chart budget
+
+Let all three profiles be \(c\delta_3+c\operatorname{Unif}[2,4]\)
+with \(c=1/6\). In (TN4) choose the same disjoint groups on both
+free letters and put all retained atoms in group one. The projective
+determinant and chart criterion (TC1) are incompatible for every
+fixed \(m\ge2\), even after freezing some diffuse or atomic mass and
+choosing a shallow divisor. The width argument below also permits
+nonzero integer multipliers on the disjoint groups, conditional on
+the same determinant and chart costs.
+
+Write \(d_i\) for the retained diffuse mass in group \(i\) on each
+free letter, and \(\beta\) for the omitted atom mass per free letter.
+Its total retained group mass is \(\ell_i=d_i+(c-\beta)\mathbf1_{i=1}\).
+Let \(b\) be the shallow record weight, which may be used as the
+determinant lower bound by taking limits. The modulus has numerical
+weight \(w\) with \(\kappa b\le w\le4\mu\). The upper bound follows
+from the support bound and convergence of the full first moment.
+For a strict saving from (TC1), one needs
+\[
+ d_1>\beta+x,\qquad d_i>\beta+y_0\ (i\ge2),\qquad
+ x=(\mu+b)/2,\quad y_0=(\mu+2b)/2 .
+ \tag{TC4}
+\]
+In particular \(b<c\) and \(b>0\) is required by the first determinant.
+
+Let \(\mathcal A\) be the sum of horizontal slice volumes of the sparse
+support and \(J\) its gap in the wider index. For the largest
+within-slice width \(X_i\) in each narrow coordinate,
+\[
+ \mathcal A\le(J+1)\prod_i X_i,\qquad
+ B\ge\sum_i h_iX_i,\qquad h_i=\int_{\text{group }i}|i_i(r)|\,d\nu(r).
+\]
+Each group's width is bounded from below by the projection of two
+monomials in a common slice, and the group assignments have disjoint
+supports. If \(J>0\), two points in the extreme slices give
+\(B\ge J\sum_i E_i\), where \(E_i\) is the integral of
+\(\lvert r-\widetilde a_i i_i(r)\rvert\) on group \(i\) for the
+corresponding shifted real base \(\widetilde a_i\).
+
+For each group \(h_i\ge\ell_i\) and \(E_i h_i\ge (3/4)\ell_i d_i^2\).
+If \(E_i\ge\ell_i\) the latter follows from \(\ell_i\ge d_i\)
+and \(d_i\le c\). Otherwise \(a=|\widetilde a_i|>0\) and
+\(a h_i\ge2\ell_i-E_i>\ell_i\) since \(r\ge2\).
+The discrepancy on diffuse mass is at least its distance to
+\(a\mathbb Z\). For \(a\le2\), the folded phase density on
+\(\|r/a\|\) from the diffuse interval is at most \((2+a)/6\)
+by counting preimages of the two signs. Thus the minimum
+distance integral at retained mass \(d_i\) is at least
+\(3 a d_i^2/(2+a)\ge(3/4)a d_i^2\). For \(a\ge2\), the phase
+interval spans at most one period, so the numerical distance
+density is at most \(1/6\). The integral is at least \(3d_i^2\).
+This proves the scalar bound in both ranges. Using (TC4) gives
+\[
+ E\prod_i h_i\ge
+ \tfrac34(c+x)y_0^{m-1}\bigl(x^2+(m-1)y_0^2\bigr),
+ \qquad E=\sum_i E_i .
+ \tag{TC5}
+\]
+
+By the two Taylor conditions in (TN4) and the arithmetic-geometric
+mean bound on \(\sum h_iX_i\), one needs
+\[
+ \prod_i h_i < \frac{m!}{(m+1)^m}(J+1)b^m .
+\]
+If \(J=0\), this fails since \(\prod_i h_i\ge(c+x)y_0^{m-1}>b^m\).
+For \(J>0\) use \(JE\le B<mb\kappa/(m+1)\) and
+\(\kappa b\le4\mu\) to get
+\[
+ E\prod_i h_i<\frac{4m m!}{(m+1)^{m+1}}\mu b^m(1+1/J).
+ \tag{TC6}
+\]
+Set \(t=\mu/b\) and \(C_m=(m+1)^m(1+t/2)^{m-1}/m!\).
+The bound on \(\prod_i h_i\) gives \(J+1>C_m(c+x)/b\).
+Consequently
+\((c+x)/(1+1/J)>c+x-b/C_m\ge c\), since \(C_m\ge2\)
+and \(x\ge b/2\). Divide (TC5) and (TC6) by
+\(b^{m+1}(1+1/J)\). A necessary condition is
+\[
+ \frac18\left(\frac{t+2}{2}\right)^{m-1}
+     \frac{(t+1)^2+(m-1)(t+2)^2}{4}
+ < \frac{4m m!}{(m+1)^{m+1}}t .
+\]
+The left side increases with \(m\ge2\) while the coefficient of \(t\)
+on the right decreases. For \(m=2\), the reverse strict inequality
+is equivalent to
+\(P(t)=54t^3+270t^2-565t+270>0\).
+Indeed \(P(5/6)=215/12\), \(P'(5/6)=-5/2\), and
+\(P''(t)\ge540\) on \(t\ge0\), so \(P(t)\ge215/12-25/4320>0\).
+Thus the improved chart criterion is still compatible with this
+formal profile. The calculation concerns the stated determinant
+and specialization budget with identical group assignments.

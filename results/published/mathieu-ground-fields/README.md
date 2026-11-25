@@ -10,6 +10,6 @@ The [deposited complex classification](https://hexagonmath.org/2611.00556v1) sup
 
 ## Hexagon submission
 
-Upload the source ZIP with entry point `main.tex`. The metadata includes the title, author and ORCID, plain-text abstract, suggested subject and cross-lists, and a provenance draft. The final contributor and human-understanding declarations and the license are author inputs. [Hexagon submission](https://hexagonmath.org/submit)
+**Under review at Hexagon.** Reserved identifier `hexagon:2611.01051v1`. Updated November 25, 2026.
 
 Build from an extracted ZIP with `latexmk -pdf -jobname=mathieu-ground-fields -interaction=nonstopmode -halt-on-error main.tex`. The verification record identifies the reviewed edition and the scope of the proof audit and exact checks.

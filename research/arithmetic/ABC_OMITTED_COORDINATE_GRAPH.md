@@ -3492,3 +3492,83 @@ For ordinary boxes take the nonzero masses
 They sum to one, with numerical heights \(149/300,1,1\). Release \(a_3,b_4\), lock \(c_3\), and take \(g=1\). This gives \(F=49/100\), \(P=3\), \(Q=4\), \(u=7/10\), and \(t=3/50\). For these choices both the previous sliced and unsliced bounds return \(11/20\). The new nonaxial allowance \(t/(2PQ)=1/400\) gives \(D\le209/400<21/40\). Both axial allowances are negative.
 
 For the short strip use two tall letters \(A,B\). Take \(A_2=28/100,A_3=12/100,A_4=2/100\), \(B_4=10/100,B_5=12/100\), and on the short letter \(C_1=28/100,C_2=1/100,C_3=7/100\), with other masses zero. The two tall heights are one and the short height is \(51/100\). Release \(A_3,B_4\) and lock \(C_3\). The complement on \(C\) has weight \(3/10\), so the clearance is \(u=7/10\), while the actual modulus weight is \(21/100\). The previous bound is \(11/20\), and (RSP) again gives \(209/400\) for these choices.
+
+### Applying the root spacing to mixed-power repeats
+
+In the nonaxial part of (S), the compressed affine line
+argument is uniform in whether the two original groups
+come from opposite letters or from two copies of the same
+letter. The origin line still carries the old repeat
+exponent \(s/\operatorname{lcm}(p,q)\). Under the same
+guard as (S) the sliced nonaxis bound therefore improves to
+\[
+ t/2+\min\{r_1/Q,r_2/P,t/(2PQ)\}
+\]
+when two independent vectors are present.
+
+For the exact comparison in the unequal-power repeat
+section, keep the same \(b_6\)-plus-tail lock and the same
+degree-five and degree-six releases. Here \(t=3/50\) and
+\(PQ=30\), so the new sliced gap is \(31/1000\), above the
+origin gap \(1/100\). This gives \(E_a=187/600\).
+Keeping \(E_c=539/1000\) and \(f=103/1000\), the
+separated-diagonal count has exponent \(317/600\), below
+the earlier \(641/1200\) for those choices.
+
+## Averaging root spacing over lattice lines
+
+Keep the notation of (RSP), with lifted powers \(P,Q\), root scales \(X^{r_1},X^{r_2}\), and projected area exponent \(t\). The bound for nonaxial lines off the origin in either the ordinary box or the short strip is the smaller of the previous allowances and
+\[
+ \frac t2+\min\left\{
+  \frac{(t/2-(P-1)r_1)_+}{Q},
+  \frac{(t/2-(Q-1)r_2)_+}{P}\right\}.
+ \tag{ARSP}
+\]
+In the primitive count add the frozen mass \(F\), preserve the two axial allowances and the origin line, and use zero beyond the frozen mass when \(t<0\). In the repeat count preserve the separate collinear allowance.
+
+### Projected congruence moduli
+
+Fix a ratio lattice \(\Lambda=\{(Y,Z)\in\mathbb Z^2:Y\equiv\lambda Z\bmod M\}\), with \(\lambda\) a unit. Both coordinate projections of \(\Lambda\) onto \(\mathbb Z\) are surjective. Let \((v,w)\) be a lattice basis, with \(v\) shortest after the same real normalization as in (RSP). Surjectivity gives \(\gcd(v_i,w_i)=1\) for \(i=1,2\). The line with coordinate \(j\in\mathbb Z\) consists of the points \(n v+jw\), with varying \(n\in\mathbb Z\). Write \(\ell\) for the normalized length of \(v\), \(H\) for the normalized spacing of these lines, and \(\Delta=\ell H\) for the normalized covolume. Both \(\ell,H\) are bounded in the rank-two case, \(H\gg\ell\), and any occupied line has \(|j|\ll H^{-1}\). The origin line \(j=0\) is handled by the existing primitive or collinear estimate.
+
+If \(v_i\ne0\), put \(d_i=|v_i|\) and let \(k=P\) or \(Q\), according to the coordinate. Its lifted value lies in the single residue \(j w_i\bmod d_i\). At \(p^a\Vert d_i\), the residue has truncated valuation \(\min(a,v_p(j))\), since \(w_i\) is a unit there. The root congruence lemma underlying (RSP) therefore gives \(X^{o(1)}\) classes, with common reduced modulus at least
+\[
+ \frac{d_i}{\gcd(d_i,j)^{1-1/k}} .
+\]
+Indeed if \(s=v_p(j)<a\), a solution requires \(s=k\nu\), and the reduced exponent is \(a-(k-1)\nu\). If \(v_p(j)\ge a\), the reduced exponent is \(\lceil a/k\rceil\). These local moduli combine by CRT. The number of classes only uses \(d_i\ll X^{O(1)}\).
+
+The changing lifted coordinate on a line has width \(O(d_i/\ell)\). Its root is dyadic, so the mean value theorem gives original root width \(O(d_i/(\ell X^{(k-1)r_i}))\). After fixing a reduced class and applying integer translation and division by its modulus, the transformed root has box size
+\[
+ O\!\left(1+\frac{\gcd(d_i,j)^{1-1/k}}{\ell X^{(k-1)r_i}}\right).
+\]
+
+### Averaging the curve counts
+
+On a nonaxial line off the origin, after these two substitutions the plane curve is absolutely irreducible and has nonzero pure monomials of degrees \(P,Q\), by the same Eisenstein argument as in (RSP). The weighted plane bound can use either width, raised to the reciprocal of the opposite monomial degree. Write \(k'\) for that opposite degree. For the chosen coordinate \(i\), the per-line bound is
+\[
+ O_\varepsilon\!\left(
+ X^\varepsilon\!\left[1+
+  \left(\ell^{-1}X^{-(k-1)r_i}\right)^{1/k'}
+    \gcd(d_i,j)^{(1-1/k)/k'}\right]\right).
+\]
+This uses the nonnegative exponent \((1-1/k)/k'\le1\). For \(0\le b\le1\),
+\[
+ \sum_{1\le |j|\le J}\gcd(d,j)^b
+ \le 2\sum_{m\mid d}m^b\lfloor J/m\rfloor
+ \le 2J\tau(d).
+\]
+The interval for \(j\) is centered at zero because the normalized box is bounded about the origin. We omit \(j=0\) before using this estimate.
+
+Sum the individual curve counts, use \(H^{-1}=\ell/\Delta\) and \(\ell\ll\sqrt\Delta\), and absorb the divisor factor. The result is
+\[
+ O_\varepsilon\!\left(
+ X^\varepsilon\!\left[
+ \Delta^{-1/2}+
+ \Delta^{-(1+1/k')/2} X^{-(k-1)r_i/k'}\right]\right).
+\]
+Since \(\Delta\gg X^{-t}\), the exponent is \(t/2+(t/2-(k-1)r_i)_+/k'\). Use the smaller of the two coordinate choices and the previous line estimates. The same proof applies to the real strip, because its only use of the normalized geometry is the bound on \(j\), the length bound on lattice steps on each line, and the covolume calculation. An axial line has the original full-modulus bound on its changing root because one coordinate is fixed. The argument neither counts the origin line by averaging nor assumes that its lifted roots are primitive when treating repeats. [Browning–Heath-Brown, equation (3)](https://arxiv.org/pdf/math/0506497)
+
+### Exact comparisons after averaging
+
+At the previous ordinary or short-strip witness for (RSP), \(F=49/100\), \(P=3,Q=4\), \(r_1=3/25,r_2=1/10\), and \(t=3/50\). Since \(2r_1>t/2\), (ARSP) gives the nonaxial exponent \(t/2=3/100\). Both axial allowances remain negative, giving \(D\le13/25\). The previous spacing bound on the same groups was \(209/400\).
+
+At the mixed-power repeat example locking the degree-six block and the tail of \(b\), one has \(P=5,Q=6\), \(r_1=19/250,r_2=19/300\), and \(t=3/50\). The new nonaxial exponent is \(3/100\), above the separate collinear allowance \(1/100\). This improves the repeat exponent on \(a\) from \(187/600\) to \(233/750\). With the same \(E_c=539/1000\) and frozen cost \(103/1000\), the best separated-diagonal exponent from these choices becomes \(3167/6000\).

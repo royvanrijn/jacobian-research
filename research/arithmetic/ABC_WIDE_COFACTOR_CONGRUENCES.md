@@ -487,3 +487,282 @@ are at least \(d\), the upper bound follows from their
 sum being one. Thus for \(d\ge1/3-\xi\), every mass is in
 \([1/3-4\xi,1/3+2\xi]\), and the total absolute
 deviation from \(1/3\) is at most \(8\xi\).
+
+## A global inequality for a low-mass letter and diffuse degrees
+
+For every limiting small-budget box with \(L\) comparable to its
+radical budget, and each permutation \(A,B,C\) of its letters,
+\[
+ d\le \min_C\max\{l_C,\ c_C+\min_{T\ne C}c_T\}.
+ \tag{LQ8}
+\]
+In particular, if \(l_C=s<1/3\) and \(d=(1+s)/4\), then
+\[
+ l_A=l_B=(1-s)/2,\qquad
+ \min(c_A,c_B)\ge d-c_C\ge(1-3s)/4,\qquad
+ \Gamma\ge(1-s)/2.
+ \tag{LQ9}
+\]
+Each of \(A,B\) has positive numerical height and neither is finite-scale.
+
+To prove (LQ8) it suffices to consider \(s=l_C<d\).
+Call a letter releasable if it consists of boundedly many roots of
+height \(X^{O(L)}\) and a cofactor of numerical height \(X^{o(1)}\).
+A finite-scale letter is releasable by grouping its shrinking degree
+windows. A letter of numerical height zero is releasable with only
+the cofactor. Suppose \(A\) is releasable. Freeze the complete \(C\)
+at normalized cost \(s\). If \(B\) has a positive-weight full block of
+cost \(\mu<d-s\) and fullness comparable to \(1/L\), (GW) releases \(A\)
+at cost \(s+\mu\). This would contradict \(d>s+\mu\). Hence the
+high-block stopping argument in the proof of (LQ1) makes \(B\)
+releasable too.
+
+If \(C\) has positive height, use a positive-weight full modulus on
+\(C\) at cost at most \(s\), and release the complete ratio of \(A,B\)
+by (GW). If \(C\) has height zero, \(A,B\) are the two tall letters,
+whose relative difference is \(X^{-1+o(1)}\). In this case the strip
+count (RUW1) releases their ratio at arbitrarily small cost. The
+complete ratio determines the two coprime values and hence the triple.
+Both cases contradict \(d>s\). The same argument applies with \(A,B\)
+interchanged.
+
+Since neither \(A\) nor \(B\) is releasable, the high-block stopping
+argument gives positive-weight full blocks of arbitrarily small fixed
+normalized cost on each. Apply (GE1) with the modulus on \(B\) to get
+\(d\le c_C+c_A\), and then with the modulus on \(A\) to get
+\(d\le c_C+c_B\). In each application freeze the complement of the
+selected atom windows on the free letters, including any escaped
+first moment. This proves (LQ8). At equality in (LQ1) with \(s<1/3\),
+the bounds \(l_A,l_B\le1-2d\) and \(l_A+l_B=1-s\) force the stated
+masses. Thus \(\Gamma\ge 2d-c_C\ge(1-s)/2\), proving (LQ9).
+For \(s=0\), each opposite letter has root mass \(1/2\) and nonatomic
+mass at least \(1/4\).
+
+### A saving when an opposite letter concentrates in finitely many bands
+
+Fix \(0\le\vartheta<1/3\), a positive \(b\), and a positive integer \(K\).
+There are \(\delta,\eta,\lambda_*>0\) such that the following triples
+of height at most \(X\) have count
+\(O_{\vartheta,b,K,\lambda,\varepsilon}
+(X^{((1+\vartheta)/4-\delta)\lambda+\varepsilon})\)
+for each fixed \(0<\lambda\le\lambda_*\).
+Require \(\operatorname{rad}(abc)<c^\lambda\) and
+\(\operatorname{rad}(C)\le c^{\vartheta\lambda}\). On a different
+letter, require \(\lambda v_p\) for primes of total logarithmic root
+mass at least \(((1+\vartheta)/4+b)\lambda\log c\) to lie in
+the union of at most \(K\) intervals of length \(\eta\).
+
+Indeed, if the saving fails along vanishing \(\delta,\eta,\lambda\),
+(LQ1) and \(L_C\le(\vartheta+o(1))\lambda\) force \(L/\lambda\to1\),
+\(l_C\to\vartheta\), and \(d\to(1+\vartheta)/4\) on the selected
+boxes. The captured root mass survives the anatomic truncation.
+More explicitly, choose compression with \(k\lambda\to\infty\).
+The logarithmic radical contribution at degrees at least \(k\) is
+at most \((\log c)/k=o(\lambda\log c)\), and the subpower losses
+at fixed budget can be taken \(o(\lambda)\) before the small-budget
+limit. The other indices retain their exact valuations. If the intervals
+vary with the triple, fix the captured subset of exact indices on
+each truncated box at finite cost before taking the height limit.
+The mass bounds give tightness, so the captured submeasure has a
+further weak limit supported on at most \(K\) points. Interval centers
+that escape every compact interval contribute zero mass in that limit.
+The opposite letter must therefore have atomic mass at least
+\((1+\vartheta)/4+b\). But (LQ9) bounds its atomic mass by
+\((1-\vartheta)/2-(1-3\vartheta)/4=(1+\vartheta)/4\).
+
+
+### A saving with an opposite letter near its fullness threshold
+
+Fix \(0\le\vartheta_0<1/3\). For \(0\le\vartheta\le\vartheta_0\),
+consider the same radical budget and the cap
+\(\operatorname{rad}(C)\le c^{\vartheta\lambda}\).
+On another letter \(A\) of height \(h_A=\log A/\log c\),
+require the logarithmic radical at scaled degrees
+\(\lambda v_p(A)<2h_A/(1-\vartheta)-\tau\) to be at most
+\(\tau\lambda\log c\). This includes \(A\) \(p\)-full with
+\(p\lambda\ge2h_A/(1-\vartheta)-\tau\).
+There are \(\delta,\tau,\lambda_*>0\) depending only on
+\(\vartheta_0\) such that at fixed \(0<\lambda\le\lambda_*\) the
+count is \(O(X^{((1+\vartheta)/4-\delta)\lambda+\varepsilon})\).
+
+Otherwise let the three allowances tend to zero and pass to
+\(\vartheta\to\vartheta^*\le\vartheta_0\) and \(h_A\to h_A^*\).
+The same box bounds force equality in (LQ1) with \(l_C=\vartheta^*\)
+and \(l_A=(1-\vartheta^*)/2\). If \(h_A^*>0\), the exact degree
+positions and the low-degree root bound put the measure of \(A\)
+on \([2h_A^*/(1-\vartheta^*),\infty)\). Its total mass and
+first-moment upper bound force a single atom at the threshold
+with the entire numerical weight. It is then releasable.
+If \(h_A^*=0\), it is releasable by its vanishing numerical height.
+Both contradict the proof of (LQ8), since \(\vartheta^*<d\).
+
+## Adaptive finite-basis approximation of prime valuations
+
+Let \(T\) be a positive integer in a triple of height \(X_0\),
+and fix a small budget parameter \(\lambda>0\).
+For fixed \(m\ge1\) and \(H>0\), consider the intrinsic condition
+that there exist signed integers \(q_1,\ldots,q_m\) and
+\(m_{j,\ell}\), depending on this value of \(T\), with
+\[
+ \sum_{\ell\mid T}|m_{j,\ell}|\log\ell\le H\lambda\log X_0
+       \quad(1\le j\le m),\qquad
+ \sum_{\ell\mid T}
+ \left|v_\ell(T)-\sum_{j=1}^m q_jm_{j,\ell}\right|\log\ell
+      \le\delta\log X_0.
+ \tag{AB1}
+\]
+Here the sums are over prime divisors of \(T\). The exponent list
+and the primes used in several groups may vary with \(T\) and
+with the height. This condition can be used with the
+bounded-root counting theorems without assuming their
+constants polynomial in variable exponent parameters.
+
+### Turning adaptive data into finitely many exponent lists
+
+At fixed \(\lambda\), choose \(K=\lceil\lambda^{-2}\rceil\).
+On every prime of valuation \(e>K^2\), write
+\(e=K\lfloor e/K\rfloor+(e\bmod K)\). These primes supply
+one new narrow root of height at most \(X_0^{1/K}\) and
+exponent \(K\), with remainder numerical weight at most
+\[
+ \frac{K\sum_{v_\ell(T)>K^2}\log\ell}{\log X_0}\le1/K.
+\]
+They will not be included in the other groups.
+
+Among the remaining primes of valuation \(e\le K^2\),
+discard from the groups those with \(|m_{j,\ell}|>K^2\)
+for some \(j\), or with absolute residual
+\(\left|e-\sum_jq_jm_{j,\ell}\right|>K^2\).
+The product of the discarded actual prime powers has
+numerical weight at most \(mH\lambda+\delta\). In fact
+for the first test, sum the \(m\) inequalities in (AB1)
+and use \(e\le K^2\le |m_{j,\ell}|\) at a witnessing
+index. For the second use \(e\le K^2\) and the residual
+sum in (AB1). Double counting primes in both classes
+only enlarges this upper bound.
+
+On the retained primes, preserve the exact predicted
+exponents \(z_\ell=\sum_j q_j m_{j,\ell}\). The integer
+linear system for this list of predictions has coefficients
+bounded by \(K^2\) and right sides bounded by \(2K^2\).
+It has an integral solution by construction. There is
+another integral solution with all entries
+\(K^{O_m(1)}\), independent of \(X_0\).
+Indeed choose independent rows and an invertible square
+minor in their columns of size their common rank.
+Let \(\Delta\ne0\) be that determinant. Replace the free
+coordinates of an existing integral solution by their
+least nonnegative residues modulo \(|\Delta|\).
+Solve the pivot coordinates by the adjugate formula.
+Each free coordinate change is divisible by \(\Delta\),
+so the pivot changes are integers. The independent
+rows, and hence all rows of the consistent system, are
+still satisfied. Hadamard's bound or the determinant
+expansion and the adjugate formula give
+\(K^{O_m(1)}\) bounds for both free and pivot coordinates.
+In rank zero choose all coordinates zero.
+
+Thus, at fixed \(\lambda\), all resulting exponent
+lists are in a fixed finite set, which may be
+pigeonholed at constant cost before taking the height
+limit. Define positive rational group roots
+\(z_j=\prod_\ell\ell^{m_{j,\ell}}\) on the retained
+primes, keeping their height bound \(X_0^{H\lambda}\).
+One obtains
+\[
+ T=T_{\rm pack}^{K} U\prod_{j=1}^m z_j^{q'_j},
+ \qquad
+ H(T_{\rm pack})\le X_0^{1/K},\qquad
+ H(U)\le X_0^{\,2\delta+mH\lambda+1/K}.
+ \tag{AB2}
+\]
+For \(U\) account for the retained residual from (AB1),
+the discarded actual prime powers, and the packing
+remainder. Thus as \(\lambda,\delta\to0\), this is a
+bounded number of short roots and a wide cofactor of
+vanishing numerical height. The construction still
+works after restricting all prime data to any subset
+of primes, such as those not dividing a fixed gcd.
+
+### Signed amplification with overlapping groups
+
+Whenever the exact positive rational output determines
+the primitive pair or other objects being counted,
+keep one representing tuple per exact output.
+For modular amplification, colour each prime by its
+numerator/denominator sign in that exact output. Every
+numerator and denominator has polynomial height in the
+height parameter, hence its number of distinct primes
+is \(o(\log X)\). Some colouring retains a subpower
+fraction of the sample. On that subfamily products of
+a fixed number \(\ell\) of outputs have no cancellation.
+Each product therefore has only divisor-many
+decompositions into the \(\ell\) actual ordered outputs,
+by factoring its numerator and denominator. Choose one
+coordinatewise product tuple per exact product output.
+Short-root and wider height bounds are multiplied in
+their exponents by at most \(\ell\), and the residue
+target is raised to the \(\ell\)-th power.
+Use the unamplified (GW) theorem with exact-fibre bound
+one on these tuples. This proves the usual adjustable
+amplification cost for the original exact outputs,
+even when signed root groups overlap in prime support.
+The group supports can overlap. For (RUW1) simply use one tuple per exact
+output without amplification.
+
+### Sector with a small radical on a different letter
+
+Fix a positive integer \(m\) and real \(H,\omega>0\). There are
+\(\delta_*,\lambda_*>0\), depending only on these constants,
+with the following property. For fixed
+\(0<\lambda\le\lambda_*\), count primitive positive triples
+of height \(c\le X\), radical budget \(\operatorname{rad}(abc)<
+c^\lambda\), with \(\operatorname{rad}(C)\le c^{\vartheta\lambda}\)
+on one indicated letter and (AB1) with \(X_0=c\) and
+\(\delta\le\delta_*\) on a different indicated letter \(A\).
+Uniformly for \(0\le\vartheta\le1\), their count is
+\[
+ O_{m,H,\omega,\lambda,\varepsilon}
+      \left(X^{(\vartheta+\omega)\lambda+\varepsilon}\right).
+ \tag{AB3}
+\]
+In particular for \(0\le\vartheta\le\vartheta_0<1/3\) this
+gives a strict saving from the quarter coefficient, by
+choosing \(\omega<(1-3\vartheta_0)/4\).
+It is stronger than merely excluding quarter equality.
+
+Otherwise choose failing small budgets and errors tending
+to zero, always taking the height limit first at each fixed
+parameter choice. Fix the exponent list in (AB2) at that
+height limit. Select ordinary anatomic boxes at losses
+\(o(\lambda)\), with total root mass \(L\asymp\lambda\)
+by the assumed positive count exponent and the root budget.
+Then the selected profiles satisfy \(d-l_C\ge\omega/2\),
+since \(D_{\rm box}\ge(\vartheta+\omega-o(1))\lambda\) and
+\(L_C\le(\vartheta+o(1))\lambda\). Formula (AB2) makes
+\(A\) releasable, with arbitrary overlap allowed by the
+preceding amplification. In the proof of (LQ8), fix
+the complete \(C\) and use every positive-weight high block
+of the opposite \(B\) as modulus. Its cost has to be at
+least \(d-l_C>0\), forcing \(B\) to be releasable by the
+high-block stopping proof. Under a positive-height full
+modulus of \(C\), or in the real short strip if \(C\)
+has zero height, release the complete ratio of \(A,B\).
+The exact value determines the primitive pair. The
+resulting cost is at most \(l_C\), a contradiction.
+
+One special case is the intrinsic \(m\)-center deviation
+\[
+ \inf_{r_1,\ldots,r_m\ge0}
+ \sum_{\ell\mid A}\frac{\log\ell}{\lambda\log c}
+       \min_j |\lambda v_\ell(A)-r_j|.
+\]
+If this tends to zero, assign each prime to a nearest
+center and round \(r_j/\lambda\) to an integer exponent.
+The group height bound holds with \(H=1\), and rounding
+adds at most \(\lambda\) to the original numerical
+error. The centers are allowed to diverge. The same
+conclusion follows with the squared deviation, by
+Cauchy–Schwarz since the total normalized mass is at most
+one. In particular (AB3) covers a single exact \(p\)-th
+power on \(A\) whenever \(p\lambda\) is bounded below.

@@ -173,6 +173,21 @@ class CurrentAndDepositedEditionTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "missing submission venue"):
             research.check_portfolio()
 
+    def test_pending_submission_in_published_group_is_a_current_edition(self):
+        submitted = self.current.parent / "published" / "pending"
+        submitted.mkdir(parents=True)
+        (submitted / "README.md").write_text("Pending submission\n")
+        meta = self.make_revision(submitted)
+        meta.update(status="submission-pending", submission={
+            "venue": "Hexagon", "reserved_identifier": "hexagon:2611.00001v1",
+        })
+        self.write_json(submitted / "metadata.json", meta)
+        self.assertEqual(research.check_portfolio(), (2, 1))
+
+        (submitted / "metadata.json").rename(submitted / "incomplete.json")
+        with self.assertRaisesRegex(AssertionError, "uncatalogued paper directory"):
+            research.check_portfolio()
+
     def test_pending_submission_does_not_hide_an_existing_archive(self):
         self.current_meta.pop("published_edition")
         self.current_meta.update(status="submission-pending", submission={"venue": "Hexagon"})

@@ -1687,7 +1687,7 @@ $$
 $$
 The points at infinity of the quartic become $P=(0,4320)$ and $-P$, with the point at infinity of this cubic as identity. At the good primes $7,11$ the reductions have respective orders $13,9$. For explicit checks, modulo seven the cubic coefficients are $(2,6,6,1)$, $P=(0,1)$, and successive doubling gives $2P=(5,5)$, $4P=(3,6)$, $8P=(2,2)$. Adding $8P$ to $4P$ gives $-P$. Modulo eleven the coefficients are $(8,0,7,9)$, $P=(0,8)$, $2P=(8,5)$, $4P=(3,2)$, and $8P=(0,3)=-P$, while $3P=(10,4)\ne0$. In a good reduction the kernel has no prime-to-characteristic torsion. In an integral parameter at the identity the multiplication-by-$n$ series has leading term $n$ times the parameter, so it preserves a positive parameter valuation when $n$ is a unit. If $P$ were torsion, the order at seven would force a factor of thirteen upstairs. The order at eleven rules that out. Thus $P$ and $2P$ have infinite order. Torsion of $I_+-I_-$ on the generic curve would specialize to torsion at $v=1/2$, since the two points extend as sections of the smooth elliptic family there. This proves infinite order on $C_v$.
 
-If a logarithmic coordinate existed on a finite cover, take the norm of the coordinate down to $C_v$. For a finite separable function field extension, tracing the logarithmic derivative gives the logarithmic derivative of the norm, by summing over the embeddings. Tracing the pulled-back $\omega$ multiplies it by the degree. Its poles and residues would then make the divisor of that norm a nonzero integral multiple of $I_+-I_-$. This is impossible. In particular the exact normalization by a circle differential used on the octahedral conditional conic has no algebraic counterpart of this form on the icosahedral fibre. The coefficient-at-infinity joint trace (H6) still applies to arbitrary polynomial tests.
+If a logarithmic coordinate existed on a finite cover, take the norm of the coordinate down to $C_v$. For a finite separable function field extension, tracing the logarithmic derivative gives the logarithmic derivative of the norm, by summing over the embeddings. Tracing the pulled-back $\omega$ multiplies it by the degree. Its poles and residues would then make the divisor of that norm a nonzero integral multiple of $I_+-I_-$. This is impossible. In particular the exact normalization by a circle differential used on the octahedral conditional conic has no algebraic counterpart for this vertex-height fibre. The coefficient-at-infinity joint trace (H6) still applies to arbitrary polynomial tests.
 
 ### Finite exclusion of affine Laurent phases on the two angular models
 
@@ -2237,3 +2237,272 @@ For any finite cover, push a putative residue relation back down to the face-hei
 
 
 For independent vertex and face heights the pullbacks of the two conditional differentials to any common finite covering curve are also independent modulo residue-free and logarithmic differentials. The vertex Jacobian is an elliptic curve with nonconstant \(j(v)\) by the vertex calculation. Over the algebraic closure of the field of \(w\), the face Jacobian has only finitely many elliptic simple factors up to isogeny. Passing to a larger algebraically closed field creates no additional simple factors. One way to see the latter fact is invariance of the homomorphism group of abelian varieties under algebraically closed extension: spread a homomorphism over a connected finite-type base and apply the rigidity lemma after subtracting one specialized homomorphism. Any isogeny to one of the elliptic factors would make \(j(v)\) algebraic over the field of \(w\), since the finite kernel of an isogeny from a fixed elliptic curve is defined over that algebraic closure. Thus the two Jacobians admit no homomorphisms between them. Taking residues and pushing forward separately to the vertex and face curves gives the claimed independence, using the infinite-order divisor on each.
+
+
+## A logarithmic conditional coordinate for the icosahedral mirrors
+
+The vertex-axis and face-axis heights give conditional differentials with non-torsion residue divisors. The arrangement consisting of the fifteen actual reflection mirrors has a different conditional law. Its conditional circle can be written explicitly and retains an additional two-valued variable on the angular quotient.
+
+Let \(p,h,r\) be the icosahedral invariants above, with \(r=h+7q^2p\). Let \(J\) be one fourth of the Jacobian of \(q,p,h\), so \(J^2=f\) in (H4). Up to scalar, \(J\) is the product of the mirror forms. In fact it is anti-invariant, vanishes on all fifteen mirrors, and has degree fifteen. On \(q=1\) set
+\[
+ a=45p^2+13p+1-5r,\qquad b=19p^2+3p+(15p-1)r,\qquad
+ H=\nabla J\cdot\nabla J .
+\]
+The Gram formulas give \(H=-80ab\) on \(q=1\). Before setting \(q=1\) the factors are \(45p^2+13pq^3+q^6-5qr\) and \(19p^2q^2+3pq^5+(15p-q^3)r\). For a check, compute \((\nabla f\cdot\nabla f)/(4f)\) in the coordinates \(q,p,r\). The additional products with \(\nabla q\) are \(4q,12p,20r\), and the other three Gram entries are the ones above. The mirror height is \(w=225f/H\) on \(q=1\). It is the law (H1) for the fifteen mirror forms with equal weights.
+
+**Theorem (The icosahedral mirror conditional circle).**
+
+Use normalized area on the sphere. For \(0<w<1\), put \(\alpha=3\sqrt5\), \(d=w^2-22w+45\) and define
+\[
+ \xi=\frac{\alpha J}{4\sqrt w\,a},\qquad X=\xi^2=-\frac b a,\qquad
+ Y=\frac{24p-(w-3)X}{\xi},\qquad
+ R=\frac{(9-w)\sqrt{(25-w)(1-w)}}{2\alpha}.
+\]
+Then \((\alpha X-d/(2\alpha),Y)=R(\cos\theta,\sin\theta)\). The three variables \(\sqrt w,\theta,\operatorname{sgn}\xi\) are independent under area measure. The first is uniform on \([0,1]\), the second uniform on the circle, and the third uniform on the two signs. The original invariants can be reconstructed by
+\[
+ \begin{aligned}
+ X&=\frac{d}{90}+\frac R\alpha\cos\theta,\qquad
+ \xi=\operatorname{sgn}(\xi)\sqrt X,\qquad Y=R\sin\theta,\\
+ p&=\frac{(w-3)X+\xi Y}{24},\\
+ r&=3p(1-X)-X^2+X-\frac{16}{45}wX,\qquad
+ J=\frac{4\sqrt w}{\alpha}a\xi .
+ \end{aligned}
+\]
+In particular the conditional differential on the orientation curve is logarithmic after an algebraic extension of the height field. The curve has genus one, and the circle map has degree two.
+
+To prove the formulas, use \(U=b/a\) and \(Z=5U+15p-1\), so \(a=(5p+1)^2(27p-1)/Z\). On \(q=1\), the mirror fibre is \(G=225f+80wab=0\). Substitution gives the identity
+\[
+ \begin{aligned}
+ G&=\frac{5a^2}{Z} \mathcal P(p,U;w),\\
+ \mathcal P(p,U;w)
+    &=2880p^2+240U(w-3)p-225U^3+(80w-180)U^2-16wU .
+ \end{aligned}
+\]
+Thus \((24p+(w-3)U)^2=U(45U^2+dU+16w/5)\). Substitute \(U=-\xi^2\) to obtain
+\[
+                          Y^2=-45\xi^4+d\xi^2-\frac{16}{5}w.
+\]
+Together with \(d^2-576w=(w-25)(w-9)^2(w-1)\), this proves the circle equation. Reducing the expression \(r=(45p^2+13p+1-a)/5\) with \(\mathcal P=0\) gives the stated reconstruction. The even quartic has four distinct roots at a generic height, and its orientation-curve function field is recovered by these formulas. The quotient by \((\xi,Y)\mapsto(-\xi,Y)\) is the circle conic.
+
+For the real support, \(w\) extends continuously by zero on the mirrors, by the reciprocal-gradient formula and positivity of the mirror weights. It reaches one at a maximum of \(|J|\), where the log gradient is radial. Connectedness gives each intermediate height. The level set of any \(w\in(0,1)\) is compact and avoids the mirrors. There \(J,H,a,b\) are all nonzero. The equation for \(Y^2\) shows that \(X\) ranges between two positive endpoints in the circle parametrization. On each sign of \(\xi\), the displayed reconstruction is analytic in \(w,\theta\). Since \((p,r)\) is a local coordinate pair away from the mirrors, this analytic left inverse makes \((w,\theta)\) local coordinates there. The image at a fixed height and sign is therefore open in the circle and compact. Both signs occur because inversion reverses \(J\) and fixes \(w,a\). Thus the whole circle is attained for each sign.
+
+The area density in the two invariants is proportional to \(|dp\,dr/J|\). To change variables to the mirror fibre, differentiate \(G=0\) and use \(H/J=(225/w)J\). On the fibre \(G_r=5a\mathcal P_U\), since \(U_r=Z/a\). Also \(\mathcal P_p=240\xi Y\). Consequently
+\[
+ \frac{J}{G_r}\,dp
+       =-\frac{J}{5a\mathcal P_p}\,dU
+       =\frac{\sqrt w}{300\alpha}\frac{dX}{Y}.
+\]
+The last factor satisfies \(dX/Y=-d\theta/\alpha\). These formulas hold off their coordinate singularities and extend as differentials. The resulting area density is proportional to \(w^{-1/2}dw\,d\theta\), the same for both signs. Any multiplicity in the original sphere-to-invariant map is constant on the regular quotient: the map separates rotation orbits and the group acts freely away from the mirrors. This proves the stated product law. On the algebraic curve the function \(\alpha X-d/(2\alpha)+iY\) has logarithmic derivative \(-i\alpha\,dX/Y\). Its product with \(\alpha X-d/(2\alpha)-iY\) is \(R^2\), and it has a double zero and a double pole at the two points at infinity. This also explains the contrast with the vertex and face fibres.
+
+### Regularity requires the two-valued variable
+
+The circle alone, even with both sine and cosine and arbitrary rational dependence on the split variable, has a strict regularity obstruction.
+
+**Theorem (Regular intersection for the mirror circle).**
+
+Let \(K\) have characteristic zero, and allow an algebraic extension of the base field \(K(w)\) to form the circle coordinates. If a rational function of \(t,w,\cos\theta,\sin\theta\) is a regular element of \(K[p,r,J][t,t^{-1}]\), it is a Laurent scalar in \(t\). The result applies to the full angular rotation quotient, including orientation-odd functions. It also applies to a rational function defined by this chart on the compact group quotient if it is regular there, since its left-circle invariance forces descent to the angular ring.
+
+For the proof let \(\kappa\) be the involution fixing \(w,X,Y\) and sending \(\xi\) to \(-\xi\). It acts on the original rational function field, since
+\[
+ p'=\kappa(p)=\frac{(w-3)X}{12}-p,\quad
+ r'=\kappa(r)=3p'(1-X)-X^2+X-\frac{16}{45}wX,\quad
+ J'=\kappa(J)=-J\,a'/a,
+ \qquad a'=a(p',r').
+\]
+The map is unchanged by scalar extension in \(w\), and every rational circle expression in the statement is fixed by \(\kappa\). Its action commutes with inversion \(J\mapsto-J\).
+
+Use the divisor \(a=0\), with old \(p\) a free residual parameter. Put \(c=(5p+1)^2(27p-1)\). For the calculation substitute \(r=(45p^2+13p+1-a)/5\). Then
+\[
+ b=\frac{(1-15p)a+c}{5},\qquad
+ f=\frac{a^3}{5}-\frac{(675p^2-130p+11)a^2}{25}
+                 +\frac{c(45p-7)a}{25}-\frac{c^2}{25}.
+\]
+One has \(X=-b/a\) and \(wX=45f/(16a^2)\). The leading coefficients in the expansions there are
+\[
+ \begin{aligned}
+ a^2p'&\longrightarrow -\frac{3c^2}{320},\\
+ a^3r'&\longrightarrow -\frac{9c^3}{1600},\\
+ a^5\bigl(5r'^2+192p'^3\bigr)
+       &\longrightarrow \frac{27c^5(45p+31)}{512000}.
+ \end{aligned}
+\]
+They follow by substituting the two displayed expressions for \(b,f\) in \(p',r'\), with the leading terms of order six cancelling in \(5r'^2+192p'^3\).
+
+Every polynomial in \(p,r\) has a unique expression in monomials
+\[
+                  p^i r^\epsilon (5r^2+192p^3)^j,\qquad \epsilon\in\{0,1\},
+\]
+by division by the monic relation quadratic in \(r\). After applying \(\kappa\), a monomial has pole order \(2i+3\epsilon+5j\). For a fixed highest order the leading terms are nonzero constant multiples of the same power of \(c\) times distinct powers of \(45p+31\). For each \(j\), the parity determines \(\epsilon\), then the order determines \(i\). Thus the coefficients cannot cancel, even over \(K(t)\). Every nonconstant polynomial in \(p,r\) acquires a pole at \(a=0\). On each component of this divisor in the orientation cover, \(J\) is a unit, since \(f|_{a=0}=-c^2/25\). Also \(a'\) has pole order four, so \(J'=-J a'/a\) has pole order five. A nonzero expression \(J\) times a polynomial in \(p,r\) therefore acquires a pole as well. Separate an invariant Laurent polynomial into its even and odd parts under inversion, which are independently invariant. Only the Laurent scalars in the even part survive.
+
+This identifies the role of the extra sign in the conditional law. For example a joint endpoint calculation with only the transported mirror height and the full conditional circle can produce rational pure phases but has no angular-dependent regular member. A regular construction must use the two-valued coordinate, or a different joint identity.
+
+
+In fact a regular function is also excluded if it is anti-invariant under \(\kappa\). For every nonconstant angular regular phase \(P\), the two-sheet trace \(P^m+\kappa(P)^m\) has a genuine pole at \(a=0\) for every \(m\ge1\). This follows from the same pole calculation, separating the even and odd parts. Alternatively, over the two components of \(a=0\) in the orientation cover, cancellation between those two parts at highest pole order on both components would require both leading coefficients to vanish. The sheet sign therefore cannot simply be averaged out before regularization.
+
+### Polynomial mirror moments and a prime obstruction
+
+The mirror preview of the angular probability law gives a separate arithmetic test. It applies even when the leading angular coefficient is a power of the discriminant, which has two leading monomials in these coordinates.
+
+**Theorem (A mirror-height prime obstruction).**
+
+Use weights \(3,5,15/2\) for \(p,r,J\), and let \(f=J^2\). Let \(P\) be a regular Laurent phase on the icosahedral angular quotient, over a characteristic-zero field. Suppose its highest angular-weight part equals
+\[
+                 \gamma\,p^i r^j f^k t^{-c}(1+t)^b,\qquad
+ D=3i+5j+15k>0,\qquad 1\le c\le b\le 2D ,
+\]
+where \(\gamma\ne0\). Then every nonconstant polynomial in \(P\) has infinitely many nonzero pure moments. In particular, for every \(N\ge1\) the regular cleared phase
+\[
+                     \frac{1+t}{t}\bigl(H-225(1+t)^2 f\bigr)^N
+\]
+and all its nonconstant polynomial transforms fail eventual pure vanishing.
+
+To prove this, the conditional formula above makes every polynomial conditional moment a polynomial in \(w\) with coefficients integral away from \(2,3,5\) for integral input. Expand in \(X,Y,\xi\), using the two signs of \(\xi\) to remove the odd powers. The remaining powers of \(\xi\) are powers of \(X\), and the relevant powers of \(Y=R\sin\theta\) are even. Odd powers of \(\cos\theta\) integrate to zero. This leaves only \(R^2\), with the rational circle moments which have denominators powers of two. Odd powers of \(J\) have conditional trace zero by inversion, and even ones are powers of \(f\). The formulas give conditional degree at most angular weight. In detail \(X,Y\) have degree at most two in the formal expansion at \(w=\infty\), \(\xi\) has degree at most one, and the formulas for \(p,r,f\) give degrees at most \(3,5,15\).
+
+The leading law is especially simple. Formally take \(w\) large positive and divide \(p,r,f\) by \(w^3,w^5,w^{15}\), respectively. At such \(w\), choose the positive radius in the same formulas, which leaves the polynomial conditional traces unchanged. With \(u\) of arcsine law on \([-1,1]\), the limiting variables are
+\[
+ P_\infty=\frac{(1-u)(1+u)^2}{1080},\qquad
+ R_\infty=-\frac{(1-u)^2(1+u)^3}{16200},\qquad
+ f_\infty=16P_\infty^4(1-u^2).
+\]
+Indeed \(X/w^2\) tends to \(\zeta/45\), where \(\zeta=(1+\cos\theta)/2\), and \((\xi Y)/w^3\) tends to \(\zeta\operatorname{sgn}(\xi\sin\theta)\sqrt{1-\zeta}/45\). The variable \(u=\operatorname{sgn}(\xi\sin\theta)\sqrt{1-\zeta}\) is arcsine on \([-1,1]\). Use the formulas for \(p,r,J\) to get the limits. These are limits of the coefficients of the conditional laws, without a real fibre at \(w>1\). A related sharpness fact is that for a nonzero real angular polynomial with weight \(d\), its positive even-power conditional moments have exactly the maximal degree allowed by this weight. For \(p^i r^j\) of a fixed weight \(3i+5j\), the distinct exponents \(i+2j\) of \(1-u\) give linearly independent limiting terms. An orientation-odd leading part is a polynomial times \(J\), whose normalized square has a positive nonzero limit off the endpoints. The leading even powers therefore have positive limiting integral.
+
+For the top monomial in the theorem, the limiting integral of its \(m\)-th power is a nonzero rational scalar power times the arcsine moment of \((1-u)^{am}(1+u)^{em}\), where \(a=i+2j+5k\) and \(e=2i+3j+9k\). Thus \(a+e=D-k\le D\), and that integral is a unit at every sufficiently large prime \(\ell=2Dm+1\). This follows directly from the beta factors \((1/2)_{am}(1/2)_{em}/((a+e)m)!\), with the powers of two harmless. The top Laurent constant term contributes \(\binom{bm}{cm}\), likewise a unit. Integrating a polynomial in \(w\) against the squared-uniform law divides its coefficient of \(w^d\) by \(2d+1\). Since all smaller angular weights yield conditional degrees below \(Dm\), only the top coefficient supplies a pole at \(\ell\). The trace therefore has valuation exactly minus one. For a polynomial of degree \(s>0\) in \(P\), use primes \(2Dsm+1\); only its highest power can supply this pole. Coefficients in an arbitrary characteristic-zero field can first be specialized to a number field, retaining the nonzero leading coefficients and the specified highest angular part. Infinitely many primes of the desired form follow from the cyclotomic argument used for the previous prime test. For the cleared phase, \(H=-80ab\) has weight fourteen and \(f\) weight fifteen. Thus its entire top part is a scalar times \(f^N t^{-1}(1+t)^{2N+1}\), as required.
+
+The new circle law leaves a mixed-sheet route. In that chart each phase decomposes over the circle field as \(F_0+\xi F_1\), and conditional sign averaging gives the exact sum \(\sum_{j=0}^{\lfloor m/2\rfloor}\binom m{2j}F_0^{m-2j}X^jF_1^{2j}\). The pure fixed-circle endpoint identity does not settle the joint cancellation of these terms with the remaining height integral.
+
+
+## A flat angular reduction for the norm-minus-one quaternion torsor
+
+Let \(K\) be real closed and let \(X_-\) be the torsor of quaternions \(x\) of norm \(-1\). The odd quaternion power maps \(x\mapsto x^k\) are regular self-maps of \(X_-\).
+
+**Theorem (Odd-power pullback and a transverse prime test).**
+
+For every odd \(k\ge3\), pullback along \(x\mapsto x^k\) gives the same functional \(\lambda_{\rm flat}\) on regular functions. On the compact reference sphere, this functional is the law of
+\[
+           (x_0,x_1,x_2,x_3)=i(\cos\theta,\sin\theta\, n_1,\sin\theta\, n_2,\sin\theta\, n_3),
+\]
+where \(\theta\) is uniform on the circle and \(n\) is independently uniform on the unit two-sphere. Thus a phase and fixed marker for this flat trace give a regular witness on \(X_-\) by the same odd-power pullback.
+
+In these flat coordinates, let \(F(a,x)\in K[a,x]\), where \(a=x_0\) and \(x=x_1\) are the indicated coordinate functions of \(X_-\). Let \(d=\deg F\) and \(R=\deg_x F\ge1\), with \(d<2R\), and write \(A(a)=[x^R]F\). If \(A(i)\ne0\), then \(F\) has infinitely many nonzero positive moments for \(\lambda_{\rm flat}\). In particular the pullback phase has infinitely many nonzero normalized moments on \(X_-\). This includes every bivariate phase whose highest homogeneous part has a nonzero \(x^d\) coefficient.
+
+For the flat law, over the complex numbers identify the torsor with the norm-one group by \(x=i g\). In quaternion polar coordinates \(g=\cos\theta+n\sin\theta\), Haar measure is the pushforward of \((1-\cos(2\theta))d\theta/(2\pi)\) times uniform \(n\) on the two-sphere. This follows from the Jacobian \(\sin^2\theta\) on the unit three-sphere. The power map multiplies \(\theta\) by \(k\), up to the central sign \(i^{k-1}\) when passing back to \(X_-\). For \(k\ge3\) no nonzero harmonic of the density is divisible by \(k\), so the angle after the map is uniform. The central sign preserves this law. The resulting polynomial moments are rational, computed by the sphere and circle moment formulas, so the pullback identities hold over \(K\) by base change.
+
+For the prime test, \(x_1=i \sin\theta\,s\) with \(s\) uniform on \([-1,1]\) independent of \(\theta\). Consequently the flat trace of \(a^u x^v\) is zero if either exponent is odd, and otherwise
+\[
+   \lambda_{\rm flat}(a^{2i}x^{2j})
+        =\frac{(-1)^{i+j}}{2j+1}\frac{(1/2)_i(1/2)_j}{(i+j)!}.
+\]
+Specialize the coefficient ring of \(F\) to a number field, keeping \(A(i),A(-i)\) nonzero. Both are nonzero before specialization because the coefficients lie in a real closed field. Adjoin \(i\) and an \(R\)-th root of \(A(i)/A(-i)\), and choose arbitrarily large degree-one split primes \(\ell\) of that field, with \(\ell\equiv1\bmod 2R\) and avoiding all fixed coefficient denominators and zeros. One can use primes split completely in a normal closure after adjoining the required roots of unity. Put \(m=(\ell-1)/R\). Then \(m\) is even. In \(F^m\), every even monomial \(a^{2i}x^{2j}\) has \(i+j\le dm/2<\ell-1\); all factorial denominators in the displayed moment are units. Only \(j=(\ell-1)/2\) can have a pole from the factor \(2j+1\), and its entire coefficient polynomial is \(A(a)^m\).
+
+For \(j=(\ell-1)/2\) one has \((j+1)_i\equiv(1/2)_i\pmod\ell\), with all factors units because \(i+j<\ell-1\). Multiplying the trace by \(\ell\) and reducing, its residue is therefore a fixed unit times
+\[
+                          \frac{A(i)^m+A(-i)^m}{2}.
+\]
+The \(R\)-th root of their ratio belongs to the prime field at these primes, hence the ratio to the power \(m\) is one there. The residue is nonzero. Its nonzero orders in the specialization imply the same nonvanishing over the original field. This tests bivariate candidates in the flat model even when their quaternion power pullbacks have arbitrarily large ambient degree. It leaves in particular candidates whose transverse top coefficient is divisible by \(a^2+1\), and phases with more spatial coordinates.
+
+### A limit on universal realification by a Laurent variable
+
+A construction that uses only the complex pure moments by means of a pointwise harmonic identity has a basic limitation. This applies to attempts to realify the complex exceptional witnesses without using their further mixed moments.
+
+**Theorem (Pointwise harmonic realification forces one Laurent sign).**
+
+Let \(F(A,B,t)\in\mathbb R[A,B,t,t^{-1}]\). Suppose that for every positive \(m\), the polynomial \(\operatorname{CT}_t F^m\) is a linear combination of the positive powers of \(A+iB\) and \(A-iB\). Then \(F\) has all its nonzero \(t\)-exponents strictly positive, or all strictly negative. In particular every such construction produces only safe phases after substituting any \(A,B\) in a coefficient algebra with trace.
+
+Substitute \(A=(\rho/2)(z+z^{-1})\) and \(B=(\rho/(2i))(z-z^{-1})\) for a real \(\rho>0\). The hypothesis makes every positive power of the resulting Laurent polynomial have zero joint constant term in \(z,t\). Choose \(\rho\) so each nonzero \(t\)-coefficient in \(F\) remains a nonzero trigonometric polynomial. This is possible since otherwise a nonzero real polynomial would vanish on every circle in an open annulus. For every exponent pair \((h,j)\) of \(z,t\) the pair \((-h,j)\) also occurs, by reality of the coefficient functions. The convex hull therefore contains \((0,j)\) for each retained \(t\)-exponent \(j\). If those \(j\)'s straddle or include zero, the convex hull contains the origin, contradicting the Laurent theorem of [Duistermaat and van der Kallen](https://webspace.science.uu.nl/~kalle101/powers.pdf). If \(F=0\), either one-sided statement is vacuous. Otherwise a strict sign in \(t\) makes every fixed Laurent multiplier eventually miss constant weight. A successful realification using both Laurent signs must use joint integrals beyond the pointwise harmonic identities of the complex phase.
+
+
+### Regular cancellation on the fixed mirror interval
+
+The circle with its two sheets can give fixed-interval cancellation even for a regular phase with both Laurent signs. The moving endpoint is a separate contribution.
+
+**Theorem (A regular phase with fixed-interval cancellation).**
+
+Put \(T=1+t\) and \(P=t^{-15}T^{16}J\) on the icosahedral compact product. In the mirror chart make the height substitution \(\sqrt W=T\sqrt w\), keeping \(\theta\) fixed. Replace the new interval \([0,T]\) for \(\sqrt W\) by \([0,1]\). In this fixed-interval term, the scalar constant term of \(P^m\) vanishes for every \(m\ge1\) after averaging over both signs of \(\xi\) and both signs of the conditional radius. The second sign average leaves the integrated angle trace unchanged. The original phase is not pure: its moments of all positive even orders are nonzero.
+
+For the fixed-interval assertion put \(y=T/t\). Then \(dt/(tT)=-dy/y\). At fixed generic \(W,\theta\) work on the finite covering curve of the \(y\)-line obtained by adjoining the conditional radius \(\sqrt{d(w)^2-576w}\) and \(\xi=\sqrt X\), with \(w=W/T^2\). The product law uses the average over the two \(\xi\) signs; averaging over the other sign is the shift \(\theta\mapsto\theta+\pi\), so we can use the trace over the full cover. The function \(\sqrt w=\sqrt W/T\) is already a rational scalar in this change of variables. The formulas for \(X,Y,p,r,J\) exhibit \(P\) as regular above every finite \(y\) other than potentially \(0\) or \(1\). At \(y=0\), \(T=0\) and \(w\) has pole order two in \(T\). The mirror weights give pole orders at most six, ten and fifteen in \(T\) for \(p,r,J\), respectively. This makes \(T^{16}J\) vanish on every branch there. At \(y=1\), \(T\) has a pole and \(w\) tends to zero. The chart gives finite \(p,r,\xi,Y\) and \(J=O(T^{-1})\), so \(t^{-15}T^{16}J\) is regular. These bounds hold with orders multiplied by the ramification index at any ramified point. Thus \(P^m\,dy/y\) has all its residues over \(y=\infty\). Their sum is zero by the residue theorem. These are precisely the scalar constant terms used by the fixed-interval calculation, with normalized averaging over the covering branches.
+
+In the original variables the trace at even \(m\) is \(\binom{16m}{15m}\lambda(J^m)>0\) over the compact real model. Thus the entire contribution at those orders comes from the moving endpoint. This provides an explicit regular model for the remaining cancellation problem: a sheet-dependent construction can already cancel the bulk integral, and must also arrange the moving-endpoint term.
+
+A projective height change fixes both endpoints, but changes the residue calculation. Write \(s=\sqrt w\) and \(s'=Ts/\sqrt{1+(T^2-1)s^2}\), where \(T=1+t\). For \(T>0\) near one this takes \([0,1]\) onto itself. Put \(W=(s')^2\) and \(L=W+(1-W)T^2\). Then \(w=W/L\) and \(ds=T^2 L^{-3/2}ds'\). For any regular Laurent phase from the angular ring, its conditional \(m\)-th trace \(A_m(t,w)\) is polynomial in \(w\). At fixed \(W\) the scalar differential becomes
+\[
+              A_m(t,W/L)\frac{T^2\,dt}{t\,\nu^3},\qquad \nu^2=L .
+\]
+The differential is anti-invariant under \(\nu\mapsto-\nu\), so the residues at the fixed branch points \(L=0\) vanish. At \(t=0\) the lifts have \(\nu=1,-1\), and their residues are opposite. Consequently the residue sum on the full cover supplies no vanishing of the individual residue at \(\nu=1\), which is the scalar constant term for the integral. Fixing the interval in this way trades the moving endpoint for a sheet selection in the scalar step.
+
+## Regular witnesses from a split plane over the second factor
+
+**Theorem (A relative split-plane witness on products).**
+
+Let \(K\) have characteristic zero, let \(X=\{q(x)=c\}\), where \(q\) is nondegenerate of dimension \(n\ge3\) and \(c\in K^\times\), and let \(Y\) be affine geometrically integral and homogeneous under a connected reductive group. Use the normalized \(\mathrm{SO}(q)\)-trace on \(X\) and the given normalized invariant trace on \(Y\). Suppose \(e_1,e_2\) are regular vector-valued functions of \(y\in Y\) with
+\[
+ q(e_1)=R,\qquad q(e_2)=-R,\qquad B(e_1,e_2)=0,\qquad R\ne0,
+\]
+where \(B\) is the bilinear form normalized by \(B(x,x)=q(x)\), and \(R\ne0\) means nonzero as a function. Put \(U=B(e_1,x)+B(e_2,x)\), \(V=(B(e_1,x)-B(e_2,x))/c\), and define the regular functions
+\[
+ P=(1+U)\big((1+U)^2 V-(2+U)R\big),\qquad
+ F=P^{n-2},\qquad Q=U^{n-2}.
+\]
+For every \(m\ge1\), with \(k=(n-2)m\), the product trace satisfies
+\[
+ \Lambda_{X\times Y}(F^m)=0,\qquad
+ \Lambda_{X\times Y}(QF^m)
+    =\frac{k!}{(n/2)_k}\Lambda_Y(R^k).                       \tag{R1}
+\]
+In particular, nonzero moments of \(R^k\) at infinitely many such \(k\) give a regular Mathieu–Zhao counterexample. An isotropic \(q\) over \(K(Y)\) always supplies the required vectors, with \(R=M^2\) for a nonzero \(M\in K[Y]\).
+
+For the calculation first work over \(K(Y)\). The plane spanned by \(e_1,e_2\) is nondegenerate and split. Its split rotation torus in \(\mathrm{SO}(q)\) gives \(U\) and \(V\) opposite weights. Write \(D=UV/R\). This is the squared length of the projection onto the plane divided by \(c\). Over an algebraic closure an orthogonal identification with the standard positive sphere computes all its moments by scalar extension. In that model \(D\) is the sum of the first two squared coordinates on the unit sphere, and \(s=\sqrt{1-D}\) has density \((n-2)s^{n-3}\) on \([0,1]\), by the Dirichlet law. The moment coefficients are rational and therefore hold over \(K(Y)\).
+
+The formula for \(P\) is the regular polynomial obtained from \(R U^{-1}(1+U)(1-(1+U)^2(1-D))\). In the localization by \(U\), the unique weight-zero coefficient of \(U^\ell P^k\) is the \(t^0\)-coefficient of
+\[
+ R^k t^{\ell-k}(1+t)^k(1-(1+t)^2(1-D))^k .                 \tag{R2}
+\]
+Indeed \(D\) has weight zero and \(U\) nonzero weight. Since \(U^\ell P^k\) is regular for the two choices \(\ell=0,n-2\), its weight-zero component agrees with this regular polynomial in \(D\). Thus the calculation uses the normalized trace only on regular functions. Taking its trace in the quadric variable and substituting \(z=(1+t)s\) gives the scalar expression
+\[
+ R^k t^{\ell-k}(1+t)^{k-(n-2)}
+        (n-2)\int_0^{1+t} z^{n-3}(1-z^2)^k\,dz .
+\]
+The integral is a polynomial in \(1+t\). Its difference from the value at \(1\) vanishes to order \(k+1\) at \(t=0\). For \(k\ge n-2\), the coefficient of \(t^k\) in \((1+t)^{k-(n-2)}\) is zero, and that of \(t^{k-(n-2)}\) is one. The integral at \(1\), including the factor \(n-2\), equals \(k!/(n/2)_k\). These are identities in \(K(Y)\). The partial trace in \(x\) of the two original regular functions belongs to \(K[Y]\), which injects into \(K(Y)\). Taking the remaining trace gives (R1).
+
+If \(q\) is isotropic over \(K(Y)\), choose a hyperbolic pair \(v,w\) there, with \(q(v)=q(w)=0\) and \(B(v,w)=1/2\). Then \(v+w,v-w\) have norms \(1,-1\) and are orthogonal. Clearing their common denominators by \(M\ne0\) produces the required regular vectors. Conversely the existence of the stated vectors makes \(e_1+e_2\) a nonzero isotropic vector over \(K(Y)\).
+
+### Negative norm levels and the level of a field
+
+Write \(S_d^\epsilon=\{z_1^2+\cdots+z_d^2=\epsilon\}\), where \(d\ge2\) and \(\epsilon=\pm1\). The negative level is point-free over a real closed field, and is an affine homogeneous space for the definite orthogonal group. Both levels and their normalized traces have a rational model.
+
+**Theorem (Regular witnesses on products of twisted norm quadrics).**
+
+Let \(d\ge2\), let \(2^a\le d<2^{a+1}\), and let \(n>2^a\). For either \(\epsilon\), the normalized trace on \(S_n^\epsilon\times S_d^{-}\) has a regular counterexample with a fixed multiplier and a nonzero marked moment at every positive order over every characteristic-zero field. In particular, the product of two negative levels in dimensions at least two has such a witness unless both dimensions equal the same power of two. Over a formally real field, in that exceptional equal-dimension case the first quadratic form remains anisotropic over the function field of the second level, so the relative split-plane construction cannot decide it.
+
+To prove the existence claim it suffices to work over \(\mathbb Q\). The level of \(\mathbb Q(S_d^-)\), meaning the least number of squares representing \(-1\), is at most \(d\) by the defining equation. It is a power of two by Pfister's theorem, hence at most \(2^a\). Thus the sum of \(n\) squares is isotropic there. Use the hyperbolic pair in the relative construction and choose the common denominator in the form \(M(y)=L(y)L(-y)\), where \(L\) first clears both vectors. This remains a valid common denominator. On the compact reference sphere \(y=i b\), \(\sum b_j^2=1\), the value \(M(i b)=|L(i b)|^2\) is real nonnegative. It is nonzero on an open set because the compact reference sphere is Zariski dense. Therefore every trace of \(R^k=M^{2k}\) is a strictly positive rational number. The identity (R1) and scalar extension give the stated witnesses over arbitrary characteristic-zero fields. For two negative levels use the larger dimension as \(n\). The level bound then applies unless the two dimensions are the same power of two. The square of the negative circle has Mathieu–Zhao trace by the Laurent theorem after algebraic extension, because each circle is a torus torsor.
+
+For the anisotropy assertion use Hoffmann's separation theorem on \(\langle 1\rangle^{2^a}\) and \(\langle 1\rangle^{2^a+1}\). Over a formally real field both are anisotropic, their dimensions satisfy the separation inequality, and the function field of the latter projective quadric is the function field of the affine chart \(S_{2^a}^-\). In particular the relative frame cannot exist on the square of the norm-minus-one quaternion torsor over a real closed field. [Pfister's level theorem](https://www.cambridge.org/core/books/abs/squares/2nidentities-and-the-stufe-of-fields-theorems-of-pfister-and-cassels/C9818E1699E911C0EC89B7EB7BE342E5) · [Hoffmann's separation theorem and its original reference](https://www.math.uni-bielefeld.de/LAG/man/129.pdf)
+
+There is a low-degree pair for the first equal-dimensional case covered by the theorem. Take \(d=n=3\), or take \(d=3\) and any \(n\ge3\). In the first three coordinates take a fixed third unit vector \(e\) and set \(e_1=y\times e\), \(e_2=(y\times e)\times y\). These vectors are orthogonal and have opposite norms because \(q(y)=-1\). Now \(R=-1-y_3^2\). At \(y=i b\), the coordinate \(b_3\) is uniform on \([-1,1]\), giving
+\[
+ \Lambda_{S_3^-}(R^k)=(-1)^k\,\frac{k!}{(3/2)_k}.
+\]
+For \(S_3^\epsilon\times S_3^-\) itself \(F=P\), \(Q=U\), and the marked moment is \((-1)^m(m!/(3/2)_m)^2\). This includes the square of the negative adjoint sphere. Its simultaneous twist has compact commuting identity component. The construction uses variation of the split plane with the second variable. It does not decide the normalized trace on the negative adjoint sphere by itself.
+
+### Toral cyclic twists
+
+**Theorem (Toral cyclic twists as factors of regular witnesses).**
+
+Let \(Y_j\) be the toral point-free form of \(\mathrm{SU}_2/\mu_j\) over a real closed field, with the nontrivial toral descent class. Its function field is a purely transcendental extension of degree two of \(K(S_2^-)\) if \(j\) is even. For \(j\) odd it is isomorphic to \(K(S_4^-)\). If \(j\) is even and \(n\ge3\), or \(j\) is odd and \(n\ge5\), \(S_n^\epsilon\times Y_j\) admits a regular counterexample with a fixed multiplier and a nonzero marked moment at every positive order, for either norm level \(\epsilon\).
+
+For the function field use complexified first column coordinates \(u,v\) on the compact reference group, with \(u',v'\) their compact conjugates and \(uu'+vv'=1\). The two columns have opposite right torus weights. The twist conjugation on the degree-\(j\) holomorphic column monomials is minus compact conjugation, since the descent representative has \(j\)-th power \(-1\). On the pointed sphere \(C/D\), write \(A=uu'\). Its function field is a rational field \(F=K(s_1,s_2)\), with \(A=1/(1+s_1^2+s_2^2)\) in stereographic coordinates. The generic right torus quotient has split coordinate \(z=u^j\) over \(F(i)\). Twisted conjugation exchanges \(z\) with \(-A^j/z\). Hence its real function field is the field of the conic \(a^2+b^2=-A^j\) over \(F\). Dividing \(a,b\) by \(A^{\lfloor j/2\rfloor}\) gives the constant negative circle for even \(j\), and the same generic conic as \(j=1\) for odd \(j\). The latter reference twist is the negative quaternion norm quadric.
+
+For the regular witness take the real-defined coordinates of each anti-conjugate pair \(g,g'\) to be \((g-g')/2,(g+g')/(2i)\). Their squared norm is \(-gg'\). If \(j\) is even, use \(g=u^j\) in this construction, embed the resulting two-vector as \(e_2\), and put \(e_1=A^{j/2}e\) for a fixed orthogonal unit vector \(e\). This gives \(R=A^j\). If \(j\) is odd, use the two monomials \(u^j,v u^{j-1}\). The resulting four-vector has norm \(-A^{j-1}\), so adjoining the perpendicular vector \(A^{(j-1)/2}e\) gives \(R=A^{j-1}\). These formulas are polynomial in quotient coordinates and use the actual twisted reality. In the compact reference \(A\) is uniform on \([0,1]\), since it is the sum of two squared coordinates on the unit sphere in four dimensions. The trace of \(R^k\) is \(1/(jk+1)\) in the even case and \(1/((j-1)k+1)\) in the odd case. The formula (R1) completes the regular calculation.
+
+The birational comparisons here identify fields. The trace on the coordinate ring of an individual toral twist is still needed.
+
+### A point criterion after taking a product with a sphere
+
+**Theorem (Detecting point-free compact forms by sphere products).**
+
+Let \(K\) be real closed, \(C\) a connected reductive group of compact type, and \(Y\) an affine geometrically homogeneous \(C\)-space of dimension \(d\). For every \(n\ge3\) with \(n>2^d\), the normalized trace on \(S_n^+\times Y\) is Mathieu–Zhao exactly when \(Y(K)\ne\varnothing\). If \(Y(K)=\varnothing\), the regular all-order pair already exists for every \(n\ge3\) exceeding the level of \(K(Y)\).
+
+If \(Y\) has a point, pullback to the compact acting group proves strict square positivity, also on the product. If \(Y\) has no point, an ordering of \(K(Y)\) would give a point in a real closed extension of \(K\). The real closed field transfer principle applied to the affine equations would then give a point in \(Y(K)\). Thus \(K(Y)\) is not formally real. By Pfister's bound its level is at most \(2^d\), and for \(n\) exceeding this level the sum of \(n\) squares is isotropic over \(K(Y)\). [Pfister's level bound, as stated by Huisman](https://huisman.perso.math.cnrs.fr/rech/publications/lrac.pdf)
+
+Choose the compact pointed reference \(Y_0\) and the commuting involution \(a\) from the compact-twist description. Write \(\sigma\) for reference conjugation, so that the point-free descent is \(a\sigma\). Choose a denominator \(L\in K[Y]\) for the rational hyperbolic pair, and replace it by \(M=L\,a^*L\). The automorphism \(a\) is defined on both forms and has order two. Thus \(M\) is invariant under \(a\) and real for both descents. It is a nonzero element of \(K[Y_0]\). The normalized traces on the two forms agree over \(K(i)\) by uniqueness on the common complexified homogeneous space. They have the same values on \(M^{2k}\), and these values are positive by strict square positivity on \(Y_0\). Taking \(R=M^2\) in (R1) proves the assertion without requiring a point on \(Y\).
+
+For the negative ternary sphere this criterion gives the positive unit sphere in ambient dimension three as a detecting factor. For the norm-minus-one quaternion torsor it gives ambient dimension five. These dimensions are exact for the relative split-plane construction, by Hoffmann's separation theorem.
