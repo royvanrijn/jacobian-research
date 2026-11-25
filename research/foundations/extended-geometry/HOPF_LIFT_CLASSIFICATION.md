@@ -982,3 +982,539 @@ universal proof.
 Section 8 has its separately named checker and receipt, with the exact
 finite scope described there. Those computations do not upgrade the
 assurance claimed for Section 7 or classify phases outside (8.1).
+
+
+Section 9 classifies nonlinear single-profile dilations over arbitrary characteristic-zero fields, using a classical interval-moment theorem for the converse. Sections 10–11 examine affine multiples of two known seeds; their finite necessary equations are paired with independent all-order converses.
+
+## 9. Nonlinear single-profile dilations over characteristic-zero fields
+
+This is a written classification of the specified family, over every field of characteristic zero. It does not classify arbitrary phases on the affine quadric or settle arbitrary primitive Image degree-five existence. All integrals below are polynomial integration with rational denominators. No finite list of experimental moments is used as an all-orders certificate.
+
+### 9.1. The family and the conclusions
+
+Let K be a field of characteristic zero and
+\[
+ A=K[x,y,t]/(t^2+2xy-1),\qquad U=1+x.
+\]
+Use the normalized functional
+\[
+ \Lambda(f)=\operatorname{CT}_x\frac12\int_{-1}^1
+ f\left(x,\frac{1-t^2}{2x},t\right)dt.
+ \tag{9.1}
+\]
+Fix integers r,q,k>=1, a nonzero scalar gamma in K, and a nonzero polynomial H in K[w] such that (1-w^2)^r divides H. Put
+\[
+ p=\gamma x^{-r}U^qH(tU^k),\qquad
+ C_m=\frac12\int_{-1}^1H(w)^m\,dw.                 \tag{9.2}
+\]
+The displayed Laurent expression represents an element of A. Write H=(1-w^2)^r S, n=deg H, and s=deg S=n-2r. Indeed
+\[
+ B_k=\frac{1-t^2U^{2k}}x
+ =2y-t^2\sum_{j=1}^{2k}\binom{2k}j x^{j-1},
+ \qquad p=\gamma U^q B_k^r S(tU^k).                 \tag{9.3}
+\]
+Here a phase is **pure** if Lambda(p^m)=0 for every integer m>=1. It is **eventually pure** if this holds for all sufficiently large m. It is **safe against all fixed markers** if, for every B in A, Lambda(Bp^m)=0 for all sufficiently large m, with the cutoff allowed to depend on B.
+
+**Theorem 9.1 (nonlinear-profile purity, safety and least degree).** For the nonzero family (9.2):
+
+1. For every m>=1,
+   \[
+    \Lambda(p^m)=\gamma^m\binom{qm-k}{rm}C_m.       \tag{9.4}
+   \]
+   The binomial coefficient has its usual polynomial definition for an arbitrary integer upper argument.
+2. Eventual purity holds exactly when q<=r. Exact purity holds exactly when q<=r and
+   \[
+     C_m=0\quad\text{for every }m\geq1\text{ with }qm<k.
+                                                               \tag{9.5}
+   \]
+   Thus (9.5) is an exact finite reduction justified by the unrestricted zero tail (9.4).
+3. Safety against all fixed markers holds exactly when q<r. In that branch a monomial marker x^a y^b t^h is zero at every
+   \[
+    m\geq\max\left\{1,
+       \left\lceil\frac{k(h+2b+1)}q\right\rceil,
+       \left\lceil\frac a{r-q}\right\rceil\right\}.
+                                                               \tag{9.6}
+   \]
+4. If q=r, the single fixed marker x^k is unsafe. More precisely,
+   \[
+    \Lambda(x^kp^m)=\gamma^m C_m\quad(rm\geq k),     \tag{9.7}
+   \]
+   and the left side is zero when rm<k. Infinitely many of the values (9.7) are nonzero.
+5. The least total degree of p in A, equivalently the least balanced degree of a homogeneous two-pair lift, is
+   \[
+     D=(k+1)n+q-r.                                \tag{9.8}
+   \]
+   Its degree-D lift is radially primitive. Every pure unsafe phase in this family has q=r and therefore composite least balanced degree
+   \[
+     D=(k+1)n,\qquad k+1\geq2,\quad n\geq2.        \tag{9.9}
+   \]
+
+Consequently this family has no radially primitive pure unsafe phase in any prime balanced degree, in particular five or seven. This conclusion allows arbitrary complex coefficients and arbitrary mixtures of height powers within the one fixed profile H. No nonpower assertion is imposed or needed for this exclusion; some members are proper powers.
+
+### 9.2. The one classical nonvanishing input
+
+For a nonzero complex polynomial Q, Müger--Tuset, *On the moments of a polynomial in one variable*, arXiv:1910.12148v1, Theorem 2.1, proves
+\[
+ \limsup_{m\to\infty}\left|\int_0^1Q(v)^m\,dv\right|^{1/m}>0.
+                                                               \tag{9.10}
+\]
+In particular its moments cannot vanish eventually. Their Remark 2.2 credits the already known eventual-vanishing conclusion to François--Pakovich--Yomdin--Zhao, Corollary 4.1. Only that non-eventual-vanishing consequence is needed here.
+
+It applies to H(2v-1), whose moments are C_m. For arbitrary K, let K_0 be the subfield generated over Q by the finitely many coefficients of H. This finitely generated characteristic-zero field embeds into C: send a transcendence basis to algebraically independent complex numbers and extend across its finite algebraic extension. Polynomial integration commutes with the embedding. If C_m vanished eventually in K, the embedded nonzero complex polynomial would contradict (9.10). Hence
+\[
+       C_m\ne0\quad\text{for infinitely many }m.    \tag{9.11}
+\]
+No ordering or positivity is asserted for K.
+
+### 9.3. Exact endpoint formula and the purity directions
+
+Define the polynomial
+\[
+ J_m(V)=\frac12\int_{-V}^VH(w)^m\,dw.
+\]
+Since H vanishes to order at least r at both endpoints,
+\[
+ J_m'(V)=\frac{H(V)^m+H(-V)^m}2
+\]
+is divisible by (V-1)^{rm}. Therefore
+\[
+ J_m(V)-C_m\quad\text{is divisible by }(V-1)^{rm+1}. \tag{9.12}
+\]
+Changing variables w=tU^k in polynomial integration gives
+\[
+ \Lambda(p^m)=\gamma^m[x^{rm}]U^{qm-k}J_m(U^k).     \tag{9.13}
+\]
+This identity can be read in K[[x]], since U is a unit there. In particular it remains valid when qm-k is negative. Since U^k-1 has x-order one, (9.12) says that replacing J_m(U^k) by C_m does not change the coefficient in (9.13). This proves (9.4) for every m, including all small orders.
+
+If q<=r and qm>=k, then 0<=qm-k<rm, so the binomial in (9.4) is zero. If qm<k its upper argument is a negative integer and
+\[
+ \binom{qm-k}{rm}=(-1)^{rm}\binom{k-qm+rm-1}{rm}\ne0.
+\]
+
+a) Thus every q<=r phase is eventually pure, and it is exactly pure if and only if (9.5) holds.
+
+b) If q>r, then for all sufficiently large m one has qm-k>=rm. The binomial is then a nonzero positive integer, interpreted in K. Eventual purity would force eventual vanishing of C_m, contrary to (9.11). This proves both excluded directions for q>r.
+
+When q=r and rm>=k, multiplying by x^k changes coefficient extraction in (9.13) to [x^{rm-k}]. The endpoint error still starts above that degree, and
+\[
+ [x^{rm-k}]U^{rm-k}=1.
+\]
+This proves (9.7). If rm<k the Laurent integrand before coefficient extraction has a positive power of x times a power series in x, so its constant term is zero. Equation (9.11) now proves unsafety against x^k.
+
+### 9.4. All fixed markers in the strict branch
+
+Let q<r and let a,b,h be nonnegative integers. Set
+\[
+ N=rm-a+b,\qquad e=qm-k(h+2b+1),
+\]
+\[
+ \begin{split}
+ K_m(V)&=\frac12\int_{-V}^V
+       w^h(V^2-w^2)^bH(w)^m\,dw,\\
+ K_m^0(V)&=\frac12\int_{-1}^1
+       w^h(V^2-w^2)^bH(w)^m\,dw.
+ \end{split}                                      \tag{9.14}
+\]
+The fixed-endpoint polynomial K_m^0 has degree at most 2b in V. Substituting for y and then setting w=tU^k gives exactly
+\[
+ \Lambda(x^ay^bt^hp^m)
+   =\gamma^m2^{-b}[x^N]U^eK_m(U^k).                \tag{9.15}
+\]
+The stronger endpoint estimate is
+\[
+ K_m(V)-K_m^0(V)\quad\text{divisible by }(V-1)^{rm+b+1}. \tag{9.16}
+\]
+For a direct proof, write V=1+u in the integral between 1 and V, and put w=1+v. Its integrand contains v^{rm}(u-v)^b times a polynomial, since H(1+v)^m is divisible by v^{rm} and V^2-w^2=(u-v)(2+u+v). Each integrated term contains u^{rm+b+1}. The other endpoint has the same estimate using w=-1-v. This is exact polynomial integration over any characteristic-zero field.
+
+For m in (9.6), e>=0 and (r-q)m>=a, hence N>=0. Also N<=rm+b. We may therefore replace K_m by K_m^0 in (9.15), by (9.16) composed with U^k. The resulting polynomial has degree at most
+\[
+ e+2kb=qm-k(h+1),
+\]
+while its requested coefficient has degree N and
+\[
+ N-(qm-k(h+1))=(r-q)m-a+b+k(h+1)>0.
+\]
+Thus (9.15) is zero. A fixed polynomial marker is a finite sum of monomial markers, so taking the maximum of their cutoffs proves the forward safety direction. Conversely safety implies eventual purity by the marker 1, excluding q>r, and q=r was excluded by (9.7). This proves the exact safety statement of Theorem 9.1.
+
+For a marker with a representative of total degree at most v, the simpler uniform cutoff m>=k(2v+1) suffices in the strict branch.
+
+### 9.5. Least degree, explicit homogeneous lift and radial primitivity
+
+Use the original two-pair bilinears
+\[
+ R=\xi_1z_1+\xi_2z_2,\quad Z=\xi_1z_2,\quad
+ W=2\xi_2z_1,\quad T=\xi_1z_1-\xi_2z_2,
+ \qquad T^2+2ZW=R^2.
+\]
+Every bilinear has bidegree (1,1). Put L=R+Z and
+\[
+ \mathcal B_k=2WR^{2k}
+ -T^2\sum_{j=1}^{2k}\binom{2k}j R^{2k-j}Z^{j-1}.
+\]
+Writing S(w)=sum_{j=0}^s s_j w^j, with s_s nonzero, define
+\[
+ F=\gamma L^q\mathcal B_k^r
+       \sum_{j=0}^s s_jR^{(k+1)(s-j)}T^jL^{kj}.     \tag{9.17}
+\]
+Each term has balanced degree q+(2k+1)r+(k+1)s=D, and R=1 recovers (9.3).
+
+The highest total-degree term of (9.3) is the single nonzero monomial
+\[
+ \gamma(-1)^rs_s x^{kn+q-r}t^n.
+\]
+It remains nonzero in the associated graded ring K[x,y,t]/(t^2+2xy): the irreducible quadratic t^2+2xy cannot divide a nonzero monomial. Hence the sphere relation cannot lower that degree, proving (9.8). This also proves the least balanced degree assertion by homogeneous dehomogenization.
+
+At (xi_1,xi_2,z_1,z_2)=(1,1,1,-1) one has R=0,Z=-1,T=2,W=2. Modulo R,
+\[
+ \mathcal B_k=-T^2Z^{2k-1},\qquad
+ F=\gamma(-1)^rs_s T^nZ^{kn+q-r}.
+\]
+The value at this point is nonzero. Thus R does not divide F: (9.17) is radially primitive.
+
+For q=r, (9.8) becomes (9.9). The factor n is at least 2r>=2, and k+1>=2, so D cannot be prime. Raising the lift degree by homogeneous radial padding introduces a factor R and loses radial primitivity. This proves the prime-degree exclusion precisely within this family.
+
+### 9.6. Original Image contractions and scope
+
+For the usual two-pair contraction
+\[
+ \mathcal E_2(\xi^\alpha z^\beta)=\partial_z^\alpha z^\beta,
+\]
+the normalized radial/angular identity for a balanced polynomial G of degree e is
+\[
+ \mathcal E_2(G)=(e+1)!\Lambda(G|_{R=1}).          \tag{9.18}
+\]
+This is the standard identity proved in *Two-pair Image Mathieu counterexample*, Sections 2 and 4. It can also be checked termwise on the bilinears above. Equations (9.4), (9.7) and (9.18) show that a pure q=r phase has
+\[
+ \mathcal E_2(F^m)=0\quad(m\geq1),\qquad
+ \mathcal E_2(Z^kF^m)=(Dm+k+1)!\gamma^mC_m\quad(rm\geq k).
+                                                               \tag{9.19}
+\]
+The fixed marker Z^k has infinitely many nonzero contractions. Unlike the real-coefficient subfamily, the argument need not give nonzero values at every even order.
+
+For q<r, the fixed-marker conclusion extends to every original polynomial marker, including unbalanced ones. A bihomogeneous marker Q of bidegree (u,v) gives zero contraction automatically if u>v. If u<=v, the output is homogeneous in z of degree v-u. For each multi-index alpha with |alpha|=v-u,
+\[
+ \partial_z^\alpha\mathcal E_2(QF^m)
+       =\mathcal E_2(\xi^\alpha QF^m).
+\]
+The marker on the right is balanced of degree v, so (9.6), or m>=k(2v+1), eventually makes every such scalar test zero. A homogeneous polynomial of degree v-u whose derivatives of that full order vanish is zero in characteristic zero. Taking a maximum over finitely many bihomogeneous parts proves the full eventual Image conclusion.
+
+The family includes the prior k=1 real-profile calculation, now allowing arbitrary characteristic-zero coefficients, as well as the nonlinear dilation used to realize odd composite degrees. The known unsafe quartic and sextic profiles are examples. It does not contain every cubic-height coefficient family, every hyperbolic-coordinate family, or every polynomial on the quadric. In particular it does not contradict the prime-degree witnesses at every prime at least eleven, which use different coefficient architectures. It gives an exclusion sector for the remaining degree-five problem. The separate [joint-Hopf construction](PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md) realizes degree seven outside this fixed-profile class.
+
+The nonpower restriction is a separate condition. For example r=q=2,k=1,H=(1-w^2)^2 gives a proper square. The composite-degree exclusion above already holds without restricting to nonpowers.
+
+### 9.7. Mathematical sources
+
+- M. Müger and L. Tuset, [*On the moments of a polynomial in one variable*, arXiv:1910.12148v1](https://arxiv.org/abs/1910.12148), Theorem 2.1 and its proof, printed pages 2--4. Only non-eventual vanishing of the interval power moments is imported. Its Remark 2.2 gives the earlier FPYZ credit.
+- [*Hopf lift classification*](HOPF_LIFT_CLASSIFICATION.md), Section 7, contains the k=1 real-profile endpoint and full-marker calculation. The argument here extends that calculation to arbitrary k and characteristic-zero coefficients, using the preceding classical interval theorem for the reverse directions.
+- [*Odd primitive two-pair Image witnesses*](ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md), Sections 2--4, uses the q=r,k=2r odd-profile specialization. Its real even-moment positivity is stronger than (9.11) for that specialization.
+- [*Two-pair Image Mathieu counterexample*](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md), Sections 2 and 4, supplies the bilinear radial/angular and original-marker contraction conventions used in (9.18).
+
+## 10. Affine multiples of the quartic seed and primitive degree five
+
+Work over any characteristic-zero field K, with
+\[
+ A_K=K[x,y,t]/(t^2+2xy-1),\qquad
+ \Lambda(f)=\operatorname{CT}_x\frac12\int_{-1}^1
+ f\left(x,\frac{1-t^2}{2x},t\right)dt.
+\]
+Integration here means the rational polynomial functional. Define the known quartic seed
+\[
+ p_0=\frac{1+x}{x}\bigl(1-(1+x)^2t^2\bigr)
+     =(1+x)\bigl(2y-(2+x)t^2\bigr).               \tag{10.1}
+\]
+For scalars a,b,c,d in K let
+\[
+ \ell=a+bx+cy+dt,\qquad f=p_0\ell.
+\]
+This is a concrete multiplicative two-profile attempt to leave the fixed-profile quartic mechanism. It allows the full affine-linear space on the sphere, including y and t, and usually has least degree five.
+
+**Theorem 10.1 (four moments decide the quartic-affine family).** The following conditions are equivalent:
+
+1. Lambda(f^m)=0 for every m>=1.
+2. Lambda(f^m)=0 for 1<=m<=4.
+3. b=c=d=0.
+
+If a is nonzero, the resulting phase is the known unsafe quartic a*p_0, with a fixed marker x surviving at every positive order. If a=0 it is the zero phase. In particular no nonconstant affine multiplier of p_0 yields a pure phase, and no member of this degree-five presentation is simultaneously pure and radially primitive.
+
+The equivalence is proved by a finite necessary-equation certificate and a separate unrestricted converse. It is not inferred from vanishing finitely many moments of an unexplained candidate. It says nothing about arbitrary quintics not divisible by p_0 on the sphere, and it does not classify arbitrary quintics or septics.
+
+### 10.1. Exact moments used in the certificate
+
+For nonnegative i,j,h define
+\[
+ M_m(i,j,h)=\Lambda(x^iy^jt^h p_0^m).
+\]
+If h is odd this is zero by height parity. If h is even, direct binomial expansion of (10.1), substitution for y, and polynomial integration give
+\[
+ M_m(i,j,h)=2^{-j}\sum_{v=0}^{m}(-1)^v\binom mv
+ \binom{m+2v}{m-i+j}
+ \sum_{w=0}^{j}\frac{(-1)^w\binom jw}{2v+h+2w+1}. \tag{10.2}
+\]
+A binomial with lower argument outside [0,m+2v] is interpreted as zero. Formula (10.2) is valid for every positive integer m; it has no bounded-search hypothesis. Multinomial expansion gives the homogeneous polynomial
+\[
+ \mathcal M_m=\Lambda(f^m)
+ =\sum_{i+j+h\leq m}
+ \frac{m!}{(m-i-j-h)!i!j!h!}
+ a^{m-i-j-h}b^ic^jd^h M_m(i,j,h).                 \tag{10.3}
+\]
+Its first two instances are
+\[
+ \mathcal M_1=\frac{10b-3c}{15},                 \tag{10.4}
+\]
+\[
+ \mathcal M_2=\frac2{105}
+ (56ab+4ac+28b^2-4bc+3c^2+4d^2).                \tag{10.5}
+\]
+All quantities in (10.2)--(10.5) have rational coefficients, so the identities hold after scalar extension to every K under consideration.
+
+Suppose the first four moments vanish. Equation (10.4) gives b=3c/10. If c=0, then b=0, and (10.5) gives 8d^2/105=0; hence d=0. There is no restriction on a.
+
+It remains to exclude c!=0. Write z=a/c and v=d^2/c^2. Substituting b/c=3/10 into (10.5) gives
+\[
+  \mathcal M_2/c^2=\frac8{2625}(25v+130z+27),
+  \qquad v=-\frac{130z+27}{25}.                  \tag{10.6}
+\]
+Expanding (10.2)--(10.3) for m=3,4 and making precisely these substitutions gives
+\[
+ \mathcal M_3/c^3=\frac8{625625}P(z),\qquad
+ \mathcal M_4/c^4=\frac{256}{31906875}Q(z),       \tag{10.7}
+\]
+where
+\[
+ P(z)=32175z^2+56680z+14254,
+\]
+\[
+ Q(z)=60775z^3+79220z^2+1802z-643.
+\]
+These small formulas can be derived using the finite sums (10.2)--(10.3), without computer algebra. The exact checker described in Section 12 independently compares these formulas with literal Laurent expansion.
+
+### 10.2. The explicit inconsistency certificate
+
+Set
+\[
+ U(z)=-1531111624900z^2-1247587548025z+290136844604,
+\]
+\[
+ V(z)=810588507300z+1031834055265.
+\]
+Integer polynomial multiplication gives the exact Bezout identity
+\[
+             U(z)P(z)+V(z)Q(z)=3472141285450021. \tag{10.8}
+\]
+The nonzero integer on the right is invertible in every characteristic-zero field. Thus P and Q cannot both vanish at any z in K, or even in an algebraic closure. Equations (10.6)--(10.7) exclude c!=0. This proves that four vanishing moments force b=c=d=0.
+
+For the converse let b=c=d=0. Put
+\[
+ c_m=\frac12\int_{-1}^1(1-w^2)^m dw
+     =\frac{4^m(m!)^2}{(2m+1)!}\ne0.
+\]
+An endpoint calculation gives, for every polynomial H(x),
+\[
+ \Lambda(H(x)p_0^m)=c_m[x^m]H(x)(1+x)^{m-1}.    \tag{10.9}
+\]
+Indeed, change height variable w=(1+x)t. The endpoint primitive differs from its value at 1 by a multiple of x^{m+1}, so it does not contribute to the indicated coefficient. Taking H=1 and H=x gives
+\[
+ \Lambda((a p_0)^m)=0,\qquad
+ \Lambda(x(a p_0)^m)=a^m c_m.                    \tag{10.10}
+\]
+This is the unrestricted pure/marked converse and completes the theorem.
+
+### 10.3. Degree-five primitivity and the original Image statement
+
+The highest filtration term of p_0 is -x^2t^2 of degree four. If (b,c,d) is nonzero, the highest part of ell is bx+cy+dt, a nonzero linear form. The associated graded sphere ring is
+\[
+       K[x,y,t]/(t^2+2xy),
+\]
+which is a domain. Hence the product of these highest terms is nonzero, and f has least degree exactly five. Its degree-five homogeneous lift is radially primitive.
+
+Explicitly use the bilinears R,Z,W,T with T^2+2ZW=R^2 and define
+\[
+ F_4=(R+Z)\bigl(2WR^2-(2R+Z)T^2\bigr),\qquad
+ L_1=aR+bZ+cW+dT,\qquad F_5=F_4L_1.             \tag{10.11}
+\]
+The first is the degree-four lift of p_0. If (b,c,d) is nonzero, neither F_4 nor L_1 is divisible by R, and R is irreducible in the original four-variable polynomial ring. Thus R does not divide F_5. Equivalently their nonzero leading sphere classes multiply nontrivially in the graded domain above.
+
+The exact radial/angular contraction law gives
+\[
+ \mathcal E_2(F_5^m)=(5m+1)!\Lambda(f^m).
+\]
+Therefore the theorem excludes pure radially primitive Image phases of the form (10.11). If b=c=d=0 and a!=0, F_5=aR F_4 is pure but contains radial padding R; its primitive representative has degree four. The proper-power and fixed-marker conditions do not create an exception to this purity obstruction.
+
+### 10.4. Source and proof boundaries
+
+Long's actual arXiv:2609.16178v1, Section 3, Theorem 3.1/Corollary 3.2, proves the known quartic Hopf coefficient law (10.9), after the harmless bilinear normalization uv=2xy. Section 8 changes to square-root-free abelian coordinates; it does not produce a new primitive degree-five or degree-seven construction. The July paper arXiv:2607.19012v1, Theorem 2.1/Proposition 3.1, proves the related interval--Laurent cancellation. No priority claim is made for that mechanism or for the quartic seed.
+
+Müger--Tuset's *The Mathieu conjecture for SU(2) reduced to an abelian conjecture*, DOI10.1016/j.indag.2023.10.001, supplies an integration formula and a conditional reduction (Theorem 2.5). Its mixed-support reverse statement is Conjecture 2.3; the matrix-coefficient reverse statement is explicitly a conjecture in Section 3. These are not mathematical premises here. Remark 2.6 records a generating-function continuation obstruction. No mixed purity-to-support theorem is being assumed.
+
+The only calculations specific to the new restricted exclusion are the complete finite expressions (10.2)--(10.8), all displayed above. The separate exact-arithmetic verification is a check of those rational polynomial identities, not a formal proof system or a universal moment-prefix theorem.
+
+## 11. Affine multiples of the sextic seed and primitive degree seven
+
+Let K be any field of characteristic zero, and use
+\[
+ A_K=K[x,y,t]/(t^2+2xy-1),\qquad U=1+x,
+\]
+\[
+ \Lambda(f)=\operatorname{CT}_x\frac12\int_{-1}^1
+ f\left(x,\frac{1-t^2}{2x},t\right)dt.
+\]
+All integration is the rational polynomial functional. The known quartic and odd sextic seeds are
+\[
+ p_0=\frac Ux(1-U^2t^2),\qquad
+ p_6=Ut p_0=\frac{U^2t}{x}(1-U^2t^2).
+                                                        \tag{11.1}
+\]
+These represent polynomials on the sphere. Consider the full affine-linear multiplier
+\[
+     \ell=a+bx+cy+dt,\qquad f=p_6\ell,
+     \qquad a,b,c,d\in K.                               \tag{11.2}
+\]
+
+**Theorem 11.1 (four orders decide the sextic-affine family).** The following are equivalent:
+
+1. Lambda(f^m)=0 for every positive integer m.
+2. Lambda(f^m)=0 at the four orders m=1,2,4,6.
+3. b=c=d=0.
+
+For a!=0 the remaining phase a*p_6 is the known pure unsafe sextic, with the fixed marker x nonzero at every even positive order. For a=0 the phase is zero. Every nonconstant affine ell gives f least degree seven and a radially primitive degree-seven lift, but such a phase is never pure. Hence this entire affine-multiplier construction supplies no primitive septic Image counterexample. Arbitrary degree-seven phases outside (11.2), as well as the global degree-five problem, remain outside the theorem.
+
+The proof uses four necessary moment equations with an exact coprimeness certificate, followed by a separately proved all-orders converse. No finite moment prefix is extrapolated into an unrestricted vanishing claim.
+
+### 11.1. Exact moment equations and parity
+
+For i,j,h>=0 define T_m(i,j,h)=Lambda(x^i y^j t^h p_6^m). It is zero if m+h is odd. Otherwise elementary binomial expansion gives the all-orders formula
+\[
+ T_m(i,j,h)=2^{-j}\sum_{v=0}^{m}(-1)^v\binom mv
+  \binom{2m+2v}{m-i+j}
+  \sum_{w=0}^{j}\frac{(-1)^w\binom jw}{m+2v+h+2w+1}.
+                                                        \tag{11.3}
+\]
+A binomial coefficient whose lower argument is outside its ordinary range is zero. To check (11.3), expand (1-U^2t^2)^m, substitute y=(1-t^2)/(2x), and extract x^{m-i+j} from U^{2m+2v}; polynomial integration of the remaining even height powers gives its last denominator.
+
+Write M_m=Lambda(f^m). The usual multinomial formula with (11.3) computes each M_m as a rational homogeneous polynomial in a,b,c,d. The first equation is
+\[
+                   M_1=-\frac{2d}{15}.                  \tag{11.4}
+\]
+Thus every pure phase has d=0. Once d=0, f is odd in t, so every odd pure moment vanishes identically. We henceforth impose d=0. The second moment is
+\[
+ M_2=\frac2{3465}
+ (264ab+44ac+132b^2-44bc+53c^2).                         \tag{11.5}
+\]
+Formula (11.3) determines the complete fourth and sixth moment polynomials explicitly; the exact checker in Section 12 independently compares them with literal Laurent expansion. The reductions needed for the proof are displayed next.
+
+### 11.2. The c=0 branch and the denominator guard
+
+If c=0, (11.5) becomes
+\[
+                 M_2=\frac8{105}b(2a+b).
+\]
+Either b=0, as required, or b=-2a. In the latter branch the fourth moment computed from (11.3) is
+\[
+                  M_4=-\frac{2048}{15015}a^4.
+                                                        \tag{11.6}
+\]
+Its vanishing forces a=0 and hence b=0. Thus c=0 is completely settled.
+
+Suppose instead c!=0 and set
+\[
+       z=b/c,\qquad \alpha=a/c,\qquad w=6z+1.
+\]
+Equation (11.5) gives
+\[
+       44(6z+1)\alpha+132z^2-44z+53=0.                 \tag{11.7}
+\]
+If w=0, then z=-1/6 and the final three terms in (11.7) equal 64, a contradiction in characteristic zero. Thus w!=0, and necessarily
+\[
+        \alpha=-\frac{132z^2-44z+53}{44(6z+1)}.
+                                                        \tag{11.8}
+\]
+This accounts explicitly for the only denominator introduced in the elimination.
+
+### 11.3. Two coprime univariate necessary equations
+
+Substitute b/c=z and (11.8) into the homogeneous fourth and sixth moments from (11.3). Exact rational polynomial expansion gives
+\[
+ \frac{M_4}{c^4}=-\frac{4P(z)}{6455143695(6z+1)^3},\qquad
+ \frac{M_6}{c^6}=\frac{2Q(z)}{48450701243889945(6z+1)^5},
+                                                        \tag{11.9}
+\]
+where
+\[
+\begin{split}
+ P(z)={}&2971558656z^7-5200227648z^6-13319044992z^5\\
+        &+7148449616z^4+152847024z^3-485630508z^2\\
+        &+167187968z+6731307,
+\end{split}
+\]
+\[
+\begin{split}
+ Q(z)={}&596608834727854080z^{11}-2119204298356231680z^{10}\\
+ &+804612135850617600z^9+4002560438537396736z^8\\
+ &-1083906565862605056z^7-786969297304179264z^6\\
+ &+423512030238845856z^5-13510803549968736z^4\\
+ &-19554621670633104z^3+2571951562119874z^2\\
+ &-446879603799373z+5677522608208.
+\end{split}
+\]
+A concise explicit coprimeness certificate is available modulo 101. Coefficients in the following lists are in ascending degree order, starting with the constant term. Define
+\[
+ \overline U=[24,81,76,19,51,70,47,30,93,1,69],
+ \qquad \overline V=[68,96,31,6,17,98,9].
+\]
+Direct integer polynomial multiplication and reduction modulo 101 gives
+\[
+              \overline U P+\overline V Q\equiv1\pmod{101}.
+                                                        \tag{11.10}
+\]
+The leading coefficients of P and Q reduce respectively to 84 and 63, both nonzero. Thus (11.10) proves coprimeness over Q: if P and Q had a nonconstant common factor over Q, Gauss's lemma would give a primitive integer common factor. Its leading coefficient would be a 101-unit because it divides the leading coefficient of P. Its reduction would therefore remain nonconstant and divide both reductions, contradicting (11.10). Equivalently their integer Sylvester determinant is nonzero; its residue is 15 modulo 101.
+
+Coprimeness over Q supplies a rational Bezout identity, which remains an identity over every characteristic-zero field. Hence P and Q have no common root in K or an algebraic closure. Equations (11.9) contradict M_4=M_6=0 when c!=0. Combined with Sections 11.1--11.2, this proves that the four necessary moment equations force b=c=d=0.
+
+The displayed small certificate (11.10) and the leading-coefficient guard are sufficient for this proof.
+
+### 11.4. The separate all-orders converse and original Image degrees
+
+Put H(w)=w(1-w^2) and
+\[
+                  \kappa_m=\frac12\int_{-1}^1H(w)^m\,dw.
+\]
+Changing variable w=Ut in (11.1) gives
+\[
+ \Lambda(p_6^m)=[x^m]U^{m-1}J_m(U),\qquad
+ J_m(V)=\frac12\int_{-V}^{V}H(w)^m\,dw.
+\]
+Since H has zeros at both endpoints, J_m(V)-kappa_m is divisible by (V-1)^{m+1}. Therefore, for every m>=1,
+\[
+ \Lambda(p_6^m)=\kappa_m[x^m]U^{m-1}=0,\qquad
+ \Lambda(xp_6^m)=\kappa_m.                              \tag{11.11}
+\]
+Odd kappa_m vanish, and every even kappa_m is a nonzero rational number: its real polynomial integrand is nonnegative and not identically zero. This is a proof of rational nonvanishing, not an ordered-field hypothesis on K. Thus a*p_6 is pure for all orders, and unsafe for a!=0. This completes the theorem's unrestricted converse.
+
+The highest filtration term of p_6 is -x^3t^3, of degree six. If (b,c,d) is nonzero, the highest term of ell is the nonzero linear form bx+cy+dt. Their product is nonzero in the associated graded domain K[x,y,t]/(t^2+2xy). Consequently f has least degree exactly seven.
+
+Use the standard bilinears R,Z,W,T with T^2+2ZW=R^2. The explicit lift is
+\[
+ F_6=T(R+Z)^2\bigl(2R^2W-(2R+Z)T^2\bigr),\qquad
+ F_7=F_6(aR+bZ+cW+dT).                                \tag{11.12}
+\]
+The nonzero degree-seven graded class shows that F_7 is radially primitive whenever (b,c,d) is nonzero. Alternatively R is irreducible in the original four-variable polynomial ring and divides neither factor in (11.12) in this case. The exact two-pair contraction law gives
+\[
+                   \mathcal E_2(F_7^m)=(7m+1)!M_m.
+\]
+The four necessary scalar equations therefore exclude pure primitive lifts of this form. When b=c=d=0, the degree-seven presentation aR F_6 has radial padding; its nonzero primitive representative has degree six. No proper-power condition can evade an obstruction to purity itself.
+
+### 11.5. Existing classification and source boundaries
+
+The seed (11.1), its all-orders even marked moments and primitive nonpower sextic lift are already retained in *Two-pair Image Mathieu counterexample*, Theorem 5.5, and *Odd cubic height: rational reconstruction and the sharp unsafe degree-six threshold*, Section 7. The latter's theorem addresses winding-one odd cubic-height phases, not arbitrary septic phases.
+
+After d=0, a nonzero c in (11.2) introduces an x^-2 term of height five on the angular chart, so the present full affine-multiplier calculation is not merely the old winding-one odd cubic classification. The quartic-affine quintic exclusion concerns a different seed and different parity. The endpoint converse (11.11) is written above in full, and the new necessary-equation exclusion is exactly (11.3)--(11.10). No external support-converse conjecture is used.
+
+The arithmetic certificate concerns the displayed rational polynomial identities and coprimeness; the unrestricted converse is the endpoint proof above. The separate [joint-Hopf construction](PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md) realizes primitive degree seven; degree five remains open.
+
+## 12. Verification scope of the profile and affine-multiplier extensions
+
+Section 9 is a written proof. Its non-eventual interval-moment input is Müger–Tuset, Theorem 2.1, in the retained primary PDF; the field-transfer, endpoint divisibility, marker cutoff and degree calculations are given in full. The old real-profile and quadratic-height claims retain their earlier scopes and proof inputs.
+
+The [exact affine-multiplier checker](verify_hopf_affine_multiplier_obstructions.py) constructs the quartic and sextic phases by literal Laurent multiplication, computes their relevant moment polynomials with rational arithmetic, and compares every coefficient with an independently expanded binomial formula. It checks the reduced necessary polynomials and the quartic integer and sextic modulo-101 Bézout certificates, including rejection of corrupted certificates. Its [receipt](hopf_affine_multiplier_obstructions_verification.json) records only these finite polynomial-identity checks. The all-order conclusions come from the printed endpoint converses and the necessary-equation implications.
+
+These are internal mathematical and arithmetic checks. Formal verification, external mathematical review, independent replay assurance and worldwide priority are unclaimed. No classification outside the stated profile and affine-multiplier families, and no arbitrary degree-five exclusion, is inferred. Primitive degree seven is realized by the separate joint-Hopf construction.

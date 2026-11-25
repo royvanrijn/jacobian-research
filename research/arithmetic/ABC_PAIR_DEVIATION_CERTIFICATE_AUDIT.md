@@ -232,14 +232,19 @@ inequality for the two tall terms.
 | --- | --- | --- |
 | \(7/10\) | \(2/5\) | 7,268 |
 | \(4/5\) | \(9/20\) | 21,808 |
-| \(9/10\) | \(13/25\) | 3,344 |
-| \(1\) | \(11/20\) | 280,510 |
+| \(9/10\) | \(1/2\) | 39,968 |
+| \(1\) | \(107/200\) | 1,822,745 |
 
 These trees start with the aggregate Fourier tail inequalities at
 cutoffs \(8,9,10,12,15,18,20,24,32\). Their branches also use the
 [interpolated energy bound and the reduced-fraction count](ABC_OMITTED_COORDINATE_GRAPH.md#uniform-energy-bounds-from-interpolation).
-The archive retains the earlier \(43/100\) and \(49/100\) trees
-for reweighting at other budgets.
+The two newest budget-\(9/10\) trees start with the eleven unbranched
+[residual-radical inequalities](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#residual-radical-bounds-for-hyperbolic-prime-power-signatures).
+These rows retain divisibility information in the six exact valuation
+classes. Schema 5 also adds the four [Euclidean signature inequalities](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#residual-radical-bounds-for-two-euclidean-signatures). Its available branch bounds include [separated residue collisions](ABC_OMITTED_COORDINATE_GRAPH.md#separating-repeated-residues-from-the-diagonal) and [the fixed-target cubic–quartic surface](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#a-fixed-target-surface-with-a-cubic-factor-and-a-quartic-power).
+Schema 6 adds the [square–cube residual radical rows](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#averaging-the-squarecube-count-over-residual-radicals). Schema 7 also adds the [square–fifth rows](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#square-and-odd-prime-powers). The [repeated-power lattice inequalities](ABC_OMITTED_COORDINATE_GRAPH.md#collinear-congruence-lattices-for-repeated-power-residues) apply to the selected residue branches.
+The archive retains the earlier \(43/100\), \(49/100\) and \(13/25\)
+trees for reweighting at other budgets.
 
 At each split, the diagonal and off-diagonal terms, or the geometry
 alternatives, give a disjunction of affine inequalities. For a sum
@@ -248,7 +253,16 @@ every affine term of the maximum. Each leaf verifies a rational
 linear combination of its ancestor and root rows, with coefficient
 one on \(D\) and nonnegative coefficients on all other variables.
 Floating-point optimization proposed the trees and multipliers.
+The verifier loads the earlier trees from the certificate archive and
+concatenates the decompressed unit-budget fragments in numbered order.
 [Certificate archive](abc_height_fulloc_certificate.json.gz) ·
+[Unit-budget part 1](abc_height_fulloc_unit_certificate.part1.xz) ·
+[Part 2](abc_height_fulloc_unit_certificate.part2.xz) ·
+[Part 3](abc_height_fulloc_unit_certificate.part3.xz) ·
+[Improved unit-budget part 1](abc_height_fulloc_improved_unit_certificate.part1.xz) ·
+[Improved unit-budget part 2](abc_height_fulloc_improved_unit_certificate.part2.xz) ·
+[Improved unit-budget part 3](abc_height_fulloc_improved_unit_certificate.part3.xz) ·
+[Improved unit-budget part 4](abc_height_fulloc_improved_unit_certificate.part4.xz) ·
 [Exact verifier](verify_abc_height_fulloc_certificate.py)
 
 ```sh
@@ -280,4 +294,273 @@ each rational dual using integer-scaled rows.
 
 ```sh
 python3 -B research/arithmetic/verify_abc_height_fulloc_delta.py
+```
+
+## Exact reweighting at two intermediate budgets
+
+Only root row zero depends on the radical budget. If a leaf was checked
+at budget \(\lambda_0\), with exact bound \(b\) and multiplier \(y_0\) for
+that row, the same nonnegative dual gives
+\[
+D\le b+(\lambda-\lambda_0)y_0.
+\]
+The branch partition and every other coefficient stay valid. Taking the
+maximum over all leaves gives the following exact bounds.
+
+| Target \(\lambda\) | Source budget | Source bound | Leaves | Maximum reweighted bound |
+| --- | --- | --- | --- | --- |
+| \(3/5\) | \(7/10\) | \(2/5\) | 7,268 | \(1959/5015\) |
+| \(3/4\) | \(4/5\) | \(9/20\) | 21,808 | \(1773/4012\) |
+
+From the repository root replay the source rows and the reweighted
+right-hand sides.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 7/10 --at-budget 3/5
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 4/5 --at-budget 3/4
+```
+
+Monotonicity extends each bound \(N_\lambda(X)\ll_\varepsilon
+X^{D+\varepsilon}\) to all positive budgets up to the indicated target.
+
+## A sparse improvement at unit budget
+
+The checked unit-budget tree with upper bound \(107/200\) has 1,822,745
+leaves. Replace only the 4,586 leaves whose saved right-hand sides
+exceed the new target. The compact [certificate delta](abc_unit_strict_delta.json.xz)
+records their paths and replacement trees with exact rational multipliers.
+The refined trees use fixed Hölder moments, the standard Hölder bound,
+primitive ratio locks and short-addend ratio locks.
+
+The [sparse verifier](verify_abc_unit_strict_delta.py) checks the SHA-256
+of the decompressed baseline bytes, enumerates every baseline leaf and
+checks that the replacements cover all leaves above the target. It
+reconstructs the exact ancestor inequalities and checks every replacement
+tree, including every affine branch. The prior exact replay of the pinned
+baseline certifies the unaffected leaves. The resulting tree has 1,830,732
+leaves. Their maximum bounds are
+\[
+ U_{\mathrm{replacement}}=\frac{7133338393}{13333343040},\qquad
+ U_{\mathrm{untouched}}=\frac{5350003447}{10000006630}.
+\]
+The unit-budget bound is their maximum \(7133338393/13333343040\). This improves the
+baseline bound by \(667/66666715200\).
+
+From the repository root run the sparse verifier.
+
+```sh
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py
+```
+
+The optional flag `--full` replays every leaf in the reconstructed
+tree with the standard verifier. The raw baseline remains available as
+the four pinned archive fragments above.
+
+## Sparse retargeting above budget \(9/10\)
+
+The \(9/10\) source tree with 39,968 leaves has exact bound \(1/2\).
+Increasing the budget changes only the first root row's right-hand side.
+For a leaf with right-hand side \(b\) and multiplier \(y_0\) for that
+row, its retargeted right-hand side is \(b+(\lambda-9/10)y_0\).
+At each target budget replace every leaf that exceeds the new limit.
+The preserved and replacement subtrees combine to give the following
+fully replayed certificates.
+
+| Budget | Exact exponent | Replaced leaves | Replayed leaves | Delta |
+| --- | --- | --- | --- | --- |
+| \(91/100\) | \(51/100\) | 6 | 39,969 | [abc_budget_910_delta.json.xz](abc_budget_910_delta.json.xz) |
+| \(23/25\) | \(257500283/500000550\) | 502 | 41,663 | [abc_budget_920_delta.json.xz](abc_budget_920_delta.json.xz) |
+| \(37/40\) | \(34666673/66666680\) | 316 | 40,328 | [abc_budget_925_delta.json.xz](abc_budget_925_delta.json.xz) |
+| \(93/100\) | \(21/40\) | 270 | 40,132 | [abc_budget_930_delta.json.xz](abc_budget_930_delta.json.xz) |
+| \(187/200\) | \(211000210979/400000400800\) | 500 | 40,318 | [abc_budget_935_delta.json.xz](abc_budget_935_delta.json.xz) |
+| \(47/50\) | \(53/100\) | 839 | 41,152 | [abc_budget_940_delta.json.xz](abc_budget_940_delta.json.xz) |
+| \(189/200\) | \(213/400\) | 1,275 | 51,090 | [abc_budget_945_delta.json.xz](abc_budget_945_delta.json.xz) |
+| \(19/20\) | \(854400813351/1600001523200\) | 2,364 | 56,794 | [abc_budget_950_delta.json.xz](abc_budget_950_delta.json.xz) |
+| \(191/200\) | \(1069/2000\) | 4,219 | 62,268 | [abc_budget_955_delta.json.xz](abc_budget_955_delta.json.xz) |
+| \(24/25\) | \(106980070711/200000132200\) | 6,596 | 95,985 | [abc_budget_960_delta.json.xz](abc_budget_960_delta.json.xz) |
+| \(193/200\) | \(52194191487/97561060000\) | 9,412 | 123,485 | [abc_budget_965_delta.json.xz](abc_budget_965_delta.json.xz) |
+| \(97/100\) | \(267/500\) | 12,850 | 81,482 | [abc_budget_970_delta.json.xz](abc_budget_970_delta.json.xz) |
+| \(39/40\) | \(213980180813/400000338000\) | 14,609 | 89,096 | [abc_budget_975_delta.json.xz](abc_budget_975_delta.json.xz) |
+| \(391/400\) | \(85592071639/160000133920\) | 15,796 | 97,924 | [abc_budget_9775_delta.json.xz](abc_budget_9775_delta.json.xz) |
+| \(49/50\) | \(1069/2000\) | 17,382 | 118,559 | [abc_budget_980_delta.json.xz](abc_budget_980_delta.json.xz) |
+| \(1961/2000\) | \(3566601579/6666670000\) | 17,189 | 118,548 | [abc_budget_9805_delta.json.xz](abc_budget_9805_delta.json.xz) |
+| \(981/1000\) | \(1069/2000\) | 17,834 | 128,858 | [abc_budget_981_delta.json.xz](abc_budget_981_delta.json.xz) |
+| \(393/400\) | \(213885997/400001200\) | 18,323 | 149,081 | [abc_budget_9825_delta.json.xz](abc_budget_9825_delta.json.xz) |
+| \(983/1000\) | \(534899976623/1000000003000\) | 18,391 | 149,187 | [abc_budget_983_delta.json.xz](abc_budget_983_delta.json.xz) |
+| \(123/125\) | \(8916501783/16666670000\) | 18,736 | 165,396 | [abc_budget_984_delta.json.xz](abc_budget_984_delta.json.xz) |
+| \(197/200\) | \(4279923132521/8000005856000\) | 19,130 | 211,584 | [abc_budget_985_delta.json.xz](abc_budget_985_delta.json.xz) |
+| \(493/500\) | \(106998000419/200000000800\) | 19,526 | 301,028 | [abc_budget_986_delta.json.xz](abc_budget_986_delta.json.xz) |
+
+The [standard verifier](verify_abc_height_fulloc_certificate.py) pins
+the source archive and selected tree hashes. It checks the root-row
+change, applies the sparse replacements, and replays all branches and
+rational leaf duals in the resulting tree. The replacement rows include
+primitive ratio locks, fixed Hölder moments and, in some trees, the
+[local Mordell packing bound](ABC_MORDELL_LOCAL_PACKING.md).
+
+For example, replay the budget \(493/500\) tree from the repository root.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 493/500
+```
+
+### Reweighting between and beyond the new budgets
+
+The same \(47/50\) tree gives exact bounds \(263837/495000\) at
+\(471/500\) and \(1411547/2640000\) at \(9429/10000\).
+For a single certificate the reweighted bound is the maximum of the
+affine leaf bounds \(b+y_0(\lambda-\lambda_0)\), hence is convex.
+The straight lines between the certified points
+\[
+ (47/50,53/100),\quad
+ (471/500,263837/495000),\quad
+ (9429/10000,1411547/2640000)
+\]
+therefore give upper bounds throughout this interval. In particular the
+reweighted count beats the unit-budget bound through \(9429/10000\).
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 47/50 --at-budget 471/500
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 47/50 --at-budget 9429/10000
+```
+
+### Reweighting the \(193/200\) certificate
+
+Reweighting the verified \(193/200\) tree gives the exact
+count exponent \(133749764986241/250000000750000\) at
+\(\lambda=482503/500000\). At that budget the sparse strict unit tree
+reweights to \(535000193634363/1000000462000000\), a strictly
+larger exponent.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 193/200 --at-budget 482503/500000
+```
+
+### Reweighting the \(97/100\) certificate
+
+The \(97/100\) tree gives the exact upper exponents \(38861/72800\)
+at \(\lambda=387/400\) and \(2606510113/4872000000\) at
+\(\lambda=970691/1000000\). The sparse strict unit tree gives
+\(1070000390799111/2000000924000000\) at the latter budget,
+a strictly larger exponent.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 97/100 --at-budget 387/400
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 97/100 --at-budget 970691/1000000
+```
+
+### Reweighting the \(39/40\) certificate
+
+The \(39/40\) tree gives exact upper exponents
+\(106950853/200000400\) at \(\lambda=389/400\) and
+\(835936493193/1562500009375\) at \(\lambda=60941/62500\).
+At the latter budget the sparse strict unit tree gives
+\(66875024594361/125000057750000\), a strictly larger exponent.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 39/40 --at-budget 389/400
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 39/40 --at-budget 60941/62500
+```
+
+### Reweighting the \(391/400\) certificate
+
+The \(391/400\) tree gives exact upper exponents
+\(7132667863/13333337200\) at \(\lambda=39/40\) and
+\(53499982624411/100000000300000\) at \(\lambda=48877/50000\).
+At the latter budget the sparse strict unit tree gives
+\(53500019752617/100000046200000\), a strictly larger exponent.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 391/400 --at-budget 39/40
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 391/400 --at-budget 48877/50000
+```
+
+### Reweighting the \(49/50\) certificate
+
+The \(49/50\) tree gives the following exact upper exponents
+at the indicated budgets.
+
+| Radical budget | Count exponent |
+| --- | --- |
+| \(391/400\) | \(855199842919/1600000001600\) |
+| \(979/1000\) | \(2137999607311/4000000004000\) |
+| \(980011/1000000\) | \(534529057150099/1000000005000000\) |
+
+At the last budget the sparse strict unit tree gives
+\(1070000396586831/2000000924000000\).
+The separate \(1961/2000\) retarget extends the strict
+improvement farther. At its own budget the sparse strict unit
+tree gives \(2140000793781/4000001848000\).
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 49/50 --at-budget 391/400
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 49/50 --at-budget 979/1000
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 49/50 --at-budget 980011/1000000
+```
+
+### Reweighting the \(393/400\) certificate
+
+At \(\lambda=544721207/554858000\), the \(393/400\) tree gives the exact
+upper exponent \(1069/2000\). At \(\lambda=196501/200000\),
+its exact upper exponent is \(171793213/321280000\). The sparse
+strict unit tree reweighted at that budget gives \(214000079627121/400000184800000\),
+so the dedicated retarget has the smaller exponent. These are the
+maxima of the rational reweighted leaf bounds.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 393/400 --at-budget 544721207/554858000
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 393/400 --at-budget 196501/200000
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 196501/200000
+```
+
+### Reweighting the \(983/1000\) certificate
+
+At radical budget \(983003/1000000\), the \(983/1000\) retarget
+gives exact upper exponent \(5802594141/10847000000\).
+The sparse strict unit tree gives \(1070000398444863/2000000924000000\)
+at the same budget. Both are maxima of the respective rational
+reweighted leaf bounds.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 983/1000 --at-budget 983003/1000000
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 983003/1000000
+```
+
+### Reweighting the \(123/125\) certificate
+
+At radical budget \(12300001/12500000\), the \(123/125\) retarget
+gives exact upper exponent \(835921978968881/1562500009375000\).
+The sparse strict unit tree gives \(13375004988300621/25000011550000000\)
+at the same budget. Both are maxima of the respective rational
+reweighted leaf bounds.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 123/125 --at-budget 12300001/12500000
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 12300001/12500000
+```
+
+### Reweighting the \(197/200\) certificate
+
+At radical budget \(985001/1000000\), the \(197/200\) retarget
+gives the exact upper exponent \(534991037592609/1000000003000000\).
+The sparse strict unit tree gives \(1070000399685621/2000000924000000\)
+at that budget. Both are maxima of the respective rational
+reweighted leaf bounds.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 197/200 --at-budget 985001/1000000
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 985001/1000000
+```
+
+### Reweighting the \(493/500\) certificate
+
+At radical budget \(986001/1000000\), the \(493/500\) retarget
+gives the exact upper exponent \(267495625400507/500000002000000\).
+The sparse strict unit tree gives \(1070000400306621/2000000924000000\)
+at that budget. Both are maxima of the respective rational
+reweighted leaf bounds.
+
+```sh
+python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 493/500 --at-budget 986001/1000000
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 986001/1000000
 ```

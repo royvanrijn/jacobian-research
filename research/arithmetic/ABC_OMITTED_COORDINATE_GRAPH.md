@@ -1558,3 +1558,1872 @@ coordinates can first be frozen. Their weighted height is small
 in a small neighborhood of the profile because the three selected
 degrees already account for nearly the full height.
 [Exact determinant and exponent checks](verify_abc_quartic_determinant.py)
+
+### A determinant bound for symmetric three-coordinate profiles
+
+Fix integers \(2\le j<k\) with \(k\ge4\). On each
+letter suppose the coordinates of degrees \(1,j,k\) have sizes
+\(Z^\alpha,Z^{1-\alpha},Z\), respectively, with \(0\le\alpha\le1\).
+Write \(Z=X^b\), where
+\[
+ b=\frac1{k+\alpha+j(1-\alpha)}.
+\]
+Thus the total box mass is \(6b\). With
+\(\eta=1/(96k^2)\) the count exponent satisfies
+\[
+ D\le b(3-\eta)+\varepsilon.
+\]
+For \(\alpha\ge1/2\) one can take \(\eta=1/56\); for
+\(j=3,k=4,\alpha=1/2\) the sharper count is
+\(D\le 87/176+\varepsilon\). At the two-coordinate endpoint
+\(j=3,k=4,\alpha=0\) one can take \(\eta=1/200\), which gives
+\(D\le599/1400+\varepsilon\).
+The conclusions allow fixed exceptional coefficients with subpower
+heights. All exponents before the final restoration of \(b\) are
+in units of \(\log Z\).
+
+#### A prime-power fibre in a rectangle
+
+Let \(m,q\) be coprime positive integers, \(0<a\le1\), and
+\(p\ge Z^\rho\), where \(0<\rho\le1\) and \(k\rho>1\).
+For units \(\gamma,u,z\), consider
+\[
+ u^m z^{\pm q}\equiv\gamma\pmod{p^k},\qquad
+ u\ll Z^a,\quad z\ll Z.
+\]
+Take a fixed rational \(s\ge1\) and a block length \(Z^h\),
+where \(0<h<\rho\). The following strict inequality is sufficient
+for both congruences:
+\[
+ ma+qs h< k\rho\left(1-\frac1{3s}\right). \tag{A}
+\]
+Use all monomials \(u^i z^l\) with \(0\le i\le mR\) and
+\(0\le l\le qsR\), taking a sufficiently large fixed integer \(R\)
+such that \(qsR\) is integral. Group by \(ml\mp qi\). In each
+weight class the consecutive monomials have exponent differences
+\((m,\pm q)\). With \(t=u^mz^{\pm q}\), the same triangular column
+change as for (15), replacing consecutive powers of \(t\) by
+powers of \(t-\gamma\), gives \(p^k\) divisibility for each unit
+of within-class column order. The number \(S\) of unordered pairs
+of columns of equal weight is exactly
+\[
+ \sum_{\nu=1}^R (m(R-\nu)+1)(q(sR-\nu)+1)
+   =\frac{mq}{2}\left(s-\frac13\right)R^3+O_{m,q,s}(R^2).
+\]
+Indeed each pair differs by \((m\nu,\pm q\nu)\) for one positive
+\(\nu\). The determinant is divisible by \(p^{kS}\).
+The rectangle is downward closed in \(l\) at each fixed \(i\),
+so translating \(z\) to the start of the block preserves the
+determinant. The leading exponent bounding its absolute value is
+\[
+ \frac{mq}{2}(ma s+qh s^2)R^3+O_{m,q,s,a,h}(R^2).
+\]
+Inequality (A) forces every corresponding determinant to vanish.
+Taking a nonzero relation from minors gives an integral auxiliary
+polynomial of bounded degree and coefficient height \(Z^{O(1)}\).
+This also holds when the evaluation matrix has fewer rows than
+columns, by using minors of its rank.
+
+Write \(z=z_0+w\) with \(w\) in the translated block. The modular
+binomial in \(u,w\) is
+\[
+ u^m(z_0+w)^q-\gamma
+ \quad\hbox{or}\quad u^m-\gamma(z_0+w)^q .
+\]
+It is absolutely irreducible modulo \(p\). On the torus this
+follows from the primitive character \((m,\pm q)\), which
+extends to an integral unimodular change of monomial variables.
+The binomial has no coordinate-axis factor in \(u,z\), and
+translation preserves irreducibility.
+
+Factor the auxiliary polynomial into primitive irreducible
+integral factors. Their coefficient heights are also \(Z^{O(1)}\).
+For fixed degrees the largest coefficient of a product of two
+real polynomials is bounded below by a constant times the product
+of their largest coefficients, by compactness after normalizing
+each coefficient norm to one. Thus an integral factor has height
+at most a constant times that of the product.
+A reduced factor coprime to the binomial has only boundedly many
+common residue pairs by Bézout. Each residue fixes \(z\) in the
+block, and the full congruence then fixes \(u\) up to at most \(m\)
+unit classes modulo \(p^k\), since \(p>m\) for large \(Z\).
+The \(u\) range is shorter than \(p^k\). A rationally irreducible
+factor that is geometrically reducible also has only boundedly
+many rational points, by intersecting its conjugates.
+
+For a remaining absolutely irreducible factor \(F\), its reduction
+is divisible by the modular binomial. Write
+\[
+ T=\max\{ (Z^a)^i(Z^h)^l : u^i w^l \text{ occurs in }F\}.
+\]
+Weighted degree is additive under multiplication over a field and
+cannot increase upon reduction. The top weighted degrees of the
+two modular binomials show that
+\[
+ \log_Z T\ge ma+qh
+ \quad\hbox{or}\quad
+ \log_Z T\ge \max\{ma,qh\},
+\]
+respectively. Heath-Brown's affine rectangle estimate bounds the
+count on \(F\) by \(O_\varepsilon(Z^{ah/\log_Z T+\varepsilon})\).
+This is Theorem 15 with two variables, followed by Bézout with the
+coprime auxiliary polynomials supplied there. The logarithm of the
+coefficient height costs only a subpower factor. In particular
+either sign has \(O_\varepsilon(Z^{h/m+\varepsilon})\) solutions
+per block, and \(O_\varepsilon(Z^{1-h+h/m+\varepsilon})\) overall.
+[Heath-Brown, *Counting Rational Points on Algebraic Varieties*, Theorem 15](https://ora.ox.ac.uk/objects/uuid%3Ac5ab1264-e082-4664-8c45-ae6d7b6f81a1/files/m73013a42d9d1586d603c5a67baef1e0d)
+
+For \(m=1\) use the two triangles from (15), with \(q\) in place
+of \(4\). With a positive power of \(z\) the leading coefficients
+of the sums of \(i,l\) are \(q/3,q^2/6\); with a negative
+power they are \(q/6,q^2/6\). The within-class pair sum in either
+case has leading coefficient \(q/6\). Thus \(2a+qh<k\rho\) or
+\(a+qh<k\rho\), respectively, suffice to force the determinants
+to vanish. The weighted \(T\) bound just proved gives at most
+\(Z^{a/q+\varepsilon}\) points per block, since
+\(\log_Z T\ge qh\) for both signs. For \(q=k\) and
+\(p\ge Z^{1-d}\), taking
+\(h\) arbitrarily close from below to \(1-d-2a/k\) or
+\(1-d-a/k\) gives an overall bound
+\[
+ Z^{d+3a/k+\varepsilon} \tag{B}
+\]
+covering both signs. The block lengths in this use are positive
+for the \(d\) below.
+
+#### Removing intermediate factors and applying the graph
+
+Release the two \(k\)-th power coordinates of the free letters.
+Their complement costs \(2\) in units of \(\log Z\). If the root
+on the modulus letter has a divisor of size \(Z^t\), the partial
+modulus rational count (10) with the divisor raised to the \(k\)-th
+power gives
+\[
+ \max\{2+t,4-(k-1)t\}+\varepsilon .
+\]
+Consequently intermediate divisors with
+\[
+ \frac{1+\eta}{k-1}\le t\le1-\eta
+\]
+already give the desired exponent \(3-\eta+\varepsilon\).
+One may choose such a divisor and sum over its dyadic scale.
+In the remaining boxes each \(k\)-th power root is \(p_Ts_T\)
+with \(p_T>Z^{1-\eta}\) prime and \(s_T\ll Z^\eta\).
+Indeed if no prime itself lies above the divisor window, a first
+partial product of prime factors reaching the lower threshold
+lies within the window, since
+\(2(1+\eta)/(k-1)\le1-\eta\). The exceptional prime is unique.
+Put \(d=\eta\) for this split.
+
+Freeze the entire modulus root \(z_C\), with
+\(M=z_C^k\asymp Z^k\), and the two free small cofactors
+\(s_A,s_B\). Their cost is \(1+2d\). The graph of the preceding
+quartic proof has \(O(Z)\) vertices on each side, indexed by
+\(P=c_Ax_Ay_A^j\) and \(Q=c_Bx_By_B^j\), with the fixed
+cofactors included in \(c_A,c_B\). These vertices have size
+\(O(Z^{\alpha+j(1-\alpha)+kd+o(1)})<M\), since \(j<k\) and \(kd<1\) in the small-\(\alpha\)
+case. In the \(\eta=1/56\) variant, \(\alpha\ge1/2\) instead gives
+\(\alpha+j(1-\alpha)\le k/2\). The angular reconstruction of edge and codegree
+fractions from residues works since \(M\asymp Z^k\) and the
+largest numerator and denominator are \(O(Z^2)\).
+With distinct within-letter primes, factorization of the
+reconstructed coprime products determines all four primes up
+to bounded multiplicity. Two simultaneous repeats give the
+same vertex by its size. In a single-repeat case the codegree
+is bounded by a fibre modulo \(p_C^k\) of one of the displayed
+signs, with either \(x_B\) or \(y_B\) fixed. This is the same
+prime recovery as in the quartic argument, with the power \(4\)
+replaced by \(k\). Each fixed edge accounts for only subpower
+multiplicity. If the common-neighbour exponent is \(c\le1\),
+Cauchy–Schwarz and restoration of the frozen roots give an
+exponent at most \(5/2+c/2+2d+\varepsilon\).
+
+When \(\alpha\ge28\eta\), freeze \(y_B\) and use (B) with
+\(a=\alpha\). The codegree exponent is at most
+\[
+ 1-\alpha+d+3\alpha/k\le1+d-\alpha/4 .
+\]
+The resulting exponent is at most \(3-\alpha/8+5d/2\),
+which is at most \(3-\eta\) for \(d=\eta\).
+This also proves the bound with \(\eta=1/56\) throughout
+\(\alpha\ge1/2\).
+
+For \(\alpha\le28\eta\), instead freeze \(x_B\). Put \(g=\gcd(j,k)\).
+The fibre \(u^jz^{\pm k}\equiv\gamma\bmod p_C^k\) splits into
+at most \(g\) congruences \(u^mz^{\pm q}\equiv\gamma_i\bmod p_C^k\),
+where \(m=j/g\), \(q=k/g\), and \(\gamma_i^g\equiv\gamma\).
+For large \(Z\) we have \(p_C>g\), so the bound on the number
+of unit roots follows by reduction modulo \(p_C\) and Hensel lifting.
+If \(m=1\), then \(2\le q\le k/2\). Take block length \(Z^{3/4}\) in the
+triangle estimates. Both conditions hold since \(a\le1\) and
+\(2+3k/8<k(1-\eta)\), and the fibre exponent is at most
+\(1/4+a/q\le3/4\). This is below the bound needed below.
+If \(m\ge2\), use the rectangular fibre with \(a=1-\alpha\)
+and \(s=2k/3\).
+Condition (A) holds with \(h\) arbitrarily close from below to
+\[
+ h_*=\frac{3}{4k^2}-\frac{3d}{2k}.
+\]
+Indeed \(ma\le k-1\), \(q\le k\), and
+\((1-d)(1-1/(3s))\ge1-d-1/(2k)\).
+With \(\eta=1/(96k^2)\) and \(d=\eta\) we have \(h_*>68\eta\).
+Both cases give a codegree exponent at most \(1+\alpha-h/2\).
+The graph gives exponent at most
+\(3+\alpha/2-h/4+2\eta\le3-\eta\) on taking \(h\) sufficiently
+close to \(h_*\). For \((j,k,\alpha)=(3,4,0)\), use instead
+\(\eta=d=1/200\) and \(h\) arbitrarily close to \(h_*=9/200\).
+Using the sharper rectangular codegree \(1-h(1-1/j)\),
+the exact saving \(h_*(1-1/j)/2-2d=1/200\) gives the stated
+\(599/1400\) exponent after the vanishing losses.
+
+At \((j,k,\alpha)=(3,4,1/2)\) take \(\eta=3/88\) and
+\(\delta=\eta/3=1/88\). The additional lock that includes the
+entire degree-three coordinate covers \(t\) from \(\delta\)
+to \(1/2-\eta\): its bound is
+\(\max\{5/2+t,3-3t\}+\varepsilon\).
+This overlaps the earlier window and extends the excluded
+interval to \([\delta,1-\eta]\). In its complement, the large
+prime still has cofactor of size \(O(Z^\eta)\). The cofactor
+itself is a divisor, so it is smaller than \(Z^\delta\) up to
+bounded factors. We can take \(d=\delta\), including in the
+prime lower bound. Apply (B) with \(a=1/2,k=4\) to obtain
+codegree exponent at most \(7/8+d\). The graph exponent is
+at most \(47/16+5d/2=3-\eta\).
+Because \(b=1/6\) in this profile, the count exponent is
+\(87/176+\varepsilon\).
+
+#### Different root scales and degrees on the three letters
+
+The same estimate applies when the scale of the common degree-\(k\)
+coordinate on letter \(T\) is \(X^{b_T}\), the other degrees are
+\(1,j_T\) with \(2\le j_T<k\), and their two masses sum to \(b_T\).
+They may split that mass independently on each letter. Put
+\(b=\max_T b_T\), choose a rational \(0<\sigma\le1/2\) with
+\(j_T\le(1-\sigma)k\) on each letter, and set \(\eta=\sigma^2/96\).
+If
+\[
+ b_T\ge \max\left\{\frac4{k+1}+\eta,\frac{3\sigma^2}4\right\}b
+ \qquad\text{on each letter},
+\]
+then
+\[
+ D\le b_A+b_B+b_C-\eta b+\varepsilon.
+\]
+The complete heights may vary. The choice \(\sigma=1/k\)
+gives the bound at all lower degrees \(j_T< k\). With
+\(b_T=b\) and fixed \(\sigma\), the saving is proportional
+to the total mass \(6b\) uniformly in \(k\).
+
+On a modulus letter \(T\), a divisor of top-root mass \(t\) gives
+the rational-lock exponent
+\[
+ \max\{b_U+b_V+t,\ 2(b_U+b_V)-(k-1)t\}+\varepsilon,
+ \qquad \{U,V\}=\{A,B,C\}\setminus\{T\}.
+\]
+Use the divisor window from
+\[
+ \max\left\{\eta b,\frac{b_U+b_V-b_T+\eta b}{k-1}\right\}
+ \quad\text{to}\quad b_T-\eta b.
+\]
+The displayed lower endpoint is positive and twice it is at most
+the upper endpoint, using \(b_U+b_V\le2b\) and
+\((k+1)(b_T-\eta b)\ge4b\). The greedy divisor argument therefore
+gives a unique prime with cofactor \(O(X^{\eta b})\) on each
+remaining top root.
+
+Take \(b_C=b\) and \(b_A\le b_B\). Freeze \(z_C\) and the
+two small cofactors. The modulus \(X^{kb}\) still permits the
+angular reconstruction, since the largest wedge numerator and
+denominator are \(O(X^{b_A+b_B})\). All graph vertices have absolute
+height less than the modulus by \(j_T\le(1-\sigma)k\) and
+\(\eta<\sigma\).
+In units of \(\log Z=b\log X\), define \(f_T=b_T/b\), and let \(a\)
+be the degree-one mass on \(B\) in those units. Its other low
+coordinate has mass \(f_B-a\). A block of length \(Z^h\) now has
+overhead \((f_B-h)_+\), since each free prime is \(O(Z^{f_B})\).
+For \(a\ge28\eta\) use the triangles and freeze the degree-\(j_B\)
+coordinate. If \(f_B\) exceeds the block length exponent, using
+\(f_B\le1\) recovers the codegree exponent
+\(f_B+\eta-a(1-3/k)\). If there is only one block, the codegree
+is at most \(f_B-a+a/k\), which is smaller.
+For \(a\le28\eta\) use the rectangles after freezing the degree-one
+coordinate and extracting the common roots as before. With
+\(m\ge2\), use \(s=2/(3\sigma)\) in (A). Since
+\(m(f_B-a)\le(1-\sigma)k\) and \(q\le k\), we may take \(h\)
+arbitrarily close from below to
+\[
+ h_*=\frac{3\sigma^2}4-\frac{3\sigma\eta}2>68\eta.
+\]
+We have \(f_B>h_*\), so the codegree exponent is
+at most \(f_B+a-h/2\), with \(h\) close to \(h_*\).
+If \(m=1\), the triangle with length \(Z^{3/4}\) bounds the
+fibre exponent by \((f_B-3/4)_++f_B/2\), which is also at most
+\(f_B-h/2\).
+
+The vertex counts are now \(O(Z^{f_A})\) and \(O(Z^{f_B})\).
+With codegree exponent \(c_B\), Cauchy–Schwarz gives an edge
+bound with exponent
+\(\max\{f_B,f_A+(f_B+c_B)/2\}\).
+The two codegree bounds give \(c_B\le f_B-6\eta\) and
+\(f_A>3\eta\). Restoring the three frozen factors costs
+\(1+2\eta\), leading to the stated exponent.
+
+### Separating repeated residues from the diagonal
+
+Fix an anatomic box and lock coordinates of total mass \(f_C\) on
+letter \(C\). Let \(M\gg X^{w_C}\) be a divisor of its complete
+value determined by the frozen data. Let \(r_T(t)\) count distinct
+permitted complete values on a free letter \(T=A,B\) in the
+unit class \(t\bmod M\). We align the two residue tables by
+the fixed unit twist from the signs and any fixed coefficients.
+Each pair of congruent values determines the third complete value,
+and that value has divisor-many coordinate representations.
+Thus, before restoring the frozen choices, it suffices to count
+\[
+ N=\sum_t r_A(t)r_B(t).
+\]
+Write \(E_T^\ne=\sum_t r_T(t)(r_T(t)-1)\) and
+\(E_T=\sum_t r_T(t)^2\). Split off the first representative of
+each nonempty \(A\) residue class. Cauchy–Schwarz and
+\((r-1)^2\le r(r-1)\) for integers \(r\ge1\) give
+\[
+ N\le \sum_t r_B(t)+\sqrt{E_A^\ne E_B}.
+\]
+If \(E_A^\ne\ll X^{U_A+\varepsilon}\) and
+\(E_B\ll X^{K_B+\varepsilon}\), this gives
+\[
+ D\le f_C+\max\{L_B,(U_A+K_B)/2\}+\varepsilon .
+ \tag{SR}
+\]
+The labels \(A,B\) may be interchanged.
+
+For either free letter \(T\), select a nonempty group of
+coordinates all of whose degrees have a fixed common divisor
+\(g_T\ge2\). Write \(p_T\) for its mass and \(h_T\) for an
+upper exponent of the complete value. The off-diagonal energy
+obeys
+\[
+ U_T=2(L_T-p_T)+(h_T-w_C)_+ .
+\]
+Indeed, freeze both copies of the complementary coordinates.
+Their factors form fixed coefficients \(P,Q\). The grouped
+roots \(x,y\) then satisfy
+\[
+ Px^{g_T}-Qy^{g_T}=jM,\qquad j\ne0 .
+\]
+There are \(O(1+X^{h_T-w_C})\) possible values of \(j\).
+For each \(j\) the uniform binary-form bound gives
+\(O_\varepsilon(X^\varepsilon)\) pairs \((x,y)\).
+This uses the nonzero weighted power-difference count,
+uniform without coprimality assumptions
+[Zeng, Lemma 3.1](https://hexagonmath.org/pdf/2611.00621v1).
+For counting distinct complete values there is no additional
+multiplicity in recovering them from the two roots.
+The congruence count works at any divisor \(M\),
+including a partial-coordinate lock chosen in a divisor stratum.
+
+One may use any valid total-energy bound for \(K_B\) in (SR).
+In particular, the diagonal contributes at most \(X^{L_B}\),
+so \(K_B\le\max(L_B,U_B)\) from the same off-diagonal argument
+on \(B\). In the ordered-tall projection use \(h_A,h_B\le1\)
+and the available lower weight \(w_C\le1\) of the locked
+modulus. Equation (SR) then becomes a maximum of three affine
+bounds,
+\[
+ D\le f_C+\max\left\{
+ L_B,\quad
+ L_A-p_A+\frac{L_B+1-w_C}{2},\quad
+ L_A+L_B-p_A-p_B+1-w_C
+ \right\}+\varepsilon .
+ \tag{SR-affine}
+\]
+
+At the asymmetric unit-budget profile with units \(1/1424\),
+the nonzero coordinates are
+\[
+ (\alpha_{A,1},\alpha_{A,3})=(266,386)/1424,\qquad
+ (\alpha_{B,1},\alpha_{B,4})=(200,306)/1424,\qquad
+ (\alpha_{C,1},\alpha_{C,7})=(73,193)/1424.
+\]
+Lock the entire \(C\)-tail, which has exact weight \(1351/1424\)
+from the height of \(C\). Use the singleton degrees \(3,4\)
+on \(A,B\). Thus \(U_A=605/1424\), \(U_B=473/1424\), and
+\(K_B\le506/1424\). Equation (SR) gives
+\[
+ D\le \frac{193}{1424}+\frac{605+506}{2848}
+ =\frac{1497}{2848}<\frac{27}{50}.
+\]
+The arithmetic inequality is strict on an open neighborhood of
+the profile.
+
+### Repeated residues in a short-addend strip
+
+Suppose the locked letter \(C\) is the short addend, so that
+the complete free letters \(A,B\) satisfy \(|A-B|=C\).
+For the fixed lock data write \(C=M c\), where \(M\) is the
+locked modulus, and suppose \(c\ll X^{s_C}\).
+One may also freeze coordinates on the free sides, at masses
+\(f_A,f_B\). For \(T=A,B\), let \(P_T\) be its fixed factor,
+assume \(P_T\gg X^{v_T}\), and write \(y_T=L_T-f_T\).
+Select a nonempty common-power group on each free side,
+with fixed root power \(g_T\ge2\) and mass \(p_T\).
+
+Partition the complete values of the two free sides into
+half-open intervals of length \(H\asymp M X^{s_C}\), chosen
+large enough that \(C\le H\). Only intervals with indices
+differing by at most one can supply a valid pair. For one of
+the three offsets fix temporarily the corresponding pair of
+intervals. Each congruence has the same coefficient twist
+after cancelling \(P_A,P_B\) modulo \(M\). Apply the
+separated-diagonal estimate to the two residue tables in
+these intervals. Sum the diagonal term over the intervals,
+and sum their Cauchy–Schwarz terms by Cauchy–Schwarz once
+more. For a fixed offset each interval occurs exactly once
+on its respective side, so the resulting repeat energies are
+sums over disjoint intervals and incur no cost for their
+number.
+
+Two distinct \(T\)-values in the same interval and residue
+class have free products differing by \(jM\) with \(j\ne0\).
+This follows since \(P_T\) is a unit modulo \(M\).
+The size of the difference of the complete values gives
+\(|j|\ll X^{s_C-v_T}\). Freeze both copies of the remaining
+free coordinates outside the common-power group, at cost
+\(2(y_T-p_T)\). The weighted power-difference estimate gives
+only \(X^\varepsilon\) choices for each nonzero shift. Thus
+the sum of the restricted repeat energies has exponent
+\[
+ U_T^{\rm strip}=2(y_T-p_T)+(s_C-v_T)_+ .
+\]
+If \(s_C<v_T\), these repeat energies are zero for large \(X\).
+In general the total energy summed over the intervals on side
+\(B\) is at most \(X^{\max(y_B,U_B^{\rm strip})+\varepsilon}\).
+The resulting exponent including all frozen choices is
+\[
+ D\le f_A+f_B+f_C+
+ \max\left\{y_B,\frac{U_A^{\rm strip}+y_B}{2},
+              \frac{U_A^{\rm strip}+U_B^{\rm strip}}2\right\}
+ +\varepsilon .
+\]
+The two tall letters may be interchanged.
+
+For the simple case without extra freezing, take
+\(f_A=f_B=v_A=v_B=0\). Then \(s_C\) is any upper weight of the
+complementary coordinates on the short letter. If the lock
+contains the entire tail, this is the exact early complement
+weight. Otherwise use the upper bound from the full weighted
+height at most one minus the known early weight in the lock.
+Either choice is an affine overestimate in the six-index
+program. This improves the global shift \(1-w_C\) when a
+large part of the bound one was unoccupied height of the
+short letter.
+
+### Affine curves after locking a frozen cofactor
+
+On each of two letters \(A,B\), release a nonempty subset of
+coordinates whose degrees are multiples of a fixed integer
+\(p\) and \(q\), respectively. Write the two released products
+as \(x^p,y^q\), with \(p,q\ge1\). Write \(m_A,m_B\) for their
+total radical masses and \(\beta,\gamma\) for the numerical
+height exponents of \(x,y\). Freeze all remaining coordinates,
+including the whole third letter. The signed equation is
+\[
+ Ux^p+Vy^q=W
+\]
+for fixed nonzero \(U,V,W\), with \(\gcd(U,VW)=1\).
+Let \(w_A\) be a lower bound on the numerical weight of
+\(\lvert U\rvert\). Then
+\[
+ D\le L-m_A-m_B+\frac{(\gamma-w_A)_+}{p}.
+ \tag{PC}
+\]
+The symmetric bound uses \((\beta-w_B)_+/q\).
+
+Reduction modulo \(\lvert U\rvert\) confines \(y\) to
+\(X^\varepsilon\) residue classes. Indeed a unit has at most
+\(q\gcd(q,2)\) roots modulo any prime power, by the structure
+of the unit group, and \(q\) is fixed. For each class use a
+representative \(y_0\) between \(0\) and \(\lvert U\rvert-1\) and
+write \(y=y_0+\lvert U\rvert z\). There are \(O(1)\) possible
+\(z\) if \(\gamma\le w_A\), up to the dyadic scale constants.
+Otherwise the box for \(x,z\) has exponents
+\(\beta,\gamma-w_A\).
+The plane curve
+\[
+ Ux^p+V(y_0+\lvert U\rvert z)^q-W=0
+\]
+is absolutely irreducible. For \(p=1\) it is linear in \(x\)
+with a nonzero constant leading coefficient. For \(p>1\),
+apply Eisenstein in \(x\) at any simple zero of
+\(V(y_0+\lvert U\rvert z)^q-W\) over \(\overline{\mathbb Q}\).
+All of those zeros are simple because \(VW\ne0\).
+The weighted affine plane-curve estimate in equation (3) of
+Browning–Heath-Brown uses exponent
+\(\log P_2\log P_3/\log T\) in a box of sides \(P_2,P_3\).
+The monomial \(x^p\) alone gives \(\log T\ge p\log P_2\).
+The estimate gives \(X^{(\gamma-w_A)/p+\varepsilon}\)
+points per residue class when \(\gamma>w_A\), uniformly in the
+fixed coefficients. Vanishing side exponents follow by
+enlargement through \(X^\varepsilon\); if \(\gamma\le w_A\),
+each of the \(O(1)\) possible \(z\) determines at most one
+positive \(x\). A grouped root has divisor-many
+factorizations. Summing over all frozen choices proves (PC).
+[Browning–Heath-Brown, equation (3)](https://arxiv.org/pdf/math/0506497)
+
+This gives a maximum of two affine bounds when \(w_A\) is
+supplied by the ordered-height model. For a tall \(A\) use
+\(w_A=1-p\beta\) in the limiting box. For a short \(A\) use the
+sum of the known weights on the frozen indices, with
+\(7\) times the frozen tail mass as its tail contribution.
+
+At the cubic–quartic witness of denominator \(6274\), take
+\(p=3,q=4\), \(w_A=1189/6274\), \(\gamma=1342/6274\), and
+\(L-m_A-m_B=3237/6274\). The new exponent is at most
+\(1644/3137<53/100\) at this witness.
+
+#### Shortening the plane box by the short height
+
+In (PC) suppose the square or higher power \(x^p\) is
+released on the short addend, and the released \(y^q\)
+lies on a tall term. Freeze the other tall term as before.
+Then the same count gives the stronger bound
+\[
+ D\le L-m_A-m_B+\frac{(\gamma+p\beta-1)_+}{p}.
+ \tag{PCS}
+\]
+Indeed let \(h\) be the actual short height on the
+logarithmic scale. With the fixed coefficients of (PC),
+the two tall terms have size comparable to \(X\).
+Their difference is the short term, so the mean value
+theorem confines \(y\) to an interval of
+length \(O(X^{\gamma+h-1})\) about the positive
+real root of the equality between the two tall terms.
+Consecutive positive values of \(y\) in one residue
+class modulo \(\lvert U\rvert\) are separated by
+\(\lvert U\rvert\asymp X^{h-p\beta}\).
+Choosing the representative closest to the centre
+shortens the box for the new integer coordinate to
+exponent \((\gamma+p\beta-1)_+\). The shifted curve
+is still absolutely irreducible, and its monomial
+\(x^p\) still supplies the same lower bound for the
+leading scale in the plane estimate. This proves (PCS).
+It uses the short cofactor even when the weighted
+height carried by its tail is unknown.
+
+## Collinear congruence lattices for repeated power residues
+
+Fix a locked letter factor \(M\) of root mass \(f\) and a
+lower numerical weight \(w\), so \(M\gg X^w\). On each
+other letter \(T\), choose a group of degree-\(p_T\)
+powers, with logarithmic root size \(r_T\), root mass
+\(m_T\), and \(p_T\ge2\). Its free complete values have
+the form \(P u^{p_T}\), where \(P\) is the product of
+their complementary coordinates. The copies of \(P\)
+are not fixed in the full application. Each has at most
+\(X^{L_T-m_T+\varepsilon}\) choices. Suppose
+\[
+ 2r_T\le w
+\]
+for each chosen group. Let \(s\ge0\) be an upper exponent
+for the nonzero quotients \(j\) in the repeated residues
+of either letter, so each such pair satisfies
+\[
+ P u^{p_T}-P'(u')^{p_T}=jM,\qquad 0<|j|\ll X^s.
+\]
+Ordinarily one can take \(s=1-w\) by the size of complete
+letters. When \(M\) is a lock from a short addend, pair
+the tall letters in intervals of length near
+\(M X^{s_{\mathrm{short}}}\), as in the existing strip
+argument, and take \(s=s_{\mathrm{short}}\), the upper
+weight of the complementary short factors. For a whole
+short-tail lock this is the exact early short height.
+One may choose the smaller of the two bounds.
+
+Then for every fixed \(M\) the sum of the off-diagonal
+energies on \(T\), over the residue classes and any
+disjoint intervals used, is at most
+\[
+ X^{E_T+\varepsilon},\qquad
+ E_T=2(L_T-m_T)+s/p_T.
+\]
+To prove this, fix \(P,P'\). All quantities involved are
+units modulo \(M\) when there are admissible points, by
+primitivity of each additive triple. The ratio \(u/u'\)
+is a \(p_T\)-th root of a unit modulo \(M\) and has
+\(X^\varepsilon\) possible residues. This follows by CRT
+from the prime-power unit groups. Each possible ratio
+\(\lambda\) puts \((u,u')\) in the lattice
+\(u\equiv\lambda u'\pmod M\) of index \(M\) in
+\(\mathbb Z^2\).
+
+In the dyadic square with root bounds \(U\ll X^{r_T}\),
+there are only \(O(1)\) lattice points or all admissible
+points are collinear with the origin. Indeed if the box
+contains two independent lattice vectors, at least one
+of them is independent of a shortest nonzero vector \(v_*\).
+The determinant of that pair is a nonzero multiple of
+\(M\), so \(\lVert v_*\rVert\gg M/U\gg U\).
+Packing points with this separation in the square gives
+\(O(1)\). With a strict exponent gap \(w>2r_T\),
+two independent vectors cannot occur at all. A vanishing
+dyadic exponent slack produces only a freely small power
+loss, by the same packing comparison.
+
+In the collinear case write each positive pair as
+\((u,u')=d(v,v')\) for one fixed primitive integer ray.
+For off-diagonal pairs \(P v^{p_T}-P'(v')^{p_T}\ne0\).
+Primitivity of either copy against \(M\) implies
+\(\gcd(d,M)=1\). Since
+\(d^{p_T}(P v^{p_T}-P'(v')^{p_T})=jM\), it follows
+that \(d^{p_T}\mid j\). In particular
+\(d\ll X^{s/p_T}\). Count the rays by the number of
+congruence lattices, and count \(P,P'\) by the two frozen
+complement costs, to obtain \(E_T\). If \(P,P'\) can be
+represented by several tuples, the standard divisor
+bound absorbs those multiplicities.
+
+Designate one free side as \(B\) and the other as \(A\).
+The separated-diagonal inequality gives
+\[
+ D\le f+\max\left\{L_B,\frac{E_A+L_B}{2},
+                        \frac{E_A+E_B}{2}\right\}.
+\]
+For each residue where \(A\) occupies it once or less, its
+pair contribution is at most that of \(B\). In the
+remaining residues a multiplicity \(n_A\) satisfies
+\(n_A\le\sqrt{2n_A(n_A-1)}\), so Cauchy–Schwarz uses the
+repeat energy of \(A\) and the total energy of \(B\).
+In the strip version the same reasoning applies for
+each of three interval offsets. A second Cauchy–
+Schwarz sums over the disjoint intervals in each offset,
+without a cost for the number of intervals. Both choices
+of \(B\) are valid. The formula also admits the existing
+repeat bound on one side where the root-box guard fails.
+
+## A bound without root-box guards
+
+The root-box hypothesis can be removed from the energy formula.
+In the rank-two case, choose a shortest lattice vector of
+length \(\ell\) and complete it to a basis with second vector's
+parallel component of absolute value at most \(\ell/2\).
+The perpendicular component has length \(H=M/\ell\), and
+\(H\ge\sqrt3\ell/2\) by minimality of \(\ell\).
+If the box of side \(O(U)\) contains two independent
+vectors, then \(\ell\ll U\), and at least one point has
+nonzero perpendicular component, proving \(H\ll U\).
+The integer coefficients in this basis are bounded by
+\(O(U/\ell)\) and \(O(U/H)\), respectively. This gives
+\(O(U^2/M)\) lattice points.
+
+Combining the rank-two count with the collinear count
+always gives
+\[
+ E_T=2(L_T-m_T)+\max\{2r_T-w,\ s/p_T\}.
+\]
+One can optionally take the minimum of the last maximum
+and the old gap \(s\), independently on either side.
+In the ordinary residue version \(s=1-w\), the replacement
+is already bounded by \(s\), since \(2r_T\le 1\).
+With \(p_T\ge3\) and \(s>0\), this ordinary-step improvement
+is strict. The bound is continuous and piecewise affine
+in the retained scales and needs no auxiliary guard.
+Writing the last displayed \(D\) bound as one maximum
+of affine functions uses at most seven terms, one for
+\(L_B\), two for \((E_A+L_B)/2\), and four for
+\((E_A+E_B)/2\). Both displayed numerical examples still
+use the collinear value \(s/p_T\) on both sides.
+
+
+### Exact examples
+
+For the profile with \(D=73/136\), lock the entire short
+\(a\)-tail. It has mass \(f=146/1088\) and numerical
+weight at least \(7f=1022/1088\), strictly greater than
+twice the root exponents of the \(b_4,c_3\) blocks.
+The strip quotient weight is \(s=a_1=66/1088\).
+Use \(p_B=4,m_B=r_B=212/1088,L_B=372/1088\) on \(b\)
+and \(p_A=3,m_A=r_A=292/1088,L_A=504/1088\) on \(c\).
+Then
+\[
+ E_B=\frac{673}{2176},\qquad E_A=\frac{446}{1088},
+ \qquad
+ D\le\frac{146+409}{1088}=\frac{555}{1088}<\frac{107}{200}.
+\]
+All comparisons are strict at this profile. The guard
+uses only the minimum height of the locked tail, so it
+does not require a coordinate for degree seven.
+
+For the profile with \(D=414/781\), lock the \(c_3\)
+coordinate of mass \(f=207/781\) and numerical weight
+\(w=621/781\). In the ordinary, unrestricted residue
+version take \(s=1-w=160/781\) and take the groups
+\(a_4,b_5\) of degrees four and five. Both guards are
+strict, since \(2r_A=320/781\) and
+\(2r_B=207/781\). The complementary masses are
+\(205/1562\) and \(113/1562\), respectively. Designate
+\(B=b\), so \(L_B=160/781\). The repeat exponents are
+\(E_A=245/781\) and \(E_B=145/781\). Thus
+\[
+ D\le\frac{207}{781}+
+    \max\left\{\frac{160}{781},\frac{405}{1562},
+                                    \frac{390}{1562}\right\}
+   =\frac{819}{1562}<\frac{53}{100}.
+\]
+
+### Residue lattices intersected with the real short strip
+
+When the locked term is the short addend, the rank-two
+part of the preceding energy bound can use the short
+interval itself. Write \(M\) for the fixed modulus
+and \(s\) for an upper weight of the complementary
+short factors. For repeated residues on either tall
+letter the allowable quotient \(j\) is nonzero and
+\(\lvert j\rvert\ll X^s\). Under the same notation as
+above the new energy bound is
+\[
+ E_T\le 2(L_T-m_T)+\max(2r_T+s-1,s/p_T).
+ \tag{AS}
+\]
+The rank-two and rank-one cases use the same
+congruence classes for \(u/u'\).
+
+To prove this, fix \(P,P'\) and one such class.
+Both positive complete terms \(Pu^{p_T},P'(u')^{p_T}\)
+are of size comparable to \(X\); both roots are of
+size comparable to \(U=X^{r_T}\).
+The relation
+\[
+ \lvert Pu^{p_T}-P'(u')^{p_T}\rvert\ll M X^s
+\]
+and the mean value theorem give
+\(\lvert u-(P'/P)^{1/p_T}u'\rvert\ll U M X^{s-1}\).
+Together with the root box this confines the pair to
+a strip of area \(O(U^2 M X^{s-1})\).
+Apply the rank-two packing calculation after linearly
+rescaling this strip to a fixed square. The new
+covolume is comparable to the original covolume \(M\)
+divided by the area of the strip. If there are two
+independent admissible vectors, the resulting bound
+is \(O(U^2 X^{s-1})\). If instead the vectors are
+collinear, the primitive-ray argument still bounds
+their scale by \(O(X^{s/p_T})\). Summing over
+coefficient choices and congruence classes gives (AS).
+The cancellation in the area-to-covolume ratio uses
+the actual modulus size and requires no estimate for
+the hidden height of its factors.
+
+For a comparison at unit budget, take short masses
+\(a_1=4/25,a_3=1/25\), tall masses
+\(b_1=3/25,b_2=1/5,b_4=3/25\), and
+\(c_2=3/10,c_6=1/50\) with \(c\)-tail mass \(1/25\)
+at limiting weight \(7/25\).
+Lock \(a_3\) together with the zero-mass short tail, and release
+just the degree-two coordinates on the tall terms, designating \(B=c\).
+Here \(s=4/25\) and the lock has weight \(3/25\).
+The progression-based strip energies are \(16/25\) and \(7/25\)
+on \(b,c\), giving \(D\le27/50\) from the separated
+residue formula. Intersecting the lattices with the
+strip replaces those energies by \(14/25\) and \(1/5\),
+so the same formula gives \(D\le1/2\).
+This comparison uses a feasible mass and height
+profile for the two energy estimates.
+
+### Asymmetric power groups in the repeat energies
+
+The two copies in an off-diagonal repeat may release different
+power groups. Fix a lock of numerical weight at least \(w\)
+and mass \(f\), with modulus \(M\). Let \(s\ge0\) bound the
+logarithmic magnitude of the nonzero quotient in a repeat
+difference divisible by \(M\). The ordinary choice is \(s=1-w\).
+The short-addend strip also permits the projected numerical
+weight of the unlocked short coordinates.
+
+For a free letter \(T\), choose groups \(I,J\) in the first
+and second copies of its repeat. They can intersect or coincide.
+Require a common integer \(p\ge2\) dividing every degree in
+\(I\cup J\). The groups have factor masses \(m_I,m_J\) and
+numerical root exponents \(r_I,r_J\), where the root products
+are formed after division by \(p\). Then the repeat exponent
+can be taken to be
+\[
+ E_T(I,J)=2L_T-m_I-m_J+
+            \max\{r_I+r_J-w,\ s/p\}. \tag{A}
+\]
+Choose \(p=\gcd(I\cup J)\) for the strongest form of this
+estimate. This form allows larger numerical root exponents
+on one copy if the other keeps them below the rank-two
+threshold. In the real short strip, the same argument as above
+uses a strip with area \(O(UV M X^{s-1})\), so the area term in
+(A) becomes \(r_I+r_J+s-1\).
+
+Freeze the complementary products in each of the two
+copies, at combined cost \(2L_T-m_I-m_J\). Their complete
+values are now \(P u^p,P'(u')^p\). On an admissible nonzero
+repeat the difference is \(jM\), with \(1\le |j|\ll X^s\).
+All four quantities are units modulo \(M\), since each
+complete value is coprime to the locked factor in its
+additive triple. Thus \(uu'^{-1}\) lies in one of
+\(X^\varepsilon\) classes modulo \(M\), from the CRT bounds
+for unit \(p\)-th roots. Each class gives a lattice of
+index \(M\) in \(\mathbb Z^2\).
+
+Scale the root rectangle with sides \(U\ll X^{r_I}\),
+\(V\ll X^{r_J}\) to a fixed square. In each image lattice,
+if the admissible points contain independent vectors, one
+can use a Gauss basis with shortest length \(\ell\) and
+perpendicular height \(H\). Independence in a fixed square
+gives \(\ell,H\ll1\) as in the symmetric proof. The integer
+coordinates in this basis obey \(O(1/\ell)\) and \(O(1/H)\)
+bounds, so there are \(O((\ell H)^{-1})=O(UV/M)\) points.
+If the points are collinear through the origin, each
+positive integer pair is a positive multiple \(d(v,v')\)
+of the one primitive integer ray. Then \(d^p\mid j\) by
+the difference identity and \(\gcd(d,M)=1\). Thus a
+collinear residue contributes \(O(X^{s/p})\) points.
+Summing over classes and frozen data proves (A). The same
+argument aggregates over disjoint strip intervals since
+every ordered repeat belongs to at most one interval.
+
+Insert the two \(E\)-bounds in the usual separated
+diagonal estimate
+\[
+ D\le f+\max\left\{
+      L_B,\ (E_A+L_B)/2,\ (E_A+E_B)/2\right\}.
+\]
+The resulting bound is again a maximum of at most seven
+affine functions for fixed groups on each side. Legacy
+upper bounds on either repeat exponent can also be reused.
+
+#### Exact comparison at a unit-budget profile
+
+Take the following exact nonzero masses:
+\[
+ a_1=23/600,\quad a_2=3/10,\quad a_6=1/60,\qquad
+ b_3=1/25,\quad b_4=29/200,\quad b_5=3/50,\qquad
+ c_2=73/200,\quad c_7=1/100,\quad c_8=1/40.
+\]
+Then \(L_a=71/200,L_b=49/200,L_c=2/5\), the budget is
+one, and both \(b,c\) have height one. The last two
+coordinates can be combined into the degree-at-least-seven
+mass for a projected computation. Lock \(b_5\), so
+\(f=3/50,w=3/10,s=7/10\).
+
+On \(a\), choose \(p=2,I=\{2\},J=\{2,6\}\). The two
+root exponents are \(3/10,7/20\), and the gap in (A) is
+\(7/20\). The resulting \(E_a=133/300\). The best
+symmetric choice with this lock has \(E_a=23/50\):
+the respective choices of the degree-2 block alone,
+the degree-6 block alone, and their union give
+\(23/50,\ 119/150,\ 143/300\), with the singleton
+degree-6 block counted at \(p=6\). Including the
+degree-1 block cannot improve this symmetric
+comparison, since (A) requires a genuine power group.
+
+On \(c\), use \(p=2\) and the degree-2 coordinate in
+both copies, giving \(E_c=1/2\). This remains the best
+symmetric group even when \(c_7,c_8\) are separately
+available: the group containing both \(c_2,c_8\)
+has rank-two gap \(63/100\) and repeat exponent
+\(13/20\), and any group omitting \(c_2\) has
+complementary expense at least \(73/100\).
+This yields the mixed cap
+\[
+ D\le319/600<107/200
+\]
+compared to \(27/50\) for the best symmetric cap with
+this same lock. The comparison uses the same fixed modulus throughout.
+
+### Different powers on the two copies
+
+More generally, allow the first and second released groups
+to use degrees \(p,q\), respectively. Let
+\(g=\gcd(p,q)\), \(P=p/g\), \(Q=q/g\).
+The root exponents before lifting are \(r_I,r_J\).
+Lift the roots \(u,u'\) to \(Y=u^P,Z=(u')^Q\).
+Their root boxes have exponents \(Pr_I,Qr_J\). The same
+argument bounds the repeat exponent by
+\[
+ E_T(I,J)=2L_T-m_I-m_J+
+       \max\{Pr_I+Qr_J-w,\ s/\operatorname{lcm}(p,q)\}. \tag{B}
+\]
+The lock and the nonzero shift satisfy the hypotheses
+of (A). Degrees \(p=1\) or \(q=1\) are also allowed,
+with the corresponding root just the entire numeric
+group product. This allows an aggregate tail in such
+a group using its projected upper numeric weight.
+
+The ratio congruence is on \(Y/Z\), with \(g\)-th power
+fixed modulo \(M\), including an ordinary single linear
+ratio when \(g=1\). The rank-two case therefore gives
+\(O(X^{Pr_I+Qr_J-w})\) as before. In a real short strip the rank-two term becomes
+\(Pr_I+Qr_J+s-1\). In the collinear case
+\((Y,Z)=d(Y_0,Z_0)\) on a fixed primitive integer ray.
+As before, \(d^g\mid j\). Since \(Y,Z\) are respectively
+\(P\)-th and \(Q\)-th powers, at each prime \(\ell\)
+one has
+\[
+ \operatorname{ord}_\ell(d)\equiv
+       -\operatorname{ord}_\ell(Y_0)\pmod P,\qquad
+ \operatorname{ord}_\ell(d)\equiv
+       -\operatorname{ord}_\ell(Z_0)\pmod Q .
+\]
+The moduli are coprime. At all but finitely many primes
+the prescribed class modulo \(PQ\) is zero. Choosing
+the least nonnegative solution at every prime gives
+a fixed \(d_0\ge1\) such that every admissible \(d\)
+has shape \(d_0 t^{PQ}\) for a positive integer \(t\).
+The divisibility \(d^g\mid j\) now gives
+\(t\ll X^{s/(gPQ)}=X^{s/\operatorname{lcm}(p,q)}\).
+The lifting maps are injective on positive integer roots,
+so this is the desired number of original root pairs.
+The same combination of two energies gives the
+seven-arm affine count, and taking the largest
+admissible \(p,q\) is strongest for fixed groups.
+
+#### An exact different-power example
+
+Consider the unit-budget profile
+\[
+ a_1=11/100,\quad a_2=3/50,\quad a_4=7/50;\qquad
+ b_2=17/100,\quad b_3=1/50,\quad b_5=3/50,\quad b_6=1/20;\qquad
+ c_1=7/200,\quad c_2=27/100,\quad c_5=17/200.
+\]
+The masses of the letters are \(31/100,3/10,39/100\).
+The last letters both have weighted height one, and
+the first has height \(79/100\).
+Lock \(b_5,b_6\), giving \(f=11/100,w=3/5,s=2/5\).
+
+For \(a\), use \(I=\{2,4\}\) with \(p=2\) and
+\(J=\{4\}\) with \(q=4\). The lifted root heights are
+\(34/100,28/100\), so the rank-two gap is \(2/100\).
+The collinear gap is \(1/10\), and (B) gives
+\(E_a=19/50\). The best equal-power choice, allowing
+asymmetric groups too, has \(E_a=21/50\) and uses
+\(\{2,4\}\) in both copies with power 2. This follows
+by checking the three permitted groups \(\{2\}\),
+\(\{4\}\), and \(\{2,4\}\).
+On \(c\) choose \(\{2\}\) in both copies, giving
+\(E_c=11/25\). This is also the best equal-power choice
+on that side.
+
+The resulting cap is \(13/25\), compared to \(27/50\)
+with the best equal-power choices for the same lock.
+This is a comparison of the two repeat bounds at a
+fixed modulus.
+
+### Slicing the rank-two lattice for unequal lifted powers
+
+In the genuinely different-power repeat bound, the two copies
+release \(p\)-th and \(q\)-th power factors of root exponents
+\(r_1,r_2\). Write \(g=\gcd(p,q)\), \(P=p/g\), \(Q=q/g\)
+and lift to \(Y=u^P,Z=v^Q\). The raw lifted exponents are
+\(\rho_1=P r_1,\rho_2=Q r_2\).
+Suppose the lock supplies a modulus of numerical exponent
+at least \(w>\max(\rho_1,\rho_2)\).
+Write \(s\) for the upper exponent of the nonzero repeat
+quotient and \(t=\rho_1+\rho_2-w\).
+The repeat bound can use the gap
+\[
+ \min\left\{\max\{t,s/\operatorname{lcm}(p,q)\},
+  \max\left\{
+        t/2+\min(r_1/Q,r_2/P),
+        s/\operatorname{lcm}(p,q)\right\}\right\}.
+ \tag{S}
+\]
+As usual add \(2L_T-m_I-m_J\) to obtain the repeat energy
+exponent. Formula (S) is a choice between valid maxima
+of affine terms when the two group powers are fixed.
+
+For fixed complementary coefficients, the unit ratio congruence
+for \(Y/Z\) is a fixed \(g\)-th power modulo the lock.
+Thus all root pairs fall in \(O_\varepsilon(X^\varepsilon)\)
+lattices of index \(M\), each of the form
+\(Y\equiv\lambda Z\bmod M\) with \(\lambda\) a unit.
+Normalize the lifted box of bounds \(U,V\) to a fixed
+square. With two independent vectors in the square,
+let \(\ell\) be the shortest vector length and \(H\) the
+perpendicular component of a reduced second basis vector.
+Both are bounded above, \(H\gg\ell\), and
+\(\ell H=M/(UV)\). The coefficient of the second basis
+vector is bounded by \(O(1/H)\ll (UV/M)^{1/2}\),
+so this coordinate has \(O(X^{t/2})\) possible values.
+When \(t<0\) strictly, this two-dimensional case cannot
+occur for large \(X\); at a vanishing exponent slack
+the same estimates allow \(X^{o(1)}\) errors.
+
+The shortest vector is nonaxial. In original coordinates
+a nonzero horizontal or vertical lattice vector has its
+nonzero coordinate at least \(M\), since \(\lambda\)
+is a unit. Its length after normalization would be
+at least \(M/U\) or \(M/V\), respectively, which tends
+to infinity by the strict guard. Thus fixing a nonzero
+value of the second integer coefficient cuts the lifted
+points by an affine line
+\(aY+bZ=c\) where \(a,b,c\ne0\). In the original
+roots this is \(a u^P+b v^Q=c\).
+It is absolutely irreducible, by Eisenstein at a simple
+root of the binomial in the other variable. The lattice
+basis in original coordinates and the line constant have
+polynomial height in \(X\) because both normalized basis
+vectors have bounded length. The plane rectangle bound using the two pure monomials gives
+\[
+ O_\varepsilon(X^{\min(r_1/Q,r_2/P)+\varepsilon})
+\]
+points on this line pullback. The line through the origin
+has at most the collinear repeat bound, since its primitive
+ray forces the scale to be a fixed coefficient times a
+\(PQ\)-th power and the scale to the \(g\)-th power
+divides the nonzero repeat quotient. The same collinear
+proof covers the whole box if it contains no independent
+vectors. This proves the second alternative in (S).
+The first alternative is the earlier unsliced lattice
+bound.
+
+The proof also applies to primitive cross-letter lattice
+pairs, where the zero line has at most one pair, so one
+may replace \(s/\operatorname{lcm}(p,q)\) by zero.
+For the short-addend real strip on such a pair, use
+the real linear change with coordinates
+\[
+ (Y-\kappa Z)/X^{\rho_1+h-1},\qquad Z/X^{\rho_2},
+\]
+where \(h\) is the short height and \(\kappa\asymp
+X^{\rho_1-\rho_2}\) comes from equality of the tall
+powers. The lock is the short cofactor, of weight
+\(h-k r\) if the released short term is a \(k\)-th
+power with root exponent \(r\). The normalized covolume
+gives \(t=\rho_1+\rho_2+kr-1\) and an axis vector would
+have length at least a constant times
+\(X^{1-kr-\rho_1}\) or \(X^{1-kr-\rho_2}\). Thus
+the projected nonaxial guard is \(kr+\max(\rho_1,\rho_2)<1\).
+Both formulas cancel the unknown short tail weight.
+
+#### Exact unit-budget comparison
+
+Take \(a_1=53/750,a_5=19/250,a_6=19/300\), so
+\(L_a=21/100\) and \(a\) is short. Take
+\(b_1=94/1000,b_2=103/1000,b_6=21/1000,b_7=82/1000\),
+so \(L_b=3/10\) and \(b\) has height one. Take
+\(c_1=1127/8000,c_2=591/2000,c_5=429/8000\), so
+\(L_c=49/100\) and \(c\) also has height one. Lock \(b_6\)
+and the whole tail of \(b\), with
+\(f=103/1000,w=7/10,s=3/10\). The total tail weight is determined by the retained weights
+on the tall letter.
+
+Release the degree-5 block of the first copy of \(a\)
+and the degree-6 block of the second copy at their full
+powers. The lifted heights are both \(19/50\) and the
+axis guard is strict. Then \(t=3/50\), and (S) takes
+the sliced rank-two arm \(16/375\) over the collinear
+arm \(1/100\). This gives \(E_a=97/300\). The best
+unsliced energy on \(a\), allowing different groups
+and powers including first powers, is \(41/125\).
+Both copies using degree five attain this, as does
+using \(\{1,5\}\) with power one in the first copy
+and degree five in the other. On \(c\), both copies
+use the degree-2 block, giving the optimal
+\(E_c=539/1000\) with or without slicing. Use
+\(A=c,B=a\) in the separated-diagonal bound to
+obtain
+\[
+ D\le641/1200<107/200,
+\]
+compared with \(1073/2000>107/200\) for the best
+unsliced cap with this modulus.
+
+[Heath-Brown's affine rectangle estimate, Equation (3) in the joint paper](https://arxiv.org/pdf/math/0506497)
+
+### Exact valuation support in a mixed residue ray
+
+Use the anatomic coordinates \(T=T_0\prod_i T_i^i\), with
+the bases \(T_i\) pairwise coprime and with the early indices
+\(1,\ldots,6\) exact. In the two copies of an off-diagonal
+repeat on \(T\), release valuation groups \(I,J\) at fixed
+powers \(p,q\), respectively. An entire aggregate tail, when
+released, is assigned power one and represents the indices
+\(7,\ldots,d\). Write \(g=\gcd(p,q)\), \(P=p/g,Q=q/g\),
+and lift the two roots to \(Y=u^P,Z=v^Q\).
+An index \(i\) in the first group contributes a prime exponent
+at least \(i/g\) on the lifted value, with equality if its base
+is squarefree, and similarly for \(J\).
+Let \(m_I,m_J\) be the two released masses. Let \(w\) be a
+lower numerical weight for the modulo lock \(M\), and let
+\(s\) bound the logarithmic magnitude of the nonzero quotient
+\(j\) in the complete repeat difference \(jM\).
+
+Let \(e\) be the least possible shared valuation index:
+\[
+ e=\min(I\cap J),\qquad s/e:=0\quad\hbox{if }I\cap J=\varnothing .
+\]
+When the only overlap is an aggregate tail, use \(e=7\).
+The old collinear arm \(s/\operatorname{lcm}(p,q)\)
+can be replaced by \(s/e\), without altering the rank-two arms.
+In particular this gives
+\[
+ E_T\le 2L_T-m_I-m_J+
+     \max\{\rho_1+\rho_2-w,\ s/e\},
+\]
+where \(\rho_1=P r_I,\rho_2=Q r_J\) are the lifted root
+exponents. A real-strip or sliced rank-two bound can be
+substituted on the same terms. Since any shared index is a
+multiple of \(\operatorname{lcm}(p,q)\), this never worsens
+the old collinear arm.
+
+#### Proof and exceptional coefficient
+
+Take the constructive BBLT Lemma 2.2 decomposition with
+cutoff parameter \(k=\lceil\epsilon_0^{-1}\rceil>6\).
+Its only nonsquarefree base can be \(T_k\), which absorbs
+integer powers from valuations above its large cutoff.
+Thus the retained bases of indices \(1,\ldots,6\) are
+squarefree and genuinely of their stated indices.
+All hidden coordinate exponents are at least seven.
+The exceptional factor \(T_0\) is fixed with the unreleased
+coordinates and costs \(X^{O(\epsilon_0)}\), which is
+absorbed as usual. Its prime support can also be included
+in the fixed support below, including the exceptional
+factor of each copy if they are not identical.
+The statement only uses exact early valuations outside
+this fixed exceptional support. [BBLT v2, Lemma 2.2](https://arxiv.org/html/2410.12234v2#S2)
+
+Freeze the two complementary products. Unit ratio classes
+of \(Y/Z\) modulo \(M\) give \(X^\epsilon\) lattices of
+index \(M\), as in the mixed-power bound.
+In a collinear lattice write \((Y,Z)=d(Y_0,Z_0)\)
+with \((Y_0,Z_0)\) its positive primitive integer ray.
+The fixed coefficient equation gives \(d^g\mid j\)
+because \(\gcd(d,M)=1\) and the repeat is nonzero.
+Let \(R\) be the product of primes dividing \(Y_0Z_0\)
+or either exceptional coefficient. It is at most \(X^{O(1)}\).
+Write \(d=d_R d_*\) according to this fixed support.
+
+For a prime \(\ell\nmid R\) dividing \(d_*\), both
+lifted powers have valuation \(v_\ell(d_*)>0\). It
+follows that their released numeric products have the
+same complete exponent \(g\,v_\ell(d_*)\). If one of
+the copies puts this prime in a retained early coordinate,
+the other copy must put it in the same retained coordinate:
+a hidden coordinate would give exponent at least seven.
+If both put it in hidden coordinates, its exponent is
+at least seven. Thus the exponent is at least \(e\).
+When the two groups have no common retained index and
+do not both contain the tail, \(d_*=1\).
+
+When \(e<\infty\), we have
+\[
+ \operatorname{rad}(d_*)^e\le d_*^g\le |j|\ll X^s .
+\]
+There are \(O(X^{s/e})\) radical choices. Both the
+fixed-support multiplicity \(d_R\) and the multiplicity
+of \(d_*\) at a fixed radical cost \(X^\epsilon\):
+for any \(R'\le X^C\) and \(\tau>0\),
+\[
+ \#\{m\le X^C:\operatorname{rad}(m)\mid \operatorname{rad}(R')\}
+ \le X^{C\tau}\prod_{\ell\mid R'}(1-\ell^{-\tau})^{-1}
+ \ll_\tau X^{2C\tau}.
+\]
+For the final inequality use
+\((1-\ell^{-\tau})^{-1}\le \ell^\tau\) for all sufficiently
+large primes, and absorb the finitely many remaining
+factors in the constant. Taking \(\tau\) sufficiently
+small gives the claim, uniformly in the ray and fixed
+exceptional coefficients. Summing over roots of the
+unit congruence and the two frozen complementary
+products proves the refined collinear arm.
+
+#### Exact fixed-lock comparison
+
+Take this unit-budget profile:
+\[
+ a_1=1/25,\quad a_2=7/50,\quad a_4=4/25;\qquad
+ b_1=1/250,\quad b_4=b_5=1/10,\quad b_6=2/125;\qquad
+ c_1=21/800,\quad c_2=73/200,\quad c_5=39/800.
+\]
+The masses are \(17/50,11/50,11/25\) and both \(b,c\)
+have height one. The first letter has height \(24/25\).
+Lock \(b_5\), yielding \(f=1/10,w=s=1/2\).
+For \(a\), take disjoint groups \(\{2\},\{4\}\), at powers
+two and four. The lifted exponents are \(7/50,8/25\),
+whose sum \(23/50\) is strictly less than \(w\).
+The rank-two arm is negative and the collinear arm is
+zero, giving \(E_a=19/50\). For \(c\), use the degree-2
+block in both copies, giving \(E_c=2/5\).
+With \(A=c,B=a\) the count exponent is at most \(49/100\).
+
+Enumerating all nonempty exact groups and all allowed
+powers on the two copies, including first powers and
+the guarded sliced arm, gives \(E_a\ge97/200\)
+and \(E_c\ge2/5\) with the old collinear arm. Optimizing
+the separated-diagonal orientation then gives
+\(217/400>107/200\) with the old bound.
+The comparison fixes the modulus.
+
+### Sliced primitive ratio locks with axial lines
+
+Release groups on the free letters \(A,B\) in powers \(p,q\),
+and let \(r_1,r_2\) be their original root exponents. Choose
+any common divisor \(g\) of \(p,q\), put \(P=p/g\),
+\(Q=q/g\), and lift the roots to \(Y=x^P,Z=y^Q\) with
+exponents \(\rho_1=P r_1,\rho_2=Q r_2\).
+Freeze the two complementary factors and the chosen lock
+on the third letter. The log cost of these choices is
+\(F=L_A+L_B-m_A-m_B+m_{\rm lock}\).
+
+For a modulus \(M\) of lower weight \(w\), let
+\(u=w\). If the locked letter is the short addend and its
+complement has upper numerical weight \(s\), we may instead
+take \(u=1-s\). In either case put
+\(t=\rho_1+\rho_2-u\). Then the ordinary and sliced bounds
+are respectively
+\[
+ D\le F+(t)_+,\qquad
+ D\le F+
+ \left[\frac t2+\max\!\left\{
+   \min\!\left(\frac{r_1}{Q},\frac{r_2}{P}\right),
+   r_1-u,\ r_2-u
+ \right\}\right]_+ .
+ \tag{RS}
+\]
+The maximum can use either of the two terms in the inner
+minimum as an affine upper bound. Both estimates allow
+arbitrarily small exponent losses.
+
+As in the mixed-power residue count, reduction modulo \(M\)
+gives \(O_\varepsilon(X^\varepsilon)\) unit ratio lattices
+of index \(M\).
+For the ordinary estimate, normalize the box on \(Y,Z\)
+to bounded side lengths. If the lock is short, the actual
+two tall values are comparable to \(X\) and differ by at
+most \(O(MX^s)\). For fixed coefficients their normalized
+lifted pair lies in a parallelogram specified by
+\[
+  |Y-\kappa Z|\ll X^{\rho_1}MX^{s-1},\qquad
+  Z\ll X^{\rho_2}, \qquad \kappa\asymp X^{\rho_1-\rho_2}.
+\]
+This follows by taking the ratio of the two positive
+\(g\)-th powers and using the mean value theorem on a
+fixed compact interval. Upon scaling this parallelogram
+to bounded size the lattice has determinant
+\(\gg X^{-t}\), since its index \(M\) cancels the \(M\)
+in the strip width. The ordinary normalized box also has
+determinant \(\gg X^{-t}\).
+
+If the normalized region contains two independent vectors,
+use a Gauss-reduced basis with shortest vector of length
+\(\ell\) and perpendicular spacing \(H\) between its lines.
+Both are bounded above, \(H\gg\ell\), and
+\(\ell H\) is the lattice determinant. The area estimate
+counts \(O((\ell H)^{-1})\) points. Alternatively, there
+are \(O(H^{-1})\ll X^{t/2}\) parallel lines. If \(t<0\)
+strictly, two independent vectors are excluded for
+large \(X\). In the collinear case the lifted pair is
+coprime because the two complete letters are coprime.
+It therefore lies at the unique positive primitive
+point on its ray.
+
+For the sliced estimate, the line through the origin
+again contributes at most one coprime pair. On a
+nonaxial line not through the origin the equation for
+the original roots is \(\alpha x^P+\beta y^Q=\gamma\)
+with all three coefficients nonzero. Its irreducibility
+follows by Eisenstein at a simple zero of
+\(\beta y^Q-\gamma\), including the case \(P=1\).
+The affine rectangle count bounds the number on
+one line by \(O_\varepsilon(X^{\min(r_1/Q,r_2/P)+\varepsilon})\).
+[Browning–Heath-Brown, equation (3)](https://arxiv.org/pdf/math/0506497)
+
+If the line is axial, one lifted root is fixed and the
+other is in a fixed unit residue class modulo \(M\).
+For instance, at fixed \(Z\), there are \(O_\varepsilon(X^\varepsilon)\)
+possible \(x\) residue classes modulo \(M\). This counts
+\(O_\varepsilon(X^{(r_1-w)_++\varepsilon})\) choices of \(x\)
+in the ordinary box. In the short case the difference of
+the complete values bounds the interval of \(x\) by
+\(O(X^{r_1} M X^{s-1})\), by the mean value theorem
+on the original tall powers. Thus in this case there are
+\(O_\varepsilon(X^{(r_1+s-1)_++\varepsilon})\) choices.
+The same arguments apply with \(x,y\) interchanged.
+This accounts for both axis terms in (RS), with no
+separate restriction on which direction is shortest.
+
+For an exact comparison, take the nonzero unit-budget
+masses
+\[
+ a_1=1/25,\quad a_6=3/20,\qquad
+ b_1=11/200,\quad b_2=13/50,\quad b_5=17/200,\qquad
+ c_1=1/50,\quad c_2=29/100,\quad c_4=1/10 .
+\]
+The short height is \(47/50\) and both tall heights are one.
+Lock \(c_4\) and release \(a_6,b_2\) with common divisor \(2\).
+Here \(w=2/5,\rho_1=9/20,\rho_2=13/50\), \(F=7/25\),
+and \(t=31/100\). The ordinary ratio bound with these
+groups is \(59/100\). The sliced bound has curve term
+\(13/150\) and both axis terms are negative, giving
+\(313/600<107/200\). In this example \(w<\rho_1\).
+
+For the short-addend form, take
+\(a_1=a_3=b_4=c_4=1/10\) and \(b_2=c_2=3/10\).
+The \(a\)-height is \(2/5\) and the other two heights are one.
+Lock \(a_3\) and release \(b_2,c_2\) with \(g=2\).
+The ordinary margin is \(3/10\), whereas the short margin
+is \(-3/10\), so (RS) gives \(3/10\) instead of
+\(3/5\) for this fixed choice of groups and lock.
+
+## Signed monomial congruences over full moduli
+
+Fix \(m\ge1\) and \(C>0\). For all sufficiently large \(k\), depending only
+on \(m,C\), let \(n\ge2\) be \(k\)-full, so \(p^e\Vert n\) implies
+\(e\ge k\). Fix nonzero signed integer exponents \(\mathbf a=(a_i)_{i=1}^m\), and let \(\mathcal S\) be a set of unit tuples of positive integers
+\(x_i\le n^{C/k}\) such that
+\[
+\phi(\mathbf x)=\prod_i x_i^{a_i}\equiv K\pmod n.
+\]
+Suppose the exact rational monomial fibers in \(\mathcal S\) have size at most
+\(F_0\). Then, uniformly in the unit target,
+\[
+\#\mathcal S\ll_{m,C,k,\mathbf a,\varepsilon}
+F_0 n^{m(m-1)/(2k)+\varepsilon}.
+\tag{FC1}
+\]
+The lower bound on \(k\) is independent of \(\mathbf a\).
+
+The count uses an induction on algebraic dimension. The logarithmic Jacobian
+controls the amount of lost precision across the prime powers of \(n\). The
+coefficients of this logarithmic Jacobian admit a height bound uniform in the
+target.
+
+### The logarithmic Jacobian and local lifts
+
+Start with \(Z=\mathbb A^m\) and work at a stage on an algebraic set \(Z\) of
+dimension \(j\). A zero-dimensional set has boundedly many points. At positive
+dimension, the integer defining equations have bounded degrees and heights
+\(n^{O(1/k)}\). Choose a projection \(\mathbf t\) of \(j\) bounded integer
+linear forms dominant on every top-dimensional component, completing it to an
+invertible bounded integer linear change. The choice is by nonvanishing of
+finitely many tangent minors and the determinant, whose total degree is
+bounded. Elimination gives a nonzero equation in \((\mathbf t,z_i)\) for each
+of the \(m-j\) trailing coordinates, since each such projection has dimension
+at most \(j\). Remove the factors in \(\mathbf t\) alone and take the
+squarefree part \(G_i\) in \(z_i\). The removed factors and the derivatives
+\(\partial G_i/\partial z_i\) vanish only on proper subsets of each top
+component, by dominance of \(\mathbf t\) and squarefreeness over
+\(\mathbb Q(\mathbf t)\). Count these lower-dimensional sets by induction.
+Pull the \(G_i\) back to the original coordinates by the integer change.
+Hensel lifting then uses only integer coefficients, including at primes
+dividing the determinant of the linear change.
+
+On the remaining open set the differentials of the \(G_i\) are independent.
+Points on components with constant \(\phi\) cost at most \(O(F_0)\). On the
+other components take a bounded-integer linear combination \(J\) of maximal
+minors of the rows
+\[
+\nabla G_1,\ldots,\nabla G_{m-j},
+\quad
+\left(a_i\prod_{h\ne i}X_h\right)_{i=1}^m
+\]
+that is generically nonzero on each remaining component. Indeed, if the rank
+is deficient along such a component, the logarithmic differential annihilates
+its tangent space, so \(\phi\) is constant there in characteristic zero.
+Clearing denominators in that differential leaves a row of degree \(m-1\).
+The \(J=0\) points on the nonconstant components lie in the intersection of
+\(J=0\) with the closure of \(Z\setminus\{J=0\}\), which has dimension at
+most \(j-1\). Elimination and saturation preserve bounded degree and height
+\(n^{O(1/k)}\). These proper exceptional sets are handled by induction.
+
+The coefficient-height bound for elimination follows by stratifying the input
+coefficient space into finitely many locally closed pieces on which a Gröbner
+basis specializes from fixed rational functions in the inputs. Compute
+generically over each parameter component's function field, exclude the
+finitely many denominators in the basis and its membership and reduction
+identities, and continue on the closed complement. Clearing denominators gives
+an exponent \(O(1/k)\) for the output integer coefficients. Choosing a
+primitive factor or a squarefree part preserves that exponent by the
+fixed-degree factor-height bound, for example by Kronecker substitution
+followed by its univariate form. Saturation by a polynomial \(J\) is obtained
+by adding \(wJ-1\) and eliminating \(w\). These operations bound the degrees
+and heights in terms of the algebraic input bounds. The logarithmic row uses
+the fixed integers \(a_i\), whose sizes can be absorbed into a factor
+\(n^{1/k}\) for sufficiently large \(n\).
+
+At a remaining integer point \(\mathbf x\) write \(|J(\mathbf x)|\le n^{A/k}\), with \(A\) a constant depending only on the input bounds, \(m,C\), after
+absorbing fixed constants for large \(n\). For \(p^e\Vert n\), record \(p\)
+as bad if \(v_p(J(\mathbf x))>e/3\). The discarded prime powers have product
+at most \(n^{3A/k}\), because
+\[
+\sum_{p\mid n}v_p(J(\mathbf x))\log p\le(A/k)\log n.
+\]
+At any good prime at least one of the chosen minors has valuation at most
+\(e/3\). Choose an integer representative for \(K\) and set
+\(F=\prod X_i^{a_i^+}-K\prod X_i^{a_i^-}\), where \(a_i^+=\max(a_i,0)\) and
+\(a_i^-=\max(-a_i,0)\). At the original unit point, \(\nabla F\bmod p^e\) is
+a unit multiple of the cleared logarithmic row. The valuation \(\delta\) of
+the corresponding minor of \((\nabla G_i,\nabla F)\) is therefore at most
+\(e/3\). Keep the unselected original coordinates fixed and lift the system
+\(G_i=F=0\) by multivariate Hensel to a unit point of distance at most
+\(p^{-(e-\delta)}\). Here \(e>2\delta\). The lifted minor stays nonzero. The
+reference set given by \(G_i=F=0\) and the full-rank condition therefore has
+dimension \(j-1\) at each of its points.
+
+### The determinant count and amplification
+
+For \(j>1\), the exact reference sets form a semialgebraic family of dimension
+\(j-1\) when nonempty. For sufficiently large primes, uniform \(T_r\)
+parametrization gives boundedly many charts for every fixed order \(r\),
+uniformly in the defining coefficients. Over each of the finitely many smaller
+fields \(\mathbb Q_p\), the fixed-field parametrization theorem indexes its
+charts by a fixed finite power of a finite residue-ring sort. Its chart count
+is therefore also uniform in the coefficient parameters. The small-prime chart
+constants contribute at most a fixed product, independently of their powers in
+\(n\).
+[Cluckers–Forey–Loeser, Theorem 3.1.4](https://arxiv.org/pdf/1902.06589v1#page=15)
+·
+[Cluckers–Comte–Loeser, Theorem 3.2.3](https://arxiv.org/pdf/1404.1952v3#page=24)
+
+A \(T_r\)-chart restricted to a parameter class modulo \(p^b\) agrees modulo
+\(p^{rb}\) with a polynomial of degree less than \(r\) and integral
+coefficients in the parameter differences. This is the approximation used
+below when the original points are replaced by their corrected points.
+
+At each good prime partition parameter charts modulo \(p^{b_p}\), where
+\(b_p=\lfloor e/k\rfloor\ge1\). Record the chart and parameter class of the
+chosen correction, or that the prime was bad. The total number of records is
+\[
+O_\varepsilon\left(n^{(j-1)/k+\varepsilon}\right).
+\]
+Indeed each large prime contributes at most \(1+C_r p^{b_p(j-1)}\), the
+product of the \(p^{b_p}\) is at most \(n^{1/k}\), and
+\(C_r^{\omega(n)}\ll_\varepsilon n^\varepsilon\). Small primes have the
+separately bounded constants just described. In a given record the set of
+ignored primes is the same for all points.
+
+Use the \(D=\binom{M+j}{j}\) monomials of total degree at most \(M\) in the
+\(j\) projected coordinates \(\mathbf t\). Write \(w_1,\ldots,w_D\) for the
+least total degrees of \(D\) distinct monomials in \(j-1\) Taylor variables
+and put \(S_D=\sum w_i\). Since \(S_D\asymp_j D^{1+1/(j-1)}\), choose \(M\)
+so that \(S_D>4CMD+4\), and take \(r>w_D\). Increasing \(k\) in terms of
+these constants ensures \(2e/3\ge r b_p\) and \(1-3A/k\ge1/2\). An evaluation
+determinant from one record is divisible at good \(p\) by \(p^{b_p S_D}\).
+Taylor expansion and multilinearity give this divisibility. Repeated Taylor
+monomial columns give zero, while every error column, including the lifting
+error, is divisible by \(p^{rb_p}\). The projected coordinate forms have
+integer coefficients, so substitution and taking monomials preserve the
+congruent Taylor approximations. Since \(b_p\ge e/(2k)\), the simultaneous
+divisibility is at least
+\[
+n^{(1-3A/k)S_D/(2k)}\ge n^{S_D/(4k)}.
+\]
+The determinant is an integer of absolute value \(O(n^{CMD/k})\), so
+vanishes. Its nullspace gives a bounded-degree polynomial in \(\mathbf t\) of
+height \(n^{O(1/k)}\) by maximal minors. It cuts dimension on every top
+component by dominance of the projection. This produces
+\(O_\varepsilon(n^{(j-1)/k+\varepsilon})\) child sets of dimension at most
+\(j-1\).
+
+At \(j=1\), the good-prime corrected points are isolated solutions of
+\(G_i=F=0\). Their number is bounded uniformly in the coefficients by Bézout,
+with the bound allowed to depend on the fixed exponents \(\mathbf a\). Record
+the isolated solution or a bad prime at each \(p\mid n\). There are
+\(O_\varepsilon(n^\varepsilon)\) possibilities. Two original points with the
+same record agree modulo \(p^{\lfloor 2e/3\rfloor}\) at every good prime. The
+combined modulus is larger than \(2n^{C/k}\) for large \(k\), because the
+total good logarithmic mass is at least \((1-3A/k)\log n\) and
+\(\lfloor2e/3\rfloor\ge e/2\). Hence each record fixes at most one original
+tuple.
+
+Summing the dimension costs gives \(\sum_{j=1}^m(j-1)=m(m-1)/2\), proving
+(FC1). The degree and height bounds, and the recursively required minimum
+\(k\), depend only on \(m,C\), because all logarithmic-minor and auxiliary
+degrees are independent of \(\mathbf a\). The large-prime cutoff and
+fixed-prime chart constants may depend on \(\mathbf a\) and the chart order
+and only enter the implied constant.
+
+For integer tuples with pairwise coprime coordinates, group solutions by a
+prime coloring and amplify by taking coordinatewise products. Assign one color
+to each coordinate. Some coloring retains \(n^{-o(1)}\) of the tuples with
+each prime in its coordinate's color. Form \(\ell\)-fold products from those
+tuples. Input multiplicity is divisor-many, and the signed exact monomial on
+the colored products has fibers of size one, because the valuation of a prime
+is assigned to its unique coordinate. Apply (FC1) to the products at height
+constant \(\ell C\) and target \(K^\ell\), then take \(\ell\)-th roots. The
+bound becomes
+\[
+O_{m,C,k,\mathbf a,\ell,\varepsilon}
+\bigl(n^{m(m-1)/(2\ell k)+\varepsilon}\bigr)
+\tag{FC2}
+\]
+for sufficiently large \(k\) depending on \(m,\ell C\). Thus any bounded
+collection of pairwise coprime coordinates of height \(X^{O(L)}\) can be
+released at cost \(o(L)\) when the modulus has positive limiting weight and
+fullness threshold of order \(1/L\). A grouped low cofactor may be treated as
+a coordinate of exponent one when its height is \(X^{O(L)}\). In the anatomic
+decomposition we fix the small exceptional coefficient at the truncation loss.
+The remaining coordinates within each letter may be taken pairwise coprime.
+Coordinates on different letters are coprime by primitivity. All exponents
+range over a fixed finite set at each truncation before \(X\to\infty\).
+[Bernert–Browning–Lichtman–Teräväinen, Proposition 2.1 and Lemma 2.2](https://arxiv.org/html/2410.12234v2#S2)
+
+## Signed monomials in real short strips
+
+Fix \(m\ge1\) and \(\eta>0\). There exists \(K_0=K_0(m,\eta)\) with the
+following property. Fix any signed integer vector
+\(\mathbf a=(a_1,\ldots,a_m)\), set \(\phi(\mathbf x)=\prod_i x_i^{a_i}\),
+and let \(C>0\) vary arbitrarily. For \(K\ge K_0\), consider positive integer
+tuples \(x_i\le H\) such that
+\[
+|\phi(\mathbf x)/C-1|\le H^{-K}.
+\tag{SR2}
+\]
+If every exact rational value of \(\phi\) has at most \(F_0\) preimages in the
+set under consideration, the count is
+\[
+O_{m,\eta,\mathbf a,K}(F_0 H^\eta),
+\tag{SR3}
+\]
+uniformly in \(C\). In particular \(K_0\) is independent of the signed
+exponent vector.
+
+On each dyadic box normalize \(z_i=x_i/B_i\in[1,2]\), with integer
+\(B_i\le H\). Put
+\[
+\Phi(\mathbf z)=\frac{\prod_i B_i^{a_i}}{C}\prod_i z_i^{a_i}.
+\]
+The scalar factor is bounded above and below in terms of the fixed exponents
+if the box has at least one solution. Work on the enlarged positive box
+\([1/2,3]^m\). The exact reference equation is \(\Phi=1\), a polynomial
+equation after clearing powers of the coordinates. Its degree may depend on
+\(\mathbf a\), but its logarithmic row has the form
+\[
+d\log\Phi=\left(a_i/z_i\right)_{i=1}^m,
+\]
+which clears to a polynomial row of degree \(m-1\).
+
+Apply the algebraic dimension reduction of the full-modulus proof to the
+bounded-degree sets \(Z\) containing the normalized rational points, starting
+from \(Z=\mathbb A^m\). Their defining coefficients have height \(H^{O(1)}\),
+with the exponent independent of \(\mathbf a,C\). At a set of dimension \(j\),
+choose \(j\) bounded integer linear projection forms \(\mathbf t\) dominant on
+each top-dimensional component, as in (FC1). Eliminate to get polynomial
+equations \(G_i(\mathbf t,y_i)\) for the \(m-j\) trailing coordinates, with
+bounded degree and height \(H^{O(1)}\). The uniform Gröbner-basis
+specialization above gives the coefficient-height bound. Remove the
+\(\mathbf t\)-only factors and take the squarefree part in \(y_i\). The zero
+sets of the removed factors and the trailing derivatives \((G_i)_{y_i}\) meet
+\(Z\) in sets of dimension at most \(j-1\) by dominance and squarefreeness, so
+they are counted by induction. On the remaining set, the \(G_i\), pulled back
+to the normalized variables, have independent gradients.
+
+An irreducible geometric component on which \(\Phi\) is constant contributes
+at most \(F_0\) points. On any other component meeting the good open set, the
+cleared logarithmic row together with the \(\nabla G_i\) has a generically
+nonzero maximal minor. Otherwise the logarithmic differential annihilates that
+component's tangent space and the monomial is constant, in characteristic
+zero. Choose a bounded-integer linear combination \(J\) of the minors that is
+nonzero generically on each such component. The remaining bad \(J=0\) points
+are in the intersection of \(J=0\) with the saturation of \(Z\) by \(J\), a
+bounded-degree set of dimension at most \(j-1\) and with coefficient height
+\(H^{O(1)}\). Use induction there as well.
+
+At every remaining original point, some minor of \((\nabla G_i,d\log\Phi)\) is
+nonzero, with inverse absolute value \(O(H^A)\) for a fixed \(A\) independent
+of \(\mathbf a\). Indeed each \(z_i\) is rational with denominator at most
+\(H\). After clearing the factors from the logarithmic row, a nonzero
+integer-polynomial minor of bounded degree has absolute value at least
+\(H^{-O(1)}\) at such a point. Dividing the \(G_i\) by their coefficient
+maxima to keep their derivatives bounded loses only another \(H^{O(1)}\). The
+linear change used in the projection has bounded coefficients. The exponents
+\(a_i\) contribute only fixed constants to derivative bounds, not to their
+powers of \(H\).
+
+Fix the remaining \(j-1\) original coordinates and solve the real system
+\[
+G_i=0,\qquad \log\Phi=0
+\]
+in the \(m-j+1\) coordinates specified by the minor. At the original point its
+residual is \(O(H^{-K})\) and the inverse Jacobian has norm \(O(H^A)\). Its
+second derivatives are bounded on the enlarged box, with constants allowed to
+depend on the fixed exponents. For \(K>2A+1\), quantitative inversion gives a
+solution within \(O(H^{-K+A})\) of the original point, and the relevant
+Jacobian remains nonzero there. This follows directly from the contraction
+mapping theorem applied in a ball of radius a sufficiently large fixed
+multiple of \(H^{-K+A}\), using the original inverse Jacobian. The exact
+solution belongs to the semialgebraic set defined by the \(G_i=0\), the
+cleared equation \(\Phi=1\), and the full rank condition. That reference set
+has real dimension \(j-1\) on the enlarged positive box. Use this exact
+reference set for the determinant comparison.
+
+When \(j>1\), the real Yomdin–Gromov algebraic lemma gives boundedly many
+charts of dimension \(j-1\) with bounded derivatives through any fixed order.
+The bounds are uniform in the coefficients, with the semialgebraic complexity
+fixed by the equation degrees.
+[Binyamini–Novikov, Theorem 1](https://arxiv.org/pdf/2009.02082v1#page=1)
+
+Divide the parameter domains into cells of side \(H^{-\tau}\), with fixed
+\(\tau>0\). Use the \(D=\binom{M+j}{j}\) monomials of total degree at most
+\(M\) in \(\mathbf t\). If \(b_1,\ldots,b_D\) are the first Taylor orders in
+\(j-1\) variables, the determinant in any one cell is
+\[
+O\bigl(H^{-\tau\sum_{\nu=1}^D b_\nu}\bigr)
+\]
+as long as \(K-A\ge\tau b_D\). Taylor-expand about a parameter point in that
+cell. Repeated Taylor monomial vectors give zero contributions and the error
+in each column has at least the weight of the largest order used. The
+correction error of size \(O(H^{-K+A})\) is allowed by the same inequality.
+
+Each projected coordinate at an original point has denominator dividing
+\(\prod_i B_i\le H^m\). Clearing the determinant denominators costs at most
+\(H^{mMD}\). Choose \(M\) so that \(\tau \sum b_\nu>mMD\), possible because
+the number of projected coordinates exceeds the parameter dimension. The
+integer determinant is then zero. A maximal minor of the original evaluations,
+with denominators cleared, gives a nonzero polynomial in \(\mathbf t\) of
+bounded degree and height \(H^{O(1)}\). Its vanishing cuts all top-dimensional
+components of \(Z\) by dominance of the projection. There are
+\(O(H^{\tau(j-1)})\) such child sets, with constants allowed to depend on the
+fixed exponent vector. This induction, including the finite additional
+lower-dimensional exceptional sets, incurs at most \(H^{\tau m(m-1)/2}\) in
+total.
+
+When \(j=1\), the corrected points are isolated algebraic solutions of
+\(G_i=0,\Phi=1\) by the full-rank Jacobian. Bézout bounds their number in
+terms of the equation degrees, including the fixed exponents. For \(K>A+2\)
+their correction neighborhoods contain at most one original point each, as
+distinct normalized rational points from the same dyadic box are separated by
+at least \(1/H\). Dimension zero needs no correction. Choose \(\tau\)
+sufficiently small in terms of \(m,\eta\) and absorb the dyadic count into the
+remaining exponent. In the induction the determinant degrees, height exponents
+and the real correction precisions needed depend only on \(m,\eta\). The
+potentially high degree of the reference equation affects only the chart
+constants and the terminal Bézout bound. This proves (SR3).
+
+In particular, when the short term has limiting weight zero, the two tall
+terms have ratio \(1+O(X^{-1+o(1)})\). Suppose both tall terms have
+bounded-coordinate representations with all variable coordinates of height
+\(X^{O(L)}\), with any fixed coefficient factors allowed. Divide the two terms
+to get (SR2) with signed exponents. The target \(C\) absorbs the fixed
+factors, and the precision tends to infinity as \(\lambda\to0\), taking
+\(H=X^{O(L)}\). In each exact fiber the ratio of the two complete coprime
+terms determines both terms. Their anatomic representations are divisor-many
+at fixed truncation. Thus the two tall terms can be counted together at
+normalized cost zero after any necessary factors have been fixed.
+
+## A limiting small-budget coefficient of \(1/3\)
+
+Let \(N_\lambda(X)\) count ordered positive primitive triples \(a+b=c\le X\)
+with \(\operatorname{rad}(abc)<c^\lambda\). For every \(\eta>0\) and all
+sufficiently small fixed \(\lambda>0\),
+\[
+N_\lambda(X)\ll_{\lambda,\eta,\varepsilon}
+X^{(1/3+\eta)\lambda+\varepsilon}.
+\]
+In the limiting box notation \(L\) is the total root mass, \(l_T\) is the
+normalized mass on \(T\), and \(d=D/L\) in the limit. The numerical weight of
+a factor is its logarithmic exponent to base \(X\). Suppose \(d>1/3\), put
+\(u=1-2d\), and call a letter supported when \(l_T>u\). The fixed-degree
+cutoff gives a supported letter boundedly many heavy roots and a grouped low
+cofactor, all of height \(X^{O(L)}\), including for a letter of numerical
+height zero. We fix the initial small coefficients at the vanishing truncation
+loss. In the modular counts the remaining coordinates are pairwise coprime by
+the anatomic decomposition and primitivity. There is at least one supported
+letter since \(3u<1\).
+[Fixed-degree cutoff](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#making-the-low-coefficient-short-in-anatomic-boxes) · [Bounded-root release (30)](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#releasing-a-bounded-number-of-high-degree-coordinates)
+
+If all three are supported, lock a positive-weight heavy root on either tall
+term as a full modulus and release the other two supported terms by (FC2). The
+modulus root must cost at least \(d\), and releasing the two chosen tall roots
+by (30) gives \(2d\le1-d\), a contradiction.
+
+If exactly two letters are supported, let \(S\) be the remaining letter, of
+mass \(s\le u\). If \(S\) has positive numerical height \(h\), fix its part in
+degrees at least \(\lfloor h/(2L)\rfloor\). Its numerical weight is positive
+since the complementary weight is at most \(sh/2+o(1)\). It is a full modulus
+at cost at most \(s\). Release the two supported terms by (FC2), giving
+\(d\le s\le u<d\). If \(S\) has zero height, the two supported terms are the
+tall terms. Their signed ratio is counted at cost \(o(L)\) by (SR3), again
+impossible.
+
+It remains that exactly one letter is supported. Name the unsupported letters
+\(U,V\), of masses \(s_U,s_V\le u\). There is a positive-weight high
+coordinate of positive normalized mass on each unsupported letter of positive
+limiting height. For example, if \(U\) has height \(h>0\), fix \(V\) in full
+and consider the high part of \(U\) in degrees at least
+\(\lfloor h/(2L)\rfloor\). Were its largest coordinate mass at most
+\((d-s_V)/2+o(1)\), group the high coordinates into blocks of mass at most
+\((d-s_V)/2+\xi\) for a sufficiently small fixed \(\xi>0\). Start a new block
+when the next coordinate would exceed the cap. Consecutive completed blocks
+have combined mass above the cap, so there are boundedly many blocks and at
+least one has positive limiting weight. Using that block as modulus and
+counting the supported term by (FC2) would cost less than \(d\). Thus a
+coordinate of mass bounded below exists on a subsequence, and its degree
+threshold ensures positive limiting weight. Denote its mass by \(\beta_U\),
+and likewise by \(\beta_V\) when \(V\) has positive height.
+
+If both \(U,V\) have positive height, use the selected coordinate of \(U\) as
+modulus and fix the complement of the selected coordinate on \(V\). Release
+the selected coordinate on \(V\) along with the supported term by (FC2). The
+cost is \(\beta_U+s_V-\beta_V\). Exchanging their roles and adding the bounds
+gives
+\[
+2d\le s_U+s_V\le2u,
+\]
+a contradiction. If one unsupported letter, say \(V\), has numerical height
+zero, then \(U\) and the supported letter are the tall terms. Fix all of \(U\)
+apart from its selected positive-weight coordinate. Its fixed part costs
+\(s_U-\beta_U\), and (SR3) releases the selected coordinate and the full
+supported tall term jointly by their signed ratio. Thus \(d\le s_U-\beta_U\).
+On the other hand, use the selected coordinate of \(U\) as modulus and fix
+\(V\) in full. Equation (FC2) then gives \(d\le s_V+\beta_U\). Adding again
+gives \(2d\le2u\), a contradiction.
+
+This excludes every limiting \(d>1/3\). If the asserted estimate failed for
+some fixed \(\eta>0\) on budgets tending to zero, the anatomic truncation and
+height-shell decomposition with losses \(o(\lambda)\) would give limiting
+boxes with \(L\le\lambda+o(\lambda)\) and \(d\ge1/3+\eta\). The estimates
+above exclude those boxes. The endpoint with \(d=1/3\) and all three letter
+masses equal to \(1/3\) remains open in this argument.
+
+
+## Fixed-moment residue branches for the unit budget
+
+Fix the coordinates \(O\) of one letter \(C\) at cost
+\(X^{f+o(1)}\). Their product gives a modulus with lower numerical
+exponent \(w\). For each of the two released letters \(T\), write
+\(L_T\) for its full mass. The checker assigns one of the following
+energy exponents \(K_T\).
+
+- A list of distinct early indices \(J_T\), with positive integer
+  moment orders \(h_{T,i}\) satisfying
+  \(\sum_{i\in J_T}1/h_{T,i}\le1\), gives
+  \[
+  K_T=2L_T-\sum_{i\in J_T}\alpha_{T,i}
+  \qquad\text{if}\qquad
+  w\ge h_{T,i}\alpha_{T,i}\quad(i\in J_T).
+  \]
+  Freeze both copies of the complementary coordinates in the
+  congruence energy. Apply (6) with \(k=1\), uniformly in the unit
+  twist from those coordinates. Each positive-part term in (6)
+  vanishes under the displayed guards. The empty list gives the
+  trivial exponent \(2L_T\). An aggregated tail may stay among the
+  complementary coordinates at twice its mass.
+- A null list gives \(K_T=L_T\) under the guard \(w\ge2L_T\) by
+  (7). The argument for (7) uses the full root mass, so this case
+  also applies with an aggregated tail.
+
+For each fixed choice of the locked coordinates, the complete
+residues of the two released letters agree up to their sign in the
+primitive equation. Cauchy–Schwarz on the residue distributions
+bounds their pair count by the geometric mean of their congruence
+energies. Restoring the lock, (9) gives
+\[
+D\le f+\frac{K_A+K_B}{2}.
+\tag{FM}
+\]
+The verifier's fixed-moment branch uses (FM) when all guards hold,
+with one complementary branch for the weak reverse of each guard.
+These branches cover the closed projected box. The integer moment
+orders in the verifier are bounded by \(128\).
+
+For two exact unit-budget profiles, lock \(O=\{4\}\) on \(a\), so
+\(f=a_4\) and \(w=4a_4\). On \(b\) take the diagonal bound, and on \(c\)
+use indices \(1,3\) with both moment orders equal to \(2\). The entries
+in each profile column are numerators with the indicated common
+denominator.
+
+| Quantity | Denominator \(25986\) | Denominator \(239660\) |
+| --- | ---: | ---: |
+| Candidate \(D\) | \(13523\) | \(126872\) |
+| \(a_4\) | \(4627\) | \(46074\) |
+| \(w=4a_4\) | \(18508\) | \(184296\) |
+| \(L_b\) | \(5244\) | \(41584\) |
+| \(L_c\) | \(11694\) | \(112788\) |
+| \(c_1\) | \(4627\) | \(49352\) |
+| \(c_3\) | \(6988\) | \(63436\) |
+| \(\max(2L_b,2c_1,2c_3)\) | \(13976\) | \(126872\) |
+
+All guards hold strictly. Equation (FM) bounds \(D\) by
+\(a_4+(L_b+2L_c-c_1-c_3)/2\), giving \(8757/17324\) and
+\(6163/11983\), respectively. Both caps are strictly below \(13/25\).
+
+The universal interpolation also admits a tighter rational envelope.
+For fixed \(y=L_T>0\), the convex bound in the proof of (8), divided
+by \(y\), is bounded at \(w/y=0,1,3/2,2\) by
+\(2,293/250,259/250,1\), respectively. The two interior bounds follow
+from (7), \(707^2<2\cdot500^2\), and \(433^2<3\cdot250^2\).
+Chords between successive vertices, together with the diagonal
+bound for \(w\ge2y\), give
+\[
+K_T\le\max\left\{
+2y-\frac{207}{250}w,\quad
+\frac{361}{250}y-\frac{34}{125}w,\quad
+\frac{143}{125}y-\frac9{125}w,\quad y
+\right\}.
+\]
+The displayed lines have successively increasing slopes and meet at
+\(w/y=1,3/2,2\). The zero-mass case follows from the trivial bound.
+
+## Necessary conditions at the balanced \(1/3\) endpoint
+
+The [outside factor graph](ABC_DIFFUSE_FACTOR_GRAPH.md) treats the
+case where the summed nonatomic degree mass is \(1/2\). Fixing
+the outside factors on any two letters bounds the number of
+completions uniformly, so the resulting graph has nearly quadratic
+size on the root-box scale.
+
+Consider a limiting sequence of anatomic boxes with \(L\to0\) and
+\[
+d=l_A=l_B=l_C=1/3.
+\]
+Take the exceptional coefficients fixed at the vanishing truncation loss. Write \(\beta_{T,e}=L_{T,e}/L\) for a coordinate's normalized root mass and \(eL\beta_{T,e}\) for its numerical weight. The degree set at each truncation is finite. Coordinates within a letter may be taken pairwise coprime, and the three complete terms are pairwise coprime. We use (FC2), (SR3), the bounded-root release (30), and the one-high scalable congruence.
+
+### Residual masses and their numerical weights
+
+For fixed nonnegative integers \(J,M\), discard on each letter all coordinates of degree at most \(J\), then discard the \(M\) largest remaining coordinates in normalized mass, breaking ties by degree. Write \(r_T(J,M)\) and \(v_T(J,M)\) for the limiting normalized mass and limiting numerical weight of the coordinates left over, along a subsequence on which all the indicated limits exist. These quantities are nonincreasing in \(J,M\). Define
+\[
+\delta_T=\inf_{J,M}r_T(J,M),\qquad
+\omega_T=\inf_{J,M}v_T(J,M).
+\]
+Thus \(\delta_T\) is the mass that remains after removing the bounded-degree part and arbitrarily many macroscopic coordinates. The corresponding residual numerical weight is \(\omega_T\). These definitions concern the given limiting sequence and its chosen subsequence.
+
+If a full modulus from \(T\) of positive limiting weight costs normalized mass \(\mu\), and its fullness threshold can be chosen of order \(1/L\), then
+\[
+\frac13\le\mu+\delta_U+\delta_V
+\tag{D1}
+\]
+for the other two letters \(U,V\). Indeed, freeze their residual coordinates at finite \(J,M\). The coordinates of degrees at most \(J\) on each free letter combine into one integer of height \(X^{O_J(L)}\). The \(M\) other retained coordinates on that letter are individually of height \(X^{O(L)}\). Apply (FC2) to this bounded collection, using the signed ratio of the free terms. The coprime ratio determines both complete values and the triple. The normalized cost is \(\mu+r_U(J,M)+r_V(J,M)\). Take \(J,M\) large after taking the small-budget limit. The same proof allows a divisor of a coordinate or a block of coordinates as the modulus, since its prime support stays on \(T\).
+
+If the short term has a logarithmic height gap \(\tau>0\) to the two tall terms with \(\tau/L\to\infty\), apply (SR3) after freezing the same residual coordinates on the two tall letters. The relative discrepancy of the two tall terms is \(O(X^{-\tau})\); the retained tuples have height \(X^{O_J(L)}\), and each exact complete ratio determines both tall values. Therefore
+\[
+\delta_B+\delta_C\ge1/3.
+\tag{D2}
+\]
+This includes every case where the limiting short height is strictly below \(1\).
+
+If \(\omega_T>0\), the modulus in (D1) can have arbitrarily small normalized cost. Fix \(J,M\) with \(M\) large. Every coordinate left over has normalized mass at most \(1/(M+1)+o(1)\). Their numerical weight is at least \(\omega_T-o(1)\). Keeping only degrees at least \(\lfloor \omega_T/(2L)\rfloor\) leaves positive numerical weight, since lower degrees contribute at most \(\omega_T/2+o(1)\). Group the high remainder into blocks of normalized mass at most \(2/(M+1)+o(1)\). Consecutive completed blocks have combined mass exceeding the cap, so there are boundedly many blocks for fixed \(M\). Some block has positive limiting weight. It is an available full modulus. Since \(M\) is arbitrary, (D1) gives
+\[
+\omega_T>0\quad\Longrightarrow\quad \delta_U+\delta_V\ge1/3 .
+\tag{D3}
+\]
+
+### Positive-weight coordinates and consequences
+
+For a positive-height letter \(T\), suppose \(t=1/3-\delta_U-\delta_V>0\). The part in degrees at least \(\lfloor h_T/(2L)\rfloor\), where \(h_T>0\) is the limiting height, has positive numerical weight. If its largest coordinate mass stays below \(t\) by a fixed margin, the same block construction gives a positive-weight full modulus of cost below \(t\), contrary to (D1). Thus there is a high coordinate with limiting mass at least \(t\) and positive limiting numerical weight. More generally, *each* positive-weight coordinate of limiting normalized mass has mass at least \(t\), since it can itself serve as modulus. Its degree is sufficiently large for the stated fullness threshold, including when its normalized mass tends to zero.
+
+In particular, \(\delta_T\le 1/3-t=\delta_U+\delta_V\) in this case, because the macroscopic coordinate can be removed among the \(M\) selected ones. If \(t\le0\) the same triangle inequality follows from \(\delta_T\le1/3\). Thus the three residual masses satisfy triangle inequalities whenever all terms have positive limiting height. When the short height tends to zero, the two positive letters give their triangle inequalities and the inequality for the short letter follows from (D2) and \(\delta_A\le1/3\).
+
+As a consequence, at most one letter has \(\delta_T=0\). Two zeros force three by the triangle inequalities. Three zeros contradict (D2) if there is a short height gap. With all positive heights, three zeros would force a macroscopic high coordinate of normalized mass at least \(1/3\) on each term, contradicting (30).
+
+Write \(\Delta=\delta_A+\delta_B+\delta_C\). If all heights are positive and \(\Delta<1/3\), choose one positive-weight coordinate on each term as above. Their total normalized mass is at least
+\[
+\sum_T(1/3-\delta_U-\delta_V)=1-2\Delta.
+\]
+Their degrees tend to infinity, so (30) bounds this sum by \(1-d=2/3\), giving \(\Delta\ge1/6\). This lower bound is automatic if \(\Delta\ge1/3\); if one height is zero, (D2) gives the stronger \(\Delta\ge1/3\). In fact (D2) and (D3) give \(\Delta\ge1/3\) whenever there is a short height gap as specified above or any \(\omega_T>0\).
+
+These statements also give finite positive-weight structure if \(\Delta<1/3\). Every positive-height term then has \(\omega_T=0\) by (D3). Each of its positive-weight coordinates costs at least \(1/3-\Delta>0\), so only boundedly many such atoms can occur. More formally, pass to a further diagonal subsequence for the sets of \(M\) largest coordinates outside degree \(J\), so their pairwise coincidences stabilize and each selected mass and weight has a limit. Any distinct selected coordinates with positive limiting weight each have mass at least \(1/3-\Delta\), hence induce finitely many such coordinate sequences on each letter. The sum of their limiting weights is the whole letter's weight, since \(\omega_T=0\) and fixed degrees contribute zero. In this regime the diffuse mass is carried at scaled degrees \(eL\) tending to zero, in the sense that for every fixed \(c>0\), its mass in degrees \(eL\ge c\) is at most \(\omega_T/c=0\).
+
+### Single-scale refinement at zero short height
+
+Say a positive-height letter concentrates at a single normalized degree if there is \(r>0\) such that for each \(\epsilon>0\), the numerical weight outside \(|eL-r|\le\epsilon\) tends to zero. Such a letter can be written as \(VT^q\), where \(q=\lfloor r/L\rfloor\), the root \(T\) is the product of the coordinates in a slowly shrinking interval about \(r\), and the residual rational \(V\) has height \(X^{o(1)}\). Indeed, the weight outside the interval tends to zero, and the sum of the root masses times the discrepancies \(|e-q|\) inside the interval also tends to zero. The height of \(T\) is \(X^{O(L)}\).
+
+If the short term has limiting numerical height zero, neither tall term can concentrate at a single normalized degree in a balanced limiting sequence. Suppose the first tall term does so. Using a positive-weight full modulus from the second tall term, the scalable one-high count recovers the ratio of the first tall term and the numerical short term at cost \(o(L)\) beyond the modulus. The residual multiplier comes from \(V\) divided by the short term and has height \(X^{o(1)}\). Thus every admissible positive-weight modulus from the second tall term costs at least \(1/3\). Its total root mass is \(1/3\). The high-block argument above forces a single high coordinate of limiting mass \(1/3\). Any positive height on the remaining coordinates would give a cheaper block, since their total mass tends to zero. So this coordinate carries the full tall height and has \(eL\to3\). The second tall term therefore also concentrates at a single normalized degree. Reverse the modular argument to force the same full-mass single-coordinate structure on the first. Both tall residual diffuse masses vanish, contradicting (D2).
+
+Thus a zero-short-height balanced limiting sequence needs at least \(1/3\) diffuse mass on the two tall letters together, and numerical weight on both tall terms spread across more than one limiting normalized degree or escaping to arbitrarily large normalized degrees.
+
+The [four-prime graph argument](ABC_WIDE_COFACTOR_CONGRUENCES.md#strict-residual-mass-at-the-balanced-13-endpoint) gives the stronger necessary condition \(\Delta>1/3\) for every balanced limiting box. The [bounded-variable extension](ABC_WIDE_COFACTOR_CONGRUENCES.md#necessary-conditions-at-normalized-exponent-13) forces every limiting profile at \(d=1/3\) to be balanced and gives \(\Delta\ge1/2\), or \(\Delta\ge2/3\) if the short height tends to zero. These lower bounds hold already for the nonatomic part of the limiting root mass distributions in the scaled degrees.

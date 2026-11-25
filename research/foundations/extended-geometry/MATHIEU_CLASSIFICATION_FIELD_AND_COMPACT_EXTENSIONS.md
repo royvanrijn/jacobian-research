@@ -252,7 +252,7 @@ On the finite-dimensional parameter space spanned by these denominators, each po
 
 ## The remaining compact-derived case over real closed fields
 
-Suppose $G$ is connected and $K$ is real closed. Once all active noncompact factors have been handled, quotient out the inactive noncompact factors, which are normal and act trivially. The resulting derived group is of compact type. Up to a central isogeny one may write $G=T_s\times G_c$, where $T_s$ is split central and $G_c$ is of compact type. Taking the preimage of $H$ preserves the homogeneous space. The projection of the connected stabilizer to $T_s$ is a subtorus that is itself contained in the stabilizer: the connected center of the stabilizer maps onto that projection, its anisotropic part has no split characters, and its split part maps trivially to $G_c$. Remove this subtorus. With the resulting notation $T$, the stabilizer has finite projection $\Gamma$ to $T$, and it has projection $L'$ to $G_c$. The product map gives an equivariant surjection
+Suppose $G$ is connected, $K$ is real closed, and the homogeneous space has a $K$-point, so its stabilizer $H$ is defined over $K$. Once all active noncompact factors have been handled, quotient out the inactive noncompact factors, which are normal and act trivially. The resulting derived group is of compact type. Up to a central isogeny one may write $G=T_s\times G_c$, where $T_s$ is split central and $G_c$ is of compact type. Taking the preimage of $H$ preserves the homogeneous space. The projection of the connected stabilizer to $T_s$ is a subtorus that is itself contained in the stabilizer: the connected center of the stabilizer maps onto that projection, its anisotropic part has no split characters, and its split part maps trivially to $G_c$. Remove this subtorus. With the resulting notation $T$, the stabilizer has finite projection $\Gamma$ to $T$, and it has projection $L'$ to $G_c$. The product map gives an equivariant surjection
 $$
  (T\times G_c)/H\ \longrightarrow\ (T/\Gamma)\times(G_c/L').
 $$
@@ -377,7 +377,84 @@ The same bad-pair argument works for a torsor of a nonadjoint compact semisimple
 
 ### Self-normalizing compact stabilizers
 
-If $C$ has compact type over a real closed field and $L$ is a geometric reductive stabilizer with $N_{C_{\overline K}}(L)=L$, any $C$-homogeneous $K$-form of $C_{\overline K}/L$ has a $K$-point. To see this, first construct a $K$-subgroup in the conjugacy class of $L$. Over $\mathbb R$, a compact form of the reductive subgroup $L$ conjugates into $C(\mathbb R)$ by Adams–Taïbi, Theorem 3.7. Its Zariski closure is the corresponding conjugate of $L$, defined over $\mathbb R$. Equivalently there is a conjugate of $L$ preserved by compact conjugation. That condition is finite algebraic data. Embed into a general linear group, use the matrix entries and the inverse determinant as affine coordinates, and choose equations for $L$. Conjugating the equations and conjugating their coefficients gives polynomials of bounded degree. Membership in the ideal of $L$ in that degree range is membership in a fixed finite-dimensional linear subspace, which commutes with scalar extension. Impose this condition for both inclusions. Then the real-closed transfer argument gives a $K$-defined conjugate $L_0$. Over $\overline K$ a $C$-equivariant automorphism of $C/L_0$ lies in $N_C(L_0)/L_0=1$, so the geometric $C$-equivariant isomorphism from $C/L_0$ to the given form is unique and descends. The identity coset gives a $K$-point, and compact square positivity proves the Mathieu property. In particular, compact rank-one homogeneous forms with stabilizer $2O$, $2I$, or a torus normalizer introduce no additional no-point cases.
+If $C$ has compact type over a real closed field and $L$ is a geometric reductive stabilizer with $N_{C_{\overline K}}(L)=L$, any $C$-homogeneous $K$-form of $C_{\overline K}/L$ has a $K$-point. To see this, first construct a $K$-subgroup in the conjugacy class of $L$. Over $\mathbb R$, a compact form of the reductive subgroup $L$ conjugates into $C(\mathbb R)$ by Adams–Taïbi, Theorem 3.8. Its Zariski closure is the corresponding conjugate of $L$, defined over $\mathbb R$. Equivalently there is a conjugate of $L$ preserved by compact conjugation. That condition is finite algebraic data. Embed into a general linear group, use the matrix entries and the inverse determinant as affine coordinates, and choose equations for $L$. Conjugating the equations and conjugating their coefficients gives polynomials of bounded degree. Membership in the ideal of $L$ in that degree range is membership in a fixed finite-dimensional linear subspace, which commutes with scalar extension. Impose this condition for both inclusions. Then the real-closed transfer argument gives a $K$-defined conjugate $L_0$. Over $\overline K$ a $C$-equivariant automorphism of $C/L_0$ lies in $N_C(L_0)/L_0=1$, so the geometric $C$-equivariant isomorphism from $C/L_0$ to the given form is unique and descends. The identity coset gives a $K$-point, and compact square positivity proves the Mathieu property. In particular, compact rank-one homogeneous forms with stabilizer $2O$, $2I$, or a torus normalizer introduce no additional no-point cases.
+
+### Compact twists and the commuting normalizer
+
+Let $C$ have compact type over a real closed field $K$. For a geometrically homogeneous affine $C$-space $X$, choose a $K$-defined conjugate $L$ of the geometric stabilizer as above, and put $A=N_C(L)/L$. Right translation by the inverse representative identifies $A$ with the group of $C$-equivariant automorphisms of $C/L$. Thus $X$ is a twist of $C/L$ by a cocycle of $A$ for $K(i)/K$.
+
+Every such cocycle is equivalent to an element $a\in A(K)$ with $a^2=1$. To see this over $\mathbb R$, use a faithful unitary model for the compact group, with conjugation $\sigma(g)=(g^*)^{-1}$. Both $L$ and $N_C(L)$ are stable under this conjugation. Their polar factors stay in the subgroup because the positive square root of a positive Hermitian matrix lies in every closed subgroup containing the matrix. After diagonalization the Zariski closure of its cyclic group is cut out in the diagonal torus by monomial equations, which its positive square root still satisfies. This closure is connected because the lattice of relations is saturated, by positivity. Thus the normalizer meets every geometric component in its compact real points. It is reductive because a stable connected unipotent radical would have dense real points, while unitary unipotents are trivial. If a coset in $A$ is real, take polar factors $k p$ of a lift. Equality of the cosets of $k p$ and $k p^{-1}$ implies $p^2\in L$, hence $p\in L$. Therefore $A(\mathbb R)$ is the compact quotient $N_C(L)(\mathbb R)/L(\mathbb R)$ and meets every geometric component of $A$.
+
+In a unitary model for $A$, write a cocycle as $c=u p$ in polar factors. The identity $\sigma(c)=c^{-1}$ gives $u^2=1$ and $up=pu$ by uniqueness of polar factors. For $b=p^{1/2}$ the equivalent cocycle $b^{-1}c\,\sigma(b)$ equals $u$. Existence of this involution representative and of a real lift to the normalizer are finite algebraic conditions. The real closed transfer applies, using a faithful unitary presentation of $C$ and the cocycle and quotient maps as data. This is the compact case of [Adams–Taïbi, Theorem 1.1](https://otaibi.perso.math.cnrs.fr/galois.pdf).
+
+Let $n\in N_C(L)(K)$ lift $a$. The twist has descent $gL\mapsto\sigma(g)n^{-1}L$. If $gL$ is fixed, then $g^{-1}\sigma(g)\in L n$. In the unitary model this matrix is positive Hermitian, while the compact polar factor of any element of $L n$ lies in $L n$. Therefore $1\in L n$ and $a=1$. Conversely the identity coset is a point for the trivial twist. The point criterion transfers to real closed $K$ since it is an algebraic implication with a unitary model. On the reference compact orbit a real-defined function satisfies $\overline{P(gL)}=P(gn^{-1}L)$. The square of a nonzero function of either eigensign has fixed sign and is nonzero on an open subset of the compact orbit. Its second trace is nonzero, and the statement transfers to real closed $K$.
+
+**Commuting-action criterion.** If $\operatorname{Int}(a)$ is nontrivial on the derived Lie algebra of $A^\circ$, the normalized trace on $K[X]$ has a fixed bad pair. The commuting group on the twist has conjugation $\operatorname{Int}(a)\sigma$. A nonzero negative eigenvector of $\operatorname{Int}(a)$ in the compact derived Lie algebra becomes a real vector of positive Killing square after multiplication by $i$. This real form has positive split rank, by the connected group argument above. Its split rank-one subgroup acts nontrivially because the right action of $A$ is free geometrically. The active split rank-one theorem applies to the joint action with $C$, which remains geometrically transitive. The normalized trace is the same by uniqueness of the normalized $C$-invariant functional.
+
+For a direct product with an external split scalar, let $L^+=\langle L,n\rangle$. This is a finite extension of $L$. The equivariant map $X\times\mathbb G_m\to(C/L^+)\times\mathbb G_m$ descends since $n$ acts trivially on the target. It preserves normalized traces. Thus a regular witness on the target pulls back to the twist. In particular if $X$ is a central twist of a compact non-toral group torsor, then $X\times\mathbb G_m$ has a regular witness from the product of the central quotient group and the split scalar.
+
+### Cyclic stabilizers with a split commuting torus
+
+**Theorem.** Let $D=(a,b)_K$ be a quaternion division algebra over any characteristic-zero field $K$, with $E=K(\sqrt a)$ and involution denoted by a bar. Put $C=\mathrm{SL}_1(D)$. For every $k\ge1$ there is a geometrically homogeneous affine $C$-space $X_k$ with geometric stabilizer $\mu_{2k}$ in a diagonal torus. It has no $K$-point and has a free split commuting $\mathbb G_m$-action. Its normalized trace has a fixed regular pair with zero pure moments and nonzero marked moments at every positive order. Moreover these are all the geometrically homogeneous affine $C$-spaces with cyclic diagonal geometric stabilizer and a commuting split torus acting geometrically as the usual free right diagonal quotient. In particular the stabilizer order of such a form is even.
+
+Start with the affine isomorphism torsor $W=\operatorname{Isom}_{K\text{-alg}}(D,M_2(K))$. The group $C$ acts by precomposition with inverse inner automorphisms. The split diagonal torus in $\mathrm{PGL}_2$ acts by postcomposition with inner automorphisms, and the two actions commute. Let $X_k=W/\mu_k$, with $\mu_k$ in this split diagonal torus. Geometrically $W$ is $\mathrm{PGL}_2$ with its commuting translations, so $X_k$ is affine, the stabilizer in $C$ is $\mu_{2k}$, and the quotient diagonal torus acts freely. The map $\phi\mapsto\phi^{-1}(\operatorname{diag}(1,-1))$ descends to the trace-zero quadric
+$$
+ Y=\{Z\in D:\operatorname{Trd}(Z)=0,\ Z^2=1\}.
+$$
+This quadric has no $K$-point because $(Z-1)(Z+1)=0$ in a division algebra forces $Z=\pm1$.
+
+For the witness, choose a nonzero trace-zero $\xi\in D$ with $\xi^2=a$ and write
+$$
+ \phi(\xi)=\begin{pmatrix}s&u\\w&-s\end{pmatrix},\qquad
+ v=s^2/a,\qquad t_+=u^k,\qquad t_-=(w/a)^k .
+$$
+These three functions $v,t_+,t_-$ are regular on $X_k$. Indeed $u,w$ have opposite unit weights for conjugation by the class of $\operatorname{diag}(\lambda,1)$, and $v$ has weight zero. The equation $s^2+uw=a$ gives $t_+t_-=(1-v)^k$. Put $Q=t_+$ and set
+$$
+ P=t_-+
+ \left.\frac{(1+t)\{1-(1+t)^2v\}^{k}-(1-v)^k}{t}\right|_{t=t_+}.
+$$
+The quotient is formed in $K[v,t]$, so $P$ is regular. In the localization at $t_+$, the phase is $t_+^{-1}(1+t_+)\{1-(1+t_+)^2v\}^k$. Invariance under the commuting torus makes the trace vanish on nonzero right weights. Weight zero in the Laurent expression is the constant term in $t=t_+$. This extraction computes the trace of the regular phase and its powers because the localization preserves the weight decomposition.
+
+To compute the trace on $v$, extend to $E$. A point of $W_E$ identifies $\xi/\sqrt a$ with $\operatorname{diag}(1,-1)$, so $v$ on the split model is the square of the diagonal entry in the conjugacy orbit of that matrix. On $\mathrm{SU}_2$, conjugation gives that entry as $2r-1$, with $r$ the squared modulus of the top left entry. Since $r$ is uniform on $[0,1]$, the trace of a polynomial in $v$ is its integral at $v=z^2$ for uniform $z\in[0,1]$. These rational identities on the split model hold over $K$ by base change. With $T=1+t$ and $F_{k,m}(T)=\int_0^T(1-z^2)^{km}\,dz$, the averaged $m$th power before constant term extraction is
+$$
+     t^{-m}T^{m-1}F_{k,m}(T).
+$$
+The difference $F_{k,m}(1+t)-F_{k,m}(1)$ is divisible by $t^{km+1}$. The factor $T^{m-1}$ has degree $m-1$ in $t$ and leading coefficient one. Consequently
+$$
+ \Lambda_{X_k}(P^m)=0,\qquad
+ \Lambda_{X_k}(QP^m)=F_{k,m}(1)=
+             \frac{4^{km}((km)!)^2}{(2km+1)!}\ne0\qquad(m\ge1).
+$$
+The marked moments also exclude geometric instability of $P$ under $C$, since a contracting cocharacter would force every fixed marked sequence to vanish eventually.
+
+For the converse, suppose a form $X$ has geometric stabilizer $\mu_n$ and the stated commuting split torus $R$. Fix a coordinate on $R\simeq\mathbb G_m$. At each geometric point the infinitesimal generator of $R$ is the tangent vector of a unique element of $\operatorname{Lie}(C)$, since the left action has finite stabilizers and is geometrically transitive. The inverse of this bundle isomorphism gives the element regularly over $K$. Multiplying it by $n$ gives the covariant $g\mapsto g\operatorname{diag}(1,-1)g^{-1}$ in geometric coordinates chosen so the diagonal cocharacter has degree $n$ in $R$. Thus $X\to Y$ is an $R$-torsor. Over $E$ it is equivariantly isomorphic to the standard model $\mathrm{SL}_2/\mu_n\to\mathrm{SL}_2/T$ for the diagonal torus $T$. An isomorphism exists geometrically and automorphisms over the base commuting with $R$ are multiplication by units on the base. The only units are constants, by pullback to $\mathrm{SL}_2$. Hilbert 90 descends the isomorphism to $E$.
+
+To test its $K$-descent, let $J_b=\left(\begin{smallmatrix}0&b\\1&0\end{smallmatrix}\right)$, so that conjugation on the norm-one group over $E$ is $g\mapsto J_b\bar gJ_b^{-1}$. The semilinear automorphism of the standard model given on matrix points by $g\mapsto J_b\bar g\operatorname{diag}(1,-1/b)$ lifts the base conjugation on $Y_E$. It is compatible with the left descent and preserves all right weights. Its square is right multiplication by $\operatorname{diag}(b,b^{-1})$, so it acts on weight $n$ by $b^n$. Any other lift acts on a generator of the weight lattice $n\mathbb Z$ by an additional scalar $\lambda\in E^\times$, again because base units are constant. The square on weight $n$ is then $N_{E/K}(\lambda)b^n$. Since $b$ is not a norm from $E$ for a division quaternion algebra, this equals one only if $n$ is even. In that case the model just constructed provides a descent, and the ratio between two choices has norm one. Hilbert 90 identifies the two choices by a right scalar change of coordinates.
+
+The central $\mu_2$ of $C$ acts trivially on $X_k$. For the adjoint group $\mathrm{PGL}_1(D)$ the result therefore gives every positive cyclic stabilizer order $k$. At $k=1$ the witness is $P=t_-+1-3v-3vt_+-vt_+^2$ and $Q=t_+$.
+
+Over a real closed field take $a=b=-1$. This gives the compact rank-one form twisted by the Weyl component of the right normalizer. The construction uses the split torus intrinsic to the twist, so it requires no external split scalar.
+
+#### Finite diagonal quotients in every degree
+
+Let $B$ be a nonsplit central simple algebra of degree $d\ge2$ over a characteristic-zero field $K$. Let $J$ be any finite subgroup of the split diagonal torus of $\mathrm{PGL}_d$. On
+$$
+ X=\operatorname{Isom}_{K\text{-alg}}(B,M_d(K))/J
+$$
+the normalized trace has a fixed regular bad pair. The quotient is geometrically homogeneous under $\mathrm{PGL}_1(B)$. It has no $K$-point because the inverse images of the diagonal matrix idempotents are invariant under $J$ and descend. A $K$-point would supply an idempotent of reduced rank one in $B$, whose reduced ranks are multiples of the index of $B$ by the matrix presentation over its division algebra.
+
+Choose two matrix indices, and let $k\ge1$ be the order on $J$ of the corresponding root character. For $\xi\in B$ let $\left(\begin{smallmatrix}s&u\\w&-s\end{smallmatrix}\right)$ be the traceless part of the corresponding $2\times2$ block of $\phi(\xi)$. Set $A=s^2+uw$, $v=s^2$, $t_+=u^k$, and $t_-=w^k$. These functions descend to $X$ and $t_+t_-=(A-v)^k$. Use the same polynomial $P$ and multiplier $Q$ as for the quaternion quotient, replacing $1-(1+t)^2v$ by $A-(1+t)^2v$ and $1-v$ by $A-v$.
+
+The trace may be computed before the finite quotient. The split target group acts transitively on the isomorphism torsor and commutes with the action from the source. Its diagonal torus gives the constant term in $t=t_+$, with $A$ and $v$ of weight zero. The target rank-one subgroup on the two chosen indices acts on their traceless block by conjugation. Its average sends $v^j$ to $A^j/(2j+1)$ by the ternary angular law, so the calculation for the cyclic quotients gives
+$$
+ \Lambda_X(P^m)=0,\qquad
+ \Lambda_X(QP^m)=F_{k,m}(1)\Lambda_X(A^{km}).
+$$
+For the angular identity use the compact form of the complex rank-one group and a Hermitian block, where the action rotates its three-dimensional traceless part. Both sides are polynomial identities in the block entries, so they hold on the whole block representation, even at $A=0$.
+
+It remains to choose $\xi$ over $K$. Over a finitely generated field of definition let it vary in a basis of $B$. The polynomial family $b_m(\xi)=\Lambda_X(A^{km})$ is never the zero polynomial: after complex base change choose $\xi$ corresponding to a Hermitian matrix with a nonzero traceless block. Compact target averaging then integrates a nonnegative power that is strictly positive near the chosen configuration. The $b_m$ are the pure moments of the regular family $A^k$, so the scalar exponent shift and the arithmetic specialization above give a single ground-field $\xi$ with $b_m(\xi)\ne0$ at infinitely many orders. Purity holds for every $\xi$, so the specialization gives a fixed witness.
+
+If $B$ contains a quadratic field $K(\xi)$ with $\xi^2=a\in K^\times$, no specialization is needed. Over the complex split model $\xi/\sqrt a$ is conjugate to a Hermitian matrix with both eigenvalues $1$ and $-1$. Choose the identification so the selected block has one of each eigenvalue. The radius of that scaled block is nonnegative on the compact orbit and positive at that point. Thus $\Lambda_X(A^{km})$ is a nonzero multiple of $a^{km}$ at every positive order.
 
 ## A radial Laurent ansatz fails at order two for inverse square-root densities
 
@@ -557,14 +634,986 @@ If no exceptional pole exists, every vertex has limiting value zero for $T$, con
 
 The dimension bound enters only in counting possible exceptional poles. The even-$r$ argument works in every dimension, and so does the odd-$r$ argument when all roots of $d$ are simple. For example, on the rational quaternion form $\langle1,-2,-3,6\rangle$, the choice $A=\operatorname{diag}(1,0,2,2)$, $b=e_1+e_2$ gives $\theta=(1-2u)/(1-4u)$. It realizes the exceptional-pole case, with two branches at infinity and $r$ at $1/4$. The conclusion uses the full identity (L3), not an extrapolation from a moment prefix.
 
-### The geometrically reducible cubic boundary in dimension four
+### Reduction of the homogeneous cubic case in dimension four
 
 A homogeneous cubic using at most three linear coordinates over $K$ cannot be pure on an anisotropic norm quadric. One can identify these coordinates with a subspace using $q$. The restricted form is nondegenerate by anisotropy, and orthogonal decomposition reduces the Gaussian moments to the corresponding lower-dimensional Gaussian. Homogeneity and the radial identity transfer purity both ways. In three variables the [Gaussian boundary paper, Theorem 1.3](../../../results/gaussian-boundary/manuscript.tex) says that a pure homogeneous cubic is one-sided for an orthogonal circular frame. Its exceptional phase has nonzero pieces of degrees one, two, and three and cannot be made homogeneous by a linear change of variables. In two variables, a homogeneous polynomial of degree $d$ in split circular coordinates $Z,W$ is $W^dF(Z/W)$. Its Gaussian moment at order $m$, when $dm$ is even, is a nonzero scalar times the middle coefficient $[z^{dm/2}]F(z)^m$. Apply the Laurent theorem to $z^{-d} F(z^2)$ to conclude one-sidedness; for odd $dm$ the middle coefficient is zero automatically. The one-variable nonvanishing follows from the even Gaussian moments.
 
 The existence of a one-sided orthogonal frame descends from a complex model to the algebraic closure of the field of definition, because the frame condition and the vanishing of the forbidden coefficients are finite polynomial conditions. Hence the phase is geometrically unstable for the special orthogonal group of the restricted form. [Kempf, §4, Theorem 7 in the transcribed preprint](https://arxiv.org/abs/1807.02890) supplies a contracting cocharacter over the perfect field $K$. An anisotropic orthogonal group has no such cocharacter, since any nonzero weight vector of a split cocharacter would be isotropic for the quadratic form.
 
-In dimension four a geometrically reducible cubic either has a $K$-linear factor or is an irreducible product over $K$ of three Galois-conjugate geometric linear factors. Indeed, for a line times an irreducible conic the unique line descends, and for three lines any singleton orbit descends. In the remaining case the span of the geometric linear factors descends as a subspace of dimension at most three. The powered-linear-factor theorem handles the first case and the lower-dimensional Gaussian argument handles the second. Thus a nonzero pure homogeneous cubic in four anisotropic variables must be geometrically irreducible and use all four variables. This applies in particular to the norm-one quadric for $(2,3)_{\mathbb Q}$.
+In dimension four a geometrically reducible cubic either has a $K$-linear factor or is an irreducible product over $K$ of three Galois-conjugate geometric linear factors. Indeed, for a line times an irreducible conic the unique line descends, and for three lines any singleton orbit descends. In the remaining case the span of the geometric linear factors descends as a subspace of dimension at most three. The powered-linear-factor theorem handles the first case and the lower-dimensional Gaussian argument handles the second. A smooth complex projective leading form is excluded by the [smooth-leading-form corollary in the Gaussian boundary paper](../../../results/gaussian-boundary/gradient_exclusion.tex). Its gradient hypothesis holds for a homogeneous form whose gradient has no nonzero zero, by compactness of the complex unit sphere. The homogeneous radial identity again transports this obstruction to the norm quadric. This reduces the question to geometrically irreducible singular cubic surfaces using all four variables. The prime-order argument below excludes these remaining homogeneous forms as well.
+
+### Complete exclusion through degree three in dimension four
+
+**Theorem.** Let $q$ be an anisotropic four-dimensional quadratic form over a characteristic-zero field $K$ and let $\Lambda$ be normalized orthogonal integration on $q=1$. Every regular phase $P$ of degree exactly three has infinitely many nonzero moments. In particular the only pure regular phase of degree at most three is zero. This applies to the norm-one variety of every quaternion division algebra in characteristic zero.
+
+The proof uses two prime-order tests. The degree is the least ambient degree of a polynomial representing the phase. Let $Q_\infty$ be the projective quadric $q=0$. For a homogeneous cubic $F$ let $D$ be its divisor on $Q_\infty$ when the restriction is nonzero, and consider the two complete intersections in $\mathbb P^4$,
+$$
+ Y=\{q(x)=0,\ s^3=F(x)\},\qquad Z=\{q(x)=s^2,\ F(x)=0\}.
+$$
+The first tests the branch divisor at infinity. The second retains the whole class of $F$ on $q=1$. For a degree-one good place of characteristic $p>3$ where $q$ is split, let $m=2(p-1)/3$ if $p\equiv1\bmod3$. The tests are
+$$
+ \begin{aligned}
+ p\Lambda(F^m)&\equiv\#Y(\mathbb F_p)-1\pmod p &&(p\equiv1\bmod3),\\
+ p\Lambda(F^{p-1})&\equiv\#Z(\mathbb F_p)-1\pmod p .&
+ \end{aligned}                                                     \tag{C1}
+$$
+For a cubic phase $P$ with arbitrary lower terms, the first congruence uses its leading form in $Y$. The second uses the degree-three homogenization of the full phase in $Z$.
+
+#### The two congruences
+
+Over a splitting field write $q=xw-yz$. On $q=1$ the normalized trace of a monomial vanishes unless it is $(xw)^i(yz)^j$. In that case it equals $(-1)^j i!j!/(i+j+1)!$, by the compact $\mathrm{SU}_2$ integration formula. When the total degree is at most $2(p-1)$, multiplication by $p$ kills the lower degrees modulo $p$, and at total degree $2(p-1)$ each balanced monomial contributes one, by Wilson's theorem. Parameterize $Q_\infty$ by $(x,y,z,w)=(a_0 b_0,a_0 b_1,a_1 b_0,a_1 b_1)$ and write $\widetilde F$ for the restriction in these coordinates. Thus at the first order in (C1) the residue is
+$$
+ [(a_0a_1b_0b_1)^{p-1}]\,\widetilde F^{\,m}.                        \tag{C2}
+$$
+To count $Y$ over a point of the split quadric, the number of cube roots of a scalar $c$ is congruent to $1+c^{(p-1)/3}+c^{2(p-1)/3}$ modulo $p$. The powers are independent of the chosen homogeneous representatives. In the sums over the two projective lines one can use their nonzero affine representatives, since the extra factor $(p-1)^2$ is one modulo $p$. The summand $\widetilde F^{(p-1)/3}$ has degree $p-1$ in each pair, hence its sum is zero. The other summand gives exactly (C2), using the sums of powers on $\mathbb F_p$. The constant gives $\#Q_\infty(\mathbb F_p)\equiv1$.
+
+For the second test take a polynomial $T$ of degree at most $3(p-1)$ and write $T_{\rm top}$ for its component of degree $3(p-1)$, or zero if absent. The finite field indicator for $q=1$ is $1-(q-1)^{p-1}$. The sum on $\mathbb F_p^4$ of its product with $T$ can only receive terms whose four exponents are positive multiples of $p-1$. Thus only total degrees $4(p-1)$ and $5(p-1)$ matter. The latter terms come from $-q^{p-1}T_{\rm top}$ and equal $\sum_{q=0}T_{\rm top}$ modulo $p$. At degree $4(p-1)$ the only selected exponents are all $p-1$. A monomial of $T$ can contribute only if it is paired. For $T=(xw)^i(yz)^j$ put $N=i+j$. The contribution is zero if $N<p-1$ or if either exponent exceeds $p-1$. Otherwise put $h=N-p+1$. The coefficient taken from $(q-1)^{p-1}T$ is
+$$
+ (-1)^{p-1-j}\frac{(p-1-h)!}{(p-1-i)!(p-1-j)!}
+       \ \equiv\ \frac{(-1)^{j+1}i!j!}{h!}
+       \ \equiv\ p\Lambda(T)\pmod p .
+$$
+The first equality modulo $p$ uses Wilson's theorem and the binomial coefficient of $q^{p-1-h}$ in $(q-1)^{p-1}$. The second uses $(p+h)!/p\equiv-h!\pmod p$. In the excluded cases the trace also has zero residue, because the denominator has at most one factor of $p$. This proves
+$$
+ \sum_{q=1} T-\sum_{q=0}T_{\rm top}\equiv-p\Lambda(T)\pmod p.
+$$
+Apply this to $T=P^{p-1}$. The first sum is minus the number of affine zeros of $P$ modulo $p$, because the split three-dimensional quadric has $p(p^2-1)$ affine points. The second is $\#D(\mathbb F_p)-1$ modulo $p$, by counting the projective points of $Q_\infty$ where the top cubic is nonzero. Together these give the second congruence of (C1).
+
+Each arithmetic argument below may be made over a number field even when $K$ is larger. Work first over a finitely generated field containing the data and extend it finitely to split the quadric and the required finite configurations. Spread out over a finitely generated $\mathbb Q$-domain. Localize so that the normal forms, nonzero coefficients, and any stipulated distinct or nonsingular configurations persist, then take a closed point with number-field residue field. In the resolution case spread out the resolution as well, including the isomorphism off the exceptional points, the exceptional rational trees, and a generator of the canonical sheaf of the smooth K3. Smoothness, triviality of the canonical sheaf, and vanishing of $H^1(\mathcal O)$ persist after localization, using properness and semicontinuity. The split monomial trace formulas have rational coefficients at every order and imply that purity would persist at this specialization. One can enlarge the resulting number field and choose degree-one primes outside finite exclusions. In a number field the higher-degree primes have density zero. Adjoining a primitive cube root of unity ensures $p\equiv1\bmod3$ at the degree-one primes away from three.
+
+#### Reduced branch divisors
+
+If $D$ is geometrically reduced, the cyclic cover is geometrically integral and normal. The cube-root equation is irreducible over the geometric function field since it has simple branch, and normality follows from smoothness away from isolated singularities and the complete-intersection condition. If $Y$ has only rational double points, its minimal resolution is a K3 surface. Adjunction gives trivial canonical sheaf on the $(2,3)$ complete intersection, and the Koszul sequence gives $H^1(Y,\mathcal O_Y)=0$. Rational double points preserve both statements under resolution. After a finite extension, all exceptional curves and their intersections are split and spread out. Each exceptional tree with $r$ vertices has $rp+1$ points at the degree-one good primes. Hence the resolution has the same point count as $Y$ modulo $p$. The ordinary K3 theorem gives density one good ordinary primes after a further finite extension. At such a degree-one prime the point count of the resolution is different from one modulo $p$, by the trace formula and the ordinary trace criterion. The first test of (C1) excludes purity. [Bogomolov and Zarhin, Theorem 0.1 and Lemma 1.4](https://arxiv.org/pdf/0902.1548) · [Calabri and Ferraro, rational double points and adjunction](https://arxiv.org/pdf/math/9911183)
+
+We check the branch geometry, including the exceptions to the K3 argument. Every finite Galois-stable set of geometric points of $Q_\infty$ has even cardinality, by the odd-degree anisotropy theorem. Similarly if a ruling is Galois-stable, each orbit of its lines is even because a line defined over an odd extension gives a point there. If the rulings are exchanged and there are the same odd number of line components in each, their grid of intersections would be an odd Galois-stable set. Therefore the numbers of lines in each ruling are even. [Springer's theorem, as stated in Bayer-Fluckiger and Lenstra, Theorem 3.1(a)](https://pub.math.leidenuniv.nl/~lenstrahw/PUBLICATIONS/1990e/art.pdf)
+
+A plane curve germ of multiplicity two is analytically of type $A_r$ and has delta invariant $\lfloor(r+1)/2\rfloor$. Its triple suspension is a rational double point for $1\le r\le4$ (types $A_2,D_4,E_6,E_8$). A germ of multiplicity at least three has delta invariant at least three. Thus on an integral $(3,3)$ curve any point failing the rational-double-point test costs at least three from its arithmetic genus four. There is at most one such point, which would be rational over $K$ and is impossible.
+
+For the reducible reduced case, every irreducible component other than a line has both bidegrees positive. With no line components, the possible splittings are $(1,1)+(2,2)$, $(1,2)+(2,1)$, or three $(1,1)$ conics. In the first case the $(2,2)$ component is smooth because its genus is one and a unique singular point would be rational. The components meet with total intersection four, so a contact of order at least three would also be unique. In the second case both components are graphs of maps of projective lines and hence smooth, and the total intersection is five, again allowing at most one contact of order at least three. On these unions lower contact orders give branch types $A_1$ and $A_3$. In the three-conic case each pair meets with total intersection two. Only triple points can fail the test, and there must be either none or two. If there are two, all three conics pass through both and each pair meets transversely there.
+
+Two lines in one ruling and none in the other leave a single $(1,3)$ or $(3,1)$ graph. Each line meets that graph with total intersection three. Any contact of order three must occur in a pair, one on each line. Two lines in each ruling leave a $(1,1)$ graph. Its only possible bad intersections are triple points at grid crossings, and there can be at most two. Thus if there are bad points, there are two, in opposite corners of the grid.
+
+In the two triple-point cases the points have distinct coordinates in both rulings, because they lie on a $(1,1)$ graph. Send them to $(0,0)$ and $(\infty,\infty)$. With $s_1=a_0b_1$ and $s_2=a_1b_0$, the three-conic or graph-and-grid branch is a squarefree binary cubic $g(s_1,s_2)$, up to scalar. Its coefficient in (C2) is the central coefficient of $g^{2(p-1)/3}$. After a finite extension a linear change of the two binary variables makes $g$ a nonzero scalar times $s_1^3+s_2^3$, since both cubics have three distinct roots in $\mathbb P^1$. This change preserves nonvanishing of the central coefficient modulo $p$: the coefficient is the sum of a form of degree $2(p-1)$ over $\mathbb F_p^2$, which is invariant under invertible substitutions. The resulting coefficient is a nonzero scalar times $\binom{2(p-1)/3}{(p-1)/3}$. For the graph with two total tangencies choose coordinates taking the two fibres to $a_0a_1=0$ and the two preimages to the corresponding coordinate points of the other ruling. The graph is then $a_0b_1^3-\lambda a_1b_0^3=0$ for $\lambda\ne0$, since each of the special fibres has a single point of multiplicity three. Its branch product is $a_0a_1(a_0b_1^3-\lambda a_1b_0^3)$. In (C2) the two graph monomials occur equally often, again giving a nonzero binomial term. Changes of ruling coordinates can be lifted to changes preserving the determinant form after scaling their determinants to one over a finite extension. This proves (C2) nonzero in all exceptional reduced cases.
+
+#### Nonreduced leading divisors and translated fibres
+
+A repeated component can only be a $(1,1)$ conic. The even-cardinality argument for line components also applies with multiplicities. If the rulings are fixed, a repeated line would have an even orbit and consume at least four in its ruling. If the rulings are exchanged, a repeated line forces weighted totals of two in each ruling, and the two double lines would meet at a rational point. A repeated conic is unique by bidegree and therefore defined over $K$. The residual $(1,1)$ divisor cannot consist of two lines, whose unique crossing would be rational. Thus the leading cubic restricts on $Q_\infty$ to $L^2M$ for linear forms over $K$, up to a scalar absorbed in $M$. Each $(1,1)$ conic is a hyperplane section, and a Galois-fixed hyperplane descends. The original leading form differs from $L^2M$ by $q$ times a linear form. On $q=1$ the phase can therefore be written
+$$
+                       P=L^2M+Q_2+N+c_0                         \tag{C3}
+$$
+with $Q_2$ quadratic, $N$ linear, and $c_0$ constant. A leading form vanishing identically on $Q_\infty$ would give degree at most two on $q=1$.
+
+Write $Z_c$ for the projective zero intersection of $P-c$ for any fixed $c\in K$. If the moments of $P$ were eventually zero, then for all sufficiently large good degree-one primes (after a number-field specialization) the second test in (C1) would give $\# Z_c\equiv1\pmod p$. In fact $\Lambda((P-c)^{p-1})$ is then a binomial sum using a single finite list of nonzero moments of $P$, so it is $p$-integral outside finitely many places. This conclusion applies to every fixed $c$. In particular, any choice of $c$ for which $Z_c$ has only rational double points rules out eventual vanishing. To see this, spread out that projective resolution as above and use the ordinary K3 theorem. We will choose $c$ generic when needed. The affine fibres $P=c$ are smooth outside finitely many values, since the domain $q=1$ is smooth and characteristic zero forces $P$ to be constant on each irreducible component of its critical locus.
+
+#### A nonzero quadratic section on the repeated conic
+
+Let $C_L=\{q=L=0\}$ in $Q_\infty$. This is a smooth conic since a tangent hyperplane defined over $K$ would give an isotropic direction. Suppose first that $Q_2|_{C_L}\ne0$. It has a degree-four zero divisor. Every Galois orbit has even cardinality by anisotropy, so the zeros are either four simple points or two conjugate double points. The only possible singularities of $Z_c$ at infinity are these zeros on $C_L$. Off the repeated conic the leading divisor has a simple smooth component, which makes $Z_c$ smooth there.
+
+At a simple zero, use local coordinates $(l,u,s)$ on the smooth threefold $q=s^2$, with $l=L$ (after dehomogenizing), $u$ a parameter on the conic, and $s$ the homogenizing coordinate. The term $sQ_2$ contributes a nonzero $su$ term to the quadratic part, and there is no $u^2$ term. The quadratic part has rank at least two. At an isolated hypersurface singularity in three variables a quadratic part of rank at least two gives a rational double point by splitting the two square terms and reducing the remaining one-variable germ. These points are isolated, and the affine part is smooth for generic $c$.
+
+For the double zeros choose a linear form $H$ cutting out the pair on $C_L$. It exists over $K$ because the line through the pair in $L=0$ descends. Since the restriction of $Q_2$ is the square of this section up to scalar, write
+$$
+                     Q_2=\rho H^2+LJ+\nu q,\qquad \rho\ne0,
+$$
+where $J$ is linear. Absorb $\nu$ in the constant. Locally use $(l,u,s)=(L,H,s)$ in a chart at one of the two points. These are coordinates because the restrictions of $L,H$ are transverse on the quadric at the two intersections. The equation is
+$$
+                     l^2M+s(\rho u^2+lJ)+s^2N+s^3(c_0-c)=0.
+$$
+The quadratic part is $M(p)l^2+J(p)sl+N(p)s^2$ at a double zero $p$.
+
+If its rank is two, the same isolated double-point argument applies. If its rank is one and its null direction in $(l,s)$ has $s\ne0$, split the square and restrict the leading residual cubic to the Hessian kernel. With coordinates $(r,u)$ on that kernel this cubic is $r(Au^2+Bru+C(c)r^2)$, with $A\ne0$ and $C(c)$ nonconstant affine in $c$. Here the $r u^2$ term comes from $\rho s u^2$, and the variable part of the $r^3$ coefficient comes from $-cs^3$. For generic $c$ the three tangent lines are distinct, giving type $D_4$.
+
+If the rank is one and the null direction is the $l$-axis, then $M(p)=J(p)=0$ and $N(p)\ne0$. By conjugacy $M$ and $J$ vanish at both double zeros, so both lie in the span of $L,H$. Write $M=a l+b u$ locally. Split the $s$-square by solving the local $s$-critical equation. The residual plane germ starts with
+$$
+                     l^2(a l+b u)-\frac{(\rho u^2+lJ)^2}{4N(p)}
+                         +O\bigl((l,u)^5\bigr).
+$$
+If $b\ne0$, its weighted leading part with weights $(3,2)$ is $b l^2u-\rho^2 u^4/(4N(p))$, giving type $D_5$. If $b=0$, then $a\ne0$ and the weights $(4,3)$ give $a l^3-\rho^2 u^4/(4N(p))$, giving type $E_6$. In each case the quotient by the two leading partial derivatives has no weights above the leading degree. For the first, a basis is $1,l,u,u^2,u^3$, and for the second use $l^i u^j$ with $0\le i\le1$, $0\le j\le2$. Thus each higher weighted term can be removed recursively by a coordinate change of higher weight, giving the stated completed local types. The formal splitting lemma for a nondegenerate square is proved by the same recursive elimination, or by solving the critical equation and taking a square root of the residual unit. These cases give a normal $Z_c$ with only rational double points for generic $c$. [Double-point equations and adjunction](https://arxiv.org/pdf/math/9911183)
+
+If the Hessian has rank zero, then $M,J,N$ vanish at the pair, so each lies in the span of $L,H$. The phase is a polynomial $f(l,u)$ in two linear forms, with leading term $l^2(a l+b u)$ and with nonzero $u^2$ coefficient in its quadratic part. Let $\Gamma_c$ be the plane projective cubic completing $f(l,u)=c$. This is smooth for generic $c$: the affine part is generically smooth, and the repeated point $l=0$ at infinity is smooth because the derivative in the homogenizing coordinate is nonzero there. If the other infinity point is distinct, it is simple and hence smooth. Therefore $\Gamma_c$ is a smooth genus-one curve. In the affine norm quadric each fibre of $(L,H)$ is a binary quadratic norm level with constant right side determined by $(l,u)$, by orthogonally splitting off its nondegenerate two-dimensional kernel. At good degree-one primes where this binary form is split, every such level has count $-1$ modulo $p$, including the zero level. Thus $\#(Z_c)_{\rm aff}\equiv-\#(\Gamma_c)_{\rm aff}$. The sums of the boundary counts of $Z_c$ and $\Gamma_c$ are two modulo $p$. If $M$ is proportional to $L$ they give one each. Otherwise the union of the two conics has count zero modulo $p$ after the two intersections split, and the plane cubic has two points at infinity. It follows that $\#Z_c-1\equiv1-\#\Gamma_c$. This is nonzero at infinitely many good primes, by the genus-one argument below.
+
+For any smooth genus-one curve used here, specialize as above and take a finite extension with a rational point, an elliptic point of order three, and a primitive third root of unity. At degree-one good primes $p>5$ its point count is zero modulo three, whereas $p+1\equiv2\bmod3$. Hence the Frobenius trace is nonzero and has absolute value at most $2\sqrt p<p$. Its point count is different from one modulo $p$. [Hasse, Zur Theorie der abstrakten elliptischen Funktionenkörper III](https://geodesic.mathdoc.fr/item/JRAM_1936__175_149968/)
+
+#### A vanishing quadratic section and the conic pencil
+
+If $Q_2|_{C_L}=0$, then modulo $q$ the quadratic is $LJ$ with $J$ linear. Absorbing the $q$ term in $c_0$, use $P=L^2M+LJ+N+c_0$. For each $r=L(x)$ the affine equation $P=c$ is linear in the remaining coordinates. Its projective infinity points on $C_L$ are cut out by $r^2 M+rJ+N$. Include $r=\infty$ to form the $(2,2)$ curve
+$$
+ \mathcal J=
+ \{(x,[r_0:r_1])\in C_L\times\mathbb P^1:
+               r_0^2M(x)+r_0r_1J(x)+r_1^2N(x)=0\}.
+$$
+We first assume its defining section is nonzero. The affine fibre count for each finite $r$ is $1-\#\mathcal J_r$ modulo $p$. For independent linear equations it is a plane conic minus its points at infinity, and a projective conic has count one modulo $p$ by the finite-field sum of the indicator of a quadratic in three variables. If the two linear equations are dependent, the affine fibre is empty or a quadratic hypersurface in affine three-space. In the latter case its projective completion and its conic at infinity both have count one modulo $p$ by the same indicator calculation. In both cases the affine count is zero modulo $p$, and $\mathcal J_r=C_L$ has count one modulo $p$. Summing over $r$ gives
+$$
+              \#(Z_c)_{\rm aff}\equiv -\#\mathcal J+\#\mathcal J_\infty
+                       \pmod p .
+$$
+On adding the boundary, $\#\mathcal J_\infty+\#(Z_c)_\infty\equiv2$. If $M$ is proportional to $L$ the two terms are each the count of $C_L$. Otherwise they are the counts of $C_L\cap C_M$ and $C_L\cup C_M$, whose sum is $\#C_L+\#C_M$. Thus
+$$
+                            \#Z_c-1\equiv1-\#\mathcal J\pmod p.     \tag{C4}
+$$
+
+If $\mathcal J$ is geometrically reduced it is either smooth of genus one or all its components are rational and all its singularities are ordinary nodes. To check this, write bidegrees with the $C_L$ coordinate first. Fibres $x=x_0$ have bidegree $(1,0)$ and must occur in even numbers since $C_L$ is anisotropic. If there are two, the other components are two fibres of the opposite ruling and one has a grid. With none, the possibilities are an integral $(2,2)$, two $(1,1)$ graphs, or a $(2,1)$ graph and a $(0,1)$ fibre. An integral $(2,2)$ has arithmetic genus one, so any singular point would be unique and rational over $K$, which is impossible on $C_L\times\mathbb P^1$. In either reducible graph case the components are smooth and meet with total intersection two, so a tangency would again be unique and rational. In the nodal cases pass to an extension splitting all components and nodes. The arithmetic genus is one, and normalization then shows that the numbers of nodes and rational components agree. The point count is therefore zero modulo $p$, and (C4) is nonzero. For the smooth genus-one curve the same conclusion follows from the torsion and Hasse argument above.
+
+If $\mathcal J$ is nonreduced, a repeated fibre $x=x_0$ is impossible, because its orbit would consume at least four in the first bidegree. A double $(1,1)$ graph is also impossible: it would be defined over $K$ and would identify $C_L$ with $\mathbb P^1$. Therefore the only possible repeated component is a unique double fibre $[r_0:r_1]=r_*$ defined over $K$. Equivalently the polynomial $r_0^2 M+r_0r_1 J+r_1^2N$ modulo $L$ is the square of a homogeneous linear polynomial in $(r_0,r_1)$ times one constant nonzero linear form modulo $L$. When $r_*$ is finite, putting its span orthogonal to $L$ writes the phase as
+$$
+                       f_0(L)+(L-r_*)^2 M_\perp .
+$$
+When $r_*$ is infinite it writes the phase as $f_0(L)+M_\perp$. If the section defining $\mathcal J$ is identically zero, the phase is simply $f_0(L)$. These forms are treated together below.
+
+#### The residual forms and their Cauchy transforms
+
+Over a complex model with $q$ the sum of four squares, write $L=\ell z$ and $M_\perp=\eta y$ in orthonormal coordinates, where $\ell^2=q^\vee(L)$ and $\eta^2=q^\vee(M_\perp)$ are nonzero by anisotropy. Such coordinates exist by diagonalizing the dual form and using the orthogonal complement of the two forms. The cases above have
+$$
+                    P=f(z)+g(z)\sqrt{1-z^2}\,\xi ,
+$$
+where $f(z)=f_0(\ell z)$ and the formula describes the distribution on the real unit three-sphere: $z$ has density $2\sqrt{1-z^2}/\pi$, and conditional on $z$ the second coordinate is $\sqrt{1-z^2}\,\xi$ with $\xi$ uniform on $[-1,1]$. In the three residual cases $g=0$, $g=\eta$, or $g=d(z-b)^2$ with $d=\ell^2\eta$ and $b=r_*/\ell$.
+
+Put $z=(v+v^{-1})/2$, $w=(v-v^{-1})/(2i)$, and $H_\pm=f(z)\pm g(z)w$. For large $\sigma$ the Cauchy transform $G(\sigma)=\Lambda((\sigma-P)^{-1})$ satisfies
+$$
+ G'(\sigma)=-2\,\operatorname{CT}_v
+          \frac{w^2}{(\sigma-H_+)(\sigma-H_-)} .                  \tag{C5}
+$$
+Indeed the uniform $\xi$ average of $(\sigma-f-gw\xi)^{-2}$ is $((\sigma-f)^2-g^2w^2)^{-1}$. The height density after $z=\cos\theta$ gives the factor $2w^2$ on the full circle. If the moments were eventually zero, $G$ would be a polynomial in $\sigma^{-1}$ with coefficient one at $\sigma^{-1}$ and no constant term. Its derivative would have a pole of order at least two at zero.
+
+For $g=0$, the transform itself is $2\operatorname{CT}_v w^2/(\sigma-f(z))$. At each moving root limiting to a zero of multiplicity $e$ of the denominator, the residue is $O(|\sigma|^{-1+1/e})$ on every local branch. This follows by writing the function in a local coordinate as a unit times an $e$-th power. The poles of the cubic $f(z)$ at $v=0,\infty$ keep the moving roots away from both and the contour has no fixed residue at zero. Thus $G$ cannot have even a simple pole at $\sigma=0$.
+
+For the two cases with $g\ne0$, both $H_\pm$ have poles of order three at $v=0,\infty$. This is immediate for constant $g$, since then $f$ is cubic. For $g=d(z-b)^2$, with cubic coefficient $c$ in $f$, it follows from $c^2+d^2\ne0$. In fact this last sum is $\ell^4 q^\vee(M)$ for the original leading $L^2M$ in (C3). Hence there is no fixed residue at zero and the moving roots stay away from $0,\infty$. At noncommon limiting roots the residues in (C5) are again $O(|\sigma|^{-1+1/e})$. At a common zero with $w=0$ and $g\ne0$, the two roots separate to first order in $\sigma$ in coordinate $w$, and the numerator vanishes to second order. Their residues are $O(\sigma)$. These bounds finish the constant-$g$ case.
+
+In the square case another common zero requires $z=b$ and $f(b)=0$. Write $a=f'(b)$. When $b^2\ne1$, let $w_0$ be the value of $w$ at a common zero. In coordinate $z-b$, the difference of the two functions is $2d w_0(z-b)^2$ to leading order. If $a=0$, at least one of the two functions has a zero of order two, and along a root of order $e\ge2$ the other denominator has order $|\sigma|^{2/e}$. The residue grows at most like $|\sigma|^{-1-1/e}$, strictly below order two. If $a\ne0$, the two roots have expansions
+$$
+ z_\pm-b=\sigma/a\mp d w_0 \sigma^2/a^3+O(\sigma^3)
+                     \quad\text{up to a common quadratic term}.
+$$
+The differential in (C5) is $2iw\,dz/((\sigma-H_+)(\sigma-H_-))$. The leading residues at $z_\pm$ are respectively $-ia/(d\sigma^2)$ and $ia/(d\sigma^2)$.
+
+When $b=\pm1$, use $w$ as coordinate. Then $z=b-\tfrac b2 w^2+O(w^4)$ and $H_\pm=f(z)\pm(d/4)w^5+O(w^7)$, where the common part $f(z)$ is even in $w$. If $a=0$, each function has leading order $e\in\{4,5\}$, the other denominator along a root has order $w^5$, and the residue, with numerator of order $w^2$, has growth $O(|\sigma|^{-1-2/e})$. If $a\ne0$, the common quadratic term is $Aw^2$ with $A=-ba/2$. The local numerator differential is $-2i w^2\,dw/z$. At a root of $H_\pm=\sigma$, the other denominator has leading term $\pm(d/2)w^5$, and $w^4\sim \sigma^2/A^2$. The leading residues are again respectively $-ia/(d\sigma^2)$ and $ia/(d\sigma^2)$.
+
+Continuation of the contour expression away from the finitely many critical and collision values sums a subset of the moving residues. It follows that its pole order cannot exceed two, and that a double pole has coefficient $j i a/d$ for an integer $j$. Eventual vanishing would force $G'=-1/\sigma^2$. Thus $j\ne0$ and $d^2/a^2=-j^2$. Since $a=\ell f_0'(r_*)$ and $d=\ell^2\eta$, this says
+$$
+              -q^\vee(L)\,q^\vee(M_\perp)=(j f_0'(r_*))^2
+$$
+over the original field. The two nonzero orthogonal vectors in the dual form would span an isotropic plane, a contradiction.
+
+This completes the case of genuine degree three, including arbitrary lower terms. In particular the only pure regular function of degree at most three on an anisotropic four-dimensional norm quadric is zero.
+
+#### An exclusion criterion for quartic phases
+
+**Theorem.** Let $q$ be anisotropic of dimension four over a characteristic-zero field. A regular phase of degree exactly four on $q=1$ has infinitely many nonzero moments unless its leading class on $Q_\infty$ is of the form $L^3M$ for nonzero $K$-linear forms $L,M$.
+
+Take $m=(p-1)/2$ at a split degree-one prime, and replace the triple cover in (C1) by the double cover $Y_4$ of $Q_\infty$ branched along the leading $(4,4)$ divisor $D$. The maximum ambient degree of $P^m$ is $2(p-1)$, so the same residue is the central coefficient of the leading biform to that power. The count of square roots of a scalar $c$ is $1+c^{(p-1)/2}$ modulo $p$. Summing over the two projective lines identifies the coefficient with $\#Y_4-1$ modulo $p$. For any nondegenerate $q$, a double cover with at most rational double points resolves to a K3 surface. The branch line bundle is $\mathcal O(2,2)$, so the double-cover canonical sheaf is trivial and the direct-image decomposition as $\mathcal O\oplus\mathcal O(-2,-2)$ gives $H^1(\mathcal O)=0$. The ordinary-prime argument then gives infinitely many nonzero moments, just as for the triple cover.
+
+**Reduced leading divisor.** A local plane branch germ with delta invariant at most five gives only a rational double point in the double cover. Here is the classification needed for this claim. Multiplicity two gives type $A_r$. At a triple point whose tangent cone has more than one line, a smooth branch transverse to the residual double branch gives local form $x(y^2+x^r)$ after splitting the square in the double branch, yielding type $D_{r+2}$. For a triple tangent line, Weierstrass preparation and removal of the quadratic term give $y^3+a(x)y+b(x)$ with $\operatorname{ord}a\ge3$ and $\operatorname{ord}b\ge4$. If $b$ has order four, the principal form is $y^3+b_4x^4$ with weights $(3,4)$, giving $E_6$. If $b$ has order at least five and $a$ has order three, the principal form is $y^3+a_3x^3y$ with weights $(2,3)$, giving $E_7$. If $a$ has order at least four and $b$ has order five, the principal form is $y^3+b_5x^5$ with weights $(3,5)$, giving $E_8$. In each case the quotient by the leading Jacobian ideal has only weights below the principal degree, so the formal elimination used for mixed cubics removes the higher terms. Otherwise, $\operatorname{ord}a\ge4$ and $\operatorname{ord}b\ge6$. The blowup $y=xv$ leaves a triple point of the strict transform, so the two triple points in the multiplicity sequence give delta invariant at least six. Multiplicity at least four also gives delta invariant at least six. [The plane curve blowup formula for delta](https://arxiv.org/pdf/1412.5007) · [Double-point normal forms](https://arxiv.org/pdf/math/9911183)
+
+The arithmetic genus of a $(4,4)$ divisor is nine. If $D$ has at most three irreducible geometric components, the sum of its delta invariants is at most eleven, since it equals $9+r-1-\sum_i g_i$ for $r$ components of geometric genera $g_i$. Thus at most one point can fail the rational-double-point test, and a single such point would be rational over $K$. This is impossible. For the remaining reduced arrangements, the numbers of line components of each ruling are even by the same argument as in the cubic case.
+
+- With no lines and four components, they are all $(1,1)$ conics. Their total delta invariant is twelve. If any point fails the test, there must be exactly two with delta six. If one is a triple tangency, each pair among its three branches meets with multiplicity two there and cannot meet again. A second point involving at least three branches is then impossible. Hence both points are ordinary quadruple points. They lie on all four conics. After making the points $(0,0)$ and $(\infty,\infty)$ on $Q_\infty$, the leading form is a squarefree binary quartic in $s=a_0b_1,\ t=a_1b_0$. Its balanced coefficient is the central coefficient of the power of that binary quartic. Modulo $p$ this is one minus the point count on the genus-one double cover of $\mathbb P^1$ defined by the quartic.
+- With exactly two lines in one ruling and none in the other, at least four components forces two further components of types $(1,k_1)$ and $(1,k_2)$ with $k_1+k_2=4$, after naming the ruling $(1,0)$. The two graphs are smooth and the total delta invariant is twelve. Two bad points would have to be triple tangencies of delta six, one on each fibre, with each pair of branches meeting to order two. This forces $k_1=k_2=2$. Choose coordinates taking the two totally ramified points in each ruling to coordinate points. The leading product is
+  $$
+             a_0 a_1\,(a_0 b_1^2-\lambda_1 a_1 b_0^2)
+                        (a_0 b_1^2-\lambda_2 a_1 b_0^2)
+  $$
+  with distinct nonzero $\lambda_i$. Put $s=a_0b_1^2$ and $t=a_1b_0^2$. Extracting the balanced coefficient in its $m$-th power reduces to $[s^m t^m]((s-\lambda_1 t)(s-\lambda_2 t))^m$, which is the central coefficient of $(st(s-\lambda_1 t)(s-\lambda_2 t))^m$. This again tests a genus-one cover.
+- With two lines in each ruling, the residual class $(2,2)$ is either one integral component or two $(1,1)$ conics. An integral $(2,2)$ is smooth by its genus-one bound and the absence of a rational point. There are at most three branches at a grid point, two having distinct ruling directions. Elsewhere at most two components meet, so all points pass the test. For two conics any triple point with a single ruling line has distinct tangent directions because a conic meets that line only once. A bad point must therefore be a grid crossing on both conics. There are at most two, and if present they must form a pair in opposite corners. Both conics pass through these points. With $s=a_0b_1,\ t=a_1b_0$ after a coordinate change, the product is $st(s-\lambda_1t)(s-\lambda_2t)$, giving the same genus-one test.
+- Four lines in either ruling force four in both and give a grid of nodes.
+
+In each genus-one case the four roots are distinct. The elementary count of square roots identifies the binary central coefficient with $1-\#E$ modulo $p$. The sign comes from dividing the sum over nonzero affine pairs by $p-1$ to obtain the projective sum. Specialization and the order-three torsion argument already used for cubics then give infinitely many good primes where it is nonzero.
+
+**Nonreduced leading divisor.** Write its divisor as $D=2S+R$ with $R$ reduced, by taking floors of half the multiplicities. The bidegrees $(a,b)$ of $S$ satisfy $0\le a,b\le2$ and $a+b$ even. Indeed a general rational hyperplane cuts out a zero cycle of degree $a+b$ on $S$, and anisotropy forces this degree to be even. In split coordinates after a finite extension write the leading biform as $A^2B$ with divisors $S,R$. At a good degree-one prime with quadratic character $\chi$, the leading test is
+$$
+                \#Y_4-1\equiv\sum_{Q_\infty(\mathbb F_p)\setminus S}\chi(B)
+                             \pmod p.                            \tag{C6}
+$$
+
+If $(a,b)=(2,0)$ or $(0,2)$, the two lines of $S$ are distinct by anisotropy. The reduced $R$ lies in the other ruling and consists of four fibres. Thus (C6) is $(p-1)(\#E-p-1)$ where $E$ is the double cover of the other projective line branched at four points, again giving the genus-one test.
+
+If $(a,b)=(1,1)$, then $S$ is a conic: two ruling lines would have a unique rational intersection. The residual class is $(2,2)$. For each fibre of a projection of $Q_\infty$, summing $\chi(B)$ gives zero modulo $p$, because the binary quadratic to the power $(p-1)/2$ has degree $p-1$ and its sum over nonzero affine representatives is zero. Hence (C6) is minus the sum on $S$. Unless $R$ contains $S$, the restriction of $R$ to the conic has four simple zeros or a conjugate pair of double zeros. The double cover on $S$ is either smooth of genus one or two rational curves meeting at two points. After splitting that configuration, $\#J-1$ for this cover $J$ is nonzero modulo $p$ at infinitely many primes, using the genus-one argument or the count zero modulo $p$ in the reducible case. This gives the nonzero sum in (C6). If $R$ contains $S$, the residual divisor $R-S$ is a second rational $(1,1)$ conic, and the leading form is $L^3M$ modulo $q$.
+
+Finally $(a,b)=(2,2)$ gives $R=0$. Absorb the remaining scalar in a square after a finite extension. Then (C6) equals $1-\#S$ modulo $p$. A reduced $(2,2)$ divisor here is smooth genus one or a union of rational components with ordinary nodes. Indeed with no lines it is integral or two $(1,1)$ conics, and even Galois orbits forbid the unique singularity or tangency in those two cases. With lines the even ruling counts give a grid. Thus if $S$ is reduced its count differs from one modulo $p$ at infinitely many primes. If it is nonreduced a repeated line is impossible by the weighted ruling argument used for cubics, so $S$ is a double $(1,1)$ conic, and the leading form is $L^4$ modulo $q$. This is included in the stated exception.
+
+#### Complete exclusion for even quartics
+
+**Theorem.** On a four-dimensional anisotropic norm quadric over a characteristic-zero field, an even phase of degree exactly four has infinitely many nonzero moments.
+
+An even quartic can be represented on $q=1$ by a homogeneous quartic $F$, using $q$ to homogenize its quadratic and constant terms. For a split good degree-one prime,
+$$
+       p\Lambda(F^{p-1})\equiv\#\{F=0\text{ in }\mathbb P^3\}(\mathbb F_p)-1
+                           \pmod p .                            \tag{C7}
+$$
+Indeed a balanced monomial has the form $(xw)^i(yz)^k$ with $i+k=2(p-1)$. The denominator $(2p-1)!$ has one factor of $p$, and the numerator kills the residue if $i$ or $k$ is at least $p$. Thus only $i=k=p-1$ remains, with residue one by Wilson's theorem. Its coefficient in $F^{p-1}$ is the sum of that polynomial over $\mathbb F_p^4$, which counts minus the projective complement of $F=0$ modulo $p$ and proves (C7).
+
+If the moments of the phase were eventually zero, the same residue would vanish for every translated homogeneous form $F-cq^2$ at all sufficiently large good primes, by the binomial argument for (C1). In particular, any translated projective quartic with only rational double points gives a contradiction, because its resolution is a K3 surface. Let $W_c=\{F-cq^2=0\}\subset\mathbb P^3$. On $\mathbb P^3\setminus Q_\infty$ the pencil is the nonconstant regular function $F/q^2$, so its general fibre is smooth there. In what follows we may choose $c$ outside finitely many values.
+
+The leading exclusion reduces to $F=L^3M+qQ_2$, with linear $L,M$ and quadratic $Q_2$. If $Q_2|_{C_L}$ is nonzero, its degree-four zero divisor has either four simple points or two conjugate double points. The possible singularities of $W_c$ on $Q_\infty$ are limited to those zeros. Use $l=L$ and $r=q$ as local dehomogenized coordinates together with a conic coordinate. At a simple zero the $rQ_2$ term gives a mixed quadratic with the conic coordinate, so the quadratic part has rank at least two. At double zeros write $Q_2=\rho H^2+LJ+\nu q$ as in the cubic proof, with $\rho\ne0$, and use $u=H$ for the conic coordinate. The quadratic part is $rl J(p)+(\nu-c)r^2$. If $J(p)\ne0$ it has rank two. Otherwise both points annihilate $J$, so $J$ belongs to the span of $L,H$. For $c\ne\nu$ split the $r$-square. If $M(p)\ne0$, the residual germ has cubic part $M(p)l^3$ and a nonzero $u^4$ coefficient from eliminating $r$, giving type $E_6$ by weights $(4,3)$. All these cases give the required K3 resolution.
+
+The remaining case with nonzero quadratic restriction has $M,J$ in the span of $L,H$. Then the equation is
+$$
+               (\nu-c)q^2+q\,Q(L,H)+F_4(L,H)=0,
+ \qquad Q(l,h)=\rho h^2+lJ(l,h),\quad F_4(l,h)=l^3 M(l,h).
+$$
+Project from the line $L=H=0$ to $\mathbb P^1_{[l:h]}$, choosing affine representatives $(L,H)=(l,h)$ in each fibre. The quadratic form on the two-dimensional kernel of $(L,H)$ is nondegenerate, so at good split primes each prescribed value of $q$ in that fibre has count $-1$ modulo $p$. The values solving the equation are counted by the double cover $E_c$ of the parameter line with discriminant $Q^2-4(\nu-c)F_4$. This binary quartic is squarefree for generic $c$. The triple zero of $F_4$ at $l=0$ is disjoint from the zeros of $Q$ since $\rho\ne0$. A common root can only be the simple zero of $M$ distinct from $l=0$, and there the discriminant has a simple zero for $c\ne\nu$. Away from the common roots, generic squarefreeness follows from the separable nonconstant map given by $Q^2/F_4$. Thus $E_c$ is smooth of genus one. On the centre of projection the equation is $(\nu-c)q^2=0$ with two split points at good primes. Hence $\#W_c-1\equiv1-\#E_c\pmod p$, and the genus-one argument excludes eventual vanishing.
+
+If $Q_2|_{C_L}=0$, write $Q_2=LJ+\nu q$, so the phase on $q=1$ is $L^3M+LJ+\nu$. In the affine chart $L=1$ of $W_c$, fixing $r=q$ gives the linear condition $M+rJ=-(\nu-c)r^2$. Its projective infinity points are $C_L\cap\{M+rJ=0\}$. The affine count is one minus the number of these points modulo $p$, including dependent conditions by the same empty-fibre and quadratic-surface argument as for (C4). If the section defining
+$$
+ B=\{(x,[r_0:r_1])\in C_L\times\mathbb P^1:
+                         r_1 M(x)+r_0 J(x)=0\}
+$$
+is nonzero, summing the fibres gives
+$$
+              \#W_c-1\equiv \#(C_L\cap\{J=0\})-\#B\pmod p ,
+$$
+since the boundary at $L=0$ is just the conic when $c\ne\nu$. If $J|_{C_L}\ne0$, it has two distinct geometric zeros. If the two sections are independent they share no zero, and $B$ is a graph over $C_L$. If dependent, $B$ consists of $C_L$ and two fibres attached at those zeros. In either case $\#B\equiv1$ after splitting, and $\#(C_L\cap\{J=0\})=2$, so the residue is nonzero.
+
+It remains that $J$ is proportional to $L$, and the phase is $L^3M+\alpha L^2+\nu$. If $M$ is proportional to $L$ it is a nonconstant univariate polynomial in $L$, excluded by the single-denominator Cauchy argument above, valid for a quartic in the same way as for a cubic. Otherwise put $L=\ell z$ and $M=\mu z+\eta y$ in orthonormal coordinates over a complex field, and use (C5) with
+$$
+            f(z)=\ell^3\mu z^4+a z^2+\nu,\qquad
+            g(z)=d z^3,\qquad a=\alpha\ell^2,\quad d=\ell^3\eta .
+$$
+Both $H_\pm$ have poles of order four at zero and infinity because $(\ell^3\mu)^2+d^2=\ell^6 q^\vee(M)\ne0$. The noncommon roots and the common roots at $w=0$ are handled as before. Any other common root at value $\sigma=0$ requires $z=0$ and $\nu=0$. If $a=0$, both germs have order three, the other denominator has order $\sigma$, and the residue grows at most like $|\sigma|^{-5/3}$. If $a\ne0$, then $H_\pm=a z^2\pm d w_0 z^3+O(z^4)$ at $z=0,w=w_0=\pm1$. At a moving root the derivative is asymptotic to $2a z$ and the other denominator to $\pm2d w_0 z^3$, with $z^4\sim \sigma^2/a^2$. The leading residues of $2iw\,dz/((\sigma-H_+)(\sigma-H_-))$ are respectively $-ia/(2d\sigma^2)$ and $ia/(2d\sigma^2)$. Thus the only possible pole of order at least two has coefficient $j i a/(2d)$ at $\sigma^{-2}$ for an integer $j$. Eventual vanishing would force this coefficient to be $-1$, implying $-q^\vee(L)q^\vee(M_\perp)=(j\alpha/2)^2$. This again contradicts anisotropy.
+
+#### A residue obstruction for phases affine in the transverse coordinates
+
+Let $q$ be anisotropic of dimension four in characteristic zero. Fix a nonzero linear form $L$ and write $A(r)$ for a polynomial in one variable with coefficients in the orthogonal complement of $L$ for the dual form. Consider
+$$
+                      P=f_0(L)+A(L)(x).
+$$
+Here $A(r)$ is a linear form in $x$. Thus $P$ restricts to an affine-linear function on each hyperplane $L=r$.
+
+**Theorem.** If $P$ is nonconstant and $\deg A\le3$, then $P$ has infinitely many nonzero moments on $q=1$. In particular, this excludes every quartic of this form, with arbitrary mixed even and odd terms. In any degree, if $A=h_0 M$ for a fixed nonzero linear form $M$ and a nonzero scalar polynomial $h_0$, eventual vanishing requires that the field obtained by adjoining the repeated roots of $h_0$ contain a square root of $-q^\vee(L)q^\vee(M)$.
+
+The case $A=0$ is univariate. The single-denominator Cauchy argument following (C5) works in every degree at least two: the moving residues have growth strictly below order one, and any fixed residue at $v=0$ in degree two is independent of $\sigma$. A nonconstant linear phase has nonzero even moments by the sphere formula, so we may assume $A\ne0$ and $P$ has degree at least two.
+
+Use the orthonormal coordinates of (C5) over a complex model. Put $\ell^2=q^\vee(L)$, $f(z)=f_0(\ell z)$, and $B_0(r)=q^\vee(A(r))$. Conditional on $z$, the other three coordinates are uniform on the sphere of radius $\sqrt{1-z^2}$. Put $B(z)=B_0(\ell z)$ and $w^2=1-z^2$. Then
+$$
+ G'(\sigma)=-2\,\operatorname{CT}_v
+                  \frac{w^2}{(\sigma-f(z))^2-w^2B(z)} .
+$$
+Indeed the projected linear form on the conditional sphere has the moments of $w\sqrt{B(z)}\,\xi$ with $\xi$ uniform on $[-1,1]$. This identity for complex coefficients follows from the real sphere moment formula, since the moments of a linear form are polynomial in its coefficients. Averaging the inverse square gives the displayed expression, as in (C5).
+
+Write $D=(\sigma-f)^2-w^2B$. The differential for the constant term is $2iw\,dz/D$. It has no fixed residue. In fact, writing $d=\max(\deg f_0,1+\deg A)$, the denominator has pole order $2d$ at zero and infinity in the $v$-coordinate, whereas the numerator has pole order three. If the two leading degrees in $d$ tie, the nonvanishing of the coefficient follows from
+$$
+      q^\vee(\gamma L+A_{d-1})=\gamma^2\ell^2+q^\vee(A_{d-1})\ne0,
+$$
+where $\gamma$ is the leading coefficient of $f_0$ and $A_{d-1}$ is the leading linear form of $A$. The same nonvanishing without one of the two terms covers unequal degrees. Continuing the contour expression away from the critical and collision values gives a sum of selected moving residues.
+
+On a local branch write $y^2=B(z)$ and $\sigma=f(z)+wy$ at a moving root. Both signs of $y$ are allowed. Implicit differentiation of $D=0$ gives the residue
+$$
+                 R(\sigma)=-\frac{i}{y}\frac{dz}{d\sigma}.
+$$
+At a finite limit of a moving root, work in a local parameter on the normalization of this branch. If $\sigma$ has order $e$, the coefficient of $\sigma^{-2}$ is the residue of $\sigma R\,d\sigma$ in that parameter, divided by $e$. This follows by choosing a parameter $u$ with $\sigma=u^e$ and extracting $u^{-1}\,du$. Substitution gives
+$$
+             \sigma R\,d\sigma=-i(f/y+w)\,dz.                      \tag{C8}
+$$
+The term $w\,dz$ is regular, as is $f/y\,dz$ if $y\ne0$. At a limit with $y=0$ and $\sigma=0$ one has $f(z)=0$. At a zero $b$ of odd multiplicity of $B$, the residue of $f/y\,dz$ is zero. In a local parameter with $z-b=u^2$, this differential has only even exponents of $u$ in its coefficient. Further ramification only multiplies a residue by the local degree. At a zero of even multiplicity $2j$ the two branches of $y$ are analytic in $z$ and have order $j$. Since $f(b)=0$, a nonzero residue requires $j\ge2$.
+
+If $\deg A\le3$, then $\deg B_0\le6$. Hence there is at most one root of even multiplicity at least four and it must belong to the ground field. Call it $r_*=\ell b$. Anisotropy then gives $A(r_*)=0$. If the first nonzero coefficient in the expansion of $A(r)$ at $r_*$ is $H(r-r_*)^j$, the leading coefficient of $B_0$ there is $q^\vee(H)\ne0$. In the coordinate $r=\ell z$, each residue in (C8) is therefore in
+$$
+                    \frac{i}{\ell\sqrt{q^\vee(H)}}\,K,
+$$
+where $K$ is the ground field. Indeed the local series for $y/(r-r_*)^j$ has coefficients in $\sqrt{q^\vee(H)}\,K$. The same is true after division by $e$ and summing over the selected roots. If all sufficiently high moments vanished, $G'$ would be a polynomial in $\sigma^{-1}$ with coefficient $-1$ at $\sigma^{-2}$. If the root $r_*$ does not exist this coefficient is zero by (C8). Otherwise the coefficient $-1$ implies that $-q^\vee(L)q^\vee(H)$ is a square in $K$. This contradicts anisotropy on the span of the orthogonal forms $L,H$.
+
+For $A=h_0M$, one has $y=\pm\sqrt{q^\vee(M)}\,h_0(r)$. Formula (C8) now puts the coefficient of $\sigma^{-2}$ in $i/(\ell\sqrt{q^\vee(M)})$ times the field generated by the repeated roots of $h_0$. The simple roots give no residue because $f_0$ vanishes there whenever they contribute a branch limiting to $\sigma=0$. Equating the coefficient to $-1$ gives the asserted field condition.
+
+#### Complete exclusion for quartics in two linear coordinates
+
+**Theorem.** On a four-dimensional anisotropic norm quadric over a characteristic-zero field, every phase of degree exactly four that depends on at most two ground-field linear coordinates has infinitely many nonzero moments.
+
+By the leading restriction, the homogeneous quartic part is congruent to $L^3M$ modulo $q$. If the phase lies in a plane of linear coordinates, $L$ and $M$ belong to that plane. To see this, fix generic values of the two coordinates on $q=0$ and split the orthogonal complement over an extension. The fibre is a hyperbola. A linear form restricts on it to a Laurent polynomial with exponents in $\{-1,0,1\}$. Since $L^3M$ is constant and nonzero on that fibre, the two Laurent polynomials are units. Their exponents must both be zero by the factor three, so the two forms are constant along the fibre. Accordingly, in plane coordinates $(l,h)$ the leading term is $l^3h$ or a nonzero multiple of $l^4$. An overall rescaling allows the leading coefficient to be one.
+
+**Prime-power test.** In split coordinates $u,v$ on the plane, normalized integration is the balanced disk trace
+$$
+                  \Lambda(u^i v^j)=\frac{\delta_{ij}}{i+1}.
+$$
+Indeed the first two orthonormal coordinates on the real three-sphere have uniform disk law. In coordinates $u=z_1+iz_2,\ v=z_1-iz_2$, the product is the squared radius, uniform on $[0,1]$. The calculation extends to the field model by polynomial identities. For a translate $P-c$, let $F_c(u,v,s)$ be its homogenization to degree four. At a good reduction of odd characteristic $p$, write $Q=p^n$. Then
+$$
+ Q\Lambda((P-c)^{Q-1})
+      \equiv [(uv)^{Q-1}s^{2(Q-1)}]F_c^{Q-1}\pmod p.              \tag{C9}
+$$
+Indeed a contributing balanced exponent is at most $2Q-2$, so the only denominator divisible by $Q$ is $Q$ itself. If the moments of $P$ were eventually zero, the left side would vanish for all sufficiently large $p$ and all $n\ge1$. This follows by expanding the translate: only finitely many fixed moments can contribute, and they are integral at all sufficiently large $p$. The translate $c$ can be any value in a finite residue extension, by working first with $c$ as a variable and reducing the resulting polynomial identity.
+
+On $H^2(\mathbb P^2,\mathcal O(-4))$, use the three Cech classes $e_a=x^{-a}$ for $x=(u,v,s)$ and $a$ ranging over $(2,1,1),(1,2,1),(1,1,2)$. The semilinear operator $T$ sending a representative $\zeta$ to $F_c^{p-1}\zeta^p$ has matrix entries $[x^{pa-b}]F_c^{p-1}$ in row $b$, column $a$. Its $n$-th iterate replaces $p$ by $Q$. Thus (C9) is its $s$-diagonal entry, indexed by $e_s=1/(uvs^2)$. The operator is intrinsic under linear changes of projective coordinates, and scaling $F_c$ by a nonzero coefficient preserves bijectivity. If $T$ is bijective over a finite field, an iterate is the identity since the vector space is a finite set. The same argument works on a stable quotient if the functional extracting the $s$-coordinate factors through it. Either situation gives the diagonal coefficient one, contradicting eventual vanishing. The tests also apply to singular projective quartics.
+
+**Degeneration of the plane pencil.** In the $(l,h)$ coordinates first suppose that the cubic part has either $h^3$ or $lh^2$ with nonzero coefficient. Use $h^3$ when present. Also include the case with leading $l^3h$, neither of these cubic terms, and a nonzero quadratic coefficient of $h^2$. Write $l^j h^{4-j}$ for the leading term. In each of these cases scale $(l,h,s)$ by $(t^A,1,t^D)$ with positive integers $A,D$. Set $c=t^{-(4D-jA)}$ and divide the equation by $t^{jA}$. Choose $D=jA$ for $h^3$, $D=(j-1)A$ for $lh^2$, and $D=jA/2$ for the quadratic case. Then the limit at $t=0$ is a three-monomial quartic
+$$
+              l^j h^{4-j}+\alpha l^a h^b s^{4-a-b}-s^4,
+$$
+where $(a,b)$ is $(0,3)$, $(1,2)$, or $(0,2)$ respectively, and $\alpha\ne0$. The displayed exponents follow by comparing the weights $A,D$ of each term in the homogenization. All unlisted terms have strictly higher weight.
+
+For this limit form, let $U$ have the three monomial exponent vectors as columns. For $p\equiv1\bmod|\det U|$, the diagonal entry corresponding to $a'$ can be nonzero exactly when the components of $U^{-1}a'$ are all nonnegative. They sum to one, and the required multinomial coefficient has total $p-1$, so it is nonzero in that case. The following table lists the three vectors $U^{-1}a'$ for the basis in the order $e_l,e_h,e_s$.
+
+| $j$ | $(a,b)$ | $U^{-1}(2,1,1)$ | $U^{-1}(1,2,1)$ | $U^{-1}(1,1,2)$ |
+|---|---|---|---|---|
+| 3 | $(0,3)$ | $(6,1,2)/9$ | $(3,5,1)/9$ | $(3,2,4)/9$ |
+| 3 | $(1,2)$ | $(3,1,1)/5$ | $(0,1,0)$ | $(1,2,2)/5$ |
+| 4 | $(0,3)$ | $(6,4,2)/12$ | $(3,8,1)/12$ | $(3,4,5)/12$ |
+| 4 | $(1,2)$ | $(3,4,1)/8$ | $(0,1,0)$ | $(1,4,3)/8$ |
+| 3 | $(0,2)$ | $(4,1,1)/6$ | $(2,5,-1)/6$ | $(2,2,2)/6$ |
+
+The three vectors in each row are distinct modulo $\mathbb Z^3$, so $U^{-1}(pa'-b')$ is nonintegral when $a'\ne b'$. The limit matrix is diagonal and invertible in the first four cases. In the last case the whole family has degree at most two in $h$. The line spanned by $e_h$ is stable: its images in the other two coordinates would require $h$-exponent $2p-1$, which is too high. The quotient matrix on $e_l,e_s$ is invertible at the limit. Changing the two affine coordinates while fixing the homogenizing variable $s$ preserves the kernel of the functional extracting the $s$-coordinate, since this functional is dual to the linear form $s$. Hence the quotient satisfies the condition in (C9).
+
+In each case the appropriate determinant is nonzero at $t=0$, so it is nonzero at some $t\ne0$ over a finite extension of the residue field. To obtain a good reduction, first specialize the finitely generated field of definition to a number field with the stated nonzero coefficients and invertible coordinate changes preserved. The moment identities under an eventual-vanishing hypothesis survive this specialization because the moments are polynomials with rational coefficients in the phase and form data after splitting. Then take any sufficiently large prime $p\equiv1\bmod|\det U|$. This uses the arithmetic test over a finite residue extension, so there is no residue-degree constraint. The nonzero choice of $t$ gives the required translate in (C9).
+
+**The remaining transverse quadratic.** If the phase is affine in $h$, the transverse-affine theorem applies after putting $h$ orthogonal to $l$. The only remaining case has leading $l^4$, the cubic part divisible by $l^2$, and a nonzero coefficient of $h^2$ in the quadratic part. Completing the square gives
+$$
+                 P=\alpha Y^2+B(l),\qquad Y=h+A(l),\qquad
+                   \alpha\ne0,\quad \deg A\le2,\quad \deg B\le4 .
+$$
+Suppose first $\deg B\ge2$. Choose $c$ so $c-B(l)$ has simple roots. On the curve $P=c$ the differential
+$$
+                        \omega=\frac{dl}{2\alpha Y}
+$$
+is the constant-numerator differential $dl/\partial_h(P-c)$, and the analogous differential in the split disk coordinates is its nonzero scalar multiple. For degree two, the normalization is a conic and $\omega$ has simple poles at the two points over infinity and no others. Over a finite extension splitting these points it is a nonzero scalar multiple of $d\tau/\tau$, for a rational coordinate $\tau$ taking values zero and infinity there. It is a nonzero Cartier eigenline at all good primes. For degree three or four the normalization has genus one and $\omega$ spans its regular differentials. There are infinitely many good ordinary reductions, by the order-three torsion and Hasse argument used for cubics. Here too Cartier preserves the line and is nonzero on it. In either case the plane Cartier formula identifies its coefficient with the $p$-th root of (C9) with $n=1$: apply Cartier to the rational differential $du/\partial_v(P-c)$ by extracting from $(P-c)^{p-1}$ the exponents congruent to $p-1$ in both variables. The constant-numerator coefficient is the diagonal one. The formula applies on the normalization, using its rational differentials. [Stöhr–Voloch's formula as stated by Costa, Harvey and Sutherland, (2.2)](https://link.springer.com/article/10.1007/s40993-022-00397-8) This contradicts eventual vanishing.
+
+If $B$ is linear with nonzero slope, $dl\wedge dh$ is a nonzero constant multiple of $dP\wedge dY$. On the disk, the Cauchy transform is consequently a constant multiple of the boundary integral of $Y\,dP/(\sigma-P)$ by Stokes. Parametrize the boundary by the same $v$ as in (C5). The Laurent polynomial $P$ there has poles of order four at zero and infinity, because $l$ has simple poles at both and the highest term is $l^4$. The fixed residues of the boundary differential are polynomial in $\sigma$. The moving residues are signed values of $Y$ at roots of $P=\sigma$. These remain bounded at finite $\sigma$, since the roots cannot approach zero or infinity. If $B$ is constant, use instead the primitive $l\,dY/(\sigma-P)$, since $dl\wedge dY=dl\wedge dh$. Its moving residues are proportional to $l/Y$, of growth at most $O(|\sigma-B|^{-1/2})$. In either case $G(\sigma)$ cannot have the simple pole at zero required by a polynomial in $\sigma^{-1}$ with normalized zeroth moment one. This completes the proof.
+
+#### A Frobenius criterion from translated fibres in every degree
+
+**Proposition.** Let $P$ have degree $d\ge3$ on a four-dimensional nondegenerate norm quadric $q=1$ in characteristic zero, and write $F_c$ for the degree-$d$ homogenization of $P-c$. If the moments of $P$ are eventually zero, then for every good residue characteristic $p>d$, and every translate $c$ over a finite residue extension, Frobenius on $H^2(\mathcal O)$ of
+$$
+                    q=s^2,\qquad F_c=0
+             \quad\text{in }\mathbb P^4
+$$
+is nonbijective, provided the equations form a complete intersection. One such good reduction with bijective Frobenius therefore gives infinitely many nonzero moments.
+
+Work after splitting $q=xw-yz$. Set $Q=p^n$ and assume $p>d$. For a polynomial $V$ of degree at most $d(Q-1)$ the moment residue is
+$$
+ Q\Lambda(V)\equiv
+ \sum_{I+J\le\lfloor(d-3)/2\rfloor}
+ \frac{(-1)^J I!J!}{(I+J+1)!}
+ [(xw)^{(I+1)Q-1}(yz)^{(J+1)Q-1}](q-1)^{Q-1}V
+ \pmod p ,                                                      \tag{C10}
+$$
+where $I,J$ are nonnegative. In degrees three and four only the term $I=J=0$ occurs.
+
+Here is a monomial proof. Both sides vanish on unbalanced monomials. The trace of $(xw)^i(yz)^j$ is $(-1)^j i!j!/(i+j+1)!$. Each difference of floors at a power $p^k$ in the factorial valuation is zero or one, and is zero for $k>n$, since $i+j+1<pQ$. Thus the valuation is at least $-n$. Write $i=IQ+r$, $j=JQ+t$ with $0\le r,t<Q$. If $r+t<Q-1$, the difference at $p^n$ is zero and the residue vanishes. This also makes the right side zero, since the required coefficient in $(q-1)^{Q-1}$ would have degree greater than $Q-1$ in $xw,yz$. If $r+t\ge Q-1$, the degree bound gives $I+J\le\lfloor(d-3)/2\rfloor$. The relevant coefficient on the right has just these $I,J$. Factoring the factorials into blocks of length $Q$ reduces the residue on the left to
+$$
+       \frac{(-1)^J I!J!}{(I+J+1)!}
+                \left(Q\,\frac{(-1)^t r!t!}{(r+t+1)!}\right)
+                  \pmod p .
+$$
+Indeed, separating multiples of $Q$ from each block, the term $kQ+v$ for $1\le v<Q$ differs from $v$ by a factor that is a $p$-adic unit congruent to one. The same comparison applies to the two tails. With $a=Q-1-r$, $b=Q-1-t$, and $u=Q-1-a-b$, the same comparison for $Q-v$ shows that
+$$
+       Q\frac{r!t!}{(r+t+1)!}\equiv
+           (-1)^{a+b}\frac{(Q-1)!}{a!b!u!}
+           \equiv\binom{a+b}{a}\pmod p .
+$$
+The coefficient of $(xw)^a(yz)^b$ in $(q-1)^{Q-1}$ is $(-1)^{Q-1-a}\binom{Q-1}{a+b}\binom{a+b}{a}$, which is $(-1)^t\binom{a+b}{a}$ modulo $p$. This proves (C10).
+
+Apply (C10) to $V=(P-c)^{Q-1}$. Let $e_a$ denote the Cech class $x^{-a_1}y^{-a_2}z^{-a_3}w^{-a_4}s^{-a_5}$, with positive entries of $a$ summing to $d+2$. Put
+$$
+     b=(1,1,1,1,d-2),\qquad
+     a_{I,J}=(I+1,J+1,J+1,I+1,d-2-2(I+J)).
+$$
+After homogenization, each coefficient in (C10) is the coefficient at exponent $Qa_{I,J}-b$ in $((q-s^2)F_c)^{Q-1}$. The Koszul resolution identifies $H^2(\mathcal O)$ of the complete intersection with $H^4(\mathbb P^4,\mathcal O(-d-2))$. In these Cech coordinates Frobenius raises a representative to the $p$-th power and multiplies by $((q-s^2)F_c)^{p-1}$. Indeed, the $p$-power map into the resolution of the powered equations is followed by multiplication by $f^{p-1}$ on the relation term for each equation $f$. Consequently (C10) is a fixed weighted combination of entries in the $e_b$ row of the $n$-th Frobenius iterate, with weight one on the $e_b$ column.
+
+If Frobenius is bijective over a finite field, it has an iterate equal to the identity. For that iterate (C10) is one. If the moments are eventually zero, expansion of the translate leaves only finitely many fixed initial moments. At the fixed prime their denominators are killed modulo $p$ by $Q=p^n$ for large $n$. Taking arbitrarily large multiples of the order of the bijection for $n$ gives the contradiction.
+
+For example, finding bijective Frobenius in a reduction of a translated quartic fibre excludes purity even when all four coordinates occur. If a projective fibre is smooth, weak ordinarity would give arbitrarily large such reductions and hence infinitely many nonzero moments. Finding suitable reductions throughout the remaining pencils is open in this argument.
+
+#### Prime-power residue tests with fixed multipliers
+
+**Theorem.** Let $q$ be nondegenerate of dimension four, and let $\Lambda$ be normalized trace on $q=1$. In good residue characteristic $p$, put $Q=p^n$. Let $T,U$ be integral at the chosen place with degrees at most $d(Q-1),u$ respectively, where $d\ge3$ and $d+u<2p$. For their reductions write
+$$
+ {\cal C}_{Q}(G)=
+    \sum_{\mathbf i\ge0}
+       \left([\mathbf x^{Q\mathbf i+(Q-1)\mathbf 1}]G\right)^{1/Q}\mathbf x^{\mathbf i},
+ \qquad
+ {\cal A}_{Q}(T)={\cal C}_{Q}\big((q-1)^{Q-1}T\big).
+$$
+Here the $1/Q$ power is taken on each extracted coefficient in the perfect residue field. In split coordinates,
+$$
+             Q\Lambda(TU^Q)
+                \equiv\big(\Lambda(U{\cal A}_{Q}(T))\big)^Q
+                       \pmod p .                                 \tag{C11}
+$$
+Under a linear change of coordinates the two sides can differ by a nonzero scalar exterior-volume factor. In particular the vanishing test is valid in every linear coordinate system.
+
+Use the block calculation of (C10), now with $TU^Q$ in place of $V$. Its degree bound makes $i+j+1<pQ$ for all balanced monomials $(xw)^i(yz)^j$ under consideration. This is the only bound needed there to exclude higher denominator factors. The proof gives the sum over $I,J$ with weights $(-1)^J I!J!/(I+J+1)!$, applied to the coefficient of $\mathbf x^{Q\mathbf i+(Q-1)\mathbf 1}$ with $\mathbf i=(I,J,J,I)$. Coefficient extraction can be done before multiplication by the $Q$-th power of $U$, by Frobenius. The resulting weights are exactly the normalized trace on $U{\cal A}_Q(T)$. Its degree is at most $u+d-3$, so all its split monomial trace denominators are units.
+
+For coordinate invariance at $Q=p$, regard the extraction on polynomial volume forms as the quotient by exact top forms. A monomial top form is exact if one of its exponents differs from $p-1$ modulo $p$. The quotient is freely generated over the $p$-th powers by the monomial with all exponents $p-1$. Under an invertible linear change of variables this generator transforms by the $p$-th power of the determinant, as is seen on shears, diagonal matrices and permutations. Dividing out the volume form gives the claimed scalar transformation for the polynomial operator. Iterating yields the transformation at $Q=p^n$.
+
+**Stable Frobenius test.** Take $T=(P-c)^{Q-1}$ with $P$ of degree $d\ge3$ and $U=P^r$ with $d(r+1)<2p$. Form a vector $v_r$ in the basis of (C10) indexed by $a$ with entries $\Lambda(\mathbf x^{(a_1-1,\dots,a_4-1)}P^r)$ reduced at $p$. Then (C11) is the $e_b$ coordinate of $\Phi^n(v_r)$, where $\Phi$ is Frobenius on the translated fibre. If the moments of $P$ are eventually zero, that coordinate must vanish for all sufficiently large $n$. For $r>0$ the moments on the left are already zero for large $n$. For $r=0$ expansion of the translate leaves only finitely many fixed initial moments. Their $p$-adic denominators, if any, are killed by $Q=p^n$ for large $n$. This proves the test at a single fixed good prime.
+
+Over a finite residue field let $\pi_{\rm st}$ denote projection onto the stable image of $\Phi$ along its nilpotent subspace. The test excludes eventual vanishing if the $e_b$ coordinate of any iterate of $\pi_{\rm st}v_r$ is nonzero, since the restriction to the stable image is periodic. In particular one good reduction with bijective Frobenius excludes eventual vanishing, by taking $r=0$ and arbitrarily large iterates that are the identity. The same fixed-prime test can apply when Frobenius has a nonzero nilpotent subspace.
+
+For quartics, $v_r$ records just the moment of $P^r$ and the four moments marked by linear coordinates. If the latter span the four-dimensional space as $r$ varies, a pure phase forces the entire $e_s$ row of Frobenius to vanish for every translate at all sufficiently large primes. Indeed, $v_0$ supplies the constant coordinate, and finitely many positive $r$ supply a basis for the other coordinates over the ground field. Retain a nonzero determinant at reduction and use (C11) with $Q=p$.
+
+##### Finite tests for the independent mixed quartic branch
+
+Use the mixed leading class $l^3(M_0+\beta l)$ and the cubic terms $T+lU+l^2J+\kappa l^3$ from the conic tests. The following conditions apply at a single good prime, after reducing the coefficients and choosing split coordinates on the transverse conic. A circumflex denotes restriction to the conic in its binary parametrization.
+
+**Corollary.** Suppose $\Lambda(lP)$ is a unit at the chosen prime. Either condition below excludes purity.
+
+- When $T=0$, take $p\equiv2\bmod5$, $p\ge7$, and put $\mu=(4p-3)/5$. The condition is
+$$
+        [u^{p-1}v^{p-1}]\,
+                    \widehat M_0^{(3p-1)/5}\widehat U^{(p-2)/5}\ne0 .
+$$
+- When $T|_C\ne0$, take $p\equiv2\bmod9$, $p\ge11$, and put $\mu=(7p-5)/9$. The condition is
+$$
+        [u^{p-1}v^{p-1}]\,
+                    \widehat M_0^{(2p-1)/3}\widehat T^{(p-2)/9}\ne0 .
+$$
+
+In either case one of the moments of orders $1$ and $p+\mu$ is nonzero.
+
+Use (C11) with $Q=p$, with test polynomial $P^\mu$ and multiplier $P$. Only a constant and a linear part can survive extraction. We show that the linear part is a nonzero multiple of $l$. For a transverse output coordinate, the $l$ exponent in the coefficient extraction is at most $p-1$; for the $l$ output coordinate it is at most $2p-1$. The phase factors alone must have degree at least $3p-2$, because the target of a linear extraction has degree $5p-4$ and $(q-1)^{p-1}$ has degree $2p-2$.
+
+If $T=0$, each monomial in $P$ has total degree minus half of its $l$-degree at most $5/2$. Equality requires a monomial of $l^3M_0$ or of $lU$. For the $l$ output the upper bound is
+$$
+                       \tfrac52\mu+\tfrac12(2p-1)=3p-2 .
+$$
+A transverse output has a strictly smaller bound. Thus equality holds for the $l$ output, and the counts of the two contributing terms are $(3p-1)/5,(p-2)/5$. They use up the full $l$ exponent, so only the top term $q_\perp^{p-1}$ of $(q-1)^{p-1}$ contributes.
+
+If $T|_C\ne0$, let $a$ be the number of quartic phase factors. Their $l$ exponents total at least $3a$, and the total degree of the phase factors is at most $3\mu+a$. With a transverse output this is strictly less than $3p-2$. The $l$ output again attains equality only at $a=(2p-1)/3$ and with all other factors from $T$, in number $(p-2)/9$. The $l$ exponent is saturated again. In both cases the multinomial factors are units since $\mu<p$. Reducing the $q_\perp^{p-1}$ coefficient along the split conic as in the cone tests proves the claimed formulas.
+
+If $\Lambda(P)=0$, the constant part of the extracted polynomial cannot contribute to $\Lambda(P{\cal A}_p(P^\mu))$. The assumed unit $\Lambda(lP)$ then makes the residue at order $p+\mu$ nonzero.
+
+For instance take
+$$
+ q=l^2-2x_1^2-3x_2^2+6x_3^2,\qquad
+ P=l^3x_1+l(x_1^2+x_1x_2+x_1x_3+x_2^2+x_3^2).
+$$
+At $p=7$ the first test uses $\mu=5$ and $\Lambda(lP)=-1/36$. With $u'=2x_2+x_3,\ v'=2x_2-x_3$, the transverse conic has $q_\perp=u'v'-2x_1^2$ modulo seven. Put $u'=u^2,\ v'=2v^2,\ x_1=uv$. The coefficient of $u^2v^2$ in $\widehat U$ is $5/6$ modulo seven, and $\widehat M_0=uv$. The phase has mean zero, so its twelfth moment has valuation minus one at seven.
+
+Here is a case where the linear marker detects the stable image even though the diagonal test at the same translate vanishes. On the same norm quadric put
+$$
+ P=l^3x_1+l(-2x_1^2+2x_1x_2+2x_1x_3+x_2^2)+2x_1 .
+$$
+At $p=5$ use $c=2$. The fourth powers of $q-s^2$ and $F_2$ give the two rows of the Frobenius matrix below, with columns ordered by the doubled index $l,x_1,x_2,x_3,s$. The entries are obtained by extracting $5a-b$ in the product of the two fourth powers.
+$$
+             \begin{array}{c|ccccc}
+                  &l&x_1&x_2&x_3&s\\ \hline
+             l    &4&0&0&0&0\\
+             s    &2&0&0&0&0
+             \end{array}
+$$
+Thus the $s$-coordinate of $\Phi^n(v)$ is $2\cdot4^{n-1}v_l$. It vanishes for $v_0=e_s$ at every positive iterate. But $\Lambda(lP)=1/36$ is a unit at five, so (C11) gives a nonzero residue of $5^n\Lambda(P^{5^n}(P-2)^{5^n-1})$ for every $n\ge1$. Consequently the pure moment sequence of this phase cannot be eventually zero.
+
+#### Mixed quartics detected by cones over the repeated conic
+
+Let $q$ be anisotropic of dimension four in characteristic zero. Consider a quartic with leading class $L^3M$ modulo $q$. Write $q=\gamma l^2+q_\perp(X)$ with $l=L$, and let $C=\{q_\perp=0\}\subset\mathbb P^2_X$. There are two types of leading term after scalar normalization: $l^4$, or $l^3(M_0(X)+\beta l)$ with $M_0\ne0$. Write the cubic part as
+$$
+            T(X)+lU(X)+l^2J(X)+\kappa l^3
+$$
+and denote the transverse quadratic part of the phase by $S(X)$. Here $T,U,J,S$ have degrees $3,2,1,2$. If $T|_C=0$ we remove $T$ using $q=1$, adjusting the lower terms and $J$. If also $U|_C=0$ we similarly remove the term $lU$. All conditions on later terms below are applied after these reductions.
+
+**Theorem.** The following quartics have infinitely many nonzero moments, with no restriction on the number of coordinates in the lower terms.
+
+- With leading term $l^4$, this holds if $T|_C\ne0$, or if $T=0$ and $U|_C\ne0$. If $T=U=0$, it holds when $S|_C=0$ or $(S-J^2/4)|_C\ne0$.
+- With leading term $l^3(M_0+\beta l)$, $M_0\ne0$, this holds when $T=U=0$. It also holds if the divisor of $T|_C$ is a pair of triple points, or if $T=0$ and $U|_C\ne0$ and either $U|_C$ has a repeated zero or its divisor meets that of $M_0|_C$.
+
+**Extracting a diagonal coefficient on the cone.** In the translated complete intersection of (C10), scale $l\mapsto t^A l,\ s\mapsto t^D s$ with positive integers $A,D$, keep $X$ fixed, and take the translating constant to be $t^{-(4D-jA)}$. Here $j=4$ for leading $l^4$ and $j=3$ for leading $l^3M_0$. Dividing the quartic equation by $t^{jA}$ gives the limit at $t=0$ with quadratic equation $q_\perp=0$. The following table lists the quartic limits used below. A restriction to $C$ can be used in the coefficient calculations, since adding a multiple of $q_\perp$ to the quartic gives the same Frobenius operator on the complete intersection. The variable $m$ in the table is $p-1$. The last column gives the polynomial in $X$ whose product with $q_\perp^m$ supplies the desired coefficient, up to a nonzero multinomial factor.
+
+| Leading term | First transverse term | $D/A$ | Limit quartic | Polynomial in $X$ |
+|---|---|---|---|---|
+| $l^4$ | $T$ | $4$ | $l^4+sT-s^4$ | $T^{m/3}$ |
+| $l^4$ | $lU$ | $3$ | $l^4+slU-s^4$ | $U^{m/2}$ |
+| $l^3M_0$ | $T$ | $3$ | $l^3M_0+sT-s^4$ | $(M_0^3T^2)^{m/9}$ |
+| $l^3M_0$ | $lU$ | $2$ | $l^3M_0+slU-s^4$ | $(M_0 U^2)^{m/5}$ |
+| $l^3M_0$ | $S$ | $3/2$ | $l^3M_0+s^2S-s^4$ | $(M_0 S)^{m/3}$ |
+
+Here a row using $S$ assumes $T=U=0$. If $S|_C=0$ in that row, all terms are affine in the transverse coordinates after using $q=1$, and the transverse residue theorem applies.
+
+In each row take $p$ congruent to one modulo the denominators in the monomial counts for $l^m s^{2m}$. Solving for those counts gives the last column. This computes the diagonal coefficient for the Cech class $e_s=1/(lX_1X_2X_3s^2)$ of (C10) in the limit.
+
+If that coefficient is nonzero at a good prime, it is nonzero as a polynomial in $t$, hence at some $t\ne0$ over a finite residue extension. The change of coordinates and the scalar rescaling preserve this nonvanishing. Under Serre duality the $s$-coordinate is dual to the homogenizing variable and its line stays fixed when the other variables do not mix with $s$. This contradicts (C10) under eventual vanishing. As with (C9), we specialize to a number field preserving the branch and singularity configurations. We can take ordinary primes after finite extension and require degree one and the prescribed congruence by adjoining roots of unity.
+
+**The curve tests.** Split the conic as $q_\perp=xz-y^2$ and use $(x,y,z)=(u^2,uv,v^2)$. For a homogeneous $H$ of degree $m$ in $X$ one has
+$$
+ [x^my^mz^m](xz-y^2)^m H
+      \equiv [u^mv^m]H(u^2,uv,v^2)\pmod p .
+$$
+On a contributing monomial $x^i y^k z^i$ this is the congruence $\binom m{m-i}(-1)^i=1\bmod p$. Thus for a binary form $B$ of degree $2e$ in the last column, with exponent $m/e$, the test is the Frobenius coefficient on the character-one $H^1(\mathbb P^1,\mathcal O(-2))$ of the degree-$e$ cyclic cover branched by $B$. If the roots have multiplicity less than $e$, this character summand is unchanged upon normalization: the local integral closure needed to identify the character-$i$ summand permits a pole of order $\lfloor i\mu/e\rfloor$ at a root of multiplicity $\mu$, which is zero for $i=1$. For $p\equiv1\bmod e$ Frobenius multiplies the powered representative by $B^{m/e}$. The Cech representative $1/(uv)$ gives the displayed coefficient.
+
+The cases of ordinary reduction needed here are as follows.
+
+- For a binary quartic with two double roots the coefficient with $e=2$ is nonzero after sending the roots to zero and infinity. A reduced quartic gives a genus-one cover and has infinitely many ordinary primes. These are the only cases for a nonzero quadratic section on the anisotropic conic: a set of roots of a fixed multiplicity is Galois-invariant and has even cardinality. Indeed a divisor of odd degree on a conic gives a line bundle of degree one after twisting by a power of its hyperplane class, and Riemann–Roch gives a rational point.
+- For a binary sextic on the conic the nonreduced types are two triple roots, or two double and two simple roots. The first gives a nonzero coefficient with $e=3$ by putting the roots at zero and infinity. The second gives a cyclic cover of genus two and ordinarily reduces at infinitely many primes after adjoining the cube roots of unity. [Sawin, Theorem 1](https://arxiv.org/abs/1506.04784)
+- A reduced sextic gives a cyclic triple cover of genus four, whose Jacobian has $\mathbb Q(\zeta_3)$-signature $(1,3)$. To verify ordinary reduction also at special members of this family, decompose the Jacobian up to isogeny over a finite extension. Factors of dimension at most two have ordinary reduction at a density-one set of primes after finite extension. Every larger simple factor occurs once, so the imaginary quadratic action restricts to it. The smaller eigenspace has dimension at most one. If it has dimension zero, the simple factor has pure imaginary quadratic type, and is isogenous to a power of a CM elliptic curve: each rational line over the imaginary quadratic field in its first homology is a Hodge substructure, since the complex structure is induced by that field. Hence a simple factor of dimension at least three has type $(1,g-1)$.
+
+  For such a simple factor let $\mathscr D$ be its geometric endomorphism division algebra and $E=\mathbb Q(\zeta_3)$. The centralizer of $E$ acts faithfully on the one-dimensional Lie eigenspace, so it is commutative. If $E$ is noncentral, then at each embedding of the center the two eigenvalues of $E$ have equal multiplicities on any complex module of the matrix algebra $\mathscr D\otimes_{Z(\mathscr D)}\mathbb C$. Indeed the minimal polynomial of a generator of $E$ is irreducible over the center, and the multiplicities on the standard module agree by conjugacy of its two roots over the center. This contradicts the unequal Lie multiplicities. Thus $E$ is central and $\mathscr D$ is a field, which is CM by positivity of the Rosati involution. The embeddings above the smaller $E$-eigenspace form a CM type with Lie multiplicities zero except for one multiplicity one. Therefore the simple-signature theorem applies to the factor. Intersecting the density-one ordinary sets of the factors proves the desired assertion for the sextic cover. [Cantoral Farfán, Li, Mantovan, Pries and Tang, Theorem 4.18](https://arxiv.org/html/2508.11174v1)
+- For the $l^3M_0+sT-s^4$ row, if $T|_C$ has divisor a pair of triple points, it is a scalar times $H_0^3$ on $C$ for a linear section $H_0$. In the table this gives a sextic $(M_0 H_0^2)^{m/3}$ up to a scalar, covered by the preceding sextic cases.
+- For the $l^3M_0+slU-s^4$ row the degree-ten binary form $M_0U^2$ has either a pair of quintuple roots or four roots of complementary multiplicities $(r,r,5-r,5-r)$ under the theorem's hypothesis. Indeed a double root of $U|_C$ occurs in a pair, and the two zeros of $M_0|_C$ either coincide with that pair or are disjoint. When $U|_C$ is reduced and meets the zeros of $M_0|_C$, it contains both. A pair of quintuple roots gives the direct monomial coefficient. For four complementary roots the order-five cover has genus four. The involution of the base interchanging the two pairs by two transpositions lifts to a reflection $\tau$ of the cover, inverting the deck generator $g$. This follows from the equality of the transformed branch exponents with their negatives modulo five. A lift has square in the deck group, and inversion forces that square to be one. At each of the two fixed points on the base it fixes one point in an unramified fibre of size five. Riemann–Hurwitz gives genus two for the quotient by $\tau$. The reflections $\tau$ and $g\tau$ are conjugate over the splitting field. Their invariant subspaces in first cohomology intersect trivially, since the intersection is invariant under the deck group and the base has genus zero. The two quotient Jacobians therefore give an isogeny onto the genus-four Jacobian. Ordinary reduction for the genus-two factors provides the required nonzero coefficient.
+
+This proves all five rows in the stated theorem.
+
+**The quadratic remainder with leading $l^4$.** If $T=U=0$ and $S|_C=0$, use the transverse affine theorem. Otherwise the weight ratio $D/A=2$ yields the limit
+$$
+      q_\perp=0,\qquad l^4+sl^2J+s^2S-s^4=0 .
+$$
+Take $p\equiv1\bmod4$. Write $\Delta=S-J^2/4$ on $C$ and suppose $\Delta\ne0$. Use the projective complete intersection of three quadrics in $\mathbb P^5_{X,w,s,z}$:
+$$
+       q_\perp(X)=0,\qquad w^2+wJ+S-s^2=0,\qquad z^2=sw .
+$$
+Its scalar on $H^2(\mathcal O)$ is a nonzero multiple of the limit $e_s$ diagonal coefficient. In the product of the equations to power $m$, extracting $z^m$ leaves $s^{m/2}w^{m/2}$ times the nonzero signed binomial coefficient. The remaining coefficient is
+$$
+ [X_1^mX_2^mX_3^m w^{m/2}s^{m/2}]\,
+              q_\perp^m(w^2+wJ+S-s^2)^m .
+$$
+Selecting the $s^{m/2}$ term selects $m/4$ factors of $-s^2$. In the cone limit, extracting $l^m s^{2m}$ similarly selects $m/4$ factors of $-s^4$. The rest agrees with the displayed coefficient by writing the other terms as the quadratic in $l^2,s$ with coefficients $1,J,S$. This proves the comparison including its nonzero scalar.
+
+Except in one case, the three-quadrics surface resolves to a K3 surface. Here are the singularities. Over a chart of $C$ with local coordinate $u$ the equations are $w^2+wJ(u)+S(u)-s^2=0,\ z^2=sw$. At the vertex $X=0$ there are four ordinary double points, by solving the two other equations locally in $w,z$ with $s=1$. Away from the vertex, the generic fibre over $C$ is the double cover of a smooth conic branched at four distinct points given by $sw=0$, since $S,\Delta$ are nonzero. All fibres there have dimension one, giving geometric integrality.
+
+- When $sw\ne0$ the double cover is unramified, and the base equation is smooth. At $w=0,s\ne0$ the branch is smooth.
+- At $s=0,w\ne0$, singularities require a multiple root of $\Delta$. Such a root is double, by the divisor-degree bound on $C$. Substituting $s=z^2/w$ and completing the $w$-square gives two nondegenerate squares and a fourth power, hence type $A_3$.
+- At $s=w=0$ a simple zero of $S$ gives $A_1$. At a double zero with $J\ne0$, the relation $w(w+J)=s^2-S$ gives a double cover branched at three transverse local curves, of type $D_4$.
+
+The remaining case has a double zero of $S$ where $J=0$. Then $S|_C=\alpha H_0^2$ and $J|_C=\beta H_0$ for a linear section $H_0$ and ground-field scalars, by taking the line through the conjugate double zeros. This includes $J=0$. Split $q_\perp$ as $uv+\rho H_0^2$. The cone coefficient in $u^m v^m$ selects just $(uv)^m$. The resulting plane coefficient is for $l^4+s l^2\beta h+s^2\alpha h^2-s^4$ with $h=H_0$. Completing the square at $s=1$ gives the elliptic curve of the transverse-quadratic case of (C9), because $\Delta\ne0$ means $\alpha\ne\beta^2/4$. Its ordinary reductions give a nonzero plane coefficient by the same Cartier calculation.
+
+For the surface with rational double points, adjunction gives trivial canonical bundle and the Koszul resolution gives $H^1(\mathcal O)=0$. These properties persist on its resolution, which is therefore K3. At good ordinary primes the resolution and the singular surface have the same nonzero Frobenius scalar on $H^2(\mathcal O)$, since the exceptional points are rational singularities. This proves the final case of the theorem. [Bogomolov and Zarhin, Theorem 0.1](https://arxiv.org/abs/0902.1548)
+
+For leading $l^4$ the cone limits leave the case with $T=U=0$ and $S|_C=J^2/4\ne0$. Equivalently, after completing the square and using $q=1$, they have a representative
+$$
+                  (l^2+J_0/2)^2+lH+N+\nu ,
+$$
+with linear forms $J_0,H,N$ and a scalar $\nu$. The square absorbs the entire cubic term. The quadratic remainder restricts to zero on $C$, so it lies in $(l,q)$ and gives $lH$ after absorbing a constant. With leading $l^3(M_0+\beta l)$, the remaining cone tests concern $T|_C$ without a pair of triple zeros, or $T=0$ with $U|_C$ reduced and disjoint from the zeros of $M_0|_C$.
+
+##### Involutions of the conic and the remaining mixed leading class
+
+Use the notation $l^3(M_0+\beta l),T,U$ of the cone tests, with $M_0\ne0$. All branch and involution conditions below are geometric. An involution in the statement preserves the indicated zero divisors with their multiplicities.
+
+**Theorem.** The following further quartics have infinitely many nonzero moments on every characteristic-zero anisotropic norm quadric of dimension four.
+
+- Suppose $T=0$ and $U|_C$ has four distinct zeros disjoint from the two zeros of $M_0|_C$. Assume an involution of $C$ preserves both divisors and fixes either the two zeros of $M_0|_C$ or two of the zeros of $U|_C$.
+- Suppose $T|_C$ has two double zeros and two simple zeros, disjoint from the zeros of $M_0|_C$, and an involution preserving both divisors fixes the two simple zeros of $T|_C$.
+- Suppose $T|_C$ has zeros outside $M_0|_C$, and an automorphism fixing the two zeros of $M_0|_C$ acts transitively on those other zeros while preserving the divisor of $T|_C$. This includes a pair of other zeros exchanged by an involution, as well as four or six simple zeros in a single orbit.
+
+The cone coefficient is the character-one Frobenius coefficient of the cyclic cover with binary branch form $M_0U^2$ and order five in the first case, or $M_0^3T^2$ and order nine in the second. We only need ordinary reduction on the factor containing the character-one line in $H^1(\mathcal O)$. The branch data and the involutions may be retained in a number-field specialization, followed by finite extension as in the cone tests.
+
+**Ordinary reduction for the factors carrying the coefficient.**
+
+**Lemma.** Let an abelian variety over a number field admit multiplication by an abelian Galois CM field $E$. Choose one embedding from each complex conjugate pair of embeddings of $E$, and suppose the Lie multiplicities on these embeddings are zero except for a single multiplicity one. Then after finite extension the variety has ordinary reduction at a density-one set of primes.
+
+Decompose up to isogeny into geometric isotypic blocks, after a finite extension. Each block admits $E$-multiplication. For a given block let $n$ be the rank of its first rational homology over $E$. The two Lie multiplicities in each conjugate pair sum to $n$, by the Hodge decomposition. Every block except one has pure type: the complex structure on its real homology is induced by an element of $E\otimes\mathbb R$, acting by one of $i,-i$ at each complex place. Each rational $E$-line in its homology is consequently a Hodge substructure. The block is isogenous to a product of CM abelian varieties. The exceptional block has the same conclusion if $n=1$. Such CM factors are ordinary at degree-one good primes after extending the field to contain their CM fields and all endomorphisms. [Fité, Remark 12](https://arxiv.org/pdf/2005.10185)
+
+Write the remaining block as $B^m$ and put $F=Z(\operatorname{End}^0_{\overline K}(B))$. Choose an embedding of the abstract field $F$ into an algebraic closure of $\mathbb Q$ containing $E$, and let $E_0$ be the intersection in that algebraic closure. The Lie multiplicities for $E$ on $B^m$ are constant on $\operatorname{Gal}(E/E_0)$-orbits. Indeed, at each embedding of $F$ the reduced characteristic polynomial of a generator of the acting $E$ has coefficients in the image of $F$. Its eigenvalue multiplicities are constant on the corresponding subgroup orbits. A complex module of this matrix algebra is a sum of standard modules, and the image of $F$ meets the normal abelian field $E$ in the same subfield $E_0$ at every embedding. This gives the claimed constancy.
+
+If $n>2$ the Lie multiplicity one is unique, so $E_0=E$. If $n=2$, the only nonidentity element of $\operatorname{Gal}(E/\mathbb Q)$ preserving the two multiplicities one is complex conjugation. It interchanges the two unequal multiplicities in any other conjugate pair, so again $E_0=E$ when $[E:\mathbb Q]>2$. The case $n=2$ with $[E:\mathbb Q]=2$ is an abelian surface and follows from Sawin's theorem. [Sawin, Corollary 2](https://arxiv.org/abs/1506.04784)
+
+Thus the abstract field $E$ embeds in $F$. The acting copy of $E$ on $B^m$, together with this central copy, gives an action of $E\otimes_{\mathbb Q} F=\prod_{\iota:E\hookrightarrow F}F$. The idempotents decompose $B^m$ up to isogeny into powers of $B$, on each of which the acting $E$ is given by one central embedding $\iota$. At least one of these summands supplies the one-dimensional Lie eigenspace, and the corresponding central action on $B$ has the stated simple signature. The endomorphism division algebra of $B$ acts faithfully on that one-dimensional eigenspace because this copy of $E$ is central. Hence the algebra is a field, which is CM by positivity of Rosati. The embeddings above the chosen CM type of $E$ give a CM type for this endomorphism field with total Lie dimension one on the selected embeddings. The simple-signature theorem applies to $B$, so its power $B^m$ has the same ordinary primes. Intersecting the density-one sets for all blocks proves the lemma. [Cantoral Farfán, Li, Mantovan, Pries and Tang, Theorem 4.18](https://arxiv.org/html/2508.11174v1)
+
+In particular, with relative rank two over $E$, it is enough that there be exactly one pair of Lie multiplicities $(1,1)$ and that every other conjugate pair have multiplicities $(2,0)$ or $(0,2)$.
+
+**The degree-five branch cover.** If the involution fixes the zeros of $M_0$, choose a coordinate $x$ taking them to $0,\infty$ and the involution to $x\mapsto-x$. The curve becomes
+$$
+                 y^5=x(x^2-a)^2(x^2-b)^2
+$$
+over a finite extension, with $a,b$ distinct and nonzero. The involution $\tau:(x,y)\mapsto(-x,-y)$ commutes with the deck group. Its quotient in coordinates $z=x^2,w=y/x$ has equation $w^5=(z-a)^2(z-b)^2/z^2$. This is the four-point complementary cover already treated in the cone tests, with ordinary genus-two factors.
+
+Choose $k^2=ab$. The involutions $x\mapsto k/x$ and $x\mapsto-k/x$ also preserve the branch exponents, and lift to involutions commuting with the deck group. To check the lifts, preservation of the branch exponents modulo five gives a lift whose square is a deck element. Multiplying by a deck transformation corrects the square, since the deck order is odd. Lifts of commuting involutions commute: their commutator is a deck element of odd order, while conjugating by either involution inverts that element. Thus the lifts give a Klein four group with $\tau$. Each of the two added involutions fixes ten points, because its two fixed points on the base are unramified and an involution commuting with deck translations fixes each point of an unramified fibre over a fixed point. The involution $\tau$ fixes precisely the two fully ramified points over $0,\infty$. The full curve has genus eight. Riemann–Hurwitz gives genus two for each of the two added quotients and genus zero for the quotient by the full Klein four group. The three quotient Jacobians, of dimensions four, two and two, give an isogeny onto the original Jacobian. On first cohomology their pullback subspaces are the three distinct nontrivial character spaces of the Klein four group. Ordinary reduction of the factors proves the required coefficient statement.
+
+If the fixed points are two zeros of $U$, take them to $0,\infty$. The curve has equation $y^5=x^2(x^2-a)(x^2-b)^2$. Here the involution lifts as $(x,y)\mapsto(-x,y)$, and the quotient has branch exponents $(1,1,1,2)$. The original branch exponents are $(1,1,2,2,2,2)$. The formula $\dim H^1(\mathcal O)_{\chi^i}=-1+\sum_j \{i b_j/5\}$ for branch exponents $b_j$ follows from the normalized line bundles in the curve test. In order $i=1,2,3,4$ these dimensions are $(1,3,1,3)$ and $(0,1,1,2)$ respectively. The Prym, the negative eigenspace of the involution on the Jacobian up to isogeny, thus has Lie signature $(1,2,0,1)$ with multiplication by $\mathbb Q(\zeta_5)$. This is the simple signature just verified. The character-one line belongs to this factor, so it has nonzero Frobenius at the indicated ordinary primes.
+
+**The degree-nine branch cover.** In the disjoint case the original branch exponents are $(3,3,4,4,2,2)$. Take the fixed simple zeros of $T$ to $0,\infty$. The curve becomes $y^9=x^2(x^2-a)^3(x^2-b)^4$. The involution $(x,y)\mapsto(-x,y)$ has quotient branch exponents $(1,1,3,4)$. The primitive order-nine dimensions of $H^1(\mathcal O)$, in order $1,2,4,5,7,8$, are
+$$
+                (1,3,3,1,1,3)
+                \quad\text{and}\quad
+                (0,1,1,1,1,2)
+$$
+for the original and the quotient. In the original dimensions the entries are obtained by reducing each $i b_j$ modulo nine and summing, as above. Thus the primitive Prym, on which the deck transformation has cyclotomic polynomial $\Phi_9$, has signature $(1,2,2,0,0,1)$. The simple-signature argument gives ordinary primes for that factor and detects the character-one coefficient.
+
+For the transitive case, send the two zeros of $M_0$ to $0,\infty$. Let $\ell$ be the number of other zeros. The automorphism is $x\mapsto\zeta_\ell x$, and after extension the equation is
+$$
+             y^9=x^\mu(x^\ell-a)^\lambda,
+             \qquad 2\mu+\ell\lambda=18,
+$$
+where $\mu=3+2\operatorname{ord}_0(T|_C)$ and $\lambda$ is twice the common multiplicity of the other zeros of $T|_C$. The multiplicities at $0,\infty$ agree because the zeros of $M_0|_C$ form a conjugate pair on the anisotropic conic. The case of two triple roots is already covered, so we can take $\lambda=2$ or $4$. Since $9-\mu=\ell\lambda/2$, the map $(x,y)\mapsto(\zeta_\ell x,\zeta_\ell y)$ lifts the base automorphism. Its quotient has
+$$
+                 w^9=(z-a)^\lambda/z^{\lambda/2},
+                        \qquad z=x^\ell,\quad w=y/x .
+$$
+The three branch exponents are $(9-\lambda/2,9-\lambda/2,\lambda)$, with sum eighteen and each less than nine. The character-one line therefore pulls back isomorphically to the original line. On the quotient send the roots to $0,1,\infty$. For $p\equiv1\bmod9$ its central binary coefficient is a single nonzero binomial term, since each exponent is less than nine and the three sum to eighteen. This gives the desired primes in the transitive case.
+
+##### Complete exclusion when the leading class is a fourth power
+
+**Theorem.** On an anisotropic four-dimensional norm quadric in characteristic zero, every phase of minimal degree four whose leading class modulo the norm is a nonzero scalar multiple of $L^4$ has infinitely many nonzero moments.
+
+By rescaling and applying the cone tests, the remaining case is
+$$
+              P=A^2+lH+N+\nu,\qquad A=l^2+J,\qquad l=L ,
+$$
+where $J,H,N$ are linear and the transverse part of $J$ is nonzero. Write $J_\perp,H_\perp,N_\perp$ for their restrictions to the transverse subspace $l=0$. Use (C10) at $p$ odd with $n=p-1$. For every polynomial $V$ of degree at most $4n$, the reduction of $p\Lambda(V)$ is a nonzero scalar multiple of
+$$
+  [l^n X_1^nX_2^nX_3^n](q-1)^n V .
+$$
+Indeed (C10) gives the formula in split coordinates. In degree $4n$ the quotient of the polynomial algebra by the $p$-th powers of the four variables is one-dimensional. Linear changes of coordinates preserve its defining ideal in characteristic $p$ and act invertibly on that line. Thus the coefficient can also be taken in $(l,X)$.
+
+**A transverse quadratic remainder.** Suppose $H_\perp\ne0$ and take $m=5n/6$ at good primes $p\equiv1\bmod6$. In the expansion of $P^m$ let $b,c,d$ count factors from $lH,N,\nu$, and put $k=b+c+d$. Let $a$ count copies of $l^2$ in the remaining $2(m-k)$ factors from $A$. For nonzero contribution one needs $2(m-k)\le n$, since $A^p=0$ in the truncated polynomial algebra. One also needs $2a+b\le n$. Finally the total degree in the phase factors is
+$$
+                2m+a-c-2d .
+$$
+It must be at least $2n$ because $(q-1)^n$ has degree at most $2n$. These conditions imply
+$$
+        k\ge n/3,\qquad a\ge n/3+c+2d,\qquad
+        n\ge 2a+b\ge 2n/3+k+c+3d.
+$$
+Hence $c=d=0$ and $a=b=n/3$. The phase factors use precisely $l^n$ and have degree $2n$. Thus only $q_\perp^n$ from $(q-1)^n$ and only the transverse linear forms from $J,H$ contribute. Up to nonzero multinomial factors, the coefficient is
+$$
+      [X_1^nX_2^nX_3^n]\,q_\perp^n(J_\perp^2 H_\perp)^{n/3}.
+$$
+On the split conic this is the balanced binary coefficient of $(J_\perp^2 H_\perp)^{n/3}$. If the two linear sections are proportional the divisor is a pair of triple roots. Otherwise they are disjoint, since a common zero of independent sections would be a ground-field point of $C$. The divisor then has two double and two simple roots. The sextic curve tests give a nonzero residue at infinitely many good primes in either case.
+
+**A linear remainder.** If $H=h l$, absorb $h l^2$ into the square. The phase is now
+$$
+            (l^2+J+h/2)^2+N'+\nu',\qquad N'=N-hJ .
+$$
+Take $m=n$ and count $k$ linear or constant factors outside the square, of which $c$ are constant. If the square supplies exponent $e=2(m-k)\ge p$, its $p$-th power reduces to the $p$-th power of its constant in the truncated algebra. The resulting degree from all phase factors is at most $4m-3k-2p<2n$, so it contributes zero. For $e\le n$, let $a$ count copies of $l^2$. The phase factors have degree at most $2m+a-k-c$. Thus $k\ge n/2$ and $2n\le 2m+a-k-c$ while $2a\le n$. Equality gives $k=a=n/2$ and $c=0$. All other terms from inside the square must come from the linear part $J$, and the $l$-degree is saturated. The resulting coefficient, up to nonzero factors, is
+$$
+          [X_1^nX_2^nX_3^n]\,q_\perp^n(J_\perp N'_\perp)^{n/2}.
+$$
+If $N'_\perp\ne0$, the binary quartic has two double roots or is reduced. The quartic curve tests give the required infinitely many nonzero residues. If $N'_\perp=0$, the entire phase depends on the two linear coordinates $l,J$, and the two-coordinate theorem applies. As in the cone tests, all prime calculations can be made after specialization to a number field preserving the nonzero linear sections and their divisor configuration. This proves the theorem.
+
+##### Higher-degree phases with the same cone limit
+
+**Corollary.** On an anisotropic four-dimensional norm quadric, take a phase of degree $d>\delta$ with leading term $l^d$ for $\delta=2$ or $3$. Suppose its other terms consist of a homogeneous transverse term $B_\delta(X)$ of degree $\delta$ with $B_\delta|_C\ne0$, and terms $l^r B_k(X)$ satisfying $k+\delta r/d<\delta$. Then its moments are nonzero at infinitely many orders. For general $2\le\delta<d$ the same proof applies if the normalized cyclic cover of $C$ with equation $y^\delta=B_\delta|_C$ has ordinary reduction at infinitely many good primes with $p\equiv1\bmod d\delta$.
+
+Use $D/A=d/(d-\delta)$ in the scaling above. The limit has degree $d$ and equation $l^d+s^{d-\delta}B_\delta-s^d$. In (C10), for higher $d$ we must account for the additional Frobenius entries. In coordinates $(l,X,s)$ the entry on the $e_b$ column still has weight one. A linear change of the four coordinates apart from $s$ preserves its line, by Serre duality with forms of degree $d-3$. Each other column occurring in the weighted row has $s$-index $d-2-2R$ and $l$-index at most $1+2R$, for some $R\ge1$. This follows from the indices in (C10) before the coordinate change, since linear change of the four coordinates preserves $s$-index. Its weight for $(A,D)$ on $(l,s)$ is therefore strictly less than the weight $A+(d-2)D$ of $e_b$.
+
+More explicitly, an entry of the $e_b$ row and $e_a$ column is multiplied by $t^{p\,{\rm wt}(a)-{\rm wt}(b)-dA(p-1)}$ in the scaled family. Multiply the original linear relation under eventual moment vanishing by $t^{(p-1)({\rm wt}(b)-dA)}$. Expressing it in the scaled family then multiplies every off-diagonal entry by $t^{p({\rm wt}(b)-{\rm wt}(a))}$. Thus these extra terms vanish at $t=0$ and the diagonal coefficient there must vanish.
+
+For $m=p-1$ divisible by $d\delta$, the limit diagonal needs $m/d$ factors of $l^d$ and $m/\delta$ factors of $s^{d-\delta}B_\delta$. The remaining factors are $-s^d$. The coefficient is a nonzero multinomial factor times the balanced binary coefficient of $B_\delta^{m/\delta}$ on $C$. The quartic and sextic curve tests already proved give infinitely many good nonzero reductions for $\delta=2,3$. For higher $\delta$ the coefficient again tests the character-one line of the normalized cover. If a root has multiplicity $\delta$, anisotropy makes the divisor a pair of such roots, and the coefficient is a nonzero monomial coefficient. In all other cases the root multiplicities are strictly less than $\delta$ and the character-one line survives normalization, as in the curve tests above. Ordinary good reductions yield its nonzero Frobenius coefficient. Ordinariness of the primitive factor suffices as well, since only the character-one line is tested. In particular the test is unconditional when this factor has simple signature for the action of $\mathbb Q(\zeta_\delta)$, by the ordinary reduction lemma above. Here the Lie multiplicities are computed after normalizing the cover.
+
+#### A Frobenius criterion in higher degree
+
+Let $P$ have minimal ambient degree $d\ge3$ on a four-dimensional norm quadric, with leading restriction $F_d$ on $Q_\infty$. Assume that the divisor of $F_d$ is geometrically smooth. There is a conditional exclusion in every degree using the weak ordinarity conjecture, which asks for a dense set of reductions on which Frobenius is bijective on the top coherent cohomology of a smooth projective variety. [Mustata and Srinivas, Conjecture 1.1](https://arxiv.org/pdf/1012.2818)
+
+Put $g=\gcd(2,d)$, $e=d/g$, and $j=2/g$. Over a field splitting $Q_\infty$, take the cyclic cover $Y_d$ of degree $e$ with equation $w^e=F_d$ and root line bundle $\mathcal O(g,g)$. The cover is smooth in characteristic zero and at good reductions of characteristic prime to $e$, by the smooth branch hypothesis. It is geometrically connected because the nonempty branch has multiplicity one. The summands of $H^2(Y_d,\mathcal O)$ indexed by the deck characters are $H^2(Q_\infty,\mathcal O(-gi,-gi))$, $0\le i<e$. Exactly the index $j$ has dimension one. At a prime of residue characteristic $p\nmid e$, Frobenius carries index $i$ to $pi\bmod e$. If it is bijective, the unique one-dimensional summand must map to itself. Since $\gcd(j,e)=1$, this forces $p\equiv1\bmod e$, even if the residue field is not a prime field.
+
+At such a prime, Frobenius on the one-dimensional summand is multiplication, with its coefficient-field Frobenius, by
+$$
+ [a_0^{p-1}a_1^{p-1}b_0^{p-1}b_1^{p-1}]\,\widetilde F_d^{\,2(p-1)/d}.
+$$
+For an explicit computation choose the affine coordinate pair $(u,v)$ on the two projective lines. The Cech generator of $H^2(\mathcal O(-2,-2))$ is represented by $1/(uv)$. Raising the cover-coordinate factor $w^j$ to the $p$-th power multiplies it by $F_d^{j(p-1)/e}$. On the Cech representative the associated denominator is $u^p v^p$, and the only monomial that contributes to the same class is $u^{p-1}v^{p-1}$. This gives the displayed coefficient. By the split trace formula (C2) it equals $p\Lambda(P^{2(p-1)/d})$ modulo the prime. The trace formula works over any residue extension since the factorial congruence only uses the characteristic.
+
+Consequently infinitely many weakly ordinary reductions of this cover give infinitely many nonzero moments, and even one good reduction on which that Frobenius coefficient is nonzero rules out purity. For arbitrary characteristic-zero coefficients one may first specialize a finitely generated field to a number field while keeping the leading divisor smooth. This proves the implication from weak ordinarity in every degree for smooth leading divisors. It leaves singular leading divisors and the required higher-degree ordinarity assertions as separate questions.
 
 ### Central compact twists and sign
 
-For a central involution $c$ of a compact group $C$ over a real closed field, let the torsor be described over $K(i)$ by $g\mapsto c\,\sigma(g)$. On its coordinate ring the central translation by $c$ gives two eigenspaces. A nonzero function from either eigenspace has nonzero second trace. To see this over $\mathbb R$, identify the complexified torsor with $C_{\mathbb C}$ and evaluate a real-defined function $P$ on the original compact real form. At such a point $g$ the torsor descent condition gives $\overline{P(g)}=P(cg)$. Thus the values are real in the positive eigenspace and purely imaginary in the negative eigenspace. In both cases their squares have fixed sign and the normalized compact Haar integral is nonzero by density. The real-closed specialization used earlier transfers this statement for any given algebraic phase. Any nonzero pure phase on a central compact twist must therefore have both signs. For the norm-minus-one quaternion torsor this means that it must mix even and odd ambient degrees, and the quadratic classification forces degree at least three as well.
+For a central involution $c$ of a compact group $C$ over a real closed field, let the torsor be described over $K(i)$ by $g\mapsto c\,\sigma(g)$. On its coordinate ring the central translation by $c$ gives two eigenspaces. A nonzero function from either eigenspace has nonzero second trace. To see this over $\mathbb R$, identify the complexified torsor with $C_{\mathbb C}$ and evaluate a real-defined function $P$ on the original compact real form. At such a point $g$ the torsor descent condition gives $\overline{P(g)}=P(cg)$. Thus the values are real in the positive eigenspace and purely imaginary in the negative eigenspace. In both cases their squares have fixed sign and the normalized compact Haar integral is nonzero by density. The real-closed specialization used earlier transfers this statement for any given algebraic phase. Any nonzero pure phase on a central compact twist must therefore have both signs. For the norm-minus-one quaternion torsor this means that it must mix even and odd ambient degrees. Applying the norm-quadric tests to the negative of the quaternion norm excludes all phases of degree at most three and the quartic families covered above.
+
+## Exact rational height on both exceptional compact quotients
+
+The two exceptional products admit an all-order witness with bounded rational coefficients on their real compact factors. Its scalar moments can be computed exactly. There is an algebraic obstruction to converting it to a regular witness by rescaling the Laurent variable.
+
+### The height law and witness
+
+Let $W$ be a real orthogonal reflection group in $\mathbb R^n$. Choose a finite nonempty $W$-stable set of linear hyperplanes and assign strictly positive weights $w_i$, constant on each $W$-orbit, with $\sum_i w_i=1$. Write $\alpha_i$ for a normal and $\ell_i(x)=\alpha_i\cdot x$. The sign and scale of each normal are immaterial. Define
+$$
+ D=\prod_i\ell_i,\qquad
+ M=D\sum_i w_i\frac{\alpha_i}{\ell_i},\qquad H=M\cdot M,
+ \qquad U=\frac{D^2}{H}\quad\text{on }x\cdot x=1.
+$$
+The two polynomials $D^2$ and $H$ are invariant. For a standard normal vector $G$ in $\mathbb R^n$, the vector of linear forms $(\ell_i(G))_i$ is Gaussian with covariance $\Sigma_{ij}=\alpha_i\cdot\alpha_j$. Its diagonal entries are positive, even if the covariance is singular. [Pillai and Meng, Theorem 2.2](https://arxiv.org/abs/1505.01957) gives
+$$
+                 \left\|\sum_i w_i\frac{\alpha_i}{\ell_i(G)}\right\|^2
+                            \ \sim\ (\chi_1^2)^{-1}.
+$$
+Since $D^2/H$ is homogeneous of degree two, writing $G=R\omega$ with independent radius and uniform sphere direction gives
+$$
+                       \mathbb E\,U(\omega)^m=\frac{(1/2)_m}{(n/2)_m}
+                         \qquad(m\ge0).                              \tag{H1}
+$$
+Here $R^2\sim\chi_n^2$. The identity $x\cdot M=D$ also proves $0\le U\le1$ on the sphere. The moments on this compact interval determine the law. For $n=3$, $\sqrt U$ is uniform on $[0,1]$.
+
+When each chosen hyperplane is a mirror of $W$, there is a useful expression for the denominator. In the squared norm of $\sum_i w_i\alpha_i/\ell_i$, the mixed terms have at most simple poles along each reflecting hyperplane. The residues on a given hyperplane cancel in reflected pairs: reflection fixes its points, reverses its normal, and preserves the weights. After cancellation the mixed sum is a polynomial of degree minus two, hence zero. Thus
+$$
+                       H=\sum_i w_i^2|\alpha_i|^2(D/\ell_i)^2 .       \tag{H2}
+$$
+For any of the allowed arrangements, $U$ extends continuously by zero at its hyperplanes on the sphere. At $x_0$ on a set of hyperplanes indexed by $I$, the dot product of $x-x_0$ with $M(x)/D(x)$ equals $\sum_{i\in I}w_i+O(|x-x_0|)$. The positive sum forces $|M(x)/D(x)|$ to diverge at $x_0$.
+
+For $W=B_3,H_3$, pull $U$ back from the angular quotient to $C/\Gamma$, with $C=\mathrm{SU}_2$ and $\Gamma=2O,2I$ respectively, by $g\mapsto \operatorname{Ad}(g^{-1})e$ for a fixed unit axis $e$. This map pushes compact Haar to sphere measure for invariant tests. With $T=1+t$, set
+$$
+             P_T=t^{-1}T(1-T^2 U)^2,\qquad Q=t .
+$$
+Use compact Haar integration of the coefficients followed by Laurent constant term. Equation (H1) gives
+$$
+ \int P_T^m = t^{-m}T^{m-1}\int_0^T(1-z^2)^{2m}\,dz .
+$$
+The integral differs from its value at $T=1$ by a polynomial divisible by $(T-1)^{2m+1}$. Thus the pure moment is zero, while the $t$-marked moment is $\int_0^1(1-z^2)^{2m}\,dz>0$, for every positive $m$. These are integrals of bounded rational coefficients on the compact real forms.
+
+### The obstruction to regularity and scalar rescaling
+
+For $n\ge3$, suppose the chosen arrangement has at least two distinct hyperplanes. On the complex quadric the height $U$ has a genuine pole. In fact at a generic point of $\ell_i=0$, $M=w_i(D/\ell_i)\alpha_i$, so $\gcd(H,D)=1$. Put $q=x\cdot x$. If $H$ were a power of the irreducible quadric $q$ up to a constant, its restriction to a nonzero real intersection of two hyperplanes would be nonzero. But $M$ vanishes at such an intersection. Hence $H$ has a divisor outside $q=0$.
+
+More generally the only rational functions of $U$ regular on the entire complex affine sphere are constants. On $q\ne0$ consider the homogeneous degree-zero function $D^2/(qH)$. Every finite value $a\in\mathbb C$ occurs along a genuine divisor there: $D^2-aqH$ is homogeneous of positive degree, is not divisible by $q$, and is coprime to $H$. The value infinity also occurs along a divisor by the preceding paragraph. These divisors detect poles of any rational function of the height. To compare with the sphere, use the finite étale map from the unit quadric times $\mathbb G_m$ to $q\ne0$ given by scalar multiplication. It pulls $D^2/(qH)$ back to $U$, and no pole can disappear under this finite étale cover.
+
+The statement remains true on $C/\Gamma$. A regular function on $C/\Gamma$ that is rational in $U$ is invariant under the left circle. Over $\mathbb C$ the affine quotient by this torus is the unit quadric modulo the projective rotation group, so the function pulls back to a regular function on the quadric. Also all regular units on $C/\Gamma$ are constant, since their pullbacks are units on the connected semisimple group $C$.
+
+Now let $V$ be any nonzero rational function on $C/\Gamma$. Suppose
+$$
+                      P(t)=\sum_j f_j(U)\,(Vt)^j
+$$
+is regular, with $f_j$ univariate rational functions. If indices $p>0$ and $-q<0$ both occur, the product of the $p$-coefficient to the $q$-th power and the $-q$-coefficient to the $p$-th power is a nonzero regular rational function of $U$. It is therefore a nonzero constant. Each factor is a unit and hence constant. Pairing every nonzero index with one of opposite sign shows that all coefficients are constant, including the regular zero-index coefficient. The Laurent theorem then excludes a pure phase with both signs. If the indices lie on one side of zero, purity makes the zero-index coefficient vanish by square positivity on the compact factor. The remaining scalar weights of one strict sign imply eventual marked vanishing. Thus a regular counterexample cannot be obtained from arbitrary rational functions of this single height and a rational monomial rescaling of $t$.
+
+### The direct denominator clearing for the octahedral height
+
+Using only the three coordinate mirrors in $B_3$, put $x_1^2+x_2^2+x_3^2=1$, $p_2=\sum_{i<j}x_i^2x_j^2$, $p_3=x_1^2x_2^2x_3^2$. Then $U=9p_3/p_2$. Multiplying the displayed rational phase by $p_2^2$ gives a regular phase. Even adjusting the positive integer dilation exponent $b$ and the integer prefactor exponent $a$ in
+$$
+                       t^{-1}(1+t)^a\big(p_2-9(1+t)^{2b}p_3\big)^2
+$$
+cannot make its first two moments vanish. The first is $a\,256/15015-4b\,36/5005$, so first-moment vanishing requires $a/b=27/16$. Under that tuning the second is
+$$
+                    \frac{b}{2}\left(\frac{1344}{482885}b
+                                      -\frac{1536}{1616615}\right)>0
+                    \qquad(b\ge1).
+$$
+For a direct verification use
+$$
+ I_{d,r,s}=\mathbb E[p_2^d U^r(1-U)^s],\qquad
+ I_{d,r,s}=\sum_{j=0}^s(-1)^j\binom{s}{j}9^{r+j}
+                           \mathbb E[p_2^{d-r-j}p_3^{r+j}]
+$$
+for the displayed indices, and the Dirichlet $(1/2,1/2,1/2)$ law of the squared coordinates. In the second moment the three required entries $(I_{4,0,4},I_{4,1,3},I_{4,2,2})$ are $(4096/7436429,384/3380195,3456/37182145)$. The coefficients above follow by differentiating $e^{2as}(1-e^{2bs}U)^4$ at $s=0$ and taking half the difference of its second and first derivatives. This excludes the direct cleared family itself. A different regular phase involving additional angular data, or a pure power of a nonpure seed, remains to be addressed.
+
+### Conditional traces for both reflection quotients
+
+There is also a polynomial conditional trace over the rational height. In the octahedral case write $p=p_2$ and $v=9p_3/p_2$. The squared coordinates are the three roots of
+$$
+                          Z^3-Z^2+pZ-vp/9 .
+$$
+The discriminant-density formula and the change $p_3=vp/9$ give joint density, up to normalization,
+$$
+  \frac{dp\,dv}{\sqrt v\,\sqrt{p(1+2v-v^2/3)-4p^2-4v/9}} .
+$$
+For $0<v<1$, positive discriminant and $p>0$ here imply three positive roots. Indeed, two negative roots would make their second elementary symmetric function negative. Thus the whole conditional interval is present. Completing the square gives an arcsine variable $p=A+B\cos\theta$ with uniform angle and
+$$
+                  A=\frac{3+6v-v^2}{24},\qquad
+                  B^2=A^2-v/9=\frac{(1-v)^3(9-v)}{576}.
+$$
+In particular the conditional power generating function is
+$$
+                    \mathbb E[(1-zp)^{-1}\mid v]
+                           =(1-2Az+(v/9)z^2)^{-1/2}.                \tag{H3}
+$$
+This can be obtained by the circle constant term, with the square root normalized at zero. Together with $v=w^2$ for uniform $w\in[0,1]$, it computes the trace of any polynomial in $p_2,p_3$ by polynomial integration in $w$.
+
+For the icosahedral case use the six hyperplanes normal to the icosahedral vertex axes. Put $\varphi=(1+\sqrt5)/2$, $q=x_1^2+x_2^2+x_3^2$ and
+$$
+ p=\frac{(x_2^2-\varphi^2 x_3^2)(x_1^2-\varphi^2 x_2^2)
+                      (\varphi^2 x_1^2-x_3^2)}{2+\sqrt5},
+ \qquad h=\nabla p\cdot\nabla p .
+$$
+The numerator of $p$ is a product of one form for each of the six axes. It is invariant under the rotation group $A_5$, which has no nontrivial characters, and under inversion by even degree. The invariant degrees of $H_3$ are $2,6,10$. [Dubrovin, Table 1](https://people.sissa.it/~dubrovin/Papers/1993/dubrovin_1993_coxeter.pdf) The nonzero Jacobian below shows that $q,p,h$ are independent, hence are basic invariants in those degrees. With all six weights equal, the rational height is $v=36p^2/h$ on $q=1$.
+
+For exact reproduction of the discriminant, set $J=\det(\nabla q,\nabla p,\nabla h)$ with gradients as rows. Before putting $q=1$, its square divided by $16$ equals
+$$
+\begin{aligned}
+ -64q^9p^2+2240q^6p^3-21760q^3p^4+8640p^5
+ &+16q^7ph+80q^4p^2h-3600qp^3h\\
+ &+4q^5h^2-200q^2ph^2-25h^3 .
+\end{aligned}                                                       \tag{H4}
+$$
+This is a polynomial identity. For a direct calculation in $a=x_1^2,b=x_2^2,c=x_3^2$, use $h=4(a p_a^2+b p_b^2+c p_c^2)$ and $J^2=64abc\det(\nabla_{a,b,c}q,\nabla_{a,b,c}p,\nabla_{a,b,c}h)^2$, reducing coefficients by $(\varphi^2)^2-3\varphi^2+1=0$.
+
+Write $f(q,p,h)$ for $J^2$ as in (H4), and set $F(v,p)=v^3 f(1,p,36p^2/v)/p^2$. It is the quartic
+$$
+\begin{aligned}
+ F(v,p)={}&-18662400p^4+(138240v^3-2073600v^2-4147200v)p^3\\
+          &+(-348160v^3+46080v^2+82944v)p^2
+             +(35840v^3+9216v^2)p-1024v^3 .
+\end{aligned}                                                       \tag{H5}
+$$
+It is generically squarefree. At $v=1/2$ it factors as $-128(40p-1)(3645p^3+594p^2+13p-1)$, with coprime factors and nonzero cubic discriminant $572265$. At a generic $v\in(0,1)$ the conditional support in $p$ consists of two real intervals, one on either side of zero. To see this, each sign occurs in a chamber of the six-plane arrangement. In any chamber $v$ tends to zero at its boundary and reaches one at a maximum of $|p|$ on the sphere, where $\nabla p=6p x$. Every intermediate value occurs. Points with $J\ne0$ are dense in each chamber and the height takes an open set there by the invariant-coordinate submersion. The set of resulting height values is semialgebraic, so each sign occurs at a regular point outside finitely many height values. For such a $v$, the quartic is negative at zero and at both ends of the real line, and positive somewhere on each side. Its two positivity intervals are exactly the image intervals: on them the original compact image is closed and the coordinate map is a submersion.
+
+On this image the change from $h$ to $v$ turns the discriminant density into a constant times $v^{-1/2}|p|\,dp\,dv/\sqrt{F(v,p)}$. Let $A_0=18662400$. For any polynomial $G(p,h)$ its conditional trace has the coefficient formula
+$$
+                  \mathbb E[G(p,h)\mid v]
+                  =[p^{-1}]\frac{\sqrt{A_0}\,p\,G(p,36p^2/v)}
+                                      {\sqrt{-F(v,p)}}             \tag{H6}
+$$
+in the expansion at infinity with $\sqrt{-F(v,p)}\sim\sqrt{A_0}p^2$. Indeed, take a contour about both real cuts. On the upper side the square root has opposite imaginary signs on the two intervals, so the jump of $p/\sqrt{-F}$ gives a constant times $|p|/\sqrt F$ on both. The coefficient at infinity for $G=1$ is one, fixing the normalization. For $G=p^i h^j$ with nonnegative $i,j$, the right side of (H6) is a polynomial in $v$ of degree at most $3i+5j$. In the normalized inverse square root each coefficient of $p^{-k}$ in the input polynomial, $1\le k\le4$, is divisible by $v^{\lceil k/2\rceil}$ and has degree at most three. The desired coefficient before multiplying by $36^jv^{-j}$ is at order $p^{-(i+2j)}$. These divisibilities cancel the apparent pole at $v=0$, and the degree estimate follows by expanding the inverse square root. Thus integrating over uniform $w$ with $v=w^2$ again gives a polynomial calculation of every trace in the two basic invariant coordinates. Equations (H3) and (H6) also give independent checks of the uniform height law in these two charts, since integrating the conditional density contributes a factor independent of $v$ in each case. Exact expansion verified (H4), and direct sphere monomial moments verified (H6) on the twenty-one monomials $p^i h^j$ with $i+j\le5$.
+
+### Finite exclusion of affine Laurent phases on the two angular models
+
+Write $(x,y)=(p_2,p_3)$ on the octahedral angular model and $(x,y)=(p,h)$ on the icosahedral angular model. Let $\lambda$ be the spherical trace with the laws above, and let $\Lambda$ be its combination with Laurent constant term.
+
+**Theorem.** On either model let all coefficient functions below be affine in $x,y$. If the first ten positive moments of $A+B t+C/t$ vanish, then $A=0$ and $BC=0$. If the first nine positive moments of $t^{-1}+A+C t+D t^2$ vanish, then $A=C=D=0$. The same bounds hold after replacing $t$ by $t^d$ for any positive integer $d$. The resulting phases have one strict Laurent sign and are safe.
+
+For the first family, the first moment makes the center $A=aX+bY$, with $X=x-\lambda(x)$ and $Y=y-\lambda(y)$. Write $E=BC=d_0+d_1X+d_2Y+d_3X^2+d_4XY+d_5Y^2$. The remaining moment equations are
+$$
+            \sum_{k=0}^{\lfloor m/2\rfloor}
+              \binom{m}{2k}\binom{2k}{k}\lambda(A^{m-2k}E^k)=0
+                   \qquad(2\le m\le10).                          \tag{H7}
+$$
+The product of two affine forms has a symmetric matrix of rank at most two after homogenizing with a constant variable. Its determinant, multiplied by four, is
+$$
+             4d_0d_3d_5-d_0d_4^2-d_1^2d_5+d_1d_2d_4-d_2^2d_3=0 .
+$$
+
+For the second family use the same center and separate affine functions $C,D$. In a contributing term with $k$ factors of $Ct$ and $\ell$ factors of $Dt^2$, the pole is used $k+2\ell$ times. The equations are
+$$
+          \sum_{2k+3\ell\le m}
+           \frac{m!}{(m-2k-3\ell)!(k+2\ell)!k!\ell!}\,
+                  \lambda(A^{m-2k-3\ell}C^k D^\ell)=0
+                   \qquad(2\le m\le9).                           \tag{H8}
+$$
+A constant nonzero coefficient on the pole can be normalized to one by scalar Laurent rescaling.
+
+For an exact finite calculation, reduce the two systems modulo $131$. The rational trace values are integral at this prime. For $B_3$, their denominators from the Dirichlet formula involve odd factors at most $61$ for the required total degree. For $H_3$, formula (H6) uses the factor $18662400$, a power of two from the square-root series, and odd factors at most $101$ in the final uniform-height moment. None is divisible by $131$. The [replay checker](verify_exceptional_affine_laurent_obstruction.py) constructs the coefficients over $\mathbb F_{131}$ and computes standard bases in degree-reverse-lexicographic order. In the displayed variable orders their leading ideals contain these pure powers on both models:
+$$
+\begin{array}{c|c|c}
+\text{family}&\text{variables}&\text{exponents of leading pure powers}\\
+\text{(H7)}&(a,b,d_0,d_1,d_2,d_3,d_4,d_5)&(2,4,6,6,6,6,7,13)\\
+\text{(H8)}&(a,b,C_0,C_1,C_2,D_0,D_1,D_2)&(2,4,4,4,5,8,8,10)
+\end{array}
+$$
+The first system is weighted homogeneous, with weights $1,1,2,\ldots,2$. The second has weights one on the center parameters, two on the coefficients of $C$ and three on those of $D$. Each modular zero set has dimension zero by the pure powers in the leading ideal. Since a nonzero weighted-homogeneous solution would give a one-dimensional scaling orbit, the geometric zero set in characteristic $131$ is the origin.
+
+If either system had a nonzero characteristic-zero solution, the rational equations and the nonvanishing of one parameter would give a solution over an algebraic number field. At a place above $131$, scale the parameters by their weights so that they all become integral and at least one is a unit. This is possible after a finite ramified extension, by taking the scalar valuation to be minus the minimum of the parameter valuations divided by their weights. Weighted homogeneity preserves the equations. The mod-$131$ reduction would give a nonzero geometric solution, contradicting the leading-ideal computation. Thus the asserted vanishing holds in characteristic zero. In the trinomial case $BC=0$ forces one of $B,C$ to be identically zero since the angular ring is a domain. This calculation was replayed with Python 3.12.3 and Singular 4.3.2.
+
+The affine coefficient condition concerns functions of the two basic angular invariants. It leaves higher polynomial degrees, other Laurent supports, and functions outside that angular subring open.
+
+### Sharp growth of the conditional degree for real powers
+
+The conditional laws (H3) and (H6) also quantify the degree cost of a polynomial regularization. For a nonzero real polynomial $G(p_2,p_3)$ let $d$ be its weighted degree for weights $(2,3)$. For a nonzero $G(p,h)$ use weights $(3,5)$. In either model the polynomial $\mathbb E[G^m\mid v]$ has degree at most $dm$, and has degree exactly $dm$ for every positive even $m$.
+
+For $B_3$ write $p_2=v^2 X$ and $p_3=v^3 X/9$. The polynomial conditional moment formulas define an expansion at $v=\infty$. There the moments of $X$ have limits, with generating function $(1+z/12)^{-1/2}$ by substituting $z/v^2$ in (H3). They are the moments of $-Z/12$ for $Z$ of arcsine law on $[0,1]$. For $H_3$ write $p=v^3 X$, $h=36v^5X^2$. In the normalized inverse square root of (H6), substitute $1/p=z/v^3$. Only the coefficient linear in $z$ survives at infinity, giving $(1-z/135)^{-1/2}$. Its moments are those of $Z/135$. The substitutions in regular monomials bound the degree of each polynomial moment by its weight.
+
+For a fixed weight, distinct monomials in the octahedral case give distinct powers $X^{i+j}$, since $2i+3j$ and $i+j$ determine the pair $(i,j)$. In the icosahedral case use $3i+5j$ and $i+2j$ instead. Thus the top weighted part becomes a nonzero real polynomial in $X$. The leading coefficient in degree $dm$ of the conditional moment is the expectation of its $m$-th power under the indicated limiting arcsine law. This is strictly positive for even $m$. In particular a choice of a real polynomial denominator-clearing multiplier cannot reduce this conditional degree by cancellation of its top weighted terms in the even moments.
+
+### Prime obstruction for a single top angular monomial
+
+Let $P$ be a rational-coefficient regular Laurent phase in the two basic angular invariants, with positive weighted angular degree $d$. Use weights $(2,3)$ in the octahedral coordinates $(p_2,p_3)$ and $(3,5)$ in the icosahedral coordinates $(p,h)$. Suppose its entire top weighted part has the form
+$$
+                      \gamma t^{-c}(1+t)^b x^i y^j,\qquad
+                       \gamma\in\mathbb Q^\times,\qquad
+                       1\le c\le b\le 2d,
+$$
+where $(x,y)$ is the chosen pair of coordinates and $b,c$ are positive integers. If $2dm+1$ is a sufficiently large prime $\mathfrak p$, then $\Lambda(P^m)$ has $\mathfrak p$-adic valuation exactly minus one. In particular no nonconstant polynomial in $P$ is pure.
+
+Indeed, for each power of $t$ the conditional moment $\mathbb E[P^m\mid v]$ is polynomial in $v$ of degree at most $dm$. Its coefficients are integral at every sufficiently large prime, uniformly in $m$. This follows from (H3) and (H6): the inverse-square-root expansion uses binomial coefficients with only powers of two in their denominators, and chart substitution uses only the fixed denominators in the displayed coordinates. In either chart, $v^e$ has height moment $1/(2e+1)$. For $\mathfrak p=2dm+1$ the only possible pole at $\mathfrak p$ is therefore from the coefficient of $v^{dm}$.
+
+Use the conditional leading law above to evaluate that coefficient. The top monomial becomes $9^{-j}X^{i+j}$ for $B_3$ and $36^j X^{i+2j}$ for $H_3$. Here $X=-Z/12$ or $Z/135$, respectively, for an arcsine variable $Z$ on $[0,1]$. Put $e=i+j$ or $e=i+2j$ accordingly. The normalized arcsine factor is $\mathbb E Z^{em}=4^{-em}\binom{2em}{em}$. Since $e\le d$, the binomial is a unit at $\mathfrak p$. The Laurent constant term on the top part is $\gamma^m\binom{bm}{cm}$, also a unit because $bm\le2dm<\mathfrak p$. Thus the pole at $\mathfrak p$ survives. More generally, if the scalar Laurent symbol on the single top monomial is $L(t)$, the same test is that $\operatorname{CT}_t L^m$ be a unit at $\mathfrak p$. In particular two nonzero scalar terms of opposite sign in the exponents give the obstruction on orders divisible by their minimal return length: the constant term is then a single binomial term.
+
+For a nonconstant polynomial in $P$ of degree $r$, choose $\mathfrak p=2drm+1$ prime. The highest power $P^{rm}$ in the expansion of its $m$-th power is the only summand whose trace has a pole at $\mathfrak p$. If the polynomial has coefficients in a general characteristic-zero extension, one can first specialize its finitely generated coefficient ring to an algebraic number field while keeping its leading coefficient nonzero. The same proof applies at a place above $\mathfrak p$ after excluding finitely many primes of bad denominators or leading coefficient. Infinitely many primes of the required form follow, for example, by taking prime divisors of values of the cyclotomic polynomial $\Phi_{2dr}$. A prime divisor outside the factors of $2dr$ has the residue class one modulo $2dr$. Taking the input divisible by the primes dividing $2dr$ and by all previously listed primes excludes each of them, since the cyclotomic constant coefficient is one.
+
+This applies in particular to the most direct regular denominator-clearings in both exceptional cases:
+$$
+ \frac{1+t}{t}\bigl(p_2-9(1+t)^2p_3\bigr)^N,\qquad
+ \frac{1+t}{t}\bigl(h-36(1+t)^2p^2\bigr)^N
+                         \qquad(N\ge1).
+$$
+Their top weights are $3N$ and $6N$, respectively. Neither taking a pure power nor modifying by a polynomial in the cleared seed can recover purity. The obstruction concerns the specified top Laurent symbol. A general regular counterexample can have a different, or multi-monomial, top weighted part.
+
+The same prime calculation can use a supporting line of the angular weights at Laurent exponent zero. Write $P=\sum_j P_jt^j$ with rational or algebraic coefficients, and let $d_j$ be the angular weight of each nonzero $P_j$. Suppose $d_j+\sigma j\le D$ for a rational $\sigma$ and $D\ge1/2$. Assume equality occurs either only at $j=0$, or only at two indices $j_-<0<j_+$. At each equality index suppose the top part of $P_j$ is a single angular monomial. Then no nonzero power of $P$ is pure.
+
+In the one-index case the sole top-weight contribution after Laurent constant term in $P^m$ is the $m$-th power of that monomial. In the two-index case take orders $m$ divisible by the primitive return length $(j_+-j_-)/\gcd(j_+,-j_-)$. The top contribution is the product of the two top angular monomials with the unique counts giving Laurent weight zero. Its coefficient is a binomial coefficient times powers of the two nonzero leading coefficients. In both cases its angular weight is $Dm$. All other contributing products have weight strictly less, since an index below the supporting line gives a strict drop and the Laurent exponents sum to zero. At large primes $\mathfrak p=2Dm+1$ the coefficient is a unit because $m<\mathfrak p$. This proves the simple-pole conclusion by the same arcsine leading-moment argument. One can require these orders to be multiples of any additional integer by using primes congruent to one modulo the resulting value of $2Dm$ per step.
+
+For example, in a trinomial $B/t+A+Ct$ whose three coefficients each have a single top angular monomial, purity forces $2d_A=d_B+d_C$ whenever $A,B,C$ are nonzero. If the two sides are unequal, the top balance is attained by just the center or the opposite pair.
+
+#### Three aligned top Laurent terms on either angular quotient
+
+Use the basic angular coordinates and weights $(2,3)$ for $B_3$ and $(3,5)$ for $H_3$ as above. For a Laurent phase $P=\sum_j P_jt^j$, write $d_j$ for the weighted angular degree of each nonzero coefficient.
+
+**Theorem.** Suppose a supporting line $d_j+\sigma j\le D$ attains equality just at $-e,0,e$ for an integer $e>0$. At those indices let the respective top coefficients be $aM_-$, $bM_0$, $cM_+$ with nonzero scalars and angular monomials satisfying $M_-M_+=M_0^2$. If $D\in\{2,3,4,5,6\}$, then every nonconstant polynomial in $P$ has infinitely many nonzero moments.
+
+At Laurent weight zero, the part of maximum angular weight in $P^m$ is
+$$
+              M_0^m \operatorname{CT}_t(a/t+b+ct)^m .
+$$
+Only the supporting line can contribute at weight $Dm$, and a balanced product uses the same number of factors from the two opposite indices, so the monomial identity gives the formula. The conditional leading law is the same as in the prime obstruction above. At a good prime $p=2Dm+1$ the contribution of $M_0^m$ to the leading conditional coefficient is a unit, and only angular weight $Dm$ can cause a pole. It remains to find infinitely many primes of this form where the scalar constant term is a unit.
+
+Put $h=2D$. After homogenizing the scalar Laurent expression, one has
+$$
+ \operatorname{CT}_t(a/t+b+ct)^m
+       =[u^{p-1}v^{p-1}]\bigl(u^{h-1}v^{h-1}
+                    (av^2+buv+cu^2)\bigr)^{(p-1)/h}.
+$$
+The binary form has degree $2h$. If the quadratic factor has a double root, the constant term is a nonzero scalar times $\binom{2m}{m}$, a unit at every large good $p$. Otherwise the degree-$h$ cyclic cover has four distinct branch points of multiplicities $(h-1,h-1,1,1)$. Its character-one summand survives normalization because every branch multiplicity is less than $h$. By the conic coefficient calculation above, a good ordinary prime with $p\equiv1\bmod h$ makes the displayed coefficient nonzero.
+
+Here ordinary reduction follows from a decomposition of the Jacobian. Denote the deck generator by $g$. The permutation interchanging the two pairs of branch points by two transpositions is induced by a projective involution of the base over the splitting field. It lifts to an automorphism $\tau$ conjugating $g$ to $g^{-1}$, since it changes each branch exponent to its negative modulo $h$. Its square is a deck transformation. At an unramified fixed point on the base, the induced map of the fibre is $i\mapsto k-i$ in deck coordinates for some $k$, so its square fixes the fibre. Thus $\tau^2=1$ even for even $h$.
+
+For each divisor $d>1$ of $h$, split the Jacobian up to isogeny by the rational idempotents in the algebra of the deck group. The primitive order-$d$ factor has dimension $\varphi(d)$. In fact every nontrivial deck character has dimension two in first cohomology: all four branch points remain totally ramified in each nontrivial cyclic quotient, and the curve of degree $d$ has genus $d-1$ by Riemann–Hurwitz. Subtraction for proper divisors gives dimension $2\varphi(d)$ in first cohomology at exact order $d$, with dimension two for each conjugate character. For $d=2$ the factor is elliptic. For $d>2$ the two involutions $\tau,g\tau$ exchange every pair of inverse characters and have invariant subspaces of half the dimension. Their intersection is fixed by $g$ and is zero on this factor. The images of the two averaging idempotents therefore give an isogeny from two abelian varieties of dimension $\varphi(d)/2$.
+
+Here $h\in\{4,6,8,10,12\}$. Each such factor has dimension at most two and has ordinary reduction at a density-one set of primes after finite extension, by the elliptic case and Sawin's theorem used above. We can adjoin roots of unity and take degree-one ordinary primes in that extension. This proves the simple-pole conclusion for infinitely many $m$. For a polynomial of degree $r>0$ in $P$, take the primes congruent to one modulo $2Dr$ in the same way. The highest power $P^{rm}$ supplies the pole, while each smaller power has angular weight below the threshold. Coefficients in characteristic zero can be specialized to a number field preserving the supporting line, the nonzero coefficients and the branch configuration.
+
+The same argument applies to an aligned face with more terms. Suppose the monomial exponent vector at an equality index $j$ is an affine function of $j$ with nonnegative integral intercept, and the Laurent polynomial of leading scalars on that face is
+$$
+                 \gamma t^{-r}(t-\alpha)^r(t-\beta)^r ,
+\qquad \alpha\beta(\alpha-\beta)\gamma\ne0,\quad 0<r<2D .
+$$
+Assume $D$ is a positive integer and $2D/\gcd(2D,r)\in\{2,3,4,5,6,8,10,12\}$. In a balanced product the affine exponents again give a fixed monomial to power $m$. The binary form is now a scalar times $(uv)^{2D-r}((u-\alpha v)(u-\beta v))^r$. Extracting the common power $\gcd(2D,r)$ gives an effective cyclic degree $h'=2D/\gcd(2D,r)$ with four complementary branch multiplicities, each prime to $h'$. Its Jacobian splits by exactly the argument above, since every divisor of $h'$ has totient at most four. Hence the same prime pole excludes eventual vanishing for every nonconstant polynomial in $P$.
+
+#### Aligned angular faces with unequal root multiplicities
+
+**Corollary.** On either exceptional angular quotient, take a supporting line of positive integer central weight $D$ as in the preceding test. Suppose the monomial exponent vector at the equality indices is affine in the Laurent exponent with a nonnegative integral intercept. Let the leading scalar Laurent polynomial on that line be
+$$
+                 L(t)=\gamma t^{-a}(t-\alpha)^b(t-\beta)^c,
+                 \qquad \alpha\beta(\alpha-\beta)\gamma\ne0,
+$$
+with positive integers $a,b,c$. Put $h=2D$ and suppose the entries of
+$$
+                  (h-a,\ h-b-c+a,\ b,\ c)
+$$
+lie strictly between zero and $h$. Divide the entries and $h$ by their common gcd, obtaining $b_1,\ldots,b_4$ and effective order $e$. If for every unit $i$ modulo $e$ other than $1,-1$ one has
+$$
+             \sum_{j=1}^4 (i b_j\bmod e) \ \in\ \{e,3e\},
+$$
+then every nonconstant polynomial in the phase has infinitely many nonzero moments. The residues in this test are in $\{1,\ldots,e-1\}$.
+
+The affine condition again gives a common angular monomial to power $m$ on every balanced product on the face. At $p=2Dm+1$ the needed unit is the scalar constant term $\operatorname{CT}_t L(t)^m$. Homogenizing gives the listed branch exponents at $0,\infty,\alpha,\beta$. Removing the common power gives the cyclic cover of effective order $e$. Its character-one summand of $H^1(\mathcal O)$ is one-dimensional and its Frobenius coefficient gives the scalar constant term up to a unit. The primitive factor has relative rank two over $\mathbb Q(\zeta_e)$, since every primitive character ramifies at all four points. Its Lie multiplicities are computed by $-1+\sum_j\{i b_j/e\}$, up to conjugating the embeddings. The pair $i=1,-1$ has multiplicities $(1,1)$ and every other pair has multiplicities $(0,2)$ or $(2,0)$. The ordinary reduction lemma in the involution tests applies to this factor. For $e=2$ the factor is elliptic. After adjoining the required roots of unity, degree-one good ordinary primes supply the moment poles, including along any prescribed divisible sequence of orders as needed for polynomials in the phase.
+
+Here are examples up to permutation, listed for the effective order.
+
+| Effective order | Branch exponents |
+|---|---|
+| $5$ | $(1,3,3,3)$, $(2,2,2,4)$ |
+| $9$ | $(1,5,5,7)$, $(2,4,4,8)$, $(3,5,5,5)$, $(4,4,4,6)$ |
+| $30$ | $(2,13,18,27)$ |
+
+For example, angular weight fifteen is available on either quotient. With a top monomial of that weight, the scalar symbol $t^{-28}(t-1)^{18}(t-2)^{27}$ gives the order-thirty case.
+
+### The spherical height law for regular invariants
+
+Let $\Gamma$ be a finite subgroup of $\mathrm O(3)$ acting on the round sphere $S^2$, and write $\mathbb E$ for normalized area. A real polynomial invariant $U$ on the sphere can have the law of the square of a uniform variable on $[0,1]$ exactly when $\Gamma$ preserves an unoriented line in $\mathbb R^3$. More generally, let $A,B$ be real regular invariants and $k\ge1$. If
+$$
+ \mathbb E[A^{m-j}B^j]=\frac{\mathbb E[A^m]}{2j+1}
+       \qquad(m\in k\mathbb Z_{>0},\ 0\le j\le m),                 \tag{H7}
+$$
+then either $A=B=0$, or $A$ is a nonzero constant, $B/A$ has this law, and $\Gamma$ preserves a line. Thus the exact angular factorization used in the quaternion construction cannot hold with regular invariants on either exceptional angular sphere quotient.
+
+For the height assertion, a preliminary local fact is that bounded density of a height in a neighborhood of a critical value forces every critical point over that value to be Morse and to be an extremum. In smooth coordinates at a degenerate critical point the Hessian is diagonal with at most one nonzero entry. The height difference is bounded by a constant times $x^2+(|x|+|y|)^3$. A rectangle of widths proportional to $\epsilon^{1/2}$ and $\epsilon^{1/3}$ maps to a strip of width $O(\epsilon)$ and has area comparable to $\epsilon^{5/6}$. For a Morse saddle the normal form $xy$ gives area at least a constant times $\epsilon\log(1/\epsilon)$ in the same strip. Either bound contradicts bounded density. In particular a smooth height of globally bounded density on $S^2$ has exactly one minimum and one maximum. The Morse count gives their total as two, since there are no saddles. An invariant height of globally bounded density therefore forces a fixed point on $S^2$. [Milnor, Morse Theory, §§2–3](https://luis.impa.br/aulas/topdif/Milnor_MorseTheory.pdf)
+
+Now suppose $U$ has the required squared-uniform law. It lies in $[0,1]$ by continuity and full support of area. Its density is bounded near all positive values, and the area of $\{U<\epsilon\}$ is $\sqrt{\epsilon}$. At a zero of rank two for the Hessian the zero is isolated. At rank one, solve $\partial_x U=0$ as a local real-analytic graph by the implicit function theorem. Every nearby zero lies on that graph. The restriction of $U$ to the graph is analytic in one variable, so an accumulation of zeros makes it identically zero there. The zero set is then a smooth curve near the point.
+
+It remains to exclude a nonisolated zero $p$ of Hessian rank zero. In local coordinates centered at $p$, nonnegativity makes the cubic Taylor term zero as well, so the Hessian is $O(|x|^2)$. Curve selection gives an embedded analytic arc of zeros approaching $p$. Along any compact subarc a normal strip at a point $x$ of width $c\sqrt{\epsilon}/|x|$ lies in $\{U<\epsilon\}$ for all sufficiently small $\epsilon$. Indeed $U$ and its gradient vanish on the arc and the Hessian estimate applies along each sufficiently short normal segment. The area of these strips divided by $\sqrt{\epsilon}$ has lower bound a fixed positive constant times $\int ds/|x|$ on the subarc, using arclength $s$ in the chart. This integral is unbounded as the subarc approaches $p$, by comparison with the variation of $\log|x|$. This contradicts the exact area $\sqrt{\epsilon}$. The zero set is consequently a finite disjoint union of smooth circles and isolated points. [Milnor, Singular Points of Complex Hypersurfaces, Lemma 3.1](https://djvu.online/file/kCFrJq27uCPRi)
+
+For every positive regular level, the superlevel components are disks. As the level decreases, a positive maximum starts a disk and there are no saddles to join components or add a hole. A positive minimum could only cap the boundary of a disk and make a closed component of the sphere, which is impossible since the zero set is nonempty. This argument uses only the finitely many critical points above the positive regular level. It shows that each component of $\{U>0\}$ contains one maximum and every loop in it contracts, by putting the loop in a positive regular superlevel. If there were at least two components of the zero set, one could draw a loop in its complement separating two zero points. Use a small circle about an isolated zero or a parallel copy of a zero circle on the side of the other component. This loop cannot contract in the sphere minus the two chosen points. Thus the zero set is one point or one circle. A single zero point is fixed by $\Gamma$. A single zero circle gives two complementary disks, so $\Gamma$ permutes their two maxima. The line spanned by the difference of these unit vectors is invariant. Conversely if $\Gamma$ preserves $\mathbb R e$ for a unit vector $e$, then $U=(e\cdot x)^2$ has the required law. [Milnor, Morse Theory, Theorems 3.1–3.2 and Remark 3.3](https://luis.impa.br/aulas/topdif/Milnor_MorseTheory.pdf)
+
+To prove the factorization statement, suppose first that $A$ is nonconstant. Let $\ell$ be a positive even multiple of $k$ and set $R=A^\ell$. For each $j\ge0$, take a positive multiple $m_0$ of $\ell$ with $m_0\ge j$. Apply (H7) at $m=m_0+\ell r$ for all integers $r\ge0$. Density of polynomials on the compact range of $R$ gives
+$$
+ \mathbb E\left[\psi(R)\left(A^{m_0-j}B^j-\frac{A^{m_0}}{2j+1}\right)\right]=0
+$$
+for every continuous $\psi$. Take a nonzero regular value $c$ of $R$ in its image. Over a small interval of regular values around $c$, area disintegrates into smooth positive length densities on the fibres by the submersion formula. The integrals on these fibres are continuous in the value. Testing with $\psi$ supported in the interval gives the equality on the fibre $R=c$. There $A^{m_0}=c^{m_0/\ell}$ is a positive constant. Thus under normalized fibre measure the smooth function $B/A$ has the squared-uniform law, by uniqueness of moments for compactly supported measures. Its maximum is one, and at such a point the measure of $\{B/A>1-\epsilon\}$ on the one-dimensional fibre is at least a positive constant times $\sqrt{\epsilon}$ by Taylor's formula. The prescribed law gives $1-\sqrt{1-\epsilon}=O(\epsilon)$, a contradiction. If $A=0$ identically, taking $m=j$ even in (H7) gives $B=0$. A nonzero constant $A$ gives the required moments of $B/A$ directly, so the height result applies.
+
+### Three Laurent terms with product determined by the center
+
+Let $\Gamma\le\mathrm O(3)$ be finite with no fixed point on $S^2$, and let $A,B,C$ be real regular angular invariants. For
+$$
+                         P=A+B/t+Ct
+$$
+suppose $BC$ is a rational function of $A$. Then $P$ is pure only when $A=0$ and $BC=0$. The angular ring is a domain, so such a phase is one-sided in $t$ and safe. The same result holds over $\mathbb R$ for any $C^2$ function of $A$ defined on a neighborhood of its range.
+
+If $A$ is constant, the first two moments give the conclusion directly. Otherwise its range is an interval $[a,b]$, and write $-4BC=W(A)$. A rational $W$ has no genuine pole on $[a,b]$ because $A$ is surjective onto this interval and $BC$ is bounded. Suppose that $P$ is pure. Its first moment gives $a<0<b$.
+
+From a uniform sphere point and an independent uniform angle $\theta$, form a probability measure $\nu$ on $\mathbb R^3$ by the following rule. Where $W(A)\ge0$, take
+$$
+                y=(A,\sqrt{W(A)}\cos\theta,\sqrt{W(A)}\sin\theta).
+$$
+Where $W(A)<0$, take $y=(A+\sqrt{-W(A)}\cos\theta,0,0)$. In either case the constant term of $P^m$ is the angle average of $(y_0+i y_1)^m$, by the binomial expansion using the product of the opposite Laurent coefficients. This polynomial is harmonic. Its rotational average about the $y_0$-axis spans the rotationally invariant homogeneous harmonic polynomials of degree $m$. Indeed in a polynomial $\sum_j c_j y_0^{m-2j}(y_1^2+y_2^2)^j$ the Laplace equation determines all coefficients from $c_0$, and the displayed rotational average has $c_0=1$. Purity and rotational invariance therefore make $\nu$ integrate every harmonic polynomial to its value at zero.
+
+Write $U_\nu(q)=\int|q-y|^{-1}d\nu(y)$. The Taylor expansion for large $q$ has homogeneous terms harmonic in $y$, so $U_\nu(q)=|q|^{-1}$. Consider the closed bounded set made of the radial disks at heights $z\in[a,b]$ with squared radius $\max(W(z),0)$, together with an axial segment containing all the axial samples. Its exterior is connected since any exterior point can go radially outward at fixed height and then around the set. Both potentials are harmonic on this exterior and therefore agree there.
+
+If $W(z_0)<0$ at some interior $z_0\ne0$, then the axial part of $\nu$ has a density bounded below on an interval about $z_0$. Indeed a neighborhood of $A=z_0$ has positive probability, and for samples in a sufficiently small such neighborhood the arcsine laws of $A+\sqrt{-W(A)}\cos\theta$ all have uniformly positive density on a common interval about $z_0$. The potential of that interval diverges at least logarithmically at $q=(z_0,\delta,0)$ as $\delta$ decreases to zero. These points are exterior, where $|q|^{-1}$ stays bounded. Hence $W\ge0$ on $[a,b]$. If $W(0)=0$, then $\sqrt{W(z)}=O(|z|)$ near zero by nonnegativity and the $C^2$ bound. At $q=(0,\delta,0)$ the ratio $\delta/|q-y|$ is then uniformly bounded on the support and tends to zero off the origin. Dominated convergence and the exterior identity would give $\nu(\{0\})=1$. This is incompatible with the full nonconstant range of $A$. Thus $W(0)>0$ and zero is in the interior of the radial body.
+
+We now show that the law of $A$ assigns $O(\epsilon)$ mass to a strip of width $2\epsilon$ about every height $c$ in its range. If $W(c)=W'(c)=0$, then $c\ne0$ and $\sqrt{W(z)}=O(|z-c|)$ near $c$. Take the exterior point $q=(c,\epsilon,0)$. Every sample in the strip has distance $O(\epsilon)$ from $q$. Its mass is at most $O(\epsilon)U_\nu(q)=O(\epsilon)$.
+
+At every other height the surface $F(y)=y_1^2+y_2^2-W(y_0)=0$ is smooth in a band about that height. For $p$ on the support in the band let $n=\nabla F(p)/|\nabla F(p)|$ and $q=p+\delta n$. For sufficiently small $\delta>0$, $q$ is exterior. Taylor expansion on $F(y)=F(p)=0$ gives $(p-y)\cdot n\ge -C|p-y|^2$ uniformly for all support points $y$ and all $p$ in a smaller band. Consequently $|q-y|^2\ge \tfrac12|p-y|^2+\delta^2$. The normal derivative then gives
+$$
+  -\partial_n U_\nu(q)+2C U_\nu(q)
+        \ \ge\ \int\frac{\delta}{|q-y|^3}\,d\nu(y)
+        \ \ge\ \frac{\nu(\{|y-p|\le\delta\})}{8\delta^2}.
+$$
+The left side is uniformly bounded by the exterior identity and the positive distance from zero to the boundary. The ball bound dominates $\nu$ on the band by a constant times surface area, by covering with balls in the definition of surface measure. That area projects to height with bounded density $2\pi\sqrt{W+(W')^2/4}$. Endpoint circles or points have area zero. This proves the strip bound at the remaining heights.
+
+Apply the critical-point argument in the preceding section to $A$. The strip bound precludes every degenerate critical point and every saddle. Hence $A$ has a unique minimum and maximum, which are fixed by $\Gamma$. This contradicts the hypothesis. In particular the obstruction includes constant $A^2-4BC$ and every polynomial relation $BC=f(A)$ on the octahedral and icosahedral angular models. For rational dependence the result transfers to real closed fields by embedding a finitely generated field of definition in $\mathbb R$. Nonconstancy, the identities, and the standard algebraic polyhedral model are preserved. The same transfer applies to (H7) because the angular trace commutes with base change. No sign or convexity hypothesis on the given coefficients is needed.

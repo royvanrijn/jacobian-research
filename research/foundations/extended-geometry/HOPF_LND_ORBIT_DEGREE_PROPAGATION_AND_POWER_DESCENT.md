@@ -320,7 +320,7 @@ excluded by assumption. All other conclusions have been proved above.
 
 This is an EVENTUAL arithmetic-progression theorem along each specified
 orbit. It neither asserts coverage of every degree by an arbitrary orbit
-nor supplies a witness at the globally unresolved degrees5 or7.
+nor supplies a new starting witness. Global primitive degree5 remains open; degree7 is realized by the separate [joint Hopf construction](PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md).
 
 ## 9. Checks against the retained examples
 

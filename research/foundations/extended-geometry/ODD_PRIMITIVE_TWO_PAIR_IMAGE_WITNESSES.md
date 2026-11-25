@@ -346,5 +346,5 @@ not produce balanced degree five or seven. Together with the retained
 even-degree family, it supplies every composite balanced degree at least
 four. The separate [hyperbolic inverse-cover construction](HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md)
 also supplies certain odd prime degrees, including thirteen and twenty-three.
-The remaining primitive degree questions include five and seven.
+Primitive degree five remains open. The separate [joint-Hopf construction](PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md) realizes degree seven and every balanced degree at least six.
 No exhaustive pure-phase classification or formal verification is claimed.
