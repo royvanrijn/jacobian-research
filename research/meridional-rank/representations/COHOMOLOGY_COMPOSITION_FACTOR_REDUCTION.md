@@ -253,3 +253,19 @@ The retained [checker](verify_cohomology_composition_factor_reduction.py),
 [inputs](cohomology_composition_factor_inputs.json),
 [source ledger](cohomology_composition_factor_source_ledger.json) and
 [receipt](cohomology_composition_factor_verification.json) accompany this proof.
+
+
+## 7. The first possible displacement for a protected knot closure
+
+Suppose \(G\) is the group of a knot closing a \(b\)-strand braid with \(k\ge1\) disjoint protected \(U\) blocks and a tail fixing both outer free meridians of every block, in the [two-sided protected theorem](TWO_SIDED_PROTECTED_OBSTRUCTIONS.md). Set \(c=b-k\). The [rank-one cohomology bound](RANK_ONE_COHOMOLOGY_COVECTOR_BARRIER.md#2-consequence-for-disjoint-protected-u-blocks) gives \(C(S)\le c\) for every module with \(q(S)=1\), over every field. A trivial factor contributes certificate one. Thus Theorem (2) bounds \(C(E)\) by \(c\) whenever all its composition factors have \(q(S)\le1\), even if extensions increase \(q(E)\).
+
+More generally, if \(C(E)>c\), then \(\delta(E)>0\), since \(c\ge1\). Applying (3) to any composition series gives an irreducible factor \(S\) with \(C(S)\ge C(E)\) and \(q(S)\ge2\). If \(q(E)\le2\), superadditivity (5) gives \(q(S)=q(E)=2\) and forces \(q=0\) for every other factor. By normal generation all the other factors are trivial. The same equality of displacement ranks in (3) gives \(\delta(S)\ge\delta(E)\). Conversely an irreducible rank-two candidate is already a module of displacement at most two. This gives an exact reduction for every target certificate exceeding \(c\).
+
+For \(q(S)=2\), the integer formula \(C(S)=\max(1,1+\lceil\delta(S)/2\rceil)\) gives
+\[
+ \begin{aligned}
+ C(S)\ge c+1 &\ \Longleftrightarrow\ \delta(S)\ge 2c-1,\\
+ C(S)\ge c+2 &\ \Longleftrightarrow\ \delta(S)\ge 2c+1.
+ \end{aligned}
+\]
+Indeed \(\lceil x\rceil\ge n\) for integer \(n\) is equivalent to \(x>n-1\). The second threshold supplies a sufficient rank-two certificate for augmentation gap at least two, since the same protected theorem gives \(\operatorname{ar}_{\mathbb C}(K)\le c\). The reduction leaves the existence of such a representation and the geometry of any resulting knot open.

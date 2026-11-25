@@ -479,7 +479,7 @@ in its dictionary at least \(q_{i,*}\). The count of common
 complete columns has normalized exponent at most
 \[
  \sum_{i=1}^m u_i + \frac{1}{L\prod_{i=1}^m q_{i,*}}+o(1).
- \tag{MP2}
+ \tag{MP3}
 \]
 The constants above can depend on the degrees, held fixed
 before the height limit. For two rows the rectangular bound
@@ -2431,6 +2431,51 @@ In particular an adaptive sector with
 fixed exponent deficit when \([s,S]\) supplies a fixed
 positive nonatomic mass and the graph losses are small.
 
+### A deficit inequality for balanced profiles
+
+Put \(d=2c-\varepsilon\), \(\rho=\max_T|c_T-c|\),
+and \(\gamma=\sum_T c_T-3c\). Assume
+\(0\le\varepsilon\le10^{-3}\) and \(\rho\le10^{-3}\),
+as in (MS16). Use at most one prescribed block per
+letter, of total cost \(p\) and weight \(w\). For each of
+\(k\ge1\) additional outside slots \(h\), choose a
+positive continuity band \([s_h,S_h]\) with nonatomic
+mass strictly exceeding a chosen lock mass \(z_h>0\).
+The slots can use different bands and letters. Write
+\[
+ \mu=p+\sum_h z_h,\qquad
+ W_{\rm lock}=w+\sum_h s_hz_h,\qquad
+ S_{\rm sum}=\sum_h S_h .
+\]
+Assume \(\mu<c\), and pad with empty slots as in the
+mixed moment argument, using \(m\) total slots. Then
+\[
+ (m+1)\left(35\varepsilon+\frac{68}{3}\gamma+2\rho\right)
+ \ \ge\
+ \min\left\{\frac{(W_{\rm lock}-1)_+}{S_{\rm sum}},
+                \frac{c-\mu+\rho}{m-1}\right\}.
+ \tag{MP2}
+\]
+If \(W_{\rm lock}>1\), strip overlap of root mass less
+than \(\xi\) on each outside slot, for any fixed
+\(\xi<(W_{\rm lock}-1)/S_{\rm sum}\). The graph deficit
+\(\eta\) is at most \(35\varepsilon+68\gamma/3\) by the
+complete-label reduction used in (MS16), up to arbitrarily
+small additional losses. With part caps \(c+\rho\),
+the moment lower exponent is
+\((m-1)c-(m+1)\eta-(m+3)\rho\).
+Comparing it with the bad- and good-record exponents
+shows that \((m+1)(\eta+2\rho)\) must be at least
+\(\min\{\xi,(c-\mu+\rho)/(m-1)\}\).
+The second term uses
+\(m(m-2)/(m-1)=m-1-1/(m-1)\).
+Let the auxiliary losses decrease and \(\xi\) increase
+to its stated upper limit. When \(W_{\rm lock}\le1\),
+the right side is zero and follows from the pair
+capacity bound \(2\gamma\ge-3\varepsilon\).
+Thus (MP2) holds for every admissible selection and
+can be optimized over all its bands and lock sizes.
+
 ### A quantitative saving in a three-letter sector
 
 Consider balanced boxes, with \(d=2c-\varepsilon\), and
@@ -2474,7 +2519,7 @@ the gap available from the record count is
 \]
 Both branches contradict the mixed moment lower bound.
 All the comparisons are strict under arbitrarily small
-truncation and box losses, proving (MP2).
+truncation and box losses, proving (MP3).
 
 ## Converting high-degree blocks to common factors with diffuse locks
 
