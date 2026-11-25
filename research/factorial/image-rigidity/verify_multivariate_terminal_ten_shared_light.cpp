@@ -5,7 +5,7 @@
 
 using Int=__int128_t;
 constexpr Int one=Int(1)<<48;
-constexpr int max_coefficients=12;
+constexpr int max_coefficients=14;
 struct Interval { Int lo,hi; };
 struct Words { std::uint64_t low; std::int64_t high; };
 
@@ -114,15 +114,17 @@ int sfc_internal(int n,int groups,const std::int64_t *sine,
         for(int k=0;k<n;++k) if(!limit(read(model,j*(n+1)+k+1),512*one)) return -2;
     }
     std::array<Interval,max_coefficients*max_coefficients> tf;
+    const int transform_bits = n==14 ? 83 : 84;
     for(int t=0;t<n*n;++t) {
         tf[t]={integer(transform[2*t]),integer(transform[2*t+1])};
-        if(n==max_coefficients) {
+        if(n>=12) {
             // A common positive scale leaves every projected sign
             // unchanged. Round its Bernstein entries outwards.
-            if(!limit(tf[t],Int(1)<<88)) return -2;
-            tf[t]={tf[t].lo>>4,-((-tf[t].hi)>>4)};
+            const int shift = n==12 ? 4 : (n==13 ? 8 : 13);
+            if(!limit(tf[t],Int(1)<<(transform_bits+shift))) return -2;
+            tf[t]={tf[t].lo>>shift,-((-tf[t].hi)>>shift)};
         }
-        if(!limit(tf[t],Int(1)<<84)) return -2;
+        if(!limit(tf[t],Int(1)<<transform_bits)) return -2;
     }
     for(int k=0;k<n;++k) {
         if(!limit(read(sine,k),32*one)) return -2;
@@ -139,10 +141,11 @@ int sfc_internal(int n,int groups,const std::int64_t *sine,
     // After division by the grid, the sine and linear products
     // together are bounded by 2^62+2^66. The transform bound is
     // 2^84, so each resulting control is at most
-    // 12*(2^62+2^66)*2^36 < 2^106. The midpoint weights
-    // sum to at most 2^11. Multiplying by the parameters
-    // adds at most one bit, and summing at most 256 groups
-    // stays strictly below 2^126.
+    // For n<=13 the controls are bounded by 13*(2^62+2^66)*2^36
+    // < 2^106. At n=14 the tighter transform bound instead gives
+    // 14*(2^62+2^66)*2^35 < 2^105. The midpoint weights sum to
+    // 2^(n-1). In either case, multiplying by parameters bounded
+    // by 2 and summing at most 256 groups stays below 2^127.
     std::vector<Interval> result(n*n*groups);
     for(int r=0;r<n;++r) {
         for(int j=0;j<groups;++j) {

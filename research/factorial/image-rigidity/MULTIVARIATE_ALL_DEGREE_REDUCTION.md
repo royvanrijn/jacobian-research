@@ -150,8 +150,8 @@ follows from the sequential comparison used here.
 ## The fixed-terminal obligation
 
 The absolute eventual theorem leaves only finitely many possible
-terminal orders, starting at twelve by the
-[complete terminal-eleven theorem](MULTIVARIATE_TERMINAL_ELEVEN_ALL_PROFILES.md).
+terminal orders, starting at thirteen by the
+[complete terminal-twelve theorem](MULTIVARIATE_TERMINAL_TWELVE_ALL_PROFILES.md).
 Each such order still includes arbitrary dimension and exponents. The
 [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
@@ -279,11 +279,52 @@ terminal ten are therefore complete. The
 [terminal-eleven theorem](MULTIVARIATE_TERMINAL_ELEVEN_ALL_PROFILES.md)
 combines the exact private and retained cases with the shared
 moving-ray and Cayley bands. All terminals through eleven are
-complete. At terminal twelve the
-[fixed rays](MULTIVARIATE_TERMINAL_TWELVE_HIGH_CURVATURE.md)
-cover \(S\ge8\), and the
-[private-degree theorem](MULTIVARIATE_TERMINAL_TWELVE_PRIVATE_DEGREES.md)
-covers every profile with total private degree at least two.
+complete. The [terminal-twelve theorem](MULTIVARIATE_TERMINAL_TWELVE_ALL_PROFILES.md)
+combines the private and retained cases with the exact light bands,
+the weighted Cayley models and the conditional signed-moment bounds.
+The [terminal-thirteen theorem](MULTIVARIATE_TERMINAL_THIRTEEN_ALL_PROFILES.md)
+combines the private and retained cases with light rays, grouped root
+disks and upper Cayley bands. The covered outer-mean intervals and
+reciprocal-cap complements exhaust every ordinary profile. Thus the
+consecutive pairs through terminal thirteen are complete. The
+[terminal-fourteen fixed rays](MULTIVARIATE_TERMINAL_FOURTEEN_HIGH_CURVATURE.md)
+cover \(S\ge8\), every total private degree at least four, and the
+listed lower private-degree cases above their shared-curvature
+thresholds. Terminal fourteen is the first remaining fixed terminal.
+The [linked-skew supplement](MULTIVARIATE_TERMINAL_THIRTEEN_LINKED_CAYLEY.md)
+demonstrates a common separating ray that moves with the matched
+signed second moment on a narrow upper band.
+
+
+For a degree-uniform extension of these comparisons, the
+[matched tanh transport](MULTIVARIATE_TANH_EXCESS_LOSS_TRANSPORT.md)
+bounds the cross-order moment error by the same excess outer loss
+\(W-RU\). The [Cayley operator test](MULTIVARIATE_CAYLEY_OPERATOR_RAY_TEST.md)
+carries every grouped moment through the exact change of variable.
+Its ray inequality requires a bound at the reference angular gap scale.
+The [Gaussian reference comparison](MULTIVARIATE_GAUSSIAN_REFERENCE_ANGULAR_INTERLACING.md)
+gives full interlacing at equal heat parameters and the inner inequalities
+at the linked parameters. The outer reference inequalities and the
+transformed factorial remainder require further estimates across the
+remaining range. The [full-kernel transport](MULTIVARIATE_MATCHED_TANH_KERNEL_TRANSPORT.md)
+extends the excess-loss estimate to smooth test functions and gives
+explicit bounds for the whole even and odd logarithmic corrections at
+common grid locations. The [higher signed-moment centering](MULTIVARIATE_CENTERED_HIGHER_SIGNED_TANH.md)
+reduces the independent skew remainder by taking out a larger exact
+multiple of the matched second moment. The [midpoint-grid comparison](MULTIVARIATE_MATCHED_FRACTIONAL_LOG_TRANSPORT.md)
+carries the full-kernel estimate through to interpolants of the normalized
+log coefficients. A [Gaussian comparison path](MULTIVARIATE_FACTORIAL_GAUSSIAN_ANNULUS_HOMOTOPY.md)
+keeps a narrow normalized root annulus. For the Gaussian references,
+the explicit all-degree comparisons apply at all physical time ratios
+for [\(s\ge13\)](MULTIVARIATE_DIFFUSE_EXPLICIT_S13_INTERLACING.md) and
+[\(0<s\le2\cdot10^{-4}N^{-3/2}\)](MULTIVARIATE_GAUSSIAN_SMALL_COUPLING_INTERLACING.md). A [fixed-order error obstruction](MULTIVARIATE_FIXED_ORDER_COEFFICIENT_ERROR_OBSTRUCTION.md)
+shows that independent coefficient remainders can swamp the gap at high
+orders even with sharp endpoint attenuation and exact moment parameters.
+The [polynomial diffuse lift](MULTIVARIATE_DIFFUSE_POLYNOMIAL_ANGLE_LIFT.md)
+preserves cancellation by applying the analytic coefficient multiplier
+to each nonvanishing Gaussian half separately. For the ordinary
+moments, this gives angular separation at every terminal \(N\) with
+\(S\ge13\) and \(S\eta N\le10^{-6}\).
 
 Across all terminals, the [explicit high-curvature theorem](MULTIVARIATE_EFFECTIVE_ABSOLUTE_CURVATURE_BOUND.md)
 and the [uniform weak-curvature theorem](MULTIVARIATE_UNIFORM_WEAK_CURVATURE_ANGLE_SEPARATION.md)
@@ -388,7 +429,7 @@ over any characteristic-zero field by the rational Bézout identity.
 Both pure monomial coefficients are nonzero at every order, so
 the univariate reduction in \(t\) covers all projective coefficient
 choices. An all-degree proof still requires coverage of the terminals
-from eleven through \(N_*-1\), or an argument that applies directly
+from thirteen through \(N_*-1\), or an argument that applies directly
 at every terminal.
 
 ## The discrete row-merger route

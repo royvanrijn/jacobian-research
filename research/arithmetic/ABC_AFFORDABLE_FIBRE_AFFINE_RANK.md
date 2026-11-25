@@ -382,7 +382,7 @@ generalized arithmetic progression of rank at most \(r\)
 and cardinality at most \(p^\theta\). In the iterated
 small-budget limit the count is at most
 \[
-                        y^{\max(\beta,0)}+n^{o(1)}.          \tag{AF6}
+                        y^{\max(\beta,0)}+n^{o(1)}.          \tag{AF4}
 \]
 Here the \(o(1)\) bound expresses an arbitrarily small
 fixed normalized allowance for sufficiently small \(L\).

@@ -330,29 +330,66 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Exact angular separation at a uniform positive weak-curvature cap | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_WEAK_CURVATURE_ANGLE_SEPARATION.md) |
 | Terminal-ten separation for total private degree at least two and large curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_PRIVATE_DEGREES.md) |
 | Terminal-ten shared separation at outer mean at least .97 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_NEAR_FLAT.md) |
-| Terminal-ten matched shared light bands through outer mean .76 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_SHARED_LIGHT.md) |
+| Terminal-ten matched shared light bands through outer mean .76 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_SHARED_LIGHT.md) |
 | Terminal-ten stable shared separation from outer mean .93 to 1 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_STABLE_UPPER.md) |
-| Terminal-ten separation for every private profile and for retained shared rows | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_RETAINED_PROFILES.md) |
-| Terminal-ten shared profiles through outer mean .76 at the full light cap | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_RETAINED_MID_BANDS.md) |
+| Terminal-ten separation for every private profile and for retained shared rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_RETAINED_PROFILES.md) |
+| Terminal-ten shared profiles through outer mean .76 at the full light cap | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_RETAINED_MID_BANDS.md) |
 | Terminal-ten angular separation with a marked shared unit row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_MARKED_UNIT_ROWS.md) |
 | Eventual angular separation on any fixed noncritical shared curvature band | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_SHARED_BAND_ANGULAR_SEPARATION.md) |
 | Computable absolute eventual angular cutoff for fully shared ordinary binomials | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_EFFECTIVE_EVENTUAL_ANGLES.md) |
 | Unrestricted shared terminal ten from outer mean .88 to .93 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_UPPER_BRIDGE.md) |
-| Unrestricted shared terminal ten from outer mean .76 to .88 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_RETAINED_UPPER_MID.md) |
-| Terminal ten for every ordinary multivariate two-monomial profile | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_ALL_PROFILES.md) |
+| Unrestricted shared terminal ten from outer mean .76 to .88 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_RETAINED_UPPER_MID.md) |
+| Terminal ten for every ordinary multivariate two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_ALL_PROFILES.md) |
 | Lower outer-mean thresholds for two marked terminal-ten rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TEN_MARKED_UNIT_EXTENSION.md) |
 | Terminal eleven for high curvature and larger private degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_HIGH_CURVATURE.md) |
 | Terminal eleven for total private degree at least two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_PRIVATE_DEGREES.md) |
-| Terminal-eleven retained profiles with shared reciprocal cap 1/8 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_RETAINED_PROFILES.md) |
-| Terminal-eleven retained complements in .44 through .76 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_RETAINED_MID_BANDS.md) |
+| Terminal-eleven retained profiles with shared reciprocal cap 1/8 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_RETAINED_PROFILES.md) |
+| Terminal-eleven retained complements in .44 through .76 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_RETAINED_MID_BANDS.md) |
 | Unrestricted shared terminal eleven from outer mean .95 to 1 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_STABLE_UPPER.md) |
-| Matched outer ratio monotonicity for ordinary factorial rows | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_MATCHED_OUTER_RATIO_MONOTONICITY.md) |
+| Matched outer ratio monotonicity for ordinary factorial rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_OUTER_RATIO_MONOTONICITY.md) |
 | Positive angular speed for all half-line cubic zeros | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_ANGULAR_SPEED.md) |
 | Effective angular exclusion in bounded private cubic windows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_ANGULAR_SPEED.md) |
 | Effective angular separation on regular one-private bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_REGULAR_ANGLES.md) |
 | Effective angular separation with exactly one private side | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_ONE_PRIVATE_ENDPOINT_ANGLES.md) |
 | Effective angular separation with private variables on both sides | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_BOTH_PRIVATE_ANGLES.md) |
 | Effective absolute eventual angular separation for ordinary binomials | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL_ANGLES.md) |
+| Terminal-eleven fully shared light ranges through outer mean .76 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_SHARED_LIGHT.md) |
+| Terminal-eleven upper and tightened retained complements | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_RETAINED_HIGH.md) |
+| Terminal twelve for high curvature and larger private degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_HIGH_CURVATURE.md) |
+| Terminal-eleven middle Cayley range with cap 1/55 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_MIDDLE_CAYLEY.md) |
+| Unrestricted terminal-eleven Cayley bridge .94–.95 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_UPPER_SEAM.md) |
+| Terminal twelve for total private degree at least two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_PRIVATE_DEGREES.md) |
+| All-order coupling of outer ratio and tanh second moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_OUTER_RATIO_MONOTONICITY.md) |
+| Terminal-eleven upper Cayley range with cap 1/70 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_UPPER_CAYLEY.md) |
+| Terminal eleven for every ordinary multivariate two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_ELEVEN_ALL_PROFILES.md) |
+| Matched tanh transport controlled by excess outer loss | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TANH_EXCESS_LOSS_TRANSPORT.md) |
+| Terminal twelve for a single private linear row or a shared reciprocal above 1/8 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_RETAINED_PROFILES.md) |
+| Terminal twelve for fully shared light rows up to outer mean .66 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_SHARED_LIGHT.md) |
+| Terminal twelve for retained complements of the fully shared light bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_RETAINED_BANDS.md) |
+| Terminal twelve for the upper fully shared Cayley bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_CAYLEY.md) |
+| Terminal twelve for the fully shared Cayley band .70 to .76 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_CAYLEY_LOWER.md) |
+| Terminal twelve for the fully shared Cayley bridge .66 to .70 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_CAYLEY_BRIDGE.md) |
+| Terminal twelve for every ordinary two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_TWELVE_ALL_PROFILES.md) |
+| Terminal thirteen for high curvature and large private degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_HIGH_CURVATURE.md) |
+| Two-sided fractional-index transport for factorial coefficients | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FRACTIONAL_INDEX_TRANSPORT.md) |
+| Scaled Hermite interlacing throughout the Cayley deficit interval | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SCALED_HERMITE_INTERLACING.md) |
+| Skew-centered weak-curvature angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SKEW_CENTERED_WEAK_CURVATURE.md) |
+| Consecutive angular interlacing for the Gaussian reference | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_REFERENCE_ANGULAR_INTERLACING.md) |
+| An exact Cayley operator test for angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CAYLEY_OPERATOR_RAY_TEST.md) |
+| A fixed-order coefficient-error obstruction with exact endpoint attenuation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_ORDER_COEFFICIENT_ERROR_OBSTRUCTION.md) |
+| Centering higher signed tanh moments about the matched second moment | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CENTERED_HIGHER_SIGNED_TANH.md) |
+| Adjacent-order transport of the full even and odd tanh kernels | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_KERNEL_TRANSPORT.md) |
+| Curie–Weiss angular interlacing for every degree when s is at least 24 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_EXPLICIT_S24_INTERLACING.md) |
+| Curie–Weiss angular interlacing for every degree when s is at least 13 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_EXPLICIT_S13_INTERLACING.md) |
+| Explicit small-coupling angular interlacing for the linked Gaussian reference | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_SMALL_COUPLING_INTERLACING.md) |
+| Matched tanh transport for the assembled fractional log coefficients | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_FRACTIONAL_LOG_TRANSPORT.md) |
+| A radial bound preserved by the factorial-to-Gaussian path | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FACTORIAL_GAUSSIAN_ANNULUS_HOMOTOPY.md) |
+| Terminal thirteen for light shared profiles on the certified bands | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_SHARED_LIGHT.md) |
+| Terminal thirteen for every private profile and all shared reciprocals above 1/8 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_PROFILES.md) |
+| Terminal thirteen for the upper fully shared Cayley bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_CAYLEY.md) |
+| Terminal thirteen for the .930 to .934 linked-skew Cayley band | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_LINKED_CAYLEY.md) |
+| Terminal thirteen for retained complements of the shared reciprocal caps | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_BANDS.md) |
+| Terminal thirteen for tightened retained complements in the shared middle bands | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_THIRTEEN_RETAINED_FALLBACKS.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -447,7 +484,7 @@ Scope limits:
 - Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
 - A three-column ordinary factorial row identification has regular endpoint moments in orders two through four and a certified collision in the physical interpolation. This excludes physical-interval nonvanishing as a general transfer proof. The discrete endpoint question and the unrestricted two-column interval remain open.
 - The exact joint measure closure has a specific diagonal diffuse law and an independent signed center parameter. An all-order physical binary transfer is proved with untouched independent private degree at least two on both sides.
-- Every ordinary two-monomial profile is covered through terminal ten. Above a computable absolute unevaluated cutoff, every profile has disjoint consecutive root arguments, even after independent positive rescalings. Uniform weak- and high-curvature angular exclusion applies at every terminal. The remaining fixed terminals start at eleven.
+- Every ordinary two-monomial profile is covered through terminal twelve. Above a computable absolute unevaluated cutoff, every profile has disjoint consecutive root arguments, even after independent positive rescalings. Uniform weak- and high-curvature angular exclusion applies at every terminal. The remaining fixed terminals start at thirteen.
 
 Tracked obligations (computed states):
 
@@ -476,6 +513,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Decide whether the actual repeated-root triple set is EMPTY: for EVERY integer a>=0,d>=1,m>=2, prove gcd_Q(A_(m;a,d),A_(m;a,d)_prime)=1, or exhibit an actual repeated-root triple. A support-uniform eventual cutoff and finiteness of this set do not prove emptiness.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-ALL-ORDER-SQUAREFREENESS
 - **mathematical / open:** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF
 - **mathematical / open:** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
-- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=11 below the computable absolute cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
+- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=13 below the computable absolute cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

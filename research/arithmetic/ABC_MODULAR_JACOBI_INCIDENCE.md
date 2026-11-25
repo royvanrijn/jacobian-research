@@ -375,3 +375,56 @@ the product of distinct prime factors must be
 bounded on all three letters, and the needed estimate
 is an upper bound for a sparse additive incidence.
 [Jain, Sums of Integers with Small Prime Factors](https://arxiv.org/html/2611.21136v1)
+
+## Restricted projections over prime powers
+
+Shen's restricted \(p\)-adic sum-product theorem applies
+at fixed \(p\) to a family of slopes and to graphs of size
+at least \(\delta^\chi |A||B|\), with \(\delta=p^{-m}\).
+It assumes ball nonconcentration at all intermediate
+depths for \(B\) and the slope family. A single affordable
+divisor record supplies a single slope. Further, if
+\(|B|\ge \delta^{-\beta+\chi}\) and \(\beta>2\chi\),
+a matching has at most \(|A|\) edges and falls below
+the stated graph-size threshold. The lower bound for
+\(|B|\) already follows from its nonconcentration condition
+at radius \(\delta\).
+[Shen, Theorem 1.8](https://arxiv.org/pdf/2607.12251v1#page=5)
+
+At a fixed prime \(p\), dense unit root boxes do satisfy
+the required sort of nonconcentration. For \(Q=p^m\),
+suppose a set of units in an interval of length
+\(R\asymp Q^\beta\), \(0<\beta<1\), has size at least
+\(R Q^{-\epsilon_0}\). Fix \(k\ge1\) with \(p\nmid k\).
+For each \(j\le m\), a prescribed residue of its \(k\)-th
+power modulo \(p^j\) has \(O_k(1)\) root classes by
+Hensel lifting. That residue contains at most
+\(O_k(1+R/p^j)\) members of the root image, and the whole
+image modulo \(Q\) has size \(\gg_k RQ^{-\epsilon_0}\).
+Thus the normalized ratio in a \(p^{-j}\)-ball is
+\[
+              O_k\bigl(Q^{\epsilon_0}
+                           (p^{-j}+Q^{-\beta})\bigr)
+                         =O_k(Q^{\epsilon_0}p^{-\beta j}).
+\]
+This verifies a local size hypothesis for appropriate
+dense boxes and leaves the slope and graph size inputs.
+
+A single-letter radical cap is insufficient to give such
+ball bounds. For \(0<\ell<m\) and fixed \(k\ge2\) prime
+to \(p\), consider the actual integers
+\[
+                (p^m+1+p^\ell j)^k,\qquad
+                          0\le j<p^{m-\ell}.
+\]
+They have height comparable to \(p^{mk}\) and radicals
+at most \(2p^m\). Their residues modulo \(p^m\) are exactly
+the group \(1+p^\ell\mathbb Z/p^m\mathbb Z\), because
+raising to the \(k\)-th power permutes that group.
+Its sumset and product set both have its own cardinality.
+All the residues occupy one ball of radius \(p^{-\ell}\).
+For \(\ell/m\) bounded away from zero this contradicts
+any fixed positive dimension condition on that ball
+with subpower loss. This example concerns an individual
+radical-capped dictionary in a prime-power modulus and
+makes no assertion of three-letter incidence.

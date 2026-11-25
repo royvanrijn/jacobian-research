@@ -52,6 +52,9 @@ def cores():
                 if square >= LOWER**2:
                     eligible.extend((lower,gap,sign,strength,square) for sign in (-1,1))
 
+    # Traverse in the same lexicographic order used after column reversal.
+    eligible.sort()
+
     def collect(index, rows, budget, square):
         if index == len(eligible):
             if rows <= tuple(sorted((a,d,-sign) for a,d,sign in rows)):

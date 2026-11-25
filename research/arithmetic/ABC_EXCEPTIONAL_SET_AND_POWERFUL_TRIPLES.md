@@ -6716,6 +6716,62 @@ We have excluded every limiting \(d>5/12\). The fixed-truncation and dyadic pass
 
 ## The unrestricted one-third endpoint
 
+The one-third argument also counts by an effective radical
+budget. In the diagonal range of the residue moments, the
+modulus threshold uses actual root sizes and the count uses
+root dictionary cardinalities. It follows that a sum of
+dictionary exponents \(B\) gives the bound
+\(X^{B/3+o(\lambda)+\varepsilon}\) in the iterated small-budget
+limit. Prime prices with a sublogarithmic partition sum
+convert this to a global count. Any fixed positive fraction
+of radical weight on a prescribed pool of polylogarithmic
+cardinality suffices for a strict saving, with no fixed
+upper limit on the logarithmic power of its cardinality.
+The same counting principle gives a fixed-value fibre
+exponent strictly below \(2/9\) at balance, and transfers
+to least-repaired primitive quotients in the corresponding
+discounted sectors.
+
+At saturation, the logarithmic radical weight is
+asymptotically concentrated on primes whose occurrence
+frequencies are \(p^{-1+o(1)}\) in the weighted mean.
+Anatomic root marginals attain the sum of their numerical
+height caps in entropy. At positive limiting heights,
+bounded groups of high-degree roots can be charged by
+joint dictionary cardinalities. The same saturation
+argument gives nearly maximal aggregate joint entropy
+and vanishing total pair mutual information across any
+disjoint within-letter high-root pairing.
+[Effective radical budget](ABC_EFFECTIVE_RADICAL_BUDGET.md)
+· [Grouped root dictionaries](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md)
+
+A prescribed cheap full lock also permits direct signed
+ratio moments on dictionaries spanning the two free
+letters. For any partition into bounded root groups,
+their total joint entropy saturates the two free-letter
+cap sum. Groups spread across a bounded number of
+shrinking valuation windows may be arbitrarily large at
+fixed truncation, by the wide-cofactor count. Two
+simultaneous locks permit dictionaries spanning all three
+letters and bound their joint cap sum from below by
+\(2\lambda/3\) at saturation. The projected pair bounds
+do not control arbitrary three-way dependence.
+
+The effective budget also accepts conditional prices
+along ordered prime supports. A sublogarithmic next-symbol
+partition sum holds uniformly at every prefix. This
+turns successive conditional prime frequencies into
+admissible dictionary costs. At saturation their
+logarithmic radical-weighted deviations from \(1/p\)
+again vanish in mean, within every block covered by the
+relevant moment bound. A quantitative application
+saves when a fixed positive share of the budget is
+carried by close-prime pairs within those blocks,
+without one global prescribed prime pool.
+[Across-letter dictionaries and simultaneous moduli](ABC_CROSS_LETTER_ROOT_DICTIONARY_ENTROPY.md)
+· [Conditional prime-support coding](ABC_CONDITIONAL_PRIME_SUPPORT_CODING.md)
+
+
 An actual two-letter power norm can count distinct targets at
 equal heights. Fix full divisors \(F,G\) of the two summands and
 retain a target packet \(T=C R^k\). For a degree-\(q\) binomial norm
@@ -7031,6 +7087,86 @@ divides each normalized determinant. Small quotient determinants
 can therefore exclude some sparse fibres. Large-radical
 determinants remain possible under this estimate.
 [Determinants of distinct targets](ABC_AFFORDABLE_FIBRE_DETERMINANT_COMPLEXITY.md)
+
+The size and valuation distribution of those determinants are
+also constrained after thinning. A large class cannot have a
+projective modulus within a fixed numerical margin of its
+determinant height. Combining full factors from several
+anchor secants, and optionally from the actual three query
+letters, makes a thick set of high-order secant packets
+incompatible with that margin at affordable root cost.
+In the residue after removing the common modulus, almost
+all numerical weight lies at bounded scaled orders on
+primes outside both endpoint triples. A separate curve
+count with finitely many anchor directions forces a
+positive defect mass at those orders for every exact
+power grid. The remaining obstruction includes large
+radicals with low absolute valuations.
+[Secant valuation weights](ABC_AFFORDABLE_FIBRE_SECANT_VALUATION_WEIGHTS.md)
+· [Projective peeling and combined packets](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SECANT_PEELING.md)
+· [Power defects at bounded scaled orders](ABC_SECANT_VALUATION_DEFECT_GRAPHS.md#power-defects-at-bounded-scaled-orders-on-fresh-primes)
+
+Bounded tuples in a large affordable fibre have exclusive
+prime packets on every pairwise determinant. Each packet
+retains almost all of the terminal angular numerical scale
+and at least the residual fibre exponent in radical mass,
+up to arbitrarily small allowances. Universal rational
+transfers of projective directions with no new prime source
+are cross ratios or, for multiple outputs, one common
+change of markings. Each moving secant used by those
+transfers contributes its exclusive packet to the resulting
+primitive output. More general rational transfers with
+mixed polynomial factors pay the fibre exponent for each
+such factor on disjoint supports. The count uses
+coefficient-uniform binary norm fibres in a nonlinear slot
+and point-line incidences when every slot is linear.
+[Cross ratios and fresh polynomial prime costs](ABC_CROSS_RATIO_FRESH_PRIME_OBSTRUCTION.md)
+
+In the remaining two-mixed-factor pattern, dyadic
+regularization accounts for the free-letter marginals.
+A bounded sequence of support refinements of the
+actual eligible tuple graph makes the original
+pure-letter values recoverable from the transferred
+denominator at low cost. The resulting output
+expansion excludes a dense family with output budget
+at most \(3r\) above a fixed power of \(n\). For
+smaller outputs, the affordable congruences control
+one-slot fibres for every same-orientation two-slot
+polynomial chart and for opposite-orientation
+two-slot additive charts. These bounds eliminate
+the remaining two-slot additive transfer from
+this route. A direct use for the original fibres
+still requires an arithmetic upper bound on
+transferred radicals.
+[Pure-term slices](ABC_AFFORDABLE_PURE_TERM_SLICES.md)
+· [Denominator recovery](ABC_PURE_TERM_DENOMINATOR_RECOVERY.md)
+
+
+A three-divisor determinant gives a strict global count
+for radicals largely supported on a prescribed
+polylogarithmic prime pool. The primes in the pool may
+themselves be large. The pool can have cardinality
+\(O((\log X)^{\kappa_*})\) for an absolute \(\kappa_*>2\),
+with absolute positive allowances for the outside radical
+and for the exponent saving. Uniform pooled dispersion
+lowers the weight-cost threshold, and the last pool prime
+can be recorded separately even when it is macroscopic.
+The resulting gap transfers to minimally repaired
+primitive quotients in the corresponding sector.
+[Polylogarithmic prime pools and divisor packing](ABC_SMOOTH_SUPPORT_DIVISOR_PACKING.md#uniform-saving-beyond-the-logarithmic-power-two)
+
+For fixed polynomial models of local minimal repair, a
+logarithmic derivative bound rules out a third-layer
+polynomial divisibility identity when the three original
+polynomials have all factor multiplicities at least three.
+Integer parameters that pass the third-layer test despite
+a nonzero additive error force a fixed factor to have
+square-full values away from a fixed pool. Square and
+cube twist bounds give a parameter saving for factors of
+degree up to four, and higher depth handles any fixed
+factor degree. This identifies an obstruction for the
+polynomial model of the local tests.
+[Polynomial models of third-layer repair](ABC_MINIMAL_REPAIR_POLYNOMIAL_THIRD_LAYER.md)
 
 Complete odds quotients at three or four actual targets also
 give a higher-order common-neighbor bound. Fixed relative odds

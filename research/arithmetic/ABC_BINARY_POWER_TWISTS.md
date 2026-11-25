@@ -195,3 +195,43 @@ in one variable.
 [Darmon–Granville](https://www.math.mcgill.ca/darmon/pub/Articles/Research/06.Granville/paper.pdf)
 · [Swaminathan](https://doi.org/10.1112/S0010437X23007649)
 · [Wongcharoenbhorn–Meemark](https://arxiv.org/abs/2405.06968v2)
+
+## Near-cusp count for a moving square–cube difference
+
+Chan–Koymans count all integer pairs in a dyadic cubic-root
+range \(Z\le z<2Z\) with \(y'\ge0\) and
+\(0<|z^3-(y')^2|\le1728 Y\). For \(Y\ge1,\ Z\ge Y^{2/3}\)
+their bound is \(O_\varepsilon(Z^\varepsilon
+(Y^{2/3}+Y^{1/6}Z^{1/4}))\). In particular, for positive
+integer coefficients \(A,B\), \(K\ge1\), and \(H\ge1\),
+consider
+\[
+                H\le A x^3<2H,\qquad
+                       0<|A x^3-B y^2|\le K .
+\]
+If \(A^2B^3 K^2\le H\) and \(x,y>0\), the pair count is
+\[
+ \ll_\varepsilon (A^{2/3}B H^{1/3})^\varepsilon
+       \left(A^{4/3}B^2K^{2/3}
+                 +A^{1/2}B^{3/4}K^{1/6}H^{1/12}\right).
+\]
+Indeed \((z,y')=(ABx,AB^2y)\) is an injective integral
+embedding, and the difference is multiplied by \(A^2B^3\).
+Use \(Z=A^{2/3}BH^{1/3}\) and
+\(Y=\max(1,A^2B^3K/1728)\). Then \(Z\ge Y^{2/3}\)
+under the displayed condition, and the full \(z\)-interval
+has ratio less than two. This transfer counts varying
+differences and uses no primitivity hypothesis.
+
+For fixed \(A,B\) and \(K=H^\tau\) with \(0\le\tau<1/4\),
+this improves the ordinary ambient cusp exponent \(1/6\).
+The smallest exponent provided by this estimate is \(1/12\)
+in the complete-term height scale. A bounded difference
+radical is a different restriction. A use at the small
+\(abc\) budget would need to impose that restriction in
+addition to numerical closeness, or to have root heights at
+a much smaller scale. In the quartic proof the binary quartic
+invariant retains the actual difference. At that stage one
+can formulate its additional radical constraint, which the
+cited point count does not use.
+[Chan–Koymans, Theorem 1.2 and Section 2](https://arxiv.org/html/2611.31390v1#S1)

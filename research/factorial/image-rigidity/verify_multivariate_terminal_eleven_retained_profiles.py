@@ -48,6 +48,10 @@ def cores(private):
             if Q(gap, 10 * base + 1) > CAP and strength <= cutoff:
                 eligible.extend((base, gap, sign, strength) for sign in (-1, 1))
 
+    # Compare both orientations in the same lexicographic order.
+    if not private:
+        eligible.sort()
+
     def collect(index, rows, budget):
         if index == len(eligible):
             if private or rows and rows <= tuple(sorted((a, d, -sign) for a, d, sign in rows)):

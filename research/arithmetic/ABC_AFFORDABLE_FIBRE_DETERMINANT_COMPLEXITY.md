@@ -103,7 +103,7 @@ when counting the quotient determinant. It also gives
 
 ## Removing concentrated support from a large fibre
 
-Fix losses \(\epsilon>0\) and thresholds \(\eta>0,C\ge3\).
+Fix losses \(\epsilon>0\) and thresholds \(\eta>0,C>3\).
 After losing at most \(\epsilon\) in normalized exponent,
 one can enlarge the fixed full factors \(F,G,D\) so that the
 following holds on the resulting subfamily. For every fixed
@@ -157,7 +157,7 @@ at least any fixed \(r_0>0\), with a fixed lower margin for the
 numerical weight of one initial \(F,G\).
 
 Indeed otherwise pass to a sequence with \(E_u+E_v\to0\)
-and consider the residual target measure. If it has positive
+and rebin the residual target valuations to obtain their limit measure. If it has positive
 nonatomic mass, choose a full target block of arbitrarily
 small normalized root cost and fixed positive numerical
 weight. For a fixed value of this block, the two cofactor
@@ -242,6 +242,86 @@ cap is also \(n^s\). Thus the scales cost exponent at most
 over \(0\le q\le a\) occurs at \(q=a-\min(s,a)\).
 This proves (DC4) and accounts for all lifts to the original
 ordered distinct targets.
+
+## Three orientations of the same quotient determinant
+
+Write the three residual letters in a row as \(u_i,v_i,w_i\),
+with \(T_i=Dw_i\) and \(D\) full on its prime support.
+For two rows let \(g_w=\gcd(w_i,w_j)=g_t/D\), and set
+\[
+              H_{ij}=\frac{|\Delta_{ij}|}{Dg_ug_vg_w}.
+\]
+This is a positive integer by (DC1). Let \(a_U,a_V,a_T\)
+be the residual radical caps after recording \(F,G,D\),
+and \(b_U,b_V,b_T\) the logarithms of the radicals of those
+fixed factors, all in base \(n\). For any two of the residual
+letters one can form the primitive difference of their
+cross-products after dividing by the two same-letter gcds.
+The positive difference terms, using respectively \(UV,UT,VT\)
+as the crossed products, are exactly
+\[
+                      Dg_w H_{ij},\qquad Gg_v H_{ij},
+                                   \qquad Fg_u H_{ij}.
+                                                               \tag{DC6}
+\]
+For example \(u_i w_j-u_j w_i=\tau G\Delta_{ij}/D\), and
+the cross-product gcd for this orientation is \(g_u g_w\).
+The same identity with \(v\) proves the third expression.
+
+Assume a positive lower bound on the absolute height exponent
+of the reduced products in the chosen orientation. On pairs
+with combined residual gcd radical mass at most \(s\), the
+count with \(\operatorname{rad}(H_{ij})\le n^\alpha\) is at most
+\[
+        n^{(2(a_A+a_B)+\alpha+b_C+2s)/3+o(1)}                \tag{DC7}
+\]
+when \(A,B\) are the crossed letters and \(C\) the omitted
+letter. The \(o(1)\) allows arbitrarily small exponent
+losses in the stated iterated limits. In fact the omitted
+fixed factor costs \(b_C\) and its residual gcd costs at most
+\(s\) in the radical of the corresponding term of (DC6).
+The reconstruction cost of the two crossed gcds is bounded
+by the proof of (DC4). Splitting the reduced crossed products
+and fixing those two gcds recovers two complete letters,
+hence the original triples including the omitted letter.
+
+The positive-height condition for each orientation holds on
+almost all pairs after support peeling in any fibre of
+exponent bounded below with one fixed factor of positive
+numerical weight. To check this, if the two residual numerical
+heights tend to zero and the positive fixed factor is on the
+omitted letter, the signed ratio of the two complete terms
+modulo that factor directly determines their residual ratio.
+The latter is reduced and has numerator-denominator product
+\(X^{o(1)}\), so rational reconstruction applies. If the
+positive fixed factor is on a crossed letter, apply the
+diffuse or atomic argument of the preceding positive-height
+section to the omitted letter. In the diffuse case a cheap
+full block on the omitted letter fixes the primitive ratio of
+the two small residuals. In the atomic case the crossed full
+factor gives a modulus for the other two letters, and the
+small residual of the other crossed letter joins the wide
+factor in the amplified bounded-root count. In every case
+this contradicts a positive fibre exponent. The gcd numerical
+bound in (DC3), including the residual target gcd, then
+preserves positive height in the reduced products.
+
+Consequently a fibre of exponent \(r>0\), after arbitrarily
+small thinning as above, has almost all pairs satisfying
+\[
+  \log_n\operatorname{rad}(H_{ij})\ge
+       \max\!\left\{ r,\ \max_{C}
+               \bigl(6r-2(a_A+a_B)-b_C\bigr)\right\}
+                           -\text{allowance}.                \tag{DC8}
+\]
+The \(r\) bound already follows by fixing an anchor, recording
+the three gcds as its divisors, and counting the positive
+integer \(H_{ij}\) by its radical. The other bounds follow
+from (DC7) and comparison to the number of ordered pairs.
+In particular the lower bound concerns a quotient determinant
+with the entire common factor of each of the three original
+letters removed. It can use any of the three residual caps
+when the pooled records shrink them unevenly.
 
 ## Consequence near a saturated affordable matching
 

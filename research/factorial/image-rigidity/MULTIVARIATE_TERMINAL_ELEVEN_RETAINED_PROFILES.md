@@ -28,7 +28,8 @@ enumerates all those integer bases and gaps and all their
 multiplicities under the two strength cutoffs. It records the
 orientations of the retained rows. For fully shared profiles a
 simultaneous column reversal is allowed, and the retained list
-is nonempty. For one private row its orientation is fixed by
+is nonempty. The tuples are sorted in the same lexicographic order
+before comparing a list to its reversal. For one private row its orientation is fixed by
 column reversal, so the retained profiles include both shared
 orientations and the empty list.
 
@@ -156,8 +157,8 @@ python3 research/factorial/image-rigidity/verify_multivariate_terminal_eleven_re
 ~~~
 
 The full replay checks 333 one-private lists with 458 outer cells
-and 25,665 radial cells. It checks 841 fully shared lists with
-1,173 outer cells and 64,605 radial cells. The checker also accepts
+and 25,665 radial cells. It checks 881 fully shared lists with
+1,213 outer cells and 65,884 radial cells. The checker also accepts
 specific indices after either family name. The native path uses
 the same outward Bernstein arithmetic from the terminal-ten
 checker. Order eleven uses an additional coefficient slot and

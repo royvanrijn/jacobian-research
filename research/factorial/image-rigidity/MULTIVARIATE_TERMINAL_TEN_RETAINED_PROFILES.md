@@ -38,10 +38,15 @@ This implies \(\ell<d/(9c)-1/9\), hence
 enumerates those integer bases and gaps and all their multiplicities
 subject to the budget. In the fully shared family the list is nonempty,
 and simultaneous reversal of all orientations leaves the question
-invariant. The private row fixes the increasing orientation on one
-side in the other family, so both shared orientations are kept there,
-and the list may be empty. There are 988 fully shared and 280
-single-private lists.
+invariant. The traversal orders the rows lexicographically by smaller
+exponent, gap, and sign, so a list and its reflected list are compared
+in the same order. For unoriented row multiplicities \(r_i\) there
+are \(\prod_i(r_i+1)\) signed lists and one reflection-fixed list
+exactly when all the \(r_i\) are even. The total is 2,033 signed
+lists and 17 fixed lists, giving 1,025 fully shared lists up to
+reflection. The private row fixes one orientation, so in that family
+both shared orientations are kept and the list may be empty. This
+gives 280 single-private lists.
 
 For each retained list the core in both orders is the exact product
 of its normalized factorial factors, with the private factor also
@@ -129,7 +134,7 @@ has positive value at every real argument, by its even Gamma integral,
 which also separates its two roots from the nonic root in that sector.
 
 The exact replay covers 395 outer cells and 24,871 radial cells for
-one private row, and 1,334 outer cells and 76,274 radial cells for
+one private row, and 1,371 outer cells and 77,408 radial cells for
 fully shared retained rows. A shard is a deterministic slice of the
 full finite enumeration. The optional native path uses the same
 checked Bernstein arithmetic as the light-ray certificate.

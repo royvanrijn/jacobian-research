@@ -638,6 +638,62 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Bounded mixed valuation defects count three actual targets | Internal result | proved | [Source](ABC_THREE_TARGET_PRIME_ORDER_STARS.md) |
 | A three-target star bound for a fixed valuation order | Internal result | proved | [Source](ABC_THREE_TARGET_PRIME_ORDER_STARS.md) |
 | Explicit33/(33k+35) pointwise bound for all fixed full-k orders | Internal result | proved | [Source](ERDOS_943_ALL_K_FULL_COHERENT_CYCLE_SAVINGS.md) |
+| Joint valuation defects count lifted affine patterns | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_ADDITIVE_PATTERNS.md) |
+| Long lifted progressions with small-prime defects have bounded complete height | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_ADDITIVE_PATTERNS.md) |
+| Two affine templates with a full divisor on the omitted letter | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_ADDITIVE_PATTERNS.md) |
+| Modular progression covers imply negligible affine fibre occupancy | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md) |
+| Large affordable fibres admit negligible residual support overlaps | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_DETERMINANT_COMPLEXITY.md) |
+| Pairs with a low-radical normalized determinant in an affordable fibre | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_DETERMINANT_COMPLEXITY.md) |
+| Three orientations force complexity of a common quotient determinant | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_DETERMINANT_COMPLEXITY.md) |
+| An absolute gap between common projective modulus and determinant height | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_SECANT_VALUATION_WEIGHTS.md) |
+| Disjoint bounded-order packets on all secants of a fixed clique | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_SECANT_VALUATION_WEIGHTS.md) |
+| Amplification by disjoint secant packets and all three letter packets | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SECANT_PEELING.md) |
+| Almost all fresh secant weight sits at bounded scaled orders | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SECANT_PEELING.md) |
+| A joint power-defect count with actual secants and query letters | Internal result | proved | [Source](ABC_SECANT_VALUATION_DEFECT_GRAPHS.md) |
+| Sparse secant defect graphs at all exact power orders | Internal result | proved | [Source](ABC_SECANT_VALUATION_DEFECT_GRAPHS.md) |
+| Bounded scaled secant orders simultaneously retain all power defects | Internal result | proved | [Source](ABC_SECANT_VALUATION_DEFECT_GRAPHS.md) |
+| Counting weighted cube–square pairs with moving small differences | Internal result | proved | [Source](ABC_BINARY_POWER_TWISTS.md) |
+| Single-letter radical bounds allow complete prime-power subgroup concentration | Internal result | proved | [Source](ABC_MODULAR_JACOBI_INCIDENCE.md) |
+| Exclusive numerical and radical mass on every secant of a typical bounded tuple | Internal result | proved | [Source](ABC_CROSS_RATIO_FRESH_PRIME_OBSTRUCTION.md) |
+| Universal multivariate cross ratios pay the full direct counting budget | Internal result | proved | [Source](ABC_CROSS_RATIO_FRESH_PRIME_OBSTRUCTION.md) |
+| Arithmetic prime preservation forces one common change of markings | Internal result | proved | [Source](ABC_CROSS_RATIO_FRESH_PRIME_OBSTRUCTION.md) |
+| A fibre exponent of exclusive prime mass per mixed polynomial factor | Internal result | proved | [Source](ABC_CROSS_RATIO_FRESH_PRIME_OBSTRUCTION.md) |
+| The low-radical rational transfer has two mixed factors and one free-letter product | Internal result | proved | [Source](ABC_CROSS_RATIO_FRESH_PRIME_OBSTRUCTION.md) |
+| Three-divisor uniqueness with discounted prime-pool radical cost | Internal result | proved | [Source](ABC_SMOOTH_SUPPORT_DIVISOR_PACKING.md) |
+| Mixed pool and outside divisor weight counts | Internal result | proved | [Source](ABC_SMOOTH_SUPPORT_DIVISOR_PACKING.md) |
+| Strict one-third saving with a prime pool beyond logarithmic power two | Internal result | proved | [Source](ABC_SMOOTH_SUPPORT_DIVISOR_PACKING.md) |
+| Strict least-repaired quotient count with a prescribed prime pool | Internal result | proved | [Source](ABC_SMOOTH_SUPPORT_DIVISOR_PACKING.md) |
+| A simultaneous contact-order bound for all three polynomial letters | Internal result | proved | [Source](ABC_MINIMAL_REPAIR_POLYNOMIAL_THIRD_LAYER.md) |
+| Square-full values of a fixed separable polynomial outside a finite pool | Internal result | proved | [Source](ABC_MINIMAL_REPAIR_POLYNOMIAL_THIRD_LAYER.md) |
+| A depth-sensitive saving for fixed polynomial models of local minimal repair | Internal result | proved | [Source](ABC_MINIMAL_REPAIR_POLYNOMIAL_THIRD_LAYER.md) |
+| The one-third coefficient holds for arbitrary coordinate dictionaries | Internal result | proved | [Source](ABC_EFFECTIVE_RADICAL_BUDGET.md) |
+| A strict one-third saving with one zero-cost letter | Internal result | proved | [Source](ABC_EFFECTIVE_RADICAL_BUDGET.md) |
+| One third of the effective radical price | Internal result | proved | [Source](ABC_EFFECTIVE_RADICAL_BUDGET.md) |
+| Strict abc savings for any positive discounted pool share or many primes | Internal result | proved | [Source](ABC_EFFECTIVE_RADICAL_BUDGET.md) |
+| Balanced fixed-value fibre and max-marginal bounds | Internal result | proved | [Source](ABC_EFFECTIVE_RADICAL_BUDGET.md) |
+| Two-sided radical-weighted prime frequency at saturation | Internal result | proved | [Source](ABC_EFFECTIVE_RADICAL_BUDGET.md) |
+| Anatomic marginal entropy saturates the numerical cap sum | Internal result | proved | [Source](ABC_EFFECTIVE_RADICAL_BUDGET.md) |
+| Effective radical savings for least-repaired primitive quotients | Internal result | proved | [Source](ABC_EFFECTIVE_RADICAL_BUDGET.md) |
+| Angular multiplicity with an arbitrary prime price | Internal result | proved | [Source](ABC_SMOOTH_SUPPORT_DIVISOR_PACKING.md) |
+| One third of bounded high-root group dictionary costs | Internal result | proved | [Source](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md) |
+| Joint high-root group entropy is saturated on bounded partitions | Internal result | proved | [Source](ABC_GROUPED_ROOT_DICTIONARY_ENTROPY.md) |
+| Both free-letter orientations pay the missing radical mass | Internal result | proved | [Source](ABC_AFFORDABLE_PURE_TERM_SLICES.md) |
+| Fixed pure-term slices give dense-subset polynomial expansion | Internal result | proved | [Source](ABC_AFFORDABLE_PURE_TERM_SLICES.md) |
+| Zero-price output slices isolate the two-slot additive transfer | Internal result | proved | [Source](ABC_AFFORDABLE_PURE_TERM_SLICES.md) |
+| Opposite pure free letters force expansion even on additive slices | Internal result | proved | [Source](ABC_AFFORDABLE_PURE_TERM_SLICES.md) |
+| A full divisor charges joint dictionaries on the two free letters | Internal result | proved | [Source](ABC_CROSS_LETTER_ROOT_DICTIONARY_ENTROPY.md) |
+| Two full divisors charge joint dictionaries spanning all three letters | Internal result | proved | [Source](ABC_CROSS_LETTER_ROOT_DICTIONARY_ENTROPY.md) |
+| Cross-letter groups of unbounded size on bounded shrinking degree windows | Internal result | proved | [Source](ABC_CROSS_LETTER_ROOT_DICTIONARY_ENTROPY.md) |
+| Cheap opposite divisors force aggregate cross-letter entropy saturation | Internal result | proved | [Source](ABC_CROSS_LETTER_ROOT_DICTIONARY_ENTROPY.md) |
+| Conditional group entropy remains large after a low-entropy lock | Internal result | proved | [Source](ABC_CROSS_LETTER_ROOT_DICTIONARY_ENTROPY.md) |
+| Prefix-conditioned prime prices for counting root dictionaries | Internal result | proved | [Source](ABC_CONDITIONAL_PRIME_SUPPORT_CODING.md) |
+| A strict saving from close prime pairs in root blocks | Internal result | proved | [Source](ABC_CONDITIONAL_PRIME_SUPPORT_CODING.md) |
+| Conditional prime probabilities are two-sided near p inverse on saturation rows | Internal result | proved | [Source](ABC_CONDITIONAL_PRIME_SUPPORT_CODING.md) |
+| Conditional rarity along adaptive support forests | Internal result | proved | [Source](ABC_CONDITIONAL_PRIME_SUPPORT_CODING.md) |
+| Conditional prime coding across cheap-locked free letters | Internal result | proved | [Source](ABC_CONDITIONAL_PRIME_SUPPORT_CODING.md) |
+| Eligible tuple refinement recovers pure tags from an output denominator | Internal result | proved | [Source](ABC_PURE_TERM_DENOMINATOR_RECOVERY.md) |
+| Pure polynomial transfer charts require a larger radical budget on large outputs | Internal result | proved | [Source](ABC_PURE_TERM_DENOMINATOR_RECOVERY.md) |
+| Small-output local rigidity eliminates two-slot additive transfers | Internal result | proved | [Source](ABC_PURE_TERM_DENOMINATOR_RECOVERY.md) |
 
 **Computed obligations:** 107 unresolved; 19 resolved within their exact scope.
 

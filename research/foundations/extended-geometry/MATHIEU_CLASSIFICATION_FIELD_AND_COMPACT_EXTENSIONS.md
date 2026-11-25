@@ -5564,3 +5564,658 @@ Let \(F=K(Y)\) and use the fibre of the right \(H\)-torsor \(X\to Y\) at the \(F
 For the lower bound, if \(s(K)\le4\) take \(K'=K\). Otherwise take \(K'=K(S_4^-)\), the function field of the norm-minus-one quaternion quadric. Its level is four: it has level at most four by the equation, and the four-square form stays anisotropic by Hoffmann separation for the anisotropic five-square projective quadric. Over either choice of \(K'\), the Hamilton norm represents \(-1\), so \(X\) has a \(K'\)-point, obtained by an anti-isometry on each negative line and identity on the other lines. Its image gives a smooth \(K'\)-point of \(Y\). The completion at that point embeds \(K(Y)\) in an iterated Laurent series field over \(K'\). The level of \(K'\) cannot drop there by the leading term of a sum of squares. This proves the lower bound \(\min(s(K),4)\). [Hoffmann, Theorem 1](https://eudml.org/doc/174821)
 
 On the product with the five-dimensional norm-one quadric, choose \(a\in F^4\) with \(\sum a_i^2=-1\). Use the vectors \(e_1=(1,0,0,0,0)\), \(e_2=(0,a_1,a_2,a_3,a_4)\), and multiply both by a common regular denominator. Over a real closed field this denominator can be chosen real on the pointed reference form by multiplying it by its transform under the commuting involution for the sign twist, as in the positive sphere criterion. With \(R=q(e_1)\) after this multiplication and \(U,V\) as in (R1), the regular phase \(\big[(1+U)((1+U)^2V-(2+U)R)\big]^3\) has zero pure moments, and the marker \(U^3\) gives \((3m)!\Lambda_Y(R^{3m})/(5/2)_{3m}\ne0\) at every \(m\ge1\). Every other stated product follows from the level-four criterion for compact factors. These constructions use the original quotient as invariant base.
+
+
+
+## Central simple subalgebras and partial index reduction
+
+**Theorem (Central simple embeddings give an exact index-drop test).**
+
+Let \(K\) have characteristic zero, and let \(A,B\) be central simple \(K\)-algebras of the same degree \(n\). On \(X=\operatorname{Isom}_{K\text{-alg}}(A,B)\), let a finite \(K\)-subgroup \(H\) of \(\mathrm{PGL}_1(A)\) act by precomposition. Choose a unital subalgebra \(C\subset B\) that is central simple over its centre \(E\), where \(E/K\) is finite separable of degree \(e\). Put \(m=\deg_E C\), \(r=n/(em)\), and \(D=C_B(C)\), a central simple \(E\)-algebra of degree \(r\). Suppose \(r\ge2\), and write \(h\) for the geometric order of \(H\). Let \(S\) be the image of \(\operatorname{Res}_{E/K}\mathrm{GL}_1(D)\) in the postcomposition group \(\mathrm{PGL}_1(B)\).
+
+The function field \(F=K(X)^S\) is the function field of
+\[
+          \operatorname{Res}_{E/K}\operatorname{SB}_r
+                                      (A_E\otimes_E C^{\mathrm{op}}).
+\]
+Set \(d=\operatorname{ind}(D_{FE})\), \(F_0=K(X/H)^S\), and \(d_0=\operatorname{ind}(D_{F_0E})\). Then
+\[
+                         d\mid d_0\mid d\gcd(r/d,h).
+\]
+On the generic \(S\)-fibre of \(X/H\), the derived group of \(S\) has positive split rank precisely when \(d_0<r\). If so, \(X/H\) has a regular Mathieu–Zhao counterexample over \(K\). Thus \(d<r\) is an exact test when \(h\) is prime to \(r\), and \(r/d\nmid h\) suffices for arbitrary \(h\). These criteria apply to \(X/H\) without \(K\)-points.
+
+If \(E/K\) is Galois, for \(\sigma\in\operatorname{Gal}(E/K)\) write \(C_\sigma=C\otimes_{E,\sigma}E\) and \(\mathcal B_\sigma=A_E\otimes_E C_\sigma^{\mathrm{op}}\). Then \(d\) is the gcd of the integers
+\[
+ \left(\prod_\sigma \frac r{\gcd(r,i_\sigma)}\right)
+ \operatorname{ind}\left(D\otimes_E
+                         \bigotimes_\sigma\mathcal B_\sigma^{\otimes i_\sigma}\right),
+          \qquad 1\le i_\sigma\le nm.
+\]
+For any finite separable \(E/K\), it suffices that the index of \(D\) drop below \(r\) over the single field \(E(\operatorname{SB}_r(A_E\otimes_E C^{\mathrm{op}}))\).
+
+**Proof.** The centralizer theorem applied first to \(E\subset B\) and then to \(C\subset C_B(E)\) gives the degree of \(D\). The map
+\[
+                       \varphi\longmapsto \varphi^{-1}|_C
+\]
+identifies \(X/\!/S\) with the variety of embeddings of \(C\) into \(A\) having multiplicity \(r\) on each geometric simple block. Over an algebraic closure these embeddings form a single conjugacy class whose stabilizer is the corresponding centralizer. The map is its affine homogeneous quotient, with fibres the postcomposition \(S\)-orbits. This identification descends to \(K\).
+
+This embedding variety is the open in the stated Weil restriction on which the evaluation map is invertible. To see this on a splitting field, write \(A=\operatorname{End}(V)\) and \(C=\prod_\sigma\operatorname{End}(W_\sigma)\). An embedding specifies its multiplicity spaces \(U_\sigma=\operatorname{Hom}_C(W_\sigma,V)\) of dimension \(r\), each in \(\operatorname{Hom}(W_\sigma,V)\). These are points of the respective Grassmannians for the degree \(nm\) algebras. Conversely, if
+\[
+                  \bigoplus_\sigma W_\sigma\otimes U_\sigma
+                              \longrightarrow V
+\]
+is an isomorphism by evaluation, transport the blockwise action to \(V\). These operations are inverse and descend. In right-ideal coordinates the subspace condition is that the image of every endomorphism in the ideal consist of intertwiners. It is expressed by
+\((\iota(c)\otimes 1)z=(1\otimes c^{\mathrm{op}})z\) in the corresponding factor, so it is independent of the chosen split models. The open is geometrically nonempty and dense.
+
+When \(E/K\) is Galois, after adjoining \(E\) the Weil restriction is a product of the \(\operatorname{SB}_r(\mathcal B_\sigma)\). Adjoin the function fields of the factors successively and apply the index formula for a generalized Severi–Brauer variety at each step. Since \(r\mid nm\), iteration gives the displayed gcd. For separable \(E/K\) the identity factor in \(E\otimes_K E\) gives a dominant projection over \(E\) to \(\operatorname{SB}_r(A_E\otimes_E C^{\mathrm{op}})\). An index drop over that factor persists over \(FE\). [Karpenko, formula in Lemma III.2](https://sites.ualberta.ca/~karpenko/publ/lnk.pdf)
+
+The generic invariant field for \(X/H\) is \(F_0=F^H\), since the two actions commute. The fields \(FE,F_0E\) are formed from geometrically integral invariant quotients. The degree \([FE:F_0E]\) divides the geometric order of \(H\), as is seen after extending constants to an algebraic closure. Index under extension divides the original index, and the original index divides the product of the extension degree and the new index. In this case \(d\mid d_0\), \(d_0\mid r\), and \(d_0\mid dh\), giving the claimed divisibility. The derived centralizer is a central image of \(\operatorname{Res}_{E/K}\mathrm{SL}_1(D)\). It has positive split rank over \(F_0\) exactly when \(D_{F_0E}\) has matrix size at least two. In that case the scalar operations on two summands give a split rank-one subgroup by restriction of scalars and its diagonal map. Geometric stabilizers of the postcomposition action on \(X/H\) are finite, so that subgroup acts nontrivially on the generic fibre. The generic invariant-fibre theorem then gives one regular phase and one fixed regular multiplier with infinitely many nonzero marked moments. \(\square\)
+
+For a point-free example with both acting groups anisotropic, take \(K=\mathbb Q(i)(u,v,s,t,a,b,c,d_0)\) and the symbol algebras
+\[
+ \begin{split}
+ A&=(u,v)_4\otimes(s,t)_4,\qquad
+ C=(a,b)_2\otimes(c,d_0)_2,\\
+ D&=(u,v)_2\otimes(s,t)_2,\qquad B=C\otimes_K D .
+ \end{split}
+\]
+Here \(n=16\), \(E=K\), \(m=4\), and \(r=4\). Within each displayed tensor the generators have independent fractional value classes at the coordinate valuations, so \(A,B,C,D\) are division. In the Brauer group \([D]=2[A]\), \(2[C]=0\), and \(A,B\) have periods four and two, respectively. In the index formula write \(\mathcal B=A\otimes C^{\mathrm{op}}\). The term \(i=2\) equals \(2\) because \(D\otimes\mathcal B^{\otimes 2}\) splits. Odd \(i\) give terms divisible by four, \(i\equiv2\bmod 4\) give terms divisible by two, and \(4\mid i\) give \(\operatorname{ind}(D)=4\). Thus the generic index is exactly two. One can take \(H\) to be the \(\ell\)-torsion of a maximal \(K\)-torus of \(\mathrm{PGL}_1(A)\) for any odd prime \(\ell\), giving a nontrivial finite quotient. A \(K\)-point of \(X/H\) would give an \(H\)-torsor of odd degree in \(X\), and hence a point of \(X\) over an extension of odd degree. Restriction to such an extension cannot kill the nonzero \(2\)-primary class \([A]-[B]\), by restriction and corestriction. The counterexample on \(X/H\) uses no split scalar factor.
+
+
+A quotient by an involution can also retain the index drop. Use \(K=\mathbb Q(\zeta_9)(u,v,s,t,a,b,c,d_0)\) and
+\[
+ \begin{split}
+ A&=(u,v)_9\otimes(s,t)_2,\qquad C=(a,b)_3,\\
+ D&=(u,v)_3\otimes(c,d_0)_2,\qquad B=C\otimes_K D .
+ \end{split}
+\]
+Use compatible primitive roots in the symbol convention, so \(3[(u,v)_9]=[(u,v)_3]\). Again all four algebras are division by the independent value classes. Here \(r=6\) and the \(i=6\) term in the index formula is \(2\). The \(3\)-primary class of \(D\otimes (A\otimes C^{\mathrm{op}})^{\otimes 6}\) is zero, and its \(2\)-primary class is the independent quaternion \((c,d_0)_2\). Every term in the gcd is even because the \(2\)-primary class always has the independent \((c,d_0)_2\) component. It follows that \(d=2\). The class of a noncentral symbol generator of \((s,t)_2\) generates an order-two subgroup \(H\) in \(\mathrm{PGL}_1(A)\). The divisibility bound gives \(d_0=2\) since \(r/d=3\). The difference \([A]-[B]\) has \(3\)-primary order nine and so survives every extension of degree at most two. Hence this quotient is point-free and has a regular counterexample without a scalar factor.
+
+
+## Transverse saddle zeros in the two-angle trace
+
+**Theorem (An imaginary saddle on each maximizing fibre forces nonvanishing).**
+
+Let \(X=\mathrm{SO}(3)/\Gamma\) be the pointed compact form for a finite rotation group, and use the product with a split scalar \(t\). Lift to \(\mathrm{SO}(3)\), write \(x=g^{-1}e\) for the sphere projection for a fixed unit vector \(e\), and use a local left-circle angle \(\psi\) above \(x\). Consider a real regular phase
+\[
+            P=A(x)+\sum_{j=1}^d B_j(x,\psi)(t^j-t^{-j}).
+\]
+Here \(A\) is angular and each \(B_j\) is an arbitrary real regular function on \(X\). For \(t=e^{i\theta}\) put
+\[
+                      V_x(\psi,\theta)=2\sum_j B_j(x,\psi)\sin(j\theta).
+\]
+At every maximizing \(x_0\) of \(A\), assume that \(\sum_j jB_j(x_0,\psi)\) has a simple zero on the left circle and that every critical point of \(V_{x_0}\) at value zero on its two-torus is a nondegenerate saddle. Then the pure moments of \(P\) are nonzero at arbitrarily large orders. The conclusion also holds with minimizing fibres in the hypotheses. It applies over any real closed field, and in particular to both exceptional products.
+
+**Proof.** First work over \(\mathbb R\). Write \(a=\max A\). The Cauchy transform of the compact comparison trace, at real \(z>a\), is
+\[
+ I(z)=\int_{\mathbb S^2} J_x(z-A(x))\,d\sigma(x),\qquad
+ J_x(p)=\int_{\mathbb T^2}\frac{p}{p^2+V_x^2}\,
+                                 \frac{d\psi\,d\theta}{(2\pi)^2}.
+\]
+This uses the oddness of \(V_x\) in \(\theta\). If the moments vanish eventually, the Cauchy series at infinity is a polynomial in \(1/z\) with coefficient one at \(1/z\). It continues to equal \(I\) on \(z>\max(a,0)\). For \(a<0\), \(I\) extends analytically through \(0\), contradicting that polynomial. For \(a=0\), \(0\le zI(z)\le1\), and dominated convergence gives
+\[
+                \lim_{z\downarrow 0}zI(z)
+                      =\operatorname{Prob}(A=0,\ V=0)<1 .
+\]
+The simple-zero hypothesis ensures \(V\) is nonzero on a nonempty open set. The bound on \(zI(z)\) forces the putative polynomial to be \(1/z\), which has the wrong limit. It remains to treat \(a>0\).
+
+Fix a maximizing \(x_0\). At the simple zero of \(\sum jB_j(x_0,\psi)\), the point \((\psi,0)\) has \(V=0\) and zero first derivatives. Its Hessian has zero diagonal and nonzero mixed entry \(2\partial_\psi\sum jB_j\). The implicit function theorem gives a saddle of this type with critical value exactly zero throughout a neighborhood of \(x_0\). The other critical zeros at \(x_0\) are finitely many by compactness and nondegeneracy. They continue as saddles with critical values \(c_s(x)\) near zero. In a sufficiently small neighborhood, all critical points at levels sufficiently close to zero lie on these branches, by compactness.
+
+In analytic Morse coordinates at a branch, the function is \(c_s(x)+uv\) on a small square, and the angular measure has analytic density \(\rho_{s,x}(u,v)>0\). Its pushforward near \(c_s\) has density
+\[
+                 -b_s(x)\log|v-c_s(x)|+E_{s,x}(v),
+                 \qquad b_s(x)=2\rho_{s,x}(0,0)>0 ,
+\]
+where \(v\) now denotes the value variable. The remainder is uniformly Hölder for any fixed exponent \(0<\alpha<1\). For this calculation expand the density into convergent monomials on a square of radius \(\epsilon\). At level \(uv=w\), integrate each monomial using \(v=w/u\) and \(|w|/\epsilon<|u|<\epsilon\), with Jacobian \(1/|u|\). The constant term gives the displayed logarithm. Higher diagonal terms contribute \(w^j\log|w|\) for \(j\ge1\). In off-diagonal terms only even total degrees survive the two signs of \(u\). The elementary power integrals then give piecewise polynomials in \(w\) with matching limits at zero. The coefficient bounds from a common analytic neighborhood give the uniform Hölder estimate on a smaller interval. Outside the chart squares the pushforward has a smooth density near zero by submersion, including along the square edges, which meet these nearby fibres transversely. The corners lie off the chosen interval.
+
+Write \(K_p(v)=p/(p^2+v^2)\). The Poisson integral of the logarithm is
+\[
+               \int_{\mathbb R}K_p(v)\log|v-c|\,dv
+                                     =\frac{\pi}{2}\log(p^2+c^2).
+\]
+For instance \(v=p u\), followed by \(u=\tan\eta\), reduces the integral to the difference of two integrals of \(\log|\cos\eta|\) over intervals of length \(\pi\), and the logarithm of \(\sqrt{p^2+c^2}\) remains. Replacing the full logarithms with cutoffs to the value interval changes their \(p\)-derivative by \(O(1)\) uniformly as \(p\downarrow0\). The Hölder remainder contributes \(O(1+p^{\alpha-1})\) to that derivative. Indeed subtract its value at zero, using \(\int_{\mathbb R}\partial_p K_p(v)\,dv=0\), and bound the local error by the integral of \(|v|^\alpha/(p^2+v^2)\). The contribution from the rest of the pushforward is uniformly bounded because its values are separated from zero. Consequently
+\[
+             J'_x(p)=-\pi\sum_s b_s(x)\frac{p}{p^2+c_s(x)^2}
+                                +O(1+p^{\alpha-1}).
+\]
+The logarithmic terms have one sign, and one branch has \(c_s=0\) with coefficient bounded below. Thus \(-J'_x(p)\ge C/p\) for small \(p\) near each maximizing fibre. A finite cover of the compact maximizing set gives this sign bound wherever \(A\) is sufficiently close to \(a\) and \(p\) is sufficiently small. Elsewhere \(J'_x(z-A(x))\) is uniformly bounded as \(z\downarrow a\).
+
+At any one maximum, in local base coordinates \(y\) on the sphere, \(0\le a-A(x)\le C'|y|^2\). Thus \(-I'(z)\) grows without bound as \(z\downarrow a\), by the integral of \(1/(z-a+C'|y|^2)\) on a two-dimensional disk. This contradicts the derivative of a polynomial in \(1/z\) at \(a>0\). Apply the same argument to \(-P\) for the assertion about minima.
+
+For the real closed field assertion, use a finite-dimensional coefficient space containing the terms of the proposed phase. The hypotheses are semialgebraic on the compact algebraic sphere and circles, with derivatives expressed by their infinitesimal rotation operators. For each starting order the moment equations in the tail generate a finitely generated ideal. Therefore the nonvanishing conclusion for that tail transfers from \(\mathbb R\) by the theory of real closed fields. The trace map itself is defined by base change and agrees with compact averaging in the real computation. \(\square\)
+
+The argument allows several interacting left-circle and scalar harmonics. It also identifies the obstruction outside its hypotheses. If a nonzero phase of this shape has a vanishing tail, the maximizing fibres and the minimizing fibres each contain a fibre on which the simple-zero condition fails or a critical zero occurs that is degenerate or is an extremum.
+
+
+For a profile using both scalar harmonics and more than one left weight, choose a point \(x_0\) of the sphere with trivial \(\Gamma\)-stabilizer and put \(A(x)=1-\prod_{\gamma\in\Gamma}|x-\gamma x_0|^2\). The maximum set is \(\Gamma x_0\). On the left circle above \(x_0\), prescribe
+\[
+            V_{x_0}(\psi,\theta)
+                =\sin\theta\big(\cos\psi+\epsilon\cos(2\psi)\cos\theta\big),
+                               \qquad 0<|\epsilon|<1/2 .
+\]
+These restrictions come from regular \(B_1,B_2\). On the unquotiented group a complex linear matrix coordinate of left weight one can be chosen to equal \(e^{i\psi}\) on this circle. Take one half of its real part and \(\epsilon/4\) times the real part of its square. Multiply each by the angular polynomial
+\[
+       \chi(x)=\prod_{\gamma\ne1}
+                         \frac{|x-\gamma x_0|^2}{|x_0-\gamma x_0|^2},
+\]
+then sum its right translates by \(\Gamma\). Only the identity term survives over \(x_0\). In the prescribed profile the parenthesized factor has nonzero \(\psi\)-derivative at all its zeros, since there \(|\cos\psi|\le|\epsilon|\) and this derivative is
+\(-\sin\psi(1+4\epsilon\cos\psi\cos\theta)\). Its zero set therefore crosses \(\sin\theta=0\) transversely. These crossings are exactly the critical zeros and are nondegenerate saddles. This gives the hypotheses over every maximizing fibre, including on \(2O\) and \(2I\) after passage to their projective rotation groups.
+
+
+
+## The Brauer obstruction after taking a source quotient
+
+**Theorem (A lift of the source stabilizer preserves the generic index drop).**
+
+Use \(X=\operatorname{Isom}_{K\text{-alg}}(A,B)\), the central simple subalgebra \(C\subset B\) with centre \(E\), and its centralizer \(D=C_B(C)\) of degree \(r\ge2\) over \(E\), as in the central simple embedding theorem. Assume \(C\ne K\). Let \(H\subseteq\mathrm{PGL}_1(A)\) be a reductive \(K\)-subgroup whose action on the balanced embedding variety \(Z=\operatorname{Emb}^{\rm bal}(C,A)\) is geometrically generically free. This hypothesis holds for every finite subgroup and every torus. Let \(S\) be the postcomposition subgroup in that theorem and put
+\[
+ F=K(Z),\qquad F_0=K(X/H)^S,\qquad
+ d=\operatorname{ind}(D_{FE}),\qquad d_0=\operatorname{ind}(D_{F_0E}).
+\]
+The generic \(H\)-torsor of \(Z\to Z/\!/H\) twists \(A_{F_0}\) to an algebra \(A_\eta\) of degree \(\deg A\). Write
+\[
+               \beta=[A_\eta]-[A_{F_0}]\in\operatorname{Br}(F_0),
+               \qquad b=\operatorname{ind}(\beta_{F_0E}).
+\]
+Then
+\[
+                       d\mid d_0\mid d\gcd(r/d,b).
+\]
+If \(H_E\to\mathrm{PGL}_1(A_E)\) lifts to a homomorphism \(H_E\to\mathrm{GL}_1(A_E)\), then \(d_0=d\). In particular this gives the exact split rank test \(d<r\) after a quotient by such an \(H\), including positive-dimensional \(H\). Whenever \(d_0<r\), the trace on \(X/H\) has a regular Mathieu–Zhao counterexample.
+
+**Proof.** The two actions commute, so \(Z/\!/H\) has coordinate algebra \((K[X]^S)^H=K[X/H]^S\). The principal-orbit theorem on the homogeneous space \(Z\) gives a single geometric orbit on the generic invariant fibre for \(H^\circ\). A subsequent finite quotient by \(H/H^\circ\) gives a single geometric \(H\)-orbit on the generic fibre for \(H\). That orbit is free by the hypothesis. Thus the generic fibre is an \(H\)-torsor over \(F_0\) with function field \(F\). The ambient action of \(\mathrm{PGL}_1(A)\) on \(Z\) by conjugation is faithful. Its geometric kernel is normal in the simple adjoint group and is proper because \(C\ne K\). This proves the generic freeness assertion for finite \(H\). For a torus, work in a geometric basis diagonalizing it. Pick a nonscalar element of \(C\) and a conjugate of its matrix whose off-diagonal entries are all nonzero. For each off-diagonal entry the required condition is a nonempty open condition on the conjugating group, since a nonscalar operator has a vector that it sends off its own line. These finitely many open conditions can be imposed together. A diagonal matrix commuting with the resulting matrix is scalar, giving trivial stabilizer on an open of \(Z\).
+
+The tautological embedding on the generic torsor is equivariant for conjugation by \(H\) on its target, with \(C\) fixed. It therefore descends to a balanced embedding of \(C_{F_0}\) in \(A_\eta\). The class \(\beta\) is the Brauer boundary for
+\[
+     1\longrightarrow\mathbb G_m\longrightarrow\mathrm{GL}_1(A)
+                       \longrightarrow\mathrm{PGL}_1(A)\longrightarrow 1.
+\]
+If the group homomorphism lifts after adjoining \(E\), this boundary is zero after adjoining \(E\). In general let \(L/F_0E\) be a splitting field of \(\beta_{F_0E}\) of degree \(b\), obtained by taking a maximal separable subfield of its division algebra. Equality of Brauer classes and degrees gives \((A_\eta)_L\simeq A_L\), so \(Z_E(L)\ne\varnothing\).
+
+By the definition of \(d\) there is a rational map \(Z_E\dashrightarrow \operatorname{SB}_d(D)\), and the target is proper. A smooth \(L\)-point of \(Z_E\) gives an \(L\)-point of \(\operatorname{SB}_d(D)\) by the Lang–Nishimura argument. One can also embed the source function field after extension to \(L\) in a fraction field of \(L[[x_1,\ldots,x_N]]\) using completion at the point, and then in an iterated Laurent series field. A constant central simple algebra preserves its index in that last field, by taking the leading coefficient in Laurent series over its division algebra. This shows \(\operatorname{ind}(D_L)\mid d\). Thus \(d_0\mid db\), while extension from \(F_0E\) to \(FE\) gives \(d\mid d_0\) and the degree gives \(d_0\mid r\). These are the claimed bounds. [Reichstein and Youssin, Proposition A.6](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/67721D5EBF0E6412AA590FEEF8F0203E/S0008414X00019143a.pdf/essential-dimensions-of-algebraic-groups-and-a-resolution-theorem-for-g-varieties.pdf)
+
+The generic \(S\)-fibre on \(X/H\) has trivial geometric stabilizer, because the \(S\)-stabilizer of a class of \(\varphi\) identifies with the \(H\)-stabilizer of \(\varphi^{-1}|_C\). The derived group of \(S\) has positive split rank on that fibre exactly when \(D_{F_0E}\) has matrix size at least two. In that case the generic invariant-fibre theorem gives the regular counterexample. For finite \(H\), \(\beta_{F_0E}\) is split by \(FE/F_0E\), whose degree divides the geometric order of \(H\), so the new bound implies the earlier finite-order bound. \(\square\)
+
+A lift defined over \(K\) also preserves the absence of \(K\)-points. Indeed \(X/H\) has a \(K\)-point exactly when some \(H\)-torsor over \(K\) twists \(A\) to an algebra isomorphic to \(B\). In one direction take the fibre of \(X\to X/H\) and descend the tautological isomorphism. In the other direction, an isomorphism from the twisted algebra to \(B\) gives an equivariant map of the torsor into \(X\) and hence a point in \(X/H\). A lift to \(\mathrm{GL}_1(A)\) makes every such Brauer boundary zero, and the degree then gives an isomorphism of the twisted algebra with \(A\).
+
+**Example.** Use the degree-eighteen division algebras \(A,B,C,D\) of the preceding index computation, with \(E=K\), \(r=6\), and \(d=2\). The tensor factors of \(A\) contain the commuting subfields \(L_2=K(\sqrt{s})\) and \(L_3=K(\sqrt[3]{u})\), respectively in its degree-two and degree-nine factors. Their composite \(L_6\) has degree six. Let
+\[
+ H=\bigl\{z\in\operatorname{Res}_{L_6/K}\mathbb G_m:
+            N_{L_6/L_2}(z)=1,\quad N_{L_6/L_3}(z)=1\bigr\}.
+\]
+Over a splitting field its coordinates are a \(2\times3\) array of units with each row product and column product one. The two free coordinates in the first row determine the other four, so \(H\) is a torus of dimension two. It meets the scalar subgroup trivially since a scalar in \(H\) satisfies both \(\lambda^3=1\) and \(\lambda^2=1\). Therefore its inclusion in \(\mathrm{GL}_1(A)\) lifts its embedding in \(\mathrm{PGL}_1(A)\). Both \(X/H\) and \(X/H[3]\) are point-free and have regular counterexamples, with centralizer index two over their corresponding generic invariant fields. In the finite case the stabilizer has geometric order nine, so the earlier order bound by itself allowed the index to return to six. The connected example has a two-dimensional torus stabilizer.
+
+
+
+## Exact finite moment matching on the exceptional products
+
+**Theorem (Regular trinomials match arbitrarily long exceptional moment sequences).**
+
+For either \(X=\mathrm{SU}_2/2O\) or \(X=\mathrm{SU}_2/2I\) in its pointed compact form over a real closed field, and every \(n\ge1\), there is a real regular angular function \(B\) with values in \([0,1]\) on the compact sphere such that
+\[
+                  \Lambda_X(B^k)=\frac1{k+1},\qquad 0\le k\le n .
+\]
+Consequently the real regular trinomial
+\[
+          P=(1-B)t^{-1}+(1-2B)-Bt
+\]
+on \(X\times\mathbb G_m\) has, with the fixed multiplier \(t\),
+\[
+               \Lambda(P^m)=0,\qquad
+               \Lambda(tP^m)=\frac1{m+1},\qquad 1\le m\le n .
+\]
+One can take \(B\) with real algebraic coefficients in the standard compact models. The minimum angular degree of a regular \(B\) matching the first \(n\) uniform moments with this range condition tends to infinity with \(n\).
+
+**Proof.** Work over \(\mathbb R\) first. Use the squared-uniform mirror height \(U=D^2/H\) on the angular sphere. The quantity \(w=\sqrt U\) is uniform on \([0,1]\) and continuous on the compact sphere, with its value zero on the mirrors. Choose a rational \(R_0>\max H>0\), and set
+\[
+     U_\ell=\frac{D^2}{R_0}\sum_{j=0}^{\ell-1}(1-H/R_0)^j .
+\]
+These expressions are regular invariants. On \(H>0\) the error is \(U-U_\ell=U(1-H/R_0)^\ell\). On \(H=0\) both sides vanish by the continuous extension of \(U\) and \(D=x\cdot M\), where \(H=M\cdot M\) in the mirror height construction. Thus \(U_\ell\) increases to \(U\) uniformly on the sphere. Polynomial truncations
+\[
+       b_\ell=1-\sum_{j=1}^{\ell} c_j(1-U_\ell)^j,\qquad
+       c_j=(-1)^{j+1}\binom{1/2}{j}>0 ,
+\]
+are regular with values in \([0,1]\) and converge uniformly to \(w\), since \(\sum_{j\ge1}c_j=1\).
+
+For a vector \(v=(v_1,\ldots,v_n)\) near zero, let
+\[
+                 f_v(s)=s+\sum_{j=1}^n v_j s^j(1-s).
+\]
+It fixes \(0,1\) and maps \([0,1]\) into itself for \(v\) sufficiently small, because its derivative is then strictly positive. For \(1\le k\le n\), the moment \(\Lambda_X(f_v(b_\ell)^k)\) is polynomial in \(v\) and the moments of \(b_\ell\) up to degree \(n(n+1)\). Let these finitely many base moments be the parameters in the moment map. At the uniform parameters and \(v=0\), the outputs are \(1/(k+1)\), and the Jacobian in \(v\) is
+\[
+                 \left(k\int_0^1 s(1-s)s^{k-1}s^{j-1}\,ds
+                                  \right)_{1\le k,j\le n}.
+\]
+After division of row \(k\) by \(k\), this is the positive definite Gram matrix of the first \(n\) monomials. The implicit function theorem therefore gives \(v_\ell\to0\) with the exact prescribed outputs for all sufficiently large \(\ell\). Choose \(B=f_{v_\ell}(b_\ell)\).
+
+The real algebraic form of the statement follows by real closed field transfer. The mirror data can be chosen over the real algebraic numbers. In fixed \(\ell,n\) all the moment equations are polynomial with algebraic coefficients, and the smallness condition ensuring the required range can be imposed by strict rational bounds on \(v_\ell\). A real solution therefore gives a solution in the real algebraic numbers and over every real closed field.
+
+Put \(T=1+t\), so \(P=t^{-1}T(1-TB)\). For \(m\le n\) one can compute the scalar trace using the uniform interval in place of \(B\), because the integrand is polynomial of degree at most \(m\) in \(B\). The conditional computation is
+\[
+       t^{-m}T^m\int_0^1(1-Ts)^m\,ds
+             =\frac{t^{-m}T^{m-1}}{m+1}\bigl(1-(-t)^{m+1}\bigr).
+\]
+The coefficient gap at \(t^m\) and the coefficient one at \(t^{m-1}\) of the numerator give the two claimed traces.
+
+Finally, assume a fixed angular degree suffices for arbitrarily large \(n\). The functions in that degree and range form a compact set for the sup norm, since they lie in a finite-dimensional space and the range bound is closed and bounded. Take a uniform limit of a subsequence. The limit is a regular invariant of the same degree and has every uniform interval moment. Moment determinacy on \([0,1]\) gives the uniform law. This contradicts the bounded-density obstruction for regular angular heights on the exceptional sphere quotients. For each angular degree the resulting finite exclusion transfers to every real closed field, since its moment equations and range bound are first-order with real algebraic parameters. \(\square\)
+
+The index \(n\) can therefore be arbitrarily large while the phase uses only three consecutive scalar exponents and the same regular multiplier. The range-constrained angular height family still cannot supply a single all-order phase. Indeed the conditional unmarked moment at order \(m\) is a polynomial of degree \(m\) in \(B\), with leading coefficient \((-1)^m\binom{2m}{m}\). Vanishing at every order forces the uniform moments successively, which would give the excluded uniform law.
+
+
+## Exact finite moment matching on the negative ternary sphere
+
+**Theorem (Regular finite moment matching with a fixed height multiplier).**
+
+On \(X=\{x_1^2+x_2^2+h^2=-1\}\) over any real closed field, for each \(n\ge1\) there is a real regular phase \(P\) such that
+\[
+              \Lambda_X(P^m)=0,\qquad
+              \Lambda_X(hP^m)\ne0,\qquad 1\le m\le n .
+\]
+The multiplier is the same linear function \(h\) for every \(n\). Over \(\mathbb R\) the phase can be chosen arbitrarily close in any fixed finite \(L^p\) norm on the compact comparison sphere to the bounded rational Legendre phase, denoted \(P_0\).
+
+**Proof.** Write \(s=1+h^2\), which is \(1-x^2\in[0,1]\) at \(h=ix\) on the compact comparison sphere. The Legendre phase satisfies \(sP_0\in\mathbb R[X]\); it is bounded on the compact sphere away from its two poles in these coordinates. The regular phases
+\[
+                    P_\ell=\bigl(1-(1-s)^\ell\bigr)P_0
+\]
+are uniformly bounded on the compact sphere and converge almost everywhere to \(P_0\). The functions \(h,P_0\) are algebraically independent: at generic \(h\) the Laurent expression for \(P_0\) on the angular fibre is nonconstant.
+
+List the \(2n\) rational functions \(g_j\) given by \(P_0^{m-1}\) and \(hP_0^{m-1}\) for \(1\le m\le n\), using the same order as the desired moment outputs. Let \(a\) be the antipodal automorphism of \(X\). On the comparison sphere \(a^*g_j=\overline{g_j}\), since the \(g_j\) are defined over the real ground field and the comparison sphere is \(iS^2\). Thus
+\[
+                        \phi_j=s^n a^*g_j
+\]
+are real regular functions, since the powers of \(P_0\) in this list are at most \(n-1\). For the variations \(\sum_j v_j\phi_j\), the Jacobian of the \(2n\) outputs \(\Lambda_X(P^m),\Lambda_X(hP^m)\) at \(P_0\), after division by \(m\) in each row, is the matrix
+\[
+                         \bigl(\Lambda_X(s^n g_i\overline{g_j})\bigr)_{i,j}.
+\]
+This is a real positive definite Gram matrix. The positivity uses that the \(g_j\) are independent over \(\mathbb C\) by the algebraic independence just proved. A nonzero combination cannot vanish almost everywhere on the compact comparison sphere, which is Zariski dense. Reality of the entries follows from conjugation on that sphere and the antipodal change of integration variables.
+
+The finite polynomial moment maps for \(P_\ell+\sum_j v_j\phi_j\) converge coefficientwise to the map at \(P_0+\sum_j v_j\phi_j\), by bounded convergence. Its value at \(v=0\) has all pure entries zero, and marked entries \(-1/3,0,\ldots,0\) by the Legendre formula with marker \(h\). The invertible Jacobian and the implicit function theorem, with the polynomial coefficients of the moment map as parameters, allow any nearby output vector for all sufficiently large \(\ell\). Take all pure outputs zero, keep the first marked output \(-1/3\), and choose the remaining marked outputs rational, sufficiently small, and nonzero. The corrections can be taken arbitrarily small by taking the target sufficiently close to the reference vector and then \(\ell\) sufficiently large. This gives the \(L^p\) approximation assertion. For the real closed field result, each finite system, with \(\ell\) fixed and rational outputs, is polynomial over the real algebraic numbers and hence has a solution there and over every real closed field. \(\square\)
+
+
+
+## A degree lower bound for exact uniform moment matching
+
+**Proposition (A degree bound for finite uniform moment matching).**
+
+Let \(\Gamma\) be a finite rotation group of the sphere with no common fixed point. There is an absolute constant \(C>0\) such that, for every degree-\(d\) \(\Gamma\)-invariant polynomial height \(B:S^2\to[0,1]\) with \(d\ge1\), matching the first \(n\) uniform interval moments implies
+\[
+                                n\le \exp(Cd^2).
+\]
+In particular the finite regular height construction on either exceptional angular quotient needs degree at least \(c\sqrt{\log n}\).
+
+**Proof.** Write \(\mu\) for spherical probability. If \(B\) is constant, it cannot match the first two moments, so assume it is nonconstant. Restriction to a great circle is a trigonometric polynomial of degree at most \(d\). For such a polynomial \(p\), regard it as a Laurent polynomial and use the maximum modulus principle on \(z^d p(z)\) inside the unit circle and on the reversed polynomial outside it. If \(|p|\le1\) on the circle, this gives \(|p(e^{i\theta})|\le e\) for complex \(\theta\) with \(|\operatorname{Im}\theta|\le1/d\). Cauchy estimates give a \(C_k d^k\) bound on its derivatives of order \(k\). Thus at a critical point in geodesic normal coordinates the quadratic coefficients are bounded by \(C_2d^2\), and the Taylor remainder is bounded by \(C_3d^3|y|^3\). The latter follows by Taylor expansion along the radial geodesic.
+
+There is a critical point \(p\) that is degenerate or a Morse saddle, by the critical-point count for the sphere and the absence of a fixed point of \(\Gamma\). Put \(c=B(p)\), choose \(\epsilon=\exp(-A d^2)\) for a sufficiently large absolute \(A\), and put \(\delta=\epsilon^{1/6}\). We claim
+\[
+                     \mu\{|B-c|\le\epsilon\}\ge 10\epsilon .
+\]
+Diagonalize the quadratic Taylor term. If a quadratic coefficient has absolute value at most \(\delta\), take a rectangle of half-widths \(a\sqrt{\epsilon}/d\) in the other direction and \(a\sqrt{\epsilon/\delta}\) in this direction, for a sufficiently small absolute \(a>0\). Both quadratic contributions are \(O(a^2\epsilon)\), and the cubic remainder is at most \(O(a^3d^3\epsilon^{5/4})\). Thus the rectangle lies in the strip and has spherical measure at least \(c_1\epsilon^{11/12}/d\), which exceeds \(10\epsilon\) with the choice of \(A\). This covers the degenerate case as well.
+
+Otherwise the point is a saddle. Write the quadratic term as \(\alpha y_1^2-\beta y_2^2\) with \(\alpha,\beta>\delta\). Put \(r_0=a\epsilon^{1/3}/d\) and use \(u=\sqrt{\alpha}y_1,\ v=\sqrt{\beta}y_2\) on the box \(|u|,|v|\le R=r_0\sqrt{\delta}/4\). The cubic error is at most \(\epsilon/2\) on this box. The part with \(|u^2-v^2|\le\epsilon/2\) has Euclidean area at least \(c_2\epsilon\log(R^2/\epsilon)\). This follows by using \(u-v,u+v\) and integrating a strip where their product has absolute value at most \(\epsilon/2\). The coordinate Jacobian contributes \(1/\sqrt{\alpha\beta}\ge c_3/d^2\), and the spherical density in the small normal chart is bounded below by an absolute positive constant. Since \(R^2/\epsilon=a^2\epsilon^{-1/6}/(16d^2)\), increasing \(A\) gives the claimed measure bound.
+
+On \([0,1]\), let \(g\) be one on the strip of width \(\epsilon\) about \(c\), fall linearly to zero on the adjacent strips of width \(\epsilon\), and be zero elsewhere. Its uniform interval integral is at most \(4\epsilon\) and \(\int g(B)\,d\mu\ge10\epsilon\). The degree-\(n\) Bernstein polynomial for \(g\) differs from \(g\) by at most \(1/(2\epsilon\sqrt n)\) everywhere. Indeed it averages \(g\) at a binomial proportion of mean the argument and variance at most \(1/(4n)\), and \(g\) has Lipschitz constant \(1/\epsilon\). Exact moments of \(B\) up to degree \(n\) give identical integrals for that polynomial. Therefore \(6\epsilon\le1/(\epsilon\sqrt n)\), which bounds \(n\) by \(\epsilon^{-4}/36\). This proves the claim. For either exceptional group in its algebraic model the same degree bound transfers to every real closed field, by applying transfer to each pair of integers \(d,n\) outside the real bound. \(\square\)
+
+
+
+## The exact density criterion for the trinomial
+
+**Proposition (A polynomial density is equivalent to eventual purity of the interval trinomial).**
+
+Let \(B\) be a real regular function on a compact probability cycle, and use
+\[
+                  P=(1-B)t^{-1}+(1-2B)-Bt .
+\]
+Its pure moments vanish eventually precisely when the law of \(B\) is \(\rho(s)\,ds\) on \([0,1]\) for a polynomial \(\rho\). If \(r\) is the vanishing order of that density at \(0\), the fixed multiplier \(t^{r+1}\) detects every \(m>\deg\rho\), with
+\[
+                   \Lambda(t^{r+1}P^m)
+                          =\frac{m!}{(m+r+1)!}\rho^{(r)}(0).
+\]
+For \(0\le k\le r\), the \(t^k\)-marked moments at those orders vanish. This gives the exact threshold among nonnegative monomial scalar multipliers. For both exceptional quotients the proposition excludes eventual purity for every angular \(B\), even without a range hypothesis. A polynomial density of a regular height on the full quotient would give a regular witness of scalar width two.
+
+**Proof.** Put \(x=1-2B\). The scalar discriminant is \(x^2-4(-B)(1-B)=1\), so the unmarked conditional moment is \(\mathcal L_m(x)\). If the pure moments vanish from order \(M\) onwards, set \(a_j=\Lambda(\mathcal L_j(1-2B))\) for \(j<M\). Legendre orthogonality gives the same moments against each \(\mathcal L_j(1-2s)\) for the measure with polynomial density \(\sum_{j<M}(2j+1)a_j\mathcal L_j(1-2s)\) on \([0,1]\). These polynomials span all polynomials, and both measures are supported on a compact interval containing \([0,1]\) and the range of \(B\). Equality against polynomials gives equality of the measures. Conversely orthogonality gives eventual vanishing for any such density.
+
+For \(k\ge0\) the conditional marked moment is
+\[
+                 \operatorname{CT}_t(t^k P^m)
+                    =\frac{m!}{(m+k)!}(1+x)^k\mathcal L_m^{(k)}(x).
+\]
+One way to see it is to differentiate the unmarked formula of order \(m+k\) \(k\) times in the coefficient of \(t\) before specializing the scalar coefficients. The identity \(x\mathcal L_j'-j\mathcal L_j=\mathcal L_{j-1}'\) gives the displayed derivative. The integral in \(x\) has weight \((1+x)^k\rho((1-x)/2)/2\). Integrate by parts \(k\) times. The interior term vanishes for \(m>\deg\rho\) by orthogonality. The factor \((1+x)^k\) makes all the boundary terms at \(-1\) vanish. For \(k\le r\) the terms at \(1\) vanish as well. At \(k=r+1\) only the \(r\)-th derivative of the weight at \(1\) remains. It equals \((-1)^r\rho^{(r)}(0)\), so the boundary sign cancels and \(\mathcal L_m(1)=1\) gives the formula.
+
+A nonconstant angular \(B\) on either exceptional quotient has no bounded density by the sphere critical-point obstruction. A constant height has an atom and cannot have polynomial density. For the angular exclusion over any real closed field, fix a coefficient degree and a starting order for the proposed vanishing tail. The tail moment equations generate a finitely generated ideal in the coefficient ring, so the real exclusion transfers for that tail. \(\square\)
+
+
+
+## Index reduction with a Brauer obstruction of bounded period
+
+**Theorem (The period of the generic Brauer obstruction restricts the index calculation).**
+
+Use the same isomorphism torsor \(X\), embedding variety \(Z\), centralizer \(D\) of degree \(r\) over \(E\), and generically free source subgroup \(H\) as in the Brauer obstruction theorem. Retain its fields \(F,F_0\), indices \(d,d_0\), and obstruction \(\beta\). Assume \(E/K\) is Galois and put \(\mathcal B_\sigma=A_E\otimes_E C_\sigma^{\mathrm{op}}\), where \(C_\sigma=C\otimes_{E,\sigma}E\). If \(b\) is any positive integer killing \(\beta_{F_0E}\), then \(d_0\) divides each integer
+\[
+ \left(\prod_{\sigma}\frac r{\gcd(r,i_\sigma)}\right)
+ \operatorname{ind}\!\left(D\otimes_E
+                     \bigotimes_{\sigma}\mathcal B_\sigma^{\otimes i_\sigma}\right),
+ \qquad 1\le i_\sigma\le\deg(\mathcal B_\sigma),\quad b\mid\sum_\sigma i_\sigma .
+\]
+In particular, if the gcd of \(r\) and these integers is less than \(r\), then \(X/H\) has a regular counterexample. When that gcd equals \(d\), the precise generic index is \(d_0=d\). For any finite separable \(E/K\) the same divisibility holds with just the identity factor, using \(b\mid i\).
+
+**Proof.** The tautological balanced embedding descends over \(F_0\) into the generic twisted algebra \(A_\eta\). Put \(L=F_0E\), and set \(\mathcal B'_\sigma=(A_\eta)_L\otimes_L(C_\sigma)_L^{\mathrm{op}}\). The embedding gives an \(L\)-point of each \(\operatorname{SB}_r(\mathcal B'_\sigma)\), by the Grassmannian description of the balanced embedding variety. Each of these varieties is \(L\)-rational: in matrix coordinates over its division algebra, the subspaces transverse to a fixed complement are graphs of linear maps. Thus passing to the function field of their product preserves the index of \(D_L\).
+
+Apply the generalized Severi–Brauer index formula successively to these factors. Since \(r\) divides their degrees, the resulting gcd consists of the terms in the statement with \(D_L,\mathcal B'_\sigma\) in place of \(D,\mathcal B_\sigma\), without the congruence restriction. In the Brauer group
+\[
+      [\mathcal B'_\sigma]=[(\mathcal B_\sigma)_L]+\beta_L.
+\]
+The terms with \(b\mid\sum_\sigma i_\sigma\) therefore have the same indices as their untwisted counterparts over \(L\). Those indices divide their counterparts over \(E\). This proves the bounds. The identity component of \(E\otimes_KE\) gives the same argument for one factor when \(E/K\) is separable. Finally use \(d\mid d_0\mid r\) and the regular witness from an active split rank-one group on the generic invariant fibre. [Karpenko, index formula in the proof of Lemma III.2](https://sites.ualberta.ca/~karpenko/publ/lnk.pdf) \(\square\)
+
+**A connected nonabelian example.** Take \(A,B,C,D\) of degree \(16,16,4,4\), respectively, from the first example of the central simple embedding theorem. In particular \(E=K\), \(r=4\), \(d=2\), and
+\[
+            [D]=2[A]\ne0,\qquad 2[C]=0,\qquad 2[B]=0 .
+\]
+In the first degree-four symbol factor of \(A\), let \(X_1^4=u\), \(Y_1^4=v\), with \(Y_1X_1=iX_1Y_1\). The subfield \(L_2=K(X_1^2)\) is quadratic. Over \(L_2\), the elements \(X_1,Y_1^2\) generate the quaternion algebra \(Q=(\sqrt u,v)_{2,L_2}\) inside \(C_A(L_2)\). Use as \(H\) the projective image of the connected group \(\widetilde H=\operatorname{Res}_{L_2/K}\mathrm{SL}_1(Q)\). The kernel of \(\widetilde H\to H\) is the scalar \(\mu_2\), so every torsor for \(H\) has projective Brauer boundary killed by two. The inclusion \(H\to\mathrm{PGL}_1(A)\) has no group lift to \(\mathrm{GL}_1(A)\): such a lift composed with \(\widetilde H\to H\) would differ from the given inclusion by a character of the connected semisimple group \(\widetilde H\), and hence would equal it. The scalar \(-1\) prevents this equality.
+
+The action of \(H\) on \(Z\) is geometrically generically free. Over the geometric field, fix one embedding of \(C\) in its presentation on \(V=W^{\oplus4}\), with \(\dim W=4\), so its commutant acts by the same matrix on all four copies of \(W\). The two eigenspaces of \(L_2\) have dimension eight. A generic relative position of \(L_2\) and \(C\) can be tested by putting the first eigenspace of \(L_2\) on the graph of a map \(W^2\to W^2\) and taking the second eigenspace to be the second \(W^2\). Choose two of the four blocks of the map to be a diagonal matrix with distinct entries and a matrix with every entry nonzero. A common commutant element must commute with these two matrices and is therefore scalar. The scalar-only condition is open by the rank test for the linear commutator equations. The geometric intersection of the projective commutants is consequently trivial on a dense open, and \(H\) is contained in the commutant of \(L_2\).
+
+Apply the theorem with \(b=2\) and \(i=2\). The Brauer class of \(D\otimes(A\otimes C^{\mathrm{op}})^{\otimes 2}\) is zero, so the term is \(2\), giving \(d_0=2\). Moreover \(X/H\) has no \(K\)-point: the difference \([B]-[A]\) has order four, and every source boundary has order at most two. This gives a regular counterexample for a point-free quotient with connected semisimple stabilizer of geometric type \(A_1\times A_1\) and with both degree-sixteen algebras division. The same index calculation gives counterexamples for the full quadratic torus \(\operatorname{Res}_{L_2/K}\mathbb G_m/\mathbb G_m\) and each of its finite subgroups, whose projective boundaries are killed by the quadratic extension.
+
+
+The same construction works at every prime \(\ell\). Over a rational function field containing a primitive \(\ell^2\)-th root of unity, use
+\[
+ A=(u,v)_{\ell^2}\otimes(s,t)_{\ell^2},\qquad
+ C=(a,b)_\ell\otimes(c,d)_\ell,\qquad
+ D=(u,v)_\ell\otimes(s,t)_\ell,\qquad B=C\otimes D .
+\]
+The disjoint-symbol valuation argument makes both \(A\) and \(B\) division of degree \(\ell^4\). Here \(r=\ell^2\), \(\ell[A]=[D]\ne0\), and \(\ell[C]=\ell[B]=0\). In the original index gcd, the terms prime to \(\ell\) in the exponent have a factor \(\ell^2\), the exponents divisible by \(\ell\) have a factor \(\ell\) unless they are divisible by \(\ell^2\), and in the latter case the tensor term has index \(\ell^2\). The exponent \(i=\ell^2-\ell\) gives exactly \(\ell\), since the tensor term has trivial Brauer class. Thus \(d=\ell\).
+
+Use \(L_\ell=K(\sqrt[\ell]{u})\). The centralizer in the first degree-\(\ell^2\) symbol contains the degree-\(\ell\) symbol \((\sqrt[\ell]{u},v)_{\ell,L_\ell}\), generated by the first symbol generator and the \(\ell\)-th power of the second. The projective image of the restricted norm-one group has scalar kernel \(\mu_\ell\), so its Brauer obstruction is killed by \(\ell\). Geometrically, the \(\ell\) eigenspaces of \(L_\ell\) have dimension \(\ell^3\). To check generic freeness, divide the \(\ell^2\) copies of the commutant module into \(\ell\) blocks of \(\ell\) copies each. Replace the first eigenspace by a graph into the second block and choose two graph entries with scalar joint commutant, leaving the other eigenspaces as the coordinate blocks. The same linear rank test gives generic freeness. Now the period-restricted term \(i=\ell^2-\ell\) gives \(d_0\mid\ell\), so \(d_0=\ell\). This quotient is point-free since \([B]-[A]\) has order \(\ell^2\). The conclusion also holds for the projective \(L_\ell\)-torus and its finite subgroups.
+
+
+## No piecewise polynomial density in the lowest full exceptional degrees
+
+**Theorem (The lowest full exceptional height spaces have no piecewise polynomial densities).**
+
+Let \(X=\mathrm{SU}_2/\Gamma\) with \(\Gamma=2O\) or \(2I\), in its pointed compact form, and give its coordinate algebra the half-matrix filtration. Every nonconstant real regular height of degree at most six has a law without a piecewise polynomial density with finitely many pieces. The height may use all the left-circle weights. More generally the exclusion holds in half-matrix degree \(jk\) for \(k\ge1\) if the leading symbol on the rank-one matrix cone is \(F(u)^k G(v)^k\), where \(F\) is a binary form of degree \(2j\) and
+\[
+ (\Gamma,j,G)=(2O,4,f_8),\quad
+ (2O,6,v_1^2v_2^2(v_1^4-v_2^4)^2),\quad (2I,6,f_{12}).
+\]
+Here \(f_8,f_{12}\) are the basic right invariants. If \(B\) is such a height, its interval trinomial \((1-B)t^{-1}+(1-2B)-Bt\) is never eventually pure.
+
+In addition, let \(P=\sum_e t^eP_e\) be a real regular Laurent phase and suppose there is a rational number \(\alpha\) such that \(j_e+\alpha e<jk\) for each nonzero coefficient with \(e\ne0\), where \(j_e\) denotes its half-matrix degree. If \(P_0\) has degree \(jk\) with one of the displayed leading symbols, then \(P\) has infinitely many nonzero pure moments.
+
+**Proof.** In the indicated degrees the right invariant space is one-dimensional and is generated by the specified \(G\). The degrees less than or equal to six are \(0,4,6\) for \(2O\) and \(0,6\) for \(2I\). This follows from the ordinary Molien series, or by averaging the spin-\(j\) character \(1+2\sum_{h=1}^j\cos(h\theta)\) over the rotation angles of each group. Thus the leading symbol in the low-degree claim has the required factorization with \(k=1\). For the general assertion, compact conjugation acts on either ruling of the rank-one cone by the antipodal real structure on its projective line. The divisor of \(F\) is therefore invariant under this fixed-point-free involution. If one root has multiplicity at least \(j\), the form has just a pair of roots of multiplicity \(j\). Otherwise every root multiplicity is less than \(j\). [Knibbeler, Lombardo and Sanders, Examples 3.4–3.5](https://link.springer.com/article/10.1007/s10208-016-9312-1)
+
+First take algebraic coefficients. After a finite number-field extension there are infinitely many good places of absolute residue degree one and characteristic \(p\equiv1\bmod jk\) at which
+\[
+                   [u_1^{p-1}u_2^{p-1}]F^{(p-1)/j}\ne0
+                                        \quad\bmod p .
+\]
+For the pair of roots, send them to the coordinate roots. The central coefficient is then a unit at every good prime in the congruence class. This condition is invariant under a good change of the two variables: the coefficient is the class in the top degree of the quotient by \((u_1^p,u_2^p)\), and this ideal is invariant under the change. For all multiplicities less than \(j\), use the normalized cyclic cover \(y^j=F\) on \(\mathbb P^1\) with root line bundle \(\mathcal O(2)\). The character-one eigensheaf is \(\mathcal O(-2)\), because all the multiplicities are less than \(j\). Its first cohomology is a line, and Frobenius on it at these primes has the displayed coefficient, by the Čech calculation of the ternary-quadric test. The primitive part of the Jacobian admits the imaginary quadratic field \(\mathbb Q(\zeta_j)\) with Lie multiplicity one at the selected embedding. The simple-signature ordinary-reduction lemma gives ordinary primes after finite extension. Adjoin the \(jk\)-th roots of unity to that extension and retain degree-one primes, which proves the assertion. The argument also applies to the product of the Jacobians of the components if the normalization is disconnected.
+
+For the right forms \(f_8,f_{12}\), the coefficient \([v_1^{p-1}v_2^{p-1}]G^{(p-1)/j}\) is a unit at every good prime in the same congruence class. The explicit values follow by comparing the Cartier differential with the elliptic differential in the complex exceptional calculation. For the octahedral degree-twelve form write \(G=[v_1v_2(v_1^4-v_2^4)]^2\) and \(a=(p-1)/3\). The coefficient is \((-1)^{a/2}\binom{a}{a/2}\), nonzero modulo \(p\). [Van Rijn, the two coefficient formulas in §4](https://hexagonmath.org/pdf/2611.00556v1)
+
+Write \(g=\left(\begin{smallmatrix}a&b\\c&d'\end{smallmatrix}\right)\) in determinant-one coordinates and put \(m=(p-1)/(jk)\). To compute the trace of \(B^m\), or the balanced terms in \(P^m\), only the monomials \((ad')^{i_1}(bc)^{i_2}\) survive the two diagonal projections. Their traces are \((-1)^{i_2}i_1!i_2!/(i_1+i_2+1)!\), by the compact Hopf integral. Degrees below \(2(p-1)\) give integral traces, whereas in degree \(2(p-1)\) the trace after multiplication by \(p\) reduces to one for each such balanced monomial. Substitution \(g=uv^{\mathsf T}\) makes the sum of the balanced top coefficients the coefficient with all four exponents \(p-1\). For \(B^m\) it is the product of the left and right coefficients just computed. For \(P^m\), the affine degree bound on the scalar support gives the same top term: any scalar-balanced term involving a nonzero scalar exponent has degree strictly less than \(2jkm\). Thus both claimed traces, in their respective cases, have valuation \(-1\) at infinitely many primes.
+
+On the other hand, moments of a piecewise polynomial density with algebraic breaks and coefficients are integral at all sufficiently large primes at these orders. A piece \(c\,s^i\) between breaks \(\xi,\eta\) contributes \(c(\eta^{m+i+1}-\xi^{m+i+1})/(m+i+1)\), and \(m=(p-1)/(jk)\) ensures \(m+i+1<p\) for large \(p\). This contradicts the valuation calculation.
+
+To remove the algebraicity hypothesis, fix the finite degrees of the height and of the density pieces, and their number. Equality of every moment is a system of polynomial identities in the height data, density coefficients, and ordered breaks over the real algebraic numbers. The identities generate a finitely generated ideal. Reality, the given leading factorization, and strict order of the breaks are finite polynomial conditions as well. A real solution would therefore give one over the real algebraic numbers. The specialized signed polynomial pieces already give the same contradiction to integrality, with no need to use density positivity after specialization. Likewise an eventually vanishing Laurent phase gives a finite coefficient specialization of its vanishing equations preserving the strict support and leading-form conditions. These arguments also give the algebraic eventual-vanishing exclusions over every real closed field. The claim for the interval trinomial now follows from its density criterion. \(\square\)
+
+
+
+## Generic density obstruction at every exceptional degree
+
+**Theorem (Piecewise polynomial densities impose a proper algebraic condition at every full exceptional degree).**
+
+Fix \(\Gamma=2O\) or \(2I\), and a positive integer \(j\) for which the degree-\(2j\) right binary invariant space is nonzero. Also fix the number of pieces and a bound on their polynomial degrees. In the full coefficient space of regular heights of half-matrix degree at most \(j\), the heights having a piecewise polynomial density of the indicated size lie in a proper Zariski-closed subset. The closed subset can be taken over a number field. Thus the union over all finite sizes is contained in a countable union of proper algebraic loci.
+
+We first give the coefficient calculation responsible for this assertion. Suppose \(G\) is a nonzero invariant binary form of degree \(2j\) whose zeros are supported on the three exceptional rotation orbits in \(\mathbb P^1\). For every sufficiently good prime of characteristic \(p\equiv1\bmod j\),
+\[
+                       [X^{p-1}Y^{p-1}]G(X,Y)^{(p-1)/j}
+                                             \ne0\quad\bmod p .
+\]
+Indeed consider the normalization of \(Z^j=G(x,1)\), allowing all components if it is disconnected, with deck action \(Z\mapsto\zeta Z\). Every zero has multiplicity less than \(j\) because the exceptional orbits have more than two points. The differential \(dx/Z\) is holomorphic, including at infinity by the root line bundle \(\mathcal O(2)\). It is invariant under the effective rotation group: a matrix acting by \(x\mapsto(ax+b)/(cx+d)\) sends \(Z\mapsto Z/(cx+d)^2\). Thus the differential descends through the tame group quotient.
+
+The quotient still has a cyclic \(\mu_j\)-torsor over the generic point of the projective line \(\mathbb P^1/\Gamma\). This follows by field descent of the original torsor algebra, using the action that commutes with its deck action. It is unramified away from the three exceptional images, since off them the original group quotient is étale and the original cyclic cover is unramified. Over an algebraic closure of the residue field move those images to \(0,1,\infty\), and write the descended equation \(W^j=z^a(z-1)^b\), with \(0\le a,b<j\). The descended differential is a nonzero constant multiple of \(dz/W\): it lies in the inverse deck character, a differential in that character is \(h(z)dz/W\), and regularity forces \(h\) to have no finite pole. At infinity holomorphy forces \(a+b>j\) and \(h\) to have degree zero. These valuation conditions also apply if the cover is disconnected. Thus its Cartier coefficient is a nonzero multiple of
+\[
+                     [z^{p-1}]z^{a(p-1)/j}(z-1)^{b(p-1)/j}.
+\]
+It is a binomial coefficient up to sign, with lower index \((j-a)(p-1)/j\) and upper index \(b(p-1)/j<p\). The coefficient is nonzero. Cartier commutes with the separable pullback to the original curve. On the original \(dx/Z\) its coefficient is the \(p\)-th root of the asserted binary coefficient, by the same extraction rule as in the complex exceptional calculation. Working over an algebraic closure of the residue field in this argument suffices for nonvanishing over the residue field.
+
+The basic Klein generators on the right have degrees \(8,12,18\) or \(12,20,30\), respectively, and their zeros are supported on the three exceptional orbits. Hence every degree \(2j\) occurring in the invariant ring has at least one such \(G\), by taking a nonzero monomial in the generators. The rank-one symbol \(u_1^j u_2^j G(v)\) belongs to the complexified height space and shows that the central coefficient polynomial in generic height coefficients is nonzero modulo every sufficiently good \(p\equiv1\bmod j\). This uses the matrix-cone trace calculation at \(m=(p-1)/j\) from the preceding theorem. [Knibbeler, Lombardo and Sanders, Examples 3.4–3.5](https://link.springer.com/article/10.1007/s10208-016-9312-1)
+
+Now use the finitely many variables for the height coefficients, proposed density coefficients, and proposed breaks. Equality of all moments gives a finitely generated ideal over the number field of the algebraic model. If its solution set had dense projection to the height space, the generic height would admit a solution for the density data over a finite extension of its coefficient function field. At a sufficiently large prime \(p\equiv1\bmod j\), give this function field the Gauss valuation, so that the independent height coefficients reduce to independent variables. Every one of the finitely many algebraic density coefficients and breaks is integral at an extension of this valuation outside a finite set of primes. Indeed its monic polynomial over the function field has Gauss-integral coefficients outside a finite set.
+
+For \(m=(p-1)/j\), the valuation of the generic height moment is \(-1\), by the nonzero central coefficient polynomial. The proposed piecewise polynomial density gives an integral moment at the extended valuation, because its denominators \(m+i+1\) are units for large \(p\), with \(i\) bounded by the fixed density degree. This contradiction shows that the projection is not dense. Taking its Zariski closure gives the claimed proper locus. Positivity or even reality of the proposed density data is unnecessary for this non-density argument, so it applies in particular to the stated real laws. \(\square\)
+
+
+
+## Diagonal rank-one subgroups on torally coupled twists
+
+**Theorem (The toral character lattice determines the constant Brauer kernel).**
+
+Let \(K\) have characteristic zero, let \(D=(a,b)_K\) be a division quaternion algebra, and put \(E=K(\sqrt a)\), \(C=\mathrm{SL}_1(D)\), and \(T=\mathrm R^1_{E/K}\mathbb G_m\subset C\). Let \(G=C^n\), let \(H\subset T^n\) be a closed subgroup, and write
+\[
+                      \Lambda=X^*((T^n/H)_{\overline K})\subset\mathbb Z^n .
+\]
+Twist \(G/H\) by a torsor \(\tau\) for its commuting torus \(T^n/H\), and denote the result by \(X_\tau\). Each \(\chi\in\Lambda\) induces a homomorphism \(T^n/H\to T\). Write \(\beta(\chi)\in\operatorname{Br}(K)[2]\) for the quaternion class of the norm torsor obtained by pushing \(\tau\) along this character.
+
+Let \(S\) be the product of diagonal copies of \(C\) on disjoint nonempty blocks of factor indices. A singleton block is the corresponding normal factor, and unused indices are allowed. Define \(\Lambda_S\) to be the elements \(\chi\in\Lambda\cap 2\mathbb Z^n\) with
+\[
+  \chi_i=0\quad\text{on each singleton block }\{i\},\qquad
+  \sum_{i\in I}\chi_i\equiv0\pmod4
+                     \quad\text{on each block }I\text{ of size at least two}.
+\]
+With \(S=1\) this means just \(\Lambda\cap 2\mathbb Z^n\). Then
+\[
+             \ker\bigl(\operatorname{Br}(K)\longrightarrow
+                          \operatorname{Br}(K(X_\tau)^S)\bigr)
+                             =\beta(\Lambda_S).
+\]
+In particular a nontrivial \(S\) gives a regular Mathieu–Zhao counterexample whenever \([D]\in\beta(\Lambda_S)\). The resulting space is point-free over \(K\). In particular if \(n\ge3\) and \(D\) splits over \(K(X_\tau)\), a diagonal on a pair of factors already gives such a witness.
+
+**Proof.** Write a quaternion as \(u+jv\), where \(u,v\in E\) and \(j^2=b\). Its norm-one equation is \(N_{E/K}(u)-bN_{E/K}(v)=1\). Right \(T\) rotates \(u,v\) by the same character. The radial coordinate \(A=N(u)\) is invariant, and the generic radial fibre is a torsor for \(T^2\) with norm right sides \(A,(1-A)/(-b)\). Before any quotients the different quaternion factors give independent radial coordinates.
+
+Over the geometric field, quotienting by a singleton block discards its coordinate. On a block \(I\) of size at least two with anchor \(i_0\), quotienting by the diagonal replaces the block by the relative quaternions \(g_{i_0}^{-1}g_i\) for \(i\in I\setminus\{i_0\}\). These are geometric affine quotient maps, as one can also see by choosing the original \(g_{i_0}\) as the deleted free coordinate. They are compatible with the right action and with the toral descent. In each relative quaternion the right action is \(g\mapsto h_{i_0}^{-1}g h_i\), so the two circle characters are \((-1,1)\) and \((1,1)\) at coordinates \(i_0,i\). This follows from \(h^{-1}j=jh\) for \(h\in T\). In an unused coordinate the two circle characters are both the corresponding coordinate character. The quotient by \(H\) on the generic radial fibre keeps exactly those angle characters whose induced right character lies in \(\Lambda\).
+
+Over the rational field \(F\) of the remaining independent radial coordinates, this fibre is thus a product of basis norm torsors for \(E_F/F\). For an angle character with exponents \(m_i,n_i\) and induced right character \(\chi\), its quaternion class is the restriction of \(\beta(\chi)\) plus the quaternion with entries
+\[
+                      a,\qquad \prod_i A_i^{m_i}
+                                            \big((1-A_i)/(-b)\big)^{n_i}.
+\]
+The first summand comes from twisting the right torus. The Brauer kernel of the function field of this product over \(F\) is generated by the basis quaternion classes, by the norm-conic Brauer kernel theorem. On such a class the residues at \(A_i=0,1\) force \(m_i,n_i\) to be even if the class is to come from \(K\). Indeed the residue of an odd exponent is the nonsquare class of \(a\) in the corresponding rational residue field, and constant classes and the other radial factors have zero residue. For even exponents the radial factors, including \(-b\), disappear in the Brauer group. The constant Brauer group injects into \(\operatorname{Br}(F)\), since \(F\) is rational.
+
+It remains to describe the induced characters from even angle exponents. The unused coordinates give arbitrary even entries, and singletons give zero. In a larger block, put \(\chi_i=m_i+n_i\) off the anchor and \(\chi_{i_0}=\sum_{i\ne i_0}(-m_i+n_i)\). If both exponents of every pair are even, this gives precisely the congruence on the block sum. Conversely, for prescribed even off-anchor entries and a block sum divisible by four, the anchor value can be obtained by changing one even \(m_i\) and changing \(n_i\) by its negative. This proves that the even angle characters induce exactly \(\Lambda_S\), and hence proves the formula.
+
+The geometric stabilizer of the \(S\)-action on a generic orbit is contained in a conjugate of \(H\), hence is commutative. If \(D\) splits over the invariant field, a split rank-one factor of \(S\) acts nontrivially on the generic fibre. The generic invariant-fibre theorem supplies the regular witness. The same Brauer class then splits over \(K(X_\tau)\). A smooth \(K\)-point on \(X_\tau\) would specialize that splitting to \(K\), by applying Lang–Nishimura to the rational map to the Severi–Brauer conic of \(D\). This would contradict the division hypothesis. For the last assertion, take \(\chi\in\Lambda\cap2\mathbb Z^n\) with \(\beta(\chi)=[D]\). If \(n\ge3\), two of its coordinates have the same residue modulo four, giving the required diagonal block. \(\square\)
+
+**Corollary (Diagonal subgroups detect all level-two toral twists in at least three factors).**
+
+Over a real closed field write the twist as a sign homomorphism \(\tau:\Lambda\to\mathbb Z/2\), and put \(V=\Lambda\cap 2\mathbb Z^n\). Then \(X_\tau\) is pointed exactly when \(\tau=0\). For \(\tau\ne0\), its function field has level two if \(\tau|_V\ne0\), and level four otherwise. The normal-factor test for split rank one is an anti-sign character in \(V\) with the corresponding coordinate zero. The diagonal test on factors \(i,j\) is an anti-sign character in \(V\) with \(\chi_i\equiv\chi_j\pmod4\). If \(n\ge3\) and the level is two, there is a regular counterexample. For \(n=2\), the two factor tests and the diagonal test are exact for the existence of a split rank-one action on a generic invariant fibre of a connected reductive subgroup of \(G\).
+
+For point-freeness map to the product of the positive adjoint spheres \(C/T\). Each real point there lifts to the compact group. Its fibre in the twist has the torus torsor of signs \(\tau\), which is trivial precisely when all signs are trivial. A nontrivial twist therefore has non-formally-real function field. The kernel formula gives its Hamilton splitting test and hence the level-two assertion. For the remaining level assertion, use the intermediate quotient by the right torus \(T^n/H\), the same product of adjoint spheres. Its field provides stereographic formulas
+\[
+               A_i=\frac1{1+s_i^2+t_i^2},\qquad
+               1-A_i=\frac{s_i^2+t_i^2}{1+s_i^2+t_i^2}.
+\]
+Both expressions are quaternion norms, since the reduced norms form a multiplicative group and their numerators and denominators are sums of at most four squares. A character of nontrivial sign has a generic norm equation on the actual function field. It expresses \(-1\), modulo complex norms, as a product of powers of these entries. Since complex norms are also quaternion norms, the Hamilton norm represents \(-1\). The non-splitting result excludes level two and gives level four.
+
+In a level-two case take an anti-sign character in \(V\). If \(n\ge3\), two of its even coordinates are congruent modulo four, so the diagonal test gives the witness. For \(n=2\) every connected almost simple subgroup is a factor or a diagonal up to conjugacy. If one of them does not split on its own invariant field, it cannot split over the smaller invariant field of a larger subgroup containing it. Any reductive subgroup with positive split semisimple rank must have one of those derived factors. This proves the stated exactness of the mechanism.
+
+**Examples.** For \(n=2\), take \(\Lambda=\langle(4,0),(0,4),(2,2)\rangle\) and assign to \((2,2)\) the norm class for \([D]\), with trivial classes on the two axes. Both normal-factor invariant fields leave \(D\) division, while the diagonal field splits it. This gives a regular counterexample for a point-free coupled twist over any of the fields in the theorem. Over a real closed field with these signs, the two normal-factor quotients are pointed compact \(\mathrm{SU}_2/\mu_4\).
+
+In contrast, over a real closed field take \(\Lambda=\langle(8,0),(4,2)\rangle\) with sign one on \((4,2)\) and zero on \((8,0)\). The full space has level two, and both axis sublattices have sign zero. Every anti-sign character has residues \((0,2)\) modulo four. The three tests exclude all split-rank generic-fibre constructions for this space, which leaves its individual trace open.
+
+
+
+## Full exceptional Laurent phases with a common leading coefficient
+
+**Theorem (The scalar cyclic-cover test excludes aligned full exceptional phases).**
+
+Let \(X=\mathrm{SU}_2/\Gamma\) be either pointed compact exceptional quotient. Let \(P\) be a real regular Laurent phase and let \(jk\) be the largest half-matrix degree of its coefficients. Assume its entire leading symbol on the rank-one matrix cone is
+\[
+                       F(u)^k G(v)^k L(t)^k,\qquad k\ge1,
+\]
+where \(F\) is a binary form of degree \(2j\) and
+\[
+        (\Gamma,j,G)=(2O,4,f_8),\quad
+        (2O,6,v_1^2v_2^2(v_1^4-v_2^4)^2),\quad (2I,6,f_{12}).
+\]
+Allow any lower-degree Laurent coefficients. Suppose the scalar support of \(L\) lies in \([-j,j]\) and meets both strict signs. If no nonzero finite root of \(L\) has multiplicity greater than \(j\), then \(P\) has infinitely many nonzero pure moments. The same holds with all scalar exponents rescaled by a fixed positive integer. In particular, at \(k=1\) the root condition is automatic if the top profile has at most \(j+1\) nonzero scalar terms. This includes all real Laurent trinomials of normalized width at most two whose coefficients of maximal degree are proportional in the corresponding lowest full degree and occur at both strict scalar signs.
+
+**Proof.** For a place of absolute residue degree one with sufficiently large characteristic \(p\equiv1\bmod jk\), put \(m=(p-1)/(jk)\) and \(r=(p-1)/j\). The normalized residue of the pure moment is
+\[
+       p\Lambda(P^m)\equiv
+             [u_1^{p-1}u_2^{p-1}]F^r\;
+             [v_1^{p-1}v_2^{p-1}]G^r\;
+             \operatorname{CT}_t(L^r)
+                                             \pmod p .
+\]
+This is the determinant-one Hopf coefficient computation from the lowest full exceptional height test. Only terms of half-matrix degree \(jkm=p-1\) can have a pole at \(p\). In the separated leading symbol their left and right central coefficients factor, and scalar balancing gives the last factor.
+
+The middle factor is a unit at every good prime in the congruence class. For the first factor, compact reality gives an antipodal real projective divisor for \(F\). The root-pair case or the character-one ordinary-reduction argument of the full height theorem therefore makes it a unit at a density-one set of places after finite extension.
+
+For the scalar factor, homogenize
+\[
+                         W(t_0,t_1)=t_0^j t_1^j L(t_1/t_0).
+\]
+It has degree \(2j\), and \(\operatorname{CT}_t(L^r)\) is the coefficient of \(t_0^{p-1}t_1^{p-1}\) in \(W^r\). At zero and infinity the multiplicities of \(W\) are strictly less than \(j\) by the two signs of the support. First suppose all its roots have multiplicity less than \(j\). On the normalized cyclic cover \(y^j=W\) with root line bundle \(\mathcal O(2)\), the character-one eigensheaf is \(\mathcal O(-2)\), and its first cohomology is a line. Its Frobenius coefficient at \(p\equiv1\bmod j\) is the scalar constant term in the residue formula. The primitive part admits the imaginary quadratic field \(\mathbb Q(\zeta_j)\), with one Lie eigenspace of dimension one. The same ordinary-reduction lemma gives a density-one set of good places after finite extension.
+
+If a root has multiplicity exactly \(j\), make a linear change over the residue field's algebraic closure so its defining linear form is \(t_0\). The line of degree \(2p-2\) in the quotient by \((t_0^p,t_1^p)\) is one-dimensional and the ideal is invariant under linear changes in characteristic \(p\). Thus the central coefficient vanishes before the change exactly when it vanishes after it. The transformed \(W^r\) is \(t_0^{p-1}R^r\) with \(R(0,1)\ne0\), so the coefficient is a unit at all sufficiently good primes of the indicated congruence. If a root has multiplicity greater than \(j\), this same calculation gives a factor \(t_0^p\) for every sufficiently large prime in the congruence class. In that case the central coefficient test gives zero.
+
+Take a common extension of the fields for the two cyclic covers, with all needed roots of unity, and keep the degree-one primes in the intersection of the two density-one sets there. Every displayed factor is then a unit, giving valuation \(-1\) at infinitely many orders. Coefficient specialization retains the finite degree, factorization and root-multiplicity conditions, and every proposed eventually vanishing tail reduces to finitely many equations in that degree. Thus the exclusion holds over every real closed field.
+
+For the last assertion, write \(L=\sum_{\nu=1}^s c_\nu t^{e_\nu}\) with distinct \(e_\nu\). A nonzero finite root of multiplicity at least \(s\) would force the first \(s\) Euler derivatives to vanish there. The resulting Vandermonde matrix in the exponents is invertible in characteristic zero, which would force every coefficient to vanish. Hence \(s\le j+1\) implies the root condition. Rescaling the scalar exponents never changes a scalar constant term. \(\square\)
+
+## The Brauer kernel with different quaternion groups and quadratic tori
+
+**Theorem (Galois character lattices compute the Brauer kernels of mixed toral twists).**
+
+Let \(K\) have characteristic zero and let \(C_i=\mathrm{SL}_1((a_i,b_i)_K)\) with norm-one torus \(T_i=\mathrm R^1_{K(\sqrt{a_i})/K}\mathbb G_m\), where each \(a_i\) is nonsquare. Put \(G=\prod_i C_i\), \(B=\prod_i T_i\), and let \(H\subset B\) be a closed subgroup. For a class \(\tau\in H^1(K,B/H)\) write \(X_\tau\) for the corresponding right toral twist of \(G/H\). Let \(S\) be a product of left diagonal subgroups on disjoint blocks. A singleton removes that factor. On a block of size at least two require identifications of the groups and their embedded tori, so that the factors have common quaternion coordinates as above. The factors outside these blocks can have unrelated quaternion algebras or quadratic extensions. The empty choice \(S=1\) is allowed.
+
+Write \(P\) for the product of the angular tori in the relative quaternions and the unused quaternions. There are two copies of the corresponding \(T_i\) for each such quaternion. The action of \(B\) on these angles defines \(\phi:B\to P\). On an unused quaternion it rotates the two angles by the same character. On a relative quaternion of a block it has the anchor-to-index weights \((-1,1)\) and \((1,1)\) from the preceding theorem. Put
+\[
+               R=B/H,\qquad U=P/\phi(H).
+\]
+Let \(\iota:X^*(U)\to X^*(P)\) and \(\varphi:X^*(U)\to X^*(R)\) be respectively the pullbacks from the quotient of \(P\) and the induced map \(R\to U\). Write \(\langle\, ,\,\rangle\) for the cup pairing into \(\operatorname{Br}(K)\) using evaluation of characters. There is an exact equality of subgroups
+\[
+ \ker\bigl(\operatorname{Br}(K)\to\operatorname{Br}(K(X_\tau)^S)\bigr)
+  =
+ \bigl\{\langle\varphi_*\eta,\tau\rangle :
+      \eta\in\ker\bigl(H^1(K,X^*(U))\xrightarrow{\iota_*}H^1(K,X^*(P))\bigr)\bigr\}.
+\]
+The cohomology of both lattices can be computed over the finite Galois group of the compositum of the quadratic splitting fields. If the right-hand side contains the quaternion class of a diagonal block or singleton in \(S\), the twisted space has a regular Mathieu–Zhao counterexample. When that class is division over \(K\), the space is point-free.
+
+**Proof.** Quotient by \(S\) and take independent radial coordinates in the relative and unused quaternions, as above. The resulting rational field \(F\) is purely transcendental over \(K\). Before dividing by \(\phi(H)\), the generic angular fibre is a \(P_F\)-torsor with class \(\xi\), given by the two norm values \(A_i,(1-A_i)/(-b_i)\) in each quaternion. The generic angular fibre afterwards is a \(U_F\)-torsor \(Y\), with class the sum of the pushforward of \(\xi\) and the pushforward of \(\tau_F\). Its function field is \(K(X_\tau)^S\).
+
+For any torus torsor \(Y\) over \(F\) the geometric Picard group vanishes, and the sequence of geometric units
+\[
+  1\longrightarrow\overline F^\times\longrightarrow
+    \overline F[Y]^\times\longrightarrow X^*(U)\longrightarrow0
+\]
+has extension class given by its torsor class up to sign. This can be seen by choosing a geometric point to identify the units with constants times characters, then comparing the Galois translates of the point. The connecting map on \(H^1(F,X^*(U))\) is therefore the cup pairing with \([Y]\) up to sign. The Hochschild–Serre spectral sequence injects \(H^2(F,\overline F[Y]^\times)\) into \(\operatorname{Br}(Y)\), since the geometric Picard group is zero. The smooth integral variety \(Y\) has \(\operatorname{Br}(Y)\hookrightarrow\operatorname{Br}(F(Y))\). It follows that the Brauer kernel over \(F\) is exactly the image of this pairing. Compare [Colliot-Thélène and Sansuc on torsors and geometric units](https://www.imo.universite-paris-saclay.fr/~jean-louis.colliot-thelene/ic04-v4-jlct-jjs.pdf).
+
+For either character lattice \(L\), the splitting extension over \(F\) has the same finite Galois group as the splitting extension over \(K\). A continuous homomorphism from the absolute Galois group of that extension to the trivial lattice \(L\) has finite image and is zero. Inflation and restriction thus identify \(H^1(F,L)\) with \(H^1(K,L)\). By naturality the pairing for \([Y]\) has constant contribution \(\langle\varphi_*\eta,\tau\rangle_F\) and radial contribution \(\langle\iota_*\eta,\xi\rangle\). The latter is a sum of quaternion classes \((a_i,A_i)\) and \((a_i,(1-A_i)/(-b_i))\), with the two coefficients in \(\mathbb Z/2\) given by the two norm-one character summands of \(\iota_*\eta\). Here the generator of \(H^1(F,\mathbb Z_{\epsilon_i})\) paired with a norm torsor of value \(c\) gives the usual quadratic cyclic algebra \((a_i,c)\).
+
+The residues at \(A_i=0,1\) force both of these coefficients to vanish if the sum is constant. At each of those valuations the corresponding nonsquare \(a_i\) stays nonsquare in the rational residue field, and every other displayed symbol has zero residue. Conversely, when \(\iota_*\eta=0\) the radial contribution vanishes. Since constant Brauer classes inject into \(\operatorname{Br}(F)\), this proves the equality. The geometric stabilizer of the \(S\)-action is contained in a conjugate of the toral subgroup \(H\), and the generic fibre argument applies whenever a factor splits. Lang–Nishimura applied to the corresponding division conic then gives point-freeness. \(\square\)
+
+**Corollary (Independent quadratic tori reduce the normal-factor test to the axis quotients).**
+
+Suppose the classes \(a_i\) are independent in \(K^\times/K^{\times 2}\). Write \(X^*(R)\cap\mathbb Z e_i=n_i\mathbb Z e_i\), where \(n_i=0\) denotes the zero sublattice. For \(n_i>0\) let \(\beta_i\) be the Brauer class of the torsor pushed from \(\tau\) along the torus map \(R\to T_i\) of character \(n_i e_i\). If \(S\) is a product of some of the normal factors, its constant Brauer kernel is generated by the \(\beta_i\) for the unused \(i\) with \(n_i>0\) even.
+
+Indeed the Galois group acts by independent coordinate reflections. For a stable character lattice \(L\) supported on this product, a cocycle on the reflection at \(i\) takes its value in the intersection of \(L\) with the angular block at \(i\). The cocycle equations for different reflections impose no further constraints, since they fix each other's blocks. Coboundaries give twice the corresponding coordinates of one element of \(L\). Apply this to the angular lattice \(X^*(U)\). A cocycle in \(\ker\iota_*\) has two even angular entries at every unused index, and its image in \(X^*(R)\) on the corresponding reflection is their even sum on the \(i\)-th axis. Every even element of that axis sublattice is obtained this way by setting the second entry to zero. Odd \(n_i\) force the multiplier of \(n_i e_i\) to be even and hence give zero cup pairing. When \(n_i\) is positive and even, \(n_i e_i\) itself gives the pairing \(\beta_i\). This proves the assertion. \(\square\)
+
+## The constant Brauer kernel from principal stabilizer characters
+
+**Theorem (Stabilizer characters compute the constant Brauer kernel of a semisimple invariant field).**
+
+Let \(K\) have characteristic zero, let \(G\) be semisimple simply connected, and let \(X\) be an affine geometrically homogeneous \(G\)-space. Choose a geometric base point with stabilizer \(H\subset G_{\overline K}\). For a Galois-invariant geometric character \(\chi\) of \(H\), denote by \(o(\chi)\in\operatorname{Br}(K)\) the descent obstruction of the associated \(G_{\overline K}\)-linearized line bundle \(L_\chi\) on \(X_{\overline K}\). The Galois action on the character group is the one from the homogeneous space, also when \(X(K)\) is empty.
+
+Let \(S\subset G\) be connected semisimple and put \(F=K(X)^S\). On a general geometric \(S\)-orbit let \(H_S\subset H\) be the stabilizer, transported to the chosen base point by \(G_{\overline K}\). Then
+\[
+ \ker\bigl(\operatorname{Br}(K)\to\operatorname{Br}(F)\bigr)
+   =\{o(\chi):\chi\in X^*(H)^{\operatorname{Gal}(\overline K/K)},\
+                        \chi|_{H_S}=1\}.
+\]
+If \(S\) is connected reductive, the formula holds with the condition that the \(H_S\)-character on the fibre agree with a \(K\)-defined character of \(S\) restricted to the principal stabilizer in \(S\).
+
+**Proof.** Geometric units on \(X\) are constant by pullback along \(G_{\overline K}\to X_{\overline K}\). The same holds for units on \(G_{\overline K}\), and its Picard group is zero. Thus each geometric line bundle on \(X\) is the bundle of a unique stabilizer character, with its \(G_{\overline K}\)-linearization. This follows by pulling back to the trivial bundle on \(G_{\overline K}\) and writing the descent action of \(H\) on the fibres, or from [Borovoi and van Hamel, Propositions 5.2 and 5.6](https://arxiv.org/abs/1010.3414). The obstruction \(o(\chi)\) is represented by the scalar two-cocycle of Galois descent isomorphisms. They can be taken \(G_{\overline K}\)-equivariant by uniqueness. Hochschild–Serre and regularity identify their image with the constant Brauer kernel over \(K(X)\).
+
+If the principal stabilizer acts trivially on the fibres of \(L_\chi\), its restriction to the geometric generic \(S\)-orbit has a one-dimensional space of invariant sections. Indeed on a homogeneous orbit an invariant section is specified by a stabilizer-fixed vector at one point, and a line with trivial stabilizer character has a nonzero such vector. Over \(\overline K(X)^S\) the invariant space still has dimension one by scalar extension. This uses the geometric homogeneity of the generic invariant fibre and flat base change for sections and invariants. The geometric descent isomorphisms preserve this line and still compose with scalar two-cocycle \(o(\chi)\). On a one-dimensional space their multipliers give a cochain killing that cocycle over \(\overline K(X)^S\). Thus the class vanishes in \(\operatorname{Br}(F)\). For reductive \(S\), twist its linearization by the inverse of the given \(K\)-character before taking invariant sections.
+
+Conversely, if a central simple algebra \(A\) splits over \(F\), a point on its Severi–Brauer variety over \(F\) gives an \(S\)-invariant rational \(K\)-map \(X\dashrightarrow\mathrm{SB}(A)\). Its domain of definition contains every codimension-one point by properness and smoothness of \(X\). The domain is \(S\)-stable by invariance of the rational map. Pull back the geometric hyperplane line bundle, or its dual according to the sign convention for \(o\). Since \(X_{\overline K}\) is smooth, the line bundle and its \(S_{\overline K}\)-linearization extend uniquely across the complement of codimension at least two. For the linearization apply the same extension to the isomorphism of line bundles on \(S_{\overline K}\times X_{\overline K}\). The pullback descent cocycle is still the scalar cocycle for \([A]\), and the geometric line bundle is \(L_\chi\) for some Galois-invariant \(\chi\).
+
+The pullback linearization has trivial fibre action on every stabilizer in the domain. Any two \(S_{\overline K}\)-linearizations of a geometric line bundle on \(X_{\overline K}\) differ by a character of \(S_{\overline K}\): their ratio is a unit on \(S_{\overline K}\times X_{\overline K}\), and every unit on \(X_{\overline K}\) is constant. Normalization at the group identity and the composition law give the character. For semisimple \(S\) the character is trivial. In the reductive case the comparison character is Galois-invariant, since both linearized isomorphism classes are Galois-invariant. This proves the necessity and the formula. \(\square\)
+
+**Computing the obstruction over a real closed field.** On the pointed compact reference \(G/H\) let the twist be \(gH\mapsto\overline g\,aH\), with \(a\in N_G(H)(K)\) and \(a^2\in H(K)\). Invariance of \(\chi\) means \(\chi(a^{-1}\overline h a)=\overline{\chi(h)}\). On the associated line bundle the map \([g,z]\mapsto[\overline g a,\overline z]\) then has square multiplication by the real scalar \(\chi(a^2)\). Thus \(o(\chi)\) is the Hamilton class precisely when \(\chi(a^2)<0\). This gives a finite test for finite reference stabilizers, using their one-dimensional characters and the action of the twist representative.
+
+**Corollary (Level-two twists with finite or connected stabilizer).**
+
+Let \(D\) be a division quaternion algebra over a characteristic-zero field \(K\). Suppose \(G\) has three normal factors isomorphic over \(K\) to \(\mathrm{SL}_1(D)\), all acting nontrivially on \(X\). If \(H\) is finite or connected and \(D\) splits over \(K(X)\), then \(X\) has a regular Mathieu–Zhao counterexample. In particular over a real closed field, all level-two compact twists with at least three active compact rank-one factors and a finite or connected geometric stabilizer have such a counterexample. Over a real closed field the same conclusion holds with a finite geometric stabilizer and any active compact simple factor of absolute rank at least two, even if there are fewer than three rank-one factors.
+
+**Proof.** Choose \(\chi\) with \(o(\chi)=[D]\). For finite \(H\), the generic intersection \(H\cap g^{-1}Sg\) is \(H\cap\bigcap_g g^{-1}Sg\). In fact for each of the finitely many elements of \(H\) outside the core of \(S\), membership in a conjugate of \(S\) is a proper closed condition on \(g\). For \(S\) diagonal on a pair of factors the core is its diagonal center of order two. The restriction of \(\chi\) to \(H\) intersected with the center of the three factors extends to a sign character on the full center of these factors. Two of the three coordinate signs are equal. For the diagonal on this pair the extension, hence also \(\chi\), is trivial on the generic intersection. This makes \(D\) split over \(K(X)^S\) by the theorem. The generic split rank-one obstruction supplies the witness.
+
+For connected \(H\), let \(H_{ij}\) be its intersection with the product of a pair of the chosen factors. The projection of \(H\) to either factor is connected and reductive, hence either toral or the whole factor. The projections of \(H_{ij}\) are normal in these projected groups. If one projection of \(H_{ij}\) is the whole factor, then either \(H_{ij}^{\circ}\) contains that factor or \(H_{ij}^{\circ}\) is the graph of an isomorphism of the two factors. This follows by taking the semisimple Lie algebra of \(H_{ij}^{\circ}\) in the two copies of \(\mathfrak{sl}_2\). The first case contradicts activity. In the graph case, the connected projection of \(H\) to the pair normalizes the graph and is contained in it, because the identity component of its normalizer is the graph itself. Thus \(H_{ij}\) is the graph and \(\chi\) is trivial on it. In the remaining case the two projections of \(H_{ij}\) lie in tori or in centers. After two independent general conjugations, those tori intersect in the center of the rank-one group, so the generic intersection with the diagonal is contained in its center. Choose the pair by the same three signs as before. In all cases \(\chi\) is trivial on the generic intersection. The chosen diagonal is active on the generic fibre: in the graph case the intersection of two general graph subgroups has dimension one, and in the toral case the generic intersection is finite. Apply the invariant field formula and the split rank-one obstruction.
+
+Finally, for finite \(H\) and a higher-rank compact simple factor over a real closed field, choose a compact long-root rank-one subgroup. Its central involution is noncentral in that simple factor, by the neighboring Cartan integer as in the long-root theorem above. The subgroup contains no nontrivial normal subgroup of \(G\), so its generic intersection with \(H\) is trivial. The Hamilton class therefore splits over its invariant field. This again gives a regular witness. \(\square\)
+
+**Corollary (Exact generic splitting tests for two compact rank-one factors with finite stabilizer).**
+
+Let \(G\) be the product of two compact simply connected rank-one factors over a real closed field and suppose \(H\) is finite. For each normal factor, restrict the Galois-invariant characters \(\chi\) with \(o(\chi)\) the Hamilton class to the intersection of \(H\) with that factor. For a diagonal do the same on the intersection with the diagonal center. These are the intersections of \(H\) with the respective cores, which are the generic stabilizers for finite \(H\). The rank-one subgroup splits over its own invariant field exactly when one such restriction is trivial. These three tests decide whether any connected reductive subgroup of \(G\) attains positive split semisimple rank over its invariant field. Indeed a connected almost simple subgroup is a factor or a diagonal, and a class split over a larger subgroup's invariant field stays split over the invariant field of its rank-one factor. The tests therefore apply without the toral restriction on \(H\). \(\square\)
+
+## Ordinary surfaces detect nonseparated exceptional leading symbols
+
+**Theorem (Smooth biforms of effective degree one or two exclude exceptional Laurent purity).**
+
+Let \(X=\mathrm{SU}_2/\Gamma\) for \(\Gamma=2O\) or \(2I\) in its pointed compact form over a real closed field. Let \(P\) be a regular Laurent phase on \(X\times\mathbb G_m\) of greatest half-matrix degree \(d>0\). Write its leading symbol on the rank-one matrix cone in the variables \(u,v,t\), with \(u,v\) the two binary vectors and \(t\) the scalar. Suppose that symbol is
+\[
+              G(v)\bigl(t^{-e}W(u;1,t)\bigr)^{d/e},
+        \qquad e\in\{1,2\},\quad e\mid d .
+\]
+Here \(G\) is a right-invariant binary form of degree \(2d\) whose zero divisor is supported on the three exceptional rotation orbits, and \(W(u;s_0,s_1)\) is bihomogeneous of degree \((2e,2e)\) with smooth zero divisor in \(\mathbb P^1\times\mathbb P^1\). Then \(P\) and every nonconstant polynomial in \(P\) have infinitely many nonzero pure moments among the multiples of any fixed positive integer. The theorem allows \(W\) to couple the left binary vector and the scalar, so the leading Laurent coefficients need not be proportional.
+
+**Proof.** First work with algebraic coefficients. For a prescribed divisor \(M\) of the moment orders, enlarge the field to contain a primitive \(dM\)-th root of unity. At a sufficiently good place of absolute degree one with characteristic \(p\), set \(m=(p-1)/d\). The rank-one cone residue computation gives
+\[
+ p\Lambda(P^m)\equiv
+        [v_0^{p-1}v_1^{p-1}]G^m\;
+        [u_0^{p-1}u_1^{p-1}s_0^{p-1}s_1^{p-1}]W^{(p-1)/e}
+                                                   \pmod p .
+\]
+Indeed the highest half-matrix degree in the \(m\)-th power is \(p-1\), so only that degree contributes to the residue. Scalar balancing gives \(t^{p-1}\) in \(W(u;1,t)^{(p-1)/e}\), which is its central homogeneous coefficient in the \(s\)-variables. The factor from \(G\) is a unit by the three-branch cyclic descent in the generic density theorem above.
+
+If \(e=1\), the smooth \((2,2)\) curve \(V(W)\) has genus one. Its \(H^1(\mathcal O)\) identifies with \(H^2(\mathcal O(-2,-2))\) via the divisor sequence. Frobenius on this line raises a Čech representative to its \(p\)-th power and multiplies by \(W^{p-1}\), so the second displayed coefficient is its Frobenius scalar. For example, enlarge the number field so the curve has a point and its elliptic curve has rational \(3\)-torsion. At every sufficiently large degree-one good prime its trace of Frobenius is \(2\) modulo \(3\). The Hasse bound rules out a nonzero multiple of \(p\), so the trace is nonzero modulo \(p\), giving ordinary reduction.
+
+If \(e=2\), take the double cover of \(\mathbb P^1\times\mathbb P^1\) with branch equation \(W=0\) and root line bundle \(\mathcal O(2,2)\). It is a K3 surface: smoothness follows from the branch hypothesis, the canonical bundle is trivial by the double-cover formula, and \(H^1(\mathcal O)=0\) from the decomposition of the structure sheaf pushforward as \(\mathcal O\oplus\mathcal O(-2,-2)\). Its \(H^2(\mathcal O)\) is the latter summand's cohomology line. Frobenius on the anti-invariant summand multiplies the powered Čech representative by \(W^{(p-1)/2}\). The representative \(1/(u_0u_1s_0s_1)\) gives exactly the displayed coefficient. By [Bogomolov and Zarhin, *Ordinary reduction of K3 surfaces*](https://arxiv.org/abs/0902.1548), there is a finite extension after which ordinary places have density one. At those places Frobenius on \(H^2(\mathcal O)\) is nonzero.
+
+Degree-one places have density one after these extensions, and their sufficiently large residue characteristics satisfy \(p\equiv1\bmod d\). Thus the two displayed factors are simultaneously units at infinitely many \(p\). For general real closed coefficients, fix a proposed eventually vanishing tail and the finite-dimensional coefficient spaces for \(P,G,W\). The vanishing equations for the tail of multiples of \(M\) reduce to finitely many by Noetherianity. The leading-symbol identity, the support of the divisor of \(G\), and smoothness of \(W\) are algebraic conditions in these spaces. A solution over a real closed field therefore specializes to the real algebraic coefficients, contradicting the prime argument. A polynomial transform of degree \(k>0\) has the same form of leading symbol with half-matrix degree \(kd\) and right factor a scalar multiple of \(G^k\). This gives the claim for those transforms. \(\square\)
+
+For a nonseparated example in the \(e=2\) case take
+\[
+ W=(u_0^4+u_1^4)(s_0^4+s_1^4)+u_0^2u_1^2s_0^2s_1^2 .
+\]
+This is real for the compact antipodal left structure and the split scalar structure. On the open torus put \(A=(u_1/u_0)^2\) and \(B=(s_1/s_0)^2\), and divide the equation by the product of the nonzero middle monomials. The equation becomes \((A+A^{-1})(B+B^{-1})+1=0\). A singular point would require both \(A^2=B^2=1\), which is incompatible with that equation. Along the omitted coordinate lines the restrictions have simple zeros in the other coordinate, and the four corners do not lie on the divisor. For any allowed even \(d\) and right symbol \(G\) chosen with the compact reality, this yields a leading profile in which the coefficient of some intermediate scalar power is not proportional to the coefficient of the top scalar power.
+
+## Arbitrary stabilizers in three compact rank-one factors
+
+**Theorem (A diagonal or normal factor detects the Brauer class in three quaternion factors).**
+
+Let \(K\) have characteristic zero, let \(G,X,H\) be as in the principal-stabilizer character theorem, and suppose \(G\) has three active normal factors isomorphic over \(K\) to \(C=\mathrm{SL}_1(D)\) for a division quaternion algebra \(D\). If \(D\) splits over \(K(X)\), then it splits over \(K(X)^S\) for a normal factor or a diagonal on two of the three factors. Consequently \(X\) has a regular Mathieu–Zhao counterexample. The geometric stabilizer \(H\) may have arbitrary components. Over a real closed field this settles the level-two trace whenever there are at least three active compact rank-one factors.
+
+**Proof.** Choose a geometric stabilizer character \(\chi\) with \(o(\chi)=[D]\). We show first that for any pair of active isomorphic rank-one factors \(C_1,C_2\), if \(\chi\) is trivial on the intersection of \(H\) with their diagonal center, then a diagonal or one of these factors detects \([D]\). We work geometrically to calculate the stabilizer. Put \(H_{12}=H\cap(C_1\times C_2)\). It is normal in the reductive stabilizer \(H\), so its identity component is reductive. The generic diagonal stabilizer is computed from \(H_{12}\) by independent general conjugations in the two factors.
+
+If a projection of \(H_{12}^{\circ}\) is a whole factor, the derived Lie algebra shows that \(H_{12}^{\circ}\) is a graph of an isomorphism. The alternative of containing a normal factor contradicts activity. After geometric conjugation the graph is the ordinary diagonal. Its normalizer in the pair consists of \((g,g)\) and \((g,-g)\). A conjugate of a point in the second component belongs to the diagonal only if the relative conjugating matrix \(r\) satisfies \(rxr^{-1}=-x\) for some \(x\in\mathrm{SL}_2\). This implies \(xrx^{-1}=-r\) and hence \(\operatorname{tr}r=0\), a condition avoided generically. Thus the generic stabilizer is contained in the graph, where \(\chi\) is trivial. A general intersection of two graphs has dimension one, since it is the centralizer of a general relative matrix. This gives the split diagonal action on the generic fibre.
+
+If one projection of \(H_{12}\) is finite, the other is proper by the preceding case. For each noncentral element of the finite projection, its conjugacy class cannot be contained in the other projection: the normal subgroup it generates is the whole simple factor. Hence general independent conjugates of the two projections intersect only in their centers. The generic diagonal stabilizer is central, as desired.
+
+In the remaining case the two connected projections are tori \(T_1,T_2\), and the projections of \(H_{12}\) lie in their normalizers. Geometrically, in the adjoint three-space the two conjugated tori have two general nonisotropic axis lines. Their span is nondegenerate and their inner product is nonzero. An orthogonal map preserving both lines must act with the same sign on both and with sign \(+1\) on the perpendicular line. Thus their normalizers have common preimage in \(\mathrm{SL}_2\) consisting of the center and the two lifts of a half-turn. In particular every noncentral element of the generic diagonal stabilizer comes from the product of the two Weyl cosets.
+
+If \(\dim H_{12}^{\circ}<2\), such noncentral elements are absent generically. Indeed for a fixed element \((h_1,h_2)\) in those two cosets, each coordinate has the two-dimensional trace-zero conjugacy class. Requiring their two conjugates to agree cuts out a four-dimensional set of conjugating pairs in the six-dimensional group. Allowing \((h_1,h_2)\) to range in a subset of dimension at most one still gives a proper locus. So the only case to consider is \(H_{12}^{\circ}=T_1\times T_2\) with the paired Weyl coset present. Here \(\chi\) is trivial on \(T_1\times T_2\), since conjugation by an element of that coset inverts both tori. If \(\chi\) is trivial on the paired Weyl coset as well, use the diagonal. If it is nontrivial, \(\chi\) must be trivial on \(H\cap C_i\) for at least one \(i\in\{1,2\}\). Otherwise both of these normal-factor intersections, each containing its full torus, would contain a single Weyl element with character value \(-1\). Their product would have value \(+1\) on the paired Weyl coset, where the character is constant. The chosen normal factor therefore detects \([D]\), by the same stabilizer-character criterion, since its stabilizer is \(H\cap C_i\) on every orbit.
+
+All the subgroups used are defined over \(K\). In the toral and finite cases the diagonal generic stabilizer is finite, and in the graph case it is proper. A normal factor is active by hypothesis. When one of these subgroups splits over its invariant field, the generic split rank-one obstruction gives the regular pair.
+
+Finally \(\chi\) on the intersection of \(H\) with the center of the three factors extends to a character of the full elementary abelian center. Two of its three coordinate signs are equal, so it is trivial on their diagonal center. Apply the pair argument. \(\square\)
+
+**Corollary (The two-factor level-two case with a connected stabilizer).**
+
+Let \(K\) be real closed and let \(X\) be a compact homogeneous form for two simply connected compact rank-one factors, both active. If its geometric stabilizer is connected and its function field has level two, then its trace has a regular Mathieu–Zhao counterexample.
+
+Indeed the connected stabilizer is trivial, a graph, or a torus, by the classification of the two projections used in the proof. The first two cases have no nontrivial characters and hence no Hamilton class in the constant Brauer kernel. A two-dimensional torus is a product of maximal tori. The two normal-factor quotients give an equivariant isomorphism from \(X\) to the product of the resulting rank-one spaces, since it does so geometrically. The geometric stabilizer characters and their descent obstructions decompose accordingly. Since \(\operatorname{Br}(K)\) has order two, at least one of the rank-one quotient spaces splits the Hamilton class. This is the invariant field of the opposite factor.
+
+If the stabilizer is a one-dimensional torus, choose geometric coordinates \((z^a,z^b)\) with coprime integers \(a,b\). If the diagonal central involution is absent, the pair argument applies directly. Otherwise both \(a,b\) are odd, and \(H\cap C_1,H\cap C_2\) have orders \(|b|,|a|\), respectively. An odd power of any character with Hamilton obstruction then kills both these finite groups and keeps its obstruction. Thus a normal factor gives the witness. This last rank-one stabilizer argument also holds over any characteristic-zero field for two isomorphic division quaternion factors, with splitting of their quaternion class over \(K(X)\) in place of level two. \(\square\)

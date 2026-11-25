@@ -254,6 +254,13 @@ For any odd prime of one of the three supports not dividing \(e\), its valuation
 
 Consequently, any fixed logarithmic tolerances in all three radical caps eventually admit this false family. At a repaired cutoff \(Y\asymp (H^2)^M\) the simultaneous tests at the first two prime layers allow \(Y^{1/M-o(1)}\) distinct target radicals, despite the absence of true occurrences among these prescribed representatives. This is an obstruction to this local test only. The full original high valuations, which are generally \(2e\) on the supports here, cannot be replaced by their truncation at two.
 
+Fixed polynomial families with original factor multiplicities
+at least three cannot extend the construction to a third-layer
+polynomial divisibility identity. For individual integer parameters
+with nonzero additive error, third-layer divisibility forces one
+fixed factor to take square-full values away from a fixed pool.
+[Polynomial models and third-layer bounds](ABC_MINIMAL_REPAIR_POLYNOMIAL_THIRD_LAYER.md)
+
 ## Exact weighted form on the repaired target radical alone
 
 For fixed squarefree \(R\), every possible repaired target of

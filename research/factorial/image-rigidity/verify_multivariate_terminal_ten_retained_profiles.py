@@ -38,6 +38,10 @@ def cores(private):
             if Q(gap, 9*lower+1) > CAP and strength <= cutoff:
                 eligible.extend((lower, gap, sign, strength) for sign in (-1, 1))
 
+    # Traverse in the same lexicographic order used after column reversal.
+    if not private:
+        eligible.sort()
+
     def collect(index, rows, budget):
         if index == len(eligible):
             if private or rows and rows <= tuple(sorted((a, d, -sign) for a, d, sign in rows)):
@@ -186,7 +190,7 @@ def verify(private, shard, shards, replay):
     require(log_bounds(1+Q(81,80))[0]/log_two_upper > 1+Q(1,126), "Gaussian attenuation")
     require(Q(190*17,18)*log_two_upper < 126, "tail attenuation conversion")
     items = cores(private)
-    require(len(items) == (280 if private else 988), "retained-list count")
+    require(len(items) == (280 if private else 1025), "retained-list count")
     require(0 <= shard < shards, "valid shard index")
     total_leaves = total_cells = 0
     selected = items[shard::shards]

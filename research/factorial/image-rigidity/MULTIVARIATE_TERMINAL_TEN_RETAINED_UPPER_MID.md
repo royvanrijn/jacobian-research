@@ -25,8 +25,10 @@ and base in the exact enumeration. The checker excludes any row
 whose squared outer mean is less than \((19/25)^2\). It applies the
 same test to the product of squared means for each list.
 The [finite replay](verify_multivariate_terminal_ten_retained_upper_mid.py)
-finds seventeen lists up to simultaneous reversal, including the empty
-list, by integer and rational comparisons.
+uses the same lexicographic row order before and after reversing all
+orientations. There are 31 signed lists, including three fixed by
+reversal, giving seventeen lists up to simultaneous reversal. The
+empty list is included.
 
 For a retained list with squared order-nine outer mean \(q\), the
 residual mean \(v\) satisfies \(u=\sqrt q\,v\). The checker brackets
