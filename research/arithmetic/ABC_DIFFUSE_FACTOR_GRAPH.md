@@ -4682,3 +4682,301 @@ triangles on each edge, with arbitrary prescribed private
 valuations. The construction gives no lower bound on the numerical
 weights of the private powers relative to the complete terms, and
 no upper bound on the remaining radicals.
+
+### A primitive matching with saturated internal root entropy
+
+There is a family of positive primitive integer triples \(A+B=C\)
+which is a matching in the three complete-value sets and whose
+two varying original root coordinates on each letter have
+asymptotically full joint entropy and vanishing normalized
+mutual information. The coordinate powers are distinct,
+and all six roots in each triple are squarefree and pairwise
+coprime. Thus complete matching, exact additivity and
+internal coordinate independence are compatible even with
+this arithmetic form of the root vectors.
+
+The construction uses powers one and two and does not have a
+small radical. The small-radical hypothesis is the additional condition
+needed to rule out this mechanism.
+
+**Construction and primitive density**
+
+For positive integers \(x,y\in[N,2N]\), put
+\[
+ A=x^2(x+4y),\qquad
+ B=y^2(5x+2y),\qquad
+ C=(x+y)^2(x+2y).
+\]
+Expansion gives
+\[
+ C=x^3+4x^2y+5xy^2+2y^3=A+B.
+\]
+The six root factors are the linear forms
+\[
+ x,\quad x+4y,\quad y,\quad 5x+2y,\quad
+ x+y,\quad x+2y .
+\]
+Each is of size comparable to \(N\). The coefficient
+determinants of any two distinct forms are nonzero and have
+prime factors only among \(2,3,5\). This follows directly
+from the displayed coefficient vectors: apart from \((5,2)\)
+and \((0,1)\), the vectors are \((1,s)\) with
+\(s\in\{0,4,1,2\}\). Determinants with \((5,2)\) have
+absolute values \(2,18,3,8\), and its determinant with
+\((0,1)\) has absolute value five.
+
+Require \(x\equiv y\equiv1\bmod900\). At \(p=2\) the
+only even root is \(x+y\equiv2\bmod4\). At \(p=3\) the
+only divisible root is \(x+2y\equiv3\bmod9\). At \(p=5\)
+the only divisible root is \(x+4y\equiv5\bmod25\).
+All three local conditions give exact valuation one.
+For \(p\ge7\), two root factors are simultaneously
+divisible by \(p\) only when \(x\equiv y\equiv0\bmod p\).
+That bad event has density \(1/p^2\).
+For each of the six linear forms, divisibility by
+\(p^2\) also has density \(1/p^2\), because its
+coefficients are coprime. The union of bad residues
+therefore has density at most \(7/p^2<1\) at \(p\).
+
+For any fixed cutoff \(P\ge7\), CRT and counting
+points in residue classes give a limiting surviving
+proportion at least
+\[
+    \frac{1}{900^2}\prod_{7\le p\le P}
+                       (1-7/p^2),
+\]
+which is bounded below by a positive constant
+independent of \(P\). To discard the primes \(p>P\),
+the number of parameter pairs with some \(p>P\)
+dividing both \(x,y\) is at most
+\[
+ O\!\left(\sum_{P<p\le 2N}(N/p+1)^2\right)
+       =O(N^2/P+N\log N+N).
+\]
+For a square factor \(p^2\mid L(x,y)\), with
+\(L\) one of the six forms, one has \(p\ll\sqrt N\).
+At least one coefficient of \(L\) is a unit modulo
+\(p^2\), so fixing the other parameter gives
+\(O(N/p^2+1)\) choices. Summing over \(p>P\) gives
+\(O(N^2/P+N^{3/2})\) for each form. Choose \(P\) so
+large that the \(N^2/P\) error is smaller than half
+the surviving lower proportion, then take \(N\) large.
+This leaves \(\gg N^2\) pairs for which all six
+roots are squarefree and pairwise coprime. The
+resulting triples are primitive.
+
+**Matching and coordinate entropy**
+
+For each of the three letters the map from \((x,y)\)
+to its two root values is an invertible linear map
+over \(\mathbb Q\), with fixed nonsingular matrix.
+For a fixed complete value \(T\), the root raised to
+power two has support on \(\operatorname{rad}(T)\) because
+its square divides \(T\). The fixed-radical integer bound
+gives \(N^{o(1)}\) possibilities uniformly since \(T\ll N^3\).
+The other root is then determined, and the root pair determines
+\((x,y)\). Thus each complete vertex is incident to at most
+\(N^{o(1)}\) selected pairs.
+Greedy selection deleting conflicts on any of the
+three complete values leaves a matching of size
+\(N^{2-o(1)}\). In particular all three complete
+marginal entropies approach \(2\log N\) in the
+uniform edge distribution.
+
+The two root coordinates on each letter jointly
+determine the parameter pair, so their joint
+entropy is \((2-o(1))\log N\) on the matching.
+Each one has entropy at most \(\log N+O(1)\)
+because it is an integer of size \(O(N)\).
+By entropy subadditivity each one therefore has
+entropy \((1-o(1))\log N\), and their mutual
+information is \(o(\log N)\). This gives full
+normalized coordinate entropy in all three
+letters simultaneously.
+
+Finally, on the retained pairs the radical of
+\(ABC\) is the product of the six squarefree
+coprime roots. It is comparable to \(N^6\),
+whereas \(C\) is comparable to \(N^3\). Thus its radical has height exponent two. The small-budget
+regime is still open for matchings of this type.
+
+## Additive energy of wholly diffuse complete-value dictionaries
+
+Let \(P,Q\) be two complete-value dictionaries extracted
+from anatomic boxes in the sequential small-budget limits.
+They may be the very same dictionary. Write \(n=X^L\).
+Assume each letter has normalized root cap tending to the
+same number \(l>0\), each weak scaled-degree measure
+\(\nu_P,\nu_Q\) has mass \(l\) and no atoms, and their
+full numerical heights tend to \(h_P,h_Q\), respectively.
+Set
+\[
+  e_W=h_W-\int r\,d\nu_W(r)\quad(W=P,Q).
+\]
+Thus \(e_W\) is the escaped first moment. Fix a choice of sign
+\(\sigma\in\{-1,1\}\). There is a positive normalized deficit
+\(\delta\), depending on the limiting two-letter profile,
+such that, uniformly for nonzero integers \(D\) allowed
+to vary with \(X\),
+\[
+   \#\{(u,v)\in P\times Q:\ u+\sigma v=D\}
+           \ \le\ n^{l-\delta+o(1)} .               \tag{DS1}
+\]
+No coprimality condition on \(u,v\) is required. One can
+take a fixed positive \(\delta\) throughout any family
+with a uniform strict quantile margin, bounded retained
+degrees, and uniform small-coordinate errors as in the
+proof below.
+
+### Selecting enough numerical weight
+
+Let \(\rho=\nu_P+\nu_Q\), of total mass \(2l\), and
+write \(F_\rho(t)\) for its fractional upper moment
+at mass \(t\). Since it is nonatomic and has positive
+mass, its upper half has strictly larger mean than its
+lower half. To see strictness, select a median \(r_0\)
+separating the two halves, which is possible by nonatomicity.
+On the upper half \(r>r_0\) almost everywhere and on the
+lower half \(r<r_0\) almost everywhere. In particular
+\[
+ F_\rho(l)>\tfrac12\int r\,d\rho(r).
+\]
+Choose a letter \(W_0\) with \(e_{W_0}=\max(e_P,e_Q)=e_*\).
+It follows that
+\[
+ F_\rho(l)+e_*
+   >\tfrac12(h_P+h_Q)\ge h_{\min}:=\min(h_P,h_Q).
+ \tag{DS2}
+\]
+By continuity of the fractional upper moment, one can use
+a mass \(p<l\) with a fixed positive margin in (DS2).
+Moreover, one can restrict the selected degrees to a
+bounded interval: increase a continuity cutoff and
+use integrability to make the lost finite moment as
+small as desired. Equivalently one can pick continuity
+bands in the two letters, or their prescribed fractions
+near a continuity quantile, with combined mass at most
+\(p\), numerical weight at least \(w\), and
+\[
+  w+e_*>h_{\min}.
+\]
+Choose a compact containment bound \(S\) for all selected
+scaled degrees; an initial lower cutoff \(s>0\) can be
+imposed with arbitrarily small loss of numerical weight.
+
+These selections are realized by whole original root
+coordinates, with arbitrarily small mass and moment
+losses. Indeed, each individual coordinate in a
+fixed compact scaled band has mass tending to zero.
+A coordinate of nonvanishing mass would give a point
+atom along a subsequence. Choose continuity intervals
+for the retained pools and rank prelimit coordinates by
+degree, with a final round down or round up at this
+vanishing cost. The full moment on bounded continuity
+windows converges.
+
+Choose a continuity cutoff \(H>S\) arbitrarily large and
+retain the original full tail on the selected endpoint
+\(W_0\). Its normalized root cost is at most
+\(\zeta+o(1)\), with \(\zeta\) arbitrarily small,
+by the uniform bound on first moments and \(H\) large.
+Its full numerical weight tends to
+\(e_*+\int_{(H,\infty)}r\,d\nu_{W_0}(r)\ge e_*\).
+The bounded selection and the tail on this endpoint
+use disjoint degree positions. If \(e_*=0\), the tail
+may be omitted. Choose a strict margin so that
+\(p+\zeta<l\), and choose \(\xi>0\) satisfying
+\[
+     w+e_* -2S\xi>h_{\min}.
+ \tag{DS3}
+\]
+All choices are fixed before taking sufficiently small
+box and height tolerances.
+
+### Uniform shift count
+
+Use the roots of the bounded-degree selections as the
+band records, and the root tuple determining the full
+tail power on \(W_0\) as the extra record. At fixed
+truncation the original bounded-degree anatomic roots
+are squarefree and have disjoint prime supports
+within each value. The single packed root of possible
+non-squarefree type has scaled degree tending to
+infinity and may be in the retained tail. Its possible
+values are still bounded by its box root cap.
+
+Any prime common to \(u\) and \(v\) divides \(D\).
+Call a pair bad if the product of the selected
+unpowered band roots on either endpoint has radical
+overlap with \(\operatorname{rad}(D)\) at least \(n^\xi\).
+Whenever a pair exists, \(|D|\le2X^{O(1)}\).
+For each endpoint, the usual outside divisor allocation
+count bounds the number of bad values by
+\(n^{l-\xi+o(1)}\), uniformly in \(D\): choose a divisor
+of \(\operatorname{rad}(D)\) of the stated mass, allocate
+its primes to the selected positions, then count only
+root multiples at those positions. The divisor and
+assignment counts are \(X^{o_X(1)}\) at fixed truncation.
+The assigned divisor saves \(\xi\) in the normalized
+root exponent. A single endpoint determines its partner
+through the fixed \(D\), so this also bounds bad pairs.
+
+On each remaining pair strip all primes dividing \(D\)
+from both bounded-band locks. Keep the one full tail
+lock intact. The two remaining full endpoint divisors
+are coprime, because a common prime would divide \(D\)
+and hence cannot survive on the endpoint without the
+tail. The strip loses numerical weight at most
+\(2S\xi+o(1)\) by squarefreeness in the bands and their
+upper degree bound. The product of the two coprime
+divisors has weight strictly exceeding \(h_{\min}\)
+by (DS3). Either endpoint is zero modulo its own
+divisor and lies in a fixed residue determined by \(D\)
+modulo the other divisor. Choose the shorter endpoint.
+Its height is less than the product of the moduli
+for sufficiently small losses, and so the fixed record
+admits at most one pair.
+
+Stripping is deterministic given the records and the fixed
+\(D\). The unstripped band/root and tail records have
+at most \(n^{p+\zeta+o(1)}\) possibilities. Together the
+good and bad branches give exponent at most
+\[
+    \max(p+\zeta,l-\xi)+o(1)<l .
+\]
+This proves (DS1). The use of exactly one tail lock is
+what avoids any need to control the numerical weight of
+overlap at escaped scaled degrees.
+
+### Energy and iterated sums
+
+If \(P=Q=S\) and \(|S|=n^{l+o(1)}\), apply (DS1) with
+\(\sigma=-1\) to every nonzero shift. Then
+\[
+ E_4(S)=\sum_D r_{S-S}(D)^2
+ \le |S|^2+n^{l-\delta+o(1)}|S|^2
+ \le n^{3l-\delta'+o(1)}
+\]
+for some \(\delta'>0\). With either sign, bounding the
+largest nonzero representation count in this way
+gives
+\[
+             |S\pm S|\ge n^{l+\delta+o(1)} ,
+\]
+up to decreasing \(\delta\). The difference-zero
+contribution is lower order because
+\(|S|^2-r_{S-S}(0)=|S|^2-|S|\). The same representation
+argument gives a uniform fixed-target upper exponent
+\((m-1)l-\delta\) for every fixed \(m\ge2\) sums of
+\(m\) elements of \(S\), by fixing all but two and
+using the plus-sign pair estimate. Young's inequality
+also transfers the squared energy deficit to higher
+equal-sum energies. The conclusions apply to saturated marginal dictionaries
+with arbitrary edge density, including a matching-shaped family.
+
+
+Coprime pairs from actual limiting boxes have an additional
+uniform version through the [pooled degree inequality](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-pooled-degree-inequality-and-primitive-shift-fibres).
+That version retains both escaped moments and can also use
+prime subproducts inside large atomic coordinates. Here the
+one-tail selection permits arbitrary common divisors.

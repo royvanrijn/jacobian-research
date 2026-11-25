@@ -1006,3 +1006,585 @@ three complete-letter dictionaries to have positive normalized
 exponent bounded away from zero. Its largest fixed-value fibers also
 have a uniform strict saving in normalized exponent. This leaves
 unrestricted endpoints with three large complete dictionaries open.
+
+## A pooled degree inequality and primitive shift fibres
+
+For two chosen letters \(U,V\), take their normalized prelimit root
+measure \(\omega\), with one contribution \(\beta_{T,e}\delta_{eL}\)
+per box coordinate. Write \(m=\omega([0,\infty))\),
+\(J=\int r\,d\omega\), and let \(F(t)\) be the largest numerical
+weight of a submeasure of \(\omega\) of mass \(t\). The cut can split
+the mass at its final degree. For any median \(a\) of \(\omega\),
+\[
+ 2F(m/2)-J=\int |r-a|\,d\omega(r).
+ \tag{PQ1}
+\]
+This follows by subtracting the lower-half moment from the upper-half
+moment. The contributions of the median cancel.
+
+For a sequence of actual boxes tending to \(d=1/3\), there is
+an absolute \(\eta>0\) such that on every pair of letters,
+\[
+ \liminf \bigl(2F(m/2)-J\bigr)\ge \eta.
+ \tag{PQ2}
+\]
+If this failed, a diagonal sequence of actual boxes would have
+\(d\to1/3\) and dispersion tending to zero for one fixed pair.
+Indeed, each approximating sequence can be taken far enough to
+make its budget and box tolerances arbitrarily small, with the
+inner height limits at its selected fixed truncation already taken.
+By (GE), \(m\to2/3\). The two taller heights tend to one, since
+\(c/2\le\max(a,b)\le c\), so \(1-o(1)\le J\le2+o(1)\)
+for every pair. Equation (PQ1) gives \(am=J+o(1)\).
+Along a subsequence the medians tend to \(a_*>0\), and for every
+fixed \(\rho>0\) the numerical weight outside
+\((a_*-\rho,a_*+\rho)\) tends to zero. In fact for \(r\)
+in this complement and all sufficiently late boxes,
+\(r\le (1+2a/\rho)|r-a|\). A slowly shrinking choice of \(\rho\)
+then has the same property. Both letters have height tending to
+\(a_*/3>0\), and hence both are finite-scale. This violates
+the exclusions following (GE), both when the third letter stays
+of positive height and when its height tends to zero. This proves
+(PQ2) without any assumption on the total nonatomic mass.
+
+There is an associated count for any single prime-resolved box
+selection. Choose full divisors on \(U,V\) from their anatomic
+roots, whose total normalized record cost is at most \(t\) and
+whose joint numerical weight exceeds the shorter free height by
+a fixed positive margin. Full means that if a prime is selected,
+its whole indexed power is used. For example, for squarefree
+root coordinates one may select subproducts of their primes.
+Record the chosen root divisors and the indices specifying their
+powers. At fixed truncation the number of records is
+\(n^{t+o_X(1)}\) with \(n=X^L\). This remains true for adaptive
+selections if their combined root product is at most \(n^t\).
+Subdivide the chosen divisors by their dyadic sizes and sum over
+the subpower number of size patterns. Conditions in the box
+and the height margin tolerate arbitrarily small fixed errors
+before the inner limit.
+
+For any fixed signed shift \(U\pm V=D_0\), restrict to pairs
+with \(\gcd(U,V)=1\). Their recorded divisors are coprime.
+The shorter term is zero modulo its own divisor and is a
+known residue modulo the other's divisor. Their product exceeds
+that term's height bound, giving at most one pair per record.
+In particular the shift need not have a small radical or occur
+as a third complete value in the original box. For actual
+triples write \(H(T)\) for the entropy of the remaining complete
+letter on the uniform edge measure, in natural logarithms.
+Reconstruction using \(T\) and the selected record also gives
+the box inequality
+\[
+ \frac{\log |\mathcal B|}{\log n}
+ \le \frac{H(T)}{\log n}+t+o_X(1).
+ \tag{PQ3}
+\]
+The count holds on any edge subfamily on which the selection works.
+
+Writing \(Y\) for the pair of divisors and their power indices,
+there is also the exact identity
+\[
+ H(T\mid Y)=H(U,V,T\mid Y)\ge \log|\mathcal B|-H(Y)
+ \tag{PQ4}
+\]
+on the subfamily. In particular some fixed record has at
+least \(n^{d-t-o(1)}\) distinct admissible targets. Conversely,
+once the locks have combined weight above the short height, a
+uniform power-saving bound for the number of admissible
+targets per record would give the same saving for the edge
+count after paying \(t\). This criterion concerns distinct
+targets across the pair of numerical progressions determined
+by the record.
+
+There exist absolute \(\xi,\omega_0>0\) and a bounded scaled
+degree cutoff \(R\) such that the primitive shift count at
+every actual limiting \(1/3\) endpoint, on every pair of free
+dictionaries satisfying the next prime-size condition, is at
+most \(n^{1/3-\xi+o(1)}\), uniformly in the shift. Require
+that each prime in an indexed root of scaled degree at most
+\(R\) has normalized logarithm at most \(\omega_0\).
+By (PQ2), the upper half has numerical weight at least
+\(h_{\min}+\eta/3\) at sufficiently small tolerances.
+Concavity and \(J\le 2+o(1)\) bound the slope of \(F\)
+uniformly on a fixed neighborhood of \(1/3\).
+Choose \(t=1/3-\xi\) with absolute small \(\xi>0\) so
+\(F(t)>h_{\min}+\eta/4\). Take \(R\) large enough that
+the entire tail above \(R\) costs less than \(t/2\).
+Retain it in full. Take the anatomic truncation with its
+potentially packed coordinate above \(R\); below \(R\) the
+roots are squarefree. Select their primes in descending order
+of degree until the next prime would exceed the mass \(t\).
+This approximates the fractional cut with numerical loss at
+most \(R\omega_0\). Choose \(\omega_0<\eta/(8R)\) and apply
+the reconstruction bound. In particular, when the two weak
+measures are wholly nonatomic the prime-size condition
+holds automatically on a bounded degree band, because even
+the largest root there has vanishing normalized mass.
+
+The dispersion term retains escaped first moment. In (PQ2) its
+limiting expression is
+\(e_U+e_V+\int |r-a|\,d(\nu_U+\nu_V)(r)\) along a
+converging subsequence of medians. For example, write
+\(D_T=\int (3-r)_+\,d\nu_T(r)\) for the moment of the deficit
+below the scaled order three used in the
+[powerful triple transfer](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md#theorem-a-strict-saving-from-endpoint-diffusion).
+At balance, \(e_T+\int|r-3|\,d\nu_T=2D_T+h_T-1\le2D_T\).
+The median minimizes the absolute-deviation integral, so (PQ2)
+gives \(D_U+D_V\ge\eta/2\) for every pair. This connects the
+two-letter count directly to the fullness deficit, with a
+uniform moment bound across the entire endpoint.
+
+## A quantitative bound for complete-value dictionaries
+
+Let \(N_\lambda(X;T,\mathcal D)\) count ordered positive primitive
+triples \(a+b=c\le X\), \(\operatorname{rad}(abc)<c^\lambda\), whose
+specified complete letter \(T\in\{a,b,c\}\) belongs to \(\mathcal D\).
+There are absolute \(\sigma_0,\lambda_0>0\) such that uniformly over
+\(T\) and every dictionary of at most \(X^{\lambda/800}\) values,
+\[
+ N_\lambda(X;T,\mathcal D)\ll_{\lambda,\varepsilon}
+ X^{(1/3-\sigma_0)\lambda+\varepsilon}
+ \qquad(0<\lambda<\lambda_0).
+ \tag{TD1}
+\]
+This gives a specific dictionary exponent in (FT2), independent of
+the implicit saving in (FT1).
+
+### The two-free-letter weighted quantile
+
+Use the limiting box convention from (FT1), and suppose the box
+count exponent is \(d=d_0=1/3\) in base \(n=X^L\), with a complete
+\(T\)-dictionary of size \(n^{\theta+o(1)}\), \(0\le\theta<d_0\).
+The necessary conditions (GE) give total root mass \(d_0\) on
+each letter. Name the other letters \(A,B\) with \(h_A\le h_B=1\).
+The existing short-height exclusion keeps all limiting heights
+positive.
+
+Both free letters have arbitrarily cheap positive-weight full
+moduli. In fact, if one were finite-scale, the other would admit
+such moduli by the conclusions preceding (GE1). Fix \(T\) at cost
+\(\theta\), lock a cheap modulus on the other letter, and release
+the finite-scale letter using the amplified (GW). This would give
+\(d_0\le\theta\). A positive-height letter which is not finite-scale
+admits the cheap moduli by the same high-block argument as (GE1).
+Now use that proof with \(T\) fixed at cost \(\theta\), leaving only
+the other free letter in the congruence. This gives
+\[
+ c_A,c_B\ge d_0-\theta.
+ \tag{TD2}
+\]
+In particular, the total atomic mass on either free letter is at
+most \(\theta\), and every individual coordinate on either letter
+has mass at most \(\theta+o(1)\). A sequence of coordinates with
+mass greater than \(\theta\) by a fixed margin would admit a
+bounded subsequence of scaled degrees by the first-moment bound,
+producing an atom of mass greater than \(\theta\).
+
+Let \(\nu=\nu_A+\nu_B\) and \(e=e_A+e_B\) be the combined weak
+degree measure and escaped numerical weight. For \(0<t<2d_0\)
+write \(W_\nu(t)\) for its highest-weight submeasure of mass \(t\),
+measured by the integral of the scaled degree. Define
+\[
+ W^*(t)=e+W_\nu(t).
+\]
+This is the limiting numerical weight of the fractional top
+\(t\)-mass of the two prelimit spectra. For example, the exact
+prelimit upper-quantile formula is
+\[
+ W_{\nu_{\rm pre}}(t)
+  =\inf_{b\ge0}\left(bt+\int(r-b)_+\,d\nu_{\rm pre}(r)\right).
+\]
+The infimum can be restricted to a compact \(b\)-interval for \(t>0\)
+fixed, using the bounded first moment. Replacing the unbounded
+integrand by \(r-\min(r,b)\), the objectives converge uniformly on
+that compact interval by weak convergence, moment convergence,
+and the common Lipschitz bound in \(b\). This yields \(W^*(t)\).
+
+Take the full A and B coordinates in descending scaled degree until
+a fractional top selection of mass \(t\) is covered. Rounding up
+the last root costs at most \(\theta+o(1)\) by (TD2) and can only
+increase the weight. After freezing these full factors \(M_A,M_B\)
+and the complete \(T\), the signed equation prescribes
+\[
+ A\equiv0\pmod {M_A},\qquad A\equiv\pm T\pmod {M_B}.
+\]
+The two moduli are coprime by primitivity for every nonempty
+record. Thus when their product has numerical weight \(>h_A\)
+there is at most one positive \(A\) per record. If \(W^*(t)>h_A\)
+and \(t+2\theta<d_0\), this would contradict the original count.
+Consequently, for \(\theta<d_0/2\), continuity gives
+\[
+ W^*(d_0-2\theta)\le h_A.
+ \tag{TD3}
+\]
+For \(\theta=0\), take \(t\uparrow d_0\) in this argument.
+The increasing concave quantile function has increment from \(t\)
+to \(d_0\) at most \((d_0-t)W^*(t)/t\). A median \(a\) of \(\nu\)
+splits its total mass \(2d_0\) into two halves, splitting a median
+atom if necessary. One then has the exact identity
+\[
+ 2W^*(d_0)=h_A+h_B+e+\int|r-a|\,d\nu(r).
+\]
+Combining this with (TD3) gives the quantitative shared-scale
+obstruction
+\[
+ (1-h_A)+e+\int|r-a|\,d\nu(r)
+       \le \frac{4\theta}{d_0-2\theta}.
+ \tag{TD4}
+\]
+At \(\theta=0\) this alone contradicts (TD2), giving a shorter
+completion of (FT1) once the two free letters have been shown
+wholly nonatomic. At positive \(\theta\) it forces both free
+spectra close to one common scale unless the weighted pair lock
+has already saved. For example, on the formal profile with both
+free spectra \((1/3)\operatorname{Unif}[2,4]\), root rounding costs
+\(o(1)\), and the combined highest \(t\)-mass has weight
+\(4t-\tfrac32t^2\). The one-row CRT argument alone therefore
+excludes target dictionary exponents
+\(\theta<(\sqrt{10}-3)/3\) there.
+
+### A first residue determinant in the remaining shared-scale regime
+
+Suppose \(\theta\le1/800\), so the right hand side of (TD4) is at
+most \(6/397\). Since the full numerical height of \(B\) is one,
+\[
+ |a-3|\le 3\left(e_B+\int|r-a|\,d\nu_B(r)\right)\le18/397.
+\]
+Outside the open band \((14/5,16/5)\), every degree is at least
+\(307/1985\) away from \(a\). It follows that \(\nu_B\) puts mass
+at most \(30/307\) outside that band. Its nonatomic mass in the
+band is at least \(d_0-30/307-1/800>13/80\).
+
+Choose a compact continuity band inside this open band with
+nonatomic mass \(>13/80\). Using only coordinates of individually
+vanishing normalized mass, choose a whole-coordinate \(B\)-block
+of mass \(\mu=13/80+o(1)\) there. This selection is possible by
+discarding all coordinates above successively smaller mass
+thresholds, since finitely many coordinates above any fixed
+threshold can contribute only atom mass in the weak limit.
+The full modulus \(N\) from fixing the block has prime powers of
+degrees strictly between \(k\) and \(2k\), where \(kL\to14/5\).
+The roots in this bounded scaled-degree band are squarefree, by
+using the BBLT anatomic construction with truncation error \(o(L)\).
+Its sole potentially nonsquarefree root has scaled degree tending
+to infinity. Thus the shallow modulus for the first determinant
+is exactly \(Q=\operatorname{rad}(N)\), of normalized mass \(\mu\).
+
+Freeze the complete \(T\) and the A coordinates above a fixed
+continuity cutoff greater than \(1000\) on the scaled degrees.
+The latter cost at most \(1/1000+o(1)\) by the first moment.
+Group all remaining A roots into the one root \(z\), with degree
+\(q=\lfloor a/L\rfloor\), and write their powers exactly as
+\(v z^q\) with a rational correction \(v\). The normalized narrow
+height is at most \(1/3\). The wider numerical height exponent is
+at most \(6/397\), since
+\[
+ \limsup \sum_{e\text{ retained}}|eL-qL|\,\beta_{A,e}
+   \le \int|r-a|\,d\nu_A(r)
+   \le 6/397.
+\]
+The compact continuity cutoff justifies the first inequality,
+and the height of the reduced correction is at most the sum of
+the absolute discrepancies. The A-term lies in the unit residue
+class determined by \(T\) modulo \(N\), after the fixed coefficient
+and fixed A factors are removed. Primitivity makes all these
+divisions legitimate.
+
+Use the first determinant in (QD2), or (DNR1), with
+\[
+ \alpha=99/100,\qquad M=7,\qquad r_0=7/20.
+\]
+Its normalized Taylor order is
+\(y=\alpha(M+1)r_0=693/250<14/5\), and the row height bound is
+\[
+ B\ \le\ \frac7{60}+\frac{42}{397}
+      \ <\ \frac{9009}{40000}
+      \ =\ \frac{(13/80)y}{2}.
+\]
+The width also satisfies \(r_0<a\). All inequalities are strict.
+The determinant supplies a nonzero polynomial of bounded wider
+degree and polynomial coefficient height on each shallow class.
+
+The one-letter specialization of (DNR2) applies after fixing \(T\).
+Explicitly, let \(J_F\ne0\) be the product of the nonzero
+coefficients of the auxiliary polynomial. At a prime outside
+\(J_F\) in an A-root of original index \(e\), the valuations of
+the monomials, after division by the positive root valuation,
+are \(u+(e-q)j\), where \(u,j\) are the narrow and wider indices.
+For each \(j\) only the smallest \(u\) can achieve the minimum.
+A tie of the minimum between distinct \(j\)'s is necessary for
+vanishing, and each possible pair admits at most one exact
+degree \(e\). There are at most \(\binom{M+1}{2}\) exceptional
+exact degrees, located in a bounded scaled-degree interval.
+Their total root mass is at most the atomic mass of \(\nu_A\)
+in the limiting count, hence at most \(\theta\). This is uniform
+in the shallow class: maximize over all exceptional degree
+sets of bounded cardinality and pass to convergent scaled
+indices. All other A-position roots are supported on \(J_F\)
+and give only \(X^{o_X(1)}\) choices at fixed truncation, by
+the fixed-support bound for a polynomial-height integer.
+The chosen A roots recover A, and the fixed T then recovers
+the triple.
+
+The sum of the costs for the T-dictionary, the B freeze and
+shallow class, the A cutoff freeze, and the exceptional A
+positions is at most
+\[
+ \theta+2(13/80)+1/1000+\theta
+   \ \le\ \frac{657}{2000}<\frac13.
+\]
+This contradicts the \(d_0\) endpoint count. The standard limiting
+box extraction now proves (TD1): a sequence of counterexample
+budgets would give \(D/L\to1/3\) and \(L/\lambda\to1\). Here the logarithm of the height
+of the selected dyadic shell is \(1-o(1)\) times that of the
+ambient height \(X\). Otherwise the unrestricted one-third
+estimate at the shell height, with allowance \(o(\lambda)\)
+in the exponent along the budget sequence, would put the shell
+strictly below the assumed count at ambient height. Thus
+the stated size \(X^{\lambda/800}\) yields the excluded
+normalized dictionary cap. This extraction fixes the budget,
+truncation, and all degrees before the inner height tends to
+infinity, including in the determinant and fixed-support losses.
+
+Uniform complete-letter entropy is at least \(1/800\) in
+units of \(\log n\) at any limiting endpoint. If it were less
+by a fixed margin, Markov's inequality applied to the information
+of the complete value would retain a fixed fraction of the edges
+in a dictionary of exponent strictly below \(1/800\). That fraction
+preserves the endpoint count and contradicts (TD1).
+
+## A strict saving on every bounded-degree complete-letter curve
+
+For every fixed degree bound \(D\) there are
+\(\sigma_D,\lambda_D>0\) such that for \(0<\lambda<\lambda_D\),
+\[
+ \#\{a+b=c\le X_0:\ \gcd(a,b,c)=1,\
+        \operatorname{rad}(abc)<c^\lambda,\ F(A,B)=0\}
+ \ll_{D,\lambda,\varepsilon}
+ X_0^{(1/3-\sigma_D)\lambda+\varepsilon}.
+ \tag{ACD}
+\]
+Here \(a,b,c\) are positive, \(A,B\) are any chosen distinct
+complete letters, and \(F\) is any nonzero rational polynomial
+of total degree at most \(D\). The bound is uniform in its
+coefficients and permits reducible curves and singular contacts.
+Equivalently the curve can be given in any coordinates on the
+plane \(a+b=c\) related to a pair of complete letters by an
+invertible affine linear change.
+
+### Reducing the equation to polynomial height
+
+Factor over \(\mathbb Q\). A factor depending on one variable
+fixes at most \(D\) complete values and is covered by (FT1).
+A rational irreducible factor which splits geometrically has
+\(O_D(1)\) rational points. The Galois action on its components
+is transitive, so a rational point belongs to their intersections.
+For a geometrically irreducible factor of degree \(d\) containing
+more than \(d^2\) points, evaluation at these points in the monomial
+basis of total degree at most \(d\) has one-dimensional kernel.
+Indeed a second equation of degree at most \(d\) through the
+same points would violate Bézout unless it was a scalar multiple.
+Take a maximal-rank square minor after deleting one column.
+The signed maximal minors of that row basis recover the equation
+up to scale as an integer polynomial of height \(X_0^{O_D(1)}\).
+The dyadic shell of a violating sequence has logarithmic height
+asymptotic to the ambient logarithmic height, by the unrestricted
+one-third count as in (TD1), so this remains a polynomial
+height bound in the shell. Below \(F\) denotes this new equation,
+with positive degrees \(d_A=\deg_A F\) and \(d_B=\deg_B F\).
+
+### Puiseux residue records and fixed prime support
+
+For \(p\)-adic calculations at primes dividing \(B\), regard \(F\)
+as a polynomial in \(A\) over \(\mathbb Q(B)\). It is separable
+and its constant coefficient is nonzero in \(\mathbb Q(B)\),
+by irreducibility and positive degree in both letters. By the
+Newton–Puiseux theorem its \(d_A\) roots are Laurent series
+\[
+ f_j(B)=\sum_{k\ge k_j}a_{jk}B^{k/q_j}\qquad
+ (a_{jk_j}\ne0,\quad 1\le q_j\le d_A).
+\]
+Use their least ramification denominators. The \(q_j\) rotations
+of \(B^{1/q_j}\) give distinct roots, which proves the bound
+\(q_j\le d_A\).
+
+Use the quantitative Laurent-series form of Eisenstein's theorem,
+Bilu–Borichev, Theorem 6.4. For a polynomial of bounded
+bidegree over \(\mathbb Q\) the sum of \(\log p\) over primes
+where any Puiseux coefficient fails to be integral at some
+extension of \(p\) is \(O_D(1+\log H(F))\), with \(H(F)\)
+the maximum absolute coefficient after clearing denominators
+and removing content. Apply it to \(F(A,B)\) and the reciprocal
+\(A^{d_A}F(1/A,B)\) in \(A\), and to the two analogous
+polynomials in \(B\). All are separable in their dependent
+variable. Outside a fixed prime support of product
+\(X_0^{O_D(1)}\), all coefficients of the root series and of
+their reciprocals are integral at every extension of \(p\).
+The leading coefficient of each root series is therefore a unit.
+[Quantitative Eisenstein theorem, Theorem 6.4](https://doi.org/10.1017/S144678871300013X)
+
+At a prime outside that support where \(v_p(B)\ge e>0\)
+and \(A\) is a unit, specialize the formal factorization of
+\(F\) over the Laurent Puiseux series. For clarity take a common
+denominator of the series and choose a root of \(B\) of that
+order for this witness in \(\mathbb C_p\). At each prime fix
+one embedding of the coefficient field and the needed roots
+of unity. With these choices all series converge, since their
+coefficients are integral and the chosen root has positive
+valuation. The formal factorization specializes to the same
+identity over \(\mathbb C_p\). We may omit the \(O_D(1)\)
+triples where \(B\) is a zero of the leading coefficient in
+\(A\), since each \(B\) has at most \(D\) possible \(A\)'s
+on \(F\). Do the same in the opposite direction.
+Consequently \(A\) is represented by at least one of the
+\(d_A\) evaluated root series. Its leading term has valuation
+\(k_j v_p(B)/q_j\), since its leading coefficient is a unit
+and every later term has strictly greater valuation. The unit
+condition forces \(k_j=0\). On this branch
+\[
+       A=f_j(s^{q_j}),\qquad B=s^{q_j},\qquad
+       v_p(s)\ge e/d_A ,
+ \tag{ACD1}
+\]
+where \(f_j(s^{q_j})\) is the power series in \(s\) from
+the formal expansion, with integral coefficients and fixed
+constant term. Thus \(A\) values on the same branch differ by
+a multiple of \(p^{\lceil e/d_A\rceil}\) in \(\mathbb Z_p\).
+The branch index is one of at most \(d_A\) choices, and
+the analogous charts for primes dividing \(A\) use \(d_B\).
+Each witness chooses a branch index at each locked prime.
+The choice of the common root and hence the parameter \(s\)
+may vary with the witness. Each record uses the same coefficient
+series for all witnesses marked with the same index.
+
+Include the anatomic exceptional coefficients in the fixed bad
+support \(S\). At fixed budget and truncation, all its primes
+divide one nonzero integer of polynomial height in the shell.
+On either letter, if the \(S\)-supported parts of the anatomic
+roots have at least \(\xi>0\) normalized mass, divisor allocation
+bounds the count by \(n^{1/3-\xi+o(1)}\) in a limiting
+one-third box, with \(n=X^L\) at shell height \(X\). This uses
+the bounded fibres over each complete value on \(F\).
+In a purported endpoint the supported mass can therefore be
+taken to tend to zero. Freeze those supported parts at subpower
+cost and let \(A',B'\) be the remaining complete integers,
+so \(A=K_A A'\) and \(B=K_B B'\). Dyadically box the residual
+roots as usual. The two weak degree measures are preserved
+and still have mass \(1/3\). Their numerical heights may lose
+escaped first moment. All retained primes see \(K_A,K_B\) as
+units. Hence (ACD1) gives integral parametrizations of
+\((A',B')\) using the original series and the same ramification
+precision, without recomputing the bad support.
+
+### Diffusion on both free letters of the curve
+
+A positive-weight full lock on a residual factor of \(B'\)
+prescribes subpower many unit classes of \(A'\) modulo
+\(\prod_p p^{\lceil e_p/d_A\rceil}\), where \(p^{e_p}\)
+ranges over the locked prime powers. Indeed, choose a branch
+index for each prime and combine the classes above. There are
+at most \(d_A^{\omega(\prod_p p^{e_p})}=X^{o_X(1)}\) records.
+The new modulus has at least \(1/d_A\) times the original
+numerical weight and fullness at least \(1/d_A\) times the
+original fullness. If one residual letter has zero height or
+is finite-scale, its nonatomic mass is zero. The other is
+wholly nonatomic by (GE1) applied to the original box and
+therefore supplies arbitrarily cheap full moduli in a bounded
+positive scaled degree range. Reconstruction at zero height,
+or the one-letter amplified (GW) estimate at finite scale,
+then leaves only subpower possibilities once a cheap modulus
+is fixed. Each such complete value gives at most \(D\) points
+on the fixed curve. This contradicts the endpoint. Otherwise
+both residual letters supply arbitrarily cheap full moduli
+by the high-block argument after (GE). The one-letter version
+of (GE1), using the new congruences, shows that both residual
+degree measures are wholly nonatomic. These steps take degree
+bound, budget, truncation and moduli height parameters fixed
+in the inner height limit, before passing to limiting profiles.
+
+### A determinant weighted by both residual heights
+
+Let \(h_A,h_B>0\) denote the residual numerical heights.
+Choose full locks on \(A',B'\) with numerical weights \(w_A,w_B\)
+at combined normalized root cost \(t<1/3\) such that
+\[
+ W:=w_A/d_B+w_B/d_A >
+       \tfrac12(h_A/d_B+h_B/d_A).
+ \tag{ACD2}
+\]
+To obtain the locks, scale the original degree variable by
+\(1/d_B\) on \(A'\) and \(1/d_A\) on \(B'\). The pooled upper
+half of this weighted root measure has strictly higher finite
+moment than its lower half by nonatomicity. Include the escaped
+moments at arbitrarily small root cost as in (TD3). The full
+upper-half weight thus strictly exceeds the right side of (ACD2).
+Reduce the cost to \(t<1/3\) while retaining a margin, and round
+the selection to whole roots at vanishing cost, fixing an
+arbitrarily large continuity cutoff for bounded indices and
+selecting the high tail in full. The available root values
+cost \(n^{t+o(1)}\). Fix those locks and their branch indices.
+The combined number of branch records is subpower, and the
+two locked prime supports are disjoint by primitivity.
+
+Take real upper height caps \(H_A,H_B>0\) arbitrarily close to
+\(h_A,h_B\), so \(A'\le X^{H_A}\), \(B'\le X^{H_B}\).
+Order monomials by weight \(iH_A+jH_B\), with a monomial
+term order to break ties. Let \(x^u y^v\) lead the residual
+equation \(F(K_Ax,K_By)\), and put \(K=uH_A+vH_B\).
+Since \(K\ge\max(d_A H_A,d_B H_B)\),
+\[
+ \frac{H_AH_B}{K}\le
+       \min(H_A/d_B,H_B/d_A).
+\]
+By (ACD2) the caps can be chosen so \(W>H_AH_B/K\) by a
+fixed positive margin.
+
+For a large fixed \(T\), use the monomials of weight at most
+\(T\) that are not divisible by \(x^u y^v\). They lie in the
+disjoint strips \(i<u\) and \(i\ge u,\ j<v\). Counting their
+lengths and summing their weights yields
+\[
+ J_T=\frac{K}{H_AH_B}T+O(1),\qquad
+ \sum_{\text{basis monomials}}(iH_A+jH_B)
+       =\frac{K}{2H_AH_B}T^2+O(T).
+\]
+The evaluation determinant on any \(J_T\) witnesses in a fixed
+record is an integer. By Leibniz its absolute value is bounded
+by \(J_T!\) times \(X\) to the sum of the column weights. At
+a locked prime, expand each column in the common integral
+parameter series in (ACD1). Its valuation is at least
+\[
+       \frac{e_p}{d_A}\,\frac{J_T(J_T-1)}2
+\]
+for a \(B'\)-lock, and the same with \(d_B\) for an \(A'\)-lock.
+Indeed the first potentially nonzero multilinear term uses
+distinct orders, and all row parameters have the stated
+valuation lower bound. This calculation takes place in
+\(\mathbb C_p\); its fractional lower bound is valid for the
+valuation of the integer determinant. Multiplying these
+divisibilities yields exponent at least \(W J_T(J_T-1)/2\).
+Since \(W>H_AH_B/K\), for large fixed \(T\) and then large
+inner height, the divisor exceeds the absolute-value bound.
+Every such determinant vanishes.
+
+The monomial basis consequently gives a nonzero auxiliary
+polynomial vanishing on all witnesses of this record. It
+cannot be divisible by the residual curve equation since
+its leading monomial is outside the corresponding monomial
+ideal. Bézout gives boundedly many witnesses, with constants
+depending on the chosen margin and the fixed parameters.
+The record count is therefore \(n^{t+o(1)}\) with \(t<1/3\),
+contrary to saturation. As in (FT1), exclusion of every
+limiting one-third sequence with \(D\) fixed gives the
+uniform \(\sigma_D,\lambda_D\) in (ACD).
+
+### Implication for covers by curves
+
+For fixed \(D\), a family of at most \(X^{\theta\lambda}\)
+curves of degree at most \(D\) gives the same strict bound with
+\(\sigma_D-\theta\) in place of \(\sigma_D\) for fixed
+\(0\le\theta<\sigma_D\). Thus even a sparse matching with large
+complete dictionaries must evade every such cover in the
+complete-letter plane. A determinant curve in grouped root
+variables does not provide a bounded-degree complete-letter
+cover without further arithmetic information.

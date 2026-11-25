@@ -6670,14 +6670,47 @@ A matching with large outside-label entropies shows that the
 incidence step cannot by itself force a positive exponent there.
 [Anchor reduction and matching obstruction](ABC_DIFFUSE_FACTOR_GRAPH.md#anchor-sets-for-arbitrary-nonatomic-masses)
 
-The complementary sparse regime still obeys an arithmetic restriction.
-Every fixed complete-value fibre has a uniform gap below \(\lambda/3\),
-with no assumption of minimum diffusion. In particular a saturating
-family must use a positive power of \(X^\lambda\) distinct complete
-values on each letter. The proof takes a common neighborhood of
-multiplicative decompositions of a free term, so it does not use
-density of the graph on the outside factors.
-[Uniform fixed-complete-value count](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-strict-one-third-saving-with-any-one-complete-letter-fixed)
+There are three further constraints on the entire balanced endpoint.
+First, every complete marginal has entropy at least
+\((1/800)\log(X^L)\). A fixed dictionary of at most
+\(X^{\lambda/800}\) complete values on any letter gives an
+absolute saving. The proof pairs the upper-weight part of the
+two free radical spectra with the actual height of the shorter
+free letter. If that pair fails to reconstruct, its degree
+distributions must be close enough to a shared scale for one
+residue determinant to finish the count.
+[Quantitative complete-value dictionaries](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-quantitative-bound-for-complete-value-dictionaries)
+
+Second, the upper half of the pooled root mass on every pair of
+letters carries uniformly more than half the combined height.
+The surplus can be retained below half the pooled budget if the
+prime contributions on bounded scales are small, which gives
+a uniform count for primitive pairs at any fixed shift. With
+two wholly diffuse spectra, a one-tail variant bounds all
+fixed-shift pairs even allowing common divisors, and gives
+additive-energy savings for saturated marginal dictionaries.
+[Pooled degree inequality](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-pooled-degree-inequality-and-primitive-shift-fibres)
+· [Additive energy of diffuse dictionaries](ABC_DIFFUSE_FACTOR_GRAPH.md#additive-energy-of-wholly-diffuse-complete-value-dictionaries)
+
+Third, every bounded-degree curve in the plane of two complete
+letters gives a strict saving uniform in its coefficients. The
+proof uses a weighted determinant on the curve. Puiseux expansions
+at primes dividing the selected full locks retain enough precision
+at arbitrary singular contacts. Their coefficient denominators
+lie on a fixed polynomial-height prime support, by the
+quantitative Eisenstein theorem. This excludes sparse matchings
+covered by sufficiently few bounded-degree curves across all
+degree profiles.
+[Bounded-degree complete-letter curve count](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-strict-saving-on-every-bounded-degree-complete-letter-curve)
+
+The powerful-triples argument concentrates an endpoint at the
+scaled order three and so contradicts the required dispersion.
+The pooled inequality gives a positive total moment below
+that order on every pair of letters. The height-adjusted
+fullness and one-full diffuse estimates give additional
+restrictions on how that low-degree mass can be arranged.
+[Powerful triple endpoint transfer](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md)
+· [One-full diffuse profile consequences](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md)
 
 For determinant approaches, the first rank drop alone recovers all
 free radical factors outside finitely many degree positions. The
@@ -6689,9 +6722,38 @@ even when all three numerical heights are one. The broad formal
 profile \(\nu_T=\frac13\operatorname{Unif}[2,4]\) on all three letters
 exposes a limit of the direct Newton approach. One-root supports cannot meet both Taylor and chart budgets, and
 direct specialization of several groups has an independent
-chart-budget obstruction at total diffusion one.
+chart-budget obstruction at total diffusion one. For rectangular
+first determinants on this profile a successful chart budget would
+have to use a group whose entire root dictionary costs less than
+its shallow residue. Freezing such groups and rerunning the
+rectangular method leaves the obstruction in place.
 [Direct Newton counting and its broad-profile barrier](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#direct-newton-recovery-at-arbitrary-nonatomic-mass)
+· [Rectangular multigroup obstruction](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-broad-diffuse-obstruction-for-rectangular-multigroup-determinants)
 · [Two first determinants with the additive relation](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#two-first-residue-determinants-and-the-exact-additive-relation)
+
+### Residual obstruction
+
+A surviving family must have large complete dictionaries on
+every letter, evade economical complete-letter curve covers,
+and avoid the positive-exponent anchor reduction. Where the
+pooled locks have cost \(t<1/3\) and combined numerical weight
+above the shorter free height, (PQ4) isolates the missing bound.
+A sufficient statement is that each fixed record admits at
+most \(n^{1/3-t-\sigma}\) distinct targets in the third index
+box for a uniform \(\sigma>0\). Both free values then vary
+through prescribed multiples of the two full divisors, with
+the remaining radical caps inherited from their boxes. This
+statement needs a version with affordable records on the
+large-prime atomic sector as well. On a matching most such shifts have one
+representation, so even the improved uniform bounds for each
+shift allow all of them. There is an explicit primitive cubic
+matching with saturated internal root entropy, demonstrating
+that primitivity, additivity and within-letter independence
+alone allow this behavior. For that family \(\operatorname{rad}(abc)\)
+has height exponent two. The unresolved counting step has to
+use the much smaller radical budget or the consequent high
+valuation degrees in a way that couples different edges.
+[Primitive matching with saturated root entropy](ABC_DIFFUSE_FACTOR_GRAPH.md#a-primitive-matching-with-saturated-internal-root-entropy)
 
 ### Scope of the few-prime sum-product approach
 
@@ -6719,3 +6781,15 @@ The public Pell saving has a different scope, with a prescribed
 one-parameter family instead of arbitrary complete dictionaries.
 [Thomas Bloom, Theorem 7](https://arxiv.org/html/2512.04931v1)
 · [Chunping Zeng, balanced radical triples](https://hexagonmath.org/pdf/2611.00611v1)
+
+
+The bounded-degree curve count has a different range from ordinary
+coefficient-uniform integral-point bounds. For example, the
+general curve bound in Binyamini, Cluckers and Kato has the
+factor \(X^{1/D}\) in the ambient height, whereas the argument here exploits two radical spectra at exponent
+\(O(\lambda)\). Zeng's complete-modulus exponent certificate
+has an unrestricted bound uniform in \(0<\lambda\le1\) and
+uses a finite set of fixed degrees. Its stated exponent is independent of the small budget.
+These comparisons identify the scope of the argument.
+[Binyamini, Cluckers and Kato, Corollary 8](https://arxiv.org/html/2401.03982v2)
+· [Zeng, Complete modulus locking](https://hexagonmath.org/pdf/2611.00621v1)

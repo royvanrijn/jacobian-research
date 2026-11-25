@@ -484,6 +484,12 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | An entirely diffuse sector counted without completing the congruence lift | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | A formal broad all-diffuse obstruction to first-determinant chart recovery | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 | Two first determinants and the exact additive curve | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Uniform pooled degree dispersion and primitive shifts at the balanced endpoint | Internal result | proved | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| One-third saving with any complete dictionary of size at most X^(lambda/800) | Internal result | proved | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| Uniform one-third saving on every bounded-degree complete-letter curve | Internal result | proved | [Source](ABC_WIDE_COFACTOR_CONGRUENCES.md) |
+| Additive-energy and fixed-shift savings for wholly diffuse boxes | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A primitive cubic matching with saturated coordinate entropy | Internal result | proved | [Source](ABC_DIFFUSE_FACTOR_GRAPH.md) |
+| A broad-profile obstruction to rectangular first determinants | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 
 **Computed obligations:** 106 unresolved; 18 resolved within their exact scope.
 

@@ -2327,7 +2327,7 @@ This comparison is for the specified free grouping.
 There is a barrier even after dropping the terminal requirement.
 Give every letter the profile \(\nu=\frac13\operatorname{Unif}[2,4]\).
 Consider a one-root projective determinant with arbitrary retained
-submeasures and positive integer multipliers on each free letter.
+submeasures and nonzero signed integer multipliers on each free letter.
 Allow arbitrary horizontal slice shapes. Let \(s\) be the average
 retained mass of the two free letters. A saving by (DNR2) would
 require
@@ -2337,7 +2337,7 @@ require
 The modulus weight satisfies \(\kappa b\le w\le4\mu\).
 Write \(J\) for the gap between the extreme wider slices and \(R\)
 for the largest within-slice width. Let \(h\) be the average
-of the two retained integrals of the multiplier \(i_W(r)\).
+of the two retained integrals of the absolute multiplier \(|i_W(r)|\).
 For the two monomials in the extreme slices let \(a'\) be
 the induced shifted base, and let \(E\) be the average of
 the two retained integrals of \(\lvert r-a'i_W(r)\rvert\).
@@ -2372,17 +2372,17 @@ For the last inequality, if \(J=2\) then \(b>2g/3\) and
 \(\mu b\le (g-b)b\le2g^2/9\). For \(J\ge3\), use
 \(\mu b\le g^2/4\) and \(1+1/J\le4/3\).
 
-If \(a'\le0\), positivity of \(i(r)\) gives \(E\ge2s\).
-For \(a'\ge2\), folding the interval of length two modulo \(a'\)
+If \(a'=0\), the retained moment gives \(E\ge2s\). Put \(a=|a'|\).
+For \(a\ge2\), folding the interval of length two modulo \(a\)
 gives numerical distance density at most \(1/3\), so \(E\ge3s^2/2\).
 With \(h\ge s\) this gives \(Eh\ge g^2/3\). Indeed for
 \(s\ge2/9\) use \(g\le s\), and for \(s\le2/9\) use \(g\le s/2\)
 and \(s>1/6\).
 
-For \(0<a'\le2\), folding scaled phases has density at most
-\((2+a')/3\), so \(E\ge(3/8)a's^2\). The moment of the retained
+For \(0<a\le2\), folding scaled phases has density at most
+\((2+a')/3\), so \(E\ge(3/8)as^2\). The moment of the retained
 submeasure is at least \(2s+3s^2\) by the density \(1/6\) on
-\([2,4]\). Thus \(a'h+E\ge2s+3s^2\), and \(E\le s/3\) from
+\([2,4]\). Thus \(ah+E\ge2s+3s^2\), and \(E\le s/3\) from
 (DNR3) gives
 \[
  Eh\ge\left(\frac{5s}{8}+\frac{9s^2}{8}\right)s^2\ge\frac{g^2}{3}.
@@ -2412,6 +2412,136 @@ would require \(t_i>1/3\) for every \(i\). This is incompatible
 with \(\sum_i t_i\le2/3\) for \(m\ge2\). A method counting such
 profiles by several group variables needs further arithmetic
 information about the exceptional specializations.
+
+## A broad diffuse obstruction for rectangular multigroup determinants
+
+Give all letters the fully nonatomic limiting measure
+\(\nu=(1/3)\operatorname{Unif}[2,4]\), with all numerical heights
+one. Consider a rectangular \(m\)-group first determinant
+of the form (TN4), with \(m\ge2\). Allow arbitrary retained
+submeasures and unequal group assignments on the two free
+letters, with arbitrary nonzero signed integer multipliers
+and arbitrary base spacings in the groups. Let \(s_j\) be the
+average retained mass in group \(j\) across the free pair,
+\(S=\sum_j s_j\), and \(g=2S-1/3\). Write \(b>0\) for
+effective shallow record cost per group and \(\mu\) for the
+modulus lock cost.
+
+Suppose a proposed counting application would require
+\(\mu+mb<g\). If every pooled group root mass satisfies
+\(2s_j\ge b\), the first determinant conditions alone are
+already impossible. Thus every numerically feasible rectangle
+under this budget must have a group whose whole root dictionary costs less than one
+shallow residue record.
+
+### Scalar lower bound for each retained group
+
+Average the two retained submeasures within group \(j\)
+to give \(\sigma_j\) of mass \(s_j\), dominated by \(\nu\).
+The assignments may differ on the two free letters; this
+can be represented by marking the multipliers separately
+above the same averaged measure. Let \(h_j\) be the narrow
+height bound and let \(E_j\) be half the sum of the retained
+absolute exponent errors on the two letters. Disjoint
+prime supports imply \(h_j\ge\int|i|\,d\sigma_j\ge s_j\)
+and \(E\ge\sum_j E_j\), since rational height is at least
+half the sum of the two signed logarithmic parts.
+For every absolute base spacing \(a>0\), one has
+\[
+ E_j h_j\ge \tfrac38 s_j^3 .
+\]
+This is trivial if \(E_j\ge s_j\). Otherwise the retained
+moment gives \(a h_j+E_j\ge2s_j\), hence \(a h_j>s_j\).
+For \(a\le2\), the folded phase density of the unrestricted
+measure is at most \((2+a)/3\), by counting the preimages
+of the two signs. The distance integral of any retained
+mass \(s_j\) is therefore at least \(3a s_j^2/8\).
+For \(a\ge2\), the numerical distance density is at
+most \(1/3\) and the integral at least \(3s_j^2/2\);
+use \(h_j\ge s_j\). The base zero case follows directly
+from the retained moment bound.
+Consequently
+\[
+ E\prod_j h_j\ge \tfrac38
+            \left(\prod_j s_j\right)\sum_j s_j^2 .
+ \tag{BG1}
+\]
+### Optimizing the Taylor inequalities
+
+In the rectangle write
+\(B=\sum_j h_j r_j+ME\),
+\(y=(m!\alpha(M+1)\prod_j r_j)^{1/m}\).
+The first conditions require
+\(y<\kappa,\ B<mb y/(m+1)\).
+An amplification order \(\ell\) can only strengthen the
+constraints used below: divide the amplified height by
+\(\ell\), use the effective record cost \(b\), and use
+\(\kappa b\le w/\ell\le4\mu\).
+By the arithmetic-geometric mean inequality
+\[
+ x=\frac{m+1}{b}\left(
+      \frac{\prod_jh_j}{m!\alpha(M+1)}
+       \right)^{1/m}<1,\qquad
+ E<\frac{4m}{m+1}\frac{\mu(1-x)}{M}.
+\]
+Since \(g\le S\) and \(b<S/m\), the lower bounds
+\(s_j\ge b/2\) yield
+\[
+ \prod_j h_j\ge\prod_j s_j
+ \ge (b/2)^{m-1}\bigl(S-(m-1)b/2\bigr)
+ \ge \frac{m+1}{m\,2^m}b^{m-1}S.
+\]
+Indeed, with a common lower bound and fixed sum, the product
+is minimized when all but one variables are at the lower
+bound. In particular \(\prod_j h_j\ge (m+1)b^m/2^m\).
+Writing \(u_m=2^m m!/(m+1)^{m+1}\), the expression for \(x\)
+therefore gives
+\[
+ \frac1M
+ \le \frac{m! b^m x^m}
+ {(m+1)^m(1-u_m)\prod_j h_j}.
+\]
+Optimizing \(x^m(1-x)\) and using \(g^2\le3S^3\) and
+\(\mu b\le g^2/(4m)\) yield
+\[
+ E\prod_j h_j<
+ \frac{3m^m m!}{(m+1)^{2m+2}(1-u_m)}
+       b^{m-1}S^3.
+\]
+But (BG1) and \(\sum s_j^2\ge S^2/m\) yield its lower
+bound \(\frac{3(m+1)}{8m^2 2^m} b^{m-1}S^3\).
+Consequently one would need
+\[
+ A_m=\frac{8m^{m+2}2^m m!}{(m+1)^{2m+3}}>1-u_m.
+\]
+This is false at \(m=2\), since
+\(A_2=1024/2187<1-8/27\), and both \(A_m,u_m\)
+decrease thereafter. For \(A_m\) the ratio of successive
+terms is
+\[
+ 2\left(\frac{m+1}{m}\right)^{m+2}
+   \left(\frac{m+1}{m+2}\right)^{2m+5}
+ \le2\exp\left(-1+\frac{2}{m(m+2)}\right)<1.
+\]
+Also \(u_{m+1}/u_m=2((m+1)/(m+2))^{m+2}<2/e\).
+This proves the rectangle obstruction.
+
+For identical unweighted group assignments \(h_j=s_j\).
+A group of pooled mass \(2s_j<b_Q\) is already uniquely
+determined by its shallow residue, since its rational
+cross-numerator has smaller height than \(Q\).
+With arbitrary bounded multipliers its exact dictionary
+still costs at most \(2s_j\), even if rational height is
+larger. Thus, on this symmetric broad example, a method
+that freezes the entire exact dictionaries of all groups
+smaller than their shallow-record costs and reruns the
+rectangular determinant on the remaining groups does not
+give a strict saving either. The rectangular obstruction
+applies if at least two groups remain, and the one-root
+obstruction (DNR3) applies if exactly one remains. The
+remaining budget drops by exactly the root cost of these
+exact freezes. If no group remains, the two whole free
+letters were counted at cost \(2/3\).
 
 ## Two first residue determinants and the exact additive relation
 

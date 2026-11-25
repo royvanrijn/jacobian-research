@@ -176,6 +176,17 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All-profile large-curvature coprimality from angular slopes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HIGH_CURVATURE_ANGULAR_SLOPE.md) |
 | An explicit order-dependent small relative-gap lift to ordinary factorial moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_ORDER_DEPENDENT_LIFT.md) |
 | Full-degree modular coprimality for complete exponent orbit families | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FACTORIAL_DIGIT_ORBITS.md) |
+| Uniform shared subcritical coprimality at arbitrary degree differences | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_SUBCRITICAL_BANDS.md) |
+| Uniform local comparison in a moving shared quartic window | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_MOVING_QUARTIC_WINDOW.md) |
+| Uniform comparison outside the moving quartic neighborhood | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CRITICAL_REGULAR_COMPLEMENT.md) |
+| Uniform local exclusion on the supercritical side of the quartic cusp | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_SUPERCRITICAL_THERMAL_APPROACH.md) |
+| Subcritical thermal localization to a moving Airy fold | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_SUBCRITICAL_THERMAL_REGULAR_FIELDS.md) |
+| Uniform adjacent Airy-root comparison at the subcritical thermal fold | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_SUBCRITICAL_THERMAL_FOLD.md) |
+| Quantitative endpoint criterion at growing curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GROWING_CURVATURE_ENDPOINT_EXPANSION.md) |
+| Absolute thresholds for growing-curvature profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNBOUNDED_CURVATURE_EVENTUAL.md) |
+| Uniform eventual coprimality for positive-curvature fully shared profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Terminal-six closure for signed unit gaps at bases divisible by 275 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_PADIC_UNIT_GAPS.md) |
+| Exact digit recognition and obstruction to fixed-prime fixed-precision screening | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PADIC_DIGIT_AUTOMATON.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -268,6 +279,7 @@ Scope limits:
 - An exact Rice contour gives the upper stationary equation for arbitrary supports and a monotone lower phase. For fixed fully shared equal-degree profiles at and above the cusp, both saddles contribute near the equal-modulus graph and their consecutive phases separate. Private profiles have exact single-sheet geometry and local boundary exclusions. The diffuse moving critical window and same-orientation unit-gap prime and post-prime terminals are closed in their stated scopes.
 - Eventual coprimality is proved for every fixed ordinary two-monomial support, with a profile-dependent nonexplicit cutoff. The full complex simple-fold neighborhoods are covered. The real quartic and private cubic critical transitions are included. The exactly diffuse model has one eventual threshold for all positive couplings. Uniform radial and centered stationary localization apply to varying profiles.
 - Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
+- Fully shared profiles at curvature bounded away from zero have a uniform eventual threshold. Unbounded curvature is covered for all profiles. The residual large-order regimes are vanishing curvature and bounded curvature with private variables on exactly one side. Unrestricted fixed-terminal closure is open, starting at six. Prescribed finite prime-power screens can all fail inside any positive curvature interval.
 
 Tracked obligations (computed states):
 
