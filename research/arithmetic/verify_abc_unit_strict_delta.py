@@ -1,4 +1,4 @@
-"""Verify the sparse exact improvement of the pinned 107/200 abc certificate."""
+"""Verify sparse exact improvements of the pinned unit abc certificate."""
 
 import argparse
 from collections import Counter
@@ -44,8 +44,31 @@ def verify_delta(certificate, delta):
             and Fraction(delta["source_bound"]) == BASELINE_BOUND, "invalid sparse certificate header")
     limit = Fraction(delta["target"])
     require(0 < limit < BASELINE_BOUND, "the sparse certificate must improve the baseline bound")
+    return replay_replacements(certificate, delta["replacements"], limit,
+                               Fraction(1), BASELINE_LEAVES)
+
+
+def replay_replacements(certificate, entries, limit, budget, source_leaves):
+    """Check replacement branches and the exact bounds of all unchanged leaves."""
     checker = load_checker()
-    root_rows = sparse_rows(certificate_root_rows(checker, Fraction(1), certificate["schema_version"]))
+    source_budget = Fraction(certificate["budget"])
+    source_limit = Fraction(certificate["threshold"])
+    budget_change = budget - source_budget
+    schema = certificate["schema_version"]
+    rows = certificate_root_rows(checker, budget, schema)
+    if budget_change:
+        source_rows = certificate_root_rows(checker, source_budget, schema)
+        require(rows[1:] == source_rows[1:] and rows[0][0] == source_rows[0][0]
+                and rows[0][1] == budget and source_rows[0][1] == source_budget,
+                "the budget must affect only the first row's right-hand side")
+    root_rows = sparse_rows(rows)
+
+    @lru_cache(maxsize=131072)
+    def leaf_bound(bound, slope):
+        return Fraction(bound) + budget_change * Fraction(slope)
+
+    def source_bound(node):
+        return leaf_bound(node["bound"], node["y"].get("0", 0) if budget_change else 0)
 
     @lru_cache(maxsize=8192)
     def expand(metadata):
@@ -71,7 +94,7 @@ def verify_delta(certificate, delta):
 
     replacements = {}
     upper_patched = Fraction(0)
-    for entry in delta["replacements"]:
+    for entry in entries:
         require(set(entry) == {"path", "tree"} and isinstance(entry["path"], list)
                 and all(type(step) is int and step >= 0 for step in entry["path"]),
                 "invalid replacement path")
@@ -84,14 +107,13 @@ def verify_delta(certificate, delta):
             require(step < len(branches), "replacement child index is out of range")
             rows += branches[step]
             node = node["children"][step]
-        require(node["type"] == "leaf" and limit < Fraction(node["bound"]) <= BASELINE_BOUND,
-                "replacement does not target an over-limit baseline leaf")
+        require(node["type"] == "leaf" and limit < source_bound(node) <= source_limit,
+                "replacement does not target an over-limit source leaf")
         upper_patched = max(upper_patched, verify_replacement(entry["tree"], rows))
         replacements[path] = (node, entry["tree"])
 
     baseline_count = 0
     upper_untouched = Fraction(0)
-    stored_bounds = {}
     remaining = set(replacements)
     stack = [((), certificate["tree"])]
     while stack:
@@ -103,25 +125,51 @@ def verify_delta(certificate, delta):
         if path in remaining:
             remaining.remove(path)
             continue
-        bound_text = node["bound"]
-        if bound_text not in stored_bounds:
-            stored_bounds[bound_text] = Fraction(bound_text)
-        upper_untouched = max(upper_untouched, stored_bounds[bound_text])
-    require(baseline_count == BASELINE_LEAVES and not remaining and upper_untouched <= limit,
+        bound = source_bound(node)
+        upper_untouched = max(upper_untouched, bound)
+        if budget_change:
+            node["bound"] = str(bound)
+    require(baseline_count == source_leaves and not remaining and upper_untouched <= limit,
             "the sparse replacements do not cover every over-limit leaf")
     upper = max(upper_untouched, upper_patched)
     for node, tree in replacements.values():
         node.clear()
         node.update(tree)
-    certificate["threshold"] = delta["target"]
-    result = {"budget": "1", "upper": str(upper), "upper_patched": str(upper_patched),
+    certificate["budget"] = str(budget)
+    certificate["threshold"] = str(limit)
+    result = {"budget": str(budget), "upper": str(upper), "upper_patched": str(upper_patched),
               "upper_untouched": str(upper_untouched), "replacements": len(replacements),
               "leaf": baseline_count - len(replacements) + patched_counts["leaf"]}
     return result
 
 
+def verify_overlay(certificate, overlay, strict_sha256, strict_leaf_count):
+    """Replay a downward retarget of the verified strict unit tree."""
+    fields = {"schema_version", "unit_baseline_sha256", "unit_strict_delta_sha256",
+              "source_budget", "target_budget", "target", "replacements"}
+    require(set(overlay) == fields and overlay["schema_version"] == 1,
+            "invalid unit overlay header")
+    require(overlay["unit_baseline_sha256"] == BASELINE_SHA256
+            and overlay["unit_strict_delta_sha256"] == strict_sha256,
+            "unit overlay source hash mismatch")
+    old, new = Fraction(overlay["source_budget"]), Fraction(overlay["target_budget"])
+    limit = Fraction(overlay["target"])
+    require(old == Fraction(certificate["budget"]) == 1 and 0 < new < old
+            and 0 < limit < Fraction(certificate["threshold"]),
+            "invalid unit overlay budgets or exponent")
+    require(isinstance(overlay["replacements"], list), "invalid unit overlay replacements")
+    result = replay_replacements(certificate, overlay["replacements"], limit, new, strict_leaf_count)
+    require(Fraction(result["upper"]) == limit, "unit overlay replay disagrees with its target")
+    return result
+
+
 def reweight_verified_tree(certificate, at_budget):
     budget_change = at_budget - Fraction(certificate["budget"])
+
+    @lru_cache(maxsize=131072)
+    def reweighted_bound(bound, slope):
+        return Fraction(bound) + budget_change * Fraction(slope)
+
     pending = [certificate["tree"]]
     upper = None
     while pending:
@@ -129,7 +177,7 @@ def reweight_verified_tree(certificate, at_budget):
         if node["type"] != "leaf":
             pending.extend(node["children"])
             continue
-        bound = Fraction(node["bound"]) + budget_change * Fraction(node["y"].get("0", 0))
+        bound = reweighted_bound(node["bound"], node["y"].get("0", 0))
         if upper is None or bound > upper:
             upper = bound
     require(upper is not None, "the reconstructed tree has no leaves")
@@ -139,14 +187,19 @@ def reweight_verified_tree(certificate, at_budget):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--full", action="store_true", help="also replay every leaf of the reconstructed tree")
+    parser.add_argument("--overlay", type=Path, help="replay a pinned downward unit-budget overlay")
     parser.add_argument("--at-budget", type=Fraction,
-                        help="reweight the verified strict unit tree at this radical budget")
+                        help="reweight the verified tree at this radical budget")
     args = parser.parse_args()
     if args.at_budget is not None and not 0 < args.at_budget <= 1:
         parser.error("--at-budget must be in (0, 1]")
     certificate = pinned_baseline()
-    delta = json.loads(lzma.decompress(DELTA.read_bytes()))
+    delta_bytes = DELTA.read_bytes()
+    delta = json.loads(lzma.decompress(delta_bytes))
     result = verify_delta(certificate, delta)
+    if args.overlay is not None:
+        overlay = json.loads(lzma.decompress(args.overlay.read_bytes()))
+        result = verify_overlay(certificate, overlay, sha256(delta_bytes).hexdigest(), result["leaf"])
     if args.full:
         entire = verify(certificate)
         require(result["upper"] == entire["upper"] and result["leaf"] == entire["leaf"],

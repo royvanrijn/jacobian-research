@@ -121,6 +121,11 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=4945001/5000000 | upper: O_epsilon(X^(441830515859/825857500000+epsilon)) |  |
 | ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=99/100 | upper: O_epsilon(X^(26749499961979/50000000001500+epsilon)) |  |
 | ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=9900001/10000000 | upper: O_epsilon(X^(213996134798720789/400000197200000000+epsilon)) |  |
+| ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=991/1000 | upper: O_epsilon(X^(267494705491/500000001000+epsilon)) |  |
+| ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=9910001/10000000 | upper: O_epsilon(X^(891649018497667/1666666670000000+epsilon)) |  |
+| ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=57804903499/58300100000 | upper: O_epsilon(X^(53499/100000+epsilon)) |  |
+| ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=199/200 | upper: O_epsilon(X^(17833135833/33333333400+epsilon)) |  |
+| ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=9999/10000 | upper: O_epsilon(X^(2674998941999/5000000010000+epsilon)) |  |
 | ARITH-ABC-ORDERED-TALL-EXCEPTIONAL-COUNTS | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | 0<lambda<=1 | upper: O_epsilon(X^(7133338393/13333343040+epsilon)) |  |
 | ARITH-ABC-EXCEPTIONAL-SET-29-50 | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | fixed 0<lambda<=1 | upper: O_epsilon(X^(29/50+epsilon)) |  |
 | ARITH-ABC-HALF-BUDGET-PLUS-THREE-HALVES | proved | ordered positive primitive abc triples with c<=X and rad(abc)<c^lambda | sufficiently small fixed lambda>0 | upper: O_(lambda,epsilon)(X^(lambda/2+C*lambda^(3/2)+epsilon)) |  |
@@ -628,6 +633,11 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-POWERFUL-PRIMITIVE-QUOTIENT-LIMIT-LAW | proved | absolute l1 remainder of the primitive quotient expansion | Ordered positive full triples a+b=c<=X of sufficiently large fixed comparable orders with arbitrary common divisor and admissible truncations J | upper: O_(s,J,epsilon)(X^(1/(M+J+1)+epsilon)) |  |
 | ARITH-POWERFUL-PRIMITIVE-QUOTIENT-LIMIT-LAW | proved | total variation from the limiting primitive quotient law | Ordered positive full triples a+b=c<=X of sufficiently large fixed comparable orders with arbitrary common divisor | upper: O_(s,epsilon)(X^(-1/(M(M+1))+epsilon)) |  |
 | ARITH-POWERFUL-PRIMITIVE-QUOTIENT-UNIFORM-TAIL | proved | primitive height tail probability | Ordered positive full triples a+b=c<=X of sufficiently large fixed comparable orders with arbitrary common divisor | upper: O_s(Y^(-delta)) for some delta>0 |  |
+| FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-LATE-COEFFICIENT-SCHEME | proved | sharp coefficient ideal and phase nilpotence index | Fixed pair of distinct monomial exponents with positive private exponent sum on both sides, at sufficiently large m depending on the support with vanishing at m,m+1 | exact: 2m |  |
+| FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-LATE-COEFFICIENT-SCHEME | proved | dimension of the universal consecutive moment quotient | Fixed pair of distinct monomial exponents with positive private exponent sum on both sides, at sufficiently large m depending on the support | exact: m(m+1) |  |
+| FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-TERMINAL-FOUR-SCHEME | proved | sharp coefficient ideal and phase nilpotence index | Distinct multivariate monomials at terminal four, ordinary over Q or fixed positive real Gamma shapes over R | exact: 6 |  |
+| FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-TERMINAL-FOUR-SCHEME | proved | dimension of universal consecutive moment quotient | Distinct multivariate monomials at terminal four, ordinary over Q or fixed positive real Gamma shapes over R | exact: 12 |  |
+| FACTORIAL-MULTIVARIATE-ONE-PRIVATE-LINEAR-UNIFORM-TAIL | proved | sufficient uniform terminal cutoff | Ordinary multivariate two-monomial supports with private exponent sums {1,D}, D>=2 | upper: 361 |  |
 
 ## Comparable improvements
 

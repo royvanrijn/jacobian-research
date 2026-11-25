@@ -620,3 +620,33 @@ reweighted leaf bounds.
 python3 -B research/arithmetic/verify_abc_height_fulloc_certificate.py --source-budget 99/100 --at-budget 9900001/10000000
 python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 9900001/10000000
 ```
+
+### A twelve-leaf improvement near unit radical budget
+At radical budget \(991/1000\), retarget the pinned strict unit tree and replace the
+12 leaves whose exact reweighted bounds exceed the new ceiling. Each replacement
+is a rational dual for the same leaf rows. The ordinary exact replay checked all
+1,830,732 leaves and certified the upper exponent \(267494705491/500000001000\).
+The 1,500-byte [overlay](abc_unit_budget_991_overlay.json.xz) has SHA-256
+`48cba103fc4dad46df7f5e7c01de2e2fd9abbe33fa7411d718083182e560ea6b`.
+
+Every verified leaf gives an affine bound in the budget, with its slope equal to
+the multiplier of the radical budget row. The maximum of these lines is convex.
+At \(57804903499/58300100000\) it equals \(53499/100000\),
+and each line is nondecreasing, giving that ceiling at lower budgets.
+The old tree has a leaf line \(267499947/500000231+(621/2000000924)\lambda\).
+The new maximum is strictly below this line at \(991/1000\) and meets it at \(130801157300042477/130801188430064625\),
+where the old maximum also equals the line. Convexity gives a strict improvement on
+the whole intervening half-open interval.
+
+| Radical budget | Overlay exponent | Same-budget unit exponent |
+|---|---|---|
+| \(9910001/10000000\) | \(891649018497667/1666666670000000\) | \(10700004034110621/20000009240000000\) |
+| \(199/200\) | \(17833135833/33333333400\) | \(214000081179/400000184800\) |
+| \(9999/10000\) | \(2674998941999/5000000010000\) | \(10700004089379/20000009240000\) |
+
+```sh
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --overlay research/arithmetic/abc_unit_budget_991_overlay.json.xz --at-budget 9999/10000
+python3 -B research/arithmetic/verify_abc_unit_strict_delta.py --at-budget 9999/10000
+```
+
+Add `--full` to replay all inherited rows at the source of the overlay.

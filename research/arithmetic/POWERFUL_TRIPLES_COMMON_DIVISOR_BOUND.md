@@ -356,3 +356,351 @@ term in \(C_{\boldsymbol s,0}\). The limiting distribution
 on primitive quotients has total mass one after normalization
 by that constant. Its height tail is a power saving by the
 same dyadic summability argument.
+
+## An arbitrary-order upper bound with common divisors
+
+Let \(s_A,s_B,s_C\) be any sufficiently large fixed fullness
+orders, let \(M=\max_i s_i\), and put \(\lambda_0=\sum_i1/s_i\).
+There is an absolute \(0<\delta<1/3\) such that the full-triple
+count with arbitrary common divisor satisfies
+\[
+ A_{\boldsymbol s}(X)
+ \ll_{\boldsymbol s,\varepsilon}
+ X^{\max\{\,1/M,\ (1/3-\delta)\lambda_0\,\}+\varepsilon}.
+ \tag{GU}
+\]
+No comparability of the orders is needed. In the strongly
+asymmetric range this materially improves the \(1/\min_i s_i\)
+bound obtained by forgetting the larger orders.
+
+For a primitive quotient \(u_A+u_B=u_C=W\), let \(\mathcal D\) be the
+set of its deficient primes, and define
+\[
+ K_\ell=\max_i(s_i-\nu_\ell(u_i)),\qquad
+ Z=\prod_{\ell\in\mathcal D}\ell^{K_\ell}.
+\]
+Here a deficient prime has nonzero valuation \(e<s_i\)
+on its unique quotient letter \(i\). If that letter has
+maximum order then \(K_\ell/M\ge1-e/s_i\). Otherwise
+a maximum-order letter has valuation zero and
+\(K_\ell=M\). Consequently, prime by prime,
+\[
+ \operatorname{rad}(u_Au_Bu_C)
+ \le Z^{1/M}\prod_i u_i^{1/s_i}
+ \le Z^{1/M} W^{\lambda_0}.
+ \tag{GU1}
+\]
+For a prime of degree \(e<(1-\vartheta)s_i\) the same comparison
+gives \(K_\ell/M\ge\vartheta\). Consequently the sum of the
+logarithms of those primes on any letter is at most
+\(\log Z/(M\vartheta)\), for every \(0<\vartheta<1\).
+
+In dyadic bins \(W\asymp Y,\ Z\asymp H\), the quotient
+count satisfies the uniform estimate
+\[
+ Q(Y,H)\ll_{\boldsymbol s,\varepsilon}
+      Y^{(1/3-\delta)\lambda_0+\varepsilon} H^{1/M}.
+ \tag{GU2}
+\]
+If not, choose contrary sequences with all three orders
+tending to infinity and \(\delta\to0\). For each fixed
+order triple take an unbounded sequence of heights witnessing
+failure with a fixed positive exponent allowance.
+Let \(z=\lim \log_Y H/M\) on a subsequence of these
+dyadic bins. By (GU1) the radical count is at budget
+\(\lambda_0+z+o(1)\), while the claimed exponents
+would reach \((1/3-\delta)\lambda_0+z\).
+The elementary \(2\lambda/3\) bound first gives
+\(z\le(1+3\delta)\lambda_0\), by applying it at any fixed
+budget above \(\lambda_0+z\) and decreasing the excess.
+For any fixed \(\eta>0\), the limiting one-third bound
+gives \((2/3-\eta)z\le(\eta+\delta)\lambda_0\) for
+sufficiently large orders. Thus \(z=o(\lambda_0)\).
+
+Extract anatomic boxes with truncation loss
+\(o(\lambda_0)\) and compression above all prescribed
+orders. Total root mass satisfies \(L\le(1+o(1))\lambda_0\)
+and the attained exponent is at least
+\((1/3-o(1))\lambda_0\). The one-third box bound gives
+\(L/\lambda_0\to1\) and \(D_{\rm box}/L\to1/3\).
+By the weighted low-degree bound following (GU1),
+the normalized root mass at unscaled indices below
+\((1-\vartheta)s_i\) is \(o(1)\) on each letter.
+The prelimit first moment is at least
+\((1-\vartheta)s_iL(1/3-o(1))\) by endpoint balance,
+and at most \(1+o(1)\). Hence
+\(\limsup s_i\lambda_0\le3/(1-\vartheta)\).
+Send \(\vartheta\downarrow0\). The reciprocals of
+the three \(s_i\lambda_0\) sum to one, so all tend
+to three. Every weak measure is therefore supported
+on \([3,\infty)\) and, by mass and moment, equals
+\((1/3)\delta_3\). This contradicts endpoint
+diffusion and proves (GU2).
+
+Finally at fixed quotient, split the common divisor
+into its part \(f\) supported on
+\(P=\operatorname{rad}(u_Au_Bu_C)\) and its part
+coprime to \(P\). The latter is \(M\)-full.
+At every deficient prime the part \(f\) must incorporate
+the full exponent \(K_\ell\). The same Euler product argument
+as in (SF) therefore gives, for any fixed \(\sigma>0\),
+\[
+ \sum_{f\ {\rm allowed}} f^{-\sigma}
+ \le Z^{-\sigma}\prod_{\ell\mid P}(1-\ell^{-\sigma})^{-1}
+ \ll_{\sigma,\varepsilon}Z^{-\sigma}W^\varepsilon .
+ \tag{GU3}
+\]
+The \(M\)-full integer upper bound gives at most
+\(O((X/W)^{1/M}Z^{-1/M}W^\varepsilon)\)
+common divisors for this quotient. Multiply by (GU2)
+and sum over \(Y\le X\) and \(1\le H\ll Y^{3M}\).
+There are only logarithmically many dyadic scales at
+fixed orders. The remaining height exponent is
+\((1/3-\delta)\lambda_0-1/M\), giving the maximum
+in (GU). Relative to the older \(1/\min_i s_i\)
+bound, this can give close to a factor-three
+improvement when one order is much smaller than
+both others.
+
+## An asymptotic with a weighted primitive height constraint
+
+For a primitive quotient \(u_A+u_B=u_C=W\) write
+\(h_i=\log u_i/\log W\). Fix the orders \(s_i\ge2\),
+put \(M=\max_i s_i\), and count triples whose primitive
+quotient satisfies
+\[
+ \sum_i \frac{M h_i}{s_i}\le3+\tau .
+ \tag{WH}
+\]
+There are absolute \(\tau,\kappa>0\) such that this count
+has the expansion (PA) for sufficiently large \(M\), with
+the coefficients in (PC) summed over the quotients in
+(WH). Its error is
+\(O_{\boldsymbol s,J,\varepsilon}(X^{1/(M+J+1)+\varepsilon})\)
+under \(M\ge16(J+1)^2\) and \(M\ge100(J+1)/\kappa\), in
+addition to an absolute lower cutoff on \(M\).
+The sector is empty if \(M/s_C>3+\tau\). Otherwise it
+contains the quotient \(1+1=2\), so all coefficients have
+the same strict alternating signs as in (PA).
+
+This allows substantially separated orders. When
+\(s_B=s_C=M=2s_A\), for instance, every quotient with
+\(u_A\le W^{1/2}\) satisfies (WH). For near-equal orders
+with \(M\sum_i1/s_i\le3+\tau\), the restriction holds
+for all primitive quotients.
+
+### A quotient bound in the weighted height sector
+
+The first inequality in (GU1) gives
+\[
+ \operatorname{rad}(u_Au_Bu_C)
+ \le W^{(3+\tau)/M}Z^{1/M}.
+\]
+For quotients in (WH) with \(W\asymp Y\), \(Z\asymp H\),
+there are absolute \(\tau,\kappa>0\) such that, for all
+sufficiently large \(M\),
+\[
+ Q_{\mathrm{wh}}(Y,H)
+ \ll_{\boldsymbol s,\varepsilon}
+       Y^{(1-\kappa)/M+\varepsilon} H^{1/M}.
+ \tag{WH1}
+\]
+Suppose otherwise and take a sequence with \(M\to\infty\) and
+\(\tau,\kappa\to0\). At each fixed order triple take the height
+limit, passing to a subsequence with \(z=\lim\log_Y H\).
+The elementary bound gives
+\((1-\kappa)+z\le 2(3+\tau+z)/3\), so \(z\) is bounded.
+The limiting one-third count, at budget approaching
+\((3+\tau+z)/M\), gives \(z\to0\) by letting the fixed
+allowance decrease after the order limit.
+
+Take anatomic boxes with truncation error \(o(1/M)\) and
+compression index above all the orders. The bound on
+radicals gives \(L\le(3+o(1))/M\), and the count exponent
+is at least \(1/M-o(1/M)\), so \(ML\to3\) and \(d\to1/3\).
+At this endpoint [the short-height bound](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-strict-saving-when-the-short-term-is-small)
+keeps the limiting heights of all three letters above
+an absolute positive constant. By (WH), every \(s_i/M\)
+is then bounded below. Extract limits \(a_i=\lim s_i/M>0\)
+and \(h_i^*=\lim h_i\).
+The weighted low-degree inequality after (GU1) shows
+that the normalized root mass below \((1-\vartheta)s_i\)
+tends to zero for every fixed \(\vartheta>0\). Hence
+each weak measure is supported on \([3a_i,\infty)\).
+It has mass \(1/3\) and first moment at most \(h_i^*\),
+so \(h_i^*\ge a_i\). But \(\sum_i h_i^*/a_i\le3\) by
+(WH), forcing equality in all three. The measures
+are point masses, contrary to endpoint diffusion.
+This proves (WH1) uniformly without an order-ratio
+hypothesis.
+
+### Summing the expansion in this sector
+
+Use the same coprime-to-\(P\) \(M\)-full expansion as in
+(PA). By (GU3), its error and the terms extending past
+the height cutoff are bounded by \(X^\sigma\) times the
+sum of \(W^{-\sigma+\varepsilon}Z^{-\sigma}\) over the
+quotients in (WH), at any fixed
+\(1/(M+J+1)<\sigma<1/(M+J)\).
+For \(z=\log_Y H\le20\), (WH1) bounds the dyadic
+exponent by
+\[
+ -\kappa/M+(1/M-\sigma)(1+z)+O(\varepsilon)<0.
+\]
+For \(z>20\), the elementary two-smallest-radicals
+estimate bounds it by
+\[
+ \frac{2(3+\tau)}{3M}-\sigma
+              -\left(\sigma-\frac{2}{3M}\right)z
+              +O(\varepsilon)<0.
+\]
+The margins follow from the stated conditions on
+\(M,J\), taking \(\tau\) and then \(\varepsilon\) small.
+The dyadic series converges, giving exactly the (PA)
+expansion over the restricted primitive quotients.
+
+## A fixed-target estimate with a repaired target
+
+Let \(r_{p,q}(N)\) count ordered positive \(p\)-full and
+\(q\)-full summands of \(N\), with no coprimality condition.
+Choose an auxiliary order \(r\) for the target and write
+\(M=\max(p,q,r)\), \(\lambda_0=1/p+1/q+1/r\),
+\(\beta=(1/3-\delta)\lambda_0\) with \(\delta\) as in
+(GU), and \(B=\max\{p,q,1+\min(p,q)\}\).
+Define the repair multiplier by
+\[
+ \mathcal R(N)=\prod_{\substack{\ell\mid N\\v_\ell(N)<r}}
+                \ell^{\max(p,q,r-v_\ell(N))}.
+\]
+If the orders are sufficiently large for (GU2) and
+\(M\beta<1\), then
+\[
+ r_{p,q}(N)\ll_{p,q,r,\varepsilon} N^\varepsilon
+ \min\!\left\{N^{1/B},
+    (N\mathcal R(N))^{1/(M+(1-M\beta)B)}\right\}.
+ \tag{FT}
+\]
+For an \(r\)-full target the repair multiplier is \(1\).
+In particular for \(p=q=r=s\) and sufficiently large \(s\)
+the exponent at \(s\)-full targets is at most
+\(1/(s+3\delta(s+1))\).
+
+To prove (FT) fix \(g\mid N\) and put \(W=N/g\).
+In the primitive quotient, \(Z\mid g\mathcal R(N)\).
+Indeed \(K_\ell\) already fits in \(v_\ell(g)\)
+when \(\ell\mid g\) and the target meets its required
+valuation. When \(\ell\mid g\) but the target is
+deficient there, the only unsatisfied entry is the
+target's, with shortfall \(r-v_\ell(N)\). When
+\(\ell
+mid g\), a quotient deficiency must be on
+the target because both original summands are full.
+The excess is then at most
+\(\max(p,q,r-v_\ell(N))\).
+Summing (GU2) over the dyadic sizes of \(Z\) bounds
+the count for this \(g\) by
+\[
+ (N\mathcal R(N))^{1/M}W^{\beta-1/M}N^\varepsilon.
+\]
+
+Write \(k=\min(p,q)\). On the primitive summands extract
+the product of prime powers of each positive valuation
+below \(k\). Each extracted factor divides \(g\):
+a prime of deficient quotient valuation divides \(g\),
+and \(v_\ell(g)\ge k\) there. The two remaining parts
+are \(k\)-full, so the
+[coefficient-uniform fixed-target graph bound](POWERFUL_SUM_GRAPHS.md#the-exponents-k-and-k1-suffice)
+counts the choices for them at \(W^{1/(k+1)+\varepsilon}\)
+for fixed extracted factors. The divisor bound sums
+their choices. One can also extract the deficient
+prime powers on the stronger summand below its own
+order \(\max(p,q)\). These primes all divide \(g\),
+and their possible exponents are bounded at fixed
+orders, giving \(N^{o(1)}\) possible extracted
+factors. Counting the stronger full part alone gives
+\(W^{1/\max(p,q)}N^\varepsilon\).
+Consequently the first bound for each \(g\) is
+\(W^{1/B}N^\varepsilon\). Interpolate its minimum with
+the decreasing bound above over \(1\le W\le N\), and
+sum over the divisor-many \(g\). This gives (FT).
+
+## An explicit pointwise saving for arbitrary full orders
+
+For every sufficiently large fixed \(k\), let \(N\) be
+a prescribed \(k\)-full target. The number of ordered
+pairs of positive \(k\)-full summands, with arbitrary
+common divisor, is
+\[
+ O_{k,\varepsilon}\bigl(N^{(1-1/307)/k+\varepsilon}\bigr).
+ \tag{PT}
+\]
+This applies unchanged to higher summand fullness orders,
+without any comparability assumption. More generally,
+let \(D_k(N)\) be the product of the complete prime powers
+of \(N\) whose valuation is below \(k\). If for a fixed
+\(d_0<1/306\) one has \(D_k(N)\le N^{d_0}\), the same proof
+gives the saving \((1-306d_0)/(307k)\) below \(1/k\).
+
+Use the notation of the preceding fixed-\(g\) argument.
+In the primitive target \(w=N/g\), let \(n_0\) be the
+\(k\)-full part formed by taking all complete prime
+powers of valuation at least \(k\). The remaining
+factor divides \(gD_k(N)\): if the original target
+valuation was already at least \(k\), a reduced
+valuation below \(k\) forces a positive gcd valuation,
+which is at least \(k\) from original summand fullness.
+For the actual target defect primes the reduced part
+divides \(D_k(N)\).
+
+Put \(T_0=(1-306 d_0)/307\). If \(g>N^{T_0}\), the
+coefficient-uniform pointwise graph gives
+\[
+ w^{1/(k+1)+\varepsilon}
+ \le N^{(1-T_0)/k+\varepsilon}.
+\]
+Otherwise write \(t=\log_N g\le T_0\), so
+\(n_0\ge N^{1-2t-d_0}\). It follows that
+\[
+ w\le n_0^{306/305},
+\]
+because \(307t+306d_0\le1\).
+Extract the two quotient coefficients \(\kappa_i\) of
+valuations below \(k\), as before fixed at divisor
+cost. Use the canonical compression on the remaining
+full factors to write the two quotient summands as
+\[
+       \kappa_1 R_1^k W_1,\qquad \kappa_2 R_2^k W_2,
+\]
+with \(R_i\) the product of the canonical roots.
+If some \(\kappa_i W_i>n_0^{1/305}\), the corresponding
+root product has upper bound \((w n_0^{-1/305})^{1/k}\).
+Enumerate that side by its root-product tuples, with
+divisor-many allocations per product and fixed
+coefficient; the other quotient summand is determined.
+This costs exponent at most
+\[
+ \frac1k\left(1-t-\frac{1-2t-d_0}{305}\right)
+ \le \frac1k\left(1-\frac{1-d_0}{305}\right)
+ \le\frac{1-T_0}{k}.
+\]
+
+Otherwise set \(T=R_1/R_2\) and
+\(V=(\kappa_1W_1)/(\kappa_2W_2)\).
+These are unit rationals modulo \(n_0\), with
+\(VT^k\equiv-1\bmod n_0\),
+\[
+ H(T)\le n_0^{306/(305k)},\qquad H(V)\le n_0^{1/305}.
+\]
+Use the canonical adaptive rational bound with these
+parameters, at exponent \((1-1/153)/k+\varepsilon\)
+in base \(n_0\). This is at most the desired exponent
+in base \(N\). Every exact ratio determines the two
+primitive quotient values by their fixed sum \(w\).
+Summing over the divisor-many \(g\) and coefficients
+proves the pointwise bound. For a full target take
+\(d_0=0\), obtaining (PT).
+
+The [adaptive rational estimate](../../unpublished/powerful-number-representations/main.tex)
+is the second range of the adaptive rational lemma in Section 9.4
+(`lem:adaptive-rational` in the source). Its modulus is the
+\(k\)-full core \(n_0\).

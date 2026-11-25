@@ -370,3 +370,75 @@ above \(3-\tau\) has first moment at least
 \]
 This is the moment of the leftmost constant-density
 interval of that mass and must be at most one.
+
+## A saving at the height-adjusted fullness thresholds
+
+For an ordered primitive triple \(a+b=c\), write
+\(h_T=\log T/\log c\) for each letter \(T\). For a radical
+budget \(\lambda>0\) and a tolerance \(\tau>0\), define
+\[
+ P_T(\lambda,\tau)=
+ \prod_{\substack{\ell\mid T\\
+        \lambda v_\ell(T)<3h_T-\tau}}\ell .
+\]
+There are absolute \(\tau,\delta,\lambda_*>0\) such that,
+for fixed \(0<\lambda\le\lambda_*\), the count at
+\(\operatorname{rad}(abc)<c^\lambda\), \(c\le X\), with
+\[
+ \log P_T(\lambda,\tau)\le\tau\lambda\log c
+ \quad\text{on at least two letters}
+ \tag{HT}
+\]
+is \(O_{\lambda,\varepsilon}(X^{(1/3-\delta)\lambda+\varepsilon})\).
+The third letter is unrestricted. In particular the cutoff
+on a short summand is lower than \(3/\lambda\), with its
+position set by the actual summand height.
+
+Suppose this fails and take \(\lambda_j,\tau_j,\delta_j\to0\),
+with the same conditioned pair on a subsequence. Take the
+height limit first at each budget, fixing anatomic coefficients
+at loss \(o(\lambda_j)\) and keeping the compression index
+above \(4/\lambda_j\). Dyadic subdivision of the power roots
+and the three complete values gives boxes with
+\(L_j/\lambda_j\to1\) and \(d_j\to1/3\), by the limiting
+one-third bound. Pass to a subsequence with \(h_{T,j}\to h_T^*\).
+The dyadic height intervals have width \(o(1)\) on this
+logarithmic scale. At a bounded scaled degree, the original
+prime valuation is exactly its anatomic root index.
+
+Fix a compact set of scaled degrees strictly below \(3h_T^*\)
+on a conditioned letter. For large \(j\), its coordinates
+have \(\lambda_j e<3h_{T,j}-\tau_j\), using
+\(L_j/\lambda_j\to1\). The original roots for these coordinates
+are squarefree with disjoint supports, so their combined
+normalized root mass is at most
+\(\tau_j\lambda_j/L_j+o(1)\) by (HT).
+Testing against continuous functions supported strictly below
+\(3h_T^*\) shows that the weak measure \(\nu_T\) is supported
+on \([3h_T^*,\infty)\). It has mass \(1/3\) by endpoint
+balance and first moment at most \(h_T^*\) by the prelimit
+height bound and lower semicontinuity. Both constraints force
+\(\nu_T=\frac13\delta_{3h_T^*}\), including the case \(h_T^*=0\).
+This contradicts pairwise diffusion on the two conditioned
+letters. Equivalently, any limiting box with \(d=1/3\)
+has positive mass below \(3h_T^*\) on at least two letters.
+[Endpoint mass and diffusion](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees)
+
+One can also use the full common-divisor repair weight on
+the original primitive triple. Put \(M=\lceil3/\lambda\rceil\),
+choose \(s_C=M\) and \(s_T=\max(2,\lceil Mh_T\rceil)\) on
+the other two letters. There are finitely many order choices
+at fixed \(\lambda\) and \(\sum_T Mh_T/s_T\le3\).
+Let \(Z\) be the minimal multiplier on deficient primes
+for these orders, as in (GU1). The [weighted primitive
+quotient bound](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md#a-quotient-bound-in-the-weighted-height-sector)
+shows that the count with \(Z\le c^{\kappa/2}\) is
+\[
+ O_{\lambda,\varepsilon}\!
+ \left(X^{(1-\kappa/2)\lambda/3+\varepsilon}\right).
+ \tag{HR}
+\]
+Indeed sum (WH1) over the dyadic heights and
+\(Z\ll Y^{\kappa/2}\), then use \(1/M\le\lambda/3\).
+This estimates a single joint valuation penalty instead
+of imposing separate thresholds on a prescribed pair.

@@ -1029,3 +1029,225 @@ Then \(d<1/3-10^{-6}\).
 For if \(d=2c-\varepsilon\) with \(0\le\varepsilon\le10^{-6}\), the [near-minimum complete-label reduction](ABC_DIFFUSE_FACTOR_GRAPH.md#the-complete-label-reduction-close-to-minimum-mass), using the three caps \(c+10^{-7}\), retains edge exponent at least \(2c-35\varepsilon-68\cdot10^{-7}\) up to arbitrarily small losses. This is the same bound used in (MS16), since \(\gamma=\sum c_W-3c\le3\cdot10^{-7}\). Equivalently the simultaneous anchors cost at most \(7\varepsilon+12\cdot10^{-7}\), and the vector factor dictionary step adds at most four times that deficit plus \(8\cdot10^{-7}\). Fix one complete row on the remaining letter, by averaging. Its common \(U\)-columns have exponent at least \(c-35\varepsilon-69\cdot10^{-7}>c-0.000042\), up to arbitrarily small losses.
 
 Take \(g=0.0499\), \(s=3\), and \(a=1/2\) in the preceding count. One supplying row has enough \(T\)-outside roots in \([3,4]\) for root cost \(0.496g<0.025\). There is no row-overlap deletion, and the \(U\)-residue is a unit by primitivity. Use lower and upper record masses \(0.495g\) and \(0.497g\) as above. The freeze outside \(J\) costs at most \(c-g\), while \(10^{-6}<sg^2/310\) supplies the determinant condition. The resulting bound \(c-0.006g=c-0.0002994\) contradicts the fixed-row column count. The displayed hypotheses all hold for the infinite-atom example, using a continuity enlargement of its low interval and atomic cluster.
+
+## Pooled phase quantiles for unrestricted limiting profiles
+
+Use the limiting normalized abc-box notation, with normalized count exponent \(d\le1/3\), scaled degree measures \(\nu_W\), total root masses \(l_A+l_B+l_C\le1\), and numerical heights at most one. The nonatomic masses and the numerical heights need not be equal. There is no complete-label or minimum-\(\Gamma\) hypothesis.
+
+Fix a free pair \(U,V\), its complementary modulus letter \(T\), a spacing \(0<a\le1\), and Borel retained degree sets \(J_U,J_V\). Let
+\[
+ f=\nu_U(J_U^c)+\nu_V(J_V^c),\qquad g=d-f.
+\]
+For \(r\in J_W\), assign a nearest nonnegative grid point \(i(r)a\). At a half-integer tie either assignment can be prescribed for that atom. Put \(\sigma_U=+1,\ \sigma_V=-1\), and define
+\[
+ D_\pm=\sum_{W=U,V}
+  \int_{J_W}\Big(\pm\sigma_W\bigl(r/a-i(r)\bigr)\Big)_+\,d\nu_W(r),
+ \qquad D=\max(D_+,D_-).
+\]
+The signs account for the rational height of the correction factor in the \(U/V\) ratio. In particular \(D\le\sum_W\int_{J_W}\|r/a\|\,d\nu_W\).
+
+Suppose \(g>0\) and a compact positive band \([s,S]\), \(S<2s\), has nonatomic \(T\)-mass \(H>0\). Put \(u=\min(g,2H)\). Then
+\[
+ \boxed{\displaystyle D\ge \frac{s u^2}{400}.}
+ \tag{UP1}
+\]
+If \(l_U,l_V\le1/3\), replace \(400\) by \(310\). For continuity bands separated from their boundary degrees, the comparison can be made strict for each fixed band; the weak form accommodates endpoints and passage to a supremum. The same conclusion holds for any chosen \(0<u\le g\) if \([s,S]\) provides an attainable lock of root mass \(0.496u+o(u)\) through prescribed whole degrees or edge-dependent divisors. A nonatomic band permits this whenever \(u\le2H\).
+
+### Proof of the pooled phase inequality
+
+Approximate the retained sets by finite unions of bounded intervals with continuity endpoints in \(\nu_W\)-measure. The discrepancy is bounded, so this approximation changes the masses and integrals by arbitrarily little. To prescribe a tie assignment, use a shrinking neighborhood at each of the finitely many retained atomic ties in such bounded windows; on that neighborhood use the prescribed adjacent grid point. The limiting signed phase then has the stated integral, since other tie locations are continuity points or have total omitted mass tending to zero. Bands containing boundary atoms can be reduced to smaller continuity bands with nonatomic mass tending to \(H\) and with degree bounds tending to \(s,S\).
+
+Freeze a block of \(T\)-roots in the band with total normalized mass \(0.496u\), up to small rounding losses, always taking its record cost at most \(0.497u\). This is possible since \(0.496u\le0.992H\). To see the nonatomic selection directly in the original boxes, exclude finitely many shrinking atom windows so that every remaining original coordinate is arbitrarily small, while retaining the nonatomic band mass. Bounded-scale original anatomic roots are squarefree and have disjoint supports. The full divisor \(n\) obtained by raising the selected roots to their original degrees is \(k\)-full with \(kL\to s\), and its valuations belong to \([k,2k)\) for small \(L\). Its shallow record \(Q_n=\operatorname{rad}(n)\) has normalized logarithmic size \(b_Q\le0.497u\), with lower bound \(b=0.495u\), and its numerical weight is \(w\ge0.495us\). For the edge-dependent divisor version, fix a dyadic size list first, at subpower cost at fixed truncation. Counting the selected divisors by their sizes gives the same record exponent. The congruence and count are uniform in the divisor choices.
+
+Freeze the \(U,V\) factors outside the retained sets, at cost \(f+o(1)\). Up to this fixed ratio, group the retained factors at exponent \(q=\lfloor a/L\rfloor\), putting \(x_e^{\sigma_W i(eL)}\) in the narrow rational \(z\) and \(x_e^{\sigma_W(e-q i(eL))}\) in the wider rational \(v\). In the ratio congruence \(v z^q\equiv K\bmod n\), the target and all variables are units by primitivity and the signed additive relation. The normalized narrow height and numerical wider height satisfy, up to vanishing errors,
+\[
+ h\le\max(h_U/a+l_U/2,\ h_V/a+l_V/2)\le\frac{3}{2a},
+ \qquad E\le aD.
+\]
+For the narrow bound, estimate numerator and denominator independently with \(i\le r/a+1/2\). The wider bound uses the independent numerator and denominator sums \(D_+,D_-\). Flooring \(a/L\) contributes at most \(L\sum i\beta_e=o(1)\) by the prelimit total first-moment bound. The bounded phase discrepancy together with the prescribed ties gives the limit by weak convergence. Even a first moment that escapes at infinity causes no problem, since the narrow estimate uses the prelimit first moments and the signed rounding errors are bounded by the phase distance.
+
+If \(D\le su^2/400\), apply (QD2) with rank fraction \(1/2\),
+\[
+ M=\left\lfloor\frac{24}{a u}\right\rfloor,\qquad r_0=\frac{s}{M+1}.
+\]
+One has \(a u M\le24<a u(M+1)\). The supplying mass gives \(su\le2\) in the nonatomic case and \(su\le1/0.495\) for adaptive locks, since their numerical weight is at least \(0.495su\). Therefore \(r_0/a<su/24<1\) with room for the floor loss in \(qL\). The Taylor order is exactly \((M+1)r_0/2=s/2<s\). The determinant height parameter satisfies
+\[
+ B=hr_0+EM\le su\left(\frac1{16}+\frac{24}{400}\right)
+ =\frac{49}{400}\,su
+ <\frac{99}{800}\,su
+ \le\frac{b(M+1)r_0}{4}.
+\]
+Also \(4B<0.495su\le w\). The normalized chart count is at most \(0.497u\). With the fixed roots, each chart pair determines the actual ratio of \(U,V\) and therefore their two coprime complete values; their relation recovers the third value. The total normalized cost is at most
+\[
+ f+0.497u+0.497u=f+0.994u< f+g=d,
+\]
+a contradiction. The slack is at least \(0.006u\). When \(l_U,l_V\le1/3\), use \(h\le7/(6a)\) and replace \(24\) by \(19\). With \(D\le su^2/310\) the height bound becomes \(B/(su)\le 7/114+19/310<99/800\), and the Taylor order remains \(s/2<s\). This proves the sharpened constant.
+
+### A sector away from the minimum nonatomic total
+
+At a formal \(d=1/3\) profile, let \(\nu_T=\frac13\operatorname{Unif}[2,4]\). On both \(U,V\) take
+\[
+ \nu_W=\tfrac16\delta_3+\tfrac1{20}\operatorname{Unif}[3-\sigma,3+\sigma]
+                       +\tfrac7{60}\operatorname{Unif}[2,4],
+ \qquad \sigma=10^{-5}.
+\]
+All masses are \(1/3\), first moments are one, and \(\Gamma=2/3\). The full phase discrepancy of each free measure has a fixed contribution from the broad interval, while the partial sets \(J_U=J_V=[3-\sigma,3+\sigma]\) separate out the low-dispersion component. Take \(a=1\), \([s,S]=[3,4]\), \(H=1/6\). Then \(g\ge1/10\), so \(u\ge1/10\). By the identical free measures and their symmetry about three,
+\[
+ D=\frac{\sigma}{40}+\frac7{120}\sigma^2
+      < 3\cdot10^{-7},
+ \qquad
+ \frac{s u^2}{310}\ge \frac{3}{31000}.
+\]
+Thus the profile violates (UP1). In fact any limiting sequence with normalized count \(d\ge 1/3-10^{-3}\), \(l_U,l_V\le1/3\), \(f\le7/30\), \(H\ge1/10\) on this supplying band, and \(D\le10^{-5}\) on the specified retained sets is excluded: \(g\ge0.099\) and the same determinant margins apply. One may use the \(400\) bound and permit \(l_U,l_V\) above \(1/3\) as well. This supplies a fixed coefficient saving in the sector without a near-minimum nonatomic assumption.
+
+## Combining two valuation bands in a full modulus
+
+Use the notation of the pooled phase inequality (UP1). Retain arbitrary prescribed degree sets on a free pair \(U,V\). Let \(f\) be the frozen complement root cost, and write the grouped ratio, up to its fixed multiplier, as \(v z^q\), with \(qL\to a>0\), normalized narrow height \(h\), and numerical wider height \(E\). Select any prescribed blocks on the opposite letter, with root cost \(\mu\), whose full product \(n\) has numerical weight \(w\) and is \(k\)-full for \(kL\to\kappa>0\). Select any divisor \(Q\) of the shallow record \(\prod_{p\mid n}p^{\lfloor v_p(n)/k\rfloor}\), of normalized weight \(b\). The primes used for the shallow record may be a proper subset of the full modulus primes, with lower powers than in the full modulus.
+
+For any \(0<\alpha<1\) and integer \(M\ge1\), put \(D=b\alpha(M+1)/2-h\). If \(D>0\), a sufficient condition for the count exponent bound \(d\le f+\mu+b\) is
+\[
+ E<
+ \frac{D}{M}
+ \min\left(a,\ \frac{\kappa}{\alpha(M+1)},\
+                   \frac{(1-\alpha)w}{b\alpha(M+1)}\right).
+ \tag{MB1}
+\]
+For the proof, choose \(r\) just above \(EM/D\). The first two upper bounds on \(EM/D\) give \(r<a\) and \(\alpha(M+1)r<\kappa\). The last gives \(hr+EM<(1-\alpha)w/2\) for \(r\) sufficiently close to its lower bound, since at \(r=EM/D\) the left side is \(EM(D+h)/D\). The determinant inequality holds strictly by the choice \(r>EM/D\). Apply (QD2) to the unit-target congruence from the signed relation. Each pair determines the exact coprime terms, and hence the triple, after restoring the frozen factors. The count is \(f+\mu+b\). The statement needs no complete-label graph or hypothesis on \(\Gamma\).
+
+A necessary upper bound on the numerical wider height for any parameter choice in (QD2), for a fixed \(b,w,h\) with \(2h>b\), is
+\[
+ E<\frac{bw}{32(2h-b)}.
+ \tag{MB2}
+\]
+Indeed its determinant conditions force \(x=b\alpha(M+1)/(2h)>1\) and \(E<(1-\alpha)w(1-1/x)/(2M)\). Also \(1/M\le b\alpha/((2h-b)x)\) because \(x>1\) and \(\alpha<1\). Use \(\alpha(1-\alpha)\le1/4\) and \((x-1)/x^2\le1/4\) to obtain (MB2). This is an upper limit for the parameters in (QD2).
+
+### A phase sector using two bands
+
+Suppose \(a=1\), \(h\le0.656\), \(E\le0.00029\), and \(f\le7/30\). On the modulus letter suppose there is positive nonatomic mass greater than \(0.0332\) in \([3,3.05]\), and a degree-500 atomic window whose root mass is \(0.0002\). This sector has
+\[
+ d<\frac13-10^{-3}.
+ \tag{MB3}
+\]
+The point values of the atomic mass and degree can be replaced by sufficiently small open tolerances without losing the strict estimates below.
+
+Freeze mass \(0.033+o(1)\) from the nonatomic low band and the entire high atomic window. Freeze cost is at most \(0.0331+0.00021=0.03331\). The full numerical weight is at least \(0.1985\), since the low blocks give \(3(0.033)=0.099\) in the limit, and the high block contributes \(0.1\). Use \(kL\to3\). In the shallow record include the unpowered low radical and the 160th power of the high radical. Indeed every high exponent is \((500+o(1))/L\), and its shallow valuation cutoff is at least 160. Squarefreeness and disjoint original degree positions give record size between \(0.0649\) and \(0.0651\), allowing the usual small losses. Take \(\alpha=1/2\), \(M=80\), \(r=0.0375\). Then
+\[
+ B\le 0.656(0.0375)+80(0.00029)=0.0478
+  <\frac{0.0649\cdot81\cdot0.0375}{4}=0.0492834375,
+\]
+\[
+ (M+1)r/2=1.51875<3,\qquad 4B=0.1912<0.1985 .
+\]
+The count from (QD2) thus has normalized exponent at most
+\[
+ f+0.03331+0.0651\le\frac7{30}+0.09841
+                      <\frac13-10^{-3}.
+\]
+Only one modulus letter is needed. The higher block supplies numerical weight and part of the shallow record, and the lower band provides the remainder of the shallow record.
+
+For an exact formal example, let \(\sigma=7/625\). Give both free letters the measure
+\[
+ \nu_U=\nu_V=\tfrac16\delta_3
+          +\tfrac1{20}\operatorname{Unif}[3-\sigma,3+\sigma]
+          +\tfrac7{60}\operatorname{Unif}[2,4].
+\]
+On the modulus letter use
+\[
+ \nu_T=\tfrac1{5000}\delta_{500}
+       +\tfrac1{20}\operatorname{Unif}[3,61/20]
+       +\tfrac{4247}{15000}\operatorname{Unif}[r_*-1/10,r_*+1/10],
+       \qquad r_*=\frac{44925}{16988}.
+\]
+Every measure has mass \(1/3\) and first moment one. For the modulus letter the high and middle contributions are \(1/10\) and \(121/800\), with the remaining moment \(599/800\). Its nonatomic total is \(1/3-1/5000\), so the combined nonatomic total is \(2/3-1/5000\), away from \(1/2\).
+
+Retain \(J_U=J_V=[3-\sigma,3+\sigma]\) on the mesh \(a=1\). The grouped root and the two signed remainder weights have exact limiting heights
+\[
+ h=\frac{13}{20}+\frac7{20}\sigma=0.65392,\qquad
+ E=\frac{\sigma}{40}+\frac7{120}\sigma^2
+       \in(0.000287,\,0.00029).
+\]
+The retained excess above the total cost \(f\) at \(d=1/3\) satisfies \(g=1/10+(7/30)\sigma<0.103\). Thus all hypotheses of (MB3) hold. For this fixed retained grouping, either low-only or high-only locks fail even the necessary one-root criterion (MB2), allowing any valid shallow record. Indeed, with \(d>f+\mu+b\), one must have \(\mu+b<g<0.103\). If all modulus primes selected are from the lower scales, \(w\le3.05\mu\), so
+\[
+ \frac{bw}{32(2h-b)}
+ <\frac{3.05(0.103)^2}{4\cdot32(1.3-0.103)}
+ <0.000212.
+\]
+If only the high atom is selected, \(w\le0.1\), so the same expression is at most \(0.1(0.103)/(32(1.3-0.103))<0.000269\). Both are below \(E\). These comparisons are for the prescribed retained grouping.
+
+## The symmetric diffuse profile and the one-group determinant
+
+Consider the formal minimum-nonatomic profile on all three letters
+\[
+ \nu=\tfrac16\delta_3+\tfrac16\operatorname{Unif}[2,4],
+ \qquad d=1/3.
+\]
+The numerical heights and first moments are all one. For the count based on one grouped power in the free ratio, original-root enumeration for frozen factors, and the determinant conditions (QD2), no choice of retained submeasures, fixed scaled mesh spacing, multiplier assignments, full modulus, shallow residue record, or fixed amplification gives a strict saving below \(1/3\).
+
+The frozen modulus factors are charged their original root mass. Both the retained free factors and the frozen modulus factors may come from fractional selections of the limiting measures.
+
+### Necessary numerical conditions for a successful count
+
+Allow arbitrary retained submeasures on the two free letters, including fractional retention of the mass at degree three. The combined retained mass must be \(1/3+g\) for some \(0<g\le1/3\), since the original frozen complement costs \(1/3-g\). Let \(t\in[g,1/3]\) be the retained nonatomic mass. The retained atomic mass is \(1/3+g-t\).
+
+Let \(qL\to a>0\) be the common power. Group retained roots with arbitrary signed integer multipliers into a rational \(z\), and put the signed residual exponents into \(v\), so that \(v z^q\) is the exact retained ratio. Write \(h\) for the limiting normalized rational height of \(z\) and \(E\) for the limiting numerical rational height of \(v\). The exact retained ratio has numerical height \(m\) satisfying
+\[
+ m\le ah+E,\qquad
+ m\ge\frac{1+3g-t+3t^2}{2}\ge\frac{11}{24}+\frac{3g}{2}.
+ \tag{SB1}
+\]
+The first inequality is the rational height bound on the product. For the second, the retained atomic moment is \(1+3g-3t\), and the least diffuse moment at mass \(t\) is \(2t+3t^2\) because the pooled diffuse density is \(1/6\) on \([2,4]\). The exact numerator and denominator are coprime, so their larger numerical height is at least half their combined numerical weight. To get the last bound, minimize \(-t+3t^2\) at \(t=1/6\).
+
+The numerical wider height \(E\) is at least half the sum of the absolute exponent corrections, since primes in the two original letters and degree coordinates are disjoint. Each correction is at least the distance to a nearest grid point, even if another integer multiplier is chosen. Consequently:
+\[
+ \begin{array}{ll}
+ 0<a\le4:&
+ E\ge \dfrac{3a t^2}{4(2+a)},\\[4pt]
+ 4<a<6:& E\ge \dfrac32 t^2,\\[4pt]
+ a\ge6:& E\ge \dfrac13+g.
+ \end{array}
+ \tag{SB2}
+\]
+For the first bound, the pooled diffuse density of \(r/a\) modulo one is at most \((2+a)/6\). Indeed each phase has at most \(2/a+1\) preimages in \([2,4]\), each contributing \(a/6\). Folding to nearest-integer distance at most doubles the density, so the integral of this distance over retained diffuse mass \(t\) is at least \(t^2/(2(2+a)/3)\). Take half and multiply by \(a\). The same bound holds for any retained submeasure by domination by that density. For \(4<a<6\) the distance in the original degree units from \(r\in[2,4]\) to \(a\mathbb Z\) is at least \(4-r\). Its minimum integral at retained diffuse mass \(t\) is \(3t^2\), by taking the top interval. For \(a\ge6\), every retained degree in the support is at distance at least two from the grid. These arguments pass to limiting submeasures by bounded continuous distance to the fixed grid on compact ranges, with first-moment tightness at this profile.
+
+Let \(\mu\) be the frozen modulus-root mass, \(w\) its numerical weight, and \(b\) the selected shallow record weight. Allow any fixed amplification order \(\ell\ge1\), and put \(b'=b/\ell\) for the effective chart exponent. Saving would require
+\[
+ \mu+b'<g,\qquad w\le4\mu,\qquad E<w/2\le2\mu.
+ \tag{SB3}
+\]
+The weight bound uses support below or at four and the absence of escaped moment, so also applies to arbitrarily selected divisors of original roots. The terminal condition of (QD2) gives \(E<w/2\), including after amplification.
+
+If \(2h>b'\), the necessary bound (MB2) after replacing \(h,E,b\) by \(\ell h,\ell E,\ell b'\) reads
+\[
+ E<\frac{b'w}{32\ell(2h-b')}
+ \le\frac{g^2}{32(2h-b')}.
+ \tag{SB4}
+\]
+The last comparison uses \(b'w\le4b'\mu\le(b'+\mu)^2<g^2\). If \(2h\le b'\), all upper bounds on \(2h-b'\) used below are already automatic.
+
+### Incompatibility
+
+If \(0<a\le4\), (SB2) and (SB4), or \(2h\le b'\) directly, give
+\[
+ ah\le \frac a2 b'+\frac{2+a}{48}.
+\]
+Therefore
+\[
+ ah+E<2g+\left(\frac a2-2\right)b'+\frac{2+a}{48}
+          \le2g+\frac18
+          <\frac{11}{24}+\frac{3g}{2},
+\]
+since \(g\le1/3\). This contradicts (SB1).
+
+If \(4<a<6\), (SB2) and (SB4) give \(2h-b'\le1/48\), and \(E<2\mu\) gives \(\mu>3t^2/4\). Thus \(b'<g-3t^2/4\), and
+\[
+ ah+E<2g+\left(\frac a2-2\right)b'+\frac{a}{96}
+       \le 3g-\frac34 t^2+\frac1{16}.
+\]
+Subtract the first lower bound on \(m\) in (SB1). The difference is at most
+\[
+ \frac32 g+\frac12t-\frac94 t^2-\frac7{16}
+   \le 2t-\frac94t^2-\frac7{16}\le-\frac1{48},
+\]
+because \(g\le t\le1/3\). This is again impossible.
+
+If \(a\ge6\), (SB2) gives \(E\ge1/3+g\ge2g\), contrary to \(E<2\mu<2g\). This proves the obstruction for every fixed positive spacing, even using the full range of mixed full/shallow modulus criteria (MB1).

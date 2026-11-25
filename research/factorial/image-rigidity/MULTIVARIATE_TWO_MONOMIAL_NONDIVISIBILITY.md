@@ -5,7 +5,9 @@ moment polynomial of a two-monomial support at order \(m\) cannot
 divide its successor at order \(m+1\). At terminals 2, 3, and 4 the
 consecutive polynomials are coprime over \(\mathbb C\). In particular,
 ordinary multivariate binomials satisfy Strong Factorial at these three
-terminals over every characteristic-zero field.
+terminals over every characteristic-zero field. At terminal 5 the
+ordinary assertion also holds for a constant plus a monomial, with
+any common monomial factor in independent variables.
 
 ## An inequality using the endpoint coefficients
 
@@ -240,6 +242,72 @@ so Bézout over \(\mathbb Q\) extends the conclusion to every
 characteristic-zero field. This argument places no bound on the
 exponents or on the number of variables.
 
+## Terminal 5 for a constant plus a monomial
+
+**Theorem.** At ordinary shape, let \(M(Y)\) be a nonconstant
+monomial and \(W(X)\) any monomial in a set of variables disjoint
+from those of \(M\). For every nonzero
+\(F=W(X)(A+B M(Y))\) over a characteristic-zero field,
+the order-four and order-five factorial moments cannot both
+vanish.
+
+The common factor \(W\) contributes the nonzero scalar
+\(\mathcal L(W^m)\) at each order, by independence of its variables.
+It suffices to consider \(W=1\) and nonzero \(A,B\), since a single
+monomial has nonzero moments. Let \(Y\) now denote the value of
+\(M\) on independent rate-one exponential variables. The monic
+reciprocal of its moment polynomial at order \(m\) is
+\(R_m(x)=\mathbb E[(x+Y)^m]\). Its constant term is nonzero, and
+\(R_5'=5R_4\). Thus a common zero would be a multiple zero of
+\(R_5\). The polynomial \(R_4\) is positive on the real axis,
+since \(Y\) is nonconstant and the integrand is a fourth power.
+
+Write \(\mu_j=\mathbb E[(Y-\mathbb E Y)^j]\).
+A common nonreal root and its conjugate would both be multiple
+roots of the centered quintic
+\[
+ R_5(x-\mathbb E Y)
+  =x^5+10\mu_2x^3+10\mu_3x^2+5\mu_4x+\mu_5.
+\]
+Hence this quintic would be \((x^2+h x+q)^2(x-2h)\) for
+real \(h\) and \(q>0\), where the coefficient of \(x^4\)
+determines the last factor. The coefficient of \(x\) is
+\(q(q-4h^2)=5\mu_4>0\). Coefficient comparison also gives
+\(10\mu_2=2q-3h^2\) and \(10\mu_3=-2h(h^2+q)\).
+Putting \(z=|h|/\sqrt q<1/2\) yields
+\[
+ \frac{|\mu_3|}{\mu_2^{3/2}}
+ =\frac{2\sqrt{10}\,z(1+z^2)}{(2-3z^2)^{3/2}}
+ < 2\sqrt2 .
+\]
+The expression is increasing for \(0\le z\le1/2\), where its
+endpoint value is \(2\sqrt2\).
+
+For \(M=\prod_iY_i^{d_i}\) of total exponent
+\(D=\sum_i d_i\ge2\), write \(\nu_j=\mathbb E[Y^j]\),
+\(a=\nu_2/\nu_1^2\), and \(b=\nu_3\nu_1/\nu_2^2\).
+The ordinary factorial moments give
+\[
+ a=\prod_i\binom{2d_i}{d_i}\ge2^D,\qquad
+ b=\prod_i\prod_{j=1}^{d_i}\frac{2d_i+j}{d_i+j}
+   \ge (3/2)^D .
+\]
+Here \((d_i+j)/j\ge2\) and
+\((2d_i+j)/(d_i+j)\ge3/2\) for \(1\le j\le d_i\).
+Since \(a\ge4\) and \(b\ge2\), the actual skewness satisfies
+\[
+ \frac{\mu_3}{\mu_2^{3/2}}
+ =\frac{ba^2-3a+2}{(a-1)^{3/2}}
+ \ge 2\sqrt{a-1}\ge2\sqrt3 .
+\]
+The first bound uses \(2a^2-3a+2=2(a-1)^2+a\).
+This contradicts the bound for a repeated pair.
+If \(D=1\), then \(R_m/m!=\sum_{j=0}^m x^j/j!\),
+and consecutive polynomials differ by a single top-degree
+term with both constant terms one. Finally the ordinary
+polynomials are rational, so their Bézout identity extends
+to every characteristic-zero field.
+
 ## All orders when both private exponent sums are at least two
 
 At ordinary shapes write
@@ -343,6 +411,6 @@ The reciprocal is therefore Eisenstein over \(K[z]\) at this prime
 and irreducible over \(K(z)\). This proves consecutive coprimality
 when that shift is transcendental over \(K\), including for supports
 with differences of both signs. The ordinary specialization has all
-shifts equal to one. The remaining multivariate assertion is coprimality
-at every terminal \(N\ge5\) for arbitrary ordinary two-monomial supports.
+shifts equal to one. Outside the proved classes above, the remaining
+multivariate assertion is coprimality at terminals \(N\ge5\).
 

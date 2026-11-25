@@ -41,7 +41,7 @@ The two-form Hilbert series is
 The quotient has dimension \(m(m+1)\) over \(\mathbb Q\), has a
 nonzero component in degree \(2m-1\), and vanishes in all higher
 degrees. These are the same homogeneous two-form consequences as in
-[the ordinary binomial argument](ORDINARY_BINOMIAL_RADIAL_TRANSFERS.md).
+[the ordinary binomial argument](ORDINARY_BINOMIAL_MOMENT_SCHEMES_AND_GAUSSIAN_TRANSFER.md).
 
 After base change to any commutative \(\mathbb Q\)-algebra, vanishing
 at orders \(m,m+1\) therefore forces \((A,B)^{2m}=0\) and
@@ -59,3 +59,39 @@ For a fixed support and any certified cutoff \(m_0\), checking the
 remaining coprimality statements reduces to rational resultants at
 \(1\le m<m_0\). The separation theorem supplies a support-dependent
 existence cutoff.
+
+## The universal coefficient scheme at terminal four
+
+The [terminal-four theorem](MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md#terminal-4-for-arbitrary-supports)
+gives the same homogeneous complete intersection at \(m=3\)
+for every pair of distinct monomials, including supports without
+private variables. For every fixed tuple of positive real Gamma
+shapes, work over \(\mathbb R\) with the two moment forms at orders
+three and four. Their pure coefficients are nonzero and their
+dehomogenizations are coprime over \(\mathbb C\). The Hilbert-series
+argument above gives dimension twelve, highest nonzero degree five,
+and sharp coefficient-ideal and polynomial nilpotence at power six
+after evaluation in a commutative \(\mathbb R\)-algebra. At ordinary
+shapes the construction and the same conclusions hold over
+\(\mathbb Q\) and arbitrary commutative \(\mathbb Q\)-algebras.
+
+## Individual roots at fixed order and small curvature
+
+Fix \(n\ge1\). In the
+[small-curvature limit](MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md#gaussian-limit-of-the-centered-roots),
+the normalized order-\(n\) polynomial tends coefficientwise, uniformly
+over the supports, to an imaginary rescaling of \(\mathrm{He}_n\).
+Every root of \(\mathrm{He}_n\) is simple. Indeed a repeated root
+would also annul \(\mathrm{He}_{n-1}\) by the derivative formula
+\(\mathrm{He}'_n=n\mathrm{He}_{n-1}\). The Hermite recurrence
+\(\mathrm{He}_{j+1}=x\mathrm{He}_j-j\mathrm{He}_{j-1}\) would descend
+to \(\mathrm{He}_0=1\), a contradiction. Both identities follow
+by differentiating the generating function in its two variables.
+
+The limiting leading coefficient and discriminant are nonzero.
+By continuity, the normalized order-\(n\) polynomial is squarefree
+for sufficiently small positive curvature, with a cutoff depending
+only on \(n\). The real affine normalization preserves multiplicities,
+and the original ordinary moment polynomial has rational coefficients.
+Consequently the squarefreeness also holds over every
+characteristic-zero field.

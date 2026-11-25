@@ -4,7 +4,7 @@
 
 Factorial moment functionals, composition rigidity and Strong Factorial families. One varying exponent also permits any independent common monomial factor, with all terminals covered.
 
-**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary multivariate two-monomial supports, terminals 2 and 3 are proved. The result holds at all terminals for disjoint nonconstant monomials and when each monomial has private exponent sum at least two. The all-order multivariate and larger-support assertions remain open.
+**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary multivariate two-monomial supports, terminals 2, 3 and 4 are proved. The result holds at all terminals for disjoint nonconstant monomials and when each monomial has private exponent sum at least two. The all-order multivariate and larger-support assertions remain open. Private exponent sums one and at least three are now covered at every terminal. For sums one and two, only terminals 5 through 360 with shared curvature below 4 log 2 remain in this class.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -129,6 +129,12 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Exact signs, zeros and first failure orders of the raw linked beta matrix | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
 | Consecutive exponent-axis nonvanishing for Gamma shapes one and beta | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
 | All-order regular Euclidean chains for diagonal linked beta profiles | Internal result | proved | [Source](image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md) |
+| Large-curvature multivariate two-monomial closure | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md) |
+| All-order multivariate closure at large shared curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md) |
+| Diffuse-support closure at fixed terminals through thirteen | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md) |
+| Simple unit-circle roots for mirrored multivariate Gamma moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md) |
+| All-order closure for private exponent sums one and at least three | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_LINEAR_TAIL.md) |
+| All-order closure for private sums one and two at shared curvature at least 4 log 2 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_LINEAR_TAIL.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -210,6 +216,12 @@ Scope limits:
 - The previous lower-four reduction confined possible collisions to gap 6 and terminals from 13 below N_*. The contour and Bézout proof closes gap 10. The Hasse criterion closes gap 9 and all doubled-prime-power offsets at prime-power gaps at all orders. The lower-four all-order proof now supplies all these gaps. The earlier local cubic inverse, above-critical fixed-support, escaping-field and two thermal matching obligations are discharged at their registered scopes.
 - For every ordinary support and terminal M>=2, the universal two-moment quotient has length M(M-1) and sharp coefficient-nilpotence exponent 2M-2. The same pair result applies to multivariate binomials whose exponent vectors differ in one coordinate.
 - For ordinary supports the intermediate-shape polynomial Q_(N,a(N-1)+1,d) has root multiplicity at most min(N,max(1,a)). At a=0 and a=1 squarefreeness is equivalent to consecutive coprimality. At ordinary lower-one shape gamma=N the terminal Hurwitz determinant is a positive integer at every gap.
+- Every fixed multivariate two-monomial support with a private variable on each side has eventual consecutive separation. A varying shared exponent also gives eventual squarefreeness, and the late pair forces the sharp coefficient ideal exponent 2m over Q-algebras.
+- At every fixed terminal there is a dimension-independent small-curvature exclusion for arbitrary multivariate two-monomial supports. The same limit gives single-order squarefreeness.
+- When the private exponent sums are one and at least three, exact phase checks and the uniform tail prove every terminal. For sums one and two, only terminals 5 through 360 with shared curvature below 4 log 2 remain.
+- Terminal five also holds for W(X)(A+B M(Y)) with W and nonconstant M on disjoint variable sets.
+- At fixed terminals, small curvature and the explicit large-curvature criteria exclude common roots. The positive-curvature diffuse model yields uniform small-relative-gap closure through terminal thirteen, with no upper bound on dimension or exponents.
+- A private variable on each side and shared curvature at least 4 log 8 give all-terminal closure. Mirrored profiles with paired equal positive Gamma shapes have simple unit-circle roots at each individual order; generic degreewise composition does not transfer consecutive coprimality.
 
 Tracked obligations (computed states):
 
@@ -238,6 +250,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Decide whether the actual repeated-root triple set is EMPTY: for EVERY integer a>=0,d>=1,m>=2, prove gcd_Q(A_(m;a,d),A_(m;a,d)_prime)=1, or exhibit an actual repeated-root triple. A support-uniform eventual cutoff and finiteness of this set do not prove emptiness.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-ALL-ORDER-SQUAREFREENESS
 - **mathematical / open:** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF
 - **mathematical / open:** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
-- **mathematical / open:** [Prove every consecutive ordinary factorial-moment pair coprime for arbitrary multivariate two-monomial supports at every terminal N>=4.](image-rigidity/MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
+- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for every remaining arbitrary multivariate two-monomial support at each terminal N>=5.](image-rigidity/MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

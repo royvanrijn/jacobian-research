@@ -34,5 +34,10 @@
     "provenance_draft": "ChatGPT (OpenAI) assisted with mathematical arguments, literature checks, exposition, proof review and verification code. The proof was audited in a separate internal review using only the compiled PDF, and exact arithmetic checked selected moment identities. Independent external mathematical review has not yet occurred.",
     "status": "Source and metadata prepared for author submission.",
     "contributor_inputs": "Sign in with ORCID and choose the license, contributor designation and human-understanding declaration for this manuscript."
-  }
+  },
+  "next_steps": [
+    "Obtain external mathematical review of the principal-orbit transfer and arithmetic specialization.",
+    "Record the author’s approval of the prepared submission metadata and required contributor declarations when available.",
+    "Treat the two compact exceptional products and the anisotropic nonsplit cases as separate research obligations."
+  ]
 }

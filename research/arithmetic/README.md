@@ -405,6 +405,17 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A saving with a near-full letter and narrow residue bands | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
 | A quantitative lower bound on low degrees at the one-full endpoint | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
 | A count saving with one near-full letter and narrow valuation-residue bands | Internal result | proved | [Source](ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md) |
+| A global powerful-triple bound allowing arbitrary fullness orders | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Alternating powerful-triple asymptotics in a primitive height sector | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| A powerful-sum bound for repaired fixed targets and arbitrary gcd | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| An explicit pointwise saving at high-full targets with arbitrary gcd | Internal result | proved | [Source](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) |
+| Strict small-budget saving at the height-adjusted fullness thresholds | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| A joint valuation repair criterion for a strict small-budget saving | Internal result | proved | [Source](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md) |
+| A pooled phase inequality on unrestricted small-budget profiles | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A strict phase-sector saving away from minimum nonatomic mass | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A twelve-leaf improvement near unit radical budget | Internal result | proved | [Source](ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md) |
+| A phase count saving using low and high valuation bands together | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| A one-group determinant obstruction at the symmetric diffuse profile | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
 
 **Computed obligations:** 105 unresolved; 18 resolved within their exact scope.
 
