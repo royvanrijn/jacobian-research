@@ -226,6 +226,52 @@ conditions at every \(\alpha\). They do not assert a cheap
 record having the required capture.
 [Absolute residue alphabet bound and entropy identities (RB2–RB5)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#regular-balanced-cohorts-and-absolute-residue-pricing)
 
+### Conditional costs of exact valuation layers
+
+In a chart with fixed exact valuation lists and dyadic
+raw caps, let \(x_i\) be the residual roots on \(U\) after
+record \(R\) is fixed, with orders \(e_i\) and heights at
+most \(n^{a_i}\), where \(\sum_i a_i\le A\). A tail
+omitted from these lists can be fixed with arbitrarily
+small normalized radical cost before choosing the
+height limit. For the roots kept one has
+\[
+        2H(U\mid R)\le \sum_i H(x_i\mid R)
+                                + H(\Theta\mid R)+o(1).
+\]
+This refinement prices the actual conditional layer
+alphabets. It requires exact powers on each coordinate.
+
+For finite root alphabets of sizes \(M_i\) in one
+\(R\)-fibre, apply the proof of the absolute residue
+bound to the product of \(x_i^{e_i}\) and to a list
+of at most \(K\) residue classes. For the character sum
+at position \(i\), expand its moment of order
+\(2h_i\), with \(h_i=\lceil A/a_i\rceil\) for positive
+\(a_i\). The collapsed products are at most \(n^{2A}\),
+smaller than the fixed lock for sufficiently small
+\(L\). The number of \(e_i\)-th roots of unity modulo
+the lock is height-subpower at these fixed orders.
+Fix one collapsed product and the root of unity to
+recover at most one other product, with divisor-many
+ordered preimages. The norm is at most
+\(M_i^{1/2}X^{o_X(1)}\). Cauchy–Schwarz for the residue
+list and Hölder, using \(\sum_i h_i^{-1}\le1\),
+bound the count by \(K^{1/2}\prod_i M_i^{1/2}X^{o_X(1)}\).
+A known coefficient multiplies the residue list by a
+unit. This estimate counts a Cartesian envelope of
+the actual tuples, so it requires no probabilistic
+independence. Now rank-bin each individual root and
+\(\Theta\) in each \(R\)-fibre as above, and use this
+alphabet estimate in each joint bin. The number of
+coordinates is fixed in the inner limit. The entropy
+of the bin choices is height-subpower, and their
+averaged logarithmic alphabet bounds are the displayed
+conditional entropies. Uniform root exponents and
+subpower orders here are used at the fixed-budget
+height limit before taking the outer limit.
+[Degree-one residue list moment (AT1)](ABC_ABSOLUTE_TARGET_RAY_MOMENTS.md#algebraic-integers-with-a-ray-residue-dictionary)
+
 ### Modular overlap of complementary factor records
 
 Let \(U=\prod_{i=1}^k F_i\) be a deterministic,
