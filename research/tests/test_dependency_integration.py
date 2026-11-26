@@ -209,6 +209,17 @@ class DependencyIntegrationTests(unittest.TestCase):
         self.assertIn("UNTAGGED [untagged", text)
         self.assertIn("Next action — Check the full coefficient family.", text)
 
+    def test_curated_principal_theorem_is_discoverable_as_an_endpoint(self):
+        self.data["topics"][0]["gap_ids"].append("D")
+        inventory = json.loads(self.cli("gaps", "--unresolved", "--topic", "topic", "--json"))
+        target = next(row for row in inventory if row["id"] == "D")
+
+        self.assertEqual(target["node_kind"], "result")
+        self.assertEqual(target["recorded_state"], "partial")
+        self.assertEqual(target["state"], "open")
+        self.assertEqual(target["role"], "active_goal")
+        self.assertEqual(target["listed_in_topics"], ["topic"])
+
     def test_plain_explain_includes_selected_recursive_source_pins(self):
         self.data["graph"]["nodes"][1]["status"] = "proved"
         text = self.cli("explain", "D")
