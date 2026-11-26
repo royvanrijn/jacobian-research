@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "scope": "Supplementary finite exact native and full deformed coefficient controls only; universal result is the written monotone-height and vertex-unit proof.",
+  "m_range": [
+    1,
+    60
+  ],
+  "C_values": [
+    -7,
+    -2,
+    -1,
+    1,
+    2,
+    7
+  ],
+  "p_values": [
+    3,
+    5,
+    7,
+    11,
+    13
+  ],
+  "p_unit_cases": 1680,
+  "p_divides_m_cases": 278,
+  "generic_initial_block_cases": 1402,
+  "coefficient_values_checked": 52920,
+  "qualification_controls": [
+    {
+      "false_claim": "all positive vertices i=m modp",
+      "witness": {
+        "m": 15,
+        "p": 3,
+        "hull": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            12,
+            10
+          ],
+          [
+            13,
+            11
+          ],
+          [
+            15,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "false_claim": "genericpnotdividingm has full equality including initialblock",
+      "witness": "m1,Cminus1,p3,F1=2A"
+    },
+    {
+      "false_claim": "arbitrarycarryingnativefaces all have pdivisible degree",
+      "witness": {
+        "m": 6,
+        "p": 3,
+        "hull": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "face_denominators": [
+          3,
+          1
+        ]
+      }
+    }
+  ],
+  "actual_engine_cases": 0,
+  "canonical_mutations": false,
+  "checker_sha256": "90740d3c6c9570cc5dff2b0d11839285c0c08003df0fd5c0e03815448532867e"
+}

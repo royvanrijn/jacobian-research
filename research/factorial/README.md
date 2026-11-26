@@ -692,10 +692,58 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Uniform native-prime angular separation in growing mixed profile boxes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_NATIVE_PRIME_GROWING_PROFILES.md) |
 | Short resultant bounds for projective binomial primes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PROJECTIVE_BINOMIAL_PRIME_RESULTANTS.md) |
 | Ordinary reflected row unfolding of multiple interior Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MULTIPLE_ROOT_INTERIOR_HEAT_UNFOLDING.md) |
+| Partial dense quadratic Strong Factorial resonance frontier | Internal result | proved | [Source](image-rigidity/UNIVARIATE_QUADRATIC_STRONG_FACTORIAL_RESONANCE.md) |
+| Exact diffuse exclusion at several polynomial exponent scales | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_POLYNOMIAL_SCALE_DIFFUSE_EXCLUSION.md) |
+| Polynomial height templates with arbitrary multiplicities | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_POLYNOMIAL_HEIGHT_NATIVE_MARKS.md) |
+| Exact prime slope cones for independent ordinary row counts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EXACT_SLOPE_CONE_MULTIPLICITIES.md) |
+| Oriented factorial block gcds for common-factor denominators | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORIENTED_BLOCK_DENOMINATOR_GCD.md) |
+| Ordinary row replacement reverses the adjacent heat shifts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_REVERSE_CLOCK_ROW_REPLACEMENT.md) |
+| Third-order signs and fourth-order ordinary midpoint shifts at stationary contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_STATIONARY_MIDPOINT_SHIFT_REDUCTION.md) |
+| First-block prime depths with arbitrary moving rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIRST_BLOCK_DEPTH_AND_MOVING_RESIDUES.md) |
+| Angular rank reversal at multiple interior Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MULTIPLE_CONTACT_ANGULAR_RANK_REVERSAL.md) |
+| Physical comparisons of truncated Newton faces | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PHYSICAL_TRUNCATED_NEWTON_FACES.md) |
+| Simultaneous height bounds at algebraic diffuse contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIMULTANEOUS_CONTACT_HEIGHT.md) |
+| No-height no-carry quadratic prime gate and partial resonance exclusion | Internal result | proved | [Source](image-rigidity/UNIVARIATE_QUADRATIC_NO_HEIGHT_NEWTON_POLYGON.md) |
+| Unrestricted prime-unit quadratic native polygon transfer | Internal result | proved | [Source](image-rigidity/UNIVARIATE_QUADRATIC_UNRESTRICTED_NATIVE_POLYGON_TRANSFER.md) |
+| Height quadrature at transverse saturated Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SATURATED_BOUNDARY_HEIGHT_QUADRATURE.md) |
+| Integer retained row splitting for multiple Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_INTEGER_ROW_SPLIT_UNFOLDING.md) |
+| Paired multiple Gaussian contacts with unbounded retained gaps | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_MULTIPLE_UNBOUNDED_GAPS.md) |
+| Opposed independent heights at transverse rational-bias contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_INDEPENDENT_HEIGHT_RATIONAL_BIAS.md) |
+| Moving-prime resultant bounds from reciprocal traces | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MOVING_PRIME_TRACE_RESULTANT.md) |
+| Reversible dense quadratic linear-adjunction bridge | Internal result | proved | [Source](image-rigidity/QUADRATIC_STRONG_FACTORIAL_LINEAR_ADJUNCTION_BRIDGE.md) |
+| Paired multiple Gaussian contacts of infinite ordinary cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_MULTIPLE_MIDPOINT_CLOUDS.md) |
+| Simple stationary contacts unfolded by the first complex root jet | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIMPLE_CONTACT_COMPLEX_JET_UNFOLDING.md) |
+| Fixed-field height bounds for reciprocal trace orbits | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_FIELD_TRACE_ORBIT_HEIGHT.md) |
+| Paired first marks force affine descent for independent opposed heights | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_PRIME_MARK_AFFINE_DESCENT.md) |
+| Sharp signed curvature triangle for arbitrary diffuse tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_STATIONARY_BIAS_CURVATURE_TRIANGLE.md) |
+| Sharp stationary exclusion and transverse unfolding of finite cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_STATIONARY_TAIL_DICHOTOMY.md) |
+| Moving-field height bounds from clustered trace derivatives | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRACE_HERMITE_JET_HEIGHT.md) |
+| Tame field reconstruction and discriminant squareclasses from common faces | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TAME_FIELD_DISCRIMINANT_SQUARECLASSES.md) |
+| Height descent for opposed growing gaps at zero bias | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_LARGE_GAP_ZERO_BIAS_DESCENT.md) |
+| Mixed simple and multiple contacts unfolded by complex root jets | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIXED_MULTIPLICITY_COMPLEX_JET_UNFOLDING.md) |
+| Joint moving-prime and real height bounds by rational trace projection | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MOVING_PRIME_TRACE_PROJECTION.md) |
+| Dense univariate quadratic Strong Factorial windows | Internal result | proved | [Source](image-rigidity/DENSE_UNIVARIATE_QUADRATIC_STRONG_FACTORIAL.md) |
+| Exact local interpolation with boundedly many balanced ordinary rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIT_GAP_LOCAL_COEFFICIENT_INTERPOLATION.md) |
+| Discriminant bounds charging trace denominator primes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRACE_DENOMINATOR_PRIME_DISCRIMINANT.md) |
+| Uniform stationary tests with zero clock response | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_STATIONARY_ZERO_CLOCK_DICHOTOMY.md) |
+| Sharp two-scale tests for same-sign lower-order clock response | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_STATIONARY_LOWER_CLOCK_TWO_SCALE.md) |
+| Strong Factorial for every univariate polynomial of degree at most two | Internal result | proved | [Source](image-rigidity/UNIVARIATE_QUADRATIC_ALL_SUPPORTS_STRONG_FACTORIAL.md) |
+| Generic transverse quadratic reduction for wide ordinary cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GENERIC_TRANSVERSE_QUADRATIC_DIFFUSE_CONTACTS.md) |
+| Joint parity and discriminant prime budgets for common quadratics | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_QUADRATIC_JOINT_PARITY_DISCRIMINANT_BUDGET.md) |
+| Directional height bounds for transverse common quadratics | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRANSVERSE_QUADRATIC_DIRECTIONAL_HEIGHT.md) |
+| Cofactor Smith form and height budgets at isolated common factors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ISOLATED_COFACTOR_SYLVESTER_BUDGET.md) |
+| Strong Factorial on three even binary quadratic coefficient planes | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_SINGLE_FACE_STRONG_FACTORIAL.md) |
+| Strong Factorial for every quadratic polynomial in x+y | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_OF_X_PLUS_Y_STRONG_FACTORIAL.md) |
+| Symmetric bilinear and transported affine-face Strong Factorial windows | Internal result | proved | [Source](image-rigidity/SYMMETRIC_BILINEAR_QUADRATIC_STRONG_FACTORIAL.md) |
+| Full symmetric six-term binary quadratic Strong Factorial windows | Internal result | proved | [Source](image-rigidity/FULL_SYMMETRIC_BINARY_QUADRATIC_STRONG_FACTORIAL.md) |
+| Effective norm-denominator growth from signed factorial differences | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HIGH_ORDER_NORM_DENOMINATOR_GROWTH.md) |
+| Effective common-factor norm heights from paired factorial differences | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_FACTORIAL_DIFFERENCE_NORM_HEIGHT.md) |
+| Uniform antichain bounds for collision multiplicities | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MULTIPLICITY_ANTICHAIN_BOUND.md) |
+| Prime-to-fixed-set evaluated norm height for isolated quadratics | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_EVALUATED_FACTOR_NORM_HEIGHT.md) |
 
-**Computed obligations:** 48 unresolved; 26 resolved within their exact scope.
+**Computed obligations:** 49 unresolved; 30 resolved within their exact scope.
 
-**Assessment update needed:** GAP-FACTORIAL-POLYNOMIAL-GRACE-STRIP-NONCOLLISION now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
+**Assessment update needed:** GAP-FACTORIAL-POLYNOMIAL-GRACE-STRIP-NONCOLLISION, UQR-OPEN-ALL-REMAINING-RESONANT-PAIR-COPRIMALITY, UQR-OPEN-DENSE-UNIVARIATE-QUADRATIC-SFC, LAB-OPEN-FOUR-TERM-BINARY-QUADRATIC-SFC, LAB-OPEN-FIVE-TERM-TERNARY-QUADRATIC-SFC now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
 
 
 Scope limits:
@@ -822,5 +870,10 @@ Tracked obligations (computed states):
 - **mathematical / open:** [For every nonzero f in C[x,y,z] with s nonzero monomials and every n>=1, at least one L(f^n),...,L(f^(n+s-1)) is nonzero. Arbitrary degrees and supports; this is the standard dimension-three conjecture.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-THREE-VARIABLES
 - **mathematical / open:** [For every nonzero f in C[x,y] with s nonzero monomials and every n>=1, at least one L(f^n),...,L(f^(n+s-1)) is nonzero. Arbitrary degrees and supports; this is the standard dimension-two conjecture, not the two-monomial family.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-TWO-VARIABLES
 - **mathematical / open:** [For every nonzero f in C[x,y] of total degree at most two, with its actual number s of nonzero monomials, and every n>=1, at least one moment from n through n+s-1 is nonzero. Constant and linear terms are included; homogeneous quadratic closure alone does not prove this.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-BINARY-QUADRATICS
+- **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Exclude a rational common factor for every remaining q in the explicit resonance set R; equivalently establish the universal dense univariate quadratic support-three window.](image-rigidity/UNIVARIATE_QUADRATIC_STRONG_FACTORIAL_RESONANCE.md) — UQR-OPEN-ALL-REMAINING-RESONANT-PAIR-COPRIMALITY
+- **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Universal dense univariate quadratic support-three Strong Factorial windows, beyond the proved resonance exclusion criterion.](image-rigidity/UNIVARIATE_QUADRATIC_STRONG_FACTORIAL_RESONANCE.md) — UQR-OPEN-DENSE-UNIVARIATE-QUADRATIC-SFC
+- **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Universal four-moment windows forax^2+bx+dy+c, equivalent to the dense univariate quadratic problem.](image-rigidity/QUADRATIC_STRONG_FACTORIAL_LINEAR_ADJUNCTION_BRIDGE.md) — LAB-OPEN-FOUR-TERM-BINARY-QUADRATIC-SFC
+- **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Universal five-moment windows forax^2+bx+dy+ez+c, equivalent to the same dense univariate quadratic problem.](image-rigidity/QUADRATIC_STRONG_FACTORIAL_LINEAR_ADJUNCTION_BRIDGE.md) — LAB-OPEN-FIVE-TERM-TERNARY-QUADRATIC-SFC
+- **mathematical / open:** [Prove the actual five-support window for a(x^2+y^2)+e(x+y)+c with aec!=0, without inferring a shorter window by specializing the six-term theorem.](image-rigidity/FULL_SYMMETRIC_BINARY_QUADRATIC_STRONG_FACTORIAL.md) — SBQ-OPEN-SYMMETRIC-FIVE-TERM-WITHOUT-CROSS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

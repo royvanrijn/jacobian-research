@@ -1262,6 +1262,79 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Arbitrarily full targets admit all-tall coloured threefold collisions | Internal result | proved | [Source](ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md) |
 | Three or more complete products fill the natural large-prime residue image | Internal result | proved | [Source](ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md) |
 | Local complete-product images lift to primitive rows in prescribed intervals | Internal result | proved | [Source](ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md) |
+| One active fullness floor saves on conditional fixed shifts | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| A small excess valuation moment reduces the fixed-shift count to joint defect prices | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| A local fixed-shift codegree gap saves on balanced residue cells | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| Switching roles preserves a full modulus in primitive cell codegrees | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| Three residue registers extract an actual dense component on all roles | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| Actual balanced residue cells give simultaneous full-factor criteria | Internal result | proved | [Source](ABC_BALANCED_CELL_FULL_FACTOR_QUANTILES.md) |
+| Full-factor packing caps trimmed high tails at every positive balanced multiplicity | Internal result | proved | [Source](ABC_BALANCED_CELL_FULL_FACTOR_QUANTILES.md) |
+| The two-copy numerical quantile retains one stripped supported weight | Internal result | proved | [Source](ABC_BALANCED_CELL_FULL_FACTOR_QUANTILES.md) |
+| Balanced residue cells force large mixed additive energy | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md) |
+| Regular balanced cohorts constrain signed compressed shift prices | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md) |
+| Generic reciprocal words on a positive fibre have large private denominator radicals | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md) |
+| Balanced low-multiplicity occurrence reduces to an exact induced matching | Internal result | proved | [Source](ABC_OCCURRENCE_INDUCED_ADDITIVE_MATCHINGS.md) |
+| Prime reductions preserve an induced occurrence matching at the quadratic modulus scale | Internal result | proved | [Source](ABC_OCCURRENCE_INDUCED_ADDITIVE_MATCHINGS.md) |
+| A short real filter lowers the modulus needed to preserve an occurrence matching | Internal result | proved | [Source](ABC_OCCURRENCE_INDUCED_ADDITIVE_MATCHINGS.md) |
+| Two radical caps and common full divisors allow a full-exponent primitive induced matching | Internal result | proved | [Source](ABC_OCCURRENCE_INDUCED_ADDITIVE_MATCHINGS.md) |
+| Diffuse tall dictionaries can have independent root marginals and deterministic packet complements | Internal result | proved | [Source](ABC_RESIDUE_OCCURRENCE_ROOT_PROJECTION_OBSTRUCTION.md) |
+| Root blocks give a multiscale unit residue bound at arbitrary depths | Internal result | proved | [Source](ABC_RESIDUE_OCCURRENCE_ROOT_PROJECTION_OBSTRUCTION.md) |
+| A Gaussian squarefree sieve retains primitive parents in growing slope moduli | Internal result | proved | [Source](ABC_OCCURRENCE_AUXILIARY_UNIT_TESTS.md) |
+| Prescribed auxiliary unit tests retain balanced false least-repair candidates | Internal result | proved | [Source](ABC_OCCURRENCE_AUXILIARY_UNIT_TESTS.md) |
+| Real moments half-price the total radical cap of a close pair | Internal result | proved | [Source](ABC_OCCURRENCE_REAL_PAIR_SPACING.md) |
+| A numerical height gap preserves an induced occurrence matching on real bins alone | Internal result | proved | [Source](ABC_OCCURRENCE_REAL_PAIR_SPACING.md) |
+| A radical-scale real gap suffices for the two-cheapest dictionary count | Internal result | proved | [Source](ABC_RADICAL_SCALE_REAL_GAP.md) |
+| High roots can be released with a short integral cofactor on every letter | Internal result | proved | [Source](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md) |
+| Arbitrary fixed coefficients admit the two-cheapest bounded-group bound | Internal result | proved | [Source](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md) |
+| A small integral correction releases arbitrary fixed-shift fibres | Internal result | proved | [Source](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md) |
+| Large normalized balanced codegrees admit half the smaller conditional group cost | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| Tiny primitive quotient paths are power-small in positive balanced cells | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| Diffuse saturated record prices survive the local reverse transfer across the dictionary range | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md) |
+| All unit classes of an arbitrary step admit one aggregate radical-capped pair bound | Internal result | proved | [Source](ABC_SHORT_PROGRESSION_PAIR_COUNTS.md) |
+| Arbitrary-step short index blocks have subpower tall small-radical occupancy | Internal result | proved | [Source](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md) |
+| Joint full-divisor records half-price the two cheapest remaining quotient costs | Internal result | proved | [Source](ABC_SHORT_PROGRESSION_PAIR_COUNTS.md) |
+| Coarse real bins and a prime power admit full-exponent false three-cap matchings | Internal result | proved | [Source](ABC_OCCURRENCE_MIXED_BIN_FALSE_MATCHINGS.md) |
+| Aggregate polynomial support tests save when the residual resultants have bounded cost | Internal result | proved | [Source](ABC_POLYNOMIAL_AGGREGATE_SUPPORT_TESTS.md) |
+| A growing list gives full tested depth on false polynomial candidates | Internal result | proved | [Source](ABC_POLYNOMIAL_AGGREGATE_SUPPORT_TESTS.md) |
+| Actual sparse residue dictionaries have polynomial mixed-character flatness | Internal result | proved | [Source](ABC_SIGNED_AUXILIARY_TREE_COMPARISON.md) |
+| Additive energy controls auxiliary mask amplitude, and sparse intervals obstruct a uniform lower bound | Internal result | proved | [Source](ABC_SIGNED_AUXILIARY_TREE_COMPARISON.md) |
+| A gap among finitely many orders releases longer integral cofactors | Internal result | proved | [Source](ABC_THIN_WINDOW_ARBITRARY_SHIFT_RELEASE.md) |
+| Arbitrary fixed shifts admit a larger integral correction | Internal result | proved | [Source](ABC_THIN_WINDOW_ARBITRARY_SHIFT_RELEASE.md) |
+| The arbitrary-coefficient half bound permits growing thin-window groups | Internal result | proved | [Source](ABC_THIN_WINDOW_ARBITRARY_SHIFT_RELEASE.md) |
+| Fixed-shift release extends progression occupancies and balanced path cutoffs | Internal result | proved | [Source](ABC_THIN_WINDOW_ARBITRARY_SHIFT_RELEASE.md) |
+| Short affine lattice lines have subpower three-cap occupancy | Internal result | proved | [Source](ABC_DIVISOR_LATTICE_LINE_OCCUPANCY.md) |
+| Three fixed divisors give an anisotropic half-determinant-deficit bound | Internal result | proved | [Source](ABC_DIVISOR_LATTICE_LINE_OCCUPANCY.md) |
+| Affordable three-divisor records save via half the area deficit | Internal result | proved | [Source](ABC_DIVISOR_LATTICE_LINE_OCCUPANCY.md) |
+| Positive-scale radical mass gives quantitative additive energy control | Internal result | proved | [Source](ABC_OCCURRENCE_DICTIONARY_ADDITIVE_ENERGY.md) |
+| Balanced occurrence dictionaries have a power saving from cubic energy | Internal result | proved | [Source](ABC_OCCURRENCE_DICTIONARY_ADDITIVE_ENERGY.md) |
+| Actual occurrence energy yields a quantitative lower supply of centered masks | Internal result | proved | [Source](ABC_OCCURRENCE_DICTIONARY_ADDITIVE_ENERGY.md) |
+| Power-constrained prime-field matchings can have pseudorandom marginals | Internal result | proved | [Source](ABC_OCCURRENCE_PSEUDORANDOM_INDUCED_MATCHINGS.md) |
+| Complete degrees sharpen the false-mass bound for separated tests | Internal result | proved | [Source](ABC_OCCURRENCE_PSEUDORANDOM_INDUCED_MATCHINGS.md) |
+| Two prescribed full-step registers can be injective on a wholly diffuse dictionary | Internal result | proved | [Source](ABC_RESIDUE_OCCURRENCE_ROOT_PROJECTION_OBSTRUCTION.md) |
+| Projecting both paired trees multiplies their cancellation factors | Internal result | proved | [Source](ABC_TWO_SIDED_AUXILIARY_TREE_CANCELLATION.md) |
+| Two cycles or nonsibling cycles sharpen sparse-mask projection norms | Internal result | proved | [Source](ABC_TWO_SIDED_AUXILIARY_TREE_CANCELLATION.md) |
+| Direct additive row splits pin auxiliary tree ratios to sparse sets | Internal result | proved | [Source](ABC_TWO_SIDED_AUXILIARY_TREE_CANCELLATION.md) |
+| The actual projective-minor gcd satisfies an inverse-square bound | Internal result | proved | [Source](ABC_DIVISOR_LATTICE_LINE_OCCUPANCY.md) |
+| Empirical prime prices obey an improved half-area divisor-record inequality | Internal result | proved | [Source](ABC_DIVISOR_LATTICE_LINE_OCCUPANCY.md) |
+| A moving affine line costs half the cheapest varying radical input | Internal result | proved | [Source](ABC_LONG_AFFINE_LINE_RADICAL_COUNTS.md) |
+| A second successive minimum controls actual rows in translated boxes | Internal result | proved | [Source](ABC_LONG_AFFINE_LINE_RADICAL_COUNTS.md) |
+| Three full divisors give an explicit dual-frequency counting test | Internal result | proved | [Source](ABC_LONG_AFFINE_LINE_RADICAL_COUNTS.md) |
+| Translated boxes admit an inverse-square bound on affine triangle content | Internal result | proved | [Source](ABC_LONG_AFFINE_LINE_RADICAL_COUNTS.md) |
+| Any composite-projective class has square-root area occupancy | Internal result | proved | [Source](ABC_PROJECTIVE_CONTENT_MOMENTS.md) |
+| Projective content moments allow a modulus chosen after the rows | Internal result | proved | [Source](ABC_PROJECTIVE_CONTENT_MOMENTS.md) |
+| The projective sieve deducts twice the log of the tuple extension scale | Internal result | proved | [Source](ABC_PROJECTIVE_CONTENT_MOMENTS.md) |
+| Anchor-conditioned frequencies price all divisors of projective minors | Internal result | proved | [Source](ABC_PROJECTIVE_FREQUENCY_DIVISOR_PRICING.md) |
+| Unconditioned projective classes can be priced at the recorded depth | Internal result | proved | [Source](ABC_PROJECTIVE_FREQUENCY_DIVISOR_PRICING.md) |
+| Two radical caps allow sharp linear deficit with a fresh full modulus | Internal result | proved | [Source](ABC_PROJECTIVE_FREQUENCY_DIVISOR_PRICING.md) |
+| Fresh projective primes carry the empirical price in generic balanced pairs | Internal result | proved | [Source](ABC_PROJECTIVE_FREQUENCY_DIVISOR_PRICING.md) |
+| Binary forms pull back projective classes at a degree-diluted depth | Internal result | proved | [Source](ABC_PROJECTIVE_PULLBACK_CLUSTERING.md) |
+| Full-exponent false Pythagorean carriers avoid projective clustering | Internal result | proved | [Source](ABC_PROJECTIVE_PULLBACK_CLUSTERING.md) |
+| Two compressed letters release a primitive sum with arbitrary third valuation profile | Internal result | proved | [Source](ABC_TWO_COMPRESSED_LETTER_RELEASE.md) |
+| Two short quotient records save across the complete multiplicity range | Internal result | proved | [Source](ABC_TWO_COMPRESSED_LETTER_RELEASE.md) |
+| Short support dictionaries supply nearly uniform products at auxiliary primes | Internal result | proved | [Source](ABC_MULTIPLICATIVE_SPECTATOR_UNIT_SUPPLY.md) |
+| Actual occurrence radical dictionaries can supply the auxiliary unit law | Internal result | proved | [Source](ABC_MULTIPLICATIVE_SPECTATOR_UNIT_SUPPLY.md) |
+| A bilinear auxiliary split preserves exact additive truth and redistributes ratios | Internal result | proved | [Source](ABC_AUXILIARY_BILINEAR_SPLIT.md) |
+| Support products give an arithmetic marginal law for a defect-preserving split | Internal result | proved | [Source](ABC_AUXILIARY_BILINEAR_SPLIT.md) |
 
 **Computed obligations:** 108 unresolved; 19 resolved within their exact scope.
 

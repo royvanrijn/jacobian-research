@@ -77,7 +77,10 @@ dictionary exponent, after the first record is fixed.
 One may always use the raw sum of remaining low radical
 exponents for \(s_a\). All root or bounded-group dictionary
 caps in the cited estimates are the actual conditional
-caps in the resulting fibres. A bound on one complete
+caps in the resulting fibres. The arbitrary-shift
+(FS5) uses singleton or fixed bounded-size groups.
+The full-modulus and real-gap (FS1) also permits
+the specified shrinking-window groups. A bound on one complete
 dictionary is not a bound on the sum of its singleton
 position caps.
 
@@ -230,10 +233,9 @@ the same \(q<u\). If the number of rows in a cell is
 Thus the sum of the rows on the chart has exponent at
 most \(s+\max(u,(3u+q)/2)\), before the chart, pruning
 and count allowances. This is below \(1/3\) by
-\(\min(u,(u-q)/2)\). To apply this to a sector at a
-fixed positive distance from saturation, choose the
-chart loss and RB4 cell tolerances smaller than the
-power margin. For an endpoint contradiction it suffices
+\(\min(u,(u-q)/2)\). For near-saturating bins choose the chart loss and
+RB4 cell tolerances smaller than the proposed power
+margin. For an endpoint contradiction it suffices
 to apply the bound to one typical exponent-full cell,
 whose existence follows from (RB4). The average-cost
 version uses the uniform law on oriented two-edge
@@ -256,6 +258,11 @@ would then give only the existing global exponent.
 Uniform closure of the full range requires an
 additional reduction in the count of occupied cells,
 or in their record prices, as \(u\) approaches zero.
+An existing primitive matching construction has
+two original radical caps and simultaneous affordable
+record saturation, with the third radical unrestricted.
+It supplies no power-many local codegrees.
+[Two-cap matching construction](ABC_OVERLAPPING_FULL_RECORD_COUNTEREXAMPLES.md#fixed-parameters-and-complete-integers)
 
 ## A role switch that preserves the full shift divisor
 
@@ -300,8 +307,14 @@ Subadditivity gives equality for every \(T\) and
 **RT6.** If \(v>0\), one can extract an actual common
 three-register cell at exponent \(2v'\) with \(v'\ge v\)
 up to arbitrarily small losses and with all three
-complete dictionary exponents at most \(v'\).
-First choose a cell with row exponent at least
+complete dictionary exponents at most \(v'\), where
+\(v'\le u\).
+First prune the atypical one-lock cells for all three
+locks by (RB4), taking the combined chart price much
+smaller than the fixed cell tolerance. This is a
+power-small deletion and leaves all three complete
+marginals at most \(n^{u+o(1)}\) in a common-register
+cell, in the iterated limit. Then choose a cell with row exponent at least
 \(2v-\tau\) and each conditional pair mutual information
 tending to zero. Such cells exist for each fixed
 \(\tau>0\): the mean row exponent is \(2v+o(1)\),
@@ -337,6 +350,107 @@ locks. It is not a consequence of the register bounds
 on the rest of the range, and an extraction of one
 cell places no upper bound on the number of cells.
 [Conditional entropy of the registers (RB5–RB7)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#conditional-entropy-identities-and-three-registers)
+
+## Arbitrary weighted shifts at radical-scale height
+
+**RT7.** In an RT1 context put \(n=X^L\) and use only
+singleton or fixed bounded-size same-role groups. After
+normalizing the two weighted values to a coprime pair
+\(P,Q\) and fixing the deficient record, let
+\(W_P,W_Q\) be the sums of the actual conditional group
+caps and \(b\) the joint record price. Include coefficients
+and discarded full factors in the fixed data. For every
+\(\eta>0\), uniformly for sufficiently small fixed \(L\)
+and \(\max(P,Q)>n^{C}\) with a sufficiently large fixed
+\(C=C(\eta)\), the bound is
+\[
+             O\!\left(n^{b+\min(W_P,W_Q)/2+\eta}
+                              X^\varepsilon\right).
+\]
+The threshold can also depend on the aggregate raw cap,
+group size and polynomial height bounds. The caps can vary
+with the record if the estimate is applied in the actual
+record bins. An independent full modulus, numerical real
+gap, and a low-position charge are unnecessary. In the
+cutoff setting one can include \(H/\kappa+z\) in the
+minimum, with the prelimit height and zero-window bounds.
+Apply (MCB2) to \(P+S=Q\), or \(P+Q=S\), with the
+normalized nonzero shift \(S\) fixed and of group cost
+zero. The largest complete value is at least \(\max(P,Q)\).
+Sum over records. All restrictions of the original rows
+remain in place. This supplies the basic half bound
+also when the common lock has disappeared in the quotient.
+The strict SHF1–SHF3 branch still requires a hypothesis
+such as active-floor equality or discrete compression.
+If the fixed record puts either variable term into
+(MCB3), with a bounded number of powered roots and
+an exact integral cofactor of height \(n^{O(1)}\),
+the price improves further to \(b+\eta\) at any
+nonzero weighted shift with the stated radical-scale
+height floor. The integral cofactor condition is stronger
+than an \(X^{o(1)}\) numerical height bound.
+[Small integral corrections (MCB3)](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md#compressed-fixed-shifts-without-a-unit-shift-modulus)
+[Arbitrary-coefficient half bound (MCB2)](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md#bounded-group-dictionaries-with-arbitrary-fixed-coefficients)
+
+In an ordinary fixed-complete fibre the positive real
+height floor is automatic on the original shell. In an
+unswitched codegree it must be checked after normalization.
+The following criterion permits the normalization for
+almost all oriented paths without any assumption on the
+radical of the anchor differences.
+
+**RT8.** In a typical \(W\)-locked cell with \(u>0\),
+for every fixed \(C>0\) the oriented paths with
+distinct anchors for which
+\[
+        \max(W_1,W_2)/\gcd(W_1,W_2)\le n^C
+\]
+have count \(n^{2u+\eta}X^\varepsilon\) for arbitrary
+\(\eta>0\), after making the fixed chart and cell
+allowances sufficiently small. They are power-smaller
+than the \(n^{3u-o(1)}\) total paths at every fixed
+positive \(u\). No hypothesis on the overlap mass or
+the valuation profile of \(W\) is needed.
+
+Fix the first original row and enumerate the
+divisor \(g=\gcd(W_1,W_2)\) of \(W_1\) at
+height-subpower cost. In the second original row
+the common complete value \(U\) is fixed and
+\(W_2=g j_2\) with \(j_2\le n^C\). Apply (MCB3)
+with no high powered roots on \(W_2\), coefficient
+\(g\), and integral variable \(j_2\). The other
+variable is the original \(V_2\), with its
+radical cap. Its anatomic coefficient fixing can
+be paid at an arbitrarily small normalized cost.
+The original fixed shift \(U\) and the two free
+letters are pairwise coprime, and their maximum
+is at least \(X/2\). Thus the completion costs
+\(n^\eta X^\varepsilon\) with arbitrarily small
+\(\eta\), uniformly in \(g\) and the first row.
+There are \(n^{2u+o(1)}\) first rows. Unlike the
+weighted normalization used for the other paths,
+this argument counts the two free terms in their
+original equation with the third cap present.
+[Integral-cofactor completion (MCB3)](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md#compressed-fixed-shifts-without-a-unit-shift-modulus)
+· [Oriented paths in a typical cell (RT3)](#from-local-savings-to-balanced-graph-savings)
+
+The negligible-path cutoff can be pushed to
+\(n^{L^{-\xi}}\) for some fixed \(\xi>0\) depending
+on \(u\) and the count allowance. On the complementary
+paths the arbitrary-shift half bound then permits
+groups in a bounded number of sufficiently thin
+valuation windows, even when a group contains a
+growing number of exact orders. The proof chooses
+the width after the path and counting thresholds.
+[Thin windows and growing short index blocks (TW3–TW4)](ABC_THIN_WINDOW_ARBITRARY_SHIFT_RELEASE.md#consequences-for-progressions-and-balanced-paths)
+
+For genuine residue-cell codegrees one can also lift
+each candidate to either original fixed-anchor fibre.
+This gives a half-cap and nonatomic bound at the
+original numerical height with all three radical caps.
+The supported-part cutoff for these paths can then be
+taken at a fixed positive numerical height exponent.
+[Original-fibre bounds (LFR1–LFR2)](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md#counting-a-common-neighbour-in-its-original-fibre)
 
 ## Residual inequalities and a diffuse test profile
 

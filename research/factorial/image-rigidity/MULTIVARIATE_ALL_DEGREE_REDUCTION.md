@@ -185,7 +185,17 @@ shows that finite local coefficient data are independent of the real
 closure at fixed signed degree difference. The approximating profiles
 can be chosen with all-degree angular separation. These statements leave
 finite outer certificates and exact profile-dependent arithmetic tests
-as applicable approaches.
+as applicable approaches. The
+[balanced row interpolation](MULTIVARIATE_UNIT_GAP_LOCAL_COEFFICIENT_INTERPOLATION.md)
+gives arbitrary adjacent coefficient prescriptions at every finite
+set of primes with a bounded number of rows of one fixed gap.
+It preserves any prescribed diffuse limit while forcing matched
+exterior branches whose permitted valuation spread grows at any
+specified rate. Even a single rational quadratic can match all
+finite local branches and a prescribed real conjugate pair near
+a diffuse contact. The constructed ordinary profiles can be
+regular in every degree, so these finite tests alone cannot
+give a uniform bound on common-factor denominators.
 The [bounded-gap decision theorem](MULTIVARIATE_BOUNDED_GAP_FINITE_DECISION.md)
 gives two-sided exact decisions for angular separation and several
 physical rescaling questions at fixed total gap. Its affordable twists
@@ -620,6 +630,28 @@ fewer than \(12/\rho\) retained rows. At each fixed threshold
 there are finitely many cores, while the diffuse part can have
 unboundedly many rows and unbounded exponents.
 
+The [signed curvature triangle](MULTIVARIATE_STATIONARY_BIAS_CURVATURE_TRIANGLE.md)
+is the sharp limiting domain of the next quartic and squared
+skew responses at a fixed strength and bias. It allows all
+ordinary tails and every prescribed integer signed gap. The
+[stationary dichotomy](MULTIVARIATE_STATIONARY_TAIL_DICHOTOMY.md)
+uses its three vertices at simple even stationary interior
+contacts with the stated skew vanishing. A positive minimum excludes
+all sufficiently diffuse ordinary tails near that branch pair.
+A negative minimum gives nearby simple transverse Gaussian contacts
+with finite ordinary cores. If the constant second-order phase
+response is nonzero, one strict test always applies. The exact
+integer exclusion at transverse contacts remains open. The
+[zero-clock refinement](MULTIVARIATE_STATIONARY_ZERO_CLOCK_DICHOTOMY.md)
+gives a compact exact moment test when the constant clock response
+vanishes, using three positive semidefinite matrices of size two.
+The [lower-clock two-scale theorem](MULTIVARIATE_STATIONARY_LOWER_CLOCK_TWO_SCALE.md)
+handles a same-sign lower-order clock response by testing the
+two possible rates of strength displacement. The critical rate
+charges the additional inequality \(Z\ge |V|^{2/3}\). Strict
+positive margins give uniform ordinary exclusion. At interior
+bias, negative margins give finite transverse Gaussian references.
+
 The [common-height tail theorem](MULTIVARIATE_COMMON_HEIGHT_BOUNDED_GAP_TAIL_CLOSURE.md)
 excludes exact ordinary common roots in every degree for any fixed
 core and a tail of bounded integer gaps at a sufficiently large
@@ -680,12 +712,65 @@ gives exclusion even when the first two limiting directions
 have a nonisolated contact. Full divisor rank holds for
 the four-type balanced unit-gap obstruction to the single-mark
 test, giving all-degree closure of its repeated templates.
+The [exact slope-cone theorem](MULTIVARIATE_EXACT_SLOPE_CONE_MULTIPLICITIES.md)
+uses good primes to constrain independently varying counts
+to a finite union of rational cones. Low-dimensional balanced
+recession cones reduce to finitely many fixed counts and
+exact balanced rays. Two opposed, separated affine windows
+and their stated polynomial analogues close in all degrees,
+with each count independent. For unit gaps the affine
+constraints are exact flow conservation on a directed graph.
+Acyclic graphs exclude common roots uniformly in the counts.
+The [multiplicity antichain theorem](MULTIVARIATE_MULTIPLICITY_ANTICHAIN_BOUND.md)
+bounds the number of exact collision profiles on any nested chain
+whose whole row coefficient vectors have bounded multiplicative
+rank. For finitely many row types it confines the exceptional
+counts to finitely many lattice cosets in hyperplanes with
+positive normals, with a bound independent of the row heights.
+The [polynomial-scale theorem](MULTIVARIATE_POLYNOMIAL_SCALE_DIFFUSE_EXCLUSION.md)
+extends divisor rank to polynomial heights and polynomial weights
+on multiplicities. It applies when several distinct height scales
+each contribute positive limiting curvature.
+The [polynomial native-mark theorem](MULTIVARIATE_POLYNOMIAL_HEIGHT_NATIVE_MARKS.md)
+uses effective bounds on smooth parts of polynomial values.
+A separating nonlinear divisor excludes collisions for arbitrary
+counts and any fixed ordinary core. The divisor exists generically
+when one specified nonlinear type is present.
+The [first-block depth theorem](MULTIVARIATE_FIRST_BLOCK_DEPTH_AND_MOVING_RESIDUES.md)
+compares the deep part of a literal first block with the maximum
+opposite-order depths and the depths of all other rows. It
+includes a joint test using every row and a gcd certificate
+computed from small remainders. Its all-degree residue classes
+allow the number of distinct types and all their heights to
+grow, with independent multiplicities at the stated widths.
 The [signed jet tests](MULTIVARIATE_POSITIVE_DIFFUSE_EXCEPTION_SIGNED_JETS.md)
 exclude further positive exceptions under effective signs on the
 signed-bias boundary or at even-order stationary contacts. The
 [clock transversality tests](MULTIVARIATE_EXCEPTIONAL_GAUSSIAN_CLOCK_TRANSVERSALITY.md)
 give additional exclusion regions for reflected tails and for
 some common-height tails with nonzero signed gap.
+The [opposed independent-height theorem](MULTIVARIATE_OPPOSED_INDEPENDENT_HEIGHT_RATIONAL_BIAS.md)
+rules out every simple transverse positive rational-bias
+contact in the strict two-type curvature cone. Fixed signed
+gap and integrality force a candidate sequence onto an exact
+affine ray. A first-factor depth argument excludes all
+sufficiently high two-type affine families in every degree,
+uniformly in the two counts.
+The [paired prime-mark descent](MULTIVARIATE_PAIRED_PRIME_MARK_AFFINE_DESCENT.md)
+forces exact affine alignment for independently varying
+opposed heights when both first factors have sufficiently
+small prime-power cofactors. A same-order depth estimate
+also covers powers of small base primes. The resulting
+all-degree closure allows growing gaps. The same interval
+argument permits a growing number of clustered types within
+the stated logarithmic bound. At a positive two-type contact with both shares positive, one sufficiently
+dominant first mark suffices, including tangential and
+multiple contacts.
+The [zero-bias two-type descent](MULTIVARIATE_OPPOSED_LARGE_GAP_ZERO_BIAS_DESCENT.md)
+allows independent counts and growing gaps at transverse contacts.
+Equal counts, vanishing projected skew response, sufficiently close
+gaps and sufficiently deep single-block marks each give an exclusion.
+The same note includes tangential tests under fixed count ratios.
 
 An [interior persistence theorem](MULTIVARIATE_DIFFUSE_INTERIOR_CONTACT_PERSISTENCE.md)
 gives a conditional obstruction to removing all the exceptional
@@ -712,11 +797,63 @@ excludes further exact ordinary tails at saturated-bias
 contacts and reduces boundary contacts to finite interior
 ones under the specified ordinary-row or angular and radial
 response tests.
+The [height quadrature theorem](MULTIVARIATE_SATURATED_BOUNDARY_HEIGHT_QUADRATURE.md)
+reduces every transverse saturated-bias contact at \(n,N=n+1\)
+with \(n\ge3\) to a response on at most \(N\) aligned height
+nodes. The positive quadrature preserves moments and bounds
+the loss from dispersion. For a finite ordinary core the
+one-height sign, when needed, is determined by at most
+\(n+N-1\) Taylor coefficients.
 The [multiple-root unfolding](MULTIVARIATE_MULTIPLE_ROOT_INTERIOR_HEAT_UNFOLDING.md)
 uses exact reflected ordinary rows to compare local Hermite
 and quartic heat polynomials. It reduces the stated multiple
 interior contacts of countable cores to finite ordinary
 cores with simple transverse interior contacts.
+The [reverse heat-shift construction](MULTIVARIATE_REVERSE_CLOCK_ROW_REPLACEMENT.md)
+replaces one weak retained row with two matched ordinary rows.
+It handles the lower-double and upper-triple contact, completing
+all four double and triple multiplicity pairs for infinite
+retained cores.
+The [stationary midpoint theorem](MULTIVARIATE_STATIONARY_MIDPOINT_SHIFT_REDUCTION.md)
+uses two third-order angular responses at a simple contact
+where both velocities and the leading cubic response vanish.
+Its fourth-order test shifts an ordinary midpoint by one unit
+when a fixed signed gap occurs infinitely often.
+The [angular rank reversal theorem](MULTIVARIATE_MULTIPLE_CONTACT_ANGULAR_RANK_REVERSAL.md)
+compares the two sides of the logarithmic heat split at a
+multiple root. It reduces arbitrary multiplicities, even
+with one simple root, whenever at least one regularized
+angular velocity is nonzero. A third-order rank test covers
+further cases. Arbitrarily weak ordinary rows make the
+resulting finite-core contacts simple and transverse.
+The [integer row split](MULTIVARIATE_INTEGER_ROW_SPLIT_UNFOLDING.md)
+gives a local differential operator from an ordinary
+integer replacement of a retained row. It resolves the
+stated multiple contacts even when the angular velocities
+vanish. The [paired multiple-root theorem](MULTIVARIATE_PAIRED_MULTIPLE_UNBOUNDED_GAPS.md)
+completes the reduction whenever the retained gaps are
+unbounded. At each fixed pair the proof only needs infinitely
+many gaps above a computable bound, by taking the maximum
+of the thresholds over the possible multiplicities.
+The [midpoint and cloud theorem](MULTIVARIATE_PAIRED_MULTIPLE_MIDPOINT_CLOUDS.md)
+removes the retained-gap threshold altogether. Every
+paired multiple positive interior contact of an infinite
+ordinary retained core reduces to simple transverse
+contacts of finite ordinary cores. A single weak retained
+row can have unit gap.
+The [first complex jet theorem](MULTIVARIATE_SIMPLE_CONTACT_COMPLEX_JET_UNFOLDING.md)
+uses the same midpoint and cloud operators at simple
+stationary contacts of infinite cores. Hermite sign control
+gives finite-core reduction when the first complex order
+is at least four, and when the order-three weighted response
+is nonzero. The remaining simple even case has first
+complex order three with weighted cubic cancellation.
+The [mixed multiplicity jet theorem](MULTIVARIATE_MIXED_MULTIPLICITY_COMPLEX_JET_UNFOLDING.md)
+also reduces several mixed simple and multiple interior contacts
+to finite transverse references. Its remaining infinite-core
+mixed cases have even multiple-root multiplicity and an earlier
+even jet or a tied second jet, subject to the explicit double-root
+exclusion in that note.
 
 The [prime-height theorem](MULTIVARIATE_DIFFUSE_CLOCK_PRIME_HEIGHT.md)
 uses the angular and physical resultants in the same rational
@@ -747,6 +884,74 @@ For irreducible common factors the
 uses the distinct projective conjugates and their discriminant
 to improve the moving-prime product bound. The deep uniform
 case admits a single resultant with a prime-power bound.
+The [oriented block gcd bounds](MULTIVARIATE_ORIENTED_BLOCK_DENOMINATOR_GCD.md)
+give sharper exact denominator budgets from adjacent factorial
+blocks, with increasing and decreasing rows accounted for
+separately. For two opposed types of independent heights, the
+same-orientation contributions at large primes come only from
+the short integer strips at their smaller exponents.
+The [truncated Newton face theorem](MULTIVARIATE_PHYSICAL_TRUNCATED_NEWTON_FACES.md)
+compares the two faces in their common physical coordinate
+above residue-field precision. Smith valuations bound the
+common width at each shared root valuation. Binomial faces
+give an exact power-ratio congruence at the full available
+depth. In the synchronized terminal strips this gives a
+further denominator gcd. Explicit congruence classes supply
+all-degree examples with unbounded distinct rows approaching
+any prescribed positive interior Gaussian parameter.
+The [simultaneous contact height theorem](MULTIVARIATE_SIMULTANEOUS_CONTACT_HEIGHT.md)
+uses the \(p\)-adic Subspace Theorem on independent limit
+coordinates of a common factor. Its necessary denominator
+growth estimate allows moving primes and separately charges
+approximation to torsion configurations at fixed deep
+binomial faces. Its exclusion neighborhood is qualitative.
+The [moving-prime trace resultant](MULTIVARIATE_MOVING_PRIME_TRACE_RESULTANT.md)
+extends the scale-invariant denominator budget to algebraic
+trace targets certified by nonbinomial truncated faces.
+One integer resultant charges the moving prime depths and
+the real error at a matching diffuse reference. Its bound
+continues to apply after removing exact target traces.
+The [fixed-field trace orbit theorem](MULTIVARIATE_FIXED_FIELD_TRACE_ORBIT_HEIGHT.md)
+relates the denominator of each unordered Galois trace orbit
+to the height of an ordered root quotient. A finite field
+menu strengthens the approximation exponent, and local
+decomposition groups restrict the allowed moving-prime
+valuation spread separately for each orbit.
+The [Hermite trace height bound](MULTIVARIATE_TRACE_HERMITE_JET_HEIGHT.md)
+uses the small successive derivatives when several projective
+traces cluster. The lower bound allows the trace field and the
+denominator primes to vary, and it can improve the squarefree
+discriminant bound when there is more than one cluster. The
+[moving-prime projection](MULTIVARIATE_MOVING_PRIME_TRACE_PROJECTION.md)
+can charge local depths and real approximation together when
+the local target coefficients lie in a fixed rational subspace
+and the projected real reference is nonzero. The
+[denominator-prime discriminant](MULTIVARIATE_TRACE_DENOMINATOR_PRIME_DISCRIMINANT.md)
+uses primes where several traces already have negative valuations.
+Their valuation spreads and normalized unit coincidences decrease
+the available height budget. It allows a Galois-invariant selection
+of trace pairs and needs no algebraicity of their real limits.
+The [directional quadratic height theorem](MULTIVARIATE_TRANSVERSE_QUADRATIC_DIRECTIONAL_HEIGHT.md)
+uses the two exact contact equations to constrain the trace
+and scaled rational norms to one first-order direction.
+The resulting smaller cross-direction error sharpens the
+height requirement. For a fixed quadratic field, signed angle
+coordinates replace the spread denominator by numerator budgets.
+The [single-order norm gap](MULTIVARIATE_HIGH_ORDER_NORM_DENOMINATOR_GROWTH.md)
+uses a signed high-order factorial difference to construct two
+scaled rational norms with a strictly positive small difference.
+The [paired norm gap](MULTIVARIATE_PAIRED_FACTORIAL_DIFFERENCE_NORM_HEIGHT.md)
+compares the two factorial grids and cancels their common leading
+term. It yields the effective error scale
+\(\eta^{r-2}Z+W\eta^r\) for every \(2\le r\le n\), with
+no reference algebraicity or transversality assumption. These
+tests charge the sum of the selected local root valuations rather
+than their spread. The [evaluated norm bound](MULTIVARIATE_EVALUATED_FACTOR_NORM_HEIGHT.md)
+instead evaluates both parents at the algebraic limiting root.
+For a common quadratic approaching it, the prime-to-fixed-set
+part of the gcd of these two evaluated resultants must grow at a
+specified rate. The bound applies in reference degree at least
+five, and in degree four under the stated rank or field condition.
 
 The [uniform bias theorem](MULTIVARIATE_UNIFORM_DIFFUSE_BIAS_SEGMENTS.md)
 allows one chosen signed-drift intercept to work throughout a
@@ -756,6 +961,13 @@ excludes physical contacts on prescribed algebraic curves of the two
 clock parameters for generic ordinary cores with sufficiently many
 independent base coordinates. In particular it gives nonadaptive
 stability along rational signed-drift slopes, including zero.
+The [generic transverse quadratic reduction](MULTIVARIATE_GENERIC_TRANSVERSE_QUADRATIC_DIFFUSE_CONTACTS.md)
+shows that sufficiently diffuse collisions on generic wide cores
+would have a quadratic gcd, with a transverse reference and a
+single simple conjugate pair. Arbitrarily weak balanced integer
+rows give such reference contacts near any specified transverse
+interior reference. A prescribed proper algebraic locus of
+quadratic coefficients can be excluded generically.
 The [third-order matched angular response](MULTIVARIATE_MATCHED_TANH_CUBIC_CORE_ANGLE_RESPONSE.md)
 resolves some weak-tail contacts of simple core roots where the
 quadratic response reaches zero. The
@@ -1258,11 +1470,25 @@ The [primitive quadratic norm gate](MULTIVARIATE_PRIMITIVE_QUADRATIC_NORM_GATE.m
 uses the same local valuations with any supplied right-half-plane
 angle cap. Its norm equation, exact discriminant index, and
 ideal-class test apply to any rational parent pair.
+The [joint quadratic budget](MULTIVARIATE_QUADRATIC_JOINT_PARITY_DISCRIMINANT_BUDGET.md)
+makes the two parents share their parity and critical-point
+conditions at each prime. It bounds the angle numerator and
+discriminant complement alongside the spread denominator and
+uses one slope allocation for all three. Finite local compatibility
+at all primes of a candidate's arithmetic support can still be
+prescribed. The [cofactor Smith theorem](MULTIVARIATE_ISOLATED_COFACTOR_SYLVESTER_BUDGET.md)
+charges cofactor valuation overlap through the nonzero maximal
+Sylvester minors. It also shows that the full Smith form of
+rational parent arrays alone cannot bound an isolated quadratic.
 The [field discriminant test](MULTIVARIATE_COMMON_FACTOR_FIELD_DISCRIMINANT.md)
 filters the possible common factors of general profiles by their
 ramification and signed field discriminants. It allows arbitrary
 root moduli and intersects the discriminant possibilities with
-the actual stepped residual branches.
+the actual stepped residual branches. The
+[tame field refinement](MULTIVARIATE_TAME_FIELD_DISCRIMINANT_SQUARECLASSES.md)
+also determines the admissible tame local completions from a
+shared stepped branch and filters field discriminant unit
+squareclasses, including at unramified places.
 The [CM-field screen](MULTIVARIATE_CM_COMMON_FACTOR_GATE.md)
 uses the common root angles and uniform valuations to restrict a
 CM common factor with two private sides to four cyclotomic

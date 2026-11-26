@@ -1,0 +1,528 @@
+{
+  "binary_examples": [
+    {
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "m": 2
+    },
+    {
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          10
+        ]
+      ],
+      "m": 6
+    },
+    {
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          14,
+          25
+        ]
+      ],
+      "m": 14
+    },
+    {
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          14,
+          25
+        ],
+        [
+          30,
+          56
+        ]
+      ],
+      "m": 30
+    },
+    {
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          22,
+          41
+        ],
+        [
+          54,
+          104
+        ]
+      ],
+      "m": 54
+    },
+    {
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          14,
+          25
+        ],
+        [
+          30,
+          56
+        ],
+        [
+          62,
+          119
+        ]
+      ],
+      "m": 62
+    },
+    {
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          26,
+          49
+        ],
+        [
+          90,
+          176
+        ]
+      ],
+      "m": 90
+    }
+  ],
+  "checker_sha256": "02cf3c0ae303e849c27fc3759138899dba50c152b33021259504af0a946f2b61",
+  "control_count": 51,
+  "controls": [
+    "native_abc_recurrence_j=2",
+    "native_abc_recurrence_j=3",
+    "native_abc_recurrence_j=4",
+    "native_abc_recurrence_j=5",
+    "native_abc_recurrence_j=6",
+    "native_abc_recurrence_j=7",
+    "native_abc_recurrence_j=8",
+    "native_abc_recurrence_j=9",
+    "native_abc_recurrence_j=10",
+    "even_constant_C=-4_j=0",
+    "even_constant_C=-4_j=1",
+    "even_constant_C=-4_j=2",
+    "even_constant_C=-4_j=3",
+    "even_constant_C=-4_j=4",
+    "even_constant_C=-4_j=5",
+    "even_constant_C=-4_j=6",
+    "even_constant_C=-4_j=7",
+    "even_constant_C=-4_j=8",
+    "even_constant_C=0_j=0",
+    "even_constant_C=0_j=1",
+    "even_constant_C=0_j=2",
+    "even_constant_C=0_j=3",
+    "even_constant_C=0_j=4",
+    "even_constant_C=0_j=5",
+    "even_constant_C=0_j=6",
+    "even_constant_C=0_j=7",
+    "even_constant_C=0_j=8",
+    "even_constant_C=2_j=0",
+    "even_constant_C=2_j=1",
+    "even_constant_C=2_j=2",
+    "even_constant_C=2_j=3",
+    "even_constant_C=2_j=4",
+    "even_constant_C=2_j=5",
+    "even_constant_C=2_j=6",
+    "even_constant_C=2_j=7",
+    "even_constant_C=2_j=8",
+    "native_height_prefix_q=3_p=3",
+    "native_height_prefix_q=9_p=3",
+    "native_height_prefix_q=55_p=5",
+    "native_height_prefix_q=63_p=7",
+    "native_height_prefix_q=87_p=29",
+    "native_height_prefix_q=135_p=5",
+    "native_binary_polygon_m=2",
+    "native_binary_polygon_m=6",
+    "native_binary_polygon_m=14",
+    "native_binary_polygon_m=30",
+    "native_binary_polygon_m=54",
+    "native_binary_polygon_m=62",
+    "native_binary_polygon_m=90",
+    "exact_displayed_R_set_first_q91_through_91",
+    "counterfamily_22_small_head_inequalities_only"
+  ],
+  "corruption_count": 13,
+  "criterion_examples": [
+    {
+      "D": 32,
+      "J": 55,
+      "prime_gates": [
+        {
+          "B": 4,
+          "L": 2,
+          "admissible": true,
+          "digits_low_first": [
+            0,
+            1,
+            2
+          ],
+          "p": 5,
+          "t": 1
+        },
+        {
+          "B": 10,
+          "L": 1,
+          "admissible": true,
+          "digits_low_first": [
+            0,
+            5
+          ],
+          "p": 11,
+          "t": 1
+        }
+      ],
+      "q": 55,
+      "remaining": false
+    },
+    {
+      "D": 16,
+      "J": 7,
+      "prime_gates": [
+        {
+          "B": 14,
+          "L": 4,
+          "admissible": false,
+          "digits_low_first": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "p": 3,
+          "t": 2
+        },
+        {
+          "B": 6,
+          "L": 2,
+          "admissible": true,
+          "digits_low_first": [
+            0,
+            2,
+            1
+          ],
+          "p": 7,
+          "t": 1
+        }
+      ],
+      "q": 63,
+      "remaining": false
+    },
+    {
+      "D": 64,
+      "J": 29,
+      "prime_gates": [
+        {
+          "B": 2,
+          "L": 4,
+          "admissible": false,
+          "digits_low_first": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ],
+          "p": 3,
+          "t": 1
+        },
+        {
+          "B": 28,
+          "L": 1,
+          "admissible": true,
+          "digits_low_first": [
+            0,
+            3
+          ],
+          "p": 29,
+          "t": 1
+        }
+      ],
+      "q": 87,
+      "remaining": false
+    },
+    {
+      "D": 64,
+      "J": 1,
+      "prime_gates": [
+        {
+          "B": 6,
+          "L": 2,
+          "admissible": false,
+          "digits_low_first": [
+            0,
+            6,
+            1
+          ],
+          "p": 7,
+          "t": 1
+        },
+        {
+          "B": 12,
+          "L": 2,
+          "admissible": false,
+          "digits_low_first": [
+            0,
+            7
+          ],
+          "p": 13,
+          "t": 1
+        }
+      ],
+      "q": 91,
+      "remaining": true
+    }
+  ],
+  "first_remaining_under_displayed_criterion_q": 91,
+  "first_start_under_displayed_criterion": 89,
+  "height_examples": [
+    {
+      "B": 2,
+      "L": 1,
+      "admissible": true,
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "digits_low_first": [
+        0,
+        1
+      ],
+      "p": 3,
+      "q": 3,
+      "t": 1
+    },
+    {
+      "B": 14,
+      "L": 2,
+      "admissible": true,
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          9,
+          -4
+        ]
+      ],
+      "digits_low_first": [
+        0,
+        0,
+        1
+      ],
+      "p": 3,
+      "q": 9,
+      "t": 2
+    },
+    {
+      "B": 4,
+      "L": 2,
+      "admissible": true,
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          -12
+        ],
+        [
+          55,
+          -13
+        ]
+      ],
+      "digits_low_first": [
+        0,
+        1,
+        2
+      ],
+      "p": 5,
+      "q": 55,
+      "t": 1
+    },
+    {
+      "B": 6,
+      "L": 2,
+      "admissible": true,
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          49,
+          -8
+        ],
+        [
+          63,
+          -10
+        ]
+      ],
+      "digits_low_first": [
+        0,
+        2,
+        1
+      ],
+      "p": 7,
+      "q": 63,
+      "t": 1
+    },
+    {
+      "B": 28,
+      "L": 1,
+      "admissible": true,
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          87,
+          -3
+        ]
+      ],
+      "digits_low_first": [
+        0,
+        3
+      ],
+      "p": 29,
+      "q": 87,
+      "t": 1
+    },
+    {
+      "B": 4,
+      "L": 3,
+      "admissible": true,
+      "computed_polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          125,
+          -31
+        ],
+        [
+          135,
+          -33
+        ]
+      ],
+      "digits_low_first": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "p": 5,
+      "q": 135,
+      "t": 1
+    }
+  ],
+  "native_hurwitz_coefficients_crosschecked": 358,
+  "odd_composites_55_leq_q_lt91": [
+    55,
+    57,
+    63,
+    65,
+    69,
+    75,
+    77,
+    81,
+    85,
+    87
+  ],
+  "rejected_corruptions": [
+    "forcing_minus_j=2",
+    "forcing_minus_j=3",
+    "forcing_minus_j=5",
+    "forcing_minus_j=8",
+    "deleted_height_endpoint_q=3",
+    "deleted_height_endpoint_q=9",
+    "deleted_height_endpoint_q=55",
+    "deleted_height_endpoint_q=63",
+    "deleted_height_endpoint_q=87",
+    "deleted_height_endpoint_q=135",
+    "overstrong_fourth_cluster_closure",
+    "wrong_first_q87",
+    "mutated_displayed_R_empty"
+  ],
+  "scope": "Supplementary finite exact native identities and explicitly finite frontier arithmetic only. Universal moment/degree assertions are proved in the written source, not inferred from a tested prefix. No enormous counterfamily coefficient is expanded.",
+  "status": "PASS"
+}

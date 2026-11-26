@@ -152,7 +152,7 @@ two base heights.
 
 Fix a core and a compact positive strength interval in the
 [physical diffuse comparison](MULTIVARIATE_DIFFUSE_PHYSICAL_EXCEPTION_POINTS.md).
-Let \(B_H\) be a degree-\(d\) project's factor polynomial, and
+Let \(B_H\) be the degree-\(d\) factor's projective polynomial, and
 suppose its limiting \(B_{H_*}\) at an algebraic reference branch
 has an irrational coefficient of degree \(e\). Use the
 [projective sieve's matching exponent](MULTIVARIATE_DIFFUSE_PROJECTIVE_FACTOR_SIEVE.md#consequences-at-finite-physical-diffuse-contacts)
@@ -164,7 +164,10 @@ has an irrational coefficient of degree \(e\). Use the
 \]
 Thus any uniformly smaller exponent in the aligned-orientation
 budget excludes that branch, even if the large primes in the
-ramps change and the gap and row counts grow.
+ramps change and the gap and row counts grow. If every candidate
+reference selection of every possible degree has such an irrational
+coordinate, a uniform exponent strictly below the corresponding
+finite minimum gives one positive exclusion tolerance.
 
 The second line of (1) also bounds the denominator on the right
 of the [depth-weighted binomial-face inequality](MULTIVARIATE_DEEP_BINOMIAL_PROJECTIVE_QUOTIENTS.md#improvement-near-a-finite-positive-diffuse-contact).
@@ -178,8 +181,25 @@ and that result's notation, a common factor must satisfy
        2\gamma(t_{\ell,*}-t_\ell)\log(1/\eta)
                     \ \le\ \ell\log V+O(1).                   \tag{6}
 \]
-This charges a prime only when there is overlap of the appropriate
-factorial orientation across the two orders, and can be applied
+The denominator budget on the right charges primes above \(N\)
+only for same-orientation factorial overlap across the two orders.
+The bound can be applied
 alongside the direct shared-slope budget of the depth-weighted
 test. It gives profile-dependent restrictions; the aligned
 factorial block gcds are not yet controlled for every profile.
+
+## Exact comparison with the ratio-range budget
+
+Take orders three and four and rows \((65,68)\) and \((77,74)\).
+At \(p=101\), the increasing strip at order three contains 202
+at offset seven, and the decreasing strip at order four contains
+303 at offset seven. No other strip factor is divisible by \(p\).
+The two lists of root valuations are \((-1,0,0)\) and
+\((0,0,1/2,1/2)\), so a degree-two common candidate is locally
+permitted, with both valuations zero. Both parent lists of first
+differences have range one, so the gcd obtained from the lcm of
+numerators of all cross ratios of neighboring coefficients has
+valuation one. In (1) every \(G_r^\pm\) is a \(101\)-unit because
+the two strip hits have opposite orientations. Thus the new
+bound excludes this prime from both projective denominators
+without relying on its size or on a presumed global factor.

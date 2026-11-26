@@ -1,0 +1,9 @@
+{
+  "adjunction_identities": 16,
+  "checker_sha256": "68a9cb2757be2f02a1398c08caba4fe4810fa48ad549ce595823c344f085b3e9",
+  "literal_initial_Bezout": true,
+  "native_initial_three_value": 29,
+  "rejected_corruptions": 17,
+  "scope": "Finite native polynomial identities only; root-existence and universal equivalences are proved in the written source.",
+  "status": "PASS"
+}

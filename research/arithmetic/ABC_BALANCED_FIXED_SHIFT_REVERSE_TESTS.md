@@ -26,8 +26,13 @@ Cauchy–Schwarz on the signed sums giving \(W\) gives
 Here the mixed energy can be written as the inner product
 of the two difference representation functions and is at
 most \(\sqrt{E_+(\mathcal U)E_+(\mathcal V)}\).
-The lower bound first exceeds the pair-count exponent \(2u\)
-when \(u>1/9\). At \(u=1/6\), each individual energy has
+Including the diagonal, the mixed lower exponent is
+\(\max(2u,5u-1/3)\). Using the other dictionary's cubic
+upper bound gives an individual lower exponent
+\(\max(2u,7u-2/3)\) on each side. The mixed lower bound
+first exceeds the pair-count exponent when \(u>1/9\),
+and the individual lower bound does so when \(u>2/15\).
+At \(u=1/6\), each individual energy has
 exponent \(3u\), using \(E_+(\mathcal W)\le|\mathcal W|^3\)
 for the other dictionary. This forces energy at the cubic
 exponent. It permits a power-small density at every fixed
@@ -50,6 +55,28 @@ zero. It does not realize the positive-multiplicity cells.
 · [Qualitative additive-energy exclusion](ABC_COMPLETE_LETTER_ADDITIVE_ENERGY.md#theorem-equivalent-doubling-and-energy-exclusions)
 · [Digit example](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md#high-energy-despite-polylogarithmic-intersections)
 · [Two free radical caps](ABC_OVERLAPPING_FULL_RECORD_COUNTEREXAMPLES.md#fixed-parameters-and-complete-integers)
+
+In the three-register extraction (RT6), a positive
+dense component has all three dictionary exponents
+\(v'\) and row exponent \(2v'\). On this component the
+same Cauchy–Schwarz argument gives mixed energy with
+exponent \(3v'\). This strengthens the energy signal
+when the global marked-letter dictionary is too large
+for the one-lock lower bound. It still leaves subpower
+losses at the local scale.
+[Dense components from three registers (RT6)](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md#a-role-switch-that-preserves-the-full-shift-divisor)
+
+The same-target coloured moment also gives a power
+saving on certain nontrivial collisions, including
+threefold collisions at \(u>5/36\). Those bounds act on
+fibres of the word map and give a lower bound for its
+image. The remaining scalar target moment needs an
+upper bound for that image over the genuine target
+multiplicity tail. An ordinary additive energy lower
+bound gives neither this upper bound nor a transfer
+from ordinary sums to exact reciprocal sums.
+[Coloured collisions (CE1–CE2)](ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md#a-free-support-discount-for-common-target-threefold-energy)
+· [Scalar-image obligation (SR3)](ABC_SCALAR_MASK_TARGET_MOMENTS.md#a-scalar-image-for-weighted-target-occurrence)
 
 An SHF2 reduction obtained by paying all of one original
 free letter's nonatomic mass does not improve the existing
@@ -125,7 +152,8 @@ by a fixed margin. In particular \(D_W<1/3\) by a fixed
 margin on a tall side is already power-small, without
 an extra codegree estimate. This conclusion holds for a
 prescribed pool and compares with the original population
-of pairs. It does not construct qualifying shifts. A
+of pairs. It does not construct qualifying shifts. The raw cost arm of (SCM9) also gives a saving if
+\(d_W+v_{\rm eff}<1/6+u\) by a fixed margin. A
 common locked divisor may divide a shift, but numerical
 height of the quotient and the other residue-cell
 identities do not give the needed outside radical cap.
@@ -184,6 +212,114 @@ small-denominator hypothesis of the Vandermonde test.
 [Fixed-letter radical caps (FL1)](ABC_FIXED_LETTER_RADICAL_CAPS.md#a-pointwise-count-with-prescribed-prime-pools)
 · [Variable-denominator reciprocal sums (RS9)](ABC_THREE_CAP_RATIO_SUMSETS.md#odd-relations-with-variable-output-denominator)
 · [Reciprocal Vandermonde test](ABC_RECIPROCAL_VANDERMONDE_SUPPORT.md#label-cancellation-in-capped-additive-triples)
+
+## Surviving conditional profiles across the full range
+
+Write \(t\) for the local comparison threshold. It is
+\(u=1/3-\alpha\) in ordinary fibres and unswitched
+codegrees, \(2u-c_W\) in the RT5 switch, and \(v'\le u\)
+in a positive common-register cell. With three locks
+the register constraints give
+\[
+ \max(0,2/3-3\alpha)\le v\le u.
+\]
+In particular \(v=0\) is allowed by these constraints
+throughout \(\alpha\ge2/9\). For \(t>0\), on a sector
+where (RT7) applies, the residual price tests at
+saturation are
+\[
+ b+\tfrac12\min(W_P,W_Q,H/\kappa+z)\ge t
+\]
+for every available record and cutoff with these
+hypotheses. An active height equality is excluded when
+the strict terminal hypothesis of (RT1) holds. If a
+chosen record leaves a compression, the sharper (RT2)
+test is \(b+s_a\ge t\), or \(b\ge t\) when it has an
+independent terminal. For varying context prices these
+conditions concern the comparison averaged over actual
+paths as in (RT3). They do not say each individual path
+has a high price. If both free caps are initially
+\(1/3\), write \(\Delta_i=1/3-W_i\) including support
+stripping and conditional dictionary savings. The
+ordinary threshold \(t=u\) requires
+\[
+                 \Delta_i-2b\le s=1/3-2u
+\]
+for either free role. A violation by a fixed margin
+is enough for a local gain even at a diffuse profile.
+The domain where updated caps and heights achieve
+this inequality is a condition on the actual arithmetic
+records.
+The original-fibre lift strengthens these conditions for
+genuine residue-cell paths, removing the separate low-price
+terminal and adding the remaining nonatomic-mass cap. The
+same argument gives a fixed numerical short-quotient exclusion
+and a diffuse test stable under the full allowed support
+stripping.
+[Original-fibre codegrees and residual conditions](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md#optimized-residual-tests-and-robust-diffuse-profiles)
+
+A formal family survives these comparisons for every
+\(0<t\le u\). Give each free role the diffuse measure
+\(\tfrac13\mathrm{Unif}[2,4]\) at full height. Let \(F\)
+denote the total mass of selected raw positions, with
+common recorded positions charged once in the raw
+union. Take the conditional record price to be
+\(\min(t,F)\). When \(F<t\) by a fixed margin,
+assume the remaining bounded groups and finitely
+many shrinking windows have their residual raw caps.
+In this case the half-cap price is at least
+\[
+                     \tfrac16+\tfrac12 F\ge t .
+\]
+Indeed no free role loses more than \(F\).
+The height-price branch is bounded below by the
+same expression, because residual height divided
+by its floor is at least residual mass. If \(F\ge t\),
+the record alone reaches the comparison threshold.
+No positive-mass residual of the uniform measure has
+vanishing correction in a fixed number of shrinking
+windows. At \(u=1/6\) the no-record half-cap score
+is exactly \(u\), while every active height-floor
+score is strictly larger than \(u\) by (RT4). At
+\(u<1/6\) the no-record half-cap score already
+exceeds \(u\) by a fixed margin for fixed \(u\).
+
+The price law has actual root-dictionary models.
+Use the polynomial evaluation encoding in (RO2) on
+the union of the slot lists, with interpolation
+dimension chosen to give exponent \(t\). Each
+projected full-factor record of raw exponent \(F\)
+has exponent \(\min(t,F)+o(1)\). If \(F<t\) by a
+fixed margin, conditioning on that record leaves
+all disjoint fixed-size groups, or groups of
+vanishing raw mass, at their raw cardinalities.
+The primes form integer power products of the
+assigned heights and radicals. This realizes the
+projection data of fixed contexts without requiring
+a prescribed additive relation or prescribed
+residue cells. Separately, the register entropies
+have an abstract product model for every allowed
+\(\alpha,z_*\): give the registers a shared field
+block of exponent \(z_*\) and independent private
+blocks of exponent \(s-z_*\). Give each complete
+value its two opposite registers and one inner
+coordinate of exponent \(v\), with the three inner
+coordinates related by addition over the field.
+These two models verify the respective price and
+entropy obstructions. Neither realizes a saturating
+family of primitive integer sums.
+
+At \(t=0\) the codegree comparison gives no
+strict loss. In fact even \(q=0\) in (RT3) gives
+only a gap \(u/2\), tending to zero as
+\(\alpha\to1/3\). For (RT5), \(c_W\ge u\) on a typical
+cell since the marked and one free complete value
+determine the row. That switch has the same ceiling.
+A uniform gain across the range must therefore also
+reduce the number of occupied cells or the price
+of their records near zero multiplicity.
+[Exact projection charges (RO2)](ABC_RESIDUE_OCCURRENCE_ROOT_PROJECTION_OBSTRUCTION.md#an-arithmetic-dictionary-from-finite-field-evaluations)
+· [Register bounds and local thresholds (RB5–RB7, RT3, RT5–RT8)](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md#from-local-savings-to-balanced-graph-savings)
 
 ## Formal profiles and external techniques
 

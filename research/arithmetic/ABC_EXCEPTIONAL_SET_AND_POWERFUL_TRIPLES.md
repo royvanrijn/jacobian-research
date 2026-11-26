@@ -10276,6 +10276,298 @@ radical caps imposed.
 [Coloured product energy](ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md)
 · [Prime-power image](ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md)
 
+## One-sided fixed-shift transfer into balanced cells
+
+After fixing the actual joint deficient-factor record, a
+single high valuation floor suffices for a strict
+fixed-shift saving at its active height threshold. The
+terminal cost is the joint dictionary of the remaining
+low factors. It can be dropped if an independent full
+divisor survives in the primitive shift, or if there is
+a fixed relative real gap. In an ordinary residue cell
+the marked divisor on both computed targets cancels
+during normalization. Switching the common-row role and
+the computed role retains the divisor, at a cost that
+uses the actual marked-letter dictionary inside that cell.
+Three simultaneous locks allow an extraction of positive
+cells with all three complete dictionary exponents equal
+on the local scale whenever the conditional row exponent
+is positive. A local power saving below the derived
+codegree threshold gives a strict row saving. All bounds
+retain the original radical caps and repair eligibility.
+[One-sided reverse transfer (RT1–RT6)](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md)
+
+Repeated copies of the same computed letter give
+additional numerical tail constraints at every fixed
+positive multiplicity. Outside the prime pool of the
+anchor differences, high full factors can be packed
+until their product exceeds the true query width.
+These constraints and the optimized one-sided floor
+test leave diffuse tall profiles. The compressed-shift
+bounds require an effective price deficit on actual
+same-target pairs. The residue identities do not
+supply it, and generic reciprocal words on those
+fibres retain large denominator radicals from their
+private prime supports. Additive energy at the cubic
+exponent still allows a subpower energy deficit, which
+the existing qualitative exclusion does not rule out.
+[Full-factor quantiles (CQ1–CQ4)](ABC_BALANCED_CELL_FULL_FACTOR_QUANTILES.md)
+· [Additive, compressed-shift and reciprocal tests](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md)
+
+## Induced matching and auxiliary tests at occurrence
+
+At the complete occurrence endpoint, thinning a balanced
+family gives an induced additive matching on the actual
+complete dictionaries while retaining the exponent and all
+three radical caps. A random prime product of normalized
+size exponent \(2t\) preserves the exponent \(t\) of such
+a matching. Recording a short real carry equation first
+reduces the necessary modulus exponent to \(t\). The
+remaining model uses a coarse integer coordinate as well
+as the finite cyclic residue group. A uniform incidence
+saving for this mixed relation would address the count
+of occupied cells near zero multiplicity.
+The real logarithmic moment also counts ordered pairs
+of small-radical integers with no shared-support restriction
+inside a prescribed relative strip. This separates the tall
+labels and preserves the induced occurrence matching on
+real bins alone. The spacing argument also works on the
+balanced caps at an absolute height cutoff
+\(X^{1-cL}\) for every fixed \(c>2/3\), and for \(c>1/3\)
+when the tall dictionary used for spacing is wholly
+nonatomic.
+[Occurrence matchings and short real tests (IM1–IM3)](ABC_OCCURRENCE_INDUCED_ADDITIVE_MATCHINGS.md)
+· [Real pair spacing (RSI1–RSI2a)](ABC_OCCURRENCE_REAL_PAIR_SPACING.md)
+
+Two original radical caps and fixed full divisors on
+the two capped letters allow full-exponent induced
+arithmetic matchings, even with diffuse limiting free
+profiles. One-letter polynomial evaluation dictionaries
+can saturate their small-block root marginals and have
+diagonal-scale product energy, while every affordable
+full-divisor packet is determined by its complement.
+A different false-candidate construction retains all
+three radical caps, true least-repair heights and the
+first two support-prime layers under additional
+prescribed unit tests at arbitrary prime-power depth.
+It has one dominant valuation degree and the polynomial
+range for the auxiliary modulus has an explicit counting
+cost. These constructions bound what the respective
+combinatorial, projection and local tests can supply
+by themselves.
+[Two-cap induced matching (IM4)](ABC_OCCURRENCE_INDUCED_ADDITIVE_MATCHINGS.md#a-primitive-two-cap-induced-matching-with-diffuse-degrees)
+· [Root-projection obstruction (RO1–RO3)](ABC_RESIDUE_OCCURRENCE_ROOT_PROJECTION_OBSTRUCTION.md)
+· [Auxiliary unit tests (AU1)](ABC_OCCURRENCE_AUXILIARY_UNIT_TESTS.md)
+
+## Arbitrary fixed coefficients and the reverse-transfer obstruction
+
+A bounded collection of high roots can be released
+with a separate integral cofactor on every letter.
+A large complete value gives a coefficient large
+enough for rational reconstruction of the two other
+cofactors after the high roots are fixed. Combined
+with radical-scale character moments and concentration,
+this proves the two-cheapest bounded-group dictionary
+bound with arbitrary prescribed coefficients. In
+particular, a large primitive normalized codegree
+quotient has the half-minimum bound without retaining
+a unit shift modulus or paying for its low-degree
+factors separately. Discrete compression to a bounded
+collection of powered roots and an integral
+\(n^{O(1)}\) cofactor gives subpower completion.
+Paths with only small primitive quotients are
+power-small at every fixed positive multiplicity.
+Fix the first row and the gcd, and apply the
+small-cofactor count directly to the second
+original row with its common letter fixed. All original caps and
+eligibility restrictions are retained.
+[Boundary release and fixed shifts (MCB1–MCB3)](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md)
+· [Large and small primitive quotients (RT7–RT8)](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md#arbitrary-weighted-shifts-at-radical-scale-height)
+
+The full-range comparison uses the actual record
+price \(b\), conditional free caps and numerical
+heights. In a positive ordinary cell at fibre
+exponent \(u=1/3-\alpha\), a conditional cap
+reduction \(\Delta_i\) on one of the two free
+roles saves if \(\Delta_i-2b>1/3-2u\), with
+the normalized quotient height hypothesis.
+Diffuse profiles on \([2,4]\) with saturated
+small-block projection costs evade these tests at
+every \(\alpha\). At zero multiplicity the missing
+bound concerns occupied cells. A separate actual
+record estimate applies at every multiplicity:
+after fixing the three divisors it charges half the
+sum of the two cheapest remaining quotient costs.
+The same count bounds aggregate close pairs of
+small-radical integers in all unit classes of an
+arbitrary fixed step. In a single unit block of
+fixed normalized index width the occupancy has
+arbitrarily small normalized exponent, uniformly
+in the step and the valuation profile.
+[Full-range surviving profiles](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md#surviving-conditional-profiles-across-the-full-range)
+· [Progression pairs and fixed full divisors (PCP1–PCP4)](ABC_SHORT_PROGRESSION_PAIR_COUNTS.md)
+
+A genuine common-neighbour path can be counted in either
+original fixed-anchor fibre. The half-cap and nonatomic bounds
+use the original heights, and the active-floor equality gives
+compression without a low-degree terminal charge in the
+derived shift. Fixed-rank sparsity makes outside quotients of
+height at most \(X^	heta\) power-small for some fixed
+\(	heta>0\) at each positive multiplicity threshold.
+Conditioning the absolute residue bound on full-factor records
+also forces their captured raw mass to be paid by information
+about the original free value and its shared residue. This
+condition still applies at zero multiplicity. Tall diffuse
+profiles can pass the price tests even after arbitrary
+determinant-support stripping at the allowed cost. The
+additive energy, compressed-shift and reciprocal estimates
+leave separate arithmetic inputs for those profiles.
+[Original-fibre lift, conditional prices and surviving profiles](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md)
+
+At the critical combined auxiliary test scale,
+false induced matchings can have all three radical
+caps and the exact target repair bound. Their
+width is still larger than the fixed-power real
+filter, and they fail the original exact addition.
+A signed tree comparison yields polynomial local
+mixed-character flatness for actual sparse residue
+masks. A quantitative global lower comparison from
+genuine triple histories is still required. In
+bounded-degree polynomial models, an aggregate
+depth criterion gives a power saving when the
+resultant cost of the auxiliary list is controlled.
+A growing list with uncontrolled resultant cost
+can pass full-depth tests on false candidates.
+[False mixed-bin matchings](ABC_OCCURRENCE_MIXED_BIN_FALSE_MATCHINGS.md)
+· [Signed auxiliary comparisons](ABC_SIGNED_AUXILIARY_TREE_COMPARISON.md)
+· [Aggregate support tests in polynomial models](ABC_POLYNOMIAL_AGGREGATE_SUPPORT_TESTS.md)
+
+## Thin valuation windows and the occupied-cell problem
+
+A gap among the finitely many retained orders extends
+the arbitrary-shift boundary release to integral
+cofactors of height \(X^{L^{1-\xi}}\) for a fixed
+\(\xi>0\) chosen after the count allowance. At the
+same scale one can retain groups with a growing list
+of original exact orders in boundedly many thin
+windows. Fixed-shift and arbitrary-step occupancy
+then use these longer index ranges. The weighted
+codegree argument at fixed positive multiplicity can
+discard paths with primitive quotients in this
+enlarged short range before applying the half bound
+to the remaining window groups.
+[Thin-window release (TW1–TW4)](ABC_THIN_WINDOW_ARBITRARY_SHIFT_RELEASE.md)
+
+For a fixed record of three full divisors, slice the
+actual complete-value lattice into parallel lines.
+The largest admissible determinant deficit is on the
+enlarged short index scale. Short-line occupancy counts
+each line at arbitrarily small normalized cost,
+including directions with uncontrolled radical.
+For a scaled determinant \(\Delta\), the resulting
+conditional bound is \(n^\eta(1+\Delta^{-1/2})\) up
+to height-subpower losses. The scaled determinant uses
+the two actual coordinate heights or the area of a
+prescribed ratio window. This gives a saving without
+a positive multiplicity assumption when the joint
+record price and half its determinant deficit sum
+to less than one third. A broad height-one diffuse
+profile need not supply such a record. Using the lattice generated
+by the actual rows also bounds their common projective-minor
+gcd by the box area divided by the square of the row count, up
+to count allowances. Empirical prime prices now charge only
+half the numerical area deficit.
+[Divisor-lattice lines and record tally (DL1–DL5)](ABC_DIVISOR_LATTICE_LINE_OCCUPANCY.md)
+
+At occurrence, the complete dictionaries have a power
+saving from the cubic additive energy exponent. A
+fixed difference is split at a radical-scale primitive
+quotient height. Small quotients place positive-scale
+support inside their gcd. Large quotients admit the
+arbitrary-coefficient half bound. Two of the three
+marginals, and every mixed pair after role colouring,
+have energy exponent at most \(5/6+\eta\). This gives
+a quantitative \(L^1\) supply for centered auxiliary
+masks. A finite-field induced matching can nevertheless
+have ideal-scale marginal energies and character sums
+and satisfy fixed power conditions, even at primes
+above the quadratic occurrence scale. Nonnegative
+separated tests at small complete multiplicity have
+a degree-dependent false-mass lower bound on the full
+product. These facts leave the signed joint or
+arithmetic lifting problem.
+[Complete occurrence energy and auxiliary masks (OE1–OE2)](ABC_OCCURRENCE_DICTIONARY_ADDITIVE_ENERGY.md)
+· [Pseudorandom matching and separated tests (PI1–PI2)](ABC_OCCURRENCE_PSEUDORANDOM_INDUCED_MATCHINGS.md)
+
+Projecting both auxiliary trees onto cycle actions
+gives a product of the two cancellation factors.
+For sparse masks and the stated overlap conditions,
+this is a power below the unamplified cubic signal.
+A direct construction that assigns one true row to
+each split pins the child ratios to a small set and
+is far from the required subgroup law. Thus a
+remaining obligation is a joint arithmetic history
+construction with widely distributed ratios and a
+positive contribution from genuine rows.
+[Two-sided cancellation and the direct split obstruction (CT1–CT3)](ABC_TWO_SIDED_AUXILIARY_TREE_CANCELLATION.md)
+
+## Projective content, affine records, and auxiliary units
+
+A small-radical primitive family has a quantitative
+higher-order projective sieve bound. For a collection of
+ordered distinct \(k\)-tuples with \(k\ge3\), let \(J^{k-2}\)
+be the average number of extensions per occurring first
+pair. The geometric mean of the common projective content
+is at most the box area times \(J^{-2}\), up to the
+height-first count allowances. Equivalently, the sum of
+the weights of all prime-power projective coincidences,
+averaged over the tuples, has a \(2\log J\) deduction
+from the usual area bound. The same argument works in
+angular windows anchored by the first pair. Empirical
+frequencies of primes in actual projective minors price
+divisors even on primes absent from the original letters.
+At near saturation the price bound applies to the fresh
+part on almost all ordered pairs.
+[Projective content moments and the higher-order sieve (LC1–LC6)](ABC_PROJECTIVE_CONTENT_MOMENTS.md)
+· [Empirical projective prices (PF1–PF6)](ABC_PROJECTIVE_FREQUENCY_DIVISOR_PRICING.md)
+
+A prescribed affine line admits at most half the
+least radical cost of its changing roles, with no
+index-width restriction. Normalizing coordinate
+gcds makes each two-role weighted difference primitive.
+This yields a second successive-minimum test and an
+inverse-square bound for the triangle-minor gcd in
+translated boxes above the affine-line floor. The
+divisor-lattice dual has explicit frequencies in
+terms of the three divisors. Raw prices in the
+height-one \([2,4]\) diffuse example are still too
+large to afford a dual frequency of small range.
+Separately, two compressed complete letters can
+now be released together without fixing the third
+one. In particular two divisors leaving short
+quotients give a subpower count per joint record at
+every complete multiplicity.
+[Affine lines and translated content (LA1–LA4)](ABC_LONG_AFFINE_LINE_RADICAL_COUNTS.md)
+· [Two compressed letters (DTC1–DTC2)](ABC_TWO_COMPRESSED_LETTER_RELEASE.md)
+
+A binary-form projective pullback bound shows that
+the false Pythagorean carriers can pass the first two
+support layers and still avoid common projective
+clustering at every fixed positive numerical scale.
+For a different route, the character large sieve
+supplies nearly uniform independent spectator units
+from the actual one-role radical dictionaries.
+A bilinear transformation inserts such auxiliary
+parameters at a single true-tree split, while
+multiplying the exact additive defect by just one
+parameter. Its output marginal depends only on the
+normalized defect. The signed argument still needs
+a way to retain the original labels at low cost
+and to coordinate this insertion in two histories.
+[Projective pullbacks and false carriers (PP1–PP4)](ABC_PROJECTIVE_PULLBACK_CLUSTERING.md)
+· [Multiplicative unit supply (MSU1–MSU2)](ABC_MULTIPLICATIVE_SPECTATOR_UNIT_SUPPLY.md)
+· [Defect-preserving auxiliary splits (BS1–BS2)](ABC_AUXILIARY_BILINEAR_SPLIT.md)
+
 ## The unrestricted small-budget obligation
 
 In the simultaneous packet sector, a sufficient missing

@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "scope": "Supplementary finite exact floor and supporting-line controls; universal proof is the separately written all-range argument. No huge factorial expanded.",
+  "floor_remainder_cases": 20377,
+  "negative_T_cases": 846,
+  "direct_factorial_floor_terms": 213514,
+  "full_cases": [
+    {
+      "q": 3,
+      "p": 3,
+      "terms": 6,
+      "facet_positions": [
+        1
+      ]
+    },
+    {
+      "q": 12,
+      "p": 3,
+      "terms": 78,
+      "facet_positions": [
+        2,
+        1
+      ]
+    },
+    {
+      "q": 39,
+      "p": 3,
+      "terms": 780,
+      "facet_positions": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "q": 55,
+      "p": 5,
+      "terms": 1540,
+      "facet_positions": [
+        2,
+        1
+      ]
+    },
+    {
+      "q": 135,
+      "p": 5,
+      "terms": 9180,
+      "facet_positions": [
+        3,
+        1
+      ]
+    },
+    {
+      "q": 635,
+      "p": 5,
+      "terms": 201930,
+      "facet_positions": [
+        4,
+        1
+      ]
+    }
+  ],
+  "huge_family_floor_only_cases": [
+    {
+      "j": 19073486328124,
+      "k": 21,
+      "ordinary_term_valuation": -4768371581995,
+      "minimum_facet_margin": "681877136230469/19073486328125"
+    },
+    {
+      "j": 19073486328124,
+      "k": 22,
+      "ordinary_term_valuation": -4768371582013,
+      "minimum_facet_margin": "338554382324219/19073486328125"
+    },
+    {
+      "j": 19073486328124,
+      "k": 23,
+      "ordinary_term_valuation": -4768371582012,
+      "minimum_facet_margin": "357627868652344/19073486328125"
+    },
+    {
+      "j": 19073486328125,
+      "k": 22,
+      "ordinary_term_valuation": -4768371582013,
+      "minimum_facet_margin": "18"
+    },
+    {
+      "j": 19073486328135,
+      "k": 1,
+      "ordinary_term_valuation": -4768371582032,
+      "minimum_facet_margin": "1"
+    },
+    {
+      "j": 19073486328135,
+      "k": 2,
+      "ordinary_term_valuation": -4768371582031,
+      "minimum_facet_margin": "2"
+    },
+    {
+      "j": 19073486328135,
+      "k": 19073486328135,
+      "ordinary_term_valuation": 9536743164069,
+      "minimum_facet_margin": "14305114746102"
+    }
+  ],
+  "rejected_corruptions": [
+    {
+      "corruption": "deleted_v_gt_u_indicator",
+      "witness": [
+        3,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "corruption": "deleted_w_gt_v_indicator",
+      "witness": [
+        3,
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "corruption": "deleted_kt_valuation",
+      "q": 3,
+      "p": 3,
+      "j": 3,
+      "k": 3
+    }
+  ],
+  "actual_engine_cases": 0,
+  "canonical_mutations": false,
+  "checker_sha256": "f4a90f9c5a609297e6749527e03bdadc1b3920eada53ed8e6bae52ce07290743"
+}
