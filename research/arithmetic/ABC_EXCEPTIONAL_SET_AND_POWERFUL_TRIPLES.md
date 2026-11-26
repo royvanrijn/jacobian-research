@@ -11310,7 +11310,9 @@ fixed-target argument gives the same half coefficient on the
 hidden gcd. In the raw FP2 budget this forces
 \(\rho\ge2/9-2\mu/3+(\zeta+\ell_{\mathrm{old}})/3-o(1)\).
 A fixed relative real imbalance supplies the ratio constraint
-with \(\mu=0\). At the initial \(\rho=1/6\) boundary, the remaining
+with \(\mu=0\). The direct pair test also gives a strict saving at
+\(s+4\rho+2\mu+4b_0<4/3\), with \(s\) the fresh difference
+price and no parity charge. At the initial \(\rho=1/6\) boundary, the remaining
 private parts of both target quotients have vanishing small-prime
 height and at most two prime powers carrying any positive
 numerical height. These pair conditions retain the original

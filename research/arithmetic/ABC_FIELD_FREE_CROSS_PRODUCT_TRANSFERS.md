@@ -1175,6 +1175,41 @@ completion to the half-price of the reduced ratio. Their \(\tau\)
 terms cancel and give the claimed per-record exponent. No
 matched-even support or parity record is needed for this count.
 
+#### A direct pair test without a parity price
+
+The ratio bound can also be used without a bound for the whole
+product auxiliary. Suppose a chart of row exponent \(d\) supplies
+at least \(n^{2d-\rho-o(1)}\) usable pairs, each with fresh
+difference radical price \(s=r_Z-\ell_{\mathrm{old}}\) or less
+after binning, and with one of the two stated ratio constraints
+at price \(\mu\). Price the rich shared records by FP6 at
+\(\rho+o(1)\). This part of FP6 only uses the divisor incidence
+of a shared record on an original row. On a chart with small raw
+overlap \(m\) one can use the smaller price \(\min(m,\rho)\).
+The direct counting inequality is
+\[
+ 2d-\rho \le \min(m,\rho)+s/2+\mu+o(1).
+\]
+In particular a sufficient strict saving test for a chart
+catalogue of price \(b_0\) is
+\[
+                      s+4\rho+2\mu+4b_0<4/3
+\]
+with fixed positive slack. Neither the total auxiliary radical
+nor the parity record occurs in this test. For an exponent-full
+selection with \(\rho=o(1)\), negligible shared support and
+arbitrarily cheap ratio constraints, the fresh shift alone
+must have price at least \(4/3-o(1)\). With original outside
+radical masses \(1-o(1)\), the private primes retained on the
+auxiliary operands then force its total raw price to be at least
+\(10/3-o(1)\). In particular this applies to low-overlap typical
+pairs in a refined balanced family whose original complete
+target has positive nonatomic mass: a compact positive band
+outside the vanishing shared support supplies the cheap quotient
+lock. For an arbitrary thin pair selection use its actual
+\(\rho,m\) and ratio constraints instead of this typical-pair
+specialization.
+
 #### Consequence for the earliest raw FP2 budget
 
 Write \(d_0=1/3+o(1)\) and \(D=2/3-\rho-o(1)\) for the original

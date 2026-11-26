@@ -56776,6 +56776,24 @@
           "verification_note": "Written argument with scoped theorem inputs.",
           "dependency_coverage": "partial",
           "graph_scope_note": "For 3/2<=k<=2, the balanced minimum moment is O(N^(3+(4/9)(k−3/2)+epsilon)) for any signs. Use the minimum of the new two-edge H^-2 tail and the MP4 triangle H^-3/2 tail, crossing at H=N^(4/9). The price-free k=2 exponent 3 remains open."
+        },
+        {
+          "id": "ARITH-ABC-DIRECT-PAIR-RATIO-SAVING-TEST-WITHOUT-PARITY",
+          "title": "The direct pair ratio bound gives a saving test on the fresh difference alone",
+          "state": "proved",
+          "scope": "For exponent d and actual pair loss rho, the fresh difference outside radical s and ratio constraint price mu give 2d-rho<=min(m,rho)+s/2+mu up to allowances, with m the shared raw overlap. A chart catalogue of price b0 gives a strict saving at s+4rho+2mu+4b0<4/3 by a fixed margin. Typical low-overlap pairs with an arbitrarily cheap quotient lock require whole auxiliary radical price at least 10/3 in the limit.",
+          "canonical_source": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written argument with scoped theorem inputs.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For exponent d and actual pair loss rho, the fresh difference outside radical s and ratio constraint price mu give 2d-rho<=min(m,rho)+s/2+mu up to allowances, with m the shared raw overlap. A chart catalogue of price b0 gives a strict saving at s+4rho+2mu+4b0<4/3 by a fixed margin. Typical low-overlap pairs with an arbitrarily cheap quotient lock require whole auxiliary radical price at least 10/3 in the limit."
         }
       ],
       "open_questions": [
@@ -201917,7 +201935,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Radical and powerfulness scopes"
           }
         ]
@@ -201935,7 +201953,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "The limit of the six-index projection"
           }
         ]
@@ -201953,7 +201971,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Exact optimization and fixed offsets"
           }
         ]
@@ -202008,7 +202026,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Opening and Radical and powerfulness scopes"
           }
         ]
@@ -202046,7 +202064,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Exceptional-set estimates and dyadic coordinates"
           },
           {
@@ -202070,7 +202088,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Exceptional-set estimates and dyadic coordinates"
           }
         ]
@@ -202088,7 +202106,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Replay of the 19 November modulus-locking certificate"
           }
         ]
@@ -202431,7 +202449,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Exceptional-set estimates and dyadic coordinates, Carella v3"
           }
         ]
@@ -204140,7 +204158,7 @@
           },
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Exceptional-set improvement from grouped roots"
           },
           {
@@ -204186,7 +204204,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Using all higher coordinates of the largest letter"
           }
         ]
@@ -204204,7 +204222,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Using all higher coordinates of the largest letter"
           }
         ]
@@ -205234,7 +205252,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A matching order for the Fourier and two-group estimates"
           }
         ]
@@ -210925,7 +210943,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "One possible high-degree coordinate per letter"
           }
         ]
@@ -210943,7 +210961,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Two-tall strip bound"
           }
         ]
@@ -210961,7 +210979,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "The leading coefficient for whole-coordinate bounds"
           }
         ]
@@ -212199,7 +212217,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A strict small-budget saving for two tall powers and a short letter"
           }
         ]
@@ -212217,12 +212235,12 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A strict small-budget saving for a common high degree"
           },
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Refining the common-degree exponent to \\(4/9\\)"
           }
         ]
@@ -212240,7 +212258,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A \\(3/7\\) small-budget bound with a short letter"
           }
         ]
@@ -212601,7 +212619,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "An exact curve with many points in one class"
           }
         ]
@@ -213314,7 +213332,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Height concentration and prime roots near the half bound"
           }
         ]
@@ -213332,7 +213350,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A partial-power modulus for clustered high degrees"
           }
         ]
@@ -213350,7 +213368,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "An affine surface after fixing a complete letter"
           }
         ]
@@ -213368,7 +213386,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Releasing four roots on three letters"
           }
         ]
@@ -213386,7 +213404,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Radical shares in near-half boxes"
           }
         ]
@@ -213404,7 +213422,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A uniform small-budget exponent below one half"
           }
         ]
@@ -213422,7 +213440,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Releasing a bounded number of high-degree coordinates"
           }
         ]
@@ -213476,7 +213494,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A three-point cover with a p-group, Belyi §4 and its forward direction"
           }
         ]
@@ -213494,7 +213512,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Rank over bounded-degree Galois \\(p\\)-extensions"
           }
         ]
@@ -213512,7 +213530,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A uniform count of fields and points"
           }
         ]
@@ -213530,7 +213548,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A three-point cover with a p-group"
           }
         ]
@@ -213548,7 +213566,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "For the finite projected program"
           }
         ]
@@ -214514,7 +214532,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Maps to elliptic curves"
           }
         ]
@@ -214532,7 +214550,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Uniform rank and point bounds for the two twist families"
           }
         ]
@@ -214550,7 +214568,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Summation over residual radicals"
           }
         ]
@@ -214622,7 +214640,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A fixed-target surface with a cubic factor and a quartic power"
           }
         ]
@@ -214640,7 +214658,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A small-budget coefficient of \\(3/7\\)"
           }
         ]
@@ -214695,7 +214713,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A diagonal surface with a cubic power and two quartic powers"
           }
         ]
@@ -215032,7 +215050,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Using the short cofactor to count in a lattice"
           }
         ]
@@ -215183,7 +215201,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A uniform fixed-coefficient estimate"
           }
         ]
@@ -215201,7 +215219,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Summing the fixed-coefficient estimate"
           }
         ]
@@ -215219,7 +215237,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Square and odd prime powers"
           }
         ]
@@ -215237,7 +215255,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A uniform fixed-coefficient estimate"
           }
         ]
@@ -215255,7 +215273,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Summing the fixed-coefficient estimate"
           }
         ]
@@ -215273,7 +215291,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Summing the fixed-coefficient estimate"
           }
         ]
@@ -215291,7 +215309,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Square and odd prime powers"
           }
         ]
@@ -215309,7 +215327,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Square and odd prime powers"
           }
         ]
@@ -215327,7 +215345,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Small-coefficient determinant-one families"
           }
         ]
@@ -215345,7 +215363,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A support correction in a consecutive pair"
           }
         ]
@@ -215456,7 +215474,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A graph count with two or three prime roots"
           }
         ]
@@ -215474,7 +215492,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Numerical height zero on the short letter"
           }
         ]
@@ -216599,7 +216617,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Averaging and the finite affine form"
           }
         ]
@@ -216617,7 +216635,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Averaging and the finite affine form"
           }
         ]
@@ -216635,7 +216653,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Averaged full \\((2,3,6)\\) count with a Mordell height lower bound"
           }
         ]
@@ -216653,7 +216671,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A one-class-group bound from the rational three-isogeny"
           }
         ]
@@ -216671,7 +216689,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "The determinant at high precision"
           }
         ]
@@ -216689,7 +216707,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A real short-strip estimate with a free low cofactor"
           }
         ]
@@ -216707,7 +216725,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "The short-height-zero bound \\(d\\le11/27\\)"
           }
         ]
@@ -216743,7 +216761,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A modulus of half the available mass"
           }
         ]
@@ -217319,7 +217337,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Making the low coefficient short in anatomic boxes"
           }
         ]
@@ -226015,7 +226033,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "A radical-count contradiction to the claimed smooth-number lower bound"
           }
         ]
@@ -230485,7 +230503,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Scope of the few-prime sum-product approach"
           }
         ]
@@ -230690,7 +230708,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "Residual obstruction"
           }
         ]
@@ -240784,7 +240802,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+            "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
             "locator": "The unrestricted small-budget obligation"
           }
         ]
@@ -251232,7 +251250,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-            "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+            "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
             "locator": "An ordinary primitive triple from the product difference"
           }
         ]
@@ -251256,7 +251274,7 @@
           },
           {
             "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-            "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+            "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
             "locator": "Subpower recovery from one auxiliary and a parity overlap"
           },
           {
@@ -343832,7 +343850,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Fourier counting in a box and Exact optimization and fixed offsets"
         },
         "dependency_coverage": "partial"
@@ -343846,7 +343864,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Exact optimization and fixed offsets"
         },
         "dependency_coverage": "partial"
@@ -343861,7 +343879,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Stronger saving from the grouped moments"
         },
         "dependency_coverage": "partial"
@@ -344185,7 +344203,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "From the exact FullOC optimum to the exceptional-set count"
         },
         "dependency_coverage": "partial"
@@ -345240,7 +345258,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Exceptional-set improvement from grouped roots"
         },
         "dependency_coverage": "partial"
@@ -345254,7 +345272,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Exceptional-set improvement from grouped roots"
         },
         "dependency_coverage": "partial"
@@ -345285,7 +345303,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Using all higher coordinates of the largest letter"
         },
         "dependency_coverage": "partial"
@@ -345300,7 +345318,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Using all higher coordinates of the largest letter"
         },
         "dependency_coverage": "partial"
@@ -346142,7 +346160,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Selecting the released coordinates"
         },
         "dependency_coverage": "partial"
@@ -346159,7 +346177,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Leading constant for the small-budget saving"
         },
         "dependency_coverage": "partial"
@@ -346252,7 +346270,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A matching order for the Fourier and two-group estimates"
         },
         "dependency_coverage": "partial"
@@ -346320,7 +346338,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Exceptional-set bounds from the two tall terms"
         },
         "dependency_coverage": "partial"
@@ -346352,7 +346370,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Exceptional-set bounds from the two tall terms"
         },
         "dependency_coverage": "partial"
@@ -347975,7 +347993,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A proportional saving from powerful-modulus compression and bound (16)"
         },
         "dependency_coverage": "partial"
@@ -348052,7 +348070,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "One possible high-degree coordinate per letter"
         },
         "dependency_coverage": "partial"
@@ -348070,7 +348088,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A small-budget bound from higher moments and two tall terms"
         },
         "dependency_coverage": "partial"
@@ -348090,7 +348108,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "The leading coefficient for whole-coordinate bounds"
         },
         "dependency_coverage": "partial"
@@ -348923,7 +348941,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Residue counts at shrinking residual heights"
         },
         "dependency_coverage": "partial"
@@ -348937,7 +348955,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Residue counts at shrinking residual heights and (17)"
         },
         "dependency_coverage": "partial"
@@ -348953,7 +348971,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "The stability supplied by the half-bound proof"
         },
         "dependency_coverage": "partial"
@@ -348969,7 +348987,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Separated degrees and a limit of single-base compression"
         },
         "dependency_coverage": "partial"
@@ -349345,7 +349363,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A strict small-budget saving for two tall powers and a short letter"
         },
         "dependency_coverage": "partial"
@@ -349366,7 +349384,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A strict small-budget saving for a common high degree"
         },
         "dependency_coverage": "partial"
@@ -349385,7 +349403,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A \\(3/7\\) small-budget bound with a short letter"
         },
         "dependency_coverage": "partial"
@@ -349692,7 +349710,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Residue counts at shrinking residual heights, independent-power extension"
         },
         "dependency_coverage": "partial"
@@ -349708,7 +349726,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Recovering a primitive ratio from a dominant divisor and (18)"
         },
         "dependency_coverage": "partial"
@@ -349722,7 +349740,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Auxiliary surfaces and a transverse curve reduction"
         },
         "dependency_coverage": "partial"
@@ -349736,7 +349754,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "An exact curve with many points in one class"
         },
         "dependency_coverage": "partial"
@@ -350062,7 +350080,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Auxiliary curves in every residue class"
         },
         "dependency_coverage": "partial"
@@ -350077,7 +350095,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Counting the coprime roots without good reduction"
         },
         "dependency_coverage": "partial"
@@ -350093,7 +350111,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Transfer to boxes with two heavy roots on each letter"
         },
         "dependency_coverage": "partial"
@@ -350230,7 +350248,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A fixed-proportion saving below the half-budget exponent"
         },
         "dependency_coverage": "partial"
@@ -350247,7 +350265,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Height concentration and prime roots near the half bound"
         },
         "dependency_coverage": "partial"
@@ -350263,7 +350281,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A partial-power modulus for clustered high degrees"
         },
         "dependency_coverage": "partial"
@@ -350278,7 +350296,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "An affine surface after fixing a complete letter"
         },
         "dependency_coverage": "partial"
@@ -350293,7 +350311,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Releasing four roots on three letters"
         },
         "dependency_coverage": "partial"
@@ -350311,7 +350329,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Radical shares in near-half boxes"
         },
         "dependency_coverage": "partial"
@@ -350331,7 +350349,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A uniform small-budget exponent below one half"
         },
         "dependency_coverage": "partial"
@@ -350347,7 +350365,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Releasing a bounded number of high-degree coordinates"
         },
         "dependency_coverage": "partial"
@@ -350367,7 +350385,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "The small-budget coefficient \\(6/13\\)"
         },
         "dependency_coverage": "partial"
@@ -350414,7 +350432,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A three-point cover with a p-group"
         },
         "dependency_coverage": "partial"
@@ -350432,7 +350450,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Residual radical bounds for hyperbolic prime-power signatures"
         },
         "dependency_coverage": "partial"
@@ -350447,7 +350465,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "For the finite projected program"
         },
         "dependency_coverage": "partial"
@@ -350468,7 +350486,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "An explicit coefficient below (5/11), equation (32)"
         },
         "dependency_coverage": "partial"
@@ -350483,7 +350501,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Rational compression with controlled exact fibers, equations (R1) and (R2)"
         },
         "dependency_coverage": "partial"
@@ -351232,7 +351250,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Uniform rank and point bounds for the two twist families"
         },
         "dependency_coverage": "partial"
@@ -351247,7 +351265,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Residual radical bounds for two Euclidean signatures"
         },
         "dependency_coverage": "partial"
@@ -351262,7 +351280,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Summation over residual radicals"
         },
         "dependency_coverage": "partial"
@@ -351307,7 +351325,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A fixed-target surface with a cubic factor and a quartic power"
         },
         "dependency_coverage": "partial"
@@ -351326,7 +351344,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A small-budget coefficient of \\(3/7\\)"
         },
         "dependency_coverage": "partial"
@@ -351350,7 +351368,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Improving the gap to \\(10^{-3}\\)"
         },
         "dependency_coverage": "partial"
@@ -351395,7 +351413,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A diagonal surface with a cubic power and two quartic powers"
         },
         "dependency_coverage": "partial"
@@ -351683,7 +351701,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Using the short cofactor to count in a lattice"
         },
         "dependency_coverage": "partial"
@@ -351799,7 +351817,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A uniform fixed-coefficient estimate"
         },
         "dependency_coverage": "partial"
@@ -351814,7 +351832,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Summing the fixed-coefficient estimate"
         },
         "dependency_coverage": "partial"
@@ -351829,7 +351847,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Summing the fixed-coefficient estimate"
         },
         "dependency_coverage": "partial"
@@ -351844,7 +351862,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Summing the fixed-coefficient estimate"
         },
         "dependency_coverage": "partial"
@@ -351859,7 +351877,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Square and odd prime powers"
         },
         "dependency_coverage": "partial"
@@ -351874,7 +351892,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Square and odd prime powers"
         },
         "dependency_coverage": "partial"
@@ -351889,7 +351907,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Small-coefficient determinant-one families"
         },
         "dependency_coverage": "partial"
@@ -351985,7 +352003,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A graph count with two or three prime roots"
         },
         "dependency_coverage": "partial"
@@ -351999,7 +352017,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Numerical height zero on the short letter"
         },
         "dependency_coverage": "partial"
@@ -353029,7 +353047,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Averaged full \\((2,3,6)\\) count with a Mordell height lower bound"
         },
         "dependency_coverage": "partial"
@@ -353043,7 +353061,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A one-class-group bound from the rational three-isogeny"
         },
         "dependency_coverage": "partial"
@@ -353057,7 +353075,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A real short-strip estimate with a free low cofactor"
         },
         "dependency_coverage": "partial"
@@ -353076,7 +353094,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "The short-height-zero bound \\(d\\le11/27\\)"
         },
         "dependency_coverage": "partial"
@@ -353096,7 +353114,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "The full small-budget coefficient \\(8/19\\)"
         },
         "dependency_coverage": "partial"
@@ -353126,7 +353144,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A modulus of half the available mass"
         },
         "dependency_coverage": "partial"
@@ -353146,7 +353164,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "An explicit small-budget coefficient \\(13/31\\)"
         },
         "dependency_coverage": "partial"
@@ -353165,7 +353183,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A limiting small-budget coefficient of \\(5/12\\)"
         },
         "dependency_coverage": "partial"
@@ -353678,7 +353696,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Making the low coefficient short in anatomic boxes"
         },
         "dependency_coverage": "partial"
@@ -361573,7 +361591,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "A radical-count contradiction to the claimed smooth-number lower bound"
         },
         "dependency_coverage": "partial"
@@ -368547,7 +368565,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Scope of the few-prime sum-product approach"
         },
         "dependency_coverage": "partial"
@@ -368967,7 +368985,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "locator": "Residual obstruction"
         },
         "dependency_coverage": "partial"
@@ -407744,7 +407762,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "An ordinary primitive triple from the product difference"
         },
         "dependency_coverage": "partial"
@@ -407762,7 +407780,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Subpower recovery from one auxiliary and a parity overlap"
         },
         "dependency_coverage": "partial"
@@ -407779,7 +407797,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Two other field-free recovery records"
         },
         "dependency_coverage": "partial"
@@ -407793,7 +407811,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "A boundary for three-term identities of the same records"
         },
         "dependency_coverage": "partial"
@@ -409806,7 +409824,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Recovery from the product difference alone"
         },
         "dependency_coverage": "partial"
@@ -409821,7 +409839,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "The savings test including the usable pair loss"
         },
         "dependency_coverage": "partial"
@@ -410274,7 +410292,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Pricing shared support by its actual pair incidence"
         },
         "dependency_coverage": "partial"
@@ -410290,7 +410308,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Exact parity of the missing shared primes"
         },
         "dependency_coverage": "partial"
@@ -410307,7 +410325,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "An opposite-shift terminal for compatible pairs"
         },
         "dependency_coverage": "partial"
@@ -410665,7 +410683,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Linear auxiliary heights and its three separate radical caps"
         },
         "dependency_coverage": "partial"
@@ -410683,7 +410701,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Linear auxiliary heights and its three separate radical caps"
         },
         "dependency_coverage": "partial"
@@ -410700,7 +410718,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Fixed auxiliary difference without compatible prime roles"
         },
         "dependency_coverage": "partial"
@@ -411090,7 +411108,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "A fixed numerical margin for both operands and the difference"
         },
         "dependency_coverage": "partial"
@@ -411122,7 +411140,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Recovering matched square factors from an actual target modulus"
         },
         "dependency_coverage": "partial"
@@ -411138,7 +411156,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "The actual shared target record at a tied pair boundary"
         },
         "dependency_coverage": "partial"
@@ -411156,7 +411174,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "A close-target dictionary test and the residue ambiguity"
         },
         "dependency_coverage": "partial"
@@ -411173,7 +411191,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Two shared role locks cannot be tight at small original dictionaries"
         },
         "dependency_coverage": "partial"
@@ -411440,7 +411458,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "Half-price completion on the fixed original target"
         },
         "dependency_coverage": "partial"
@@ -411457,7 +411475,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "A deep target divisor on the reduced determinant ratio"
         },
         "dependency_coverage": "partial"
@@ -411473,7 +411491,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "locator": "A discrete restriction on the remaining tied profiles"
         },
         "dependency_coverage": "partial"
@@ -411701,6 +411719,21 @@
           "sha256": "42926317cca4485474ecdaf1e8338dd9305457675af91921a27b043a657cea6f",
           "locator": "Theorem opening, C.1--C.2 contrapositives and Part D precise remaining issue"
         }
+      },
+      {
+        "id": "DERIVE-ARITH-ABC-DIRECT-PAIR-RATIO-SAVING-TEST-WITHOUT-PARITY",
+        "premises": [
+          "ARITH-ABC-REDUCED-DETERMINANT-RATIO-AND-FIXED-TARGET-HALF-GCD-PAIR-COUNT",
+          "ARITH-ABC-SHARED-PAIR-INCIDENCE-PRICE-AND-PRODUCT-AUXILIARY-OBSTRUCTION"
+        ],
+        "conclusion": "ARITH-ABC-DIRECT-PAIR-RATIO-SAVING-TEST-WITHOUT-PARITY",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
+          "locator": "A direct pair test without a parity price"
+        },
+        "dependency_coverage": "partial"
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -492292,7 +492325,7 @@
         },
         {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "9035afc5ed2a4c850a83b36b4952be73f991fe2be1a99e8d4c8d5550dd3ab774",
+          "sha256": "b30e7eeea75b2ec69376581f0b4078f9914ee3e4fb7da5c4c050cd1a9e2fe053",
           "claims": [
             "ARITH-ABC-CARELLA-V3-EULER-FACTOR-ERROR",
             "ARITH-ABC-POWERFUL-TRIPLE-INCLUSION",
@@ -493445,7 +493478,8 @@
             "ARITH-ABC-REDUCED-DETERMINANT-RATIO-AND-FIXED-TARGET-HALF-GCD-PAIR-COUNT",
             "ARITH-ABC-RAW-PRODUCT-PAIR-BUDGET-DEEP-QUOTIENT-AND-TWO-PRIME-RESIDUAL",
             "ARITH-ABC-BALANCED-CUBIC-TWO-EDGE-MOMENT-BY-AVERAGING-SHORT-CERTIFICATES",
-            "ARITH-ABC-BALANCED-THREE-EDGE-MINIMUM-MOMENT-CROSSOVER-FOUR-NINTHS"
+            "ARITH-ABC-BALANCED-THREE-EDGE-MINIMUM-MOMENT-CROSSOVER-FOUR-NINTHS",
+            "ARITH-ABC-DIRECT-PAIR-RATIO-SAVING-TEST-WITHOUT-PARITY"
           ],
           "dependencies": [
             "EXT-ABC-DE-BRUIJN-TRIVIAL-COUNT",
@@ -663690,7 +663724,7 @@
         },
         {
           "path": "arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md",
-          "sha256": "d60fec88f1b88e196a2959419ed7d6bd69f77768bba21ae945ae5ea86695a8a0",
+          "sha256": "d3534b88f8f62b6c8b05137a0473737da3ee9be29056681d6f1aa31356bbbf79",
           "claims": [
             "ARITH-ABC-CROSS-PRODUCT-PARALLELOGRAM-DETERMINANT-IDENTITY",
             "ARITH-ABC-FIELD-FREE-PRIMITIVE-PRODUCT-AUXILIARY-AND-CANCELLATION-PRICE",
@@ -663712,7 +663746,8 @@
             "ARITH-ABC-TIED-LOW-DICTIONARY-PAIRS-EXCLUDE-TWO-TIGHT-SHARED-ROLE-LOCKS",
             "ARITH-ABC-FIXED-ORIGINAL-TARGET-HALF-RADICAL-PRICE-OF-A-SCALED-DIFFERENCE",
             "ARITH-ABC-REDUCED-DETERMINANT-RATIO-AND-FIXED-TARGET-HALF-GCD-PAIR-COUNT",
-            "ARITH-ABC-RAW-PRODUCT-PAIR-BUDGET-DEEP-QUOTIENT-AND-TWO-PRIME-RESIDUAL"
+            "ARITH-ABC-RAW-PRODUCT-PAIR-BUDGET-DEEP-QUOTIENT-AND-TWO-PRIME-RESIDUAL",
+            "ARITH-ABC-DIRECT-PAIR-RATIO-SAVING-TEST-WITHOUT-PARITY"
           ],
           "dependencies": [
             "ARITH-ABC-CROSS-PRODUCT-PARALLELOGRAM-DETERMINANT-IDENTITY",
