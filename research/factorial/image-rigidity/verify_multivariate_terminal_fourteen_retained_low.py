@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Terminal-fourteen retained complements on five low outer-mean bands."""
+"""Terminal-fourteen retained complements on the low outer-mean bands."""
 
 from argparse import ArgumentParser
 from fractions import Fraction as Q
@@ -11,10 +11,15 @@ from verify_multivariate_terminal_fourteen_shared_mid import verify_retained
 
 BANDS = {
     10: (11, Q(1, 9), (1, 4, 489)),
+    12: (13, Q(1, 10), (1, 8, 995)),
     13: (15, Q(1, 10), (1, 16, 2064)),
     15: (16, Q(1, 11), (3, 32, 4239)),
     16: (17, Q(3, 40), (4, 48, 6474)),
+    17: (18, Q(3, 40), (4, 48, 6446)),
     18: (20, Q(3, 40), (4, 96, 12805)),
+    20: (21, Q(3, 40), (4, 40, 5414)),
+    21: (22, Q(3, 40), (3, 24, 3240)),
+    22: (25, Q(1, 14), (6, 160, 22948)),
 }
 
 

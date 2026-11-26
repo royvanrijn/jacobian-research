@@ -63,6 +63,25 @@ through the height limit.
 [Pasten, Theorem 1.1 and Corollaries 1.2–1.3](https://arxiv.org/html/2609.17390v1#S1)
 · [Bilu–Luca, Theorem 1.2](https://arxiv.org/html/2607.28857v1#S1.SS1)
 
+Chan and Koymans count integral points near the square–cube cusp by
+using continued fractions in a transformed quartic. Their
+Theorem 1.2 is unconditional and counts by discriminant size. For
+the primitive split Frey model \(y^2=x(x-a)(x+b)\), its invariants
+before minimalization satisfy
+\[
+ c_4=16(a^2+ab+b^2),\qquad
+ \Delta=16(abc)^2,\qquad
+ \frac{1728|\Delta|}{c_4^3}\asymp
+        \left(\frac{\min(a,b)}{c}\right)^2 .
+\]
+The ratio is invariant under minimalization. At the minimum
+nonatomic endpoint all three original numerical height exponents
+tend to one. Thus this ratio can have exponent zero, and a
+small radical of the discriminant alone does not place the Frey
+invariants in a power-thin numerical cusp. This identifies the
+height input missing from a direct transfer of the cusp estimate.
+[Chan–Koymans, Theorem 1.2 and §§2–3](https://arxiv.org/html/2611.31390v1#S1)
+
 For the small-budget limit, the graph argument gives
 \[
 N_\lambda(X)\ll_{\lambda,\eta,\varepsilon}X^{(1/3+\eta)\lambda+\varepsilon}
@@ -7766,3 +7785,2317 @@ force a ratio deficit. The unresolved step is to derive a
 cofactor-ratio deficit or a comparable constraint on small-radical
 secants from the original ternary equation at arbitrary profiles.
 [One-sided compressed-core codegrees](ABC_COMPRESSED_CORE_WEIGHTED_CODEGREES.md)
+
+## Radical growth under unequal powers and repair defects
+
+For a family of primitive triples with two tracked letters and a
+third tracked up to a cofactor of vanishing numerical height, the
+normalized counting exponent is strictly less than the combined
+radical mass at positive scales on the first two letters. This
+prebalance inequality excludes original balanced boxes with too
+much weight at low orders on two letters. It also rules out
+bounded recorded radical in products of balanced input ratios
+when at least half of their individual weights are sufficiently
+small relative to the largest. In the product result the fresh
+radical floor can exceed any fixed multiple of the input
+budget. The associated primitive target must have a positive
+numerical contribution from prime powers below any prescribed
+positive scaled order, with no prior cap on its total radical.
+[Prebalance count and imbalanced product transfer](ABC_IMBALANCED_PRODUCT_RADICAL_GROWTH.md)
+
+A prescribed power class of a ratio of two independent affine
+targets gives a fixed nonzero binary norm equation. Uniform
+recovery in that norm bounds adaptive off-grid radical defects
+on graph edges and rectangles. In a dense affine graph the
+least target repairs also have large rectangle defects when the
+fullness order is sufficiently high. This excludes multiplicative
+separation of the target repair classes even if the separating
+row and column factors have arbitrary height. The primitive
+quotient formulation removes arbitrary common-multiplier copies.
+[Affine power defects and least target repairs](ABC_RECTANGLE_POWER_CLASS_DEFECT.md)
+
+For several norm forms of independent input directions, the
+resultants from each omitted row and the discrete Loomis--Whitney
+inequality fix the radical shared between the forms at negligible
+exponent cost. Each fixed norm value then recovers the entire
+tuple up to a subpower factor. With \(m\) slots and \(s\) forms
+this forces joint fresh radical exponent at least \(sm/3\),
+in the limiting convention and under the stated resultant
+hypotheses.
+[Joint multivariable norm bound](ABC_TENSOR_NORM_FRESH_RADICALS.md)
+
+## Moving affine counts and arithmetic graph configurations
+
+The fixed-shift count now gives coefficient \(2/9\) on any
+moving noncoordinate affine line of actual primitive triples,
+with all three radical caps retained. The prebalance inequality
+handles the case in which support stripping leaves numerically
+small quotients. When the weighted shift is relatively short,
+the coefficient is \(1/6\) if the cheapest letter is available.
+This gives a uniform \(2/9\) bound for primitive moving-offset
+families \(m,m+\kappa,2m+\kappa\), and a \(1/6\) bound for
+fixed \(\kappa\), up to arbitrarily small coefficient allowances.
+It strengthens the small-budget unit-offset result of Zeng and
+covers his fixed nonunit-offset case.
+[Affine slice counts and equality profiles](ABC_AFFINE_SLICE_RADICAL_COUNTS.md)
+
+Near-quadratic linear tripartite graphs can avoid balanced
+six-cycles by Kong, Shangguan and Wang's construction. In
+contrast, exact addition on complete labels forces
+\(\gg E^{10}/N^{15}\) eight-edge trades for \(E\ge K N^{7/4}\)
+and part cap \(N\). Their three sets of letter labels are
+simultaneous arithmetic parallelograms. This supplies a
+fixed-size configuration with a count at the endpoint
+exponent using actual addition.
+[Balanced cancellations in actual additive graphs](ABC_BALANCED_LATIN_TRADE_OBSTRUCTION.md)
+
+With no affine label conversion, relative odds on common
+columns give adaptive defect counts on three targets for
+orders at least three, and on four targets for every order
+at least two. A near-full graph with sufficiently high-order
+least target repairs separating modulo powers is therefore
+excluded directly in the outside projection.
+[Homogeneous power stars and least target repairs](ABC_ADAPTIVE_HOMOGENEOUS_POWER_STARS.md)
+
+For external modular tests, an additive four-shift estimate
+for Fermat curve projections and two arithmetic differencing
+steps extend the distinct-prime false-incidence obstruction to
+total test exponent \(3/2\le\beta<38/25\). These boxes have no
+integer equality and the three representatives are fixed across
+the tested primes. The result constrains a proposed modular
+count below the exponent needed by the true-occurrence test.
+[Three-prime modular false incidences](ABC_THREE_PRIME_FERMAT_NOISE.md)
+
+## Fixed targets, joint valuation classes and simultaneous families
+
+A fixed complete letter gives half the smaller of the other
+two radical caps as a counting exponent, also after subtracting
+radical supported on any prescribed polynomial-height prime
+pool. At balanced caps the complete-value fibre exponent is
+at most \(1/6\), throughout the degree profiles. A complete
+letter dictionary below exponent \(1/6\) therefore saves from
+\(1/3\). For fixed-letter fibres the exponent is strictly
+below both free letters' positive-scale masses. A free letter's
+escaped high-order weight or a short-height gap also gives a
+saving from the opposite free letter's nonatomic bound.
+[Fixed-letter estimates and spectral restrictions](ABC_FIXED_LETTER_RADICAL_CAPS.md)
+
+For least target repair of order \(M\), a single target radical
+\(R\) supports at most \(R^{1/2+o(1)}\) primitive quotients at
+balanced caps. The exact exponent allowance depends on the
+balance tolerance. Thus a near-full family at repaired height
+\(Y\) has target radical dictionary exponent at least
+\((1/2-o(1))/M\). Several weighted valuation-class constraints
+also combine through the least common multiple of their effective
+orders. After removing one reference support and any necessary
+high repair tails, a coefficient-uniform generalized Fermat
+bound handles all three resulting powers. This gives a subpower
+normalized fibre count even when individual effective orders
+are small and the resulting fine grids have diffuse limits.
+[Target radical fibres and simultaneous power classes](ABC_FIXED_LETTER_RADICAL_CAPS.md#size-of-a-minimally-repaired-target-radical-fibre)
+· [Prior fine-grid sector](ABC_FINE_VALUATION_DIVISIBILITY.md)
+
+Near-quadratic additive complete-label graphs contain simultaneous
+binary shift allocations between any fixed list of pairs of
+letters. Each allocation is an original triple. On a fixed fibre
+the distinct shifted values have pairwise disjoint supports outside
+a resultant pool, and the fixed-letter estimate shows that this
+pool has negligible intersection with each radical at the balanced
+complete-label exponent. A Behrend construction gives primitive
+additive graphs at the same density that exclude the three
+placements of a common shift.
+[Translation cubes and fresh radicals](ABC_ADDITIVE_TRANSLATION_CUBES.md)
+
+Pastén's arithmetic derivatives give a lattice inequality across
+an arbitrary family of primitive rows. Simultaneous divisibility
+can be added at each prime and valuation depth through the rank of
+the two other letters' valuation differences. The common fixed
+moduli alone have a capacity bound. Additional rank correlations
+across rows or valuation depths are needed to turn the inequality
+into a count.
+[Arithmetic derivative family inequalities](ABC_ARITHMETIC_DERIVATIVE_FAMILY_LATTICES.md)
+
+## Popular target supports and low-complexity complete letters
+
+A modular characterization of popular target radicals uses
+independent prime-test blocks. To test multiplicity at scale
+\(N^u\), each block can have total prime exponent just above
+\(2-u\), up to the balance tolerance, with a fixed number of
+repetitions. Thus the upper half-budget fibre thresholds can
+be tested at block exponent just above \(3/2\). At the critical
+exponent the bounded-height Fermat boxes have polynomially many
+false popular targets. The fixed-target Fourier completion gives
+an explicit obstruction in the three-prime range as well as
+an obstruction to using several undersized blocks.
+[Modular tests for target multiplicity](ABC_MODULAR_TARGET_POPULARITY.md)
+
+Pointwise bounds on fixed values and prescribed prime pools do
+not imply the target multiplicity estimate on their own. A
+finite-field evaluation construction gives an abstract graph
+with total exponent one in repaired base \(N\), target count
+exponent \(1-u\), and multiplicity exponent \(u\), for every
+limiting \(0\le u\le1/2\). Its encoded integer labels obey the
+balanced height and radical bounds and the pointwise pool
+discount. They can pass any prescribed fixed modulus while
+having at most one actual integer sum on their edges.
+[Pointwise target multiplicity obstruction](ABC_TARGET_MULTIPLICITY_POINTWISE_OBSTRUCTION.md)
+
+A bounded-rank affine model with sufficiently small maximal
+integer minors on any one complete letter gives a uniform
+saving at all balanced profiles. This includes progression
+boxes of small positive numerical volume and approximate
+polynomial descriptions with fixed degree and dimension.
+The proof uses rank descent after cheap full-power locks.
+When the designated letter is wholly atomic, both opposite
+letters are diffuse and affordable divisors first lift their
+complete values to the same affine model.
+[All-profile bounds for small feature models](ABC_COMPLETE_LETTER_SMALL_FEATURES.md)
+
+One complete letter or pair ratio in a multiplicative coset
+of any fixed polylogarithmic rank also gives an explicit
+saving at all profiles. A valuation basis separates the
+values, and its prime partition sum allows a discount on
+the original three radical caps. Separating bases can give
+a count even without a rank cap. Three disjoint separating
+prime sets for any one letter or pair ratio give coefficient
+\(2/7\), by combining their entropy bounds with the other
+two radical caps. Simultaneous packings on all three
+letters give a stronger bound.
+[Valuation cosets and packing counts](ABC_VALUATION_SPAN_COSETS.md)
+
+## Short real windows and approximate valuation recovery
+
+At every prescribed small coefficient \(\eta>0\), a sufficiently
+short power interval at the numerical height contains at most
+\(X^{\eta L+\varepsilon}\) integers of radical at most \(X^{AL}\),
+for fixed \(A\) and all sufficiently small fixed \(L\). The proof
+either records a cheap powered divisor larger than the interval
+or counts the bounded list of large primes in a real strip.
+This gives the corresponding local estimate for high-full
+integers, and it makes coarse bins of each tall complete letter
+lose arbitrarily little normalized entropy.
+[Short intervals with small radicals](ABC_SHORT_INTERVAL_RADICAL_FILTER.md)
+
+Combining this local estimate with modular rejection shows that,
+after imposing the short real near-equality window, each
+independent prime block for target multiplicity \(N^u\) can have
+total exponent just above \(1-u\) in the balanced normalization.
+At that same scale one can discard nonunit witnesses with
+power-small loss in the true popularity tail, and remove every
+fixed list of exceptional multiplicative character modes
+pointwise. Complete-residue signed second moments are obstructed
+on unfiltered prime-product dictionaries. A sufficiently small
+signed high-character contribution on the actual filtered target
+dictionary remains to be proved.
+[Real-filtered popularity and signed character modes](ABC_MODULAR_POPULARITY_NONPRINCIPAL_MODES.md#unit-tests-at-the-smaller-real-filtered-prime-scale)
+
+Valuation projections may now be used with explicit conditional
+entropy losses. A projection missing only logarithmic valuation
+rank incurs vanishing normalized entropy cost. In particular
+three disjoint projections with such small kernels retain the
+\(2/7\) coefficient. An abstract polynomial evaluation model
+with balanced integer labels satisfies occurrence-frequency
+constraints and still obstructs extracting inexpensive
+projections from those data alone.
+[Incomplete valuation projections](ABC_APPROXIMATE_VALUATION_SEPARATORS.md)
+
+Long additive growth gives a further criterion. A bounded
+normalized \(k\)-fold sumset for one complete dictionary at
+\(k=\lfloor n^u\rfloor\), \(u>0\) fixed, gives a global
+saving via Nguyen–Vu's inverse theorem. Short fixed-rank
+progressions modulo sufficiently many smaller primes give
+another saving via the Croot–Mao–Yip gluing theorem. An exact
+primitive digit graph with subpower doubling shows why
+fixed-order energies and primitivity alone cannot supply the
+small-minor feature descriptions. It has the endpoint height
+and cardinality scales and imposes no small radical cap.
+[Long sumsets, modular gluing and the digit obstruction](ABC_HIGH_DIMENSIONAL_ADDITIVE_FEATURE_OBSTRUCTION.md)
+
+## Two-base near-equality fibres and quantitative test obstructions
+
+On tall shells, weighted sums or differences of two powers with
+short bases have \(X^{\eta L+\varepsilon}\) near-equality fibres for
+any fixed \(\eta>0\) and sufficiently small fixed \(L\), when at least
+one order exceeds a fixed threshold. The coefficients and target may
+move with height, and the orders may grow polylogarithmically.
+The contact calculation uses a Wronskian in a single normalized
+arithmetic parameter. Its degree is bounded independently of the
+orders. For near-proportional opposite terms, either a rational
+cross determinant fixes the reduced power ratio or the monomial
+Wronskian is Vandermonde. This controls the real-window false pairs
+on actual power-record fibres in any omitted-letter orientation.
+If the available complete coefficient records per target number
+\(N^{f+o(1)}\) in base \(N=X^L\), the sufficient block exponent is
+\(\beta>f-u\) with a fixed margin at multiplicity \(N^u\).
+The strict saving for short primitive summands already excludes
+vanishing numerical height at saturation. The missing input is a
+power discount on the coefficient records in arbitrary diffuse
+valuation profiles.
+[Weighted power near-equalities](ABC_WEIGHTED_POWER_NEAR_EQUALITY.md)
+· [Strict saving for a short summand](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-strict-saving-when-the-short-term-is-small)
+
+Reduced fractions with small joint radical are sparse in projective
+windows of relative width \(X^{-(h_1+h_2)+\theta}\) at numerator
+and denominator heights \(X^{h_1}, X^{h_2}\). Recording a cheap
+full divisor of sufficiently large value makes each cross
+determinant vanish in that window. The estimate can replace the
+missing-rank hypothesis in an approximate valuation packing if
+the projections localize the pair ratio to sufficiently few of
+these numerical bins.
+[Projective short-interval radical filter](ABC_PROJECTIVE_SHORT_INTERVAL_RADICAL_FILTER.md)
+
+A bounded ramp on the real part of the high Jacobi modes, averaged
+over independent primes, recovers the true target tail up to
+constant threshold changes and a power-small error at the
+filtered scale \(\beta>1-u\) with fixed slack. The actual third
+target dictionary and its least-repair height are retained.
+A uniform polynomial approximation to the ramp on the whole
+multiplicity range requires power-growing degree for
+\(u<1/2\). A full interpolation model attains all intervening
+target multiplicity exponents while using every summand support
+once and respecting the pointwise pool discounts. Its integer
+encodings need not satisfy the real window.
+[Capped signed target popularity](ABC_CAPPED_SIGNED_POPULARITY.md)
+
+On comparable ratios, every continuum real filter formed by
+absolutely summing separated logarithmic characters costs
+\(\gg X^{(1-\theta)/2}\) in coefficient variation for window
+\(X^\theta\) at height \(X\). The order is sharp. This rules
+out a transfer that takes only absolute sums of separate
+frequency bounds with fixed savings in base \(N=X^L\).
+In another direction, the formal radical of a binary-form
+model bounds its real contact with the sum equation. For
+pairwise coprime fixed-degree formally high-full forms, the
+real window admits only boundedly many primitive parameter
+pairs per shell, even with subpower moving coefficients.
+These obstructions leave the actual nonprincipal correlations
+on arbitrary radical-constrained dictionaries open.
+[Mellin cost of the real filter](ABC_MELLIN_REAL_FILTER_OBSTRUCTION.md)
+· [Polynomial real-filter obstruction](ABC_POLYNOMIAL_REAL_FILTER_OBSTRUCTIONS.md)
+
+## One-letter power grids, rich shifts and target moments
+
+One high valuation grid bounds repeated differences of its complete
+letter. In an actual addition graph, Cauchy–Schwarz on pairs through
+a shared vertex retains the other two complete dictionaries. With
+equal caps \(N^v\) on those dictionaries and defect radical at most
+\(N^f\) on the grid, the resulting exponent is at most \(3v/2+f\)
+in base \(N=X^L\), up to arbitrary allowances. At the minimum
+nonatomic sector this gives \(1/4+f\). The cyclic anchor reduction
+also gives a quantitative neighbourhood of that sector. A version
+for a short real window uses the signed weighted-power fibre count
+for long differences and short-interval radical sparsity for short
+ones.
+[One power grid and additive differences](ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md)
+
+In a near-full complete-label graph at the minimum nonatomic scale,
+rich common-target shifts capped by \(\operatorname{rad}(h)\le N^b\)
+have exponent at most \(\min\{b,1/18+b/3\}\), up to arbitrarily
+small allowances. The proof transfers each shift to many tall
+primitive difference triples and pays for the discarded common
+multipliers by their supported radical. In particular a full
+\(N^{1/6-o(1)}\) shift dictionary needs radical at least
+\(N^{1/3-o(1)}\). At that critical radical cap, the derived
+triples saturate a pair inequality with two copies of the
+same original valuation profile. Their shifts must be full-height,
+with bounded scaled support and no escaped numerical weight.
+This leaves the possibility of rich shifts with radicals beyond
+the critical cap.
+[Radical amplification for rich shifts](ABC_POPULAR_SHIFT_RADICAL_AMPLIFICATION.md)
+
+On minimally repaired primitive quotients with opposite even
+exact powers of fixed order \(q\), a derived sum of the two
+linear cyclotomic factors and one original root improves the
+bound across the central repair band. The coefficient relative
+to \(1/M\) is at most \(2/(\tau(q)+1)\) in the limit of small
+budget and balance tolerances. When \(3\mid q\) or \(4\mid q\),
+another derived primitive triple uses only radicals from the
+cyclotomic factors of the intervening difference. This gives
+coefficient \(1/\tau(q)\) relative to \(1/M\) at balanced caps.
+Both bounds use the unique least multiplier of each quotient.
+[Cyclotomic factor identities and minimal repair](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md#additive-identities-for-opposite-even-powers)
+
+In the pointwise model, every fixed finite list of moments of
+target multiplicity is compatible with power-separated tails at
+any prescribed exponent below \(1/2\). The two graphs can even
+share their integer dictionaries and the same exact moment values.
+Both obey the pointwise prime-pool constraints and keep total
+edge count at the critical exponent. This specifies the ambiguity
+left by a finite list of moments when used to test an intermediate
+tail without the real relation.
+[Matched moments in the pointwise graph model](ABC_CAPPED_SIGNED_POPULARITY.md#identical-finite-moments-with-different-critical-tails)
+
+## Quadratic norm fibres and polynomial descriptions of rich shifts
+
+A full divisor of one square root gives a compact ray class constraint
+on the exact valuation layers of the third letter. The resulting
+estimate works in both real and imaginary quadratic fields without a
+numerical height-balance assumption. It excludes balanced saturation
+whenever any pair has combined odd-valuation radical mass below
+\(2/15\), with a fixed margin. The cost of the remaining class torsion
+can also be weighted by which primes divide the actual layer indices.
+[Weighted square ray class moments](ABC_WEIGHTED_SQUARE_RAY_CLASS_MOMENTS.md)
+
+For square summands with an exact power target, Gaussian factorization
+gives additional bounds before minimal repair. At balanced caps the
+original-height coefficients are \(1/6\) for a cube target and \(1/9\)
+for a fourth-power target, up to allowances. For weighted squares
+and an odd exact target order, the same count uses the part of the
+order recovered by principalizing the norm ideal. With full ideal class
+variation, the alternative projective bound combines the already paid
+summand kernels, target defect and any additional full-prime records.
+At cubic target order the average \(3\)-torsion bound gives a strict
+saving in the diffuse summand sector \(2f+3g<1/3\), where \(f\)
+is the summand parity-kernel budget and \(g\) is the cubic-defect
+radical budget. These bounds count original primitive quotients with
+their unique minimum repair height.
+[Gaussian power target splitting](ABC_GAUSSIAN_POWER_TARGET_SPLITTING.md)
+· [Weighted norm descent and projective recovery](ABC_WEIGHTED_GAUSSIAN_CYCLOTOMIC_DESCENT.md)
+
+For rich shifts, a polynomial description \(h=t_s+sP_s(z)\) with
+\(\deg P_s\ge2\) and a cheap coefficient dictionary is excluded
+independently of the radical of \(h\). A full-size rich-shift dictionary
+requires coefficient exponent at least \(1/6\). The same threshold
+holds near high powers when the coefficient divides the exact shift.
+There are primitive dense graphs with tall prime rich shifts after
+dropping the complete-letter radical caps. The large-radical shift
+problem thus retains the radical constraints on the original letters.
+[Polynomial descriptions of rich shifts](ABC_RICH_SHIFT_POWER_CARRIERS.md)
+
+Jain's smooth-summand theorem gives a decomposition of each
+sufficiently large integer with a polynomial largest-prime
+cap on one summand and a polylogarithmic largest-prime cap
+on the other. The hypotheses bound the largest primes.
+They do not bound the product of distinct primes of the three
+complete letters at a fixed small polynomial budget.
+[Jain, Theorem 1](https://arxiv.org/html/2611.21136v1#S1)
+
+A common multiplier twists the Frey curve by a scalar quadratic
+character. The projective torsion at every level is unchanged,
+including its inertia at primes away from the level and \(2\).
+At level \(2q\) its ramification support there is the primitive
+\(q\)-power defect. Making the repaired target a high power cannot
+supply missing primitive level-lowering hypotheses.
+[Frey inertia under target repair](ABC_FREY_REPAIR_PROJECTIVE_INERTIA.md)
+
+## Mixed power-root ratios and higher-degree norm fibres
+
+Passing to the ratio of two power roots splits the branch section
+for the remaining letter into \(d\) sections. For fixed power
+kernels, this gives height-free bounds exponential in the number
+of defect primes for mixed signatures such as \((6,2,9)\),
+\((6,6,3)\), and \((3,3,5)\). The estimate also allows moving kernels
+with finitely many prime-to-\(p\) ratio classes. With fully moving
+kernels the count is reduced to a weighted class-group moment.
+For the height-free \((6,6,3)\) estimate, the variable class groups
+can be taken to be two quadratic \(3\)-torsion groups. The Euclidean
+\((3,3,3)\) estimate already gives the bounded-height defect-budget
+bound for fully moving kernels in this signature. For each fixed
+\((6,2,3^a)\), \(a\ge2\), a cyclic isogeny reduces the moving-kernel
+cost to a higher moment of the same quadratic torsion. This moment
+would extend the bound even at finite height, where the Euclidean
+estimate does not apply. Support caps below the one-third threshold
+give corresponding bounds on the primitive quotients with their
+least repair.
+[Root-ratio mixed covers](ABC_ROOT_RATIO_MIXED_COVERS.md)
+· [Euclidean grid point counts](ABC_EUCLIDEAN_GRID_POINT_COUNTS.md#primitive-quotients-on-two-euclidean-signatures)
+
+A bounded-degree compositum preserves each base torsion subgroup
+up to a bounded factor. Even requiring common completely split
+rational primes cannot itself compress odd-order class records.
+Those primes can realize independently prescribed classes in the
+moving quadratic fields.
+[Composita and class-record obstruction](ABC_ROOT_RATIO_MIXED_COVERS.md#bounded-degree-composita-and-class-records)
+
+Higher-degree projective ray class moments use a full divisor on
+a root, or on the binary form value when its relevant irreducible
+factor has degree at least three. The latter case keeps the
+unoccupied prime ideals over each modulus prime. Comparing
+conjugates forces diagonal products and gives a direct
+target-repair bound from divisors of the repaired target's
+primitive value. At each fixed order \(q\), this excludes
+balanced saturation when a pair has combined \(q\)-defect
+radical mass below \(2/[3(q+3)]\), with a fixed margin.
+An explicit Gaussian family rules out the corresponding
+degree-two value-divisor bound.
+[Projective ray class moments](ABC_PROJECTIVE_RAY_CLASS_NORM_MOMENTS.md)
+
+Consecutive valuation degrees can pass every test in a fixed
+finite list of local power equations. For the quadratic signature
+there are actual primitive additive realizations with these
+prescribed degrees and polynomial height. For most prescribed
+supports, every bounded-height realization needs fresh radical
+above \(X_0^{bL}\) for any fixed \(b<2\), where \(X_0^L\)
+is the scale of the prescribed radical. This quantifies a
+global constraint absent from the local tests. The exceptional
+supports left by that argument can still carry a near-saturating
+family.
+[Simultaneous local power tests and fresh radical](ABC_SIMULTANEOUS_LOCAL_POWER_PROFILE_OBSTRUCTION.md)
+
+## Joint free-letter compression and moving square kernels
+
+On a balanced profile with a cheap full modulus from one letter,
+Fourier moments retain joint root dictionaries on both other
+letters. A bounded group, a group in a fixed number of shrinking
+valuation windows, or one group of numerically short full prime
+powers can carry a joint restriction. Every such partition needs
+full marginal entropy at saturation, even above the minimum
+nonatomic mass.
+
+For fixed \(a\ge2\), the mixed signature \((6,2,3^a)\) has a strict
+unconditional saving when the total signature-defect radical mass
+is bounded below \(1/3\) by a fixed margin and either the full
+odd-kernel product is numerically short or its radical is concentrated
+at a bounded number of narrow degree windows. The count allows
+fully moving kernels. A first-moment estimate for quadratic
+\(3\)-torsion makes the high-torsion kernels a sparse joint dictionary.
+In the residual sector of the mixed signature, saturation requires
+a positive nonatomic mass on the odd valuation degrees of the
+two square letters.
+[Joint free-letter dictionaries and moving kernels](ABC_JOINT_FREE_LETTER_DICTIONARIES.md)
+
+Near-full families and near-half fixed-letter fibres with their
+stated individual caps contain a growing set of actual rows with
+mutually private full prime powers and arbitrarily small radical
+loss. The same selection works against every later polynomial-height
+prime pool. The aggregate least common multiple can have
+quasi-polynomial height, leaving open how to use all these powers
+together in a count with the original numerical height restriction.
+[Growing private prime packets](ABC_GROWING_PRIVATE_PRIME_PACKETS.md)
+
+## Growing arithmetic tests with private prime support
+
+At almost every edge of a near-minimum complete-label graph, one
+can extract polylogarithmically many fixed-size rectangles rooted
+at that edge. Every new complete value keeps a private packet and
+all original radical caps. The new values are multiplicatively
+independent modulo the anchor primes. Subpower thinning can still
+destroy every prescribed growing biclique while preserving the
+count exponent and all original caps.
+[Rooted private rectangles](ABC_ROOTED_PRIVATE_RECTANGLES.md)
+
+A growing list of affine differences in one actual fixed-letter
+fibre carries growing fresh radical on typical queries. Outside
+the listed determinants and anchor primes, distinct differences
+have disjoint supports. Their weighted products carry power
+defect proportional to a fractional matching of the effective
+orders, simultaneously for all orders and weights. Valuations of
+these private primes also force the degree of any field containing
+all the corresponding power roots to grow, including the roots
+of least-repair multipliers at sufficiently large repair order.
+[Growing affine defects and radical extension degrees](ABC_GROWING_AFFINE_DEFECT_FIBRES.md)
+
+The private packets supply projective tests and simultaneous
+ray-class tests at all balanced profiles. A nonzero secant or
+conjugate difference bounds the total weight of matching probes.
+A sufficiently large fixed collection of joint ray tests makes
+the ideal-product moment diagonal. Averaging the tests
+individually still allows power-sized collisions in a primitive
+Gaussian family.
+[Projective and ray tests on private packets](ABC_PRIVATE_PACKET_RAY_SIEVE.md)
+
+For the full odd-kernel residue moment, the uniform local
+Davenport–Heilbronn-type bounds give rarity in sections
+specified by small kernel divisors. An abstract dictionary
+can have that section rarity and still lie in one residue
+fibre. There is an additional unconditional regime when a
+small omitted radical mass leaves a signed ratio of height
+below the full modulus. The weighted residue moment on the
+remaining diffuse odd roots requires further arithmetic.
+[Conditional first moments and retained ratios](ABC_JOINT_FREE_LETTER_DICTIONARIES.md#conditional-first-moments-and-short-retained-ratios)
+
+## Averaging full divisors and cross-form residue locks
+
+For a fixed off-diagonal ideal-product pair, an arbitrary family
+of overlapping full moduli has only subpower many passing
+records. This gives an ambient/local moment bound which accepts
+arbitrary record-dependent subdictionaries. Its savings on the
+off-diagonal branches cannot by themselves exceed the record
+cost. In particular the arithmetic mean alone cannot finish
+the high-torsion odd-kernel estimate. A separate affine graph
+count uses the three original radical caps and gives a strict
+density loss when a fixed number of cheap full divisors have
+combined numerical weight above the query interval.
+[Overlapping modulus moments and affine codegrees](ABC_OVERLAPPING_MODULUS_MOMENTS.md)
+
+A full divisor coming from a different coprime form can instead
+provide the scalar ray condition on a fixed binary carrier.
+At a balanced profile, consider weighted square summands with
+joint parity-kernel mass at most \(f\), a cubic target with
+defect mass at most \(g\), and one summand with parity kernel
+mass at least \(k\). A strict saving follows for
+\(5f/4+3g/2-k/2<1/6\), at sufficiently small fixed budgets.
+There is no assumption on individual prime sizes. Choosing
+the larger kernel gives the sector \(f+3g/2<1/6\).
+For exact cube targets with highly asymmetric kernels the cap
+approaches \(f=2/9\).
+[Cross-form projective ray locks](ABC_CROSS_FORM_PROJECTIVE_RAY_LOCKS.md)
+
+Private odd valuations give actual complete labels with
+balanced quadratic signatures at almost every prime above
+the square root of the individual radical scale. Burgess's
+interval estimate controls the off-diagonal quadratic character
+products. The selection works in a balanced near-saturating
+family or a fixed-letter fibre under its near-half hypotheses.
+The count controls a quadratic mode at relevant test primes
+while the full signed three-letter test still requires joint
+information.
+[Private quadratic signatures](ABC_PRIVATE_QUADRATIC_SIGNATURES.md)
+
+The affine defect argument applies directly to forms in both
+free coordinates of a triple, by testing a pair on a role slice
+where both forms move. The lower bound depends on that role's
+complete dictionary cap. A query-dependent pool removes overlap
+without losing any of the three original radical constraints.
+In particular this controls primitive difference directions in
+rooted rectangle completions and the degree of extensions
+containing their least-repair roots. On the regularized
+minimum-mass graph, a supplying opposite band above \(s>3\)
+forces outside radical mass at least \(3/2-3/s\) on any
+full-exponent class of primitive directions with bounded
+raw radical and a fixed excluded prime pool.
+[Two-variable affine defects](ABC_TWO_VARIABLE_AFFINE_DEFECTS.md)
+
+For a three-point cover of arbitrary degree, the reduction
+in normalized tame discriminant cost is bounded by the largest
+prime-divisibility mass of the exact valuation degrees on each
+role. On planted diffuse prime-degree profiles the discriminant
+cost plus the excluded planted radical mass is at least
+\(2/3-o(1)\) for genus at least one, uniformly in the cover.
+These profiles have actual quadratic realizations. Their
+uncontrolled fresh radical still prevents using them as
+counterexamples to a global saving.
+[Three-point discriminant costs](ABC_THREE_POINT_DISCRIMINANT_COSTS.md)
+
+## Primitive affine secants and complete-letter dictionaries
+
+For near-full balanced families, almost every pair of actual
+triples has a primitive affine difference of positive numerical
+height and radical at least \(X^{(1-\eta)L}\), for each fixed
+\(\eta>0\) and all sufficiently small fixed \(L>0\).
+Two numerically short directions to fixed anchors would give
+bounded-rank homogeneous features of the entire original row.
+A full prime-power divisor on one diffuse letter forces a
+rank drop. Effective radical counts for tall directions and
+the planar incidence theorem then give a pair inequality
+at all balanced profiles. Any power-abundant class of
+secants below the indicated radical threshold, with fraction
+loss smaller than the gap in (SC3), forces a strict global
+row-count saving. The same geometry with endpoint-conditioned
+prime pools gives sequential fresh radical on every fixed
+number of bounded-radical directions.
+
+A separate normalized coordinate-pair count uses the two
+pure-letter radical caps of its output. A physical
+difference with radical at most \(X^{BL}\) for fixed \(B\)
+on a pair relation of full exponent forces the corresponding
+complete letter of both inputs to the minimum dictionary
+exponent \(1/6\) in base \(X^L\). In the central
+least-target-repair problem, a
+critical multiplicity class with exponent \(u<1/2\) in base
+\(Y^{1/M}\) must therefore have almost all distinct target
+differences outside every such fixed radical cap. Bounded
+primitive directions give the complete-dictionary conclusion
+when the common scaling gcd also has bounded normalized
+radical. The three original caps have yet to force any of
+these bounded-difference regimes.
+[Primitive secants and physical coordinate differences](ABC_PRIMITIVE_SECANT_RADICAL_AMPLIFICATION.md)
+
+Fixing one endpoint of a physical shift also fixes a
+complete letter of the normalized output. One can therefore
+discount the prime support of any polynomial-height integer
+chosen from that endpoint, with no raw cap on the shift.
+In a complete fibre of exponent \(r\), each of any fixed
+number of successive shifts must contribute at least
+\(2r-\eta\) fresh radical mass, outside the first row and
+earlier shifts, on all but a power-small fraction of tuples.
+At intermediate target multiplicity this gives an adaptive
+form of the distinct-target difference bound and a separate
+bound for shifts within the same complete target. At maximum
+multiplicity, full-exponent common-target pairs with bounded
+raw shift radical force minimum dictionaries for both moving
+roles as well as the target.
+[Fixed-endpoint shift counts](ABC_FIXED_ENDPOINT_SHIFT_RADICAL_COUNTS.md)
+
+Actual comparable primitive sums with only the summand and
+target caps give wholly diffuse least-repaired target families
+at full occurrence exponent whose target differences exceed
+every fixed normalized radical cap on all but a power-small
+fraction of pairs at late budgets. The cyclotomic norm
+count identifies the third original radical cap as a required
+arithmetic input for any general difference extraction.
+[Two-cap obstruction](ABC_PRIMITIVE_SECANT_RADICAL_AMPLIFICATION.md#a-two-cap-obstruction-with-actual-diffuse-least-repairs)
+
+## Moving curves, the scaling gcd and fixed-fibre triangles
+
+A moving plane curve of any fixed degree contains at most
+\(X^{(1/3-\delta)L+\varepsilon}\) balanced shell rows for
+an absolute \(\delta>0\). The budget threshold can depend
+on the degree. A cheap full divisor of a diffuse letter
+reduces the curve equation to a one-variable congruence.
+A single-letter residue moment gives the saving after
+enumerating the lock. Interpolate a polynomial through
+fixed query anchors and use the least common multiple of
+their affine secant gcds to force exact vanishing.
+This puts the common scaling gcd on an endpoint-dependent
+polynomial-height pool up to a numerically short factor
+for almost every ordered pair. The exponent saving in the
+curve bound is independent of the degree fixed before the
+height limit.
+[Moving curve count and local gcd pools](ABC_BOUNDED_DEGREE_CURVES_AND_SECANT_GCD.md)
+
+The two-letter dictionary inequality tolerates a third
+output with a fixed coefficient, a bounded-radical recorded
+factor and a sufficiently short unrecorded cofactor.
+Combined with the local gcd pools, this removes the scaling
+gcd hypothesis from the primitive secant coordinate test.
+If a critical pair relation has bounded outside radical
+on one primitive coordinate, the corresponding
+second-endpoint complete dictionary is minimal.
+Symmetric tests give both conclusions. Intermediate
+least-repaired target multiplicity therefore forces
+large outside radical on primitive target differences
+even after peeling the gcd. The same count allows a short
+unrecorded part of the primitive coordinate itself.
+In particular it forces positive numerical weight at
+low scaled orders outside the pool after removing all
+sufficiently high-order factors. Independently, a critical
+relation with numerically large gcds forces at least two
+minimum complete dictionaries. A role whose escaped first
+moment is below the numerical gcd threshold also becomes
+minimal.
+[Short-cofactor and primitive coordinate counts](ABC_UNRECORDED_COFACTOR_SECANT_TRANSFER.md)
+
+In a fixed complete-letter fibre of any positive normalized
+exponent \(r\), the two moving letters retain positive
+nonatomic mass even after recording arbitrary
+polynomial-height prime pools. This rules out short
+normalized difference triangles on a power-large fraction
+of triples of actual complete values. At a full-exponent
+triangle relation with radical cap \(n^{6r+o(1)}\),
+incidence counting yields an output family of exponent
+\(2r-o(1)\). Its primitive additive triples attain the
+balanced coefficient at the new radical scale, including
+at intermediate least-repaired multiplicities.
+[Fixed-fibre primitive triangles](ABC_FIXED_FIBRE_TRIANGLE_RADICALS.md)
+
+## Exact scaling and mixed prime packing at minimum dictionaries
+
+A full-exponent tagged relation of fixed-fibre triangles
+in a minimum-dictionary family can be thinned to one exact
+scaling gcd and three fixed original residue classes with
+vanishing normalized loss. Rare physical gaps carry a
+power-smaller set of tagged triangles. The surviving
+normalized sides belong to minimum dictionaries globally.
+Pinning one complete target and one triangle value then
+gives an injective primitive-output relation. At the
+critical cap the new endpoint has minimum dictionaries,
+even if its total nonatomic mass is above the minimum.
+Two of its complete labels map by the same fixed affine
+map back into a single actual original fibre. In a single
+original fibre of any positive exponent the exact scaling
+selection still works. The critical pinned output reaches
+maximum target multiplicity at the new radical scale.
+[Exact scaling and pinned triangle transfer](ABC_HEREDITARY_MINIMUM_TRIANGLE_TRANSFER.md)
+
+For all minimum-dictionary profiles, the compact upper
+cutoff on scaled orders extends from the nonatomic
+spectrum to actual prime powers. With all roles fixed in
+residue classes modulo \(G\ge X^\gamma\), the finite
+cutoff is \(\max\{6,12(1-\gamma)\}\) and the nonatomic
+cutoff is \(6(1-\gamma)\). One can obtain a common
+modulus of numerical exponent approaching the sum of
+the three escaped moments by first fixing the high-order
+tails and then aligning residues successively.
+[Compact prime packing and escaped-moment alignment](ABC_MINIMUM_DICTIONARY_COMPACT_PRIME_PACKING.md)
+
+The mixed star count uses both other roles for anchors.
+It combines a repeated high-order prime on one letter
+with arbitrarily small primes on another. Write
+\(H=1-\gamma\) and let \(b\) be the largest upper support
+point among the three nonatomic profiles. A prime of
+limiting cost \(t\) and order \(s\) obeys
+\(kst+b(1/6-kt)\le H\) for each integer \(k\) with
+\(0<kt<1/6\). In particular any finite mass above
+\(6H+\sqrt{36H^2-6Hb}\) must lie on a single atom of
+cost \(1/6\) in its own role, exhausting that role's
+atomic mass. This restricts the higher-order end of
+the spectrum even when the nonatomic masses are
+arbitrary at minimum complete dictionaries.
+[Mixed packing across the original roles](ABC_CROSS_ROLE_COMPACT_PACKING.md)
+
+Two obstructions identify the arithmetic still needed.
+The carry-free primitive construction can attain minimum
+triangle-ratio entropy on one large complete fibre while
+avoiding bounded-rank small feature models. An explicit
+two-cap construction with diffuse complete values can
+also keep primitive sums and a prescribed repaired-style
+target multiplicity from zero through the half-budget
+scale, while almost every primitive target coordinate
+has unbounded normalized radical. A fixed-target
+construction has the same behavior for all three
+normalized triangle sides. The omitted summand radical
+exceeds every fixed budget power on almost all its rows.
+[Minimum triangle-entropy model](ABC_CRITICAL_TRIANGLE_ENTROPY_MODEL.md)
+· [Two-cap primitive difference obstruction](ABC_DIFFUSE_TWO_CAP_PRIMITIVE_SECANT_OBSTRUCTION.md)
+
+## Numerical widths and additive relations among reciprocal coordinates
+
+A complete-letter fibre of positive exponent retains a
+uniform numerical width after fixing any affordable pair
+of full divisors on its moving letters. Their product
+is a single CRT modulus and the length to compare it with
+is the smaller of the two moving heights. In particular
+the sum of their escaped numerical weights has a uniform
+gap below that height. The same gap is available after
+buying a finite upper quantile, with a separate rounding
+rule for the nonatomic mass. This applies to every fixed
+positive complete-target multiplicity stratum, including
+least-repaired primitive quotients. A complementary
+three-letter test uses the actual prime at the rounding
+threshold. If a fractional quantile beats the projective
+height threshold, a surviving full-exponent row requires
+one actual prime with simultaneously large raw cost and
+numerical weight. Fragmenting a limiting atom among small
+primes cannot supply this obstruction.
+[Fixed-fibre widths and actual-prime quantiles](ABC_FIXED_FIBRE_VALUATION_WIDTH.md)
+
+On any full critical triangle relation in a fixed fibre
+of positive exponent \(r\), an opposite-vertex pin gives
+the two minimum dictionaries required to test the remaining
+side. Repeating this separately for each side bounds its
+finite spectrum in terms of its height and the two other
+escaped moments. On the original side, a one-letter
+variable-mesh estimate makes a polynomially short
+relative interval or a positive-height full unit modulus
+cost a fixed share of the exponent. At minimum nonatomic
+mass it forces full physical triangle heights and excludes
+positive high-order weight in the exact scaling gcd.
+[Two-dictionary packing and the original affine images](ABC_TWO_MINIMUM_DICTIONARIES_TAIL_PACKING.md)
+
+On a fixed chain of critical minimum-dictionary transfers,
+a terminal complete value has distinct affine lifts into
+every prior level. If \(M_2,M_3\) record the full high tails
+on the two unpinned parent legs, then
+\(\operatorname{lcm}(M_2,M_3)\mid G_jG_{j+1}\) for the
+two exact scaling gcds. The rank-one width bound caps the
+product of all the scales uniformly in the fixed chain
+length. These results constrain chains that remain
+available on the retained outputs. The original three
+radical caps still do not force critical triangle
+relations or make them hereditary across every
+refinement.
+[Pinned chains and inherited full moduli](ABC_PINNED_TRIANGLE_CHAINS.md)
+
+The reciprocal coordinate \(1/a+1/b-1/c\) has reduced
+denominator \(abc\). A fixed exact linear relation among
+distinct such coordinates requires every denominator
+prime outside the coefficient and target pool to recur.
+Anisotropic radical pricing charges each prime at its
+first occurrence. It gives a power saving when a positive
+share of the radical occurs at least three times, already
+lies in the fixed pool, or leaves unequal first-occurrence
+costs on the three roles. The argument also counts relations
+of least-repaired coordinates, where the denominator
+becomes \(Z_M(c)abc\) with unchanged prime support. The
+unstratified additive moments have a generic rational
+denominator proof. Their additional abc content is the
+quantitative dependence on radical overlap and on the
+three role costs.
+[Reciprocal coordinates and radical overlap](ABC_THREE_CAP_RATIO_SUMSETS.md)
+· [Bourgain–Dilworth–Ford–Konyagin–Kutzarova, Lemma 5](https://denka.web.illinois.edu/rip_stoc.pdf)
+· [Bloom–Maynard, §1](https://arxiv.org/pdf/2011.13266)
+
+For the projective coordinate \(F(z)=z-1/z+1/(1-z)\),
+a full power \(p^e\) on the last row using that prime
+supplies a homogeneous congruence modulo \(p^{2e}\).
+Fixing the high tails at small radical cost lets these
+congruences determine a primitive row at an intermediate
+step. At every fixed odd order there is a uniform exponent
+loss for exact linear relations with that many distinct
+active rows. At even orders the macroscopic exclusively
+repeated prime packets of surviving tuples form a perfect
+matching. Nontrivial complete-letter Latin trades admit
+a separate \(B/9\) exponent saving at normalized total
+radical cap \(B\), including in the repaired dictionaries. A complete primitive
+additive graph constructed by CRT has precisely those
+reciprocal relations at any fixed order. The construction
+has no small radical budget at the required counting scale.
+The new estimate leaves the problem of deriving a
+quantitative reciprocal compression, abundant odd relations
+among distinct rows, or nonmatching recurrence from the
+joint radical and height constraints.
+[Reciprocal compression and the primitive CRT example](ABC_THREE_CAP_RATIO_SUMSETS.md)
+
+For this route, a sufficient additional estimate is the following
+fixed-order statement. Find an odd \(k\ge3\) and a fixed coefficient
+height bound such that every family within some fixed normalized
+distance of \(1/3\) yields a weighted relation in \(F(a/c)\)
+with at least \(n^{k/6-\delta_k/2}\) solutions on distinct rows.
+The constant \(\delta_k>0\) is the loss furnished by (RS8)
+for that order and height bound. The weights and target may
+be selected from the family after taking its height box,
+and are fixed while counting its solutions. This would
+contradict (RS8) at all sufficiently small fixed \(L\).
+The known dictionary and fixed-fibre constraints do not give
+this lower bound.
+[Exact odd-relation gap](ABC_THREE_CAP_RATIO_SUMSETS.md#near-maximal-relations-pair-the-repeated-prime-supports)
+
+
+The elementary quadratic norm recovery from Erdős #943
+is uniform when both norm parameters are fixed. The
+least-repaired quotient leaves the two parameters mobile
+across the target supports. For example, writing
+\(a=k_a x^2\), \(b=k_b y^2\) with squarefree kernels gives
+\(c^2-k_a k_b(2xy)^2=(a-b)^2\), with varying norm and
+discriminant. The small-fundamental-unit estimate for the
+ordinary Pell equation gives a gain in the symmetric family
+\((n,n+1,2n+1)\) with coefficient loss of order
+\(\lambda^2\), through an exponent saving of order
+\(\lambda^3\). The generalized Pell identity on an
+arbitrary fibre does not put it on that ordinary
+small-unit branch. The counting problem here needs a
+bound for the joint occurrence of the moving records.
+[Erdős #943, uniform elementary norm lemma](ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md#1-a-uniform-elementary-norm-lemma)
+· [Zeng, §§5–6](https://hexagonmath.org/pdf/2611.00611v1)
+· [Diao, Theorem 1.3](https://arxiv.org/pdf/2610.28001v1)
+
+
+## Exact pair recovery and moving reciprocal targets
+
+The even pairing obstruction for exact scalar relations
+in \(F(z)=z-1/z+1/(1-z)\) can be removed on sorted
+primitive rows. A pair satisfying \(F(x)=rF(y)+s\)
+maps to a genus-two cyclic cubic curve with four split
+branch points over \(\mathbb Q(\sqrt{-3})\). The two
+degenerate affine transformations force equality or
+reflection. Outside them, split \(1-\zeta_3\) descent
+bounds the rank in terms of the primes of a
+polynomial-height branch discriminant. Uniform
+Mordell–Lang then makes the last pair cost subpower
+uniformly in the affine coefficients. Expose the pair
+with the largest exclusive prime packet last. At any
+fixed order \(k\ge3\), the normalized exponent for
+distinct active rows improves from \(kB/6\) to
+\(kB/6-B/[3(k-1)]\), with arbitrarily small allowances,
+under total radical cap \(n^B\). This applies directly
+to the least-repaired quotient coordinate, which
+depends only on the primitive ratio. There is also a
+scalar fixed-target version for arbitrary common gcd
+in powerful representations.
+[Genus-two recovery and all-order relations](ABC_PROJECTIVE_RECIPROCAL_GENUS_TWO_RECOVERY.md)
+· [Gao–Ge–Kühne, Theorem 1.1′](https://arxiv.org/pdf/2105.15085v4)
+· [Poonen–Schaefer, Proposition 6.2 and Lemma 12.9](https://math.mit.edu/~poonen/papers/descent.pdf)
+· [Dimitrov–Gao–Habegger, Corollaries 1.3 and 6.1](https://arxiv.org/abs/1904.07268v2)
+
+Joint reciprocal coordinates have an elementary
+two-fraction pair recovery and the same sequential
+saving. They give a sharper fibre count with prescribed
+outside pools. For fixed powerful targets this
+argument can be applied before restricting the common
+gcd: prescribe its divisor class, use the free
+radical caps outside the actual target, and expose
+short primitive quotients separately. The rates also
+hold for the projective three-coordinate version
+unchanged by least repair. Component targets may
+move in intervals when their reduced denominator sizes
+permit bounded reconstruction from spacing.
+[Joint reciprocal pair recovery and fixed powerful targets](ABC_JOINT_RECIPROCAL_PAIR_RECOVERY.md)
+· [Browning–Elsholtz, Theorem 1 and §2](https://www.math.tugraz.at/~elsholtz/WWW/papers/papers33FINAL2013.pdf)
+
+Small target denominator *radical* also has direct
+moving-target bounds. For scalar \(F\) the singleton
+outside prime mass raises the baseline exponent by
+at most \(\mu/6\) at target radical cap \(n^\mu\).
+The odd-order saving persists if this cost is small.
+For two consecutive signed reciprocal powers one
+obtains a loss at every fixed order, globally and
+on a fixed complete letter. At an exclusively shared
+prime, the two powers force the signed complete
+values to agree modulo a higher power. At a last
+prime they recover the signed letter from the ratio
+of the two known prefix sums. Fixing a positive
+compact valuation band on the tracked roles lets the
+argument use either alternative at an intermediate
+row. Six separate role sums extend this result to the
+actual least-repaired letters, even when the least
+multiplier varies. There is a complementary exact
+support estimate using a longer block of consecutive
+powers. A local Vandermonde annihilator bounds the
+full divisor of each active label missed by all the
+output denominators. Under the compact-band condition,
+small denominator radical in that longer block forces
+exact label cancellation.
+[Moving scalar output](ABC_THREE_CAP_RATIO_SUMSETS.md#odd-relations-with-variable-output-denominator)
+· [Consecutive powers and actual minimal repair](ABC_RECIPROCAL_POWERS_VARIABLE_TARGET.md)
+· [Vandermonde support inequality](ABC_RECIPROCAL_VANDERMONDE_SUPPORT.md)
+· [Bloom–Kuperberg, Theorem 3](https://arxiv.org/abs/2312.09021)
+
+The cyclic determinants of a projective pair give
+a second primitive additive triple, with the full
+powers at exclusive cancellation primes surviving
+squared. Eisenstein factorization recovers the
+ordered input pair from the exact determinants at
+subpower cost. A small *radical* of the three
+cofactors, together with two sufficiently full cyclic
+packets, allows the two-full-letter theorem to exclude
+that sector at a fixed exponent loss. The recovery
+pays for the possible common factor of the
+determinants, and short primitive outputs are counted
+separately. The remaining input here is simultaneous
+control of the numerator radical of the projective
+difference and of the cyclic allocation of high
+orders.
+[Cyclic determinant transfer to two full letters](ABC_CYCLIC_PROJECTIVE_PAIR_TRANSFER.md)
+· [Two-full-letter saving from endpoint diffusion](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md#corollary-a-small-budget-saving-with-two-full-letters)
+
+For the exact scalar relation route, one can now ask
+for near-maximal abundance at any fixed order
+\(k\ge3\) on distinct rows in a near-one-third family.
+For example, at normalized budget \(B=1\), a fixed
+polynomial-height weighted relation with
+\(n^{k/6-1/[6(k-1)]}\) distinct-row solutions would
+contradict the new pair bound. For the moving-target
+route the corresponding input is enough tuples with
+small outside radical in the joint reciprocal
+denominators. The graph density and cardinality
+results in hand supply neither lower bound, so the
+uniform saving for the unrestricted triple count
+remains open.
+
+
+## Radical growth of projective sums and forced trade defects
+
+For a fixed tuple of \(k\) capped rows, the private primes of
+the individual denominators survive in a shifted projective
+sum. Recording the output numerator and exposing a numerically
+larger block of the rows lets those private full powers
+determine the product of the unseen denominators by CRT.
+Consequently a numerator cap below
+\(\lfloor(k-1)/2\rfloor/3\) in base \(n\) gives a fixed
+power loss from the full tuple exponent \(k/3\). There is
+also a joint bound for two shifted numerators with fixed
+rational weights and shifts. They and their difference
+give a primitive additive output, while its denominator
+recovers the input tuple at small cost. The two-cheapest-letter
+inequality forces fresh numerator radical mass at least
+\(2k/3-o(1)\) on the pair, in addition to denominator
+radical mass \(k-o(1)\). Taking shifts \(0,-1\) gives
+total output radical mass at least \(5k/3-o(1)\).
+The argument covers the projective coordinate \(F\) and
+the Frey \(j\)-invariant. Its fixed-fibre version uses
+the half-cap price on the moving letters. For an actual
+fixed powerful target it allows arbitrary gcd and the
+cost of excluding the target support from both shifted
+numerators is independent of the order.
+[Projective numerator recovery and output radicals](ABC_PROJECTIVE_SUM_NUMERATOR_RADICALS.md)
+
+One-row fixed-degree norm forms give an associated
+fresh-radical threshold. An affordable full divisor from
+a positive nonatomic original letter places the norm
+value in a projective ray class. A norm field with
+discriminant cap \(X^{gL}\) then requires normalized
+fresh radical at least \((2/3-g/2)_+\) at saturation.
+Pairwise resultants separate distinct forms away from a
+fixed affordable prime pool. In particular the Eisenstein
+norm \(a^2+ab+b^2\) and the cyclic cubic numerator of
+\(F(a/c)\) together require fresh mass \(4/3-o(1)\).
+[Half price for fixed-degree norm radicals](ABC_PROJECTIVE_SUM_NUMERATOR_RADICALS.md#half-price-for-fresh-radicals-of-fixed-degree-norm-forms)
+
+The supersaturated eight-edge trades in actual
+minimum-dictionary graphs do not give scalar reciprocal
+identities. Their signed defect has an explicit
+nonzero sign. Under balanced radical caps the forced
+trades give \(n^{5/6-o(1)}\) distinct denominator
+radicals of mass at least \(4-o(1)\) in base \(n\).
+The privacy of the twelve label radicals follows
+by fixing four independent labels and discounting
+overlap on one complete-letter fibre. Separate
+dense primitive graphs at the endpoint height scale
+have unique six-term \(F\)-sums and hence show the
+limits of using small label sumsets alone.
+[Forced trade defects and the endpoint-height example](ABC_PROJECTIVE_RECIPROCAL_GRAPH_OBSTRUCTION.md)
+
+Two consecutive positive powers of the scalar projective
+coordinate yield a saving linear in the number of distinct
+active rows, at every fixed order. The exponent can be
+chosen before the order because two-row cancellation
+bounds the numerical weight carried by any one eligible
+pair. In a random exposure order, a fixed fraction of the
+rows have enough earlier full powers to reconstruct their
+coordinate and still have a positive later radical charge
+to remove. Both output denominators may move within a
+small outside-radical cap. The coordinate is unchanged
+by least repair, and the fixed-powerful-target version
+allows arbitrary gcd.
+[Consecutive scalar powers and random exposure](ABC_SCALAR_RECIPROCAL_POWER_AMPLIFICATION.md)
+· [Bloom–Kuperberg, Theorem 3](https://arxiv.org/abs/2312.09021)
+
+The split genus-two pair recovery also applies to
+fractional-linear relations. A liftable branch-preserving
+exception requires an exact cube determinant for a
+primitive integer matrix. If such a map relates two
+rows with large common radical, all of that common
+support lies in the fixed pool of its bottom-left entry
+and determinant. A small map dictionary then permits
+effective radical pricing. Near-quadratic reciprocal
+sumset and Möbius product expansion hold on the rational
+image of \(F\) at polynomial height, complementing
+field-level incidence bounds. A sufficiently small
+dictionary of fractional-linear maps for the
+unlabelled balanced families has not been obtained.
+[Fractional-linear recovery and arithmetic expansion](ABC_FRACTIONAL_LINEAR_PROJECTIVE_RECOVERY.md)
+· [Zhi, Theorem 1.1](https://arxiv.org/html/2611.26661v1#S1)
+
+These results make the low-denominator incidence
+obligation more restrictive. The forced short trades
+carry large output radical, while low-radical actual
+sums are sparse in the full family. A general
+improvement requires a mechanism producing some
+different arithmetic configuration with retained count
+exponent, or an upper bound that uses the proven fresh
+radical growth to directly constrain the original
+exceptional-set cardinality. The currently available
+anatomic and generalized Fermat estimates supply the
+one-row and fixed-fibre inputs for these transfers.
+[Bernert–Browning–Lichtman–Teräväinen, Proposition 2.1](https://arxiv.org/html/2410.12234v2)
+· [Browning–Verzobio, Theorem 1.2](https://arxiv.org/html/2608.24512v1#S1)
+
+
+
+## Adaptive valuation grids and centered norm constraints
+
+The fine-grid count extends to adaptive choices of \(m\) exact
+orders across the three primitive letters. If every selected
+order is at least \(K\) and the joint radical of primes served
+by none of their own letter’s orders is at most \(X^f\), the
+exponent is at most \(f+C_m K^{-m^2/(m^2-1)}+\varepsilon\).
+The number of orders can increase sufficiently slowly as the
+budget decreases. The proof freezes very large powered values
+and releases the remaining bounded array of disjoint roots
+in their actual ternary relation. The choices of \(m\) and
+\(K\) precede the height limit. A prime-index valuation law
+gives the same diffuse weak limit as a fine exact grid. It
+evades every sublinear dictionary of exact divisibility orders.
+Brun–Titchmarsh and rank-two compression show that it also
+evades signed grids of bounded rank and coefficient-width
+product \(o(1/\lambda)\). The law can be realized on coprime
+integer letters. Its realization in an additive endpoint
+family is still an open condition.
+[Adaptive grids and the prime-index obstruction](ABC_FINE_VALUATION_DIVISIBILITY.md#a-bounded-number-of-adaptive-valuation-grids)
+· [Prime degree indices in sparse signed grids](ABC_FINE_VALUATION_DIVISIBILITY.md#prime-degree-indices-also-evade-sparse-signed-grids)
+
+For \(Q=a^2+ab+b^2\), any exponent-saturating subfamily of
+the original count has \(\operatorname{rad}(Q)\) of normalized
+mass at least \(2/3-o(1)\). More precisely, if the original
+cap is \(c^\lambda\) and \(\operatorname{rad}(Q)\le c^{B_Q\lambda}\),
+the limiting count coefficient is at most
+\[
+ \min\!\left(\frac13,B_Q,\max\!\left(\frac14,\frac{B_Q}2\right)\right).
+\]
+The proof splits according to whether any original linear
+form supplies a cheap full divisor of positive numerical
+height. The Eisenstein norm receives a half price in the
+projective ray class in the first case. In the other case
+finitely many exact valuation coordinates carry the full
+heights, all three forms are tall, and bounded-root release
+gives the \(1/4\) coefficient. A joint cap on the radicals
+of \(abc\), its centered reciprocal companion, and \(Q\)
+gives coefficient \(1/8\). The companion also gives a
+six-branch cyclic twist. Its defect for every fixed prime
+order \(\ell\) yields a height-free support-only count
+\(O_{\ell,\varepsilon}(Y^{1+\varepsilon})\) when the joint
+\(\ell\)-defect radical is at most \(Y\).
+[Centered reciprocal companion and norm counts](ABC_CENTERED_RECIPROCAL_NORM_COUNTS.md)
+
+## Polynomial relations on actual least-repaired heights
+
+Write \(H(c)=W(c)\operatorname{rad}(c)^M\) with
+\(M=\lceil K/L\rceil\). The support of the valuation
+tail \(W(c)\) costs at most \(1/K\) in base \(n=X^L\).
+In a polynomial relation on \(k\) actual repaired heights,
+split the radical roots by exact prime membership across
+the \(k\) slots. A packet whose membership vector has
+the same dot product with every monomial exponent vector
+only dilates the height tuple. Every other packet is
+pairwise coprime to the others and has exponent spread
+at least \(M\), so coefficient-uniform nondegenerate power
+release gives \(n^{k/K+\eta}\) records up to a height
+subpower. If the invisible membership vectors span
+rank \(r\), then \(r\) height coordinates fix a tuple
+within each record. On primitive rows the corresponding
+count is \(T^r F^{k-r} n^{k/K+\eta}\), where \(T\) is the
+family size and \(F\) is its largest repaired-height fibre,
+with the height-subpower allowance understood.
+This yields a fixed loss from the full tuple exponent
+across the balanced endpoint for every fixed relation
+with \(r<k\), provided \(K\) is large enough.
+
+For homogeneous linear relations the invisible span has
+rank one. If \(D\) is the number of distinct repaired heights,
+off-diagonal equal \(h\)-sums have count at most
+\(D^{h-1}n^{2h/K+\eta}\) up to a height-subpower allowance.
+The resulting \(h\)-fold sumset has asymptotically the
+largest size allowed by permutation symmetry when
+\(D\ge n^u\) and \(K\) is sufficiently large in terms
+of the fixed \(h,u\). With a nonzero inhomogeneous
+output there are no invisible packets. In particular,
+for fixed weights and pool, the number of pairs with
+nonzero weighted difference of outside radical at
+most \(n^b\) is at most \(n^{b+2/K+\eta}\), again
+with the subpower allowance. These statements use
+the unique least repair. Primitive multiplicity is
+separate and is controlled by the fixed-letter bound.
+[Polynomial relations on least-repaired heights](ABC_REPAIRED_HEIGHT_POLYNOMIAL_RELATIONS.md)
+
+A two-stage Pell and Thue transfer gives a different use
+of actual repaired differences. A nonzero weighted target
+difference, or one nonzero nonlinear factor of it,
+recovers the two repaired targets. Recording the reduced
+left ratio and the right power-class defect then recovers
+the original pair of primitive rows. The common factor
+of the right summands divides the actual recovered
+difference, so no unrestricted common multiplier enters.
+A joint outside radical cap \(A\) on the record yields
+\(O(A Y^\varepsilon)\) pairs with repaired heights at most
+\(Y\). In the small-budget formulation a record of
+normalized mass \(s\), selected from a pool dictionary
+of exponent \(\rho\), gives repaired exponent at most
+\((s+\rho+2/K)/(M(1/3-\xi))+\varepsilon\).
+It is strictly below \(1/M\) if \(s+\rho+2/K<1/3-\xi\).
+Generic disjoint pairs can already pay too much on the
+reduced left ratio, before counting the target datum.
+Thus a use in the unrestricted count requires an
+extraction of sufficiently many genuinely correlated
+primitive rows with inexpensive coefficients and
+difference records.
+[Least-repaired weighted target differences](ABC_REPAIRED_WEIGHTED_TARGET_DIFFERENCES.md)
+· [Mixed-power kernel-GCD lifting](ERDOS_943_MIXED_POWER_KERNEL_GCD_WEIGHTS.md#2-an-exact-fixed-level-lifting-problem)
+
+A three-role arithmetic construction shows why it matters to
+retain each unrecorded cofactor’s radical. It gives a primitive
+matching at exponent \(1/3\) with diffuse exact valuation slots
+on all three roles. Every union of slots attains the expected
+record entropy, including affordable records of numerical
+weight greater than one. The full marked numerical weight can
+approach two. One letter has its actual balanced radical cap.
+Both other letters have large unrecorded radicals, carried
+entirely by bounded valuations, so they disappear in every
+compact positive scaled-degree test. The residual radical of
+each of the three complete letters is essential to the sought
+incidence inequality.
+[Three-role exact divisor record obstruction](ABC_THREE_ROLE_DIVISOR_RECORD_OBSTRUCTION.md)
+
+## Independent repair and the additive graph
+
+Separately repair each original letter and retain the fact
+that the three resulting prime supports in a row are disjoint.
+A prime membership pattern may therefore select at most
+one coordinate of each row. For a polynomial relation on
+observables built from the repaired values, only these
+patterns can contribute to its invisible valuation space.
+An observable that uses two distinct repaired letters in
+one row already fixes both original supports and recovers
+the row at subpower cost. This replaces the fixed-target
+multiplicity charge in the corresponding relation bound.
+Every prescribed bounded-degree projective curve meets
+the independent-repair image in at most \(n^{3/K+\eta}\)
+primitive rows up to a height-subpower factor. Collinear
+triples of distinct repaired points cost at most
+\(Tn^{9/K+\eta}\) in a family of \(T\) original rows.
+A moving rational sum can also be counted using only its
+numerator when every negative local exponent minimum is
+unique. After recording small shared support, this gives
+fresh numerator radical growth for sums of reciprocal
+repaired products \(1/H_M(abc)\) throughout the balanced
+endpoint.
+[Prime membership and projective incidence](ABC_REPAIRED_PRIMITIVE_PROJECTIVE_INCIDENCE.md)
+
+For degree \(d\) interpolation, take a minimally dependent
+tuple of \(j\le\binom{d+2}{2}\) repaired evaluation vectors
+with distinct two-coordinate ratios. Keep all maximal
+minors and split each into its minimal vanishing subsums.
+A private prime packet invisible to all these subsums
+could vary one coordinate while preserving dependence.
+That would force every degree-\(d\) form through the
+other points to contain a particular coordinate line.
+Replacing that factor produces a form that still passes
+through those points and does not contain the line.
+This contradiction accounts for every private packet.
+After paying \(\rho\) for shared radical mass, the resulting
+tuple count is \(n^{\rho+3j/K+\eta}\) up to height subpowers.
+The same argument releases packets meeting several rows
+when the remaining level of the linear system has enough
+dimensions. A conic of six actual separately repaired
+primitive rows exhibits an invisible mixed-column packet
+outside this range. Screening larger overlap gives a
+fixed saving on all fixed-order repaired interpolation
+dependencies at the original one-third tuple scale.
+[Simultaneous power release for repaired interpolation](ABC_REPAIRED_VERONESE_DEPENDENCIES.md)
+
+The independent-repair modulus method also treats transforms
+\(\mu_M(T)^j T^k\) with bounded \(j\ge1,k\ge0\).
+An affordable prime packet of one original letter becomes
+a very tall modulus after repair. The ratio of the other
+two transforms is an exact high power times a wider
+cofactor, whose numerical height stays bounded in the
+original scale. This proves a strict gap across all
+profiles if a small dictionary of coefficients gives
+an actual ternary relation of these transforms. Canonical
+inverse-repair weights do not supply the dictionary:
+even modulo simultaneous scaling and coordinatewise
+rational \(M\)-th powers, they recover the original
+prime supports outside the high tails and hence have
+at least \(n^{1/3-3/K-o(1)}\) classes at saturation.
+At the minimum complete-dictionary scale, the forced
+eight-edge trade typically has a nonzero repair defect.
+Its canonical correction across four targets also has
+near-maximal coefficient-class count.
+[Moduli and trade defects for independent repairs](ABC_INDEPENDENT_REPAIR_RELATIONS.md)
+
+For any fixed positive primitive additive pattern, a
+universal sparse identity in the repairs and the original
+labels must split into groups carrying the same repair
+monomial, when the order \(M\) is large relative to the
+number of terms and coefficient degrees. To see this,
+construct a primitive affine pencil on which the letters
+are squarefree outside a fixed pool. Each repair becomes
+a constant times a high power of a distinct linear form.
+The function-field unit bound then distinguishes the
+high-power profiles in a minimal vanishing subsum.
+The same pencil prevents a small coefficient dictionary
+from extracting such a nondegenerate relation on a
+full-exponent subset using the additive equations alone.
+
+The need to retain the third radical also holds for
+actual graphs with two genuine diffuse radical caps.
+A dense Cartesian projection on those two letters has
+two repaired-height dictionaries with nearly diagonal
+fixed-order energies. It admits a matching of exponent
+\(1/3\) with all three complete-label dictionaries at
+the critical size. The third letter has outside radical
+mass approaching \(2/3\) in base \(n\). This realizes
+the ceiling of cardinality-only entropy and product
+convolution bounds on primitive rows.
+[Sparse universal repair identities](ABC_SPARSE_REPAIR_GRAPH_IDENTITIES.md)
+· [Two complete caps and the third radical](ABC_TWO_CAP_REPAIRED_ADDITIVE_OBSTRUCTION.md)
+
+## Path congruences and original divisor fibres
+
+Target divisor records overlap across a labelled additive graph.
+At a given prime and depth, the congruences identify the signed
+summands in each connected component. The exact projected modulus
+for a new vertex is the least common multiple of its path moduli
+to already specified vertices. The corresponding lattice index is
+the product of the prime powers supplied by maximum spanning forests,
+one per prime. This counts fixed overlapping records at the cost of
+their union radical and allows several paths to reconstruct a vertex
+even when no common-neighbor comparison can do so.
+[Path projections and affordable record counts (GL1–GL4)](ABC_GRAPH_PATH_DIVISOR_LOCKS.md)
+
+The same components yield a global inequality on an actual
+three-letter graph. Put \(n=X^\lambda\), select prime-depth
+pairs \(\mathcal J\) with \(p\le n^\beta\) outside the fixed divisor
+primes, and write \(\mathcal W_{\mathcal J}(t)\) for the sum of
+\(\log p\) over selected \(p^j\mid t\). Write \(D_{\mathcal J}\)
+for the sum of \(\mathcal W_{\mathcal J}\) over distinct
+unordered cofactor pairs on each of the two summand sides.
+For \(h>2\) and targets of polynomial height,
+\[
+ (1-2/h)\sum_{(i,j)\in E}\mathcal W_{\mathcal J}(C_{ij})
+ \le D_{\mathcal J}
+       +O\!\left(h(N_A+N_B)n^\beta\log X\right).
+\]
+Components whose two sides differ in size by a factor of
+at least \(n^\delta\ge2\) contribute at most
+\(4n^{-\delta}D_{\mathcal J}\) to the target sum.
+In minimum complete dictionaries, where
+\(N_A,N_B=n^{1/6+o(1)}\) and \(|E|=n^{1/3-o(1)}\),
+the error and imbalanced component contributions are
+power smaller than \(|E|\log X\) for \(\beta<1/6\)
+and \(h=n^\theta\) with \(0<\theta<1/6-\beta\).
+The general error is power smaller wherever the edge
+exponent exceeds the larger summand dictionary exponent
+by more than \(\beta+\theta\).
+
+In any such sector with a lower bound
+\(\sum_E\mathcal W_{\mathcal J}(C_{ij})\ge
+\eta|E|\log X\) for fixed \(\eta>0\), a uniform estimate
+\(D_{\mathcal J}=O(n^{-\sigma}|E|\log X)\) for some
+\(\sigma>0\) would give a contradiction. Here the
+prime-depth tests and the numerical lower bound must
+be established for the actual third letter. For a
+uniform count one must supply a fixed margin in the
+edge and dictionary exponents, and impose the estimate
+for all sufficiently small fixed \(\lambda\), with
+\(X\) tending to infinity first. Large balanced components
+can still occupy a small fraction of both dictionaries,
+and the upper bound on their summed difference moment is
+open. This criterion applies to the specified degree
+and dictionary ranges.
+[Prime-depth difference inequality (GL5–GL7)](ABC_GRAPH_PATH_DIVISOR_LOCKS.md#a-difference-moment-inequality-for-the-actual-edge-layers)
+
+Inside a fixed two-divisor fibre, the target projection
+preserves the entropy and collision probability of sampled
+sums to exponentially small error up to a fixed power
+below the square of the numerical lock margin. The square
+scale is sharp for primitive rows with unrestricted radicals.
+A separate projective packing argument recovers a tuple
+from a normalized target template if the residual common
+target content fits below the lock margin. Together with
+full-support peeling, this gives a count priced by the
+relative shape and the target-only valuation defect, at
+arbitrary relative indices and with no cost for summand
+defects. The needed inexpensive shapes and target defects
+still require an extraction theorem.
+[Weighted projection and target-only templates (PE1–PE2)](ABC_AFFORDABLE_FIBRE_PROJECTION_ENTROPY.md)
+
+A polynomial-height pool capturing the numerical parts of
+the two summands also controls a large common divisor of two
+targets. The elementary count against a fixed divisor
+\(M\mid c\), at outside-pool numerical height at most
+\(\tau\log X\) on \(a/b\), is
+\(O_\varepsilon(X^\varepsilon(1+X^\tau/M))\).
+The anchored form permits a different prescribed pool at
+each anchor. At sufficiently low outside height, the
+quantitative Subspace Theorem additionally covers those
+pairs by \(X^{o(1)}\) plane curves of uniformly bounded
+degree in the original ratios. A Cartesian grid gives an
+explicit counterexample to the polynomial dependence on
+logarithmic coefficient height in the stated moving-coefficient
+bounds of Noubissie v1. The fixed-shift result uses Evertse's
+theorem directly.
+[Almost-unit common numerator gcd bounds (AP1–AP5)](ABC_ALMOST_UNIT_COMMON_NUMERATOR_GCD.md)
+
+With full divisors on all three roles, an extra projective
+congruence of cyclic index \(J\) gives a split cubic with
+explicit pair determinants and discriminant \((FGHJ^3)^2\).
+The three residual letters are exactly the three linear
+factors of a split order's index form. Coordinate primitivity,
+the exact span of the original rows, and the conductor of
+the split cubic order are explicit. An example at actual
+height realizes a number of congruence classes of order \(J\)
+while \(\operatorname{rad}(J)\) stays fixed and the first
+letter satisfies its cap. It has large unlocked radicals
+on the other two letters. The remaining occupancy problem
+keeps the separate caps on all three factors of the index
+form.
+[Split cubic locks and index forms (SL1–SL6)](ABC_SPLIT_CUBIC_LOCK_LATTICES.md)
+
+
+## Deep residue blocks at marked compact primes
+
+In a near-minimum complete-dictionary graph, mark a
+target prime \(p\in[n^\beta,n^{\beta+\gamma}]\), where
+\(n=X^L\), \(0<\beta\le1/6\) is fixed, and a power \(P_p\)
+of that prime dividing the target has numerical height
+at least \(X^w\) for fixed \(w>0\).
+Give each prime its empirical price from the distinct
+complete target values. The effective radical count
+uses all three original caps to rule out target
+occupancy exceeding \(n^{1/6-\beta}\) by a fixed
+power. In the two summand dictionaries, an oversized
+residue class would contribute disproportionately to
+the pair-collision budget, since two distinct values
+can agree at only \(O_w(1)\) of these deep moduli.
+Small or sparse blocks also lose a power by direct
+edge counts.
+
+With arbitrarily small fixed exponent tolerances,
+almost all marked edges of a near-full graph have
+three actual block dictionaries of size
+\(n^{1/6-\beta+O(\eta)}\) and block edge count at
+least \(n^{1/3-2\beta-3\eta}\). There are
+\(n^{\beta-O(\eta)}\) active primes. Each prime occurs on at least
+\(n^{1/6-7\eta}\) values in each summand dictionary, in at most
+\(n^{\beta+\kappa+\eta}\) unit classes modulo \(P_p\).
+Also, at almost every retained edge both summand
+endpoints are incident to marked constraints with
+modulus product at least \(X^{n^{\beta-2\eta}}\).
+This rules out a vertex-wise construction with
+polynomial-size products of its incident moduli.
+The size of the product alone does not bound the
+least representative of an actual residue vector.
+[Deep residue inverse and endpoint products (RB1–RB3)](ABC_DEEP_RESIDUE_BLOCK_INVERSE.md)
+
+A fixed number of such moduli can now be chosen
+simultaneously on a large subset of either summand
+dictionary. If that summand has a representation
+\(A=\rho t^d\), with \(t\) of rational height at most
+\(X^u\) and \(\rho\) from a dictionary of exponent
+\(\sigma\), this gives a strict saving whenever
+\(kw>2u\) and \(\sigma+k\beta<1/6\) for a fixed
+integer \(k\). The height condition is \(kw>u\)
+for integer \(t\). One may choose \(d\) adaptively
+from a finite list at each fixed budget. The same
+conclusion holds for a prescribed list of nonconstant
+rational maps after removing the primes of the fibre
+discriminants. A direct full-modulus argument also treats bounded exact
+multi-grids on one summand and arbitrary dictionary
+sizes in the opposite role. The count exponent
+there is at most \(b+\sigma+\beta+\gamma\), up to
+arbitrarily small allowances, when the opposite
+dictionary has exponent \(b\) and the chosen
+coefficients are units at their marks. No grid is
+needed on the other two roles.
+[Adaptive power representations and multi-grids (RB4–RB5)](ABC_DEEP_RESIDUE_BLOCK_INVERSE.md#a-uniform-saving-from-a-power-class-on-one-summand)
+
+The three orientations can also share one numerical
+difference budget when each prime is assigned to
+one original role. This bounds the constant density
+of a near-complete triangle graph with almost all
+numerical weight in the tested layers. For fixed
+mixed-role patterns, the local ranks at each prime
+depth give a joint divisor of all difference minors.
+A divisor exceeding the box bound forces an affine
+rank drop. A separate application of the short-term abc theorem counts
+summand values with short unit residue representatives
+of controlled radical, when the modulus and its
+cofactor have controlled radicals as well.
+Block progressions give actual primitive examples with
+a genuine target cap, diffuse tested depth packets,
+and abundant difference moments. The same construction
+admits generic large residue representatives and
+violates the summand caps. Thus a general difference
+moment bound needs arithmetic information beyond the
+target cap.
+[Three-role precision, short residues, and the target-cap example](ABC_CROSS_ROLE_PRECISION_AND_SHORT_RESIDUES.md)
+
+An additive polynomial-evaluation model realizes the
+marked block occupancies and bounded pair agreement
+at numerical height \(X\), with primitive rows. Its
+marks are formal. A direct interpolation argument
+rules out realizing nearly all of them by actual
+prime powers using a polynomial digit encoding of
+degree small compared with the digit ranges. Exact
+additivity forces affine labels on the full template
+when targets are indexed by integer digit sums.
+These obstructions use compatibility across layers
+beyond separate pairwise numerical capacities.
+[Marked incidence model and polynomial lift obstruction](ABC_DEEP_TARGET_LAYER_INCIDENCE_OBSTRUCTION.md)
+
+In a split cubic lock lattice, the actual indices
+on projectively related original rows have a joint
+power-class count. If the product of the index
+forms has enough branches after cancellation, one
+fixed projective correspondence with outside defect
+radical at most \(B\) gives \(O(BX^\varepsilon)\)
+row tuples. For parity on two rows, this holds
+with zero or one common branch. Two common branches
+allow a genus-zero family of \(\gg X\) primitive
+pairs in one parity class. The cubic power class
+retains the necessary branches for every two-row
+projective map. A fixed-target shift gives a
+genus-one application, and a separate uniform Pell
+count uses a fixed first row and the same joint
+parity cap. These statements require an actual
+correspondence and a bound on the joint defect.
+[Joint index classes and fixed-target shifts](ABC_SPLIT_INDEX_POWER_CORRESPONDENCES.md)
+
+The residue inverse turns the marked sector into a
+counting problem for joint high lifts. A sufficient
+estimate is a uniform power saving in the number of
+band primes for which two small-radical dictionaries
+with the simultaneous occupancies above can be matched
+into the required capped target blocks. The block proof
+uses positive fixed \(\beta,w\) and near-minimum complete
+dictionary sizes. It yields no fixed exponent margin as
+\(\beta\to0\), and it leaves the broad-profile endpoint
+obligation open.
+
+## Composite packets and projective counting
+
+A composite packet of full original target powers can be
+marked even when every prime has subpower size. Use one
+packet per complete target and bin by the number of targets
+assigned to the packet. If that number has exponent
+\(1/6-s\), the packet dictionary has exponent \(s\).
+The fixed-letter estimate gives \(s\ge\beta/2\) up to the
+fixed tolerances, where \(\beta\) is the packet radical
+exponent. The raw support count gives \(s\le\beta+\gamma\).
+Same-side pair divisibility and the target cap then give
+actual residue blocks at exponent \(1/6-s\) on each role.
+A fixed list of \(k\) almost disjoint packets occurs at many
+distinct original summand values. This yields a strict count
+when \(ks<1/6\) and their combined numerical weight exceeds
+one, with fixed margins for the small removed overlaps.
+A short root or algebraic feature allows a smaller numerical
+threshold. The residue reconstruction works through
+finite algebraic correspondences, including nonrational
+ones, by removing the primes at which the selected
+feature is a multiple root.
+[Composite packet inverse and simultaneous lists](ABC_AGGREGATE_DEEP_PACKET_INVERSE.md)
+· [Algebraic features in the packet inverse](ABC_DEEP_PACKET_ALGEBRAIC_LIFTS.md)
+
+The empirical packet price can be as large as the raw
+radical price under one-letter hypotheses. A polynomial
+evaluation code gives actual integer targets in dyadic
+height shells with the required radical cap and diffuse
+compact-order valuations on subpower primes. Fixing the
+primes of a packet fixes enough code coordinates to
+force price at least \(\beta\), even for adaptive marks.
+The same dictionary avoids every prescribed polynomial-height
+prime pool at fixed positive radical mass with a power
+saving. A compulsory price discount therefore needs
+information from the actual additive graph or its other
+radical caps.
+[One-letter obstruction to packet compression (AP5)](ABC_AGGREGATE_DEEP_PACKET_INVERSE.md#a-one-letter-obstruction-to-compulsory-packet-compression)
+
+An absolute residue on a primitive input of a norm form
+gives an ordinary Arakelov ray condition at its inactive
+primes. A list of \(R\) allowed residues contributes
+\(R^{1/2}\) to the count. This covers quadratic norm forms
+with a deep target divisor, and variable fields of bounded
+degree with bounded discriminant exponent in base \(n\).
+Larger fixed moments absorb the class-number exponent
+in the small-budget allowance. For a separable reducible
+target form, one can fix any nonlinear irreducible factor.
+At a prime where the packet divides another factor, every
+prime above it in the chosen field is inactive. The modulus
+therefore retains positive numerical weight even if the
+packet divides linear factors only.
+
+Together with the composite blocks, this bounds the
+coefficient by \(1/6+f+(3s-\beta)/2\) up to fixed
+allowances when the two summands are weighted \(q\)-th
+powers with combined defect radical exponent \(f\).
+The same ordinary norm count transfers to minimally
+repaired primitive quotients with prescribed target-divisor
+and absolute-residue dictionaries. It still requires
+a bounded-degree norm representation or a related
+affordable carrier.
+[Absolute residues, composite norm packets, and primitive repair (AT1–AT7)](ABC_ABSOLUTE_TARGET_RAY_MOMENTS.md)
+
+
+An independent obstruction concerns actual prime-power
+realizations of the evaluation-layer model. Even with
+arbitrary bounded-height integer labels and a fixed small
+fraction of missing incidences, those prescribed layers
+cannot have the stated moduli if every \(k\) of them have
+least common multiple greater than \(2^kX\). Translations
+along the level kernels make a \(k\)-fold mixed difference
+divisible by the combined modulus, so it vanishes over the
+integers. Stability of the difference identity on the cyclic
+digit then forces a large constant class, contradicting
+injectivity. The argument controls near-complete realizations
+of this specific template. It does not rule out exponent-dense
+subgraphs of vanishing relative density.
+[Robust CRT obstruction for evaluation layers](ABC_EVALUATION_LAYER_CRT_OBSTRUCTION.md)
+
+A separate count applies at arbitrary complete dictionary
+sizes and throughout the balanced profile range. If an
+image \(\Phi([a:c])\) of the original primitive ratio has a
+projective description in boundedly many integer features
+with small affine minors, that family saves below \(1/3\).
+A full packet on one of \(a,b,c\) forces the image into its
+corresponding branch class. This gives an exact affine
+rank drop in the feature space, even at a pole and with
+shared content in the two presenting coordinates. The
+modulus comes from a diffuse band and need not contain any
+individual prime of positive normalized size. The result
+includes rational functions of boundedly many short
+integer parameters, and it gives a strict count for
+minimally repaired primitive quotients with such a feature
+model on the original ratio. It does not extract a model
+from the radical assumptions.
+[Projective feature count and primitive repair (PF1–PF6)](ABC_PROJECTIVE_SMALL_FEATURES.md)
+
+## Simultaneous residues and primitive quotient counts
+
+Assign one full divisor to each original complete letter.
+When the sum \(d\) of the three empirical prices is below
+\(1/6\) by a fixed margin, simultaneous marking retains
+near-full packet strata. Fixing the three packets \(F,G,M\)
+and their three absolute residues leaves an exact affine
+equation on intervals of width \(O(1+X/(FGM))\), with the
+three separate outside radical caps. Each complete dictionary
+in a surviving cell has exponent \(1/6-d\) up to tolerances.
+For a fixed packet tuple, the occupied residue triples fill a
+power-near-full part of the Cartesian product of the three
+residue alphabets. They contain many complete boxes of any
+fixed size when the three prices are positive. Each box gives
+actual rows in every cell, with the overlaps specified at the
+level of complete-letter residue classes.
+A CRT construction realizes arbitrary fixed boxes with shared
+primitive values, exact full divisors and the numerical
+height when \(FGM\operatorname{rad}(FGM)\le X^{1-	heta}\)
+for fixed \(	heta>0\). The three outside radical caps are
+the missing ingredient in that construction.
+[Simultaneous composite packet blocks (SB1–SB3)](ABC_SIMULTANEOUS_COMPOSITE_PACKET_BLOCKS.md)
+· [Residue pair projections and boxes (SC1–SC3)](ABC_SIMULTANEOUS_RESIDUE_PRODUCTS.md)
+
+At the minimum nonatomic mass, a purely diffuse packet has
+empirical price equal to its radical exponent \(\beta\).
+After pinning one opposite complete value and the packet,
+the residual target in that original fixed fibre must retain
+nonatomic mass at least \(1/6-s\). More generally the
+price is at least \(D-\alpha-c_T+b\), where \(D\) is the
+edge exponent, \(\alpha\) the opposite dictionary exponent,
+\(c_T\) the original target's nonatomic mass, and \(b\)
+the nonatomic mass removed by the packet. In the minimum
+sector the numerical weight of a purely diffuse packet is
+at most \(6s\). This precludes a direct height saving from
+substituting lower empirical prices for radical prices there.
+[Nonatomic packet price rigidity (RP1–RP2)](ABC_NONATOMIC_PACKET_PRICE_RIGIDITY.md)
+
+For a generalized Fermat carrier, two absolute residue
+lists can shorten both root progressions. A good full
+part of a divisor of the third letter then improves the
+surface cover before counting the resulting curves.
+With orders \((16,16,2)\), index widths at most
+\(n^{1/10+o(1)}\), a retained target divisor of fixed positive
+numerical weight, and record cost at most \(1/4\), the
+resulting small-budget coefficient is \(3/10\). Under the
+stated lower target radical cap this transfers to a strict
+count of minimally repaired primitive quotients. The proof
+requires the two short root progressions in its input.
+[Two shortened root progressions and a third divisor (DF1)](ABC_OPPOSITE_ROOT_LIST_DETERMINANT.md)
+
+A separate fixed-target count treats every order \(q\ge2\).
+Prescribing the \(q\)-power class of the other two letters'
+product or ratio leaves only \(O_\varepsilon(X^\varepsilon)\)
+primitive rows, uniformly in the complete target and order.
+The proof allocates the class support to the original
+coprime inputs, then counts a fixed value of a separable
+binary form; at large orders it counts the short roots
+directly. The conclusion also bounds pairs with a cheap
+defect off an anchor support, including adaptively chosen
+orders, and applies to odds unchanged by common repair.
+The canonical quadratic norm lift also records twice the
+target packet depth at inactive split primes. An explicit
+family over distinct quadratic fields shows that a small
+field dictionary cannot be inferred from the packet and
+the outside norm radical alone. Both original summand
+caps would have to enter such an inference.
+[Canonical quadratic packet lift and uniform class separation (CQ1–CQ5)](ABC_CANONICAL_QUADRATIC_PACKET_FIELDS.md)
+
+The determinant step uses Browning–Verzobio's affine surface
+theorem with a side condition and their generalized Fermat
+curve geometry. The additional count here runs the curve
+projection in both shortened progression indices. The fixed
+degree norm step in the fixed-target count is the standard
+weighted binary-form argument. Its application here is
+uniform in the power order and gives an outside-defect
+pair bound in the actual packets. For comparison, the
+recent \(0.584\) whole-value modulus certificate is a fixed
+exponent uniform over \(0<\lambda\le1\); it supplies no
+small-budget coefficient at this scale.
+[Browning–Verzobio, affine surfaces with a side condition](https://arxiv.org/html/2408.11453v2#S1)
+· [Browning–Verzobio, sums of three powerful numbers](https://arxiv.org/html/2608.24512v1#S1)
+· [Zeng, fixed-degree norm argument and complete modulus certificate](https://hexagonmath.org/pdf/2611.00621v1)
+
+## Shared-value arrays and arithmetic obstructions
+
+A surviving simultaneous packet tuple forces actual difference
+arrays of every fixed size \(m\). Each displayed letter depends
+on two of the three indices. All \(m^3\) rows are original,
+and a single complete value is shared across all rows with the
+same pair of indices. This follows from grouping ordered
+common-target tuples by their exact difference vectors, then
+taking complete bipartite graphs in the grouped lists with
+distinct residues. If \(d\) is the sum of the packet prices and
+\(t=1/6-d\), there are \(n^{md+(3m-1)t-O_m(\eta+\kappa)}\)
+ordered arrays. Conversely the \(m\) disjoint diagonal
+triangles anchor a spanning tree. This bounds the number of
+boxes by \(E^mK^{m-1}\), with \(E\) rows in the tuple and
+\(K\) the maximum pair-class size. Thus a power saving for
+arrays of one fixed size and a power saving for rows are
+equivalent in the marked regime with positive price margins.
+[Sharp shared-value extraction (LB1–LB4)](ABC_SHARED_VALUE_RESIDUE_BOXES.md)
+
+For every prime order, most such boxes give an injective
+valuation map on the full circulation space of dimension
+\(3m^2-3m+1\). The stronger count treats all orders and weights
+at once and forces a positive power of fresh radical in each
+nonzero circulation product. It recovers a missing potential
+from two nonproportional affine forms by a fixed-value binary
+norm count. Enumerating a joint defect support once lets this
+recovery propagate along a forest. More generally, to reduce
+the rank of the valuation map to \(r\), the same support record
+permits recovering any next potential with at least \(r+2\)
+known neighbors. The resulting support cost increases with
+the number of recoverable potentials.
+[Cycle defect count (LB3)](ABC_SHARED_VALUE_RESIDUE_BOXES.md#cycle-power-classes-on-actual-boxes)
+· [Joint defects and rank (BF1–BF2)](ABC_SHARED_BOX_FOREST_POWER_DEFECTS.md)
+
+The one-letter graph count now applies to any order \(q\ge2\)
+chosen separately at each value. Partition by the witness
+order and use the fixed nonzero norm count on shifts within
+each part. At minimum nonatomic mass, one original letter
+with outside defect exponent \(f<1/12\) gives a strict
+saving even when the captured orders are small. Within a
+simultaneous packet tuple, the anisotropic shift count on
+\(A\) saves if \(2f<t+\max(s_G,s_M)\) by a fixed margin.
+The same conclusion holds in the other orientations. Small
+fixed orders may still give a diffuse limiting profile.
+[Arbitrary-order one-letter defect tests (OG6–OG8)](ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md#an-arbitrary-order-defect-on-a-single-letter)
+
+On a fixed complete-letter fibre, a small integer feature
+model for a nonzero integral multiple of a free letter
+forces a power bound through full-divisor rank descent.
+This gives a secant inequality inside packet cells and
+forces primitive direction radical greater than
+\(n^{6t-\sigma}\) for almost all pairs. For two actual
+shared-value arrays with the same residue lists, the \(m\)
+disjoint diagonal cells jointly contribute fresh direction
+radical greater than \(n^{m(6t-\sigma)}\) outside the entire
+first array and a fixed normalized-height pool. In the same
+generic pairs, every spanning tree in the first array
+already pays the full \(md+(3m-1)t\) radical exponent up
+to a margin. These support lower bounds add, and the local
+discriminant inequality then charges both the tree and its
+new primitive directions to any common powerful lift.
+Both arrays retain their three original radical caps.
+Using one seed triangle and then adding one potential at a
+time gives a stronger bound. A known complete difference
+fixes one primitive direction entry at divisor cost.
+The seed contributes \(6t-\sigma\) and each of the \(3m-3\)
+later directions contributes \(4t-\sigma\) in fresh radical
+exponent outside the first array and previous directions.
+The same fixed-fibre bound proves
+uniform sparsity in short progressions of arbitrary step.
+This excludes packet products sufficiently close to the
+complete numerical height. The pooled valuation test also
+bounds the sum of the three packets' numerical weights,
+the escaped weight on two free roles, and their top residual
+nonatomic \(t\)-moment by the smaller of those two heights.
+[Local primitive secants, progression widths and pooled valuation tests](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md)
+
+A ramified base change makes the three principal ideals
+powerful without introducing a common ideal factor. Its
+minimum root discriminant is determined, up to fixed-order
+factors, by the required local ramification indices. For
+one prescribed field the actual fractional ramification
+weights yield the effective radical count, uniformly over
+field degree. In the least-target-repair sector this bounds
+the primitive quotients per field at an exponent tending
+to \(1/(2M)\). For a shared-value box there is also a bound
+over all variable fields at once. The root discriminant
+and the prescribed order bounds control the unweighted
+prime support of the spanning-tree labels. Comparing with
+the forced boxes makes a common field of row-scale
+discriminant power-exceptional when the box is large enough.
+[Optimal ramification and field-cover bounds (RL1–RL8)](ABC_RAMIFIED_IDEAL_LIFT_COST.md)
+
+## Private support and rigid transfers on shared-value boxes
+
+At the shared-value box exponent, every original edge
+between axes \(i,j\) has private radical exponent at
+least \(2(t+\max(s_i,s_j))\) up to a fixed tolerance.
+The counted primes are absent from all other original
+edges. A fixed-anchor fibre also gives a private
+nonatomic mass of at least \(t+\max(s_i,s_j)\).
+The individual bounds can be added across all \(3m^2\)
+edges. On synchronized pairs one can enforce privacy
+across both input arrays. These estimates use a fixed
+complete original letter and all original radical caps.
+[Private prime support on actual boxes (PV1–PV5)](ABC_SHARED_BOX_PRIVATE_PRIME_SUPPORT.md)
+
+Pairs of boxes can retain all residue matches or leave
+some specified indices unmatched. A Latin family of
+\(m^2\) actual cells partitions the \(3m^2\) cross edges.
+For exactly matched residue lists, its primitive directions
+jointly contribute fresh radical exceeding
+\(n^{6m^2t-3m^2\sigma}\) outside both input arrays and a
+fixed normalized-height pool. Each new packet survives
+primitive reduction because it belongs to only one raw
+difference edge. This improves the linear number of
+directions in the seed-vertex count. If the numerical
+weight \(w\) of the three common packets exceeds \(6d\)
+by a fixed margin, almost no such direction stays within
+the original relative budget. The tree-support costs
+of both input arrays and the new directions also add
+in a common-field root-discriminant bound. Within a
+single array, fixed-label shifts give an independent
+private radical floor on every capped difference
+between potentials on the same axis. Their joint
+outside support has a corresponding unconditional
+lower bound.
+[Private differences, Latin directions and same-axis shifts (PA1–PA4)](ABC_PRIVATE_RADICALS_ON_ARRAY_DIFFERENCES.md)
+
+The full edge space, of dimension \(3m^2\), has independent
+power classes on generic boxes for every order \(q\ge2\).
+If two active weights meet, a single free potential can be
+counted through a fixed nonzero norm. If the active edges
+form a matching, two potentials can be counted by the
+arbitrary-order one-grid estimate on an actual triangle.
+The same tests apply to the individual least-repair
+multipliers for \(q\mid M\), with a loss controlled by
+\(1/(LM)\) independently of the number of edges. The
+rank survives a common base change of sufficiently small
+root discriminant, giving the full \(q^{3m^2}\) Kummer
+extension degree. For any fixed \(k\) synchronized arrays
+one can also keep their original edge observables and all
+pairwise primitive secant odds in a single rank count.
+With \(E_0=3m^2\), their joint Kummer degree is
+\(q^{kE_0+\binom{k}{2}(E_0-1)}\) under the same field
+condition. Taking odds cancels the normalization gcd exactly.
+[Full power-class rank and least repairs (BX1–BX4)](ABC_SHARED_BOX_FULL_POWER_RANK.md)
+· [Joint rank of synchronized arrays and primitive secants (SQ1–SQ3)](ABC_SYNCHRONIZED_PROJECTIVE_SECANT_RANK.md)
+
+There is also an exact obstruction to universal polynomial
+transfers. The only reduced three-term identities made of
+edge-difference monomials on a simple graph come from a
+triangle or the Plücker relation of a four-clique.
+On the tripartite potential graph this leaves only the
+original triangle relations. Nor can two distinct normalized
+rational outputs both reuse only the original edge factors
+if either output varies. On the actual boxes, a new bounded
+degree irreducible factor generically contributes a
+power-sized radical outside every original label. The
+resultant bound is uniform over affordable catalogues of
+polynomial-height coefficients. Several distinct new
+factors contribute disjoint prime supports, with a
+threshold \(t+s_i\) on a chosen active axis \(i\);
+the original edge-private supports survive the same
+forbidden-factor tests. This controls specialization as
+well as universal identities.
+[Polynomial transfers and fresh prime support (GP1–GP4)](ABC_SHARED_BOX_POLYNOMIAL_TRANSFERS.md)
+
+## Private valuations, economical transfers, and real windows
+
+For each fixed lower exponent on the omitted-vertex count,
+every edge of a generic original box carries private full
+prime powers with radical mass in a common compact interval
+of positive scaled valuations. The interval and numerical
+reserve are uniform in the packet and profile, and can be
+chosen before the size of the box. On a fixed complete-letter
+fibre, a prescribed multiplier \(Q\mid W\) also gives a
+power saving for each interval of length \(QX^\theta\) in
+the moving complete letter. These counts allow the interval
+centres and multipliers to depend on the anchored values.
+A forced covering by sufficiently few such intervals would
+exclude that subfamily of boxes.
+[Private valuation bands and cofactor dispersion (NB1–NB3)](ABC_SHARED_BOX_PRIVATE_VALUATION_BANDS.md)
+
+For Laurent monomials in the original complete labels of
+any fixed number of synchronized boxes, the private prime
+powers bound the exponents after dividing by the actual
+common gcd. For each residue list a coefficient dictionary
+of size \(D\) then costs at most \(D/K\) of the spanning-tree
+upper bound for nonidentity evaluations, up to a constant.
+Thus an affordable dictionary cannot produce new primitive
+additive outputs on a full-exponent cohort by those
+monomials. The surviving identities give original
+triangles or coefficient-only outputs. The bound on the total
+exponent also allows slowly growing synchronized tuples and
+dictionaries depending on inactive boxes. A \(K\)-sized
+coefficient dictionary can make a nonidentity hold on
+every box, so this threshold is sharp for the stated
+primitive-height test.
+[Laurent output count (LP1–LP4)](ABC_SHARED_BOX_LAURENT_OUTPUT_RIGIDITY.md)
+
+The family derivative lattice has an exact spanning-tree
+minor formula on private prime coordinates. Primitivity
+makes the prime-depth components bipartite, so even very
+large valuations contribute to the minor gcd only in
+proportion to the cycle ranks of their depth graphs.
+With the private numerical reserve above, the derivative
+inequality has positive slack on sufficiently large fixed
+boxes whenever the coordinates include a private prime
+on each edge. This holds without a near-minimum packet
+mass hypothesis and with arbitrary shared prime
+coordinates added to the same matrix.
+[Derivative minors and their height comparison (DM1–DM7)](ABC_SHARED_BOX_DERIVATIVE_MINOR_CYCLES.md)
+· [Uniform application to substantial omitted-vertex exponents](ABC_SHARED_BOX_PRIVATE_VALUATION_BANDS.md#consequence-for-derivative-lattice-tests)
+
+For the repaired target-support problem, a bounded-degree
+polynomial carrier with small formal radical must have a
+high-degree additive discrepancy. Keeping the contact
+orders on the original formal support strengthens this
+degree constraint. Slicing by integer lines turns the short
+real window and exact local depth into a joint count,
+uniformly in moving coefficients of polynomial height.
+The reduction still needs control of actual target
+multiplicities for thin families and for evaluations whose
+radicals are much smaller than the formal degrees predict.
+The Euclidean Fermat count for fixed signatures concerns
+ordinary primitive rational images on fixed curves.
+The uniform Fermat box estimates for three powerful
+numbers start with primitive full letters. Neither
+supplies the required least-repaired quotient
+multiplicity estimate with varying supports.
+[Real and local polynomial carrier counts (RW2–RW4)](ABC_POLYNOMIAL_REAL_WINDOW_OBSTRUCTION.md)
+· [Achenjang–Arango-Piñeros–Vemulapalli, Theorem 1.1 and §5.1](https://arxiv.org/html/2611.31699v1)
+· [Browning–Verzobio, Theorems 1.1 and 4.1](https://arxiv.org/html/2608.24512v1)
+
+## Bounded occurrence tests and two-target reconstruction
+
+An affine hash of \(a\) and \(c-b\) retains each true pair
+with probability \(1/H\) and each false pair with probability
+\(1/H^2\). Additional free buckets suppress false hits
+without changing true retention. In a fixed complete fibre
+the true pairs use distinct \(a\)'s, so pairwise independence
+gives a constant-probability hit at multiplicity at least
+\(H\). This replaces the multiplicity threshold by one
+bounded occurrence test on the original eligible candidates.
+With \(H=N^u\), additional bucket exponent \(\nu\), and
+prime block exponent \(\beta\), a near-real candidate count
+\(N^{1+o(1)}\) allows \(2u+\nu+\beta>1\) with a fixed margin.
+The signed Jacobi version consequently uses a fixed ramp
+threshold. A shorter numerical window permits a global
+false-error bound by counting discrepancies only once.
+[Hashed target occurrence (HT1–HT4)](ABC_HASHED_TARGET_SUPPORT_POPULARITY.md)
+
+For a full equality grid, any test with \(d\) nonnegative
+separated products and mean true acceptance \(p\) has
+false rate at least \(p^2/d\) up to a finite-size correction.
+Independent affine gates attain the scale. Requiring
+all three original roles to separate gives the corresponding
+\(p^{3/2}/\sqrt d\) scale on an addition table. On the
+actual eligible incidence matrix, the largest \(d\)
+multiplicities control the overlap with a rank-\(d\)
+signed kernel. That energy bound ranges over the full
+matrix on which the rank is given. A saving still needs a
+bound restricted to actual eligible candidates.
+[Separation rank and target energy (SR1–SR3)](ABC_RANDOMIZED_ADDITIVE_TEST_SEPARATION_RANK.md)
+
+At fixed relative odds, common original divisors of the
+two summands prescribe the quotient of two complete
+targets. A mixed power defect and a numerical lock
+of sufficient weight then recover the target roots by
+projective spacing. This gives a strict count on diffuse
+sectors where the target power defect is small, using
+two target positions. For least repair, a residue of the
+corrected multiplier ratio gives the analogous count at
+any fixed positive numerical lock weight by reconstructing
+the target radical ratio. This criterion places no
+divisibility-grid restriction on the original valuations.
+At minimum nonatomic mass, the corrected residue
+dictionary must attain exponent at least \(1/6\) on a
+saturating outside graph with locks of vanishing radical
+price. The required uniform upper estimate on that
+residue dictionary remains open.
+[Two-target summand locks (TL1–TL5)](ABC_TWO_TARGET_SUMMAND_LOCKS.md)
+
+A single original divisor \(D\) of positive numerical
+weight also gives a direct reduction across the balanced
+endpoint. Modulo \(D\), the corrected multiplier ratio for
+the two other letters determines the \(M\)-th power of their
+radical ratio. Since their radical heights are small, this
+residue recovers the original row with subpower multiplicity.
+The weighted number of residues **attained by actual rows**,
+summed over a covering divisor family, has the same count
+exponent as the primitive quotient family. Every balanced
+endpoint has an allowable covering after choosing a positive
+valuation band on a nonatomic letter. The new missing
+estimate is a uniform power saving on those attained images.
+[Direct primitive residue count (TL6)](ABC_TWO_TARGET_SUMMAND_LOCKS.md#a-direct-weighted-residue-count-for-primitive-quotients)
+
+For targets with many pairs of representations, count each
+normalized source pair once before restoring its actual
+target completions. The resulting bound gives a strict
+multiplicity-tail saving when the compressed shift price
+and the source-pair codegree are both controlled. It keeps
+the same target and all three original caps during
+completion. At balanced individual cap \(2c_0\), with
+\(c_0=1/6\), the sufficient inequality is
+\(d+3v+3\rho<2c_0+3u\), where \(v\) bounds the codegree
+exponent and each target provides at least \(n^{2u-\rho}\)
+qualifying pairs of compressed price at most \(d\).
+No uniformly cheap supply of such shifts is known.
+[Compressed-shift target tails (SCM1–SCM5)](ABC_COMPRESSED_SHIFT_TARGET_TAILS.md)
+
+## Shallow radical planes and deeper third-letter support
+
+Three shallow corrected repair residues can force the
+three residual radicals into a common rational plane
+even when none of the individual complementary ratios can
+be reconstructed. The congruence lattice controls the
+full-rank occupancy. In a plane, the parts of the
+three moduli absorbed by its primitive normal determine
+the angular count and the cost of listing high-occupancy
+normals. Actual primitive rows with squarefree residual
+parts attain the absorption bound at ordinary radical
+budgets. Thus primitivity and all three residues alone
+allow the difficult normal content.
+[Shallow records and the absorption example (SR1–SR4, SR6)](ABC_SHALLOW_REPAIR_RADICAL_PLANES.md)
+
+On a radical plane, two equal exact residual powers
+of order at least three give subpower completion even
+with an arbitrary actual third valuation spectrum.
+In the exceptional square case the third letter is
+squarefree outside a fixed pool, and its positive
+scaled-degree mass gives a strict saving on cheap
+records. For unequal orders \(p>q\ge2\), the third
+radical divides a binomial of degree \(p-q\) in the
+second root. Fixing the exact quotient reduces the
+original equation to one polynomial. Its factors
+accounting for the third radical have bounded total
+multiplicity, leaving a nonconstant factor supported
+on a fixed prime pool.
+[Equal-power completion (SR5)](ABC_SHALLOW_REPAIR_RADICAL_PLANES.md#two-equal-residual-powers-on-a-radical-plane)
+· [Unequal powers (UP1–UP3)](ABC_UNEQUAL_POWER_RADICAL_PLANES.md)
+
+For adjacent orders, high valuations on the original
+third support give an exact quotient at any fixed
+depth \(J\). With a suitable coefficient-height bound
+\(n^\Theta\), second-root cap \(n^{r_y}\) and retained
+third-radical floor \(n^{r_z}\), its normalized height
+price is at most
+\(\max(0,\Theta+r_y-Jr_z,\Theta-r_z)\).
+Pay separately for low-valuation primes removed from
+the third radical. The one-polynomial support
+argument applies after this deeper quotient is fixed,
+including for the small orders two and three.
+The argument does not force either a radical plane
+or economical records on general balanced profiles.
+[Deeper third-letter quotient (UP4–UP5)](ABC_UNEQUAL_POWER_RADICAL_PLANES.md#a-deeper-quotient-forced-by-the-original-third-valuations)
+
+For same-target pairs, the normalized source-pair
+count now discounts the multiplier primes that remain
+in the difference triple as well as those fixed by an
+external pool. Once the two source values are known,
+the shift exposes a prime pool for the actual complete
+target and a second pool for the opposite summand.
+Both lower the completion count through their
+respective remaining radical caps. The combined
+inequality gives a strict gain in parameter sectors
+where the previously compared adaptive fixed-fibre
+bounds reach their thresholds. It still requires
+enough pairs with the indicated shift and overlap
+prices.
+[Retained support and three-letter codegrees (SCM8–SCM10)](ABC_COMPRESSED_SHIFT_TARGET_TAILS.md#endpoint-support-and-original-target-discounts)
+
+## Divisible projected roots and simultaneous high-valuation tails
+
+On a fixed projected radical plane, write the original
+free letters as $a x^p u$ and $b y^p v$ with $u\mid x$
+and $v\mid y$. For every valuation $e\ge p(p-1)$,
+division of $e$ by $p$ gives this representation
+without requiring a fixed valuation grid. The actual
+third radical forces an integer quotient of the
+corrections. A second integer separates the unmarked
+root factors, and the original third valuations give
+an exact quotient at any fixed depth. Once these
+records are fixed, Mason–Stothers forces a nonconstant
+polynomial factor supported on a fixed prime pool.
+The same completion bound can charge one actual
+correction in place of the separating integer.
+[Divisible projected roots (DR1–DR5)](ABC_DIVISIBLE_POWER_ROOT_PLANES.md)
+
+At unequal orders $p>q$, the smaller-order
+correction divides the first quotient and can be
+recovered at divisor cost. With affordable records
+this yields a strict sector without a lower bound on
+third-letter valuations. Multiple varying exact
+layers supplied by a fixed polynomial carrier can
+also be recovered from one quotient under the
+given degree conditions. Both statements require
+the indicated plane and record dictionaries.
+[Unequal divisible roots (DU1–DU4)](ABC_UNEQUAL_DIVISIBLE_ROOT_PLANES.md)
+· [Polynomial layers (LC1–LC3)](ABC_POLYNOMIAL_LAYER_RADICAL_PLANES.md)
+
+In an actual completion star, a large least common
+multiple of high-valuation divisors costs at most
+$n^{2/R}$ to record, independently of the fixed
+number of leaves. A degree bin with many neighbours
+and large mean numerical tails consequently loses a
+fixed power when the tails have small pair overlap.
+Large overlap forces actual normalized shifts with
+large common high-valuation divisors. The argument
+retains the original target tail in the least common
+multiple and bounds the admissible overlap through
+the first two depth moments. A saving in the
+remaining shift dictionary still requires additional
+control of its radical.
+[Simultaneous high-valuation tails (PL3–PL9)](ABC_POPULAR_COMPOSITE_PACKET_LCM.md)
+
+## Affordable projected planes and differences after a common target lift
+
+A strict saving follows on a family covered by sufficiently
+few projected planes \(Ax+By+Cz=0\), where \(x,y\) are the
+actual \(q\)-projected roots of two original letters and
+\(z\) is the original third radical outside a recorded pool.
+The saving permits \(q\lambda\to0\), every orientation and
+arbitrary exact valuations. In the scale \(X^{1/q}\), the
+third radical is a short multiplier. A cheap actual divisor
+on one projected letter allows a positive-mass window on
+the other to move, and original support recovery completes
+the pair of letters. This removes the auxiliary quotient
+prices from the plane route. A simultaneous residue branch
+can supply the plane by a rank bound, with omitted-prime
+multiplicity included when the branch is counted in original rows.
+A single divisor also gives an unconditional dispersion test.
+For the chosen window of original mass \(t\), a full-exponent
+family needs at least \(n^{7t/8-o(1)}\) occupied mixed
+divisor-residue records \((D,x/z\bmod D)\). Finding cheaper
+dictionaries of that one corrected complementary residue
+would suffice in place of extracting planes.
+[Projected plane and mixed residue criteria (AP1–AP3)](ABC_AFFORDABLE_DIFFUSE_PROJECTED_PLANES.md)
+
+For two primitive rows, lift to any common multiple of
+their complete targets. The difference of the two lifted
+opposite summands divided by their gcd is independent of
+that common multiple. After cancelling the gcd of the
+weighted cross products, the new difference is the reduced
+shift times the original target gcd divided by the
+original selected summand gcd. Thus fixed-degree norm
+recovery charges a joint reduced-shift and power-class
+record, plus the relevant original gcds. A common target
+divisor or a short window in the relative odds can replace
+the shift record by projective spacing. Both counts include
+pairs with distinct least-repaired targets, and count the
+primitive quotients without any common multiplier entropy.
+Prime-index profiles show why limiting degree information
+alone cannot produce a small joint defect.
+[Primitive pair cancellation and counting (PD1–PD4)](ABC_PAIR_LIFT_PRIMITIVE_POWER_DIFFERENCES.md)
+· [Fixed and moving target power-defect counts (NP1–NP10)](ABC_NORMALIZED_PAIR_POWER_DEFECTS.md)
+
+Two independently moving targets can also be recovered
+from a union of cubic defects without a prescribed exact
+shift. A primitive diagonal cubic first recovers the
+normalized opposite summands. A split cubic cover then
+recovers their common rational scale. For three or more
+rows with prescribed affine shape of the original
+summand-to-target ratios, two split covers recover the
+translation and scale from weighted joint power classes.
+This replaces exact gap records by a shape record and
+uses the actual valuations of all three letters.
+[Affine shapes and joint power classes (AS1–AS6)](ABC_AFFINE_SHAPE_JOINT_POWER_CLASSES.md)
+
+For actual completion stars, mix anchors from both summand
+roles and charge their dictionary exponents separately.
+The exact expected modulus is the weighted union of three
+sources of prime powers, including the actual target tail.
+A single anchor from the larger dictionary can supply weight
+missing from many cheap anchors in the other role. The
+cross moment also forces deep divisors on normalized cross
+shifts. The remaining shift radical still needs an upper
+bound. The two-moment threshold is sharp for abstract
+occupancy data.
+[Mixed-orientation completion stars (MSO1–MSO5)](ABC_MIXED_COMPLETION_STAR_OCCUPANCY.md)
+
+## Small-modulus digit recovery and projective shape growth
+
+Projected ratios at several orders give binary digit contrasts
+of the original valuations. The contrasts are rational numbers
+with signed squarefree support and survive a common unit twist
+of the supplied residues. A logarithmic list recovers all but
+vanishing radical mass at a modulus on the radical scale.
+At any fixed smaller precision \(D>n^\delta\), a bounded
+list of probes recovers nearly the entire nonatomic mass
+on both free letters. The mixed Fourier estimate works with
+atoms on either letter, since its resonant lines have zero
+mass against the nonatomic carrier.
+
+In a balanced box, one can choose an affordable full
+divisor on a nonatomic opposite letter. From the recovered
+diffuse supports, the remaining atom windows group into a
+bounded number of roots and a short correction. The full
+divisor then completes the original ratio at arbitrarily
+small normalized cost. This supplies a bounded-length
+small-modulus residue criterion for all balanced profiles.
+The modulus and its full parent divisor can be recorded at
+arbitrarily small fixed normalized cost. An argument forcing
+a cheap *joint* dictionary for the resulting contrasts remains
+necessary.
+[Multiscale residues (MR1–MR4)](ABC_MULTI_SCALE_MIXED_RESIDUE_RECOVERY.md)
+· [Binary support and atomic completion (MD1–MD3)](ABC_MODULAR_DIGIT_SUPPORT_AND_ATOMIC_COMPLETION.md)
+
+For projective shape, a weighted product of actual secants
+corrects the missing power class of the moving pole. The
+corrected classes are invariant under separate common
+multiplication of each row. Three rows require no shape record
+in the cubic count. Small common original gcds reduce the
+number of corrected classes needed to two. After fixing two
+original anchors one can alternatively choose one uncorrected
+class. Without such an anchor or correction, actual primitive
+quadruples of fixed projective shape can share every even-weight
+relative parity class in a power-sized family.
+[Secant-corrected projective counts (PM1–PM8)](ABC_PROJECTIVE_SHAPE_SECANT_CLASS_COUNTS.md)
+· [Two-class obstruction and uncorrected anchor count (PSO1–PSO2)](ABC_PROJECTIVE_SHAPE_TWO_CLASS_OBSTRUCTION.md)
+
+Private secant primes on a fixed shape lie in the determinant
+pool of its marks. After fixing one actual anchor, the private
+packet on each of two secants puts the other endpoint into a
+projective class within the available packing gap. Thus a fibre
+of exponent \(r\) has at least \(n^{(s-1)r-o(1)}\) projective
+shapes on its typical \(s\)-tuples, with the inner height
+allowance chosen before the budget limit. This excludes the
+cheap shape extraction on those typical affordable-fibre tuples,
+even before charging the uncorrected power class. The estimate
+does not extend to all specially selected tuple relations.
+
+[Projective shape growth (PG1–PG3)](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SHAPE_GROWTH.md)
+
+## The unrestricted small-budget obligation
+
+In the simultaneous packet sector, a sufficient missing
+estimate is a fixed loss \(\sigma>0\) from
+\(n^{2(1/6-d)}\) in a joint affine cell count with all three
+outside radical caps. One can instead seek a loss from
+\(n^{s_i+s_j}\) in the number of occupied pairs of absolute
+residues for some projected role in each fixed packet tuple.
+These are uniform bounds in the packet and residue data,
+with the tolerance chosen after the loss and the height
+taken to infinity at each fixed budget. A universal
+argument must also handle the balanced profiles where this
+near-minimum complete-dictionary reduction or the required
+packet extraction has not been obtained.
+
+In the simultaneous packet sector, bounding genuine shared-value
+boxes below \(n^{md+(3m-1)t}\) by a fixed power for one fixed
+\(m\) would now suffice. The known cycle and secant estimates
+force large fresh prime supports. To turn them into an
+exclusion requires an arithmetic upper bound on those
+supports, or an independent upper bound for the arrays with
+their full original caps. Generic private supports and full
+power-class rank constrain a potential compression in this
+sector. When \(w>6d\), ordinary synchronized differencing
+cannot supply a second family at the same relative budget
+on the forced Latin cells.
+
+The remaining target is an absolute \(\delta>0\) and
+\(N_\lambda(X)\ll_{\lambda,\varepsilon}
+X^{(1/3-\delta)\lambda+\varepsilon}\) for all sufficiently small
+fixed \(\lambda>0\). The least-target-repair equivalence retains
+this obligation in the primitive quotient count. The graph
+bounds give an exponent saving where a dense affordable affine
+graph carries a small off-grid defect. The transfer bounds give
+an exponent saving where a sufficiently imbalanced output has
+bounded recorded radical and a numerically short remaining
+cofactor. A proof at arbitrary profiles needs an estimate
+forcing one of the requisite constraints on near-full input
+families, or a different inequality using all three radical
+caps. Families with broad positive valuation spectra on the
+original letters, broad affine power-class distributions, and
+large fresh radical in imbalanced outputs remain possible
+within these necessary conditions. In the repaired formulation,
+a saturated count must spread its representations over at least
+\(Y^{(1/2-o(1))/M}\) occurring target radicals. Closing this
+route requires a joint bound on how many supports have each
+representation multiplicity, or the corresponding repeated
+modular popularity estimate at block exponents \(\beta>1-u\)
+when a short real window is imposed in the balanced normalization.
+Equivalently it suffices to bound the mean capped signed test of
+(CPH1) by \(N^{1-u-\sigma+\varepsilon}\) on a fixed finite mesh
+covering the joint multiplicity range, with one absolute
+\(\sigma>0\) and all sufficiently small fixed budgets.
+Use the ramp with \(H=1/2\) at the occurrence endpoint \(u=0\). The corresponding valuation-class
+route requires an entropy upper bound on simultaneous classes
+with large effective least common multiples. The existing
+powerful-number and Pell recovery estimates supply fibre
+bounds after the relevant arithmetic records have been fixed.
+They do not give either required distribution estimate.
+
+
+In particular, an explicit sufficient extraction for closure is the following.
+Fix \(k\) and one polynomial monomial support of invisible rank \(r<k\).
+Choose absolute \(K,\gamma>0\) with
+\[
+                    k/K+\gamma<(k-r)/6 .
+\]
+In every putative balanced saturating sequence, find
+\(n^{k/3-o(1)}\) ordered \(k\)-tuples for which these
+least-repaired heights obey a nondegenerate relation
+with that support, whose projective coefficient vector
+runs through at most \(n^{\gamma+o(1)}\) records.
+Equation (HP5) would contradict the tuple count,
+uniformly in the original valuation spectra. The coefficient
+entropy bound shows exactly how much compression this
+route would have to extract from the original triples.
+Coincidences involving only equal repaired targets,
+and original additive relations with unbudgeted
+repair ratios, do not supply the required tuples.
+[Primitive lifting of repaired-height incidences](ABC_REPAIRED_HEIGHT_POLYNOMIAL_RELATIONS.md#transfer-back-to-primitive-abc-rows)

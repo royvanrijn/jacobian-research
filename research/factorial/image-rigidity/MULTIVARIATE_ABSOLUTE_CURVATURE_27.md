@@ -304,3 +304,12 @@ multiple of \(2\pi\) strictly between zero and \(2\pi\).
 This concludes the proof. Integer coefficients give the
 Bézout identity over \(\mathbb Q\), and hence over every
 characteristic-zero field.
+
+## Exact arithmetic replay
+
+The [rational checker](verify_multivariate_absolute_curvature_27.py)
+encloses the exponential constants with directed Taylor sums and
+a positive geometric remainder. It also tests the weighted-tree
+formula against the ordered-tree recurrence at three rational
+values of the weight parameter. The cycle argument above gives
+the identity at every tree size.

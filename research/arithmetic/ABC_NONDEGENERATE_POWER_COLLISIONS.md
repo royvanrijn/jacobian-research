@@ -87,7 +87,7 @@ remaining unit ratios. The genus is at most
 and poles has size at most \(2mD\). Thus the degree
 of any such ratio as a rational function is
 \(O_{m,s}(D^2)\). Consequently \(D\gg_{m,s}\sqrt E\).
-[Brownawell–Masser, Vanishing sums in function fields](https://doi.org/10.1017/S030500410006324B)
+[Brownawell–Masser, Vanishing sums in function fields](https://doi.org/10.1017/S0305004100066184)
 · [Function-degree statement, Fuchs–Zannier Lemma 2.2](https://ems.press/content/serial-article-files/31810)
 
 If \(D<c_{m,s}\sqrt E\) for a sufficiently small

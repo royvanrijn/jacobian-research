@@ -416,6 +416,248 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Explicit Gaussian paired-saddle angular separation down to curvature 16/3 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_EXPLICIT_S16_OVER_3_INTERLACING.md) |
 | A uniform centered factorial transfer for arbitrary analytic half disks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_ABSTRACT_PAIRED_HALF_LIFT.md) |
 | Terminal fourteen retained bridge on [.76,.855] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_BRIDGE.md) |
+| All-order factorial angular separation at absolute curvature 27 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_27.md) |
+| Terminal fourteen near zero outer mean | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SMALL_OUTER.md) |
+| Terminal fourteen retained complements through the lower-middle band | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_LOW_MID.md) |
+| Terminal fourteen for all shared profiles from outer mean .30 to .45 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID.md) |
+| Terminal fourteen for all shared profiles on [.25,.30] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_LEFT.md) |
+| Terminal fourteen for all shared profiles on [.45,.50] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_FLANKS.md) |
+| Degree-uniform Gaussian angular variation for matched Laplace directions | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_LAPLACE_ANGLE_RESPONSE.md) |
+| Exact adjacent resultant degree along every translated factorial ray | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRANSLATED_RESULTANT_DEGREE.md) |
+| Divisor-prime coprimality criterion on translated factorial rays | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRANSLATED_DIVISOR_PRIME.md) |
+| Quantitative obstruction to shallow simultaneous prime screens | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_QUANTITATIVE_PRIME_SCREEN_OBSTRUCTION.md) |
+| Nonlinear fixed-grid root transport for the exact matched factorial symbol | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_LAPLACE_NONLINEAR_TRANSFER.md) |
+| An exact exceptional polynomial and a density bound for all-order factorial profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_ORDER_EXCEPTIONAL_LOCUS.md) |
+| Positive second homogeneous layer of unbalanced factorial resultants | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RESULTANT_SECOND_HOMOGENEOUS_LAYER.md) |
+| Codimension-two exceptional loci and regular directions for wide factorial profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EXCEPTIONAL_CODIMENSION_TWO.md) |
+| Exact nonlinear same-grid angular transport for all fixed shared mirrored profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_LAPLACE_MESH_SHARPENING.md) |
+| Positive Laplace curvature alone allows inward variation and loss of circle location | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_POSITIVE_LAPLACE_ANGLE_OBSTRUCTION.md) |
+| Exact matched midpoint curvature hierarchy for ordinary factorial moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_ANGULAR_HIERARCHY.md) |
+| Signed matched tanh angular separation down to Gaussian strength 16/3 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_ANGULAR_HIERARCHY.md) |
+| Exact consecutive collision with one positive Laplace symbol | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_ANGULAR_HIERARCHY.md) |
+| Gaussian physical-clock late interlacing and an exact matched moment test | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_PHYSICAL_CLOCK_COMPARISON.md) |
+| Degree-uniform weak same-grid transfer for mirrored factorial symbols | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_WEAK_MIRRORED_LAPLACE_TRANSFER.md) |
+| All-degree common upper-symbol interlacing for weak mirrored factorial profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_WEAK_COMMON_SYMBOL_INTERLACING.md) |
+| All-degree Gaussian interlacing on a fixed weak physical-clock interval | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_WEAK_COMMON_SYMBOL_INTERLACING.md) |
+| All-order physical binary separation with asymmetric private degrees | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_ASYMMETRIC_PRIVATE_DEGREES.md) |
+| Sharp positive-base obstruction with asymmetric private degrees one and two | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_ASYMMETRIC_PRIVATE_DEGREES.md) |
+| Matched Gaussian squared-height coefficients and an all-time clock ratio interval | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_MATCHED_HEIGHT_COEFFICIENTS.md) |
+| Compensated nonlinear angular transport for noncircular references | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OFF_CIRCLE_COMPENSATED_LAPLACE_TRANSFER.md) |
+| Order-independent exact remainder for linked beta moment pairs | Internal result | proved | [Source](image-rigidity/LINKED_BETA_FIXED_DEGREE_REMAINDER.md) |
+| All-order linked beta boundary coprimality with positive shared Gamma shape | Internal result | proved | [Source](image-rigidity/LINKED_BETA_ONE_PRIVATE_BOUNDARY_ALL_ORDERS.md) |
+| Bulk exclusion for sharp-clock Gaussian first outer contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_SHARP_CLOCK_BULK_CONTACT.md) |
+| Uniform eventual strict interlacing of actual and common-symbol subcritical mirrored moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SUBCRITICAL_MIRRORED_COMMON_SYMBOL_INTERLACING.md) |
+| Simple circle roots in every degree along physical mirrored Gaussian mergers | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_MIRRORED_ROOT_CIRCLE.md) |
+| Uniform eventual mirrored interlacing throughout each compact supercritical band | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SUPERCRITICAL_MIRRORED_COMMON_SYMBOL_INTERLACING.md) |
+| Single-row all-order coprimality progressions and uniform finite exceptional fibres | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SINGLE_ROW_ALL_ORDER_ARITHMETIC_PROGRESSION.md) |
+| Strict curvature flattening and matched order comparison on balanced physical row mergers | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_MIRRORED_ROOT_CIRCLE.md) |
+| Exact Gaussian saddle phases, finite-degree edge bounds and sharp-clock interlacing | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_EXACT_SADDLE_PHASE.md) |
+| Uniform eventual strict mirrored interlacing in the moving critical window | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CRITICAL_MIRRORED_COMMON_SYMBOL_INTERLACING.md) |
+| Limiting linked beta remainder sector and exact first fold correction | Internal result | proved | [Source](image-rigidity/LINKED_BETA_REMAINDER_LIMITING_SECTOR.md) |
+| All-degree Gaussian angular interlacing through critical coupling | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_SUBCRITICAL_SHARP_CLOCK_INTERLACING.md) |
+| Absolute diffuse angular separation at every curvature and degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_ALL_ORDER_RESULTANT_TRANSFER.md) |
+| Absolute eventual strict interlacing for fully shared mirrored factorial profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_EVENTUAL_MIRRORED_COMMON_SYMBOL_INTERLACING.md) |
+| Strict real angular interlacing under adjacent Euler parameter shifts | Internal result | proved | [Source](image-rigidity/SFC_MATCHED_EULER_REAL_INTERLACING.md) |
+| Uniform angular confinement and the Gegenbauer limit at physical mirror mergers | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_MIRROR_MERGER_EDGE.md) |
+| Order-independent Frobenius gcd test for linked beta moments | Internal result | proved | [Source](image-rigidity/LINKED_BETA_FROBENIUS_REDUCTION.md) |
+| Eulerian coprimality test for balanced unit-gap profiles at arbitrary prime powers | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BALANCED_UNIT_GAP_EULERIAN_REDUCTION.md) |
+| Strict sharp-clock Gaussian interlacing in an explicit collar above criticality | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_SUPERCRITICAL_COLLAR.md) |
+| Explicit cross-degree angular gaps for the two physical Gaussian clocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_QUANTITATIVE_PHYSICAL_GAPS.md) |
+| All-order signed angular separation test at the two exact factorial midpoint clocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_MIDPOINT_CLOCK_ANGLE_TEST.md) |
+| Exact shared angular roots for positive weights on matched factorial row blocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_WEIGHTED_TANH_ANGLE_OBSTRUCTION.md) |
+| All-order asymmetric angular separation with independent weak factorial-symbol blends | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_WEAK_ASYMMETRIC_COMMON_SYMBOL_ANGLE_SEPARATION.md) |
+| All-order large-curvature angular separation with independent factorial-symbol blends | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_27_COMMON_SYMBOL.md) |
+| Exact integer row reconstruction from the joint matched tanh data | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_INTEGER_MULTIPLICITY.md) |
+| All-order angular separation after adding a diffuse tail to any ordinary core | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ARBITRARY_CORE_DIFFUSE_EXTENSION.md) |
+| Projective moment regularization for arbitrary support by signed diffuse factorial rows | Internal result | proved | [Source](image-rigidity/SFC_SIGNED_DIFFUSE_PROJECTIVE_REGULARIZATION.md) |
+| Unbalanced mixed unit-gap and gap-two coprimality at prime-power orders | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNBALANCED_PRIME_POWER_NEWTON.md) |
+| Uniform eventual angular gaps for independent symbol blends in asymmetric shared bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_SHARED_BAND_COMMON_SYMBOL_ANGLE_SEPARATION.md) |
+| Strict adjacent Gaussian phase order at every coupling in the high-phase sector | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_HIGH_PHASE_ALL_COUPLINGS.md) |
+| All-degree sharp-clock Gaussian angular interlacing at normalized time at least 26/5 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_PAIRED_HALF_SUPERCRITICAL.md) |
+| Absolute eventual angular separation for arbitrary shared factorial-symbol blends | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_NEAR_CRITICAL_SHARED_COMMON_SYMBOL_ANGLE_SEPARATION.md) |
+| Strict Gaussian interlacing at every positive physical clock and degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_SUPERCRITICAL_PHASE_RESERVE.md) |
+| Weighted angular collision matching ordinary inverse-tanh moments of any finite degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_FINITE_INVERSE_MOMENT_OBSTRUCTION.md) |
+| No universal linear Cayley interlacer represents the actual factorial compression | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LINEAR_CAYLEY_COMPRESSION_OBSTRUCTION.md) |
+| The universal equal clock for adjacent circular Gaussian interlacing | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_ADJACENT_SMOOTHING_OBSTRUCTION.md) |
+| Two-prime positive-density irreducibility and coprimality for actual unit-gap profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TWO_PRIME_UNIT_GAP_DENSITY.md) |
+| Two-prime positive-density coprimality with one arbitrary increasing gap | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TWO_PRIME_ARBITRARY_GAP_DENSITY.md) |
+| Polynomial angular gaps at all Gaussian physical clocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_POLYNOMIAL_PHYSICAL_GAPS.md) |
+| Polynomial angular transfer by inflation at exact midpoint curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIDPOINT_INFLATION_POLYNOMIAL_ANGLE_TRANSFER.md) |
+| All-order radial separation with arbitrary mirrored cores and signed diffuse tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_CORE_SIGNED_DIFFUSE_RADIAL_SEPARATION.md) |
+| Angle boxes and all-order interlacing with one mirrored private unit pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_MIRRORED_ANGLE_BOXES.md) |
+| Root-angle monotonicity for integer changes of mirrored rows with one private unit pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_MIRRORED_ROOT_MONOTONICITY.md) |
+| Common high-precision factorial units under rowwise p-power inflation | Internal result | proved | [Source](image-rigidity/SFC_PADIC_ROW_INFLATION_HIGH_PRECISION.md) |
+| All-order ordinary families via complementary factorial rows and Euler comparison | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPLEMENTARY_ROW_EULER_REDUCTION.md) |
+| Quadratic signed skew in the exact matched angular transfer | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_QUADRATIC_SKEW_TANH_ANGLE_TRANSFER.md) |
+| Uniform all-order exceptional sets on single-row and reflected-pair fibers | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SINGLE_ROW_ANGULAR_EXCEPTIONAL_FIBERS.md) |
+| Exact projective regularization by triangular ordinary exponent rows | Internal result | proved | [Source](image-rigidity/SFC_TRIANGULAR_INTEGER_ROW_TAGGING.md) |
+| All-degree angular interlacing with a private unit pair and arbitrary mirrored rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_MIRRORED_LINKED_PHASE_INTERLACING.md) |
+| An independent small-curvature phase comparison for one private mirrored unit pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_MIRRORED_WEAK_PHASE_COMPARISON.md) |
+| An endpoint resolvent comparison at curvature four with one mirrored private unit pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_MIRRORED_RESOLVENT_INTERLACING.md) |
+| All-degree interlacing for fully shared mirrored profiles under explicit endpoint tests | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_HARD_PAIR_INTERLACING.md) |
+| Bounded-degree coprimality tests at fixed-cofactor prime powers for mirrored unit gaps | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_FIXED_COFACTOR_FROBENIUS.md) |
+| Uniform angular stability for an exact mirrored core with a private unit pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_EXACT_CORE_ANGLE_STABILITY.md) |
+| All-degree complementary unit-gap extensions for every ordinary binary core | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ARBITRARY_CORE_COMPLEMENTARY_EULER_EXTENSION.md) |
+| Interior adjacent collisions under private-unit removal despite matched folded likelihood ratios | Internal result | proved | [Source](image-rigidity/SFC_PRIVATE_UNIT_REMOVAL_FOLDED_ORDER_OBSTRUCTION.md) |
+| Circular coefficient transport and all-degree separation near a shared unit-gap core | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_UNIT_CORE_ANGULAR_TRANSPORT.md) |
+| All-degree squarefreeness for a constant and a monomial of total degree at least seven | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CONSTANT_PLUS_MONOMIAL_DEGREE_SEVEN.md) |
+| Unconditional angle boxes for ordinary binomials with private variables on both sides | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_ASYMMETRIC_ANGLE_BOXES.md) |
+| All-degree angular interlacing with private variables on both sides and total curvature seven | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_ASYMMETRIC_CURVATURE_INTERLACING.md) |
+| Exact sharpness of overlapping private-unit angle boxes for fixed exchangeable bases | Internal result | proved | [Source](image-rigidity/SFC_PRIVATE_UNIT_ANGLE_BOX_SHARPNESS.md) |
+| Prime-offset coprimality descent for exact same-orientation unit-gap profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIT_GAP_PRIME_OFFSET_DESCENT.md) |
+| Bounded Frobenius test for exact single shared mirrored pairs of arbitrary gap | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SINGLE_MIRRORED_GAP_FROBENIUS.md) |
+| Exact endpoint congruence and all-degree separation for mirrored complementary groups | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_COMPLEMENTARY_ENDPOINT_CONGRUENCE.md) |
+| All-degree squarefreeness for a constant and a monomial of total degree six | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CONSTANT_PLUS_MONOMIAL_DEGREE_SIX.md) |
+| An exact Gegenbauer-section interlacer for a shared mirrored gap-two pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_GAP_SECTION_INTERLACER.md) |
+| All-degree coprimality with both private sides and comparable shared exponents | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_COMPARABLE_SHARED_INTERLACING.md) |
+| All-degree angle interlacing with both private sides and total curvature six | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_RESIDUAL_CURVATURE_FOUR.md) |
+| All-degree squarefreeness for a constant and a monomial of total degree five | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CONSTANT_PLUS_MONOMIAL_DEGREE_FIVE.md) |
+| Every-degree interlacing for the exact shared mirrored pair (1,3),(3,1) | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_CRITICAL_GAP_TWO_INTERLACING.md) |
+| A polynomial all-degree angular gap for the shared critical mirrored pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_GAP_TWO_FORCE_RESERVE.md) |
+| Finite positive matched moments recover all ordinary rows above a fixed relative gap | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_FINITE_POSITIVE_CORE.md) |
+| Every-degree angular separation from integer packing in matched tanh data | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_CRITICAL_CORE_PACKING.md) |
+| Exact ordinary factorial angular gaps can be smaller than matched Gaussian gaps | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_MIDPOINT_GAP_EXTREMALITY_OBSTRUCTION.md) |
+| Exact angular and radial equations for shifted midpoint laws of both-private profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_SHIFTED_TANH_RESOLVENT_REDUCTION.md) |
+| Grouped analytic squarefreeness for degree-four constant support at orders fourteen through 256 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CONSTANT_PLUS_MONOMIAL_DEGREE_FOUR_MIDDLE.md) |
+| All-degree squarefreeness for a constant and a monomial of total degree four | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CONSTANT_PLUS_MONOMIAL_DEGREE_FOUR.md) |
+| Complete all-degree Strong Factorial for a constant and any ordinary nonconstant monomial | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CONSTANT_PLUS_MONOMIAL_DEGREE_FOUR.md) |
+| All-degree angular separation with both private sides at total curvature eleven halves | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_RESIDUAL_CURVATURE_SEVEN_HALVES.md) |
+| Prime-adic bounds on exceptional Gaussian clocks for arbitrary ordinary cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_CLOCK_PADIC_EXCEPTIONS.md) |
+| Exact Gaussian all-degree angular transfer for hard mirrored cores and arbitrary cores at high curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_CORE_GAUSSIAN_ENDPOINT_TRANSFER.md) |
+| All-degree angular separation with one hard mirrored pair and arbitrary other ordinary rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HARD_MIRRORED_PAIR_ARBITRARY_TAIL.md) |
+| All-degree angular separation from a product of retained mirrored endpoint factors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RETAINED_MIRRORED_ENDPOINT_CRITERION.md) |
+| All-degree oriented endpoint product criterion for arbitrary ordinary profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORIENTED_ENDPOINT_PRODUCT_CRITERION.md) |
+| All-degree angular separation at absolute curvature twenty | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_20.md) |
+| All-degree angular separation at absolute curvature sixteen | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_16.md) |
+| Uniform all-degree coprimality after balanced shared tails on comparable both-private cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPARABLE_CORE_BALANCED_TAIL_STABILITY.md) |
+| Effective all-degree coprimality after aligned mixed shared tails on comparable both-private cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPARABLE_CORE_EFFECTIVE_TAIL_STABILITY.md) |
+| All-degree first-sector common-point exclusion for two comparable rows and homothetic profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPARABLE_ROWS_FIRST_SECTOR_COMMON_ROOTS.md) |
+| All-degree angular separation from two opposed shared gaps with arbitrary rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_SHARED_GAPS_ENTROPY_INTERLACING.md) |
+| Hereditary all-degree entropy criterion for arbitrary retained shared rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ENTROPY_ENDPOINT_PHASE_CRITERION.md) |
+| All-degree separation at weighted curvature fourteen with doubled shared exponents | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DOUBLED_SHARED_CURVATURE_ENTROPY.md) |
+| Effective all-degree stability under arbitrary signed small shared tails outside finitely many core twists | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ARBITRARY_CORE_TWISTED_TAIL_STABILITY.md) |
+| All-degree preservation under modular baseline shifts, neutral shared blocks and digit packing | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MODULAR_ROW_OPERATIONS_ALL_DEGREES.md) |
+| First-sector ordered-radius exclusion for arbitrary comparable exponent columns | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPARABLE_FIRST_SECTOR_HCM_RADIAL_COMPARISON.md) |
+| Effective first-sector ordered-radius stability under shared mixed tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPARABLE_EFFECTIVE_FIRST_SECTOR_MIXED_TAIL.md) |
+| All-degree angular certificate from one matched tanh pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_FINITE_ANGULAR_CERTIFICATE.md) |
+| Matched first-moment angular separation near private units and all integer twists for one shared unit row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_MATCHED_TANH_GEOMETRIC_AND_INTEGER_TWISTS.md) |
+| All-degree matched tanh angular interlacing for mirrored curvature at least fourteen | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_MIRRORED_CURVATURE_FOURTEEN.md) |
+| Universal all-degree angular separation after adding two opposed rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIVERSAL_OPPOSED_PADIC_ANGLE_MARKING.md) |
+| All-degree modular constructions stable under arbitrary positive rational rescalings | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GEOMETRIC_MODULAR_RATIONAL_TWIST_STABILITY.md) |
+| All-degree matched tanh angular interlacing for mirrored curvature at least thirteen | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_MIRRORED_CURVATURE_THIRTEEN.md) |
+| Explicit all-degree angular progression with one movable ordinary row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SINGLE_MOVABLE_ROW_PADIC_PROGRESSION.md) |
+| All-degree angular separation on affine rays of original exponent bases | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AFFINE_BASE_RAY_PADIC_ANGLES.md) |
+| All-degree coprimality of ordinary profiles at large signed degree difference | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_SIGNED_IMBALANCE.md) |
+| All-degree matched tanh angular interlacing for mirrored curvature at least twelve | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_MIRRORED_CURVATURE_TWELVE.md) |
+| Angular separation from native upper factorial-block valuations | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_NATIVE_PRIME_CHORD_ANGULAR_CERTIFICATE.md) |
+| Exact fractional logarithmic coefficients for native prime angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIMITIVE_PADIC_LOG_ANGULAR_CERTIFICATE.md) |
+| All-degree angular separation for exponent-ratio balanced profiles at curvature twelve | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RATIO_BALANCED_ANGULAR_SEPARATION.md) |
+| All-degree radial and angular separation by matching linked Gauss slots | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LINKED_GAUSS_MATCHING_SEPARATION.md) |
+| All-degree angular separation at absolute curvature fifteen | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_15.md) |
+| All-degree angular separation at absolute curvature fourteen | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_14.md) |
+| Global Galois orbit certificates for consecutive factorial root arguments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GALOIS_ORBIT_ANGULAR_SEPARATION.md) |
+| All-degree angular separation at absolute curvature thirteen | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_13.md) |
+| All-degree angular separation at private exponent sum two on both sides | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_EXPONENT_SUM_TWO.md) |
+| Physical coprimality from quadratic Newton trace constraints | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_QUADRATIC_NEWTON_TRACE_SIEVE.md) |
+| All-degree angular separation at absolute curvature twelve | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_12.md) |
+| Uniform angular separation with two extra private factorial factors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIXED_PRIVATE_DEGREE_THREE.md) |
+| All-degree prime-power private angular separation with weak shared matched tanh tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIME_POWER_PRIVATE_TANH_ANGULAR_STABILITY.md) |
+| Finite ordinary matched positive moments do not determine native prime chords | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FINITE_MATCHED_POSITIVE_MOMENTS_NATIVE_PRIME_OBSTRUCTION.md) |
+| All-degree angular separation at private exponent totals one and three | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIXED_PRIVATE_SQUARE_FACTORIAL_ANGLES.md) |
+| A stable polar half and exact interlacing test for mirrored binomials | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_POLAR_HALF_ANGULAR_REDUCTION.md) |
+| Exact linked coefficient order for all profiles with two private sides | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_LINKED_COEFFICIENT_ORDER.md) |
+| Signed physical coefficient transport after private factorial cancellation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_PHYSICAL_COEFFICIENT_TRANSPORT.md) |
+| All-degree ordinary angular separation at private totals one and two with shared reserve | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_ONE_TWO_SHARED_ANGLE_RESERVE.md) |
+| One-sided phase and improved shared curvature for mixed private degree one and two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_ONE_TWO_ONE_SIDED_PHASE.md) |
+| All-degree ordinary coprimality with a private linear and a private quadratic row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_LINEAR_QUADRATIC_ALL_DEGREES.md) |
+| All-degree ordinary coprimality at private exponent totals one and two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_ONE_TWO_ALL_DEGREES.md) |
+| Exact mirrored polar Euler factorization and residual stability obstruction | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_POLAR_EULER_FACTORS.md) |
+| Consecutive angular separation from paired binomial Newton edges | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_NEWTON_BINOMIAL_ANGLES.md) |
+| Long native Newton cycles give consecutive angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LONG_NEWTON_CYCLE_ANGULAR_GATE.md) |
+| All-degree angular separation with three private unit rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_THREE_PRIVATE_UNITS_ANGULAR_SEPARATION.md) |
+| All-degree angular separation at private exponent totals one and two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_ONE_TWO_ALL_DEGREES.md) |
+| All-degree two-private-unit angles at shared curvature seventy-seven fortieths | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_UNIT_CURVATURE_77_OVER_40.md) |
+| All-degree two-private-unit angles at shared curvature fifteen eighths | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_UNIT_CURVATURE_15_OVER_8.md) |
+| Exact linked positive-radius test for two private unit rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_LINKED_POSITIVE_RADIUS_GATE.md) |
+| Quadratic radial asymmetry and all-degree weak private-unit closure | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_WEAK_RADIAL_INTEGER_DRIFT.md) |
+| Uniform quadratic angular reserve and stability for mirrored private-unit cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_MIRRORED_UNIFORM_ANGULAR_RESERVE.md) |
+| All-degree private-unit closure at linear weak matched curvature seventeen | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_WEAK_CURVATURE_SEVENTEEN.md) |
+| All-degree stability for balanced same- and cross-slope Gauss blocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_BALANCED_GAUSS_BLOCKS.md) |
+| Uniform one-sided adjacent angular comparison for two mirrored slots | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TWO_SLOT_MIRRORED_FORCE_COMPARISON.md) |
+| Multi-edge Newton comparison for all-degree ordinary angular certificates | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_MULTI_EDGE_ANGULAR_GATE.md) |
+| All-degree physical coprimality along every affine row-base ray | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AFFINE_BASE_RAY_ALL_DIRECTIONS.md) |
+| All-degree angular separation from opposite slots along matched tanh rays | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_OPPOSED_AFFINE_ANGLES.md) |
+| Quadratic angular stability for opposite matched private-unit slots | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_NEAR_MIRROR_QUADRATIC_ANGLES.md) |
+| Single-order rigidity of ordinary factorial row profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SINGLE_ORDER_ROW_RIGIDITY.md) |
+| Exact factorial row replacements and all-degree angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EXACT_FACTORIAL_ROW_REPLACEMENTS.md) |
+| Paired reciprocal Newton slopes and cyclotomic certificates | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RECIPROCAL_PAIRED_SLOPE_CYCLOTOMIC_GATE.md) |
+| All-degree linked first-box exclusion for both-private profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_FIRST_BOX_LINKED_PHASE.md) |
+| Every-degree signed diffuse angular stability for private unit profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_DIFFUSE_SIGNED_TANH_ANGLES.md) |
+| Cutoff-free physical radius separation from signed drift and matched skew | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_SIGNED_SKEW_RADIAL_SEPARATION.md) |
+| Every-degree coprimality from interlaced factorial coefficient ratios | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_EUCLIDEAN_DESCENT.md) |
+| Binomial weighting can destroy interlaced-ratio coprimality | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BINOMIAL_RATIO_DESCENT_OBSTRUCTION.md) |
+| Ordinary obstruction to binomially normalized remainder transfer | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORDINARY_BINOMIAL_REMAINDER_OBSTRUCTION.md) |
+| Field discriminant certificates for ordinary consecutive factorial moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMMON_FACTOR_FIELD_DISCRIMINANT.md) |
+| Cutoff-free weak-curvature closure for two private units | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_ABSOLUTE_WEAK_RADIAL_DRIFT.md) |
+| Absolute signed skew and integer drift for two private units | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_NONWEAK_SKEW_RADIAL.md) |
+| Absolute signed degree-imbalance exclusion for two private units | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_ABSOLUTE_SIGNED_IMBALANCE.md) |
+| Absolute imbalance twenty-five for two private units | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_IMBALANCE_TWENTY_FIVE.md) |
+| CM-field gate for both-private physical common factors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CM_COMMON_FACTOR_GATE.md) |
+| A single reciprocal factorial can destroy ratio-descent coprimality | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SINGLE_FACTORIAL_WEIGHT_OBSTRUCTION.md) |
+| Degree-growth obstruction for uniform-slope private-unit common factors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_COMMON_FACTOR_DEGREE_GROWTH.md) |
+| Higher label exclusion from linked endpoint noise | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_HIGHER_LABEL_LINKED_RESOLVENT.md) |
+| All higher angle labels excluded for two private units | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_ALL_HIGHER_LABELS.md) |
+| Cutoff-free weak physical closure at shared curvature three tenths | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_WEAK_THREE_TENTHS.md) |
+| Cutoff-free weak physical closure at shared curvature twenty-three sixtieths | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_WEAK_TWENTY_THREE_SIXTIETHS.md) |
+| Explicit physical cutoff for all two-private-unit profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_EXPLICIT_FIRST_LABEL_CUTOFF.md) |
+| Every-degree separation at signed imbalance three for private unit pairs | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_IMBALANCE_THREE.md) |
+| Quadratic residual case for two private units | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_QUADRATIC_RESIDUAL.md) |
+| All-degree physical separation through private-unit curvature two thirds | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_FIRST_LABEL_TWO_THIRDS.md) |
+| Signed imbalance two beyond order 122 for private unit pairs | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_IMBALANCE_TWO_ORDER_CUTOFF.md) |
+| Angular separation from the joint matched private-unit packet equations | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_UNIT_MATCHED_PHASE_HIGH_LABELS.md) |
+| All-degree ordinary coprimality with private variables on both sides | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOTH_PRIVATE_ALL_DEGREES.md) |
+| First-sector coprimality from the exact factorial polar derivative | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_POLAR_DERIVATIVE_FIRST_SECTOR.md) |
+| First-sector separation from the direct factorial coefficient ratio | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIRECT_RATIO_FIRST_SECTOR.md) |
+| Physical coprimality for linked Gamma moments and a single shared unit gap | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_UNIT_GAP_GAMMA_NUMERICAL_RANGE.md) |
+| Matched tanh angular response at simple roots of an arbitrary core | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_SIMPLE_CORE_ANGULAR_RESPONSE.md) |
+| Native Newton edges certify first-order angular separation under weak shared tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_NATIVE_NEWTON_ANGULAR_RESPONSE.md) |
+| Simultaneous mirrored merger limits and permutation matchings | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_MULTIBLOCK_MERGER_MATCHINGS.md) |
+| A primitive norm gate for common quadratic factors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIMITIVE_QUADRATIC_NORM_GATE.md) |
+| All-degree angular separation with a private side of large degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_ENTROPY_THIRTEEN.md) |
+| All-degree weak shared tails around a single private unit | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_UNIT_ALL_INTEGER_TWISTS.md) |
+| First-sector angular separation from the exact factorial rectangle | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FACTORIAL_RECTANGLE_FIRST_SECTOR.md) |
+| First-sector bounds at and below shared critical curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SUBCRITICAL_FIRST_SECTOR_CONCENTRATION.md) |
+| Two-sector separation from a linked factorial coefficient chord | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TWO_SECTOR_COEFFICIENT_CHORD.md) |
+| Finite physical exceptional points for diffuse extensions of any ordinary core | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_PHYSICAL_EXCEPTION_POINTS.md) |
+| Third-order matched tanh test for simple core rays | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_CUBIC_CORE_ANGLE_RESPONSE.md) |
+| All-degree angular separation with a private side of total exponent six | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_DEGREE_SIX_ALL_ANGLES.md) |
+| Independent Gaussian clocks and the angular resultant at infinity | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_TWO_CLOCK_RESULTANT_AT_INFINITY.md) |
+| Prime-power Galois cycles separate adjacent factorial root arguments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIME_POWER_CYCLE_ANGULAR_GATE.md) |
+| Uniform diffuse angular stability for cores with tight exponent tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_TIGHT_CORE_DIFFUSE_STABILITY.md) |
+| A polynomial bound and finite exact menu for opposed affine angular separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_AFFINE_TRACE_MENU.md) |
+| A uniform finite menu of diffuse extensions of any ordinary core | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIVERSAL_DIFFUSE_STRENGTH_MENU.md) |
+| Uniform physical diffuse stability on affine bias segments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_DIFFUSE_BIAS_SEGMENTS.md) |
+| Generic ordinary cores are stable under diffuse tails along prescribed curves | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_RATIONAL_SLOPE_GENERIC_CLOSURE.md) |
+| Native common-factor degree bounds from deep factorial blocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CENTRAL_DEEP_PRIME_DIVISOR_GATE.md) |
+| Native divisibility certificates for any opposed group at a common larger exponent | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMMON_UPPER_EXPONENT_DEEP_MARKS.md) |
+| Arbitrarily deep fixed-prime factorial obstruction with one shared row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MINIMAL_SINGLE_PRIME_SCREEN_OBSTRUCTION.md) |
+| All-degree coprimality for dominating large gaps near a common upper exponent | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMMON_UPPER_LARGE_GAPS_ALL_DEGREES.md) |
+| Jacobi numerical-range exclusion for original opposed unit factorial rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_UNIT_JACOBI_STRIP.md) |
+| Concentration in one matched Gauss row after first-moment normalization | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_ROW_CONCENTRATION.md) |
+| A weighted angular collision satisfying quadratic tanh packing | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_QUADRATIC_PACKING_OBSTRUCTION.md) |
+| Cancellation within each matched integer row improves two angular criteria | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_ROW_CANCELLED_ANGLE_LIFT.md) |
+| An explicit all-degree angular criterion from one matched tanh pair | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_ROW_CANCELLED_ANGLE_LIFT.md) |
+| All-degree factorial separation from the large-prime part of retained rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LARGE_FACTORIAL_MARK_PRIME_BUDGET.md) |
+| All-degree coprimality for rationally separated upper bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RATIONAL_UPPER_BANDS_ALL_DEGREES.md) |
+| All-degree coprimality in bounded row clusters with arbitrary gap ratios | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOUNDED_UPPER_CLUSTER_GAP_SPREAD.md) |
+| An empty gap interval permits unbounded row multiplicities | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAP_LACUNA_UNBOUNDED_MULTIPLICITIES.md) |
+| All-degree SFC(2) from strictly convex factorial mark counts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DENSE_GAP_MARKS_ALL_DEGREES.md) |
+| All-degree coprimality from a separated lower endpoint | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SEPARATED_LOWER_ENDPOINT_ALL_DEGREES.md) |
+| All-degree coprimality for dense gaps in several tilted upper bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TILTED_DENSE_GAP_MARKS_ALL_DEGREES.md) |
+| Independent real and finite-prime approximation of adjacent factorial coefficients | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_REAL_LOCAL_COEFFICIENT_APPROXIMATION.md) |
+| All-degree regular approximation with arbitrary finite-prime data | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_REAL_LOCAL_COEFFICIENT_APPROXIMATION.md) |
+| A nonsemialgebraic outer boundary of the exact ordinary compactification | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPACTIFICATION_NONSEMIALGEBRAIC_BOUNDARY.md) |
+| An exact intermediate polynomial for a linear shared monomial | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LINEAR_MONOMIAL_EULER_BRIDGE.md) |
 
 **Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
 
@@ -511,6 +753,8 @@ Scope limits:
 - A three-column ordinary factorial row identification has regular endpoint moments in orders two through four and a certified collision in the physical interpolation. This excludes physical-interval nonvanishing as a general transfer proof. The discrete endpoint question and the unrestricted two-column interval remain open.
 - The exact joint measure closure has a specific diagonal diffuse law and an independent signed center parameter. An all-order physical binary transfer is proved with untouched independent private degree at least two on both sides.
 - Every ordinary two-monomial profile is covered through terminal thirteen. Above a computable absolute unevaluated cutoff, every profile has disjoint consecutive root arguments, even after independent positive rescalings. Uniform weak- and high-curvature angular exclusion applies at every terminal. The remaining fixed terminals start at fourteen.
+- Ordinary consecutive coprimality is proved in every degree whenever there is a private variable on each side. The remaining general binary profiles have at most one private side.
+- One-private profiles satisfy all-degree angular separation if twice the total private exponent plus the shared absolute curvature is at least thirteen. A separate explicit weak-tail hypothesis gives all-order physical coprimality with a single private unit and arbitrary signed shared gap.
 
 Tracked obligations (computed states):
 
@@ -539,6 +783,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Decide whether the actual repeated-root triple set is EMPTY: for EVERY integer a>=0,d>=1,m>=2, prove gcd_Q(A_(m;a,d),A_(m;a,d)_prime)=1, or exhibit an actual repeated-root triple. A support-uniform eventual cutoff and finiteness of this set do not prove emptiness.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-ALL-ORDER-SQUAREFREENESS
 - **mathematical / open:** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF
 - **mathematical / open:** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
-- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at the remaining terminals from N=14 below the computable absolute cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
+- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for the remaining multivariate two-monomial profiles with at most one private side, the latter with total private exponent at most five, from terminal fourteen below the computable absolute angular cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

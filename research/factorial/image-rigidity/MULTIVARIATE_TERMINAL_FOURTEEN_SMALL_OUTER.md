@@ -3,7 +3,7 @@
 For fully shared ordinary profiles, use the endpoint-normalized
 order-thirteen reflected outer mean \(u\). The order-thirteen and
 order-fourteen factorial polynomials have disjoint arguments for
-\(0<u\le7/400\) if all lower-order reciprocals
+\(0<u\le1/50\) if all lower-order reciprocals
 \(d/(13\ell+1)\) are at most \(1/8\). Together with the
 [retained profile result](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_PROFILES.md),
 this covers every fully shared profile on that interval.
@@ -37,7 +37,7 @@ integral. The two actual polynomials consequently have disjoint
 arguments throughout both real-adjacent sectors as well as the
 interior sectors.
 
-Replay the seven closed intervals with the
+Replay the eight closed intervals with the
 [exact checker](verify_multivariate_terminal_fourteen_small_outer.py).
-There are 13,731 radial cells, with 3,080 at order thirteen and
-10,651 at order fourteen.
+There are 30,923 radial cells, with 3,876 at order thirteen and
+27,047 at order fourteen.

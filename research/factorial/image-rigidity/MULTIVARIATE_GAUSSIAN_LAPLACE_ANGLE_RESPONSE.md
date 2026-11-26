@@ -31,7 +31,7 @@ root arguments.
 
 ## Angular gaps and velocities of the reference
 
-The [unitary Hermite circle location](https://arxiv.org/html/2203.05533#S2.SS1)
+The [unitary Hermite circle location](https://arxiv.org/pdf/2203.05533v3)
 applies to \(G(-z)\) with parameter \(2c/m\). Its roots are simple,
 and their signed displacements \(\theta_i\in(-\pi,\pi)\) from
 the negative real axis obey

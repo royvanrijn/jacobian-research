@@ -752,8 +752,458 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | One compressed valuation core suffices for the weighted two-column codegree | Internal result | proved | [Source](ABC_COMPRESSED_CORE_WEIGHTED_CODEGREES.md) |
 | A one-sided compressed core makes multiplicatively consistent rectangles sparse | Internal result | proved | [Source](ABC_COMPRESSED_CORE_WEIGHTED_CODEGREES.md) |
 | A Latin prime dictionary prevents a ratio deficit from marginal capacities alone | Internal result | proved | [Source](ABC_COMPRESSED_CORE_WEIGHTED_CODEGREES.md) |
+| Counting exponent is strictly below the positive-scale mass on two letters | Internal result | proved | [Source](ABC_IMBALANCED_PRODUCT_RADICAL_GROWTH.md) |
+| Imbalanced products need a substantial cofactor outside every bounded radical record | Internal result | proved | [Source](ABC_IMBALANCED_PRODUCT_RADICAL_GROWTH.md) |
+| Imbalanced products have arbitrarily large fresh-radical floors and low-order weight | Internal result | proved | [Source](ABC_IMBALANCED_PRODUCT_RADICAL_GROWTH.md) |
+| Exclusion of a pair with excessive low-order radical mass | Internal result | proved | [Source](ABC_IMBALANCED_PRODUCT_RADICAL_GROWTH.md) |
+| A deficit in the live nonatomic sum excludes bounded radical records | Internal result | proved | [Source](ABC_IMBALANCED_PRODUCT_RADICAL_GROWTH.md) |
+| Hensel packing bounds high orders on small primes of a powered binary form | Internal result | proved | [Source](ABC_IMBALANCED_PRODUCT_RADICAL_GROWTH.md) |
+| A fixed affine target ratio power class has subpower multiplicity | Internal result | proved | [Source](ABC_RECTANGLE_POWER_CLASS_DEFECT.md) |
+| Two active independent affine coefficients suffice in a product power class | Internal result | proved | [Source](ABC_RECTANGLE_POWER_CLASS_DEFECT.md) |
+| Affine target rectangles with low adaptive power defect have a star bound | Internal result | proved | [Source](ABC_RECTANGLE_POWER_CLASS_DEFECT.md) |
+| Edgewise adaptive power defects give a strict affine graph bound | Internal result | proved | [Source](ABC_RECTANGLE_POWER_CLASS_DEFECT.md) |
+| Minimal target repairs cannot be multiplicatively separable on a dense affine graph | Internal result | proved | [Source](ABC_RECTANGLE_POWER_CLASS_DEFECT.md) |
+| A fixed multilinear norm value recovers all primitive input directions | Internal result | proved | [Source](ABC_TENSOR_NORM_FRESH_RADICALS.md) |
+| Independent multivariable norms each pay the full tuple exponent in joint fresh radical | Internal result | proved | [Source](ABC_TENSOR_NORM_FRESH_RADICALS.md) |
+| The third radical cap gives a two-ninths count on a moving affine line | Internal result | proved | [Source](ABC_AFFINE_SLICE_RADICAL_COUNTS.md) |
+| An affine slice at coefficient two ninths forces one macroscopic prime per letter | Internal result | proved | [Source](ABC_AFFINE_SLICE_RADICAL_COUNTS.md) |
+| The balanced Pell slice has small-budget coefficient one sixth at fixed offsets | Internal result | proved | [Source](ABC_AFFINE_SLICE_RADICAL_COUNTS.md) |
+| Balanced endpoints require large nonconstant weighted-shift dictionaries | Internal result | proved | [Source](ABC_AFFINE_SLICE_RADICAL_COUNTS.md) |
+| Near-quadratic linear tripartite graphs can exclude balanced six-cycles | Internal result | proved | [Source](ABC_BALANCED_LATIN_TRADE_OBSTRUCTION.md) |
+| A dense linear tripartite graph forces a bounded signed incidence relation | Internal result | proved | [Source](ABC_BALANCED_LATIN_TRADE_OBSTRUCTION.md) |
+| Exact addition forces a simultaneous arithmetic parallelogram on the three letters | Internal result | proved | [Source](ABC_BALANCED_LATIN_TRADE_OBSTRUCTION.md) |
+| The dual Fermat cone has square-root cancellation at disjoint shifted branches | Internal result | proved | [Source](ABC_THREE_PRIME_FERMAT_NOISE.md) |
+| Twice-differenced Fermat cone completion reaches beyond total exponent three halves | Internal result | proved | [Source](ABC_THREE_PRIME_FERMAT_NOISE.md) |
+| False balanced radical incidences persist for three distinct primes beyond three halves | Internal result | proved | [Source](ABC_THREE_PRIME_FERMAT_NOISE.md) |
+| Three or four homogeneous targets give uniform adaptive power-defect bounds | Internal result | proved | [Source](ABC_ADAPTIVE_HOMOGENEOUS_POWER_STARS.md) |
+| Adaptive homogeneous stars count least target repair classes without affine conversion | Internal result | proved | [Source](ABC_ADAPTIVE_HOMOGENEOUS_POWER_STARS.md) |
+| A fixed letter gives half the smaller remaining radical cap | Internal result | proved | [Source](ABC_FIXED_LETTER_RADICAL_CAPS.md) |
+| The fixed-letter exponent is strictly below both positive-scale masses | Internal result | proved | [Source](ABC_FIXED_LETTER_RADICAL_CAPS.md) |
+| Each positive-scale mass exceeds one sixth close to minimum nonatomic mass | Internal result | proved | [Source](ABC_FIXED_LETTER_RADICAL_CAPS.md) |
+| A free letter's high-order escape or short height saves from the opposite nonatomic cap | Internal result | proved | [Source](ABC_FIXED_LETTER_RADICAL_CAPS.md) |
+| A balanced minimally repaired target radical has half-size exponent | Internal result | proved | [Source](ABC_FIXED_LETTER_RADICAL_CAPS.md) |
+| Only the lower half of the normalized target multiplicity range can occur | Internal result | proved | [Source](ABC_FIXED_LETTER_RADICAL_CAPS.md) |
+| A fixed weighted least-repair class has an outside-radical fibre bound | Internal result | proved | [Source](ABC_FIXED_LETTER_RADICAL_CAPS.md) |
+| Joint valuation classes amplify effective orders through least common multiples | Internal result | proved | [Source](ABC_FIXED_LETTER_RADICAL_CAPS.md) |
+| Near-quadratic additive graphs contain fixed binary shift allocations | Internal result | proved | [Source](ABC_ADDITIVE_TRANSLATION_CUBES.md) |
+| Weighted least-repair classes on a translation cube have small fibres | Internal result | proved | [Source](ABC_ADDITIVE_TRANSLATION_CUBES.md) |
+| A dense primitive arithmetic graph can forbid all three placements of one shift | Internal result | proved | [Source](ABC_ADDITIVE_TRANSLATION_CUBES.md) |
+| Shifted original values keep their radicals outside prescribed pools | Internal result | proved | [Source](ABC_ADDITIVE_TRANSLATION_CUBES.md) |
+| Arithmetic derivatives impose a uniform lattice inequality on primitive families | Internal result | proved | [Source](ABC_ARITHMETIC_DERIVATIVE_FAMILY_LATTICES.md) |
+| Valuation ranks at all depths divide arithmetic-derivative minors | Internal result | proved | [Source](ABC_ARITHMETIC_DERIVATIVE_FAMILY_LATTICES.md) |
+| Common-modulus gains satisfy a projective capacity bound | Internal result | proved | [Source](ABC_ARITHMETIC_DERIVATIVE_FAMILY_LATTICES.md) |
+| Independent modular blocks test popular target radicals | Internal result | proved | [Source](ABC_MODULAR_TARGET_POPULARITY.md) |
+| Bounded-height Fermat boxes give many popular false targets | Internal result | proved | [Source](ABC_MODULAR_TARGET_POPULARITY.md) |
+| Several undersized modular popularity tests can share many false targets | Internal result | proved | [Source](ABC_MODULAR_TARGET_POPULARITY.md) |
+| Pointwise prime-pool discounts permit every intermediate support multiplicity | Internal result | proved | [Source](ABC_TARGET_MULTIPLICITY_POINTWISE_OBSTRUCTION.md) |
+| Small affine minors for one complete letter force a global count saving | Internal result | proved | [Source](ABC_COMPLETE_LETTER_SMALL_FEATURES.md) |
+| Bounded-rank progressions and short approximate carriers give global savings | Internal result | proved | [Source](ABC_COMPLETE_LETTER_SMALL_FEATURES.md) |
+| Bounded additive doubling is excluded on a complete letter at all balanced profiles | Internal result | proved | [Source](ABC_COMPLETE_LETTER_SMALL_FEATURES.md) |
+| Valuation projections count low-rank rational cosets with a radical cap | Internal result | proved | [Source](ABC_VALUATION_SPAN_COSETS.md) |
+| Separating prime pools give global savings for original letters and primitive ratios | Internal result | proved | [Source](ABC_VALUATION_SPAN_COSETS.md) |
+| Separating prime sets have limited fractional packing at balanced saturation | Internal result | proved | [Source](ABC_VALUATION_SPAN_COSETS.md) |
+| Three disjoint separating prime sets give coefficient two sevenths | Internal result | proved | [Source](ABC_VALUATION_SPAN_COSETS.md) |
+| Fixed-fold rational products at polynomial height already have maximal exponent | Internal result | proved | [Source](ABC_VALUATION_SPAN_COSETS.md) |
+| One crossing prime gives a relative-interval radical count | Internal result | proved | [Source](ABC_SHORT_INTERVAL_RADICAL_FILTER.md) |
+| A sufficiently short power interval contains very few small-radical integers | Internal result | proved | [Source](ABC_SHORT_INTERVAL_RADICAL_FILTER.md) |
+| A short real filter lowers the sufficient prime-block exponent to one minus multiplicity exponent | Internal result | proved | [Source](ABC_SHORT_INTERVAL_RADICAL_FILTER.md) |
+| Fractional prime projections pay their average conditional entropy loss | Internal result | proved | [Source](ABC_APPROXIMATE_VALUATION_SEPARATORS.md) |
+| A logarithmic missing valuation rank is free at exponent scale | Internal result | proved | [Source](ABC_APPROXIMATE_VALUATION_SEPARATORS.md) |
+| Near-natural prime frequencies alone do not extract cheap valuation projections | Internal result | proved | [Source](ABC_APPROXIMATE_VALUATION_SEPARATORS.md) |
+| Bounded character coordinates contribute power-small popularity at the original test scale | Internal result | proved | [Source](ABC_MODULAR_POPULARITY_NONPRINCIPAL_MODES.md) |
+| Short-interval dictionary sparsity suppresses exceptional character modes | Internal result | proved | [Source](ABC_MODULAR_POPULARITY_NONPRINCIPAL_MODES.md) |
+| Only the signed high character modes remain at the real-filtered prime scale | Internal result | proved | [Source](ABC_MODULAR_POPULARITY_NONPRINCIPAL_MODES.md) |
+| Complete-residue positive-part Jacobi moments are too large | Internal result | proved | [Source](ABC_MODULAR_POPULARITY_NONPRINCIPAL_MODES.md) |
+| Near-quadratic exact primitive addition permits large feature rank on every part | Internal result | proved | [Source](ABC_HIGH_DIMENSIONAL_ADDITIVE_FEATURE_OBSTRUCTION.md) |
+| Polynomially long sumset compression forces a small-budget count saving | Internal result | proved | [Source](ABC_HIGH_DIMENSIONAL_ADDITIVE_FEATURE_OBSTRUCTION.md) |
+| Short fixed-rank residue progressions at many primes force a count saving | Internal result | proved | [Source](ABC_HIGH_DIMENSIONAL_ADDITIVE_FEATURE_OBSTRUCTION.md) |
+| Sufficiently fine coarse bins preserve complete-letter entropy | Internal result | proved | [Source](ABC_SHORT_INTERVAL_RADICAL_FILTER.md) |
+| Short bases give small near-equality fibres for moving weighted powers | Internal result | proved | [Source](ABC_WEIGHTED_POWER_NEAR_EQUALITY.md) |
+| Near-equality fibre sparsity extends to signed comparisons | Internal result | proved | [Source](ABC_WEIGHTED_POWER_NEAR_EQUALITY.md) |
+| Power coefficient records lower the filtered modular test scale | Internal result | proved | [Source](ABC_WEIGHTED_POWER_NEAR_EQUALITY.md) |
+| Small radicals give sparse reduced rationals in short projective intervals | Internal result | proved | [Source](ABC_PROJECTIVE_SHORT_INTERVAL_RADICAL_FILTER.md) |
+| Short projective bins can supply conditional valuation entropy bounds | Internal result | proved | [Source](ABC_PROJECTIVE_SHORT_INTERVAL_RADICAL_FILTER.md) |
+| High-full binary forms have bounded primitive near-equality parameters | Internal result | proved | [Source](ABC_POLYNOMIAL_REAL_FILTER_OBSTRUCTIONS.md) |
+| The capped signed test recovers the filtered target multiplicity tail | Internal result | proved | [Source](ABC_CAPPED_SIGNED_POPULARITY.md) |
+| Implementing the cap by a uniform polynomial needs increasing degree | Internal result | proved | [Source](ABC_CAPPED_SIGNED_POPULARITY.md) |
+| Pointwise target constraints allow full free dictionaries without repeated supports | Internal result | proved | [Source](ABC_CAPPED_SIGNED_POPULARITY.md) |
+| Separating the real sum window by absolute Mellin weights has sharp power cost | Internal result | proved | [Source](ABC_MELLIN_REAL_FILTER_OBSTRUCTION.md) |
+| One high power grid limits repeated differences | Internal result | proved | [Source](ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md) |
+| A single fine grid excludes near-minimal nonatomic endpoints with small defects | Internal result | proved | [Source](ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md) |
+| One short-base grid bounds real-filtered additive incidences | Internal result | proved | [Source](ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md) |
+| Rich shift dictionaries pay a larger radical cost | Internal result | proved | [Source](ABC_POPULAR_SHIFT_RADICAL_AMPLIFICATION.md) |
+| Rich shifts of bounded radical have nonatomic and positive-scale mass | Internal result | proved | [Source](ABC_POPULAR_SHIFT_RADICAL_AMPLIFICATION.md) |
+| Critical-cap rich shifts are tall with bounded scaled valuations | Internal result | proved | [Source](ABC_POPULAR_SHIFT_RADICAL_AMPLIFICATION.md) |
+| Identical finite target moments can coexist with power-separated tails | Internal result | proved | [Source](ABC_CAPPED_SIGNED_POPULARITY.md) |
+| Opposite even powers gain from derived sums of linear factors | Internal result | proved | [Source](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md) |
+| Three actual cyclotomic factors suffice when the order is divisible by three or four | Internal result | proved | [Source](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md) |
+| Opposite even exact powers improve the least-repair exponent across the central band | Internal result | proved | [Source](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md) |
+| Exact polynomial shift carriers need large coefficient dictionaries | Internal result | proved | [Source](ABC_RICH_SHIFT_POWER_CARRIERS.md) |
+| A short real error permits two quantitative bounds for rich power shifts | Internal result | proved | [Source](ABC_RICH_SHIFT_POWER_CARRIERS.md) |
+| Without radical caps, dense primitive graphs can have many tall prime shifts | Internal result | proved | [Source](ABC_RICH_SHIFT_POWER_CARRIERS.md) |
+| Square summands with an exact power target gain from their Gaussian factors | Internal result | proved | [Source](ABC_GAUSSIAN_POWER_TARGET_SPLITTING.md) |
+| Gaussian square sums have smaller primitive repaired counts | Internal result | proved | [Source](ABC_GAUSSIAN_POWER_TARGET_SPLITTING.md) |
+| A proper ideal class order yields a weighted Gaussian radical saving | Internal result | proved | [Source](ABC_WEIGHTED_GAUSSIAN_CYCLOTOMIC_DESCENT.md) |
+| Purchased supports fix a weighted power target across arbitrary class groups | Internal result | proved | [Source](ABC_WEIGHTED_GAUSSIAN_CYCLOTOMIC_DESCENT.md) |
+| Diffuse supports provide the projective purchases in the cubic sector | Internal result | proved | [Source](ABC_WEIGHTED_GAUSSIAN_CYCLOTOMIC_DESCENT.md) |
+| Least repair preserves Frey inertia and the exact primitive valuation defects | Internal result | proved | [Source](ABC_FREY_REPAIR_PROJECTIVE_INERTIA.md) |
+| A full divisor on a weighted square root gives a uniform ray class fibre count | Internal result | proved | [Source](ABC_WEIGHTED_SQUARE_RAY_CLASS_MOMENTS.md) |
+| Balanced saturation needs odd-valuation radical on every pair of letters | Internal result | proved | [Source](ABC_WEIGHTED_SQUARE_RAY_CLASS_MOMENTS.md) |
+| Power-root ratios split a branch section into fixed roots of unity | Internal result | proved | [Source](ABC_ROOT_RATIO_MIXED_COVERS.md) |
+| Mixed power-root fibres reduce to one varying-base class moment | Internal result | proved | [Source](ABC_ROOT_RATIO_MIXED_COVERS.md) |
+| Mixed power signatures have height-free support bounds with fixed ratio classes | Internal result | proved | [Source](ABC_ROOT_RATIO_MIXED_COVERS.md) |
+| The (6,6,3) moving-kernel cost reduces to quadratic 3-torsion moments | Internal result | proved | [Source](ABC_ROOT_RATIO_MIXED_COVERS.md) |
+| Two squares and one odd power can have an infinite empty-defect fibre | Internal result | proved | [Source](ABC_ROOT_RATIO_MIXED_COVERS.md) |
+| Full divisors give diagonal moments on binary norm forms | Internal result | proved | [Source](ABC_PROJECTIVE_RAY_CLASS_NORM_MOMENTS.md) |
+| Quadratic output divisors can attain the full complementary radical exponent | Internal result | proved | [Source](ABC_PROJECTIVE_RAY_CLASS_NORM_MOMENTS.md) |
+| Every fixed-order power pair needs a positive defect mass at saturation | Internal result | proved | [Source](ABC_PROJECTIVE_RAY_CLASS_NORM_MOMENTS.md) |
+| Norm-value divisors can give a direct least-target-repair saving | Internal result | proved | [Source](ABC_PROJECTIVE_RAY_CLASS_NORM_MOMENTS.md) |
+| Consecutive valuation profiles pass simultaneous local power tests | Internal result | proved | [Source](ABC_SIMULTANEOUS_LOCAL_POWER_PROFILE_OBSTRUCTION.md) |
+| The prescribed consecutive degrees occur in primitive additive conic realizations | Internal result | proved | [Source](ABC_SIMULTANEOUS_LOCAL_POWER_PROFILE_OBSTRUCTION.md) |
+| Almost every planted profile requires fresh radical at bounded height | Internal result | proved | [Source](ABC_SIMULTANEOUS_LOCAL_POWER_PROFILE_OBSTRUCTION.md) |
+| A degree-p cyclic isogeny controls mixed-grid moving kernels | Internal result | proved | [Source](ABC_ROOT_RATIO_MIXED_COVERS.md) |
+| Signed joint dictionaries can span two letters in a full-modulus congruence | Internal result | proved | [Source](ABC_JOINT_FREE_LETTER_DICTIONARIES.md) |
+| Small cross-letter root groups have full entropy at balanced saturation | Internal result | proved | [Source](ABC_JOINT_FREE_LETTER_DICTIONARIES.md) |
+| The first quadratic torsion moment saves a mixed-grid sector with moving kernels | Internal result | proved | [Source](ABC_JOINT_FREE_LETTER_DICTIONARIES.md) |
+| The remaining mixed-grid endpoint requires a positive diffuse odd-valuation mass | Internal result | proved | [Source](ABC_JOINT_FREE_LETTER_DICTIONARIES.md) |
+| Bounded-degree composita retain class-group torsion up to a bounded factor | Internal result | proved | [Source](ABC_ROOT_RATIO_MIXED_COVERS.md) |
+| Common split primes can realize independently prescribed odd classes | Internal result | proved | [Source](ABC_ROOT_RATIO_MIXED_COVERS.md) |
+| The fixed-letter fibre bound allows effective prime prices | Internal result | proved | [Source](ABC_GROWING_PRIVATE_PRIME_PACKETS.md) |
+| One growing selection retains private prime packets in actual triples | Internal result | proved | [Source](ABC_GROWING_PRIVATE_PRIME_PACKETS.md) |
+| Growing affine fibres have fresh single and pair power defects | Internal result | proved | [Source](ABC_GROWING_AFFINE_DEFECT_FIBRES.md) |
+| Weighted affine shifts pay fresh defect along a fractional matching | Internal result | proved | [Source](ABC_GROWING_AFFINE_DEFECT_FIBRES.md) |
+| Growing affine shifts and least multipliers require high-degree radical extensions | Internal result | proved | [Source](ABC_GROWING_AFFINE_DEFECT_FIBRES.md) |
+| Generic actual edges anchor growing private families of fixed rectangles | Internal result | proved | [Source](ABC_ROOTED_PRIVATE_RECTANGLES.md) |
+| Private rooted rectangles give growing multiplicative rank | Internal result | proved | [Source](ABC_ROOTED_PRIVATE_RECTANGLES.md) |
+| Subpower thinning preserves the count scale while eliminating growing bicliques | Internal result | proved | [Source](ABC_ROOTED_PRIVATE_RECTANGLES.md) |
+| Private packets give angular list recovery at every balanced profile | Internal result | proved | [Source](ABC_PRIVATE_PACKET_RAY_SIEVE.md) |
+| A conjugate difference pays for every matching private ray test | Internal result | proved | [Source](ABC_PRIVATE_PACKET_RAY_SIEVE.md) |
+| Joint private ray tests are diagonal above a weight threshold | Internal result | proved | [Source](ABC_PRIVATE_PACKET_RAY_SIEVE.md) |
+| Quadratic three-torsion rarity persists when a small kernel divisor is prescribed | Internal result | proved | [Source](ABC_JOINT_FREE_LETTER_DICTIONARIES.md) |
+| An abstract rare set can satisfy hereditary first moments in one residue fibre | Internal result | proved | [Source](ABC_JOINT_FREE_LETTER_DICTIONARIES.md) |
+| Short retained odd ratios give a window-free moment saving | Internal result | proved | [Source](ABC_JOINT_FREE_LETTER_DICTIONARIES.md) |
+| Degree-divisibility masses bound normalized tame discriminant cost | Internal result | proved | [Source](ABC_THREE_POINT_DISCRIMINANT_COSTS.md) |
+| Prime-degree diffuse profiles retain the generic three-point cost | Internal result | proved | [Source](ABC_THREE_POINT_DISCRIMINANT_COSTS.md) |
+| Role slices bound two-variable affine defects outside the actual overlap pool | Internal result | proved | [Source](ABC_TWO_VARIABLE_AFFINE_DEFECTS.md) |
+| Two-variable affine differences retain weighted defects and high radical degree | Internal result | proved | [Source](ABC_TWO_VARIABLE_AFFINE_DEFECTS.md) |
+| A supplying opposite band forces an extra radical budget for primitive directions | Internal result | proved | [Source](ABC_TWO_VARIABLE_AFFINE_DEFECTS.md) |
+| Overlapping actual modulus records admit an averaged collision bound | Internal result | proved | [Source](ABC_OVERLAPPING_MODULUS_MOMENTS.md) |
+| Averaging the odd-kernel moment alone cannot repay the record cost | Internal result | proved | [Source](ABC_OVERLAPPING_MODULUS_MOMENTS.md) |
+| Cheap high-weight divisors force sparse affine and projective residue graphs | Internal result | proved | [Source](ABC_OVERLAPPING_MODULUS_MOMENTS.md) |
+| A divisor of a different form gives a full scalar ray lock | Internal result | proved | [Source](ABC_CROSS_FORM_PROJECTIVE_RAY_LOCKS.md) |
+| Asymmetric square kernels admit a larger window-free cubic-target sector | Internal result | proved | [Source](ABC_CROSS_FORM_PROJECTIVE_RAY_LOCKS.md) |
+| Quadratic signatures balance above the square root of the radical cap | Internal result | proved | [Source](ABC_PRIVATE_QUADRATIC_SIGNATURES.md) |
+| Balanced abc families give actual complete values with balanced signatures | Internal result | proved | [Source](ABC_PRIVATE_QUADRATIC_SIGNATURES.md) |
+| Two short primitive secants force a balanced abc count saving | Internal result | proved | [Source](ABC_PRIMITIVE_SECANT_RADICAL_AMPLIFICATION.md) |
+| Primitive affine secants satisfy a global pair inequality | Internal result | proved | [Source](ABC_PRIMITIVE_SECANT_RADICAL_AMPLIFICATION.md) |
+| Successive primitive secants carry new radical outside earlier supports | Internal result | proved | [Source](ABC_PRIMITIVE_SECANT_RADICAL_AMPLIFICATION.md) |
+| Physical coordinate differences satisfy a two-cap output count | Internal result | proved | [Source](ABC_PRIMITIVE_SECANT_RADICAL_AMPLIFICATION.md) |
+| Bounded physical differences at saturation force minimum complete dictionaries | Internal result | proved | [Source](ABC_PRIMITIVE_SECANT_RADICAL_AMPLIFICATION.md) |
+| Diffuse two-cap least repairs can have overwhelmingly large target differences | Internal result | proved | [Source](ABC_PRIMITIVE_SECANT_RADICAL_AMPLIFICATION.md) |
+| A fixed endpoint gives a radical bound with an adaptive prime pool | Internal result | proved | [Source](ABC_FIXED_ENDPOINT_SHIFT_RADICAL_COUNTS.md) |
+| Fixed complete fibres force sequential fresh radical on their shifts | Internal result | proved | [Source](ABC_FIXED_ENDPOINT_SHIFT_RADICAL_COUNTS.md) |
+| Physical shifts constrain intermediate multiplicities and maximum fibres | Internal result | proved | [Source](ABC_FIXED_ENDPOINT_SHIFT_RADICAL_COUNTS.md) |
+| A tall unit residue class costs half the one-letter radical budget | Internal result | proved | [Source](ABC_BOUNDED_DEGREE_CURVES_AND_SECANT_GCD.md) |
+| Balanced families have a compact band of affordable full prime powers | Internal result | proved | [Source](ABC_BOUNDED_DEGREE_CURVES_AND_SECANT_GCD.md) |
+| A moving plane curve of fixed degree gives an absolute balanced abc saving | Internal result | proved | [Source](ABC_BOUNDED_DEGREE_CURVES_AND_SECANT_GCD.md) |
+| Secant scaling gcds admit endpoint-dependent prime pools | Internal result | proved | [Source](ABC_BOUNDED_DEGREE_CURVES_AND_SECANT_GCD.md) |
+| At fixed budget the residual secant gcd can be peeled down to n-power size | Internal result | proved | [Source](ABC_BOUNDED_DEGREE_CURVES_AND_SECANT_GCD.md) |
+| Two-letter counting allows a short unrecorded third cofactor | Internal result | proved | [Source](ABC_UNRECORDED_COFACTOR_SECANT_TRANSFER.md) |
+| Primitive secant coordinates test minimum dictionaries without a gcd cap | Internal result | proved | [Source](ABC_UNRECORDED_COFACTOR_SECANT_TRANSFER.md) |
+| Numerically large scaling gcds force minimum complete-letter dictionaries | Internal result | proved | [Source](ABC_UNRECORDED_COFACTOR_SECANT_TRANSFER.md) |
+| Intermediate target multiplicity forces fresh low-order numerical weight on primitive secants | Internal result | proved | [Source](ABC_UNRECORDED_COFACTOR_SECANT_TRANSFER.md) |
+| Fixed complete fibres retain nonatomic mass outside prescribed pools | Internal result | proved | [Source](ABC_FIXED_FIBRE_TRIANGLE_RADICALS.md) |
+| A fixed complete fibre excludes small features at every positive exponent | Internal result | proved | [Source](ABC_FIXED_FIBRE_TRIANGLE_RADICALS.md) |
+| Primitive difference triangles in fixed fibres are tall and require radical on each side | Internal result | proved | [Source](ABC_FIXED_FIBRE_TRIANGLE_RADICALS.md) |
+| A critical triangle relation gives another balanced abc endpoint | Internal result | proved | [Source](ABC_FIXED_FIBRE_TRIANGLE_RADICALS.md) |
+| High-powerful output savings transfer to fixed-fibre difference triangles | Internal result | proved | [Source](ABC_FIXED_FIBRE_TRIANGLE_RADICALS.md) |
+| Full tagged triangle relations use a minimum dictionary of popular physical gaps | Internal result | proved | [Source](ABC_HEREDITARY_MINIMUM_TRIANGLE_TRANSFER.md) |
+| A selected full triangle relation admits one exact gcd and three prescribed residues | Internal result | proved | [Source](ABC_HEREDITARY_MINIMUM_TRIANGLE_TRANSFER.md) |
+| Pinning critical triangles preserves minimum complete dictionaries downstream | Internal result | proved | [Source](ABC_HEREDITARY_MINIMUM_TRIANGLE_TRANSFER.md) |
+| Critical triangles in any positive fixed fibre transfer to maximum target multiplicity | Internal result | proved | [Source](ABC_HEREDITARY_MINIMUM_TRIANGLE_TRANSFER.md) |
+| Actual prime packets in minimum dictionaries satisfy a repeated full-divisor constraint | Internal result | proved | [Source](ABC_MINIMUM_DICTIONARY_COMPACT_PRIME_PACKING.md) |
+| All minimum complete dictionaries have compact valuation cutoffs | Internal result | proved | [Source](ABC_MINIMUM_DICTIONARY_COMPACT_PRIME_PACKING.md) |
+| The sum of escaped numerical moments is available as one common modulus | Internal result | proved | [Source](ABC_MINIMUM_DICTIONARY_COMPACT_PRIME_PACKING.md) |
+| Mixed stars pack numerical prime powers from different original roles | Internal result | proved | [Source](ABC_CROSS_ROLE_COMPACT_PACKING.md) |
+| The maximal diffuse cutoff bounds the compact prime orders on every role | Internal result | proved | [Source](ABC_CROSS_ROLE_COMPACT_PACKING.md) |
+| A fixed triangle scaling gcd restricts the original compact valuation spectra | Internal result | proved | [Source](ABC_HEREDITARY_MINIMUM_TRIANGLE_TRANSFER.md) |
+| Diffuse power dictionaries can have few small-radical differences and sparse unit cells | Internal result | proved | [Source](ABC_DIFFUSE_TWO_CAP_PRIMITIVE_SECANT_OBSTRUCTION.md) |
+| Two diffuse caps permit large primitive secants at every target multiplicity level | Internal result | proved | [Source](ABC_DIFFUSE_TWO_CAP_PRIMITIVE_SECANT_OBSTRUCTION.md) |
+| A two-cap fixed fibre can have almost all three normalized sides of large radical | Internal result | proved | [Source](ABC_DIFFUSE_TWO_CAP_PRIMITIVE_SECANT_OBSTRUCTION.md) |
+| Critical triangle entropy permits a high-rank primitive fixed fibre | Internal result | proved | [Source](ABC_CRITICAL_TRIANGLE_ENTROPY_MODEL.md) |
+| Full-divisor locks leave uniform numerical width on a complete fibre | Internal result | proved | [Source](ABC_FIXED_FIBRE_VALUATION_WIDTH.md) |
+| Fixed complete fibres impose a sharper escaped and finite quantile bound | Internal result | proved | [Source](ABC_FIXED_FIBRE_VALUATION_WIDTH.md) |
+| Projective quantile rounding identifies one actual pivot prime | Internal result | proved | [Source](ABC_FIXED_FIBRE_VALUATION_WIDTH.md) |
+| Two minimum dictionaries bound the valuation spectrum of the third letter | Internal result | proved | [Source](ABC_TWO_MINIMUM_DICTIONARIES_TAIL_PACKING.md) |
+| Critical triangles constrain all three profiles at positive fixed-fibre exponents | Internal result | proved | [Source](ABC_TWO_MINIMUM_DICTIONARIES_TAIL_PACKING.md) |
+| Single-letter profiles lose exponent in short strips and full unit residues | Internal result | proved | [Source](ABC_TWO_MINIMUM_DICTIONARIES_TAIL_PACKING.md) |
+| Original affine images restrict the numerical height and the high tail of exact scaling | Internal result | proved | [Source](ABC_TWO_MINIMUM_DICTIONARIES_TAIL_PACKING.md) |
+| Pinned triangle chains preserve distinct original affine lifts and a numerical floor | Internal result | proved | [Source](ABC_PINNED_TRIANGLE_CHAINS.md) |
+| The next exact scale inherits an lcm from original full tail records | Internal result | proved | [Source](ABC_PINNED_TRIANGLE_CHAINS.md) |
+| Distinct ancestral affine forms allow cross-level CRT packing | Internal result | proved | [Source](ABC_PINNED_TRIANGLE_CHAINS.md) |
+| Repeated denominator support gives a three-cap pointwise count | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| Reciprocal relations lose exponent for excess prime incidence and role imbalance | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| Near-full abc families have large weighted higher sumsets in one original ratio orientation | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| Primitive minimal repairs inherit reciprocal expansion and support-sensitive relation estimates | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| Nontrivial complete-letter trades admit a uniform normalized saving | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| The last occurrence of a denominator prime supplies a squared projective modulus | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| Odd projective reciprocal relations have a uniform gap and extremal even relations pair | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| Dense primitive additive graphs can have only trade reciprocal identities | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| Scalar reciprocal odd relations save even with moving low-radical denominators | Internal result | proved | [Source](ABC_THREE_CAP_RATIO_SUMSETS.md) |
+| A split genus-two quotient recovers distinct affine projective reciprocal pairs | Internal result | proved | [Source](ABC_PROJECTIVE_RECIPROCAL_GENUS_TWO_RECOVERY.md) |
+| Exact scalar projective reciprocal relations save at every distinct active order | Internal result | proved | [Source](ABC_PROJECTIVE_RECIPROCAL_GENUS_TWO_RECOVERY.md) |
+| Joint reciprocal coordinates recover two distinct rows at subpower cost | Internal result | proved | [Source](ABC_JOINT_RECIPROCAL_PAIR_RECOVERY.md) |
+| Joint reciprocal relations save after global and fixed-letter radical pricing | Internal result | proved | [Source](ABC_JOINT_RECIPROCAL_PAIR_RECOVERY.md) |
+| Rational spacing permits a joint reciprocal saving on moving targets | Internal result | proved | [Source](ABC_JOINT_RECIPROCAL_PAIR_RECOVERY.md) |
+| Joint reciprocal energies isolate genuine diagonals in least repairs | Internal result | proved | [Source](ABC_JOINT_RECIPROCAL_PAIR_RECOVERY.md) |
+| Fixed-target powerful representations have joint reciprocal savings with arbitrary gcd | Internal result | proved | [Source](ABC_JOINT_RECIPROCAL_PAIR_RECOVERY.md) |
+| Powerful representations have the scalar projective saving with arbitrary gcd | Internal result | proved | [Source](ABC_PROJECTIVE_RECIPROCAL_GENUS_TWO_RECOVERY.md) |
+| The split genus-two mechanism also recovers fixed projective products | Internal result | proved | [Source](ABC_PROJECTIVE_RECIPROCAL_GENUS_TWO_RECOVERY.md) |
+| Consecutive reciprocal powers save for moving low-radical denominators at every order | Internal result | proved | [Source](ABC_RECIPROCAL_POWERS_VARIABLE_TARGET.md) |
+| Six moving reciprocal sums control actual minimally repaired values | Internal result | proved | [Source](ABC_RECIPROCAL_POWERS_VARIABLE_TARGET.md) |
+| A local Vandermonde annihilator bounds the full missing denominator divisor | Internal result | proved | [Source](ABC_RECIPROCAL_VANDERMONDE_SUPPORT.md) |
+| Small outside radical in several reciprocal moments forces exact label cancellation | Internal result | proved | [Source](ABC_RECIPROCAL_VANDERMONDE_SUPPORT.md) |
+| Cyclic determinants transfer paired projective primes to a primitive additive triple | Internal result | proved | [Source](ABC_CYCLIC_PROJECTIVE_PAIR_TRANSFER.md) |
+| Two-full-letter savings transfer back through cyclic pair determinants | Internal result | proved | [Source](ABC_CYCLIC_PROJECTIVE_PAIR_TRANSFER.md) |
+| Cyclic packet imbalance and a concentrated reflection give separate pair losses | Internal result | proved | [Source](ABC_CYCLIC_PROJECTIVE_PAIR_TRANSFER.md) |
+| Private denominator primes recover suffix denominators from a shifted numerator | Internal result | proved | [Source](ABC_PROJECTIVE_SUM_NUMERATOR_RADICALS.md) |
+| Two shifted numerators of a projective sum have large joint fresh radical | Internal result | proved | [Source](ABC_PROJECTIVE_SUM_NUMERATOR_RADICALS.md) |
+| Projective sum numerator growth persists on fixed powerful targets with arbitrary gcd | Internal result | proved | [Source](ABC_PROJECTIVE_SUM_NUMERATOR_RADICALS.md) |
+| At the one-third endpoint fixed-degree norm forms must carry fresh radical | Internal result | proved | [Source](ABC_PROJECTIVE_SUM_NUMERATOR_RADICALS.md) |
+| Forced eight-edge additive trades have a nonzero scalar reciprocal defect | Internal result | proved | [Source](ABC_PROJECTIVE_RECIPROCAL_GRAPH_OBSTRUCTION.md) |
+| An endpoint-height additive graph can have unique six-term reciprocal sums | Internal result | proved | [Source](ABC_PROJECTIVE_RECIPROCAL_GRAPH_OBSTRUCTION.md) |
+| Balanced capped minimum dictionaries force many large trade denominator radicals | Internal result | proved | [Source](ABC_PROJECTIVE_RECIPROCAL_GRAPH_OBSTRUCTION.md) |
+| Two consecutive scalar reciprocal powers give a saving linear in the order | Internal result | proved | [Source](ABC_SCALAR_RECIPROCAL_POWER_AMPLIFICATION.md) |
+| Linear-in-order scalar moment savings extend to least repair and arbitrary gcd | Internal result | proved | [Source](ABC_SCALAR_RECIPROCAL_POWER_AMPLIFICATION.md) |
+| Split genus-two recovery extends to fractional-linear reciprocal relations | Internal result | proved | [Source](ABC_FRACTIONAL_LINEAR_PROJECTIVE_RECOVERY.md) |
+| A small dictionary of fractional-linear maps controls shared original primes | Internal result | proved | [Source](ABC_FRACTIONAL_LINEAR_PROJECTIVE_RECOVERY.md) |
+| The arithmetic reciprocal image has near-quadratic weighted sumsets and Möbius products | Internal result | proved | [Source](ABC_FRACTIONAL_LINEAR_PROJECTIVE_RECOVERY.md) |
+| An affordable full linear divisor gives a half price for the Eisenstein norm | Internal result | proved | [Source](ABC_CENTERED_RECIPROCAL_NORM_COUNTS.md) |
+| A joint cap on six centered companion forms and their Eisenstein norm gives coefficient one eighth | Internal result | proved | [Source](ABC_CENTERED_RECIPROCAL_NORM_COUNTS.md) |
+| An unrestricted endpoint must carry normalized Eisenstein norm radical mass at least two thirds | Internal result | proved | [Source](ABC_CENTERED_RECIPROCAL_NORM_COUNTS.md) |
+| Prime-order defects of the centered reciprocal value have a height-free support count | Internal result | proved | [Source](ABC_CENTERED_RECIPROCAL_NORM_COUNTS.md) |
+| Adaptive exact multi-grids give a strict small-budget count | Internal result | proved | [Source](ABC_FINE_VALUATION_DIVISIBILITY.md) |
+| Prime-index valuation laws evade both exact and sparse signed grids | Internal result | proved | [Source](ABC_FINE_VALUATION_DIVISIBILITY.md) |
+| Fixed polynomial relations on least-repaired heights have few valuation cosets | Internal result | proved | [Source](ABC_REPAIRED_HEIGHT_POLYNOMIAL_RELATIONS.md) |
+| Least-repaired height dictionaries have nearly minimal energy at every fixed order | Internal result | proved | [Source](ABC_REPAIRED_HEIGHT_POLYNOMIAL_RELATIONS.md) |
+| Nonzero repaired weighted differences have large fresh radical in large dictionaries | Internal result | proved | [Source](ABC_REPAIRED_HEIGHT_POLYNOMIAL_RELATIONS.md) |
+| Repaired-height polynomial relations constrain tuples across the balanced primitive endpoint | Internal result | proved | [Source](ABC_REPAIRED_HEIGHT_POLYNOMIAL_RELATIONS.md) |
+| Two binary equations recover least-repaired primitive pairs from one affordable target record | Internal result | proved | [Source](ABC_REPAIRED_WEIGHTED_TARGET_DIFFERENCES.md) |
+| Affordable repaired target differences give a strict primitive quotient incidence saving | Internal result | proved | [Source](ABC_REPAIRED_WEIGHTED_TARGET_DIFFERENCES.md) |
+| A primitive matching can saturate simultaneous exact divisor records on all three roles | Internal result | proved | [Source](ABC_THREE_ROLE_DIVISOR_RECORD_OBSTRUCTION.md) |
+| Primitive prime membership restricts invisible directions after independent repair | Internal result | proved | [Source](ABC_REPAIRED_PRIMITIVE_PROJECTIVE_INCIDENCE.md) |
+| A bounded-degree projective curve meets few independently repaired primitive rows | Internal result | proved | [Source](ABC_REPAIRED_PRIMITIVE_PROJECTIVE_INCIDENCE.md) |
+| Distinct independently repaired points have sparse collinear triples | Internal result | proved | [Source](ABC_REPAIRED_PRIMITIVE_PROJECTIVE_INCIDENCE.md) |
+| Unique negative exponents reconstruct a moving denominator without a separate charge | Internal result | proved | [Source](ABC_REPAIRED_PRIMITIVE_PROJECTIVE_INCIDENCE.md) |
+| Nondegenerate power systems release all variables witnessed by at least one equation | Internal result | proved | [Source](ABC_REPAIRED_VERONESE_DEPENDENCIES.md) |
+| Repaired projective interpolation circuits determine their private prime packets | Internal result | proved | [Source](ABC_REPAIRED_VERONESE_DEPENDENCIES.md) |
+| Independently repaired rows are generically in Veronese general position | Internal result | proved | [Source](ABC_REPAIRED_VERONESE_DEPENDENCIES.md) |
+| Universal sparse repair identities on a primitive additive graph retain only common repair factors | Internal result | proved | [Source](ABC_SPARSE_REPAIR_GRAPH_IDENTITIES.md) |
+| Primitive realizations of a fixed additive pattern avoid a small repair-relation catalogue | Internal result | proved | [Source](ABC_SPARSE_REPAIR_GRAPH_IDENTITIES.md) |
+| Affordable ternary relations on separately repaired letters give a strict small-budget saving | Internal result | proved | [Source](ABC_INDEPENDENT_REPAIR_RELATIONS.md) |
+| Canonical inverse-repair coefficients preserve almost all primitive row entropy | Internal result | proved | [Source](ABC_INDEPENDENT_REPAIR_RELATIONS.md) |
+| Mixed multiplier-height transforms have uniform fixed-shift savings | Internal result | proved | [Source](ABC_INDEPENDENT_REPAIR_RELATIONS.md) |
+| Forced original additive trades rarely survive canonical target least repair | Internal result | proved | [Source](ABC_INDEPENDENT_REPAIR_RELATIONS.md) |
+| Two diffuse complete caps coexist with sparse repaired relations and a large third radical | Internal result | proved | [Source](ABC_TWO_CAP_REPAIRED_ADDITIVE_OBSTRUCTION.md) |
+| Critical third label cardinality alone cannot improve the convolution entropy bound | Internal result | proved | [Source](ABC_TWO_CAP_REPAIRED_ADDITIVE_OBSTRUCTION.md) |
+| Path congruences determine exact projections of affine graph records | Internal result | proved | [Source](ABC_GRAPH_PATH_DIVISOR_LOCKS.md) |
+| Overlapping path divisors count configurations at their union radical price | Internal result | proved | [Source](ABC_GRAPH_PATH_DIVISOR_LOCKS.md) |
+| Deep target valuations transfer to the original summand difference moments | Internal result | proved | [Source](ABC_GRAPH_PATH_DIVISOR_LOCKS.md) |
+| The target projection of an affordable fibre preserves weighted sum entropy | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTION_ENTROPY.md) |
+| A normalized target template recovers a tuple below the content margin | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTION_ENTROPY.md) |
+| A prescribed prime pool leaving less than one numerical height unit gives few rows | Internal result | proved | [Source](ABC_ALMOST_UNIT_COMMON_NUMERATOR_GCD.md) |
+| Two almost-unit original ratios with a large common shifted numerator gcd lie on few curves | Internal result | proved | [Source](ABC_ALMOST_UNIT_COMMON_NUMERATOR_GCD.md) |
+| A fixed target modulus and small numerical residual give a sharp anchored count | Internal result | proved | [Source](ABC_ALMOST_UNIT_COMMON_NUMERATOR_GCD.md) |
+| Moving linear polynomials can require exponentially many bounded-degree covering curves | Internal result | proved | [Source](ABC_ALMOST_UNIT_COMMON_NUMERATOR_GCD.md) |
+| Three full locks and a further cyclic index classify a split cubic with unit constraints | Internal result | proved | [Source](ABC_SPLIT_CUBIC_LOCK_LATTICES.md) |
+| The full-lock primitive locus spans its prescribed lattice up to a single parity factor | Internal result | proved | [Source](ABC_SPLIT_CUBIC_LOCK_LATTICES.md) |
+| The three residual abc cofactors are the index-form factors of an explicit split order | Internal result | proved | [Source](ABC_SPLIT_CUBIC_LOCK_LATTICES.md) |
+| Fixed-radical extra index can permit order J distinct realized congruence classes | Internal result | proved | [Source](ABC_SPLIT_CUBIC_LOCK_LATTICES.md) |
+| A deep marked target prime forces three near-critical residue block dictionaries | Internal result | proved | [Source](ABC_DEEP_RESIDUE_BLOCK_INVERSE.md) |
+| Deep marked blocks give superpolynomial modulus products on both summand endpoints | Internal result | proved | [Source](ABC_DEEP_RESIDUE_BLOCK_INVERSE.md) |
+| One affordable power representation on a summand excludes near-full marked blocks | Internal result | proved | [Source](ABC_DEEP_RESIDUE_BLOCK_INVERSE.md) |
+| A one-sided grid and a deep target mark give a count at arbitrary dictionary sizes | Internal result | proved | [Source](ABC_DEEP_RESIDUE_BLOCK_INVERSE.md) |
+| All three orientations of the additive graph share a numerical difference budget | Internal result | proved | [Source](ABC_CROSS_ROLE_PRECISION_AND_SHORT_RESIDUES.md) |
+| Short residue representatives yield a count with moving low-radical moduli and cofactors | Internal result | proved | [Source](ABC_CROSS_ROLE_PRECISION_AND_SHORT_RESIDUES.md) |
+| Mixed-role prime depths give divisibility of all minors of a fixed pattern | Internal result | proved | [Source](ABC_CROSS_ROLE_PRECISION_AND_SHORT_RESIDUES.md) |
+| Target-capped primitive graphs can have large diffuse deep difference moments | Internal result | proved | [Source](ABC_CROSS_ROLE_PRECISION_AND_SHORT_RESIDUES.md) |
+| Joint index power defects count actual rows under a fixed projective correspondence | Internal result | proved | [Source](ABC_SPLIT_INDEX_POWER_CORRESPONDENCES.md) |
+| An exact target shift gives a joint index count and a complementary norm bound | Internal result | proved | [Source](ABC_SPLIT_INDEX_POWER_CORRESPONDENCES.md) |
+| Two common branches permit a large primitive family in one joint index parity class | Internal result | proved | [Source](ABC_SPLIT_INDEX_POWER_CORRESPONDENCES.md) |
+| Actual additive labels can satisfy marked block incidence and all individual pair budgets | Internal result | proved | [Source](ABC_DEEP_TARGET_LAYER_INCIDENCE_OBSTRUCTION.md) |
+| Induced matching layers obstruct overlap in the unweighted marked additive graph | Internal result | proved | [Source](ABC_DEEP_TARGET_LAYER_INCIDENCE_OBSTRUCTION.md) |
+| An affordable low-height rational carrier excludes near-full marked residue blocks | Internal result | proved | [Source](ABC_DEEP_RESIDUE_BLOCK_INVERSE.md) |
+| The varying partition model cannot be lifted by bounded-height low-degree maps of the integer digits | Internal result | proved | [Source](ABC_DEEP_TARGET_LAYER_INCIDENCE_OBSTRUCTION.md) |
+| The full marked template forces affine summand encodings under exact additive target labels | Internal result | proved | [Source](ABC_DEEP_TARGET_LAYER_INCIDENCE_OBSTRUCTION.md) |
+| Empirical packet frequency controls actual composite residue blocks | Internal result | proved | [Source](ABC_AGGREGATE_DEEP_PACKET_INVERSE.md) |
+| Many actual summand values share one list of almost disjoint composite packets | Internal result | proved | [Source](ABC_AGGREGATE_DEEP_PACKET_INVERSE.md) |
+| Composite modulus stabilization excludes affordable short root representations | Internal result | proved | [Source](ABC_AGGREGATE_DEEP_PACKET_INVERSE.md) |
+| Integer target dictionaries can keep full packet price with genuinely subpower primes | Internal result | proved | [Source](ABC_AGGREGATE_DEEP_PACKET_INVERSE.md) |
+| Composite packets recover a short feature through a bounded-degree algebraic correspondence | Internal result | proved | [Source](ABC_DEEP_PACKET_ALGEBRAIC_LIFTS.md) |
+| An absolute ray residue dictionary enters the norm count at half its exponent | Internal result | proved | [Source](ABC_ABSOLUTE_TARGET_RAY_MOMENTS.md) |
+| Larger fixed moments absorb small discriminant exponents in projective norm counts | Internal result | proved | [Source](ABC_ABSOLUTE_TARGET_RAY_MOMENTS.md) |
+| Absolute input residues restore the norm count for quadratic target divisors | Internal result | proved | [Source](ABC_ABSOLUTE_TARGET_RAY_MOMENTS.md) |
+| A reducible target form can use any one nonlinear factor for the absolute ray count | Internal result | proved | [Source](ABC_ABSOLUTE_TARGET_RAY_MOMENTS.md) |
+| Composite packet prices combine with the ordinary norm estimate on fixed weighted powers | Internal result | proved | [Source](ABC_ABSOLUTE_TARGET_RAY_MOMENTS.md) |
+| Small projective feature minors force a strict saving throughout the balanced profiles | Internal result | proved | [Source](ABC_PROJECTIVE_SMALL_FEATURES.md) |
+| A short rational model of the original primitive ratio gives a least-repair quotient saving | Internal result | proved | [Source](ABC_PROJECTIVE_SMALL_FEATURES.md) |
+| Nearly vanishing higher differences force an integer-valued function to concentrate | Internal result | proved | [Source](ABC_EVALUATION_LAYER_CRT_OBSTRUCTION.md) |
+| Near-complete evaluation layers admit no arbitrary bounded-height CRT lift | Internal result | proved | [Source](ABC_EVALUATION_LAYER_CRT_OBSTRUCTION.md) |
+| Three simultaneously marked packets give near-quadratic original residue blocks | Internal result | proved | [Source](ABC_SIMULTANEOUS_COMPOSITE_PACKET_BLOCKS.md) |
+| Same-edge opposite packet lists lead to shortened affine abc cells | Internal result | proved | [Source](ABC_SIMULTANEOUS_COMPOSITE_PACKET_BLOCKS.md) |
+| A power saving on any pair of packet residues saves on the full marked count | Internal result | proved | [Source](ABC_SIMULTANEOUS_RESIDUE_PRODUCTS.md) |
+| Surviving packet residue alphabets contain many complete boxes of any fixed size | Internal result | proved | [Source](ABC_SIMULTANEOUS_RESIDUE_PRODUCTS.md) |
+| Arbitrary fixed unit residue boxes admit primitive shared-value lifts | Internal result | proved | [Source](ABC_SIMULTANEOUS_RESIDUE_PRODUCTS.md) |
+| Stripping a full packet forces its nonatomic mass into the empirical price | Internal result | proved | [Source](ABC_NONATOMIC_PACKET_PRICE_RIGIDITY.md) |
+| Two shortened root progressions and a third divisor strengthen the Fermat count | Internal result | proved | [Source](ABC_OPPOSITE_ROOT_LIST_DETERMINANT.md) |
+| Two short progression indices give a three-tenths coefficient on a Fermat sector | Internal result | proved | [Source](ABC_OPPOSITE_ROOT_LIST_DETERMINANT.md) |
+| Canonical quadratic norm elements retain the full target packet residue | Internal result | proved | [Source](ABC_CANONICAL_QUADRATIC_PACKET_FIELDS.md) |
+| A fixed target and deep packet can require power-many distinct quadratic fields | Internal result | proved | [Source](ABC_CANONICAL_QUADRATIC_PACKET_FIELDS.md) |
+| A fixed complete letter and any power class leave only height-subpower multiplicity | Internal result | proved | [Source](ABC_CANONICAL_QUADRATIC_PACKET_FIELDS.md) |
+| Near-full additive packet graphs contain sharp-scale shared-value boxes of every fixed size | Internal result | proved | [Source](ABC_SHARED_VALUE_RESIDUE_BOXES.md) |
+| Cheap power defects of arbitrary circulation products are sparse on shared-value boxes | Internal result | proved | [Source](ABC_SHARED_VALUE_RESIDUE_BOXES.md) |
+| Actual abc packet tuples have sharp-scale lifts with independent cycle valuations | Internal result | proved | [Source](ABC_SHARED_VALUE_RESIDUE_BOXES.md) |
+| One joint prime-support record propagates recovery along a comparison forest | Internal result | proved | [Source](ABC_SHARED_BOX_FOREST_POWER_DEFECTS.md) |
+| Low residual cycle rank permits repeated reconstruction from a single support | Internal result | proved | [Source](ABC_SHARED_BOX_FOREST_POWER_DEFECTS.md) |
+| A power defect on one letter gives a graph saving for arbitrary adaptive orders | Internal result | proved | [Source](ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md) |
+| One adaptive power defect saves across all cells of a marked packet tuple | Internal result | proved | [Source](ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md) |
+| The local fullness requirements determine the root-discriminant cost | Internal result | proved | [Source](ABC_RAMIFIED_IDEAL_LIFT_COST.md) |
+| Fractional ramification weights give a uniform effective abc count | Internal result | proved | [Source](ABC_RAMIFIED_IDEAL_LIFT_COST.md) |
+| One prescribed ramified field covers only a power-small share of critical target repairs | Internal result | proved | [Source](ABC_RAMIFIED_IDEAL_LIFT_COST.md) |
+| One tree support bounds all common-field lifts of a shared-value box | Internal result | proved | [Source](ABC_RAMIFIED_IDEAL_LIFT_COST.md) |
+| A fixed abc fibre excludes small affine features even for variable integral multiples | Internal result | proved | [Source](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md) |
+| Primitive directions in packet cells generically carry six cell units of radical | Internal result | proved | [Source](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md) |
+| Pairs of actual boxes with the same residue lists have fresh diagonal direction radicals | Internal result | proved | [Source](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md) |
+| Short progressions meet regularized packet dictionaries only sparsely | Internal result | proved | [Source](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md) |
+| All three packet weights restrict two-sided residual valuation freedom | Internal result | proved | [Source](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md) |
+| The primitive directions of synchronized boxes add fresh radical beyond a whole input array | Internal result | proved | [Source](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md) |
+| A common powerful lift must pay for both a first box and its primitive directions | Internal result | proved | [Source](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md) |
+| Fixed complete directions strengthen radical growth in synchronized boxes | Internal result | proved | [Source](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md) |
+| An omitted potential gives a uniform count by private radical on an original box edge | Internal result | proved | [Source](ABC_SHARED_BOX_PRIVATE_PRIME_SUPPORT.md) |
+| All original box positions generically carry disjoint private radical | Internal result | proved | [Source](ABC_SHARED_BOX_PRIVATE_PRIME_SUPPORT.md) |
+| Actual private valuation measures carry the full missing-vertex nonatomic mass | Internal result | proved | [Source](ABC_SHARED_BOX_PRIVATE_PRIME_SUPPORT.md) |
+| Original labels in two synchronized boxes can all be tested for joint privacy | Internal result | proved | [Source](ABC_SHARED_BOX_PRIVATE_PRIME_SUPPORT.md) |
+| Partial residue synchronization retains sharp-scale actual array pairs | Internal result | proved | [Source](ABC_PRIVATE_RADICALS_ON_ARRAY_DIFFERENCES.md) |
+| Every difference edge of a generic array pair contributes disjoint fresh radical | Internal result | proved | [Source](ABC_PRIVATE_RADICALS_ON_ARRAY_DIFFERENCES.md) |
+| Latin directions transfer all private difference primes into primitive triples | Internal result | proved | [Source](ABC_PRIVATE_RADICALS_ON_ARRAY_DIFFERENCES.md) |
+| Each missing same-axis difference carries a private radical in a single original box | Internal result | proved | [Source](ABC_PRIVATE_RADICALS_ON_ARRAY_DIFFERENCES.md) |
+| Every nonzero edge weight vector has a uniform cheap-defect count | Internal result | proved | [Source](ABC_SHARED_BOX_FULL_POWER_RANK.md) |
+| Original labels and least repair multipliers have full power-class rank in actual boxes | Internal result | proved | [Source](ABC_SHARED_BOX_FULL_POWER_RANK.md) |
+| Small-root-discriminant base change preserves the full least-repair Kummer degree | Internal result | proved | [Source](ABC_SHARED_BOX_FULL_POWER_RANK.md) |
+| Synchronized arrays and all their signed difference edge labels have joint defect sparsity | Internal result | proved | [Source](ABC_SYNCHRONIZED_PROJECTIVE_SECANT_RANK.md) |
+| Primitive secant odds and original data on any fixed number of boxes have exact joint rank | Internal result | proved | [Source](ABC_SYNCHRONIZED_PROJECTIVE_SECANT_RANK.md) |
+| Reduced three-term monomial identities on difference graphs come from triangles or four-cliques | Internal result | proved | [Source](ABC_SHARED_BOX_POLYNOMIAL_TRANSFERS.md) |
+| A nonconstant configuration of two rational outputs cannot reuse only crossed edge factors | Internal result | proved | [Source](ABC_SHARED_BOX_POLYNOMIAL_TRANSFERS.md) |
+| A new polynomial transfer factor on an actual box must have fresh radical | Internal result | proved | [Source](ABC_SHARED_BOX_POLYNOMIAL_TRANSFERS.md) |
+| Crossed box edges and new irreducible factors carry disjoint private prime supports | Internal result | proved | [Source](ABC_SHARED_BOX_POLYNOMIAL_TRANSFERS.md) |
+| Fixed complete-letter fibres force a uniform positive valuation band outside a multiplier | Internal result | proved | [Source](ABC_SHARED_BOX_PRIVATE_VALUATION_BANDS.md) |
+| A short cofactor interval gives a uniform count with any prescribed multiplier | Internal result | proved | [Source](ABC_SHARED_BOX_PRIVATE_VALUATION_BANDS.md) |
+| Actual shared-value boxes have uniform positive private numerical weight on every edge | Internal result | proved | [Source](ABC_SHARED_BOX_PRIVATE_VALUATION_BANDS.md) |
+| The original labels across synchronized boxes have disjoint positive private numerical parts | Internal result | proved | [Source](ABC_SHARED_BOX_LAURENT_OUTPUT_RIGIDITY.md) |
+| Private powers bound exponents even after numerical gcd normalization | Internal result | proved | [Source](ABC_SHARED_BOX_LAURENT_OUTPUT_RIGIDITY.md) |
+| Economical Laurent transfers generically yield only original triangles or constants | Internal result | proved | [Source](ABC_SHARED_BOX_LAURENT_OUTPUT_RIGIDITY.md) |
+| The derivative Gram determinant and maximal minor gcd have exact cotree formulas | Internal result | proved | [Source](ABC_SHARED_BOX_DERIVATIVE_MINOR_CYCLES.md) |
+| Prime contributions to derivative minors are exactly sums of valuation-level cycle ranks | Internal result | proved | [Source](ABC_SHARED_BOX_DERIVATIVE_MINOR_CYCLES.md) |
+| A box with all edge-private derivative coordinates has quotient rank 3m−2 | Internal result | proved | [Source](ABC_SHARED_BOX_DERIVATIVE_MINOR_CYCLES.md) |
+| Primitive depth components bound the derivative minor divisor using shared weight | Internal result | proved | [Source](ABC_SHARED_BOX_DERIVATIVE_MINOR_CYCLES.md) |
+| Private numerical weight gives explicit slack in the family derivative inequality | Internal result | proved | [Source](ABC_SHARED_BOX_DERIVATIVE_MINOR_CYCLES.md) |
+| Contracting inactive labels gives the exact derivative minors for partial private coordinates | Internal result | proved | [Source](ABC_SHARED_BOX_DERIVATIVE_MINOR_CYCLES.md) |
+| Generic large primitive boxes satisfy the all-edge-private derivative test with slack | Internal result | proved | [Source](ABC_SHARED_BOX_PRIVATE_VALUATION_BANDS.md) |
+| The polynomial discrepancy degree charges contact beyond the original factor orders | Internal result | proved | [Source](ABC_POLYNOMIAL_REAL_WINDOW_OBSTRUCTION.md) |
+| A short real discrepancy window loses almost one parameter dimension | Internal result | proved | [Source](ABC_POLYNOMIAL_REAL_WINDOW_OBSTRUCTION.md) |
+| The real window and actual support depth yield a joint polynomial-carrier count | Internal result | proved | [Source](ABC_POLYNOMIAL_REAL_WINDOW_OBSTRUCTION.md) |
+| Laurent transfer rigidity persists on slowly growing synchronized tuples | Internal result | proved | [Source](ABC_SHARED_BOX_LAURENT_OUTPUT_RIGIDITY.md) |
+| An affine test thins true representatives and squares the false acceptance rate | Internal result | proved | [Source](ABC_HASHED_TARGET_SUPPORT_POPULARITY.md) |
+| Affine gates give a bounded occurrence test for repaired target multiplicity | Internal result | proved | [Source](ABC_HASHED_TARGET_SUPPORT_POPULARITY.md) |
+| On a short real window a single narrow hash can reject all false discrepancies | Internal result | proved | [Source](ABC_HASHED_TARGET_SUPPORT_POPULARITY.md) |
+| Affine thinning fixes the ramp threshold in the signed target test | Internal result | proved | [Source](ABC_HASHED_TARGET_SUPPORT_POPULARITY.md) |
+| Two-leg additive gates have a sharp mean false-rate lower bound | Internal result | proved | [Source](ABC_RANDOMIZED_ADDITIVE_TEST_SEPARATION_RANK.md) |
+| Three separated original letters require total false mass at the unique-completion scale | Internal result | proved | [Source](ABC_RANDOMIZED_ADDITIVE_TEST_SEPARATION_RANK.md) |
+| The largest actual fibre sizes govern signed low-rank energy | Internal result | proved | [Source](ABC_RANDOMIZED_ADDITIVE_TEST_SEPARATION_RANK.md) |
+| Common divisors of the original summands prescribe an actual target quotient | Internal result | proved | [Source](ABC_TWO_TARGET_SUMMAND_LOCKS.md) |
+| Two locked targets suffice for a mixed power-defect codegree count | Internal result | proved | [Source](ABC_TWO_TARGET_SUMMAND_LOCKS.md) |
+| A residue of two actual repair multipliers recovers their target radical ratio | Internal result | proved | [Source](ABC_TWO_TARGET_SUMMAND_LOCKS.md) |
+| Two-target recovery gives a graph count using actual column codegrees | Internal result | proved | [Source](ABC_TWO_TARGET_SUMMAND_LOCKS.md) |
+| Mixed target power defects or cheap repair residues give strict diffuse-sector savings | Internal result | proved | [Source](ABC_TWO_TARGET_SUMMAND_LOCKS.md) |
+| An original full divisor gives a direct weighted residue count across the balanced endpoint | Internal result | proved | [Source](ABC_TWO_TARGET_SUMMAND_LOCKS.md) |
+| One normalized difference counts source pairs after canceling multiplier price | Internal result | proved | [Source](ABC_COMPRESSED_SHIFT_TARGET_TAILS.md) |
+| Small actual target codegrees and compressed shifts give a strict multiplicity tail | Internal result | proved | [Source](ABC_COMPRESSED_SHIFT_TARGET_TAILS.md) |
+| A fixed shift has a uniform count without source dictionary hypotheses | Internal result | proved | [Source](ABC_COMPRESSED_SHIFT_TARGET_TAILS.md) |
+| Compressed-shift gains count actual least-repair support tails | Internal result | proved | [Source](ABC_COMPRESSED_SHIFT_TARGET_TAILS.md) |
+| Three simultaneous shallow repair records control the radical span | Internal result | proved | [Source](ABC_SHALLOW_REPAIR_RADICAL_PLANES.md) |
+| The prime content of a plane normal controls residue occupancy and normal cost | Internal result | proved | [Source](ABC_SHALLOW_REPAIR_RADICAL_PLANES.md) |
+| Two equal exact residual powers and the radical plane give subpower completion | Internal result | proved | [Source](ABC_SHALLOW_REPAIR_RADICAL_PLANES.md) |
+| The exceptional quadratic factorization gives a strict saving on cheap records | Internal result | proved | [Source](ABC_SHALLOW_REPAIR_RADICAL_PLANES.md) |
+| Primitive triples outside small budgets attain the angular bound with fully absorbing normals | Internal result | proved | [Source](ABC_SHALLOW_REPAIR_RADICAL_PLANES.md) |
+| Unequal exact powers give an integer quotient by the actual third radical | Internal result | proved | [Source](ABC_UNEQUAL_POWER_RADICAL_PLANES.md) |
+| A fixed unequal-power quotient gives only subpower original rows | Internal result | proved | [Source](ABC_UNEQUAL_POWER_RADICAL_PLANES.md) |
+| The unequal-power quotient can be charged by height or outside radical | Internal result | proved | [Source](ABC_UNEQUAL_POWER_RADICAL_PLANES.md) |
+| Actual third-letter divisibility deepens the adjacent-power quotient without a determinant | Internal result | proved | [Source](ABC_UNEQUAL_POWER_RADICAL_PLANES.md) |
+| A large adaptive order on a radical plane reduces to a supported-value fibre | Internal result | proved | [Source](ABC_UNEQUAL_POWER_RADICAL_PLANES.md) |
+| Retained multiplier support lowers the normalized source pair price | Internal result | proved | [Source](ABC_COMPRESSED_SHIFT_TARGET_TAILS.md) |
+| Original target and cross-role overlaps lower actual source-pair completions | Internal result | proved | [Source](ABC_COMPRESSED_SHIFT_TARGET_TAILS.md) |
+| A projected plane and exact root divisibilities give two integer records | Internal result | proved | [Source](ABC_DIVISIBLE_POWER_ROOT_PLANES.md) |
+| Second valuations of the original third letter give an affine quotient | Internal result | proved | [Source](ABC_DIVISIBLE_POWER_ROOT_PLANES.md) |
+| Fixed divisible-root records give subpower recovery of original rows | Internal result | proved | [Source](ABC_DIVISIBLE_POWER_ROOT_PLANES.md) |
+| One actual correction factor can replace the second integer record | Internal result | proved | [Source](ABC_DIVISIBLE_POWER_ROOT_PLANES.md) |
+| Divisible corrections encode arbitrary high valuations on two free letters | Internal result | proved | [Source](ABC_DIVISIBLE_POWER_ROOT_PLANES.md) |
+| Deeper third-letter valuations give a higher exact divisible-root quotient | Internal result | proved | [Source](ABC_DIVISIBLE_POWER_ROOT_PLANES.md) |
+| The smaller-order correction divides the unequal-root quotient | Internal result | proved | [Source](ABC_UNEQUAL_DIVISIBLE_ROOT_PLANES.md) |
+| Two records suffice for unequal divisible-root completion | Internal result | proved | [Source](ABC_UNEQUAL_DIVISIBLE_ROOT_PLANES.md) |
+| Unequal projected roots give a strict sector with a full smaller-order correction budget | Internal result | proved | [Source](ABC_UNEQUAL_DIVISIBLE_ROOT_PLANES.md) |
+| Multiple exact layers on a polynomial carrier give one quotient | Internal result | proved | [Source](ABC_POLYNOMIAL_LAYER_RADICAL_PLANES.md) |
+| One fixed quotient recovers multiple varying valuation layers | Internal result | proved | [Source](ABC_POLYNOMIAL_LAYER_RADICAL_PLANES.md) |
+| Large excess gives a second quadratic range on a radical plane | Internal result | proved | [Source](ABC_POLYNOMIAL_LAYER_RADICAL_PLANES.md) |
+| Polynomial carrier layers can be counted without separate layer records | Internal result | proved | [Source](ABC_POLYNOMIAL_LAYER_RADICAL_PLANES.md) |
+| Popular composite divisors cannot resolve most of an original fibre's height | Internal result | proved | [Source](ABC_POPULAR_COMPOSITE_PACKET_LCM.md) |
+| Popular prime-power depths have a uniform numerical cap in actual completion stars | Internal result | proved | [Source](ABC_POPULAR_COMPOSITE_PACKET_LCM.md) |
+| Near-total high-valuation LCMs are sparse at a cutoff independent of the fixed star size | Internal result | proved | [Source](ABC_POPULAR_COMPOSITE_PACKET_LCM.md) |
+| A target cohort with large opposite high tails must have overlaps or lose stars | Internal result | proved | [Source](ABC_POPULAR_COMPOSITE_PACKET_LCM.md) |
+| Exact star occupancy counts the actual target's high tail | Internal result | proved | [Source](ABC_POPULAR_COMPOSITE_PACKET_LCM.md) |
+| The first two depth moments give a sharp lower bound for star LCM | Internal result | proved | [Source](ABC_POPULAR_COMPOSITE_PACKET_LCM.md) |
+| A low-overlap target cohort loses a power below the residual room threshold | Internal result | proved | [Source](ABC_POPULAR_COMPOSITE_PACKET_LCM.md) |
+| A common target lift leaves only the original target gcd in the normalized difference | Internal result | proved | [Source](ABC_PAIR_LIFT_PRIMITIVE_POWER_DIFFERENCES.md) |
+| A joint shift and primitive power-class dictionary counts unequal-target pairs | Internal result | proved | [Source](ABC_PAIR_LIFT_PRIMITIVE_POWER_DIFFERENCES.md) |
+| Original target divisibility and an odds window replace the reduced shift record | Internal result | proved | [Source](ABC_PAIR_LIFT_PRIMITIVE_POWER_DIFFERENCES.md) |
+| A quantitative pair-record threshold applies even with one quotient per repaired target | Internal result | proved | [Source](ABC_PAIR_LIFT_PRIMITIVE_POWER_DIFFERENCES.md) |
+| Prime-index diffuse profiles need nearly the full power defect at every adaptive order | Internal result | proved | [Source](ABC_PAIR_LIFT_PRIMITIVE_POWER_DIFFERENCES.md) |
+| Joint power defects locate the coefficient supports of normalized lifted pairs | Internal result | proved | [Source](ABC_NORMALIZED_PAIR_POWER_DEFECTS.md) |
+| Normalized power defects give fixed-target norm and moving-target cubic counts | Internal result | proved | [Source](ABC_NORMALIZED_PAIR_POWER_DEFECTS.md) |
+| Two normalized summand pairs recover their gcds and the original rows | Internal result | proved | [Source](ABC_NORMALIZED_PAIR_POWER_DEFECTS.md) |
+| A split conic divisor gives half price for the common opposite radical | Internal result | proved | [Source](ABC_NORMALIZED_PAIR_POWER_DEFECTS.md) |
+| Reduced shifts and joint power defects give a least-repair tail saving | Internal result | proved | [Source](ABC_NORMALIZED_PAIR_POWER_DEFECTS.md) |
+| Economical projected radical planes give a strict one-third saving | Internal result | proved | [Source](ABC_AFFORDABLE_DIFFUSE_PROJECTED_PLANES.md) |
+| A short polynomial of the true third radical can replace the projected plane coordinate | Internal result | proved | [Source](ABC_AFFORDABLE_DIFFUSE_PROJECTED_PLANES.md) |
+| One mixed residue disperses across a full balanced endpoint family | Internal result | proved | [Source](ABC_AFFORDABLE_DIFFUSE_PROJECTED_PLANES.md) |
+| Mixed completion stars charge the two original anchor dictionaries separately | Internal result | proved | [Source](ABC_MIXED_COMPLETION_STAR_OCCUPANCY.md) |
+| Mixed depth moments bound the union with one or many expensive anchors | Internal result | proved | [Source](ABC_MIXED_COMPLETION_STAR_OCCUPANCY.md) |
+| Cross-tail overlap yields actual deep divisors on normalized cross shifts | Internal result | proved | [Source](ABC_MIXED_COMPLETION_STAR_OCCUPANCY.md) |
+| Split elliptic curves recover primitive rows with independently moving targets | Internal result | proved | [Source](ABC_NORMALIZED_PAIR_POWER_DEFECTS.md) |
+| The shifted cubic defect replaces the exact shift on independently moving targets | Internal result | proved | [Source](ABC_NORMALIZED_PAIR_POWER_DEFECTS.md) |
+| Two joint power classes recover translation and scale of a primitive affine shape | Internal result | proved | [Source](ABC_AFFINE_SHAPE_JOINT_POWER_CLASSES.md) |
+| Weighted split covers recover affine shapes at all fixed prime orders | Internal result | proved | [Source](ABC_AFFINE_SHAPE_JOINT_POWER_CLASSES.md) |
+| A joint shape and all-letter defect record bounds the full repaired quotient family | Internal result | proved | [Source](ABC_AFFINE_SHAPE_JOINT_POWER_CLASSES.md) |
+| A combined parity class cannot replace the union of the two affine shape classes | Internal result | proved | [Source](ABC_AFFINE_SHAPE_JOINT_POWER_CLASSES.md) |
+| Weighted secants correct the projective pole class | Internal result | proved | [Source](ABC_PROJECTIVE_SHAPE_SECANT_CLASS_COUNTS.md) |
+| Three corrected power classes count a fixed projective shape | Internal result | proved | [Source](ABC_PROJECTIVE_SHAPE_SECANT_CLASS_COUNTS.md) |
+| Arbitrary three rows have a shape-free corrected cubic count | Internal result | proved | [Source](ABC_PROJECTIVE_SHAPE_SECANT_CLASS_COUNTS.md) |
+| A corrected class and shape budget constrains the repaired quotient count | Internal result | proved | [Source](ABC_PROJECTIVE_SHAPE_SECANT_CLASS_COUNTS.md) |
+| Two corrected classes suffice when the common original gcds are small | Internal result | proved | [Source](ABC_PROJECTIVE_SHAPE_SECANT_CLASS_COUNTS.md) |
+| Two actual anchors reduce the corrected class count to one | Internal result | proved | [Source](ABC_PROJECTIVE_SHAPE_SECANT_CLASS_COUNTS.md) |
+| Odd elliptic multiples give a power-sized family with trivial relative parity tests | Internal result | proved | [Source](ABC_PROJECTIVE_SHAPE_TWO_CLASS_OBSTRUCTION.md) |
+| Two original anchors allow one adaptively chosen uncorrected power class | Internal result | proved | [Source](ABC_PROJECTIVE_SHAPE_TWO_CLASS_OBSTRUCTION.md) |
+| One mixed residue at square-root budget precision recovers primitive rows | Internal result | proved | [Source](ABC_MULTI_SCALE_MIXED_RESIDUE_RECOVERY.md) |
+| Logarithmically many twisted projection residues recover most prime supports at radical precision | Internal result | proved | [Source](ABC_MULTI_SCALE_MIXED_RESIDUE_RECOVERY.md) |
+| An attained diffuse divisor supplies the required numerical precision at vanishing price | Internal result | proved | [Source](ABC_MULTI_SCALE_MIXED_RESIDUE_RECOVERY.md) |
+| Adjacent-order parity contrasts recover diffuse support at arbitrarily small radical precision | Internal result | proved | [Source](ABC_MULTI_SCALE_MIXED_RESIDUE_RECOVERY.md) |
+| A bounded list of small-modulus contrasts recovers nearly all nonatomic support | Internal result | proved | [Source](ABC_MULTI_SCALE_MIXED_RESIDUE_RECOVERY.md) |
+| Binary digit differences recover exact original valuations at radical-scale modulus | Internal result | proved | [Source](ABC_MODULAR_DIGIT_SUPPORT_AND_ATOMIC_COMPLETION.md) |
+| Small-modulus digit contrasts and a cheap full divisor complete all balanced profiles | Internal result | proved | [Source](ABC_MODULAR_DIGIT_SUPPORT_AND_ATOMIC_COMPLETION.md) |
+| At fixed projective shape private secant primes lie in the mark determinant pool | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SHAPE_GROWTH.md) |
+| A fixed projective shape leaves essentially one free row in typical affordable tuples | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SHAPE_GROWTH.md) |
+| Typical projective shapes have near the full one-anchor tuple exponent | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SHAPE_GROWTH.md) |
 
-**Computed obligations:** 107 unresolved; 19 resolved within their exact scope.
+**Computed obligations:** 108 unresolved; 19 resolved within their exact scope.
 
 
 Scope limits:
@@ -980,5 +1430,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Can an additional fixed-target frequency input treat cube-poor prescribed targets and improve the all-target squarefull representation bound? The proved arbitrary-base seventh-power2/7 result does not settle the general/subpolynomial obligation.](ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md) — GAP-ARITH-ERDOS943-SQUAREFULL-SUBPOLYNOMIAL-REPRESENTATIONS
 - **mathematical / open:** [Can a new frequency input force enough square-cube residual cycles into a large recovered-kernel-gcd weight sector? The mixed-power sector theorem itself does not close the all-target critical cycle budget.](ERDOS_943_MIXED_POWER_KERNEL_GCD_WEIGHTS.md) — GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-CYCLE-BUDGET
 - **mathematical / open:** [Can a fixed positive eta satisfy the actual middle exact-five carrier support-capacity estimate(15) uniformly for every positive target?](ERDOS_943_THREE_FULL_EXACT_FIVE_CARRIERS.md) — TFC-OPEN-ACTUAL-MIDDLE-CARRIER-SUPPORT-CAPACITY-SAVING
+- **mathematical / open:** [Prove an absolute delta>0 and N_lambda(X) << X^((1/3-delta)lambda+epsilon) for all sufficiently small fixed positive lambda. The equivalent minimally repaired primitive quotient count remains open at arbitrary balanced profiles. A transfer must force a bounded-radical imbalanced output, a sufficiently low affine power defect, or another restriction using all three original radical caps.](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) — GAP-ARITH-ABC-STRICT-SMALL-BUDGET-COEFFICIENT
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

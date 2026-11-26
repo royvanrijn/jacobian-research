@@ -129,6 +129,62 @@ absorbing the vanishing normalized losses.
 [Unrestricted one-third limiting count](ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13)
 · [One-letter quarter inequality](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-quarter-inequality-for-a-letter-of-small-radical-mass)
 
+## Additive identities for opposite even powers
+
+Fix an even integer \(q\ge2\) and nonnegative caps \(\ell_a,\ell_b,\ell_c\). Consider positive primitive \(a+b=c\le X\), with \(a=x^q\), \(c=z^q\) and \(\operatorname{rad}(j)\le c^{\ell_j\lambda}\) for \(j=a,b,c\). For every \(\eta>0\) and all sufficiently small fixed \(\lambda>0\), the count is
+\[
+ \ll_{q,\boldsymbol\ell,\eta,\lambda,\varepsilon}
+ X^{\left(
+ \frac{2\min(\ell_a,\ell_c)+3\ell_b}{3\tau(q)+2}+\eta
+ \right)\lambda+\varepsilon}.
+ \tag{CS5}
+\]
+Under the joint cap \(\operatorname{rad}(ab)\le c^{\ell_{ab}\lambda}\)
+alone, the count also satisfies
+\[
+ \ll_{q,\ell_{ab},\eta,\lambda,\varepsilon}
+ X^{(\ell_{ab}/(\tau(q)+1)+\eta)\lambda+\varepsilon}.
+ \tag{CS7}
+\]
+If \(3\mid q\) or \(4\mid q\), there is a further bound
+\[
+ \ll_{q,\ell_b,\eta,\lambda,\varepsilon}
+ X^{(\ell_b/\tau(q)+\eta)\lambda+\varepsilon}.
+ \tag{CS6}
+\]
+For (CS6) only the cap on \(\operatorname{rad}(b)\) is needed. At balanced caps \(\ell_j=1/3\), (CS5) gives \(5/(3(3\tau(q)+2))\) up to the allowance \(\eta\). The coefficient is \(5/24\) for opposite squares. (CS6) gives \(1/9\) for opposite fourth powers and \(1/12\) for opposite sixth powers.
+
+Set \(u=z-x\), \(v=z+x\) and \(F_e=\Phi_e(z,x)\) for \(e\mid q\). In particular \(F_1=u\), \(F_2=v\), and \(\gcd(u,v)\mid2\) because \(\gcd(x,z)=1\). Write \(\beta_e\) for the logarithmic radical masses of the \(F_e\) in base \(X^\lambda\), in a dyadic \(c\)-shell with endpoint \(X\). Use upper caps on a mesh of fixed width \(\delta>0\). At fixed \(\lambda\), for the upper limiting normalized count exponent \(d\) in one bin,
+\[
+ \sum_{e\mid q}\beta_e\le\ell_b+O_q(\delta),\qquad
+ d\le\beta_e\quad(e\ge3,\ e\mid q).
+\]
+The first inequality holds because only primes dividing the fixed \(q\) can occur in two factor radicals. For the second, enumerate the factor radical and then the complete value at subpower cost on its fixed support. A fixed \(F_e\), \(e\ge3\), gives the norm of \(z-x\zeta_e\) in a fixed cyclotomic field. The divisor count for ideals of that norm and the logarithmic count of bounded generators in each unit orbit give subpower many \(x,z\), as in the fixed-value argument above.
+
+The identities \(u+2x=v\) and \(u+v=2z\) give positive primitive triples after dividing their common gcd, which divides \(2\) in both cases. Each derived triple has at most two original lifts. Choose the identity that uses the opposite root with cap \(\ell_*=\min(\ell_a,\ell_c)\). Its radical product is at most \(2\operatorname{rad}(uv)\operatorname{rad}(x)\) or \(2\operatorname{rad}(uv)\operatorname{rad}(z)\), respectively. The derived height is comparable to \(X^{1/q}\). One of its letters has radical cap \(\min(\beta_1,\beta_2)\) in base \(X^\lambda\). The quarter inequality therefore gives
+\[
+ 4d\le \ell_*+\beta_1+\beta_2+\min(\beta_1,\beta_2)+O_{q,\boldsymbol\ell}(\delta)
+             \le \ell_*+\tfrac32(\beta_1+\beta_2)+O_{q,\boldsymbol\ell}(\delta).
+\]
+There are \(\tau(q)-2\) nonlinear factors, so \(\beta_1+\beta_2\le\ell_b-(\tau(q)-2)d+O_q(\delta)\). Solving for \(d\) proves (CS5). [One-letter quarter bound (LQ7)](ABC_WIDE_COFACTOR_CONGRUENCES.md#small-radical-on-any-one-letter)
+
+For (CS7), always use \(u+2x=v\). Its total radical cap is the cap on \(\operatorname{rad}(a)\) plus \(\beta_1+\beta_2\), up to the fixed factor \(2\). In a bin let \(\beta_a\) be the logarithmic radical mass of \(a\). Primitivity and the joint cap give \(\beta_a+\sum_{e\mid q}\beta_e\le\ell_{ab}\) after bin losses. The one-third bound gives
+\[
+ 3d\le\beta_a+\beta_1+\beta_2+O_{q,\ell_{ab}}(\delta)
+                  \le\ell_{ab}-(\tau(q)-2)d+O_{q,\ell_{ab}}(\delta).
+\]
+This holds with the target radical unrestricted. [Unrestricted one-third limiting count](ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13)
+
+If \(4\mid q\), use \(u^2+v^2=2F_4\) with \(F_4=z^2+x^2\). If \(3\mid q\), use \(u^2+3v^2=4F_3\) with \(F_3=z^2+xz+x^2\). These equations give positive primitive triples after dividing a gcd at most \(4\) in the first case and at most \(12\) in the second. Given the derived triple and the gcd, recover \(u,v\) by positive square roots, hence \(x,z\). The derived height is comparable to \(X^{2/q}\). The radical product is supported on the three factor radicals of \(F_1,F_2,F_e\), with \(e=4\) or \(3\), and the fixed primes dividing \(6\). The one-third bound gives
+\[
+ 3d\le\beta_1+\beta_2+\beta_e+O_{q,\ell_b}(\delta).
+\]
+Each of the other \(\tau(q)-3\) factors is nonlinear and costs at least \(d\). Summing gives \(\tau(q)d\le\ell_b+O_{q,\ell_b}(\delta)\), which proves (CS6). [Unrestricted one-third limiting count](ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13)
+
+Enlarge each derived cap by \(O(\delta)\) before the height limit to absorb fixed factors and comparisons between shell heights. If the derived height is comparable to \(X^\alpha\), with \(\alpha=1/q\) or \(2/q\), the enlarged total cap \(T\) gives the derived budget \(T\lambda/\alpha\). The factor \(\alpha\) cancels when expressing the count in base \(X\). Choose the mesh width and the one-third or quarter allowance small enough in terms of \(\eta\). There are finitely many resulting cap profiles. Choose the original budget small enough for all their derived budgets and then take the height limit at that fixed budget. Summing the dyadic shells and bins proves the stated bounds.
+
+The angular estimate below applies to genuine near-power targets when a summand is short. It can give a smaller exponent when the parity kernels and target coefficient have very small radicals. The identities above allow comparable summand heights and use the radical of the actual difference \(b\).
+
 ## Count after minimal target repair
 
 Keep the sector \(\mathcal S_{\lambda,\xi}\) of the minimal
@@ -151,9 +207,25 @@ arbitrarily small height losses, is at most
 For \(\xi,\eta\) sufficiently small this is strictly less
 than \(1/M\), and the coefficient approaches
 \(3/(\tau(q)+2)\) as \(\xi,\eta\downarrow0\).
-For opposite squares this is \(3/4\). The count uses the
-unique mandatory repair of each primitive quotient.
-[Minimal target-repair equivalence](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md#a-reverse-transfer-by-repairing-only-the-target)
+For opposite squares this is \(3/4\).
+
+For every even \(q\), (CS7) improves this repaired exponent on the entire \(\mathcal S_{\lambda,\xi}\) sector with opposite primitive \(q\)-th powers, since the sector supplies \(\ell_{ab}=2/3+\xi\). The exponent is at most
+\[
+ \frac{(2/3+\xi)/(\tau(q)+1)+\eta}{M(1/3-\xi)}+\varepsilon.
+ \tag{CS8}
+\]
+As \(\xi,\eta\) decrease, its coefficient relative to \(1/M\) approaches \(2/(\tau(q)+1)\), giving \(2/3\) for squares. This uses the joint cap on \(ab\) and the lower cap on the target radical.
+
+If each original radical also satisfies the upper cap \(c^{(1/3+\xi)\lambda}\), (CS5) gives repaired exponent
+\[
+ \frac{5(1/3+\xi)/(3\tau(q)+2)+\eta}{M(1/3-\xi)}+\varepsilon .
+\]
+The corresponding (CS6) exponent is
+\[
+ \frac{(1/3+\xi)/\tau(q)+\eta}{M(1/3-\xi)}+\varepsilon
+ \qquad (3\mid q\ \text{or}\ 4\mid q).
+\]
+These coefficients relative to \(1/M\) approach \(5/8\) for squares, \(1/3\) for fourth powers and \(1/4\) for sixth powers. All of the counts use the unique mandatory repair of each primitive quotient. [Minimal target-repair equivalence](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md#a-reverse-transfer-by-repairing-only-the-target)
 
 ## What remains of a quadratic norm under repair
 

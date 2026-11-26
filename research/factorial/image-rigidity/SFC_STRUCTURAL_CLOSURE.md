@@ -34,6 +34,7 @@ their respective statements.
 | Balanced private amplification | For arbitrary support size `s`, shared monomials with identical exponent profiles, arbitrary coefficients and every `D>=6s`, `sum c_j X_j^D M_j` satisfies SFC at every starting order. Every finite nonnegative integer support admits an explicit private enlargement of this form. | The private factors and profile balancing change the moments. Their removal is unproved. |
 | Separating shared rows | Balanced base monomials with partition layers admitting a rational separating-set packing of total capacity at least `6s` satisfy all-order SFC. Every intermediate within-layer merger certified by the final packing is permitted. | The prescribed layers remain distinct from each other and the base variables; loss of separation is not covered. |
 | Intrinsic zero-pattern amplification | Balanced columns with distinct zero/nonzero patterns, separated by `ell` rows, satisfy all-order SFC whenever every positive exponent is at least `6s ell`. One may take `ell<=s-1`. No new variables are needed. | Identical zero patterns cannot satisfy any positive uniform near-pure suppression exponent; the general case requires a different argument. |
+| Signed diffuse regularization | Positive algebraic strength gives projective regularity for every set of \(s\) distinct orders in the signed Gaussian limit for arbitrary monomial support. Fully shared ordinary unit-gap additions realize any prescribed finite collection of windows with arbitrarily small pairwise added curvature and unchanged degree differences. | The ordinary realization is uniform on the chosen finite collection. An absolute ordinary cutoff at arbitrary support size remains open. |
 | Ramified polynomial pullback | A normalized polynomial cover whose critical values lie in the prescribed seed fibers preserves every normalized factorial moment of a monomial-linear seed, including repeated coefficients and zero exponents. A degree-`d` cover gives `dS` actual terms with the original seed window. | Target coefficients are prescribed reciprocals of preimages. A nontrivial cover degree divides `gcd(S_target,1+sum r_i)`, so primitive cases remain. |
 | Monomial times linear form: fixed windows | For every nonnegative exponent profile and all active coefficients, put `d=1+sum r_i`, `e=s-ceil(s/d)`. Every window of length `de+s d(d+1)/2` contains a nonzero moment, at every starting order. When the grouped primitive is polynomial, the stronger fixed length `s d(d-1)/2` works. | These general bounds exceed the required SFC length `s`. |
 | Reduced-divisor contact | With `nu=deg rad(D)` and `T0=deg(J/gcd(J,rad(D)))`, every window of length `(nu+T0-1)n-T0+1` works. All forced neutral, repeated-root, and shared-divisor factors are removed exactly. | The final numerator has exactly the computed degree; sharp closure requires control of its order at zero. |
@@ -53,6 +54,7 @@ their respective statements.
 
 Full proofs, exact scope and executable evidence are in:
 
+- [SFC_SIGNED_DIFFUSE_PROJECTIVE_REGULARIZATION.md](SFC_SIGNED_DIFFUSE_PROJECTIVE_REGULARIZATION.md).
 - [SFC_BALANCED_PRIVATE_AMPLIFICATION.md](SFC_BALANCED_PRIVATE_AMPLIFICATION.md).
 - [SFC_SEPARATING_ROW_AMPLIFICATION.md](SFC_SEPARATING_ROW_AMPLIFICATION.md).
 - [SFC_DEAMPLIFICATION_BRIDGES.md](SFC_DEAMPLIFICATION_BRIDGES.md).
@@ -78,6 +80,12 @@ These are internal written proofs with exact computational controls. The
 finite controls do not establish their universal quantifiers; the written
 arguments do. No literature-priority, external-refereeing or formal-verification
 claim is made.
+
+For ordinary two-monomial supports, the
+[all-degree private-side theorem](MULTIVARIATE_BOTH_PRIVATE_ALL_DEGREES.md)
+proves consecutive coprimality whenever both monomials have private
+variables. The remaining arbitrary two-monomial cases have at most
+one private side.
 
 ### 1.1 A proved enlargement for every finite support
 
