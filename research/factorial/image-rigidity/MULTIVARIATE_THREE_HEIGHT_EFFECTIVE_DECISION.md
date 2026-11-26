@@ -1,8 +1,7 @@
 # Effective finite reduction for three and four independent unit-gap heights
 
-Fix a comparable ordinary core: every unequal exponent row in
-it is increasing from the first monomial to the second. The core
-may be empty. Append three unit-gap row types
+Fix any ordinary core, with arbitrary row orientations.
+The core may be empty. Append three unit-gap row types
 \[
        (A_1,A_1+1),\quad (A_2,A_2+1),\quad (A_3,A_3+1)
 \]
@@ -90,10 +89,9 @@ height in \(0,\ldots,H-1\).
 
 For each of the three height indices and each integer in the
 bounded interval just obtained, adjoin that row type with its
-multiplicity to the fixed core. The enlarged core remains
-comparable. The two-height specialization theorem applies to
-the other two independent heights and both of their positive
-multiplicities. It applies to the saturated degree-at-least-two
+multiplicity to the fixed core. The two-height specialization theorem applies to the other two
+independent heights and both of their positive multiplicities,
+since the two remaining types are cooriented. It applies to the saturated degree-at-least-two
 common-factor locus with both moment degrees full. Every
 ordinary collision belongs to it. In fact one of the two
 moments is an even moment and is strictly positive on the
@@ -116,11 +114,11 @@ makes \(D+\Delta_C\) bounded at a possible ordinary collision,
 where \(\Delta_C\) is the fixed signed gap of the core.
 For the empty core this leaves finitely many triples of
 positive multiplicities and the hypothesis (1) is automatic
-at every terminal. For a fixed comparable core, the same
+at every terminal. For a fixed ordinary core, the same
 decision applies if (1) passes its exact finite checks at
 all relevant pairs and counts.
 
-More generally, for any fixed number of comparable unit-gap
+More generally, for any fixed number of cooriented unit-gap
 height types, apply (2) and the determinant check recursively.
 Every nonzero comparator fixes one height in a bounded slice.
 When two heights remain, apply the two-height theorem. The

@@ -858,6 +858,18 @@ gap and integrality force a candidate sequence onto an exact
 affine ray. A first-factor depth argument excludes all
 sufficiently high two-type affine families in every degree,
 uniformly in the two counts.
+The [local Puiseux theorem](MULTIVARIATE_OPPOSED_DIFFUSE_PUISEUX_HEIGHT_BRANCHES.md)
+covers all positive contacts of these two-type tails with fixed
+gaps, including multiple roots, higher-order angle contacts and
+vanishing curvature shares. At each positive contact the limiting
+count divided by an active height is transcendental. Up to height
+\(H\), at most \(O(1+\log\log(3+H))\) sufficiently high profiles
+above any fixed positive curvature can collide in any degree.
+A prescribed rational relation in the active height and count
+excludes escape. At irrational interior bias a prescribed rational
+algebraic relation in the two heights also suffices. Two groups of
+affine types are covered when their limiting clock directions are
+independent.
 The [paired prime-mark descent](MULTIVARIATE_PAIRED_PRIME_MARK_AFFINE_DESCENT.md)
 forces exact affine alignment for independently varying
 opposed heights when both first factors have sufficiently
@@ -867,7 +879,12 @@ all-degree closure allows growing gaps. The same interval
 argument permits a growing number of clustered types within
 the stated logarithmic bound. At a positive two-type contact with both shares positive, one sufficiently
 dominant first mark suffices, including tangential and
-multiple contacts.
+multiple contacts. The
+[opposed mark-product theorem](MULTIVARIATE_OPPOSED_MARK_PRODUCT_HEIGHT_CONSTRAINT.md)
+charges the usable prime powers in every eligible factor of the
+first blocks to the opposing factorial strips at a single order.
+It forces explicit two-sided power bounds for independently
+varying opposed heights of fixed gaps, uniformly in the counts.
 The [zero-bias two-type descent](MULTIVARIATE_OPPOSED_LARGE_GAP_ZERO_BIAS_DESCENT.md)
 allows independent counts and growing gaps at transverse contacts.
 Equal counts, vanishing projected skew response, sufficiently close
@@ -2003,6 +2020,12 @@ shared residual gcd. The
 extracts a canonical higher-precision factor residue even for
 partial repeated blocks when the truncated widths are stable.
 These tests use the original factorial arrays.
+The [physical circle certificate](MULTIVARIATE_PHYSICAL_PAIRED_RADIAL_ELLIPSES.md)
+works directly in the common physical variable with rational
+arithmetic on reflected coefficient pairs. It gives a sharper
+one-sided bound for the endpoint-scale drift and applies at
+every pair of orders. Reflected profiles with a common root
+modulus require additional angular information.
 The [Gaussian log-radius contraction](MULTIVARIATE_GAUSSIAN_RADIAL_CONTRACTION.md)
 gives a complementary center exclusion with arbitrary diffuse
 tails, including asymmetric fully shared cores and multiple
@@ -2035,11 +2058,11 @@ coprimality for an arbitrary core and preserves exact mirroring
 when the core is mirrored. The
 [two independent unit-gap heights](MULTIVARIATE_TWO_HEIGHT_FACTOR_SPECIALIZATION.md)
 give a zero-dimensional common-factor locus under the exact
-translation comparison. For comparable cores the test is
-automatic for every multiplicity, and for mixed cores it is
-automatic when both multiplicities are even. Both families
-admit an all-degree finite decision with independently unbounded
-heights and a core of prescribed bounded height. The
+translation comparison. At consecutive orders the test is
+automatic with arbitrary fixed cores and both multiplicities.
+The two-height family admits an all-degree finite decision with
+independently unbounded heights and a core of prescribed bounded
+height. The
 [opposite-orientation reduction](MULTIVARIATE_OPPOSITE_HEIGHT_FACTOR_SPECIALIZATION.md)
 instead uses a finite exact separation test on limiting
 polynomial values for each fixed multiplicity pair.
@@ -2133,13 +2156,24 @@ perturbation of the one-row comparator separates even its
 shared limiting roots. This extends the two-height decision
 method to the stated higher-dimensional integer families.
 
+The [physical Hermite splitting theorem](MULTIVARIATE_FIXED_GAP_HERMITE_HEIGHT_BOUND.md)
+bounds the exact common degree when finitely many fixed-gap
+height types escape simultaneously, with arbitrary orientations
+and fixed multiplicities. Even a balanced empty core is covered.
+This gives an all-degree finite decision for two such independent
+heights with empty core, and for three individual unit-gap rows
+of either orientation. In the mixed three-row case the ordered
+collision curves also meet Runge's pole-orbit criterion.
+
 The [monic remainder comparison](MULTIVARIATE_UNIT_GAP_MONIC_REMAINDER.md)
 gives positivity at the first subtraction for arbitrary
 increasing gaps and identifies the simple resultant factor
 \(1+S+P\) for two increasing unit gaps. The
 [exact sign obstruction](MULTIVARIATE_TWO_UNIT_GAP_RESULTANT_SIGN_OBSTRUCTION.md)
 excludes uniform coefficientwise positivity in the elementary
-generators \(S,P\) already at starting order seven.
+generators \(S,P\) at starting order seven and in the generators
+after shifting both heights by one or by two at later starts.
+The shifted witnesses lie outside the range of real heights.
 
 The [physical second-order height comparison](MULTIVARIATE_FIXED_GAP_PHYSICAL_SECOND_JETS.md)
 gives an effective height bound when every simple comparator
@@ -2345,3 +2379,56 @@ binomials the
 gives effective all-order height cutoffs for independently
 repeated reflected pairs and a growing height-band result
 with arbitrary row counts under its reflected maximum test.
+
+The [doubled-degree common-translation theorem](SFC_COMMON_TRANSLATION_DOUBLED_DEGREE_BLOCKS.md)
+covers every prescribed shifted support-size window at arbitrary
+support size when exactly one degree occurs twice and all other
+degrees occur once. Several doubled blocks are covered when the
+variance forms at the chosen high even orders give a regular
+system. The proof uses
+[scaled Hermite root isolation](SFC_SCALED_HERMITE_ROOT_ISOLATION.md)
+over the compositum of the other orders. For homogeneous ternary
+rays, the [shifted Gaussian tests](SFC_HOMOGENEOUS_TERNARY_SHIFTED_GATES.md)
+reduce all fixed windows to two explicit universal systems,
+both excluded at orders \(2,3,4\). The
+[dyadic Gaussian comparison](SFC_COLLINEAR_TERNARY_EVEN_START_AND_DYADIC_REDUCTION.md)
+excludes every fixed even start for the collinear ternary gate
+and leaves one valuation pair at odd starts.
+
+For mixed-degree dilation, the
+[singleton-block theorem](SFC_MIXED_DEGREE_SINGLETON_FOREIGN_BLOCKS.md)
+allows nested coordinate sets at singleton degrees. The
+[radial constant theorem](SFC_HOMOGENEOUS_BLOCK_WITH_CONSTANT.md)
+allows an arbitrary constant to adjoin any dilated homogeneous
+block, with the actual support-size window at every order and
+without a coefficient-size bound. The
+[fixed-coordinate extension](SFC_MIXED_DEGREE_FIXED_COORDINATE_FOREIGN_TERMS.md)
+allows a surviving foreign monomial to depend on coordinates
+with common positive exponents throughout a repeated block.
+It also handles several repeated blocks satisfying this condition.
+The [aggregate saddle theorem](SFC_MIXED_DEGREE_AGGREGATED_SADDLES.md)
+allows those exponents to vary. Under its face conditions the
+weighted exponent-ratio measure characterizes the shared local
+critical correction used in the all-order filter.
+
+For binomials, the
+[unpaired-envelope theorem](MULTIVARIATE_UNPAIRED_ENVELOPE_MULTISCALE_MARKS.md)
+uses prime witnesses on a common grid in the maximal slope
+valuation tier. It gives effective all-order height cutoffs
+for independent counts without reflection under the stated
+gap or envelope conditions. It also permits arbitrary rows
+in growing scaled height bands at those same envelope tests.
+The [prime-spectrum extension](MULTIVARIATE_PRIME_SPECTRUM_MULTISCALE_ENVELOPE.md)
+allows overlapping polynomial factors across different scales
+by selecting a maximal-valuation mark and excluding finitely
+many rational perfect-power families.
+The [overlapping independent-count theorem](MULTIVARIATE_OVERLAPPING_OPPOSED_WINDOWS_INDEPENDENT_COUNTS.md)
+covers four opposed affine row types even when their factorial
+ramps overlap. The remaining unbounded counts lie on exact
+shifted rays with full divisor rank.
+For general nested mixed supports, the
+[curved-mode example](SFC_MIXED_CURVED_MODE_CANCELLATION.md)
+realizes two consecutive leading cancellations from a two-mode
+repeated-degree block when a foreign monomial survives at its
+saddle. It gives a precise obstruction to counting cancellations
+by a homogeneous block size alone.

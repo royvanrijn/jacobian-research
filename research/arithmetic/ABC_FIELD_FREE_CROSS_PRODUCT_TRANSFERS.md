@@ -1992,3 +1992,246 @@ requires producing a suitable number of pairs with
 controlled auxiliary radicals, or a different reduction.
 
 [Two free degree windows (UW4)](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-restriction-at-equality-of-the-nonatomic-total)
+
+## FP14. A two-label inequality for compressed quotients
+
+Put \(n=X^L\), taking the height limit at each fixed budget.
+Work in a fixed support and gcd record of actual primitive pairs with
+\[
+              D K=u a_1-v w_2,
+       \qquad c_1=Gv,\quad c_2=Gu
+\]
+in the same original height shell, as in FP13. Here \(w_2\) is
+one of the original right summands and \(D\) is fixed. Let \(F\)
+be a fixed full divisor of \(w_2\) of positive numerical height,
+outside the exact shared supports. The hypotheses of FP13
+give \(DK\equiv u a_1\pmod F\) with every displayed quantity
+a unit. Assume that fixing either complete target in the record
+leaves at most \(n^\eta X^\varepsilon\) completions, for an
+arbitrarily small fixed counting allowance \(\eta\).
+For a fixed first row and exact \(K\), reduction modulo \(v\)
+and the height shell give boundedly many possible \(u\)'s, so
+this multiplicity can be removed at the same allowance.
+Fix one partner per first-row/label edge. Write \(A_*\)
+for the first-row count and \(K_*\) for the label count.
+
+Suppose the exact moving right quotient has outside radical
+price \(r_q\). Its supported factor on the prescribed and
+shared pools is fixed on this record. In place of the
+macro-prime hypothesis require two compression estimates:
+a single unit class modulo \(F\) contains at most
+\(n^\eta X^\varepsilon\) right quotients, and at most that
+many exact ratios of ordered pairs of right quotients.
+These hold, for example, under GW's bounded narrow-root
+hypothesis with a numerically vanishing wide factor, after
+fixing small-cost exact coefficients. For atomic valuation
+profiles, take finitely many shrinking positive atom
+windows and the shrinking zero window, and freeze the
+remaining radical at arbitrarily small cost. Group each
+positive window at its representative order
+\(\asymp1/L\). Use the usual permanent window colors,
+and numerator and denominator colors in amplification.
+The exact-fibre charge for a wide overlapping correction
+of numerical exponent \(o(1)\) is \(o(1)\) in base \(n\)
+by the GW/UW convention. Equivalently the two exact
+congruence bounds can be imposed directly, which avoids
+any representation hypothesis on the quotients.
+
+For every fixed \(0\le\beta\le r_q\), the simple graph has
+\[
+ E\ll n^\eta X^\varepsilon
+   \left(A_*^{1/2}K_* n^{\beta/2}
+          +A_* K_*^{1/2}n^{(r_q-\beta)/2}\right).             \tag{FP14}
+\]
+Here and below absorb a fixed finite multiple of the
+positive allowance by choosing its constituent allowances
+smaller. For \(E\le4A_*\) the assertion holds directly.
+Otherwise prune degrees below \(E/(2A_*)\), retaining
+at least \(E/2\) edges and degrees at least \(E/(2A_*)\)
+on surviving vertices. Cauchy–Schwarz over the common
+labels gives at least \(E^2/(4K_*)\) ordered common-label
+collisions.
+
+For two first rows \(i,i'\) at a common label, their right
+quotients satisfy \(u'/u\equiv a_i/a_{i'}\pmod F\).
+Write this exact ratio in lowest terms. If the radical
+of either numerator or denominator is at least \(n^\beta\),
+one of the two quotients has a known support at that price.
+The ratio's fixed supported parts cancel, so this is a
+subset of its moving support. Enumerate that quotient at
+the remaining raw price \(r_q-\beta\), recover the other
+by the ratio, and use the right complete target multiplicity
+to determine the label at arbitrarily small further cost.
+The compression bound on exact ratios thus gives
+at most \(n^{r_q-\beta+\eta}X^\varepsilon\) such collisions
+per pair of first rows.
+
+For the remaining collisions, anchor an edge \(e\) with
+label \(K_0\) and exact right quotient \(u_e\). Each of its
+neighbors at \(K_0\) has right quotient \(u_0\) with
+\(\operatorname{rad}(\operatorname{num}(u_0/u_e))<n^\beta\).
+The denominator of that reduced ratio divides the fixed
+\(u_e\), hence has divisor-many choices. Thus there are
+at most \(n^{\beta+\eta}X^\varepsilon\) possible exact
+\(u_0\) on this neighborhood. For any other edge of label
+\(K\ne K_0\) incident to a neighboring first row, the unit
+congruences give \(R=u/u_0\equiv K/K_0\pmod F\).
+For each fixed \(u_0,K\) the quotient congruence estimate
+counts exact \(R\) at arbitrarily small cost. The
+FP13 exact recovery applies:
+\[
+ v(Rw_{2,0}-w_2)=D(K-RK_0).
+\]
+The right side is nonzero as otherwise the right primitive
+rows would be identical. If \(R=A/B\) in lowest terms,
+then \(v\mid D(BK-AK_0)\), so the left complete target
+and then the left row have arbitrarily small completion
+cost. There are at most \(K_*n^{\beta+\eta}X^\varepsilon\)
+edges of labels other than \(K_0\) in this neighborhood.
+Each neighbor has at least \(E/(4A_*)\) such edges by
+pruning, so each anchor has at most
+\(A_* K_*n^{\beta+\eta}X^\varepsilon/E\) neighbors.
+Sum over at most \(E\) anchors. This bounds the close
+collision count, and the two collision estimates and
+Cauchy–Schwarz give (FP14).
+
+The full price of choosing the actual fixed \(F\), its
+coefficient records and the two complete-fibre regularizations
+must be included before applying (FP14). On tied dimensions
+\(A_*=n^{r+o(1)}, r_q=r,E=n^{2r-o(1)}\), the choice
+\(\beta=r/3\) excludes \(K_*\le n^{4r/3-\delta}\)
+for every fixed \(\delta>0\), without prime macroscopic-atom
+requirements. More generally if the first-row exponent is \(a\),
+the right cap is \(r_q\), and the edge exponent is \(d\),
+the forbidden label exponents include those for which one
+\(0\le\beta\le r_q\) has
+\[
+        s<
+        \min\left\{ d-\frac a2-\frac\beta2,\;
+                     2d-2a-r_q+\beta\right\}
+\]
+with fixed slack.
+
+## FP15. Both determinant radicals can be large under two original caps
+
+For every fixed \(B>0,\delta>0\), there are arbitrarily small
+fixed \(L>0\) and arbitrarily large heights \(X\) with
+\(n^{1/3+o_X(1)}\) genuine distinct primitive rows \(a+b=c\)
+in the shell, where \(n=X^L\) and both summand radicals are
+at most \(n^{1/3}\). All three complete dictionaries may
+be made injective. The two capped scaled measures converge
+to \((1/3)\operatorname{Unif}[2,4]\) along the height-first
+small-budget construction. The number of ordered distinct
+pairs with either \(\operatorname{rad}(H)\le n^B\) or
+\(\operatorname{rad}(J)\le n^B\), in the canonical FP
+normalization with the actual common target and summand
+gcds, is \(O(n^{1/3+\delta+o_X(1)})\).
+For any fixed threshold
+\(B\), the family can be restricted so every target radical
+exceeds \(n^B\) without affecting its count exponent.
+
+Fix a large integer \(m\), \(q=6^m\),
+\(e_i=q(m+i)\) for \(1\le i\le m\), \(D_0=\sum_i e_i\),
+and \(L=3m/D_0\). For an inner parameter \(Q\to\infty\)
+take \(X=Q^{D_0}\), \(n=Q^{3m}\). Choose two fixed
+positive fractions \(\alpha,\gamma<1\), distinct, with
+\(1/2<\alpha+\gamma<1\). Make \(m\) disjoint prime
+palettes in small multiplicative intervals about
+\(\alpha^{1/D_0}Q\), and \(m\) more about
+\(\gamma^{1/D_0}Q\). At fixed \(m\) choose their widths
+so all \(2m\) intervals are mutually disjoint,
+all primes are below \(Q\), and the products of the
+\(e_i\)-th powers are within sufficiently small relative
+errors of \(\alpha X,\gamma X\), respectively. The
+prime number theorem permits palettes of equal cardinality
+\(Q^{1+o_Q(1)}\). Pair each first palette bijectively with
+its corresponding second palette. For a word choosing
+\(p_i\) in the first palettes and its paired word \(s_i\),
+set
+\[
+        a=\prod_i p_i^{e_i}=A^q,\quad
+        b=\prod_i s_i^{e_i}=B_{\rm root}^q,\quad c=a+b.
+\]
+Primitivity follows from disjointness. Both summand radicals
+are at most \(Q^m=n^{1/3}\) and each is comparable to that
+bound at the normalized scale. All numerical heights are
+comparable to \(X\) with \(X/2<c<X\). Both summands are
+injective. Every target has subpower many representations
+as a sum of the two squares
+\(A^{q/2}\) and \(B_{\rm root}^{q/2}\), so one can retain
+one row per complete target at height-subpower cost.
+At each root slot its normalized prime mass tends to
+\(1/(3m)\), and
+\(Le_i=6(m+i)/(3m+1)\), giving both asserted weak limits.
+
+For a fixed first row, consider a divisor \(M\mid c_1\)
+of size at least \(n^{m+1}\) and second rows with
+\(M\mid c_2\). The reduced unit fraction \(A_2/B_2\) has
+\(q\)-th power \(-1\bmod M\). The number of \(q\)-th
+root classes is height-subpower at fixed \(m\), by CRT
+and the fixed-order torsion bound modulo prime powers.
+Each such class determines at most one exact reduced
+fraction: both heights are at most \(X^{1/q}\), so their
+cross products are at most
+\(X^{2/q}=n^{m+1/3}<M\). The exact fraction determines
+the primitive row. Summing over the divisor-many \(M\)
+shows that pairs with \(G=(c_1,c_2)\ge n^{m+1}\) number
+only \(n^{1/3+o_X(1)}\).
+
+For the other pairs, set
+\(A_0=(A_1,A_2)\), \(B_0=(B_1,B_2)\).
+Global disjointness between the two prime palette roles
+gives \(d_h=A_0^qB_0^q\) and \(d_j=1\). The exact signed
+determinant formulas are
+\[
+ \begin{split}
+ H&=\big((A_1B_2/(A_0B_0))^q-
+        (A_2B_1/(A_0B_0))^q\big)/G,\
+ J&=\big((A_1A_2)^q-(B_1B_2)^q\big)/G.
+ \end{split}
+\]
+Both numerator differences use coprime positive roots.
+The first is nonzero on distinct primitive rows since
+equality would identify \(a_1/b_1=a_2/b_2\); the second
+is nonzero because the two palette roles are disjoint.
+
+If either determinant has radical at most \(n^B\),
+the corresponding difference of powers has radical at
+most \(n^{B+m+1}\). Its
+\(\tau(q)-2=(m+1)^2-2\) non-linear cyclotomic factors
+have disjoint supports away from the fixed primes of
+\(q\), exactly as in CS2. So one such factor has exterior
+radical at most \(n^{e_m^*}\) with
+\(e_m^*=(B+m+1)/((m+1)^2-2)\). Enumerate its exact
+value at \(n^{e_m^*+o_X(1)}\) cost by fixed-support
+enumeration. In the fixed cyclotomic field, the
+exact norm and bounded generators recover both coprime
+roots at height-subpower cost by the fixed-value bound
+of the same canonical CS2 proof. In the \(J\) case
+\(A_1A_2\) then recovers the two \(A_i\) by divisor
+enumeration, which fixes the original two words. In
+the \(H\) case classify by the number \(j\) of shared
+first-palette slots. The two coprime roots show the
+first-palette primes for all unshared slots, and
+refilling the missing slots costs \(Q^{j+o_Q(1)}\).
+Independently there are at most
+\(Q^{2m-j+o_Q(1)}\) pairs in that class. The minimum
+of the resulting two exponents is at most their mean,
+giving \(n^{1/3+e_m^*/2+o_X(1)}\).
+Include the large common-target-gcd exception and
+take \(m\) sufficiently large for the desired margin.
+
+Finally the target sum \(A^q+B_{\rm root}^q\) has
+\(m+1\) nonlinear homogeneous cyclotomic factors
+\(\Phi_{2^{m+1}3^j}\), \(0\le j\le m\). These have
+disjoint odd support outside 3. If
+\(\operatorname{rad}(c)\le n^B\), one has radical
+outside \(2,3\) at most \(n^{B/(m+1)}\). Its fixed
+norm again recovers the roots at height-subpower cost,
+so the number of such rows is at most
+\(n^{B/(m+1)+o_X(1)}\) and can be deleted.
+
+SC7 concerns physical differences. This construction
+bounds the eligible pairs for both normalized labels with
+their actual matching and target gcds. It uses two original
+radical caps. [Fixed cyclotomic norm recovery (CS2)](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md#primitive-cyclotomic-factors-and-their-fixed-value-counts)

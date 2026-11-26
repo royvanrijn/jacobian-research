@@ -1410,6 +1410,13 @@ and a rank-two block measured by marked moments](CM_NEWTON_BLOCK_RANK_MOMENTS.md
 
 ## Open reconstruction question
 
+The [seventeen-row locus calculation](CM_NEWTON_SEVENTEEN_ROW_LOCUS.md)
+projects the common-zero equations through smaller finite algebras.
+The remaining normalized locus has dimension at most one. In
+particular the seventeen shifts suffice whenever the two even
+coefficients are integral at one place above \(331\), with all
+odd coefficients arbitrary.
+
 The general upper-half question is whether extra unmarked rows
 force the coherent projection of the kernel to vanish at every
 allowed lower polynomial. The determinant above covers the

@@ -26,7 +26,7 @@ Alternatively, when \(d\ge3\), put the divisor on the form value:
 In this version the cap counts the radical outside the divisor. The divisor record may vary in either version. The optional support \(P\) is a positive integer at most \(X^{B_0}\) prescribed after the form and divisor record are fixed. Uniformly in the field and the coefficients, the count for fixed \(F\) is
 \[
        \ll_{d,B_0,g,\ell,\mu,\nu,\eta,\lambda,\varepsilon}
-         X^{(\mu+\ell/2+g/4+\eta)\lambda+\varepsilon}.      \tag{PR2}
+         X^{(\mu+\ell/2+\eta)\lambda+\varepsilon}.      \tag{PR2}
 \]
 Every sufficiently small bound on \(\lambda\) used for this estimate depends only on the fixed parameters. A fixed divisor record can be counted without the cost \(\mu\). The proof retains the separate \(e\)-torsion factors of the class group, given in (PR5) below.
 
@@ -77,17 +77,17 @@ In both cases \(g((\alpha))=g((\beta))+h(L(\alpha)-L(\beta))\). The vector \(L(\
 
 For a positive Fourier test on this set use the autocorrelation of \(\mathbf 1_{h(C_W)}\), divided by the probability Haar measure of \(h(C_W)\) in \(G\). Write \(K_0\) for this function. It is supported on \(h(C_{2W})\), bounded above by one, and at least \(5^{-r}\) on \(h(C_{W/2})\). To see the last assertion, \(C_W\) is covered by at most \(5^r\) translates of \(C_{W/2}\) by packing \(C_{W/4}\) about a maximal \(W/2\)-separated set in \(C_W\). For \(t\in C_{W/2}\) the intersection \(h(C_W)\cap(h(C_W)+h(t))\) contains \(h(C_{W/2})\). This argument applies regardless of the size and shape of the log lattice. Parseval gives \(\widehat K_0(\chi)\ge0\) and \(\sum_\chi\widehat K_0(\chi)=1\). Its Fourier series is absolutely convergent, and translates of this test change the coefficients only by phases.
 
-For each nontrivial slot \(e\), let \(\mathcal A_e\) be the dictionary of possible ideals of norm at most \(X^{\lambda\vartheta_e}\) and put \(F_e(\chi)=\sum_{\mathfrak a\in\mathcal A_e}\chi(e\,g(\mathfrak a))\). The orientation fixed above makes each ideal determined by its norm. Write \(m_e=\lceil H_0/\vartheta_e\rceil\), so \(m_e\vartheta_e\le2H_0\) and \(\sum_e m_e^{-1}\le1\). Slots of zero cap are omitted, and if all are omitted there is only one tuple to count. A \(2m_e\)-th moment against \(\widehat K_0\) tests pairs of products of \(m_e\) ideals for
+For each nontrivial slot \(e\), let \(\mathcal A_e\) be the dictionary of possible ideals of norm at most \(X^{\lambda\vartheta_e}\) and put \(F_e(\chi)=\sum_{\mathfrak a\in\mathcal A_e}\chi(e\,g(\mathfrak a))\). The orientation fixed above makes each ideal determined by its norm. Fix \(0<\xi\le1/2\) and write \(m_e=\lceil H_0/(2\xi\vartheta_e)\rceil\), so \(m_e\vartheta_e\le(1+1/(2\xi))H_0\) and \(\sum_e(2m_e)^{-1}\le\xi\). Slots of zero cap are omitted, and if all are omitted there is only one tuple to count. A \(2m_e\)-th moment against \(\widehat K_0\) tests pairs of products of \(m_e\) ideals for
 \[
                         e\,g(\mathfrak A/\mathfrak B)\in h(C_{2W}).
 \]
 For each fixed \(\mathfrak A\), the possible \(g(\mathfrak B)\) lie in at most \(|G[e]|\) translates of \(h(C_{2W/e})\), since subtracting \(h(t/e)\) from an \(e\)-preimage of \(h(t)\) gives an element killed by \(e\). For two products in the same translate, \(\mathfrak B_1/\mathfrak B_2=(\gamma)\), where \(\gamma\) reduces to a rational unit modulo \(\mathfrak m\) and \(\|L(\gamma)\|_\infty\le4W/e\). Both assertions are direct consequences of the kernel in (PR3).
 
-The integer \(D_2=N\mathfrak B_2\) lies in \(\mathfrak B_2\), so \(D_2\gamma\) is integral. With \(N\mathfrak B_i\le X^{2H_0\lambda}\), all embeddings satisfy
+The integer \(D_2=N\mathfrak B_2\) lies in \(\mathfrak B_2\), so \(D_2\gamma\) is integral. With \(N\mathfrak B_i\le X^{(1+1/(2\xi))H_0\lambda}\), all embeddings satisfy
 \[
  |\sigma(D_2\gamma)|
      \le (N\mathfrak B_1)^{1/d}(N\mathfrak B_2)^{1-1/d}\exp(4W/e)
-     \le X^{2H_0\lambda+\nu/8}.
+     \le X^{(1+1/(2\xi))H_0\lambda+\nu/8}.
 \]
 Write \(\widetilde K\) for a normal closure of degree \(D\) over \(\mathbb Q\), and fix two embeddings \(\sigma,\tau:K\hookrightarrow\widetilde K\). For (PR1), the difference \(\Delta=\sigma(D_2\gamma)-\tau(D_2\gamma)\) lies in \(M\mathcal O_{\widetilde K}\), since \(D_2\gamma\) reduces modulo \(M\mathcal O_K\) to a rational integer. If \(\Delta\ne0\), this gives \(|N_{\widetilde K/\mathbb Q}\Delta|\ge M^D\).
 
@@ -95,7 +95,7 @@ For (PR1'), take \(p^k\parallel M\). The field \(\widetilde K\) is unramified at
 \[
     |N_{\widetilde K/\mathbb Q}\Delta|\ge M^{D(1-2/d)}.
 \]
-Since \(d\ge3\), both lower bounds contradict \(|\sigma'(\Delta)|\le2X^{2H_0\lambda+\nu/8}\) for every embedding \(\sigma'\) of \(\widetilde K\), provided \(\lambda\) is sufficiently small in terms of \(\ell,\eta,\nu\). Every such difference vanishes, so \(\gamma\in\mathbb Q^\times\). At each allowed rational prime the ideal quotient \(\mathfrak B_1/\mathfrak B_2\) is supported on at most one prime upstairs, while a nonzero valuation of a rational \(\gamma\) would use every prime upstairs. Therefore \(\mathfrak B_1=\mathfrak B_2\). This is the diagonal step.
+For the form-value case \(d\ge3\) gives \(1-2/d\ge1/3\). In both cases the lower bound contradicts \(|\sigma'(\Delta)|\le2X^{(1+1/(2\xi))H_0\lambda+\nu/8}\) for every embedding \(\sigma'\) of \(\widetilde K\), provided \(\lambda\) is sufficiently small in terms of \(\ell,\eta,\nu,\xi\). Every such difference vanishes, so \(\gamma\in\mathbb Q^\times\). At each allowed rational prime the ideal quotient \(\mathfrak B_1/\mathfrak B_2\) is supported on at most one prime upstairs, while a nonzero valuation of a rational \(\gamma\) would use every prime upstairs. Therefore \(\mathfrak B_1=\mathfrak B_2\). This is the diagonal step.
 
 A fixed ideal product has subpower many ordered decompositions since \(m_e\) is fixed at the height limit and the product norm is polynomially bounded. There are at most \(X^{m_e\lambda\vartheta_e}\) choices of the first tuple. Fourier inversion now gives
 \[
@@ -108,7 +108,16 @@ The absolute Fourier expansion with Hölder bounds the number of tuples in the f
                   \prod_e|\mathrm{Cl}(K)[e]|^{1/(2m_e)}.
                                                                \tag{PR5}
 \]
-This factor is at most \(|\mathrm{Cl}(K)|^{1/2}\), which is \(O_{d,\varepsilon}(|\operatorname{Disc}(K)|^{1/4+\varepsilon})\) by Minkowski's theorem and the elementary ideal divisor bound. Indeed every class has an integral representative of norm \(O_d(\sqrt{|\operatorname{Disc}(K)|})\), and each integer \(n\) occurs as norm at most \(\tau(n)^d\) times.
+This factor is at most \(|\mathrm{Cl}(K)|^\xi\),
+which is \(O_{d,\varepsilon}(X^{g\lambda\xi/2+\varepsilon})\)
+by Minkowski's theorem and the ideal divisor bound.
+Every class has an integral representative of norm
+\(O_d(\sqrt{|\operatorname{Disc}(K)|})\), and each integer
+\(n\) occurs as norm at most \(\tau(n)^d\) times. Fix
+\(\xi\) small enough that \(g\xi/2<\eta/4\) before taking
+\(\lambda\) small for the amplified norm cutoff. This
+absorbs the entire class-group factor in the allowance.
+[Amplified moments in full ray groups](ABC_BINARY_FORM_RAY_AMPLIFICATION.md#amplified-moments-and-the-class-number-price)
 
 With fixed ideal factors the possible \(\alpha\)'s differ by units. Unit log vectors within a bounded distance are uniformly separated at fixed degree, because a unit with bounded conjugate moduli belongs to a fixed finite set by the coefficient bounds for its minimal polynomial. The zero-log units are uniformly finite for the same reason. The allowed log range \(O_{d,B_0}(\log X)\) therefore gives \(O_{d,B_0}((1+\log X)^d)\) generators. Each \(\alpha=a_0u-\theta v\) determines \(u,v\) since \(\theta\) is irrational. Adding the costs of the records, the tail, the cap mesh and (PR5) proves (PR2).
 
@@ -136,7 +145,7 @@ with \(A,B\) their canonical \(q\)-free coefficients, and call the remaining let
 \[
                    \#\{(a,b,c)\}
              \ll_{q,f,\ell,\mu,\nu,\eta,\lambda,\varepsilon}
-                X^{(\mu+\ell/2+(d+3)f/4+\eta)\lambda+\varepsilon}.
+                X^{(\mu+\ell/2+f+\eta)\lambda+\varepsilon}.
                                                                \tag{PR6}
 \]
 Indeed \(A,B\) cost \(X^{f\lambda+o_X(1)}\). A primitive integral factor has polynomial-height coefficients by compactness of the coefficient unit spheres in fixed degree and the nonvanishing of a product of two nonzero polynomials. Its end coefficients divide the binomial's end coefficients, its discriminant divides the binomial discriminant by the discriminant product formula, and its value divides \(T\). Thus \(M\) is prime to all its excluded primes. The field of the factor is generated by a root of \(Z^q\pm A/B\), or equivalently by its \(B\)-multiple, which is a root of \(Z^q\pm A B^{q-1}\). The field discriminant satisfies
@@ -153,7 +162,7 @@ There is a target-divisor version of (PR6) when the chosen factor has \(d\ge3\) 
 Consequently there is a strict improvement below the small-budget coefficient \(1/3\) on the unrestricted-height sector
 \[
         \prod_{\substack{p\mid UV\\q\nmid v_p(UV)}} p\le c^{f\lambda},
-        \qquad f<\frac{2}{3(q+3)},
+        \qquad f<\frac16,
         \qquad \operatorname{rad}(abc)<c^\lambda .             \tag{PR7}
 \]
 More precisely, for each fixed \(q,f\) as above there is \(\delta(q,f)>0\) such that the sector is \(O_{q,f,\lambda,\varepsilon}(X^{(1/3-\delta(q,f))\lambda+\varepsilon})\) for all sufficiently small fixed \(\lambda\). To prove it when a nonlinear factor exists, take a violating sequence of fixed-budget inner height limits followed by \(\lambda\to0\). Work in a near-saturating anatomic box. Its actual total radical
@@ -162,20 +171,20 @@ one-third bound applied to its smaller budget if the ratio were
 bounded away from one. The one-letter quarter inequality gives balanced caps \(1/3+o(1)\) on all three letters. The nonatomic mass on the chosen pair is at least \(1/3\). Removing \(q\)-defect primes costs at most \(f<1/3\) of this mass, and removing primes dividing \(2q\) has vanishing cost. To formalize this, split the scaled degree measures by divisibility of each exact index by \(q\) and pass to weak limits of the submeasures. The divisible submeasures on the pair still have positive nonatomic mass. A compact positive-degree continuity band of arbitrarily small positive mass on one of the chosen letters gives a full divisor of its root. Its radical cap \(\mu>0\) can be made arbitrarily small, and its fixed positive lower numerical weight gives \(\nu>0\), after division by \(q\) for the root. The band lies below the packed cutoff, whose scaled degree tends to
 infinity, so it gives genuine exact valuation slices. The band and the
 constants are fixed before applying the small-budget threshold and
-taking the ensuing height limits. Apply (PR6) with the third-letter cap approaching \(1/3\). Its coefficient can be made arbitrarily close to \(1/6+(q+3)f/4<1/3\), a contradiction. [One-letter quarter inequality and pair nonatomic bound](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees)
+taking the ensuing height limits. Apply (PR6) with the third-letter cap approaching \(1/3\). Its coefficient can be made arbitrarily close to \(1/6+f<1/3\), a contradiction. [One-letter quarter inequality and pair nonatomic bound](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees)
 
 The only remaining case is a split opposite quadratic. Primitivity forces the complete values to be exact opposite squares, whose cyclotomic count is strict below \(1/3\). [Cyclotomic count for opposite square letters](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md)
 
-In particular at every balanced saturating sequence and for each fixed \(q\), the combined \(q\)-defect radical mass is at least \(2/[3(q+3)]\) on every pair. The argument fixes \(q\) before both limits.
+In particular at every balanced saturating sequence and for each fixed \(q\), the combined \(q\)-defect radical mass is at least \(1/6\) on every pair. The argument fixes \(q\) before both limits. The binary-form extension also handles reducible forms directly, arbitrary actual projective residue lists and ramified root locks. [Binary-form ray amplification](ABC_BINARY_FORM_RAY_AMPLIFICATION.md)
 
 ## Minimal target repair
 
 For the least multiplier making \(c\) \(R\)-full, write \(H_R(c)=\prod_{p\mid c}p^{\max(v_p(c),R)}\). The height condition \(H_R(c)\le Y\) implies \(c\le Y\) and \(\operatorname{rad}(c)\le Y^{1/R}\). When the two selected letters are the summands, a nonlinear factor always exists. Apply (PR6) with \(X=Y,\lambda=1/R,\ell=1\). For every sufficiently large fixed \(R\), if the coefficients have \(\operatorname{rad}(AB)\le Y^{f/R}\) and the roots admit a divisor record with \(M\ge Y^\nu,\ \operatorname{rad}(M)\le Y^{\mu/R},\ \gcd(M,2qAB)=1\), the minimally repaired primitive quotient count is
 \[
-                    \ll Y^{(\mu+1/2+(q+3)f/4+\eta)/R+\varepsilon}.
+                    \ll Y^{(\mu+1/2+f+\eta)/R+\varepsilon}.
                                                                \tag{PR8}
 \]
-For \(\mu+(q+3)f/4<1/2\) this saves a fixed fraction of \(1/R\). The least multiplier is determined by \(c\), so the count contains no free common-multiplier factor. This direct target bound uses the target repair height and has no separate lower bound on \(\operatorname{rad}(c)\). If a nonlinear factor of degree at least three has a good divisor \(M\ge Y^\nu\) supported on its value, the target-divisor version gives the same bound with \(M\) on that factor instead of on the input roots. In a bin where its radical has mass \(s\) relative to \(Y^{1/R}\), the exponent from the modulus and the target is \((1+s)/(2R)\), up to the bin width and the allowance \(\eta/R\).
+For \(\mu+f<1/2\) this saves a fixed fraction of \(1/R\). The least multiplier is determined by \(c\), so the count contains no free common-multiplier factor. This direct target bound uses the target repair height and has no separate lower bound on \(\operatorname{rad}(c)\). If a nonlinear factor of degree at least three has a good divisor \(M\ge Y^\nu\) supported on its value, the target-divisor version gives the same bound with \(M\) on that factor instead of on the input roots. In a bin where its radical has mass \(s\) relative to \(Y^{1/R}\), the exponent from the modulus and the target is \((1+s)/(2R)\), up to the bin width and the allowance \(\eta/R\).
 
 For the balanced reverse-transfer sector of primitive total budget at most \((1+2\xi)\lambda\) and lower target cap \(\operatorname{rad}(c)\ge c^{(1/3-\xi)\lambda}\), use (PR7) with enlarged budget \((1+2\xi+\zeta)\lambda\) for fixed \(\zeta>0\). The same \(f\) still bounds the defect mass relative to the enlarged budget. The lower cap gives \(c\le Y^{1/[R(1/3-\xi)\lambda]}\), so the bound has exponent
 \[

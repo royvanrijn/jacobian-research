@@ -8141,8 +8141,7 @@ on the exact valuation layers of the third letter. The resulting
 estimate works in both real and imaginary quadratic fields without a
 numerical height-balance assumption. It excludes balanced saturation
 whenever any pair has combined odd-valuation radical mass below
-\(2/15\), with a fixed margin. The cost of the remaining class torsion
-can also be weighted by which primes divide the actual layer indices.
+\(1/6\), with a fixed margin. Higher moments absorb the class-group cost at sufficiently small fixed budget.
 [Weighted square ray class moments](ABC_WEIGHTED_SQUARE_RAY_CLASS_MOMENTS.md)
 
 For square summands with an exact power target, Gaussian factorization
@@ -8224,7 +8223,7 @@ conjugates forces diagonal products and gives a direct
 target-repair bound from divisors of the repaired target's
 primitive value. At each fixed order \(q\), this excludes
 balanced saturation when a pair has combined \(q\)-defect
-radical mass below \(2/[3(q+3)]\), with a fixed margin.
+radical mass below \(1/6\), with a fixed margin.
 An explicit Gaussian family rules out the corresponding
 degree-two value-divisor bound.
 [Projective ray class moments](ABC_PROJECTIVE_RAY_CLASS_NORM_MOMENTS.md)
@@ -8333,11 +8332,11 @@ At a balanced profile, consider weighted square summands with
 joint parity-kernel mass at most \(f\), a cubic target with
 defect mass at most \(g\), and one summand with parity kernel
 mass at least \(k\). A strict saving follows for
-\(5f/4+3g/2-k/2<1/6\), at sufficiently small fixed budgets.
+\(f+g-k/2<1/6\), at sufficiently small fixed budgets.
 There is no assumption on individual prime sizes. Choosing
-the larger kernel gives the sector \(f+3g/2<1/6\).
+the larger kernel gives the sector \(3f/4+g<1/6\).
 For exact cube targets with highly asymmetric kernels the cap
-approaches \(f=2/9\).
+approaches \(f=1/3\). When the selected underlying cubic splits into three rational forms, \(f+g-k/3<2/9\) suffices.
 [Cross-form projective ray locks](ABC_CROSS_FORM_PROJECTIVE_RAY_LOCKS.md)
 
 Private odd valuations give actual complete labels with
@@ -11179,6 +11178,100 @@ described cannot meet the test. The
 gives a separate nearly injective pair record in all balanced
 dictionary ranges, with a numerical height lower bound.
 
+## Exact norm powers, translated valuations and physical shifts
+
+For primitive \(a+b=c\), the Eisenstein norm
+\(a^2+ab+b^2\) leads to a count with limiting
+coefficient \(2/9\) on the proper-power sector.
+At a fixed order \(q\) it is \(1/((2v_3(3q)+1)
+\tau(3q/3^{v_3(3q)}))\) under total radical budget
+\(L\). The three original letters account for
+disjoint cyclotomic factor radicals away from a
+fixed prime pool. With three balanced caps, the
+radical of the primes at which norm valuations fail
+divisibility by \(q\) has price at least \(1/6\) at
+saturation, uniformly over adaptive orders. For
+sufficiently large orders it has price at least
+\(1/3\) up to an arbitrary fixed margin. A cheap
+full modulus on any original letter supplies the
+projective constraint. The same exact-power count
+can be used on a primitive cyclic pair output with
+the cost of one input anchor.
+[Eisenstein norm powers and defects (EN1–EN4)](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md)
+
+Primitivity makes a low-degree component with
+overlapping high roots on one original letter
+arithmetically restrictive. The private-zero
+condition supplies an arithmetic Nullstellensatz
+certificate whose prime support contains all
+actual high roots on that component. This gives
+\(X^{f+o(L)+\varepsilon}\) on the adaptive
+translated-grid sector with exception price
+\(X^f\) in the displayed growing-grid range, even
+when the limiting degree profile is diffuse.
+The number of grids may grow as \(L\) decreases.
+A uniform extraction of valuation mass in such
+grids remains open.
+[Private affine boundary and translated grids (PV1–PV2)](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md)
+
+For least repair at order \(M=\lceil K/L\rceil\),
+a fixed weighted shift of one repaired summand has
+arbitrarily small normalized fibre cost on private
+pairs with a diffuse marked role. Two exact physical
+shifts give a subpower-in-\(n\) limiting fibre for
+all balanced degree profiles, by a fixed-level
+binomial count. On an exponent-full pair selection
+the primitive summand difference for a diffuse marked
+role cannot remain under any fixed normalized radical
+cap as \(K\) grows. For a composite repair order,
+the corresponding marked target difference also has
+arbitrarily large radical floors on same-tail charts,
+with explicit original fibre prices. These statements
+keep the original three caps and identify a restriction
+on the auxiliary radical needed in the FP2 budget.
+[Least-repaired physical shifts (PS1–PS4)](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md)
+
+An unrestricted saving still needs a fixed-slack
+extraction from every almost-saturating family.
+The new counts give three concrete tests. Extract
+norm defect below \(1/6\), or below \(1/3\) at
+sufficiently large order. Extract translated-grid
+records whose combined exception and chart price
+is strictly below \(1/3\). For a pair transfer,
+prove an actual auxiliary radical bound after
+all original lift losses and chart costs. In each
+test the retained exponent must exceed the proved
+upper bound for the extracted sector. These
+obligations concern actual primitive rows and keep
+the height limit at fixed budget.
+
+## Binary-form ray counts and exact power coefficients
+
+The projective ratio of any two linear factors of a
+separable binary form gives a half-radical count on
+a deep congruence cell. Higher character moments make
+the entire class-number contribution arbitrarily small
+at sufficiently small fixed budget. The bound charges
+half the actual residue-list price. In degree at least
+three a tall divisor on the form value itself gives the
+same count, using the ideal primes where a selected pair
+of factors are units.
+
+For two original letters \(Ax^k,By^k\) with any fixed
+\(k\ge2\), a positive-depth root divisor gives exponent
+\(f_0+\mu+r_T/2+\eta\). Here \(f_0,\mu\) are the
+actual coefficient and divisor dictionary prices and
+\(r_T\) is the third radical cap. Roots may share primes
+with their own coefficients. Thus saturation requires
+joint coefficient price at least \(1/6\) on every pair
+and at every fixed \(k\). The previous two-square
+\(2/15\) defect threshold improves to \(1/6\) and holds
+for any fixed power order with no valuation grid on the
+third letter. For \(k\ge3\) a tall divisor on the third
+letter can take the place of a root divisor. The result
+counts only original primitive rows.
+[Binary-form ray amplification (BR1–BR4)](ABC_BINARY_FORM_RAY_AMPLIFICATION.md)
+
 ## Full-divisor packing and joint CM moments
 
 [Full-divisor packing (MP1–MP3)](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md)
@@ -11338,6 +11431,18 @@ to a growing feature rank needs a quantitative link with
 varying prime support.
 [Deep registers (JD12)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#two-short-crt-quotient-coordinates-give-arbitrarily-small-count)
 · [Integral chart comparison (DI4)](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md#di4-all-common-chart-moduli-act-through-two-integral-directions)
+
+The two-label argument also works with compressed
+right quotient and ratio dictionaries without macro
+prime slots. At the original tied dimensions, it
+excludes exact determinant price below \(2/9\) by a
+fixed margin. A separate construction with all three
+complete dictionaries injective and both summands
+diffuse shows that the two summand caps alone permit
+almost every pair to have large radical in both
+normalized determinants, even after fully dividing
+out the actual matching and target gcds.
+[Compressed quotient incidence and two-cap obstruction (FP14–FP15)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#fp14-a-two-label-inequality-for-compressed-quotients)
 
 Inside a surviving rich shared record, the two residual summands
 on each side are wholly nonatomic. The all-atomic alternative

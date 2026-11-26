@@ -1,6 +1,8 @@
 """Exact Sylvester-interpolation checker for two increasing unit-gap rows."""
 
+from argparse import ArgumentParser
 from collections import defaultdict
+from hashlib import sha256
 from math import comb, factorial
 
 
@@ -129,9 +131,37 @@ def value(poly, S, P):
     return sum(c*S**i*P**j for (i,j),c in poly.items())
 
 
+def verify_shift_witnesses():
+    witnesses = (
+        (1, 16, 27, "e494da3b000cfbeaa14c22c67e21673a3d0cf2ae9961e0fb37f326d4cc487a0e"),
+        (2, 21, 220, "84831d03f827e5a69a3d7a869d06cbcc1ff5ff59e3c10fbc6fd97ef8e9e5831d"),
+    )
+    for shift, n, shifted_product, expected_digest in witnesses:
+        shifted_sum = 0
+        original_sum = shifted_sum + 2*shift
+        original_product = shifted_product + shift*shift
+        resultant = resultant_value(n, original_sum, original_product)
+        quotient, remainder = divmod(resultant, 1 + original_sum + original_product)
+        assert remainder == 0
+        assert resultant < 0 and quotient < 0
+        digest = sha256(str(resultant).encode("ascii")).hexdigest()
+        assert digest == expected_digest
+        print("negative shifted resultant", shift, n, shifted_sum, shifted_product, digest)
+
+
 def main():
     if not __debug__:
         raise RuntimeError("Run without Python optimization to enable the exact checks.")
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--shift-witnesses-only", action="store_true",
+        help="check only the two negative shifted point evaluations",
+    )
+    args = parser.parse_args()
+    verify_shift_witnesses()
+    if args.shift_witnesses_only:
+        return
+
     resultant_witness = -int(
         "950844528495324832888575815277770346318989613491315656077122140236"
         "3311847372186386362265625000"

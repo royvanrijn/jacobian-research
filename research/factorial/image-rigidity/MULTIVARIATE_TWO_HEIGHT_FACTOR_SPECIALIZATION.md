@@ -39,12 +39,17 @@ Thus for a comparable fixed core and at least one even
 order, the finite reduction holds for every choice of
 the two multiplicities.
 
-For consecutive orders this gives an all-degree finite decision
-for the two-height family when the tests hold for all terminals below
-the [absolute cutoff](MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL_ANGLES.md).
-The finite coefficient tests and the elimination involve just
-the core and the two multiplicities. They require no sampled
-upper bound on either height.
+**Adjacent-order theorem.** For consecutive orders, the test is
+automatic for any fixed ordinary core and both multiplicities,
+including cores with arbitrary mixed orientations. The
+zero-dimensional assertion holds more generally for any positive
+arrays \(c_{j,k}\) for which \(c_{j,k}/\binom jk\) is log-convex in
+\(k\), and in particular after independent positive rescalings of
+the two core arrays. For rational arrays the finite locus is
+computable by rational elimination. For ordinary profiles this
+gives an all-degree finite decision below the
+[absolute cutoff](MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL_ANGLES.md),
+without an assumed upper bound on either height.
  
 ## Algebraic parameter space
 
@@ -239,32 +244,72 @@ again gives \(P/Q>1\), since \(k\ge1,r\ge2\).
 Equality \(Nk=n\) is impossible by coprimality.
 In both cases \(\mathcal L_h>0>\mathcal U_h\).
 
-For a fixed comparable core the multiplicities need not
-be prescribed in advance. The same applies to a fixed
-mixed core if both multiplicities are even.
+## Adjacent orders and arbitrary cores
+
+The automatic test for even multiplicities used only positive
+log-convex coefficient arrays with the binomial factors removed.
+Suppose at least one multiplicity is odd, and assign that one to
+\(s\) by exchanging the two height names if necessary. Define
+\[
+ X=\frac{\rho_n}{\rho_N}\left(\frac N n\right)^{r+s}.
+\]
+The two order labelings give reciprocal values of \(X\). Choose
+the labeling with \(X\ge1\). For a required test, \(\gcd(w,N)>1\)
+forces \(w<n\), since \(\gcd(n,N)=1\). The high term in
+\(\mathcal L_h\) is negative and has magnitude
+\(X(n/w)|\mathcal U_h|>|\mathcal U_h|\).
+
+The low term in \(\mathcal L_h\) is negative whenever present,
+except possibly if \(r\) is odd and \(h-1<n/N\).
+For \(N=n+1\) there is no such \(h\ge2\). For \(N=n-1\ge2\)
+the only such index is \(h=2\), where \(n/N-1=1/N\) and
+\(w=N\). Write \(P,Q>0\) for the magnitudes of the low and high
+terms respectively in the brackets in (1). After canceling
+the binomial factors, log-convexity gives
+\[
+ \frac{c_{n,0}/c_{n,1}}{c_{n,n-1}/c_{n,n}}\ge\frac1{n^2},
+ \qquad
+ \frac P Q\ge \frac{[n(n-2)]^r(n-2)^s}{n^2}
+              \ge\frac{(n-2)^2}{n}\ge1
+                    \quad(n\ge4).
+\]
+At this index the low term is positive, so
+\(\mathcal L_2\ge0>\mathcal U_2\). For the pair of orders \(2,3\)
+one can instead choose \(N=3\), since there is then no required
+test. This proves the adjacent-order theorem for all starting
+orders \(n\ge2\). The pair \(1,2\) has no ordinary collision by
+strict positivity of the even moment on the real line.
+
+The comparison uses only log-convexity and positivity of the
+given arrays. Multiplication of \(c_{j,k}\) by a positive scalar
+times the \(k\)-th power of a positive number preserves both
+properties. The full-degree locus therefore stays
+zero-dimensional for any such prescribed rescalings.
+
+## Unbounded counts and bounded cores
+
+For any fixed ordinary core the multiplicities need not be
+prescribed in advance.
 At a possible ordinary collision the
 [absolute degree-imbalance bound](MULTIVARIATE_ALL_DEGREE_SIGNED_IMBALANCE.md)
 requires \(|\Delta_C+r+s|<146J-73\), where \(\Delta_C\)
 is the signed gap of the core and \(J\) is a certified
 integer absolute cutoff. Only finitely many pairs
 \(r,s\) need to be used in the preceding elimination.
-Thus all-degree SFC(2) is decidable for the entire
-two-height comparable family, and for the mixed-core
-family with both multiplicities even. Every potential
+Thus all-degree coprimality is decidable for the entire
+two-height family with that fixed core. Every potential
 failure has a computable finite height cutoff. This does not assume bounds on the
 heights before the calculation.
 
-The core can also vary in either family, over all
-allowed cores of height at most a prescribed integer \(B_0\ge1\).
+The core can also vary over all ordinary cores of height at
+most a prescribed integer \(B_0\ge1\).
 Discard its equal rows. At a failure the
 [absolute curvature bound](MULTIVARIATE_ABSOLUTE_CURVATURE_12.md)
 forces fewer than \(12B_0\) unequal core rows, since each has
 curvature at least \(1/B_0\). There are finitely many such cores,
 so taking the maximum of the calculated cutoffs gives a
-finite decision for this enlarged family. Both appended
-types still have independently unbounded heights and
-unrestricted multiplicities in the comparable case, or
-arbitrary even multiplicities in the mixed case.
+finite decision for this enlarged family. Both appended types still have independently unbounded heights
+and unrestricted positive multiplicities.
 
 The [exact replay](verify_multivariate_two_height_factor_specialization.py)
 checks the two limiting translation coefficients directly

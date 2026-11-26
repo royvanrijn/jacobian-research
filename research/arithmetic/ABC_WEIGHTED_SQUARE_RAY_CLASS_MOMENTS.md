@@ -18,7 +18,7 @@ where \(A,B\) are positive squarefree. Denote the third complete letter by \(T\)
 Uniformly in these data the number of triples is
 \[
  \ll_{f,\mu,\ell,\nu,\eta,\lambda,\varepsilon}
- X^{(\mu+\ell/2+5f/4+\eta)\lambda+\varepsilon}.
+ X^{(\mu+\ell/2+f+\eta)\lambda+\varepsilon}.
  \tag{WR1}
 \]
 The coefficients can vary with the triples. No degree-grid condition is imposed on \(T\). The same bound permits the cap on \(T\) to count only primes outside a prescribed integer \(P\le X^B\), for fixed \(B\). The prescribed support can depend on the fixed coefficients and divisor record.
@@ -46,11 +46,16 @@ Write \(I^1(M)\) for the multiplicative group of fractional ideals of absolute n
 \]
 In the imaginary field omit the real coordinate and quotient \(I^1(M)\) by the indicated principal ideals. Write \(g(\mathfrak i)\) for the image of \((\mathfrak i,0)\), or of \(\mathfrak i\) in the imaginary case. Put \(h(t)=[(1),t]\) in the real case. In the imaginary case use \(h(t)=0\).
 
-The subgroup in (WR3) is closed. In each fixed ideal component its real coordinates, when nonempty, form a translate of the logarithms of the units congruent to one. These logarithms form a discrete lattice of rank one in the real case, since that congruence cuts out a finite-index subgroup of the units. The image \(H=h(\mathbb R)\) is therefore a circle in the real case and trivial in the imaginary case. The quotient \(G/H\) is a subgroup of the ordinary ray class group \(\mathrm{Cl}_M(K)\) with finite modulus \(M\mathcal O_K\), so \(G\) is compact. Its \(e\)-torsion has size at most \(e\,|\mathrm{Cl}_M(K)[e]|\). [Degree-zero Arakelov class groups, Schoof](https://library.slmath.org/books/Book44/files/14schoof.pdf)
+The subgroup in (WR3) is closed. In each fixed ideal component its real coordinates, when nonempty, form a translate of the logarithms of the units congruent to one. These logarithms form a discrete lattice of rank one in the real case, since that congruence cuts out a finite-index subgroup of the units. The image \(H=h(\mathbb R)\) is therefore a circle in the real case and trivial in the imaginary case. The quotient \(G/H\) maps to the ordinary ray class group
+\(\mathrm{Cl}_M(K)\). Its kernel has order at most two. A
+norm-one ideal with a principal ray generator has generator
+norm \(1\) or \(-1\), and two such generators of the same
+norm give the same element of this kernel. Thus \(G\) is
+compact and its \(e\)-torsion is at most \(2e|\mathrm{Cl}_M(K)[e]|\). [Degree-zero Arakelov class groups, Schoof](https://library.slmath.org/books/Book44/files/14schoof.pdf)
 
 The ray class exact sequence has kernel on projection to \(\mathrm{Cl}(K)\) given by \((\mathcal O_K/M\mathcal O_K)^\times\) modulo the image of the units. In a finite abelian group a quotient has at most as many elements killed by \(e\) as the original group, since the order of the \(e\)-torsion equals the order of the quotient by \(e\)-multiples. It follows that
 \[
-   |G[e]|\le e\,|\mathrm{Cl}(K)[e]|\,
+   |G[e]|\le 2e\,|\mathrm{Cl}(K)[e]|\,
                          |(\mathcal O_K/M\mathcal O_K)^\times[e]|
           \le |\mathrm{Cl}(K)[e]|X^{o_X(1)} .                 \tag{WR4}
 \]
@@ -67,7 +72,7 @@ Bin the ideal norms with \(N\mathfrak a_e\le X^{\lambda\theta_e}\), choosing a f
        F_e(\chi)=\sum_{\mathfrak a\in\mathcal A_e}
                          \chi(e\,g(\mathfrak a/\bar{\mathfrak a})).
 \]
-The global orientation choice makes \(N\mathfrak a\) determine \(\mathfrak a\), so \(\#\mathcal A_e\le X^{\lambda\theta_e}\). Slots of zero cap can be omitted. Set \(H_0=\sum_e\theta_e\) and \(m_e=\lceil H_0/\theta_e\rceil\). These give \(m_e\theta_e\le2H_0\) and \(\sum_e 1/m_e\le1\). If every slot is omitted, there is just one tuple of ideals.
+The global orientation choice makes \(N\mathfrak a\) determine \(\mathfrak a\), so \(\#\mathcal A_e\le X^{\lambda\theta_e}\). Slots of zero cap can be omitted. Set \(H_0=\sum_e\theta_e\) and \(m_e=\lceil H_0/(2\xi\theta_e)\rceil\) for a small fixed \(0<\xi\le1/2\). These give \(m_e\theta_e\le(1+1/(2\xi))H_0\) and \(\sum_e(2m_e)^{-1}\le\xi\). If every slot is omitted, there is just one tuple of ideals.
 
 For a moment of order \(2m_e\), expand \(|F_e|^{2m_e}\) against the probability weights \(\widehat K_0(\chi)\). Fix the first product \(\mathfrak A\) of \(m_e\) ideals. Any second product \(\mathfrak B\) that contributes satisfies
 \[
@@ -80,7 +85,7 @@ The preimage of this arc is contained in at most \(|G[e]|\) translates of \(h([-
    (\mathfrak B_1/\bar{\mathfrak B}_1)
                    (\bar{\mathfrak B}_2/\mathfrak B_2)=(\zeta)
 \]
-where \(\zeta\equiv1\bmod M\), \(|N\zeta|=1\), and \(|r(\zeta)|\le4W/e\) in the real case. This follows directly from the kernel in (WR3). In the imaginary case \(|\sigma(\zeta)|=1\). Put \(D_1=N(\mathfrak B_1\mathfrak B_2)\). Its rational integer ideal clears the denominator of \((\zeta)\), so \(D_1(\zeta-1)\) is integral and lies in \(M\mathcal O_K\). Its absolute values at both embeddings are \(O(X^{4H_0\lambda+\nu/5})\). For sufficiently small fixed \(\lambda\) this is \(o(X^\nu)\), uniformly since \(H_0\le\ell+\eta/4\). A nonzero element of \(M\mathcal O_K\) has absolute norm at least \(M^2\), so \(\zeta=1\). The orientation condition now gives \(\mathfrak B_1=\mathfrak B_2\). A fixed product of a fixed number of ideals of polynomial norm has subpower many ordered factorizations by the divisor bound. Therefore
+where \(\zeta\equiv1\bmod M\), \(|N\zeta|=1\), and \(|r(\zeta)|\le4W/e\) in the real case. This follows directly from the kernel in (WR3). In the imaginary case \(|\sigma(\zeta)|=1\). Put \(D_1=N(\mathfrak B_1\mathfrak B_2)\). Its rational integer ideal clears the denominator of \((\zeta)\), so \(D_1(\zeta-1)\) is integral and lies in \(M\mathcal O_K\). Its absolute values at both embeddings are \(O(X^{4(1+1/(2\xi))H_0\lambda+\nu/5})\). For sufficiently small fixed \(\lambda\) this is \(o(X^\nu)\), uniformly since \(H_0\le\ell+\eta/4\). A nonzero element of \(M\mathcal O_K\) has absolute norm at least \(M^2\), so \(\zeta=1\). The orientation condition now gives \(\mathfrak B_1=\mathfrak B_2\). A fixed product of a fixed number of ideals of polynomial norm has subpower many ordered factorizations by the divisor bound. Therefore
 \[
  \left(\sum_\chi \widehat K_0(\chi)|F_e(\chi)|^{2m_e}\right)^{1/(2m_e)}
     \le X^{\lambda\theta_e/2+o_X(1)}
@@ -94,7 +99,7 @@ The factor from nontrivial class groups is explicitly bounded by
 \[
                    \prod_{e=1}^J |\mathrm{Cl}(K)[e]|^{1/(2m_e)}.
 \]
-The uniform class-number bound \( |\mathrm{Cl}(K)|\ll_\varepsilon D^{1/2+\varepsilon}\) follows by counting integral ideal representatives of bounded norm given by Minkowski's theorem. Because \(\sum_e1/(2m_e)\le1/2\), the factor costs at most \(X^{(f/4)\lambda+o_X(1)}\) in the exponent sense. Add the coefficient, modulus and tail costs to prove (WR1). All choices of \(J\), the cap mesh and the number of slots precede the height limit at fixed \(\lambda\).
+The uniform class-number bound \( |\mathrm{Cl}(K)|\ll_\varepsilon D^{1/2+\varepsilon}\) follows by counting integral ideal representatives of bounded norm given by Minkowski's theorem. The factor costs at most \(X^{\xi(f/2)\lambda+o_X(1)}\). Fix \(\xi\) small enough to absorb this in \(\eta\), then take the budget small enough for the norm cutoff at those higher moments. The probability weights allow Hölder with a constant function for the unused reciprocal exponents. Add the coefficient, modulus and tail costs to prove (WR1). All choices of \(J\), the cap mesh and the number of slots precede the height limit at fixed \(\lambda\).
 
 For a refinement, \(\mathrm{Cl}(K)[2^{v_2(e)}]\) has subpower size by quadratic genus theory and the fixed cutoff \(J\). With
 \[
@@ -105,18 +110,18 @@ and maximum zero when all retained orders are powers of two, the torsion cost in
 
 ## Exclusion at the balanced endpoint
 
-In the original budget \(\operatorname{rad}(abc)<c^\lambda\), suppose that on some two letters the product of the primes of odd exact valuation is at most \(c^{f\lambda}\), where \(f<2/15\) is fixed. There is a constant \(\delta(f)>0\) such that this sector is
+In the original budget \(\operatorname{rad}(abc)<c^\lambda\), suppose that on some two letters the product of the primes of odd exact valuation is at most \(c^{f\lambda}\), where \(f<1/6\) is fixed. There is a constant \(\delta(f)>0\) such that this sector is
 \[
             O_{f,\lambda,\varepsilon}
                    \left(X^{(1/3-\delta(f))\lambda+\varepsilon}\right)
 \]
-for all sufficiently small fixed \(\lambda\). The selected two letters can vary from row to row by a finite union over the pairs.
+for all sufficiently small fixed \(\lambda\). The selected two letters can vary from row to row by a finite union over the pairs. The general binary-form ray theorem gives the same result for any fixed power order with no restriction on the third valuation distribution. [Binary-form ray count](ABC_BINARY_FORM_RAY_AMPLIFICATION.md#br4-two-weighted-powers-and-the-original-three-caps)
 
 Otherwise take a saturating sequence with inner height limits at fixed budgets and with \(\lambda\to0\). The one-letter quarter inequality gives balanced radical caps \(1/3+o(1)\) on each letter. The pair bound for the nonatomic degree masses gives total nonatomic mass at least \(1/3\) on the selected two letters. On those two letters the roots \(x,y\) retain the even-valuation powers away from their odd-kernel supports. The removed odd mass is at most \(f\), and removing the prime \(2\) costs vanishing normalized mass. After splitting the degree measures by parity and taking a subsequence, the retained even powers therefore have positive nonatomic mass. At one of the two letters select a compact positive-degree band of arbitrarily small positive normalized mass. Its full product in the square root has positive numerical weight, bounded below along the subsequence, and supplies \(M\) with an arbitrarily small fixed \(\mu>0\) and a fixed \(\nu>0\). The square root halves the numerical weight and preserves the radical of this even band. The choice may be made after the limiting profile is fixed, then held fixed in the inner height limits.
 
-Apply (WR1) with the third cap approaching \(1/3\). Its resulting coefficient can be made as close as desired to \(1/6+5f/4<1/3\), a contradiction. When the selected opposite kernels give \(D=1\), the original values are exact opposite squares and the cyclotomic argument supplies a strict gap. This exclusion uses no hypothesis on the numerical height balance of the chosen pair. Its hypothesis concerns the actual primitive odd-valuation supports and is preserved when counting the primitive quotients in the minimal-repair height band. [Pair nonatomic bound and one-letter quarter inequality](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees) · [Opposite exact squares](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md#additive-identities-for-opposite-even-powers)
+Apply (WR1) with the third cap approaching \(1/3\). Its resulting coefficient can be made as close as desired to \(1/6+f<1/3\), a contradiction. When the selected opposite kernels give \(D=1\), the original values are exact opposite squares and the cyclotomic argument supplies a strict gap. This exclusion uses no hypothesis on the numerical height balance of the chosen pair. Its hypothesis concerns the actual primitive odd-valuation supports and is preserved when counting the primitive quotients in the minimal-repair height band. [Pair nonatomic bound and one-letter quarter inequality](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees) · [Opposite exact squares](ABC_MINIMAL_REPAIR_CYCLOTOMIC_SPLIT.md#additive-identities-for-opposite-even-powers)
 
-In particular any balanced saturating sequence has combined odd-valuation radical mass at least \(2/15\) on each pair, and hence total odd-valuation mass at least \(1/5\). In the minimally repaired sector with total primitive budget at most \((1+2\xi)\lambda\) and lower target cap \(c^{(1/3-\xi)\lambda}\), apply the preceding exclusion at budget \((1+2\xi+\zeta)\lambda\) for any fixed \(\zeta>0\). The exponent for repair height \(Y\) is at most
+In particular any balanced saturating sequence has combined odd-valuation radical mass at least \(1/6\) on each pair, and hence total odd-valuation mass at least \(1/4\). In the minimally repaired sector with total primitive budget at most \((1+2\xi)\lambda\) and lower target cap \(c^{(1/3-\xi)\lambda}\), apply the preceding exclusion at budget \((1+2\xi+\zeta)\lambda\) for any fixed \(\zeta>0\). The exponent for repair height \(Y\) is at most
 \[
  \frac{(1/3-\delta(f))(1+2\xi+\zeta)}{M(1/3-\xi)}
        +\varepsilon.

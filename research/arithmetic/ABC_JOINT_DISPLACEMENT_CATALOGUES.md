@@ -1043,3 +1043,173 @@ the same exponent. This establishes that the original radical caps are necessary
 for a contradiction using the stated CRT, entropy and energy
 conditions. The model itself meets the positivity, primitivity
 and shell conditions.
+
+## JD14. Costs of extracting deep projected registers
+
+Use a regular balanced original cohort of exponent \(d=1/3\),
+complete dictionary exponent \(\alpha\) and witness exponent
+\(u=d-\alpha\), with all three original radical caps. Errors
+below are in the fixed-budget height limit followed by the
+small-budget limit.
+
+Suppose an exponent-full selected population is covered by actual
+full-divisor records \(D_A,D_B,D_C\). Choose a definite certificate
+per row. Ordinary size and finite projection refinements may be
+made before counting. Use only the native registers on roles
+\(R,S\); let \(T\) be the remaining role. If two of the projected
+quotients satisfy the small-height requirement of JD12, then one
+of those short quotient roles is \(R\) or \(S\). Its projection
+modulus divides \(D_R D_S\), including for partial registers.
+For fixed \(T\), the two native registers are already determined
+by \(T\) and \(D_R,D_S\), with the prescribed signs. The own
+record \(D_T\) has only height-subpower choices from the divisors
+of \(T\). Consequently the width in the remaining fixed-\(T\)
+fibre is bounded by the already required projected-cell width.
+The short role is in one fixed class modulo \(D_R D_S\) by the
+signed sum and CRT. Its integer quotient after subtracting an
+anchor is bounded by the prescribed short feature width. CS1 then gives arbitrarily small normalized
+row multiplicity on this fibre, uniformly in the fixed values
+and divisors. This is also the relative-width form of JD5.
+
+It follows that the pair of opposite divisor records must have
+conditional entropy at least \(u-o(1)\) given the exact remaining
+complete letter \(T\). Indeed these two records and \(T\) determine
+the full original row up to arbitrarily small normalized
+entropy, while \(H(\mathrm{row}\mid T)=u+o(1)\). In
+particular their actual joint catalogue has exponent at least
+\(u-o(1)\). Summing that catalogue and charging the two projected
+registers by their trivial complete-letter cap \(\alpha\) can
+never give a fixed strict saving. One needs an actual projected
+support discount, a joint entropy discount between charts and
+registers, or a different cover.
+
+If just one native register on \(R\) is used to shorten two
+quotients, they are the two opposite roles. Fixing one complete
+opposite value and the two locks on the other opposite role and
+on \(R\) gives the same fixed-fibre argument. Hence each of the
+two corresponding joint lock catalogues needs exponent at least
+\(u-o(1)\). If \(R\)'s record has vanishing normalized price,
+each opposite-lock marginal catalogue already needs exponent at
+least \(u-o(1)\). On a near-full RB4 reference chart the default
+native price is \(s=2\alpha-d\), so merely summing the two
+opposite marginal prices and the native cap has no strict gain:
+\(2u+s=d\). This last conclusion concerns separately summed prices.
+
+These comparisons apply to adaptive, actual divisors on the original three-cap rows.
+
+### The cost of a cover by bounded-doubling sets
+
+On a regular RB4 chart fix a native register \(J_R\) of size
+\(n^{s+o(1)}\), with \(s=d-2u>0\). Its occupied native
+cells contain at most \(n^{2u+o(1)}\) original rows.
+Suppose an opposite role \(V\) satisfies
+\[
+       v_V=\log_n(1+H_V/(D_V D_R)) < d-r_V/2
+\]
+by a fixed margin, where \(r_V\) is the actual outside
+radical cap used in JD10. The single-side JD10 estimate for the full native
+register gives
+\[
+ E_+(J_R)\ll n^{3s-\gamma+o(1)},\qquad
+ \gamma=\min\{s,\sigma,d-r_V/2-v_V\}>0.
+\]
+Here \(\sigma\) is the genuine three-cap exceptional
+quotient gap of JD2. All estimates use exact integer
+difference lifts from the appropriate cyclic modulus.
+
+For a subset \(P\subset J_R\) with
+\(|P+P|\le n^\beta |P|\), Cauchy–Schwarz gives
+\(E_+(P)\ge |P|^3/n^\beta\). It follows that
+\[
+ |P|\le n^{s-(\gamma-\beta)/3+o(1)},\qquad
+ \#\{\mathrm{rows\ above\ }P\}
+       \le n^{d-(\gamma-\beta)/3+o(1)}.
+\]
+In particular bounded doubling, and even subpower doubling,
+cannot cover an exponent-full portion of this deep native
+chart with subpower many such pieces. Any such cover has
+positive catalogue price at least \((\gamma-\beta)/3\).
+The argument applies on original three-cap charts.
+
+The corresponding full projected version on a near-tight
+JD5 chart of depth \(D\ge X/n^{O(1)}\) can use JD9.
+For the projection of a complete role, with \(\alpha\ge
+2/9\), the additive energy exponent is \(3\alpha-\gamma\)
+with \(\gamma\) any fixed margin smaller than
+\(\min(\sigma,1/18)\) at vanishing lift cost. The same
+argument bounds the covered row exponent by
+\(d-(\gamma-\beta)/3+v+o(1)\), where \(v\) is the
+actual complete lift exponent for that projection.
+
+A sparse subset of an affine integer box of
+parameter volume \(n^B\) can have large doubling.
+The energy argument in that generality only gives
+\(|P|^4/n^B\le E_+(P)\), hence for an exponent-full
+subset \(B\ge \alpha+\gamma\) in the full-projection
+example. JD12 allows any fixed \(B\) at sufficiently small
+budget, so sparse fixed-rank representations with larger
+boxes remain possible.
+
+### Escape-only locking across the balanced range
+
+Let \(e_A,e_B,e_C\) be the escaped first moments of
+the three original scaled-degree measures. For every
+fixed \(c>0\), an original balanced endpoint with
+\(\alpha\le 2/9-c\) satisfies
+\[
+                         e_A+e_B+e_C\le 1-\theta(c)
+\]
+for some fixed \(\theta(c)>0\). Otherwise choose a
+height-first contrary sequence with total escape
+approaching or exceeding one. Select the entire
+high-order tail on each role, at a common large
+bounded continuity cutoff. The total raw cost is
+arbitrarily small by the bounded numerical first
+moments, while the product has limiting numerical
+weight at least the total escape. If a role has
+zero escaped moment, augment its lock with an
+arbitrarily cheap fixed positive-depth nonatomic
+block. Such blocks exist on all roles since
+\(u=1/3-\alpha>0\) by the fixed-fibre nonatomic
+bound. Fixing the three divisors loses only the
+arbitrarily small total cost.
+
+On a large surviving chart, RB4 for the three
+cheap original locks bounds the joint native
+support by \(n^{3s+o(1)}\), where
+\(3s=6\alpha-1\le 1/3-6c\). The height deficit
+of the full product tends to zero. Choose the
+JD12 counting allowance smaller than the margin
+before taking its positive depth threshold and
+then the smaller fixed budgets. The row count
+after paying charts is below \(n^{1/3}\) by a
+fixed margin, a contradiction.
+
+For any positive limiting witness exponent \(u\),
+FW2 gives all three strict inequalities
+\[
+                          e_R+e_S<h_{\min(R,S)}
+\]
+with uniform margin on a fixed positive \(u\) stratum.
+Thus an escape-only selection cannot supply depth
+relative to the complete heights on two roles after
+omitting any native register. If one instead uses
+still shorter projected-cell diameters, the earlier
+conditional record floor excludes an exponent-full
+selection with vanishing chart cost: two selected
+native registers require the summed pair on at
+least one of their own roles, and one selected
+native register requires it on both opposite roles.
+If the shortest complete height exponent is
+\(h_{\rm short}\le1/2\), the two FW2 inequalities
+involving it already give \(e_A+e_B+e_C<1\), so
+even the three-register escape selection cannot
+be fully deep in that case. At larger heights
+and \(\alpha\ge2/9\), total escape at least one
+may yield inexpensive three-lock charts. On those
+deep charts the count of JD12 at any prescribed small
+allowance forces the joint register entropy to reach
+\(1/3+o(1)\) at arbitrarily small price for the locks.
+A fixed entropy discount still needs arithmetic compression.
+[Fixed-complete fibre features (CS1)](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md#small-features-on-a-fixed-complete-letter-fibre)
+· [Fibre valuation and escape tests](ABC_WIDE_COFACTOR_CONGRUENCES.md)

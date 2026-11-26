@@ -1603,6 +1603,17 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | All common divisor and register congruences factor through two integral directions | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
 | A restored derivative digit gives a true quotient-feature congruence | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
 | Identical nonzero derivative defects coexist with different feature sizes on deep cells | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
+| A list of ray residues costs half its logarithmic size | Internal result | proved | [Source](ABC_BINARY_FORM_RAY_AMPLIFICATION.md) |
+| Binary forms have a half-radical count in deep projective ray cells | Internal result | proved | [Source](ABC_BINARY_FORM_RAY_AMPLIFICATION.md) |
+| A full value divisor gives a ray count for separable binary forms of degree at least three | Internal result | proved | [Source](ABC_BINARY_FORM_RAY_AMPLIFICATION.md) |
+| Every fixed shared power order admits a half-price count on the third letter | Internal result | proved | [Source](ABC_BINARY_FORM_RAY_AMPLIFICATION.md) |
+| Every fixed-power coefficient-pair dictionary at balance needs price one sixth | Internal result | proved | [Source](ABC_BINARY_FORM_RAY_AMPLIFICATION.md) |
+| Coprime factor groups share one radical budget in the ray count | Internal result | proved | [Source](ABC_BINARY_FORM_RAY_AMPLIFICATION.md) |
+| Two-label incidence counts compressed quotient dictionaries without large prime atoms | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| The two summand caps allow both normalized determinant radicals to be large at occurrence | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Deep projected charts force a conditional divisor-record cost at balance | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| The total escaped valuation moment stays below one on lower dictionary strata | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| A split cubic carrier gives a larger asymmetric square-kernel sector | Internal result | proved | [Source](ABC_CROSS_FORM_PROJECTIVE_RAY_LOCKS.md) |
 
 **Computed obligations:** 112 unresolved; 19 resolved within their exact scope.
 

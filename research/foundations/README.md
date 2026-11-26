@@ -206,6 +206,10 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | A single normalized pole cannot prevent the seventeen-shift test | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
 | Coherent sphere detection throughout a fixed-boundary stratum | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md) |
 | An exact coherent obstruction to the first eight rows and a sharp ninth row | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md) |
+| Two projected cuts for the conductor-18 seventeen-row locus | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SEVENTEEN_ROW_LOCUS.md) |
+| Finite even-coefficient projection of the conductor-18 residual system | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SEVENTEEN_ROW_LOCUS.md) |
+| An algebraic coherent blind direction through shift 12 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SEVENTEEN_ROW_LOCUS.md) |
+| Normal-chart exclusion on the third weighted boundary at 331 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_331_L3_NORMAL_CHARTS.md) |
 
 **Computed obligations:** 12 unresolved; 3 resolved within their exact scope.
 

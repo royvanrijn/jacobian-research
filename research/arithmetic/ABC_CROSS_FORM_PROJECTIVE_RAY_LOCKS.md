@@ -22,7 +22,7 @@ support \(P\) and all the other hypotheses of (PR1).
 Then (PR2) still bounds the count, including for signed
 primitive input pairs. In particular the bound is
 \[
- X^{(\mu+\ell/2+g_F/4+\eta)L+\varepsilon},
+ X^{(\mu+\ell/2+\eta)L+\varepsilon},
  \qquad |\operatorname{Disc}(K)|\ll X^{g_F L},
  \tag{XL1}
 \]
@@ -70,7 +70,7 @@ the height-relative constraints
 \]
 If
 \[
-                  \frac54 f+\frac32g-\frac12 k<\frac16,
+                  f+g-\frac12 k<\frac16,
  \tag{XL2}
 \]
 there is a fixed \(\delta>0\) such that the count is
@@ -78,10 +78,10 @@ there is a fixed \(\delta>0\) such that the count is
 for every sufficiently small fixed \(L>0\).
 In particular one may remove the lower cap on the kernel
 of a specified summand and get the same conclusion under
-\(f+3g/2<1/6\). Bin the actual joint kernel mass and
+\(3f/4+g<1/6\). Bin the actual joint kernel mass and
 choose the summand with at least half that mass.
 For exact cube targets with nearly all the kernel mass
-on one summand, the allowed joint cap approaches \(2/9\).
+on one summand, the allowed joint cap approaches \(1/3\).
 
 Work in height shells. By the carrier construction in
 (WG4), fixing the kernels, the cubic defect and an
@@ -99,7 +99,7 @@ degree two and is proportional to \(r^2+Ds^2\).
 Use the reduced primitive parameter of (WG4).
 [Weighted carrier and ideal-class count (WG4)](ABC_WEIGHTED_GAUSSIAN_CYCLOTOMIC_DESCENT.md#projective-recovery-with-arbitrary-ideal-classes)
 
-Let \(J_0\) be the squarefree product of all primes dividing \(6AB C m\).
+Let \(J_0\) be the squarefree product of all primes dividing \(AB C m\) and the fixed primes at most seven.
 Outside that support all coefficients can be made
 integral without a nonunit scalar. The two linear forms
 \(\gamma,\bar\gamma\) are independent there, the two
@@ -165,7 +165,7 @@ of (XL1) hold by the projective root properties above.
 The resulting exponent in units of \(L\) is at most
 \[
        (f+g)+\mu+\frac{\ell_U-k}{2}
-                       +\frac{f+2g}{4}+\eta .
+                       +\eta .
  \tag{XL4}
 \]
 
@@ -191,21 +191,36 @@ positive numerical weight therefore counts the two
 linear values at half their combined cap, or at most
 \((\ell_U-k)/3+\eta\) in units of \(L\). These two
 values determine the reduced projective parameter since
-the lines are distinct. This is stronger than (XL4).
+the lines are distinct.
+The split branch therefore also saves under
+\[
+                    f+g-\frac{k}{3}<\frac29                  \tag{XL5}
+\]
+when the selected underlying carrier form splits on
+the retained rows. The exponent for the split branch
+is \(f+g+(\ell_U-k)/3+\mu+\eta\).
+
 [Signed root moments (JD1)](ABC_JOINT_FREE_LETTER_DICTIONARIES.md#a-signed-joint-dictionary-estimate)
 
 ## Obtaining the external divisor at balance
 
-If (XL2) failed to give a uniform saving, choose
+If (XL2), or (XL5) on its split branch, failed to give a uniform saving, choose
 violating fixed budgets tending to zero after the inner
 height limits. The limiting one-third bound forces a
 near-saturating box to use \(1-o(1)\) of the ambient
 budget. The balance and pair nonatomic conclusions apply,
 so the selected cap is \(\ell_U=1/3+o(1)\) and the
 two complementary letters have combined nonatomic mass
-at least \(1/3\). The support excluded by \(J_0\) has
-mass at most \(3f/2+g+o(1)\), by \(m\ll\sqrt{AB}\).
-Condition (XL2) gives \(3f/2+3g<1/3\) because \(k\le f\).
+at least \(1/3\). Across the two complementary letters, the support
+excluded by \(J_0\) has total radical mass at most
+\(3f/2+g-k+o(1)\). The primes of the selected kernel
+\(D_U\) occur on neither complementary letter by
+primitivity. The other summand parity kernel costs
+at most \(f-k\), the cubic defect at most \(g\), and
+the auxiliary carrier ideal norm at most \(f/2+o(1)\).
+The remaining fixed primes have vanishing cost.
+Under (XL2), \(3f/2+g-k\le(3/2)(f+g-k/2)<1/4\).
+Under (XL5), \(3f/2+g-k\le(3/2)(f+g-k/3)<1/3\).
 Take bounded positive-scale bands in the other pair
 whose nonatomic mass exceeds the excluded support cap
 by a fixed margin. Remove small windows around finitely
@@ -235,8 +250,9 @@ The margins of this construction are fixed before the
 inner height limits where (XL1) and (JD1) are applied.
 
 With \(\mu,\eta\) chosen below the strict margin,
-(XL4) contradicts the exponent \(1/3\) by (XL2).
-The splitting case gives the same contradiction.
+the count in (XL4) or the split count preceding
+(XL5) contradicts the exponent \(1/3\) in its
+respective sector.
 Dyadic shells give the stated cumulative count.
 The weighted square and cube defect hypotheses are part
 of this sector. The argument leaves the general

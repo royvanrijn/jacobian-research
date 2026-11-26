@@ -42,9 +42,35 @@ of these orders. The shift replaces \((S,P)\) by
 \((S'+2,P'+S'+1)\). Consequently the negative coefficients
 above leave the positive numerical resultant for
 \(a,b\ge0\) intact at \(n=7\). The sign result places no
-restriction on either height at these starts. Positivity at
-arbitrary starting order in the original heights or the
-shifted elementary generators remains open.
+restriction on either height at these starts.
+
+## Shifts by one and two also fail in the elementary generators
+
+For a fixed shift \(K\), write \(a=K+x,\ b=K+y\) and use
+\(S'=x+y,\ P'=xy\). The substitution in the resultant is
+\((S,P)=(S'+2K,P'+KS'+K^2)\). The following exact point
+evaluations are negative.
+
+| Shift \(K\) | Start \(n\) | \(S'\) | \(P'\) | \(S\) | \(P\) |
+|---:|---:|---:|---:|---:|---:|
+| 1 | 16 | 0 | 27 | 2 | 28 |
+| 2 | 21 | 0 | 220 | 4 | 224 |
+
+Since \(S',P'\) are nonnegative at both points, these
+evaluations require a negative coefficient in each shifted
+resultant. The same argument applies to the shifted quotient
+\(H_n\), since \(1+S+P>0\) at both points. The witnesses have
+\(x,y=\pm i\sqrt{P'}\), so neither comes from nonnegative
+real heights. Positivity of the coefficients in the individual
+heights \(a,b\), and coprimality at all nonnegative integer
+heights, remain open beyond the certified orders.
+
+The checker computes both signs with two fraction-free
+Sylvester determinants. The signs were also reproduced using
+exact univariate subresultants. Run the point checks separately
+with
+
+    python3 research/factorial/image-rigidity/verify_multivariate_two_unit_gap_resultant_sign.py --shift-witnesses-only
 
 ## Exact coefficient reconstruction
 
