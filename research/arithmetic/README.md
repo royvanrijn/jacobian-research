@@ -1575,6 +1575,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The stronger pair budget forces two-prime private target quotients at the first tie | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
 | Averaged short cubic certificates give the balanced two-edge exponent 29/9 | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
 | The balanced three-edge minimum moment has crossover slope four ninths | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
+| The direct pair ratio bound gives a saving test on the fresh difference alone | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
 
 **Computed obligations:** 110 unresolved; 19 resolved within their exact scope.
 

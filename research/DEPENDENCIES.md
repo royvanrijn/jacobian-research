@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 12188 claim/source nodes, 10080 implication rules and 129 documented equivalence components. conditional: 39; falsified: 22; open: 397; proved: 11696; stale: 34.
+The graph contains 12189 claim/source nodes, 10081 implication rules and 129 documented equivalence components. conditional: 39; falsified: 22; open: 397; proved: 11697; stale: 34.
 
 Inspect the current graph from the repository root:
 
@@ -7132,6 +7132,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | [ARITH-ABC-RAW-PRODUCT-PAIR-BUDGET-DEEP-QUOTIENT-AND-TWO-PRIME-RESIDUAL](arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) | proved | partial | none in declared routes |
 | [ARITH-ABC-BALANCED-CUBIC-TWO-EDGE-MOMENT-BY-AVERAGING-SHORT-CERTIFICATES](arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) | proved | partial | none in declared routes |
 | [ARITH-ABC-BALANCED-THREE-EDGE-MINIMUM-MOMENT-CROSSOVER-FOUR-NINTHS](arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-DIRECT-PAIR-RATIO-SAVING-TEST-WITHOUT-PARITY](arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -7761,7 +7762,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 80 routes (3885 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 80 routes (3886 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 

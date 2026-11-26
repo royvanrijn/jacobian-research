@@ -43663,6 +43663,20 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
+### ARITH-ABC-DIRECT-PAIR-RATIO-SAVING-TEST-WITHOUT-PARITY
+
+[The direct pair ratio bound gives a saving test on the fresh difference alone](arithmetic/ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md)
+
+**Exact scope:** For exponent d and actual pair loss rho, the fresh difference outside radical s and ratio constraint price mu give 2d-rho<=min(m,rho)+s/2+mu up to allowances, with m the shared raw overlap. A chart catalogue of price b0 gives a strict saving at s+4rho+2mu+4b0<4/3 by a fixed margin. Typical low-overlap pairs with an arbitrarily cheap quotient lock require whole auxiliary radical price at least 10/3 in the limit.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |

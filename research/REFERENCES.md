@@ -10,7 +10,7 @@ Citation identity, reading a source, verifying a particular application, and pro
 
 ## Classical background and novelty limits
 
-213 scoped comparisons name 500 DAG nodes, including 115 of 2945 principal results directly. This is a partial audit of identified proof components, not a count of fully reviewed theorems. A classical method does not establish the entire result or its priority. Comparisons add no proof routes and change no assurance flags. Inspected proof sources are hash-pinned; remaining obligations stay explicit.
+213 scoped comparisons name 500 DAG nodes, including 115 of 2946 principal results directly. This is a partial audit of identified proof components, not a count of fully reviewed theorems. A classical method does not establish the entire result or its priority. Comparisons add no proof routes and change no assurance flags. Inspected proof sources are hash-pinned; remaining obligations stay explicit.
 
 | Claim / inspected proof | Classical antecedent and application | Novelty limit / remaining comparison |
 |---|---|---|
