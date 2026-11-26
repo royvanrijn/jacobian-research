@@ -215,6 +215,11 @@ obstructing trace in both the index-two and the index-three cases.
 Automatic ordinary codifferent membership for a first velocity
 in a source-finite frame remains a separate condition.
 
+The [finite cusp classification](KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md)
+determines the analytic singular branches from the six-sheet budget.
+It also connects the saturated cases to the Orevkov invariant of
+the reduced ramified curve.
+
 ## Finite check and source boundary
 
 The [GAP census](verify_six_sheet_boundary_budget.py) enumerates

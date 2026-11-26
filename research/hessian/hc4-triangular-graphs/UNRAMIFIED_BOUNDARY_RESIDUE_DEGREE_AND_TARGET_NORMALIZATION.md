@@ -176,8 +176,12 @@ If D is smooth, every branch of Gamma is smooth. Any singular target
 point must then have at least two distinct normalization preimages.
 The branches may have arbitrary tangency order; ordinary nodes are not
 forced. The conditional whole-root-chart theorem proves D smooth when
-an individual regular source coordinate exists. This residue theorem
-does not itself produce such a coordinate.
+an individual regular source coordinate exists. This residue theorem concerns the finite map of curves.
+[The local finite-degree argument](../../jacobian/monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md#local-degree-and-the-finite-branch-quotient)
+now proves smoothness of every unramified omitted prime and ensures
+that its target normalization is immersive. This uses Orevkov's
+finite-boundary resolution and purity. The existence of a common
+source coordinate is a separate question.
 
 ## 5. The actual target image is singular
 

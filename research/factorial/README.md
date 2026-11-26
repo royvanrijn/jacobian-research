@@ -1013,7 +1013,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All-order factorial windows from uncontaminated residue sections | Internal result | proved | [Source](image-rigidity/SFC_SINGLETON_RESIDUE_SECTION_WINDOWS.md) |
 | Universal two-sevenths L8 native cusp | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_L8_SEVENTH_POWER_CANCELLATION_AND_SHORT_GRID_PROOF.md) |
 
-**Computed obligations:** 50 unresolved; 36 resolved within their exact scope.
+**Computed obligations:** 53 unresolved; 36 resolved within their exact scope.
 
 
 Scope limits:
@@ -1165,5 +1165,8 @@ Tracked obligations (computed states):
 - **mathematical / open:** [For every nonzero f in C[x,y] of total degree at most two, with its actual number s of nonzero monomials, and every n>=1, at least one moment from n through n+s-1 is nonzero. Constant and linear terms are included; homogeneous quadratic closure alone does not prove this.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-BINARY-QUADRATICS
 - **mathematical / open:** [Does the optional stronger monic ordinary Anti-coefficient property H hold with all its stated quantifiers? Universal quadratic forcing is already proved independently; no converse to H is asserted.](image-rigidity/QUADRATIC_HALF_VALUATION_MONIC_ANTI_GATE_CONDITIONAL_CLOSURE.md) — HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND
 - **verification / open:** [Verify EIT V’s strict-extremum comparison on the specific EIT VI odd family.](image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md) — GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON
+- **mathematical / open:** [Find a reachable-residue invariant for distinct factorial subset sums containing 1! modulo every 5^j that supports lifting from j to j+1, including carries at 5^j. Finite precision automata and reported witnesses to 20000 do not establish all-precision lifting.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT
+- **mathematical / open:** [Prove f(1,5)=infinity, where f is the supremum of v_5 of finite sums of distinct factorials whose smallest index is 1. A uniform carry invariant is one proposed route, not a known equivalence.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE
+- **mathematical / open:** [Construct increasing indices starting at 1 such that the 5-adic valuations of their partial factorial sums tend to infinity. The compactness implication from f(1,5)=infinity is proved in the canonical note, but that premise is open.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-INFINITE-SEQUENCE
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

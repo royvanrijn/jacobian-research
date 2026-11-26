@@ -366,6 +366,44 @@ from the repository root with
 The two sharp bounds concern moduli \(9\) and \(27\).
 Growth of the minimum degrees across the whole tower remains open.
 
+### The full Frobenius orbit of the radial first lift
+
+**Proposition BGVFrobeniusFirstLiftObstruction.** At \(p=3\) and
+maximum coordinate degree \(81\), no determinant-one lift modulo
+\(81\) reduces modulo \(9\) to a pair of the form
+\[
+ (P+3A,Q+3D),
+ \qquad A,D\in\mathbb F_3[x^3,y^3]_{\le81},
+\]
+where \(P,Q\) are the radial first lift above. There are \(3^{812}\)
+distinct pairs in this family, including the radial lift.
+
+Use integral coefficient representatives of \(A,D\) with the same
+Frobenius support. Their partial derivatives are multiples of \(3\).
+Every capped extension of the pair has the form
+\((P+3A+9U,Q+3D+9V)\). All products involving two correction
+derivatives vanish modulo \(81\) because each derivative of a
+coordinate correction is a multiple of \(9\). Thus the full divided
+determinant equation over \(\mathbb Z/9\) is
+\[
+ \frac{\operatorname{Jac}(P,Q)-1}{9}
+ +\operatorname{Jac}(U,Q)+\operatorname{Jac}(P,V)
+ +\frac{\operatorname{Jac}(A,Q)}3
+ +\frac{\operatorname{Jac}(P,D)}3=0 .
+\]
+All quantities are integral. The same twenty-weight dual used for the
+fixed branch kills the last two terms as well. The checker verifies
+this by evaluating the two divided Jacobian columns at each of the
+\(406\) monomials \(x^{3i}y^{3j}\), \(i+j\le27\), in each coordinate.
+The first term still has value \(3\bmod9\). This contradicts the
+equation over \(\mathbb Z/9\). The two polynomials \(A,D\) have \(406\)
+independent coefficients each over \(\mathbb F_3\); multiplying by \(3\)
+modulo \(9\) gives \(3^{812}\) distinct first lifts.
+
+A first lift whose gradients differ from the radial gradients modulo
+\(3\) after dividing its difference by \(3\) lies outside this family.
+Those branches remain subject to the all-branch criterion below.
+
 ### All degree-\(81\) branches modulo \(81\)
 
 **Proposition BGVCap81AllBranchCriterion.** For the \(p=3\) pair (1), the existence of a lift modulo \(81\) with both coordinate degrees at most \(81\) is equivalent to the following finite condition. Fix the correction and error spaces

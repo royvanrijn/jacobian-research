@@ -24248,6 +24248,24 @@
           "source": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
           "kind": "verification",
           "node": "GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON"
+        },
+        {
+          "question": "Find a reachable-residue invariant for distinct factorial subset sums containing 1! modulo every 5^j that supports lifting from j to j+1, including carries at 5^j. Finite precision automata and reported witnesses to 20000 do not establish all-precision lifting.",
+          "source": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+          "kind": "mathematical",
+          "node": "GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT"
+        },
+        {
+          "question": "Prove f(1,5)=infinity, where f is the supremum of v_5 of finite sums of distinct factorials whose smallest index is 1. A uniform carry invariant is one proposed route, not a known equivalence.",
+          "source": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+          "kind": "mathematical",
+          "node": "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE"
+        },
+        {
+          "question": "Construct increasing indices starting at 1 such that the 5-adic valuations of their partial factorial sums tend to infinity. The compactness implication from f(1,5)=infinity is proved in the canonical note, but that premise is open.",
+          "source": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+          "kind": "mathematical",
+          "node": "GAP-FACT-ERDOS404-INFINITE-SEQUENCE"
         }
       ],
       "scope_notes": [
@@ -24452,7 +24470,10 @@
         "HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND",
         "GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON",
         "EXT-DLMF-TRIGAMMA-SERIES",
-        "GAP-FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-RESIDUAL"
+        "GAP-FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-RESIDUAL",
+        "GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT",
+        "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE",
+        "GAP-FACT-ERDOS404-INFINITE-SEQUENCE"
       ],
       "scope_note": " The dense univariate quadratic sharp-window problem is proved by the complete divided-power argument. Its earlier partial resonance frontier and exact equivalence also yield all remaining rational pair coprimality; full binary quadratic SFC and SFC(2) remain open. The new no-carry ordinary Newton-polygon/factor-degree proof removes the height guard and strengthens a necessary dense resonance criterion. Hurwitz integrality is not asserted, and the no-height packet alone supplies no universal Dense seed. Quadraticmomentnativepolygons now transfer atalloddprimeunitconstants, withfull equalityforpdividingmomentindex and a precise genericinitialblock. Bounded degree capacities give additional necessary resonance constraints; that native-polygon packet alone supplies no full quadratic Strong Factorial seed. The existing dense quadratic/residual-coprimality equivalence extends to restricted four-term binary and five-term ternary classes by a reversible linear-adjunction proof. All four restricted members are now proved via the complete Dense theorem; full binary/SFC2/SFC3 goals are not equivalent. The dense univariate quadratic support-three Strong Factorial window is proved by an independent divided-power Hensel factorization and different argument. Existing written equivalences propagate exactly the restricted assertions; full inhomogeneous binary quadratic, SFC(2) and SFC(3) goals remain open. Every nonzero one-variable polynomial of degree at most2 satisfies the actual-support Strong Factorial window. Independently proved sparse strata extend the existing Dense equivalence to this all-support assertion. Full binary quadratic SFC, SFC2 and SFC3 are not concluded. Additional exact binary quadratic sectors: even four-term phases on b=2a,b=2c,a=c; and every nonzero g(x+y) with deg g<=2, with actual support windows. These do not prove the full binary quadratic or SFC2/SFC3 goals. Symmetric bilinear four-support and full symmetric six-support binary quadratics have all-field Strong Factorial windows, with exact four-window transport to the five-term affine-face sector. General binary quadratic SFC/SFC2/SFC3 remain OPEN; no-cross symmetric five-support is a separate OPEN target. Local quadratic face-forcing branches v2z=-1 and>=1 are excluded. Exact exceptional quadratic-family pair-coprimeness is equivalent to the still-OPEN universalT3 gate; it conditionally suffices for the existing symmetric b0 five-window. Necessary prefix starts below46 are excluded without claiming universal closure. Full binary/SFC2/SFC3 remain OPEN. Exact q1/q2 exceptional pairs are coprime; actual symmetric five-moment prefix extends through2641. The remaining q>=5 pair criterion is a new OPEN member equivalent to oldR using proved finite context, retaining oldR/U and b0 only as conditional targets. No infinite/fullbinary/SFC2/SFC3 assertion is proved."
     },
@@ -60756,6 +60777,48 @@
           "kind": "mathematical",
           "question": "From every original near-saturation sequence of primitive three-cap rows, extract an actual MP1, MP4, MP12 or MP13 packing family with certified count exponent at most 1/3-Delta and total retention/chart loss strictly less than Delta. Retain all three original radical caps and the least-repaired quotient labels, with actual exact valuation residues, divisor depths, coefficient and catalogue costs included. MP12 supplies the price-free two-orientation k<=2 minimum through a smallest parity role, weighted Hölder regimes and the 13/40 profile. MP13 permits stronger signed marginal prices and k=3 only in the stated high three-edge torsion sector. Weak degree measures and separate moments alone give no such extraction from arbitrary balanced profiles.",
           "source": "arithmetic/ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md"
+        },
+        {
+          "question": "For every squarefree d>=1, v>=1, sign +/- and epsilon>0, prove the number of positive integer (u,e) with d^3 u^2 +/- 1 = v^2 e^3 is O_epsilon(d^(1/2+epsilon)v^epsilon), uniformly in d,v. The quadratic-field-to-cubic-Thue descent is an unaudited candidate; class branches, bad primes, units and d=1 remain to be checked.",
+          "source": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+          "kind": "mathematical",
+          "node": "GAP-ARITH-ERDOS365-FIXED-FIBER-CUBIC-COUNT"
+        },
+        {
+          "question": "For every fixed D>=1 and epsilon>0, bound solutions with squarefree d<=D and v<=X^(1/8) to d^3u^2 +/- 1=v^2e^3 by O_(D,epsilon)(X^(1/8+epsilon)). This follows by summing the fixed-fiber estimate; the estimate remains open.",
+          "source": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+          "kind": "mathematical",
+          "node": "GAP-ARITH-ERDOS365-BOUNDED-KERNEL-CORNER"
+        },
+        {
+          "question": "Prove that for some delta>0, N(X)=#{n<=X:n,n+1 powerful} is O_epsilon(X^(1/4-delta+epsilon)). The proposed fixed-fiber count only addresses the binding corner; a uniform neighborhood, mirror corner, full dyadic optimization and audited external inputs are missing. The polylogarithmic Erdős #365 goal is still stronger.",
+          "source": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+          "kind": "mathematical",
+          "node": "GAP-ARITH-ERDOS365-SUBQUARTER-GLOBAL"
+        },
+        {
+          "question": "Prove a quantitative coprime multiplicity, such as at least (log q)^eta for some fixed eta>0 along unbounded q, among non-square powerful integers in (q^2,(q+1)^2). Qualitative unbounded multiplicity already follows by diagonalization from the fixed-m positive-density theorem; its constants give no growth rate.",
+          "source": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+          "kind": "mathematical",
+          "node": "GAP-ARITH-ERDOS942-GROWING-COPRIME-OCCUPANCY"
+        },
+        {
+          "question": "Determine a constant c>0 giving both h(q)<(log q)^(c+o(1)) generally and h(q)>(log q)^(c-o(1)) infinitely often, with the problem convention for interval endpoints. Fixed-m coprime occupancy and existing ordinary lower growth do not settle this matching-rate question.",
+          "source": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+          "kind": "mathematical",
+          "node": "GAP-ARITH-ERDOS942-LOGARITHMIC-RATE"
+        },
+        {
+          "question": "Prove N(X)=#{n<=X:n,n+1 powerful}=O((log X)^C) for some fixed C. A subquarter power bound would be a partial result and does not imply this target.",
+          "source": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+          "kind": "mathematical",
+          "node": "GAP-ARITH-ERDOS365-POLYLOGARITHMIC-COUNT"
+        },
+        {
+          "question": "Validate every external theorem used in Plymesser Theorem 1.1 at its k=2 hypotheses, including Stewart, Castryck-Cluckers-Dittmann-Nguyen, Gelfond, Reuss and Heath-Brown; check the exact dyadic range and optimization certificates before importing a subquarter global argument. Existing source reading is not a full independent replay or deep-input audit.",
+          "source": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+          "kind": "verification",
+          "node": "GAP-ARITH-ERDOS365-PLYMESSER-K2-SOURCE-AUDIT"
         }
       ],
       "scope_notes": [
@@ -61039,7 +61102,14 @@
         "ERDOS-364-GLOBAL-SIX-OVER-TWENTY-FIVE",
         "ERDOS-364-RETUNED-PAIR-COUNT",
         "ERDOS-364-NONFUNDAMENTAL-THETA-OVER-THREE",
-        "GAP-ARITH-ABC-MIXED-EUCLIDEAN-EXACT-VALUATION-EXTRACTION"
+        "GAP-ARITH-ABC-MIXED-EUCLIDEAN-EXACT-VALUATION-EXTRACTION",
+        "GAP-ARITH-ERDOS365-FIXED-FIBER-CUBIC-COUNT",
+        "GAP-ARITH-ERDOS365-BOUNDED-KERNEL-CORNER",
+        "GAP-ARITH-ERDOS365-SUBQUARTER-GLOBAL",
+        "GAP-ARITH-ERDOS942-GROWING-COPRIME-OCCUPANCY",
+        "GAP-ARITH-ERDOS942-LOGARITHMIC-RATE",
+        "GAP-ARITH-ERDOS365-POLYLOGARITHMIC-COUNT",
+        "GAP-ARITH-ERDOS365-PLYMESSER-K2-SOURCE-AUDIT"
       ],
       "scope_note": "This family bound allows all integer degrees but excludes arbitrary alternative fraction witnesses and transformed Pade sequences. Its uniform height and reduced-congruence gates eventually force d<=6; no bound for the full K_N(T) follows."
     },
@@ -70394,6 +70464,11 @@
             "path": "hessian/tang-hc4-audit/STRUCTURAL_REVIEW.md",
             "sha256": "508a0fec2e84a856a99269be8f5f64f0401636842d5b07ff5015dcaa55686b6f",
             "locator": "Conclusion and final equivalence discussion"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Normalized shape exclusions and exhaustive census obligation"
           }
         ],
         "dependency_coverage": "partial",
@@ -99521,7 +99596,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Written EIT/KZ scope audit and elementary bridge arguments"
           }
         ],
@@ -99562,7 +99637,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Internal reproduction: exact EXT-EIT-II-LINEAR-KZ"
           }
         ],
@@ -99588,7 +99663,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Internal reproduction: exact EXT-EIT-III-POLYNOMIAL-KZ"
           }
         ],
@@ -99614,7 +99689,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Internal reproduction: exact EXT-EIT-III-FUNCTIONAL-LINEARITY"
           }
         ],
@@ -99637,7 +99712,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Internal reproduction: exact EXT-EIT-III-POLYNOMIAL-VALUE-TRANSFER"
           }
         ],
@@ -99660,7 +99735,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Paper IV's remaining proof interfaces"
           }
         ],
@@ -99698,7 +99773,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Proposition: injectivity needs a nonzero formal class"
           }
         ],
@@ -99716,7 +99791,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Proposition: direct ordinary factorial moments reduce to boundary values"
           }
         ],
@@ -99734,7 +99809,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Proposition: polynomial amplitudes can give zero compact periods"
           }
         ],
@@ -99752,7 +99827,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Proposition: even a strictly positive amplitude can cancel"
           },
           {
@@ -99775,7 +99850,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: represent the actual angular period"
           }
         ],
@@ -99793,7 +99868,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: prove formal visibility and justify the FC/SFC bridge"
           }
         ],
@@ -99811,7 +99886,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: prove formal visibility and justify the FC/SFC bridge"
           }
         ],
@@ -99829,7 +99904,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: prove formal visibility and justify the FC/SFC bridge"
           }
         ],
@@ -100371,7 +100446,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Theorem: exact polynomial moment package used by II–III"
           },
           {
@@ -100460,7 +100535,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Theorem: internally reproduced compact linear KZ statement"
           },
           {
@@ -100484,7 +100559,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Theorem: internally reproduced compact linear KZ statement; common-cover proof"
           },
           {
@@ -105448,7 +105523,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: compare categorical and elementary presentations"
           },
           {
@@ -105471,7 +105546,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: justify numerical specialization for a proposed IV application"
           },
           {
@@ -105481,7 +105556,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Exact Gamma fiber kernel at z=1, over its actual constant field"
           }
         ],
@@ -105499,7 +105574,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Theorem: complete Gamma-packet functional kernel over actual constants"
           },
           {
@@ -107088,6 +107163,11 @@
             "path": "hessian/hc4-triangular-graphs/HYPERELLIPTIC_OCTIC_CONDUCTORS_AND_FOUR_PERIOD_RIGIDITY.md",
             "sha256": "468d026a1f8f7cd1f6c2e213f98f2f30eb240bee03d3da40eb118d374ff6334f",
             "locator": "Sections 1–4, degree-two characterization, both generator types, period-pole repair and special-fibre exclusion"
+          },
+          {
+            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+            "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+            "locator": "Conductor-eight ambient period tasks and smoothing transfer gap"
           }
         ],
         "topics": [
@@ -126123,6 +126203,11 @@
             "path": "dixmier/dixmier-formal-lifting/SKEWADJOINT_PRIME_ORDER_AND_POLYNOMIAL_46_ADMISSION.md",
             "sha256": "84e93f16db7867a9bb1205f50f53ac9cd3d9469795661d324e81da1632792792",
             "locator": "Remaining admissions, fixed leading coefficient and nonconstant v"
+          },
+          {
+            "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_MASS_SIX_SUPPORT_FILTER.md",
+            "sha256": "0e08b69f72a824f7469d2579742e52e4dd4ec5ef45aacaddce5ac65acd9ee33d",
+            "locator": "Necessary polynomial mass filter, distinct from centered-corner equation"
           }
         ],
         "origin": "internal",
@@ -126393,6 +126478,11 @@
             "path": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_POLYNOMIAL_ADMISSION_AND_MARKED_TRACE.md",
             "sha256": "3e795d6702457db63ce6d3209b0e0b8728b4f96111e3c657f0175955ed1f5cf2",
             "locator": "The simultaneous polynomial admission module, including equation (1) and the degree cutoffs"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "F7/F8 two-sided polynomial-source recognition as a method comparison"
           }
         ],
         "dependency_coverage": "partial",
@@ -145495,7 +145585,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Paper IV's remaining proof interfaces, integrable Picard–Vessiot input"
           },
           {
@@ -145520,7 +145610,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Paper IV's remaining proof interfaces, absolute rapid-decay pairing"
           },
           {
@@ -145550,7 +145640,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Paper IV's remaining proof interfaces, distinction between absolute and directional relative rapid-decay"
           }
         ],
@@ -145573,7 +145663,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Paper IV's remaining proof interfaces, first independent algebraic comparison step"
           }
         ],
@@ -145614,7 +145704,7 @@
           },
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Paper IV's remaining proof interfaces, second independent algebraic comparison step"
           }
         ],
@@ -145650,7 +145740,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Theorem: complete Gamma-packet functional kernel over actual constants, residue grouping and Laurent model"
           },
           {
@@ -145673,7 +145763,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Theorem: complete Gamma-packet functional kernel over actual constants, exact fiber at z=1"
           }
         ],
@@ -145691,7 +145781,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: represent the actual angular period, absolute cohomological comparison of the simplex chain"
           }
         ],
@@ -145711,7 +145801,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: represent the actual angular period, compact semialgebraic simplex and its algebraic face divisor"
           }
         ],
@@ -145729,7 +145819,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Obligation: represent the actual angular period, entire parameter function and F_Q(0)"
           }
         ],
@@ -166977,7 +167067,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Proof, exact support or inspected primary source"
           },
           {
@@ -167547,7 +167637,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "B13--B15"
           }
         ],
@@ -167567,7 +167657,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Theorem PositiveParameterBelyiCollapse"
           }
         ],
@@ -167587,7 +167677,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Forward direction B1--B3"
           }
         ],
@@ -167607,7 +167697,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Reverse direction B14--B15"
           }
         ],
@@ -167627,7 +167717,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Theorem CuspStationaryBelyiCover"
           }
         ],
@@ -167647,7 +167737,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Theorem OffCuspStationarySymmetricMonodromy"
           }
         ],
@@ -167667,7 +167757,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Theorem CuspStationaryGeometricMonodromy"
           }
         ],
@@ -167687,7 +167777,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Corollary OddGapAlternatingCuspEquivalence"
           }
         ],
@@ -167707,7 +167797,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "B5"
           }
         ],
@@ -167727,7 +167817,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "B5--B6"
           }
         ],
@@ -167747,7 +167837,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "B7--B9"
           }
         ],
@@ -167767,7 +167857,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "B10"
           }
         ],
@@ -167787,7 +167877,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "B11 and positive Laplace principle"
           }
         ],
@@ -167807,7 +167897,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "B16--B17"
           }
         ],
@@ -167827,7 +167917,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "B18"
           }
         ],
@@ -167908,12 +167998,38 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-            "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
             "locator": "Remaining global obligations"
+          },
+          {
+            "path": "factorial/image-rigidity/FANG_CENTERED_CONTOUR_CUSP_TEST.md",
+            "sha256": "dbe032a684e24bdaee519e74c2b32743ed3a8d26f9500a171dc9d8e7d8ece7b7",
+            "locator": "Cubic cusp centered signal and unresolved complete-contour error"
           }
         ],
         "assessment": "Whole written proof and exact/source/portable reviews are internal. Finite support does not replace the analytic arguments or upgrade external assurance.",
         "gap_kind": "mathematical"
+      },
+      {
+        "id": "GAP-FACTORIAL-CUSP-DVK-SEMIALGEBRAIC-CHAIN-TRANSFER",
+        "title": "Represent an actual cusp error chain for the quantitative DvK estimates",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "endpoint_role": "alternative_method",
+        "evidence_type": "mathematical_obligation",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Exhibit one actual chain in the cusp active-cycle/global-error problem as a bounded-complexity semialgebraic torus-chain family, with the required form, dimension, bounded Laurent phase and stable Newton-polytope interiority, so that the DvK sublevel, logarithmic-integrability and endpoint-primitive estimates can be applied. Smooth ODE transport alone does not give such representatives. The source gives neither numerical constants nor a first-nonzero-moment bound and cannot supply an explicit SFC cutoff as is.",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+            "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
+            "locator": "Quantitative torus-chain comparison (open)"
+          }
+        ],
+        "next_action": "Choose one actual chain, write a fixed-complexity semialgebraic representation, and verify every DvK theorem hypothesis before transferring any error estimate."
       },
       {
         "id": "SRC-FACTORIAL-SHARP-GAMMA-ANNULUS",
@@ -204390,11 +204506,37 @@
         "sources": [
           {
             "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
-            "sha256": "55552832fea1dd047f08bdc870165912f84e2577d9abfb88ab193525764aa4e3",
+            "sha256": "8d1a888cfd388dffe965f0b86bd3d1809bd66df874c3fb6ba2ad2ac83d0558e8",
             "locator": "A sufficient condition for the critical density, equation (6)"
+          },
+          {
+            "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+            "sha256": "be26a5252871fd08d70de29937f93e3e8a2c8c5dc41eaacfc61f824bad57dc66",
+            "locator": "Bounded determinant or stopped-expansion transfer test"
           }
         ],
-        "next_action": "At k=2, isolate distinct unordered representations in one completion with a shared unexposed prime. Retain within-representation repetitions and use one union-of-support probability for the joint event. Bound the weighted contribution on the common grids."
+        "next_action": "At k=2, isolate pairs of distinct unordered representations in one completion sharing one unexposed prime. Split by the weighted repeat budget sum_q (m_q-1)_+ log q; find a switch or injection preserving the additive equation and every probability ratio. Do not use fair-bit symmetry or a forced pivot prime. Bound the weighted contribution on the common grids."
+      },
+      {
+        "id": "GAP-ARITH-RANDOM-PRIME-CRITICAL-BOUNDED-TEST-INTENSITY",
+        "title": "Bounded-test route to empirical critical prime intensity",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "endpoint_role": "alternative_method",
+        "evidence_type": "mathematical_obligation",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "For the critical model, cutoff and countable geometric grids of equation (6), prove convergence for bounded continuous tests of truncated conditional intensities mu_n. Then supply a uniform arithmetic tail estimate and almost-sure grid upgrade sufficient for the full empirical intensity law. The Luce/Tsetlin truncation argument supplies neither arithmetic step.",
+        "sources": [
+          {
+            "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
+            "sha256": "8d1a888cfd388dffe965f0b86bd3d1809bd66df874c3fb6ba2ad2ac83d0558e8",
+            "locator": "Reused-input comparison and bounded-test route (open)"
+          }
+        ],
+        "next_action": "Prove a fixed bounded-test estimate for truncated mu_n and an arithmetic uniform-integrability tail on the same grid family."
       },
       {
         "id": "GAP-ARITH-RANDOM-PRIME-CRITICAL-EMPIRICAL-INTENSITY",
@@ -204410,10 +204552,16 @@
         "sources": [
           {
             "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
-            "sha256": "55552832fea1dd047f08bdc870165912f84e2577d9abfb88ab193525764aa4e3",
+            "sha256": "8d1a888cfd388dffe965f0b86bd3d1809bd66df874c3fb6ba2ad2ac83d0558e8",
             "locator": "A sufficient condition for the critical density, equation (6)"
+          },
+          {
+            "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+            "sha256": "be26a5252871fd08d70de29937f93e3e8a2c8c5dc41eaacfc61f824bad57dc66",
+            "locator": "Bounded determinant or stopped-expansion transfer test"
           }
-        ]
+        ],
+        "next_action": "Test the bounded-observable route while retaining the separate tail and almost-sure grid obligations; fixed-modulus means alone are insufficient."
       },
       {
         "id": "SRC-ARITH-TRIFONOV-KERNEL-SPECIALIZATION-WRITTEN-PROOF",
@@ -204557,6 +204705,11 @@
             "path": "arithmetic/SHIFTED_LOCAL_CORRELATIONS_AND_SEMIGROUP_ENERGY.md",
             "sha256": "2c6509e113b51d4415e38df2ef5acf73ce2b77a07dc6b860eb5cbbae4db92739",
             "locator": "Sharp second-moment route to the random-prime intensity law, matching upper bound for (12)"
+          },
+          {
+            "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+            "sha256": "be26a5252871fd08d70de29937f93e3e8a2c8c5dc41eaacfc61f824bad57dc66",
+            "locator": "Bounded determinant or stopped-expansion transfer test"
           }
         ],
         "endpoint_role": "alternative_method",
@@ -208340,6 +208493,11 @@
             "path": "arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md",
             "sha256": "d15a13c5005c32e9e0d0b1dd48b014137a0f73bf1263cd51d850c7cd6612b10e",
             "locator": "A determinant bound at the joint \\(1/2\\) profile"
+          },
+          {
+            "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+            "sha256": "be26a5252871fd08d70de29937f93e3e8a2c8c5dc41eaacfc61f824bad57dc66",
+            "locator": "Bounded determinant or stopped-expansion transfer test"
           }
         ]
       },
@@ -222684,10 +222842,31 @@
         "sources": [
           {
             "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
-            "sha256": "1164a22ea45e11806c4880307e8ca96922be35a006f0df7814c7cce410d53afc",
+            "sha256": "f1820316a46b27387740074c8173b66ae3307807f895eb4d23408cac899c4af6",
             "locator": "A real strip with unequal root heights"
           }
         ]
+      },
+      {
+        "id": "GAP-ARITH-ABC-RUW1-COLLISION-ENERGY-COFACTOR-WIDTH",
+        "title": "Joint collision-energy test for the RUW1 cofactor width",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "endpoint_role": "alternative_method",
+        "evidence_type": "mathematical_obligation",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Fix one dimension and one rectangular monomial support (R_i,M) in the first mixed determinant of RUW1. Jointly optimize individual original-to-corrected approximation costs and repeated Taylor-row collision savings. A success is a rigorously larger admissible cofactor width E than c_m tau/P at fixed parameters, with denominator clearing, rank correction and the second narrow determinant unchanged. This has not been established and implies no abc theorem by itself.",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
+            "sha256": "f1820316a46b27387740074c8173b66ae3307807f895eb4d23408cac899c4af6",
+            "locator": "Collision-energy optimization test (open)"
+          }
+        ],
+        "next_action": "At one fixed j and rectangular support, write the full determinant exponent by row type, optimize the approximation and collision terms jointly, and compare the resulting strict E threshold after the existing arithmetic and rank costs."
       },
       {
         "id": "SRC-ERDOS943-ALL-CENTRES-MAXIMAL-CONTACT-APPEND-WRITTEN-PROOF",
@@ -223382,7 +223561,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
-            "sha256": "1164a22ea45e11806c4880307e8ca96922be35a006f0df7814c7cce410d53afc",
+            "sha256": "f1820316a46b27387740074c8173b66ae3307807f895eb4d23408cac899c4af6",
             "locator": "Positive scales in every endpoint letter"
           }
         ]
@@ -254087,7 +254266,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "High-degree phases in one affine angular coordinate"
           }
         ],
@@ -254104,7 +254283,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "High-degree phases in one affine angular coordinate"
           }
         ],
@@ -254121,13 +254300,39 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-            "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
             "locator": "Retained conclusion and next useful audit"
           }
         ],
         "dependency_coverage": "partial",
         "topic": "factorial",
         "origin": "internal"
+      },
+      {
+        "id": "GAP-FACTORIAL-EIT-VI-ELLIPTIC-RECURRENCE-COPRIMALITY",
+        "title": "All-index coprimality of the EIT VI elliptic recurrence",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "endpoint_role": "stronger_theorem",
+        "evidence_type": "mathematical_obligation",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "For W_0=(1,0), W_1=(1,-2), and W_(k+2)=2W_(k+1)+[3-6(2k+1)t]W_k+4ktW_(k-1)-36k(k-1)t^2W_(k-2), prove gcd_Q[t](W_(k,1),W_(k,2))=1 for every k>=0 or give an explicit counterexample. EIT VI checks only k<=100; its characteristic-five argument covers a restricted scale class. Universal coprimality would remove the exceptional-scale certificate set for this elliptic factorial family subject to the EIT V comparison audit, not close an SFC finite window; a common zero does not imply a vanishing period.",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
+            "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
+            "locator": "Open elliptic recurrence coprimality target in EIT VI"
+          },
+          {
+            "path": "factorial/image-rigidity/sources/long-eit-vi-current.tex",
+            "sha256": "d038dc4dcb464c18a8df93457b862b6edbeb0583445cde0d2473ff51179bc87b",
+            "locator": "Propositions prop:recurrence and prop:finite; Theorem thm:modfive"
+          }
+        ],
+        "next_action": "Extend the characteristic-five matrix analysis to the remaining valuation regime or derive a recurrence resultant invariant; prove every index or identify a concrete counterexample."
       },
       {
         "id": "EXT-JC2-SANTIBANEZ-72-108-CERTIFICATES",
@@ -261294,6 +261499,794 @@
             "locator": "Marked residues at every polar omitted prime, equation (4) and the source-finite consequence"
           }
         ]
+      },
+      {
+        "id": "GAP-ARITH-ERDOS365-FIXED-FIBER-CUBIC-COUNT",
+        "title": "Uniform fixed-fiber count for consecutive powerful pairs",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "For every squarefree d>=1, v>=1, sign +/- and epsilon>0, prove the number of positive integer (u,e) with d^3 u^2 +/- 1 = v^2 e^3 is O_epsilon(d^(1/2+epsilon)v^epsilon), uniformly in d,v. The quadratic-field-to-cubic-Thue descent is an unaudited candidate; class branches, bad primes, units and d=1 remain to be checked.",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+            "sha256": "9a93585c5df45db56c8ee1b37b0b6cb93ecc5ff2614dc50aacd3f983ddb0e4f3",
+            "locator": "Proposed fixed-fiber estimate; Global transfer still required"
+          }
+        ],
+        "next_action": "Audit the full descent and the exact coefficient-uniform Thue theorem, including the number of branches."
+      },
+      {
+        "id": "GAP-ARITH-ERDOS365-BOUNDED-KERNEL-CORNER",
+        "title": "Bounded-kernel corner count conditional on fixed-fiber estimate",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "For every fixed D>=1 and epsilon>0, bound solutions with squarefree d<=D and v<=X^(1/8) to d^3u^2 +/- 1=v^2e^3 by O_(D,epsilon)(X^(1/8+epsilon)). This follows by summing the fixed-fiber estimate; the estimate remains open.",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+            "sha256": "9a93585c5df45db56c8ee1b37b0b6cb93ecc5ff2614dc50aacd3f983ddb0e4f3",
+            "locator": "Proposed fixed-fiber estimate; Global transfer still required"
+          }
+        ],
+        "next_action": "Prove the fixed-fiber estimate with constants uniform in v."
+      },
+      {
+        "id": "GAP-ARITH-ERDOS365-SUBQUARTER-GLOBAL",
+        "title": "Subquarter bound for consecutive powerful numbers",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Prove that for some delta>0, N(X)=#{n<=X:n,n+1 powerful} is O_epsilon(X^(1/4-delta+epsilon)). The proposed fixed-fiber count only addresses the binding corner; a uniform neighborhood, mirror corner, full dyadic optimization and audited external inputs are missing. The polylogarithmic Erdős #365 goal is still stronger.",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+            "sha256": "9a93585c5df45db56c8ee1b37b0b6cb93ecc5ff2614dc50aacd3f983ddb0e4f3",
+            "locator": "Proposed fixed-fiber estimate; Global transfer still required"
+          }
+        ],
+        "next_action": "After the fiber audit, certify a positive saving across all dyadic windows and validate each imported estimate."
+      },
+      {
+        "id": "GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT",
+        "title": "Uniform carry invariant for factorial subset sums",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Find a reachable-residue invariant for distinct factorial subset sums containing 1! modulo every 5^j that supports lifting from j to j+1, including carries at 5^j. Finite precision automata and reported witnesses to 20000 do not establish all-precision lifting.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "ddc5d5cbcd505838cce11dc59ccf132bbb5ce9b88b4646178f82c6c7dac7c46a",
+            "locator": "Uniform lifting obligation; Small completed special case"
+          }
+        ],
+        "next_action": "Prove one inductive invariant with explicit base, transition and carry cases for arbitrary j."
+      },
+      {
+        "id": "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE",
+        "title": "Unbounded valuation for factorial sums starting at one",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Prove f(1,5)=infinity, where f is the supremum of v_5 of finite sums of distinct factorials whose smallest index is 1. A uniform carry invariant is one proposed route, not a known equivalence.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "ddc5d5cbcd505838cce11dc59ccf132bbb5ce9b88b4646178f82c6c7dac7c46a",
+            "locator": "Uniform lifting obligation; Small completed special case"
+          }
+        ],
+        "next_action": "Construct arbitrarily high 5-adic cancellations, preferably through a uniform reachable-residue invariant."
+      },
+      {
+        "id": "GAP-FACT-ERDOS404-INFINITE-SEQUENCE",
+        "title": "Infinite factorial-index sequence with diverging 5-adic valuations",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Construct increasing indices starting at 1 such that the 5-adic valuations of their partial factorial sums tend to infinity. The compactness implication from f(1,5)=infinity is proved in the canonical note, but that premise is open.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "ddc5d5cbcd505838cce11dc59ccf132bbb5ce9b88b4646178f82c6c7dac7c46a",
+            "locator": "Uniform lifting obligation; Small completed special case"
+          }
+        ],
+        "next_action": "Resolve f(1,5)=infinity or find an independent construction."
+      },
+      {
+        "id": "GAP-ARITH-ERDOS942-GROWING-COPRIME-OCCUPANCY",
+        "title": "Quantitative pairwise-coprime occupancy between squares",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Prove a quantitative coprime multiplicity, such as at least (log q)^eta for some fixed eta>0 along unbounded q, among non-square powerful integers in (q^2,(q+1)^2). Qualitative unbounded multiplicity already follows by diagonalization from the fixed-m positive-density theorem; its constants give no growth rate.",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+            "sha256": "6f3a30400e017a5e0da22a59e62eb77b5ad2f780a8e83bcb2ac101c3d83502a7",
+            "locator": "Erdős #942 and coprime occupants of square intervals"
+          }
+        ],
+        "next_action": "Find simultaneous approximation and coprimality estimates uniform in a growing number of selected classes."
+      },
+      {
+        "id": "GAP-ARITH-ERDOS942-LOGARITHMIC-RATE",
+        "title": "Logarithmic-power occupancy rate in Erdős #942",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Determine a constant c>0 giving both h(q)<(log q)^(c+o(1)) generally and h(q)>(log q)^(c-o(1)) infinitely often, with the problem convention for interval endpoints. Fixed-m coprime occupancy and existing ordinary lower growth do not settle this matching-rate question.",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+            "sha256": "6f3a30400e017a5e0da22a59e62eb77b5ad2f780a8e83bcb2ac101c3d83502a7",
+            "locator": "Erdős #942 and coprime occupants of square intervals"
+          }
+        ],
+        "next_action": "Compare current primary upper and lower bounds, then develop a bound at the matching exponent."
+      },
+      {
+        "id": "ARITH-ERDOS942-FIXED-COPRIME-SQUARE-OCCUPANCY",
+        "title": "Fixed coprime occupancy for Erdős #942",
+        "kind": "claim",
+        "status": "open",
+        "scope": "For every fixed m>=1, a positive proportion of sufficiently large q have at least m pairwise coprime non-square powerful integers strictly between q^2 and (q+1)^2.",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+            "sha256": "6f3a30400e017a5e0da22a59e62eb77b5ad2f780a8e83bcb2ac101c3d83502a7",
+            "locator": "Erdős #942 and coprime occupants of square intervals"
+          }
+        ]
+      },
+      {
+        "id": "GAP-ARITH-ERDOS365-POLYLOGARITHMIC-COUNT",
+        "title": "Polylogarithmic consecutive-powerful count in Erdős #365",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Prove N(X)=#{n<=X:n,n+1 powerful}=O((log X)^C) for some fixed C. A subquarter power bound would be a partial result and does not imply this target.",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+            "sha256": "9a93585c5df45db56c8ee1b37b0b6cb93ecc5ff2614dc50aacd3f983ddb0e4f3",
+            "locator": "Erdős #365: a subquarter consecutive-powerful count"
+          }
+        ],
+        "next_action": "First resolve the proposed subquarter route; then identify a separate mechanism capable of a polylogarithmic bound."
+      },
+      {
+        "id": "GAP-ARITH-ERDOS365-PLYMESSER-K2-SOURCE-AUDIT",
+        "title": "Audit imported pair-count inputs for Erdős #365",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "verification",
+        "endpoint_role": "source_audit",
+        "evidence_type": "external_theorem",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "scope": "Validate every external theorem used in Plymesser Theorem 1.1 at its k=2 hypotheses, including Stewart, Castryck-Cluckers-Dittmann-Nguyen, Gelfond, Reuss and Heath-Brown; check the exact dyadic range and optimization certificates before importing a subquarter global argument. Existing source reading is not a full independent replay or deep-input audit.",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+            "sha256": "9a93585c5df45db56c8ee1b37b0b6cb93ecc5ff2614dc50aacd3f983ddb0e4f3",
+            "locator": "Erdős #365: a subquarter consecutive-powerful count"
+          },
+          {
+            "path": "arithmetic/sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf",
+            "sha256": "dbc3ac29ec50485a61c3f4119a06745c7d4475710701aeb0bb6f5597751e48a5",
+            "locator": "Theorem 1.1, Section 3, Section 7, Section 8.2, Remark 9.1, Section 10"
+          }
+        ],
+        "next_action": "Compare the exact k=2 hypotheses and conclusions with primary statements and proof passages, then replay the relevant certificates if the proposed global saving uses them."
+      },
+      {
+        "id": "FACT-ERDOS404-THREE-ADIC-CLASS-SIX",
+        "title": "Factorial-sum valuation for starts congruent to six modulo nine",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "written_proof",
+        "scope": "For every integer a>=1 with a congruent to 6 modulo 9, f(a,3)=v_3(a!)+1, with distinct factorial indices and minimum a.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "ddc5d5cbcd505838cce11dc59ccf132bbb5ce9b88b4646178f82c6c7dac7c46a",
+            "locator": "Small completed special case"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ERDOS942-UNBOUNDED-COPRIME-SQUARE-OCCUPANCY",
+        "title": "Unbounded coprime occupancy between squares",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "There is an increasing sequence q_m such that the open interval (q_m^2,(q_m+1)^2) contains at least m pairwise coprime non-square powerful integers.",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+            "sha256": "6f3a30400e017a5e0da22a59e62eb77b5ad2f780a8e83bcb2ac101c3d83502a7",
+            "locator": "Qualitative unbounded coprime occupancy"
+          }
+        ]
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00709V1",
+        "title": "The degree pair (126,84) in the plane Jacobian problem: the point (16/3,10) is not a regular corner",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "No standard (3,2) chain containing the regular corner (16/3,10) in L(3); includes the stated 126 and 144 chains.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00709v1.pdf",
+            "sha256": "cbbe6924c30dfa88df0b1bc574b36cbe2cf622f0c927b951b322df76edd0882e",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00709v1.zip",
+            "sha256": "9846a0b72e6ea61fa5611168657940ec1fec8d066d6617639f5c759bff3f652f",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, The degree pair (126,84) in the plane Jacobian problem: the point (16/3,10) is not a regular corner, Hexagon 2611.00709v1.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00710V1",
+        "title": "The degree pair (84,126) in the plane Jacobian problem: exclusion of the shape with final corner (19/7,5)",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Standard (2,3), starting triple ((7,35),(2,0),(7,-1)), prescribed successor and h=(t-c)^5; no such pair.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00710v1.pdf",
+            "sha256": "5fdaf44da656a0b03330a29c8335d8e30bf68aa2f4c81e667291c2b1575709c6",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00710v1.zip",
+            "sha256": "13a8616cb056e6c50f0cc69c714587cfff1faf93a6cdc7d1cfed26c5c28c97b8",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, The degree pair (84,126) in the plane Jacobian problem: exclusion of the shape with final corner (19/7,5), Hexagon 2611.00710v1.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00714V1",
+        "title": "The starting corner (7,35) in the plane Jacobian problem: the point (18/7,4) is not a regular corner",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "No (2,3) pair in L(7) has regular corner (18/7,4); with 00710 this excludes the remaining 4+1 root pattern under its other starting data.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00714v1.pdf",
+            "sha256": "b8eb97bb65371de6677c8bf8af20107159c17690d9902f6be9d5b9f2bc0326bd",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00714v1.zip",
+            "sha256": "dc6b350d87e2af589a6b2a599ebabd1c790628531b14f9b45de0289760b5c447",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, The starting corner (7,35) in the plane Jacobian problem: the point (18/7,4) is not a regular corner, Hexagon 2611.00714v1.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00724V2",
+        "title": "The degree pair (88,132) in the plane Jacobian problem: exclusion of the shape with starting corner (11,33) and final corner (19/4,8)",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Standard (2,3), starting triple ((11,33),(3,1),(4,-1)), prescribed successor and degree-eight edge polynomial; its root multiplicity eight is derived.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00724v2.pdf",
+            "sha256": "09d27a8259527479f9413f190cc6be88b87554ee6e7bbc981c0bfef6f36fef0b",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00724v2.zip",
+            "sha256": "493a2f41787839224d7ff3d2619697996a92863c80d0c32e3f948fd8cc96ba72",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, The degree pair (88,132) in the plane Jacobian problem: exclusion of the shape with starting corner (11,33) and final corner (19/4,8), Hexagon 2611.00724v2.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00733V2",
+        "title": "Two shapes of maximal degree 135 in the plane Jacobian problem: exclusion of the degree pairs (135,90) and (90,135) with corners (9,36) and (17/9,4)",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Standard (3,2) or (2,3), starting triple ((9,36),(1,0),(9,-2)), prescribed successor and h=(t-c)^4; no such pair.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00733v2.pdf",
+            "sha256": "1a123201978b273ae7dda041fb584234f2c8bfacc1c7c640b1be09375c9303bf",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00733v2.zip",
+            "sha256": "254fa3229a75d4085f33b92c906cd669cf10e8ec078d2af72c389d2b46166a5c",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, Two shapes of maximal degree 135 in the plane Jacobian problem: exclusion of the degree pairs (135,90) and (90,135) with corners (9,36) and (17/9,4), Hexagon 2611.00733v2.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00944V1",
+        "title": "A shape of maximal degree 135 in the plane Jacobian problem: exclusion of the complete chain (9,36), (9,24), (11/3,8)",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Minimal standard (2,3) complete chain (9,36),(9,24),(11/3,8); the k=4 branch relies on GGHV census completeness.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00944v1.pdf",
+            "sha256": "c00cfa567731623ba51491ccc641fc69f91433c8e8af25c278461c19c614e30e",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00944v1.zip",
+            "sha256": "8c6e2476180ffd1d5b670175deaedb0da4f9e7e940fafef5a9f03014fdc3f76e",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, A shape of maximal degree 135 in the plane Jacobian problem: exclusion of the complete chain (9,36), (9,24), (11/3,8), Hexagon 2611.00944v1.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00717V1",
+        "title": "The degree pair (56,140) in the plane Jacobian problem: exclusion of the shape with starting corner (7,21) and final corner (13/7,3)",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Standard (2,5), starting triple ((7,21),(1,0),(7,-2)), prescribed successor and cubic h; the single-root pattern is derived.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00717v1.pdf",
+            "sha256": "6ed8017e18c7e6ad9a8c748737b63e5b3d50f16ea2642cc1a099438b80a44d85",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00717v1.zip",
+            "sha256": "02a7bc0813c591a3e00fd7c23fb3ba7bb18d810e5f31c47cfebe83a2e11e9415",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, The degree pair (56,140) in the plane Jacobian problem: exclusion of the shape with starting corner (7,21) and final corner (13/7,3), Hexagon 2611.00717v1.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00896V1",
+        "title": "The shapes of maximal degree 147 with starting corner (6,15) in the plane Jacobian problem",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Standard (2,7),(7,2),(3,7),(7,3), starting triple ((6,15),(1,0),(3,-1)); F7 has root partition 4+1 and F8 a root of multiplicity five.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00896v1.pdf",
+            "sha256": "be9740c1812ff4e70caa1a14ca6a260790ac34b3c48aaf9ed7bccee544151a15",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00896v1.zip",
+            "sha256": "2e4530de1e7fc19e615206bf56fbf565ba01c6058dafe0844876a13a0392aee4",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, The shapes of maximal degree 147 with starting corner (6,15) in the plane Jacobian problem, Hexagon 2611.00896v1.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-JC2-GIRAUDIN-2611-00713V1",
+        "title": "A shape of maximal degree 150 in the plane Jacobian problem: the point (18/5,8) is not a regular corner",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "No standard (3,2) or exchanged (2,3) chain through regular corner (18/5,8) in L(5), with the stated (10,40),(8/5,3) chain.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00713v1.pdf",
+            "sha256": "a67415526e9bba596703c7869c3e49631662d706627558b0d3b9794f8e7050f7",
+            "locator": "Standing Data 1.1 or Theorem 1.1, stated corollary and scope section"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00713v1.zip",
+            "sha256": "3709b8aba34b803134032a1714a595cdfdbdbfe29ca6f0e081a552a0a19c3993",
+            "locator": "Exact deposited source, ancillary checker and expected output"
+          },
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Matching row in normalized shape table"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "external",
+        "citation": "David Niedbala Giraudin, A shape of maximal degree 150 in the plane Jacobian problem: the point (18/5,8) is not a regular corner, Hexagon 2611.00713v1.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Exact ancillary script internally replayed; normalization, proof dependencies and exhaustive census application not independently audited."
+      },
+      {
+        "id": "EXT-NAKAZAWA-OKA-GENUS-FOUR-AMBIENT",
+        "title": "Four minimal smooth ambient genus-four one-place families",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Nakazawa–Oka Main Theorem 1.9 lists four parameterized minimal smooth affine plane one-place-at-infinity genus-four ambient forms. Transfer to singular rational Keller conductor-eight orders requires a smoothing and embedding argument.",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/sources/nakazawa-oka-genus-four-1997.pdf",
+            "sha256": "bf641ea59178df37a16db4aac39189ff48eea5f1dc1bee94f7be26745f4ea7a8",
+            "locator": "Main Theorem 1.9, printed p. 670"
+          },
+          {
+            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+            "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+            "locator": "Four parameterized families and transfer gate"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "hessian",
+        "origin": "external",
+        "citation": "Yuji Nakazawa and Mutsuo Oka, Smooth plane curves with one place at infinity, J. Math. Soc. Japan 49 (1997), 663–687, Main Theorem 1.9.",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Primary theorem and family list inspected; smoothing transfer and all parameter strata remain open."
+      },
+      {
+        "id": "GAP-HESSIAN-CONDUCTOR-EIGHT-TRANSFER",
+        "title": "Transfer defect-four Keller fibres to smooth ambient classes",
+        "kind": "gap",
+        "status": "open",
+        "scope": "Prove good-at-infinity smoothing, genus four and minimal ambient embedding for every exact singular rational conductor-eight fibre.",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+            "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+            "locator": "Transfer defect-four Keller fibres to smooth ambient classes"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "hessian",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "next_action": "Prove good-at-infinity smoothing, genus four and minimal ambient embedding for every exact singular rational conductor-eight fibre."
+      },
+      {
+        "id": "GAP-HESSIAN-CONDUCTOR-EIGHT-N1-PERIOD",
+        "title": "N1 conductor-eight physical actions",
+        "kind": "gap",
+        "status": "open",
+        "scope": "Compute the four matched actions on the full ten-parameter N1 family and all singular strata.",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+            "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+            "locator": "N1 conductor-eight physical actions"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "hessian",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "next_action": "Compute the four matched actions on the full ten-parameter N1 family and all singular strata."
+      },
+      {
+        "id": "GAP-HESSIAN-CONDUCTOR-EIGHT-N2-PERIOD",
+        "title": "N2 conductor-eight order comparison",
+        "kind": "gap",
+        "status": "open",
+        "scope": "Identify the exact hyperelliptic-order locus in N2 and compute actions on any remaining embeddings.",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+            "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+            "locator": "N2 conductor-eight order comparison"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "hessian",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "next_action": "Identify the exact hyperelliptic-order locus in N2 and compute actions on any remaining embeddings."
+      },
+      {
+        "id": "GAP-HESSIAN-CONDUCTOR-EIGHT-N3-PERIOD",
+        "title": "N3 conductor-eight approximate-root periods",
+        "kind": "gap",
+        "status": "open",
+        "scope": "Compute matched actions retaining all lower and upper approximate-root parameters.",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+            "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+            "locator": "N3 conductor-eight approximate-root periods"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "hessian",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "next_action": "Compute matched actions retaining all lower and upper approximate-root parameters."
+      },
+      {
+        "id": "GAP-HESSIAN-CONDUCTOR-EIGHT-N4-PERIOD",
+        "title": "N4 conductor-eight approximate-root periods",
+        "kind": "gap",
+        "status": "open",
+        "scope": "Compute matched actions and common Keller derivative for all N4 parameters.",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+            "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+            "locator": "N4 conductor-eight approximate-root periods"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "hessian",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "next_action": "Compute matched actions and common Keller derivative for all N4 parameters."
+      },
+      {
+        "id": "GAP-HESSIAN-CONDUCTOR-EIGHT-DESCENT",
+        "title": "Conductor-eight degeneration and degree-drop descent",
+        "kind": "gap",
+        "status": "open",
+        "scope": "Prove coefficient regularity and exact conductor control at poles, root collisions and source-degree drops for every admitted class.",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+            "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+            "locator": "Conductor-eight degeneration and degree-drop descent"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "hessian",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "next_action": "Prove coefficient regularity and exact conductor control at poles, root collisions and source-degree drops for every admitted class."
+      },
+      {
+        "id": "EXT-RSTATION-DETERMINANT-RATIO-LEMMA",
+        "title": "Determinant ratio collisions in primitive row strips",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "rStation Paper 125/v1, Lemma 2 bounds one fixed determinant, divisor and ratio-residue cell by 2(D+8A²)/d under its half-open primitive row strip.",
+        "sources": [
+          {
+            "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+            "sha256": "be26a5252871fd08d70de29937f93e3e8a2c8c5dc41eaacfc61f824bad57dc66",
+            "locator": "Exact transfer scope and limitations"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "arithmetic",
+        "origin": "external",
+        "citation": "Determinant ratio collisions in primitive row strips, https://rstation.ai/problems/riemann_hypothesis/papers/125/v1",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Primary statement inspected; application and broader source proof not independently reviewed."
+      },
+      {
+        "id": "EXT-POULY-STOPPED-EXPANSION",
+        "title": "First-excluded-prefix expansion for dependent indicators",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Pouly Proposition 4.2 bounds the L1 retained-expansion error by the weighted joint-event mass of ordered first-excluded prefixes for a hereditary family.",
+        "sources": [
+          {
+            "path": "arithmetic/sources/pouly-2611.00447v1.pdf",
+            "sha256": "cacadbe77edfe644c5487006acd9ad866f76a28fb1b757fc67ca6c3fea1b886b",
+            "locator": "Named theorem or section"
+          },
+          {
+            "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+            "sha256": "be26a5252871fd08d70de29937f93e3e8a2c8c5dc41eaacfc61f824bad57dc66",
+            "locator": "Exact transfer scope and limitations"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "arithmetic",
+        "origin": "external",
+        "citation": "First-excluded-prefix expansion for dependent indicators, https://hexagonmath.org/2611.00447v1",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Primary statement inspected; application and broader source proof not independently reviewed."
+      },
+      {
+        "id": "EXT-SHAIK-MASS-SIX",
+        "title": "Polynomial Weyl pairs with one member of mass at most six",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Shaik Theorem 1.1: over any characteristic-zero field, [Q,P]=1 in polynomial A1 and mass(P)<=6 imply generation of A1; likewise for Q.",
+        "sources": [
+          {
+            "path": "dixmier/dixmier-formal-lifting/sources/shaik-2610.00273v1.pdf",
+            "sha256": "5ca31edfdfc4242e88ae39f87b723cb88474b9d62b322f61967479fa6170e386",
+            "locator": "Named theorem or section"
+          },
+          {
+            "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_MASS_SIX_SUPPORT_FILTER.md",
+            "sha256": "0e08b69f72a824f7469d2579742e52e4dd4ec5ef45aacaddce5ac65acd9ee33d",
+            "locator": "Exact transfer scope and limitations"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "dixmier",
+        "origin": "external",
+        "citation": "Polynomial Weyl pairs with one member of mass at most six, https://hexagonmath.org/2610.00273v1",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Primary statement inspected; application and broader source proof not independently reviewed."
+      },
+      {
+        "id": "EXT-FANG-SAME-CONTOUR-CANCELLATION",
+        "title": "Same-contour centered insertion for eventual interlacing",
+        "kind": "claim",
+        "status": "unverified",
+        "scope": "Fang Section 5 centers a neighboring contour insertion and uses exact angular integration by parts to control a small saddle-separation denominator in its set-partition family.",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/sources/fang-2611.01129v1.pdf",
+            "sha256": "6518f36bb98f17374856b40d009921bb2ba35d057385b78586e86a63dc1cac51",
+            "locator": "Named theorem or section"
+          },
+          {
+            "path": "factorial/image-rigidity/FANG_CENTERED_CONTOUR_CUSP_TEST.md",
+            "sha256": "dbe032a684e24bdaee519e74c2b32743ed3a8d26f9500a171dc9d8e7d8ece7b7",
+            "locator": "Exact transfer scope and limitations"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "factorial",
+        "origin": "external",
+        "citation": "Same-contour centered insertion for eventual interlacing, https://hexagonmath.org/2611.01129v1",
+        "evidence_type": "external_theorem",
+        "audit_boundary": "Primary statement inspected; application and broader source proof not independently reviewed."
+      },
+      {
+        "id": "GAP-JC2-DEGREE-150-CENSUS-COVERAGE",
+        "title": "Exhaustive normalized planar census coverage through degree 150",
+        "kind": "gap",
+        "status": "open",
+        "scope": "Match every relevant GGHV Section 6 census row with maximum component degree at most 150 to an exact theorem, normalization, root partition and certificate, including polynomial-source admission. The nine new exclusions alone do not establish a global degree bound.",
+        "sources": [
+          {
+            "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+            "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+            "locator": "Replay and remaining coverage"
+          }
+        ],
+        "dependency_coverage": "partial",
+        "topic": "jacobian",
+        "origin": "internal",
+        "gap_kind": "verification",
+        "evidence_type": "source_audit",
+        "next_action": "Extract the original complete census and audit every row and normalization against the retained exclusion table."
       }
     ],
     "implications": [
@@ -278873,7 +279866,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Proposition: injectivity needs a nonzero formal class"
         },
         "dependency_coverage": "complete"
@@ -278887,7 +279880,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Proposition: direct ordinary factorial moments reduce to boundary values"
         },
         "dependency_coverage": "complete"
@@ -278904,7 +279897,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Theorem: internally reproduced tensor-generated polynomial KZ statement"
         },
         "dependency_coverage": "partial"
@@ -279227,7 +280220,7 @@
         "status": "unverified",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Source identity and review boundary; Retained conclusion and next useful audit"
         },
         "dependency_coverage": "partial",
@@ -279242,7 +280235,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Theorem: exact polynomial moment package used by II–III"
         },
         "dependency_coverage": "partial"
@@ -279259,7 +280252,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Theorem: internally reproduced compact linear KZ statement; numerical transfer"
         },
         "dependency_coverage": "partial"
@@ -279273,7 +280266,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Theorem: internally reproduced compact linear KZ statement; edge-by-edge algebraic cover realization"
         },
         "dependency_coverage": "partial"
@@ -279290,7 +280283,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Theorem: internally reproduced compact linear KZ statement"
         },
         "dependency_coverage": "partial"
@@ -279306,7 +280299,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Lemma: the exponential-base functional relation ideal is affine-linear"
         },
         "dependency_coverage": "partial"
@@ -279323,7 +280316,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Theorem: internally reproduced tensor-generated polynomial KZ statement; exact fixed-degree lift"
         },
         "dependency_coverage": "partial"
@@ -309249,7 +310242,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Theorem: complete Gamma-packet functional kernel over actual constants, Laurent model and specialization at z=1"
         },
         "dependency_coverage": "partial"
@@ -309264,7 +310257,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Obligation: represent the actual angular period, CHH Proposition 11.1 and Theorem 12.4 applied to the standard simplex"
         },
         "dependency_coverage": "partial"
@@ -309278,7 +310271,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "Obligation: represent the actual angular period, uniform convergence and F_Q(0)=1/d!"
         },
         "dependency_coverage": "partial"
@@ -324379,7 +325372,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "B13--B15"
         },
         "dependency_coverage": "partial",
@@ -324395,7 +325388,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Exact cusp merger"
         },
         "dependency_coverage": "partial",
@@ -324411,7 +325404,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Strict real ratio and continuous nonreal angle"
         },
         "dependency_coverage": "partial",
@@ -324428,7 +325421,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Both implications of the pointwise characterization"
         },
         "dependency_coverage": "partial",
@@ -324445,7 +325438,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "B1--B3 and exact classical specialization"
         },
         "dependency_coverage": "partial",
@@ -324462,7 +325455,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Primitive d-cycle and conjugate transposition graph"
         },
         "dependency_coverage": "partial",
@@ -324478,7 +325471,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Hub adjacency and generation of all3-cycles"
         },
         "dependency_coverage": "partial",
@@ -324496,7 +325489,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Both directions of the three-way pointwise equivalence"
         },
         "dependency_coverage": "partial",
@@ -324512,7 +325505,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Exact Vieta product with leading coefficient"
         },
         "dependency_coverage": "partial",
@@ -324529,7 +325522,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Square class and full splitting constants"
         },
         "dependency_coverage": "partial",
@@ -324545,7 +325538,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "B7--B9"
         },
         "dependency_coverage": "partial",
@@ -324561,7 +325554,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Exact envelope identity"
         },
         "dependency_coverage": "partial",
@@ -324578,7 +325571,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Larger formal factor and actual positive-cycle rate"
         },
         "dependency_coverage": "partial",
@@ -324595,7 +325588,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "Boundary images, proper counts and crossing-line derivative"
         },
         "dependency_coverage": "partial",
@@ -324613,7 +325606,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "B18 and both endpoints"
         },
         "dependency_coverage": "partial",
@@ -324678,7 +325671,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "locator": "All named classification and distinguished-geometry theorems"
         },
         "dependency_coverage": "partial",
@@ -349980,7 +350973,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
-          "sha256": "55552832fea1dd047f08bdc870165912f84e2577d9abfb88ab193525764aa4e3",
+          "sha256": "8d1a888cfd388dffe965f0b86bd3d1809bd66df874c3fb6ba2ad2ac83d0558e8",
           "locator": "Local convolution and the parity obstruction, equations (1)–(3)"
         },
         "dependency_coverage": "partial"
@@ -349997,7 +350990,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
-          "sha256": "55552832fea1dd047f08bdc870165912f84e2577d9abfb88ab193525764aa4e3",
+          "sha256": "8d1a888cfd388dffe965f0b86bd3d1809bd66df874c3fb6ba2ad2ac83d0558e8",
           "locator": "Stronger almost-sure critical gap bound, equations (4)–(5)"
         },
         "dependency_coverage": "partial"
@@ -350987,7 +351980,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
-          "sha256": "55552832fea1dd047f08bdc870165912f84e2577d9abfb88ab193525764aa4e3",
+          "sha256": "8d1a888cfd388dffe965f0b86bd3d1809bd66df874c3fb6ba2ad2ac83d0558e8",
           "locator": "Strict two-adic improvement and sharp finite-modulus error, equations (5a) and (5b)"
         },
         "dependency_coverage": "partial"
@@ -351060,7 +352053,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
-          "sha256": "55552832fea1dd047f08bdc870165912f84e2577d9abfb88ab193525764aa4e3",
+          "sha256": "8d1a888cfd388dffe965f0b86bd3d1809bd66df874c3fb6ba2ad2ac83d0558e8",
           "locator": "A sufficient condition for the critical density, implication from both estimates in (6)"
         },
         "dependency_coverage": "partial"
@@ -362955,7 +363948,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
-          "sha256": "1164a22ea45e11806c4880307e8ca96922be35a006f0df7814c7cce410d53afc",
+          "sha256": "f1820316a46b27387740074c8173b66ae3307807f895eb4d23408cac899c4af6",
           "locator": "A strict saving when the short term is small"
         },
         "dependency_coverage": "partial"
@@ -362972,7 +363965,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
-          "sha256": "1164a22ea45e11806c4880307e8ca96922be35a006f0df7814c7cce410d53afc",
+          "sha256": "f1820316a46b27387740074c8173b66ae3307807f895eb4d23408cac899c4af6",
           "locator": "A real strip with unequal root heights"
         },
         "dependency_coverage": "partial"
@@ -362987,7 +363980,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
-          "sha256": "1164a22ea45e11806c4880307e8ca96922be35a006f0df7814c7cce410d53afc",
+          "sha256": "f1820316a46b27387740074c8173b66ae3307807f895eb4d23408cac899c4af6",
           "locator": "Consequence for the two tall measures"
         },
         "dependency_coverage": "partial"
@@ -363560,7 +364553,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
-          "sha256": "1164a22ea45e11806c4880307e8ca96922be35a006f0df7814c7cce410d53afc",
+          "sha256": "f1820316a46b27387740074c8173b66ae3307807f895eb4d23408cac899c4af6",
           "locator": "Positive scales in every endpoint letter"
         },
         "dependency_coverage": "partial"
@@ -413787,7 +414780,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "High-degree phases in one affine angular coordinate, polynomial-chain transfer"
         },
         "dependency_coverage": "complete"
@@ -413802,7 +414795,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "locator": "High-degree phases in one affine angular coordinate, radial limit, specialization and powers"
         },
         "dependency_coverage": "complete"
@@ -425543,6 +426536,62 @@
           "sha256": "3e795d6702457db63ce6d3209b0e0b8728b4f96111e3c657f0175955ed1f5cf2",
           "locator": "Marked residues at every polar omitted prime, equation (4) and the source-finite consequence"
         }
+      },
+      {
+        "id": "ERDOS365-FIBER-TO-BOUNDED-CORNER",
+        "premises": [
+          "GAP-ARITH-ERDOS365-FIXED-FIBER-CUBIC-COUNT"
+        ],
+        "conclusion": "GAP-ARITH-ERDOS365-BOUNDED-KERNEL-CORNER",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+          "sha256": "9a93585c5df45db56c8ee1b37b0b6cb93ecc5ff2614dc50aacd3f983ddb0e4f3",
+          "locator": "Proposed fixed-fiber estimate; Global transfer still required"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ERDOS404-UNBOUNDED-TO-INFINITE-SEQUENCE",
+        "premises": [
+          "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE"
+        ],
+        "conclusion": "GAP-FACT-ERDOS404-INFINITE-SEQUENCE",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+          "sha256": "ddc5d5cbcd505838cce11dc59ccf132bbb5ce9b88b4646178f82c6c7dac7c46a",
+          "locator": "Uniform lifting obligation; Small completed special case"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ERDOS942-CPW1-TO-FIXED-COPRIME-OCCUPANCY",
+        "premises": [
+          "ARITH-ABC-POSITIVE-DENSITY-COPRIME-POWERFUL-SHORT-WINDOWS"
+        ],
+        "conclusion": "ARITH-ERDOS942-FIXED-COPRIME-SQUARE-OCCUPANCY",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+          "sha256": "6f3a30400e017a5e0da22a59e62eb77b5ad2f780a8e83bcb2ac101c3d83502a7",
+          "locator": "Erdős #942 and coprime occupants of square intervals"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ERDOS942-FIXED-TO-UNBOUNDED-COPRIME-OCCUPANCY",
+        "premises": [
+          "ARITH-ERDOS942-FIXED-COPRIME-SQUARE-OCCUPANCY"
+        ],
+        "conclusion": "ARITH-ERDOS942-UNBOUNDED-COPRIME-SQUARE-OCCUPANCY",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+          "sha256": "6f3a30400e017a5e0da22a59e62eb77b5ad2f780a8e83bcb2ac101c3d83502a7",
+          "locator": "Qualitative unbounded coprime occupancy"
+        },
+        "dependency_coverage": "partial"
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -427787,7 +428836,7 @@
             "status": "proved",
             "proof": {
               "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-              "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+              "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
               "locator": "Proposition: injectivity needs a nonzero formal class; Obligation: represent the actual angular period"
             },
             "dependency_coverage": "partial"
@@ -427803,7 +428852,7 @@
             "status": "proved",
             "proof": {
               "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-              "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+              "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
               "locator": "Obligation: represent the actual angular period, a zero formal class has zero period"
             },
             "dependency_coverage": "partial"
@@ -433557,6 +434606,126 @@
     "external_references": {
       "schema_version": 1,
       "papers": [
+        {
+          "id": "EXT-ERDOS-PROBLEM-404-STATEMENT",
+          "title": "Erdős Problem 404",
+          "citation": "Erdős Problems, Problem 404, online problem statement.",
+          "identifiers": {},
+          "urls": [
+            "https://www.erdosproblems.com/404"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+              "locator": "Problem target and reported finite-witness context",
+              "role": "context",
+              "nodes": [
+                "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE"
+              ]
+            }
+          ],
+          "verification": "citation_only",
+          "resource_type": "webpage",
+          "title_status": "identifier_only",
+          "verification_basis": "Citation mapping for a concurrent source note; the page was not independently retrieved in this pass."
+        },
+        {
+          "id": "EXT-LONG-THORP-SINGLE-FEEDBACK-WEIGHTS",
+          "title": "Cycle Universality for a Single Thorp Shuffle",
+          "citation": "C. D. Long, Cycle Universality for a Single Thorp Shuffle, Paper VIII, working manuscript.",
+          "identifiers": {},
+          "urls": [
+            "https://github.com/long-mathematics/nonuniform-random-permutations/blob/87de88f825a3e3ae0b7ae69cff73288265ff0485/papers/08-thorp-cycle-universality/thorp-cycle-universality.tex"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
+              "locator": "Reused-input comparison and bounded-test route; Sections 2, 4–5 and equation (10.2)",
+              "role": "context",
+              "nodes": [
+                "GAP-ARITH-RANDOM-PRIME-CRITICAL-SUPPORT-OVERLAP"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Targeted primary-source reading of the exact weight, marked switch and finite factorial-moment comparison; no full build or arithmetic transfer verified."
+        },
+        {
+          "id": "EXT-LONG-LUCE-BOUNDED-TEST-INTENSITY",
+          "title": "Global Endpoint Poisson Approximation",
+          "citation": "C. D. Long, Global Endpoint Poisson Approximation, working manuscript.",
+          "identifiers": {},
+          "urls": [
+            "https://github.com/long-mathematics/luce-tsetlin-permutations/blob/24be08fabda1ceb6c8d27ac70afe611644c7ec63/papers/global-endpoint-poisson/global-endpoint-poisson.tex"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOCAL_INTENSITIES.md",
+              "locator": "Reused-input comparison and bounded-test route; compact-test intensity and tail removal",
+              "role": "context",
+              "nodes": [
+                "GAP-ARITH-RANDOM-PRIME-CRITICAL-BOUNDED-TEST-INTENSITY"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Targeted primary-source reading of compact-test convergence and truncation; no arithmetic tail estimate or full build verified."
+        },
+        {
+          "id": "EXT-LONG-CONJUGATE-FIBRES-COLLISION-ENERGY",
+          "title": "Conjugate fibres, certificate rigidity, and irrationality exponents",
+          "citation": "C. D. Long, Conjugate fibres, certificate rigidity, and irrationality exponents, Paper IV, working manuscript.",
+          "identifiers": {},
+          "urls": [
+            "https://github.com/long-mathematics/openai-math-extensions/blob/bc45a6906e11db8ca737f803058120b1b88fdf3f/papers/04-conjugate-fibres-rigidity/conjugate-fibres-rigidity.tex"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
+              "locator": "Collision-energy optimization test; collision-energy lemma and water-filling stability remark",
+              "role": "context",
+              "nodes": [
+                "GAP-ARITH-ABC-RUW1-COLLISION-ENERGY-COFACTOR-WIDTH"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Targeted primary-source reading of the optimization identity, all-minor scope and scalar limitation; no RUW1 transfer or full build verified."
+        },
+        {
+          "id": "EXT-LONG-DVK-QUANTITATIVE-TORUS-CHAINS",
+          "title": "A Resolution-Free Proof of the Duistermaat--van der Kallen Nonvanishing Theorem",
+          "citation": "C. D. Long, A Resolution-Free Proof of the Duistermaat--van der Kallen Nonvanishing Theorem, working manuscript.",
+          "identifiers": {},
+          "urls": [
+            "https://github.com/long-mathematics/duistermaat-van-der-kallen-nonvanishing/blob/20f13044f15fd445845bf33fe74e24c3a7424598/duistermaat_van_der_kallen_nonvanishing.tex"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
+              "locator": "Quantitative torus-chain comparison; sublevel, logarithmic-integrability and primitive statements",
+              "role": "context",
+              "nodes": [
+                "GAP-FACTORIAL-CUSP-DVK-SEMIALGEBRAIC-CHAIN-TRANSFER"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Targeted primary-source reading of stated hypotheses and ODE/semialgebraic distinction; no chain transfer, full build or numerical cutoff verified."
+        },
         {
           "id": "EXT-OAKU-TAKAYAMA-DE-RHAM-1999",
           "title": "An algorithm for de Rham cohomology groups of the complement of an affine variety via D-module computation",
@@ -494199,6 +495368,475 @@
           "resource_type": "paper",
           "title_status": "citation_label",
           "verification_basis": "Authored citation identity or locator. Mathematical application and proof review remain separate."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00709V1",
+          "title": "The degree pair (126,84) in the plane Jacobian problem: the point (16/3,10) is not a regular corner",
+          "citation": "David Niedbala Giraudin, The degree pair (126,84) in the plane Jacobian problem: the point (16/3,10) is not a regular corner, Hexagon 2611.00709v1.",
+          "identifiers": {
+            "hexagon": "2611.00709v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00709v1"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00709v1.pdf",
+              "sha256": "cbbe6924c30dfa88df0b1bc574b36cbe2cf622f0c927b951b322df76edd0882e",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00709v1.zip",
+              "sha256": "9846a0b72e6ea61fa5611168657940ec1fec8d066d6617639f5c759bff3f652f",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00709V1"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00710V1",
+          "title": "The degree pair (84,126) in the plane Jacobian problem: exclusion of the shape with final corner (19/7,5)",
+          "citation": "David Niedbala Giraudin, The degree pair (84,126) in the plane Jacobian problem: exclusion of the shape with final corner (19/7,5), Hexagon 2611.00710v1.",
+          "identifiers": {
+            "hexagon": "2611.00710v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00710v1"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00710v1.pdf",
+              "sha256": "5fdaf44da656a0b03330a29c8335d8e30bf68aa2f4c81e667291c2b1575709c6",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00710v1.zip",
+              "sha256": "13a8616cb056e6c50f0cc69c714587cfff1faf93a6cdc7d1cfed26c5c28c97b8",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00710V1"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00714V1",
+          "title": "The starting corner (7,35) in the plane Jacobian problem: the point (18/7,4) is not a regular corner",
+          "citation": "David Niedbala Giraudin, The starting corner (7,35) in the plane Jacobian problem: the point (18/7,4) is not a regular corner, Hexagon 2611.00714v1.",
+          "identifiers": {
+            "hexagon": "2611.00714v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00714v1"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00714v1.pdf",
+              "sha256": "b8eb97bb65371de6677c8bf8af20107159c17690d9902f6be9d5b9f2bc0326bd",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00714v1.zip",
+              "sha256": "dc6b350d87e2af589a6b2a599ebabd1c790628531b14f9b45de0289760b5c447",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00714V1"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00724V2",
+          "title": "The degree pair (88,132) in the plane Jacobian problem: exclusion of the shape with starting corner (11,33) and final corner (19/4,8)",
+          "citation": "David Niedbala Giraudin, The degree pair (88,132) in the plane Jacobian problem: exclusion of the shape with starting corner (11,33) and final corner (19/4,8), Hexagon 2611.00724v2.",
+          "identifiers": {
+            "hexagon": "2611.00724v2"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00724v2"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00724v2.pdf",
+              "sha256": "09d27a8259527479f9413f190cc6be88b87554ee6e7bbc981c0bfef6f36fef0b",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00724v2.zip",
+              "sha256": "493a2f41787839224d7ff3d2619697996a92863c80d0c32e3f948fd8cc96ba72",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00724V2"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00733V2",
+          "title": "Two shapes of maximal degree 135 in the plane Jacobian problem: exclusion of the degree pairs (135,90) and (90,135) with corners (9,36) and (17/9,4)",
+          "citation": "David Niedbala Giraudin, Two shapes of maximal degree 135 in the plane Jacobian problem: exclusion of the degree pairs (135,90) and (90,135) with corners (9,36) and (17/9,4), Hexagon 2611.00733v2.",
+          "identifiers": {
+            "hexagon": "2611.00733v2"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00733v2"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00733v2.pdf",
+              "sha256": "1a123201978b273ae7dda041fb584234f2c8bfacc1c7c640b1be09375c9303bf",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00733v2.zip",
+              "sha256": "254fa3229a75d4085f33b92c906cd669cf10e8ec078d2af72c389d2b46166a5c",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00733V2"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00944V1",
+          "title": "A shape of maximal degree 135 in the plane Jacobian problem: exclusion of the complete chain (9,36), (9,24), (11/3,8)",
+          "citation": "David Niedbala Giraudin, A shape of maximal degree 135 in the plane Jacobian problem: exclusion of the complete chain (9,36), (9,24), (11/3,8), Hexagon 2611.00944v1.",
+          "identifiers": {
+            "hexagon": "2611.00944v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00944v1"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00944v1.pdf",
+              "sha256": "c00cfa567731623ba51491ccc641fc69f91433c8e8af25c278461c19c614e30e",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00944v1.zip",
+              "sha256": "8c6e2476180ffd1d5b670175deaedb0da4f9e7e940fafef5a9f03014fdc3f76e",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00944V1"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00717V1",
+          "title": "The degree pair (56,140) in the plane Jacobian problem: exclusion of the shape with starting corner (7,21) and final corner (13/7,3)",
+          "citation": "David Niedbala Giraudin, The degree pair (56,140) in the plane Jacobian problem: exclusion of the shape with starting corner (7,21) and final corner (13/7,3), Hexagon 2611.00717v1.",
+          "identifiers": {
+            "hexagon": "2611.00717v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00717v1"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00717v1.pdf",
+              "sha256": "6ed8017e18c7e6ad9a8c748737b63e5b3d50f16ea2642cc1a099438b80a44d85",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00717v1.zip",
+              "sha256": "02a7bc0813c591a3e00fd7c23fb3ba7bb18d810e5f31c47cfebe83a2e11e9415",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00717V1"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00896V1",
+          "title": "The shapes of maximal degree 147 with starting corner (6,15) in the plane Jacobian problem",
+          "citation": "David Niedbala Giraudin, The shapes of maximal degree 147 with starting corner (6,15) in the plane Jacobian problem, Hexagon 2611.00896v1.",
+          "identifiers": {
+            "hexagon": "2611.00896v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00896v1"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00896v1.pdf",
+              "sha256": "be9740c1812ff4e70caa1a14ca6a260790ac34b3c48aaf9ed7bccee544151a15",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00896v1.zip",
+              "sha256": "2e4530de1e7fc19e615206bf56fbf565ba01c6058dafe0844876a13a0392aee4",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00896V1"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00713V1",
+          "title": "A shape of maximal degree 150 in the plane Jacobian problem: the point (18/5,8) is not a regular corner",
+          "citation": "David Niedbala Giraudin, A shape of maximal degree 150 in the plane Jacobian problem: the point (18/5,8) is not a regular corner, Hexagon 2611.00713v1.",
+          "identifiers": {
+            "hexagon": "2611.00713v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00713v1"
+          ],
+          "local_sources": [
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00713v1.pdf",
+              "sha256": "a67415526e9bba596703c7869c3e49631662d706627558b0d3b9794f8e7050f7",
+              "locator": "Theorem, standing data and scope"
+            },
+            {
+              "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00713v1.zip",
+              "sha256": "3709b8aba34b803134032a1714a595cdfdbdbfe29ca6f0e081a552a0a19c3993",
+              "locator": "Ancillary source and exact certificate"
+            }
+          ],
+          "uses": [
+            {
+              "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+              "locator": "Matching row in normalized shape table",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-JC2-GIRAUDIN-2611-00713V1"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem and standing data inspected; exact ancillary script internally replayed, without independent proof audit."
+        },
+        {
+          "id": "EXT-PAPER-NAKAZAWA-OKA-GENUS-FOUR",
+          "title": "Smooth plane curves with one place at infinity",
+          "citation": "Yuji Nakazawa and Mutsuo Oka, Smooth plane curves with one place at infinity, J. Math. Soc. Japan 49 (1997), 663–687, Main Theorem 1.9.",
+          "identifiers": {},
+          "urls": [
+            "https://www.jstage.jst.go.jp/article/jmath1948/49/4/49_4_663/_pdf/-char/en"
+          ],
+          "local_sources": [
+            {
+              "path": "hessian/hc4-triangular-graphs/sources/nakazawa-oka-genus-four-1997.pdf",
+              "sha256": "bf641ea59178df37a16db4aac39189ff48eea5f1dc1bee94f7be26745f4ea7a8",
+              "locator": "Main Theorem 1.9, printed pp. 669–670"
+            }
+          ],
+          "uses": [
+            {
+              "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+              "locator": "Four ambient classes and transfer gate",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-NAKAZAWA-OKA-GENUS-FOUR-AMBIENT"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary Main Theorem 1.9 and genus-four parameterized forms inspected; Keller transfer not established."
+        },
+        {
+          "id": "EXT-PAPER-RSTATION-DETERMINANT-RATIO-LEMMA",
+          "title": "Determinant collisions and weighted conductor means for Knauf partitions",
+          "citation": "bramble_trace, Determinant collisions and weighted conductor means for Knauf partitions, rStation Paper 125/v1 (2026).",
+          "identifiers": {},
+          "urls": [
+            "https://rstation.ai/problems/riemann_hypothesis/papers/125/v1"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+              "locator": "Exact transfer scope and limitations",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-RSTATION-DETERMINANT-RATIO-LEMMA"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem statement and relevant proof passage inspected; transfer tested only in the stated bounded case."
+        },
+        {
+          "id": "EXT-PAPER-POULY-STOPPED-EXPANSION",
+          "title": "Sharp Poisson approximation and second-order correction for long multiplicative runs",
+          "citation": "Brice Pouly, Sharp Poisson approximation and second-order correction for long multiplicative runs, Hexagon 2611.00447v1 (2026).",
+          "identifiers": {
+            "hexagon": "2611.00447v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.00447v1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/pouly-2611.00447v1.pdf",
+              "sha256": "cacadbe77edfe644c5487006acd9ad866f76a28fb1b757fc67ca6c3fea1b886b",
+              "locator": "Named theorem or section"
+            }
+          ],
+          "uses": [
+            {
+              "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+              "locator": "Exact transfer scope and limitations",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-POULY-STOPPED-EXPANSION"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem statement and relevant proof passage inspected; transfer tested only in the stated bounded case."
+        },
+        {
+          "id": "EXT-PAPER-SHAIK-MASS-SIX",
+          "title": "The rank-one Dixmier conjecture for elements of mass at most six",
+          "citation": "Idris Ali Shaik, The rank-one Dixmier conjecture for elements of mass at most six, Hexagon 2610.00273v1 (2026).",
+          "identifiers": {
+            "hexagon": "2610.00273v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2610.00273v1"
+          ],
+          "local_sources": [
+            {
+              "path": "dixmier/dixmier-formal-lifting/sources/shaik-2610.00273v1.pdf",
+              "sha256": "5ca31edfdfc4242e88ae39f87b723cb88474b9d62b322f61967479fa6170e386",
+              "locator": "Named theorem or section"
+            }
+          ],
+          "uses": [
+            {
+              "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_MASS_SIX_SUPPORT_FILTER.md",
+              "locator": "Exact transfer scope and limitations",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-SHAIK-MASS-SIX"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem statement and relevant proof passage inspected; transfer tested only in the stated bounded case."
+        },
+        {
+          "id": "EXT-PAPER-FANG-SAME-CONTOUR-CANCELLATION",
+          "title": "Eventual interlacing of large-block set-partition polynomials",
+          "citation": "Chengyi Fang, Eventual interlacing of large-block set-partition polynomials, Hexagon 2611.01129v1 (2026).",
+          "identifiers": {
+            "hexagon": "2611.01129v1"
+          },
+          "urls": [
+            "https://hexagonmath.org/2611.01129v1"
+          ],
+          "local_sources": [
+            {
+              "path": "factorial/image-rigidity/sources/fang-2611.01129v1.pdf",
+              "sha256": "6518f36bb98f17374856b40d009921bb2ba35d057385b78586e86a63dc1cac51",
+              "locator": "Named theorem or section"
+            }
+          ],
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/FANG_CENTERED_CONTOUR_CUSP_TEST.md",
+              "locator": "Exact transfer scope and limitations",
+              "role": "application_unverified",
+              "nodes": [
+                "EXT-FANG-SAME-CONTOUR-CANCELLATION"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "verification_basis": "Primary theorem statement and relevant proof passage inspected; transfer tested only in the stated bounded case."
         }
       ],
       "internal_citations": [
@@ -519127,7 +520765,7 @@
         },
         {
           "path": "arithmetic/ABC_SHORT_HEIGHT_AND_REAL_GAP.md",
-          "sha256": "1164a22ea45e11806c4880307e8ca96922be35a006f0df7814c7cce410d53afc",
+          "sha256": "f1820316a46b27387740074c8173b66ae3307807f895eb4d23408cac899c4af6",
           "claims": [
             "ARITH-ABC-SHORT-HEIGHT-SECTOR-ONE-THIRD-SAVING",
             "ARITH-ABC-REAL-UNEQUAL-ROOT-HEIGHTS-STRIP",
@@ -519147,7 +520785,9 @@
             "ARITH-ABC-TALL-PAIR-REAL-LOCAL-MASS",
             "ARITH-ABC-PAIR-DEFECT-HEIGHT-GAP"
           ],
-          "gaps": [],
+          "gaps": [
+            "GAP-ARITH-ABC-RUW1-COLLISION-ENERGY-COFACTOR-WIDTH"
+          ],
           "statements": [],
           "role": "proof",
           "explanation": null
@@ -534154,12 +535794,13 @@
             "GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY",
             "GAP-ARITH-RANDOM-PRIME-POINTWISE-REPRESENTATIONS",
             "GAP-ARITH-RANDOM-PRIME-CRITICAL-SUPPORT-OVERLAP",
-            "GAP-ARITH-RANDOM-PRIME-CRITICAL-EMPIRICAL-INTENSITY"
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-EMPIRICAL-INTENSITY",
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-BOUNDED-TEST-INTENSITY"
           ],
           "statements": [],
           "role": "proof",
           "explanation": "Exact local Fourier proof, gap lower bound and conditional density reduction.",
-          "sha256": "55552832fea1dd047f08bdc870165912f84e2577d9abfb88ab193525764aa4e3"
+          "sha256": "8d1a888cfd388dffe965f0b86bd3d1809bd66df874c3fb6ba2ad2ac83d0558e8"
         },
         {
           "path": "arithmetic/RANDOM_PRIME_SEMIGROUP_LOGARITHMIC_TRANSITIONS.md",
@@ -554739,7 +556380,8 @@
           "gaps": [
             "GOAL-FACTORIAL-INTEGER-QUARTIC-CUSP-ALL-ORDER-SFC",
             "GAP-FACTORIAL-QUARTIC-CUSP-ESCAPING-FIELD-EXHAUSTION",
-            "GAP-FACTORIAL-CUSP-ACTIVE-CYCLE-AND-GLOBAL-ERRORS"
+            "GAP-FACTORIAL-CUSP-ACTIVE-CYCLE-AND-GLOBAL-ERRORS",
+            "GAP-FACTORIAL-CUSP-DVK-SEMIALGEBRAIC-CHAIN-TRANSFER"
           ],
           "statements": [
             {
@@ -555311,7 +556953,7 @@
         },
         {
           "path": "factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md",
-          "sha256": "850097af6e8fa6b6ab3ce6c7bd7b642a0d8e5cc381ab9501c9e863e34f4f500b",
+          "sha256": "e6dbc874783124585f7d307c8d5f4d8ed7a40f9fade2ebf5d0364e4d553b37ab",
           "claims": [
             "FACTORIAL-CUSP-STATIONARY-BELYI-MONODROMY",
             "FACT-QUARTIC-GENERAL",
@@ -555823,7 +557465,7 @@
         },
         {
           "path": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-          "sha256": "fee4e42d37b462aa8375f0d53d803b73e8e177eef50727c5472256f0fd33dce3",
+          "sha256": "bfca2ee22982ff1985ce193af4fbe41461135d431fbd78eb82e4d1f20f07c436",
           "role": "proof",
           "claims": [
             "SRC-EIT-KZ-SCOPE-AUDIT",
@@ -555883,7 +557525,8 @@
             "FACTORIAL-KZ-CONSECUTIVE-WINDOW-BRIDGE",
             "GAP-EIT-IV-ELEMENTARY-PRESENTATION-COMPARISON",
             "GAP-EIT-IV-APPLICATION-NUMERICAL-SPECIALIZATION",
-            "GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON"
+            "GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON",
+            "GAP-FACTORIAL-EIT-VI-ELLIPTIC-RECURRENCE-COPRIMALITY"
           ],
           "explanation": "Exact II–III main proof reproductions, direct full Gamma-packet kernel proof, conditional IV proof-interface audit and explicitly unresolved arithmetic/presentation/numerical application inputs.",
           "statements": [
@@ -688034,6 +689677,468 @@
           "gaps": [],
           "statements": [],
           "explanation": "Version 2 primary source for precisely scoped actual graph and faithful-family results."
+        },
+        {
+          "path": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+          "sha256": "9a93585c5df45db56c8ee1b37b0b6cb93ecc5ff2614dc50aacd3f983ddb0e4f3",
+          "role": "scope",
+          "claims": [],
+          "dependencies": [
+            "EXT-ERDOS-364-PLYMESSER-PAIRWISE-ESTIMATES"
+          ],
+          "gaps": [
+            "GAP-ARITH-ERDOS365-FIXED-FIBER-CUBIC-COUNT",
+            "GAP-ARITH-ERDOS365-BOUNDED-KERNEL-CORNER",
+            "GAP-ARITH-ERDOS365-SUBQUARTER-GLOBAL",
+            "GAP-ARITH-ERDOS365-POLYLOGARITHMIC-COUNT",
+            "GAP-ARITH-ERDOS365-PLYMESSER-K2-SOURCE-AUDIT"
+          ],
+          "statements": [],
+          "explanation": "Erdős #365 candidate descent, conditional corner summation and remaining global transfer; no subquarter theorem claimed."
+        },
+        {
+          "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+          "sha256": "ddc5d5cbcd505838cce11dc59ccf132bbb5ce9b88b4646178f82c6c7dac7c46a",
+          "role": "proof",
+          "claims": [
+            "FACT-ERDOS404-THREE-ADIC-CLASS-SIX"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT",
+            "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE",
+            "GAP-FACT-ERDOS404-INFINITE-SEQUENCE"
+          ],
+          "statements": [],
+          "explanation": "Open f(1,5) target, proved compactness implication and elementary residue-class special case; finite witness not replayed."
+        },
+        {
+          "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+          "sha256": "6f3a30400e017a5e0da22a59e62eb77b5ad2f780a8e83bcb2ac101c3d83502a7",
+          "role": "scope",
+          "claims": [
+            "ARITH-ERDOS942-FIXED-COPRIME-SQUARE-OCCUPANCY",
+            "ARITH-ERDOS942-UNBOUNDED-COPRIME-SQUARE-OCCUPANCY"
+          ],
+          "dependencies": [
+            "ARITH-ABC-POSITIVE-DENSITY-COPRIME-POWERFUL-SHORT-WINDOWS"
+          ],
+          "gaps": [
+            "GAP-ARITH-ERDOS942-GROWING-COPRIME-OCCUPANCY",
+            "GAP-ARITH-ERDOS942-LOGARITHMIC-RATE"
+          ],
+          "statements": [],
+          "explanation": "Specializes CPW1 to fixed coprime multiplicity and diagonalizes to qualitative unboundedness; quantitative growth and the original logarithmic rate remain open."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00709v1.pdf",
+          "sha256": "cbbe6924c30dfa88df0b1bc574b36cbe2cf622f0c927b951b322df76edd0882e",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00709V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00709v1.zip",
+          "sha256": "9846a0b72e6ea61fa5611168657940ec1fec8d066d6617639f5c759bff3f652f",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00709V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00710v1.pdf",
+          "sha256": "5fdaf44da656a0b03330a29c8335d8e30bf68aa2f4c81e667291c2b1575709c6",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00710V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00710v1.zip",
+          "sha256": "13a8616cb056e6c50f0cc69c714587cfff1faf93a6cdc7d1cfed26c5c28c97b8",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00710V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00714v1.pdf",
+          "sha256": "b8eb97bb65371de6677c8bf8af20107159c17690d9902f6be9d5b9f2bc0326bd",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00714V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00714v1.zip",
+          "sha256": "dc6b350d87e2af589a6b2a599ebabd1c790628531b14f9b45de0289760b5c447",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00714V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00724v2.pdf",
+          "sha256": "09d27a8259527479f9413f190cc6be88b87554ee6e7bbc981c0bfef6f36fef0b",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00724V2"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00724v2.zip",
+          "sha256": "493a2f41787839224d7ff3d2619697996a92863c80d0c32e3f948fd8cc96ba72",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00724V2"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00733v2.pdf",
+          "sha256": "1a123201978b273ae7dda041fb584234f2c8bfacc1c7c640b1be09375c9303bf",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00733V2"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00733v2.zip",
+          "sha256": "254fa3229a75d4085f33b92c906cd669cf10e8ec078d2af72c389d2b46166a5c",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00733V2"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00944v1.pdf",
+          "sha256": "c00cfa567731623ba51491ccc641fc69f91433c8e8af25c278461c19c614e30e",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00944V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00944v1.zip",
+          "sha256": "8c6e2476180ffd1d5b670175deaedb0da4f9e7e940fafef5a9f03014fdc3f76e",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00944V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00717v1.pdf",
+          "sha256": "6ed8017e18c7e6ad9a8c748737b63e5b3d50f16ea2642cc1a099438b80a44d85",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00717V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00717v1.zip",
+          "sha256": "02a7bc0813c591a3e00fd7c23fb3ba7bb18d810e5f31c47cfebe83a2e11e9415",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00717V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00896v1.pdf",
+          "sha256": "be9740c1812ff4e70caa1a14ca6a260790ac34b3c48aaf9ed7bccee544151a15",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00896V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00896v1.zip",
+          "sha256": "2e4530de1e7fc19e615206bf56fbf565ba01c6058dafe0844876a13a0392aee4",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00896V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00713v1.pdf",
+          "sha256": "a67415526e9bba596703c7869c3e49631662d706627558b0d3b9794f8e7050f7",
+          "role": "imported-source",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00713V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact primary Hexagon preprint for the named normalized shape."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00713v1.zip",
+          "sha256": "3709b8aba34b803134032a1714a595cdfdbdbfe29ca6f0e081a552a0a19c3993",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00713V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact source archive with ancillary certificate and expected output."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_BUNDLE.md",
+          "sha256": "d0c01cce9f51baa2228f83a8df48fd0f6c9cf7f86e8998d72c8467c3049b5f9e",
+          "role": "scope",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00709V1",
+            "EXT-JC2-GIRAUDIN-2611-00710V1",
+            "EXT-JC2-GIRAUDIN-2611-00714V1",
+            "EXT-JC2-GIRAUDIN-2611-00724V2",
+            "EXT-JC2-GIRAUDIN-2611-00733V2",
+            "EXT-JC2-GIRAUDIN-2611-00944V1",
+            "EXT-JC2-GIRAUDIN-2611-00717V1",
+            "EXT-JC2-GIRAUDIN-2611-00896V1",
+            "EXT-JC2-GIRAUDIN-2611-00713V1"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GOAL-JC2",
+            "GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION",
+            "GAP-JC2-DEGREE-150-CENSUS-COVERAGE"
+          ],
+          "statements": [],
+          "explanation": "Exact normalized-shape table, replay limits and exhaustive-census obligation."
+        },
+        {
+          "path": "jacobian/planar-degree-frontier/SHAPE_EXCLUSION_REPLAY.json",
+          "sha256": "d93c09cf780d4e162f61f37bb052bed2237bd03a2292d30101bed8acb3d83976",
+          "role": "evidence",
+          "claims": [
+            "EXT-JC2-GIRAUDIN-2611-00709V1",
+            "EXT-JC2-GIRAUDIN-2611-00710V1",
+            "EXT-JC2-GIRAUDIN-2611-00714V1",
+            "EXT-JC2-GIRAUDIN-2611-00724V2",
+            "EXT-JC2-GIRAUDIN-2611-00733V2",
+            "EXT-JC2-GIRAUDIN-2611-00944V1",
+            "EXT-JC2-GIRAUDIN-2611-00717V1",
+            "EXT-JC2-GIRAUDIN-2611-00896V1",
+            "EXT-JC2-GIRAUDIN-2611-00713V1"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Compact internal replay receipt for all nine ancillary scripts."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/sources/nakazawa-oka-genus-four-1997.pdf",
+          "sha256": "bf641ea59178df37a16db4aac39189ff48eea5f1dc1bee94f7be26745f4ea7a8",
+          "role": "imported-source",
+          "claims": [
+            "EXT-NAKAZAWA-OKA-GENUS-FOUR-AMBIENT"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Primary published genus-four smooth ambient classification."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_AMBIENT_PERIOD_TASKS.md",
+          "sha256": "8e0af759dc78c71e4fcf7e7b084a14d174e9282c7d45dfbf6b01fed6d517219f",
+          "role": "scope",
+          "claims": [
+            "EXT-NAKAZAWA-OKA-GENUS-FOUR-AMBIENT"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-HESSIAN-CONDUCTOR-EIGHT-TRANSFER",
+            "GAP-HESSIAN-CONDUCTOR-EIGHT-N1-PERIOD",
+            "GAP-HESSIAN-CONDUCTOR-EIGHT-N2-PERIOD",
+            "GAP-HESSIAN-CONDUCTOR-EIGHT-N3-PERIOD",
+            "GAP-HESSIAN-CONDUCTOR-EIGHT-N4-PERIOD",
+            "GAP-HESSIAN-CONDUCTOR-EIGHT-DESCENT",
+            "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
+          ],
+          "statements": [],
+          "explanation": "Parameterized four-family period tasks, smoothing bridge and degeneration obligations."
+        },
+        {
+          "path": "arithmetic/sources/pouly-2611.00447v1.pdf",
+          "sha256": "cacadbe77edfe644c5487006acd9ad866f76a28fb1b757fc67ca6c3fea1b886b",
+          "role": "imported-source",
+          "claims": [
+            "EXT-POULY-STOPPED-EXPANSION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Primary preprint for the scoped external input."
+        },
+        {
+          "path": "dixmier/dixmier-formal-lifting/sources/shaik-2610.00273v1.pdf",
+          "sha256": "5ca31edfdfc4242e88ae39f87b723cb88474b9d62b322f61967479fa6170e386",
+          "role": "imported-source",
+          "claims": [
+            "EXT-SHAIK-MASS-SIX"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Primary preprint for the scoped external input."
+        },
+        {
+          "path": "factorial/image-rigidity/sources/fang-2611.01129v1.pdf",
+          "sha256": "6518f36bb98f17374856b40d009921bb2ba35d057385b78586e86a63dc1cac51",
+          "role": "imported-source",
+          "claims": [
+            "EXT-FANG-SAME-CONTOUR-CANCELLATION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Primary preprint for the scoped external input."
+        },
+        {
+          "path": "arithmetic/DETERMINANT_RATIO_AND_STOPPED_BOUNDARY_TESTS.md",
+          "sha256": "be26a5252871fd08d70de29937f93e3e8a2c8c5dc41eaacfc61f824bad57dc66",
+          "role": "scope",
+          "claims": [
+            "EXT-RSTATION-DETERMINANT-RATIO-LEMMA",
+            "EXT-POULY-STOPPED-EXPANSION"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING",
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-SUPPORT-OVERLAP",
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-EMPIRICAL-INTENSITY",
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-TWO-COPY-ENERGY-UPPER"
+          ],
+          "statements": [],
+          "explanation": "Two finite transfer tests with exact dictionaries, outcomes and asymptotic gaps."
+        },
+        {
+          "path": "arithmetic/verify_abc_determinant_ratio_fibre.py",
+          "sha256": "923621e3792f4173c77df3e100683913e122729b592dabc5cbd7776e98c9afc6",
+          "role": "evidence",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ARITH-ABC-GROUPED-FULLOC-FURTHER-SAVING"
+          ],
+          "statements": [],
+          "explanation": "Deterministic finite abc row-strip and ratio-residue diagnostic."
+        },
+        {
+          "path": "arithmetic/verify_semigroup_k2_stopped_expansion.py",
+          "sha256": "6c3288d30fae31dca3953a852e51e1f3a8c11a03eb8bd65c1eddf592239f881c",
+          "role": "evidence",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [
+            "GAP-ARITH-RANDOM-PRIME-CRITICAL-SUPPORT-OVERLAP"
+          ],
+          "statements": [],
+          "explanation": "Exact finite Bernoulli enumeration and first-excluded-prefix diagnostic."
+        },
+        {
+          "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_MASS_SIX_SUPPORT_FILTER.md",
+          "sha256": "0e08b69f72a824f7469d2579742e52e4dd4ec5ef45aacaddce5ac65acd9ee33d",
+          "role": "scope",
+          "claims": [
+            "EXT-SHAIK-MASS-SIX"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "DIX-GAP-ACTUAL-POLYNOMIAL-SUBPRINCIPAL-CONSTRAINT"
+          ],
+          "statements": [],
+          "explanation": "Polynomial A1 mass filter and admission boundary; no Lean replay."
+        },
+        {
+          "path": "factorial/image-rigidity/FANG_CENTERED_CONTOUR_CUSP_TEST.md",
+          "sha256": "dbe032a684e24bdaee519e74c2b32743ed3a8d26f9500a171dc9d8e7d8ece7b7",
+          "role": "scope",
+          "claims": [
+            "EXT-FANG-SAME-CONTOUR-CANCELLATION"
+          ],
+          "dependencies": [],
+          "gaps": [
+            "GAP-FACTORIAL-CUSP-ACTIVE-CYCLE-AND-GLOBAL-ERRORS"
+          ],
+          "statements": [],
+          "explanation": "Exact positive-axis centered signal and open complex complete-contour error."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_fang_cusp_centered_signal.py",
+          "sha256": "9ba3404e6f8ac000a34ed3d1ba35fb5f4c6089a4a9f8b277f9d039eede120e08",
+          "role": "evidence",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [
+            "GAP-FACTORIAL-CUSP-ACTIVE-CYCLE-AND-GLOBAL-ERRORS"
+          ],
+          "statements": [],
+          "explanation": "Exact symbolic local cusp and insertion coefficients."
         }
       ]
     },

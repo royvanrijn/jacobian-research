@@ -359,6 +359,52 @@ but allows fluctuations within each class.
 The Janson and Harris bounds have the product-space hypotheses checked
 above. [Janson–Warnke, equations (2)–(3)](sources/janson-warnke-1406.1248v1.pdf)
 
+### Reused-input comparison and bounded-test route (open)
+
+[Long, *Cycle Universality for a Single Thorp Shuffle*, Sections 2,
+4–5](https://github.com/long-mathematics/nonuniform-random-permutations/blob/87de88f825a3e3ae0b7ae69cff73288265ff0485/papers/08-thorp-cycle-universality/thorp-cycle-universality.tex)
+counts the union of queries to one feedback table sampled once. Its
+equation (2.1) prices repeated contexts by a power of two, and its
+marked feedback switch preserves earlier cycles. This suggests a
+weighted-configuration test for the first estimate in (6), not an
+imported overlap bound. For any finite family of possible representations
+\(\mathcal R\), condition on \(\mathcal F_Y\), let \(T_R\) be the unexposed
+prime support of \(R\), and put \(m_q=\#\{R:q\in T_R\}\). If
+\(w(R)=\prod_{q\in T_R}p_q\), with exposed admissibility already checked,
+independence of the prime selectors gives the exact identity
+\[
+ \mathbb P\!\left(\bigcap_{R\in\mathcal R}\{R\text{ occurs}\}
+                  \mid\mathcal F_Y\right)
+ =\prod_{R\in\mathcal R}w(R)
+  \prod_{q>Y}p_q^{-(m_q-1)_+}.
+\]
+At \(p_q=q^{-\gamma}\), the repeat gain is
+\(\exp(\gamma\sum_{q>Y}(m_q-1)_+\log q)\). Counting repeats without
+their prime sizes loses this cost. Start with \(k=2\) and pairs sharing
+one unexposed prime: split configurations by this weighted repeat
+budget, and seek an injection or switch preserving the additive equation
+and accounting for every weight ratio. Long's fair-bit symmetry and a
+single feedback flip forcing a cycle have no demonstrated arithmetic
+counterpart; an argument requiring either stops at that point.
+
+The separate two-completion energy obligation uses selectors labelled
+\((q,\mathrm{copy})\) above \(Y\). Reuse of the same numerical prime in
+different completions creates no dependence between those selectors.
+Long's equation (10.2) is also a finite factorial-moment to Poisson
+total-variation inequality for arbitrary count vectors. On a
+bounded-intensity sector it allows the size limit at fixed moment order
+before increasing the order. It supplies no arithmetic moment estimate.
+
+[Long, *Global Endpoint Poisson Approximation*, the compact-test
+intensity argument](https://github.com/long-mathematics/luce-tsetlin-permutations/blob/24be08fabda1ceb6c8d27ac70afe611644c7ec63/papers/global-endpoint-poisson/global-endpoint-poisson.tex)
+suggests a bounded continuous-test route to the second estimate in (6):
+first prove empirical convergence for truncated intensities, then remove
+truncation with a uniform arithmetic tail bound and upgrade to the
+almost-sure grid family. The Luce tail and dependence bounds do not apply
+to these prime supports. These source comparisons are targeted readings;
+their full builds and the proposed arithmetic transfers have not been
+replayed or proved here.
+
 The new unconditional claims use the retained counting, residue and
 forced-prime moment results. Ma–Tang's finite-field threshold is
 provenance for the comparison of dependence mechanisms. The statements

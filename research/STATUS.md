@@ -295,7 +295,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 
 [Topic guide](factorial/README.md)
 
-**Computed obligations:** 50 unresolved; 36 resolved within their exact scope.
+**Computed obligations:** 53 unresolved; 36 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
@@ -1336,6 +1336,9 @@ Tracked obligations (computed states):
 - **mathematical / open:** [For every nonzero f in C[x,y] of total degree at most two, with its actual number s of nonzero monomials, and every n>=1, at least one moment from n through n+s-1 is nonzero. Constant and linear terms are included; homogeneous quadratic closure alone does not prove this.](factorial/image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-BINARY-QUADRATICS
 - **mathematical / open:** [Does the optional stronger monic ordinary Anti-coefficient property H hold with all its stated quantifiers? Universal quadratic forcing is already proved independently; no converse to H is asserted.](factorial/image-rigidity/QUADRATIC_HALF_VALUATION_MONIC_ANTI_GATE_CONDITIONAL_CLOSURE.md) — HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND
 - **verification / open:** [Verify EIT V’s strict-extremum comparison on the specific EIT VI odd family.](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md) — GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON
+- **mathematical / open:** [Find a reachable-residue invariant for distinct factorial subset sums containing 1! modulo every 5^j that supports lifting from j to j+1, including carries at 5^j. Finite precision automata and reported witnesses to 20000 do not establish all-precision lifting.](factorial/ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT
+- **mathematical / open:** [Prove f(1,5)=infinity, where f is the supremum of v_5 of finite sums of distinct factorials whose smallest index is 1. A uniform carry invariant is one proposed route, not a known equivalence.](factorial/ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE
+- **mathematical / open:** [Construct increasing indices starting at 1 such that the 5-adic valuations of their partial factorial sums tend to infinity. The compactness implication from f(1,5)=infinity is proved in the canonical note, but that premise is open.](factorial/ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-INFINITE-SEQUENCE
 
 ## Dixmier and Weyl algebras
 
@@ -1479,7 +1482,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 
 [Topic guide](arithmetic/README.md)
 
-**Computed obligations:** 121 unresolved; 21 resolved within their exact scope.
+**Computed obligations:** 128 unresolved; 21 resolved within their exact scope.
 
 | Principal result | Authored state | Graph status | Scope |
 |---|---|---|---|
@@ -3229,6 +3232,13 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Can the coupled count of distinct surviving fundamental centers in common cells reach 142/525 at width exponent 11/105?](arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) — GAP-ERDOS-364-COUPLED-COLLISIONS
 - **mathematical / open:** [Can the averaged degree-ten saving be strengthened to the pointwise elliptic estimate?](arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md) — GAP-ERDOS-364-POINTWISE-ELLIPTIC-LIFT
 - **mathematical / open:** [From every original near-saturation sequence of primitive three-cap rows, extract an actual MP1, MP4, MP12 or MP13 packing family with certified count exponent at most 1/3-Delta and total retention/chart loss strictly less than Delta. Retain all three original radical caps and the least-repaired quotient labels, with actual exact valuation residues, divisor depths, coefficient and catalogue costs included. MP12 supplies the price-free two-orientation k<=2 minimum through a smallest parity role, weighted Hölder regimes and the 13/40 profile. MP13 permits stronger signed marginal prices and k=3 only in the stated high three-edge torsion sector. Weak degree measures and separate moments alone give no such extraction from arbitrary balanced profiles.](arithmetic/ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) — GAP-ARITH-ABC-MIXED-EUCLIDEAN-EXACT-VALUATION-EXTRACTION
+- **mathematical / open:** [For every squarefree d>=1, v>=1, sign +/- and epsilon>0, prove the number of positive integer (u,e) with d^3 u^2 +/- 1 = v^2 e^3 is O_epsilon(d^(1/2+epsilon)v^epsilon), uniformly in d,v. The quadratic-field-to-cubic-Thue descent is an unaudited candidate; class branches, bad primes, units and d=1 remain to be checked.](arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — GAP-ARITH-ERDOS365-FIXED-FIBER-CUBIC-COUNT
+- **mathematical / open:** [For every fixed D>=1 and epsilon>0, bound solutions with squarefree d<=D and v<=X^(1/8) to d^3u^2 +/- 1=v^2e^3 by O_(D,epsilon)(X^(1/8+epsilon)). This follows by summing the fixed-fiber estimate; the estimate remains open.](arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — GAP-ARITH-ERDOS365-BOUNDED-KERNEL-CORNER
+- **mathematical / open:** [Prove that for some delta>0, N(X)=#{n<=X:n,n+1 powerful} is O_epsilon(X^(1/4-delta+epsilon)). The proposed fixed-fiber count only addresses the binding corner; a uniform neighborhood, mirror corner, full dyadic optimization and audited external inputs are missing. The polylogarithmic Erdős #365 goal is still stronger.](arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — GAP-ARITH-ERDOS365-SUBQUARTER-GLOBAL
+- **mathematical / open:** [Prove a quantitative coprime multiplicity, such as at least (log q)^eta for some fixed eta>0 along unbounded q, among non-square powerful integers in (q^2,(q+1)^2). Qualitative unbounded multiplicity already follows by diagonalization from the fixed-m positive-density theorem; its constants give no growth rate.](arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md) — GAP-ARITH-ERDOS942-GROWING-COPRIME-OCCUPANCY
+- **mathematical / open:** [Determine a constant c>0 giving both h(q)<(log q)^(c+o(1)) generally and h(q)>(log q)^(c-o(1)) infinitely often, with the problem convention for interval endpoints. Fixed-m coprime occupancy and existing ordinary lower growth do not settle this matching-rate question.](arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md) — GAP-ARITH-ERDOS942-LOGARITHMIC-RATE
+- **mathematical / open:** [Prove N(X)=#{n<=X:n,n+1 powerful}=O((log X)^C) for some fixed C. A subquarter power bound would be a partial result and does not imply this target.](arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — GAP-ARITH-ERDOS365-POLYLOGARITHMIC-COUNT
+- **verification / open:** [Validate every external theorem used in Plymesser Theorem 1.1 at its k=2 hypotheses, including Stewart, Castryck-Cluckers-Dittmann-Nguyen, Gelfond, Reuss and Heath-Brown; check the exact dyadic range and optimization certificates before importing a subquarter global argument. Existing source reading is not a full independent replay or deep-input audit.](arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — GAP-ARITH-ERDOS365-PLYMESSER-K2-SOURCE-AUDIT
 
 ## Formal verification
 

@@ -507,6 +507,26 @@ no actual root escapes those cells. The Belyi passport, full
 monodromy and formal equimodular curves alone prove none of those
 global SFC obligations.
 
+## Quantitative torus-chain comparison (open)
+
+[Long, *A Resolution-Free Proof of the Duistermaat–van der Kallen
+Nonvanishing Theorem*, Theorems `thm:sublevel` and
+`thm:log-integrability`, Proposition
+`prop:primitive`](https://github.com/long-mathematics/duistermaat-van-der-kallen-nonvanishing/blob/20f13044f15fd445845bf33fe74e24c3a7424598/duistermaat_van_der_kallen_nonvanishing.tex)
+proves an \(O(\varepsilon^{1/D})\) holomorphic-volume sublevel bound on
+bounded semialgebraic families, integrability of the logarithmic form on
+torus chains under Newton-polytope interiority, and an endpoint primitive
+with a power-law bound. To test a transfer to the present active-cycle
+and global-error problem, first exhibit one *actual* chain in the
+required semialgebraic form with fixed complexity, a bounded relevant
+Laurent polynomial on that chain, and stable interiority of its Newton
+polytope. Then check that its form, dimension and degeneration match
+the cited hypotheses. The source distinguishes smooth ODE transport of
+homology classes from semialgebraic representatives; the former does not
+supply the latter. It gives no numerical constants or first-nonzero-moment
+bound, hence no explicit SFC cutoff. This is a targeted source reading,
+not a verified transfer or a replay of its Lean development.
+
 ## Evidence and source scope
 
 The checker reconstructs exact rational identities, literal resultants

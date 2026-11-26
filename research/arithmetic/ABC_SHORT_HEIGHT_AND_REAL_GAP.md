@@ -185,6 +185,32 @@ For \(N=\lceil A'_m R^j\rceil\) with \(A'_m\) large in terms of \(m\), the sum o
 
 At least one \(V\)-coefficient of \(G\) is a nonzero polynomial in the dominant coordinates \(\mathbf t\). Its zero locus bounds the simultaneous vanishing locus of the coefficients on the narrow component, so the image has smaller dimension. Descend there. If \(G\) is independent of \(V\) the same holds on its vanishing locus. Otherwise split the remaining pairs by the order of the \(V\)-root of \(G\). On that subbranch write \(G_r=\partial_V^{r-1}G\), so \(G_r=0\) and \(\partial_VG_r\ne0\). The rows of \((A_i,G_r)\) have full rank. The order \(r\le M\) introduces only constants fixed before \(X\) tends to infinity.
 
+### Collision-energy optimization test (open)
+
+[Long, *Conjugate fibres, certificate rigidity, and irrationality exponents*, Lemma
+“Collision-energy optimization” and the water-filling stability
+remark](https://github.com/long-mathematics/openai-math-extensions/blob/bc45a6906e11db8ca737f803058120b1b88fdf3f/papers/04-conjugate-fibres-rigidity/conjugate-fibres-rigidity.tex)
+jointly prices approximation loss and repeated Taylor row types. Its
+completion of squares retains a squared-distance remainder from the
+optimal occupancy profile. The result concerns its own interpolation
+matrix; it does not improve (RUW1) without a new row-type accounting for
+the present mixed determinant.
+
+The bounded test is to fix one dimension \(j\) and the rectangular
+support \((R_i,M)\) above, keep each row's original-to-corrected error
+and each repeated Taylor-type saving separately, and optimize their
+combined determinant exponent. Compare the resulting admissible
+cofactor-width threshold \(E\) with \(c_m\tau/P\) under exactly the same
+denominator-clearing exponent, rank-correction condition, and second
+narrow determinant. Success means a proved strict increase in \(E\) for
+fixed parameters after all those costs; a gain in only the analytic
+minor estimate is insufficient. Long's analytic bound holds for every
+maximal minor, but arithmetic use of the full vector of minors is a
+separate open step. Its aggregate scalar optimization also has a stated
+limitation, so no abc consequence is inferred here. This is a targeted
+primary-source reading, not a replay of the source proof or a new RUW1
+bound.
+
 ### The rank correction and the purely narrow determinant
 
 In the positive torus, close the resulting finite-wide-fiber strata algebraically. The closure of each stratum has dimension at most \(j\). A component with constant exact monomial contributes at most \(F_0\) original tuples. On any other component some maximal minor \(J\) of the rows from \(A_i,G_r\) and the cleared logarithmic differential of \(V\prod x_i^{a_i}\) is generically nonzero. This follows because the vanishing of every such minor would make the logarithmic differential annihilate the tangent space of the component, forcing the monomial to be constant in characteristic zero. Choose a fixed bounded-integer linear combination (with bounds allowed to depend on the algebraic degrees) of the minors nonzero generically on all of these components. The \(J=0\) loci descend after projection to the narrow variables, since each proper exceptional set has dimension at most \(j-1\). Their coefficient heights are immaterial at the next narrow-coordinate reset.

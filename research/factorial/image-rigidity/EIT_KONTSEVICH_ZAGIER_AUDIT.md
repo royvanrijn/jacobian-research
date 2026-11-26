@@ -293,3 +293,31 @@ The high-degree affine-coordinate case above supplies an exact compact-line pres
 For the odd-degree family in VI, the needed input from V is its linear single-chain theorem under the strict interior extremum hypothesis. An audit can focus on V's weighted-phase geometry and irreducibility, strict-extremum detector, and ordinary-point linear specialization. Those inputs would give VI's stated all-dimensional odd-degree family at every nonzero algebraic scale, with arbitrary complex terms below the next-to-top degree. The elliptic quartic family has a separate continued-density detector and separate characteristic-five and finite-coprimality arguments. [Pinned EIT V](https://github.com/long-mathematics/exponential-integral-theorem/blob/92db79eedeb064694ff20e9201d73fc2bc0857f4/papers/05-polynomial-flags/polynomial-flag-exponential-periods.tex), [pinned EIT VI](sources/long-eit-vi-current.tex).
 
 Ordinary univariate binomial SFC is complete at every starting order by the [all-order theorem](ORDINARY_BINOMIAL_RESIDUAL_REGION.md). Factorial in dimension at least three and unrestricted Strong Factorial remain open.
+
+## Open elliptic recurrence coprimality target in EIT VI
+
+In the pinned EIT VI, Proposition `prop:recurrence` defines integer
+polynomial pairs
+\[
+ W_0=(1,0),\quad W_1=(1,-2),\qquad
+ W_{k+2}=2W_{k+1}+[3-6(2k+1)t]W_k
+       +4ktW_{k-1}-36k(k-1)t^2W_{k-2},
+\]
+with zero-prefactor terms omitted. Proposition `prop:finite` checks
+\(\gcd_{\mathbb Q[t]}(W_{k,1},W_{k,2})=1\) for \(0\le k\le100\) by exact
+computation. The all-\(k\) characteristic-five theorem covers a
+restricted parameter class, not all algebraic scales. The standalone
+open target is to prove this gcd is one for every \(k\ge0\), or produce
+one explicit counterexample. A possible route extends the
+characteristic-five matrix argument to the remaining valuation regime;
+another seeks a resultant invariant of the recurrence. A longer finite
+scan cannot settle the universal statement.
+
+Universal coprimality would remove the exceptional scale set for this
+degree-four elliptic factorial family only after the relevant EIT V
+period-comparison input is audited. It would not close an SFC finite
+window. A common coordinate zero would invalidate this certificate,
+not prove the associated period vanishes. Reuse the existing block-radial
+limit argument here; the separate strict-extremum audit above remains
+the more direct integration task. No full EIT VI Lean build, universal
+gcd proof, or counterexample is claimed.

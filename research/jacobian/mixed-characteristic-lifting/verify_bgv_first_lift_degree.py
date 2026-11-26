@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replay the sharp bounds and the fixed-branch obstruction modulo 81."""
+"""Replay the sharp bounds and the Frobenius-shifted branch obstruction modulo 81."""
 
 from verify_bgv_odd_prime_lifting import (
     ONE,
@@ -143,16 +143,25 @@ def main():
 
     error_81 = mod(quotient(sub(jac(lift_p, lift_q), ONE), 9), 9)
     assert evaluate(error_81, RADIAL_BRANCH_CERTIFICATE, 9) == 3
+    frobenius_monomials = 0
     for i in range(82):
         for j in range(82 - i):
             monomial = {(i, j): 1}
-            assert evaluate(jac(monomial, lift_q), RADIAL_BRANCH_CERTIFICATE, 9) == 0
-            assert evaluate(jac(lift_p, monomial), RADIAL_BRANCH_CERTIFICATE, 9) == 0
+            left = jac(monomial, lift_q)
+            right = jac(lift_p, monomial)
+            assert evaluate(left, RADIAL_BRANCH_CERTIFICATE, 9) == 0
+            assert evaluate(right, RADIAL_BRANCH_CERTIFICATE, 9) == 0
+            if i % 3 == j % 3 == 0:
+                frobenius_monomials += 1
+                assert evaluate(quotient(left, 3), RADIAL_BRANCH_CERTIFICATE, 9) == 0
+                assert evaluate(quotient(right, 3), RADIAL_BRANCH_CERTIFICATE, 9) == 0
+    assert frobenius_monomials == 406
 
     print("Mod 9: cap 80 obstructed on all 6642 correction monomials.")
     print("Mod 9: witness degrees (51, 81), reduction and determinant verified.")
     print("Mod 27: witness degrees (62, 81), reduction and determinant verified.")
-    print("Mod 81: fixed radial mod-9 branch obstructed on all 6806 cap-81 correction monomials.")
+    print("Mod 81: radial and all 3^812 Frobenius-shifted mod-9 choices obstructed at cap 81.")
+    print("The dual kills 6806 regular and 812 divided derivative columns over Z/9.")
 
 
 if __name__ == "__main__":
