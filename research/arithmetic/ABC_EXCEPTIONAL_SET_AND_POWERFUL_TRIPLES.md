@@ -11218,9 +11218,9 @@ For least repair at order \(M=\lceil K/L\rceil\),
 a fixed weighted shift of one repaired summand has
 arbitrarily small normalized fibre cost on private
 pairs with a diffuse marked role. Two exact physical
-shifts give a subpower-in-\(n\) limiting fibre for
-all balanced degree profiles, by a fixed-level
-binomial count. On an exponent-full pair selection
+shifts give fibre count \(n^{2/K}X^\varepsilon\)
+for all balanced degree profiles at small shared
+support, by a fixed-level binomial count. On an exponent-full pair selection
 the primitive summand difference for a diffuse marked
 role cannot remain under any fixed normalized radical
 cap as \(K\) grows. For a composite repair order,

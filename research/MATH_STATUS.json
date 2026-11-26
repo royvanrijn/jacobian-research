@@ -23385,6 +23385,222 @@
           "independent_replay": false,
           "dependency_coverage": "partial",
           "graph_scope_note": "This result has the stated support scope."
+        },
+        {
+          "id": "FACTORIAL-BINARY-QUADRATIC-QUARTER-CRITICAL-NO-GAP-SIX-WINDOW",
+          "title": "Gap-free quarter-critical binary quadratic six-window",
+          "scope": "For every real-valued char0 coefficient field E with v(2)=1, naturally integral binary q and nonpolynomial native residue, every real-valued constant extension element k with v(k)=3/4 gives no six consecutive zero factorial moments at any positive start. No coefficient-grid or positive-gap hypothesis.",
+          "state": "proved",
+          "canonical_source": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "scope_limits": [
+            "Exact valued-sector hypotheses only; every positive start.",
+            "No smaller sparse window by deleting monomials.",
+            "Full quadratic SFC,SFC(2),SFC(3) and monic anti gate remain open."
+          ],
+          "dependency_coverage": "partial",
+          "proof_type": "written_native_valuation_and_exact_integer_coefficient_argument",
+          "evidence": [
+            "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md"
+          ],
+          "checker": null,
+          "artifact_hash": null,
+          "review_status": "internal-review-pending",
+          "formal_verification": false,
+          "external_review": false,
+          "independent_replay": false,
+          "worldwide_priority": false
+        },
+        {
+          "id": "FACTORIAL-BINARY-QUADRATIC-NONPOLYNOMIAL-COUNTEREXAMPLE-CRITICAL-L8-FRONTIER",
+          "title": "Necessary critical radius at least seven eighths",
+          "scope": "Under natural integrality and nonpolynomial native residue over real-valued fields, any actual six-zero positive block necessarily has a completely canceled single-pole detector and critical v(k)=1-1/L with L a power of two>=8, hence delta>=7/8. This is a necessary restriction only.",
+          "state": "proved",
+          "canonical_source": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "scope_limits": [
+            "Exact valued-sector hypotheses only; every positive start.",
+            "No smaller sparse window by deleting monomials.",
+            "Full quadratic SFC,SFC(2),SFC(3) and monic anti gate remain open."
+          ],
+          "dependency_coverage": "partial",
+          "proof_type": "written_native_valuation_and_exact_integer_coefficient_argument",
+          "evidence": [
+            "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md"
+          ],
+          "checker": null,
+          "artifact_hash": null,
+          "review_status": "internal-review-pending",
+          "formal_verification": false,
+          "external_review": false,
+          "independent_replay": false,
+          "worldwide_priority": false
+        },
+        {
+          "id": "FACTORIAL-BINARY-CUBE-RESIDUE-FOUR-TIMES-ODD-GRID-FINITE-CRITICAL-TAIL",
+          "title": "Finite high-critical tail on four-times-odd cube grids",
+          "scope": "For cube native residue and coefficient grid1/(4u),u odd, J2u,B least power2>=6u, every critical radius1-1/L with power2 L>=2B admits no six-zero positive block, even for constants in real-valued extensions. Remaining finitely many critical radii and polynomial residues are not closed.",
+          "state": "proved",
+          "canonical_source": "factorial/image-rigidity/BINARY_QUADRATIC_FOUR_TIMES_ODD_GRID_FINITE_CRITICAL_TAIL.md",
+          "scope_limits": [
+            "Exact valued-sector hypotheses only; every positive start.",
+            "No smaller sparse window by deleting monomials.",
+            "Full quadratic SFC,SFC(2),SFC(3) and monic anti gate remain open."
+          ],
+          "dependency_coverage": "partial",
+          "proof_type": "written_native_valuation_and_exact_integer_coefficient_argument",
+          "evidence": [
+            "factorial/image-rigidity/BINARY_QUADRATIC_FOUR_TIMES_ODD_GRID_FINITE_CRITICAL_TAIL.md"
+          ],
+          "checker": null,
+          "artifact_hash": null,
+          "review_status": "internal-review-pending",
+          "formal_verification": false,
+          "external_review": false,
+          "independent_replay": false,
+          "worldwide_priority": false
+        },
+        {
+          "id": "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-FIVE-WINDOW",
+          "title": "Polynomial one-axis large-constant five-window",
+          "scope": "For q=X²/2+betaXY+gammaY²/2+dX+eY with beta residue1,d nonunit,0<sigma=v(gamma)<v(e),and delta=v(k)>=1+sigma, q+k has no five consecutive zero factorial moments at any positive start. Arbitrary ramification; d/e may be zero under the stated valuation conventions.",
+          "state": "proved",
+          "canonical_source": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "scope_limits": [
+            "Exact valued-sector hypotheses only; every positive start.",
+            "No smaller sparse window by deleting monomials.",
+            "Full quadratic SFC,SFC(2),SFC(3) and monic anti gate remain open."
+          ],
+          "dependency_coverage": "partial",
+          "proof_type": "written_native_valuation_and_exact_integer_coefficient_argument",
+          "evidence": [
+            "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md"
+          ],
+          "checker": null,
+          "artifact_hash": null,
+          "review_status": "internal-review-pending",
+          "formal_verification": false,
+          "external_review": false,
+          "independent_replay": false,
+          "worldwide_priority": false
+        },
+        {
+          "id": "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-ACTUAL-SUPPORT",
+          "title": "Actual-support SFC in the polynomial one-axis sector",
+          "scope": "Under the preceding polynomial-sector hypotheses and at least one nonzero linear coefficient, the actual support is5 or6 and q+k satisfies its actual-support strong factorial window. Both-zero-linears support4 is excluded from this conclusion; no unrestricted binary quadratic/SFC2/SFC3 claim.",
+          "state": "proved",
+          "canonical_source": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "scope_limits": [
+            "Exact valued-sector hypotheses only; every positive start.",
+            "No smaller sparse window by deleting monomials.",
+            "Full quadratic SFC,SFC(2),SFC(3) and monic anti gate remain open."
+          ],
+          "dependency_coverage": "partial",
+          "proof_type": "written_native_valuation_and_exact_integer_coefficient_argument",
+          "evidence": [
+            "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md"
+          ],
+          "checker": null,
+          "artifact_hash": null,
+          "review_status": "internal-review-pending",
+          "formal_verification": false,
+          "external_review": false,
+          "independent_replay": false,
+          "worldwide_priority": false
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS",
+          "title": "Rational algebraic height curves at opposed rational-bias contacts",
+          "state": "proved",
+          "scope": "For a fixed core, two opposed fixed-gap types and fixed signed gap, every positive rational-bias branch with infinitely many ordinary collisions lies on a rational algebraic height curve. Multiple and boundary contacts are included.",
+          "canonical_source": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_AUXILIARY_POLYNOMIAL_RATIONAL_BIAS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The written proof covers the stated hypotheses and range."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-OPPOSED-AX-BRANCH-RANK",
+          "title": "Common-factor degree on opposed factorial height branches",
+          "state": "proved",
+          "scope": "At every terminal, sufficiently high two-type opposed profiles of a fixed core, gaps and signed gap are collision-free near positive interior rational-bias contacts. At irrational interior bias their only possible gcd degree is two at an exact collision. Accumulation at a positive boundary contact needs at least two independent character relations.",
+          "canonical_source": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_AX_BRANCH_RANK.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The written proof covers the stated hypotheses and range."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-OPPOSED-ALGEBRAIC-CURVE-PRIME-GRID",
+          "title": "Prime restrictions on algebraic opposed height curves",
+          "state": "proved",
+          "scope": "An exact divisibility condition on prescribed rational height curves for two opposed fixed-gap types of fixed signed gap. It gives a computable all-degree height threshold on fixed rational polynomial trajectories with strictly smaller tall-row gap and sufficiently large counts.",
+          "canonical_source": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_ALGEBRAIC_CURVE_PRIME_GRID.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The written proof covers the stated hypotheses and range."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-EQUIVARIANT-DEGREE-ORBIT-WINDOWS",
+          "title": "All-order factorial windows with one coordinate orbit at each degree",
+          "state": "proved",
+          "scope": "For any fixed support whose occupied degrees each form a single coordinate-permutation orbit, sufficiently large common dilation gives a window of length e times the number of occupied degrees for coefficients equivariant under a character of order e. This is at most the actual support size.",
+          "canonical_source": "factorial/image-rigidity/SFC_EQUIVARIANT_DEGREE_ORBIT_WINDOWS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The written proof covers the stated hypotheses and range."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-COMMON-SCALAR-SADDLE-OBSTRUCTION",
+          "title": "Necessary conditions for an exact shared scalar saddle correction",
+          "state": "proved",
+          "scope": "With unrestricted block coefficients, including two-column restrictions, a shared active-face correction in the stated scalar form forces the two face conditions and equality of the aggregate ratio measures. The same conditions suffice at large common dilation.",
+          "canonical_source": "factorial/image-rigidity/SFC_COMMON_SCALAR_SADDLE_OBSTRUCTION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The written proof covers the stated hypotheses and range."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-TERNARY-CUBIC-TRIADIC-BOUND",
+          "title": "Uniform three-adic bounds for the shifted noncollinear cubic gate",
+          "state": "proved",
+          "scope": "For a cubic Gaussian gate with nonzero cubic coefficient, every triple of consecutive zero forms satisfies the two three-adic valuation bounds in equation (1). The centered case and all rational triples are excluded at every positive start.",
+          "canonical_source": "factorial/image-rigidity/SFC_TERNARY_CUBIC_TRIADIC_BOUND.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The written proof covers the stated hypotheses and range."
         }
       ],
       "open_questions": [
@@ -23705,7 +23921,8 @@
         "Pure-cross phases BXY+dX+eY with nonzero Bde satisfy every three-window when B2/(de) is transcendental or has a real algebraic conjugate; arbitrary coefficients are covered at starts1,2,3. Any remaining counterexample has an algebraic ratio with no real conjugates and middle index n>=5. Bessel Wronskian and exact compressed-matrix energy are separate proved mechanisms; full binary-quadratic SFC and SFC2/SFC3 remain open.",
         "Natural binary quadratic constant shifts satisfy an all-start six-window when the native residue has two geometric poles, or when it is nonpolynomial and the nonconstant coefficient value grid has denominator not divisible by four. Odd grids give a stronger five-window. Dense five/six-support phases in these local sectors satisfy their actual-support SFC; a remaining nonpolynomial six-zero counterexample must have higher-critical constant valuation, complete single-pole cancellation, and coefficient-grid denominator divisible by four. These necessary conditions do not assert a counterexample. Unrestricted all-start binary-quadratic SFC, SFC(2), and SFC(3) remain open.",
         "Naturally integral binary quadratics with nonpolynomial native residue and coefficient value group contained in one-quarter integers now have an all-constant six-window at every positive start. Dense five/six-support phases in this local sector satisfy actual-support SFC. The proof separates one-pole classification, the quarter-gap weighted-native contradiction, the L8 sixth-power support obstruction, and L>=16 native Taylor exclusion. A remaining nonpolynomial counterexample lies beyond actual quarter-grid containment; for a finite Q2 coefficient field with minimal ramification e it requires4|e and e>=8, not8|e. Polynomial residues, arbitrary finer grids, smaller sparse critical windows, full quadratic SFC, SFC(2), and SFC(3) remain open.",
-        "Pure-cross binary phases BXY+dX+eY with Bde nonzero have a nonzero factorial moment in every length-three block ending at an odd prime, and at every start1 through5, over all characteristic-zero fields. Noncentral prime resonances use an Eisenstein factor and a formal characteristic-p discriminant fold count; the central case uses the existing Robin theorem. A remaining counterexample must start>=6, have a non-odd-prime terminal, and retain the previously proved algebraic/no-real-conjugate cross-ratio obstruction. This does not assert a counterexample or close arbitrary-start pure-cross, full binary quadratic SFC, SFC(2), SFC(3), or the old H gate."
+        "Pure-cross binary phases BXY+dX+eY with Bde nonzero have a nonzero factorial moment in every length-three block ending at an odd prime, and at every start1 through5, over all characteristic-zero fields. Noncentral prime resonances use an Eisenstein factor and a formal characteristic-p discriminant fold count; the central case uses the existing Robin theorem. A remaining counterexample must start>=6, have a non-odd-prime terminal, and retain the previously proved algebraic/no-real-conjugate cross-ratio obstruction. This does not assert a counterexample or close arbitrary-start pure-cross, full binary quadratic SFC, SFC(2), SFC(3), or the old H gate.",
+        "A gap-free native four-row argument excludes six consecutive zero moments at constant valuation three quarters whenever the naturally integral binary quadratic has nonpolynomial native residue. A remaining such counterexample must lie at a critical radius at least seven eighths. A separate finite-tail theorem excludes sufficiently high critical radii on grids with 2-part four. A self-contained polynomial-residue one-axis sector with a large constant has a five-window and actual-support SFC for support five or six. These valued-sector results leave unrestricted quadratic SFC, SFC(2), SFC(3), polynomial-residue cases outside the stated sector, and the monic anti gate open."
       ],
       "gap_ids": [
         "FACTORIAL-GENERAL-FC",
@@ -58740,6 +58957,36 @@
           "verification_note": "Written argument with scoped theorem inputs.",
           "dependency_coverage": "partial",
           "graph_scope_note": "PS4. At composite repair order, fix a common overfull tail. An individual cyclotomic factor with outside radical cap n^beta determines both primitive target roots, giving pair price beta+xi+2u with actual shared root radical cap n^xi and original complete fibre price u. Each fixed factor therefore has raw floor 2(1/3−u)−delta on typical pairs of the retained chart at sufficiently large K. Resultants allow addition of a fixed number of these floors."
+        },
+        {
+          "id": "ERDOS-364-GLOBAL-SIX-OVER-TWENTY-FIVE",
+          "title": "The 6/25 counting bound via averaged pair components",
+          "state": "partial",
+          "scope": "Using the stated fixed-shift pair estimates, C(X),F(X)=O_epsilon(X^(6/25+epsilon)). The averaged pair route counts degree-ten components with large leading forms directly and bounds intervals with small leading forms by their boundary directions. An independent joint route would follow from the open survivor collision or mean-cell bound.",
+          "canonical_source": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [
+            "arithmetic/sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf",
+            "arithmetic/sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf"
+          ],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written averaged proof and internal checks of source statements, coefficients and exponent margins. Fixed-shift pair statements remain explicit imported premises.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Using the stated fixed-shift pair estimates, C(X),F(X)=O_epsilon(X^(6/25+epsilon)). The averaged pair route counts degree-ten components with large leading forms directly and bounds intervals with small leading forms by their boundary directions. An independent joint route would follow from the open survivor collision or mean-cell bound.",
+          "bounds": [
+            {
+              "quantity": "consecutive powerful centers",
+              "domain": "All positive powerful triples n-1,n,n+1 with 2<=n<=X.",
+              "sense": "upper",
+              "expression": "O_epsilon(X^(6/25+epsilon))",
+              "units": "count"
+            }
+          ]
         }
       ],
       "open_questions": [
@@ -59270,6 +59517,12 @@
           "kind": "mathematical",
           "question": "Can the coupled count of distinct surviving fundamental centers in common cells reach 142/525 at width exponent 11/105?",
           "source": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md"
+        },
+        {
+          "node": "GAP-ERDOS-364-POINTWISE-ELLIPTIC-LIFT",
+          "kind": "mathematical",
+          "question": "Can the averaged degree-ten saving be strengthened to the pointwise elliptic estimate?",
+          "source": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md"
         }
       ],
       "scope_notes": [
@@ -59409,7 +59662,7 @@
         "The coefficient-aware low-product theorem does not improve unrestricted1/4; actual-support capacity has only a one-way sufficient bridge, not a converse or unconditional estimate.",
         "The coherent-cycle33/134 theorem is unconditional for all positive3-full prescribed sums, including noncoprime original values. Its primitive coefficient theorem is uniform. The stronger actual middle-carrier capacity remains an independent OPEN sufficient condition; there is no converse from the representation saving.",
         "For every fixedk>=3 the explicit all-target prescribed-sum bound is33/(33k+35), with saving2/((k+1)(33k+35)) below1/(k+1). Primitive positive coefficients are uniform; original noncoprime values use exact gcd normalization. No coefficient1-to-uniform-primitive converse or carrier-capacity implication is asserted.",
-        "Erdos #364 uses consecutive integers. The nonfundamental exponent 1/6 is elementary, and 293/3660 and global 293/1220 use explicit preprint inputs. The joint determinant covers all dyadic boxes. At width exponent 11/105, the 6/25 target uses only the strict near-binding fundamental boxes and the collision exponent 142/525 after removing the counted component classes, which include averaged degree-22 curves, geometrically rational curves and binomial surfaces."
+        "Erdos #364 uses consecutive integers. The nonfundamental exponent 1/6 is elementary, and 293/3660 and the global 6/25 count use explicit preprint inputs. The averaged pair route to 6/25 uses degree-ten leading forms and the boundary to count exceptional intervals. The separate joint surface cover still has a collision estimate open, with second determinants available for surfaces with a curve projection."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -59542,7 +59795,8 @@
         "GAP-HL2-PRIME-COUNTING-SUBADDITIVITY",
         "GAP-ARITH-ABC-ONE-TARGET-MINIMAL-REPAIR-STRICT-SAVING",
         "GAP-ERDOS-364-JOINT-SURFACE-POINT-COUNT",
-        "GAP-ERDOS-364-COUPLED-COLLISIONS"
+        "GAP-ERDOS-364-COUPLED-COLLISIONS",
+        "GAP-ERDOS-364-POINTWISE-ELLIPTIC-LIFT"
       ],
       "scope_note": "This family bound allows all integer degrees but excludes arbitrary alternative fraction witnesses and transformed Pade sequences. Its uniform height and reduced-congruence gates eventually force d<=6; no bound for the full K_N(T) follows."
     },
@@ -204303,7 +204557,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Radical and powerfulness scopes"
           }
         ]
@@ -204321,7 +204575,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "The limit of the six-index projection"
           }
         ]
@@ -204339,7 +204593,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Exact optimization and fixed offsets"
           }
         ]
@@ -204394,7 +204648,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Opening and Radical and powerfulness scopes"
           }
         ]
@@ -204432,7 +204686,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Exceptional-set estimates and dyadic coordinates"
           },
           {
@@ -204456,7 +204710,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Exceptional-set estimates and dyadic coordinates"
           }
         ]
@@ -204474,7 +204728,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Replay of the 19 November modulus-locking certificate"
           }
         ]
@@ -204817,7 +205071,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Exceptional-set estimates and dyadic coordinates, Carella v3"
           }
         ]
@@ -206526,7 +206780,7 @@
           },
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Exceptional-set improvement from grouped roots"
           },
           {
@@ -206572,7 +206826,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Using all higher coordinates of the largest letter"
           }
         ]
@@ -206590,7 +206844,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Using all higher coordinates of the largest letter"
           }
         ]
@@ -207620,7 +207874,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A matching order for the Fourier and two-group estimates"
           }
         ]
@@ -213311,7 +213565,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "One possible high-degree coordinate per letter"
           }
         ]
@@ -213329,7 +213583,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Two-tall strip bound"
           }
         ]
@@ -213347,7 +213601,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "The leading coefficient for whole-coordinate bounds"
           }
         ]
@@ -214585,7 +214839,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A strict small-budget saving for two tall powers and a short letter"
           }
         ]
@@ -214603,12 +214857,12 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A strict small-budget saving for a common high degree"
           },
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Refining the common-degree exponent to \\(4/9\\)"
           }
         ]
@@ -214626,7 +214880,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A \\(3/7\\) small-budget bound with a short letter"
           }
         ]
@@ -214987,7 +215241,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "An exact curve with many points in one class"
           }
         ]
@@ -215700,7 +215954,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Height concentration and prime roots near the half bound"
           }
         ]
@@ -215718,7 +215972,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A partial-power modulus for clustered high degrees"
           }
         ]
@@ -215736,7 +215990,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "An affine surface after fixing a complete letter"
           }
         ]
@@ -215754,7 +216008,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Releasing four roots on three letters"
           }
         ]
@@ -215772,7 +216026,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Radical shares in near-half boxes"
           }
         ]
@@ -215790,7 +216044,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A uniform small-budget exponent below one half"
           }
         ]
@@ -215808,7 +216062,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Releasing a bounded number of high-degree coordinates"
           }
         ]
@@ -215862,7 +216116,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A three-point cover with a p-group, Belyi §4 and its forward direction"
           }
         ]
@@ -215880,7 +216134,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Rank over bounded-degree Galois \\(p\\)-extensions"
           }
         ]
@@ -215898,7 +216152,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A uniform count of fields and points"
           }
         ]
@@ -215916,7 +216170,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A three-point cover with a p-group"
           }
         ]
@@ -215934,7 +216188,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "For the finite projected program"
           }
         ]
@@ -216900,7 +217154,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Maps to elliptic curves"
           }
         ]
@@ -216918,7 +217172,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Uniform rank and point bounds for the two twist families"
           }
         ]
@@ -216936,7 +217190,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Summation over residual radicals"
           }
         ]
@@ -217008,7 +217262,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A fixed-target surface with a cubic factor and a quartic power"
           }
         ]
@@ -217026,7 +217280,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A small-budget coefficient of \\(3/7\\)"
           }
         ]
@@ -217081,7 +217335,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A diagonal surface with a cubic power and two quartic powers"
           }
         ]
@@ -217418,7 +217672,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Using the short cofactor to count in a lattice"
           }
         ]
@@ -217569,7 +217823,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A uniform fixed-coefficient estimate"
           }
         ]
@@ -217587,7 +217841,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Summing the fixed-coefficient estimate"
           }
         ]
@@ -217605,7 +217859,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Square and odd prime powers"
           }
         ]
@@ -217623,7 +217877,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A uniform fixed-coefficient estimate"
           }
         ]
@@ -217641,7 +217895,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Summing the fixed-coefficient estimate"
           }
         ]
@@ -217659,7 +217913,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Summing the fixed-coefficient estimate"
           }
         ]
@@ -217677,7 +217931,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Square and odd prime powers"
           }
         ]
@@ -217695,7 +217949,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Square and odd prime powers"
           }
         ]
@@ -217713,7 +217967,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Small-coefficient determinant-one families"
           }
         ]
@@ -217731,7 +217985,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A support correction in a consecutive pair"
           }
         ]
@@ -217842,7 +218096,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A graph count with two or three prime roots"
           }
         ]
@@ -217860,7 +218114,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Numerical height zero on the short letter"
           }
         ]
@@ -218985,7 +219239,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Averaging and the finite affine form"
           }
         ]
@@ -219003,7 +219257,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Averaging and the finite affine form"
           }
         ]
@@ -219021,7 +219275,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Averaged full \\((2,3,6)\\) count with a Mordell height lower bound"
           }
         ]
@@ -219039,7 +219293,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A one-class-group bound from the rational three-isogeny"
           }
         ]
@@ -219057,7 +219311,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "The determinant at high precision"
           }
         ]
@@ -219075,7 +219329,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A real short-strip estimate with a free low cofactor"
           }
         ]
@@ -219093,7 +219347,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "The short-height-zero bound \\(d\\le11/27\\)"
           }
         ]
@@ -219129,7 +219383,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A modulus of half the available mass"
           }
         ]
@@ -219705,7 +219959,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Making the low coefficient short in anatomic boxes"
           }
         ]
@@ -220538,7 +220792,7 @@
           },
           {
             "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-            "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+            "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
             "locator": "Fixed terminal scopes and the absolute eventual cutoff"
           },
           {
@@ -228401,7 +228655,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "A radical-count contradiction to the claimed smooth-number lower bound"
           }
         ]
@@ -232871,7 +233125,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Scope of the few-prime sum-product approach"
           }
         ]
@@ -233076,7 +233330,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "Residual obstruction"
           }
         ]
@@ -233469,7 +233723,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-            "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+            "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
             "locator": "Corollary following the positive-curvature theorem"
           }
         ]
@@ -243170,7 +243424,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-            "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+            "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
             "locator": "The unrestricted small-budget obligation"
           },
           {
@@ -243180,7 +243434,17 @@
           },
           {
             "path": "arithmetic/ABC_EISENSTEIN_NORM_POWER_DEFECTS.md",
-            "sha256": "31fbb94f10c57b0efab771239b65c321eaf683eff41a4576484e2767e42f7337",
+            "sha256": "07279d040c86a9aa59c86692b2ed09f1b9b197b8b7349c384401da4c49bf707a",
+            "locator": "EN3. Retaining a small radical of norm defects"
+          },
+          {
+            "path": "arithmetic/ABC_EISENSTEIN_NORM_POWER_DEFECTS.md",
+            "sha256": "07279d040c86a9aa59c86692b2ed09f1b9b197b8b7349c384401da4c49bf707a",
+            "locator": "EN3. Retaining a small radical of norm defects"
+          },
+          {
+            "path": "arithmetic/ABC_EISENSTEIN_NORM_POWER_DEFECTS.md",
+            "sha256": "07279d040c86a9aa59c86692b2ed09f1b9b197b8b7349c384401da4c49bf707a",
             "locator": "EN3. Retaining a small radical of norm defects"
           }
         ]
@@ -253667,7 +253931,12 @@
           },
           {
             "path": "arithmetic/ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md",
-            "sha256": "3bec0d3584d49481b43727821d88c51a5f2f647f889af56df0160bbcc8ef70f5",
+            "sha256": "a5c19434e2328150dfadbf82ea439c451ce6f78fda498f4dae92f68de5e57ab6",
+            "locator": "PS2. Bounded-radical primitive shifts are power-small"
+          },
+          {
+            "path": "arithmetic/ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md",
+            "sha256": "a5c19434e2328150dfadbf82ea439c451ce6f78fda498f4dae92f68de5e57ab6",
             "locator": "PS2. Bounded-radical primitive shifts are power-small"
           }
         ]
@@ -255453,7 +255722,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Pell descent and minimal repair"
           }
         ]
@@ -255471,7 +255740,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "The only maximizer of the pairwise bound"
           },
           {
@@ -255481,7 +255750,7 @@
           },
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Point count required on the surfaces"
           }
         ]
@@ -255499,7 +255768,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "A joint determinant in all dyadic boxes"
           }
         ]
@@ -255601,7 +255870,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Transfers from the preprint counting statements"
           }
         ]
@@ -255614,13 +255883,18 @@
         "topic": "arithmetic",
         "origin": "internal",
         "evidence_type": "written_proof",
-        "scope": "At equal width exponent 11/105, after removing the separately counted points on boundedly many affordable components per cell, bound the total remaining candidates by O_epsilon(X^(6/25+epsilon)) in each box with all pair sums in (14/45,16/45). A uniform or mean O_epsilon(X^(16/525+epsilon)) count per cell suffices. These are fundamental candidates. Keep both shifts, squarefreeness and primitivity.",
+        "scope": "Independent joint route at width exponent 11/105: after removing the separately counted components, bound surviving candidates by O_epsilon(X^(6/25+epsilon)) in each box with all pair sums in (14/45,16/45). The second determinant cuts shared surfaces with a curve projection in b, a or c=ba. The remaining geometry consists of shared surfaces dominating all three blocks and positive-genus curves of lift degrees 12 through 21.",
         "dependency_coverage": "partial",
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Point count required on the surfaces"
+          },
+          {
+            "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
+            "locator": "Second determinant for surfaces with a curve projection"
           }
         ],
         "gap_kind": "mathematical"
@@ -255946,29 +256220,11 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Point count required on the surfaces"
           }
         ],
         "gap_kind": "mathematical"
-      },
-      {
-        "id": "ERDOS-364-GLOBAL-SIX-OVER-TWENTY-FIVE",
-        "title": "Reduction of the 6/25 counting target to fundamental cells",
-        "kind": "claim",
-        "status": "open",
-        "topic": "arithmetic",
-        "origin": "internal",
-        "scope": "The fixed-shift pairwise inputs, the separately counted component classes and the open residual box count at width exponent 11/105 imply C(X),F(X)=O_epsilon(X^(6/25+epsilon)), a saving 1/6100 over 293/1220. Equality boxes are covered by the original pairwise estimates.",
-        "dependency_coverage": "partial",
-        "evidence_type": "written_proof",
-        "sources": [
-          {
-            "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
-            "locator": "Point count required on the surfaces"
-          }
-        ]
       },
       {
         "id": "ERDOS-364-SURFACE-DIVISIBILITY-FILTER",
@@ -255983,7 +256239,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "A divisibility bound on shared surfaces"
           }
         ]
@@ -256001,7 +256257,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Averaging the reduced lattice heights"
           }
         ]
@@ -256038,7 +256294,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Averaging the reduced lattice heights"
           }
         ]
@@ -256056,7 +256312,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Rational curves with controlled parametrizations"
           }
         ]
@@ -256164,7 +256420,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Pair-ratio separation and binomial components"
           }
         ]
@@ -256200,7 +256456,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-            "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
             "locator": "Polynomial-height normalizations from candidate points"
           }
         ]
@@ -256849,10 +257105,435 @@
         "sources": [
           {
             "path": "arithmetic/ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md",
-            "sha256": "3f67fc935fd783f7a25f4f50da4a80e61f2e09b284a203d7b987a8f6c1ce9d0c",
+            "sha256": "7b1c752e853587f64e01755b83469fadbed93822a8ff2b82a2cf0eb69e3fc4ab",
             "locator": "A fixed integer supports every root on a low-degree component"
           }
         ]
+      },
+      {
+        "id": "SRC-QFS-GAP-FREE-QUARTER-NECESSARY-PROFILE",
+        "title": "Written gap-free quarter necessary profile",
+        "scope": "Complete gap-free quarter-critical necessary profile, exact native small prefix, monic shifted-factor argument, all-H parity jets, finite perturbation invariant and one-sixth coefficient value. General native/critical facts and the optional grid obstruction are separately imported. No quantitative positive coefficient gap.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_ONE_SIXTH_COEFFICIENT_FRONTIER.md",
+            "sha256": "f2a474c961da8a3f2afd47de838aea7009b44c40f94c726cb30744b310fd9c18",
+            "locator": "Theorem, Sections1--6, equations(1)--(14)"
+          }
+        ]
+      },
+      {
+        "id": "SRC-QFS-FOUR-TIMES-ODD-GRID-FINITE-TAIL",
+        "title": "Written finite high-critical tail",
+        "scope": "Cubic-residue finite critical-tail theorem on coefficient grid1/(4u), u odd. Finite deformation-degree periodicity and saturated sixth-power anchors are proved here; native residue/integrality and critical unit-anchor multiplicity are explicit imported premises.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_QUADRATIC_FOUR_TIMES_ODD_GRID_FINITE_CRITICAL_TAIL.md",
+            "sha256": "858a635c0aadcbdb7b3415a7a72ecae54f6bc0c27aab2178706f6e61b2b60e1f",
+            "locator": "Theorem, Sections1--3, equations(1)--(7)"
+          }
+        ]
+      },
+      {
+        "id": "SRC-QFS-POLYNOMIAL-ONE-AXIS-SECTOR",
+        "title": "Written polynomial one-axis sector",
+        "scope": "Self-contained naturally integral polynomial-residue one-axis sector. Under alpha1,beta residue1,d nonunit,0<v(gamma)<v(e),v(k)>=1+v(gamma), actual moments have no five-zero block. Both-zero-linears actual support4 is not asserted closed by this five-window.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+            "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+            "locator": "Theorem, Sections1--5, equations(1)--(13)"
+          }
+        ]
+      },
+      {
+        "id": "SRC-QFS-NO-GAP-QUARTER-SIX-WINDOW",
+        "title": "Written gap-free quarter six-window",
+        "scope": "Gap-free radius3/4 six-window using the preceding necessary profile plus exact integral pi parameters, four complete native rows modulo pi16, and a unit-pivot contradiction. Final necessary L>=8 corollary additionally imports the old GENERAL constant frontier, not only a discrete-grid corollary.",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+            "sha256": "411a918c5062d46bc9ca73720999803a9d6c8742204823621501de9d0e4a3d45",
+            "locator": "Theorem, Sections1--4, equations(1)--(9); Section5 Corollary"
+          }
+        ]
+      },
+      {
+        "id": "QFS-QUARTER-RESIDUE-START-AND-ACTUAL-SMALL-PREFIX",
+        "title": "Actual quarter-critical start and finite native prefix",
+        "scope": "For naturally integral binary q with nonpolynomial native residue, an actual six-zero block at v(k)=3/4 forces n=8H+2 and, up to variable swap and whole-phase division by a coefficient-field unit, d1,alpha/e residue0,beta/gamma residue1,C=R1 residue1. In FULL O/2O its six true small prefix equations give R2=lambda+kC,R3=lambdaC,R4=U,R5=UC,R6=UR2,R7=UR3. No quarter-grid or positive-gap hypothesis.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-GAP-FREE-MONIC-FACTOR-NATIVE-PROFILE",
+        "title": "Shifted monic cancellation yields the gap-free profile",
+        "scope": "Under the preceding hypothetical quarter block, set Z1+CT,hk/C,l=lambda/C². Over O/2O, P=(Z+h)K; evaluating the actual monic root gives U=C4, and cancelling a monic factor gives the displayed coefficient comparisons. They force e=lambda,alpha=(C+k)(C-1)²,beta1+lambda+k,gamma=C²(C+k) modulo2O without a coefficient gap.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-ARBITRARY-START-PARITY-TARGETS-WITH-TRUE-U",
+        "title": "Uniform all-start small-jet targets retain the true U",
+        "scope": "For n8H2 in the hypothetical gap-free profile, with h=Hmod2 and true U=k4/8, the actual small E_s satisfy E4-2hU,E5-2hU(C+k),E6,E7 in4O (also E2,E3). The head/tail reduction uses U a unit and native period four modulo2O; it does not replace U by C4 modulo4 or assume U1 modulo2.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-FINITE-EIGHT-TERM-NATIVE-PERTURBATION-INVARIANT",
+        "title": "Independent finite native invariant polynomial",
+        "scope": "For the stated integral proxy parameters and strict error ideal v>1, the universal integer native formula through r7 gives the complete two representative E6/E7 rows and the eight-term sum 2+t6+t10+t13+t15+t18+k*t12+k*t14. This is a conditional finite polynomial identity, independently source-grounded; no actual individual-moment invariance or coefficient gap is asserted.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-ONE-SIXTH-ACTUAL-COEFFICIENT-FRONTIER",
+        "title": "The actual normalized first native moment has value one sixth",
+        "scope": "A hypothetical nonpolynomial-residue six-zero block at v(k)=3/4, after unit normalization d1, forces v(C-1)=1/6 in the NONCONSTANT coefficient field. The four derivative cancellations make only E6+E7 invariant under2O parameter errors; the finite eight-term identity leaves only2 and(C-1)^6 at the least value.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-HYPOTHETICAL-QUARTER-COEFFICIENT-VALUATIONS-AND-GRID-OBSTRUCTION",
+        "title": "Hypothetical coefficient valuations and optional grid divisibility",
+        "scope": "The same hypothetical block forces v(alpha)=1/3,v(e)=1/2,v(beta-1)=1/2,v(gamma-1)=1/6. Any available coefficient grid1/e0 then has6|e0; together with the explicit old grid obstruction4|e0 it has12|e0. This necessary implication is not an existence seed and is weaker than the separately proved full quarter exclusion.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-INTEGRAL-TWELFTH-ROOT-PARAMETERIZATION",
+        "title": "Exact integral pi parameters retain all original errors",
+        "scope": "Under the actual gap-free hypothetical profile and one-sixth value, adjoining pi12=2 gives C1+pi²tau with tau integral unit. U-C4 in2O forces k=pi9*C+2chi with chi integral. Alpha=(C+k)(C-1)²+2A,beta1+lambda+k+2B,e=lambda+2D,gamma=C-alpha-beta-1-e exactly represent every original coefficient; no coefficient-grid bound or fourth error variable is discarded.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-PI16-FOUR-UNIVERSAL-NATIVE-ROWS",
+        "title": "Four complete native rows modulo pi sixteen",
+        "scope": "In the universal polynomial ring with pi12=2 modulo pi16, substitute the exact integral parameters. For corrected F4=E4-2hU,F5=E5-2hU(C+k),F6=E6,F7=E7, their /2 rows modulo pi4 are h+chi4+tau6+pi3+(1+pi²tau)A; (1+h+chi4)(1+pi²tau)+A; 1+tau6+(1+pi²tau)A; A. The written792-term factorial formula and short a0..a7 table retain true U; B,D cancel. This finite conditional identity is proved independently of actual quarter zeros.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-FOUR-ROW-UNIT-PIVOT-QUARTER-CONTRADICTION",
+        "title": "Four-row elimination excludes the quarter radius without a gap",
+        "scope": "For a hypothetical actual quarter-critical six-zero block, uniform parity targets and exact integral pi parameters allow the four universal rows to be divided by2 and reduced modulo pi4. They give A0,tau6=1,chi4=1+h and then impossible pi3=0modpi4. Only the unit1+pi²tau is divided out; no coefficient spacing or ordinary pivot assumption.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-NECESSARY-REMAINING-CRITICAL-L8-AND-HIGHER",
+        "title": "A remaining nonpolynomial counterexample has critical L at least eight",
+        "scope": "For any naturally integral binary q over a real-valued coefficient field, any actual positive six-zero block with nonpolynomial native residue must retain the old completely canceled single-pole detector condition and have v(k)=1-1/L with a power of two L>=8; hence v(k)>=7/8. The old GENERAL frontier, not merely its conditional discrete-grid corollary, supplies the all-valuations necessity. No existence or8-divides-ramification claim.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-FINITE-DEFORMATION-DEGREE-NATIVE-PERIODICITY",
+        "title": "Finite deformation degree gives uniform eventual native periodicity",
+        "scope": "For cube residue and grid1/(4u),u odd, put J2u,B least power2>=6u. The universal mod2/I^J deformation expansion gives R=A/(1+T^B),degA<=B+J-2, hence v(R_(r+B)-R_r)>=1/2 for all r>=J-1 after specialization. Only finite deformation degree and coefficientwise series operations are used.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-CRITICAL-GRID-SIXTH-POWER-FOUR-ANCHOR-SATURATION",
+        "title": "A high critical six-block saturates four sixth-power anchors",
+        "scope": "Under the finite-tail theorem hypotheses J2u,B the least power of two>=6u and L>=2B (hence L>=16), at delta1-1/L on grid1/(4u),u odd, a cube-residue six-zero block forces n2mod4 by the old unit-anchor multiplicity. For N=n5, terminal width>=3L/2 and native unit c2 bounds M<1. The locally proved candidate span<=3L/2 saturates: q odd,t>=L/2,multiplicity6,minimal factor widthL/4, binomial initial factor and four sixth-power anchors0,L/2,L,3L/2. Thus vR_(t+L)=M and vR_(t+L/2)=M-1/2 with1/2<M<1.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-FINITE-TAIL-PERIODICITY-VERSUS-MIDDLE-ANCHOR",
+        "title": "Eventual periodicity contradicts the forced middle anchor",
+        "scope": "With J2u,B least power2>=6u and L>=2B, the two saturated native anchor indices are at leastJ-1 and differ by a multiple of B. Periodicity makes their difference valuation>=1/2, while their distinct forced values make it M-1/2<1/2. This excludes only those high critical radii.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-POLYNOMIAL-NATIVE-INTEGRAL-RATIONAL-CONSTANT-CONGRUENCE",
+        "title": "Self-contained polynomial-sector native rational congruence",
+        "scope": "For the one-axis polynomial sector, divided-block counting proves every native Rj integral. The cross factorial c! suppresses c>=2 modulo2O, yielding the exact rational N/D congruence over possibly nonreduced O/2O. Constants delta>=1+sigma alter normalized coefficients only at value>=delta>1. No old CWB theorem is a premise of this self-contained source.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-POLYNOMIAL-UNIT-AXIS-SLOPES-AND-SMALL-AXIS-VALUES",
+        "title": "Unit-axis slopes and the small axis have exact native values",
+        "scope": "Under alpha1,beta residue1,d nonunit,0<sigma=v(gamma)<v(e),delta>=1+sigma, the X-axis moments are units and their consecutive-ratio slopes obey the exact below1 or next-value1 alternatives. The Y-axis moments have value j*sigma; their corrected forcing Cj has the same value. Threshold cancellation and d/e zero conventions are treated.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-POLYNOMIAL-INTERIOR-FORCING-AND-SIGMA-BOUND",
+        "title": "Three actual interior forcing equations bound sigma",
+        "scope": "The cleared adjugate Stein/Euler identity with coefficient V-2kDelta requires no division by D or Delta. Five actual zeros give three weighted native boundary equations; consecutive subtraction and exact axis slopes force d nonzero,sigma<=2v(d),and(n+1)sigma<1. Arbitrary recurrence states or generic ranks are not substituted for actual boundary moments.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-POLYNOMIAL-UNIT-POLE-REMOVAL-FIVE-WINDOW",
+        "title": "Remove the unit pole to exclude five actual zeros",
+        "scope": "Factoring the two exact native quadratics and removing the unit pole leaves three positive-valuation poles. Their complete homogeneous coefficients have lower bound j*sigma and one of every two attains it. A coefficient at n1 or n2 therefore has value<1 on the right of a mod2O identity, while two actual adjacent zeros make the left zero. No analytic series evaluation.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "QFS-POLYNOMIAL-ACTUAL-FIVE-SIX-SUPPORT-SPECIALIZATION",
+        "title": "Five-window implies actual support five or six in the stated sector",
+        "scope": "In this polynomial one-axis sector alpha,beta,gamma,k are nonzero. If at least one linear coefficient is nonzero, the phase has actual support5 or6; the five-window gives its actual-support strong factorial window. With both linears zero actual support4 is deliberately not concluded.",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": []
+      },
+      {
+        "id": "ERDOS-364-VARIABLE-CONTACT-RECTANGLE",
+        "title": "Contact determinant with a variable rectangle",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "scope": "For the selected adjacent pair in sorted kernel exponents choose s farthest from 103/305, tau=103/305-s and bidegrees asymptotic to L(3(1+tau),2(1-tau)). In the near-binding boxes the two contacts of order 5m give a strict integer determinant surplus at m=57/305-min(tau^2/2,1/5000)+10^-8, with all degree and height constants uniform for fixed L.",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+            "sha256": "580d66db5ddd535794ac8bf30d415263e5d48c748479a2843475bfb15fb2a2e6",
+            "locator": "Pair selection and the contact width"
+          }
+        ]
+      },
+      {
+        "id": "EXT-ERDOS-364-CCDN-LEADING-FORM-COUNT",
+        "title": "Leading-form saving in the affine degree-ten curve count",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "scope": "Corollary 4.2.4 applied to a primitive irreducible plane polynomial f of degree 10. For an affine box of height B, H=||f_10||, the point bound is O(B^(1/10)*H^(-1/100)*(1+log H+log(2B))+log(2B)). The hypothesis is primitivity of the full affine equation.",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "arithmetic/sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf",
+            "sha256": "308b9f1160e3aa7effb74987521a7ad3dd1cab3cbc7d48a5bd7feb922da2111d",
+            "locator": "Corollary 4.2.4, printed p. 2280"
+          }
+        ],
+        "assessment": "Published primary statement and application to the two plane projections checked."
+      },
+      {
+        "id": "ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT",
+        "title": "Averaged count for the degree-ten pair components",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "scope": "With the variable rectangle and fixed-shift pair lattice tails, all geometrically integral (2,2) auxiliary components of the selected pair, including singular ones, contribute O_epsilon(X^(6/25+epsilon)) per dyadic height and kernel box after summing over intervals. Two birational projections retain the boundary directions at infinity. Large leading height supplies a direct affine saving; small leading height and Farey separation give a strict exceptional-interval saving.",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+            "sha256": "580d66db5ddd535794ac8bf30d415263e5d48c748479a2843475bfb15fb2a2e6",
+            "locator": "The two plane projections of a pair component"
+          },
+          {
+            "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+            "sha256": "580d66db5ddd535794ac8bf30d415263e5d48c748479a2843475bfb15fb2a2e6",
+            "locator": "Counting intervals with small leading forms"
+          }
+        ]
+      },
+      {
+        "id": "ERDOS-364-JOINT-SECOND-DETERMINANT-CURVE-PROJECTIONS",
+        "title": "Second determinant on joint surfaces with a curve projection",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "scope": "At joint width exponent 11/105 in the near-binding boxes, a shared surface with a curve image in any of the b, a or c=ba blocks is cut into boundedly many curves per existing cell. A degree-e image gives Hilbert leading term 18e,27e or 45e times L^2 in bidegree (3L,2L), and restricted Taylor ranks beat the physical cost 17L/15. Positive-genus joint lift degrees below 12 reduce to fixed-ratio or constant-block cases.",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
+            "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
+            "locator": "Second determinant for surfaces with a curve projection"
+          }
+        ]
+      },
+      {
+        "id": "GAP-ERDOS-364-POINTWISE-ELLIPTIC-LIFT",
+        "title": "Uniform saving for a surviving smooth (2,2) pair curve",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "scope": "At fixed pair interval and B=max(1,L_1^3T_1^2), bound primitive points on each smooth (2,2) component extending to fundamental triples by O_epsilon(X^epsilon(1+B^(162/1625))). This is a pointwise estimate; the averaged 6/25 proof uses a different sufficient route.",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+            "sha256": "580d66db5ddd535794ac8bf30d415263e5d48c748479a2843475bfb15fb2a2e6",
+            "locator": "Scope of the elliptic estimate"
+          }
+        ],
+        "gap_kind": "mathematical"
       }
     ],
     "implications": [
@@ -347711,7 +348392,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Fourier counting in a box and Exact optimization and fixed offsets"
         },
         "dependency_coverage": "partial"
@@ -347725,7 +348406,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Exact optimization and fixed offsets"
         },
         "dependency_coverage": "partial"
@@ -347740,7 +348421,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Stronger saving from the grouped moments"
         },
         "dependency_coverage": "partial"
@@ -348064,7 +348745,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "From the exact FullOC optimum to the exceptional-set count"
         },
         "dependency_coverage": "partial"
@@ -349119,7 +349800,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Exceptional-set improvement from grouped roots"
         },
         "dependency_coverage": "partial"
@@ -349133,7 +349814,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Exceptional-set improvement from grouped roots"
         },
         "dependency_coverage": "partial"
@@ -349164,7 +349845,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Using all higher coordinates of the largest letter"
         },
         "dependency_coverage": "partial"
@@ -349179,7 +349860,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Using all higher coordinates of the largest letter"
         },
         "dependency_coverage": "partial"
@@ -350021,7 +350702,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Selecting the released coordinates"
         },
         "dependency_coverage": "partial"
@@ -350038,7 +350719,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Leading constant for the small-budget saving"
         },
         "dependency_coverage": "partial"
@@ -350131,7 +350812,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A matching order for the Fourier and two-group estimates"
         },
         "dependency_coverage": "partial"
@@ -350199,7 +350880,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Exceptional-set bounds from the two tall terms"
         },
         "dependency_coverage": "partial"
@@ -350231,7 +350912,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Exceptional-set bounds from the two tall terms"
         },
         "dependency_coverage": "partial"
@@ -351854,7 +352535,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A proportional saving from powerful-modulus compression and bound (16)"
         },
         "dependency_coverage": "partial"
@@ -351931,7 +352612,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "One possible high-degree coordinate per letter"
         },
         "dependency_coverage": "partial"
@@ -351949,7 +352630,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A small-budget bound from higher moments and two tall terms"
         },
         "dependency_coverage": "partial"
@@ -351969,7 +352650,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "The leading coefficient for whole-coordinate bounds"
         },
         "dependency_coverage": "partial"
@@ -352802,7 +353483,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Residue counts at shrinking residual heights"
         },
         "dependency_coverage": "partial"
@@ -352816,7 +353497,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Residue counts at shrinking residual heights and (17)"
         },
         "dependency_coverage": "partial"
@@ -352832,7 +353513,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "The stability supplied by the half-bound proof"
         },
         "dependency_coverage": "partial"
@@ -352848,7 +353529,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Separated degrees and a limit of single-base compression"
         },
         "dependency_coverage": "partial"
@@ -353224,7 +353905,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A strict small-budget saving for two tall powers and a short letter"
         },
         "dependency_coverage": "partial"
@@ -353245,7 +353926,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A strict small-budget saving for a common high degree"
         },
         "dependency_coverage": "partial"
@@ -353264,7 +353945,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A \\(3/7\\) small-budget bound with a short letter"
         },
         "dependency_coverage": "partial"
@@ -353571,7 +354252,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Residue counts at shrinking residual heights, independent-power extension"
         },
         "dependency_coverage": "partial"
@@ -353587,7 +354268,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Recovering a primitive ratio from a dominant divisor and (18)"
         },
         "dependency_coverage": "partial"
@@ -353601,7 +354282,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Auxiliary surfaces and a transverse curve reduction"
         },
         "dependency_coverage": "partial"
@@ -353615,7 +354296,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "An exact curve with many points in one class"
         },
         "dependency_coverage": "partial"
@@ -353941,7 +354622,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Auxiliary curves in every residue class"
         },
         "dependency_coverage": "partial"
@@ -353956,7 +354637,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Counting the coprime roots without good reduction"
         },
         "dependency_coverage": "partial"
@@ -353972,7 +354653,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Transfer to boxes with two heavy roots on each letter"
         },
         "dependency_coverage": "partial"
@@ -354109,7 +354790,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A fixed-proportion saving below the half-budget exponent"
         },
         "dependency_coverage": "partial"
@@ -354126,7 +354807,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Height concentration and prime roots near the half bound"
         },
         "dependency_coverage": "partial"
@@ -354142,7 +354823,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A partial-power modulus for clustered high degrees"
         },
         "dependency_coverage": "partial"
@@ -354157,7 +354838,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "An affine surface after fixing a complete letter"
         },
         "dependency_coverage": "partial"
@@ -354172,7 +354853,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Releasing four roots on three letters"
         },
         "dependency_coverage": "partial"
@@ -354190,7 +354871,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Radical shares in near-half boxes"
         },
         "dependency_coverage": "partial"
@@ -354210,7 +354891,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A uniform small-budget exponent below one half"
         },
         "dependency_coverage": "partial"
@@ -354226,7 +354907,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Releasing a bounded number of high-degree coordinates"
         },
         "dependency_coverage": "partial"
@@ -354246,7 +354927,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "The small-budget coefficient \\(6/13\\)"
         },
         "dependency_coverage": "partial"
@@ -354293,7 +354974,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A three-point cover with a p-group"
         },
         "dependency_coverage": "partial"
@@ -354311,7 +354992,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Residual radical bounds for hyperbolic prime-power signatures"
         },
         "dependency_coverage": "partial"
@@ -354326,7 +355007,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "For the finite projected program"
         },
         "dependency_coverage": "partial"
@@ -354347,7 +355028,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "An explicit coefficient below (5/11), equation (32)"
         },
         "dependency_coverage": "partial"
@@ -354362,7 +355043,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Rational compression with controlled exact fibers, equations (R1) and (R2)"
         },
         "dependency_coverage": "partial"
@@ -355111,7 +355792,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Uniform rank and point bounds for the two twist families"
         },
         "dependency_coverage": "partial"
@@ -355126,7 +355807,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Residual radical bounds for two Euclidean signatures"
         },
         "dependency_coverage": "partial"
@@ -355141,7 +355822,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Summation over residual radicals"
         },
         "dependency_coverage": "partial"
@@ -355186,7 +355867,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A fixed-target surface with a cubic factor and a quartic power"
         },
         "dependency_coverage": "partial"
@@ -355205,7 +355886,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A small-budget coefficient of \\(3/7\\)"
         },
         "dependency_coverage": "partial"
@@ -355229,7 +355910,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Improving the gap to \\(10^{-3}\\)"
         },
         "dependency_coverage": "partial"
@@ -355274,7 +355955,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A diagonal surface with a cubic power and two quartic powers"
         },
         "dependency_coverage": "partial"
@@ -355562,7 +356243,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Using the short cofactor to count in a lattice"
         },
         "dependency_coverage": "partial"
@@ -355678,7 +356359,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A uniform fixed-coefficient estimate"
         },
         "dependency_coverage": "partial"
@@ -355693,7 +356374,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Summing the fixed-coefficient estimate"
         },
         "dependency_coverage": "partial"
@@ -355708,7 +356389,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Summing the fixed-coefficient estimate"
         },
         "dependency_coverage": "partial"
@@ -355723,7 +356404,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Summing the fixed-coefficient estimate"
         },
         "dependency_coverage": "partial"
@@ -355738,7 +356419,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Square and odd prime powers"
         },
         "dependency_coverage": "partial"
@@ -355753,7 +356434,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Square and odd prime powers"
         },
         "dependency_coverage": "partial"
@@ -355768,7 +356449,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Small-coefficient determinant-one families"
         },
         "dependency_coverage": "partial"
@@ -355864,7 +356545,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A graph count with two or three prime roots"
         },
         "dependency_coverage": "partial"
@@ -355878,7 +356559,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Numerical height zero on the short letter"
         },
         "dependency_coverage": "partial"
@@ -356908,7 +357589,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Averaged full \\((2,3,6)\\) count with a Mordell height lower bound"
         },
         "dependency_coverage": "partial"
@@ -356922,7 +357603,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A one-class-group bound from the rational three-isogeny"
         },
         "dependency_coverage": "partial"
@@ -356936,7 +357617,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A real short-strip estimate with a free low cofactor"
         },
         "dependency_coverage": "partial"
@@ -356955,7 +357636,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "The short-height-zero bound \\(d\\le11/27\\)"
         },
         "dependency_coverage": "partial"
@@ -356975,7 +357656,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "The full small-budget coefficient \\(8/19\\)"
         },
         "dependency_coverage": "partial"
@@ -357005,7 +357686,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A modulus of half the available mass"
         },
         "dependency_coverage": "partial"
@@ -357025,7 +357706,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "An explicit small-budget coefficient \\(13/31\\)"
         },
         "dependency_coverage": "partial"
@@ -357044,7 +357725,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A limiting small-budget coefficient of \\(5/12\\)"
         },
         "dependency_coverage": "partial"
@@ -357557,7 +358238,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Making the low coefficient short in anatomic boxes"
         },
         "dependency_coverage": "partial"
@@ -365452,7 +366133,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "A radical-count contradiction to the claimed smooth-number lower bound"
         },
         "dependency_coverage": "partial"
@@ -372426,7 +373107,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Scope of the few-prime sum-product approach"
         },
         "dependency_coverage": "partial"
@@ -372846,7 +373527,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "locator": "Residual obstruction"
         },
         "dependency_coverage": "partial"
@@ -373275,7 +373956,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+          "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
           "locator": "Theorem and proof by varying-profile subsequences"
         },
         "dependency_coverage": "partial"
@@ -373291,7 +373972,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+          "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
           "locator": "Corollary"
         },
         "dependency_coverage": "partial"
@@ -373381,7 +374062,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+          "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
           "locator": "Corollary"
         },
         "dependency_coverage": "partial"
@@ -374512,7 +375193,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+          "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
           "locator": "The remaining large-order regime"
         },
         "dependency_coverage": "partial"
@@ -375751,7 +376432,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+          "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
           "locator": "The fixed-terminal obligation"
         },
         "dependency_coverage": "partial"
@@ -376259,7 +376940,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+          "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
           "locator": "The remaining large-order regime"
         },
         "dependency_coverage": "partial"
@@ -415726,7 +416407,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Transfers from the preprint counting statements"
         }
       },
@@ -415742,7 +416423,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Transfers from the preprint counting statements"
         }
       },
@@ -415759,7 +416440,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Transferring the contact determinant to the pair count"
         }
       },
@@ -415773,7 +416454,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Pell descent and minimal repair"
         }
       },
@@ -415787,7 +416468,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "The only maximizer of the pairwise bound"
         }
       },
@@ -415801,7 +416482,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "A joint determinant in all dyadic boxes"
         }
       },
@@ -416371,7 +417052,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Point count required on the surfaces"
         }
       },
@@ -416393,7 +417074,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Point count required on the surfaces"
         }
       },
@@ -416409,7 +417090,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Averaging the reduced lattice heights"
         }
       },
@@ -416423,7 +417104,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Rational curves with controlled parametrizations"
         }
       },
@@ -417020,7 +417701,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "locator": "Polynomial-height normalizations from candidate points"
         }
       },
@@ -418116,7 +418797,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md",
-          "sha256": "3f67fc935fd783f7a25f4f50da4a80e61f2e09b284a203d7b987a8f6c1ce9d0c",
+          "sha256": "7b1c752e853587f64e01755b83469fadbed93822a8ff2b82a2cf0eb69e3fc4ab",
           "locator": "PV1. Bounded releases with roots on the same letter"
         },
         "dependency_coverage": "partial"
@@ -418131,7 +418812,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md",
-          "sha256": "3f67fc935fd783f7a25f4f50da4a80e61f2e09b284a203d7b987a8f6c1ce9d0c",
+          "sha256": "7b1c752e853587f64e01755b83469fadbed93822a8ff2b82a2cf0eb69e3fc4ab",
           "locator": "PV2. Adaptive translated grids and growing numbers of grids"
         },
         "dependency_coverage": "partial"
@@ -418147,7 +418828,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EISENSTEIN_NORM_POWER_DEFECTS.md",
-          "sha256": "31fbb94f10c57b0efab771239b65c321eaf683eff41a4576484e2767e42f7337",
+          "sha256": "07279d040c86a9aa59c86692b2ed09f1b9b197b8b7349c384401da4c49bf707a",
           "locator": "EN1. Exact factorization and counting"
         },
         "dependency_coverage": "partial"
@@ -418161,7 +418842,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EISENSTEIN_NORM_POWER_DEFECTS.md",
-          "sha256": "31fbb94f10c57b0efab771239b65c321eaf683eff41a4576484e2767e42f7337",
+          "sha256": "07279d040c86a9aa59c86692b2ed09f1b9b197b8b7349c384401da4c49bf707a",
           "locator": "EN2. Uniformity over exact power orders"
         },
         "dependency_coverage": "partial"
@@ -418178,7 +418859,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EISENSTEIN_NORM_POWER_DEFECTS.md",
-          "sha256": "31fbb94f10c57b0efab771239b65c321eaf683eff41a4576484e2767e42f7337",
+          "sha256": "07279d040c86a9aa59c86692b2ed09f1b9b197b8b7349c384401da4c49bf707a",
           "locator": "EN3. Retaining a small radical of norm defects"
         },
         "dependency_coverage": "partial"
@@ -418194,7 +418875,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_EISENSTEIN_NORM_POWER_DEFECTS.md",
-          "sha256": "31fbb94f10c57b0efab771239b65c321eaf683eff41a4576484e2767e42f7337",
+          "sha256": "07279d040c86a9aa59c86692b2ed09f1b9b197b8b7349c384401da4c49bf707a",
           "locator": "EN4. The cyclic pair count"
         },
         "dependency_coverage": "partial"
@@ -418209,7 +418890,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md",
-          "sha256": "3bec0d3584d49481b43727821d88c51a5f2f647f889af56df0160bbcc8ef70f5",
+          "sha256": "a5c19434e2328150dfadbf82ea439c451ce6f78fda498f4dae92f68de5e57ab6",
           "locator": "PS1. One weighted physical shift on diffuse marked inputs"
         },
         "dependency_coverage": "partial"
@@ -418225,7 +418906,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md",
-          "sha256": "3bec0d3584d49481b43727821d88c51a5f2f647f889af56df0160bbcc8ef70f5",
+          "sha256": "a5c19434e2328150dfadbf82ea439c451ce6f78fda498f4dae92f68de5e57ab6",
           "locator": "PS2. Bounded-radical primitive shifts are power-small"
         },
         "dependency_coverage": "partial"
@@ -418240,7 +418921,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md",
-          "sha256": "3bec0d3584d49481b43727821d88c51a5f2f647f889af56df0160bbcc8ef70f5",
+          "sha256": "a5c19434e2328150dfadbf82ea439c451ce6f78fda498f4dae92f68de5e57ab6",
           "locator": "PS3. Two exact physical shifts, even without a diffuse role"
         },
         "dependency_coverage": "partial"
@@ -418256,10 +418937,489 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md",
-          "sha256": "3bec0d3584d49481b43727821d88c51a5f2f647f889af56df0160bbcc8ef70f5",
+          "sha256": "a5c19434e2328150dfadbf82ea439c451ce6f78fda498f4dae92f68de5e57ab6",
           "locator": "PS4. Joint factor prices on same-tail repaired target pairs"
         },
         "dependency_coverage": "partial"
+      },
+      {
+        "id": "RULE-QFS-01",
+        "premises": [
+          "SRC-QFS-GAP-FREE-QUARTER-NECESSARY-PROFILE",
+          "CWB-DIVIDED-POWER-INTEGRAL-MOMENT-COEFFICIENTS",
+          "CWB-NATIVE-BINARY-RESIDUE-AND-NONPOLYNOMIAL-UNIT-WINDOW",
+          "CWB-CRITICAL-TWO-ANCHORS-AND-PERIODIC-DETECTOR",
+          "CWB-CRITICAL-SIX-WINDOW-FROM-NONPOLYNOMIAL-DETECTOR",
+          "SRC-CWB-NONCRITICAL-NATIVE-WRITTEN-PROOF"
+        ],
+        "conclusion": "QFS-QUARTER-RESIDUE-START-AND-ACTUAL-SMALL-PREFIX",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_ONE_SIXTH_COEFFICIENT_FRONTIER.md",
+          "sha256": "f2a474c961da8a3f2afd47de838aea7009b44c40f94c726cb30744b310fd9c18",
+          "locator": "Sections1--2, residue/start reduction and equations(2)--(3)"
+        }
+      },
+      {
+        "id": "RULE-QFS-02",
+        "premises": [
+          "SRC-QFS-GAP-FREE-QUARTER-NECESSARY-PROFILE",
+          "QFS-QUARTER-RESIDUE-START-AND-ACTUAL-SMALL-PREFIX"
+        ],
+        "conclusion": "QFS-GAP-FREE-MONIC-FACTOR-NATIVE-PROFILE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_ONE_SIXTH_COEFFICIENT_FRONTIER.md",
+          "sha256": "f2a474c961da8a3f2afd47de838aea7009b44c40f94c726cb30744b310fd9c18",
+          "locator": "Section2, shifted monic factor and coefficient comparisons, equations(4)--(8)"
+        }
+      },
+      {
+        "id": "RULE-QFS-03",
+        "premises": [
+          "SRC-QFS-GAP-FREE-QUARTER-NECESSARY-PROFILE",
+          "QFS-GAP-FREE-MONIC-FACTOR-NATIVE-PROFILE",
+          "CWB-DIVIDED-POWER-INTEGRAL-MOMENT-COEFFICIENTS"
+        ],
+        "conclusion": "QFS-ARBITRARY-START-PARITY-TARGETS-WITH-TRUE-U",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_ONE_SIXTH_COEFFICIENT_FRONTIER.md",
+          "sha256": "f2a474c961da8a3f2afd47de838aea7009b44c40f94c726cb30744b310fd9c18",
+          "locator": "Section3, full head/first-tail/higher-tail argument and equation(10)"
+        }
+      },
+      {
+        "id": "RULE-QFS-04",
+        "premises": [
+          "SRC-QFS-GAP-FREE-QUARTER-NECESSARY-PROFILE"
+        ],
+        "conclusion": "QFS-FINITE-EIGHT-TERM-NATIVE-PERTURBATION-INVARIANT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_ONE_SIXTH_COEFFICIENT_FRONTIER.md",
+          "sha256": "f2a474c961da8a3f2afd47de838aea7009b44c40f94c726cb30744b310fd9c18",
+          "locator": "Sections4--5, four derivative rows, quotient relations(12), native formula(13), eight-term identity(14)"
+        }
+      },
+      {
+        "id": "RULE-QFS-05",
+        "premises": [
+          "SRC-QFS-GAP-FREE-QUARTER-NECESSARY-PROFILE",
+          "QFS-GAP-FREE-MONIC-FACTOR-NATIVE-PROFILE",
+          "QFS-ARBITRARY-START-PARITY-TARGETS-WITH-TRUE-U",
+          "QFS-FINITE-EIGHT-TERM-NATIVE-PERTURBATION-INVARIANT"
+        ],
+        "conclusion": "QFS-ONE-SIXTH-ACTUAL-COEFFICIENT-FRONTIER",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_ONE_SIXTH_COEFFICIENT_FRONTIER.md",
+          "sha256": "f2a474c961da8a3f2afd47de838aea7009b44c40f94c726cb30744b310fd9c18",
+          "locator": "Sections4--5, strict valuation error ideal and equation(14)"
+        }
+      },
+      {
+        "id": "RULE-QFS-06",
+        "premises": [
+          "SRC-QFS-GAP-FREE-QUARTER-NECESSARY-PROFILE",
+          "QFS-ONE-SIXTH-ACTUAL-COEFFICIENT-FRONTIER",
+          "QFS-GAP-FREE-MONIC-FACTOR-NATIVE-PROFILE",
+          "CWB-NECESSARY-DISCRETE-GRID-COUNTEREXAMPLE-OBSTRUCTION"
+        ],
+        "conclusion": "QFS-HYPOTHETICAL-QUARTER-COEFFICIENT-VALUATIONS-AND-GRID-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_ONE_SIXTH_COEFFICIENT_FRONTIER.md",
+          "sha256": "f2a474c961da8a3f2afd47de838aea7009b44c40f94c726cb30744b310fd9c18",
+          "locator": "Theorem and Section6; combine the separately pinned old grid obstruction only for12|e0"
+        }
+      },
+      {
+        "id": "RULE-QFS-07",
+        "premises": [
+          "SRC-QFS-NO-GAP-QUARTER-SIX-WINDOW",
+          "QFS-ONE-SIXTH-ACTUAL-COEFFICIENT-FRONTIER",
+          "QFS-GAP-FREE-MONIC-FACTOR-NATIVE-PROFILE"
+        ],
+        "conclusion": "QFS-INTEGRAL-TWELFTH-ROOT-PARAMETERIZATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "sha256": "411a918c5062d46bc9ca73720999803a9d6c8742204823621501de9d0e4a3d45",
+          "locator": "Section2, equations(4)--(5), valuation proof of integral chi"
+        }
+      },
+      {
+        "id": "RULE-QFS-08",
+        "premises": [
+          "SRC-QFS-NO-GAP-QUARTER-SIX-WINDOW"
+        ],
+        "conclusion": "QFS-PI16-FOUR-UNIVERSAL-NATIVE-ROWS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "sha256": "411a918c5062d46bc9ca73720999803a9d6c8742204823621501de9d0e4a3d45",
+          "locator": "Section3, complete equations(6)--(9)"
+        }
+      },
+      {
+        "id": "RULE-QFS-09",
+        "premises": [
+          "SRC-QFS-NO-GAP-QUARTER-SIX-WINDOW",
+          "QFS-ARBITRARY-START-PARITY-TARGETS-WITH-TRUE-U",
+          "QFS-INTEGRAL-TWELFTH-ROOT-PARAMETERIZATION",
+          "QFS-PI16-FOUR-UNIVERSAL-NATIVE-ROWS"
+        ],
+        "conclusion": "QFS-FOUR-ROW-UNIT-PIVOT-QUARTER-CONTRADICTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "sha256": "411a918c5062d46bc9ca73720999803a9d6c8742204823621501de9d0e4a3d45",
+          "locator": "Section4, unit-pivot contradiction"
+        }
+      },
+      {
+        "id": "RULE-QFS-10",
+        "premises": [
+          "SRC-QFS-NO-GAP-QUARTER-SIX-WINDOW",
+          "FACTORIAL-BINARY-QUADRATIC-QUARTER-CRITICAL-NO-GAP-SIX-WINDOW",
+          "CWB-NECESSARY-RESIDUAL-ONE-POLE-CRITICAL-FRONTIER"
+        ],
+        "conclusion": "QFS-NECESSARY-REMAINING-CRITICAL-L8-AND-HIGHER",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "sha256": "411a918c5062d46bc9ca73720999803a9d6c8742204823621501de9d0e4a3d45",
+          "locator": "Section5 Corollary; old general source Section2, Corollary3"
+        }
+      },
+      {
+        "id": "RULE-QFS-11",
+        "premises": [
+          "SRC-QFS-FOUR-TIMES-ODD-GRID-FINITE-TAIL",
+          "CWB-DIVIDED-POWER-INTEGRAL-MOMENT-COEFFICIENTS",
+          "CWB-NATIVE-BINARY-RESIDUE-AND-NONPOLYNOMIAL-UNIT-WINDOW",
+          "SRC-CWB-NONCRITICAL-NATIVE-WRITTEN-PROOF"
+        ],
+        "conclusion": "QFS-FINITE-DEFORMATION-DEGREE-NATIVE-PERIODICITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_FOUR_TIMES_ODD_GRID_FINITE_CRITICAL_TAIL.md",
+          "sha256": "858a635c0aadcbdb7b3415a7a72ecae54f6bc0c27aab2178706f6e61b2b60e1f",
+          "locator": "Section1, equations(1)--(3)"
+        }
+      },
+      {
+        "id": "RULE-QFS-12",
+        "premises": [
+          "SRC-QFS-FOUR-TIMES-ODD-GRID-FINITE-TAIL",
+          "CWB-DIVIDED-POWER-INTEGRAL-MOMENT-COEFFICIENTS",
+          "CWB-NATIVE-BINARY-RESIDUE-AND-NONPOLYNOMIAL-UNIT-WINDOW",
+          "CWB-CRITICAL-APPELL-ROOT-MULTIPLICITY"
+        ],
+        "conclusion": "QFS-CRITICAL-GRID-SIXTH-POWER-FOUR-ANCHOR-SATURATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_FOUR_TIMES_ODD_GRID_FINITE_CRITICAL_TAIL.md",
+          "sha256": "858a635c0aadcbdb7b3415a7a72ecae54f6bc0c27aab2178706f6e61b2b60e1f",
+          "locator": "Section2, local finite-width proof and equations(4)--(7)"
+        }
+      },
+      {
+        "id": "RULE-QFS-13",
+        "premises": [
+          "SRC-QFS-FOUR-TIMES-ODD-GRID-FINITE-TAIL",
+          "QFS-FINITE-DEFORMATION-DEGREE-NATIVE-PERIODICITY",
+          "QFS-CRITICAL-GRID-SIXTH-POWER-FOUR-ANCHOR-SATURATION"
+        ],
+        "conclusion": "QFS-FINITE-TAIL-PERIODICITY-VERSUS-MIDDLE-ANCHOR",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_FOUR_TIMES_ODD_GRID_FINITE_CRITICAL_TAIL.md",
+          "sha256": "858a635c0aadcbdb7b3415a7a72ecae54f6bc0c27aab2178706f6e61b2b60e1f",
+          "locator": "Section3, periodicity contradiction"
+        }
+      },
+      {
+        "id": "RULE-QFS-14",
+        "premises": [
+          "SRC-QFS-POLYNOMIAL-ONE-AXIS-SECTOR"
+        ],
+        "conclusion": "QFS-POLYNOMIAL-NATIVE-INTEGRAL-RATIONAL-CONSTANT-CONGRUENCE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+          "locator": "Section1, equations(2)--(3)"
+        }
+      },
+      {
+        "id": "RULE-QFS-15",
+        "premises": [
+          "SRC-QFS-POLYNOMIAL-ONE-AXIS-SECTOR",
+          "QFS-POLYNOMIAL-NATIVE-INTEGRAL-RATIONAL-CONSTANT-CONGRUENCE"
+        ],
+        "conclusion": "QFS-POLYNOMIAL-UNIT-AXIS-SLOPES-AND-SMALL-AXIS-VALUES",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+          "locator": "Sections2--3, equations(4)--(6)"
+        }
+      },
+      {
+        "id": "RULE-QFS-16",
+        "premises": [
+          "SRC-QFS-POLYNOMIAL-ONE-AXIS-SECTOR",
+          "QFS-POLYNOMIAL-UNIT-AXIS-SLOPES-AND-SMALL-AXIS-VALUES"
+        ],
+        "conclusion": "QFS-POLYNOMIAL-INTERIOR-FORCING-AND-SIGMA-BOUND",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+          "locator": "Section3, equations(7)--(11)"
+        }
+      },
+      {
+        "id": "RULE-QFS-17",
+        "premises": [
+          "SRC-QFS-POLYNOMIAL-ONE-AXIS-SECTOR",
+          "QFS-POLYNOMIAL-NATIVE-INTEGRAL-RATIONAL-CONSTANT-CONGRUENCE",
+          "QFS-POLYNOMIAL-INTERIOR-FORCING-AND-SIGMA-BOUND"
+        ],
+        "conclusion": "QFS-POLYNOMIAL-UNIT-POLE-REMOVAL-FIVE-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+          "locator": "Section4, equations(12)--(13) and final contradiction"
+        }
+      },
+      {
+        "id": "RULE-QFS-18",
+        "premises": [
+          "SRC-QFS-POLYNOMIAL-ONE-AXIS-SECTOR",
+          "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-FIVE-WINDOW"
+        ],
+        "conclusion": "QFS-POLYNOMIAL-ACTUAL-FIVE-SIX-SUPPORT-SPECIALIZATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+          "locator": "Theorem opening scope and Section5"
+        }
+      },
+      {
+        "id": "RULE-QFS-19",
+        "premises": [
+          "QFS-FOUR-ROW-UNIT-PIVOT-QUARTER-CONTRADICTION"
+        ],
+        "conclusion": "FACTORIAL-BINARY-QUADRATIC-QUARTER-CRITICAL-NO-GAP-SIX-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "sha256": "411a918c5062d46bc9ca73720999803a9d6c8742204823621501de9d0e4a3d45",
+          "locator": "Theorem, Sections1--4"
+        }
+      },
+      {
+        "id": "RULE-QFS-20",
+        "premises": [
+          "QFS-NECESSARY-REMAINING-CRITICAL-L8-AND-HIGHER"
+        ],
+        "conclusion": "FACTORIAL-BINARY-QUADRATIC-NONPOLYNOMIAL-COUNTEREXAMPLE-CRITICAL-L8-FRONTIER",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "sha256": "411a918c5062d46bc9ca73720999803a9d6c8742204823621501de9d0e4a3d45",
+          "locator": "Section5 Corollary"
+        }
+      },
+      {
+        "id": "RULE-QFS-21",
+        "premises": [
+          "QFS-FINITE-TAIL-PERIODICITY-VERSUS-MIDDLE-ANCHOR"
+        ],
+        "conclusion": "FACTORIAL-BINARY-CUBE-RESIDUE-FOUR-TIMES-ODD-GRID-FINITE-CRITICAL-TAIL",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_FOUR_TIMES_ODD_GRID_FINITE_CRITICAL_TAIL.md",
+          "sha256": "858a635c0aadcbdb7b3415a7a72ecae54f6bc0c27aab2178706f6e61b2b60e1f",
+          "locator": "Theorem, Sections1--3"
+        }
+      },
+      {
+        "id": "RULE-QFS-22",
+        "premises": [
+          "QFS-POLYNOMIAL-UNIT-POLE-REMOVAL-FIVE-WINDOW"
+        ],
+        "conclusion": "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-FIVE-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+          "locator": "Theorem, Sections1--4"
+        }
+      },
+      {
+        "id": "RULE-QFS-23",
+        "premises": [
+          "QFS-POLYNOMIAL-ACTUAL-FIVE-SIX-SUPPORT-SPECIALIZATION"
+        ],
+        "conclusion": "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-ACTUAL-SUPPORT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+          "locator": "Theorem actual-support consequence and Section5"
+        }
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-OPPOSED-DIFFUSE-PUISEUX-HEIGHT-BRANCHES"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_AUXILIARY_POLYNOMIAL_RATIONAL_BIAS.md",
+          "sha256": "49e3187b8d3375e8966bc280865f4e0a9c981ed4a5b64389c3e9e2503b50e154",
+          "locator": "Theorem, through Removing the count coordinate"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-OPPOSED-AX-BRANCH-RANK",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-OPPOSED-DIFFUSE-PUISEUX-HEIGHT-BRANCHES",
+          "FACTORIAL-MULTIVARIATE-OPPOSED-INDEPENDENT-HEIGHT-RATIONAL-BIAS",
+          "FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-OPPOSED-AX-BRANCH-RANK",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_AX_BRANCH_RANK.md",
+          "sha256": "aa3ff8f141d60ca6a09d5bc9bf321cb9f947e4d9caf4575526e455c29b79f466",
+          "locator": "Theorem, equation (1), and Boundary branches need at least two character relations"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-OPPOSED-ALGEBRAIC-CURVE-PRIME-GRID",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-OPPOSED-MARK-PRODUCT-HEIGHT-CONSTRAINT",
+          "FACTORIAL-MULTIVARIATE-EFFECTIVE-ABSOLUTE-EVENTUAL-ANGLES"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-OPPOSED-ALGEBRAIC-CURVE-PRIME-GRID",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_ALGEBRAIC_CURVE_PRIME_GRID.md",
+          "sha256": "278c4e137693debd351c026fa94b97594ae0563a71fa00f8febae64488f748bd",
+          "locator": "Theorem, equations (1) and (2), and Consequence for boundary branches"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-EQUIVARIANT-DEGREE-ORBIT-WINDOWS",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-MIXED-DEGREE-TOP-BLOCK-WINDOWS",
+          "FACTORIAL-MULTIVARIATE-MIXED-DEGREE-SINGLETON-FOREIGN-BLOCKS"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-EQUIVARIANT-DEGREE-ORBIT-WINDOWS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SFC_EQUIVARIANT_DEGREE_ORBIT_WINDOWS.md",
+          "sha256": "e751d5b1f658944930f78db706adefd522006c56d2517098bb14499e153d18ef",
+          "locator": "Theorem, early sampled orders and ordered determinant at the large sampled orders"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-COMMON-SCALAR-SADDLE-OBSTRUCTION",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-MIXED-DEGREE-AGGREGATED-SADDLES"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-COMMON-SCALAR-SADDLE-OBSTRUCTION",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SFC_COMMON_SCALAR_SADDLE_OBSTRUCTION.md",
+          "sha256": "eee92184292c8a2c113d78822244fa4486880f5f54b4c38c6ec9e25acc4e7101",
+          "locator": "Proposition and equations (2) through (5)"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-TERNARY-CUBIC-TRIADIC-BOUND",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-HOMOGENEOUS-TERNARY-SHIFTED-GATE-REDUCTION"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-TERNARY-CUBIC-TRIADIC-BOUND",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/SFC_TERNARY_CUBIC_TRIADIC_BOUND.md",
+          "sha256": "427cdde23cd71b6f12391476f707d1bb53b5389c6a491e5589d3925a6f08cdcc",
+          "locator": "Equation (1), replacement comparisons, and the centered Newton slope bounds"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "RULE-ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT",
+        "premises": [
+          "ERDOS-364-VARIABLE-CONTACT-RECTANGLE",
+          "EXT-ERDOS-364-CCDN-LEADING-FORM-COUNT",
+          "EXT-ERDOS-364-CCDN-CURVE-COUNTS",
+          "EXT-ERDOS-364-PLYMESSER-PAIRWISE-ESTIMATES"
+        ],
+        "conclusion": "ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+          "sha256": "580d66db5ddd535794ac8bf30d415263e5d48c748479a2843475bfb15fb2a2e6",
+          "locator": "Counting intervals with small leading forms"
+        }
+      },
+      {
+        "id": "RULE-ERDOS-364-GLOBAL-SIX-OVER-TWENTY-FIVE-AVERAGED-PAIR",
+        "premises": [
+          "ERDOS-364-PAIRWISE-EXTREMIZER",
+          "ERDOS-364-VARIABLE-CONTACT-RECTANGLE",
+          "ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT",
+          "EXT-ERDOS-364-PLYMESSER-PAIRWISE-ESTIMATES",
+          "EXT-ERDOS-364-CCDN-CURVE-COUNTS"
+        ],
+        "conclusion": "ERDOS-364-GLOBAL-SIX-OVER-TWENTY-FIVE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+          "sha256": "580d66db5ddd535794ac8bf30d415263e5d48c748479a2843475bfb15fb2a2e6",
+          "locator": "Counting intervals with small leading forms"
+        }
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -465947,6 +467107,15 @@
                 "ARITH-PLYMESSER-LIFTED-CURVE-METHOD-CONDITIONAL-SCOPE",
                 "ARITH-ERDOS943-2026-LITERATURE-TRANSFER-BOUNDARIES"
               ]
+            },
+            {
+              "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+              "locator": "Counting intervals with small leading forms; Lemmas 5.4, 6.1-6.2 and Proposition 5.6",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ERDOS-364-PLYMESSER-PAIRWISE-ESTIMATES",
+                "ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT"
+              ]
             }
           ],
           "verification": "source_read",
@@ -465993,6 +467162,14 @@
               "nodes": [
                 "ARITH-ABC-FIXED-POLYNOMIAL-SQUAREFULL-OUTSIDE-POOL-COUNT"
               ]
+            },
+            {
+              "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+              "locator": "Pair selection and the contact width; comparison with the fixed rectangle in Section 5",
+              "role": "context",
+              "nodes": [
+                "ERDOS-364-VARIABLE-CONTACT-RECTANGLE"
+              ]
             }
           ],
           "verification": "source_read",
@@ -466026,6 +467203,15 @@
               "role": "mathematical_input",
               "nodes": [
                 "ERDOS-364-AFFORDABLE-CURVE-COMPONENTS"
+              ]
+            },
+            {
+              "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+              "locator": "The two plane projections of a pair component; Corollary 4.2.4",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ERDOS-364-CCDN-LEADING-FORM-COUNT",
+                "ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT"
               ]
             }
           ],
@@ -484087,6 +485273,22 @@
               ],
               "role": "mathematical_input",
               "locator": "Power-series statement (SP), algebraic independence and the torus coset of a nonvertical algebraic arc"
+            },
+            {
+              "path": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_AUXILIARY_POLYNOMIAL_RATIONAL_BIAS.md",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS"
+              ],
+              "role": "mathematical_input",
+              "locator": "(SD), to push an auxiliary polynomial in two heights and a count to the height plane"
+            },
+            {
+              "path": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_AX_BRANCH_RANK.md",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-OPPOSED-AX-BRANCH-RANK"
+              ],
+              "role": "mathematical_input",
+              "locator": "(SD), the one-derivation bound for the independent logarithms and their count multiples"
             }
           ]
         },
@@ -484479,6 +485681,30 @@
           "title_status": "source_title",
           "verification": "source_read",
           "verification_basis": "Primary theorem statement and application hypotheses inspected."
+        },
+        {
+          "id": "EXT-PAPER-GESSEL-1984-COMBINATORIAL-CONGRUENCES",
+          "title": "Combinatorial Proofs of Congruences",
+          "citation": "Ira M. Gessel, in Enumeration and Design, Academic Press, 1984.",
+          "identifiers": {},
+          "urls": [
+            "https://people.brandeis.edu/~gessel/homepage/papers/combinatorial-congruences.pdf"
+          ],
+          "local_sources": [],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Equation (5.5) and its interpretation for partition polynomials were checked in Gessel's original article. The needed specialization is also proved directly.",
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/SFC_TERNARY_CUBIC_TRIADIC_BOUND.md",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-TERNARY-CUBIC-TRIADIC-BOUND"
+              ],
+              "role": "mathematical_input",
+              "locator": "Equation (5.5), Carlitz's congruence specialized to blocks of size at most three"
+            }
+          ]
         }
       ],
       "internal_citations": [
@@ -499748,7 +500974,7 @@
         },
         {
           "path": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md",
-          "sha256": "2fb93a172d4824fc767bc019875d114c46f1686437b09c0f8d34230ae14ca531",
+          "sha256": "f7f3c71ac3a1cf6e8cb89da95f03ae84023228d6bebf900fd8479aee2c53f317",
           "claims": [
             "ARITH-ABC-CARELLA-V3-EULER-FACTOR-ERROR",
             "ARITH-ABC-POWERFUL-TRIPLE-INCLUSION",
@@ -521654,7 +522880,8 @@
           "path": "arithmetic/sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf",
           "sha256": "308b9f1160e3aa7effb74987521a7ad3dd1cab3cbc7d48a5bd7feb922da2111d",
           "claims": [
-            "EXT-CCDN-UNIFORM-FINITE-PROJECTION"
+            "EXT-CCDN-UNIFORM-FINITE-PROJECTION",
+            "EXT-ERDOS-364-CCDN-LEADING-FORM-COUNT"
           ],
           "dependencies": [],
           "gaps": [],
@@ -638822,7 +640049,7 @@
         },
         {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "b436bfe1f1af898d246421f7f562150521f7d079af3867648623038f0ece913f",
+          "sha256": "cb1d038b2a498695721dbfbeec62d48286dd6f547d988863b1623ce9ba184dd7",
           "claims": [
             "FACTORIAL-MULTIVARIATE-UNIFORM-POSITIVE-CURVATURE-FULLY-SHARED",
             "FACTORIAL-MULTIVARIATE-UNIFORM-EVENTUAL-FULLY-SHARED",
@@ -639462,7 +640689,13 @@
             "FACTORIAL-MULTIVARIATE-OPPOSED-DIFFUSE-PUISEUX-HEIGHT-BRANCHES",
             "FACTORIAL-MULTIVARIATE-OPPOSED-MARK-PRODUCT-HEIGHT-CONSTRAINT",
             "FACTORIAL-MULTIVARIATE-MIXED-DEGREE-AGGREGATED-SADDLES",
-            "FACTORIAL-MULTIVARIATE-COLLINEAR-TERNARY-ODD-GAUSSIAN-QUARTER-VALUATIONS"
+            "FACTORIAL-MULTIVARIATE-COLLINEAR-TERNARY-ODD-GAUSSIAN-QUARTER-VALUATIONS",
+            "FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS",
+            "FACTORIAL-MULTIVARIATE-OPPOSED-AX-BRANCH-RANK",
+            "FACTORIAL-MULTIVARIATE-OPPOSED-ALGEBRAIC-CURVE-PRIME-GRID",
+            "FACTORIAL-MULTIVARIATE-EQUIVARIANT-DEGREE-ORBIT-WINDOWS",
+            "FACTORIAL-MULTIVARIATE-COMMON-SCALAR-SADDLE-OBSTRUCTION",
+            "FACTORIAL-MULTIVARIATE-TERNARY-CUBIC-TRIADIC-BOUND"
           ],
           "role": "proof",
           "gaps": [],
@@ -674076,7 +675309,7 @@
         },
         {
           "path": "arithmetic/ERDOS_364_PELL_AND_JOINT_DETERMINANT.md",
-          "sha256": "2668244d4f9e951dbe8c0bdb23fe6fc7f5c668780fd22a33c6eefd678f8931fb",
+          "sha256": "4d39b06a518c284234b82a489ce08bc21efd6da59cda25b107d769ba656cdfcb",
           "role": "proof",
           "claims": [
             "ERDOS-364-PELL-MINIMAL-REPAIR",
@@ -674091,7 +675324,8 @@
             "ERDOS-364-AFFORDABLE-CURVE-COMPONENTS",
             "ERDOS-364-PARAMETRIZED-RATIONAL-CURVES",
             "ERDOS-364-CANONICAL-BINOMIAL-COMPONENTS",
-            "ERDOS-364-GEOMETRICALLY-RATIONAL-CURVES"
+            "ERDOS-364-GEOMETRICALLY-RATIONAL-CURVES",
+            "ERDOS-364-JOINT-SECOND-DETERMINANT-CURVE-PROJECTIONS"
           ],
           "dependencies": [
             "EXT-ERDOS-364-PLYMESSER-REPAIRED-TRIPLE-COUNT",
@@ -674181,9 +675415,15 @@
               "nodes": [
                 "ERDOS-364-GEOMETRICALLY-RATIONAL-CURVES"
               ]
+            },
+            {
+              "locator": "Second determinant for surfaces with a curve projection",
+              "nodes": [
+                "ERDOS-364-JOINT-SECOND-DETERMINANT-CURVE-PROJECTIONS"
+              ]
             }
           ],
-          "explanation": "Written Pell separation, exact near-binding region, all-box determinant, lattice averages at width exponent 11/105, and restricted component counts. The mean count of surviving fundamental points remains open. Imported point-counting and arithmetic intersection results are explicit."
+          "explanation": "Written Pell separation, all-box joint surface determinant, second determinants and scoped component estimates. The independent averaged pair route to 6/25 is in its own proof source; the joint collision count stays open."
         },
         {
           "path": "factorial/image-rigidity/QUADRATIC_CONSTANT_NONCRITICAL_DYADIC_WINDOW_TRANSFER.md",
@@ -675707,7 +676947,7 @@
         },
         {
           "path": "arithmetic/ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md",
-          "sha256": "3f67fc935fd783f7a25f4f50da4a80e61f2e09b284a203d7b987a8f6c1ce9d0c",
+          "sha256": "7b1c752e853587f64e01755b83469fadbed93822a8ff2b82a2cf0eb69e3fc4ab",
           "claims": [
             "EXT-ABC-KRICK-PARDO-SOMBRA-HEIGHT-BOUNDED-NULLSTELLENSATZ",
             "ARITH-ABC-PRIVATE-AFFINE-BOUNDARY-NULLSTELLENSATZ-HIGH-ROOT-RELEASE",
@@ -675728,7 +676968,7 @@
         },
         {
           "path": "arithmetic/ABC_EISENSTEIN_NORM_POWER_DEFECTS.md",
-          "sha256": "31fbb94f10c57b0efab771239b65c321eaf683eff41a4576484e2767e42f7337",
+          "sha256": "07279d040c86a9aa59c86692b2ed09f1b9b197b8b7349c384401da4c49bf707a",
           "claims": [
             "ARITH-ABC-EISENSTEIN-EXACT-NORM-POWER-DISJOINT-CYCLOTOMIC-COUNT",
             "ARITH-ABC-EISENSTEIN-PROPER-NORM-POWER-COEFFICIENT-TWO-NINTHS",
@@ -675752,7 +676992,7 @@
         },
         {
           "path": "arithmetic/ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md",
-          "sha256": "3bec0d3584d49481b43727821d88c51a5f2f647f889af56df0160bbcc8ef70f5",
+          "sha256": "a5c19434e2328150dfadbf82ea439c451ce6f78fda498f4dae92f68de5e57ab6",
           "claims": [
             "ARITH-ABC-LEAST-REPAIR-ONE-WEIGHTED-PHYSICAL-SHIFT-PRIMITIVE-FIBRE",
             "ARITH-ABC-DIFFUSE-LEAST-REPAIR-PRIMITIVE-SUMMAND-SHIFT-RADICAL-GAP",
@@ -675771,6 +677011,323 @@
           "statements": [],
           "role": "proof",
           "explanation": null
+        },
+        {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_ONE_SIXTH_COEFFICIENT_FRONTIER.md",
+          "sha256": "f2a474c961da8a3f2afd47de838aea7009b44c40f94c726cb30744b310fd9c18",
+          "role": "proof",
+          "claims": [
+            "SRC-QFS-GAP-FREE-QUARTER-NECESSARY-PROFILE",
+            "QFS-QUARTER-RESIDUE-START-AND-ACTUAL-SMALL-PREFIX",
+            "QFS-GAP-FREE-MONIC-FACTOR-NATIVE-PROFILE",
+            "QFS-ARBITRARY-START-PARITY-TARGETS-WITH-TRUE-U",
+            "QFS-FINITE-EIGHT-TERM-NATIVE-PERTURBATION-INVARIANT",
+            "QFS-ONE-SIXTH-ACTUAL-COEFFICIENT-FRONTIER",
+            "QFS-HYPOTHETICAL-QUARTER-COEFFICIENT-VALUATIONS-AND-GRID-OBSTRUCTION"
+          ],
+          "dependencies": [
+            "CWB-DIVIDED-POWER-INTEGRAL-MOMENT-COEFFICIENTS",
+            "CWB-NATIVE-BINARY-RESIDUE-AND-NONPOLYNOMIAL-UNIT-WINDOW",
+            "CWB-CRITICAL-TWO-ANCHORS-AND-PERIODIC-DETECTOR",
+            "CWB-CRITICAL-SIX-WINDOW-FROM-NONPOLYNOMIAL-DETECTOR",
+            "SRC-CWB-NONCRITICAL-NATIVE-WRITTEN-PROOF",
+            "CWB-NECESSARY-DISCRETE-GRID-COUNTEREXAMPLE-OBSTRUCTION"
+          ],
+          "gaps": [],
+          "explanation": "Entire portable written proof with explicit conditional native arithmetic and old CWB theorem premises where used; no computational checker, generic rank or hidden source import.",
+          "statements": [
+            {
+              "locator": "Theorem.** Suppose six consecutive positive factorial moments of f=q+k vanish. After swapping X,Y and dividing the WHOLE phase by an E-unit linear coefficient, one can normalize d=1. Put",
+              "kind": "theorem",
+              "line": 14,
+              "title": "Theorem.** Suppose six consecutive positive factorial moments of f=q+k vanish. After swapping X,Y and dividing the WHOLE phase by an E-unit linear coefficient, one can normalize d=1. Put",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "QFS-HYPOTHETICAL-QUARTER-COEFFICIENT-VALUATIONS-AND-GRID-OBSTRUCTION"
+              ]
+            }
+          ],
+          "unmapped_statements": []
+        },
+        {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_FOUR_TIMES_ODD_GRID_FINITE_CRITICAL_TAIL.md",
+          "sha256": "858a635c0aadcbdb7b3415a7a72ecae54f6bc0c27aab2178706f6e61b2b60e1f",
+          "role": "proof",
+          "claims": [
+            "SRC-QFS-FOUR-TIMES-ODD-GRID-FINITE-TAIL",
+            "QFS-FINITE-DEFORMATION-DEGREE-NATIVE-PERIODICITY",
+            "QFS-CRITICAL-GRID-SIXTH-POWER-FOUR-ANCHOR-SATURATION",
+            "QFS-FINITE-TAIL-PERIODICITY-VERSUS-MIDDLE-ANCHOR",
+            "FACTORIAL-BINARY-CUBE-RESIDUE-FOUR-TIMES-ODD-GRID-FINITE-CRITICAL-TAIL"
+          ],
+          "dependencies": [
+            "CWB-DIVIDED-POWER-INTEGRAL-MOMENT-COEFFICIENTS",
+            "CWB-NATIVE-BINARY-RESIDUE-AND-NONPOLYNOMIAL-UNIT-WINDOW",
+            "SRC-CWB-NONCRITICAL-NATIVE-WRITTEN-PROOF",
+            "CWB-CRITICAL-APPELL-ROOT-MULTIPLICITY"
+          ],
+          "gaps": [],
+          "explanation": "Entire portable written proof with explicit conditional native arithmetic and old CWB theorem premises where used; no computational checker, generic rank or hidden source import.",
+          "statements": [
+            {
+              "locator": "Theorem.** If L is a power of two with L>=2B, no constant",
+              "kind": "theorem",
+              "line": 19,
+              "title": "Theorem.** If L is a power of two with L>=2B, no constant",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "FACTORIAL-BINARY-CUBE-RESIDUE-FOUR-TIMES-ODD-GRID-FINITE-CRITICAL-TAIL"
+              ]
+            }
+          ],
+          "unmapped_statements": []
+        },
+        {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_POLYNOMIAL_RESIDUE_ONE_AXIS_LARGE_CONSTANT_WINDOWS.md",
+          "sha256": "4161219bcbbea71bcbbb99d2583746f07274d30f4bf051395f36fa35451d2e0d",
+          "role": "proof",
+          "claims": [
+            "SRC-QFS-POLYNOMIAL-ONE-AXIS-SECTOR",
+            "QFS-POLYNOMIAL-NATIVE-INTEGRAL-RATIONAL-CONSTANT-CONGRUENCE",
+            "QFS-POLYNOMIAL-UNIT-AXIS-SLOPES-AND-SMALL-AXIS-VALUES",
+            "QFS-POLYNOMIAL-INTERIOR-FORCING-AND-SIGMA-BOUND",
+            "QFS-POLYNOMIAL-UNIT-POLE-REMOVAL-FIVE-WINDOW",
+            "QFS-POLYNOMIAL-ACTUAL-FIVE-SIX-SUPPORT-SPECIALIZATION",
+            "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-FIVE-WINDOW",
+            "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-ACTUAL-SUPPORT"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "explanation": "Entire portable written proof with explicit conditional native arithmetic and old CWB theorem premises where used; no computational checker, generic rank or hidden source import.",
+          "statements": [
+            {
+              "locator": "Theorem.** Suppose",
+              "kind": "theorem",
+              "line": 6,
+              "title": "Theorem.** Suppose",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-FIVE-WINDOW",
+                "FACTORIAL-BINARY-QUADRATIC-POLYNOMIAL-ONE-AXIS-LARGE-CONSTANT-ACTUAL-SUPPORT"
+              ]
+            }
+          ],
+          "unmapped_statements": []
+        },
+        {
+          "path": "factorial/image-rigidity/BINARY_QUADRATIC_QUARTER_CRITICAL_NO_GAP_SIX_WINDOW.md",
+          "sha256": "411a918c5062d46bc9ca73720999803a9d6c8742204823621501de9d0e4a3d45",
+          "role": "proof",
+          "claims": [
+            "SRC-QFS-NO-GAP-QUARTER-SIX-WINDOW",
+            "QFS-INTEGRAL-TWELFTH-ROOT-PARAMETERIZATION",
+            "QFS-PI16-FOUR-UNIVERSAL-NATIVE-ROWS",
+            "QFS-FOUR-ROW-UNIT-PIVOT-QUARTER-CONTRADICTION",
+            "QFS-NECESSARY-REMAINING-CRITICAL-L8-AND-HIGHER",
+            "FACTORIAL-BINARY-QUADRATIC-QUARTER-CRITICAL-NO-GAP-SIX-WINDOW",
+            "FACTORIAL-BINARY-QUADRATIC-NONPOLYNOMIAL-COUNTEREXAMPLE-CRITICAL-L8-FRONTIER"
+          ],
+          "dependencies": [
+            "QFS-ONE-SIXTH-ACTUAL-COEFFICIENT-FRONTIER",
+            "QFS-GAP-FREE-MONIC-FACTOR-NATIVE-PROFILE",
+            "QFS-ARBITRARY-START-PARITY-TARGETS-WITH-TRUE-U",
+            "CWB-NECESSARY-RESIDUAL-ONE-POLE-CRITICAL-FRONTIER"
+          ],
+          "gaps": [],
+          "explanation": "Entire portable written proof with explicit conditional native arithmetic and old CWB theorem premises where used; no computational checker, generic rank or hidden source import.",
+          "statements": [
+            {
+              "locator": "Theorem.** If Rbar(T)=sum_j Rbar_j T^j is nonpolynomial and v(k)=3/4, then q+k has no six consecutive zero factorial moments at any positive start.",
+              "kind": "theorem",
+              "line": 10,
+              "title": "Theorem.** If Rbar(T)=sum_j Rbar_j T^j is nonpolynomial and v(k)=3/4, then q+k has no six consecutive zero factorial moments at any positive start.",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "FACTORIAL-BINARY-QUADRATIC-QUARTER-CRITICAL-NO-GAP-SIX-WINDOW"
+              ]
+            },
+            {
+              "locator": "Corollary.** Under the theorem's natural integrality hypothesis, any",
+              "kind": "corollary",
+              "line": 124,
+              "title": "Corollary.** Under the theorem's natural integrality hypothesis, any",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "FACTORIAL-BINARY-QUADRATIC-NONPOLYNOMIAL-COUNTEREXAMPLE-CRITICAL-L8-FRONTIER"
+              ]
+            }
+          ],
+          "unmapped_statements": []
+        },
+        {
+          "path": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_AUXILIARY_POLYNOMIAL_RATIONAL_BIAS.md",
+          "sha256": "49e3187b8d3375e8966bc280865f4e0a9c981ed4a5b64389c3e9e2503b50e154",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-OPPOSED-DIFFUSE-PUISEUX-HEIGHT-BRANCHES"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem.** Any local branch with infinitely many ordinary",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS"
+              ]
+            }
+          ],
+          "explanation": "For a fixed core, two opposed fixed-gap types and fixed signed gap, every positive rational-bias branch with infinitely many ordinary collisions lies on a rational algebraic height curve. Multiple and boundary contacts are included."
+        },
+        {
+          "path": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_AX_BRANCH_RANK.md",
+          "sha256": "aa3ff8f141d60ca6a09d5bc9bf321cb9f947e4d9caf4575526e455c29b79f466",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-OPPOSED-AX-BRANCH-RANK"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-OPPOSED-DIFFUSE-PUISEUX-HEIGHT-BRANCHES",
+            "FACTORIAL-MULTIVARIATE-OPPOSED-INDEPENDENT-HEIGHT-RATIONAL-BIAS",
+            "FACTORIAL-MULTIVARIATE-OPPOSED-AUXILIARY-POLYNOMIAL-RATIONAL-BIAS"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem.** Near every positive interior contact of rational",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-OPPOSED-AX-BRANCH-RANK"
+              ]
+            }
+          ],
+          "explanation": "At every terminal, sufficiently high two-type opposed profiles of a fixed core, gaps and signed gap are collision-free near positive interior rational-bias contacts. At irrational interior bias their only possible gcd degree is two at an exact collision. Accumulation at a positive boundary contact needs at least two independent character relations."
+        },
+        {
+          "path": "factorial/image-rigidity/MULTIVARIATE_OPPOSED_ALGEBRAIC_CURVE_PRIME_GRID.md",
+          "sha256": "278c4e137693debd351c026fa94b97594ae0563a71fa00f8febae64488f748bd",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-OPPOSED-ALGEBRAIC-CURVE-PRIME-GRID"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-OPPOSED-MARK-PRODUCT-HEIGHT-CONSTRAINT",
+            "FACTORIAL-MULTIVARIATE-EFFECTIVE-ABSOLUTE-EVENTUAL-ANGLES"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem.** At a common factor of degree at least \\(q\\), the",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-OPPOSED-ALGEBRAIC-CURVE-PRIME-GRID"
+              ]
+            }
+          ],
+          "explanation": "An exact divisibility condition on prescribed rational height curves for two opposed fixed-gap types of fixed signed gap. It gives a computable all-degree height threshold on fixed rational polynomial trajectories with strictly smaller tall-row gap and sufficiently large counts."
+        },
+        {
+          "path": "factorial/image-rigidity/SFC_EQUIVARIANT_DEGREE_ORBIT_WINDOWS.md",
+          "sha256": "e751d5b1f658944930f78db706adefd522006c56d2517098bb14499e153d18ef",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-EQUIVARIANT-DEGREE-ORBIT-WINDOWS"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-MIXED-DEGREE-TOP-BLOCK-WINDOWS",
+            "FACTORIAL-MULTIVARIATE-MIXED-DEGREE-SINGLETON-FOREIGN-BLOCKS"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem.** There is a dilation threshold independent",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-EQUIVARIANT-DEGREE-ORBIT-WINDOWS"
+              ]
+            }
+          ],
+          "explanation": "For any fixed support whose occupied degrees each form a single coordinate-permutation orbit, sufficiently large common dilation gives a window of length e times the number of occupied degrees for coefficients equivariant under a character of order e. This is at most the actual support size."
+        },
+        {
+          "path": "factorial/image-rigidity/SFC_COMMON_SCALAR_SADDLE_OBSTRUCTION.md",
+          "sha256": "eee92184292c8a2c113d78822244fa4486880f5f54b4c38c6ec9e25acc4e7101",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-COMMON-SCALAR-SADDLE-OBSTRUCTION"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-MIXED-DEGREE-AGGREGATED-SADDLES"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Proposition.** For sufficiently large dilation,",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-COMMON-SCALAR-SADDLE-OBSTRUCTION"
+              ]
+            }
+          ],
+          "explanation": "With unrestricted block coefficients, including two-column restrictions, a shared active-face correction in the stated scalar form forces the two face conditions and equality of the aggregate ratio measures. The same conditions suffice at large common dilation."
+        },
+        {
+          "path": "factorial/image-rigidity/SFC_TERNARY_CUBIC_TRIADIC_BOUND.md",
+          "sha256": "427cdde23cd71b6f12391476f707d1bb53b5389c6a491e5589d3925a6f08cdcc",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-TERNARY-CUBIC-TRIADIC-BOUND"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-HOMOGENEOUS-TERNARY-SHIFTED-GATE-REDUCTION"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "For a cubic Gaussian gate with nonzero cubic coefficient, every triple of consecutive zero forms satisfies the two three-adic valuation bounds in equation (1). The centered case and all rational triples are excluded at every positive start."
+        },
+        {
+          "path": "arithmetic/ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md",
+          "sha256": "580d66db5ddd535794ac8bf30d415263e5d48c748479a2843475bfb15fb2a2e6",
+          "role": "proof",
+          "claims": [
+            "ERDOS-364-VARIABLE-CONTACT-RECTANGLE",
+            "ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT",
+            "ERDOS-364-GLOBAL-SIX-OVER-TWENTY-FIVE"
+          ],
+          "dependencies": [
+            "EXT-ERDOS-364-PLYMESSER-PAIRWISE-ESTIMATES",
+            "EXT-ERDOS-364-CCDN-CURVE-COUNTS",
+            "EXT-ERDOS-364-CCDN-LEADING-FORM-COUNT",
+            "ERDOS-364-PAIRWISE-EXTREMIZER"
+          ],
+          "gaps": [
+            "GAP-ERDOS-364-POINTWISE-ELLIPTIC-LIFT"
+          ],
+          "statements": [
+            {
+              "locator": "Pair selection and the contact width",
+              "nodes": [
+                "ERDOS-364-VARIABLE-CONTACT-RECTANGLE"
+              ]
+            },
+            {
+              "locator": "The two plane projections of a pair component",
+              "nodes": [
+                "ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT"
+              ]
+            },
+            {
+              "locator": "Counting intervals with small leading forms",
+              "nodes": [
+                "ERDOS-364-AVERAGED-DEGREE-TEN-PAIR-COUNT",
+                "ERDOS-364-GLOBAL-SIX-OVER-TWENTY-FIVE"
+              ]
+            },
+            {
+              "locator": "Scope of the elliptic estimate",
+              "nodes": [
+                "GAP-ERDOS-364-POINTWISE-ELLIPTIC-LIFT"
+              ]
+            }
+          ],
+          "explanation": "Variable contact rectangles, two boundary projections, and a leading-form-sensitive averaged count at 6/25 with explicit imported pair lattice and curve estimates."
         }
       ]
     },

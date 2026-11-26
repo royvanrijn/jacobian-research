@@ -12,6 +12,8 @@ The solved input has coherent coordinate one. A common zero
 with \(r\ne0\) therefore gives a formal coherent direction
 invisible to all seventeen rows. The question whether this
 locus is empty over \(\overline{\mathbb Q}\) remains open.
+The four-point boundary restriction implies that the locus
+itself is finite.
 
 ## A single norm for the common-root condition
 
@@ -216,6 +218,136 @@ off-component points on \(L_2\) with \(v/\ell=2/17\) or
 two. The earlier transverse restrictions remain in force on
 the two off-component points.
 
+## Finiteness of the actual blind locus
+
+**Corollary (finite seventeen-row exceptional algebra).**
+For the degree-\((5,1)\) family, only finitely many geometric
+phases can fail formal coherent detection in rows
+\(0,\ldots,16\) with correction degree at most two.
+The normalized residual algebra has length at most \(5670\).
+Its horizontal model at \(331\) is finite flat and splits after
+completion into at most four local algebras, each of even rank.
+
+Let \(R=\mathbb Z_{(331)}\), and put the normalized blind scheme
+\(Z\) in the chart \(T=1\) of
+\(\mathbb P_R(2,1,2,1,2,1)\) with coordinates
+\((r,\ell,h,v,w,T)\). The exact \(r=0\) certificate makes
+\(r\) a unit on \(Z\). Take the schematic closure of \(Z\)
+over \(\mathbb Q\), then its schematic closure
+\(\mathscr Z\) over \(R\). In homogeneous coordinates this is
+the saturation of the weighted homogenized residual ideal by
+\(331rT\), followed by \(\operatorname{Proj}\). Saturation by
+\(rT\) takes the closure from the original chart. Contraction
+from \(\mathbb Q\), or saturation by \(331\), makes the affine
+coordinate rings \(331\)-torsion free. Thus \(\mathscr Z\) is
+flat over the DVR \(R\), and its underlying space is the closure
+of its generic fibre.
+
+Take a closed point of the special fibre and a generic point
+of a horizontal component specializing to it. The closed
+generic-fibre points specializing to the chosen closed point
+are dense in that generic component. In particular one can
+choose such a point in \(Z\), since \(Z\) is dense and open
+in the projective closure over \(\mathbb Q\).
+[Stacks, Lemma 37.52.4](https://stacks.math.columbia.edu/tag/053U).
+Its residue field is a number field. The specialization is
+realized by a DVR of that number field at a place above \(331\).
+[Stacks, Lemma 28.5.10](https://stacks.math.columbia.edu/tag/054F).
+The four-point theorem applies at this place. Consequently the
+closed points of the special fibre, and hence its support, lie
+in the four allowed points. This argument uses the proper
+horizontal closure, including possible nonreduced fibres.
+
+The special fibre has dimension at most zero. Proper upper
+semicontinuity gives the same bound for the generic fibre.
+The finite scheme \(Z\) is then already closed in the projective
+generic fibre. Both fibres of \(\mathscr Z\) are finite, so
+properness gives finiteness over \(R\).
+[Stacks, Lemmas 37.30.5](https://stacks.math.columbia.edu/tag/0D4I)
+[and 37.44.1](https://stacks.math.columbia.edu/tag/02LS).
+Solving the correction and angular pivots and adjoining
+\(b\) with \(b^2=r\) gives precisely the exceptional phases.
+The sign rotation of the top transfers this to the plus convention.
+
+### Length bound
+
+The prefix \(S_7,S_8,S_9\) is the rank-84 finite free algebra
+over \(\mathbb Q[v,w]\) above. The same homogeneous
+integrality test shows that all its points over \((v,w)=(1,1)\)
+are integral above \(331\). On that fibre the prefix and \(S_{10}\)
+generate the unit ideal after reduction at \(331\).
+Thus every characteristic-zero root of the prefix on that
+fibre has \(S_{10}\ne0\).
+
+Each irreducible component of the finite flat prefix dominates
+the plane. Indeed nonzero base polynomials act as
+nonzerodivisors, so the minimal primes contract to zero, and
+a finite dominant map is surjective. In particular \(S_{10}\)
+does not vanish identically on any component. The first four
+rows cut to dimension at most one. Since the full residual
+locus is finite, a rational linear combination of \(S_{11}\)
+through \(S_{16}\) can avoid every one-dimensional component
+of this intersection. The five chosen equations have weighted
+degrees at most \(6,7,8,9,15\).
+
+To count scheme lengths, pull back by \(r=x_r^2,\ h=x_h^2,\ w=x_w^2\)
+and leave \(\ell,v\) fixed. This finite free map multiplies
+length by eight and converts the degree bounds to ordinary
+degrees. The five equations form a regular sequence wherever
+the final scheme is nonempty. The first three form a complete
+intersection by finiteness over the plane, and the last two
+avoid the components at the respective stages. Flatness of
+the squaring map preserves the regular sequence. In the
+total-degree filtration of a quotient by an initial part of
+the sequence, multiplication by the next regular element
+of degree at most \(d\) embeds \(F_{n-d}\) into the part of
+its ideal in \(F_n\). Taking the leading term of the Hilbert
+polynomial bounds the new degree by \(d\) times the old one.
+This proves the affine Bézout bound with scheme lengths even
+when the equations have extra projective components at infinity.
+Thus \(\operatorname{length}Z\le 6\cdot7\cdot8\cdot9\cdot15/8=5670\).
+Adjoining \(b\) multiplies that length by two.
+
+### A common chart and four local factors
+
+Put \(G=v^2+w\), of weight two. It is nonzero at all four
+allowed special points. Thus \(D_+(G)\) contains the entire
+horizontal model: the proper closed complement has empty
+special fibre. In that chart the weight-zero function \(w/G\)
+has distinct residues \(0,1,110,205\). The first two refer
+to the \(L_3\) endpoints with \(w=0\) and \(v=0\), respectively.
+The last two refer to the \(L_2\) points with ratios
+\(2/17,5/56\) in that order.
+
+A finite algebra over the complete local ring \(\mathbb Z_{331}\)
+splits into the local factors supported at its closed points.
+Equivalently, the characteristic polynomial of multiplication
+by \(w/G\) separates the four residue clusters by Hensel
+factorization. Their degrees are the corresponding
+special-fibre lengths, as the points are rational over
+\(\mathbb F_{331}\).
+[Stacks, Lemma 10.153.4](https://stacks.math.columbia.edu/tag/04GH).
+
+The involution \((\ell,v)\mapsto(-\ell,-v)\) preserves the
+homogeneous ideal by parity and fixes all support points at
+\(T=0\) by weighted scaling. It has no fixed geometric point
+of \(Z\), since the \(v=0\) slice is excluded. It preserves
+each completed local factor. The geometric generic points
+of each factor therefore occur in pairs of equal scheme
+length, so each factor has even rank.
+
+One explicit affine presentation for computation is to
+set \(G=1\), substitute \(w=1-v^2\) in the weighted
+homogenized rows, and saturate by \(rT\) over \(\mathbb Q\).
+The generic algebra so obtained is a degree-two finite étale
+cover of the normalized exceptional algebra, adjoining a
+square root \(T\) of \(G^{-1}\) in its original affine
+coordinates. The normalized algebra is the invariant algebra
+under simultaneous sign on \(\ell,v,T\). In the integral
+calculation saturate also by \(331\) before taking a special
+fibre. The equations give a zero-dimensional computation;
+their exact length and points have yet to be determined.
+
 ## Exact coherent blindness through shift 12
 
 **Proposition (shift 13 is necessary in any uniform initial window).**
@@ -278,10 +410,10 @@ Run the exact computations with SageMath 10.9.
 
     sage -python research/foundations/extended-geometry/verify_cm_newton_seventeen_row_locus.py
 
-The two projected cuts and the finite plane projection give
-necessary loci for an algebraic blind marker through shift 16.
-Deciding the residual equations on those loci remains a
-characteristic-zero calculation. Coherent detection on the
+Any seventeen-row blind marker projects to one of the
+two specified cuts. The actual exceptional algebra is finite.
+Its exact degree and defining polynomials in triangular form
+remain to be computed over characteristic zero. Coherent detection on the
 [fixed-boundary stratum](CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md)
 controls the full response there, with a separate finite
 cutoff. It does not prescribe the seventeen-shift cutoff.

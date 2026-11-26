@@ -238,7 +238,7 @@ The fixed-anchor argument of RRP4 gives arbitrary radical
 growth for composite repair orders. On a same-tail chart the
 following joint count gives a price for each factor using both
 original completions.
-[Fixed-anchor radical growth RRP4](ABC_REDUCED_TARGET_RADICAL_ODDS.md#generic-normalized-differences-have-large-radical)
+[Fixed-anchor radical growth RRP4](ABC_REDUCED_TARGET_RADICAL_ODDS.md#a-necessary-large-radical-on-normalized-repaired-differences)
 
 Fix any desired integer \(j\ge1\), and fix distinct primes
 \(\ell_1,\ldots,\ell_j\ge5\). Choose the repair order

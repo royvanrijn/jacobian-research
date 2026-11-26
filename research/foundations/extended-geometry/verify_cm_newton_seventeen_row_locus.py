@@ -271,7 +271,22 @@ def verify_finite_even_projection(rows):
         for row in (*rows[:3], rows[4])
     ]
     assert ring.ideal(specialized).groebner_basis() == [1]
-    print("Finite projection over the even coefficients: rank 84 and a unit norm at the origin")
+    at_one = [
+        sum(ring({tuple(e[:3]): field(c)}) for e, c in row.dict().items())
+        for row in rows[:4]
+    ]
+    assert ring.ideal(at_one).groebner_basis() == [1]
+    print("Finite projection: rank 84, and unit norms for rows 11 at the origin and 10 at (1,1)")
+
+
+def verify_horizontal_chart():
+    field = GF(331)
+    slopes = [field(0), field(1), field(2)/17, field(5)/56]
+    values = [field(1), field(0), *((8*v-1)/17 for v in slopes[2:])]
+    g = [v*v+w for v, w in zip(slopes, values, strict=True)]
+    assert all(g)
+    assert [w/a for w, a in zip(values, g, strict=True)] == [1, 0, 110, 205]
+    print("One horizontal chart separates the four residue clusters")
 
 
 def verify_row_twelve_witness(rows):
@@ -317,6 +332,7 @@ if __name__ == "__main__":
     verify_rank_three_norm(residuals)
     verify_rank_two_prefix(residuals)
     verify_finite_even_projection(residuals)
+    verify_horizontal_chart()
     verify_row_twelve_witness(residuals)
     verify_angular_zero_slice(residuals)
     verify_affine_slices(residuals)

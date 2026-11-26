@@ -870,6 +870,19 @@ excludes escape. At irrational interior bias a prescribed rational
 algebraic relation in the two heights also suffices. Two groups of
 affine types are covered when their limiting clock directions are
 independent.
+The [auxiliary-polynomial theorem](MULTIVARIATE_OPPOSED_AUXILIARY_POLYNOMIAL_RATIONAL_BIAS.md)
+forces any accumulating rational-bias branch onto a rational
+algebraic height curve. The [common-factor rank theorem](MULTIVARIATE_OPPOSED_AX_BRANCH_RANK.md)
+excludes every positive interior rational-bias contact, including
+multiple and tangential contacts. At irrational interior bias any
+sufficiently high exact collision has a quadratic greatest common
+divisor. At the boundary, accumulation requires at least two
+independent multiplicative relations among the factorial
+multipliers. On prescribed algebraic height curves the
+[prime-grid theorem](MULTIVARIATE_OPPOSED_ALGEBRAIC_CURVE_PRIME_GRID.md)
+restricts which active-row factors can absorb tall-row marks. It
+gives an effective all-degree cutoff on rational polynomial height
+trajectories when the gap of the taller row is smaller.
 The [paired prime-mark descent](MULTIVARIATE_PAIRED_PRIME_MARK_AFFINE_DESCENT.md)
 forces exact affine alignment for independently varying
 opposed heights when both first factors have sufficiently
@@ -2394,6 +2407,9 @@ both excluded at orders \(2,3,4\). The
 [dyadic Gaussian comparison](SFC_COLLINEAR_TERNARY_EVEN_START_AND_DYADIC_REDUCTION.md)
 excludes every fixed even start for the collinear ternary gate
 and leaves one valuation pair at odd starts.
+The [three-adic cubic criterion](SFC_TERNARY_CUBIC_TRIADIC_BOUND.md)
+excludes all rational noncollinear cubic parameters and the centered
+cubic gate over any characteristic-zero field, at every start.
 
 For mixed-degree dilation, the
 [singleton-block theorem](SFC_MIXED_DEGREE_SINGLETON_FOREIGN_BLOCKS.md)
@@ -2410,6 +2426,13 @@ The [aggregate saddle theorem](SFC_MIXED_DEGREE_AGGREGATED_SADDLES.md)
 allows those exponents to vary. Under its face conditions the
 weighted exponent-ratio measure characterizes the shared local
 critical correction used in the all-order filter.
+The [scalar phase obstruction](SFC_COMMON_SCALAR_SADDLE_OBSTRUCTION.md)
+shows both face conditions are necessary for that exact correction
+with unrestricted block coefficients. The
+[degree-orbit window](SFC_EQUIVARIANT_DEGREE_ORBIT_WINDOWS.md) uses
+exact equalities of local integrals on symmetry-compatible orders.
+It allows arbitrary face patterns for equivariant coefficients
+when each degree is a single coordinate-permutation orbit.
 
 For binomials, the
 [unpaired-envelope theorem](MULTIVARIATE_UNPAIRED_ENVELOPE_MULTISCALE_MARKS.md)
