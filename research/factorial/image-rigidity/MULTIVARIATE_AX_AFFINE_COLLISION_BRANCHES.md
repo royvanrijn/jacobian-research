@@ -7,8 +7,9 @@ fixed nonzero integer gaps \(d_i\). The count of a type is
 \(rc_i+s_i\), where the nonnegative integers \(c_i\) are not
 all zero, the \(s_i\) are fixed integers, and
 \(\sum_i c_i d_i=0\). Only ordinary heights and nonnegative
-integer counts are used in the conclusion. The total profile
-must have distinct exponent columns. Fix adjacent orders
+integer counts are used in the conclusion. At least one moving
+row must be present, and the total profile must have distinct
+exponent columns. Fix adjacent orders
 \(n,N=n+1\), \(n\ge2\), at which the
 [affine divisor matrix](MULTIVARIATE_AFFINE_DIVISOR_RANK_DIFFUSE_EXCLUSION.md)
 has full row rank.
@@ -183,8 +184,8 @@ class and translate the integer parameter to make the
 smaller-exponent intercepts nonnegative. The theorem applies
 on each such class. If no admissible residue class exists,
 the candidate branch cannot contain the original profiles.
-A constant branch of coincident monomials is likewise
-outside the distinct-column hypothesis. This excludes every
+A constant branch with no moving row, or with coincident
+monomials, is outside the stated hypotheses. This excludes every
 accumulating ordinary collision.
 
 ## Effective isolation at zero strength
@@ -255,8 +256,8 @@ root case gives the product one. A first nonzero coefficient
 of one of its weight monomials is found by finite search.
 The corresponding Cauchy remainder bound then gives a
 computable punctured disk on which the reduced equations do
-not vanish together. The removed lines contain no admissible
-positive integer collisions by the affine-ray argument.
+not vanish together. Every removed line has a repetition parameter that fails the
+ordinary hypotheses, by the affine-ray argument.
 This provides the desired uniform zero-strength height bound.
 
 At strictly positive strengths the effective

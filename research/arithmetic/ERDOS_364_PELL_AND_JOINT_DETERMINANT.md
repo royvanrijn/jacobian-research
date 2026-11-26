@@ -1,6 +1,6 @@
 # Pell descent and a joint surface cover for Erdős #364
 
-Let \(C(X)\) count integers \(2\le n\le X\) for which \(n-1,n,n+1\) are all powerful. An integer is powerful if every positive prime valuation is at least two. The Pell reduction separates the candidates whose centers are fundamental Pell traces. Combining estimates from two papers by Plymesser lowers the exponent for \(C(X)\) from \(77/320\) to \(293/1220\), conditional on the inputs stated below. A separate joint determinant gives a cover by surfaces near the only maximizer of the original pairwise bound. Counting points on those surfaces remains open.
+Let \(C(X)\) count integers \(2\le n\le X\) for which \(n-1,n,n+1\) are all powerful. An integer is powerful if every positive prime valuation is at least two. The Pell reduction separates the candidates whose centers are fundamental Pell traces. Combining estimates from two papers by Plymesser lowers the exponent for \(C(X)\) from \(77/320\) to \(293/1220\), conditional on the inputs stated below. A joint determinant gives a surface cover in every dyadic kernel box. A point count on the surfaces in the near-binding boxes would lower the exponent to \(6/25\).
 
 ## Pell descent and minimal repair
 
@@ -55,7 +55,7 @@ B_{\rm red}=\theta-\frac{81}{64}w^2
 
 where \(v_+=\max(v,0)\). Indeed the two reduced-coordinate maxima are \((s-m)/2+(d-m)_+/2\) and \((h-m)/2+(3d/2-m)_+/2\), with weights \(3/10\) and \(1/5\).
 
-For \(0\le\eta\le1/2000\), suppose every pair has \(\Phi\ge\theta-\eta\). Sort the three exponents as \(a\le b\le c\). If \(a<1/100\), then \(b>0.23\) and \(b+c<0.51\) by the bounds on pair sums from \(s,h\ge\theta-\eta\). Thus \((b,c)\) lies in the gate, with \(s>0.46\), \(h>0.24\), \(m>0.12\), and \(d<0.05\). Both positive parts vanish, contradicting \(B_{\rm red}\ge\theta-\eta\) since \(s>0.46\). Therefore all pairs lie in the gate.
+For \(0\le\eta\le1/1600\), suppose every pair has \(\Phi\ge\theta-\eta\). Sort the three exponents as \(a\le b\le c\). If \(a<1/100\), then \(b>0.23\) and \(b+c<0.51\) by the bounds on pair sums from \(s,h\ge\theta-\eta\). Thus \((b,c)\) lies in the gate, with \(s>0.46\), \(h\ge0.24\), \(m>0.12\), and \(d<0.05\). Both positive parts vanish, contradicting \(B_{\rm red}\ge\theta-\eta\) since \(s>0.46\). Therefore all pairs lie in the gate.
 
 Put \(\kappa=(8/9)\sqrt\eta\) and \(e=20\eta/3\). When \(|w|>\kappa\), at least one positive part must be active. Separating \(d\le m\) and \(d\ge m\) gives, respectively,
 
@@ -99,9 +99,9 @@ F(X)\le C(X)\ll_\varepsilon X^{293/1220+\varepsilon},\qquad
 
 This transfer uses the fixed-shift pair estimates and the component and lattice bounds of the first paper, and the contact-weight Proposition 5.7 of the second. It does not apply the theorem on powerful quadratic values to \(n^2-1\), whose discriminant is a square. The deduction is written here with the source estimates as inputs. The relevant written proof passages were inspected, with no replay of either formal development.
 
-## A joint determinant near the maximizing box
+## A joint determinant in all dyadic boxes
 
-Work at center height \(X\le n\le 2X\), with each kernel in a dyadic interval \([B_i,2B_i)\) and \(B_i=X^{\beta_i}\), \(|\beta_i-1/6|\le\rho\). Put \(A_i=X^{1/2}/B_i^{3/2}\) and normalize the slopes by
+Work at center height \(X\le n\le 2X\), with each kernel in a dyadic interval \([B_i,2B_i)\) and \(B_i\ge1\). Put \(A_i=X^{1/2}/B_i^{3/2}\) and normalize the slopes by
 
 \[
 r_\pm=\frac{b_\pm/B_\pm}{b_0/B_0},\qquad
@@ -118,20 +118,19 @@ G_0=b_-^3a_-^2-2b_0^3a_0^2+b_+^3a_+^2=0.
 
 It is irreducible. In the chart \(b_0a_0\ne0\) with unscaled ratios, solving for \((a_+/a_0)^2\) gives \((2-r_-^3s_-^2)/r_+^3\) in the rational function field of the other ratios. This has odd valuation along \(r_+=0\) and is not a square. The quadratic is primitive over the polynomial ring in the other ratios. No homogeneous factor can be supported on the excluded coordinate hyperplanes, since neither \(b_0\) nor \(a_0\) divides \(G_0\).
 
-Take bidegrees \((B,A)\), with \(B\ge3\) and \(A\ge2\). Choose a monomial basis modulo \(G_0\) by omitting multiples of its leading monomial. Its size is
+Take bidegrees \((3L,2L)\) for a positive integer \(L\). Let \(N_L=\binom{3L+2}{2}\binom{2L+2}{2}\). Choose the quotient basis by omitting multiples of the leading monomial of \(G_0\). Its size is
 
 \[
-H=\binom{B+2}2\binom{A+2}2-\binom{B-1}2\binom A2
-  =\tfrac12 BA(3A+2B)+O((A+B)^2).
+H=N_L-N_{L-1}=36L^3+O(L^2).
 \]
 
-For any \(h\times h\) minor of the evaluation matrix, factor out the \(h\) row factors \((b_0/B_0)^B(a_0/A_0)^A\). The remaining monomial in each column has a scale \(\prod_i B_i^{j_i}A_i^{k_i}\) where \(\sum_i j_i=B\), \(\sum_i k_i=A\). It is at most \(X^D\), where
+Factor out from each row \((b_0/B_0)^{3L}(a_0/A_0)^{2L}\), bounded uniformly at fixed \(L\). The remaining scale of the column for a monomial \(m=b^{\mathbf j}a^{\mathbf k}\) is \(\sigma(m)=\prod_i B_i^{j_i}A_i^{k_i}\). Over all monomials of bidegree \((3L,2L)\) the aggregate exponents of each \(B_i,A_i\) are \(LN_L, (2/3)LN_L\) by symmetry. Since \(B_i^3A_i^2=X\), their scale product is \(X^{LN_L}\). The omitted monomials are the leading monomial of \(G_0\), of scale \(X\), times the entire rectangle of bidegree \((3L-3,2L-2)\). The omitted scale product is \(X^{LN_{L-1}}\). Thus over the quotient basis
 
 \[
-D=B(1/6+\rho)+A(1/4+3\rho/2).
+\prod_m \sigma(m)=X^{LH}.
 \]
 
-The row factors are bounded at fixed degrees. The scale bound accounts for numerator as well as denominator heights when the kernels have different dyadic sizes. After removing these factors the matrix entries are analytic functions of the two scaled slopes and \(t\) on a fixed neighborhood of the expansion centers. The minor is bounded by a constant times \(X^{hD-W(h)}\), where \(W(h)\) sums the \(h\) smallest values of \(\mu_-i+\mu_+j+k\) for \(i,j,k\ge0\), with multiplicity. To see this, Taylor expand each column to a fixed total degree high enough that every remainder is \(O(X^{-W(h)})\). A determinant term with repeated Taylor monomials vanishes by multilinearity, and each term with distinct monomials has total weight at least \(W(h)\). Constants here are uniform in the box and the cell, with degrees and weights fixed before \(X\) grows.
+In any nonempty box \(B_i^3\le2X+1\), so every \(A_i\) is bounded below by an absolute positive constant. Together with \(B_i\ge1\) this gives \(\sigma(m)\gg_L1\) and bounds the scale product of any column subset by \(O_L(X^{LH})\). After removing row and column factors, the entries are analytic functions of the two scaled slopes and \(t\) on a fixed neighborhood of the expansion centers, including when one of the kernel intervals is bounded. Any \(h\)-row, \(h\)-column minor in the original integer matrix is therefore \(O(X^{LH-W(h)})\), where \(W(h)\) sums the \(h\) smallest values of \(\mu_-i+\mu_+j+k\) for \(i,j,k\ge0\), with multiplicity. Indeed, Taylor expand each normalized column to a fixed total degree high enough that every remainder is \(O(X^{-W(h)})\). A determinant term with repeated Taylor monomials vanishes by multilinearity, and distinct monomials have total weight at least \(W(h)\). The constants are uniform over all boxes and cells at fixed degrees and widths.
 
 The number of weights at most \(v\) is \(v^3/(6\mu_-\mu_+)+O_{\mu_-,\mu_+}(v^2+1)\), by counting unit cubes against the weighted simplex. Inverting this estimate for the ordered weights and summing gives
 
@@ -139,17 +138,17 @@ The number of weights at most \(v\) is \(v^3/(6\mu_-\mu_+)+O_{\mu_-,\mu_+}(v^2+1
 \frac{W(h)}h=\frac34(6h\mu_-\mu_+)^{1/3}+O_{\mu_-,\mu_+}(1).
 \]
 
-Choose \(B=3L\), \(A=2L\). Then \(H=36L^3+O(L^2)\) and \(D=L(1+6\rho)\). The choice maximizes the leading \(H\) for fixed cost \(B/6+A/4\), since \(3A+2B=12(B/6+A/4)\) and \(BA\le6(B/6+A/4)^2\). If
+Since \(H=36L^3+O(L^2)\), the condition
 
 \[
-\mu_-\mu_+>\frac8{729}(1+6\rho)^3,
+\mu_-\mu_+>\frac8{729}
 \]
 
-then a sufficiently large fixed \(L\) gives \(W(H)>HD\). The determinant before normalization is an integer, so every full minor vanishes for large \(X\). With the same strict inequality one can choose a fixed \(\lambda<1\) close enough to 1 that \(W(\lceil\lambda H\rceil)>\lceil\lambda H\rceil D\) for large fixed \(L\). Thus the evaluation rank is less than \(\lceil\lambda H\rceil\), and its kernel gives many relations linearly independent modulo \(G_0\). Integer coefficient vectors follow by taking minors of a maximal-rank integer submatrix. Their coefficients have size \(O(X^{HD})\), since an original evaluation has size \(O(X^D)\).
+gives \(W(H)>LH\) for sufficiently large fixed \(L\). It also gives \(W(\lceil\lambda H\rceil)>LH\) for a fixed \(\lambda<1\) sufficiently close to 1, since the ratio \(W(\lceil\lambda H\rceil)/(LH)\) tends to \((9/2)(\mu_-\mu_+)^{1/3}\lambda^{4/3}\). All these minors vanish by integrality for large \(X\), so the evaluation rank is less than \(\lceil\lambda H\rceil\). Its kernel gives relations linearly independent modulo \(G_0\), with integer coefficient vectors of size \(X^{O_L(1)}\) obtained from minors of a maximal-rank integer submatrix.
 
-In each nonempty cell, one such relation intersects the irreducible \(V\) properly, in dimension at most two. The components have bounded degree and number for fixed \(L\), by Bézout in the Segre embedding after multiplying the bihomogeneous equations by powers of \(a_0,b_0\) to give equal bidegrees. Those coordinate hyperplanes are outside the positive chart. The number of rectangles is \(O(X^{\mu_-+\mu_+})\). At equal widths this proves a surface cover with exponent arbitrarily close to \(4\sqrt2/27\) from above by choosing a sufficiently small fixed \(\rho>0\).
+In each nonempty cell, one such relation intersects the irreducible \(V\) properly, in dimension at most two. The components have bounded degree and number for fixed \(L\), by Bézout in the Segre embedding after multiplying the bihomogeneous equations by powers of \(a_0,b_0\) to give equal bidegrees. Those coordinate hyperplanes are outside the positive chart. The number of rectangles is \(O(X^{\mu_-+\mu_+})\). Taking equal widths and summing over the dyadic boxes gives a surface cover with \(O_\varepsilon(X^{4\sqrt2/27+\varepsilon})\) surfaces of bounded degree, uniformly for all kernel sizes.
 
-Using just the products of the two slopes gives \((r_-r_+)^3(s_-s_+)^2=1-t^2\). For that two-variable determinant the Taylor weights are \(\mu,2\), but the two product denominators have twice the original exponents. In the symmetric box, bidegree \((B,A)\) in these product coordinates has \(H\sim BA\) and cost \(2(B/6+A/4)\). The leading average Taylor weight is \((4/3)\sqrt{\mu H}\). Since \(BA\le6(B/6+A/4)^2\), the rectangular monomial bound then requires \(\mu>3/8\) for a leading-order strict margin. The useful saving above comes from retaining both slopes with the shared displacement.
+Using just the products of the two slopes gives \((r_-r_+)^3(s_-s_+)^2=1-t^2\). For that two-variable determinant the Taylor weights are \(\mu,2\), but the two product denominators have twice the original exponents. In the symmetric box, bidegree \((B,A)\) in these product coordinates has \(H\sim BA\) and cost \(2(B/6+A/4)\). The leading average Taylor weight is \((4/3)\sqrt{\mu H}\). Since \(BA\le6(B/6+A/4)^2\), the rectangular monomial bound then requires \(\mu>3/8\) for a leading-order strict margin. The joint cover retains both slopes with the shared displacement.
 
 ## Point count required on the surfaces
 

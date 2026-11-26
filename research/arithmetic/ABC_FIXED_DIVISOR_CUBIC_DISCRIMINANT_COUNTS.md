@@ -125,7 +125,7 @@ Let \(1\le A\le B\) and let \(C_0>0\) be fixed. For squarefree \(q\asymp A\) pri
 \]
 The result includes either sign and any further subset of this collection. Fundamental discriminants force the corresponding forms to be primitive: a form's content to the fourth power divides its discriminant, and no fundamental discriminant is divisible by a prime fourth power.
 
-We derive (1) by counting short vectors in repeated-root lattices. Averaging over \(q\) is essential: the discriminants of the short vectors restrict the possible moduli. The contribution of each size range for the lattice minima is bounded in second moment before combining the ranges.
+We derive (CM2) by counting short vectors in repeated-root lattices. Averaging over \(q\) is essential: the discriminants of the short vectors restrict the possible moduli. The contribution of each size range for the lattice minima is bounded in second moment before combining the ranges.
 
 Use the weighted binary cubic boxes and repeated-root lattices
 of the preceding proof with \(R=(AB)^{1/4}\) and \(q\asymp A\).

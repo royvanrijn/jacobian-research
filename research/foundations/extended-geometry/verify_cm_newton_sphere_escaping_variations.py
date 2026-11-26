@@ -2,6 +2,7 @@
 """Check finite critical orbits and the two sphere response matrices."""
 
 from collections import defaultdict
+from math import comb
 
 from sage.all import GF, QQ, PolynomialRing, matrix
 from sympy import I, Matrix, Poly, Rational, diff, expand, gcd, resultant, sqrt, symbols
@@ -143,7 +144,29 @@ def normalized_period_rows():
     print("Verified the resonant coefficient rows and their two rank differences")
 
 
+def radial_leading_determinant():
+    field = GF(1009)
+    columns = list(zip((0, 1, 0, 1, 2, 3, 4, 5), (0, 0, 1, 1, 1, 1, 1, 1)))
+    rows = []
+    for k in range(8):
+        row = []
+        for j, parity in columns:
+            if k < j or (k-j) % 2 != parity:
+                row.append(field.zero())
+                continue
+            height = 17*k-j+12-parity
+            integral = sum(
+                field((-1)**(j-r)*comb(j, r))/field(height+2*r+1)
+                for r in range(j+1)
+            )
+            row.append(comb(k, j)*integral)
+        rows.append(row)
+    assert matrix(field, rows).det() == 789
+    print("Verified the nonzero degree-12 leading coefficient on every radial line")
+
+
 if __name__ == "__main__":
     finite_critical_orbits()
     finite_marker_rank()
     normalized_period_rows()
+    radial_leading_determinant()

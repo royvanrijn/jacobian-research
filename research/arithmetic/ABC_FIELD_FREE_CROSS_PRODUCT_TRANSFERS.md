@@ -1353,12 +1353,413 @@ positive nonatomic band on either private quotient would have
 positive numerical weight on small primes at any fixed
 \(\kappa>0\); trim its heavy atom windows as in CF1.
 
-No such divisor or other inexpensive source of the fixed ratio
-class has been extracted from arbitrary balanced pair families.
-The \(2/9\) bound is a conditional obstruction for this
-auxiliary budget, across all original dictionary exponents.
+The quotient-lock count and the restrictions below are conditional on
+the raw FP8 pair boundary. They do not extract enough such pairs from
+an arbitrary balanced original family.
 
 [Signed two-slot residue moment (RX7)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#signed-residue-words-and-diagonal-energy-on-the-cells)
 · [Joint real and residue moments (JRM1)](ABC_JOINT_REAL_RESIDUE_MOMENTS.md#an-arbitrary-list-of-congruence-and-logarithmic-bins)
 · [Fixed-target nonatomic mass (FT1)](ABC_FIXED_FIBRE_TRIANGLE_RADICALS.md#nonatomic-mass-outside-prescribed-prime-pools)
 · [Compact-band full locks (CF1)](ABC_COMPLETE_LETTER_SMALL_FEATURES.md#limiting-setup-and-cost-of-fixed-prime-supports)
+
+### Structure inside the remaining rich pair records
+
+Let \(n=X^L\), taking the height limit at each fixed \(L\) before
+letting \(L\to0\). Work at the first raw FP8 tie. The rich shared
+record fixes the role assignments and all original supported powers,
+including \(G,d_h,d_j\). Put \(r=1/6\). Each of the six residual
+original caps is at most \(r+o(1)\), and a putative exponent-full
+fixed record has pair exponent \(2r-o(1)\). The projection onto either
+row has exponent \(r-o(1)\): the other projection is at most
+\(n^{r+o(1)}\) by MCB2 on the two cheapest original residual caps.
+The following arguments use a refined subfamily at the same limiting
+exponent. Dyadic boxes, a finite exact valuation cutoff at each fixed
+\(L\), and support refinements cost \(X^\varepsilon\), with the tail
+radical price made smaller than any prescribed normalized allowance.
+
+#### Both residual summands on each row must be wholly diffuse
+
+Fix a row projection and write its signed equation as
+\(A_0A+B_0B=C_0C\), with the three supported coefficients fixed,
+including any supported target factors in \(C_0\). The complete
+letters are the original primitive values. By the final discrete
+restriction of FP12 the residual target measure is purely atomic:
+all but an \(X^{o(1)}\) numerical factor is a product of at most two
+prime powers of individual normalized prime mass bounded away from
+zero. The supported target parts are fixed by the record. Their exact orders are \(O(1/L)\), so a subsequence gives at
+most two positive limiting scaled degrees. For each fixed positive
+degree cutoff, the remaining primes have raw mass there tending to
+zero, since their total numerical weight tends to zero. The
+remaining measure can only contribute an atom at zero. The raw
+mass on each residual letter is \(r+o(1)\): otherwise half the sum of the two cheapest actual caps is below
+\(r\) by a fixed margin, contradicting MCB2 for that row.
+
+Let \(c_A,c_B,c_C\) denote the residual nonatomic masses, with
+\(c_C=0\) for the target. GE1 works verbatim with these fixed
+supported coefficients: the modulus is a full divisor of one
+complete letter, and all fixed coefficients on the other letters
+are units there by original primitivity. Group atomic windows and
+freeze the nonatomic complements of the other two letters; their
+exact ratio determines the two complete coprime letters and hence
+the row. Thus whenever a residual summand has positive nonatomic
+mass, a full divisor of arbitrarily small fixed positive radical
+price on it gives \(r\le c_{\mathrm{other}}\) by GE1. As the other
+cap is \(r\), either both residual summands are wholly nonatomic
+of mass \(r\) or both are purely atomic. This part of the proof
+does not require a numerical height lower bound on either
+residual summand.
+
+Suppose all three residual measures are purely atomic. In this case
+any fixed-height full divisor whose dictionary price is below
+\(r\) by a fixed margin is impossible on any of the three original
+letters, because GE1 releases both remaining atomic letters at
+arbitrarily small additional normalized cost. The conclusion also
+holds if the divisor is in a fixed supported coefficient: it then
+has price zero. To see that a positive numerical exponent in such a
+coefficient yields a full divisor of fixed height, drop powers below
+\(\kappa/L\), for sufficiently small fixed \(\kappa>0\); their total
+numerical exponent is at most \(\kappa C\) under the original
+bounded normalized cap \(C\). The same truncation may equally be
+used on any affordable divisor.
+
+Nor can a complete letter have a limiting numerical height exponent
+less than one. Since the complete target is in \((X/2,X]\), the
+other two complete letters are then tall and their positive ratio
+lies in a relative strip of width \(X^{-\nu}\) around \(1\), for
+fixed \(\nu>0\). Freeze the complements of finitely many shrinking
+positive atom windows and a shrinking zero window on these two
+letters, at arbitrarily small normalized cost. This includes
+escaping first moment at vanishing radical cost. Group the
+positive windows and place the exponent corrections and the
+zero-window factors in the wider rational variable of numerical
+height \(X^{o(1)}\). The fixed coefficients only change the
+center of the strip. RUW1 counts the exact ratio at arbitrarily
+small normalized cost, and primitivity recovers the original row.
+
+Consequently the three complete letters have numerical height
+exponent tending to one, and each fixed supported coefficient
+has numerical exponent tending to zero. Take any fixed
+\(0<\gamma<r/2\). The primes of a residual letter with
+\(\log_n p\le r-\gamma\) cannot carry a positive fixed numerical
+height. Otherwise apply the greedy block selection of the final
+FP12 discrete restriction with threshold \(r-\gamma\) and
+price cap \(r-\gamma/2\), followed by GE1 on the other two atomic
+letters. Because the raw cap is \(r+o(1)\), there is at most one
+prime with \(\log_n p>r-\gamma\). This prime must exist and must
+carry numerical exponent \(1-o(1)\). Diagonalizing over
+\(\gamma\downarrow0\), each residual letter therefore has exactly
+one distinguished private prime of price \(r+o(1)\), and its
+remaining radical price is \(o(1)\). Freeze the three complements
+at this vanishing price, with supported factors still included
+in the fixed coefficients. The height of the full complements
+does not affect the next step.
+
+We obtain primitive roots \(x,y,z\) (indeed three distinct original
+primes) and
+\[
+    \alpha x^p+\beta y^q-\gamma_0 z^s=0,\qquad
+    x,y,z\le n^{r+o(1)},\qquad p,q,s\asymp 1/L .
+\]
+The bounds on the exact exponents follow from the positive
+numerical height of each prime power, \(\log_n x,\log_n y,\log_n z
+\to r\), and the original upper bound \(X\). Freeze their exact
+labels in finitely many ways at each fixed \(L\), prior to the
+height limit. Browning–Verzobio, Theorem 1.2, applies with the two
+root boxes \(U,V\le X^{(r+o(1))L}\) and the third exponent \(s\).
+Its parameter \(W=\exp(\sqrt{\log U\log V/s})\) is
+\(X^{O(L^{3/2})}\). The additional factors in the theorem are
+\(\max(U,V)^{2/\sqrt{\max(p,q,36)}}=X^{O(L^{3/2})}\) and
+\(\max(U,V)^{1/s}=X^{O(L^2)}\). The coefficients are arbitrary
+nonzero integers and the implied constant is uniform in them.
+Hence the count per fixed coefficient triple is
+\(O_{L,\varepsilon}(X^{O(L^{3/2})+\varepsilon})\), or
+\(n^{O(\sqrt L)}X^\varepsilon\). Including the frozen complements
+gives limiting exponent zero, contradicting \(r-o(1)\). Thus the
+all-atomic alternative is impossible.
+
+[GE1](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees),
+[RUW1](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-real-strip-with-unequal-root-heights),
+[Browning–Verzobio, Theorem 1.2](https://arxiv.org/html/2608.24512v1#S1).
+
+#### Actual target dictionary and the other two complete fibres
+
+Take one side and write \(c=Gz\). On the remaining FP12 discrete
+sector, apart from a fixed supported factor, the full quotient has the
+form
+\[
+              z=p_1^{e_1}\cdots p_j^{e_j}z_0,\qquad 1\le j\le2,
+       \qquad z_0\le X^{o(1)},\quad p_i\le n^{r+o(1)}.
+\]
+Here and below \(o(1)\) in a numerical exponent is a budget-limit
+quantity after refining the fixed-budget height exponents. Retain in
+the display only the at most two macro powers whose numerical weights
+are positive in the chosen limiting sequence. Thus \(e_i\gg 1/L\).
+Fixed supported powers are part of the fixed coefficient and may
+have arbitrary polynomial height. A bounded-cost refinement can fix
+the ordering and the retained exact exponents: the actual exponents
+are \(O(\log X)\), and for the macro primes they are bounded
+in terms of the fixed budget. The small-prime remainder is included
+in \(z_0\), with no assumption on its radical composition.
+
+Let \(t\) be an upper cap on the actual conditional complete target
+dictionary exponent on this side of the record, including all
+multipliers \(z_0\). If its row set has exponent \(r-o(1)\), both
+residual summands are wholly nonatomic by the preceding structural
+argument; this conclusion also applies to any subfamily still
+attaining that exponent. Then necessarily \(t\ge r-o(1)\).
+Indeed, on one residual summand \(a\) buy a full divisor
+\(F\) from a compact positive band, after trimming neighborhoods of
+the atoms. It can be chosen with arbitrarily small fixed cost
+\(\mu>0\), fixed positive numerical depth, and fullness at least a
+fixed positive multiple of \(1/L\). The depth and fullness margins
+may depend on the chosen limit, as in GE1. Before refining the target
+dictionary, fix \(F\) at its radical cost, then its full powers at a
+height-subpower cost. The residue list of the allowed complete
+targets modulo \(F\) has size at most \(n^{t+o(1)}\). By primitivity
+it is a unit list, and \(b\equiv c\bmod F\). RX1 with its prescribed
+pool option counts the complete \(b\)'s at exponent at most
+\((r+t)/2+o(1)\). For each such \(b\), the quotient on this chart is
+in one fixed unit class after division by the fixed target
+coefficient. Apply amplified GW to the bounded narrow roots
+\(p_i\) and the wider \(z_0\). This counts the exact quotients at an
+arbitrarily small normalized exponent. Indeed the roots are
+pairwise coprime, have height \(\le F^{O(1/k)}\) for a fullness
+parameter \(k\asymp 1/L\), and the wider correction has height
+\(F^{o(1)}\). The exact-power support convention and the rational
+recovery part of amplified GW apply also when the short factor
+contains primes shared with the displayed roots. Alternatively the
+original macro and small-prime supports are disjoint and may be
+preserved in the amplified products by coloring before the count.
+For each exact \((b,c)\) there is just one \(a=c-b\).
+Letting the lock price and the counting allowances be arbitrarily
+small proves the claimed dictionary floor.
+
+In particular, for each fixed \(\eta>0\) discard, in each rich
+record, the rows whose actual conditional multiplicity of their own
+complete target is \(> n^\eta\). By the MCB2 row bound their
+targets have dictionary exponent at most \(r-\eta+o(1)\) in that
+record. If the discarded rows did not have a uniform power saving,
+take a violating height-first sequence of records and such subfamilies
+with exponent tending to \(r\). The previous full nonatomic
+structure applies to that sequence and the dictionary floor gives
+a contradiction. The argument is uniform over prescribed support
+pools of bounded polynomial height and over the exact shared
+coefficient values. This finite-\(\eta\) formulation uses the exponent
+allowance before passing to small budgets. Discard the same class
+on the other side. Each discarded row set contributes only a
+power-smaller number of selected pairs, by the preceding record sum.
+Thus the target fibre on each side can be assumed to have
+\(n^\eta X^\varepsilon\) completions per target and rich record,
+for any fixed allowance \(\eta>0\).
+
+#### Original target dictionary threshold
+
+Let \(n^{\alpha+o(1)}\) bound the original complete target dictionary
+on either side. At the raw tie the outside radical price of every
+qualifying \(G\) is \(r+o(1)\). A fixed \(G\) strips
+\(r+o(1)\) from the target cap, leaving \(r+o(1)\) there and
+\(1/3+o(1)\) on each untouched summand. Fixed supported powers are
+recorded at uniform height-subpower cost. MCB2 on the two smallest
+caps bounds the first rows with this \(G\) by \(n^{1/4+o(1)}\);
+the same holds on the second side.
+
+The count of incidences \((G,c)\) on either side is at most
+\(n^{\alpha+o(1)}\), since \(G\mid c\) and numbers of polynomial
+height have height-subpower many divisors. Call \(G\) heavy on
+that side if it admits more than \(n^{\alpha-1/12+\eta}\)
+distinct targets. At most \(n^{1/12-\eta+o(1)}\) such \(G\)'s
+occur. Their corresponding rows number \(n^{1/3-\eta+o(1)}\),
+and the selected anchored degree is at most \(n^{r+o(1)}\)
+by FP6. The heavy-\(G\) pairs are thus power-smaller, and the
+same deletion applies on the other side. In the surviving
+rich records, \(t\le\alpha-1/12+\eta\).
+If \(\alpha\le1/4-\delta\) for any fixed \(\delta>0\),
+choose \(\eta<\delta/2\). This contradicts the conditional
+dictionary floor \(t\ge r-o(1)\). Consequently the raw tied
+sector is excluded for \(\alpha<1/4\) with any fixed margin.
+At larger \(\alpha\) the same proof gives the floor \(r-o(1)\)
+rather than a contradiction.
+
+The same limit gives subpower fibres over either original summand,
+without a target-multiplicity deletion. Indeed on a fixed-summand
+fibre the outside target spectrum is still atomic, so a positive
+fibre exponent would contradict FT1 for the two free roles.
+This applies uniformly by the same height-first contradiction.
+After the target pruning, any complete role therefore indexes the
+rows of the fixed rich record with at most \(n^\eta X^\varepsilon\)
+multiplicity for each fixed allowance \(\eta>0\).
+
+For each role \(T\), let \(F_T\) be its fixed supported part on the
+shared primes of one side. Each \(F_T\mid T\) has outside radical
+price \(r+o(1)\). Every such \(F_T\) in an exponent-full collection
+of rich records admits at least \(n^{r-o(1)}\) complete \(T\)'s,
+by selecting one rich record for it and using the multiplicity
+bounds. If the original \(T\)-dictionary has exponent \(\alpha_T\),
+there are at most \(n^{\alpha_T+o(1)}\) incidences \((F_T,T)\),
+since \(F_T\) divides \(T\). Therefore the \(F_T\)-catalogue price
+is at most \(\alpha_T-r+o(1)\). It is at least \(1/12-o(1)\):
+fixing \(F_T\) leaves at most \(n^{1/4+o(1)}\) rows by MCB2,
+while the selected pairs still project to \(n^{1/3-o(1)}\)
+original rows by the anchored degree bound. This proves
+\(\alpha_T\ge1/4-o(1)\) for every role and on both sides.
+All pair subsets in these arguments are actual surviving pairs.
+
+[Absolute residue list count (RX1)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#the-relative-expansion-price-for-a-deep-absolute-modulus)
+· [Fixed-letter nonatomic bound (FT1)](ABC_FIXED_FIBRE_TRIANGLE_RADICALS.md#nonatomic-mass-outside-prescribed-prime-pools)
+
+#### The full determinant gcd is a cheap common record
+
+Write \(g=\gcd(|H|,|J|)\) as in FP12. Since \(g\) divides \(h,j\)
+and is coprime to \(uv\), the two sum and difference identities
+give \(g\mid a_i-b_i\) for both \(i=1,2\).
+These original differences are nonzero. Thus every original row
+is incident to only divisor-many possible exact \(g\)'s.
+Inside a rich shared record, the sums of the two row–\(g\)
+incidence counts are each at most \(n^{r+o(1)}\). For a fixed
+\(\eta>0\), labels \(g\) with fewer than \(n^{r-\eta}\) incident
+rows on either side supply at most \(n^{2r-\eta+o(1)}\) pairs,
+by bounding the other side's summed incidence. The remaining
+\(g\)'s number at most \(n^{\eta+o(1)}\) per shared record. Thus
+one can fix the exact \(g\) at arbitrarily small conditional
+price after discarding only power-smaller sets of pairs.
+
+Enlarge the prescribed pool for \(H,J\) by the primes of this
+fixed \(g\), and let \(\gamma_g\) be their raw price outside the
+old known support. Every such prime occurs on \(Z=|HJ|\).
+All surviving prime powers of \(H',J'\) there are now known at
+height-subpower enumeration cost. FP12 counts the reduced ratio
+at price at most
+\[
+                   (r_Z-\ell_{\mathrm{old}}-\gamma_g)/2+\mu+o(1).
+\]
+After the ratio gives both targets at divisor cost, the exact
+\(g\) directly reconstructs both original rows. This completion
+does not use their low conditional target multiplicities.
+At a raw tie any available quotient lock must therefore satisfy
+\[
+              \ell_{\mathrm{old}}+\gamma_g
+                             \le 2\mu-1/6+o(1).
+\]
+If either quotient carries its height on two macro powers, take
+one of those powers at price \(1/12+o(1)\). Then both old
+difference support and all fresh gcd support have vanishing raw
+price. The conclusion includes unequal determinant valuations.
+In the raw parity convention \(e=m+o(1)\) and vanishing old
+difference support then force all shared summand odd mass to
+vanish: such a prime is absent from the whole auxiliary and
+would have been charged to the missing parity record.
+
+#### Both summand matching products cannot be numerically tall
+
+Keep the enriched record with exact \(g\) and the low
+conditional multiplicities over original targets. Define
+\(c_H,c_J\) as the nonatomic masses on the exact \(H,J\) outside
+all the now prescribed supports, including \(g\).
+If \(d_h\) has positive numerical height, a fixed positive-height
+full modulus \(F\) can be retained from \(g_{aa}\) or \(g_{bb}\),
+after discarding a small scaled low-order part. On those two
+divisors respectively one has
+\[
+                  J/(uv)\equiv -G/d_j,\quad G/d_j .
+\]
+For example on \(g_{aa}\) both \(a_i\) vanish, so
+\(j=ua_1-vb_2\equiv-vc_2=-uvG\). The other sign uses the
+vanishing \(b_i\). All displayed factors are units on their
+respective modulus, by original primitivity and the disjoint
+supports of the four summand gcds. Use just the modulus on
+one side or CRT for both.
+
+Group the atomic windows of \(J,u,v\) in this congruence,
+absorbing the fixed supported factors as unit coefficients.
+Both quotients are atomic, with short numerical corrections.
+Freeze the complement on \(J\) at price \(c_J\) plus an
+arbitrarily small allowance and apply GW as in GE1.
+The exact ratio \(J/(uv)\) determines \(J,uv\) because \(J\)
+is coprime to \(uv\). Splitting \(uv\) costs divisor-many choices,
+so the original targets are determined. The low conditional
+target multiplicities then complete the pair at arbitrarily
+small additional price. Consequently \(d_h\) of fixed positive
+numerical depth forces \(c_J\ge2r=1/3\). Likewise a fixed
+positive depth on \(d_j\) forces \(c_H\ge1/3\) by using
+\(H/(uv)\) modulo \(g_{ab}\) or \(g_{ba}\). The signs there
+are \(-G/d_h\) and \(+G/d_h\).
+
+There is a weaker restriction without any summand-modulus depth.
+Fix the first row as anchor in the enriched record. The quotient
+\(v=c_1/G\) is known and has fixed positive numerical height.
+Its high-order part supplies a full modulus of fixed depth.
+In that modulus the original scaled shifts give
+\[
+                   H/u\equiv a_1/d_h,\qquad J/u\equiv a_1/d_j .
+\]
+The right sides are fixed units. As above, freezing the nonatomic
+complement of the indicated shift and applying GW to it and the
+atomic \(u\) counts either exact quotient at its own outside
+nonatomic price. Its reduced denominator determines \(u\), since
+\(\gcd(HJ,uv)=1\). The known \(G\) gives the second target,
+whose conditional fibre is subpower in the chosen allowance.
+The first-row anchors cost \(r+o(1)\) per enriched record.
+Thus \(c_H,c_J\ge r\) individually in any exponent-full tied
+sector, including when neither matching product is tall.
+
+Off the pool containing \(g\), the supports of \(H,J\) are
+disjoint. Their combined nonatomic mass is therefore at most
+\(r_Z-\ell_{\mathrm{old}}-\gamma_g\le1/2+o(1)\). This
+precludes both \(d_h,d_j\) having positive numerical height.
+For every fixed positive depth floor on both products, the sector
+has a uniform fixed exponent loss under the near-tie tolerances.
+If just \(d_h\) is tall, the bounds \(c_H\ge r\) and
+\(c_J\ge2r\) force equality in their total cap. Thus
+\(\ell_{\mathrm{old}},\gamma_g=o(1)\), and the two outside shift
+measures are wholly nonatomic with masses \(r,2r\), respectively.
+Use the reversed statement when just \(d_j\) is tall.
+
+In the ordinary original balanced caps, the home of the remaining
+numerical depth can be described further. If \(G=X^{o(1)}\), the
+complete original target spectrum is atomic: the matching
+supported target powers have vanishing numerical weight and the
+private quotient is atomic. The original GE1 endpoint then makes
+both complete summands wholly nonatomic. Any matching product
+of numerical height \(X^{o(1)}\) must have raw price \(o(1)\):
+its primes would otherwise supply an atom at zero in a complete
+summand, apart from the vanishing unequal shared mass. Hence in
+this case one matching product is tall and contains essentially
+the whole summand overlap. If both matching products are
+numerically short, the two complete original summands instead
+have nonatomic masses \(r,r\), from their private parts.
+GE1 forces nonatomic mass at least \(r\) on the complete target,
+which must be carried by the shared part of raw price \(r+o(1)\)
+since the private quotient is atomic. In particular \(G\) is
+then tall. The limiting descriptions refer to refined
+height-first profiles, including continuity bins chosen before
+inner counts.
+
+[Atomic-window congruence (GE1)](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees)
+
+#### A target-only obstruction to a further quotient discount
+
+For clarity, the target conditions alone permit the exact
+\(1/12\) catalogue threshold. Fix a sufficiently small \(L>0\)
+and let \(e=\lceil3/L\rceil\), \(n=X^L\). Choose a prime
+\(q_0\asymp n^{1/6}\) and an integer \(j\ge0\) so that
+\[
+                  G=q_0\,2^j\asymp X^{1-eL/6}.
+\]
+This is possible for all sufficiently large \(X\) at fixed \(L\).
+Then \(P_0=(X/G)^{1/(2e)}\asymp_L n^{1/12}\).
+Take four disjoint fixed relative intervals of primes within
+\([\exp(-1/(10e))P_0,P_0)\), and form \(u,v\) by multiplying
+two \(e\)-th prime powers from their respective assigned
+intervals. The prime number theorem at the fixed budget gives
+\(n^{1/3+o_X(1)}\) ordered pairs of coprime quotients.
+The two actual targets \(Gu,Gv\) are in the original height
+shell, have common gcd \(G\), and have raw radical prices
+\(1/3+o_X(1)\), with \(1/6+o_X(1)\) shared and on each
+private quotient. A fixed nontrivial divisor of either quotient
+determines at least one prime in its assigned interval, so
+it covers at most \(n^{1/4+o_X(1)}\) pairs. Any catalogue of
+positive-depth divisors covering an exponent-full subfamily
+needs price at least \(1/12-o_X(1)\) even after fixing \(G\).
+This example imposes only the target conditions. The two original
+summand caps and their additive relation carry the additional
+content of the preceding results.

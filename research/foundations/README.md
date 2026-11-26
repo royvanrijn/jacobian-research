@@ -196,8 +196,10 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Sphere-generated cycles persist under an odd radial perturbation | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_PERIOD_CYCLES.md) |
 | Escaping finite-root periods can contribute at and below the coherent order | Internal result | proved | [Source](extended-geometry/CM_NEWTON_CYCLIC_LIMIT_TAIL_PERIODS.md) |
 | Polynomial reconstruction and Smith form for the odd radial family | Internal result | proved | [Source](extended-geometry/CM_NEWTON_ODD_RADIAL_PERTURBATION.md) |
+| Arithmetic attachment of finite sphere variations | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
 | Actual sphere variations detect the escaping periods in two phases | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
 | Exact finite marked rank for the two escaping phases | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
+| Generic eight-row reconstruction at conductor 18 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
 
 **Computed obligations:** 12 unresolved; 3 resolved within their exact scope.
 

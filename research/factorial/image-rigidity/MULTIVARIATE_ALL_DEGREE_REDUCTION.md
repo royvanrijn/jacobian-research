@@ -2254,3 +2254,27 @@ blocks. The [logarithmic critical-point criterion](FACTORIAL_LOGARITHMIC_CRITICA
 gives an explicit finite window at every start for coupled phases
 of arbitrary degree under the two stated critical-system tests.
 These finite windows can exceed the support size.
+
+The [affine collision-branch theorem](MULTIVARIATE_AX_AFFINE_COLLISION_BRANCHES.md)
+gives a computable height threshold for a fixed core and a full-rank
+balanced affine template with one repetition parameter. It covers
+all integer multiplicities, including zero limiting curvature when
+the core itself has a common root. The
+[two-scale theorem](MULTIVARIATE_AX_TWO_ACTIVE_HEIGHT_SCALES.md)
+includes two simultaneously active polynomial height scales. With
+independent multiplicities, the
+[several-parameter codimension theorem](MULTIVARIATE_MULTIPLICITY_AX_CODIMENSION.md)
+forces any accumulating common-factor branch of codimension larger
+than the number of multiplicities to have fixed multiplicities.
+The [integrated scale criterion](MULTIVARIATE_INTEGRATED_SCALE_KERNEL_RADIAL_CLOSURE.md)
+also allows signed endpoint transforms that change sign.
+
+For phases of larger support,
+[one monomial plus an affine phase](ONE_MONOMIAL_AFFINE_INITIAL_SUPPORT_WINDOWS.md)
+has the actual initial support-size window when the attached
+exponents agree and the constant is zero, or when the nonlinear
+degree is sufficiently large relative to the number of linear terms.
+The [weighted critical-point theorem](FACTORIAL_SEMIWEIGHTED_CRITICAL_WINDOWS.md)
+gives explicit finite windows for coupled phases with degenerate
+critical points under its weighted principal-part hypotheses. The
+weighted theorem's window size can exceed the support size.

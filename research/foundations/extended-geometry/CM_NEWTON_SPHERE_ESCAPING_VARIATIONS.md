@@ -318,9 +318,10 @@ of orientation if zero lacks an entire primitive order.
 
 ## Applying the lemma to the two pencils
 
-Let \(R_1(L)\) be the sphere resolvent with marker 1,
-for the rotated phase and value parameter. Its series at
-infinity is rational coefficientwise. The angular rotation
+Let \(\lambda=\kappa L\), with \(\kappa=i\) in the first
+pencil and \(\kappa=i/3^9\) in the second. The scalar germ
+\(\kappa R_1(\kappa L)=\mathcal A(1/(f/\kappa-L))\)
+has rational Laurent coefficients at infinity. The angular rotation
 preserves constant terms. Scaling \(t\) in the two phases
 replaces even height moments by rational factors, powers
 of \(-1\) or \(-3\); the odd heights average to zero.
@@ -535,6 +536,26 @@ with both highest lower degrees present is
 \(3\bmod1009\). Thus \(\Delta_8\ne0\) gives the desired
 open set and a specified eight-row test. The rank is
 that of the full finite matrix.
+
+In fact, on every fixed radial coefficient line
+\(B=b+\sum_{j=1}^{5}b_jz^j\), the degree of \(\Delta_8\) in \(b\)
+is exactly 12, with a common nonzero leading coefficient.
+In the ordered columns, the smallest angular indices are
+\(j=0,1,0,1,2,3,4,5\), each with coefficient one.
+Set \(\epsilon=0\) in the first two columns and \(1\) in
+the others. Row \(k\) in such a column has \(b\)-degree
+at most \(k-j\), since at least \(j\) factors must
+supply negative angles. For \(k\ge j\), its coefficient
+at that degree can only come from \(j\) exact negative
+lifts and \(k-j\) radial terms. It is zero if
+\(k-j\not\equiv\epsilon\bmod2\), and otherwise equals
+\[
+ \binom{k}{j}\int_0^1 t^{17k-j+12-\epsilon}(t^2-1)^j\,dt .
+\]
+The determinant of these leading entries is \(789\bmod1009\).
+It is the coefficient of \(b^{\sum k-\sum j}=b^{12}\).
+In particular each radial line has at most twelve
+exceptional values over the algebraic closure.
 
 Run the [checker](verify_cm_newton_sphere_escaping_variations.py)
 with SageMath 10.9 from the repository root.

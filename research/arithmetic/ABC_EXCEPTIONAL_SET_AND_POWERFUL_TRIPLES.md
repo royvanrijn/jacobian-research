@@ -11319,6 +11319,23 @@ quotient. These pair conditions retain the original
 three caps and do not give an unrestricted count.
 [Reduced determinant-ratio count (FP12)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#a-deep-target-divisor-on-the-reduced-determinant-ratio)
 
+Inside a surviving rich shared record, the two residual summands
+on each side are wholly nonatomic. The all-atomic alternative
+would reduce to three high prime powers, which is sparse by the
+coefficient-uniform Browning–Verzobio count. The actual target
+dictionary then needs exponent \(1/6\) within the record, and
+after pruning all three complete-letter fibres have subpower
+multiplicity. Divisor incidence forces the original complete
+dictionaries to have exponent at least \(1/4\). The entire
+normalized determinant gcd is itself cheap to fix because it
+divides the two original summand imbalances. With that support
+fixed, the two shared summand matching products cannot both
+have fixed positive depth. The remaining target-only
+configuration admits a sharp \(1/12\) catalogue obstruction,
+so the summands' arithmetic is essential to any further discount.
+[Structure of the remaining pair records](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#structure-inside-the-remaining-rich-pair-records)
+
+
 [MP10](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp10-transverse-norm-catalogues-at-minkowski-height)
 admits long minimum ideals in the balanced two-edge field problem
 when the actual transverse norm coefficients have a small list.

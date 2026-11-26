@@ -20,7 +20,15 @@ and arbitrary characteristic-zero coefficient fields. An
 effective finite window determines the full reconstruction
 kernel on fixed support. The conductor-162 example measures a
 rank-two Hasse–Witt block and gives an isolated two-marker
-zero whenever both moment equations vanish.
+zero whenever both moment equations vanish. An arithmetic
+attachment lemma uses unmarked denominator witnesses to locate
+finite vanishing cycles in the sphere-variation span. Two
+conductor-18 pencils show how the resulting periods detect both
+coherent inputs when escaping periods contribute. For the
+degree-\((5,1)\) support, rows \(0,\ldots,7\) recover all eight
+marker inputs wherever their determinant is nonzero. On every
+line varying just \(B(0)\), this determinant has degree 12
+with the same nonzero leading coefficient.
 
 [Manuscript PDF](cm-newton-cyclic-cover-moments.pdf) ·
 [LaTeX source and replay ZIP](cm-newton-cyclic-cover-moments-source.zip) ·
@@ -37,7 +45,12 @@ The reconstruction arguments are supported by the
 and [block-rank and rigidity calculations](../../research/foundations/extended-geometry/CM_NEWTON_BLOCK_RANK_MOMENTS.md).
 The [sphere period note](../../research/foundations/extended-geometry/CM_NEWTON_SPHERE_PERIOD_CYCLES.md)
 computes the limiting periods of two sphere variations in a
-separable conductor-18 phase.
+separable conductor-18 phase. The
+[escaping-variation note](../../research/foundations/extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md)
+gives the attachment lemma, the two pencil calculations, and the
+eight-row determinant. The
+[tail-period note](../../research/foundations/extended-geometry/CM_NEWTON_CYCLIC_LIMIT_TAIL_PERIODS.md)
+records the local escaping scalings.
 
 ## Build and replay
 
@@ -49,6 +62,8 @@ python3 -I verification/verify_cm_newton_nonsplit_noncm_prime_power_moments.py
 python3 -I verification/verify_cm_newton_unbounded_twisted_moment_quotients.py
 sage -python verification/verify_cm_newton_moving_branch_ratio_certificates.py
 python3 -I verification/verify_cm_newton_block_rank_moments.py
+sage -python verification/verify_cm_newton_sphere_escaping_variations.py
+sage -python verification/verify_cm_newton_cyclic_limit_tail_periods.py
 ```
 
 The first replay evaluates individual coherent Frobenius maps and
@@ -58,6 +73,8 @@ computes twisted quotient dimensions, enumerates the residue classes,
 and checks selected coefficient residues at conductors \(35\) and \(133\).
 The moving-branch checker selects pivots modulo a prime and
 verifies the three parameter identities by exact rational
-multiplication. The last checker replays the rank counts,
-rank-two determinant and rigidity congruence. External
-specialist review and priority assessment remain open.
+multiplication. The block-rank checker replays the rank counts,
+rank-two determinant and rigidity congruence. The two escaping
+period checkers replay the exact critical-coordinate substitutions,
+irreducibility tests, finite moment ranks, and local scaling algebra.
+External specialist review and priority assessment remain open.

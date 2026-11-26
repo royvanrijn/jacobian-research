@@ -928,6 +928,17 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Shifted Strong Factorial windows reduce exactly to initial windows by linear adjunction | Internal result | proved | [Source](image-rigidity/SFC_SHIFT_TO_INITIAL_LINEAR_ADJUNCTION.md) |
 | Signed endpoint Laplace criterion for all-degree diffuse-tail physical separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIGNED_ENDPOINT_LAPLACE_RADIAL_CLOSURE.md) |
 | Density-one all-degree balanced-tail separation from linked rational exponent tests | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BALANCED_RESIDUE_SUPPORT_DENSITY.md) |
+| Binary quadratic all-constant six-windows from two residue poles | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_TWO_POLE_CONSTANT_SHIFTS_STRONG_FACTORIAL_WINDOWS.md) |
+| Binary quadratic all-constant six-windows from a small coefficient grid | Internal result | proved | [Source](image-rigidity/QUADRATIC_CONSTANT_APPELL_MULTIPLICITIES_FROM_DISCRETE_VALUE_GRIDS.md) |
+| Dense binary quadratic actual SFC in proved local residue sectors | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_TWO_POLE_CONSTANT_SHIFTS_STRONG_FACTORIAL_WINDOWS.md) |
+| Initial support-size windows for one monomial and an affine phase | Internal result | proved | [Source](image-rigidity/ONE_MONOMIAL_AFFINE_INITIAL_SUPPORT_WINDOWS.md) |
+| Eventual nonvanishing under compatible affine tilts | Internal result | proved | [Source](image-rigidity/ONE_MONOMIAL_AFFINE_INITIAL_SUPPORT_WINDOWS.md) |
+| Explicit factorial windows for isolated weighted principal parts at critical points | Internal result | proved | [Source](image-rigidity/FACTORIAL_SEMIWEIGHTED_CRITICAL_WINDOWS.md) |
+| All-degree physical separation from the integrated factorial scale kernel | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_INTEGRATED_SCALE_KERNEL_RADIAL_CLOSURE.md) |
+| Full divisor rank for overlapping and scale-separated opposite pairs | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OVERLAPPING_AND_SEPARATED_PAIR_DIVISOR_RANK.md) |
+| Effective all-multiplicity exclusion at zero strength in full-rank affine templates | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AX_AFFINE_COLLISION_BRANCHES.md) |
+| Effective all-degree coprimality with two linked active polynomial height scales | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AX_TWO_ACTIVE_HEIGHT_SCALES.md) |
+| Codimension bound for common-factor branches with several independent multiplicities | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MULTIPLICITY_AX_CODIMENSION.md) |
 
 **Computed obligations:** 50 unresolved; 34 resolved within their exact scope.
 
@@ -1042,6 +1053,7 @@ Scope limits:
 - Every nonzero binary polynomial of total degree at most2 has a nonzero factorial moment among its first actual-support-size powers. All63supports are independently covered by exact mod101 pure-power polynomial certificates and native integer-rank transfer. This proves the initial window only; all-start binary-quadratic SFC, SFC2 and SFC3 remain open. No old SFC theorem or external paper is a mathematical premise.
 - For every binary quadratic monomial support S, the initial coefficient moment map is finite free of rank s!, with finiteness equivalent to the initial actual-support theorem. Every support attains its sharp initial window over Qbar; the projective witness scheme has length (s-1)!, which also bounds a witness field degree. These results concern initial windows; the all-start quadratic SFC, SFC(2), and SFC(3) goals remain open.
 - Pure-cross phases BXY+dX+eY with nonzero Bde satisfy every three-window when B2/(de) is transcendental or has a real algebraic conjugate; arbitrary coefficients are covered at starts1,2,3. Any remaining counterexample has an algebraic ratio with no real conjugates and middle index n>=5. Bessel Wronskian and exact compressed-matrix energy are separate proved mechanisms; full binary-quadratic SFC and SFC2/SFC3 remain open.
+- Natural binary quadratic constant shifts satisfy an all-start six-window when the native residue has two geometric poles, or when it is nonpolynomial and the nonconstant coefficient value grid has denominator not divisible by four. Odd grids give a stronger five-window. Dense five/six-support phases in these local sectors satisfy their actual-support SFC; a remaining nonpolynomial six-zero counterexample must have higher-critical constant valuation, complete single-pole cancellation, and coefficient-grid denominator divisible by four. These necessary conditions do not assert a counterexample. Unrestricted all-start binary-quadratic SFC, SFC(2), and SFC(3) remain open.
 
 Tracked obligations (computed states):
 

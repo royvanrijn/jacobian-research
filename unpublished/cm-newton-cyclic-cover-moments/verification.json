@@ -3,14 +3,14 @@
   "date": "2026-11-26",
   "edition": {
     "file": "cm-newton-cyclic-cover-moments.pdf",
-    "sha256": "d0f95264b8da3ed0b7aecc4b7892662f4861c70196d501f8a8414ee84dc82f64",
-    "pages": 12,
-    "source_bundle_sha256": "9805847928d31d7607669de2592275cb5f388141569f5aac9418fe354f3603cb"
+    "sha256": "59f8f4cb3c3d8c91247570b742855d27cb86401560884294b285f5491a7c256a",
+    "pages": 18,
+    "source_bundle_sha256": "2c9387be6c6faf3d7dbf3f747235202f6df66c6ddcdf8cf3b07586225541b845"
   },
   "build": {
     "command": "SOURCE_DATE_EPOCH=1795651200 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-cyclic-cover-moments main.tex",
     "environment": "Ubuntu 24.04.4 LTS under WSL, TeX Live 2023, pdfTeX 1.40.25, latexmk 4.83, Poppler 24.02.0",
-    "result": "Two clean builds from the final extracted archive produced byte-identical PDFs with no final LaTeX or layout warnings. Inspected PNG renders of all twelve pages and checked the abstract and title against metadata."
+    "result": "Two clean builds from the final extracted archive produced byte-identical PDFs with no final LaTeX layout warnings. Inspected rendered pages and checked the abstract and title against metadata."
   },
   "replays": {
     "fixed_prime": {
@@ -21,7 +21,7 @@
       "command": "python3 -I verification/verify_cm_newton_unbounded_twisted_moment_quotients.py",
       "result": "The four retained prime-cube examples have residues 182, 186, 23, 46. At n=35, exhausts the 24 unit classes, checking the seven nonsplit certifying classes and detecting a quotient-dimension mismatch at every nonidentity class. At (p,iterate) = (29,2), (43,4), (79,6), (3,12), (29,4) the direct and translated residues match as 1, 14, 67, 0, 1."
     },
-    "scope": "Replayed the four programs with archive verifier bytes matching the final archive. The older Python calculations replay finite examples; the moving-branch computation verifies rational identities in the parameters. The uniform cutoff and period-theoretic implications use written proofs.",
+    "scope": "Replayed all six programs with archived verifier bytes matching the final archive. The uniform cutoff, attachment lemma, monodromy and period-theoretic implications use written proofs.",
     "moving_branch": {
       "command": "sage -python verification/verify_cm_newton_moving_branch_ratio_certificates.py",
       "result": "SageMath 10.9 checked all three rational identities against the complete coefficient matrices for odd degrees 1, 3 and 4 from archived verifier bytes."
@@ -29,6 +29,14 @@
     "marked_rank": {
       "command": "python3 -I verification/verify_cm_newton_block_rank_moments.py",
       "result": "Checked conductor-54 and conductor-162 rank bounds and dimensions, the 229 block determinant 137, the rigidity congruence 26 and the allowed marker counts for interpolation."
+    },
+    "escaping_variations": {
+      "command": "sage -python verification/verify_cm_newton_sphere_escaping_variations.py",
+      "result": "Checked critical-point substitutions over Q[Z]/(R), the finite-field irreducibility, nondegeneracy and critical-value power-basis certificates, and the finite marked determinants. The full-support witness and radial leading coefficient reduce to 3 and 789 modulo 1009."
+    },
+    "escaping_scalings": {
+      "command": "sage -python verification/verify_cm_newton_cyclic_limit_tail_periods.py",
+      "result": "Checked the two escaping scalings and the stated local residue expansions and reductions."
     }
   },
   "literature": [
@@ -36,7 +44,9 @@
     "Li, Mantovan, Pries and Tang (2019), Theorem 3.2 (Newton slopes for tame three-branch cyclic covers).",
     "SGA 7 I, Expose IX, (12.3.7) and section 12.4 (the dual-graph lattice of the torus).",
     "Serre and Tate, Theorems 1 and 6 (good reduction via inertia and potential good reduction for CM).",
-    "Moonen, sections 2.1, 2.5 and 3.1 (coherent Frobenius, the Hasse–Witt triple and the a-number)."
+    "Moonen, sections 2.1, 2.5 and 3.1 (coherent Frobenius, the Hasse–Witt triple and the a-number).",
+    "Katz, Theorem 14.3 (Deligne's regularity theorem for smooth open Gauss–Manin connections).",
+    "A’Campo, section 2 and Theorem 3 (monodromy from a normal-crossing resolution)."
   ],
   "review": {
     "external_human_review": false,
@@ -53,6 +63,16 @@
       ],
       "revisions_and_rechecks": "The final source specifies the rational parameter family and tame branch conditions, names the bundled verifier, defines the balanced lift, names the two opposite phases, and keeps the interpolation paragraph together. The final reflow was rebuilt and rendered internally. The isolated reader did not review the final PDF digest."
     },
-    "remaining_work": "External specialist review of the toric and coherent reductions, exact reconstruction identities, and marked-rank interpretation."
+    "remaining_work": "External specialist review of the toric and coherent reductions, exact reconstruction identities, arithmetic attachment and geometric pencil calculations, and marked-rank interpretation.",
+    "attachment_pdf_only_internal_review": {
+      "reviewer": "Isolated Codex reader",
+      "reviewed_pdf_sha256": "741b94bf14b66a2bd5f44a72824807a76ae90b547aba0a37da747f0e00f523f2",
+      "context": "The reviewer received a compiled PDF without the repository proof notes or checker. The digest identifies that version.",
+      "findings": [
+        "Reconstructed the attachment lemma and checked the critical-circuit argument, the two escaping scalings and the displayed ranks.",
+        "Flagged the constant normalization of the rational scalar germ, the need to identify the relative homology groups and endpoint sections, and the unnamed checker."
+      ],
+      "revisions_and_rechecks": "The revision explicitly normalizes the scalar germ, identifies both relative endpoints and homology groups, names the archived checker, and states that the rank table concerns the listed orders on the span of continued sphere-path differences. The final reflow was built and visually checked internally. The isolated reader reviewed the earlier digest."
+    }
   }
 }

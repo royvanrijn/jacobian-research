@@ -1582,6 +1582,14 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Joint determinant surface cover near the balanced Pell box | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Sharper nonfundamental count from the cubic Pell trace | Partial result | open | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Consecutive-powerful triple count via the fixed-shift contact determinant | Partial result | open | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
+| Primitive cubic discriminants satisfy the sharp shared-kernel row second moment | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
+| The signed two-edge class moment has natural size when the common kernel is smallest | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
+| Two orientations suffice for price-free parity packing at separation one twenty-seventh | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| Tied pair records force two wholly nonatomic outside summands on each side | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Rich tied pair records require full conditional dictionaries and small complete fibres | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| The full determinant gcd is conditionally cheap at tied pair incidence | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Both shared summand matching products cannot be numerically tall at the raw pair tie | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Prime-power target pairs attain the first quotient-lock catalogue boundary | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
 
 **Computed obligations:** 111 unresolved; 19 resolved within their exact scope.
 
