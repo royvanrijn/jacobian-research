@@ -25,12 +25,12 @@ For each integer \(m\ge2\) there is an interval \((q^2,(q+1)^2)\)
 containing at least \(\lceil m/2\rceil\) pairwise coprime nonsquare
 powerful integers, with
 \[
- m\le q,\qquad \log q\ll m^5\log(m+1)
+ m\le q,\qquad \log q\ll m^4
 \]
 with an absolute constant. Consequently along an unbounded sequence
 of \(q\) the coprime occupancy is
-\(\gg(\log q/\log\log q)^{1/5}\).
-In particular the lower bound \((\log q)^{1/6}\) holds for all
+\(\gg(\log q)^{1/4}\).
+In particular the lower bound \((\log q)^{1/5}\) holds for all
 sufficiently large \(q\) in that sequence.
 
 We seek integers of the form \((B^2+d_i)^3L_i(B^2)^2\), with one
@@ -108,12 +108,12 @@ on the number of coordinates. Thus we can choose positive integers
 \(t_i\le 1+(m+1)^4\) for which all the resultants in the vector
 \(\mathbf t\) are nonzero. In particular the \(t_i\) are distinct.
 
-### Keeping the coprimality modulus small
+### Choosing the integer parameter
 
 Put
 \[
- A=4^{2m+1}(2m+3)!,\qquad
- M=A\,(2m(m+1))!,\qquad d_i=Mt_i.
+ A=4^{2m+1}(2m+3)!,\qquad d=2m(m+1),\qquad
+ M=A\prod_{p\le 2d}p,\qquad d_i=Mt_i.
 \]
 For the vector \(\mathbf t\), all coefficients of \(P,L_i,F_i\)
 have denominator dividing \(A\). Indeed
@@ -125,7 +125,7 @@ Scaling \(\mathbf t\) by \(M\) multiplies the coefficient of
 \(Z^k\) by \(M^{m-k}\) in \(P,L_i\), and \(M^{m+1-k}\) in
 \(F_i\). Thus the polynomials for \(\mathbf d\) have integer
 coefficients, and all the coefficients below the leading one are
-divisible by \((2m(m+1))!\).
+divisible by every prime at most \(2d\).
 
 Use \(F_i(Z;\mathbf t)\) to denote the unscaled polynomials, and put
 \[
@@ -139,40 +139,75 @@ the corresponding unscaled polynomials, by homogeneity and
 \(p\nmid M\). Since \(A\) is also a unit, the prime would divide
 \(R_0\).
 
-For \(p\mid M\), \(p\) small enough to divide \((2m(m+1))!\),
-take \(B\equiv1\bmod p\). Each polynomial \(F_i(Z;\mathbf d)\)
-then evaluates to one at \(B^2\bmod p\). Every prime outside
-this factorial, including any other prime dividing \(M R_0\),
-exceeds \(2m(m+1)\). The product
-\(\prod_i F_i(B^2;\mathbf d)\) is monic as a polynomial in
-\(B\) of degree \(2m(m+1)\), so some class modulo each such
-prime avoids all zeros. The Chinese remainder theorem combines
-these conditions in one class modulo
-\(K=\operatorname{rad}(M R_0)\). The resulting \(F_i(B^2;\mathbf d)\)
-are pairwise coprime.
+Every prime dividing \(M\) is at most \(2d\). Impose
+\(B\equiv1\bmod \operatorname{rad}(M)\). Then all
+\(F_i(B^2;\mathbf d)\) are one modulo the primes dividing \(M\).
+For every other prime dividing \(R_0\), exclude the zeros
+of the monic polynomial \(\prod_i F_i(B^2;\mathbf d)\) in \(B\).
+It has degree \(d\), so at most \(d\) classes are forbidden
+modulo any such prime \(p>2d\).
 
-To bound \(K\), first \(\log A=O(m\log(m+1))\).
 For the unscaled vector, each coefficient of \(R(T)\) has modulus
-at most \(\prod_i(1+t_i)\), and
-\(|c_j|\le 2j+1\), \(|c_j|\ge1\).
-The formulas for \(P,L_i,F_i\) now give
+at most \(\prod_i(1+t_i)\), and \(1\le |c_j|\le2j+1\).
+The formulas for \(P,L_i,F_i\) give
 \(\log\max(2,H(A F_i(Z;\mathbf t)))=O(m\log(m+1))\),
-where \(H\) is the maximum absolute coefficient. A Sylvester
-determinant has size \(2(m+1)\), so the bound by its permutation
-expansion gives \(\log R_0=O(m^4\log(m+1))\) after multiplying
-over all pairs. Since \(\log M=O(m^2\log(m+1))\),
+where \(H\) is maximum absolute coefficient.
+The Sylvester determinants have size \(2(m+1)\), so
+\(\log R_0=O(m^4\log(m+1))\). This estimate uses the unscaled
+polynomials, which keeps \(M\) out of the product of resultants.
+Also \(\log M=O(m^2)\). To see the primorial bound, the product of
+primes in \((l,2l]\) divides \(\binom{2l}{l}\le4^l\).
+Sum the logarithmic bound over intervals between powers of two.
+
+Write \(B=1+\operatorname{rad}(M)b\) and let \(b\) run through
+\(T\) consecutive integers. Each \(p\mid R_0\), \(p\nmid M\)
+excludes \(b_p\le d\) residue classes of \(b\). Put
 \[
-                       \log K=O(m^4\log(m+1)).
+ J=1+\lceil\log_2 R_0\rceil,\qquad Y=100(d+1)J .
 \]
-Using the unscaled polynomials for this bound keeps the common
-scale \(M\) out of the product of resultants.
+There are at most \(J\) primes to consider. For those at most \(Y\)
+put \(g_p=b_p/p\), \(S=\sum g_p\) and \(V=\prod(1-g_p)\).
+We have \(g_p<1/2\), \(S=O(d\log Y)\) by the harmonic sum,
+and \(V\ge e^{-2S}\). By the Chinese remainder theorem any
+\(j\) prescribed prime exclusions intersect in a fraction
+\(\prod g_p\) of classes modulo their product. The same
+fraction holds in a progression whose step is coprime to all
+those primes. In \(L\) successive terms of such a progression
+the count differs from \(L\prod g_p\) by at most \(\prod b_p\).
+
+Use inclusion–exclusion truncated at consecutive even and
+odd orders of size at least \(10(S+1)\) and at most \(10(S+1)+3\).
+The main term tails are at most
+\(\sum_{j\ge10(S+1)}S^j/j!\le V/8\), by \(j!\ge(j/e)^j\)
+and \(V\ge e^{-2S}\). The total counting error is at most
+\(E=(1+dY)^{O(S+1)}\), with an absolute constant in the exponent,
+by summing \(\prod b_p\) up to those orders. Thus the count
+passing the primes at most \(Y\) is between \((7/8)VL-E\)
+and \((9/8)VL+E\), uniformly over those progressions.
+Take \(E\ge1\). Its logarithm is \(O(m^2(\log(m+1))^2)\).
+
+For \(Y<p\le\sqrt T\), apply the upper small prime count to
+each forbidden step \(p\) progression with \(L\le T/p+1\).
+Summing the main terms costs at most \(2VTdJ/Y+2VdJ\),
+and the errors cost at most \(EdJ\). The primes exceeding
+\(\sqrt T\) cost at most \(dJ(\sqrt T+1)\), even without
+a small prime restriction. Take
+\[
+ T=\left\lceil\big(100(d+1)(J+1)(E+1)/V\big)^2\right\rceil .
+\]
+The total exclusions are smaller than the lower small prime
+count at \(L=T\), since \(dJ/Y\le1/100\) and
+\(V\sqrt T\ge100(d+1)(J+1)(E+1)\). An admissible \(B\)
+therefore occurs within \(O(\operatorname{rad}(M)T)\) beyond
+any prescribed positive threshold. The logarithm of this
+length is \(O(m^2(\log(m+1))^2)\).
 
 ### Passing to one open interval
 
 Set \(D=\max_i d_i\) and let \(H\ge1\) be the maximum coefficient
 modulus over \(P,L_i\) for \(\mathbf d\). The same coefficient
-bounds give \(\log(2D)=O(m^2\log(m+1))\) and
-\(\log(2H)=O(m^3\log(m+1))\). For \(Z=B^2\ge2D\) the binomial
+bounds give \(\log(2D)=O(m^2)\) and
+\(\log(2H)=O(m^3)\). For \(Z=B^2\ge2D\) the binomial
 series converges absolutely. The contribution to the remainder
 from the \(k\)-th term after omitting its polynomial part
 and the \(Z^{-1}\) term is at most
@@ -190,9 +225,8 @@ Choose a common threshold for \(B\) larger than an absolute
 constant times \((m+2)^2 H D^{m+2}\). This also ensures
 \(d_i<2B+1\), \(B>m+2\), and positivity of \(P(B^2)\) and
 all \(L_i(B^2)\), by monicity. The logarithm of the threshold
-is \(O(m^3\log(m+1))\). Take \(B\) in the CRT class above
-within \(K\) of the threshold. We have
-\(\log B=O(m^4\log(m+1))\).
+is \(O(m^3)\). Apply the preceding progression count beyond this
+threshold. Its length bound gives \(\log B=O(m^3)\).
 
 Each \(T_i=(B^2+d_i)^3L_i(B^2)^2\) is powerful. The base \(B^2+d_i\)
 lies strictly between \(B^2\) and \((B+1)^2\), so \(T_i\) is
@@ -203,8 +237,8 @@ integer \(Q=B^3P(B^2)\), and none equals \(Q\). At least half
 lie on the same side of \(Q\). The two possible intervals
 have lower square roots \(q=Q-1\) and \(q=Q\).
 Since \(P\) is monic and the threshold makes its leading term
-dominate, \(q\ge m\). Also \(\log Q=O(m\log B+\log H)=O(m^5\log(m+1))\).
+dominate, \(q\ge m\). Also \(\log Q=O(m\log B+\log H)=O(m^4)\).
 This proves the theorem.
 
-The argument is an elementary polynomial construction with an exact
-coprimality modulus. It gives no logarithmic upper bound on \(h(q)\).
+The argument is an elementary polynomial construction with an elementary
+coprimality sieve. It gives no logarithmic upper bound on \(h(q)\).

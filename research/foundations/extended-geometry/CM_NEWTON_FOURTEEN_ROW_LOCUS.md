@@ -109,6 +109,38 @@ indexed by \(m+kp\), \(0\leq k\leq13\), in the class \(p\equiv7\bmod36\)
 at every sufficiently large good prime. In the class \(p\equiv25\bmod36\),
 shift zero remains sufficient.
 
+## Marker recovery for a known phase
+
+**Corollary (fourteen-row marker rank).**
+Fix a phase in the theorem over a characteristic-zero field and let
+\(M_{0:13}\) be its formal response matrix in shifts \(0,\ldots,13\).
+Use the two coherent coordinates in \(A=(a_0+a_1z)(z^2\pm1)^2\),
+with the sign of the top, and the three correction coefficients in
+\(C=C_0+C_1z+C_2z^2\). Then
+\[
+\operatorname{rank} M_{0:13} =
+\begin{cases}
+5,& B\not\equiv0,\\
+2,& B\equiv0.
+\end{cases}
+\]
+
+For \(B\ne0\), put \(q=\min\{j:[z^j]B\ne0\}\) and \(b_q=[z^q]B\).
+The [correction block calculation](CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md#a-reconstruction-matrix-for-unmarked-moments)
+gives column \(C_j\) its first nonzero entry in row \(q+j+1\),
+with pivot a nonzero rational multiple of \(b_q\).
+The rows \(q+1,q+2,q+3\) thus give a triangular minor of rank three.
+They are all in the window since \(q+3\le8\).
+If \(B=0\), the phase is even in the height variable \(t\).
+Every correction column is zero because it uses only odd powers of \(t\).
+
+The theorem makes the two coherent columns independent modulo the span
+of the correction columns. The full rank is therefore two plus the
+correction rank, giving the stated formula. At a known phase the
+fourteen responses determine all five marker inputs if \(B\ne0\),
+and determine the two coherent inputs if \(B=0\). The phase
+coefficients are fixed throughout this linear recovery.
+
 ## Replay
 
     sage -python research/foundations/extended-geometry/verify_cm_newton_fourteen_row_locus.py

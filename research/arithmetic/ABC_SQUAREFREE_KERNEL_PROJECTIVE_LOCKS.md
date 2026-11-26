@@ -389,3 +389,365 @@ still lies in \(\operatorname{rad}(Dxyz)\). In particular
 The remaining finiteness estimate can be posed directly
 for those sextic values, with the exact moving-kernel
 constraint \(D\le(S/b)^{2\eta}\) and threshold \((S/b)^{2\mu}\).
+
+## Primitive Pythagorean triples and a fixed exact-power hypotenuse
+
+Fix \(k\ge1\). The full \(abc\) conjecture is equivalent to
+finiteness at every strict radical threshold for primitive
+positive triples \(X^2+Y^2=Z^{2k}\). Here the threshold is
+\(\operatorname{rad}(XYZ)<(Z^{2k})^\mu\) for fixed
+\(0<\mu<1\). The case \(k=1\) fixes the kernel in (K2) to \(D=1\).
+
+Given a primitive \(a+b=c\), choose \(u,v\) of opposite
+parity from the three letters. If \(c\) is odd, take the two
+summands. If \(c\) is even, take \(c\) and one summand.
+Thus the remaining letter is \(u+v\) or \(|u-v|\),
+\(\gcd(u,v)=1\), and \(\max(u,v)\asymp c\).
+Put \(S=u^2+v^2\) and write
+\[
+   (u+i v)^{2k}=P+iQ,\qquad P^2+Q^2=S^{2k}.
+\]
+The algebras \(\mathbb F_p[i]\) for odd \(p\) are reduced
+algebras. If \(p\) divides both \(P,Q\), the reduction of
+\(u+i v\) is nilpotent and hence zero, contrary to
+coprimality of \(u,v\). Since \(S\) is odd, 2 cannot divide
+both \(P,Q\) either. Outside the finitely many rational
+ratios for which \(PQ=0\), the displayed triple is primitive
+and positive after taking absolute values. Finiteness of
+those ratios follows from the nonzero homogeneous real and
+imaginary part polynomials, and a ratio determines the
+coprime \(u,v\).
+
+Each of \(u,v,u-v,u+v\) divides the homogeneous polynomial
+\(P Q\). At the corresponding points, \((u+i v)^2\) is
+either real or purely imaginary. The product of the four
+distinct linear factors therefore divides \(P Q\) over
+\(\mathbb Z\), by Gauss's lemma. Its degree is \(4k\), so after
+removing the three original letters, the remaining factor
+has degree \(4k-3\). Since \(S=O(c^2)\), this proves
+\[
+  C=S^{2k}\asymp_k c^{4k},\qquad
+  \operatorname{rad}(PQS)\ll_k
+     \operatorname{rad}(abc)c^{4k-1}.
+\]
+An unbounded original sequence below \(c^\lambda\),
+with fixed \(\lambda<1\), yields unbounded primitive
+exceptions at any fixed \(\mu\) strictly between
+\(1-(1-\lambda)/(4k)\) and \(1\). The reverse implication
+is restriction of full \(abc\).
+
+The degree \(4k\) is minimal for a rational map whose
+three specified fibres have local degrees divisible by
+\(2,2,2k\), respectively. With degree \(d\), those
+fibres alone contribute at least
+\((2-1/(2k))d\) to the ramification divisor, so
+Riemann–Hurwitz gives \(d\ge4k\). The map
+\(P^2/S^{2k}\) has degree \(4k\), with difference from
+one equal to \(-Q^2/S^{2k}\), and attains the bound.
+
+The exponent conversion
+between the two full conjecture statements is exact:
+\(\operatorname{rad}(abc)<c^\lambda\) is
+\(c>\operatorname{rad}(abc)^{1+\varepsilon}\) for
+\(\lambda=1/(1+\varepsilon)\), which ranges over \((0,1)\).
+
+## A fixed icosahedral power signature suffices for abc
+
+The full \(abc\) conjecture is equivalent to finiteness at
+every strict radical threshold for primitive signed relations
+\[
+       X^2-Y^3=1728 Z^5,\qquad
+       XYZ\ne0,\qquad \gcd(X^2,Y^3,1728 Z^5)=1 .
+       \tag{K3}
+\]
+The threshold is \(\operatorname{rad}(6XYZ)<C^\mu\) for
+\(0<\mu<1\), where \(C=\max(X^2,|Y|^3,1728|Z|^5)\).
+The signs allow the three absolute letters to be reordered
+as a positive primitive additive triple.
+
+Use the following forms from Klein's icosahedral identity.
+In the display, \(s=U^5\) and \(t=V^5\).
+\[
+\begin{aligned}
+ F(U,V)&=UV(s^2+11st-t^2),\\
+ G(U,V)&=s^4-228s^3t+494s^2t^2+228st^3+t^4,\\
+ T(U,V)&=s^6+522s^5t-10005s^4t^2-10005s^2t^4-522st^5+t^6,\\
+ T^2-G^3&=1728F^5 .
+\end{aligned}
+\]
+The quotient map \(1728F^5/T^2\) has degree 60. Its fibres
+over \(0,1,\infty\) have uniform orders \(5,3,2\)
+respectively. The forms have no common geometric zero in
+pairs, and their separate roots in \(\mathbf P^1\) are simple.
+[Darmon–Granville, §7.4 and Klein's displayed identity](https://www.math.mcgill.ca/darmon/pub/Articles/Research/12.Granville/pub12.pdf).
+
+Choose \(u,v\) from the input as in the Pythagorean reduction,
+then put \(U=u^2-v^2\) and \(V=2uv\). Swap \(u,v\) if
+\(u\equiv 2v\pmod 5\). This ensures \(u\not\equiv2v\pmod5\)
+since \(u/v=2\) changes to \(3\) in that case. It preserves
+the three input linear factors up to sign. Now \(U,V\)
+are coprime, with \(U\) odd and \(V\) even. Also
+\(U\not\equiv2V\pmod5\), since
+\(u^2-4uv-v^2\equiv (u-2v)^2\pmod5\).
+
+The evaluated relation is primitive. At 2, \(G\) is odd.
+At 3, \(G\equiv(s^2+t^2)^2\) and is nonzero for coprime
+\(U,V\). At any other prime dividing both \(F\) and \(G\),
+neither \(U\) nor \(V\) can vanish, because \(G\) on either
+axis is a pure power with coefficient one. With \(w=s/t\),
+the polynomial \(H(w)=w^2+11w-1\) must vanish. The
+remainder of the displayed quartic in \(s,t\) at
+\((s,t)=(w,1)\) modulo \(H\) is
+\(3125(1-11w)=3125w^2\bmod H\).
+Thus a common prime of \(F,G\) would have to be 5.
+There \(H(w)=(w-2)^2\) and \(w=U/V\bmod5\), already
+excluded. Identity (K3) then gives the required gcd.
+Finite exceptional rational input ratios at zeros of \(F,G,T\)
+can be omitted, since the composition with
+\((u^2-v^2)/(2uv)\) is nonconstant.
+
+The output height \(C\) is comparable to \(c^{120}\).
+Indeed \(\max(|U|,|V|)\asymp c^2\) by
+\(U^2+V^2=(u^2+v^2)^2\). On normalizing that maximum
+to one, the maximum of the three absolute output forms of
+common degree 60 is bounded below, by compactness and
+absence of a common projective zero.
+
+The radical estimate uses the ramification of the quadratic
+substitution. The polynomial \(T(U,V)\) is divisible by
+\(U^2+V^2\), as is seen by setting \(U=\pm iV\) in the
+displayed sextic in \(s,t\). This factor becomes \(S^2\).
+Consequently \(\operatorname{rad}(T(U,V))\ll c^{58}\),
+using \(S=O(c^2)\) and the remaining degree-28 form
+in \(U,V\). For \(F\), the factor \(UV=2uv(u-v)(u+v)\)
+contains the three original letters. The remaining linear
+factor has size \(O(c)\), and the residual degree-ten form
+has size \(O(c^{20})\). Together with \(G=O(c^{40})\),
+these yield
+\[
+       \operatorname{rad}(6TGF)\ll
+         \operatorname{rad}(abc)c^{119}.
+\]
+If \(\operatorname{rad}(abc)<c^\lambda\) along an
+unbounded sequence with fixed \(\lambda<1\), the output
+gives infinitely many strict exceptions in (K3) at any
+\(\mu\) between \(1-(1-\lambda)/120\) and \(1\).
+Conversely, the absolute letters of a solution to (K3)
+form a primitive positive additive triple with radical
+\(\operatorname{rad}(6XYZ)\). Each triple determines
+only finitely many assignments, roots and signs.
+
+## Minimum degree for anchoring three rational points
+
+Consider nonconstant rational maps from \(\mathbf P^1\)
+over \(\mathbb Q\) for which the local degrees over
+\(0,1,\infty\) are divisible by \(5,3,2\), respectively.
+Among maps sending all three input points \(0,1,\infty\)
+into that set, the minimum degree is \(120\).
+
+Every such map \(f\) has degree divisible by \(60\).
+Over \(\overline{\mathbb Q}\), pull back the Klein quotient
+\(f_0=1728F^5/T^2\) along \(f\) and normalize. The
+projection to the source of \(f\) is unramified,
+since locally the quotient is a power of order \(e\),
+and the pullback local order is a multiple of \(e\).
+In local coordinates the relation is \(w^e=t^m\) with
+\(e\mid m\), and its normalized branches project with
+degree one locally. Away from \(0,1,\infty\) the quotient
+was already unramified. Riemann–Hurwitz excludes an
+unramified cover of \(\mathbf P^1\) of degree greater than
+one, so each component gives a lift of \(f\) through
+\(f_0\). In degree \(60\), the lift is a Möbius map.
+
+In any degree-60 model over \(\mathbb Q\), at most two
+points above \(0,1,\infty\) are rational. First suppose
+there is a rational order-five point. The cyclic
+stabilizer is Galois stable and its other fixed point
+is rational as well. Put these two points at \(0,\infty\)
+by a rational coordinate change. Using a deck
+transformation of the Klein map to send the first image
+to 0, the lift is now scaling by \(\rho\). The remaining
+order-five divisor in these coordinates is given by
+\(\rho^{10}z^{10}+11\rho^5 z^5-1\). This polynomial
+has rational coefficients because its divisor is rational
+and its constant coefficient is normalized. In
+particular \(\rho^5\in\mathbb Q^\times\). A further
+rational ramification point would give a rational root
+\(w=\rho^5z^5\) of one of the residual polynomials
+in the display in \(s,t\), with \(t=1\).
+The quadratic for \(F\) has nonsquare discriminant \(125\).
+For \(G,T\) the rational root test leaves only \(\pm1\),
+where both polynomials are nonzero. Thus this case has
+exactly two rational points above the three fibres.
+
+Suppose next that there is no rational order-five point.
+Identify \(\operatorname{Aut}(A_5)\) with \(S_5\) acting
+by conjugation. This identification follows from the
+action on the five Sylow two-subgroups, which are the
+Klein four groups fixing the respective letters. The
+action on those groups by \(A_5\) is faithful, so an
+automorphism fixing all five induces the identity on
+\(A_5\). Conjugation by \(S_5\) realizes all permutations.
+
+Choose a Galois automorphism \(\sigma\) acting by
+squaring on fifth roots of unity and fixing third roots
+of unity. A Möbius element of order five has a pair of
+inverse multipliers at its two fixed points. Under
+\(\sigma\), this pair is squared, giving a different
+pair. Thus \(\sigma\) acts by an outer automorphism on
+the geometric deck group, represented by an odd
+permutation \(h\in S_5\).
+Complex conjugation preserves the multiplier pair and
+acts by an inner automorphism, because the two
+\(A_5\)-classes of five-cycles are exactly the two pairs
+of possible multipliers. The implementing element
+\(\kappa\) is a nontrivial involution. A trivial action
+would realize \(A_5\) in \(\operatorname{PGL}_2(\mathbb R)\).
+Such an action preserves orientation on the real
+projective circle, by simplicity, and a finite group
+of orientation-preserving circle homeomorphisms is
+cyclic. Indeed a finite-order homeomorphism fixing a
+point is the identity, and a free orbit gives a faithful
+action by cyclic permutations.
+
+The involution \(\kappa\) has no real fixed point.
+Otherwise, in real coordinates sending its two fixed
+points to \(0,\infty\), it acts by \(z\mapsto-z\).
+The antiholomorphic map obtained by composing
+\(\kappa\) with complex conjugation centralizes all
+deck transformations. It is now \(z\mapsto-\bar z\),
+which becomes ordinary conjugation after a complex
+scaling. Again this would realize \(A_5\) over \(\mathbb R\).
+
+The centralizer of \(\kappa\) in \(A_5\) is a Klein
+four group. The centralizer of \(h\) in \(A_5\) is
+\(S_3,C_2\), or \(C_3\), according as \(h\) is a
+transposition, a four-cycle, or a disjoint transposition
+and three-cycle. Their intersection has at most one
+nontrivial involution. Each rational order-two point
+defines a rational involution by its stabilizer, so
+there are at most two rational order-two points.
+Each rational order-three point defines a cyclic
+subgroup fixed pointwise by \(h\), since \(\sigma\)
+fixes the multipliers there. Each displayed centralizer
+has at most one order-three subgroup, whose two
+fixed points bound the number of rational order-three
+points by two.
+
+If both types of rational point existed, \(h\) would
+have to be a transposition. The rational involution
+would then invert the distinguished order-three
+subgroup in its \(S_3\) centralizer. Complex conjugation
+also inverts that subgroup, by its multipliers at a
+rational point, so \(\kappa\) and the rational involution
+belong to its normalizer \(S_3\) in \(A_5\). They commute
+because the latter involution is rational. Distinct
+involutions in \(S_3\) do not commute, so the rational
+involution is \(\kappa\). Its lack of real fixed points
+contradicts a rational order-two point. This completes
+the two-point bound in degree 60.
+
+Finally \(f_0((z^2-1)/(2z))\) has degree 120 and
+sends \(0,1,\infty\) to the order-five fibre. The two
+branch values of the quadratic map are \(\pm i\),
+which are in the order-two fibre of \(f_0\). Thus this
+composition has no branch value outside \(0,1,\infty\),
+and meets all three local divisibility conditions.
+
+## Counting primitive Pythagorean exceptions
+
+For fixed \(0<\mu\le1\), the number of primitive positive
+\(x^2+y^2=z^2\) with \(z^2\le X\) and
+\(\operatorname{rad}(xyz)\le (z^2)^\mu\) is
+\[
+ O_{\mu,\varepsilon}\!\left(X^{
+   \min\{\mu/3,\ \max(1/4,(3\mu-1)/7)\}+\varepsilon}\right).
+ \tag{K4}
+\]
+At the unit budget the exponent is \(2/7\).
+
+Take \(x\) odd by ordering the two legs. The coprime
+integers \((z+x)/2,(z-x)/2\) have square product
+\((y/2)^2\). Writing them as \(u^2,v^2\) gives the
+usual coprime opposite-parity parameters \(u>v>0\).
+On a shell \(u\asymp H\) the five values
+\[
+     u,\quad v,\quad u+v,\quad u-v,\quad S=u^2+v^2
+\]
+are pairwise coprime. The two sums or differences are
+odd, and a common odd prime in two of the values would
+divide both \(u,v\). The product of their radicals is
+exactly \(\operatorname{rad}(xyz)\), since one of
+\(u,v\) is even. The shell therefore has total radical
+budget \(O(H^{4\mu})\).
+
+In polynomial-size ranges, the number of integers with
+any specified radical is \(O_\varepsilon(H^\varepsilon)\).
+For instance, the Rankin bound with exponent
+\(\varepsilon/2\) has Euler product over the prescribed
+primes, of size \(H^{o(1)}\). The latter follows by
+ordering those primes and using \(p_j\ge j+1\) and
+\(\omega=O(\log H)\). Also \(S\) has
+\(O_\varepsilon(H^\varepsilon)\) sum-of-two-squares
+representations by the usual Gaussian divisor bound.
+Thus \(\operatorname{rad}(S)\le H^r\) gives
+\(O_\varepsilon(H^{r+\varepsilon})\) pairs.
+Set \(r=4\mu/3\). In the complementary case the two
+cheapest radicals among the four linear values have
+product \(O(H^{4\mu/3})\). Enumerating these two
+radicals and then their values costs
+\(O_\varepsilon(H^{4\mu/3+\varepsilon})\), and two
+distinct linear values determine \(u,v\).
+
+For the second bound, take
+\(r=\max(1,(12\mu-4)/7)\). When
+\(\operatorname{rad}(S)>H^r\), choose the three
+cheapest linear radicals. Their product is
+\(O(H^{3\mu-3r/4})\). Each of the four possible
+choices gives a primitive positive additive triple
+of height comparable to \(H\). Put \(L_\pm=u\pm v\).
+The relations are \(L_-+v=u\), \(u+v=L_+\),
+\(L_-+2v=L_+\), and \(L_-+L_+=2u\).
+Doubling a letter costs at most a factor two in the
+radical. Knowing the relation and the triple recovers
+\(u,v\) up to a bounded number of choices.
+
+For primitive additive triples with maximum letter
+\(\asymp H\), letter product \(\asymp V\) and radical
+product at most \(R\), Kane's upper-bound proof gives
+\(O_\varepsilon(H^\varepsilon(R/H+V^{1/3}))\).
+In the proof of Proposition 7, before
+replacing the three radicals by powers of their
+individual letters, the dyadic bound is
+\(H^\varepsilon(R/H+\prod_i v_i)\), with
+\(v_i=\prod_{p^2\mid A_i}p\) on the three letters.
+Use the split in the proof of Theorem 2 with the
+actual letter product. Write \(L\) for the product of
+the square roots of the three largest square divisors.
+When \(L\le V^{1/3}\), the product of the \(v_i\) is
+at most \(V^{1/3}\). Above \(V^{1/3}\), the two terms
+in Proposition 10, apart from \(H^\varepsilon\), are
+\(O(V/L^2)\) and \(O(\sqrt{V/L})\), each bounded
+by \(O(V^{1/3})\). There are only logarithmically
+many dyadic intervals for \(V\).
+[Kane, Proposition 7, Proposition 10 and proof of Theorem 2](https://cseweb.ucsd.edu/~dakane/ABC2.pdf).
+
+Here \(V\ll H^3\) and \(3\mu-3r/4-1\le r\), so this bound gives
+\(O_\varepsilon(H^{r+\varepsilon})\) in the second
+case as well. Summing the shells with \(H\ll X^{1/4}\)
+proves (K4).
+
+If one linear value is at most \(u^\theta\) for fixed
+\(0\le\theta\le1\), the second count also has exponent
+\[
+ \frac14\max\{(2+\theta)/3,\ (8\mu+\theta-3)/5\}.
+\]
+For this bound let \(r\) be the displayed maximum
+without the factor \(1/4\). Keep the short value
+and the two cheapest of the other three linear
+radicals. Their combined exponent is at most
+\((8\mu-2r+\theta)/3\) in the shell \(H\) when
+\(\operatorname{rad}(S)>H^r\). Now \(V\ll H^{2+\theta}\),
+and the height-sensitive bound costs \(H^{r+\varepsilon}\).
+At \(\mu=1\) this improves the \(2/7\) exponent when
+\(\theta<5/7\).

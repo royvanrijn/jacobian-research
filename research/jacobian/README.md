@@ -48,7 +48,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Fixed threefold Keller maps for the concentrated Arala Hasse families | Internal result | proved | [Source](../arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md) |
 | The Orevkov invariant obstructs immersive Keller branch curves | Internal result | proved | [Source](monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md) |
 | Finite normalization and affine cusp classification in six sheets | Internal result | proved | [Source](monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md) |
-| Sharp degree 109 modulo 81 for the prime-three BGV radial Frobenius family | Internal result | unmapped | [Source](mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md) |
+| Sharp degree 109 modulo 81 for the prime-three BGV radial Frobenius family | Internal result | proved | [Source](mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md) |
 
 **Computed obligations:** 23 unresolved; 5 resolved within their exact scope.
 
@@ -84,7 +84,7 @@ Scope limits:
 - Marked quadratic models with ord_0 M>=2 exclude ruling excess zero. The reduced S2 and MX0 double-zero frames also exclude excess one. The (8,12) bound is then seven; larger excess and global coverage remain open.
 - For p=3 the unrestricted minimum lift degree is 81 at both moduli 9 and 27. A bounded Witt tower can be chosen compatibly, so unrestricted degree growth is equivalent to excluding any integral polynomial lift of the seed. The degree growth is proved for lifts affine along a lift of the fixed residue line.
 - The planar degree assessment tracks the Santibáñez-Leal certificate route for (72,108) and the normalized Giraudin F2 and degree-147 exclusions. These exact scopes have separate verification obligations.
-- Global directional coordinate-conductor degrees two, four, six, eight and ten are excluded. In a monic source frame the global degree is even and at least twelve, with defect at least six where the global leading coefficient is nonzero. On an arbitrary specialized line the lower bounds remain two for conductor degree and one for defect.
+- Global directional coordinate-conductor degrees two, four, six, eight, ten and twelve are excluded. In a monic longitudinal frame the global degree is even and at least fourteen, with defect at least seven where the global leading coefficient is nonzero. On arbitrary specialized lines the bound remains two.
 
 Tracked obligations (computed states):
 

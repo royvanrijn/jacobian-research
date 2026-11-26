@@ -108,3 +108,119 @@ The underlying compactness and integer carry recursion also appear in
 Its Theorem 5.1 is an exact infinite path criterion. The block
 condition above is a sufficient residue test that allows jumps to
 be handled by several preceding blocks. The unbounded-jump extension remains open.
+
+## How large a correction must be near a prime power
+
+An ordinary block at a multiple \(n\) of \(5\) has some spare
+terms. The three weights \((n+1)!,(n+2)!,(n+3)!\), normalized by
+\(n!\), have residues \(1,2,1\) modulo \(5\), so their subsums
+realize every residue modulo \(5\). The two unused terms can be
+selected as one packet with valuation \(v_5(n!)+2\). Indeed
+\[
+ \frac{n!+(n+4)!}{n!}
+   =25+50n+35n^2+10n^3+n^4\equiv25\pmod{125}.
+\]
+Such packets can add choices at an offset of two. Large jumps
+require packets that reach much further.
+
+**Proposition (Size of corrections at large jumps).**
+Fix a prime \(p\), write \(J_p(n)=v_p(n!)\), and set \(N=p^r\).
+For sufficiently large \(r\), consider a signed sum of distinct
+positive factorials whose valuation lies in
+\[
+ \left[J_p(N-1)+r/3,\ J_p(N-1)+2r/3\right].                  \tag{404.3}
+\]
+Its nonzero terms have index span \(\gg_p r/\log r\), where
+span is largest index minus smallest index plus one. The sum
+also contains more than \(\log r/(10\log\log r)\) nonzero terms.
+Both statements allow coefficients from \(\{-1,0,1\}\).
+
+Terms with index at least \(N\) can be dropped because their
+valuations are at least \(J_p(N)=J_p(N-1)+r\).
+Write \(n\) for the smallest remaining index and \(W\) for the
+span of the remaining terms. Set \(w=N-n\). The sum equals
+\(n!P(n)\), where
+\[
+ P(Z)=\sum_{j=0}^{W-1} e_j \prod_{\ell=1}^j(Z+\ell),
+ \qquad e_j\in\{-1,0,1\},\quad e_0\ne0.
+\]
+Each factor evaluated at \(n\) is at most \(N\). Thus, if
+\(s=v_p(n!P(n))\) lies in (404.3), then
+\[
+ s-J_p(n)\le (W-1)r+\log_p W .
+\]
+Counting multiples of \(p\) between \(n\) and \(N-1\) also gives
+\(J_p(N-1)-J_p(n)\ge\lfloor(w-1)/p\rfloor\).
+It follows that \(w\ll_p(r+1)W\).
+
+The integer \(P(n)\) is congruent to \(P(-w)\) modulo \(p^r\).
+If \(W\le c_p r/\log r\) for a sufficiently small constant
+\(c_p>0\) and \(P(-w)\ne0\), then
+\[
+ v_p(P(-w))\le \log_p \bigl(W(w+W)^{W-1}\bigr)<r/3.
+\]
+The congruence then gives the same valuation to \(P(n)\),
+which contradicts (404.3). If \(P(-w)=0\), we must have
+\(w\le W\). For \(w\ge W+1\) the absolute values of the
+successive factorial products at \(-w\) increase by at least
+a factor of two. The largest product with nonzero coefficient
+then exceeds the sum of the absolute values of all the others.
+When \(P(-w)=0\) the congruence gives \(v_p(P(n))\ge r\), while
+\[
+ J_p(N-1)-J_p(n)=J_p(w-1)\le (w-1)/(p-1).
+\]
+The equality holds since \(v_p(N-j)=v_p(j)\) for \(0<j<N\).
+For \(w\le W\le c_p r/\log r\) this places the valuation above
+the upper end of (404.3). This proves the span bound.
+
+For the number of terms, fix one attainable valuation \(s\)
+in (404.3) and take a signed sum attaining it with the smallest
+number \(k\) of terms. Its indices satisfy
+\(n=n_1<\cdots<n_k<N\). Every proper prefix sum \(S_i\)
+has valuation strictly less than \(s\). If a prefix had
+valuation \(s\), that prefix alone would suffice. If its
+valuation exceeded \(s\), the suffix alone would suffice
+by the ultrametric inequality. In particular every such
+prefix is nonzero and has \(J_p(n_{i+1})\le v_p(S_i)\),
+since all later factorials have valuation at least
+\(J_p(n_{i+1})\). Write \(W_i=n_i-n+1\), and write
+\(S_i=n!P_i(n)\) using the polynomial construction above.
+
+First use \(|P_i(n)|\le W_i N^{W_i-1}\), together with
+\(J_p(n_{i+1})-J_p(n)\ge\lfloor(n_{i+1}-n)/p\rfloor\).
+For some constant \(C_p\) this gives
+\(W_{i+1}\le C_p(r+2)W_i\) for every \(i<k\).
+The analogous final bound is \(w\le C_p(r+2)W_k\), as
+for the span argument. Since \(W_1=1\), we obtain
+\(w,W_i\le (C_p(r+2))^k\).
+This preliminary estimate implies
+\(\log_p(w+W_i)=O_p(k\log(r+2))\).
+
+Suppose now that \(k\le\log r/(10\log\log r)\). Put
+\(L=C'_p k\log(r+2)\), with \(C'_p\) a sufficiently large
+constant. For all sufficiently large \(r\), \(L^k\le r^{1/3}\)
+because \(\log L\le(2+o(1))\log\log r\).
+We prove \(W_i\le L^{i-1}\) successively, starting at \(i=1\).
+If \(P_i(-w)=0\) at a step with this bound, its span forces
+\(w\le W_i\). As in the span argument, this would give
+\(v_p(S_i)\ge J_p(N)-W_i/(p-1)>s\), which is impossible
+for either a proper prefix or the full sum. Otherwise
+\[
+ v_p(P_i(-w))
+ \le \log_p\bigl(W_i(w+W_i)^{W_i-1}\bigr)
+ \ll_p k\log(r+2)W_i.
+\]
+The last bound is less than \(r/3\), by the choice of \(L\)
+and \(L W_i\le L^k\). Hence it bounds \(v_p(P_i(n))\)
+as well. For \(i<k\) the next index inequality above and
+counting multiples of \(p\) give \(W_{i+1}\le L W_i\) after
+choosing \(C'_p\) large enough. For \(i=k\) the valuation
+bound puts \(s\) below \(J_p(N-1)+r/3\), a contradiction.
+This proves the term count.
+
+The proposition rules out making standalone corrections at
+the middle digits from a uniformly bounded number of factorials.
+It applies also to differences between two candidate fillings.
+A full lifting argument must account for corrections of growing
+size, or avoid requiring such standalone corrections. The
+existence of an infinite carry path for (404.1) remains open.

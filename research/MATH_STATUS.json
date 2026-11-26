@@ -5220,7 +5220,7 @@
         "Marked quadratic models with ord_0 M>=2 exclude ruling excess zero. The reduced S2 and MX0 double-zero frames also exclude excess one. The (8,12) bound is then seven; larger excess and global coverage remain open.",
         "For p=3 the unrestricted minimum lift degree is 81 at both moduli 9 and 27. A bounded Witt tower can be chosen compatibly, so unrestricted degree growth is equivalent to excluding any integral polynomial lift of the seed. The degree growth is proved for lifts affine along a lift of the fixed residue line.",
         "The planar degree assessment tracks the Santibáñez-Leal certificate route for (72,108) and the normalized Giraudin F2 and degree-147 exclusions. These exact scopes have separate verification obligations.",
-        "Global directional coordinate-conductor degrees two, four, six, eight and ten are excluded. In a monic source frame the global degree is even and at least twelve, with defect at least six where the global leading coefficient is nonzero. On an arbitrary specialized line the lower bounds remain two for conductor degree and one for defect."
+        "Global directional coordinate-conductor degrees two, four, six, eight, ten and twelve are excluded. In a monic longitudinal frame the global degree is even and at least fourteen, with defect at least seven where the global leading coefficient is nonzero. On arbitrary specialized lines the bound remains two."
       ],
       "gap_ids": [
         "GAP-JACOBIAN-1",
@@ -5419,8 +5419,8 @@
           "id": "HESSIAN-COORDINATE-CONDUCTOR",
           "title": "Generic coordinate order and exact closed-collision conductor",
           "state": "proved",
-          "scope": "Actual complex plane Keller map with Jac1 and P monic of positive x-degree: R=S[y], F(y)=L and A=B[y] has finite hypersurface-order normalization R. Its exact conductor is kappa*R, kappa=F_T(P,Q,y), whose support is every closed same-y collision. The explicit inclusion determinant Delta over C[P,y] satisfies Norm(kappa)=(-1)^M*Delta^2. On EVERY line y=c, deg_x kappa=2*delta(c); under failure this is even and>=2. Global degree2 is exactly a sheared nodal-curve product. Non-Keller multiple/tangency controls prohibit generic reducedness shortcuts. Automatic target/trace integrality is open. Global conductor degrees two, four, six, eight and ten are excluded. For an actual noninvertible complex plane Keller map in a source frame with a monic polynomial of positive longitudinal degree, the exact global directional conductor degree is even and at least twelve. In global degree ten the actual reduced characteristic sequences (11,2) and (6,4,7) are both excluded, allowing all actual finite source fibers. The generic normalization defect is at least six. Lower bounds on an arbitrary specialized line remain two for conductor degree and one for normalization defect. Higher conductors, HC4 and JC2 remain open.",
-          "canonical_source": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
+          "scope": "Actual complex plane Keller map with Jac1 and P monic of positive x-degree: R=S[y], F(y)=L and A=B[y] has finite hypersurface-order normalization R. Its exact conductor is kappa*R, kappa=F_T(P,Q,y), whose support is every closed same-y collision. The explicit inclusion determinant Delta over C[P,y] satisfies Norm(kappa)=(-1)^M*Delta^2. On EVERY line y=c, deg_x kappa=2*delta(c); under failure this is even and>=2. Global degree2 is exactly a sheared nodal-curve product. Non-Keller multiple/tangency controls prohibit generic reducedness shortcuts. Automatic target/trace integrality is open. Global conductor degrees two, four, six, eight, ten and twelve are excluded. For actual noninvertible complex plane Keller maps in a monic longitudinal source frame, global directional coordinate-conductor degree is even and at least fourteen. The degree-twelve case is excluded in all six reduced characteristic sequences of the exact generic order, with all finite specializations handled. The defect is at least seven where the global leading coefficient is nonzero. On arbitrary specialized lines the lower bounds remain two for conductor degree and one for normalization defect.",
+          "canonical_source": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
           "checker": "hessian/hc4-triangular-graphs/verify_global_sextic_conductor.py",
           "artifact_hash": "sha256:2c82c120a4f122794bfa05384fec8a51741dd36bf02bd4a5c7927a742a352a60",
           "evidence": [
@@ -5479,7 +5479,7 @@
               "quantity": "global-directional-coordinate-conductor-degree",
               "domain": "actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate",
               "sense": "lower",
-              "value": 12,
+              "value": 14,
               "units": "global degree in the longitudinal source coordinate"
             },
             {
@@ -5493,7 +5493,7 @@
               "quantity": "source-line-coordinate-order-normalization-defect",
               "domain": "actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate; source lines y=c where the global conductor leading coefficient is nonzero",
               "sense": "lower",
-              "value": 6,
+              "value": 7,
               "units": "complex vector-space dimension"
             }
           ],
@@ -6029,10 +6029,88 @@
               "domain": "actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate",
               "sense": "lower",
               "value": 12,
-              "units": "global degree in the longitudinal source coordinate"
+              "units": "global degree in the longitudinal source coordinate",
+              "superseded_by": "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION"
             }
           ],
           "verification_note": "Written proof with internal checks of parameter, collision and Newton-scale identities."
+        },
+        {
+          "id": "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS",
+          "title": "Hyperelliptic and cubic–septic exclusions in conductor degree twelve",
+          "state": "proved",
+          "scope": "An actual complex plane Keller map of global conductor degree twelve in a monic longitudinal frame cannot have reduced sequence (13,2) or (7,3). The reflected actions handle the one integral leading-zero resonance, and the exact cubic–septic parameter identities and finite-fibre action rule exclude the other case.",
+          "canonical_source": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_HYPERELLIPTIC_AND_CUBIC_EXCLUSIONS.md",
+          "checker": "hessian/hc4-triangular-graphs/verify_conductor_twelve_hyperelliptic_and_cubic_exclusions.py",
+          "artifact_hash": "sha256:88356267743b1e92c6b0c43b014d0cd54f3e24c8f4f18a5f9ad843ab8a8fb0ff",
+          "evidence": [],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "complete",
+          "verification_note": "Written proof with exact coefficient and finite identity replay where a checker is specified."
+        },
+        {
+          "id": "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION",
+          "title": "Quartic–quintic exclusion in conductor degree twelve",
+          "state": "proved",
+          "scope": "An actual complex plane Keller map of global conductor degree twelve in a monic longitudinal frame cannot have reduced sequence (5,4). The integrated quartic–quintic equations rule out finite poles, and the fixed-order quartic relation controls the alternate specialized embedding.",
+          "canonical_source": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_QUARTIC_QUINTIC_EXCLUSION.md",
+          "checker": "hessian/hc4-triangular-graphs/verify_conductor_twelve_quartic_quintic_exclusion.py",
+          "artifact_hash": "sha256:de9bac3ec3838ade5a4de8f58b9d238d13b6451649ec60f77c876973101aa648",
+          "evidence": [],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "complete",
+          "verification_note": "Written proof with exact coefficient and finite identity replay where a checker is specified."
+        },
+        {
+          "id": "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS",
+          "title": "Cable characteristic-sequence exclusions in conductor degree twelve",
+          "state": "proved",
+          "scope": "An actual complex plane Keller map of global conductor degree twelve in a monic longitudinal frame cannot have reduced sequence (6,4,9), (9,6,4), or (10,4,5). Exact approximate-root and parameter identities and the original finite-pair constraints cover these embeddings.",
+          "canonical_source": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_CABLE_EXCLUSIONS.md",
+          "checker": "hessian/hc4-triangular-graphs/verify_conductor_twelve_cable_exclusions.py",
+          "artifact_hash": "sha256:8dc6138efdab5e7d256d441e26c4c872cdae88977fbd7c375021d29035b8430a",
+          "evidence": [],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "complete",
+          "verification_note": "Written proof with exact coefficient and finite identity replay where a checker is specified."
+        },
+        {
+          "id": "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION",
+          "title": "Global conductor-twelve exclusion and lower bound fourteen",
+          "state": "proved",
+          "scope": "For actual noninvertible complex plane Keller maps in a monic longitudinal source frame, global directional coordinate-conductor degree is even and at least fourteen. The degree-twelve case is excluded in all six reduced characteristic sequences of the exact generic order, with all finite specializations handled. The defect is at least seven where the global leading coefficient is nonzero. On arbitrary specialized lines the lower bounds remain two for conductor degree and one for normalization defect.",
+          "canonical_source": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "complete",
+          "verification_note": "Written proof with exact coefficient and finite identity replay where a checker is specified.",
+          "bounds": [
+            {
+              "quantity": "global-directional-coordinate-conductor-degree",
+              "domain": "actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate",
+              "sense": "lower",
+              "value": 14,
+              "units": "global degree in the longitudinal source coordinate"
+            }
+          ]
         }
       ],
       "open_questions": [
@@ -6055,8 +6133,8 @@
           "node": "GAP-AUTOMATIC-T3-PERFECTION"
         },
         {
-          "question": "For an actual noninvertible complex plane Keller map in a source frame with a monic polynomial of positive longitudinal degree, the exact global directional conductor degree is even and at least twelve. In global degree ten the actual reduced characteristic sequences (11,2) and (6,4,7) are both excluded, allowing all actual finite source fibers. The generic normalization defect is at least six. Lower bounds on an arbitrary specialized line remain two for conductor degree and one for normalization defect. Higher conductor degrees and automatic first-velocity integrality remain open.",
-          "source": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
+          "question": "For actual noninvertible complex plane Keller maps in a monic longitudinal source frame, global directional coordinate-conductor degree is even and at least fourteen. The degree-twelve case is excluded in all six reduced characteristic sequences of the exact generic order, with all finite specializations handled. The defect is at least seven where the global leading coefficient is nonzero. On arbitrary specialized lines the lower bounds remain two for conductor degree and one for normalization defect. Degree fourteen and higher, automatic codifferent landing, HC4 and JC2 remain open.",
+          "source": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
           "kind": "mathematical",
           "node": "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
         },
@@ -6093,7 +6171,7 @@
         "An exceptional fold gives an exact marked double pole for a transverse target derivative of any affine source coordinate with nonzero a coefficient. Automatic membership remains open.",
         "Each polar omitted prime has a normalized marked trace of pole order floor(q/e)+1 and target residue −q d times the transverse derivative of its image equation modulo that equation.",
         "In the full finite normalization of every complex plane Keller map, all unramified omitted primes are smooth affine lines and their target normalizations are immersive. The result uses the local degree-one case of the boundary resolution and does not require a common source coordinate.",
-        "Global directional coordinate-conductor degrees two, four, six, eight and ten are excluded. In a monic source frame the global degree is even and at least twelve, with defect at least six where the global leading coefficient is nonzero. On an arbitrary specialized line the lower bounds remain two for conductor degree and one for defect."
+        "Global directional coordinate-conductor degrees two, four, six, eight, ten and twelve are excluded. In a monic longitudinal frame the global degree is even and at least fourteen, with defect at least seven where the global leading coefficient is nonzero. On arbitrary specialized lines the bound remains two."
       ],
       "gap_ids": [
         "GAP-HESSIAN-TERMINATION",
@@ -24427,7 +24505,7 @@
         {
           "kind": "mathematical",
           "node": "GAP-FACTORIAL-BINARY-THREE-ADIC-WILD-CANCELED-ROW",
-          "question": "At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 only size four remains, with one foreign column of natural valuation 0<v(u)<=1/3 outside the allowed axis slots and exponent region. At L>=9 the remaining sizes run from 3 through L+1 when c=0, or 3 through L when c!=0. A block lies in the canceled row except that, when c=0, it may start at the final entry of the preceding row.",
+          "question": "At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 size four remains only for the even-digit nonsingleton profile (10) with the exact restrictions (11), (16), and (17). At L>=9 the remaining sizes run from 3 through L+1 when c=0 or through L when c!=0. A block lies in the canceled row except that when c=0 it can start at the preceding row’s last entry.",
           "source": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md"
         }
       ],
@@ -24548,7 +24626,9 @@
         "A short seventh-power cancellation proof supplies a genuinely independent incoming proof of the existing L8 cubic six-window on every coefficient grid with dyadic part four. It uses only the necessary native profile, not either finite coefficient-bound calculation. The universal native cusp is at least two sevenths; either later coefficient bound gives the optional one-third cusp. All-constant nonpolynomial grid12 and its dense actual-support corollary consequently survive logical withdrawal of the finite native-bound proof through this new route. No arbitrary coefficient-field L8, sparse smaller window, full quadratic SFC, SFC(2), SFC(3) or anti-gate closure is claimed.",
         "A constant-shift transfer for proper binary degree-two residue denominators now gives actual-support windows for explicit prime-power axis supports of arbitrary degree. At three, two geometric poles can cancel simultaneously in a critical row, yielding arbitrarily long leading zero blocks. Tame coefficient grids still exclude actual three-zero blocks, and the exact leading length in the wild sector leaves only the recorded short support windows.",
         "Erdős #404: backwards selection of blocks gives a sufficient all-jump covering criterion. Uniform jump sizes 1 through 4 and the 24 larger boundaries below 5^7 certify full residue support through precision 19524. The all-precision target f(1,5)=infinity remains open.",
-        "The full modulo-three lift excludes the first critical two-pole shift on its shape class at every ramification. Outside that class the first critical radius reduces to support four with one positive-valuation foreign column of valuation at most one third."
+        "The full modulo-three lift excludes the first critical two-pole shift on its shape class at every ramification. Outside that class the first critical radius reduces to support four with one positive-valuation foreign column of valuation at most one third.",
+        "In the first wild ternary-prime four-term case, all but one digit profile are excluded by the exact finite native equations. The remaining profile satisfies an explicit valuation-4/3 lift that has solutions for every starting-block quotient, so that modulus alone does not decide the exact four-window there.",
+        "Erdős #404: at boundaries N=p^r the middle third of the missed valuations requires signed factorial corrections of span Omega_p(r/log r) and more than log r/(10 log log r) terms. This bounds standalone repairs, including changes between two candidate sums, and leaves the infinite path question open."
       ],
       "gap_ids": [
         "FACTORIAL-GENERAL-FC",
@@ -32575,7 +32655,7 @@
           "id": "ARITH-ERDOS675-TRANSLATION-PROGRAMME",
           "title": "Erdos675: reviewed prime partitions and the open fixed norm-pattern target",
           "state": "partial",
-          "scope": "Deferred stretch goal for later research, separate from the current norm-counting and binary-correlation papers. The supplied prior Price prime-partition construction is reconstructed using the qualitative Richert lower sieve; both conventions at1 and density-zero enlargement are included. For the fixed sums-of-two-squares set, the exact polynomial-norm reduction, local densities and an infinite initial-eight-bit Pell family are retained. New support results give only an upper envelope and precise norm-field, finite-squareclass and Pell-function-field obstructions to specific attempted extensions. Primary norm-approximation theorems were checked and do not discharge the integer slice. Arbitrary-N fixed-set recurrence and all-N norm-tuple existence remain OPEN. No novelty claim, external human review or independent whole-proof replay is made.",
+          "scope": "Deferred stretch goal for later research, separate from the current norm-counting and binary-correlation papers. The supplied prior Price prime-partition construction is reconstructed using the qualitative Richert lower sieve; both conventions at1 and density-zero enlargement are included. For the fixed sums-of-two-squares set, the exact polynomial-norm reduction, local densities and an infinite initial-eight-bit Pell family are retained. The exact function-field norm offsets of the Pell family give infinite recurrence for finite patterns supported on its three explicit positive families. Position9 lies outside this certification. The upper envelope and the norm-field and finite-squareclass obstructions address other specific routes. Primary norm-approximation theorems were checked and do not discharge the integer slice. Arbitrary-N fixed-set recurrence and all-N norm-tuple existence remain OPEN. No novelty claim, external human review or independent whole-proof replay is made.",
           "canonical_source": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
           "checker": "arithmetic/verify_erdos675_reduction.py",
           "artifact_hash": "sha256:94fec1c380c038cbe25fbd6467c819d20f3dbff9407376cad3c194f643d538aa",
@@ -32600,7 +32680,7 @@
           "review_status": "internal_only",
           "verification_note": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted.",
           "dependency_coverage": "partial",
-          "graph_scope_note": "Deferred stretch goal for later research, separate from the current norm-counting and binary-correlation papers. The supplied prior Price prime-partition construction is reconstructed using the qualitative Richert lower sieve; both conventions at1 and density-zero enlargement are included. For the fixed sums-of-two-squares set, the exact polynomial-norm reduction, local densities and an infinite initial-eight-bit Pell family are retained. New support results give only an upper envelope and precise norm-field, finite-squareclass and Pell-function-field obstructions to specific attempted extensions. Primary norm-approximation theorems were checked and do not discharge the integer slice. Arbitrary-N fixed-set recurrence and all-N norm-tuple existence remain OPEN. No novelty claim, external human review or independent whole-proof replay is made.",
+          "graph_scope_note": "Deferred stretch goal for later research, separate from the current norm-counting and binary-correlation papers. The supplied prior Price prime-partition construction is reconstructed using the qualitative Richert lower sieve; both conventions at1 and density-zero enlargement are included. For the fixed sums-of-two-squares set, the exact polynomial-norm reduction, local densities and an infinite initial-eight-bit Pell family are retained. The exact function-field norm offsets of the Pell family give infinite recurrence for finite patterns supported on its three explicit positive families. Position9 lies outside this certification. The upper envelope and the norm-field and finite-squareclass obstructions address other specific routes. Primary norm-approximation theorems were checked and do not discharge the integer slice. Arbitrary-N fixed-set recurrence and all-N norm-tuple existence remain OPEN. No novelty claim, external human review or independent whole-proof replay is made.",
           "additional_checkers": [
             {
               "path": "arithmetic/verify_erdos675_constructive_controls.py",
@@ -60898,7 +60978,7 @@
         {
           "node": "GAP-ARITH-ABC-CONJECTURE",
           "kind": "mathematical",
-          "question": "Prove that for every fixed 0<lambda<1 only finitely many positive primitive triples a+b=c satisfy rad(abc)<c^lambda. It suffices to settle primitive x^2+D y^2=z^2 for squarefree D≤(z^2)^(1/100) at every strict radical threshold.",
+          "question": "Prove finiteness for every fixed strict abc radical threshold. It suffices to settle primitive Pythagorean triples or the fixed signed equation X^2−Y^3=1728 Z^5 from the spherical reductions.",
           "source": "arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md"
         },
         {
@@ -61179,7 +61259,7 @@
         "For every fixedk>=3 the explicit all-target prescribed-sum bound is33/(33k+35), with saving2/((k+1)(33k+35)) below1/(k+1). Primitive positive coefficients are uniform; original noncoprime values use exact gcd normalization. No coefficient1-to-uniform-primitive converse or carrier-capacity implication is asserted.",
         "Erdos #364 uses consecutive integers. With the stated preprint inputs, the averaged pair count is O_epsilon(X^((6/25-10^-7)+epsilon)), its small-coefficient extension gives the same all-width exponent for Erdos #137, and Pell repair gives a nonfundamental exponent of (6/25-10^-7)/3. The fixed-quadratic transfer uses its own explicit chart inputs. The separate joint collision estimate remains open.",
         "Consecutive powerful pairs satisfy N(X)=O_epsilon(X^(12127/49920+epsilon)), from a trace-to-cubic fixed fiber, the quadratic 3-torsion first moment and the original-width reduced determinant estimate at shift one. Both corner orientations and all dyadic windows are covered. The Erdős #365 polylogarithmic count remains open.",
-        "Erdős #942: polynomial cancellation and nonzero resultants place at least ceil(m/2) pairwise coprime nonsquare powerful integers in one open square interval with log q=O(m^5 log(m+1)). A logarithmic upper bound and the matching exponent for ordinary occupancy remain open."
+        "Erdős #942: polynomial cancellation and an elementary sieve at resultant primes place at least ceil(m/2) pairwise coprime nonsquare powerful integers in one open square interval with log q=O(m^4). The uniform logarithmic upper bound and matching exponent for ordinary occupancy remain open."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -63374,7 +63454,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Theorem, exact support and two-pole calculation"
             },
             {
@@ -63412,7 +63492,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Reconstruction on odd coefficient lines, leading determinant and prime transfer"
             }
           ],
@@ -63437,7 +63517,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "All parameters in a conductor-18 family, Lucas coefficients and exact elimination"
             },
             {
@@ -63475,7 +63555,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Effective bounds for the reconstruction window"
             },
             {
@@ -63515,7 +63595,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "A determinant zero locus resolved by another row"
             },
             {
@@ -63547,7 +63627,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "A unit ideal after triangular elimination"
             },
             {
@@ -63580,12 +63660,12 @@
         {
           "id": "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-THREE-POLE-SLICES",
           "title": "Three-pole conductor-18 reconstruction on coordinate slices and at prime 331",
-          "scope": "For n=18, s=13, P=(z^2−1)^4, B=b+sum b_j z^j of degree at most five and D=−z^(-1)+c+ez, shifts 0 through 16 detect the actual coherent input for all sufficiently large p≡7 mod 18 if b b_1 b_2 c e=0, or if b is nonzero and b²,b_1/b,b_2/b,c,e are integral at one place above 331. For arbitrary coefficients integral above 331, the same window with m=239 certifies a nonzero moment at that prime. The unrestricted rational saturation is open.",
+          "scope": "For n=18, s=13, P=(z^2−1)^4, B=b+sum b_j z^j of degree at most five and D=−z^(-1)+c+ez, shifts 0 through 16 detect the actual coherent input for all sufficiently large p≡7 mod 18 if b b_1 b_2 c e=0, or if b is nonzero and b²,b_1/b,b_2/b,c,e are integral at one place above 331. For arbitrary coefficients integral above 331, the same window with m=239 certifies a nonzero moment at that prime.",
           "dependency_coverage": "partial",
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Three extra pole inputs for odd degree five and even degree one"
             },
             {
@@ -63617,7 +63697,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Corollary (the conductor-18 witness at 61)"
             }
           ],
@@ -63642,7 +63722,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "The projective boundary at 331"
             },
             {
@@ -63679,7 +63759,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Varying the conductor-18 branch ratio"
             }
           ],
@@ -63704,7 +63784,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Hamiltonian symmetries and the coherent profiles"
             }
           ],
@@ -63855,7 +63935,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Four-point family, explicit floors and progression counts"
             },
             {
@@ -66168,12 +66248,12 @@
         {
           "id": "CM-SPHERE-CONDUCTOR-18-OFF-L3-REFINEMENT-331",
           "title": "Refined off-L3 weighted charts at 331",
-          "scope": "For the unreduced ten residual rows in the degree-(5,1) family, the off-L3 points v/ell=2/17 and 5/56 can only reduce to the d-chart with E=275 and E=170 respectively. Both epsilon-dominant charts are excluded. L3 and these two secondary residues remain.",
+          "scope": "For the unreduced ten residual rows in the degree-(5,1) family, the off-L3 points v/ell=2/17 and 5/56 can only reduce to the d-chart with E=275 and E=170 respectively. Both epsilon-dominant charts are excluded.",
           "dependency_coverage": "partial",
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_331_OFF_COMPONENT_CHARTS.md",
-              "sha256": "5ca6e6d7f3b5e594224457bd06d5fe72ece44a88cb8830033e92fefb44bc2320",
+              "sha256": "70e95a9ae679d957a3ec4774b1117debb25943b4034f81165e13ff249e7625eb",
               "locator": "The two valuation charts"
             },
             {
@@ -66504,7 +66584,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Proposition (quintic obstruction for three corrections)."
             },
             {
@@ -66536,7 +66616,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Corollary (generic detection for every radial value)."
             },
             {
@@ -66568,7 +66648,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Corollary (local integrality away from the radial coefficient)."
             },
             {
@@ -66600,7 +66680,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Proposition (single normalized poles in the three-pole system)."
             },
             {
@@ -67017,7 +67097,7 @@
           "sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
-              "sha256": "136da4d6f4e113ac20ad8ba148d12282f4668f806847147332db7b64b81efc29",
+              "sha256": "874a757bb84a3943228fb82259ae6e55987c84ca0055e9c72b1f8d8f683d7f76",
               "locator": "The optimal fourteen-row conductor-18 window"
             },
             {
@@ -67049,6 +67129,31 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Written proof and exact internal SageMath 10.9 calculations on the specified conductor-18 system."
+        },
+        {
+          "id": "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-MARKER-RANK",
+          "title": "Fourteen-row marker rank for a known conductor-18 phase",
+          "scope": "For n=18, s=13, P=(z^2±1)^4, deg B<=5 and D=-1/z+c+ez over a characteristic-zero field, fix the phase and use the formal response on two coherent inputs and three correction inputs. The matrix in shifts 0 through 13 has rank five for B≠0 and rank two for B=0. In the latter case all correction columns vanish by height parity.",
+          "dependency_coverage": "complete",
+          "sources": [
+            {
+              "path": "foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
+              "sha256": "874a757bb84a3943228fb82259ae6e55987c84ca0055e9c72b1f8d8f683d7f76",
+              "locator": "Corollary (fourteen-row marker rank)."
+            }
+          ],
+          "assumptions": [],
+          "state": "proved",
+          "canonical_source": "foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Coherent detection modulo the correction columns, triangular correction pivots, and parity.",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Direct linear-algebra consequence of the existing fourteen-row theorem and unmarked residue matrix formula."
         }
       ],
       "open_questions": [
@@ -67089,7 +67194,7 @@
           "node": "GAP-CM-THREE-BALANCED-PAIR-DENSITY"
         },
         {
-          "question": "Determine whether any allowed upper-half full-width specialization has a coherent blind direction. A computable finite cutoff is available, and the fixed-top conductor-18 degree-(5,1) family has an optimal fourteen-row theorem for three correction columns.",
+          "question": "Determine whether any allowed upper-half full-width specialization outside the fixed-top conductor-18 degree-(5,1) family with three correction columns has a coherent blind direction. A computable finite cutoff is available, and the fixed-top conductor-18 degree-(5,1) family has an optimal fourteen-row theorem.",
           "source": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
           "kind": "mathematical",
           "node": "CM-SPHERE-FULL-WIDTH-UNRESTRICTED-RECONSTRUCTION"
@@ -67124,7 +67229,7 @@
         "The two octahedral Dirichlet laws project regular angular markers to polynomial height markers, and the two-arrangement law gives a second exact stripped-Hopf trace realization. Over formally real fields, full-field rational endpoint phases are pure exactly in (E), with exact eventual regular-marker ideals E(E-G^N) for N>=2 and E(E-G)G for N=1. The exceptional compact regular Mathieu questions retain their separate scope.",
         "A deck normalizer can link the selected Hasse–Witt line to every mixed primitive pair. The degree-nine, movable degree-seven and single-orbit degree-eleven and degree-twenty-one leading faces and their positive powers have infinitely many nonzero moments with arbitrary lower sphere degrees.",
         "In the doubled-Keller Schur construction an explicit source isomorphism transfers the entire map and all fibres for each choice of parameters. The version with k pivots requires joint affine dependence on the k source coordinates.",
-        "For the fixed opposite-root conductor-18 top with degree-(5,1) lower support and three correction columns, fourteen shifts are necessary and sufficient for uniform formal coherent detection. The earlier seventeen-row algebra is zero. On the separate fixed-boundary stratum all-order detection allows six correction columns."
+        "For the fixed opposite-root conductor-18 top with degree-(5,1) lower support and three correction columns, fourteen shifts are necessary and sufficient for uniform formal coherent detection. For a known phase in that family, the fourteen-row marker matrix has rank five for nonzero B and rank two for B=0. On the separate fixed-boundary stratum all-order detection allows six correction columns."
       ],
       "gap_ids": [
         "FORMAL-BINARY-GVC-COMPLETE",
@@ -107348,7 +107453,7 @@
         "title": "Higher coordinate conductors and automatic trace integrality",
         "kind": "gap",
         "status": "open",
-        "scope": "For an actual noninvertible complex plane Keller map in a source frame with a monic polynomial of positive longitudinal degree, the exact global directional conductor degree is even and at least twelve. In global degree ten the actual reduced characteristic sequences (11,2) and (6,4,7) are both excluded, allowing all actual finite source fibers. The generic normalization defect is at least six. Lower bounds on an arbitrary specialized line remain two for conductor degree and one for normalization defect. Higher conductor degrees, automatic first-velocity integrality over the full target normalization, full codifferent multiplication, trace perfection, HC4 and JC2 remain open.",
+        "scope": "For actual noninvertible complex plane Keller maps in a monic longitudinal source frame, global directional coordinate-conductor degree is even and at least fourteen. The degree-twelve case is excluded in all six reduced characteristic sequences of the exact generic order, with all finite specializations handled. The defect is at least seven where the global leading coefficient is nonzero. On arbitrary specialized lines the lower bounds remain two for conductor degree and one for normalization defect. Degree fourteen and higher, automatic codifferent landing, HC4 and JC2 remain open.",
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_DEGREE_FOUR_CONDUCTOR_EXCLUSION.md",
@@ -107396,19 +107501,19 @@
             "locator": "Opening theorem and Sections 1–4, the remaining characteristic sequence"
           },
           {
-            "path": "hessian/hc4-triangular-graphs/CONDUCTOR_EIGHT_CUBIC_QUINTIC_EXCLUSION.md",
-            "sha256": "9111a6ca9f59b2cdf3fb010e64b9526cbe9fce752abb39f4d323028ff01ae385",
-            "locator": "Opening theorem and Sections 1–4, the remaining characteristic sequence"
-          },
-          {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md",
             "sha256": "16fc9af01ac3adb6b2fbbfbbbaa05ee1a70ce0744f51944a42b0ce94c6037c72",
             "locator": "Opening theorem and Sections 1–2, exact cable compatibility, matched-pair valuations and global bound ten"
           },
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
-            "sha256": "ef34ab7796f510ed0323d112e0e7a1a109ec6bed3351c87389cd431a2d084f80",
+            "sha256": "4be5f0c70ceefdae01e48b5ff98f15266a04297474f628cc900bd4aa74dd79c9",
             "locator": "Opening theorem and Sections 1–4, characteristic sequences, parameter scale and finite-fibre repair"
+          },
+          {
+            "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
+            "sha256": "366dc506a8a6ee5d42b271282fb52de9c37a0d74e5b37cffb23557de0ed52d49",
+            "locator": "Opening theorem and Exclusion in all six sequences"
           }
         ],
         "topics": [
@@ -107419,7 +107524,7 @@
         "evidence_type": "mathematical_obligation",
         "origin": "internal",
         "dependency_coverage": "partial",
-        "next_action": "Analyze conductor degree twelve and higher using the characteristic sequences of the exact coordinate orders, parameter compatibility of the actual generators, and the finite-pair condition at every finite parameter."
+        "next_action": "Classify exact degree-fourteen characteristic sequences and apply the parameter equations and finite-source gap and action methods to the first surviving order families."
       },
       {
         "id": "ARITH-ELLIPTIC-FIXED-RAMIFICATION-FINITENESS",
@@ -152581,7 +152686,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Opening status, equationT.1 and the unresolved polynomial-norm targetT.7"
           }
         ],
@@ -152599,7 +152704,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Section5 equationT.7, pairwise-coprime inner factors and exact global equivalence"
           }
         ],
@@ -152617,7 +152722,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Lemma UniformLinearAlmostPrimes; equationsT.2-T.4 and uniform lower-sieve application"
           },
           {
@@ -152640,7 +152745,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Theorem PrimePartitionRecurrence; quantitative coloring budget and density-zero completion"
           },
           {
@@ -152663,7 +152768,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Lemma ModularReturn; finite-sums prefix construction and congruent partial sums"
           }
         ],
@@ -152681,7 +152786,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Proposition Erdos675NormReduction; valuation locking, coprime product and ModularReturn"
           }
         ],
@@ -152699,7 +152804,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Proposition Erdos675LocalAdmissibility; equationT.8 and disjoint odd-valuation events"
           }
         ],
@@ -152717,7 +152822,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Proposition Erdos675PellExample; exact norm identities and unit congruences"
           }
         ],
@@ -152758,7 +152863,7 @@
           },
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Sections1-2 and final review boundary for the numerical citation"
           }
         ],
@@ -152801,7 +152906,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Section8 Proposition Erdos675UpperEnvelope; square atoms and Selberg denominator/error proof"
           }
         ],
@@ -152819,7 +152924,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Section9 Proposition Erdos675NormFieldBarrier; index-two subgroup cycle argument"
           }
         ],
@@ -152837,7 +152942,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Section10 Proposition Erdos675FiniteSquareclassObstruction; integral elliptic transformation"
           }
         ],
@@ -152855,11 +152960,29 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-            "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
             "locator": "Section11 Proposition Erdos675PellFunctionFieldObstruction; quartic factorization and parity"
           }
         ],
         "assessment": "Internal written proof, exact bounded checks and actual primary-statement review only. The new upper envelope and applicability obstructions do not establish simultaneous norm values. The full fixed-set translation target and all-N prescribed norm-tuple existence remain OPEN. No external human review, formal verification, independent whole-proof replay, numerical onset or historical-priority claim is asserted."
+      },
+      {
+        "id": "ARITH-ERDOS675-PELL-NORM-OFFSETS",
+        "title": "Exact norm offsets and finite pattern recurrence on the Pell family",
+        "scope": "For every integer a>=1, on z^2-3k^2=-2 with m=2k^2-1, m^2-1+a is a norm from Q(k,z,i) to Q(k,z) exactly for a=1+j^2, a=(1+j^2)^2 or a=9j^4-2j^2+1 with j a nonnegative integer. For each finite set I of positive positions whose sums-of-two-squares positions all lie in this union, infinitely many positive Pell translations preserve the full membership pattern on I. The classification concerns function-field identities; individual Pell points may give further norm values.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+            "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
+            "locator": "Section12 Proposition Erdos675PellNormOffsets; Laurent series specialization, squareclass calculation and modular Pell returns"
+          }
+        ],
+        "assessment": "Written internal proof. The generalized recurrence is for the specified finite position sets. The fixed arbitrary-prefix recurrence remains open."
       },
       {
         "id": "ARITH-ERDOS675-CONSTRUCTIVE-CONTROLS",
@@ -206652,7 +206775,7 @@
           },
           {
             "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
-            "sha256": "e91338fbf3d6ab2e21188ca81cfa284456b1ceceaefc2ccbd744c758bf8b5d95",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
             "locator": "A small squarefree kernel suffices for abc finiteness"
           }
         ]
@@ -252512,7 +252635,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-            "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+            "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
             "locator": "The exact support bound, Interval poles and coherent inputs, and A reconstruction matrix for unmarked moments"
           }
         ],
@@ -252525,11 +252648,11 @@
         "title": "Coherent reconstruction for arbitrary upper-half full-width phases",
         "kind": "gap",
         "status": "open",
-        "scope": "Determine whether the unmarked reconstruction kernel has zero coherent projection at every allowed upper-half full-width specialization. A computable cutoff reduces the question to finite rank tests. The fixed-top conductor-18 degree-(5,1) family has a universal seventeen-row theorem and its normalized exceptional algebra is zero. The weight and pole-order arguments exclude regular Hamiltonian directions in the marker space and generic-fibre exactness of coherent profiles. Sphere monodromy detects the full protected profile in one separable conductor-18 model. The odd radial perturbation has an exact finite coherent test for all radial coefficients, and actual detecting sphere variations near the separable phase. The two explicit escaping phases have actual sphere-generated coefficient matrices with zero coherent kernel after eliminating the correction columns.",
+        "scope": "Determine whether the unmarked reconstruction kernel has zero coherent projection at every allowed upper-half full-width specialization. A computable cutoff reduces the question to finite rank tests. For the fixed opposite-root conductor-18 top with degree-(5,1) lower support and three correction columns, fourteen shifts are necessary and sufficient for uniform formal coherent detection. The weight and pole-order arguments exclude regular Hamiltonian directions in the marker space and generic-fibre exactness of coherent profiles. Sphere monodromy detects the full protected profile in one separable conductor-18 model. The odd radial perturbation has an exact finite coherent test for all radial coefficients, and actual detecting sphere variations near the separable phase. The two explicit escaping phases have actual sphere-generated coefficient matrices with zero coherent kernel after eliminating the correction columns.",
         "sources": [
           {
             "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-            "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+            "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
             "locator": "Open reconstruction question and Hamiltonian symmetries"
           },
           {
@@ -252563,7 +252686,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-            "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+            "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
             "locator": "Exact upper-half obstruction, finite residue replay"
           },
           {
@@ -260336,7 +260459,7 @@
         "sources": [
           {
             "path": "foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
-            "sha256": "136da4d6f4e113ac20ad8ba148d12282f4668f806847147332db7b64b81efc29",
+            "sha256": "874a757bb84a3943228fb82259ae6e55987c84ca0055e9c72b1f8d8f683d7f76",
             "locator": "Theorem (optimal initial window)."
           }
         ]
@@ -261143,9 +261266,14 @@
             "path": "arithmetic/sources/darmon-granville-generalized-fermat-via-curves-1995.pdf",
             "sha256": "2a77462524aebdce6a34c540e99afb3913c2c6113b597af9792bed6c82376aca",
             "locator": "Section 5.2, statement of the integer abc conjecture"
+          },
+          {
+            "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+            "locator": "Primitive Pythagorean triples and a fixed exact-power hypotenuse"
           }
         ],
-        "next_action": "Seek a uniform bound on exceptional heights. The restricted small-budget count, the unit-budget exponent and powerful-family estimates are separate inputs."
+        "next_action": "Prove a uniform radical lower bound at every strict threshold on primitive Pythagorean triples, or on the fixed signed (2,3,5) family in K3. Either family is equivalent to full abc."
       },
       {
         "id": "GOAL-ARITH-FERMAT-CATALAN-ALL-SIGNATURES",
@@ -261844,11 +261972,11 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "902adec4f185858f3f1e90a907ee9d92e08b33e8656c77d8ad895b9728569fae",
+            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
             "locator": "Uniform lifting obligation and A local covering criterion at every carry boundary"
           }
         ],
-        "next_action": "Find a growing-lookback cover or a carry-selective replacement for the all-jump induction. The uniform tests reach jump four and the exact tests cover all jump-five and jump-six boundaries below 78125. The split-block test gives the exact conditional union needed for larger jumps."
+        "next_action": "Develop a growing-lookback cover or a carry-selective replacement. At n=5^r any standalone signed packet for the middle third of the gap needs growing index span and a growing number of selected terms. Independent bounded-size packet lifts cannot handle all gaps."
       },
       {
         "id": "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE",
@@ -261864,7 +261992,7 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "902adec4f185858f3f1e90a907ee9d92e08b33e8656c77d8ad895b9728569fae",
+            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
             "locator": "Uniform lifting obligation; Small completed special case"
           }
         ],
@@ -261884,7 +262012,7 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "902adec4f185858f3f1e90a907ee9d92e08b33e8656c77d8ad895b9728569fae",
+            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
             "locator": "Uniform lifting obligation; Small completed special case"
           }
         ],
@@ -261900,11 +262028,11 @@
         "topic": "arithmetic",
         "origin": "internal",
         "dependency_coverage": "complete",
-        "scope": "For each integer m>=2 an open square interval (q^2,(q+1)^2) with q>=m and log q=O(m^5 log(m+1)) contains at least ceil(m/2) pairwise coprime nonsquare powerful integers. Along unbounded q the coprime occupancy is at least a positive absolute constant times (log q/log log q)^(1/5), and eventually exceeds (log q)^(1/6).",
+        "scope": "For each integer m>=2 an open square interval (q^2,(q+1)^2) with q>=m and log q=O(m^4) contains at least ceil(m/2) pairwise coprime nonsquare powerful integers. Along unbounded q the coprime occupancy is at least a positive absolute constant times (log q)^(1/4), and eventually exceeds (log q)^(1/5).",
         "sources": [
           {
             "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
-            "sha256": "49c545653ad6687dd1dc7813f4795c32ecc20de5ebac47e2b42f3a42158a2784",
+            "sha256": "8379f48c0e41ad59ee7de544961a291a8bf0f98e22c3759f1557dc890a873790",
             "locator": "Theorem (Growing coprime occupancy)."
           }
         ]
@@ -261923,7 +262051,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
-            "sha256": "49c545653ad6687dd1dc7813f4795c32ecc20de5ebac47e2b42f3a42158a2784",
+            "sha256": "8379f48c0e41ad59ee7de544961a291a8bf0f98e22c3759f1557dc890a873790",
             "locator": "Erdős #942 and coprime occupants of square intervals"
           }
         ],
@@ -261941,7 +262069,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
-            "sha256": "49c545653ad6687dd1dc7813f4795c32ecc20de5ebac47e2b42f3a42158a2784",
+            "sha256": "8379f48c0e41ad59ee7de544961a291a8bf0f98e22c3759f1557dc890a873790",
             "locator": "Erdős #942 and coprime occupants of square intervals"
           }
         ]
@@ -262000,7 +262128,7 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "902adec4f185858f3f1e90a907ee9d92e08b33e8656c77d8ad895b9728569fae",
+            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
             "locator": "Small completed special case"
           }
         ]
@@ -262017,7 +262145,7 @@
         "sources": [
           {
             "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
-            "sha256": "49c545653ad6687dd1dc7813f4795c32ecc20de5ebac47e2b42f3a42158a2784",
+            "sha256": "8379f48c0e41ad59ee7de544961a291a8bf0f98e22c3759f1557dc890a873790",
             "locator": "Opening paragraph on CPW1 and selecting larger centres"
           }
         ]
@@ -262887,7 +263015,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "6bbf6b1b5fec69b6a785715bcd18b33066334d222eef5df81ca9f22c69d422d8",
+            "sha256": "0c6066273b3e3a9f27e890d2f220cc3690d8dc060945fc6ba3bb11eb5b50bbe1",
             "locator": "Window theorem and Sections 2–4"
           }
         ]
@@ -262905,7 +263033,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "6bbf6b1b5fec69b6a785715bcd18b33066334d222eef5df81ca9f22c69d422d8",
+            "sha256": "0c6066273b3e3a9f27e890d2f220cc3690d8dc060945fc6ba3bb11eb5b50bbe1",
             "locator": "Section 5, the odd-prime cancellation and exact ternary-prime boundary"
           }
         ]
@@ -262914,7 +263042,7 @@
         "id": "GAP-FACTORIAL-BINARY-THREE-ADIC-WILD-CANCELED-ROW",
         "kind": "gap",
         "title": "Exclude actual binary windows above a wild ternary-prime canceled row",
-        "scope": "At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 only size four remains, with one foreign column of natural valuation 0<v(u)<=1/3 outside the allowed axis slots and exponent region. At L>=9 the remaining sizes run from 3 through L+1 when c=0, or 3 through L when c!=0. A block lies in the canceled row except that, when c=0, it may start at the final entry of the preceding row.",
+        "scope": "At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 size four remains only for the even-digit nonsingleton profile (10) with the exact restrictions (11), (16), and (17). At L>=9 the remaining sizes run from 3 through L+1 when c=0 or through L when c!=0. A block lies in the canceled row except that when c=0 it can start at the preceding row’s last entry.",
         "status": "open",
         "topic": "factorial",
         "origin": "internal",
@@ -262922,12 +263050,12 @@
         "gap_kind": "mathematical",
         "endpoint_role": "active_goal",
         "dependency_coverage": "partial",
-        "next_action": "At L=3 lift the four exact constraints from orders 5 through 8 for two unit axis columns and one foreign column with natural valuation at most 1/3. Compare all allowable insertion counts in the same native prefix. At L>=9 use the linked modulo-three prefix (6) on the surviving order intervals. Use the digit restriction in Section 7 where the stronger shape hypothesis holds. Start with the residual pure axes plus constant at L=9, where only three initial residues survive. At L=9 the earliest residue now also requires a coefficient-grid denominator divisible by 27.",
+        "next_action": "At L=3 start with the equal-cubic axes and foreign XY, which survives the digit-run restriction, or the one-run axis column X^4 below a larger prime-power axis. Lift the linked actual 9H+5 through 9H+8 equations beyond valuation 5/3, retaining the shared high-block quotient H. At L>=9 retain the linked modulo-three prefix and the digit restrictions from Section 7. The L=9 pure-axis remainder has three initial residues, with the earliest requiring a grid denominator divisible by 27.",
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "6bbf6b1b5fec69b6a785715bcd18b33066334d222eef5df81ca9f22c69d422d8",
-            "locator": "Section 8, Scope and remaining cases"
+            "sha256": "0c6066273b3e3a9f27e890d2f220cc3690d8dc060945fc6ba3bb11eb5b50bbe1",
+            "locator": "Section 9, Scope and remaining cases"
           }
         ]
       },
@@ -263000,7 +263128,7 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "902adec4f185858f3f1e90a907ee9d92e08b33e8656c77d8ad895b9728569fae",
+            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
             "locator": "A local covering criterion at every carry boundary"
           },
           {
@@ -263041,7 +263169,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "6bbf6b1b5fec69b6a785715bcd18b33066334d222eef5df81ca9f22c69d422d8",
+            "sha256": "0c6066273b3e3a9f27e890d2f220cc3690d8dc060945fc6ba3bb11eb5b50bbe1",
             "locator": "First critical row and Larger critical rows, Sections 6–7"
           }
         ]
@@ -263059,7 +263187,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
-            "sha256": "e91338fbf3d6ab2e21188ca81cfa284456b1ceceaefc2ccbd744c758bf8b5d95",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
             "locator": "A small squarefree kernel suffices for abc finiteness"
           }
         ]
@@ -263078,8 +263206,238 @@
         "sources": [
           {
             "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
-            "sha256": "e91338fbf3d6ab2e21188ca81cfa284456b1ceceaefc2ccbd744c758bf8b5d95",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
             "locator": "A small squarefree kernel suffices for abc finiteness"
+          }
+        ]
+      },
+      {
+        "id": "GAP-ARITH-ABC-PRIMITIVE-PYTHAGOREAN-FINITENESS",
+        "title": "ABC finiteness on primitive Pythagorean triples",
+        "scope": "For every fixed 0<mu<1, prove finiteness of primitive positive x^2+y^2=z^2 with rad(xyz)<(z^2)^mu. It also suffices to prove the corresponding statement for x^2+y^2=z^(2k) at any one fixed integer k>=1.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "mathematical_obligation",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+            "locator": "Primitive Pythagorean triples and a fixed exact-power hypotenuse"
+          }
+        ],
+        "gap_kind": "mathematical",
+        "next_action": "Seek a pointwise lower bound for the product of the five pairwise coprime radicals from u,v,u+v,u−v,u^2+v^2. The unit-budget count has exponent 2/7."
+      },
+      {
+        "id": "GAP-ARITH-ABC-FIXED-ICOSAHEDRAL-FINITENESS",
+        "title": "ABC finiteness on the fixed signed (2,3,5) equation",
+        "scope": "For every fixed 0<mu<1, prove finiteness of nonzero integer X,Y,Z satisfying X^2-Y^3=1728 Z^5, gcd(X^2,Y^3,1728 Z^5)=1, and rad(6XYZ)<C^mu where C=max(X^2,abs(Y)^3,1728 abs(Z)^5).",
+        "kind": "gap",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "mathematical_obligation",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+            "locator": "A fixed icosahedral power signature suffices for abc"
+          }
+        ],
+        "gap_kind": "mathematical"
+      },
+      {
+        "id": "ARITH-ABC-GAUSSIAN-EVEN-NORM-POWER-TRANSFER",
+        "title": "Gaussian powers transfer ABC deficits to exact-power Pythagorean triples",
+        "scope": "For each fixed k>=1, a positive primitive a+b=c maps outside finitely many ratios to a primitive X^2+Y^2=Z^(2k) with height C comparable to c^(4k), and output radical O_k(rad(abc)c^(4k−1)). Degree 4k is also the minimum allowed by the local orders (2,2,2k).",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+            "locator": "Primitive Pythagorean triples and a fixed exact-power hypotenuse"
+          }
+        ]
+      },
+      {
+        "id": "EXT-ABC-KLEIN-ICOSAHEDRAL-QUOTIENT",
+        "title": "Klein's degree-60 icosahedral quotient and labelled branch fibres",
+        "scope": "The displayed Klein forms of degrees 12,20,30 give T^2−G^3=1728F^5 and the geometric A5 quotient 1728F^5/T^2. Its 0,1,infinity fibres have uniform respective orders 5,3,2 with pairwise disjoint reduced roots.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "complete",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "arithmetic/sources/darmon-granville-generalized-fermat-via-curves-1995.pdf",
+            "sha256": "2a77462524aebdce6a34c540e99afb3913c2c6113b597af9792bed6c82376aca",
+            "locator": "§7.4, Klein's displayed identity and ramification of the icosahedral quotient"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-KLEIN-PYTHAGOREAN-PRIMITIVE-RADICAL-TRANSFER",
+        "title": "Pythagorean pullback transfers ABC deficits to one fixed (2,3,5) equation",
+        "scope": "The quadratic Pythagorean substitution in the Klein forms, with the specified choice of coprime opposite-parity input pair and the mod-5 swap, gives primitive nonzero X^2−Y^3=1728 Z^5, outside finitely many ratios. It has C comparable to c^120 and output radical O(rad(abc)c^119). All three input prime supports occur in Z before taking radical multiplicities.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+            "locator": "A fixed icosahedral power signature suffices for abc"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-ICOSAHEDRAL-THREE-RATIONAL-POINTS-MINIMUM-DEGREE-120",
+        "title": "Degree 120 is minimal for three rational points in the (2,3,5) fibres",
+        "scope": "A rational map over Q with local degrees divisible by 5,3,2 over 0,1,infinity respectively and with three rational points over their union has degree at least 120. The quadratic Pythagorean pullback of the Klein quotient attains 120. Degree 60 models have at most two rational points in the three marked fibres.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+            "locator": "Minimum degree for anchoring three rational points"
+          }
+        ]
+      },
+      {
+        "id": "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN",
+        "kind": "claim",
+        "title": "First wild three-adic four-term windows outside one digit profile",
+        "scope": "For the binary two-pole support criterion at p=L=3, an actual four-zero block at 9H+5 with one foreign monomial requires a nonsingleton whose base-three digits are 0 or 1 with even total digit count, and both quotients floor(alpha/Qx),floor(beta/Qy) equal to 0 modulo 9. In the a=1 normalization, v(u)=1/3 and v(u+k)>=4/3, and v((b^2+1)^3-6H*b^3)>=4/3. In this surviving profile the exact normalized moments agree through valuation 4/3 with the rational test (16), and the test has an explicit simultaneous solution at every H. The exact four-zero block is excluded for all other exponent profiles at this radius. The next precision excludes all pairs of foreign ternary exponents whose total number of 1-runs plus the two digits immediately below the axis slots differs from 1 modulo 3.",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+            "sha256": "0c6066273b3e3a9f27e890d2f220cc3690d8dc060945fc6ba3bb11eb5b50bbe1",
+            "locator": "Four-term foreign-column reduction and Digit-run restriction, Section 8"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_binary_first_wild_three_adic_row.py",
+            "sha256": "00479171bb571a0b4e832a471212e602689a08a77ef03598b2cefd4a26ee8262",
+            "locator": "Exact native coefficient comparison and local standard bases for 118 exponent profiles"
+          }
+        ]
+      },
+      {
+        "id": "EVIDENCE-JAC-BGV-RADIAL-FROBENIUS-SHARP-MOD81-DEGREE109",
+        "topic": "jacobian",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "title": "Exact cap-108 dual and degree-109 determinant certificate",
+        "scope": "The finite checker verifies the fifteen-weight dual on every retained ordinary or divided derivative column and checks the degree-(109,105) witness modulo 81.",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "jacobian/mixed-characteristic-lifting/verify_bgv_first_lift_degree.py",
+            "sha256": "2c4d403c1a8e5ed624eee58d54df334099fd161ac2e980af7aa2ffc7c553a1be",
+            "locator": "Cap-108 functional and verified DEGREE109_WITNESS_P/Q"
+          },
+          {
+            "path": "jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md",
+            "sha256": "c9377fdfe9a97f39736a89ce5a19206e07819bacf6e46334fffb99cd34149c30",
+            "locator": "Sharp degree 109 for the Frobenius shifts of the radial first lift"
+          }
+        ]
+      },
+      {
+        "id": "FACT-ERDOS404-MIDGAP-CORRECTION-SIZE",
+        "kind": "claim",
+        "title": "Size obstruction for factorial corrections in the middle of a large jump",
+        "scope": "For each prime p, all sufficiently large r and N=p^r, a signed sum of distinct positive factorials of valuation between v_p((N-1)!)+r/3 and v_p((N-1)!)+2r/3 has index span at least c_p*r/log r and has more than log r/(10 log log r) nonzero terms. This obstructs bounded-size standalone corrections and does not exclude infinite carry paths.",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+            "locator": "Proposition (Size of corrections at large jumps)."
+          }
+        ]
+      },
+      {
+        "id": "EXT-ABC-KANE-DYADIC-LATTICE-AND-CONIC-COUNTS",
+        "title": "Kane's dyadic lattice and conic estimates before height specialization",
+        "scope": "The proof of Proposition 7 gives a dyadic bound N^epsilon(R/|C|+product v_i) for primitive triples with radical product at most R, where C is the largest letter and v_i is the product of primes occurring at least twice in letter i. Proposition 10 gives the count at fixed dyadic scales of largest square divisors and squarefree kernels.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "arithmetic/sources/kane-abc-restricted-radicals-2015.pdf",
+            "sha256": "1ee7479c0933262ce26a0490af3f23c31704194b7e92b134b9dd3006f0aa23c3",
+            "locator": "Proof of Proposition 7 before replacing individual radicals by height powers; Proposition 10"
+          }
+        ]
+      },
+      {
+        "id": "ARITH-ABC-PRIMITIVE-PYTHAGOREAN-EXCEPTION-COUNT-TWO-SEVENTHS",
+        "title": "A 2/7 unit-budget exponent for primitive Pythagorean exceptions",
+        "scope": "For primitive x^2+y^2=z^2 with z^2<=X and rad(xyz)<=(z^2)^mu, 0<mu<=1 fixed, the count is O(X^(min(mu/3,max(1/4,(3mu−1)/7))+epsilon)). If one of u,v,u+v,u−v is <=u^theta in the coprime opposite-parity Euclidean parametrization, an additional upper exponent is max((2+theta)/3,(8mu+theta−3)/5)/4.",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+            "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+            "locator": "Counting primitive Pythagorean exceptions"
+          }
+        ]
+      },
+      {
+        "id": "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+        "title": "Characteristic sequences allowed by exact conductor degree twelve",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "hessian",
+          "jacobian"
+        ],
+        "scope": "For an actual complex plane Keller map in a monic source frame with global conductor degree twelve, the reduced one-place characteristic degrees lie in {(13,2),(7,3),(5,4),(6,4,9),(9,6,4),(10,4,5)}.",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
+            "sha256": "366dc506a8a6ee5d42b271282fb52de9c37a0d74e5b37cffb23557de0ed52d49",
+            "locator": "Characteristic sequences of the exact order"
           }
         ]
       }
@@ -280607,18 +280965,18 @@
         "id": "DERIVE-HESSIAN-COORDINATE-CONDUCTOR",
         "premises": [
           "HESSIAN-COORDINATE-CONDUCTOR-BASE",
-          "HESSIAN-GLOBAL-CONDUCTOR-TEN-EXCLUSION"
+          "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION"
         ],
         "conclusion": "HESSIAN-COORDINATE-CONDUCTOR",
         "status": "proved",
         "proof": {
-          "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
-          "sha256": "ef34ab7796f510ed0323d112e0e7a1a109ec6bed3351c87389cd431a2d084f80",
-          "locator": "Opening theorem and Sections 1–4, characteristic sequences, parameter scale and finite-fibre repair"
+          "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
+          "sha256": "366dc506a8a6ee5d42b271282fb52de9c37a0d74e5b37cffb23557de0ed52d49",
+          "locator": "Opening theorem and Exclusion in all six sequences"
         },
         "dependency_coverage": "partial",
         "assessment": "Aggregate current conductor scope is supported separately from its base identities, avoiding circular use by the period exclusions.",
-        "scope_note": "Combine the exact every-line degree equals twice defect with the global lower bound twelve. The global degree is retained where its leading coefficient is nonzero. The special-line lower bound remains two."
+        "scope_note": "Combine global conductor degree at least fourteen with the exact every-line degree equals twice defect."
       },
       {
         "id": "DERIVE-MRC-JP-INTEGER-BOX-COXETER",
@@ -314978,7 +315336,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Proof of Lemma UniformLinearAlmostPrimes; dimension<=k, uniform product and remainder bounds, fixed sieve ratio"
         }
       },
@@ -314992,7 +315350,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Proof of Theorem PrimePartitionRecurrence; fixed finite patterns, bounded forced primes and all-scale density control"
         }
       },
@@ -315007,7 +315365,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Proof of Proposition Erdos675NormReduction, including the indispensable pairwise-coprimality argument"
         }
       },
@@ -315021,7 +315379,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Proof of Proposition Erdos675LocalAdmissibility; exact inert odd-valuation masses and convergent normalized product"
         }
       },
@@ -315035,7 +315393,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Proof of Proposition Erdos675PellExample; explicit identities, congruences and increasing Pell units"
         }
       },
@@ -315050,7 +315408,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Proposition Erdos675NormReduction: the direction from the unproved all-N positive polynomial-norm assertion to recurrence"
         }
       },
@@ -315064,14 +315422,15 @@
           "ARITH-ERDOS675-UPPER-ENVELOPE",
           "ARITH-ERDOS675-NORM-FIELD-BARRIER",
           "ARITH-ERDOS675-FINITE-SQUARECLASS-OBSTRUCTION",
-          "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION"
+          "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION",
+          "ARITH-ERDOS675-PELL-NORM-OFFSETS"
         ],
         "conclusion": "ARITH-ERDOS675-TRANSLATION-PROGRAMME",
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Scoped assembly: reviewed prime-partition theorem, norm reductions, upper bound and limited obstructions; full E target OPEN"
         }
       },
@@ -315086,7 +315445,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Section8 proof of Proposition Erdos675UpperEnvelope; Selberg identity, CRT error and inert Mertens input"
         }
       },
@@ -315100,7 +315459,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Section9 proof of Proposition Erdos675NormFieldBarrier; elementary index-two subgroup cycle argument"
         }
       },
@@ -315115,7 +315474,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Section10 proof of Proposition Erdos675FiniteSquareclassObstruction; elliptic finiteness and unbounded modular returns"
         }
       },
@@ -315129,8 +315488,36 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "locator": "Section11 proof of Proposition Erdos675PellFunctionFieldObstruction; complete irreducibility certificate and odd valuation"
+        }
+      },
+      {
+        "id": "ERDOS675-CLASSIFY-PELL-NORM-OFFSETS",
+        "premises": [
+          "EXT-SMILANSKY-FIVE-REPRESENTATION-CRITERIA"
+        ],
+        "conclusion": "ARITH-ERDOS675-PELL-NORM-OFFSETS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
+          "locator": "Section12 Proposition Erdos675PellNormOffsets; Laurent series specialization, squareclass calculation and modular Pell returns"
+        }
+      },
+      {
+        "id": "ERDOS675-PELL-NORM-OFFSETS-EXCLUDE-NINE",
+        "premises": [
+          "ARITH-ERDOS675-PELL-NORM-OFFSETS"
+        ],
+        "conclusion": "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
+          "locator": "Section12 equation T.14 omits position9, proving the Section11 offset obstruction independently of the finite quartic test"
         }
       },
       {
@@ -387053,7 +387440,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
-          "sha256": "e91338fbf3d6ab2e21188ca81cfa284456b1ceceaefc2ccbd744c758bf8b5d95",
+          "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
           "locator": "Using all actual endpoint locks"
         },
         "dependency_coverage": "partial"
@@ -387068,7 +387455,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
-          "sha256": "e91338fbf3d6ab2e21188ca81cfa284456b1ceceaefc2ccbd744c758bf8b5d95",
+          "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
           "locator": "A quantitative charged-kernel selector"
         },
         "dependency_coverage": "partial"
@@ -413228,7 +413615,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Theorem, exact support and two-pole calculation"
         }
       },
@@ -413243,7 +413630,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Reconstruction on odd coefficient lines, leading determinant and prime transfer"
         }
       },
@@ -413257,7 +413644,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "All parameters in a conductor-18 family, Lucas coefficients and exact elimination"
         }
       },
@@ -413274,7 +413661,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Effective bounds for the reconstruction window"
         }
       },
@@ -413289,7 +413676,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "A determinant zero locus resolved by another row"
         }
       },
@@ -413304,7 +413691,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "A unit ideal after triangular elimination"
         }
       },
@@ -413319,7 +413706,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Three extra pole inputs for odd degree five and even degree one"
         }
       },
@@ -413334,7 +413721,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Four-point family, explicit floors and progression counts"
         }
       },
@@ -413348,7 +413735,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Exact upper-half obstruction, finite residue replay"
         }
       },
@@ -419081,7 +419468,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Corollary (the conductor-18 witness at 61)"
         }
       },
@@ -419095,7 +419482,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "The projective boundary at 331"
         }
       },
@@ -419111,7 +419498,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Varying the conductor-18 branch ratio"
         }
       },
@@ -419126,7 +419513,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Hamiltonian symmetries and the coherent profiles"
         }
       },
@@ -419844,7 +420231,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_331_OFF_COMPONENT_CHARTS.md",
-          "sha256": "5ca6e6d7f3b5e594224457bd06d5fe72ece44a88cb8830033e92fefb44bc2320",
+          "sha256": "70e95a9ae679d957a3ec4774b1117debb25943b4034f81165e13ff249e7625eb",
           "locator": "The two valuation charts"
         }
       },
@@ -423048,7 +423435,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Proposition (quintic obstruction for three corrections)."
         }
       },
@@ -423062,7 +423449,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Corollary (generic detection for every radial value)."
         }
       },
@@ -423077,7 +423464,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Corollary (local integrality away from the radial coefficient)."
         }
       },
@@ -423091,7 +423478,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "locator": "Proposition (single normalized poles in the three-pole system)."
         }
       },
@@ -426420,8 +426807,23 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
-          "sha256": "136da4d6f4e113ac20ad8ba148d12282f4668f806847147332db7b64b81efc29",
+          "sha256": "874a757bb84a3943228fb82259ae6e55987c84ca0055e9c72b1f8d8f683d7f76",
           "locator": "The optimal fourteen-row conductor-18 window"
+        }
+      },
+      {
+        "id": "DERIVE-CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-MARKER-RANK",
+        "conclusion": "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-MARKER-RANK",
+        "premises": [
+          "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-UNIVERSAL",
+          "CM-SPHERE-FULL-WIDTH-UNMARKED-RESIDUE-MATRIX"
+        ],
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
+          "sha256": "874a757bb84a3943228fb82259ae6e55987c84ca0055e9c72b1f8d8f683d7f76",
+          "locator": "Corollary (fourteen-row marker rank)."
         }
       },
       {
@@ -426801,7 +427203,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
-          "sha256": "136da4d6f4e113ac20ad8ba148d12282f4668f806847147332db7b64b81efc29",
+          "sha256": "874a757bb84a3943228fb82259ae6e55987c84ca0055e9c72b1f8d8f683d7f76",
           "locator": "Theorem (optimal initial window), including the lower-bound example"
         }
       },
@@ -427355,7 +427757,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-          "sha256": "902adec4f185858f3f1e90a907ee9d92e08b33e8656c77d8ad895b9728569fae",
+          "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
           "locator": "Uniform lifting obligation; Small completed special case"
         },
         "dependency_coverage": "partial"
@@ -427369,7 +427771,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
-          "sha256": "49c545653ad6687dd1dc7813f4795c32ecc20de5ebac47e2b42f3a42158a2784",
+          "sha256": "8379f48c0e41ad59ee7de544961a291a8bf0f98e22c3759f1557dc890a873790",
           "locator": "Erdős #942 and coprime occupants of square intervals"
         },
         "dependency_coverage": "partial"
@@ -427383,7 +427785,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
-          "sha256": "49c545653ad6687dd1dc7813f4795c32ecc20de5ebac47e2b42f3a42158a2784",
+          "sha256": "8379f48c0e41ad59ee7de544961a291a8bf0f98e22c3759f1557dc890a873790",
           "locator": "Opening paragraph on CPW1 and selecting larger centres"
         },
         "dependency_coverage": "partial"
@@ -427684,7 +428086,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "6bbf6b1b5fec69b6a785715bcd18b33066334d222eef5df81ca9f22c69d422d8",
+          "sha256": "0c6066273b3e3a9f27e890d2f220cc3690d8dc060945fc6ba3bb11eb5b50bbe1",
           "locator": "Binary support consequence and Sections 1, 4 and 6"
         }
       },
@@ -427769,7 +428171,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
-          "sha256": "ef34ab7796f510ed0323d112e0e7a1a109ec6bed3351c87389cd431a2d084f80",
+          "sha256": "4be5f0c70ceefdae01e48b5ff98f15266a04297474f628cc900bd4aa74dd79c9",
           "locator": "Opening theorem and Sections 1–4, characteristic sequences, parameter scale and finite-fibre repair"
         }
       },
@@ -427782,10 +428184,148 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
-          "sha256": "49c545653ad6687dd1dc7813f4795c32ecc20de5ebac47e2b42f3a42158a2784",
+          "sha256": "8379f48c0e41ad59ee7de544961a291a8bf0f98e22c3759f1557dc890a873790",
           "locator": "Theorem (Growing coprime occupancy)."
         },
         "dependency_coverage": "complete"
+      },
+      {
+        "id": "KLEIN-QUOTIENT-TO-PRIMITIVE-PYTHAGOREAN-TRANSFER",
+        "premises": [
+          "EXT-ABC-KLEIN-ICOSAHEDRAL-QUOTIENT"
+        ],
+        "conclusion": "ARITH-ABC-KLEIN-PYTHAGOREAN-PRIMITIVE-RADICAL-TRANSFER",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+          "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+          "locator": "A fixed icosahedral power signature suffices for abc"
+        },
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "KLEIN-QUOTIENT-TO-THREE-RATIONAL-POINTS-DEGREE-120",
+        "premises": [
+          "EXT-ABC-KLEIN-ICOSAHEDRAL-QUOTIENT"
+        ],
+        "conclusion": "ARITH-ABC-ICOSAHEDRAL-THREE-RATIONAL-POINTS-MINIMUM-DEGREE-120",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+          "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+          "locator": "Minimum degree for anchoring three rational points"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-JAC-BGV-RADIAL-FROBENIUS-SHARP-MOD81-DEGREE109",
+        "premises": [
+          "EVIDENCE-JAC-BGV-RADIAL-FROBENIUS-SHARP-MOD81-DEGREE109"
+        ],
+        "conclusion": "JAC-BGV-RADIAL-FROBENIUS-SHARP-MOD81-DEGREE109",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md",
+          "sha256": "c9377fdfe9a97f39736a89ce5a19206e07819bacf6e46334fffb99cd34149c30",
+          "locator": "Sharp degree 109 for the Frobenius shifts of the radial first lift"
+        }
+      },
+      {
+        "id": "KANE-TO-PRIMITIVE-PYTHAGOREAN-RADICAL-COUNT",
+        "premises": [
+          "EXT-ABC-KANE-DYADIC-LATTICE-AND-CONIC-COUNTS"
+        ],
+        "conclusion": "ARITH-ABC-PRIMITIVE-PYTHAGOREAN-EXCEPTION-COUNT-TWO-SEVENTHS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+          "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+          "locator": "Counting primitive Pythagorean exceptions"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+        "conclusion": "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+        "premises": [
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+          "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP"
+        ],
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
+          "sha256": "366dc506a8a6ee5d42b271282fb52de9c37a0d74e5b37cffb23557de0ed52d49",
+          "locator": "Characteristic sequences of the exact order"
+        }
+      },
+      {
+        "id": "DERIVE-HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS",
+        "conclusion": "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS",
+        "premises": [
+          "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+          "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP"
+        ],
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_HYPERELLIPTIC_AND_CUBIC_EXCLUSIONS.md",
+          "sha256": "013b03fef64190660e82e05e066a7e14e8c77a700edcc33d52cff45a8d3ed018",
+          "locator": "Complete branch proof, including actual finite source specializations"
+        }
+      },
+      {
+        "id": "DERIVE-HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION",
+        "conclusion": "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION",
+        "premises": [
+          "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+          "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP"
+        ],
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_QUARTIC_QUINTIC_EXCLUSION.md",
+          "sha256": "f8506d076fda0d93939639cd0889e43b2e4b7f9b6d73a1ac2119999116373a74",
+          "locator": "Complete branch proof, including actual finite source specializations"
+        }
+      },
+      {
+        "id": "DERIVE-HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS",
+        "conclusion": "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS",
+        "premises": [
+          "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+          "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP"
+        ],
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_CABLE_EXCLUSIONS.md",
+          "sha256": "b08285e2a698f073cea0999d768c10ff7086048eef0fce40dcf888559c3f3487",
+          "locator": "Complete branch proof, including actual finite source specializations"
+        }
+      },
+      {
+        "id": "DERIVE-HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION",
+        "conclusion": "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION",
+        "premises": [
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+          "HESSIAN-GLOBAL-CONDUCTOR-TEN-EXCLUSION",
+          "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+          "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS",
+          "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION",
+          "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS"
+        ],
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
+          "sha256": "366dc506a8a6ee5d42b271282fb52de9c37a0d74e5b37cffb23557de0ed52d49",
+          "locator": "Opening theorem and Exclusion in all six sequences"
+        }
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -435878,10 +436418,13 @@
       },
       {
         "id": "ABC-TWO-SQUARES-SMALL-KERNEL-FINITENESS-EQUIVALENCE",
-        "title": "Full abc and finiteness on a small squarefree norm kernel",
+        "title": "Full abc and fixed spherical power signatures",
         "members": [
           "GAP-ARITH-ABC-CONJECTURE",
-          "GAP-ARITH-ABC-TWO-SQUARES-SMALL-KERNEL-FINITENESS"
+          "GAP-ARITH-ABC-TWO-SQUARES-SMALL-KERNEL-FINITENESS",
+          "GOAL-ARITH-ABC-FINITENESS",
+          "GAP-ARITH-ABC-PRIMITIVE-PYTHAGOREAN-FINITENESS",
+          "GAP-ARITH-ABC-FIXED-ICOSAHEDRAL-FINITENESS"
         ],
         "directions": [
           {
@@ -435893,7 +436436,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
-              "sha256": "e91338fbf3d6ab2e21188ca81cfa284456b1ceceaefc2ccbd744c758bf8b5d95",
+              "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
               "locator": "A small squarefree kernel suffices for abc finiteness"
             },
             "dependency_coverage": "complete"
@@ -435908,8 +436451,94 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
-              "sha256": "e91338fbf3d6ab2e21188ca81cfa284456b1ceceaefc2ccbd744c758bf8b5d95",
+              "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
               "locator": "A small squarefree kernel suffices for abc finiteness"
+            },
+            "dependency_coverage": "complete"
+          },
+          {
+            "id": "ABC-FINITENESS-HYPOTHESES-TO-RADICAL-THRESHOLD",
+            "premises": [
+              "GOAL-ARITH-ABC-FINITENESS"
+            ],
+            "conclusion": "GAP-ARITH-ABC-CONJECTURE",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+              "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+              "locator": "Primitive Pythagorean triples and a fixed exact-power hypotenuse"
+            },
+            "dependency_coverage": "complete"
+          },
+          {
+            "id": "ABC-RADICAL-THRESHOLD-TO-FINITENESS-HYPOTHESES",
+            "premises": [
+              "GAP-ARITH-ABC-CONJECTURE"
+            ],
+            "conclusion": "GOAL-ARITH-ABC-FINITENESS",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+              "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+              "locator": "Primitive Pythagorean triples and a fixed exact-power hypotenuse"
+            },
+            "dependency_coverage": "complete"
+          },
+          {
+            "id": "ABC-FINITENESS-TO-PRIMITIVE-PYTHAGOREAN-GAP",
+            "premises": [
+              "GAP-ARITH-ABC-CONJECTURE"
+            ],
+            "conclusion": "GAP-ARITH-ABC-PRIMITIVE-PYTHAGOREAN-FINITENESS",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+              "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+              "locator": "Primitive Pythagorean triples and a fixed exact-power hypotenuse"
+            },
+            "dependency_coverage": "complete"
+          },
+          {
+            "id": "ABC-PRIMITIVE-PYTHAGOREAN-GAP-TO-FINITENESS",
+            "premises": [
+              "GAP-ARITH-ABC-PRIMITIVE-PYTHAGOREAN-FINITENESS",
+              "ARITH-ABC-GAUSSIAN-EVEN-NORM-POWER-TRANSFER"
+            ],
+            "conclusion": "GAP-ARITH-ABC-CONJECTURE",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+              "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+              "locator": "Primitive Pythagorean triples and a fixed exact-power hypotenuse"
+            },
+            "dependency_coverage": "complete"
+          },
+          {
+            "id": "ABC-FINITENESS-TO-FIXED-ICOSAHEDRAL-GAP",
+            "premises": [
+              "GAP-ARITH-ABC-CONJECTURE"
+            ],
+            "conclusion": "GAP-ARITH-ABC-FIXED-ICOSAHEDRAL-FINITENESS",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+              "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+              "locator": "A fixed icosahedral power signature suffices for abc"
+            },
+            "dependency_coverage": "complete"
+          },
+          {
+            "id": "ABC-FIXED-ICOSAHEDRAL-GAP-TO-FINITENESS",
+            "premises": [
+              "GAP-ARITH-ABC-FIXED-ICOSAHEDRAL-FINITENESS",
+              "ARITH-ABC-KLEIN-PYTHAGOREAN-PRIMITIVE-RADICAL-TRANSFER"
+            ],
+            "conclusion": "GAP-ARITH-ABC-CONJECTURE",
+            "status": "proved",
+            "proof": {
+              "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+              "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
+              "locator": "A fixed icosahedral power signature suffices for abc"
             },
             "dependency_coverage": "complete"
           }
@@ -474984,6 +475613,15 @@
               "nodes": [
                 "EXT-ABC-KANE-LARGE-RADICAL-COUNT"
               ]
+            },
+            {
+              "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+              "locator": "Prop. 7 proof and Prop. 10 with actual largest letter and letter product",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ABC-KANE-DYADIC-LATTICE-AND-CONIC-COUNTS",
+                "ARITH-ABC-PRIMITIVE-PYTHAGOREAN-EXCEPTION-COUNT-TWO-SEVENTHS"
+              ]
             }
           ],
           "verification": "source_read",
@@ -477172,6 +477810,16 @@
               "locator": "Darmon–Granville, §1.1, p. 519 attested at line 118",
               "role": "application_unverified",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
+              "locator": "§7.4 identity, degree-60 quotient and its local orders",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ABC-KLEIN-ICOSAHEDRAL-QUOTIENT",
+                "ARITH-ABC-KLEIN-PYTHAGOREAN-PRIMITIVE-RADICAL-TRANSFER",
+                "ARITH-ABC-ICOSAHEDRAL-THREE-RATIONAL-POINTS-MINIMUM-DEGREE-120"
+              ]
             }
           ],
           "title_status": "source_title",
@@ -478888,7 +479536,8 @@
           "title": "Erdős's 1976 source cited for Problem 939",
           "citation": "Erdős's 1976 source cited for Problem 939",
           "urls": [
-            "https://www.renyi.hu/~p_erdos/1976-39.pdf"
+            "https://www.renyi.hu/~p_erdos/1976-39.pdf",
+            "https://www.renyi.hu/~p_erdos/1976-39.pdf#page=11"
           ],
           "local_sources": [],
           "uses": [
@@ -478897,6 +479546,14 @@
               "locator": "External citation at line 3",
               "role": "application_unverified",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+              "locator": "Printed p. 35, open intervals and growth question",
+              "nodes": [
+                "GAP-ARITH-ERDOS942-LOGARITHMIC-RATE"
+              ],
+              "role": "context"
             }
           ],
           "verification": "citation_only",
@@ -486687,7 +487344,8 @@
           "title": "On the behavior of the number of k-full integers between successive k-th powers",
           "citation": "Shusei Narumi and Yohei Tachiya, arXiv:2611.20656v1, Theorem 1 and Lemmas 1–2.",
           "urls": [
-            "https://arxiv.org/html/2611.20656v1#S2"
+            "https://arxiv.org/html/2611.20656v1#S2",
+            "https://arxiv.org/html/2611.20656v1"
           ],
           "local_sources": [],
           "identifiers": {},
@@ -486710,6 +487368,15 @@
                 "ARITH-ABC-POSITIVE-DENSITY-COPRIME-POWERFUL-SHORT-WINDOWS",
                 "ARITH-ABC-COPRIME-POWERFUL-SHORT-WINDOWS-GROWING-FULL-SHIFT-DIVISOR"
               ]
+            },
+            {
+              "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+              "locator": "Opening theorem comparison, Theorems 1–2, Corollary 1 and Lemmas 1–2",
+              "nodes": [
+                "GAP-ARITH-ERDOS942-LOGARITHMIC-RATE",
+                "GAP-ARITH-ERDOS942-GROWING-COPRIME-OCCUPANCY"
+              ],
+              "role": "context"
             }
           ],
           "title_status": "source_title",
@@ -496755,6 +497422,15 @@
                 "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
                 "HESSIAN-GLOBAL-CONDUCTOR-TEN-EXCLUSION"
               ]
+            },
+            {
+              "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
+              "locator": "Characteristic sequences of the exact order",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
+                "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES"
+              ]
             }
           ],
           "verification": "source_read",
@@ -497428,6 +498104,122 @@
           "title_status": "source_title",
           "verification": "source_read",
           "verification_basis": "Inspected the power transformation in Lemma 4 and the fixed divisibility result of Theorem 3. The third squareclass constraint follows from the separate written norm identity."
+        },
+        {
+          "id": "EXT-ERDOS-PROBLEM-365-STATEMENT",
+          "title": "Erdős Problem 365",
+          "citation": "T. F. Bloom, Erdős Problems, Problem 365.",
+          "identifiers": {},
+          "urls": [
+            "https://www.erdosproblems.com/365"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md",
+              "locator": "Opening problem citation",
+              "nodes": [
+                "GAP-ARITH-ERDOS365-POLYLOGARITHMIC-COUNT"
+              ],
+              "role": "context"
+            }
+          ],
+          "verification": "citation_only",
+          "resource_type": "webpage",
+          "title_status": "source_title",
+          "verification_basis": "Problem index. The original questions are in the Erdős 1976 article."
+        },
+        {
+          "id": "EXT-ERDOS-PROBLEM-942-STATEMENT",
+          "title": "Erdős Problem 942",
+          "citation": "T. F. Bloom, Erdős Problems, Problem 942.",
+          "identifiers": {},
+          "urls": [
+            "https://www.erdosproblems.com/942"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
+              "locator": "Opening problem citation",
+              "nodes": [
+                "GAP-ARITH-ERDOS942-LOGARITHMIC-RATE"
+              ],
+              "role": "context"
+            }
+          ],
+          "verification": "citation_only",
+          "resource_type": "webpage",
+          "title_status": "source_title",
+          "verification_basis": "Problem index. The original questions are in the Erdős 1976 article."
+        },
+        {
+          "id": "REF-FACT-BADO-FACTORIAL-SUBSUMS-2026",
+          "title": "A p-adic Reduction for Subsums of Factorials",
+          "citation": "Idriss Olivier Bado, July 2026 preprint, DOI 10.13140/RG.2.2.14498.80327.",
+          "identifiers": {},
+          "urls": [
+            "https://www.researchgate.net/publication/408593445_A_p-adic_Reduction_for_Subsums_of_Factorials"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+              "locator": "Compactness and carry recursion comparison, Theorems 4.2 and 5.1",
+              "nodes": [
+                "GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT"
+              ],
+              "role": "context"
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Author-uploaded primary text. Inspected the statements and proofs in §§4–5."
+        },
+        {
+          "id": "EXT-SINGULAR-432-LOCAL-STD",
+          "title": "Singular 4.3.2 manual: std",
+          "citation": "Singular User Manual, version 4.3.2, 2023, §5.1.149 std, exact local standard bases",
+          "resource_type": "software",
+          "identifiers": {},
+          "urls": [
+            "https://www.singular.uni-kl.de/Manual/4-3-2/sing_357.htm"
+          ],
+          "local_sources": [],
+          "verification": "source_read",
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+              "locator": "§5.1.149 std, exact local standard bases",
+              "role": "context",
+              "nodes": [
+                "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "EXT-SINGULAR-432-LOCAL-REDUCE",
+          "title": "Singular 4.3.2 manual: reduce",
+          "citation": "Singular User Manual, version 4.3.2, 2023, §5.1.129 reduce, zero normal form for standard basis membership",
+          "resource_type": "software",
+          "identifiers": {},
+          "urls": [
+            "https://www.singular.uni-kl.de/Manual/4-3-2/sing_337.htm"
+          ],
+          "local_sources": [],
+          "verification": "source_read",
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+              "locator": "§5.1.129 reduce, zero normal form for standard basis membership",
+              "role": "context",
+              "nodes": [
+                "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN"
+              ]
+            }
+          ]
         }
       ],
       "internal_citations": [
@@ -498026,7 +498818,7 @@
           "proof_sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "A reconstruction matrix for unmarked moments, fixed-height comparison"
             },
             {
@@ -499995,7 +500787,7 @@
             },
             {
               "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-              "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+              "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
               "locator": "Sections2-3 independent qualitative reconstruction"
             }
           ]
@@ -504781,7 +505573,7 @@
           "proof_sources": [
             {
               "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-              "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+              "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
               "locator": "Hamiltonian symmetries and the coherent profiles"
             }
           ],
@@ -522828,11 +523620,15 @@
         },
         {
           "path": "arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md",
-          "sha256": "e91338fbf3d6ab2e21188ca81cfa284456b1ceceaefc2ccbd744c758bf8b5d95",
+          "sha256": "4a8a6e67fa7e13ab6941a584eb0503152ed324fc7ce478a252032df32e2df491",
           "claims": [
             "ARITH-ABC-THREE-SQUARE-KERNEL-AFFORDABLE-PROJECTIVE-LOCK-SAVING",
             "ARITH-ABC-ODD-PRIME-CHARGED-PROJECTIVE-SELECTOR",
-            "ARITH-ABC-NORM-POWER-TRANSFER-TO-SMALL-SQUAREFREE-KERNEL"
+            "ARITH-ABC-NORM-POWER-TRANSFER-TO-SMALL-SQUAREFREE-KERNEL",
+            "ARITH-ABC-GAUSSIAN-EVEN-NORM-POWER-TRANSFER",
+            "ARITH-ABC-KLEIN-PYTHAGOREAN-PRIMITIVE-RADICAL-TRANSFER",
+            "ARITH-ABC-ICOSAHEDRAL-THREE-RATIONAL-POINTS-MINIMUM-DEGREE-120",
+            "ARITH-ABC-PRIMITIVE-PYTHAGOREAN-EXCEPTION-COUNT-TWO-SEVENTHS"
           ],
           "dependencies": [
             "EXT-ABC-CASSELS-ISOTROPIC-TERNARY-SMALL-ZERO",
@@ -522841,11 +523637,16 @@
             "ARITH-ABC-SMALL-BUDGET-ONE-THIRD-LIMSUP",
             "ARITH-ABC-ONE-TARGET-MINIMAL-REPAIR-ONE-THIRD-GAP-EQUIVALENCE",
             "ARITH-ABC-THREE-SQUARE-KERNEL-AFFORDABLE-PROJECTIVE-LOCK-SAVING",
-            "ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES"
+            "ARITH-ABC-SUPPORTED-LETTER-BOUNDED-COORDINATES",
+            "EXT-ABC-KLEIN-ICOSAHEDRAL-QUOTIENT",
+            "EXT-ABC-KANE-DYADIC-LATTICE-AND-CONIC-COUNTS"
           ],
           "gaps": [
             "GAP-ARITH-ABC-CONJECTURE",
-            "GAP-ARITH-ABC-TWO-SQUARES-SMALL-KERNEL-FINITENESS"
+            "GAP-ARITH-ABC-TWO-SQUARES-SMALL-KERNEL-FINITENESS",
+            "GOAL-ARITH-ABC-FINITENESS",
+            "GAP-ARITH-ABC-PRIMITIVE-PYTHAGOREAN-FINITENESS",
+            "GAP-ARITH-ABC-FIXED-ICOSAHEDRAL-FINITENESS"
           ],
           "statements": [],
           "role": "proof",
@@ -529525,7 +530326,7 @@
         },
         {
           "path": "arithmetic/ERDOS_675_TRANSLATION_PATTERNS.md",
-          "sha256": "a44c97da3d2e6b9db7b4a746c551165d769cda75aa5f565666c04440f906e807",
+          "sha256": "a5b02dc13df34f7c15ff11bd18a24bbd2419f4b65522f4eab0082e0ab5abc1c5",
           "role": "proof",
           "claims": [
             "ARITH-ERDOS675-TRANSLATION-PROGRAMME",
@@ -529539,7 +530340,8 @@
             "ARITH-ERDOS675-UPPER-ENVELOPE",
             "ARITH-ERDOS675-NORM-FIELD-BARRIER",
             "ARITH-ERDOS675-FINITE-SQUARECLASS-OBSTRUCTION",
-            "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION"
+            "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION",
+            "ARITH-ERDOS675-PELL-NORM-OFFSETS"
           ],
           "dependencies": [
             "EXT-SPLITTING-RICHERT-FUNDAMENTAL-LEMMA",
@@ -529653,6 +530455,16 @@
               "title": "Proposition Erdos675PellFunctionFieldObstruction.** On the Pell",
               "nodes": [
                 "ARITH-ERDOS675-PELL-FUNCTION-FIELD-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition Erdos675PellNormOffsets.** Write \\(m=2k^2-1\\) in the",
+              "kind": "proposition",
+              "line": 537,
+              "title": "Proposition Erdos675PellNormOffsets.** Write \\(m=2k^2-1\\) in the",
+              "nodes": [
+                "ARITH-ERDOS675-PELL-NORM-OFFSETS"
               ],
               "mapping_kind": "exact-statement"
             }
@@ -545238,7 +546050,8 @@
           "claims": [
             "ARITH-ABC-HYPERBOLIC-P-SIGNATURE-RESIDUAL-RADICAL",
             "EXT-ABC-DARMON-GRANVILLE-THREE-POINT-SPECIALIZATION",
-            "EXT-ABC-DIAGONAL-PRIMEWISE-SHARED-ORDERS"
+            "EXT-ABC-DIAGONAL-PRIMEWISE-SHARED-ORDERS",
+            "EXT-ABC-KLEIN-ICOSAHEDRAL-QUOTIENT"
           ],
           "dependencies": [],
           "gaps": [],
@@ -546076,7 +546889,8 @@
           "path": "arithmetic/sources/kane-abc-restricted-radicals-2015.pdf",
           "sha256": "1ee7479c0933262ce26a0490af3f23c31704194b7e92b134b9dd3006f0aa23c3",
           "claims": [
-            "EXT-ABC-KANE-LARGE-RADICAL-COUNT"
+            "EXT-ABC-KANE-LARGE-RADICAL-COUNT",
+            "EXT-ABC-KANE-DYADIC-LATTICE-AND-CONIC-COUNTS"
           ],
           "dependencies": [],
           "gaps": [],
@@ -603361,7 +604175,7 @@
         },
         {
           "path": "foundations/extended-geometry/CM_NEWTON_331_OFF_COMPONENT_CHARTS.md",
-          "sha256": "5ca6e6d7f3b5e594224457bd06d5fe72ece44a88cb8830033e92fefb44bc2320",
+          "sha256": "70e95a9ae679d957a3ec4774b1117debb25943b4034f81165e13ff249e7625eb",
           "role": "proof",
           "claims": [
             "CM-SPHERE-CONDUCTOR-18-OFF-L3-REFINEMENT-331"
@@ -603837,10 +604651,11 @@
         },
         {
           "path": "foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
-          "sha256": "136da4d6f4e113ac20ad8ba148d12282f4668f806847147332db7b64b81efc29",
+          "sha256": "874a757bb84a3943228fb82259ae6e55987c84ca0055e9c72b1f8d8f683d7f76",
           "role": "proof",
           "claims": [
-            "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-UNIVERSAL"
+            "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-UNIVERSAL",
+            "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-MARKER-RANK"
           ],
           "dependencies": [
             "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-THREE-POLE-SLICES",
@@ -603850,7 +604665,8 @@
             "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-L3-VZERO-ENDPOINT-331",
             "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-L3-WZERO-ENDPOINT-331",
             "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-SEVENTEEN-ROW-SLOPE-ELIMINANT",
-            "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-SHIFT-THIRTEEN-LOWER-BOUND"
+            "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-SHIFT-THIRTEEN-LOWER-BOUND",
+            "CM-SPHERE-FULL-WIDTH-UNMARKED-RESIDUE-MATRIX"
           ],
           "gaps": [
             "CM-SPHERE-FULL-WIDTH-UNRESTRICTED-RECONSTRUCTION"
@@ -603877,15 +604693,25 @@
             {
               "locator": "Theorem (optimal initial window).",
               "kind": "theorem",
-              "line": 2,
+              "line": 3,
               "title": "Theorem (optimal initial window).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-UNIVERSAL"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary (fourteen-row marker rank).",
+              "kind": "corollary",
+              "title": "Corollary (fourteen-row marker rank).",
+              "nodes": [
+                "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-FOURTEEN-ROW-MARKER-RANK"
+              ],
+              "mapping_kind": "exact-statement",
+              "line": 114
             }
           ],
-          "explanation": "Optimal characteristic-zero initial window on the specified fixed-top family."
+          "explanation": "Optimal characteristic-zero initial window on the specified fixed-top family and exact marker rank at a known phase."
         },
         {
           "path": "foundations/extended-geometry/CM_NEWTON_FOUR_POINT_MONODROMY.md",
@@ -604005,7 +604831,7 @@
         },
         {
           "path": "foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
-          "sha256": "9ed5976d3c3f4dde94a14a88590fa989d78044e44b183fee387dcb8af17460f3",
+          "sha256": "997400fcaadf8964ab6a7cb2ebc75facb0f6d7152d1708574c791106732e5cb8",
           "role": "proof",
           "claims": [
             "CM-SPHERE-FULL-WIDTH-COHERENT-INPUT-STRIP",
@@ -604055,7 +604881,7 @@
             {
               "locator": "Proposition (computable reconstruction cutoff).",
               "kind": "proposition",
-              "line": 257,
+              "line": 258,
               "title": "Proposition (computable reconstruction cutoff).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-COMPUTABLE-RECONSTRUCTION-CUTOFF"
@@ -604065,7 +604891,7 @@
             {
               "locator": "Theorem (reconstruction on odd coefficient lines).",
               "kind": "theorem",
-              "line": 346,
+              "line": 347,
               "title": "Theorem (reconstruction on odd coefficient lines).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-ODD-LINE-RECONSTRUCTION"
@@ -604085,7 +604911,7 @@
             {
               "locator": "Corollary (the conductor-18 witness at 61).",
               "kind": "corollary",
-              "line": 459,
+              "line": 460,
               "title": "Corollary (the conductor-18 witness at 61).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-WITNESS-61"
@@ -604095,7 +604921,7 @@
             {
               "locator": "Theorem (full reconstruction on an exceptional radial line).",
               "kind": "theorem",
-              "line": 564,
+              "line": 567,
               "title": "Theorem (full reconstruction on an exceptional radial line).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-EXCEPTIONAL-RADIAL-LINE-BEZOUT"
@@ -604115,7 +604941,7 @@
             {
               "locator": "Theorem (three-pole coordinate slices and a fixed prime).",
               "kind": "theorem",
-              "line": 662,
+              "line": 668,
               "title": "Theorem (three-pole coordinate slices and a fixed prime).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-THREE-POLE-SLICES"
@@ -604125,7 +604951,7 @@
             {
               "locator": "Proposition (quintic obstruction for three corrections).",
               "kind": "proposition",
-              "line": 777,
+              "line": 783,
               "title": "Proposition (quintic obstruction for three corrections).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-THREE-POLE-COHERENT-QUINTIC"
@@ -604135,7 +604961,7 @@
             {
               "locator": "Corollary (generic detection for every radial value).",
               "kind": "corollary",
-              "line": 839,
+              "line": 844,
               "title": "Corollary (generic detection for every radial value).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-THREE-POLE-GENERIC-BASE"
@@ -604145,7 +604971,7 @@
             {
               "locator": "Corollary (local integrality away from the radial coefficient).",
               "kind": "corollary",
-              "line": 880,
+              "line": 886,
               "title": "Corollary (local integrality away from the radial coefficient).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-THREE-POLE-ARBITRARY-RADIAL"
@@ -604155,7 +604981,7 @@
             {
               "locator": "Proposition (single normalized poles in the three-pole system).",
               "kind": "proposition",
-              "line": 935,
+              "line": 941,
               "title": "Proposition (single normalized poles in the three-pole system).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-THREE-POLE-SINGLE-NORMALIZED-POLE"
@@ -604165,7 +604991,7 @@
             {
               "locator": "Proposition (local restrictions on a residual zero).",
               "kind": "proposition",
-              "line": 1038,
+              "line": 1044,
               "title": "Proposition (local restrictions on a residual zero).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-BOUNDARY-331"
@@ -604175,7 +605001,7 @@
             {
               "locator": "Proposition (moving branch ratios above 331).",
               "kind": "proposition",
-              "line": 1186,
+              "line": 1195,
               "title": "Proposition (moving branch ratios above 331).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-CONDUCTOR-18-MOVING-BRANCH-LOCAL"
@@ -604185,7 +605011,7 @@
             {
               "locator": "Proposition (Hamiltonian exclusion in the marker space).",
               "kind": "proposition",
-              "line": 1271,
+              "line": 1280,
               "title": "Proposition (Hamiltonian exclusion in the marker space).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-COHERENT-HAMILTONIAN-EXCLUSION"
@@ -604195,7 +605021,7 @@
             {
               "locator": "Proposition (coherent profiles on the generic fibre).",
               "kind": "proposition",
-              "line": 1300,
+              "line": 1309,
               "title": "Proposition (coherent profiles on the generic fibre).",
               "nodes": [
                 "CM-SPHERE-FULL-WIDTH-COHERENT-HAMILTONIAN-EXCLUSION"
@@ -691335,11 +692161,12 @@
         },
         {
           "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-          "sha256": "902adec4f185858f3f1e90a907ee9d92e08b33e8656c77d8ad895b9728569fae",
+          "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
           "role": "proof",
           "claims": [
             "FACT-ERDOS404-THREE-ADIC-CLASS-SIX",
-            "FACT-ERDOS404-LOCAL-BLOCKS"
+            "FACT-ERDOS404-LOCAL-BLOCKS",
+            "FACT-ERDOS404-MIDGAP-CORRECTION-SIZE"
           ],
           "dependencies": [],
           "gaps": [
@@ -691347,12 +692174,20 @@
             "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE",
             "GAP-FACT-ERDOS404-INFINITE-SEQUENCE"
           ],
-          "statements": [],
-          "explanation": "Open f(1,5) target, proved compactness implication and elementary residue-class special case; finite witness not replayed."
+          "statements": [
+            {
+              "locator": "Proposition (Size of corrections at large jumps).",
+              "kind": "proposition",
+              "nodes": [
+                "FACT-ERDOS404-MIDGAP-CORRECTION-SIZE"
+              ]
+            }
+          ],
+          "explanation": "Open all-precision target with compactness implication, exact local carry covering, and an all-prime lower bound on the size of signed corrections in the middle of large gaps."
         },
         {
           "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
-          "sha256": "49c545653ad6687dd1dc7813f4795c32ecc20de5ebac47e2b42f3a42158a2784",
+          "sha256": "8379f48c0e41ad59ee7de544961a291a8bf0f98e22c3759f1557dc890a873790",
           "role": "proof",
           "claims": [
             "ARITH-ERDOS942-FIXED-COPRIME-SQUARE-OCCUPANCY",
@@ -691374,7 +692209,7 @@
               ]
             }
           ],
-          "explanation": "Polynomial cancellation at selected shifts and CRT via nonzero resultants prove a growing coprime multiplicity. The source also tracks the fixed multiplicity theorem and the open uniform logarithmic upper bound."
+          "explanation": "Polynomial cancellation at selected shifts and an elementary sieve at resultant primes prove a growing coprime multiplicity. The source also tracks the fixed multiplicity theorem and the open uniform logarithmic upper bound."
         },
         {
           "path": "jacobian/planar-degree-frontier/sources/niedbala-giraudin-2611.00709v1.pdf",
@@ -692022,13 +692857,14 @@
         },
         {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "6bbf6b1b5fec69b6a785715bcd18b33066334d222eef5df81ca9f22c69d422d8",
+          "sha256": "0c6066273b3e3a9f27e890d2f220cc3690d8dc060945fc6ba3bb11eb5b50bbe1",
           "role": "proof",
           "claims": [
             "FACT-BINARY-PRIME-POWER-RESIDUE-CONSTANT-TRANSFER",
             "FACTORIAL-BINARY-PRIME-POWER-AXIS-ACTUAL-SUPPORT-WINDOWS",
             "FACT-BINARY-PRIME-POWER-THREE-ADIC-RESIDUE-ROW-BOUNDARY",
-            "FACT-BINARY-PRIME-POWER-FIRST-WILD-THREE-ADIC-ROW"
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-THREE-ADIC-ROW",
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN"
           ],
           "dependencies": [
             "FACTORIAL-PRIME-DIGIT-FACTORIAL-RESIDUE",
@@ -692066,6 +692902,18 @@
               "locator": "Larger critical rows.",
               "nodes": [
                 "FACT-BINARY-PRIME-POWER-FIRST-WILD-THREE-ADIC-ROW"
+              ]
+            },
+            {
+              "locator": "Four-term foreign-column reduction.",
+              "nodes": [
+                "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN"
+              ]
+            },
+            {
+              "locator": "Digit-run restriction.",
+              "nodes": [
+                "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN"
               ]
             }
           ],
@@ -692127,7 +692975,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
-          "sha256": "ef34ab7796f510ed0323d112e0e7a1a109ec6bed3351c87389cd431a2d084f80",
+          "sha256": "4be5f0c70ceefdae01e48b5ff98f15266a04297474f628cc900bd4aa74dd79c9",
           "role": "proof",
           "claims": [
             "HESSIAN-GLOBAL-CONDUCTOR-TEN-EXCLUSION",
@@ -692138,7 +692986,8 @@
             "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
             "HESSIAN-GLOBAL-OCTIC-CONDUCTOR-EXCLUSION",
             "HESSIAN-HYPERELLIPTIC-OCTIC-CONDUCTOR-EXCLUSION",
-            "HESSIAN-CUBIC-QUINTIC-OCTIC-CONDUCTOR-EXCLUSION"
+            "HESSIAN-CUBIC-QUINTIC-OCTIC-CONDUCTOR-EXCLUSION",
+            "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -692165,6 +693014,190 @@
           "gaps": [],
           "statements": [],
           "explanation": "Exact polynomial coefficient, collision, and Newton-face replays."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_binary_first_wild_three_adic_row.py",
+          "sha256": "00479171bb571a0b4e832a471212e602689a08a77ef03598b2cefd4a26ee8262",
+          "role": "evidence",
+          "claims": [
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Python 3.12 and Singular 4.3.2 internal exact replay of the 118-profile first wild row reduction. Independent explicit integer factorial comparisons, 16 analytic degree cases, 101 local reductions, and one residual profile."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_HYPERELLIPTIC_AND_CUBIC_EXCLUSIONS.md",
+          "sha256": "013b03fef64190660e82e05e066a7e14e8c77a700edcc33d52cff45a8d3ed018",
+          "role": "proof",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS"
+          ],
+          "dependencies": [
+            "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+            "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+            "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem ConductorTwelveHyperellipticExclusion.** The reduced",
+              "kind": "theorem",
+              "line": 57,
+              "title": "Theorem ConductorTwelveHyperellipticExclusion.** The reduced",
+              "nodes": [
+                "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem ConductorTwelveCubicSepticExclusion.** The reduced",
+              "kind": "theorem",
+              "line": 135,
+              "title": "Theorem ConductorTwelveCubicSepticExclusion.** The reduced",
+              "nodes": [
+                "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "An actual complex plane Keller map of global conductor degree twelve in a monic longitudinal frame cannot have reduced sequence (13,2) or (7,3). The reflected actions handle the one integral leading-zero resonance, and the exact cubic–septic parameter identities and finite-fibre action rule exclude the other case."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/verify_conductor_twelve_hyperelliptic_and_cubic_exclusions.py",
+          "sha256": "88356267743b1e92c6b0c43b014d0cd54f3e24c8f4f18a5f9ad843ab8a8fb0ff",
+          "role": "evidence",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact finite symbolic checks supporting the written branch proof."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_QUARTIC_QUINTIC_EXCLUSION.md",
+          "sha256": "f8506d076fda0d93939639cd0889e43b2e4b7f9b6d73a1ac2119999116373a74",
+          "role": "proof",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION"
+          ],
+          "dependencies": [
+            "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+            "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+            "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem QuarticQuinticConductorTwelveExclusion.** Let \\(F=(P,Q)\\) be an",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem QuarticQuinticConductorTwelveExclusion.** Let \\(F=(P,Q)\\) be an",
+              "nodes": [
+                "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "An actual complex plane Keller map of global conductor degree twelve in a monic longitudinal frame cannot have reduced sequence (5,4). The integrated quartic–quintic equations rule out finite poles, and the fixed-order quartic relation controls the alternate specialized embedding."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/verify_conductor_twelve_quartic_quintic_exclusion.py",
+          "sha256": "de9bac3ec3838ade5a4de8f58b9d238d13b6451649ec60f77c876973101aa648",
+          "role": "evidence",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact finite symbolic checks supporting the written branch proof."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWELVE_CABLE_EXCLUSIONS.md",
+          "sha256": "b08285e2a698f073cea0999d768c10ff7086048eef0fce40dcf888559c3f3487",
+          "role": "proof",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS"
+          ],
+          "dependencies": [
+            "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+            "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+            "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem (Cable sequences in conductor degree twelve).** Let \\(F=(P,Q)\\) be an actual complex polynomial plane Keller map with",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem (Cable sequences in conductor degree twelve).** Let \\(F=(P,Q)\\) be an actual complex polynomial plane Keller map with",
+              "nodes": [
+                "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "An actual complex plane Keller map of global conductor degree twelve in a monic longitudinal frame cannot have reduced sequence (6,4,9), (9,6,4), or (10,4,5). Exact approximate-root and parameter identities and the original finite-pair constraints cover these embeddings."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/verify_conductor_twelve_cable_exclusions.py",
+          "sha256": "8dc6138efdab5e7d256d441e26c4c872cdae88977fbd7c375021d29035b8430a",
+          "role": "evidence",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact finite symbolic checks supporting the written branch proof."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
+          "sha256": "366dc506a8a6ee5d42b271282fb52de9c37a0d74e5b37cffb23557de0ed52d49",
+          "role": "proof",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+            "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION",
+            "HESSIAN-COORDINATE-CONDUCTOR"
+          ],
+          "dependencies": [
+            "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+            "HESSIAN-GLOBAL-CONDUCTOR-TEN-EXCLUSION",
+            "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
+            "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS",
+            "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION",
+            "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS",
+            "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP"
+          ],
+          "gaps": [
+            "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem KellerDirectionalConductorTwelveExclusion.** For an actual",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem KellerDirectionalConductorTwelveExclusion.** For an actual",
+              "nodes": [
+                "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition ConductorTwelveCharacteristicSequences.** If the",
+              "kind": "proposition",
+              "line": 18,
+              "title": "Proposition ConductorTwelveCharacteristicSequences.** If the",
+              "nodes": [
+                "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Exact singular-order classification and combination of all six branch exclusions."
         }
       ]
     },

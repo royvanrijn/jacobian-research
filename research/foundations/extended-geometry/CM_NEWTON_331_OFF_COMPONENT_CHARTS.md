@@ -20,7 +20,10 @@ Then \(y=d/J(v)^2\) is nonzero, and the residue of
 | \(2/17\) | \(275\) |
 | \(5/56\) | \(170\) |
 
-These two residues and the component \(L_3\) still require analysis.
+This proposition restricts the intermediate charts for the ten-row
+residual system. The [fourteen-row proof](CM_NEWTON_FOURTEEN_ROW_LOCUS.md#reduction-at-331)
+excludes \(L_3\) and both off-\(L_3\) slopes already on the
+seven-row residual prefix.
 
 ## The two valuation charts
 

@@ -6,6 +6,8 @@ frame \((x,y)\) with \(P\) monic of positive degree in \(x\), the
 global \(x\)-degree of its exact directional coordinate conductor is
 at least twelve. Individual specialized conductor degrees can
 still be smaller.
+The [degree-twelve exclusion](GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md)
+raises this global bound to fourteen.
 
 We exclude degree ten below. The evenness of the exact conductor
 degree and the previous exclusions through eight are in the

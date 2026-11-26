@@ -764,11 +764,11 @@ At every sufficiently large prime its Frobenius power is
 still nonzero. This proves the large-prime assertion for the
 local integrality class, even when one of the eliminated
 coefficients has a pole above \(331\).
-The [seventeen-row theorem](CM_NEWTON_SEVENTEEN_ROW_LOCUS.md#excluding-the-final-two-residue-discs)
+The [optimal fourteen-row theorem](CM_NEWTON_FOURTEEN_ROW_LOCUS.md)
 proves the rational unit ideal on the full degree-\((5,1)\)
-support and removes the integrality hypothesis from the
-large-prime conclusion. The fixed witness window at \(331\)
-continues to use its stated integrality hypothesis.
+support and gives the large-prime conclusion in shifts \(0,\ldots,13\)
+for arbitrary fixed algebraic coefficients. The fixed witness window
+at \(331\) uses its stated integrality hypothesis.
 
 ### A quintic for the three-pole response
 
@@ -790,9 +790,8 @@ F={}&155708cb^5+1407b_1b^4+8880cb^3\\
  &-(1608b_1^2c+402b_1b_2)b+201b_1^3 .
 \end{aligned}
 \]
-Every line varying only \(b\) in this remaining coefficient locus
-has at most five candidates for failure of the seventeen-shift
-coherent test.
+On each line varying only \(b\) in this coefficient locus, at most
+five values of \(b\) can give coherent blindness through shift 4.
 
 In the five-marker space use
 \(A=(a_0+a_1z)(z^2+1)^2\) and \(C=c_0+c_1z+c_2z^2\).
@@ -858,7 +857,8 @@ The normalized minus-top arguments of \(S_7\) are then
 The determinants of multiplication by \(b^6S_7\) and by \(b^6\)
 are \(801\) and \(336\) in the reduced quintic algebra.
 Both are units. Thus the norm is nonzero in characteristic
-zero. The full unit-ideal question on its zero locus is open.
+zero. The [fourteen-row theorem](CM_NEWTON_FOURTEEN_ROW_LOCUS.md)
+also gives detection at the points where this norm vanishes.
 
 ### Eliminating the three angular coefficients first
 
@@ -1413,16 +1413,18 @@ and a rank-two block measured by marked moments](CM_NEWTON_BLOCK_RANK_MOMENTS.md
 
 ## Open reconstruction question
 
-The [seventeen-row locus calculation](CM_NEWTON_SEVENTEEN_ROW_LOCUS.md)
-proves that the normalized blind locus is empty for the fixed
-conductor-18 top and degree-\((5,1)\) support, with correction
-degree at most two. It gives a uniform initial window of
-seventeen shifts for formal coherent detection on that support.
+The [optimal fourteen-row theorem](CM_NEWTON_FOURTEEN_ROW_LOCUS.md)
+gives the shortest uniform initial window for formal coherent detection
+on the fixed opposite-root conductor-18 top with degree-\((5,1)\) lower
+support and correction degree at most two. For a known phase in that
+family, the same rows recover all five marker inputs if \(B\ne0\) and
+both coherent inputs if \(B=0\).
+[Marker-rank corollary](CM_NEWTON_FOURTEEN_ROW_LOCUS.md#marker-recovery-for-a-known-phase)
 
 The general upper-half question is whether extra unmarked rows
 force the coherent projection of the kernel to vanish at every
-allowed lower polynomial. The determinant above covers the
-complement of a finite set on each odd coefficient line. The two
+allowed phase beyond this fixed-top family. The determinant above covers
+the complement of a finite set on each odd coefficient line. The two
 coprime minors settle full reconstruction on the line \(B=b+z^3\),
 and the unit ideal settles the actual coherent direction for the
 larger odd-quartic family. For arbitrary exceptional parameters the
