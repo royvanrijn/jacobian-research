@@ -1416,7 +1416,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Coprime short-power windows allow a growing full prime-power shift divisor | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
 | A fixed moving-prime pool bounds weighted power pairs with a short outside shift | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
 | Two weighted powers and a full divisor on the third letter admit a small lift price | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
-| An adaptive common order above the cube-root scale gives a strict sector saving | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| An affordable third divisor and common power give a primitive slope saving | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
 | A small cofactor and boundedly many short roots force atomic residual valuations | Internal result | proved | [Source](ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md) |
 | Two compressed diffuse roles pay their actual joint record price | Internal result | proved | [Source](ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md) |
 | Atomic residuals admit bounded roots at vanishing numerical width | Internal result | proved | [Source](ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md) |
@@ -1427,8 +1427,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The weighted-power Subspace Theorem bound uses full parts of all three letters | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
 | Primitive slopes count unequal exact orders through three divisor records | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
 | Moving signed coefficients admit finite-height curve completion | Internal result | proved | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
-| Centered remainders have a diffuse fine-grid numerical benchmark | Internal result | unmapped | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
-| A formal rectangular Taylor certificate misses the diffuse benchmark | Internal result | open | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
+| Centered remainders have a diffuse fine-grid numerical benchmark | Internal result | proved | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
+| A formal rectangular Taylor certificate misses the diffuse benchmark | Internal result | proved | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
 | Both signed coefficient methods admit linear width on the faint-lock scale | Internal result | proved | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
 | Every nonlinear binomial factor pays its own primitive root fibre | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
 | Additive comparisons price all dyadic and mixed quadratic shift factors | Internal result | proved | [Source](ABC_EXACT_POWER_DIFFERENCE_RADICAL_COMPRESSION.md) |
@@ -1437,10 +1437,12 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Every fixed fresh cyclotomic output has an exponent price at balance | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
 | All three cyclotomic orientations jointly price the original primitive rows | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
 | One adaptive grid in a real fixed-target fibre must pay its coefficient dictionary | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
-| A separating pool for moving canonical coefficients gives a strict sector saving | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Optimized separating pools for moving canonical coefficients give a strict saving | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
 | A primitive two-cap matching forces the full adaptive coefficient price | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Exact bound for translates of the Engelsma 447-tuple | Internal result | proved | [Source](SECOND_HARDY_LITTLEWOOD.md) |
+| Prime cluster deletion at lower-order correlation precision | Internal result | proved | [Source](SECOND_HARDY_LITTLEWOOD.md) |
 
-**Computed obligations:** 108 unresolved; 19 resolved within their exact scope.
+**Computed obligations:** 110 unresolved; 19 resolved within their exact scope.
 
 
 Scope limits:
@@ -1668,5 +1670,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Can a new frequency input force enough square-cube residual cycles into a large recovered-kernel-gcd weight sector? The mixed-power sector theorem itself does not close the all-target critical cycle budget.](ERDOS_943_MIXED_POWER_KERNEL_GCD_WEIGHTS.md) — GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-CYCLE-BUDGET
 - **mathematical / open:** [Can a fixed positive eta satisfy the actual middle exact-five carrier support-capacity estimate(15) uniformly for every positive target?](ERDOS_943_THREE_FULL_EXACT_FIVE_CARRIERS.md) — TFC-OPEN-ACTUAL-MIDDLE-CARRIER-SUPPORT-CAPACITY-SAVING
 - **mathematical / open:** [Prove an absolute delta>0 and N_lambda(X) << X^((1/3-delta)lambda+epsilon) for all sufficiently small fixed positive lambda. The equivalent minimally repaired primitive quotient count remains open at arbitrary balanced profiles. A transfer must force a bounded-radical imbalanced output, a sufficiently low affine power defect, or another restriction using all three original radical caps.](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) — GAP-ARITH-ABC-STRICT-SMALL-BUDGET-COEFFICIENT
+- **mathematical / open:** [Decide whether pi(x+y) exceeds pi(x)+pi(y) for any integers x,y>=2. In particular, is the width-3159 factorial count of order 447 positive for some X?](SECOND_HARDY_LITTLEWOOD.md) — GAP-HL2-PRIME-COUNTING-SUBADDITIVITY
+- **mathematical / open:** [Can the balanced target-only minimal repair count be bounded by a fixed power strictly below 1/M?](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) — GAP-ARITH-ABC-ONE-TARGET-MINIMAL-REPAIR-STRICT-SAVING
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

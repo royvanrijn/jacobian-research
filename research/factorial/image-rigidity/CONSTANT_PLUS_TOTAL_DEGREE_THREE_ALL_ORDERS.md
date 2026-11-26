@@ -20,7 +20,7 @@ every order.
 ## The profile \((3)\)
 
 The following is the \(d=3\) instance of the
-[univariate prime-power argument](../../../unpublished/strong-factorial-binomials/constant-support.tex).
+[univariate prime-power argument](../../../results/strong-factorial-binomials/constant-support.tex).
 Scale the reversed polynomial by \(t\mapsto t/3\) to obtain
 \[
  \sum_{k=0}^n \frac{n!}{(n-k)!}\,U_k t^k,\qquad

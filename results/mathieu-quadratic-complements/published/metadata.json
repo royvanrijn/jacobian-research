@@ -1,0 +1,34 @@
+{
+  "title": "The Mathieu property for quadratic complements",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Classifies quadratic-complement traces in characteristic zero, proves the joint minima for explicit witnesses and gives a bounded one-order test for all multipliers. It also classifies the real special orthogonal Reynolds projection.",
+  "status": "published-preprint",
+  "publication_date": "2026-11-25",
+  "hexagon": "https://hexagonmath.org/2611.01050v1",
+  "license": "CC-BY-4.0",
+  "pdf": "paper.pdf",
+  "source": "source.zip",
+  "source_bundle": "source.zip",
+  "source_member_sha256": {
+    "main.tex": "37fa0e9e25dd9c4f955d9a5901ead6df19dcb8d4643b4a236d120f8b842c53b1"
+  },
+  "verification": {
+    "scope": "Public record and archive file identity checked. The deposited LaTeX matches the current paper and its scoped verification record.",
+    "limits": "The public deposit and file checks do not establish independent mathematical review, independent replay or formal verification.",
+    "evidence": [
+      "../verification.json"
+    ]
+  },
+  "publication_record_checked": "2026-11-26",
+  "current_edition": "../",
+  "abstract": "For a nondegenerate quadratic form \\(q\\) of dimension \\(N\\ge1\\) over a\ncharacteristic-zero field, the kernel of the normalized rotation and\nscaling trace on \\(\\{q\\ne0\\}\\) is Mathieu--Zhao exactly when \\(N\\le2\\).\nIn every higher dimension a single witness attains the minimum pole\norder, numerator degree and polynomial multiplier degree, namely\n\\(1,3,1\\). A second witness gives sharp degree cutoffs for its detecting\nmultipliers. For an arbitrary regular phase, testing finitely many\nmultipliers at one computable order decides eventual vanishing\nagainst every fixed multiplier. For phases affine in the angular\nvariable, a Laurent support criterion suffices. Over \\(\\mathbb R\\),\nthe kernel of the special orthogonal Reynolds projection is\nMathieu--Zhao exactly when \\(q\\) is definite or \\(N\\le2\\).",
+  "abstract_format": "latex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

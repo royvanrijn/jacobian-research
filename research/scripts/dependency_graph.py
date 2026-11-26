@@ -261,7 +261,8 @@ class DependencyGraph:
                               "reason": "missing" if actual is None else "changed"})
         return stale
 
-    def evaluate(self, overrides: dict[str, str] | None = None) -> dict[str, dict]:
+    def evaluate(self, overrides: dict[str, str] | None = None, *,
+                 distinct_blockers: bool = False) -> dict[str, dict]:
         """Evaluate the quotient DAG, grounding each equivalence component.
 
         Directional equivalences are consequences, never independent evidence.
@@ -269,6 +270,7 @@ class DependencyGraph:
         starts from source leaves every time, so stale or withdrawn evidence
         cannot survive by circulating through an equivalence. Assumptions are
         unioned and retained through hypothetical and conditional directions.
+        Navigation can keep only the first witness path for each blocker.
         """
         overrides = overrides or {}
         for node_id, state in overrides.items():
@@ -418,45 +420,74 @@ class DependencyGraph:
                                  hypothetical=certificate["hypothetical"], selected=True,
                                  selected_proof_depth=certificate["proof_depth"])
         for node_id in self.order:
-            evaluated[node_id]["blockers"] = self.blockers(node_id, evaluated)
+            evaluated[node_id]["blockers"] = self.blockers(
+                node_id, evaluated, distinct=distinct_blockers)
         return evaluated
 
-    def blockers(self, node_id: str, evaluation: dict[str, dict] | None = None) -> list[dict]:
+    def blockers(self, node_id: str, evaluation: dict[str, dict] | None = None, *,
+                 distinct: bool = False) -> list[dict]:
         """Return unresolved leaves/rules for each alternative route, with paths.
 
         This is a route explanation, not a claim that all listed blockers are
         jointly necessary. One repaired alternative may suffice.
+        A falsified premise terminates its route. A falsified target has no
+        unresolved proof obligations. In distinct mode, keep the same first
+        witness that would appear for each blocker identity in the full list.
         """
         _require(node_id in self.nodes, f"unknown graph node: {node_id}")
         if evaluation is None:
-            return self.evaluate()[node_id]["blockers"]
+            evaluation = self.evaluate(distinct_blockers=distinct)
+            return evaluation[node_id]["blockers"]
+        if evaluation[node_id]["state"] == "falsified":
+            return []
         found = []
+        seen_blockers = set()
+        seen_visits = set()
+
+        def add(blocker: dict) -> None:
+            if distinct:
+                identity = (blocker["type"], blocker["id"], blocker["state"])
+                if identity in seen_blockers:
+                    return
+                seen_blockers.add(identity)
+            found.append(blocker)
 
         def visit(current: str, path: list[str], ancestors: frozenset[str] = frozenset()) -> None:
             if current in ancestors:
-                found.append({"type": "equivalence", "id": self.component_of[current],
-                              "state": "open", "path": path,
-                              "reason": "equivalence has no independent available grounding"})
+                add({"type": "equivalence", "id": self.component_of[current],
+                     "state": "open", "path": path,
+                     "reason": "equivalence has no independent available grounding"})
                 return
+            if distinct:
+                visit_key = (current, ancestors)
+                if visit_key in seen_visits:
+                    return
+                seen_visits.add(visit_key)
             ancestors = ancestors | {current}
             record = evaluation[current]
             if record["state"] in AVAILABLE:
                 for assumption in record["assumptions"]:
-                    found.append({"type": "assumption", "id": assumption, "state": "open", "path": path})
+                    add({"type": "assumption", "id": assumption, "state": "open", "path": path})
                 return
             routes = record["routes"]
-            if not routes:
-                found.append({"type": "node", "id": current, "state": record["state"], "path": path,
-                              "stale_sources": record["stale_sources"]})
+            if record["state"] == "falsified" or not routes:
+                add({"type": "node", "id": current, "state": record["state"], "path": path,
+                     "stale_sources": record["stale_sources"]})
+                return
             for route in routes:
                 route_path = [*path, route["id"]]
                 if route["state"] in {"unverified", "refuted"} or route["stale_sources"]:
-                    found.append({"type": "implication", "id": route["id"], "state": route["state"],
-                                  "path": route_path, "stale_sources": route["stale_sources"]})
+                    add({"type": "implication", "id": route["id"], "state": route["state"],
+                         "path": route_path, "stale_sources": route["stale_sources"]})
                 for premise in route["unavailable_premises"]:
-                    visit(premise, [*route_path, premise], ancestors)
+                    # An external premise belongs to an earlier quotient component,
+                    # so it cannot lead back to ancestors in this component.
+                    if distinct and self.component_of[premise] != self.component_of[current]:
+                        visit(premise, [*route_path, premise])
+                    else:
+                        visit(premise, [*route_path, premise], ancestors)
                 for assumption in route["assumptions"]:
-                    found.append({"type": "assumption", "id": assumption, "state": "open", "path": route_path})
+                    add({"type": "assumption", "id": assumption, "state": "open", "path": route_path})
 
         visit(node_id, [node_id])
         return found

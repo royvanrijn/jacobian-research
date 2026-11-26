@@ -7,7 +7,8 @@ Drafts and standalone notes with their current review status.
 | Paper | Status |
 |---|---|
 | [Finite Tests for Mixed Moments of Regular Functions](finite-tests-for-mixed-moments/) | draft |
-| [Frobenius norm bounds for Newton polygons with CM field action](cm-newton-polygon-constraints/) | ready for review |
+| [Relative Frobenius norms and density-one ordinary reduction](cm-newton-polygon-constraints/) | ready for review |
+| [Nonzero sphere moments from nonordinary cyclic covers](cm-newton-cyclic-cover-moments/) | draft |
 | [Primitive sums of powerful integers and the \(abc\) endpoint](powerful-number-representations/) | draft |
 | [Asymptotic counts for powerful triples with arbitrary common divisor](powerful-triple-asymptotics/) | draft |
 

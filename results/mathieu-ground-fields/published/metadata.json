@@ -1,0 +1,34 @@
+{
+  "title": "The Mathieu Property over Fields of Characteristic Zero: Classification and Ground-Field Obstructions",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Classifies the Mathieu–Zhao property for split reductive actions in characteristic zero, including spaces without rational points. Gives further real-closed, compact Hausdorff and ground-field obstruction theorems.",
+  "status": "published-preprint",
+  "publication_date": "2026-11-25",
+  "hexagon": "https://hexagonmath.org/2611.01051v1",
+  "license": "CC-BY-4.0",
+  "pdf": "paper.pdf",
+  "source": "source.zip",
+  "source_bundle": "source.zip",
+  "source_member_sha256": {
+    "main.tex": "d504b55419b10c7a26e20b80a7c9cf943f714c63aaf606abc4a4471b6a688fd9"
+  },
+  "verification": {
+    "scope": "Public record and archive file identity checked. The deposited LaTeX matches the current paper and its scoped verification record.",
+    "limits": "The public deposit and file checks do not establish independent mathematical review, independent replay or formal verification.",
+    "evidence": [
+      "../verification.json"
+    ]
+  },
+  "publication_record_checked": "2026-11-26",
+  "current_edition": "../",
+  "abstract": "Let \\(K\\) be a field of characteristic zero and \\(X\\) an affine geometrically\nhomogeneous space of a group \\(G\\) with split reductive identity component.\nThe normalized Reynolds kernel on \\(K[X]\\) is Mathieu--Zhao if and only if\n\\([G^\\circ,G^\\circ]\\) acts trivially. A single active split \\(\\SL_2\\) already\ngives a fixed marked counterexample for a connected reductive acting group.\nBoth results allow \\(X(K)=\\varnothing\\). The proof transfers witnesses along\nprincipal orbits and specializes marked-moment recurrences over the ground\nfield. We also classify connected reductive groups and compact adjoint\nsemisimple torsors over real closed fields, and representative functions\non compact Hausdorff homogeneous spaces. A long-root subgroup gives a\nfurther obstruction when a split central torus acts alongside an active\ncompact factor of rank at least two.",
+  "abstract_format": "latex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

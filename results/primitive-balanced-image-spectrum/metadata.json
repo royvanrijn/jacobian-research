@@ -5,7 +5,7 @@
     "orcid": "0009-0000-2808-0645"
   },
   "summary": "Determines the exact primitive, absolutely nonpower balanced failure spectrum in two contraction pairs and proves density-one ordinary reduction after finite extension for Rosati-compatible rank-two CM multiplication with at most two balanced pairs.",
-  "status": "submission-pending",
+  "status": "ready-for-review",
   "published": false,
   "catalogued_on": "2026-11-25",
   "source": "main.tex",
@@ -16,8 +16,7 @@
   "abstract_source": "main.tex",
   "verification_record": "verification.json",
   "next_steps": [
-    "Record the public version and seal the deposited files once Hexagon releases the submission.",
-    "Specialist review of the proper direct-image argument and the rank-two ordinary-reduction theorem."
+    "Obtain specialist review of the proper direct-image argument and the rank-two ordinary-reduction theorem."
   ],
   "source_bundle": "primitive-balanced-image-spectrum-hexagon-source.zip",
   "source_bundle_members": {
@@ -27,34 +26,12 @@
     "ordinarity.tex": "ordinarity.tex",
     "proper-volume.tex": "proper-volume.tex"
   },
-  "submission": {
-    "venue": "Hexagon",
-    "status": "pending",
-    "prepared_on": "2026-11-25",
-    "upload": "primitive-balanced-image-spectrum-hexagon-source.zip",
-    "primary_category_suggestion": "math.AG",
-    "cross_list_suggestions": [
-      "math.NT",
-      "math.RA"
-    ],
-    "keywords": [
-      "Special Image Conjecture",
-      "balanced polynomials",
-      "Mathieu subspaces",
-      "ordinary reduction",
-      "CM fields",
-      "cyclic covers"
-    ],
-    "provenance": "AI-PROVENANCE.md",
-    "reserved_identifier": "hexagon:2611.01080",
-    "submitted_on": "2026-11-25",
-    "updated_on": "2026-11-25",
-    "status_source": "Author confirmation"
-  },
   "reproducibility_archive": "primitive-balanced-image-spectrum-verification.zip",
   "checksums": "SHA256SUMS.txt",
   "verification": {
     "scope": "Written proofs and primary-source comparison, exact finite replays from an extracted archive, internal PDF-only reader review, and visual inspection of the revised PDF.",
     "limits": "External mathematical review and reproduction by an external reviewer have not been performed. The paper is not formally verified."
-  }
+  },
+  "published_edition": "published/",
+  "hexagon": "https://hexagonmath.org/2611.01080v1"
 }

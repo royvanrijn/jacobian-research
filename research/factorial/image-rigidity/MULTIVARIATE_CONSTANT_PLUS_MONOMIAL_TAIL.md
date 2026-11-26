@@ -26,7 +26,7 @@ profiles to check.
 ## Large total exponent at a fixed terminal
 
 The inequality from the
-[univariate constant-support proof](../../../unpublished/strong-factorial-binomials/constant-support.tex)
+[univariate constant-support proof](../../../results/strong-factorial-binomials/constant-support.tex)
 gives
 \[
  \frac{(d_i k)!}{((d_i n)!)^{k/n}}

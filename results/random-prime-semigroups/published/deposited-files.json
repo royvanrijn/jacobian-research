@@ -1,0 +1,30 @@
+{
+  "record": "https://hexagonmath.org/2611.01049v1",
+  "retrieved": "2026-11-26",
+  "pdf_download": "https://hexagonmath.org/pdf/2611.01049v1",
+  "source_download": "https://hexagonmath.org/src/2611.01049v1",
+  "source_bundle_note": "Hexagon generates the public source-download ZIP separately from the original upload. The deposited main.tex matches the current LaTeX; uploaded-source.zip matches the original upload digest in the public record.",
+  "files": [
+    {
+      "file": "paper.pdf",
+      "md5": "3344993fd1fcbebcc4aefc65d404a2cd",
+      "sha256": "e1292f3acf339e8ec030cd57be543d0bd0c9ad2018d1e1cb6cd66acb1ed47cdc"
+    },
+    {
+      "file": "source.zip",
+      "md5": "b4f991808694e26a5097377807cc73e8",
+      "sha256": "338bb9b6eea4963123c7f922fc0d4e3d6dedd4615f85da69dcd31455cc91df18"
+    },
+    {
+      "file": "uploaded-source.zip",
+      "md5": "db3c97586396552f6289a0628a8677d0",
+      "sha256": "a161246b4610c295213fb80caaf1e82bda4f1018994b9a7c33da58ec5047ff8d"
+    },
+    {
+      "file": "hexagon-metadata.json",
+      "md5": "3adaa9aade688501a38bcd38c1ed6201",
+      "sha256": "228ffde9934abd05403e1fc7b8d06d85c3c106ae96bf1086c8a652e9e8bd0eef"
+    }
+  ],
+  "api_record": "https://hexagonmath.org/api/v1/works/2611.01049v1"
+}

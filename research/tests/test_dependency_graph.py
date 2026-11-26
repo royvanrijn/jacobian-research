@@ -9,6 +9,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from dependency_graph import DependencyGraph, GraphValidationError
+from dependency_views import _blocker_text
 
 
 class DependencyGraphTests(unittest.TestCase):
@@ -313,6 +314,38 @@ class DependencyGraphTests(unittest.TestCase):
         self.assertIn({"id": "EQUIVALENT-GOALS", "members": ["A", "B"], "equivalence": True},
                       quotient["components"])
         self.assertIn("independent grounding required", graph.to_dot())
+
+    def test_navigation_preserves_first_blocker_witness_across_routes(self):
+        self.node("GAP", "open", None)
+        self.equivalence(contexts={"A": ["GAP"]})
+        self.node("LEFT", "open", None)
+        self.node("RIGHT", "open", None)
+        self.rule("TO-LEFT", ["A"], "LEFT", assumptions=["extra condition"])
+        self.rule("TO-RIGHT", ["B"], "RIGHT")
+        self.rule("JOIN", ["LEFT", "RIGHT"])
+        graph = self.graph()
+        full = graph.evaluate()
+        compact = graph.evaluate(distinct_blockers=True)
+        self.assertLess(len(compact["CLAIM"]["blockers"]), len(full["CLAIM"]["blockers"]))
+        for node_id, record in full.items():
+            first_witnesses = {}
+            for blocker in record["blockers"]:
+                identity = (blocker["type"], blocker["id"], blocker["state"])
+                first_witnesses.setdefault(identity, blocker)
+            self.assertEqual(compact[node_id]["blockers"], list(first_witnesses.values()))
+            self.assertEqual(_blocker_text(compact[node_id]), _blocker_text(record))
+
+    def test_refuted_equivalent_goals_have_no_open_blockers(self):
+        self.node("A", "falsified")
+        self.node("B", "falsified")
+        self.equivalence()
+        self.rule("USES-REFUTED", ["A"])
+        evaluation = self.graph().evaluate()
+        for member in ("A", "B"):
+            self.assertEqual(evaluation[member]["state"], "falsified")
+            self.assertEqual(evaluation[member]["blockers"], [])
+        self.assertEqual([(blocker["id"], blocker["state"])
+                          for blocker in evaluation["CLAIM"]["blockers"]], [("A", "falsified")])
 
     def test_proving_either_equivalent_member_propagates_without_circular_provenance(self):
         for ground in ("A", "B"):

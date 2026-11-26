@@ -1,0 +1,591 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1.12in]{geometry}
+\usepackage[colorlinks=true,allcolors=blue,
+  pdftitle={Nonzero sphere moments from nonordinary cyclic covers},
+  pdfauthor={Roy van Rijn}]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\A}{\mathcal A}
+\newcommand{\CT}{\operatorname{CT}}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\title{Nonzero sphere moments from nonordinary cyclic covers}
+\author{Roy van Rijn}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A sphere moment can detect Frobenius on one coherent line of a cyclic
+cover even when its primitive Jacobian factor is nonordinary. For a fixed
+prime \(p>3\) congruent to \(2\) modulo \(3\), we construct connected covers
+of unbounded order \(N=(p^r-1)/(p-1)\), with odd \(r\ge3\), whose
+primitive factors are nonordinary at \(p\) and are not potentially CM.
+The sphere phases have least degree \(N\). For compatible lower
+terms integral at \(p\), their moments of orders \((p^{kr}-1)/N\),
+\(k\ge1\), multiplied by \(p^{kr}\), all reduce to one. At \(p=5\)
+we give an exact primitive \(p\)-rank formula and a limiting rank
+fraction of one half. In a second family, of order \(n=7M\) with
+\(M\equiv5\pmod{14}\), the primitive factor is nonordinary at every
+prime \(p\not\equiv1\pmod n\) with \(p\nmid n\) and \(c,1-c\)
+units at \(p\). An orbit
+criterion classifies the prime classes where the normalized moment
+residue is a unit for orders \((p^{kd}-1)/n\), where \(d\) is the
+order of \(p\) modulo \(n\) and \(k\ge1\). At least five classes
+certify nonzero moments at nonordinary primes. For \(n=35\) the
+nonordinary certifying classes have natural density \(7/24\).
+\end{abstract}
+
+\section{Introduction}
+
+Consider the complex affine sphere \(2xy+t^2=1\). Substituting
+\(y=(1-t^2)/(2x)\) sends a regular function to a Laurent polynomial in
+\(x,t\). The normalized sphere moment is obtained by taking the constant
+term in \(x\) and averaging over \(-1\le t\le1\). This defines a rational
+functional \(\A\) over every characteristic-zero field.
+
+Take a polynomial \(g\) of total degree less than \(31\) with rational
+coefficients integral at \(5\). On the sphere set
+\[
+     f=t^{29}(x^2+12y^2-4t^2)+g.
+\]
+Its least sphere degree is \(31\), and both \(125\A(f^4)\) and
+\(5^6\A(f^{504})\) reduce to one modulo five.
+These and infinitely many further congruences come from one Frobenius line
+on a cyclic cover of order \(31\). Its primitive Jacobian factor has
+dimension \(60\) and \(5\)-rank \(42\), and a quotient of dimension
+\(30\) has totally toric reduction at \(3\).
+
+If the highest possible constant-term height in a power is \(p^r-1\),
+its denominator \(p^r\) is isolated by reduction. In a cyclic cover
+associated with the leading form, the coefficient that remains can be
+the return of the \(r\)-fold Frobenius on a single line in coherent
+cohomology. Ordinarity suffices to make such a return invertible.
+Our examples show how to obtain an invertible return on the selected
+line together with nonordinary reduction. The finer character
+decomposition places the selected line and the failure of ordinarity
+in separate summands.
+
+In the first construction, the certifying prime and the first certified
+moment order stay fixed as the conductor grows. At \(p=5\) we count the surviving
+Frobenius orbits and show that the primitive \(p\)-rank is asymptotic to
+half its dimension. The second construction classifies the primes
+where the chosen return certifies infinitely many moment orders for a
+fixed cover and phase. In both constructions,
+a tame degeneration at a second prime rules out potential complex
+multiplication on the primitive factor.
+
+The fractional-part dimensions and Frobenius coefficient formulas for
+tame cyclic covers belong to the Hasse--Witt theory of Bouw
+\cite[\S\S2, 4--5]{bouw}. His generic rank theorem
+\cite[Theorem~6.1]{bouw} attains the character-orbit bound for a
+generic \(d\)-cyclic cover with \(b\) branch points when
+\(p\ge d(b-3)\). Here we use the character calculation on explicit
+covers and prove the selected coefficient is a unit in the specified
+fixed-prime and fixed-cover regimes. For the three-branch quotient in
+the second construction, the orbit condition agrees with the
+Shimura--Taniyama slope calculation \cite[Theorem~3.2]{lmpt}. Here
+we extract its exact residue in a sphere moment and use all seven
+quotients to detect nonordinarity of the ambient primitive factor.
+Ordinary reduction means that the \(p\)-rank equals the dimension.
+
+\section{Sphere moments and cyclic characters}
+
+For \(s=1,2\) assign weight \(j+si\) to the literal Laurent monomial
+\(x^it^j\), and put \(z=x/t^s\). The weight-\(n\) part of a phase has
+the form \(t^n B(z)\), where \(B\) is a Laurent polynomial. The
+sphere functional on Laurent monomials is
+\[
+  \A(x^it^j)=
+  \begin{cases}
+  1/(j+1)& i=0\text{ and }j\text{ even},\\
+  0&\text{otherwise}.
+  \end{cases}
+\]
+This equals \(\CT_x(\tfrac12\int_{-1}^1 x^it^j\,dt)\). The least sphere
+degree is the least total degree of a polynomial in \(x,y,t\)
+representing the function on the sphere.
+
+\begin{lemma}[Isolation of the top coefficient]\label{lem:isolation}
+Suppose a regular phase \(f\) has highest weight \(n>0\), with part
+\(t^n B(z)\) at that weight. Let \(q=p^r\) be an odd prime power and
+\(m=(q-1)/n\) a positive integer. If the Laurent coefficients of \(f\)
+are integral at a place over \(p\) of their number field, then
+\(q\A(f^m)\) is integral there and
+\[
+                 q\A(f^m)\equiv \CT_z B(z)^m.
+\]
+The congruence is in the residue field of the place.
+\end{lemma}
+
+\begin{proof}
+At angle zero the weight is the \(t\)-degree, which ranges from zero
+to \(nm=q-1\) in \(f^m\). Of the allowed denominators only \(q\)
+has valuation \(r\), and its degree \(q-1\) is even. The coefficient
+there comes from the highest-weight part alone.
+\end{proof}
+
+We recall the cohomology calculation in the character convention used
+below. Let \(Y^d=G(u)=\prod_b(u-b)^{a_b}\) define a geometrically
+connected tame cyclic cover of \(\mathbb P^1\) after normalization, with
+exponent \(a_\infty=-\sum_b a_b\bmod d\) at infinity. Write \(H_i\)
+for the \(Y^i\)-character space in \(H^1(\mathcal O)\) over an algebraic
+closure, for \(1\le i<d\). A generator of the character eigensheaf
+on the finite chart is
+\[
+       w_i=Y^i\prod_b(u-b)^{-\lfloor ia_b/d\rfloor}.
+\]
+The finite factors divide out the largest integral powers of \(u-b\)
+allowed by regularity. Normalizing at infinity gives the generator
+\(u^{-b_i}w_i\), where \(b_i=\lceil\sum_b\{ia_b/d\}\rceil\).
+It also generates on the finite part of the infinity chart
+\(\mathbb P^1\setminus\{0\}\), since there \(u\) is a unit.
+Thus the \v{C}ech quotient has basis \(w_i/u,\ldots,w_i/u^{b_i-1}\)
+and its dimension is
+\begin{equation}\label{eq:dimension}
+       h(i)=-1+\sum_{b\,\text{including }\infty}\{ia_b/d\}.
+\end{equation}
+For nontrivial characters connectedness ensures a positive fractional
+sum over all branches. If the exponents
+are nonnegative and less than \(d\) on the finite chart and
+\(d<\deg G<2d\), then \(H_1\) is one-dimensional with generator \(Y/u\).
+When \(q=p^r\equiv1\pmod d\), the \(q\)-power map sends its representative
+to \(YG(u)^{(q-1)/d}/u^q\). Hence the return coefficient on that line is
+\begin{equation}\label{eq:return}
+                   [u^{q-1}]G(u)^{(q-1)/d}.
+\end{equation}
+
+Absolute Frobenius acts on characters by \(i\mapsto pi\bmod d\),
+since it raises both functions and eigenvalues to the \(p\)-th power.
+The \(p\)-rank of the Jacobian is the dimension of the stable image
+of this Frobenius on \(H^1(\mathcal O)\) \cite[\S2]{bouw}.
+An orbit with unequal coherent dimensions is incompatible with an
+invertible Frobenius. A zero space on an orbit forces zero stable rank
+on that orbit. We write \(J^{[d]}\) for the factor of the Jacobian cut
+out, up to isogeny, by the primitive order-\(d\) idempotent of the
+deck group. It retains the spaces for \(\gcd(i,d)=1\).
+At the good reductions considered below, this idempotent acts on
+coherent cohomology since its denominator divides \(d\).
+When a primitive
+character sees exactly \(b\) nonzero branch exponents, its dimension
+plus that of its inverse is \(b-2\), by \eqref{eq:dimension}.
+For a quotient of degree prime to \(p\) that respects the order-\(d\)
+action, the trace and pullback exhibit its coherent cohomology as a
+Frobenius-stable summand. In characteristic zero the norm and pullback
+likewise give an isogeny factor of the Jacobian.
+
+\section{Fixed prime and unbounded conductor}
+
+\begin{theorem}\label{thm:fixedprime}
+Fix a rational prime \(p>3\) with \(p\equiv2\pmod3\) and an odd
+integer \(r\ge3\). Set \(N=(p^r-1)/(p-1)\), and take \(c\in\Q\)
+with \(v_3(c)=1\) and \(v_p(c)=v_p(1-c)=0\). The normalized
+cover
+\[
+              C\colon W^N=z^{N-2}(z^2-1)(z^2-c)
+\]
+is connected. Its primitive Jacobian factor has dimension
+\(2\varphi(N)\), is not potentially CM, and is nonordinary at \(p\).
+At \(p\) the \(r\)-fold semilinear Frobenius fixes the basis class
+\(W/z\) of its coherent character-one line.
+
+For a regular sphere phase \(f\) of highest weight \(j+i=N\)
+whose weight-\(N\) part is \(t^N z^{-2}(z^2-1)(z^2-c)\), with
+\(z=x/t\), the least sphere degree is \(N\). The phase is not a
+proper power over an algebraic closure of the coefficient field in
+the sphere function field. For every such phase over a number field
+with strict lower Laurent terms integral at a place over \(p\),
+for every integer \(k\ge1\) we have
+\[
+         p^{kr}\A(f^m)\equiv1,\qquad m=\frac{p^{kr}-1}{N},
+\]
+in the residue field. In particular the \((p-1)\)-st moment is nonzero.
+\end{theorem}
+
+\begin{proof}
+We have \(\gcd(N,6p)=1\) because \(p\equiv2\pmod3\) and \(r\) is
+odd. The exponent one at \(z=1\) gives geometric connectedness.
+With \(u=z^2\) the function field also has the model
+\[
+          W^{2N}=u^{N-2}(u-1)^2(u-c)^2.
+\]
+Indeed \(z^2\) and \(z^{N-2}\) recover \(z\) because \(N\) is odd.
+The original deck group is generated by the square of a generator of
+the refined group of order \(2N\). With \(V=W^2\) the even refined
+characters are the pullback from its degree-two quotient
+\[
+          D\colon V^N=u^{N-2}(u-1)^2(u-c)^2.
+\]
+There are six branch points including infinity on \(C\) over \(z\),
+and four on \(D\) over \(u\), all seen by each primitive character.
+Their primitive dimensions are \(2\varphi(N)\) and \(\varphi(N)\).
+
+\smallskip
+\noindent\textit{Toric reduction at \(3\).}
+Blow up the collision of \(0,c\) in the base of \(D\). Since
+\(v_3(c)=1\), the strict transforms of the branch sections separate,
+and at the node the equation of the base is \(us=c\). The Kummer
+equation there is
+\[
+                (V/u)^N=(u-1)^2(1-s)^2.
+\]
+The right-hand side is a unit at the node. Since \(3\nmid N\),
+the normalization is \'{e}tale over the node with \(N\) geometric
+nodes, permuted regularly by the deck group. The main component has
+equation \((V/u)^N=(u-1)^2\). On the exceptional component, using
+\(U=u/c\), the equation is \((V/c)^N=U^{N-2}(U-1)^2\). Both
+components are connected rational curves, as each is a cyclic cover
+with two fully ramified points. Away from the nodes, the normalization
+is smooth at the separated tame branch sections. In local parameters
+a unit times a single parameter power gives the usual tame cyclic
+normalization, smooth after adjoining the needed unit roots over a
+strict henselization.
+
+The torus of the Jacobian of a semistable curve has character lattice
+the first homology of its dual graph \cite[(12.3.7), \S12.4]{sga}.
+Here the graph has two vertices joined by \(N\) edges, giving the
+augmentation representation of the deck group. Its primitive part
+has rank \(\varphi(N)\), equal to the dimension of \(J^{[N]}(D)\).
+This toric rank persists after finite extension. CM abelian varieties
+have potentially good reduction everywhere, and potential good
+reduction is inherited by isogeny factors by the inertia criterion
+\cite[Theorems~1 and~6]{serretate}. The positive-dimensional toric
+factor of \(D\) therefore precludes potential CM for \(J^{[N]}(C)\).
+
+\smallskip
+\noindent\textit{A failing orbit and an invertible return at \(p\).}
+The branch points remain distinct and tame at \(p\). For a primitive
+original label \(i\), write \(x=i/N\) using the representative in
+\([1,N-1]\). Its two refined labels have parities \(e=0,1\).
+The branch exponents \((N-2,2,2,N-2)\) of the refined model give
+coherent dimension
+\[
+       -1+2\{e/2-x\}+2x
+          =\begin{cases}1,&e=0,\\2\mathbf 1_{x>1/2},&e=1.\end{cases}
+\]
+Indeed the two labels satisfy \(\ell\equiv i\pmod N\), so the
+fractional parts of \(\ell(N-2)/(2N)\) and \(2\ell/(2N)\)
+are \(\{e/2-x\}\) and \(x\). Frobenius preserves the parity.
+The odd refined label over \(i=2\) has dimension zero. With
+\(X=p^{r-1}\), its iterate over \(p^{r-1}i\bmod N\) has
+representative \(2X-N\), with
+\[
+                 \frac{2X-N}{N}=\frac{(p-2)X+1}{pX-1}
+                      \in(1/2,1).
+\]
+Its coherent dimension is two. This orbit has zero stable rank and
+proves nonordinarity.
+
+On the original character-one line the generator is \(W/z\), as
+the finite exponents are less than \(N\) and sum to \(N+2\).
+Put \(m=p-1\). The scalar \eqref{eq:return} at \(q=p^r\) is
+\begin{align*}
+ [z^{q-1}]\bigl(z^{N-2}(z^2-1)(z^2-c)\bigr)^m
+     &=[u^m](u-1)^m(u-c)^m\\
+     &=\sum_{a=0}^{p-1}c^a=(c-1)^{p-1}=1\quad\text{in }\F_p.
+\end{align*}
+The coefficient identity uses
+\((u-b)^{p-1}=\sum_{a=0}^{p-1}b^{p-1-a}u^a\) in characteristic
+\(p\). The residue of \(c\) lies in \(\F_p\) and differs from one.
+The \(r\)-fold Frobenius fixes the basis class, so its \(k\)-fold
+iterate does as well. For each \(q=p^{kr}\), put \(m=(q-1)/N\).
+The return coefficient \eqref{eq:return} is again the angular
+constant term \(\CT_z(z^{-2}(z^2-1)(z^2-c))^m\).
+Lemma~\ref{lem:isolation} gives all the moment congruences.
+
+\smallskip
+\noindent\textit{Degree and powers.}
+The sphere relation eliminates every occurrence of \(xy\) without
+raising total degree. The remaining monomials in \(x,t\) and in
+\(y,t\) with positive \(y\)-exponent form a basis: distinct angles
+are independent, and within angle \(-v<0\) the Laurent monomials
+obtained from \(y^vt^b\) have distinct highest \(t\)-degrees \(2v+b\).
+Thus the highest weight \(j+i\) is exactly the highest degree in
+this normal form. One compatible lift is
+\[
+         4c y^2t^{N-2}-(1+c)t^N+x^2t^{N-2}.
+\]
+Finally, in the function field with coordinates \(z,t\), the pole
+order of \(f\) at \(t=\infty\) is \(N\). A proper power of exponent
+\(d>1\) would have \(d\mid N\) and its leading coefficient at
+\(t=\infty\) would be a \(d\)-th power in the residue field. The
+coefficient has pole order two at \(z=0\), impossible for such \(d\)
+since \(N\) is odd.
+\end{proof}
+
+\begin{proposition}[Exact \(5\)-rank]\label{prop:rankhalf}
+In Theorem~\ref{thm:fixedprime} take \(p=5\) and \(c=3\). Let \(S_r\)
+consist of the integers \(1\le i<N\) coprime to \(N\) for which all
+\(r\) base-\(5\) digits of \(4i\), including leading zeros, are at
+least two. Then the \(5\)-rank of \(J^{[N]}(C)\) is
+\[
+                      \varphi(N)+2\lvert S_r\rvert.
+\]
+Its ratio to the dimension tends to \(1/2\) as odd \(r\) tends to
+infinity. At \(N=31\) this gives \(5\)-rank \(42\).
+\end{proposition}
+
+\begin{proof}
+Work on the refined cover of order \(2N\), where parity is preserved
+by Frobenius. Let \(w_\ell\) be the finite generator for a refined
+character of parity \(e\), and let \(\ell'\equiv5\ell\pmod{2N}\).
+Let \(i\) be the least positive residue of \(\ell\) modulo \(N\).
+Write \(x=i/N\), \(a=\lfloor5x\rfloor\), and \(x'=5x-a\). In
+reduction modulo \(5\), put \(Q(u)=(u-1)(u-3)=u^2+u+3\).
+The finite generator formula gives
+\(w_\ell^5=w_{\ell'}u^gQ(u)^a\), where
+\(g=\lfloor5\{e/2-x\}\rfloor\) is the exponent at zero.
+Indeed, each exponent in the extra factor is the floor of five
+times the corresponding fractional part at the source.
+The entry from \(w_\ell/u^j\) to \(w_{\ell'}/u^{j'}\) is therefore
+\([u^{5j-j'-g}]Q(u)^a\).
+
+For even parity \(g=4-a\). The line-to-line entries for
+\(a=0,1,2,3,4\) are \([u^a]Q(u)^a=1,1,2,4,1\) in \(\F_5\),
+so the even part contributes \(\varphi(N)\).
+For odd parity a Frobenius orbit with any \(x<1/2\) contributes zero
+by the dimension formula in the preceding proof. A step between two
+spaces of dimension two has \(x,x'>1/2\) and \(g=6-a\).
+For \(a=2,3,4\) the matrices on the indicated \v{C}ech bases are,
+respectively,
+\[
+ \begin{pmatrix}4&0\\0&1\end{pmatrix},\qquad
+ \begin{pmatrix}2&1\\2&3\end{pmatrix},\qquad
+ \begin{pmatrix}2&4\\3&3\end{pmatrix}.
+\]
+All have determinant \(4\) in \(\F_5\). Hence an odd orbit with
+every label above \(1/2\) contributes two per label.
+
+Now \(x=4i/(5^r-1)\) has periodic base-\(5\) digits given by the
+\(r\)-digit block of \(4i\). Frobenius cyclically rotates that block.
+The expansion of \(1/2\) consists entirely of twos. A digit less
+than two forces some rotation below \(1/2\), and a block of digits
+at least two has every rotation strictly above \(1/2\) because
+\(N\) is odd and \(x\ne1/2\). This proves the formula. We have
+\(\lvert S_r\rvert\le3^r\) and \(\varphi(N)\ge N^{3/4}\), since
+each prime \(\ell\mid N\) is at least five and
+\(1-1/\ell\ge\ell^{-1/4}\). As \(5^{3/4}>3\), the extra term is
+\(o(\varphi(N))\). For \(r=3\), the allowed blocks are the six
+permutations of \((2,2,4)\) and \((2,3,3)\), by divisibility of
+\(4i\) by four and \(0<4i<5^3-1\).
+\end{proof}
+
+\section{A fixed cover and its certifying prime classes}
+
+\begin{theorem}\label{thm:fixedcover}
+Let \(M\ge5\) with \(M\equiv5\pmod{14}\), put \(n=7M\), and set
+\[
+           P(U)=(U-1)^{M+1}(U-c)^{6M},\qquad c\in\Q,\quad v_2(c)=1.
+\]
+The normalized cover \(C\colon Y^n=P(z^7)\) is connected and its
+primitive factor has dimension \(13\varphi(n)/2\). This factor is
+not potentially CM. At every prime \(p\nmid n\) with
+\(v_p(c)=v_p(1-c)=0\), it is nonordinary if \(p\not\equiv1\pmod n\).
+
+Let \(f\) be a fixed regular phase over a characteristic-zero field
+of highest weight \(j+2i=n\), with weight-\(n\) part
+\(t^n z^{-7n}P(z^7)\), where \(z=x/t^2\). For a prime \(p\) as above,
+let \(d\) be its order modulo \(n\). Write \(\rho(i)\) for the
+least positive residue of \(i\) modulo seven. The certifying criterion is
+\begin{equation}\label{eq:orbitcriterion}
+           \frac{i}{n}+\frac{\rho(i)}7<1
+         \qquad\text{for each least positive representative }i\in\langle p\rangle.
+\end{equation}
+If the phase is defined over a number field and integral at a place
+over \(p\), then for every \(k\ge1\) the normalized moment
+\(p^{kd}\A(f^{(p^{kd}-1)/n})\) has nonzero residue if and only if
+\eqref{eq:orbitcriterion} holds.
+For any fixed \(f\), all sufficiently large primes meeting the criterion
+certify nonzero moments at these orders. The nonsplit certifying classes
+have natural density at least \(5/\varphi(n)\), and exactly \(7/24\) when
+\(n=35\).
+
+All compatible strict lower terms are allowed. Such phases are not proper
+powers in the sphere function field over an algebraic closure, and there
+is a compatible phase of least sphere degree \(8n\).
+\end{theorem}
+
+\begin{proof}
+The exponent \(M+1\) at a root of \(z^7=1\) is coprime to \(n\),
+giving connectedness. There are fourteen finite branch points and
+one at infinity, whose exponent is \(-7\bmod n\). Each primitive
+character sees all fifteen, giving dimension \(13\varphi(n)/2\)
+by \eqref{eq:dimension}. Over \(U=z^7\) there are two commuting deck
+actions, of orders \(n\) and seven. For \(0\le k\le6\), the functions
+\(U\) and \(Z_k=Yz^k\) give a quotient of degree seven, with model
+\[
+             D_k\colon Z_k^n=U^{kM}P(U).
+\]
+Indeed the two functions are fixed by the order-seven action
+\((z,Y)\mapsto(\xi z,\xi^{-k}Y)\) for \(\xi^7=1\), and adjoining
+\(z\) recovers the original field. The action on \(Y\) descends to
+the action on \(Z_k\), so the primitive part of each quotient
+pulls back to an isogeny factor of \(J^{[n]}(C)\).
+
+\smallskip
+\noindent\textit{The toric quotient.}
+In \(D_1\) the colliding branch exponents at \(2\), at \(U=0,c\),
+are \(M\) and \(6M\). After blowing up the base, the local equation
+\(Us=c\) at the node gives
+\[
+        (Z_1/U)^n=(U-1)^{M+1}(1-s)^{6M}.
+\]
+The normalization is \'{e}tale at the node with \(n\) geometric
+nodes. The main component is the \(n\)-th root of \((U-1)^{M+1}\)
+and is connected and rational. On the exceptional component, use
+\(u=U/c\) and \(Z_1/c\). The reduced right-hand side is a nonzero
+constant times \(u^M(u-1)^{6M}\). This has \(M\) geometric components,
+each a degree-seven cyclic cover with two branch points, hence
+rational. Away from the node the same tame normalization argument as
+for \(D\) in Theorem~\ref{thm:fixedprime} gives smoothness.
+
+The vertex representation of the dual graph has one fixed vertex
+and \(M\) permuted vertices, on which the deck group acts through a
+quotient of order \(M\). It contains no primitive order-\(n\)
+characters. The \(n\) edges carry the regular representation, so the
+primitive part of graph homology has dimension \(\varphi(n)\).
+The primitive factor of \(D_1\) has precisely this dimension, since
+it has four branch points seen by each primitive character. As
+above, this totally toric factor proves that \(J^{[n]}(C)\) is not
+potentially CM.
+
+\smallskip
+\noindent\textit{Nonordinarity at nonsplit primes.}
+The branch points remain distinct and tame at the primes under
+consideration. For a primitive label \(i\), write \(x=i/n\),
+\(t=\rho(i)\), and \(v=(kt\bmod7)/7\) with \(0\le v<1\).
+The four exponents of \(D_k\) give the fractions of \(v,x+t/7,
+1-t/7,-x-v\). Writing \(\epsilon_j(x)=\mathbf 1_{x+j/7>1}\),
+the dimension formula \eqref{eq:dimension} gives
+\[
+ h_k(i)=1-\epsilon_t(x)+\epsilon_{kt\bmod7}(x),\qquad
+ \sum_{k=0}^6\bigl(h_k(i)-h_0(i)\bigr)=\left\lfloor\frac{i}{M}\right\rfloor.
+\]
+There is no equality \(x+j/7=1\) because \(M>1\) and \(i\) is
+primitive. The sum counts the residues \(j=0,\ldots,6\) with
+\(x+j/7>1\).
+
+Ordinarity of the primitive factor of \(C\) would make all the quotient
+factors ordinary, forcing \(h_k(i)\) constant on every Frobenius
+orbit. Consequently multiplication by \(a=p\bmod n\) would preserve
+\(\lfloor i/M\rfloor\) for all primitive labels. Testing \(i=1\)
+gives \(1\le a<M\). If \(a>1\), choose the first power of two \(j\)
+with \(aj\ge M\). Then \(j<M\) and \(M\le aj<2M\). Both are
+primitive since \(n\) is odd and \(a\) is a unit. The two floors
+differ, a contradiction. Hence \(a=1\) is necessary for ordinarity.
+
+\smallskip
+\noindent\textit{The certifying criterion.}
+For \(D_0\), the polynomial \(P\) has degree \(n+1\), and its
+two finite exponents are less than \(n\). Its character-one line
+has generator \(Y/U\), which pulls back to \(Y/z^7\) on \(C\).
+For \(q=p^d\) and \(m=(q-1)/n\), the return coefficient
+\eqref{eq:return} is \(\lambda_p=[U^{q-1}]P(U)^m\in\F_p\).
+It is also the angular constant term in Lemma~\ref{lem:isolation},
+since \(\CT_z z^{-7nm}P(z^7)^m=[U^{q-1}]P(U)^m\).
+
+In characteristic \(p\), translation by one preserves the coefficient
+at degree \(q-1\) of a polynomial of degree at most \(2q-2\).
+For every term of degree \(q\le b\le2q-2\), the factorization
+\((V+1)^b=(V^q+1)(V+1)^{b-q}\) gives zero coefficient at \(q-1\).
+Since \(\deg P^m=q-1+m\le2q-2\), translate \(U=V+1\) to obtain
+\begin{equation}\label{eq:binomial}
+         [U^{q-1}]P(U)^m
+             =(1-c)^m\binom{6Mm}{m}\qquad\text{in }\F_p.
+\end{equation}
+In fact \(P(V+1)^m=V^{(M+1)m}(V+1-c)^{6Mm}\), and the required
+degree in the last factor is \(6Mm-m\).
+
+The \(d\) digits of \(m\) and \(6Mm\) come from long division of
+\(1/n\) and \(6/7\). For each successive \(i=p^j\bmod n\) the
+two normalized remainders are \(i/n\) and \(1-\rho(i)/7\).
+Under \eqref{eq:orbitcriterion}, taking floors after multiplication
+by \(p\) shows that each digit of \(6Mm\) is at least the
+corresponding digit of \(m\). The base-\(p\) factorization of
+\((1+X)^{6Mm}\) makes \eqref{eq:binomial} a unit. Conversely, if
+\eqref{eq:orbitcriterion} fails somewhere, then \(h_0(i)=0\) there,
+so the return on the character-one line passes through zero.
+The \(kd\)-fold return is multiplication of the basis class by
+\(\lambda_p^k\), since \(\lambda_p\in\F_p\), and
+Lemma~\ref{lem:isolation} gives that same residue at order
+\((p^{kd}-1)/n\). This proves the criterion for the residue.
+
+For a fixed phase over a number field, the coefficients are integral
+away from finitely many primes.
+For any characteristic-zero field, take the finitely generated
+\(\Q\)-algebra generated by the coefficients of the polynomial normal
+form of \(f\). A closed point gives a regular phase over a number field
+with the same rational leading form, since the passage to Laurent
+coefficients is rational linear.
+Each moment is a rational polynomial in the finitely many Laurent
+coefficients of the phase and so commutes with this specialization.
+A nonzero specialized moment certifies the original at each order
+after discarding the finitely many bad primes of the specialized phase.
+
+\smallskip
+\noindent\textit{Density.}
+The class \(M-1\) generates a subgroup of order six, since it is
+\(-1\bmod M\) and \(4\bmod7\). The least representatives of its
+powers are
+\[
+          1,\ M-1,\ 1+3M,\ 6M-1,\ 1+2M,\ 2M-1.
+\]
+All satisfy \(i+M\rho(i)<n\), so the five nonidentity classes
+certify at nonordinary primes. Testing \eqref{eq:orbitcriterion}
+on the \(24\) units modulo \(35\) gives \(1,4,8,9,11,16,22,29\).
+The prime number theorem in arithmetic progressions gives the
+claimed densities.
+
+\smallskip
+\noindent\textit{Sphere lifts.}
+The angular exponents in the leading form range from \(-7n\) to
+seven. At a negative angle \(-v\), lift the prescribed coefficient
+times \(t^n z^{-v}\) by multiplying that coefficient by
+\((-2)^v y^v t^n\). At angles zero and seven use \(t^n\) and
+\(x^7t^{n-14}\), respectively, with the prescribed coefficients.
+These choices have the indicated leading form because \(2xy=1-t^2\).
+The lift contains \(y^{7n}t^n\) with nonzero coefficient, so its
+normal-form degree and least sphere degree are \(8n\).
+For any phase with this leading form, a proper power would have
+exponent dividing the pole order \(n\) at \(t=\infty\) in the
+coordinates \(z,t\). The leading angular coefficient has order
+\(M+1\) at a root of \(z^7=1\), coprime to \(n\), excluding such a
+power.
+\end{proof}
+
+\begin{samepage}
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+\bibitem{bouw}
+I. I. Bouw, The \(p\)-rank of ramified covers of curves,
+\emph{Compos. Math.} \textbf{126} (2001), 295--322.
+\href{https://doi.org/10.1023/A:1017513122376}{DOI: 10.1023/A:1017513122376}.
+
+\bibitem{lmpt}
+W. Li, E. Mantovan, R. Pries and Y. Tang, Newton polygons of cyclic
+covers of the projective line branched at three points, in \emph{Research
+Directions in Number Theory}, Assoc. Women Math. Ser. \textbf{19},
+Springer, 2019, 115--132.
+\href{https://arxiv.org/abs/1805.04598}{arXiv:1805.04598}.
+
+\bibitem{sga}
+A. Grothendieck, Mod\`eles de N\'eron et monodromie,
+in \emph{Groupes de monodromie en g\'eom\'etrie alg\'ebrique I},
+S\'eminaire de G\'eom\'etrie Alg\'ebrique du Bois-Marie 1967--1969 (SGA 7 I),
+Lecture Notes in Math. \textbf{288}, Springer, 1972, Expos\'e IX.
+\href{https://grothendiecksga.com/read/sga7/en/9-12.html}{\S12}.
+
+\bibitem{serretate}
+J.-P. Serre and J. Tate, Good reduction of abelian varieties,
+\emph{Ann. of Math.} \textbf{88} (1968), 492--517.
+\href{https://doi.org/10.2307/1970722}{DOI: 10.2307/1970722}.
+\end{thebibliography}
+\end{samepage}
+\end{document}

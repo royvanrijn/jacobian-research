@@ -240,6 +240,7 @@ of width \(2\tau kL\) about the scaled grid. For the
 stated range \(kL\in[\kappa_-,\kappa_+]\), the grid
 has positive spacing at the small-budget limit. The
 condition does not follow from diffuseness alone.
+
 ## Centred remainder benchmark on diffuse spectra
 
 For a valuation degree \(e\), the centred remainder divided by
@@ -250,7 +251,11 @@ negative magnitudes are \(g_+(\{e/k\})\) and
        g_+(u)=u{\bf 1}_{[0,1/2)}(u),\qquad
        g_-(u)=(1-u){\bf 1}_{[1/2,1)}(u).
 \]
-Their means are both \(1/8\). For any periodic bounded-variation
+Their means are both \(1/8\).
+
+### Averaging a periodic function over the orders
+
+For any periodic bounded-variation
 function \(g\), the mean over integer \(K\le k<2K\) of
 \(g(e/k)\) differs from the circle mean by
 \(O_g(K/e+e/K^2+1/K)\).

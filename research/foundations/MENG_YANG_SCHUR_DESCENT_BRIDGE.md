@@ -7,8 +7,9 @@ This note imports Lemmas A.1--A.2 and Proposition A.3 of Meng and Yang,
 low-dimensional status of the Jacobian and Hessian conjectures*,
 [arXiv:2607.22198v2](https://arxiv.org/abs/2607.22198v2).  The paper was
 submitted on July 24, 2026 and revised on July 27, 2026.  The proof is
-reproduced below because the construction is a reusable determinant lemma,
-not a coefficient-specific cancellation.
+reproduced below. For an affine source coordinate of a Keller map, the
+doubled construction also gives an equivalence of the entire descended
+gradient map with a product of the original map.
 
 The headline identities were also replayed from the authors'
 [verification repository at commit
@@ -168,8 +169,7 @@ so
  =\nabla\psi_{\lambda,\mu}(w_-).
 \]
 
-This distinction is important: arbitrary \(\mu\) preserves the determinant,
-whereas (2.1) is what transfers a given equal-gradient pair.
+Equation (2.1) keeps the specified pair at its original points \(w_\pm\).
 
 ## 3. The doubled-Keller bridge
 
@@ -239,6 +239,99 @@ with
 
 and a gradient collision at \((x'_\pm,0)\).  This is Meng--Yang's
 odd-dimensional Schur-descent bridge.
+
+### Polynomial equivalence of the descended map
+
+The same construction with
+\(\psi_{\lambda,\mu}=B+\lambda A^2/2+\mu A\) works for every \(\mu\).
+Write \(t=\mu+\lambda A(x',y)\) and
+\(\eta=D_{x'}F(x',t)^{\mathsf T}y\), where \(D_{x'}F\) is taken
+with \(t\) fixed. The map
+\[
+ {\cal C}(x',y)=(x',t,\eta)
+\]
+is a polynomial isomorphism of affine spaces. Its inverse fixes \(x'\) and
+recovers \(y\) by
+\[
+ y=DF(x',t)^{-\mathsf T}
+   \begin{pmatrix}\eta\\(t-\mu)/\lambda\end{pmatrix}.
+ \tag{3.4}
+\]
+Indeed, the last column of \(DF(x',t)\) is \(F_1(x')\), so multiplication
+by \(DF(x',t)^{\mathsf T}\) gives precisely the \(\eta\) and \(A\)
+equations defining \({\cal C}\). The inverse is polynomial by the
+adjugate identity and the assumption \(\det DF\in K^\times\).
+Differentiating \(B+\lambda A^2/2+\mu A\) gives
+\[
+ \nabla\psi_{\lambda,\mu}(x',y)=(\eta,F(x',t)).
+ \tag{3.5}
+\]
+Thus \(\nabla\psi_{\lambda,\mu}\) is \(F\times
+\mathrm{id}_{\mathbb A^{n-1}}\) after the change \({\cal C}\) in the source
+and a block permutation in the target. This proof applies without a
+collision hypothesis.
+
+For each target \((\eta_0,b)\) over any commutative \(K\)-algebra, the
+two formulas give inverse morphisms between its fibre and \(F^{-1}(b)\).
+The isomorphism preserves the full fibre scheme and is natural in the
+base algebra. In particular, over a number field it preserves whether a
+given fibre has a point over the field or over any of its completions.
+An arithmetic example can be transferred whenever its map is in the stated
+affine-linear source form.
+
+For the generic invariants, the product adjoins the same independent
+\(\eta\)-variables to the source and target function fields. It preserves
+the degree and the permutation action of the Galois group of the normal
+closure, before and after extending the constant field to an algebraic
+closure. If \(S\) is the finite normalization of the target in the source
+function field for \(F\), the new normalizing algebra is \(S[\eta]\).
+It is finite over the new target ring, normal, and has the required
+fraction field. The source open immersion into the normalization is
+transported by the same product. Finiteness over an open set of the target
+persists under the product, and finiteness on a neighborhood of
+\((\eta_0,b)\) implies finiteness on a neighborhood of \(b\) by pullback
+along the constant section \(\eta=\eta_0\).
+
+Consequently each pair \((\lambda,\mu)\), with \(\lambda\ne0\), gives the
+same map-equivalence class for a fixed \(F\). If \(F\) is noninvertible,
+every such descended map is noninvertible. A collision of \(F\) over any
+target lifts by taking the same \(\eta_0\) at both source points and using
+(3.4). For the common-\(t_0\) collision above, \(\mu=t_0\) places both
+lifted points on \(y=0\).
+
+### A jointly affine block of source coordinates
+
+The proof also applies to \(1\le k\le n\) jointly affine source
+coordinates \(t=(t_1,\ldots,t_k)\), with
+\(F(x',t)=F_0(x')+F_1(x')t\) and \(F_1(x')\) an \(n\)-by-\(k\) matrix.
+Set \(A=F_1(x')^{\mathsf T}y\) and \(B=y^{\mathsf T}F_0(x')\).
+For any polynomial \(\chi\) on \(\mathbb A^k\) whose gradient is a
+polynomial automorphism, let \(\psi=B+\chi(A)\). Now put
+\(t=\nabla\chi(A)\) and \(\eta=D_{x'}F(x',t)^{\mathsf T}y\).
+Equations (3.4) and (3.5) still hold with the last block in (3.4)
+replaced by \((\nabla\chi)^{-1}(t)\). The resulting gradient is
+equivalent to \(F\times\mathrm{id}_{\mathbb A^{n-k}}\) in dimension
+\(2n-k\). In particular, one can take a nondegenerate quadratic \(\chi\)
+plus a linear term. Application with \(k>1\) requires joint affine
+dependence in the indicated source block.
+
+If \(n\ge2\) and \(k=n-1\), the original Keller map in this construction
+is an automorphism. Write the single remaining variable as \(s\), and let
+\(V(s)\) be the span over \(K(s)\) of the columns \(v_i(s)\) of \(F_1(s)\).
+It has dimension \(n-1\) since \(DF\) is invertible. The coefficient of
+\(t_i\) in the Jacobian determinant is
+\(\det(v_i',v_1,\ldots,v_{n-1})=0\), so every \(v_i'\) lies in \(V\).
+Hence the derivative of \(v_1\wedge\cdots\wedge v_{n-1}\) is proportional
+to the wedge itself. The ratios of its nonzero coordinates have derivative
+zero and are in \(K\). Thus \(V\) is the extension of a fixed hyperplane
+over \(K\). Choose target linear coordinates whose first row annihilates
+that hyperplane. The map in these coordinates is
+\((a(s),B_0(s)+B_1(s)t)\). Its Jacobian is \(a'(s)\det B_1(s)\), a unit of
+\(K[s]\). Both factors are therefore units, and \(s\) and then \(t\) can be
+recovered polynomially. In particular, a jointly affine two-coordinate
+block in a three-dimensional Keller map supplies only invertible gradients
+by this descent. The planar affine case is also covered over the reals by
+[Theorem 1 of *Global injectivity of planar non-singular maps polynomial in one variable*](https://arxiv.org/abs/2302.05394).
 
 ## 4. The five-variable counterexample
 

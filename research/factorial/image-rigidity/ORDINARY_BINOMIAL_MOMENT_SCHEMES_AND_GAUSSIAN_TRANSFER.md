@@ -2,7 +2,7 @@
 
 The [all-order ordinary binomial theorem](ORDINARY_BINOMIAL_RESIDUAL_REGION.md#ordinary-binomial-strong-factorial)
 applies to every integer support \(a\geq0,d\geq1\) and terminal \(M\geq2\).
-The paper gives the same statement as its [main theorem](../../../unpublished/strong-factorial-binomials/main.tex#L51).
+The paper gives the same statement as its [main theorem](../../../results/strong-factorial-binomials/main.tex#L51).
 The [fixed-pair coefficient and radial argument](SUPPORT_UNIFORM_COEFFICIENT_NILPOTENCE_AND_RADIAL_GAUSSIAN.md)
 started from a support-uniform eventual theorem. The stronger input now gives its
 conclusions at every terminal. All rings below are commutative unital

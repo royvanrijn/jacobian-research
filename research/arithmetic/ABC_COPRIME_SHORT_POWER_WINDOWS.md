@@ -364,76 +364,86 @@ chosen \(k\) and the stated margins.
 
 ## An adaptive common-power sector with a third-letter lock
 
-**CPW5.** Fix \(0<\delta<1/3\), \(w>0\), and an integer
-lower bound \(K_0(L)\) with \(L^{1/3}K_0(L)\to\infty\)
-as \(L\downarrow0\). In an original primitive height shell
-\(X/2<C\le X\), suppose two letters have exact representations
-\(Ax^k,By^k\) with a shared order \(k\ge K_0(L)\). Allow
-\(k\) and the orientation to depend on the row. Let the
-joint coefficient dictionary have exponent \(f\) in
-base \(n=X^L\). Require a full divisor \(D\) of the third
-letter with \(D\ge X^w\), \(\operatorname{rad}(D)\le n^\mu\)
-and primes coprime to \(k\). Assume \(f+\mu\le1/3-\delta\).
-Then for all sufficiently small fixed \(L\) the count in
-this sector is
-\[
- O_{L,\delta,w,\varepsilon}
-                       \bigl(X^{(1/3-\delta/2)L+\varepsilon}\bigr),
-\]
-with the implied constant also allowed to depend on
-the selected function \(K_0\) and the dictionary bound.
-The original three radical caps and any repair
-eligibility condition can be retained.
+**CPW5.** Put \(n=X^L\). Fix \(w>0\), and consider
+original primitive rows of height at most \(X\) with
+two letters \(U=Ax^k,\ V=By^k\) for positive integral
+coefficients and roots. The order and orientation
+may vary by row. Require an actual divisor
+\(D\ge X^w\) of the third letter. Suppose the
+coefficient pairs and divisor choices have
+catalogue sizes \(n^{f+o_X(1)}\) and
+\(n^{\mu+o_X(1)}\), respectively. It is enough
+to know \(\operatorname{rad}(D)\le n^\mu\),
+since the powers on a fixed support have a
+uniform height-subpower count. A direct joint
+catalogue bound can replace the sum \(f+\mu\).
 
-Indeed two of the letters in the original shell have
-maximum at least \(X/4\); this holds for any
-chosen pair, since at most the smaller summand can
-lie below that height. The good-prime condition
-of CPW3 is automatic on \(D\) apart from the stated
-restriction on \(k\), by primitivity. For
-\(K_0(L)\le k\le \lceil 8/(\delta L)\rceil\), use CPW4
-with \(\eta=1/2\). At sufficiently small \(L\),
-\(wK_0(L)>2+\eta\) and
+For every fixed \(\eta>0\) and all sufficiently
+small fixed \(L\), the count is
 \[
-              \frac{2}{3(k+2)k^2 L}\le \delta/4.
+                    O\bigl(n^{f+\mu+\eta}X^\varepsilon\bigr)
+                                  \qquad(\varepsilon>0)
 \]
-The set of such \(k\)'s is finite at each fixed budget,
-before the height limit. The coefficient charge plus
-the maximum of this small-root exponent and \(\mu\)
-fits inside \(1/3-\delta/2\).
-If \(k>\lceil 8/(\delta L)\rceil\), and at least
-one of \(x,y\) exceeds one, then \(k\le\log_2 X\).
-Enumerating both roots and the order costs at most
-\(X^{\delta L/4+o_X(1)}\) after fixing the coefficients.
-When both roots are one, the coefficients already
-determine the entire row on that orientation.
-This proves the bound with no uniform dependence
-of the Subspace Theorem constants on varying \(k\)
-at the height limit.
+if \(k\ge K_0(L)\to\infty\). The same conclusion
+holds for fixed lower orders with \(kw>2\) by
+a fixed margin. In particular a uniform gap
+\(f+\mu\le1/3-\delta\) gives a strict sector
+saving by taking \(\eta<\delta\). All original
+radical caps and primitive repair eligibility
+may be retained.
 
-For instance, require the joint radical of the
-two off-grid coefficients to have exponent less
-than \(1/3\) by a fixed margin. Ordinary radical
-enumeration gives the required coefficient
-dictionary. If the remaining third letter has
-positive nonatomic mass along a putative balanced
-saturating sequence, a compact positive-order
-block gives the affordable full divisor at an
-arbitrarily small cost \(\mu>0\) and some fixed
-\(w>0\). At each fixed budget finitely many relevant
-orders \(k\) in the bounded-order branch have
-only a fixed set of prime divisors. Remove them
-from the selected block: their total absolute
-logarithmic weight within a fixed scaled band
-is height-subpower. The lower numerical margin
-of the block persists. The large-order branch
-already has the independent enumeration bound.
-Consequently this sector is excluded even when
-the weak measures of the two powered letters
-are broad and the remaining letter has arbitrary
-valuations outside the selected divisor.
-[Cheap full divisors from diffuse valuation mass](ABC_MODULAR_DIGIT_SUPPORT_AND_ATOMIC_COMPLETION.md#completing-all-balanced-profiles-after-small-modulus-support-recovery)
-· [Earlier two-order bounds with unequal orders](ABC_TWO_VALUATION_GRIDS.md#count-and-range)
+Fix the two coefficients, the divisor and
+the orientation. Primitivity makes \(A,B,x,y\)
+units modulo \(D\). The signed equation
+determines \((x/y)^k\bmod D\). At each
+prime power of \(D\), a nonempty unit fibre
+of the \(k\)-th power map has size at most
+\(2k\), including primes dividing \(k\).
+This follows from cyclicity at odd prime
+powers and the two cyclic factors at
+powers of two. For fixed \(k\) there are
+at most \((2k)^{\omega(D)}=X^{o_X(1)}\)
+unit slope classes. Two roots in a single
+class satisfy \(x_1y_2\equiv x_2y_1\bmod D\).
+Since \(x_i,y_i\le X^{1/k}\), the two cross
+products are each at most \(X^{2/k}<D\).
+Their equality recovers the same positive
+reduced fraction and hence the same
+coprime pair and original row.
+
+For \(k\le J/L\), apply this argument to
+the finite list of orders at each fixed
+budget. The required comparison holds
+for sufficiently small \(L\) under
+\(K_0(L)\to\infty\), or directly from the
+stated fixed-order inequality. For
+\(k>J/L\), enumerate the two roots
+up to \(n^{1/J}\) after fixing the
+coefficients. If either root exceeds
+one, only \(k\le\log_2 X\) can occur.
+If both are one, the coefficient pair
+determines the row. This branch needs
+no divisor enumeration. Choose \(2/J<\eta\)
+and absorb height-subpower charges in
+\(X^\varepsilon\). It works at every growth rate of \(K_0\)
+and also when the divisor has primes dividing \(k\). CPW3 retains its
+separate unbounded-height conclusion.
+
+If the remaining third letter has positive
+nonatomic mass along a putative balanced
+saturating sequence, a compact positive
+valuation block supplies arbitrarily cheap
+full divisors at some fixed positive
+numerical height. Use a fixed band and
+select small prime powers before the
+budget limit. Thus it suffices to control
+the actual coefficient dictionary across
+the permitted orders. Ordinary support
+enumeration does this if the combined
+coefficient radical already costs less
+than \(1/3\) by a fixed margin.
+[The separating-pool alternative (APC2)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#a-separating-pool-for-the-joint-coefficient)
+· [Cheap full divisors from diffuse valuation mass](ABC_MODULAR_DIGIT_SUPPORT_AND_ATOMIC_COMPLETION.md#completing-all-balanced-profiles-after-small-modulus-support-recovery)
 
 ## Paying support on all three letters
 

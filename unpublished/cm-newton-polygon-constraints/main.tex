@@ -3,7 +3,7 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[margin=1.12in]{geometry}
 \usepackage[colorlinks=true,allcolors=blue,
-  pdftitle={Frobenius norm bounds for Newton polygons with CM field action},
+  pdftitle={Relative Frobenius norms and density-one ordinary reduction},
   pdfauthor={Roy van Rijn}]{hyperref}
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}[theorem]{Corollary}
@@ -15,36 +15,32 @@
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\fp}{f_p}
-\title{Frobenius norm bounds for Newton polygons\ProtectBreak with CM field action}
-\newcommand{\ProtectBreak}{\texorpdfstring{\\}{ }}
+\title{Relative Frobenius norms and density-one ordinary reduction}
 \author{Roy van Rijn}
 \date{}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Let an abelian variety over a number field have a Rosati-compatible
-action of a CM field of degree \(2e\), and let \(h\) be the relative
-rank of its first cohomology. If at least one conjugate Hodge pair is
-mixed, we prove simultaneous strict bounds on the rational-prime
-valuations of the norms of all intermediate relative Frobenius
-coefficients. The bounds hold at all good absolute degree-one primes
-outside a finite set after one finite base extension, and they constrain
-every corresponding Newton polygon. In relative rank two with \(b>0\)
-balanced pairs they give \(p\)-rank at least
-\(\dim A-2\lfloor(b-1)/2\rfloor\). In relative rank four they give
-density-one ordinary reduction after finite extension if exactly one
-conjugate pair is mixed and its type is \((2,2)\). This holds in
-arbitrarily large dimensions and with extra geometric endomorphisms.
-A least polygon with prescribed zero and unit multiplicities gives
-a closed formula for the sharp numerical minimum \(p\)-rank in every
-signature. We classify precisely when it forces ordinarity and
-realize the first surviving rank-two polygon over prime fields with
-any prescribed auxiliary torsion level. In relative rank two with
-three balanced pairs, linked projective monodromy gives density-one
-ordinarity after finite extension. We also give infinite cyclic-cover
-moment exclusions, including cases certified by a selected Frobenius
-line on a nonordinary Jacobian factor.
+For an abelian variety of adjoint Mumford--Tate type \(A_1\) over a
+number field, we prove that after finite extension its Newton slopes
+belong to \(\{0,1/2,1\}\) and its \(p\)-rank exceeds half its
+dimension at a set of primes of natural density one. We express the
+half-slope multiplicity in terms of the adjoint factors on which
+Frobenius has flat Newton slopes. A weighted bound on these factors
+gives density-one ordinary reduction when the Hodge cocharacter is
+nontrivial on at most two geometric factors above each rational
+simple adjoint factor. In a tensor case with at most two active
+embeddings, we identify the least extension giving density one and
+compute the ordinary density over the original field. For an abelian fourfold of
+signature \((2,2)\) whose full geometric rational endomorphism algebra
+is imaginary quadratic, ordinary reduction has natural density one
+over the original field. On components that exchange the coefficient
+embeddings, the parity comes from a Pfaffian, with a sharp finite-field
+bound in higher even rank. For a Rosati-compatible
+CM field action with a mixed Hodge pair we also bound all intermediate
+relative Frobenius coefficient norms simultaneously, giving a closed
+formula for the sharp numerical minimum \(p\)-rank of split polygons.
 \end{abstract}
 
 \section{Introduction}
@@ -52,11 +48,72 @@ line on a nonordinary Jacobian factor.
 The ordinary-reduction conjecture attributed to Serre predicts a
 positive-density set of ordinary primes for an abelian variety over a
 number field \cite{fite}. A stronger form asks for density one after
-finite extension \cite[\S7]{pink}\cite[\S1.1]{cantoral}. An action of
-a CM field can make the ordinary condition accessible because at split
-primes it separates Frobenius into smaller components. The geometric
-endomorphism algebra can contain additional endomorphisms throughout
-this paper.
+finite extension \cite[\S7]{pink}\cite[\S1.1]{cantoral}. Our first
+theorem proves this for polarized abelian varieties when every
+geometric simple adjoint Mumford--Tate factor has type \(A_1\) and the
+Hodge cocharacter is nontrivial on at most two geometric simple
+factors above each rational simple adjoint factor
+(Theorem~\ref{thm:adjoint}). There is no bound on the dimension or
+restriction on the geometric endomorphism algebra. In the twelvefold
+of Proposition~\ref{prop:two-active-twelvefold}, both active embeddings
+occur above one rational factor and the corresponding mixed coefficient
+blocks are four-dimensional tensors. The ordinary conclusion uses the
+adjoint group because the numerical CM inequalities still allow a
+nonordinary polygon for that signature.
+
+Even when a rational factor has more than two active embeddings, its
+contribution to the Newton polygon can be determined from which
+adjoint slopes are flat. An irreducible summand of \(H^1\) can see
+at most one active embedding, because its Hodge weights are zero and
+one. A flat projection replaces these two weights by their midpoint.
+This gives an exact half-slope multiplicity and, after finite base
+extension, \(p\)-rank strictly greater than half the dimension at
+almost all primes (Proposition~\ref{prop:adjoint-prank}).
+
+The adjoint trace detects an ordinary Hodge-active component through
+a simple pole at the residue prime. A component with flat Newton
+slopes loses this pole, and determinant parity gives a zero when the
+residue degree is odd. With residue-degree weighting, each flat prime
+of the adjoint label field therefore increases the lower bound for
+the norm valuation by at least two. Too many such increases make the
+norm a bounded integer. Each of its
+finitely many possible values then cuts out a density-zero set of
+Frobenius elements. This gives a bound on how many active components
+can be flat, even when the adjoint factors are visible on \(H^1\)
+only through a tensor representation.
+
+For a rationally simple adjoint group with at most two active
+embeddings and irreducible CM coefficient blocks, the original-field
+density is the reciprocal of the degree of the field defining the
+adjoint centroid (Theorem~\ref{thm:original-a1}). Almost all ordinary
+primes split completely in this field. An unpowered relative trace
+recovers the product of the adjoint trace factors on its splitting
+classes.
+
+An original-field result with a different mechanism concerns an
+abelian fourfold. Let \(A\) be
+an abelian fourfold of signature \((2,2)\) whose full geometric
+rational endomorphism algebra is imaginary quadratic. Then the ordinary
+primes of its original field have natural density one
+(Theorem~\ref{thm:fourfold-density}). Fité's theorem gives positive
+density for the broader class with an embedded imaginary quadratic
+field \cite[Theorem~4 and \S8]{fite}. At primes where Frobenius exchanges
+the two embeddings, polarization expresses a normalized determinant
+using the square of a Pfaffian. Its parity turns a local failure of
+ordinarity into a bounded integer Frobenius value. The explicit
+genus-four Jacobian over \(\Q\) in Section~\ref{sec:fourfold} illustrates
+the conclusion at primes where the endomorphisms are conjugated. In
+higher even rank the same parity gives a sharp finite-field bound
+(Proposition~\ref{prop:pfaffian-range}).
+
+An action of a CM field gives another way to separate Frobenius into
+smaller components. At split primes, norms of all the relative
+coefficients impose simultaneous inequalities on the slopes. We
+determine the exact minimum \(p\)-rank allowed by these inequalities
+for each signature. Section~\ref{sec:residual} gives prime-field
+examples realizing the first surviving rank-two pattern.
+Section~\ref{sec:linked} gives an additional condition forcing
+ordinary reduction for a fixed variety in that signature.
 
 There are two bounds on a relative Frobenius coefficient. Its complex
 absolute values satisfy a Weil bound, while the slopes of each local
@@ -68,6 +125,11 @@ A mixed split component cannot have a single repeated eigenvalue.
 The trace would put that eigenvalue in \(\Q_p\), where its strictly
 fractional slope is impossible. The same finite extension works for
 each coefficient.
+
+\input{adjoint}
+\input{original-a1}
+
+\section{CM field actions and relative coefficients}\label{sec:coefficients}
 
 Fix an abelian variety \(A/K\) and an embedding
 \(E\hookrightarrow\operatorname{End}^0(A_{\overline K})\) of a CM
@@ -118,7 +180,7 @@ Ordinary primes have density one after finite extension. This holds
 for every \(e\) and thus for dimension \(4e\).
 \end{corollary}
 
-\section{Relative coefficients and the norm argument}\label{sec:coefficients}
+\subsection{The norm argument}
 
 We first specify the local input and the comparison defining the
 coefficients. Pass to a finite extension with the action and polarization
@@ -203,6 +265,8 @@ theorem, since the higher-degree primes of norm at most \(x\) lie
 over rational primes at most \(\sqrt x\). This proves
 Theorem~\ref{thm:bounds}.
 
+\input{fourfold}
+\input{pfaffian-range}
 \input{numerical}
 
 \section{The first case with three balanced pairs}\label{sec:residual}
@@ -305,6 +369,8 @@ Corollary~\ref{cor:rankfour} applies to every such cover over a
 number field, including fibers with additional endomorphisms.
 \end{example}
 
+\appendix
+\input{two-active}
 \input{moments}
 
 \paragraph{AI assistance and review.}
@@ -323,11 +389,23 @@ I. I. Bouw, The \(p\)-rank of ramified covers of curves,
 \emph{Compos. Math.} \textbf{126} (2001), 295--322.
 \href{https://doi.org/10.1023/A:1017513122376}{Sections 2 and 4--5}.
 
+\bibitem{blasius}
+D. Blasius, A \(p\)-adic property of Hodge classes on abelian varieties,
+in \emph{Motives}, Proc. Sympos. Pure Math. \textbf{55}, Part~2,
+Amer. Math. Soc., 1994, 293--308.
+\href{https://archive.mpim-bonn.mpg.de/id/eprint/3859/1/preprint_1992_59.pdf}{Theorem~(0.3) and \S5}.
+
 \bibitem{cantoral}
 V. Cantoral Farf\'an, W. Li, E. Mantovan, R. Pries and Y. Tang,
 \emph{Positive density of primes of ordinary reduction for abelian
 varieties of simple signature},
 arXiv:\href{https://arxiv.org/abs/2508.11174v1}{2508.11174v1}.
+
+\bibitem{delignehodge}
+P. Deligne, Hodge cycles on abelian varieties, in \emph{Hodge Cycles,
+Motives, and Shimura Varieties}, Lecture Notes in Math. \textbf{900},
+Springer, 1982, 9--100.
+\href{https://www.jmilne.org/math/Documents/Deligne82.pdf}{Chapter~I}.
 
 \bibitem{fite}
 F. Fit\'e, Ordinary primes for some varieties with extra endomorphisms,
@@ -339,10 +417,41 @@ G. Faltings, Endlichkeitss\"atze f\"ur abelsche Variet\"aten
 \"uber Zahlk\"orpern, \emph{Invent. Math.} \textbf{73} (1983), 349--366.
 \href{https://doi.org/10.1007/BF01388432}{S\"atze 3--4}.
 
+\bibitem{hui4}
+{\raggedright C. Y. Hui, \emph{Monodromy of four dimensional irreducible
+compatible systems of \(\Q\)},
+\href{https://arxiv.org/abs/2208.04004v2}{arXiv:2208.04004v2}.\par}
+
+\bibitem{kmps}
+M. Kisin, K. Madapusi Pera and S. W. Shin,
+Honda--Tate theory for Shimura varieties,
+\emph{Duke Math. J.} \textbf{171} (2022), 1559--1614.
+\href{https://people.math.harvard.edu/~kisin/dvifiles/newton2.pdf}{Author copy}.
+
+\bibitem{kzsemistable}
+M. Kisin and R. Zhou, \emph{Strongly compatible systems associated
+to semistable abelian varieties},
+arXiv:\href{https://arxiv.org/abs/2505.02165v1}{2505.02165v1}.
+
 \bibitem{moonen}
 B. Moonen, Special subvarieties arising from families of cyclic covers
 of the projective line, \emph{Doc. Math.} \textbf{15} (2010), 793--819,
 arXiv:\href{https://arxiv.org/abs/1006.3400}{1006.3400}.
+
+\bibitem{moonencanonical}
+B. Moonen, Serre--Tate theory for moduli spaces of PEL type,
+\emph{Ann. Sci. \'Ec. Norm. Sup\'er.} \textbf{37} (2004), 223--269.
+\href{https://www.numdam.org/item/ASENS_2004_4_37_2_223_0/}{Journal copy}.
+
+\bibitem{moonenclassification}
+B. Moonen, A classification of Shimura curves in \(\mathcal A_g\),
+\emph{Canad. J. Math.} \textbf{78} (2026), 886--912.
+\href{https://doi.org/10.4153/S0008414X24001159}{DOI}.
+
+\bibitem{nootrealization}
+R. Noot, Abelian varieties---Galois representation and properties of
+ordinary reduction, \emph{Compos. Math.} \textbf{97} (1995), 161--171.
+\href{https://www.numdam.org/item/CM_1995__97_1-2_161_0/}{Journal copy}.
 
 \bibitem{oort}
 F. Oort, Newton polygons and \(p\)-divisible groups: a conjecture by Grothendieck,
@@ -366,10 +475,29 @@ W. F. Sawin, Ordinary primes for abelian surfaces,
 \emph{C. R. Math. Acad. Sci. Paris} \textbf{354} (2016), 566--568,
 arXiv:\href{https://arxiv.org/abs/1506.04784v2}{1506.04784v2}.
 
+\bibitem{shengzuo}
+M. Sheng and K. Zuo, \emph{On the Newton polygons of abelian varieties
+of Mumford's type}, arXiv:\href{https://arxiv.org/abs/1106.3505}{1106.3505}.
+
 \bibitem{tate}
 J. Tate, Classes d'isog\'enie des vari\'et\'es ab\'eliennes sur un
 corps fini, S\'eminaire Bourbaki, Exp.~352 (1968--69), 95--110.
 \href{https://numdam.org/item/SB_1968-1969__11__95_0/}{Theorem~1}.
+
+\bibitem{tatefinite}
+J. Tate, Endomorphisms of abelian varieties over finite fields,
+\emph{Invent. Math.} \textbf{2} (1966), 134--144.
+\href{https://doi.org/10.1007/BF01404549}{DOI}.
+
+\bibitem{vasiu}
+A. Vasiu, Some cases of the Mumford--Tate conjecture and Shimura
+varieties, \emph{Indiana Univ. Math. J.} \textbf{57} (2008), 1--75.
+arXiv:\href{https://arxiv.org/abs/math/0212066v7}{math/0212066v7}.
+
+\bibitem{voight}
+J. Voight, \emph{Quaternion algebras}, Graduate Texts in Mathematics
+\textbf{288}, Springer, 2021.
+\href{https://jvoight.github.io/quat-book.pdf}{Author copy}.
 
 \bibitem{wangzhang}
 T. Wang and P. Zhang, Ordinary primes for GL\(_2\)-type abelian

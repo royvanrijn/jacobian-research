@@ -1,0 +1,29 @@
+{
+  "record": "https://hexagonmath.org/2611.01080v1",
+  "retrieved": "2026-11-26",
+  "source_download": "https://hexagonmath.org/src/2611.01080v1",
+  "metadata_download": "https://hexagonmath.org/api/v1/works/2611.01080v1",
+  "source_bundle_note": "Hexagon generates the public source ZIP separately. Its five TeX members match the recorded compilation inputs and the archived original upload ZIP byte for byte. The original upload ZIP is sealed separately against the venue’s recorded archive SHA-256.",
+  "files": [
+    {
+      "file": "paper.pdf",
+      "md5": "19b17cc6f77493f9018912e38b62dc0f",
+      "sha256": "48a75c45402da7d6e0b4f65d11d282c5e467a6af7754c0fa13d6b6534382a6ee"
+    },
+    {
+      "file": "source.zip",
+      "md5": "42b7a0ab42f4a23320874100077b20fe",
+      "sha256": "c8f0172d9f0f44d0a06410d0d26ca99d2c8357f00475a03b0173d728405b3720"
+    },
+    {
+      "file": "primitive-balanced-image-spectrum-hexagon-source.zip",
+      "md5": "a5f49c4010f785b0bd5c21837940f2de",
+      "sha256": "df6c15e294fe6658b9bca5756780eaba9c53c574458318bf127a380ffe6ccaa8"
+    },
+    {
+      "file": "hexagon-metadata.json",
+      "md5": "e62d29b1e99ccbf47a8281d89f27c07b",
+      "sha256": "1b78c5b5fe0d729f6ae4bad6dec6537f9126e31307c322bac607abd9fc9acf63"
+    }
+  ]
+}

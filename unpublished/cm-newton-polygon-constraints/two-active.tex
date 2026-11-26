@@ -1,0 +1,92 @@
+\section{A twelvefold with two active adjoint embeddings}\label{sec:two-active}
+
+\begin{proposition}\label{prop:two-active-twelvefold}
+There exists a polarized abelian twelvefold over a number field with
+full geometric rational endomorphism algebra a sextic CM field and
+relative signatures \((2,2),(2,2),(0,4)\), up to orientation.
+Its adjoint Mumford--Tate group is rationally simple with six
+geometric factors of type \(A_1\), exactly two of them Hodge-active.
+It has density-one ordinary reduction after finite extension.
+\end{proposition}
+
+\begin{proof}
+Let \(R=\Q(\zeta_{13})^+\) and let \(F\) be its cubic subfield.
+Number the six real embeddings of \(R\) cyclically from zero to five,
+so the fibers over the embeddings of \(F\) are \(\{j,j+3\}\) for
+\(j=0,1,2\). Take the quaternion algebra \(D/R\) split at the real
+embeddings numbered zero and one and at every finite place, and
+ramified at the other four real embeddings. Its existence follows
+from quaternion reciprocity \cite[Theorem~14.6.1]{voight}.
+Put \(E=F(\sqrt{-1})\). The corestriction
+\(\operatorname{Cor}_{R/F}D\) is a central simple algebra of degree
+four. After extension to \(E\) it is split locally everywhere and
+hence split globally \cite[\S14.6]{voight}. On a simple module
+\(W=E^4\), the group \(\operatorname{Res}_{R/\Q}\mathrm{SL}_1(D)\)
+acts by corestriction. Over an algebraic closure the block for an
+embedding of \(E\) above \(j\) is the tensor of the two standard
+representations indexed by \(\{j,j+3\}\). This is the corestriction
+representation of \cite[Example~3.1]{moonenclassification}, with
+the degree-two fibers taken over \(F\). Adjoin the commuting scalar
+torus of elements of \(\operatorname{Res}_{E/\Q}\mathbb G_m\) whose
+product with their CM conjugate lies in \(\mathbb G_m\). Let \(G_0\)
+be the image of the resulting product on \(W\).
+
+The real Hodge action of \(z\in\mathbb C^\times\) at the split
+quaternion embeddings is rotation by \(z/|z|\) on the real standard
+module. It is trivial on the compact quaternion factors. Multiply
+this action by the scalar \(|z|\) at the two embedding pairs
+containing a split factor and by the complex scalar \(z\) at the
+remaining pair. The scalar factors have the common norm \(|z|^2\).
+On each mixed real block the resulting action is multiplication by
+the real standard matrix of \(z\) in the split tensor factor. On the
+definite block it is complex scalar multiplication. These formulas
+define a real algebraic Hodge homomorphism of weight one with the
+required signatures.
+
+On a mixed block take the real part of the skew-Hermitian form given
+by the split alternating form tensored with an invariant positive
+Hermitian form on the compact standard module. On the definite block
+use the imaginary part of an invariant positive Hermitian form.
+Choose the signs so the Hodge complex structures are positive.
+The derived group preserves these forms, the scalar torus acts with
+its common norm as similitude, and the adjoint of the \(E\)-action is
+CM conjugation. These conditions on an alternating form are rational
+linear conditions. Rational approximation within their real solution
+space supplies a rational form satisfying the same open positivity
+condition. A lattice scaled to make the form integral then gives a
+polarized complex abelian variety.
+
+Vary the Hodge homomorphism in its connected real conjugacy class.
+A rational adjoint subgroup containing the entire class contains
+both split simple factors. Indeed, conjugating in a split factor and
+taking ratios of the conjugates generates that factor, by simplicity
+and the nontrivial projection of the Hodge action. Rationality and
+Galois transitivity then give all six factors. There are countably
+many proper rational adjoint subgroups, and the homomorphisms in the
+class lying in any one of them form a proper real analytic locus.
+Thus a very general member has full adjoint group \(G_0^{\mathrm{ad}}\).
+The commutant of its Mumford--Tate representation is exactly \(E\).
+Indeed the three distinct tensor supports distinguish blocks over
+different embeddings of \(F\). Between the two orientations of the
+definite pair the scalar Hodge actions differ, so there is no
+intertwiner. Rationality and Galois transitivity on the pairs give
+the same conclusion for the two mixed pairs. The commutant therefore
+acts by independent scalars on the six blocks over an algebraic
+closure, and its rational form is the given copy of \(E\).
+
+Noot's specialization theorem gives a number-field point in the same
+connected Shimura component with this Mumford--Tate representation
+\cite[Theorem~1.7 and its proof]{nootrealization}. In particular the
+Hodge signatures and the commutant are as computed above. Since
+\(\dim_{\Q}W=24\), its abelian dimension is twelve. Theorem~\ref{thm:adjoint}
+gives the ordinary density assertion.
+\end{proof}
+
+In the split CM inequalities of Theorem~\ref{thm:bounds}, these
+signatures still permit one \((2,2)\) pair to have slopes
+\((0,1/2,1/2,1)\), with every other pair ordinary. For the two mixed
+pairs together the rounded sums at \(j=1,2,3\) are \(0,2,4\), all
+strictly below \(2j\). The definite pair contributes \(j\) to each
+sum. The adjoint criterion gives ordinarity in this example by
+using that the mixed coefficient blocks are tensor representations
+supported on different embeddings of one rational adjoint factor.

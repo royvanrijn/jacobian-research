@@ -4,7 +4,7 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "status": "submission-pending",
+  "status": "ready-for-review",
   "summary": "Classifies the Mathieu–Zhao property for split reductive actions in characteristic zero, including spaces without rational points. Gives further real-closed, compact Hausdorff and ground-field obstruction theorems.",
   "source": "main.tex",
   "pdf": "mathieu-ground-fields.pdf",
@@ -13,9 +13,13 @@
   "published": false,
   "submission": {
     "venue": "Hexagon",
-    "reserved_identifier": "hexagon:2611.01051v1",
-    "status": "under-review",
-    "updated_on": "2026-11-25"
+    "identifier": "hexagon:2611.01051v1",
+    "status": "published",
+    "url": "https://hexagonmath.org/2611.01051v1",
+    "publication_date": "2026-11-25",
+    "public_record_verified": true,
+    "verified_on": "2026-11-26",
+    "original_upload_sha256": "037d9ae22129b618b45310e6aa30c3368a4337ec351541cebd4b0aad3e0cacb5"
   },
   "catalogued_on": "2026-11-25",
   "abstract": "Let \\(K\\) be a field of characteristic zero and \\(X\\) an affine geometrically\nhomogeneous space of a group \\(G\\) with split reductive identity component.\nThe normalized Reynolds kernel on \\(K[X]\\) is Mathieu--Zhao if and only if\n\\([G^\\circ,G^\\circ]\\) acts trivially. A single active split \\(\\SL_2\\) already\ngives a fixed marked counterexample for a connected reductive acting group.\nBoth results allow \\(X(K)=\\varnothing\\). The proof transfers witnesses along\nprincipal orbits and specializes marked-moment recurrences over the ground\nfield. We also classify connected reductive groups and compact adjoint\nsemisimple torsors over real closed fields, and representative functions\non compact Hausdorff homogeneous spaces. A long-root subgroup gives a\nfurther obstruction when a split central torus acts alongside an active\ncompact factor of rank at least two.",
@@ -41,5 +45,8 @@
   "next_steps": [
     "Obtain external mathematical review of the principal-orbit transfer and arithmetic specialization.",
     "Treat the two compact exceptional products and the anisotropic nonsplit cases as separate research obligations."
-  ]
+  ],
+  "hexagon": "https://hexagonmath.org/2611.01051v1",
+  "published_edition": "published/",
+  "publication_record_checked": "2026-11-26"
 }

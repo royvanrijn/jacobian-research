@@ -1,17 +1,17 @@
 {
-  "title": "Frobenius norm bounds for Newton polygons with CM field action",
+  "title": "Relative Frobenius norms and density-one ordinary reduction",
   "author": {
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Simultaneous relative Frobenius norm bounds, a closed formula for sharp numerical p-rank, global ordinarity for projectively linked three-pair actions, and cyclic-cover applications.",
+  "summary": "The full Newton polygon and a density-one p-rank lower bound in adjoint type A1, exact original-field ordinary densities in a tensor case and for balanced imaginary quadratic fourfolds, and sharp limits on local relative-norm bounds.",
   "status": "ready-for-review",
   "published": false,
   "catalogued_on": "2026-11-25",
   "source": "main.tex",
   "pdf": "cm-newton-polygon-constraints.pdf",
-  "build": "SOURCE_DATE_EPOCH=1795564800 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-polygon-constraints main.tex",
-  "abstract": "Let an abelian variety over a number field have a Rosati-compatible action of a CM field of degree \\(2e\\), and let \\(h\\) be the relative rank of its first cohomology. If at least one conjugate Hodge pair is mixed, we prove simultaneous strict bounds on the rational-prime valuations of the norms of all intermediate relative Frobenius coefficients. The bounds hold at all good absolute degree-one primes outside a finite set after one finite base extension, and they constrain every corresponding Newton polygon. In relative rank two with \\(b>0\\) balanced pairs they give \\(p\\)-rank at least \\(\\dim A-2\\lfloor(b-1)/2\\rfloor\\). In relative rank four they give density-one ordinary reduction after finite extension if exactly one conjugate pair is mixed and its type is \\((2,2)\\). This holds in arbitrarily large dimensions and with extra geometric endomorphisms. A least polygon with prescribed zero and unit multiplicities gives a closed formula for the sharp numerical minimum \\(p\\)-rank in every signature. We classify precisely when it forces ordinarity and realize the first surviving rank-two polygon over prime fields with any prescribed auxiliary torsion level. In relative rank two with three balanced pairs, linked projective monodromy gives density-one ordinarity after finite extension. We also give infinite cyclic-cover moment exclusions, including cases certified by a selected Frobenius line on a nonordinary Jacobian factor.",
+  "build": "SOURCE_DATE_EPOCH=1795651200 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-polygon-constraints main.tex",
+  "abstract": "For an abelian variety of adjoint Mumford--Tate type \\(A_1\\) over a number field, we prove that after finite extension its Newton slopes belong to \\(\\{0,1/2,1\\}\\) and its \\(p\\)-rank exceeds half its dimension at a set of primes of natural density one. We express the half-slope multiplicity in terms of the adjoint factors on which Frobenius has flat Newton slopes. A weighted bound on these factors gives density-one ordinary reduction when the Hodge cocharacter is nontrivial on at most two geometric factors above each rational simple adjoint factor. In a tensor case with at most two active embeddings, we identify the least extension giving density one and compute the ordinary density over the original field. For an abelian fourfold of signature \\((2,2)\\) whose full geometric rational endomorphism algebra is imaginary quadratic, ordinary reduction has natural density one over the original field. On components that exchange the coefficient embeddings, the parity comes from a Pfaffian, with a sharp finite-field bound in higher even rank. For a Rosati-compatible CM field action with a mixed Hodge pair we also bound all intermediate relative Frobenius coefficient norms simultaneously, giving a closed formula for the sharp numerical minimum \\(p\\)-rank of split polygons.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "source_bundle": "cm-newton-polygon-constraints-source.zip",
@@ -20,16 +20,21 @@
     "numerical.tex": "numerical.tex",
     "residual.tex": "residual.tex",
     "global.tex": "global.tex",
-    "moments.tex": "moments.tex"
+    "moments.tex": "moments.tex",
+    "adjoint.tex": "adjoint.tex",
+    "fourfold.tex": "fourfold.tex",
+    "two-active.tex": "two-active.tex",
+    "original-a1.tex": "original-a1.tex",
+    "pfaffian-range.tex": "pfaffian-range.tex"
   },
   "verification_record": "verification.json",
   "checksums": "SHA256SUMS.txt",
   "next_steps": [
-    "External specialist review of the global criterion, residue types, and priority comparison.",
-    "Investigate ordinary reduction for the remaining independent projective monodromy cases."
+    "External specialist review of the original-field tensor descent, the adjoint p-rank formula, and the Pfaffian argument.",
+    "Investigate ordinary reduction at completely split primes with three independent Hodge-active labels."
   ],
   "verification": {
-    "scope": "Written proofs, primary-source audit, exact numerical and moment replays, and internal PDF-only reader review.",
-    "limits": "External review, formal verification and priority remain open."
+    "scope": "Written proofs, primary-source comparison, edition-specific internal PDF review, and exact replays of the finite examples listed in verification.json.",
+    "limits": "External specialist review, formal verification, and priority remain open."
   }
 }

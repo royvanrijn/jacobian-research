@@ -1,0 +1,275 @@
+\section{Frobenius norms on adjoint groups of type \texorpdfstring{\(A_1\)}{A1}}\label{sec:adjoint}
+
+Let \(G\) be the Mumford--Tate group of a polarized abelian variety
+\(A/K\). Suppose every geometric simple factor of \(G^{\mathrm{ad}}\)
+has type \(A_1\). The rational decomposition is
+\[
+ G^{\mathrm{ad}}=\prod_i\operatorname{Res}_{R_i/\Q}H_i,
+\]
+where \(H_i\) is an adjoint \(R_i\)-form of \(\mathrm{PGL}_2\).
+Call an embedding \(R_i\hookrightarrow\overline{\Q}\) \emph{active} if
+the Hodge cocharacter has nontrivial projection on the corresponding
+geometric simple factor. Write \(b_i\) for the number of active
+embeddings. On the adjoint Lie algebra a nontrivial projection has
+weights \(-1,0,1\), because this Lie algebra is a subrepresentation of
+\(\operatorname{End}(H^1)\). Each \(b_i\) is positive by the minimality
+of the Mumford--Tate group.
+
+\begin{theorem}[Adjoint trace bound]\label{thm:adjoint}
+After a finite extension of \(K\), at a set of good absolute degree-one
+primes \(v\) of natural density one, the following holds for every \(i\).
+Let \(p\) be the residue characteristic. Above each prime
+\(\mathfrak p\mid p\) of \(R_i\), all embeddings are active together
+or inactive together, and their adjoint Newton slopes agree. Let
+\(\mathcal F_i(v)\) consist of the active primes at which these slopes
+are all zero. Then
+\[
+ \sum_{\mathfrak p\in\mathcal F_i(v)}
+ f_{\mathfrak p}\bigl(1+\mathbf 1_{f_{\mathfrak p}\,\mathrm{odd}}\bigr)
+ \le b_i-1,
+ \qquad f_{\mathfrak p}=[(R_i)_{\mathfrak p}:\Q_p].
+\]
+At primes split completely in \(R_i\) there are at most
+\(\lfloor(b_i-1)/2\rfloor\) active embeddings with flat adjoint Newton
+slopes. If \(b_i\le 2\) for every \(i\), the ordinary primes have
+natural density one over this extension.
+\end{theorem}
+
+For example, the two active embeddings of a rational adjoint factor
+with a real quadratic label field can occur at separate split primes
+or at one prime of residue degree two. In the first case determinant
+parity makes a flat factor contribute two to the bound. In the second
+case residue degree alone gives the same contribution. The argument
+also applies to tensor representations, where one may have no
+two-dimensional Frobenius block in \(H^1\).
+
+\subsection{A common invariant of crystalline and \texorpdfstring{\(\ell\)}{l}-adic Frobenius}
+
+Enlarge the base to define the absolute Hodge tensors of \(G\) and a
+level for the corresponding Hodge-type Shimura datum, and to contain
+its reflex field. Work at good
+absolute degree-one primes with \(K_v=\Q_p\), away from \(2\), the level,
+the discriminants of the \(R_i\), and the finitely many primes where
+the datum lacks a hyperspecial model. At such a prime the abelian
+scheme and its prime-to-\(p\) level give a point of the Siegel model.
+The generic point extends to the Hodge-type model by finiteness of
+the normalization of the closure. The crystalline tensor comparison
+identifies the linear Frobenius and the Hodge filtration on a common
+tensor fiber over \(\Q_p\). After trivializing over the completed
+maximal unramified extension, write Frobenius as \(b\sigma\). Its class
+satisfies the group Newton inequality and the Kottwitz equality for
+the Hodge cocharacter by \cite[\S1.3 and Lemma~1.3.8]{kmps}.
+
+At residue degree one, Kisin and Zhou's compatibility theorem
+compares the class of linear crystalline Frobenius with the auxiliary
+\(\ell\)-adic Frobenius classes, via isomorphisms respecting the
+tensors over algebraic closures. More precisely, at good reduction
+the compatible Weil--Deligne classes are unramified. Evaluation at
+Frobenius gives a single Galois-stable semisimple \(G\)-class
+\cite[\S5.3.3--5.3.4 and Theorem~5.3.10]{kzsemistable}. We use the
+Frobenius convention giving slopes in \([0,1]\) on \(H^1\). The
+invariant below is unchanged by inverting Frobenius.
+
+On \(H_i\) take the regular function
+\(T_i=1+\Tr(\operatorname{Ad}_{H_i})\), with the trace taken on its Lie
+algebra. Evaluation on the Frobenius class yields \(T_i(v)\in R_i\):
+the evaluations at the geometric factors form a Galois-equivariant
+tuple indexed by embeddings of \(R_i\). If \(u,u^{-1}\) are the two
+root eigenvalues, the invariant is \(2+u+u^{-1}\). They are ratios of
+eigenvalues on \(H^1\), since the derived Lie algebra occurs inside
+\(\operatorname{End}(H^1)\). The Weil bounds therefore give
+\(0\le \tau(T_i(v))\le 4\) at all complex embeddings \(\tau\), and
+integrality at all finite places away from \(p\).
+
+\subsection{Determinant parity and the local valuation}
+
+The centroid of the derived Lie algebra is \(\prod_i R_i\). Its
+scalar action is an endomorphism of the Lie algebra as a Hodge tensor
+representation, and descends with the other tensors. On the
+crystalline fiber it commutes with linear Frobenius and preserves
+the filtration. Thus this fiber of the adjoint Lie algebra decomposes
+over the local fields \(L_{\mathfrak p}=(R_i)_{\mathfrak p}\).
+On the rank-three \(L_{\mathfrak p}\)-summand the positive Hodge
+filtration is either zero or a line. Its rank is the same at every
+embedding of \(L_{\mathfrak p}\). By filtered comparison these are
+precisely the inactive and active cases. The counts of active
+embeddings are the Betti counts \(b_i\), since comparison identifies
+the cocharacter classes and their action on the rational adjoint
+quotients. The characteristic polynomial of linear Frobenius on this
+summand is defined over \(L_{\mathfrak p}\), and gives the same slopes
+at all its embeddings. The group Newton inequality bounds the
+nonnegative adjoint slope by one at an active prime and by zero at an
+inactive prime. In particular \(v_{\mathfrak p}(T_i(v))\ge0\) in the
+inactive case, where the valuation is normalized by \(v_{\mathfrak p}(p)=1\).
+
+In the active case the positive Hodge line becomes a nilpotent root
+line over an algebraic closure. An inner form of \(\mathfrak{sl}_2\)
+with a nonzero rational nilpotent is split: the trace-zero Lie
+algebra of a division quaternion algebra has no such element. The
+linear crystalline Frobenius acts on the split Lie algebra by an
+automorphism, which is inner in type \(A_1\). Represent it by the
+projective class of a lift \(B\in\mathrm{GL}_2(L_{\mathfrak p})\).
+Over the completed maximal unramified extension, the summands are
+indexed by embeddings \(\rho\) of \(L_{\mathfrak p}\). The coefficient
+Frobenius \(\sigma\) permutes these embeddings cyclically, and the
+linear part in the \(\rho\)-coordinate is \(\operatorname{Ad}(\rho(B))\).
+The reference adjoint group is also split over \(L_{\mathfrak p}\),
+because it is unramified of type \(A_1\). The transition to a tensor
+trivialization preserves the centroid labels and the Lie bracket.
+It therefore changes the tuple of projective matrices by
+\(\sigma\)-conjugacy in the product of the split \(\mathrm{PGL}_2\)'s.
+This tuple represents the projection of \([b]\) to the indicated
+restriction of scalars.
+
+The geometric fundamental group of \(\mathrm{PGL}_2\) is \(\Z/2\).
+For a split factor the Kottwitz map is the lift's determinant
+valuation modulo two, as follows by projecting the map for
+\(\mathrm{GL}_2\). For the restriction of scalars the coinvariant
+map sums these parities across the \(f_{\mathfrak p}\) embeddings.
+Each matrix obtained from \(B\) has the same determinant valuation,
+and each Hodge projection is the nontrivial minuscule class. The
+Kottwitz equality therefore yields
+\[
+ f_{\mathfrak p}v_{\mathfrak p}(\det B)\equiv f_{\mathfrak p}\pmod 2.
+\]
+
+The nonnegative adjoint slope is the difference of the two eigenvalue
+valuations of \(B\). If the difference is positive, each valuation
+is integral by the quadratic Newton polygon over the unramified
+field \(L_{\mathfrak p}\), so the difference must be one. The term
+with smaller valuation determines the valuation of the trace, giving
+\(v_{\mathfrak p}((\Tr B)^2/\det B)=-1\). If the eigenvalue valuations
+coincide, they equal \(v_{\mathfrak p}(\det B)/2\). Their sum lies in
+\(L_{\mathfrak p}\) and so has valuation at least the ceiling of this
+number. Using the determinant parity when \(f_{\mathfrak p}\) is odd,
+we obtain
+\[
+ v_{\mathfrak p}(T_i(v))
+   =v_{\mathfrak p}\bigl((\Tr B)^2/\det B\bigr)
+   \ge\mathbf 1_{f_{\mathfrak p}\,\mathrm{odd}}
+   \quad(\mathfrak p\in\mathcal F_i(v)).
+\]
+The computation uses the linear Frobenius over \(\Q_p\), so the gap
+one and the valuation \(-1\) hold without dividing a slope of a power
+of Frobenius by \(f_{\mathfrak p}\).
+
+\subsection{Bounded integer norms and ordinarity}
+
+The local valuations bound the norm from below by
+\[
+ v_p(\Nm_{R_i/\Q}T_i(v))\ge -b_i+
+ \sum_{\mathfrak p\in\mathcal F_i(v)}
+ f_{\mathfrak p}\bigl(1+\mathbf 1_{f_{\mathfrak p}\,\mathrm{odd}}\bigr).
+\]
+If the sum reaches \(b_i\), the norm is integral at \(p\) and hence is
+an integer in \([0,4^{[R_i:\Q]}]\). The same interval covers the case
+of a zero norm. On \(G\) this norm is the regular class function
+\(\prod_\tau T_{i,\tau}\). It is nonconstant: restrict to a torus in
+one adjoint factor and take the identity in the others, giving
+\(4^{[R_i:\Q]-1}(2+z+z^{-1})\).
+
+Vasiu's theorem gives the Mumford--Tate conjecture here
+\cite[Theorem~1.3.4(a) and Example~1.3.5(iv)]{vasiu}. Because the
+auxiliary Galois action preserves the defining tensors, its Zariski
+closure is the connected group \(G_{\Q_\ell}\). A proper conjugation-
+invariant closed subset of this group cuts out a set of primes of
+natural density zero by algebraic Chebotarev. Indeed the intersection
+with the compact \(\ell\)-adic image has Haar measure zero, by Zariski
+density of every open subgroup and the measure-zero property of the
+zeros of a nonzero analytic function on each chart. Its shrinking
+congruence neighborhoods give finite-quotient Chebotarev upper
+bounds tending to zero. This is the bounded-trace density argument
+used by Pink \cite[Lemmas~7.21--7.22]{pink}. Applying it to the
+finitely many integer norm levels proves the inequality simultaneously.
+
+Every flat active prime contributes at least two. Thus for all
+\(b_i\le2\) the Newton and Hodge cocharacters have the same dominant
+projection on every adjoint factor. On the torus \(G/G^{\mathrm{der}}\)
+the Newton cocharacter is the Galois average of the Hodge cocharacter
+by the Kottwitz equality. The Hodge conjugacy class is locally Galois
+stable, since the degree-one completion contains the local reflex
+field. At the unramified quasi-split group the dominant Hodge
+representative is therefore Galois invariant. The adjoint and torus
+projections jointly determine a rational cocharacter in the chosen
+maximal torus, so the dominant Newton and Hodge cocharacters agree.
+On \(H^1\) this means that all Newton slopes are zero or one.
+
+\subsection{Exact half-slope multiplicities and a \texorpdfstring{\(p\)}{p}-rank bound}
+
+For any geometric adjoint embedding in the rational factor \(i\),
+let \(2c_i\) be the total dimension of the irreducible summands of
+\(H^1_{\overline\Q}\) on which its simple Lie algebra acts nontrivially.
+Dimensions are counted with multiplicity. This number is independent
+of the embedding, since the representation is rational and Galois
+acts transitively on the geometric factors above a rational factor.
+Write \(r_i(v)=\sum_{\mathfrak p\in\mathcal F_i(v)}f_{\mathfrak p}\).
+
+\begin{proposition}[Newton slopes and \(p\)-rank in adjoint type \(A_1\)]
+\label{prop:adjoint-prank}
+With the base extension of Theorem~\ref{thm:adjoint}, at every good
+absolute degree-one prime outside the finite set used for the local
+calculation, the Newton slopes are \(0,1/2,1\), with
+\[
+ \operatorname{mult}_v(1/2)=2\sum_i c_i r_i(v),\qquad
+ f_p(A_v)=g-\sum_i c_i r_i(v).
+\]
+In particular, after also adjoining normal closures of the adjoint
+label fields, on a set of primes of natural density one,
+\[
+ f_p(A_v)\ \ge\ g-\sum_i c_i\left\lfloor\frac{b_i-1}{2}\right\rfloor
+ \ >\ \frac g2 \qquad (g>0).
+\]
+\end{proposition}
+
+\begin{proof}
+Over an algebraic closure an irreducible \(G\)-summand of \(H^1\)
+is a character of the connected center times a tensor of symmetric
+powers of standard \(\mathrm{SL}_2\)-modules, using the central
+isogeny from the simply connected derived group times the center.
+On an active factor the standard weights for the rational lift of
+the Hodge cocharacter are \(-1/2,1/2\). The range between the largest
+and smallest Hodge weights of the tensor is therefore the sum of
+the symmetric-power exponents at active embeddings. Since \(H^1\)
+has weights zero and one, this sum is at most one. A summand thus
+either meets no active label or uses the standard module at exactly
+one. In the second case its dimension is even. In particular
+\(c_i\) is an integer and \(\sum_i c_i b_i\le g\), since distinct
+active labels meet disjoint sets of irreducible summands.
+
+The Newton and Hodge cocharacters have the same central component
+under the rational lift, by the abelianization comparison above.
+On every inactive factor both projections vanish. On each active
+factor the Newton projection is either the Hodge projection or zero,
+by the local calculation. Thus a summand using a flat active label
+has the single Newton slope \(1/2\): its central weight is the
+midpoint of its Hodge weights zero and one. Every other summand has
+its original Hodge weights as Newton slopes. The \(r_i(v)\) flat
+active labels in factor \(i\) account for \(2c_i r_i(v)\) copies
+of \(1/2\). Polarization makes the multiplicities of zero and one
+equal, giving the formula for \(f_p\).
+
+At the completely split coefficient primes of the enlarged base,
+Theorem~\ref{thm:adjoint} bounds \(r_i(v)\) by
+\(\lfloor(b_i-1)/2\rfloor\). Since this integer is strictly smaller
+than \(b_i/2\) for each \(i\) and \(\sum_i c_i b_i\le g\), the
+bound is strict for positive-dimensional \(A\), including the case
+of a torus where the sum is empty.
+\end{proof}
+
+Pink's ordinary-reduction theorem \cite[Theorem~7.1]{pink} assumes
+\(\operatorname{End}(A_{\overline K})=\Z\) and treats a wider range
+of root systems. Theorem~\ref{thm:adjoint} isolates the contribution
+of each rational type \(A_1\) quotient and requires no endomorphism
+hypothesis. For three active embeddings of one rational quotient the
+inequality still allows one flat embedding at completely split
+primes. In particular it leaves that case of cubic real multiplication
+open. For comparison, Fit\'e's \(p\)-rank bound \(\lceil g/2\rceil\)
+assumes an embedded Galois field of degree \(g\) in the geometric
+endomorphism algebra \cite[Theorem~2]{fite}. The bound here uses the
+adjoint hypothesis and applies to tensor representations as well.
+Sheng and Zuo determine the Newton polygons in the Mumford-type
+tensor setting, where one active embedding in a nonsplit orbit
+can give a binomial distribution of slopes
+\cite[Theorem~1.2]{shengzuo}. The formula here is at degree-one
+primes over the tensor-defining extension and uses all irreducible
+summands of \(H^1\).

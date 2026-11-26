@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "date": "2026-11-26",
+  "edition": {
+    "file": "cm-newton-cyclic-cover-moments.pdf",
+    "sha256": "36b8f2b13985ba09a0881fbecb80059318084f39efc026270494cfb8ef303e0c",
+    "pages": 8,
+    "source_bundle_sha256": "0c0ef0032dca509e7d2609b3e7723d2c02e8d28c1d50accac324980485aeadf0"
+  },
+  "build": {
+    "command": "SOURCE_DATE_EPOCH=1795651200 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-cyclic-cover-moments main.tex",
+    "environment": "Ubuntu 24.04.4 LTS under WSL, TeX Live 2023, pdfTeX 1.40.25, latexmk 4.83, Poppler 24.02.0",
+    "result": "Two clean builds from the extracted source ZIP produced byte-identical PDFs with no final LaTeX or layout warnings. Inspected PNG renders of every page and checked that the title and abstract agree with the metadata."
+  },
+  "replays": {
+    "fixed_prime": {
+      "command": "python3 -I verification/verify_cm_newton_nonsplit_noncm_prime_power_moments.py",
+      "result": "Checked the coherent return and exact rational moment in four cases (p,N) = (5,31), (5,781), (11,133), (17,307). At (5,31), the orbit calculation gives 5-rank 42 and the digit calculation counts six eligible labels. The order-504 top coefficient is one modulo five."
+    },
+    "fixed_cover": {
+      "command": "python3 -I verification/verify_cm_newton_unbounded_twisted_moment_quotients.py",
+      "result": "The four retained prime-cube examples have residues 182, 186, 23, 46. At n=35, exhausts the 24 unit classes, checking the seven nonsplit certifying classes and detecting a quotient-dimension mismatch at every nonidentity class. At (p,iterate) = (29,2), (43,4), (79,6), (3,12), (29,4) the direct and translated residues match as 1, 14, 67, 0, 1."
+    },
+    "scope": "The two Python 3.12.3 commands were executed from the source archive. The programs replay finite examples. The parameterized statements and the 5-rank asymptotic use written proofs."
+  },
+  "literature": [
+    "Bouw, Definition 2.1, Lemmas 4.3 and 5.1 and Theorem 6.1 (character dimensions, stable rank, coefficient formula and the generic bound).",
+    "Li, Mantovan, Pries and Tang (2019), Theorem 3.2 (Newton slopes for tame three-branch cyclic covers).",
+    "SGA 7 I, Expose IX, (12.3.7) and section 12.4 (the dual-graph lattice of the torus).",
+    "Serre and Tate, Theorems 1 and 6 (good reduction via inertia and potential good reduction for CM)."
+  ],
+  "review": {
+    "external_human_review": false,
+    "formal_verification": false,
+    "pdf_only_internal_review": {
+      "reviewer": "Fresh isolated Codex reader",
+      "final_pdf_sha256": "36b8f2b13985ba09a0881fbecb80059318084f39efc026270494cfb8ef303e0c",
+      "context": "The complete text extracted from the compiled PDF, rendered pages 1, 4, 6, 7 and 8, and the five neutral reader prompts. No repository material or previous conversation was supplied, and the reader made no tool calls.",
+      "findings": [
+        "Recovered the two cyclic-cover families, the fixed-prime infinite sequence of certified moments, and the exact 5-rank formula and half-dimension limit.",
+        "Explained why moment isolation and coherent Frobenius select the same coefficient, and identified the different quotient orbits used to prove nonordinarity and the toric obstruction to potential CM.",
+        "Reconstructed the quotient-dimension floor invariant and the power-of-two argument ruling out ordinary reduction at all eligible nonidentity classes, and recovered the digit proof of the exact residue test at every multiple of the return length.",
+        "Distinguished the exact criterion for a nonzero normalized residue from classification of the characteristic-zero moments. Identified the exact density 7/24 as a statement at conductor 35 and the least-degree-8n lift as an existence claim.",
+        "The supplied page renders resolved the prime-power exponent obscured by text extraction. The reader found no specific gap in the displayed arithmetic arguments and identified the structural inputs about coherent rank, primitive projectors and toric reduction as specialist checks."
+      ],
+      "revisions_and_rechecks": "Reflowed the conductor-35 class census before the final build. The isolated reader followed the exact residue criterion and the distinction between its certifying prime classes and characteristic-zero moment orders."
+    },
+    "remaining_work": "Specialist review of the toric and coherent reduction arguments and the priority comparison."
+  }
+}

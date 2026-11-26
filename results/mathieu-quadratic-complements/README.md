@@ -1,6 +1,6 @@
 # The Mathieu property for quadratic complements
 
-**Under review at Hexagon.** Reserved identifier `hexagon:2611.01050v2`. Updated November 25, 2026.
+Public preprint [Hexagon 2611.01050v1](https://hexagonmath.org/2611.01050v1), released 25 November 2026. [Deposited files](published/).
 
 The normalized rotation-and-scaling trace on a nondegenerate quadratic
 complement in characteristic zero has a Mathieu–Zhao kernel exactly in

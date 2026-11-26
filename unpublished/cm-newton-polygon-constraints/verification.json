@@ -1,15 +1,16 @@
 {
   "schema_version": 2,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "edition": {
     "file": "cm-newton-polygon-constraints.pdf",
-    "sha256": "524d3e9dc0eb2e05e88cac09592f5436969f821421040603ac4e7376542d87a4",
-    "pages": 15
+    "sha256": "0b1155cda3eaeb7a71f48e62ed45e0aacd627bc63cd62dc3c804746120a2806a",
+    "pages": 28,
+    "source_bundle_sha256": "333bd5ca2fe71333fd0512e2d5f368d9f395060c0159d91673dadc29ff96dc65"
   },
   "build": {
-    "command": "SOURCE_DATE_EPOCH=1795564800 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-polygon-constraints main.tex",
-    "environment": "Ubuntu 24.04, TeX Live 2023, pdfTeX 1.40.25, latexmk 4.83, Poppler",
-    "result": "Built without LaTeX or layout warnings. The rendered edition was visually checked."
+    "command": "SOURCE_DATE_EPOCH=1795651200 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-polygon-constraints main.tex",
+    "environment": "Ubuntu 24.04.4 LTS under WSL, TeX Live 2023, pdfTeX 1.40.25, latexmk 4.83, Poppler 24.02.0",
+    "result": "Two clean builds from the extracted source ZIP produced byte-identical PDFs with no final LaTeX or layout warnings. Inspected PNG renders of every page and checked that the title and abstract agree with the metadata."
   },
   "replays": {
     "endpoint_minima": {
@@ -19,7 +20,7 @@
     },
     "full_historical_counts": {
       "command": "python3 -I verification/verify_cm_newton_vertex_census.py",
-      "result": "An integral-breakpoint enumeration independently reproduces all 1,188 historical rows, including the 8,073,364 candidate and 3,846,011 surviving polygon multiplicities and the minimum p-ranks."
+      "result": "An integral-breakpoint enumeration reproduced all 1,188 historical rows, including 8,073,364 candidate polygons, 3,846,011 surviving polygons, and the minimum p-ranks."
     },
     "moment_covers": {
       "commands": [
@@ -27,28 +28,42 @@
         "python3 -I verification/verify_cm_newton_infinite_moment_families.py"
       ],
       "result": "The former replays three rational residues, the split p=19 case, and 69 bounded branch multisets across 20 combinations. The latter checks the split nonordinary p=73 selection and connected-conductor examples at 37 in orders 342, 12,663 and 468,540."
+    },
+    "pfaffian_curve": {
+      "command": "gp -fq verification/verify_rank_four_pfaffian_curve.gp",
+      "environment": "PARI/GP 2.15.4",
+      "result": "Recomputed the genus-four cyclic covering character counts and relative Frobenius quartics at 7 and 13, checked ordinary middle coefficients and the S4 factorization witnesses, distinguished the two absolute Frobenius fields by splitting at 2, and verified the ordinary reduction at the inert prime 11. The article supplies the specialization argument from these certificates to the geometric endomorphism ring."
     }
   },
+  "replay_scope": "All five commands were executed from the archived supplement in Python 3.12.3 or PARI/GP 2.15.4. The programs check the stated finite examples. The adjoint norm and p-rank results, CM norm and numerical bounds, twelvefold construction, fourfold density theorem and finite-field Pfaffian sharpness use written arguments.",
   "review": {
     "external_human_review": false,
     "formal_verification": false,
     "pdf_only_internal_review": {
-      "previous_pdf_sha256": "06898e1cfa2f91b1d951774cb483aa18f9704302c69b139b4b8c4ce354e26340",
-      "proof_edited_pdf_sha256": "8b82a27251c2c0c1a50d77383739316ad535a7646c429c4bdaa005a635ac6cc3",
-      "final_pdf_sha256": "524d3e9dc0eb2e05e88cac09592f5436969f821421040603ac4e7376542d87a4",
-      "context": "The compiled PDF and five reader prompts only.",
+      "reviewer": "Fresh isolated Codex readers",
+      "candidate_pdf_sha256": "2b9f22f43a36b2c762e607d334b139147c2cd938642ec0f42d8c4b6a3153f752",
+      "final_pdf_sha256": "0b1155cda3eaeb7a71f48e62ed45e0aacd627bc63cd62dc3c804746120a2806a",
+      "context": "The complete text extracted from the compiled PDF, selected rendered pages and the five neutral reader prompts. The final reader received rendered pages 1, 5–8, 10 and 14. No repository material or previous conversation was supplied, and the readers made no tool calls.",
       "findings": [
-        "Recovered the simultaneous norm theorem, fixed-endpoint polygon, closed minimum, complete numerical classification and linked projective-monodromy theorem.",
-        "Reconstructed the strict norm argument, half-weighted midpoint and endpoint-slot assignment, and Galois-stable linkage proof.",
-        "Identified the quaternionic polarization and Hodge commutant as the most compressed steps and checked the argument.",
-        "Distinguished numerical sharpness, prime-field examples varying with the prime and the finite-extension density results for fixed varieties.",
-        "Found two typesetting errors and a missing proof-navigation step for the two rank corollaries. Independently reproduced the selected coefficient calculations at 73 and 37."
+        "Recovered the factorwise weighted adjoint bound, the exact half-slope and p-rank formulas, the original-field splitting criterion and the separate fourfold and numerical CM conclusions.",
+        "Explained the effect of a flat active factor on the tensor weights, the unpowered block trace product in the original-field case, and the finite-integer norm exclusions.",
+        "Located the one-step crystalline comparison as the hardest step. The candidate reader asked why the comparison over an unramified tensor-defining extension still applies to the one-step Frobenius. The revision identifies the geometric special point, the Frobenius-invariant tensors and the one-step class explicitly, and locates admissibility in Kisin–Madapusi Pera–Shin. The final reader recovered this argument and identified its cited inputs for specialist review.",
+        "Distinguished eventual ordinarity, the original-field tensor criterion with its extra hypotheses, the full-endomorphism hypothesis for the fourfold, and the finite-field scope of the sharp higher-rank Pfaffian bound. Identified the split cubic real-multiplication case as a remaining density question.",
+        "The first reader requested an explicit compositum in the unbalanced fourfold discussion. The revision writes K tau(E). The final reader flagged missing absolute-value bars in the extracted rank-two trace formula. The rendered page 18 and the LaTeX source both contain the bars, which were lost by text extraction. The finite replays and their proof scopes were checked separately from the PDF-only review."
       ],
-      "disposition": "Restored both explicit corollary proofs, corrected both displays, and clarified the quaternionic and Hodge steps, the Hasse coefficient extraction and the companion census."
+      "revisions_and_rechecks": "Expanded the one-step Frobenius argument and stated the unbalanced compositum explicitly. The cited Kisin–Madapusi Pera–Shin statements were inspected in the linked Harvard author copy, where Proposition 1.3.6 applies to each geometric special point, Section 1.3.7 constructs the one-step class and Lemma 1.3.8 gives admissibility. A fresh final reader followed the revised route and found no internal contradiction in the displayed headline arguments."
     }
   },
   "remaining": [
-    "Density-one ordinary reduction in the independent projective monodromy cases with three balanced pairs.",
-    "External specialist review and priority for the oriented extremal polygon, closed minimum, projective linkage criterion and moment applications."
-  ]
+    "Specialist review of the tensor comparison, adjoint and Pfaffian arguments, the corestriction realization over a number field, the numerical minima, and priority.",
+    "Density of one flat active factor at completely split primes with three independent active labels in the cubic real multiplication case."
+  ],
+  "additional_arithmetic_check": {
+    "environment": "PARI/GP 2.15.4",
+    "inputs": [
+      "polresultant(x^2-x+p,x^2+p,x)==p",
+      "polresultant(x^4+p*x^2+p^2,x^2+p,x)==p^4"
+    ],
+    "result": "Both symbolic equalities hold over Z[p], checking the determinant factors 1/p and 1 in the finite-field sharpness construction by resultants. The manuscript gives the algebraic derivation."
+  }
 }

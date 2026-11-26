@@ -1,7 +1,42 @@
 * text=auto eol=lf
 
+# Preserve binary evidence bytes in both Windows and WSL.
+*.pdf binary -eol
+*.zip binary -eol
+*.gz binary -eol
+*.xz binary -eol
+
 # Deposited editions must preserve their exact published bytes.
 /results/** -text -eol
 
 # Preserve the exact upstream wheel RECORD bytes, including CRLF.
 /research/meridional-rank/representations/sources/allcover-snappy332-wheel-RECORD.csv -text -eol whitespace=cr-at-eol
+
+# Preserve the recorded proof and checker bytes for existing exact replays.
+/research/arithmetic/ABC_COMPLETE_LETTER_ADDITIVE_ENERGY.md -text -eol whitespace=cr-at-eol
+/research/arithmetic/ABC_ONE_FULL_DIFFUSE_PROFILE_CONSEQUENCES.md -text -eol whitespace=cr-at-eol
+/research/arithmetic/ABC_ONE_FULL_LETTER_ENDPOINT.md -text -eol whitespace=cr-at-eol
+/research/arithmetic/ALL_DEGREE_DIAGONAL_PADE_KERNEL_RESTRICTION.md -text -eol whitespace=cr-at-eol
+/research/arithmetic/LARGE_DILATION_ENTROPY_TEST.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/COMPACT_SUPERCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/CUSP_GLOBAL_REGULAR_COMPLEMENT_AND_STOKES_DETOUR.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/CUSP_TWO_THIMBLE_POSITIVE_CYCLE.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/QUARTIC_CUSP_UNFOLDING_AND_ACTUAL_ORDER_DRIFT.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/SQUARE_ROOT_GAP_EVENTUAL_STRONG_FACTORIAL_THEOREM.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/SUBCRITICAL_ORDERED_PAIR_EVENTUAL_SFC.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/UNIFORM_CUSP_PRIMARY_CONTEXT.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/UNIFORM_INTEGER_CUSP_EVENTUAL_STRONG_FACTORIAL.md -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/verify_bounded_quartic_cusp.py -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/verify_cusp_global_complement.py -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/verify_large_thermal_quartic_fold_matching.py -text -eol whitespace=cr-at-eol
+/research/factorial/image-rigidity/verify_quartic_cusp_unfolding.py -text -eol whitespace=cr-at-eol
+/research/foundations/extended-geometry/verify_cm_newton_mu_cyclic_path.py -text -eol whitespace=cr-at-eol
+/research/foundations/extended-geometry/verify_cm_newton_split_rm_example.py -text -eol whitespace=cr-at-eol
+/research/foundations/extended-geometry/verify_cm_newton_vertex_census.py -text -eol whitespace=cr-at-eol
+/unpublished/cm-newton-polygon-constraints/README.md -text -eol whitespace=cr-at-eol
+/unpublished/cm-newton-polygon-constraints/global.tex -text -eol whitespace=cr-at-eol
+/unpublished/cm-newton-polygon-constraints/moments.tex -text -eol whitespace=cr-at-eol
+/unpublished/cm-newton-polygon-constraints/residual.tex -text -eol whitespace=cr-at-eol
+/results/strong-factorial-binomials/supplement/verify_initial_terminals.cpp whitespace=cr-at-eol
+/results/strong-factorial-binomials/supplement/verify_positive_boundary.cpp whitespace=cr-at-eol

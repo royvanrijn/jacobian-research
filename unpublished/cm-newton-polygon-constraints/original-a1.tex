@@ -1,0 +1,154 @@
+\section{The least ordinary-reduction field in a tensor case}
+\label{sec:original-a1}
+
+\begin{theorem}\label{thm:original-a1}
+Let \(A/K\) be a polarized abelian variety over a number field. Suppose
+\(G^{\mathrm{ad}}\), for its Betti Mumford--Tate group \(G\), is
+\(\Q\)-simple and has geometric type \(A_1\) in every factor. Suppose a
+Rosati-compatible CM field \(E\) acts over \(K\), and each geometric
+\(E\)-block of \(H^1\) is irreducible under \(G^{\mathrm{der}}\).
+Let \(R\) be the centroid field of the derived Lie algebra. Write
+\(S\subset\operatorname{Hom}_{\Q}(R,\overline{\Q})\) for the embeddings
+where the Hodge cocharacter projects nontrivially. Assume \(|S|\le2\).
+Then the stabilizer of \(S\) under postcomposition in \(G_K\) is the
+kernel of its action on the centroid. It defines a finite Galois
+extension \(K_S/K\). Outside a density-zero set, the
+ordinary places of \(K\) are precisely those that split completely in
+\(K_S\). Thus their natural density is \([K_S:K]^{-1}\), and \(K_S\)
+is the least extension over which the ordinary density is one.
+\end{theorem}
+
+The one-active tensor case has the familiar binomial Newton polygons
+of Mumford type \cite[\S2]{nootrealization}\cite[Theorem~1.2]{shengzuo}.
+With two active labels, one adjoint block can lose its gap while the
+other retains it. The trace of a tensor block recovers the product of
+the projective traces of its supporting factors, so the two local
+valuations can be compared before taking a power of Frobenius.
+
+\begin{proof}
+Fix the Betti realization \(V=H^1\), and write \(C_\lambda\) for the
+set of simple factors supporting the block of an embedding \(\lambda\)
+of \(E\). Over an algebraic closure an irreducible block lifts to a
+tensor of symmetric powers of the two-dimensional standards of its
+support. A block meets at most one active label and has standard
+exponent there. Indeed each nontrivial active exponent \(a\) adds
+\(a\) to the difference between the number of distinct Hodge weights
+and one, as a lower bound obtained by adding the ordered weight sets.
+The only Hodge weights on \(V\) are zero and one. Galois transitivity
+on the embeddings of \(R\) and equivariance of supports and exponents
+then make every factor in every support standard. All supports have
+the same size \(k\), because the block dimensions are equal. Write
+\(h=2^k\) for this dimension. Each label of \(R\) occurs in the same
+positive number \(c\) of supports.
+
+The trace pairing on \(\operatorname{End}(V)\) is nondegenerate on the
+derived Lie algebra \(\mathfrak d\), since its simple factors are
+orthogonal and each has nonzero trace index. The orthogonal projector
+onto \(\mathfrak d\) and its centroid action are absolute Hodge
+tensors \cite[Proposition~2.9 and Theorem~2.11]{delignehodge}.
+Vasiu's Mumford--Tate comparison in type \(A_1\)
+\cite[Theorem~1.3.4(a) and Example~1.3.5(iv)]{vasiu}
+shows that full auxiliary monodromy normalizes \(\mathfrak d\), so it
+fixes the projector and acts on the centroid by field automorphisms
+\(\beta_g\). This is the same action on the absolute Hodge tensors in
+each realization. If \(\theta_g\) denotes postcomposition by \(g\) on
+the embeddings of \(R\), the semilinear action on de Rham cohomology
+sends the \(\rho\)-eigenspace to that for \(\theta_g(\rho)\circ
+\beta_g^{-1}\). It preserves the positive adjoint Hodge filtration
+and hence \(S\). Since precomposition commutes with postcomposition,
+\(\theta_g\) preserves \(S\) exactly when precomposition by
+\(\beta_g\) does. Because \(E\) acts over \(K\), the linear Galois
+action fixes every coefficient block. Its permutation of derived
+factors preserves each support \(C_\lambda\). If it preserves \(S\),
+it fixes each active label, since every such label occurs in a
+support with no other active label. A field automorphism fixing
+one embedding is the identity. This identifies the stabilizer
+with \(\ker\beta\).
+
+Take a good absolute degree-one place \(v\) with arithmetic Frobenius \(g\).
+Omit the finite bad set for the coefficient and tensor fields.
+Pass to a fixed finite extension defining the tensors and level and
+containing the reflex field. The local extension is unramified at
+\(v\). In the integral model of Section~\ref{sec:adjoint}, the lift
+gives a geometric special point \(s\) whose underlying abelian variety
+is the base change of \(A_v\). Proposition~1.3.6 and \S1.3.7 of
+\cite{kmps} construct the crystalline tensors at \(s\), fixed by the
+one-step Witt-semilinear Frobenius \(\Phi\). In particular, their
+tensor trivialization gives \(\Phi=b\sigma\) with \([b]\in B(G_{\Q_p})\),
+even when \(s\) is defined over a larger residue field. The
+tensor comparison identifies the Hodge class of the lift with
+the specified one \cite[Theorem~(0.3) and \S5]{blasius}.
+Thus Lemma~1.3.8 of \cite{kmps} gives
+\(\kappa_G(b)=\mu^\natural\) and the group Newton inequality
+for this one-step operator. Since \(\Phi\) fixes each centroid tensor
+and acts on its eigenvalues by \(\sigma\), it permutes the adjoint
+labels by \(\theta_g\). The dominant adjoint Hodge gaps are one on
+\(S\) and zero elsewhere. Their average on an orbit of length \(a\)
+meeting \(S\) in \(m\) labels bounds the nonnegative Newton gap \(d\),
+so \(ad\le m\).
+
+Write \(d_\rho\) for the gap on label \(\rho\). The slopes on
+\(V_\lambda\) are its Hodge mean shifted by all signed sums
+\(\frac12\sum_{\rho\in C_\lambda}\epsilon_\rho d_\rho\), with
+\(\epsilon_\rho\in\{-1,1\}\). The signs come from the standard tensor
+weights. The central shift is the Hodge mean by the Kottwitz equality
+on the abelianization, because the block Hodge multiplicities are
+preserved by \(\theta_g\) when \(E\) acts over \(K\). If \(\theta_g\)
+fails to preserve \(S\), take a block supporting an active label on a
+partially active orbit. Its Hodge mean is \(1/2\). Ordinarity on that
+block would require exactly one positive gap, equal to one, since
+two positive gaps yield at least three distinct slopes. A gap of one
+requires a fully active orbit. This block has just one Hodge-active
+label and that label lies on a partially active orbit, so the
+required gap cannot occur. Conversely, when \(\theta_g\) preserves
+\(S\), attaining gap one at every active label gives ordinarity by
+the same weight formula.
+
+Now let \(\theta_g\) preserve \(S\), so \(\beta_g=1\). The adjoint
+projector and centroid descend to the crystalline fiber over
+\(\Q_p\), since inertia and Frobenius act trivially on them. Linear
+crystalline Frobenius preserves this Lie algebra and acts linearly
+over \(R\otimes\Q_p\). On extending scalars, semilinear Frobenius
+is this linear map followed by scalar Witt Frobenius.
+
+At an active orbit the local adjoint Lie algebra over its unramified
+coefficient field is split by its positive Hodge root line, as in
+Section~\ref{sec:adjoint}. Let \(B\) lift the local linear projective
+action. Distinct eigenvalue valuations of \(B\) are integers by
+the quadratic Newton polygon. Hence the gap at every active orbit
+is zero or one, since \(d\le1\). For an active singleton, the
+coefficient field is \(\Q_p\) and \(B\) can be chosen in
+\(\mathrm{GL}_2(\Q_p)\). In this basis the semilinear projective
+Frobenius is \(B\sigma\), so Kottwitz gives its determinant valuation
+odd. The local calculation of Section~\ref{sec:adjoint} gives
+valuation at least one at a flat active singleton and minus one
+at a nonflat singleton for \(T=(\operatorname{Tr}B)^2/\det B\).
+At any flat label, the invariant \(T=1+\operatorname{Tr}(\operatorname{Ad} B)\)
+has nonnegative valuation, as the adjoint eigenvalue valuations are zero.
+
+In both realizations linear Frobenius normalizes the derived group and
+fixes its factors individually. Their automorphisms are inner and
+Frobenius preserves the \(E\)-blocks. On a block its action is
+therefore a scalar times \(\bigotimes_{\rho\in C_\lambda}B_\rho\), by
+Schur's lemma. If \(a_\lambda,\delta_\lambda\) are the block trace and
+determinant, this gives
+\[
+ U=\prod_\lambda\frac{a_\lambda^h}{\delta_\lambda}
+  =\prod_\rho T_\rho^{ch/2}.
+\]
+The relative polynomial comparison in Section~\ref{sec:coefficients}
+makes \(U\) rational with denominator a power of \(p\), and the Weil
+bound makes it bounded independently of \(v\). If all active labels
+are flat, it is integral at \(p\). Otherwise a failure can only be
+one flat active singleton and one nonflat active singleton, since
+there are at most two active labels. Their valuations also make
+\(U\) integral at \(p\).
+On every component inducing the identity on the centroid, the regular
+function \(U\) is nonconstant. Multiply a representative by a derived
+element to centralize the derived group. The block scalars then cancel
+in \(U\), and varying one simple coroot varies just its \(T_\rho\).
+Algebraic Chebotarev rules out the finitely many integer levels. This
+proves the claimed ordinary criterion. It applies after every finite
+extension of \(K\) with the same label set and the restricted Galois
+action, so Chebotarev also yields the least extension assertion.
+\end{proof}

@@ -190,12 +190,16 @@ linear forms selected by the two exact powered letters.
 The number of places can grow. Root-choice and
 exponent-vector catalogues cost only an exponential in
 the number of primes, which is height-subpower.
-A cheap lock of fixed positive numerical weight on
-the third letter therefore gives an exponent saving
-when two weighted powers have an adaptive common
-order \(k\) above the \(L^{-1/3}\) scale and the
-coefficient dictionary has a fixed gap below the
-one-third price. This leaves the extraction of such
-powers from arbitrary balanced valuations open.
+A cheap divisor of fixed positive numerical weight \(w\)
+on the third letter gives a simpler finite-height count.
+Fix the actual coefficient and divisor records and recover
+the primitive slope as soon as \(kw>2\). The count thereby
+allows any threshold \(K(L)\to\infty\), or a qualifying fixed
+lower order, and the divisor may contain primes dividing \(k\).
+The sector saving follows when the two records together
+cost less than one third by a fixed margin. The Subspace
+Theorem route above gives the separate unbounded-height
+cardinality bound. Extracting affordable power representations
+and divisors across arbitrary balanced profiles remains open.
 [Evertse–Ferretti, Theorem 3.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v177-n2-p04-p.pdf#page=11)
-· [Moving full divisor and adaptive shared-order consequences (CPW3–CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#uniform-upper-bounds-once-the-shift-part-is-larger)
+· [Elementary finite-height count (CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#an-adaptive-common-power-sector-with-a-third-letter-lock)

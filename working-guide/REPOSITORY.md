@@ -13,7 +13,7 @@ Read [the root instructions](../AGENTS.md) before starting; use
 | `research/MATH_STATUS.json` | Structured current mathematical status | Stated scope, proof dependencies, source pins, open gaps and separate assurance flags |
 | `research/STATUS.md`, `research/SCOPES.md`, `research/DEPENDENCIES.md` | Generated navigation | Status, scope audit and implication diagrams from `make render-navigation`; edit the structured source |
 | `unpublished/` | Manuscripts in preparation | Paper source, current PDF, build instructions, metadata, verification scope and next review tasks |
-| `results/<paper>/` or `results/published/<paper>/` | Current edition of a released or submitted paper | Best current source and PDF, build instructions, local revision status, verification scope and review tasks |
+| `results/<paper>/` | Current edition of a released or submitted paper | Best current source and PDF, build instructions, local revision status, verification scope and review tasks |
 | `published/` inside a paper directory | Immutable deposited edition | Exact deposited files, checksums, identifiers and submission metadata |
 | `working-guide/` | Reusable working standards | Policies and reusable procedures, without per-result progress records |
 
@@ -190,3 +190,11 @@ bounds. Use `python3 research/scripts/research.py coverage`, `references`,
 `bounds --opportunities` and `opportunities` to locate omissions and affected work.
 Equivalent statements retain separately proved directions in acyclic components;
 proofs never acquire assurance flags through propagation.
+
+## Canonical workspace
+
+The active checkout is `/home/royvanrijn/src/jacobian-research` in Ubuntu-24.04 WSL.
+The Windows path `C:\home\royvanrijn\src\jacobian-research` is a directory link to
+that same checkout, not a second repository. Use WSL Git for commits and pushes.
+Before a Git operation, confirm `git rev-parse --show-toplevel` identifies this
+checkout; do not resume work in an archived Windows snapshot.

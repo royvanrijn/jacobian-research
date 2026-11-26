@@ -228,11 +228,24 @@ order count.
 This proves APC2 without a uniform
 subspace-theorem constant in \(k\).
 
-With \(t=1/(1+2a)\), the heavy exponent
-is \(a/(1+2a)<1/3\). Thus when \(b_0\)
-and the third-lock price are sufficiently
-small, the separation assumption is a
-strict saving in the original count.
+For \(0\le\mu<1/3\), the heavy branch decreases
+in \(t\), and the light branch is nondecreasing.
+An optimal split and the resulting exponent are
+\[
+ t_*=\frac{1-3\mu}{1+2a},\qquad
+ E=b_0+\frac{a+(1-a)\mu}{1+2a}.
+\]
+At \(a=0\) the light branch is constant, and
+this split is still optimal. For \(a=1/2\) the
+exponent is \(1/4+b_0+\mu/4\). The available
+saving below one third, before count allowances,
+is
+\[
+        \frac{(1-a)(1-3\mu)}{3(1+2a)}-b_0 .
+\]
+The formula includes the actual third-divisor
+price in the choice of the split. A fixed positive
+value in the last display gives a strict saving.
 In a balanced chart with individual caps
 \(1/3+o(1)\), one may also use the light
 bound \(2a/3+\mu+o(1)\) when every
@@ -260,6 +273,191 @@ independently for each row without a
 bounded catalogue does not give this
 count.
 [Valuation coordinate bases in rational cosets (VS1)](ABC_VALUATION_SPAN_COSETS.md#counting-low-rank-cosets-by-separating-valuations)
+
+## Price of a cover by small relative coefficient heights
+
+Let \(n=X^L\) and consider genuine primitive shell rows with
+the original total radical budget \(L\), retaining any separate
+letter caps and repair eligibility. Fix an orientation of two
+letters \(U,V\) and put \(W\) for the third. Suppose a row
+admits an assigned representation
+\[
+            U/V=Q r^k,\qquad H(Q)\le X^{C_Q},\qquad
+                            H(r)\le X^{C_r/k},
+\]
+with \(Q,r\) positive rationals, fixed \(C_Q,C_r>0\), and
+\(k\) a positive integer. All prime divisors in the numerator
+or denominator of \(Q,r\) lie in the support of \(UV\).
+For instance \(r=x/y\) for two exact weighted powers of
+common order \(k\), and \(Q=A/B\). Canonical coefficients
+give \(C_r=1\). Signed coefficients from rounding each
+valuation \(e/k\) to a nearest nonnegative integer also
+fit, with \(C_r=2\). The rounded root degree \(q\)
+vanishes if \(e<k/2\), and otherwise \(kq\le2e\).
+Unequal literal orders can first be regrouped at any
+common divisor, using the corresponding effective roots.
+
+For each row suppose that \(W\) has a divisor \(D\) with
+\[
+ X^w\le D\le X,\qquad \operatorname{rad}(D)\le n^\mu,\qquad
+         p^e\parallel D\ \Longrightarrow\ Le\ge\sigma
+\]
+for fixed \(w,\sigma>0\). At each order and orientation
+take a prescribed catalogue of at most \(n^{b_0+o_X(1)}\)
+prime pools \(S\) with
+\(\sum_{p\in S,\ p\le X}p^{-a}=o(\log X)\) uniformly
+for fixed \(0\le a<1\). As in APC2 the support of the
+projection of \(Q\) to \(S\) is the squarefree product
+\(R_S\) of primes with nonzero valuation there. At
+orders \(k>C_r\log_2 X\) the root is one and the slope
+is \(Q\) itself. Combine these orders in one state,
+with the same uniform pool and cover requirements.
+
+Fix \(0<t\le1\). On the light branch \(R_S<n^t\),
+after fixing \(k,S,D\) and the exact signed projection
+\((v_p(Q))_{p\in S}\), assume the actual ratios in that
+class are covered by at most \(n^{b_1+o_X(1)}\) subsets
+with pairwise relative height
+\[
+                 H(Q_1/Q_2)\le X^{c\min(1,kL)}.
+                 \tag{APC4a}
+\]
+Use right side \(X^c\) in the combined root-one state.
+The cover can be chosen conditionally in each such
+class. In particular an absolute height bound for the
+class representative is already supplied by membership.
+A ball around an arbitrary rational center with half
+the exponent in (APC4a) satisfies the diameter bound,
+by \(H(z_1/z_2)\le H(z_1)H(z_2)\).
+
+**APC4.** For every fixed \(\eta>0\) there are
+\(c>0\), an integer \(k_0\), and \(L_0>0\) depending
+on the fixed numerical data and allowance such that,
+for \(0<L<L_0\) fixed and \(k\ge k_0\), the count under
+the preceding conditions is
+\[
+ O\left(n^{\,b_0+\max\{(1-(1-a)t)/3,\ at+\mu+b_1\}+\eta}
+                                   X^\varepsilon\right).
+ \tag{APC4b}
+\]
+In particular the theorem allows every lower threshold
+\(K(L)\to\infty\). Put \(u=\mu+b_1\). For \(u<1/3\),
+if the light-branch cover is available at
+\(t=(1-3u)/(1+2a)\), the optimized exponent is
+\[
+ b_0+\frac{a+(1-a)u}{1+2a}.
+\]
+When \(b_1=0\) this is exactly APC2's optimized
+exponent, with the separation of exact ratios
+replaced by a subpower cover at the stated
+relative width. The additional lower-depth
+condition on \(D\) is used in the proof.
+
+The heavy branch uses the EB5 proof in APC2 verbatim.
+It prices actual primes of \(UV\) at discount
+\(1-a\) in the original three-letter budget. On
+the light branch there are at most \(n^{at+o_X(1)}\)
+projected supports and \(X^{o_X(1)}\) signed exponent
+vectors per support. There are \(n^{\mu+o_X(1)}\)
+possible \(D\)'s. Count after fixing these data and
+one member of the prescribed cover. Choose one
+actual coefficient ratio \(Q_0\) from that subset
+as a reference. It can depend on these fixed
+data, with no further catalogue charge. Both
+\(Q_0\) and all \(Q,r\) in the subset are units
+at \(D\). Put \(z=Q/Q_0\).
+The primitive equation yields
+\[
+                 r^k z=(U/V)/Q_0\equiv\pm Q_0^{-1}\pmod D .
+\]
+The sign is fixed by the orientation of the addition.
+For fixed \(Q_0\), each distinct output \(r^kz\)
+determines \(U/V\) and hence the original coprime
+pair and row. Outputs have polynomial height
+uniformly in the class.
+
+Let \(K=\lfloor\sigma/L\rfloor\), so \(D\) is \(K\)-full.
+Choose a fixed output amplification order \(\ell\)
+with \(2/(\ell\sigma)<\eta/4\). For \(k\le J/L\)
+with \(J\) fixed, use the rational two-base congruence
+count with exponents \(k,1\) and numerical bounds
+\(\xi_r=C_r/k,\ \xi_z=c\min(1,kL)\). The amplified
+height constants \(C_i=\max(1,\ell K\xi_i/w)\)
+satisfy
+\[
+ \frac{C_1C_2}{K}\ \le\
+ \frac{1}{K}+\frac{\ell C_r}{wk}+\frac{\ell c}{w}
+                             +\frac{\ell^2\sigma C_r c}{w^2}.
+\]
+Choose \(k_0\) large, \(c\) small and then \(L_0\)
+small so this lies below the absolute reciprocal
+constant of that count. The output count per class
+is \(O(n^{\eta/4}X^\varepsilon)\), using
+\(\log_X D\le1\) and \(K L\ge\sigma/2\). Its
+constant is uniform over \(Q_0\) and \(D\). The
+orders used in this step form a finite list
+at each fixed budget. [Rational distinct-output congruences and amplification](ABC_SIGNED_VALUATION_PHASES.md#a-rational-congruence-bound-for-distinct-exact-outputs)
+
+For \(k>J/L\), enumerate rationals \(r\) of height
+at most \(n^{C_r/J}\) at cost \(O(n^{2C_r/J})\).
+The prescribed unit congruence then determines \(z\):
+two such rationals congruent modulo \(D\) have a
+cross determinant of absolute value at most \(2X^{2c}\),
+which is smaller than \(D\) if \(2c<w\) and the height
+is large. Use \(2C_r/J<\eta/4\). The total number
+of noncollapsed orders is logarithmic in \(X\).
+In the collapsed state \(r=1\) the same uniqueness
+applies, with no order enumeration. Adding the
+actual cover size, catalogue costs and allowances
+proves (APC4b). No separate lower bound on the
+radical of \(D\) or restriction on its primes is used.
+
+### Charging a centre's shared high-degree remainders
+
+There is a second count for such covers that uses
+the original radical budget directly. Let the row
+have raw radical mass at least \(\rho\) on primes
+satisfying
+\[
+                   |v_p(Q)|\ \ge \theta \min(k,1/L)
+\]
+for fixed \(\theta>0\). In a subset satisfying
+(APC4a), the total absolute valuation weight of
+\(Q/Q_0\) is at most \(2c\min(1,kL)\) in base \(X\).
+At any such prime outside \(\operatorname{supp}(Q_0)\)
+the contribution is at least
+\(\theta\min(k,1/L)\log_X p\). Hence the row shares
+at least \((\rho-2c/\theta)_+\) of its original raw
+radical with the center. The same proof in the
+root-one state uses cutoff \(\theta/L\). This
+argument can use any fixed \(c>0\), without the
+numerical restriction of the local congruence count.
+
+Suppose a catalogue of pairs \((D,Q_0)\) with center
+height \(X^{O(1)}\) and count \(n^{b+o_X(1)}\) is
+prescribed, and each assigned \(D\mid W\) has raw
+radical at least \(d_0\). For this count only, one
+may also take \(D=1,d_0=0\), so no modulus depth
+or height is required. The reference can be an
+actual ratio in the same divisor state, so its
+support is disjoint from \(D\). In any case the
+row's shared center primes occur on \(UV\), and
+are disjoint from \(D\) by primitivity. The
+prescribed polynomial-height pool
+\(\operatorname{supp}(D)\cup\operatorname{supp}(Q_0)\)
+can be priced at zero by EB5. Its captured raw
+mass is at least \(d_0+(\rho-2c/\theta)_+\).
+Summing the catalogue gives coefficient at most
+\[
+                   b+\frac{1-d_0-(\rho-2c/\theta)_+}{3}
+\]
+up to any fixed positive counting allowance at
+small fixed budgets. Thus a wide relative cover
+can still save where its centers capture more
+than three times their raw catalogue price,
+with the divisor capture included. This uses
+the actual supports and all three original
+radical caps. [Zero-price polynomial-height prime pools (EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
 
 ## Full coefficient price on a primitive two-cap matching
 
@@ -400,3 +598,57 @@ fixed during each height limit. The claim
 covers the exact divisor-grid assignments
 in FV1.
 [Several adaptive divisor grids (FV1)](ABC_FINE_VALUATION_DIVISIBILITY.md#a-bounded-number-of-adaptive-valuation-grids)
+
+
+## The extraction obligation with all three original caps
+
+Put \(n=X^L\). Suppose that a sequence of fixed
+budgets \(L_i\downarrow0\) has genuine original
+primitive shell families of exponent
+\(1/3-o_i(1)\) at arbitrarily large inner
+heights. A sufficient extraction keeps at
+least \(n^{1/3-\varepsilon_0}\) rows for fixed
+\(\varepsilon_0\ge0\), with a count exponent
+at most \(1/3-\Delta\) before arbitrarily
+small allowances, for some fixed
+\(\Delta>\varepsilon_0\). The outer budgets
+and inner heights remain a subsequence of
+the given ones. Use two genuine powered roles
+and a divisor of fixed positive numerical
+weight on the third role. Allow the power
+order to tend to infinity with the outer
+budget or use a qualifying fixed lower order.
+
+By CPW5 a direct joint coefficient and
+divisor catalogue suffices if its total
+price is at most \(1/3-\Delta\). By APC2
+a prescribed separating-pool catalogue
+suffices if
+\[
+       b_0\le
+       \frac{(1-a)(1-3\mu)}{3(1+2a)}-\Delta,
+           \qquad 0\le a<1,\quad 0\le\mu<1/3 .
+\]
+Here \(\mu\) charges the true third divisor and
+\(b_0\) the true number of pool states. If the
+records split into finitely many regimes before
+the inner limits, sum their actual prices or
+retain one regime at the stated extracted
+exponent. Choose the count allowances and
+\(\varepsilon/L_i\) at each fixed budget
+inside \(\Delta-\varepsilon_0\). Either
+count then contradicts the extracted lower
+bound at arbitrarily large heights. This
+would eliminate all near-saturation sequences
+to which the extraction applies.
+
+APC3 shows why retaining the third original
+cap matters. Two capped operands can
+carry the entire coefficient dictionary
+even after adaptive unequal orders and with
+large heights and primitive addition.
+Their third letters can have large radicals.
+The open input is a numerical or arithmetic
+restriction on this joint coefficient and
+divisor data in actual three-cap families.
+[Elementary common-power reconstruction (CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#an-adaptive-common-power-sector-with-a-third-letter-lock)

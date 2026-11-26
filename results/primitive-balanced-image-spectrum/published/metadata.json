@@ -1,0 +1,33 @@
+{
+  "title": "The primitive balanced-degree spectrum in the two-pair Image problem",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Determines the exact primitive, absolutely nonpower balanced failure spectrum in two contraction pairs and proves density-one ordinary reduction after finite extension for Rosati-compatible rank-two CM multiplication with at most two balanced pairs.",
+  "status": "published-preprint",
+  "publication_date": "2026-11-26",
+  "hexagon": "https://hexagonmath.org/2611.01080v1",
+  "license": "CC-BY-4.0",
+  "source": "source.zip",
+  "source_bundle": "source.zip",
+  "original_upload": "primitive-balanced-image-spectrum-hexagon-source.zip",
+  "pdf": "paper.pdf",
+  "verification": {
+    "scope": "The Hexagon PDF, the original upload ZIP and all five public source members match the venue’s SHA-256 records. The local reviewed PDF differs from the venue-compiled PDF. The exact same TeX is retained in the current edition.",
+    "limits": "External mathematical review and reproduction by an external reviewer have not been performed. The paper is not formally verified.",
+    "evidence": [
+      "../verification.json",
+      "../ordinary-reduction-literature.md"
+    ]
+  },
+  "publication_record_checked": "2026-11-26",
+  "current_edition": "../",
+  "abstract": "Over every characteristic-zero field, the balanced degrees admitting radially primitive, absolutely nonpower two-pair Image counterexamples are precisely \\(4,6,7,8,\\ldots\\). All pure balanced phases through degree three are safe, as are all pure radially primitive balanced quintics. One explicit integer family realizes the failure degrees with a common marker of balanced degree one that detects every positive power. We also prove that an abelian variety with Rosati-compatible rank-two multiplication by a CM field has ordinary primes of density one after finite extension if at most two conjugate embedding pairs have Hodge multiplicities \\((1,1)\\). The full geometric endomorphism algebra may be larger than the acting field. In the quintic proof, this theorem supplies ordinary reduction for factors of cyclic covers whose Frobenius coefficients detect nonzero polynomial moments.",
+  "abstract_format": "latex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  }
+}

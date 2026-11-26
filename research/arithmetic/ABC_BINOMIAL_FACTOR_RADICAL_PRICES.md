@@ -501,3 +501,39 @@ the original raw radical budget.
 [The half-price estimate (MCB2)](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md#bounded-group-dictionaries-with-arbitrary-fixed-coefficients)
 · [Small-budget one-third estimate](ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13)
 · [The original one-third limiting count](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md#the-unrestricted-one-third-endpoint)
+
+
+## The remaining fresh-radical estimate
+
+For a concrete choice, take \(E_a=E_b=E_c=\{2,3,6\}\).
+There are four distinct nonlinear factors and three linear
+factors. The coefficient in BFR4 is at most
+\(\min\{t/7,(1+t)/10\}\) at original total budget one.
+Consequently a fixed loss \(\sigma>0\) below the
+fresh-union radical exponent \(7/3\) gives an
+original exponent of at most \(1/3-\sigma/7\),
+up to any fixed positive allowance.
+
+The missing selection statement can use any single
+fixed index catalogue with \(\ell\ge2\), and set
+\(q=J+\ell\). Suppose there is a sequence of fixed
+budgets \(L_i\downarrow0\) along which original rows
+in height shells reach exponent \(1/3-o_i(1)\) in
+base \(n=X^{L_i}\) at arbitrarily large inner
+heights. A sufficient selection statement asserts
+that some such fixed catalogue and some fixed
+\(\sigma>0\) retain exponent \(1/3-o_i(1)\) on a
+subsequence of those budgets and heights while the
+outside union radical is at most \(n^{q/3-\sigma}\).
+The pool may be prescribed at each inner height
+under a common polynomial height bound. If using a
+number of prescribed pools of exponent \(b\), take
+\(b<\sigma/q\) by a fixed margin. The original
+three radical caps are retained. With these
+quantifiers BFR4 contradicts the selection. The
+statement gives a route for every \(\alpha\in[1/6,1/3]\),
+including occurrence, because the count has no
+positive complete-fibre or dictionary hypothesis.
+The existing prime-support and residue estimates
+only give lower prices for the cyclotomic outputs.
+They do not supply this upper price for actual rows.

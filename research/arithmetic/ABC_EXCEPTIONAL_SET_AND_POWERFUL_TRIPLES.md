@@ -10799,20 +10799,21 @@ tends to zero, and it leaves the whole displacement
 radical unrestricted.
 [Coprime short-power windows (CPW1–CPW2)](ABC_COPRIME_SHORT_POWER_WINDOWS.md)
 
-A quantitative Subspace Theorem application gives the
-complementary upper bound when two original letters
-are weighted exact powers sharing a sufficiently
-large order and the third has an economical full
-divisor of fixed positive numerical weight. Finite
-prime sets may vary with the row. Catalogue the
-support and the two coefficients at their actual
-joint costs. The remaining primitive lift exponent
-is \(O(1/k^3)\), so any adaptive common order above
-the \(L^{-1/3}\) scale and a fixed margin in the
-record price gives a small-budget saving in this
-sector. The unbounded-order branch is treated
-before the bounded-order application.
-[Subspace Theorem transfer (CPW3–CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#uniform-upper-bounds-once-the-shift-part-is-larger)
+A quantitative Subspace Theorem application gives an
+unbounded-height cardinality estimate for weighted powers
+with a fixed finite set of places. At finite height the
+shared-order sector has a simpler bound. After fixing the
+actual coefficient and third-divisor records, the original
+addition fixes a unit power residue of the primitive slope.
+Its denominator and numerator are too small for different
+slopes to coincide there when \(X^{2/k}<D\). Thus a fixed
+divisor height \(D\ge X^w\) allows any order threshold
+\(K(L)\to\infty\) or any fixed lower order with \(kw>2\).
+Primes dividing the order are allowed. The coefficient
+and divisor catalogue prices give the resulting strict
+sector margin. The large-order branch enumerates the
+small roots. [Shared-order sector (CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#an-adaptive-common-power-sector-with-a-third-letter-lock)
+· [Unbounded-height statement (CPW3)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#uniform-upper-bounds-once-the-shift-part-is-larger)
 
 ## Primitive slopes and radical prices of power differences
 
@@ -10842,8 +10843,15 @@ coefficient price on a diffuse spectrum. It does not force
 the coefficient width needed at the same order and modulus.
 An alternative count works when a cheap catalogue of prime
 pools separates the actual canonical coefficient ratios.
-A primitive matching with two original radical caps forces
-a full coefficient price even with adaptive orders.
+Balancing the two pool branches gives the exponent
+\(b_0+[a+(1-a)\mu]/(1+2a)\), where \(\mu\) is the
+third-divisor price. A primitive matching with two original
+radical caps forces a full coefficient price even with adaptive
+orders. An extraction with row loss smaller than the
+available coefficient and divisor saving would give the
+unrestricted gain. The open extraction uses all three
+radical caps.
+[Quantified extraction obligation](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#the-extraction-obligation-with-all-three-original-caps)
 [Moving coefficient count and the centered benchmark (MPC1–MPC2)](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md)
 · [Separating pools and the matching obstruction (APC1–APC3)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md)
 
