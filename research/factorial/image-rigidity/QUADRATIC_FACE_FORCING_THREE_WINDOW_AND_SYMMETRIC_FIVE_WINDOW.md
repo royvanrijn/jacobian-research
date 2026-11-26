@@ -266,34 +266,37 @@ Indeed any common algebraic root would, by(10), also satisfy T_(M+1)=0:
 d_M is a unit. That would contradict Theorem1. This is a statement about
 all roots in the algebraic closure, not just a particular root packet.
 
-The already proved canonical residual classification
-[the quadratic-face residual classification](QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md),
-SHA256 736e2675513962010892597610563b2d00a1e8047e20e322efd8c7d665404be2,
-Theorem1, says any characteristic-zero triple must have
-
- M=q(4q+3)^2,
- z=-8q(q+1)(2q+1)+/-sqrt(-3q(q+1)), q>=1, q=1 or2 modulo4.
-
-Every such embedding into Q_2bar has v(z)=1/2. A characteristic-zero common
-root is algebraic: Pi_M makes z algebraic over Q and T_k has constant
-nonzero leading coefficient (2k)! as a polynomial in r. The resulting
-number field embeds into Q_2bar. Theorem1 rules out the alleged triple.
-For the displayed family put omega^2=-3q(q+1). Then z+M=q+omega and
-
- Pi_M(z)=(2(z+M)+4q+3)[(z+M)^2-2q(z+M)+q(4q+3)]=0.
-
-For q=1 or2 modulo4, v(omega)=1/2 while the rational center of z has
-valuation4. Hence every 2-adic embedding of z has valuation1/2. Corollary4
-therefore proves every residual pair-coprimeness assertion directly, without
-using the classification as a premise: a hypothetical common algebraic root
-would embed and contradict the local result. This closes that entire
-remaining arithmetic criterion, rather than a finite list of q.
-
 **Corollary 5 (universal quadratic-face three-window).** For every
 characteristic-zero field, every r,z with z!=0, and every k>=1,
 T_k,T_(k+1),T_(k+2) are not all zero.
-The global statement imports exactly the proved residual necessity above;
-no open anti gate, pair-coprimeness conjecture, or finite-case premise is used.
+
+By the cubic constraint (5), a hypothetical triple at middle index M
+makes z a root of
+
+ Pi_M(z)=2z^3+(6M+3)z^2+6M(M+1)z+M(M+1)(2M+1).
+
+Let s=v_2(M(M+1))>=1. The four coefficient valuations are
+s,s+1,0,1 in increasing index order, so the lower Newton polygon
+has vertices (0,s),(2,0),(3,1). Thus v(z) is -1 or s/2.
+The [negative branch theorem](QUADRATIC_FACE_FORCING_NEGATIVE_TWO_ADIC_BRANCH.md)
+excludes -1, the
+[positive branch theorem](QUADRATIC_FACE_FORCING_POSITIVE_VALUATION_BRANCHES.md)
+excludes s/2>=1, and Theorem1 excludes the remaining value 1/2.
+For the field transfer, Pi_M makes z algebraic over Q. The polynomial
+T_k(r,z) has nonzero leading coefficient (2k)! in r, so a common root
+r is also algebraic. Embed their number field into an algebraic closure
+of Q_2 and apply the three branches.
+
+The [earlier parametrized residual family](QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md)
+still has a direct pair-coprimeness proof. For M=q(4q+3)^2 and
+z=-8q(q+1)(2q+1)+/-omega with omega^2=-3q(q+1), one has
+
+ Pi_M(z)=(2(z+M)+4q+3)[(z+M)^2-2q(z+M)+q(4q+3)]=0.
+
+For q=1 or2 modulo4, v(omega)=1/2 and the rational center has
+valuation4. Corollary4 proves the pair-coprimeness assertion for
+every such q. The universal three-window above uses the cubic
+valuation alternatives alone.
 
 Finally use the canonical full symmetric interior recurrence, Section2
 Equation10 of [the symmetric quadratic proof](FULL_SYMMETRIC_BINARY_QUADRATIC_STRONG_FACTORIAL.md),
@@ -319,16 +322,14 @@ series investigations remain separate; no such hypothesis is seeded here.
 
 ## 8. Exact proof inputs and scope
 
-Sections1--6 and the critical-half pair statement are proved here directly
-from factorial coefficients and valuations. The explicit residual-family
-substitution also gives its pair-coprimeness conclusion independently of the
-classification theorem. The global three-window uses exactly Theorem1 of
-[the residual classification](QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md),
-with the SHA256 displayed above. The symmetric application additionally uses
-only the pinned polynomial interior recurrence from
-[the symmetric quadratic proof](FULL_SYMMETRIC_BINARY_QUADRATIC_STRONG_FACTORIAL.md).
-
-No formal completion, anti-coefficient hypothesis, finite enumeration,
-Newton-factor transfer, or divided-power Hensel theorem is a proof premise.
-The proof establishes no converse to an unused anti-coefficient gate and no
-general nonsymmetric binary quadratic theorem, full SFC(2), or SFC(3).
+Sections1--6 and the critical-half pair statement use factorial
+coefficients and valuations directly. Corollary5 adds Theorem1 of the
+[negative branch](QUADRATIC_FACE_FORCING_NEGATIVE_TWO_ADIC_BRANCH.md)
+and Proposition1 of the
+[positive branch](QUADRATIC_FACE_FORCING_POSITIVE_VALUATION_BRANCHES.md).
+The negative branch uses the all-unit divided-power factorization
+stated in its proof. The symmetric application additionally uses
+the pinned polynomial interior recurrence from the
+[symmetric quadratic proof](FULL_SYMMETRIC_BINARY_QUADRATIC_STRONG_FACTORIAL.md).
+The monic anti-coefficient gate and the rational classification of
+the residual cubic are separate questions.

@@ -412,6 +412,60 @@ actual cover size, catalogue costs and allowances
 proves (APC4b). No separate lower bound on the
 radical of \(D\) or restriction on its primes is used.
 
+### Comparable unequal orders by rational approximation
+
+The same count and prices apply to two independently
+chosen literal orders \(k_1,k_2\) with
+\(\kappa_-\le Lk_i\le\kappa_+\) for fixed positive
+\(\kappa_-,\kappa_+\). Assume
+\(U/V=Qx^{k_1}/y^{k_2}\),
+\(H(x)\le X^{C/k_1}\), \(H(y)\le X^{C/k_2}\),
+and the same support condition on \(Q,x,y\).
+Take \(S\) at the actual pair of orders and require
+the light cover for original \(Q\) with diameter
+\(H(Q_1/Q_2)\le X^{c'}\) for a sufficiently small
+fixed \(c'>0\). No common divisor of the literal
+orders is required.
+
+Fix a large integer \(M_0\). The pigeonhole
+principle applied to the fractional parts of
+\(j k_2/k_1\) for \(0\le j\le M_0\) gives
+\(1\le a_1\le M_0\) and an integer \(a_2\) with
+\[
+             |a_1 k_2/k_1-a_2|\le 1/M_0 .
+\]
+For \(M_0>\kappa_+/\kappa_-\) we have \(a_2>0\).
+Let \(g\) be a nearest integer to \(k_1/a_1\) and
+\(E_i=k_i-a_i g\). Then
+\[
+ |E_1|\le a_1/2,\qquad |E_2|\le k_1/(a_1 M_0)+a_2/2,\qquad
+ \frac{\kappa_-}{2M_0}\le gL\le \kappa_++1
+\]
+at small fixed budgets. For
+\(r=x^{a_1}/y^{a_2}\) and
+\(z=(Q/Q_0)x^{E_1}/y^{E_2}\), we have the exact
+identity \(r^g z=(U/V)/Q_0\).
+The bound \(a_i/k_i\le2/g\) for small \(L\) gives
+\(\log_X H(r)\le4C/g\). The error powers contribute
+at most
+\[
+ \frac{C(|E_1|/k_1+|E_2|/k_2)}{gL}
+       \le \frac{2C}{M_0\kappa_-}+O_{\kappa_-,\kappa_+,C}(L M_0^2).
+\]
+First set the local width \(c\) from the congruence
+argument with root height constant \(4C\). Choose
+\(M_0\) large, then \(c'\) small using the positive
+lower bound on \(gL\), and then \(L\) small, so the
+sum of the two error powers and the original
+relative-height charge \(c'\) is at most
+\(c\min(1,gL)\). Now use the same distinct-output
+count with order \(g\). This regrouping occurs
+inside the relative-height completion step.
+The prime projection and the heavy branch still
+use the original \(Q\), and the number of
+literal order pairs is finite at each fixed
+budget before the height limit.
+
 ### Charging a centre's shared high-degree remainders
 
 There is a second count for such covers that uses
@@ -458,6 +512,136 @@ than three times their raw catalogue price,
 with the divisor capture included. This uses
 the actual supports and all three original
 radical caps. [Zero-price polynomial-height prime pools (EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
+
+### Weighted overlap and distances at balanced saturation
+
+There is a sharper support charge when coefficient
+valuations satisfy \(|v_p(Q)|\le B k\) for fixed \(B>0\).
+For a projection on a prescribed pool \(S\), define
+\[
+ \mathcal W_S(Q)=\sum_{p\notin S}\frac{|v_p(Q)|}{k}\log_n p .
+\]
+Let \(Q_0\) be a reference in the same class and
+suppose \(H(Q/Q_0)\le X^{c kL}\). Outside the support
+intersection, the absolute valuation contributions
+from \(Q\) and \(Q_0\) are disjoint and sum to at
+most \(2c\) in the units of \(\mathcal W_S\).
+On the shared support outside \(S\), the two
+weights together cost at most \(2B\) per unit of
+raw radical mass. Thus
+\[
+ \log_n\left(\prod_{\substack{p\notin S\\p\in\operatorname{supp}(Q)
+                                  \cap\operatorname{supp}(Q_0)}}p\right)
+     \ \ge\ \frac{(\mathcal W_S(Q)+\mathcal W_S(Q_0)-2c)_+}{2B}.
+ \tag{APC5}
+\]
+In particular if both weights are at least \(A\)
+then a fixed polynomial-height center captures
+at least \((A-c)_+/B\) outside the projected primes.
+That captured mass can be added to the projected
+and actual third-divisor masses in the zero-price
+EB5 count. This argument does not need a third
+divisor to exist and is independent of the
+congruence height threshold in APC4.
+
+For a consequence at the balanced endpoint, use
+a near-saturating sequence of genuine rows with
+stabilized scaled valuation profiles, with the
+inner height limit at each fixed budget as usual.
+On two chosen roles let \(M\) be the combined
+nonatomic radical mass. One can restrict the
+prime slots of each row on those roles to
+submeasures converging to the nonatomic parts
+of the two profiles. For each fixed precision,
+remove small neighborhoods of finitely many
+atoms covering all but that precision of the
+atomic mass, with continuity endpoints and with
+nonatomic mass below that precision. Cut off the
+low and high ends with the same negligible
+nonatomic loss, again at continuity endpoints.
+Uniform weak convergence then gives the
+restricted profile at that precision. Let the
+precision tend to zero sufficiently slowly
+across the outer budgets. The degree-index
+selectors are fixed at each retained budget
+before using arbitrarily large inner heights.
+In particular the selection never fixes a
+prime value or charges a record of such values.
+
+Choose common fine-grid orders \(k\in[K,2K)\)
+with \(K\asymp L^{-\alpha_0}\), \(1/2<\alpha_0<1\).
+For each row define its observed \(Q\) as the
+signed centered remainder ratio using just
+those selected prime slots on the two roles.
+In this paragraph \(Q\) is an observable
+rather than the complete coefficient in
+an exact power representation. It is
+supported on original letters and has
+\(|v_p(Q)|\le k/2\). The two signed moment
+calculations in MPC2 give
+\[
+ \mathcal W_{\varnothing}(Q)=M/4+o(1),\qquad
+             \frac{\log_X H(Q)}{kL}=M/8+o(1)
+\]
+for all but a proportion tending to zero of
+the orders, uniformly over the stabilized rows.
+Uniformity follows by choosing violating rows
+along a subsequence and applying the same
+compact-band and resonance argument to their
+convergent restricted profiles. Averaging the
+bad-order proportions over the rows shows that
+for all but a proportion tending to zero of the
+orders these conclusions hold on all but a
+proportion tending to zero of the rows.
+[Centered remainder moments on nonatomic bands (MPC2)](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md#centred-remainder-benchmark-on-diffuse-spectra)
+
+Fix \(0<\delta<M/4\). At such an order and
+sufficiently late fixed budget, call a row good
+if both displayed conclusions hold with
+tolerance \(\delta/4\) or smaller. For any
+fixed good reference row, (APC5) with \(B=1/2\)
+implies that other good rows with
+\[
+                 \log_X H(Q/Q_0)\le (M/4-\delta) k L
+\]
+share at least \(3\delta/2\) raw radical mass
+with that reference coefficient support.
+Each reference support has polynomial height
+and is fixed in the count, even if it was
+chosen from the family. EB5 on the original
+three caps bounds the number of these good
+neighbors uniformly by
+\(O(n^{1/3-\delta/3}X^\varepsilon)\).
+On a near-saturating family this is a power-small
+fraction at all sufficiently late budgets,
+after taking \(\varepsilon/L\) small. For
+two good rows the elementary height product
+bound also gives
+\(\log_X H(Q/Q_0)\le(M/4+o(1))kL\) as the
+tolerance decreases. Thus the normalized
+relative heights of typical pairs tend to
+\(M/4\), the sum of the two typical individual
+height coefficients. For every fixed deficit
+the bound for pairs of good rows is quantitative
+and loses a fixed power.
+
+Balance and the one-third diffusion theorem
+give total nonatomic mass at least \(1/2\).
+Choose the two most diffuse roles, which gives
+\(M\ge1/3\). The conclusion therefore reaches
+every balanced limiting profile, including
+mixed atomic profiles after the stated
+restriction. It requires no assumption on
+complete dictionary exponent, multiplicity
+or existence of full divisors in a cell.
+It shows why the individual numerical
+height bound from fine-grid centering
+does not by itself provide a low-cost
+relative cluster. The result concerns the
+actual observable on the selected slots.
+It does not assert the same pair law for
+the full coefficients before removing the
+atomic parts. [One-third balance and diffusion](ABC_WIDE_COFACTOR_CONGRUENCES.md#balance-and-diffusion-at-the-one-third-endpoint)
 
 ## Full coefficient price on a primitive two-cap matching
 
@@ -600,6 +784,91 @@ in FV1.
 [Several adaptive divisor grids (FV1)](ABC_FINE_VALUATION_DIVISIBILITY.md#a-bounded-number-of-adaptive-valuation-grids)
 
 
+### Numerical relative-height covers on the same matching
+
+Keep \(L=1/m\), \(n=X^L\), \(d=1/3\), \(J=2m-1\) and
+\(\beta=d/J\) from APC3. Write \(H\) for the usual reduced
+rational height. There is an absolute \(c_*>0\) such that a
+centre \(Q_0\in\mathbb Q^\times\) of height at most \(X^B\)
+with \(B\) fixed covers only \(O_{m,B}((\log X)^2)\) rows
+of that matching under the following rule. On a covered
+row choose any integer \(k\ge16\) and positive rational
+representations \(U=A x^k,\ V=B' y^k\). With \(Q=A/B'\),
+require
+\[
+                 H(Q/Q_0)\le X^{c_*\min(k,m)L}.
+\]
+The choices and the centre may depend on the rows covered.
+The bound is uniform in the centre and applies to any
+subfamily. Thus a cover of the full matching costs
+\(n^{d-o_X(1)}\) centres. Within a fixed slot record of
+price \(t<d\) carrying \(n^{d-t-o_X(1)}\) rows, the
+same rule costs \(n^{d-t-o_X(1)}\) centres.
+
+To prove this, put \(r=x/y\). The identity \(r^k=(U/V)/Q\)
+and \(H(Q)\le H(Q_0)H(Q/Q_0)\le X^{B+c_*}\) give
+\(k\le (1+B+c_*)\log_2 X\) when \(r\ne1\), since then
+\(H(r)\ge2\). Group those rows by their common chosen
+\(k\). If \(r=1\) then \(Q=U/V\); keep all such rows
+in one separate group.
+
+For a fixed \(k\ge16\) put \(u=\min(k,m)\) and
+\(\theta=1/64\). Call a slot expensive if its fixed
+degree \(e\) satisfies \(\operatorname{dist}(e,k\mathbb Z)
+\ge\theta u\). For \(k>8m\) all slots are expensive.
+For \(16\le k\le8m\), the number of remaining degrees
+on one role is at most
+\[
+          (2m/k+2)(2\theta u+1)
+              \le m/4+2\le J/4
+\]
+for large \(m\). The first inequality counts the
+multiples of \(k\) meeting the widened degree
+interval, then counts the nearby integers per
+multiple. Thus at most \(J/2\) slots across the
+two roles are outside the expensive set.
+
+Compare two rows in the same order group, with
+ratios \(Q,Q'\). In a slot where their primes
+differ, the two primes are absent from every
+other slot in both rows. Their two valuations in
+\(Q/Q'\) are congruent to \(e,-e\) modulo \(k\),
+up to the orientation of the role, because
+\(U/V=Q(x/y)^k\). For each expensive differing
+slot both absolute valuations are at least
+\(\theta u\). At sufficiently large \(X\) for fixed \(m\)
+each of the primes has \(\log_n p\ge\beta/2\).
+For any rational \(z\),
+\(\log H(z)\ge \tfrac12\sum_p |v_p(z)|\log p\).
+Consequently each expensive differing slot
+contributes at least \(\beta\theta u/2\) to
+this lower bound in base \(n\). On the other
+hand \(H(Q/Q')\le H(Q/Q_0)H(Q'/Q_0)\le
+X^{2c_*uL}\). Taking \(c_*=\theta d/16\), at most
+\(4c_*/(\beta\theta)=J/4\) expensive slots can
+differ. There are at most \(3J/4\) differing
+slots in total, so the two rows agree on more
+than \(J\) slots.
+
+In the group \(r=1\), every differing slot has
+the two valuation magnitudes equal to its
+degree \(e\ge2m+1\). The same argument with
+\(u=m\) and every slot expensive works because
+each relative height to the centre is at most
+\(X^{c_*mL}\), regardless of the chosen order.
+
+Fix one row in any nonempty group. Every other
+row agrees with it on some subset of more than
+\(J\) slots. For each of the finitely many such
+subsets at fixed \(m\), the matching's simultaneous
+slot-fibre bound allows \(O_m(\log X)\) rows with
+the prescribed primes, since their total cost
+exceeds \(d=\beta J\). Summing over subsets and
+groups proves the bound. Each source row in this
+construction has \(\operatorname{rad}(T)>n^d\).
+The numerical cover obstruction therefore has
+the same two-cap scope as APC3.
+
 ## The extraction obligation with all three original caps
 
 Put \(n=X^L\). Suppose that a sequence of fixed
@@ -630,7 +899,20 @@ suffices if
            \qquad 0\le a<1,\quad 0\le\mu<1/3 .
 \]
 Here \(\mu\) charges the true third divisor and
-\(b_0\) the true number of pool states. If the
+\(b_0\) the true number of pool states. For the
+high-depth divisors of APC4, it suffices instead
+to give a cheap conditional relative-height
+cover on the light branch. Replace \(\mu\)
+by \(\mu+b_1\) in the formula, where \(b_1\)
+prices the cover after both the actual divisor
+and the projected valuation vector are fixed.
+Comparable unequal orders are also permitted.
+This weaker extraction still needs genuine
+three-cap arithmetic. The matching obstruction
+forces the full small-radius cover price with
+only two caps, and APC5 shows what overlaps a
+low-radius cover would impose on the diffuse
+parts of actual near-saturating families. If the
 records split into finitely many regimes before
 the inner limits, sum their actual prices or
 retain one regime at the stated extracted

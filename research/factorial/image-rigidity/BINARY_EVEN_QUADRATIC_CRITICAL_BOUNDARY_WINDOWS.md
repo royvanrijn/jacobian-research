@@ -8,11 +8,11 @@ Let \(K\) have characteristic zero and let
 \]
 The following bounds hold at every positive start index.
 
-**Theorem.** Every such phase has a nonzero moment in every seven
-consecutive orders. On the plane \(a+c=b\) six orders suffice.
-On the rank-one stratum \(4ac=b^2\) five orders suffice. The three
-[known coefficient planes](BINARY_EVEN_QUADRATIC_SINGLE_FACE_STRONG_FACTORIAL.md)
-retain their four-window. For any remaining possible four-zero
+**Theorem.** Every such phase has a nonzero moment in every six
+consecutive orders. The exact four-monomial window holds on the
+plane \(a+c=b\) and on the rank-one stratum \(4ac=b^2\), as well as
+on the three [previously covered coefficient planes](BINARY_EVEN_QUADRATIC_SINGLE_FACE_STRONG_FACTORIAL.md).
+For any remaining possible four-zero
 block, after normalizing \(k=1\), the following restrictions hold
 in every realization over \(\overline{\mathbb Q}_2\).
 
@@ -103,12 +103,12 @@ every characteristic-zero field, including \(m=2\) where
 \(h_0=1\). In particular a nonzero \(A\) cannot have
 \(g_{m-2}(A)=g_{m-1}(A)=g_m(A)\).
 
-## Five weighted boundary zeros are impossible
+## From four weighted boundary zeros to two critical points
 
 Let \(a,c\) be distinct and nonzero and let the two weights
 be nonzero. Suppose the two boundary polynomials have
 \(g_j(c)=\lambda g_j(a)\), with a fixed \(\lambda\ne0\),
-for five consecutive \(j\). The univariate factorial
+for four consecutive \(j\). The univariate factorial
 Stein identity gives
 \[
  g_j(A)=1+A L_j(A),\qquad
@@ -120,14 +120,24 @@ Indeed \(\Lambda_1((1+A x^2)^j)-1=2jA\Lambda_1(x(1+A x^2)^{j-1})\),
 and applying the same monomial identity to \(x(1+A x^2)^{j-1}\)
 evaluates the last functional.
 
-For each of the last three indices \(j\) of the block, both
+For each of the last two indices \(j\) of the block, both
 inputs to \(L_j\) satisfy the common ratio. Therefore
 \[
  (\lambda a-\lambda c)L_j(a)=1-\lambda,\qquad
                  g_j(a)=1+aL_j(a).
 \]
-Thus the last three values of \(g_j(a)\) are equal, which
-the squarefreeness result excludes.
+Thus the last two values of \(g_j(a)\) are equal, and so
+are the corresponding two values for \(c\). At the last
+order \(m\), (1) makes \(a,c\) critical points of \(g_m\).
+Their values are nonzero because \(g_m\) is squarefree.
+Writing \(g_{m-1}(c)=\lambda g_{m-1}(a)\) in (3) also
+gives the same number at the two critical points:
+\[
+       F_m(A)=\frac{g_m(A)-1}{A g_m(A)},\qquad F_m(a)=F_m(c).
+                                                           \tag{4a}
+\]
+In fact \(F_m=L_m/g_m\) there, and both numerator and
+denominator satisfy the same boundary ratio.
 
 For the binary phase, put
 \[
@@ -141,12 +151,239 @@ reads
                     -4\Delta j(j-1)M_{j-2}+T_j.            \tag{4}
 \]
 At orders outside the three known coefficient planes the
-weights are nonzero and \(a\ne c\). Seven zero moments make
-the last five \(T_j\) zero. If \(D=0\), a block of six zero
-moments makes five consecutive \(T_j\) zero, including the
-order immediately after the block. If \(\Delta=0\), every
-vanishing \(M_j\) already gives \(T_j=0\). This proves the
-three unconditional window bounds in the theorem.
+weights are nonzero and \(a\ne c\). Six zero moments make
+the last four \(T_j\) zero. The injectivity proof below rules
+out (4a), and proves this six-window.
+
+## The backward axis recurrence
+
+For \(A\ne0\), put \(w=1/A\), \(e_i=1/(2^i i!)\) and
+\(U_i=e_i g_i(A)\). Equation (3), read backwards, gives
+\[
+           U_{i-2}=(2i-1)U_{i-1}-wU_i+w e_i,\qquad i\ge2.
+                                                           \tag{7}
+\]
+The starting pair \(U_{m-2},U_{m-1}\) determines \(U_0\)
+using the forcing terms at indices \(2,\ldots,m-1\).
+The coefficient of \(U_{m-2}\) is a polynomial \(Q(w)\)
+over \(\mathbb Z\) with odd constant, since at \(w=0\)
+one follows the adjacent steps, multiplying only by odd
+integers. The coefficient of \(U_{m-1}\) is a polynomial
+in \(w\mathbb Z[w]\), since it can enter only by a skip
+with coefficient \(-w\). Each forcing term \(w e_i\)
+has a coefficient polynomial with odd constant, by the
+same adjacent-step argument. These observations include
+the initial case \(m=3\), where the remaining recurrence
+has just one step. They imply precise valuation comparisons
+when \(v_2(w)>0\).
+
+## Injectivity of the critical point boundary statistic
+
+For \(i\ge2\), write \(R_i(w)\) for the polynomial
+multiplier carrying a forcing term at index \(i\) in (7)
+to \(U_0\). Set \(R_1=0\). Then \(R_2=1\), and
+\[
+        R_i=(2i-3)R_{i-1}-wR_{i-2}\quad(i\ge3).
+\]
+The two terms carry a value at \(U_{i-2}\) along its next
+adjacent step and its next skip, respectively. In particular
+\(R_i(0)\) is odd for \(i\ge2\).
+
+Let \(m\ge4\), let \(A\) be a critical point of \(g_m\),
+and put \(y=g_m(A)=g_{m-1}(A)\), \(w=1/A\),
+\(Q=R_m\) and
+\[
+        C=\sum_{i=2}^{m-1}(e_i/e_{m-1})R_i,\qquad d=1/e_m .
+\]
+The equation for \(U_0\) made explicit by (7) is
+\[
+  1=e_{m-1}y\bigl((2m-1)Q-wR_{m-1}\bigr)
+                      +w e_m Q(1-y)+w e_{m-1} C .
+\]
+Indeed \(U_{m-2}=(2m-1)e_{m-1}y+w e_m(1-y)\),
+and the contribution entering from \(U_{m-1}\) after
+this initial step is \(-w e_{m-1}y R_{m-1}\).
+Substituting \(1/y=1-F_m(A)/w\) gives
+\[
+ \frac{F_m(A)}{2m}
+    =\frac{N(w)-d/(2m)}{D_1(w)-d/w},\quad
+ N=(2m-1)Q+w(C-R_{m-1}),\quad D_1=Q+2mC.                  \tag{8a}
+\]
+These denominators are units at the critical points, as
+shown below.
+
+In the integral power series \(N/D_1\) at zero,
+all nonconstant coefficients are even and its linear
+coefficient is \(2\) modulo \(4\). To see this,
+\(Q(0)\) is odd, \(C\equiv R_{m-1}\pmod2\), and
+\(C-R_{m-1}\equiv 2(m-1)R_{m-2}\pmod4\).
+Divide numerator and denominator by \(Q\). The numerator
+contributes \(2(m-1)\pmod4\) to the derivative at zero.
+The denominator contributes \(-2m\pmod4\), since
+\((R_{m-1}/R_m)'(0)\equiv1\pmod2\) by the recurrence for
+\(R_m\) and the odd constant coefficients. Modulo two the
+quotient is constant. Thus at two distinct points
+\(w,w'\) of positive valuation its difference of values
+has exactly valuation \(1+v_2(w-w')\):
+every term of degree at least two has strictly higher
+difference valuation after factoring \(w-w'\).
+
+At a critical point the positive Newton slopes for \(h_{m-1}\)
+give \(v_2(w)=2-1/l\) for powers of two \(l\ge2\).
+For even \(m\) the sole additional point has
+\(v_2(w)=1+v_2(m)\). This is the first, width-one
+edge in (2). In particular both \(Q(w)\) and \(D_1(w)\)
+are units. At any pair of distinct critical points,
+\[
+             v_2(d)-v_2(w)-v_2(w')>1 .
+\]
+For two positive slopes, use \(v_2(w),v_2(w')<2\)
+and \(v_2(d)=2m-s_2(m)\ge6\) for \(m\ge4\).
+If one point comes from the additional edge the sum
+of the two valuations is less than \(3+v_2(m)\).
+Here \(2m-s_2(m)\ge m+1\) and
+\(m+1\ge4+v_2(m)\) for even \(m\ge6\); the remaining
+case \(m=4\) follows from \(v_2(d)=7\).
+Two points cannot both come from the single width-one
+edge. These estimates also give \(v_2(d/w)>1\).
+
+For such a pair the correction between (8a) and \(N/D_1\)
+has a difference of values of valuation strictly above
+\(1+v_2(w-w')\). In detail, that correction is
+\[
+           \frac{N(d/w)-D_1(d/(2m))}
+                         {D_1(D_1-d/w)} .
+\]
+The Laurent term \(d/w\) has difference valuation
+\(v_2(w-w')+v_2(d)-v_2(w)-v_2(w')\), which is strictly
+above the required bound. Its values and the constant
+\(d/(2m)\) have valuation strictly above one. Integral
+polynomials and their unit-valued inverses have differences
+divisible by \(w-w'\) in the valuation ring. These facts
+give the bound for the correction by the product and
+quotient rules for differences. Thus (8a) is injective
+on distinct critical points. In (4a) the last index is at
+least four, so this proves that four weighted cancellations
+are impossible.
+
+## The plane \(a+c=b\)
+
+Assume a four-zero block starts at \(n\) and \(D=0\).
+If \(a=c\), the previous coefficient planes already apply.
+Otherwise \(\alpha=c-b/2=(c-a)/2\) and \(\beta=-\alpha\),
+while \(\Delta=-(a-c)^2/4\) is nonzero. Equation (4),
+including at the order immediately after the four-zero
+block, gives
+\[
+               g_j(a)=g_j(c),\qquad j=n+2,n+3,n+4 .
+\]
+Set \(m=n+4\). Subtracting the two recurrences (3) at \(m\)
+shows \(L_m(a)=L_m(c)=0\), and hence
+\(g_m(a)=g_m(c)=1\).
+
+We show that \(g_{m-1}\) is injective on the nonzero
+\(2\)-adic solutions of \(g_m(A)=1\). The identity
+\[
+        (g_m(A)-1)/(2mA)
+          =\sum_{i=0}^{m-1}\binom{m-1}{i}(2i+1)!\,A^i
+\]
+comes from (3) and the monomial expansion of
+\(\Lambda_1(x(1+Ax^2)^{m-1})\).
+Its constant is one and the coefficient at \(i>0\)
+has valuation at least \(i\), so every nonzero solution
+has \(v_2(A)\le-1\). Thus \(|w|_2\le1/2\).
+Write \(y=g_{m-1}(A)\). Since \(g_m(A)=1\),
+the initial step (7) gives
+\[
+          U_{m-2}=(2m-1)e_{m-1}y,\qquad U_{m-1}=e_{m-1}y.
+\]
+After division by \(e_{m-1}\), the backward equation
+for \(U_0=1\) therefore reads
+\[
+        1/e_{m-1}=P(w)y+
+                    w\sum_{i=2}^{m-1}(e_i/e_{m-1})R_i(w)
+\]
+with \(P(0)\) and \(R_{m-1}(0)\) odd and all polynomials
+integral. The factors \(e_i/e_{m-1}\) with \(i<m-1\)
+and the constant \(1/e_{m-1}\) are even integers.
+Expanding \(1/P(w)\) about zero after division by its
+unit constant shows that \(y\) is an integral power
+series in \(w\), with an odd linear coefficient.
+On \(|w|_2\le1/2\), every term of index at least two
+has difference of values bounded in magnitude by
+\(\tfrac12|w-w'|_2\) times its coefficient magnitude.
+The linear term has difference of magnitude
+\(|w-w'|_2\). Thus \(a\ne c\) cannot have the same
+\(g_{m-1}\) value. This excludes the four-zero block.
+
+## The rank-one stratum
+
+A further consequence of (7) is that two distinct critical
+points of \(g_m\) cannot have critical values with sum one.
+Indeed let \(A\) be one such point and write \(y=g_m(A)\).
+Equation (1) gives \(g_{m-1}(A)=y\). By the Newton
+polygon (2), each critical point has
+\(\lambda=v_2(4A)=1/l\) for a power of two \(l\ge2\),
+except for a single point when \(m\) is even.
+That point comes from the first edge of the odd
+\(h_{m-1}\) and has \(\lambda=1-v_2(m)\le0\).
+
+At an ordinary positive slope \(\lambda\) in this list,
+\(v_2(w)=2-\lambda>0\). Start (7) with
+\[
+        U_{m-2}=(2m-1)e_{m-1}y+w e_m(1-y),\qquad
+        U_{m-1}=e_{m-1}y .
+\]
+The backward equation for \(U_0=1\) has the form
+\[
+              1=Pe_{m-1}y+Qw e_m(1-y)+E .                 \tag{8}
+\]
+Here \(P,Q\) are \(2\)-adic units, by the adjacent-step
+coefficients proved above, and \(v_2(E)>v_2(w e_m)\)
+because the remaining forcing terms use \(e_i\) at
+\(i<m\) and integral polynomial multipliers. Put
+\(C=v_2(w e_m)<0\) and \(B=v_2(e_{m-1})\). Then
+\(C-B=1-\lambda-v_2(m)\). If \(m\) is odd, \(B<C<0\);
+collecting \(y\) in (8) gives \(v_2(y)=C-B=1-\lambda>0\).
+If \(m\) is even, \(C<B\); instead collect \(y-1\)
+to find \(v_2(y-1)>0\), since the coefficient of \(y-1\)
+has valuation \(C\) and all other terms have valuation
+strictly above \(C\). At the single exceptional point
+with \(\lambda\le0\), the normalized reciprocal of
+\(g_m(A)\) has all nonconstant coefficients of positive
+valuation, so the leading term of \(g_m(A)\) dominates.
+In this case \(v_2(y)=m\lambda-s_2(m)<0\).
+For odd \(m\) the sum of any two critical values has
+positive valuation. For even \(m\) the sum of two
+values from the positive slopes has residue zero,
+and a sum including the single remaining critical
+point has negative valuation. In either case the
+sum of values at distinct critical points cannot be one.
+
+Finally suppose \(\Delta=0\), and work in an algebraic
+extension containing \(u,v\) with \(a=u^2,\ c=v^2,\
+b=2uv\). Outside the known planes we have \(u\ne v\)
+and \(u\ne -v\). At four consecutive zero moments
+(4) reduces to \(u g_j(a)=v g_j(c)\).
+At the last two indices \(j=m-1,m\), where \(m=n+3\),
+the two inputs to (3) also satisfy this ratio. Subtraction
+therefore gives \(L_j(a)=-1/[u(u+v)]\). Consequently
+\[
+               g_j(a)=\frac{v}{u+v},\qquad
+               g_j(c)=\frac{u}{u+v},\qquad j=m-1,m .
+\]
+By (1), both \(a,c\) are distinct critical points of
+\(g_m\), and the displayed values sum to one. This
+contradicts (8) and the critical value calculation.
+
+For these two four-window proofs the reduction to a
+\(2\)-adic algebraic solution is legitimate. At fixed
+order the equations are polynomial over \(\mathbb Q\).
+Adjoin inverses of the required nonzero expressions.
+A characteristic-zero solution makes the ideal proper,
+and by base extension and the weak Nullstellensatz it
+has a solution over \(\overline{\mathbb Q}\), hence
+over \(\overline{\mathbb Q}_2\).
 
 ## Exclusion using the boundary ratios at the two final orders
 
