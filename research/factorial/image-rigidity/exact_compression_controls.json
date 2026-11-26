@@ -1,0 +1,8 @@
+{
+  "diagonal_corruptions_rejected": 4,
+  "energy_entry_checks": 3894,
+  "node_grid_and_selected_node_cases": 81,
+  "scope": "exact rational controls for arbitrary-node compression and energy identities",
+  "source_sha256": "b28168aa7a539040b42f57b6d9292a443438f14f547c0899d649c126230159b4",
+  "status": "PASS"
+}

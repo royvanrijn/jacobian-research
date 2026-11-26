@@ -4,7 +4,7 @@
 
 Factorial moment functionals, composition rigidity and Strong Factorial families. One varying exponent also permits any independent common monomial factor, with all terminals covered.
 
-**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary ordinary multivariate binomials, terminals 2 through 13 and every terminal at or above a computable absolute cutoff are proved. Both-private supports are covered in every degree, and the one-private case is covered when the private total exponent is at least six. Unrestricted coprimality for the remaining multivariate supports and the larger-support conjecture remain open.
+**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary ordinary multivariate binomials, terminals 2 through 14 and every terminal at or above a computable absolute cutoff are proved. Both-private supports are covered in every degree, and the one-private case is covered when the private total exponent is at least six. Unrestricted coprimality for the remaining multivariate supports and the larger-support conjecture remain open.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -419,9 +419,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All-order factorial angular separation at absolute curvature 27 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_27.md) |
 | Terminal fourteen near zero outer mean | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SMALL_OUTER.md) |
 | Terminal fourteen retained complements through the lower-middle band | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_LOW_MID.md) |
-| Terminal fourteen for all shared profiles from outer mean .30 to .45 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID.md) |
-| Terminal fourteen for all shared profiles on [.25,.30] | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_LEFT.md) |
-| Terminal fourteen for all shared profiles on [.45,.50] | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_FLANKS.md) |
+| Terminal fourteen for all shared profiles from outer mean .30 to .45 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID.md) |
+| Terminal fourteen for all shared profiles on [.25,.30] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_LEFT.md) |
+| Terminal fourteen for all shared profiles on [.45,.50] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_FLANKS.md) |
 | Degree-uniform Gaussian angular variation for matched Laplace directions | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_LAPLACE_ANGLE_RESPONSE.md) |
 | Exact adjacent resultant degree along every translated factorial ray | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRANSLATED_RESULTANT_DEGREE.md) |
 | Divisor-prime coprimality criterion on translated factorial rays | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRANSLATED_DIVISOR_PRIME.md) |
@@ -885,6 +885,42 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Effective all-degree finite decision for four increasing unit-gap rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_THREE_HEIGHT_EFFECTIVE_DECISION.md) |
 | Runge pole-orbit condition on ordered three-height collision curves | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_THREE_HEIGHT_EFFECTIVE_DECISION.md) |
 | Linked physical radial grid for fully shared factorial moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_SIGNED_IMBALANCE.md) |
+| Terminal-fourteen direct small-reciprocal bands between .04 and .25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_LOW_U.md) |
+| Terminal-fourteen retained complements between .04 and .25 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_LOW.md) |
+| Terminal-fourteen angular separation at reflected outer mean .02 to .04 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_CORNER.md) |
+| Terminal fourteen for every ordinary two-monomial profile | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_ALL_PROFILES.md) |
+| Effective height bound for signed tails at one retained unit-gap row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_THREE_HEIGHT_EFFECTIVE_DECISION.md) |
+| Every binary quadratic has its initial actual-support factorial window | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_INITIAL_ACTUAL_SUPPORT_WINDOW.md) |
+| Decidable all-order pure valuation windows for arbitrary factorial supports | Internal result | proved | [Source](image-rigidity/FACTORIAL_ALL_ORDER_PURE_TERM_VALUATION_TEST.md) |
+| Arbitrarily late consecutive pure-term ties in fully shared dyadic supports | Internal result | proved | [Source](image-rigidity/FACTORIAL_ALL_ORDER_PURE_TERM_VALUATION_TEST.md) |
+| Exact pole criterion for a pure factorial term to dominate in every order | Internal result | proved | [Source](image-rigidity/FACTORIAL_PURE_TERM_POLE_CRITERION.md) |
+| Dyadic units at every factorial order for a class of arbitrary fully shared supports | Internal result | proved | [Source](image-rigidity/FACTORIAL_PURE_TERM_POLE_CRITERION.md) |
+| Exact Hasse–Witt pairing for factorial moments at native prime-power orders | Internal result | proved | [Source](image-rigidity/FACTORIAL_HASSE_WITT_NATIVE_ORDERS.md) |
+| Finite all-start factorial windows from a nonzero Hasse–Witt residue orbit | Internal result | proved | [Source](image-rigidity/FACTORIAL_HASSE_WITT_NATIVE_ORDERS.md) |
+| Finite all-start factorial windows for smooth ternary cubic lowest parts | Internal result | proved | [Source](image-rigidity/FACTORIAL_HASSE_WITT_NATIVE_ORDERS.md) |
+| Finite all-start factorial windows for smooth quartic lowest parts in four variables | Internal result | proved | [Source](image-rigidity/FACTORIAL_HASSE_WITT_NATIVE_ORDERS.md) |
+| Finite factorial windows for squarefree binary lowest parts | Internal result | proved | [Source](image-rigidity/BINARY_SQUAREFREE_FACTORIAL_WINDOWS.md) |
+| Exact separate factorial marginals at finitely many orders do not determine other orders | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EXACT_SEPARATE_TANH_MARGINAL_OBSTRUCTION.md) |
+| Effective fixed-gap physical height bounds from simple second-order contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIXED_GAP_PHYSICAL_SECOND_JETS.md) |
+| Every support-indexed binary-quadratic initial moment map is finite | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_INITIAL_FINITE_FREE_MOMENT_MAPS_AND_SHARPNESS.md) |
+| All initial binary-quadratic coefficient moment maps are finite free of rank s! | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_INITIAL_FINITE_FREE_MOMENT_MAPS_AND_SHARPNESS.md) |
+| Every binary-quadratic support has its sharp initial window | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_INITIAL_FINITE_FREE_MOMENT_MAPS_AND_SHARPNESS.md) |
+| Coefficient-uniform propagation of homogeneous factorial zero windows | Internal result | proved | [Source](image-rigidity/FACTORIAL_HOMOGENEOUS_UNIFORM_PROPAGATION.md) |
+| Uniform factorial nonvanishing windows for homogeneous phases with one simplex coordinate | Internal result | proved | [Source](image-rigidity/FACTORIAL_HOMOGENEOUS_UNIFORM_PROPAGATION.md) |
+| Explicit uniform factorial nonvanishing windows for homogeneous binary phases | Internal result | proved | [Source](image-rigidity/BINARY_HOMOGENEOUS_UNIFORM_WINDOW.md) |
+| Abstract coefficient-dependent recurrences can have unbounded consecutive zero windows | Internal result | proved | [Source](image-rigidity/BINARY_HOMOGENEOUS_UNIFORM_WINDOW.md) |
+| Uniform native-prime SFC(2) for narrow height bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_NARROW_HEIGHT_BAND_NATIVE_MARKS.md) |
+| Balanced odd-terminal obstructions for leading affine mark counts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_NARROW_HEIGHT_BAND_NATIVE_MARKS.md) |
+| Physical adjacent moment collisions for matched Beta pole pairs | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_BETA_POLE_ADJACENT_COLLISIONS.md) |
+| Physical adjacent collisions for any prescribed finite count of matched poles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_BETA_POLE_ADJACENT_COLLISIONS.md) |
+| Effective uniform propagation of zero factorial windows for arbitrary polynomial phases | Internal result | proved | [Source](image-rigidity/FACTORIAL_INHOMOGENEOUS_UNIFORM_PROPAGATION.md) |
+| Explicit all-start factorial windows for all homogeneous quadratics in any dimension | Internal result | proved | [Source](image-rigidity/HOMOGENEOUS_QUADRATIC_SIMPLEX_FACE_WINDOWS.md) |
+| At most a quadratic common factor in arbitrary high bounded-gap bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BALANCED_WIDTH_TWO_LINKED_RESIDUES.md) |
+| All-degree coprimality in the balanced four-type band outside divisible multiplicities | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BALANCED_WIDTH_TWO_LINKED_RESIDUES.md) |
+| Exact linked native divisibility constraints for balanced divisible multiplicities | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BALANCED_WIDTH_TWO_LINKED_RESIDUES.md) |
+| Ordinary mirrored row mergers can move root angles in opposite directions | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORDINARY_ROW_MERGER_ANGULAR_NONMONOTONICITY.md) |
+| Pure-cross three-windows for transcendental and real-conjugate cross ratios | Internal result | proved | [Source](image-rigidity/BILINEAR_REAL_CONJUGATE_RATIO_THREE_WINDOW.md) |
+| Pure-cross three-windows at the first three starts without coefficient restrictions | Internal result | proved | [Source](image-rigidity/BILINEAR_REAL_CONJUGATE_RATIO_THREE_WINDOW.md) |
 
 **Computed obligations:** 50 unresolved; 34 resolved within their exact scope.
 
@@ -956,7 +992,7 @@ Scope limits:
 - Uniform eventual coprimality holds on bounded fully shared supercritical-margin bands, on positive bounded subcritical-margin bands at equal total degrees, and for all profiles with private variables on both sides. At N>=256 the bound S>=2 log N+5 excludes all common roots. An explicit small-relative-gap lift and complete base-p exponent orbit certificates give additional uniform and finite-terminal regimes.
 - A three-column ordinary factorial row identification has regular endpoint moments in orders two through four and a certified collision in the physical interpolation. This excludes physical-interval nonvanishing as a general transfer proof. The discrete endpoint question and the unrestricted two-column interval remain open.
 - The exact joint measure closure has a specific diagonal diffuse law and an independent signed center parameter. An all-order physical binary transfer is proved with untouched independent private degree at least two on both sides.
-- Every ordinary two-monomial profile is covered through terminal thirteen. Above a computable absolute unevaluated cutoff, every profile has disjoint consecutive root arguments, even after independent positive rescalings. Uniform weak- and high-curvature angular exclusion applies at every terminal. The remaining fixed terminals start at fourteen.
+- Every ordinary two-monomial profile is covered through terminal fourteen. Above a computable absolute unevaluated cutoff, every profile has disjoint consecutive root arguments, even after independent positive rescalings. Uniform weak- and high-curvature angular exclusion applies at every terminal. The remaining fixed terminals start at fifteen.
 - Ordinary consecutive coprimality is proved in every degree whenever there is a private variable on each side. The remaining general binary profiles have at most one private side.
 - One-private profiles satisfy all-degree angular separation if twice the total private exponent plus the shared absolute curvature is at least thirteen. A separate explicit weak-tail hypothesis gives all-order physical coprimality with a single private unit and arbitrary signed shared gap.
 - Standard SFC(2) and SFC(3) count variables. Exact support-size windows for homogeneous binary quadratics are proved; arbitrary inhomogeneous binary quadratics and full dimension-two/three SFC remain separate open goals. Two-monomial profile results do not imply them.
@@ -996,6 +1032,9 @@ Scope limits:
 - For every fixed rational odd-denominator quadratic coupling pattern, every compatible diagonal/linear support with p>=1 and every positive start n, an algebraic phase has p-1 zero moments in that block followed by a nonzero moment. Thus the matching p=k+ell window is sharp on every support at every start; the witness may depend on n. Actual-support sharpness is asserted only when there are no cross monomials. Existence uses the exact classical homogeneous common-zero theorem, while exact full support/next moment use the independently proved matching upper theorem. No unrestricted quadratic/SFC2/SFC3 closure or smaller coefficient field witness is asserted.
 - For fixed rational2-integral correlation weights, the full family of quadratic cover moment maps is finite free of exact rank product(2j), with arbitrary-target constant scheme lengths. Finiteness over all supports, starts, sign branches and containing characteristic-zero fields is genuinely equivalent to the matching shorter k+ell window via homogeneous parameter coverage. The forward proof imports that existing bound and CM regularity; it is not an independent proof of the bound. Direct diagonal coefficient maps have degree product j. No reducedness, unique inverse, unrestricted SFC closure or assurance upgrade.
 - For cyclotomic diagonal phases sum omega^i(X_i^2+rX_i), all compressed moment polynomials are monic integral and adjacent coprime. Every root of the degree-m factorial cumulant yields an explicit start1 sharp2m-term diagonal witness, with coefficient field degree at mostm phi(m); cumulants of indicesm and2m are coprime. These results use only the independently proved ACTUAL-SUPPORT matching upper theorem; the formal filter/degree/weak zero-block facts do not. The one-parameter family does not imply arbitrary diagonal or full quadratic/SFC2/SFC3 closure, and no converse is registered.
+- Every nonzero binary polynomial of total degree at most2 has a nonzero factorial moment among its first actual-support-size powers. All63supports are independently covered by exact mod101 pure-power polynomial certificates and native integer-rank transfer. This proves the initial window only; all-start binary-quadratic SFC, SFC2 and SFC3 remain open. No old SFC theorem or external paper is a mathematical premise.
+- For every binary quadratic monomial support S, the initial coefficient moment map is finite free of rank s!, with finiteness equivalent to the initial actual-support theorem. Every support attains its sharp initial window over Qbar; the projective witness scheme has length (s-1)!, which also bounds a witness field degree. These results concern initial windows; the all-start quadratic SFC, SFC(2), and SFC(3) goals remain open.
+- Pure-cross phases BXY+dX+eY with nonzero Bde satisfy every three-window when B2/(de) is transcendental or has a real algebraic conjugate; arbitrary coefficients are covered at starts1,2,3. Any remaining counterexample has an algebraic ratio with no real conjugates and middle index n>=5. Bessel Wronskian and exact compressed-matrix energy are separate proved mechanisms; full binary-quadratic SFC and SFC2/SFC3 remain open.
 
 Tracked obligations (computed states):
 

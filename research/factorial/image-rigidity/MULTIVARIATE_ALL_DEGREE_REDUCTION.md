@@ -2140,3 +2140,90 @@ increasing gaps and identifies the simple resultant factor
 [exact sign obstruction](MULTIVARIATE_TWO_UNIT_GAP_RESULTANT_SIGN_OBSTRUCTION.md)
 excludes uniform coefficientwise positivity in the elementary
 generators \(S,P\) already at starting order seven.
+
+The [physical second-order height comparison](MULTIVARIATE_FIXED_GAP_PHYSICAL_SECOND_JETS.md)
+gives an effective height bound when every simple comparator
+contact fails its complex second-order segment test. It includes
+explicit formulas for two retained unit-gap rows and a conditional
+deep-binomial-face exclusion for larger escaping gaps. Complex
+stationary velocities and the choice of qualifying primes still
+require control for an unrestricted height reduction.
+
+The [separate-marginal obstruction](MULTIVARIATE_EXACT_SEPARATE_TANH_MARGINAL_OBSTRUCTION.md)
+constructs ordinary profiles with identical full moment
+polynomials at any prescribed finite set of orders and different
+normalized arrays at other prescribed orders. The profiles may
+be mirrored or arbitrarily diffuse. The finite-order data in
+this construction are separate marginals. The genuinely paired
+Gauss slots retain their exact row reconstruction.
+
+For arbitrary fixed supports, the
+[all-order pure-term valuation test](FACTORIAL_ALL_ORDER_PURE_TERM_VALUATION_TEST.md)
+decides the corresponding window certificate at a fixed prime.
+The [denominator-pole criterion](FACTORIAL_PURE_TERM_POLE_CRITERION.md)
+characterizes those supports and pivots for which increasing the
+relative coefficient valuations can make one pure term strictly
+least at every order. At the level of complete moment sums, the
+[Hasse–Witt native-order pairing](FACTORIAL_HASSE_WITT_NATIVE_ORDERS.md)
+gives a finite witness test for infinitely many nonzero moments
+and a finite window for the particular phase. This provides
+bounded gaps in the listed smooth lowest-degree families, and
+does not bound the window by the support size.
+
+The [widening height-band theorem](MULTIVARIATE_NARROW_HEIGHT_BAND_NATIVE_MARKS.md)
+gives a common large-height threshold for unrestricted row counts in
+the band. It covers all even terminals, and all terminals when the
+gaps are all at least two, all one, or bounded by six. A signed-gap-zero
+four-type family defeats every leading affine mark at certain odd
+terminals. This identifies a regime where the residual coefficients
+of the shared Newton faces are needed.
+
+The [matched Beta pole counterexample](MULTIVARIATE_MATCHED_BETA_POLE_ADJACENT_COLLISIONS.md)
+has a physical adjacent collision at every terminal at least four,
+even with the folded likelihood-ratio comparison, Pólya-frequency
+log-ratio laws and the exact affine degree schedule. For every
+fixed number of retained poles, the version with exactly those
+first matched Gauss shifts gives collisions at sufficiently high
+terminals. Its Gamma comparison gives collisions with positive
+real exponents and nonunit shapes. The ordinary factorial lattice
+remains essential to an unrestricted separation theorem.
+
+For general homogeneous phases of bounded degree and dimension,
+[uniform propagation](FACTORIAL_HOMOGENEOUS_UNIFORM_PROPAGATION.md)
+makes the window threshold independent of the coefficients and
+starting order. This uses both indicial polynomials of a relative
+simplex-period equation. It also gives a finite test for eventual
+vanishing in fixed homogeneous degree and gives nonvanishing
+windows in every dimension for phases that depend on one affine
+coordinate on the simplex. In two variables an
+[explicit degree bound](BINARY_HOMOGENEOUS_UNIFORM_WINDOW.md)
+applies to every homogeneous nonzero phase. These lengths can
+exceed the support size.
+
+In a sufficiently high bounded-gap band, the shared Newton widths
+now give [a common-factor degree bound of two](MULTIVARIATE_BALANCED_WIDTH_TWO_LINKED_RESIDUES.md)
+at every terminal. For the balanced four-type band the two native
+integer marks force effective Thue equations, giving all-degree
+coprimality for multiplicity \(r\) with \(2d-1\nmid r\). When
+\(2d-1\mid r\), the two marks impose exact linked residue conditions
+with bounded losses at the exceptional primes. This band still needs
+an exclusion in the divisible multiplicity class.
+
+The [uniform propagation theorem for arbitrary phases](FACTORIAL_INHOMOGENEOUS_UNIFORM_PROPAGATION.md)
+removes the homogeneity hypothesis at every fixed dimension and
+degree bound. Formal factorial integration by parts and the integral
+Stokes structure give uniform bounds for the zero block that propagates
+and the last possible nonzero moment of a zero tail. The bounds give
+finite exact tests at fixed degree and dimension. They yield
+nonvanishing windows whenever eventual nonvanishing has a separate
+proof. For [all homogeneous quadratics](HOMOGENEOUS_QUADRATIC_SIMPLEX_FACE_WINDOWS.md)
+in every dimension, the simplex-face system rules out eventual
+vanishing unconditionally and gives an explicit width. Neither
+propagation theorem supplies the actual support-size bound.
+
+An [ordinary integer row-merger example](MULTIVARIATE_ORDINARY_ROW_MERGER_ANGULAR_NONMONOTONICITY.md)
+moves two labeled root angles in opposite directions even in an
+arbitrarily diffuse mirrored support with equal total degrees.
+The effect occurs at degree four and arbitrarily large degrees.
+Thus a structural row-merger transfer cannot rely on coordinatewise
+angular monotonicity alone.

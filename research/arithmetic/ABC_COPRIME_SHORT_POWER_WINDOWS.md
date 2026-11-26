@@ -432,6 +432,49 @@ than \(1/3\) by a fixed margin.
 [The separating-pool alternative (APC2)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#a-separating-pool-for-the-joint-coefficient)
 · [Cheap full divisors from diffuse valuation mass](ABC_MODULAR_DIGIT_SUPPORT_AND_ATOMIC_COMPLETION.md#completing-all-balanced-profiles-after-small-modulus-support-recovery)
 
+## Anisotropic completion below the exact power threshold
+
+Suppose \(U=Ax^{k_1}\) and \(V=By^{k_2}\) in the original primitive
+row, and \(D\) is a prescribed divisor of the third letter, as
+in CPW5 but without its height threshold. Let \(g=(k_1,k_2)\)
+and let \(P,Q\) bound the positive integers \(x^{k_1/g},y^{k_2/g}\)
+after fixing the coefficients and the actual root height slots.
+For fixed orders and record, the count of primitive rows is
+\[
+                       O_\varepsilon\bigl((1+PQ/D)X^\varepsilon\bigr).
+\]
+For equal \(k_1=k_2\), these are the original two root bounds.
+
+The signed equation fixes the \(g\)-th power of their unit ratio
+modulo \(D\). The CPW5 prime-power bound gives height-subpower
+many slope classes at fixed orders, including the primes dividing
+the common order. For one root class, the two regrouped roots
+belong to an index-\(D\) lattice in their rectangular box.
+Scale the sides to one. The covolume is \(D/(PQ)\); if all
+points on the box lie on one line through the origin, there
+is at most one primitive pair. Otherwise a shortest nonzero
+lattice vector of length \(\ell\) has
+\(D/(\sqrt{2}PQ)\le\ell\le\sqrt2\), by comparison with an
+independent box witness. Lines parallel to that vector are spaced
+by \(D/(PQ\ell)\) and contain lattice points of spacing \(\ell\).
+Thus the box contains
+\[
+ O\bigl((1+PQ\ell/D)(1+\ell^{-1})\bigr)=O(1+PQ/D)
+\]
+points. Taking the unique positive power roots recovers the
+original row.
+
+Consequently the actual regional completion price is at most
+\((\log_n P+\log_n Q-\log_n D)_+\), in addition to the
+coefficient and divisor catalogue prices. In a bounded order
+regime at fixed \(L\) the order choice is harmless. In the
+equal-order case the very high-order tail can still be handled
+by CPW5 root enumeration. For unequal orders the regrouped
+bounds may be large even when one order grows; one may instead
+enumerate roots whenever the original root counts give a better
+bound. This is a count after fixing real height slots and full
+divisor records on the original triples.
+
 ## Paying support on all three letters
 
 **CPW6.** The conclusions of CPW3 and CPW4 hold for disjoint

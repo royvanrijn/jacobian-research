@@ -1,0 +1,15 @@
+{
+  "negative_controls_rejected": 5,
+  "reciprocal_and_gauge_checks": 50,
+  "scope": "supplemental exact transcription checks, not a uniform proof",
+  "source_sha256": "48880b8c10f81cc13ccb34ef9264e3c2901d0b2dcedb6c35585e033c6d32a169",
+  "status": "PASS",
+  "typed_counterexample_sign_values": [
+    2400,
+    -1399,
+    816,
+    -3975,
+    100400
+  ],
+  "universal_polynomial_identity_checks": 75
+}

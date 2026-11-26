@@ -227,6 +227,66 @@ remaining heights with their comparable fixed core.
 Doing this at the finitely many terminals below \(J\)
 gives the four-height decision.
 
+## One retained unit row with tails of either orientation
+
+**Proposition.** Fix one increasing unit-gap row of height
+\(A\ge0\), with multiplicity one, and two consecutive orders \(n,N\).
+Append any fixed positive multiplicities \(r_i\) of unit-gap rows
+in prescribed orientations \(\epsilon_i\in\{1,-1\}\).
+If the signed tail gap \(D=\sum_i\epsilon_i r_i\) differs from \(-1\),
+a physical collision requires at least one tail height to lie
+below an effective bound. The number of height types is arbitrary.
+
+Set \(\epsilon_i'=1/A_i\) when all tail heights are large.
+For each decreasing row strip its scalar \( (j A_i)^{j r_i}\),
+and rescale \(z\) by \(\prod_i A_i^{-\epsilon_i r_i}\).
+The limiting arrays are \(B_j(z)=P_j(j^D z)\), with \(P_j\)
+the one-row polynomials above. Write
+\(H_+=\sum_{\epsilon_i=1} r_i\epsilon_i'\) and
+\(H_-=\sum_{\epsilon_i=-1} r_i\epsilon_i'\).
+The degree-one expansion of the rescaled parent now has the form
+\[
+ \frac{H_+}{2j}(\vartheta^2+\vartheta)B_j
+ +\frac{H_-}{2j}(j-\vartheta)(j-\vartheta+1)B_j .
+\]
+This follows from the sums \(1+\cdots+k\) and
+\(1+\cdots+(j-k)\) on the two orientations.
+At a shared root \(\zeta\), the first velocity is the
+one already computed. The one-row differential equation
+gives the second velocity
+\[
+ V_j^-(\zeta)=\frac1{2j^{D+1}}+\frac{1+A+2/j}{2}\zeta .
+\]
+Therefore the difference of the two root velocities is
+\[
+     \frac{n^{-D-1}-N^{-D-1}}2(H_++H_-)
+                  +(1/n-1/N)\zeta H_- .                       \tag{3}
+\]
+The root \(\zeta\) is nonreal since the even one-row moment
+is positive at every real argument, including after dilation.
+With \(H=H_++H_->0\) and \(\lambda=H_-/H\in[0,1]\),
+the expression (3) divided by \(H\) is nonzero on the entire
+closed interval: for \(\lambda>0\) the imaginary part is nonzero,
+and at \(\lambda=0\) the real term is nonzero by \(D\ne-1\).
+
+As in the first-order resultant proof, if there are \(g\)
+common roots, the homogeneous part of degree \(g\) of the
+resultant is a nonzero scalar times the product of the \(g\)
+forms (3), one per shared simple root. The other homogeneous
+parts start at degree \(g+1\). Divide the leading part by
+\(H^g\) and set \(\lambda=H_-/H\). This gives a polynomial
+in \(\lambda\) with algebraic coefficients and a strictly
+positive minimum of its absolute value on \([0,1]\).
+A rational positive lower bound is effective by univariate
+root isolation and interval subdivision. The higher terms
+are bounded by their absolute coefficient sum times \(H^{g+1}\)
+for \(H\le1\), since each \(\epsilon_i'\le H\).
+As \(H\le(\sum_i r_i)/\min_i A_i\), the resulting bound is
+uniform in the relative tail heights. If the limiting
+comparators are coprime the ordinary determinant bound already
+suffices. In a mixed recursive slice, subsequent two-height
+tests still depend on the orientations of the remaining rows.
+
 ## The corresponding Runge condition
 
 Although the slice argument already gives effectivity, these

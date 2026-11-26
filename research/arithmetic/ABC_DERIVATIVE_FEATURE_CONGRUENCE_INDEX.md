@@ -137,7 +137,7 @@ The same calculation applies when just one color is active if the
 coefficient vectors are independent modulo \(p\).
 
 In particular on a rank-one affine feature model for **both**
-letters (\(r=2\)) the shared-prime index is exactly
+letters (\(r=2\)) in the independent-head case above, the index is exactly
 \(p^{\sum_T M_T}\). Within each color only the deepest constraint
 contributes. Across distinct primes the index factors, but the
 head or tail directions over different primes can be the same
@@ -156,6 +156,118 @@ product outside the support of \(a_0b_1-a_1b_0\) therefore divides
 the true feature difference. A prime switching roles between
 the rows gives a unit projective determinant, so the switch
 cannot create this divisibility.
+
+
+## DI3. Shared derivative coordinates and the actual feature lattice
+
+Allow selected primes to occur in arbitrary slots. Let \(E\) be the
+integer derivative evaluation matrix with slots \((i,T)\) as rows
+and selected primes \(q\) as columns. Its entry is
+\((T_i/q)v_q(T_i)\) if \(q\mid T_i\) and zero otherwise. Keep
+the saturated colored feature matrix \(\mathcal U\) of DI1. Define
+\[
+  L_E=E\mathbb Z^{\#q},\quad
+  K=\{\theta\in\mathbb Z^{2r}:\mathcal U\theta\in(L_E)_{\mathbb Q}\},
+  \qquad
+  \Gamma=\{\theta\in\mathbb Z^{2r}:\mathcal U\theta\in L_E\}.
+\]
+Here \(K\) is saturated and \(\Gamma\) has finite index in \(K\).
+If \(B\) consists of the columns \(\mathcal U\theta_j\) for a
+basis of \(K\), then
+\[
+ [K:\Gamma]=\frac{\Delta(E)}{\Delta([\,E\mid B\,])},
+\]
+where \(\Delta\) denotes the positive gcd of minors at the rank
+of the matrix in question, with \(\Delta=1\) at rank zero.
+Indeed \(\mathcal U\) identifies the quotient \(K/\Gamma\) with
+\((L_E+\mathcal U K)/L_E\). Both lattices on the right have the
+same rational span and saturation, so Smith normal form gives
+the ratio of their saturation indices. Equivalently, in a Smith
+presentation of \(E\), the rows beyond its rank impose exact
+linear equations on \(\mathcal U\theta\) defining \(K\), and the
+other rows impose divisibility by the nonzero Smith factors.
+The rational equations and integral divisibility are separate
+steps even when all derivative equality constraints have a
+nonzero kernel.
+
+There is a one-digit comparison to the actual joint valuation
+depths. For a prime \(p\) write
+\[
+ W_p=\bigoplus_{i,T}p^{v_p(T_i)}\mathbb Z_p .
+\]
+Every non-\(p\) column of \(E\) belongs to \(W_p\). The \(p\)
+column \(E_p\), taken as zero when unselected, satisfies
+\(pE_p\in W_p\). On the available parameter space \(K_p\) put
+\[
+ \Gamma_p^0=K_p\cap\mathcal U^{-1}(W_p),\qquad
+ \Gamma_p^+=K_p\cap\mathcal U^{-1}(W_p+\mathbb Z_p E_p).
+\]
+The actual \(\Gamma_p\) is contained in \(\Gamma_p^+\), and the
+quotient \(\Gamma_p^+/\Gamma_p^0\) embeds in
+\((W_p+\mathbb Z_p E_p)/W_p\), of order at most \(p\).
+Consequently
+\[
+ \log_p[K_p:\Gamma_p]\ \ge\
+ \log_p[K_p:\Gamma_p^0]-1 .
+\]
+The loss is zero if \(E_p\in W_p\), or if its nonzero class is
+outside the image of the available parameter space modulo \(W_p\).
+If the non-\(p\) columns span \(W_p\), then
+\(\Gamma_p=\Gamma_p^+\) and the comparison is exact. A sufficient
+condition for this span is a selected private \(q\ne p\) in every
+slot whose valuation there is a \(p\)-adic unit.
+
+When \(K_p=\mathbb Z_p^{2r}\) and at least two colors are active,
+DI2 computes the coordinatewise index exactly, with the full
+depths \(m_{i,T}=v_p(T_i)\). In a common rank-one affine model
+(\(r=2\)), the sole possible lost digit can be tested directly.
+Normalize each active slot as in DI2 by its chosen unit \(w_i\).
+Its \(E_p\) image is
+\[
+ p^{m_{i,T}-1}m_{i,T}(T_i/p^{m_{i,T}})/w_i
+                      \pmod {p^{m_{i,T}}}.
+\]
+For its class to be hit, within each color these residues must
+be compatible with the maximal-depth anchor. The independent
+head forms in DI2 show that this compatibility is also sufficient.
+At all lower positive depths it requires \(p\mid m_{i,T}\).
+At equal maximal depth the leading digits must coincide modulo
+\(p\). Thus for \(p>\log_2 X\), variation among the positive
+depths of any one color prevents loss of that digit.
+
+For comparison, Laniewski–Müller compute the Wronskian image
+for one primitive row by a pair of integer linear forms. Their
+pointwise index does not impose a common feature evaluation
+space on derivatives of multiple rows. The shared-coordinate
+restriction above retains the simultaneous exact linear equations
+before computing the integral index.
+[Laniewski–Müller, Lemma 4.1 and its proof](https://arxiv.org/html/2610.26490v1#S4)
+
+### Tests on genuine primitive rows
+
+The two rows \((6,23,29),(7,34,41)\) in the \(X=41\) shell show
+the sharp one-digit loss. Select all their primes and take
+\(F=\mathbb Q^2\) on the two row positions. Every slot has a
+private odd prime to order one. At \(p=2\) the depth-one slots
+are the first \(A\) and second \(B\), whose derivative column
+entries are \(3\) and \(17\). Thus the coordinatewise system
+requires two independent evenness constraints and has index
+\(4\). The actual image also permits simultaneous odd residues
+in the two slots and has index \(2\).
+
+The effect of the rational restriction is visible on
+\((1,8,9),(1,9,10),(1,11,12)\), all in the \(X=12\) shell.
+Select \(2,3,5,11\). Their three additive derivative equations
+have primitive kernel generated by \((2,4,7,40)\), in the indicated
+prime order. Its three \(A\)-derivatives are zero, and its
+\(B\)-derivatives are \((24,24,40)\). With the full evaluation
+space \(F=\mathbb Q^3\) this gives rank one for \(K\). With the
+actual rank-one feature \(B=(8,9,11)\), use
+\(F=\operatorname{span}_{\mathbb Q}(1,B)\). The same derivative
+vector is not affine in \(B\), so \(K=0\). The additive derivative
+matrix, including all its AD2 data, is identical for these two
+models. These finite tests use genuine addition and primitivity
+and do not impose the limiting small-budget caps.
 
 ## Obstruction and the remaining extraction
 
@@ -182,12 +294,13 @@ minors. This counterexample imposes primitivity and the numerical
 shell. It makes no claim of simultaneous small radical caps.
 
 The exact reduction in DI2 concerns a congruence system on an
-already common affine model. An unrestricted application needs
-to extract such a model on enough genuine rows retaining all
-three caps, or construct an integral map for shared derivative
-coordinates directly. It also needs a bound on the joint
-rational directions of the residual systems at the primes that
-one can select at low radical cost. The index alone leaves both
+already common affine model. DI3 computes the actual shared-coordinate restriction and its local
+index on that model. An unrestricted application still needs to
+extract the model on enough genuine rows retaining all three caps,
+or a feature-level divisibility bound without that model. In either
+case it needs a bound on the joint rational directions of the
+residual systems at primes selectable at low radical cost. The
+local index comparison holds only after restriction to \(K_p\). The index alone leaves both
 obligations open. A model for only one complete letter does not
 give the two complete-letter directions used in DI2.
 

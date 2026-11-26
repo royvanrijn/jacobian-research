@@ -365,6 +365,111 @@ depth range. If just one foreign register yields sufficient numerical
 depth, replace the divisor \(4\) in this condition by \(2\).
 [Rank-one small-feature count (CF1)](ABC_COMPLETE_LETTER_SMALL_FEATURES.md#a-strict-saving-for-small-affine-minors)
 
+### Two short CRT quotient coordinates give arbitrarily small count
+
+**JD12.** Fix \(B,C,\nu,\eta>0\). Use original primitive shell rows
+with all three caps \(\operatorname{rad}(T)\le n^C\) and fixed
+pairwise coprime role divisors \(D_R\mid R\). Suppose at least one
+\(D_R\ge X^\nu\). A projection of the signed register tuple fixes
+the residues of any two distinct complete roles \(T,W\) modulo
+\[
+ M_Q=D_Q\prod_{R\in I\setminus\{Q\}} m_R
+ \quad(Q=T,W),
+\]
+where \(I\) is the set of fixed native registers and
+\(m_R\mid D_R\) is the modulus of that register projection.
+Let \(H_Q\) be the complete-value diameter of that role on the chart,
+or an upper bound on the diameter in the relevant projected cell.
+If \(H_T/M_T,H_W/M_W\le n^B\), then for sufficiently small **fixed**
+\(L\) every projected cell has
+\[
+ O_{B,C,\nu,\eta,L,\varepsilon}(n^\eta X^\varepsilon)
+\]
+rows. More generally the same conclusion holds with the two quotients
+bounded by \(X^\theta\) for sufficiently small \(\theta>0\) chosen
+in terms of \(C,\nu,\eta\) before \(L\).
+
+Choose one actual row in the cell as anchor. Each of the two
+anchored complete differences is divisible by its respective \(M_Q\).
+The two integer quotients are exact affine features for the two
+complete roles. The original additive relation gives the third as
+an affine function of these same features. Apply the exact
+small-feature count with one prescribed tall original divisor.
+The coefficients and both CRT moduli may vary with the cell.
+This argument includes rows in an affine line or a point.
+
+If the chart catalogue costs \(b_0\) and the actual joint projection
+support costs \(t\) uniformly per chart, the exponent is at most
+\(b_0+t+\eta\), with ordinary height allowances. In particular, for
+\(D_AD_BD_C\ge X/n^K\) with \(K\) fixed, use the full joint tuple
+and any two roles. Both quotients are bounded by \(n^K\), and for
+sufficiently small fixed \(L\) some divisor is at least \(X^{1/4}\).
+This improves the per-cell rank-one CF1 bound and gives a strict
+saving whenever \(b_0+t<1/3\) by a fixed margin. The depth
+condition allows a mixed projection with a smaller modulus on a
+shorter role. For example, in a balanced chart with \(\alpha<1/3\),
+a single native register of price \(s=2\alpha-1/3\) suffices if the
+two opposite roles both meet the short-quotient test and the chart
+price is below \(1/3-s\) by a fixed margin. Neither this test nor
+the full joint depth is an extraction result for arbitrary rows.
+
+The same arbitrarily small bound holds on the **whole chart**
+without charging the projected residue support when the two
+least-residue lists, each translated by its own chart minimum,
+have fixed-dimensional exact affine integer models with feature
+coordinates bounded by \(n^{B'}\) for fixed \(B'\). For each role,
+adjoin the integer quotient by \(M_Q\) between the complete value
+translated by the chart minimum and its least residue. It is
+bounded by \(1+H_Q/M_Q\). Concatenate both sets of features, so
+the three original letters are exact affine functions in a
+dimension fixed independently of height and budget. Apply the
+same tall-divisor result. Bounded doubling on both projected
+residue lists is one sufficient condition for these models, by
+the lift in JD7.
+
+[Exact small features with one tall original divisor](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md#exact-small-features-with-one-fixed-tall-divisor)
+
+### Lifting one affine complete letter using a partial register
+
+**JD13.** Work on an original primitive chart with all three
+radical caps \(n^C\) and one fixed role divisor at least \(X^\nu\).
+Suppose the complete role \(T\) is affine in integer features of
+fixed ambient dimension, with actual affine rank \(r\) and all
+maximal anchored feature minors of size at most \(Q_0\). The other
+roles are \(U,V\). Fix their role divisors \(D_U,D_V\) and the
+actual native signed register on \(T\) modulo \(m_T\mid D_T\).
+Let \(H_V\) be the complete \(V\)-diameter of this cell. If
+\[
+         D_U D_V m_T>(r+1)H_V Q_0 ,
+\]
+then all three complete letters are affine functions on the
+same feature space. If \(Q_0\le X^\theta\) for sufficiently small
+\(\theta>0\), this cell has \(O(n^\eta X^\varepsilon)\) rows for
+every fixed \(\eta>0\) and sufficiently small fixed \(L\).
+
+Project onto \(r\) feature coordinates giving an injective affine
+map on the span. For any anchor, augment the \(r\) coordinate
+difference columns by the \(V\)-difference column. Each
+\((r+1)\)-minor is divisible by \(D_V m_T\), since all the
+\(V\)-differences vanish modulo those coprime moduli. It is also
+divisible by \(D_U\): modulo \(D_U\) its last column equals the
+signed \(T\)-difference column, and the corresponding integer
+determinant vanishes exactly because \(T\) is affine. Expansion
+along the last column bounds the absolute determinant by
+\((r+1)H_VQ_0\). All augmented minors vanish and therefore \(V\)
+is affine, including at rank zero. The additive relation gives
+\(U\). The integral Cramer coordinates of CF2 have absolute
+values at most \(Q_0\) and preserve all these identities. The
+fixed-tall-divisor theorem supplies the asserted count.
+
+Sum the actual incoming chart and register costs, as in JD12.
+The numerical test involves the diameter of one cell, permitting
+a short displacement range even when its absolute \(V\)-height
+is large. It works with unknown real affine coefficients for \(T\).
+
+[Integer Cramer coordinates (CF2)](ABC_COMPLETE_LETTER_SMALL_FEATURES.md#normalization-and-a-rank-drop-criterion)
+· [All-letter exact features with a tall divisor](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md#exact-small-features-with-one-fixed-tall-divisor)
+
 ### Additive structure of projected registers
 
 **JD7.** Fix \(B,K\ge1\). On the same kind of chart let \(\mathcal R_T\)
@@ -455,6 +560,292 @@ open.
 [Regular genuine residue cells (RB4)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#the-actual-residue-cell-sizes)
 · [Tight locks at fixed shifts (NJ5)](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md#tight-full-locks-and-the-third-register)
 
+### A rank-two affine index bound
+
+**JD8.** In a genuine chart write its positions as \(P=(A,B)\).
+Let its width in affine determinants be
+\[
+ {\cal A}=\max_{P_0,P_1,P_2}
+             |\det(P_1-P_0,P_2-P_0)|.
+\]
+Suppose after fixing a chosen tuple of actual partial
+signed registers \(J_R\bmod m_R\) with \(m_R\mid D_R\),
+the remaining chart has rank two. Its position
+differences lie in the exact congruence lattice of index
+\[
+                       I=D_AD_BD_C\prod_R m_R.
+\]
+Indeed a given role lock first imposes one independent
+divisibility condition at its primes. The other signed
+coordinate fixed modulo \(m_R\) gives its additional
+index \(m_R\). This is immediate in the \(A,B\) basis
+for the \(A\) or \(B\) locks and in the \(A,A+B\) basis
+for the \(C\) lock. Coprimality across roles gives CRT.
+The actual index of the lattice spanned by all affine
+differences can only be larger. In rank two it is the
+gcd of the nonzero affine determinants, by the integer
+Smith normal form.
+
+Choose one occupied position \(P_0\) and an integer
+basis of any such containing lattice. Write \(P-P_0\)
+in that basis as integer features \(z\in\mathbb Z^2\).
+The complete letters are fixed affine functions of
+\(z\). Every maximal rank-two affine minor of these
+features equals its original affine determinant divided
+by \(I\). Thus if \({\cal A}/I\le X^{\theta_2}\), where
+\(\theta_2\) is the CF1 rank-two constant, CF1 supplies
+its strict row saving. The feature minors suffice even with large individual coordinate sizes. If the affine
+rank is one, a coordinate line is handled by the fixed
+complete-letter bound FL1 and a noncoordinate line
+with nonzero intercept by AS1. A line through the origin
+contains at most one positive primitive row. Thus
+degenerate rank does not obstruct the strict chart count.
+
+Uniformity includes all three original caps, with
+tolerances at most the CF1 rank-two tolerance and the
+AS1/FL1 gap. Sum over the actual incoming chart and
+partial-register records; their total exponent must
+be below the applicable strict saving. No fixed-order
+or fullness hypothesis on the locks is used. In
+particular, if \(D_AD_BD_C\ge X^{2-\theta_2/2}\), the
+bound is unconditional within that actual lock chart
+for all balanced dictionary exponents, since
+\({\cal A}=O(X^2)\) and the unused numerical margin
+absorbs constants. With smaller \(D\), the affine
+determinant condition also covers a short transverse
+strip with both complete coordinate diameters large,
+where the rank-one JD6 diameter test may give nothing.
+Near-saturation at occurrence must retain
+\({\cal A}/I>X^{\theta_2}\) on every chart having
+sufficiently small actual record price.
+
+[Small feature minors (CF1)](ABC_COMPLETE_LETTER_SMALL_FEATURES.md#a-strict-saving-for-small-affine-minors)
+· [Noncoordinate line count (AS1)](ABC_AFFINE_SLICE_RADICAL_COUNTS.md#noncoordinate-lines-and-projection-sizes)
+· [Fixed-letter count (FL1)](ABC_FIXED_LETTER_RADICAL_CAPS.md#a-pointwise-count-with-prescribed-prime-pools)
+
+### An arbitrarily small exponent from a heavy lock and affine area
+
+Suppose the actual affine rank in JD8 is two and one fixed
+original role divisor is at least \(X^\nu\) with \(\nu>0\)
+fixed. For each \(\eta>0\), the criterion
+\(\mathcal A/I\le X^\theta\), with sufficiently small
+\(\theta,L\) chosen in terms of \(\eta,\nu\) and the raw cap,
+gives count \(O(n^\eta X^\varepsilon)\) on the chart.
+
+Take one actual maximum-area triangle with one vertex \(P_0\)
+and use its two anchored differences as a real coordinate
+basis. Every chart difference from \(P_0\) has coordinates
+of magnitude at most one by Cramer's rule and the maximum
+area property. The difference lattice now has covolume
+\(I/\mathcal A\), and the two unit coordinate vectors are
+in it. A shortest vector and a shortest nonzero orthogonal
+projection lift give a basis of bounded lengths, after
+subtracting an integer multiple of the shortest vector
+from the lift. Hence all differences have integer basis
+coordinates \(O(\mathcal A/I)\). The original complete
+letters are exact affine functions of these two features,
+so the fixed heavy divisor allows the stronger
+[exact-feature count](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md#exact-small-features-with-one-fixed-tall-divisor).
+This uses rank two; for arbitrary rank one the old JD8
+line-count branch still applies.
+
+### Modular energy from the original witness degrees
+
+**JD9.** Let a regular balanced chart have \(n^{1/3-o(1)}\) rows,
+common complete dictionary exponent \(\alpha\) and original
+degree exponent \(u=1/3-\alpha\). Each complete \(T\)-value
+on the pruned chart has at least \(n^{u-o(1)}\) witnesses.
+Fix an original role \(T\) and an actual projection modulus
+\(M=D_T\prod_{R\in I}D_R\) as in JD6, with \(I\) a subset
+of the opposite registers. Write \(S\) for the occupied
+\(T\bmod M\) residues and choose one distinct complete
+\(T\)-representative per residue. Let \(H_T\) be the actual
+diameter of complete \(T\)-values and
+\[
+                          v=\log_n(1+H_T/M).
+\]
+Let \(n^{r_T+o(1)}\) cap the radical of the two representatives
+in role \(T\) after fixing the primes of any already
+prescribed polynomial-height pool. This pool may contain
+the support of \(D_T\), and the prescribed parts are fixed
+at height-subpower cost when applying shift counts.
+
+There exist fixed positive \(\sigma,h_0\), uniform in
+the balanced chart, such that
+\[
+ E_{+,\mathbb Z/M\mathbb Z}(S)
+  \ \ll |S|^2
+   \left(n^{\,r_T/2+v+o(1)}
+             + n^{\,\alpha-\sigma+o(1)}+1\right),
+\]
+with ordinary arbitrary small fixed count allowances.
+The \(o(1)\) here follows the repository's inner height
+and then outer small-budget convention.
+
+For any nonzero exact difference \(t\), choose the gcd
+of the two original representatives at divisor cost from
+\(|t|\). If the reduced \(T\)-quotient has height at least
+\(X^{h_0}\), MCB2 applied to the signed primitive shift
+after gcd normalization gives at most
+\(n^{r_T/2+o(1)}\) such ordered value pairs, as in JD2.
+The third auxiliary term is the fixed exact shift, of
+dictionary cost zero. The prescribed supported powers
+of the two free values are fixed before applying that
+count, and numerical height remains that of the
+primitive quotient. Each cyclic difference has at
+most \(O(1+H_T/M)=O(n^v)\) actual exact lifts. Summing
+the squared good-pair multiplicities therefore costs
+at most \(|S|^2n^{r_T/2+v+o(1)}\).
+
+For the remaining pairs fix a first complete representative.
+JD2, or its CF1 rank-one proof, gives at most
+\(n^{1/3-\sigma+o(1)}\) original second ROWS whose complete
+\(T\)-value has reduced quotient height below \(X^{h_0}\)
+against it. This condition depends only on the two complete
+\(T\)-values. Every eligible second representative therefore
+contributes all its \(n^{u-o(1)}\) chart witnesses. The number
+of bad representative pairs is at most
+\(|S|n^{\alpha-\sigma+o(1)}\). Each cyclic difference has at
+most \(|S|\) ordered residue representations, giving a
+bad-energy contribution of at most
+\(|S|^2n^{\alpha-\sigma+o(1)}\). The diagonal is harmless,
+and mixed energy terms are bounded by splitting the squared
+multiplicity using \((a+b+c)^2\le3(a^2+b^2+c^2)\).
+This counts representative differences rather than all
+pairs of original rows with the same value.
+
+Since \(|S|\ge n^{\alpha-v-o(1)}\) by direct lift counting,
+the energy is power-small relative to \(|S|^3\) when
+\(v<\sigma\) and \(2v<\alpha-r_T/2\) by fixed margins.
+In an actual JD5 near-tight chart at absolute depth,
+\(|S|=n^{\alpha+o(1)}\) for the two-opposite-register
+projection of any \(T\), and \(\alpha\ge2/9\). If the lift
+exponent has \(v=0+o(1)\), this gives an absolute power gap
+at least \(\min(\sigma,1/18)\) before allowances for every
+role, including occurrence. At higher lift exponents use
+the explicit two thresholds rather than assuming
+\(|S|=n^\alpha\).
+
+At occurrence there is also the direct OE2 transfer from exact
+energy by Cauchy–Schwarz over difference lifts. The regular-witness
+division above applies throughout the surviving dictionary range
+with small lift exponent and it needs no role-specific positive-scale
+mass condition.
+[Occurrence energy bounds (OE1–OE2)](ABC_OCCURRENCE_DICTIONARY_ADDITIVE_ENERGY.md)
+
+### Native register energy from actual pairs of original rows
+
+**JD10.** Fix a native register \(J_R\) and the locks on the
+two other roles \(U,V\), with product \(D=D_A D_B D_C\).
+For the selected chart let \(H_U,H_V\) be the two complete
+value diameters, set \(v_T=\log_n(1+H_T/(D_TD_R))\)
+for \(T=U,V\), and put \(\theta=\log_n(1+X/D)\).
+Call a pair good when all three primitive role quotients
+satisfy the tall condition of JD2. Let \(F\) be any JD1
+exponent for a fixed exact displacement on the good pairs;
+in particular one can use the three estimates \(d_T=r_T/2\)
+of JD2 with the actual outside caps and original degree bounds.
+The good pair count per fixed nonzero difference
+\(\eta=J_R-J'_R\bmod D_R\) is at most
+\[
+                            n^{v_U+v_V+F+o(1)} .
+\]
+Indeed each opposite exact shift is fixed modulo \(D_TD_R\).
+Its own-lock residue vanishes and its foreign-lock residue
+is the prescribed signed register difference.
+There are \(O(n^{v_T})\) integer lifts. The two shifts
+determine the third, so JD1 bounds the number of actual
+pairs in each of those vector fibres. Pairs with any
+vanishing exact shift are JD2 exceptions.
+
+For a regular RB4 chart with \(n^s\) native cells of
+\(n^{2u}\) actual rows each up to exponent tolerances, it follows that
+\[
+ E_+(J_R)\ \ll\
+  n^{2s+o(1)}
+  \left(1+n^{v_U+v_V+F-4u}+n^{s-\sigma}\right),
+\]
+where \(E_+\) is cyclic additive energy on the distinct native
+residue labels and \(\sigma>0\) is the JD2 quotient saving.
+For the proof, call a label pair good-rich if at least half
+its original row-pair lifts are good. Each such pair contributes
+at least \(n^{4u-o(1)}\) lifts to its fixed-difference
+bound. The other distinct label pairs contribute at least
+that scale to the total JD2 exceptional count
+\(n^{2/3-\sigma+o(1)}\). As \(s=1/3-2u\), there are at most
+\(n^{2s-\sigma+o(1)}\) such pairs. Their cyclic energy
+with themselves is bounded by their total number times \(n^{s+o(1)}\).
+Similarly sum the good-rich energy, using the pointwise
+difference estimate after the lift rebate. The diagonal adds
+\(n^{2s+o(1)}\), and Cauchy–Schwarz controls cross terms.
+This uses the count of actual original row pairs and all three
+original radical caps in JD1.
+
+There is also a single-side estimate. Each occupied native
+label has \(n^{u+o(1)}\) distinct opposite complete values.
+For either \(T=U,V\), each native label pair has
+\(n^{2u+o(1)}\) such complete value pairs. JD2's anchored
+bound, divided by the actual original witness degrees, gives
+at most \(n^{2\alpha-\sigma+o(1)}\) quotient-exceptional
+complete value pairs. Divide by the lift count for a bad-rich
+native pair and use \(s=\alpha-u\). For good-rich pairs the
+fixed nonzero native difference has \(O(n^{v_T})\) complete
+shift lifts, each with at most \(n^{r_T/2+o(1)}\) value
+pairs. Thus one can replace the middle exponent in the
+displayed energy bound by the minimum of its stated value
+and \(r_T/2+v_T-2u\) for the two choices of \(T\).
+
+The numerical lift counts can be replaced by actual catalogues
+at each difference. Let \(r_R(\eta)\) count the native residue
+pairs of difference \(\eta\), and let \(L_{UV}(\eta)\)
+count the joint exact opposite shifts realized by good original
+row pairs there. The good-rich term in the energy bound is
+\[
+       n^{F-4u+o(1)}
+                 \sum_{\eta\ne0} r_R(\eta)L_{UV}(\eta).
+\]
+This follows by summing the pointwise bound for good-rich
+pairs against their respective multiplicities. The same argument
+with one opposite dictionary gives
+\(n^{r_T/2-2u+o(1)}\sum_{\eta\ne0} r_R(\eta)L_T(\eta)\)
+for \(L_T(\eta)\) counting shifts of tall-quotient complete
+\(T\)-value witness pairs in the two native cells. The other
+two role quotients need not be tall for this single-role list.
+One can therefore use
+a small weighted joint lift average even when the two opposite
+numerical lift ranges are large. The remaining energy terms are
+unchanged. If the native label is projected further modulo
+\(m_R\mid D_R\), use the corresponding exact lift lists or
+replace \(D_R\) by \(m_R\) in the numerical estimate. On any
+regular retained projection of exponent \(t\) carrying the
+full original row exponent \(d\) and complete dictionary
+exponent \(\alpha\), the assumed regular projected fibre
+sizes are \(n^{d-t+o(1)}\) original rows and
+\(n^{\alpha-t+o(1)}\) opposite complete values. The same
+proof replaces the two rebates by \(2(d-t)\) and
+\(2(\alpha-t)\), respectively. The diagonal and exceptional
+parts now have exponents \(2t\) and \(3t-\sigma\), at
+\(d=1/3-o(1)\).
+
+Another consequence of the fixed-difference estimate is the
+following test on any selected good pairs. If their exponent
+is \(p\) and the actual single register difference catalogue
+costs \(q_R\), then
+\[
+                            p\le q_R+v_U+v_V+F+o(1).
+\]
+At occurrence, if the chart has exponent \(1/3-o(1)\)
+and the pair population has exponent \(2/3-o(1)\), JD2
+allows us to take only good pairs. With default caps and
+\(v_U,v_V=o(1)\), the original degrees are subpower
+so \(F\le1/6+o(1)\); thus \(q_R\ge1/2-o(1)\).
+The proof retains the full three-role restrictions, including
+an arbitrary outside radical profile in the quotient count.
+The result is a difference growth condition. At positive
+multiplicity, very deep relative two-lock charts also obey
+the stricter JD5 entropy obstruction below.
+[Regular native cells (RB4)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#the-actual-residue-cell-sizes)
+
 ## Tight full locks force almost complete register information
 
 **JD5.** For each fixed allowance \(\eta>0\) there are
@@ -527,3 +918,112 @@ excludes the whole limiting range \(1/6\le\alpha<2/9\)
 and forces equality in the register-information constraint
 throughout the rest of the range.
 [Balanced register identities (RB5–RB7)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#conditional-entropy-identities-and-three-registers)
+
+The same entropy conclusion holds if relative depth is available
+on just one free role \(U\). In each fixed-register cell choose a
+rank-one coordinate anchored at an occupied \(U\)-value. Its
+absolute value is at most \(H_U/D\), where \(H_U\) is the chart
+diameter of this role. Fix one complete letter \(T\ne U\) and
+apply CS1 with this feature. The proof needs
+\(H(\mathrm{row}\mid T,\mathbf J)=o(\log n)\) for this one \(T\)
+only, because \(s,z,u\) are already common to the roles under
+RB5–RB7. Thus it suffices that \(D/H_U\ge X^{-o(1)}\).
+For two locks the same reasoning uses either of the two free
+roles, and only its diameter relative to the two-lock product.
+As before choose the loss allowance before the numerical threshold
+and the sufficiently small fixed budget.
+
+## A primitive CRT model with near-diagonal energy
+
+**JD11.** There is a tall three-lock CRT model with every
+surviving JD5 exponent \(\alpha\in[2/9,1/3]\), primitive
+positive rows, the full limiting registration entropy,
+and near-Sidon modular dictionaries. It drops the
+original radical caps.
+
+Take comparable fixed prime-power locks
+\(D_A=2^k,D_B=3^\ell,D_C=5^j\) of order \(H\), and set
+\(X=D_AD_BD_C\). Pick phase numerators \(a,b,c\) in
+fixed-relative intervals for
+\(x=a/D_A\) around \(0.05\), \(y=b/D_B\) around \(0.75\),
+and \(z=c/D_C\) around \(0.35\). Define
+\[
+        A=X(y-z),\qquad B=X(z-x),\qquad C=X(y-x).
+\]
+These are positive integers with exact \(A+B=C\),
+each prescribed role divisible by its own lock, and
+\(X/2<C<X\). The signed native registers are unit
+multiples of \(a,b,c\) modulo their respective locks.
+By congruence restrictions at 2,3,5 one can require
+that all original role locks are exact and that each
+of the two noncorresponding complete values is a
+unit at every one of these primes. For example at a
+prime of \(D_A\), take \(a\) a unit and choose \(b,c\)
+so the residual \(D_C b-D_B c\) is a unit.
+Rules at the other primes are independent by CRT.
+
+For a large fixed \(P_0\), also impose one fixed
+residue class on each phase numerator at each prime
+\(p\le P_0\) outside 2,3,5 making common divisibility
+impossible (for example \(a,b\equiv0,c\equiv1\)).
+Each ambient phase box is now an arithmetic progression
+of cardinality \(\asymp H\) and fixed step. A positive
+fraction, in fact uniformly most, of ambient phase
+triples is primitive. For primes outside the prescribed
+small ones and at most the smallest box cardinality,
+the two congruences for \(p\mid A,B\) require two
+independent phase classes on fixing the remaining
+phase, so have probability at most \(4/p^2\).
+The sum is arbitrarily small by taking \(P_0\) large.
+For larger primes, first fix \(b,c\). The nonzero
+\(A\) has \(O(\log X)\) prime divisors. For each
+possible remaining common prime the suitable \(a\)
+classes have probability \(O(1/H)\), since the phase
+box has order \(H\). This contribution tends to zero.
+
+Use \(G=n^{z_0+o(1)}\) groups, each of \(m=n^{u+o(1)}\)
+labels per role, where \(z_0=1/3-3u\ge0\). Choose
+each role's \(Gm=n^{s+o(1)}\) distinct numerators
+uniformly from its ambient phase box and partition
+them into the groups. Keep only group-aligned Cartesian
+triples. There are \(n^{z_0+3u+o}=n^{1/3+o}\)
+registered rows, of which a positive fraction can
+be chosen primitive by the preceding average.
+Each sampled native set can simultaneously be chosen
+strictly Sidon modulo its own lock (up to unordered
+symmetry). The expected number of genuine collisions
+is \(O(n^{4s}/H)\), which tends to zero at fixed
+sufficiently small \(L\), by fixing all but one
+sampled label. A two-label doubled collision is
+excluded by the short relative phase interval.
+
+A complete \(T\)-label determines the two opposite
+phase labels exactly by CRT, so there are at most
+\(Gm^2=n^{\alpha+o}\) labels and at most \(m\) rows
+per complete label. Pruning to fixed fractions of
+the permitted degrees yields a regular primitive
+chart of the desired exponent, and similarly each
+native dictionary has exponent \(s\). Its opposite
+joint dictionaries have exponent \(\alpha\) and
+the full native tuple support exponent \(1/3\).
+All JD5 entropy equalities therefore hold at the
+exponent scale. The three complete role modular
+energies are at most four times the corresponding
+squared dictionary sizes: a modular equal sum
+must preserve the two unordered pairs of
+opposite Sidon phase labels independently.
+This persists after all deletions.
+
+Most sampled rows have large radicals on all three roles. For example \(A/D_A=D_C b-D_B c\) is an
+injective function of the two independent phase
+numerators in their ranges, giving \(\asymp H^2\)
+possible values. Only \(n^{1/3+o(1)}\) integers of
+polynomial height have radical at most \(n^{1/3}\),
+by fixed-support enumeration. The probability of
+the target cap in any role thus tends to zero,
+by the analogous calculation in that role.
+One can delete every low-radical edge and retain
+the same exponent. This establishes that the original radical caps are necessary
+for a contradiction using the stated CRT, entropy and energy
+conditions. The model itself meets the positivity, primitivity
+and shell conditions.

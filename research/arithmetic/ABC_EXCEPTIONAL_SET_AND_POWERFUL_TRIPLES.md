@@ -11138,15 +11138,31 @@ The previous JD5 already excludes the minimum-dictionary endpoint
 at absolute tight depth. JD6 and JD7 additionally give finite-chart
 counts and relative-depth criteria.
 
-The [integral derivative comparison (DI1–DI2)](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md)
-identifies the exact congruence index on the saturated feature
-lattice in the independent evaluation case. At a shared prime with
-two active roles, the two complete-letter directions can be
-eliminated over \(\mathbb Z_p\). The remaining congruences are
-normalized feature differences of the same role. Each leading
-head direction is charged once at its deepest level. Construction
-of a shared derivative evaluation map and extraction of affordable
-features with the three original caps remain open.
+When the same register projection gives short integer CRT quotients
+on two complete roles, one fixed tall original divisor reduces the
+entire projected-cell count to \(O(n^\eta X^\varepsilon)\) for
+every fixed \(\eta>0\). The total exponent is then \(b_0+t+\eta\)
+with \(t\) the actual joint projection price. The full tuple on
+\(D_AD_BD_C\ge X/n^K\) suffices for every fixed \(K\), with the
+budget chosen after the allowance. Two low-rank residue models
+can supply the two short coordinates without charging their
+supports. An additional determinant test lifts a single affine
+letter to all three when the remaining numerical diameter is
+short relative to two role divisors and a partial native register.
+[Short CRT quotient count (JD12)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#two-short-crt-quotient-coordinates-give-arbitrarily-small-count)
+· [One-letter affine lift (JD13)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#lifting-one-affine-complete-letter-using-a-partial-register)
+
+The saturated derivative feature comparison now includes shared
+prime coordinates. Its exact integral index is a quotient of
+maximal-minor gcds on the rationally available feature parameter
+space. The actual evaluation pays the coordinatewise valuation
+index up to at most one lost digit at any prime. A genuine
+three-row example has a nonzero additive derivative kernel whose
+image vanishes after imposing a common affine feature model.
+The remaining problem is to extract an affordable arithmetic
+model retaining all three caps and control the rational directions
+jointly across primes.
+[Shared derivative coordinates (DI3)](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md#di3-shared-derivative-coordinates-and-the-actual-feature-lattice)
 
 The [product-difference terminal (FP5)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#recovery-from-the-product-difference-alone)
 recovers a primitive pair from the exact auxiliary difference
@@ -11179,6 +11195,139 @@ beyond this threshold. A strict unrestricted small-budget
 coefficient still requires a uniform arithmetic extraction or
 another route. The unit-budget certificate uses its own feasible
 region, so these estimates are tracked separately from it.
+
+### Shared-support and class-moment refinements
+
+[FP6](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#pricing-shared-support-by-its-actual-pair-incidence)
+prices an actual shared support from the selected pair exponent.
+At near saturation with pair count \(n^{2/3-\rho-o(1)}\) its
+effective dictionary price is at most \(\rho\). Exact scaled
+valuation cancellations and the per-role outside caps give a
+necessary overlap \(m>1/3+\rho/2-o(1)\) and \(m\le3\rho+o(1)\)
+for the raw FP2 budget. Thus every selection through \(\rho=2/15\)
+is excluded without imposing compatible prime roles. The
+[parity calculation](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#exact-parity-of-the-missing-shared-primes)
+requires exact even valuation matching on deleted summand primes
+for a raw-parity saving through \(
+ho=2/9\).
+The [opposite-shift terminal](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#an-opposite-shift-terminal-for-compatible-pairs)
+pushes the obstruction on compatible equal-target pairs to
+\(\rho=7/36\). These thresholds concern the raw FP2 exponent.
+
+[JD8](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#a-rank-two-affine-index-bound)
+also gives a strict count when the actual maximum affine area
+divided by the congruence lattice index is small, even with
+large complete-letter diameters.
+[JD9](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#modular-energy-from-the-original-witness-degrees)
+uses the original witness degrees to bound cyclic additive
+energy in sufficiently deep regular charts by a power below
+the cubic energy scale throughout their surviving dictionary
+range.
+
+[MP6](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp6-a-ramification-estimate-for-asymmetric-parity-kernels)
+uses an averaged partial-ramification estimate on the smaller
+parity kernel. Any fixed imbalance of its exponent with the
+next kernel allows a strict improvement on the \(k=3/2\) moment
+threshold. A cube-root imbalance allows \(k=2\), corresponding
+to separation \(1/27\) in the mixed packing. For balanced
+kernels, [MP7](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp7-a-discriminant-formulation-of-the-balanced-moment)
+reduces the joint moment problem to discriminant counts in two
+explicit permutation actions. Weak Malle for the degree-36
+regular action on \(S_3\times S_3\) would give \(k=2\), and for
+the degree-54 action on the cosets of the even sign subgroup
+of \(S_3^3\) would give \(k=3\). These field-count inputs and
+extraction of cheap mixed defects across arbitrary genuine
+families remain open.
+
+### Auxiliary height, native register witnesses and balanced field counts
+
+[FP8](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#linear-auxiliary-heights-and-its-three-separate-radical-caps)
+proves a linear numerical height floor for exponent-rich
+product auxiliaries by rational reconstruction with the
+actual target gcd. Keeping the three distinct auxiliary
+radical caps excludes the raw FP2 test through pair loss
+\(1/6\). At equality all three auxiliary radical masses
+approach \(1/2\), and each original role contributes shared
+mass \(1/6\). [FP9](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#fixed-auxiliary-difference-without-compatible-prime-roles)
+extends the equal-target terminal to arbitrary prime roles,
+excluding the raw budget there through \(17/90\).
+
+[JD10](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#native-register-energy-from-actual-pairs-of-original-rows)
+prices a single register difference using actual original row
+pair lifts with all three radical caps. It also works with
+weighted exact lift catalogues when the nominal numerical
+ranges are large. At deep occurrence, its necessary native
+difference price is \(1/2-o(1)\) on exponent-full usable
+pairs. [JD11](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#a-primitive-crt-model-with-near-diagonal-energy)
+shows why energy and tight registration alone cannot force a
+contradiction, using positive primitive rows across the full
+surviving balanced dictionary range when the radical constraints
+are dropped.
+
+[MP8](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp8-a-balanced-sector-counted-by-short-ideal-representatives)
+bounds the full balanced two-edge cubic-field count by
+\(N^{7/2+\varepsilon}\), and attains the \(N^{3+\varepsilon}\)
+threshold when sufficient imaginary torsion classes have
+minimum ideal norm below \(N^{4/5-\eta}\). [MP9](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp9-a-degree-six-relative-discriminant-for-the-two-edge-family)
+represents the remaining field count by relative cubic
+extensions of moving quadratic bases whose relative
+discriminant away from 2 is a rational squarefree principal
+ideal. The needed count for long ideal representatives remains
+open.
+
+### Fixed-heavy-divisor counts and shared discriminant factorization
+
+[FP10](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#a-fixed-numerical-margin-for-both-operands-and-the-difference)
+gives a fixed numerical margin for both product auxiliary
+operands and a positive-power height floor for the actual
+difference on exponent-rich pair families. The short boxes are
+handled by [exact small features with one tall divisor](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md#exact-small-features-with-one-fixed-tall-divisor).
+This also strengthens the [rank-two area-index rule](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#an-arbitrarily-small-exponent-from-a-heavy-lock-and-affine-area)
+to an arbitrarily small normalized exponent when an actual
+chart has a fixed numerically heavy lock.
+
+[FP11](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#recovering-matched-square-factors-from-an-actual-target-modulus)
+recovers the two matched square factors by their reduced ratio
+under actual divisors of the target quotients. Recovering \(G\)
+then costs the residual fixed-shift price. On the tied raw
+boundary an actual shared-record incidence argument gives
+arbitrarily small conditional \(G\) price after fixing \(d\).
+Anchored original counts with a shared target divisor bound the
+complete auxiliary operand dictionary by \(\alpha_C+1/4\).
+A different upper bound uses close original targets. Either can
+contradict a sufficiently cheap square reconstruction. The number
+of genuine pairs admitting those conditions is a separate
+extraction problem. The
+[anisotropic common-power count](ABC_COPRIME_SHORT_POWER_WINDOWS.md#anisotropic-completion-below-the-exact-power-threshold)
+also quantifies the cost below the exact CPW5 height threshold.
+
+A second ratio uses the two reduced determinant shifts, instead
+of the square roots of the matched gcds. An actual target quotient
+divisor of fixed positive numerical height at conditional price
+\(\mu\) counts the ratio at half its remaining radical cap.
+Once it fixes both original targets at divisor cost, a
+fixed-target argument gives the same half coefficient on the
+hidden gcd. In the raw FP2 budget this forces
+\(\rho\ge2/9-2\mu/3+(\zeta+\ell_{\mathrm{old}})/3-o(1)\).
+A fixed relative real imbalance supplies the ratio constraint
+with \(\mu=0\). At the initial \(\rho=1/6\) boundary, the remaining
+private parts of both target quotients have vanishing small-prime
+height and at most two prime powers carrying any positive
+numerical height. These pair conditions retain the original
+three caps and do not give an unrestricted count.
+[Reduced determinant-ratio count (FP12)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#a-deep-target-divisor-on-the-reduced-determinant-ratio)
+
+[MP10](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp10-transverse-norm-catalogues-at-minkowski-height)
+admits long minimum ideals in the balanced two-edge field problem
+when the actual transverse norm coefficients have a small list.
+[MP11](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp11-uniform-balanced-rows-via-cubic-coefficient-lattices)
+counts cubic coefficient lattices with a prescribed discriminant
+divisor. Averaging the short certificates by their discriminants
+and amplifying each orbit by integral unipotent translations gives
+\(N^{29/9+\varepsilon}\) for the full balanced two-edge count and
+\(N^{3+(4/9)(k-3/2)+\varepsilon}\) for the balanced minimum moment
+on \(3/2\le k\le2\). The price-free target at \(k=2\) is \(3\).
+[Averaged cubic certificates](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#an-averaged-saving-from-short-cubic-certificates)
 
 ## Complementary words and reduced least-repaired target ratios
 

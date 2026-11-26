@@ -265,6 +265,414 @@ catalogue. It does not here supply a three-edge moment at the
 price \(\sum_J\sigma_J\).
 [Average 3-torsion in 2-extensions, Theorems 1.1 and 6.5](https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/average-size-of-3torsion-in-class-groups-of-2extensions/6AABE169B5BA8192FE036455DE4F806F)
 
+## MP6. A ramification estimate for asymmetric parity kernels
+
+Let \(A\le B\le C\) be dyadic lower endpoints for positive
+pairwise-coprime squarefree kernels \(x,y,z\), respectively.
+Write \(h_{xy}=h_3(\epsilon_{xy}xy)\) for fixed signs on the
+three edges and use the analogous notation for the other two.
+For fixed \(0\le k\le2\), put \(\kappa=1597/5000\).
+Then
+\[
+ \sum_{x\asymp A,\ y\asymp B,\ z\asymp C}^{*}
+        \min(h_{xy},h_{xz},h_{yz})^k
+ \ \ll_{\varepsilon,k}\ (ABC)^{1+\varepsilon}
+  \left(1+(A/B)^{1/3}(AB)^{\kappa(k-3/2)_+}\right),
+\]
+where the star indicates the pairwise coprimality and squarefree
+conditions. The estimate uses the ramified primes of the actual
+shared kernel \(x\).
+
+For \(x\) in its dyadic range, let \(S_B(x)\) count the first
+\(h_{xy}\) moment over allowed \(y\). The index-three subgroups of
+a quadratic ideal class group correspond to cubic fields with
+the same fundamental discriminant. In particular \(h_3(d)-1\)
+is twice this cubic-field count. At every odd prime dividing \(x\),
+such a cubic field is partially ramified because its fundamental
+discriminant has valuation one there. Dropping other constraints
+gives a cubic-field count with discriminant bound \(O(AB)\).
+Apply Bhargava–Taniguchi–Thorne, Theorem 1.4 with \(t=U=1\),
+partially ramified modulus equal to the part of \(x\) prime to \(6\)
+and no
+conditions at other primes. The two residue coefficients in
+their Table 1 are \(O(x^{-1+\epsilon})\) after multiplication
+over this modulus. Together with the trivial class term this gives
+\[
+ S_B(x)\ll_\epsilon (ABC)^\epsilon B+E_B(x),\qquad
+ \sum_{x\asymp A}E_B(x)\ll_\epsilon (ABC)^\epsilon A^{4/3}B^{2/3}
+\]
+for nonnegative \(E_B\) bounded by a constant times their absolute
+errors. Deleting \(2,3\) has multiplicity at most four. The same
+holds with \(C\) in place of \(B\), including either sign of
+the discriminant.
+
+Call a center \(x\) good if both bounds give first moments at most
+a fixed multiple of \((ABC)^\epsilon B\) and
+\((ABC)^\epsilon C\), respectively. The bad set has size at most
+\(O_\epsilon((ABC)^\epsilon A\mu)\), where
+\(\mu=(A/B)^{1/3}\), and summing the two first moments over it
+costs at most \((ABC)^{O(\epsilon)}AB\mu,\ AC\mu\), respectively.
+If every edge weight is at least \(H\), each good \(x\) has
+\(O((ABC)^\epsilon B/H)\) allowed \(y\) and the corresponding
+\(C/H\) bound. Their contribution to the number of triples is
+at most \(ABC(ABC)^{O(\epsilon)}H^{-2}\).
+For bad centers use the three-edge matrix inequality from MP4.
+The first two edge support counts are at most
+\(AB\mu(ABC)^{O(\epsilon)}/H,\ AC\mu(ABC)^{O(\epsilon)}/H\).
+The third is at most \(BC(ABC)^{O(\epsilon)}/H\), by the
+ordinary first moment and divisor enumeration.
+This gives the bound \(ABC(ABC)^{O(\epsilon)}\mu H^{-3/2}\)
+on this part. Dyadic summation stops at \(H\ll(AB)^\kappa\)
+by the pointwise quadratic torsion bound on the \(xy\) edge.
+This proves the stated estimate.
+
+Consequently in MP4, if all three orientations have conditional
+record cost at most \(q_{\max}\) and separation at least
+\(3^{-k-1}\), one can count using the minimum of the three
+pointwise class bounds, at exponent
+\[
+ q_{\max}+\sigma_1+\sigma_2+\sigma_3+
+  \max\{0,(\sigma_1-\sigma_2)/3+
+              \kappa(\sigma_1+\sigma_2)(k-3/2)_+\},
+\]
+where the \(\sigma_i\) now describe the actual dyadic kernel
+sizes in \(n\), in increasing order. A fixed exponent asymmetry
+allows \(k>3/2\) with no class penalty. For \(A^3\le B\) this
+includes \(k=2\), giving separation \(1/27\). There is also a
+two-orientation proof of this last range. Proposition 4.7 of
+the same paper gives \(S_B(x)\ll_\epsilon (ABC)^\epsilon B\)
+uniformly for \(A^3\le B\), by placing the cubic-field count
+in a discriminant interval enlarged by an arbitrarily small
+power to meet the strict modulus cutoff. Use the same bound
+for \(C\), and sum the product of the two neighbor counts.
+
+For a comparison on exact valuation profiles, give the three
+odd masses \(0.02,0.09,0.09\), and give each role even noncube
+mass \(0.066\). Put these defects in scaled degrees
+\([.45,.46]\), with residues \(1,2\bmod12\) respectively.
+Place the remaining mass at valuation \(6\bmod12\) in degrees
+\([3.8,5.4]\) with mean making each numerical height one.
+Using the center of odd mass \(0.02\), both relevant orientations
+have separation greater than \(1/27\), while
+\(\sigma_1+\sigma_2+\sigma_3+2(0.066)=0.332\).
+This gives a strict bound on the stated sector, including
+diffuse weak measures. The three separation levels of the
+unaugmented defects are all below \(3^{-5/2}\).
+These are formal profile parameters illustrating the criteria;
+the bound itself is on genuine primitive triples satisfying them.
+[Bhargava–Taniguchi–Thorne, Theorem 1.4, Table 1 and Proposition 4.7](https://arxiv.org/pdf/2107.12819)
+
+## MP7. A discriminant formulation of the balanced moment
+
+The following implications are conditional on weak Malle upper
+bounds for explicit permutation actions. They give a field-count
+form of the missing balanced joint moment. Work with the signed
+squareclasses in MP4, whose product is minus a square. Triangles
+with any \(h_{ij}=1\) contribute at most \(ABC\) to the minimum
+moment.
+
+For the other triangles choose one cubic field of fundamental
+discriminant associated with each edge. The three quadratic
+characters are distinct and independent. Indeed each odd-kernel
+prime occurs in precisely two edge supports, the product signed
+character is that of \(\mathbb Q(i)\), and a trivial character
+or an equality between two characters would leave one of the
+three fields with squarefree kernel \(1\) or \(-1\) in the
+pairwise-coprime setting. This has already been excluded.
+The compositum of the three \(S_3\) closures has group \(G=S_3^3\).
+Its sign image is full, and its kernel inside \(C_3^3\) projects
+onto each coordinate since the commutator does. The signs act
+on this kernel by the three distinct coordinate characters.
+Their idempotents over \(\mathbb F_3\) show that each coordinate
+line is in the kernel.
+
+In \(G\), let \(H\) be the order-four subgroup of even sign
+flips in the standard sign complement. It is core-free,
+since no nonidentity double flip stays in \(H\) under all
+conjugations by \(C_3^3\). The action on \(G/H\) therefore
+has degree 54 and is faithful. A double flip acts as an
+involution with six fixed cosets: its centralizer has size
+\(2\cdot2\cdot6=24\), and its conjugacy class meets \(H\) in
+one element. Its permutation index is 24. All other
+nonidentity elements have no fixed cosets and index at least
+27. At an odd prime dividing \(xyz\), the three cubic
+discriminants are fundamental, with the prime appearing on
+exactly two edges. Tame inertia in the compositum is a double
+flip, so the degree-54 subfield discriminant has exponent
+24 there. The contribution at 2 is bounded in fixed degree.
+The total discriminant is therefore \(O((xyz)^{24})\); its
+part outside 2 equals the 24th power of the odd part of \(xyz\).
+
+The degree-54 subfield determines the compositum as its Galois
+closure. There are boundedly many cubic subfield choices in a
+fixed closure, and the three edge radicands recover the three
+coprime kernels by gcd. Thus the count of ordered cubic
+triples has only bounded multiplicity over the degree-54
+fields. Conversely the number of choices of cubic triples
+per kernel triple is \(\prod_{i<j}(h_{ij}-1)/8\), which is
+comparable to \(\prod h_{ij}\) here. It suffices to prove
+\(O_\varepsilon(Y^{1/24+\varepsilon})\) for just these
+degree-54 fields with the specified sign relation and inertia,
+ordered by discriminant \(Y\). Weak Malle for the full
+permutation group predicts this bound. It would give
+\[
+                 \sum{}^{*}\min_{i<j} h_{ij}^k
+                       \ll_\varepsilon (ABC)^{1+\varepsilon}
+                    \qquad (0\le k\le3).
+\]
+In particular it would allow separation \(1/81\) in all three
+orientations at the common conditional record cost.
+[Weak Malle formulation for solvable groups](https://arxiv.org/abs/1804.11318)
+
+For \(k\le2\) the corresponding two-edge problem has smaller
+degree. Use two cubic fields with independent quadratic
+characters and their Galois compositum of group \(S_3\times S_3\).
+In the regular degree-36 action every nontrivial involution
+has index 18, the minimum. At odd primes the inertia is an
+involution, with single or double flips according to which
+quadratic discriminants contain the prime. Its discriminant
+is \(O((xyz)^{18})\) when using the \(xy,xz\) edges, and the
+vertex factors are recovered by gcd. The weak \(Y^{1/18+\varepsilon}\)
+bound in this regular action would therefore give the exponent
+free \(k\le2\) moment for balanced kernels as well. Degenerate
+cases with a trivial edge weight have already been removed.
+Current results for a symmetric group times an abelian group,
+or for the product-action wreath families, have different
+groups or permutation representations from these two counts.
+[Masri–Thorne–Tsai–Wang, symmetric times abelian](https://doi.org/10.1112/S0010437X20007587)
+· [Inductive methods for counting number fields](https://doi.org/10.1515/crelle-2025-0074)
+
+## MP8. A balanced sector counted by short ideal representatives
+
+Let \(x,y,z\) run dyadically at a common scale \(N\), with
+the pairwise coprime squarefree restrictions of MP6.
+Suppose the \(xy\) edge is imaginary, and let \(h_M(-xy)\)
+count the nontrivial classes in
+\(\mathrm{Cl}(\mathbb Q(\sqrt{-xy}))[3]\) whose least integral
+ideal norm is at most \(M\). For \(M\ll N\) one has, uniformly
+in \(x\),
+\[
+               \sum_{y\asymp N}^{*} h_M(-xy)
+                              \ll_\varepsilon N^\varepsilon M^{5/2}/N .
+\]
+Choose a minimum-norm ideal \(\mathfrak a\) in such a class.
+It is primitive as an ideal, in the sense that no rational
+prime ideal \(p\mathcal O_K\) divides it. If \(m=N\mathfrak a\)
+and \(\mathfrak a^3=(\alpha)\), the imaginary quadratic norm
+equation gives
+\[
+                        4m^3=t^2+xy w^2 .
+\]
+Here \(t,w\) are integers with \(|t|\ll M^{3/2}\) and
+\(0<|w|\ll M^{3/2}/N\). The nonzero condition on \(w\) follows
+because a rational \(\alpha\) with every ideal valuation
+divisible by three is itself a rational cube, even at the
+ramified primes where the ideal valuation has the factor two.
+Then \(\mathfrak a\) would be principal. For fixed \(m,t,w\)
+with \(w\ne0\), the positive \(y\) is determined and the
+ideal cube, hence the ideal \(\mathfrak a\), is determined.
+This gives an upper-bound count by these integer solutions.
+
+Let \(w_0\) be the odd part of \(|w|\). For an odd prime
+\(p\mid(m,w_0)\) the norm equation gives \(p\mid t\).
+Thus \((\alpha)\) is divisible by \(p\mathcal O_K\).
+If \(p\) is unramified this contradicts primitivity of
+\(\mathfrak a\), since every prime over \(p\) then divides
+\(\mathfrak a\). At a ramified prime the primitive ideal
+has valuation one there, so \(v_p(m)=1\).
+The two terms \(t^2,xy w^2\) have valuations of different
+parity, and their sum has valuation three. Thus \(v_p(w)=1\).
+For integer \(m,w\) satisfying these necessary conditions,
+the congruence
+\[
+                   t^2\equiv4m^3\pmod{x_{\rm odd}\,w_0^2}
+\]
+has at most \(N^\varepsilon\gcd(m,w_0)\) residues. For unit
+right-hand side any odd prime power has at most two roots.
+When \(p\mid m\) but \(p\nmid w_0\), the modulus has at most
+a single factor \(p\) and the root is zero. At a prime common
+to \(m,w_0\), the modulus exponent is at most three and the
+square-zero congruence has at most \(p\) roots. Take the product
+by CRT.
+
+Put \(V=4M^{3/2}/N\). If \(V<1\) the sum is empty. Otherwise the number
+of admissible \(t\)'s is at most
+\[
+ N^\varepsilon\gcd(m,w_0)
+                  \left(1+\frac{M^{3/2}}{N w_0^2}\right).
+\]
+On summing over \(m\le M\), use
+\(\sum_{m\le M}\gcd(m,w_0)\le M\tau(w_0)\), by the divisor
+formula for the gcd. The sum
+\(\sum_{0<|w|\le V}\tau(w_0)/w_0^2\ll1+\log V\),
+since each odd part repeats for at most \(O(1+\log V)\)
+powers of two and the odd weighted divisor sum converges.
+The unweighted sum is \(O_\varepsilon(VN^\varepsilon)\).
+This proves the row bound with arbitrarily small losses.
+[Norm equation method for quadratic class groups, Pierce](https://sites.math.duke.edu/~pierce/papers/Pierce_class_numbers.pdf)
+
+On these balanced triples the ordinary first moment on the
+\(xz\) edge is \(O(N^{2+\varepsilon})\) after summing over
+\(x,z\), by factorization multiplicity and the signed first
+moment. Hence the joint sum \(h_M(-xy)h_3(\epsilon xz)\)
+is \(O_\varepsilon(N^{1+\varepsilon}M^{5/2})\).
+For kernel triples with \(h_3(-xy)>1\) on which at least
+an \(N^{-\delta}\) fraction of nontrivial classes have
+such representatives, the actual two-edge product moment
+is bounded by \(O_\varepsilon(N^{1+\delta+\varepsilon}M^{5/2})\).
+The corresponding minimum moment for \(k\le2\) is obtained
+by adding the trivial \(O(N^3)\) contribution where any edge
+has weight one. Thus \(M\le N^{4/5-\eta}\) and
+\(\delta<(5/2)\eta\) suffice for the price-free \(k=2\)
+mixed packing moment on this sector, even with comparable
+parity kernels. The same bound counts the MP7 degree-36
+fields when their imaginary resolvent meets this fraction
+condition. It refers to the fraction of ideal classes within
+a resolvent and requires no identification of individual
+classes with specific cubic fields.
+
+Using the imaginary quadratic Minkowski bound \(M\ll N\)
+for all classes gives an unconditional \(O(N^{7/2+\varepsilon})\)
+bound for the corresponding balanced degree-36 family
+with an imaginary edge. The Cauchy–Schwarz bound from the
+separate quadratic second moments has exponent \(1+2f(2)=32/9\).
+The \(7/2\) bound remains larger than the
+\(N^{3+\varepsilon}\) field count needed in MP7.
+The count of classes with long minimum ideals, and extraction
+of the short-ideal sector from actual balanced abc families,
+remain open.
+
+## MP9. A degree-six relative discriminant for the two-edge family
+
+Take two fundamental \(S_3\) cubic discriminants with squarefree
+radicands \(\epsilon_1 xy,\epsilon_2 xz\) in the degree-36
+family of MP7. Write \(G=S_3\times S_3\) for the group of
+the compositum. Its action on the cosets of the diagonal
+\(S_3\) is the degree-six action \(b\mapsto g_1 b g_2^{-1}\)
+on \(b\in S_3\). This action is faithful, since an element in
+its kernel has equal components which commute with all of
+\(S_3\). The associated field \(M_6\) contains the quadratic
+field \(K_0=\mathbb Q(\sqrt{\epsilon_1\epsilon_2 yz})\),
+fixed by the kernel of the product sign. The extension
+\(M_6/K_0\) is cubic with relative quadratic resolvent the
+biquadratic compositum of the original two resolvents.
+Indeed on a sign block the kernel of the product sign has
+cubic action with one order-three diagonal line in its kernel,
+and its quotient is \(S_3\).
+
+At an odd prime of \(x\), inertia is a double transposition
+in the product group. The representative \((t,t)\), \(t\)
+a transposition, fixes \(1,t\) in the degree-six action and
+one in each sign block. Its permutation index is two
+overall, and one on each relative cubic block. At an odd
+prime of \(yz\), a single transposition acts without fixed
+points, with index three. It interchanges the two sign
+blocks, so the extension over \(K_0\) is unramified there.
+In particular
+\[
+  |\operatorname{Disc}(M_6)|^{(2)}=x_{\rm odd}^{\,2}
+                              (y_{\rm odd}z_{\rm odd})^3,
+ \qquad
+ \mathfrak d(M_6/K_0)^{(2)}
+                             =x_{\rm odd}\mathcal O_{K_0}.
+\]
+The superscript deletes powers or ideals over 2. At primes
+of \(x\) this last assertion holds both for a split prime
+and for an inert one, since the local action on each cubic
+block has index one. This relative discriminant is a
+rational principal ideal with the specified squarefree
+generator. The degree-six field determines its Galois
+closure, so its original pair of cubic subfields has only
+bounded multiplicity.
+
+In balanced boxes \(|\operatorname{Disc}(K_0)|\asymp N^2\)
+and the relative discriminant has norm \(\asymp N^2\), but
+its odd rational generator lies in a box of size \(N\).
+Taking opposite signs gives an imaginary \(K_0\), available
+among actual signed CM orientations. The reformulation is a
+count over moving quadratic bases with this restricted ideal
+condition. General relative cubic discriminant counts do not
+enforce the rational generator restriction.
+[Relative cubic counts and 2-extensions](https://arxiv.org/abs/2110.07712)
+
+## MP10. Transverse norm catalogues at Minkowski height
+
+Use MP8's imaginary fields with \(x,y\asymp N\), and choose
+one minimum-norm ideal and one cube generator for each class.
+At fixed \(x\) restrict the actual nonzero magnitudes \(|w|\)
+in their representations \(4m^3=t^2+xyw^2\) to a catalogue
+of at most \(K\) values. If \(m\le M\ll N\), then
+\[
+       \sum_{y\asymp N}^{*} h_{M,\mathrm{cat}}(-xy)
+                              \ll_\varepsilon N^\varepsilon M K,
+\]
+where the left side counts only represented nontrivial classes.
+Unlike MP8's unrestricted \(w\) count, this estimate can use
+even a single large transverse height. The entire modulus
+\(q=xw^2\), including its prime at 2, is needed.
+
+For fixed \(m,w\), the condition \(y\asymp N\) puts \(t\) in
+two intervals of length \(O(q)\). To see this take \(N\le y<2N\).
+If \(4m^3\ge4Nq\), rationalize the difference of the square
+roots to bound the length by \(O(Nq/m^{3/2})\). Otherwise bound
+the full interval by \(O(m^{3/2})=O(Nq/m^{3/2})\).
+Nonemptiness gives \(4m^3\ge Nq\ge N^2\), so \(N/m^{3/2}=O(1)\).
+
+The odd prime-power root count for \(t^2\equiv4m^3\bmod q\)
+is bounded by \(N^\varepsilon\gcd(m,w_{\rm odd})\), as in MP8.
+At 2 there are uniformly boundedly many roots for the
+genuine primitive-ideal data. If \(w\) is odd, the modulus
+has depth at most one. If \(m\) is odd, write \(t=2t_0\) at
+depth at least three and use the unit square-root bound
+modulo the modulus divided by four, with the bounded lifts.
+If \(m,w\) are both even and 2 is unramified, then
+\(\alpha=(t+w\sqrt{-xy})/2\) is a rational scalar modulo
+\(2\mathcal O_K\), using the integral basis
+\(1,(1+\sqrt{-xy})/2\). Its even norm makes this scalar zero.
+This contradicts primitiveness of its ideal cube at the
+unramified prime, as in MP8. If 2 is ramified, primitiveness
+gives \(v_2(m)=1\). A valuation \(v_2(w)\ge3\) would force
+\(v_2(t^2)=5\) in the norm equation, which is impossible.
+Then the modulus has depth at most five. This handles all cases.
+
+The interval and residue bounds give
+\(O_\varepsilon(N^\varepsilon\gcd(m,w_{\rm odd}))\) choices
+of \(t\) per \(m,w\). Sum over \(m\le M\) using the same
+gcd divisor bound as in MP8, then over the \(K\) values.
+Each triple determines at most one class as before.
+In particular the joint weighted count with another edge
+\(h_3(\epsilon xz)\) is \(O_\varepsilon(N^{2+\varepsilon} M K)\).
+For a resolvent sector where at least an \(N^{-\delta}\) fraction
+of the nontrivial classes admit these actual records,
+\(M K\le N^{1-\delta+o(1)}\) suffices for the price-free
+\(k\le2\) minimum moment. This includes the full Minkowski
+range \(M\ll N\) when the transverse catalogue and reciprocal
+fraction cost are both subpower. There is no bound here forcing
+such a catalogue for all balanced kernels.
+
+## MP11. Uniform balanced rows via cubic coefficient lattices
+
+The [fixed-divisor cubic count](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md)
+improves the whole balanced row to \(N^{4/3+\varepsilon}\)
+and first gives the two-edge moment \(N^{10/3+\varepsilon}\),
+uniformly including prime shared kernels. It applies the repeated-root
+condition at each prime of \(x\) directly to successive minima
+of the cubic coefficient lattice. In the rank-three case
+the integral dual cubic has discriminant divisible by the whole
+modulus, and a sufficiently small wedge forces a rational
+double root. At the present pointwise class bound this
+does not yet lower the symmetric threshold in MP4.
+
+The averaged short-certificate argument improves this further
+to \(N^{29/9+\varepsilon}\) on the whole balanced two-edge moment.
+Nonsingular short certificates restrict the shared squarefree
+kernel by their discriminants. Singular certificates restrict the
+root assignments directly. Combining the two-edge estimate with
+MP4 gives \(N^{3+(4/9)(k-3/2)+\varepsilon}\) for the balanced
+three-edge minimum moment on \(3/2\le k\le2\). The \(k=2\) target
+\(N^{3+\varepsilon}\) remains open.
+[Averaged cubic certificates](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#an-averaged-saving-from-short-cubic-certificates)
+
 ## Remaining valuation extraction
 
 A sufficient unrestricted advance would extract from every

@@ -1540,6 +1540,41 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Marginal moments alone cannot lower the symmetric packing threshold | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
 | A single least-repair gap ratio recovers a primitive pair | Internal result | proved | [Source](ABC_TWO_SCALE_LEAST_REPAIR_PELL.md) |
 | Private target powers force large height of the repaired gap ratio | Internal result | proved | [Source](ABC_TWO_SCALE_LEAST_REPAIR_PELL.md) |
+| Shared pair records force a stricter product-auxiliary budget | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| The raw product budget forces matching even valuations on both rows | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Opposite scaled shifts sharpen the equal-target product obstruction | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| An affine area and lattice index give a rank-two chart saving | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Original witness multiplicity forces a modular energy power gap | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Relative depth on one free role forces the JD5 entropy conclusion | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Averaged ramification lowers the mixed packing threshold with asymmetric kernels | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| Balanced joint class moments reduce to two explicit discriminant counts | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| Anchor reconstruction forces linear height on both auxiliary operands | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Separate auxiliary radical caps move the raw pair barrier to one sixth | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| The four cross-gcds give an uncolored equal-target saving criterion | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Actual three-role pair lifts price native register differences | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Primitive CRT rows show the need for radical caps in energy arguments | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Minimum ideal norms give a balanced joint class-moment sector | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| Paired cubic fields have a relative rational discriminant | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| One tall divisor makes exact small affine models sparse | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_AFFINE_RANK.md) |
+| Anchor lattices force numerical margins on all product auxiliary roles | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| A heavy fixed lock and small normalized area force a sparse chart | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Private target moduli recover matched square overlaps | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| The tied pair incidence makes the target gcd conditionally cheap | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Actual target quotients constrain the tied product dictionaries | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Two tight shared role locks force a larger original dictionary | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Anisotropic root boxes quantify the power completion price | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| Actual transverse coefficients control a balanced class moment | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| A repeated-root lattice bounds cubic discriminants with a fixed divisor | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
+| The full balanced two-edge cubic moment is at most ten thirds | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
+| Two short CRT quotient coordinates give arbitrarily small register cell counts | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| A short cell diameter lifts one affine letter to all three | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Smith normal form computes the exact shared derivative feature index | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
+| Actual shared derivative coordinates cost at most one local depth digit | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
+| A fixed original target halves the radical price of its scaled difference | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| A deep actual quotient lock or a real imbalance controls primitive pairs | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| The stronger pair budget forces two-prime private target quotients at the first tie | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Averaged short cubic certificates give the balanced two-edge exponent 29/9 | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
+| The balanced three-edge minimum moment has crossover slope four ninths | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
 
 **Computed obligations:** 110 unresolved; 19 resolved within their exact scope.
 

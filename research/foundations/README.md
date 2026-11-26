@@ -191,6 +191,13 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Compact-cycle coherent periods and the relative sphere path | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_PERIOD_CYCLES.md) |
 | Two sphere monodromy cycles separate the coherent profile in a model | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_PERIOD_CYCLES.md) |
 | Refined off-L3 weighted charts at 331 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_331_OFF_COMPONENT_CHARTS.md) |
+| Two fixed unmarked moment orders for the odd radial perturbation | Internal result | proved | [Source](extended-geometry/CM_NEWTON_ODD_RADIAL_PERTURBATION.md) |
+| Finite coherent reconstruction for every odd radial coefficient | Internal result | proved | [Source](extended-geometry/CM_NEWTON_ODD_RADIAL_PERTURBATION.md) |
+| Sphere-generated cycles persist under an odd radial perturbation | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_PERIOD_CYCLES.md) |
+| Escaping finite-root periods can contribute at and below the coherent order | Internal result | proved | [Source](extended-geometry/CM_NEWTON_CYCLIC_LIMIT_TAIL_PERIODS.md) |
+| Polynomial reconstruction and Smith form for the odd radial family | Internal result | proved | [Source](extended-geometry/CM_NEWTON_ODD_RADIAL_PERTURBATION.md) |
+| Actual sphere variations detect the escaping periods in two phases | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
+| Exact finite marked rank for the two escaping phases | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
 
 **Computed obligations:** 12 unresolved; 3 resolved within their exact scope.
 

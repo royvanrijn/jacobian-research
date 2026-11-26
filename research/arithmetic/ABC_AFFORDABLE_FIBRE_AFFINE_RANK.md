@@ -130,6 +130,18 @@ and proves the stated uniform positive width.
 
 
 
+## Exact small features with one fixed tall divisor
+
+The exact-feature case of the rank-drop argument needs only one tall divisor. Fix an allowance \(\eta>0\), a dimension bound \(R\), a divisor lower weight \(\nu>0\), and the original raw root caps. Consider primitive original triples, one of whose letters has a prescribed divisor of height at least \(X^\nu\). Suppose all three complete letters are fixed affine functions of integer feature vectors in \([-X^\theta,X^\theta]^R\). Then sufficiently small positive \(\theta\), followed by sufficiently small fixed \(L\), gives a uniform count \(O(n^\eta X^\varepsilon)\). The coefficients are allowed to vary with the family. The fixed divisor may be an arbitrary known divisor of its original letter, which is extended to full powers on its support at height-subpower cost.
+
+For clarity, suppose no such uniform thresholds exist. Take a violating sequence with \(\theta,L\to0\), always using the inner height limits at each fixed budget. Include a constant coordinate. Choose spanning witness features and, on every moving letter, a pair of witnesses with a nonzero complete difference. Fix all exact supported parts on the witnesses' prime pools and the prescribed divisor's pool at uniform height-subpower cost. Constant letters can be fixed. Refine the remaining prime positions into weak scaled valuation profiles. If some moving letter has nonatomic mass, choose an arbitrarily cheap full block in a compact positive degree band on that role outside its witness-difference pool. One can do this by trimming shrinking neighborhoods of atoms and using continuity bands. The full lock has positive numerical weight and is coprime to the witness difference. If the retained feature rank does not drop, a nonzero fixed-size minor on retained feature rows, multiplied by the witness feature rows, is expressible by integer Cramer coefficients as a combination of retained rows. Apply the given affine function. The lock divides that minor times the witness difference, hence divides the minor. The minor has numerical weight tending to zero, a contradiction. Repeat at most \(R+1\) times, with each locking cost far below \(\eta/(R+1)\). The same procedure applies if fixing the supported parts itself lowers rank, in which case no locking cost is needed there.
+
+If the profiled moving letters are all purely atomic, first freeze a high-degree tail of arbitrarily small raw mass, and then all but finitely many atomic windows at arbitrarily small raw cost. Group the selected positive windows around their representative orders, putting exponent corrections and the zero window into a rational factor of numerical height tending to zero. The original fixed divisor still supplies a fixed positive-height full modulus of fullness of order \(1/L\): discard the original full powers whose scaled degree is below a sufficiently small positive cutoff, using the cap on its radical, and use the fixed full original powers at the remaining primes. The other two complete roles are units there by primitivity. Their signed ratio is prescribed modulo this modulus by the original additive relation. The grouped wide-cofactor congruence (GW), with the fixed coefficient factors absorbed in the unit target, releases this exact ratio at arbitrarily small normalized cost. Primitivity recovers the two original complete values and then the full row. This is the atomic terminal of AF1. If there are no positive windows, reduction of the remaining short ratio gives rational reconstruction directly. A wholly constant family is harmless. The finitely many rank losses, profile costs and inner height allowances fit inside the prescribed \(\eta\). This proves the uniform feature statement.
+
+
+[Uniform fixed supports](ABC_EFFECTIVE_RADICAL_BUDGET.md#counting-by-a-sublogarithmic-prime-partition-sum)
+· [Wide-cofactor ratio count](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-bounded-number-of-small-roots)
+
 ## Rank and root-coordinate size
 
 Suppose two original letters have wholly nonatomic limiting
@@ -217,7 +229,7 @@ fixed positive fraction of cubic cardinality, choosing the width
 after that fraction. These arguments give no power rate.
 [Green–Ruzsa, Theorem 1.1](https://arxiv.org/abs/math/0505198)
 · [Reiher–Schoen, Theorem 1.1](https://arxiv.org/abs/2308.10245)
-· [Petridis, Theorem 1.1](https://arxiv.org/abs/1101.3507)
+· [Petridis, Theorem 3.1](https://arxiv.org/abs/1101.3507v3)
 
 Croot–Mao–Yip obtain progression covers from structured
 reductions of a whole set at many test primes. A fixed

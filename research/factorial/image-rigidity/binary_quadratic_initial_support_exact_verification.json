@@ -1,0 +1,519 @@
+{
+  "status": "PASS",
+  "scope": "START1_EVERY_NONEMPTY_BINARY_QUADRATIC_MONOMIAL_SUPPORT",
+  "checker_sha256": "b03bd9a51c604541430655bba0d40bce6233bfdc4e62ddad1cb73b51a0201b3e",
+  "data_sha256": "a23371afe85f8b22648761cae8936b35c912e5520dff19ee8ae323168bd6ed13",
+  "cases": [
+    {
+      "mask": 1,
+      "support_size": 1,
+      "polynomial_identities": 0,
+      "terms": 0
+    },
+    {
+      "mask": 2,
+      "support_size": 1,
+      "polynomial_identities": 0,
+      "terms": 0
+    },
+    {
+      "mask": 3,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 4,
+      "support_size": 1,
+      "polynomial_identities": 0,
+      "terms": 0
+    },
+    {
+      "mask": 5,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 6,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 7,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 8,
+      "support_size": 1,
+      "polynomial_identities": 0,
+      "terms": 0
+    },
+    {
+      "mask": 9,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 10,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 11,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 12,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 13,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 14,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 8
+    },
+    {
+      "mask": 15,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 128
+    },
+    {
+      "mask": 16,
+      "support_size": 1,
+      "polynomial_identities": 0,
+      "terms": 0
+    },
+    {
+      "mask": 17,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 18,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 19,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 20,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 21,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 22,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 4
+    },
+    {
+      "mask": 23,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 115
+    },
+    {
+      "mask": 24,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 25,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 26,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 27,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 128
+    },
+    {
+      "mask": 28,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 7
+    },
+    {
+      "mask": 29,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 130
+    },
+    {
+      "mask": 30,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 130
+    },
+    {
+      "mask": 31,
+      "support_size": 5,
+      "prime": 101,
+      "power_degree": 11,
+      "polynomial_identities": 4,
+      "terms": 2132
+    },
+    {
+      "mask": 32,
+      "support_size": 1,
+      "polynomial_identities": 0,
+      "terms": 0
+    },
+    {
+      "mask": 33,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 34,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 35,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 36,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 37,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 38,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 8
+    },
+    {
+      "mask": 39,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 127
+    },
+    {
+      "mask": 40,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 41,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 42,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 43,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 127
+    },
+    {
+      "mask": 44,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 45,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 129
+    },
+    {
+      "mask": 46,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 128
+    },
+    {
+      "mask": 47,
+      "support_size": 5,
+      "prime": 101,
+      "power_degree": 11,
+      "polynomial_identities": 4,
+      "terms": 2185
+    },
+    {
+      "mask": 48,
+      "support_size": 2,
+      "prime": 101,
+      "power_degree": 2,
+      "polynomial_identities": 1,
+      "terms": 1
+    },
+    {
+      "mask": 49,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 50,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 7
+    },
+    {
+      "mask": 51,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 130
+    },
+    {
+      "mask": 52,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 10
+    },
+    {
+      "mask": 53,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 128
+    },
+    {
+      "mask": 54,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 119
+    },
+    {
+      "mask": 55,
+      "support_size": 5,
+      "prime": 101,
+      "power_degree": 11,
+      "polynomial_identities": 4,
+      "terms": 2176
+    },
+    {
+      "mask": 56,
+      "support_size": 3,
+      "prime": 101,
+      "power_degree": 4,
+      "polynomial_identities": 2,
+      "terms": 7
+    },
+    {
+      "mask": 57,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 128
+    },
+    {
+      "mask": 58,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 128
+    },
+    {
+      "mask": 59,
+      "support_size": 5,
+      "prime": 101,
+      "power_degree": 11,
+      "polynomial_identities": 4,
+      "terms": 2193
+    },
+    {
+      "mask": 60,
+      "support_size": 4,
+      "prime": 101,
+      "power_degree": 7,
+      "polynomial_identities": 3,
+      "terms": 130
+    },
+    {
+      "mask": 61,
+      "support_size": 5,
+      "prime": 101,
+      "power_degree": 11,
+      "polynomial_identities": 4,
+      "terms": 2192
+    },
+    {
+      "mask": 62,
+      "support_size": 5,
+      "prime": 101,
+      "power_degree": 11,
+      "polynomial_identities": 4,
+      "terms": 2179
+    },
+    {
+      "mask": 63,
+      "support_size": 6,
+      "prime": 101,
+      "power_degree": 16,
+      "polynomial_identities": 5,
+      "terms": 45621
+    }
+  ],
+  "support_count": 63,
+  "nontrivial_support_count": 57,
+  "pure_power_identities": 129,
+  "multiplier_terms": 60779,
+  "negative_controls": [
+    "missing support face",
+    "incorrect first-moment pivot",
+    "nonprime modulus",
+    "wrong native factorial moment",
+    "wrong power degree",
+    "one multiplier coefficient corrupted",
+    "first-support scope overstated as all-start"
+  ],
+  "seconds": 1.143656365107745,
+  "all_coefficients_exact": true,
+  "finite_certificate_for_universal_coefficients": true,
+  "all_start_SFC_claim": false,
+  "actual_dependency_engine_evaluations": 0,
+  "canonical_mutations": false
+}

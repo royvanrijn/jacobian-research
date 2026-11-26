@@ -100,7 +100,16 @@ constant multiples of
  a_0 I_0+a_1 I_1,\qquad a_0 I_0-a_1 I_1,\qquad
  I_j=\int_0^\infty z^j(z^2+1)^2Q(z)^{-13/18}\,\frac{dz}{z}.
 \]
-Both \(I_j\) are positive and finite. In particular, simultaneous
+Both \(I_j\) are positive and finite. With \(x=z>0\) the
+integrand is \(x^{j-5/18}(1+x^2)^{-8/9}\,dx\).
+The substitution \(v=x^2\) gives
+\[
+ I_0=\tfrac12 B(13/36,19/36),\qquad
+ I_1=\tfrac12 B(31/36,1/36).
+\]
+After dividing out the two nonzero sheet factors the period
+matrix has rows \((I_0,I_1)\) and \((I_0,-I_1)\). Its
+determinant is \(-2I_0I_1\). In particular, simultaneous
 vanishing of all the corresponding weighted sphere moments forces
 \(A=0\).
 
@@ -293,3 +302,211 @@ its analytic continuations have zero variation. The Leray
 residue formula equates each tube integral with the
 corresponding fibre period up to a nonzero universal factor.
 The two limits then force \(a_0=a_1=0\).
+
+## Odd radial perturbation
+
+Write \(g_b=S(t)Q(z)+bt^{17}\), with \(S,Q\) as above. The
+[finite moment calculation](CM_NEWTON_ODD_RADIAL_PERTURBATION.md)
+separates the coherent component for every \(b\). The result here
+identifies sphere cycles and estimates their periods.
+
+**Theorem (persistence of two detecting sphere variations).**
+The two coherent coefficients are detected by sphere-generated
+variations for every real \(b\) with \(0<|b|<2Q_c/17\), where
+\(Q_c=Q(1/\sqrt7)\). They are also detected for all sufficiently
+small complex \(b\). In each case use a variation reached from
+each exterior real ray. Their normalized leading periods are
+nonzero multiples of \(a_0I_0+a_1I_1\) and \(a_0I_0-a_1I_1\).
+Every allowed correction marker has zero normalized limit on
+these variations.
+
+### Real parameters and single contacts
+
+It suffices to take \(b>0\), since reflection in \(t\) changes
+\(b\) to \(-b\). Use the cylinder and caps of the separable
+phase. On the part with \(|z|=z_c\) put \(u=|t|\). Then
+\[
+ |g_b|\le Q_c u^{16}(1-u^2)+bu^{17}.
+\]
+The right side has its unique maximum at
+\(u=c(b/Q_c)<1\), where \(c(\beta)\) is the positive solution of
+\(18c^2-17\beta c-16=0\). This follows by differentiating, and
+\(c<1\) is equivalent to \(17b<2Q_c\).
+The maximum is strictly greater than the cap value \(b\).
+The small central cylinder has arbitrarily small image as its
+height interval shrinks. Equality at the maximum requires
+\(z=\pm z_c\) and alignment of the two terms in \(g_b\).
+Hence there is one contact on the negative ray at
+\((z_c,-c(b/Q_c))\), and one on the positive ray at
+\((-z_c,c(b/Q_c))\).
+
+At the negative contact the Hessian is diagonal in \(t,z\)
+because \(Q'=0\). It is positive on the real \(t\) direction
+and negative on the real \(z\) direction. The angular tangent
+\(iz_c\) makes the quadratic form positive on the real
+tangent plane of the cylinder. In local holomorphic Morse
+coordinates the imaginary thimble therefore meets that plane
+transversely with intersection number \(\pm1\). The same
+quadratic-pinch formula as in the separable case gives one
+tube from this contact. The map \((z,t)\mapsto(-z,-t)\) sends
+\(g_b\) to \(-g_b\) for every \(b\) and gives the other
+variation, up to orientation.
+
+To track the negative-ray circle write \(q=Q(z)>0,\ t=-u\) and
+\[
+ \varphi_\beta(u)=u^{18}-u^{16}-\beta u^{17},\qquad
+ \beta=b/q,\qquad w_c(\beta)=-\varphi_\beta(c(\beta)),\qquad
+ L(q)=q\,w_c(b/q).
+\]
+The derivative \(L'(q)=-S(c(b/q))\) is positive, bounded above,
+and bounded away from zero on \(q\ge Q_c\). Thus the matching
+interval at \(\lambda=-R\) for \(R>L(Q_c)\) is the positive
+\(z\)-interval with \(q\le M=L^{-1}(R)\).
+The two branches of \(\varphi_\beta(u)=-R/q\) born at
+\(u=c(\beta)\) stay in the sectors \(0<\pm\arg u<\pi/18\).
+On the positive real boundary the value \(-R/q\) is below
+the minimum. On the other boundary the two terms
+\(-u^{16}\) and \(-\beta u^{17}\) have imaginary parts of
+the same strict sign in their sum, while \(u^{18}\) is real.
+The derivative has no zero in either open sector. These lifts
+join at the two endpoints of the matching interval, and
+shrink to the local vanishing circle as \(R\downarrow L(Q_c)\).
+For \(R>L(Q_c)\) the join points are regular in the fibre,
+since \(S(c)\ne0\) and \(Q'\ne0\) at both ends.
+
+On each compact subinterval of the positive ray,
+\(R^{-1/18}u\) tends on these branches to
+\(e^{\pm i\pi/18}q^{-1/18}\). The sign \(t=-u\) gives a
+common sheet factor. For the negative \(z\)-ray use the
+image under \((z,t)\mapsto(-z,-t)\). Its polynomial factor
+in the limiting coherent integral is \(A(-z)\) at positive
+\(z\). This gives the two stated leading periods, provided
+the tails have zero limit.
+
+Here is a uniform estimate for the tails. Set \(w=R/q\).
+The simple minimum of \(\varphi_\beta\) and its leading
+term \(u^{18}\) give
+\[
+ w^{5/18}\left|\frac{u^{12}}{\varphi_\beta'(u)}\right|
+   \le K(1-w_c(\beta)/w)^{-1/2},\qquad |u|\ge c_*>0.
+\]
+Near the minimum this is the simple square-root estimate,
+uniform since \(\beta\in[0,b/Q_c]\) is compact and the
+second derivative at \(c(\beta)\) is bounded away from zero.
+Away from the minimum use compactness for bounded \(w\), and
+\(u^{18}\sim -w\) for large \(w\). Since
+\(1-L(q)/R\) is comparable to \(1-q/M\), the same integrable
+end bounds as in the separable case apply. Explicitly, near
+zero and infinity the angular factors in the normalized
+integrand are bounded by \(q^{-13/18}\) and \(q^{-1/126}\),
+respectively, times \(K|dq|/|q|\) and the square-root factor.
+This holds with either \(A\) or \(C\), since both have degree
+at most five. The correction term also has a factor \(1/u\),
+bounded on the whole interval and tending to zero on every
+compact central piece. Splitting off the ends and then
+letting \(R\) grow proves that its normalized limit is zero.
+
+### Persistence for small complex parameters
+
+At \(b=0\) take two fixed based loops enclosing the two
+contact values, from sufficiently large opposite real base
+values. Each transported sphere representative uses a
+compact family of cycles disjoint from its moving fibre.
+These families persist for small complex \(b\). Indeed
+\(|g_0-\lambda|\) has a positive lower bound on their compact
+supports, and \(g_b-g_0=bt^{17}\) converges uniformly there.
+The homologies equating the variations at the base with the
+two signed tube sums also have compact support and persist
+by the same argument. Each tube may be continued using
+a fixed small normal radius in the regular compact
+neighbourhood of its fibre cycle. The swept tubes remain
+disjoint from the perturbed base fibre, by taking \(|b|\)
+small compared with that radius and the bound of
+\(|t|^{17}\) on these neighbourhoods. Thus the actual sphere
+variations at small complex \(b\) are the continued signed
+sums of the two circles from each contact pair.
+
+For completeness, the continued circles can be tracked
+from the negative base to arbitrarily large \(-R\) by
+explicit matching paths. For a circle originating at
+\(t\) of sign \(\sigma=\pm1\), put \(t=\sigma u\) and use
+\(\beta=-\sigma b/q\) in \(\varphi_\beta\).
+Let \(w_*=w_c(0)>0\). Retain the central part of the positive
+\(z\)-ray where \(q\le q_0=R/(2w_*)\). For \(|b|\) small,
+the nonzero critical values of \(\varphi_\beta\) have
+modulus less than \(3w_*/2\) on this part, since
+\(|\beta|\le |b|/Q_c\). The two roots at \(b=0\) therefore
+continue throughout this central piece and remain distinct.
+In either end use the inverse chart of \(q=Q(z)\) near
+zero or infinity. Put
+\[
+ v=q\,w_c(-\sigma b/q).
+\]
+This is holomorphic at large \(q\), with \(v=w_*q+O(b)\),
+and has an inverse there in the sector of the positive ray.
+Join \(q_0\) to the inverse at \(v=R/2\) along a short
+segment of bounded length, then use the inverse for
+\(R/2\le v\le R\). The roots along the latter path satisfy
+\(\varphi_\beta(u)=-w_c(\beta)R/v\). They continue from
+the two roots at \(b=0\), with a uniform square-root
+parametrization at \(v=R\), where they join. To justify
+uniformity, on the end \(\beta=O(1/R)\), the two model
+branches are simple for \(1<R/v\le2\), and only the
+endpoint \(R/v=1\) requires the square-root chart.
+The short segment has \(R/q\) near \(2w_*\) and no collision.
+This constructs closed cycles continuous in \(b,R\) that
+agree with the original matching paths at \(b=0\).
+The same construction on the other exterior ray follows
+from \((z,t)\mapsto(-z,-t)\).
+
+The central parts have the same adjacent-sheet limits.
+The ends have \(|q|\) comparable to \(R\), and
+\(|dq|/|q|\le K|dv|/|v|\) on the final pieces.
+Their normalized integrals are bounded by \(O(R^{-13/18})\)
+near zero and \(O(R^{-1/126})\) near infinity, using the
+factor \((1-v/R)^{-1/2}\), which is integrable.
+On the central pieces the estimates follow as before,
+with no square-root singularity. Hence the correction
+periods vanish. The two signs of \(t\) in each signed
+sphere variation contribute opposite leading coherent
+periods because \(s=13\) is odd. The signed sums therefore
+retain the two nonzero sheet factors of the separable
+phase. Both exterior base rays belong to the same
+resolvent germ at infinity. If all marker moments vanish,
+both variations have zero period, forcing \(a_0=a_1=0\).
+
+## Correction principal parts on the cyclic limit
+
+The correction sphere resolvent is identically zero for the
+separable seed because \(f(z,-t)=f(z,t)\) and
+\(t^{11}C(z)\) is odd in \(t\). For the perturbed phase one
+has to control the correction periods.
+
+On the central cover \(Y^{18}=Q(z)\), write the coefficient
+of the correction differential as
+\(\omega_C=Y^{-12}C(z)\,dz/z\); its core contribution carries
+one factor of \(\varepsilon\).
+At either root \(\alpha=\pm i\), a local parameter with
+\(z-\alpha=w^9\) gives \(Y=w^2\) times a unit in \(w^9\),
+so the only possible polar powers are \(w^{-16}dw\) and
+\(w^{-7}dw\). At infinity use \(z=w^{-18}\). The contribution
+from \(z^j\) begins in order \(83-18j\), giving only
+\(w^{-7}dw\) for \(j=5\). At zero use \(z=w^{18}\) and
+\(Y\) of order \(-1\); all terms are regular. In particular
+the polar terms have meromorphic local primitives.
+
+On a path segment, subtracting the differential of such a
+primitive replaces its integral by the difference of the
+primitive's endpoint values. Those terms must be retained
+when comparing lifts and taking limits. On the real rays
+the \(j=5\) correction behaves like
+\(\varepsilon x^{-2/3}\,dx\); up to cutoff \(X\) its
+integral has size \(O(\varepsilon X^{1/3})\).
+The ray integrals converge for degrees at most four.
+For the conductor-18 degree-\((5,1)\) system, \(\deg C\le2\)
+removes this infinity contribution. The two finite roots
+can still have polar terms. The matching paths above
+avoid those roots and give a direct bound on their own ends.
+
+The [finite-root calculations](CM_NEWTON_CYCLIC_LIMIT_TAIL_PERIODS.md)
+exhibit escaping fibre periods beyond this matching-path family.
