@@ -76,6 +76,9 @@ combines point-stabilizer normal generation with Domrina's unconditional
 degree-four theorem. It excludes every faithful transitive A4 action
 in dimension two. This additional geometric theorem is needed beyond
 the elementary tests above; those necessary-test calculations remain valid.
+The [five- and six-sheet monodromy theorem](SIX_SHEET_BOUNDARY_BUDGET_AND_MONODROMY.md)
+excludes the natural five-sheet A5 action and isolates the six-sheet A6
+case with a sole 3-cycle branch curve.
 
 Proof. The extension-specific assertions are precisely the two retained
 normalization arguments. For the finite-group statements, conjugates of a

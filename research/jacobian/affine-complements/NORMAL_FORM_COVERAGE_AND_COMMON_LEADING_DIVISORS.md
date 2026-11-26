@@ -19,6 +19,9 @@ The following are distinct obligations.
 G1. Exclude the case with NO actual proper source-LND-equivariant
 intermediate F subsetneq E subsetneq L, or supply another complete
 normal form for it. Derivative generation alone is not integrality.
+The [five- and six-sheet monodromy theorem](../monodromy-theory/SIX_SHEET_BOUNDARY_BUDGET_AND_MONODROMY.md)
+forces primitive actions in those sheet degrees. Any hypothetical map
+there is in this branch because it has no proper intermediate field.
 
 G2. If such an intermediate exists, PF142 makes it an ACTUAL cyclic
 deck fixed field in minimal generic degree. Classify the actual marked
@@ -31,6 +34,10 @@ G3. For an actual quadratic image identified with S2 or MX0, prove
 that the coupled leading-divisor residual below is impossible or can
 be moved by justified source/target coordinate changes into an existing
 exclusion. Individual constant-leading exclusions do not prove this.
+For the [marked excess bound](MARKED_QUADRATIC_DAVENPORT_ZANNIER_EXCLUSION.md),
+the first jet excludes excess one at every marked order with both central
+restrictions nonzero. Larger excess and a vanishing central restriction
+remain outside that step.
 
 PF142's mixed 2+3 minimal alternative is RETIRED. It is not a residual
 in G2. No automatic source equivariance, proper intermediate, model

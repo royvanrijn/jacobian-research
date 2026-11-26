@@ -202,7 +202,10 @@ the consequence for the lower-one higher-gap family.
 Multiple overrides may be supplied. Simulations are read only. An assumed proof
 leaves `ID` among downstream assumptions, so conclusions remain explicitly
 hypothetical and conditional. A simulation does not replace a proof or change any
-assurance flag.
+assurance flag. CLI evaluations retain every implication route and one witness
+path per distinct blocker for each node. Graph and simulation JSON exports
+include selected support and route details. Use `explain ID --json` to expand
+the recursive certificate for a current node.
 
 ## Record an actual proof
 

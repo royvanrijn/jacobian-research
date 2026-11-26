@@ -57,6 +57,20 @@ vanishes at every integer from 0 through M and is nonzero over the rationals. Ch
 
 These examples diagnose transitions; they do not replace checking the particular proof. Seek examples that violate the claimed conclusion while satisfying all its hypotheses. A failed attempt at a counterexample is evidence about that attempt, not a proof of the theorem.
 
+### Check simultaneous elimination on the same fibre
+
+When several residuals are imposed after a finite elimination, verify that
+the certificate forces them to vanish at the same geometric point. Separate
+norms or pairwise resultants can vanish using different witnesses. For a
+finite free algebra \(A/R\), the coefficients of the single norm
+\(N_{A/R}(\sum_j T^j\rho_j)\) test for one common geometric zero of all the
+residuals. Each local factor contributes its length to the norm. The
+[conductor-18 calculation](../research/foundations/extended-geometry/CM_NEWTON_SEVENTEEN_ROW_LOCUS.md#a-single-norm-for-the-common-root-condition)
+gives the proof and a rank-two example. A complete common-root certificate can
+also use ideal membership or subresultants. Keep each leading-coefficient
+chart, denominator and excluded slice explicit, and retain nilpotents when
+making a statement about scheme length.
+
 ## Match computational evidence to the claim
 
 Read the checker, its inputs and its output semantics before relying on a success message. Determine whether it verifies a certificate, independently derives an identity, searches a bounded space, samples examples, or merely checks file consistency.

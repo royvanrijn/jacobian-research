@@ -601,7 +601,7 @@ def export_selected_dot(graph: DependencyGraph, selected: set[str]) -> str:
     if selected == set(graph.nodes):
         return graph.to_dot()
     quote = json.dumps
-    evaluated = graph.evaluate()
+    evaluated = graph.evaluate(distinct_blockers=True)
     lines = ["digraph research {", "  rankdir=LR;"]
     for node_id in graph.order:
         if node_id in selected:
@@ -658,6 +658,11 @@ def print_explanation(record: dict) -> None:
     if record.get("stale_sources"):
         print("Stale evidence: " + ", ".join(item["path"] for item in record["stale_sources"]))
     print("Internal graph status; assurance and publication flags are unchanged.")
+
+
+def summary_record(record: dict) -> dict:
+    """Keep route metadata without serializing the shared proof DAG as a tree."""
+    return {key: value for key, value in record.items() if key != "proof_certificate"}
 
 
 def main() -> None:
@@ -788,10 +793,11 @@ def main() -> None:
             if args.format == "dot":
                 print(export_selected_dot(graph, selected), end="")
             else:
-                evaluated = graph.evaluate()
+                evaluated = graph.evaluate(distinct_blockers=True)
                 rules = [rule for rule in graph.rules.values() if rule["conclusion"] in selected
                          and any(premise in selected for premise in rule["premises"])]
-                print(json.dumps({"nodes": {node_id: evaluated[node_id] for node_id in graph.order if node_id in selected},
+                print(json.dumps({"nodes": {node_id: summary_record(evaluated[node_id])
+                                            for node_id in graph.order if node_id in selected},
                                   "definitions": {node_id: graph.nodes[node_id] for node_id in selected},
                                   "implications": rules,
                                   "quotient": graph.quotient() if hasattr(graph, "quotient") else None,
@@ -801,7 +807,7 @@ def main() -> None:
                                  indent=2, ensure_ascii=False))
         elif args.command == "explain":
             assert graph is not None, "no dependency graph"
-            record = graph.explain(args.id)
+            record = graph.explain(args.id, graph.evaluate(distinct_blockers=True))
             if args.json:
                 print(json.dumps(record, indent=2, ensure_ascii=False))
             else:
@@ -811,7 +817,7 @@ def main() -> None:
             if bool(args.id) == bool(args.source):
                 parser.error("impact requires either ID or --source PATH")
             affected = graph.source_impact(args.source) if args.source else graph.impact(args.id)
-            evaluation = graph.evaluate()
+            evaluation = graph.evaluate(distinct_blockers=True)
             records = [evaluation[node_id] for node_id in affected]
             if args.json:
                 print(json.dumps(records, indent=2, ensure_ascii=False))
@@ -832,7 +838,9 @@ def main() -> None:
                 parser.error("simulate requires at least one --prove/--reopen/--falsify/--stale ID")
             result = graph.simulate(overrides)
             if args.json:
-                print(json.dumps(result, indent=2, ensure_ascii=False))
+                print(json.dumps({**result, "nodes": {node_id: summary_record(record)
+                                                     for node_id, record in result["nodes"].items()}},
+                                 indent=2, ensure_ascii=False))
             else:
                 print("HYPOTHETICAL — assumes overrides; catalogue and assurance flags unchanged.")
                 for change in result["changes"]:
@@ -856,7 +864,7 @@ def main() -> None:
             mapping = next((row for row in data.get("graph", {}).get("coverage", {}).get("documents", [])
                             if graph._path(row["path"]) == path), None)
             impact = graph.source_impact(args.path)
-            evaluation = graph.evaluate()
+            evaluation = graph.evaluate(distinct_blockers=True)
             info = {"path": args.path, "current_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
                     "mapping": mapping, "declarations": declarations(path),
                     "affected": [evaluation[node_id] for node_id in impact]}
@@ -870,7 +878,7 @@ def main() -> None:
                     print(row["id"] + ": " + row["state"])
         elif args.command == "opportunities":
             assert graph is not None, "no dependency graph"
-            evaluated = graph.evaluate()
+            evaluated = graph.evaluate(distinct_blockers=True)
             covered = coverage_state(data, graph)
             cited = reference_state(data, graph)
             linked = tex_proof_link_report(data, graph)
@@ -921,7 +929,8 @@ def main() -> None:
                     print("ISSUE: " + error)
         elif args.command == "bounds":
             assert graph is not None, "no dependency graph"
-            records = bound_comparisons(graph) if args.opportunities else bounds_records(graph)
+            evaluation = graph.evaluate(distinct_blockers=True)
+            records = bound_comparisons(graph, evaluation) if args.opportunities else bounds_records(graph, evaluation)
             if args.opportunities:
                 records = [row for row in records if row["opportunities"] or row["conflict"]]
             if args.json:

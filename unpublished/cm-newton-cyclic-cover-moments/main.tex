@@ -40,15 +40,16 @@ order of \(p\) modulo \(n\) and \(k\ge1\). At least five classes
 certify nonzero moments at nonordinary primes. For \(n=35\) the
 nonordinary certifying classes have natural density \(7/24\).
 For conductor \(18\) we reconstruct a coherent input uniformly
-in the branch ratio with quartic odd and radial even lower terms.
-We give an effective finite reconstruction window and a marked
-rank-two example that proves local moment rigidity.
+in the branch ratio when the odd-height coefficient has degree at most
+four and the even lower term is radial. We give an effective finite
+reconstruction window. A marked rank-two example at conductor \(162\)
+proves local moment rigidity.
 An arithmetic attachment lemma uses denominator primes to
 identify sphere-generated cycle sectors. For the conductor-\(18\) top
 with opposite branch roots and lower support of degrees \((5,1)\),
 we give all-order detection on an explicit open stratum with six
-correction columns. With three correction columns, fourteen
-shifts form the shortest uniform initial window for coherent detection.
+correction columns. With three correction columns, fourteen shifts form
+the shortest uniform initial window for detection in the formal response.
 \end{abstract}
 
 \section{Introduction}
@@ -1374,16 +1375,26 @@ a unit throughout the corresponding residue disc. Therefore
 a common zero would satisfy \(s=\alpha\) exactly. Unit identities
 using only \(S_7,\ldots,S_{13}\) exclude both slices.
 The supplement gives the matrices, boundary charts and Schur
-complement checks used in the proof.
+complement checks used in the proof. The companion source archive
+contains the named supplements and their exact replay inputs.
 
 For an algebraic phase, the exact characteristic-zero response
-test persists after reduction at all sufficiently large good
-primes. In the class \(p\equiv7\bmod36\) the deficit bound
-leaves at most three correction columns. The coherent input
-is nonzero. In the class \(p\equiv25\bmod36\), shift zero
-already detects it. The prime onset can depend on the phase.
-This is a statement about a selected coherent input. Ordinarity
-requires a condition on the entire Jacobian.
+test persists after reduction at all sufficiently large good primes.
+For \(p\equiv7\bmod36\), a deficit-\(p\) term in \(f^m\) uses
+\(u_1\) odd and \(u_2\) even lower factors, with
+\(u_1+2u_2=p\) and \(u_1+u_2\le m\). Its angle is at most
+\(7m-2u_1-6u_2\le9m-4p<3p\), so only \(C_0,C_1,C_2\) occur
+in the residue formula \((*)\). The coherent coefficients have the
+profile \(\sum_j A_j z^j=(X+Yz)((z^2+1)^2)^{(p)}\) from
+Section~\ref{sec:reconstruction}, with \((X,Y)\ne(0,0)\).
+Taking \(p\)-th roots of these coefficients and the three \(C_j\) in
+the finite residue field gives the marked response of this section.
+Its integral denominators are those of the two parity sums in \((*)\),
+so its \(p\)-th power is the normalized residue. In the class
+\(p\equiv25\bmod36\), shift zero already detects the coherent input
+by the calculation in Section~\ref{sec:two-escaping-phases}. The prime onset
+can depend on the phase. The result concerns a selected coherent
+input, while ordinarity concerns the entire Jacobian.
 
 For the lower bound on the formal window, use the slice
 \(\ell=v=0\). There the residuals in shifts \(8,10,12\)

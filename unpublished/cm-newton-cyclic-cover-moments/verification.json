@@ -3,14 +3,15 @@
   "date": "2026-11-26",
   "edition": {
     "file": "cm-newton-cyclic-cover-moments.pdf",
-    "sha256": "59f8f4cb3c3d8c91247570b742855d27cb86401560884294b285f5491a7c256a",
-    "pages": 18,
-    "source_bundle_sha256": "2c9387be6c6faf3d7dbf3f747235202f6df66c6ddcdf8cf3b07586225541b845"
+    "sha256": "997ee37eebdb8028ee207d91b1740d3ffba2678b500bada52be1ac19c97de7d0",
+    "pages": 20,
+    "source_bundle_sha256": "baefab56eb84431f05d3a7619e07777f3307a65fb3a6c304f7b165d0b03a456b",
+    "source_sha256": "d2c7584b5f6ef90375ca59bebac4f4debb92151a5e638c093a14aae796cb92a7"
   },
   "build": {
     "command": "SOURCE_DATE_EPOCH=1795651200 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-cyclic-cover-moments main.tex",
     "environment": "Ubuntu 24.04.4 LTS under WSL, TeX Live 2023, pdfTeX 1.40.25, latexmk 4.83, Poppler 24.02.0",
-    "result": "Two clean builds from the final extracted archive produced byte-identical PDFs with no final LaTeX layout warnings. Inspected rendered pages and checked the abstract and title against metadata."
+    "result": "Two clean builds from the extracted source archive produced byte-identical 20-page PDFs. Final LaTeX logs contained no warnings or overfull or underfull boxes. Inspected Poppler renders of all pages and checked the abstract, title, author, theorem labels and bibliography against the source."
   },
   "replays": {
     "fixed_prime": {
@@ -21,7 +22,7 @@
       "command": "python3 -I verification/verify_cm_newton_unbounded_twisted_moment_quotients.py",
       "result": "The four retained prime-cube examples have residues 182, 186, 23, 46. At n=35, exhausts the 24 unit classes, checking the seven nonsplit certifying classes and detecting a quotient-dimension mismatch at every nonidentity class. At (p,iterate) = (29,2), (43,4), (79,6), (3,12), (29,4) the direct and translated residues match as 1, 14, 67, 0, 1."
     },
-    "scope": "Replayed all six programs with archived verifier bytes matching the final archive. The uniform cutoff, attachment lemma, monodromy and period-theoretic implications use written proofs.",
+    "scope": "The six historical replay records apply to the same retained verifier bytes. New local replays have the scopes stated below. The uniform cutoff, arithmetic attachment, monodromy and period-theoretic implications use written proofs. Formal sharpness supplies a coherent direction; its realization by an actual Frobenius input remains open.",
     "moving_branch": {
       "command": "sage -python verification/verify_cm_newton_moving_branch_ratio_certificates.py",
       "result": "SageMath 10.9 checked all three rational identities against the complete coefficient matrices for odd degrees 1, 3 and 4 from archived verifier bytes."
@@ -37,6 +38,26 @@
     "escaping_scalings": {
       "command": "sage -python verification/verify_cm_newton_cyclic_limit_tail_periods.py",
       "result": "Checked the two escaping scalings and the stated local residue expansions and reductions."
+    },
+    "boundary_stratum_and_ninth_row": {
+      "command": "sage -python verification/verify_cm_newton_sphere_attachment_stratum.py",
+      "environment": "SageMath 10.9 on Ubuntu 24.04.4 LTS under WSL",
+      "result": "Passed from the extracted current archive. The reduction at 103 gives critical-value determinant 33. Verified the exceptional line specializations, the exact ninth-row unit and the first-eight blind branch at b=519 mod 1009 with critical-value determinant 869."
+    },
+    "universal_fourteen_row": {
+      "command": "sage -python verification/verify_cm_newton_fourteen_row_locus.py",
+      "environment": "SageMath 10.9 on Ubuntu 24.04.4 LTS under WSL",
+      "result": "Passed with exit status zero from the extracted current source archive. Checked the unit ideal and weighted boundary at 331, the shorter-prefix exclusions in both endpoint charts, the degree-nine projection rank, and both exact affine unit identities. The two selected slope minors have matching rational and residue orders 19 and 10. The algebraic phase blind through shift 12 gives the formal lower bound.",
+      "checker_sha256": "9c6e7d29f1b412d821241c73c92969d11da571a6609f788c9d1c14455afbbe4e",
+      "archive_sha256": "baefab56eb84431f05d3a7619e07777f3307a65fb3a6c304f7b165d0b03a456b"
+    },
+    "fourteen_row_integral_places": {
+      "command": "sage -python verification/verify_cm_newton_fourteen_row_integral_places.py",
+      "result": "Passed from extracted verifier bytes identical to those in the final archive. Checked residual unit ideals modulo all nine listed primes, including 331 where the leading quotient has length 84."
+    },
+    "seventeen_row_finite_algebra": {
+      "command": "sage -python verification/verify_cm_newton_seventeen_row_locus.py",
+      "result": "Passed from extracted verifier bytes identical to those in the final archive. Checked the common-root norm, exact quadratic component cuts, rank-84 finite projection, and the off-component chart. Replayed the simple modulo-11 blind solution through shift 12 with shift 13 nonzero, the exact degree-12 unit identity on ell=v=0, and the six stated exact integral-place unit certificates. The packaged long slope checker has its own run scope."
     }
   },
   "literature": [
@@ -63,7 +84,7 @@
       ],
       "revisions_and_rechecks": "The final source specifies the rational parameter family and tame branch conditions, names the bundled verifier, defines the balanced lift, names the two opposite phases, and keeps the interpolation paragraph together. The final reflow was rebuilt and rendered internally. The isolated reader did not review the final PDF digest."
     },
-    "remaining_work": "External specialist review of the toric and coherent reductions, exact reconstruction identities, arithmetic attachment and geometric pencil calculations, and marked-rank interpretation.",
+    "remaining_work": "External specialist review of the toric and coherent reductions, the geometric attachment on the boundary stratum, the fourteen-row proof and marked-rank interpretation. The earlier PDF-only review records refer to their own recorded editions.",
     "attachment_pdf_only_internal_review": {
       "reviewer": "Isolated Codex reader",
       "reviewed_pdf_sha256": "741b94bf14b66a2bd5f44a72824807a76ae90b547aba0a37da747f0e00f523f2",
@@ -73,6 +94,23 @@
         "Flagged the constant normalization of the rational scalar germ, the need to identify the relative homology groups and endpoint sections, and the unnamed checker."
       ],
       "revisions_and_rechecks": "The revision explicitly normalizes the scalar germ, identifies both relative endpoints and homology groups, names the archived checker, and states that the rank table concerns the listed orders on the span of continued sphere-path differences. The final reflow was built and visually checked internally. The isolated reader reviewed the earlier digest."
+    },
+    "current_layout": {
+      "reviewer": "Codex",
+      "reviewed_pdf_sha256": "997ee37eebdb8028ee207d91b1740d3ffba2678b500bada52be1ac19c97de7d0",
+      "scope": "Inspected all 20 pages in Poppler renders, with the new theorem and supplement references checked against extracted text and the final LaTeX log."
+    },
+    "fixed_top_pdf_only_internal_review": {
+      "reviewer": "Isolated Codex reader",
+      "reviewed_pdf_sha256": "e7308ed742810e2a3c37e52d11855e3cf886a721159a491d00885cb0823be7f5",
+      "context": "The reader received only the compiled PDF and the five neutral review questions. The reader had no research or verification context.",
+      "findings": [
+        "Identified the selected Frobenius line, the separate defective primitive orbit, and the difference between fixed-prime and fixed-cover families.",
+        "Traced coherent detection to correction elimination and nondegenerate pairing on limiting cycles. Identified the weighted boundary and the two residue discs as the hard step in the fourteen-row proof.",
+        "Distinguished formal sharpness and the phase-dependent large-prime consequence. Flagged the need to show the deficit bound at the wider support and the finite-residue field identification of marked responses with actual moments.",
+        "Flagged that the exact coefficient, boundary and local unit certificates require the named companion archive. The PDF contains no embedded certificate files."
+      ],
+      "revisions_and_rechecks": "The abstract separates the conductor-162 rigidity example. The proof gives the wider-support deficit bound, the finite-field pth-root bridge and the location of the exact supplements. Rebuilt and rendered the resulting edition. The source archive is distributed with this draft. The isolated reader reviewed the earlier digest recorded above."
     }
   }
 }

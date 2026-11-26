@@ -4,7 +4,7 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Nonordinary moment families, conductor-18 moving-branch reconstruction and an effective cutoff, arithmetic attachment of sphere variations with two escaping-period examples and a generic eight-row window, and rank-two moment rigidity at conductor 162.",
+  "summary": "Nonordinary moment families, conductor-18 moving-branch reconstruction and an effective cutoff, arithmetic attachment on an explicit boundary stratum, the sharp ninth-row slice and optimal fourteen-row formal window for three correction columns, and rank-two moment rigidity at conductor 162.",
   "status": "draft",
   "published": false,
   "catalogued_on": "2026-11-26",
@@ -15,17 +15,50 @@
   "abstract_source": "main.tex",
   "source_bundle": "cm-newton-cyclic-cover-moments-source.zip",
   "source_bundle_members": {
-    "main.tex": "main.tex"
+    "main.tex": "main.tex",
+    "../../research/foundations/extended-geometry/verify_cm_newton_nonsplit_noncm_prime_power_moments.py": "verification/verify_cm_newton_nonsplit_noncm_prime_power_moments.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_unbounded_twisted_moment_quotients.py": "verification/verify_cm_newton_unbounded_twisted_moment_quotients.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_moving_branch_ratio_certificates.py": "verification/verify_cm_newton_moving_branch_ratio_certificates.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_block_rank_moments.py": "verification/verify_cm_newton_block_rank_moments.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_sphere_escaping_variations.py": "verification/verify_cm_newton_sphere_escaping_variations.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_cyclic_limit_tail_periods.py": "verification/verify_cm_newton_cyclic_limit_tail_periods.py",
+    "../../research/foundations/extended-geometry/CM_NEWTON_331_L3_NORMAL_CHARTS.md": "verification/CM_NEWTON_331_L3_NORMAL_CHARTS.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_331_L3_VZERO_ENDPOINT.md": "verification/CM_NEWTON_331_L3_VZERO_ENDPOINT.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_331_L3_WZERO_ENDPOINT.md": "verification/CM_NEWTON_331_L3_WZERO_ENDPOINT.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_331_OFF_COMPONENT_CHARTS.md": "verification/CM_NEWTON_331_OFF_COMPONENT_CHARTS.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_CYCLIC_LIMIT_TAIL_PERIODS.md": "verification/CM_NEWTON_CYCLIC_LIMIT_TAIL_PERIODS.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_INTEGRAL_PLACES.md": "verification/CM_NEWTON_FOURTEEN_ROW_INTEGRAL_PLACES.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md": "verification/CM_NEWTON_FOURTEEN_ROW_LOCUS.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md": "verification/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_SEVENTEEN_ROW_LOCUS.md": "verification/CM_NEWTON_SEVENTEEN_ROW_LOCUS.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md": "verification/CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md": "verification/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_SPHERE_PERIOD_CYCLES.md": "verification/CM_NEWTON_SPHERE_PERIOD_CYCLES.md",
+    "../../research/foundations/extended-geometry/CM_NEWTON_TWO_INPUT_STRIP_MOMENTS.md": "verification/CM_NEWTON_TWO_INPUT_STRIP_MOMENTS.md",
+    "../../research/foundations/extended-geometry/cm_newton_conductor_18_quartic_bezout.json": "verification/cm_newton_conductor_18_quartic_bezout.json",
+    "../../research/foundations/extended-geometry/verify_cm_newton_331_l3_normal_charts.py": "verification/verify_cm_newton_331_l3_normal_charts.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_331_l3_vzero_endpoint.py": "verification/verify_cm_newton_331_l3_vzero_endpoint.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_331_l3_wzero_endpoint.py": "verification/verify_cm_newton_331_l3_wzero_endpoint.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_fourteen_row_integral_places.py": "verification/verify_cm_newton_fourteen_row_integral_places.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_fourteen_row_locus.py": "verification/verify_cm_newton_fourteen_row_locus.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_full_width_projective_boundary.py": "verification/verify_cm_newton_full_width_projective_boundary.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_full_width_reconstruction_certificates.py": "verification/verify_cm_newton_full_width_reconstruction_certificates.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_full_width_strip_moments.py": "verification/verify_cm_newton_full_width_strip_moments.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_seventeen_row_locus.py": "verification/verify_cm_newton_seventeen_row_locus.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_slope_eliminant.py": "verification/verify_cm_newton_slope_eliminant.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_slope_residue_discs.py": "verification/verify_cm_newton_slope_residue_discs.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_sphere_attachment_stratum.py": "verification/verify_cm_newton_sphere_attachment_stratum.py",
+    "../../research/foundations/extended-geometry/verify_cm_newton_two_input_strip_moments.py": "verification/verify_cm_newton_two_input_strip_moments.py"
   },
   "verification_record": "verification.json",
   "checksums": "SHA256SUMS.txt",
   "next_steps": [
-    "External specialist review of the toric and coherent calculations, the reconstruction certificates, the arithmetic attachment and pencil calculations, and the block-rank applications.",
-    "Determine the sphere-cycle detection and rational saturation questions beyond the stated families."
+    "Obtain external specialist review of the toric and coherent reductions, the arithmetic attachment on the boundary stratum and the exact fourteen-row proof with its weighted boundary and slope eliminations.",
+    "Determine sphere-cycle detection beyond the stated families and whether the formal sharpness witnesses can be realized by actual Frobenius inputs."
   ],
   "verification": {
-    "scope": "Written proofs, primary-source comparison, isolated PDF reader feedback and final render review, and replays of finite calculations and exact rational identities.",
-    "limits": "External review, formal verification, and priority remain open."
+    "scope": "Written arguments with the named exact supplements, local arithmetic replays recorded separately, and visual review of the compiled edition.",
+    "limits": "External human review, formal verification, and priority assessment remain open."
   },
-  "abstract": "A sphere moment can detect Frobenius on one coherent line of a cyclic cover even when its primitive Jacobian factor is nonordinary. For a fixed prime \\(p>3\\) congruent to \\(2\\) modulo \\(3\\), we construct connected covers of unbounded order \\(N=(p^r-1)/(p-1)\\), with odd \\(r\\ge3\\), whose primitive factors are nonordinary at \\(p\\) and are not potentially CM. The sphere phases have least degree \\(N\\). For compatible lower terms integral at \\(p\\), their moments of orders \\((p^{kr}-1)/N\\), \\(k\\ge1\\), multiplied by \\(p^{kr}\\), all reduce to one. At \\(p=5\\) we give an exact primitive \\(p\\)-rank formula and a limiting rank fraction of one half. In a second family, of order \\(n=7M\\) with \\(M\\equiv5\\pmod{14}\\), the primitive factor is nonordinary at every prime \\(p\\not\\equiv1\\pmod n\\) with \\(p\\nmid n\\) and \\(c,1-c\\) units at \\(p\\). An orbit criterion classifies the prime classes where the normalized moment residue is a unit for orders \\((p^{kd}-1)/n\\), where \\(d\\) is the order of \\(p\\) modulo \\(n\\) and \\(k\\ge1\\). At least five classes certify nonzero moments at nonordinary primes. For \\(n=35\\) the nonordinary certifying classes have natural density \\(7/24\\). For conductor \\(18\\) we reconstruct a coherent input uniformly in the branch ratio with quartic odd and radial even lower terms. We give an effective finite reconstruction window and a marked rank-two example that proves local moment rigidity. An arithmetic attachment lemma uses denominator primes to identify sphere-generated cycle sectors. Two degenerations then give coherent detection with nonzero escaping periods."
+  "abstract": "A sphere moment can detect Frobenius on one coherent line of a cyclic cover even when its primitive Jacobian factor is nonordinary. For a fixed prime \\(p>3\\) congruent to \\(2\\) modulo \\(3\\), we construct connected covers of unbounded order \\(N=(p^r-1)/(p-1)\\), with odd \\(r\\ge3\\), whose primitive factors are nonordinary at \\(p\\) and are not potentially CM. The sphere phases have least degree \\(N\\). For compatible lower terms integral at \\(p\\), their moments of orders \\((p^{kr}-1)/N\\), \\(k\\ge1\\), multiplied by \\(p^{kr}\\), all reduce to one. At \\(p=5\\) we give an exact primitive \\(p\\)-rank formula and a limiting rank fraction of one half. In a second family, of order \\(n=7M\\) with \\(M\\equiv5\\pmod{14}\\), the primitive factor is nonordinary at every prime \\(p\\not\\equiv1\\pmod n\\) with \\(p\\nmid n\\) and \\(c,1-c\\) units at \\(p\\). An orbit criterion classifies the prime classes where the normalized moment residue is a unit for orders \\((p^{kd}-1)/n\\), where \\(d\\) is the order of \\(p\\) modulo \\(n\\) and \\(k\\ge1\\). At least five classes certify nonzero moments at nonordinary primes. For \\(n=35\\) the nonordinary certifying classes have natural density \\(7/24\\). For conductor \\(18\\) we reconstruct a coherent input uniformly in the branch ratio when the odd-height coefficient has degree at most four and the even lower term is radial. We give an effective finite reconstruction window. A marked rank-two example at conductor \\(162\\) proves local moment rigidity. An arithmetic attachment lemma uses denominator primes to identify sphere-generated cycle sectors. For the conductor-\\(18\\) top with opposite branch roots and lower support of degrees \\((5,1)\\), we give all-order detection on an explicit open stratum with six correction columns. With three correction columns, fourteen shifts form the shortest uniform initial window for detection in the formal response."
 }

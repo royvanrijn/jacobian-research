@@ -335,6 +335,14 @@ class DependencyGraphTests(unittest.TestCase):
             self.assertEqual(compact[node_id]["blockers"], list(first_witnesses.values()))
             self.assertEqual(_blocker_text(compact[node_id]), _blocker_text(record))
 
+        overrides = {"GAP": "open"}
+        scenario = graph.simulate(overrides)["nodes"]
+        full_scenario = graph.evaluate(overrides)
+        self.assertLess(len(scenario["CLAIM"]["blockers"]), len(full_scenario["CLAIM"]["blockers"]))
+        for node_id, record in scenario.items():
+            self.assertEqual(record["blockers"], compact[node_id]["blockers"])
+            self.assertEqual({**record, "blockers": full_scenario[node_id]["blockers"]}, full_scenario[node_id])
+
     def test_refuted_equivalent_goals_have_no_open_blockers(self):
         self.node("A", "falsified")
         self.node("B", "falsified")

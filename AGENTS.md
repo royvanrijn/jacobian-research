@@ -7,6 +7,14 @@ Read [the research and paper working guide](working-guide/README.md) before
 developing results, changing their evidence, or preparing manuscripts. It covers
 repository hygiene, mathematical validity, paper writing and review requirements.
 
+Keep a single source of truth for this project. Do all new research in the
+canonical Ubuntu-24.04 WSL checkout at `/home/royvanrijn/src/jacobian-research`
+or a linked Git worktree that shares its Git directory. Record the results and
+their supporting evidence in this repository. Use `royvanrijn/jacobian-research`
+as the project's sole GitHub repository. Follow the
+[canonical workspace instructions](working-guide/REPOSITORY.md#canonical-workspace)
+to verify the checkout before starting.
+
 Before starting a new mathematical approach, whenever possible check the primary
 literature for an exact solution or an argument that can be adapted. Inspect the
 actual theorem statements and hypotheses, identify the closest applicable result

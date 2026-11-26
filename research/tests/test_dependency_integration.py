@@ -131,6 +131,8 @@ class DependencyIntegrationTests(unittest.TestCase):
         self.assertTrue(result["hypothetical"])
         self.assertEqual(result["nodes"]["D"]["state"], "conditional")
         self.assertEqual(result["nodes"]["D"]["assumptions"], ["B"])
+        self.assertNotIn("proof_certificate", result["nodes"]["D"])
+        self.assertTrue(result["nodes"]["D"]["routes"][0]["selected"])
         self.assertEqual(self.data, baseline)
         self.assertEqual(json.loads(research.STATUS.read_text()), baseline)
         actual = json.loads(self.cli("explain", "D", "--json"))
@@ -149,6 +151,7 @@ class DependencyIntegrationTests(unittest.TestCase):
     def test_cli_exports_full_dag_and_reports_structural_impact(self):
         exported = json.loads(self.cli("graph", "--format", "json"))
         self.assertEqual(set(exported["nodes"]), {"A", "B", "C", "D"})
+        self.assertNotIn("proof_certificate", exported["nodes"]["A"])
         impact = json.loads(self.cli("impact", "B", "--json"))
         self.assertEqual([node["id"] for node in impact], ["C", "D"])
         gaps = json.loads(self.cli("gaps", "--kind", "mathematical", "--json"))

@@ -66,7 +66,7 @@
   "novelty_claim": false,
   "current_replay": {
     "status": "pass",
-    "checked": "2026-11-17",
+    "checked": "2026-11-26",
     "command": ".venv/bin/python research/factorial/image-rigidity/verify_all_exponent_squarefree.py",
     "checker_sha256": "e66d1c554f0f151b9bdcdadfb2720457ed47842d189fab4a12b7606fb530938e",
     "checks": {
@@ -111,7 +111,7 @@
       "prime_power_windows.py": "8f7ae47d1bf7d3d2c955c2d2868bfbf515b316f462a2a6ba7bef6b2faa24d752",
       "PRIME_POWER_TWO_TERM_SFC.tex": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
       "QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex": "af0cda81c31a095f6dae9dcde1dc7998684968207aaa644713fc9a28dfce4025",
-      "STATUS_AND_LITERATURE.tex": "51a930bb76881a9896023b8e406fdc087e79cde7b0cf89ef96d845705907503b",
+      "STATUS_AND_LITERATURE.tex": "10828520cc8f15cbbdc67e6b32f46b541d9c83394d1315336ccd8ffd1ce62a99",
       "simultaneous_squarefree_verification.json": "04c952e3bed9fb044f4bf604a4716222865f2462359d4789562ed8aaf3a96e26",
       "simultaneous_squarefree_audit.json": "e35ed504ef66d68e0478355f6ebc2f8c3132be5254c458951999c16126bbcdc2",
       "sources/rocks-2015-author-preprint.pdf": "cee089adf02a4cc8add4bded8804e89bd51317108939c612ff2e3710bd43ecdc",

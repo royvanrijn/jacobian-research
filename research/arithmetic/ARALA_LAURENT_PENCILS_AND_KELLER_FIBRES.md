@@ -414,11 +414,89 @@ The whole-fibre isomorphism preserves local solubility and absence
 of rational points. The generic symmetric group follows from the
 same compiler theorem. ∎
 
-This corollary is an existence theorem for one fixed polynomial map;
-it does not print its large resolvent coefficients or assert a
-three-dimensional realization of the product family. The
-three-dimensional maps in Corollary 1 carry the degree-n root
-fields, which individually have local obstructions.
+Corollary 4 uses monogenicity for the fixed four-dimensional compiler.
+The following argument constructs a particular monogenic presentation
+that also gives a fixed three-dimensional realization of the product.
+The degree-\(n\) fibres in Corollary 1 are the individual root fields.
+
+## Corollary 5. One fixed threefold for the concentrated Hasse family
+
+For every admissible \(n=m^2+1\) with \(m\geq3\) odd, the product family
+in Theorem 3 occurs along a rational target curve as complete
+scheme-theoretic fibres of a single polynomial Jacobian-one map
+\(\mathbb A^3_{\mathbb Q}\to\mathbb A^3_{\mathbb Q}\). Its generic
+degree is \(2^{n-2}\) and its generic arithmetic and geometric groups
+are \(S_{2^{n-2}}\). The curve uses the original Laurent parameter \(s\)
+of (2), on a nonempty open subset. In particular the degree-ten
+case gives infinitely many everywhere locally soluble but globally
+pointless rank-256 fibres, with the \(A_{10}\) splitting fields
+of Theorem 3.
+
+Let \(X_1,\ldots,X_n\) be the roots over \(\mathbb Q(s)\) in the original
+\(X=z+c\) coordinate, so \(\sum_i X_i=n\). Take the following explicit
+resolvent roots:
+\[
+ \frac{1}{n}\sum_{i\in I}X_i
+       \quad (|I|=k<b,\ k\ \text{odd}),\qquad
+ \left(\sum_{i\in J}X_i-\frac n2\right)^2-\frac{n^2}{4}
+       \quad (\{J,J^c\}\ \text{a middle partition}).
+\]
+The latter expression is unchanged by replacing \(J\) by \(J^c\).
+The product \(\mathcal P(s,T)\) of \(T\) minus these expressions
+is a monic polynomial over \(\mathbb Q[s]\): all coefficients are
+symmetric polynomials in the \(X_i\), and their elementary symmetric
+polynomials belong to \(\mathbb Q[s]\).
+
+To check all orbit sizes, no linear combination \(\sum_i u_i X_i\)
+belongs to the base field for a nonconstant \(u\in\mathbb Q^n\).
+Subtract the mean of the coefficients and average over \(A_n\).
+This reduces to a zero-sum coefficient vector giving zero.
+For an index \(i\) with \(u_i\ne0\), averaging this relation over
+the stabilizer of \(i\) gives
+\(u_i(X_i-(n-X_i)/(n-1))=0\), since it is transitive on the other
+labels. This would force \(X_i=1\), contrary to the nonconstant
+irreducible polynomial for \(X_i\). Thus different indicated subsets
+give different sums, also when their sizes differ. An equality
+of two middle-partition expressions forces the centered sums to
+agree up to sign, and the same argument yields identical or
+complementary subsets. These expressions therefore have respective
+stabilizers \(H_k\) and \(W_b\). Stabilizers from the two types cannot
+coincide, since \(W_b\) is transitive on the original labels and
+\(H_k\) is intransitive. For the transitivity of \(W_b\), any
+permutation of the labels preserving the unordered partition can
+have its parity changed by a transposition within a block while
+fixing a prescribed image label. This is possible since \(b\geq5\).
+Consequently \(\mathbb Q(s)[T]/(\mathcal P)\) is the full product
+of fixed fields in Theorem 3, and \(\mathcal P\) is generically separable.
+
+At \(s=0\) the original root multiset is \(0^{n-1},n\).
+All middle-partition expressions specialize to zero; each odd-subset
+expression specializes to one if and only if its subset contains
+the unique label of \(n\). Therefore
+\[
+ \mathcal P(0,T)=T^A(T-1)^B,\qquad
+ A=\sum_{\substack{k<b\\k\ {\rm odd}}}\binom{n-1}{k}
+          +\tfrac12\binom nb,\qquad
+ B=\sum_{\substack{k<b\\k\ {\rm odd}}}\binom{n-1}{k-1}.
+\]
+In degree ten, \((A,B)=(219,37)\). In every admissible degree,
+\(A>B>0\) since \(k<b=n/2\). Set \(\tau_0=A/(A+B)\).
+The logarithmic derivative of \(T^A(T-1)^B\) at \(\tau_0\) is
+zero. Its derivative there is
+\(-A/\tau_0^2-B/(\tau_0-1)^2\ne0\), and its second derivative
+is \(2A/\tau_0^3+2B/(\tau_0-1)^3\ne0\) by \(A\ne B\).
+As \(\mathcal P(0,\tau_0)\ne0\), these give a simple critical point
+with nonzero third derivative.
+
+Apply [Theorem 4 of the fixed-family compiler](../jacobian/monodromy-theory/FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md#theorem-4-a-critical-section-gives-a-fixed-compiler-in-dimension-three)
+to \(\mathcal P\). Its finite exclusions discard only finitely many
+members of the original progression of Theorem 3, using \(s=-nT\)
+to translate the progression parameter \(T\). For each retained
+full-group specialization, the resolvent factors specialize to
+those same fixed fields, as in Corollary 4. Their complete local
+and global point properties transfer by the scheme-theoretic
+fibre identity. This construction leaves the paired-critical
+double-transposition product problem separate.
 
 ## Evidence and scope
 

@@ -366,6 +366,34 @@ from the repository root with
 The two sharp bounds concern moduli \(9\) and \(27\).
 Growth of the minimum degrees across the whole tower remains open.
 
+### All degree-\(81\) branches modulo \(81\)
+
+**Proposition BGVCap81AllBranchCriterion.** For the \(p=3\) pair (1), the existence of a lift modulo \(81\) with both coordinate degrees at most \(81\) is equivalent to the following finite condition. Fix the correction and error spaces
+\[
+V=(\mathbb Z[x,y]_{\le81})^2,\qquad W=\mathbb Z[x,y]_{\le160}.
+\]
+In this section \(\operatorname{Jac}(P,Q)\) denotes the two-coordinate determinant. Let \(L_0(U,V')=\operatorname{Jac}(U,Q_0)+\operatorname{Jac}(P_0,V')\) for the integer pair \(P_0,Q_0\) from (1). Put \(K=\ker\overline{L_0}\), \(C=\operatorname{coker}\overline{L_0}\) over \(\mathbb F_3\), and \(\pi:W/3W\to C\). Enumerate the affine space of first corrections
+\[
+\overline{L_0}(A,D)=-\big((\operatorname{Jac}(P_0,Q_0)-1)/3\big)\bmod 3.
+\]
+For each pair use its integer coefficient lifts and put \(P_u=P_0+3A\), \(Q_u=Q_0+3D\), \(e_u=(\operatorname{Jac}(P_u,Q_u)-1)/9\). Set \(L_u(U,V')=\operatorname{Jac}(U,Q_u)+\operatorname{Jac}(P_u,V')\). Project \(\bar e_u\) to \(C\). For a branch where \(\pi(\bar e_u)=0\), solve \(\bar L_0(b)=-\bar e_u\) and use any integer lift \(\widetilde b\). The criterion is the existence of one such branch with
+\[
+-\pi\!\left(\frac{e_u+L_u(\widetilde b)}{3}\bmod3\right)
+\ \in\ \operatorname{im}\beta_u,\qquad
+\beta_u:K\longrightarrow C,\qquad
+\beta_u(h)=\pi\!\left(\frac{L_u(\widetilde h)}{3}\bmod3\right).
+\]
+The integer lift \(\widetilde h\) in this definition is arbitrary.
+
+Indeed, a pair lifting \(P_u,Q_u\) modulo \(81\) with the cap is obtained by adding \(9(U,V')\) with \((U,V')\in V/9V\). The term quadratic in this correction has a factor \(81\). The determinant equation is therefore exactly \(e_u+L_u(U,V')=0\) modulo \(9\), with \(L_u\bmod3=\overline{L_0}\). Once the first equation is solvable, every solution modulo \(3\) is \(b+h\) for some \(h\in K\). Write \((U,V')=\widetilde b+\widetilde h+3c\bmod9\). Dividing the remaining equation by \(3\) and reducing modulo \(3\) gives the criterion. Changing \(\widetilde h\) by \(3t\) changes the divided expression by \(\overline{L_0}(t)\), which projects to zero. This also proves additivity and \(\mathbb F_3\)-linearity, including the coefficient carries in the lifted vectors. Changing the chosen \(b\) changes the class by an element of \(\operatorname{im}\beta_u\).
+
+The map can be assembled from one matrix over \(\mathbb F_3\) and an update linear in \((A,D)\). In fact,
+\[
+\beta_u(h)=\pi\!\left(\frac{L_0(\widetilde h)}{3}\bmod3\right)
+ +\pi\!\big(\operatorname{Jac}(h_1,D)+\operatorname{Jac}(A,h_2)\big).
+\]
+The degree assumptions fix \(V,W\) for every branch. The radial branch is one member of the affine space and its obstruction above leaves the existential criterion unresolved. This degree-bounded criterion does not decide the existence of a horizontal polynomial lift over \(\mathbb Z_3\).
+
 ## 6. An Euler primitive gives a compatible tower at every length
 
 Let p be odd, R=Z_p<x,y> the p-adically complete restricted power-series

@@ -4,7 +4,7 @@
   "local_sources": [
     {
       "path": "jacobian/universal-keller-plane-completion/PROOF.md",
-      "sha256": "3705021d187f6d0ca2937c642883fd3ce482b56d566e46e1d63b5e1fe9ccd152"
+      "sha256": "c9abf8b69ac44d08edcede1bd1017671632e354a355b0d16594c523d7d0eaa9c"
     },
     {
       "path": "jacobian/universal-keller-receiver/PROOF.md",

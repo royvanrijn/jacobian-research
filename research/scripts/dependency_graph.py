@@ -620,8 +620,8 @@ class DependencyGraph:
 
     def simulate(self, overrides: dict[str, str]) -> dict:
         """Compare a hypothetical scenario with current evaluation, read only."""
-        baseline = self.evaluate()
-        scenario = self.evaluate(overrides)
+        baseline = self.evaluate(distinct_blockers=True)
+        scenario = self.evaluate(overrides, distinct_blockers=True)
         changes = []
         for node_id in self.order:
             before, after = baseline[node_id], scenario[node_id]
@@ -632,7 +632,7 @@ class DependencyGraph:
 
     def stale_evidence(self, evaluation: dict[str, dict] | None = None) -> list[dict]:
         """Report every stale declaration, even when an alternate route works."""
-        evaluated = evaluation if evaluation is not None else self.evaluate()
+        evaluated = evaluation if evaluation is not None else self.evaluate(distinct_blockers=True)
         stale = []
         for node_id, record in evaluated.items():
             stale.extend({"owner": node_id, **source} for source in record["stale_sources"])
@@ -653,7 +653,7 @@ class DependencyGraph:
         """Render implication diamonds so AND rules are not mistaken for OR."""
         import json
 
-        evaluated = evaluation if evaluation is not None else self.evaluate()
+        evaluated = evaluation if evaluation is not None else self.evaluate(distinct_blockers=True)
         quote = json.dumps
         lines = ["digraph research {", "  rankdir=LR;"]
         for index, (group_id, group) in enumerate(self.equivalences.items()):

@@ -163,11 +163,11 @@ so both stages retain the displayed signal and all identities. If Gb,Gc also hav
 
 The plane theorem forces Ebar to be an automorphism, since Gbar is not. Thus E is birational on the whole affine space and Keller, hence an automorphism by the birational-etale self-map criterion used in UAALLATOM1.
 
-**Any nontrivial signal-retaining factorization must therefore use intermediate coordinates with a genuine pole on D**, or depart from the stated retained-coordinate architecture. This pole condition concerns the intermediate map, not the final polynomial-r outputs. We do not assume that a general plane Keller target cannot hide such a pole; that would exceed the imported line theorem. Identity stabilization mixing the retained coordinates is outside this exclusion.
+The plane-completion argument alone leaves a pole along \(D\) in an intermediate coordinate. The [all-degree signal-retaining factor theorem](../universal-keller-intermediate-surfaces/PROOF.md#2-uasigfact1-all-signal-retaining-native-factorizations-are-trivial-on-the-target-side) closes that alternative for the entire specified native class. Its proof uses the actual carried affine line in the relative surface, and allows every finite Laurent-\(r\) degree.
 
 ## 5. What is now left
 
-The open polynomial-r native problem is an exact plane-map problem with determinant 1-SY, the native module congruence, and separate whole-source landing at special signals. Its completion is already plane-indecomposable. Any new full-map decomposition respecting the signal must cross the boundary through a pole, while arbitrary intermediate signals and unrestricted source changes remain separate.
+The open polynomial-r native problem is an exact plane-map problem with determinant 1-SY, the native module congruence, and separate whole-source landing at special signals. Its completion is already plane-indecomposable. The all-degree factor theorem makes the target factor an automorphism whenever both stages preserve the fixed signal and identity coordinates. For arbitrary stabilization with coordinate mixing, a proper intermediate still has to satisfy the [non-plane surface conditions](../universal-keller-intermediate-surfaces/PROOF.md).
 
 A genuinely nonlinear C output excludes every literal retained-profile first factor automatically by UAPROFFACT1. The scalar tangent would escape all such factors if it algebraized, but its finite polynomial integration remains unconstructed. The full canonical Spec(A), all thickened marked restrictions, effective gluing, absolute stable atomicity and improved costs remain open requirements. No further coefficient-degree or formal-order campaign is scheduled in a closed sector.
 

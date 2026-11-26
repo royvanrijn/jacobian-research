@@ -251,20 +251,23 @@ Three distinct gaps remain.
    needs a reduction covering arbitrary endomorphisms; one seed and its
    canonical orbit do not give that reduction.
 
-The October 2026
-[Kanel-Belov--Fedorov preprint, Theorem 4.2](https://arxiv.org/html/2610.33919v1)
-excludes a finite characteristic-zero lift of Long's specified Frobenius
-center map, even at matrix size m>=1. Theorem (7) nevertheless gives a
-formal Moyal lift of Long's polynomial symplectic map. Taken together,
-these results rule out a universal passage from formal lifting to that
-prescribed arithmetic realization. They do not rule out every polynomial
-hbar deformation having Long's map as its classical reduction.
+Kanel-Belov and Fedorov's
+[Theorem 1.4(i)](https://arxiv.org/html/2610.33919v2)
+excludes a finite characteristic-zero lift inducing Long's prescribed
+Frobenius pullback on the entire center on a Zariski-dense set of closed
+points of an arithmetic model. This holds in every finite matrix size,
+as in v1. Theorem (7) gives the formal Moyal lift of Long's classical
+map. A polynomial deformation with that classical reduction would
+require a separate comparison of its arithmetic center map before
+applying Theorem 1.4(i).
 
-For the plane graph-module route, the same preprint's Theorem 1.8
-replaces arithmetic existence by bounded Berest--Wilson invariants along
-faithful arithmetic families. This remains a concrete all-degree
-boundedness problem. It concerns generalized DC1 and JC2 and does not
-supply a proof of ordinary DC2.
+For actual plane graph modules, Theorem 1.8 gives the equivalence
+between arithmetic realization along a faithful arithmetic family and
+bounded Berest--Wilson invariants on an ultrafilter-large set. The
+[graph filtration calculation](PLANE_KELLER_GRAPH_BW_FILTRATION.md)
+reduces the bound to fullness in two fixed degrees of the intrinsic
+reduced-norm filtration. The common degrees remain open. The
+conditional implication here is from generalized DC1 to JC2.
 
 [Lauritzen--Thomsen](https://arxiv.org/html/2308.09384v2)
 give another useful endpoint: finite generation of A_n on either side

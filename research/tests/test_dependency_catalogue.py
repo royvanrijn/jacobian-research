@@ -37,11 +37,12 @@ class RetainedDependencyTests(unittest.TestCase):
                 if source["path"] == path:
                     source["sha256"] = "0" * 64
         graph = DependencyGraph(changed, ROOT)
-        self.assertEqual(graph.evaluate()["ARITHMETIC-COMMON-ARITHMETIC-FIBERS"]["state"], "stale")
+        actual = graph.evaluate(distinct_blockers=True)
+        self.assertEqual(actual["ARITHMETIC-COMMON-ARITHMETIC-FIBERS"]["state"], "stale")
         # An independent cubic collision may continue to support the same negated
         # conjecture, so its conclusion must not be unconditionally downgraded here.
         self.assertTrue(any(route["state"] == "stale"
-                            for route in graph.evaluate()["ARITHMETIC-JC-NEGATION"]["routes"]))
+                            for route in actual["ARITHMETIC-JC-NEGATION"]["routes"]))
 
     def test_known_tang_and_trace_inputs_cannot_be_bypassed(self):
         cases = [
@@ -69,7 +70,7 @@ class RetainedDependencyTests(unittest.TestCase):
         # The published upper-bound theorem is now cached and its coloring
         # definition checked. Revoking that input must still block equalities,
         # while leaving purely algebraic lower bounds available.
-        actual = self.graph.evaluate()
+        actual = self.graph.evaluate(distinct_blockers=True)
         self.assertEqual(actual["EXT-WIRTINGER-BRIDGE"]["state"], "proved")
         scenario = self.graph.simulate({"EXT-WIRTINGER-BRIDGE": "stale"})
         for conclusion in equality_claims:
@@ -91,7 +92,7 @@ class RetainedDependencyTests(unittest.TestCase):
             if pin["path"].endswith("seven_sheet_cover_inputs.json"):
                 pin["sha256"] = "0" * 64
         graph = DependencyGraph(changed, ROOT)
-        states = graph.evaluate()
+        states = graph.evaluate(distinct_blockers=True)
         self.assertEqual(states["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "stale")
         self.assertEqual(states["MRC-GENERAL-COVER-THM-GENERAL"]["state"], "proved")
         self.assertEqual(states["MRC-RESTRICTED-CAPACITY-THM-SEVEN"]["state"], "proved")
@@ -109,7 +110,7 @@ class RetainedDependencyTests(unittest.TestCase):
         self.assertEqual(scenario["nodes"]["MRC-SEVEN-SHEET-EXAMPLES"]["state"], "proved")
 
     def test_scoped_family_exclusions_do_not_close_global_priority_or_mrc(self):
-        actual = self.graph.evaluate()
+        actual = self.graph.evaluate(distinct_blockers=True)
         for result in ("MRC-FISHNET-AND-PLAT-SCOPE", "MRC-TWISTED-FAMILY-SCOPE",
                        "MRC-NO-SHARP-FINITE-COXETER", "MRC-NORMALIZED-COVER-ADDITIVITY"):
             self.assertEqual(actual[result]["state"], "proved")
@@ -117,7 +118,7 @@ class RetainedDependencyTests(unittest.TestCase):
         self.assertEqual(actual["GAP-MERIDIONAL-RANK-3"]["state"], "open")
 
     def test_canonical_coxeter_import_does_not_underwrite_field_obstruction_or_equality(self):
-        actual = self.graph.evaluate()
+        actual = self.graph.evaluate(distinct_blockers=True)
         self.assertEqual(actual["MRC-NO-SHARP-COXETER"]["state"], "proved")
         self.assertEqual(actual["GAP-MRC-RATIONAL-REPLACEMENTS"]["state"], "proved")
         scenario = self.graph.simulate({"EXT-COXETER-CANONICAL": "stale"})
@@ -928,7 +929,7 @@ class RetainedDependencyTests(unittest.TestCase):
         # Fine decomposition exposes a retained-input verification gap. A
         # hypothetical proof must carry that assumption too, rather than bypass it.
         overrides = {"GAP-AUTOMATIC-T3-PERFECTION": "proved"}
-        for blocker in self.graph.blockers("HESS-LZ"):
+        for blocker in self.graph.blockers("HESS-LZ", distinct=True):
             if blocker["type"] == "node":
                 overrides[blocker["id"]] = "proved"
         result = self.graph.simulate(overrides)
@@ -937,7 +938,7 @@ class RetainedDependencyTests(unittest.TestCase):
             self.assertIn("GAP-AUTOMATIC-T3-PERFECTION",
                           result["nodes"][conclusion]["assumptions"])
         self.assertEqual(self.data, before)
-        self.assertFalse(self.graph.evaluate()["GOAL-HC4"]["hypothetical"])
+        self.assertFalse(self.graph.evaluate(distinct_blockers=True)["GOAL-HC4"]["hypothetical"])
 
     def test_reverse_hessian_equivalence_propagates_without_extra_tang_context(self):
         result = self.graph.simulate({"GOAL-HC4": "proved"})

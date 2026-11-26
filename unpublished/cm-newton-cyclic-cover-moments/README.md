@@ -30,6 +30,15 @@ marker inputs wherever their determinant is nonzero. On every
 line varying just \(B(0)\), this determinant has degree 12
 with the same nonzero leading coefficient.
 
+For the same conductor-18 top and lower support, an explicit nonempty
+boundary stratum gives all-order coherent detection with six correction
+columns. With three correction columns, shifts \(0,\ldots,13\) detect
+both coherent inputs over every characteristic-zero coefficient field.
+The window is optimal for the formal response, where an algebraic phase
+misses a coherent direction through shift 12. On the specified
+four-parameter slice, the ninth row is sharp. Realization of the formal
+sharpness witnesses by actual Frobenius inputs remains open.
+
 [Manuscript PDF](cm-newton-cyclic-cover-moments.pdf) ·
 [LaTeX source and replay ZIP](cm-newton-cyclic-cover-moments-source.zip) ·
 [Metadata](metadata.json) · [Verification record](verification.json) ·
@@ -50,7 +59,15 @@ separable conductor-18 phase. The
 gives the attachment lemma, the two pencil calculations, and the
 eight-row determinant. The
 [tail-period note](../../research/foundations/extended-geometry/CM_NEWTON_CYCLIC_LIMIT_TAIL_PERIODS.md)
-records the local escaping scalings.
+records the local escaping scalings. The
+[fixed-boundary stratum](../../research/foundations/extended-geometry/CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md)
+gives the geometric detection theorem and the sharp ninth-row slice.
+The [fourteen-row window](../../research/foundations/extended-geometry/CM_NEWTON_FOURTEEN_ROW_LOCUS.md)
+combines the affine integral-place calculation and the boundary charts
+with two exact slope exclusions. It uses the
+[seventeen-row calculation](../../research/foundations/extended-geometry/CM_NEWTON_SEVENTEEN_ROW_LOCUS.md)
+for the underlying finite algebra and the formal sharpness witness.
+The source archive includes these proof notes and their exact replay inputs.
 
 ## Build and replay
 
@@ -64,6 +81,9 @@ sage -python verification/verify_cm_newton_moving_branch_ratio_certificates.py
 python3 -I verification/verify_cm_newton_block_rank_moments.py
 sage -python verification/verify_cm_newton_sphere_escaping_variations.py
 sage -python verification/verify_cm_newton_cyclic_limit_tail_periods.py
+sage -python verification/verify_cm_newton_sphere_attachment_stratum.py
+sage -python verification/verify_cm_newton_seventeen_row_locus.py
+sage -python verification/verify_cm_newton_fourteen_row_locus.py
 ```
 
 The first replay evaluates individual coherent Frobenius maps and
@@ -77,4 +97,12 @@ multiplication. The block-rank checker replays the rank counts,
 rank-two determinant and rigidity congruence. The two escaping
 period checkers replay the exact critical-coordinate substitutions,
 irreducibility tests, finite moment ranks, and local scaling algebra.
+The stratum checker verifies the critical-value basis, the ninth-row
+unit certificate and the first-eight blind example. The two window
+checkers are for different scopes. The seventeen-row program replays
+rank and finite-algebra checks. The fourteen-row program checks the
+affine and weighted boundary reductions and the exact slope exclusions
+using the shorter prefix. Its exact rational matrix calculations can
+take substantially longer than the finite-field checks. See the
+[verification record](verification.json) for completed replays.
 External specialist review and priority assessment remain open.

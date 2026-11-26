@@ -108,11 +108,11 @@ announces a result on topological degree. Secondary sources report the
 cutoff five and point to Theorem 6.12. In this audit the full original
 Theorem 6.12 and its reduction hypotheses have **not yet been inspected**;
 the publisher PDF and author-hosted routes did not return the article.
-Accordingly the degree-five assertion is not a proof premise of the
-theorem above, and this note does not promote the natural A5 plane case
-to a source-verified exclusion. This is an outstanding source-verification
-obligation, rather than a claim that the degree-five result is mathematically
-open. No gcd-of-polynomial-degrees assertion from that article is imported.
+The all-group degree-five statement remains a primary-source
+verification obligation. The natural five-sheet \(A_5\) action has a
+separate [written exclusion via the Orevkov budget](SIX_SHEET_BOUNDARY_BUDGET_AND_MONODROMY.md),
+which forces \(S_5\) and leaves that symmetric case to be excluded.
+The reported polynomial-degree gcd statements are outside these proofs.
 
 ## Exact finite controls and assurance
 

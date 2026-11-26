@@ -272,12 +272,16 @@ Since ell>3 and 0<=j<=ell, the only nonnegative surviving case is
 j=ell. Its coefficient is one, proving (11). Finite PBW checks at
 ell=5,7,11 are implementation controls, not the all-prime proof.
 
-Accordingly, the
-[Kanel-Belov--Fedorov preprint's arithmetic nonlifting theorem](https://arxiv.org/html/2610.33919v1)
-for Long's prescribed Frobenius center map does not by itself decide
-(7) for Long's classical map. A new comparison would be required.
-Bounded spatial degree implies a genuine Weyl assignment, but its
-arithmetic center map need not equal the classical h=0 map.
+Kanel-Belov and Fedorov's
+[Theorem 1.4(i)](https://arxiv.org/html/2610.33919v2)
+concerns Long's prescribed Frobenius pullback on the entire center,
+with equality on a Zariski-dense set of closed points of an arithmetic
+model. Applying it to a representative in (7) would require proof of
+that center comparison. Bounded spatial degree gives a Weyl assignment
+whose arithmetic center map can differ from its classical h=0 map, as
+(11) illustrates. The separate
+[plane Keller graph filtration](PLANE_KELLER_GRAPH_BW_FILTRATION.md)
+uses the actual graph modules with their specified center maps.
 
 ## Exact remaining gap
 

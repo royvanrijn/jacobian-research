@@ -11,9 +11,9 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Published GVC, GMC and Image results | Published preprints | proved | [Source](../../results/README.md) |
 | Gaussian dimension-degree boundary | Published preprints | proved | [Source](../../results/README.md) |
 | Complete reductive Mathieu classification | Published preprints | proved | [Source](../../results/README.md) |
-| All-degree Gaussian structure and safety gap | Internal result | stale | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
+| All-degree Gaussian structure and safety gap | Internal result | proved | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
 | Exact multibase Gaussian generic marked images | Internal result | proved | [Source](vanishing/GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_GENERIC_IMAGE.md) |
-| Angular-core reduction and exact original marked images | Internal result | stale | [Source](vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md) |
+| Angular-core reduction and exact original marked images | Internal result | proved | [Source](vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md) |
 | Complete quadratic-W Gaussian finite-image classification | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_W_FINITE_IMAGE_CLASSIFICATION.md) |
 | Gaussian H(2,1): affine charts, radial phases and obstructions | Internal result | proved | [Source](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) |
 | Bidegree-(4,4) two-pair Image/Mathieu counterexample | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
@@ -21,19 +21,19 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Real signed-height affine-profile classification | Internal result | proved | [Source](../foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md) |
 | Affine-multiplier quintic Image obstruction | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
 | Complete cubic two-pair Image positivity and sharp balanced degree four | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md) |
-| Mixed-cutoff moment jets and certified infinite tails | Internal result | stale | [Source](vanishing/MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md) |
-| Parity-invariant Gaussian scalar and finite-image classification | Internal result | stale | [Source](vanishing/GAUSSIAN_PARITY_INVARIANT_CORE_FINITE_IMAGES.md) |
+| Mixed-cutoff moment jets and certified infinite tails | Internal result | proved | [Source](vanishing/MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md) |
+| Parity-invariant Gaussian scalar and finite-image classification | Internal result | proved | [Source](vanishing/GAUSSIAN_PARITY_INVARIANT_CORE_FINITE_IMAGES.md) |
 | Exact axial cubic Gaussian moment scheme | Internal result | proved | [Source](vanishing/GAUSSIAN_AXIAL_CUBIC_MOMENT_IDEAL.md) |
 | Invariant quadratic fibres and complete quartic finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md) |
-| Affine-coefficient quadratic radial cores and complete invariant quintic finite images | Internal result | stale | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md) |
+| Affine-coefficient quadratic radial cores and complete invariant quintic finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md) |
 | Exact zero-boundary invariant quintic moment scheme | Internal result | proved | [Source](vanishing/GAUSSIAN_ZERO_BOUNDARY_QUINTIC_MOMENT_IDEAL.md) |
 | Generic centered five-direction Gaussian moment schemes and exact two-prefix bounds | Internal result | proved | [Source](vanishing/GAUSSIAN_GENERIC_FIVE_DIRECTION_MOMENT_SCHEMES.md) |
-| Fixed logarithmic covers and quadratic radial Gaussian finite images | Internal result | stale | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_LOGARITHMIC_COVER_FINITE_IMAGES.md) |
-| Unrestricted quadratic radial Gaussian finite images | Internal result | stale | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md) |
-| Cubic radial Gaussian safety and the relative Airy source | Internal result | stale | [Source](vanishing/GAUSSIAN_RADIAL_FROBENIUS_AND_CUBIC_FIBRES.md) |
+| Fixed logarithmic covers and quadratic radial Gaussian finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_LOGARITHMIC_COVER_FINITE_IMAGES.md) |
+| Unrestricted quadratic radial Gaussian finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_RADIAL_UNRESTRICTED_FINITE_IMAGES.md) |
+| Cubic radial Gaussian safety and the relative Airy source | Internal result | proved | [Source](vanishing/GAUSSIAN_RADIAL_FROBENIUS_AND_CUBIC_FIBRES.md) |
 | Arbitrary Gaussian and sphere moment interpolation at quadratic degree scale | Internal result | proved | [Source](vanishing/GAUSSIAN_MOMENT_INTERPOLATION.md) |
 | Ternary cubic purity requires at least sixteen moments | Internal result | proved | [Source](vanishing/GAUSSIAN_CUBIC_PREFIX_GEOMETRY.md) |
-| Sixteen moments cut out the exceptional ternary cubic orbit locally | Internal result | stale | [Source](vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md) |
+| Sixteen moments cut out the exceptional ternary cubic orbit locally | Internal result | proved | [Source](vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md) |
 | Primitive two-pair Image witnesses in every odd composite degree | Internal result | proved | [Source](../foundations/extended-geometry/ODD_PRIMITIVE_TWO_PAIR_IMAGE_WITNESSES.md) |
 | Primitive Image witnesses in prime degrees from hyperbolic inverse covers | Internal result | proved | [Source](../foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md) |
 | Complete hyperbolic-coordinate fibers and additional prime Image witnesses | Internal result | proved | [Source](../foundations/extended-geometry/HYPERBOLIC_COORDINATE_FIBER_IMAGE_WITNESSES.md) |
@@ -226,13 +226,13 @@ Scope limits:
 
 Tracked obligations (computed states):
 
-- **mathematical / stale:** [General safety-to-purity/original-vacuum primitivity.](README.md) — MOMENTS-SAFETY-PURITY
+- **mathematical / open:** [General safety-to-purity/original-vacuum primitivity.](README.md) — MOMENTS-SAFETY-PURITY
 - **mathematical / open:** [Constant quadratic fibre over two ordinary bases.](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) — MOMENTS-TWO-BASE-SAFETY
 - **mathematical / open:** [Determine whether the first sixteen moments force purity for every complex ternary polynomial of degree at most three. The exceptional orbit has exact local cutoff sixteen. For each residual component of the actual first-sixteen ideal, seek a later cutting moment or a generic-point purity certificate using computable finite recognition.](vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md) — GAP-TERNARY-PURE-PREFIX
 - **mathematical / open:** [For every actual smooth-cubic even-BD face whose simple anti-Prym has full geometric End0=Q(zeta5), is the selected Hasse coefficient nonzero at infinitely many good absolute-degree-one primes p=1 mod 10 after a fixed extension? Primitive phase safety has a separate proof.](../foundations/extended-geometry/EVEN_QUINTIC_REPEATED_CUBIC_AND_SIXFOLD_REDUCTION.md) — GAP-EVEN-BD-SIMPLE-E5-SELECTED-HASSE-FREQUENCY
 - **mathematical / open:** [Decide if any balanced Gaussian partition beats the regular simplex at positive correlation. The fixed-partition low-correlation result and finite cubic search do not establish the universal inequality.](../plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md) — GAP-PIS-BALANCED-POSITIVE-CORRELATION
-- **mathematical / open:** [Determine if any balanced four-cell Gaussian partition beats the tetrahedral first Hermite mass. The exact affine reduction covers all candidates, and the local theorem excludes nearby centroid Gram matrices.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE
+- **mathematical / open:** [Is the exact tetrahedral first Hermite mass a global upper bound for balanced Gaussian four-cell partitions? The compact affine reduction includes rank-deficient Gram matrices. The known local maximum leaves the rest of that domain open.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE
 - **mathematical / open:** [Can a pure winding-one septic with a quadruple leading root and varying invariant lie in the exceptional coefficient loci left by the Lefschetz, exact moment, and Cartier residue exclusions?](../foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_GENERIC_EXCLUSION.md) — GAP-HOPF-MIXED-CUBIC-SEPTIC-UNIT-CENTER
-- **mathematical / stale:** [Prove the sufficient canonical Wick-power detection lemma for a phase with original unit period 1−t.](../BREAKTHROUGH_TARGET_ASSESSMENT.md) — GAP-GAUSSIAN-CANONICAL-WICK-LINEAR-VACUUM-DETECTION
+- **mathematical / open:** [Prove the sufficient canonical Wick-power detection lemma for a phase with original unit period 1−t.](../BREAKTHROUGH_TARGET_ASSESSMENT.md) — GAP-GAUSSIAN-CANONICAL-WICK-LINEAR-VACUUM-DETECTION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

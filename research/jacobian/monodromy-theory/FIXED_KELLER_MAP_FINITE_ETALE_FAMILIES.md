@@ -9,9 +9,11 @@ coefficient denominators while keeping the cubic gauge constant.
 For the alternating Hasse family this gives one fixed polynomial map
 A4_Q -> A4_Q with infinitely many complete fibres having local points
 everywhere and no rational point. The generic group of this fixed map is
-S301. A fixed three-dimensional map for that product family remains open.
-The [degree-ten pencil](FIXED_KELLER_MAP_ALTERNATING_FAMILY.md) already has
-the stronger three-dimensional realization.
+S301. That statement concerns the paired-critical pencil and its
+four-factor product. The [concentrated Arala family](../../arithmetic/ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md#corollary-5-one-fixed-threefold-for-the-concentrated-hasse-family)
+gives rank 256 in degree ten, first in four variables and then in three
+by Theorem 4 below. The [degree-ten root-field pencil](FIXED_KELLER_MAP_ALTERNATING_FAMILY.md)
+also admits a fixed threefold.
 
 ## Theorem 1. A fixed polynomial compiler in dimension four
 
@@ -209,6 +211,81 @@ map works for every remaining parameter. S301 describes the ambient
 four-dimensional extension; A10 describes the distinguished product
 fibre splitting fields.
 
+## Theorem 4. A critical section gives a fixed compiler in dimension three
+
+Let \(k\) have characteristic zero and let \(P(w,T)\in k[w,T]\) be
+monic in \(T\), generically separable, and of degree \(N\geq 3\) in
+\(T\). Suppose there is \(\tau_0\in k\) satisfying
+\[
+ P_T(0,\tau_0)=0,\qquad P_{TT}(0,\tau_0)P_{TTT}(0,\tau_0)\ne0.
+\]
+There is one polynomial Jacobian-one map
+\(\mathcal F:\mathbb A^3_k\to\mathbb A^3_k\) and one rational target curve
+\(\Gamma\) over a nonempty open subset \(U\) of the original parameter
+line. For every field extension \(K/k\) and \(w\in U(K)\), the whole
+scheme-theoretic fibre over \(\Gamma(w)\) is
+\(\operatorname{Spec}K[T]/P(w,T)\). The ambient generic degree is \(N\)
+and its arithmetic and geometric groups are \(S_N\).
+
+Use \(c_j(w)=[X^j]P(w,\tau(w)+X)\) and put
+\(\gamma=P_{TTT}(0,\tau_0)/6\). Choose a polynomial \(\tau(w)\) of
+degree at most five with \(\tau(0)=\tau_0\) such that
+\[
+ c_1(w)=P_T(w,\tau(w))\equiv w^5/\gamma\pmod{w^6}.
+\]
+At each of the five orders the new coefficient of \(\tau\) changes
+the coefficient of \(P_T(w,\tau)\) by that coefficient times
+\(P_{TT}(0,\tau_0)\). Thus the five choices are determined by
+successive linear equations in \(k\). Write \(d(w)=c_1(w)/w^5\), so
+\(d(0)=1/\gamma\). Choose
+\[
+ L(w)=1-\tfrac12(c_3d)'(0)w,\qquad a(w)=w^3 d(w)L(w).
+\]
+The normalized coefficient \(r_j=c_j a^{j-1}/c_1\) of
+\(P(w,\tau+aS)/(c_1a)\) satisfies
+\[
+ r_1=1,\qquad r_3=w c_3 d L^2=w+w^3h_3(w),\qquad
+ r_j=w^j h_j(w)\quad(4\leq j\leq N),
+\]
+where \(h_3\in k[w]\) by the value and first derivative of \(c_3dL^2\)
+at zero, and \(h_j=w^{2j-8}c_j d^{j-2}L^{j-1}\in k[w]\) for \(j\geq4\).
+This weighting leaves the constant and quadratic coefficients free.
+
+The coefficient family already occurs in
+[Ulam's Theorem 5.2](https://www.ulam.ai/research/jacobian.pdf), including
+the \(V^3h_3(V)\) correction to the cubic term. The characteristic-zero
+fibre argument can also be checked directly in the existing quadratic
+gauge. In \((x,y,z)\) put \(t=1+xy\),
+\(q=t^2z+y^2(1+3t)\), \(V=tq\), and set
+\[
+ \begin{split}
+ B&=y+3xq+\sum_{j=3}^{N}j h_j(V)t^2x^{j-2}q^j,\\
+ C&=x(5-3t)-x^3z-\sum_{j=3}^{N}(j-2)h_j(V)(xq)^j,
+ \qquad \mathcal F=(V,-B/2,C).
+ \end{split}
+\]
+In the chart \(t\ne0\) take \(S=x/t,\ Q=y+xq\) and
+\(G_V(S)=S+VS^3+\sum_{j=3}^N V^j h_j(V)S^j\).
+The compact formulas in Theorem 1 hold with this \(G_V\).
+Indeed a new term \(V^jh_j(V)S^j\) contributes \(jV^jh_j(V)S^{j-2}\)
+to \(B\) and \((2-j)V^jh_j(V)S^j\) to \(C\), whose displayed
+pullbacks are polynomials also when \(j=3\). The product of the chart
+Jacobian \(t\), the plane Jacobian \(-2(1-SQ+VS^2)\), and the target
+normalization \(-1/2\) equals one.
+
+Set \(\Gamma(w)=(w,r_2(w),-2r_0(w))\); its inverse equation is exactly
+\(P(w,\tau(w)+a(w)S)/(c_1(w)a(w))\). Let \(U\) exclude the zeros
+of \(w c_1 a\) and the discriminant of \(P\). This discards only
+finitely many parameters. On the entire fibre \(V=w\ne0\), \(t,q\)
+are units. Its reconstruction uses \(D=E'(S)\), a unit by separability,
+and is precisely the reconstruction in Theorem 1 with the new \(G_V\).
+The coefficient of \(S^N\) in \(G_V\) is nonzero over \(k(V)\), by the
+normalization identity. For \(N=3\) this also follows from the linear
+term \(V\) in the cubic coefficient. The independent \(Y,Z\) outputs
+and \(G_V'(0)=1\) satisfy
+[UAQTILT1](../universal-keller-structure/PROOF.md), giving the stated
+generic degree and groups.
+
 ## Verification and dimensional scope
 
 The [exact checker](verify_fixed_keller_finite_etale_family.py) uses a
@@ -221,8 +298,13 @@ input formulas, compiler and imported proof sources. These finite
 controls supplement the uniform written argument; no external review or
 formal verification is claimed.
 
-The dimension-four construction records the family parameter as an
-independent output. It does not remove that coordinate or establish a
-fixed A3 realization of arbitrary product families. The earlier
-three-dimensional degree-ten pencil construction uses its special
-coefficient dependence to eliminate this extra coordinate.
+The [critical-section checker](verify_critical_section_keller.py) checks
+the weighting and cubic pullback symbolically, verifies an exact
+quartic family over a good parameter, and controls the rank-256 formal
+resolvent multiplicities. Replay from the repository root with
+`.venv/bin/python research/jacobian/monodromy-theory/verify_critical_section_keller.py`.
+
+The dimension-four construction works for an arbitrary rational finite
+étale family. The dimension-three proof uses the rational critical
+specialization of its supplied monogenic presentation. Rational
+critical specializations of arbitrary families remain a separate question.

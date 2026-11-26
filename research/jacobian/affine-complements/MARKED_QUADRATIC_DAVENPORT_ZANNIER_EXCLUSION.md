@@ -28,7 +28,7 @@ terms of \(E=Q^{r_0}-\lambda P^{s_0}\). Then
 \]
 
 In particular, \((r,s)=(8,12)\) gives \(\deg_w(Q^2-\lambda P^3)\ge6\).
-These are degrees in \(w\) over \(K\). If \(m=2\) and both restrictions
+These are degrees in \(w\) over \(K\). If both restrictions
 of \(P,Q\) to the central line \(u=w=0\) are nonzero polynomials in
 \(z\), then the stronger bound
 
@@ -187,7 +187,7 @@ Put \(k=\nu(h)\). We use all three possible signs of \(k\).
 This proves (2) using the actual two marked arcs and the full
 Jacobian determinant.
 
-## 4. Excess one at a double zero of \(M\)
+## 4. Excess one at a marked zero of \(M\)
 
 Assume both central restrictions are nonzero. Put \(a=r_0\),
 \(b=s_0\) and suppose \(\Delta=1\). Write
@@ -294,6 +294,66 @@ would make this differential a constant multiple of the exact
 differential \(dp\), whose Laurent expansion has zero residue.
 This excludes \(\Delta=1\) and proves (2a).
 
+### The central first jet excludes every marked order
+
+For \(m\ge 2\) put \(p_1=P_1(0,z)\), \(q_1=Q_1(0,z)\),
+\(\sigma=\Sigma(0)\), and \(\kappa=(MA)(0)\).
+Use the normal parameter \(w\) from (9). Reduction modulo \(w^3\)
+in the actual marked chart gives
+\[
+ MW=2 w W_0+2 w^2 W_1+O(w^3),
+ \qquad
+ \begin{split}
+ W_0&=a p_0q_0'-b p_0'q_0,\\
+ W_1&=a(p_1q_0'+p_0q_1')-b(p_1'q_0+p_0'q_1).
+ \end{split}
+\]
+In this expansion the derivatives are in \(z\). The terms from
+\(M\partial_w|_z\) have order at least \(2m\) in \(w\), and
+\(u=w^2/\sigma^2+O(w^4)\) in all even coefficients. Since
+\(MW=(MA)(w-\theta)\) and \(\theta=\theta_1 u+O(u^2)\)
+by (11), comparison gives
+\[
+ W_0=\kappa/2,\qquad 2W_1=-\kappa\theta_1/\sigma^2.
+\]
+Both \(W_0\) and \(W_1\) are constant, and \(W_0\ne0\).
+
+Set \(D_0=a p_0q_1-bp_1q_0\).
+The derivative of \(D_0\) and the first-jet identity (9) give
+\[
+ D_0'=W_1-(a+b)/\sigma^2,\qquad
+ p_1W_0-p_0'D_0=a p_0/\sigma^2.
+\]
+Thus \(D_0\) has degree at most one. Since \(r\) is even and
+\(p_0\) has degree \(r/2\), the odd part of the regular representative
+has \(\deg_z p_1\le r/2-1\). Comparing the coefficient of degree
+\(r/2\) in the second equation forces \(D_0'=-2/(d\sigma^2)\).
+It follows that
+\[
+             \kappa r\theta_1=-2a(r+s-2).                     \tag{13}
+\]
+
+Write \(R_{r-1}(u)=[w^{r-1}]P/[w^r]P\) in the generic ruling
+coordinate. The odd polynomial in the regular representative
+has degree at most \(r/2-1\) in \(z\) and the highest even coefficient
+is a unit at zero. It follows directly by substituting
+\(z=(w^2-u\Sigma^2)/M\) that \(R_{r-1}=O(u^m)\).
+In the normalized coordinate \(x=\sqrt A(w-\theta)\) used in (12),
+the coefficient \(p\) satisfies \(p/\sqrt A=B\) for
+\(B=r\theta+R_{r-1}=r\theta_1u+O(u^2)\). Dividing (12) by
+\(\sqrt A\) gives an identity over \(K\),
+\[
+ B'+\frac{A'}{2A}B=-\frac{a(r+s-1)}{MA}.
+\]
+At zero, \(A'/A=-m/u+O(1)\) by (11). Taking the constant term
+therefore gives
+\[
+              \kappa r\theta_1(1-m/2)=-a(r+s-1).
+\]
+Together with (13) this forces \((r+s-2)(2-m)=r+s-1\),
+which is impossible for \(m\ge2\). This proves (2a) at every
+marked order in the stated central-restriction class.
+
 ## 5. Branch data and monodromy for excess one
 
 Define \(f=Q^{r_0}/(\lambda P^{s_0})\). Over an algebraic closure of
@@ -377,13 +437,13 @@ the edges of a graph whose connected components are blocks.
 Primitivity makes the graph connected, and its transpositions
 generate \(S_{24}\).
 
-For \(m>2\) with nonzero central restrictions, (12) still imposes
-exactness and excludes any case in which the differential has a
-nonzero residue. The constant bracket in (10) also makes
+For a hypothetical excess-one pair with both central restrictions
+nonzero, the constant bracket in (10) makes
 \(q_0^a\) and \(\lambda p_0^b\) a central Davenport–Zannier pair.
 They have the same leading coefficient by the leading relation
 in the generic ruling, and their difference has extremal degree
 by (3) in the variable \(z\). At \((r,s)=(8,12)\), their ratio
 defines a degree-12 cover with partitions \(2^6,3^4,(9,1^3)\).
-The higher-order cases that pass these tests and the larger
-excesses remain open here.
+The central first jet excludes this excess-one case at every marked
+order. Larger excesses and degenerations where a central restriction
+vanishes need separate treatment.

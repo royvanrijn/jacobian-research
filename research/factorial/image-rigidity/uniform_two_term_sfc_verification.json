@@ -52,7 +52,7 @@
       "ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7",
       "PRIME_POWER_TWO_TERM_SFC.tex": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
       "QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex": "af0cda81c31a095f6dae9dcde1dc7998684968207aaa644713fc9a28dfce4025",
-      "all_exponent_squarefree_verification.json": "f6772435458a75069a2346d66dbd754d6f8f9c1ff5f557b8420f5f6eb7d0dece"
+      "all_exponent_squarefree_verification.json": "75553d9802a5b6c942b69591a4914daa04a749b991235cae9dec79f06d229ca2"
     },
     "scope": "Current internal finite controls and declared input identities. Written universal proofs and imported analytic statements remain separate; this is not independent mathematical review."
   }
