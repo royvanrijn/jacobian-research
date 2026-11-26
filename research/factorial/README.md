@@ -687,6 +687,11 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | A scale-invariant common-factor sieve at physical diffuse contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_PROJECTIVE_FACTOR_SIEVE.md) |
 | Common valuation slope removal for arbitrary retained factorial rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RETAINED_COMMON_SLOPE_BUDGET.md) |
 | Exact cyclic discrepancy after removing retained common valuation slopes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RETAINED_CYCLIC_DISCREPANCY.md) |
+| Exact diffuse exclusion from affine factorial divisor rank | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AFFINE_DIVISOR_RANK_DIFFUSE_EXCLUSION.md) |
+| Depth-weighted projective restrictions from binomial Newton faces | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DEEP_BINOMIAL_PROJECTIVE_QUOTIENTS.md) |
+| Uniform native-prime angular separation in growing mixed profile boxes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_NATIVE_PRIME_GROWING_PROFILES.md) |
+| Short resultant bounds for projective binomial primes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PROJECTIVE_BINOMIAL_PRIME_RESULTANTS.md) |
+| Ordinary reflected row unfolding of multiple interior Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MULTIPLE_ROOT_INTERIOR_HEAT_UNFOLDING.md) |
 
 **Computed obligations:** 48 unresolved; 26 resolved within their exact scope.
 

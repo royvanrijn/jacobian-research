@@ -129,3 +129,60 @@ If the binomial condition supplies the finer information
 torsion alternative the same bounds hold with \(2g\) replaced
 by \(g\). In particular no separability hypothesis on the
 binomial or projective reductions is needed in (1).
+
+## A prime-power bound at a deep uniform face
+
+Fix an integer \(\ell\ge1\). Suppose at a prime \(p\), all roots
+of \(H\) have the same valuation \(s\), and a parent polynomial
+has a [binomial face at \(s\)](MULTIVARIATE_DEEP_BINOMIAL_PROJECTIVE_QUOTIENTS.md#face-depth-and-the-all-degree-inequality)
+of width \(w\mid\ell\) and depth \(\delta_p>0\). For every root
+\(\alpha_i\), the face equation gives
+\(\alpha_i^w/a=1+O_p(p^{\delta_p})\) for the same nonzero
+face constant \(a\), where the error denotes valuation at
+least \(\delta_p\). Write \(A_i=\alpha_i^w/a\). The closure
+of \(1+\{x:v_p(x)\ge\delta_p\}\) under multiplication and
+division gives
+\[
+    \beta_i^w=\frac{A_i^d}{\prod_{h=1}^d A_h}
+                                  =1+O_p(p^{\delta_p}).
+\]
+Then \(\beta_i^\ell-1\) has valuation at least \(\delta_p\)
+by the integral binomial expansion. This uses the same face
+constant across all roots at \(p\).
+
+Let \(U_\ell=\operatorname{Res}(B_0,Y^\ell-1)\) and let
+\(\mathcal P_\ell\) be any set of eligible primes with these
+depths. Either \(B_0\mid Y^\ell-1\) or the rational nonzero
+\(U_\ell\) satisfies
+\[
+            v_p(U_\ell)\ge\lceil e\delta_p\rceil,
+                \qquad p\in\mathcal P_\ell .
+\]
+Since \(L_0\) is a unit at these primes and \(L_0^\ell U_\ell\)
+is an integer, the bound
+\[
+       \sum_{p\in\mathcal P_\ell}\frac{\lceil e\delta_p\rceil}{e}
+                    \log p
+             \le \frac{\ell}{d}\log L_H+\log(1+R^\ell)           \tag{5}
+\]
+follows from the product over the \(e\) distinct projective
+roots. The discriminant is unnecessary for this prime-power
+bound, including in inseparable residue characteristic.
+The deeper quotient test above also applies with several
+different common-factor valuations at the same prime.
+
+Near a fixed positive diffuse reference contact, if the
+\(d\) projective roots counted with multiplicity include
+\(d_*\) limiting \(\ell\)-torsion values, the left side of (5)
+can be increased by
+\(\frac{d_*}{d}\gamma\log(1/\eta)\), with an adjusted bounded
+constant on the right. Here \(\gamma\) is the projective
+sieve's effective root-matching exponent. To see this in
+the non-torsion alternative, the distinct actual roots
+occur with the common multiplicity \(r=d/e\).
+For sufficiently small \(\eta\), equal actual roots must
+be matched within the same reference cluster. Exactly
+\(d_*/r\) of the distinct roots therefore contribute factors
+\(\beta_i^\ell-1=O(\eta^\gamma)\) to \(U_\ell\).
+The remaining factors stay bounded. This gives the
+stated strengthened Archimedean estimate.

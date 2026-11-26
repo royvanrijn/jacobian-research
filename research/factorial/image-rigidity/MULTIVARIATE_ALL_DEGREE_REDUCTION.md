@@ -712,6 +712,11 @@ excludes further exact ordinary tails at saturated-bias
 contacts and reduces boundary contacts to finite interior
 ones under the specified ordinary-row or angular and radial
 response tests.
+The [multiple-root unfolding](MULTIVARIATE_MULTIPLE_ROOT_INTERIOR_HEAT_UNFOLDING.md)
+uses exact reflected ordinary rows to compare local Hermite
+and quartic heat polynomials. It reduces the stated multiple
+interior contacts of countable cores to finite ordinary
+cores with simple transverse interior contacts.
 
 The [prime-height theorem](MULTIVARIATE_DIFFUSE_CLOCK_PRIME_HEIGHT.md)
 uses the angular and physical resultants in the same rational
@@ -737,6 +742,11 @@ charges the full prime-power depth of binomial Newton faces
 at several shared valuations simultaneously. Its rational
 invariant distinguishes actual torsion ratios from those
 that only approach a torsion value at a diffuse contact.
+For irreducible common factors the
+[short resultant bound](MULTIVARIATE_PROJECTIVE_BINOMIAL_PRIME_RESULTANTS.md)
+uses the distinct projective conjugates and their discriminant
+to improve the moving-prime product bound. The deep uniform
+case admits a single resultant with a prime-power bound.
 
 The [uniform bias theorem](MULTIVARIATE_UNIFORM_DIFFUSE_BIAS_SEGMENTS.md)
 allows one chosen signed-drift intercept to work throughout a

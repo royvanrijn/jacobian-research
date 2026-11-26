@@ -14361,6 +14361,66 @@ Tracked obligations from the catalogue:
 
 **Current blockers:** none in declared routes.
 
+### FACTORIAL-MULTIVARIATE-AFFINE-DIVISOR-RANK-DIFFUSE-EXCLUSION
+
+[Exact diffuse exclusion from affine factorial divisor rank](factorial/image-rigidity/MULTIVARIATE_AFFINE_DIVISOR_RANK_DIFFUSE_EXCLUSION.md)
+
+**Exact scope:** A finite formal-factor rank condition, or a proper Laurent projection on the divisor torus, excludes every positive Gaussian contact of a signed-balanced repeated affine template by exact factorial elimination. It allows multiple roots and nonisolated first-limiting directions. An explicit four-type unit-gap family defeating the single-mark test is closed in all degrees.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-DEEP-BINOMIAL-PROJECTIVE-QUOTIENTS
+
+[Depth-weighted projective restrictions from binomial Newton faces](factorial/image-rigidity/MULTIVARIATE_DEEP_BINOMIAL_PROJECTIVE_QUOTIENTS.md)
+
+**Exact scope:** For every possible common-factor degree, binomial Newton face depths across any shared valuation groups force divisibility in an exact scale-invariant quotient invariant. Its denominator is exactly determined by valuation dispersion. Near positive diffuse contacts limiting torsion ratios that are not attained impose additional explicit logarithmic denominator growth.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-NATIVE-PRIME-GROWING-PROFILES
+
+[Uniform native-prime angular separation in growing mixed profile boxes](factorial/image-rigidity/MULTIVARIATE_NATIVE_PRIME_GROWING_PROFILES.md)
+
+**Exact scope:** Independent bases in [H,2H] yield all-degree angular separation with proportion 1-O((log H)^-1/8) uniformly in orientations, gaps and dimension under the total gap and maximum-gap bounds. This includes arbitrary gap arrays of squared-gap sum O(H), with further retained rows allowed within their specified logarithmic weight.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-PROJECTIVE-BINOMIAL-PRIME-RESULTANTS
+
+[Short resultant bounds for projective binomial primes](factorial/image-rigidity/MULTIVARIATE_PROJECTIVE_BINOMIAL_PRIME_RESULTANTS.md)
+
+**Exact scope:** For an irreducible common factor of degree d, a distinct-root projective resultant and discriminant jointly sharpen the product bound for moving binomial primes, even under inseparable reduction. Deep uniform binomial faces give an additional prime-power estimate using a single resultant, with stronger bounds at limiting torsion shapes.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-MULTIPLE-ROOT-INTERIOR-HEAT-UNFOLDING
+
+[Ordinary reflected row unfolding of multiple interior Gaussian contacts](factorial/image-rigidity/MULTIVARIATE_MULTIPLE_ROOT_INTERIOR_HEAT_UNFOLDING.md)
+
+**Exact scope:** A reflected ordinary-row compensation produces exact local heat limits at multiple compactified roots. This reduces the listed double and triple contacts, equal multiplicities four and five, sufficiently large orders at fixed equal multiplicity, and all branches passing the mixed-rank test to simple transverse interior contacts of finite ordinary cores.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -35412,6 +35472,188 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
+### ARITH-ABC-AFFORDABLE-FULL-DIVISOR-ABSOLUTE-RESIDUE-TARGET-COUNT
+
+[One affordable full divisor bounds the popular target dictionary](arithmetic/ABC_ABSOLUTE_RESIDUE_TARGET_TAILS.md)
+
+**Exact scope:** AR1–AR2. Fix a most frequent marked divisor on each complete target. In its class count distinct opposite witnesses and apply the degree-one absolute residue estimate. Target exponent b+(r_C+max(0,alpha-(u-b)_+))/2 before allowances. All three labels are original complete values.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-NONATOMIC-TARGET-ABSOLUTE-RESIDUE-DICTIONARY-COUNT
+
+[A target's nonatomic mass bounds the charge for its absolute residues](arithmetic/ABC_ABSOLUTE_RESIDUE_TARGET_TAILS.md)
+
+**Exact scope:** AR3. Fix the target factors outside finitely many narrow atomic windows. Release the retained roots and short correction modulo one full component. Combine with AR1 for joint lists; at balance alpha+d_C>=1/3 if the mark can be arbitrarily cheap.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-SHARED-WITNESS-DICTIONARY-CRT-MOMENT
+
+[Joint residue and height cells reduce repeated CRT witness charges](arithmetic/ABC_SHARED_CRT_WITNESS_DICTIONARIES.md)
+
+**Exact scope:** SW1–SW3. All marks lie on one letter, possibly on different witnesses. The fixed full divisor and width of the marked letter place all opposite witnesses for a target in one shared cell. Retain the stated CRT extraction, overlap and numerical weight conditions. The original radical caps and least-repair eligibility may be imposed.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-SHARED-WITNESS-DICTIONARY-CRT-OBSTRUCTION
+
+[A common witness dictionary alone permits the full CRT residue product](arithmetic/ABC_SHARED_CRT_WITNESS_DICTIONARIES.md)
+
+**Exact scope:** The explicit primitive construction attains the separate residue choices while using one shared witness dictionary. It lacks the small original radical caps.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-BALANCED-SATURATION-COMPLETE-DICTIONARY-EXPONENT-EQUALITY
+
+[All three complete dictionary exponents agree at balanced saturation](arithmetic/ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md)
+
+**Exact scope:** RB3 and RB8. Apply the absolute residue bound in both directions of each cheap signed full lock after regularizing all three complete degrees. At least two cheap marked roles are available on every balanced profile. A fixed spread of dictionary exponents gives a quantitative power saving when the lock and cap losses are sufficiently small.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-BALANCED-SATURATION-DENSE-ACTUAL-RESIDUE-CELLS
+
+[Typical balanced residue cells have full pair count at their local scale](arithmetic/ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md)
+
+**Exact scope:** RB4. On a cheap fixed-divisor chart of a regular balanced saturator, most rows lie in cells with free dictionary exponents u,u and actual row exponent 2u, where u is the common complete fibre exponent. The occupied typical cells have count exponent 1/3-2u.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-BALANCED-SATURATION-RESIDUE-REGISTER-ENTROPY
+
+[The shared residue registers obey conditional entropy identities](arithmetic/ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md)
+
+**Exact scope:** RB5–RB7. On cheap charts the free letters have vanishing normalized conditional mutual information in a shared residue. Refining same-letter registers costs vanishing normalized entropy. When all three cheap marks are available the three conditional pair informations vanish; their pairwise mutual informations agree.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-BALANCED-CELL-SHARED-CRT-LOCAL-PRICE
+
+[Balanced residue cells sharpen CRT witness charges on retained packet sectors](arithmetic/ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md)
+
+**Exact scope:** After cell pruning and reimposing the packet hypotheses, a repeated charge is at most alpha+(ell-1)u before losses. A strict gap needs sum(min(u,t_i)+gamma_i)<u and the numerical modulus margin. This leaves the zero multiplicity endpoint and profiles with insufficient numerical weight.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-TWO-FOLD-COLOURED-COLLISION-WITH-ONE-COMMON-TARGET
+
+[One same-target pair gives almost diagonal coloured twofold energy](arithmetic/ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md)
+
+**Exact scope:** CE1. Two complementary modular records recover exact products. One anchor and a common target restrict both opposite denominators to a polynomial-height support pool, then split factorization gives subpower completion. No separate cap on the opposite targets is used.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-COMMON-TARGET-THREE-FOLD-COLOURED-ENERGY-OUTSIDE-SAVING
+
+[Overlap of free prime support saves on common-target threefold energy](arithmetic/ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md)
+
+**Exact scope:** CE2. In a nontrivial threefold equality, transferred free support identifies one positive-negative pair with normalized overlap at least sigma. Charge the partner with the reduced outside cap and complete the residual three slots. At balance, saves below the diagonal count at fixed multiplicity exponent u>5/36.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-EXACT-POWER-TARGET-ALL-TALL-COLOURED-THREE-FOLD-COLLISION
+
+[Arbitrarily full targets admit all-tall coloured threefold collisions](arithmetic/ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md)
+
+**Exact scope:** CE3. Infinitely many exact-power targets have nontrivial distinct primitive six-row full valuation-mask collisions. Within either triple the free supports of separate rows are disjoint outside a fixed finite pool. The original free radical caps are omitted.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-POSITIVE-COMPLETE-PRODUCT-IMAGE-ALL-PRIME-POWER-DEPTHS
+
+[Three or more complete products fill the natural large-prime residue image](arithmetic/ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md)
+
+**Exact scope:** CR1. At all sufficiently large primes and all depths, the joint image of the two complementary products is the natural range, with nonunits allowed off the target and the forced signed congruence on target primes. Over any composite modulus the image contains a fixed positive fraction of that range.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-POSITIVE-COMPLETE-PRODUCT-PRIMITIVE-INTERVAL-LIFTS
+
+[Local complete-product images lift to primitive rows in prescribed intervals](arithmetic/ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md)
+
+**Exact scope:** CR2. Intervals of length at least Q C^eta allow distinct coprime positive witnesses for every occupied residue pair by counting coprime lifts in each arithmetic progression. No free-letter radical restrictions are imposed.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -35421,6 +35663,7 @@ Tracked obligations from the catalogue:
 | ARITH-ABC-ADDITIVE-GRAPH-TWO-PART-DIFFERENCE-CODEGREE | claim | proved / partial | OG2. If D_A is the maximal nonzero difference multiplicity, then E<=min(\|B\|+\|C\|sqrt(\|B\|D_A), \|C\|+\|B\|sqrt(\|C\|D_A)). A pair of complete differences determines the shared vertex. | [arithmetic/ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md](arithmetic/ABC_ONE_POWER_GRID_ADDITIVE_GRAPHS.md): Exact additive graphs and asymmetric dictionaries |
 | ARITH-ABC-BRANCH-CYCLE-PRIME-DIVISIBILITY-MASS-INDEX-INEQUALITY | claim | proved / partial | DI1–2. For any cycle lengths, the weighted index loss is at most the largest prime-divisibility mass times the generic branch index. The Artin version uses the orders of individual eigenvalues. | [arithmetic/ABC_THREE_POINT_DISCRIMINANT_COSTS.md](arithmetic/ABC_THREE_POINT_DISCRIMINANT_COSTS.md): An inequality for every branch permutation |
 | ARITH-ABC-CARELLA-V3-EULER-FACTOR-ERROR | claim | proved / partial | The factor in Carella arXiv:2608.16764v3 equation (4.35) has coefficient z(z+1)/2 at p^(-2s), whereas the claimed z^omega Dirichlet series has coefficient z. The identity fails for z other than 0 or 1. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Exceptional-set estimates and dyadic coordinates, Carella v3 |
+| ARITH-ABC-COLOURED-THREE-FOLD-LINEAR-TRADE-CONSTRUCTION | claim | proved / partial | For the six displayed linear forms, equal targets and the two exact products persist identically; each side has disjoint off-pool supports. A fixed arithmetic progression contains arbitrarily high perfect powers. | [arithmetic/ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md](arithmetic/ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md): An all-tall coloured threefold collision |
 | ARITH-ABC-COMMON-TARGET-DIVISOR-RECOVERY-FROM-SIGNED-COMPLEMENTARY-WORD | claim | proved / partial | At nonzero sum of weights use the gcd of word numerators or denominators. At zero sum use the numerator of the difference. For only one negative weight an equal pair of products is then an integer and weighted Holder forces every row equal. With positive weight sum and one negative weight the denominator gcd is exactly the target to that power. | [arithmetic/ABC_SAME_TARGET_COMPLEMENTARY_PRODUCTS.md](arithmetic/ABC_SAME_TARGET_COMPLEMENTARY_PRODUCTS.md): Target recovery for arbitrary mixed three-slot weights |
 | ARITH-ABC-COMMON-TARGET-LOCAL-PRIME-POWER-COMPLETE-PRODUCT-RANGE | claim | proved / partial | For two slots and a prime-power modulus dividing a power of the target, use product and sum of the unit inputs. Distinct odd-prime roots Hensel lift, and U=3,S=4 modulo 8 give the even-prime range by square-root lifting. | [arithmetic/ABC_SAME_TARGET_COMPLEMENTARY_PRODUCTS.md](arithmetic/ABC_SAME_TARGET_COMPLEMENTARY_PRODUCTS.md): Local range of positive complete products |
 | ARITH-ABC-COMPLETE-ADDITIVE-DIVISOR-RECORD-COUNT | claim | proved / partial | Let N_W and K_W count complete values and divisor records in each part, H bound their magnitudes, and F lower-bound the product of the three full locked divisors. The edge count is at most sqrt((1+2H/F) times the product of the N_W and K_W). This is a finite bound for primitive additive triples and uses two Cauchy–Schwarz inequalities after grouping complementary residues. | [arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md](arithmetic/ABC_DIFFUSE_FACTOR_GRAPH.md): Three-letter divisor packing |
@@ -35461,6 +35704,7 @@ Tracked obligations from the catalogue:
 | ARITH-ABC-RELATIVE-INTERVAL-BOUNDARY-FACTOR-UNIQUENESS | claim | proved / partial | Greedy descending valuations at numerical cutoff n X^(-tau+xi) select a prefix and a crossing prime power p^e. The remaining cofactor is at most X^(tau-xi), so relative interval length X^(-tau) determines it given p and the recorded prefix and e. Conversely that length determines p given the cofactor when p<=X^(AL), AL<tau. | [arithmetic/ABC_SHORT_INTERVAL_RADICAL_FILTER.md](arithmetic/ABC_SHORT_INTERVAL_RADICAL_FILTER.md): An elementary bound in relative intervals |
 | ARITH-ABC-RESIDUE-DETERMINANT-OUTSIDE-VALUATION-BREAKPOINTS | claim | proved / partial | A nonzero auxiliary F(z,v) of wider degree M leaves at most binom(M+1,2) exceptional original valuation indices for each nonzero grid multiplier and sign, away from primes of its nonzero coefficients and fixed overlaps. One extremal narrow degree per wider degree determines the competing affine valuations. On complete outside labels the coefficient-supported prime choices are subpower and a bounded number of outside coordinates costs arbitrarily little. | [arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md](arithmetic/ABC_QUANTITATIVE_DEGREE_WINDOWS.md): Valuation breakpoints of the auxiliary equation |
 | ARITH-ABC-RICH-SHIFTS-ACTUAL-ENDPOINT-PAIR-PROJECTION | claim | proved / partial | SP1. Project each rich common-target cherry to one shifted endpoint pair on a fixed varied role. One selected pair has at most the opposite dictionary size in preimages. The new equation has the exact shift as its third part. | [arithmetic/ABC_RICH_SHIFT_POWER_CARRIERS.md](arithmetic/ABC_RICH_SHIFT_POWER_CARRIERS.md): From cherries to a shift graph |
+| ARITH-ABC-SHARED-WITNESS-INDEPENDENT-RESIDUES-CRT-CONSTRUCTION | claim | proved / partial | A shared dictionary supplies independent choices in a short relative height interval through coprime prime-power CRT and unit lifts. No small radical caps are imposed. | [arithmetic/ABC_SHARED_CRT_WITNESS_DICTIONARIES.md](arithmetic/ABC_SHARED_CRT_WITNESS_DICTIONARIES.md): A primitive example with independent residue choices |
 | ARITH-ABC-SIGNED-EXACT-WORD-QUADRATIC-MAP-HEIGHT-LOWER-BOUND | claim | proved / partial | For positive u,v with u+v!=1 the primitive degree-two quotient sending x to z has H(z) >> H(x)^2 max(H(u),H(v))^(-16). Use the coprime coordinate charts after clearing denominators and bound the common divisor by the product of their two nonzero resultants. | [arithmetic/ABC_FINITE_PROBE_AND_SIGNED_COMPLEMENTARY_COMPLETION.md](arithmetic/ABC_FINITE_PROBE_AND_SIGNED_COMPLEMENTARY_COMPLETION.md): Height obstruction and the signed rational-curve example |
 | ARITH-ABC-SIGNED-RADIX-POWER-SUM-ENCODING | claim | proved / partial | With digit base greater than 2H q, the first 2H finite-field power sums as integer digits recover every multiset of at most 2H field elements in characteristic q>2H. In disjoint signed radix positions the absence of carries forces equality position by position in each sufficiently large modulus. | [arithmetic/ABC_THREE_RESIDUE_DICTIONARY_MOMENT_OBSTRUCTION.md](arithmetic/ABC_THREE_RESIDUE_DICTIONARY_MOMENT_OBSTRUCTION.md): A residue model attaining the square-root count |
 | ARITH-ABC-SIX-INDEX-PROJECTION-OBSTRUCTION | claim | proved / partial | At budget 3/r for each integer r>=7, the BBLT Proposition 6.1 projected rows admit totals 1/r on each side, all first-six coordinates zero, and D=2/r. This is a feasible exponent vector in that program. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): The limit of the six-index projection |
@@ -35634,6 +35878,7 @@ Tracked obligations from the catalogue:
 | EXT-ABC-FIXED-DEGREE-WEIGHTED-POWER-DIFFERENCE | claim | proved / partial | Zeng's reproduced Lemma 3.1 bounds positive solutions of a U^e−b V^e=m≠0 by X^epsilon for fixed e and polynomial heights, uniformly in a,b,m and without root coprimality. The argument uses an integral norm factor, ideal divisors and uniform bounded-degree unit separation. | [arithmetic/sources/zeng-abc-modulus-locking-2611.00621v1.pdf](arithmetic/sources/zeng-abc-modulus-locking-2611.00621v1.pdf): Section 3.1, Lemma 3.1 |
 | EXT-ABC-GOWERS-ADDITIVE-ENERGY-INVERSE | claim | proved / partial | For a finite set S in Z^n with additive energy at least eta\|S\|^3, eta>0 fixed, there is U contained in S with \|U\|>=c_eta\|S\| and \|U-U\|<=C_eta\|S\|. | [arithmetic/sources/gowers-new-proof-szemeredi-2001.pdf](arithmetic/sources/gowers-new-proof-szemeredi-2001.pdf): Proposition 7.3 |
 | EXT-ABC-GREEN-RUZSA-FREIMAN | claim | proved / partial | By Green–Ruzsa Theorem 1.1 a finite set in an abelian group with \|A+A\|<=K\|A\| lies in a coset progression of rank and size factor bounded in K. In the integers the finite subgroup is trivial, and properness identifies cardinality with coefficient-box volume. | [arithmetic/sources/green-ruzsa-freiman-math0505198v2.pdf](arithmetic/sources/green-ruzsa-freiman-math0505198v2.pdf): Theorem 1.1, specialized to the torsion-free group Z |
+| EXT-ABC-HASSE-WEIL-SMOOTH-CURVE-POINT-BOUND | claim | proved / partial | Over a field of q elements a curve of genus g has point count differing from q+1 by at most 2g sqrt(q). Applied to the smooth normalization of a bounded-degree plane component. | [arithmetic/ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md](arithmetic/ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md): Primes away from the target |
 | EXT-ABC-HEATH-BROWN-UNIFORM-SKEW-CURVE-HEIGHT | claim | proved / partial | For an irreducible curve of degree d in projective three-space, primitive integral coordinate vectors of sup norm <=B are O_(d,epsilon)(B^(2/d+epsilon)), uniformly in the curve. | [arithmetic/sources/heath-brown-curves-math0405392v1.pdf](arithmetic/sources/heath-brown-curves-math0405392v1.pdf): Theorem 5 |
 | EXT-ABC-HOEFFDING-INDEPENDENT-BOUNDED-SUMS | claim | proved / partial | Hoeffding, Theorem 2. A sum of k independent variables of width at most W has tail at distance t from its mean at most 2 exp(-2t^2/(kW^2)). | [arithmetic/ABC_AFFORDABLE_FIBRE_PROJECTION_ENTROPY.md](arithmetic/ABC_AFFORDABLE_FIBRE_PROJECTION_ENTROPY.md): Weighted sums and projection entropy |
 | EXT-ABC-KANE-LARGE-RADICAL-COUNT | claim | proved / partial | Kane's Theorems 1–2 give the lower and upper box exponents for independently bounded radicals. In the aggregate, N_lambda(X)=X^(lambda-1+o(1)) for fixed 2<=lambda<=3. | [arithmetic/sources/kane-abc-restricted-radicals-2015.pdf](arithmetic/sources/kane-abc-restricted-radicals-2015.pdf): Theorems 1–2, applied with logarithmic radical boxes and arbitrarily small exponent slack |
@@ -37454,7 +37699,7 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-RESIDUAL** (mathematical; open): For exactly the same shaped graph/coefficient family as(H), bound cycles by n^(26/51+epsilon) after removing the proved low-lcm, large shared-neighbor root-gcd, small singular coherent-gcd and both low product-ratio sectors. This is equivalent to(H), still OPEN, and separate from the older balanced T^2 residual.
 - **TFC-OPEN-ACTUAL-MIDDLE-CARRIER-SUPPORT-CAPACITY-SAVING** (mathematical; open): Prove Equation15 uniformly every N for at least one fixed0<eta<=1/28, with exact rho_eta,H,V and actual support/fiber-majorant capacity Eq13. This positive-saving estimate is NOT established by the partition, numerical carrier scales, current r3 bound, or any conditional proposition.
 - **TFC-OPEN-UNIFORM-THREE-FULL-POSITIVE-SAVING** (mathematical; proved / discharged): There exists ONE fixed eta in(0,1/28] such that for EVERY positive target N and every epsilon>0, r3(N)<<_epsilon N^(1/4-eta+epsilon). The coherent-cycle theorem proves this statement with eta=1/268. The actual carrier support-capacity estimate remains a separate OPEN sufficient condition, and no converse from this representation saving to that capacity estimate is asserted.
-- **GAP-ARITH-ABC-STRICT-SMALL-BUDGET-COEFFICIENT** (mathematical; open): Prove an absolute delta>0 and N_lambda(X) << X^((1/3-delta)lambda+epsilon) for all sufficiently small fixed positive lambda. The equivalent minimally repaired primitive quotient count remains open at arbitrary balanced profiles. A transfer must force a bounded-radical imbalanced output, a sufficiently low affine power defect, or another restriction using all three original radical caps. One sufficient input is a uniform scalar same-target product-image loss on the full multiplicity mesh.
+- **GAP-ARITH-ABC-STRICT-SMALL-BUDGET-COEFFICIENT** (mathematical; open): Prove an absolute delta>0 and N_lambda(X) << X^((1/3-delta)lambda+epsilon) for all sufficiently small fixed positive lambda. The equivalent minimally repaired primitive quotient count remains open at arbitrary balanced profiles. A transfer must force a bounded-radical imbalanced output, a sufficiently low affine power defect, or another restriction using all three original radical caps. One sufficient input is a uniform scalar same-target product-image loss on the full multiplicity mesh. At balanced saturation all complete dictionary exponents coincide. Cheap full locks force almost every retained row into residue cells of exponent u on each free dictionary and 2u in actual rows. A uniform arithmetic saving on the residual cells, including the u=0 occurrence endpoint, is still required.
 
 Tracked obligations from the catalogue:
 

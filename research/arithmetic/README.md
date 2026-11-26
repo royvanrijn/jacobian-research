@@ -1249,6 +1249,19 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The conditional divisor count gives a strict same-target scalar image bound | Internal result | proved | [Source](ABC_TARGET_PACKET_CRT_MOMENTS.md) |
 | Exact-power targets alone permit large signed denominators at full radical scale | Internal result | proved | [Source](ABC_SAME_TARGET_GAUSSIAN_SIGNED_DENOMINATOR_OBSTRUCTION.md) |
 | The target CRT charge limits total packet radical mass below one sixth | Internal result | proved | [Source](ABC_TARGET_PACKET_CRT_MOMENTS.md) |
+| One affordable full divisor bounds the popular target dictionary | Internal result | proved | [Source](ABC_ABSOLUTE_RESIDUE_TARGET_TAILS.md) |
+| A target's nonatomic mass bounds the charge for its absolute residues | Internal result | proved | [Source](ABC_ABSOLUTE_RESIDUE_TARGET_TAILS.md) |
+| Joint residue and height cells reduce repeated CRT witness charges | Internal result | proved | [Source](ABC_SHARED_CRT_WITNESS_DICTIONARIES.md) |
+| A common witness dictionary alone permits the full CRT residue product | Internal result | proved | [Source](ABC_SHARED_CRT_WITNESS_DICTIONARIES.md) |
+| All three complete dictionary exponents agree at balanced saturation | Internal result | proved | [Source](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md) |
+| Typical balanced residue cells have full pair count at their local scale | Internal result | proved | [Source](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md) |
+| The shared residue registers obey conditional entropy identities | Internal result | proved | [Source](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md) |
+| Balanced residue cells sharpen CRT witness charges on retained packet sectors | Internal result | proved | [Source](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md) |
+| One same-target pair gives almost diagonal coloured twofold energy | Internal result | proved | [Source](ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md) |
+| Overlap of free prime support saves on common-target threefold energy | Internal result | proved | [Source](ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md) |
+| Arbitrarily full targets admit all-tall coloured threefold collisions | Internal result | proved | [Source](ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md) |
+| Three or more complete products fill the natural large-prime residue image | Internal result | proved | [Source](ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md) |
+| Local complete-product images lift to primitive rows in prescribed intervals | Internal result | proved | [Source](ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md) |
 
 **Computed obligations:** 108 unresolved; 19 resolved within their exact scope.
 

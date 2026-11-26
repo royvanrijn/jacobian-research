@@ -34,6 +34,9 @@ curvature cap is preserved eventually.
    \(m_n=m_N=m\) and \(n\ge n_0(m)\), the same conclusion holds for
    a choice of arbitrarily small \(w>0\). A finite one-variable root
    test below can also certify the reduction at smaller orders.
+4. For arbitrary multiplicities, the mixed-rank test below gives a
+   sufficient criterion using just the first real-rootedness parameters,
+   root ranks and Hermite rates of the two explicit heat polynomials.
 
 These are reductions of multiple contacts in the real compactified
 family to transverse contacts of finite ordinary cores. The resulting
@@ -182,9 +185,14 @@ For \(m\ge4\), there is a first value \(\ell_0>0\) at which all
 roots of \(Q_m\) are real. To see this, for large positive
 \(\ell\), dilate \(Y=\sqrt{2\ell}Z\) and use convergence to
 the ordinary probabilists' Hermite polynomial of degree \(m\).
-Its real roots are simple, so nearby real polynomials retain
-that property. The set of parameters with all roots real
-is closed and is stable under increasing \(\ell\) by the
+Its real roots are simple by Hermite orthogonality, so nearby
+real polynomials retain that property. The needed Hermite fact also
+follows directly by integrating its Rodrigues formula against every
+lower-degree polynomial and a positive Gaussian weight. A product
+over fewer than \(m\) real sign-changing roots would then have
+nonzero integral against the degree-\(m\) polynomial. The set of
+parameters with all roots real is closed and stable under increasing
+\(\ell\) by the
 backward heat flow. One can verify this stability for simple
 roots directly. They satisfy
 \(Y_i'=2\sum_{h\ne i}(Y_i-Y_h)^{-1}\), which is the gradient flow
@@ -309,6 +317,32 @@ there, since these ratios are
 quadratic roots to obtain the derivative inequality. The
 eventual sign is positive by (9), giving the claimed
 transverse crossing with no variation of \(w\).
+
+## Mixed ranks at unequal multiplicities
+
+The same limit (4) applies at every pair \((m_n,m_N)\). For either
+multiplicity let \(\ell_{0,j}\) be the first real-rootedness time of
+its polynomial (6), and choose a positive root rank \(R_j(\ell)\)
+above that time whenever such a rank exists. For \(m_j\ge4\) the
+existence and algebraicity of \(\ell_{0,j}\) were proved above.
+For \(m_j=2,3\) it equals zero. Let \(C_j>0\) be the Hermite
+rate of the chosen rank, \(R_j(\ell)\sim C_j\sqrt{\ell}\).
+
+At a given \(w\) in the slack interval use
+\[
+ x_0=\max\left(\ell_{0,n},
+                 \frac{\ell_{0,N}-\delta_w}{\sqrt D}\right),\qquad
+ f_\delta(x)=R_n(x)-D^{-3/4}R_N(\sqrt D\,x+\delta).
+\]
+If \(f_{\delta_w}(x_0+)\) and \(C_n-D^{-1/2}C_N\) have opposite
+strict signs, the reduction holds with some \(w\) arbitrarily close
+to the tested one. Both signs are algebraic tests for rational \(w\).
+Indeed the first sign gives a simple-branch interval endpoint above
+\(x_0\), and the asymptotic sign gives another one at large \(x\).
+The two endpoint signs persist on perturbing \(w\). The same analytic
+graph argument used for (9) supplies a transverse crossing, since
+both rank functions are nonconstant and the distinct rates preclude
+an identically zero phase difference.
 
 ## Physical attainment of each perturbed crossing
 
