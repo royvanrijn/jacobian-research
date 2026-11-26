@@ -180,3 +180,40 @@ Its linear coefficient is \(8p\mathcal A(H_i f^{7+kp})\)
 reduced modulo \(p\). These are unmarked measurements across
 the indicated deformations of \(f\). The four marked
 measurements in the proposition use a single phase.
+
+### Rigidity in the two marker directions
+
+**Corollary (two-marker rigidity at 229).**
+Under the hypotheses of the rank-two proposition, set
+\(g_{\boldsymbol\eta}=f+\eta_1H_1+\eta_2H_2\) and
+\[
+ M(\boldsymbol\eta)
+   =\begin{pmatrix}229\mathcal A(g_{\boldsymbol\eta}^{8})\\
+                    229\mathcal A(g_{\boldsymbol\eta}^{237})
+     \end{pmatrix}.
+\]
+Then
+\[
+ \det DM(0)
+   \equiv 8^2\cdot137\cdot\frac{2}{5\cdot167\cdot165}
+   \equiv26\pmod{229}.
+\]
+In particular \(M\) has rank two at the base phase in characteristic
+zero. If both moments vanish at the base phase, the common zero is
+isolated and nonsingular in this deformation plane.
+
+Differentiation multiplies the two marked residue rows by \(8\)
+and \(237\equiv8\), respectively. The first row of the marked
+matrix uses the first column of \(L\) divided by 5. The second
+row adds a multiple of that column to the second column
+multiplied by \(2/(167\cdot165)\), since \(P_0=-1\).
+Taking determinants proves the congruence. The Jacobian
+criterion at a zero of the two polynomial functions gives the
+characteristic-zero assertion.
+
+For a single marker \(H_i\), the eighth-moment residue is
+\(a_i\eta+d_i\eta^4\), with
+\(a_i=8L_{i1}/5\ne0\). This follows from the same height count used
+for interpolation. Its values at \(1\) and \(-1\) differ by
+\(2a_i\), so at least one of \(f+H_i,f-H_i\) has a nonzero eighth
+moment.

@@ -45,7 +45,9 @@ def check_two_dimensional_target():
     assert entries == [(148, 141), (16, 27)]
     (a, b), (c, d) = entries
     assert (a*d-b*c) % p == 137
-    assert (pow(167, -1, p)-pow(165, -1, p)) % p
+    pivot = 2 * pow(167*165, -1, p) % p
+    assert (8*237 * (a*d-b*c) * pow(5, -1, p) * pivot) % p == 26
+    assert all((16*first * pow(5, -1, p)) % p for first, _ in entries)
     marker_counts = []
     for count in range(9):
         top = 1296 - 152*count

@@ -39,6 +39,11 @@ give shorter exact replays in their stated finite ranges. In
 particular, for \(p\ge7\) coprimality of the two polynomials
 in the relevant zero-residue system over \(\mathbb F_p\)
 already excludes a four-zero block at that start.
+The finite first-position survivor at \(p=11\) is also
+covered by the prime-penultimate theorem at \(p=13\).
+The two finite survivors without that overlap, the windows
+\(18,\ldots,21\) and \(37,\ldots,40\), are excluded by
+the native first-digit calculations.
 
 The assertions can be applied over an algebraic \(p\)-adic
 closure. To use them in testing existence over any

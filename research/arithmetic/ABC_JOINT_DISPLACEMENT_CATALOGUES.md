@@ -327,6 +327,97 @@ at the default cap. An occurrence chart
 can have \(t=d\) and therefore no
 off-diagonal same-register pairs.
 
+### CF1 on projected deep registers
+
+**JD6.** Work in the original shell \(X/2<C\le X\), and impose
+\(\operatorname{rad}(T)\le n^{1/3+\kappa_1}\) on all three letters,
+where \(\theta_1,\delta_1,\kappa_1,L_1>0\) are the rank-one CF1
+constants. On a chart choose a complete role \(T\) and a subset \(I\)
+of the other roles' signed registers. Fixing these registers determines
+one residue of \(T\) modulo \(M_T=D_T\prod_{W\in I}D_W\), by JD3 and CRT.
+Let \(H_T=\max T-\min T\) on the chart, and suppose \(M_T\ge H_T X^{-\theta_1/2}\). On the
+cell \(T=T_0+M_T z\), all differences of the integer feature \(z\)
+have magnitude at most \(H_T/M_T\le X^{\theta_1/2}\). Thus CF1 counts
+\(O_{L,\varepsilon}(n^{1/3-\delta_1}X^\varepsilon)\) rows there, uniformly
+in the modulus and register choices. This proof uses only divisibility
+of the fixed pairwise coprime \(D_T\). It has no scaled fullness
+requirement.
+
+If the charts cost \(b_0\) and the joint support of the selected
+projection on each chart costs \(t_I\), the exponent is at most
+\(1/3-\delta_1+b_0+t_I\), with the usual height allowances. Use the best
+available \(T,I\) independently on each chart and include the bounded
+choices of these roles and subsets. In particular \(D\ge X/n^K\) for
+fixed \(K\) suffices for both foreign registers, for
+\(0<L<L_1\) with \(KL<\theta_1/2\). There is no cost for the own register
+since \(T=0\bmod D_T\).
+
+In the balanced regular dictionary setup with foreign single-register
+price \(s=2\alpha-1/3\), this prices the two registers at \(2s\), or at
+less if their actual joint projection is cheaper. The minimum
+\(\alpha=1/6,\theta=1/6\) left at equality in JD4 is therefore excluded
+on charts of negligible price. JD5 also excludes that limiting case
+through the joint register information bound. JD6 applies directly
+to the actual finite charts and can use the diameter of a shorter
+role. With a fixed margin the two-register
+version also excludes \(\alpha<1/6+(\delta_1-b_0)/4\) in the same
+depth range. If just one foreign register yields sufficient numerical
+depth, replace the divisor \(4\) in this condition by \(2\).
+[Rank-one small-feature count (CF1)](ABC_COMPLETE_LETTER_SMALL_FEATURES.md#a-strict-saving-for-small-affine-minors)
+
+### Additive structure of projected registers
+
+**JD7.** Fix \(B,K\ge1\). On the same kind of chart let \(\mathcal R_T\)
+be the actual residue set of \(T\bmod M_T\) in the selected projection.
+Suppose \(H_T/M_T\le n^B\), \(|\mathcal R_T|\le n^B\), and
+\[
+             |\mathcal R_T+\mathcal R_T|
+                       \le K|\mathcal R_T|\quad\text{in }\mathbb Z/M_T\mathbb Z.
+\]
+Then there exist \(\delta,\kappa,L_0>0\), depending only on \(B,K\), such
+that at every fixed \(L<L_0\) a chart satisfying the three original
+caps \(n^{1/3+\kappa}\) has count
+\(O_{B,K,L,\varepsilon}(n^{1/3-\delta}X^\varepsilon)\). No residue-support
+price is charged in this bound. Summing charts of price \(b_0\)
+gives a strict saving if \(b_0<\delta\) by a fixed margin.
+
+Translate \(T\) by its chart minimum; this translates the residue set and preserves doubling. Take the least nonnegative integer representatives of the translated set.
+Their ordinary sumset has size at most twice the modular sumset size,
+because every residue has at most two lifts in \([0,2M_T-2]\).
+The integer Freiman theorem places the representatives in a proper
+generalized arithmetic progression of rank at most \(r(2K)\) and size
+at most \(C(2K)|\mathcal R_T|\). Its integer coordinates can all be
+taken of size at most \(C(2K)n^B\), including in the singleton case.
+Append the quotient of the translated value minus its representative, divided by \(M_T\), as an extra
+coordinate, of size at most \(n^B\). Then \(T\) is one fixed integer
+affine function of these coordinates. Use CF1 with dimension
+\(R=r(2K)+1\); each maximal difference minor is
+\(O_{K,R}(n^{BR})\) by its determinant expansion. Choose \(L\) with
+\(BRL<\theta_R\) and \(L<L_R\). This proves the claim with \(\kappa_R\)
+and \(\delta_R\), even when many triples repeat the same residue.
+
+It also suffices that each of the foreign registers used has bounded
+doubling in its own cyclic group and size at most \(n^B\). Model
+the integer representatives of each by its own proper progression
+as above. Compose their affine models with the integer linear CRT
+formula for the projected residue. Reduce the constant and each
+progression direction modulo \(M_T\). The representative produced
+as an affine function of the progression coordinates differs from
+\(T-\min T\) by a multiple of \(M_T\), whose coefficient has
+magnitude \(O_{K,R}(n^B)\), by the bounds on the reduced directions,
+the coordinates, and \(H_T/M_T\). This extra integer coordinate
+puts the complete \(T\) in the required fixed-rank model. No
+independence assumption on the foreign registers is needed.
+
+More generally the same proof works whenever the least representatives
+admit a bounded-rank affine feature model with coordinates \(n^{O(1)}\).
+A fixed doubling bound is one sufficient structural condition. A
+doubling ratio of \(n^{o(1)}\) can still grow with height, and the
+argument does not give a rank bound uniform in height in that
+case. Extraction of enough affordable charts with either JD6 or JD7
+is open across the complete balanced dictionary interval.
+[Green–Ruzsa, Theorem 1.1](https://arxiv.org/pdf/math/0505198)
+
 ### One shared register and conditional difference prices
 
 If only the \(C\)-register is required equal

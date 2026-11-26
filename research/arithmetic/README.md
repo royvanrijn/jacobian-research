@@ -1519,6 +1519,27 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Actual least-repaired plane curves have uniform small primitive fibres | Internal result | proved | [Source](ABC_LEAST_REPAIRED_PLANE_CURVES_AND_DISPLACEMENTS.md) |
 | Two normalized displacement records recover arbitrary original pairs | Internal result | proved | [Source](ABC_LEAST_REPAIRED_PLANE_CURVES_AND_DISPLACEMENTS.md) |
 | Generic primitive repaired directions require almost a full original budget | Internal result | proved | [Source](ABC_LEAST_REPAIRED_PLANE_CURVES_AND_DISPLACEMENTS.md) |
+| Odd-power odds and two target parities give a mixed primitive pair count | Internal result | proved | [Source](ABC_MIXED_ORDER_TARGET_ODDS_DESCENT.md) |
+| Mixed odds and target classes control codegrees of nonaffine outside labels | Internal result | proved | [Source](ABC_MIXED_ORDER_TARGET_ODDS_DESCENT.md) |
+| Two coprime quotient orders admit separate branch-field descents | Internal result | proved | [Source](ABC_MIXED_ORDER_TARGET_ODDS_DESCENT.md) |
+| One shifted numerator recovers ordinary odds tuples after exposing the larger half | Internal result | proved | [Source](ABC_SHIFTED_ODDS_NUMERATOR_AND_DENOMINATOR_RECORDS.md) |
+| Bounded complementary shifted numerators each spend the full tuple exponent | Internal result | proved | [Source](ABC_SHIFTED_ODDS_NUMERATOR_AND_DENOMINATOR_RECORDS.md) |
+| Two reduced denominator supports recover the original tuple | Internal result | proved | [Source](ABC_SHIFTED_ODDS_NUMERATOR_AND_DENOMINATOR_RECORDS.md) |
+| Two shifted odds numerators in different denominator roles recover primitive pairs | Internal result | proved | [Source](ABC_SHIFTED_ODDS_NUMERATOR_AND_DENOMINATOR_RECORDS.md) |
+| Exact words in two denominator roles recover all three actual locks | Internal result | proved | [Source](ABC_SHIFTED_ODDS_NUMERATOR_AND_DENOMINATOR_RECORDS.md) |
+| Projected deep registers give a rank-one three-cap count | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Bounded doubling saves on whole deep-register charts | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Saturated affine features give an integral derivative index | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
+| Two complete letters split the shared-prime feature index | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
+| One auxiliary difference recovers primitive pairs and forces fresh radical | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| The primitive product auxiliary has a quantitative pair savings budget | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Purchased full divisors strengthen mixed Euclidean packing | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| Subcritical mixed defects save throughout the diffuse high-degree band | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| Exact-degree divisor selection saves without a valuation band | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| The three mixed orientations jointly lower the packing threshold | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| Marginal moments alone cannot lower the symmetric packing threshold | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| A single least-repair gap ratio recovers a primitive pair | Internal result | proved | [Source](ABC_TWO_SCALE_LEAST_REPAIR_PELL.md) |
+| Private target powers force large height of the repaired gap ratio | Internal result | proved | [Source](ABC_TWO_SCALE_LEAST_REPAIR_PELL.md) |
 
 **Computed obligations:** 110 unresolved; 19 resolved within their exact scope.
 

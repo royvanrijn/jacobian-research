@@ -13,6 +13,10 @@ The three residue roots
              (p,\ell,X)=(11,2,-6),\ (19,1,-2),\ (37,2,-9)
 \]
 cannot lift to a four-zero window in characteristic zero.
+The first window, \(11,\ldots,14\), is independently covered
+for all coefficient residues by the
+[prime-penultimate theorem at \(13\)](BINARY_EVEN_QUADRATIC_PRIME_PENULTIMATE_FOUR_WINDOW.md).
+The other two are \(18,\ldots,21\) and \(37,\ldots,40\).
 
 Each exclusion uses three original moments at the selected
 orders and one additional valuation digit beyond the residue
@@ -119,7 +123,18 @@ force \((\xi,\zeta)=(10,5),(7,1),(0,27)\).
 The remaining row then gives the nonzero residual
 \(7,1,36\), respectively. This proves the exclusions.
 
-Combined with the prime-front residue results, these exclusions
-remove every surviving zero-rank root in the stated finite
-gcd ranges. For other primes the general finite-field gate
-and the first-digit procedure remain available.
+The uniform first corrections give a separate check of the two
+windows with no prime-penultimate overlap. At \(p=19\), the
+[second-position correction](BINARY_EVEN_QUADRATIC_PRIME_SECOND_ZERO_RANK_LIFT.md#the-first-digit-fixes-two-rational-residues)
+requires \(X=359/300\equiv10\pmod {19}\), contradicting \(X=17\).
+At \(p=37\), the
+[first-position correction](BINARY_EVEN_QUADRATIC_PRIME_FIRST_ZERO_RANK_LIFT.md#boundary-data-and-the-first-correction)
+has \(C=1,\ G=-\bar z/2=-3\) and hence \(W=X-2G^2=10\).
+Its two quadratics give \(Q_1(W)=22\) and \(Q_2(W)=18\) modulo
+\(37\), contradicting the implication \(Q_1(W)\ne0\Rightarrow
+Q_2(W)=0\).
+
+Combined with the prime-front residue results, the native
+calculations remove every surviving zero-rank root in the stated
+finite gcd ranges. For other primes the general finite-field
+gate and the first-digit procedure remain available.

@@ -419,9 +419,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All-order factorial angular separation at absolute curvature 27 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ABSOLUTE_CURVATURE_27.md) |
 | Terminal fourteen near zero outer mean | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SMALL_OUTER.md) |
 | Terminal fourteen retained complements through the lower-middle band | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_LOW_MID.md) |
-| Terminal fourteen for all shared profiles from outer mean .30 to .45 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID.md) |
-| Terminal fourteen for all shared profiles on [.25,.30] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_LEFT.md) |
-| Terminal fourteen for all shared profiles on [.45,.50] | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_FLANKS.md) |
+| Terminal fourteen for all shared profiles from outer mean .30 to .45 | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID.md) |
+| Terminal fourteen for all shared profiles on [.25,.30] | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_LEFT.md) |
+| Terminal fourteen for all shared profiles on [.45,.50] | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_FLANKS.md) |
 | Degree-uniform Gaussian angular variation for matched Laplace directions | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GAUSSIAN_LAPLACE_ANGLE_RESPONSE.md) |
 | Exact adjacent resultant degree along every translated factorial ray | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRANSLATED_RESULTANT_DEGREE.md) |
 | Divisor-prime coprimality criterion on translated factorial rays | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRANSLATED_DIVISOR_PRIME.md) |
@@ -867,6 +867,24 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Four-block exclusion in the next one-axis resonance band | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_ONE_AXIS_FOUR_BLOCK_TRANSFER.md) |
 | Bilinear three-window for opposite linears and Chebyshev squarefreeness reduction | Internal result | proved | [Source](image-rigidity/BILINEAR_CHEBYSHEV_SQUAREFREE_TRANSFER.md) |
 | All-degree ordinary binomial coprimality from borrowed Jacobi paths | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BORROWED_JACOBI_PATHS.md) |
+| All compressed cyclotomic moment polynomials are monic integral with adjacent coprimality | Internal result | proved | [Source](image-rigidity/DIAGONAL_QUADRATIC_CYCLOTOMIC_CUMULANT_SHARPNESS_AND_COPRIMALITY.md) |
+| Degree-m cumulant roots give explicit sharp2m diagonal windows | Internal result | proved | [Source](image-rigidity/DIAGONAL_QUADRATIC_CYCLOTOMIC_CUMULANT_SHARPNESS_AND_COPRIMALITY.md) |
+| Every cumulant and its doubled-index cumulant are coprime | Internal result | proved | [Source](image-rigidity/DIAGONAL_QUADRATIC_CYCLOTOMIC_CUMULANT_SHARPNESS_AND_COPRIMALITY.md) |
+| Four-moment window in one-axis resonance with a missing linear term | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_ONE_AXIS_MISSING_LINEAR.md) |
+| Five-window in one-axis resonance at transverse linear valuation one | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_ONE_AXIS_UNIT_LINEAR_SCALE.md) |
+| Endpoint-normalized factorial interpolation and integer anchors | Internal result | proved | [Source](image-rigidity/FACTORIAL_ENDPOINT_NORMALIZATION_AND_INTEGER_ANCHORS.md) |
+| Pure-cross unit sector and two-window at fixed integer anchors | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_PURE_CROSS_INTEGER_ANCHORS.md) |
+| All-degree ordinary binomial coprimality for opposing borrowed paths | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSING_BORROWED_PATHS.md) |
+| Five-window in one-axis resonance at transverse linear valuation three halves | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_ONE_AXIS_THREE_HALVES_BOUNDARY.md) |
+| One-axis five-zero candidates require transverse linear valuation at least seven quarters | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_ONE_AXIS_THREE_HALVES_BOUNDARY.md) |
+| Positive first monic remainder for all increasing factorial rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIT_GAP_MONIC_REMAINDER.md) |
+| Mixed signs in the second pseudo-remainder for two increasing unit gaps | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIT_GAP_MONIC_REMAINDER.md) |
+| Simple symmetric linear factor of each two-unit-gap resultant | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIT_GAP_MONIC_REMAINDER.md) |
+| Negative elementary-symmetric resultant coefficients at starting order seven | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TWO_UNIT_GAP_RESULTANT_SIGN_OBSTRUCTION.md) |
+| Effective all-degree finite decision for three cooriented unit-gap heights | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_THREE_HEIGHT_EFFECTIVE_DECISION.md) |
+| Effective all-degree finite decision for four increasing unit-gap rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_THREE_HEIGHT_EFFECTIVE_DECISION.md) |
+| Runge pole-orbit condition on ordered three-height collision curves | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_THREE_HEIGHT_EFFECTIVE_DECISION.md) |
+| Linked physical radial grid for fully shared factorial moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_SIGNED_IMBALANCE.md) |
 
 **Computed obligations:** 50 unresolved; 34 resolved within their exact scope.
 
@@ -977,6 +995,7 @@ Scope limits:
 - In every dimension, zero-constant quadratics with B_ij^2=4c_ij A_iA_j for fixed rational odd-denominator c_ij have the k+ell factorial window and their actual-support Strong Factorial window. The native residue series is a matching polynomial quotient; the proof is self-contained and includes same-variable linears, diagonal, rank-one and principal-zero sign patterns. Exact independent binary restriction routes also preserve the old singular-Hessian four-window and actual-support theorems. Arbitrary independent quadratic coefficients, general nonzero constants and unrestricted SFC2/SFC3 remain outside this result.
 - For every fixed rational odd-denominator quadratic coupling pattern, every compatible diagonal/linear support with p>=1 and every positive start n, an algebraic phase has p-1 zero moments in that block followed by a nonzero moment. Thus the matching p=k+ell window is sharp on every support at every start; the witness may depend on n. Actual-support sharpness is asserted only when there are no cross monomials. Existence uses the exact classical homogeneous common-zero theorem, while exact full support/next moment use the independently proved matching upper theorem. No unrestricted quadratic/SFC2/SFC3 closure or smaller coefficient field witness is asserted.
 - For fixed rational2-integral correlation weights, the full family of quadratic cover moment maps is finite free of exact rank product(2j), with arbitrary-target constant scheme lengths. Finiteness over all supports, starts, sign branches and containing characteristic-zero fields is genuinely equivalent to the matching shorter k+ell window via homogeneous parameter coverage. The forward proof imports that existing bound and CM regularity; it is not an independent proof of the bound. Direct diagonal coefficient maps have degree product j. No reducedness, unique inverse, unrestricted SFC closure or assurance upgrade.
+- For cyclotomic diagonal phases sum omega^i(X_i^2+rX_i), all compressed moment polynomials are monic integral and adjacent coprime. Every root of the degree-m factorial cumulant yields an explicit start1 sharp2m-term diagonal witness, with coefficient field degree at mostm phi(m); cumulants of indicesm and2m are coprime. These results use only the independently proved ACTUAL-SUPPORT matching upper theorem; the formal filter/degree/weak zero-block facts do not. The one-parameter family does not imply arbitrary diagonal or full quadratic/SFC2/SFC3 closure, and no converse is registered.
 
 Tracked obligations (computed states):
 

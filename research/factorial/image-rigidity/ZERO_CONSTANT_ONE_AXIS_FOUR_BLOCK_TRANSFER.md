@@ -13,6 +13,8 @@ over a valued extension of \(\mathbb Q_2\), with \(v(2)=1\). Put \(\sigma=v(e)\)
                   n\equiv0\pmod4,\qquad \overline{\gamma^2/8}=1.
 \]
 There is no restriction on the residue-field degree. The equal-axis residue torsion constraint from [unit-pole removal](ZERO_CONSTANT_ONE_AXIS_UNIT_POLE_REMOVAL.md) continues to apply in the surviving case.
+The [next-digit boundary lift](ZERO_CONSTANT_ONE_AXIS_THREE_HALVES_BOUNDARY.md)
+also excludes that case at valuation three halves.
 
 ## One more valuation in the symmetric approximation
 

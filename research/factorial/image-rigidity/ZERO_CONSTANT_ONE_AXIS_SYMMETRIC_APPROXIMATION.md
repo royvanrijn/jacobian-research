@@ -15,6 +15,8 @@ Let \(n\ge1\) be a proposed start of five zero factorial moments, \(j=n+2\), \(\
 For \(\theta<1\) it also requires \(n\sigma\ge1\), while for \(\theta=1\) it requires \((n+1)\sigma\ge1\).
 
 There is no such block for \(\sigma<3/2\), except possibly when \(\sigma=1\), \(\theta=0\), \(n\) is odd, and \(\overline{\gamma/2}=1\). At \(\sigma=3/2\) and \(\theta>0\) there is no block either. In the equal-valuation case \(\theta=0\), the residue-root order constraint from [unit-pole removal](ZERO_CONSTANT_ONE_AXIS_UNIT_POLE_REMOVAL.md) is still necessary.
+The [valuation-one lift](ZERO_CONSTANT_ONE_AXIS_UNIT_LINEAR_SCALE.md)
+excludes the exceptional case at \\(\\sigma=1\\).
 
 ## Valuations forced by the three axis equations
 

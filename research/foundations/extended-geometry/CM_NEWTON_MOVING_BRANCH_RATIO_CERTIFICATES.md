@@ -25,6 +25,24 @@ two operations the prescribed negative lift has coefficient
 \(-1\) at weight \(16\), and the other permitted coefficients stay
 in the stated family.
 
+**Corollary (characteristic-zero coefficient fields).**
+The nonvanishing windows of the theorem apply to every fixed phase
+over a characteristic-zero field, with a prime threshold allowed to
+depend on the phase. For each sufficiently large rational prime in
+the stated class, at least one moment in the window at that prime
+is nonzero in the original field.
+
+Indeed, generate a finitely generated \(\mathbb Q\)-algebra by the
+parameters and invert the discriminant \(\theta^2+4\). A maximal
+ideal gives a number-field specialization by Zariski's lemma.
+The theorem applies to that one specialization. A moment that
+vanished in the original field would still vanish after
+specialization, since the sphere functional takes rational values
+on monomials. If the roots were not normalized, one can work
+first in the algebraic extension adjoining \(\rho\), or specialize
+the root data while inverting \(ad(a-d)\). The resulting
+nonvanishing descends to the original field.
+
 ## The coherent line after the first row
 
 Use the [two-pole residue formula](CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md#a-reconstruction-matrix-for-unmarked-moments).

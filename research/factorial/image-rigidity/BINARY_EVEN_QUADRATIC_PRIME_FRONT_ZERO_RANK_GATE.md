@@ -281,7 +281,11 @@ right side of (2) to the left. The two ranges contain
 | Second | \(7\le p<550\) | \(p=19:\ X+2\) |
 | First | \(7\le p<200\) | \(p=11:\ X+6;\quad p=37:\ X+9\) |
 
-The listed nonzero roots satisfy the necessary equations,
-and the [first-digit lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_ZERO_LIFTS.md)
-excludes all three in characteristic zero. The derivation of
-(1)–(2) holds for every prime \(p\ge7\).
+The listed nonzero roots satisfy the necessary residue equations.
+The first-position \(p=11\) window \(11,\ldots,14\) is
+independently excluded by the
+[prime-penultimate theorem at \(13\)](BINARY_EVEN_QUADRATIC_PRIME_PENULTIMATE_FOUR_WINDOW.md).
+The [first-digit lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_ZERO_LIFTS.md)
+excludes the other two windows, \(18,\ldots,21\) and
+\(37,\ldots,40\), and also replays the \(p=11\) branch.
+The derivation of (1)–(2) holds for every prime \(p\ge7\).

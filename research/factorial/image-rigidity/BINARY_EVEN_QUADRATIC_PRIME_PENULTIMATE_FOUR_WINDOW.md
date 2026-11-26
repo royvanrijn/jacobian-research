@@ -4,6 +4,8 @@ Let \(\Lambda_2(x^i y^j)=i!j!\), and let
 \(f=ax^2+bxy+cy^2+k\) with \(abck\ne0\) over a
 characteristic-zero field. For every prime \(p\ge5\), the four
 moments at \(p-2,p-1,p,p+1\) cannot all vanish.
+In particular, \(p=13\) excludes the complete window at
+orders \(11,12,13,14\), irrespective of the residue at \(11\).
 
 Use the
 [weighted boundary identities](BINARY_EVEN_QUADRATIC_SINGLE_FACE_STRONG_FACTORIAL.md#4-the-exact-reduction-for-general-b-and-its-limitation)

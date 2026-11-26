@@ -34,13 +34,16 @@ def verify_disks(model, start, cap, counts):
         model.ordinary_ratio_upper.cache_clear()
 
 
-def verify_retained(start, stop, cap, expected, replay):
+def verify_retained(start, stop, cap, expected, replay, *, limit=CAP, patterns=None):
     # Import only after binding the enumerator to lower order thirteen.
     from verify_multivariate_terminal_thirteen_retained_bands import bracket_tail, retained_cores
 
     lower, upper = Q(start, 100), Q(stop, 100)
-    lists = retained_cores(lower, cap, CAP)
+    lists = retained_cores(lower, cap, limit)
     retained.require(len(lists) == expected[0], ("retained list count", start, len(lists)))
+    if patterns is not None:
+        retained.require(tuple(rows for rows, _ in lists) == patterns,
+                         ("retained list patterns", start, lists))
     outer = radial = 0
     for rows, squared in lists:
         residual = bracket_tail(lower, upper, squared)

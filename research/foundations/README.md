@@ -187,6 +187,10 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Exact half-slope multiplicity and density-one p-rank bound in adjoint type A1 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md) |
 | Original-field ordinary density and its least field in adjoint type A1 | Unpublished; independent review pending | proved | [Source](../../unpublished/cm-newton-polygon-constraints/README.md) |
 | Sharp finite-field range of the Pfaffian integrality argument | Unpublished; independent review pending | proved | [Source](../../unpublished/cm-newton-polygon-constraints/README.md) |
+| Two-marker local moment rigidity at 229 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_BLOCK_RANK_MOMENTS.md) |
+| Compact-cycle coherent periods and the relative sphere path | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_PERIOD_CYCLES.md) |
+| Two sphere monodromy cycles separate the coherent profile in a model | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_PERIOD_CYCLES.md) |
+| Refined off-L3 weighted charts at 331 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_331_OFF_COMPONENT_CHARTS.md) |
 
 **Computed obligations:** 12 unresolved; 3 resolved within their exact scope.
 

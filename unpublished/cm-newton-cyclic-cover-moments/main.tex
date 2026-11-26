@@ -38,6 +38,10 @@ residue is a unit for orders \((p^{kd}-1)/n\), where \(d\) is the
 order of \(p\) modulo \(n\) and \(k\ge1\). At least five classes
 certify nonzero moments at nonordinary primes. For \(n=35\) the
 nonordinary certifying classes have natural density \(7/24\).
+For conductor \(18\) we reconstruct a coherent input uniformly
+in the branch ratio with quartic odd and radial even lower terms.
+We give an effective finite reconstruction window and a marked
+rank-two example that proves local moment rigidity.
 \end{abstract}
 
 \section{Introduction}
@@ -78,6 +82,14 @@ where the chosen return certifies infinitely many moment orders for a
 fixed cover and phase. In both constructions,
 a tame degeneration at a second prime rules out potential complex
 multiplication on the primitive factor.
+
+The reconstruction result in Section~\ref{sec:reconstruction}
+uses several moment orders when a first residue leaves an unknown
+correction. A checked rational identity separates the coherent
+direction from the corrections for every branch ratio in the
+stated family. Section~\ref{sec:marked-block} recovers a
+two-dimensional Frobenius block and uses it to prove rigidity of
+two unmarked moments along prescribed deformations.
 
 The fractional-part dimensions and Frobenius coefficient formulas for
 tame cyclic covers belong to the Hasse--Witt theory of Bouw
@@ -557,6 +569,279 @@ coordinates \(z,t\). The leading angular coefficient has order
 power.
 \end{proof}
 
+\section{Reconstructing coherent inputs from unmarked moments}
+\label{sec:reconstruction}
+
+In this section \(z=x/t^2\) and
+\[
+ f=t^{18}z^{-1}q(z)^4+t^{17}B(z)+t^{16}(-z^{-1}+c),
+ \qquad q(z)=z^2-\theta z-1.
+\]
+Write \(B(z)=\sum_{j=0}^4 b_jz^j\) with \(b=b_0\).
+The negative angular terms together are \(-2yt^{18}\).
+The degree of this term and the degrees of the other terms in
+normal form give least sphere degree \(19\).
+
+\begin{theorem}\label{thm:moving-branch}
+Suppose \(q\) has distinct roots and \(\deg B\le4\).
+Fix a phase over a field of characteristic zero. For each
+sufficiently large \(p\equiv7\bmod18\), at least one of the moments
+\[
+       \A(f^{m+kp}),\qquad m=(13p-1)/18,\quad 0\le k\le11,
+\]
+is nonzero. For \(\deg B\le3\) one may stop at \(k=10\), and
+for \(\deg B\le1\) one may stop at \(k=7\).
+The same statement holds with \(q^4\) replaced by
+\((z-a)^4(z-d)^4\) for distinct nonzero \(a,d\), with the
+coefficient of \(z^{-1}\) in the even lower term adjusted to
+give the regular negative lift.
+\end{theorem}
+
+\begin{proof}
+Work first over a number field, at a good place over \(p\).
+Write \(Q=z^{-1}q^4\), \(D=-z^{-1}+c\). Use
+\(f^{m+kp}\equiv f^m(f^k)^p\) while extracting angular-constant
+terms. Their angles are \(jp,-j\), \(0\le j\le k\), because the
+minimum angular exponent of \(f\) is \(-1\) and \(m<p\).
+The \(t\)-degree in \(f^m\) is \(13p-1\) minus a deficit
+between 0 and \(2m<2p\). A multiple of \(p\) in the integration
+denominator requires deficit 0 or \(p\). Their coefficients at
+angle \(jp\) are
+\[
+  A_j=[z^{jp}]Q^m,\qquad
+  C_j=[z^{jp}\xi^p](Q+\xi B+\xi^2 D)^m .
+\]
+For \(\deg B\le4\), a deficit-\(p\) term with \(u_i\) factors of
+deficit \(i\) has angle at most \(7m-3u_1-7u_2\).
+Since \(u_1+2u_2=p\) and \(u_2\ge p-m\), this is at most
+\(8m-4p<2p\). Hence only \(C_0,C_1\) can contribute.
+
+At large \(p\) all interval denominators are less than \(p^2\).
+Write \(G_{k,i,v}=[z^it^{18k-v}]f^k\). The normalized residue is
+\[
+ p\A(f^{m+kp})\equiv
+ \sum_j A_j\sum_{v\ {\rm even}}\frac{G_{k,-j,v}^{\,p}}{13+18k-v}
+ +\sum_j C_j\sum_{v\ {\rm odd}}\frac{G_{k,-j,v}^{\,p}}{12+18k-v}.
+ \tag{*}
+\]
+In particular shift zero is \(A_0/13\).
+Write \(4m=2p+\ell\), where \(\ell=(8p-2)/9\).
+The factorization \(q^{4m}=q^{2p}q^\ell\) and
+\(\deg q^\ell<m+2p\) give
+\(\sum_j A_jz^j=(X+Yz)(q^2)^{(p)}(z)\), where the superscript
+\((p)\) raises coefficients to the \(p\)-th power.
+On the curve \(W^{18}=z^{17}q^4\), the source character 13
+has coherent dimension \(1+\lfloor91/18\rfloor-
+2\lfloor52/18\rfloor=2\). This is the entire de Rham component
+since all four branch points are active. Frobenius from that
+source, followed by coherent projection at character one, is
+surjective. The coefficients \(A_0,A_1\) are its entries on the
+\v{C}ech classes \([W^{13}/z^{13}],[W^{13}/z^{14}]\), which
+form a basis by triangular change from the normalized
+eigensheaf basis at the roots. This follows by raising each
+representative to the \(p\)-th power and taking the coefficient
+of the target class \([W/z]\). Thus \(X,Y\) cannot both vanish.
+If row zero vanishes, the coherent profile is
+\(Yz(q^2)^{(p)}\).
+
+If \(b=B(0)=0\) in the residue field, row one is
+\(-2Y/899\). The even negative lift gives this term, while odd
+terms at nonpositive angle are absent. Otherwise put
+\(u=b^p\), \(r=u^2\), \(l_j=b_j^p/u\), \(v=c^p\),
+\(\eta=\theta^p\), and \(U=uC_0/Y,\ V=uC_1/Y\).
+If rows one and two vanish, formula (*) gives
+\(U=2/31\) and \(V=(-2l_1+16v)/31+3364\eta/1519\).
+In the cubic and quartic cases row \(j+1\) solves for \(l_j\)
+for \(2\le j\le3\) or \(2\le j\le4\), respectively, with pivot
+\[
+ \frac{(2/31)(j+1)(-2)^j j!}{\prod_{i=0}^j(29+16j+2i)} .
+\]
+The first occurrence of \(l_j\) requires one factor of angle
+\(j\) and \(j\) negative lifts, and can only contribute to
+\(C_0\). In the linear case row three instead solves for
+\(r\), with result
+\[
+ r=\frac{-6l_1^2+48l_1v}{427}
+  +\frac{10092\eta l_1+3936\eta v}{20923}
+  +\frac{1309476-865554\eta^2}{1401841}.
+\]
+
+Here are the dimensions of the exact coefficient calculations.
+Use primitive integral forms of the remaining rows. In the
+linear case their variables \(l_1,v,\eta\) have weight one.
+In the other cases include \(r\) with weight two. Use all
+monomial multiples of even weight up to the indicated bound.
+\[
+\begin{array}{c|c|r|r|r}
+ \deg B\text{ bound}&\text{rows}&\text{weight bound}
+                    &\text{matrix size}&\text{selected size}\\ \hline
+ 1&4,\ldots,7 &12&340\times251&245\\
+ 3&5,\ldots,10&16&1912\times1484&1427\\
+ 4&6,\ldots,11&18&2548\times2199&2078
+\end{array}
+\]
+For each case the companion archive
+\emph{Nonzero sphere moments from nonordinary cyclic covers:
+source and verification code} constructs \(G_{k,i,v}\) by sparse
+Laurent multiplication, evaluates \((*)\) with the stated
+substitutions, and forms the coefficient matrix above.
+Reduction at 65521 selects a square system for a rational
+solve. Multiplication against the complete coefficient matrix
+gives exactly the constant vector \(1\). This proves the
+three unit-ideal identities in the parameters, including the
+branch parameter. Reducing the identities excludes only
+finitely many further primes.
+
+For general roots choose \(\rho^2=-ad\). Substitute
+\(z=\rho w\) and multiply the phase by \(\rho^{-7}\).
+This preserves vanishing of its moments and puts the top in
+the normalized form with \(\theta=(a+d)/\rho\). For a
+characteristic-zero field choose one number-field point of the
+finitely generated coefficient algebra after inverting the
+root discriminant. Such a point exists by Zariski's lemma.
+Moments are rational polynomials in the coefficients and
+commute with this specialization. The threshold of that one
+specialization works for the original phase.
+\end{proof}
+
+For two pairs \((\boldsymbol\xi,\boldsymbol u)\), put
+\(R=\xi_1u_1+\xi_2u_2\) and use
+\(x=2\xi_1u_2,\ y=\xi_2u_1,\ t=\xi_1u_1-\xi_2u_2\) on \(R=1\).
+Homogenizing gives a lift \(F\) of bidegree \((19,19)\).
+The contraction functional
+\(\mathcal E_2(\boldsymbol\xi^\alpha\boldsymbol u^\beta)
+=\delta_{\alpha,\beta}\alpha!\) satisfies
+\(\mathcal E_2(F^j)=(19j+1)!\A(f^j)\) by angular averaging and
+the normalized beta integral \(a!b!/(a+b+1)!\).
+Theorem~\ref{thm:moving-branch} therefore gives balanced
+polynomials with nonvanishing contraction moments as the
+branch geometry varies.
+
+\begin{proposition}\label{prop:effective-window}
+For a family of regular phases and finitely many regular markers
+given by polynomials in parameters over \(\Q\), a computable
+initial window of the rows \((\A(h_i f^k))_i\), \(k\ge0\), gives
+the all-row kernel in the marker coefficient space at every
+characteristic-zero specialization.
+\end{proposition}
+\begin{proof}
+Over the function field of an irreducible parameter component
+consider the tuple of rational forms \(h_i\omega/(1-\xi f)\),
+where \(\omega=dx/x\wedge dt\) is the regular sphere volume form.
+They lie in a direct sum of finite-dimensional algebraic de
+Rham groups of the smooth affine complement of \(1-\xi f\).
+Successive \(\xi\)-derivatives satisfy a common relation
+modulo exact forms. It is computable by searching for rational
+coefficient relations and polynomial primitives with powers
+of \(1-\xi f\) as denominators. Finite-dimensionality guarantees
+termination. Integration on the closed sphere annihilates
+the exact forms. A nonzero constant linear combination of the
+resulting series can start only at a nonnegative integer root
+of the indicial polynomial at zero of the common operator.
+Indeed, substitution of its leading power into the terms of
+lowest order yields that polynomial evaluated at the exponent.
+This supplies a computable initial window at the generic point.
+
+Choose a nonzero maximal-rank minor in this window. All larger
+minors of the full matrix vanish identically on the component,
+since the rows have polynomial entries. Where the chosen
+minor is nonzero, the initial window has the full rank.
+Repeat on the irreducible components of its zero set, with
+strictly smaller dimension. Taking the maximum of the
+resulting windows proves the assertion.
+\end{proof}
+
+\section{A block rank from moments and rigidity of a deformation}
+\label{sec:marked-block}
+
+If \(d_i\) is the dimension of coherent character \(i\) and
+\(r_i=d_i+d_{-i}\), coherent Frobenius \(\Phi_i\) satisfies
+\[
+       \operatorname{rank}\Phi_i\ge \max(0,d_i+d_{pi}-r_i).
+\]
+The conjugate filtration injects the twisted coherent source
+into the target de Rham component. Composing with the Hodge quotient gives
+the coherent map \cite[\S\S2.5 and 3.1]{moonen}.
+The de Rham dimensions agree because
+multiplication by \(p\) preserves the active branch points.
+The projection has kernel dimension \(r_i-d_{pi}\), proving
+the bound. In the family \(n=6N\),
+\(W^n=z^{n-1}(z-1)^N(z-\lambda)^{N+1}\), the dimensions for
+\(1\le i<n\) are
+\[
+      d_i=\lceil i/3\rceil-\lfloor i/6\rfloor
+                       -\lfloor i(N+1)/n\rfloor.
+\]
+At tame primes with distinct reductions of \(0,1,\lambda,\infty\),
+summing gives ranks at least 8 and 30 for
+\((n,p\bmod n)=(54,11),(162,65)\). The genera are 40 and 121,
+so the \(a\)-number, the corank of coherent Frobenius, is at
+most 32 and 91, respectively. The \(p\)-rank uses stable
+rank \cite[\S\S2.1, 2.5 and 3.1]{moonen}.
+
+\begin{proposition}\label{prop:rank229}
+Let \(p=229\equiv67\bmod162\), \(n=162\), \(P=(z-1)^{27}(z+1)^{28}\), and take
+a phase \(f=t^n P/z+t^{n-1}B+t^{n-2}D\) integral above \(p\).
+Here \(B\) and \(D+P(0)/z\) are ordinary polynomials and
+the negative terms form the regular lift. For \(i=1,2\) put
+\(H_i=t^{10}z^{i-1}(z^2-1)\). The four marked moments of
+orders 7 and 236 recover a coherent Frobenius block with
+determinant \(137\bmod229\). In the two-marker deformation
+\(g=f+\eta_1H_1+\eta_2H_2\), the Jacobian of
+\((p\A(g^8),p\A(g^{237}))\) at the base phase has
+determinant \(26\bmod229\).
+\end{proposition}
+\begin{proof}
+The source is character 5, the target character 11, and
+\(5p-11=162\cdot7\). In the normalized \v{C}ech frames the
+source has no finite-root correction and the target has
+factor \(z^2-1\) in its denominator. The two coherent
+representatives at either character are its normalized
+generator divided by \(z\) and by \(z^2\).
+Raising the source representatives to the \(p\)-th power
+gives matrix entries
+\[
+       L_{ij}=[z^{8-i+p(j-1)}]P^7(z^2-1)
+         \equiv\begin{pmatrix}148&141\\16&27\end{pmatrix}_{ij}
+             \pmod {229}.
+\]
+These are binomial coefficients of the product
+\((z-1)^{190}(z+1)^{197}\).
+In \(H_i f^7\), the top height is \(5p-1\) and the deficit
+is at most 14. For both orders only its top height can
+contribute. The second order pairs its angles 0 and \(p\)
+with the even terms of angles 0 and \(-1\) in \(f^p\).
+All denominators are less than \(p^2\). Thus the two
+residues for each marker are
+\[
+     L_{i1}/5,\qquad
+     L_{i1}\left(P_1^p/167+D_0^p/165\right)
+                         + L_{i2}\,\frac{2}{167\cdot165},
+\]
+where \(P_1=[z]P\), \(D_0=[z^0]D\). The negative lift has
+\(P_0=-1\), which gives the displayed nonzero pivot.
+Differentiation multiplies these rows by \(8\) and
+\(237\equiv8\), giving determinant
+\(64\cdot137\cdot2/(5\cdot167\cdot165)\equiv26\).
+\end{proof}
+
+If both moments vanish at the base phase, their common zero is
+isolated and nonsingular in this two-dimensional deformation
+plane. For one marker the normalized eighth moment at
+\(f+\eta H_i\) reduces to a polynomial supported in degrees 1
+and 4. Indeed a term with \(j\) markers has degree between
+\(1296-152j-2(8-j)\) and \(1296-152j\), and only \(j=1,4\)
+can give a pole. Its linear coefficient \(8L_{i1}/5\) is a
+unit, so at least one of \(f+H_i\) and \(f-H_i\) has
+nonzero eighth moment.
+
+\begin{samepage}
+At \(\eta=0,\ldots,5\) the high Frobenius factor adds zero or
+one to the exponent of \(\eta\). Interpolating in degree at most
+five gives the marked residues from the linear coefficients of
+the two unmarked residue polynomials at orders 8 and 237.\par
+\end{samepage}
+
 \begin{samepage}
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
@@ -581,6 +866,11 @@ in \emph{Groupes de monodromie en g\'eom\'etrie alg\'ebrique I},
 S\'eminaire de G\'eom\'etrie Alg\'ebrique du Bois-Marie 1967--1969 (SGA 7 I),
 Lecture Notes in Math. \textbf{288}, Springer, 1972, Expos\'e IX.
 \href{https://grothendiecksga.com/read/sga7/en/9-12.html}{\S12}.
+
+\bibitem{moonen}
+B. Moonen, Computing discrete invariants of varieties in positive
+characteristic. I. Ekedahl--Oort types of curves,
+\href{https://www.math.ru.nl/~bmoonen/Papers/CDIPart1.pdf}{\S\S2.1, 2.5, 3.1}.
 
 \bibitem{serretate}
 J.-P. Serre and J. Tate, Good reduction of abelian varieties,

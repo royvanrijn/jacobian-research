@@ -150,8 +150,8 @@ follows from the sequential comparison used here.
 ## The fixed-terminal obligation
 
 The absolute eventual theorem leaves only finitely many possible
-terminal orders, starting at fourteen by the
-[complete terminal-thirteen theorem](MULTIVARIATE_TERMINAL_THIRTEEN_ALL_PROFILES.md).
+terminal orders, starting at fifteen by the
+[complete terminal-fourteen theorem](MULTIVARIATE_TERMINAL_FOURTEEN_ALL_PROFILES.md).
 The [all-degree both-private theorem](MULTIVARIATE_BOTH_PRIVATE_ALL_DEGREES.md)
 closes every profile with private variables on both sides. For one
 private side, write \(P\) for its total private exponent and \(S_{\rm sh}\)
@@ -338,27 +338,13 @@ combines the private and retained cases with light rays, grouped root
 disks and upper Cayley bands. The covered outer-mean intervals and
 reciprocal-cap complements exhaust every ordinary profile. Thus the
 consecutive pairs through terminal thirteen are complete. The
-[terminal-fourteen fixed rays](MULTIVARIATE_TERMINAL_FOURTEEN_HIGH_CURVATURE.md)
-cover \(S\ge8\), every total private degree at least four, and the
-listed lower private-degree cases above their shared-curvature
-thresholds. The [terminal-fourteen retained profiles](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_PROFILES.md)
-cover every private profile and all fully shared profiles with a
-reciprocal above \(1/8\). The [small-outer-mean rays](MULTIVARIATE_TERMINAL_FOURTEEN_SMALL_OUTER.md)
-cover all fully shared profiles with \(0<u\le.02\).
-The [left flank](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_LEFT.md),
-[middle](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID.md), and
-[right flank](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_MID_FLANKS.md)
-give full coverage on \([.25,.50]\). The
-[lower-middle disks](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_LOW_MID.md)
-and [retained low-middle complements](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_LOW_MID.md)
-cover \([.50,.64]\). The [middle disks](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_DISKS.md)
-and [middle complements](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_MIDDLE.md),
-followed by the [upper disks](MULTIVARIATE_TERMINAL_FOURTEEN_HIGH_U.md),
-[retained bridge](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_BRIDGE.md),
-and [upper complements](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_UPPER.md),
-close the remaining bands of \([.64,1)\).
-Thus fully shared profiles are covered on \((0,.02]\) and \([.25,1)\).
-Terminal fourteen is the first remaining fixed terminal.
+[terminal-fourteen theorem](MULTIVARIATE_TERMINAL_FOURTEEN_ALL_PROFILES.md)
+combines the private and retained cases with the full shared
+outer-mean cover. Its low-range proof uses the
+[paired corner certificate](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_CORNER.md)
+and the [four retained intermediate-strip profiles](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_LOW.md#the-intermediate-reciprocal-strip-at-2122).
+This completes all terminals through fourteen. The first
+remaining fixed terminal is fifteen.
 The [linked-skew supplement](MULTIVARIATE_TERMINAL_THIRTEEN_LINKED_CAYLEY.md)
 demonstrates a common separating ray that moves with the matched
 signed second moment on a narrow upper band.
@@ -2138,3 +2124,19 @@ gives all-degree physical coprimality away from finitely many
 parameters on every affine ray. A resultant at the first upper
 factor gives an explicit integer divisor test at each bounded
 terminal, including balanced and nonprimitive cohorts.
+
+
+The [three- and four-height finite reduction](MULTIVARIATE_THREE_HEIGHT_EFFECTIVE_DECISION.md)
+gives explicit bounds on one height at a time for cooriented
+unit-gap rows. For four individual rows, a first-order
+perturbation of the one-row comparator separates even its
+shared limiting roots. This extends the two-height decision
+method to the stated higher-dimensional integer families.
+
+The [monic remainder comparison](MULTIVARIATE_UNIT_GAP_MONIC_REMAINDER.md)
+gives positivity at the first subtraction for arbitrary
+increasing gaps and identifies the simple resultant factor
+\(1+S+P\) for two increasing unit gaps. The
+[exact sign obstruction](MULTIVARIATE_TWO_UNIT_GAP_RESULTANT_SIGN_OBSTRUCTION.md)
+excludes uniform coefficientwise positivity in the elementary
+generators \(S,P\) already at starting order seven.

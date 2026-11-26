@@ -28,10 +28,36 @@ retained rows and uses the refined matched-moment ray test at the
 indicated cap for the residual rows. The ratio enumeration uses
 reciprocal floor \(1/150\).
 
-There are 31 list occurrences, 476 outer cells and 65,114 radial
-cells. The [checker](verify_multivariate_terminal_fourteen_retained_low.py)
+The table has 31 list occurrences, 476 outer cells and 65,114 radial
+cells.
+
+## The intermediate reciprocal strip at \([.21,.22]\)
+
+For \(.21\le u\le.22\), the same test also separates every profile with
+\(1/14<c_{\max}\le3/40\), where \(c_{\max}=\max d/(13\ell+1)\).
+It retains all rows above \(1/14\) and uses residual cap \(1/14\).
+The exact enumeration, up to simultaneous reversal, is as follows.
+A triple gives the smaller exponent, the gap, and the orientation.
+
+| Retained rows | Residual mean enclosure | Outer cells | Radial cells |
+|---|---:|---:|---:|
+| \((2,2,-1)\) | \([.3933,.4121]\) | 4 | 1,283 |
+| \((2,2,-1),(2,2,-1)\) | \([.7366,.7718]\) | 8 | 1,045 |
+| \((2,2,-1),(2,2,1)\) | \([.7366,.7718]\) | 8 | 1,054 |
+| \((3,3,-1)\) | \([.5405,.5664]\) | 8 | 1,232 |
+
+These are 28 outer and 4,614 radial cells. The exact row-product
+bounds bracket the residual means outward. Only these four
+lists meet the row-square and profile-square constraints in the strip.
+Combining the strip with the table, the
+[direct small-reciprocal check](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_LOW_U.md),
+and the [large-reciprocal result](MULTIVARIATE_TERMINAL_FOURTEEN_RETAINED_PROFILES.md)
+covers \([.21,.22]\) for every fully shared ordinary profile with
+distinct columns.
+
+The [checker](verify_multivariate_terminal_fourteen_retained_low.py)
 accepts an optional lower endpoint in hundredths to replay a single
-band.
+band. Endpoint 21 replays both reciprocal parts of this band.
 
 ~~~sh
 .venv/bin/python research/factorial/image-rigidity/verify_multivariate_terminal_fourteen_retained_low.py

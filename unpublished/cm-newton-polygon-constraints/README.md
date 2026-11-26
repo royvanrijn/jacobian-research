@@ -38,7 +38,10 @@ The research records give the
 [three-pair global argument and its residual endomorphism types](../../research/foundations/extended-geometry/CM_NEWTON_THREE_BALANCED_GLOBAL.md),
 and [primary-source comparison](../../research/foundations/extended-geometry/CM_NEWTON_POLYGON_LITERATURE.md).
 The [companion moment manuscript](../cm-newton-cyclic-cover-moments/)
-develops nonvanishing results for cyclic covers with nonordinary reduction.
+develops nonvanishing and coherent reconstruction for cyclic covers.
+Its [block-rank applications](../../research/foundations/extended-geometry/CM_NEWTON_BLOCK_RANK_MOMENTS.md)
+bound the \(a\)-number at specified \(p\)-rank-zero reductions
+and recover a two-dimensional Frobenius block from moments.
 
 ## Build and replay
 

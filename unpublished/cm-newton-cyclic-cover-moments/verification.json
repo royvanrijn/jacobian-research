@@ -3,14 +3,14 @@
   "date": "2026-11-26",
   "edition": {
     "file": "cm-newton-cyclic-cover-moments.pdf",
-    "sha256": "36b8f2b13985ba09a0881fbecb80059318084f39efc026270494cfb8ef303e0c",
-    "pages": 8,
-    "source_bundle_sha256": "0c0ef0032dca509e7d2609b3e7723d2c02e8d28c1d50accac324980485aeadf0"
+    "sha256": "d0f95264b8da3ed0b7aecc4b7892662f4861c70196d501f8a8414ee84dc82f64",
+    "pages": 12,
+    "source_bundle_sha256": "9805847928d31d7607669de2592275cb5f388141569f5aac9418fe354f3603cb"
   },
   "build": {
     "command": "SOURCE_DATE_EPOCH=1795651200 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-cyclic-cover-moments main.tex",
     "environment": "Ubuntu 24.04.4 LTS under WSL, TeX Live 2023, pdfTeX 1.40.25, latexmk 4.83, Poppler 24.02.0",
-    "result": "Two clean builds from the extracted source ZIP produced byte-identical PDFs with no final LaTeX or layout warnings. Inspected PNG renders of every page and checked that the title and abstract agree with the metadata."
+    "result": "Two clean builds from the final extracted archive produced byte-identical PDFs with no final LaTeX or layout warnings. Inspected PNG renders of all twelve pages and checked the abstract and title against metadata."
   },
   "replays": {
     "fixed_prime": {
@@ -21,30 +21,38 @@
       "command": "python3 -I verification/verify_cm_newton_unbounded_twisted_moment_quotients.py",
       "result": "The four retained prime-cube examples have residues 182, 186, 23, 46. At n=35, exhausts the 24 unit classes, checking the seven nonsplit certifying classes and detecting a quotient-dimension mismatch at every nonidentity class. At (p,iterate) = (29,2), (43,4), (79,6), (3,12), (29,4) the direct and translated residues match as 1, 14, 67, 0, 1."
     },
-    "scope": "The two Python 3.12.3 commands were executed from the source archive. The programs replay finite examples. The parameterized statements and the 5-rank asymptotic use written proofs."
+    "scope": "Replayed the four programs with archive verifier bytes matching the final archive. The older Python calculations replay finite examples; the moving-branch computation verifies rational identities in the parameters. The uniform cutoff and period-theoretic implications use written proofs.",
+    "moving_branch": {
+      "command": "sage -python verification/verify_cm_newton_moving_branch_ratio_certificates.py",
+      "result": "SageMath 10.9 checked all three rational identities against the complete coefficient matrices for odd degrees 1, 3 and 4 from archived verifier bytes."
+    },
+    "marked_rank": {
+      "command": "python3 -I verification/verify_cm_newton_block_rank_moments.py",
+      "result": "Checked conductor-54 and conductor-162 rank bounds and dimensions, the 229 block determinant 137, the rigidity congruence 26 and the allowed marker counts for interpolation."
+    }
   },
   "literature": [
     "Bouw, Definition 2.1, Lemmas 4.3 and 5.1 and Theorem 6.1 (character dimensions, stable rank, coefficient formula and the generic bound).",
     "Li, Mantovan, Pries and Tang (2019), Theorem 3.2 (Newton slopes for tame three-branch cyclic covers).",
     "SGA 7 I, Expose IX, (12.3.7) and section 12.4 (the dual-graph lattice of the torus).",
-    "Serre and Tate, Theorems 1 and 6 (good reduction via inertia and potential good reduction for CM)."
+    "Serre and Tate, Theorems 1 and 6 (good reduction via inertia and potential good reduction for CM).",
+    "Moonen, sections 2.1, 2.5 and 3.1 (coherent Frobenius, the Hasse–Witt triple and the a-number)."
   ],
   "review": {
     "external_human_review": false,
     "formal_verification": false,
     "pdf_only_internal_review": {
-      "reviewer": "Fresh isolated Codex reader",
-      "final_pdf_sha256": "36b8f2b13985ba09a0881fbecb80059318084f39efc026270494cfb8ef303e0c",
-      "context": "The complete text extracted from the compiled PDF, rendered pages 1, 4, 6, 7 and 8, and the five neutral reader prompts. No repository material or previous conversation was supplied, and the reader made no tool calls.",
+      "reviewer": "Isolated Codex reader",
+      "reviewed_pdf_sha256": "52c272a84010644e6a62e0b6ff0c6920fc549e32a62f07ebecfbfc54dacc75b1",
+      "context": "The reader opened only two successive compiled PDFs with the neutral manuscript prompts, without repository proof notes or certificate code. The digest identifies the later of those two PDFs.",
       "findings": [
-        "Recovered the two cyclic-cover families, the fixed-prime infinite sequence of certified moments, and the exact 5-rank formula and half-dimension limit.",
-        "Explained why moment isolation and coherent Frobenius select the same coefficient, and identified the different quotient orbits used to prove nonordinarity and the toric obstruction to potential CM.",
-        "Reconstructed the quotient-dimension floor invariant and the power-of-two argument ruling out ordinary reduction at all eligible nonidentity classes, and recovered the digit proof of the exact residue test at every multiple of the return length.",
-        "Distinguished the exact criterion for a nonzero normalized residue from classification of the characteristic-zero moments. Identified the exact density 7/24 as a statement at conductor 35 and the least-degree-8n lift as an existence claim.",
-        "The supplied page renders resolved the prime-power exponent obscured by text extraction. The reader found no specific gap in the displayed arithmetic arguments and identified the structural inputs about coherent rank, primitive projectors and toric reduction as specialist checks."
+        "Recovered the two nonordinary families, the residue criteria and the exact 5-rank argument.",
+        "Recovered the moving-branch residue reduction and identified the exact coefficient-span calculation as an essential supplementary artifact.",
+        "Distinguished the effective reconstruction window, one-step block rank and a-number bounds, stable rank, and conditional local rigidity.",
+        "Flagged missing input and good-reduction hypotheses, an unnamed supplement, and a widow in the interpolation paragraph."
       ],
-      "revisions_and_rechecks": "Reflowed the conductor-35 class census before the final build. The isolated reader followed the exact residue criterion and the distinction between its certifying prime classes and characteristic-zero moment orders."
+      "revisions_and_rechecks": "The final source specifies the rational parameter family and tame branch conditions, names the bundled verifier, defines the balanced lift, names the two opposite phases, and keeps the interpolation paragraph together. The final reflow was rebuilt and rendered internally. The isolated reader did not review the final PDF digest."
     },
-    "remaining_work": "Specialist review of the toric and coherent reduction arguments and the priority comparison."
+    "remaining_work": "External specialist review of the toric and coherent reductions, exact reconstruction identities, and marked-rank interpretation."
   }
 }

@@ -4,7 +4,7 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Infinite moment sequences at one fixed prime, an exact residue-class test on a twisted cyclic-cover family that is nonordinary at every good nonsplit prime, and an exact 5-rank formula.",
+  "summary": "Fixed-prime and fixed-cover nonordinary moment families, an exact conductor-18 moving-branch reconstruction theorem, an effective cutoff, and rank-two moment rigidity at conductor 162.",
   "status": "draft",
   "published": false,
   "catalogued_on": "2026-11-26",
@@ -20,11 +20,12 @@
   "verification_record": "verification.json",
   "checksums": "SHA256SUMS.txt",
   "next_steps": [
-    "External specialist review of the toric degenerations, the all-prime residue criterion, and the exact 5-rank calculation."
+    "External specialist review of the toric and coherent calculations, the reconstruction certificates, and the block-rank applications.",
+    "Determine the sphere-cycle detection and rational saturation questions beyond the stated families."
   ],
   "verification": {
-    "scope": "Written proofs, primary-source comparison, edition-specific internal PDF review, and exact replays of the finite examples listed in verification.json.",
+    "scope": "Written proofs, primary-source comparison, internal PDF reader feedback and final render review, exact replays of the case calculations and rational identities.",
     "limits": "External review, formal verification, and priority remain open."
   },
-  "abstract": "A sphere moment can detect Frobenius on one coherent line of a cyclic cover even when its primitive Jacobian factor is nonordinary. For a fixed prime \\(p>3\\) congruent to \\(2\\) modulo \\(3\\), we construct connected covers of unbounded order \\(N=(p^r-1)/(p-1)\\), with odd \\(r\\ge3\\), whose primitive factors are nonordinary at \\(p\\) and are not potentially CM. The sphere phases have least degree \\(N\\). For compatible lower terms integral at \\(p\\), their moments of orders \\((p^{kr}-1)/N\\), \\(k\\ge1\\), multiplied by \\(p^{kr}\\), all reduce to one. At \\(p=5\\) we give an exact primitive \\(p\\)-rank formula and a limiting rank fraction of one half. In a second family, of order \\(n=7M\\) with \\(M\\equiv5\\pmod{14}\\), the primitive factor is nonordinary at every prime \\(p\\not\\equiv1\\pmod n\\) with \\(p\\nmid n\\) and \\(c,1-c\\) units at \\(p\\). An orbit criterion classifies the prime classes where the normalized moment residue is a unit for orders \\((p^{kd}-1)/n\\), where \\(d\\) is the order of \\(p\\) modulo \\(n\\) and \\(k\\ge1\\). At least five classes certify nonzero moments at nonordinary primes. For \\(n=35\\) the nonordinary certifying classes have natural density \\(7/24\\)."
+  "abstract": "A sphere moment can detect Frobenius on one coherent line of a cyclic cover even when its primitive Jacobian factor is nonordinary. For a fixed prime \\(p>3\\) congruent to \\(2\\) modulo \\(3\\), we construct connected covers of unbounded order \\(N=(p^r-1)/(p-1)\\), with odd \\(r\\ge3\\), whose primitive factors are nonordinary at \\(p\\) and are not potentially CM. The sphere phases have least degree \\(N\\). For compatible lower terms integral at \\(p\\), their moments of orders \\((p^{kr}-1)/N\\), \\(k\\ge1\\), multiplied by \\(p^{kr}\\), all reduce to one. At \\(p=5\\) we give an exact primitive \\(p\\)-rank formula and a limiting rank fraction of one half. In a second family, of order \\(n=7M\\) with \\(M\\equiv5\\pmod{14}\\), the primitive factor is nonordinary at every prime \\(p\\not\\equiv1\\pmod n\\) with \\(p\\nmid n\\) and \\(c,1-c\\) units at \\(p\\). An orbit criterion classifies the prime classes where the normalized moment residue is a unit for orders \\((p^{kd}-1)/n\\), where \\(d\\) is the order of \\(p\\) modulo \\(n\\) and \\(k\\ge1\\). At least five classes certify nonzero moments at nonordinary primes. For \\(n=35\\) the nonordinary certifying classes have natural density \\(7/24\\). For conductor \\(18\\) we reconstruct a coherent input uniformly in the branch ratio with quartic odd and radial even lower terms. We give an effective finite reconstruction window and a marked rank-two example that proves local moment rigidity."
 }

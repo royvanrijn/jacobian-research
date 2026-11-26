@@ -11036,6 +11036,35 @@ zero-sum-weight output. This imposes an additional constraint
 on every proposed improving joint-pool certificate.
 [Signed rational odds and actual divisor fibres (OS1–OS4)](ABC_SIGNED_RATIONAL_ODDS_SUMS.md)
 
+One exact shifted numerator of an ordinary signed odds word
+can recover a generic tuple after exposing the larger half
+of its exact private denominators. This gives a fresh radical
+floor \(\lfloor j/2\rfloor/3\) for \(j\) original rows. Two
+bounded complementary shifted-numerator radicals must both
+reach \(j/3\) at saturation. For two different denominator
+roles on a pair, the two shifted numerators recover the
+sources by a binary norm equation when the shift product
+differs from \(4\). At the critical product the algebra
+reduces to two original affine slices. Exact words in two
+denominator roles also price all three actual locks in a
+fixed residue fibre at divisor cost.
+[Shifted numerator and denominator records (ON1–ON5)](ABC_SHIFTED_ODDS_NUMERATOR_AND_DENOMINATOR_RECORDS.md)
+
+An independent outside-graph route fixes the relative
+primitive odds, an odd-prime class of one odds, and the
+mixed parity of the two actual targets. A genus-\(p-1\)
+curve gives the pair fibre bound, with class-group cost
+on precisely two quadratic characters. Reversing the
+descent can avoid the target twist in the field price.
+The more general construction uses different coprime
+orders on two quotients of four linear forms. Its
+coefficient-uniform bound uses separate branch factor
+fields. When the conditional class catalogue is cheap,
+these counts give strict savings near the balanced
+minimum outside-dictionary exponents. Divisor and Pell
+arguments give the affine complete-label counterpart.
+[Mixed-order odds and target descent (MO1–MO3)](ABC_MIXED_ORDER_TARGET_ODDS_DESCENT.md)
+
 ## Fixed-letter pairs and independently supported anchor stars
 
 When two rows share a fixed complete letter, the
@@ -11094,6 +11123,62 @@ radical violates the small-budget cap by a growing
 margin.
 [Adaptive and reducible binomial sectors](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md#exact-power-sectors-with-arbitrary-common-order)
 · [Fresh-output obstruction](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md#a-two-cap-obstruction-to-any-fixed-fresh-output-catalogue)
+
+## Register structure, derivative indices and pair price
+
+The [two-register CF1 bound (JD6)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#cf1-on-projected-deep-registers)
+gives normalized exponent \(1/3-\delta_1+b_0+t_I\) on deep
+projected charts of price \(b_0\) and register price \(t_I\).
+Use either or both foreign registers according to the actual
+modulus needed for one role's numerical diameter. The
+[bounded-doubling extension (JD7)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#additive-structure-of-projected-registers)
+absorbs the residue projections into a fixed-rank affine feature
+model and can count an entire chart with no register enumeration.
+The previous JD5 already excludes the minimum-dictionary endpoint
+at absolute tight depth. JD6 and JD7 additionally give finite-chart
+counts and relative-depth criteria.
+
+The [integral derivative comparison (DI1–DI2)](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md)
+identifies the exact congruence index on the saturated feature
+lattice in the independent evaluation case. At a shared prime with
+two active roles, the two complete-letter directions can be
+eliminated over \(\mathbb Z_p\). The remaining congruences are
+normalized feature differences of the same role. Each leading
+head direction is charged once at its deepest level. Construction
+of a shared derivative evaluation map and extraction of affordable
+features with the three original caps remain open.
+
+The [product-difference terminal (FP5)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#recovery-from-the-product-difference-alone)
+recovers a primitive pair from the exact auxiliary difference
+after paying the joint shared prime support. Every private input
+prime is a unit in this difference and remains on an auxiliary
+operand. Thus the fresh difference typically requires radical
+price \(2/3-o(1)\), and the full outside auxiliary requires
+\(8/3-o(1)\), at near saturation with small overlap and a
+prescribed pool. The [usable-pair test](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#the-savings-test-including-the-usable-pair-loss)
+is \(q+3\zeta+3\rho+6b_0<2\) when these costs are assessed on
+charts of price \(b_0\). The generic small-overlap sector just
+described cannot meet the test. The
+[two-scale least-repair Pell count](ABC_TWO_SCALE_LEAST_REPAIR_PELL.md)
+gives a separate nearly injective pair record in all balanced
+dictionary ranges, with a numerical height lower bound.
+
+## Full-divisor packing and joint CM moments
+
+[Full-divisor packing (MP1–MP3)](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md)
+can buy additional local separation using exact nondefective powers.
+This gives strict savings for subcritical mixed \((2,3,6)\) defects
+on a broad positive-degree band, and a band-independent selection
+bound for a tall square role. Joint averaging across the three
+orientations in MP4 removes the class moment cost at separation
+\(3^{-5/2}\) in each orientation. It gives the exponent
+\(\sum_J\sigma_J+(2/3)\sum_J\tau_J+(1/3)\sum_T b_T\) in the cyclic
+case, with exact odd and even defect prices and extra divisor
+costs. MP5 limits what the known separate class moments can prove
+beyond this threshold. A strict unrestricted small-budget
+coefficient still requires a uniform arithmetic extraction or
+another route. The unit-budget certificate uses its own feasible
+region, so these estimates are tracked separately from it.
 
 ## Complementary words and reduced least-repaired target ratios
 

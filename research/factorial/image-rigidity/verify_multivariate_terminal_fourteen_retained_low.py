@@ -23,6 +23,14 @@ BANDS = {
 }
 
 
+NARROW_PATTERNS = (
+    ((2, 2, -1),),
+    ((2, 2, -1), (2, 2, -1)),
+    ((2, 2, -1), (2, 2, 1)),
+    ((3, 3, -1),),
+)
+
+
 def main():
     import verify_multivariate_terminal_thirteen_shared_light as light
 
@@ -37,6 +45,9 @@ def main():
         for start in starts:
             stop, cap, expected = BANDS[start]
             verify_retained(start, stop, cap, expected, replay)
+            if start == 21:
+                verify_retained(21, 22, Q(1, 14), (4, 28, 4614), replay,
+                                limit=Q(3, 40), patterns=NARROW_PATTERNS)
 
 
 if __name__ == "__main__":

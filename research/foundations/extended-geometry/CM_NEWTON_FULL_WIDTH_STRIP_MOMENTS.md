@@ -915,6 +915,12 @@ The case \(x=0\) also gives a nonzero \(y^3\) term. The remaining
 ratio \(\nu(y)=2\nu(x)\) would force a common root of \(Q,H_0\)
 over the residue field extension, contradicting the resultant.
 
+The [refined off-component charts](CM_NEWTON_331_OFF_COMPONENT_CHARTS.md)
+exclude both directions with \(v-\alpha\) of strictly least
+valuation. In the other chart each of the two points off
+\(L_3\) is confined to one further residue of a transverse
+ratio.
+
 These calculations replay with SageMath 10.9.
 
 ```sh
@@ -1156,6 +1162,10 @@ the two roots, at zero and at infinity are nonzero for integral
 orders. It forces a polynomial \(T\) of degree zero with a zero
 at each of \(\pm1\).
 
+
+The [sphere period calculation](CM_NEWTON_SPHERE_PERIOD_CYCLES.md)
+identifies a relative path for the sphere resolvent and computes
+two limiting sphere variations on the separable conductor-18 model.
 
 The same cyclic-cover factorization yields [one-step rank bounds
 and a rank-two block measured by marked moments](CM_NEWTON_BLOCK_RANK_MOMENTS.md).

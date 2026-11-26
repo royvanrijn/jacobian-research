@@ -81,6 +81,64 @@ error relative to the signed \(d/j\) is bounded by
 summing the errors and integrating \(j\) from \(n\) to
 \(N\) proves (1).
 
+## The physical grid at fixed reflected mean
+
+Assume all unequal rows are shared. At lower order \(n\), let
+\(U_\pm\) be the sums of the row outer losses
+\[
+ U_i=\frac12\sum_{h=1}^{d_i}
+     \log\left(1+\frac{(n-1)d_i}{n\ell_i+h}\right)
+\]
+in the increasing and decreasing orientations, respectively.
+Thus \(U_++U_-=-\log u\) in the endpoint-normalized
+reflected-mean convention. Put \(L_n=\log(2n/(n+1))\).
+
+**Proposition.** The physical comparison scale obeys
+\[
+ \Delta\log(N/n)-\frac{U_+}{nN L_n}
+       \ \le\ \log(G_N/G_n)\
+       \le\ \Delta\log(N/n)+\frac{U_-}{nN L_n}.                  \tag{3}
+\]
+In particular, a physical common root requires the ratio of
+the two normalized root moduli to lie in this interval
+after taking logarithms. Only the integer grid
+\(\Delta\log(N/n)\) contributes to the central term.
+
+For the proof, the trapezoid inequality for the convex function
+\((u+x)^{-2}\) gives, for \(u>0\),
+\[
+  \int_0^\infty\frac{dx}{(u+x)^2}
+       \le\frac1{2u^2}+\sum_{k\ge1}\frac1{(u+k)^2}.
+\]
+The decreasing-function integral comparison gives the other
+inequality, so \(0\le1-u\psi'(1+u)\le1/(2u)\).
+The correction to the derivative of \(\log G_j\) for an
+increasing row is therefore nonpositive and has magnitude
+at most \(d_i/(2j^2\ell_i)\), by the shared-row integral above.
+For a decreasing row the sign reverses.
+On the other hand,
+\[
+ U_i\ \ge\ \frac{d_i}{2}
+     \log\left(1+\frac{n-1}{n\ell_i+1}\right)
+ \ \ge\ \frac{d_i}{2\ell_i} L_n .
+\]
+The first inequality uses \(h\le d_i\) and
+\(d_i/(n\ell_i+d_i)\ge1/(n\ell_i+1)\).
+For the second, \(\ell\log((n\ell+n)/(n\ell+1))
+=\int_1^n \ell/(n\ell+x)\,dx\) increases with \(\ell\ge1\).
+Integrating \(j^{-2}\) from \(n\) to \(N\) proves (3).
+
+The signed slot information can give a one-sided refinement.
+With \(T_{n,h}=(n-1)d_i/(2(n\ell_i+h)+(n-1)d_i)\),
+write \(P=\tfrac12\sum_i\epsilon_i\sum_h T_{n,h}^2\), with
+\(\epsilon_i\) positive on increasing rows. If
+\(p_{\max}>0\) satisfies
+\(T^2/(2\operatorname{artanh} T)\le p_{\max}\) for every slot,
+then \(P\le p_{\max}U_+\).
+Hence when \(s=P/(p_{\max}(-\log u))\ge0\), one has
+\(U_-\le (1-s)(-\log u)\), giving the smaller upper error
+in (3). Reversing the columns gives the symmetric conclusion.
+
 ## The absolute scalar bound
 
 A candidate with \(N\ge J\) is already excluded by the

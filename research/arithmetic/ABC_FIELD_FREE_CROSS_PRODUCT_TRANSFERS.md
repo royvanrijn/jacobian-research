@@ -179,6 +179,96 @@ roles for the prescribed \(P,Q\).
 [Arbitrary-coefficient two-cheapest count (MCB2)](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md#bounded-group-dictionaries-with-arbitrary-fixed-coefficients)
 · [Effective radical budgets (EB4–EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
 
+### Recovery from the product difference alone
+
+**FP5.** Use the notation of FP1, and exclude the primitive row
+\((1,1,2)\) as well as equal or swapped rows. Write
+\(Z=|P-Q|>0\). Fix a prescribed polynomial-height prime pool
+\(\mathcal P\), and for each pair let \(S\) be the squarefree product
+of its shared input primes outside \(\mathcal P\), where a prime is
+shared if it divides both \(a_1b_1c_1\) and \(a_2b_2c_2\). If
+\(S\le n^\beta\), and the radical of \(Z\) outside the input primes
+and \(\mathcal P\) is at most \(n^s\), then the pair count is
+\[
+                       O(n^{\beta+s}X^\varepsilon).
+\]
+In particular an exact prescribed \(Z\) has multiplicity at most
+\(O(n^\beta X^\varepsilon)\). There is no shared full-divisor or
+numerical-height requirement in this recovery bound.
+
+Indeed \(h+j=u(a_1-b_1)\) and \(h-j=v(b_2-a_2)\) are both nonzero.
+With \(d,G\) from FP1, fix their exact values at subpower cost
+given \(S,\mathcal P\). Knowing \(Z\), the identity \(|hj|=d Z\)
+enumerates signed \(h,j\) at divisor cost. Now \(u\mid h+j\) and
+\(v\mid h-j\), so these scaling factors also have at most
+divisor-many choices. Then \(c_1=vG,\ c_2=uG\) and the two
+summand differences recover the four summands by integer halves.
+All enumerated integers have bounded polynomial height in \(X\).
+Every prime private to either original row divides exactly one of
+\(AB,CD\) and is prime to \(d\), hence is a unit in \(Z\). For a
+prime on an original summand this follows directly from the scaling
+definitions and primitivity. A private prime on \(c_1\) divides \(v\)
+and is prime to \(ua_1b_1\), with the symmetric argument for \(c_2\).
+The old prime support of \(Z\) is therefore contained in \(S\) and
+\(\mathcal P\). Enumerate the remaining radical at cost \(n^s\)
+and fix its full powers together with those on \(S,\mathcal P\)
+at subpower cost. The union of old support and normalization
+records is paid once.
+
+Here is the implication for the FP2 budget. Suppose the two rows'
+original radicals outside \(\mathcal P\) each have price at least
+\(1-\gamma\). If \(S\le n^\beta\), the private original primes
+supply at least \(2-2\gamma-2\beta\) to the auxiliary radical.
+Indeed each lies on exactly one of \(P,Q\) after normalization.
+If the whole primitive auxiliary has outside radical at most
+\(n^q\), its fresh difference therefore has price at most
+\(q-2+2\gamma+2\beta\), and the selected pair exponent is bounded by
+\[
+                       q-2+2\gamma+3\beta
+\]
+up to arbitrarily small allowances. In a saturation-size sample
+of \(n^{2/3-\rho}\) such pairs this forces
+\(q\ge 8/3-\rho-2\gamma-3\beta\).
+For generic pairs near balance, EB5 lets \(\gamma,\beta\) be
+arbitrarily small after fixing the prescribed pool and then the
+budget, with height tending to infinity at that budget. For
+\(\gamma\) use the cap on pool mass and the fact that low total raw
+mass itself saves by EB4. For \(\beta\), apply EB5 with one input
+as an anchor, then sum over anchors. Thus on the exponent-full
+generic sector the FP2 auxiliary needs \(q\ge8/3-o(1)\). This
+lower bound rules out applying the savings test to typical
+low-overlap pairs. A separate selection with substantial shared
+support or a different auxiliary is needed.
+
+The argument gives an explicit inequality for any selected pairs
+with the stated raw lower bounds. An arbitrary power-thin selection
+need not inherit the generic low-overlap property.
+[Effective radical budgets (EB4–EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
+
+### The savings test including the usable pair loss
+
+Suppose a chart of \(N\) original rows supplies at least
+\(N^2 n^{-\rho}\) ordered usable pairs, up to fixed small exponent
+allowances. The pairs must satisfy FP2's actual auxiliary height,
+outside radical \(n^q\), and missing parity cap \(n^\zeta\).
+Then the FP2 upper bound and this lower bound give
+\[
+   N\ll n^{q/6+(\zeta+\rho)/2+\eta}X^\varepsilon .
+\]
+For a cover by charts of price \(b_0\), the strict small-budget
+condition is \(q+3\zeta+3\rho+6b_0<2\) by a fixed margin.
+One may also apply FP2 to at least \(n^{2/3-\rho}\) pairs extracted
+directly from a saturation-sized family, in which case \(\rho\)
+already includes the extraction loss and no separate chart cost
+should be counted for an estimate uniform on that selection.
+
+Here \(q\) is the radical of the **primitive** auxiliary after
+the prescribed free support and actual cancellation in FP1.
+Only unrecorded common parity contributes to \(\zeta\). An almost
+injective pair recovery does not imply the auxiliary cap. In
+particular a new pair record must either lead to a genuine auxiliary
+to which FP2 applies or prove a separate counting bound.
+
 The parity record is cheap on typical pairs.
 Suppose all three original cap exponents are at
 most \(1/3+\tau\). For any fixed first row, a

@@ -284,3 +284,16 @@ In these bounds \(Qm\ge j_0\), so a starting index
 before the first coefficient is covered as well.
 Cases beyond the stated local exclusions still require
 a higher-precision comparison or an independent place.
+
+## Later exclusions in the two residue types
+
+In one-axis resonance, [a missing linear term](ZERO_CONSTANT_ONE_AXIS_MISSING_LINEAR.md)
+gives the four-window at every positive start.
+The [combined one-axis exclusions](ZERO_CONSTANT_ONE_AXIS_THREE_HALVES_BOUNDARY.md)
+force \(e\ne0\) and \(v(e)\ge7/4\) for a five-zero block when
+\(\alpha=1\) is the unit axis. Both statements allow ramification.
+In the pure-cross case with \(s>1\), the
+[integer-anchor argument](ZERO_CONSTANT_PURE_CROSS_INTEGER_ANCHORS.md)
+gives unit normalized moments when the second-order coefficient
+vanishes, and exclusions in deep integer congruence classes
+when it is nonzero.
