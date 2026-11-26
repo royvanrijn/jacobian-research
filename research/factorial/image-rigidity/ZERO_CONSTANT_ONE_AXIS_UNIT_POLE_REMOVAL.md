@@ -5,12 +5,14 @@ Let \(f=x^2/2+\beta xy+\gamma y^2/2+dx+ey\) over a valued extension of \(\mathbb
 **Theorem.** Five consecutive factorial moments of \(f\) at positive indices cannot all vanish in any of the following cases.
 
 - \(v(\gamma)<v(e)\).
-- \(e\ne0\) and \(v(\gamma)>v(e)+1\). This includes \(\gamma=0\).
+- \(e\ne0\) and \(v(\gamma)>v(e)+1\). This includes \(\gamma=0\). The same holds at equality if \(\overline{\gamma/(2e)}\ne1\).
+- \(0<v(\gamma)-v(e)<1\) at odd starting indices.
+- \(v(\gamma)-v(e)=1\) at even starting indices, regardless of the residue of \(\gamma/(2e)\).
 - \(e=\gamma=0\).
 
 If \(v(\gamma)=v(e)<\infty\), let \(\zeta\) be the ratio of the two roots of \(Z^2-\overline{\gamma/e}Z+1\) in the algebraic residue field. A five-zero block starting at \(n\ge1\) requires
 \[
-                     \zeta^{n+2}=1\quad\text{or}\quad\zeta^{n+3}=1.
+                     \zeta^{n+2}=1.
 \]
 The conclusions allow ramified coefficient fields. When the residue field is \(\mathbb F_2\), the equal-valuation condition has \(\operatorname{ord}(\zeta)=3\); in larger residue fields the ratio need not have order three.
 
@@ -55,12 +57,12 @@ Set \(\rho=(\gamma d-\beta e)/(\gamma-\beta)\) and \(C_i=B_i+\rho B_{i-1}\). Fiv
                 +(\gamma-\beta)z_i=0,\quad i=j,j+1,j+2,
                 \qquad z_i=C_i/A_{i-1}.                     \tag{3}
 \]
-If the two consecutive differences of the \(z_i\) have valuations \(L\) and \(L+\sigma\), with \(v(z_{j+1})\ge L+\sigma\) and \(\sigma>0\), then \(\beta\ne1\) and
+If the two consecutive differences of the \(z_i\) have valuations \(L\) and \(L+K\), with \(v(z_{j+1})>L\) and \(K>0\), then \(\beta\ne1\) and
 \[
- v(q_{j+1})=v(q_j)+\sigma,\qquad
+ v(q_{j+1})=v(q_j)+K,\qquad
  v(1-\beta)= v(e-\beta d)=L-v(q_j).                           \tag{4}
 \]
-Indeed the differences of (3) give the first equality and \(v(1-\beta)=L-v(q_j)<L+\sigma\). The middle equation gives the remaining equality since \(r_{j+1}\) is a unit. By (2), \(v(q_j)<1\), since at valuation at least one the next difference has valuation exactly one. Thus \(\lambda=v(d)>0\) is finite and
+Indeed the differences of (3) give the first equality and \(v(1-\beta)=L-v(q_j)<v(z_{j+1})\). The middle equation gives the remaining equality since \(r_{j+1}\) is a unit. Allow \(K=+\infty\) if the second difference is zero. By (2), \(v(q_j)<1\), since at valuation at least one the next difference has valuation exactly one. Thus \(\lambda=v(d)>0\) is finite and
 \[
                        v(q_j)=(2j-1)\lambda.                \tag{5}
 \]
@@ -75,13 +77,9 @@ If \(v(\gamma)=v(e)\), normalize \(B_i\) by \(e^i\), and put \(g=\overline{\gamm
                  =1+\frac{gT}{1+gT+T^2},
 \]
 taking the constant coefficient to be one. In fact
-\(\rho-e=\gamma(d-e)/(\gamma-\beta)\) has valuation greater than \(\sigma\). The polynomial \(Z^2-gZ+1\) has distinct unit roots in the algebraic residue field. The coefficient at \(i>0\) is zero precisely when their ratio has \(i\)-th power one. If the claimed torsion condition fails, \(v(C_j)=j\sigma\) and \(v(C_{j+1})=(j+1)\sigma\), while \(v(C_{j+2})\ge(j+2)\sigma\).
+\(\rho-e=\gamma(d-e)/(\gamma-\beta)\) has valuation greater than \(\sigma\). The polynomial \(Z^2-gZ+1\) has distinct unit roots in the algebraic residue field. The coefficient at \(i>0\) is zero precisely when their ratio has \(i\)-th power one. If the claimed torsion condition fails, \(v(C_j)=j\sigma\) while \(v(C_{j+1})\ge(j+1)\sigma\) and \(v(C_{j+2})\ge(j+2)\sigma\).
 
-In either situation (4) applies with \(L=j\sigma\). We claim \(\sigma=2\lambda\) with \((2j+1)\lambda\le1\). If \((2j+1)\lambda<1\), (2) proves this immediately. If \((2j+1)\lambda>1\), write \(\nu=(2j-1)\lambda\). Then \(\sigma=1-\nu\), and
-\[
- j\sigma-\nu<\lambda,\qquad j\sigma-\nu<\sigma .
-\]
-The first follows from \(j\sigma-\nu-\lambda=j[1-(2j+1)\lambda]<0\), and the second from \(\nu>(2j-1)/(2j+1)>(j-1)/j\). This contradicts the valuation of \(e-\beta d\) in (4), since \(v(e)\ge\sigma\). In the equality case \((2j+1)\lambda=1\), (2) gives \(\sigma\ge2\lambda\); then \(v(e-\beta d)=\lambda\) and (4) gives \(\sigma=2\lambda\).
+In either situation (4) applies with \(L=j\sigma\), \(K\ge\sigma\). We claim \(\sigma\le2\lambda\). If \(\sigma>2\lambda\), (4) gives \(v(e-\beta d)=j\sigma-(2j-1)\lambda>\lambda\), although \(v(e)\ge\sigma>2\lambda\) makes the left side exactly \(\lambda\). Thus the inequality holds. If \(\sigma=2\lambda\), we have \((2j+1)\lambda\le1\): otherwise (2) gives \(K=1-(2j-1)\lambda<\sigma\). If \(\sigma<2\lambda\), then \((n+1)\sigma<(2j-1)\lambda<1\) by (5).
 
 Use the exact binary [matching series](QUADRATIC_STRONG_FACTORIAL_WINDOWS_FROM_MATCHINGS.md#2-the-universal-matching-generating-function)
 \[
@@ -92,15 +90,19 @@ Use the exact binary [matching series](QUADRATIC_STRONG_FACTORIAL_WINDOWS_FROM_M
 \]
 Here the congruence means valuation at least one, even in a ramified field. The matching proof is a universal polynomial reduction modulo the integer two, so it applies over the quotient of the valuation ring by \(2\), which can have nilpotents. It does not merely give agreement of residues modulo the maximal ideal.
 
-Factor \(1+T+d^2T^2=(1+aT)(1+uT)\), with \(a\) a unit and \(v(u)=2\lambda=\sigma\), using the simple residue root for \(a\). Factor \(1+\gamma T+e^2T^2=(1+bT)(1+cT)\) over a valued extension. If \(v(e)>\sigma\) the two valuations are \(\sigma\) and greater than \(\sigma\), including infinity if \(e=0\). When \(v(e)=\sigma\), both are \(\sigma\). This follows by comparing the valuations of their sum and product.
+Factor \(1+T+d^2T^2=(1+aT)(1+uT)\), with \(a\) a unit and \(v(u)=2\lambda\), using the simple residue root for \(a\). Factor \(1+\gamma T+e^2T^2=(1+bT)(1+cT)\) over a valued extension. If \(v(e)>\sigma=v(\gamma)\) the two valuations are \(\sigma\) and greater than \(\sigma\), including infinity if \(e=0\). When \(v(e)=v(\gamma)=\sigma\), both are \(\sigma\). This follows by comparing the valuations of their sum and product.
 
-Multiply (6) by \(1+aT\). Of the remaining poles, either two or three of \(u,b,c\) have valuation \(\sigma\), with any other having higher valuation. At coefficient \(n+i\), \(i=1,2,3\), the numerator term of degree one has unit coefficient and yields valuation at least \((n+i-1)\sigma\). After division by \(u^{n+i-1}\) its residue is, up to a unit, the complete homogeneous polynomial of degree \(n+i-1\) in the minimum-valuation pole parameters divided by \(u\). The other numerator terms are higher, since \(v(de)>\sigma\). With two or three unit parameters these complete homogeneous polynomials have no two or three consecutive zeros, respectively. Their geometric generating function has denominator of that degree with nonzero leading coefficient, so consecutive zeros would propagate back to the constant coefficient one.
+Multiply (6) by \(1+aT\). Write \(r_0\) for the number of remaining parameters \(u,b,c\) of minimum valuation \(\sigma\). If \(\sigma<2\lambda\), then \(r_0\le2\). Otherwise \(r_0\le3\). At coefficient \(n+i\), \(1\le i\le r_0\), the numerator term of degree one has unit coefficient and yields valuation at least \((n+i-1)\sigma\). After division by a minimum-valuation parameter to the power \(n+i-1\), its residue is, up to a unit, the complete homogeneous polynomial of that degree in the normalized minimum-valuation parameters. The other numerator terms are higher, since \(v(de)>\sigma\). The complete homogeneous polynomials of \(r_0\) unit parameters have no \(r_0\) consecutive zeros. Their geometric generating function has denominator of that degree with nonzero leading coefficient, so consecutive zeros would propagate back to the constant coefficient one.
 
-But \((n+2)\sigma=2j\lambda<1\). Thus among \(n+1,n+2,n+3\) one coefficient on the right has valuation below one. On the left those coefficients vanish exactly by the moment hypothesis. This proves the strict gamma-dominant exclusion and the equal-valuation torsion condition.
+If \(\sigma<2\lambda\) then \((n+1)\sigma<1\) as above, and if \(\sigma=2\lambda\) then \((n+2)\sigma=2j\lambda<1\). Thus among \(n+1,\ldots,n+r_0\) one coefficient on the right has valuation below one. On the left those coefficients vanish exactly by the moment hypothesis. This proves the strict gamma-dominant exclusion and the equal-valuation torsion condition.
 
 ## The strongly linear \(y\)-axis
 
-Suppose \(e\ne0\) and \(v(\gamma)>v(e)+1\), and put \(\sigma=v(e)\). In \(B_i/e^i\), the axis recurrence differs from that of the constant unit sequence by terms of valuation greater than one. Since \(\rho/e=1+\) terms of valuation greater than one, it follows that \(v(C_i)=1+i\sigma\) at every \(i>0\). Thus (4) applies with \(L=1+j\sigma\).
+Suppose \(e\ne0\), put \(\sigma=v(e)\) and \(z=\gamma/e\), and first take \(v(z)\ge1\). The axis recurrence gives \(B_i/e^i=1+\ell_i z+\) terms of valuation at least two, where \(\ell_0=0,\ell_1=1,\ell_i=(2i-1)+\ell_{i-2}\). Therefore \(\ell_i+\ell_{i-1}=i^2\). Also \(\rho/e-1\) has valuation strictly above one, so
+\[
+                     C_i/e^i=2+i^2 z+o_v(1),                 \tag{7}
+\]
+where \(o_v(1)\) means a term of valuation strictly above one. Thus \(v(C_i)=1+i\sigma\) at every \(i>0\) if \(v(z)>1\), or if \(v(z)=1\) and the residue of \(z/2\) differs from one. In these cases (4) applies with \(L=1+j\sigma\) and \(K=\sigma\).
 
 Again (5) holds. If \((2j+1)\lambda\le1\), (2) gives \(\sigma\ge2\lambda\), forcing \(v(e-\beta d)=\lambda\), whereas \(L-v(q_j)\ge1+\lambda\). If \((2j+1)\lambda>1\), then \(\sigma=1-(2j-1)\lambda\) and
 \[
@@ -111,10 +113,12 @@ Unless \(\sigma=\lambda\), the left side is the smaller of \(\sigma,\lambda\), a
 
 In (6), remove the unit pole as above. The small root from the first denominator has valuation \(2\lambda\), and the two roots from the second denominator have valuation \(\lambda\). Both normalized residues there are one since \(\gamma/e\) reduces to zero. Their complete homogeneous coefficients have no adjacent zeros. The numerator's quadratic coefficient has valuation \(2\lambda\), strictly higher than the pole scale \(\lambda\). Among the coefficients at \(n+1,n+2\) one thus has valuation \(n\lambda\) or \((n+1)\lambda<1\). This contradicts the exact zeros after removing the unit pole.
 
+For the parity assertions, first suppose \(0<v(z)<1\) and \(j\) is odd. The linear expansion in (7), now with error of valuation strictly above \(v(z)\), gives \(v(C_j)=j\sigma+v(z)\); even \(i\) have \(v(C_i)>i\sigma+v(z)\). Thus the first difference of the \(z_i\) in (3) has valuation \(L=j\sigma+v(z)\) and the second is higher, with \(v(z_{j+1})>L\). Under \(v(z)=1\) and \(\overline{z/2}=1\), the same argument works for even \(j\), with \(L=j\sigma+1\). In both cases (4) and (5) apply. If \(\sigma\ge2\lambda\) then \(L-v(q_j)>\lambda=v(e-\beta d)\), a contradiction. Hence \(\sigma<2\lambda\). The two poles from \(1+\gamma T+e^2T^2\) are now the sole minimum-valuation poles after removing the unit pole, and \((n+1)\sigma<(2j-1)\lambda<1\). Exactly the preceding geometric coefficient argument gives a contradiction.
+
 Finally if \(e=\gamma=0\), all positive \(B_i\) vanish. Three force rows (3) would give two adjacent \(q_i=0\) if \(\beta\ne1\), contrary to (2). For \(\beta=1,d\ne0\) the forcing is already nonzero in a single row. For \(\beta=1,d=0\) the phase is \((x^2+2xy)/2\) and all moments are \(2^j(j!)^2\).
 
 The unresolved one-axis valuations include \(v(e)\le v(\gamma)\le v(e)+1\) outside the exclusions above. These statements concern the five-window. A support-specific shorter window requires its own argument.
 
 ## Exact checks
 
-The [finite replay](verify_zero_constant_one_axis_unit_pole_removal.py) checks the interior and axis identities, the consecutive slope formulas, and matching reduction modulo two in ramified finite coefficient rings.
+The [finite replay](verify_zero_constant_one_axis_unit_pole_removal.py) checks 1,458 interior and axis identities, 102 consecutive slope identities, 1,000 first-order axis identities, and 8,320 matching coefficients modulo two in ramified finite coefficient rings.

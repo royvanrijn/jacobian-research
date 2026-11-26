@@ -7,9 +7,12 @@ conductor. At larger indices there is one further interval pole for
 each angular input. Its contribution is coupled to odd-height terms
 and can cancel a nonzero coherent input. A longer unmarked window
 recovers both sets of inputs for all but finitely many values of any
-one odd lower coefficient when the others are fixed. In the conductor-18
-example, finite identities recover the coherent component with both
-radial coefficients and one positive-angle odd coefficient arbitrary.
+one odd lower coefficient when the others are fixed. For the
+conductor-18 top polynomial, the prime class \(25\bmod36\) already
+gives a nonzero shift-zero residue throughout the full strip.
+The longer windows address \(7\bmod36\), where that residue vanishes.
+A weight argument also excludes Hamiltonian brackets from the marker
+space and excludes generic-fibre exactness for the coherent profiles.
 
 ## The full-width theorem
 
@@ -452,11 +455,28 @@ and \(A_0=[w^{m/2}](w-1)^{4m}\) is nonzero because
  \quad\text{in characteristic }p.
 \]
 The \(k=0\) row is \(A_0/13\), for any lower terms in the strip.
+In particular the even class contains a fixed-prime witness.
+
+**Corollary (the conductor-18 witness at 61).**
+At \(p=61\) the order is \(m=44\) and \(\ell=54\).
+For every phase with this top polynomial and any compatible lower
+terms integral at a place above \(61\), the normalized residue is
+\[
+ 61\,\mathcal A(f^{44})
+      \equiv \frac{1}{13}\binom{54}{22}\equiv5\pmod{61}.
+\]
+This single moment certifies nonvanishing throughout that local
+integrality class. The same prime class gives a nonzero shift-zero
+moment at every sufficiently large prime for each fixed algebraic
+phase on the full strip.
 For \(p\equiv7\pmod{36}\), \(m\) is odd, and the angular bound
 \(7m<6p\) and parity leave only \(A_1,A_3,A_5\). Their indices
 in \(w\) are \((m+p)/2+ip\) for \(i=0,1,2\), with
 \(0\le(m+p)/2\le\ell\). The same factorization gives
 \((A_1,A_3,A_5)=(A,-2A,A)\) with \(A\ne0\).
+In this harder prime class the shift-zero residue is zero regardless
+of the lower terms. The later reconstruction windows address this
+case.
 
 For the \(C_j\), compare the maximum angle with \(7m\).
 A deficit-one factor costs at least five in angle, and a
@@ -652,8 +672,10 @@ one of the moments of order \(m+kp\), \(0\le k\le16\), is
 nonzero. The same large-prime conclusion holds when \(b\ne0\)
 and \(b^2,b_1/b,b_2/b,c,e\) are integral at one place above
 \(331\). For every phase with all coefficients integral at a
-place above \(331\), one of these moments is nonzero at
-\(p=331\), \(m=239\).
+place above \(331\), one of the seventeen moments
+\(\mathcal A(f^{239+331k})\), \(0\le k\le16\), is nonzero.
+The final tested order is \(5535\). This includes every choice
+of algebraic-integer coefficients.
 
 At \(p\equiv25\pmod{36}\) the shift-zero moment is nonzero
 as before. At \(p\equiv7\pmod{36}\) use the coherent line
@@ -704,7 +726,10 @@ linear combination over \(\mathbb Q\). The weights and the symmetry
 restriction on \((\ell_1,v)\mapsto(-\ell_1,-v)\) bound which monomials
 the search uses. The checked product gives the proof of the identity.
 Clearing denominators excludes finitely many primes and proves
-the first assertion.
+the first assertion. Each slice identity also lifts to an identity
+\(1=\sum G_k S_k+xH\) over \(\mathbb Q\), where \(x\) is the
+coordinate set to zero. Thus each of \(\ell_1,\ell_2,v,w\) is a unit
+in the characteristic-zero residual quotient.
 
 The weights also give a denominator bound for undoing the
 odd-coefficient substitutions. Before elimination give \(u\)
@@ -741,6 +766,401 @@ local integrality class, even when one of the eliminated
 coefficients has a pole above \(331\).
 The rational unit-ideal question on the unrestricted
 \(b_1b_2ce\ne0\) locus remains open.
+
+### The projective boundary at 331
+
+Use the characteristic-zero parameters
+\((r,\ell,h,v,w)=(b^2,b_1/b,b_2/b,c,e)\) in \(S_7,\ldots,S_{16}\).
+All coefficients of these ten rows are \(331\)-integral.
+Homogenization uses the degrees over \(\mathbb Q\) before
+reducing coefficients. For ordinary homogenization the
+geometric boundary over \(\mathbb F_{331}\) is the union
+\(\ell=0\) and \(\ell=8v\) in \(\mathbb P^4\).
+For weights \((2,1,2,1,2)\) the geometric boundary is the union
+of the following three weighted projective curves:
+\[
+ \begin{array}{c|l}
+ L_1 & r=\ell=h=0\\
+ L_2 & r=h=0,\quad \ell^2-8\ell v+17w=0\\
+ L_3 & r=0,\quad \ell=8v,\quad h=17w .
+ \end{array}
+\]
+The [boundary checker](verify_cm_newton_full_width_projective_boundary.py)
+substitutes each component in the corresponding rational leading
+forms. Thus these boundary components occur already over \(\mathbb Q\).
+For the reverse inclusion in characteristic 331, it verifies
+membership of \((\ell(\ell-8v))^4\) in the ordinary leading ideal.
+For the weighted ideal it checks membership of \(r^9\) and the
+seventh powers of
+\[
+ h(h-17w),\qquad h(\ell-8v),\qquad
+ (\ell^2+h)(\ell-8v)-\ell(h-17w).
+\]
+Splitting according to \(h=0\) and then \(\ell=0\) gives the
+three listed components over the algebraic closure. In particular
+neither unsaturated homogeneous system has empty boundary.
+
+**Proposition (local restrictions on a residual zero).**
+Suppose an algebraic point annuls \(S_7,\ldots,S_{16}\), and
+let \(\nu\) be a valuation above \(331\), normalized by \(\nu(331)=1\).
+Put
+\[
+ \delta=\min\{\nu(r)/2,\nu(\ell),\nu(h)/2,\nu(v),\nu(w)/2\}.
+\]
+Then \(\delta\le-1/22\) and \(\nu(r)>2\delta\). Its weighted
+reduction cannot lie on \(L_1\). A point on \(L_2\) with
+\(\ell\ne0\) must have
+\[
+             v/\ell\in\{2/17,\,5/56,\,1/8\}
+             \quad\text{in characteristic }331 .
+\]
+Thus any reduction outside \(L_3\) is among the two points on
+\(L_2\) with \(v/\ell=2/17\) or \(5/56\).
+
+To see the valuation bound, lift the coefficient multipliers of
+the weight-22 unit identity over \(\mathbb F_{331}\) to
+\(\mathbb Z_{(331)}\). The weighted leading forms of the ten
+rows stay nonzero modulo 331, so the lifted combination still
+has weight at most 22 and equals \(1+331H\) with \(H\)
+\(331\)-integral. At a zero of the residuals,
+\(\nu(H)=-1\). Each monomial in \(H\) has valuation at least
+\(22\delta\) if \(\delta<0\), and valuation at least zero
+otherwise. This gives the bound on \(\delta\).
+In the valued field choose \(\lambda\) of valuation
+\(-\delta\), extending the field if a square root is needed.
+Scale the coordinates by \(\lambda\) to their respective
+weights. The scaled coordinates are integral and at least one
+is a unit. Reducing the homogenized equations with \(T=\lambda\)
+puts the point on the weighted boundary, so \(\bar r=0\).
+
+For the \(L_1\) exclusion with \(w\ne0\), normalize \(w=1\)
+by a further unit scaling and put \(\tau=T^2\). In this chart
+the transverse coordinates \(r,\ell,h\) and \(\tau\) are in
+the maximal ideal. The checker solves the pivot equations
+from shifts \((7,8,9)\) and \((7,8,10)\) through order three in
+\(\tau\), over \(\mathbb Q(v)\). The two pivot determinants
+reduce to coprime polynomials. At least one triple therefore
+has unit determinant at the residue value of \(v\). For this
+triple the actual transverse coordinates agree with the computed
+expansion modulo \(\tau^4\). Indeed the difference of the two
+pivot evaluations factors through the coordinate differences,
+with matrix reducing to the invertible pivot Jacobian.
+The constant, linear and quadratic residual terms vanish exactly.
+The reduced cubic numerators have gcd 1, with denominators
+units at every point where the pivot determinant is a unit.
+Some residual consequently has a unit cubic term and cannot
+vanish.
+
+At the remaining point of \(L_1\), normalize \(v=1\) and put
+\(d=\ell^2-8\ell+17w\), \(\tau=T^2\).
+Shifts 7 and 8 solve for \(r,h\) with unit Jacobian.
+For weights \((1,1,2)\) on \((\ell,d,\tau)\), the checker
+uses exact jets through weight ten and row combinations with
+\(331\)-integral multipliers. The radical of their reduced
+initial ideal is \((\ell d,\tau)\). If
+\(\rho=\min\{\nu(\ell),\nu(d),\nu(\tau)/2\}\), scaling by
+an element of valuation \(\rho\) leaves just two possible
+directions, the \(d\)-axis and the \(\ell\)-axis.
+
+On the \(d\)-axis put \(\ell=d L\), \(\tau=d^2 Z\), with
+\(L,Z\) in the maximal ideal. The equation \(S_9/d^6=0\) on the
+implicit branch has unit derivative in \(L\), and its solution
+has \(L(d,0)=0\). The weight-seven combination with reduced
+leading form \((8\ell+d)\tau^3\), divided by \(d^7\) and
+evaluated on this branch, has unit \(Z^3\) coefficient.
+The first three coefficients in \(Z\) vanish exactly. To see
+this, work first with \(d\) invertible and \(\tau=0\), where
+\(w=d/17\). Over a field extension one may normalize \(w=1\).
+The shifts \(7,8,9\) implicit solution in that chart has all
+residuals of order at least three in \(\tau\). The two solutions
+agree after a change of chart by uniqueness of the formal
+implicit solution. The order statement therefore holds
+identically in \(d\), including for the integral power series
+on the \(d\)-axis. Because \(\tau\ne0\), the unit cubic
+coefficient excludes this direction.
+
+On the \(\ell\)-axis put \(d=\ell D_0,\ \tau=\ell^2 Z\)
+with \(D_0,Z\) in the maximal ideal. In the
+\((d,\tau)\)-jets of weights \((1,2)\), shift 9 begins
+in weight five and its leading coefficients are divisible
+by \(\ell\). Subtracting the exact multiples of this row
+that cancel weight five in the other rows leaves weight-six
+coefficients also divisible by \(\ell\). The checker verifies
+integrality at the chart point for these divisions. After the
+change of variables, divide shift 9 by \(\ell^6\) and the
+other combinations by \(\ell^7\). Their lowest-weight forms
+in \((D_0,Z)\) reduce to an ideal with radical \((D_0,Z)\).
+A second scaling by \(\min\{\nu(D_0),\nu(Z)/2\}\) contradicts
+that radical. This excludes the last point on \(L_1\).
+
+For \(L_2\) with \(\ell\ne0\), normalize \(\ell=1\) and set
+\(d=17w+1-8v\). The checker solves shifts 7 and 8 for \(r,d\)
+in terms of \(h,\tau\). If \(J\) is their transverse determinant,
+write \(h=J^2 x,\ \tau=J^2 y\). Outside the three listed
+residues, \(J\) is a unit. The checker obtains the exact
+expansions through weight six in \((x,y)\) of weights \((1,2)\).
+The leading terms of shifts 9 and 10 after one linear cancellation
+are \(x^5 Q(y/x^2)\) and \(x^6 H_0(y/x^2)\), of weights
+five and six. Here \(Q\) has degree two, \(H_0\) has degree
+three, and \(Q(0)\), both leading coefficients and the resultant
+are units outside the three residues. All lower-weight terms
+vanish over \(\mathbb Q(v)\). The truncation gives the actual
+coordinates to valuation at least \(7\min\{\nu(x),\nu(y)/2\}\)
+by the same unit-Jacobian difference argument.
+If \(\nu(y)\le\nu(x)\), the \(y^3\) term has strictly smallest
+valuation in the weight-six row. If \(\nu(x)<\nu(y)<2\nu(x)\),
+the \(xy^2\) term has strictly smallest valuation in the
+weight-five row. If \(\nu(y)>2\nu(x)\), the \(x^5\) term does.
+The case \(x=0\) also gives a nonzero \(y^3\) term. The remaining
+ratio \(\nu(y)=2\nu(x)\) would force a common root of \(Q,H_0\)
+over the residue field extension, contradicting the resultant.
+
+These calculations replay with SageMath 10.9.
+
+```sh
+sage -python research/foundations/extended-geometry/verify_cm_newton_full_width_projective_boundary.py
+```
+
+### Varying the conductor-18 branch ratio
+
+Let \(P_\lambda=(z-1)^4(z-\lambda)^4\), with \(\lambda\ne0,1\).
+Keep \(\deg B\le5\) and \(D=-\lambda^4 z^{-1}+c+ez\).
+Put \(Q_s=(z-1)^2(z-\lambda)^2=\sum_{i=0}^4q_i z^i\).
+In good characteristic \(p\equiv7\bmod18\), factor
+\[
+ P_\lambda^m=Q_s(z)^p(z-1)^\ell(z-\lambda)^\ell,\qquad
+                 \ell=4m-2p=(8p-2)/9.
+\]
+The last two factors have degree \(2\ell<2p\).
+Writing \(X,Y\) for their coefficients at \(m,m+p\) gives
+\(A_j=q_j^p X+q_{j-1}^p Y\), with out-of-range \(q_i=0\).
+Since \(q_0=\lambda^2\), the zero shift forces \(X=0\) when its
+residue vanishes. The full coherent source condition gives
+\(Y\ne0\). The coherent component is then proportional to
+\((q_0^p,\ldots,q_4^p)\) at indices \(1,\ldots,5\), with
+\[
+      (q_0,\ldots,q_4)=
+      (\lambda^2,-2\lambda(\lambda+1),\lambda^2+4\lambda+1,
+       -2(\lambda+1),1).
+\]
+The angle bound above still leaves only \(C_0,C_1,C_2\).
+
+**Proposition (moving branch ratios above 331).**
+For any fixed algebraic coefficients with \(b=B(0)=0\),
+shifts \(0,1\) detect the coherent input for every sufficiently
+large \(p\equiv7\bmod18\) and every \(\lambda\ne0,1\).
+For \(b\ne0\), suppose that at one place above 331,
+\(\lambda\) reduces to \(-1\) and
+\(b^2,b_1/b,b_2/b,c,e\) are integral. Then shifts \(0\)
+through \(16\) detect the coherent input for every sufficiently
+large \(p\equiv7\bmod18\). If all phase coefficients are integral
+at such a place, the window \(239+331k\), \(0\le k\le16\),
+also gives a nonzero moment at the fixed prime 331.
+
+If shift zero vanishes and \(b=0\), the coherent pivot in
+shift 1 is \(-2(\lambda^4)^p A_1/899\). The two possible
+secondary terms in that shift vanish because the negative
+lift is even and the odd radial coefficient is zero.
+For \(b\ne0\), form the characteristic-zero rows with coherent
+profile \(zQ_s\). Set \(U_j=bC_j/Y\), \(r=b^2\) and
+\(\ell_j=b_j/b\). The pivots for \(U_0,U_1,U_2\) in rows 1
+through 3 are the fixed-top pivots above multiplied by
+\((\lambda^4)^{k-1}\). In particular \(U_0=2\lambda^6/31\).
+The pivots for \(\ell_3,\ell_4,\ell_5\) in rows 4 through 6
+are those first three factors with the respective shift index
+\(k\), multiplied by \(U_0\). After these substitutions the
+remaining rows are polynomials in \(r,\ell_1,\ell_2,c,e\),
+with rational coefficients in \(\lambda\) obtained by inverting
+only the pivot scalars. The divisibility and weight argument
+for the fixed top applies with \(\lambda\) a scalar parameter.
+At the chosen place the pivots are units. Reduction gives
+exactly the fixed-top rows over \(\mathbb F_{331}\), whose
+unit identity forces some evaluated residual to be nonzero.
+At sufficiently large good primes that residual remains
+nonzero, also after entrywise Frobenius. For the fixed-prime
+statement the phase itself reduces to the fixed-top family,
+and the normalized residues agree with the same seventeen tests.
+
+The [exact moving-branch certificate](CM_NEWTON_MOVING_BRANCH_RATIO_CERTIFICATES.md)
+covers every branch ratio on a smaller lower support.
+
+For a degree-19 phase in these families, the existing two-pair
+Hopf homogenization \(F\) satisfies
+\(\mathcal E_2(F^j)=(19j+1)!\mathcal A(f^j)\).
+Each unmarked nonvanishing statement therefore transfers to that
+balanced Image family.
+[Hopf normalization, (13)](PRIMITIVE_IMAGE_DEGREE_SEVEN_AND_HOPF_SUBALGEBRA.md).
+
+An exact rational certificate for [linear odd and radial even lower
+terms](CM_NEWTON_MOVING_BRANCH_RATIO_CERTIFICATES.md) covers every
+branch ratio in that smaller support.
+
+### Hamiltonian symmetries and the coherent profiles
+
+Over a characteristic-zero field \(K\), let \(\mathscr R\) be the
+coordinate ring of the affine quadric. Its regular volume form is
+\(\omega=dz/z\wedge dt\) in this chart. Set
+\[
+             \{f,V\}=z(f_zV_t-f_tV_z).
+\]
+The markers have the form \(H=t^{s-1}A(z)+t^{s-2}C(z)\),
+with \(\deg A\le(s-1)/2\) and \(\deg C\le(s-3)/2\).
+The leading \(t\)-degree in this chart is the weighted degree
+for \(w(x)=2,w(t)=1,w(y)=0\) in the normal sphere basis. A
+negative-angle monomial \(y^j t^d\) has leading \(t\)-degree
+\(d\) after substituting \(y=(1-t^2)/(2zt^2)\), and distinct
+angular coefficients cannot cancel.
+For regular markers \(h_i\), the reconstruction matrix is the
+Jacobian of the unmarked moment map in the marker directions,
+after scaling row \(k\) by \(1/(k+1)\).
+\[
+ \mathcal A(h_i f^k)=
+ \frac1{k+1}
+ \left.\frac{\partial}{\partial\varepsilon_i}
+ \mathcal A\left((f+\sum_j\varepsilon_j h_j)^{k+1}\right)
+ \right|_{\varepsilon=0}.
+\]
+Expanding the first-order term proves the identity. Higher
+moment derivatives concern nonlinear deformations. The kernel
+criterion for residue reconstruction uses these first derivatives.
+
+For regular \(V\) and \(k\ge0\),
+\[
+        f^k\{f,V\}\omega=\frac{d(f^{k+1}dV)}{k+1},
+\]
+so these brackets have all sphere moments zero.
+
+**Proposition (Hamiltonian exclusion in the marker space).**
+If \(V\in\mathscr R\) and the \(t\)-degree of \(\{f,V\}\) in the
+\((z,t)\) chart is less than \(n-1\), then \(V\in K[f]\) and
+\(\{f,V\}=0\). In particular no nonzero marker is such a bracket.
+
+Let \(G(z)t^\mu\) be the leading term of \(V\) in \(t\).
+For each negative angle \(-j\) in the \((x,t)\) chart, its coefficient
+is divisible by \((1-t^2)^j\). After \(x=zt^2\) the leading degree
+of each nonzero angular coefficient is therefore nonnegative.
+The coefficient of \(t^{n+\mu-1}\) in the bracket is
+\(z(\mu Q'G-nQG')\), which must vanish. Thus \(G^n/Q^\mu\)
+is constant. The simple pole of \(Q\) at zero forces \(n\mid\mu\),
+and the differential identity gives \(G=\lambda Q^{\mu/n}\)
+with \(\lambda\in K\). Subtract \(\lambda f^{\mu/n}\) and repeat.
+Each step decreases the nonnegative top degree and leaves the
+bracket unchanged.
+
+The rational centralizer is \(K(f)\). A rational function
+commuting with \(f\) is algebraic over \(K(f)\) by the differential
+criterion for algebraic dependence. Multiplying by a suitable
+nonzero polynomial in \(f\) makes it integral over \(K[f]\).
+The quadric is smooth and its coordinate ring is integrally
+closed, so this multiple is regular. The preceding argument
+puts it in \(K[f]\).
+
+For the coherent component the exclusion persists on the generic
+fibre. Write the nonzero roots of \(P\) as \(\alpha_i\), with the
+multiplicities \(m_i\) used above.
+
+**Proposition (coherent profiles on the generic fibre).**
+Suppose \(A\ne0\) obeys
+\[
+       \deg A\le\left\lfloor\frac{as}{n}\right\rfloor,\qquad
+       \operatorname{ord}_{\alpha_i} A
+             \ge\left\lfloor\frac{sm_i}{n}\right\rfloor
+             \quad(1\le i\le R).
+\]
+For any nuisance polynomial \(C\) in the marker space, the
+relative differential \(H\omega/df\) on the smooth affine generic
+fibre of \(f\) has nonzero algebraic de Rham class.
+
+The generic fibre is smooth in characteristic zero. On each
+component of the critical locus, \(df=0\) forces \(f\) to be
+constant, so its critical values form a finite set.
+Exactness on the affine fibre would give a regular primitive,
+since the affine de Rham complex is computed by global sections.
+The fibre's coordinate ring is \(\mathscr R\otimes_{K[f]}K(f)\).
+Clearing its denominator gives \(\{f,V\}=J(f)H\) with
+\(V\in\mathscr R\) and \(J\) monic of degree \(d\). The case
+\(d=0\) is already excluded. For \(d\ge1\), strip off centralizing
+powers of \(f\) whenever the leading bracket term would be above
+degree \(nd+s-1\). The remaining leading term of \(V\) has
+degree \(\mu=n(d-1)+s\), since the bracket has degree exactly
+\(nd+s-1\). Its coefficient \(G\) is Laurent in \(z\). With
+\(T=G/Q^{d-1}\), the leading equation becomes
+\[
+               sz(Q'/Q)T-nzT'=A.
+\]
+At \(\alpha_i\), for \(T\) of order \(u\), the leading coefficient
+on the left is proportional to \(sm_i-nu\).
+It cannot vanish since \(s\) is a unit modulo \(n\) and
+\(0<m_i<n\). Thus \(\operatorname{ord}_{\alpha_i} T
+=\operatorname{ord}_{\alpha_i} A+1\).
+At zero the multiplier is \(-s-nu\), and the equation excludes
+a pole there as well. These are the only possible finite poles,
+so \(T\) is a polynomial. At infinity the multiplier is
+\(sa-n\deg T\ne0\) since \(0<a<n\), so \(\deg T=\deg A\).
+But
+\[
+   \deg T\ \ge\ \sum_i\left\lfloor\frac{sm_i}{n}\right\rfloor+R
+   \ >\ \left\lfloor\frac{as}{n}\right\rfloor .
+\]
+The strict inequality follows from \(\sum_i m_i=a+1\) and
+the sum of the \(R\) fractional parts of \(sm_i/n\) being
+less than \(R\).
+
+The profile conditions express holomorphy of
+\(Y^{-s}A(z)\,dz/z\) on the normalized cyclic cover \(Y^n=Q(z)\).
+At a root of multiplicity \(m_i\) the order is
+\((n(\operatorname{ord}_{\alpha_i} A+1)-sm_i)/\gcd(n,m_i)-1\).
+At infinity the order is \((as-n\deg A)/\gcd(n,a)-1\),
+and at zero it is \(s-1+n\operatorname{ord}_0 A\).
+In good characteristic \(p\equiv s^{-1}\pmod n\), Cartier
+applied to \(Y^{-1}dz/z=Y^{-sp}Q^m\,dz/z\) gives
+\[
+        Y^{-s}\sum_j A_j^{1/p}z^j\,\frac{dz}{z},
+\]
+which has this profile by preservation of holomorphy.
+For conductor 18 the characteristic-zero coherent line is
+\(A(z)\propto z(z^2-1)^2\). The degree bound is five and
+each of \(\pm1\) requires order at least two. The generic-fibre
+result applies to this line for every compatible lower strip.
+
+The remaining period question is whether the sphere resolvent
+\(\mathcal A(H/(\lambda-f))\) detects these coherent classes.
+Its Laurent coefficients at infinity are the marker moments,
+so their simultaneous vanishing gives the zero germ.
+On the open parameter set where the fibre complements form
+a locally trivial family, monodromy differences of the sphere cycle
+lie in the kernel of the map from the homology of the fibre
+complement to that of the quadric. By the relative homology
+sequence and the Thom isomorphism this kernel consists of tubes
+around fibre cycles. Integrating \(H\omega/(\lambda-f)\) on a tube
+gives the corresponding period of \(H\omega/df\), up to sign and
+a factor of \(2\pi i\). It would suffice to show that the periods
+on the cycles obtained from the sphere distinguish a nonzero
+coherent component in the presence of \(C\).
+
+Gavrilov's result for a real vanishing cycle assumes a semiweighted
+homogeneous plane Hamiltonian with Morse critical points and gives
+the rank from the span of that cycle under monodromy. The monodromy
+statement of Novikov and Yakovenko in §1.5 concerns generic Morse
+plane Hamiltonians regular at infinity. The quadric and its fixed
+sphere cycle require a separate argument.
+[Gavrilov, Theorem 2 and Corollary 2](https://www.numdam.org/item/10.5802/aif.1684.pdf)
+and [Novikov and Yakovenko, §1.5](https://pi.math.cornell.edu/~novikov/Papers/redundant.pdf).
+
+The nuisance marker \(t^{11}\) illustrates the period issue
+when \(n=18,s=13,B=0\). Reflection in \(t\) fixes \(f\) and
+kills all sphere moments against this marker. Its generic-fibre
+class is nonzero. The leading equation for a putative primitive
+has \(s\) replaced by 12 and right side 1. Its multipliers at
+the two roots, at zero and at infinity are nonzero for integral
+orders. It forces a polynomial \(T\) of degree zero with a zero
+at each of \(\pm1\).
+
+
+The same cyclic-cover factorization yields [one-step rank bounds
+and a rank-two block measured by marked moments](CM_NEWTON_BLOCK_RANK_MOMENTS.md).
+
+## Open reconstruction question
 
 The general upper-half question is whether extra unmarked rows
 force the coherent projection of the kernel to vanish at every

@@ -981,8 +981,8 @@ budgets.
 ## Conditional recovery from the root ratio
 
 **APC8.** Use a centered signed decomposition
-\(U/V=Q r^k\) at a fixed order in a genuine primitive shell
-with total radical budget \(L\). In each prime position choose
+\(U/V=Q r^k\) at a fixed order and additive orientation
+in a genuine primitive shell with total radical budget \(L\). In each prime position choose
 a nearest nonnegative integer to \(v_p(U)/k\) or \(v_p(V)/k\)
 on the respective role. Fix a tie convention. If \(D\mid W\)
 and \(D\ge X^{kL}\), the actual root ratio \(r\) and \(D\)
@@ -1052,6 +1052,7 @@ gives \(X^{o_X(1)}\) possible points. Since
 the signed primitive pair and the original row, up to the
 bounded number of orientations.
 [Dujella, Theorem 1.1 and Corollary 1.3](https://arxiv.org/html/2312.03655v1)
+· [Underlying Euclidean signature count (EP6)](ABC_EUCLIDEAN_GRID_POINT_COUNTS.md#primitive-quotients-on-two-euclidean-signatures)
 
 In the original total radical budget, suppose a prescribed
 catalogue of \(n^{b_0+o_X(1)}\) pools \(S\) has
@@ -1109,6 +1110,225 @@ count by fixed-\(\kappa\) recovery. In particular
 The inequalities allow broad residue laws and do not furnish
 the needed defect extraction in arbitrary profiles.
 
+## Sparse pool prices on the diffuse two-cap matching
+
+**APC10.** In the genuine two-cap occurrence matching of
+RX9, any retained sector at exponent \(d-\rho\) requires
+\[
+                       b_0 \ \ge\ (1-a)d-\rho-o(1)
+\]
+for the APC2 separating pools on the two capped roles.
+Here \(d=1/3-f_C\) is the matching exponent and the error
+consists of \(O(L)+o_X(1)\) with the usual height-first
+order. The estimate holds for adaptive canonical orders
+\(k\ge2\). In particular the optimized APC2 price cannot
+beat the retained exponent by a fixed margin in this model.
+
+Use the consecutive degree slots, disjoint prime alphabets,
+and the simultaneous occupancy bound from RX9. The variable
+slots on the two roles have total caps \(a_0=1/3-f_A\) and
+\(d\), with \(a_0>d\). A particular record of slot mass \(g\)
+occurs on at most \(n^{(d-g)_++o_X(1)}\) rows. For every
+fixed \(k\ge2\), the nonzero valuation remainders modulo \(k\)
+occur on variable slots of combined mass at least
+\((a_0+d)/2-O(L)>d\). Indeed consecutive degrees have at
+most half plus one divisible by \(k\), and each role's
+variable slot caps are uniform. An exact canonical ratio
+fixes the root primes in all these slots, so it has subpower
+many lifts. Powers above the largest degree give identical
+canonical coefficients.
+[Cartesian model and simultaneous record bound (RX9)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#two-adaptive-normalized-lock-roles-without-a-common-power-grid)
+
+Within a prescribed state ignore the fixed factor primes of
+the two powered roles, which add no separation at a fixed
+order. At variable projected mass at most \(d\), weighted
+Rankin enumeration gives at most \(n^{ad+o_X(1)}\) projection
+records. Separation and the bound for exact lifts give the
+same row count. If the projected mass exceeds \(d\), select
+captured slots of total mass \(g\in[d-O(L),d+o_X(1)]\).
+Their positions cost subpower at fixed budget. Their prime
+values number at most \(n^{ag+o_X(1)}\), because in a slot
+of cap \(b\) the pool can have at most \(n^{ab+o_X(1)}\)
+primes of that size. Complete the rows by the occupancy
+bound. Thus each state costs at most \(n^{ad+O(L)+o_X(1)}\)
+rows. Comparing with the retained size gives the asserted
+catalogue inequality. In particular
+\[
+ b_0+\frac{a+(1-a)\mu}{1+2a}
+ \ \ge\ d-\rho
+      +a\{(1+2a)^{-1}-d\}
+      +\frac{(1-a)\mu}{1+2a}-o(1)
+ \ \ge\ d-\rho-o(1).
+\]
+
+The same reasoning applies to the APC7 conditional dictionary
+when the exact parts of the third divisor supported on \(T\)
+have only a subpower catalogue per state. This includes
+\(T=\varnothing\) and prescribed \(T\) of size \(o(\log X)\).
+Write \(u=\mu_0+\beta\). If \(u\le d\), split at variable
+projected mass \(d-u\). The light branch costs at most
+\(n^{a(d-u)+u+o_X(1)}\), by fixing the actual divisor,
+using the conditional coefficient bound, and counting the
+subpower lifts. The heavy branch lowers \(d\) by at least
+\((1-a)(d-u)-O(L)\) by fixing a captured subrecord. Thus
+\(b_0\ge(1-a)(d-u)-\rho-o(1)\), and adding the APC7
+optimized term gives at least
+\[
+           d-\rho+\frac{a\{1-(1+2a)d-2(1-a)u\}}{1+2a}-o(1)
+           \ \ge\ d-\rho-o(1).
+\]
+If \(u\ge d\), the optimized term itself is at least \(d\).
+The argument uses a subpower catalogue for the part of the
+divisor supported on \(T\). General weighted pools on a
+capped third role are outside this obstruction.
+
+For APC4, restrict to sufficiently narrow relative widths
+and sufficiently large orders in the supported decompositions.
+By RX10, a fixed actual center and a close query must share
+more than \(d\) variable slot mass. In fact, if the shared
+mass is at most \(d\), at least \(a_0\) of the total
+\(a_0+d\) on the query remains private, forcing relative
+height at least \(X^{c_*\min(1,kL)}\) with fixed \(c_*>0\).
+Choose the width below \(c_*\) and then fix the shared slot
+subrecord to get subpower occupancy of each relative
+cover class. At the actual cutoff \(t\) the light count per
+pool is therefore \(n^{at+\mu+b_1+o_X(1)}\).
+Take \(q=f_A+f_C+o_X(1)\) as a uniform upper bound
+on the captured mass of prescribed factor primes of the
+two powered roles.
+The heavy bound from variable slots has exponent at most
+\(d-(1-a)\min(d,(t-q)_+)+O(L)+o_X(1)\).
+If \(t\le d+q\), this is at most the APC4 heavy exponent
+\((1-(1-a)t)/3\) up to the error, since \(q<3(1/3-d)\).
+If \(t>d+q\), it is at most \(ad\) up to the error, and the
+APC4 light exponent dominates it. Thus these narrow APC4
+certificates also fail to give a fixed saving relative to the
+retained sector in this model.
+[Private remainder bound (RX10)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#uniform-obstruction-to-close-relative-coefficients)
+
+## Actual divisor multiplicities in a joint-pool extraction
+
+**APC11.** In an APC7 or APC8 certificate, let
+\(u_0=\mu_0+\beta<1/3\) and \(g=(a+(1-a)u_0)/(1+2a)\).
+For a subcohort with \(\operatorname{rad}(D)\le n^{r+o(1)}\),
+the exact divisor catalogue per prescribed state has price
+at most
+\[
+                  C(r)=a r+(1-a)\min(\mu_0,r).
+\]
+To see this, fix small bins for the inside and outside
+radical masses \(q,v\). Rankin enumeration of primes inside
+the prescribed divisor pool and ordinary support enumeration
+outside it give exponent \(aq+v\), where \(q+v\le r+o(1)\)
+and \(v\le\mu_0+o(1)\). The exact exponents on each support
+cost height-subpower by EB3. The finite mesh may have
+arbitrarily small fixed width before the height limit.
+
+If the retained subcohort has exponent \(d=1/3-\varepsilon_0\),
+all but a power-small fraction of its rows belong to exact
+\((\text{state},D)\) fibres of size at least
+\(n^{d-b_0-C(r)-\zeta}\) for any fixed \(\zeta>0\).
+All smaller fibres together have exponent at most
+\(d-\zeta+o(1)\) by the catalogue bound. In a regular
+balanced cohort take \(r=1/3\), since \(D\mid W\) and the
+true third radical cap holds. Then
+\[
+         g-C(1/3)
+          =\frac{(1-a)\{2a(1/3-\mu_0)+\beta\}}{1+2a}.
+\]
+In particular an advertised count \(b_0+g\le1/3-\Delta\)
+with \(\Delta>\varepsilon_0\) needs actual exact divisor
+fibres of exponent at least
+\(\Delta-\varepsilon_0+g-C(1/3)-\zeta\) on most retained
+rows.
+
+For a fixed \(D\) of actual radical mass \(r_D\), the
+outside prime support of the complete third letter \(W\)
+has mass at most \(1/3-r_D+o(1)\). Fixing the support
+inside \(D\) and enumerating \(W\) by EB3 bounds the
+number of complete \(W\)-labels by
+\(n^{1/3-r_D+o(1)}\). Suppose their maximum original
+degree has exponent \(u=1/3-\alpha\), as in RB1.
+Then the fixed-\(D\) row exponent is at most
+\[
+                    \min\{1/3+u-r_D,1/3-r_D/2\}+o(1).
+\]
+For the second bound fix all original powers on the divisor
+support at subpower cost. They become prescribed
+coefficients. The remaining caps are \(1/3-r_D,1/3,1/3\)
+up to the balance allowance, and the numerical height of
+the complete original row is still at least \(X/2\).
+Use MCB2 on the two cheapest caps. After also fixing an
+exact valuation projection, let \(h_U,h_V,r_D\) be the
+actual normalized masses fixed on the corresponding
+original roles. The same argument gives conditional
+exponent \(1/3-H_2/2\), where \(H_2\) is the sum of the
+two largest captured masses.
+Primitivity makes these three supports disjoint. This
+conditional bound can be intersected with the actual
+ratio or cover bound \(\beta\) of APC7–APC8.
+For a subcohort whose divisors have
+mass at least \(r\), combine the first bound with the
+catalogue estimate on each fixed narrow bin. The selected
+rows then have exponent at most
+\(b_0+1/3+u-(1-a)(r-\mu_0)\) up to the mesh and height
+allowances. Thus a retained subcohort of exponent
+\(1/3-\varepsilon_0\) that would give the advertised
+certificate must obey
+\[
+     r\le\mu_0+\frac{1/3-\mu_0-\beta}{1+2a}
+                  +\frac{u-(\Delta-\varepsilon_0)}{1-a}
+                     \quad\text{in the limit}.
+\]
+At occurrence \(u=0\), this excludes divisors carrying an
+asymptotically full third-letter radical. It says what
+degree and residual support budget the actual divisor
+must leave for this extraction route. These inequalities
+use genuine original shell rows and all three original caps.
+The normalized mesh and chart allowances are fixed ahead
+of each small-budget cutoff, and the inner limit precedes
+the limit of small budgets.
+[Effective-budget pricing (EB3–EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#counting-by-a-sublogarithmic-prime-partition-sum)
+· [Complete-letter degrees (RB1)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#regular-balanced-cohorts-and-absolute-residue-pricing)
+· [Arbitrary fixed coefficients (MCB2)](ABC_MULTIPLE_SHORT_COFACTOR_BOUNDARY.md#bounded-group-dictionaries-with-arbitrary-fixed-coefficients)
+
+The RX9 two-cap matching also gives a countermodel for this
+required divisor multiplicity. Write \(d_0=1/3-f_C\) and
+\(a_0=1/3-f_A>d_0\) as in APC10. For every fixed \(\xi>0\)
+at sufficiently late fixed budgets one can choose the RX9
+sample so that every actual \(D\mid B=C-A\) with
+\(\log_n D\ge2d_0+\xi\) has subpower fibre. In its Cartesian
+source choose variable slots of total cap \(t\) strictly
+between \(2d_0\) and \(\min(2d_0+\xi,a_0+d_0)\), with
+\(t+\max_i a_i<2d_0+\xi\). This is possible since the
+individual slot caps are \(O(L)\). On pairs with \(D\mid B\)
+the positive \(A,C\) are units at \(D\), and \(A/C\equiv1\).
+The one-class proof of SRL1 applies to the signed powers
+in this quotient. In a negative slot the character sum
+is conjugated, with the same even moments. Fix the
+complementary slots and apply those moments. The number
+of Cartesian candidates is
+\(O(n^{a_0+d_0-t/2}X^\varepsilon)\), uniformly in \(D\le X\).
+After sampling at probability \(1/(N_A\log X)\), each
+fibre has expectation tending to zero by the choice
+\(t>2d_0\). A binomial upper tail at a multiple of
+\(\log X\) and a union bound over at most \(X\) divisors
+give the simultaneous occupancy bound. The other RX9
+selection events and deletions preserve it.
+
+Consequently any such assignment retaining exponent
+\(d_0-\rho\) and the cap \(\operatorname{rad}(D)\le
+n^{1/3+o(1)}\) needs \(b_0+C(1/3)\ge d_0-\rho-o(1)\),
+even for non-subpower divisor pools. Since \(g\ge C(1/3)\),
+this prevents a strict certificate relative to the retained
+exponent. It applies to every APC8 lock \(D\ge n^k\),
+to positive numerical divisor weight at small \(L\),
+and to APC7 when \(kL\le3\). The model keeps the two
+capped operands and the cap on the selected divisor.
+The complete original third letter violates its cap.
+[Signed residue-list moment (SRL1)](ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md#counting-an-arbitrary-list-of-shallow-residues)
+· [Diffuse occurrence matching (RX9)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#two-adaptive-normalized-lock-roles-without-a-common-power-grid)
+
 ## The extraction obligation with all three original caps
 
 Put \(n=X^L\). Suppose that a sequence of fixed
@@ -1122,13 +1342,12 @@ at most \(1/3-\Delta\) before arbitrarily
 small allowances, for some fixed
 \(\Delta>\varepsilon_0\). The outer budgets
 and inner heights remain a subsequence of
-the given ones. Use two genuine powered roles
-and a divisor of fixed positive numerical
-weight on the third role. Allow the power
-order to tend to infinity with the outer
-budget or require the exact CPW5 condition
-\(D\ge X^{2/k}\). In particular \(kw\ge2\)
-qualifies under exact numerical bounds.
+the given ones. In the coefficient routes, use two
+genuine powered roles and an actual divisor \(D\)
+on the third role satisfying \(D\ge X^{2/k}\).
+In particular a fixed divisor weight \(w>0\)
+allows orders tending to infinity with the outer
+budget or fixed orders with \(kw\ge2\).
 
 By CPW5 a direct joint coefficient and
 divisor catalogue suffices if its total
@@ -1153,8 +1372,10 @@ regrouping conditions of APC4. APC7–APC8 allow the same
 price condition with \(u=\mu_0+\beta\) for conditional
 exact ratio records, using the appropriate reconstruction
 threshold on the actual divisor. In the centered root route
-the ratio recorded is \(r\) and the threshold is \(D\ge
-X^{kL}\). Alternatively, APC9 permits the same price condition
+the ratio recorded is \(r\) and the threshold is
+\(D\ge X^{kL}\), or \(D\ge X^{kL+2c}\) for a conditional
+relative cover of width \(X^{c/k}\). Alternatively, APC9
+permits the same price condition
 with \(u=\mu\) for the outside mixed-defect support and
 requires no divisor. Each route must have fixed numerical
 and counting margins along the retained outer budgets and
@@ -1183,7 +1404,10 @@ cap matters. Two capped operands can
 carry the entire coefficient dictionary
 even after adaptive unequal orders and with
 large heights and primitive addition.
-Their third letters can have large radicals.
+APC10 additionally constrains weighted separating
+pools and narrow relative covers on the diffuse
+two-cap matching. Their third letters can have
+large radicals.
 The open input is a numerical or arithmetic
 restriction on this joint coefficient and
 divisor data in actual three-cap families.

@@ -80,6 +80,17 @@ def check_slopes():
     return count
 
 
+def check_axis_linear_terms():
+    count = 0
+    previous, current = 0, 1
+    for j in range(1, 501):
+        assert current == j * (j + 1) // 2
+        assert previous + current == j * j
+        previous, current = current, 2 * j + 1 + previous
+        count += 2
+    return count
+
+
 def multiply(a, b, precision):
     answer = 0
     while b:
@@ -143,9 +154,11 @@ def check_ramified_matching():
 def main():
     interior = check_interior()
     slopes = check_slopes()
+    linear = check_axis_linear_terms()
     matching_count = check_ramified_matching()
     print(
         f"{interior:,} interior and axis checks, {slopes} slope checks, "
+        f"{linear:,} first-order axis checks, "
         f"{matching_count:,} ramified matching coefficients"
     )
 

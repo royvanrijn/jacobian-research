@@ -1,8 +1,8 @@
 # Finite flat inverse moment maps for structured quadratics
 
 The forward argument uses the shorter window in
-[Quadratic strong factorial windows from matchings](QUADRATIC_STRONG_FACTORIAL_WINDOWS_FROM_MATCHINGS.md)
-(SHA256 b2bdec02fdd5d49e31fddd2c45c9bd157413aae145e3e9a13b58c29f2bdf5048).
+[Quadratic strong factorial windows from matchings](QUADRATIC_STRONG_FACTORIAL_WINDOWS_FROM_MATCHINGS.md).
+
 The additional inputs are polynomial-ring Cohen-Macaulayness and the local
 regular-sequence criterion in Stacks10.104, tags00ND and02JN.
 
@@ -52,7 +52,7 @@ The polynomial ring R is Cohen-Macaulay: Stacks Lemma10.104.7 tag00ND.
 In its localization at the homogeneous maximal ideal, the p forms
 constitute a regular sequence, since their quotient has dimension0:
 Stacks Lemma10.104.2 tag02JN. This is an actual mathematical use:
-https://stacks.math.columbia.edu/tag/00ND
+https://stacks.math.columbia.edu/tag/00N7
 https://stacks.math.columbia.edu/tag/02JN
 
 Their regularity holds already in the graded polynomial ring. Indeed,

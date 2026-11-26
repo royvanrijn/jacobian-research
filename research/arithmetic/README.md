@@ -1499,6 +1499,26 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A prescribed joint pool can price both coefficients and the third divisor | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
 | Fine centered roots and the third divisor recover the coefficient ratio | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
 | A mixed Euclidean defect can be priced by sparse prime pools | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Diffuse two-cap matchings resist sparse-pool catalogue compression | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Every fixed binary comparison has a large fresh radical on generic primitive pairs | Internal result | proved | [Source](ABC_GENERIC_PAIR_FRESH_BINARY_FORMS.md) |
+| Generic primitive pair comparisons have independent power classes with large fresh defects | Internal result | proved | [Source](ABC_GENERIC_PAIR_FRESH_BINARY_FORMS.md) |
+| A joint fresh power-defect budget improves the original row count | Internal result | proved | [Source](ABC_GENERIC_PAIR_FRESH_BINARY_FORMS.md) |
+| Identical weak scaled degree laws can carry full fixed-order defects | Internal result | proved | [Source](ABC_GENERIC_PAIR_FRESH_BINARY_FORMS.md) |
+| Tight full locks force balanced registers to carry almost all row information | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| The strict powerful-number fixed-shift estimate applies to actual least multipliers | Internal result | proved | [Source](ABC_LEAST_MULTIPLIER_SHIFT_COUNTS.md) |
+| An original ratio and a repaired summand difference give a strict pair fibre bound | Internal result | proved | [Source](ABC_LEAST_MULTIPLIER_SHIFT_COUNTS.md) |
+| Actual least multipliers have strict additive expansion | Internal result | proved | [Source](ABC_LEAST_MULTIPLIER_SHIFT_COUNTS.md) |
+| A strict joint-pool certificate forces positive actual divisor multiplicity | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| A bounded-height rational set or its reciprocal has near-maximal weighted sumsets | Internal result | proved | [Source](ABC_SIGNED_RATIONAL_ODDS_SUMS.md) |
+| Private exact factors recover signed odds tuples in genuine three-cap rows | Internal result | proved | [Source](ABC_SIGNED_RATIONAL_ODDS_SUMS.md) |
+| Fixed forms of signed odds words carry the full tuple exponent in fresh defects | Internal result | proved | [Source](ABC_SIGNED_RATIONAL_ODDS_SUMS.md) |
+| Exact shifted odds recover their actual divisor fibres | Internal result | proved | [Source](ABC_SIGNED_RATIONAL_ODDS_SUMS.md) |
+| Least-multiplier shifts expand across all original summand fibres | Internal result | proved | [Source](ABC_LEAST_MULTIPLIER_GRAPH_MOMENTS.md) |
+| Determinants expand on complete grids of actual repaired summands | Internal result | proved | [Source](ABC_LEAST_MULTIPLIER_GRAPH_MOMENTS.md) |
+| Actual least multipliers resist cheap bounded-degree polynomial transport | Internal result | proved | [Source](ABC_LEAST_MULTIPLIER_GRAPH_MOMENTS.md) |
+| Actual least-repaired plane curves have uniform small primitive fibres | Internal result | proved | [Source](ABC_LEAST_REPAIRED_PLANE_CURVES_AND_DISPLACEMENTS.md) |
+| Two normalized displacement records recover arbitrary original pairs | Internal result | proved | [Source](ABC_LEAST_REPAIRED_PLANE_CURVES_AND_DISPLACEMENTS.md) |
+| Generic primitive repaired directions require almost a full original budget | Internal result | proved | [Source](ABC_LEAST_REPAIRED_PLANE_CURVES_AND_DISPLACEMENTS.md) |
 
 **Computed obligations:** 110 unresolved; 19 resolved within their exact scope.
 

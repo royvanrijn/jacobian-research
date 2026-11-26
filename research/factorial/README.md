@@ -837,6 +837,36 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Original even-moment exclusion at close dyadic axes | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_CLOSE_AXIS_FINAL_EVEN.md) |
 | Second boundary pairing at close dyadic axes | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_CLOSE_AXIS_SECOND_PAIRING.md) |
 | Sylvester normal rank criterion at repeated Gaussian contact | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SYLVESTER_CONTACT_NORMAL_POLYTOPE.md) |
+| Dyadic residue classification and weighted matching windows for binary quadratics | Internal result | proved | [Source](image-rigidity/BINARY_ZERO_CONSTANT_QUADRATIC_WEIGHTED_MATCHING_LOCAL.md) |
+| Actual-support zero-constant quadratic windows on two one-axis planes | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_BINARY_QUADRATIC_MATCHING_AND_BOUNDARY_LIFTS.md) |
+| Bilinear three-window at integral relative cross valuation | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_BINARY_QUADRATIC_MATCHING_AND_BOUNDARY_LIFTS.md) |
+| Four consecutive zero moments exist at every start in the five-parameter quadratic family | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_BINARY_QUADRATIC_MATCHING_AND_BOUNDARY_LIFTS.md) |
+| All-dimension quadratic Strong Factorial windows from residue denominator degree | Internal result | proved | [Source](image-rigidity/QUADRATIC_MATCHING_RESIDUE_DENOMINATOR_WINDOWS.md) |
+| Second dyadic layer for pure-cross binary quadratic windows | Internal result | proved | [Source](image-rigidity/BINARY_ZERO_CONSTANT_QUADRATIC_CROSS_PARITY_LINK.md) |
+| Five-window exclusions by unit-pole removal in one-axis resonance | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_ONE_AXIS_UNIT_POLE_REMOVAL.md) |
+| Bilinear Strong Factorial three-window through the first cross threshold | Internal result | proved | [Source](image-rigidity/BILINEAR_ZERO_CONSTANT_DYADIC_CROSS_GAP.md) |
+| Rational factorial moment series at every prime-power precision | Internal result | proved | [Source](image-rigidity/FACTORIAL_MOMENT_SERIES_PRIME_POWER_RATIONALITY.md) |
+| Exact digit-slot formula for normalized factorial moments | Internal result | proved | [Source](image-rigidity/FACTORIAL_MOMENT_SERIES_PRIME_POWER_RATIONALITY.md) |
+| Fixed singleton pole locations at every prime-power precision | Internal result | proved | [Source](image-rigidity/FACTORIAL_MOMENT_SERIES_PRIME_POWER_RATIONALITY.md) |
+| Strong Factorial windows for arbitrary degrees from shared digit slots | Internal result | proved | [Source](image-rigidity/FACTORIAL_MOMENT_SERIES_PRIME_POWER_RATIONALITY.md) |
+| All-order prime-power row packing of normalized factorial moments | Internal result | proved | [Source](image-rigidity/SFC_ALL_ORDER_PRIME_POWER_ROW_PACKING.md) |
+| Exact second dyadic matching layer in arbitrary dimension | Internal result | proved | [Source](image-rigidity/QUADRATIC_MATCHING_SECOND_DYADIC_LAYER.md) |
+| Linear precision bounds on quadratic factorial moment poles | Internal result | proved | [Source](image-rigidity/QUADRATIC_FIXED_DYADIC_POLE_SUPPORT.md) |
+| Bilinear three-window in the second open dyadic band | Internal result | proved | [Source](image-rigidity/BINARY_BILINEAR_DYADIC_RESIDUE_SYMMETRY.md) |
+| Five-window exclusions by symmetric approximation in one-axis resonance | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_ONE_AXIS_SYMMETRIC_APPROXIMATION.md) |
+| Bilinear Strong Factorial three-window throughout the third open dyadic band | Internal result | proved | [Source](image-rigidity/BINARY_BILINEAR_THIRD_DYADIC_TIE.md) |
+| Dyadic interpolation of quadratic factorial moment tails | Internal result | proved | [Source](image-rigidity/QUADRATIC_DYADIC_ANALYTIC_UNIT_ENVELOPE.md) |
+| Continuous interpolation of arbitrary-support factorial moment tails | Internal result | proved | [Source](image-rigidity/QUADRATIC_DYADIC_ANALYTIC_UNIT_ENVELOPE.md) |
+| All structured quadratic cover moment maps are finite | Internal result | proved | [Source](image-rigidity/QUADRATIC_MATCHING_FINITE_FLAT_INVERSE_MOMENT_MAPS.md) |
+| Structured quadratic inverse moment maps are finite free | Internal result | proved | [Source](image-rigidity/QUADRATIC_MATCHING_FINITE_FLAT_INVERSE_MOMENT_MAPS.md) |
+| Linear precision and joint analytic interpolation for arbitrary factorial supports | Internal result | proved | [Source](image-rigidity/FACTORIAL_LINEAR_PRECISION_ANALYTIC_INTERPOLATION.md) |
+| Exponential spacing of exact factorial zero windows under a nonidentity condition | Internal result | proved | [Source](image-rigidity/FACTORIAL_LINEAR_PRECISION_ANALYTIC_INTERPOLATION.md) |
+| Arbitrary-degree windows from carry-free singleton slot budgets | Internal result | proved | [Source](image-rigidity/FACTORIAL_SINGLETON_SLOT_WINDOWS_AND_EXACT_INTERPOLATION.md) |
+| Higher-precision Strong Factorial windows from suppressed multiple insertions | Internal result | proved | [Source](image-rigidity/FACTORIAL_SINGLETON_SLOT_WINDOWS_AND_EXACT_INTERPOLATION.md) |
+| Borrowed factorial quotients and balanced-cycle row transfer | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BORROW_CYCLE_ROW_TRANSFER.md) |
+| Four-block exclusion in the next one-axis resonance band | Internal result | proved | [Source](image-rigidity/ZERO_CONSTANT_ONE_AXIS_FOUR_BLOCK_TRANSFER.md) |
+| Bilinear three-window for opposite linears and Chebyshev squarefreeness reduction | Internal result | proved | [Source](image-rigidity/BILINEAR_CHEBYSHEV_SQUAREFREE_TRANSFER.md) |
+| All-degree ordinary binomial coprimality from borrowed Jacobi paths | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BORROWED_JACOBI_PATHS.md) |
 
 **Computed obligations:** 50 unresolved; 34 resolved within their exact scope.
 
@@ -946,6 +976,7 @@ Scope limits:
 - The stronger uniform four-moment window for zero-constant singular-Hessian binary quadratics is optimal: an explicit algebraic five-monomial phase has its first three moments zero and its fourth nonzero. Native polynomial identities prove the three zeros independently; the existing uniform-four theorem supplies the nonzero fourth moment. This does not assert optimality of an actual five-term SFC window, or any full binary/SFC2/SFC3 or H closure.
 - In every dimension, zero-constant quadratics with B_ij^2=4c_ij A_iA_j for fixed rational odd-denominator c_ij have the k+ell factorial window and their actual-support Strong Factorial window. The native residue series is a matching polynomial quotient; the proof is self-contained and includes same-variable linears, diagonal, rank-one and principal-zero sign patterns. Exact independent binary restriction routes also preserve the old singular-Hessian four-window and actual-support theorems. Arbitrary independent quadratic coefficients, general nonzero constants and unrestricted SFC2/SFC3 remain outside this result.
 - For every fixed rational odd-denominator quadratic coupling pattern, every compatible diagonal/linear support with p>=1 and every positive start n, an algebraic phase has p-1 zero moments in that block followed by a nonzero moment. Thus the matching p=k+ell window is sharp on every support at every start; the witness may depend on n. Actual-support sharpness is asserted only when there are no cross monomials. Existence uses the exact classical homogeneous common-zero theorem, while exact full support/next moment use the independently proved matching upper theorem. No unrestricted quadratic/SFC2/SFC3 closure or smaller coefficient field witness is asserted.
+- For fixed rational2-integral correlation weights, the full family of quadratic cover moment maps is finite free of exact rank product(2j), with arbitrary-target constant scheme lengths. Finiteness over all supports, starts, sign branches and containing characteristic-zero fields is genuinely equivalent to the matching shorter k+ell window via homogeneous parameter coverage. The forward proof imports that existing bound and CM regularity; it is not an independent proof of the bound. Direct diagonal coefficient maps have degree product j. No reducedness, unique inverse, unrestricted SFC closure or assurance upgrade.
 
 Tracked obligations (computed states):
 

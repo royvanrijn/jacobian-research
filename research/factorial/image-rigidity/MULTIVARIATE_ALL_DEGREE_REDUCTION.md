@@ -1750,6 +1750,25 @@ including for arbitrary support size. Iterating the merger reduces
 these finite-window certificates to a single exponent row. The
 transfer proves coprimality when the initial forms exclude common
 residue zeros and leaves the lifting of a residue collision open.
+The [all-order prime-power packing theorem](SFC_ALL_ORDER_PRIME_POWER_ROW_PACKING.md)
+removes the order bound when the low row carries no naturally
+normalized unit singleton. The factor valuations bound the
+low-row load uniformly at the chosen precision. Two unit
+singleton rows already obstruct this all-order congruence.
+The [rational moment series theorem](FACTORIAL_MOMENT_SERIES_PRIME_POWER_RATIONALITY.md)
+gives exact finite matrices modulo every prime power for arbitrary
+support and dimension. It identifies the fixed residue poles and
+gives a two-window for a dyadic singleton and a nonsingleton with
+a shared set digit under an explicit relative valuation bound.
+The [linear precision theorem](FACTORIAL_LINEAR_PRECISION_ANALYTIC_INTERPOLATION.md)
+makes the precision threshold linear on every fixed local coefficient
+class, and gives jointly analytic interpolation. Its common-zero
+condition applies to unbounded sequences with varying coefficients
+inside a fixed class. The
+[borrowed-row transfer](MULTIVARIATE_BORROW_CYCLE_ROW_TRANSFER.md)
+gives a different extension by balancing shifted factorial quotients
+at a fixed prime. It preserves all-degree binomial regularity for
+the stated ordinary extensions of a regular core.
 The [higher-precision inflation theorem](SFC_PADIC_ROW_INFLATION_HIGH_PRECISION.md)
 preserves linked factorial units modulo \(p^3\) under arbitrary
 rowwise \(p\)-power inflation for primes \(p\ge5\), with increasing

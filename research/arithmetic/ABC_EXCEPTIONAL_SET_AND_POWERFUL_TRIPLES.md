@@ -10848,6 +10848,18 @@ including a sufficiently small relative-height cover.
 · [Conditional joint pools (APC7)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#conditional-separation-with-a-joint-divisor-pool)
 · [Root-ratio recovery (APC8)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#conditional-recovery-from-the-root-ratio)
 
+An improving joint-pool certificate must concentrate its
+actual divisor choices into positive-multiplicity fibres.
+At occurrence the prescribed divisor must leave positive
+radical mass on the rest of the original third letter.
+These conditions follow from the genuine divisor catalogue,
+complete-letter multiplicities, and the original three caps.
+In the two-cap model every divisor at the depth needed for
+the root-ratio route has only a subpower fibre, even when
+the chosen divisor itself satisfies the missing role's cap.
+[Actual divisor multiplicities (APC11)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#actual-divisor-multiplicities-in-a-joint-pool-extraction)
+
+
 A different record keeps only the mixed fourth-power defect of
 \(UVW^2\). Its support detects residues modulo four on the
 two operands and odd valuations on the third letter. Fixing the
@@ -10903,6 +10915,17 @@ constraints and loses less in retained rows than it
 saves in record price.
 [Fine-grid relative distances (APC5–APC6)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#fine-grid-distances-at-balanced-saturation)
 · [Numerical cover obstruction](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#numerical-relative-height-covers-on-the-same-matching)
+
+The diffuse two-cap occurrence matching also obstructs a
+weighted separating-pool route. A pool with discount \(a\)
+covers only exponent \(ad+o(1)\) of a matching of exponent \(d\)
+when it separates the canonical coefficients. The resulting
+catalogue price absorbs the optimized saving even after
+thinning. The analogous bounds cover narrow relative coefficient
+covers and joint divisor pools with a subpower catalogue on their
+prescribed third-letter part. The unrestricted extraction still
+requires the third cap.
+[Diffuse sparse-pool obstruction (APC10)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#sparse-pool-prices-on-the-diffuse-two-cap-matching)
 · [Quantified three-cap extraction obligation](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#the-extraction-obligation-with-all-three-original-caps)
 
 Each nonlinear rational factor of a fixed-order weighted
@@ -10930,6 +10953,88 @@ any near-saturating family across the entire dictionary range.
 An upper bound for that fresh radical on enough genuine rows
 would give a saving without a valuation-grid hypothesis.
 [Fresh cyclotomic radical counts (BFR3–BFR4)](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md#fresh-cyclotomic-radicals-on-original-rows)
+
+For generic pairs from every balanced near-full family,
+four direct cross comparisons have disjoint fresh ordinary
+radical supports, each of price at least \(2/3-o(1)\).
+Their combined fresh radical price is therefore at least
+\(8/3-o(1)\). Higher-degree forms on the primitive cross
+ratio have the same floor even for their power defects.
+On a prescribed finite list of pairwise coprime forms of
+degree at least five this forces independent power classes
+modulo the six original letters, with a quantitative fresh
+radical floor for any nontrivial product. The one-row
+analogue counts an original raw radical budget plus a
+joint fresh power-defect budget at coefficient at most
+\(B_* /(3+J)\) for \(J\) outputs and joint budget \(B_*\).
+[Fresh radicals and power defects (GP1–GP3)](ABC_GENERIC_PAIR_FRESH_BINARY_FORMS.md)
+
+When the product of the fixed locks approaches the full
+numerical height, a single complete letter and the joint
+register determine a row up to arbitrarily small normalized
+fibre exponent. Balanced saturation then requires
+\(\alpha\ge2/9\). In this remaining range the joint
+register has full row entropy and the two opposite
+registers carry almost all of each complete letter's
+entropy. Two locks whose product approaches full numerical
+height already exclude positive complete multiplicity.
+[Tight-lock register information (JD5)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#tight-full-locks-force-almost-complete-register-information)
+
+The least repair also gives a direct reverse transfer of
+the strict powerful fixed-shift saving. A prescribed
+nonzero weighted difference of the genuine least target
+multipliers leaves fewer than \(n^{1/6-\Delta+\varepsilon}\)
+original target pairs, for fixed \(\Delta>0\) in the
+balanced small-budget regime. A fixed original summand
+ratio and fixed nonzero repaired summand difference give
+the same pair bound. In repaired height this is strictly
+below \(1/(2M)\) per record. This forces strict additive
+expansion of the actual multiplier dictionary and supplies
+a new cheap-record incidence criterion. The normalized
+projective auxiliaries are exactly invariant under repair,
+whereas the multiplier shifts keep its high valuation
+floor. [Least multiplier transfers (LM1–LM3)](ABC_LEAST_MULTIPLIER_SHIFT_COUNTS.md)
+
+The strict weighted multiplier bound aggregates across
+original summand fibres. A nonzero repaired shift between
+two rows sharing an original summand determines that summand
+at divisor cost, then LM1 counts the remaining targets.
+At the minimum balanced dictionary exponent the exact
+repaired shift catalogue has exponent at least \(1/3+\Delta\).
+Complete grids also produce Vandermonde determinants whose
+factors are the original summand differences and multiplier
+differences. Their catalogues grow at every fixed grid
+size. A separate valuation argument rules out transporting
+the target dictionary along a cheap list of bounded-degree
+polynomial models of the repair map.
+[Least-multiplier graph moments (LG1–LG3)](ABC_LEAST_MULTIPLIER_GRAPH_MOMENTS.md)
+
+The actual repaired plane also has a uniform curve bound.
+A degree-\(D\) curve away from fixed-target line components
+has only \(X^{D/M+\varepsilon}\) points. This gives a
+near-full outside radical requirement on the primitive
+displacement directions of generic pairs. Two exact
+rational records, a primitive target-odds difference and
+a normalized repaired slope, recover arbitrary original
+pairs at cost \(n^{3/K}\) up to subpower. These conclusions
+retain the original caps and the actual least repair.
+[Repaired curves and directions (LP1–LP3)](ABC_LEAST_REPAIRED_PLANE_CURVES_AND_DISPLACEMENTS.md)
+
+An elementary private-denominator count gives near-maximal
+weighted sumsets in a bounded-height rational set or its
+reciprocal. On a retained abc row subfamily, at least two
+original denominator roles have this growth simultaneously
+for any finite list of fixed signed words. On an arbitrary
+good pair or triple sector one pure orientation still suffices
+after pigeonholing, and for longer prescribed sectors
+several linearly independent sums give completion. The fresh
+defects of fixed higher-degree forms in a \(j\)-term summed
+odds have price at least \(j/3-o(1)\). Repeated actual third
+divisor fibres amplify exact shift dictionaries because their
+divisors can be recovered from the numerator of a nonzero
+zero-sum-weight output. This imposes an additional constraint
+on every proposed improving joint-pool certificate.
+[Signed rational odds and actual divisor fibres (OS1–OS4)](ABC_SIGNED_RATIONAL_ODDS_SUMS.md)
 
 ## Fixed-letter pairs and independently supported anchor stars
 

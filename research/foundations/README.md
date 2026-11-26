@@ -94,6 +94,14 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Two coprime unmarked minors on an exceptional conductor-18 radial line | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
 | All-parameter moments for odd quartic and even radial terms at conductor 18 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
 | Three-pole conductor-18 reconstruction on coordinate slices and at prime 331 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| A fixed conductor-18 witness at prime 61 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| Projective boundary and local restrictions at 331 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| Four-input reconstruction and a 331-adic moving branch ratio | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| Hamiltonian exclusion for full-width coherent profiles | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| A lower bound from both coherent dimensions of a Frobenius block | Internal result | proved | [Source](extended-geometry/CM_NEWTON_BLOCK_RANK_MOMENTS.md) |
+| Hasse–Witt rank in two whole-Jacobian p-rank-zero classes | Internal result | proved | [Source](extended-geometry/CM_NEWTON_BLOCK_RANK_MOMENTS.md) |
+| Four marked sphere moments recover a rank-two Hasse–Witt block | Internal result | proved | [Source](extended-geometry/CM_NEWTON_BLOCK_RANK_MOMENTS.md) |
+| Exact conductor-18 reconstruction for every branch ratio with odd terms through degree four | Internal result | proved | [Source](extended-geometry/CM_NEWTON_MOVING_BRANCH_RATIO_CERTIFICATES.md) |
 | Full-width four-branch families with zero primitive p-rank and positive uniform prime density | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
 | Split cubic discriminant cofactors are norms from the varying field Q(sqrt p) | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPLIT_COFACTOR_NORM_AND_TRACE_COUNT.md) |
 | Uniform split one-failure trace lattice count with a moving auxiliary modulus | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPLIT_COFACTOR_NORM_AND_TRACE_COUNT.md) |

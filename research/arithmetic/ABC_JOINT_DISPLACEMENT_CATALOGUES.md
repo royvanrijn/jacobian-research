@@ -363,3 +363,76 @@ cell. Extracting that common catalogue remains
 open.
 [Regular genuine residue cells (RB4)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#the-actual-residue-cell-sizes)
 · [Tight locks at fixed shifts (NJ5)](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md#tight-full-locks-and-the-third-register)
+
+## Tight full locks force almost complete register information
+
+**JD5.** For each fixed allowance \(\eta>0\) there are
+\(\theta,L_0>0\) with the following properties at
+\(0<L<L_0\) fixed. Work with original primitive shell
+rows and all three original individual caps
+\(n^{1/3+o(1)}\), or any fixed larger bound on their
+normalized exponents. Fix coprime locks \(D_R\mid R\) on
+the indicated roles and the actual additive signs.
+If two fixed locks satisfy \(D_R D_S\ge X^{1-\theta}\),
+the number of rows over each fixed complete third letter
+is \(O(n^\eta X^\varepsilon)\). With three fixed locks
+and \(D_A D_B D_C\ge X^{1-\theta}\), fixing any one
+complete letter and the three exact registers leaves at most
+\(O(n^\eta X^\varepsilon)\) rows.
+
+For the first assertion, fix the complete third letter.
+It supplies the two cross residues, so one free locked
+letter is fixed modulo the product \(D_R D_S\) by CRT.
+For the second, fix one complete letter and the three
+registers. Each free letter has its own zero residue and
+the two opposite residues. Thus a free letter is fixed
+modulo \(D_A D_B D_C\). In both cases it has the form
+\(W=w_0+D j\) for a fixed \(w_0,D\) and a single integer
+\(0\le j\le X/D\). Apply CS1 to the original fixed-letter
+fibre, using the rank-one feature \(j\), the affine function
+\(w_0+Dj=W\), and the numerical height bound \(W\le X\).
+Taking \(\theta\) no larger than the CS1 threshold proves
+the uniform bounds.
+[Fixed-letter affine feature count (CS1)](ABC_CELL_PRIMITIVE_SECANT_BOUNDS.md#small-features-on-a-fixed-complete-letter-fibre)
+
+In a regular balanced chart under RB5–RB7, write \(\alpha\)
+for the complete dictionary exponent, \(u=1/3-\alpha\)
+for the complete-letter fibre exponent, \(s=1/3-2u\)
+for the register entropy, and \(z\) for the common pairwise
+register mutual information, in units of \(\log n\).
+All the following comparisons absorb the height-subpower
+loss at each fixed budget and then the arbitrarily small
+chart losses in the outer limit. The two-lock result
+excludes every fixed \(u>0\) along a sequence of allowable
+charts in which \((1-\log_X(D_R D_S))_+\) tends to zero.
+
+For three locks, put \(\mathbf J=(J_A,J_B,J_C)\). The
+second bound gives \(H(\mathrm{row}\mid T,\mathbf J)
+\le(\eta+o(1))\log n\). The two registers opposite \(T\)
+are already determined by \(T\). Hence
+\[
+ (u-\eta-o(1))\log n
+ \ \le\ H(J_T\mid T)
+ \ \le\ H(J_T\mid J_{T'},J_{T''})
+ \ =\ (s-z+o(1))\log n.
+\]
+It follows that \(z\le1/3-3u+\eta+o(1)\) and
+\(H(\mathbf J)\ge(1/3-2\eta-o(1))\log n\). The first
+comparison also uses regularity to identify
+\(H(\mathrm{row}\mid T)=(u+o(1))\log n\).
+For an allowable sequence of charts with
+\((1-\log_X(D_A D_B D_C))_+\to0\), choose \(\eta\) first,
+then the associated numerical and budget cutoffs. Letting
+\(\eta\) decrease, RB7 now gives the necessary conditions
+\[
+         u\le1/9,\qquad \alpha\ge2/9,\qquad
+         z=1/3-3u,\qquad H(\mathbf J)=(1/3+o(1))\log n .
+\]
+Also \(H(T\mid J_{T'},J_{T''})=o(\log n)\) for each
+role, since that register pair is a function of \(T\) and
+its entropy \(2s-z+o(1)=\alpha+o(1)\) reaches the full
+complete-letter entropy. Thus almost full numerical depth
+excludes the whole limiting range \(1/6\le\alpha<2/9\)
+and forces equality in the register-information constraint
+throughout the rest of the range.
+[Balanced register identities (RB5–RB7)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#conditional-entropy-identities-and-three-registers)

@@ -235,6 +235,23 @@ native factorial coefficient calculation, including the factors2
 which remove repeated edges and vertices of cross-degree at least two.
 General matching-polynomial theorems are not proof premises.
 
+The [residue denominator theorem](QUADRATIC_MATCHING_RESIDUE_DENOMINATOR_WINDOWS.md)
+uses (4) directly with independent cross coefficients. It gives a
+support-length criterion in every dimension and also permits a constant
+of sufficiently high valuation. The [prime-power rationality theorem](FACTORIAL_MOMENT_SERIES_PRIME_POWER_RATIONALITY.md)
+extends the rational-series construction to arbitrary exponent support.
+For quadratics the [second dyadic layer](QUADRATIC_MATCHING_SECOND_DYADIC_LAYER.md)
+gives the explicit modulo-four correction, and the
+[fixed pole bounds](QUADRATIC_FIXED_DYADIC_POLE_SUPPORT.md) control all
+dyadic precisions with denominator exponents linear in the precision. In two variables the
+[weighted dyadic analysis](BINARY_ZERO_CONSTANT_QUADRATIC_WEIGHTED_MATCHING_LOCAL.md)
+classifies the two possible residues for a four-zero block, and the
+[boundary lift](ZERO_CONSTANT_BINARY_QUADRATIC_MATCHING_AND_BOUNDARY_LIFTS.md)
+gives actual-support windows on two more coefficient planes. Four
+equations in the five coefficients necessarily have a nonzero algebraic
+common zero at each start, so the unrestricted five-term family requires
+a five-window.
+
 Closest classical Strong Factorial sectors include powers of linear forms
 and independent-variable linear adjunction in Rocks, On the incompatibility
 of diophantine equations arising from the Strong Factorial Conjecture,
