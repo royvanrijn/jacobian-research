@@ -2,9 +2,9 @@
 
 <!-- Generated from research/MATH_STATUS.json; run make render-navigation. -->
 
-Factorial moment functionals, composition rigidity and Strong Factorial families. One varying exponent also permits any independent common monomial factor, with all terminals covered.
+Factorial moment functionals, composition rigidity and Strong Factorial families. Coefficient-uniform windows are proved for all quadratic phases in every dimension. Ordinary two-monomial coprimality in arbitrary dimension first remains at terminal fifteen.
 
-**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary ordinary multivariate binomials, terminals 2 through 14 and every terminal at or above a computable absolute cutoff are proved. Both-private supports are covered in every degree, and the one-private case is covered when the private total exponent is at least six. Unrestricted coprimality for the remaining multivariate supports and the larger-support conjecture remain open.
+**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary ordinary multivariate binomials, terminals 2 through 14 and every terminal at or above a computable absolute cutoff are proved. Both-private supports are covered in every degree, and one-private supports are covered when the private total exponent is at least six, and for 2<=P<=5 the sharpest registered sufficient shared-curvature caps are 73/9, 37/6, 38/9, 41/18 respectively. Unrestricted coprimality for the remaining multivariate supports and the larger-support conjecture remain open.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -184,13 +184,13 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Uniform adjacent Airy-root comparison at the subcritical thermal fold | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_SUBCRITICAL_THERMAL_FOLD.md) |
 | Quantitative endpoint criterion at growing curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GROWING_CURVATURE_ENDPOINT_EXPANSION.md) |
 | Absolute thresholds for growing-curvature profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNBOUNDED_CURVATURE_EVENTUAL.md) |
-| Uniform eventual coprimality for positive-curvature fully shared profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Uniform eventual coprimality for positive-curvature fully shared profiles | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
 | Terminal-six closure for signed unit gaps at bases divisible by 275 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_PADIC_UNIT_GAPS.md) |
 | Exact digit recognition and obstruction to fixed-prime fixed-precision screening | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PADIC_DIGIT_AUTOMATON.md) |
 | Absolute eventual thresholds at vanishing shared curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_VANISHING_CURVATURE_EVENTUAL.md) |
 | Uniform moving cubic endpoint reduction for one private linear row | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MOVING_PRIVATE_CUBIC_MODEL.md) |
 | Uniform normalized root annulus at bounded private degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOUNDED_PRIVATE_ROOT_ANNULUS.md) |
-| Absolute eventual cutoff for all fully shared ordinary profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Absolute eventual cutoff for all fully shared ordinary profiles | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
 | Uniform exclusion in the escaping one-private linear endpoint windows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_ENDPOINT_UNIFORM_THERMAL_TAILS.md) |
 | Uniform regular exclusion for one private side | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_ONE_PRIVATE_REGULAR_COMPLEMENT.md) |
 | Finite contour activation for varying subcritical one-private supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIFORM_SUBCRITICAL_PRIVATE_ACTIVATION.md) |
@@ -198,7 +198,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Half-line cubic zero separation at large negative temperature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_NEGATIVE_TEMPERATURE.md) |
 | Double-zero exclusion in the bounded one-private cubic window | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_CUBIC_DOUBLE_LIMITS.md) |
 | Terminal-six separation in high-curvature and private-degree bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_PRIVATE_ANGLES.md) |
-| Reduction of the general eventual problem to the bounded cubic order speed | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Reduction of the general eventual problem to the bounded cubic order speed | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
 | Certified zero separation at zero temperature for the half-line cubic | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_ZERO_TEMPERATURE.md) |
 | A variable-prime Eisenstein criterion at every terminal | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MARKED_ROW_VARIABLE_PRIME.md) |
 | Terminal-six coprimality for one small private side with low shared curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_SMALL_SHARED.md) |
@@ -213,7 +213,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Joint curvature measure encoding all ordinary binomial coefficient arrays | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md) |
 | Curvature ordering under proportional row inflation and identification | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md) |
 | A branch-comparison proof excluding common double cubic limiting fields | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_CUBIC_LINKED_DOUBLE_ZERO.md) |
-| Terminal-six SFC for every profile with private variables | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Terminal-six SFC for every profile with private variables | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
 | Exact sign and large-order threshold for factorial row-merger curvature | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ROW_MERGER_CURVATURE_SIGN.md) |
 | Necessary profile-dependent constraints at simple cubic candidate temperatures | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIVATE_CUBIC_LINKED_SIMPLE_LIMITS.md) |
 | Interior physical Gaussian collision for an ordinary three-column support | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_ROW_MERGE_INTERIOR_COLLISION.md) |
@@ -222,14 +222,14 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Uniform closure of the joint factorial curvature and relative centers | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_JOINT_CURVATURE_PROFILE_CLOSURE.md) |
 | Physical binary merger regularity with reserved private degrees | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_BINARY_RESIDUAL_PRIVATE.md) |
 | Opposite Gamma factor pairing and radial separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_GAMMA_ROOT_ANNULUS.md) |
-| One shared asymmetric row with arbitrary mirrored padding | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_GAMMA_ROOT_ANNULUS.md) |
+| One shared asymmetric row with arbitrary mirrored padding | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_PAIRED_GAMMA_ROOT_ANNULUS.md) |
 | Variable-prime coprimality from two opposing exponent rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSITE_MARKED_ROW_PRIME.md) |
 | Global simplicity and distinct heights of half-line cubic zeros | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_RICCATI_POSITIVITY.md) |
 | An explicit positive-temperature cubic tail bound | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_EXPLICIT_POSITIVE_TAIL.md) |
 | Compact field reduction for all positive-temperature cubic speeds | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_SPEED_COMPACT_FIELD.md) |
 | No vanishing order speed at upper cubic zeros for T at least two | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_POSITIVE_SPEED_CERTIFICATE.md) |
 | Terminal-six separation in nine coupled fully shared bands | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_JOINT_RAY_BANDS.md) |
-| Uniform eventual Strong Factorial for all ordinary two-monomial profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
+| Uniform eventual Strong Factorial for all ordinary two-monomial profiles | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) |
 | Fully shared terminal-six separation for curvature at least four | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_HYBRID_CURVATURE.md) |
 | Quantitative endpoint attenuation and ordinary shared factor links | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORDINARY_ADJACENT_COEFFICIENT_ATTENUATION.md) |
 | Fully shared terminal-six separation for normalized outer mean at least 9/10 | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TERMINAL_SIX_NEAR_FLAT_EXTENSION.md) |
@@ -921,9 +921,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Ordinary mirrored row mergers can move root angles in opposite directions | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORDINARY_ROW_MERGER_ANGULAR_NONMONOTONICITY.md) |
 | Pure-cross three-windows for transcendental and real-conjugate cross ratios | Internal result | proved | [Source](image-rigidity/BILINEAR_REAL_CONJUGATE_RATIO_THREE_WINDOW.md) |
 | Pure-cross three-windows at the first three starts without coefficient restrictions | Internal result | proved | [Source](image-rigidity/BILINEAR_REAL_CONJUGATE_RATIO_THREE_WINDOW.md) |
-| Uniform finite windows for all inhomogeneous quadratic phases in every dimension | Internal result | proved | [Source](image-rigidity/FACTORIAL_QUADRATIC_EVENTUAL_NONVANISHING.md) |
+| Uniform finite windows for all inhomogeneous quadratic phases in every dimension | Internal result | stale | [Source](image-rigidity/FACTORIAL_QUADRATIC_EVENTUAL_NONVANISHING.md) |
 | Explicit factorial windows for arbitrary separated univariate polynomial sums and powers | Internal result | proved | [Source](image-rigidity/FACTORIAL_SEPARATED_POLYNOMIAL_POWER_WINDOWS.md) |
-| Independent mixtures of univariate polynomial and arbitrary quadratic blocks | Internal result | proved | [Source](image-rigidity/FACTORIAL_SEPARATED_POLYNOMIAL_POWER_WINDOWS.md) |
+| Independent mixtures of univariate polynomial and arbitrary quadratic blocks | Internal result | stale | [Source](image-rigidity/FACTORIAL_SEPARATED_POLYNOMIAL_POWER_WINDOWS.md) |
 | Explicit factorial windows for coupled phases with simple logarithmic critical points | Internal result | proved | [Source](image-rigidity/FACTORIAL_LOGARITHMIC_CRITICAL_NONVANISHING.md) |
 | Shifted Strong Factorial windows reduce exactly to initial windows by linear adjunction | Internal result | proved | [Source](image-rigidity/SFC_SHIFT_TO_INITIAL_LINEAR_ADJUNCTION.md) |
 | Signed endpoint Laplace criterion for all-degree diffuse-tail physical separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIGNED_ENDPOINT_LAPLACE_RADIAL_CLOSURE.md) |
@@ -993,14 +993,32 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All-order factorial windows with one coordinate orbit at each degree | Internal result | proved | [Source](image-rigidity/SFC_EQUIVARIANT_DEGREE_ORBIT_WINDOWS.md) |
 | Necessary conditions for an exact shared scalar saddle correction | Internal result | proved | [Source](image-rigidity/SFC_COMMON_SCALAR_SADDLE_OBSTRUCTION.md) |
 | Uniform three-adic bounds for the shifted noncollinear cubic gate | Internal result | proved | [Source](image-rigidity/SFC_TERNARY_CUBIC_TRIADIC_BOUND.md) |
+| All-order pole-degree bounds at opposed factorial boundary contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_BOUNDARY_POLE_DEGREES.md) |
+| Two-clock reduction for irrational opposed factorial contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_TWO_CLOCK_DEPENDENCE.md) |
+| Arbitrary long affine zero windows under strictly totally positive factorial weights | Internal result | proved | [Source](image-rigidity/SFC_WEIGHTED_FACTORIAL_TOTAL_POSITIVITY_OBSTRUCTION.md) |
+| Exclusion of every positive opposed factorial boundary contact | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_BOUNDARY_CLOCK_EXCLUSION.md) |
+| Zero-strength exclusion with unbounded counts in two affine factorial groups | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ZERO_STRENGTH_TWO_HEIGHT_GROUPS.md) |
+| Finite curve certificates for rational-bias contacts of two affine groups | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AFFINE_GROUP_HEIGHT_CURVE_CERTIFICATE.md) |
+| Effective all-order height cutoff for balanced opposed factorial types | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BALANCED_TWO_TYPE_HEIGHT_CUTOFF.md) |
+| Recovery of an arbitrary factorial row profile from a single moment form | Internal result | proved | [Source](image-rigidity/SFC_ARBITRARY_SUPPORT_ROW_RIGIDITY.md) |
+| The first universal residue discrepancy under factorial row packing | Internal result | proved | [Source](image-rigidity/SFC_FIRST_DIGIT_PACKING_DISCREPANCY.md) |
+| Universal s10 native bound nine over forty-nine | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_L8_NATIVE_BOUND_AND_TWELFTH_GRID_SIX_WINDOW.md) |
+| L8 cube six-window on every grid with dyadic part four | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_NATIVE_PERIODS_AND_TWELFTH_GRID_ALL_CONSTANT_WINDOWS.md) |
+| Allconstant nonpolynomial grid12 binary six-window | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_NATIVE_PERIODS_AND_TWELFTH_GRID_ALL_CONSTANT_WINDOWS.md) |
+| Dense actual quadratic SFC on the nonpoly twelfth grid | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_NATIVE_PERIODS_AND_TWELFTH_GRID_ALL_CONSTANT_WINDOWS.md) |
+| Necessary remaining coefficient-grid and L8 restrictions | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_NATIVE_PERIODS_AND_TWELFTH_GRID_ALL_CONSTANT_WINDOWS.md) |
+| Stronger universal s10 bound three fourteenths | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_L8_S10_UNIVERSAL_THREE_FOURTEENTHS_BOUND.md) |
+| Effective reductions by distinct soft factorial row types and tail gap budget | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SOFT_TYPE_FINITE_REDUCTION.md) |
+| Computable exclusion radii at opposed factorial contacts with related logarithmic clocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSED_EFFECTIVE_RATIONAL_CONTACTS.md) |
+| All-order factorial windows from uncontaminated residue sections | Internal result | proved | [Source](image-rigidity/SFC_SINGLETON_RESIDUE_SECTION_WINDOWS.md) |
 
-**Computed obligations:** 50 unresolved; 34 resolved within their exact scope.
-
-**Assessment update needed:** UQR-OPEN-ALL-REMAINING-RESONANT-PAIR-COPRIMALITY, UQR-OPEN-DENSE-UNIVARIATE-QUADRATIC-SFC, LAB-OPEN-FOUR-TERM-BINARY-QUADRATIC-SFC, LAB-OPEN-FIVE-TERM-TERNARY-QUADRATIC-SFC now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
+**Computed obligations:** 51 unresolved; 35 resolved within their exact scope.
 
 
 Scope limits:
 
+- Dense univariate quadratics and their independent one- and two-linear adjunctions have complete all-start windows of lengths three, four and five respectively, over every characteristic-zero field. The older q=91 resonance was a limit of an earlier criterion.
+- Every nonzero total-degree-at-most-two phase in m variables has a nonzero factorial moment in every positive window of length W_m=R+(R+1)R(R+3)/2, R=2^m. W_2=74 and W_3=404, including singular, affine, and constant phases. For each fixed d>=1, infinitely many powers indexed by positive multiples of d have nonzero moments. The sharp actual-support-size window remains separate.
 - Earlier 26/27, no-carry, adjacent-part, residual/parity and all-prime filters retain their proved scopes. They are unnecessary for ordinary degree-five completion; no-carry coverage failure and a surviving local degree are not SFC counterexamples.
 - Every prime-power lower-one family X(A+BX^(p^s)) satisfies ordinary SFC at every index, and gap-two lower exponents 2,3 are proved at every positive real shape. The scalar-minor theorem completes ordinary support {2,5}, hence every ordinary degree <=5 binomial. Full binomial SFC and all-real-shape H3 total nonnegativity remain open.
 - The gap-two families X^2(A+B X^2), X^3(A+B X^2), X^4(A+B X^2) and X^5(A+B X^2) satisfy SFC at every index and every positive real Gamma shape. The lower-four and lower-five extensions use strict Pick quotients and Gamma-product zero-free sectors; all-positive-real-shape assertions for other lower exponents remain separate.
@@ -1111,10 +1129,11 @@ Scope limits:
 - Naturally integral binary quadratics with nonpolynomial native residue and coefficient value group contained in one-quarter integers now have an all-constant six-window at every positive start. Dense five/six-support phases in this local sector satisfy actual-support SFC. The proof separates one-pole classification, the quarter-gap weighted-native contradiction, the L8 sixth-power support obstruction, and L>=16 native Taylor exclusion. A remaining nonpolynomial counterexample lies beyond actual quarter-grid containment; for a finite Q2 coefficient field with minimal ramification e it requires4|e and e>=8, not8|e. Polynomial residues, arbitrary finer grids, smaller sparse critical windows, full quadratic SFC, SFC(2), and SFC(3) remain open.
 - Pure-cross binary phases BXY+dX+eY with Bde nonzero have a nonzero factorial moment in every length-three block ending at an odd prime, and at every start1 through5, over all characteristic-zero fields. Noncentral prime resonances use an Eisenstein factor and a formal characteristic-p discriminant fold count; the central case uses the existing Robin theorem. A remaining counterexample must start>=6, have a non-odd-prime terminal, and retain the previously proved algebraic/no-real-conjugate cross-ratio obstruction. This does not assert a counterexample or close arbitrary-start pure-cross, full binary quadratic SFC, SFC(2), SFC(3), or the old H gate.
 - A gap-free native four-row argument excludes six consecutive zero moments at constant valuation three quarters whenever the naturally integral binary quadratic has nonpolynomial native residue. A remaining such counterexample must lie at a critical radius at least seven eighths. A separate finite-tail theorem excludes sufficiently high critical radii on grids with 2-part four. A self-contained polynomial-residue one-axis sector with a large constant has a five-window and actual-support SFC for support five or six. These valued-sector results leave unrestricted quadratic SFC, SFC(2), SFC(3), polynomial-residue cases outside the stated sector, and the monic anti gate open.
+- Naturally integral binary quadratics with nonpolynomial native residue on the twelfth coefficient grid now have an allconstant six-window at every positive start, with actual-support SFC for dense support five or six. The L8 cube sector is closed on every coefficient grid with dyadic part four. A parallel universal s10 bound improves alpha from nine over forty-nine to three fourteenths; the main assembly continues to use the earlier bound. Remaining nonpolynomial counterexamples lie outside grid12, and any specified discrete grid for an L8 counterexample has a factor eight. Polynomial residues, arbitrary other grids, sparse smaller windows, full quadratic SFC, SFC(2), SFC(3) and the monic anti gate remain open.
 
 Tracked obligations (computed states):
 
-- **mathematical / open:** [Higher-dimensional FC and unrestricted SFC.](README.md) — FACTORIAL-GENERAL-FC
+- **mathematical / open:** [Prove higher-dimensional FC beyond the coefficient-uniform quadratic and other established families, and prove unrestricted support-size SFC.](README.md) — FACTORIAL-GENERAL-FC
 - **mathematical / open:** [All lower-one higher-gap Gamma pairs at every terminal order; lower exponents greater than one require a separate argument.](README.md) — FACTORIAL-LOWER-ONE-HIGHER-GAP
 - **verification / open:** [Independent mathematical and priority review.](README.md) — GAP-FACTORIAL-3
 - **mathematical / open:** [Uniform total nonnegativity of the actual gap-three H3 family, for example via all-size staircase-minor positivity or a parameter-compatible positive factorization.](image-rigidity/gap_three_hurwitz.tex) — FACTORIAL-GAP3-HURWITZ-TN
@@ -1137,15 +1156,11 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Determine original-cycle saddle coefficients on cut cells, bound complete packets near active ties and branch values, and prove actual-zero exhaustion. The distinguished radial graph alone does not prove activation or finite-order SFC.](image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md) — GAP-FACTORIAL-CUSP-ACTIVE-CYCLE-AND-GLOBAL-ERRORS
 - **mathematical / open:** [Decide whether the actual repeated-root triple set is EMPTY: for EVERY integer a>=0,d>=1,m>=2, prove gcd_Q(A_(m;a,d),A_(m;a,d)_prime)=1, or exhibit an actual repeated-root triple. A support-uniform eventual cutoff and finiteness of this set do not prove emptiness.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-ALL-ORDER-SQUAREFREENESS
 - **mathematical / open:** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF
-- **mathematical / open:** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
-- **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for the remaining multivariate two-monomial profiles with at most one private side, the latter with total private exponent at most five, from terminal fifteen below the computable absolute angular cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
+- **mathematical / stale:** [Can the actual consecutive factorial moments of X^r Y^u(aX+bY) share a root for integers r,u>0 with r != u? The exponent axes and diagonal are closed. Any strip approach must retain the physical annulus.](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
+- **mathematical / open:** [Prove ordinary coprimality at terminals from fifteen below the computable absolute angular cutoff. Fully shared profiles require S_sh<12. For one private side, the remaining S_sh caps at P=1,2,3,4,5 are 11, 73/9, 37/6, 38/9, 41/18, all strict.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GAP-FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-RESIDUAL
 - **mathematical / open:** [For every nonzero f in C[x,y,z] with s nonzero monomials and every n>=1, at least one L(f^n),...,L(f^(n+s-1)) is nonzero. Arbitrary degrees and supports; this is the standard dimension-three conjecture.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-THREE-VARIABLES
 - **mathematical / open:** [For every nonzero f in C[x,y] with s nonzero monomials and every n>=1, at least one L(f^n),...,L(f^(n+s-1)) is nonzero. Arbitrary degrees and supports; this is the standard dimension-two conjecture, not the two-monomial family.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-TWO-VARIABLES
 - **mathematical / open:** [For every nonzero f in C[x,y] of total degree at most two, with its actual number s of nonzero monomials, and every n>=1, at least one moment from n through n+s-1 is nonzero. Constant and linear terms are included; homogeneous quadratic closure alone does not prove this.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-BINARY-QUADRATICS
-- **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Exclude a rational common factor for every remaining q in the explicit resonance set R; equivalently establish the universal dense univariate quadratic support-three window.](image-rigidity/UNIVARIATE_QUADRATIC_STRONG_FACTORIAL_RESONANCE.md) — UQR-OPEN-ALL-REMAINING-RESONANT-PAIR-COPRIMALITY
-- **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Universal dense univariate quadratic support-three Strong Factorial windows, beyond the proved resonance exclusion criterion.](image-rigidity/UNIVARIATE_QUADRATIC_STRONG_FACTORIAL_RESONANCE.md) — UQR-OPEN-DENSE-UNIVARIATE-QUADRATIC-SFC
-- **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Universal four-moment windows forax^2+bx+dy+c, equivalent to the dense univariate quadratic problem.](image-rigidity/QUADRATIC_STRONG_FACTORIAL_LINEAR_ADJUNCTION_BRIDGE.md) — LAB-OPEN-FOUR-TERM-BINARY-QUADRATIC-SFC
-- **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Universal five-moment windows forax^2+bx+dy+ez+c, equivalent to the same dense univariate quadratic problem.](image-rigidity/QUADRATIC_STRONG_FACTORIAL_LINEAR_ADJUNCTION_BRIDGE.md) — LAB-OPEN-FIVE-TERM-TERNARY-QUADRATIC-SFC
 - **mathematical / open:** [Does the optional stronger monic ordinary Anti-coefficient property H hold with all its stated quantifiers? Universal quadratic forcing is already proved independently; no converse to H is asserted.](image-rigidity/QUADRATIC_HALF_VALUATION_MONIC_ANTI_GATE_CONDITIONAL_CLOSURE.md) — HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND
 - **verification / open:** [Verify EIT V’s strict-extremum comparison on the specific EIT VI odd family.](image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md) — GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON
 

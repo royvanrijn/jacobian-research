@@ -3,14 +3,14 @@
 Let \(C(X)\) count centers \(2\le n\le X\) of three consecutive positive powerful integers. Using the fixed-shift component and lattice estimates of [Plymesser's powerful-products preprint](sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf) and the published affine curve bounds of [Castryck–Cluckers–Dittmann–Nguyen](sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf),
 
 \[
-C(X)\ll_\varepsilon X^{6/25+\varepsilon}.
+C(X)\ll_\varepsilon X^{\vartheta+\varepsilon},\qquad \vartheta=\frac6{25}-10^{-7}.
 \]
 
 The degree-ten components are counted by averaging over pair intervals. A large leading form gives a direct gain in the affine curve count. When both of two leading forms are small, a boundary point determines a short list of reduced lattice directions, which bounds the number of such intervals. A varying rectangle in the contact determinant keeps the few poorly balanced pair windows within this budget. The argument counts all pair points on the selected components, so it applies in particular to those that extend to fundamental triples.
 
 ## Pair selection and the contact width
 
-Use the notation and [exact localization of the old pairwise bound](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md#point-count-required-on-the-surfaces). It suffices to work where all pair sums of kernel exponents belong to \((14/45,16/45)\). Put the three exponents in increasing order, write \(s_* = 103/305\), and select whichever adjacent pair in this ordering has sum \(s\) farther from \(s_*\). The shifts in the original integers are still 1 or 2. If \(\Delta\) is the difference of the selected kernel exponents and \(\tau=s_*-s\), then \(\Delta\le 2|\tau|\): the difference of the two adjacent sums is the span of the three exponents. Also \(|\tau|\le1/35\).
+Use the notation and [stability estimate for the old pairwise bound](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md#the-only-maximizer-of-the-pairwise-bound). Work where the old envelope is greater than \(\vartheta\). The tolerance \(77/320-\vartheta=1/1600+10^{-7}\) is less than \(1/1500\). All three pair sums are within \(\kappa=(8/9)\sqrt{1/1600+10^{-7}}\) of \(1/3\), since the middle sum lies between the two adjacent sums in sorted order. Put the three exponents in increasing order, write \(s_* = 103/305\), and select whichever adjacent pair in this ordering has sum \(s\) farther from \(s_*\). The shifts in the original integers are still 1 or 2. If \(\Delta\) is the difference of the selected kernel exponents and \(\tau=s_*-s\), then \(\Delta\le 2|\tau|\): the difference of the two adjacent sums is the span of the three exponents. The bounds \(|\tau|\le\kappa+4/915<1/35\) and \(\Delta\le2\kappa<1/20\) have fixed slack.
 
 Write the selected fixed-shift equation as \(e^3v^2-d^3u^2=h\) with \(h\in\{1,2\}\). The size parameters \(D,E,U,V\) satisfy \(D^3U^2=E^3V^2\), the common pair-window scale. This is comparable to the dyadic height \(X\), with \(O(1/\log X)\) changes in the window exponents. Set
 
@@ -69,15 +69,15 @@ For a primitive degree-ten plane equation \(f\) with highest form of coefficient
 \ll B^{1/10}H^{-1/100}(1+\log H+\log(2B)) + \log(2B).
 \]
 
-Put \(\gamma=75m-14>0\). If either plane projection has \(H\ge X^\gamma\), the corresponding component contributes \(\ll_\varepsilon X^\varepsilon(1+B^{1/10}X^{-\gamma/100})\). The logarithm in \(H\) is absorbed using the decreasing function \((\log H)H^{-1/100}\) above a fixed threshold; no upper bound on the full plane equation is needed. In this region the differences of the pair exponents are at most \(2/45<2m/3\), so the usual reference heights satisfy \(L_*^3T_*^2\asymp X^{1-5m/2}\). Summing the lattice moments gives exponent
+Put \(\gamma=75m-14+10^{-5}>0\). If either plane projection has \(H\ge X^\gamma\), the corresponding component contributes \(\ll_\varepsilon X^\varepsilon(1+B^{1/10}X^{-\gamma/100})\). The logarithm in \(H\) is absorbed using the decreasing function \((\log H)H^{-1/100}\) above a fixed threshold; no upper bound on the full plane equation is needed. The pair exponents differ by less than \(1/20<2m/3\), so the usual reference heights satisfy \(L_*^3T_*^2\asymp X^{1-5m/2}\). Summing the lattice moments gives exponent
 
 \[
-m+\frac{1-5m/2}{10}-\frac{\gamma}{100}=\frac6{25}.
+m+\frac{1-5m/2}{10}-\frac{\gamma}{100}=\vartheta.
 \]
 
 ## Counting intervals with small leading forms
 
-Let \(\eta=1/8000\). Intervals where \(L_1>X^\eta L_*\) or \(T_1>X^\eta T_*\) are affordable by the ordinary affine bound. The two lattice tails in [Plymesser, Lemma 6.1](sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf) give \(O(M2^{-2j})\) intervals where either scaled first-minimum reciprocal exceeds \(2^j\), for \(M\asymp X^m\). In bins with indices \(i,j\) for the two reciprocals, the count is \(O(M2^{-2\max(i,j)})\) and the weight from \(B^{1/10}\) is \(O(L_*^{3/10}T_*^{1/5}2^{3i/10+j/5})\), with negative indices capped at zero. Summing the tail saves \(X^{-(3/2)\eta+\varepsilon}\). This is enough since \(1/10+3m/4-(3/2)\eta<6/25\) uniformly. In all remaining intervals the ordinary per-component bound is \(\ll_\varepsilon X^{(1-5m/2)/10+\eta/2+\varepsilon}\).
+Let \(\eta=1/8000\). Intervals where \(L_1>X^\eta L_*\) or \(T_1>X^\eta T_*\) are affordable by the ordinary affine bound. The two lattice tails in [Plymesser, Lemma 6.1](sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf) give \(O(M2^{-2j})\) intervals where either scaled first-minimum reciprocal exceeds \(2^j\), for \(M\asymp X^m\). In bins with indices \(i,j\) for the two reciprocals, the count is \(O(M2^{-2\max(i,j)})\) and the weight from \(B^{1/10}\) is \(O(L_*^{3/10}T_*^{1/5}2^{3i/10+j/5})\), with negative indices capped at zero. Summing the tail saves \(X^{-(3/2)\eta+\varepsilon}\). Its exponent is at most \(1/10+3(m_0+\xi)/4-(3/2)\eta<0.239976442<\vartheta\). In all remaining intervals the ordinary per-component bound is \(\ll_\varepsilon X^{(1-5m/2)/10+\eta/2+\varepsilon}\).
 
 For a degree-ten component with both leading forms of height less than \(X^\gamma\), each of the two reduced block ratios of every boundary point lies in a set of \(O(X^{11\gamma})\) directions, obtained from all nonzero integer binary forms of degree 10 with coefficients bounded by \(X^\gamma\). There is a boundary point far from the interval center in at least one original normalized block. In the ratios \(x=d/e, y=v/u\), the boundary is parametrized by \(x=t^2,y=t^3\). The pullback of a nonzero \((2,2)\) equation has degree at most 10, with no \(t^9\) term. It is nonzero since the boundary curve has bidegree \((3,2)\). If the degree drops, \(t=\infty\) is a boundary point. Otherwise the sum of the roots is zero, so a root has nonpositive real part. On rescaling \(x,y\) by \(D/E,(D/E)^{3/2}\), the same statement holds for the rescaled \(t\). A normalized boundary direction near both positive centers \(\rho,\rho^{3/2}\) would have \(t=y/x\) near \(\sqrt\rho>0\) in those rescaled coordinates. Thus the far direction has chordal distance bounded below by an absolute positive constant in at least one of the blocks, uniformly in \(\rho\) in the compact ratio chart.
 
@@ -96,10 +96,10 @@ In the kernel block \(S/S'\ll X^\Delta\), and in the square-part block \(S/S'\ll
 
 \[
 \frac{39}{6100}+\frac{3299}{4}\min\{\tau^2/2,1/5000\}
-   -3|\tau|-\frac92\eta-\frac{3299}{4}\xi>0.
+   -3|\tau|-\frac92\eta-\frac{3299}{4}\xi-11\cdot10^{-5}.
 \]
 
-In the uncapped case the minimum of the quadratic part after the \(39/6100\) term is \(-18/3299\). In the capped case use \(|\tau|\le1/35\). This completes the degree-ten count. Curves with both bidegrees at least two other than \((2,2)\) have lifted degree at least 12 and summed exponent at most \(m+(1-5m/2)/12<6/25\) by the ordinary affine bound. A \(\mathbb Q\)-irreducible but geometrically reducible curve contributes only boundedly many rational intersections with its conjugate components. The fixed-ratio and bidegree-one cases are covered by the fixed-shift component estimates, and the exterior boxes by the old pairwise estimates. Summing the dyadic boxes yields the stated bound.
+In the uncapped case the minimum of the quadratic part after the \(39/6100\) term is \(-18/3299\). In the capped case use \(|\tau|\le1/35\). The resulting upper exponent is less than \(0.239743504<\vartheta\) in both cases. This completes the degree-ten count. Curves with both bidegrees at least two other than \((2,2)\) have lifted degree at least 12 and summed exponent at most \(m+(1-5m/2)/12<0.231284162<\vartheta\) by the ordinary affine bound. A \(\mathbb Q\)-irreducible but geometrically reducible curve contributes only boundedly many rational intersections with its conjugate components. The fixed-ratio and bidegree-one cases are covered by the fixed-shift component estimates, and the exterior boxes by the old pairwise estimates. Summing the dyadic boxes yields the stated bound.
 
 ## Scope of the elliptic estimate
 

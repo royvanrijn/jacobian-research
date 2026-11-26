@@ -764,8 +764,11 @@ At every sufficiently large prime its Frobenius power is
 still nonzero. This proves the large-prime assertion for the
 local integrality class, even when one of the eliminated
 coefficients has a pole above \(331\).
-The rational unit-ideal question on the unrestricted
-\(b_1b_2ce\ne0\) locus remains open.
+The [seventeen-row theorem](CM_NEWTON_SEVENTEEN_ROW_LOCUS.md#excluding-the-final-two-residue-discs)
+proves the rational unit ideal on the full degree-\((5,1)\)
+support and removes the integrality hypothesis from the
+large-prime conclusion. The fixed witness window at \(331\)
+continues to use its stated integrality hypothesis.
 
 ### A quintic for the three-pole response
 
@@ -1411,11 +1414,10 @@ and a rank-two block measured by marked moments](CM_NEWTON_BLOCK_RANK_MOMENTS.md
 ## Open reconstruction question
 
 The [seventeen-row locus calculation](CM_NEWTON_SEVENTEEN_ROW_LOCUS.md)
-projects the common-zero equations through smaller finite algebras.
-The remaining normalized locus has dimension at most one. In
-particular the seventeen shifts suffice whenever the two even
-coefficients are integral at one place above \(331\), with all
-odd coefficients arbitrary.
+proves that the normalized blind locus is empty for the fixed
+conductor-18 top and degree-\((5,1)\) support, with correction
+degree at most two. It gives a uniform initial window of
+seventeen shifts for formal coherent detection on that support.
 
 The general upper-half question is whether extra unmarked rows
 force the coherent projection of the kernel to vanish at every

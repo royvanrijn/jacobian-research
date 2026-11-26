@@ -1,6 +1,6 @@
 # Pell descent and a joint surface cover for Erdős #364
 
-Let \(C(X)\) count integers \(2\le n\le X\) for which \(n-1,n,n+1\) are all powerful. An integer is powerful if every positive prime valuation is at least two. The Pell reduction separates the candidates whose centers are fundamental Pell traces. The [averaged pair argument](ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md) gives exponent \(6/25\) for \(C(X)\) using the stated fixed-shift estimates, improving the \(293/1220\) contact bound recorded below. The joint determinant gives a separate surface cover in every dyadic kernel box.
+Let \(C(X)\) count integers \(2\le n\le X\) for which \(n-1,n,n+1\) are all powerful. An integer is powerful if every positive prime valuation is at least two. The Pell reduction separates the candidates whose centers are fundamental Pell traces. The [averaged pair argument](ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md) gives exponent \(6/25-10^{-7}\) for \(C(X)\) using the stated fixed-shift estimates, improving the \(293/1220\) contact bound recorded below. The joint determinant gives a separate surface cover in every dyadic kernel box.
 
 ## Pell descent and minimal repair
 
@@ -42,6 +42,8 @@ The [quadratic companion](sources/plymesser-powerful-quadratics-hexagon2611.0069
 C(X)=F(X)+O_\varepsilon(X^{293/3660+\varepsilon}).
 \]
 
+The [uniform small-coefficient estimate](ERDOS_137_UNIFORM_SMALL_COEFFICIENT_COUNTS.md#pell-repair-corollary) gives the sharper remainder \(O_\varepsilon(X^{(6/25-10^{-7})/3+\varepsilon})\) by applying the same repair at indices 3 and 5. It uses the fixed-shift pair inputs and the leading-form affine estimate.
+
 The two exponents in this section are conditional on their respective Plymesser inputs. The coefficient and discriminant hypotheses are checked here. The [source audit](PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md) records which proof passages and formal hypotheses have been inspected.
 
 ## The only maximizer of the pairwise bound
@@ -55,7 +57,7 @@ B_{\rm red}=\theta-\frac{81}{64}w^2
 
 where \(v_+=\max(v,0)\). Indeed the two reduced-coordinate maxima are \((s-m)/2+(d-m)_+/2\) and \((h-m)/2+(3d/2-m)_+/2\), with weights \(3/10\) and \(1/5\).
 
-For \(0\le\eta\le1/1600\), suppose every pair has \(\Phi\ge\theta-\eta\). Sort the three exponents as \(a\le b\le c\). If \(a<1/100\), then \(b>0.23\) and \(b+c<0.51\) by the bounds on pair sums from \(s,h\ge\theta-\eta\). Thus \((b,c)\) lies in the gate, with \(s>0.46\), \(h\ge0.24\), \(m>0.12\), and \(d<0.05\). Both positive parts vanish, contradicting \(B_{\rm red}\ge\theta-\eta\) since \(s>0.46\). Therefore all pairs lie in the gate.
+For \(0\le\eta\le1/1500\), suppose every pair has \(\Phi\ge\theta-\eta\). Sort the three exponents as \(a\le b\le c\). If \(a<1/100\), then \(b>0.229\) and \(b+c<0.51\) by the bounds on pair sums from \(s,h\ge\theta-\eta\). Thus \((b,c)\) lies in the gate, with \(s>0.458\), \(h>0.239\), \(m>0.12\), and \(d<0.052\). Both positive parts vanish, contradicting \(B_{\rm red}\ge\theta-\eta\) since \(s>0.458\). Therefore all pairs lie in the gate.
 
 Put \(\kappa=(8/9)\sqrt\eta\) and \(e=20\eta/3\). When \(|w|>\kappa\), at least one positive part must be active. Separating \(d\le m\) and \(d\ge m\) gives, respectively,
 

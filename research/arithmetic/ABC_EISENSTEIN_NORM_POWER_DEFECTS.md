@@ -339,7 +339,7 @@ with the coefficient and priced by the number of joint choices.
   \(n^\mu X^\varepsilon\) if the joint radical is at most
   \(n^\mu\), assigning its primes to their roles as part of the
   record at height-subpower cost.
-* Prescribe a rational divisor \(E\mid N(\beta)\). Once
+* Prescribe a positive integer divisor \(E\mid N(\beta)\). Once
   \(D_q(N)\) is fixed, this has cost \(n^\xi X^\varepsilon\)
   if its radical outside that support is at most \(n^\xi\).
   Retaining the entire full power on an already recorded
@@ -358,7 +358,8 @@ record price in place of \(f+\mu+\xi\). The height error bounds
 are uniform in record values at the fixed \(L,q\). Orders
 above \(2/(\eta' L)\), with \(0<\eta'<\eta\) fixed, can be counted
 at \(n^{f+\eta}X^\varepsilon\) by the EN3 direct root enumeration.
-This makes the bound valid for adaptive \(q\) with the usual
+With a joint record use the projection to its exact coefficients
+in this branch. This makes the bound valid for adaptive \(q\) with the usual
 fixed-budget order of quantifiers.
 
 The three moduli are pairwise coprime by primitivity. The

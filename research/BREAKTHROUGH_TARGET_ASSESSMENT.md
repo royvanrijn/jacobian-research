@@ -4,8 +4,9 @@ Updated 26 November 2026.
 
 - **Primary target.** Prove the unrestricted Strong Factorial Conjecture.
   The internal univariate binomial theorem covers every terminal order.
-  The first unresolved support-size milestone is uniform coprimality for
-  arbitrary multivariate binomials, starting with orders five and six.
+  The first unresolved two-monomial milestone is uniform coprimality
+  at terminal fifteen, for moments of orders fourteen and fifteen in
+  the remaining ordinary profiles of arbitrary dimension.
   [Strong Factorial assessment](#strong-factorial-conjecture-primary-target)
 - **Secondary target.** Test whether every Gaussian phase with unit
   period \(1-t\) has a nonpolynomial period for some canonical Wick-power
@@ -775,15 +776,24 @@ External specialist review and independent replay remain open.
 [Univariate binomial proof](factorial/image-rigidity/ORDINARY_BINOMIAL_RESIDUAL_REGION.md) ·
 [Manuscript and verification](../results/strong-factorial-binomials/)
 
-**Next milestone.** Prove coprimality for the actual consecutive moment
-polynomials of arbitrary multivariate binomials at terminal six. Arbitrary
-two-monomial supports are covered through terminal five. Disjoint
-nonconstant supports and several classes with private exponents have
-all-terminal proofs. At terminal six, independent coefficient bounds can
-admit common roots. Retain the constraints linking the two orders through
-the same exponent rows and close the intermediate-curvature range.
-[Multivariate status](factorial/README.md) ·
-[Terminal-six coefficient links](factorial/image-rigidity/MULTIVARIATE_TERMINAL_SIX_COEFFICIENT_LINKS.md)
+**Next milestone.** Prove coprimality at terminal fifteen on the remaining
+ordinary two-monomial profiles. The general pair is covered through
+terminal fourteen and at or above a computable, unevaluated absolute
+cutoff. At a possible collision with fully shared rows, the shared
+curvature is below \(12\). With exactly one private side, only private
+totals \(P\le5\) remain, with shared curvature strictly below
+\(73/9,37/6,38/9,41/18\) for \(P=2,3,4,5\), respectively. Retain the
+constraints linking both moment polynomials to the same exponent rows.
+[Multivariate reduction](factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) ·
+[Sharper one-private reserve](factorial/image-rigidity/MULTIVARIATE_ONE_PRIVATE_ENTROPY_SHARPER_RESERVE.md)
+
+For the Factorial Conjecture, every nonzero phase of total degree at most
+two in \(m\) variables has a nonzero factorial moment in every positive
+window of length \(W_m=R+(R+1)R(R+3)/2\), where \(R=2^m\).
+In particular \(W_2=74\) and \(W_3=404\). For each positive integer \(d\),
+infinitely many multiples \(dk\) have nonzero moments. The sharp
+actual-support window for general binary quadratics remains open.
+[Coefficient-uniform quadratic theorem](factorial/image-rigidity/FACTORIAL_QUADRATIC_EVENTUAL_NONVANISHING.md)
 
 For an all-terminal argument, the shared-support saddle analysis gives
 local results for a fixed exponent profile. A uniform proof must identify

@@ -1,0 +1,63 @@
+# Averaging degree-ten components for a fixed quadratic
+
+Let \(f(n)=An^2+Bn+C\) with \(A,B,C\in\mathbb Z\), \(A>0\), and nonsquare discriminant \(\Delta=B^2-4AC\). With the fixed-quadratic chart, contact determinant, lattice, and component inputs of [Plymesser, *Powerful values of quadratic polynomials*](sources/plymesser-powerful-quadratics-hexagon2611.00699-v1.0.1.pdf), and the leading-form bound of [Castryck–Cluckers–Dittmann–Nguyen, Corollary 4.2.4](sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf), the number of positive integers \(n\le N\) with \(f(n)>0\) and \(f(n)\) powerful is
+\[
+ O_{f,\varepsilon}(N^{6/25-10^{-7}+\varepsilon}).
+\]
+This uses the two plane projections and the interval count from the [averaged pair-component argument](ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md#the-two-plane-projections-of-a-pair-component). The quadratic field enters the new boundary calculation; the projected points and the lattices stay in the original integer coordinates. All chart constants are for the fixed polynomial. A fixed quadratic of negative leading coefficient has only finitely many positive values on the positive integers.
+
+## Fixed arithmetic charts and reduced boxes
+
+In the notation of Plymesser §§3–7 put \(\theta=\sqrt\Delta\) and let \(\iota((z_0,z_1))=(z_0+z_1\theta)/m_{\mathcal O}\) for the fixed denominator \(m_{\mathcal O}\) of the maximal order. A powerful value in a height band \(X<n\le2X\) gives a chart \(\chi\) and two primitive vectors \(y,x\in\mathbb Z^2\) with
+\[
+ \gamma_\chi\iota(y)^3\iota(x)^2=(2An+B)+\theta,
+ \qquad F_\chi(y;x)=e_\chi\ne0,
+\]
+by Proposition 3.7. There are finitely many charts, the level \(e_\chi\) is fixed in each, and the pair and chart determine \(n\) by Lemma 3.8. For a fixed chart the two embeddings give independent linear forms \(L_+,L_-\) in \(y\) and \(M_+,M_-\) in \(x\), respectively, and nonzero constants \(\gamma_+,\gamma_-\) with
+\[
+ F_\chi=\frac{e_\chi}{2\theta}\bigl(\gamma_+L_+^3M_+^2-\gamma_-L_-^3M_-^2\bigr).
+\]
+These linear forms may be complex when \(\Delta<0\). The left-hand side remains integral in the original coordinates.
+
+The dyadic boxes of Lemma 3.11 have height scales \(\sqrt D,\sqrt E\) in the two integer blocks and satisfy \(D^3E^2\ll_f X^2\). There are \(O_f((\log X)^2)\) boxes. Work with
+\[
+ m=57/305+10^{-8},\quad M=\lceil X^m\rceil,\quad
+ \eta=1/8000,\quad \gamma=75m-14+10^{-5},\quad q_*=6/25-10^{-7}.
+\]
+Proposition 4.5 handles all boxes with \(\min(D,E)\le X^{q_*}\). In the others \(D,E>M\) for large \(X\). The real graph frames in Proposition 5.1 use dominant coordinates in the integer blocks. Each frame has a finite cover by real branches on compact intervals with fixed upper derivative bounds and \(|g'|\) bounded below. The centers of the \(O_f(M)\) cells on a branch are \((\rho,g(\rho))\), with the \(\rho\)'s spaced by \(1/M\). The \(g(\rho)\)'s are spaced by \(\gg_f1/M\) by the lower derivative bound. The branch construction starts at a zero in the balanced patch where the four split linear forms are bounded away from zero relative to the frame coordinates. Shrinking each local branch neighborhood before taking the finite subcover ensures these lower bounds, with a smaller fixed constant, at every chosen graph center. This refinement keeps all arithmetic points with sufficiently small residual by the same compactness argument as in Proposition 5.1(iii). It treats all signs and all dominant-coordinate frames separately.
+
+The auxiliary equations of Propositions 5.10–5.11 apply at this fixed \(m>57/305\). For each cell the coordinate changes of Proposition 7.2 give integral unimodular bases in the original blocks, with reduced-coordinate heights \(\Lambda_1,\Upsilon_1\) as in §7. The scaled maps on the integer coordinates may be taken as \((p,q)\mapsto \big(M(p-\rho q),q\big)/\sqrt D\) and \((p,q)\mapsto \big(M(p-g(\rho)q),q\big)/\sqrt E\), up to fixed constants. Write \(L_*=\sqrt{D/M}\), \(T_*=\sqrt{E/M}\), \(\mathcal B=\max(1,\Lambda_1^3\Upsilon_1^2)\), and use \(L_*^3T_*^2\ll_f X^{1-5m/2}\). By Lemma 7.4 the tails beyond \(L_* 2^i,T_* 2^j\) have intersection size \(O_f(M2^{-2\max(i,j)})\) for \(i,j\ge0\), allowing a fixed constant in the threshold or count. In particular the sum of \(\mathcal B^{1/10}\) over a branch is \(O_f(M(1+X^{(1-5m/2)/10}))\).
+
+## Boundary directions through the split field
+
+Let \(G\) be a geometrically integral auxiliary component of bidegree \((2,2)\) carrying arithmetic points. On its intersection with \(F_\chi=0\), use the split ratios
+\[
+ R=L_+/L_-,\qquad S=M_-/M_+.
+\]
+At a graph center in the original frame these ratios have finite nonzero values \(R_0,S_0\), with \(S_0^2=(\gamma_+/\gamma_-)R_0^3\). The normalized ratios \(r=R/R_0\), \(s=S/S_0\) satisfy \(s^2=r^3\) along the split boundary. As projective coordinate changes on the two blocks they are invertible over \(\mathbb C\). The projective boundary in these ratios is parametrized by \(r=t^2,s=t^3\), including the coordinate limits at zero and infinity. This parametrizes the whole boundary, since the torus part is dense in the binomial of bidegree \((3,2)\), and neither coordinate block contributes a separate component. Substituting into the transformed equation of \(G\) gives a nonzero polynomial with exponents in \(\{0,2,3,4,5,6,7,8,10\}\), since the nine monomials of bidegree \((2,2)\) restrict to these distinct powers. If the degree is less than ten, the boundary intersection contains \(t=\infty\). Otherwise the sum of its ten roots is zero because the \(t^9\) term is absent, so at least one root satisfies \(\Re t\le0\).
+
+If both original block directions of a boundary point were sufficiently close to the two frame directions at the center, then both \(r,s\) would be uniformly close to 1. Indeed each split ratio is a Möbius function, and at the centers its numerator and denominator stay bounded above and away from zero in the fixed frame. The implication holds for complex projective directions by the same uniform bounds, including for centers with complex split ratios. It would force \(t=s/r\) to be close to 1, excluding infinity and \(\Re t\le0\). Thus some boundary point has chordal distance at least a fixed positive constant from the center in at least one of the **original** blocks. Constants only depend on the finite refined branch list. The argument uses no lower bound for the coefficients of \(G\) and never divides by a coordinate of an arithmetic point outside its dominant-coordinate frame.
+
+## The two projections and the interval count
+
+In reduced integral coordinates \((\lambda,\nu)\), write \(F\) for the transported form \(F_\chi\). Its zero section on \(G\) has degree ten, and it is nonzero because the component carries points with \(F=e_\chi\). For the first plane map use sections
+\[
+ \big[F/e_\chi : \ell_y^2\ell_x^2\lambda_0 : \ell_y^2\ell_x^2\lambda_1\big],
+\]
+and for the second use \(\big[F/e_\chi : \ell_y^3\ell_x\nu_0 : \ell_y^3\ell_x\nu_1\big]\). Choose the bounded integral linear forms \(\ell_y(\lambda),\ell_x(\nu)\) separately for each map. They can be chosen to avoid the at most ten boundary points and make the maps birational by the degree-two involutions of the two projections of \(G\). For example, in the first map the ratio of the other sections already gives the \(\lambda\)-projection. Varying \(\ell_x=\nu_0+j\nu_1\) changes the ratio to \(F/e_\chi\) as a polynomial of degree two in \(j\) over the function field. If that ratio were invariant under the deck involution for more than two choices, its coefficients would be invariant. Comparing the linear and constant coefficients then makes \(\nu_1/\nu_0\) invariant, which is impossible since the two projective ratios generate the function field and the \(\lambda\)-projection has degree two. The second map uses the degree-three variation in \(\ell_y\). Avoiding the extra boundary exceptions requires only a fixed finite list of choices. The same reasoning applies to a singular geometrically integral component using function fields.
+
+Each map has no basepoint and its image has degree ten by birationality and the degree of its linear system. Fibers have at most ten geometric points. A rational pair of directions has at most two primitive lifts with \(F=e_\chi\), since the scale in each block is fixed up to sign and \(F\) has odd degree in the first block. In the affine chart the projected points have integer coordinates and height \(O_f(\mathcal B)\), because \(F/e_\chi=1\) at arithmetic points. Let the two primitive integral affine plane equations have leading binary forms of heights \(H_y,H_x\). Their degree-ten parts at infinity record all respective reduced directions of boundary points for the two blocks. If one height is at least \(X^\gamma\), apply CCDN Corollary 4.2.4 to that primitive affine equation. For \(H\) its leading height, the bound has main term \(\ll \mathcal B^{1/10}H^{-1/100}(1+\log H+\log(2\mathcal B))\) and additive \(O(1+\log(2\mathcal B))\). This uses the norm of the top part and does not require it to be irreducible. The logarithms are harmless by monotonicity of \(H^{-1/100}\log H\) above a fixed threshold and the polynomial coordinate height of the arithmetic points. After the moments, the main exponent is
+\[
+ \frac1{10}+\frac{3m}{4}-\frac{\gamma}{100}=q_*.
+\]
+
+For the other intervals first discard those with \(\Lambda_1>X^\eta L_*\) or \(\Upsilon_1>X^\eta T_*\) using the ordinary affine count and the tails. The dyadic bin sum with weights \(2^{3i/10+j/5}\) saves \(X^{-3\eta/2+\varepsilon}\). The corresponding exponent is at most \(1/10+3m/4-3\eta/2<q_*\). On retained intervals \(\mathcal B^{1/10}\ll_f X^{(1-5m/2)/10+\eta/2}\).
+
+If both leading heights are less than \(X^\gamma\), every reduced boundary direction in either block belongs to a list of \(O(X^{11\gamma})\) possible roots of binary forms. In one block a direction from this list must be far in its original coordinates from the center, as proved above. For that block let \(S=\sqrt D\) or \(\sqrt E\), and let \(g_1,g_2\) be the two original basis columns after the strip scaling \((p,q)\mapsto (M(p-\sigma q),q)/S\), where \(\sigma=\rho\) or \(\sigma=g(\rho)\). By reduction and the retained height bounds, \(\|g_2\|\ll_f X^\eta \sqrt M/S\) and \(\|g_2\|/\|g_1\|\ll_f X^{2\eta}\). The original coefficient row of the denominator coordinate \(q\) has size \(O_f(S\|g_2\|)=O_f(X^\eta\sqrt M)\). Its norm after dividing by \(S\) is \(\gg_f\|g_1\|\) by the covolume and the bound on the first scaled row. A far original direction has \(|p/S-\sigma q/S|\gg_f\max(|p|,|q|)/S\), by chordal distance for bounded center slopes. Thus its reduced direction is within \(O_f(\|g_2\|/(M\|g_1\|))=O_f(X^{-m+2\eta})\) of the rational kernel of the denominator row. Farey separation bounds the number of possible kernels near a fixed list entry by \(O_f(X^{4\eta})\). The argument uses pairwise chordal separation of rational directions, so it also holds near a nonreal list entry.
+
+A kernel fixes the primitive integral denominator row up to sign. For either determinant sign, all possible numerator rows differ by integer multiples of it. Dividing each scaled basis column by its length gives a uniformly invertible matrix by reduction. In some column the normalized denominator has magnitude \(\gg_f\|g_j\|\); in that same column the ratio of the numerator to the denominator is bounded and differs from the center slope by \(O_f(1/M)\). For either choice of column the bounded ratio permits only \(O_f(1)\) integer multiples of the denominator row. Each completed basis permits only \(O_f(1)\) grid centers by separation, in either block. Hence only \(O_f(X^{11\gamma+4\eta})\) retained intervals can furnish a component with both leading forms small, with boundedly many components per interval. Using the ordinary affine count there gives exponent at most
+\[
+ \frac1{10}-\frac m4+11\gamma+\frac92\eta<q_*.
+\]
+
+The pure, linear and low mixed components of Plymesser §6 contribute \(O_{f,\varepsilon}(X^\varepsilon)\) per interval. For high mixed components of lift degree at least eleven, the ordinary affine count has summed exponent at most \(m+(1-5m/2)/11<q_*\), by the same moments with powers \(3/11,2/11\). The only bidegree with lift degree ten is \((2,2)\); any \(\mathbb Q\)-irreducible component that is not geometrically integral contributes boundedly many rational intersections with its conjugates. This covers all components and all fixed frames. Summing logarithmically many boxes and height bands, and using the injection from the arithmetic charts, proves the stated fixed-polynomial bound.

@@ -312,8 +312,8 @@ at sufficiently small fixed budgets. Count distinct actual
 primitive rows, with all of their eligibility conditions.
 Charge the chart catalogue and the cost of fixing the
 over-cutoff factors in addition to this exponent. If the
-rational additive equation fails identically as a formal
-equality, the single bound \(v-\kappa\) applies.
+rational additive equation does not hold as a formal
+identity, the single bound \(v-\kappa\) applies.
 
 For this last assertion clear denominators. The resulting
 nonzero polynomial has bounded degree at fixed \(L\) and
@@ -419,11 +419,22 @@ for by an exclusive slot if it divides any root.
 The selected raw mass on the prescribed pool is therefore
 at least \(\rho-\chi-\mathcal K\), since the selected
 roots are pairwise coprime. Apply EB4 to the remaining
-outside radical cap. Each pool has a polynomial-height
+outside radical cap. For EB4's height-relative convention use
+\(\lambda=(B_0+\eta')L\) with \(\eta'>0\) chosen inside
+the allowance, since \(c>X/2\). Each pool has a polynomial-height
 prime product uniformly at fixed \(L\), so the exact
 dictionary prices and their height-subpower errors are
 admissible for EB2–EB4. This proves (PV4).
 [Effective root dictionary prices EB2–EB4](ABC_EFFECTIVE_RADICAL_BUDGET.md)
+
+In geometric sieve terminology each pair collision is
+a codimension-two condition. Bhargava's box estimates
+count points meeting a fixed scheme modulo some prime
+above a cutoff. The present fibre count uses the product
+of all collision primes, including many smaller ones.
+The factor coefficients may vary with \(X\) subject to
+the polynomial-height bounds after interpolation.
+[Bhargava, Theorems 3.3 and 3.5](https://arxiv.org/pdf/1402.0031)
 
 In the balanced limiting problem GE1 supplies nonatomic
 mass at least \(1/2\). Choose compact positive-degree
@@ -455,9 +466,10 @@ One way to supply the rational functions in PV4 is by
 simultaneous polynomial congruences. Translate the common
 parameter box so that each coordinate has magnitude at
 most \(n^v\). Suppose at every actual point the retained
-root \(r_j\le n^{C}\) is congruent to a polynomial of
+root \(r_j\le n^{C}\) agrees with a polynomial of
 total degree at most \(D\) in the common parameters,
-modulo a fixed numerical modulus \(M_j\ge X^\nu\).
+with coefficients in \(\mathbb Z/M_j\mathbb Z\) for
+a fixed numerical modulus \(M_j\ge X^\nu\).
 The moduli and polynomial coefficients can vary with
 the slot and the chart. The degree, parameter dimension
 \(r\), and bounds \(C,v,\nu>0\) can all be fixed before

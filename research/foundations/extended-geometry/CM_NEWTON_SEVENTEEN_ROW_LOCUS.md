@@ -1,4 +1,4 @@
-# Projections of the conductor-18 seventeen-row blind locus
+# The conductor-18 seventeen-row blind locus
 
 Use the [three-pole reduction](CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md#three-extra-pole-inputs-for-odd-degree-five-and-even-degree-one)
 with the minus-top convention. On \(b\ne0\) the early rows
@@ -10,10 +10,10 @@ coefficients of angles 3, 4 and 5. The remaining equations are
 \]
 The solved input has coherent coordinate one. A common zero
 with \(r\ne0\) therefore gives a formal coherent direction
-invisible to all seventeen rows. The question whether this
-locus is empty over \(\overline{\mathbb Q}\) remains open.
-The four-point boundary restriction implies that the locus
-itself is finite.
+invisible to all seventeen rows. The four-point boundary
+restriction first implies finiteness. The exact local
+determinants below then show that the locus is empty over
+\(\overline{\mathbb Q}\).
 
 ## A single norm for the common-root condition
 
@@ -205,7 +205,7 @@ remaining original weights.
 These exact affine exclusions do not assert the same for
 nearby projective boundary directions with unequal pole orders.
 
-## Remaining weighted residues above 331
+## Candidate weighted residues above 331
 
 The [two normal charts on \(L_3\)](CM_NEWTON_331_L3_NORMAL_CHARTS.md)
 exclude every point of the third weighted boundary component
@@ -214,9 +214,13 @@ earlier boundary analysis, any algebraic blind marker must
 reduce, at every place above \(331\), to one of four weighted
 points. They are the two endpoints of \(L_3\) and the two
 off-component points on \(L_2\) with \(v/\ell=2/17\) or
-\(5/56\). The degree-17 branch \(E=0\) can use only the first
-two. The earlier transverse restrictions remain in force on
-the two off-component points.
+\(5/56\). Both [the \(v=0\) endpoint](CM_NEWTON_331_L3_VZERO_ENDPOINT.md)
+and [the \(w=0\) endpoint](CM_NEWTON_331_L3_WZERO_ENDPOINT.md)
+of \(L_3\) are excluded. Only the two off-component points
+remain. In particular the degree-17 branch \(E=0\) is empty
+for the full system, since it could only meet \(L_3\).
+The earlier transverse restrictions remain in force on the
+two off-component points.
 
 ## Finiteness of the actual blind locus
 
@@ -226,7 +230,9 @@ phases can fail formal coherent detection in rows
 \(0,\ldots,16\) with correction degree at most two.
 The normalized residual algebra has length at most \(5670\).
 Its horizontal model at \(331\) is finite flat and splits after
-completion into at most four local algebras, each of even rank.
+completion into at most two local algebras, each of even rank.
+At any place above \(331\), an algebraic seventeen-row blind
+point must have both \(c\) and \(e\) of negative valuation.
 
 Let \(R=\mathbb Z_{(331)}\), and put the normalized blind scheme
 \(Z\) in the chart \(T=1\) of
@@ -308,45 +314,223 @@ when the equations have extra projective components at infinity.
 Thus \(\operatorname{length}Z\le 6\cdot7\cdot8\cdot9\cdot15/8=5670\).
 Adjoining \(b\) multiplies that length by two.
 
-### A common chart and four local factors
+### An affine algebra and its two candidate residue factors
 
-Put \(G=v^2+w\), of weight two. It is nonzero at all four
-allowed special points. Thus \(D_+(G)\) contains the entire
-horizontal model: the proper closed complement has empty
-special fibre. In that chart the weight-zero function \(w/G\)
-has distinct residues \(0,1,110,205\). The first two refer
-to the \(L_3\) endpoints with \(w=0\) and \(v=0\), respectively.
-The last two refer to the \(L_2\) points with ratios
-\(2/17,5/56\) in that order.
+The two remaining points have \(v,w\ne0\) in weighted
+residue. Thus \(D_+(v)\) contains the horizontal closure:
+its proper closed complement has empty special fibre.
+In the original affine chart \(T=1\) this says that at any
+place above \(331\), \(\nu(e)=2\nu(c)<0\). Consequently
+the seventeen shifts suffice whenever either \(c\) or \(e\)
+is integral at one such place, with arbitrary \(B\).
 
-A finite algebra over the complete local ring \(\mathbb Z_{331}\)
-splits into the local factors supported at its closed points.
-Equivalently, the characteristic polynomial of multiplication
-by \(w/G\) separates the four residue clusters by Hensel
-factorization. Their degrees are the corresponding
-special-fibre lengths, as the points are rational over
+Use the weighted chart \(v=1\). The normalized coordinate
+\(\ell/v\) has distinct residues \(17/2,56/5\) at the two
+points. The characteristic polynomial of multiplication
+by this coordinate consequently splits by Hensel lifting
+into the two residue clusters. Each factor degree is its
+special-fibre length, since each point is rational over
 \(\mathbb F_{331}\).
 [Stacks, Lemma 10.153.4](https://stacks.math.columbia.edu/tag/04GH).
 
-The involution \((\ell,v)\mapsto(-\ell,-v)\) preserves the
-homogeneous ideal by parity and fixes all support points at
-\(T=0\) by weighted scaling. It has no fixed geometric point
-of \(Z\), since the \(v=0\) slice is excluded. It preserves
-each completed local factor. The geometric generic points
-of each factor therefore occur in pairs of equal scheme
-length, so each factor has even rank.
+The weighted homogenizations \(\widehat S_k\) use only even
+powers of \(T\). Put \(\tau=T^2\) and define the explicit
+affine presentation over \(R\) by
+\[
+ A_0=R[r,\ell,h,w,\tau]\big/
+ \left(\bigl(\widehat S_7|_{v=1},\ldots,\widehat S_{16}|_{v=1}\bigr)
+                    :(331r\tau)^\infty\right),
+\]
+where \(T^{2j}\) means \(\tau^j\) in the displayed rows.
+The algebra of the horizontal closure is
+\(A_0[T]/(T^2-\tau)\). To see the equality, before saturation
+this quadratic presentation is free on \(1,T\) over the
+ring with \(\tau\). Inverting \(331rT\) is equivalent to
+inverting \(331r\tau\), and contraction acts separately on
+the two coefficients. It follows that \(A_0\) is finite
+flat of rank at most \(2835\). The local summands of the
+horizontal algebra have even rank, twice the corresponding
+ranks of \(A_0\). This presentation preserves the horizontal
+closure and halves the degree of the algebra. The local
+determinants below show that both factors of \(A_0\) are zero.
 
-One explicit affine presentation for computation is to
-set \(G=1\), substitute \(w=1-v^2\) in the weighted
-homogenized rows, and saturate by \(rT\) over \(\mathbb Q\).
-The generic algebra so obtained is a degree-two finite étale
-cover of the normalized exceptional algebra, adjoining a
-square root \(T\) of \(G^{-1}\) in its original affine
-coordinates. The normalized algebra is the invariant algebra
-under simultaneous sign on \(\ell,v,T\). In the integral
-calculation saturate also by \(331\) before taking a special
-fibre. The equations give a zero-dimensional computation;
-their exact length and points have yet to be determined.
+### An exact univariate eliminant
+
+**Proposition (an eliminant for the normalized slope).**
+There is an explicit nonzero polynomial \(\Delta(s)\) of degree
+at most \(835\) such that \(\Delta(\ell/v)\) vanishes in the
+characteristic-zero residual algebra. It can be given by a
+determinant with \(\Delta(1)=12473\bmod65521\).
+
+Set \(s=\ell/v,\ x=v^2\). For \(S_{7+i}\), let
+\(\epsilon_i=i\bmod 2\). Substitute \(\ell=sv\) and divide the
+row by \(v^{\epsilon_i}\), which is allowed since \(v\) is a unit
+on the residual locus. The resulting row \(A_i\) lies in
+\(\mathbb Q[s,r,h,w,x]\); its degree in \(r,h,w,x\) is at most
+\(d_i=\lfloor(6+i)/2\rfloor\). Let \(H_i\) be its ordinary
+homogenization to degree \(d_i\) with new variable \(t\).
+Let \(M(s)\) have as rows the coefficients of all monomial
+multiples of the \(H_i\) of total degree nine. Its \(715\)
+columns are the degree-nine monomials in \(r,h,w,x,t\).
+
+Over \(\mathbb Q(s)\) consider two local quotients on the
+homogeneous system. In the chart \(x=1\), the reference point
+has \(r=h=t=0\) and \(w=s(8-s)/17\). Solve for \(r\) and the
+displacement of \(w\) by two linear pivots, keeping \(h,t\)
+with weights \(1,2\) through weight eight. In the chart
+\(w=1\), use \(r=x=t=0,\ h=17\), solve for \(r\), and retain
+terms through ordinary degree four in the three free variables.
+The implicit jets are computed over \(\mathbb Q[s]\) by
+scaling free coordinates by the square of each pivot determinant
+and verifying each adjugate division exactly. The resulting
+truncated quotients have dimensions \(25-10=15\) and
+\(35-20=15\) over \(\mathbb Q(s)\).
+These relation ranks are preserved at \(s=1\bmod65521\).
+Stacking the specialization of the degree-nine restriction
+map with the two relation matrices gives rank \(60\) in
+\(60\) columns, so the restriction onto their direct sum has
+rank \(30\) over \(\mathbb Q(s)\).
+
+The rows of \(M(s)\) annihilate under the restriction, as does
+\(t^9\) by both jet cutoffs. Thus their span lies in a
+\(685\)-dimensional kernel. At \(s=1\bmod65521\), select
+row and column pivots from the transpose and the original
+matrix, respectively. Order the columns by increasing
+\(x\)-exponent, and the rows by increasing
+\(\epsilon_i-2b\), with \(b\) the \(x\)-exponent of their
+monomial multiplier. Break ties in the original order.
+This gives \(685\) independent rows and columns and a
+minor with determinant \(12473\) in the residue field.
+Take \(\Delta(s)\) to be the same determinant over
+\(\mathbb Q[s]\).
+
+The selected rows must span the whole kernel over
+\(\mathbb Q(s)\). Solving for the coordinates of \(t^9\)
+in these rows and multiplying by \(\Delta\) gives
+\(\Delta(s)t^9\) in the homogeneous ideal, by the adjugate
+formula. In any nonzero matrix entry, the exponent of \(s\)
+is at most \(2(a-b)+\epsilon_i\), with \(a\) the column's
+\(x\)-exponent. The sum in each determinant term is
+therefore bounded by the sum of these row and column
+contributions. It is \(835\) for the selected minor.
+Dehomogenizing at \(t=1\) gives the asserted ideal
+membership. Equivalently, after putting \(x=1,t=\tau\)
+in the horizontal chart and inverting \(\tau\) over
+\(\mathbb Q\), the same identity adds \(\Delta(\ell)=0\)
+to the explicit presentation of \(A_0\).
+
+The final exclusion uses two other minors chosen for their
+Taylor orders at the two candidate residues.
+
+    sage -python research/foundations/extended-geometry/verify_cm_newton_slope_eliminant.py
+
+## Excluding the final two residue discs
+
+**Theorem (universal seventeen-row coherent detection).**
+For the fixed top with two opposite fourth-order roots and
+\(\deg B\le5,\ D=-z^{-1}+c+ez\), the response in shifts
+\(0,\ldots,16\) with two coherent inputs and correction
+degree at most two has no kernel vector with a nonzero
+coherent component over any characteristic-zero field.
+The normalized exceptional algebra is the zero ring.
+
+Use \(s,x,t,H_i\) from the slope eliminant above. The leading
+parts of \(H_0,H_2\) by total degree in \(r,h\) are homogeneous
+of degrees three and four in \(\mathbb Q[r,h]\). They form a
+regular sequence whose quotient has dimension twelve.
+Take their monic Gröbner basis in degree reverse lexicographic
+order and lift each basis element using its homogeneous
+multipliers applied to \(H_0,H_2\). The leading monomials of
+the lifts are
+\[
+ h^6,\quad rh^4,\quad r^2h^2,\quad r^3.
+\]
+The monic lifts have coefficients integral at \(331\).
+For the filtration by degree in \(r,h\), the associated
+graded ideal of \((H_0,H_2)\) is generated by the two leading
+parts. Indeed, the syzygy of the two coprime leading parts is
+generated by their Koszul relation. Subtracting the corresponding
+relation of \(H_0,H_2\) lowers the maximal \(r,h\)-degree of
+a representation with leading cancellation. Descending proves
+the associated graded assertion. Hence reduction by the
+lifts leaves a free \(\mathbb Q[s,w,x,t]\)-module with the
+twelve normal monomials in \(r,h\) as a basis. The reductions
+preserve total degree in \(r,h,w,x,t\).
+
+In degree nine the quotient has dimension \(394\), so
+\(321\) dimensions of the original row span come from
+\(H_0,H_2\). Reduce the monomial multiples of the other \(H_i\)
+to this quotient. Multipliers using only normal monomials
+suffice by the same reduction. The resulting matrix has
+\(492\) rows and \(394\) columns. Its rank over
+\(\mathbb Q(s)\) is \(685-321=364\), and its row span contains
+the reduction of \(t^9\). For any nonzero \(364\)-minor
+\(\Delta_\alpha(s)\), the adjugate therefore gives
+\(\Delta_\alpha(s)t^9\in(H_0,\ldots,H_9)\). Dehomogenizing
+gives \(\Delta_\alpha(s)\in(A_0,\ldots,A_9)\), where the
+\(A_i\) here are the divided residual rows.
+
+Select one such minor in each of the two remaining discs.
+At \(s=\alpha+u\), over \(\mathbb F_{331}[[u]]\) select a
+maximal rank pivot block of the constant matrix, take its
+Schur complement, and divide that complement by \(u\).
+Repeat until \(364\) pivots have been selected. The following
+counts record the number of pivots at each order of \(u\).
+The selected square submatrix has these same counts.
+
+| \(\alpha\) | Pivot counts in successive orders | Order of the selected determinant |
+|---|---|---:|
+| \(17/2\) | \(359,2,0,0,0,2,0,1\) | \(19\) |
+| \(56/5\) | \(361,1,0,1,0,0,1\) | \(10\) |
+
+The replay verifies the same pivot counts over \(\mathbb Q\)
+on the selected submatrices. For the first pivot block \(A\)
+and the remaining blocks \(B,C,D\), solve \(AX=B\) and
+\(YA=C\) through order three with exact rational arithmetic.
+The identity
+\[
+ CA^{-1}B-CX-Y(B-AX)=(C-YA)A^{-1}(B-AX)
+\]
+gives the exact Schur complement \(D-CA^{-1}B\) through
+order seven. Taking its successive constant ranks computes
+the orders in the table. The original entries and the
+row scalings used to clear denominators are integral at
+\(331\), with the scalings units. Thus both the
+characteristic-zero order and the residue order of
+\(\Delta_\alpha\) at \(\alpha\) equal the displayed integer
+\(m_\alpha\). The quotient
+\[
+ U_\alpha(s)=\Delta_\alpha(s)/(s-\alpha)^{m_\alpha}
+\]
+has coefficients in \(\mathbb Z_{(331)}\) and
+\(U_\alpha(\alpha)\) is a unit there.
+
+Every remaining algebraic blind point would have
+\(s\equiv\alpha\) at a place above \(331\).
+Then \(U_\alpha(s)\) is a unit at that place, whereas
+\(\Delta_\alpha(s)=0\) by ideal membership. This forces
+\(s=\alpha\). The exact affine slice identities above
+exclude both equalities. Together with the two endpoint
+exclusions this eliminates every possible specialization.
+The localized rational residual ideal is therefore the
+unit ideal by the Nullstellensatz. The \(b=0\) branch is
+detected by shifts zero and one, using the three-pole
+reduction. Base extension gives the stated conclusion over
+any characteristic-zero field. The sign rotation gives the
+same conclusion for the plus top.
+
+For fixed algebraic coefficients, these finite exact
+response tests persist at all sufficiently large good
+primes. In the difficult class \(p\equiv7\bmod36\), the
+possible correction polynomial has degree at most two,
+and a nonzero coherent input must therefore give a nonzero
+moment among \(m+kp\) with \(0\le k\le16\). In the class
+\(p\equiv25\bmod36\), shift zero already suffices.
+The [shorter-prefix calculation](CM_NEWTON_FOURTEEN_ROW_LOCUS.md)
+gives the exact minimum \(N_{\min}=14\) for the uniform initial window,
+using the example below for necessity.
+
+    sage -python research/foundations/extended-geometry/verify_cm_newton_slope_residue_discs.py
 
 ## Exact coherent blindness through shift 12
 
@@ -404,16 +588,13 @@ norm of \(P\) by an exact rational Bézout identity. Thus
 these 21 cases are invisible through row 8 and detected
 by row 9.
 
-## Replay and remaining conditions
+## Replay
 
 Run the exact computations with SageMath 10.9.
 
     sage -python research/foundations/extended-geometry/verify_cm_newton_seventeen_row_locus.py
 
-Any seventeen-row blind marker projects to one of the
-two specified cuts. The actual exceptional algebra is finite.
-Its exact degree and defining polynomials in triangular form
-remain to be computed over characteristic zero. Coherent detection on the
-[fixed-boundary stratum](CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md)
-controls the full response there, with a separate finite
-cutoff. It does not prescribe the seventeen-shift cutoff.
+The slice and lower-bound calculations use the checker above.
+The weighted boundary and the determinant arguments have their
+own linked checkers. The [fixed-boundary stratum](CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md)
+also has a geometric detection proof for the full response there.

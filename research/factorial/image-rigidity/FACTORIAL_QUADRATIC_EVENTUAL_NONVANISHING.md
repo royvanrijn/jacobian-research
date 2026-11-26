@@ -25,6 +25,25 @@ of strictly positive order in the reciprocal parameter. This excludes
 every nonzero polynomial solution of a scalar equation for the series
 and gives the window bound.
 
+## The initial coefficient-moment ideal
+
+**Corollary.** Fix \(m\ge1\) and a characteristic-zero field \(K\).
+Put \(A=K[c_\alpha:|\alpha|\le2]\) and
+\(F=\sum_{|\alpha|\le2}c_\alpha X^\alpha\). The ideal
+\(I=(\Lambda(F),\ldots,\Lambda(F^{W_m}))\) has radical
+\((c_\alpha:|\alpha|\le2)\). In particular \(A/I\) is
+finite-dimensional over \(K\).
+
+Indeed, if \(\mathfrak p\) is a prime of \(A\) containing \(I\), then
+the coefficient images in \(\operatorname{Frac}(A/\mathfrak p)\)
+give a quadratic phase with its first \(W_m\) moments zero. The
+theorem in that characteristic-zero field forces every coefficient
+image to vanish. Thus \(\mathfrak p\) equals the coefficient maximal
+ideal. Conversely the generators of \(I\) vanish at the origin.
+Intersecting the primes over \(I\) gives the radical equality. Each
+coefficient has a power in \(I\), so finitely many monomials span
+the quotient.
+
 ## Exact coordinate-face equations
 
 Work over \(\mathbb C\) and write

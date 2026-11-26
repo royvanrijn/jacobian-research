@@ -138,8 +138,10 @@ Since the coefficients are integers, complex coprimality
 gives a rational Bézout identity and transfers to every
 characteristic-zero field.
 
-The [terminal-thirteen theorem](MULTIVARIATE_TERMINAL_THIRTEEN_ALL_PROFILES.md)
+The [terminal-fourteen theorem](MULTIVARIATE_TERMINAL_FOURTEEN_ALL_PROFILES.md)
 and the earlier fixed-terminal results independently cover
-all terminals through thirteen. The remaining fixed terminals
-run from fourteen up to the absolute cutoff. The threshold calculation
-may be large even though each step terminates.
+all terminals through fourteen. The remaining terminal indices
+satisfy \(15\le N<J\), beginning with the moments of orders fourteen
+and fifteen. Each remaining terminal still has an unbounded family of
+exponent profiles. The threshold calculation may be large even though
+each step terminates.

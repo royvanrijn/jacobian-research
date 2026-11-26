@@ -18,6 +18,10 @@ Do not infer novelty or an unsolved status merely from an unsuccessful search.
 - research/: current principal results, exact proof support and open questions by topic.
 - research/MATH_STATUS.json: current mathematical status and proof dependency DAG; publication is separate.
 
+Start a DAG assignment with `python3 research/scripts/research.py gaps --unresolved`, then use
+`explain ID` to inspect the exact scope, proof routes and blockers. The `gaps --all` inventory
+also includes resolved and falsified endpoints and endpoints outside topic summaries.
+
 Preserve the exact deposited files and their checksums in published/ inside each paper directory.
 Keep the best current source, PDF and review record at the top level of its paper directory.
 Merge a revision from unpublished/ into its released paper rather than maintaining

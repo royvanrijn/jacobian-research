@@ -55,7 +55,8 @@ python3 research/scripts/research.py search QUERY
 
 Replace `RESULT-ID` and `QUERY` with the relevant identifier or search words.
 The commands read the compact catalogue; follow its source references for the proof.
-Use `explain ID`, `impact ID` and `gaps` to inspect dependencies and blockers.
+Use `gaps --unresolved` to find current assignments across the complete endpoint inventory.
+Use `explain ID` and `impact ID` to inspect dependencies and blockers.
 The [dependency guide](../research/DEPENDENCY_GUIDE.md) explains proof updates and
 read-only simulations; effective statuses propagate without changing assurance flags.
 

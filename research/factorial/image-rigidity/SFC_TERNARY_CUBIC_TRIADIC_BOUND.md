@@ -10,18 +10,18 @@ at orders \(m,m+1,m+2\) vanish, let \(n\) be the unique multiple of
 three in the window. Then \(A,B\ne0\) and, at each extension of the
 three-adic valuation to the coefficient field,
 \[
- 0<v(A)-\tfrac12v(B)<\tfrac13,\qquad
- v(C)-\tfrac32v(B)\ge\tfrac12v(n).                            \tag{1}
+ v(A)-\tfrac12v(B)=\tfrac14,\qquad
+ v(C)-\tfrac32v(B)\ge\tfrac12(1+v(n)).                            \tag{1}
 \]
 In particular the centered case \(A=0\) is excluded at every start, even
 over an arbitrary characteristic-zero field. Rational triples are also
-excluded, since \(v(A^2/B)\) would have to lie strictly between zero
-and \(2/3\). The centered assertion applies over arbitrary
+excluded, since \(v(A^2/B)=1/2\).
+The centered assertion applies over arbitrary
 characteristic-zero fields by the weak Nullstellensatz applied to the
 rational system with \(A=0\) and an auxiliary inverse for \(C\).
 The inequalities leave other cubic parameters open.
 
-## The lower bound and the cubic coefficient
+## Initial valuation restrictions
 
 Use weighted scaling \((A,B,C)\mapsto (\lambda A,\lambda^2B,\lambda^3C)\).
 It preserves the zeros. Take \(C=1\) in the algebraic closure.
@@ -52,7 +52,8 @@ have positive valuation. Thus, in the normalization \(C=1\),
 \(B\ne0\) and \(v(A)>v(B)/2\), allowing \(v(A)=+\infty\).
 If \(v(B)>-v(n)/3\), then \(v(A)>-2v(n)/3\) too, which was
 excluded by the pure triple term. Undoing the weighted scaling proves
-the lower bound for \(v(A)-v(B)/2\) and the bound for \(C\) in (1).
+the preliminary bounds \(v(A)-v(B)/2>0\) and
+\(v(C)-3v(B)/2\ge v(n)/2\).
 
 ## Reduction by replacing singletons
 
@@ -195,3 +196,480 @@ valuation at least \(r>v((2r)!)\), so those terms are higher.
 The exceptional \(a=3,9\) terms are at least as high as
 centered terms, and all other replacements were strict.
 This leaves a unique least term and excludes the boundary.
+
+## The lower bound from the Gaussian pair at the unit orders
+
+Continue with \(B=1\), \(\alpha=v(A)\in(0,1/3)\), \(\gamma=v(C)\),
+and \(e=v(n)\ge1\). At order \(n\), replacing all but zero or one
+singleton by pairs is strict for every \(\alpha>0\). Indeed for
+\(a\ge2\), \(r=\lfloor a/2\rfloor\), the excess is at least
+\(2r\alpha+re-v(a!)>0\). If \(\gamma<(1+e)/2\), the \(a=1\)
+terms are also strictly lowered by replacing a singleton and one
+pair by a triple. Here \(b\equiv1\bmod3\), and the excess is
+\(\alpha+e+1-\gamma+v(c+1)>0\). Only centered terms could
+then minimize (2), whose smallest Newton slope is at least \(1+e\)
+by the centered coefficient formula. This contradicts the assumed
+\(2\gamma<1+e\), proving the stronger lower bound for \(\gamma\).
+
+At either order \(j\) prime to three, every term with \(c>0\)
+has higher valuation than the term formed by replacing all \(c\)
+triples by \(3c\) singletons. In (2) the excess is
+\[
+ c(\gamma-1-3\alpha)
+ +v\bigl((a+3c)!/a!\bigr)-v(c!)\ \ge\ c(\gamma-3\alpha)>0.
+\]
+The inequality holds because a length-\(3c\) factorial strip has
+\(c\) multiples of three and their quotients by three give a
+length-\(c\) factorial strip. Thus a zero at either unit order
+requires cancellation in the initial form of its pure Gaussian
+part. We show the two Gaussian initial forms cannot both vanish
+when \(0<2\alpha<1/2\).
+
+For \(K\ge0\), \(\epsilon\in\{0,1\}\), and a three-adic unit
+\(J\), write
+\[
+ P_{K,\epsilon,J}(x)=
+   \sum_{r=0}^K \frac{J^r K!}{(K-r)!(2r+\epsilon)!}x^r .
+\]
+After removing a nonzero monomial factor, the Gaussian part of
+\(F_j\) is \(P_{K,\epsilon,2j}(A^2)\), where \(2K+\epsilon=j\).
+At \(x\ne0\) set \(\lambda=v(x)\). The initial form at \(x\)
+means the reduction of the sum of terms of least valuation after
+dividing by any one of those terms. Its vanishing is independent
+of the divisor. We compare these initial forms by ternary division.
+
+Write \(K=3K_0+k\) and \(r=3t+s\), with \(k,s\in\{0,1,2\}\).
+Put \(\eta=1\) if \(s>k\), and zero otherwise, and put
+\(\ell=\lfloor(2s+\epsilon)/3\rfloor\). Factoring the
+multiples of three in the factorials gives the valuation
+\[
+ \begin{split}
+ &(3\lambda-1)t+s\lambda+\eta-\ell\\
+ &\qquad
+  +v\bigl(K_0!/(K_0-t-\eta)!\bigr)-v\bigl((2t+\ell)!\bigr).
+ \end{split}                                                       \tag{3}
+\]
+A residue class with \(K_0-\eta<0\) is omitted. Let \(M(D,E)\)
+denote the minimum valuation of the terms of
+\(P_{D,E,J}\) at an argument of valuation
+\(\lambda'=3\lambda-1\). It depends on \(D,E,\lambda'\)
+and not on the unit \(J\). Write \(M_0=M(K_0,0)\),
+\(M_1=M(K_0,1)\), and \(M'_i=v(K_0)+M(K_0-1,i)\)
+when \(K_0>0\). We have \(M_1\le M_0\) termwise.
+Also \(M'_i\ge M_0-\lambda'\) for \(i=0,1\): compare the
+term at \(t\) in \(M'_i\) to the term at \(t+1\) in
+\(M_0\), whose factorial denominator is \((2t+2)!\).
+
+Suppose \(0<\lambda<1/2\). The exact least-valuation residue
+class in (3) is
+\[
+\begin{array}{c|ccc}
+ & k=0 & k=1 & k=2\\ \hline
+ \epsilon=0 &s=0&s=0&s=2\\
+ \epsilon=1 &s=0&s=1&s=1 .
+\end{array}
+\]
+Indeed, \(s=0\) always gives \(M_0\). For \(\epsilon=0\),
+\(s=1\) has an additional \(\lambda\) if \(\eta=0\), and
+otherwise gives \(M'_0+1+\lambda>M_0\).
+The class \(s=2\) at \(\eta=0\) gives \(M_1+2\lambda-1<M_0\),
+and at \(\eta=1\) gives \(M'_1+2\lambda>M_0\).
+For \(\epsilon=1\), \(s=1\) at \(\eta=0\) gives
+\(M_1+\lambda-1<M_0\), and at \(\eta=1\) gives
+\(M'_1+\lambda>M_0\). The class \(s=2\) is higher than
+\(s=1\) when they both have \(\eta=0\), and is higher than
+\(M_0\) when \(\eta=1\). These strict comparisons use the
+displayed bounds on \(M'_i\) and \(\lambda<1/2\).
+The selected inner degree is
+\[
+             2(K_0-\eta)+\ell=\lfloor(2K+\epsilon)/3\rfloor .
+\]
+
+The initial form on that residue class equals the initial form
+of \(P_{K_0-\eta,\ell,-J}(x^3/3)\), up to a nonzero residue
+factor. To verify the sign, write \(N=3N_0+d\) and reduce
+the unit part of \(N!\) modulo three. It is
+\((-1)^{N_0}d!\) times the unit part of \(N_0!\), by grouping
+the nonmultiples of three in blocks. In a fixed residue class
+\(s\), the three factorials in the coefficient of \(x^r\)
+therefore introduce the sign
+\((-1)^{t+\eta-(2t+\ell)}\) and a digit-factorial ratio independent
+of \(t\). The factor \(J^{3t+s}\) reduces to \(J^{t+s}\), so
+the inner parameter has residue \(-J\). Its argument is
+\(x^3/3\) by (3). This proves preservation of the initial-form
+condition under the degree, parameter, and valuation changes.
+
+Iteration from \(0<\lambda<1/2\) eventually reaches
+\(\lambda'\le0\), since the distance from \(1/2\) triples
+at each step. At a negative valuation only the highest-degree
+term can minimize. At zero valuation, compare the coefficient
+at \(K-r\) to the coefficient at \(K\): its excess valuation is
+\[
+ v\bigl((2K+\epsilon)!/(2K+\epsilon-2r)!\bigr)-v(r!)
+ \ \ge\ v((2r)!)-v(r!) .
+\]
+For \(r\ge2\) this is positive. A tie with \(r=1\) is possible
+only when the degree \(2K+\epsilon\) is two modulo three.
+The terminal initial form in that case is a monomial times a
+linear polynomial with nonzero constant and nonzero linear term.
+
+The two original unit degrees differ by at most two. After at
+least one ternary division, their reduced degrees differ by at
+most one. If they are distinct, they cannot both be two modulo
+three, so they cannot both have initial-form cancellation. If
+they are equal, the two reduced parameters still have opposite
+residues, because the original \(2j\)'s have opposite residues
+and each division reverses both signs. For equal reduced degrees
+the possible width-one initial forms therefore have distinct
+nonzero roots. Hence the two unit orders cannot both vanish
+when \(0<2\alpha<1/2\), which proves the lower bound in (1).
+
+## The upper Gaussian clock
+
+Let \(E_K(\lambda)\) and \(O_K(\lambda)\) be the minimum
+valuations of the terms of \(P_{K,0,J}\) and \(P_{K,1,J}\),
+respectively, at clock \(\lambda\). The unit \(J\) does not
+affect either minimum. For \(K\ge1\) define
+\[
+ \delta_K=E_K-O_K,\qquad
+ \Delta_K=E_K-O_{K-1}-v(K).
+\]
+Use \(\delta_0=0,\ \Delta_0=-\infty\) to omit unavailable
+residue classes. Always \(\delta_K\ge0\) by the termwise comparison
+of the two factorial denominators.
+
+A clock \(\lambda>1\) gives a unique least constant term for all
+states. At clock \(1\) the least terms consist of the constant
+alone or, in the odd state with \(K\) prime to three, the constant
+and the degree-one term. In fact \(v((2r+\epsilon)!)\le r\),
+and equality for \(r>0\) requires \(\epsilon=1\) and
+\(2r+1\) a power of three. The numerator factorial strip must
+also be a unit, so \(r\le2\) and only \(r=1\) is possible.
+In particular both minimum valuations are zero at all clocks
+\(\lambda\ge1\).
+
+Now let \(1/2<\lambda<1\). Write \(K=3K_0+k\), and evaluate
+the primed deficits at \(K_0\) and \(\mu=3\lambda-1\).
+The residue comparisons of (3) give
+\[
+\begin{array}{c|ccc}
+ & k=0 & k=1 & k=2\\ \hline
+ \delta_K &\max(0,\Delta'-\lambda)
+          &\delta'+1-\lambda
+          &\min(\delta'+1-\lambda,\lambda)\\[2pt]
+ \Delta_K &\Delta'-\lambda
+          &\max(0,\Delta'-\lambda)
+          &\min(\delta'+1-\lambda,\lambda).
+\end{array}                                                       \tag{4}
+\]
+For clarity, in an even state the minimizing class is \(s=0\)
+if \(k=0,1\), while at \(k=2\) the minimum is
+\(\min(E_{K_0},O_{K_0}+2\lambda-1)\) from \(s=0,2\).
+In an odd state with \(k=1,2\) the class is \(s=1\), with
+minimum \(O_{K_0}+\lambda-1\). For \(k=0\) the minimum is
+\(\min(E_{K_0},O_{K_0-1}+v(K_0)+\lambda)\) from \(s=0,1\).
+These give the first row of (4), and the second follows by
+comparing the even state to the odd state with \(K-1\).
+In the latter comparison with \(k=0\) one subtracts
+\(v(K)=1+v(K_0)\). All unlisted residue classes are strictly
+higher, using \(M'_i\ge M_0-\mu\), \(M_1\le M_0\), and
+\(0<\lambda<1\), as in (3). Under this recursion
+\[
+                        \Delta_K(\lambda)\le \lambda
+\]
+for \(\lambda>1/2\). At \(\lambda\ge1\) this is immediate,
+and in (4) it follows from \(\Delta'\le\mu\) and
+\(\mu-\lambda=2\lambda-1<\lambda\).
+
+There are just two possibilities for a tie between different
+residue classes in (3). In an even state with \(k=2\) it requires
+\(\delta'=2\lambda-1\). In an odd state with \(k=0\) it requires
+\(\Delta'=\lambda\). To analyze both, put \(h=\lambda-1/2\)
+at the current clock and consider target values
+\[
+                 \delta_K=a h
+             \quad\text{or}\quad
+                 \Delta_K=\tfrac12+b h,\qquad
+                 a,b\in[1/3,2/3].                              \tag{5}
+\]
+The first tie gives the inner target of the first kind with
+\(a=2/3\), and the second gives the inner target of the second
+kind with \(b=1/3\).
+
+For a \(\delta_K\) target, \(k=0\) in (4) descends to the
+\(\Delta'\) target with \(b=(a+1)/3\). At \(k=1,2\), the
+\(\lambda\) cap cannot be active, since \(ah<\lambda\).
+Thus \(\delta'=(a+1)h-1/2\ge0\), which requires \(h\ge3/10\).
+The inner clock is then \(1/2+3h>1\). Consequently
+\(\delta'=0\) and both inner states have a uniquely least
+constant term. At the current level the even and odd states
+in this terminal case have uniquely least indices \(0,1\),
+respectively.
+
+For a \(\Delta_K\) target, \(k=0,1\) would require
+\(\Delta'=1+(b+1)h\). This contradicts \(\Delta'\le0\) if the
+inner clock is at least one. Otherwise \(h<1/6\), and the
+required value exceeds \(1/2+3h\), contradicting the bound on
+\(\Delta'\). Thus \(k=2\) is necessary, and the cap again
+cannot be active since \(b<1\). The new target is
+\(\delta'=(b+1)h\), of the first kind with \(a=(b+1)/3\).
+
+Every nonterminal step alternates the kind of target and triples
+\(h\), so a solution of (5) must end in the terminal case above.
+For a \(\delta_K\) target the two states compared are \(E_K,O_K\),
+and for a \(\Delta_K\) target they are \(E_K,O_{K-1}\). In each
+nonterminal step their strictly minimizing residue classes are
+\(s=0,1\), respectively. For \(\delta_K\) this is the case
+\(k=0\) with a positive deficit, and for \(\Delta_K\) it is
+\(k=2\) with deficit strictly below the cap in (4).
+It follows by reversing the steps that each state has a unique
+least index. After \(q\) nonterminal steps those indices are
+\(0\) and \((3^{q+1}-1)/2\). The parity of \(q\) is even
+for a \(\delta_K\) target and odd for a \(\Delta_K\) target.
+
+We can now compare two Gaussian states of degrees differing by
+at most one and with opposite unit parameter residues. At an even
+state with \(k=2\) and a tie between classes, the two inner
+states satisfy the first target in (5). At an odd state with \(k=0\)
+and a tie, they satisfy the second target. Each tie therefore
+gives a binomial initial form with odd width. In the even case
+the two exponents are \(0,3r+2\), with \(r=(3^{q+1}-1)/2\)
+odd. In the odd case they are \(0,3r+1\), with \(r\) even.
+Equal degrees with this tie have opposite relative signs on the
+two binomial terms, so their nonzero roots are distinct in
+characteristic three. At two adjacent degrees, the neighboring
+state of a tied even state descends to its odd inner state.
+Likewise, the neighboring state of a tied odd state descends to
+its even inner state. The neighboring initial form then has a
+unique least term by the target analysis.
+
+If there is no tie between residue classes, both states descend
+by (3). Their degrees still differ by at most one. Indeed the
+only choices other than \(\lfloor(2K+\epsilon)/3\rfloor\)
+are the lower of the two branches for an even degree congruent
+to four modulo six or an odd degree congruent to one modulo six.
+Both neighboring degrees always descend to the higher branch.
+Equal degrees have identical choices. The common clock increases
+under descent, the two unit parameter residues remain opposite,
+and the pair eventually reaches \(\lambda\ge1\), where the
+terminal initial forms give no simultaneous cancellation.
+For distinct adjacent degrees only one can be odd, and for equal
+degrees the possible linear initial forms have opposite signs.
+This proves the comparison for all clocks greater than \(1/2\).
+
+The two unit orders of the cubic window are either adjacent or
+differ by two. In the latter case they surround the multiple of
+three. For an even middle order \(6a\) the unit degrees are
+\(6a-1,6a+1\). The lower one descends to the odd state of
+degree \(2a-1\), one of the two inner states of the upper one.
+For an odd middle order \(6a+3\) the unit degrees are
+\(6a+2,6a+4\). The lower one descends to the even state
+of degree \(2a\), one of the two inner states of the upper one.
+If the upper state has a residue-class tie, the lower one thus
+has only a unique least term. Otherwise descent reduces to degrees
+differing by at most one. The Gaussian comparison rules out both
+placements at \(1/2<\lambda<2/3\), which proves
+\(v(A)-v(B)/2=1/4\) in (1).
+
+## Whole families at the remaining clock
+
+The noncollinear gate is regular at every window containing either
+of the following unit orders:
+
+- An even order \(j=2K\) whose \(K\) has only digits zero and one in
+  base three.
+- An odd order \(j=2\cdot3^a+1\), where \(a\ge1\).
+
+It is also regular at all windows whose unique multiple of three is
+\(n=3^a\) or \(n=2\cdot3^a\), for \(a\ge1\).
+
+For the first criterion, use the unique residue \(s=0\) at
+\(\lambda=1/2\) for an even state with \(k=0,1\). Each step
+decreases \(K\) to \(\lfloor K/3\rfloor\), leaves it in an
+even state, and preserves the clock \(1/2\). All digits allow
+this descent to \(K=0\), so the initial form cannot vanish.
+For \(j=2\cdot3^a+1\), take \(K=3^a\), \(\epsilon=1\).
+At the clock \(1/2\), the term at \(r\) has valuation
+\[
+ \frac{s_3(K-r)+s_3(2r+1)-2}{2},
+\]
+where \(s_3\) is ternary digit sum. This is positive at \(r=K\),
+since \(s_3(2K+1)=3\). For \(0<r<K\) the two digit sums are
+positive. Equality would require \(K-r=3^u\) and
+\(2r+1=3^b\) with \(b>0\), but \(2(K-3^u)+1\) is one
+modulo three if \(u>0\) and two modulo three if \(u=0\).
+The constant term is therefore uniquely least.
+
+If \(n=3^a\) is not the first order, \(j=n-1\) is an even
+unit order whose half has all digits one. If \(n=2\cdot3^a\)
+is not the last order, \(j=n+1\) is the odd order of the second
+criterion. For \(n=3^a\) first, use \(j=n+2\) with
+\(K=(3^a+1)/2\), whose digits are a last digit two preceded
+by ones. For \(n=2\cdot3^a\) last, use \(j=n-1\) with
+\(K=3^a-1\), whose digits are all two. Both are odd states
+with no zero digit in \(K\). At clock \(1/2\) an odd state
+with \(k=1,2\) always selects \(s=1\), descends to
+\(K_0\), and remains an odd state. Neither can have an initial
+zero, since the descent reaches \(K=0\).
+
+## Exact quarter-clock residues
+
+At the remaining clock \(1/2\), choose \(\pi^2=3\) and write
+\(x=\pi y\) in \(P_{K,\epsilon,J}(x)\). If the least term
+valuation is \(m\), reduce \(\pi^{-2m}P_{K,\epsilon,J}(\pi y)\)
+in the residue field. Write that polynomial as \(E_K(J,y)\)
+when \(\epsilon=0\) and \(O_K(J,y)\) when \(\epsilon=1\).
+The notation in this section refers to residue polynomials, not the
+minimum valuations in (4). Start with \(E_0=O_0=1\).
+For \(K=3K_0+k>0\), the complete recursion is
+\[
+\begin{split}
+ E_{3K_0+k}(J,y)
+  &=E_{K_0}(-J,y^3) &&(k=0,1),\\
+ E_{3K_0+2}(J,y)
+  &=y^2 O_{K_0}(-J,y^3)
+    +\mathbf 1_{K_0\equiv0\ (3)} E_{K_0}(-J,y^3),\\
+ O_{3K_0+k}(J,y)
+  &=-kJ y\,O_{K_0}(-J,y^3) &&(k=1,2),\\
+ O_{3K_0}(J,y)
+  &=E_{K_0}(-J,y^3)
+    +\mathbf 1_{K_0\equiv2\ (3)} J y\,O_{K_0-1}(-J,y^3).
+\end{split}                                                       \tag{6}
+\]
+Arguments \(J\) on the right are taken as residue units.
+In particular the last term is omitted when \(K_0=0\).
+
+To check the branching conditions, evaluate (4) at \(\lambda=\mu=1/2\).
+The same comparisons apply at this endpoint, with equality now
+allowed in the two indicated classes. The bound \(\Delta_K\le1/2\)
+follows by induction on \(K\) from (4). Thus \(\delta_K=0\)
+exactly when \(K\equiv0\bmod3\), and \(\Delta_K=1/2\)
+exactly when \(K\equiv2\bmod3\). Indeed, in the first row the
+three entries are zero, \(\delta'+1/2>0\), and \(1/2\).
+In the second row the first two entries are nonpositive and the
+third equals \(1/2\). The tie conditions \(\delta'=0\) and
+\(\Delta'=1/2\) give the two indicators in (6).
+
+For the units in (6), factor the multiples of three and use the
+factorial unit rule in the preceding ternary descent. For \(r=3t+s\)
+the fixed residue factor, in addition to the inner parameter \(-J\),
+is
+\[
+ J^s (-1)^{\eta-\ell}
+    \frac{k!}{(k-s+3\eta)!(2s+\epsilon-3\ell)!}
+ \ \operatorname{unit}_3\!\left(\frac{K_0!}{(K_0-\eta)!}\right).
+\]
+Here \(\eta,\ell\) are as in (3) and
+\(\operatorname{unit}_3(a)=3^{-v(a)}a\).
+For an even branch \(s=2\) and \(k=2\), the factorial ratio is
+\(2!=-1\) in the residue field, which cancels the sign
+\((-1)^{-\ell}\); the factor \(J^2\) equals one. For an odd
+branch \(s=1\) and \(k=1,2\), the ratio is \(k\) and the
+sign is negative. For the odd additional branch \(s=1,k=0\),
+the digit ratio is \(-1\), canceled by the unit of \(K_0\)
+since \(K_0\equiv2\bmod3\). This gives (6).
+
+As a consequence, whether a single unit order has a nonzero
+quarter-clock residue root is decided entirely by its ternary
+digits. Process the digits of \(K\) from least to most significant,
+with current state \(E\) or \(O\). In state \(E\), a digit two
+switches the state to \(O\), and gives a branch if the next digit
+is zero. In state \(O\), a digit zero switches the state to \(E\),
+and gives a branch if the next digit is two. A digit one leaves
+the state unchanged. Stop when the remaining integer is zero,
+treating a missing next digit as zero for the branch test. If no
+branch occurs, the residue is a monomial and has no nonzero root.
+At the first branch, the two summands in (6) occupy distinct
+exponent residues modulo three, so neither can cancel the other
+and the result is not a monomial. It has a nonzero root over the
+algebraic closure of the residue field. This gives an exact
+criterion for one unit order and extends the individual families
+above without a test at successive orders.
+
+## Simultaneous first-level cancellation at unbounded starts
+
+First-level three-adic initial forms alone do not exclude all cubic
+windows. For every \(t\ge1\), take the window starting at
+\(n=12\cdot3^t\). These windows admit simultaneous cancellation
+of all three initial forms for suitable valuations and nonzero
+residues. This statement concerns initial forms only.
+
+Set \(B=1\), \(v(A)=1/4\), and use \(A^2=\pi y\). The two unit
+orders \(n+1,n+2\) are respectively the odd state at
+\(K=6\cdot3^t\) and the even state at \(K=6\cdot3^t+1\).
+Both descend by (6) to \(E_{2\cdot3^t}\), with opposite unit
+parameters. Its trailing zero digits give further descents to
+\(E_2(J,y)=1+y^2\), independent of \(J\). Hence both initial
+forms are \((1+y^2)^{3^{t+1}}\), and both vanish when
+\(\bar y^2=-1\).
+
+At order \(n\), write \(e=v(n)\). The centered polynomial in
+\(W=1/C^2\) has degree \(2\cdot3^t\), and its Newton slopes are
+in \([e+1,e+2]\). The lower endpoint follows from the centered
+coefficient formula, and the backward endpoint bound for a unit
+order applies here with \(e\) added to the slopes. Fix any such
+slope \(2\gamma\), and take \(v(C)=\gamma\).
+Every term with \(a\ge2\) is strictly lowered by the pair
+replacement at the multiple of three, and the \(a=1\) terms
+are strictly lowered by replacing a singleton and a pair by a
+triple, since \(\gamma\le1+e/2\). Consequently the initial
+form is the centered edge polynomial. After removing its initial
+monomial, it has positive degree and nonzero constant, so it has
+a nonzero root in the algebraic closure of the residue field.
+Choosing the residue of \(C\) to give that root is independent
+of the choice of \(\bar y\). Indeed the two unit orders have
+\(\gamma-3/4>0\), so their initial forms are independent of \(C\).
+The residue choices and rational valuations can all be realized
+in a finite extension of \(\mathbb Q_3\) by adjoining a suitable
+root of three and lifting the finite residue field. They yield
+simultaneous initial-form zeros for the chosen window, without
+asserting any lift to common zeros of the original forms.
+
+## The cubic coefficient clock at the order divisible by three
+
+In the normalization \(B=1\), put \(\alpha=1/4\),
+\(\gamma=v(C)\), and \(e=v(n)\) as in (1). If \(n\) is even,
+any zero has \(\gamma<1+e/2\). If \(n\) is odd, a zero
+requires either \(\gamma\le1+e/2\), or the separate resonance
+\[
+       \gamma=\alpha+e+1,\qquad
+       \overline{\frac{(n-1)C}{6nA}}=-1.                       \tag{7}
+\]
+In every case in the ordinary clock band
+\([(1+e)/2,1+e/2]\), the value \(2\gamma\) must be a slope of
+the centered coefficient polygon at \(n\). The lower endpoint
+of that band is possible only if \(n/3\equiv2\bmod3\).
+
+At \(n\), pair replacement leaves only \(a=0,1\) as candidates
+for least valuation. If \(n\) is even, compare to the pure pair
+term. In (2) the excess valuation is at least
+\[
+       a(\alpha+e/2)+c(\gamma-1-e/2).
+\]
+Here the removed pair factorial strip has length
+\((a+3c)/2\ge c\), and hence contributes at least \(v(c!)\).
+For \(\gamma>1+e/2\) the pure pair term is uniquely least.
+
+Whenever \(\gamma<\alpha+e+1\), replacing a singleton and a
+pair by a triple strictly lowers an \(a=1\) term, since \(b\)
+is a three-adic unit. Thus the centered polygon must have slope
+\(2\gamma\) in this range. Its upper bound \(e+2\) is strict
+when \(n\) is even, because the backward strip bound is strict
+for \(s=(n/3)\bmod2=0\). Its lower slope bound \(e+1\) can be
+attained only at the first edge through \(k=1\), where the
+centered \(c_0=n/3\) must satisfy \(c_0\equiv2\bmod3\).
+
+It remains to consider odd \(n\) with \(\gamma\ge\alpha+e+1\).
+Compare to the term \(a=1,c=0\), whose pair count is
+\(b_0=(n-1)/2\). Within \(a=1\), adding \(c>0\) triples
+raises (2) by at least \(c(\gamma-1-e/2)>0\).
+Within \(a=0\), the excess over the same reference is at least
+\[
+       c(\gamma-1-e/2)-(\alpha+e/2).
+\]
+Here \(c\) is odd and the removed pair strip has length
+\((3c-1)/2\ge c\). This excess is positive unless
+\(\gamma=\alpha+e+1\) and \(c=1\), when \(b_0\) is a
+three-adic unit and the two terms have equal valuation.
+The ratio of the \(a=0,c=1\) term to the \(a=1,c=0\) term
+is \(b_0 C/(3nA)\). Their residue cancellation gives (7).

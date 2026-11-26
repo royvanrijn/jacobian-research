@@ -21,6 +21,15 @@ NODE_STATES = {"proved", "open", "unverified", "partial", "falsified", "refuted"
 RULE_STATES = {"proved", "unverified", "refuted"}
 EFFECTIVE_STATES = {"proved", "conditional", "open", "stale", "falsified", "unmapped"}
 AVAILABLE = {"proved", "conditional"}
+ENDPOINT_DEFAULT_ROLES = {
+    "mathematical": "active_goal",
+    "formalization": "formalization",
+    "verification": "source_audit",
+    "workflow": "workflow",
+}
+ENDPOINT_ROLES = set(ENDPOINT_DEFAULT_ROLES.values()) | {
+    "alternative_method", "stronger_theorem", "artifact_restoration",
+}
 
 
 class GraphValidationError(ValueError):
@@ -124,6 +133,12 @@ class DependencyGraph:
             _require(_nonempty(node.get("title", node.get("label"))), f"missing node title: {node_id}")
             _require(_nonempty(node.get("scope")), f"missing exact node scope: {node_id}")
             _require(node.get("status") in NODE_STATES, f"invalid node status: {node_id}")
+            if "endpoint_role" in node:
+                _require(_nonempty(node["endpoint_role"]) and node["endpoint_role"] in ENDPOINT_ROLES,
+                         f"invalid endpoint role: {node_id}")
+            if "gap_kind" in node:
+                _require(_nonempty(node["gap_kind"]) and node["gap_kind"] in ENDPOINT_DEFAULT_ROLES,
+                         f"invalid gap kind: {node_id}")
             self._assumptions(node, node_id)
             sources = node.get("sources", [])
             _require(isinstance(sources, list), f"invalid node sources: {node_id}")
@@ -423,6 +438,31 @@ class DependencyGraph:
             evaluated[node_id]["blockers"] = self.blockers(
                 node_id, evaluated, distinct=distinct_blockers)
         return evaluated
+
+    def endpoint_inventory(self, evaluation: dict[str, dict] | None = None) -> list[dict]:
+        """List the exact union of explicit goals/gaps and curated topic entries once per ID."""
+        if evaluation is None:
+            evaluation = self.evaluate(distinct_blockers=True)
+        listed = defaultdict(set)
+        for topic in self.data.get("topics", []):
+            for node_id in topic.get("gap_ids", []):
+                _require(node_id in self.nodes, f"unknown topic gap: {topic['id']}/{node_id}")
+                listed[node_id].add(topic["id"])
+        endpoint_ids = set(listed) | {node_id for node_id, node in self.nodes.items()
+                                     if node["supplemental"] and node["kind"] in {"goal", "gap"}}
+        rows = []
+        for node_id in sorted(endpoint_ids):
+            node, record = self.nodes[node_id], evaluation[node_id]
+            topics = listed[node_id] | set(node.get("topics", []))
+            if node.get("topic"):
+                topics.add(node["topic"])
+            kind = node.get("gap_kind", "verification" if node["kind"] == "source" else "mathematical")
+            role = node.get("endpoint_role", ENDPOINT_DEFAULT_ROLES[kind])
+            disposition = {"proved": "resolved", "falsified": "falsified"}.get(record["state"], "unresolved")
+            rows.append({**record, "node_kind": node["kind"], "kind": kind, "role": role,
+                         "disposition": disposition, "topics": sorted(topics),
+                         "listed_in_topics": sorted(listed[node_id]), "next_action": node.get("next_action")})
+        return rows
 
     def blockers(self, node_id: str, evaluation: dict[str, dict] | None = None, *,
                  distinct: bool = False) -> list[dict]:

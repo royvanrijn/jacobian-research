@@ -126,12 +126,13 @@ degree, Weyl rank and sparse support count are separate quantities.
 Run these commands from the repository root:
 
 ```sh
-python3 research/scripts/research.py gaps
+python3 research/scripts/research.py gaps --all
+python3 research/scripts/research.py gaps --unresolved
 python3 research/scripts/research.py opportunities
 python3 research/scripts/research.py coverage
 python3 research/scripts/research.py references vanishing
 python3 research/scripts/research.py bounds --opportunities
-python3 research/scripts/research.py gaps --topic hessian --kind mathematical
+python3 research/scripts/research.py gaps --unresolved --topic hessian --role active_goal
 python3 research/scripts/research.py explain HESSIAN-MOMENT-TRACE
 python3 research/scripts/research.py impact HESSIAN-MOMENT-TRACE
 python3 research/scripts/research.py graph --focus GOAL-JC2 --depth 2 --format dot
@@ -150,14 +151,43 @@ on each rule diamond. Unfiltered JSON and DOT exports include the whole graph; f
 explicitly mark required premises outside the view. Topic Mermaid overviews are
 bounded for readability. Use the structured export for all detailed entries.
 
-Gaps are classified as mathematical, formalization, verification or workflow.
+`gaps` and `gaps --all` enumerate the union of every explicit `goal` and `gap`
+node and every topic's curated `gap_ids`, once per ID. The JSON view exposes
+all topic memberships in `topics` and the curated memberships in
+`listed_in_topics`. Untagged records remain in the unfiltered inventory. The
+topic guides track curated obligations, and the dependency report gives the
+count of unresolved endpoints outside those lists.
+
+Use `gaps --unresolved` for assignments. The evaluator determines the
+disposition, with proved records marked `resolved` and counterexamples to the
+recorded proposition marked `falsified`. Both remain in the full inventory.
+The JSON `state` is effective and `recorded_state` is authored. The text view
+shows the recorded state whenever it differs from the effective one.
+Record a concrete possible test in `next_action` when the proof obligation is
+already precise. The text view shows this field for unresolved endpoints.
+
+`--kind` selects the existing `gap_kind` and `--role` selects its purpose.
+Mathematical, verification, formalization and workflow records default to
+`active_goal`, `source_audit`, `formalization` and `workflow`, respectively.
+Source nodes without an explicit `gap_kind` default to verification. Set the
+optional `endpoint_role` in the node record to override the default:
+
+| Role | Use |
+|---|---|
+| `active_goal` | A mathematical target or a required premise of a stated route |
+| `alternative_method` | One sufficient method among alternatives |
+| `stronger_theorem` | An optional strengthening of a proved or narrower claim |
+| `source_audit` | Verification of a proof, reference or imported input |
+| `formalization` | Formal proof or replay obligation |
+| `artifact_restoration` | Recovery of missing proof inputs or artifacts |
+| `workflow` | Editorial, review or publication work |
+
 Review and publication tasks do not become mathematical assumptions. A full
-conjecture can remain open with no known sufficient reduction in the graph;
-do not invent an arrow merely to connect every goal.
+conjecture can remain open with no known sufficient reduction in the graph.
 
 ## Try a hypothetical improvement
 
-Choose an unresolved node from `gaps` and substitute its identifier for `ID`:
+Choose an endpoint from `gaps --unresolved` and substitute its identifier for `ID`:
 
 ```sh
 python3 research/scripts/research.py simulate --prove ID

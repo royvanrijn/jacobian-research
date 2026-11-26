@@ -1616,16 +1616,53 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A split cubic carrier gives a larger asymmetric square-kernel sector | Internal result | proved | [Source](ABC_CROSS_FORM_PROJECTIVE_RAY_LOCKS.md) |
 | Primitivity fixes the prime support of high roots on low-degree components | Internal result | proved | [Source](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md) |
 | Growing menus of translated valuation grids give strict sector savings | Internal result | proved | [Source](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md) |
-| An exact Eisenstein norm power splits the radical cap across cyclotomic factors | Internal result | stale | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
-| Every exact proper Eisenstein norm power admits coefficient two ninths | Internal result | stale | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
-| Small Eisenstein norm defects eliminate balanced saturation | Internal result | stale | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
-| An Eisenstein power bound transfers to the primitive cyclic pair output | Internal result | stale | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| An exact Eisenstein norm power splits the radical cap across cyclotomic factors | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| Every exact proper Eisenstein norm power admits coefficient two ninths | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| Small Eisenstein norm defects eliminate balanced saturation | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| An Eisenstein power bound transfers to the primitive cyclic pair output | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
 | A fixed weighted physical shift has small least-repair fibres on private diffuse pairs | Internal result | proved | [Source](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md) |
 | Bounded fresh radical on a primitive repaired summand shift forces a pair gap | Internal result | proved | [Source](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md) |
 | Two exact least-repaired physical shifts give a fixed-level recovery | Internal result | proved | [Source](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md) |
 | Joint pair recovery prices each cyclotomic factor of a same-tail shift | Internal result | proved | [Source](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md) |
+| The 6/25 counting bound via averaged pair components | Partial result | open | [Source](ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md) |
+| Norm-defect recovery combines three original divisors with real and norm heights | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| Previously paid norm factors strengthen the balanced Eisenstein defect sector | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| A primitive cyclic label of a matched-defect pair needs fresh radical | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| One curve section bounds the sum of all private valuation orders | Internal result | proved | [Source](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md) |
+| Dense rational parameter boxes for exact valuation roots force a count saving | Internal result | proved | [Source](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md) |
+| Deep modular polynomial constraints give exact rational valuation-root carriers | Internal result | proved | [Source](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md) |
+| Short polynomial valuation-root models lose diffuse radical mass at any density | Internal result | proved | [Source](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md) |
+| An integral rational map on a dense short sample has constant denominator | Internal result | proved | [Source](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md) |
+| Separated complete labels rule out dense powered valuation-root models | Internal result | proved | [Source](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md) |
+| Separate deep modular rational equations yield exact root or probe models | Internal result | proved | [Source](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md) |
+| Grouped valuation probes recover root powers outside simultaneous collisions | Internal result | proved | [Source](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md) |
+| Effective Hilbert irreducibility rules out cheap algebraic root or probe charts | Internal result | proved | [Source](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md) |
+| The squarefree total radical removes the collision cost of valuation probes | Internal result | proved | [Source](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md) |
+| A modeled radical and one complete letter force sparse two-label cells | Internal result | proved | [Source](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md) |
+| A common indexed model gives a strict saving throughout the dictionary range | Internal result | proved | [Source](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md) |
+| A selectable valuation band forces a power energy loss in a unit residue class | Internal result | proved | [Source](ABC_CONDITIONAL_TRANSLATION_ENERGY_CRT.md) |
+| Post-lock radical slack controls energy in genuine balanced residue cells | Internal result | proved | [Source](ABC_CONDITIONAL_TRANSLATION_ENERGY_CRT.md) |
+| Two reversed product sums recover all original primitive rows without an anchor | Internal result | proved | [Source](ABC_PAIRED_PRODUCT_SUMS_MOVING_TARGETS.md) |
+| Paired signature radicals stay large outside all moving original targets | Internal result | proved | [Source](ABC_PAIRED_PRODUCT_SUMS_MOVING_TARGETS.md) |
+| Fixed-target product sums retain their fresh radical constraint under least repair | Internal result | proved | [Source](ABC_PAIRED_PRODUCT_SUMS_MOVING_TARGETS.md) |
+| Retuned averaged count for consecutive powerful triples | Partial result | open | [Source](ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md) |
+| Uniform count for three repaired consecutive terms | Partial result | open | [Source](ERDOS_137_UNIFORM_SMALL_COEFFICIENT_COUNTS.md) |
+| All-width count of powerful-product starts for Erdős #137 | Partial result | open | [Source](ERDOS_137_UNIFORM_SMALL_COEFFICIENT_COUNTS.md) |
+| Pell repair remainder at one-third the retuned exponent | Partial result | open | [Source](ERDOS_137_UNIFORM_SMALL_COEFFICIENT_COUNTS.md) |
+| Retuned count for powerful values of a fixed quadratic | Partial result | open | [Source](POWERFUL_QUADRATICS_AVERAGED_COMPONENT_COUNT.md) |
+| Absolute residue prices are quantitative at finite radical-scale depths | Internal result | proved | [Source](ABC_RADICAL_SCALE_RESIDUE_PRICING.md) |
+| Occurrence forces bounded products to nearly fill finite-scale unit groups | Internal result | proved | [Source](ABC_RADICAL_SCALE_RESIDUE_PRICING.md) |
+| Radical-scale full divisors suffice for the absolute balanced register identities | Internal result | proved | [Source](ABC_RADICAL_SCALE_RESIDUE_PRICING.md) |
+| Full powers on the affine-star pool improve the valuation quantile test | Internal result | proved | [Source](ABC_RECOVERED_POOL_QUANTILE_STARS.md) |
+| A marked catalogue costs one price per anchor in the common-query exponent | Internal result | proved | [Source](ABC_RECOVERED_POOL_QUANTILE_STARS.md) |
+| Residual caps improve common-query price with all three full divisors fixed | Internal result | proved | [Source](ABC_RECOVERED_POOL_QUANTILE_STARS.md) |
+| Exact complementary word collisions at common target radicals cost one fewer anchor | Internal result | proved | [Source](ABC_FULL_DIVISOR_COMPLEMENTARY_WORD_ENERGY.md) |
+| One full divisor on the last free row gives a uniform moving-target collision gap | Internal result | proved | [Source](ABC_FULL_DIVISOR_COMPLEMENTARY_WORD_ENERGY.md) |
+| A near-complete shared target lock removes the final three-slot cost | Internal result | proved | [Source](ABC_FULL_DIVISOR_COMPLEMENTARY_WORD_ENERGY.md) |
+| Actual target radicals have large cross-ratios on generic arithmetic rectangles | Internal result | proved | [Source](ABC_SEPARATED_TARGET_RADICAL_PROBES.md) |
+| A separated multiplicative model with a cheap residual excludes dense cells | Internal result | proved | [Source](ABC_SEPARATED_TARGET_RADICAL_PROBES.md) |
 
-**Computed obligations:** 112 unresolved; 19 resolved within their exact scope.
+**Computed obligations:** 117 unresolved; 21 resolved within their exact scope.
 
 
 Scope limits:
@@ -1766,7 +1803,7 @@ Scope limits:
 - The coefficient-aware low-product theorem does not improve unrestricted1/4; actual-support capacity has only a one-way sufficient bridge, not a converse or unconditional estimate.
 - The coherent-cycle33/134 theorem is unconditional for all positive3-full prescribed sums, including noncoprime original values. Its primitive coefficient theorem is uniform. The stronger actual middle-carrier capacity remains an independent OPEN sufficient condition; there is no converse from the representation saving.
 - For every fixedk>=3 the explicit all-target prescribed-sum bound is33/(33k+35), with saving2/((k+1)(33k+35)) below1/(k+1). Primitive positive coefficients are uniform; original noncoprime values use exact gcd normalization. No coefficient1-to-uniform-primitive converse or carrier-capacity implication is asserted.
-- Erdos #364 uses consecutive integers. The nonfundamental exponent 1/6 is elementary, and 293/3660 and global 293/1220 use explicit preprint inputs. The joint determinant covers all dyadic boxes. At width exponent 11/105, the 6/25 target uses only the strict near-binding fundamental boxes and the collision exponent 142/525 after removing the counted component classes, which include averaged degree-22 curves, geometrically rational curves and binomial surfaces.
+- Erdos #364 uses consecutive integers. With the stated preprint inputs, the averaged pair count is O_epsilon(X^((6/25-10^-7)+epsilon)), its small-coefficient extension gives the same all-width exponent for Erdos #137, and Pell repair gives a nonfundamental exponent of (6/25-10^-7)/3. The fixed-quadratic transfer uses its own explicit chart inputs. The separate joint collision estimate remains open.
 
 Tracked obligations (computed states):
 
@@ -1858,5 +1895,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Can the balanced target-only minimal repair count be bounded by a fixed power strictly below 1/M?](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) — GAP-ARITH-ABC-ONE-TARGET-MINIMAL-REPAIR-STRICT-SAVING
 - **mathematical / open:** [Can the remaining fundamental candidates after the component bounds meet the averaged cell budget?](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) — GAP-ERDOS-364-JOINT-SURFACE-POINT-COUNT
 - **mathematical / open:** [Can the coupled count of distinct surviving fundamental centers in common cells reach 142/525 at width exponent 11/105?](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) — GAP-ERDOS-364-COUPLED-COLLISIONS
+- **mathematical / open:** [Can the averaged degree-ten saving be strengthened to the pointwise elliptic estimate?](ERDOS_364_AVERAGED_PAIR_COMPONENT_COUNT.md) — GAP-ERDOS-364-POINTWISE-ELLIPTIC-LIFT
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -129,6 +129,13 @@ from the lower bound \(1/3\) for the sum of the two free
 nonatomic masses and the exceptional-slot allowance in that
 construction.
 
+The full-divisor allocation argument gives the stronger
+bound \(n^\eta X^\varepsilon\sum_C D_C^{m-1}\) for
+any fixed fold \(m\), at every positive multiplicity.
+It also allows the two lists to have different
+target radicals.
+[Full-divisor completion FC1](ABC_FULL_DIVISOR_COMPLEMENTARY_WORD_ENERGY.md#fc1-the-complete-common-target-and-its-radical)
+
 **CE2.** Fix
 \(0<\sigma<(1/3-\xi)/6\) with \(\sigma\le\rho\).
 In a complete-target bin, the number of nontrivial threefold

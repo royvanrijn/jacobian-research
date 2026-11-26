@@ -156,6 +156,59 @@ class DependencyIntegrationTests(unittest.TestCase):
         self.assertEqual(gaps[0]["kind"], "mathematical")
         self.assertEqual(gaps[0]["node_kind"], "gap")
 
+    def test_endpoint_inventory_covers_the_union_without_conflating_roles_or_states(self):
+        self.data["topics"][0]["gap_ids"].append("IMPORTED")
+        self.data["topics"].append({"id": "second", "results": [], "gap_ids": ["B"]})
+        self.data["graph"]["nodes"] += [
+            {"id": "UNLISTED", "kind": "goal", "title": "Open theorem", "scope": "Unlisted goal.",
+             "status": "open", "topic": "topic", "next_action": "Check the full coefficient family."},
+            {"id": "UNTAGGED", "kind": "goal", "title": "Untagged theorem", "scope": "Untagged goal.",
+             "status": "open"},
+            {"id": "ALTERNATIVE", "kind": "gap", "title": "Alternative method", "scope": "Optional method.",
+             "status": "open", "endpoint_role": "alternative_method", "topics": ["second"]},
+            {"id": "IMPORTED", "kind": "source", "title": "Imported theorem", "scope": "Audit the application.",
+             "status": "unverified"},
+            {"id": "DISCHARGED", "kind": "goal", "title": "Proved theorem", "scope": "Already proved.",
+             "status": "open"},
+            {"id": "REFUTED", "kind": "goal", "title": "Falsified target", "scope": "Already falsified.",
+             "status": "falsified", "sources": [self.source]},
+        ]
+        self.data["graph"]["implications"] += [
+            {"id": "A-to-discharged", "premises": ["A"], "conclusion": "DISCHARGED",
+             "status": "proved", "proof": self.source},
+            {"id": "alternative-to-discharged", "premises": ["ALTERNATIVE"], "conclusion": "DISCHARGED",
+             "status": "proved", "proof": self.source},
+        ]
+
+        inventory = json.loads(self.cli("gaps", "--all", "--json"))
+        rows = {row["id"]: row for row in inventory}
+        self.assertEqual(len(inventory), 7)
+        self.assertEqual(set(rows), {"B", "ALTERNATIVE", "DISCHARGED", "IMPORTED", "REFUTED", "UNLISTED", "UNTAGGED"})
+        self.assertEqual(rows["B"]["topics"], ["second", "topic"])
+        self.assertEqual(rows["B"]["listed_in_topics"], ["second", "topic"])
+        self.assertEqual(rows["UNLISTED"]["topics"], ["topic"])
+        self.assertEqual(rows["UNLISTED"]["listed_in_topics"], [])
+        self.assertEqual(rows["UNLISTED"]["next_action"], "Check the full coefficient family.")
+        self.assertEqual(rows["UNTAGGED"]["topics"], [])
+        self.assertEqual(rows["DISCHARGED"]["state"], "proved")
+        self.assertEqual(rows["DISCHARGED"]["recorded_state"], "open")
+        self.assertEqual(rows["DISCHARGED"]["disposition"], "resolved")
+        self.assertEqual(rows["REFUTED"]["disposition"], "falsified")
+        self.assertEqual(rows["ALTERNATIVE"]["role"], "alternative_method")
+        self.assertEqual(rows["IMPORTED"]["role"], "source_audit")
+        self.assertEqual(rows["IMPORTED"]["node_kind"], "source")
+        self.assertEqual(rows["UNLISTED"]["role"], "active_goal")
+
+        self.assertEqual(json.loads(self.cli("gaps", "--json")), inventory)
+        active = json.loads(self.cli("gaps", "--unresolved", "--role", "active_goal", "--json"))
+        self.assertEqual([row["id"] for row in active], ["B", "UNLISTED", "UNTAGGED"])
+        second = json.loads(self.cli("gaps", "--topic", "second", "--json"))
+        self.assertEqual([row["id"] for row in second], ["ALTERNATIVE", "B"])
+        text = self.cli("gaps", "--all")
+        self.assertIn("proved (recorded open)", text)
+        self.assertIn("UNTAGGED [untagged", text)
+        self.assertIn("Next action — Check the full coefficient family.", text)
+
     def test_plain_explain_includes_selected_recursive_source_pins(self):
         self.data["graph"]["nodes"][1]["status"] = "proved"
         text = self.cli("explain", "D")

@@ -14,7 +14,7 @@ import subprocess
 
 from zipfile import ZipFile
 
-from dependency_graph import DependencyGraph, GraphValidationError
+from dependency_graph import DependencyGraph, ENDPOINT_DEFAULT_ROLES, ENDPOINT_ROLES, GraphValidationError
 from external_artifacts import repository_path
 from dependency_sources import missing_source_closure
 from dependency_coverage import CoverageError, check_coverage, coverage_state, render_coverage, declarations
@@ -702,9 +702,15 @@ def main() -> None:
     bounds = commands.add_parser("bounds", help="inspect scoped bounds and comparable improvements")
     bounds.add_argument("--opportunities", action="store_true")
     bounds.add_argument("--json", action="store_true")
-    gaps = commands.add_parser("gaps", help="list scoped mathematical, formal and workflow gaps")
-    gaps.add_argument("--topic")
-    gaps.add_argument("--kind", choices=("mathematical", "formalization", "verification", "workflow"))
+    gaps = commands.add_parser("gaps", help="inventory all explicit goals, gaps and topic obligations")
+    selection = gaps.add_mutually_exclusive_group()
+    selection.add_argument("--all", dest="unresolved", action="store_false", default=False,
+                           help="include resolved and falsified records (default)")
+    selection.add_argument("--unresolved", action="store_true",
+                           help="only include currently unresolved records")
+    gaps.add_argument("--topic", help="match either authored or curated topic membership")
+    gaps.add_argument("--kind", choices=ENDPOINT_DEFAULT_ROLES)
+    gaps.add_argument("--role", choices=sorted(ENDPOINT_ROLES))
     gaps.add_argument("--json", action="store_true")
     args = parser.parse_args()
     data = load()
@@ -929,22 +935,23 @@ def main() -> None:
             assert graph is not None, "no dependency graph"
             if args.topic and args.topic not in {topic["id"] for topic in data["topics"]}:
                 parser.error("unknown topic: " + args.topic)
-            evaluation = graph.evaluate()
-            rows = []
-            for topic in data["topics"]:
-                if args.topic and topic["id"] != args.topic:
-                    continue
-                for node_id in topic.get("gap_ids", []):
-                    node = graph.nodes[node_id]
-                    kind = node.get("gap_kind", "mathematical")
-                    if args.kind and kind != args.kind:
-                        continue
-                    rows.append({**evaluation[node_id], "topic": topic["id"], "node_kind": node["kind"], "kind": kind})
+            rows = [row for row in graph.endpoint_inventory()
+                    if (not args.topic or args.topic in row["topics"])
+                    and (not args.kind or args.kind == row["kind"])
+                    and (not args.role or args.role == row["role"])
+                    and (not args.unresolved or row["disposition"] == "unresolved")]
             if args.json:
                 print(json.dumps(rows, indent=2, ensure_ascii=False))
             else:
+                print(f"Endpoint inventory ({len(rows)} matching records)")
                 for row in rows:
-                    print(f"{row['topic']}/{row['id']} [{row['kind']}, {row['state']}]: {row['scope']}")
+                    topics = ", ".join(row["topics"]) or "untagged"
+                    state = row["state"]
+                    if row["recorded_state"] != state:
+                        state += f" (recorded {row['recorded_state']})"
+                    print(f"{row['id']} [{topics} | {row['kind']} | {row['role']} | {state}] — {row['scope']}")
+                    if row["disposition"] == "unresolved" and row["next_action"]:
+                        print(f"  Next action — {row['next_action']}")
     except (GraphValidationError, CoverageError, AssertionError) as error:
         parser.error(str(error))
 

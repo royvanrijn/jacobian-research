@@ -89,6 +89,14 @@ tolerance first. Multiple locks use their total record
 cost in place of \(f\).
 [Cheap full divisors from a positive nonatomic band (MD3)](ABC_MODULAR_DIGIT_SUPPORT_AND_ATOMIC_COMPLETION.md#completing-all-balanced-profiles-after-small-modulus-support-recovery)
 
+For integer moduli \(D\ge n^\kappa\), the finite-depth
+estimate gives the same half-list price at radical cap
+\(n^r\) when \(\kappa>2r\) by a fixed margin. Thus the
+absolute list inputs in the cell and register deductions
+below also apply to original full divisors of this
+depth, with their actual catalogue prices.
+[Finite-depth half-list price RD5](ABC_RADICAL_SCALE_RESIDUE_PRICING.md#rd5-radical-scale-full-locks-in-balanced-cells)
+
 ## Equality of the three complete dictionary exponents
 
 **RB3.** Every regular full-exponent balanced cohort satisfies

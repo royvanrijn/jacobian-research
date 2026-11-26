@@ -160,14 +160,45 @@ for the shared absolute curvature. The
 closes \(2P+S_{\rm sh}\ge13\). The
 [private-degree-six theorem](MULTIVARIATE_ONE_PRIVATE_DEGREE_SIX_ALL_ANGLES.md)
 handles the remaining \(P=6\) profiles, so every \(P\ge6\) is
-covered with arbitrary shared rows. The [integer-twist theorem for one private unit](MULTIVARIATE_ONE_PRIVATE_UNIT_ALL_INTEGER_TWISTS.md)
+covered with arbitrary shared rows. For \(2\le P\le5\), the
+[sharper one-private reserve](MULTIVARIATE_ONE_PRIVATE_ENTROPY_SHARPER_RESERVE.md)
+covers \(S_{\rm sh}+(35/18)P\ge12\) at every terminal, leaving the strict
+shared curvature caps \(73/9,37/6,38/9,41/18\) for \(P=2,3,4,5\),
+respectively. The [integer-twist theorem for one private unit](MULTIVARIATE_ONE_PRIVATE_UNIT_ALL_INTEGER_TWISTS.md)
 closes \(P=1\) at a computable positive weak shared curvature cap,
 with arbitrary signed shared degree difference. The
 [Gamma resolvent comparison](MULTIVARIATE_ONE_PRIVATE_SHARED_UNIT_ALL_SHAPES.md)
 gives every degree for the exact template \((a,a+1),(0,1)\) at every
-positive integer \(a\). Other one-private profiles and the fully
-shared profiles still require comparisons
-in arbitrary dimension. The [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
+positive integer \(a\). For \(P=1\) the entropy theorem leaves
+\(S_{\rm sh}<11\), and the [absolute-curvature theorem](MULTIVARIATE_ABSOLUTE_CURVATURE_12.md)
+leaves \(S_{\rm sh}<12\) in the fully shared case.
+
+### The residual implication
+
+Let \(J=N_{\rm ang}\) be the
+[absolute angular cutoff](MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL_ANGLES.md).
+To prove all-degree coprimality it suffices to exclude physical common
+roots for \(15\le N<J\) on fully shared profiles with \(S_{\rm sh}<12\)
+and on profiles with exactly one private side and \(1\le P\le5\) below
+the respective caps above. Closing that residual proves the original
+claim: the terminal theorems give \(2\le N\le14\), the cutoff gives
+\(N\ge J\), and the curvature and private-side theorems cover all other
+profiles between them. Conversely the original claim includes the
+residual. The remaining orders are bounded, while the exponent
+profiles are still unbounded.
+
+### The private-degree-five branch
+
+At \(P=5\) the residual requires only \(S_{\rm sh}<41/18\).
+The [cancelled Gamma estimate](MULTIVARIATE_ONE_PRIVATE_CANCELLED_GAMMA_BUDGET.md)
+gives \(W_{\rm eff}q\le4 e^{-s_0/2}\) at the private endpoint.
+An angular closure by this method still requires the actual
+coefficient envelope, the first-coefficient comparison and the final
+phase reserve. A proof of this branch removes \(P=5\) from the
+residual. Together with the fully shared and \(P\le4\) residual it
+covers all profiles in the residual implication.
+
+The [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
 the relative center. A certified separation of that family gives
 a finite algebraic certificate for the terminal. The closure includes
@@ -203,8 +234,12 @@ measure exactly the signed gap that can escape while consuming the
 remaining gap budget. The [one-unbounded-type reduction](MULTIVARIATE_ONE_UNBOUNDED_TYPE_FINITE_DECISION.md)
 instead decides the original physical property for profiles with one
 row type above a fixed height, even at arbitrary multiplicities.
-A hard-row cutoff gives a finite original decision for every profile
-with at most two unequal rows.
+The [distinct-type and soft-budget reduction](MULTIVARIATE_SOFT_TYPE_FINITE_REDUCTION.md)
+gives a finite original decision with at most one soft row type.
+In particular it covers two distinct unequal types at arbitrary
+multiplicities. With bounded soft cancellation, its finite slicing
+test leaves unbounded heights only at retained cores with a twisted
+odd-multiplicity resonance and real algebraic escape.
 The [joint curvature measure](MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md)
 uses an exact factorial density for each primitive row curve. It
 couples all orders and determines the relative center. Relaxing only
@@ -876,9 +911,41 @@ algebraic height curve. The [common-factor rank theorem](MULTIVARIATE_OPPOSED_AX
 excludes every positive interior rational-bias contact, including
 multiple and tangential contacts. At irrational interior bias any
 sufficiently high exact collision has a quadratic greatest common
-divisor. At the boundary, accumulation requires at least two
-independent multiplicative relations among the factorial
-multipliers. On prescribed algebraic height curves the
+divisor. The [two-clock reduction](MULTIVARIATE_OPPOSED_TWO_CLOCK_DEPENDENCE.md)
+excludes even these quadratic collisions if the logarithms of
+the two algebraic reference clocks are algebraically dependent.
+At a positive boundary contact, the
+[pole-degree theorem](MULTIVARIATE_OPPOSED_BOUNDARY_POLE_DEGREES.md)
+requires between two and \(e\) independent factorial relations,
+where \(e\) is the gap of the taller row. If the heights
+satisfy \(Y\asymp L^\beta\), then \(1<\beta<2\), with a
+sharper explicit bound for \(e\ge3\). If \(\beta=b/a\) in
+lowest terms, the reduced powers lie in the finite list
+\(a\le ne,\ b\le nd\). This excludes all such boundaries at
+\(e=1\) and every simple transverse root pair at all gaps. The [boundary clock exclusion](MULTIVARIATE_OPPOSED_BOUNDARY_CLOCK_EXCLUSION.md)
+uses those pole degrees to exclude all positive boundary contacts
+of the two opposed single types, including the ramified branches.
+The [zero-strength theorem](MULTIVARIATE_ZERO_STRENGTH_TWO_HEIGHT_GROUPS.md)
+excludes accumulation with unbounded counts even if the twisted
+core comparators have a common root. It permits two affine groups
+with independent curvature and bias directions. The
+[finite height-curve certificate](MULTIVARIATE_AFFINE_GROUP_HEIGHT_CURVE_CERTIFICATE.md)
+extends the positive rational-bias reduction to those grouped
+families whose formal factorial characters have full divisor rank.
+It gives an explicit curve list and codimension test, and only
+rational affine lines can accumulate at an interior rational
+bias. The [effective rational-contact theorem](MULTIVARIATE_OPPOSED_EFFECTIVE_RATIONAL_CONTACTS.md)
+computes local exclusion radii for two opposed types at every
+positive rational-bias contact by a finite-jet algebra calculation
+and exact tests on a finite height-curve catalogue. The same
+calculation is effective at an irrational-bias contact whenever an
+exact algebraic relation between its logarithmic clocks is supplied.
+For balanced opposed types on a fixed mirrored core, the
+[effective radial height theorem](MULTIVARIATE_BALANCED_TWO_TYPE_HEIGHT_CUTOFF.md)
+confines any high collision to finitely many affine offsets.
+This gives an exact finite decision with arbitrary counts and
+fixed gaps, including cores with a collision before the tail is added.
+On prescribed algebraic height curves the
 [prime-grid theorem](MULTIVARIATE_OPPOSED_ALGEBRAIC_CURVE_PRIME_GRID.md)
 restricts which active-row factors can absorb tall-row marks. It
 gives an effective all-degree cutoff on rational polynomial height
@@ -1358,6 +1425,10 @@ moments and the exact derivative relation. For every upper order
 at least five it produces one common irreducible quadratic.
 These relaxations isolate the need for further factorial
 constraints in positive moment and direct shape arguments.
+The [weighted factorial obstruction](SFC_WEIGHTED_FACTORIAL_TOTAL_POSITIVITY_OBSTRUCTION.md)
+shows that a positive polynomial reweighting of the ordinary factorial
+law still has a strictly totally positive moment kernel and can admit
+arbitrarily long affine binomial zero windows.
 The [exact factorial rectangle](MULTIVARIATE_FACTORIAL_RECTANGLE_FIRST_SECTOR.md)
 uses the stationary curvature to obtain explicit first-sector
 angular separation on each strictly subcritical fully shared band.
@@ -1733,7 +1804,7 @@ over any characteristic-zero field by the rational Bézout identity.
 Both pure monomial coefficients are nonzero at every order, so
 the univariate reduction in \(t\) covers all projective coefficient
 choices. An all-degree proof still requires coverage of the terminals
-from fourteen through \(N_*-1\), or an argument that applies directly
+from fifteen through \(N_*-1\), or an argument that applies directly
 at every terminal.
 
 ## The discrete row-merger route
@@ -1771,11 +1842,24 @@ removes the order bound when the low row carries no naturally
 normalized unit singleton. The factor valuations bound the
 low-row load uniformly at the chosen precision. Two unit
 singleton rows already obstruct this all-order congruence.
+The [first digit discrepancy theorem](SFC_FIRST_DIGIT_PACKING_DISCREPANCY.md)
+gives a necessary and sufficient criterion for universal
+all-order residue preservation and the first failing order
+if the criterion fails. In characteristic zero, the
+[arbitrary-support row rigidity theorem](SFC_ARBITRARY_SUPPORT_ROW_RIGIDITY.md)
+recovers the complete multivariate row multiset from a single
+moment form above a spanning-tree gap threshold, even up to
+diagonal coefficient rescalings.
 The [rational moment series theorem](FACTORIAL_MOMENT_SERIES_PRIME_POWER_RATIONALITY.md)
 gives exact finite matrices modulo every prime power for arbitrary
 support and dimension. It identifies the fixed residue poles and
 gives a two-window for a dyadic singleton and a nonsingleton with
-a shared set digit under an explicit relative valuation bound.
+a shared set digit under an explicit relative valuation bound. The
+[residue-section theorem](SFC_SINGLETON_RESIDUE_SECTION_WINDOWS.md)
+gives all-order windows for arbitrary supports with suitable
+digit-slot capacity, and constructs ordinary phases with arbitrary
+long simultaneous zero windows at any fixed finite list of primes
+and precisions.
 The [linear precision theorem](FACTORIAL_LINEAR_PRECISION_ANALYTIC_INTERPOLATION.md)
 makes the precision threshold linear on every fixed local coefficient
 class, and gives jointly analytic interpolation. Its common-zero
@@ -1874,8 +1958,10 @@ prove strict all-degree angular interlacing at total absolute
 curvature \(S\ge6\), regardless of the remaining orientations.
 The [seven-halves residual theorem](MULTIVARIATE_BOTH_PRIVATE_RESIDUAL_CURVATURE_SEVEN_HALVES.md)
 lowers the sufficient threshold to \(S\ge11/2\), with strict
-interlacing at terminals from fourteen onward.
-The [conditional monotonicity comparison](MULTIVARIATE_BOTH_PRIVATE_COMPARABLE_SHARED_INTERLACING.md)
+interlacing from terminal fourteen onward as proved by that criterion.
+The later all-profile terminal-fourteen theorem already covers its
+first terminal, and the all-degree both-private theorem covers this
+entire support type. The [conditional monotonicity comparison](MULTIVARIATE_BOTH_PRIVATE_COMPARABLE_SHARED_INTERLACING.md)
 proves every-degree coprimality at arbitrary curvature if the
 exponents on the shared rows are coordinatewise comparable.
 The [balanced tail stability theorem](MULTIVARIATE_COMPARABLE_CORE_BALANCED_TAIL_STABILITY.md)
@@ -2409,7 +2495,14 @@ excludes every fixed even start for the collinear ternary gate
 and leaves one valuation pair at odd starts.
 The [three-adic cubic criterion](SFC_TERNARY_CUBIC_TRIADIC_BOUND.md)
 excludes all rational noncollinear cubic parameters and the centered
-cubic gate over any characteristic-zero field, at every start.
+cubic gate over any characteristic-zero field, at every start. A
+ternary digit descent fixes the remaining normalized clock at
+\(v_3(A^2/B)=1/2\). Further digit tests exclude every window whose
+unique multiple of three is \(3^a\) or \(2\cdot3^a\), for \(a\ge1\). At the quarter
+clock the digit recursion classifies the monomial initial forms,
+and simultaneous cancellation of all three initial forms occurs
+in the windows starting at \(12\cdot3^t\), \(t\ge1\). These
+residue cancellations leave exact lifting open.
 
 For mixed-degree dilation, the
 [singleton-block theorem](SFC_MIXED_DEGREE_SINGLETON_FOREIGN_BLOCKS.md)

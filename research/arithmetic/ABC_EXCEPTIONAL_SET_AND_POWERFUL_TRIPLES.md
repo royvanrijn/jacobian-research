@@ -11199,6 +11199,23 @@ can be used on a primitive cyclic pair output with
 the cost of one input anchor.
 [Eisenstein norm powers and defects (EN1–EN4)](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md)
 
+
+The joint norm reconstruction buys all three original
+full divisors as one projective modulus. A real strip
+of width \(X^{-\sigma}\) and norm powers already
+paid for by the defect support reduce its required depth.
+At fixed \(q\ge5\) this allows defect price below
+\(1/3-2/(3q)\) on microscopic-prime strata, including
+all numerical heights. If the norm outside the defect
+support is numerically short, every fixed defect price
+below \(1/3\) suffices even with macroscopic original
+primes. For pairs with matching exact defects, the
+cyclic output is a power. A rich joint content and
+shared-support record gives one-label pair exponent
+at most \(d+s/(2k(q))+\eta\) when the original row
+exponent is \(d\) and the fresh label radical cap is \(n^s\).
+[Eisenstein joint reconstruction and matched pairs (EN5–EN7)](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md#en5-joint-original-divisors-a-real-strip-and-a-norm-ideal)
+
 Primitivity makes a low-degree component with
 overlapping high roots on one original letter
 arithmetically restrictive. The private-zero
@@ -11213,6 +11230,23 @@ The number of grids may grow as \(L\) decreases.
 A uniform extraction of valuation mass in such
 grids remains open.
 [Private affine boundary and translated grids (PV1–PV2)](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md)
+
+
+A polynomial model for the complete exact valuation
+roots supplies a further extraction criterion. In
+low-degree parameter components, the three branch
+fibres limit the sum of the orders at private zeros.
+Arithmetic certificates put the other roots on fixed
+supports. A diffuse band of normalized mass \(\rho\)
+then saves nearly \(\rho/3\) before chart costs. This
+applies to polynomial parameters in arbitrary short
+boxes and allows unbounded coefficient heights.
+The rational-box version bounds the product of
+collision primes by a simultaneous resultant and
+CRT argument. Separate deep modular polynomial
+models become exact rational ones on the same
+sample by vanishing integer minors.
+[Parameter models of exact valuation roots (PV3–PV6)](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md#pv3-aggregate-private-valuations-on-a-component)
 
 For least repair at order \(M=\lceil K/L\rceil\),
 a fixed weighted shift of one repaired summand has
@@ -11244,6 +11278,125 @@ test the retained exponent must exceed the proved
 upper bound for the extracted sector. These
 obligations concern actual primitive rows and keep
 the height limit at fixed budget.
+
+## Root extraction inside balanced residue cells
+
+In a cell of local dictionary exponent \(u>0\),
+polynomial models for bounded powers of the exact root
+slots in the two complete-letter labels force all
+sufficiently high valuation factors to be constant.
+This gives count at exponent \(u\) per model, against
+the dense cell's exponent \(2u\). The corresponding
+algebraic relation criterion uses effective Hilbert
+irreducibility and has count exponent \(3u/2\).
+Separate fixed deep moduli suffice to lift the needed
+root relations when their evaluation minors are
+numerically short. Row content, fixed tails and all
+three original caps stay in the count.
+[Two-label valuation models (RL1–RL5)](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md#rl2-two-complete-labels-and-polynomial-root-powers)
+
+A squarefree total radical and two base-\(\lceil\sqrt
+m\rceil\)-scale digit probes can identify every slot,
+with digit heights \(X^{O(\sqrt L)}\) for
+\(m=O(1/L)\). A model of the radical itself and the
+remaining complete letter gives a further two-label
+test at count exponent \(4u/3\). Complete-register
+equations alone retain a torus of hidden directions
+on the root coordinates. An actual shared rational
+model indexed across the cells gives a fixed gap
+throughout the balanced dictionary range, including
+occurrence, if its combined catalogue price is
+below \(1/18\) by a fixed margin.
+[Squarefree anchor and common cell index (RL6–RL7)](ABC_RESIDUE_CELL_VALUATION_ROOT_MODELS.md#rl6-a-squarefree-anchor-and-a-complete-letter-model)
+
+The scalar energy of an actual unit-residue dictionary
+has a fixed power loss when a sufficiently large band
+of individually cheap high powers can fill its remaining
+numerical width across repeated translates. In a
+three-register cell the conditions are \(sv>w\) and
+\(\beta_0>r_T-2v\), for dictionary exponent \(v\),
+post-lock cap \(r_T\), leftover width \(w\) and band
+mass \(\beta_0\) above scaled degree \(s\).
+This is a conditional intermediate-scale restriction
+on genuine cells.
+[Translation energy and residual depth (TE1–TE4)](ABC_CONDITIONAL_TRANSLATION_ENERGY_CRT.md)
+
+Two reversed product sums give a different obstacle
+to cheap nonlinear records. Their exact reduced values
+and gcds recover a fixed tuple of original primitive rows
+at divisor-many cost even with moving targets. On a
+near-saturating family the two sums' joint fresh
+radical must cost at least \(k/3-o(1)\) on full-size
+\(k\)-tuple populations, even after omitting the union
+of original target supports. The fixed-target version
+uses the actual fixed-letter fibre exponent and
+applies through the subpower complete-target
+partition of least-repaired fibres.
+[Paired product sums (PSN1–PSN3)](ABC_PAIRED_PRODUCT_SUMS_MOVING_TARGETS.md)
+
+## Finite-depth residue prices and full-divisor completion
+
+The degree-one Fourier price now has a finite-depth
+version for moduli of size \(n^\kappa\). When
+\(\kappa>2r\), a residue list still costs half its
+size exponent for integers with radical cap \(n^r\).
+For fine valuation layers the count has explicit
+transitions at \(\kappa=r/2\) and \(\kappa=r\).
+At the occurrence exponent, bounded products of
+the actual residue list must fill the unit group
+up to an arbitrarily small exponent loss when
+\(\kappa\ge r/2\). This tests original divisors whose
+numerical height can be \(X^{o(1)}\). It also
+extends the absolute list input of RB3–RB7 to
+sufficiently deep radical-scale locks.
+[Finite-depth residue prices (RD1–RD5)](ABC_RADICAL_SCALE_RESIDUE_PRICING.md)
+
+In a fixed affine star, the numerical powers
+removed on a shared prime pool still contribute
+to the modulus after fixing them. Its least
+common multiple contributes the largest restored
+weight from a computed copy. The query's restored
+weight and upper quantile add separately by
+original primitivity. These inequalities can also
+retain escaped numerical moments. A marked original
+divisor catalogue of price \(f\) leaves a common
+query exponent at least \(u-mf\) for \(m\) fixed
+anchors, with a further improvement from the two
+opposite full divisor records. The resulting
+necessary quantile inequalities exclude some
+formal profiles that satisfy the earlier one-band
+and two-copy tests.
+[Quantiles and marked-divisor prices (PQ1–PQ5)](ABC_RECOVERED_POOL_QUANTILE_STARS.md)
+
+For a prescribed exact pair of complementary
+products, nontrivial \(m\)-fold collisions between
+lists sharing a target radical on each side cost
+\(\sum_R D_R^{m-1}\) up to height subpowers.
+The two radicals may differ. This follows by
+omitting one negative operand with a small
+numerical cost on all but one positive row, then
+using the actual original CRT divisors. It gives
+a saving at every positive target multiplicity
+on finite probe charts and retains the exact
+least-repair eligibility. For moving targets a
+different allocation with a cheap divisor on
+the last negative row saves \(1/6\) in the
+limiting exponent on generic positive tuples
+at every fixed order.
+[Complementary word completion (FC1–FC3)](ABC_FULL_DIVISOR_COMPLEMENTARY_WORD_ENERGY.md)
+
+Dense two-label cells also require genuinely
+two-label target prime support. On generic
+rectangles each target has private radical
+price at least \(2u-o(1)\), so the numerator
+and denominator of its radical cross-ratio
+each have price at least \(4u-o(1)\). Exact
+bounded-rank multiplicative models for the
+target radical or its probes give a power
+saving when their residual target support and
+catalogue are sufficiently cheap. These estimates
+use the actual fixed-original-letter bound.
+[Target radical support and cross-ratios (SRP1–SRP5)](ABC_SEPARATED_TARGET_RADICAL_PROBES.md)
 
 ## Binary-form ray counts and exact power coefficients
 

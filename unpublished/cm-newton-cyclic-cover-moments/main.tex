@@ -44,8 +44,11 @@ in the branch ratio with quartic odd and radial even lower terms.
 We give an effective finite reconstruction window and a marked
 rank-two example that proves local moment rigidity.
 An arithmetic attachment lemma uses denominator primes to
-identify sphere-generated cycle sectors. Two degenerations
-then give coherent detection with nonzero escaping periods.
+identify sphere-generated cycle sectors. For the conductor-\(18\) top
+with opposite branch roots and lower support of degrees \((5,1)\),
+we give all-order detection on an explicit open stratum with six
+correction columns. With three correction columns, fourteen
+shifts form the shortest uniform initial window for coherent detection.
 \end{abstract}
 
 \section{Introduction}
@@ -102,7 +105,11 @@ minimal period equation extends this to a full orbit of
 nodes. A monodromy calculation then selects the fibre
 cycles that can contribute to the sphere variations.
 The two examples show how period coefficients from
-escaping cycles enter the reconstruction.
+escaping cycles enter the reconstruction. Section~\ref{sec:fixed-top-windows}
+uses this argument on a fixed-boundary stratum and then turns to
+the three-correction problem on the entire fixed-top family.
+A finite algebra bounds the exceptional locus, and local determinant
+certificates exclude its remaining residue factors.
 
 The fractional-part dimensions and Frobenius coefficient formulas for
 tame cyclic covers belong to the Hasse--Witt theory of Bouw
@@ -1220,6 +1227,174 @@ leading entries is 789 modulo 1009, giving degree
 \(\sum k-\sum j=12\) on every such line.
 \end{proof}
 
+
+\section{Fixed-top detection and uniform finite windows}
+\label{sec:fixed-top-windows}
+
+Take \(z=x/t^2\), \(P=(z^2+1)^4\), and put
+\[
+ f=t^{18}P/z+t^{17}B(z)+t^{16}(-z^{-1}+c+ez),\qquad
+ B(z)=b+\sum_{j=1}^5 b_jz^j.
+\]
+The marked response in shift \(k\) is
+\[
+ \A\!\left(f^k\left\{t^{12}(z^2+1)^2(a_0+a_1z)+t^{11}C(z)\right\}\right).
+\]
+The coherent inputs are \(a_0,a_1\). We ask whether a vector in
+the kernel of specified shifts must have both inputs zero.
+The number of correction columns depends on the allowed degree of \(C\).
+
+\subsection{An open stratum with six correction columns}
+
+Set \(h=1/t\), \(V=zB\), \(W=-1+cz+ez^2\), and
+\(\Phi=P+hV+h^2W\). The level equation is
+\(\Phi=\lambda zh^{18}\). Its critical points in the torus
+satisfy \(a=g=0\), where
+\[
+ a=18\Phi-h\Phi_h=\sum_{j=0}^2 A_j h^j,\qquad
+ g=z\Phi_z-\Phi=\sum_{j=0}^2 g_j h^j .
+\]
+Let \(\alpha=A_2g_1-g_2A_1\), \(\beta=A_2g_0-g_2A_0\),
+\(\gamma=A_1g_0-g_1A_0\), and
+\(R=(\beta^2-\alpha\gamma)/(z^2+1)^3\).
+The following conditions define \(S\).
+\begin{enumerate}
+\item \(b_5eB(i)B(-i)\ne0\), and \(W\) and \(V^2-4PW\) are squarefree.
+\item \(R\) is squarefree and \(z(z^2+1)W\alpha\beta\) is a unit
+in \(\mathbb C[z]/(R)\). At \(H=-\beta/\alpha\), the determinant
+\(a_z g_h-a_h g_z\) and the critical value
+\(L=\Phi(z,H)/(zH^{18})\) are units in that quotient.
+\item The elements \(1,L,\ldots,L^{15}\) form a basis of
+\(\mathbb C[z]/(R)\).
+\end{enumerate}
+
+\begin{theorem}\label{thm:fixed-boundary-stratum}
+The stratum \(S\) is a nonempty connected Zariski-open set.
+At every point of \(S\), all marked sphere responses together
+detect both coherent inputs with \(\deg C\le5\).
+The sphere-variation span contains the primitive order-\(18\)
+infinity eigenspaces. At each algebraic point of \(S\), some
+finite set of shifts detects the coherent input at all sufficiently
+large good primes \(p\equiv7\bmod18\).
+\end{theorem}
+
+The degree-\(16\) polynomial \(R\) separates the critical points by
+their \(z\)-coordinates. The conditions on the quotient algebra give
+sixteen Morse points with distinct nonzero values. For the seed
+\(B=1+z^5,\ c=e=1\), the reduction of \(R\) at \(103\) is
+irreducible and the power-basis determinant is \(33\bmod103\).
+Thus the seed critical values form one Galois orbit. The arithmetic
+attachment lemma gives the finite vanishing cycles at this seed.
+The boundary charts and local triviality transport the resulting
+infinity eigenspaces along \(S\). The limiting periods on these
+cyclic-cover eigenspaces pair nondegenerately with the two coherent
+inputs. The compactification, transport and period calculation are
+given in the supplement \emph{Coherent sphere detection on a fixed
+boundary stratum}. Its proof accounts separately for the escaping
+components.
+
+\begin{proposition}\label{prop:sharp-ninth-row}
+On \(b_1=b_2=c=e=1\), shifts \(0,\ldots,8\) detect the
+coherent component for all \(b,b_3,b_4,b_5\) when \(\deg C\le2\).
+At an algebraic point of this slice in \(S\), shifts
+\(0,\ldots,7\) miss a coherent direction.
+\end{proposition}
+
+Row zero sets the constant coherent input to zero. For \(b\ne0\),
+normalize the other one to one. The first three subsequent rows
+solve the corrections, and the next three solve \(b_3,b_4,b_5\).
+The two remaining numerators for shifts \(7,8\) have a rational
+B\'ezout identity. The first numerator has a simple root at
+\(519\bmod1009\) that satisfies the tests for \(S\). Its algebraic
+lift gives the missed direction, and the eighth shift is
+\(532\bmod1009\) on the reduced inputs. When \(b=0\), shift \(1\)
+detects the normalized direction. The same supplement gives the
+coefficient and B\'ezout checks.
+
+\subsection{The optimal window with three correction columns}
+
+\begin{theorem}\label{thm:optimal-fourteen-row}
+Over every characteristic-zero field, shifts \(0,\ldots,13\)
+detect the coherent component for this fixed top and
+degree-\((5,1)\) lower support when \(\deg C\le2\).
+For each fixed algebraic phase in the family, at every sufficiently
+large good prime \(p\equiv7\bmod18\) some unmarked moment of
+order \(m+kp\), with \(m=(13p-1)/18\) and \(0\le k\le13\),
+is nonzero. Fourteen is the least uniform initial window length
+for the formal response.
+\end{theorem}
+
+The residual calculation is in the supplement
+\emph{The optimal fourteen-row conductor-18 window}, with the
+longer calculation in \emph{The conductor-18 seventeen-row blind locus}. For the
+calculation use the top \((z^2-1)^4/z\), obtained by rotation
+with the corresponding coefficient and marker changes.
+As in Proposition~\ref{prop:sharp-ninth-row}, \(b=0\) is
+detected by shifts zero and one. On \(b\ne0\) the triangular
+elimination leaves residuals \(S_k\), starting at \(k=7\), in
+\[
+ (r,\ell,q,v,w)=(b^2,b_1/b,b_2/b,c,e).
+\]
+Here \(q\) is the third normalized coordinate, denoted \(h\)
+in that supplement. A point of the \(r\)-localized residual
+scheme gives a coherent direction with normalized coordinate one.
+
+The common-root calculation uses one norm of
+\(\sum_j T^j S_j\) in a finite free chart. On a geometric
+fibre the norm factors into the values of this polynomial at
+the fibre points, each with its scheme length. Thus the norm
+vanishes identically in \(T\) exactly when a single point
+annuls all the residuals. This also applies at nonreduced
+fibres. Individual norms can vanish using different points.
+
+For the seventeen-row calculation, the proper weighted closure
+at \(331\) gives a finite flat algebra of rank at most \(5670\).
+Before the last exclusions, both \(c\) and \(e\) would have
+poles at every place above \(331\). In particular integrality
+of either coefficient alone already suffices for seventeen-row
+detection, with arbitrary odd coefficients.
+
+For fourteen rows, an affine unit-ideal computation modulo
+\(331\) forces a hypothetical blind point to specialize to the
+weighted projective boundary. The boundary and normal-chart
+certificates still apply to the shorter prefix. They leave the
+two slope residue classes \(\ell/v=17/2,56/5\bmod331\).
+The homogeneous degree-nine row span for the longer system has
+rank \(364\) after quotienting by the initial cubic and quartic
+in \(r,q\). It contains the reduction of the ninth power of the
+homogenizer. A nonzero \(364\)-minor for the shorter prefix
+gives the same row span there, so its determinant vanishes at
+any affine common zero in the slope chart.
+
+At the central slopes \(\alpha=17/2,56/5\), the selected
+short-prefix minors have orders \(19,10\), respectively,
+both over \(\mathbb Q\) and after reduction at \(331\).
+Each determinant divided by \((s-\alpha)\) to that order is
+a unit throughout the corresponding residue disc. Therefore
+a common zero would satisfy \(s=\alpha\) exactly. Unit identities
+using only \(S_7,\ldots,S_{13}\) exclude both slices.
+The supplement gives the matrices, boundary charts and Schur
+complement checks used in the proof.
+
+For an algebraic phase, the exact characteristic-zero response
+test persists after reduction at all sufficiently large good
+primes. In the class \(p\equiv7\bmod36\) the deficit bound
+leaves at most three correction columns. The coherent input
+is nonzero. In the class \(p\equiv25\bmod36\), shift zero
+already detects it. The prime onset can depend on the phase.
+This is a statement about a selected coherent input. Ordinarity
+requires a condition on the entire Jacobian.
+
+For the lower bound on the formal window, use the slice
+\(\ell=v=0\). There the residuals in shifts \(8,10,12\)
+vanish identically. Modulo \(11\) the point \((r,q,w)=(2,8,2)\)
+annuls the primitive residuals in shifts \(7,9,11\), with
+Jacobian determinant \(7\). Their simple common zero lifts
+to an algebraic phase invisible through shift \(12\).
+The primitive residual at shift \(13\) is \(10\bmod11\)
+there. Realizing this direction as an actual Frobenius input
+would require a separate argument.
+
 \section{A block rank from moments and rigidity of a deformation}
 \label{sec:marked-block}
 
@@ -1248,6 +1423,7 @@ so the \(a\)-number, the corank of coherent Frobenius, is at
 most 32 and 91, respectively. The \(p\)-rank uses stable
 rank \cite[\S\S2.1, 2.5 and 3.1]{moonen}.
 
+\begin{samepage}
 \begin{proposition}\label{prop:rank229}
 Let \(p=229\equiv67\bmod162\), \(n=162\), \(P=(z-1)^{27}(z+1)^{28}\), and take
 a phase \(f=t^n P/z+t^{n-1}B+t^{n-2}D\) integral above \(p\).
@@ -1260,6 +1436,7 @@ determinant \(137\bmod229\). In the two-marker deformation
 \((p\A(g^8),p\A(g^{237}))\) at the base phase has
 determinant \(26\bmod229\).
 \end{proposition}
+\end{samepage}
 \begin{proof}
 The source is character 5, the target character 11, and
 \(5p-11=162\cdot7\). In the normalized \v{C}ech frames the

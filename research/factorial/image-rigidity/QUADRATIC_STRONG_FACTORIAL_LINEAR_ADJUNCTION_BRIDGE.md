@@ -101,7 +101,20 @@ Apply this first to dense \(g\), using (5). Any three-window counterexample lift
 
 Over an algebraically closed \(K\), both choices of roots stay in \(K\). Under universal quantification over all characteristic-zero fields, a lift in a finite algebraic extension is enough to disprove the corresponding universal assertion. This proves that formulation without assuming that an arbitrary large coefficient field embeds in \(\mathbb C\).
 
-## 4. Exact partial binary and ternary consequences
+## 4. Complete binary and ternary consequences
+
+**Corollary 2.** Over every characteristic-zero field, every \(F\) in (1)
+has a nonzero moment in every positive block of length four, and every
+\(H\) in (1) has one in every positive block of length five. The
+[dense univariate quadratic theorem](DENSE_UNIVARIATE_QUADRATIC_STRONG_FACTORIAL.md#5-the-dense-univariate-quadratic-conclusion)
+gives the three-window property for \(g\) over that field. Applying
+(2) once or twice gives the claimed windows for \(F\) and \(H\).
+
+These results allow arbitrary nonzero coefficients in (1). General binary
+quadratics, including six-term supports, and unrestricted two- and
+three-variable Strong Factorial remain separate problems.
+
+### Earlier resonance criterion
 
 The separately proved dense univariate resonance criterion gives an explicit set \(\mathcal R\) of possible ratios for three-zero blocks: if such a block starts at \(n\), then
 \[
@@ -118,7 +131,9 @@ Equations (2)--(3) now imply, without a converse for a specified coefficient cho
    &\Longrightarrow -c/b=m+4\in\mathcal R.
  \end{array}                                                 \tag{11}
 \]
-Consequently every phase in either restricted class whose ratio \(-c/b\) is outside that explicit set satisfies its complete support-length property. The master criterion first leaves \(q=91\), so its corresponding first unexcluded starts are \(88\) for \(F\) and \(87\) for \(H\). These are criterion-relative limits, not examples of vanishing; separate stronger Newton arguments can remove additional fixed ratios.
+Consequently every phase in either restricted class whose ratio \(-c/b\) is outside that explicit set satisfies its complete support-length property. The earlier criterion first left \(q=91\), corresponding to starts \(88\)
+for \(F\) and \(87\) for \(H\). Corollary 2 covers those starts and every
+other positive start.
 
 The exact equivalence in Theorem 1 concerns universal assertions for the whole three classes, not an assertion that every particular \(d\), or every particular pair \(d,e\), preserves a counterexample. Its reverse constructs suitable nonzero coefficients in an algebraic closure. No actual quadratic counterexample, full binary or ternary Strong Factorial theorem, or implication from ordinary Factorial is asserted.
 

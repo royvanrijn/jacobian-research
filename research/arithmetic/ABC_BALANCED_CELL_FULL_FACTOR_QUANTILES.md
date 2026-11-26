@@ -297,6 +297,12 @@ arbitrarily small normalized occupancy exponent.
 Use an allowance smaller than \(u-t_1-t_2\).
 [Unit progression counts at a large small-radical step (TC4)](ABC_TARGET_PACKET_CRT_MOMENTS.md#unit-progression-cells-with-a-large-small-radical-step)
 
+The multi-anchor inequality can retain numerical weight
+on the fixed prime pool, add a query quantile, and price
+the marked divisor through the actual residue classes.
+Its finite-copy and limiting forms are in PQ1–PQ5.
+[Full powers on the prescribed pool](ABC_RECOVERED_POOL_QUANTILE_STARS.md#pq1-fixed-star-hypotheses-and-the-quantile-test)
+
 ## Coverage of the numerical test
 
 For one unequal-height consequence take \(u=1/6\),
