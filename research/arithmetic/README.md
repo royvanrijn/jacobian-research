@@ -1441,6 +1441,50 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A primitive two-cap matching forces the full adaptive coefficient price | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
 | Exact bound for translates of the Engelsma 447-tuple | Internal result | proved | [Source](SECOND_HARDY_LITTLEWOOD.md) |
 | Prime cluster deletion at lower-order correlation precision | Internal result | proved | [Source](SECOND_HARDY_LITTLEWOOD.md) |
+| Relative coefficient covers replace exact separation in a deep third-divisor chart | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Bounded-denominator regrouping releases comparable unequal powered orders | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| A relative-height cover can pay for shared radical mass directly | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Weights of two relative coefficients force a common support price | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Fine-grid centered coefficients have maximal typical relative height at balance | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Two capped operands force full numerical relative-height cover price | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| All selected original lifts price short relative pairs in a common-query star | Internal result | proved | [Source](ABC_ANCHOR_STAR_COEFFICIENT_QUANTILES.md) |
+| A conditional coefficient cover cuts dense genuine residue-cell stars | Internal result | proved | [Source](ABC_ANCHOR_STAR_COEFFICIENT_QUANTILES.md) |
+| A product-of-heights estimate counts exact outputs in a real monomial strip | Internal result | proved | [Source](ABC_FIXED_FIBRE_RELATIVE_ODDS_PAIRS.md) |
+| A short original summand eliminates the divisor charge in relative covers | Internal result | proved | [Source](ABC_FIXED_FIBRE_RELATIVE_ODDS_PAIRS.md) |
+| The exact cross ratio recovers all relative-close row pairs on a fixed fibre | Internal result | proved | [Source](ABC_FIXED_FIBRE_RELATIVE_ODDS_PAIRS.md) |
+| A reduced odds quotient recovers the common moving target at divisor cost | Internal result | proved | [Source](ABC_FIXED_FIBRE_RELATIVE_ODDS_PAIRS.md) |
+| The switched residue cell has an amplified modulus and exact pair recovery | Internal result | proved | [Source](ABC_FIXED_FIBRE_RELATIVE_ODDS_PAIRS.md) |
+| Exact common powers have a uniform adaptive saving in either sign orientation | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
+| All rationally reducible weighted binomials give a strict three-cap sector saving | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
+| Two capped operands allow costly fresh outputs in any fixed cyclotomic catalogue | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
+| One full divisor gives a priced count for close free odds across targets | Internal result | proved | [Source](ABC_CROSS_TARGET_COMPLEMENTARY_WORDS.md) |
+| A deep lock forces a radical loss in close pairs of bounded free valuations | Internal result | proved | [Source](ABC_CROSS_TARGET_COMPLEMENTARY_WORDS.md) |
+| Two actual divisors allow complementary recovery across distinct targets | Internal result | proved | [Source](ABC_CROSS_TARGET_COMPLEMENTARY_WORDS.md) |
+| Weighted complementary words save by reserving a shared prime packet | Internal result | proved | [Source](ABC_CROSS_TARGET_COMPLEMENTARY_WORDS.md) |
+| Elliptic completion saves on the largest three-row radical packet | Internal result | proved | [Source](ABC_CROSS_TARGET_COMPLEMENTARY_WORDS.md) |
+| The ratio of two target radicals completes an exact primitive odds quotient | Internal result | proved | [Source](ABC_REDUCED_TARGET_RADICAL_ODDS.md) |
+| A target norm and the exact primitive odds recover a least-repaired pair | Internal result | proved | [Source](ABC_REDUCED_TARGET_RADICAL_ODDS.md) |
+| Short least-repair ratio windows complete primitive odds by rational spacing | Internal result | proved | [Source](ABC_REDUCED_TARGET_RADICAL_ODDS.md) |
+| Typical normalized least-repaired differences have large fresh radical | Internal result | proved | [Source](ABC_REDUCED_TARGET_RADICAL_ODDS.md) |
+| A deep residue list costs the square root of its relative product expansion | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| Balanced absolute residue lists have maximal growth at every fixed word order | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| Joint quadratic ray moments charge shared target valuation layers at half price | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| Joint ray moments give a priced pair criterion in actual residue blocks | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| Actual fixed-letter fibres charge the cost of target and parity overlap | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| Fixed valuation ratios can merge target primes and aligned fields have an exact cost | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| A true target cap and one operand cap allow full normalized modular word growth | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| Joint valuation slots force diagonal modular energy in balanced cells | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| Two original modular products recover a primitive row pair by a resultant | Internal result | proved | [Source](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md) |
+| Original complementary odds count normalized reciprocal sums at the next digit | Internal result | proved | [Source](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md) |
+| Rotating the target and numerator charges repeated primes across roles | Internal result | proved | [Source](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md) |
+| Two available locks transfer exact complementary word moments at fixed precision | Internal result | proved | [Source](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md) |
+| A tight product of full locks turns third-register differences into a strict sector | Internal result | proved | [Source](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md) |
+| A real cross phase uses one squareclass and only the common target radical | Internal result | proved | [Source](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md) |
+| A quotient of the two real phases cancels common targets and the absolute residue | Internal result | proved | [Source](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md) |
+| Two integer cross phases price common-field pairs without a field dictionary | Internal result | proved | [Source](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md) |
+| A projective ratio of the two actual shifts has a subpower mixed-kernel fibre | Internal result | proved | [Source](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md) |
+| Equal-target common-field pairs yield two auxiliary primitive abc triples | Internal result | proved | [Source](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md) |
+| Diffuse two-cap matchings retain maximal word spread under adaptive locks | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
 
 **Computed obligations:** 110 unresolved; 19 resolved within their exact scope.
 

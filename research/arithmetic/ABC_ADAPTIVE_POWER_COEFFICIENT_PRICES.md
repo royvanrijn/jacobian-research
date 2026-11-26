@@ -424,8 +424,7 @@ and the same support condition on \(Q,x,y\).
 Take \(S\) at the actual pair of orders and require
 the light cover for original \(Q\) with diameter
 \(H(Q_1/Q_2)\le X^{c'}\) for a sufficiently small
-fixed \(c'>0\). No common divisor of the literal
-orders is required.
+fixed \(c'>0\). This includes coprime literal orders.
 
 Fix a large integer \(M_0\). The pigeonhole
 principle applied to the fractional parts of
@@ -513,7 +512,7 @@ with the divisor capture included. This uses
 the actual supports and all three original
 radical caps. [Zero-price polynomial-height prime pools (EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
 
-### Weighted overlap and distances at balanced saturation
+### Weighted overlap of two coefficient ratios
 
 There is a sharper support charge when coefficient
 valuations satisfy \(|v_p(Q)|\le B k\) for fixed \(B>0\).
@@ -540,9 +539,11 @@ then a fixed polynomial-height center captures
 at least \((A-c)_+/B\) outside the projected primes.
 That captured mass can be added to the projected
 and actual third-divisor masses in the zero-price
-EB5 count. This argument does not need a third
-divisor to exist and is independent of the
+EB5 count. This argument also applies with the
+center record alone, independently of the
 congruence height threshold in APC4.
+
+### Fine-grid distances at balanced saturation
 
 For a consequence at the balanced endpoint, use
 a near-saturating sequence of genuine rows with
@@ -570,13 +571,10 @@ prime value or charges a record of such values.
 
 Choose common fine-grid orders \(k\in[K,2K)\)
 with \(K\asymp L^{-\alpha_0}\), \(1/2<\alpha_0<1\).
-For each row define its observed \(Q\) as the
-signed centered remainder ratio using just
-those selected prime slots on the two roles.
-In this paragraph \(Q\) is an observable
-rather than the complete coefficient in
-an exact power representation. It is
-supported on original letters and has
+For each row let \(Q\) be its centered signed
+remainder ratio on the selected slots of the
+two roles. This observable is supported on the
+original letters and has
 \(|v_p(Q)|\le k/2\). The two signed moment
 calculations in MPC2 give
 \[
@@ -595,35 +593,97 @@ orders these conclusions hold on all but a
 proportion tending to zero of the rows.
 [Centered remainder moments on nonatomic bands (MPC2)](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md#centred-remainder-benchmark-on-diffuse-spectra)
 
-Fix \(0<\delta<M/4\). At such an order and
-sufficiently late fixed budget, call a row good
-if both displayed conclusions hold with
-tolerance \(\delta/4\) or smaller. For any
-fixed good reference row, (APC5) with \(B=1/2\)
-implies that other good rows with
+For the quantitative bound keep the full empirical
+distribution of the normalized absolute remainders.
+The MPC2 second-moment proof also applies to the
+bounded-variation indicators
+\(\mathbf 1_{\{\|e/k\|\le v\}}\) at finitely many
+fixed \(v\in[0,1/2]\). Their circle means are
+\(2v\). Choose a finite mesh in \(v\) before
+the outer cutoff, then use monotonicity between
+mesh points. Thus for most \(k\) and most rows
+the distribution function of the selected raw
+mass on normalized magnitudes at most \(v\)
+is uniformly close to \(2Mv\). To obtain
+uniform \(o(1)\) error choose the mesh to
+refine sufficiently slowly with the budgets,
+using the same stabilization and averaging.
+Call rows with these estimates and the signed
+height estimates good at the given order.
+
+Fix \(0\le c<M/4\) and fix an actual good center
+\(Q_0\). In either row delete the selected primes
+that belong to both coefficient supports,
+of shared raw radical mass \(I\). Each remaining
+measure has mass at least \(M-I-o(1)\). The two
+remaining signed coefficient contributions to
+\(\log_X(\operatorname{num}(Q/Q_0)
+          \operatorname{den}(Q/Q_0))\) are disjoint.
+A submeasure of raw mass \(v\) in the uniform
+law of density \(2M\) on \([0,1/2]\) has first
+moment at least \(v^2/(4M)\), by taking its mass
+from the smallest magnitudes. With a uniform
+distribution-function error \(o(1)\), this
+lower bound has error \(o(1)\) uniformly for
+\(0\le v\le M\): integrate the lower tails
+\((v-2Mt-o(1))_+\) over \(0\le t\le1/2\).
+The two rows therefore contribute total
+absolute weight at least
+\((M-I)^2/(2M)-o(1)\) in units of \(kL\).
+Since \(H(Q/Q_0)\le X^{c kL}\) allows total
+absolute weight at most \(2c\), this proves
 \[
-                 \log_X H(Q/Q_0)\le (M/4-\delta) k L
+       I\ge M-2\sqrt{cM}-o(1).
 \]
-share at least \(3\delta/2\) raw radical mass
-with that reference coefficient support.
-Each reference support has polynomial height
-and is fixed in the count, even if it was
-chosen from the family. EB5 on the original
-three caps bounds the number of these good
-neighbors uniformly by
-\(O(n^{1/3-\delta/3}X^\varepsilon)\).
-On a near-saturating family this is a power-small
-fraction at all sufficiently late budgets,
-after taking \(\varepsilon/L\) small. For
-two good rows the elementary height product
-bound also gives
-\(\log_X H(Q/Q_0)\le(M/4+o(1))kL\) as the
-tolerance decreases. Thus the normalized
-relative heights of typical pairs tend to
-\(M/4\), the sum of the two typical individual
-height coefficients. For every fixed deficit
-the bound for pairs of good rows is quantitative
-and loses a fixed power.
+In particular (APC5) already gives \(I\ge
+2(M/4-c)-o(1)\) using only the signed means.
+The distribution improves that estimate at
+the smaller radii.
+
+**APC6.** For any fixed counting allowance \(\eta>0\)
+and sufficiently late fixed budgets, uniformly
+in any such good reference \(Q_0\), the number
+of good original rows with
+\(H(Q/Q_0)\le X^{c kL}\) is at most
+\[
+ O\left(n^{(1-M+2\sqrt{cM})/3+\eta}X^\varepsilon\right),
+                  \qquad 0\le c<M/4.
+ \tag{APC6}
+\]
+Prescribe the center's polynomial-height support
+in EB5 and use the shared raw mass just proved.
+The original three caps remain in the count.
+In particular for any fixed \(0<\delta<M/4\),
+take \(c=M/4-\delta\) and choose the allowance
+small enough to obtain \(O(n^{1/3-\delta/3}
+X^\varepsilon)\). For a near-saturating family
+the exceptional fraction among pairs of good
+rows is thus power-small. The height product
+bound in the other direction gives normalized
+relative height \(M/4+o(1)\) for the remaining
+pairs of good rows.
+
+In fact the reduced numerator and denominator
+each attain this scale on typical pairs. For
+any prescribed reference support, EB5 also
+makes overlap of positive fixed raw mass
+power-small on a saturating family. Centered
+rounding caps the magnitude of each prime
+valuation by \(k/2\), so the canceled
+numerator–denominator factor of \(Q/Q_0\)
+has numerical height exponent at most \(I kL/2\).
+Each unreduced side has exponent
+\((M/4+o(1))kL\) by the signed moment calculation.
+The same cancellation argument applies to
+any fixed-length product of independently
+chosen good coefficients, each raised to
+a fixed signed integer power. A union bound
+over the finitely many pairs makes the
+total shared support negligible on typical
+tuples. For fixed exponents \(a_i\), both
+unreduced sides, and hence both reduced
+sides, have normalized exponent
+\((M/8)\sum_i|a_i|+o(1)\) in units of \(kL\).
 
 Balance and the one-third diffusion theorem
 give total nonatomic mass at least \(1/2\).
@@ -637,11 +697,8 @@ or existence of full divisors in a cell.
 It shows why the individual numerical
 height bound from fine-grid centering
 does not by itself provide a low-cost
-relative cluster. The result concerns the
-actual observable on the selected slots.
-It does not assert the same pair law for
-the full coefficients before removing the
-atomic parts. [One-third balance and diffusion](ABC_WIDE_COFACTOR_CONGRUENCES.md#balance-and-diffusion-at-the-one-third-endpoint)
+relative cluster. The pair law concerns coefficients on the selected slots
+after removing the atomic parts. [One-third balance and diffusion](ABC_WIDE_COFACTOR_CONGRUENCES.md#necessary-conditions-at-normalized-exponent-13)
 
 ## Full coefficient price on a primitive two-cap matching
 
@@ -865,9 +922,22 @@ slot-fibre bound allows \(O_m(\log X)\) rows with
 the prescribed primes, since their total cost
 exceeds \(d=\beta J\). Summing over subsets and
 groups proves the bound. Each source row in this
-construction has \(\operatorname{rad}(T)>n^d\).
-The numerical cover obstruction therefore has
-the same two-cap scope as APC3.
+construction may also be required to have
+\(\operatorname{rad}(T)>n^{d+\vartheta}\) for any fixed
+\(0<\vartheta<4/75=d-7/25\). Indeed its candidate
+bound for low-radical targets becomes
+\(n^{d+\vartheta+t_m+o_X(1)}\). After sampling with
+the stated probability the expected number of
+these edges is \(n^{\vartheta+t_m+o_X(1)}\), below
+the expected full sample exponent by a fixed
+margin at large \(m\), since \(t_m\to7/25\).
+Delete these edges together with the collisions.
+Every simultaneous slot-fibre bound survives
+deletion, and the sample still has exponent \(d\).
+As the two original operand radicals each have
+size \(n^{d+o_X(1)}\), this version of the
+obstruction exceeds the original total radical
+cap by a fixed power. It retains both operand caps.
 
 ## The extraction obligation with all three original caps
 
@@ -910,7 +980,7 @@ Comparable unequal orders are also permitted.
 This weaker extraction still needs genuine
 three-cap arithmetic. The matching obstruction
 forces the full small-radius cover price with
-only two caps, and APC5 shows what overlaps a
+only two caps, and APC5–APC6 show what overlaps a
 low-radius cover would impose on the diffuse
 parts of actual near-saturating families. If the
 records split into finitely many regimes before

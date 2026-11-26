@@ -106,10 +106,45 @@ unconditional adjacent-window assertion for the weighted forcing;
 it is not a counterexample to Strong Factorial and does not settle
 the actual general four-moment compatibility problem.
 
-A remaining precise target is to exclude the simultaneous full
-moment block together with its compatible face cancellations (8)
-for coefficients outside the three planes in Theorem 1. No such
-general exclusion is proved here.
+The [backward critical-point proof](BINARY_EVEN_QUADRATIC_CRITICAL_BOUNDARY_WINDOWS.md)
+excludes the full four-zero block also on \(a+c=b\) and
+\(4ac=b^2\), and gives a six-window for arbitrary coefficients.
+The [coupled valuation proof](BINARY_EVEN_QUADRATIC_COUPLED_TWO_ADIC_SECTORS.md)
+uses the exact interior moments together with (8) to exclude
+additional \(2\)-adic sectors. Outside these exclusions the
+remaining target is the simultaneous interior and boundary system.
+
+The [prime-terminal proof](BINARY_EVEN_QUADRATIC_PRIME_TERMINAL_FOUR_WINDOW.md)
+and [prime-penultimate proof](BINARY_EVEN_QUADRATIC_PRIME_PENULTIMATE_FOUR_WINDOW.md)
+give the four-window whenever either of its last two indices
+is a prime at least five. The [prime-front reduction](BINARY_EVEN_QUADRATIC_PRIME_FRONT_REDUCTION.md)
+gives necessary residue conditions when a prime at least seven
+is in either of the other two positions, and the
+[negative rank-one lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_NEGATIVE_RANK_LIFT.md)
+and the
+[diagonal lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_DIAGONAL_LIFT.md)
+exclude two of its three leading residues. The remaining
+residue is governed by the position-specific finite-field tests.
+The [composite prime-block transfer](BINARY_EVEN_QUADRATIC_COMPOSITE_PRIME_BLOCK_TRANSFER.md)
+reduces windows containing a large-prime multiple and its next
+index to a uniformly bounded set of leading residues.
+The [support deletion algebra](FACTORIAL_SUPPORT_DELETION_FINITE_FREE_MOMENTS.md)
+represents the first three vanishing moments at any start
+by a finite free algebra and tests the fourth by a multiplication
+determinant. The [primitive homogeneous resultant](BINARY_QUADRATIC_PRIMITIVE_HOMOGENEOUS_RESULTANT.md)
+identifies its normalized bad primes explicitly at every start.
+The [deep dyadic exclusions](BINARY_EVEN_QUADRATIC_DEEP_BIT_INTERFERENCE.md)
+and [mixed borrow criterion](BINARY_EVEN_QUADRATIC_DEEP_MIXED_BORROW_GATE.md)
+give additional necessary conditions at composite terminals.
+The [anchored borrow theorem](BINARY_EVEN_QUADRATIC_ANCHORED_BORROW.md)
+strengthens the latter condition by simultaneous constraints
+from up to two valuation anchors. The
+[uniform endpoints](BINARY_EVEN_QUADRATIC_UNIFORM_ENDPOINTS.md)
+restrict all equal-axis reciprocal-dyadic endpoints when
+both scaled axis residues differ from one. The
+[close-axis endpoint theorem](BINARY_EVEN_QUADRATIC_CLOSE_AXIS_ENDPOINT.md)
+adds exclusions when both scaled residues equal one
+at a terminal divisible by twice the dyadic scale.
 
 ## 5. Scope
 

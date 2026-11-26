@@ -42,12 +42,13 @@ homogeneous recurrence at i=1 is used.
 
 **Corollary 2 (all-constant three-window).** The universal no-three-forcing
 statement extends to every z, including z=0. For z!=0 it is proved in
-Corollary5 of [the direct three-window proof](QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md), together with the already
-proved global residual necessity; at z=0 Theorem1 is stronger.
+Corollary5 of [the direct three-window proof](QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md), whose global proof combines the native
+cubic valuation alternatives and the three local valuation branches;
+at z=0 Theorem1 is stronger.
 
 The exact direct source is
 [the direct three-window proof](QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md),
-SHA256 e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed.
+SHA256 2572d6e869692ab8afe2c8b9783209fdf5170a7e24421194c571a8a8c990937a.
 
 ## 1. Symmetric zero-constant moments
 

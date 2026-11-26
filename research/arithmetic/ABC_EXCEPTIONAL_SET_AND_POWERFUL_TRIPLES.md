@@ -10841,19 +10841,39 @@ roots modulo a sufficiently large part of the divisor. A
 fine-grid averaging calculation quantifies the numerical
 coefficient price on a diffuse spectrum. It does not force
 the coefficient width needed at the same order and modulus.
-An alternative count works when a cheap catalogue of prime
-pools separates the actual canonical coefficient ratios.
-Balancing the two pool branches gives the exponent
-\(b_0+[a+(1-a)\mu]/(1+2a)\), where \(\mu\) is the
-third-divisor price. A primitive matching with two original
-radical caps forces a full coefficient price even with adaptive
-orders. An extraction with row loss smaller than the
-available coefficient and divisor saving would give the
-unrestricted gain. The open extraction uses all three
-radical caps.
-[Quantified extraction obligation](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#the-extraction-obligation-with-all-three-original-caps)
-[Moving coefficient count and the centered benchmark (MPC1–MPC2)](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md)
-· [Separating pools and the matching obstruction (APC1–APC3)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md)
+In the separating-pool count, the pool need only lead
+to few small relative-height classes after the actual
+third divisor and projected valuation record are fixed.
+A weighted monomial count then handles the coefficients
+inside each class. If \(\mu\) is the divisor price and
+\(b_1\) the conditional cover price, put \(u=\mu+b_1\).
+The optimized exponent is \(b_0+[a+(1-a)u]/(1+2a)\).
+For high-depth divisors this preserves the separating
+exponent when \(b_1=0\), and also works with comparable
+unequal orders by regrouping their exponents.
+[Conditional relative-height covers (APC4)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#price-of-a-cover-by-small-relative-coefficient-heights)
+· [Moving coefficient count and the centered benchmark (MPC1–MPC2)](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md)
+
+A relative-height cover in a true near-saturating
+family must respect arithmetic support overlap.
+Remove atomic slots from two stabilized roles and
+let \(M\) be their combined nonatomic mass. At
+typical fine-grid orders the retained centered
+coefficients have generic relative height exponent
+\(M/4\) in units of \(kL\). For a fixed reference,
+neighborhoods of exponent \(c<M/4\) cost at most
+\((1-M+2\sqrt{cM})/3\) in base \(n\), up to a count
+allowance. The two most diffuse roles have \(M\ge1/3\)
+at every balanced limiting profile. The arithmetic
+matching construction with two capped operands
+still needs the full coefficient cover price at
+small radii. A proof of the unrestricted saving
+requires a conditional extraction that beats these
+constraints and loses less in retained rows than it
+saves in record price.
+[Fine-grid relative distances (APC5–APC6)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#fine-grid-distances-at-balanced-saturation)
+· [Numerical cover obstruction](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#numerical-relative-height-covers-on-the-same-matching)
+· [Quantified three-cap extraction obligation](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#the-extraction-obligation-with-all-three-original-caps)
 
 Each nonlinear rational factor of a fixed-order weighted
 binomial pays for the original primitive roots at its own
@@ -10880,6 +10900,177 @@ any near-saturating family across the entire dictionary range.
 An upper bound for that fresh radical on enough genuine rows
 would give a saving without a valuation-grid hypothesis.
 [Fresh cyclotomic radical counts (BFR3–BFR4)](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md#fresh-cyclotomic-radicals-on-original-rows)
+
+## Fixed-letter pairs and independently supported anchor stars
+
+When two rows share a fixed complete letter, the
+relative quotient of their complete free odds is
+either in a deep unit congruence or in a small real
+window. A two-base count bounds the exact quotient
+when the full power coefficient ratios are numerically
+close. The split cross-ratio identity then recovers
+both rows at subpower cost. This gives a subpower
+bound on all close pairs per fixed letter, including
+short fixed summands. The reduced quotient also recovers
+a moving common target at divisor cost. A prescribed deep
+divisor shared across targets therefore replaces the whole
+complete-target dictionary in the count. In an actual switched residue
+cell the same recovery applies to pairs of queries
+after fixing two anchors. The chart divisor and the
+anchor difference together give a modulus containing
+the square of the original divisor. The normalized
+operand gcds can supply additional usable powers.
+[Fixed-letter and switched-cell pair recovery (FRP1–FRP5)](ABC_FIXED_FIBRE_RELATIVE_ODDS_PAIRS.md)
+
+A complementary bound uses centered coefficients on
+selected diffuse slots on any fixed list of complete
+anchors. After stripping the primes of anchor
+differences, the computed values have disjoint
+supports at each query. Short relative-height pairs
+then constrain the residual radical mass in *both*
+directions on each original fibre. With \(h\)
+selected roles of residual raw cap at most \(R\),
+the power in the per-query pair count is at most
+\(2\sqrt{Rc/h}\) for diameter exponent \(c\) in
+units of \(kL\). The separate raw and nonatomic
+caps give the sharper profile-dependent formula.
+This establishes a codegree saving criterion at
+every fixed positive multiplicity when the actual
+conditional cover price is sufficiently small.
+The fine-grid observable can omit atomic slots in
+this count. Exact two-base recovery instead needs
+the entire quotient or a separate bound absorbing
+the omitted factors.
+[Common-query star quantiles (ACQ1–ACQ4)](ABC_ANCHOR_STAR_COEFFICIENT_QUANTILES.md)
+
+Exact common powers have a uniform strict saving
+for every adaptive common order, on either side
+of the equation. The same-side quadratic estimate
+covers orders that are powers of two. Capelli's criterion reduces any rationally reducible
+weighted pure binomial on two primitive letters to
+those sectors or the fixed Sophie Germain form
+\(x^4+4y^4\). This gives a strict saving with arbitrary
+coefficient dictionaries on the entire reducible
+sector. A separate two-cap construction shows that
+every fixed collection of fresh cyclotomic outputs
+can have large radical even on an actual diffuse
+complete-letter matching. Its third original
+radical violates the small-budget cap by a growing
+margin.
+[Adaptive and reducible binomial sectors](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md#exact-power-sectors-with-arbitrary-common-order)
+· [Fresh-output obstruction](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md#a-two-cap-obstruction-to-any-fixed-fresh-output-catalogue)
+
+## Complementary words and reduced least-repaired target ratios
+
+In the occurrence sector, two fixed positive-depth divisors on
+different original roles give two congruences for the complementary
+quotients of any pair. If both quotients have full narrow-root and
+short relative coefficient representations, the exact outputs
+recover the two rows even when their complete targets differ.
+The count on that chart is \(O(n^\eta X^\varepsilon)\) for any
+fixed \(\eta>0\) under the stated width conditions. One divisor
+also gives a saving for close pairs whose free scaled valuations
+are bounded, because the nontrivial reduced odds quotient must
+carry a fixed amount of radical. Both arguments impose all three
+original caps. The missing extraction is a power-large supply of
+jointly close pairs on affordable original two-divisor charts.
+[Cross-target complementary quotients (CTO1–CTO2)](ABC_CROSS_TARGET_COMPLEMENTARY_WORDS.md#two-complementary-locks-recover-all-eligible-pairs)
+
+At every fixed order, exact two-coordinate signed product fibres
+have a strict saving over their half-length radical price.
+Outside the prescribed target support, primes occurring on just
+two rows must occur on the same role with opposite signs.
+Reserving the largest packet for exact completion gives the
+saving. For equal positive weights the first possible packet
+uses three rows and the three-row elliptic count strengthens
+the bound.
+[Signed complementary word counts (SWP1–SWP2)](ABC_CROSS_TARGET_COMPLEMENTARY_WORDS.md#exact-signed-complementary-words-with-all-three-caps)
+
+One exact primitive odds quotient and the reduced ratio of the
+two target radicals recover the pair at height-subpower cost.
+A norm record on the target radicals or a short numerical
+window on the actual least-repaired ratio can give the second
+record. There is an obstruction to using cheap whole-difference
+records on typical pairs. If a family of exponent \(d\) has
+per-target-radical multiplicity exponent at most \(u<d\), a
+repair order divisible by a sufficiently composite fixed integer
+forces arbitrarily large outside radical on the normalized
+repair differences of almost all neighbors of each reference
+row. The argument is uniform over prescribed polynomial-height
+reference pools. For actual least repairs it suffices to fix a
+common wild tail, with a cost that can be made arbitrarily small.
+The obstruction holds throughout the balanced multiplicity range.
+[Repair ratio recovery and fresh radical (RRP1–RRP4)](ABC_REDUCED_TARGET_RADICAL_ODDS.md)
+
+## Expansion of occupied residues and joint ray counts
+
+For a deep absolute modulus, an occupied residue set \(S\)
+can be charged by the square root of \(|S\Theta|/|\Theta|\)
+for any prescribed auxiliary set with product of size at most
+a fixed power of \(n\). The relative expansion majorant fits
+the same amplified character moments as the absolute residue
+count. On a balanced chart of dictionary exponent \(\alpha\)
+this forces near-maximal expansion against every such auxiliary
+set for each full-size occupied list. All fixed-length signed
+modular words of those lists therefore have full image exponent
+\(m(2\alpha-1/3)\). Joint valuation slots also bound every fixed
+product moment at the diagonal exponent and bound the image of
+arbitrary selected tuples. This obstructs residue compression
+throughout the positive-surplus range,
+including occurrence. The minimum dictionary has surplus zero.
+[Relative expansion (RX1–RX2)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#every-large-balanced-residue-list-has-maximal-finite-order-growth)
+· [Diagonal modular energy (RX7)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#signed-residue-words-and-diagonal-energy-on-the-cells)
+
+For prescribed quadratic parity fields, a common target lock
+also couples occupied residues of several actual rows in a
+joint ray quotient. Each target prime of equal positive
+order is priced once across the rows, and its radical price
+is halved. The comparison of short ideal generators uses
+the two different quadratic fields in their compositum.
+Both the normalized ratio and the actual absolute residue
+versions retain all original caps. In a composite packet
+block the resulting gain can come from a smaller joint
+field catalogue, from equal-order target overlap, or from
+target primes in another row's field kernel. The bound
+charges the actual price of finding those pairs, and
+at the independent field count and saturated raw
+caps, the cost of extracting any single-direction
+overlap exhausts that ray saving. The estimates
+then require overlaps in both directions or an
+improvement in the actual joint field price.
+[Joint target ray count and block criterion (RX3–RX5)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#joint-target-ray-groups-and-shared-radical-prices)
+
+## Joint normalized modular records and cross phases
+
+Two products of original letters give the monic quadratic of
+the normalized residues on each full-divisor lock. The resultant
+of two matching such polynomials amplifies the modulus dividing the
+cross-determinant product. At precision two, total numerical lock
+weight strictly above one recovers a complete unordered pair.
+At any fixed positive lock weight, sufficiently fine precision
+also recovers exact complementary products. The normalized word
+sieve can rotate through the three cap orientations and charge
+prime overlap across different original roles. A tight product
+of full locks also limits the actual integer shift dictionary,
+giving a strict sector at positive multiplicity when the third
+residue register has sufficiently small additive difference set.
+[Normalized records and locked shifts (NJ1–NJ5)](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md)
+
+For a pair in distinct parity fields, an integral cross phase
+uses only their symmetric-difference squareclass. A real quadratic
+ray count charges the common target radical and one reduced
+shift at half price, with an explicit extra charge on repeated
+operand primes. A quotient of the two cross phases cancels the
+common target factor and the unknown absolute residue, leaving
+a half charge on the two reduced shift radicals and their
+exceptional overlaps. At a common parity field and an equal
+odd target, the two cross phases instead give two genuine
+primitive abc rows. Their square targets partition the original
+target prime powers. Their operand powers come from the two
+actual reduced shifts. This transfers both exceptional-set
+and high-fullness estimates to the pair when those shift
+records are affordable in the original family.
+[Cross-phase pair counts and auxiliary triples (CP1–CP5)](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md)
 
 ## The unrestricted small-budget obligation
 

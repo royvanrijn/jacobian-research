@@ -226,6 +226,15 @@ combination in each row, with the original radical cap.
 The argument gives no arithmetic bound on the absolute
 density of an individual cell.
 
+The complete residue lists also have a multiplicative
+restriction. At \(s>0\), every retained list of size
+\(n^{s-o(1)}\) grows by \(n^{s-o(1)}\) against every
+auxiliary list whose product has polynomial size in \(n\).
+The same is true after any fixed nonzero pointwise
+power. This follows from charging the original complete
+integers by a relative expansion factor in (RB2).
+[Relative expansion and bounded products (RX1–RX2)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#every-large-balanced-residue-list-has-maximal-finite-order-growth)
+
 ## Conditional entropy identities and three registers
 
 Use the uniform law on the cheap chart. All entropy

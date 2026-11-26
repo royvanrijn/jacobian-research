@@ -1967,6 +1967,44 @@ The
 realizes all the linked odd-corner divisor conditions on
 coprime ordinary profiles at each prescribed limiting strength.
 
+The [height-capped unit interpolation theorem](MULTIVARIATE_HEIGHT_CAPPED_NATIVE_UNIT_INTERPOLATION.md)
+works at an actual moving prime and to arbitrary prime-power
+depth with a bounded row count. It realizes incompatible or
+compatible remainders at a chosen full native modulus while
+preserving both valuation arrays and exponent envelopes.
+The
+[joint native interpolation theorem](MULTIVARIATE_NONDEGENERATE_JOINT_ODD_ANCHOR_RESIDUES.md)
+can make both selected linked moduli and the large-prime parts
+of the other anchors pass simultaneously, with nonzero unmarked
+leading coefficients and the original valuation arrays preserved.
+The bounded small-prime parts of the other anchors are separate.
+The [joint shape reconstruction](MULTIVARIATE_JOINT_NATIVE_SHAPE_RECONSTRUCTION.md)
+combines compatible residues with a divisor bound and a real
+interval for the same rational factor shape.
+The [denominator-prime congruences](MULTIVARIATE_DENOMINATOR_PRIME_SHAPE_CONGRUENCES.md)
+also constrain the scaled shape at split Newton branches
+with calibrated unit residues. The
+[grouped shape congruences](MULTIVARIATE_GROUPED_SHAPE_CONGRUENCES.md)
+extend this to higher common degrees with coefficient-specific
+denominator bounds. The
+[shared residual block lift](MULTIVARIATE_SHARED_RESIDUAL_BLOCK_LIFTING.md)
+recovers the needed digits when the selected groups take whole
+coprime blocks of the shared residual gcd, including a squarefree
+shared residual gcd. The
+[stable Smith-width test](MULTIVARIATE_SMITH_PLATEAU_FACTOR_RESIDUES.md)
+extracts a canonical higher-precision factor residue even for
+partial repeated blocks when the truncated widths are stable.
+These tests use the original factorial arrays.
+The [Gaussian log-radius contraction](MULTIVARIATE_GAUSSIAN_RADIAL_CONTRACTION.md)
+gives a complementary center exclusion with arbitrary diffuse
+tails, including asymmetric fully shared cores and multiple
+reference roots. The
+[transverse tangent attainment theorem](MULTIVARIATE_TRANSVERSE_CONTACT_TANGENT_ATTAINABILITY.md)
+computes the exact first-order region of strength and bias drift
+at a simple transverse interior contact. Every point is realized
+by real-height rows and approximated by ordinary tails at arbitrary
+residual accuracy, even with prescribed finite-prime data.
+
 For a possible common factor of any degree, the
 [fresh quotient-prime theorem](MULTIVARIATE_HIGHER_DEGREE_FRESH_QUOTIENT_PRIMES.md)
 forces fresh residue primes or reduces the factor to a rational
@@ -1986,7 +2024,12 @@ baseline, leading to a uniform all-degree angular exception bound
 depending only on the chosen gap and the absolute cutoff. Varying
 both rows of a reflected pair also gives cofinite all-degree
 coprimality for an arbitrary core and preserves exact mirroring
-when the core is mirrored.
+when the core is mirrored. The
+[two independent unit-gap heights](MULTIVARIATE_TWO_HEIGHT_FACTOR_SPECIALIZATION.md)
+give a zero-dimensional common-factor locus under the exact
+translation comparison. For comparable cores the test is automatic
+if at least one of the two multiplicities is odd, and this family
+has a finite decision in every degree with unrestricted such counts.
 
 For any fixed terminal \(N\), add an integer \(T\) to both entries
 of every unequal row. If \(D\) is the sum of the unsigned row gaps,

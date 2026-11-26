@@ -537,3 +537,255 @@ positive complete-fibre or dictionary hypothesis.
 The existing prime-support and residue estimates
 only give lower prices for the cyclotomic outputs.
 They do not supply this upper price for actual rows.
+
+## Exact-power sectors with arbitrary common order
+
+Fix \(B=1\) for the original total radical budget and
+\(n=X^L\) in the shell \(X/2<c\le X\).
+Consider primitive triples with two original letters
+that are exact \(m\)-th powers for some integer
+\(m\ge2\). The order and the two chosen letters can
+vary by row. There are absolute \(\delta,L_0>0\) such
+that for every fixed \(0<L<L_0\) this sector has count
+\[
+                    O_{L,\varepsilon}
+                       \bigl(n^{\,1/3-\delta}X^\varepsilon\bigr).
+\]
+This also covers two exact powers whose literal
+orders have a common divisor greater than one.
+For two summands with a common order that is a power
+of two, both summands are squares. The same-side
+\(q=2,f=0\) case of PR7 gives a fixed strict saving.
+The following argument covers the target–summand
+orientation and all remaining same-side orders.
+Taking the smaller margin gives the asserted bound.
+[The same-side quadratic case (PR7)](ABC_PROJECTIVE_RAY_CLASS_NORM_MOMENTS.md#weighted-powers-and-the-balanced-endpoint)
+
+Here is the division of order ranges. Fix a small
+count allowance \(\eta>0\), and choose \(\kappa>0\) small
+in terms of the MCB2 thresholds for this allowance and
+bounded raw caps. At \(mL\le\kappa\), apply the proof of
+BFR2 with coefficients one and the actual order \(m\).
+For a difference the number of rational factors is
+\(J=\tau(m)\ge2\). For a sum it is
+\(J=\tau(2m)-\tau(m)\ge2\) when \(m\) has an odd
+divisor greater than one. The only steps in BFR2
+requiring small budget are the MCB2 counts. On the
+original row this uses \(L\). If there are linear
+factors, apply MCB2 to the derived additive comparisons
+in height scale \(Y=X^{1/m}\) and budget \(mL\).
+All these comparisons have height bounded above and
+below by fixed multiples of \(Y\) (their largest
+original powered operand is at least \(X/4\)), and
+their raw caps in the unchanged base \(n=Y^{mL}\)
+are bounded by a fixed constant. Hence the MCB2
+threshold on this scale is uniform in \(m\).
+The fixed-value factor counts and finite mass bins
+are used only at each order \(m\le\kappa/L\) before
+the height limit. BFR2 then gives \(n^{1/4+\eta}X^\varepsilon\)
+after summing these finitely many orders at fixed \(L\).
+
+Fix \(K>8\). For \(\kappa\le mL\le K\), the
+two large-step valuation spectra sector applies to
+the two powered letters. The endpoint contradiction
+is uniform in the choices of the orders. If there
+were no uniform saving, take a sequence of fixed
+budgets tending to zero. At each budget the finite
+list \(\kappa/L\le m\le K/L\) gives one order with
+a near-saturating inner exponent, and the two
+spectra then have uniformly positive scaled mesh.
+The large-step result excludes that sequence.
+Finally, for \(mL>K\), each of the two roots is at
+most \(n^{1/K}\). Some root is at least two, apart
+from the bounded row \((1,1,2)\), and hence
+\(m\le\log_2 X\). Root enumeration gives
+\(n^{2/K}X^\varepsilon\) after summing these
+orders. A dyadic shell summation preserves the
+strict margin in the bound.
+[The two large-step spectra sector](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md#large-step-valuation-spectra-and-the-small-budget-endpoint)
+
+## Uniform saving for rationally reducible weighted binomials
+
+Suppose instead that two letters of a primitive row
+are \(U=A x^m,V=B y^m\) for some \(m\ge2\), with any
+positive integral coefficients \(A,B\), and that
+\(A S^m+\epsilon B T^m\) is reducible over \(\mathbb Q\)
+in the actual sign orientation. Allow the order and
+both coefficients to depend on the row. The same
+conclusion of a fixed saving below \(1/3\) holds,
+with no bound on the coefficient dictionary.
+
+Primitivity implies \((A,B)=1\). Dehomogenizing,
+Capelli's necessary condition gives either that
+\(-\epsilon B/A\) is a rational \(p\)-th power for a
+prime \(p\mid m\), or that \(4\mid m\) and
+\(-\epsilon B/A=-4r^4\) for a nonzero rational \(r\).
+In the first case \(B/A\) is a positive rational
+\(p\)-th power. Coprimality makes both \(A\) and
+\(B\) positive integral \(p\)-th powers. Thus the
+two actual letters are exact \(p\)-th powers.
+In the sum orientation \(p\) is odd because
+\(-B/A<0\). The adaptive common-order result
+therefore applies in either sign orientation.
+
+The second case is a sum. At odd primes the
+coefficient exponents are divisible by four.
+At \(2\), the valuation of \(B/A\) is \(2\)
+modulo four. Coprimality then puts one coefficient
+in the form \(4u^4\) and the other in the form
+\(v^4\). Absorb the actual integral roots and
+\(m/4\) into \(u,v\); the two original letters
+are \(4y_0^4,x_0^4\), in some order. The fixed
+binomial factors as
+\[
+   x_0^4+4y_0^4
+      =(x_0^2-2x_0y_0+2y_0^2)(x_0^2+2x_0y_0+2y_0^2).
+\]
+The quadratics are distinct and irreducible,
+so BFR2 with fixed coefficients gives exponent
+\(1/4+\eta\) for arbitrarily small fixed \(\eta\)
+at sufficiently small budgets. This exhausts
+the rationally reducible sector.
+[Capelli's criterion, Browning–Verzobio Lemma 2.5](https://arxiv.org/html/2608.24512v1#S2.SS1)
+
+## A two-cap obstruction to any fixed fresh-output catalogue
+
+The following construction uses two original \(n^{1/3}\)
+caps and gives actual primitive additive rows, with
+both capped valuation laws wholly diffuse. It applies
+to every finite fixed collection of the three
+orientations above and even allows a prescribed
+catalogue of pools. In this construction the original
+third radical exceeds every fixed normalized exponent
+as the budget decreases.
+
+Fix finite index sets for the three orientations, a
+number \(0\le\varrho<1/3\), and \(\eta>0\) with
+\(\varrho+\eta<1/3\). At each sufficiently small fixed
+\(L\) and height \(X\), let a prescribed catalogue
+contain at most \(n^{\varrho+o_X(1)}\) prime pools, with
+a uniform polynomial bound on their support products.
+Here \(n=X^L\), and support products are taken only
+over distinct primes. There is a family of
+\(n^{1/3+o_X(1)}\) actual primitive rows \(a+b=c\),
+forming a matching in all three complete letters, with
+\(\operatorname{rad}(a),\operatorname{rad}(c)\le n^{1/3}\).
+For every row and every pool in the catalogue, each
+prescribed nonlinear output has outside radical at
+least \(n^{2/3-\varrho-\eta}\), and each prescribed
+linear output at least \(n^{1/3-\varrho-\eta}\).
+Thus for \(J\) distinct nonlinear labels and \(\ell\)
+linear ones, the joint outside radical has exponent
+at least
+\[
+                  \frac{2J+\ell}{3}
+                      -(J+\ell)(\varrho+\eta)-o_X(1).
+\]
+The shared order-six label is counted once. For fixed
+\(J+\ell>0\) and any fixed saving \(\sigma>0\) with
+\((J+\ell)\varrho<J/3+\sigma\), choose \(\eta\) small
+enough to make the required fresh ceiling
+\((J+\ell)/3-\sigma\) fail on every row and for every
+allowed pool.
+
+To construct the rows, use the two full prime-palette
+dictionaries in the diffuse two-cap construction, with
+the same mesh and the following choice of common order.
+Take a prime \(q=q_L\to\infty\) bounded above by
+\(\log(1/L)\), set \(s=\lfloor\log(1/L)/(2\log q)\rfloor\),
+and use \(e=q^s\) instead of the dyadic order. Then
+\(s\to\infty\), \(eL\to0\), and \(e\le L^{-1/2}\).
+More explicitly put \(m=\lfloor L^{-1/4}\rfloor\),
+\(R=n^{1/(3m)}\),
+\[
+ k_i=\left\lfloor\frac{2+(2i-1)/m}{eL}\right\rfloor,
+ \qquad
+ H_L=\frac1{3m}\sum_{i=1}^m eL k_i .
+\]
+Give each letter \(m\) disjoint palettes of
+\(P\asymp_L R/(\log R)^2\) primes, in \([R/8,R/4]\)
+for \(a\) and in \([R/2,R]\) for \(c\). Each word
+is an actual product of one prime from each palette
+to exponent \(e k_i\). The dictionary sizes are both
+\(M=P^m=n^{1/3+o_X(1)}\). The palette separation gives
+\(c>2a\) for every pair, and all rows
+\((a,c-a,c)\) are primitive with all heights
+\(\asymp_L X^{H_L}\). Also \(H_L\to1\). On each
+capped letter the scaled-degree measure tends
+in the two nested limits to the uniform measure
+of total mass \(1/3\) on \([2,4]\).
+One may select a most populated dyadic height shell
+at the end, changing the count by a factor bounded
+at fixed \(L\).
+[Diffuse power dictionaries](ABC_DIFFUSE_TWO_CAP_PRIMITIVE_SECANT_OBSTRUCTION.md#diffuse-power-dictionaries)
+
+For one fixed pool, counting failure of the output lower
+bound is checked on the full Cartesian product of the
+two dictionaries. The number of polynomial-height
+values with outside radical at most \(n^t\) is
+\(n^tX^{o_X(1)}\), uniformly in the pool, by
+prescribed-support enumeration. A nonlinear output
+has only \(X^{o_X(1)}\) pairs per exact value by the
+binary fixed-value bound. Its two arguments are
+a unimodular linear transform of \((a,c)\), and in
+particular are coprime. A linear output allows
+at most \(O(M)\) pairs per value by first fixing \(a\)
+and then solving the linear equation for \(c\).
+Accordingly, over all pools and prescribed labels,
+the number of Cartesian pairs failing any of the
+desired individual lower bounds is
+\(n^{2/3-\eta+o_X(1)}=o(M^2)\).
+[BFR1](#individual-nonlinear-factor-fibres)
+· [Prescribed-support enumeration](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
+
+One can demand a growing normalized radical exponent
+on the original third letter and on each selected
+output \(\Phi_d(c,a)\) in the orientation omitting
+that letter. Write \(a=u^e,c=v^e\).
+The third letter \(b=v^e-u^e\) contains the \(s\)
+nonlinear factors \(\Phi_{q^j}(v,u)\) for \(1\le j\le s\)
+at sufficiently small \(L\), when \(q\) is odd.
+For each fixed \(d\ge2\), eventually \(q\nmid d\), and
+\[
+       \Phi_d(v^e,u^e)
+                  =\prod_{j=0}^{s}\Phi_{d q^j}(v,u).
+\]
+This follows by taking orders of the complex roots
+under the \(e\)-th power map and then homogenizing.
+At least \(s\) factors are nonlinear. At each fixed
+\(L\) the factors used in the two factorizations are
+a finite list. Their distinct prime supports
+within each factorization are disjoint away from
+the finitely many primes of the relevant index
+and its fixed resultants. Impose the same individual
+lower bound \(n^{2/3-\varrho-\eta}\) on every such
+nonlinear factor, using the binary fixed-value
+count for the primitive root pair \((v,u)\).
+This discards only \(n^{2/3-\eta+o_X(1)}\) pairs
+at each fixed \(L\). It gives the stated growing
+outside radical, of exponent at least
+\(s(2/3-\varrho-\eta)-o_X(1)\) in those orientations
+and on \(b\). All finite-prime exclusions have
+zero normalized mass in the inner limit.
+
+Finally, thin the surviving pairs independently
+with probability \(1/(M\log X)\). The expected
+size is \((1-o(1))M/\log X\), and its variance
+is at most its mean. The expected number of
+collisions in either \(a\) or \(c\) is
+\(O(M/\log^2 X)\). For any fixed \(b\), a single
+nonlinear factor \(\Phi_q(v,u)\) must be one of
+its divisors. The divisor bound and binary
+fixed-value estimate therefore give at most
+\(X^{o_X(1)}\) Cartesian pairs for that \(b\).
+The expected number of collisions in \(b\)
+is \(X^{o_X(1)}\), also negligible compared with
+the expected size. Delete one pair per collision.
+The resulting matching has \(n^{1/3+o_X(1)}\) rows
+and retains the outside radical inequalities.
+The \(o_X(1)\) errors are always taken with
+\(L,q,s,m\), the cap margins, and the selected
+finite indices fixed. This example gives an
+obstruction with only the two original caps,
+and the actual third-letter lower bound places
+it outside the original total small-radical budget.
