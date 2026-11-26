@@ -1614,6 +1614,16 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Deep projected charts force a conditional divisor-record cost at balance | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
 | The total escaped valuation moment stays below one on lower dictionary strata | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
 | A split cubic carrier gives a larger asymmetric square-kernel sector | Internal result | proved | [Source](ABC_CROSS_FORM_PROJECTIVE_RAY_LOCKS.md) |
+| Primitivity fixes the prime support of high roots on low-degree components | Internal result | proved | [Source](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md) |
+| Growing menus of translated valuation grids give strict sector savings | Internal result | proved | [Source](ABC_PRIVATE_BOUNDARY_VALUATION_GRIDS.md) |
+| An exact Eisenstein norm power splits the radical cap across cyclotomic factors | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| Every exact proper Eisenstein norm power admits coefficient two ninths | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| Small Eisenstein norm defects eliminate balanced saturation | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| An Eisenstein power bound transfers to the primitive cyclic pair output | Internal result | proved | [Source](ABC_EISENSTEIN_NORM_POWER_DEFECTS.md) |
+| A fixed weighted physical shift has small least-repair fibres on private diffuse pairs | Internal result | proved | [Source](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md) |
+| Bounded fresh radical on a primitive repaired summand shift forces a pair gap | Internal result | proved | [Source](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md) |
+| Two exact least-repaired physical shifts give a fixed-level recovery | Internal result | proved | [Source](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md) |
+| Joint pair recovery prices each cyclotomic factor of a same-tail shift | Internal result | proved | [Source](ABC_REPAIRED_PHYSICAL_SHIFT_COMPLETION.md) |
 
 **Computed obligations:** 112 unresolved; 19 resolved within their exact scope.
 
