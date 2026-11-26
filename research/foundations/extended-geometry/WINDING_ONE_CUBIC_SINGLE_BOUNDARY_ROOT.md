@@ -120,7 +120,7 @@ Take a finite cover over the proper central fibre and a common positive
 filtration index. The filtered relative de Rham pushforward theorem
 puts this Čech class in \(V^{>0}\) after proper direct image
 ([Chen–Dirks–Mustaţă, Theorem 8.1](https://arxiv.org/pdf/2402.07816v1)).
-The [proper-volume Fourier argument](../../../unpublished/primitive-balanced-image-spectrum/proper-volume.tex)
+The [proper-volume Fourier argument](../../../results/primitive-balanced-image-spectrum/proper-volume.tex)
 now excludes a nonzero polynomial exponential period. Čech correction
 preserves the period because the original and corrected cocycles are
 cohomologous in the localized graph complex, and the compact sphere

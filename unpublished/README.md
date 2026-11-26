@@ -5,8 +5,8 @@ Drafts and standalone notes with their current review status.
 | Paper | Status |
 |---|---|
 | [Finite Tests for Mixed Moments of Regular Functions](finite-tests-for-mixed-moments/) | draft |
-| [The primitive balanced-degree spectrum in the two-pair Image problem](primitive-balanced-image-spectrum/) | ready for review |
-| [Frobenius norm bounds for Newton polygons with CM field action](cm-newton-polygon-constraints/) | ready for review |
+| [Relative Frobenius norms and density-one ordinary reduction](cm-newton-polygon-constraints/) | ready for review |
+| [Nonzero sphere moments from nonordinary cyclic covers](cm-newton-cyclic-cover-moments/) | draft |
 | [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](common-arithmetic-fibers/) | draft |
 | [Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map](fixed-map-hasse-failures/) | draft |
 | [The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps](quadratic-gauge-nonproperness/) | draft |

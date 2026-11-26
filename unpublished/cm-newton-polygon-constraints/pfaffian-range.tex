@@ -1,0 +1,66 @@
+\subsection{The range of the Pfaffian bound}
+
+\begin{proposition}\label{prop:pfaffian-range}
+Let \(A/\mathbb F_p\) have dimension \(2m\) and a prime-to-\(p\)
+polarization, with \(p>3\). Suppose an imaginary quadratic field \(E\)
+acts geometrically, its action is integral and maximal at \(p\), and
+\(p\) is unramified in \(E\). Suppose Rosati and Frobenius both act on
+\(E\) by conjugation and the two tangent multiplicities are \((m,m)\).
+Write \(\pi\) for Frobenius and \(D=\det_E(1+\pi^2/p)\). If \(A\)
+is nonordinary, then \(v_p(D)\ge 2-m\), with \(v_p(0)=+\infty\).
+For every \(m\ge3\) and every prime \(p>3\) with \(p\equiv2\pmod3\),
+there is a principally polarized example with \(E=\Q(i)\) and
+\(D=p^{2-m}\).
+\end{proposition}
+
+\begin{proof}
+The two blocks of \(\pi^2\) are conjugate by \(\pi\), so the two
+embeddings of \(D\) agree. Over an unramified Witt ring splitting the
+coefficient action, let \(B\) be the off-diagonal block of \(\pi\) in
+dual integral bases. The Frobenius lattice maps have \(m\) elementary
+divisors \(1\) and \(m\) elementary divisors \(p\), by the two tangent
+multiplicities. Hence \(v_p(\det B)=m\). The same matrix identity as in
+the fourfold gives
+\[
+ D=\frac{\operatorname{Pf}(B^{\mathsf T}-B)^2}{\det B}.
+\]
+In each block the eigenvalue valuations of \(\pi^2/p\) are reciprocal
+pairs \(\pm a_j\) with \(0\le a_j\le1\), for \(1\le j\le m\).
+If the reduction is nonordinary, \(\sum_j a_j<m\). Thus
+\(v_p(D)\ge-\sum_j a_j>-m\), and the Pfaffian gives
+\(v_p(D)\equiv m\pmod2\) when \(D\ne0\). This yields the bound.
+
+For sharpness, take an ordinary elliptic curve \(O/\mathbb F_p\) with
+Frobenius polynomial \(X^2-X+p\) and a supersingular elliptic curve
+\(T/\mathbb F_{p^2}\) with Frobenius \(p\zeta_3\). Both exist by
+Honda--Tate \cite[Theorem~1]{tate}. The first Weil number has a quadratic
+imaginary field and local slopes zero and one. For the second, the
+field is \(\Q(\zeta_3)\), in which \(p\) is inert. The sole local
+invariant at \(p\) is \(2\cdot(1/2)=0\bmod1\), so its Schur index is
+one and its isogeny class has dimension one. Put
+\[
+ S=\operatorname{Res}_{\mathbb F_{p^2}/\mathbb F_p} T,
+ \qquad U=O^{m-2}\times S.
+\]
+The polynomial of \(S\) is \(X^4+pX^2+p^2\), by the two-step
+Frobenius action on the geometric factors. Their product polarization
+descends and is principal. Let \(U'\) be the quadratic twist of \(U\)
+by \([-1]\) and put \(A=U\times U'\), with the product polarization.
+Under the geometric identification with \(U^2\), let \(i\) act by
+\((x,y)\mapsto(-y,x)\). Its Rosati adjoint is \(-i\), and its tangent
+multiplicities are \((m,m)\). Frobenius acts as
+\(\operatorname{diag}(\pi_U,-\pi_U)\), so conjugates \(i\).
+
+On either coefficient block the square of Frobenius acts as
+\(\pi_U^2\). If \(\alpha,\beta\) are the roots for \(O\), its
+contribution to \(D\) is
+\((1+\alpha^2/p)(1+\beta^2/p)=(\alpha+\beta)^2/p=1/p\).
+For \(S\) the contribution is
+\((1+\zeta_3)^2(1+\zeta_3^2)^2=1\). Therefore \(D=p^{2-m}\),
+while the supersingular factor makes \(A\) nonordinary.
+\end{proof}
+
+In rank four the bound makes the norm integral at nonordinary primes.
+In higher even rank, the examples have nonintegral norm with the same
+local lattice and Weil constraints. They establish sharpness for the
+finite-field bound.

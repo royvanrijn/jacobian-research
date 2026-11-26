@@ -1,6 +1,6 @@
 # Breakthrough target assessment
 
-Updated 25 November 2026.
+Updated 26 November 2026.
 
 - **Primary target.** Prove the unrestricted Strong Factorial Conjecture.
   The internal univariate binomial theorem covers every terminal order.
@@ -40,6 +40,9 @@ open. This is a preprint. Borisov--Gabber--Vasiu's September
 constructs plane counterexamples to the prime-to-characteristic formulation
 over every algebraically closed positive-characteristic field. These do not
 by themselves settle characteristic zero.
+The [planar degree bounds](#four-variable-hessian-conjecture-and-planar-degree-bounds)
+track the conditional $(72,108)$ exclusion and the newer exclusions of
+specified normalized Newton shapes.
 
 **Repository evidence.** The explicit characteristic-zero Keller collision
 in dimension three has an internal proof. In the plane, birational inversion
@@ -168,8 +171,70 @@ obligation in the graph.
 [Helali's report and exact certificates](https://github.com/bilLkarkariy/jc2-72-108-exact-certificates)
 and [Strinz's conditional valuation proof](https://github.com/wstrinz/plane-jacobian-72-108).
 
+**Santibáñez-Leal's coefficient-system exclusions.** Version 0.38,
+Section 6.6, reports separate proofs of emptiness for the two coefficient
+systems with Laurent bracket $x^2$. Case 2 uses an exact Singular standard
+basis over the degree-35 coefficient field $\mathbb Q[a_7]/(H)$
+(EXP-137). Theorem 6.2 handles Case 1 by reducing to a quintic field,
+splitting into two branch ideals and obtaining a nonzero constant at
+each leaf of a resultant-chain certificate (EXP-146). The degree bounds
+in Proposition 4.19 and the specialization argument in Theorem 4.21
+are what make the single-prime calculation a characteristic-zero
+certificate. The paper credits Helali with the earlier exclusion.
+
+Theorem 6.3 assumes that GGHV Proposition 4.3 is exhaustive and that
+the band equations encode its polygons. With those premises and
+GGHV Theorem 2.1, a complex plane counterexample must have maximum
+component degree at least 125. Section 6.1 checks the hypotheses of
+GGHV Theorem 5.1 for the three printed $(9,24)$ polygon classes
+(EXP-147). The proof of that imported theorem and the coverage of the
+class list still require review. The existing verification obligation
+also requires matching the band encoding, the Case 1 field and branch
+reductions, and the exact certificate inputs and degree bounds.
+The preprint provides an additional route for that audit.
+[Zenodo v0.38](https://zenodo.org/records/24358296) ·
+[Retained preprint, Sections 4.4, 6.1–6.2, 6.6 and 9](jacobian/planar-degree-frontier/sources/santibanez-leal-planar-keller-v0.38.pdf).
+
 [Nguyen, Theorem 3.6](https://doi.org/10.2989/16073606.2025.2482655)
 gives the published planar bound through degree 104.
+
+**Niedbala Giraudin's normalized Newton exclusions.** Theorem 1.2 of
+the $F_2$ preprint excludes the standard $(m,2m-1)$ pairs over an
+algebraically closed characteristic-zero field, for every $m\ge2$, with
+nonzero constant bracket and Standing Data 1.1. The component degrees
+are $(25m,25(2m-1))$. The standing data prescribe the starting triple
+$((5,20),(1,0),(5,-1))$, the successor-direction normalization and a
+first-edge root of multiplicity two giving the final corner $(7/5,2)$.
+The generic-fibre residue calculation uses an algebraic coefficient
+constraint from Lemma 5.1. For $m=3$ it recovers the stated $(75,125)$
+exclusion. Other shapes of degrees $(50,75)$ and $(125,225)$ fall outside
+Standing Data 1.1.
+[Hexagon 2611.00685v1](https://hexagonmath.org/2611.00685v1) ·
+[Retained preprint, Standing Data 1.1, Theorem 1.2 and Sections 5–7](jacobian/planar-degree-frontier/sources/niedbala-giraudin-f2-2611.00685v1.pdf).
+
+Theorem 1.2 of the degree-147 preprint excludes both normalized
+$(147,98)$ and $(98,147)$ shapes with starting corner $(7,42)$ and
+final corner $(13/7,6)$. Standing Data 1.1 prescribe the starting
+triple $((7,42),(1,0),(7,-1))$ and successor direction. Lemma 1.3
+derives the single-root first edge from those conditions. Lemma 5.1
+classifies the leading degree-18 and degree-12 polynomials by the
+Davenport–Zannier equality $\deg(u_3^2-w_2^3)=7$ and counts six classes
+up to the stated symmetries. Proposition 5.2 reports the remaining
+unit-ideal calculation over the sextic coefficient field. This is a
+precedent for using the equality-case classification in a Keller
+chart, alongside the repository's separate
+[marked quadratic calculation](jacobian/affine-complements/MARKED_QUADRATIC_DAVENPORT_ZANNIER_EXCLUSION.md).
+The degrees in the preprint's Laurent chart and the ruling degrees
+of the marked quadratic model have separate hypotheses.
+[Hexagon 2611.00897v1](https://hexagonmath.org/2611.00897v1) ·
+[Retained preprint, Standing Data 1.1, Theorem 1.2 and Sections 5–6](jacobian/planar-degree-frontier/sources/niedbala-giraudin-dz147-2611.00897v1.pdf).
+
+Both exclusions rely on the GGV normalization results and the specified
+exact calculations. A bound covering all component degrees through 150
+would require exclusions covering the whole relevant census. In particular,
+the later GGHV intersection-number paper uses an inequality where the
+early preprint used an equality to claim a wider exclusion.
+[GGHV, arXiv:1708.09367v2](https://arxiv.org/abs/1708.09367v2).
 
 **Giraudin's total-degree-five theorem.** The unrefereed preprint gives a
 separate low-degree argument using weighted Hessian-determinant layers,

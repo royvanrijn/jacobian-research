@@ -1,10 +1,10 @@
 # Exponential-integral and Kontsevich–Zagier scope audit
 
-The existing internal audit covered EIT I, the binary Factorial argument, and selected V–VI applications. It did not establish the Kontsevich–Zagier claims in II–III or the relative theorem in IV. This note records their exact domains, proof interfaces, and potential relevance to Factorial (FC) and Strong Factorial (SFC). It now includes an internal reproduction of the exact main theorems of II–III from the retained moment package and matched published inputs. Paper IV has a conditional proof-interface audit and a direct reproduction of its complete Gamma-packet functional calculation; its general arithmetic realization and saturation chain are not validated here.
+The internal audit covers EIT I, the binary Factorial argument, the exact main theorems of EIT II–III, and selected V–VI applications. It also proves a high-degree one-coordinate consequence of II for flat Gamma phases. Paper IV has a conditional audit of its proof inputs and a direct reproduction of its Gamma-packet functional calculation. Its general arithmetic realization and saturation chain remain under review.
 
 ## Source identity and review boundary
 
-The repository is [long-mathematics/exponential-integral-theorem](https://github.com/long-mathematics/exponential-integral-theorem), pinned at commit 92db79eedeb064694ff20e9201d73fc2bc0857f4 (October 10, 2026). Its current README, Papers II–IV, and the original Kontsevich–Zagier source are retained with hashes in source_ledger.json. The repository's latest commit was rechecked on November 17, 2026 and is still this pinned edition. The upstream README describes working drafts and explicitly separates compilation and computational checks from independent peer review or formal verification.
+The repository is [long-mathematics/exponential-integral-theorem](https://github.com/long-mathematics/exponential-integral-theorem), pinned at commit `92db79eedeb064694ff20e9201d73fc2bc0857f4` (October 10, 2026). Its README, Papers II–IV, and the original Kontsevich–Zagier source are retained with hashes in `source_ledger.json`. The TeX members of the Hexagon v1 deposits for II and III were checked byte-for-byte against the respective pinned copies. The internal audit applies to those deposited sources. [EIT II, Hexagon 2611.00737v1](https://hexagonmath.org/2611.00737v1), [EIT III, Hexagon 2611.00738v1](https://hexagonmath.org/2611.00738v1).
 
 | Component | Stated domain and main claim | Current local review |
 |---|---|---|
@@ -55,6 +55,29 @@ Its claimed injectivity concerns this tensor-generated algebra. An arbitrary cou
 The nonlinear input is substantive: thm:functional-linearity separates an affine constrained block from a full vector-translation block after adjoining a finitely generated group of exponentials. This uses the horizontal-endomorphism normal form, spectral gauge, reductivity after base change, the affine Galois exact sequence, and meromorphic exclusion. Polynomial value transfer then uses Beukers lifting and Paper II. Merely knowing linear injectivity does not supply this nonlinear theorem.
 
 The graph records internal reproductions of the exact II–III main claims through the explicit moment-package, lifting, formal-realization and Picard–Vessiot premises below. This does not establish the representation or nonzero-class premises needed for a new FC/SFC application.
+
+## High-degree phases in one affine angular coordinate
+
+Let $T\sim\operatorname{Dir}(\alpha_1,\ldots,\alpha_n)$ with $n\ge 2$, positive integer shapes and $N=\sum_i\alpha_i$. Let $\ell$ be a nonconstant affine function on the simplex with algebraic coefficients, and let $p$ be an algebraic polynomial of degree $d\ge N$. Then $\mathbb E e^{p(\ell(T))}$ is transcendental.
+
+To see this, absorb the affine constant into the nodes of $\ell$ using $\sum_i T_i=1$. Repeat each node $\alpha_i$ times. The polynomial-chain representation in [the simplex pencil proof](SIMPLEX_PENCILS_AND_AFFINE_LIMITS.tex) writes $\mathbb E e^{z p(\ell(T))}$ as a finite sum of compact affine-line periods with phase $p$, algebraic endpoints and algebraic polynomial amplitudes of degree at most $N-2$. Repeated nodes are allowed. The amplitudes are independent of $z$ and already satisfy the degree bound $d-2$ in EIT II, `thm:transfer`. If the value at $z=1$ were algebraic, subtracting that value as a multiple of $e^0$ would give a numerical relation. The transfer theorem would make the sum of the period functions vanish identically. At $z=0$ the normalized sum equals $1$, a contradiction. [EIT II, Theorem 1.2](https://hexagonmath.org/2611.00737v1).
+
+For the moment consequence let the independent $X_i$ have laws $\operatorname{Gamma}(\alpha_i,1)$. Put $S=\sum_i X_i$ and choose a linear form $L$ restricting to $\ell$ on $S=1$. For $D\ge d+1$ consider
+
+$$
+f=S^D + D S^{D-1}p(L/S)+R,\qquad \deg R\le D-2.
+$$
+
+The next-to-top term is polynomial because $d\le D-1$. In the one-block, unit-marker case of [the Gamma block-radial limit](COUPLED_BLOCK_PERIODS.tex), the normalized moments satisfy
+
+$$
+\lim_{m\to\infty}\frac{\mathbb E f(X)^m}{(N)_{Dm}}
+ =\mathbb E e^{p(\ell(T))},
+$$
+
+where $(N)_{Dm}$ is the rising factorial. The power of the single block sum is $D$, so its degree-$(D-1)$ correction evaluated at $DT$, divided by $D^D$, is $p(\ell(T))$. Thus every sufficiently large moment is nonzero for algebraic $p,L$, with arbitrary complex coefficients in $R$.
+
+For complex $p,L$, keep their same degree and nonconstancy conditions. A hypothetical all-moment counterexample yields a proper ideal over the algebraic numbers in the finitely many coefficient variables. The moment equations are rational because the integer-shape Gamma moments are rising factorials. Invert the leading coefficient of $p$ and one nonzero node difference of $L$ by adjoining two inverse variables. The Nullstellensatz now gives an algebraic counterexample in the same family, contradicting the nonzero limit. If a tail of moments vanished, a sufficiently high power of $f$ would have every positive moment zero. The power stays in the family, with total degree multiplied by that exponent and the same normalized angular correction $p(\ell(T))$. This proves infinitely many nonzero moments for the complex family.
 
 ## Paper IV and numerical specialization
 
@@ -265,6 +288,8 @@ The published imports used in this argument were matched to the exact applicatio
 
 ## Retained conclusion and next useful audit
 
-The main compact linear and tensor-generated polynomial claims have now been internally reproduced. The useful remaining route is to construct the exact presentation and prove formal visibility for a specific new FC application; the unrestricted coupled-simplex presentation remains open. IV's arithmetic realization and saturation chain, elementary-presentation comparison and numerical specialization remain separate obligations. Its complete Gamma-packet functional kernel has a direct proof over the actual Gamma constant field.
+The high-degree affine-coordinate case above supplies an exact compact-line presentation and detects a nonzero value by its mass at zero. The unrestricted coupled-simplex presentation and visibility questions remain open. IV's arithmetic realization and saturation chain, elementary-presentation comparison and numerical specialization remain separate obligations. Its Gamma-packet functional kernel has a direct proof over the actual Gamma constant field.
 
-The new graph branch records the external II–IV claims, the ordinary KZ conjecture, the conditional nonvanishing implication, the exact amplitude counterexample, the factorial boundary calculation, and the remaining representation, visibility, and FC/SFC application obligations. Ordinary univariate binomial SFC is complete through degree six, degree seven reduces to the remaining all-index ordinary gap-six family with support {1,7}, and all-degree binomial SFC and unrestricted FC/SFC remain open.
+For the odd-degree family in VI, the needed input from V is its linear single-chain theorem under the strict interior extremum hypothesis. An audit can focus on V's weighted-phase geometry and irreducibility, strict-extremum detector, and ordinary-point linear specialization. Those inputs would give VI's stated all-dimensional odd-degree family at every nonzero algebraic scale, with arbitrary complex terms below the next-to-top degree. The elliptic quartic family has a separate continued-density detector and separate characteristic-five and finite-coprimality arguments. [Pinned EIT V](https://github.com/long-mathematics/exponential-integral-theorem/blob/92db79eedeb064694ff20e9201d73fc2bc0857f4/papers/05-polynomial-flags/polynomial-flag-exponential-periods.tex), [pinned EIT VI](sources/long-eit-vi-current.tex).
+
+Ordinary univariate binomial SFC is complete at every starting order by the [all-order theorem](ORDINARY_BINOMIAL_RESIDUAL_REGION.md). Factorial in dimension at least three and unrestricted Strong Factorial remain open.

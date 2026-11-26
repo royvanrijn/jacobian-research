@@ -7,17 +7,17 @@
 \newcommand{\Q}{\mathbb Q}
 \title{Factorial, Image and Rigidity: evidence, transfers and remaining work}
 \author{Research audit}
-\date{17 November 2026}
+\date{26 November 2026}
 \begin{document}
 \maketitle
 
 
 \noindent\textbf{Current scope.}
-This programme contains credited internal reproductions and restricted
-Factorial/Strong Factorial theorems. General Factorial in dimension at
-least three and unrestricted Strong Factorial remain open. Independent
-replay, formal verification and external review are not claimed for
-these internal results.
+Long establishes the two-variable Factorial Conjecture and the
+two-dimensional product-exponential case of van den Essen's Integral
+Conjecture in Hexagon preprint 2611.00813v1. General Factorial in dimension
+at least three and unrestricted Strong Factorial remain open. The
+supporting local work is a credited internal proof audit.
 
 \section*{Current results}
 \begin{enumerate}
@@ -45,6 +45,158 @@ give exact conditional certificates. Uniform nonzero pivots and arbitrary
 gap coverage remain unproved.
 \end{enumerate}
 
+\section*{Binary Factorial and the product-exponential kernel}
+Let $\Lfac(x^ay^b)=a!b!$ on $\C[x,y]$. For a nonconstant phase $f$ of
+total degree $D$, write
+\[
+ f(rt,r(1-t))=A(t)r^D+A_1(t)r^{D-1}+\cdots,
+ \qquad A(t)=f_D(t,1-t).
+\]
+Long's Theorem~1.1 gives infinitely many nonzero moments $\Lfac(f^m)$
+whenever $A$ is nonconstant, equivalently whenever the top homogeneous
+part $f_D$ is outside the line $\C(x+y)^D$. The argument is independent
+of EIT I. The radial transform gives a pole density with a Volterra
+correction. Continuation preserves the integration history, and the
+correction contributes no negative Puiseux terms at a nonzero terminal
+critical value. Zero traces on all proper composition blocks put the
+unweighted inverse-derivative vector in the top rational monodromy
+component. The corresponding weighted coefficient annihilates that
+component, so pairing with the conjugate unweighted coefficient and
+applying Lindemann--Weierstrass excludes nonzero critical values. The
+endpoint conditions exclude the remaining pure-power possibilities.
+The rational monodromy input is Pakovich--Muzychuk, Theorem~3.1 and
+Section~4.1. \href{https://hexagonmath.org/2611.00813v1}{Long, Hexagon
+2611.00813v1, Theorem~1.1 and Sections~2--5}.
+
+\paragraph{Nonrationality of the normalized series.}
+If $A$ is nonconstant, the germ at $s=0$
+\[
+ H_f(s)=\sum_{m\geq0}\frac{\Lfac(f^m)}{(Dm+1)!}\,s^m
+\]
+is nonrational. Section~2 of Long proves convergence near $s=0$. For
+algebraic coefficients of $f$, the argument just described applies to
+any rational germ $w^{-1}H_f(w^{-1})$. Local extraction uses meromorphy
+at the nonzero leaves, and transport uses the resulting zero germs.
+Trace orthogonality and the arithmetic pairing force $A$ to be a
+translated pure power, and the endpoint argument excludes rationality in
+that case, including degree one of $A$.
+
+For complex coefficients, suppose $H_f=P/Q$ with $P,Q$ polynomials
+and $Q(0)=1$. Fix their degree bounds and introduce variables for their
+coefficients and those of $f$. Every coefficient equation in
+$QH_f-P=0$ is polynomial over $\Q$. Impose the linear equations that
+make $\deg A\leq d$ for the original $d=\deg A>0$, and adjoin a variable
+inverse to the coefficient of $t^d$ in $A$. The complex solution shows
+that the ideal of all these equations over $\overline{\Q}$ is proper.
+The Nullstellensatz in this finite set of variables gives an algebraic
+solution. It retains $\deg A=d$, hence total degree $D$ of $f$, and
+$Q(0)=1$. The specialized coefficient identity then gives a rational
+germ for a nonflat algebraic polynomial, a contradiction.
+\href{https://hexagonmath.org/2611.00813v1}{Long, Lemma~3.1,
+Theorem~3.3, Corollary~4.7, Proposition~5.1 and Lemmas~5.3--5.4}.
+
+If $A$ is constant, normalize it to $1$ and specialize a hypothetical
+all-moment counterexample to algebraic coefficients while preserving
+the top-degree condition. The normalized moments then satisfy
+\[
+ \lim_{m\to\infty}\frac{\Lfac(f^m)}{\Gamma(Dm+2)}
+   =\int_0^1 \exp\bigl(A_1(t)/D\bigr)\,dt.
+\]
+The limit is nonzero by the constant-exponent formula or by the
+single-integral nonvanishing in EIT I for nonconstant algebraic
+polynomial exponents at distinct algebraic endpoints and a nonzero
+algebraic parameter. For $\deg A_1\leq 1$, Long's elementary flat
+argument uses Hermite--Lindemann. Nonzero constant phases have moments
+$f^m$. This gives full FC$(2)$ by Corollary~1.3. For a normalized flat
+phase with algebraic coefficients, the nonzero limit also gives
+$\Lfac(f^m)\ne 0$ for every sufficiently large $m$. For arbitrary complex
+coefficients the limit can vanish, as it does for
+$f=(x+y)^2+4\pi i x$. Specialization preserves the all-moment equations
+of a proposed counterexample.
+\href{https://hexagonmath.org/2611.00813v1}{Long, Section~6 and
+Corollary~1.3};
+\href{https://hexagonmath.org/2611.00736v1}{Long--Le Blanc, EIT I,
+Hexagon 2611.00736v1, Corollary~1.4}.
+
+If $\Lfac(f^{qm})=0$ for every $m\geq 1$ for a fixed integer $q\geq 1$,
+FC$(2)$ applied to $f^q$ gives $f=0$. In particular, an eventually zero
+moment sequence forces $f=0$, by taking $q$ beyond its onset. The same
+algebraic conclusion holds over any characteristic-zero field by embedding
+the field generated by the finitely many coefficients into $\C$.
+
+Factorial integration on monomials identifies $\ker\Lfac$ with the
+zero-integral polynomials on $(0,\infty)^2$ for $e^{-x-y}\,dx\,dy$.
+The eventual-power radical is $\{0\}$ by the power argument, hence the
+kernel is a Mathieu--Zhao subspace. Indeed the hypothesis that all
+positive powers of $f$ lie in the kernel forces $f=0$, and so every
+marked power $gf^m$ is in the kernel as well. This is exactly the
+two-dimensional product-exponential Integral Conjecture.
+\href{https://hexagonmath.org/2611.00813v1}{Long, Corollary~1.4}.
+This also gives the dimension-two case of Conjecture~7.3 in
+\href{https://arxiv.org/abs/1006.5801v1}{van den Essen's \emph{The Amazing
+Image Conjecture}}, which asks for the eventual-power conclusion itself.
+
+\paragraph{Polynomial pushforwards of the product-exponential measure.}
+Let $\Phi=(\Phi_1,\ldots,\Phi_r)$ have real polynomial coordinates in
+$x,y$, and let $\nu=\Phi_*(e^{-x-y}\,dx\,dy)$ for $x,y>0$. Each moment
+of $\nu$ is finite by polynomial growth and exponential decay. For
+$F\in\C[Z_1,\ldots,Z_r]$ and $m\geq1$,
+\[
+ \int F^m\,d\nu=\Lfac((F\circ\Phi)^m).
+\]
+By binary Factorial, the left side vanishes for all sufficiently large
+$m$ exactly when $F\circ\Phi=0$. Thus the eventual-power radical of the
+zero-integral subspace is the substitution kernel. Every element of that
+ideal makes all positive marked moments vanish by the same pullback
+identity. The zero-integral subspace is therefore Mathieu--Zhao.
+
+For $\Phi(x,y)=(x,y,xy)$ the radical is $(Z_3-Z_1Z_2)$. This follows by
+eliminating $Z_3$ in the polynomial quotient. For $\Phi(x,y)=(x,xy)$
+the radical is zero since the image contains the positive quadrant.
+The latter pushforward has joint density $u^{-1}e^{-u-v/u}$ for $u,v>0$
+by the Jacobian of $(u,v)\mapsto(u,v/u)$.
+
+\paragraph{The product Laguerre image.}
+Write $R=\C[x,y]$ and $T_x=\partial_x-1$, $T_y=\partial_y-1$. Then
+\[
+ T_x(xR)+T_y(yR)=\ker\Lfac.
+\]
+Integration by parts gives the inclusion in the kernel: the source of
+each derivative vanishes at the corresponding zero boundary and has
+exponential decay after multiplication by the weight at infinity.
+For the reverse inclusion, $p_a(x)=-\sum_{j=0}^a\partial_x^j(x^a-a!)$
+satisfies $T_xp_a=x^a-a!$ and $p_a(0)=0$. The same construction in $y$
+gives $T_yq_b=y^b-b!$ with $q_b(0)=0$. Thus
+$x^ay^b-a!b!=T_x(p_a y^b)+a!T_yq_b$, and these centered monomials span
+the kernel. The image is therefore Mathieu--Zhao with trivial
+eventual-power radical. Since each partial derivative is surjective on
+$R$, the same space is the sum of the images of the usual Laguerre
+operators $x\partial_x^2+(1-x)\partial_x$ and
+$y\partial_y^2+(1-y)\partial_y$. The boundary-vanishing source domains
+give the product-exponential version of the image--integral
+correspondence discussed in van den Essen, Section~4.
+The nonconstant products of classical Laguerre polynomials span this
+kernel by orthogonality to the constant basis element. This proves the
+$n=2$, $k=(0,0)$ case over $\C$ of
+\href{https://arxiv.org/abs/0907.3990v2}{Zhao's Conjecture~5.13},
+using the weight in his Theorem~5.1.
+
+\paragraph{Finite detection at a fixed degree and start.}
+Fix integers $D\geq 0$ and $N\geq 1$, and let $F$ have independent
+coefficients $\mathbf c$ on all monomials of degree at most $D$.
+In $\Q[\mathbf c]$, the ideal generated by $\Lfac(F^m)$ for $m\geq N$
+has radical $(\mathbf c)$. Its complex zero set is the origin by the
+eventual-power result, and the Nullstellensatz followed by contraction
+to $\Q[\mathbf c]$ gives the radical equality. Noetherianity gives a
+finite cutoff $M\geq N$ with the same radical for the moments from $N$
+through $M$. To compute a cutoff, increase $M$ and test each coefficient
+$c$ for membership in this radical by a Gr\"obner basis test of whether
+adjoining $1-zc$, with $z$ a new variable, gives the unit ideal. This
+search terminates and supplies a window valid over every
+characteristic-zero field for the chosen start $N$. An explicit formula,
+a length uniform in $N$, and a support-size Strong Factorial window are
+separate questions.
+
 \section*{Statements that must be distinguished}
 FC$(r)$ says that $\Lfac(f^k)=0$ for every $k\geq1$ forces $f=0$, where
 $\Lfac(y^a)=\prod_i a_i!$. SFC asks that every block of $\mathcal N(f)$
@@ -61,6 +213,23 @@ proof below shows. The broader regular-sequence Image conjecture includes
 this instance (take $A=\C[\xi]$, $a_i=\xi_i$), so it is false as well.
 Image for unrelated locally nilpotent derivations is a different assertion;
 one must specify the operator and coefficient algebra.
+
+\paragraph{A constraint on two-pair Image phases.}
+Give $\xi^a z^b$ weight $b-a\in\mathbb Z^2$. If $F\ne0$ and
+$\mathcal E_2(F^m)=0$ for every sufficiently large $m$, the convex hull
+of its weights has no vertex in $\mathbb R_{\ge0}^2$. Indeed, a linear
+functional exposing a vertex $v\ge0$ shows that the weight-$mv$ part of
+$F^m$ is $F_v^m$. The map $\mathcal E_2$ preserves weights, so
+$\mathcal E_2(F_v^m)=0$ for the same $m$. Writing
+$u_i=\xi_i z_i$ gives $F_v=z^v Q(u)$ with $Q\ne0$. The identity
+$\mathcal E_2(\xi^a H)=\partial_z^a\mathcal E_2(H)$ then gives
+$\Lfac((u^v Q(u))^m)=\mathcal E_2(\xi^{mv}F_v^m)=0$, contradicting
+the trivial binary eventual-power radical. In particular, there is no
+nonzero eventually pure phase in the weight-zero subalgebra $\C[u_1,u_2]$.
+The grading reduction and conditional vertex exclusion are due to
+\href{https://arxiv.org/abs/1008.3962v2}{van den Essen--Wright--Zhao,
+\emph{On the Image Conjecture}, Sections~3--4}. Binary Factorial
+supplies the hypothesis in two pairs, including the eventual version.
 
 \section*{What the Gaussian machinery transfers exactly}
 For $Y_i=\frac12\sum_{j=1}^{k_i}X_{ij}^2$, put
@@ -107,10 +276,12 @@ automatically belongs to that subalgebra.
 
 
 \section*{Open questions and assurance}
-Higher-dimensional Factorial, unrestricted Strong Factorial and general
-both-nonconstant monomial pairs outside the displayed families remain
-open. Neither a Gaussian counterexample nor an Image counterexample
-settles Factorial in its positive-radial subalgebra.
+Ordinary univariate binomials satisfy Strong Factorial at every starting
+order by the \href{ORDINARY_BINOMIAL_RESIDUAL_REGION.md}{all-order theorem}.
+Factorial in dimension at least three, unrestricted Strong Factorial,
+and all-order Strong Factorial for arbitrary multivariate monomial pairs
+remain open. Neither a Gaussian counterexample nor an Image
+counterexample settles Factorial in its positive-radial subalgebra.
 The current exact scripts and certificates support specified algebraic
 identities; the universal statements use the linked written proofs.
 Independent mathematical review and novelty comparisons are outstanding.

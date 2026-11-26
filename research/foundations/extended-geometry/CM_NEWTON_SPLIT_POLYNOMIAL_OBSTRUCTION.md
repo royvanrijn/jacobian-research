@@ -219,3 +219,83 @@ the equality threshold in even degree. Its bisection hypothesis
 in part (6) requires two equally sized coefficient-field
 orbits, so it does not cover three independent split factors.
 [Suh, Theorem 4.1.1 and §5.3](https://arxiv.org/html/2410.01182v2).
+
+## Rational functions of the trace and determinant
+
+Fix \(F\) and an auxiliary torsion level as in the construction above.
+Write \(S\) for the determinant variable and \(U_i\) for the three
+labelled trace variables. One can instead use the coordinates of the
+relative trace in an integral basis of \(F\). The change of variables
+is invertible over the normal closure of \(F\). For a rational function
+\(R\) in either set of coordinates, take its coefficients in a fixed
+number field \(L\) containing the normal closure of \(F(i)\) and
+restrict to \(p\) split completely in \(L\).
+
+Suppose the defined values of \(R(p,a)\) on all sufficiently large
+minimal split one-failure models are uniformly bounded at a fixed
+archimedean embedding and integral at all places outside a fixed
+finite set of rational primes. Then \(R\) is constant. Here minimal
+means that the valuation of \(a\) at the failed coefficient prime
+is one and its valuations at the other two are zero. Both
+\(p\equiv1\bmod M\) and \(a\equiv2\bmod M\) may be retained for
+the fixed level \(M=\ell_0^{2N}\).
+
+First write \(R=P/Q\) in lowest terms. If \(Q\) has an irreducible
+factor other than \(S\), choose a smooth algebraic point on a
+geometric component of that factor with \(S\ne0\) and \(P\ne0\).
+Such a point exists because \(P,Q\) are coprime, a property preserved
+by extension of the coefficient field. Choose an auxiliary prime
+\(\ell\) split in the normal closure of the field of the point and
+the coefficients, outside the fixed exceptional primes and coprime
+to \(M\). Exclude the finitely many primes where the point coordinates
+or polynomial coefficients fail to be integral, or where \(SP\)
+reduces to zero at the point. The point then prescribes a nonzero determinant
+\(\bar s\in\mathbb F_\ell^\times\) and a trace residue class with
+\(P\) a unit and \(Q\) zero modulo the selected place above \(\ell\).
+
+Require \(p\equiv\bar s\bmod\ell\) and complete splitting in the
+normal closure of \(L(\zeta_M)\). These conditions are compatible
+by Chebotarev since \(\mathbb Q(\zeta_\ell)\) is totally ramified
+at \(\ell\), while that normal closure is unramified there. The
+trace residues and \(a\equiv2\bmod M\) combine into a single
+class modulo \(\ell M\mathcal O_F\). In labelled coordinates this
+uses the split isomorphism
+\(\mathcal O_F/\ell\mathcal O_F\simeq\mathbb F_\ell^3\).
+The trace lattice construction with the fixed modulus \(\ell M\)
+and the Honda–Tate realization above preserve these congruences,
+any selected failed label, and approximation to any fixed
+normalized archimedean target in the open trace cube.
+[Auxiliary pole construction](CM_NEWTON_FROBENIUS_RAMIFICATION_AND_DENOMINATORS.md#imposing-a-pole-on-finite-field-models).
+
+To keep \(Q(p,a)\ne0\), take an archimedean target at which the
+highest weighted part of \(Q\), evaluated at \(S=1\), is nonzero.
+Use weights \(1\) for \(S\) and \(1/2\) for each \(U_i\). At any
+fixed weight, the \(U\)-exponents determine the \(S\)-exponent, so
+this highest part is a nonzero polynomial after setting \(S=1\).
+It has a nonzero value somewhere in the open trace cube. Along
+the corresponding approximations the weighted leading term
+keeps \(Q(p,a)\) nonzero. Consequently the models give a defined
+value with negative valuation above \(\ell\), contradicting the
+integrality assumption. It follows that \(R\in L[S,S^{-1},U_1,U_2,U_3]\).
+
+For a supported monomial \(S^kU^\alpha\) in this Laurent expression,
+its valuation in the model with label \(i\) failed is \(k+\alpha_i\)
+at sufficiently large \(p\). Among the monomials of minimum
+valuation for label \(i\), the \(U\)-exponents are distinct,
+since \(\alpha_i\) determines \(k\) at fixed valuation. Their
+initial form is therefore a nonzero polynomial in the leading
+residues \(u_i\) of the construction above. The grid argument
+chooses a model where it survives, so integrality forces
+\(k+\alpha_i\ge0\) for every supported monomial and all three labels.
+
+Archimedean boundedness likewise forces \(k+|\alpha|/2\le0\)
+for all supported monomials. If the maximum weight were positive,
+its nonzero initial polynomial on the trace cube would give
+unbounded growth along the same archimedean approximations.
+If \(k<0\), the three valuation inequalities give
+\(|\alpha|\ge-3k\), contrary to \(k+|\alpha|/2\le0\).
+For \(k\ge0\), the weight inequality leaves just \(k=0\)
+and \(\alpha=0\). Thus only constants satisfying the assumed
+integrality condition remain. In particular, for \(R\) over
+\(\mathbb Q\) these are rational constants, and with integrality
+at all places they are integers.

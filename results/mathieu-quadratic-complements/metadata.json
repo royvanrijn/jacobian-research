@@ -5,13 +5,19 @@
     "orcid": "0009-0000-2808-0645"
   },
   "summary": "Classifies quadratic-complement traces in characteristic zero, proves the joint minima for explicit witnesses and gives a bounded one-order test for all multipliers. It also classifies the real special orthogonal Reynolds projection.",
-  "status": "submission-pending",
+  "status": "ready-for-review",
   "published": false,
   "submission": {
     "venue": "Hexagon",
-    "reserved_identifier": "hexagon:2611.01050v2",
-    "status": "under-review",
-    "updated_on": "2026-11-25"
+    "identifier": "hexagon:2611.01050v1",
+    "status": "published",
+    "url": "https://hexagonmath.org/2611.01050v1",
+    "publication_date": "2026-11-25",
+    "public_record_verified": true,
+    "verified_on": "2026-11-26",
+    "original_upload_sha256": "54f2fa30943c6ca91e4badd74f3e02bb206051c9d5b12915054b9425aee89d9f",
+    "previous_reserved_identifier": "hexagon:2611.01050v2",
+    "identifier_note": "Hexagon published the verified upload under v1, retaining a v2 filename for the PDF. The original upload digest matches the local submission archive."
   },
   "catalogued_on": "2026-11-24",
   "source": "main.tex",
@@ -28,5 +34,8 @@
   "next_steps": [
     "Obtain specialist review of the exponent-shift algorithm, angular interpolation proof and sharp numerator obstruction.",
     "Find smaller test orders and multiplier degrees and explicit criteria in higher angular degree."
-  ]
+  ],
+  "hexagon": "https://hexagonmath.org/2611.01050v1",
+  "published_edition": "published/",
+  "publication_record_checked": "2026-11-26"
 }

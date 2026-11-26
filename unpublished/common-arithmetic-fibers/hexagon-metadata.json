@@ -1,0 +1,48 @@
+{
+  "venue": "Hexagon",
+  "submissionUrl": "https://hexagonmath.org/submit",
+  "status": "prepared-locally",
+  "fields": {
+    "title": "Over Characteristic Zero, Every Finite Étale Algebra of Rank at Least Three Is a Full Keller Fiber",
+    "abstract": "A Keller map can only have finite étale fibers. We ask the reverse question: given a finite étale algebra, can it be made into the whole fiber of such a map? Over a field $K$ of characteristic zero, the answer is yes in every rank at least three. More precisely, for every separable polynomial $P\\in K[T]$ of degree $N\\geq3$, we construct a polynomial map $F_P:\\mathbb{A}^3_K\\to\\mathbb{A}^3_K$ with $\\det DF_P=1$, geometric degree $N$, and a distinguished full fiber naturally isomorphic to $\\operatorname{Spec} K[T]/(P)$.\n\nThe characteristic-zero existence statement also follows by coefficient specialization from the earlier all-degree family of Ulam. We give a quadratic-gauge construction, a scheme-theoretic reconstruction and a formalization of this consequence. The construction is read backwards. A one-variable inverse equation supplies a marked root. Its derivative reconstructs the source and, at the same time, is exactly the factor that cancels from the Jacobian. A translation inserts the prescribed polynomial into this equation. The characteristic-zero theorem, including the automatic translation, function-field comparison, and abstract finite étale corollary, is formalized in Lean. Over a field of characteristic different from $2$, the same formulas also give an explicit supplied-presentation result whenever the first and third Hasse coefficients at the chosen translation are nonzero. That broader result commutes with scalar extension and lies outside the end-to-end Lean formalization. Choices made from an abstract finite étale algebra are noncanonical.",
+    "authors": [
+      {
+        "name": "Roy van Rijn",
+        "orcid": "0009-0000-2808-0645",
+        "affiliation": "Independent researcher"
+      }
+    ],
+    "subject": "math.AG",
+    "crossListSubjects": ["math.AC"],
+    "mscCodes": ["14R15", "14B25", "13B40"],
+    "tags": [
+      "Keller map",
+      "finite étale algebra",
+      "prescribed fiber",
+      "geometric degree",
+      "quadratic gauge",
+      "Jacobian conjecture",
+      "Lean formalization"
+    ],
+    "aiSystems": [
+      {"provider": "OpenAI", "name": "ChatGPT"},
+      {"provider": "OpenAI", "name": "Codex"}
+    ],
+    "provenance": "ChatGPT (OpenAI) assisted with mathematical arguments, literature checks, exposition, proof review and verification code. OpenAI Codex performed an isolated internal reading of the compiled manuscript.",
+    "comments": "The versioned supplement contains the Lean source and pinned toolchain for the characteristic-zero formalization.\nhttps://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/research/foundations/formal/finite-etale-keller"
+  },
+  "contributorToConfirm": [
+    "Text origin and extent of human understanding",
+    "Distribution license and rights",
+    "Correctness, community interest and citations"
+  ],
+  "archive": {
+    "file": "common-arithmetic-fibers-hexagon-source.zip",
+    "entryPoint": "main.tex",
+    "sha256": "6250ee9098e108f4428f40f0310240c0f0bdedff346b9a6ea224486de6ab297a",
+    "texFileCount": 12,
+    "buildCommand": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+    "localBuild": "A clean extraction built with TeX Live 2023 and latexmk 4.83 without LaTeX warnings. Extracted text and all 19 page renders at 100 dpi matched paper.pdf.",
+    "reviewRecord": "verification.json"
+  }
+}

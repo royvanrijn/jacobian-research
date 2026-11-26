@@ -68,6 +68,6 @@ The [even calculation](EVEN_STRIPPED_QUINTIC_PRYM_AND_EXACT_MOMENTS.md)
 gives the equations, scope, and replay command. These computations and the
 finite Newton census support the argument without a universal purity cutoff.
 
-The [standalone manuscript](../../../unpublished/primitive-balanced-image-spectrum/main.tex)
+The [standalone manuscript](../../../results/primitive-balanced-image-spectrum/main.tex)
 assembles the three leading-form cases, the low-degree exclusions and the
 common-marker integer family.

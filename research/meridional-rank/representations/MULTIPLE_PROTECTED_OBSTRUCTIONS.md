@@ -395,6 +395,55 @@ coloring of `U` by four double transpositions with these two outer
 closures. It does not assert that disconnected local actions have total
 support at most eight.
 
+### 4.2. The Hurwitz budget and coalescence at genus zero
+
+Consider a connected degree-`n` cover of the projective line of genus
+`g`, with `b` finite branch values whose permutations are double
+transpositions. Let the permutation over infinity have `s` cycles,
+counting fixed points. Suppose the finite branch tuple contains `k`
+copies of the four-factor local block of Theorem 3, with both outer
+entries returned by `U` and with pairwise disjoint factor positions.
+Then
+
+\[
+                         k\le 2g+s-1.
+\]
+
+The permutation index is two for each finite branch and `n-s` over
+infinity. Riemann–Hurwitz gives `2g-2=-2n+2b+(n-s)`, so the cycle rank
+of the connected occurrence graph is `2b-n+1=2g+s-1`. The local
+cycles from Theorem 3 have disjoint edge supports in the occurrence
+graph, even when different blocks reuse sheets. They give `k`
+independent cycle vectors. This proof uses the finite branch tuple
+and the two outer returns. A knot closure and a returning tail play
+no role. For the genus-zero setting, see [Pakovich, equation (1.1)
+and Theorem 1.1](https://pakovich.github.io/lau.pdf).
+
+A genus-zero polynomial tuple has `s=1` and admits no such block.
+A genus-zero Laurent tuple has `s=2` and admits at most one. If four
+consecutive entries form that block, its occurrence graph has rank
+one, so it must be one of the [two rank-one local classes, equations
+(2) and (3)](PROTECTED_U_DOUBLE_TRANSPOSITION_CLASSIFICATION.md#2-complete-finite-proof-of-theorem-1).
+In the first class the first two factors share `(23)` and their
+secondary transpositions are `(01),(14)`. In the second they share
+`(01)` with secondaries `(23),(24)`. Thus in either case the adjacent
+product cancels the shared transposition and is a three-cycle. The
+common edge is the unique doubled edge of the full occurrence graph.
+
+After replacing the adjacent pair by its product, expand that
+three-cycle into the two secondary edges. The resulting graph is
+the original unicyclic graph with both occurrences of its doubled
+edge removed. It has two tree components. The tree-product argument
+in Section 4.1 shows that the unchanged total permutation has exactly
+one cycle on each component. For pole type `(n-1,1)`, one component
+is therefore a singleton. Deleting it gives the genus-zero polynomial
+tuple on `n-1` sheets immediately. For other two-cycle pole types the
+same replacement gives the two tree components with those cycle
+lengths. The connected rank-one class in equation (2) has eight
+sheets and pole type `(7,1)`, so `k=1` is attained. This local test
+applies to a displayed protected block. The general `(n-1,1)`
+Laurent reduction is established by the [cycle-folding theorem](../../arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md).
+
 ## 5. Primary input, checks and assurance
 
 The indispensable local signed-matrix input is Lemmas `lem:spans`

@@ -6,6 +6,12 @@ Gives a quadratic-gauge proof and Lean formalization of prescribed full finite e
 
 [PDF](paper.pdf) · [LaTeX](main.tex) · [Metadata](metadata.json) · [Source bundle](source.zip) · [Current edition checks](verification.json)
 
+[Hexagon TeX upload](common-arithmetic-fibers-hexagon-source.zip) · [Hexagon submission fields](hexagon-metadata.json)
+
+The Hexagon ZIP builds from `main.tex`. Its 19-page local build matches the
+reviewed PDF. The contributor selects a license and confirms Hexagon's
+declarations at submission.
+
 The characteristic-zero polynomial-presentation theorem and abstract finite-etale corollary have a Lean development; broader supplied-presentation scope has a separate assurance boundary.
 
 The [formal source supplement](https://github.com/royvanrijn/jacobian-research/tree/c32b9b4d273cf7988e85184a0d5eae9c488727fd/research/foundations/formal/finite-etale-keller)

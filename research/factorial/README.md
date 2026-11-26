@@ -4,12 +4,12 @@
 
 Factorial moment functionals, composition rigidity and Strong Factorial families. One varying exponent also permits any independent common monomial factor, with all terminals covered.
 
-**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary multivariate two-monomial supports, terminals 2 through 5 are proved. The result holds at all terminals for disjoint nonconstant monomials and when each monomial has private exponent sum at least two. The all-order multivariate and larger-support assertions remain open. Private exponent sums one and at least three are now covered at every terminal. For sums one and two, only terminals 6 through 360 with shared curvature below 4 log 2 remain in this class.
+**Authored assessment:** Long's Hexagon preprint establishes the two-variable Factorial Conjecture and the two-dimensional product-exponential Integral Conjecture. The eventual factorial power radical is zero. The nonflat proof is independent of EIT I, which supplies the general flat case. Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary multivariate two-monomial supports, terminals 2 through 5 are proved. The result holds at all terminals for disjoint nonconstant monomials and when each monomial has private exponent sum at least two. The all-order multivariate and larger-support assertions remain open. Private exponent sums one and at least three are now covered at every terminal. For sums one and two, only terminals 6 through 360 with shared curvature below 4 log 2 remain in this class.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
 | All-index binomial SFC at transcendental Gamma shapes; ordinary index criteria | Internal result | proved | [Source](image-rigidity/BINOMIAL_IRREDUCIBILITY_REDUCTION.tex) |
-| Binary Factorial and composition rigidity reproductions | Internal result | proved | [Source](image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex) |
+| Binary Factorial, product-exponential Integral Conjecture and composition rigidity | Internal result | proved | [Source](image-rigidity/STATUS_AND_LITERATURE.tex) |
 | Restricted all-dimensional families | Internal result | proved | [Source](image-rigidity/SIMPLEX_PENCILS_AND_AFFINE_LIMITS.tex) |
 | All ordinary constant-plus-power SFC | Internal result | proved | [Source](image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex) |
 | Other universal two-term SFC families | Internal result | proved | [Source](image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex) |
@@ -155,12 +155,14 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Uniform eventual diffuse coprimality in the moving critical window | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_MOVING_CRITICAL_WINDOW.md) |
 | Prime and post-prime terminals for same-orientation unit-gap supports | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIT_GAP_PRIME_TERMINALS.md) |
 
-**Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
+**Computed obligations:** 46 unresolved; 26 resolved within their exact scope.
 
 
 Scope limits:
 
-- Unrestricted FC and SFC remain open. Universal special-family theorems do not supply an arbitrary-support reduction.
+- Long's nonflat and full binary results, the exact EIT I dependency, and consequences for the product Laguerre image, two-pair Image weights, finite detection, and Gaussian radial phases are recorded in the credited scope overview. Ordinary Factorial in dimension at least three and unrestricted Strong Factorial remain open.
+- The fixed-degree factorial moment test has a computable cutoff for each prescribed start. Term-count bounds at every starting index are the separate Strong Factorial problem.
+- The nonflat normalized moment series is nonrational. Polynomial pushforwards of the binary product-exponential measure inherit the Mathieu–Zhao integral kernel with radical equal to the pullback ideal. EIT II yields the stated flat Gamma family with a high-degree phase in one affine angular coordinate.
 - Earlier 26/27, no-carry, adjacent-part, residual/parity and all-prime filters retain their proved scopes. They are unnecessary for ordinary degree-five completion; no-carry coverage failure and a surviving local degree are not SFC counterexamples.
 - Every prime-power lower-one family X(A+BX^(p^s)) satisfies ordinary SFC at every index, and gap-two lower exponents 2,3 are proved at every positive real shape. The scalar-minor theorem completes ordinary support {2,5}, hence every ordinary degree <=5 binomial. Full binomial SFC and all-real-shape H3 total nonnegativity remain open.
 - The gap-two families X^2(A+B X^2), X^3(A+B X^2), X^4(A+B X^2) and X^5(A+B X^2) satisfy SFC at every index and every positive real Gamma shape. The lower-four and lower-five extensions use strict Pick quotients and Gamma-product zero-free sectors; all-positive-real-shape assertions for other lower exponents remain separate.
@@ -269,5 +271,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF
 - **mathematical / open:** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
 - **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at every remaining terminal N>=6.](image-rigidity/MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
+- **verification / open:** [Verify EIT V’s strict-extremum comparison on the specific EIT VI odd family.](image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md) — GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -61,7 +61,7 @@ integral of \(|z|^{-2k}\,d^2z\) transversely to that divisor. Thus finite
 volume on all bounded phase regions makes the pulled-back volume form
 regular on \(Y\).
 
-The [proper-volume lemma](../../../unpublished/primitive-balanced-image-spectrum/proper-volume.tex)
+The [proper-volume lemma](../../../results/primitive-balanced-image-spectrum/proper-volume.tex)
 then excludes a nonzero polynomial exponential period on a compact
 closed cycle in \(Y\). The original real sphere
 \(\Gamma=\{y=\overline x,\ t\in\mathbb R,\ 2|x|^2+t^2=1\}\)

@@ -54,6 +54,28 @@ def check_upper_half_pole():
     assert moment_pair(phase, order, prime) == (0, 0)
     print("Upper-half correction: inputs (0, 5, 13), residues (0, 0) modulo 43")
 
+    extra_residues = []
+    for exponent in (order + 2 * prime, order + 3 * prime):
+        # Every possible angular-constant denominator is in this interval,
+        # independently of which coefficients vanish modulo prime.
+        assert prime**2 < (n - 2) * exponent + 1 <= n * exponent + 1 < 2 * prime**2
+        literal_power = power(phase, exponent, prime)
+        residue = sum(
+            coefficient * pow((height + 1) // prime, -1, prime)
+            for (angle, height), coefficient in literal_power.items()
+            if angle == 0 and height % 2 == 0 and (height + 1) % prime == 0
+        )
+        extra_residues.append(residue % prime)
+    assert extra_residues == [0, 16]
+    print("Upper-half continuation: orders 117 and 160 give (0, 16) modulo 43")
+
+    prime = 61
+    assert s * prime % (2 * n) == 1
+    order = (s * prime - 1) // n
+    phase = build_phase(n, 4, prime, {(0, n - 1): 6})
+    assert normalized_moment_residue(power(phase, order, prime), prime) == 5
+    print("Refined progression: order 44 gives 5 modulo 61")
+
 
 if __name__ == "__main__":
     check_wider_strip()

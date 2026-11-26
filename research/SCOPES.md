@@ -10,9 +10,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 ## Moments and vanishing
 
-**Topic scope:** The regular-sequence Image assertion in characteristic zero holds universally for one operator and fails in every larger operator count. The one-operator theorem covers c∂_z−P(z) with an arbitrary polynomial multiplier over any commutative Q-algebra. Pure primitive two-pair quintics have bounded ground-field normal forms with exact orbit equivalence and a sharp marker cutoff. Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two contraction pairs have balanced Image failures in every degree at least four. Radially primitive failures with absolute nonpower witnesses occur in degree four and every degree at least six, with the same fixed marker Z at every positive order. Every pure radially primitive quintic is safe. A radially padded quartic gives a nonprimitive quintic failure. For the orthogonal action induced by the Hopf quadric, the geometric nullcone implies all-marker safety. The padded quartics give pure forms outside this nullcone in every balanced degree at least four. Three or more pairs have primitive absolute nonpower witnesses in every balanced degree at least two, with one fixed marker at every order. All polynomial automorphisms preserve the normalized rank-one trace for every n>=2. Further reductions classify noncentral constant affine cubic shapes, exclude unsafe degree5/7 in the entire invariant-zero mixed cubic branch, and prove actual prime-balanced Image counterexamples automatically absolute scalar-nonpower. A constant-invariant/fixed-shape bridge isolates the smooth elliptic j frontier without treating constant j as a constant K(x)-curve. Every hypothetical unsafe exact-height-three phase of least degree seven has nonzero discriminant and nonconstant j. The full automorphism orbits of the three specified Hopf seeds now have exact degree spectra: f4 all even degrees>=4, f6 all multiples of3>=6, and f8 the stated odd-multiplier spectrum with first prime11. Every affine reductive homogeneous space now has a normalized trace preserved by all algebraic automorphisms over every characteristic-zero extension. The trace is independent of presentation, preserved by isomorphisms, and compatible with marked normalized algebra trace along arbitrary finite-etale maps within the class; geometric K-action forms need no K-point. Explicit standard rational-form product and quaternion pairs now fail Mathieu over every characteristic-zero field, and EVERY nondegenerate even-dimensional quadratic complement of dimension>=4 has the same fixed-marked all-order failure. Over every formally real field, the standard compact-form factors and scalar torus separately have Mathieu kernels while their product fails, proved by rational Gram/SOS and exact Laurent cancellation. Every isotropic nondegenerate quadratic complement of dimension>=3 over any characteristic-zero field now has explicit all-order fixed-marker Mathieu counterexamples, including an absolutely non-proper-power phase. The seed has exact mixed moments and sharp pure-power and monomial-marker thresholds. A direct uniform normalizer now supplies a regular absolutely unit-nonpower pure phase and ONE fixed marker surviving every positive order on EVERY nondegenerate quadratic complement of dimension>=3 over EVERY characteristic-zero field, with sharp pure-power and monomial-marker thresholds. The normalized Reynolds kernel on a nondegenerate positive-dimensional quadratic complement is now classified over EVERY characteristic-zero field: Mathieu iff dimension<=2 iff no absolute unit-nonpower pure phase with ONE all-orders surviving marker. Within this exact family the global property and strong-witness existence are invariant under every scalar extension. Polyhedral joint-density normalizers give one fixed unit at every order on compact rational torus-normalizer quotients. Radial-wall invariant tests construct rational all-order unit counterexamples from actual nonabelian zero-submersion data. An exact ternary unitary/orthogonal radius law yields rational sharp pure-power and scalar-marker profiles on all specified data and full normalizer quotients. Positive polyhedral strata and actual invariant tests give fixed all-order Laurent units; a principal Weyl-face construction realizes this over every characteristic-zero extension for actual compact rational quotients with nonideal stabilizer Lie algebra. Algebraic reconstruction of actual principal-face densities and conditional finite amplifier certification are recorded with exact-data and full-component symmetry gates. A fixeddegree4 SO3-radius circuit gives explicit unitary-block product counterexamples in every n>=3 and sharp scalar-monomial marker profiles for every sufficient pure family a>=2n-3. The unitary SO3-block family now has a complete eventual scalar Laurent marker classification: the safe space is exactly tK[t^-1]. A terminating exact presentation-to-witness algorithm is proved for promised compact rational nonideal homogeneous inputs. A self-contained Gaussian method obstruction proves eventual positivity for every nonzero real polynomial radial amplifier in the displayed Laurent normalizer. For every characteristic-zero field and positive Laurent rank, the Gaussian_n times Laurent constant-term kernel is Mathieu exactly when n<=2; n>=3 has a native rational quadratic all-order unit counterpair. Exact circular homogenization gives the stated fixed-degree structured Gaussian/nullcone classifications. Native affine Gaussian phases in every Gaussian dimension and Laurent rank have exact pure/eventual/all-marker-safe classification by omission of zero from conv(supp a union supp sum b_i^2), with fixed-power large-prime detections in the opposite case. At positive Laurent rank the universal bounded-Gaussian-degree pure-to-safe implication holds exactly when n<=2 or d<=1. Full-sphere leading binary-form packets and exact-half roots have elementary infinite-nonvanishing obstructions; specified quintic four-root and five-double-root configurations are also excluded using scoped ordinary-prime theorems and locally verified full-End cases. The all-degree sphere phase class P(y)+xS(t) has exact pure/eventual/fullambient-marker classification by P(0)=0 and(P=0 or S=0),with uniform safe cutoff m>deg(marker). Every degree<=6 sphere phase of angular support[-1,1] has exact pure/eventual/full-sphere-marker classification: one-sided with zero height core or isotropic linear; safe members obey m>deg(marker). Newton-face reductions identify the last two mixed stripped quintic faces in their stated sectors. Rank-two CM ordinarity with at most two balanced pairs proves both selected Hasse nonvanishing results and excludes eventual purity in those faces. The two quadratic residual charts and the two specified even charts have empty geometric pure-parameter images. General prime-face parameter rigidity and terminating elimination algorithms retain their stated domains. For exact-height-three winding-one septics with nonzero leading center, degree-five E is excluded. The residual degree-four E has one quadruple root, both depressed coefficients nonzero, nonzero discriminant and nonconstant cubic invariant. Any pure phase there would have the fixed surviving marker x. Exact moment tests exclude the stated sparse coefficient slices. The first 34 inverse coefficients suffice on a Zariski open around nonsingular constant depressed profiles. In fixed sphere and balanced Image degree boxes the all-marker safety locus has effective polynomial equations, with a computable linear onset for eventual mixed vanishing.
+**Topic scope:** The regular-sequence Image assertion in characteristic zero holds universally for one operator and fails in every larger operator count. The one-operator theorem covers c∂_z−P(z) with an arbitrary polynomial multiplier over any commutative Q-algebra. Pure primitive two-pair quintics have bounded ground-field normal forms with exact orbit equivalence and a sharp marker cutoff. Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two contraction pairs have balanced Image failures in every degree at least four. Radially primitive failures with absolute nonpower witnesses occur in degree four and every degree at least six, with the same fixed marker Z at every positive order. Every pure radially primitive quintic is safe. A radially padded quartic gives a nonprimitive quintic failure. For the orthogonal action induced by the Hopf quadric, the geometric nullcone implies all-marker safety. The padded quartics give pure forms outside this nullcone in every balanced degree at least four. Three or more pairs have primitive absolute nonpower witnesses in every balanced degree at least two, with one fixed marker at every order. All polynomial automorphisms preserve the normalized rank-one trace for every n>=2. Further reductions classify noncentral constant affine cubic shapes, exclude unsafe degree5/7 in the entire invariant-zero mixed cubic branch, and prove actual prime-balanced Image counterexamples automatically absolute scalar-nonpower. A constant-invariant/fixed-shape bridge isolates the smooth elliptic j frontier without treating constant j as a constant K(x)-curve. Every hypothetical unsafe exact-height-three phase of least degree seven has nonzero discriminant and nonconstant j. The full automorphism orbits of the three specified Hopf seeds now have exact degree spectra: f4 all even degrees>=4, f6 all multiples of3>=6, and f8 the stated odd-multiplier spectrum with first prime11. Every affine reductive homogeneous space now has a normalized trace preserved by all algebraic automorphisms over every characteristic-zero extension. The trace is independent of presentation, preserved by isomorphisms, and compatible with marked normalized algebra trace along arbitrary finite-etale maps within the class; geometric K-action forms need no K-point. Explicit standard rational-form product and quaternion pairs now fail Mathieu over every characteristic-zero field, and EVERY nondegenerate even-dimensional quadratic complement of dimension>=4 has the same fixed-marked all-order failure. Over every formally real field, the standard compact-form factors and scalar torus separately have Mathieu kernels while their product fails, proved by rational Gram/SOS and exact Laurent cancellation. Every isotropic nondegenerate quadratic complement of dimension>=3 over any characteristic-zero field now has explicit all-order fixed-marker Mathieu counterexamples, including an absolutely non-proper-power phase. The seed has exact mixed moments and sharp pure-power and monomial-marker thresholds. A direct uniform normalizer now supplies a regular absolutely unit-nonpower pure phase and ONE fixed marker surviving every positive order on EVERY nondegenerate quadratic complement of dimension>=3 over EVERY characteristic-zero field, with sharp pure-power and monomial-marker thresholds. The normalized Reynolds kernel on a nondegenerate positive-dimensional quadratic complement is now classified over EVERY characteristic-zero field: Mathieu iff dimension<=2 iff no absolute unit-nonpower pure phase with ONE all-orders surviving marker. Within this exact family the global property and strong-witness existence are invariant under every scalar extension. Polyhedral joint-density normalizers give one fixed unit at every order on compact rational torus-normalizer quotients. Radial-wall invariant tests construct rational all-order unit counterexamples from actual nonabelian zero-submersion data. An exact ternary unitary/orthogonal radius law yields rational sharp pure-power and scalar-marker profiles on all specified data and full normalizer quotients. Positive polyhedral strata and actual invariant tests give fixed all-order Laurent units; a principal Weyl-face construction realizes this over every characteristic-zero extension for actual compact rational quotients with nonideal stabilizer Lie algebra. Algebraic reconstruction of actual principal-face densities and conditional finite amplifier certification are recorded with exact-data and full-component symmetry gates. A fixeddegree4 SO3-radius circuit gives explicit unitary-block product counterexamples in every n>=3 and sharp scalar-monomial marker profiles for every sufficient pure family a>=2n-3. The unitary SO3-block family now has a complete eventual scalar Laurent marker classification: the safe space is exactly tK[t^-1]. A terminating exact presentation-to-witness algorithm is proved for promised compact rational nonideal homogeneous inputs. A self-contained Gaussian method obstruction proves eventual positivity for every nonzero real polynomial radial amplifier in the displayed Laurent normalizer. For every characteristic-zero field and positive Laurent rank, the Gaussian_n times Laurent constant-term kernel is Mathieu exactly when n<=2; n>=3 has a native rational quadratic all-order unit counterpair. Exact circular homogenization gives the stated fixed-degree structured Gaussian/nullcone classifications. Native affine Gaussian phases in every Gaussian dimension and Laurent rank have exact pure/eventual/all-marker-safe classification by omission of zero from conv(supp a union supp sum b_i^2), with fixed-power large-prime detections in the opposite case. At positive Laurent rank the universal bounded-Gaussian-degree pure-to-safe implication holds exactly when n<=2 or d<=1. Full-sphere leading binary-form packets and exact-half roots have elementary infinite-nonvanishing obstructions; specified quintic four-root and five-double-root configurations are also excluded using scoped ordinary-prime theorems and locally verified full-End cases. The all-degree sphere phase class P(y)+xS(t) has exact pure/eventual/fullambient-marker classification by P(0)=0 and(P=0 or S=0),with uniform safe cutoff m>deg(marker). Every degree<=6 sphere phase of angular support[-1,1] has exact pure/eventual/full-sphere-marker classification: one-sided with zero height core or isotropic linear; safe members obey m>deg(marker). Newton-face reductions identify the last two mixed stripped quintic faces in their stated sectors. Rank-two CM ordinarity with at most two balanced pairs proves both selected Hasse nonvanishing results and excludes eventual purity in those faces. The two quadratic residual charts and the two specified even charts have empty geometric pure-parameter images. General prime-face parameter rigidity and terminating elimination algorithms retain their stated domains. For exact-height-three winding-one septics with nonzero leading center, degree-five E is excluded. The residual degree-four E has one quadruple root, both depressed coefficients nonzero, nonzero discriminant and nonconstant cubic invariant. Any pure phase there would have the fixed surviving marker x. Exact moment tests exclude the stated sparse coefficient slices. The first 34 inverse coefficients suffice on a Zariski open around nonsingular constant depressed profiles. A finite-node Lefschetz argument excludes a dense open of the quartic-leading septic family. Exact moment tests exclude constant depressed coefficients and third-order depressed jets when deg d is at most two. Every remaining candidate satisfies the double-cover Cartier and residue restrictions. In fixed sphere and balanced Image degree boxes the all-marker safety locus has effective polynomial equations, with a computable linear onset for eventual mixed vanishing.
 
 **Computed obligation progress:** 3 falsified; 32 open; 9 proved / discharged.
+
+**Authored scope assessment:** The primitive balanced-degree spectrum paper is public as Hexagon 2611.01080v1. The release includes the exact two-pair failure spectrum and safe primitive quintics, and its rank-two CM ordinarity input retains the at-most-two-balanced-embedding-pairs hypothesis.
 
 **Authored scope assessment:** The universal GVC/GMC dimension classifications and Gaussian dimension-degree boundary are claimed closed in their exact domains. Higher-dimensional GMC is refuted by witnesses; general Gaussian extensions is not an unrestricted open GMC claim.
 
@@ -135,6 +137,10 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 **Authored scope assessment:** At exact cubic height, E(0)=0 gives complete purity and safety in every degree. For unit-center septics, only the degree-four leading coefficient with one quadruple root and varying cubic invariant remains.
 
 **Authored scope assessment:** The full van den Essen–Zhao one-operator assertion holds for arbitrary polynomial multipliers over commutative Q-algebras. The field prime obstruction gives zero eventual radical for c≠0 and nonconstant P. Finite remainder windows and the shifted coefficient estimates permit descent across zero divisors.
+
+**Authored scope assessment:** All-order Gaussian purity is classified for the sixteen homogeneous sextic directions with Laurent weight at most four on q=1, including all nonsquarefree and zero faces.
+
+**Authored scope assessment:** Long’s binary Factorial theorem yields a trivial eventual pure-moment radical on the two Gaussian radii of block sizes (2,2). In the two-pair polynomial Image problem, it excludes a vertex in the nonnegative orthant of the weight hull of an eventually pure phase. See the exact transfer arguments.
 
 ### GVC-GMC-IMAGE
 
@@ -1702,7 +1708,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Current blockers:** none in declared routes.
 
-**Verification limits:** Internal mathematical audits and exact supporting replays. The separate finite moment calculations use rational arithmetic and, in the even projective charts, an explicit properness bridge. No external human review, publication, or formal verification is claimed.
+**Verification limits:** The standalone paper is public as Hexagon 2611.01080v1. The deposited TeX matches the current paper. Internal mathematical audits and exact supporting replays retain their original scope, including the properness bridge for the even projective charts. External mathematical review, independent external replay and formal verification are unrecorded.
 
 ### PIS-TETRAHEDRAL-LOCAL-CENTROID-MAXIMUM
 
@@ -1900,11 +1906,96 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Verification limits:** The cofactor identity and both modular coprimality tests were recomputed from the retained interval formulas in an internal exact arithmetic audit.
 
+### HOPF-WINDING-ONE-CUBIC-QUARTIC-CONSTANT-DEPRESSED-COEFFICIENT-EXCLUSION
+
+[Constant depressed coefficients excluded in quartic-leading septics](foundations/extended-geometry/WINDING_ONE_CUBIC_CONSTANT_DEPRESSED_COEFFICIENTS.md)
+
+**Exact scope:** For a regular quartic-leading winding-one phase of least sphere degree seven with the boundary divisibilities, eventual purity is impossible if either depressed coefficient p or q is constant, including a nonzero constant.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The interval expansions and resultant checks were recomputed with exact arithmetic over rational and quadratic fields and over F29.
+
+### HOPF-WINDING-ONE-CUBIC-QUARTIC-THIRD-ORDER-DEPRESSED-PROFILE-EXCLUSION
+
+[Third-order depressed profiles excluded in quartic-leading septics](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_THIRD_ORDER_TAIL.md)
+
+**Exact scope:** For least sphere degree seven with E=(1+x)^4, the boundary divisibilities and deg d at most two, eventual purity is impossible when p-p(0) and q-q(0) are both divisible by x^3.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The exact Python/Singular replay regenerated the interval moments, verified the lift products and their guard denominators, and checked every exceptional factor.
+
+### HOPF-WINDING-ONE-CUBIC-QUARTIC-GENERIC-LEFSCHETZ-EXCLUSION
+
+[A dense open of quartic-leading winding-one septics is excluded](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_GENERIC_EXCLUSION.md)
+
+**Exact scope:** A nonempty Zariski-open dense subset of the normalized regular quartic-leading septic coefficient space has infinitely many nonzero positive pure moments. Dense open exclusions also hold on the stated three pole strata. Exceptional coefficient loci still require separate analysis.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The boundary models, local period tests, compact spanning argument, and parameter-incidence dimensions were checked internally.
+
+### HOPF-WINDING-ONE-CUBIC-QUARTIC-DOUBLE-COVER-CARTIER-OBSTRUCTION
+
+[Double-cover Cartier obstruction for quartic-leading cubics](foundations/extended-geometry/WINDING_ONE_CUBIC_QUARTIC_LEADING_CARTIER_TWO_FORM.md)
+
+**Exact scope:** For the normalized regular quartic-leading family with deg d at most three, deg b at most five and deg c at most seven, eventual purity forces the rational two-form dx wedge dv/(U Y), Y^2=xU P, to have zero Cartier operator and be exact after reduction at all sufficiently large good primes of each number-field specialization.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The fixed marker, selected exponents and arbitrary residue degrees were audited internally. Exactness here concerns positive characteristic.
+
+### HOPF-WINDING-ONE-CUBIC-QUARTIC-CARTIER-RESIDUE-EXCLUSIONS
+
+[Two residue restrictions on the quartic-leading family](foundations/extended-geometry/WINDING_ONE_CUBIC_QUARTIC_LEADING_CARTIER_RESIDUE_EXCLUSIONS.md)
+
+**Exact scope:** The double-cover Cartier condition excludes the stated interior weighted orders with a nontrivial initial cubic and forces the explicit first boundary coefficient identity in the squarefree cubic chart at U=0.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Local Laurent coefficients and the primitive comparison were checked against the forms on the two charts.
+
+### GAUSSIAN-EVEN-FACE-SEXTIC-PURITY
+
+[Pure Gaussian phases in the sixteen-dimensional sextic family](foundations/extended-geometry/CM_NEWTON_POLYGONS_AND_MOMENT_OBSTRUCTIONS.md)
+
+**Exact scope:** Over characteristic zero, use Wick moments for q=t^2+2xy and homogeneous sextics F=a*y^2*t^4+b*q*t^4+c*q^2*x^2+R with R of Laurent weight <4 on q=1. All powers can vanish only if b=0 and ac=0. In the sphere normal form, the one-sided or axial phases are pure exactly when the axial part U+V*t^2 vanishes. With both angular signs, purity holds exactly when a=b=0 and the sphere phase has degree at most two with nilpotent homogeneous quadratic lift. These tests include the zero top face and arbitrary permitted lower weights.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof checked internally. Exact spot checks included the basis count, three signatures and a cancellation of the first two moments.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
 |---|---|---|---|---|
 | CONJ-MIXED-HOPF-PURITY-FORCES-INVARIANT-ZERO | claim | falsified / partial | FALSE claim: every pure regular mixed cubic phase, even in least degree5, has I=27CE^2-9BDE+2D^3=0. The explicit SAFE phase exp(xJ)[y(t+1)] has degree5,height3,I2. This refutes that necessary-condition proposal, not global degree5/7 safety. | [foundations/extended-geometry/MIXED_CUBIC_ZERO_CENTER_AND_CONDITIONAL_OFFCENTER.md](foundations/extended-geometry/MIXED_CUBIC_ZERO_CENTER_AND_CONDITIONAL_OFFCENTER.md): Section5 M17--M19, direct source-authenticated refutation |
+| EXT-APZ-LEFSCHETZ-DISC-HANDLES | claim | proved / partial | For a Lefschetz fibration of a smooth oriented four-manifold over a disk with distinct critical values, the total space is obtained from a product regular fiber times a disk by one two-handle per critical point, attached along its vanishing cycle. The monodromy is the corresponding product of local Dehn twists. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_LEFSCHETZ_EXCLUSION.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_LEFSCHETZ_EXCLUSION.md): The vanishing cycles span compact homology |
 | EXT-BERG-LOPEZ-FACTORIAL-POWER-MOMENT-THRESHOLD | claim | proved / partial | For c>0 the probability law on (0,infinity) with Mellin moments (q!)^c exists, and its Stieltjes moment sequence is determinate exactly when c<=2. | [moments/vanishing/sources/berg-lopez-urbanik-1310.0252v1.pdf](moments/vanishing/sources/berg-lopez-urbanik-1310.0252v1.pdf): Introduction equation (4), Theorem 2.1, Corollary 2.3 and its proof |
 | EXT-BIERSTONE-EFFECTIVE-PRINCIPALIZATION | claim | proved / partial | On a smooth characteristic-zero variety resolve a base ideal by a finite sequence of smooth blowups and resolve a reduced divisor to simple normal crossings. The construction admits finitely presented generic models. | [foundations/extended-geometry/UNIFORM_SPHERE_MOMENT_TAILS_AND_SAFETY_LOCI.md](foundations/extended-geometry/UNIFORM_SPHERE_MOMENT_TAILS_AND_SAFETY_LOCI.md): Bierstone, Grigoriev, Milman and Wlodarczyk, Theorems 1.0.1–1.0.2 |
 | EXT-BOST-SOLVABLE-STRUCTURE-PCURVATURE | claim | proved / partial | For a flat principal bundle over a smooth connected variety over a number field with solvable neutral structural group, vanishing p-curvatures outside finitely many prime ideals implies finite etale triviality. Applies to the additive group and hence to exactness of a rational 1-form when additive reductions are exact. | [foundations/extended-geometry/WINDING_ONE_CUBIC_FIVE_DEGREE_MARKER_DEPENDENCE.md](foundations/extended-geometry/WINDING_ONE_CUBIC_FIVE_DEGREE_MARKER_DEPENDENCE.md): Bost, Theorem 2.9, applied to dz=eta |
@@ -1940,6 +2031,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | GAUSSIAN-NONLINEAR-MONOMIAL-FIBRE-FULL-ACTUAL-IMAGE | claim | proved / complete | For phase W(1+Z^m)*product Y_i^(k_i) with m>=2, k_i>=1 and independent ordinary Gaussian Yi, the original unit cyclic rank is ell+rho-d-\|N\| and the full actual rank is ell+rho-d+1. The stated original markers give a Laurent basis and exact polynomial-time saturation. | [moments/vanishing/GAUSSIAN_NONLINEAR_MONOMIAL_FIBRE_FULL_IMAGE.md](moments/vanishing/GAUSSIAN_NONLINEAR_MONOMIAL_FIBRE_FULL_IMAGE.md): The unit differential order; Original markers and the additional periods; Polynomial time and the regular core |
 | GAUSSIAN-NONLINEAR-MONOMIAL-FIBRE-STIELTJES | claim | proved / complete | The raw Gaussian unit coefficients on the stride ell form Stieltjes moments of a compact beta-product scale times independent absolute-Gaussian powers. The measure is determinate exactly when rho=sum k_i*ell/2<=2. | [moments/vanishing/GAUSSIAN_NONLINEAR_MONOMIAL_FIBRE_FULL_IMAGE.md](moments/vanishing/GAUSSIAN_NONLINEAR_MONOMIAL_FIBRE_FULL_IMAGE.md): Positive moment law and its determinacy |
 | HOPF-WINDING-ONE-CUBIC-CONSTANT-DEPRESSED-PROFILE-LOCAL-RIGIDITY | claim | proved / partial | In a bounded coefficient box for the two depressed polynomials, the formal inverse-period equations cut out the constant-profile subspace on a Zariski-open neighborhood of every constant profile with 4p0^3+27q0^2 nonzero. For positive maximum degree bound K, the first 4K-2 negative inverse coefficients already suffice on a computable open. | [foundations/extended-geometry/WINDING_ONE_CUBIC_CONSTANT_PROFILE_LOCAL_RIGIDITY.md](foundations/extended-geometry/WINDING_ONE_CUBIC_CONSTANT_PROFILE_LOCAL_RIGIDITY.md): Theorem ConstantDepressedCubicLocalRigidity.** There is a Zariski-open |
+| HOPF-WINDING-ONE-CUBIC-DEPRESSED-TRANSLATION-MOMENTS | claim | proved / partial | In the normalized regular quartic-leading chart, the substitution v to v+(d(0)-d(x))/3 preserves each positive sphere moment and makes the coefficient of v^2 constant d(0). | [foundations/extended-geometry/WINDING_ONE_CUBIC_CONSTANT_DEPRESSED_COEFFICIENTS.md](foundations/extended-geometry/WINDING_ONE_CUBIC_CONSTANT_DEPRESSED_COEFFICIENTS.md): Lemma DepressedTranslationMoments.** For any normalized regular |
 | HOPF-WINDING-ONE-CUBIC-QUARTIC-SPARSE-LOWER-COEFFICIENTS | claim | proved / partial | For the normalized cubic P=v^3+d(x)v^2-v+c(x) with deg d at most three and either c=-d(0) or c=-d(x), purity holds exactly when d is constant. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_SPARSE_COEFFICIENTS.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_SPARSE_COEFFICIENTS.md): Proposition 1.** Suppose \(\deg d\le3\), \(b=-1\), and either |
 | HOPF-WINDING-ONE-CUBIC-QUARTIC-THIRD-ORDER-PERTURBATION | claim | proved / partial | For the normalized cubic P=P0(v)+x^3 Q(v), where P0=(v^2-1)(v+d0) and deg Q is at most two, purity holds exactly when Q=0. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_SPARSE_COEFFICIENTS.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_SPARSE_COEFFICIENTS.md): Proposition 2.** Suppose \(P(x,v)=P_0(v)+x^3Q(v)\) for a polynomial |
 | IMAGE2-EVEN-STRIPPED-EXACT-PROJECTIVE-SPECIAL-FIBER-EXCLUSIONS | claim | proved / partial | In the normalized even B=1 chart, a nonzero negative part is excluded through moment order 13 at q=0 and through order 14 at roots of the indicated quartic pivot. Exact modular Gröbner results and weighted-projective properness imply the characteristic-zero assertions. | [foundations/extended-geometry/EVEN_STRIPPED_QUINTIC_PRYM_AND_EXACT_MOMENTS.md](foundations/extended-geometry/EVEN_STRIPPED_QUINTIC_PRYM_AND_EXACT_MOMENTS.md): Finite-prefix weighted projective special-fiber exclusion certificates |
@@ -1961,6 +2053,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | SRC-IMAGE2-PRIME-DEGREE-DENSITY | claim | proved / partial | Pinned written classical corollary, exact finite arithmetic controls and all essential retained inputs. Finite tests do not establish an asymptotic. | [foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md](foundations/extended-geometry/PRIME_IMAGE_DEGREE_DENSITY.md): Sections1--6; [foundations/extended-geometry/verify_prime_image_degree_density.py](foundations/extended-geometry/verify_prime_image_degree_density.py): Exact parameter/divisor/CRT controls; [foundations/extended-geometry/prime_image_degree_density_source_ledger.json](foundations/extended-geometry/prime_image_degree_density_source_ledger.json): Input identities and source scopes; [foundations/extended-geometry/prime_image_degree_density_verification.json](foundations/extended-geometry/prime_image_degree_density_verification.json): Passed finite controls; [foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf](foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf): Classical Theorem2.1 and proof; [foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md](foundations/extended-geometry/HYPERBOLIC_ODD_HEIGHT_IMAGE_WITNESSES.md): Retained H18--H22 full all-odd-a theorem; [foundations/extended-geometry/verify_hyperbolic_odd_height_image.py](foundations/extended-geometry/verify_hyperbolic_odd_height_image.py): Retained construction checker; [foundations/extended-geometry/hyperbolic_odd_height_image_verification.json](foundations/extended-geometry/hyperbolic_odd_height_image_verification.json): Retained construction receipt |
 | SRC-MOM-BOXED-UNIVERSAL-MATHIEU | gap | proved / partial | Fixed finite polynomial coefficient family with constructible rational or specified-number-field guards. Decides universal complex pure safety theoretically and, on validity, returns a uniform pure-linear marker constant over every extension of the coefficient base. No unrestricted family loop was executed. | [foundations/extended-geometry/BOXED_UNIVERSAL_MATHIEU_DECISION.md](foundations/extended-geometry/BOXED_UNIVERSAL_MATHIEU_DECISION.md): Exact current packet, with finite and unrestricted proof scopes separated; [foundations/extended-geometry/verify_boxed_universal_mathieu_decision.py](foundations/extended-geometry/verify_boxed_universal_mathieu_decision.py): Exact current packet, with finite and unrestricted proof scopes separated; [foundations/extended-geometry/boxed_universal_mathieu_decision_inputs.json](foundations/extended-geometry/boxed_universal_mathieu_decision_inputs.json): Exact current packet, with finite and unrestricted proof scopes separated; [foundations/extended-geometry/boxed_universal_mathieu_decision_source_ledger.json](foundations/extended-geometry/boxed_universal_mathieu_decision_source_ledger.json): Exact current packet, with finite and unrestricted proof scopes separated; [foundations/extended-geometry/boxed_universal_mathieu_decision_verification.json](foundations/extended-geometry/boxed_universal_mathieu_decision_verification.json): Exact current packet, with finite and unrestricted proof scopes separated |
 | HOPF-STRIPPED-NONZERO-INTEGER-BEZOUT-IDENTITY | claim | proved / partial | The retained four integer multiplier polynomials of degrees9,8,7,6 (168,119,80,50 terms) multiply the four exact scaled generators to only one positive457-digit integer constant, with every other coefficient zero. This exact identity holds over every characteristic-zero field. | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md): Section2, equation15 and complete integer certificate |
+| HOPF-WINDING-ONE-CUBIC-QUARTIC-FINITE-NODES-DETECT-INVERSE-PERIOD | claim | proved / partial | For the trigonal pencil with the stated models over u=0,infinity and interior Morse points at distinct nonzero values, suppose the normalized model over u=1 is smooth with disjoint pole sections, and both sides of the large inverse circle have connected preimages. Then the inverse-branch period cannot vanish. At value zero the two node period rows are independent under the stated derivative condition. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_LEFSCHETZ_EXCLUSION.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_LEFSCHETZ_EXCLUSION.md): Lemma FiniteNodesDetectInversePeriod.** Consider the same trigonal |
 | GAUSSIAN-MONOMIAL-FIBRE-ENTRYWISE-POWER-DETERMINACY | claim | proved / partial | For theta>0, all entrywise powers of the raw and angular-normalized Gaussian binomial monomial-fibre coefficient subsequences are Stieltjes moment sequences, with all finite Hankel minors strictly positive. The raw powers are determinate exactly when theta*rho<=2, and all angular powers have compactly supported representing laws. | [moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md](moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_MOMENT_POWERS.md): Sections 1–3 and strict minors in Section 4 |
 | EXT-EWZ-IMAGE-THEOREM-2-8 | claim | proved / partial | For a Q-algebra A and a non-zero-divisor a in A with Aa radical, the operator image of partial_z-a on A[z] is a Mathieu subspace. | [foundations/extended-geometry/sources/van_den_essen_wright_zhao_1008_3962v2.pdf](foundations/extended-geometry/sources/van_den_essen_wright_zhao_1008_3962v2.pdf): Theorem 2.8 printed p5; proof pp5-6 using Proposition 2.10, Lemmas 2.11-2.13 and the one-variable Factorial theorem |
 | IMAGE-LND-REGULAR-CONSTANT-SHIFT-MATHIEU | claim | proved / partial | For any commutative Q-algebra A, locally nilpotent derivation δ of A and non-zero-divisor a∈ker δ, the image of δ−a is Mathieu. If δ^(d+1)f=δ^(e+1)g=0, the image membership of f^j for N≤j≤q(d,N) implies that of gf^m for m≥q(d(q−1)+e+1). The integer q(d,N) is computable by rational linear algebra. | see incoming proof routes |
@@ -3507,7 +3600,9 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | SUN3-ALL-SPECIFIED-Q-DATA-REAL-CONJUGACY | claim | proved / partial | Actualspecifiedq3 directsumq_r/E models: rationaldiagonalizerthenpositiverealdiagonalsquare-rootconjugacy COMMUTES withchosenDmatrix; divideby sqrt(d) givesEXACTstandardS. n3sameq3conjugacy. NoarbitraryQformclassification. | [foundations/extended-geometry/UNITARY_SO3_BLOCK_ALL_DIMENSIONS_EXPLICIT_RADIUS_COUNTEREXAMPLES.md](foundations/extended-geometry/UNITARY_SO3_BLOCK_ALL_DIMENSIONS_EXPLICIT_RADIUS_COUNTEREXAMPLES.md): Section6 |
 | SUN3-GH-DIRECT-ADJACENT-LAURENT-SUPPORT | claim | proved / partial | IdentityspecializationF_a=(1+t^-1)^a(2+t^-1),EVERYa>=Dhascoefficients2and2a+1atadjacentexponents0,-1,soactualG/H literalLaurentsupportprimitive. Independentmomentlaw. CertificateattachesONLYmodifiedF_a,notproper-powerseedp^a. | [foundations/extended-geometry/UNITARY_SO3_BLOCK_ALL_DIMENSIONS_EXPLICIT_RADIUS_COUNTEREXAMPLES.md](foundations/extended-geometry/UNITARY_SO3_BLOCK_ALL_DIMENSIONS_EXPLICIT_RADIUS_COUNTEREXAMPLES.md): Section6 |
 | SUN3-GH-DIRECT-IDENTITY-ORD1-ABSOLUTE-NONPOWER | claim | proved / partial | ACTUALG/H identityS0 givesp=1+t^-1. At t=-1/2 modifier1+p hasderivative-4andp=-1unit;smoothtotalspacegivesactualprimeord1inF_a=p^a(1+p)forEVERYa>=D, excludingunit-timesproperpoweroverEVERYalgebraicclosure. IndependentHCIZ/moments. CertificateattachesONLYmodifiedF_a,notproper-powerseedp^a. | [foundations/extended-geometry/UNITARY_SO3_BLOCK_ALL_DIMENSIONS_EXPLICIT_RADIUS_COUNTEREXAMPLES.md](foundations/extended-geometry/UNITARY_SO3_BLOCK_ALL_DIMENSIONS_EXPLICIT_RADIUS_COUNTEREXAMPLES.md): Section6 |
-| IMAGE2-STANDALONE-LOW-DEGREE-SAFETY | claim | proved / partial | Every pure phase of least sphere degree at most three is safe over characteristic-zero fields. The original balanced Image conclusion follows for arbitrary markers. | [../unpublished/primitive-balanced-image-spectrum/construction.tex](../unpublished/primitive-balanced-image-spectrum/construction.tex): Quadratic height and the degrees below four |
+| HOPF-WINDING-ONE-CUBIC-QUARTIC-BOUNDARY-CARTIER-RESIDUE-CONDITION | claim | proved / partial | If P(x,v_0+Uw)=U^3 Q(U,w) with Q monic cubic and Q_0=Q(0,w) squarefree, eventual purity implies Q_1=3Q_0-wQ_0'+alpha Q_0' for a scalar alpha, where Q_1 is the coefficient of U in Q. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUARTIC_LEADING_CARTIER_RESIDUE_EXCLUSIONS.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUARTIC_LEADING_CARTIER_RESIDUE_EXCLUSIONS.md): Proposition (Boundary residue).** Suppose there is a constant \(v_0\) |
+| HOPF-WINDING-ONE-CUBIC-QUARTIC-INTERIOR-CARTIER-RESIDUE-EXCLUSION | claim | proved / partial | At a geometric point x_0 outside {0,-1}, simultaneous orders at least four in p and six in q are incompatible with eventual purity when at least one corresponding coefficient is nonzero. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUARTIC_LEADING_CARTIER_RESIDUE_EXCLUSIONS.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUARTIC_LEADING_CARTIER_RESIDUE_EXCLUSIONS.md): Proposition (Interior weighted residue).** Write |
+| IMAGE2-STANDALONE-LOW-DEGREE-SAFETY | claim | proved / partial | Every pure phase of least sphere degree at most three is safe over characteristic-zero fields. The original balanced Image conclusion follows for arbitrary markers. | [../results/primitive-balanced-image-spectrum/construction.tex](../results/primitive-balanced-image-spectrum/construction.tex): Quadratic height and the degrees below four |
 | SLBF-THREE-ROOT-INFINITE-NONVANISHING | claim | proved / partial | If h_f has at most three geometric roots, each multiplicity at most d, a geometric SL2 change places it in the k=1 packet. Every such phase has infinitely many nonzero moments over every characteristic-zero field; roots at infinity and omitted roots with zero exponent are included. | [foundations/extended-geometry/SPHERICAL_LEADING_BINARY_FORM_MOMENT_OBSTRUCTIONS.md](foundations/extended-geometry/SPHERICAL_LEADING_BINARY_FORM_MOMENT_OBSTRUCTIONS.md): Theorem 1 consequence; Section 4 |
 | SLBF-QUINTIC-FIVE-DOUBLE-ROOT-NONVANISHING | claim | proved / partial | Every exact-degree-five sphere phase over every characteristic-zero field whose leading decic has exactly five distinct geometric roots each of multiplicity two has infinitely many nonzero power moments. The actual normalized coefficient-carrying line, all-special sixfold gate and one fixed specialization are used; arbitrary lower terms are allowed. | [foundations/extended-geometry/SPHERICAL_LEADING_BINARY_FORM_MOMENT_OBSTRUCTIONS.md](foundations/extended-geometry/SPHERICAL_LEADING_BINARY_FORM_MOMENT_OBSTRUCTIONS.md): Theorem 2 second bullet; Sections 5,9--10 |
 | SNF-EVEN-POSITIVE-XT4-NECESSARY | claim | proved / partial | For even-t phases of actual degree5 with Q!=0,eventual purity forces the xt4 coefficient nonzero. The v2 residual requires the odd termyt3,so it cannot occur; v3 is absent by even parity. No condition is imposed on Qzero one-sided phases. | [foundations/extended-geometry/STRIPPED_QUINTIC_NEWTON_FACE_REDUCTION.md](foundations/extended-geometry/STRIPPED_QUINTIC_NEWTON_FACE_REDUCTION.md): Theorem1(c);Section7 even consequence |
@@ -3599,7 +3694,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | HOPF-GLOBAL-THICK-JETS-AND-ESSENTIAL-TWISTS | claim | proved / partial | The Q(i) family R=i+(1-i)(1+x)^e,U=2(z-1)/(e(1-i)(z+1)) has full fibre eta=R^(2+4j) and J=(x+1)^(e-1) at every positive odd height. The Q(sqrt2) family G30 has exactly two branches H(R)R^(2+8j), H(R)^(-1)R^(6+8j) when a<e; R^(4+8j) joins exactly at a>=e. Thus squarefree jets and polynomial units would omit actual infinite families. | [foundations/extended-geometry/GLOBAL_CYCLOTOMIC_INFINITE_FIBRE_CLASSIFICATION.md](foundations/extended-geometry/GLOBAL_CYCLOTOMIC_INFINITE_FIBRE_CLASSIFICATION.md): Sections7-8 G27-G36 |
 | HOPF-EFFECTIVE-ALL-ODD-HEIGHT-ATLAS | claim | proved / partial | For a normalized degree-N rational endpoint over a presented number field, compute the finitely many entries a=1,3,...,A(u). The final entry plus stable transport determines every later height. All pairs over all heights lie in the single retained splitting field of degree at most(2N)!. The finite-entry algorithms use the elementary point-orbit route and make no imported Orbit theorem premise. The complete atlas builder is not implemented end to end. | [foundations/extended-geometry/ALL_ODD_HEIGHT_FIBRE_STABILIZATION.md](foundations/extended-geometry/ALL_ODD_HEIGHT_FIBRE_STABILIZATION.md): EffectiveAllOddHeightAtlas; Section4 H17 |
 | IMAGE2-CONSTANT-ENDPOINT-NO-PROPER-POWER | claim | proved / partial | If F=cG^k over any extension, prime factor orders force k\|a and k\|all h_alpha, hence k\|(ar+1). Their gcd1 excludes k>=2. At a0 sumh_alpha1 already suffices. The proof covers every classified profile, not merely sampled witnesses. | see incoming proof routes |
-| IMAGE2-QUINTIC-LEAST-DEGREE-PURITY-IMPLIES-SAFETY | claim | proved / partial | Over every characteristic-zero field, every pure phase of least sphere degree five is safe against every fixed polynomial sphere marker. Equivalently every pure radially primitive balanced original quintic is safe against every original marker, whether or not it is a proper power. | [foundations/extended-geometry/PRIMITIVE_BALANCED_IMAGE_DEGREE_SPECTRUM.md](foundations/extended-geometry/PRIMITIVE_BALANCED_IMAGE_DEGREE_SPECTRUM.md): Exhaustion of quintics; [../unpublished/primitive-balanced-image-spectrum/quintics.tex](../unpublished/primitive-balanced-image-spectrum/quintics.tex): Section 5, complete least-degree-five safety proof |
+| IMAGE2-QUINTIC-LEAST-DEGREE-PURITY-IMPLIES-SAFETY | claim | proved / partial | Over every characteristic-zero field, every pure phase of least sphere degree five is safe against every fixed polynomial sphere marker. Equivalently every pure radially primitive balanced original quintic is safe against every original marker, whether or not it is a proper power. | [foundations/extended-geometry/PRIMITIVE_BALANCED_IMAGE_DEGREE_SPECTRUM.md](foundations/extended-geometry/PRIMITIVE_BALANCED_IMAGE_DEGREE_SPECTRUM.md): Exhaustion of quintics; [../results/primitive-balanced-image-spectrum/quintics.tex](../results/primitive-balanced-image-spectrum/quintics.tex): Section 5, complete least-degree-five safety proof |
 | HOD-EIGHT-MINIMUM-EIGHT-FIRST-PRIME-ELEVEN | claim | proved / partial | The specified f8 orbit has minimum8 and first prime11, using upper restrictions and actual identity/native-shear realizations. | [foundations/extended-geometry/HOPF_KNOWN_SEED_AUTOMORPHISM_ORBIT_DEGREES.md](foundations/extended-geometry/HOPF_KNOWN_SEED_AUTOMORPHISM_ORBIT_DEGREES.md): Theorem |
 | HOD-EIGHT-PRIME-CLASS-NECESSITY | claim | proved / partial | For prime degree in the specified f8 orbit, later odd multipliers are impossible; the only possible primes are p≥11 with p2mod3 or p8mod13. | [foundations/extended-geometry/HOPF_KNOWN_SEED_AUTOMORPHISM_ORBIT_DEGREES.md](foundations/extended-geometry/HOPF_KNOWN_SEED_AUTOMORPHISM_ORBIT_DEGREES.md): Section6 |
 | HOD-EIGHT-EXACT-ORBIT-DEGREE-SPECTRUM | claim | proved / partial | Over every characteristic-zero field and its extensions, take the specified seed in K[x,y,t]/(t^2+2xy-1). The least degrees in the full automorphism orbit of f8 are 8 and s(8+nu*k) for odd s>=1, k>=1 and nu in {3,13,16}. Its primes are p>=11 with p=2 mod 3 or p=8 mod 13. | [foundations/extended-geometry/HOPF_KNOWN_SEED_AUTOMORPHISM_ORBIT_DEGREES.md](foundations/extended-geometry/HOPF_KNOWN_SEED_AUTOMORPHISM_ORBIT_DEGREES.md): OrbitDegreeSpectra, part 2 (f8) |
@@ -3807,6 +3902,8 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | RHT-NONZERO-TOP-IMPLIES-DELTA-TRIVIAL | claim | proved / partial | Universal fixed-data reverse: H^n_dR(G/H)!=0 implies full delta_H=1 on ALL components, by one-dimensional character invariants on G/H0. It is NOT a reverse implication from all-automorphism trace invariance. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section18 V11--V14 |
 | RHT-AUTOMORPHISM-PULLBACK-REMAINS-INTRINSIC-CLASS | claim | proved / partial | For EVERY geometric automorphism phi of X, phi*Y->X remains connected finite-etale CYCLIC Galois degree m and has nonzero top cohomology because phi*Y is abstractly isomorphic to Y. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section20 |
 | RHT-DETERMINANT-COVER-ISOMORPHISM-IMPLIES-CLASS-PROPERTIES | claim | proved / partial | REVERSE characterization: every cover isomorphic to Y OVER X is connected finite-etale CYCLIC Galois of degree m with nonzero top cohomology. This gives no uniqueness of a chosen lift and no property seed. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Sections15,19 |
+| HOPF-WINDING-ONE-CUBIC-QUARTIC-DOMINANT-Q-LEFSCHETZ-EXCLUSION | claim | proved / partial | For the quartic-leading winding-one septic with deg p at most four and deg q seven, eventual purity is impossible when d(0)^2 differs from one, the cubic at x=-1 is squarefree with nonzero derivative of p/Delta in z=1/u there, and all affine interior critical points are Morse with distinct nonzero values. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_LEFSCHETZ_EXCLUSION.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_LEFSCHETZ_EXCLUSION.md): Theorem DegreeFourSepticLefschetzExclusion.** Suppose the following |
+| HOPF-WINDING-ONE-CUBIC-QUARTIC-HIGH-POLE-LEFSCHETZ-EXCLUSION | claim | proved / partial | The finite-node Lefschetz exclusion with the same center, simple cubic and derivative conditions at x=-1, and Morse and critical-value hypotheses holds also for deg d at most two and deg p five, or for d_3 nonzero with b_5^2-4d_3c_7 nonzero. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_GENERIC_EXCLUSION.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_GENERIC_EXCLUSION.md): Theorem HighPoleLefschetzExclusion.** The |
 | HOPF-WINDING-ONE-CUBIC-QUARTIC-ZERO-DEPRESSED-LINEAR-EXCLUSION | claim | proved / partial | For E a scalar times (1+lambda x)^4 in a regular winding-one septic with boundary divisibilities, vanishing depressed linear coefficient implies infinitely many nonzero pure moments. The inverse-period residues give a constant branch trace, contradicted by the unique branch at the other pole. | [foundations/extended-geometry/WINDING_ONE_CUBIC_ZERO_DEPRESSED_LINEAR_TERM.md](foundations/extended-geometry/WINDING_ONE_CUBIC_ZERO_DEPRESSED_LINEAR_TERM.md): Proposition.** If the depressed linear coefficient of |
 | HOPF-WINDING-ONE-CUBIC-QUINTIC-ROOT-FIXED-DEFICIT-REDUCTION | claim | proved / partial | For E=e(x-r)^4(x-s) and the boundary divisibilities, eventual purity forces b_d=0 for every fixed d>=0 in the unique reduction phi_d=a_d/(x-r)+b_d+L(h_d). Deficit one gives the depressed cubic constant divided by x times 2/3. The proof uses good-prime height isolation, removal of exact derivatives and the nonzero normalized Hasse coefficient when the distinguished row vanishes. Sufficiency is open. | [foundations/extended-geometry/WINDING_ONE_CUBIC_FIVE_DEGREE_BOUNDARY_MOMENTS.md](foundations/extended-geometry/WINDING_ONE_CUBIC_FIVE_DEGREE_BOUNDARY_MOMENTS.md): Proposition (Fixed-deficit rational conditions) |
 | HOPF-WINDING-ONE-CUBIC-SINGLE-BOUNDARY-ROOT-EXCLUSION | claim | proved / partial | For a quadruple E-root r satisfying the boundary divisibilities, the local quartic g(w)=e4 w^4+d3 w^3+b2 w^2+c1 w must have at least two distinct geometric roots under eventual purity. A single-root g permits a positive-V filtered Cech correction of the vertical residue. | [foundations/extended-geometry/WINDING_ONE_CUBIC_SINGLE_BOUNDARY_ROOT.md](foundations/extended-geometry/WINDING_ONE_CUBIC_SINGLE_BOUNDARY_ROOT.md): Proposition.** Put |
@@ -4030,6 +4127,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | RHT-EVERY-GEOMETRIC-AUTOMORPHISM-LIFTS-TO-DETERMINANT-COVER | claim | proved / partial | For EVERY automorphism of X over algebraically closed char0, intrinsic uniqueness supplies an automorphism lift to Y. Choice need not be unique; deck transformations give ambiguity. No lift to G and no descent of the lift to K is assumed. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section20 V16 |
 | RHT-INTRINSIC-DETERMINANT-COVER-IFF-ISOMORPHISM | claim | proved / partial | Within the explicitly stated class of connected finite-etale GALOIS degree-m covers over X, nonzero top de Rham cohomology IFF isomorphism to Y over X. Both directions are separately proved; no general finite-cover uniqueness claim. | [foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md](foundations/extended-geometry/REDUCTIVE_HOMOGENEOUS_AUTOMORPHISM_INVARIANT_TRACE.md): Section19 |
 | HOPF-WINDING-ONE-CUBIC-QUINTIC-BIELLIPTIC-CM | claim | proved / partial | The genus-two cyclic triple cover has an elliptic quotient with ordinary split and supersingular inert progressions. An induced-block algebraic monodromy and Chebotarev argument excludes non-CM over any number field, including residue degrees larger than one. Deuring reduction identifies the CM field, and specialization fixes the already algebraic ratio. | [foundations/extended-geometry/WINDING_ONE_CUBIC_FIVE_DEGREE_INERT_CARTIER.md](foundations/extended-geometry/WINDING_ONE_CUBIC_FIVE_DEGREE_INERT_CARTIER.md): Theorem (Complex multiplication restriction) |
+| HOPF-WINDING-ONE-CUBIC-QUARTIC-THIRD-ORDER-TAIL-EXCLUSION | claim | proved / partial | For normalized P=P0(v)+sum x^j(a_j v+b_j), j=3 through 7 and a_6=a_7=0, the moments through order ten and the first two inverse-period equations force the tail to be zero. | [foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_THIRD_ORDER_TAIL.md](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_THIRD_ORDER_TAIL.md): Proposition (Third-order tail exclusion) |
 | MHM-SCD-CENTRAL-QUOTIENT-SAME-EXACT-VALUES | claim | proved / partial | The already descended Coxeter-centered phase on every stated compatible Q-central-isogeny/full-fixed quotient has EXACTLY the same closed moment sums by actual pullback/native trace restriction. No individual character coefficient is presumed to descend,or arbitrary phase averaged. | [foundations/extended-geometry/MACDONALD_OPDAM_EXACT_CHARACTER_DOMAIN_MOMENTS.md](foundations/extended-geometry/MACDONALD_OPDAM_EXACT_CHARACTER_DOMAIN_MOMENTS.md): Section6 |
 | MHM-SCD-E6-E7-E8-FULLY-EXPLICIT-VALUES | claim | proved / partial | The actual EI/EV/EVIII SCD applications have fully explicit degree-list Pochhammer moments and every-order marked sums with d0 respectively3*12^6,2*18^7,30^8. These are specializations of the established exact models,not arbitrary exceptional Qforms. | [foundations/extended-geometry/MACDONALD_OPDAM_EXACT_CHARACTER_DOMAIN_MOMENTS.md](foundations/extended-geometry/MACDONALD_OPDAM_EXACT_CHARACTER_DOMAIN_MOMENTS.md): Corollary2;Sections5--6 |
 | GAUSSIAN-INVARIANT-QUINTIC-SAFETY-PURITY | claim | proved / partial | In the full original-degree<=5 invariant-core family, and more generally the all-degree affine-coefficient quadratic radial family, safety iff the invariant core is zero; hence every safe phase is pure. This does not establish purity-to-safety outside the full finite branch. All original markers and arbitrary strict one-sided additions remain included. | [moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md](moments/vanishing/GAUSSIAN_QUADRATIC_RADIAL_AFFINE_COEFFICIENT_FINITE_IMAGES.md): Safety consequence and explicit purity limitation |
@@ -4212,7 +4310,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 - **GAP-PIS-BALANCED-POSITIVE-CORRELATION** (mathematical; open): Decide if any balanced Gaussian partition beats the regular simplex at positive correlation. The fixed-partition low-correlation result and finite cubic search do not establish the universal inequality.
 - **GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE** (mathematical; open): Determine if any balanced four-cell Gaussian partition beats the tetrahedral first Hermite mass. The exact affine reduction covers all candidates, and the local theorem excludes nearby centroid Gram matrices.
 - **GAP-IMAGE-ONE-OPERATOR-VARIABLE-COEFFICIENT** (mathematical; proved / discharged): Decide van den Essen–Zhao Conjecture 6.1 for c∂_z−P(z) on B[z] over arbitrary commutative Q-algebras, including nonconstant P.
-- **GAP-HOPF-MIXED-CUBIC-SEPTIC-UNIT-CENTER** (mathematical; open): Decide existence and classify purity in regular winding-one cubics of least sphere degree seven with E(0) nonzero. The only remaining leading polynomial is E=e(x-r)^4. Here (x-r)^3 divides D, (x-r)^2 divides B, C(r)=0, and the boundary quartic has at least two distinct roots. The scaled cubic has both depressed coefficients nonzero, nonzero discriminant, and nonconstant projective invariant. Eventual purity is equivalent to purity and would give a fixed surviving marker x. The recorded sparse coefficient slices and the open defined by the first 34 inverse coefficients are excluded.
+- **GAP-HOPF-MIXED-CUBIC-SEPTIC-UNIT-CENTER** (mathematical; open): Decide existence and classify purity in regular winding-one cubics of least sphere degree seven with E(0) nonzero. The only remaining leading polynomial is E=e(x-r)^4. Here (x-r)^3 divides D, (x-r)^2 divides B, C(r)=0, and the boundary quartic has at least two distinct roots. The scaled cubic has both depressed coefficients nonzero, nonzero discriminant, and nonconstant projective invariant. Eventual purity is equivalent to purity and would give a fixed surviving marker x. The recorded sparse coefficient slices and the open defined by the first 34 inverse coefficients are excluded. A dense open is excluded by the finite-node Lefschetz test. Any survivor in the exceptional locus also meets the third-order jet, constant-coefficient, and double-cover Cartier and residue restrictions.
 
 Tracked obligations from the catalogue:
 
@@ -4221,13 +4319,13 @@ Tracked obligations from the catalogue:
 - **GAP-TERNARY-PURE-PREFIX — mathematical; open.** [Determine whether the first sixteen Gaussian moments force purity away from the exceptional orbit for ternary phases of degree at most three. The exact local cutoff on that orbit is sixteen.](moments/vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md)
 - **GAP-PIS-BALANCED-POSITIVE-CORRELATION — mathematical; open.** [Decide if any balanced Gaussian partition beats the regular simplex at positive correlation. The fixed-partition low-correlation result and finite cubic search do not establish the universal inequality.](plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md)
 - **GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE — mathematical; open.** [Determine if any balanced four-cell Gaussian partition beats the tetrahedral first Hermite mass. The exact affine reduction covers all candidates, and the local theorem excludes nearby centroid Gram matrices.](plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md)
-- **GAP-HOPF-MIXED-CUBIC-SEPTIC-UNIT-CENTER — mathematical; open.** [Does the residual degree-four leading family with one quadruple root, nonzero discriminant and varying cubic invariant admit a pure winding-one septic outside the recorded exclusions?](foundations/extended-geometry/WINDING_ONE_CUBIC_LOGARITHMIC_BOUNDARY.md)
+- **GAP-HOPF-MIXED-CUBIC-SEPTIC-UNIT-CENTER — mathematical; open.** [Can a pure winding-one septic with a quadruple leading root and varying invariant lie in the exceptional coefficient loci left by the Lefschetz, exact moment, and Cartier residue exclusions?](foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_GENERIC_EXCLUSION.md)
 
 ## Jacobian and Keller maps
 
 **Topic scope:** Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 
-**Computed obligation progress:** 21 open; 5 proved / discharged.
+**Computed obligation progress:** 23 open; 5 proved / discharged.
 
 **Authored scope assessment:** Retained ordinary characteristic-zero polynomial Keller constructions have determinant one and explicit collisions; their internal consequence is failure of the unrestricted Jacobian conjecture. The earlier full-JC-open summary was inconsistent with these source claims. This is internal assurance, not external acceptance.
 
@@ -4282,6 +4380,12 @@ Tracked obligations from the catalogue:
 **Authored scope assessment:** The candidate cubic index-four ceiling 207, also for the retained scaffold with arbitrary restart rounds, is equivalent to the 103 weighted class identities U_104 through U_206. Any failing grade in the block gives an exact-index-four triangular witness of inverse degree 209 through 413.
 
 **Authored scope assessment:** Every noninvertible plane Keller map has generic degree at least five by the published low-sheet exclusions and birational inversion. The exact product descriptions carry field degree and permutation action to Hessian and positional Weyl assignments.
+
+**Authored scope assessment:** Marked quadratic models with ord_0 M>=2 exclude ruling excess zero. The reduced S2 and MX0 double-zero frames also exclude excess one. The (8,12) bound is then seven; larger excess and global coverage remain open.
+
+**Authored scope assessment:** For p=3 the unrestricted minimum lift degree is 81 at both moduli 9 and 27. A bounded Witt tower can be chosen compatibly, so unrestricted degree growth is equivalent to excluding any integral polynomial lift of the seed. The degree growth is proved for lifts affine along a lift of the fixed residue line.
+
+**Authored scope assessment:** The planar degree assessment tracks the Santibáñez-Leal certificate route for (72,108) and the normalized Giraudin F2 and degree-147 exclusions. These exact scopes have separate verification obligations.
 
 ### JACOBIAN-MONODROMY
 
@@ -4745,6 +4849,48 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Three collisions, the escaping arc and the determinant were also checked in exact symbolic arithmetic.
 
+### JAC-MARKED-DAVENPORT-ZANNIER-STRICT-BOUND
+
+[Strict Davenport–Zannier bound in a marked quadratic model](jacobian/affine-complements/MARKED_QUADRATIC_DAVENPORT_ZANNIER_EXCLUSION.md)
+
+**Exact scope:** For regular complex P,Q on w^2=u*Sigma(u)^2+M(u)z, with Sigma(0) nonzero, ord_0 M at least two and J_(u,w)(P,Q)=1/M, assume r=d*r0, s=d*s0 are their ruling degrees with d=gcd(r,s) and r0,s0 at least two. For the unique leading cancellation E=Q^r0-lambda*P^s0, deg_w E >= rs/d-r-s+2. At (8,12) this is degree at least six. The result concerns the specified models and does not settle global model coverage.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof checked internally, including all three orders of the common scaling factor.
+
+### JAC-MARKED-DOUBLE-ZERO-EXCESS-ONE-EXCLUSION
+
+[Excess one is excluded at a marked double zero](jacobian/affine-complements/MARKED_QUADRATIC_DAVENPORT_ZANNIER_EXCLUSION.md)
+
+**Exact scope:** For regular complex P,Q on w^2=u*Sigma(u)^2+M(u)z, with Sigma(0) nonzero, ord_0 M at least two and J_(u,w)(P,Q)=1/M, assume r=d*r0, s=d*s0 are their ruling degrees with d=gcd(r,s) and r0,s0 at least two. If ord_0 M=2 and both restrictions to u=w=0 are nonzero, deg_w(Q^r0-lambda*P^s0) >= rs/d-r-s+3. Both extra conditions hold in the reduced S2 and MX0 frames. In ruling degrees (8,12), the difference has degree at least seven.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written coefficient and residue argument cross-read internally.
+
+### JAC-BGV-PRIME-THREE-SHARP-FIRST-WITT-DEGREES
+
+[Sharp degree 81 for the prime-three BGV lifts modulo 9 and 27](jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md)
+
+**Exact scope:** For the fixed prime-three Borisov–Gabber–Vasiu seed, among determinant-one pairs over Z/9 or Z/27 reducing to that seed, the minimum of the maximum total coordinate degree is 81. An eight-term functional covers all correction supports through degree 80 modulo 9. Explicit determinant-one witnesses have coordinate degrees (51,81) modulo 9 and (62,81) modulo 27.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Exact sparse replay checks all 6642 first-correction monomials, the witnesses' reductions and their full polynomial determinants. Internal proof and replay only.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -4755,12 +4901,17 @@ Tracked obligations from the catalogue:
 | EXT-DOMRINA-GENERAL-FOUR-SHEET | claim | proved / partial | Domrina2000 PartII unnumbered main theorem, Introductionp1: a polynomialC2->C2map with four generic preimages cannot have nonzero constantJacobian. The source explicitly treats all remaining cases beyond PartI one-dicritical restriction. This published theorem is adopted; its full diagram proof is not independently replayed. | [jacobian/monodromy-theory/sources/domrina-four-sheeted-general-2000.pdf](jacobian/monodromy-theory/sources/domrina-four-sheeted-general-2000.pdf): Introduction main theorem and degree definition, p1; Proposition1.2 p2; final proof conclusionp32; [jacobian/monodromy-theory/plane_a4_exclusion_source_ledger.json](jacobian/monodromy-theory/plane_a4_exclusion_source_ledger.json): Exact scope and source reading limits |
 | EXT-FZ-POLYNOMIAL-CURVES-QUOTIENT | claim | proved / partial | Normal affine complex algebraic surface V and singular p: if general points lie on polynomial curves avoiding p, then (V,p) is a finite quotient singularity. Primary authors Theorem2.1 adopted with its classical Miyanishi cylinder input; no independent reproof of every input. | [hessian/hc4-triangular-graphs/sources/flenner-zaidenberg-math-0109221v1.pdf](hessian/hc4-triangular-graphs/sources/flenner-zaidenberg-math-0109221v1.pdf): Section2.1, Theorem2.1 and proof, PDF pp13-14; Lemma2.2, Proposition2.3 and attributed Theorem2.4; [hessian/hc4-triangular-graphs/FULL_NORMALIZATION_QUOTIENT_POINTS_AND_CANONICAL_L2_EXTENSION.md](hessian/hc4-triangular-graphs/FULL_NORMALIZATION_QUOTIENT_POINTS_AND_CANONICAL_L2_EXTENSION.md): Section1 exact hypotheses and source audit |
 | EXT-GWOZDZIEWICZ-ONE-LINE | claim | proved / partial | Over an algebraically closed field of characteristic0, a plane polynomial map with nonzero constant Jacobian that is injective on one affine line is a polynomial automorphism. | [hessian/hc4-triangular-graphs/sources/gwozdziewicz-alg-geom-9305008v1.pdf](hessian/hc4-triangular-graphs/sources/gwozdziewicz-alg-geom-9305008v1.pdf): Theorem1.1 and proof, pages1-2 |
+| EXT-JC2-GIRAUDIN-DZ147-EXCLUSION | claim | open / partial | The preprint excludes the normalized (147,98) and (98,147) shapes with starting triple ((7,42),(1,0),(7,−1)) and final corner (13/7,6). Its leading Davenport–Zannier polynomials have degrees 18 and 12 with degree-seven difference u_3^2−w_2^3. The remaining compatibility equations are treated by an exact unit-ideal calculation. | [jacobian/planar-degree-frontier/sources/niedbala-giraudin-dz147-2611.00897v1.pdf](jacobian/planar-degree-frontier/sources/niedbala-giraudin-dz147-2611.00897v1.pdf): Standing Data 1.1, Theorem 1.2, Lemmas 1.3 and 5.1, Proposition 5.2 and Section 6; [BREAKTHROUGH_TARGET_ASSESSMENT.md](BREAKTHROUGH_TARGET_ASSESSMENT.md): Theorem 1.2 of the degree-147 preprint |
+| EXT-JC2-GIRAUDIN-F2-EXCLUSION | claim | open / partial | The preprint excludes normalized standard (m,2m−1) pairs with nonzero constant bracket for m>=2 under Standing Data 1.1: starting triple ((5,20),(1,0),(5,−1)), the prescribed successor direction and first-edge root of multiplicity two giving corner (7/5,2). The degrees are (25m,25(2m−1)). | [jacobian/planar-degree-frontier/sources/niedbala-giraudin-f2-2611.00685v1.pdf](jacobian/planar-degree-frontier/sources/niedbala-giraudin-f2-2611.00685v1.pdf): Standing Data 1.1, Theorem 1.2 and Sections 5–7; [BREAKTHROUGH_TARGET_ASSESSMENT.md](BREAKTHROUGH_TARGET_ASSESSMENT.md): Niedbala Giraudin's normalized Newton exclusions |
+| EXT-JC2-SANTIBANEZ-72-108-CERTIFICATES | claim | open / partial | The preprint reports separate emptiness certificates for the two Laurent bracket x^2 coefficient systems. Excluding (72,108)/(108,72) and concluding maximal degree >=125 additionally requires the exhaustive GGHV Proposition 4.3 list, correctness of its band encoding, and the scope of GGHV Theorem 2.1. | [jacobian/planar-degree-frontier/sources/santibanez-leal-planar-keller-v0.38.pdf](jacobian/planar-degree-frontier/sources/santibanez-leal-planar-keller-v0.38.pdf): Sections 4.4, 6.1–6.2, 6.6, 9; Theorems 6.2–6.3; EXP-137, EXP-146 and EXP-147; [BREAKTHROUGH_TARGET_ASSESSMENT.md](BREAKTHROUGH_TARGET_ASSESSMENT.md): Santibáñez-Leal's coefficient-system exclusions |
 | EXT-KISTNER-SHASKA-ALTERNATING-SHEAR | claim | proved / partial | The same primary Section5.1, equations21-24 and Propositions5.2-5.3/Theorems5.4-5.5 supply the literal A12 member. All twelve coefficients, polynomial lift, master and actual expanded Jacobian are verified here; no Q-coefficient polynomial lift is inferred from its unpointed quotient arithmetic discussion. | [jacobian/monodromy-theory/sources/kistner-shaska-graded-keller-2608.02863v1.pdf](jacobian/monodromy-theory/sources/kistner-shaska-graded-keller-2608.02863v1.pdf): Section5.1 PDFpp15-17; [jacobian/monodromy-theory/uniform_alternating_shear_keller_source_ledger.json](jacobian/monodromy-theory/uniform_alternating_shear_keller_source_ledger.json): Primary model and exact coefficient field boundary |
 | EXT-KISTNER-SHASKA-CYCLIC-CONE | claim | proved / partial | Kistner-Shaska arXiv2608.02863v1 Section3, Propositions3.2,3.5,3.6,3.9 and Theorem3.11: canonical chain, polynomial lift criteria, degree kd and existence for all k>=2,d>=3. Theorem6.1 gives full alternating monodromy at even k. Only the inspected k2 mechanism is needed here, and is also proved directly. | [jacobian/monodromy-theory/sources/kistner-shaska-graded-keller-2608.02863v1.pdf](jacobian/monodromy-theory/sources/kistner-shaska-graded-keller-2608.02863v1.pdf): Section3 and Theorem6.1; [jacobian/monodromy-theory/uniform_even_alternating_cone_keller_source_ledger.json](jacobian/monodromy-theory/uniform_even_alternating_cone_keller_source_ledger.json): Exact inspected source/use boundary |
 | EXT-NEUMANN-GENUS-THREE-PLANE-CLASSIFICATION | claim | proved / partial | For reduced polynomial plane fibres with a knot at infinity and once-punctured genus-three nearby smooth fibre, Neumann Section8 gives three realizable polynomial ambient types up to algebraic automorphisms of C^2 and affine polynomial-value changes: intrinsic-degree-four X^4+Y^3+lower terms, intrinsic-degree-six cable f1 with nonzero d*Y term, and intrinsic-degree-seven hyperelliptic X^7+Y^2+lower terms. The remaining genus-three table row is not realizable. These types are not declared equivalent to one another. | [hessian/hc4-triangular-graphs/sources/neumann-1989-plane-curves-links-infinity.pdf](hessian/hc4-triangular-graphs/sources/neumann-1989-plane-curves-links-infinity.pdf): Section8, printed482 ambient-equivalence statement and all genus-three table rows; printed483 exact f1 cable form |
 | EXT-NEUMANN-LOW-GENUS-PLANE-CLASSIFICATION | claim | proved / partial | For reduced polynomial plane curves with a knot at infinity, the Section8 low-genus table gives the most general defining polynomial up to algebraic automorphisms of C^2 and affine changes of its value. The genus-one row is cubic Weierstrass; the only realizable genus-two row is hyperelliptic quintic. The one-node A1-normalized corollary is explicit on p483; the two-node corollary is derived in the internal proof. No higher-genus classification is adopted here. | [hessian/hc4-triangular-graphs/sources/neumann-1989-plane-curves-links-infinity.pdf](hessian/hc4-triangular-graphs/sources/neumann-1989-plane-curves-links-infinity.pdf): Section8, printed482 low-genus table and ambient-equivalence statement; printed483 one-node application |
 | EXT-NEUMANN-RUDOLPH-GOOD-KNOT-FIBRE | claim | proved / partial | A complex polynomial with a reduced fibre whose link at infinity is a knot is good: all its fibres are regular at infinity. The corrected Lemma7.1 is used for A1-normalized plane curves with one, two or three ordinary nodes, or immersed reflected contact fibres and a single place at infinity. The singular fibre itself need not be a regular fibre. | [hessian/hc4-triangular-graphs/sources/neumann-rudolph-1988-unfoldings-corrigendum.pdf](hessian/hc4-triangular-graphs/sources/neumann-rudolph-1988-unfoldings-corrigendum.pdf): Corrected Lemma7.1, printed349, and proof printed351 |
 | EXT-STACKS-FREE-FINITE-QUOTIENT-ETALE-DESCENT | claim | proved / partial | A free finite locally free group action on an affine scheme has a scheme torsor quotient; for the constant group mu_r over C this is finite etale. If a surjective etale source and its structure map to Y are etale, the quotient structure map is etale (the finite-type applications meet local finite presentation). Applied to entire canonical etale completions of actual plane Keller maps. | [hessian/hc4-triangular-graphs/sources/stacks-07S7-finite-free-quotient.html](hessian/hc4-triangular-graphs/sources/stacks-07S7-finite-free-quotient.html): Lemma66.14.2, free finite locally free quotient and torsor; displayed statement and proof; [hessian/hc4-triangular-graphs/sources/stacks-02K6-etale-surjective-source.html](hessian/hc4-triangular-graphs/sources/stacks-02K6-etale-surjective-source.html): Lemma29.37.20, surjective-etale source descent with locally finite presentation; displayed statement and proof; [hessian/hc4-triangular-graphs/sources/stacks-02KM-etale-descent.html](hessian/hc4-triangular-graphs/sources/stacks-02KM-etale-descent.html): Lemma35.14.4, surjective-etale source descent; displayed statement and proof |
+| JAC-BGV-BOUNDED-WITT-DEGREE-COMPACTNESS | claim | proved / complete | For any fixed nonautomorphic residue polynomial map and a common total-degree cap, determinant-one lifts modulo every p^n give a polynomial determinant-one lift over Z_p by compactness. The integral formal inverse contradicts residue noninvertibility if the lift is polynomially invertible in characteristic zero. For the BGV plane seed a resulting counterexample transfers to the four-variable Hessian problem by doubling. | [jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md](jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md): Integral inversion and a uniform degree cap |
+| JAC-BGV-RADIAL-FIRST-BRANCH-CAP81-MOD81 | claim | proved / complete | The explicit radial prime-three BGV lift modulo 9 has no determinant-one extension modulo 81 of maximum total degree at most 81. A linear equation over Z/9 includes all choices of the next two digits above that first lift. Other modulo-9 lifts and the unrestricted modulo-81 minimum are open. | [jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md](jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md): The radial modulo-9 branch at modulus 81; [jacobian/mixed-characteristic-lifting/verify_bgv_first_lift_degree.py](jacobian/mixed-characteristic-lifting/verify_bgv_first_lift_degree.py): RADIAL_BRANCH_CERTIFICATE and all 6806 cap-81 correction monomials |
 | JAC-COTANGENT-PRODUCT-FIBRES-AND-MONODROMY | claim | proved / partial | Over a characteristic-zero field, every map (G(x), M(x)v+b(x)) with G Keller and M unimodular over k[x] is equivalent by a polynomial source change to G times the identity map. Its fibres over (y,t) after every field extension equal the scheme fibres of G over y up to isomorphism. Its finite normalization and geometric nonfinite locus are products. Its arithmetic and geometric generic permutation actions are unchanged. | [jacobian/monodromy-theory/COTANGENT_MONODROMY_TRANSFER.md](jacobian/monodromy-theory/COTANGENT_MONODROMY_TRANSFER.md): Polynomial product structure |
 | JAC-NATURAL-A5-PLANE-PRIMARY-SOURCE | gap | open / partial | Obtain and inspect Zoladek2008 Theorem6.12 and its exact hypotheses before importing the reported topologicaldegree<=5 exclusion. Publisher/secondary announcements are not sufficient. This is a verification obligation, not a declaration that naturalA5 plane exclusion is mathematically open. | [jacobian/monodromy-theory/PLANE_A4_MONODROMY_EXCLUSION.md](jacobian/monodromy-theory/PLANE_A4_MONODROMY_EXCLUSION.md): Separate degree-five source obligation; [jacobian/monodromy-theory/plane_a4_exclusion_source_ledger.json](jacobian/monodromy-theory/plane_a4_exclusion_source_ledger.json): Outstanding primary source record |
 | JAC-SHUFFLE-ORBIT-REDUCTION | claim | proved / partial | The planar constant is in the length-p shuffle span exactly when the orbit-size-weighted sum of unordered shapes vanishes in the free symmetric d-ary algebra modulo the polarized identity L_a^p(b)=0. Valid for every d>=2, p>=1, and internal grade k in characteristic zero. | [jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md](jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md): Proposition ShuffleOrbitReduction. |
@@ -4844,6 +4995,8 @@ Tracked obligations from the catalogue:
 | JAC-STRUCTURE-S5 | claim | proved / partial | In the exact setting/notation of JAC-STRUCTURE, the named sub-result states:  UAQTILT1 and UAALLATOM1 replace many family-specific monodromy arguments by one quadratic-tilt rule, extending arbitrary rational profiles and their polynomial maps to every characteristic other than two. UAMODBOUND1 completes the exceptional boundary geometry. UANORMAL1 rules out all marked constructions affine linear in their moving variables, even after arbitrarily many trivial stabilizations.  These results do not improve the characteristic-zero target-dimension bounds, produce a receiver forgetting the generator line, solve JC(2), or prove stable equivalence of different compiler slices. The unresolved condition for canonical construction is a nonlinear equivariant polynomial realization which satisfies all subgroup-fixed restrictions and the normal form (16). For compression, another affine completion or another compiler is still required.  The [replay](jacobian/universal-keller-structure/verify.py) checks representative exact identities and whole quotient-algebra reconstructions, with [source pins](jacobian/universal-keller-structure/sources.json). The general monodromy, all-prime and normal-form results are written proofs. Formal verification, independent whole-proof replay, external review and a literature-priority claim remain absent. | [jacobian/universal-keller-structure/PROOF.md](jacobian/universal-keller-structure/PROOF.md): Section 5. What closes, and what remains |
 | JAC-MONODROMY | claim | proved / partial | For whole-affine characteristic-zero Keller self-maps every affine divisor inertia group fixes a sheet and affine inertia normally generates geometric monodromy. This excludes regular and specified nilpotent/even-dihedral actions and supplies the degree12 PSL2(11) necessary local sieve, not full realization. | [jacobian/monodromy-theory/THEORY.md](jacobian/monodromy-theory/THEORY.md): Main statement and complete proof |
 | HESSIAN-FINITE-NORMALIZATION-CANONICAL-VALUATIONS | claim | proved / partial | For an actual complex plane Keller map, the FULL finite normalization S lies in R, its source X embeds openly in Z=Spec S, Cl(Z) is free on all omitted prime divisors, and the pulled-back source volume has order e_E-1 there. Ordinary canonical coefficients are the codifferent threshold v_E>=1-e_E. This scoped KN0 fact does not assert a presentation, torsion canonical class or an inverse. | [hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md](hessian/hc4-triangular-graphs/CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md): Section1 KN0 source-open, class-group and tame canonical coefficient proof; Section3 final codimension-one codifferent identification |
+| JAC-BGV-AFFINE-LINE-WITT-DEGREE-GROWTH | claim | proved / partial | For the BGV seed, every degree cap fails at some Witt level if the lift is polynomially affine along any line of the form x=a+b*y with a,b=0 modulo p. The line may vary with level. The restricted slope reduces to the nonzero slope of the residue map. | see incoming proof routes |
+| JAC-RULING-8-12-EXCESS-ONE-MONODROMY | claim | proved / complete | For pairs in C(u)[w] with J_(u,w)(P,Q)=1/M nonzero, if (r,s)=(8,12) and Delta=1, the geometric generic cover Q^2/(lambda*P^3) has four branch values of partitions 2^12, 3^8, (18,1^6), (2,1^22) and monodromy S24. The fourth branch value is nonconstant in u. | see incoming proof routes |
 | JAC-SHUFFLE-UNIFORM-INVERSE-DEGREE | claim | proved / partial | For fixed arity d and path length p, eventual constant-vector membership is equivalent to a dimension-independent inverse-degree bound for homogeneous degree-d I-H with (JH)^p=0. A finite failure at k constructs a triangular automorphism of inverse degree (d-1)k+1 via the truncated free quotient. | [jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md](jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md): Theorem ShuffleInverseDegreeEquivalence. |
 | JAC-PRIMITIVE-MONOMIAL-DEGREE-TWO-COUNTEREXAMPLE | claim | proved / partial | For every oddprime ell, u=x+y^(ell-1),v=xy+2y^ell have extensiondegreeell; every nonconstant monomial andx+y is primitive. The written weighted proof covers all exponents. Their determinant x+(ell+1)y^(ell-1) is nonconstant, so this refutes only the general auxiliary degree-two inference, not a Keller conclusion. | [jacobian/monodromy-theory/ALTERNATING_GENERIC_KELLER_AUDIT.md](jacobian/monodromy-theory/ALTERNATING_GENERIC_KELLER_AUDIT.md): Theorem 3 |
 | JAC-NORMALIZATION-UNIT-POLYNOMIAL-NECESSITY | claim | proved / partial | For a dominant genericallyfinite morphism SpecA->SpecC with A normal and A*=k*, the integral closure B ofC inFracA embeds inA and B*=k*. Hence a nonconstant normalizationunit excludes every polynomial affine-space realization over that affine base, independently of Jacobian. | see incoming proof routes |
@@ -5118,6 +5271,8 @@ Tracked obligations from the catalogue:
 - **GOAL-JAC-INDEX-FOUR-UNIFORM-207** (mathematical; open): For every characteristic-zero field and every dimension, every homogeneous cubic H with (JH)^4=0 gives I-H a polynomial inverse of degree at most 207.
 - **GAP-JAC-INDEX-FOUR-WEIGHTED-GRADES-104-206** (mathematical; open): Prove U_k=0 in the universal cubic Engel quotient A_(3,4) for every integer 104<=k<=206, or exhibit a nonzero weighted class at one of those grades.
 - **GAP-JC2-RESIDUAL-LAURENT-EXCLUSION-VERIFICATION** (verification; open): Audit exhaustiveness of the normalized GGHV reductions, check the correspondence between both Laurent configurations and Helali's two systems, and independently verify the two characteristic-zero exclusions or their exact certificates.
+- **JAC-MARKED-HIGHER-ORDER-EXCESS-ONE** (mathematical; open): For regular complex P,Q on w^2=u*Sigma(u)^2+M(u)z, with Sigma(0) nonzero, ord_0 M at least two and J_(u,w)(P,Q)=1/M, assume r=d*r0, s=d*s0 are their ruling degrees with d=gcd(r,s) and r0,s0 at least two. For ord_0 M>2 and both central restrictions nonzero, the differential in (12) must be exact. Its residue need not be decided by the pole order, and uniform exclusion of Delta=1 in this domain is open.
+- **GAP-JAC-BGV-UNRESTRICTED-WITT-DEGREE-GROWTH** (mathematical; open): For each fixed odd prime and degree cap, determine whether the prescribed BGV seed eventually has no determinant-one lift within the cap, across all correction choices. Radial and affine-line restrictions give scoped exclusions. The unrestricted minimum and existence of an integral polynomial lift beyond them remain open.
 
 Tracked obligations from the catalogue:
 
@@ -5131,6 +5286,8 @@ Tracked obligations from the catalogue:
 - **JAC-PLANE-ALTERNATING-POLYNOMIAL-REALIZATION — mathematical; open.** [Realize or universally exclude alternating generic monodromy for polynomial plane Keller maps beyond the proved A4 exclusions. Known dimension-three alternating realizations settle the earlier abstract action question; the reported natural A5 result remains a primary-source verification obligation here.](arithmetic/KNOT_HURWITZ_KELLER_MOONSHOT_AUDIT.md)
 - **GAP-JAC-SUBTREE-SHUFFLE-UNIFORM — mathematical; open.** [Cubic eventual shuffle membership holds forp<=3 and fails for everyp>=17. Determine the least failing length in\[4,17\], particularly whether fixedp4 has a finite dimension-uniform inverse bound or an unbounded inverse family. The58-variable index4 example gives only a lower bound207; the7/9 fibre obstructions and scalar restart barriers do not decide this alternative.](jacobian/subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md)
 - **GAP-JAC-INDEX-FOUR-WEIGHTED-GRADES-104-206 — mathematical; open.** [Decide the weighted cubic index-four classes in grades 104 through 206. This finite block is equivalent to the candidate sharp inverse-degree ceiling 207.](jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md)
+- **JAC-MARKED-HIGHER-ORDER-EXCESS-ONE — mathematical; open.** [Can excess one occur at a higher-order marked zero with nonzero central restrictions?](jacobian/affine-complements/MARKED_QUADRATIC_DAVENPORT_ZANNIER_EXCLUSION.md)
+- **GAP-JAC-BGV-UNRESTRICTED-WITT-DEGREE-GROWTH — mathematical; open.** [Does every common degree cap eventually fail for unrestricted lifts of the odd-prime BGV seed?](jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md)
 
 ## Hessian and Schur reductions
 
@@ -5695,9 +5852,13 @@ Tracked obligations from the catalogue:
 
 **Topic scope:** Factorial moment functionals, composition rigidity and Strong Factorial families. One varying exponent also permits any independent common monomial factor, with all terminals covered.
 
-**Computed obligation progress:** 45 open; 26 proved / discharged.
+**Computed obligation progress:** 46 open; 26 proved / discharged.
 
-**Authored scope assessment:** Unrestricted FC and SFC remain open. Universal special-family theorems do not supply an arbitrary-support reduction.
+**Authored scope assessment:** Long's nonflat and full binary results, the exact EIT I dependency, and consequences for the product Laguerre image, two-pair Image weights, finite detection, and Gaussian radial phases are recorded in the credited scope overview. Ordinary Factorial in dimension at least three and unrestricted Strong Factorial remain open.
+
+**Authored scope assessment:** The fixed-degree factorial moment test has a computable cutoff for each prescribed start. Term-count bounds at every starting index are the separate Strong Factorial problem.
+
+**Authored scope assessment:** The nonflat normalized moment series is nonrational. Polynomial pushforwards of the binary product-exponential measure inherit the Mathieu–Zhao integral kernel with radical equal to the pullback ideal. EIT II yields the stated flat Gamma family with a high-degree phase in one affine angular coordinate.
 
 **Authored scope assessment:** Earlier 26/27, no-carry, adjacent-part, residual/parity and all-prime filters retain their proved scopes. They are unnecessary for ordinary degree-five completion; no-carry coverage failure and a surviving local degree are not SFC counterexamples.
 
@@ -5875,9 +6036,9 @@ Tracked obligations from the catalogue:
 
 ### BINARY-FACTORIAL-RIGIDITY
 
-[Binary Factorial and composition rigidity reproductions](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex)
+[Binary Factorial, product-exponential Integral Conjecture and composition rigidity](factorial/image-rigidity/STATUS_AND_LITERATURE.tex)
 
-**Exact scope:** Credited internal reproductions of Long/Le Blanc EIT, Long FC(2), and liqsweep critical-value composition rigidity; not originality claims.
+**Exact scope:** Long's FC(2), nonrational normalized series for nonflat binary phases, trivial eventual power radical, and the product-exponential Integral Conjecture with its polynomial pushforwards. The bundle includes the credited Gaussian and coefficient-algebra transfers and the separate critical-value composition rigidity reproduction.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -5885,7 +6046,7 @@ Tracked obligations from the catalogue:
 
 **Current blockers:** none in declared routes.
 
-**Verification limits:** Recorded proof scope and assurance retained. Organization checked source identities and paths; no mathematical replay or new external review was performed.
+**Verification limits:** The deposited FC(2) source changes dating, citation and provenance wording relative to the pin used in the internal audit. The EIT I deposit is byte-identical to its audited source. Finite checks apply to transcribed identities. Independent replay, formal verification and external mathematical review are unrecorded.
 
 ### FACTORIAL-PENCIL-FAMILIES
 
@@ -7829,14 +7990,15 @@ Tracked obligations from the catalogue:
 | EXT-EIT-CHH-ABSOLUTE-EXPONENTIAL-PERIOD-COMPARISON | claim | proved / partial | For k⊂C algebraic over k∩R, the sets of naive exponential periods, cohomological exponential periods and periods of effective exponential Nori motives over k coincide. Proposition 11.1 supplies the relative-chain construction for a fixed semialgebraic integration domain and its algebraic boundary. | [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): Obligation: represent the actual angular period, absolute cohomological comparison of the simplex chain |
 | EXT-EIT-HIEN-ABSOLUTE-RAPID-DECAY | claim | proved / partial | For a flat algebraic connection on a smooth complex quasi-projective variety, integration gives a perfect pairing of algebraic de Rham cohomology with rapid-decay homology of the dual connection. | [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): Paper IV's remaining proof interfaces, absolute rapid-decay pairing; [factorial/image-rigidity/sources/long-eit-iv-92db79e.tex](factorial/image-rigidity/sources/long-eit-iv-92db79e.tex): prop:relative-Betti-interface, absolute input in lines 1171–1186 |
 | EXT-EIT-INTEGRABLE-PICARD-VESSIOT | claim | proved / partial | Let a characteristic-zero differential field have finitely many commuting derivations and algebraically closed common constants C. If an extension field with the same common constants contains a fundamental matrix Y of an integrable system, the algebra generated by the entries of Y and det(Y)^−1 is differentially simple and is its Picard–Vessiot ring. Its spectrum is a torsor under the tensor automorphism group of the common-horizontal solution functor. | [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): Paper IV's remaining proof interfaces, integrable Picard–Vessiot input; [factorial/image-rigidity/sources/long-eit-iv-92db79e.tex](factorial/image-rigidity/sources/long-eit-iv-92db79e.tex): input:pv, lines 2272–2282 |
-| EXT-EIT-LINDEMANN-WEIERSTRASS | claim | proved / partial | For pairwise distinct algebraic beta_i, the exponentials exp(beta_i) are linearly independent over Qbar. Classical input already matched in the retained complete EIT-I audit; no stronger transcendence claim is used. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): Section1: end of compact-chain argument and linear-phase case; matched classical LW input; [factorial/image-rigidity/sources/long-eit-pinned.tex](factorial/image-rigidity/sources/long-eit-pinned.tex): eq:linear-LW and its classical citation |
+| EXT-EIT-LINDEMANN-WEIERSTRASS | claim | proved / partial | For pairwise distinct algebraic beta_i, the exponentials exp(beta_i) are linearly independent over Qbar. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): Section 1, end of the compact-chain proof and the linear-phase case; classical input |
 | EXT-EIT-PV-CORRESPONDENCE-REDUCTIVITY | claim | proved / partial | Over a characteristic-zero differential field with algebraically closed constants, the ordinary PV correspondence identifies fixed intermediate fields and restriction quotients; a semisimple homogeneous module has reductive PV group and conversely. Applied only to joint ordinary PV extensions with no new constants; closed NORMAL subgroup reductivity and vector/cocycle splitting are justified in the retained reproduction. | [factorial/image-rigidity/sources/compoint-singer-1999.pdf](factorial/image-rigidity/sources/compoint-singer-1999.pdf): Proposition2.2, printedp477/PDFp5; [factorial/image-rigidity/sources/singer-differential-galois-lectures.pdf](factorial/image-rigidity/sources/singer-differential-galois-lectures.pdf): Theorem1.3.9 and Corollary1.3.10, printed/PDFpp13–14 |
 | EXT-GRACE-WALSH-SZEGO | claim | proved / partial | The symmetric multiaffine polarization of a degree-n polynomial nonvanishing on an open half-plane is nonvanishing when all n arguments are in that half-plane. | [factorial/image-rigidity/sources/wagner-multivariate-stable-polynomials-2011.pdf](factorial/image-rigidity/sources/wagner-multivariate-stable-polynomials-2011.pdf): Theorem 4.1, PDF page 11, Section 4 |
 | EXT-GRACE-WALSH-SZEGO-EXACT-DEGREE-CIRCULAR | claim | proved / partial | If f has exact degree n and A is an open circular region, including the exterior of a disk, Pol_n(f) is nonvanishing on A^n whenever f is nonvanishing on A. The full-degree hypothesis permits nonconvex circular regions; the convex interior-disk case is also used. This is distinct from the existing half-plane-only imported node. | [factorial/image-rigidity/sources/wagner-multivariate-stable-polynomials-2011.pdf](factorial/image-rigidity/sources/wagner-multivariate-stable-polynomials-2011.pdf): Theorem4.1, PDFpage11, exact-degree clause for general circular regions |
 | EXT-KZ-ORDINARY-PERIOD-CONJECTURE | claim | open / partial | Every equality between two absolutely convergent ordinary period integral presentations follows by finite additivity, algebraic changes of variables and Stokes over rational/algebraic data. This unrestricted conjecture is not imported as a theorem. | [factorial/image-rigidity/sources/kontsevich-zagier-periods-2001.pdf](factorial/image-rigidity/sources/kontsevich-zagier-periods-2001.pdf): Sections1.1/1.2, definition and Conjecture1; printedpp3,7/PDFpp4,8; exponentialextensionSection4.3 printedpp34–35 |
-| EXT-LONG-EIT-I | claim | proved / partial | For nonconstant algebraic polynomial q and algebraic degree-zero cycle, algebraic I(1) forces I identically zero; in particular integrals between distinct algebraic endpoints are nonzero at every nonzero algebraic parameter. | [factorial/image-rigidity/sources/long-eit-pinned.tex](factorial/image-rigidity/sources/long-eit-pinned.tex): thm:rigidity and cor:single, pinned source commit 22d98c4f27e606b5b25fa673c33f9c56c53cc86b |
+| EXT-LONG-EIT-I | claim | proved / partial | For nonconstant algebraic polynomial q and algebraic degree-zero cycle, algebraic I(1) forces I identically zero; in particular integrals between distinct algebraic endpoints are nonzero at every nonzero algebraic parameter. | [factorial/image-rigidity/sources/long-eit-pinned.tex](factorial/image-rigidity/sources/long-eit-pinned.tex): Hexagon 2611.00736v1 (byte-identical to pinned commit 22d98c4); thm:rigidity and cor:single |
 | EXT-MAO-WANG-ZHENG-INTERLACING-INPUT | claim | proved / partial | The consecutive-degree positive palindromic polynomials of the cited coefficientwise-reciprocal criterion strictly interlace after reciprocation under its normalized log-concavity hypotheses. | [factorial/image-rigidity/SFC_IDENTICAL_MONOMIAL_PAIR.md](factorial/image-rigidity/SFC_IDENTICAL_MONOMIAL_PAIR.md): Section 3, precise version of Theorem 1.1 and Remark 3.4; [factorial/image-rigidity/sfc_identical_monomial_pair_verification.json](factorial/image-rigidity/sfc_identical_monomial_pair_verification.json): Bibliographic locator and original source audit |
 | EXT-OLIVEIRA-SILVA-HERZOG-PARDI-PRIME-GAPS | claim | proved / partial | For the record gap G and first larger record's lower endpoint X_G in Table 8, any real interval (x,y] with x>=2, y<X_G, and y-x>=G contains a prime. This uses the reported exhaustive computation of record prime gaps up to 4*10^18, restricted here to the audited rows in (T33) and (T40). | [factorial/image-rigidity/sources/oliveira-e-silva-herzog-pardi-2014-prime-gaps.pdf](factorial/image-rigidity/sources/oliveira-e-silva-herzog-pardi-2014-prime-gaps.pdf): Section 2.2, Table 8, printed page 2050 |
+| EXT-PAKOVICH-MUZYCHUK-TOP-RATIONAL-COMPONENT | claim | proved / partial | For a permutation group G on d letters containing a full d-cycle, let V_k be the space of rational k-periodic vectors for k dividing d. The intersection of V_k orthogonals over proper k for which V_k is G-invariant is an irreducible rational G-module. | [factorial/image-rigidity/sources/pakovich-muzychuk-07104085v2.html](factorial/image-rigidity/sources/pakovich-muzychuk-07104085v2.html): arXiv:0710.4085v2, Theorem 3.1 and Section 4.1 (U_d) |
 | EXT-PSZ-PARTIAL-STIELTJES-HANKEL | claim | proved / partial | For every integer m>=1 and 0<=ell<=m, the partial m-Stieltjes-Rogers sequence S^(m)_(n\|ell)(alpha), whose generating function is f0...f_ell, has all Hankel minors in Z_nonnegative[alpha]. The f_j satisfy f_j=1+alpha_(j+m)*x*f_j...f_(j+m). This is PSZ arXiv1807.03271v2, Section2.3 equations2.26-2.27 and Theorem9.12. Only the exact theorem, definitions and its LGV proof are imported. | [factorial/image-rigidity/sources/petreolle-sokal-zhu-1807.03271v2.pdf](factorial/image-rigidity/sources/petreolle-sokal-zhu-1807.03271v2.pdf): Section2.3/Eqs2.26-2.27 and partial-path convention, printedpp17-18; Theorem9.12 printedp44; Section9.4 nonpermutable-boundary LGV proof printedpp48-49 |
 | EXT-ROUCHE-DLMF | claim | proved / partial | For functions f,g holomorphic on and inside a simple closed contour C, if \|g\|<\|f\| on C, then f and f+g have the same number of zeros inside C, counted with multiplicity. | [factorial/image-rigidity/sources/dlmf-1-10-rouche.html](factorial/image-rigidity/sources/dlmf-1-10-rouche.html): NIST DLMF Section1.10(iv), Rouche theorem |
 | EXT-SALAZAR-POSITIVE-JACKSON-GAMMA-HANKEL | claim | proved / partial | For 0<q<1, Gamma_q(x+y) is strictly totally positive of every finite order for strictly increasing positive row and column orders. | [moments/vanishing/sources/salazar-order-moment-transport-2606.31647v2.pdf](moments/vanishing/sources/salazar-order-moment-transport-2606.31647v2.pdf): Theorem 4.1, Mellin expansion (4.5)–(4.9); strictness Theorem 2.3 |
@@ -7925,7 +8087,10 @@ Tracked obligations from the catalogue:
 | SRC-FACTORIAL-HIGH-GAP-ROUCHE | gap | proved / partial | Full strong-convexity and Rouche proof for all N>=2,d>=1,gamma>0 satisfying N*exp(-d²N/[4(gamma+dN)])<=1/32. Eight finite profiles and51 exact normalized coefficient bounds are supporting controls, not the unrestricted argument. | [factorial/image-rigidity/FACTORIAL_HIGH_GAP_ROUCHE_REGION.md](factorial/image-rigidity/FACTORIAL_HIGH_GAP_ROUCHE_REGION.md): Current exact high-gap packet; [factorial/image-rigidity/verify_factorial_high_gap_rouche.py](factorial/image-rigidity/verify_factorial_high_gap_rouche.py): Current exact high-gap packet; [factorial/image-rigidity/factorial_high_gap_rouche_inputs.json](factorial/image-rigidity/factorial_high_gap_rouche_inputs.json): Current exact high-gap packet; [factorial/image-rigidity/factorial_high_gap_primary_source_record.json](factorial/image-rigidity/factorial_high_gap_primary_source_record.json): Current exact high-gap packet; [factorial/image-rigidity/factorial_high_gap_rouche_verification.json](factorial/image-rigidity/factorial_high_gap_rouche_verification.json): Current exact high-gap packet |
 | SRC-FACTORIAL-LINKED-BETA-DIAGONAL-REGULAR-EUCLIDEAN-CHAIN | claim | proved / partial | For every integer diagonal profile r=u>=0 and every n>=1, the actual linked polynomials J_n and J_(n+1) have strictly interlacing roots on Re z=1/2. Their monic Euclidean remainders have exact consecutive degrees n-1 down to zero. This proves the diagonal restriction of the regular-chain gap. Unequal positive profiles are outside this proof. | [factorial/image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md](factorial/image-rigidity/GAMMA_QUOTIENT_TRANSFER_AUDIT.md): Section 6, regular Euclidean chains on diagonal profiles by Gegenbauer and Sturm comparison |
 | EXT-EIT-IV-DIRECTIONAL-RELATIVE-RAPID-DECAY | claim | open / partial | At a nonzero algebraic scale and the matching direction, identify the normalized algebraic evaluation fiber of each lisse relative exponential object with its rational directional rapid-decay Betti fiber after complexification. The comparison is tensor-natural on the exponential quotient and continues horizontally on a common lisse analytic open, matching the actual integrals for elementary data. | [factorial/image-rigidity/sources/long-eit-iv-92db79e.tex](factorial/image-rigidity/sources/long-eit-iv-92db79e.tex): lem:rational-directional-fiber; prop:normalization; prop:relative-Betti-interface, lines 1151–1203; sec:KZ, lines 2650–2662; [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): Paper IV's remaining proof interfaces, distinction between absolute and directional relative rapid-decay |
-| FACTORIAL-FC2 | claim | proved / partial | Credited proof audit of Long FC(2), using pinned Long-Le Blanc EIT I and stated imported analytic/algebraic results; no originality claim. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): Sections EIT I and binary Factorial proof; first-page source pins |
+| FACTORIAL-FC2-FLAT-AFFINE | claim | proved / complete | For nonzero f in C[x,y] of degree D >= 1 with f_D=c(x+y)^D, c nonzero, and f_{D-1}(t,1-t) of degree at most one (including the zero polynomial), infinitely many positive factorial moments are nonzero. This covers all flat phases of total degree at most two. | [factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex](factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex): Section 6, An elementary flat subcase |
+| EXT-LONG-EIT-I-SINGLE | claim | proved / complete | For nonconstant q in Qbar[t], distinct a,b in Qbar and nonzero xi in Qbar, the complex integral of exp(xi q(t)) dt from a to b is nonzero. | [factorial/image-rigidity/sources/long-eit-pinned.tex](factorial/image-rigidity/sources/long-eit-pinned.tex): cor:single (Hexagon v1 Corollary 1.4) |
+| FACTORIAL-FC2-NONFLAT | claim | proved / partial | For nonzero f in C[x,y] of degree D >= 1 with f_D(t,1-t) nonconstant, L(f^m) is nonzero for infinitely many positive m, where L(x^a y^b)=a!b!. The nonflat argument is independent of EIT I. | [factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex](factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex): thm:nonflat (Theorem 1.1); Sections 2–5 |
+| FACTORIAL-FC2-NONFLAT-NORMALIZED-SERIES-NONRATIONAL | claim | proved / partial | For f in C[x,y] of total degree D >= 1 with nonconstant f_D(t,1-t), the series H_f(s)=sum_{m>=0} L(f^m)s^m/(Dm+1)! is nonrational. Its coefficient sequence admits no eventual constant-coefficient linear recurrence. | [factorial/image-rigidity/STATUS_AND_LITERATURE.tex](factorial/image-rigidity/STATUS_AND_LITERATURE.tex): Nonrationality of the normalized series; [factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex](factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex): Sections 2–5; Lemma 3.1, Theorem 3.3, Corollary 4.7, Proposition 5.1, Lemmas 5.3–5.4 |
 | FACT-MULTIVARIATE-RICE-REAL-EXIT-EXCLUSION | claim | proved / partial | For fully shared supports descending upper trajectories cannot end at real branch points and can cross the real axis only through the two pole-free real gaps outside [0,1]. | [factorial/image-rigidity/MULTIVARIATE_RICE_CONTOUR_AND_REAL_BOUNDARY.md](factorial/image-rigidity/MULTIVARIATE_RICE_CONTOUR_AND_REAL_BOUNDARY.md): Where the upper descending contours can meet the real axis |
 | FACT-MULTIVARIATE-SHARED-SUPPORT-BOUNDED-CUSP-EXCLUSION | claim | proved / partial | For fixed all-positive ordinary exponent columns with an interior cusp, the consecutive moment pair has no common root in every fixed bounded logarithmic n^(3/4)-scaled window around the cusp, including when the total degrees agree. | [factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md](factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md): Bounded scaled windows at the cusp |
 | FACT-MULTIVARIATE-SHARED-SUPPORT-NEGATIVE-LOCAL-EXCLUSION | claim | proved / partial | For fixed all-positive ordinary exponent columns, any negative real scale has a neighborhood excluding common roots at all sufficiently large consecutive orders. The even-odd sign change of the two real saddle contributions gives the comparison at equal height. | [factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md](factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md): Local exclusion around every negative real scale |
@@ -8120,9 +8285,6 @@ Tracked obligations from the catalogue:
 | FACT-INDIVIDUAL-SQ-CI-M-GROWINGQUARTIC | claim | proved / partial | At fixed support-centered rho,T on the q collar, complete packet derivatives have relative errors O(rho/k+\|T\|/k+1/k^2). The T/k amplitude term is retained. No adjacent-order radial step is used. | [factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md](factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md): Section7 |
 | FACT-INDIVIDUAL-SQ-CI-M-LARGETHERMAL | claim | proved / partial | Complete physical tails and the actual lower-fold right Ai cycle exclude the inactive upper high saddle. Exact regular action derivatives, growing-fold collars and bounded-H Airy ODE simplicity exclude individual multiple roots uniformly. | [factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md](factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md): Section8 |
 | FACT-EIT-I-POLYNOMIAL-MOMENT-PACKAGE | claim | proved / partial | For every polynomial q over Qbar of degree n>=2 and algebraic degree-zero endpoint cycle, the reduced moment vector consists of E-functions and satisfies U'=(C+D/z)U+z^-1 sum b_lambda exp(lambda z). The homogeneous module and C are semisimple, Spec(D)={-1/n,...,-(n-1)/n}, and each C-eigenblock's compressed D spectrum lies in(-1,0), including critical-value collisions. Finite direct sums preserve these properties. | [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): Theorem: exact polynomial moment package used by II–III; [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): Section1: Moment coordinates and arithmetic; semisimplicity; compressed critical-point flags; [factorial/image-rigidity/sources/long-eit-pinned.tex](factorial/image-rigidity/sources/long-eit-pinned.tex): prop:moment-system; prop:semisimplicity; lem:D-spectrum; eq:local-spectrum |
-| FACT-LONG-EIT-AND-FC2-AUDIT-COROLLARY-1 | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex: Let $P=f((X_1^2+X_2^2)/2,(X_3^2+X_4^2)/2)$ over a characteristic-zero field. If its pure Gaussian moments vanish eventually, then $f=0$. Consequently all-marker eventual safety in this entire invariant subalgebra is equivalent to $P=0$. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): corollary-1;line411 |
-| FACT-LONG-EIT-AND-FC2-AUDIT-COROLLARY-2 | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex: Let $B$ be any commutative $\Q$-algebra, including a nonreduced or non-Noetherian one. For $f\in B[y_1,y_2]$, the following are equivalent: \begin{enumerate} \item $\Lfac_B(f^m)=0$ for all sufficiently large $m$; \item every coefficient of $f$ is nilpotent in $B$; \item $f$ is nilpotent in $B[y_1,y_2]$; \item $\Lfac_B(qf^m)=0$ eventually for every fixed polynomial $q$. \end{enumerate} The same classification holds in the two-block Gaussian invariant subalgebra, retaining every original Gaussian polynomial marker. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): corollary-2;line426 |
-| FACTORIAL-EIT-FC2-INTERNAL-AUDIT | claim | proved / partial | The retained source audits the complete stated Long/Le Blanc EIT-I dependency chain,nonflat FC(2),flat binary conclusion and exact Gamma/Gaussian consequences;no originality or fresh external proof review is asserted. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): Sections1-3 |
 | FACT-FINITE-GAMMA-CONVOLUTION-OBSTRUCTION | claim | proved / partial | Let independent shape-scale Gamma variables have(alpha1,theta1)=(125/9,1/2),(alpha2,theta2)=(1/3249,19/2), X=U+V, Pi_n(z)=E[(z+X)^n], w=z+132/19. Then Pi4=(w²-w+19)(w²+w+3), Pi5=(w+2)(w²-w+19)²; the common quadratic has discriminant-75. Every cumulant ispositive and normalized cumulants are moments of the displayed positive two-atom measure. No HCM-density assertion, Gamma-power example, ordinaryfactorial counterexample or arbitrary-positive-Gamma-shape terminal-five closure follows. Ordinary binomial terminal five is proved separately. | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): thm:gamma-convolution-obstruction and explicit raw-moment proof |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-LEM-CENTERS | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/lower_exponent_initial_and_boundary.tex: For integers $a,d\ge1$ and $j\ge2$, \[ \frac{G_j}{G_{j-1}}> \left(\frac{j}{j-1}\right)^{d/2}. \] For $a\ge1$, every root of $M_{j,a,d}$ lies in \[ \frac1{2jG_j}<\|t\|<\frac{2j}{G_j}. \] | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): lem:centers |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-LEM-CUMULANTS | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/lower_exponent_initial_and_boundary.tex: For every integer $d\ge1$, the functions $\mu_\gamma,v_\gamma,\kappa_\gamma$ are strictly positive and strictly increasing for $\gamma>0$. More explicitly, with $r_j=(\gamma+jd)_d$, \[ \mu_\gamma=r_0,\qquad v_\gamma=r_0(r_1-r_0),\qquad \kappa_\gamma= r_0\bigl[2(r_1-r_0)^2+r_1(r_2-2r_1+r_0)\bigr]. \] | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): lem:cumulants |
@@ -8203,6 +8365,7 @@ Tracked obligations from the catalogue:
 | FACT-INDIVIDUAL-SQ-CI-C-POINTWISE | claim | proved / partial | For EACH fixed M>=2 and support, absence of a nonzero complex vector annihilating the two moments is equivalent to the universal commutative-Q-algebra implication: those moments zero forces (A,B)^(2M-2)=0, equivalently phase^(2M-2)=0, equivalently A=B=0 in every reduced Q-algebra. This is a conditional implication-lemma, not an unconditional assertion of fixed-pair coprimality. | [factorial/image-rigidity/SUPPORT_UNIFORM_COEFFICIENT_NILPOTENCE_AND_RADIAL_GAUSSIAN.md](factorial/image-rigidity/SUPPORT_UNIFORM_COEFFICIENT_NILPOTENCE_AND_RADIAL_GAUSSIAN.md): Theorem FixedPairUniversalCoefficientEquivalence |
 | FACT-UNIFORM-PADE-PARABOLA-SFC-LEM-INSIDE | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex: For every real $M>-1$, every zero of $R_N(M,z)$ belongs to $\mathcal P_N$. | [factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex): lem:inside;line51 |
 | FACT-UNIFORM-PADE-PARABOLA-SFC-LEM-OUTSIDE | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex: Suppose $p_0=1$, $p_{-1}=0$ and \[ p_j=(1+z/b_j)p_{j-1}-(z/c_j)p_{j-2},\qquad b_j,c_j>0, \] with the second term omitted when $j=1$. Put $b_0=0$. If $b_j(1-b_{j-1}/c_j)\ge\alpha>0$ for every $j$, then every $p_j$ is nonzero on $\mathcal P_\alpha=\{x+iy:y^2<4\alpha(x+\alpha)\}$. | [factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex): lem:outside;line106 |
+| FACTORIAL-FC2-FLAT | claim | proved / complete | For nonzero f in C[x,y] of degree D >= 1 with f_D=c(x+y)^D, c nonzero, infinitely many positive powers have nonzero factorial moment. If the normalized polynomial f/c has algebraic coefficients, all its sufficiently large powers have nonzero factorial moment. | [factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex](factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex): lem:radial-limit and flat part of cor:fc2 (Section 6) |
 | FACT-MULTIVARIATE-SHARED-SUPPORT-FIXED-ANNULUS | claim | proved / partial | For fixed all-positive ordinary exponent columns, all scaled roots lie in a fixed annulus for sufficiently large orders. Consecutive common roots are excluded uniformly near the negative ray and also near the positive ray in the absence of a cusp. | [factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md](factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md): A fixed annulus for possible common roots |
 | FACT-MULTIVARIATE-SADDLE-TWO-SHEET-PHASE-ARCS | claim | proved / partial | Where the two upper inverse branches are regular, the difference D of their stationary phases satisfies D'=q1-q2 and has smooth equal-modulus arcs. At a limiting common zero in a region with exactly these two saddle contributors one must have exp(D-Delta D')=1. When total degrees differ, the equal-modulus arc must have horizontal tangent at that point. | [factorial/image-rigidity/MULTIVARIATE_SADDLE_MAP_TWO_SHEETS.md](factorial/image-rigidity/MULTIVARIATE_SADDLE_MAP_TWO_SHEETS.md): Equal-modulus arcs for the two branches |
 | FACT-MULTIVARIATE-DIFFUSE-LIMIT-RESULTANT-REDUCTION | claim | proved / partial | At fixed N=m+1, a sequence of ordinary counterexamples with bounded total curvature S and vanishing maximal relative row gap has a subsequence with S tending to s>0, constant integer total-degree difference Delta, and signed logarithmic center correction tending to ell. Its two unitary Hermite limits share a root and ell=2mN Delta log(N/m), \|ell\|<=s. At N>=11, Delta=ell=0. A positive candidate s is constrained by one nonzero polynomial resultant. | [factorial/image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_FIXED_TERMINAL_CURVATURE.md): The limiting pair when each relative gap tends to zero |
@@ -8350,6 +8513,7 @@ Tracked obligations from the catalogue:
 | FACT-TWO-ANGULAR-COORDINATES-THM-ALL-SHAPES | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/TWO_ANGULAR_COORDINATES.tex: Let $\xi\ne0$ be algebraic. If $v_{\mathfrak p}(\xi)<0$ at some place above five, then for every $a,b,c\ge0$, \[ \int_T u^av^bw^c e^{\xi q}\,dX\,dY\notin\Qb, \qquad\text{in particular it is nonzero.} \] | [factorial/image-rigidity/TWO_ANGULAR_COORDINATES.tex](factorial/image-rigidity/TWO_ANGULAR_COORDINATES.tex): thm:all-shapes;line189 |
 | FACT-UNIFORM-PADE-PARABOLA-SFC-THM-COPRIME | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex: Let $N\ge2$, $l>-1$ be real, and let $M=l+a$ with $a\ge1$ an integer. Then $R_N(M,z)$ and $R_{N-1}(l,z)$ have no common complex zero. | [factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex): thm:coprime;line137 |
 | FACT-MULTIVARIATE-QUANTITATIVE-HERMITE-COMPARISON | claim | proved / partial | For N=n+1>=3 and n/N<=rho<=1, the roots of He_n and the roots of He_N scaled by sqrt(rho) have cross-distance at least 1/(200*N^(5/2)) and same-set spacing at least 1/(20*sqrt(N)). | [factorial/image-rigidity/MULTIVARIATE_WEAK_CURVATURE_ALL_TERMINALS.md](factorial/image-rigidity/MULTIVARIATE_WEAK_CURVATURE_ALL_TERMINALS.md): Quantitative comparison of the Hermite pairs |
+| FACTORIAL-FC2 | claim | proved / complete | For f in C[x,y], if L(f^m)=0 for every positive integer m then f=0, where L(x^a y^b)=a!b!. | [factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex](factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex): cor:fc2 (Corollary 1.3); Sections 1 and 6 |
 | FACT-MULTIVARIATE-REGULAR-EQUAL-DEGREE-ABOVE-CUSP-SEPARATION | claim | proved / partial | For ordinary fully shared profiles of equal degree with maximum rho at least one, the two stationary branches are separated by a vertical line. The equal-modulus locus is a graph whose phase difference runs strictly between zero and i*pi. | [factorial/image-rigidity/MULTIVARIATE_REGULAR_SADDLE_PHASE_SEPARATION.md](factorial/image-rigidity/MULTIVARIATE_REGULAR_SADDLE_PHASE_SEPARATION.md): Equal total degrees at and above the real cusp |
 | FACT-MULTIVARIATE-REGULAR-UNEQUAL-DEGREE-SADDLE-SEPARATION | claim | proved / partial | The exterior quadrants contain at most one member each of a principal upper stationary fiber. Equal saddle heights and equal consecutive multipliers would force a vertical pair, which the weighted sign comparison excludes for unequal total degrees. | [factorial/image-rigidity/MULTIVARIATE_REGULAR_SADDLE_PHASE_SEPARATION.md](factorial/image-rigidity/MULTIVARIATE_REGULAR_SADDLE_PHASE_SEPARATION.md): A bound on fibers in the exterior quadrants and Exclusion on a vertical fiber |
 | FACTORIAL-MULTIVARIATE-ONE-PRIVATE-LINEAR-UNIFORM-TAIL | claim | proved / partial | Ordinary multivariate two-monomial supports with private exponent sums {1,D}, D>=2. Every consecutive pair at orders n,n+1 for n>=360 is coprime over every characteristic-zero field, uniformly in dimension and all private and shared exponents. | [factorial/image-rigidity/MULTIVARIATE_ONE_PRIVATE_LINEAR_TAIL.md](factorial/image-rigidity/MULTIVARIATE_ONE_PRIVATE_LINEAR_TAIL.md): Sections 1–4, uniform coefficient and phase bounds |
@@ -8418,6 +8582,7 @@ Tracked obligations from the catalogue:
 | FACT-PRIME-PLUS-ONE-EXPONENT-GAP-SFC-LEM-KERNEL | claim | proved / partial | In the exact definitions and domains of factorial/image-rigidity/PRIME_PLUS_ONE_EXPONENT_GAP_SFC.tex: [The reduced rising-jet kernel] Let $p$ be prime, let $\gamma$ be integral in a complete algebraically closed extension of $\mathbb Q_p$, and let $u$ be an integral root of the lower monic reciprocal. The reduction of $Z(u)$ at $d=p$ has rank $p-1$ and kernel generated by \[ k_m=\left.\frac{d}{dx}(x)_m\right\|_{x=\bar\gamma}, \qquad1\le m\le p,\qquad k_p=-1. \] No condition $\bar\gamma\in\mathbb F_p$ is imposed. | [factorial/image-rigidity/PRIME_PLUS_ONE_EXPONENT_GAP_SFC.tex](factorial/image-rigidity/PRIME_PLUS_ONE_EXPONENT_GAP_SFC.tex): lem:kernel |
 | FACT-INDIVIDUAL-SQ-CI-T-FINITE | claim | proved / partial | For EACH fixed integer m>=2, only finitely many integer a>=0,d>=1 make the actual A_m have a repeated complex root. The c0, compact-c and c-infinity regimes and exact a0/d1 boundaries exhaust escaping supports. No m-uniform support box follows. | [factorial/image-rigidity/FIXED_TERMINAL_REPEATED_ROOT_SUPPORT_FINITENESS.md](factorial/image-rigidity/FIXED_TERMINAL_REPEATED_ROOT_SUPPORT_FINITENESS.md): Theorem FixedTerminalRepeatedRootSupportFiniteness |
 | EXT-EIT-III-POLYNOMIAL-VALUE-TRANSFER | claim | proved / partial | Polynomial relations at a nonzero algebraic nonsingular parameter are lifted and reduced using the E-function system and affine-linear functional relation ideal. Exact polynomial lifting and ring-level specialization application have been internally audited. | [factorial/image-rigidity/sources/long-eit-iii-92db79e.tex](factorial/image-rigidity/sources/long-eit-iii-92db79e.tex): thm:Beukers; thm:value-transfer; proof of thm:main; [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): Internal reproduction: exact EXT-EIT-III-POLYNOMIAL-VALUE-TRANSFER |
+| FACTORIAL-EIT-II-INTEGER-DIRICHLET-AFFINE-PHASE | claim | proved / complete | For a Dirichlet vector T with n>=2 positive integer shapes α_i, N=sum_i α_i, a nonconstant algebraic affine form ℓ on the simplex and an algebraic polynomial p of degree d>=N, E exp(p(ℓ(T))) is transcendental. | [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): High-degree phases in one affine angular coordinate |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-RATIONAL-ANNULUS-CUTOFF | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/lower_exponent_initial_and_boundary.tex: Fix $j\ge2$ and positive rationals $C_{j-1},C_j$ satisfying \[ (1+1/C_\ell)^\ell<2\qquad(\ell=j-1,j). \] For an integer $d_0\ge1$, put $B_\ell=((d_0+1)\ell)!/\ell!$. If \[ B_j^{\,j-1}> (C_{j-1}C_j)^{j(j-1)}B_{j-1}^{\,j}, \] then $M_{j-1,a,d}$ and $M_{j,a,d}$ are coprime for every pair of integers $a\ge1,d\ge d_0$. | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): thm:rational-annulus-cutoff |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-RECTANGLE | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/lower_exponent_initial_and_boundary.tex: For each terminal $N\ge2$, put \[ A_N=(ND_N^2+D_N)(4N+1)^N. \] Among positive integer lower exponents $a$ and gaps $d\ge2$, possible failure of pairwise coprimality through order $N$ is confined to the finite rectangle \[ 1\le a<A_N,\qquad 2\le d<D_N. \] | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): cor:rectangle |
 | FACT-LOWER-TWO-ALL-GAPS-GE46 | claim | proved / partial | For EVERYd>=46,N>=2 and every characteristic-zero field, nonzeroX^2(A+BX^d) passes its actual consecutive pair. The older sparse theorem overlaps the weighted tail atd46,N06144 and thereafter. | [factorial/image-rigidity/ORDINARY_LOWER_TWO_STRONG_FACTORIAL.md](factorial/image-rigidity/ORDINARY_LOWER_TWO_STRONG_FACTORIAL.md): Full proof, with analytic and actual finite evidence kept separate |
@@ -8465,6 +8630,8 @@ Tracked obligations from the catalogue:
 | FACT-RIGIDITY-CRITICAL-VALUES-THM-COMPOSITION | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/RIGIDITY_CRITICAL_VALUES.tex: For nonconstant complex polynomials $f_1,\ldots,f_s$, put $F=f_s\circ\cdots\circ f_1$. If $F(0)=0$, $F'(0)=1$, and $F\ne z$, then \[ \ord_0(F-z)\leq1+\sum_i\#\CV(f_i) \leq1+\sum_i(\deg f_i-1). \] In particular, $\ord_0(a\circ b-z)\leq\deg a+\deg b-1$. | [factorial/image-rigidity/RIGIDITY_CRITICAL_VALUES.tex](factorial/image-rigidity/RIGIDITY_CRITICAL_VALUES.tex): thm:composition;line93 |
 | FACT-TWO-ANGULAR-COORDINATES-COR-FAMILY | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/TWO_ANGULAR_COORDINATES.tex: For $D\ge4$, an algebraic $\xi\ne0$ with a negative valuation at a place above five, and any complex polynomial $R$ of degree at most $D-2$, set \[ F=S^D+D\xi S^{D-4}G+R. \] Then every sufficiently large $m$ satisfies $\mathbb E[F^m]\ne0$. The same holds at $\xi=0$. This gives factorial families for every $n\ge3$, in degree four already, for any partition into three nonempty blocks. | [factorial/image-rigidity/TWO_ANGULAR_COORDINATES.tex](factorial/image-rigidity/TWO_ANGULAR_COORDINATES.tex): cor:family;line238 |
 | FACT-UNIFORM-PADE-PARABOLA-SFC-THM-MAIN | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex: Let $a\ge0$ be an integer and $\beta>0$. For every nonzero polynomial $f(X)=X^a(A+BX)$ and every integer $n\ge1$, its two consecutive Gamma moments at orders $n-1,n$ cannot both vanish. Thus the entire adjacent-monomial family satisfies Strong Factorial, at every starting index, for every positive Gamma shape; in particular for ordinary factorials. | [factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex): thm:main;line13 |
+| FACTORIAL-EIT-FC2-INTERNAL-AUDIT | claim | proved / partial | Internal reproduction of the Long–Le Blanc EIT I and Long FC(2) proof chains, with exact Gaussian and coefficient-algebra transfers. The Hexagon deposits preserve the audited mathematics. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): Sections1-3 |
+| FACTORIAL-FC2-EVENTUAL-RADICAL | claim | proved / complete | Over every characteristic-zero field K, each nonzero f in K[x,y] has infinitely many nonzero factorial moments among the positive multiples of each fixed integer q >= 1. Equivalently for q=1, the eventual power radical of ker L is {0}. | [factorial/image-rigidity/STATUS_AND_LITERATURE.tex](factorial/image-rigidity/STATUS_AND_LITERATURE.tex): Binary Factorial and the product-exponential kernel, power and field transfer |
 | FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-EVENTUAL-SQUAREFREE | claim | proved / partial | Fixed pair of distinct monomial exponents with positive private exponent sum on both sides, at sufficiently large m depending on the support. If at least one shared coordinate has unequal exponents, every single-order moment polynomial at sufficiently large m is squarefree over every characteristic-zero field. | [factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_EVENTUAL_CONSEQUENCES.md](factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_EVENTUAL_CONSEQUENCES.md): Eventual squarefreeness from a varying shared row |
 | FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-FINITE-PREFIX-REDUCTION | claim | proved / partial | For each fixed support in this class and any certified cutoff m0, all-order separation holds if and only if the finitely many rational resultants for pairs m,m+1 with 1<=m<m0 are nonzero. The cutoff is support-dependent and the source proves existence. | [factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_EVENTUAL_CONSEQUENCES.md](factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_EVENTUAL_CONSEQUENCES.md): Coefficient rings and the finite range of remaining orders |
 | FACT-PHYSICAL-PRIME-RAISING-CALCULUS-COR-CONTINUOUS | claim | proved / partial | With the definitions of factorial/image-rigidity/PHYSICAL_PRIME_RAISING_CALCULUS.tex: [Continuous calculus and the residue tree] The polynomial calculus extends uniquely to a contractive unital algebra homomorphism \[ C(\mathbb Z_p,\mathbb Q_p)\longrightarrow \mathcal B(\mathbb Q_p\langle v\rangle^q),\qquad f\mapsto f(L). \] The characteristic functions of residue classes give bounded orthogonal projectors$P_{a,r}$, summing to one and satisfying $P_{a,r}=\sum_{b\bmod p^{r+1},\,b\equiv a\bmod p^r}P_{b,r+1}$. | [factorial/image-rigidity/PHYSICAL_PRIME_RAISING_CALCULUS.tex](factorial/image-rigidity/PHYSICAL_PRIME_RAISING_CALCULUS.tex): cor:continuous |
@@ -8524,6 +8691,7 @@ Tracked obligations from the catalogue:
 | FACT-LOWER-FIVE-QUADRATIC-SECTOR-SFC-LEM-ANGLE-RATIO | claim | proved / partial | In the exact definitions and domains of factorial/image-rigidity/LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex: [The common-root angle ratio] For $n\ge2$ and $\gamma>2n-2$, every nonreal common root of $T_{n,\gamma},T_{n+1,\gamma+5}$ has $\Re t>0$ and \[ \cos^2(\arg t)>Q_n(M):= \frac{s(M+4)F(M)}{(M+2)(M+3)(M+2n+8)^2},\quad F(M)=2M^2+(6n+25)M+24n+66. \] The positive function $Q_n(M)$ is strictly decreasing for $M>0$. Moreover $Q_n(8n)>3/7$ and $Q_n(14n)>1/4$. | [factorial/image-rigidity/LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex](factorial/image-rigidity/LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex): lem:angle-ratio |
 | FACT-LOWER-TWO-FOURTH-POWER-GAP-SFC-THM-FOURTH-GAP | claim | proved / partial | In the exact definitions and domains of factorial/image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex: [The ordinary support $\{2,6\}$] Every nonzero complex phase $X^2(A+BX^4)$ satisfies Strong Factorial: its ordinary factorial moments cannot both vanish at any consecutive positive orders. | [factorial/image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex](factorial/image-rigidity/LOWER_TWO_FOURTH_POWER_GAP_SFC.tex): thm:fourth-gap |
 | FACT-DIAGONAL-PRIME-GAP-SFC-THM-DIAGONAL-PRIME | claim | proved / partial | In the exact definitions and domains of factorial/image-rigidity/DIAGONAL_PRIME_GAP_SFC.tex: [Equal prime lower exponent and gap] For every prime $p$ and every nonzero complex binomial \[ f(X)=X^p(A+BX^p), \] no two consecutive positive ordinary factorial moments vanish. Equivalently, for every $n\ge1$, \[ \gcd\bigl(T_{n,pn+1,p},T_{n+1,p(n+1)+1,p}\bigr)=1 \] over $\mathbb Q[t]$ and over $\mathbb C[t]$. | [factorial/image-rigidity/DIAGONAL_PRIME_GAP_SFC.tex](factorial/image-rigidity/DIAGONAL_PRIME_GAP_SFC.tex): thm:diagonal-prime |
+| FACTORIAL-EIT-II-HIGH-DEGREE-FLAT-GAMMA | claim | proved / complete | Let X_i be independent Gamma(α_i,1) variables with n>=2 positive integer shapes and N=sum_i α_i. Put S=sum_i X_i and f=S^D + D S^(D-1)p(L/S)+R with D>=deg(p)+1, deg(p)>=N, L/S nonconstant on S=1 and deg R<=D−2. With p and L algebraic, E(f^m) is nonzero for every sufficiently large m, with arbitrary complex R. With complex p and L it is nonzero for infinitely many m. | [factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md): High-degree phases in one affine angular coordinate |
 | FACT-GAMMA-CONVOLUTION-APPELL-OBSTRUCTION-COR-SCOPE | claim | proved / partial | In the exact definitions of factorial/image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex: Even strict total positivity of both the ordinary moment Hankel matrix and the normalized-cumulant Hankel matrix of a positive random variable does not imply coprimality of its consecutive Appell moment polynomials. Neither example above is a single positive integer power $X^d$ of one Gamma variable $X$. No counterexample to the binomial Gamma family with shape $an+\beta$, or to factorial SFC, is asserted. | [factorial/image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex](factorial/image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex): cor:scope |
 | FACT-SFC-BINOMIAL-PAPER-KUMMER | claim | proved / partial | The lifted roots partition into equal rotation cosets; if q>=2 and the starting-point inequality holds, the norm primes are bounded by M^(1/(q+1)) and this is greater than 2dh. | [../results/strong-factorial-binomials/pade.tex](../results/strong-factorial-binomials/pade.tex): lem:kummer |
 | FACT-SFC-BINOMIAL-PAPER-LOCAL-GAP | claim | proved / partial | Under the starting degree bound and stated actual endpoint inequalities, the record gap G bounds dh strictly and d < G/2. | [../results/strong-factorial-binomials/arithmetic.tex](../results/strong-factorial-binomials/arithmetic.tex): lem:local-gap |
@@ -8545,6 +8713,12 @@ Tracked obligations from the catalogue:
 | FACT-REGIONAL-BINOMIAL-C-CAPTURE | claim | proved / partial | The old upper bound gives a fixed disk; the zero Gaussian chart and favored horizontals exclude every compact set off the model circle in the joint d,m limit. There is no404 lower-annulus premise. | [factorial/image-rigidity/COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md](factorial/image-rigidity/COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md): S13 and Section5 |
 | FACT-RIGIDITY-CRITICAL-VALUES-COR-RIGIDITY | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/RIGIDITY_CRITICAL_VALUES.tex: Let $a(z)=z+O(z^2)$ be polynomial of degree at most $m+1$. If the coefficients of $z^{n+1},\ldots,z^{n+m}$ in $a^{-1}$ vanish for some $n\geq1$, then $a=z$. This is $R(m)_n$ in Edo--van den Essen's notation. | [factorial/image-rigidity/RIGIDITY_CRITICAL_VALUES.tex](factorial/image-rigidity/RIGIDITY_CRITICAL_VALUES.tex): cor:rigidity;line110 |
 | FACTORIAL-ADJACENT-SFC | claim | proved / partial | For every integer a>=0, beta>0, nonzero complex X^a(A+BX), no two consecutive Gamma moments vanish at any starting index. | [factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex): thm:main |
+| FACT-LONG-EIT-AND-FC2-AUDIT-COROLLARY-1 | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex: Let $P=f((X_1^2+X_2^2)/2,(X_3^2+X_4^2)/2)$ over a characteristic-zero field. If its pure Gaussian moments vanish eventually, then $f=0$. Consequently all-marker eventual safety in this entire invariant subalgebra is equivalent to $P=0$. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): corollary-1;line411 |
+| FACT-LONG-EIT-AND-FC2-AUDIT-COROLLARY-2 | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex: Let $B$ be any commutative $\Q$-algebra, including a nonreduced or non-Noetherian one. For $f\in B[y_1,y_2]$, the following are equivalent: \begin{enumerate} \item $\Lfac_B(f^m)=0$ for all sufficiently large $m$; \item every coefficient of $f$ is nilpotent in $B$; \item $f$ is nilpotent in $B[y_1,y_2]$; \item $\Lfac_B(qf^m)=0$ eventually for every fixed polynomial $q$. \end{enumerate} The same classification holds in the two-block Gaussian invariant subalgebra, retaining every original Gaussian polynomial marker. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): corollary-2;line426 |
+| FACTORIAL-FC2-FIXED-DEGREE-WINDOW | claim | proved / complete | For each fixed degree bound D >= 0 and starting index N >= 1, there exists a computable cutoff M(D,N) such that nonzero f of degree at most D over any characteristic-zero field has a nonzero factorial moment at some m in [N,M(D,N)]. This cutoff is obtained by a terminating radical-membership search. No explicit bound or length uniform in N is asserted. | [factorial/image-rigidity/STATUS_AND_LITERATURE.tex](factorial/image-rigidity/STATUS_AND_LITERATURE.tex): Finite detection at a fixed degree and start |
+| FACTORIAL-FC2-IMAGE-VERTEX-EXCLUSION | claim | proved / complete | For nonzero F in C[xi_1,xi_2,z_1,z_2] with E_2(F^m)=0 for all sufficiently large m, the convex hull of the weights b−a of its supported monomials xi^a z^b has no vertex in the closed nonnegative orthant. In particular the weight-zero subalgebra C[xi_1 z_1,xi_2 z_2] has trivial eventual power radical for E_2. | [factorial/image-rigidity/STATUS_AND_LITERATURE.tex](factorial/image-rigidity/STATUS_AND_LITERATURE.tex): A constraint on two-pair Image phases |
+| FACTORIAL-FC2-POLYNOMIAL-PUSHFORWARDS | claim | proved / complete | For every real polynomial map P:R^2→R^r, r>=1, let ν be the pushforward of e^(-x-y) dx dy on the positive quadrant. The eventual power radical of the integral kernel on C[z_1,...,z_r] is the pullback ideal ker(P^*). This kernel is Mathieu–Zhao, and it has zero radical on the quotient by ker(P^*). | [factorial/image-rigidity/STATUS_AND_LITERATURE.tex](factorial/image-rigidity/STATUS_AND_LITERATURE.tex): Polynomial pushforwards of the product-exponential measure |
+| FACTORIAL-FC2-PRODUCT-EXPONENTIAL-INTEGRAL | claim | proved / complete | On C[x,y], the kernel of integration on (0,infinity)^2 against e^(-x-y) dx dy is the factorial kernel, a Mathieu–Zhao subspace with eventual power radical {0}. The radical statement is the dimension-two case of van den Essen's Conjecture 7.3. | [factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex](factorial/image-rigidity/sources/long-fc2-hexagon-v1.tex): cor:integral-mathieu (Corollary 1.4) |
 | FACTORIAL-MULTIVARIATE-ONE-PRIVATE-LINEAR-REMAINING-TERMINALS | claim | proved / partial | For arbitrary ordinary supports with private exponent sums {1,2}, all-terminal coprimality reduces to terminals 6 through 360 when the shared curvature is less than 4 log 2. The other asymmetric private sums {1,D} with D>=3 have all-terminal closure. | [factorial/image-rigidity/MULTIVARIATE_ONE_PRIVATE_LINEAR_TAIL.md](factorial/image-rigidity/MULTIVARIATE_ONE_PRIVATE_LINEAR_TAIL.md): Opening scope and Sections 4–6 with universal terminal five |
 | FACT-PHYSICAL-PRIME-ACTUAL-SEED-RECURSION-THM-MEASURE | claim | proved / partial | With the definitions of factorial/image-rigidity/PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex: [One measure for all physical indices] Let $e_0=(1,0,\ldots,0)^{\mathsf T}$. The map $f\mapsto f(L_*)e_0$ is integration against a bounded vector measure $\mu$ on $\mathbb Z_p$. Its components are defined by their finitely additive values on compact open sets, with integration of continuous functions by uniform approximation. For every $N\ge1$, every $0\le a<q$, and every $Q\in\mathbb Q_p[X]$, the actual physical row is \[ V_{N,a}(Q;v)=\int_{\mathbb Z_p} \binom{(x+pN-1)/q}{N}Q(x+N+q-1)\,d\mu_a(x). \] This formula gives the cyclic polynomial before its digit-content division by $p^{e_a(N)}$. | [factorial/image-rigidity/PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex](factorial/image-rigidity/PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex): thm:measure |
 | FACT-LOWER-FOUR-QUADRATIC-SECTOR-SFC-LEM-FOUR-SECTOR-BOUNDS | claim | proved / partial | In the exact definitions and domains of factorial/image-rigidity/LOWER_FOUR_QUADRATIC_SECTOR_SFC.tex: [Four exact sector comparisons] Let $n\ge2$ and $\beta>0$. Every point satisfying (2) lies in a zero-free sector of $T_{n,4n+\beta}$. | [factorial/image-rigidity/LOWER_FOUR_QUADRATIC_SECTOR_SFC.tex](factorial/image-rigidity/LOWER_FOUR_QUADRATIC_SECTOR_SFC.tex): lem:four-sector-bounds |
@@ -8605,6 +8779,8 @@ Tracked obligations from the catalogue:
 | FACT-QUARTIC-ARITHMETIC | claim | proved / partial | Over Q(W), even d gives S and constantsQ; odd square d gives A and constantsQ; odd nonsquare d gives S and constants Q(sqrt((-1)^((d-1)/2)d)). No numerical-specialization claim. | [factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md](factorial/image-rigidity/CUSP_STATIONARY_BELYI_MONODROMY_AND_RADIAL_BARRIER.md): B5--B6 |
 | FACT-REGIONAL-BINOMIAL-C-TRANSPORT | claim | proved / partial | Both endpoint captures force lambda->1 and d/N->0 before the path is used. Exact stationarity gives the negative L times saddle-separation drop, while only endpoint error values are needed. | [factorial/image-rigidity/COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md](factorial/image-rigidity/COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md): S17--S19 |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/lower_exponent_initial_and_boundary.tex: Every nonzero ordinary univariate binomial $X^a(A+BX^d)$, with integers $a\ge0,d\ge1$, has a nonzero factorial moment in the pair of orders four and five. Thus every consecutive pair of positive factorial moments with terminal order at most five contains a nonzero moment, for every ordinary univariate binomial. | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): thm:ordinary-fifth |
+| FACTORIAL-FC2-NORMALIZATION-IDEAL | claim | proved / complete | For a commutative Q-algebra B and f in B[x,y] with coefficient ideal J, the scalars u in B for which every scaled marked factorial period u sum_m L_B(q f^m)t^m/m! is polynomial in t form Gamma_J(B)=union_{k>=1} Ann_B(J^k). The unit marker already detects this condition. | [factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex): Section 3, equation (17) and proof |
+| FACTORIAL-FC2-PRODUCT-LAGUERRE-IMAGE | claim | proved / complete | For R=C[x,y], (∂_x−1)(xR)+(∂_y−1)(yR)=ker L, with eventual power radical {0}. In particular this sum of images is a Mathieu–Zhao subspace. Equivalently this is the sum of the images on R of x∂_x²+(1−x)∂_x and y∂_y²+(1−y)∂_y. The equivalent classical Laguerre span statement is Zhao’s Conjecture 5.13 for n=2 and k=(0,0), over C. | [factorial/image-rigidity/STATUS_AND_LITERATURE.tex](factorial/image-rigidity/STATUS_AND_LITERATURE.tex): The product Laguerre image |
 | FACT-PHYSICAL-PRIME-ACTUAL-SEED-RECURSION-THM-MATRIX | claim | proved / partial | With the definitions of factorial/image-rigidity/PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex: [A finite recursion at every precision] Put $w=T/(1+T)$ and denote by $M(w)$ the vector whose component $a$ is $a!\mathcal C_{q,a}(\exp(zw);pv)$. The formal transform satisfies \[ \int_{\mathbb Z_p}(1+T)^x\,d\mu(x)=M(T/(1+T)). \] Let $E_p(X)$ be the integral Artin--Hasse series from \texttt{lem:artin-hasse-closure} of the \href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{arithmetic note}. Set \[ E_i=\frac{p^i-1}{q},\qquad \chi(w)=-\sum_{i\ge1}p^{E_i-i}v^{E_i}w^{p^i},\qquad P(w)=E_p(wJ_*). \] Then, over $\mathbb Z_p[v][[w]]$, \[ M(w)=P(w)M(\chi(w)),\qquad M(0)=e_0 . \] Modulo $p^K$, $P$ has degree at most $qK-1$ and $\chi$ is a polynomial. To compute $M$ through degree $m$ modulo $p^K$ one may use $\prod_{i=0}^{r-1}P(\chi^{\circ i}(w))e_0$, in that order, for any $r$ with $p^r>m$. | [factorial/image-rigidity/PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex](factorial/image-rigidity/PHYSICAL_PRIME_ACTUAL_SEED_RECURSION.tex): thm:matrix |
 | FACT-LOWER-FOUR-QUADRATIC-SECTOR-SFC-THM-GAMMA-LOWER-FOUR-QUADRATIC | claim | proved / partial | In the exact definitions and domains of factorial/image-rigidity/LOWER_FOUR_QUADRATIC_SECTOR_SFC.tex: For every positive real $\beta$ and every integer $n\ge1$, $T_{n,4n+\beta}$ and $T_{n+1,4(n+1)+\beta}$ are coprime over $\mathbb C$. Every nonzero complex phase $X^4(A_0+B_0X^2)$ satisfies Gamma-$\beta$ Strong Factorial at every consecutive positive pair. | [factorial/image-rigidity/LOWER_FOUR_QUADRATIC_SECTOR_SFC.tex](factorial/image-rigidity/LOWER_FOUR_QUADRATIC_SECTOR_SFC.tex): thm:gamma-lower-four-quadratic |
 | FACT-QUARTIC-UNIFORM-EXCLUSION | claim | proved / partial | For every fixed finite H there is an uncomputed N0(H), independent of all s>=1, excluding common complex pair roots in the exact normalized \|h_N\|<=H window for all N>=N0(H). | [factorial/image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md](factorial/image-rigidity/UNIFORM_BOUNDED_QUARTIC_CUSP_CONSECUTIVE_EXCLUSION.md): Theorem UniformBoundedQuarticCuspExclusion |
@@ -8940,6 +9116,7 @@ Tracked obligations from the catalogue:
 - **GAP-ORDINARY-LOWER-FOUR-TWO-GAP-COPRIMALITY** (mathematical; proved / discharged): For a=4 and d in {6,10}, the actual ordinary rational pair is coprime throughout the former residual range 13<=N<N_*, where N_* is the earlier uniform cutoff.
 - **GAP-ORDINARY-LOWER-FOUR-GAP-SIX-COPRIMALITY** (mathematical; proved / discharged): For a=4,d=6, the actual ordinary rational pair is coprime throughout the former residual range 13<=N<N_*, where N_* is the earlier uniform cutoff.
 - **GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC** (mathematical; open): Every nonzero ordinary two-monomial polynomial in any finite dimension and over every characteristic-zero field has a nonzero factorial moment in every consecutive pair of positive orders. Terminals 2 through 5 and the entire univariate case are proved. Unrestricted multivariate support at terminals N>=6 remains open.
+- **GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON** (mathematical; open): Check the strict real-extremum branch of EIT V thm:linear and its geometric, irreducibility and ordinary-point inputs for the odd-degree family in EIT VI thm:odd-family. The radial limit is separately available. The elliptic continued-density case has its own verification inputs.
 
 Tracked obligations from the catalogue:
 
@@ -8968,6 +9145,7 @@ Tracked obligations from the catalogue:
 - **GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF — mathematical; open.** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md)
 - **GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY — mathematical; open.** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](factorial/image-rigidity/canonical-density/moment_pair_obstructions.md)
 - **GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC — mathematical; open.** [Prove consecutive ordinary factorial-moment coprimality for arbitrary multivariate two-monomial supports at every remaining terminal N>=6.](factorial/image-rigidity/MULTIVARIATE_TWO_MONOMIAL_NONDIVISIBILITY.md)
+- **GAP-FACTORIAL-EIT-V-STRICT-EXTREMUM-COMPARISON — verification; open.** [Verify EIT V’s strict-extremum comparison on the specific EIT VI odd family.](factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md)
 
 ## Dixmier and Weyl algebras
 
@@ -9675,6 +9853,8 @@ Tracked obligations from the catalogue:
 **Authored scope assessment:** Every preferred odd-slope two-cable of K_n or K_(b,k) has bridge number and braid index 2b. Its complex augmentation rank and meridional rank lie between 2b-1 and 2b. Meridional rank equality is equivalent to excluding generation by 2b-1 meridians.
 
 **Authored scope assessment:** The five-dimensional finite-field certificate for T(5,19;2,1) gives mr=b=5 and meridional generating number five in every even-order meridian quotient. A common fixed vector would survive any four meridian images in dimension five, but the displayed rows have determinant 31 modulo 37. The same colors prove the stated delta^(19r) sigma1^(2s) corollary.
+
+**Authored scope assessment:** Protected double-transposition blocks consume disjoint occurrence cycles. The Hurwitz bound k<=2g+s-1 excludes them in the polynomial genus-zero core, and a displayed Laurent block gives immediate local coalescence.
 
 ### MRC-NAMED-EXAMPLES
 
@@ -10950,6 +11130,7 @@ Tracked obligations from the catalogue:
 | MRC-PRIME-GAP-AUGMENTATION | claim | proved / partial | For every n>=0, irreducible rank-one dimension is at most3 by paired spans, and the finite positive at mu=-1 gives augmentation rank exactly3 over C by the stated COR17 convention. | [meridional-rank/representations/PRIME_AUGMENTATION_GAP_FAMILY.tex](meridional-rank/representations/PRIME_AUGMENTATION_GAP_FAMILY.tex): Sections3-4, augmentation conversion |
 | MRC-PRIME-GAP-COR-COXETER | claim | proved / partial | For all n>=0 every normalized common-symmetric-form reflection representation of K_n in characteristic!=2 has root span<=3. Consequently all finite or infinite Coxeter reflection quotients have Coxeter rank and meridian-class generating rank<=3, including singular canonical forms. | [meridional-rank/representations/PRIME_AUGMENTATION_GAP_FAMILY.tex](meridional-rank/representations/PRIME_AUGMENTATION_GAP_FAMILY.tex): cor:coxeter |
 | MRC-PROTECTED-TAIL-PAIRED-BOUND | claim | proved / partial | For every b>=5 and a knot closure U*tau with tau in the specified subgroup, rank-one meridional representations over any field with nonzero meridian parameter have r,q<=b and min(r,q)<=b-1. The admitted complex augmentation rank is at most b-1; no primeness claim for arbitrary tails. | [meridional-rank/representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_AUDIT.md](meridional-rank/representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_AUDIT.md): Theorem 3; [../results/prime-knot-augmentation-gaps/representations.tex](../results/prime-knot-augmentation-gaps/representations.tex): lem:spans |
+| MRC-PROTECTED-HURWITZ-GENUS-BUDGET | claim | proved / complete | In a connected characteristic-zero degree-n Hurwitz tuple with double-transposition finite branch permutations, genus g and s cycles at infinity including fixed points, k protected four-factor blocks with both outer returns and disjoint factor positions satisfy k<=2g+s-1. Consequently genus-zero polynomial tuples admit no such block and genus-zero Laurent tuples admit at most one. | see incoming proof routes |
 | MRC-PROTECTED-U-COMPONENT-SLOT-CERTIFICATES | claim | proved / partial | For each of all31 local types, every output mobile transposition stays inside a component of the input-mobile support graph. After ordering its two output edges there is a four-slot permutation tau of transposition length c and t omitted full-support symbols with c+t<=2. Histograms(c,t): (0,0):17,(0,1):9,(0,2):2,(1,0):1,(1,1):2. Geometric edge preservation is not required. | see incoming proof routes |
 | MRC-RANKONE-BINARY-COR-BOUNDARY | claim | proved / partial | For every $K\in\mathcal P$ and every finite-dimensional binary representation $\rho$ of its knot group with meridian displacement rank one, \[ \dim V-\dim V^{\rho(\Gamma)}\le3. \] Consequently no such rank-one binary representation, in any finite ambient dimension, certifies $\mr(K)\ge4$ by the fixed-space bound. | [meridional-rank/representations/RANK_ONE_BINARY_BOUNDARY.tex](meridional-rank/representations/RANK_ONE_BINARY_BOUNDARY.tex): cor:boundary |
 | MRC-A6-TOPOLOGY-COR-RATIONAL | claim | proved / partial | None of the twenty-four knots is obtained by arbitrary rational replacements of the twist boxes of any sharp-four BBK base. | [meridional-rank/representations/A6_COVER_TOPOLOGY.tex](meridional-rank/representations/A6_COVER_TOPOLOGY.tex): cor:rational |
@@ -10981,6 +11162,7 @@ Tracked obligations from the catalogue:
 | MRC-INFINITE-PRIME-FIVE-BRIDGE-GAP-FAMILY | claim | proved / partial | For allk>=0 Jk=closure(Udelta^(4+36k)) hasar_C<=4<mr=br5. All sufficientlylargek arehyperbolicprime, andinfinitelymanydistinctknottypeoccur byvolume squeeze/rigidity. No effective cutoff orallkpairwise distinctness. | [meridional-rank/representations/PRIME_FIVE_BRIDGE_AUGMENTATION_GAP_FAMILY.md](meridional-rank/representations/PRIME_FIVE_BRIDGE_AUGMENTATION_GAP_FAMILY.md): Theorem and Sections1,5 |
 | MRC-PROTECTED-CHAIN-COMPOSITE | claim | proved / partial | The displayed protected chain has full A2b and augmentation bound b-1 but is the original four-bridge knot summed with b-4 positive trefoils. This excludes that chain from the prime-family goal, not every protected tail. | [meridional-rank/representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_AUDIT.md](meridional-rank/representations/UNBOUNDED_PRIME_AUGMENTATION_GAP_AUDIT.md): Section 3 |
 | MRC-UNIFORM-PROTECTED-ALTERNATING-GAPS | claim | proved / partial | For allb>=5,k>=0, d=b-2, deltab=rho^-1(theta_d)rho, closure(Udeltab^[(d+1)(1+d²k)]) hasfullA2bmeridionalquotient and ar_C<=b-1<mr=br=b. Written seed/product induction and Hurwitz return ofperiodd²(d+1) prove the unrestricted statement. Primeness notassertedforallb. | [meridional-rank/representations/UNIFORM_PROTECTED_AUGMENTATION_GAPS.md](meridional-rank/representations/UNIFORM_PROTECTED_AUGMENTATION_GAPS.md): Theorem 1 |
+| MRC-PROTECTED-LAURENT-IMMEDIATE-COALESCENCE | claim | proved / complete | If a connected genus-zero two-pole branch tuple contains a consecutive protected four-factor block, the first two of the block coalesce to a 3-cycle. Removing the doubled edge gives the two tree components with the two pole cycle lengths. For type (n-1,1), the singleton sheet deletes immediately. The bound k<=1 is attained at (7,1). | see incoming proof routes |
 | MRC-PROTECTED-U-MOBILE-TAIL-SUPPORT-BOUND | claim | proved / partial | For k>=1 disjoint U blocks on b=4k+s strands with arbitrary extra DT colors, any returning tuple and canonical consecutive-mobile-band tail with knot closure has full active support v<=6k+2s+2=2b-2k+2. Arbitrary symbol overlaps and disconnected local supports are allowed; no transitivity is needed for this support upper bound. | see incoming proof routes |
 | MRC-RANKONE-BINARY-COR-DUAL | claim | proved / partial | For every $K\in\mathcal P$ and every finite-dimensional binary representation with rank-one meridian displacements, the span of all meridian displacement images has dimension at most three. Every irreducible such representation has dimension at most three. | [meridional-rank/representations/RANK_ONE_BINARY_BOUNDARY.tex](meridional-rank/representations/RANK_ONE_BINARY_BOUNDARY.tex): cor:dual |
 | MRC-EIGHT-ALTERNATING-HYPERBOLIC | claim | proved / partial | The exteriors of 13a373/375/391/392/3264/3266/3275/3276 are hyperbolic. Hence none is a genuine satellite output of the cited braid-pattern or Whitehead-double constructions. | [meridional-rank/representations/LITERATURE.tex](meridional-rank/representations/LITERATURE.tex): Eight alternating hyperbolic exteriors paragraph |
@@ -19819,6 +20001,10 @@ Tracked obligations from the catalogue:
 
 **Authored scope assessment:** The two octahedral Dirichlet laws project regular angular markers to polynomial height markers, and the two-arrangement law gives a second exact stripped-Hopf trace realization. Over formally real fields, full-field rational endpoint phases are pure exactly in (E), with exact eventual regular-marker ideals E(E-G^N) for N>=2 and E(E-G)G for N=1. The exceptional compact regular Mathieu questions retain their separate scope.
 
+**Authored scope assessment:** A deck normalizer can link the selected Hasse–Witt line to every mixed primitive pair. The degree-nine, movable degree-seven and single-orbit degree-eleven and degree-twenty-one leading faces and their positive powers have infinitely many nonzero moments with arbitrary lower sphere degrees.
+
+**Authored scope assessment:** In the doubled-Keller Schur construction an explicit source isomorphism transfers the entire map and all fibres for each choice of parameters. The version with k pivots requires joint affine dependence on the k source coordinates.
+
 ### FORMAL-GVC
 
 [GVC counterexamples and binary supporting algebra](foundations/formal/gvc/README.md)
@@ -21053,16 +21239,1083 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Written proof with internal audit.
 
+### CM-MULTIPLICITY-ONE-EXACT-FROBENIUS-POWER
+
+[Exact Frobenius power for relative Newton polygon bounds](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md)
+
+**Exact scope:** If the full geometric endomorphism algebra is a CM field and one Hodge multiplicity is one, the disconnected strict simultaneous relative norm inequalities hold at the Frobenius field-action order t, over the original number field outside a density-zero set.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-SIMPLE-SIGNATURE-NONABELIAN-MU-ORDINARITY
+
+[Original-field mu-ordinarity for any CM coefficient field of simple signature](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md)
+
+**Exact scope:** For relative rank at least three, full geometric endomorphism algebra a CM field, and exactly one mixed pair of type (1,h−1), the mu-ordinary places have density one over the original field. The ordinary density is 1/[L:K], where L is the field of definition of the endomorphisms and equals the extension generated by the distinguished multiplicity-one embedding.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-SIMPLE-SIGNATURE-REAL-BASE-DENSITY-HALF
+
+[Simple signatures with exact ordinary density one half over real bases](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md)
+
+**Exact scope:** For every CM field and relative rank at least three, a real number-field specialization has exactly that full geometric endomorphism field and one mixed pair of type (1,h−1). It is mu-ordinary at density one and ordinary at density one half over its original field.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### IMAGE2-SPHERE-WEIGHTED-PROPER-VOLUME
+
+[Weighted Newton face proper-volume criterion for sphere moments](foundations/extended-geometry/SPHERICAL_WEIGHTED_FACE_PROPER_VOLUME_OBSTRUCTION.md)
+
+**Exact scope:** For a positive-height weighted top face crossing both angular directions, finite bounded-phase volume follows if both angular losses and all nonzero root multiplicities of its angular polynomial are smaller than the weighted height. Infinitely many unmarked moments are then nonzero.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-SPHERE-FULL-EVEN-STRIP-PROPER-VOLUME
+
+[All full even-conductor strip phases have infinitely many nonzero moments](foundations/extended-geometry/SPHERICAL_WEIGHTED_FACE_PROPER_VOLUME_OBSTRUCTION.md)
+
+**Exact scope:** The whole even-conductor strip, including upper-half sources and arbitrary allowed lower terms, satisfies the weighted proper-volume criterion without arithmetic hypotheses.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-SPHERE-SYMMETRIC-ANGULAR-PRIME-ISOLATION
+
+[Exact prime witnesses for cyclically symmetric angular strip faces](foundations/extended-geometry/SPHERICAL_WEIGHTED_FACE_PROPER_VOLUME_OBSTRUCTION.md)
+
+**Exact scope:** For a full-source strip with angular polynomial U(z^R−c)^e, the refined progression p congruent to s inverse modulo Rn provides nonzero isolated moment residues, including the explicit upper-half cancellation fixture.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-RM-TORIC-TENSOR-ABELIAN-REALIZATIONS
+
+[Abelian realizations after adjoining toric auxiliary systems](foundations/extended-geometry/CM_NEWTON_TORIC_TENSOR_REALIZATIONS.md)
+
+**Exact scope:** An abelian variety whose first cohomology lies in the tensor category generated by an exact full-image real multiplication system and a potentially toric auxiliary system is potentially isogenous to powers of the original variety and a CM factor.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-RELATIVE-TRACE-TUPLE-THIN-EXCLUSION
+
+[Thin relative Frobenius trace restrictions have density zero](foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md)
+
+**Exact scope:** For exact full real multiplication, the common determinant and vector of relative traces avoid any fixed rational thin set at a density-one set of degree-one primes. In degree three, unconditional and conditional explicit power savings follow from the residual sieve.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-SPLIT-COFACTORS-JOINT-THIN-EXCLUSION
+
+[Joint thin avoidance for split cubic Frobenius cofactors](foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md)
+
+**Exact scope:** The determinant and signed trace cofactor, and their triple with the raw discriminant cofactor, avoid fixed rational thin subsets with the same effective bounds. The two cofactor maps have geometrically integral generic fibers.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-SPLIT-MOVING-IDEAL-THIN-QUOTIENT
+
+[Thin avoidance for trace quotients by moving coefficient primes](foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md)
+
+**Exact scope:** For full real multiplication, the quotient of a relative trace by a generator of a moving coefficient prime relative to fixed ideal class representatives avoids every fixed unit-invariant thin set outside a density-zero set.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-PAIRWISE-SATO-TATE-FROBENIUS-CLASSES
+
+[Pairwise Sato–Tate in real or CM Frobenius classes for exact real multiplication](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md)
+
+**Exact scope:** For exact real multiplication over a totally real field with endomorphisms defined there, every pair has the product Sato–Tate law in any fixed Frobenius class of a totally real or CM Galois field. The uniform rectangle discrepancy is O(sqrt(log log X)/(log X)^(1/4)).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-PAIRWISE-SATO-TATE-COFACTOR-BOUNDS
+
+[Density bounds for sub-Weil Frobenius cofactors](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md)
+
+**Exact scope:** In dimension g≥3 the normalized absolute trace and discriminant norms have upper small-value proportions O(u^(2/g)+δ log(2/δ)) and O(u^(3/g)+δ log(2/δ)), respectively, in the indicated fixed Frobenius classes. Thus split cubic one-failure primes with either cofactor of sub-Weil size have relative density zero over a totally real base.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### IMAGE2-SPHERE-CRITICAL-ROOT-PRIME-POWER-NONVANISHING
+
+[Prime-power moment nonvanishing at the critical root multiplicity](foundations/extended-geometry/SPHERICAL_CRITICAL_FACE_P_POWER_MOMENTS.md)
+
+**Exact scope:** At weight κ=1/d and height n, the face z^(−dB)(z^d−c)^n U(z^d), with degree U≤B and U(0)U(c)≠0, certifies every sufficiently good odd prime-power isolated moment at the indicated congruences. Arbitrary compatible lower terms of width at most 2dB are permitted. Exact rational replay verifies the stated fractional-weight fixture.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-RANK-FOUR-PFAFFIAN-ORIGINAL-BASE-MU-ORDINARITY
+
+[Original-field mu-ordinarity for a single balanced rank-four pair](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md)
+
+**Exact scope:** For Rosati-compatible Galois-preserved CM multiplication of relative rank four with exactly one (2,2) pair, all others definite, and projective PGL4 on each connected coefficient block, mu-ordinary reduction has density one over the original field. The ordinary density is 1/[L:K] in coefficient degree greater than two and one in coefficient degree two.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-IMAGINARY-QUADRATIC-BALANCED-FOURFOLD-DENSITY-ONE
+
+[Density-one ordinarity for full imaginary quadratic balanced fourfolds](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md)
+
+**Exact scope:** If the full geometric endomorphism algebra of a polarized abelian fourfold is imaginary quadratic and has signature (2,2), the connected relative projective image is PGL4 and ordinary reduction has density one over the original field, even if the action is not defined there.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-FULL-IMAGINARY-QUADRATIC-FOURFOLD-DENSITY-CLASSIFICATION
+
+[Ordinary densities of fourfolds with full imaginary quadratic endomorphism algebra](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md)
+
+**Exact scope:** For a fourfold with full geometric imaginary quadratic endomorphism algebra, ordinary density is one in balanced signature (2,2) and 1/[L:K] in unordered signature (1,3). No definite signature is possible and both densities one and one half occur.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RANK-FOUR-EXPLICIT-TRIGONAL-JACOBIAN
+
+[Explicit balanced trigonal Jacobian with density-one ordinary reduction](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md)
+
+**Exact scope:** The genus-four Jacobian over Q of y³=(x³+x+1)(x³−2x²−2x+1)² has full geometric endomorphism ring Z[ζ3], quadratic endomorphism field Q(ζ3) and density-one ordinary reduction. Exact finite-field evidence also verifies good ordinary reduction at inert 11.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### IMAGE2-SPHERE-PUISEUX-FINITE-ANGULAR-VOLUME-CRITERION
+
+[Exact weighted volume test at nonzero angular roots](foundations/extended-geometry/SPHERICAL_WEIGHTED_PUISEUX_VOLUME.md)
+
+**Exact scope:** At a finite nonzero angular root, the squared bounded-phase volume is finite exactly when the sum of Puiseux branch contacts truncated at the differential pole threshold D is strictly below Dn at each branch. Equality of the largest sum gives logarithmic divergence.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### IMAGE2-SPHERE-PUISEUX-ANGULAR-ENDPOINT-VOLUME-CRITERION
+
+[Exact weighted volume test at angular endpoints](foundations/extended-geometry/SPHERICAL_WEIGHTED_PUISEUX_VOLUME.md)
+
+**Exact scope:** At a weighted angular endpoint, a branch of endpoint order μ has finite bounded-phase angular volume precisely when its sum of contacts truncated at μ+D is below Dn+Cμ. Combined with the finite nonzero chart criterion this characterizes volume finiteness for full angular support of both signs.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### IMAGE2-SPHERE-PUISEUX-WEIGHTED-MOMENT-NONVANISHING
+
+[Puiseux conditions for infinitely many nonzero sphere moments](foundations/extended-geometry/SPHERICAL_WEIGHTED_PUISEUX_VOLUME.md)
+
+**Exact scope:** For a regular sphere phase with full angular support of both signs and positive weighted height, satisfying the exact volume conditions at every angular chart gives infinitely many nonzero unmarked moments. At weight one with crossing leading support, adding λ t^(n−1) to degree n≥2 fails the proof only at the finite set read from the first corrections at leading angular roots.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### IMAGE2-SPHERE-SHEARED-ONE-SIGN-PURITY
+
+[Exact purity test in a one-sided angular shear chart](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_FACE_SHEAR.md)
+
+**Exact scope:** For any polynomial shear fixing x and shifting t by an element of xk[x], if a regular sphere phase has nonpositive angular support in that chart, its moments are those of its angle-zero polynomial. Eventual purity is equivalent to this polynomial vanishing, and then all fixed markers eventually vanish.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### IMAGE2-SPHERE-SUPERCRITICAL-SAME-FACE-DIFFERENT-PURITY
+
+[Supercritical faces shared by pure and persistently nonpure phases](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_FACE_SHEAR.md)
+
+**Exact scope:** For the prescribed face of height n and root multiplicity n+ℓ with ℓ>0, explicit regular, absolutely nonpower phases share a face and strip and have divergent volume and zero isolated top residue. A sheared angle-zero perturbation changes purity and prescribes the unmarked interval moments.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### IMAGE2-SPHERE-SUPERCRITICAL-CLUSTER-PURITY-CLASSIFICATION
+
+[Complete moment and volume classification for separated supercritical clusters](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_FACE_SHEAR.md)
+
+**Exact scope:** For the stated product of root clusters of sizes b_i, with separation x^K and total size 2b, the threshold 2b−b/K separates pure safe phases with divergent volume from persistent nonvanishing with finite volume. At equality all moments are explicit beta integrals and volume diverges. The original weighted top-pole residue vanishes in all cases at the stated orders.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### IMAGE2-SPHERE-SUPERCRITICAL-EXACT-BETA-MOMENTS
+
+[Exact beta integrals for two supercritical root clusters](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_SECOND_POLE.md)
+
+**Exact scope:** The two-cluster phase with d≥2 and b=dB is regular, has least sphere degree dn for n=(2d−1)B, is an absolute nonpower when a=1, and has the stated exact beta moment formula and divergent bounded-phase volume at both clusters.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### IMAGE2-SPHERE-SUPERCRITICAL-EXACT-SECONDARY-POLE
+
+[Exact secondary pole at the original supercritical moment order](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_SECOND_POLE.md)
+
+**Exact scope:** At M=(p^r−1)/n the isolated top residue vanishes, while the exact moment valuation is minus the number of specified residue carries and equals −r/2 if −1 lies in the subgroup generated by p modulo n.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### IMAGE2-SPHERE-SUPERCRITICAL-SECONDARY-POLE-DENSITY-HALF
+
+[Uniform density one half for secondary poles in unbounded degree](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_SECOND_POLE.md)
+
+**Exact scope:** The family with d=2, n=3^h and a=1 gives absolute nonpowers of unbounded degree and exact secondary depth r/2 at infinitely many original orders for each good prime p≡2 mod 3.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-LINKED-RANK-FOUR-PFAFFIAN-MU-ORDINARITY
+
+[Original-field μ-ordinarity for linked balanced rank-four pairs](foundations/extended-geometry/CM_NEWTON_LINKED_RANK_FOUR_PFAFFIAN.md)
+
+**Exact scope:** In relative rank four with irreducible coefficient blocks and one conjugate projectively linked class of balanced pairs, the stated restriction-kernel condition and componentwise tensor condition give μ-ordinary reduction on that component outside a density-zero set. In particular simple derived block images suffice on every component.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RANK-FOUR-TENSOR-SPECTRUM-REDUCTION
+
+[Exact reduction with the rank-four tensor-swap slope pattern](foundations/extended-geometry/CM_NEWTON_LINKED_RANK_FOUR_PFAFFIAN.md)
+
+**Exact scope:** The stated genus-four trigonal curve has at 7 a relative quartic with factor slopes (0,1) and (1/2,1/2), verified by exact character counts. The example does not identify a disconnected monodromy component.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-NEWTON-RESIDUE-PRIME-TORSION-RAMIFICATION
+
+[Exact residue-prime torsion ramification for split real-cubic multiplication](foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md)
+
+**Exact scope:** At split absolute degree-one good places, computes tame inertia, the wild rank from distinct nonsplit ordinary squares, the single upper break and normalized different of the full local p-division field.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-SPLIT-LOW-WEIGHT-RESIDUAL-COINCIDENCES
+
+[Density-zero coincidences of ordinary residue eigenvalues](foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md)
+
+**Exact scope:** At split exact real-cubic one-failure places, any fixed nonzero symmetric residual relation of trace weight at most two holds with relative density zero. This includes squared-root coincidences and local p-torsion over extensions of degree at most two.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-PROJECTIVE-LINE-DETERMINANT-DISCRIMINANTS
+
+[Discriminants of projective line and determinant fields distinguish local types](foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md)
+
+**Exact scope:** Under full projective mod-p image, the relative discriminant exponent of the degree-2(p+1) determinant double cover of the projective line field distinguishes tame ordinary, wild ordinary and nonordinary factors.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-SPLIT-TORSION-RESIDUE-DEGREE-SIEVE
+
+[A growing exclusion using the local torsion residue degree](foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md)
+
+**Exact scope:** For fixed exact real-cubic multiplication, the local p-division residue degree is the lcm of orders of the ordinary residual roots and 2 if any factor fails. On split one-failure places the condition h_v≤p^θ for fixed θ<1/6 has relative density zero. The count outside five exact trace loci is O(X^(1/2+3θ)).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### IMAGE2-SPHERE-SUPERCRITICAL-CLUSTER-SECONDARY-DEPTH
+
+[Exact secondary poles for nonlinear separation of supercritical clusters](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_FACE_SHEAR.md)
+
+**Exact scope:** At the equality threshold and good primes, the exact moment valuation is minus the residue-carry count, in particular −r/2 when the cyclic prime subgroup contains −1. The d=14, K=2 family gives unbounded absolute nonpowers with divergent volume and uniform prime density one half.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-RANK-FOUR-TYPE-C2-REAL-REALIZATION
+
+[Genuine type C2 realizations of the original-field Pfaffian theorem](foundations/extended-geometry/CM_NEWTON_TYPE_C2_REALIZATION.md)
+
+**Exact scope:** For every totally real F with [F:Q]≥2 there is a principally polarized absolutely simple abelian 4[F:Q]-fold over a real number field with full geometric endomorphisms F(i), connected relative Sp4 monodromy at a chosen auxiliary prime, projective spectrum field F and quadratic action field. Its μ-ordinary density is one and ordinary density one half.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-UNIFORM-RESIDUAL-ARTIN-CONDUCTORS
+
+[Uniform normalized Artin conductors at the residue prime](foundations/extended-geometry/CM_NEWTON_RESIDUAL_ARTIN_CONDUCTORS_AND_SPIN.md)
+
+**Exact scope:** For any nonzero complex representation of the full common-determinant residual group of a split exact real-cubic system, the normalized local Artin conductor differs from one minus its global invariant fraction by at most 6/(p−1). This gives the degree-uniform field discriminant bound of sharp order 1/p.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-RESIDUAL-DETERMINANT-SPIN
+
+[All residual two-dimensional cohomology obstructions inflate from determinant](foundations/extended-geometry/CM_NEWTON_RESIDUAL_ARTIN_CONDUCTORS_AND_SPIN.md)
+
+**Exact scope:** The split common-determinant full residual image has mod-two H² inflated from the common determinant, including at higher p-power image levels. Topological w1,w2 therefore see only the cyclotomic determinant. The line-and-determinant field has zero such classes, though its integer local discriminant exponent distinguishes types.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-HIGHER-TORSION-LINE-DISCRIMINANTS
+
+[Projective line and determinant discriminants at every torsion level](foundations/extended-geometry/CM_NEWTON_HIGHER_TORSION_LINE_DISCRIMINANTS.md)
+
+**Exact scope:** The exact normalized discriminants of the cyclic line fields and determinant double covers at level p^n follow the stated formulas. A wildly ramified ordinary factor and a supersingular factor have identical line discriminants at every level and differ by exactly 1/(p^(n−1)(p+1)) after passing to the double cover.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-NEWTON-HIGHER-TORSION-UNIFORM-DIFFERENT
+
+[Uniform normalized different range for the full torsion towers](foundations/extended-geometry/CM_NEWTON_HIGHER_TORSION_LINE_DISCRIMINANTS.md)
+
+**Exact scope:** At good unramified places the full and projective p^n-division fields of either rank-two factor have normalized different in [n−1/(p−1), n+1/(p−1)), uniformly in the level.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-SPLIT-RESIDUE-ORDER-INTERPOLATION
+
+[Interpolated split sieve for ordinary residue eigenvalues](foundations/extended-geometry/CM_NEWTON_GROWING_RESIDUE_ORDER_EXCLUSIONS.md)
+
+**Exact scope:** At split one-failure places with p in (X/2,X], torsion residue degree ≤H and ratio order ≤R give count O(sqrt(X) H²R) outside five exact trace loci of density zero. Prescribing a set J of exponents u₂=u₁^j gives O(sqrt(X) H²|J|).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-NONSPLIT-RESIDUE-ORDER-EXCLUSION
+
+[Growing residue-order sieve in coefficient splitting type 1+2](foundations/extended-geometry/CM_NEWTON_GROWING_RESIDUE_ORDER_EXCLUSIONS.md)
+
+**Exact scope:** In the sole degree-one failure case the local torsion residue degree is lcm(2,ord(u)) and a threshold H gives O(sqrt(X)H² log(2H)) places off the five exact trace loci. Consequently h_v≤p^θ for θ<1/4 has relative density zero in type 1+2.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-SMALL-TRACE-COFACTOR-ORDER
+
+[Small multiplicative orders of trace cofactors are sparse](foundations/extended-geometry/CM_NEWTON_GROWING_RESIDUE_ORDER_EXCLUSIONS.md)
+
+**Exact scope:** At split one-failure places the trace cofactor of order ≤H gives O(sqrt(X)H²) places with p in (X/2,X] off the two cofactors ±1. In particular thresholds p^θ for θ<1/4 have relative density zero.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### IMAGE2-SPHERE-BILATERAL-AUTOMORPHIC-EXACT-MOMENTS
+
+[Exact interval moments of bilateral automorphic sphere phases](foundations/extended-geometry/SPHERICAL_BILATERAL_AUTOMORPHIC_MOMENTS.md)
+
+**Exact scope:** The stated polynomial sphere automorphism preserves the moment functional, giving exact univariate moments, divergent bounded-phase volume, and an absolute nonpower family of least sphere degree 18h with explicit prime-power poles.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### IMAGE2-SPHERE-BILATERAL-AFTER-ANY-SINGLE-SHEAR
+
+[Both angular signs persist after every single shear of a linear chart](foundations/extended-geometry/SPHERICAL_BILATERAL_AUTOMORPHIC_MOMENTS.md)
+
+**Exact scope:** For every nonconstant polynomial R, the displayed composition yields a phase R(F) whose literal support has both angular signs after any one angular-coordinate-preserving polynomial shear in any orthogonally rotated chart.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-NEWTON-TENSOR-ADJOINT-LABEL-FIELD
+
+[Field of definition of the adjoint labels in the single-mixed-pair case](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md)
+
+**Exact scope:** With derived Mumford–Tate comparison and irreducible relative rank-four blocks of the specified signature, there is just one Hodge-active simple factor and the centroid R is a field. The exact factor-label field Kτ(R) is Galois over K.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-TENSOR-CORESTRICTION-MU-DENSITY
+
+[Exact μ-ordinary density for quadratic corestriction tensor blocks](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md)
+
+**Exact scope:** In the quadratic corestriction case, automatic for the specified irreducible rank-four setting of geometric adjoint type A1, the μ-ordinary density is the proportion of adjoint Galois elements whose order equals the order of their restriction to F.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-TENSOR-BRAUER-DESCENT-OBSTRUCTION
+
+[Finite-place quaternion obstruction to tensor exchange](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md)
+
+**Exact scope:** The adjoint action preserves the quaternion ramification set above an auxiliary prime with derived comparison. A specified biquadratic Moonen family has trivial stabilizer of this set at 23. The established type A1 comparison forces its centroid field into K for any variety with these Betti data.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-SPLIT-LARGE-ORDER-FINITE-FIELD-REALIZABILITY
+
+[Split one-failure finite-field realizability with simultaneous large residue orders](foundations/extended-geometry/CM_NEWTON_SPLIT_LARGE_ORDER_REALIZABILITY.md)
+
+**Exact scope:** For a fixed totally real cubic field, M≤p^η, and normalized cube side w≥p^(−κ) with η+κ<1/6, almost all traces in every prescribed split failure and auxiliary residue class have both ordinary residue eigenvalue orders, their ratio order and the integral trace-cofactor order greater than p^(1/2−3(η+κ)−ε). Every counted trace is realized by a simple finite-field threefold. This is a local count.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-DYADIC-FROBENIUS-ISOLATION
+
+[Dyadic isolation of split one-failure Frobenius fields](foundations/extended-geometry/CM_NEWTON_DYADIC_FROBENIUS_FIELD_ISOLATION.md)
+
+**Exact scope:** For exact real-cubic multiplication, among n split one-failure reductions at distinct rational primes in a dyadic interval, at least ceil(n/5) have full Frobenius splitting fields jointly linearly disjoint over the coefficient normal closure L. Outside a relative density-zero subset one can take ceil(n/3); cross-ramification then has cofactor valuation one and implies (p/q)=1.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-DYADIC-NORMALIZED-FIELD-INDEPENDENCE
+
+[Independent augmented split one-failure Frobenius fields in growing subfamilies](foundations/extended-geometry/CM_NEWTON_DYADIC_FROBENIUS_FIELD_ISOLATION.md)
+
+**Exact scope:** A fixed positive proportion of split one-failure places in a dyadic interval forces a subfamily of at least order log log X augmented fields linearly disjoint over L. This counts disjoint subfamilies under the positive-proportion hypothesis.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-SPHERE-CYCLIC-FINER-DECK-STABLE-RANK
+
+[Frobenius stable rank from finer rank-one cyclic deck eigenspaces](foundations/extended-geometry/CM_NEWTON_SPLIT_CYCLIC_REFINEMENTS.md)
+
+**Exact scope:** In the stated three-point refinement of order Rn, the stable rank of coherent Frobenius on an order-n primitive character at p≡1 mod n is the number of finer labels in multiplication-by-p cycles whose fractional-part coherent dimensions are all one. The selected character one has stable rank one and its pair is ordinary.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-SPHERE-CYCLIC-FINER-DECK-SELECTIVE-FAILURE
+
+[Exact primitive p-rank of a growing split cyclic family with a failed mixed pair](foundations/extended-geometry/CM_NEWTON_SPLIT_CYCLIC_REFINEMENTS.md)
+
+**Exact scope:** For n=2^k≥16 and the cover W^n=z^(n−3)(z³−c)³, at good rational primes p≡1 mod n and p≡2 mod 3 the selected pair is ordinary, a different mixed pair fails, and the primitive p-rank is n/4+2 floor((n/6+1)/2).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-SPHERE-CYCLIC-FINER-DECK-SPLIT-MOMENTS
+
+[Nonzero moments for unbounded split cyclic conductors with nonordinary primitive factor](foundations/extended-geometry/CM_NEWTON_SPLIT_CYCLIC_REFINEMENTS.md)
+
+**Exact scope:** A sphere phase with the specified top angular polynomial z^(−3)(z³−c)³ on j+2i=n, n=2^k≥16, is absolutely nonpower and has a nonzero moment of order (p−1)/n at all sufficiently large good primes in the stated class, with arbitrary strictly lower weighted terms. The denominator detects the nonzero binomial scalar on the selected line.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-NEWTON-A1-SINGLE-MIXED-TENSOR-SUPPORT
+
+[Tensor support and the adjoint centroid for one mixed coefficient pair](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md)
+
+**Exact scope:** Under geometric type A1 and irreducible coefficient blocks, one mixed conjugate pair forces R to be a field containing F, each tensor to be standard on its k=[R:F] support factors, relative rank 2^k and equal mixed multiplicities. The projective spectrum field is F and the unique active centroid embedding τ defines the Galois label field Kτ(R).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-A1-ADJOINT-BINOMIAL-SLOPES
+
+[Exact binomial relative Newton shapes from the active adjoint orbit](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md)
+
+**Exact scope:** At good absolute degree-one primes the one-mixed-pair irreducible type A1 system is projectively flat or has a binomial profile on the active F-orbit. For f=ord β and s=ord β|F, r=f/s divides k and the centered slopes are (r−2j)/(2f) with multiplicity 2^(k−r) binom(r,j). Coefficient blocks outside the active orbit are flat.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-A1-ADJOINT-ORDINARY-DENSITY
+
+[Exact μ-ordinary density from the active centroid field](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md)
+
+**Exact scope:** Under the all-A1 irreducible one-mixed-pair assumptions, μ-ordinary primes have natural density equal to the proportion of β in Gal(Kτ(R)/K) with ord β=ord β|F.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-A1-MINIMAL-ORDINARY-FIELD
+
+[Exact ordinary density and the least density-one extension for type A1 tensor blocks](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md)
+
+**Exact scope:** For F≠Q the ordinary density is 1/[L_E Kτ(R):K] and L_E Kτ(R) is the least density-one extension. For F=Q the answer is 1/[Kτ(R):K] with least extension Kτ(R). Here L_E defines the action of E.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-A1-CUBIC-TENSOR-C72-EXAMPLE
+
+[Explicit rational Mumford fourfold with ordinary density one third](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md)
+
+**Exact scope:** The non-CM fourfold Jac(C_{7,2}) has ordinary density 1/3 over Q. Its square with the matrix E=Q(i) action has relative rank eight and realizes exchanging cubic tensor support. The distinct geometric Frobenius fields at 13 and 29 certify the non-CM hypothesis.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-NEWTON-ADJOINT-WEIGHTED-FLAT-FACTOR-BOUND
+
+[Weighted bounds on flat labels of rational adjoint type A1](foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md)
+
+**Exact scope:** For any polarized abelian variety with all geometric adjoint factors A1, after fixing the tensors and a level the sum of f(1+1_{f odd}) over the flat active coefficient primes in each rational factor is at most b_i−1 on a density-one set. At split primes this gives r_i≤floor((b_i−1)/2).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-ADJOINT-TWO-ACTIVE-POTENTIAL-ORDINARY
+
+[Potential density-one ordinarity for adjoint type A1 with at most two active labels per factor](foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md)
+
+**Exact scope:** For any polarized abelian variety with all geometric adjoint factors A1 and at most two Hodge-active labels in each rational simple quotient, ordinary reduction has density one after fixing the tensors and a level. The extension need not split the adjoint label fields; there is no coefficient-rank or endomorphism-algebra hypothesis.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-SPHERE-NONCM-CYCLIC-REFINEMENT-SELECTIVE-RANK
+
+[Selective Frobenius failure for a varying non-CM order-eight factor](foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md)
+
+**Exact scope:** The dimension-twenty primitive factor of C_c is nonpotentially-CM. In a rational prime set of density 1/8 within the two specified congruence conditions, character one survives and character three has stable rank one in dimension three.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-SPHERE-NONCM-CYCLIC-REFINEMENT-SPLIT-MOMENTS
+
+[Split-prime moments via a non-CM ordinary quotient](foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md)
+
+**Exact scope:** For the same parameters every sphere lift of the prescribed top weight j+i=8 has least degree eight, is an absolute nonpower, and has a nonzero moment of order (p−1)/8 on a rational prime set of density 1/8, with arbitrary strict lower terms.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit and exact replay of the finite calculations.
+
+### CM-NEWTON-A1-MULTI-ACTIVE-INCIDENCE-DENSITY
+
+[Original-field ordinary density from adjoint Frobenius support incidences](foundations/extended-geometry/CM_NEWTON_MULTIPLE_ACTIVE_TENSOR_INCIDENCE.md)
+
+**Exact scope:** For irreducible coefficient blocks of a polarized abelian variety of geometric adjoint type A1, with one Hodge-active label per rational quotient, the support sets are standard tensors. Outside density zero, ordinary reduction is equivalent to preserving coefficient Hodge multiplicities and each support meeting the union of active Frobenius orbits in at most one label. The ordinary density is the fraction satisfying these conditions in a finite Galois group.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-A1-MULTI-ACTIVE-SPLIT-COEFFICIENT-EXAMPLE
+
+[Two balanced pairs with reduced ordinary density at coefficient-split primes](foundations/extended-geometry/CM_NEWTON_MULTIPLE_ACTIVE_TENSOR_INCIDENCE.md)
+
+**Exact scope:** The fourth power of the cyclic example Jac(C_7,2), with a Rosati-compatible Q(zeta_5) action, has two balanced (4,4) pairs. Its ordinary density over Q is 1/3, including relative to primes split in the coefficient field.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-A1-TWO-ACTIVE-SHIMURA-SURFACE
+
+[Shimura surface realizations of two active labels in one rational factor](foundations/extended-geometry/CM_NEWTON_MULTIPLE_ACTIVE_TENSOR_INCIDENCE.md)
+
+**Exact scope:** A quaternionic corestriction over a cyclic sextic real field gives dimension-twelve number-field abelian varieties with exact CM coefficient field of degree six, two balanced (2,2) pairs, one definite pair, and both Hodge-active labels in one rational adjoint quotient. They have potentially density-one ordinarity.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-NEWTON-A1-OVERLAPPING-TENSOR-SHIMURA-SURFACE
+
+[Shimura surface realizations with overlapping tensor supports](foundations/extended-geometry/CM_NEWTON_MULTIPLE_ACTIVE_TENSOR_INCIDENCE.md)
+
+**Exact scope:** Two quaternionic forms over a cyclic quartic field give dimension-thirty-two abelian varieties with exact CM coefficient field of degree eight, three balanced (4,4) pairs, one definite pair, and overlapping tensor supports. Each rational adjoint quotient has exactly one active Hodge label, so the support-incidence formula applies.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-FIXED-CHEBOTAREV-SQRT-WEYL
+
+[Square-root equidistribution in fixed number-field Chebotarev classes](foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md)
+
+**Exact scope:** For nonzero real c, every fixed finite Galois extension of number fields L/K, and each nonempty Chebotarev class, the fractional parts of c times the square root of the prime-ideal norm are equidistributed in that class, unconditionally.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-SPLIT-SQRT-COFACTOR-PROFILES
+
+[Bounded-width square-root cofactor profiles have density zero](foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md)
+
+**Exact scope:** For a fixed exact real-cubic RM threefold, the split degree-one nonordinary primes with |N(a_v)/p−lambda sqrt(p)|≤H have relative density zero for fixed H and fixed nonzero lambda. A nonexplicit unbounded counting width is also available.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-SPLIT-POLYNOMIAL-COFACTOR-STRIPS
+
+[Polynomial cofactor strips of growing logarithmic width have density zero](foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md)
+
+**Exact scope:** For a fixed exact real-cubic RM threefold and a polynomial in p, the trace, and the trace and discriminant cofactors with nonconstant generic substitution, the number of split degree-one nonordinary primes in (X,2X] with absolute polynomial value at most H is O((H+1)X(log log X)^(1/6)/(log X)^(7/6)).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-RM-SPLIT-SQRT-PROFILE-POWER-GRH
+
+[Power-width square-root cofactor profiles under GRH](foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md)
+
+**Exact scope:** For a fixed exact real-cubic RM threefold, fixed nonzero lambda, and 0≤nu<1/42, split degree-one nonordinary primes with |N(a_v)/p−lambda sqrt(p)|≤p^nu have a power-saving count under the stated GRH.
+
+**Authored state:** proved. **Graph state:** conditional. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** GRH for Dedekind zeta functions of the auxiliary torsion fields K(B[ell]) (open).
+
+**Conditional assumptions:** GRH for Dedekind zeta functions of the auxiliary torsion fields K(B[ell]).
+
+**Verification limits:** Written proof with internal audit.
+
+### CM-CYCLIC-NORMALIZER-INFINITE-SPHERE-MOMENTS
+
+[Cover symmetries force infinitely many nonzero sphere moments](foundations/extended-geometry/CM_NEWTON_INFINITE_MOMENT_FAMILIES.md)
+
+**Exact scope:** For a binary form h of degree 2n in characteristic zero with n>2, all root multiplicities below n and gcd one with n, if deck normalizers transport the singleton character-one line to every mixed primitive conjugate pair, every phase with leading binary form gamma*h^L has infinitely many nonzero power moments for L>=1 and gamma nonzero. Lower sphere-degree terms are arbitrary. The result includes the explicit degree-nine phase H9, the movable conductor-seven family, and single-orbit conductor-eleven and conductor-twenty-one families.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and exact spot checks of the cover lifts, coherent dimensions and selected prime residues. Internal review only.
+
+### FOUND-MENG-SCHUR-POLYNOMIAL-MAP-EQUIVALENCE
+
+[Polynomial map equivalence for affine-block Schur descent](foundations/MENG_YANG_SCHUR_DESCENT_BRIDGE.md)
+
+**Exact scope:** For a characteristic-zero Keller map whose components depend jointly affinely on a block of k source coordinates, a Schur potential B+chi(A) with automorphic gradient of chi has gradient equivalent to the product of the Keller map and the identity on n-k coordinates. This includes every nonzero lambda and every mu for the one-coordinate Meng–Yang construction. It preserves whole scheme-theoretic fibres, generic degree, arithmetic and geometric monodromy, finite normalization up to product, and the nonproper locus up to product.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof. An exact rational control lifts the retained Meng–Yang collision at a different mu and nonzero eta. Internal review only.
+
+### CM-SPHERE-NONSPLIT-NONCM-PRIME-POWER-MOMENTS
+
+[Nonzero prime-power sphere moments at a fixed prime and unbounded conductor](foundations/extended-geometry/CM_NEWTON_NONSPLIT_NONCM_PRIME_POWER_MOMENTS.md)
+
+**Exact scope:** For fixed p>3 with p≡2 mod 3 and odd r≥3, set N=(p^r−1)/(p−1). If v_3(c)=1 and c,1−c are p-units, the order-N cover W^N=z^(N−2)(z²−1)(z²−c) has a non-potentially-CM primitive factor nonordinary at p and coherent return scalar one on the selected line. Every compatible sphere phase of top weight N and integral lower coefficients at p has least sphere degree N, is an absolute nonpower, and has p^r times its (p−1)-st moment congruent to one.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The exact replay checks bounded examples. The uniform argument is the written proof.
+
+### CM-SPHERE-NONCM-TWISTED-QUOTIENT-MOMENTS
+
+[Infinitely many nonzero sphere moments from a fixed nonordinary cyclic cover](foundations/extended-geometry/CM_NEWTON_UNBOUNDED_TWISTED_MOMENT_QUOTIENTS.md)
+
+**Exact scope:** For M≥5 with M≡5 mod 14, n=7M, and v_2(c)=1, the order-n cover Y^n=(z^7−1)^(M+1)(z^7−c)^(6M) has a non-potentially-CM primitive factor nonordinary at primes in the two classes 1+3M and 1+2M modulo n where c and 1−c are units. Every fixed compatible phase has a nonzero moment of order (p³−1)/n at all sufficiently large primes of those classes, whose combined natural density is 2/φ(n). The phases are absolute nonpowers, and an explicit lift has least sphere degree 8n.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The exact replay checks bounded examples. The uniform argument is the written proof.
+
+### CM-SPHERE-NONSPLIT-EXACT-PRIMITIVE-5-RANK
+
+[Exact primitive 5-rank on the fixed-prime cyclic-cover family](foundations/extended-geometry/CM_NEWTON_NONSPLIT_NONCM_PRIME_POWER_MOMENTS.md)
+
+**Exact scope:** For p=5, c=3 and N=(5^r−1)/4 with odd r≥3, the primitive 5-rank is φ(N)+2|S_r|, where S_r is the set of units 1≤i<N for which every one of the r base-5 digits of 4i is at least two. This is 42 at N=31; the ratio to dimension tends to one half.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The written character-orbit argument proves the formula. The replay checks the first explicit rank calculation.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
 |---|---|---|---|---|
+| CM-RANK-FOUR-QUATERNIONIC-SHIMURA-DATUM | claim | proved / partial | For a totally real F of degree at least two and E=F(i), the stated quaternionic form gives a Hodge-type embedding for a group with derived Sp4 factors, one noncompact real place, and exactly one balanced coefficient pair. | [foundations/extended-geometry/CM_NEWTON_TYPE_C2_REALIZATION.md](foundations/extended-geometry/CM_NEWTON_TYPE_C2_REALIZATION.md): Quaternionic and polarized representations |
+| CM-SPHERE-PRIME-POWER-TOP-COEFFICIENT-ISOLATION | claim | proved / partial | For a regular sphere phase of positive Laurent weight n with top part t^n B(x/t^s), p-adically integral coefficients, and odd q=p^r with n dividing q−1, q times the moment at m=(q−1)/n reduces to the angular constant term of B^m. | [../unpublished/cm-newton-cyclic-cover-moments/main.tex](../unpublished/cm-newton-cyclic-cover-moments/main.tex): lem:isolation |
 | EXT-BLS-REGULAR-AFFINE-RATIONAL-TELESCOPING | claim | proved / partial | Over any characteristic-zero constant field, arbitrary affine rational parameter-dependent functions admit computable nonzero telescopers with regular certificates; no denominator smoothness assumption. Regular certificates annihilate periods over compact closed cycles avoiding their poles. | [foundations/extended-geometry/sources/bostan_lairez_salvy_1301_4313v2.pdf](foundations/extended-geometry/sources/bostan_lairez_salvy_1301_4313v2.pdf): Proposition4 PDFp4 and Theorem12/Section7 PDFp7, including nonzero specialization |
+| EXT-CM-ARTHUR-CLOZEL-CYCLIC-DESCENT | claim | proved / partial | A Galois invariant cuspidal representation over a prime-cyclic extension descends to a cuspidal representation and all descents differ by the cyclic characters. | [foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md): Pairwise distribution in a prescribed Frobenius class, Arthur–Clozel Chapter 3, Theorem 4.2(d) |
+| EXT-CM-BLASIUS-DE-RHAM-ABSOLUTE-CYCLES | claim | proved / partial | The comparison isomorphism for abelian varieties carries the étale and de Rham realizations of absolute Hodge cycles to each other. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md): Derived comparison for rank-one factors, Blasius Theorem (0.3) |
+| EXT-CM-BLGG-HILBERT-COMPATIBLE-SYSTEMS | claim | proved / partial | Regular algebraic cuspidal Hilbert modular forms have compatible Galois representations agreeing with their unramified local parameters. | [foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md): Pairwise distribution in a prescribed Frobenius class, BLGG §7.1 |
+| EXT-CM-BLGGT-SIMULTANEOUS-POTENTIAL-AUTOMORPHY | claim | proved / partial | A finite collection of regular irreducible totally odd polarized weakly compatible systems over a totally real field becomes cuspidally automorphic over a common totally real extension Galois over the prescribed ground field. | [foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md): Pairwise distribution in a prescribed Frobenius class, Theorem 5.4.1 |
+| EXT-CM-BONNAFE-SL2-CHARACTER-TABLE | claim | proved / partial | The nontrivial irreducible complex characters of SL2(F_p) have dimension at least (p−1)/2 and absolute values at most two on regular semisimple elements. | [foundations/extended-geometry/CM_NEWTON_RESIDUAL_ARTIN_CONDUCTORS_AND_SPIN.md](foundations/extended-geometry/CM_NEWTON_RESIDUAL_ARTIN_CONDUCTORS_AND_SPIN.md): Normalized Artin conductors, Bonnafé Table 5.4 |
+| EXT-CM-BOREL-HARISH-CHANDRA-ARITHMETIC-LATTICES | claim | proved / partial | An arithmetic subgroup of a connected semisimple Q-group has finite covolume in the real group. | [foundations/extended-geometry/CM_NEWTON_MULTIPLE_ACTIVE_TENSOR_INCIDENCE.md](foundations/extended-geometry/CM_NEWTON_MULTIPLE_ACTIVE_TENSOR_INCIDENCE.md): Two Shimura surfaces, geometric monodromy |
+| EXT-CM-BOREL-LATTICE-DENSITY | claim | proved / partial | A lattice in a connected semisimple real algebraic group without compact factors is Zariski dense. | [foundations/extended-geometry/CM_NEWTON_MULTIPLE_ACTIVE_TENSOR_INCIDENCE.md](foundations/extended-geometry/CM_NEWTON_MULTIPLE_ACTIVE_TENSOR_INCIDENCE.md): Two Shimura surfaces, geometric monodromy |
+| EXT-CM-BOUCHET-MUMFORD-SHIMURA-CURVES | claim | proved / partial | The smooth rational family in equation (1.1) has non-CM fibers of Mumford type with cubic adjoint centroid Q(ζ7)^+. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md): Ordinary density and an exchanging cubic example, equation (1.1) and Theorem 4.15 |
+| EXT-CM-BRAUER-INDUCTION-FROBENIUS-ANGLES | claim | proved / partial | A finite group character is an integer combination of characters induced from one-dimensional characters of subgroups. | [foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md](foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md): Canonically balanced positive generators, Brauer induction |
+| EXT-CM-COLMEZ-FONTAINE-WEAK-ADMISSIBILITY | claim | proved / partial | The filtered module attached to a crystalline representation is weakly admissible, giving equality of the total Newton and Hodge endpoints and t_N(D′)≥t_H(D′) on stable subobjects with induced filtration. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md): Crystalline slopes of the adjoint factors, Colmez–Fontaine Corollary following Theorem 4.3 |
+| EXT-CM-CONRAD-LOCALLY-ALGEBRAIC-CHARACTERS | claim | proved / partial | Tate’s theorem identifies rank-one Hodge–Tate p-adic characters with locally algebraic characters and their weights with the algebraic exponents. | [foundations/extended-geometry/CM_NEWTON_TORIC_TENSOR_REALIZATIONS.md](foundations/extended-geometry/CM_NEWTON_TORIC_TENSOR_REALIZATIONS.md): Arithmetic tensor category, Conrad Appendix B |
+| EXT-CM-COSTA-MASCOT-SIJSLING-VOIGHT-ENDOMORPHISM-SPECIALIZATION | claim | proved / partial | At good reduction, specialization gives an injective map on geometric endomorphism algebras, compatible with the specialization of integral deck transformations. | [foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md): An explicit genus-four Jacobian over Q, specialization |
 | EXT-CM-CYCLIC-UNIFORM-OPEN-IMAGE | claim | proved / partial | Cadoret and Tamagawa I, Theorem 5.1 supplies geometric Lie perfectness for Tate systems of abelian schemes over curves. Part II, Theorem 1.1 gives open specialized image except at finitely many points of each bounded degree over a finitely generated characteristic-zero base. | [foundations/extended-geometry/CM_NEWTON_FOUR_POINT_MONODROMY.md](foundations/extended-geometry/CM_NEWTON_FOUR_POINT_MONODROMY.md): Cadoret–Tamagawa I, Theorem 5.1 and II, Theorem 1.1 |
+| EXT-CM-DAVID-WESTON-ORDINARY-KUMMER-EXTENSIONS | claim | proved / partial | David and Weston describe the ordinary local order-p extension for elliptic curves using unit Kummer classes. The rank-two coefficient-factor argument in the note uses the same description, with its finite-flat proof given directly. | [foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md](foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md): The full torsion field, David–Weston Lemma 3.2 |
 | EXT-CM-FALTINGS-P-ADIC-HODGE-THEORY | claim | proved / partial | Abelian Hodge–Tate comparison and exact de Rham comparison recover the component Hodge multiplicities. | [foundations/extended-geometry/CM_NEWTON_PROJECTIVE_SPECTRUM_FIELDS.md](foundations/extended-geometry/CM_NEWTON_PROJECTIVE_SPECTRUM_FIELDS.md): Hodge–Tate comparison of relative abelian multiplicities |
+| EXT-CM-FITE-RELATIVE-DETERMINANT-INFINITY-TYPE | claim | proved / partial | The infinity types of the relative determinant Hecke characters of an abelian variety with geometric coefficient multiplication, after defining the action, are given by the Hodge signature with the conjugation convention. | [foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md): Ordinary density and imaginary quadratic coefficients, Fité Proposition 14 |
+| EXT-CM-FONTAINE-FINITE-FLAT-DIFFERENT | claim | proved / partial | For finite flat groups killed by p^n over an unramified base, the full coordinate field has normalized different less than n+1/(p−1). | [foundations/extended-geometry/CM_NEWTON_HIGHER_TORSION_LINE_DISCRIMINANTS.md](foundations/extended-geometry/CM_NEWTON_HIGHER_TORSION_LINE_DISCRIMINANTS.md): Full division-field discriminants, Fontaine Théorème 1 |
+| EXT-CM-GRAHAM-KOLESNIK-SECOND-DERIVATIVE | claim | proved / partial | Theorem 2.2 supplies the second derivative estimate for the differenced Type II bilinear sum. | [foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md](foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md): Square-root phase in a fixed Chebotarev class, Type II |
+| EXT-CM-HEATH-BROWN-K-DERIVATIVE | claim | proved / partial | Theorem 1 bounds one-dimensional exponential sums on intervals with uniform nonzero kth derivative size for k at least three. | [foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md](foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md): Square-root phase in a fixed Chebotarev class, Type I |
 | EXT-CM-HILBERT-GM-PCURVATURE | claim | proved / partial | Katz's formula in degree one identifies the nonzero component of Gauss–Manin p-curvature with the Frobenius pullback of the Kodaira–Spencer map. For split Hilbert modular reduction the labelled Kodaira–Spencer coordinates are independent and the conjugate line is the kernel of Verschiebung. | [foundations/extended-geometry/CM_NEWTON_SPLIT_PROJECTIVE_P_CURVATURE.md](foundations/extended-geometry/CM_NEWTON_SPLIT_PROJECTIVE_P_CURVATURE.md): Pointwise criterion, Katz formula and Hilbert Kodaira–Spencer |
+| EXT-CM-HUI-FOUR-DIMENSIONAL-SEMISIMPLE-IMAGES | claim | proved / partial | The non-self-dual four-dimensional irreducible representations of semisimple Lie algebras with faithful image are the standard and dual of sl4. The other images are of types sp4, sl2 tensor sl2, and the symmetric cube of sl2. | [foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md): Ordinary density and imaginary quadratic coefficients, Hui §3.1 |
+| EXT-CM-KISIN-ZHOU-STRONG-G-COMPATIBILITY | claim | proved / partial | After choosing a field on which the Tate representations land in G, Kisin–Zhou give a rational G-class of Weil–Deligne Frobenius at semistable places, simultaneously in the étale systems and the p-adic realization. In the good reduction case this compares the G-conjugacy classes of semisimple Frobenius, including crystalline Frobenius. | [foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md](foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md): Simultaneous local and global Frobenius classes, Kisin–Zhou Theorems 1.2 and 5.3.10 |
+| EXT-CM-KMS-ADMISSIBLE-NEWTON-CLASS | claim | proved / partial | The crystalline tensor fiber has a G-isocrystal class with Newton cocharacter bounded by the averaged Hodge cocharacter and Kottwitz invariant equal to the Hodge image. | [foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md](foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md): Simultaneous local and global Frobenius classes, Kisin–Madapusi Pera–Shin Lemma 1.3.8 in the linked version |
+| EXT-CM-KOTTWITZ-PEL-POINTS | claim | proved / partial | A sufficiently fine PEL level represents the polarized endomorphism moduli problem and has an analytic uniformization by the associated hermitian symmetric domain. | [foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md): Examples with ordinary density 1/2, PEL moduli |
+| EXT-CM-KUMMER-BINOMIAL-VALUATION | claim | proved / partial | The p-adic valuation of a binomial coefficient counts the base-p carries in adding its lower index and complement. | [foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_SECOND_POLE.md](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_SECOND_POLE.md): The vanished top residue and the exact lower depth, Kummer |
 | EXT-CM-LO-EFFECTIVE-GENUS-CHARACTER-CHEBOTAREV | claim | proved / partial | Lagarias–Odlyzko Theorems 1.3–1.4 give the counting and exceptional-zero bounds in terms of degree and root discriminant. | [foundations/extended-geometry/CM_NEWTON_SPLIT_GENUS_CHARACTERS.md](foundations/extended-geometry/CM_NEWTON_SPLIT_GENUS_CHARACTERS.md): Effective Chebotarev through auxiliary normal closures |
+| EXT-CM-MALIK-PRABHU-FRACTIONAL-CHEBOTAREV-GRH | claim | conditional / partial | Theorem 1.1 and Remark 2 give joint fractional power equidistribution with explicit errors for Frobenius classes over a fixed number field under Dedekind-zeta GRH. | [foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md](foundations/extended-geometry/CM_NEWTON_MOVING_COFACTOR_PROFILES.md): Power widths under GRH, Theorem 1.1 and Remark 2 |
+| EXT-CM-MAYNARD-HECKE-PRIME-IDEAL-THEOREM | claim | proved / partial | For a fixed unitary Hecke character of nonconstant radial archimedean exponents, its prime sum is little-oh of the prime ideal counting function. | [foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md](foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md): Canonically balanced positive generators, Maynard Lemmas 4.4–4.6 |
+| EXT-CM-MOONEN-DIEUDONNE-TYPE | claim | proved / partial | For geometric coefficient idempotents in the Witt ring, the dimensions of the kernels of the one-step semilinear Frobenius maps modulo p are the corresponding Dieudonné type multiplicities. | [foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md): Even valuation from crystalline Frobenius |
+| EXT-CM-MOONEN-TENSOR-SHIMURA-CONSTRUCTION | claim | proved / partial | Moonen constructs Mumford–Tate representations using tensor factors indexed by subsets, with size two yielding the connected tensor-standard rank-four projection, without a claim about disconnected arithmetic flips. | [foundations/extended-geometry/CM_NEWTON_LINKED_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_LINKED_RANK_FOUR_PFAFFIAN.md): A tensor obstruction on the other components, Construction 5.6 |
 | EXT-CM-NEWTON-BOUW-HASSE-WITT | claim | proved / partial | For tame cyclic covers, coherent Frobenius ranks and iterates are computed in character eigenspaces by coefficient extraction, and stable rank gives the slope-zero multiplicity. | [foundations/extended-geometry/CM_NEWTON_INFINITE_MOMENT_FAMILIES.md](foundations/extended-geometry/CM_NEWTON_INFINITE_MOMENT_FAMILIES.md): Prime-power coefficient extraction and Bouw Sections 4–5 |
+| EXT-CM-NEWTON-DELIGNE-ABSOLUTE-HODGE | claim | proved / partial | Hodge tensors on an abelian variety are absolute Hodge, with compatible Galois descent for their realizations. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md): Field of the adjoint labels, Deligne Proposition 2.9 and Theorem 2.11 |
 | EXT-CM-NEWTON-HILBERT-FINE-MODULI | claim | proved / partial | The determinant-fixed full level-three Hilbert modular component with the indicated inverse-different polarization is geometrically connected in characteristic zero and smooth at split primes away from the level and discriminant. | [foundations/extended-geometry/CM_NEWTON_SIMULTANEOUS_REAL_CUBIC_LIFTS.md](foundations/extended-geometry/CM_NEWTON_SIMULTANEOUS_REAL_CUBIC_LIFTS.md): Rapoport Section 1 and Deligne–Pappas Theorem 2.2 and Sections 2.12–2.13 |
 | EXT-CM-NEWTON-HILBERT-PARTIAL-HASSE-DIVISOR | claim | proved / partial | For split p the labelled partial Hasse sections have weight (p−1) on the respective Hodge line. Their reduced interior zero divisors stratify the labelled Newton conditions and meet the other labels in codimension two where nonempty. | [foundations/extended-geometry/CM_NEWTON_HILBERT_MODULAR_STRATUM_OBSTRUCTIONS.md](foundations/extended-geometry/CM_NEWTON_HILBERT_MODULAR_STRATUM_OBSTRUCTIONS.md): Partial Hasse geometry from Goren and Andreatta–Goren |
 | EXT-CM-NEWTON-HONDA-TATE-CLASSIFICATION | claim | proved / partial | A Weil p-integer defines a prime-field simple isogeny class. The local invariants at p determine the endomorphism index and dimension together with the Frobenius field. | [../unpublished/cm-newton-polygon-constraints/residual.tex](../unpublished/cm-newton-polygon-constraints/residual.tex): Proposition finite-field sharpness, citation of Tate Theorem 1 |
@@ -21074,16 +22327,33 @@ Tracked obligations from the catalogue:
 | EXT-CM-NEWTON-SERRE-TATE-ALMOST-INDEPENDENCE | claim | proved / partial | After finite base extension the Tate representations of a fixed abelian variety over a number field have product image over all auxiliary primes. | [foundations/extended-geometry/CM_NEWTON_FROBENIUS_RAMIFICATION_AND_DENOMINATORS.md](foundations/extended-geometry/CM_NEWTON_FROBENIUS_RAMIFICATION_AND_DENOMINATORS.md): Serre Theorem 1 and Section 3.1 |
 | EXT-CM-NEWTON-STARK-SIMPLE-ZERO-DESCENT | claim | proved / partial | Stark's Lemma 3 and Theorem 3 identify an intermediate field of degree at most two over the base that controls which subfields contain a sufficiently close real simple zero of a Galois extension's Dedekind zeta function. | [foundations/extended-geometry/CM_NEWTON_UNCONDITIONAL_COFACTOR_SIEVE.md](foundations/extended-geometry/CM_NEWTON_UNCONDITIONAL_COFACTOR_SIEVE.md): Uniform Chebotarev averaging, Stark's Lemma 3 and Theorem 3 |
 | EXT-CM-NEWTON-SUH-JOINT-MONODROMY | claim | proved / partial | For a non-CM parallel-weight-two Hilbert eigenform, connected joint monodromy over the smallest Frobenius field is the common-determinant group. Its rank-two Frobenius eigenvalues are weight-one Weil integers. | [foundations/extended-geometry/CM_NEWTON_PROJECTIVE_TRACE_FIELD.md](foundations/extended-geometry/CM_NEWTON_PROJECTIVE_TRACE_FIELD.md): Suh Proposition 3.2.1 and Lemma 4.1.3 |
+| EXT-CM-NEWTON-THORNE-HILBERT-SYMMETRIC-POWERS | claim | proved / partial | All symmetric powers of a regular non-CM Hilbert modular cuspidal representation are cuspidal automorphic with the predicted local parameters. | [foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md): Pairwise distribution in a prescribed Frobenius class, Newton–Thorne Theorem A |
 | EXT-CM-NEWTON-THORNER-ZAMAN-ABELIAN-SUBGROUP-CHEBOTAREV | claim | proved / partial | Thorner and Zaman's Theorem 1.4 gives a uniform conjugacy-class asymptotic via an abelian subgroup meeting the class, with an explicit real Hecke exceptional term. | [foundations/extended-geometry/CM_NEWTON_UNCONDITIONAL_COFACTOR_SIEVE.md](foundations/extended-geometry/CM_NEWTON_UNCONDITIONAL_COFACTOR_SIEVE.md): Uniform Chebotarev averaging, Theorem 1.4 |
 | EXT-CM-NEWTON-WATERHOUSE-PRIME-FIELD-ORDERS | claim | proved / partial | When the Frobenius field of an elementary abelian variety over the prime field has no real place, the rational algebra is commutative and every order containing Frobenius and Verschiebung is realized in its isogeny class. | [../unpublished/cm-newton-polygon-constraints/residual.tex](../unpublished/cm-newton-polygon-constraints/residual.tex): Proposition finite-field sharpness, citation of Waterhouse Theorem 6.1 |
+| EXT-CM-NOOT-PEL-MONODROMY-SPECIALIZATION | claim | proved / partial | Arithmetic specialization can preserve the auxiliary compact image by specializing a finite quotient controlling it through its open pro-ell Frattini quotient. | [foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md): Examples with ordinary density 1/2, specialization |
 | EXT-CM-RAJAN-ALGEBRAIC-CHEBOTAREV | claim | proved / partial | Rajan Theorem 3, proper conjugation-invariant algebraic loci in connected monodromy have density zero. | [foundations/extended-geometry/CM_NEWTON_PROJECTIVE_SPECTRUM_FIELDS.md](foundations/extended-geometry/CM_NEWTON_PROJECTIVE_SPECTRUM_FIELDS.md): Algebraic Chebotarev density for closed loci |
+| EXT-CM-SAWIN-ORIGINAL-FIELD-NONCM-SURFACES | claim | proved / partial | An abelian surface without a geometric CM isogeny factor has ordinary reduction at a set of natural density one over its original number field. | [foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md](foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md): Ordinary primes of the quotient, Sawin Theorem 2.3 |
+| EXT-CM-SEN-HODGE-TATE-LIE-OPERATOR | claim | proved / partial | For a Hodge–Tate representation over a p-adic local field, the Hodge–Tate grading belongs to the scalar-extended Lie algebra of the local image. | [foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md): Full relative projective monodromy on each block |
+| EXT-CM-SERRE-FORMAL-GROUP-INERTIA | claim | proved / partial | Over absolute ramification index one the nonordinary height-two group has tame inertia acting via the fundamental character of order p²−1, with cyclotomic norm; the decomposition action is semilinear. | [foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md](foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md): The full torsion field, Serre §§1.9 and 1.11 |
+| EXT-CM-SERRE-HILBERT-LOCAL-APPROXIMATION | claim | proved / partial | Hilbert irreducibility can preserve connectedness of a finite étale fiber while the parameter approximates a prescribed point at a real place. | [foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md): Examples with ordinary density 1/2, real approximation |
+| EXT-CM-SERRE-LOCAL-RAMIFICATION-CONDUCTORS | claim | proved / partial | The different exponents are compatible with towers and lower ramification groups, upper ramification is compatible with quotients, and Artin conductors of permutation representations compute subfield discriminants. | [foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md](foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md): The full torsion field and A degree-2(p+1) field for each factor |
+| EXT-CM-SERRE-TATE-GOOD-REDUCTION | claim | proved / partial | Good reduction implies that division fields of torsion of order prime to the residue characteristic are unramified locally. | [foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md](foundations/extended-geometry/CM_NEWTON_RESIDUE_PRIME_TORSION_RAMIFICATION.md): Resolution needed from global discriminants, Serre–Tate Theorem 1 |
+| EXT-CM-SERRE-TATE-POTENTIAL-GOOD-CM | claim | proved / partial | An abelian variety with complex multiplication has potentially good reduction at every finite place. | [foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md](foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md): Effective exclusion of CM, Serre–Tate Theorem 6 |
+| EXT-CM-SERRE-THIN-REDUCTION-DEFICIT | claim | proved / partial | A basic thin set misses a uniformly positive fraction of points after reduction at sufficiently large primes splitting in a fixed extension; a proper closed locus is covered by the smaller dimension bound. | [foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md](foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md): Trace tuple and its effective count, Serre Theorem 3.6.2 |
+| EXT-CM-SGA3-PINNED-AUTOMORPHISMS | claim | proved / partial | Automorphisms of a connected semisimple group modulo inner automorphisms have representatives preserving a pinning. | [foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md): The Frobenius power equals the field-action order |
+| EXT-CM-SGA7-SEMISTABLE-JACOBIAN-GRAPH-TORUS | claim | proved / partial | For a semistable curve, the character group of the torus of the connected special-fiber Jacobian Néron model is canonically the first homology of the dual graph, equivariantly for automorphisms. | [foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md](foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md): Effective exclusion of CM, SGA 7 I Exposé IX 12.3.7 and 12.4 |
+| EXT-CM-STEINBERG-SL2-SCHUR-MULTIPLIER | claim | proved / partial | For odd primes p≥5 the group SL2(F_p) is perfect with trivial Schur multiplier, so its first and second integral homology vanish. | [foundations/extended-geometry/CM_NEWTON_RESIDUAL_ARTIN_CONDUCTORS_AND_SPIN.md](foundations/extended-geometry/CM_NEWTON_RESIDUAL_ARTIN_CONDUCTORS_AND_SPIN.md): Spin classes on the actual residual group, Steinberg Chapter 7 |
+| EXT-CM-TATE-1966-ENDOMORPHISM-THEOREM | claim | proved / partial | For an abelian variety over a finite field, endomorphisms over that field, after tensoring with Q_l for l prime to the characteristic, are the centralizer of Frobenius on the rational Tate module. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md): Ordinary density and an exchanging cubic example, Tate main theorem in §1 |
+| EXT-CM-THORNER-TWISTED-PAIR-SATO-TATE | claim | proved / partial | For two regular twist-inequivalent non-CM Hilbert modular forms, Thorner bounds mixed symmetric-power prime sums with fixed ray characters uniformly up to an analytic degree cutoff and gives interval-discrepancy approximation. | [foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md): Pairwise distribution in a prescribed Frobenius class, Thorner §§6.1–6.2 |
+| EXT-CM-TSUJI-GOOD-CRYSTALLINE-COMPARISON | claim | proved / partial | For a smooth proper model at a p-adic place, its p-adic étale cohomology is crystalline and the filtered Frobenius module compares with the crystalline cohomology of the reduction and the Hodge filtration. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md): Crystalline slopes of the adjoint factors, Tsuji Theorem 2.2.1 |
+| EXT-CM-VASIU-MUMFORD-TATE-RANK-ONE | claim | proved / partial | Vasiu’s theorem for non-special A_n Shimura types applies to the adjoint A1 case, since n+1=2 is prime. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md): Derived comparison for rank-one factors, Vasiu Theorem 1.3.4(a) and Example 1.3.5(iv) |
 | EXT-CM-ZARHIN-SUPERELLIPTIC-ENDOMORPHISMS | claim | proved / partial | Zarhin Corollary 1.5 for y^p=f(x) and an irreducible S4 quartic gives geometric endomorphism algebra Q(zeta_p). | [foundations/extended-geometry/CM_NEWTON_PROJECTIVE_SPECTRUM_FIELDS.md](foundations/extended-geometry/CM_NEWTON_PROJECTIVE_SPECTRUM_FIELDS.md): Geometric endomorphisms of cyclic covers of S4 quartics |
 | EXT-FALTINGS-TATE-SEMISIMPLICITY-ENDOMORPHISMS | claim | proved / partial | For an abelian variety over a number field its rational ell-adic Tate representation is semisimple and the equivariant endomorphisms are the rational endomorphisms tensored with Q_ell. Faltings (1983), Satz 3 and Satz 4. | [foundations/extended-geometry/RANK_TWO_CM_ORDINARITY_AND_QUINTIC_FACE_EXCLUSION.md](foundations/extended-geometry/RANK_TWO_CM_ORDINARITY_AND_QUINTIC_FACE_EXCLUSION.md): Rank-two CM proof, semisimplicity and commutant; exact Faltings Satz 3 and 4 import |
 | EXT-MILNE-FINITE-GALOIS-CORRESPONDENCE | claim | proved / partial | For a finite Galois extension E/F, H->E^H bijects subgroups of Gal(E/F) and intermediate fields, with the inverse M->Gal(E/M) and index-degree correspondence. Applied over algebraically closed characteristic-zero k to k(U)/k(U^N), this classifies its intermediate fields as k(U^d), d\|N. | [foundations/extended-geometry/sources/milne_fields_galois_v510.pdf](foundations/extended-geometry/sources/milne_fields_galois_v510.pdf): Milne v5.10 Theorem3.17, printedpp39-40 |
 | EXT-MILNE-GAUSS-PRIMITIVE-DIVISIBILITY | claim | proved / partial | For a UFD R and its fraction field, a primitive polynomial dividing a polynomial over Frac(R) already divides it over R. Used with R=K[x] to choose the primitive common gcd G and obtain exact polynomial quotients P/G,Q/G. Only Gauss lemma/Corollary9.23 is imported here, not Luroth or rationality of a selected inverse coordinate. | [foundations/extended-geometry/sources/milne_fields_galois_v510.pdf](foundations/extended-geometry/sources/milne_fields_galois_v510.pdf): Gauss lemma and primitive-divisibility consequence9.23, printedp118 |
 | EXT-MILNE-LUROTH-RATIONAL-SUBFIELD | claim | proved / partial | For any field F and transcendental X, every intermediate field E properly containing F in F(X) is F(W). Applied to the mixed-center reduction and essentially to the full stable field E=k(u,R,T) in the degree11 obstruction. The one-double-root proof with R degree1 remains independent of Luroth. | [foundations/extended-geometry/sources/milne_fields_galois_v510.pdf](foundations/extended-geometry/sources/milne_fields_galois_v510.pdf): Milne v5.10 Theorem9.19, printedp117 and ensuing degree proof |
 | EXT-MILNE-SEPARABLE-NORM-TRACE-PRODUCT | claim | proved / partial | For every finite separable E/F, the field trace and norm are respectively the sum and product over all F-embeddings into an algebraic closure, with multiplicities supplied by extension degrees. In characteristic zero a derivation extends uniquely through finite algebraic fields; differentiating this product gives the logarithmic-norm/trace identity used in the supplied proofs. | [foundations/extended-geometry/sources/milne_fields_galois_v510.pdf](foundations/extended-geometry/sources/milne_fields_galois_v510.pdf): Milne v5.10 Remark5.47, printedp84; elementary differentiation of the stated finite product is supplied in the application proof |
-| EXT-OGUS-KATZ-BOUNDED-FROBENIUS-TRACE-CONGRUENCE | claim | proved / partial | Ogus, Chapter VI, Proposition 2.7.2 proof, uses a finite extension making a Tate lattice trivial modulo a high prime power and adjoining roots of unity. At good degree-one primes the integral normalized Frobenius trace is congruent to the representation dimension, and its Weil bound gives equality. | [../unpublished/primitive-balanced-image-spectrum/ordinary-reduction-literature.md](../unpublished/primitive-balanced-image-spectrum/ordinary-reduction-literature.md): Katz–Ogus: Chapter VI, printed pages 371–372, Proposition 2.7.2 and proof |
+| EXT-OGUS-KATZ-BOUNDED-FROBENIUS-TRACE-CONGRUENCE | claim | proved / partial | Ogus, Chapter VI, Proposition 2.7.2 proof, uses a finite extension making a Tate lattice trivial modulo a high prime power and adjoining roots of unity. At good degree-one primes the integral normalized Frobenius trace is congruent to the representation dimension, and its Weil bound gives equality. | [../results/primitive-balanced-image-spectrum/ordinary-reduction-literature.md](../results/primitive-balanced-image-spectrum/ordinary-reduction-literature.md): Katz–Ogus: Chapter VI, printed pages 371–372, Proposition 2.7.2 and proof |
 | EXT-PAKOVICH-ZVONKIN-DZ-PAIRS-1509 | claim | proved / partial | Pakovich-Zvonkin PartII Assumption1.1 and Proposition1.4: affine/common-scaling DZ classes correspond bijectively to oriented weighted plane trees with the matching passport. Marked refinement is supplied internally. | [foundations/extended-geometry/sources/pakovich-zvonkin-1509.07973v2.pdf](foundations/extended-geometry/sources/pakovich-zvonkin-1509.07973v2.pdf): Pakovich-Zvonkin PartII Assumption1.1 and Proposition1.4: affine/common-scaling DZ classes correspond bijectively to oriented weighted plane trees with the matching passport. Marked refinement is supplied internally. |
 | EXT-PAKOVICH-ZVONKIN-WEIGHTED-TREES-1306 | claim | proved / partial | Pakovich-Zvonkin Theorems2.24/3.1: extremal degree difference corresponds to a weighted tree, and passport existence iff p+q<=N/gcd(parts)+1. The marked part1 makes gcd1. No rational marked-root descent follows. | [foundations/extended-geometry/sources/pakovich-zvonkin-1306.4141v1.pdf](foundations/extended-geometry/sources/pakovich-zvonkin-1306.4141v1.pdf): Pakovich-Zvonkin Theorems2.24/3.1: extremal degree difference corresponds to a weighted tree, and passport existence iff p+q<=N/gcd(parts)+1. The marked part1 makes gcd1. No rational marked-root descent follows. |
 | EXT-SERRE-ALGEBRAIC-CHEBOTAREV-CONNECTED-MONODROMY | claim | proved / partial | For a continuous ell-adic representation of a number-field Galois group, unramified away from finitely many primes, a proper conjugacy-invariant Zariski closed subset of its connected algebraic monodromy has Frobenius incidence of natural density zero. Serre's algebraic Chebotarev argument as in Sawin Theorem 1 proof. | [foundations/extended-geometry/RANK_TWO_CM_ORDINARITY_AND_QUINTIC_FACE_EXCLUSION.md](foundations/extended-geometry/RANK_TWO_CM_ORDINARITY_AND_QUINTIC_FACE_EXCLUSION.md): Rank-two CM proof, algebraic Chebotarev paragraph |
@@ -21092,20 +22362,27 @@ Tracked obligations from the catalogue:
 | EXT-V-POSITIVE-HOLOMORPHIC-SEED | claim | proved / partial | For nonzero regular f on a smooth variety,the graph delta section of O_X lies in V^{>0}; multiplication by regular coefficients preserves the bound. | [foundations/extended-geometry/sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf](foundations/extended-geometry/sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf): Example5.19 printed p27,Corollary5.15;decreasing V convention |
 | EXT-V-PROPER-DIRECT-IMAGE | claim | proved / partial | For coherent D-module with V-filtration and smooth projection proper on its support,filtered relative deRham direct image injects into ordinary image and induces canonical V-filtration; general proper formulation retains nonzero composed function. | [foundations/extended-geometry/sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf](foundations/extended-geometry/sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf): Theorem8.1 printed pp41-44;Theorem8.3 p46 |
 | EXT-V-STRICTNESS-POINT-SUPPORT | claim | proved / partial | Induced filtrations on coherent submodules/quotients,strict filtered morphisms,and V^alpha=0 for alpha>0 on coherent modules supported on t=0. | [foundations/extended-geometry/sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf](foundations/extended-geometry/sources/chen_dirks_mustata_V_filtrations_2402_07816v1.pdf): Proposition3.19(ii),Corollary3.20,Example3.18 printed pp14-15 |
+| FOUND-MENG-SCHUR-ONE-NONAFFINE-COORDINATE | claim | proved / complete | Over characteristic zero, a Keller map in n>=2 source coordinates, jointly affine in n-1 of them, is a polynomial automorphism. This applies in particular when two source coordinates of a three-variable Keller map form a jointly affine block. | [foundations/MENG_YANG_SCHUR_DESCENT_BRIDGE.md](foundations/MENG_YANG_SCHUR_DESCENT_BRIDGE.md): Section 3, final paragraph of A jointly affine block of source coordinates |
 | HOPF-THREE-HEIGHT-QUINTIC-MODULAR-UNIT-IDEALS | claim | proved / partial | All normalized charts of Sections 2-3 have unit moment ideals over F_2731 after isolating e and, for b nonzero, i and k. Normalized exact chart orders do not exceed 18. | [foundations/extended-geometry/THREE_HEIGHT_QUINTIC_IMAGE_SAFETY.md](foundations/extended-geometry/THREE_HEIGHT_QUINTIC_IMAGE_SAFETY.md): Sections 2-3; [foundations/extended-geometry/verify_three_height_quintic_image_safety.py](foundations/extended-geometry/verify_three_height_quintic_image_safety.py): peel_orders and fixed_charts; [foundations/extended-geometry/three_height_quintic_image_safety_verification.json](foundations/extended-geometry/three_height_quintic_image_safety_verification.json): 17 exact chart results |
 | HOPF-THREE-HEIGHT-QUINTIC-NINETEEN-MOMENT-EXAMPLE | claim | proved / partial | For P=t(1-t^2)(1+beta*t^2)/x+x^4*t and a root beta of the displayed degree-eight polynomial B_1, the first nineteen moments vanish and moment twenty is nonzero. The coprimality with B_2 is certified modulo 2731 at preserved degrees. | [foundations/extended-geometry/THREE_HEIGHT_QUINTIC_IMAGE_SAFETY.md](foundations/extended-geometry/THREE_HEIGHT_QUINTIC_IMAGE_SAFETY.md): Proposition ThreeHeightQuinticNineteenMomentExample; [foundations/extended-geometry/verify_three_height_quintic_image_safety.py](foundations/extended-geometry/verify_three_height_quintic_image_safety.py): dormant_example |
+| EXT-CM-NOOT-MUMFORD-COCHARACTER-COMPARISON | claim | proved / partial | The Hodge–Tate cocharacter for the absolute Hodge realization is conjugate to a splitting of the de Rham Hodge filtration after scalar extension. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md): Derived comparison for rank-one factors, Noot Proposition 2.2 |
+| CM-NEWTON-ADJOINT-PROJECTIVE-T-VALUATIONS | claim | proved / partial | With all tensors defined and R_i unramified, T_i=1+Tr(Ad) at Frobenius is R_i-rational, with archimedean conjugates in [0,4] and integral away from p. Its valuations are −1 at nonflat active factors, ≥1 at flat active factors of odd residue degree, and ≥0 at the other factors. | [foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md](foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md): Simultaneous local and global Frobenius classes and The local trace at a flat active factor; [../unpublished/cm-newton-polygon-constraints/adjoint.tex](../unpublished/cm-newton-polygon-constraints/adjoint.tex): Determinant parity and the local valuation |
+| CM-RANK-FOUR-TYPE-C2-REAL-DESCENT | claim | proved / partial | The explicit anti-symplectic involution provides canonical real descent and a real point for a Hodge-type component, with the descended polarized family carrying coefficient complex conjugation. | [foundations/extended-geometry/CM_NEWTON_TYPE_C2_REALIZATION.md](foundations/extended-geometry/CM_NEWTON_TYPE_C2_REALIZATION.md): Real descent with the labeled coefficient action |
 | CM-MU-ORDINARY-DIRECTED-COHERENT-PATH | claim | proved / partial | In arbitrary relative rank on a mu-ordinary coefficient orbit, the rank of a consecutive undivided coherent Frobenius composite equals the smallest coherent quotient dimension along the segment. Zeros outside the selected segment do not force its rank to drop. | [foundations/extended-geometry/CM_NEWTON_MU_ORDINARY_SELECTED_PATHS.md](foundations/extended-geometry/CM_NEWTON_MU_ORDINARY_SELECTED_PATHS.md): Lemma, divided exterior crystalline Frobenius |
 | CM-RM-SPLIT-GOREN-OORT-DEGREE | claim | proved / partial | On a fixed smooth projective toroidal Hilbert modular threefold with ample H, the degree of a nonempty labelled one-failure divisor is exactly (p−1)(c₁(ωᵢ)·c₁(H)²). Coverage of the entire open one-failure stratum by effective divisors needs at least this total degree. | [foundations/extended-geometry/CM_NEWTON_HILBERT_MODULAR_STRATUM_OBSTRUCTIONS.md](foundations/extended-geometry/CM_NEWTON_HILBERT_MODULAR_STRATUM_OBSTRUCTIONS.md): Proposition 1, partial Hasse divisor |
 | CM-RM-SPLIT-PROJECTIVE-PCURVATURE-RANK | claim | proved / partial | At a good prime split in the totally real coefficient field, the rank of the projective Gauss–Manin p-curvature at the tuple of Hodge lines equals the p-rank. The individual vertical component is zero exactly at a failed partial Hasse invariant. | [foundations/extended-geometry/CM_NEWTON_SPLIT_PROJECTIVE_P_CURVATURE.md](foundations/extended-geometry/CM_NEWTON_SPLIT_PROJECTIVE_P_CURVATURE.md): Proposition, pointwise criterion |
+| CM-RM-ADJOINT-TRACE-INTEGRALITY | claim | proved / partial | At a split degree-one good prime the relative adjoint trace detects a failed pair by coefficient-prime integrality and is invariant under scalar twists. | [foundations/extended-geometry/CM_NEWTON_TORIC_TENSOR_REALIZATIONS.md](foundations/extended-geometry/CM_NEWTON_TORIC_TENSOR_REALIZATIONS.md): Arithmetic information in the adjoint |
 | CM-RM-SPLIT-TRACE-COFACTOR-FIELD-GRH | claim | conditional / partial | With torsion-field and Frobenius-field GRH, \|N(a_v)/p\|≤p^δ cuts out O(X^(10(1+δ)/11)(log X)^2) split degree-one nonordinary primes of norm at most X for 0≤δ<1/10. | [foundations/extended-geometry/CM_NEWTON_TRACE_COFACTOR_SIEVE.md](foundations/extended-geometry/CM_NEWTON_TRACE_COFACTOR_SIEVE.md): GRH bounds, averaging over triangularizable auxiliary classes |
 | CM-RM-SPLIT-TRACE-COFACTOR-TORSION-GRH | claim | conditional / partial | With torsion-field GRH, \|N(a_v)/p\|≤p^δ cuts out O(X^(16(1+δ)/17)(log X)^2) split degree-one nonordinary primes of norm at most X, for 0≤δ<1/16. | [foundations/extended-geometry/CM_NEWTON_TRACE_COFACTOR_SIEVE.md](foundations/extended-geometry/CM_NEWTON_TRACE_COFACTOR_SIEVE.md): GRH bounds, fixed family of abelian subgroups |
 | CM-FIXED-ENDPOINT-EXTREMAL-NEWTON-POLYGON | claim | proved / partial | Fix height h, endpoint (h,m) and admissible counts z and o of zero and unit slopes. After removing endpoints, the least polygon is isoclinic if w=1 or q−w=1; otherwise its interior vertices are (0,0), (q−w,1), (q,w). For paired components the excess of rounded prefixes is exactly 1_{z<j<h−o}+1_{o<j<h−z}. | [../unpublished/cm-newton-polygon-constraints/numerical.tex](../unpublished/cm-newton-polygon-constraints/numerical.tex): thm:extremal; [foundations/extended-geometry/CM_NEWTON_EXTREMAL_POLYGONS.md](foundations/extended-geometry/CM_NEWTON_EXTREMAL_POLYGONS.md): Fixed-endpoint extremality and paired interval excess |
 | CM-RM-FROBENIUS-FIELD-ERDOS-KAC-GRH | claim | conditional / partial | Under GRH the number of coefficient prime ideals ramified in the relative quadratic Frobenius field of a fixed real-cubic RM threefold, centered by log log p and scaled by its square root, tends to the standard normal law on the split identity class. | [foundations/extended-geometry/CM_NEWTON_FROBENIUS_DISCRIMINANT_SIEVE.md](foundations/extended-geometry/CM_NEWTON_FROBENIUS_DISCRIMINANT_SIEVE.md): Theorem and count of ramified prime ideals |
 | CM-RM-SPLIT-TRACE-COFACTOR-QUADRATIC-NORM | claim | proved / partial | For a fixed exact real-cubic RM threefold and a fixed quadratic field disjoint from its coefficient normal closure, split degree-one nonordinary primes whose trace cofactor is a norm from the quadratic field have density zero. | [foundations/extended-geometry/CM_NEWTON_TRACE_COFACTOR_SIEVE.md](foundations/extended-geometry/CM_NEWTON_TRACE_COFACTOR_SIEVE.md): A separate sparsity condition without GRH |
 | CM-RM-GENERAL-LOGARITHMIC-TRACE-COFACTOR | claim | proved / partial | For a fixed exact real-multiplication abelian g-fold, the trace norm divided by p to the p-rank loss is integral at good degree-one primes. With absolute value at most H its count up to X is O((H+1)X(log log X)^(1/(2g))/(log X)^(1+1/(2g))) unconditionally, including nonsplit coefficient primes. | [foundations/extended-geometry/CM_NEWTON_TRACE_COFACTOR_SIEVE.md](foundations/extended-geometry/CM_NEWTON_TRACE_COFACTOR_SIEVE.md): Proposition, an unconditional trace bound in arbitrary dimension |
+| CM-NEWTON-PRIMITIVE-FORMAL-POINT-DIFFERENT | claim | proved / partial | For a one-dimensional height-h formal group over a finite unramified p-adic field, a primitive p^n point field is totally ramified of degree (p^h−1)p^(h(n−1)) and normalized different n−1/(p^h−1). | [foundations/extended-geometry/CM_NEWTON_HIGHER_TORSION_LINE_DISCRIMINANTS.md](foundations/extended-geometry/CM_NEWTON_HIGHER_TORSION_LINE_DISCRIMINANTS.md): Primitive formal points and supersingular lines |
+| CM-SPHERE-NONCM-CYCLIC-REFINEMENT-TORIC-QUOTIENT | claim | proved / partial | For c=1−a^4 with integer a≡2 mod9, the primitive D_c quotient splits up to isogeny into rational surfaces that are geometrically isogenous. Its semistable model at 3 has two genus-zero components and eight geometric nodes, and the primitive toric rank is four. Neither surface has a geometric CM factor. | [foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md](foundations/extended-geometry/CM_NEWTON_SPLIT_NONCM_REFINEMENT.md): The ordinary quotient and Effective exclusion of CM |
 | CM-STRICT-HILBERT-MODULAR-COEFFICIENT-COUNT | claim | proved / partial | For a non-CM parallel-weight-two Hilbert eigenform, let n be the degree of the smallest Frobenius field and c the index in the coefficient field. After finite extension, a density-one set of absolute degree-one primes has at most c floor((n−1)/2) nonordinary rank-two coefficient components, without a Sato–Tate hypothesis. The scope is the rank-two compatible system. | [foundations/extended-geometry/CM_NEWTON_PROJECTIVE_TRACE_FIELD.md](foundations/extended-geometry/CM_NEWTON_PROJECTIVE_TRACE_FIELD.md): Unconditional coefficient count in Suh's setting |
-| IMAGE2-QUINTIC-RANK-TWO-CM-ORDINARITY | claim | proved / partial | An abelian variety of dimension 2d over a number field admitting a Rosati-compatible CM action of degree 2d with at most two (1,1) conjugate Hodge pairs has density-one ordinary primes after a finite extension. No simplicity or full-endomorphism restriction. | [foundations/extended-geometry/RANK_TWO_CM_ORDINARITY_AND_QUINTIC_FACE_EXCLUSION.md](foundations/extended-geometry/RANK_TWO_CM_ORDINARITY_AND_QUINTIC_FACE_EXCLUSION.md): Proposition and trace-norm proof; [../unpublished/primitive-balanced-image-spectrum/main.tex](../unpublished/primitive-balanced-image-spectrum/main.tex): lem:rank-two; [../unpublished/primitive-balanced-image-spectrum/ordinarity.tex](../unpublished/primitive-balanced-image-spectrum/ordinarity.tex): Section 6, torsion proof of the rank-two theorem |
-| IMAGE2-PROPER-VOLUME-NO-POLYNOMIAL-EXPONENTIAL-PERIOD | claim | proved / partial | For a smooth irreducible complex algebraic variety with a proper nonconstant map to the affine line, a regular top form and a compact closed middle-dimensional cycle give an entire exponential period that cannot be a nonzero polynomial. | [../unpublished/primitive-balanced-image-spectrum/proper-volume.tex](../unpublished/primitive-balanced-image-spectrum/proper-volume.tex): lem:proper-volume |
+| IMAGE2-QUINTIC-RANK-TWO-CM-ORDINARITY | claim | proved / partial | An abelian variety of dimension 2d over a number field admitting a Rosati-compatible CM action of degree 2d with at most two (1,1) conjugate Hodge pairs has density-one ordinary primes after a finite extension. No simplicity or full-endomorphism restriction. | [foundations/extended-geometry/RANK_TWO_CM_ORDINARITY_AND_QUINTIC_FACE_EXCLUSION.md](foundations/extended-geometry/RANK_TWO_CM_ORDINARITY_AND_QUINTIC_FACE_EXCLUSION.md): Proposition and trace-norm proof; [../results/primitive-balanced-image-spectrum/main.tex](../results/primitive-balanced-image-spectrum/main.tex): lem:rank-two; [../results/primitive-balanced-image-spectrum/ordinarity.tex](../results/primitive-balanced-image-spectrum/ordinarity.tex): Section 6, torsion proof of the rank-two theorem |
+| IMAGE2-PROPER-VOLUME-NO-POLYNOMIAL-EXPONENTIAL-PERIOD | claim | proved / partial | For a smooth irreducible complex algebraic variety with a proper nonconstant map to the affine line, a regular top form and a compact closed middle-dimensional cycle give an entire exponential period that cannot be a nonzero polynomial. | [../results/primitive-balanced-image-spectrum/proper-volume.tex](../results/primitive-balanced-image-spectrum/proper-volume.tex): lem:proper-volume |
 | FORMAL-FINITE-ETALE-FOCUSED-CERTIFICATE | claim | proved / partial | The exported PaperCertificate proves automatic admissible translation,the ordinary characteristic-zero polynomial construction,Jacobian normalization,full natural fibre,geometric degree and abstract finite-etale application. It does not establish the supplied char!=2 extension,external analytic counting or unspecified monodromy/atomicity bridges. | [foundations/formal/finite-etale-keller/FiniteEtaleKeller/PaperCertificate.lean](foundations/formal/finite-etale-keller/FiniteEtaleKeller/PaperCertificate.lean): PaperCertificate exported theorem chain |
 | FORMAL-GMC2-CHECKED-DERIVATION | claim | proved / partial | The exact public Lean declaration derives bivariate GMC using two explicit custom mathematical axiom interfaces,DvdK and finite-type specialization,in addition to standard logical axioms. This does not discharge those two mathematical imports. | [foundations/formal/gmc2/GMC2/BivariateGaussian.lean](foundations/formal/gmc2/GMC2/BivariateGaussian.lean): gaussianMomentsConjecture_two_variables_bivariate |
 | EPF-CONDITIONAL-PROPER-IMAGE-RADICAL-POWER | claim | proved / partial | CONDITIONAL: if some nonzero rational parameter polynomial vanishes on ALLchar0 field points of an infinite fixed-tail moment ideal, it lies in its radical. Some power belongs to a FINITE prefix ideal. No PFP promise is asserted without a separate application gate. | [foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md): Section2;Theorem1 proof |
@@ -21161,7 +22438,11 @@ Tracked obligations from the catalogue:
 | W1-ONE-SPECIALIZATION-BRANCH-TRANSFER | claim | proved / partial | For an eventually pure phase over any characteristic-zero K,one finite-type Q-algebra and ONE number-field specialization preserve all degrees and designated nonzero leading coefficients/discriminant in its branch,while every eventual moment identity specializes. Repeated-root/isotropic defining equalities remain polynomial identities. A number-field contradiction therefore transfers to K. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Section5;final all-field paragraph |
 | W1-PURITY-IMPLIES-EVENTUAL-PURITY | claim | proved / partial | For the given phase,vanishing at every positive moment order implies eventual vanishing directly. No arithmetic or marker theorem is required. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Definitions and Theorem1 |
 | W1-SAFETY-IMPLIES-EVENTUAL-PURITY | claim | proved / partial | Taking the fixed marker1 proves full sphere-marker safety implies eventual purity,over every char0field. This direction is independent of arithmetic or ordinary reductions. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Definitions and Section5 classification assembly |
+| CM-NEWTON-TENSOR-SINGLE-ACTIVE-DERIVED-COMPARISON | claim | proved / partial | If an abelian variety has adjoint factors of type A1 and its Hodge cocharacter is nontrivial on exactly one geometric factor, filtered absolute Hodge tensors and the supported Sen projections provide a short derived comparison for every auxiliary prime. Vasiu’s established theorem covers a broader class. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md): Derived comparison for rank-one factors |
+| CM-RANK-FOUR-TYPE-C2-SPECIALIZATION | claim | proved / partial | At an auxiliary prime, a real Frattini specialization retains the full product of standard Sp4 factors, and the definite Hodge–Tate places distinguish conjugate blocks for Faltings’s endomorphism comparison. | [foundations/extended-geometry/CM_NEWTON_TYPE_C2_REALIZATION.md](foundations/extended-geometry/CM_NEWTON_TYPE_C2_REALIZATION.md): A number-field fiber with connected type C2 |
+| CM-NEWTON-TENSOR-A1-QUADRATIC-SUPPORT | claim | proved / partial | With irreducible relative blocks and one balanced pair, geometric adjoint type A1 forces the standard two-factor tensors. Each simple factor supports exactly one conjugate coefficient pair, giving the inclusion F⊂R of degree two. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md): Support incidence in type A1 |
 | CM-SPLIT-CUBIC-COMPATIBLE-AUXILIARY-FROBENIUS | claim | proved / partial | Varying prime-field real-cubic threefolds realize one failed pair while approximating arbitrary normalized trace targets in (−2,2)³ and realizing any compatible fixed finite auxiliary Frobenius matrices. This is a varying-variety realizability statement. | [foundations/extended-geometry/CM_NEWTON_THREE_BALANCED_GLOBAL.md](foundations/extended-geometry/CM_NEWTON_THREE_BALANCED_GLOBAL.md): Proposition 4, simultaneous archimedean and auxiliary Frobenius data |
+| CM-RM-SATO-TATE-JOINT-SMALL-CUBIC-COFACTORS | claim | proved / partial | For trace and discriminant norm thresholds u,w<1/8, the joint cofactor small-value proportion in an indicated class is O(u w^(3/4)+sqrt(u) w^(3/2)+δ), by two-coordinate Sato–Tate. | [foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md): From two coordinates to small cofactor norms, joint dimension-three bound |
 | CM-HASSE-WITT-ENDPOINT-RESTRAINTS | claim | proved / partial | For upper bounds on split coherent ranks, bound the two endpoint multiplicities in each pair. Use ordinary endpoints when allowed, otherwise the coordinatewise maximal nonordinary endpoints; their interval excesses give an exact numerical compatibility test. | [../unpublished/cm-newton-polygon-constraints/moments.tex](../unpublished/cm-newton-polygon-constraints/moments.tex): prop:rankcaps |
 | CM-SPLIT-RANK-FOUR-ONE-BALANCED-PAIR-ORDINARITY | claim | proved / partial | If relative rank is four and the sole mixed Hodge pair is (2,2), the nonexceptional good absolute degree-one primes of a finite extension are ordinary, without a full geometric endomorphism algebra hypothesis. | [../unpublished/cm-newton-polygon-constraints/main.tex](../unpublished/cm-newton-polygon-constraints/main.tex): cor:rankfour |
 | CM-SPLIT-RANK-TWO-P-RANK-BOUND | claim | proved / partial | For b>0 balanced pairs in relative rank two, after finite extension at all nonexceptional good absolute degree-one primes r≤floor((b−1)/2) and p-rank is at least g−2floor((b−1)/2). With no mixed pairs, split reductions are ordinary. | [../unpublished/cm-newton-polygon-constraints/main.tex](../unpublished/cm-newton-polygon-constraints/main.tex): cor:ranktwo |
@@ -21181,6 +22462,7 @@ Tracked obligations from the catalogue:
 | HOPF-ODD-CUBIC-ADMISSIBLE-ALL-MOMENT-MARKER-IDENTITY | claim | proved / partial | For any normalized polynomial w0=0,wprime0=1 and normalized polynomial Cbar,Dbar with rational selectedubar, define C,D by the displayed pullback and REQUIRE BOTH to be polynomials. Then for every Gbar inK[z] and every m>=0, Lambda_x(Gbar(w)p^m)=Lambda_z(Gbar pbar^m). This includes admissible NONPURE phases. No arbitrary original-marker safety iff is claimed. | see incoming proof routes |
 | HOPF-ALL-START-ZERO-CENTER-PURITY-AND-SAFETY | claim | proved / partial | For every integer a>=0, a regular zero-center phase is pure iff its second and fourth pure moments vanish iff x^2 divides BOTH C,D; this branch is safe for every fixed sphere and original marker. The exact Sylvester identity inZ[a] has positive P(a) including a0; no odd-a theorem hypothesis is imported. | see incoming proof routes |
 | HOPF-ODD-START-ZERO-CENTER-TWO-FOUR-CRITERION | claim | proved / partial | For every positive odd a and arbitrary-degree C,D with C0=D0=0, Lambda(p^2)=Lambda(p^4)=0 iff x^2 divides both C and D. The zero-weight core is c*t^a+d*t^(a+2); the nonzero symbolic Sylvester determinant excludes d!=0 and its second moment excludes c!=0 when d0. | see incoming proof routes |
+| IMAGE2-SPHERE-AUTOMORPHIC-FIBER-ENDS | claim | proved / partial | The stated three-shear word gives the pole-order triples (9,27,18) and (3,9,6) at the two ends of a generic level fiber. Every nonzero linear form has a pole of order at least three at both ends. | [foundations/extended-geometry/SPHERICAL_BILATERAL_AUTOMORPHIC_MOMENTS.md](foundations/extended-geometry/SPHERICAL_BILATERAL_AUTOMORPHIC_MOMENTS.md): Pole orders at the two ends of a fiber |
 | EPF-FINITE-COEFFICIENT-PRESENTATIONS-AND-MOMENTS | claim | proved / partial | Finitely presentedQ coefficient families, coefficient-inverse variables and graph parameters have exact rational polynomial moments. No pivot division or chart omission. | [foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md): Section1;equation1 |
 | PFP-GENERAL-INDIVIDUAL-EVENTUAL-DEPENDENCE | claim | proved / partial | In any admissible r-parameter family and every char0field, eventual purity implies parameter transcendence degree<=r-1. This does NOT give one proper locus for the union over unbounded eventual thresholds. | [foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md](foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md): Theorem1(a) |
 | PFP-EVEN-BD-NORMALIZATION-AND-RESIDUE | claim | proved / partial | BDnonzero permits rho6=D/B,mu1/(rhoB),giving B=D1 and alpha,beta(13). Residue(14)is a NONZERO polynomial in TWO symbols:alpha^k coefficient is the unit(-1/2)^k binom(2k,k). | [foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md](foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md): Section4;equations13--14 |
@@ -21218,8 +22500,11 @@ Tracked obligations from the catalogue:
 | W1-H5-TWO-SURFACE-DECOMPOSITION | claim | proved / partial | Every H5 distinct-root branch configuration4,4,1,1 admits the complementary-pair involution reversing the deck group. It is an involution with exactly two fixed points; it and g-times-it have genus2 quotients whose disjoint H1 pullbacks give a product isogeny onto J4. No generic-End hypothesis. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Section4;H5 complete involution argument |
 | W1-H6-RATIONAL-IDEMPOTENT-DECOMPOSITION | claim | proved / partial | For H6,genera of quotient by<g^3> and<g^2> are2,1. Rational algebraic projectors e2=(1+g^3)/2,e3=(1+g^2+g^4)/3 multiply to full deck average zero. The remaining1-e2-e3 is idempotent and selects characters1,5,Betti dimension4,so has an abelian-surface image after denominator clearing. The2+1+2 product isogenous to J5. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Section4;H6 rational-idempotent paragraph |
 | CM-RM-SPLIT-PROJECTIVE-PCURVATURE-ALGEBRAICITY-LIMIT | claim | proved / partial | The pointwise split p-curvature and jet criteria do not imply vanishing on the full foliation. The projective horizontal leaf carries a nonconstant bounded plurisubharmonic function. In cubic relative dimension the three normalized fixed projective series do not all have zero truncated-denominator invariant τ. | [foundations/extended-geometry/CM_NEWTON_SPLIT_PROJECTIVE_P_CURVATURE.md](foundations/extended-geometry/CM_NEWTON_SPLIT_PROJECTIVE_P_CURVATURE.md): Scope of available algebraicity criteria |
-| CM-RANK-TWO-THREE-BALANCED-PAIRS-TRACE-TEST | claim | proved / partial | With three balanced pairs and one nonordinary pair the original trace norm has valuation exactly e−1, and both bad local traces have valuation one. In dimension six, every fixed homogeneous polynomial in the relative trace and determinant involving the trace fails to reach its normalized norm divisibility threshold at such primes outside a finite set. | [../unpublished/cm-newton-polygon-constraints/main.tex](../unpublished/cm-newton-polygon-constraints/main.tex): Section 4, exact valuation and homogeneous polynomial obstruction |
+| CM-RM-SATO-TATE-COFACTOR-PAIRWISE-SHARP-EXPONENTS | claim | proved / partial | There are pairwise-independent joint laws with Sato–Tate marginals attaining the small-value power exponents for each cofactor separately; these are probability laws, not claimed compatible Frobenius systems. | [foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md](foundations/extended-geometry/CM_NEWTON_SATO_TATE_COFACTOR_BULK.md): From two coordinates to small cofactor norms, quantile construction |
+| CM-RANK-FOUR-CRYSTALLINE-PFAFFIAN-PARITY | claim | proved / partial | In relative rank four with even embedding multiplicities, when a Frobenius half-power exchanges dual CM blocks, the normalized determinant of one plus its square has even valuation or is zero. At a failed midpoint for the one-balanced-pair reference it is integral. | [foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md): Even valuation from crystalline Frobenius; [../unpublished/cm-newton-polygon-constraints/fourfold.tex](../unpublished/cm-newton-polygon-constraints/fourfold.tex): prop:fourfold-pfaffian |
+| CM-RANK-TWO-THREE-BALANCED-PAIRS-TRACE-TEST | claim | proved / partial | With three balanced pairs and one nonordinary pair the original trace norm has valuation exactly e−1, and both bad local traces have valuation one. In dimension six, every fixed homogeneous polynomial in the relative trace and determinant involving the trace fails to reach its normalized norm divisibility threshold at such primes outside a finite set. | [../unpublished/cm-newton-polygon-constraints/main.tex](../unpublished/cm-newton-polygon-constraints/main.tex): The first case with three balanced pairs, exact valuation and homogeneous polynomial obstruction |
 | CM-SPLIT-ORDINARY-FORCING-SIGNATURES | claim | proved / partial | Numerical split Newton polygons obeying the endpoint, duality and slope multiplicity rules are forced ordinary precisely for all-definite signatures, a single mixed pair of multiplicity one, a single (2,2) pair in relative rank four, and two balanced pairs in relative rank two. | [../unpublished/cm-newton-polygon-constraints/numerical.tex](../unpublished/cm-newton-polygon-constraints/numerical.tex): prop:signatures |
+| CM-RM-SPLIT-CANONICAL-MOVING-IDEAL-THIN-QUOTIENT | claim | proved / partial | Fix narrow ideal class representatives and a positive unit fundamental parallelepiped. With the uniquely balanced positive generator, the relative trace quotient avoids every fixed thin set outside a density-zero set. | [foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md](foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md): Canonically balanced positive generators |
 | FORMAL-FINITE-ETALE-COMPANION-BOUNDARY | claim | proved / partial | Companion monodromy/atomicity,HC4,Image and integer-Hasse modules prove their stated algebraic parts; geometric bridges,unrestricted conjectures and rational analytic counting remain outside. | [foundations/formal/finite-etale-keller/README.md](foundations/formal/finite-etale-keller/README.md): Formal boundaries list |
 | HOPF-EVEN-START-FIRST-BAD-MOMENT-BOUND | claim | proved / partial | If an even-start unit phase is nonpure, its first nonzero moment has index ord(T^2-1)<=deg(W^2)+4deg(u). For even a>=2 this is at most(3a+5)(d-a+1) and at most(d+2)^2/4+(d+3)^2/2. At a0 it is at most6d+4. | see incoming proof routes |
 | HOPF-EVEN-START-UNIT-ONE-MARKER-NECESSITY | claim | proved / partial | For every even a>=0, a pure normalized unit-center phase with eventual vanishing against x has a polynomial inversev because Phi1 and every kappa is nonzero. Rational-map degree multiplication forces u=x,v=u and X1, hence(C,D)=(1,-1). Every other pure unit pair has infinitely many nonzero x-marked orders. | see incoming proof routes |
@@ -21255,6 +22540,10 @@ Tracked obligations from the catalogue:
 | IMAGE2-CUBIC-ELEVEN-PARAMETERS | claim | proved / partial | Addingh t³,thefirst10puremomentsforceh=0 andthecompletedisplayedbranches.Stillexcludesyt,yt²; tenparameter sliceretains8momentcertificate. | [foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md): Additionalheight-cubicterm:completeeleven-dimensional slice |
 | UAF-NUMBER-FIELD-INFINITE-NONVANISHING | claim | proved / partial | For P nonconstant and S nonzero over a number field, all sufficiently good rational primes p=1 modL give m=(j+1)(p-1)/L with nonzero Lambda(f^m). Because L>=j+1,m<=p-1, the upper coefficient is a unit and is the only surviving p-denominator residue. No degree-one or splitting-prime condition is required. | [foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md): Section3;equations9--10 and unbounded prime orders |
 | W1-ORDINARY-DISTINCT-TIED-COVERS-HLE5 | claim | proved / partial | After one common finite extension,every distinct-root tied cover H2..5 has density-one ordinary Jacobian reduction. Uses the exact Sawin surface theorem,elliptic squares,and the explicit H4/H5 decompositions. Absolute degree-one primes after adjoining zeta_H are1modH; no Cantoral,Fite or CM-subfield theorem. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Section4;H2--H5 and common ordinary-prime paragraph |
+| CM-NEWTON-HIGHER-TORSION-LINE-LOCAL-FACTORS | claim | proved / partial | For an ordinary group the line algebra is a product of n+s+1 totally ramified fields and for a supersingular group is one totally ramified field. The quadratic determinant cover splits over even-degree ordinary factors and ramifies over the two odd-degree factors. | [foundations/extended-geometry/CM_NEWTON_HIGHER_TORSION_LINE_DISCRIMINANTS.md](foundations/extended-geometry/CM_NEWTON_HIGHER_TORSION_LINE_DISCRIMINANTS.md): Proposition, ordinary line factors |
+| CM-LINKED-RANK-FOUR-EXACT-COMPONENT-POWER | claim | proved / partial | For irreducible rank-four connected coefficient blocks on components keeping the two factors supporting each tensor block in distinct permutation orbits, the exact coefficient-action power preserves connected projective equivalences. A pinned invariant cocharacter gives nonconstant normalized coefficient norms and shifted determinant product. | [foundations/extended-geometry/CM_NEWTON_LINKED_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_LINKED_RANK_FOUR_PFAFFIAN.md): Exact power on the indicated components |
+| CM-MULTIPLICITY-ONE-MIXED-ORBIT-COST | claim | proved / partial | The exact-power inequalities force the reference mu-ordinary polygon on a component if there are B multiplicity-one mixed pairs and every mixed oriented orbit has length at least tB. | [foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md): Several mixed pairs on the same orbit |
+| CM-MULTIPLICITY-ONE-SHARP-INDIVIDUAL-KINK-COST | claim | proved / partial | At a reference kink for local degree f and exact Frobenius power t, the minimal local bound for the extra rounded inequality contribution is ceil((t/q) min(1,d/2)), where q=gcd(f,t) and d is q times the kink size. | [foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md](foundations/extended-geometry/CM_NEWTON_SIMPLE_SIGNATURE_NONABELIAN.md): A local bound at an individual kink |
 | CM-RANK-TWO-INTERSECTING-ACTIONS-CENTER-BLOCKS | claim | proved / partial | On a non-potentially-CM variety with a rank-two CM action, every such field is maximal and contains the geometric endomorphism center. At primes defining all endomorphisms every such field gives the same quadratics over the center and the same relative norms and split slopes. Higher-rank field actions give products of these center-indexed quadratics. | [foundations/extended-geometry/CM_NEWTON_DISCONNECTED_RM_ORDINARITY.md](foundations/extended-geometry/CM_NEWTON_DISCONNECTED_RM_ORDINARITY.md): Intersecting coefficient actions on a fixed variety |
 | CM-SPLIT-NORMALIZER-ORBIT-RANK-BOUNDS | claim | proved / partial | A subgroup of normalizer-induced automorphisms of the CM field gives uniform orbits on conjugate embedding pairs. Compressing the relative norms and the simultaneous rank restraints gives orbit-weighted restrictions, including the rank-two budget for failed balanced orbits. | [foundations/extended-geometry/CM_NEWTON_SELECTED_EIGENLINES.md](foundations/extended-geometry/CM_NEWTON_SELECTED_EIGENLINES.md): Split normalizers and the contribution of an orbit |
 | CM-RANK-TWO-THREE-BALANCED-ENDOMORPHISM-FRONTIER | claim | proved / partial | Outside the CM and projectively linked cases the geometric possibilities are a simple full-CM-endomorphism-field action of size e≥4, the square of a real-cubic RM threefold, or a simple indefinite quaternionic sixfold over a real cubic center, in each case with independent derived rank-two factors. | [../unpublished/cm-newton-polygon-constraints/global.tex](../unpublished/cm-newton-polygon-constraints/global.tex): prop:end-frontier |
@@ -21290,6 +22579,8 @@ Tracked obligations from the catalogue:
 | SNF-V2-WEAK-EIGHTEEN-DIMENSIONAL-RESIDUAL | claim | proved / partial | For Q!=0,v2,least degree5,eventual purity forces Q=B!=0,P supported on j+r<=5,j+2r<=7,and coefficients A=p13,C=p32 both nonzero. Its maximal face is exactly equation4. P has17 allowed monomials,plusB gives dimension18. This weak support/nonzero conclusion does not require exclusion of its repeated quadratic degeneration. | [foundations/extended-geometry/STRIPPED_QUINTIC_NEWTON_FACE_REDUCTION.md](foundations/extended-geometry/STRIPPED_QUINTIC_NEWTON_FACE_REDUCTION.md): Theorem1(b) support part;Sections3,6--7 |
 | SNF-V4-DEGP4-WEAK-FIFTEEN-DIMENSIONAL-RESIDUAL | claim | proved / partial | For v4,degreeP<=4 and a negative-angular term,eventual purity forces P supported on j+r<=4,3j+2r<=9,with A=p13!=0,C=p30!=0 and leadingB=[t²]Q!=0. Its maximal face is Bxt4-(A/2)x^-1t5-(C/8)x^-3t6. There are12 P monomials+3 Q coefficients=15. This support/nonzero assertion is independent of the potential-CM discriminant exclusion. | [foundations/extended-geometry/STRIPPED_QUINTIC_NEWTON_FACE_REDUCTION.md](foundations/extended-geometry/STRIPPED_QUINTIC_NEWTON_FACE_REDUCTION.md): Theorem2 support part;Section9 |
 | IMAGE2-CUBIC-CONSTANT-PROFILE-FRAME | claim | proved / partial | Every pure sphere cubic of actual degree3 has a complex orthogonal null frame with p=a y+G(x,t),degG<=3, including every boundary root/degeneration. Sphere degree<=2 is handled separately. | [foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md): Global contradiction followingC1-C5 |
+| IMAGE2-SPHERE-WEIGHTED-AUTOMATIC-ROOT-BOUND | claim | proved / partial | For a reduced angular weight k/d strictly between zero and two, with k and 2d−k at least two, regularity of the sphere phase forces the required strict root-multiplicity bound for a crossing top face. | [foundations/extended-geometry/SPHERICAL_WEIGHTED_FACE_PROPER_VOLUME_OBSTRUCTION.md](foundations/extended-geometry/SPHERICAL_WEIGHTED_FACE_PROPER_VOLUME_OBSTRUCTION.md): Automatic multiplicity bounds for crossing faces |
+| IMAGE2-SPHERE-WEIGHTED-AXIAL-AND-ONE-SIDED | claim | proved / partial | For full angular support of both signs, the weighted proper-volume test admits axial or one-sided top support under the endpoint inequality n−max(r−C,0)(n−w_C)>r in each direction of positive loss. | [foundations/extended-geometry/SPHERICAL_WEIGHTED_FACE_PROPER_VOLUME_OBSTRUCTION.md](foundations/extended-geometry/SPHERICAL_WEIGHTED_FACE_PROPER_VOLUME_OBSTRUCTION.md): Axial and one-sided initial faces |
 | UAF-ARBITRARY-FIELD-INFINITE-NONVANISHING | claim | proved / partial | For every characteristic-zero K, P nonconstant and S nonzero imply infinitely many nonzero Lambda((P(y)+xS(t))^m). One maximal-ideal specialization of the finite Q-coefficient algebra with both leading coefficients inverted preserves j,v and transfers the number-field infinite detections. It is not an order-dependent specialization or a direct residue-field statement over arbitrary K. | [foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md): Section4;first paragraph |
 | W1-NUMBER-FIELD-MIXED-EXCLUSION-DEGREE5 | claim | proved / partial | For degU<=5,degS/R<=4 with R,S nonzero,every non-tied branch and every tie H>=2 has infinitely nonzero moments. Uses exact weighted residue,ordinary covers only H<=5,and the separate repeated-root argument; no H6 result is a premise. The affineH1 tie is reserved for the linear norm argument. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Sections2--4 restricted to degree<=5 |
 | W1-ORDINARY-DISTINCT-TIED-COVERS-HLE6 | claim | proved / partial | The preceding H<=5 result and H6 idempotent decomposition give density-one ordinary reduction for every distinct tied cover H2..6 after finite extension. This is a theorem about the specified four-point covers only. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Section4;H6 and final common-extension paragraph |
@@ -21300,6 +22591,7 @@ Tracked obligations from the catalogue:
 | CM-SPLIT-CUBIC-EIGENVALUE-LAURENT-OBSTRUCTION | claim | proved / partial | For one-failed-pair real-cubic prime-field models at fixed auxiliary torsion level, a nonconstant Laurent polynomial in √p and the three individually labelled normalized eigenvalues has unbounded archimedean values or negative valuation over arbitrarily large p. | [foundations/extended-geometry/CM_NEWTON_EIGENVALUE_LAURENT_OBSTRUCTION.md](foundations/extended-geometry/CM_NEWTON_EIGENVALUE_LAURENT_OBSTRUCTION.md): Proposition and the three valuation orders |
 | CM-THREE-BALANCED-NONSPLIT-POSITIVE-DENSITY | claim | proved / partial | Over a field of definition of a non-potential-CM rank-two action with three balanced pairs, if one element of the coefficient-field Galois group acts as a three-cycle on those pairs, the ordinary primes contain a positive natural density set. | [foundations/extended-geometry/CM_NEWTON_THREE_BALANCED_GLOBAL.md](foundations/extended-geometry/CM_NEWTON_THREE_BALANCED_GLOBAL.md): Proposition 3, nonsplit coefficient places |
 | CM-SPLIT-SCALED-SEXTIC-FACES | claim | proved / partial | For all L≥1, a highest weight 4L face t^(4L) z^(−2L)P(z)^L with P squarefree quartic and nonzero constant forces a nonzero moment under arbitrary strictly lower weight terms, with least degree 6L under the normal degree bound. | [../unpublished/cm-newton-polygon-constraints/moments.tex](../unpublished/cm-newton-polygon-constraints/moments.tex): prop:scaled |
+| CM-LINKED-RANK-FOUR-TENSOR-MIDPOINT-OBSTRUCTION | claim | proved / partial | If the component permutation joins both factors of a tensor-standard block in a single orbit, the middle slopes of the coefficient-action power coincide. A positive reference midpoint kink forces μ-nonordinarity. The existence of a disconnected arithmetic tensor-swap component of the stated type remains unestablished. | [foundations/extended-geometry/CM_NEWTON_LINKED_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_LINKED_RANK_FOUR_PFAFFIAN.md): A tensor obstruction on the other components |
 | CM-SPLIT-PROJECTIVE-SPECTRUM-ORIENTED-LINKAGE | claim | proved / partial | Two oriented projectively equivalent components become linearly equivalent precisely when their Galois-translated Hodge multiplicity profiles agree. | [foundations/extended-geometry/CM_NEWTON_PROJECTIVE_SPECTRUM_FIELDS.md](foundations/extended-geometry/CM_NEWTON_PROJECTIVE_SPECTRUM_FIELDS.md): Proposition, determinant and scalar comparison |
 | HOPF-ODD-START-REGULAR-PURITY-RECOGNITION | claim | proved / partial | For odd a>=1 normalize a nonzero center by C0 and apply the marked-gcd iff. At a zero center purity iff x^2 divides C,D. Thus membership is recognized over every effective characteristic-zero field. Explicit geometric enumeration of odd nonconstant-Phi families remains open. | see incoming proof routes |
 | HOPF-ODD-START-RESIDUAL-RESULTANT-ORDER-BOUND | claim | proved / partial | If nonpure, G00 is nonzero. Exact polynomial residuals P1=P/G,Q1=Q/G are coprime over K(x) and G(x,j) is a formal unit. A polynomial Sylvester Bezout identity gives ord Q(x,j)<=deg Res_Y(P1,Q1)<=(n-1)(n+4h),n=deg f>=2,h=deg H>=1. Both polynomials are stripped; unrelated off-base common factors are not left in a zero resultant. | see incoming proof routes |
@@ -21338,7 +22630,9 @@ Tracked obligations from the catalogue:
 | UAF-EVENTUAL-PURITY-IMPLIES-COEFFICIENT-CRITERION | claim | proved / partial | For any P,S over every characteristic-zero field, IF P(y)+xS(t) is eventually pure, THEN P(0)=0 and either P=0 or S=0. Infinite mixed-branch nonvanishing excludes both directions, and exact constant moments exclude nonzero constants. This is an implication theorem, not a seeded assertion of eventual purity for a given phase. | [foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md): Section4;combination of mixed exclusion and constant branches |
 | W1-DEGREE5-PURE-EVENTUAL-ALLOWED-LOCUS-IFF | claim | proved / partial | The same pure/eventual/allowed-locus iff restricted to degU<=5,degS/R<=4 follows from the complete H<=5 proof,interval branches and ONE specialization. It remains independent of the H6 decomposition,although also follows by restricting the degree6 theorem. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Sections2--5 restricted to degree5;Section6 application |
 | W1-NUMBER-FIELD-MIXED-EXCLUSION-DEGREE6 | claim | proved / partial | For degU<=6,degS/R<=5 with R,S nonzero,every non-tied branch and every tie H>=2 has infinitely nonzero moments by its exact weighted residue. Only the affineH1 tie remains. This covers every actual branch and not just generic leading coefficients. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Sections2--4 |
+| CM-RANK-FOUR-PFAFFIAN-REAL-PEL-EXAMPLES | claim | proved / partial | For any CM coefficient field there is an absolutely simple real number-field example with full geometric endomorphism algebra and balanced rank-four signature at one pair, with full projective blocks and a quadratic endomorphism field. | [foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md](foundations/extended-geometry/CM_NEWTON_RANK_FOUR_PFAFFIAN.md): Ordinary density and imaginary quadratic coefficients, real PEL construction |
 | CM-RM-SPLIT-SMALL-DISCRIMINANT-COFACTOR-GRH | claim | conditional / partial | Under GRH, the number of identity-class one-failed-pair primes of norm at most X with squarefree cofactor at most p^δ is O(X^(1−θ+δ)) for 0<δ<θ<1/38. The exponent does not cover every a priori possible cofactor. | [foundations/extended-geometry/CM_NEWTON_FROBENIUS_DISCRIMINANT_SIEVE.md](foundations/extended-geometry/CM_NEWTON_FROBENIUS_DISCRIMINANT_SIEVE.md): Theorem and the two-auxiliary-prime square sieve |
+| CM-CYCLIC-NORMALIZER-BRANCH-LABEL-SEARCH | claim | proved / partial | At fixed conductor n, enumerate exponents on the two fixed points and full orbits of a nontrivial Möbius rotation, with compatible deck multiplier, total 2n and connectedness. For the orbit of the character-one line, compare the minimum simultaneous Newton excess of the linked nonordinary pairs with the strict split bound. Failure excludes vanishing of the selected scalar. Passing establishes numerical compatibility of these constraints. | see incoming proof routes |
 | HOPF-ODD-START-EXPLICIT-FIRST-BAD-MOMENT | claim | proved / partial | For every nonpure normalized odd-start unit phase, its first nonzero even moment has index2<=m<=(n-1)(n+4h)-4. The factor B Nx^2 Nj^2 has exact order4 and the marked branch has Q-order m+4. This bound requires no rational selected X or u. | see incoming proof routes |
 | HOPF-ODD-START-FINITE-PREFIX-IFF | claim | proved / partial | Within the same odd unit-center domain, all-order purity iff the even moments through (n-1)(n+4h)-4 vanish. Odd moments vanish by height parity. This is equivalent by contraposition and well-ordering to the stated first-bad bound, not an empirical prefix claim. | see incoming proof routes |
 | HOPF-CONSTANT-ENDPOINT-TREES | claim | proved / partial | Over algebraically closed characteristiczero, source-scaling classes correspond bijectively to oriented weighted bicolored plane trees with r edges, marked black leaf of weight1, other black weighted degrees<=a and arbitrary white weighted degrees. Nonclosed fields require marked Galois descent. | see incoming proof routes |
@@ -21363,9 +22657,16 @@ Tracked obligations from the catalogue:
 | IMAGE2-CUBIC-SPHERE-SHARP-MIXED | claim | proved / partial | For every pure complex sphere phase p of degree<=3 and multiplier g of degree<=D,L(g*p^m)=0 for m>3D. For every integer D>=1,L(y^D*(y+xt-x^3/2)^(3D))=(-1)^D*2^(2D)*((3D)!)^2/(6D+1)!, a nonzero value. Orthogonal changes preserve L and degree. | [foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md): Complete classification conclusion lines519-526;Safe mixed cubics,equations(8)-(10) |
 | UAF-PURE-EVENTUAL-COEFFICIENT-IFF | claim | proved / partial | Over every characteristic-zero K and for every actual pair P,S, purity iff eventual purity iff P(0)=0 and(P=0 or S=0). Both implications are theorem statements; no actual phase predicate is seeded in the graph. Marker-safety facts are not premises of this three-way classification. | [foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md): Section1 Theorem conditions1,2,4;Section4 |
 | W1-EVENTUAL-PURITY-IMPLIES-ALLOWED-LOCUS | claim | proved / partial | For every char0K in the degree<=6 winding-one class,eventual purity implies U=0 and one angular side absent OR f=ay+bt+cx with b^2+2ac=0. The mixed exclusions,interval branches and isotropic constants are exhaustive,then ONE specialization applies. This is an implication theorem,not an actual-purity seed. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Theorem1 necessary direction;Sections2--5 |
+| CM-RM-PROJECTIVE-CONSTITUENT-ISOGENY-FACTOR | claim | proved / partial | Sharing a relative two-dimensional constituent up to projective isomorphism over a finite extension forces the exact real multiplication variety as a potential isogeny factor. | [foundations/extended-geometry/CM_NEWTON_TORIC_TENSOR_REALIZATIONS.md](foundations/extended-geometry/CM_NEWTON_TORIC_TENSOR_REALIZATIONS.md): Corollary |
 | CM-SEMILINEAR-SINGLE-BALANCED-MU-ORDINARY | claim | proved / partial | For a non-potentially-CM abelian variety in relative rank two with a Rosati-compatible CM action preserved by Galois, one balanced pair gives density-one mu-ordinary reduction relative to the geometric coefficient action over the original field. Full geometric endomorphism algebra and prior definition of the action are unnecessary. | [foundations/extended-geometry/CM_NEWTON_SEMILINEAR_PROJECTIVE_BOUNDS.md](foundations/extended-geometry/CM_NEWTON_SEMILINEAR_PROJECTIVE_BOUNDS.md): Single balanced pair corollary of the averaged cost bound |
 | CM-RM-SPLIT-SHORT-RETURN-SPARSITY | claim | proved / partial | For a fixed exact real-cubic RM threefold, the split one-failure primes admitting a return isogeny of degree at most (log p)^δ for δ<1/18 have relative density zero, also on a maximal-order representative. | [foundations/extended-geometry/CM_NEWTON_SPLIT_ISOGENY_RETURNS.md](foundations/extended-geometry/CM_NEWTON_SPLIT_ISOGENY_RETURNS.md): Corollary, unconditional logarithmic range |
 | CM-RM-SPLIT-SHORT-RETURN-SPARSITY-GRH | claim | conditional / partial | Under GRH for the relevant torsion-field composita and subfields, the split one-failure primes of a fixed exact real-cubic RM threefold admitting a return of degree at most p^δ for δ<1/38 have relative density zero. | [foundations/extended-geometry/CM_NEWTON_SPLIT_ISOGENY_RETURNS.md](foundations/extended-geometry/CM_NEWTON_SPLIT_ISOGENY_RETURNS.md): Corollary, conditional power range |
+| CM-RM-SPLIT-LOCAL-CANDIDATES-NONTHIN | claim | proved / partial | In the real-cubic case the locally realizable one-failure trace tuples and their two cofactor images are not contained in any fixed thin set. This is an obstruction to closing the fixed-variety density question by thin avoidance alone. | [foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md](foundations/extended-geometry/CM_NEWTON_SPLIT_THIN_TRACE_EXCLUSIONS.md): Scope |
+| CM-RM-SPLIT-RESIDUE-RATIO-FIBER-BOUND | claim | proved / partial | In a normalized trace cube of side w with prescribed failed split coefficient prime and trace class mod M, any Z ordinary residue ratios account for O_F(Z+(wp^(1/6)/M)Z^(2/3)) traces. Two independent vectors with the same ratio force their primitive plane normal into the fixed codifferent. | [foundations/extended-geometry/CM_NEWTON_SPLIT_LARGE_ORDER_REALIZABILITY.md](foundations/extended-geometry/CM_NEWTON_SPLIT_LARGE_ORDER_REALIZABILITY.md): The ratio and planes in the trace lattice |
+| CM-SPLIT-CUBIC-BOUNDED-RATIONAL-TRACE-OBSTRUCTION | claim | proved / partial | For any real cubic coefficient field and a fixed auxiliary torsion level, only constants are uniformly Archimedean bounded and integral outside a fixed finite set on all sufficiently large minimal split one-failure models. The statement permits labelled trace coordinates over a fixed number field and restricts the residue primes to split there. | [foundations/extended-geometry/CM_NEWTON_SPLIT_POLYNOMIAL_OBSTRUCTION.md](foundations/extended-geometry/CM_NEWTON_SPLIT_POLYNOMIAL_OBSTRUCTION.md): Rational functions of the trace and determinant |
+| CM-CYCLIC-NORMALIZER-BALANCED-IMAGE-EXCLUSION | claim | proved / partial | For every phase covered by the linked-normalizer infinite-moment theorem, each balanced Hopf homogenization of bidegree (D,D), D at least its least sphere degree, lies outside the radical of the original two-pair Image space. The exact pure-power contraction is (mD+1)! times the corresponding sphere moment. | see incoming proof routes |
+| CM-NEWTON-TENSOR-CORESTRICTION-ORDINARY-DENSITY | claim | proved / partial | If F≠Q, the ordinary density is the reciprocal of the degree of the compositum of the coefficient action field and Kτ(R), for arbitrary coefficient action. For F=Q it equals the μ-ordinary density. The existence of a fixed exchanging rank-four arithmetic example remains open. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_LABEL_FIELD.md): Ordinary density |
+| CM-NEWTON-A1-FLAT-PROJECTIVE-DENSITY-ZERO | claim | proved / partial | For the stated single-mixed-pair A1 tensor system, full projective flatness makes the powered Frobenius adjoint trace belong to a fixed finite set. Nonconstancy on every connected monodromy component gives natural density zero. | [foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md](foundations/extended-geometry/CM_NEWTON_TENSOR_ADJOINT_CRYSTALLINE.md): The first pattern has density zero |
 | HOPF-ODD-START-COEFFICIENT-DEGREE-PURITY-BOUND | claim | proved / partial | For odd a and a unit phase of least degree<=d, let L=d-a+1. The exact formula H=-2 C^((a+5)/2)/(x(-D)^((a-1)/2)E),E=2CD+axCDprime-(a+2)xCprimeD, gives n<=(a+2)L,h<=(a+5)L/2. A nonpure input has first bad even order<=3(a+4)L((a+2)L-1)-4. | see incoming proof routes |
 | HOPF-CONSTANT-ENDPOINT-GENERATING-SERIES | claim | proved / partial | Root at the marked leaf white neighbor. A branch with k white children has binom(a,k+1) positive weight assignments. Ordered white branches give T=(1+zT)^a, and F=zT=z(1+F)^a counts full trees by unweighted edge number. | see incoming proof routes |
 | HOPF-CONSTANT-ENDPOINT-K-DESCENT-NECESSARY | claim | proved / partial | For every characteristic-zero K, a K-model gives a marked geometric class fixed by Gal(Kbar/K). Invariance of an underlying unmarked class alone is insufficient. | see incoming proof routes |
@@ -21382,9 +22683,11 @@ Tracked obligations from the catalogue:
 | EPF-CONDITIONAL-EXACT-FINITE-PURE-PARAMETER-SET | claim | proved / partial | CONDITIONAL on a finite pure parameter-image promise for r1: complete-prefix contraction nonzero; its monic squarefree generator has EXACT geometric pure parameter roots; generator1 is empty. No numerical output computed. | [foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md): Section5;Theorem4 |
 | EPF-EVEN-BD-EXACT-PURE-PARAMETER-CLOSURE | claim | proved / partial | For PFP exactfull-evenBDnonzerochart normalizedB=D1, compute nonzero elimination ideal in Q[alpha,beta] defining EXACTZariski closure ofPUREimage. Mayemptyorfinite. No equality of image/closure or realizability assertion. | [foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md](foundations/extended-geometry/EFFECTIVE_PRIME_FACE_PURE_PARAMETER_ELIMINATION.md): Section6;evenBDparagraph |
 | PFP-SERRE-ASSUMPTION-IMPLIES-NO-RESIDUAL-PHASE | claim | proved / partial | ONLY the implication: IF every abelian variety has positive-density ordinary primes(Serreconjecture),THEN no eventual residual phase exists. The conjecture is NOT a provedleaf and this does not closeglobal5. No ordinaryfailure-impliespurity converse. | [foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md](foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md): Section6,conjecturalcontext |
+| IMAGE2-SPHERE-PUISEUX-MAXIMAL-MULTIPLICITY-EXAMPLES | claim | proved / partial | For every n≥2 explicit regular integer phases with leading angular multiplicity 2n meet the Puiseux volume test and are absolutely nonpower. The one-sided family x^L t^(n−L)+y^B t^(n−B−1) gives nonvanishing with a left endpoint loss reaching 2n−1. | [foundations/extended-geometry/SPHERICAL_WEIGHTED_PUISEUX_VOLUME.md](foundations/extended-geometry/SPHERICAL_WEIGHTED_PUISEUX_VOLUME.md): Regular phases with an angular root of multiplicity 2n and Angular endpoints |
 | HOPF-ONE-POLE-EXACT-DEGREES-AND-PRIME-SPECTRUM | claim | proved / partial | The constant safe branch has least degree2. The inversion branch has degree5N+3; the fixed-zero branch degree3N+3. Every nonconstant branch has an R-primitive original lift and exact T multiplicity1, hence is not a scalar proper power. Within this class, odd prime unsafe degrees are exactly primes3mod10 greater than3; the least odd unsafe degree is9 and least prime unsafe degree13. Arbitrary Image witnesses are not classified. | see incoming proof routes |
 | UAF-FOUR-WAY-CLASSIFICATION | claim | proved / partial | For every characteristic-zero K and f=P(y)+xS(t), purity, eventual purity, safety for EVERY fixed marker in the full ambient sphere algebra, and P(0)=0 with(P=0 or S=0) are equivalent. These phase classes are not claimed to be algebras. | [foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/UNIVARIATE_ANGULAR_FACE_PURITY_CLASSIFICATION.md): Section1 Theorem;Section4 complete implication assembly |
 | W1-PURE-EVENTUAL-ALLOWED-LOCUS-IFF | claim | proved / partial | For every char0K and every degree<=6 winding-one phase,purity iff eventual purity iff the stated allowed coefficient locus. The direct proof does not require the all-marker isometry transfer. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Theorem1 pure,eventual and locus directions;Sections2--5 |
+| CM-NEWTON-DYADIC-NORMALIZED-KUMMER-RANK | claim | proved / partial | For a collection of isolated one-failure residue characteristics, the augmented compositum is the compositum of the full Frobenius fields and the fields generated by square roots of the negative discriminant cofactors. The two composita are linearly disjoint over L. The cofactor compositum is the maximal subextension unramified at the selected characteristics. | [foundations/extended-geometry/CM_NEWTON_DYADIC_FROBENIUS_FIELD_ISOLATION.md](foundations/extended-geometry/CM_NEWTON_DYADIC_FROBENIUS_FIELD_ISOLATION.md): Proposition, Exact Kummer rank for isolated characteristics |
 | HOPF-TWO-HEIGHT-UNIFORM-FIRST-BAD-ORDER | claim | proved / partial | For every integer d>=1, every characteristic-zero field and every integer a>=0, a nonpure regular exact two-height phase of least sphere degree<=d has a nonzero moment of order1<=m<=B_d=3 floor((d+5)^2/4)(floor((d+3)^2/4)-1)-4. This is O(d^4), independent of a and coefficient values, within this exact class. | see incoming proof routes |
 | HOPF-TWO-HEIGHT-UNIFORM-PREFIX-IFF | claim | proved / partial | For every integer starting height a>=0, characteristic-zero field and regular exact two-height phase of least sphere degree<=d>=1, all-order purity iff moments1 through B_d vanish. This criterion is logically equivalent to the first-bad-order bound by contraposition and well-ordering. The ideal and delayed-nonpurity corollaries are registered separately. | see incoming proof routes |
 | HOPF-CONSTANT-ENDPOINT-FUSS-CATALAN | claim | proved / partial | For a>=1,r>=1 the number of normalized nontrivial Phi1 classes modulo x->sx over an algebraically closed characteristic-zero field is1/r*binom(ar,r-1)=binom(ar,r)/((a-1)r+1). At a2 these are Catalan numbers; at a1 all1; a0 has only r1. Oriented conjugate classes remain distinct. | see incoming proof routes |
@@ -21413,6 +22716,7 @@ Tracked obligations from the catalogue:
 | IMAGE2-ANGULAR-ALL-ORDER | claim | proved / partial | For every characteristic-zero field and integer m>=1, the displayed bidegree-(4,4) quartic F and marker Z satisfy E2(F^m)=0 and E2(ZF^m)=(4m+2)! m!/(2m+1)!!, a nonzero rational scalar. The angular and direct coefficient derivations agree. | [foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md](foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md): Theorem1.1;Sections3-4 |
 | HOPF-ODD-CUBIC-TWO-ROOT-CENTER-EXCLUSION | claim | proved / partial | For every characteristic-zero field and regular unit-center odd-cubic phase, C with exactly two distinct geometric roots is impossible under purity, regardless multiplicities. Its two nonzero opposite residues give one logarithm of a Mobius ratio; exact/log invariance forces the two inverse branches equal, contradicting their u and -u values. This statement concerns starting height1. | see incoming proof routes |
 | W1-STRIPPED-QUINTIC-IFF-AND-CUTOFF | claim | proved / partial | In the specified14-dimensional stripped degree<=5 slice (even8),purity,eventual purity and full-A safety hold exactly when U=0 and(R=0 or Q=0);all allowed phases satisfy m>deg(marker). Nonlinear y winding,fullS24/even14 and global primitive quintic existence remain outside this result. | [foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md](foundations/extended-geometry/WINDING_ONE_LOW_DEGREE_PURITY_CLASSIFICATION.md): Section6;equations13--14 |
+| CM-NEWTON-DYADIC-NORMALIZED-FIELD-INDEPENDENCE-GRH | claim | conditional / partial | Assuming the specified GRH and a fixed positive proportion of split one-failure places in a dyadic interval, at least order (log X)^α augmented fields are jointly linearly disjoint over L for every 1<α<76/75. | [foundations/extended-geometry/CM_NEWTON_DYADIC_FROBENIUS_FIELD_ISOLATION.md](foundations/extended-geometry/CM_NEWTON_DYADIC_FROBENIUS_FIELD_ISOLATION.md): Theorem, GRH refinement and bound on the height of pivot products |
 | HOPF-ODD-CUBIC-POLYNOMIAL-DESCENT-DEGREE-ROOT-IDENTITIES | claim | proved / partial | For nonconstant pure phases and their canonical quotient, c=g(cbar-1)+1,e=g(ebar-1)+1,H=g(Hbar-1)+1; hence g divides c-1,e-1,H-1 and(c-e)/2. If C dominates, exact sphere degree d=g(dbar-1)+1; if D dominates, d=g(dbar-3)+3. These are necessary identities, not arbitrary-cover existence criteria. | see incoming proof routes |
 | HOPF-ODD-CUBIC-PURE-CLASS-QUOTIENT-REDUCTION | claim | proved / partial | Every normalized pure unit-center odd-cubic phase is an admissible normalized polynomial pullback of a pure quotient with full stable fieldK(z) and genuine rational return. Conversely every such admissible pure-quotient representation is pure. The original class is thereby reduced to the rational-return quotient classification AND admissible polynomial covers; neither remaining classification is declared solved. | see incoming proof routes |
 | HOPF-ALL-HEIGHT-PULLBACK-PURITY-ASCENT | claim | proved / partial | Under the fixed-height normalized polynomial admissibility hypotheses, ALL target positive pure moments0 imply ALL source positive pure moments0, by exact equality with marker1. | see incoming proof routes |
@@ -21428,6 +22732,9 @@ Tracked obligations from the catalogue:
 | HOPF-ODD-CUBIC-UNIT-ELEVEN-PURITY-EXCLUSION | claim | proved / partial | Over every characteristic-zero field, the c/e possibilities for exact least degree11 are all excluded by the full stable-field ramification/value filters, rational-reflection capacity, or maximal disjoint simple-root capacity. There is no unit-center pure phase of exact degree11; the zero-center branch is instead pure and safe when its retained divisibility condition holds. | see incoming proof routes |
 | HOPF-ODD-CUBIC-UNIT-SEPTIC-PURITY-EXCLUSION | claim | proved / partial | For normalized unit-center odd-cubic phases, rationality gives c=degC,e=degD of the same parity and least degree max(c,e+2). At degree7 the complete c/e/h cases are excluded by one-pole/two-root/squarefree results or map-degree bounds. The last c7,e5,h3 case forces disjoint primitive poles of totaldegree4, but only at most two simple C-roots can support the conjugate primitive, each with pole order<=1. Contradiction. | see incoming proof routes |
 | CM-SPHERE-FULL-WIDTH-UPPER-HALF-SECONDARY-POLE | claim | proved / partial | At n=18, s=13, p=43, an explicit full-width phase has coherent inputs (0,5) modulo 43 but both tested normalized residues zero. The gap-p contribution from odd lower terms cancels the nonzero input in the second residue. This is a limitation of the chosen moment certificate. | [foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md](foundations/extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md): Exact upper-half obstruction, finite residue replay; [foundations/extended-geometry/verify_cm_newton_full_width_strip_moments.py](foundations/extended-geometry/verify_cm_newton_full_width_strip_moments.py): Exact replay dependency; [foundations/extended-geometry/verify_cm_newton_two_input_strip_moments.py](foundations/extended-geometry/verify_cm_newton_two_input_strip_moments.py): Exact replay dependency |
+| IMAGE2-SPHERE-CRITICAL-ROOT-DIVERGENT-VOLUME-EXAMPLES | claim | proved / partial | The explicit phases realizing the critical face are regular on the sphere and have infinite squared volume on a bounded phase region. The face also proves absolute nonpower under either stated condition on its angular orders. | [foundations/extended-geometry/SPHERICAL_CRITICAL_FACE_P_POWER_MOMENTS.md](foundations/extended-geometry/SPHERICAL_CRITICAL_FACE_P_POWER_MOMENTS.md): Regular phases and divergent bounded-phase volume |
+| IMAGE2-SPHERE-CRITICAL-ROOT-UNIFORM-THREE-POWER-DENSITY | claim | proved / partial | For d=1 or 2 and n=3^h with the displayed bounds, prime classes of natural density one third certify infinitely many orders at each good prime. The linear-U three-branch variant has supersingular normalized auxiliary Jacobian on that same set. | [foundations/extended-geometry/SPHERICAL_CRITICAL_FACE_P_POWER_MOMENTS.md](foundations/extended-geometry/SPHERICAL_CRITICAL_FACE_P_POWER_MOMENTS.md): Uniform density and a supersingular quotient |
+| IMAGE2-SPHERE-SUPERCRITICAL-ROOT-ZERO-TOP-RESIDUE | claim | proved / partial | When the critical multiplicity increases by ℓ>0 and deg U+ℓ≤B, the isolated top-pole residue at the same orders is zero, by the degree bound on the post-Frobenius polynomial. | [foundations/extended-geometry/SPHERICAL_CRITICAL_FACE_P_POWER_MOMENTS.md](foundations/extended-geometry/SPHERICAL_CRITICAL_FACE_P_POWER_MOMENTS.md): Exact replay and a limitation of the top pole |
 | CM-SPHERE-TWO-ORDER-FIVE-DIRECT-STRIPS | claim | proved / partial | At p≡2 modulo 5 on the mu-ordinary set for the specified genus-four cover, at least one of two fixed order-five leading faces certifies a nonzero moment of order (3p−1)/5 for all compatible lower terms in its strip. Two source classes span by a Serre pairing determinant of absolute value 486. | [foundations/extended-geometry/CM_NEWTON_DIRECT_STRIP_MOMENTS.md](foundations/extended-geometry/CM_NEWTON_DIRECT_STRIP_MOMENTS.md): A complementary pair of order-five faces; [foundations/extended-geometry/verify_cm_newton_direct_strip_moments.py](foundations/extended-geometry/verify_cm_newton_direct_strip_moments.py): Exact replay dependency |
 | HOPF-ODD-CUBIC-HYPERBOLIC-CANONICAL-QUOTIENT-EXAMPLES | claim | proved / partial | For the retained hyperbolic/Q-deformed odd-cubic examples, w_N=((1+lambda x)^N-1)/(Nlambda), E=K((1+lambda x)^N), g=N and quotient parameterlambda_bar=Nlambda,Nbar1. Existing F13 is a degree2 pullback of degree8, and F37 a degree2 pullback of degree20. This is a structural explanation of existing witnesses, not new constructions. | see incoming proof routes |
 | HOPF-ODD-CUBIC-ODD-LOW-DEGREE-SAFETY | claim | proved / partial | Over every characteristic-zero field, all regular winding-one odd-cubic phases p=t*x^-1(C+t^2D) of odd least degree<=7 are eventually safe for every fixed sphere and original polynomial marker. Zero-center phases are safe in all degrees; there are no unit-center pure phases of exact degree7. Unsafe even degree6 is not excluded. | see incoming proof routes |
@@ -21439,6 +22746,7 @@ Tracked obligations from the catalogue:
 | IMAGE2-PRIMITIVE-DEGREE-SPECTRUM-AWAY-FROM-FIVE | claim | proved / partial | Over every characteristic-zero field, there are no primitive balanced two-pair Image failures through degree three, and there are primitive absolute-nonpower failures in degree four and every degree at least six with one common linear marker. | [foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md](foundations/extended-geometry/HOPF_DIRICHLET_LAW_AND_QUINTIC_SUBALGEBRA_OBSTRUCTION.md): Section 5, lower-degree exclusions and the joint Hopf construction in degree four and all degrees at least six |
 | HOPF-ODD-CUBIC-PRIMES-BELOW-THIRTEEN-SAFETY | claim | proved / partial | Among all regular winding-one odd-cubic phases over every characteristic-zero field, purity at prime least degree2,3,5,7 or11 implies eventual vanishing against every fixed sphere and original marker. Existing all-degree zero-center safety and the retained lower classifications are included. This is not a theorem about arbitrary Image polynomials. | see incoming proof routes |
 | HOPF-ODD-CUBIC-SHARP-PRIME-THRESHOLD-THIRTEEN | claim | proved / partial | The least PRIME sphere/balanced degree supporting purity without eventual all-marker safety is exactly13 in the entire regular winding-one odd-cubic class t(C+t^2D)/x. The lower bound uses prime2,3,5,7,11 safety; the upper bound is the ALREADY RETAINED primitive nonpower F13. Unsafe composite9 and even6 remain valid. No global minimum for arbitrary Image phases is asserted. | see incoming proof routes |
+| IMAGE2-SPHERE-SUPERCRITICAL-LOWER-SHEAR-POLE | claim | proved / partial | An explicit regular phase bilateral after subtraction of its leading centre and with divergent volume has zero leading residue, while a refined polynomial shear gives its exact moments and a nonzero lower-family prime-power pole. | [foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_FACE_SHEAR.md](foundations/extended-geometry/SPHERICAL_SUPERCRITICAL_FACE_SHEAR.md): A second pole after a lower change of centre |
 | HOPF-ODD-CUBIC-EQUAL-SEVEN-COEFFICIENT-PURITY-EXCLUSION | claim | proved / partial | For starting height1, no normalized pure unit-center phase has degC=degD=7. Canonical polynomial descent gives equal quotient degree in{7,4,3,2}; degree2 is excluded by low-degree classification. Otherwise genuine return fixes infinity, paired roots H>=4 and degu>=c force c>=3H>=12, a contradiction. | see incoming proof routes |
 | HOPF-ODD-CUBIC-RATIONAL-RETURN-INFINITY-LEMMAS | claim | proved / partial | For nonconstant pure odd-cubic quotients with genuine Mobius return, a pole of ubar of orderr at infinity moves infinity to a Cbar-root of multiplicityr+1. If cbar>=3 and ubar has an infinity zero of orders>=2, the return must fix infinity because otherwise the reciprocal-polynomial differential would have a finite zero. A moving zero has order1. Fixed infinity gives reflection, paired roots Hbar even>=4, and 5ebar>=3cbar+6Hbar. These arguments take place only on the proved rational quotient. | see incoming proof routes |
 | HOPF-HIGHER-START-NONPOLYNOMIAL-STABLE-FIELD-EXAMPLE | claim | proved / partial | For the explicit two-root Phi1 family, K(u,R,T)=K(u), deg u3 and infinity ramification2 with a second finite point in the u∞ fiber. Hence no polynomial in K[x] generates this stable field. The selected formal return is also not rational: it would fix the unique pole and two zeros with different multiplicities. This does not contradict the starting-height1 polynomial-quotient theorem. | see incoming proof routes |
@@ -21472,7 +22780,7 @@ Tracked obligations from the catalogue:
 - **GAP-HOPF-ODD-CUBIC-MULTIROOT-CENTERS** (mathematical; open): Classify the remaining unit-center odd-cubic phases with at least THREE geometric C-roots and repeated factors. One-pole, two-root and squarefree cases are already settled; prime-degree11 is now impossible at a unit center. In the entire winding-one odd-cubic class the sharp least odd unsafe degree is9 and sharp least PRIME unsafe degree13. Pure phases of exact least degree 17 or 19 are safe in this class, and their pure unit-center cases are excluded. The open classification concerns this coordinate class and its admissible covers. The next individual odd-cubic prime questions include 29 and 31, with a witness already retained at 23. General higher-degree mixed centers and arbitrary wider height profiles remain unclassified. Canonical polynomial descent now reduces EVERY such pure phase over K itself to a pure rational-return quotient with full stable field and an admissible normalized polynomial cover; both purity directions and all composed x-marker moments are exact. The quotient and admissibility classifications remain open. Exact individual purity recognition and degree-bounded finite moment tests are now supplied by the marked-gcd and uniform-prefix theorems; the remaining obligation is geometric classification of quotients and admissible covers, not an unrestricted membership decision.
 - **GAP-HOPF-ODD-START-UNIT-CENTER-CLASSIFICATION** (mathematical; open): Classify nonconstant-Phi ALL-PURE unit-center two-height phases at ODD heightsa>=1, across varying normalized endpoint coordinates u. Phi1 is now completely classified at EVERY integer height by marked Davenport-Zannier pairs; this gives COMPLETE even-start purity, exact unsafe spectra and finite Fuss-Catalan geometric classes with exact marked Galois descent. All-height safety and sharp degree2a+4 minimum were already settled. Exact individual purity recognition is now solved by the marked primitive-gcd criterion, and the entire degree-bounded two-height class has the explicit universal prefix B_d=3 floor((d+5)^2/4)(floor((d+3)^2/4)-1)-4. The open problem is explicit geometric classification of the nonconstant-Phi odd-start solution families, not deciding membership. Wider height profiles remain outside these theorems. Universal cubic polynomial lowering at higher odd starts is explicitly false. All odd-start pure unit phases now have an exhaustive UNIQUE primitive rational composition normal form. Remaining explicit geometric classification means solving its two polynomial divisibilities and classifying canonical triples; polynomial source or outer assumptions cannot be imposed universally. For each supplied u, the entire odd-height fibre family is already classified, including exact stable transport and a terminating atlas over presented number fields. The cyclotomic criterion also classifies the endpoints with infinite fibres at a fixed odd height.
 - **GAP-IMAGE2-HOPF-PRIMITIVE-QUINTIC-TRACE** (mathematical; falsified): Existence, over a characteristic-zero field, of a pure phase of least degree five on the Hopf quadric with one fixed sphere marker nonzero at infinitely many orders.
-- **GAP-CM-THREE-BALANCED-PAIR-DENSITY** (mathematical; open): Determine whether one failed pair occurs with density zero for a fixed variety with three independent balanced projective factors, in particular on the real-cubic split identity class. Cofactor bounds and short returns restrict low-growth subloci. The varying quadratic norm and genus-character laws constrain Frobenius cofactors. The exact Hodge tensor denominator identity reformulates the density question. The trace-dual criterion reduces split ordinarity to specific moving Fourier sums of frequency p^(1/6); the matching one-failure lattice spacing is sharp, and the requisite cancellation for fixed systems remains open.
+- **GAP-CM-THREE-BALANCED-PAIR-DENSITY** (mathematical; open): Determine whether one failed pair occurs with density zero for a fixed variety with three independent balanced projective factors, in particular on the real-cubic split identity class. Cofactor bounds and short returns restrict low-growth subloci. The varying quadratic norm and genus-character laws constrain Frobenius cofactors. The exact Hodge tensor denominator identity reformulates the density question. The trace-dual criterion reduces split ordinarity to specific moving Fourier sums of frequency p^(1/6); the matching one-failure lattice spacing is sharp, and the requisite cancellation for fixed systems remains open. The thin-set sieve excludes fixed algebraic restrictions on those traces and cofactors, but the set of local candidates is itself nonthin. Passing to abelian tensor realizations after adjoining potentially toric auxiliary systems adds only copies of the original non-CM variety and CM factors. Sub-Weil cofactor ranges have relative density zero over totally real bases by pairwise Sato–Tate. The remaining split diagonal includes the interior where both cofactors have full Weil order. Residue-prime division-field ramification detects the failed type exactly, and split one-failure places of local residue degree at most p^θ for θ<1/6 are density zero. The growing residue-degree range remains open. The higher torsion levels have identical projective line discriminants for a nonordinary factor and an ordinary factor with wild mod-p image. Growingly small cofactor order, and small torsion residue degree jointly with small ordinary residue ratio order, give further density-zero subloci. The split primes with large orders remain open. Finite-field realizability persists uniformly with simultaneously large residue orders, in shrinking trace boxes and with growing auxiliary congruences. A positive-proportion one-failure locus would supply growing disjoint augmented Frobenius-field families. The adjoint projective trace bound proves potential ordinarity with at most two active labels per rational A1 factor. Its split cubic specialization still permits one failure. Narrow moving cofactor profiles have density zero, including fixed-width strips at the full Weil scale. The density of the unrestricted one-failure locus is still unknown.
 
 Tracked obligations from the catalogue:
 
@@ -21481,4 +22789,4 @@ Tracked obligations from the catalogue:
 - **GAP-FOUNDATIONS-2 — verification; open.** [Respect the named imported theorem inputs and the analytic statements outside the focused finite-etale certificate.](foundations/README.md)
 - **GAP-HOPF-ODD-CUBIC-MULTIROOT-CENTERS — mathematical; open.** [Classify the remaining pure rational-return odd-cubic quotients and admissible polynomial covers. In the regular winding-one class, pure phases of exact least degree 17 or 19 are safe and have no unit-center cases. General higher quotients and covers remain open, including the individual odd-cubic questions at 29 and 31. Exact membership recognition and degree-bounded purity prefixes are now settled by the separate gcd/resultant theorem; this question asks for geometric classification.](foundations/extended-geometry/ODD_CUBIC_DEGREE_NINETEEN_SAFETY.md)
 - **GAP-HOPF-ODD-START-UNIT-CENTER-CLASSIFICATION — mathematical; open.** [Classify which varying normalized rational endpoint coordinates carry nonconstant-Phi pure unit centers at odd starting heights, and give a geometric classification of the resulting families. For a supplied endpoint the all-height atlas and exact reconstruction are already proved.](foundations/extended-geometry/ODD_START_RATIONAL_COMPOSITION_NORMAL_FORM.md)
-- **GAP-CM-THREE-BALANCED-PAIR-DENSITY — mathematical; open.** [Determine whether one failed pair occurs with density zero for a fixed variety with three independent balanced projective factors, in particular on the real-cubic split identity class. Cofactor bounds and short returns restrict low-growth subloci. The varying quadratic norm and genus-character laws constrain Frobenius cofactors. The exact Hodge tensor denominator identity reformulates the density question. The trace-dual criterion reduces split ordinarity to specific moving Fourier sums of frequency p^(1/6); the matching one-failure lattice spacing is sharp, and the requisite cancellation for fixed systems remains open.](../unpublished/cm-newton-polygon-constraints/global.tex)
+- **GAP-CM-THREE-BALANCED-PAIR-DENSITY — mathematical; open.** [Determine whether one failed pair occurs with density zero for a fixed variety with three independent balanced projective factors, in particular on the real-cubic split identity class. Cofactor bounds and short returns restrict low-growth subloci. The varying quadratic norm and genus-character laws constrain Frobenius cofactors. The exact Hodge tensor denominator identity reformulates the density question. The trace-dual criterion reduces split ordinarity to specific moving Fourier sums of frequency p^(1/6); the matching one-failure lattice spacing is sharp, and the requisite cancellation for fixed systems remains open. The thin-set sieve excludes fixed algebraic restrictions on those traces and cofactors, but the set of local candidates is itself nonthin. Passing to abelian tensor realizations after adjoining potentially toric auxiliary systems adds only copies of the original non-CM variety and CM factors. Sub-Weil cofactor ranges have relative density zero over totally real bases by pairwise Sato–Tate. The remaining split diagonal includes the interior where both cofactors have full Weil order. Residue-prime division-field ramification detects the failed type exactly, and split one-failure places of local residue degree at most p^θ for θ<1/6 are density zero. The growing residue-degree range remains open. The higher torsion levels have identical projective line discriminants for a nonordinary factor and an ordinary factor with wild mod-p image. Growingly small cofactor order, and small torsion residue degree jointly with small ordinary residue ratio order, give further density-zero subloci. The split primes with large orders remain open. Finite-field realizability persists uniformly with simultaneously large residue orders, in shrinking trace boxes and with growing auxiliary congruences. A positive-proportion one-failure locus would supply growing disjoint augmented Frobenius-field families. The adjoint projective trace bound proves potential ordinarity with at most two active labels per rational A1 factor. Its split cubic specialization still permits one failure. Narrow moving cofactor profiles have density zero, including fixed-width strips at the full Weil scale. The density of the unrestricted one-failure locus is still unknown.](../unpublished/cm-newton-polygon-constraints/global.tex)

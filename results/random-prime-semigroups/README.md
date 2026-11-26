@@ -1,6 +1,6 @@
 # Additive basis thresholds for random prime semigroups
 
-**Under review at Hexagon.** Reserved identifier `hexagon:2611.01049v2`. Updated November 25, 2026.
+Public preprint [Hexagon 2611.01049v1](https://hexagonmath.org/2611.01049v1), released 25 November 2026. [Deposited files](published/).
 
 The paper proves the power-law threshold for the least additive basis order, the critical multiplier threshold, and strictly intermediate cofiniteness at the exact multiplier. At equality, finite additions or removals of optional primes can switch almost every realization between least basis orders \(k\) and \(k+1\).
 

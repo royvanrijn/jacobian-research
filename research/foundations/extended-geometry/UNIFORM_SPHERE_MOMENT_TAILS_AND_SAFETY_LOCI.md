@@ -60,7 +60,7 @@ for each monomial. Hence \(f^{a+be}g\omega\) is a top form with poles
 only on \(H\).
 
 The following version of the
-[proper-volume obstruction](../../../unpublished/primitive-balanced-image-spectrum/proper-volume.tex)
+[proper-volume obstruction](../../../results/primitive-balanced-image-spectrum/proper-volume.tex)
 applies to these forms. If a top form \(\eta\) on \(Y\) has poles only
 on \(H\), every polynomial exponential period of \(\eta\) on a
 compact closed cycle in \(Y\setminus H\) vanishes. The argument uses

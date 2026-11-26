@@ -1,0 +1,278 @@
+\section{Exact ordinary density for imaginary quadratic fourfolds}
+\label{sec:fourfold}
+
+The preceding bounds allow a base extension. For a fourfold with full
+geometric endomorphism algebra imaginary quadratic, the Hodge signature
+determines the ordinary density over the original field together with the
+field of definition of the endomorphisms.
+
+\begin{theorem}\label{thm:fourfold-density}
+Let \(A/K\) be an abelian fourfold over a number field with
+\(E=\operatorname{End}^0(A_{\overline K})\) imaginary quadratic. Let
+\(K_E/K\) be the field defining the geometric endomorphisms. The natural
+density of ordinary primes of \(A/K\) is
+\[
+ \begin{cases}
+  1 & \text{in signature }(2,2),\\
+  [K_E:K]^{-1} & \text{in unordered signature }(1,3).
+ \end{cases}
+\]
+These are the only signatures under the stated hypothesis.
+\end{theorem}
+
+If the signature were \((0,4)\), every \(E\)-linear endomorphism of
+rational Betti cohomology would preserve its Hodge decomposition,
+because each coefficient eigenspace would have a single Hodge type.
+The geometric endomorphism algebra would then contain \(M_4(E)\).
+In signature \((1,3)\), the hypothesis of simple signature, relative
+rank four and the Galois property of \(E/\Q\) give the density by
+\cite[Theorem~4.18]{cantoral}. To identify \(K_E\), write \(\tau\)
+for the unique embedding of Hodge multiplicity one. If a Galois
+element \(g\) acts on \(E\) by \(\gamma_g\), it sends that Hodge
+eigenspace to the one labelled \(g\circ\tau\circ\gamma_g^{-1}\).
+Uniqueness gives \(g\circ\tau=\tau\circ\gamma_g\), hence \(K_E=K\,\tau(E)\).
+
+In the balanced case, Fit\'e proves positive ordinary density over
+\(K\) for the wider class allowing an imaginary quadratic subfield of
+the geometric endomorphism algebra. His proof gives density one after
+finite extension \cite[Theorem~4 and \S8]{fite}. To obtain density one
+over \(K\) with full endomorphism algebra \(E\), we treat the components
+where Frobenius conjugates \(E\) directly. On these components Frobenius
+interchanges two symplectically dual spaces. A normalized determinant
+of its square then has even valuation, which turns a nonordinary
+reduction into a bounded integer condition on Frobenius.
+
+\subsection{Monodromy and the middle coefficient}
+
+Assume signature \((2,2)\). Fix a polarization over \(K\). Its Rosati
+involution acts on \(E\) by complex conjugation, the positive
+involution of an imaginary quadratic field. Fix an auxiliary prime
+\(\ell\) split in \(E\). Let \(G\) be the algebraic monodromy group
+on first cohomology and let \(D=(G^\circ)^{\mathrm{der}}\). Over
+\(\overline{\Q}_\ell\) write the two \(E\)-eigenspaces as \(V_+,V_-\).
+The polarization pairs them perfectly. After a finite extension
+defining the endomorphisms and making monodromy connected, Faltings's
+theorems \cite[Theorems~3--4]{faltings} identify the commutant of
+\(G^\circ\) with \(E\otimes\overline{\Q}_\ell\) and give semisimplicity.
+Thus \(V_+,V_-\) are irreducible and inequivalent under \(G^\circ\).
+
+The two relative determinant characters equal \(\chi^2\) on
+\(G^\circ\), where \(\chi\) denotes the similitude. Indeed, after
+extending the base to contain \(E\) and define its action, the
+determinants have infinity type \((2,2)\) by
+\cite[Proposition~14]{fite}. Division by \(\chi^2\) gives an algebraic
+Hecke character of trivial infinity type and hence finite image. For
+the scalar characters \(z_+,z_-\) of the connected center, the
+determinant and polarization give \(z_+^4=\chi^2\) and
+\(z_+z_-=\chi\). Thus \(z_+^2=\chi\) by connectedness, and
+\(z_+=z_-\). The representation of \(D\) on \(V_+\) is irreducible
+because the connected center acts by scalars. Self-duality would make
+the two \(G^\circ\)-modules isomorphic, since the central characters
+agree. The classification of four-dimensional irreducible semisimple
+modules gives \(\mathrm{SL}_4\) on \(V_+\) \cite[\S3.1]{hui4}. The
+three other representations in that list are self-dual. In dual bases
+the action of \(D\) on \(V_+\oplus V_-\) is
+therefore exactly \(\operatorname{diag}(S,S^{-\mathsf T})\) for
+\(S\in\mathrm{SL}_4\). The finite extensions in this identification
+leave \(G^\circ\) and its representations unchanged.
+
+Now work over the original \(K\). At a good absolute degree-one prime
+of residue characteristic \(p\), omit \(p=\ell\), primes ramified in
+\(E\) or \(K_E\), and primes dividing the endomorphism order index or
+polarization degree. Write \(\pi\) for the \(p\)-power Frobenius of the
+reduction. Its similitude is \(p\). On each monodromy component the
+action on \(E\) is constant, and a representative either preserves the
+two blocks or interchanges them.
+
+Suppose first that \(\pi\) preserves the blocks. Its relative second
+coefficient \(a_2\) lies in \(\mathcal O_E\) by the trace comparison in
+Section~\ref{sec:coefficients}. The geometric coefficient blocks have
+slope sum two, because both Hodge multiplicities are two. At an inert
+prime this follows by taking the determinant around the two-step
+Dieudonn\'e cycle and dividing its valuation by two. If the reduction
+is nonordinary, both slope lists differ from \((0,0,1,1)\), by
+polarization. A nonordinary block has a positive sum of its two
+smallest slopes, since all slopes lie in \([0,1]\) and sum to two.
+Its second coefficient therefore has positive integral valuation over
+the unramified coefficient field. The residue degrees sum to two,
+so \(p^2\) divides \(\Nm_{E/\Q}(a_2)\). The Weil bound then makes
+\(\Nm_{E/\Q}(a_2)/p^2\) an integer of absolute value at most \(36\).
+
+This quotient is the Frobenius value of the regular class function
+\(a_{2,+}(g)a_{2,-}(g)/\chi(g)^2\) on the components preserving the
+blocks. For a matrix \(A_+\) of \(g\) on \(V_+\), its matrix on
+\(V_-\) is \(\chi(g)A_+^{-\mathsf T}\), so the function is
+\(a_2(A_+)^2/\det A_+\). Multiplication by \(D\) varies \(A_+\)
+over all matrices of its determinant. In particular, at matrices
+\(a\operatorname{diag}(u,u^{-1},1,1)\) with \(a^4=\det A_+\), it
+takes the values \((2+2u+2u^{-1})^2\). It is nonconstant on every
+such component.
+
+\subsection{Pfaffian parity on the interchanging components}
+
+\begin{proposition}\label{prop:fourfold-pfaffian}
+At a prime as above where \(\pi\) interchanges the blocks, a
+nonordinary reduction makes
+\[
+  \Nm_{E/\Q}\!\left(\det_E(1+\pi^2/p)\right)
+\]
+an integer of absolute value at most \(256\).
+\end{proposition}
+
+\begin{proof}
+Extend the crystalline lattice to a finite unramified Witt ring
+\(W\) that splits the coefficient field and defines the specialized
+action. The lattice has two rank-four summands \(M_+,M_-\) in perfect
+duality. The Frobenius cokernel is killed by \(p\) and the corresponding
+Hodge quotient has dimension two at each label
+\cite[\S\S1.1.3 and 1.3.1]{moonencanonical}. Thus the semilinear
+Frobenius on the Dieudonn\'e lattice has elementary divisors
+\(1,1,p,p\) on each map between coefficient summands. Over \(W\) it
+is the linear pullback \(\pi\) together with Witt Frobenius on scalars.
+The scalar map permutes the coefficient summands by lattice
+isomorphisms. Thus the block maps of linear \(\pi\) also have
+determinant valuation two.
+
+In dual integral bases write
+\[
+ \pi=\begin{pmatrix}0&C\\ B&0\end{pmatrix}.
+\]
+The similitude condition gives \(C=-p B^{-\mathsf T}\). On \(M_+\)
+we obtain
+\[
+ \det(1+\pi^2/p)=\frac{\det(B^{\mathsf T}-B)}{\det B}
+               =\frac{\operatorname{Pf}(B^{\mathsf T}-B)^2}{\det B}.
+\]
+Its valuation is even or infinite. The two blocks of \(\pi^2\) are
+conjugate by \(\pi\), and their slopes are complementary under the
+polarization. Thus the valuations of the eigenvalues of \(\pi^2/p\)
+in each block have the form \((-a,-b,b,a)\) with
+\(0\le b\le a\le1\). If the reduction is nonordinary then \(a+b<2\).
+The determinant on each block has valuation at least \(-a-b>-2\),
+by applying \(v_p(1+x)\ge\min(0,v_p(x))\) to each eigenvalue. By
+parity it is integral at \(p\).
+
+The same trace comparison as for \(\pi\) applies to the endomorphism
+\(\pi^2\), which commutes with \(E\). The relative characteristic
+coefficients are integral and agree in the Tate and crystalline
+realizations. The displayed norm in the proposition is rational
+with denominator a power of \(p\). It has just been shown integral
+at \(p\). Its complex bound is \(2^8\), since all eigenvalues of
+\(\pi^2/p\) have complex modulus one.
+\end{proof}
+
+The integer in Proposition~\ref{prop:fourfold-pfaffian} is the
+Frobenius value of the regular class function
+\[
+ g\longmapsto
+ \prod_{\sigma\in\{+,-\}}
+   \det\!\left(1+g^2|_{V_\sigma}/\chi(g)\right).
+\]
+On any interchanging component, multiplication by \(D\) varies its
+off-diagonal block \(B\) over all matrices of its determinant. Choose
+\(b\) with \(b^4=\det B\). At \(B=b I_4\) the determinant ratio in
+the proof is zero. At \(B=b J_4\), with \(J_4\) the standard
+alternating matrix of determinant one, it is \(2^4\). The two
+block determinants agree because \(g\) interchanges the blocks and
+commutes with \(g^2\). The class function takes the values zero and
+\(2^8\) on each such component, and is nonconstant.
+
+The two functions used above descend to \(\Q_\ell\), since their
+products are invariant under permuting the two embeddings of \(E\).
+Each of their finitely many integer levels is a proper closed subset
+on every component on which the function was used. Algebraic
+Chebotarev, in the form used in Section~\ref{sec:adjoint}, makes their
+union a density-zero condition on primes. Absolute degree-one primes
+have density one, so this completes the balanced case of
+Theorem~\ref{thm:fourfold-density} over \(K\).
+
+\subsection{An explicit genus-four Jacobian}
+
+\begin{example}\label{ex:fourfold-curve}
+Let \(C/\Q\) be the smooth projective curve with affine equation
+\[
+ y^3=A(x)B(x)^2,
+ \qquad A(x)=x^3+x+1,\qquad B(x)=x^3-2x^2-2x+1.
+\]
+Its Jacobian has geometric endomorphism ring \(\Z[\zeta_3]\), with
+endomorphism field \(\Q(\zeta_3)\). Its ordinary primes over \(\Q\)
+have natural density one.
+\end{example}
+
+The discriminants of \(A,B\) are \(-31,125\), and their resultant is
+\(31\). The six finite branch points are distinct and infinity is
+unramified. Riemann--Hurwitz gives genus four, and the same tame
+local models give good reduction away from \(3,5,31\). The deck
+action by \(y\mapsto\zeta_3y\) supplies \(E=\Q(\zeta_3)\), as its
+invariant cohomology is that of \(\mathbb P^1\). The forms
+\(x^j\,dx/y\) and \(x^j B(x)\,dx/y^2\), for \(j=0,1\), are
+holomorphic and give two independent vectors in each deck
+eigenspace. At the branch points this follows from the orders of
+\(dx\) and \(y\), which are two and either one or two, respectively.
+At infinity \(x\) and \(y\) have pole orders one and three. The
+signature is therefore \((2,2)\).
+
+Here is the finite calculation certifying the endomorphisms. Put
+\(\zeta=\zeta_3\). At \(p=7,13\) use the primitive cube roots
+\(2,3\) in \(\mathbb F_p\), respectively. For \(q=p^r\) with
+\(1\le r\le4\), count \(n_i\) values of \(x\) at which
+\(A(x)B(x)^2\ne0\) and its \((q-1)/3\)-th power is the \(i\)-th
+power of the chosen cube root. The \(j\)-th deck power composed with
+\(q\)-Frobenius fixes all three points above each such \(x\) with
+index \(-j\) modulo three. Its fixed branch points contribute the
+same number for each \(j\), and the three points at infinity are
+fixed for \(j=0\) alone. Thus Fourier projection of the Lefschetz
+trace gives \(-1-\sum_{i=0}^2n_i\zeta^i\) on one coefficient block,
+with the conjugate trace on the other. Newton identities applied
+to the four power traces give the relative polynomials
+\[
+\begin{aligned}
+ P_7(X)&=X^4+(2-\zeta)X^3+(3-3\zeta)X^2
+                    +(7-14\zeta)X-49\zeta,\\
+ P_{13}(X)&=X^4+(5+\zeta)X^3+16X^2+(52-13\zeta)X+169.
+\end{aligned}
+\]
+The middle coefficients of \(P_p\overline{P_p}\) are \(167\) and
+\(1101\), units at the respective primes. Both reductions are
+ordinary and both relative determinants have valuation two. In
+particular the four slopes in each relative block are \(0,0,1,1\).
+The squarefree relative factorizations have the following degrees.
+\[
+\begin{array}{c|c|cc}
+\ell&\text{image of }\zeta&P_7&P_{13}\\ \hline
+73&8&1,3&4\\
+79&23&4&1,3
+\end{array}
+\]
+These give irreducibility over \(E\) and Galois group \(S_4\) for
+each quartic. The three-cycle and four-cycle force its order to be
+divisible by twelve, and the odd four-cycle rules out \(A_4\).
+The two conjugate quartics are distinct at each \(p\). Thus the
+absolute polynomial is irreducible and each root field \(L_p\)
+contains \(E\), since \(L_p\) and \(L_pE\) both have degree eight
+over \(\Q\). There is no proper intermediate field between \(E\)
+and \(L_p\), by maximality of the point stabilizer in \(S_4\).
+
+The eight roots at each \(p\) remain distinct after any positive
+power. A ratio of distinct roots in one relative quartic has a
+conjugate of nonzero valuation, since an \(S_4\) permutation sends
+the two roots to different valuations. By polarization the conjugate
+roots are \(p/\alpha_j\) for roots \(\alpha_j\) in the first quartic.
+A ratio across the two quartics is then \(\alpha_i\alpha_j/p\), whose
+valuation is nonzero after sending the selected roots to valuation
+zero. Each power of Frobenius consequently generates the same degree
+eight field \(L_p\). Tate's theorem gives endomorphism algebra \(L_p\)
+over every finite extension of the residue field, and hence over its
+algebraic closure \cite[Theorem~2(c)]{tatefinite}.
+
+The two absolute polynomials are squarefree modulo two, with factor
+degrees \((4,4)\) and \((2,6)\), respectively, so the two root fields
+are nonisomorphic. Specialization injects the geometric endomorphism
+algebra in characteristic zero into both fields, compatibly with
+the \(E\)-actions. Since neither root field has a proper intermediate
+field over \(E\), this proves that the algebra is \(E\). The deck
+action supplies its maximal order and is defined over
+\(\Q(\zeta_3)\), where the nontrivial Galois automorphism conjugates
+the deck generator to its inverse. Theorem~\ref{thm:fourfold-density}
+now applies. The exact calculation is reproduced in the supplement,
+which also checks the ordinary reduction at the inert prime \(11\).

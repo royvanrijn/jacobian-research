@@ -41,8 +41,11 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Closed inverse series and exact compressed jet degrees at index17 | Internal result | proved | [Source](subtree-shuffling/CUBIC_INDEX_SEVENTEEN_INVERSE_SERIES.md) |
 | Successive restart universality and exact all-round equivalence | Internal result | proved | [Source](subtree-shuffling/SUCCESSIVE_RESTART_UNIVERSALITY.md) |
 | A line of nonproper singleton fibres in the retained three-dimensional Keller map | Internal result | proved | [Source](../EXTERNAL_MATHEMATICAL_TRANSFERS.md) |
+| Strict Davenport–Zannier bound in a marked quadratic model | Internal result | proved | [Source](affine-complements/MARKED_QUADRATIC_DAVENPORT_ZANNIER_EXCLUSION.md) |
+| Excess one is excluded at a marked double zero | Internal result | proved | [Source](affine-complements/MARKED_QUADRATIC_DAVENPORT_ZANNIER_EXCLUSION.md) |
+| Sharp degree 81 for the prime-three BGV lifts modulo 9 and 27 | Internal result | proved | [Source](mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md) |
 
-**Computed obligations:** 21 unresolved; 5 resolved within their exact scope.
+**Computed obligations:** 23 unresolved; 5 resolved within their exact scope.
 
 
 Scope limits:
@@ -74,6 +77,9 @@ Scope limits:
 - The exact inverse-line data of the 48-variable cubic give thirteen exact-index-3 grade-prefix witnesses with inverse degrees 5,7,...,29 in dimensions 3,4,6,9,13,19,28,38,42,45,46,47,48. They supply the nonvanishing side of the length-three shuffle threshold directly.
 - The candidate cubic index-four ceiling 207, also for the retained scaffold with arbitrary restart rounds, is equivalent to the 103 weighted class identities U_104 through U_206. Any failing grade in the block gives an exact-index-four triangular witness of inverse degree 209 through 413.
 - Every noninvertible plane Keller map has generic degree at least five by the published low-sheet exclusions and birational inversion. The exact product descriptions carry field degree and permutation action to Hessian and positional Weyl assignments.
+- Marked quadratic models with ord_0 M>=2 exclude ruling excess zero. The reduced S2 and MX0 double-zero frames also exclude excess one. The (8,12) bound is then seven; larger excess and global coverage remain open.
+- For p=3 the unrestricted minimum lift degree is 81 at both moduli 9 and 27. A bounded Witt tower can be chosen compatibly, so unrestricted degree growth is equivalent to excluding any integral polynomial lift of the seed. The degree growth is proved for lifts affine along a lift of the fixed residue line.
+- The planar degree assessment tracks the Santibáñez-Leal certificate route for (72,108) and the normalized Giraudin F2 and degree-147 exclusions. These exact scopes have separate verification obligations.
 
 Tracked obligations (computed states):
 
@@ -87,5 +93,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Realize or universally exclude alternating generic monodromy for polynomial plane Keller maps beyond the proved A4 exclusions. Known dimension-three alternating realizations settle the earlier abstract action question; the reported natural A5 result remains a primary-source verification obligation here.](../arithmetic/KNOT_HURWITZ_KELLER_MOONSHOT_AUDIT.md) — JAC-PLANE-ALTERNATING-POLYNOMIAL-REALIZATION
 - **mathematical / open:** [Cubic eventual shuffle membership holds forp<=3 and fails for everyp>=17. Determine the least failing length in[4,17], particularly whether fixedp4 has a finite dimension-uniform inverse bound or an unbounded inverse family. The58-variable index4 example gives only a lower bound207; the7/9 fibre obstructions and scalar restart barriers do not decide this alternative.](subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md) — GAP-JAC-SUBTREE-SHUFFLE-UNIFORM
 - **mathematical / open:** [Decide the weighted cubic index-four classes in grades 104 through 206. This finite block is equivalent to the candidate sharp inverse-degree ceiling 207.](subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md) — GAP-JAC-INDEX-FOUR-WEIGHTED-GRADES-104-206
+- **mathematical / open:** [Can excess one occur at a higher-order marked zero with nonzero central restrictions?](affine-complements/MARKED_QUADRATIC_DAVENPORT_ZANNIER_EXCLUSION.md) — JAC-MARKED-HIGHER-ORDER-EXCESS-ONE
+- **mathematical / open:** [Does every common degree cap eventually fail for unrestricted lifts of the odd-prime BGV seed?](mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md) — GAP-JAC-BGV-UNRESTRICTED-WITT-DEGREE-GROWTH
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.
