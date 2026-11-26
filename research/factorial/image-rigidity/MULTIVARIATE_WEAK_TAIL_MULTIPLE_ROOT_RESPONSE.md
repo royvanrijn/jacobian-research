@@ -172,12 +172,10 @@ the exponential series. Taking the imaginary part of
 The square-variable polynomials obtained from
 \(\mathrm{He}_r(x)\) upon removing a factor \(x\) in the
 odd case are irreducible over \(\mathbb Q\).
-This is the classical Hermite irreducibility of Schur
-in the square variable, or follows from the corresponding
-assertion for the even polynomial and the odd quotient
-in \(x\), followed by the rational rescaling of the square
-variable from the classical to the probabilists' convention.
-[Schur, section II](https://doi.org/10.1515/crll.1931.165.52)
+Schur proves this for the same monic Hermite normalization
+in his auxiliary result D and its application to the
+square-variable polynomials.
+[Schur, §§1 and 4](https://doi.org/10.1515/crll.1931.165.52)
 
 If two nonzero leading angular changes were equal at
 adjacent orders, their squares would be a common root
@@ -261,6 +259,107 @@ the shared conjugates lie on the same valuation face and
 have the same residue. The controls have positive rational
 coefficients and positive even parent on the real axis.
 
+## An additional physical test at a stationary odd pair
+
+At a prescribed limiting integer twist, the odd central
+branches can also be compared radially. Write
+\(h=\sum_i d_i\), \(\Lambda=N/n\) and
+\[
+       B_1=\sum_i d_i/M_i,\qquad
+       Z=\sum_i d_i^3/M_i^2,\qquad x=B_1/W,\qquad \mu=Z/W^2 .
+\]
+In an escaping sequence with a fixed \(h\), a possible common
+root limiting to \(\alpha,\gamma=\Lambda^h\alpha\) with odd
+multiplicities \(r_n,r_N\) requires that
+\[
+       2[N c_n(\alpha)-n c_N(\gamma)]
+       +x+\frac{\mu}{3}[n(r_N-1)-N(r_n-1)]
+                                                                  \tag{6}
+\]
+tend to zero. This is a complex quantity, so a nonzero
+imaginary part already excludes the contact. The variables
+\((x,\mu)\) always obey
+\[
+          -1\le x\le1,\qquad
+                  -\frac{(1-x)^2}{4}\le\mu\le\frac{(1+x)^2}{4}.   \tag{7}
+\]
+Disjointness in (6) over the compact set (7) is an exact
+algebraic sufficient test. It can be used when the central
+angular velocities are equal.
+
+For (6), the same polygamma comparison used in (3) gives
+\(g'''(k)=-Z/m^2+O_m(W^3)\). Indeed
+\(\psi''(1+u)=-u^{-2}+O(u^{-3})\) by integral comparison,
+and the motion from \(mM_i\) costs a relative \(O(W)\).
+For \(m\ge3\), integrating three times and interpolating
+the error gives \(g_3=-Z/(6m^2)+O_m(W^3)\).
+At \(m=2\), any nonreal root has multiplicity one,
+so the cubic contribution to the central velocity vanishes.
+The logarithmic displacement of the central root is therefore
+\[
+        W\left(\frac12-\frac{c_m}{m}
+                         +\frac{\mu(r_m-1)}{6m}\right)
+                         +O_{Q_m,m}(W^{3/2}).
+\]
+For the positive endpoint scales \(D_n,D_N\) of the tail,
+\[
+          \log(D_N/D_n)-h\log\Lambda
+                              =-B_1/(2nN)+O_{n,N}(W^2).
+\]
+To check the sign and factor, integrate the trigamma
+approximation \(xg''(jx)=1/j-1/(2j^2x)+O_j(x^{-2})\)
+in \(j\) over \([n,N]\), then over each oriented row interval.
+The \(1/x\) integral equals \(d_i/M_i+O(|d_i|^3/M_i^3)\).
+The sum of these errors and the \(x^{-2}\) errors is
+\(O(W^2)\). This is the integral in the
+[core twist comparison](MULTIVARIATE_ARBITRARY_CORE_TWISTED_TAIL_STABILITY.md#proof-of-stability)
+with its first correction retained. In the lower physical
+chart, subtract this logarithmic center correction from
+the upper central displacement. Multiplying the
+upper-minus-lower difference by \(2nN/W\) proves (6).
+
+For (7) give row \(i\) weight \(w_i=d_i^2/(M_iW)\) and
+signed parameter \(u_i=1/d_i\). Then
+\(x=\sum_i w_i u_i\), \(\mu=\sum_i w_i^2 u_i\) and
+\(\sum_i w_i=1\). Let \(w\) be the sum of the weights on
+positive \(u_i\) and let \(A=\sum_{u_i>0}w_i u_i\).
+Then \(A\le w\), and \(A-x\le1-w\). Therefore
+\(\mu\le w A\le w\min(w,1+x-w)\le (1+x)^2/4\).
+Reversal gives the other bound.
+
+For arbitrary row count, (7) is the exact limiting set even
+at each fixed integer \(h\). To see this, use only unit gaps.
+For a desired \(x\), put positive and negative mass
+\(w=(1+x)/2\) and \(1-w\) on finite lists of weights.
+The square sum of a list of mass \(w\) can approach any
+\(a\in[0,w^2]\): give one entry weight \(\sqrt a\) and
+divide the remaining weight into increasingly many equal
+parts. Do the same for the negative list. Their difference
+of square sums can approach any prescribed \(\mu\) in (7).
+Zero weights may be omitted. Add negligible weights with
+the appropriate sign to make the difference of the two
+unit-gap row counts equal \(h\), and renormalize. Realize
+each positive weight \(w_i\) up to an arbitrarily small
+error with a shared unit-gap row whose midpoint is the
+nearest half-integer to \(1/(t w_i)\). For each finite
+list, take \(t>0\) small enough that these roundings change
+the proportions and their square sums arbitrarily little.
+Then \(W\to0\) along the resulting sequence. Thus (7)
+cannot be reduced as a uniform leading-order restriction
+on the two tail statistics alone.
+
+A stationary control is obtained for any odd \(r\ge1\)
+by taking \(Q_{2r}=H^r,\ Q_{2r+1}=H^r(1+2z)\),
+where \(H=z^2+2z+5/4\). At its common upper root
+\(\alpha=-1+i/2\), (5) gives
+\(c_{2r}=r+ir\), \(c_{2r+1}=r+ir+(3+i)/2\).
+Thus the central angular velocities agree, but
+\((2r+1)c_{2r}-2r c_{2r+1}=-2r\).
+The real expression (6) cannot vanish on (7), since
+the two bounded contributions have absolute sum
+at most \(1+(r-1)/3\). These positive polynomials test
+the physical criterion with an exact stationary contact.
+
 ## All-degree consequence and the bounded-gap reduction
 
 Take \(J\) at least the
@@ -286,9 +385,9 @@ Indeed the endpoint ratio of the actual tail differs
 from that twist by \(1+O(W)\), uniformly, by the
 [core twist comparison](MULTIVARIATE_ARBITRARY_CORE_TWISTED_TAIL_STABILITY.md#proof-of-stability).
 The finitely many different limiting physical roots
-cannot coincide for sufficiently small \(W\), and the
-new argument separates every tested contact by angle.
-The possible integer twists for each fixed core are
+cannot coincide for sufficiently small \(W\). A tested
+contact may be excluded by angle or by (6) and (7) when
+both multiplicities are odd. The possible integer twists for each fixed core are
 already effectively finite by the same core comparison.
 
 In particular, this gives a finite branching procedure
@@ -303,9 +402,10 @@ Enumerate the first row below that bound. At a retained prefix
 physical criterion to each integer \(h\) with
 \(|h|\le L-\sum_{i\in C}|d_i|\).
 If every test succeeds, take the minimum positive weak-tail
-tolerance. When all further rows have height above a
-sufficiently large cutoff depending on \(C\), their
-\(W\) is below this tolerance. Otherwise branch over the
+tolerance. When all further rows have height above a sufficiently
+large cutoff depending on \(C\), their \(W\) is below
+this tolerance. Take the cutoff above \(L\) so every
+such row is shared. Otherwise branch over the
 next row below that cutoff. There are finitely many
 children at each such step and the depth is at most \(L\).
 A node with an unresolved odd central contact remains

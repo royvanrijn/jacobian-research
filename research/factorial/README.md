@@ -4,7 +4,7 @@
 
 Factorial moment functionals, composition rigidity and Strong Factorial families. One varying exponent also permits any independent common monomial factor, with all terminals covered.
 
-**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary multivariate two-monomial supports, terminals 2 through 5 are proved. The result holds at all terminals for disjoint nonconstant monomials and when each monomial has private exponent sum at least two. The all-order multivariate and larger-support assertions remain open. Private exponent sums one and at least three are now covered at every terminal. For sums one and two, only terminals 6 through 360 with shared curvature below 4 log 2 remain in this class.
+**Authored assessment:** Ordinary univariate binomial Strong Factorial is proved at every terminal over every characteristic-zero field. The proof combines the terminal-through-24 theorem, the exact prime, Newton and modular certificate through terminal 3149, and the uniform Padé cutoff at terminal 3150. For arbitrary ordinary multivariate binomials, terminals 2 through 13 and every terminal at or above a computable absolute cutoff are proved. Both-private supports are covered in every degree, and the one-private case is covered when the private total exponent is at least six. Unrestricted coprimality for the remaining multivariate supports and the larger-support conjecture remain open.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -756,8 +756,25 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Adjacent collisions for smooth strongly log-concave moment laws | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LOG_CONCAVE_ADJACENT_MOMENT_OBSTRUCTION.md) |
 | Newton residual degrees without prime factorization | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GCD_FREE_NEWTON_RESIDUAL_SIEVE.md) |
 | First two exceptional forcing pairs, exact prefix and tail reduction | Internal result | proved | [Source](image-rigidity/QUADRATIC_FACE_FORCING_FIRST_TWO_RESIDUAL_PAIRS.md) |
+| Multiple-root separation under arbitrary weak ordinary tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_WEAK_TAIL_MULTIPLE_ROOT_RESPONSE.md) |
+| Exact radial separation for ordered opposite factorial pairs | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORDERED_OPPOSITE_PAIR_RADIAL_CLOSURE.md) |
+| Exact radial separation under ordered integer gap matching | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORDERED_GAP_MASS_RADIAL_CLOSURE.md) |
+| All-degree closure for monotone gap counts in an upper cluster | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MONOTONE_GAP_UPPER_CLUSTER_CLOSURE.md) |
+| Truncated Newton Smith widths without prime factorization | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GCD_FREE_TRUNCATED_SMITH_SIEVE.md) |
+| Ramified native divided-power pattern and whole-packet bounds | Internal result | proved | [Source](image-rigidity/QUADRATIC_FACE_FORCING_HALF_VALUATION_DIVIDED_POWER_PATTERN.md) |
+| Unadjusted odd native high-block Anti congruence | Internal result | proved | [Source](image-rigidity/QUADRATIC_ODD_NATIVE_HIGH_BLOCK_ANTI_CONGRUENCE.md) |
+| Conditional half-branch reduction to a monic ordinary Anti gate | Internal result | proved | [Source](image-rigidity/QUADRATIC_HALF_VALUATION_MONIC_ANTI_GATE_CONDITIONAL_CLOSURE.md) |
+| Stationary central roots and the compactification of weak-tail jets | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_STATIONARY_CENTRAL_WEAK_TAIL_JETS.md) |
+| Sharp second-order tail interval at positive Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TRANSVERSE_TAIL_RESPONSE_POLYTOPE.md) |
+| Exact deletion of complete exponent shift blocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPLETE_SHIFT_BLOCK_DELETION.md) |
+| All-degree separation for most spread-out ordinary tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SPREAD_OUT_PRIVATE_PRIME_DENSITY.md) |
+| All-degree closure for dense clusters of unit-gap rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DENSE_CLUSTERED_UNIT_GAP_CLOSURE.md) |
+| Signed contact equations for changing ordinary factorial cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIGNED_CORE_REPLACEMENT_CONTACTS.md) |
+| Curvature and height bounds for countable ordinary cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COUNTABLE_CORE_CURVATURE_HEIGHT_SEPARATION.md) |
+| Prime-support logarithmic height bounds for a quadratic common factor | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_QUADRATIC_PRINCIPAL_DIVISOR_LOG_HEIGHT.md) |
+| Universal factorial marks from the coefficient envelope | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_UNIVERSAL_ENVELOPE_MARKS.md) |
 
-**Computed obligations:** 52 unresolved; 30 resolved within their exact scope.
+**Computed obligations:** 53 unresolved; 30 resolved within their exact scope.
 
 **Assessment update needed:** GAP-FACTORIAL-POLYNOMIAL-GRACE-STRIP-NONCOLLISION, UQR-OPEN-ALL-REMAINING-RESONANT-PAIR-COPRIMALITY, UQR-OPEN-DENSE-UNIVARIATE-QUADRATIC-SFC, LAB-OPEN-FOUR-TERM-BINARY-QUADRATIC-SFC, LAB-OPEN-FIVE-TERM-TERNARY-QUADRATIC-SFC now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
 
@@ -854,6 +871,7 @@ Scope limits:
 - Ordinary consecutive coprimality is proved in every degree whenever there is a private variable on each side. The remaining general binary profiles have at most one private side.
 - One-private profiles satisfy all-degree angular separation if twice the total private exponent plus the shared absolute curvature is at least thirteen. A separate explicit weak-tail hypothesis gives all-order physical coprimality with a single private unit and arbitrary signed shared gap.
 - Standard SFC(2) and SFC(3) count variables. Exact support-size windows for homogeneous binary quadratics are proved; arbitrary inhomogeneous binary quadratics and full dimension-two/three SFC remain separate open goals. Two-monomial profile results do not imply them.
+- Ramified native pattern and unadjusted odd highblock congruence are proved. The actual monic ordinary Anti gateH remains OPEN; a proved one-way conditional context H=>universalT3 is recorded, with existing equivalences and b0 implication unchanged. No formal quotient/factor transfer or fullbinary/SFC2/SFC3 closure is claimed.
 
 Tracked obligations (computed states):
 
@@ -894,5 +912,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Exclude every three-zero quadratic forcing block at all positive starts; the proved local exclusions leave an exact exceptional family.](image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md) — QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW
 - **mathematical / open:** [Prove all exceptional quadratic-field adjacent-pair coprimeness assertions, q1or2mod4, equivalent to the universal forcing gate.](image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md) — QTF-OPEN-EXCEPTIONAL-QUADRATIC-FAMILY-PAIR-COPRIMALITY
 - **mathematical / open:** [Prove adjacent-pair coprimeness for every eligible exceptional q>=5; the two smaller eligible cases are now exactly certified, but no infinite tail is seeded.](image-rigidity/QUADRATIC_FACE_FORCING_FIRST_TWO_RESIDUAL_PAIRS.md) — Q12-OPEN-EXCEPTIONAL-PAIR-COPRIMALITY-TAIL-Q-GE-FIVE
+- **mathematical / open:** [Prove the FULL universal actual monic ordinary Anti-coefficient bound H for every statedM,z,chosenoddp,ALLhigherbinarypackets andALLj<e. No arbitrary factor rescaling, native block or bounded diagnostic substitutes for this gate.](image-rigidity/QUADRATIC_HALF_VALUATION_MONIC_ANTI_GATE_CONDITIONAL_CLOSURE.md) — HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

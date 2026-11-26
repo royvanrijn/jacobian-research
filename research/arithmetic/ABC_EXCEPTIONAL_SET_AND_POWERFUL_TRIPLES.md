@@ -50,6 +50,7 @@ In the same-target collision argument the diagonal arm
 alone is at least \(\lambda/3\) on balanced data.
 [Grouped moments](ABC_GROUPED_VALUATION_FOURTH_MOMENTS.md)
 · [Moving-selector limitation](ABC_EXTERNAL_MOVING_ROWS_LIMIT.md)
+· [Current source versions, closed-budget BBLT deduction and Pasten inversion](ABC_PRIMARY_BOUNDS_AND_POINTWISE_BRIDGES.md)
 
 
 Pasten's conductor-dependent Faltings height bound is
@@ -10314,6 +10315,51 @@ the existing qualitative exclusion does not rule out.
 [Full-factor quantiles (CQ1–CQ4)](ABC_BALANCED_CELL_FULL_FACTOR_QUANTILES.md)
 · [Additive, compressed-shift and reciprocal tests](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md)
 
+### Optimized chart prices and the surviving diffuse profile
+
+A full-divisor chart that loses exponent \(f\) has a
+codegree threshold \(u-2f\) on its full row bins.
+Here \(u=1/3-\alpha\), and the anchors can be chosen
+on the smaller free dictionary. A collision-weighted
+version bounds the chart directly, with the actual
+remaining radical on the anchor role and no cell size
+mesh. The two-role record entropy charge also shows
+that raw factor captures alone cannot win this codegree
+comparison. Both estimates keep the actual chart loss
+through the local count. The best comparison
+still loses strength as \(u\) tends to zero.
+For full-factor records of raw price, keeping the
+original numerical height in the SHF floor test gives
+a sharp variational obstruction. The wholly diffuse
+tall \([2,4]\) profile has a strictly positive excess
+above the local active height-floor threshold for
+every \(0<t\le1/6\), even after optimizing free
+stripping and paid excision. Raw half and nonatomic
+tests alone optimize to \(\min(r/2,c)\) after
+prescribed support stripping, with \(r,c\) the remaining
+raw and nonatomic masses. An actual conditional
+dictionary discount can improve those prices.
+
+At shallow combined residue and real depth \(s\),
+interpolation gives a full list-deficit charge on
+fine residual layers when \(s\le c/2\), with \(c\)
+now the remaining raw root cap. A joint record of
+price \(b\) capturing raw mass \(f\) from one original
+role gives a power saving if its conditional mixed
+list exponent \(k\) satisfies \(s-k>b-f+u\) by a fixed
+margin. This tests actual occupied labels even near
+zero complete multiplicity. A joint interpolation
+model attains the conditional information identities
+with diffuse integer valuation dictionaries, without
+imposing the additive and probe equations. The
+additive-energy, compressed-shift and reciprocal
+bounds leave open whether the simultaneous lifts
+under all three caps can avoid a fixed list deficit.
+[Exact chart price (RT9)](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md#codegree-thresholds-at-the-actual-chart-price)
+· [Collision-weighted codegrees and the raw-record barrier (RT10–RT11)](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md#collision-weighted-codegrees-without-a-cell-size-mesh)
+· [Sharp raw-floor envelope and joint probe obstruction](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md#sharp-raw-active-floor-envelope)
+· [Optimized occupied-list and collision bounds (JRM4)](ABC_JOINT_REAL_RESIDUE_MOMENTS.md#optimized-list-prices-after-full-factor-records)
+
 ## Induced matching and auxiliary tests at occurrence
 
 At the complete occurrence endpoint, thinning a balanced
@@ -10701,6 +10747,72 @@ estimates describe the obstruction to transferring the
 original family into a smaller count of powerful
 primitive quotients.
 [Private support and splice gcds (HPS1–HPS3)](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md)
+
+## Exact common factors and typical physical shifts
+
+In a nonprimitive derived relation, primes of the common
+gcd that survive in the primitive coordinates are already
+visible there. The missing primes require a separate
+record. Their exact radical credit pays for this record
+at the one-third coefficient. The same compensation works
+for two charged roles. For several additive branches
+sharing one original value the union of primitive supports
+restores the common value only once, leaving a smaller
+missing-support charge.
+[Exhausted-support restoration (ESL1–ESL5)](ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md)
+· [Common-anchor branch counts (SAB1–SAB2)](ABC_SHARED_ANCHOR_PRIMITIVE_BRANCH_COUNTS.md)
+
+Near zero complete multiplicity, the mixed moment bound
+controls the **pair mass** of oversized cells at every
+fixed subterminal depth. Large exact valuation layers
+can be split at their original exponents when individual
+primes are small. Recording the large individual primes
+preserves the nonatomic valuation mass in a full residual
+chart. On the resulting charts same-role overlaps of
+fixed positive mass are power-rare. The physical shift
+and the actual positive splice then each escape every fixed
+outside-radical budget in the stated pair populations.
+For the normalized comparison with the marked target,
+a positive average extra gcd is also power-rare across
+full cells. These statements are compatible with large
+actual fresh prime supports, which a closing transfer
+would have to control by a different arithmetic input.
+[Fine subroots and pair pruning (JRM5–JRM6)](ABC_JOINT_REAL_RESIDUE_MOMENTS.md#fine-residual-caps-from-small-individual-primes)
+· [Generic large shifts and splices (HPO1–HPO4)](ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md)
+· [Recurring splice divisors (RSC1–RSC2)](ABC_RECURRING_SPLICE_GCD_CELL_COST.md)
+
+The optimized mandatory repair for the formal broad
+\([2,4]\) profile leaves a quantitative scalar gap to
+bridge, even allowing unequal fullness orders. The
+adaptive valuation basis has an independent tradeoff
+between the number and sizes of moving root coordinates
+and the numerical width of a correction.
+[Repair and valuation basis tests (DB1–DB3)](ABC_DIFFUSE_REPAIR_AND_BASIS_OBSTRUCTIONS.md)
+
+The short-power-window construction gives primitive
+two-cap triples at the limiting \(1/3\) exponent,
+even with several pairwise coprime near-power occupants
+per centre. It also permits a growing full prime-power
+divisor of the displacement at fixed fullness order.
+Its numerical lock weight vanishes when the budget
+tends to zero, and it leaves the whole displacement
+radical unrestricted.
+[Coprime short-power windows (CPW1–CPW2)](ABC_COPRIME_SHORT_POWER_WINDOWS.md)
+
+A quantitative Subspace Theorem application gives the
+complementary upper bound when two original letters
+are weighted exact powers sharing a sufficiently
+large order and the third has an economical full
+divisor of fixed positive numerical weight. Finite
+prime sets may vary with the row. Catalogue the
+support and the two coefficients at their actual
+joint costs. The remaining primitive lift exponent
+is \(O(1/k^3)\), so any adaptive common order above
+the \(L^{-1/3}\) scale and a fixed margin in the
+record price gives a small-budget saving in this
+sector. The unbounded-order branch is treated
+before the bounded-order application.
+[Subspace Theorem transfer (CPW3–CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#uniform-upper-bounds-once-the-shift-part-is-larger)
 
 ## The unrestricted small-budget obligation
 

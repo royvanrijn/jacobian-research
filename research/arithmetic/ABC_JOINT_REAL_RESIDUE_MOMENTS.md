@@ -275,3 +275,306 @@ real and congruence lifts of all three complete
 roles remains necessary to lower the unrestricted
 coefficient.
 [Three actual shallow registers (SRL5)](ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md#a-three-register-partial-latin-square)
+
+## Optimized list prices after full-factor records
+
+Use the original primitive row law and all three radical caps.
+The complete degree on the tested role is at most \(n^{u+o(1)}\).
+A joint record \(R\), priced at \(n^{b+o(1)}\) states, fixes
+the indicated full factors of the tested value \(U\).
+It may also fix factors of the other two letters. Include
+the divisor choices and any fixed coefficients in that record.
+In each state the remaining exact root box has raw caps
+\(\mathbf a_R\) of sum \(c_R\). The complete value is a
+known positive coefficient times the residual root product.
+Use the logarithmic bins of the **remaining numerical value**,
+or translate the bins for \(U\) by the log of the fixed
+coefficient. Allow a unit modulus \(D_R\) of polynomial
+height chosen by the record. A sign prescribed by an
+original congruence only permutes its unit labels.
+
+**JRM4.** In a bin of these records with common upper
+residual raw cap \(c\), list size at most \(n^k\), and
+combined residue and logarithmic depth \(s\), the row
+count after summing the records has exponent at most
+\[
+ b+u+\min\left\{c,\ \inf_{1/2\le\vartheta\le1}
+       \left(c-\tfrac12 G_{2\vartheta}(s;\mathbf a)
+                        +\vartheta k\right)\right\}
+\]
+up to the count and bin allowances. The displayed
+profile gain is used with a common certified lower
+bound on \(G_{2\vartheta}(s_R;\mathbf a_R)\) in the bin.
+There is also a version for genuinely different
+records. If \(\mathcal B\) is the mixed label,
+\[
+ H(U\mid R)\le
+ \mathbb E\!\left[c_R-\tfrac12G_{2\vartheta_R}
+                         (s_R;\mathbf a_R)\right]
+       +\sum_{r}\Pr(R=r)\,\vartheta_r
+                      H(\mathcal B\mid R=r)+o(1),
+\]
+for \(\vartheta_R\in[1/2,1]\) chosen by the record on
+fixed finite parameter meshes. The original row entropy
+exceeds \(H(U\mid R)\) by at most \(H(R)+u+o(1)\).
+
+The first assertion is JRM1 followed by the original
+complete degree bound. For the entropy version, rank the
+actual conditional label probabilities in each record
+state and bin the ranks dyadically. If the rank is \(j\),
+the normalized log of the upper size of its bin is
+at most \(\log_n j+\log_n 2\), which is at most the
+realized conditional surprise plus \(\log_n 2\).
+Apply JRM1 on each rank bin and average. The entropy
+of the rank bin itself is height-subpower. The last
+assertion follows from the chain rule and from the
+original degree bound, which remains valid after
+conditioning. The argument uses the joint record
+once, even if its prices or its moduli depend on
+several original letters.
+
+### Explicit loss at fine residual caps
+
+Suppose \(c_R=c+o(1)\), \(s_R=s+o(1)\), with fixed
+positive \(c,s\), and \(\max_i a_{R,i}=o(1)\) in the
+height-first convention. Then the counting exponent
+in JRM4 is at most
+\[
+ b+u+c-\ell(c,s)\bigl(\min(c,s)-k\bigr)_++o(1),
+ \qquad
+ \ell(c,s)=\begin{cases}
+ 1& s\le c/2,\\
+ c/(2s)& c/2\le s\le c,\\
+ 1/2& s\ge c .
+ \end{cases}
+\]
+In fact, if \(a_*=\max_i a_i\) and \(T=(s-a_*)_+>0\), take
+\(h_i=\lceil T/a_i\rceil\) on each positive-cap slot.
+At \(w_i=1/h_i\), its gain is \(a_i\ge T w_i\), because
+\(h_i a_i\le T+a_i\le s\). If the total weight is at
+most \(2\vartheta\), use every slot. Otherwise scale
+the weights proportionally to total \(2\vartheta\) and
+use concavity. This proves \(G_{2\vartheta}(s;\mathbf a)
+\ge\min(c,2\vartheta T)\); the reverse bound with \(s\)
+uses the total cap and the slope bound. Minimizing
+\(\vartheta k-\min(c,2\vartheta s)/2\) on
+\([1/2,1]\), together with the trivial raw price,
+gives the formula. The choices of depth, count margin
+and permitted maximum slot cap precede the height
+limit. When \(s\le c/4\) with arbitrary caps, the same
+linear loss \(s-k\) holds for \(k\le s\). If a slot
+has cap at least \(s\), apply the elementary one-slot
+test following JRM1. Otherwise
+\(\sum_i 1/\lceil s/a_i\rceil\ge c/(2s)\ge2\);
+the full linear moment gain \(G_2=2s\) is then
+available at \(\vartheta=1\).
+
+For example, suppose the tested role has original cap
+\(d=1/3\), and the joint record captures full mass
+\(f=d-c\) on it. In the fine-layer range \(s\le c/2\)
+the rows have a fixed power saving if
+\[
+                         s-k>b-f+u
+\]
+by a fixed margin. The charge on the right can be
+arbitrarily small at near-zero multiplicity for a
+raw-tight record. At the exponent scale the simpler
+square-root list test would require
+\(s-k>2(b-f+u)\). The improvement applies even
+when different record states choose different probes.
+Equivalently, on a full-exponent law with
+\(\Delta=c-H(U\mid R)\) and common fine \(c,s\),
+the conditional mixed entropy is at least
+\(\min(c,s)-\Delta/\ell(c,s)-o(1)\).
+In particular shallow list entropy loses at most
+\(\Delta\) for \(s\le c/2\), compared with the
+\(2\Delta\) loss from the square-root estimate.
+These tests still require an actual list deficit
+to exclude a chart. The strict fixed-shift estimates
+supply no such deficit solely from a broad valuation
+spectrum or from a common full divisor.
+[Optimized fixed-shift and raw-floor tests](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md#sharp-raw-active-floor-envelope)
+
+
+### Collision and pointwise versions
+
+In one record state, assume the maximum mass of a
+complete value is at most \(n^{-a}\). With
+\(\beta=G_{2\vartheta}(s;\mathbf a)/2-(c-a)\),
+JRM1 applied to the \(j\) largest label probabilities
+gives
+\[
+      p_j\le n^{-\beta+o(1)}j^{\vartheta-1},
+           \qquad p_j\le 1/j .
+\]
+When \(\beta>0\), sum the squares of the first bound
+up to \(j=n^{\beta/\vartheta}\) and use the second
+bound thereafter. The two sums are
+\(O(n^{-\beta/\vartheta+o(1)})\), with a harmonic
+factor at \(\vartheta=1/2\). This proves a collision
+entropy lower bound \(\max(0,\beta/\vartheta)-o(1)\),
+uniformly with the inner counting allowance.
+At \(\vartheta=1\) the same lower bound holds for
+min-entropy. Thus the explicit fine-layer bounds
+on the conditional entropy also hold for collision
+entropy with \(\Delta=c-a\) when the pointwise complete
+mass bound is available in that state.
+
+In particular for \(s\le c/2\) in the fine-layer
+case, a single pair consisting of the full-factor
+record and a mixed label carries at most
+\(n^{u+c-s+o(1)}\) original rows. Any pooled list of
+such pairs of exponent \(\omega\) then has row
+exponent at most \(\omega+u+c-s+o(1)\).
+This needs no uniform bound on the number of
+allowed labels per record. For \(c=d-f\) it saves
+if \(\omega<f+s-u\) by a fixed margin. With arbitrary
+layer caps the same assertion holds at \(s\le c/4\).
+[Full-exponent three-letter chart and degrees](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#regular-balanced-cohorts-and-absolute-residue-pricing)
+· [One-label loss at arbitrary shallow caps (SGM1)](ABC_SECANT_GCD_MEAN_OVERLAPS.md#a-one-residue-count-at-low-combined-depth)
+
+
+## Fine residual caps from small individual primes
+
+**JRM5.** Fix \(a>0\) and take an exact-valuation box at
+fixed \(L\). It suffices for the fine-layer estimates
+that each varying individual prime is at most \(n^a\).
+An exact valuation layer of large mass may be divided
+into subroots of caps at most \(2a+o_X(1)\), with total
+cap equal to the residual radical cap up to \(o_X(1)\).
+The number of subroots is bounded at each fixed budget
+and fixed valuation truncation.
+
+Indeed, within each integer order put the distinct
+prime factors in increasing order. Greedily multiply
+consecutive primes into a squarefree block until the
+normalized size first reaches \(a\), then start a new
+block. Every completed block has mass in \([a,2a]\)
+and there is at most one smaller block per order.
+A total raw cap \(r\) therefore bounds the number of
+completed blocks by \(r/a\). Preserve the original
+order on every block. Fix their number per order and
+dyadically bin their actual sizes. The fixed number
+of blocks makes this a height-subpower refinement;
+the sum of the new upper caps is at most
+\(r+O_{L,a}(1/\log n)\). Padding by unit roots
+is harmless. For any fixed full-factor record do
+this on its remaining exact factors. The largest
+original valuation layer imposes no restriction on
+the new moment cap.
+
+The factors at orders above \(K/L\) have total raw mass
+at most \(H/K\) on values \(\le X^H\). They may be placed
+in the full record before this argument, at that
+arbitrarily small raw cost. Both the order truncation
+and the required size \(a\) are fixed before the height
+limit. Different fixed records and coefficient choices
+translate the real bins and the unit residues exactly
+as in JRM4.
+[Exact-layer moments and conditional records](#optimized-list-prices-after-full-factor-records)
+
+### Retaining the nonatomic mass after large-prime fixing
+
+On a balanced sequence with scaled valuation measure
+\(\nu\) of mass \(d=1/3\) on the tested role, record
+the full powers on primes larger than \(n^a\), with
+\(a>0\) fixed. The recorded mass \(f\) satisfies
+\(\limsup f\le d-\nu_{\rm na}([0,\infty))\), before
+the arbitrarily small extra valuation-tail charge.
+Indeed there are at most \((d+o(1))/a\) such primes.
+Each has scaled order \(L v_p\le H/a\) on values up
+to \(X^H\). Along a subsequence the sizes and scaled
+orders of these finitely many marked primes converge,
+after padding with zero masses. Their limiting
+submeasure is atomic and is dominated by \(\nu\).
+This proves the inequality, including when a marked
+order tends to zero. The argument applies uniformly
+on anatomic size boxes converging to \(\nu\), by
+taking a violating sequence of actual rows if needed.
+
+A mass bin \(f\) costs at most \(n^{f+o(1)}\) full
+records by radical enumeration followed by
+fixed-support enumeration. At zero complete
+multiplicity an exponent-full chart therefore has
+a subchart of exponent at least \(d-f-o(1)\) after
+selecting one record, with residual cap \(d-f+o(1)\).
+An initial cheap lock and the extra high-order tail
+record are charged separately. The residual cap is
+at least the original nonatomic mass up to the stated
+errors. The upper bound \(2a\) on block masses is
+available even when the original chart has
+macroscopic atomic exact layers. At a balanced
+endpoint at least two roles have nonatomic mass at
+least \(1/6\). Hence arbitrarily fine block caps
+with at least that residual mass can be obtained
+on a tested role, while a different role supplies
+an economical lock. This is a claim about the
+retained full-factor chart; selecting its record
+can cost a positive exponent in the original family.
+[Pairwise nonatomic constraints](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees)
+· [Uniform enumeration on fixed supports (EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
+
+## Pair mass in large and small mixed cells
+
+**JRM6.** On a fixed full-factor chart of actual rows,
+let one complete role have residual cap \(r>0\), maximum
+slot cap \(a_*\), and original complete-degree cap \(n^u\).
+Assume its uniform row law has size \(N\ge n^{r-\eta_0}\).
+Take a unit modulus and logarithmic bins of combined
+depth \(0<s<r\), at fixed distance from \(r\). Let
+\(p_j\) be the mixed cell probabilities in decreasing
+order and put
+\[
+ \vartheta=\min(1,r/(2s))>1/2,\qquad
+ \mu=u+\eta_0+\vartheta a_* .
+\]
+All displayed exponents may absorb an arbitrary fixed
+positive count and box allowance. By JRM1 and the
+fine-slot gain preceding JRM4,
+\[
+                     p_j\le
+ n^{-\vartheta s+\mu+o(1)}\,j^{\vartheta-1}.
+\]
+Indeed each value has probability at most \(n^u/N\)
+and \(G_{2\vartheta}\ge 2\vartheta(s-a_*)_+\), with the
+inequality weakened to zero if \(a_*\ge s\).
+
+For fixed \(0<\rho<s\), the cells of probability at least
+\(n^{-s+\rho}\) together have squared mass at most
+\[
+                n^{-s+2\mu-(2\vartheta-1)\rho+o(1)}.
+\]
+There are at most \(n^{s-\rho}\) such cells. Sum the square
+of the rank bound up to this rank, using
+\(\sum_{j\le J}j^{2\vartheta-2}\ll(1+\log J)J^{2\vartheta-1}\).
+The cells of probability at most \(n^{-s-\rho}\)
+have total squared mass at most \(n^{-s-\rho}\)
+by the trivial \(L^1\) bound. The total squared mass
+is at least \(n^{-s-o(1)}\) by the number of possible
+joint labels. Thus if
+\[
+                  2\mu<(2\vartheta-1)\rho
+                  \quad\hbox{and}\quad r-\eta_0>s
+\]
+by fixed margins, all but a power-small fraction
+of same-cell ordered distinct-row pairs fall in
+cells with between \(N n^{-s-\rho}\) and
+\(N n^{-s+\rho}\) rows. The second margin lets one
+subtract the diagonal \(N\) from the pair count.
+Repeated complete values on the tested role account
+for at most \(N n^u\) ordered pairs, which are also
+power-small when \(r-\eta_0-u>s\). The upper bound
+on the discarded portion follows from the squared
+mass and so controls the pair population, rather
+than merely the mass of individual rows.
+
+These statements use a fixed modulus and the actual
+mixed cells within each record. For the near-occurrence
+application take \(\rho\), the depth margin and the
+desired count margin first, then take the budgets
+and individual prime caps sufficiently small, fixing
+large primes as in JRM5 when needed. Every use of
+the moment estimate takes the height limit before
+the small-budget limit. The saving deteriorates at
+\(s=r\), where the reciprocal exponent is \(1/2\)
+and the upper-tail argument has no power margin.

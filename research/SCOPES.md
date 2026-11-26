@@ -5823,7 +5823,7 @@ Tracked obligations from the catalogue:
 
 **Topic scope:** Factorial moment functionals, composition rigidity and Strong Factorial families. One varying exponent also permits any independent common monomial factor, with all terminals covered.
 
-**Computed obligation progress:** 52 open; 30 proved / discharged.
+**Computed obligation progress:** 53 open; 30 proved / discharged.
 
 **Authored scope assessment:** Unrestricted FC and SFC remain open. Universal special-family theorems do not supply an arbitrary-support reduction.
 
@@ -6004,6 +6004,8 @@ Tracked obligations from the catalogue:
 **Authored scope assessment:** One-private profiles satisfy all-degree angular separation if twice the total private exponent plus the shared absolute curvature is at least thirteen. A separate explicit weak-tail hypothesis gives all-order physical coprimality with a single private unit and arbitrary signed shared gap.
 
 **Authored scope assessment:** Standard SFC(2) and SFC(3) count variables. Exact support-size windows for homogeneous binary quadratics are proved; arbitrary inhomogeneous binary quadratics and full dimension-two/three SFC remain separate open goals. Two-monomial profile results do not imply them.
+
+**Authored scope assessment:** Ramified native pattern and unadjusted odd highblock congruence are proved. The actual monic ordinary Anti gateH remains OPEN; a proved one-way conditional context H=>universalT3 is recorded, with existing equivalences and b0 implication unchanged. No formal quotient/factor transfer or fullbinary/SFC2/SFC3 closure is claimed.
 
 ### BINOMIAL-IRREDUCIBILITY-REDUCTIONS
 
@@ -15189,6 +15191,210 @@ Tracked obligations from the catalogue:
 
 **Current blockers:** none in declared routes.
 
+### FACTORIAL-MULTIVARIATE-WEAK-TAIL-MULTIPLE-ROOT-RESPONSE
+
+[Multiple-root separation under arbitrary weak ordinary tails](factorial/image-rigidity/MULTIVARIATE_WEAK_TAIL_MULTIPLE_ROOT_RESPONSE.md)
+
+**Exact scope:** Scaled Hermite zeros separate all noncentral branches of equal-argument core clusters under arbitrary sufficiently weak ordinary tails. At odd central pairs there are algebraic angular and physical radial tests, including a prime-adic isolated conjugate-pair certificate. The tests permit controlled approximation of the reference and give finite-height certificates at affordable integer twists.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-ORDERED-OPPOSITE-PAIR-RADIAL-CLOSURE
+
+[Exact radial separation for ordered opposite factorial pairs](factorial/image-rigidity/MULTIVARIATE_ORDERED_OPPOSITE_PAIR_RADIAL_CLOSURE.md)
+
+**Exact scope:** Any ordinary mirrored core with arbitrary same-gap opposed pairs of consistently ordered midpoints, with one strict ordering, has all-degree physical coprimality under a uniform per-pair curvature bound. An exact skew criterion uses only the odd part to compare the radial departure from the circle reference.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-ORDERED-GAP-MASS-RADIAL-CLOSURE
+
+[Exact radial separation under ordered integer gap matching](factorial/image-rigidity/MULTIVARIATE_ORDERED_GAP_MASS_RADIAL_CLOSURE.md)
+
+**Exact scope:** At any mirrored core, arbitrary ordered gap-mass matches imply all-degree physical coprimality under the stated absolute relative-gap and smaller-row curvature controls. This includes unbounded inflation and regrouping, and a higher-order convex matching of crossing scale distributions.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-MONOTONE-GAP-UPPER-CLUSTER-CLOSURE
+
+[All-degree closure for monotone gap counts in an upper cluster](factorial/image-rigidity/MULTIVARIATE_MONOTONE_GAP_UPPER_CLUSTER_CLOSURE.md)
+
+**Exact scope:** An ordinary large-gap upper cluster with monotone gap counts at each height and orientation has all-degree physical coprimality under the stated retained prime-mass allowance. The gap ratio and number of heights may grow without bound. The proof uses discrete convexity of literal marked factorial-factor counts.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-GCD-FREE-TRUNCATED-SMITH-SIEVE
+
+[Truncated Newton Smith widths without prime factorization](factorial/image-rigidity/MULTIVARIATE_GCD_FREE_TRUNCATED_SMITH_SIEVE.md)
+
+**Exact scope:** A common monomial Newton chart gives exact finite-precision Smith upper bounds on the common-factor width at every prime in the coefficient support. Rational pivot valuations and saturated gcd splitting avoid prime factorization, with reduced denominator, degree, and projective factor applications.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-QUADRATIC-RAMIFIED-NATIVE-DIVIDED-POWER-PATTERN
+
+[Ramified native divided-power pattern and whole-packet bounds](factorial/image-rigidity/QUADRATIC_FACE_FORCING_HALF_VALUATION_DIVIDED_POWER_PATTERN.md)
+
+**Exact scope:** Exact native integral table and nonreduced finite-degree Hensel inheritance for n1or2mod4, including ordinary coefficient extra bounds and low degree root spectra. This is unconditional and does not imply the missing ordinary Anti bound.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-QUADRATIC-NATIVE-ODD-HIGHBLOCK-ANTI-CONGRUENCE
+
+[Unadjusted odd native high-block Anti congruence](factorial/image-rigidity/QUADRATIC_ODD_NATIVE_HIGH_BLOCK_ANTI_CONGRUENCE.md)
+
+**Exact scope:** The all-range v2Anti(E_j)>=rho+3/2 theorem for the native unadjusted odd high block, at the same z in degrees p andS and with required rational unitc. Both scalar and low-shift arithmetic are proved; no actual factor transfer is concluded.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-QUADRATIC-HALF-BRANCH-CONDITIONAL-MONIC-ANTI-REDUCTION
+
+[Conditional half-branch reduction to a monic ordinary Anti gate](factorial/image-rigidity/QUADRATIC_HALF_VALUATION_MONIC_ANTI_GATE_CONDITIONAL_CLOSURE.md)
+
+**Exact scope:** The implication H=>half-branch exclusion is proved using the ramified native factor input, both derivative orientations and monic coefficient split. With exact CLASS this gives H=>existingU over all characteristic-zero fields. H remains OPEN; this record proves a conditional reduction, not H, U, b0, fullbinary or SFC2/SFC3.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-STATIONARY-CENTRAL-WEAK-TAIL-JETS
+
+[Stationary central roots and the compactification of weak-tail jets](factorial/image-rigidity/MULTIVARIATE_STATIONARY_CENTRAL_WEAK_TAIL_JETS.md)
+
+**Exact scope:** For arbitrary weak ordinary shared tails, the odd central root has an explicit uniform second angular coefficient. Arbitrary finite normalized factorial jet statistics have an exact compactification with quantitative finite algebraic outer approximations, even at fixed integer signed gap. Strict tests across the compact set exclude stationary odd-branch angular contacts and physical integer-twist contacts in all degrees.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-TRANSVERSE-TAIL-RESPONSE-POLYTOPE
+
+[Sharp second-order tail interval at positive Gaussian contacts](factorial/image-rigidity/MULTIVARIATE_TRANSVERSE_TAIL_RESPONSE_POLYTOPE.md)
+
+**Exact scope:** An explicit four-vertex polytope gives the exact limiting signed skew, quartic and center statistics at positive strength and fixed signed gap. It gives a uniform interval for arbitrary ordinary tails at simple transverse contacts. Projected joint equations give unrestricted-tail exclusions for simultaneous distinct simple limiting pairs under the stated rank and separation tests. If every physical contact is simple and all two-pair tests pass, the only possible nonconstant gcd is a single simple irreducible quadratic. Balanced families give further all-degree exclusions.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-COMPLETE-SHIFT-BLOCK-DELETION
+
+[Exact deletion of complete exponent shift blocks](factorial/image-rigidity/MULTIVARIATE_COMPLETE_SHIFT_BLOCK_DELETION.md)
+
+**Exact scope:** A literal boundary-product identity gives a composite modulus for transfer from retained factorial resultants after appending complete ordinary shift blocks, including cases where first residue coprimality fails. Independent lifts and repetitions give such all-degree extensions with arbitrary positive limiting diffuse strength.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-SPREAD-OUT-PRIVATE-PRIME-DENSITY
+
+[All-degree separation for most spread-out ordinary tails](factorial/image-rigidity/MULTIVARIATE_SPREAD_OUT_PRIVATE_PRIME_DENSITY.md)
+
+**Exact scope:** For original independent exponent choices in sufficiently long, possibly different consecutive windows, an exponentially small exceptional proportion remains outside adaptive private-prime certificates or the absolute curvature theorem. The test allows arbitrary gaps, subject to the natural aggregate bound when curvature can be less than twelve, and a specified number of forbidden prime supports from a retained part. Balanced windows can approach any positive diffuse strength.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-DENSE-CLUSTERED-UNIT-GAP-CLOSURE
+
+[All-degree closure for dense clusters of unit-gap rows](factorial/image-rigidity/MULTIVARIATE_DENSE_CLUSTERED_UNIT_GAP_CLOSURE.md)
+
+**Exact scope:** A deterministic large-prime argument gives ordinary all-degree coprimality for sufficiently narrow, densely occupied bands of unit-gap rows with arbitrary orientation multiplicities. Arbitrarily many distinct heights and every prescribed positive limiting diffuse strength are possible. Varying retained primes are permitted under the stated distinct-prime budget.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-SIGNED-CORE-REPLACEMENT-CONTACTS
+
+[Signed contact equations for changing ordinary factorial cores](factorial/image-rigidity/MULTIVARIATE_SIGNED_CORE_REPLACEMENT_CONTACTS.md)
+
+**Exact scope:** Every bounded-curvature sequence with stabilized row multiplicities admits signed response equations for additions and omissions relative to its countable limiting core. The joint limiting region gives necessary bias and simultaneous-pair conditions, with comparable or asymptotically equal second-order contributions under the stated strict tests. Exact ordinary replacements realize cancellation through second order at every infinite core and through arbitrarily high order at some countable cores.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-COUNTABLE-CORE-CURVATURE-HEIGHT-SEPARATION
+
+[Curvature and height bounds for countable ordinary cores](factorial/image-rigidity/MULTIVARIATE_COUNTABLE_CORE_CURVATURE_HEIGHT_SEPARATION.md)
+
+**Exact scope:** At a positive algebraic Gaussian strength, shared reference arguments impose a computable inverse-power bound on omitted curvature relative to the factorial height of every finite truncation. The metric analogue bounds the Hausdorff dimension for exceptionally fast-decaying countable cores. A common decay bound gives uniform all-degree transfer without a retained or appended row-count cap at a prescribed positive algebraic strength.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-QUADRATIC-PRINCIPAL-DIVISOR-LOG-HEIGHT
+
+[Prime-support logarithmic height bounds for a quadratic common factor](factorial/image-rigidity/MULTIVARIATE_QUADRATIC_PRINCIPAL_DIVISOR_LOG_HEIGHT.md)
+
+**Exact scope:** An effective logarithmic approximation bound for a quadratic factor's angle or scaled root charges the number and logarithms of its actual prime divisors and the order of one principalization subgroup. This permits moving fields and primes. At a nonattained contact, bounded fields and a fixed spread-prime set force faster than polynomial growth of the trace denominator in reciprocal diffuseness.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+### FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS
+
+[Universal factorial marks from the coefficient envelope](factorial/image-rigidity/MULTIVARIATE_UNIVERSAL_ENVELOPE_MARKS.md)
+
+**Exact scope:** For arbitrary original ordinary rows every even terminal has a literal factor in one parent absent on a nonempty coefficient interval of width at most one. Exact odd corner classification, prime overlap inequalities and a factorization-free secant criterion constrain common factors. Growing mark windows force a quantified large-prime overlap budget under the stated curvature cap.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -15246,6 +15452,7 @@ Tracked obligations from the catalogue:
 | FACT-MULTIVARIATE-CRITICAL-QUARTIC-ROOT-SPEED | claim | proved / partial | For the positive indexed roots of the real quartic Fourier model, on the subcritical scaling side one has 3y-2t*y'>0 by the Rayleigh equation and the Airy bound. On the other side the finite-degree motion theorem transfers monotonicity to the simple quartic zeros. | [factorial/image-rigidity/MULTIVARIATE_DIFFUSE_MOVING_CRITICAL_WINDOW.md](factorial/image-rigidity/MULTIVARIATE_DIFFUSE_MOVING_CRITICAL_WINDOW.md): A quartic root-speed inequality and The bounded moving critical field |
 | FACT-MULTIVARIATE-CUBIC-ZERO-TEMPERATURE-WINDING-CHECKS | claim | proved / partial | The three rectangles of the certificate have exact argument-principle counts 2, 1 and 1, including multiplicity, by certified Arb enclosure and rational polygon winding. | [factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_ZERO_TEMPERATURE.md](factorial/image-rigidity/MULTIVARIATE_HALF_LINE_CUBIC_ZERO_TEMPERATURE.md): Bounded winding certificate; [factorial/image-rigidity/verify_half_line_cubic_zero_temperature.py](factorial/image-rigidity/verify_half_line_cubic_zero_temperature.py): Enclosed Arb evaluations, ODE bounds on the image of the boundary and exact rational winding |
 | FACT-MULTIVARIATE-DEGREEWISE-SCHUR-SZEGO-OBSTRUCTION | claim | proved / partial | Two explicit rational palindromic, positive, binomial-normalized log-convex cubic–quartic pairs each strictly interlace on the circle. Degreewise Schur–Szegő composition produces a cubic and quartic with a common nonreal conjugate quadratic factor. These inputs need not be moment polynomials of Gamma supports. | [factorial/image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md](factorial/image-rigidity/MULTIVARIATE_MIRRORED_ROOT_CIRCLE.md): Obstruction to varying the composition degree |
+| FACT-MULTIVARIATE-DENSE-CLUSTERED-UNIT-GAP-CLOSURE-REPLAY | claim | proved / partial | Exact finite checks of marked ramps, Newton slopes, deep certificates, normalized arithmetic progressions, and retained-prime overlap. | [factorial/image-rigidity/verify_multivariate_dense_clustered_unit_gap_closure.py](factorial/image-rigidity/verify_multivariate_dense_clustered_unit_gap_closure.py): Exact finite checks of marked ramps, Newton slopes, deep certificates, normalized arithmetic progressions, and retained-prime overlap. |
 | FACT-MULTIVARIATE-DIFFUSE-AIRY-TO-REGULAR-MATCH | claim | proved / partial | On compact subcritical s bands, the two-packet continuation above the edge matches the bounded Airy window. Its phase increment between consecutive orders is strictly between -pi and zero outside a fixed bounded scaled window and sufficiently near the edge, by the explicit leading r^3 term and its relative errors. | [factorial/image-rigidity/MULTIVARIATE_DIFFUSE_LOW_TEMPERATURE_INTERLACING.md](factorial/image-rigidity/MULTIVARIATE_DIFFUSE_LOW_TEMPERATURE_INTERLACING.md): Intermediate arguments above the subcritical edge |
 | FACT-MULTIVARIATE-DIFFUSE-BOUNDED-AIRY-EXCLUSION | claim | proved / partial | Uniformly on compact a=s/2 bands in (0,2), all sufficiently large orders exclude consecutive coincidence in any fixed bounded n^(2/3)-scaled window about the edge. A one-saddle estimate also excludes all angles below the edge in such bands. | [factorial/image-rigidity/MULTIVARIATE_DIFFUSE_LOW_TEMPERATURE_INTERLACING.md](factorial/image-rigidity/MULTIVARIATE_DIFFUSE_LOW_TEMPERATURE_INTERLACING.md): The bounded Airy window in the subcritical range |
 | FACT-MULTIVARIATE-DIFFUSE-CRITICAL-LOCAL-PHASE-EXCLUSION | claim | proved / partial | At s=4 the differentiable quartic Fourier scaling excludes common roots in each bounded scaled angular window. The intermediate one-packet derivative estimate excludes them for all sufficiently small angles outside a bounded scaled window. | [factorial/image-rigidity/MULTIVARIATE_DIFFUSE_CRITICAL_COUPLING.md](factorial/image-rigidity/MULTIVARIATE_DIFFUSE_CRITICAL_COUPLING.md): The bounded quartic window and Intermediate small positive arguments |
@@ -15305,6 +15512,7 @@ Tracked obligations from the catalogue:
 | FACT-MULTIVARIATE-SHARED-SUPPORT-CONDITIONAL-INTEGRAL | claim | proved / partial | For every fixed ordinary profile with both exponents positive at each differing coordinate, the moment has the exact one-dimensional conditional integral analytic in the stated strip. The rational stationary map has exactly two nonexterior critical points counted with multiplicity. Two exhaustive nondegenerate contributors at a limiting common zero must satisfy the stated linked phase equality. | [factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md](factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md): An exact conditional integral, Stationary equation and its critical points, and Comparing the two terminal orders |
 | FACT-MULTIVARIATE-SHARED-SUPPORT-SPARSE-PRIME-POLYGONS | claim | proved / partial | In the stated near-prime range the mixed-profile Newton polygons reduce to the endpoints of a bounded number of plateaus. Exact factorial units give the nonhorizontal residuals and a smaller-order residual on the nested-profile zero slope. The mixed-sign example defeats the latter reduction. | [factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md](factorial/image-rigidity/MULTIVARIATE_SHARED_SUPPORT_CONDITIONAL_SADDLE.md): Nearby-prime Newton polygons |
 | FACT-MULTIVARIATE-SIMULTANEOUS-PRIME-POWER-OBSTRUCTION | claim | proved / partial | At any fixed terminal and any positive open curvature interval, fully shared ordinary profiles without reversed unequal rows reproduce both consecutive binomial polynomials at every member of a fixed finite prime-power list. | [factorial/image-rigidity/MULTIVARIATE_PADIC_DIGIT_AUTOMATON.md](factorial/image-rigidity/MULTIVARIATE_PADIC_DIGIT_AUTOMATON.md): The simultaneous finite-precision obstruction |
+| FACT-MULTIVARIATE-SPREAD-OUT-PRIVATE-PRIME-DENSITY-REPLAY | claim | proved / partial | Exact finite checks of private-prime certificates, forbidden-prime removals, rational expectations, and native factorial ordinates. These controls do not establish the asymptotic theorem. | [factorial/image-rigidity/verify_multivariate_spread_out_private_prime_density.py](factorial/image-rigidity/verify_multivariate_spread_out_private_prime_density.py): Exact finite checks of private-prime certificates, forbidden-prime removals, rational expectations, and native factorial ordinates. These controls do not establish the asymptotic theorem. |
 | FACT-MULTIVARIATE-SUBCRITICAL-UPPER-SADDLE-PHASE-MATCH | claim | proved / partial | For mirrored unit-gap rows (m,m+1) and (m+1,m), m>=3, distinct regular upper saddles can have equal stationary exponentials and equal consecutive multipliers. The rational certificate at m=9 places both in the conditional strip. Actual consecutive moment interlacing still holds in the same profiles. | [factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_SADDLE_PHASE_MATCH.md](factorial/image-rigidity/MULTIVARIATE_SUBCRITICAL_SADDLE_PHASE_MATCH.md): The phase polynomial and A match inside the conditional integration strip |
 | FACT-MULTIVARIATE-TERMINAL-EIGHT-HIGH-CURVATURE-REPLAY | claim | proved / partial | Six rational ray cosines and the two binomial anchor sign sequences certify 82 radial cells. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_HIGH_CURVATURE.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_HIGH_CURVATURE.md): Total curvature cap, strict ray signs, and binomial anchor counts; [factorial/image-rigidity/verify_multivariate_terminal_eight_high_curvature.py](factorial/image-rigidity/verify_multivariate_terminal_eight_high_curvature.py): Exact fixed rays at terminal eight |
 | FACT-MULTIVARIATE-TERMINAL-EIGHT-LATE-BRIDGE-REPLAY | claim | proved / partial | 327,414 strict unmarked Cayley cells and 26 and 50 grouped Rouché disk intervals for marked rows. | [factorial/image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_LATE_BRIDGE.md](factorial/image-rigidity/MULTIVARIATE_TERMINAL_EIGHT_LATE_BRIDGE.md): Profiles without a marked row, Profiles with a marked unit-gap row, and Sector conclusion; [factorial/image-rigidity/verify_multivariate_terminal_eight_late_bridge.py](factorial/image-rigidity/verify_multivariate_terminal_eight_late_bridge.py): Terminal-eight late shared bridge replay |
@@ -15426,6 +15634,7 @@ Tracked obligations from the catalogue:
 | FACT-MULTIVARIATE-UNIFORM-BOTH-PRIVATE-LINEAR-ESTIMATES | claim | proved / partial | For ordinary profiles with exactly two opposing private linear rows, uniform geometric endpoint halves and the bounded-scale Fourier integral exclude common roots along every curvature regime at unbounded orders. | [factorial/image-rigidity/MULTIVARIATE_BOTH_PRIVATE_UNIFORM_EVENTUAL.md](factorial/image-rigidity/MULTIVARIATE_BOTH_PRIVATE_UNIFORM_EVENTUAL.md): Curvature bounded away from zero, Small curvature with nW unbounded, and Small curvature with bounded nW |
 | FACT-MULTIVARIATE-UNIFORM-STATIONARY-BOUNDARY-ESCAPE-EXCLUSION | claim | proved / partial | Centered stationary preimages of any compact target subset of the negative strip lie in a fixed compact part of the upper half-plane on a bounded positive curvature band, including varying support size and private rows. | [factorial/image-rigidity/MULTIVARIATE_UNIFORM_SADDLE_MAP_COMPACTNESS.md](factorial/image-rigidity/MULTIVARIATE_UNIFORM_SADDLE_MAP_COMPACTNESS.md): Escape to infinity and Approach to the finite real boundary |
 | FACT-MULTIVARIATE-UNIFORM-SUPERCRITICAL-ORDER-DRIFT | claim | proved / partial | A proposed common root pair has two bounded centered scales at the same limiting equal-modulus point. The stationary phase drift for nonzero total-degree difference excludes equality, and at equal degree the nonzero phase or positive real amplitudes give the exclusion. | [factorial/image-rigidity/MULTIVARIATE_UNIFORM_SUPERCRITICAL_SUPPORTS.md](factorial/image-rigidity/MULTIVARIATE_UNIFORM_SUPERCRITICAL_SUPPORTS.md): Uniform comparison of consecutive orders |
+| FACT-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS-REPLAY | claim | proved / partial | Exact checks of individual mark windows, consecutive corners, native secant and layer certificates, mark progression prime bounds, and sharp odd-terminal examples. | [factorial/image-rigidity/verify_multivariate_universal_envelope_marks.py](factorial/image-rigidity/verify_multivariate_universal_envelope_marks.py): Exact checks of individual mark windows, consecutive corners, native secant and layer certificates, mark progression prime bounds, and sharp odd-terminal examples. |
 | FACT-MULTIVARIATE-VARYING-PROFILE-PHASE-COMPACTIFICATION | claim | proved / partial | Limiting analytic phase and amplitude functions on bounded midpoint-curvature bands arise from summable retained fully shared integer rows and an arbitrary allowed diffuse atom. The atom contributes only a quadratic phase term. | [factorial/image-rigidity/MULTIVARIATE_VARYING_PROFILE_PHASE.md](factorial/image-rigidity/MULTIVARIATE_VARYING_PROFILE_PHASE.md): Retained measures and the diffuse term |
 | FACT-MULTIVARIATE-VARYING-PROFILE-UNIFORM-ORDER-DERIVATIVE | claim | proved / partial | The trigamma integral gives the stated uniform analytic coefficient and consecutive increments for bounded midpoint curvature independently of dimensions and exponent maxima. The radial center shift uses the stated real trigamma integral comparison. | [factorial/image-rigidity/MULTIVARIATE_VARYING_PROFILE_PHASE.md](factorial/image-rigidity/MULTIVARIATE_VARYING_PROFILE_PHASE.md): Uniform estimates with an order derivative |
 | FACT-MULTIVARIATE-VARYING-SUBCRITICAL-LATTICE-SADDLE | claim | proved / partial | Half-grid vertical walls and the exact cotangent kernel interpolate the weighted binomial sum. The saddle is uniformly nondegenerate and the discretization error is smaller than its Gaussian term on the fixed positive sector. | [factorial/image-rigidity/MULTIVARIATE_VARYING_PROFILE_SUBCRITICAL_SADDLE.md](factorial/image-rigidity/MULTIVARIATE_VARYING_PROFILE_SUBCRITICAL_SADDLE.md): The uniformly nondegenerate saddle and The lattice sum and its contour |
@@ -15655,6 +15864,8 @@ Tracked obligations from the catalogue:
 | FACT-GLOBAL-BINOMIAL-U-NORMAL | claim | proved / partial | The full integer positive-cycle integrand is exactly q f_a+f_D after its nonzero support normalization; both own orders retain actual critical values. | [factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md](factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md): U5 |
 | FACT-GLOBAL-BINOMIAL-U-ORDER | claim | proved / partial | A bad pair forces J<4log(8N); for J>=1, D/a<=4J. This controls the otherwise unbounded Gaussian-width ratio at N and N-1. | [factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md](factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md): U1--U4 |
 | FACT-GLOBAL-BINOMIAL-G-ALGEBRAIC | claim | proved / partial | Each exceptional projective phase has a nonzero algebraic coefficient ratio, as a root of a rational consecutive gcd. This does not bound the finite set or assert its emptiness. | [factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SYNTHESIS.md](factorial/image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SYNTHESIS.md): Section5 corollary |
+| HAG-HALF-BRANCH-TRACE-AND-INVERSE-POWER-ANTI-BOUNDS | claim | proved / partial | For M1or2mod4 and positive half root z ofPi_M, the quadratic field has tracevaluation5, pi=z-trace/2 withv1/2 and pi2 rationalval1. Withu0=-M(M+1)/6, odd inverse powers have Anti(z^-l)=pi/(2u0)^((l+1)/2)*(1+epsilon),v(epsilon)>=6; evenpowers have Anti valuation>=-l/2+9/2. These all-range local facts are proved in the native congruence source independently of factor inheritance. | see incoming proof routes |
+| HAG-NATIVE-INTEGRAL-RAMIFIED-DIVIDED-POWER-PATTERN | claim | proved / partial | For any finite L/Q2 and z with v2z=1/2,z2/2=1mod2O_L, normalized reciprocal native T_m has integral divided-power coefficients. The exact O_L/2O_L table is oddm:(1,1+lambda,0,1) and evenm:(1,1,1,0), repeated modulo4, lambda2=0 andlambda=2/z. This retains nilpotents and is not merely residue-field parity. | see incoming proof routes |
 | FACT-HIGHER-GAP-ADJOINT-RANK-COR-DET | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex: For $\widehat{\mathcal J}$ defined as in (9) with $0\le k\le d-1$, \[ \det\widehat{\mathcal J}(z)= \left(\prod_j\omega_j^n\right) \left(\prod_{i<j}(\omega_j-\omega_i)\right)R(z). \tag{11} \] | [factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex](factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex): cor:det;line156 |
 | FACT-HIGHER-GAP-ADJOINT-RANK-THM-AUX | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex: Define $B=B_{n,\gamma,d}$ by either of the equivalent formulas \[ B(z)=\sum_{j=0}^n n_{\underline j}c_jz^{n-j},\qquad \sum_{j\ge0}c_jx^j=(1-x)^{-\gamma} \left(\frac{1-(1-x)^d}{dx}\right)^{-n-1}. \tag{3} \] Then $B_{0,\gamma,d}=1$ and \[ B_{n+1,\gamma,d}=(z+dn+\gamma+d-1)B_{n,\gamma,d} -zB_{n,\gamma,d}'. \tag{4} \] For every $d$th root of unity $\omega$ the function \[ f_\omega(z)=e^{-\omega z}z^{1-M}B(\omega z) \tag{5} \] is a solution of the formal adjoint $L^*f=0$, on local branches away from zero. These $d$ solutions are linearly independent. | [factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex](factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex): thm:aux;line38 |
 | FACT-HIGHER-GAP-ADJOINT-RANK-THM-INITIAL | claim | proved / partial | In the exact notation/hypotheses of factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex: For every integer $d\ge1$, every $\gamma>0$, and $1\le n\le4$, $T_{n,\gamma,d}$ is squarefree. Consequently $X(A+BX^d)$ has no consecutive zero Gamma moments with terminal order at most four, for every positive shape and every gap. | [factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex](factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex): thm:initial;line229 |
@@ -15887,6 +16098,8 @@ Tracked obligations from the catalogue:
 | FACT-GLOBAL-BINOMIAL-S-CIRCLE | claim | proved / partial | The exact model inverse geometry gives one global maximum on the circle gap and two equal strict horizontal maxima on the complementary arcs, with only two simple edges. | [factorial/image-rigidity/COMPACT_SUPERCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md](factorial/image-rigidity/COMPACT_SUPERCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md): A9--A15 |
 | FACT-GLOBAL-BINOMIAL-L-WHOLE | claim | proved / partial | Intermediate real tails have quartic loss and whole physical tails retain a fixed gap, with actual critical powers kept before taking a large order. | [factorial/image-rigidity/LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md](factorial/image-rigidity/LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md): L3 |
 | FACT-GLOBAL-BINOMIAL-U-TAILS | claim | proved / partial | Both seam losses, full Gamma L1 tails and the stronger left cross-tail bound hold even for bounded a or unbounded D/a. | [factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md](factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md): U6--U11 |
+| HAG-NATIVE-UNADJUSTED-ODD-HIGHBLOCK-ANTI-CONGRUENCE | claim | proved / partial | Choose odd p=M orM-1=1mod4, p=e+S with HIGHEST binarye=2^rho>=4,S1mod4. For the samez in both degrees and c=prod_(a=S+1)^p(2a-1)^-1, E_j=(2^j/j!)(b_(e+j)^p-c*b_j^S) has v2Anti(E_j)>=rho+3/2 for every0<=j<=S. The proof is all-range, including j0, l1/3/5/7 and the only l3/l5 cancellation atj1. This is not a formal quotient or actual Newton-factor estimate and does not prove H. | see incoming proof routes |
+| HAG-RAMIFIED-HENSEL-WHOLE-NEWTON-FACTOR-INHERITANCE | claim | proved / partial | For n1or2mod4 the native polynomial factors into packets of every binary degreee>=4 and final degreeepsilon=nmod4, by an invertible fixed-degree Hensel map over O_L/2O_L. Monic reciprocal packets have constant valuation1, roots1/e, base v(a_j)>=s2(e-j); for n1mod4 add1 atj2/3mod4, for n2mod4 add1 at all jnot0mod4. Final degree1 roots havev1 and finaldegree2 rootsv1/2. Packets need not be irreducible overL; no Anti gate follows from these bounds. | see incoming proof routes |
 | FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-QUINTIC-ANNULUS-FLAGS | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex: Write $J_{n,\delta}=B_{n,2n+\delta,3}$ for $\delta\in\{1,-1,-3\}$, and let $n=5\ell+s$, $0\le s<5$. For $0<r=v_5(z)<1/5$, this polynomial has a unique least-valuation monomial, of degree $5\ell+e_{s,\delta}$ and with unit coefficient, where \[ \begin{array}{c\|ccccc} \delta\backslash s&0&1&2&3&4\\\hline 1&0&1&1&1&3\\ -1&0&0&1&1&1\\ -3&0&0&0&2&4 \end{array} . \] For $m=5\ell+s$ with $s=2$ or $3$, put $L=5\ell+1$. The further flag \[ F=C-(5m+3-L)B=(z-(zD_z-L))B \] has a unique least-valuation monomial of degree $L+2$ and unit coefficient throughout the same annulus. | [factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex): lem:quintic-annulus-flags |
 | FACTORIAL-GAP-RANK-CRITERION | claim | proved / partial | For n>=1,gamma>0,d>=2 and z0!=0, transformed R has repeated root iff J(z0) has rank <d-1; squarefreeness iff minors have no common nonzero root. | [factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex](factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex): thm:rank |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-GAP-THREE-OFFSET-TWO-RANK | claim | proved / partial | In the exact definitions of factorial/image-rigidity/lower_exponent_initial_and_boundary.tex: For every real $\gamma>0$ and $z_0\ne0$, the two equalities $T_{m,\gamma,3}(z_0^{-3})=T_{m+1,\gamma+2,3}(z_0^{-3})=0$ hold if and only if the matrix \[ \bigl[C(\omega^jz_0),H(\omega^jz_0)\bigr]_{j=0,1,2}, \qquad\omega=e^{2\pi i/3}, \] has rank less than two. No simplicity assumption on the lower moment is required. | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): thm:gap-three-offset-two-rank |
@@ -16021,6 +16234,7 @@ Tracked obligations from the catalogue:
 | FACT-GLOBAL-BINOMIAL-S-FOLD | claim | proved / partial | The exact global fold-horizontal quartic maximum and right cubic exits identify the actual complete cycle, not a Scorer or arbitrary Airy combination. | [factorial/image-rigidity/COMPACT_SUPERCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md](factorial/image-rigidity/COMPACT_SUPERCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md): A14--A17 |
 | FACT-GLOBAL-BINOMIAL-L-FOLDCLASS | claim | proved / partial | The exact finite horizontal at omega=-2i/3 has strict outside quartic loss. The right exit orientation supplies one Ai cycle and excludes the high upper saddle. | [factorial/image-rigidity/LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md](factorial/image-rigidity/LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md): Section5 |
 | FACT-GLOBAL-BINOMIAL-U-MORSE | claim | proved / partial | The removable family H_b for b in[0,1] has exact curvature minus1 and uniform local derivatives. Cross terms vanish uniformly as J grows. | [factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md](factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md): U12--U16 |
+| HAG-BOTH-PARITIES-FORCED-MONIC-DERIVATIVE-VALUATION | claim | proved / partial | A hypothetical half-valued triple at middleM selects odd p1mod4. The even neighbor p+1 excludes the final degree1 root, includingp1 itself. A remaining rootbeta=4r/z lies in a unique whole packete>=4,vbeta1/e. Correct lower-pair formula for oddM and upper-pair formula for evenM force v(Pp_prime)=s2p+1-2/e and v(g_e_prime)=ell+2-(S+2)/e. No packet irreducibility or incorrect preceding zero is assumed. | see incoming proof routes |
 | FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-LEM-QUINTIC-FIVE-ADIC-BOUNDARY | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex: For every $m\ge1$, the cyclic rows of $(C,H)$ have rank two at every $u$ with $v_5(u)=3/5$. | [factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex): lem:quintic-five-adic-boundary |
 | FACT-GAP-THREE-HURWITZ-STRUCTURE-LEM-CRITICAL-IDEAL | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/gap_three_hurwitz_structure.tex: At every complex parameter and every $z\ne0$, the ideal generated by $R,R'$ equals, up to invertible changes of generators, the ideal of maximal minors of the first $d-1$ adjoint-jet columns. After removing gauges and applying the cyclic Fourier transform, this is the ideal $(D_0,\ldots,D_{d-1})$ at $u=z^d$. | [factorial/image-rigidity/gap_three_hurwitz_structure.tex](factorial/image-rigidity/gap_three_hurwitz_structure.tex): lem:critical-ideal |
 | FACT-GAP-THREE-HURWITZ-STRUCTURE-LEM-NO-ORIGIN | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/gap_three_hurwitz_structure.tex: For every complex $\gamma$, the cyclic matrix $M(0)$ has rank $d-1$. | [factorial/image-rigidity/gap_three_hurwitz_structure.tex](factorial/image-rigidity/gap_three_hurwitz_structure.tex): lem:no-origin |
@@ -16141,6 +16355,7 @@ Tracked obligations from the catalogue:
 | FACT-GLOBAL-BINOMIAL-L-LOGS | claim | proved / partial | The physical zero-free strip, proper cubic negative-real sheet and shared low midpoint give exact partial periods and support-fixed complex-order Cauchy bounds. | [factorial/image-rigidity/LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md](factorial/image-rigidity/LARGE_THERMAL_QUARTIC_FOLD_MATCHING.md): Sections5--6 |
 | FACT-GLOBAL-BINOMIAL-U-CAPTURE | claim | proved / partial | At the two orders constrained by the old sparse theorem, complete exterior packets exclude \|q\|<=1/2 and \|q\|>=2. This is not an unconditional individual-root annulus. | [factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md](factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md): U17 |
 | FACT-GLOBAL-BINOMIAL-U-PACKETS | claim | proved / partial | The exact integer seam split has two actual leading powers and own-width O(1/m) remainders. Its leading amplitude derivative is bounded despite the support-fixed log width. | [factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md](factorial/image-rigidity/UNRESTRICTED_SMALL_RATIO_GAMMA_TWO_WELL_EXCLUSION.md): U18--U22 |
+| HAG-MONIC-ANTI-HYPOTHESIS-IMPLIES-HALF-BRANCH-EXCLUSION | claim | proved / partial | PROVED IMPLICATION ONLY: assuming H exactly as quantified, every half-valuation forcing triple is impossible. Native bounds pass to rational coefficient parts; H bounds the ENTIRE anti derivative above tau. Rational derivative summands then have unique fractional parts and forcej0=e-S-1=2mod4 with rational coefficient valuationell, contradicting the inherited extra boundell+1. No proof of H or of an actual-factor transfer is supplied. | see incoming proof routes |
 | FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-THM-QUINTIC-FIVE-ADIC-PAIR-RADIUS | claim | proved / partial | For every integer m>=1, set B=B_(m,2m+1,3), C=B_(m+1,2m+1,3), D=B_(m+2,2m+1,3), and H=5(5m+4)D+3z^3B. A rank drop of the two three-section rows (C,H) at a nonzero cyclic argument u=z^3 over the algebraic closure of Q5 necessarily satisfies v5(u)>3/5. The valuation is normalized by v5(5)=1. The unit region, negative valuations, the entire open annulus 0<v5(u)<3/5, and its boundary v5(u)=3/5 are excluded uniformly in m. | [factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex): thm:quintic-five-adic-pair-radius |
 | FACT-GAP-SIX-BOUNDARY-COUPLED-FROBENIUS-PROP-AFFINE-SATURATION-CRITERION | claim | proved / partial | In the exact definitions and domains of factorial/image-rigidity/GAP_SIX_BOUNDARY_COUPLED_FROBENIUS.tex: [A conditional affine saturation criterion] Fix $n\ge2$. Starting with $\mathsf M_n$, permit finitely many integral Laurent row and column operations that are invertible over $\mathcal O$ at every $v\in\mathcal O^\times$, and divisions by seven of globally seven-divisible rows or columns. For example, square row or column multiplier matrices whose determinants reduce to nonzero Laurent monomials are permitted. Suppose the resulting matrix $\mathsf N_n$ is integral Laurent and some finite integral Laurent combination of its six maximal minors is a Laurent polynomial $g\in\mathbb Z_7[v,v^{-1}]$ with \[ \bar g=a+bv\ne0,\qquad a,b\in\mathbb F_7. \] Then $T_{n,n,6}$ is squarefree. In particular every nonzero ordinary phase $X(A_0+B_0X^6)$ has a nonzero moment at orders $n-1,n$. More generally, the same conclusions follow if $\mathsf M_n$ has at most one distinct rank-drop point on $\mathcal O^\times$. These are conditional criteria; no uniform saturation certificate is asserted. | [factorial/image-rigidity/GAP_SIX_BOUNDARY_COUPLED_FROBENIUS.tex](factorial/image-rigidity/GAP_SIX_BOUNDARY_COUPLED_FROBENIUS.tex): prop:affine-saturation-criterion |
 | FACT-GAP-THREE-HURWITZ-STRUCTURE-THM-DISCRIMINANT | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/gap_three_hurwitz_structure.tex: For every pair of integers $n,d\ge1$, the following is a polynomial identity in $\gamma\in\mathbb C$, with $N=\binom n2$: \[ \operatorname{Disc}_t T_{n,\gamma,d} =(-1)^N d^N \left(\prod_{k=1}^n k^k\right) \left(\prod_{k=1}^{n-1}(\gamma)_{dk}\right) \mathcal D_{n,d}(\gamma). \] In particular, for $\gamma>0$, $T_{n,\gamma,d}$ is squarefree if and only if $\mathcal D_{n,d}(\gamma)\ne0$. | [factorial/image-rigidity/gap_three_hurwitz_structure.tex](factorial/image-rigidity/gap_three_hurwitz_structure.tex): thm:discriminant |
@@ -16251,6 +16466,7 @@ Tracked obligations from the catalogue:
 | FACT-REGIONAL-BINOMIAL-C-TRANSPORT | claim | proved / partial | Both endpoint captures force lambda->1 and d/N->0 before the path is used. Exact stationarity gives the negative L times saddle-separation drop, while only endpoint error values are needed. | [factorial/image-rigidity/COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md](factorial/image-rigidity/COMPACT_SUBCRITICAL_RATIO_UNIFORM_EVENTUAL_SFC.md): S17--S19 |
 | FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH | claim | proved / partial | In the exact definitions and hypotheses of factorial/image-rigidity/lower_exponent_initial_and_boundary.tex: Every nonzero ordinary univariate binomial $X^a(A+BX^d)$, with integers $a\ge0,d\ge1$, has a nonzero factorial moment in the pair of orders four and five. Thus every consecutive pair of positive factorial moments with terminal order at most five contains a nonzero moment, for every ordinary univariate binomial. | [factorial/image-rigidity/lower_exponent_initial_and_boundary.tex](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex): thm:ordinary-fifth |
 | UNP-RESONANT-COMMON-DEGREE-INTERSECTION | claim | proved / partial | A dense quadratic triple-zero block startingn forces oddq=-c/b=n+2,s2(q-1)>=4 and a common rational factor degree1<=d<=q-2 divisible byD(q-1). For EVERY oddp prime toq, d belongs to BOTH native capacity sets C_(q-2,p),C_(q-1,p). Exact oldUQR local resonance/even/binary gates are explicit imports only for this optional assembly. No assertion all such intersections are empty. | see incoming proof routes |
+| HAG-MONIC-ANTI-HYPOTHESIS-IMPLIES-UNIVERSAL-FORCING-CONTEXT | claim | proved / partial | PROVED IMPLICATION ONLY: H implies existing universalT3 assertion U. The local conditional half theorem and the separately required exact CLASS put any characteristic-zero triple in an algebraic coefficient field whose 2-adic embedding lies in the half branch. This gives a contradiction underH. No converse U=>H is asserted. Native high-block and the symmetric application recurrence are not premises of this H=>U context. | see incoming proof routes |
 | Q12-SYMMETRIC-FIVE-MOMENT-PREFIX-THROUGH-2641 | claim | proved / partial | For every characteristic-zero field,aec!=0, arbitrary b and1<=n<=2641, f=a(x2+y2)+bxy+e(x+y)+c has a nonzero factorial moment amongn..n4. The required SBQ recurrence turns five M zeros into three normalized T zeros with middlem=n3; the required QTF family theorem gives the exact actual zq/r common pair. Finite q1/q2 coprimeness excludes both, next eligibleq5 givesm2645,n2642. This is not a proof of the infinite b0 target. | see incoming proof routes |
 | QTF-SYMMETRIC-FIVE-WINDOW-RESIDUAL-START-NECESSITY | claim | proved / partial | Using the separately required SBQ interior recurrence, for every characteristic-zero field and ec!=0 any five-zero M block of a(x2+y2)+bxy+e(x+y)+c starts at n=q(4q+3)^2-3 with q1or2mod4. In particular every n<=45 is excluded. This is a necessary residual condition, not full b0 or full binary closure. | see incoming proof routes |
 | QTF-UNIVERSAL-RESIDUAL-PAIR-EQUIVALENCE-CONTEXT | claim | proved / partial | Assertion U is the universal no-three-zero T window over every characteristic-zero field with z!=0. Assertion R is for every q1or2mod4, m=q(4q+3)^2 and Lq=Q(omega),omega2=-3q(q+1), gcd in Lq[r] of T_(m-1)(r,zq),T_m(r,zq) equals1, zq=-8q(q+1)(2q+1)+omega. U implies R via syzygy2a and nonzero D; R implies U via exact classification and Bezout transfer, with conjugation handling the other sign. This is an equivalence context and seeds neither assertion. | see incoming proof routes |
@@ -16616,6 +16832,7 @@ Tracked obligations from the catalogue:
 - **QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW** (mathematical; open): OPEN universal assertion U of Proposition3: for every characteristic-zero K, all r,z with z!=0 and k>=1, at least one T_k,T_(k+1),T_(k+2) is nonzero. Local branch exclusions and necessary residual classification do not seed this assertion.
 - **QTF-OPEN-EXCEPTIONAL-QUADRATIC-FAMILY-PAIR-COPRIMALITY** (mathematical; open): OPEN assertion R of Proposition3: for every q>=1,q1or2mod4, m=q(4q+3)^2 and zq=-8q(q+1)(2q+1)+omega in Q(omega),omega2=-3q(q+1), the adjacent r-polynomials T_(m-1),T_m are coprime. Conjugation covers both signs; this universal assertion is not established by finite diagnostics.
 - **Q12-OPEN-EXCEPTIONAL-PAIR-COPRIMALITY-TAIL-Q-GE-FIVE** (mathematical; open): OPEN: for every integerq>=5,q1or2mod4,m=q(4q+3)^2,Lq=Q(omega),omega2=-3q(q+1),zq=-8q(q+1)(2q+1)+omega, prove gcd_(Lq[r])(T_(m-1)(r,zq),T_m(r,zq))=1. The minus sign is conjugate. Two finite proved cases and an equivalence context do not seed this infinite tail.
+- **HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND** (mathematical; open): OPEN HypothesisH, with FULL quantifiers: for EVERY M>=2,M1or2mod4, every cubic half root z,v2z1/2, K=Q2z and coefficient Anti=(a-sigma(a))/2, choose odd p=M ifModd elseM-1. For EVERY higher binary degree e>=4 occurring in p, S=pmod e,ell=s2S, and EVERY j<e in the ACTUAL native MONIC whole packetg_e(V)=V^e Q_e(1/V)/Q_e0, require v2Anti(a_j)>=ell+2. Not only one selected root, highest packet, bounded sample, formal quotient or arbitrarily scaled factor. This strong sufficient statement is NOT proved and has no converse from U.
 
 Tracked obligations from the catalogue:
 
@@ -16656,6 +16873,7 @@ Tracked obligations from the catalogue:
 - **QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW — mathematical; open.** [Exclude every three-zero quadratic forcing block at all positive starts; the proved local exclusions leave an exact exceptional family.](factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md)
 - **QTF-OPEN-EXCEPTIONAL-QUADRATIC-FAMILY-PAIR-COPRIMALITY — mathematical; open.** [Prove all exceptional quadratic-field adjacent-pair coprimeness assertions, q1or2mod4, equivalent to the universal forcing gate.](factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md)
 - **Q12-OPEN-EXCEPTIONAL-PAIR-COPRIMALITY-TAIL-Q-GE-FIVE — mathematical; open.** [Prove adjacent-pair coprimeness for every eligible exceptional q>=5; the two smaller eligible cases are now exactly certified, but no infinite tail is seeded.](factorial/image-rigidity/QUADRATIC_FACE_FORCING_FIRST_TWO_RESIDUAL_PAIRS.md)
+- **HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND — mathematical; open.** [Prove the FULL universal actual monic ordinary Anti-coefficient bound H for every statedM,z,chosenoddp,ALLhigherbinarypackets andALLj<e. No arbitrary factor rescaling, native block or bounded diagnostic substitutes for this gate.](factorial/image-rigidity/QUADRATIC_HALF_VALUATION_MONIC_ANTI_GATE_CONDITIONAL_CLOSURE.md)
 
 ## Dixmier and Weyl algebras
 
@@ -38272,6 +38490,552 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Written argument with scoped theorem inputs.
 
+### ARITH-ABC-BALANCED-CELL-CODEGREE-THRESHOLD-ACTUAL-CHART-PRICE
+
+[Finite-price full-divisor charts have an exact codegree threshold](arithmetic/ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md)
+
+**Exact scope:** RT9. In exponent-full balanced cell bins with original u and fixed chart exponent loss f, RB2 and the original dictionary cap imply the oriented path entropy threshold max(0,u-2f) when f<u. A uniform codegree cap q gives chart saving min(u,(u-q)/2) before paying f, and the abstract cell inequalities admit equality.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-BALANCED-REVERSE-TRANSFER-SHARP-RAW-ACTIVE-FLOOR-ENVELOPE
+
+[The diffuse uniform profile has a sharp positive raw active-floor excess](arithmetic/ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md)
+
+**Exact scope:** RAE1. On the formal profile (1/3)Unif[2,4], optimize arbitrary stripping of mass 1/3-2t and raw-priced paid removal F<t for 0<t<=1/6. The exact height-floor score has the stated two branches at t*=(3-sqrt(3))/9. After arbitrary prescribed stripping, raw half and nonatomic tests optimize at no further fixing. Retained escaped moment only increases the ideal quantile price.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-FULL-FACTOR-CONDITIONAL-OPTIMIZED-MIXED-LIST-COUNT
+
+[Paid full factors and interpolated moments give stronger occupied-list savings](arithmetic/ABC_JOINT_REAL_RESIDUE_MOMENTS.md)
+
+**Exact scope:** JRM4. A joint full-factor record may choose its own unit modulus, interval bins and conditional exact-layer caps. Optimize all JRM1 interpolation parameters. For fine residual caps at shallow combined depth s<=c/2 the list deficit has full rather than half weight, saving on original balanced rows if s-k>b-f+u by a fixed margin. The average-price and pooled record-label variants retain all original caps.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-FULL-FACTOR-MIXED-OPTIMIZED-CONDITIONAL-COLLISION-PRICE
+
+[Rank tails extend the optimized list bound to conditional collision entropy](arithmetic/ABC_JOINT_REAL_RESIDUE_MOMENTS.md)
+
+**Exact scope:** On each actual residual record state with a complete-value maximum mass bound, split conditional label probabilities at the matching power rank. This gives the optimized conditional collision entropy at all mixed depths. At full linear list price the same lower bound holds for min-entropy.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-JOINT-POLYNOMIAL-PROBE-MODEL-AT-BALANCED-OCCURRENCE
+
+[Joint conditional probe identities admit a diffuse interpolation model](arithmetic/ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md)
+
+**Exact scope:** At zero multiplicity, evaluation slots and disjoint-point remainder chains on one uniformly random polynomial attain the full conditional depth law for every prescribed coordinate and prefix set. Prime palettes realize the diffuse valuation dictionary data. The model does not realize the arithmetic probes or the original primitive additive rows.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-FULL-FACTOR-COLLISION-WEIGHTED-CODEGREE-ROW-COUNT
+
+[Collision-weighted codegrees charge the actual remaining anchor radical](arithmetic/ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md)
+
+**Exact scope:** RT10. In genuine shared-label cells sum the codegree inequalities to bound E by D_U+sqrt(Q D_U sum_j y_j^2). A deep lock charges the actual postrecord raw anchor cap; an actual shallow or mixed shared label charges its measured collision entropy, with JRM4 as a sufficient estimate. The path version permits weighted conditional fixed-shift price averages and retains all caps.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-BALANCED-ROW-RECORD-RAW-PRICE-CODEGREE-BARRIER
+
+[Balanced record capture needs a further numerical or conditional codegree discount](arithmetic/ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md)
+
+**Exact scope:** RT11. Joint row-level records on the anchor and another original lift role having full capture f_V,f_Z and entropy budget b necessarily pay 2b>=f_V+f_Z under the cheap third role lock. The deep-lock RT10 test with q=(d-f_Z)/2-Delta therefore needs Delta>d/2-u+2b-f_V-f_Z/2, at least d/2-u+f_Z/2 up to allowances. This applies to the specified record comparison, not to path-dependent support stripping.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-BBLT-CLOSED-BUDGET-AND-SCALED-ABOVE-ONE-CONSEQUENCE
+
+[The closed BBLT program yields a unit-budget and above-one bound](arithmetic/ABC_PRIMARY_BOUNDS_AND_POINTWISE_BRIDGES.md)
+
+**Exact scope:** PBP1. The exact height-first projection gives N_lambda(X)<<X^(3/5+(8/5)(lambda-1)_++epsilon) for fixed 0<lambda<=2. At lambda<=1 the constant is uniform by monotonicity. This is a local deduction from the source program, whose Theorem 1.3 states lambda<1, and is dominated by later local fixed-budget bounds.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-PASTEN-POINTWISE-TWO-PARAMETER-RADICAL-CUTOFF
+
+[Pasten's pointwise result gives a smoothness or separation radical cutoff](arithmetic/ABC_PRIMARY_BOUNDS_AND_POINTWISE_BRIDGES.md)
+
+**Exact scope:** PBP2. For primitive positive sums the maximum of log(c/min(a,b)) and (log c)/q is at most exp(K sqrt(log R log log R)), with q the least largest prime factor. Invert explicitly. A fixed beta power of log c in either term forces log R >= (beta^2/(2K^2)-o(1))(log log c)^2/log log log c. This controls shrinking budgets, not the unrestricted fixed-budget exponent.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-EXACT-VALUATION-SUBROOTS-AND-RETENTION-OF-NONATOMIC-MASS
+
+[Small individual primes allow fine exact subroots after full-factor recording](arithmetic/ABC_JOINT_REAL_RESIDUE_MOMENTS.md)
+
+**Exact scope:** JRM5. Greedily split each exact valuation layer when its individual primes are small and bin actual sizes so the total raw cap is preserved. The fixed record of large primes removes only atomic weak mass. It leaves a full residual chart at zero multiplicity with at least the original nonatomic cap, after paying its actual raw price.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-MIXED-RESIDUE-REAL-LABEL-POWER-TAIL-FOR-PAIR-MASS
+
+[A fixed power tail controls the size of cells seen by actual pairs](arithmetic/ABC_JOINT_REAL_RESIDUE_MOMENTS.md)
+
+**Exact scope:** JRM6. Use the optimized reciprocal exponent theta>1/2 at any combined depth s<r to bound the total squared mass of oversized cells on a full residual chart. Small cells and diagonals also have power-small pair mass under the stated degree and depth margins. It is pair pruning rather than only individual row pruning.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-PRIMITIVE-OUTPUT-VISIBLE-AND-ERASED-SUPPORT-RESTORATION
+
+[Visible common support is recoverable from primitive outputs](arithmetic/ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md)
+
+**Exact scope:** ESL1-ESL2. Each visible outside common prime loses two occurrences in primitive normalization and each erased one loses three. Given a tall primitive output with bounded raw radical, charge only the erased support and restore arbitrary powers. The resulting one-third count is controlled by the original total minus twice the visible common mass.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-TWO-ROLE-PRIMITIVE-OUTPUT-RESTORATION-PRICE
+
+[Two-role radical prices also survive primitive output restoration](arithmetic/ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md)
+
+**Exact scope:** ESL2a. Apply the two-cheapest-role bound to primitive normalization after fixing prescribed support. Paying the missing common primes once gives the average of the two compensated charged caps. The third radical cap is required for the relevant small-budget count.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-NEAR-SPLICE-ALL-STRICT-DEPTHS-COMPENSATED-JOINT-RADICAL
+
+[All strict subterminal near splices have a compensated joint radical floor](arithmetic/ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md)
+
+**Exact scope:** ESL3-ESL4b. Restore actual primitive outputs at the one-third and two-role prices. Positive normalized numerical height follows in the indicated small-individual-prime matching chart from HPS3, even above half depth. At half depth use the two-role floor and the positive splice constraint to strengthen the compensated joint radical inequality.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-COMPENSATED-PHYSICAL-SECANT-DISPLACEMENT-COUNT
+
+[Primitive normalization bounds physical displacements with large common factors](arithmetic/ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md)
+
+**Exact scope:** ESL5. Before pricing compensated original physical differences discard numerically short affine and scalar directions. A fixed displacement gives a fixed target difference and at most the fixed-shift half price plus the original complete degree in lifts. The physical compensated cap below 3/2-3u_C loses a fixed power under the specified allowances.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-COMMON-ANCHOR-UNION-PRIMITIVE-SUPPORT-RECOVERY
+
+[The union of primitive branch supports restores one common anchor](arithmetic/ABC_SHARED_ANCHOR_PRIMITIVE_BRANCH_COUNTS.md)
+
+**Exact scope:** SAB1. For fixed branching number restore an original common anchor from the union of all primitive branch supports and pay only the support absent throughout. Primitive heights and raw caps meet the stated thresholds. The separate two-role bound keeps the original role-wise losses on each branch.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-COMMON-ANCHOR-FIRST-GLOBAL-BRANCH-FIXED-FIBRE-RESTORATION
+
+[One global branch reduces the other restored branches to fixed fibres](arithmetic/ABC_SHARED_ANCHOR_PRIMITIVE_BRANCH_COUNTS.md)
+
+**Exact scope:** SAB2. Count one distinguished branch globally, restore the anchor once, then use fixed-letter half counts on the other branches. Actual near-splice and same-target stars admit this count with the stated degree losses and primitive height floors.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-HYBRID-FULL-CELL-POSITIVE-MEAN-SPLICE-GCD-POWER-RARITY
+
+[Extra splice gcds of positive mean occur in power-few full hybrid cells](arithmetic/ABC_RECURRING_SPLICE_GCD_CELL_COST.md)
+
+**Exact scope:** RSC1. Axis interpolation forces a repeated actual marked divisor when the mean excess is positive. A variable cross-cell catalogue is charged by the JRM1 list exponent at depth s+b. The explicit kappa margin covers every fixed s<d at u=0 subject to the original hypotheses.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-HYBRID-FULL-CELL-LOGARITHMIC-SPLICE-GCD-TAIL
+
+[Most full cells have a conditional logarithmic extra-gcd tail](arithmetic/ABC_RECURRING_SPLICE_GCD_CELL_COST.md)
+
+**Exact scope:** RSC2. A growing but polylogarithmic anchor packet and divisor selection retain power rarity of exceptional cells. In the remaining full cells the fraction of paths with a fixed excess normalized gcd is bounded by a negative power of log X.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-HYBRID-ALL-SUBTERMINAL-DEPTHS-SAME-ROLE-OVERLAP-POWER-TAIL
+
+[Same-role overlaps are power-rare up to every fixed subterminal depth](arithmetic/ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md)
+
+**Exact scope:** HPO1. In a full fine hybrid cell a fixed anchor supplies an actual divisor to catalogue. Stripping that divisor gives a mixed list bound at its smaller residual cap. This yields the explicit positive-u and depth margin and removes nonvanishing pair overlap at zero multiplicity.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-HYBRID-SUBTERMINAL-PHYSICAL-SHIFTS-ESCAPE-FIXED-RADICAL-CAPS
+
+[Typical physical differences in full hybrid cells escape every fixed outside radical cap](arithmetic/ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md)
+
+**Exact scope:** HPO2. A compact positive band supplies a tall primitive comparison after the overlap pruning. Using the two endpoint caps in the primitive and restored count handles any fixed outside shift cap and any prescribed polynomial-height pool. The budget threshold is chosen after the proposed cap.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-HYBRID-PRIMITIVE-CROSS-SPLICES-ESCAPE-FIXED-RADICAL-CAPS
+
+[Typical positive cross splices escape every fixed outside radical cap](arithmetic/ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md)
+
+**Exact scope:** HPO3. Colour roles to make the actual splice operands coprime, count with the two operand caps, then restore their original complete degrees. At every strict subterminal depth in a zero-degree matching the fixed outside-radical cap contributes power-few pairs.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-HYBRID-ARBITRARY-PROFILE-LARGE-PRIME-RECORD-PHYSICAL-SHIFTS
+
+[Large-prime records extend the hybrid physical shift exclusion to atomic profiles](arithmetic/ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md)
+
+**Exact scope:** HPO4. Pay the complete large-prime record and retain the nonatomic mass of the tested role. The new root subdivision and squared-mass pruning permit the physical shift exclusion at any fixed depth below that mass. The degree-zero balanced charts give a depth below 1/6 without requiring the original fine exact-layer hypothesis.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-DIFFUSE-BROAD-PROFILE-OPTIMIZED-COMMON-REPAIR-OBSTRUCTION
+
+[Unequal common repairs leave a sharp scalar obstruction on a broad diffuse profile](arithmetic/ABC_DIFFUSE_REPAIR_AND_BASIS_OBSTRUCTIONS.md)
+
+**Exact scope:** DB1. Use the exact mandatory multiplier for three unequal orders on the formal Uniform[2,4] profile. Optimizing GU2 requires the specified quotient saving delta>1/9 to improve on the one-third coefficient in this profile test.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-DIFFUSE-BROAD-PROFILE-WEIGHTED-HEIGHT-REPAIR-OBSTRUCTION
+
+[Finite weighted-height slack does not remove the broad-profile repair barrier](arithmetic/ABC_DIFFUSE_REPAIR_AND_BASIS_OBSTRUCTIONS.md)
+
+**Exact scope:** DB2. The formal broad-profile test optimizes the weighted-height expression with actual finite slack up to the stated range, and gives the exact conditional gap required for a strict count improvement.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-DIFFUSE-ADAPTIVE-BASIS-CORRECTION-WIDTH-ENTROPY-TRADEOFF
+
+[Broad exact-order entropy imposes an adaptive valuation basis cost](arithmetic/ABC_DIFFUSE_REPAIR_AND_BASIS_OBSTRUCTIONS.md)
+
+**Exact scope:** DB3. An integer valuation representation by fixed-rank base exponents and a signed correction has the stated product tradeoff between root multiplicity means and numerical correction width. Radix digits attain its scale. This is not an exclusion of all adaptive bases.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-POSITIVE-DENSITY-COPRIME-POWERFUL-SHORT-WINDOWS
+
+[Coprime powerful occupants of one-sided short windows have positive-density centres](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md)
+
+**Exact scope:** CPW1. For fixed k and any fixed m, positively many centres q in a fixed top shell have m pairwise coprime k-full integers in ((q-1)^k,q^k), all coprime to q. The actual primitive two-cap examples reach the 1/3 limiting radical coefficient with the shift radical unrestricted.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-COPRIME-POWERFUL-SHORT-WINDOWS-GROWING-FULL-SHIFT-DIVISOR
+
+[Coprime short-power windows allow a growing full prime-power shift divisor](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md)
+
+**Exact scope:** CPW2. At fixed k and m prescribe a common exact p-adic valuation j=floor(gamma log_p Q) on the short differences, retaining Q^(1-(m+1)gamma) centres for sufficiently small fixed gamma. The numerical lock weight gamma/k vanishes in the small-budget limit. The third radical cap remains uncontrolled.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-WEIGHTED-COMMON-POWER-LOCAL-PRIME-POOL-SUBSPACE-BOUND
+
+[A fixed moving-prime pool bounds weighted power pairs with a short outside shift](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md)
+
+**Exact scope:** CPW3. Both signs and unrelated positive coefficients are covered. Normalize algebraic local roots at good primes, combine with the real discrepancy, and use the Evertse–Ferretti theorem after an exponentially sized weight catalogue. At large root heights count primitive pairs by exp(O_(k,eta)(1+|S|)), uniformly in S and the value of the coefficients.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-WEIGHTED-COMMON-POWER-MOVING-FULL-DIVISOR-PRICE
+
+[Two weighted powers and a full divisor on the third letter admit a small lift price](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md)
+
+**Exact scope:** CPW4. After paying the actual coefficient and lock support records, the large-root lift costs subpower. The complementary small roots cost exponent 2/[3(k+2)k^2]. A lock of weight w with kw>2+eta suffices without an Archimedean gap; in the near-power window kw>1+eta suffices.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-BALANCED-ADAPTIVE-COMMON-POWER-THIRD-LETTER-LOCK-SAVING
+
+[An adaptive common order above the cube-root scale gives a strict sector saving](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md)
+
+**Exact scope:** CPW5. At each fixed sufficiently small L, two exact weighted power letters with adaptive common k above K_0 where L^(1/3)K_0 tends to infinity and a cheap good full divisor on the third letter have a strict one-third sector saving. Require f+mu<=1/3-delta and a fixed positive lock weight. Treat unbounded orders by direct enumeration first. A diffuse third letter supplies a cheap lock when the two coefficient records are already affordable.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-COMPRESSED-REMAINDER-VALUATION-PROFILE-ATOMICITY
+
+[A small cofactor and boundedly many short roots force atomic residual valuations](arithmetic/ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md)
+
+**Exact scope:** CRP1. A fixed-support bounded-root description with a vanishing numerical correction has purely atomic weak residual valuation measures even with overlapping same-role supports and drifting orders. The outside measure is dominated by the original measure.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-COMPRESSED-DIFFUSE-PAIR-JOINT-RECORD-PRICE
+
+[Two compressed diffuse roles pay their actual joint record price](arithmetic/ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md)
+
+**Exact scope:** CRP2 and CRP2a. Atomic residuals after the full factors are fixed give costs from the two cheapest remaining radical caps and from fixed-fibre atomicity. At balance a pair with one wholly nonatomic role needs full exponent from its joint record.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-ATOMIC-RESIDUAL-TO-VANISHING-WIDTH-ROOT-COMPRESSION
+
+[Atomic residuals admit bounded roots at vanishing numerical width](arithmetic/ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md)
+
+**Exact scope:** CRP3. After the support fixing, select finite atom windows and fix the remaining full factors at arbitrarily small raw cost. Exact positive corrections give a bounded root record with vanishing numerical height. No stretched-width conclusion follows from weak atomicity.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-ATOMIC-VALUATION-LIMIT-STRETCHED-WIDTH-COUNTERMODEL
+
+[An atomic weak profile can require almost complete fixing at stretched width](arithmetic/ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md)
+
+**Exact scope:** CRP4. Prime palettes across widths of order 1/log(1/L) give tall capped actual integers with weak measure (1/3)delta_3 but force a record of raw mass 1/3-o(1) in any fixed-rank representation with correction at the specified stretched scale.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-TWO-COMPRESSED-LETTERS-FIXED-POSITIVE-FULL-DIVISOR-RELEASE
+
+[A fixed full modulus releases two compressed letters at numerical width](arithmetic/ABC_FIXED_FULL_DIVISOR_TWO_LETTER_RELEASE.md)
+
+**Exact scope:** FD1. Two bounded-root letters with sufficiently small fixed numerical cofactors leave a subpower normalized count when a prescribed coefficient carries a positive-weight full divisor. Concentrate the third letter by cheap-block tests and release it using the prescribed modulus.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-TWO-DIVISOR-RECORDS-FIXED-NUMERICAL-COFACTOR-WIDTH-SAVING
+
+[Tall two-divisor records give a saving at a fixed numerical quotient width](arithmetic/ABC_FIXED_FULL_DIVISOR_TWO_LETTER_RELEASE.md)
+
+**Exact scope:** FD2. A joint record of price f leaving two sufficiently short numerical quotients, with one original selected letter tall, counts at exponent f+eta. The tall fixed divisor provides a full large modulus. The bounded-root version requires one large fixed divisor explicitly.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-TWO-RESIDUAL-NONATOMIC-MASSES-CONDITIONAL-FULL-DIVISOR-BOUND
+
+[A full-divisor fibre exponent is at most either residual nonatomic pair mass](arithmetic/ABC_FIXED_FULL_DIVISOR_TWO_LETTER_RELEASE.md)
+
+**Exact scope:** FD3. With one known positive-weight full divisor, compress the two selected residual letters at their nonatomic mass costs and apply FD1 or the direct ratio release. A joint record leaving atomic residuals on two original roles has full price at the balanced endpoint if it captures the described positive band.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
+### ARITH-ABC-WEIGHTED-COMMON-POWER-JOINT-THREE-LETTER-LOCK-PRICE
+
+[The weighted-power Subspace Theorem bound uses full parts of all three letters](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md)
+
+**Exact scope:** CPW6. At root primes use coordinate forms so their local exponents add to the third-letter root-difference exponents. Enumerate the joint support and disjoint role allocations at one combined radical price. The no-gap sufficient threshold is w_U+w_V+k w_h>2+eta; the short-window threshold is 1+eta.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written argument with scoped theorem inputs.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -38457,6 +39221,7 @@ Tracked obligations from the catalogue:
 | EXT-ABC-ALVANOS-BILU-POULAKIS-TWO-POLE-UNIT-ARGUMENT | claim | proved / partial | The genus-zero two-pole characterization uses a function with divisor the difference of the poles and the bounded denominator of this function and its inverse at integral points. | [arithmetic/sources/alvanos-bilu-poulakis-integral-curves-0907.2097v1.pdf](arithmetic/sources/alvanos-bilu-poulakis-integral-curves-0907.2097v1.pdf): Theorem 1.1 and §2 |
 | EXT-ABC-ARANGO-PINEROS-SPHERICAL-PRIMITIVE-ASYMPTOTIC | claim | proved / partial | At fixed nonzero coefficients and spherical signature with a primitive point, the number of projective ratios up to height X is asymptotic to a positive constant times X^chi with error O(X^(chi/2+epsilon)). No extra radical restrictions on the three letters are imposed. | [arithmetic/sources/arango-pinero-spherical-2508.13093v2.pdf](arithmetic/sources/arango-pinero-spherical-2508.13093v2.pdf): Theorem 1.3 |
 | EXT-ABC-BBLT-ANATOMIC-REDUCTION | claim | proved / partial | For each small positive epsilon0, the restricted count with c~X and rad(abc)~c^lambda is bounded by X^epsilon0 times the maximum primitive signed monomial box count, with fixed d=d(epsilon0), coefficients up to X^epsilon0, and the radical and weighted height constraints of Proposition 2.1. | [arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf](arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf): Proposition 2.1, Lemma 2.2 and equations (2.1)–(2.2) |
+| EXT-ABC-BBLT-CLOSED-PROJECTED-THREE-FIFTHS-PROGRAM | claim | proved / partial | The 22 nonnegative projected variables and inequalities (6.1)-(6.10) of Proposition 6.1 imply D<=3/5. The budget hypothesis is closed, L<=1. This is a source program proposition, distinct from the scope 0<lambda<1 stated in Theorem 1.3. | [arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf](arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf): Proposition 6.1 and Appendix A |
 | EXT-ABC-BBLT-FIX-TWO-LETTERS | claim | proved / partial | Write A,B,C for the products of the respective coordinate scales. For fixed d the primitive monomial box count is O(X^epsilon min(AB,AC,BC)). | [arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf](arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf): Proposition 2.3 |
 | EXT-ABC-BBLT-GEOMETRY-BOX-BOUND | claim | proved / partial | With L the full logarithmic coordinate mass, and S,W the unweighted and weighted log mass of three freely chosen coordinate subsets, the count exponent is at most L-min(S,1-W+S) up to the decomposition error in Proposition 4.1. | [arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf](arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf): Proposition 4.1 and its proof |
 | EXT-ABC-BBLT-GROUPED-POWER-MOMENTS | claim | proved / partial | For a fixed letter of coordinate product P and a fixed j>=2, the second moment is O(X^epsilon P) and the fourth moment is O(X^epsilon P^3 divided by the product of the scales with j dividing their index). Hölder combines the three inputs. | [arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf](arithmetic/sources/bernert-browning-lichtman-teravainen-2410.12234v2.pdf): Proposition 3.1, especially equations (3.1)–(3.2) |
@@ -38492,6 +39257,8 @@ Tracked obligations from the catalogue:
 | EXT-ABC-DISCRIMINANT-MULTIPLICITY-CONJECTURE | claim | open / partial | For each fixed degree and each epsilon>0, the number of fields of the given absolute discriminant D is O(D^epsilon). This is an assumption in the support-subpower reduction for arbitrary fixed hyperbolic valuation orders. | [arithmetic/sources/pierce-turnage-butterbaugh-wood-1902.02008v3.pdf](arithmetic/sources/pierce-turnage-butterbaugh-wood-1902.02008v3.pdf): Conjecture 1.4 and Corollary 1.8 |
 | EXT-ABC-DUJELLA-BOUNDED-HEIGHT-ELLIPTIC-TORSION | claim | proved / partial | Dujella Theorem 1.1 and Corollary 1.3 over a fixed number field. With a rational point of order ell, the count at exponential height B at least exp(max(h(E),e)) is at most exp(C log B/log log B), after the fixed height comparison. The constant depends on the base and ell. | [arithmetic/sources/dujella-bounded-height-2312.03655v1.pdf](arithmetic/sources/dujella-bounded-height-2312.03655v1.pdf): Theorem 1.1 and Corollary 1.3 |
 | EXT-ABC-EDMONDS-FULKERSON-MATROID-BASE-PACKING | claim | proved / partial | Edmonds and Fulkerson, Theorem 2c, specialized to k identical matroids. A matroid on E has k disjoint bases exactly when \|E\A\| >= k(r(E)-r(A)) for every A subset E. | [arithmetic/sources/abc-edmonds-fulkerson-matroid-partition-1965.pdf](arithmetic/sources/abc-edmonds-fulkerson-matroid-partition-1965.pdf): Theorem 2c |
+| EXT-ABC-ERDOS-TURAN-KOKSMA-BOX-DISCREPANCY | claim | proved / partial | Niederreiter Lemma 2. For a finite sequence in the unit m-cube and frequency cutoff H>=1, extreme box discrepancy is bounded by O_m(H^-1 plus the sum of normalized Fourier coefficients with product reciprocal weights up to H). There is no distribution hypothesis on the sequence. | [arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md): A growing full shift divisor |
+| EXT-ABC-EVERTSE-FERRETTI-BOUNDED-ALGEBRAIC-FORMS-THRESHOLD | claim | proved / partial | Evertse–Ferretti Theorem 3.1. For the fixed exponent systems (3.7) satisfying (3.1)–(3.6), the height threshold is max((H*)^(1/(3RD)), n^(n/epsilon)). The number of proper subspaces depends only on dimension, epsilon, number R of distinct forms and individual form field degree bound D, not the primes. | [arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md): Uniform upper bounds once the shift part is larger |
 | EXT-ABC-EVERTSE-QUANTITATIVE-SUBSPACE-MOVING-PRIME-POOL | claim | proved / partial | Evertse 1996, main theorem (i) and (ii), p. 228. For fixed dimension, saving in the multiplicative inequality and a fixed bound on rational form height, the union of the large-height and small-height sections uses exp(O(\|S\|)) proper rational subspaces uniformly in the primes of S. | [arithmetic/ABC_ALMOST_UNIT_COMMON_NUMERATOR_GCD.md](arithmetic/ABC_ALMOST_UNIT_COMMON_NUMERATOR_GCD.md): Notation and quantitative input |
 | EXT-ABC-EVERTSE-SILVERMAN-SEPARABLE-TWIST-COUNT | claim | proved / partial | For a separable polynomial with S-unit discriminant over an S-integer ring, Theorem 1 bounds the number of S-integers where it takes a nonzero q-th power by exp(O(\|S\|+1)) for fixed q and fixed base and auxiliary splitting fields. It requires two roots in the auxiliary field for q>=3 and three for q=2. | [arithmetic/sources/evertse-silverman-superelliptic-counts-1986.pdf](arithmetic/sources/evertse-silverman-superelliptic-counts-1986.pdf): Theorem 1(a)–(b), pp. 237–238 |
 | EXT-ABC-EVERTSE-THUE-MAHLER-THREE-GEOMETRIC-FACTORS | claim | proved / partial | Evertse, Upper bounds for the numbers of solutions of certain diophantine equations, Theorems 5 and 6. For a binary integer form of fixed degree with at least three distinct complex linear factors, primitive supported values have a bound exponential in the number of allowed primes with constant depending on degree. Irreducibility over the rationals is not required. | [arithmetic/ABC_SHALLOW_REPAIR_RADICAL_PLANES.md](arithmetic/ABC_SHALLOW_REPAIR_RADICAL_PLANES.md): Two equal residual powers on a radical plane |
@@ -38521,6 +39288,7 @@ Tracked obligations from the catalogue:
 | EXT-ABC-RAZ-SHARIR-SOLYMOSI-BIVARIATE-GRID | claim | proved / partial | Theorem 2 bounds the count of polynomial graph triples in A times B times C by O((\|A\|^(2/3)\|B\|^(2/3)+\|A\|+\|B\|)\|C\|^(1/2)) unless the polynomial factors through additively or multiplicatively separated univariate polynomial maps. | [arithmetic/sources/raz-sharir-solymosi-elekes-ronyai-1401.7419v2.pdf](arithmetic/sources/raz-sharir-solymosi-elekes-ronyai-1401.7419v2.pdf): Theorem 2 |
 | EXT-ABC-ROSE-SUZUKI-INTEGER-SPLINE-PROJECTION | claim | proved / partial | Rose–Suzuki, Theorem 3.6, Corollary 3.9 and Section 5, for integer spline lattices on arbitrary edge-labelled graphs. | [arithmetic/ABC_GRAPH_PATH_DIVISOR_LOCKS.md](arithmetic/ABC_GRAPH_PATH_DIVISOR_LOCKS.md): Exact projection of overlapping edge records |
 | EXT-ABC-ROSEN-CYCLIC-PRIME-CLASS-RANK | claim | proved / partial | The ell-rank upstairs in a cyclic extension of degree ell is at most ell times the sum of the downstairs ell-rank and the number of ramified places, as stated in Dujella's Lemma 4.5. | [arithmetic/sources/dujella-bounded-height-2312.03655v1.pdf](arithmetic/sources/dujella-bounded-height-2312.03655v1.pdf): Lemma 4.5 |
+| EXT-ABC-ROTH-ALGEBRAIC-ROTATION-APPROXIMATION | claim | proved / partial | For every fixed real algebraic irrational beta and eta>0 one has \|\|u beta\|\| >= c(beta,eta) u^(-1-eta) for all positive integers u. The constant need not be effective. Mathematika 2 (1955), printed p.2. | [arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md](arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md): A positive-density primitive construction |
 | EXT-ABC-SHEN-RESTRICTED-PADIC-PROJECTIONS | claim | proved / partial | Under Theorem 1.8's stated exponent inequalities, power lower bound on graph size and nonconcentration for B and the slope family at intermediate radii, some allowed slope has a restricted sumset with a uniform power expansion. | [arithmetic/sources/shen-padic-projections-2607.12251v1.pdf](arithmetic/sources/shen-padic-projections-2607.12251v1.pdf): Theorem 1.8 |
 | EXT-ABC-SIGNED-QUADRATIC-THIRD-TORSION-MOMENTS | claim | proved / partial | Theorem 1.2 and Corollaries 1.3–1.4 give moments of both signs, with exponent (5k+13)/18 for 1≤k≤4. The discussion of Scholz reflection bounds the change in 3-rank between the two reflected fields by one. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Averaging and the finite affine form |
 | EXT-ABC-STEVENHAGEN-DIFFERENT-RAMIFICATION-BOUND | claim | proved / partial | Stevenhagen, Local Fields, Theorem 4.13, September 2026. For separable residue extension the local different exponent is at least e−1, with equality in the tame case. | [arithmetic/ABC_RAMIFIED_IDEAL_LIFT_COST.md](arithmetic/ABC_RAMIFIED_IDEAL_LIFT_COST.md): The local cost and a field attaining it |
@@ -38704,8 +39472,9 @@ Tracked obligations from the catalogue:
 | EXT-WOOLEY-SMOOTH-CUBIC-MIXED-SIXTH-MOMENT | claim | proved / partial | The mixed integral of \|F(alpha;P)\|^2 \|f(alpha;P,R)\|^4 is O(P^(3+0.24871567)) for R at most P^eta with eta fixed small. | [arithmetic/sources/wooley-sums-three-cubes-1502.01944.pdf](arithmetic/sources/wooley-sums-three-cubes-1502.01944.pdf): Theorem 1.2 and equation (1.2) |
 | EXT-ZYWINA-LARGER-SIEVE | claim | proved / partial | Zywina Theorems1.3-1.4: for a fixed monic irreducible f over k(T1,...,Tn), regular normal closure and conjugacy-stable C in G, integral-box exceptional specializations have count O(B^(k:Q (source reference: `n-1+\|C\|/\|G\|`)) logB); the proper-C large-sieve bound is O(B^(k:Q (source reference: `n-1/2`)) logB). Poles and inseparable fibres are excluded. | [arithmetic/sources/zywina-quantitative-hit.pdf](arithmetic/sources/zywina-quantitative-hit.pdf): Zywina author preprint dated30November2010, Theorems1.3-1.4 PDFp2 |
 | GAP-ARITH-ABC-MOVING-KERNEL-SIGNED-ODD-MOMENT | gap | open / partial | JD6 asks for a fixed power saving below X^(fL) in the second residue moment of the full joint odd-kernel dictionary of high quadratic 3-torsion records. Uniformity for arbitrarily cheap full moduli would remove the bounded-window or small numerical height condition in the mixed (6,2,3^a) sector with a cheap modulus. The open case of a third letter without such moduli is separate. | [arithmetic/ABC_JOINT_FREE_LETTER_DICTIONARIES.md](arithmetic/ABC_JOINT_FREE_LETTER_DICTIONARIES.md): The unrestricted kernel group in this mixed signature |
+| GAP-ARITH-ABC-RSTATION-V4-ADOPTION-AUDIT | gap | open / partial | Independently check the arithmetic transfers and rational certificates for Hongmin Li rStation papers 17/v4 and 28/v4 before using their numerical envelopes as theorem premises. The pinned source statements and ranges are checked bibliographically. The proofs of the retained local bounds do not require this audit. | [arithmetic/ABC_PRIMARY_BOUNDS_AND_POINTWISE_BRIDGES.md](arithmetic/ABC_PRIMARY_BOUNDS_AND_POINTWISE_BRIDGES.md): Current fixed-budget source claims and arithmetic inputs |
 | GAP-ARITH-ABC-SCALAR-TARGET-MULTIPLICITY-IMAGE-SAVING | gap | open / partial | Find fixed k>=2 and an absolute sigma>0 such that, at all sufficiently late fixed budgets, an affordable chart construction gives image <= n^(1/3+(k-1)u-sigma) for D0=ceil(n^u). Use a fixed finite multiplicity mesh including occurrence u=0, retain true primitive rows with their three caps and exact repair eligibility, and keep the power margin uniform across profiles. | [arithmetic/ABC_SCALAR_MASK_TARGET_MOMENTS.md](arithmetic/ABC_SCALAR_MASK_TARGET_MOMENTS.md): A scalar image for weighted target occurrence |
-| GAP-ARITH-ABC-SHALLOW-LATIN-THREE-CAP-LIFT-SAVING | gap | open / partial | Find a fixed positive loss below n^(1/3) for genuine lifts of the three shallow register arrays with no repeated pair, on fine-layer balanced charts with three cheap original locks. Keep the original numerical height and all three original caps. This would close the near-zero multiplicity sector with the stated granularity and lock conditions. Raw CRT lifting works without those complete caps. Mixed real and congruence entropy further constrains every complete-role alphabet. Generic congruent numerical splices have a larger outside radical, and joint compression over sufficiently many weighted prime tests is excluded. An arithmetic extraction of such compression or a different three-cap restriction is still needed. Mixed sub-half cells cannot support a full near-splice family of bounded physical outside radicals. At half-depth the extra splice-gcd record has negligible powerful excess, leaving its squarefree support and the conditional marked-letter overlap. | [arithmetic/ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md](arithmetic/ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md): Sharpness and the lifting requirement |
+| GAP-ARITH-ABC-SHALLOW-LATIN-THREE-CAP-LIFT-SAVING | gap | open / partial | Find a fixed positive loss below n^(1/3) for genuine lifts of the three shallow register arrays with no repeated pair, on fine-layer balanced charts with three cheap original locks. Keep the original numerical height and all three original caps. This would close the near-zero multiplicity sector with the stated granularity and lock conditions. Raw CRT lifting works without those complete caps. Mixed real and congruence entropy further constrains every complete-role alphabet. Generic congruent numerical splices have a larger outside radical, and joint compression over sufficiently many weighted prime tests is excluded. An arithmetic extraction of such compression or a different three-cap restriction is still needed. Mixed sub-half cells cannot support a full near-splice family of bounded physical outside radicals. At half-depth the extra splice-gcd record has negligible powerful excess, leaving its squarefree support and the conditional marked-letter overlap. The optimized full-factor mixed list test requires a fixed conditional list deficit at near-zero complete multiplicity. The local SHF transfer has a finite-chart codegree threshold and leaves a sharp broad diffuse raw-price obstruction. Typical physical shifts and actual splices in strict subterminal zero-degree hybrid cells escape every fixed outside radical cap. Fine subroots after a paid large-prime record extend the physical comparison to profiles with macroscopic layers below residual nonatomic depth. The global count still needs an arithmetic restriction on the simultaneous original three-cap lifts. | [arithmetic/ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md](arithmetic/ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md): Sharpness and the lifting requirement |
 | GAP-ARITH-EISENSTEIN-LEAST-PRIME-PAIR-POINTWISE | gap | open / partial | At eta=0.116, prove the signed normalized inequality R_N-2C_N(B)+Q_N>=0.001 R_N uniformly in sufficiently large N=2 mod 6, with the fixed near-square-root visible cutoff and the cross bins of EISENSTEIN_POINTWISE_LEASTNESS.md. The pointwise rough scale and the marginal cutoff loss are proved. The exact cofactor conditions require split support and leastness with thresholds set by the marks; direct raw vector and normalized common-cutoff product budgets give negative margins. Even exact short divisor-factor-shape moments up to N^0.554 in either weight bank are compatible with a prime-free profile model. | [arithmetic/EISENSTEIN_BUDGET_INTERSECTION.md](arithmetic/EISENSTEIN_BUDGET_INTERSECTION.md): Sufficient pointwise input following the separate-budget theorem; [arithmetic/EISENSTEIN_POINTWISE_LEASTNESS.md](arithmetic/EISENSTEIN_POINTWISE_LEASTNESS.md): The visible signed pointwise estimate (5); [arithmetic/EISENSTEIN_DIVISOR_EXCHANGE.md](arithmetic/EISENSTEIN_DIVISOR_EXCHANGE.md): Consequence for the signed pointwise inequality |
 | GAP-ARITH-ERDOS943-UNIFORM-LIFTED-CURVE-AUXILIARY-COVER | gap | open / partial | OPEN method gate: construct and sum a suitable coefficient/shift-uniform auxiliary-curve cover for the prescribed-sum balanced compatibility slices beyond the fixed/small-h ranges in the inspected source. This route also needs a valid saving calculation; it is not necessary for every possible improvement. All existing pointwise/full-pair/C6states remain unchanged. | [arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md](arithmetic/PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md): Sections1-6 |
 | GAP-COUPLED-DEPENDENT-TRIPLE-CORRELATION | gap | open / partial | The all-target lower bound and pointwise leading asymptotic for T(N)=sum_a f12(a)f12(a+12)f12(N-a) remain open in this framework. The exact local criterion, singular-series model, uniform natural-scale upper bound, target moments and unconditional positive-proportion lower counts are proved. A positive pair-bank envelope and a one-sided vector Fourier tool are also available. The missing input is a joint graph comparison compatible with the full permutation projections and shared-label normalization, with parameters fixed in the correct order. The tested distinguished-slot lift does not preserve the raw third weight after projection; its displayed coloring alternative retains a shared-mass loss and has no closed parameter budget. This is a frontier of the recorded method, not an impossibility theorem or a claim about historical unsolved status. General off-diagonal dependent triples remain outside the classical independent-form theorem. | [arithmetic/COUPLED_SPLITTING_LOCAL_GLOBAL.md](arithmetic/COUPLED_SPLITTING_LOCAL_GLOBAL.md): Section 6: dependent shared-triple boundary and link to proved partial results; [arithmetic/SHARED_SUMMAND_C12_CORRELATION.md](arithmetic/SHARED_SUMMAND_C12_CORRELATION.md): Sections 6-8: permutation and normalization obstruction, one-sided Fourier scope and precise completion target |
@@ -40324,7 +41093,7 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-RESIDUAL** (mathematical; open): For exactly the same shaped graph/coefficient family as(H), bound cycles by n^(26/51+epsilon) after removing the proved low-lcm, large shared-neighbor root-gcd, small singular coherent-gcd and both low product-ratio sectors. This is equivalent to(H), still OPEN, and separate from the older balanced T^2 residual.
 - **TFC-OPEN-ACTUAL-MIDDLE-CARRIER-SUPPORT-CAPACITY-SAVING** (mathematical; open): Prove Equation15 uniformly every N for at least one fixed0<eta<=1/28, with exact rho_eta,H,V and actual support/fiber-majorant capacity Eq13. This positive-saving estimate is NOT established by the partition, numerical carrier scales, current r3 bound, or any conditional proposition.
 - **TFC-OPEN-UNIFORM-THREE-FULL-POSITIVE-SAVING** (mathematical; proved / discharged): There exists ONE fixed eta in(0,1/28] such that for EVERY positive target N and every epsilon>0, r3(N)<<_epsilon N^(1/4-eta+epsilon). The coherent-cycle theorem proves this statement with eta=1/268. The actual carrier support-capacity estimate remains a separate OPEN sufficient condition, and no converse from this representation saving to that capacity estimate is asserted.
-- **GAP-ARITH-ABC-STRICT-SMALL-BUDGET-COEFFICIENT** (mathematical; open): Prove an absolute delta>0 and N_lambda(X) << X^((1/3-delta)lambda+epsilon) for all sufficiently small fixed positive lambda. The equivalent minimally repaired primitive quotient count remains open at arbitrary balanced profiles. A transfer must force a bounded-radical imbalanced output, a sufficiently low affine power defect, or another restriction using all three original radical caps. One sufficient input is a uniform scalar same-target product-image loss on the full multiplicity mesh. At balanced saturation all complete dictionary exponents coincide. Cheap full locks force almost every retained row into residue cells of exponent u on each free dictionary and 2u in actual rows. A uniform arithmetic saving on the residual cells, including the u=0 occurrence endpoint, is still required. The one-sided fixed-shift transfer requires conditional defect compression, active valuation-floor height or a width gain; the current tests leave broad tall values. Uniform closure near u=0 requires a saving in occupied residue cells or their record prices, since the cell diagonal permits the full exponent. At zero complete multiplicity one may retain an actual induced matching; a short real filter preserves it at modulus exponent just above the matching exponent, with a further exact integer carry relation. The missing power saving concerns this mixed incidence with original target radicals, not an abstract finite-group matching bound. Arbitrary-shift half bounds now include low factors at large primitive quotient height; bounded normalized quotient paths are negligible at every positive fixed multiplicity. The remaining issue is a power improvement of actual conditional diffuse record prices or an arithmetic incidence bound on their true outputs, together with occupied-cell savings near zero multiplicity. Thin-window completion and short divisor-lattice line occupancy improve the count when actual records reach the half-area threshold. At occurrence all complete dictionaries have an additive-energy power gain and local signed tree estimates beat the elementary cubic scale, but single-letter occupied registers may be injective and direct row splits do not realize the required joint law. Higher-order projective coincidence sums are bounded by area minus twice the extension-scale log, and anchored empirical prices also cover fresh determinant primes. The missing input is a lower supply of compatible high-content tuples or a cheap dual/divisor record for arbitrary genuine balanced profiles. Independent support-product spectator units and exact defect-preserving affine splits are available, while original label retention and the shared history law remain open. The original-fibre reverse transfer eliminates active conditional height-floor equality, but broad diffuse profiles survive the proved half-price, compression and outside stripping tests. At zero multiplicity a conditional residue information constraint persists and an occupied-cell saving is still needed. In the fine-layer near-zero sector with three cheap locks, a dense genuine shallow Latin array survives. Eliminating it requires an arithmetic obstruction to its three-cap lifts. Joint CRT real spectators now give signed upper bounds with actual original-label recovery, with a matching-sensitive lower bound open. At shallow depth the mixed real-residue list and proper-hit interpolation bounds exclude specified compression patterns. The radical caps still have to force one of them or yield another uniform saving. Near occurrence the common secant gcd has vanishing mean normalized size and a fixed-budget power tail, while the primitive direction and physical near-splice shifts still carry large fresh radical. Half-depth cells give opposite-support privacy but leave the squarefree marked-support overlap required by an axis interpolation transfer.
+- **GAP-ARITH-ABC-STRICT-SMALL-BUDGET-COEFFICIENT** (mathematical; open): Prove an absolute delta>0 and N_lambda(X) << X^((1/3-delta)lambda+epsilon) for all sufficiently small fixed positive lambda. The equivalent minimally repaired primitive quotient count remains open at arbitrary balanced profiles. A transfer must force a bounded-radical imbalanced output, a sufficiently low affine power defect, or another restriction using all three original radical caps. One sufficient input is a uniform scalar same-target product-image loss on the full multiplicity mesh. At balanced saturation all complete dictionary exponents coincide. Cheap full locks force almost every retained row into residue cells of exponent u on each free dictionary and 2u in actual rows. A uniform arithmetic saving on the residual cells, including the u=0 occurrence endpoint, is still required. The one-sided fixed-shift transfer requires conditional defect compression, active valuation-floor height or a width gain; the current tests leave broad tall values. Uniform closure near u=0 requires a saving in occupied residue cells or their record prices, since the cell diagonal permits the full exponent. At zero complete multiplicity one may retain an actual induced matching; a short real filter preserves it at modulus exponent just above the matching exponent, with a further exact integer carry relation. The missing power saving concerns this mixed incidence with original target radicals, not an abstract finite-group matching bound. Arbitrary-shift half bounds now include low factors at large primitive quotient height; bounded normalized quotient paths are negligible at every positive fixed multiplicity. The remaining issue is a power improvement of actual conditional diffuse record prices or an arithmetic incidence bound on their true outputs, together with occupied-cell savings near zero multiplicity. Thin-window completion and short divisor-lattice line occupancy improve the count when actual records reach the half-area threshold. At occurrence all complete dictionaries have an additive-energy power gain and local signed tree estimates beat the elementary cubic scale, but single-letter occupied registers may be injective and direct row splits do not realize the required joint law. Higher-order projective coincidence sums are bounded by area minus twice the extension-scale log, and anchored empirical prices also cover fresh determinant primes. The missing input is a lower supply of compatible high-content tuples or a cheap dual/divisor record for arbitrary genuine balanced profiles. Independent support-product spectator units and exact defect-preserving affine splits are available, while original label retention and the shared history law remain open. The original-fibre reverse transfer eliminates active conditional height-floor equality, but broad diffuse profiles survive the proved half-price, compression and outside stripping tests. At zero multiplicity a conditional residue information constraint persists and an occupied-cell saving is still needed. In the fine-layer near-zero sector with three cheap locks, a dense genuine shallow Latin array survives. Eliminating it requires an arithmetic obstruction to its three-cap lifts. Joint CRT real spectators now give signed upper bounds with actual original-label recovery, with a matching-sensitive lower bound open. At shallow depth the mixed real-residue list and proper-hit interpolation bounds exclude specified compression patterns. The radical caps still have to force one of them or yield another uniform saving. Near occurrence the common secant gcd has vanishing mean normalized size and a fixed-budget power tail, while the primitive direction and physical near-splice shifts still carry large fresh radical. Half-depth cells give opposite-support privacy but leave the squarefree marked-support overlap required by an axis interpolation transfer. The optimized full-factor mixed list test requires a fixed conditional list deficit at near-zero complete multiplicity. The local SHF transfer has a finite-chart codegree threshold and leaves a sharp broad diffuse raw-price obstruction. Typical physical shifts and actual splices in strict subterminal zero-degree hybrid cells escape every fixed outside radical cap. Fine subroots after a paid large-prime record extend the physical comparison to profiles with macroscopic layers below residual nonatomic depth. The global count still needs an arithmetic restriction on the simultaneous original three-cap lifts. An economical fixed-weight divisor and two affordable exact weighted powers sharing an adaptive order above the cube-root scale now suffice by the quantitative Subspace Theorem. Their uniform extraction on arbitrary balanced spectra is open.
 
 Tracked obligations from the catalogue:
 

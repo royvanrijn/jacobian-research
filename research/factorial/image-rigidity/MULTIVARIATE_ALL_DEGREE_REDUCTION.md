@@ -651,13 +651,46 @@ two possible rates of strength displacement. The critical rate
 charges the additional inequality \(Z\ge |V|^{2/3}\). Strict
 positive margins give uniform ordinary exclusion. At interior
 bias, negative margins give finite transverse Gaussian references.
+The [transverse response polytope](MULTIVARIATE_TRANSVERSE_TAIL_RESPONSE_POLYTOPE.md)
+gives a sharp four-vertex interval for an exact physical bias
+residual at a simple positive-strength contact. For distinct
+simultaneous simple root pairs, projecting their joint response
+equations can exclude all unrestricted ordinary tails approaching
+that configuration. If all reference roots are simple and all
+two-pair tests pass, every surviving common factor is a single
+simple irreducible quadratic, uniformly on a compact positive
+strength interval for that fixed core. Independent clock velocities
+also give uniform exclusion for the indicated moment-balanced
+families.
+
+The [signed core replacement theorem](MULTIVARIATE_SIGNED_CORE_REPLACEMENT_CONTACTS.md)
+extends the response equations to varying cores by accounting for
+both added rows and omitted rows from a countable limit. Under
+the stated rank and strict separation tests, the two second-order
+sizes must be comparable and can be forced to agree asymptotically.
+At any infinite retained core exact integer replacements can make
+these responses cancel to second order. There are retained cores
+for which equal reciprocal moments give coefficient approximation
+through every finite order.
 
 The [common-height tail theorem](MULTIVARIATE_COMMON_HEIGHT_BOUNDED_GAP_TAIL_CLOSURE.md)
 excludes exact ordinary common roots in every degree for any fixed
 core and a tail of bounded integer gaps at a sufficiently large
 shared upper exponent. The height bound holds uniformly over all
 multiplicities and orientations, including at every positive
-Gaussian exception. The
+Gaussian exception. The [private-prime density theorem](MULTIVARIATE_SPREAD_OUT_PRIVATE_PRIME_DENSITY.md)
+treats independently variable ordinary row heights in consecutive
+windows. Its exceptional proportion is exponentially small
+under the stated window and retained-prime conditions. This
+includes windows approaching any prescribed positive diffuse
+strength uniformly across the tuples. The
+[dense cluster theorem](MULTIVARIATE_DENSE_CLUSTERED_UNIT_GAP_CLOSURE.md)
+gives deterministic closure for sufficiently narrow, densely occupied
+bands of unit-gap rows with arbitrary orientation multiplicities.
+Each adjacent pair has an isolated large prime among its marked
+factors. A fixed retained core or the stated allowance for varying
+retained prime supports is permitted, and balanced clusters reach
+any prescribed positive diffuse strength. The
 [affine-height theorem](MULTIVARIATE_AFFINE_HEIGHT_BOUNDED_GAP_TAIL_CLOSURE.md)
 also allows distinct, diverging heights with independent
 multiplicities. The
@@ -688,7 +721,13 @@ The [cyclic discrepancy theorem](MULTIVARIATE_RETAINED_CYCLIC_DISCREPANCY.md)
 gives the exact retained valuation differences by residue
 counts at each prime power. Complete residue packets can have
 zero effect on a prime's shared slopes while their individual
-heights vary independently. The [aligned unit-gap test](MULTIVARIATE_ALIGNED_UNIT_GAP_CENTRAL_NEWTON.md)
+heights vary independently. The [envelope mark theorem](MULTIVARIATE_UNIVERSAL_ENVELOPE_MARKS.md)
+selects a literal factorial factor in an adjacent pair at every
+even terminal for arbitrary ordinary rows. It is absent on at
+most two adjacent indices of the selected parent. The theorem
+classifies the exact odd-terminal exception to this window rule
+and charges an explicit prime-overlap budget to any common factor.
+The [aligned unit-gap test](MULTIVARIATE_ALIGNED_UNIT_GAP_CENTRAL_NEWTON.md)
 reduces the high-count Newton polygons to fixed central faces
 when all smaller exponents satisfy the stated congruence.
 The [prepared core theorem](MULTIVARIATE_PREPARED_ALIGNED_TAIL_ALL_DEGREE.md)
@@ -729,6 +768,15 @@ prime without factoring the coefficients. Its integer power
 tests use the reduced slope denominators, and its block products
 bound projective denominators. On odd blocks the Jacobi test
 also constrains possible degree allocations across primes.
+The [gcd-free Smith refinement](MULTIVARIATE_GCD_FREE_TRUNCATED_SMITH_SIEVE.md)
+computes exact arbitrary-precision truncated Smith caps on
+those same coprime blocks, even at wildly ramified slopes.
+A separate [monotone upper-cluster theorem](MULTIVARIATE_MONOTONE_GAP_UPPER_CLUSTER_CLOSURE.md)
+uses discrete convexity of the literal prime-factor counts.
+It proves all-degree coprimality for large-gap upper clusters
+with monotone multiplicities at each height and orientation,
+unbounded gap ratios, and retained rows within the stated
+logarithmic budget.
 The [short-window theorem](MULTIVARIATE_INDEPENDENT_HEIGHT_WINDOW_CLOSURE.md)
 also allows every exponent in a window of width
 \(Ad+d\log(2+d)/(512J^3)\) to vary independently, where \(d\ge2\)
@@ -977,6 +1025,13 @@ and scaled rational norms to one first-order direction.
 The resulting smaller cross-direction error sharpens the
 height requirement. For a fixed quadratic field, signed angle
 coordinates replace the spread denominator by numerator budgets.
+The [principal divisor height theorem](MULTIVARIATE_QUADRATIC_PRINCIPAL_DIVISOR_LOG_HEIGHT.md)
+uses the split prime support and one ideal-class factor to bound
+approximation to an algebraic direction and to a scaled root.
+For bounded fields and fixed split prime support, a nonattained
+contact needs a trace denominator exceeding every polynomial
+bound in reciprocal diffuseness. There is a moving-prime bound
+with explicit support dependence.
 The [single-order norm gap](MULTIVARIATE_HIGH_ORDER_NORM_DENOMINATOR_GROWTH.md)
 uses a signed high-order factorial difference to construct two
 scaled rational norms with a strictly positive small difference.
@@ -1007,6 +1062,14 @@ information beyond the fixed real controls and tested precision.
 The [uniform bias theorem](MULTIVARIATE_UNIFORM_DIFFUSE_BIAS_SEGMENTS.md)
 allows one chosen signed-drift intercept to work throughout a
 prescribed compact strength interval, with no row-count restriction.
+The [countable core height theorem](MULTIVARIATE_COUNTABLE_CORE_CURVATURE_HEIGHT_SEPARATION.md)
+compares omitted curvature to the factorial height of every
+truncation at positive algebraic strength. It gives uniform
+all-degree transfer for families with the stated decay and
+without a retained row-count bound. For tails whose curvature
+decays faster than every inverse power of the truncation height,
+the exceptional strengths across all degrees are nonalgebraic
+and form a set of Hausdorff dimension zero.
 The [generic diffuse closure theorem](MULTIVARIATE_DIFFUSE_RATIONAL_SLOPE_GENERIC_CLOSURE.md)
 excludes physical contacts on prescribed algebraic curves of the two
 clock parameters for generic ordinary cores with sufficiently many
@@ -1629,8 +1692,19 @@ orders the effect of integer inflation and identification on all
 coefficient curvatures. For nonproportional shared rows the
 [exact merger sign law](MULTIVARIATE_ROW_MERGER_CURVATURE_SIGN.md)
 gives an explicit flattening threshold and a decrease of the leading
-stationary curvature. These comparisons leave the corresponding
-root transfer open.
+stationary curvature.
+The [ordered opposite-pair theorem](MULTIVARIATE_ORDERED_OPPOSITE_PAIR_RADIAL_CLOSURE.md)
+compares the exact signed center to only the odd coefficient
+perturbation around a mirrored core. The resulting all-degree
+criterion includes arbitrarily many same-gap opposite pairs
+with individually ordered midpoints and very small signed bias.
+The [ordered gap-mass theorem](MULTIVARIATE_ORDERED_GAP_MASS_RADIAL_CLOSURE.md)
+uses integer gap units to compare different scales and normalized
+midpoints. It covers a primitive row inflated on one side
+against the corresponding number of uninflated reversed copies
+on the other, and also higher-order moment matching of crossing
+scale distributions. General row identification and the case of
+canceling center contributions remain open.
 
 There is a discrete transfer for arithmetic certificates. The
 [initial-form merger](SFC_PADIC_ROW_MERGER_INITIAL_FORMS.md)
@@ -1648,6 +1722,12 @@ precision at successive layers. The [modular row operations theorem](MULTIVARIAT
 fixes one prime for any all-degree regular core. It permits independent
 baseline translations, arbitrarily many prescribed neutral residue
 blocks, and subsequent row inflation and digit packing at that prime.
+The [complete shift-block deletion theorem](MULTIVARIATE_COMPLETE_SHIFT_BLOCK_DELETION.md)
+uses literal boundary products to transfer core resultants
+modulo a composite modulus at higher precision. It includes
+cases where a first residue test has a common factor, and
+allows independent lifts and repetitions giving arbitrary
+positive diffuse strength under the complete-block hypotheses.
 The [complementary-row comparison](MULTIVARIATE_COMPLEMENTARY_ROW_EULER_REDUCTION.md)
 reduces a complementary pair to a weighted Euler operator at every
 required degree when the common cap has sufficiently large
@@ -1867,6 +1947,23 @@ It is a separate all-degree proof for one unequal ordinary unit-gap row.
 The [native Newton response test](MULTIVARIATE_NATIVE_NEWTON_ANGULAR_RESPONSE.md)
 uses tame edge data to certify first-order splitting of any core ray
 contact under a sufficiently weak ordinary shared tail.
+The [multiple-root response theorem](MULTIVARIATE_WEAK_TAIL_MULTIPLE_ROOT_RESPONSE.md)
+applies the same type of weak perturbation at every root
+multiplicity. Scaled Hermite zeros separate all noncentral
+branches. At an odd central pair, an isolated close conjugate
+pair at a prime certifies angular splitting, and the linked
+signed center and cubic skew give a further physical test at
+integer twists. The estimates apply with arbitrary weak-tail
+row counts and gaps, including controlled two-scale approximation
+of the retained body. They give additional finite-height
+certificates for branches of the original bounded-gap property.
+The [stationary central jet theorem](MULTIVARIATE_STATIONARY_CENTRAL_WEAK_TAIL_JETS.md)
+gives the uniform second angular response for pairs of odd
+central branches with identical first angular velocity. A
+compact description of all weak-tail jet statistics, with
+explicit finite outer errors and realizability at fixed signed
+gap, gives exact tests for strict margins, even at a stationary
+physical twist.
 The [single-row progression theorem](MULTIVARIATE_SINGLE_ROW_ALL_ORDER_ARITHMETIC_PROGRESSION.md)
 bounds the number of exceptional choices on every ordinary fibre obtained
 by varying one smaller exponent. The bound depends on its gap and the

@@ -1386,6 +1386,45 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A splice and its physical shift have a joint fresh radical floor | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
 | Physical shifts with bounded outside radical are rare in sub-half-depth cells | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
 | Axis interpolation controls the mean remaining splice gcd | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
+| Finite-price full-divisor charts have an exact codegree threshold | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| The diffuse uniform profile has a sharp positive raw active-floor excess | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md) |
+| Paid full factors and interpolated moments give stronger occupied-list savings | Internal result | proved | [Source](ABC_JOINT_REAL_RESIDUE_MOMENTS.md) |
+| Rank tails extend the optimized list bound to conditional collision entropy | Internal result | proved | [Source](ABC_JOINT_REAL_RESIDUE_MOMENTS.md) |
+| Joint conditional probe identities admit a diffuse interpolation model | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md) |
+| Collision-weighted codegrees charge the actual remaining anchor radical | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| Balanced record capture needs a further numerical or conditional codegree discount | Internal result | proved | [Source](ABC_BALANCED_FIXED_SHIFT_REVERSE_TRANSFER.md) |
+| The closed BBLT program yields a unit-budget and above-one bound | Internal result | proved | [Source](ABC_PRIMARY_BOUNDS_AND_POINTWISE_BRIDGES.md) |
+| Pasten's pointwise result gives a smoothness or separation radical cutoff | Internal result | proved | [Source](ABC_PRIMARY_BOUNDS_AND_POINTWISE_BRIDGES.md) |
+| Small individual primes allow fine exact subroots after full-factor recording | Internal result | proved | [Source](ABC_JOINT_REAL_RESIDUE_MOMENTS.md) |
+| A fixed power tail controls the size of cells seen by actual pairs | Internal result | proved | [Source](ABC_JOINT_REAL_RESIDUE_MOMENTS.md) |
+| Visible common support is recoverable from primitive outputs | Internal result | proved | [Source](ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md) |
+| Two-role radical prices also survive primitive output restoration | Internal result | proved | [Source](ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md) |
+| All strict subterminal near splices have a compensated joint radical floor | Internal result | proved | [Source](ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md) |
+| Primitive normalization bounds physical displacements with large common factors | Internal result | proved | [Source](ABC_SPLICE_EXHAUSTED_SUPPORT_LIFT.md) |
+| The union of primitive branch supports restores one common anchor | Internal result | proved | [Source](ABC_SHARED_ANCHOR_PRIMITIVE_BRANCH_COUNTS.md) |
+| One global branch reduces the other restored branches to fixed fibres | Internal result | proved | [Source](ABC_SHARED_ANCHOR_PRIMITIVE_BRANCH_COUNTS.md) |
+| Extra splice gcds of positive mean occur in power-few full hybrid cells | Internal result | proved | [Source](ABC_RECURRING_SPLICE_GCD_CELL_COST.md) |
+| Most full cells have a conditional logarithmic extra-gcd tail | Internal result | proved | [Source](ABC_RECURRING_SPLICE_GCD_CELL_COST.md) |
+| Same-role overlaps are power-rare up to every fixed subterminal depth | Internal result | proved | [Source](ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md) |
+| Typical physical differences in full hybrid cells escape every fixed outside radical cap | Internal result | proved | [Source](ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md) |
+| Typical positive cross splices escape every fixed outside radical cap | Internal result | proved | [Source](ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md) |
+| Large-prime records extend the hybrid physical shift exclusion to atomic profiles | Internal result | proved | [Source](ABC_HYBRID_SAME_ROLE_OVERLAP_AND_FRESH_RADICALS.md) |
+| Unequal common repairs leave a sharp scalar obstruction on a broad diffuse profile | Internal result | proved | [Source](ABC_DIFFUSE_REPAIR_AND_BASIS_OBSTRUCTIONS.md) |
+| Finite weighted-height slack does not remove the broad-profile repair barrier | Internal result | proved | [Source](ABC_DIFFUSE_REPAIR_AND_BASIS_OBSTRUCTIONS.md) |
+| Broad exact-order entropy imposes an adaptive valuation basis cost | Internal result | proved | [Source](ABC_DIFFUSE_REPAIR_AND_BASIS_OBSTRUCTIONS.md) |
+| Coprime powerful occupants of one-sided short windows have positive-density centres | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| Coprime short-power windows allow a growing full prime-power shift divisor | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| A fixed moving-prime pool bounds weighted power pairs with a short outside shift | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| Two weighted powers and a full divisor on the third letter admit a small lift price | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| An adaptive common order above the cube-root scale gives a strict sector saving | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| A small cofactor and boundedly many short roots force atomic residual valuations | Internal result | proved | [Source](ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md) |
+| Two compressed diffuse roles pay their actual joint record price | Internal result | proved | [Source](ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md) |
+| Atomic residuals admit bounded roots at vanishing numerical width | Internal result | proved | [Source](ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md) |
+| An atomic weak profile can require almost complete fixing at stretched width | Internal result | proved | [Source](ABC_COMPRESSED_RECORD_ATOMIC_PRICE.md) |
+| A fixed full modulus releases two compressed letters at numerical width | Internal result | proved | [Source](ABC_FIXED_FULL_DIVISOR_TWO_LETTER_RELEASE.md) |
+| Tall two-divisor records give a saving at a fixed numerical quotient width | Internal result | proved | [Source](ABC_FIXED_FULL_DIVISOR_TWO_LETTER_RELEASE.md) |
+| A full-divisor fibre exponent is at most either residual nonatomic pair mass | Internal result | proved | [Source](ABC_FIXED_FULL_DIVISOR_TWO_LETTER_RELEASE.md) |
+| The weighted-power Subspace Theorem bound uses full parts of all three letters | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
 
 **Computed obligations:** 108 unresolved; 19 resolved within their exact scope.
 

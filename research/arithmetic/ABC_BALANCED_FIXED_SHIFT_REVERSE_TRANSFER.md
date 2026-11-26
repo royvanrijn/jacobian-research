@@ -264,6 +264,207 @@ record saturation, with the third radical unrestricted.
 It supplies no power-many local codegrees.
 [Two-cap matching construction](ABC_OVERLAPPING_FULL_RECORD_COUNTEREXAMPLES.md#fixed-parameters-and-complete-integers)
 
+## Codegree thresholds at the actual chart price
+
+**RT9.** Let a fixed finite-price \(W\)-lock chart of an
+original regular balanced cohort retain row exponent at
+least \(d-f-o(1)\), where \(d=1/3\).
+Here \(f\) is the row exponent lost to the chart and
+the original complete dictionary exponent is
+\(\alpha=d-u\). Take a cell bin with \(n^{z+o(1)}\)
+occurring unit residues, \(n^{m+o(1)}\) rows per cell
+and free dictionary exponents \(v\ge w\), after swapping
+the orientation if necessary. A bin retaining the chart
+exponent satisfies
+\[
+ z+v\le\alpha+o(1),\qquad z+2v\le d+o(1),\qquad
+ m\ge\max(u+v,2v)-f-o(1).
+\]
+The first inequality uses disjoint complete dictionaries
+in distinct cells. For the second apply RB2 to the
+larger dictionaries, on the same free role throughout
+the bin, with the list of its \(n^{z+o(1)}\) occurring
+unit classes. The last follows from \(z+m\ge d-f-o(1)\).
+An arbitrarily small fixed exponent mesh costs only a
+fixed number of bins before the height limit. The errors
+in these displays include that mesh and all chart
+regularity and residue-count allowances.
+
+If \(f<u\) by a fixed margin, then \(m>v\) by a fixed
+margin. Put the distinct anchors on the smaller side.
+The uniform law on the resulting two-edge paths,
+conditioned on their anchors and the cell, has entropy
+in base \(n\) at least
+\[
+ 2m-v-2w-o(1)\ \ge\
+ \max(2u-v,v)-2f-o(1)\ \ge\ u-2f-o(1).
+\]
+Indeed, each cell supplies at least
+\(e^2/x-e\) paths, with \(e\) its number of rows and
+\(x\) the larger dictionary size. Divide the path
+count by the number of possible ordered anchor pairs
+in the entropy bound. Any average fixed-shift price
+that falls below \(u-2f\) by a fixed margin therefore
+excludes a full-exponent bin. Apply the original-fibre
+lift on these paths when the computed shift has lost
+its fixed full divisor. All shifted counts are taken
+on the actual original lifts.
+
+For a uniform codegree upper exponent \(q\), there is
+an equivalent direct count in every bin. The path bound
+gives \(m\le\max(v,(v+2w+q)/2)+o(1)\), including the
+diagonal term. From the first two inequalities,
+\(z+3v/2\le(\alpha+d)/2+o(1)\). The chart row exponent
+is consequently at most
+\[
+              d-\min\{u,(u-q)/2\}+o(1).
+\]
+Thus \(q+2f<u\) by a fixed margin suffices after
+accounting for chart price. The entropy threshold, capped below at zero, is
+sharp for the abstract size constraints. For \(0\le f<u\)
+use \(n^{d-2u}\) copies of one bipartite graph on two
+sets of size \(n^u\) with independent edge probability
+\(n^{-f}\). Rounding the sizes affects no exponent.
+The degrees concentrate around \(n^{u-f}\).
+A codegree is binomial with mean \(n^{u-2f}\), so
+for any fixed \(\eta>0\), exponential binomial tails
+and the union bound give maximum codegree at most
+\(n^{\max(0,u-2f)+\eta}\) with probability tending to
+one. This attains the entropy threshold as a graph
+model. A realization with all three radical caps
+would require additional arithmetic.
+The optimized threshold still tends to zero as
+\(\alpha\) tends to \(1/3\).
+[Original-fibre codegree bounds](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md#counting-a-common-neighbour-in-its-original-fibre)
+· [Optimized occupied-cell count](ABC_JOINT_REAL_RESIDUE_MOMENTS.md#optimized-list-prices-after-full-factor-records)
+
+## Collision-weighted codegrees without a cell size mesh
+
+**RT10.** On one actual chart, let the shared cell label
+be a function of either complete free letter, with the
+sign of a residue absorbed on one side. Write \(E\) for
+the number of original rows, \(x_j,y_j\) for the two
+dictionary sizes in cell \(j\), and \(D_U=\sum_jx_j\),
+\(D_V=\sum_jy_j\). Keep the indicated original signed
+additive relation and all three radical caps. With distinct
+anchors on the \(V\) side and uniform codegree cap \(Q\),
+\[
+ E\le D_U+\left(Q D_U\sum_j y_j^2\right)^{1/2}.
+\]
+Indeed \(e_j^2/x_j\le e_j+Q y_j^2\) by counting ordered
+paths through the \(U\)-vertices in cell \(j\).
+Sum over \(j\) and apply Cauchy–Schwarz once more to
+obtain \(E^2/D_U\le E+Q\sum_j y_j^2\), which implies
+the bound. A variable cap \(Q_j\) uses
+\(\sum_j Q_jy_j^2\) in place of \(Q\sum_jy_j^2\).
+The \(U,V\) dictionaries are counted once per complete
+value because the shared label is a function of either
+value.
+
+For a deep unit lock, let \(r_V\) be the actual remaining
+raw cap **after** fixing full factors of \(V\). Multiplying
+the residue labels by the inverse of the fixed part gives
+unit classes for the quotient. Apply RB2 to the \(j\)
+most populated classes. The \(j\)-th largest dictionary
+then has size at most \(n^{r_V/2+o(1)}j^{-1/2}\), so
+\(\sum_j y_j^2\le n^{r_V+o(1)}\) with a height-subpower
+harmonic factor. Summing chart states of exponent \(b\)
+therefore gives the row exponent bound
+\[
+         b+\max\{\alpha_U,(\alpha_U+r_V+q)/2\}+o(1),
+\]
+where \(\alpha_U\) caps \(\log_n D_U\) and \(q\) caps
+the actual fixed-shift codegree exponent. One can minimize
+over either orientation and over available record strategies,
+using the residual caps and the fixed numerical heights
+from the same record. For one chart retaining exponent
+\(d-b-o(1)\), with \(d-b>\alpha_U\) by a fixed margin,
+the path comparison has threshold \(2d-2b-\alpha_U-r_V\).
+In particular a record capturing mass \(f_V\) on the
+anchor role can raise the balanced threshold from
+\(u-2b\) to \(u+f_V-2b\); its actual price \(b\) remains
+in the comparison.
+
+For any shared label, let \(h_2\) be its normalized
+collision entropy for the uniform law on the
+\(D_V\) distinct complete values. Then
+\(\sum_j y_j^2=D_V^2n^{-h_2}\) exactly. This permits
+the optimized JRM4 bound on \(h_2\) when the shared
+label is an actual shallow residue or an actual
+shared combination of a congruence and a real bin.
+For other mixed labels the assumption that either
+complete value determines the joint cell must be
+checked before using this estimate. Here all heights
+and valuation caps in JRM4 pertain to the residual
+root product in its own full-factor state. A fixed
+coefficient only translates the logarithmic bins and
+permutes the residue classes.
+
+There is an average fixed-shift version. The actual
+ordered distinct-anchor path population has size
+at least \(E^2/D_U-E\). Its conditioning alphabet
+consisting of the cell and the ordered anchors has
+size at most \(\sum_j y_j^2\). When \(E/D_U\) exceeds
+a fixed power of \(n\), the uniform path law has
+conditional entropy in base \(n\) at least
+\[
+ 2\log_n E-\log_n D_U-2\log_n D_V+h_2-o(1).
+\]
+Compare this to the conditional record entropy
+plus the average certified residual fixed-shift count.
+Using the original-fibre lift for each path retains
+the third radical cap and the original numerical
+height, including when a common full divisor is removed
+in the normalized difference. The weighted estimate
+does not posit independence of the residual factors.
+[Optimized conditional collision entropy (JRM4)](ABC_JOINT_REAL_RESIDUE_MOMENTS.md#collision-and-pointwise-versions)
+· [Original-fibre fixed-shift counting (LFR1)](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md#counting-a-common-neighbour-in-its-original-fibre)
+
+### A necessary extra discount beyond raw capture
+
+**RT11.** Suppose an exponent-full balanced cohort is covered
+by joint row-level records of exponent \(b\) capturing
+prescribed full radical masses \(f_V,f_Z\) on the anchor
+role \(V\) and a distinct role \(Z\) used for the codegree
+count. These masses are in arbitrarily narrow bins.
+Assume the third role supplies a cheap lock, and use the
+regular cohort on that lock before charging these records.
+At positive \(u\) a cheap lock is available on each original
+role. The two selected factor records are functions of the
+joint record, with any fixed support choices and positional
+data priced separately. LFR3 gives
+\[
+                         2b\ge f_V+f_Z-o(1).
+\]
+It applies to the two letters opposite the cheap lock
+on the third role, even when both records depend on the
+whole row. Its joint entropy lower bound compares with
+the upper bound \(H(R)\le b+o(1)\) on the actual record
+alphabet. The preliminary lock is chosen at arbitrarily
+small price before the height and box allowances.
+
+In the deep unit-lock application of RT10, the gain on
+the anchor-cap side is \(f_V\). If the only upper bound
+on the residual codegree is the raw half price
+\((d-f_Z)/2\), the proposed comparison against
+\(u+f_V-2b\) cannot produce a fixed saving. More
+precisely, a certificate \(q=(d-f_Z)/2-\Delta\)
+must have
+\[
+               \Delta> d/2-u+2b-f_V-f_Z/2
+                      \ \ge\ d/2-u+f_Z/2-o(1)
+\]
+to win by that comparison. This obstruction concerns
+full-factor captures paid as row-level chart records.
+A factor removed using the particular two-anchor
+difference, a better conditional dictionary on the
+selected paths, and a list deficit in the actual
+occupied cells are separate possible inputs. The
+formula isolates the additional discount required
+from those inputs or from numerical height and
+compression on the original fibres.
+[Two-record entropy charge (LFR3)](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md#full-factor-prices-in-the-shared-residue-register)
+
 ## A role switch that preserves the full shift divisor
 
 **RT5.** On a typical \(W\)-locked residue cell, instead
