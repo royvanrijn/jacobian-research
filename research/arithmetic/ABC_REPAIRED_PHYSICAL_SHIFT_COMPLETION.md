@@ -232,7 +232,13 @@ Sources: [UW1 all signed heights](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-product-b
 [Evertse, Theorem 6](https://ir.cwi.nl/pub/2463/2463D.pdf#page=14),
 [mixed-power fixed-level lifting](ERDOS_943_MIXED_POWER_KERNEL_GCD_WEIGHTS.md#2-an-exact-fixed-level-lifting-problem).
 
-## PS4. Cyclotomic amplification for same-tail repaired target pairs
+## PS4. Joint factor prices on same-tail repaired target pairs
+
+The fixed-anchor argument of RRP4 gives arbitrary radical
+growth for composite repair orders. On a same-tail chart the
+following joint count gives a price for each factor using both
+original completions.
+[Fixed-anchor radical growth RRP4](ABC_REDUCED_TARGET_RADICAL_ODDS.md#generic-normalized-differences-have-large-radical)
 
 Fix any desired integer \(j\ge1\), and fix distinct primes
 \(\ell_1,\ldots,\ell_j\ge5\). Choose the repair order

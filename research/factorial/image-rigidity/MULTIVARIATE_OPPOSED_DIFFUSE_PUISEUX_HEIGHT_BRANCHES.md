@@ -182,7 +182,7 @@ The active count slope is
 \]
 It is positive. The argument of its logarithm is therefore
 different from one, so \(f(0)\) is transcendental by
-Hermite–Lindemann. A rational polynomial in \((L,r)\) which
+[Hermite–Lindemann](https://isa-afp.org/entries/Hermite_Lindemann.html). A rational polynomial in \((L,r)\) which
 vanished identically on a branch would have its leading
 homogeneous part vanish at \((1,f(0))\). Thus any prescribed
 polynomial relation in \((L,r)\) allows only finitely many

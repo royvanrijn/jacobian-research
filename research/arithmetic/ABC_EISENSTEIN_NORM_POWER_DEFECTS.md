@@ -32,6 +32,15 @@ ideal would divide both \(a-b\omega\) and \(a-b\bar\omega\),
 hence \(b\) and \(a\) at an unramified prime, contrary
 to primitivity. If 3 divides \(N\), then \(a\equiv b\bmod3\)
 and both are units at 3. The identity
+\(N=(a-b)^2+3ab\) gives \(v_3(N)=1\). Thus the
+exact-power condition excludes ramification, and
+\(\alpha=\epsilon\beta^q\) for an Eisenstein integer
+\(\beta=x-y\omega\) and a unit \(\epsilon\).
+The conjugate ideals of \(\beta\) are coprime, so
+\(\gcd(x,y)=1\). Also \(|\beta|\ll X^{1/q}\) with
+an absolute implied constant.
+
+The identity
 \[
  \prod_{j=0}^2
   (\omega^j\alpha-\omega^{-j}\bar\alpha)
