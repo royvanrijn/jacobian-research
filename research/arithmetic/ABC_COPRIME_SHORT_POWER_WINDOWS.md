@@ -472,3 +472,128 @@ In particular, if one weighted-power letter is at least
 \(X/2\) and its coefficient is at most \(X^{1-\chi}\)
 for fixed \(\chi>1/[3(k+2)k]\), the larger root exceeds
 that threshold at late heights even for fixed small \(k\).
+
+
+## Finite-height slope counts for unequal orders
+
+**CPW7.** Fix \(g\ge1\). In genuine primitive rows of
+polynomial height suppose two original letters are
+\(U=A x^P\), \(V=B y^Q\), with \(g\mid P,Q\).
+After choosing the signs put
+\[
+ z=x^{P/g},\qquad v=y^{Q/g},\qquad h=|U\pm V|>0,
+ \qquad M=\max(U,V).
+\]
+Fix the coefficient pair and three numerical divisors
+\(F_z\mid z,\ F_v\mid v,\ D\mid h\). Use actual upper
+bounds \(Z,V_0\) on \(z,v\), allowing separate dyadic
+size boxes. In the difference case one may stipulate
+\(h/M\le\Delta\) with \(0<\Delta\le1/2\).
+Put \(\Delta=1\) when there is no short-strip
+hypothesis, including the sum case. Then the count is
+\[
+       O_{g,\varepsilon}\!\left(
+          X^\varepsilon\left(1+
+                  \frac{\Delta Z V_0}{D F_z F_v}\right)\right)
+\]
+per fixed record and shape, with the implicit constant
+also depending on the fixed polynomial height bounds.
+Bounds \(Z,V_0\) can be upper endpoints of the actual
+dyadic cells. If they are only upper bounds, subdivide
+by size at height-subpower cost. Both original root
+ranges may vary with the record.
+All original radical caps and eligibility conditions
+can be imposed on the counted set.
+
+Indeed the effective roots \(z,v\) are coprime, and
+the coefficient pair and both roots are units modulo
+\(D\) by original primitivity. After dividing the roots
+by \(F_z,F_v\), their ratio modulo \(D\) is one of at
+most \((2g)^{\omega(D)}=X^{o_X(1)}\) unit power classes.
+This kernel bound follows from the cyclic unit group
+at odd prime powers and the two cyclic components at
+powers of \(2\). It still holds at primes dividing \(g\).
+In a single residue class, two different reduced
+fractions are separated by at least
+\(D/(V_0/F_v)^2\). Their cross determinant is a
+nonzero integral multiple of \(D\). The divided pairs
+are coprime, so a fraction determines the original
+roots once the two factors are fixed. In a dyadic
+box the full interval of slopes has length
+\(O((Z/F_z)/(V_0/F_v))\). In the short difference
+case, \(U/V=1+O(\Delta)\) and the fixed real centre
+\((B/A)^{1/g}\) for \(z/v\) is comparable to
+\(Z/V_0\) within a dyadic box that contains a solution.
+The mean value estimate on the \(g\)-th root gives
+a slope interval of length
+\(O_g(\Delta(Z/F_z)/(V_0/F_v))\) after adjusting
+for the fixed factors. Dividing the interval
+length by the separation proves the claim.
+The end conditions \(D=1\) or a dyadic box with
+one small root are included.
+
+One can pay just the joint record of the coefficients
+and the prime supports of the three divisors. Once those
+supports are known, the possible full powers up to a
+fixed polynomial height have height-subpower count.
+This includes an arbitrary admissible divisor on
+the recorded support. The cost is uniform in such
+supports. In each allowed shape the analytic price
+is therefore bounded by the actual displayed interval
+ratio and the joint record catalogue price. There is no
+root-height floor. The exponents \(P,Q\) do not have to
+be recorded separately once the common divisor \(g\)
+is fixed: the complete effective roots \(z,v\) determine
+\(U,V\) by the signed additive equation. For adaptive
+\(g\) one may fix a finite upper cutoff before the
+height limit. Above a cutoff \(J/L\), enumeration
+of the two effective roots and their common exponent
+costs at most \(n^{2H_0/J+o_X(1)}\) for complete height
+at most \(X^{H_0}\) after fixing the
+coefficients. If both roots are one the coefficient
+pair suffices. This proves uniform fixed-budget
+bounds without an unbounded kernel constant.
+
+In particular, in the original shell of height at most
+\(X\), a fixed positive weight \(w\) on a full divisor
+of the third letter gives a no-strip
+upper bound that is subpower per record whenever
+\(gw>2\) by a fixed margin. A sufficiently large
+**fixed** common divisor \(g\) is enough. More
+generally use the actual sum of the remaining
+root height exponents after division, and add the
+real-strip depth if available. CPW5 remains a
+strict saving with this weaker shared-order
+condition and the same strict joint record price.
+The Subspace Theorem argument of CPW3 retains
+its separate unbounded-height cardinality statement
+for a fixed finite set of places.
+[Rectangular power congruences, equation (10)](ABC_OMITTED_COORDINATE_GRAPH.md#counting-two-omitted-powers-with-a-partial-modulus)
+· [Prescribed-support enumeration (EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
+
+
+At fixed coefficients, one may strip the entire part of each
+effective root on its coefficient support at height-subpower
+cost. This exhausts the possible powers on an already recorded
+set of primes. For the still unrecorded parts, the resulting
+valuation-cutoff optimization is explicit. Multiply the log of
+the displayed interval ratio in base \(X\) by \(g\). A new full
+prime power \(p^e\) on a powered original role then contributes
+\(Le\) per unit of raw radical cost \(\log_n p\), because outside
+the coefficient support its exponent in the effective root
+is \(e/g\). On the third role it contributes \(gLe\) per unit of
+the same raw radical cost. True real strip depth contributes
+\(g\log_X(1/\Delta)\). Thus among purchases charged at raw
+support cost, take the largest of these weighted valuation
+levels first. The divisible relaxation is the integral of the
+upper quantile of this joint empirical distribution over the
+price allowance. It follows by exchanging two units of price
+carrying different weighted levels. A whole-power purchase
+reaches the relaxed height gain after paying at most one
+additional prime's raw cost: take the initial segment and
+round its final purchase up. On a compact nonatomic band this
+extra cost can be made arbitrarily small after the large-prime
+stripping. Any cheaper actual joint dictionary can be used
+in place of the raw support charge. This computation optimizes
+the sufficient slope inequality and keeps the actual height
+of each remaining factor in that inequality.

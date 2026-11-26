@@ -1924,6 +1924,59 @@ core and for one mirrored Gamma pair with real noninteger exponents.
 The construction uses no ordinary integer-gap counterexample.
 
 
+## Finite cores and exact separation at positive Gaussian strengths
+
+For a fixed relative-gap threshold \(\rho>0\), the bound \(S<12\)
+at a possible collision gives fewer than \(12/\rho\) rows of
+relative gap at least \(\rho\). The larger exponent of any such
+row is below \(12/\rho^2\). The core at this threshold therefore
+ranges over finitely many ordinary multisets. The diffuse tail
+can have arbitrarily many independently chosen rows. Decreasing
+\(\rho\) changes the core list and need not give an exclusion
+uniformly over that list.
+
+The [tame quotient certificate](MULTIVARIATE_TAME_QUOTIENT_MULTIPLICITY_TRANSFER.md)
+compares exact Newton slope differences and the first nonzero
+depth of a quotient from a binomial face. A passing residue
+pattern at one prime survives arbitrary tail heights and gaps
+when all added row multiplicities are divisible by a fixed
+modulus. A finite collection of primes also handles independently
+variable repetitions of any fixed finite list of row blocks.
+The certificate applies through all exceptional Gaussian
+strengths with no proximity or coefficient approximation
+restriction. It is available directly for profiles passing
+the valuation tests. Arbitrarily small paired unit-row additions
+can arrange these tests while preserving the signed gap and the
+limiting physical coefficients.
+
+The [marked Gaussian clock calculation](MULTIVARIATE_FIRST_BLOCK_MARKED_GAUSSIAN_CONTACTS.md)
+restricts positive exceptional clocks at an isolated upper
+first-block prime. It gives a finite negative valuation menu
+with positive-depth residue conditions and a discriminant charge
+at depth-one marks. The
+[populated upper interval criterion](MULTIVARIATE_POPULATED_UPPER_HEIGHT_CLOSURE.md)
+gives an independent certificate for the original integer
+profiles whose high interval contains enough favorable sites.
+It also gives sparse signed-gap-preserving extensions at
+arbitrary limiting positive strengths. A
+[uniform phase reserve for mirrored private-unit bases](MULTIVARIATE_MIRRORED_PRIVATE_UNIFORM_GAUSSIAN_RESERVE.md)
+permits asymmetric small-curvature anchors and arbitrary-strength
+diffuse tails on that base, where both monomials have private variables.
+The
+[odd anchor divisibility construction](MULTIVARIATE_ODD_ANCHOR_DIVISIBILITY_OBSTRUCTION.md)
+realizes all the linked odd-corner divisor conditions on
+coprime ordinary profiles at each prescribed limiting strength.
+
+For a possible common factor of any degree, the
+[fresh quotient-prime theorem](MULTIVARIATE_HIGHER_DEGREE_FRESH_QUOTIENT_PRIMES.md)
+forces fresh residue primes or reduces the factor to a rational
+binomial. The [cyclotomic gcd limit](MULTIVARIATE_CYCLOTOMIC_GCD_ASYMPTOTIC_RATE.md)
+computes an asymptotic upper bound on the common factor's
+quotient heights from the parents' compatible quotient powers.
+To close the finite-core reduction one still needs a certificate
+near the possible exceptional strengths for the original tails
+with unconstrained exponents and multiplicities.
+
 ## Exact arithmetic along common translations
 
 The [single-row fiber theorem](MULTIVARIATE_SINGLE_ROW_ANGULAR_EXCEPTIONAL_FIBERS.md)

@@ -6,7 +6,7 @@ This index maps the retained current research and paper sources to graph stateme
 
 Generated navigation, tooling guides and immutable deposited archives are excluded from this current-source inventory. Archived publication integrity is checked separately.
 
-**Inventory:** 5248/5311 documents; 6799 explicit source declarations indexed. 81 coverage issues.
+**Inventory:** 5248/5312 documents; 6799 explicit source declarations indexed. 82 coverage issues.
 
 [Dependency graph](DEPENDENCIES.md) · [Exact scopes](SCOPES.md) · [Maintenance guide](DEPENDENCY_GUIDE.md)
 
@@ -56,6 +56,7 @@ Generated navigation, tooling guides and immutable deposited archives are exclud
 - unmapped retained document: factorial/image-rigidity/MULTIVARIATE_FOUR_ROW_PADIC_EXTERIOR_OBSTRUCTION.md
 - unmapped retained document: factorial/image-rigidity/MULTIVARIATE_GAUSSIAN_HALF_LOG_OBSTRUCTION.md
 - unmapped retained document: factorial/image-rigidity/MULTIVARIATE_HCM_DENSITY_COMPARISON_OBSTRUCTIONS.md
+- unmapped retained document: factorial/image-rigidity/MULTIVARIATE_HIGHER_DEGREE_FRESH_QUOTIENT_PRIMES.md
 - unmapped retained document: factorial/image-rigidity/MULTIVARIATE_MATCHED_TANH_TORSION_NEWTON_GATE.md
 - unmapped retained document: factorial/image-rigidity/MULTIVARIATE_MIXED_FIXED_DIMENSION_PRIME_OBSTRUCTION.md
 - unmapped retained document: factorial/image-rigidity/MULTIVARIATE_NATIVE_DEEP_PRIME_DIVISOR_GATE.md

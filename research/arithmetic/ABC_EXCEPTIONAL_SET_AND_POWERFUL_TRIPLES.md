@@ -10814,6 +10814,65 @@ sector. The unbounded-order branch is treated
 before the bounded-order application.
 [Subspace Theorem transfer (CPW3–CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#uniform-upper-bounds-once-the-shift-part-is-larger)
 
+## Primitive slopes and radical prices of power differences
+
+There is a finite-height improvement over the common-order
+application above. The actual two powered letters may have
+different literal orders. If their orders have a common divisor
+\(g\), count the resulting primitive slope in a unit class
+of a fixed full third divisor. In a true difference window
+the count charges the actual real width and the product
+of the two remaining root heights after stripping known
+factors. A fixed \(g\) with \(gw>2\) suffices for subpower
+completion at third-divisor height \(X^w\). This removes
+the growing-order requirement for the finite-height application
+with the same strict joint record price.
+[Primitive slope count (CPW7)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#finite-height-slope-counts-for-unequal-orders)
+
+An independent curve argument allows the centered signed
+coefficient ratio to move without recording its dictionary.
+It needs small numerical coefficient height and a third divisor
+with affordable support and controlled scaled valuations.
+The full powers give enough congruence depth to force a
+plane equation. High-degree components use a uniform
+rational-point bound. Low-degree components have few possible
+roots modulo a sufficiently large part of the divisor. A
+fine-grid averaging calculation quantifies the numerical
+coefficient price on a diffuse spectrum. It does not force
+the coefficient width needed at the same order and modulus.
+An alternative count works when a cheap catalogue of prime
+pools separates the actual canonical coefficient ratios.
+A primitive matching with two original radical caps forces
+a full coefficient price even with adaptive orders.
+[Moving coefficient count and the centered benchmark (MPC1–MPC2)](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md)
+· [Separating pools and the matching obstruction (APC1–APC3)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md)
+
+Each nonlinear rational factor of a fixed-order weighted
+binomial pays for the original primitive roots at its own
+outside radical price. Linear factors give genuine additional
+additive rows with controlled radical caps. Averaging these
+prices saves when the binomial has sufficiently many rational
+factors and the coefficient record is affordable. For differences
+of exact powers of order \(M=2^m3^b\), the global sector
+coefficient is at most \(1/(\tau(M)+2)\). A separate bound uses
+only the original shift cap in the numerator and \(\tau(M)\)
+in the denominator. Full divisors of the shift are optional.
+[Nonlinear factor and weighted-binomial counts (BFR1–BFR2)](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md#individual-nonlinear-factor-fibres)
+· [Exact power-difference compression (RC1–RC5)](ABC_EXACT_POWER_DIFFERENCE_RADICAL_COMPRESSION.md#statement-and-counting-input)
+
+Fresh cyclotomic factors can also be evaluated on any original
+primitive row. In one orientation a fixed collection of \(J\)
+such outputs with union radical at most \(n^t\) outside the
+original triple and a prescribed pool gives a count coefficient
+at most \((1+t)/(3+J)\), up to an arbitrarily small allowance
+at small fixed budgets. The simultaneous version uses outputs
+from all three orientations and counts their common order-six
+factor once. These inequalities force new radical growth in
+any near-saturating family across the entire dictionary range.
+An upper bound for that fresh radical on enough genuine rows
+would give a saving without a valuation-grid hypothesis.
+[Fresh cyclotomic radical counts (BFR3–BFR4)](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md#fresh-cyclotomic-radicals-on-original-rows)
+
 ## The unrestricted small-budget obligation
 
 In the simultaneous packet sector, a sufficient missing

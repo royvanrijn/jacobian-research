@@ -206,9 +206,53 @@ factor of degree at most \(d_0\). Degree one is
 excluded by positivity of the even moment. One may
 use \(d_0\) equal to the smaller parent degree.
 
+There are also two smaller ways to use this branch.
+First, for a factor of degree \(d\) dividing \(z^L-c\),
+all its roots have the same valuation at each \(p\),
+namely \(v_p(c)/L\). Thus a prime where no one shared
+slope has remaining width \(d\) already excludes the
+binomial branch. Second, its possible conjugate-pair
+arguments are a finite set depending only on \(d_0\).
+A fixed nonreal diffuse contact with conjugate quotient
+outside that set cannot be approached by this branch,
+regardless of the size of the rational scale \(c\).
+
 This is a finite reduction for any specified pair.
 The fresh-prime test does not require that the field
 be quadratic, the ratio have modulus one at the
 real place, or its prime support be fixed. It does
 not prove that the required prime is always missing
 for unrestricted ordinary factorial profiles.
+
+## Exact examples in degree four
+
+Let \(H(z)=z^4+z+1\). Its reductions modulo \(2\) and
+\(3\) have irreducible factor degrees \(4\) and \(1,3\),
+respectively. They are squarefree, so the Galois group
+contains a four-cycle and a three-cycle. It is the
+symmetric group on four letters, since its order is
+divisible by twelve and a subgroup of index two cannot
+contain a four-cycle. The polynomial \({\cal T}_H\) is
+\[
+                Y^6+4Y^5+4Y^4-Y^3-3Y^2-3Y-1 .
+\]
+It is squarefree modulo \(2\). Because the Galois group
+is transitive on unordered root pairs, the six distinct
+traces are conjugate. Thus \({\cal T}_H\) is an example
+of \(P_\tau\) of degree six. At \(q=11\) its resultant
+with \(C_{11}\) has magnitude \(89\), and at \(q=31\)
+the magnitude is \(5^6\cdot1303\).
+At \(5\) the order condition uses \(5^3\equiv1\bmod31\);
+at \(1303\) it uses the degree-one condition.
+For \(F=H(1+2z)\) and \(G=H(2+3z+z^2)\), each
+integer resultant divides both exact self products,
+as in (3).
+
+For the other branch, \(H_0=z^4+2\) is irreducible and
+all four of its roots have fourth power \(-2\).
+The power transforms at exponent four of
+\(H_0(1+z)\) and \(H_0(1+z+z^2)\) both contain
+\(z+2\) with multiplicity exactly four. These examples
+test the arithmetic of the two branches with planted
+factors, without asserting that either pair consists of
+factorial moments.
