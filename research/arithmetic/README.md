@@ -1425,6 +1425,20 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Tall two-divisor records give a saving at a fixed numerical quotient width | Internal result | proved | [Source](ABC_FIXED_FULL_DIVISOR_TWO_LETTER_RELEASE.md) |
 | A full-divisor fibre exponent is at most either residual nonatomic pair mass | Internal result | proved | [Source](ABC_FIXED_FULL_DIVISOR_TWO_LETTER_RELEASE.md) |
 | The weighted-power Subspace Theorem bound uses full parts of all three letters | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| Primitive slopes count unequal exact orders through three divisor records | Internal result | proved | [Source](ABC_COPRIME_SHORT_POWER_WINDOWS.md) |
+| Moving signed coefficients admit finite-height curve completion | Internal result | proved | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
+| Centered remainders have a diffuse fine-grid numerical benchmark | Internal result | unmapped | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
+| A formal rectangular Taylor certificate misses the diffuse benchmark | Internal result | open | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
+| Both signed coefficient methods admit linear width on the faint-lock scale | Internal result | proved | [Source](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md) |
+| Every nonlinear binomial factor pays its own primitive root fibre | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
+| Additive comparisons price all dyadic and mixed quadratic shift factors | Internal result | proved | [Source](ABC_EXACT_POWER_DIFFERENCE_RADICAL_COMPRESSION.md) |
+| All two–three smooth even orders admit whole-shift radical compression | Internal result | proved | [Source](ABC_EXACT_POWER_DIFFERENCE_RADICAL_COMPRESSION.md) |
+| Joint radical pricing gives strict counts for factor-rich weighted binomials | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
+| Every fixed fresh cyclotomic output has an exponent price at balance | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
+| All three cyclotomic orientations jointly price the original primitive rows | Internal result | proved | [Source](ABC_BINOMIAL_FACTOR_RADICAL_PRICES.md) |
+| One adaptive grid in a real fixed-target fibre must pay its coefficient dictionary | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| A separating pool for moving canonical coefficients gives a strict sector saving | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| A primitive two-cap matching forces the full adaptive coefficient price | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
 
 **Computed obligations:** 108 unresolved; 19 resolved within their exact scope.
 

@@ -781,6 +781,13 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Sign changes required for exact factorial replacement contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIGNED_SLOT_ALTERNATION_CONTACT_RIGIDITY.md) |
 | Fresh residue primes and paired cyclotomic products for a common quadratic | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_QUADRATIC_CYCLOTOMIC_PRODUCT_PRIMES.md) |
 | Linked quadratic specializations at odd corners and finite exact translation lists | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ODD_CORNER_LINKED_QUADRATIC_ANCHORS.md) |
+| Tame quotient separation through arbitrary integer tails in repeated blocks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TAME_QUOTIENT_MULTIPLICITY_TRANSFER.md) |
+| Prime-adic valuation menu at isolated marked Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIRST_BLOCK_MARKED_GAUSSIAN_CONTACTS.md) |
+| All-degree physical separation from populated upper heights | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_POPULATED_UPPER_HEIGHT_CLOSURE.md) |
+| Simultaneous divisibility in the linked odd-corner test on coprime profiles | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ODD_ANCHOR_DIVISIBILITY_OBSTRUCTION.md) |
+| Fresh quotient primes and binomial factors in arbitrary common-factor degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HIGHER_DEGREE_FRESH_QUOTIENT_PRIMES.md) |
+| Exact asymptotic rate of the two cyclotomic pair products | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CYCLOTOMIC_GCD_ASYMPTOTIC_RATE.md) |
+| A uniform Gaussian reserve with asymmetric anchors on mirrored private-unit cores | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MIRRORED_PRIVATE_UNIFORM_GAUSSIAN_RESERVE.md) |
 
 **Computed obligations:** 49 unresolved; 34 resolved within their exact scope.
 
