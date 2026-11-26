@@ -17,8 +17,9 @@ of each orientation, all with smaller exponent
 \(a\equiv-1\pmod M\), gives SFC(2) with \(C'\) in every
 degree. The tail heights may vary independently and be
 unbounded. There is no constraint on the signed tail
-gap. The number of rows added to prepare the core can
-be bounded in terms of \(J\) alone.
+gap. At most \(2((J-1)^2-4)\) rows are needed to prepare
+the core. The same threshold \(S_0\) works for every lift
+of the chosen congruence classes.
 
 The additional core rows have signed gap zero. Their
 normalized real coefficient contributions and signed center
@@ -138,6 +139,11 @@ aligned unit-gap theorem. There can then be no common
 root at that pair. Compute \(S_0\) by taking the maximum
 of the central theorem's explicit thresholds for the
 finitely many pairs and allowed \(h\)'s, including reversal.
+The number of prepared rows is at most twice the sum
+of \(n+N\) over the assigned pairs, which is
+\(2((J-1)^2-4)\). The cutoffs \(S_0\) depend only on
+the prepared core's valuations after its scalar content is
+removed, which are fixed by the chosen adjacent valuations.
 The first pair, terminals at least \(J\), and signed
 gaps outside the selected menu are covered by the
 ordinary positivity and absolute theorems. This proves

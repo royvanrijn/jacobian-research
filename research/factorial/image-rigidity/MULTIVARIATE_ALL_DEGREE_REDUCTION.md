@@ -688,7 +688,47 @@ The [cyclic discrepancy theorem](MULTIVARIATE_RETAINED_CYCLIC_DISCREPANCY.md)
 gives the exact retained valuation differences by residue
 counts at each prime power. Complete residue packets can have
 zero effect on a prime's shared slopes while their individual
-heights vary independently.
+heights vary independently. The [aligned unit-gap test](MULTIVARIATE_ALIGNED_UNIT_GAP_CENTRAL_NEWTON.md)
+reduces the high-count Newton polygons to fixed central faces
+when all smaller exponents satisfy the stated congruence.
+The [prepared core theorem](MULTIVARIATE_PREPARED_ALIGNED_TAIL_ALL_DEGREE.md)
+constructs arbitrarily weak balanced extensions of any core
+whose central slopes separate simultaneously at every low pair.
+Every sufficiently numerous aligned unit-gap tail then gives
+all-degree coprimality, with independently varying heights
+and no restriction on its signed gap.
+The [endpoint-aligned preparation theorem](MULTIVARIATE_PREPARED_ENDPOINT_ALIGNED_TAILS.md)
+uses a fixed balanced unit-gap extension and permits any tail
+count, including the empty tail. At a witness prime it treats
+endpoint or neutral ramps of bounded reduced gap with independently
+varying row heights and \(p\)-power inflations. A residual oscillation
+budget also permits arbitrary additional rows. With opposite
+slope orderings at two primes, one arbitrary bounded-reduced-gap
+row is allowed at unbounded valuation depth. Arbitrarily many
+synchronous marks can be allowed when they aggregate into the
+same single coefficient step at both orders. The proof covers
+ordinary tails through positive exceptional Gaussian limits for
+the prepared core. When synchronous rows span multiple cutoff
+pairs, arbitrary prescribed finite-depth screens at finitely
+many large primes can retain the same quadratic on both central
+faces. A separate witness prime gives all-degree coprimality
+for those ordinary profiles. The residue certificate requires
+preparation and does not resolve arbitrary unmodified profiles.
+The [oriented two-slope budget](MULTIVARIATE_ORIENTED_NATIVE_TWO_SLOPE_BUDGET.md)
+gives an exact necessary divisibility on the original rows at
+every adjacent pair. The increasing first blocks in either order
+can be paid for only by opposite rows in that order and
+same-direction rows in the other order. Even positivity permits
+a second-largest slope bound. The resulting secant gcd and
+adaptive prime budgets certify all degrees when the indicated
+factors are insufficient at each low pair, allowing arbitrary
+retained heights, orientations and counts. The
+[gcd-free Newton residual test](MULTIVARIATE_GCD_FREE_NEWTON_RESIDUAL_SIEVE.md)
+recovers the first common residual width at every coefficient
+prime without factoring the coefficients. Its integer power
+tests use the reduced slope denominators, and its block products
+bound projective denominators. On odd blocks the Jacobi test
+also constrains possible degree allocations across primes.
 The [short-window theorem](MULTIVARIATE_INDEPENDENT_HEIGHT_WINDOW_CLOSURE.md)
 also allows every exponent in a window of width
 \(Ad+d\log(2+d)/(512J^3)\) to vary independently, where \(d\ge2\)
@@ -952,6 +992,17 @@ For a common quadratic approaching it, the prime-to-fixed-set
 part of the gcd of these two evaluated resultants must grow at a
 specified rate. The bound applies in reference degree at least
 five, and in degree four under the stated rank or field condition.
+Its sharper budget counts only matching prime ideals of the two
+evaluations and at most two total residue degrees at each good
+prime. The [ordinary norm amplification](MULTIVARIATE_TWO_NORM_BUDGET_AMPLIFICATION.md)
+constructs arbitrarily weak balanced extensions that preserve the
+starting tail's maximum relative gap. At a fixed prime the same
+extensions make every paired denominator exponent and the common
+evaluated ideal valuation arbitrarily large, with two common unit
+slots surviving any prescribed finite precision. The actual
+extensions have disjoint root arguments in every degree. A uniform
+upper bound on these finite-screen norm budgets therefore needs
+information beyond the fixed real controls and tested precision.
 
 The [uniform bias theorem](MULTIVARIATE_UNIFORM_DIFFUSE_BIAS_SEGMENTS.md)
 allows one chosen signed-drift intercept to work throughout a
@@ -961,6 +1012,11 @@ excludes physical contacts on prescribed algebraic curves of the two
 clock parameters for generic ordinary cores with sufficiently many
 independent base coordinates. In particular it gives nonadaptive
 stability along rational signed-drift slopes, including zero.
+The [nested Newton clock sieve](MULTIVARIATE_RATIONAL_BIAS_NESTED_NEWTON_CLOCKS.md)
+applies at a prescribed rational bias slope for an arbitrary
+fixed ordinary core. The strict vertices disappear only once
+as the clock valuation varies, so finitely many active slope
+comparisons can exclude the entire positive reference family.
 The [generic transverse quadratic reduction](MULTIVARIATE_GENERIC_TRANSVERSE_QUADRATIC_DIFFUSE_CONTACTS.md)
 shows that sufficiently diffuse collisions on generic wide cores
 would have a quadratic gcd, with a transverse reference and a
@@ -1168,6 +1224,26 @@ comparison or its curvature and imbalance bound. The
 [direct coefficient ratio](MULTIVARIATE_DIRECT_RATIO_FIRST_SECTOR.md)
 also separates the entire first sector for fully shared profiles
 with \(V\le16/5\), including balanced columns and arbitrary orientations.
+Its [normalized curvature theorem](MULTIVARIATE_DIRECT_RATIO_CURVATURE_AND_SECTOR_COLLAR.md)
+gives a single possible change of sign in the exact adjacent log
+ratio's second derivative and discrete second differences in one
+orientation of every survivor. For \(N\ge14\), \(S+\tau\le12\),
+and effective signed gap at most \(-2\) in that orientation,
+a two-cut sine comparison excludes an explicit interval on both
+sides of \(2\pi/N\). This includes ordinary fully shared profiles
+with absolute total degree difference at least two after reversal.
+The [joint positive moment obstruction](MULTIVARIATE_JOINT_POSITIVE_MOMENT_SHAPE_OBSTRUCTION.md)
+realizes exact adjacent common roots together with this monotone
+normalized curvature, strict direct log convexity, and any fixed
+number of positive even matched derivatives at sufficiently large
+orders. An exact affine Euler factor and increasing companion
+ratio also permit simple common roots under a positive joint law.
+The [smooth log-concave obstruction](MULTIVARIATE_LOG_CONCAVE_ADJACENT_MOMENT_OBSTRUCTION.md)
+uses a single concentrated positive ratio law with rational
+moments and the exact derivative relation. For every upper order
+at least five it produces one common irreducible quadratic.
+These relaxations isolate the need for further factorial
+constraints in positive moment and direct shape arguments.
 The [exact factorial rectangle](MULTIVARIATE_FACTORIAL_RECTANGLE_FIRST_SECTOR.md)
 uses the stationary curvature to obtain explicit first-sector
 angular separation on each strictly subcritical fully shared band.
@@ -1370,7 +1446,30 @@ to their binomial polynomials at all the prescribed moduli, within
 any open positive curvature interval. In particular, the ordinary
 Newton and residual screens at those moduli allow both candidate
 common-factor degrees at terminal six. The
-[minimal fixed-prime obstruction](MULTIVARIATE_MINIMAL_SINGLE_PRIME_SCREEN_OBSTRUCTION.md)
+[bounded-row packing theorem](SFC_PADIC_BOUNDED_ROW_PACKING.md)
+preserves all normalized coefficient valuations and units at a
+fixed prime and precision through any prescribed finite range of
+moments, after a single positive rational diagonal scaling. The
+row bound depends on the support size, prime and precision alone.
+For binary supports the same records occur at arbitrarily small
+curvature, with all-degree angular separation, and the digit graph
+makes fixed-prime truncated screen survival decidable in Presburger
+arithmetic. The bound concerns one prime and prescribed precision.
+The [simultaneous multi-order theorem](SFC_SIMULTANEOUS_MULTIORDER_FACTORIAL_RECORDS.md)
+gives an exact compatibility test for constant-normalized records
+at several primes across any finite set of moment orders, for any
+fixed support size. At each prime the only valuation links are
+the prime-power scaling chains, and the linked unit quotients
+are determined by a common finite residue-count table. Every
+compatible record is attained by a bounded number of ordinary
+rows in the original variable. For binary profiles, an arbitrary
+core can be retained and its real coefficients approximated
+when the signed gap is fixed. The exact same local record can
+be realized with all-degree angular separation. A shifted
+complementary construction also preserves an existing binary
+record at all tested orders and primes with just two weak
+opposed rows, using a separate witness prime.
+The [minimal fixed-prime obstruction](MULTIVARIATE_MINIMAL_SINGLE_PRIME_SCREEN_OBSTRUCTION.md)
 produces arbitrarily deep binomial congruences at one prescribed
 prime with a single shared row after one common variable scaling,
 or in the original variable with a single mirrored pair. Both

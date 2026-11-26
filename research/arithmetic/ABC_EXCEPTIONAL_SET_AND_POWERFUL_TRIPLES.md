@@ -9426,8 +9426,8 @@ actual rows in every cell, with the overlaps specified at the
 level of complete-letter residue classes.
 A CRT construction realizes arbitrary fixed boxes with shared
 primitive values, exact full divisors and the numerical
-height when \(FGM\operatorname{rad}(FGM)\le X^{1-	heta}\)
-for fixed \(	heta>0\). The three outside radical caps are
+height when \(FGM\operatorname{rad}(FGM)\le X^{1-\theta}\)
+for fixed \(\theta>0\). The three outside radical caps are
 the missing ingredient in that construction.
 [Simultaneous composite packet blocks (SB1–SB3)](ABC_SIMULTANEOUS_COMPOSITE_PACKET_BLOCKS.md)
 · [Residue pair projections and boxes (SC1–SC3)](ABC_SIMULTANEOUS_RESIDUE_PRODUCTS.md)
@@ -10412,8 +10412,8 @@ original fixed-anchor fibre. The half-cap and nonatomic bounds
 use the original heights, and the active-floor equality gives
 compression without a low-degree terminal charge in the
 derived shift. Fixed-rank sparsity makes outside quotients of
-height at most \(X^	heta\) power-small for some fixed
-\(	heta>0\) at each positive multiplicity threshold.
+height at most \(X^\theta\) power-small for some fixed
+\(\theta>0\) at each positive multiplicity threshold.
 Conditioning the absolute residue bound on full-factor records
 also forces their captured raw mass to be paid by information
 about the original free value and its shared residue. This
@@ -10567,6 +10567,140 @@ and to coordinate this insertion in two histories.
 [Projective pullbacks and false carriers (PP1–PP4)](ABC_PROJECTIVE_PULLBACK_CLUSTERING.md)
 · [Multiplicative unit supply (MSU1–MSU2)](ABC_MULTIPLICATIVE_SPECTATOR_UNIT_SUPPLY.md)
 · [Defect-preserving auxiliary splits (BS1–BS2)](ABC_AUXILIARY_BILINEAR_SPLIT.md)
+
+## Shallow occupied registers and short real auxiliary scales
+
+A residue-list moment can include collapsed root products
+larger than the modulus, with their actual multiplicities
+in a congruence class. Interpolating the moment orders shows
+that, at zero complete multiplicity, any joint unit probe of
+depth at most \(1/6\) on one free letter has full collision
+entropy, even with macroscopic exact valuation layers.
+When the individual layer caps tend to zero it reaches
+the full complete exponent \(1/3\) at depth \(1/3\).
+Truncate three genuine locks to depth \(1/6\) each. In
+that fine-layer regime, three shallow residue alphabets
+then carry an actual partial Latin square with exponent
+\(1/3\) even at zero complete degree. Prime-power probes
+also give multiscale nonconcentration on a retained
+marginal. The lifting problem now asks which dense
+shallow arrays can have representatives satisfying
+the three original height and radical constraints.
+A CRT example lifts a complete Latin square to
+primitive tall rows with the prescribed locks when
+the complete radical caps are removed.
+[Interpolated shallow residue moments](ABC_SHALLOW_MOMENT_INTERPOLATION.md)
+· [Shallow registers and actual rows](ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md)
+
+For the signed auxiliary comparison, the weighted
+character frame applies to a fixed product of auxiliary
+primes. A Pell ratio close to one changes its selected
+quadratic sign and preserves the real-window bound to
+power accuracy. A ratio of independent products supplies
+central-window mass by pairing products in the same
+short log interval. On paired blocks of signed histories
+this provides actual short real leaf scales and retains
+the exact paired products, with original-label recovery
+from the normalized split data. The signed upper bound
+now holds with those real windows. A positive signed
+lower bound from genuine three-letter incidence is still
+required, and independent spectator replication loses
+too much of that signal.
+[Simultaneous CRT frames and Pell correction](ABC_SIMULTANEOUS_CRT_CHARACTER_FRAMES.md)
+· [Original-label recovery in the signed comparison](ABC_SHARED_SCALE_BILINEAR_TREE_HISTORIES.md)
+
+## Joint real bins, numerical splices, and prime interpolation
+
+A coupled list of unit residues and real logarithmic bins
+has the same moment gain as one probe with their depths
+added. The proof keeps the spacing of collapsed integer
+root products in each torsion residue and uses a finite
+Fejér majorant for the logarithmic bins. On a fine-layer
+zero-multiplicity chart the mixed collision entropy
+saturates up to depth \(1/3\). After recording a full
+factor it saturates up to the remaining raw mass. This
+rules out, by a power saving, actual charts on which a
+residue label and the fixed records confine enough of a
+complete role to too few numerical windows.
+[Joint real and congruence moments (JRM1–JRM3)](ABC_JOINT_REAL_RESIDUE_MOMENTS.md)
+
+In a shallow register of depth \(\sigma<d\), a matching
+of exponent \(d=1/3\) produces \(n^{2d-\sigma-o(1)}\)
+compatible cross-row sums or signed differences. Their
+outside output radical generically exceeds the original
+target cap. This remains true for numerical near-splices
+at the mixed precision, with the precise decrease in the
+radical threshold given by the real depth. The complementary
+CRT examples illustrate two limits: a near-full shallow graph
+can have no spurious triangles, and a full shallow Latin
+square can satisfy the mixed entropy conditions while its
+spurious carries miss exact addition by the bin spacing.
+These lifts retain the full lock and primitive conditions
+and omit the complete radical caps.
+[Splice radical threshold and carry examples (SRS1–SRS2)](ABC_SHALLOW_REGISTER_SPLICES_AND_CARRIES.md)
+
+Random interpolation through actual triples, combined with
+the polylogarithmic-degree curve saving, rules out heavy
+joint residue compression over a large logarithmic weight
+of prime tests. The subset of rows exhibiting compression
+can vary at every prime. The same argument bounds a proper
+joint collision statistic over prime powers. The marked
+lock primes alone supply too little weight to force the
+obstruction. In the \(p\)-adic projection direction, the
+original complete-ordinate graph at sparse terminal depth
+is below the density threshold even under optimal marginal
+power estimates. A transfer would require new variables
+or a dense restricted graph with a controlled image.
+[Joint interpolation and projection limits (JSI1–JSI4)](ABC_SHALLOW_JOINT_INTERPOLATION.md)
+
+## Common secant gcds and private supports in hybrid cells
+
+The joint real–residue moment gives a one-class saving
+equal to the combined depth at low radical-scale depths.
+In a regular near-occurrence chart, this bounds the full
+part of a common secant gcd on a prescribed prime pool.
+Adaptive pools from earlier anchors can be combined
+with the interpolation hit bound. At zero complete
+multiplicity the resulting mean normalized log gcd
+tends to zero, and in sufficiently large shallow cells
+the imposed modulus accounts for the mean gcd up to
+vanishing extra depth. An ordered-anchor argument also
+gives a fixed-budget power tail above each prescribed
+positive normalized depth. Its power loss may shrink
+with the budget. Separately, the part on prescribed
+pools and the excess powers at small outside primes
+admit a uniform power tail at fixed positive excess.
+[Mean secant gcd (SGM1–SGM4)](ABC_SECANT_GCD_MEAN_OVERLAPS.md)
+· [Normalized tails and primitive directions (NGT1–NGT3)](ABC_SECANT_NORMALIZED_GCD_TAIL.md)
+· [Uniform tail for powerful excess (SGP1)](ABC_SECANT_GCD_POWERFUL_EXCESS.md)
+
+With small scaling gcd, a fixed primitive direction
+fixes an original complete-value shift up to a small
+scalar catalogue. The fixed-target half bound controls
+its fibre. This prices directions below an explicit
+total radical threshold of \(3/2\) near occurrence,
+apart from the fixed-budget exceptional set. Stronger
+qualitative one-coordinate exclusions are available
+from the unrecorded-cofactor method. The secant gcd
+itself therefore need not account for the large radical
+of a typical primitive direction.
+
+On an actual half-depth hybrid cell a prescribed pool
+containing an appreciable part of a free letter's radical
+also lowers its per-anchor count. This makes the two
+opposite supports almost private within genuine large
+shared-residue cells in the stated fine-layer range and
+permits recovery from reciprocal denominators. For a
+numerically near splice, its gcd with the compared true
+target has only a small excess over the shallow
+modulus below half depth. Up to full depth, the averaged
+factor test still excludes large supported or powerful
+excess. The squarefree outside part carries the full
+record price. The resulting direction and splice
+estimates describe the obstruction to transferring the
+original family into a smaller count of powerful
+primitive quotients.
+[Private support and splice gcds (HPS1–HPS3)](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md)
 
 ## The unrestricted small-budget obligation
 

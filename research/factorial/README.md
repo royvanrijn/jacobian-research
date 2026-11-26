@@ -739,9 +739,25 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Effective norm-denominator growth from signed factorial differences | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_HIGH_ORDER_NORM_DENOMINATOR_GROWTH.md) |
 | Effective common-factor norm heights from paired factorial differences | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PAIRED_FACTORIAL_DIFFERENCE_NORM_HEIGHT.md) |
 | Uniform antichain bounds for collision multiplicities | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MULTIPLICITY_ANTICHAIN_BOUND.md) |
-| Prime-to-fixed-set evaluated norm height for isolated quadratics | Internal result | stale | [Source](image-rigidity/MULTIVARIATE_EVALUATED_FACTOR_NORM_HEIGHT.md) |
+| Prime-to-fixed-set evaluated norm height for isolated quadratics | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EVALUATED_FACTOR_NORM_HEIGHT.md) |
+| Central Newton faces for aligned unit-gap tails with independent heights | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ALIGNED_UNIT_GAP_CENTRAL_NEWTON.md) |
+| All-degree aligned unit-gap stability after arbitrarily weak core preparation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PREPARED_ALIGNED_TAIL_ALL_DEGREE.md) |
+| Nested Newton clock sieve for prescribed rational biases | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RATIONAL_BIAS_NESTED_NEWTON_CLOCKS.md) |
+| Bounded-dimensional factorial packing at fixed prime precision | Internal result | proved | [Source](image-rigidity/SFC_PADIC_BOUNDED_ROW_PACKING.md) |
+| Ordinary amplification of paired and evaluated norm budgets | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_TWO_NORM_BUDGET_AMPLIFICATION.md) |
+| Monotone direct-ratio curvature and a second-sector collar | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIRECT_RATIO_CURVATURE_AND_SECTOR_COLLAR.md) |
+| Prepared cores for endpoint-aligned factorial tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PREPARED_ENDPOINT_ALIGNED_TAILS.md) |
+| Negative two-adic quadratic forcing branch exclusion | Internal result | proved | [Source](image-rigidity/QUADRATIC_FACE_FORCING_NEGATIVE_TWO_ADIC_BRANCH.md) |
+| Positive-valuation quadratic forcing branch exclusion | Internal result | proved | [Source](image-rigidity/QUADRATIC_FACE_FORCING_POSITIVE_VALUATION_BRANCHES.md) |
+| Exact quadratic forcing residual frontier and conditional symmetric bridge | Internal result | proved | [Source](image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md) |
+| Simultaneous factorial records at several primes and orders | Internal result | proved | [Source](image-rigidity/SFC_SIMULTANEOUS_MULTIORDER_FACTORIAL_RECORDS.md) |
+| Oriented native budgets for two shared Newton slopes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORIENTED_NATIVE_TWO_SLOPE_BUDGET.md) |
+| Adjacent collisions for joint positive moment shapes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_JOINT_POSITIVE_MOMENT_SHAPE_OBSTRUCTION.md) |
+| Adjacent collisions for smooth strongly log-concave moment laws | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LOG_CONCAVE_ADJACENT_MOMENT_OBSTRUCTION.md) |
+| Newton residual degrees without prime factorization | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_GCD_FREE_NEWTON_RESIDUAL_SIEVE.md) |
+| First two exceptional forcing pairs, exact prefix and tail reduction | Internal result | proved | [Source](image-rigidity/QUADRATIC_FACE_FORCING_FIRST_TWO_RESIDUAL_PAIRS.md) |
 
-**Computed obligations:** 49 unresolved; 30 resolved within their exact scope.
+**Computed obligations:** 52 unresolved; 30 resolved within their exact scope.
 
 **Assessment update needed:** GAP-FACTORIAL-POLYNOMIAL-GRACE-STRIP-NONCOLLISION, UQR-OPEN-ALL-REMAINING-RESONANT-PAIR-COPRIMALITY, UQR-OPEN-DENSE-UNIVARIATE-QUADRATIC-SFC, LAB-OPEN-FOUR-TERM-BINARY-QUADRATIC-SFC, LAB-OPEN-FIVE-TERM-TERNARY-QUADRATIC-SFC now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
 
@@ -875,5 +891,8 @@ Tracked obligations (computed states):
 - **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Universal four-moment windows forax^2+bx+dy+c, equivalent to the dense univariate quadratic problem.](image-rigidity/QUADRATIC_STRONG_FACTORIAL_LINEAR_ADJUNCTION_BRIDGE.md) — LAB-OPEN-FOUR-TERM-BINARY-QUADRATIC-SFC
 - **mathematical / proved (discharged):** Authored question: [Closed by the complete Dense theorem and its proved equivalences: Universal five-moment windows forax^2+bx+dy+ez+c, equivalent to the same dense univariate quadratic problem.](image-rigidity/QUADRATIC_STRONG_FACTORIAL_LINEAR_ADJUNCTION_BRIDGE.md) — LAB-OPEN-FIVE-TERM-TERNARY-QUADRATIC-SFC
 - **mathematical / open:** [Prove the actual five-support window for a(x^2+y^2)+e(x+y)+c with aec!=0, without inferring a shorter window by specializing the six-term theorem.](image-rigidity/FULL_SYMMETRIC_BINARY_QUADRATIC_STRONG_FACTORIAL.md) — SBQ-OPEN-SYMMETRIC-FIVE-TERM-WITHOUT-CROSS
+- **mathematical / open:** [Exclude every three-zero quadratic forcing block at all positive starts; the proved local exclusions leave an exact exceptional family.](image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md) — QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW
+- **mathematical / open:** [Prove all exceptional quadratic-field adjacent-pair coprimeness assertions, q1or2mod4, equivalent to the universal forcing gate.](image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md) — QTF-OPEN-EXCEPTIONAL-QUADRATIC-FAMILY-PAIR-COPRIMALITY
+- **mathematical / open:** [Prove adjacent-pair coprimeness for every eligible exceptional q>=5; the two smaller eligible cases are now exactly certified, but no infinite tail is seeded.](image-rigidity/QUADRATIC_FACE_FORCING_FIRST_TWO_RESIDUAL_PAIRS.md) — Q12-OPEN-EXCEPTIONAL-PAIR-COPRIMALITY-TAIL-Q-GE-FIVE
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

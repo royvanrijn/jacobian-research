@@ -106,7 +106,9 @@ the correction has negligible mass above any positive
 scaled degree and the sum of valuations contributed by the
 short roots has bounded radical-weighted mean. Truncating
 their multiplicities at any fixed bound gives finitely many
-scaled sums, then increasing the bound proves atomicity.
+scaled sums. After a subsequence, the mass on sums tending
+to infinity vanishes by the numerical height cap, and one
+can then increase the multiplicity bound to prove atomicity.
 In either case the bound becomes \(b+o(1)\).
 For fixed root-count and root-height bounds and each fixed
 count allowance \(\eta>0\), some fixed numerical cofactor
@@ -191,9 +193,8 @@ The resulting necessary information cost is
 \]
 In a balanced chart \(\Delta_U=o(1)\) in the chart and
 count allowances, by (RB3)–(RB5), and likewise for \(V\).
-If \(R_U\) and \(R_V\) are full-factor records determined
-respectively by \(U\) and \(V\), with respective captured
-masses \(f_U,f_V\), then
+If \(R_U\) and \(R_V\) fix full factors of \(U,V\)
+with respective captured masses \(f_U,f_V\), then
 \[
  \begin{split}
  H(R_U,R_V)&\ge \tfrac12(f_U+f_V)
@@ -203,10 +204,18 @@ masses \(f_U,f_V\), then
  \qquad H(R_V\mid\Theta)\ge \tfrac12(f_V-s)-o(1).
  \end{split}
 \]
-Indeed \(f_i\le 2H(R_i\mid\Theta)+I(R_i;\Theta)+o(1)\)
-from the first inequality. Conditional data processing
-gives \(I(R_U;R_V\mid\Theta)\le I(U;V\mid\Theta)=o(1)\).
-To add the two inequalities use
+These records may be selected jointly from the original
+row. Let \(\ell_i=H(R_i\mid i,\Theta)\) for \(i=U,V\).
+The first inequality gives
+\(f_i\le 2H(R_i\mid\Theta)+I(R_i;\Theta)-2\ell_i+o(1)\).
+By conditional data processing and the chain rule,
+\[
+ I(R_U;R_V\mid\Theta)
+     \le I(U;V\mid\Theta)+\ell_U+\ell_V.
+\]
+The two leakage terms cancel when summing the
+inequalities and passing to the joint entropy.
+Use \(I(U;V\mid\Theta)=o(1)\) and
 \[
  2I(R_U,R_V;\Theta)-I(R_U;\Theta)-I(R_V;\Theta)
    = I(R_U;\Theta\mid R_V)+I(R_V;\Theta\mid R_U).
@@ -221,7 +230,7 @@ though the per-cell codegrees have no positive target
 exponent. A record that fixes a full
 part with a larger raw mass than the indicated information
 cost contradicts balanced saturation by a fixed margin.
-The inequalities apply to the actual joint data and give
+The inequalities use the actual joint data and give
 conditions at every \(\alpha\). They do not assert a cheap
 record having the required capture.
 [Absolute residue alphabet bound and entropy identities (RB2–RB5)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#regular-balanced-cohorts-and-absolute-residue-pricing)
@@ -267,9 +276,8 @@ alphabet estimate in each joint bin. The number of
 coordinates is fixed in the inner limit. The entropy
 of the bin choices is height-subpower, and their
 averaged logarithmic alphabet bounds are the displayed
-conditional entropies. Uniform root exponents and
-subpower orders here are used at the fixed-budget
-height limit before taking the outer limit.
+conditional entropies. The orders and moment indices here are fixed at the
+fixed-budget height limit before taking the outer limit.
 [Degree-one residue list moment (AT1)](ABC_ABSOLUTE_TARGET_RAY_MOMENTS.md#algebraic-integers-with-a-ray-residue-dictionary)
 
 ### Modular overlap of complementary factor records
@@ -416,10 +424,15 @@ zero-price stripping calculation is a bound for
 submeasures with those formal residual prices.
 Realizing that combined data inside a three-cap
 additive graph would require further arithmetic.
-A sufficiently stronger quantitative fixed-shift
-bound away from the active floor, or a discount in
-the actual conditional costs, could change the
-comparison.
+A stronger quantitative fixed-shift bound away from
+the active floor, or a discount in the actual
+conditional costs, could change the comparison.
+The same weak spectrum can arise on fine divisibility
+grids, where the separate \(7/24\) estimate already
+gives a saving. Hence a weak profile cannot classify
+the arithmetic survivors without exact valuation
+information.
+[Fine valuation grids and diffuse weak limits](ABC_FINE_VALUATION_DIVISIBILITY.md#consequence-for-a-genuinely-fine-valuation-grid)
 [Projection-cost test dictionaries and the register model](ABC_BALANCED_FIXED_SHIFT_REVERSE_TESTS.md#surviving-conditional-profiles-across-the-full-range)
 
 ## The remaining three-letter test
@@ -451,8 +464,8 @@ discount of the average certified lifted path price
 below \(u\) by a fixed margin would give the (RT3)
 saving. The discount may come from an actual joint
 record, smaller residual dictionaries, or a stronger
-fixed-shift count on broad spectra. At \(u\to0\) the
-off-diagonal estimate can save at most \(u/2\).
+fixed-shift count on broad spectra. As \(u\to0\), even a subpower off-diagonal
+codegree bound gives only the RT3 gap \(u/2\).
 A sufficient complementary estimate there is an
 upper bound \(n^{s-\delta+o(1)}\) on occupied
 typical cells on a chart of price much less than

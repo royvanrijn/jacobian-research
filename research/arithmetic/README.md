@@ -1335,6 +1335,57 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Actual occurrence radical dictionaries can supply the auxiliary unit law | Internal result | proved | [Source](ABC_MULTIPLICATIVE_SPECTATOR_UNIT_SUPPLY.md) |
 | A bilinear auxiliary split preserves exact additive truth and redistributes ratios | Internal result | proved | [Source](ABC_AUXILIARY_BILINEAR_SPLIT.md) |
 | Support products give an arithmetic marginal law for a defect-preserving split | Internal result | proved | [Source](ABC_AUXILIARY_BILINEAR_SPLIT.md) |
+| Original fixed-letter fibres bound genuine residue-cell codegrees | Internal result | proved | [Source](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md) |
+| Original codegree lifts exclude active-floor equality | Internal result | proved | [Source](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md) |
+| Prescribed-pool quotients need positive numerical height on full codegree paths | Internal result | proved | [Source](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md) |
+| Captured full factors have a conditional residue information cost | Internal result | proved | [Source](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md) |
+| Conditional exact-layer costs strengthen the absolute residue alphabet count | Internal result | proved | [Source](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md) |
+| Entropy of complementary factors forces a modular matching | Internal result | proved | [Source](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md) |
+| The original-fibre nonatomic bound sharpens trimmed numerical quantiles | Internal result | proved | [Source](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md) |
+| A broad diffuse profile passes the lifted height and price comparisons | Internal result | proved | [Source](ABC_BALANCED_ORIGINAL_FIBRE_LIFT.md) |
+| Interpolated exact-layer moments count shallow residue lists | Internal result | proved | [Source](ABC_SHALLOW_MOMENT_INTERPOLATION.md) |
+| Every exact-layer profile saturates the moment gain to half depth | Internal result | proved | [Source](ABC_SHALLOW_MOMENT_INTERPOLATION.md) |
+| Fine exact layers saturate shallow residue registers | Internal result | proved | [Source](ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md) |
+| Actual diffuse marginals admit a thin prime-power probe at every depth | Internal result | proved | [Source](ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md) |
+| Three shallow residue alphabets carry a dense actual partial Latin square | Internal result | proved | [Source](ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md) |
+| A full Latin square has tall primitive CRT lifts with all three fixed locks | Internal result | proved | [Source](ABC_SHALLOW_RESIDUE_REGISTER_SATURATION.md) |
+| A character frame controls products from correlated actual root tuples | Internal result | proved | [Source](ABC_COMPLETE_VALUE_CHARACTER_FRAMES.md) |
+| Real windows and side records preserve the complete-value frame | Internal result | proved | [Source](ABC_COMPLETE_VALUE_CHARACTER_FRAMES.md) |
+| Paired scale cosets retain the original complete labels | Internal result | proved | [Source](ABC_SHARED_SCALE_BILINEAR_TREE_HISTORIES.md) |
+| Normalized split data recover original labels across auxiliary primes | Internal result | proved | [Source](ABC_SHARED_SCALE_BILINEAR_TREE_HISTORIES.md) |
+| The symmetric recovered-history statistic is a positive Mellin overlap | Internal result | proved | [Source](ABC_SHARED_SCALE_BILINEAR_TREE_HISTORIES.md) |
+| Primitive composite conductors give a simultaneous character frame | Internal result | proved | [Source](ABC_SIMULTANEOUS_CRT_CHARACTER_FRAMES.md) |
+| Pell ratios remove joint quadratic modes inside a real window | Internal result | proved | [Source](ABC_SIMULTANEOUS_CRT_CHARACTER_FRAMES.md) |
+| Symmetric product ratios have central-window mass and CRT mixing | Internal result | proved | [Source](ABC_SIMULTANEOUS_CRT_CHARACTER_FRAMES.md) |
+| Short real CRT spectators retain labels in signed histories | Internal result | proved | [Source](ABC_SIMULTANEOUS_CRT_CHARACTER_FRAMES.md) |
+| Independent CRT spectators dilute the guaranteed occurrence signal | Internal result | proved | [Source](ABC_SIMULTANEOUS_CRT_CHARACTER_FRAMES.md) |
+| A full factor lowers the conditional saturation depth by its captured mass | Internal result | proved | [Source](ABC_SHALLOW_MOMENT_INTERPOLATION.md) |
+| Congruence and real depths add in exact-layer list moments | Internal result | proved | [Source](ABC_JOINT_REAL_RESIDUE_MOMENTS.md) |
+| Balanced letters have joint real and congruence nonconcentration | Internal result | proved | [Source](ABC_JOINT_REAL_RESIDUE_MOMENTS.md) |
+| A short residue-dependent real list saves on a balanced chart | Internal result | proved | [Source](ABC_JOINT_REAL_RESIDUE_MOMENTS.md) |
+| Shallow registers force splice outputs with large fresh radical | Internal result | proved | [Source](ABC_SHALLOW_REGISTER_SPLICES_AND_CARRIES.md) |
+| Even numerical near-splices usually acquire fresh radical | Internal result | proved | [Source](ABC_SHALLOW_REGISTER_SPLICES_AND_CARRIES.md) |
+| A full shallow Latin lift can have large numerical carries on all spurious triangles | Internal result | proved | [Source](ABC_SHALLOW_REGISTER_SPLICES_AND_CARRIES.md) |
+| Near-full primitive CRT lifts can avoid loose shallow triangles | Internal result | proved | [Source](ABC_SHALLOW_REGISTER_SPLICES_AND_CARRIES.md) |
+| Random anchors bound proper joint congruence hits on actual abc triples | Internal result | proved | [Source](ABC_SHALLOW_JOINT_INTERPOLATION.md) |
+| Moving jointly compressed subsets cannot persist over heavy prime weights | Internal result | proved | [Source](ABC_SHALLOW_JOINT_INTERPOLATION.md) |
+| Shallow joint collisions have a bounded mean gcd weight | Internal result | proved | [Source](ABC_SHALLOW_JOINT_INTERPOLATION.md) |
+| The direct complete-letter residue graph falls below the p-adic projection threshold | Internal result | proved | [Source](ABC_SHALLOW_JOINT_INTERPOLATION.md) |
+| Shallow moments control the mean high part of genuine secant gcds | Internal result | proved | [Source](ABC_SHALLOW_JOINT_INTERPOLATION.md) |
+| One unit residue costs its full depth at low combined depth | Internal result | proved | [Source](ABC_SECANT_GCD_MEAN_OVERLAPS.md) |
+| Adaptive pools have small deep overlap with a typical secant | Internal result | proved | [Source](ABC_SECANT_GCD_MEAN_OVERLAPS.md) |
+| The mean normalized logarithm of the full common secant gcd is small | Internal result | proved | [Source](ABC_SECANT_GCD_MEAN_OVERLAPS.md) |
+| A shallow residue cell leaves little mean gcd beyond its imposed modulus | Internal result | proved | [Source](ABC_SECANT_GCD_MEAN_OVERLAPS.md) |
+| Full common secant gcds admit a power tail at every fixed budget | Internal result | proved | [Source](ABC_SECANT_NORMALIZED_GCD_TAIL.md) |
+| A small secant scale preserves the explicit half price of a physical shift | Internal result | proved | [Source](ABC_SECANT_NORMALIZED_GCD_TAIL.md) |
+| Primitive secant directions have a large total radical near occurrence | Internal result | proved | [Source](ABC_SECANT_NORMALIZED_GCD_TAIL.md) |
+| A uniform power tail bounds supported and repeated powers of the secant gcd | Internal result | proved | [Source](ABC_SECANT_GCD_POWERFUL_EXCESS.md) |
+| A prescribed captured support lowers the count in a hybrid cell | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
+| Almost private supports recover original histories in half-depth cells | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
+| Near splices have small extra gcd or negligible powerful excess | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
+| A splice and its physical shift have a joint fresh radical floor | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
+| Physical shifts with bounded outside radical are rare in sub-half-depth cells | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
+| Axis interpolation controls the mean remaining splice gcd | Internal result | proved | [Source](ABC_HYBRID_CELL_PRIVATE_SUPPORT_AND_SPLICE_GCD.md) |
 
 **Computed obligations:** 108 unresolved; 19 resolved within their exact scope.
 
