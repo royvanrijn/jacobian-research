@@ -200,3 +200,63 @@ shared divisor. A small relative defect, affordable kernel
 parts and control of unselected multiplicities remain
 arithmetic inputs when applying the graph estimate at the
 unrestricted balanced endpoint.
+
+## Counting all original rows
+
+**MP6.** Keep all actual rows, without selecting one per
+kernel pair. Write \(W_0\) for their number and \(m_{ij}\)
+for the multiplicity at the \(i\)-th left and \(j\)-th
+right label. If \(m_{ij}\le M_0\) uniformly, and at least
+a fraction \(\rho>0\) of the ordered row pairs with a common
+right label and distinct left labels have relative target
+defect at most \(H\), then
+\[
+                   W_0\ll M_0 B_1+
+                                A\sqrt{B_1\Delta/\rho}.     \tag{MP6}
+\]
+The height caps, common modulus, and uniform definition
+of \(\Delta\) are those of (MP2). A positive lower bound
+for the eligible fraction is needed only for distinct left
+labels.
+
+Indeed let \(d_j=\sum_i m_{ij}\). The number of ordered
+pairs with a common right label but distinct left labels
+is \(\sum_jd_j^2-\sum_{ij}m_{ij}^2\), bounded below by
+\(W_0^2/B_1-M_0W_0\). For each ordered pair of distinct
+left labels, (MP2) already counts *all* eligible actual
+row pairs over all common right labels, so their number
+is at most \(A(A-1)\Delta\). This proves the quadratic
+bound and hence (MP6). In particular the multiplicity
+bound only enters the first term. It does not multiply
+the second term.
+
+At \(e=3\), suppose every actual cube-free target coefficient
+on column \(j\) has the form \(S_j C\) with \(S_j>0\) fixed on
+that column and \(\operatorname{rad}_{\overline{\mathcal P}}(C)
+\le n^\gamma\). Retain the polynomial complete-height bound
+\(X^B\). For each fixed kernel pair \(P,Q\), there are
+\(O(n^\gamma X^\varepsilon)\) possible values of \(C\), by
+enumerating its outside radical and then its powers on the
+fixed resulting support. Each coefficient \(S_j C\)
+gives a weighted diagonal cubic with the three roots
+\((y,x,z)\), where \(T=S_j C z^3\). The roots are primitive
+by actual within-row coprimality. Heath-Brown's theorem
+counts each fixed-coefficient completion at subpower cost.
+This gives \(M_0\ll n^\gamma X^\varepsilon\), uniformly in
+the fixed column factor. At the same time every distinct-left
+pair in the column is eligible with \(H=n^{2\gamma}\),
+since the common target factor cancels from the relative
+power class. Neither argument enumerates the factors \(S_j\)
+as a global dictionary.
+
+For example if \(A,B_1\le n^{1/6}\) and \(D\ge(YZ)^2\),
+(MP6) bounds the actual row count by
+\(O(n^{1/4+\gamma}X^\varepsilon)\). At every fixed
+\(L>0\) with \(n=X^L\) and \(\gamma<1/12\) by a fixed
+margin, the height allowance may be chosen small enough
+to preserve a strict saving below \(1/3\). The same
+graph conclusion applies to fixed-height ranges within
+a least-repaired family when these hypotheses are imposed
+on the primitive quotients. It leaves the local relative
+defect and kernel-dictionary extraction from the unrestricted
+radical constraints unresolved.

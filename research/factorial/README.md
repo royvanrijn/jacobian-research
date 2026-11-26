@@ -658,8 +658,37 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All-degree regular approximation with arbitrary finite-prime data | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_REAL_LOCAL_COEFFICIENT_APPROXIMATION.md) |
 | A nonsemialgebraic outer boundary of the exact ordinary compactification | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPACTIFICATION_NONSEMIALGEBRAIC_BOUNDARY.md) |
 | An exact intermediate polynomial for a linear shared monomial | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LINEAR_MONOMIAL_EULER_BRIDGE.md) |
+| All-degree angular separation from simultaneous first-block factors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIMULTANEOUS_FIRST_BLOCK_ANGULAR_SEPARATION.md) |
+| All-degree coprimality from simultaneous midpoint marks | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIMULTANEOUS_MIDPOINT_MARKS_ALL_DEGREES.md) |
+| First-block factors give projective separation for ordinary moment windows | Internal result | proved | [Source](image-rigidity/SFC_SIMULTANEOUS_FIRST_BLOCK_PROJECTIVE_WINDOWS.md) |
+| Two-sided finite decisions for bounded-gap factorial families | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BOUNDED_GAP_FINITE_DECISION.md) |
+| A finite height bound for original profiles with one unbounded row type | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_UNBOUNDED_TYPE_FINITE_DECISION.md) |
+| Prime-power terminals for a shared unit gap with private prime-power exponents | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_LINEAR_MONOMIAL_PRIME_POWER_WINDOWS.md) |
+| All-degree exact exclusion for common-height tails with bounded gaps | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMMON_HEIGHT_BOUNDED_GAP_TAIL_CLOSURE.md) |
+| Exact reflected tail exclusion at an isolated two-clock Gaussian contact | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ISOLATED_TWO_CLOCK_DIFFUSE_EXCLUSION.md) |
+| Signed factorial jet tests at positive diffuse exceptional strengths | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_POSITIVE_DIFFUSE_EXCEPTION_SIGNED_JETS.md) |
+| Transverse ordinary tail exclusion at positive Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_EXCEPTIONAL_GAUSSIAN_CLOCK_TRANSVERSALITY.md) |
+| Conditional persistence of a sign-changing positive diffuse contact | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_INTERIOR_CONTACT_PERSISTENCE.md) |
+| All-degree exact exclusion for bounded gaps at affine heights | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AFFINE_HEIGHT_BOUNDED_GAP_TAIL_CLOSURE.md) |
+| A rational Newton polygon certificate for all multiplicities of an affine tail template | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AFFINE_TAIL_COUNT_POLYTOPE.md) |
+| Support-size Strong Factorial for every homogeneous binary quadratic | Internal result | proved | [Source](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) |
+| Prime-prefix conditions on any common factor degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIRECTED_PREFIX_FACTOR_DEGREE_GATE.md) |
+| Second-order contact tests for weak ordinary tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_WEAK_TAIL_SECOND_ORDER_CONTACT_GATE.md) |
+| A positive Robin resolvent at derivative roots of the Gamma product moments | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_ROBIN_RESOLVENT.md) |
+| All-degree factorial binomials with one shared and one private unit gap | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_SHARED_UNIT_ALL_SHAPES.md) |
+| Sharp short Strong Factorial windows for independent affine powers | Internal result | proved | [Source](image-rigidity/INDEPENDENT_AFFINE_POWERS_STRONG_FACTORIAL.md) |
+| Prime-height restrictions at positive physical diffuse contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_CLOCK_PRIME_HEIGHT.md) |
+| Finite ordinary cores detect nondegenerate compactified interior contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_COMPACTIFIED_INTERIOR_CONTACT_FINITE_REDUCTION.md) |
+| Exact all-degree factorial separation across retained scales | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ARBITRARY_RETAINED_SCALE_DECOUPLING.md) |
+| All-degree coprimality in short independent exponent windows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_INDEPENDENT_HEIGHT_WINDOW_CLOSURE.md) |
+| Exact jet exclusion for signed-balanced affine tails at isolated positive contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BALANCED_AFFINE_JET_DIFFUSE_EXCLUSION.md) |
+| Ordinary row unfoldings of higher-order stationary interior Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_INTERIOR_ANGULAR_TANGENCY_UNFOLDING.md) |
+| Exact third-order boundary tests and reduction to interior Gaussian contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_THIRD_ORDER_BOUNDARY_AND_INTERIOR_REDUCTION.md) |
+| A scale-invariant common-factor sieve at physical diffuse contacts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_DIFFUSE_PROJECTIVE_FACTOR_SIEVE.md) |
+| Common valuation slope removal for arbitrary retained factorial rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RETAINED_COMMON_SLOPE_BUDGET.md) |
+| Exact cyclic discrepancy after removing retained common valuation slopes | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_RETAINED_CYCLIC_DISCREPANCY.md) |
 
-**Computed obligations:** 45 unresolved; 26 resolved within their exact scope.
+**Computed obligations:** 48 unresolved; 26 resolved within their exact scope.
 
 **Assessment update needed:** GAP-FACTORIAL-POLYNOMIAL-GRACE-STRIP-NONCOLLISION now has a resolved graph state. Read the computed states below when the authored assessment still uses open-problem wording.
 
@@ -755,6 +784,7 @@ Scope limits:
 - Every ordinary two-monomial profile is covered through terminal thirteen. Above a computable absolute unevaluated cutoff, every profile has disjoint consecutive root arguments, even after independent positive rescalings. Uniform weak- and high-curvature angular exclusion applies at every terminal. The remaining fixed terminals start at fourteen.
 - Ordinary consecutive coprimality is proved in every degree whenever there is a private variable on each side. The remaining general binary profiles have at most one private side.
 - One-private profiles satisfy all-degree angular separation if twice the total private exponent plus the shared absolute curvature is at least thirteen. A separate explicit weak-tail hypothesis gives all-order physical coprimality with a single private unit and arbitrary signed shared gap.
+- Standard SFC(2) and SFC(3) count variables. Exact support-size windows for homogeneous binary quadratics are proved; arbitrary inhomogeneous binary quadratics and full dimension-two/three SFC remain separate open goals. Two-monomial profile results do not imply them.
 
 Tracked obligations (computed states):
 
@@ -784,5 +814,8 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Give an explicit proved terminal cutoff and a numerical containing box for the finite actual repeated-root triple set. The current support-uniform asymptotic and compactness proofs provide neither evaluated constants nor a computed exceptional set.](image-rigidity/SUPPORT_UNIFORM_EVENTUAL_ORDINARY_BINOMIAL_SQUAREFREENESS.md) — GAP-ORDINARY-BINOMIAL-EXPLICIT-SQUAREFREE-CUTOFF
 - **mathematical / open:** [Can adjacent moment polynomials ever share a root on a single integer-profile binary monomial-linear orbit?](image-rigidity/canonical-density/moment_pair_obstructions.md) — GAP-FACTORIAL-BINARY-LINKED-BETA-COPRIMALITY
 - **mathematical / open:** [Prove consecutive ordinary factorial-moment coprimality for the remaining multivariate two-monomial profiles with at most one private side, the latter with total private exponent at most five, from terminal fourteen below the computable absolute angular cutoff.](image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md) — GOAL-MULTIVARIATE-TWO-MONOMIAL-SFC
+- **mathematical / open:** [For every nonzero f in C[x,y,z] with s nonzero monomials and every n>=1, at least one L(f^n),...,L(f^(n+s-1)) is nonzero. Arbitrary degrees and supports; this is the standard dimension-three conjecture.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-THREE-VARIABLES
+- **mathematical / open:** [For every nonzero f in C[x,y] with s nonzero monomials and every n>=1, at least one L(f^n),...,L(f^(n+s-1)) is nonzero. Arbitrary degrees and supports; this is the standard dimension-two conjecture, not the two-monomial family.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-TWO-VARIABLES
+- **mathematical / open:** [For every nonzero f in C[x,y] of total degree at most two, with its actual number s of nonzero monomials, and every n>=1, at least one moment from n through n+s-1 is nonzero. Constant and linear terms are included; homogeneous quadratic closure alone does not prove this.](image-rigidity/BINARY_HOMOGENEOUS_QUADRATIC_STRONG_FACTORIAL.md) — GOAL-FACTORIAL-SFC-BINARY-QUADRATICS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -1202,6 +1202,53 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | At fixed projective shape private secant primes lie in the mark determinant pool | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SHAPE_GROWTH.md) |
 | A fixed projective shape leaves essentially one free row in typical affordable tuples | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SHAPE_GROWTH.md) |
 | Typical projective shapes have near the full one-anchor tuple exponent | Internal result | proved | [Source](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SHAPE_GROWTH.md) |
+| Short positive quotient probes detect the three original nonatomic supports | Internal result | proved | [Source](ABC_POSITIVE_PROJECTION_TRANSCRIPT_PRODUCTS.md) |
+| Small-modulus transcripts have essentially diagonal multiplicative energy | Internal result | proved | [Source](ABC_POSITIVE_PROJECTION_TRANSCRIPT_PRODUCTS.md) |
+| Positive transcript words have improved pointwise product multiplicities | Internal result | proved | [Source](ABC_POSITIVE_PROJECTION_TRANSCRIPT_PRODUCTS.md) |
+| Balanced-ternary weights give near-injective products at every fixed order | Internal result | proved | [Source](ABC_POSITIVE_PROJECTION_TRANSCRIPT_PRODUCTS.md) |
+| Balanced radical caps allow a small additive congruence and a short real defect | Internal result | proved | [Source](ABC_SMALL_ADDITIVE_MODULUS_TRANSCRIPT_OBSTRUCTION.md) |
+| A joint contrast dictionary can exceed one third in the local additive model | Internal result | proved | [Source](ABC_SMALL_ADDITIVE_MODULUS_TRANSCRIPT_OBSTRUCTION.md) |
+| Simultaneous small congruences on all three letters still allow a large contrast image | Internal result | proved | [Source](ABC_SMALL_ADDITIVE_MODULUS_TRANSCRIPT_OBSTRUCTION.md) |
+| Relative target defects control powerful codegrees with independently moving targets | Internal result | proved | [Source](ABC_MOVING_TARGET_POWERFUL_CODEGREES.md) |
+| A relative defect threshold gives a strict moving-target graph sector | Internal result | proved | [Source](ABC_MOVING_TARGET_POWERFUL_CODEGREES.md) |
+| Unselected powerful rows cost at most a local multiplicity in the linear term | Internal result | proved | [Source](ABC_MOVING_TARGET_POWERFUL_CODEGREES.md) |
+| Two diffuse exact-cube caps permit unbounded normalized corrected cubic defect | Internal result | proved | [Source](ABC_TWO_CAP_CUBIC_SECANT_DEFECT_OBSTRUCTION.md) |
+| Typical affordable-fibre triples have high corrected cubic prices | Internal result | proved | [Source](ABC_TWO_CAP_CUBIC_SECANT_DEFECT_OBSTRUCTION.md) |
+| Fermat cubic multiplication gives power-sized uncorrected cubic fibres | Internal result | proved | [Source](ABC_TWO_CAP_CUBIC_SECANT_DEFECT_OBSTRUCTION.md) |
+| Moving right and target coefficients have a joint relative and exclusive defect price | Internal result | proved | [Source](ABC_MOVING_RIGHT_AND_TARGET_POWER_CLASS_CODEGREES.md) |
+| An all-pair codegree count removes the cell-multiplicity charge | Internal result | proved | [Source](ABC_MOVING_RIGHT_AND_TARGET_POWER_CLASS_CODEGREES.md) |
+| Cubic completion suffices at any omitted exponent divisible by three | Internal result | proved | [Source](ABC_MOVING_RIGHT_AND_TARGET_POWER_CLASS_CODEGREES.md) |
+| Complete-label graph pairs use a target-exclusive defect at arbitrary valuation profiles | Internal result | proved | [Source](ABC_MOVING_RIGHT_AND_TARGET_POWER_CLASS_CODEGREES.md) |
+| One joint power class gives split-cover completion of moving-target stars | Internal result | proved | [Source](ABC_MOVING_TARGET_POWER_CLASS_STARS.md) |
+| Joint target-product stars count all original rows in a moving graph | Internal result | proved | [Source](ABC_MOVING_TARGET_POWER_CLASS_STARS.md) |
+| Arbitrary fixed prime pools leave a two-cheapest-letter radical count | Internal result | proved | [Source](ABC_MOVING_TARGET_KERNEL_EXTRACTION_BARRIER.md) |
+| An anchored query count forces a price for relative defect eligibility | Internal result | proved | [Source](ABC_MOVING_TARGET_KERNEL_EXTRACTION_BARRIER.md) |
+| The moving-target square-root bound requires positive alignment mass | Internal result | proved | [Source](ABC_MOVING_TARGET_KERNEL_EXTRACTION_BARRIER.md) |
+| Larger stars preserve the no-alignment barrier at the balanced endpoint | Internal result | proved | [Source](ABC_MOVING_TARGET_KERNEL_EXTRACTION_BARRIER.md) |
+| Two exact complementary products have subpower three-row fibres | Internal result | proved | [Source](ABC_EXACT_COMPLEMENTARY_PRODUCT_TRIPLE_COMPLETION.md) |
+| Exact product moments give diagonal triple energy at full radical precision | Internal result | proved | [Source](ABC_EXACT_COMPLEMENTARY_PRODUCT_TRIPLE_COMPLETION.md) |
+| A logarithmic list of small-modulus projection records gives diagonal triple energy | Internal result | proved | [Source](ABC_SMALL_MODULUS_TRIPLE_PRODUCT_COMPLETION.md) |
+| Signed multiplicative words recover their exact complementary products | Internal result | proved | [Source](ABC_SMALL_MODULUS_TRIPLE_PRODUCT_COMPLETION.md) |
+| Finite interval probes recover exact complementary words | Internal result | proved | [Source](ABC_FINITE_PROBE_AND_SIGNED_COMPLEMENTARY_COMPLETION.md) |
+| Three original radical caps bound a mixed-sign exact product fibre | Internal result | proved | [Source](ABC_FINITE_PROBE_AND_SIGNED_COMPLEMENTARY_COMPLETION.md) |
+| Finite projective probes give a mixed-sign fibre saving at balance | Internal result | proved | [Source](ABC_FINITE_PROBE_AND_SIGNED_COMPLEMENTARY_COMPLETION.md) |
+| Signed complementary products have a height gap and a rational-curve obstruction | Internal result | proved | [Source](ABC_FINITE_PROBE_AND_SIGNED_COMPLEMENTARY_COMPLETION.md) |
+| Sequential support loss raises the cost of eligible joint target stars | Internal result | proved | [Source](ABC_MOVING_TARGET_KERNEL_EXTRACTION_BARRIER.md) |
+| One scalar mask on two free letters completes bounded words | Internal result | proved | [Source](ABC_SCALAR_MASK_TARGET_MOMENTS.md) |
+| Small shared support gives almost diagonal signed scalar word fibres | Internal result | proved | [Source](ABC_SCALAR_MASK_TARGET_MOMENTS.md) |
+| Scalar product images represent the repaired target multiplicity moments | Internal result | proved | [Source](ABC_SCALAR_MASK_TARGET_MOMENTS.md) |
+| The basic signed word has subpower fibres on a common target | Internal result | proved | [Source](ABC_SAME_TARGET_COMPLEMENTARY_PRODUCTS.md) |
+| A common target halves the general mixed-sign fibre exponent | Internal result | proved | [Source](ABC_SAME_TARGET_COMPLEMENTARY_PRODUCTS.md) |
+| The complete-product image loses only a subpower at the target primes | Internal result | proved | [Source](ABC_SAME_TARGET_COMPLEMENTARY_PRODUCTS.md) |
+| All equal-positive mixed weights have exact subpower common-target fibres | Internal result | proved | [Source](ABC_SAME_TARGET_EQUAL_WEIGHT_WORDS.md) |
+| Exceptional balanced words isolate a common divisor of the free letters | Internal result | proved | [Source](ABC_SAME_TARGET_EQUAL_WEIGHT_WORDS.md) |
+| Equal denominators give subpower fibres for weights (a,1,-1) | Internal result | proved | [Source](ABC_SAME_TARGET_EQUAL_WEIGHT_WORDS.md) |
+| A rational flex completes the exceptional (1,2,-3) product | Internal result | proved | [Source](ABC_SAME_TARGET_EQUAL_WEIGHT_WORDS.md) |
+| Shared full-divisor lists bound the complete-target multiplicity dictionary | Internal result | proved | [Source](ABC_TARGET_PACKET_CRT_MOMENTS.md) |
+| Large small-radical steps give subpower occupancy in short index intervals | Internal result | proved | [Source](ABC_TARGET_PACKET_CRT_MOMENTS.md) |
+| The conditional divisor count gives a strict same-target scalar image bound | Internal result | proved | [Source](ABC_TARGET_PACKET_CRT_MOMENTS.md) |
+| Exact-power targets alone permit large signed denominators at full radical scale | Internal result | proved | [Source](ABC_SAME_TARGET_GAUSSIAN_SIGNED_DENOMINATOR_OBSTRUCTION.md) |
+| The target CRT charge limits total packet radical mass below one sixth | Internal result | proved | [Source](ABC_TARGET_PACKET_CRT_MOMENTS.md) |
 
 **Computed obligations:** 108 unresolved; 19 resolved within their exact scope.
 

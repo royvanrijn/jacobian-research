@@ -2,6 +2,14 @@
 
 For \(\lambda>0\), let \(N_\lambda(X)\) count ordered positive primitive triples \(a+b=c\le X\) with \(\operatorname{rad}(abc)<c^\lambda\). The \(abc\) conjecture is the assertion that \(N_\lambda(X)\) is bounded in \(X\) for every \(0<\lambda<1\). Let \(T_{p,q,r}(X)\) count ordered positive primitive triples \(a+b=c\le X\) for which the three terms are respectively \(p\)-full, \(q\)-full and \(r\)-full. An integer is \(s\)-full when every positive prime valuation is at least \(s\), so \(1\) is \(s\)-full for every \(s\). [Bernert–Browning–Lichtman–Teräväinen, §1](https://arxiv.org/html/2410.12234v2#S1) · [Browning–Verzobio, §1](https://arxiv.org/html/2608.24512v1#S1)
 
+The repository's unrestricted small-budget estimate has limiting
+coefficient \(1/3\). At unit budget the later two-tall-term
+certificates give exponent \(1070000267/2000000686\).
+See the [small-budget theorem](ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13),
+the [fixed-budget bounds](#exceptional-set-bounds-from-the-two-tall-terms),
+and the [strict high-powerful transfer](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md#theorem-a-strict-saving-from-endpoint-diffusion)
+for their separate ranges.
+
 ## Radical and powerfulness scopes
 
 For an \(s\)-full integer \(n\), prime by prime, \(\operatorname{rad}(n)\le n^{1/s}\). Consequently, if \(\lambda_0=1/p+1/q+1/r\), then
@@ -10018,6 +10026,255 @@ even before charging the uncorrected power class. The estimate
 does not extend to all specially selected tuple relations.
 
 [Projective shape growth (PG1–PG3)](ABC_AFFORDABLE_FIBRE_PROJECTIVE_SHAPE_GROWTH.md)
+
+## Positive residue products and moving powerful codegrees
+
+A positive quotient of two projected powers captures the
+same nonatomic carriers as the earlier parity contrasts.
+The phase argument keeps a bounded list of masks below
+any fixed radical-scale precision, even with atomic
+partners. At each prime, two complementary ratios record
+one of three exponent directions. In a two-row product
+these directions cannot cancel. Exact reconstruction
+therefore exposes the diffuse support of both rows, and
+the affordable full divisors complete their atomic parts.
+This gives essentially quadratic product image and
+essentially diagonal multiplicative energy on balanced
+charts. It also gives higher positive word bounds, with
+subpower fibres at separated integer weights.
+[Positive projection transcript products (PP1–PP4)](ABC_POSITIVE_PROJECTION_TRANSCRIPT_PRODUCTS.md)
+
+The small-modulus congruences alone allow a much larger
+contrast image than \(n^{1/3}\). A construction of actual
+pairwise coprime integer rows satisfies the balanced
+radical caps, simultaneous small additive congruences
+on all three letters and a short real error bound.
+Its contrast image can still exceed \(n^{1/3}\) by a
+fixed power. The construction does not impose the exact
+original sum. Thus obtaining enough multiplicative
+collisions or an upper bound on the two-row product
+image requires stronger additive information.
+[Local additive transcript obstruction (SMO1–SMO3)](ABC_SMALL_ADDITIVE_MODULUS_TRANSCRIPT_OBSTRUCTION.md)
+
+The omitted-coordinate graph of powerful sums allows moving
+complete targets. A positive common target divisor recovers
+a reduced complementary ratio, and a primitive diagonal
+cubic then recovers the roots at subpower cost per
+coefficient record. The target record charges the relative
+cubic defect, with the extra shared support on a prescribed
+integer. For the original row count, kernel multiplicity
+enters only the linear term of the graph inequality.
+In-column common target kernel factors give a strict
+sector at the minimum dictionary sizes. They have no
+global dictionary price.
+[Moving-target powerful codegrees (MP1–MP6)](ABC_MOVING_TARGET_POWERFUL_CODEGREES.md)
+
+On typical affordable-fibre triples the union of the
+three corrected cubic records costs at least four times
+the fibre exponent. Any two cost at least three times
+that exponent, up to the fixed allowances. A separate
+two-cap construction with diffuse exact-cube values has
+unbounded normalized corrected cubic defects. Multiples
+on the Fermat cubic also give power-many genuine primitive
+tuples with both uncorrected classes trivial when the
+original radical caps are absent. These bounds locate
+which hypotheses matter in transferring the cubic counts.
+[Corrected cubic class price and obstructions (CD1–CD4)](ABC_TWO_CAP_CUBIC_SECANT_DEFECT_OBSTRUCTION.md)
+
+## All-row codegrees, aligned support, and exact products
+
+The moving-target pair count extends to arbitrary moving
+right values by dividing out their actual common gcd and
+recording the outside relative power defect. The exact
+determinant excludes repeated original rows and puts every
+shared target prime in a fixed pool. Only the exclusive
+target defect is paid. Consequently the all-row graph cost
+can count pairs with equal left labels and drop the
+cell-multiplicity term. The complete-label specialization
+works at arbitrary original valuation profiles once its
+exclusive target record is affordable.
+[Moving-right and moving-target count (MT1–MT4)](ABC_MOVING_RIGHT_AND_TARGET_POWER_CLASS_CODEGREES.md)
+
+For stars with several moving targets, the reduced root
+ratios recover the original normalized coordinates. A single
+weighted product class of the actual targets then gives a
+split cyclic cover and determines the remaining common
+scale. A divisor of the common omitted exponent suffices as
+the class order. This counts all original rows with
+repeated kernel labels allowed. The same three-cap
+dictionary bound that controls anchored eligible pairs
+also limits the gain from these stars. If the radical
+masses at the required divisible valuations vanish, the
+graph exponent reaches \(1/3\) even with favourable
+spacing. Thus enlarging the stars alone does not recover a
+fixed saving on arbitrary diffuse profiles.
+[Joint target classes on actual stars (MS1–MS3)](ABC_MOVING_TARGET_POWER_CLASS_STARS.md)
+· [Anchored extraction barrier (MK1–MK6)](ABC_MOVING_TARGET_KERNEL_EXTRACTION_BARRIER.md)
+
+The exact products of the two complementary fractions
+\(A/C\) and \(B/C\) over three rows have subpower fibres.
+The nonsingular fibre is an elliptic curve with rational
+\(3\)-torsion given by cycling the rows. At small external
+modulus, positive quotient probes can separate scaled
+valuation sums and avoid selected atomic windows. A prime
+hidden from the three-row product then contributes only
+a short correction to the exact products, or belongs to
+bounded atom-membership groups. Two affordable actual full
+divisors recover the two exact product ratios. This gives
+essentially diagonal third multiplicative energy at
+arbitrarily small radical-scale precision on the balanced
+charts, at the cost of a logarithmically longer list of
+projection orders.
+[Exact complementary products (EC1)](ABC_EXACT_COMPLEMENTARY_PRODUCT_TRIPLE_COMPLETION.md)
+· [Small-modulus and signed product completion (SC1–SC3)](ABC_SMALL_MODULUS_TRIPLE_PRODUCT_COMPLETION.md)
+
+## Scalar product images and exact signed fibres
+
+One scalar mask residue per probe, from the two free original
+letters, gives arbitrarily small normalized completion cost
+for positive words of every fixed length inside an affordable
+full-divisor chart. A signed word admits the same completion
+after fixing a set of rows that meets every zero-sum weight
+subset. Alternatively its restriction to typical
+small-overlap tuples has a small fibre without fixing an
+entire row. Taking the positive word on tuples with a common
+target expresses the weighted occurrence problem as a scalar
+product-image count. For a target multiplicity threshold
+\(n^u\) and a fixed \(k\)-fold positive product, a uniform
+saving from \(n^{1/3+(k-1)u}\) for this image would suffice.
+The ambient residue count leaves a power gap because the
+direct lift pays at least the covered free-pair mass.
+[Scalar products and target multiplicity (SR1–SR3)](ABC_SCALAR_MASK_TARGET_MOMENTS.md)
+
+For the complementary projective record, finite interval
+probes and Möbius inversion give exact signed word recovery
+with the probe count bounded as \(L\to0\). With any three
+distinct rows carrying two positive weights and one negative
+weight, a prescribed exact word has fibre
+\(O(n^{\rho/2+\eta}X^\varepsilon)\) under individual letter
+radical caps \(n^\rho\). At most one role can share support
+outside a fixed pool, and the two other caps give the saving.
+This applies to primitive quotients in the original height
+shell of a least-repaired count. The same signed completion
+on arbitrary height-bounded rows has a rational-curve
+counterexample.
+[Finite probes and exact signed completion](ABC_FINITE_PROBE_AND_SIGNED_COMPLEMENTARY_COMPLETION.md)
+
+Sequentially exposing stars in fixed right classes gives a
+second constraint on cheap joint defects. Repeated support
+or support already paid by a fixed group pool lowers the
+remaining query caps. At vanishing aligned valuation masses,
+this forces the existing star graph exponent strictly above
+\(1/3\) for at least five rows if the free pool may include
+left-label support and repeats, and for at least three rows
+when its nonfixed primes must repeat on targets. The estimates
+also apply in fixed complete-right groups. A pool assembled
+from all pair determinants does not in general have the
+required support property.
+[Sequential support loss (MK7–MK8)](ABC_MOVING_TARGET_KERNEL_EXTRACTION_BARRIER.md#sequential-support-loss-in-larger-stars)
+
+## Same-target word completion and cross-target residue counts
+
+On a common complete target, the two exact complementary
+products with mixed weights recover the target at divisor
+cost. At zero total weight, equal products force a repeated
+row when only one weight is negative. For \((1,1,-1)\)
+the two denominators recover the target exactly and a split
+quadratic recovers all three distinct rows at subpower cost.
+For arbitrary fixed mixed three-slot weights, the free-role
+support and the fixed-letter count give an exponent
+\(\rho/4+\eta\) under individual letter caps \(n^\rho\).
+The local positive complete-product image occupies a
+subpower proportion of the allowed unit residue pairs
+at all target prime-power depths. A count using only
+those local congruences must allow this large image.
+[Common-target complementary products (CT1–CT4)](ABC_SAME_TARGET_COMPLEMENTARY_PRODUCTS.md)
+
+The subpower completion extends to all two-equal-positive
+patterns \((h,h,-k)\) and to \((a,1,-1)\). The latter uses
+the fixed input and output denominator in a homogeneous
+resultant. For \((1,2,-3)\) with one complementary product
+equal to one, an explicit elliptic curve with rational
+three-torsion gives the same conclusion even for varying
+targets. In the general balanced unequal pattern with this
+exceptional output, the unresolved part of the binary
+recovery is a common gcd on the opposite free role.
+The exact word is counted at subpower cost once that gcd
+is fixed, and its cost is at most its outside radical.
+[Equal weights, rational maps and the exceptional gcd (CW1–CW4)](ABC_SAME_TARGET_EQUAL_WEIGHT_WORDS.md)
+
+In a fixed target multiplicity bin \(n^{u+o(1)}\), one can
+choose full-divisor lists shared by many complete targets.
+The original witnesses force their residues into small
+opposite-letter dictionaries. The summed exponent for
+the number of complete targets is
+\[
+      E=\sum_i\bigl(\alpha_i-(u-t_i)_+
+                       +\min(t_i,r_{W_i}-2u)\bigr)
+\]
+when the fixed list's least common multiple has sufficient
+numerical weight. Here \(\alpha_i\) is the opposite complete
+dictionary exponent, \(t_i\) is the packet's radical cost,
+and \(r_{W_i}\) is the marked letter's raw radical cap.
+Short real intervals reduce the necessary numerical weight.
+A short-index progression estimate gives some further slack
+when the step is large and has small radical. The actual
+same-target scalar image has exponent at most \(E+ku+\eta\)
+for a fixed \(k\)-fold word. This supplies a strict saving
+in the bin when \(E<1/3-u\). The criterion includes intermediate
+multiplicities and dictionaries larger than the minimum
+balanced scale. Its compactness and numerical-weight
+conditions still need to be forced where they are compatible.
+In the tall balanced profiles, the same pricing would require
+total packet radical mass below \(1/6\) for a strict exponent
+saving. If the scaled orders available to all packets are
+bounded by \(S<6\), their combined numerical weight is then
+below \(S/6\), leaving a fixed gap from the strict CRT threshold.
+[Full divisors and same-target image bounds (TC1–TC6)](ABC_TARGET_PACKET_CRT_MOMENTS.md)
+
+For the scalar rational coordinate, exact \(r\)-th-power
+targets alone allow \(X^{1/r-o(1)}\) distinct targets
+with any fixed number of primitive square-summand
+representations whose signed denominators retain radical
+on the \(X^{1/r}\) scale. The Gaussian construction works
+outside any prescribed polynomial-height prime pool and
+requires no least-repair multiplier. It places no small
+radical cap on the free letters.
+[Exact-power target obstruction (GT1)](ABC_SAME_TARGET_GAUSSIAN_SIGNED_DENOMINATOR_OBSTRUCTION.md)
+
+## Complete dictionary balance and joint residue cells
+
+Fixing a cheap full divisor gives a square-root charge on
+the number of permitted residue classes of an opposite
+complete integer. At balanced one-third saturation this
+forces the three complete-letter dictionaries to have
+the same limiting exponent \(\alpha\in[1/6,1/3]\), and the
+three complete degrees to have exponent \(u=1/3-\alpha\).
+This holds across the balanced endpoint. On a cheap
+fixed-divisor chart, typical residue cells have two
+moving dictionaries of exponent \(u\) each and actual
+row exponent \(2u\). A fixed dictionary imbalance gives
+an exponent saving on charts with the required cheap
+locks. A shared residue and height cell also reduces
+the cost of repeated CRT witness dictionaries subject
+to the packet and numerical height thresholds.
+[Dictionary balance and residue cells (RB3–RB8)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#equality-of-the-three-complete-dictionary-exponents)
+· [Absolute residue charges (AR1–AR3)](ABC_ABSOLUTE_RESIDUE_TARGET_TAILS.md)
+· [Shared witness counts (SW2–SW3)](ABC_SHARED_CRT_WITNESS_DICTIONARIES.md)
+
+In same-target word arguments, the twofold coloured
+collision count has a power saving over the abstract
+product bound. The common-target threefold count also
+saves on bins with multiplicity exponent \(u>5/36\), at
+fixed distance from this threshold under the balanced
+caps. At every depth large primes fill the natural joint
+complete-product residue range when the free radical
+caps are omitted. The missing input on regular residue
+cells is a restriction on the two moving letters and
+their actual signed sum or difference with all three
+radical caps imposed.
+[Coloured product energy](ABC_SAME_TARGET_COLOURED_PRODUCT_ENERGY.md)
+· [Prime-power image](ABC_COMPLETE_WORD_PRIME_POWER_SURJECTIVITY.md)
 
 ## The unrestricted small-budget obligation
 

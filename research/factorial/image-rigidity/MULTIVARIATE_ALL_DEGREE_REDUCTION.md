@@ -162,8 +162,11 @@ closes \(2P+S_{\rm sh}\ge13\). The
 handles the remaining \(P=6\) profiles, so every \(P\ge6\) is
 covered with arbitrary shared rows. The [integer-twist theorem for one private unit](MULTIVARIATE_ONE_PRIVATE_UNIT_ALL_INTEGER_TWISTS.md)
 closes \(P=1\) at a computable positive weak shared curvature cap,
-with arbitrary signed shared degree difference. Other one-private
-profiles and the fully shared profiles still require comparisons
+with arbitrary signed shared degree difference. The
+[Gamma resolvent comparison](MULTIVARIATE_ONE_PRIVATE_SHARED_UNIT_ALL_SHAPES.md)
+gives every degree for the exact template \((a,a+1),(0,1)\) at every
+positive integer \(a\). Other one-private profiles and the fully
+shared profiles still require comparisons
 in arbitrary dimension. The [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and
 the relative center. A certified separation of that family gives
@@ -183,6 +186,15 @@ closure at fixed signed degree difference. The approximating profiles
 can be chosen with all-degree angular separation. These statements leave
 finite outer certificates and exact profile-dependent arithmetic tests
 as applicable approaches.
+The [bounded-gap decision theorem](MULTIVARIATE_BOUNDED_GAP_FINITE_DECISION.md)
+gives two-sided exact decisions for angular separation and several
+physical rescaling questions at fixed total gap. Its affordable twists
+measure exactly the signed gap that can escape while consuming the
+remaining gap budget. The [one-unbounded-type reduction](MULTIVARIATE_ONE_UNBOUNDED_TYPE_FINITE_DECISION.md)
+instead decides the original physical property for profiles with one
+row type above a fixed height, even at arbitrary multiplicities.
+A hard-row cutoff gives a finite original decision for every profile
+with at most two unequal rows.
 The [joint curvature measure](MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md)
 uses an exact factorial density for each primitive row curve. It
 couples all orders and determines the relative center. Relaxing only
@@ -599,6 +611,133 @@ numbers. In particular every algebraic affine line other than one of
 rational slope through the origin avoids the exception set. A quantitative
 perturbation bound localizes any ordinary failure to a neighborhood
 of one of these points, uniformly in the tail row count.
+
+For \(0<\rho\le1\), retain as the core all rows with \(d/M\ge\rho\),
+where \(M\) is the larger exponent and \(d\) the absolute gap.
+Each retained row contributes at least \(\rho^2 M\) and at least
+\(\rho\) to \(S\). Thus \(S<12\) gives both \(M<12/\rho^2\) and
+fewer than \(12/\rho\) retained rows. At each fixed threshold
+there are finitely many cores, while the diffuse part can have
+unboundedly many rows and unbounded exponents.
+
+The [common-height tail theorem](MULTIVARIATE_COMMON_HEIGHT_BOUNDED_GAP_TAIL_CLOSURE.md)
+excludes exact ordinary common roots in every degree for any fixed
+core and a tail of bounded integer gaps at a sufficiently large
+shared upper exponent. The height bound holds uniformly over all
+multiplicities and orientations, including at every positive
+Gaussian exception. The
+[affine-height theorem](MULTIVARIATE_AFFINE_HEIGHT_BOUNDED_GAP_TAIL_CLOSURE.md)
+also allows distinct, diverging heights with independent
+multiplicities. The
+[count-simplex test](MULTIVARIATE_AFFINE_TAIL_COUNT_POLYTOPE.md)
+gives a finite rational criterion for any fixed affine template.
+It compares the two linked Newton slope multisets over every
+possible vector of type fractions. It includes overlapping slope
+valuations and supplies a uniform exact height bound whenever the
+test passes. For large counts the test can be restricted to the
+signed-gap hyperplane, with a polynomial resultant check for
+finitely many smaller count vectors. The
+[retained-scale theorem](MULTIVARIATE_ARBITRARY_RETAINED_SCALE_DECOUPLING.md)
+separates an occupied band from arbitrary independently placed
+rows when the retained logarithmic weight is too small to
+absorb the band marks. The band's gaps and the number of
+different row types may grow. A band carrying positive
+curvature excludes retained heights of order \(o(M/D)\) at
+height \(M\) and gap scale \(D\). For a certified bounded-gap
+affine band the retained height range improves to \(o(M)\).
+The [common-slope budget](MULTIVARIATE_RETAINED_COMMON_SLOPE_BUDGET.md)
+subtracts the exact linear valuation drift shared by a retained
+row in both orders. It charges the maximum depth at each prime
+rather than all factors in a long ramp. The resulting matching
+test applies to arbitrary selected subsets, and it permits
+retained rows with independent large heights and gaps even
+when their curvature stays positive.
+The [cyclic discrepancy theorem](MULTIVARIATE_RETAINED_CYCLIC_DISCREPANCY.md)
+gives the exact retained valuation differences by residue
+counts at each prime power. Complete residue packets can have
+zero effect on a prime's shared slopes while their individual
+heights vary independently.
+The [short-window theorem](MULTIVARIATE_INDEPENDENT_HEIGHT_WINDOW_CLOSURE.md)
+also allows every exponent in a window of width
+\(Ad+d\log(2+d)/(512J^3)\) to vary independently, where \(d\ge2\)
+is the least tail gap. It certifies every fixed common-slope
+template with gaps at least two and exhibits a signed-balanced
+unit-gap template that defeats the single-mark count test.
+The
+[isolated two-clock theorem](MULTIVARIATE_ISOLATED_TWO_CLOCK_DIFFUSE_EXCLUSION.md)
+excludes exact collisions near an isolated positive contact for
+fixed reflected affine templates repeated arbitrarily many times.
+It includes multiple roots and contacts of arbitrary finite order.
+The [balanced affine jet theorem](MULTIVARIATE_BALANCED_AFFINE_JET_DIFFUSE_EXCLUSION.md)
+extends this elimination to repeated signed-balanced affine
+templates with unequal slopes, unmatched orientations and fixed
+signed-gap offsets. Its two algebraic directions are calculated
+from the full exact factorial jet.
+The [affine divisor-rank theorem](MULTIVARIATE_AFFINE_DIVISOR_RANK_DIFFUSE_EXCLUSION.md)
+uses the exact prime valuation directions of the template.
+A proper projection of the degree-two common-factor locus
+gives exclusion even when the first two limiting directions
+have a nonisolated contact. Full divisor rank holds for
+the four-type balanced unit-gap obstruction to the single-mark
+test, giving all-degree closure of its repeated templates.
+The [signed jet tests](MULTIVARIATE_POSITIVE_DIFFUSE_EXCEPTION_SIGNED_JETS.md)
+exclude further positive exceptions under effective signs on the
+signed-bias boundary or at even-order stationary contacts. The
+[clock transversality tests](MULTIVARIATE_EXCEPTIONAL_GAUSSIAN_CLOCK_TRANSVERSALITY.md)
+give additional exclusion regions for reflected tails and for
+some common-height tails with nonzero signed gap.
+
+An [interior persistence theorem](MULTIVARIATE_DIFFUSE_INTERIOR_CONTACT_PERSISTENCE.md)
+gives a conditional obstruction to removing all the exceptional
+neighborhoods by a positive separation margin. At any simple
+interior reference contact whose angle difference changes sign,
+arbitrary ordinary tails can approach contact with fixed signed
+gap, retained weak rows, and prescribed finite prime data.
+Real baselines with integer multiplicities can give exact
+contact in that setting. General ordinary tails near such a
+reference contact still require an exact integer exclusion or
+a proof that the reference contact itself is absent.
+The [finite truncation theorem](MULTIVARIATE_COMPACTIFIED_INTERIOR_CONTACT_FINITE_REDUCTION.md)
+reduces sign-changing simple interior contacts of a countable
+retained core to finite ordinary cores. It also unfolds some
+stationary contacts using exact cubic, two-clock or quartic
+row responses, with the total signed gap fixed.
+The [stationary interior unfolding](MULTIVARIATE_INTERIOR_ANGULAR_TANGENCY_UNFOLDING.md)
+also covers vanishing cubic response when its variation in
+strength has sufficiently low order. A second-order
+discriminant test and a reflected-row test use a controlled
+transfer of Gaussian strength to ordinary rows. The
+[third-order boundary theorem](MULTIVARIATE_THIRD_ORDER_BOUNDARY_AND_INTERIOR_REDUCTION.md)
+excludes further exact ordinary tails at saturated-bias
+contacts and reduces boundary contacts to finite interior
+ones under the specified ordinary-row or angular and radial
+response tests.
+
+The [prime-height theorem](MULTIVARIATE_DIFFUSE_CLOCK_PRIME_HEIGHT.md)
+uses the angular and physical resultants in the same rational
+factorial coordinates. If their monomial ratios concentrate
+enough logarithmic height on any fixed finite prime set, both
+limiting clocks have a common rational power from an explicit
+finite list. At other contacts, an actual collision sequence
+must place a positive fraction of its height outside every
+fixed finite prime set on a resultant monomial ratio.
+The arithmetic test allows arbitrary ordinary tail counts,
+gaps and heights.
+The [projective factor sieve](MULTIVARIATE_DIFFUSE_PROJECTIVE_FACTOR_SIEVE.md)
+tracks a common factor's root ratios independently of the
+physical normalization. Its exact denominator is determined
+by the spread of the shared Newton slopes and is bounded by
+a gcd of scale-invariant adjacent coefficient ratios. Algebraic
+contact confinement then requires a growing spread at irrational
+limiting shapes. The same shape also constrains the product
+of primes with binomial stepped residues, even as those
+primes vary with the tail.
+The [depth-weighted quotient test](MULTIVARIATE_DEEP_BINOMIAL_PROJECTIVE_QUOTIENTS.md)
+charges the full prime-power depth of binomial Newton faces
+at several shared valuations simultaneously. Its rational
+invariant distinguishes actual torsion ratios from those
+that only approach a torsion value at a diffuse contact.
+
 The [uniform bias theorem](MULTIVARIATE_UNIFORM_DIFFUSE_BIAS_SEGMENTS.md)
 allows one chosen signed-drift intercept to work throughout a
 prescribed compact strength interval, with no row-count restriction.
@@ -994,6 +1133,13 @@ The [arbitrary-gap extension](MULTIVARIATE_TWO_PRIME_ARBITRARY_GAP_DENSITY.md)
 also permits one gap of any fixed size under explicit base and order
 congruences.
 
+The [growing-profile native-prime theorem](MULTIVARIATE_NATIVE_PRIME_GROWING_PROFILES.md)
+proves all-degree angular separation for a proportion tending
+uniformly to one in boxes of independent bases with mixed
+orientations and growing row counts. The natural squared-gap
+bound at the dimension-growing scale suffices, and additional
+retained rows are allowed within a stated logarithmic weight.
+
 A prescribed finite set of primes and precisions alone cannot give
 a universal exclusion. The
 [simultaneous prime-power construction](MULTIVARIATE_PADIC_DIGIT_AUTOMATON.md#a-simultaneous-obstruction-at-finitely-many-primes)
@@ -1050,6 +1196,15 @@ and no comparison between their orientation densities.
 The [separated lower-endpoint theorem](MULTIVARIATE_SEPARATED_LOWER_ENDPOINT_ALL_DEGREES.md)
 uses an alternative first-block mark with an orientation-dependent
 retained budget, even for a complete spectrum of gap sizes.
+The [simultaneous first-block theorem](MULTIVARIATE_SIMULTANEOUS_FIRST_BLOCK_ANGULAR_SEPARATION.md)
+uses a common prime factor at all low orders. It yields binomial
+reductions and angular separation for irregular gap distributions in
+aligned bands, including rationally scaled bands and offsets bounded
+by a multiple of each row's gap. The
+[simultaneous midpoint theorem](MULTIVARIATE_SIMULTANEOUS_MIDPOINT_MARKS_ALL_DEGREES.md)
+uses an alternative shared mark for the actual even and odd Newton
+polygons. Its general comparison controls possible common-factor degree
+from the nominal mark-count slopes.
 The [universal two-row extension](MULTIVARIATE_UNIVERSAL_OPPOSED_PADIC_ANGLE_MARKING.md)
 uses two opposed gaps to separate root quotients modulo a single
 prime across all degrees below the absolute cutoff. Every
@@ -1191,6 +1346,11 @@ gap \(\Delta\). A rational resultant at each of finitely many possible
 twists gives an effective stability threshold outside the exceptional
 set. For comparable both-private cores any exception is a negative
 twist, with a further prime-power exclusion for unit-gap rows.
+The [projective first-block criterion](SFC_SIMULTANEOUS_FIRST_BLOCK_PROJECTIVE_WINDOWS.md)
+uses separating high exponent patterns on existing rows and equal
+pure factorial coefficients. One prime gives pure-power reductions
+and a Vandermonde comparison for every support-size window up to
+a prescribed maximum order.
 The [triangular row construction](SFC_TRIANGULAR_INTEGER_ROW_TAGGING.md)
 forces projective regularity at any prescribed finite family of
 windows for arbitrary support size by adding \(s-1\) integer tag
@@ -1362,6 +1522,9 @@ reduces consecutive coprimality to a single squarefreeness question.
 Its differential equation bounds the maximum length of a vanishing
 window. An exact synthetic law for the private factor gives a repeated
 quadratic while preserving the linked Gamma operators.
+For [prime-power terminals](MULTIVARIATE_LINEAR_MONOMIAL_PRIME_POWER_WINDOWS.md),
+valuations and the residue polynomial give exact physical separation
+in additional ordinary cases with private prime-power exponents.
 The [Gamma numerical-range proof](MULTIVARIATE_SHARED_UNIT_GAP_GAMMA_NUMERICAL_RANGE.md)
 gives physical coprimality for adjacent Gamma moment polynomials with
 positive lower shape and any nonnegative integer shape increment.
