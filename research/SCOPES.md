@@ -22239,7 +22239,7 @@ Tracked obligations from the catalogue:
 
 [Nonzero prime-power sphere moments at a fixed prime and unbounded conductor](foundations/extended-geometry/CM_NEWTON_NONSPLIT_NONCM_PRIME_POWER_MOMENTS.md)
 
-**Exact scope:** For fixed p>3 with p≡2 mod 3 and odd r≥3, set N=(p^r−1)/(p−1). If v_3(c)=1 and c,1−c are p-units, the order-N cover W^N=z^(N−2)(z²−1)(z²−c) has a non-potentially-CM primitive factor nonordinary at p and coherent return scalar one on the selected line. Every compatible sphere phase of top weight N and integral lower coefficients at p has least sphere degree N, is an absolute nonpower, and has p^r times its (p−1)-st moment congruent to one.
+**Exact scope:** For fixed p>3 with p≡2 mod 3 and odd r≥3, set N=(p^r−1)/(p−1). If v_3(c)=1 and c,1−c are p-units, the cover W^N=z^(N−2)(z²−1)(z²−c) has a non-potentially-CM primitive factor nonordinary at p and coherent return scalar one on the selected line. Every compatible integral sphere phase has least sphere degree N, is an absolute nonpower, and satisfies q A(F^m)≡1 at the same prime for every q=p^(kr), m=(q−1)/N, k≥1.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -22253,7 +22253,7 @@ Tracked obligations from the catalogue:
 
 [Infinitely many nonzero sphere moments from a fixed nonordinary cyclic cover](foundations/extended-geometry/CM_NEWTON_UNBOUNDED_TWISTED_MOMENT_QUOTIENTS.md)
 
-**Exact scope:** For M≥5 with M≡5 mod 14, n=7M, and v_2(c)=1, the order-n cover Y^n=(z^7−1)^(M+1)(z^7−c)^(6M) has a non-potentially-CM primitive factor nonordinary at primes in the two classes 1+3M and 1+2M modulo n where c and 1−c are units. Every fixed compatible phase has a nonzero moment of order (p³−1)/n at all sufficiently large primes of those classes, whose combined natural density is 2/φ(n). The phases are absolute nonpowers, and an explicit lift has least sphere degree 8n.
+**Exact scope:** For M≥5 with M≡5 mod 14, n=7M and v_2(c)=1, the cover Y^n=(z^7−1)^(M+1)(z^7−c)^(6M) has a non-potentially-CM primitive factor nonordinary at every good nonsplit prime. For d=ord_n(p) and every k≥1, the normalized moment of an integral compatible phase at order (p^(kd)−1)/n has nonzero residue exactly when i+M(i mod 7)<n at every least positive representative i of ⟨p⟩ modulo n. At least five nonsplit classes qualify, and exactly seven qualify for n=35, of density 7/24. The phases are absolute nonpowers, and an explicit lift has least sphere degree 8n.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -22276,6 +22276,48 @@ Tracked obligations from the catalogue:
 **Current blockers:** none in declared routes.
 
 **Verification limits:** The written character-orbit argument proves the formula. The replay checks the first explicit rank calculation.
+
+### CM-NEWTON-ADJOINT-HALF-SLOPE-P-RANK
+
+[Exact half-slope multiplicity and density-one p-rank bound in adjoint type A1](foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md)
+
+**Exact scope:** After a finite tensor-defining and reflex extension, at good absolute degree-one places outside the local bad set, Newton slopes lie in {0,1/2,1}. If r_i counts the flat active labels in rational factor i and 2c_i is the H^1 dimension supported on each such label, the half-slope multiplicity is 2Σ_i c_i r_i and the p-rank is g−Σ_i c_i r_i. After also splitting the label fields, p-rank is at least g−Σ_i c_i floor((b_i−1)/2)>g/2 on a density-one set in positive dimension.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof combining the local gap calculation, the central comparison and the weighted density estimate.
+
+### CM-NEWTON-A1-ORIGINAL-FIELD-TENSOR-DENSITY
+
+[Original-field ordinary density and its least field in adjoint type A1](../unpublished/cm-newton-polygon-constraints/original-a1.tex)
+
+**Exact scope:** For rationally simple adjoint type A1, a CM field E acting over K with geometrically derived-irreducible E-blocks, and at most two Hodge-active labels, the ordinary primes agree up to density zero with the completely split primes of the field defining the adjoint centroid. Their natural density is the reciprocal of this field degree, and this field is the least ordinary-density-one extension.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof. The relative trace and determinant compare on the original good reduction; the irreducibility and base-defined coefficient action are part of the hypotheses.
+
+### CM-PFAFFIAN-SHARP-FINITE-FIELD-RANGE
+
+[Sharp finite-field range of the Pfaffian integrality argument](../unpublished/cm-newton-polygon-constraints/pfaffian-range.tex)
+
+**Exact scope:** In dimension 2m over F_p with p>3, a prime-to-p polarization and a geometric maximal-at-p unramified imaginary quadratic action with tangent multiplicities (m,m), conjugated by both Frobenius and Rosati, the nonordinary case satisfies v_p(det_E(1+π²/p))≥2−m. For each m≥3 and every p>3 with p≡2 mod 3, a principally polarized example with E=Q(i) attains equality. The examples are over finite fields.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof; the sharpness examples use ordinary elliptic curves and a supersingular Weil restriction.
 
 ### Supporting statements and targets
 

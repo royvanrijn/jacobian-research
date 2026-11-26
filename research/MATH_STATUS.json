@@ -381774,7 +381774,7 @@
         },
         {
           "path": "../unpublished/cm-newton-polygon-constraints/SHA256SUMS.txt",
-          "sha256": "4d18a0ab540f8773ef3a8767014eaee135499d8b3a79aea6457cf8ca567f7d9a",
+          "sha256": "2aaafe055aadc27a0cf2ecafe58123b25b48610ec6e04e837508d7d071d4f053",
           "role": "evidence",
           "claims": [
             "CM-SPLIT-RELATIVE-FROBENIUS-NORM-BOUNDS",
@@ -381796,7 +381796,7 @@
         },
         {
           "path": "../unpublished/cm-newton-polygon-constraints/cm-newton-polygon-constraints-source.zip",
-          "sha256": "c98f59bad87884c457375bd7a9cfa052e674765997506956d4356774f0e6bba1",
+          "sha256": "333bd5ca2fe71333fd0512e2d5f368d9f395060c0159d91673dadc29ff96dc65",
           "role": "evidence",
           "claims": [
             "CM-SPLIT-RELATIVE-FROBENIUS-NORM-BOUNDS",
@@ -381818,7 +381818,7 @@
         },
         {
           "path": "../unpublished/cm-newton-polygon-constraints/cm-newton-polygon-constraints.pdf",
-          "sha256": "ac68ebd89f5932b132a6f1a96cde2be370b039a6cfd061fda0bc878cde7e9a07",
+          "sha256": "0b1155cda3eaeb7a71f48e62ed45e0aacd627bc63cd62dc3c804746120a2806a",
           "role": "evidence",
           "claims": [
             "CM-SPLIT-RELATIVE-FROBENIUS-NORM-BOUNDS",
@@ -382093,7 +382093,7 @@
         },
         {
           "path": "../unpublished/cm-newton-polygon-constraints/verification.json",
-          "sha256": "ca9dcfe30dd030a515d252e60c7328e003eccec2d4b0f573bdd67c0973e28196",
+          "sha256": "252062577795956c9bc3e3fad6f7e03603771928898dece5b5389118343abb9e",
           "role": "evidence",
           "claims": [
             "CM-SPLIT-RELATIVE-FROBENIUS-NORM-BOUNDS",

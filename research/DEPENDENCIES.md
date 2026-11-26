@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 9104 claim/source nodes, 7403 implication rules and 123 documented equivalence components. conditional: 39; falsified: 22; open: 363; proved: 8680.
+The graph contains 9107 claim/source nodes, 7406 implication rules and 123 documented equivalence components. conditional: 39; falsified: 22; open: 363; proved: 8683.
 
 Inspect the current graph from the repository root:
 
@@ -5969,6 +5969,9 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | [CM-SPHERE-NONSPLIT-NONCM-PRIME-POWER-MOMENTS](foundations/extended-geometry/CM_NEWTON_NONSPLIT_NONCM_PRIME_POWER_MOMENTS.md) | proved | partial | none in declared routes |
 | [CM-SPHERE-NONCM-TWISTED-QUOTIENT-MOMENTS](foundations/extended-geometry/CM_NEWTON_UNBOUNDED_TWISTED_MOMENT_QUOTIENTS.md) | proved | partial | none in declared routes |
 | [CM-SPHERE-NONSPLIT-EXACT-PRIMITIVE-5-RANK](foundations/extended-geometry/CM_NEWTON_NONSPLIT_NONCM_PRIME_POWER_MOMENTS.md) | proved | partial | none in declared routes |
+| [CM-NEWTON-ADJOINT-HALF-SLOPE-P-RANK](foundations/extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md) | proved | partial | none in declared routes |
+| [CM-NEWTON-A1-ORIGINAL-FIELD-TENSOR-DENSITY](../unpublished/cm-newton-polygon-constraints/original-a1.tex) | proved | partial | none in declared routes |
+| [CM-PFAFFIAN-SHARP-FINITE-FIELD-RANGE](../unpublished/cm-newton-polygon-constraints/pfaffian-range.tex) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -5999,115 +6002,115 @@ flowchart LR
   class n2 proved
   n3["CM-RM-HECKE-BOUNDED-DEGREE-<br/>OBSTRUCTION<br/>proved"]
   class n3 proved
-  n4["CM-RM-SPLIT-LOGARITHMIC-TRACE-<br/>COFACTOR<br/>proved"]
+  n4["CM-PFAFFIAN-SHARP-FINITE-<br/>FIELD-RANGE<br/>proved"]
   class n4 proved
-  n5["CM-RANK-TWO-ALL-BALANCED-<br/>FINITE-FIELD-SHARPNESS<br/>proved"]
+  n5["CM-RM-SPLIT-LOGARITHMIC-TRACE-<br/>COFACTOR<br/>proved"]
   class n5 proved
-  n6["CM-NEWTON-RESIDUE-PRIME-<br/>TORSION-RAMIFICATION<br/>proved"]
+  n6["CM-RANK-TWO-ALL-BALANCED-<br/>FINITE-FIELD-SHARPNESS<br/>proved"]
   class n6 proved
-  n7["CM-RM-PAIRWISE-SATO-TATE-<br/>FROBENIUS-CLASSES<br/>proved"]
+  n7["CM-NEWTON-RESIDUE-PRIME-<br/>TORSION-RAMIFICATION<br/>proved"]
   class n7 proved
-  n8["CM-NEWTON-A1-MULTI-ACTIVE-<br/>INCIDENCE-DENSITY<br/>proved"]
+  n8["CM-RM-PAIRWISE-SATO-TATE-<br/>FROBENIUS-CLASSES<br/>proved"]
   class n8 proved
-  n9["CM-RM-CYCLIC-ENDOMORPHISM-<br/>GENERATOR-ORDINARITY<br/>proved"]
+  n9["CM-NEWTON-A1-MULTI-ACTIVE-<br/>INCIDENCE-DENSITY<br/>proved"]
   class n9 proved
-  n10["CM-RM-FROBENIUS-RATIONAL-<br/>DENOMINATOR-SIEVE<br/>proved"]
+  n10["CM-NEWTON-A1-ORIGINAL-FIELD-<br/>TENSOR-DENSITY<br/>proved"]
   class n10 proved
-  n11["CM-RM-RELATIVE-TRACE-TUPLE-<br/>THIN-EXCLUSION<br/>proved"]
+  n11["CM-RM-CYCLIC-ENDOMORPHISM-<br/>GENERATOR-ORDINARITY<br/>proved"]
   class n11 proved
-  n12["CM-RM-SPLIT-SQRT-COFACTOR-<br/>PROFILES<br/>proved"]
+  n12["CM-RM-FROBENIUS-RATIONAL-<br/>DENOMINATOR-SIEVE<br/>proved"]
   class n12 proved
-  n13["CM-NEWTON-ADJOINT-WEIGHTED-<br/>FLAT-FACTOR-BOUND<br/>proved"]
+  n13["CM-RM-RELATIVE-TRACE-TUPLE-<br/>THIN-EXCLUSION<br/>proved"]
   class n13 proved
-  n14["CM-RM-SPLIT-PROJECTIVE-<br/>PCURVATURE-FIRST-DENOMINATORS<br/>proved"]
+  n14["CM-RM-SPLIT-SQRT-COFACTOR-<br/>PROFILES<br/>proved"]
   class n14 proved
-  n15["CM-NEWTON-SMALL-TRACE-<br/>COFACTOR-ORDER<br/>proved"]
+  n15["CM-NEWTON-ADJOINT-WEIGHTED-<br/>FLAT-FACTOR-BOUND<br/>proved"]
   class n15 proved
-  n16["CM-RM-SPLIT-POLYNOMIAL-<br/>COFACTOR-STRIPS<br/>proved"]
+  n16["CM-RM-SPLIT-PROJECTIVE-<br/>PCURVATURE-FIRST-DENOMINATORS<br/>proved"]
   class n16 proved
-  n17["CM-NEWTON-PROJECTIVE-LINE-<br/>DETERMINANT-DISCRIMINANTS<br/>proved"]
+  n17["CM-NEWTON-SMALL-TRACE-<br/>COFACTOR-ORDER<br/>proved"]
   class n17 proved
-  n18["CM-RM-PAIRWISE-SATO-TATE-<br/>COFACTOR-BOUNDS<br/>proved"]
+  n18["CM-RM-SPLIT-POLYNOMIAL-<br/>COFACTOR-STRIPS<br/>proved"]
   class n18 proved
-  n19["CM-NEWTON-A1-OVERLAPPING-<br/>TENSOR-SHIMURA-SURFACE<br/>proved"]
+  n19["CM-NEWTON-PROJECTIVE-LINE-<br/>DETERMINANT-DISCRIMINANTS<br/>proved"]
   class n19 proved
-  n20["CM-NONSPLIT-DISCONNECTED-<br/>ARBITRARY-RANK-NORM-<br/>INEQUALITIES<br/>proved"]
+  n20["CM-RM-PAIRWISE-SATO-TATE-<br/>COFACTOR-BOUNDS<br/>proved"]
   class n20 proved
-  n21["CM-RM-SPLIT-COFACTORS-JOINT-<br/>THIN-EXCLUSION<br/>proved"]
+  n21["CM-NEWTON-A1-OVERLAPPING-<br/>TENSOR-SHIMURA-SURFACE<br/>proved"]
   class n21 proved
-  n22["CM-RM-SPLIT-MOVING-IDEAL-THIN-<br/>QUOTIENT<br/>proved"]
+  n22["CM-NONSPLIT-DISCONNECTED-<br/>ARBITRARY-RANK-NORM-<br/>INEQUALITIES<br/>proved"]
   class n22 proved
-  n23["CM-RM-SPLIT-SQRT-PROFILE-<br/>POWER-GRH<br/>conditional"]
-  class n23 conditional
-  n24["CM-NEWTON-ADJOINT-TWO-ACTIVE-<br/>POTENTIAL-ORDINARY<br/>proved"]
+  n23["CM-RM-SPLIT-COFACTORS-JOINT-<br/>THIN-EXCLUSION<br/>proved"]
+  class n23 proved
+  n24["CM-RM-SPLIT-MOVING-IDEAL-THIN-<br/>QUOTIENT<br/>proved"]
   class n24 proved
-  n25["CM-RM-SPLIT-HODGE-VECTOR-<br/>EXACT-DENOMINATOR-STAIRCASE<br/>proved"]
+  n25["CM-NEWTON-ADJOINT-HALF-SLOPE-<br/>P-RANK<br/>proved"]
   class n25 proved
-  n26["CM-RM-SPLIT-TRACE-FOURIER-<br/>ORDINARITY-CRITERION<br/>proved"]
+  n26["CM-NEWTON-ADJOINT-TWO-ACTIVE-<br/>POTENTIAL-ORDINARY<br/>proved"]
   class n26 proved
-  n27["CM-NEWTON-HIGHER-TORSION-LINE-<br/>DISCRIMINANTS<br/>proved"]
+  n27["CM-RM-SPLIT-HODGE-VECTOR-<br/>EXACT-DENOMINATOR-STAIRCASE<br/>proved"]
   class n27 proved
-  n28["CM-NEWTON-RESIDUAL-<br/>DETERMINANT-SPIN<br/>proved"]
+  n28["CM-NEWTON-HIGHER-TORSION-LINE-<br/>DISCRIMINANTS<br/>proved"]
   class n28 proved
-  n29["CM-NEWTON-UNIFORM-RESIDUAL-<br/>ARTIN-CONDUCTORS<br/>proved"]
+  n29["CM-NEWTON-RESIDUAL-<br/>DETERMINANT-SPIN<br/>proved"]
   class n29 proved
-  n30["CM-MULTIPLICITY-ONE-EXACT-<br/>FROBENIUS-POWER<br/>proved"]
+  n30["CM-NEWTON-UNIFORM-RESIDUAL-<br/>ARTIN-CONDUCTORS<br/>proved"]
   class n30 proved
-  n31["CM-RANK-TWO-PROJECTIVE-TRACE-<br/>FIELD-BOUND<br/>proved"]
+  n31["CM-MULTIPLICITY-ONE-EXACT-<br/>FROBENIUS-POWER<br/>proved"]
   class n31 proved
-  n32["CM-RANK-TWO-PROJECTIVELY-<br/>LINKED-ORDINARITY<br/>proved"]
+  n32["CM-RANK-TWO-PROJECTIVE-TRACE-<br/>FIELD-BOUND<br/>proved"]
   class n32 proved
-  n33["CM-NEWTON-A1-TWO-ACTIVE-<br/>SHIMURA-SURFACE<br/>proved<br/>OR routes"]
+  n33["CM-RANK-TWO-PROJECTIVELY-<br/>LINKED-ORDINARITY<br/>proved"]
   class n33 proved
-  n34["CM-NEWTON-HIGHER-TORSION-<br/>UNIFORM-DIFFERENT<br/>proved"]
+  n34["CM-NEWTON-A1-TWO-ACTIVE-<br/>SHIMURA-SURFACE<br/>proved<br/>OR routes"]
   class n34 proved
-  n35["CM-RANK-FOUR-PFAFFIAN-<br/>ORIGINAL-BASE-MU-ORDINARITY<br/>proved"]
+  n35["CM-NEWTON-HIGHER-TORSION-<br/>UNIFORM-DIFFERENT<br/>proved"]
   class n35 proved
-  n36["CM-RANK-TWO-ORIENTED-LINKAGE-<br/>AND-COEFFICIENT-TWIST<br/>proved"]
+  n36["CM-RANK-FOUR-PFAFFIAN-<br/>ORIGINAL-BASE-MU-ORDINARITY<br/>proved"]
   class n36 proved
-  n37["CM-RANK-TWO-PROJECTIVE-BOUND-<br/>OVER-ACTION-FIELD<br/>proved"]
+  n37["CM-RANK-TWO-ORIENTED-LINKAGE-<br/>AND-COEFFICIENT-TWIST<br/>proved"]
   class n37 proved
-  n38["CM-RM-DEGREE-ONE-SINGLE-<br/>FAILURE-FROBENIUS-WEYL<br/>proved"]
+  n38["CM-RANK-TWO-PROJECTIVE-BOUND-<br/>OVER-ACTION-FIELD<br/>proved"]
   class n38 proved
-  n39["CM-IMAGINARY-QUADRATIC-<br/>BALANCED-FOURFOLD-DENSITY-ONE<br/>proved<br/>OR routes"]
+  n39["CM-RM-DEGREE-ONE-SINGLE-<br/>FAILURE-FROBENIUS-WEYL<br/>proved"]
   class n39 proved
-  n40["CM-NEWTON-SPLIT-LOW-WEIGHT-<br/>RESIDUAL-COINCIDENCES<br/>proved"]
+  n40["CM-IMAGINARY-QUADRATIC-<br/>BALANCED-FOURFOLD-DENSITY-ONE<br/>proved<br/>OR routes"]
   class n40 proved
-  n41["CM-RM-CUBIC-FINITE-LOCAL-ONE-<br/>FAILURE-PRESCRIPTIONS<br/>proved"]
+  n41["CM-NEWTON-SPLIT-LOW-WEIGHT-<br/>RESIDUAL-COINCIDENCES<br/>proved"]
   class n41 proved
-  n42["CM-RM-LEVEL-97-SPLIT-FAILURE-<br/>WITH-FULL-JOINT-IMAGE<br/>proved"]
+  n42["CM-RM-CUBIC-FINITE-LOCAL-ONE-<br/>FAILURE-PRESCRIPTIONS<br/>proved"]
   class n42 proved
-  n43["CM-RM-SPLIT-BOUNDED-<br/>DISCRIMINANT-COFACTOR<br/>proved"]
+  n43["CM-RM-LEVEL-97-SPLIT-FAILURE-<br/>WITH-FULL-JOINT-IMAGE<br/>proved"]
   class n43 proved
-  n44["CM-RM-SPLIT-FAILED-PAIR-GENUS-<br/>CHARACTERS<br/>proved"]
+  n44["CM-RM-SPLIT-BOUNDED-<br/>DISCRIMINANT-COFACTOR<br/>proved"]
   class n44 proved
-  n45["CM-RM-SPLIT-HODGE-TENSOR-<br/>DENOMINATOR-DISTRIBUTION<br/>proved"]
+  n45["CM-RM-SPLIT-FAILED-PAIR-GENUS-<br/>CHARACTERS<br/>proved"]
   class n45 proved
-  n46["CM-RM-SPLIT-ONE-FAILURE-TRACE-<br/>LATTICE-SCALE<br/>proved"]
+  n46["CM-RM-SPLIT-HODGE-TENSOR-<br/>DENOMINATOR-DISTRIBUTION<br/>proved"]
   class n46 proved
-  n47["CM-LINKED-RANK-FOUR-PFAFFIAN-<br/>MU-ORDINARITY<br/>proved"]
+  n47["CM-RM-SPLIT-ONE-FAILURE-TRACE-<br/>LATTICE-SCALE<br/>proved"]
   class n47 proved
-  n48["CM-NEWTON-A1-SINGLE-MIXED-<br/>TENSOR-SUPPORT<br/>proved"]
+  n48["CM-LINKED-RANK-FOUR-PFAFFIAN-<br/>MU-ORDINARITY<br/>proved"]
   class n48 proved
-  n49["CM-NONSPLIT-RANK-THREE-EXACT-<br/>CM-M-ONE<br/>proved"]
+  n49["CM-NEWTON-A1-SINGLE-MIXED-<br/>TENSOR-SUPPORT<br/>proved"]
   class n49 proved
-  n50["CM-FULL-IMAGINARY-QUADRATIC-<br/>FOURFOLD-DENSITY-<br/>CLASSIFICATION<br/>proved"]
+  n50["CM-NONSPLIT-RANK-THREE-EXACT-<br/>CM-M-ONE<br/>proved"]
   class n50 proved
-  n51["CM-RANK-FOUR-EXPLICIT-<br/>TRIGONAL-JACOBIAN<br/>proved"]
+  n51["CM-FULL-IMAGINARY-QUADRATIC-<br/>FOURFOLD-DENSITY-<br/>CLASSIFICATION<br/>proved"]
   class n51 proved
-  n52["CM-NEWTON-SPLIT-TORSION-<br/>RESIDUE-DEGREE-SIEVE<br/>proved"]
+  n52["CM-RANK-FOUR-EXPLICIT-<br/>TRIGONAL-JACOBIAN<br/>proved"]
   class n52 proved
-  n53["CM-RM-FINITE-ONE-FAILURE-<br/>PRESCRIPTIONS-WITH-FULL-JOINT-<br/>IMAGE<br/>proved"]
+  n53["CM-NEWTON-SPLIT-TORSION-<br/>RESIDUE-DEGREE-SIEVE<br/>proved"]
   class n53 proved
-  n54["CM-RM-LOGARITHMIC-<br/>DISCRIMINANT-COFACTOR<br/>proved"]
+  n54["CM-RM-FINITE-ONE-FAILURE-<br/>PRESCRIPTIONS-WITH-FULL-JOINT-<br/>IMAGE<br/>proved"]
   class n54 proved
-  n55["CM-RM-SPLIT-FAILED-PAIR-GENUS-<br/>CHARACTER-RATE<br/>proved"]
+  n55["CM-RM-LOGARITHMIC-<br/>DISCRIMINANT-COFACTOR<br/>proved"]
   class n55 proved
-  n56["CM-RM-SPLIT-DISCRIMINANT-<br/>COFACTOR-VARYING-QUADRATIC-<br/>NORM<br/>proved"]
+  n56["CM-RM-SPLIT-FAILED-PAIR-GENUS-<br/>CHARACTER-RATE<br/>proved"]
   class n56 proved
-  n57["CM-RM-SPLIT-ISOGENY-RETURN-<br/>MINIMUM<br/>proved"]
+  n57["CM-RM-SPLIT-DISCRIMINANT-<br/>COFACTOR-VARYING-QUADRATIC-<br/>NORM<br/>proved"]
   class n57 proved
-  n58["CM-RM-SPLIT-TRACE-LATTICE-<br/>MOVING-LEVEL-COUNT<br/>proved"]
+  n58["CM-RM-SPLIT-ISOGENY-RETURN-<br/>MINIMUM<br/>proved"]
   class n58 proved
   n59["CM-CYCLIC-NORMALIZER-INFINITE-<br/>SPHERE-MOMENTS<br/>proved"]
   class n59 proved
@@ -6165,27 +6168,27 @@ flowchart LR
   r3 --> n59
   r4{"AND<br/>DERIVE-CM-FULL-IMAGINARY-<br/>QUADRATIC-FOURFOLD-DENSITY-<br/>CLASSIFICATION<br/>+2 omitted proof premises<br/>proved"}
   class r4 proved
-  n39 --> r4
-  r4 --> n50
+  n40 --> r4
+  r4 --> n51
   r5{"AND<br/>DERIVE-CM-IMAGINARY-QUADRATIC-<br/>BALANCED-FOURFOLD-DENSITY-ONE<br/>+3 omitted proof premises<br/>proved"}
   class r5 proved
-  n35 --> r5
-  r5 --> n39
+  n36 --> r5
+  r5 --> n40
   r6{"AND<br/>DERIVE-CM-IMAGINARY-QUADRATIC-<br/>FOURFOLD-DIRECT-COMPONENTS<br/>+5 omitted proof premises<br/>proved"}
   class r6 proved
-  r6 --> n39
+  r6 --> n40
   r7{"AND<br/>DERIVE-CM-LINKED-RANK-FOUR-<br/>PFAFFIAN-MU-ORDINARITY<br/>+5 omitted proof premises<br/>proved"}
   class r7 proved
-  n35 --> r7
-  n20 --> r7
-  r7 --> n47
+  n36 --> r7
+  n22 --> r7
+  r7 --> n48
   r8{"AND<br/>DERIVE-CM-MULTIPLICITY-ONE-<br/>EXACT-FROBENIUS-POWER<br/>+4 omitted proof premises<br/>proved"}
   class r8 proved
-  n20 --> r8
-  r8 --> n30
+  n22 --> r8
+  r8 --> n31
   r9{"AND<br/>DERIVE-CM-NEWTON-A1-ADJOINT-<br/>BINOMIAL-SLOPES<br/>+3 omitted proof premises<br/>proved"}
   class r9 proved
-  n48 --> r9
+  n49 --> r9
   r9 --> n64
   r10{"AND<br/>DERIVE-CM-NEWTON-A1-ADJOINT-<br/>ORDINARY-DENSITY<br/>+2 omitted proof premises<br/>proved"}
   class r10 proved
@@ -6202,280 +6205,277 @@ flowchart LR
   r12 --> n76
   r13{"AND<br/>DERIVE-CM-NEWTON-A1-MULTI-<br/>ACTIVE-INCIDENCE-DENSITY<br/>+5 omitted proof premises<br/>proved"}
   class r13 proved
-  r13 --> n8
+  r13 --> n9
   r14{"AND<br/>DERIVE-CM-NEWTON-A1-MULTI-<br/>ACTIVE-SPLIT-COEFFICIENT-<br/>EXAMPLE<br/>proved"}
   class r14 proved
-  n8 --> r14
+  n9 --> r14
   n77 --> r14
   r14 --> n78
-  r15{"AND<br/>DERIVE-CM-<br/>NEWTON-A1-OVERLAPPING-TENSOR-<br/>SHIMURA-SURFACE<br/>+3 omitted proof premises<br/>proved"}
+  r15{"AND<br/>DERIVE-CM-NEWTON-A1-ORIGINAL-<br/>FIELD-TENSOR-DENSITY<br/>+6 omitted proof premises<br/>proved"}
   class r15 proved
-  n8 --> r15
-  r15 --> n19
-  r16{"AND<br/>DERIVE-CM-NEWTON-A1-SINGLE-<br/>MIXED-TENSOR-SUPPORT<br/>+3 omitted proof premises<br/>proved"}
+  r15 --> n10
+  r16{"AND<br/>DERIVE-CM-<br/>NEWTON-A1-OVERLAPPING-TENSOR-<br/>SHIMURA-SURFACE<br/>+3 omitted proof premises<br/>proved"}
   class r16 proved
-  r16 --> n48
-  r17{"AND<br/>DERIVE-CM-NEWTON-A1-TWO-<br/>ACTIVE-SHIMURA-SURFACE<br/>+3 omitted proof premises<br/>proved"}
+  n9 --> r16
+  r16 --> n21
+  r17{"AND<br/>DERIVE-CM-NEWTON-A1-SINGLE-<br/>MIXED-TENSOR-SUPPORT<br/>+3 omitted proof premises<br/>proved"}
   class r17 proved
-  n24 --> r17
-  r17 --> n33
-  r18{"AND<br/>DERIVE-CM-NEWTON-A1-TWO-<br/>ACTIVE-TWELVEFOLD-MANUSCRIPT<br/>+1 omitted proof premise<br/>proved"}
+  r17 --> n49
+  r18{"AND<br/>DERIVE-CM-NEWTON-A1-TWO-<br/>ACTIVE-SHIMURA-SURFACE<br/>+3 omitted proof premises<br/>proved"}
   class r18 proved
-  n24 --> r18
-  n13 --> r18
-  r18 --> n33
-  r19{"AND<br/>DERIVE-CM-NEWTON-ADJOINT-TWO-<br/>ACTIVE-POTENTIAL-ORDINARY<br/>+1 omitted proof premise<br/>proved"}
+  n26 --> r18
+  r18 --> n34
+  r19{"AND<br/>DERIVE-CM-NEWTON-A1-TWO-<br/>ACTIVE-TWELVEFOLD-MANUSCRIPT<br/>+1 omitted proof premise<br/>proved"}
   class r19 proved
-  n13 --> r19
-  r19 --> n24
-  r20{"AND<br/>DERIVE-CM-NEWTON-ADJOINT-<br/>WEIGHTED-FLAT-FACTOR-BOUND<br/>+3 omitted proof premises<br/>proved"}
+  n26 --> r19
+  n15 --> r19
+  r19 --> n34
+  r20{"AND<br/>DERIVE-CM-NEWTON-ADJOINT-HALF-<br/>SLOPE-P-RANK<br/>+2 omitted proof premises<br/>proved"}
   class r20 proved
-  r20 --> n13
-  r21{"AND<br/>DERIVE-CM-NEWTON-DYADIC-<br/>FROBENIUS-ISOLATION<br/>+2 omitted proof premises<br/>proved"}
+  n15 --> r20
+  r20 --> n25
+  r21{"AND<br/>DERIVE-CM-NEWTON-ADJOINT-TWO-<br/>ACTIVE-POTENTIAL-ORDINARY<br/>+1 omitted proof premise<br/>proved"}
   class r21 proved
-  n38 --> r21
-  n56 --> r21
-  r21 --> n68
-  r22{"AND<br/>DERIVE-CM-NEWTON-DYADIC-<br/>NORMALIZED-FIELD-INDEPENDENCE<br/>+1 omitted proof premise<br/>proved"}
+  n15 --> r21
+  r21 --> n26
+  r22{"AND<br/>DERIVE-CM-NEWTON-ADJOINT-<br/>WEIGHTED-FLAT-FACTOR-BOUND<br/>+3 omitted proof premises<br/>proved"}
   class r22 proved
-  n68 --> r22
-  n54 --> r22
-  r22 --> n75
-  r23{"AND<br/>DERIVE-CM-NEWTON-HIGHER-<br/>TORSION-LINE-DISCRIMINANTS<br/>+2 omitted proof premises<br/>proved"}
+  r22 --> n15
+  r23{"AND<br/>DERIVE-CM-NEWTON-DYADIC-<br/>FROBENIUS-ISOLATION<br/>+2 omitted proof premises<br/>proved"}
   class r23 proved
-  n6 --> r23
-  n17 --> r23
-  r23 --> n27
-  r24{"AND<br/>DERIVE-CM-NEWTON-HIGHER-<br/>TORSION-UNIFORM-DIFFERENT<br/>+2 omitted proof premises<br/>proved"}
+  n39 --> r23
+  n57 --> r23
+  r23 --> n68
+  r24{"AND<br/>DERIVE-CM-NEWTON-DYADIC-<br/>NORMALIZED-FIELD-INDEPENDENCE<br/>+1 omitted proof premise<br/>proved"}
   class r24 proved
-  n27 --> r24
-  r24 --> n34
-  r25{"AND<br/>DERIVE-CM-NEWTON-NONSPLIT-<br/>RESIDUE-ORDER-EXCLUSION<br/>+1 omitted proof premise<br/>proved"}
+  n68 --> r24
+  n55 --> r24
+  r24 --> n75
+  r25{"AND<br/>DERIVE-CM-NEWTON-HIGHER-<br/>TORSION-LINE-DISCRIMINANTS<br/>+2 omitted proof premises<br/>proved"}
   class r25 proved
-  n6 --> r25
-  n67 --> r25
-  r25 --> n71
-  r26{"AND<br/>DERIVE-CM-NEWTON-PROJECTIVE-<br/>LINE-DETERMINANT-DISCRIMINANTS<br/>+2 omitted proof premises<br/>proved"}
+  n7 --> r25
+  n19 --> r25
+  r25 --> n28
+  r26{"AND<br/>DERIVE-CM-NEWTON-HIGHER-<br/>TORSION-UNIFORM-DIFFERENT<br/>+2 omitted proof premises<br/>proved"}
   class r26 proved
-  n6 --> r26
-  r26 --> n17
-  r27{"AND<br/>DERIVE-CM-NEWTON-RESIDUAL-<br/>DETERMINANT-SPIN<br/>+2 omitted proof premises<br/>proved"}
+  n28 --> r26
+  r26 --> n35
+  r27{"AND<br/>DERIVE-CM-NEWTON-NONSPLIT-<br/>RESIDUE-ORDER-EXCLUSION<br/>+1 omitted proof premise<br/>proved"}
   class r27 proved
-  n17 --> r27
-  r27 --> n28
-  r28{"AND<br/>DERIVE-CM-NEWTON-RESIDUE-<br/>PRIME-TORSION-RAMIFICATION<br/>+3 omitted proof premises<br/>proved"}
+  n7 --> r27
+  n67 --> r27
+  r27 --> n71
+  r28{"AND<br/>DERIVE-CM-NEWTON-PROJECTIVE-<br/>LINE-DETERMINANT-DISCRIMINANTS<br/>+2 omitted proof premises<br/>proved"}
   class r28 proved
-  r28 --> n6
-  r29{"AND<br/>DERIVE-CM-NEWTON-SMALL-TRACE-<br/>COFACTOR-ORDER<br/>+1 omitted proof premise<br/>proved"}
+  n7 --> r28
+  r28 --> n19
+  r29{"AND<br/>DERIVE-CM-NEWTON-RESIDUAL-<br/>DETERMINANT-SPIN<br/>+2 omitted proof premises<br/>proved"}
   class r29 proved
-  n4 --> r29
-  r29 --> n15
-  r30{"AND<br/>DERIVE-CM-NEWTON-SPLIT-LOW-<br/>WEIGHT-RESIDUAL-COINCIDENCES<br/>+2 omitted proof premises<br/>proved"}
+  n19 --> r29
+  r29 --> n29
+  r30{"AND<br/>DERIVE-CM-NEWTON-RESIDUE-<br/>PRIME-TORSION-RAMIFICATION<br/>+3 omitted proof premises<br/>proved"}
   class r30 proved
-  n6 --> r30
-  n38 --> r30
-  r30 --> n40
-  r31{"AND<br/>DERIVE-CM-NEWTON-SPLIT-<br/>RESIDUE-ORDER-INTERPOLATION<br/>+3 omitted proof premises<br/>proved"}
+  r30 --> n7
+  r31{"AND<br/>DERIVE-CM-NEWTON-SMALL-TRACE-<br/>COFACTOR-ORDER<br/>+1 omitted proof premise<br/>proved"}
   class r31 proved
-  n52 --> r31
-  n4 --> r31
-  r31 --> n67
-  r32{"AND<br/>DERIVE-CM-NEWTON-SPLIT-<br/>TORSION-RESIDUE-DEGREE-SIEVE<br/>+1 omitted proof premise<br/>proved"}
+  n5 --> r31
+  r31 --> n17
+  r32{"AND<br/>DERIVE-CM-NEWTON-SPLIT-LOW-<br/>WEIGHT-RESIDUAL-COINCIDENCES<br/>+2 omitted proof premises<br/>proved"}
   class r32 proved
-  n6 --> r32
-  n40 --> r32
-  n38 --> r32
-  r32 --> n52
-  r33{"AND<br/>DERIVE-CM-NEWTON-TENSOR-<br/>ADJOINT-LABEL-FIELD<br/>+2 omitted proof premises<br/>proved"}
+  n7 --> r32
+  n39 --> r32
+  r32 --> n41
+  r33{"AND<br/>DERIVE-CM-NEWTON-SPLIT-<br/>RESIDUE-ORDER-INTERPOLATION<br/>+3 omitted proof premises<br/>proved"}
   class r33 proved
-  r33 --> n2
-  r34{"AND<br/>DERIVE-CM-NEWTON-TENSOR-<br/>BRAUER-DESCENT-OBSTRUCTION<br/>+2 omitted proof premises<br/>proved"}
+  n53 --> r33
+  n5 --> r33
+  r33 --> n67
+  r34{"AND<br/>DERIVE-CM-NEWTON-SPLIT-<br/>TORSION-RESIDUE-DEGREE-SIEVE<br/>+1 omitted proof premise<br/>proved"}
   class r34 proved
-  n2 --> r34
-  n62 --> r34
-  r34 --> n69
-  r35{"AND<br/>DERIVE-CM-NEWTON-TENSOR-<br/>CORESTRICTION-MU-DENSITY<br/>+5 omitted proof premises<br/>proved"}
+  n7 --> r34
+  n41 --> r34
+  n39 --> r34
+  r34 --> n53
+  r35{"AND<br/>DERIVE-CM-NEWTON-TENSOR-<br/>ADJOINT-LABEL-FIELD<br/>+2 omitted proof premises<br/>proved"}
   class r35 proved
-  n2 --> r35
-  n47 --> r35
-  r35 --> n62
-  r36{"AND<br/>DERIVE-CM-NEWTON-UNIFORM-<br/>RESIDUAL-ARTIN-CONDUCTORS<br/>+3 omitted proof premises<br/>proved"}
+  r35 --> n2
+  r36{"AND<br/>DERIVE-CM-NEWTON-TENSOR-<br/>BRAUER-DESCENT-OBSTRUCTION<br/>+2 omitted proof premises<br/>proved"}
   class r36 proved
-  n6 --> r36
-  n17 --> r36
-  r36 --> n29
-  r37{"AND<br/>DERIVE-CM-NONSPLIT-<br/>DISCONNECTED-ARBITRARY-RANK-<br/>NORM-INEQUALITIES<br/>+2 omitted proof premises<br/>proved"}
+  n2 --> r36
+  n62 --> r36
+  r36 --> n69
+  r37{"AND<br/>DERIVE-CM-NEWTON-TENSOR-<br/>CORESTRICTION-MU-DENSITY<br/>+5 omitted proof premises<br/>proved"}
   class r37 proved
-  r37 --> n20
-  r38{"AND<br/>DERIVE-CM-NONSPLIT-<br/>HOMOGENEOUS-ORDINARY-FORCING-<br/>ORBITS<br/>+1 omitted proof premise<br/>proved"}
+  n2 --> r37
+  n48 --> r37
+  r37 --> n62
+  r38{"AND<br/>DERIVE-CM-NEWTON-UNIFORM-<br/>RESIDUAL-ARTIN-CONDUCTORS<br/>+3 omitted proof premises<br/>proved"}
   class r38 proved
-  n66 --> r38
-  r38 --> n70
-  r39{"AND<br/>DERIVE-CM-NONSPLIT-ORDINARY-<br/>ABSOLUTELY-SIMPLE-UNITARY-<br/>FAMILIES<br/>+2 omitted proof premises<br/>proved"}
+  n7 --> r38
+  n19 --> r38
+  r38 --> n30
+  r39{"AND<br/>DERIVE-CM-NONSPLIT-<br/>DISCONNECTED-ARBITRARY-RANK-<br/>NORM-INEQUALITIES<br/>+2 omitted proof premises<br/>proved"}
   class r39 proved
-  n70 --> r39
-  r39 --> n74
-  r40{"AND<br/>DERIVE-CM-NONSPLIT-PROJECTIVE-<br/>COMPRESSED-NEWTON-INEQUALITIES<br/>+2 omitted proof premises<br/>proved"}
+  r39 --> n22
+  r40{"AND<br/>DERIVE-CM-NONSPLIT-<br/>HOMOGENEOUS-ORDINARY-FORCING-<br/>ORBITS<br/>+1 omitted proof premise<br/>proved"}
   class r40 proved
-  n20 --> r40
-  r40 --> n66
-  r41{"AND<br/>DERIVE-CM-NONSPLIT-RANK-THREE-<br/>EXACT-CM-M-ONE<br/>+1 omitted proof premise<br/>proved"}
+  n66 --> r40
+  r40 --> n70
+  r41{"AND<br/>DERIVE-CM-NONSPLIT-ORDINARY-<br/>ABSOLUTELY-SIMPLE-UNITARY-<br/>FAMILIES<br/>+2 omitted proof premises<br/>proved"}
   class r41 proved
-  n20 --> r41
-  r41 --> n49
-  r42{"AND<br/>DERIVE-CM-RANK-FOUR-EXPLICIT-<br/>TRIGONAL-JACOBIAN<br/>+2 omitted proof premises<br/>proved"}
+  n70 --> r41
+  r41 --> n74
+  r42{"AND<br/>DERIVE-CM-NONSPLIT-PROJECTIVE-<br/>COMPRESSED-NEWTON-INEQUALITIES<br/>+2 omitted proof premises<br/>proved"}
   class r42 proved
-  n39 --> r42
-  r42 --> n51
-  r43{"AND<br/>DERIVE-CM-RANK-FOUR-PFAFFIAN-<br/>ORIGINAL-BASE-MU-ORDINARITY<br/>+4 omitted proof premises<br/>proved"}
+  n22 --> r42
+  r42 --> n66
+  r43{"AND<br/>DERIVE-CM-NONSPLIT-RANK-THREE-<br/>EXACT-CM-M-ONE<br/>+1 omitted proof premise<br/>proved"}
   class r43 proved
-  n20 --> r43
-  r43 --> n35
-  r44{"AND<br/>DERIVE-CM-RANK-FOUR-TENSOR-<br/>SPECTRUM-REDUCTION<br/>+1 omitted proof premise<br/>proved"}
+  n22 --> r43
+  r43 --> n50
+  r44{"AND<br/>DERIVE-CM-PFAFFIAN-SHARP-<br/>FINITE-FIELD-RANGE<br/>+2 omitted proof premises<br/>proved"}
   class r44 proved
-  n35 --> r44
-  r44 --> n63
-  r45{"AND<br/>DERIVE-CM-RANK-FOUR-<br/>TYPE-C2-REAL-REALIZATION<br/>+3 omitted proof premises<br/>proved"}
+  r44 --> n4
+  r45{"AND<br/>DERIVE-CM-RANK-FOUR-EXPLICIT-<br/>TRIGONAL-JACOBIAN<br/>+2 omitted proof premises<br/>proved"}
   class r45 proved
-  n47 --> r45
-  r45 --> n61
-  r46{"AND<br/>DERIVE-CM-RANK-THREE-<br/>PROJECTIVE-ONLY-ABSOLUTELY-<br/>SIMPLE-EXAMPLES<br/>+4 omitted proof premises<br/>proved"}
+  n40 --> r45
+  r45 --> n52
+  r46{"AND<br/>DERIVE-CM-RANK-FOUR-PFAFFIAN-<br/>ORIGINAL-BASE-MU-ORDINARITY<br/>+4 omitted proof premises<br/>proved"}
   class r46 proved
-  n36 --> r46
-  r46 --> n65
-  r47{"AND<br/>DERIVE-CM-RANK-TWO-ALL-<br/>BALANCED-FINITE-FIELD-<br/>SHARPNESS<br/>+2 omitted proof premises<br/>proved"}
+  n22 --> r46
+  r46 --> n36
+  r47{"AND<br/>DERIVE-CM-RANK-FOUR-TENSOR-<br/>SPECTRUM-REDUCTION<br/>+1 omitted proof premise<br/>proved"}
   class r47 proved
-  r47 --> n5
-  r48{"AND<br/>DERIVE-CM-RANK-TWO-ORIENTED-<br/>LINKAGE-AND-COEFFICIENT-TWIST<br/>+1 omitted proof premise<br/>proved"}
+  n36 --> r47
+  r47 --> n63
+  r48{"AND<br/>DERIVE-CM-RANK-FOUR-<br/>TYPE-C2-REAL-REALIZATION<br/>+3 omitted proof premises<br/>proved"}
   class r48 proved
-  n31 --> r48
-  r48 --> n36
-  r49{"AND<br/>DERIVE-CM-RANK-TWO-PROJECTIVE-<br/>BOUND-OVER-ACTION-FIELD<br/>+2 omitted proof premises<br/>proved"}
+  n48 --> r48
+  r48 --> n61
+  r49{"AND<br/>DERIVE-CM-RANK-THREE-<br/>PROJECTIVE-ONLY-ABSOLUTELY-<br/>SIMPLE-EXAMPLES<br/>+4 omitted proof premises<br/>proved"}
   class r49 proved
-  n31 --> r49
-  r49 --> n37
-  r50{"AND<br/>DERIVE-CM-RANK-TWO-PROJECTIVE-<br/>TRACE-FIELD-BOUND<br/>+3 omitted proof premises<br/>proved"}
+  n37 --> r49
+  r49 --> n65
+  r50{"AND<br/>DERIVE-CM-RANK-TWO-ALL-<br/>BALANCED-FINITE-FIELD-<br/>SHARPNESS<br/>+2 omitted proof premises<br/>proved"}
   class r50 proved
-  r50 --> n31
-  r51{"AND<br/>DERIVE-CM-RANK-TWO-<br/>PROJECTIVELY-LINKED-ORDINARITY<br/>+3 omitted proof premises<br/>proved"}
+  r50 --> n6
+  r51{"AND<br/>DERIVE-CM-RANK-TWO-ORIENTED-<br/>LINKAGE-AND-COEFFICIENT-TWIST<br/>+1 omitted proof premise<br/>proved"}
   class r51 proved
-  r51 --> n32
-  r52{"AND<br/>DERIVE-CM-RM-CUBIC-FINITE-<br/>LOCAL-ONE-FAILURE-<br/>PRESCRIPTIONS<br/>+5 omitted proof premises<br/>proved"}
+  n32 --> r51
+  r51 --> n37
+  r52{"AND<br/>DERIVE-CM-RANK-TWO-PROJECTIVE-<br/>BOUND-OVER-ACTION-FIELD<br/>+2 omitted proof premises<br/>proved"}
   class r52 proved
-  n5 --> r52
-  n38 --> r52
-  r52 --> n41
-  r53{"AND<br/>DERIVE-CM-RM-CYCLIC-<br/>ENDOMORPHISM-GENERATOR-<br/>ORDINARITY<br/>+3 omitted proof premises<br/>proved"}
+  n32 --> r52
+  r52 --> n38
+  r53{"AND<br/>DERIVE-CM-RANK-TWO-PROJECTIVE-<br/>TRACE-FIELD-BOUND<br/>+3 omitted proof premises<br/>proved"}
   class r53 proved
-  r53 --> n9
-  r54{"AND<br/>DERIVE-CM-RM-DEGREE-ONE-<br/>SINGLE-FAILURE-FROBENIUS-WEYL<br/>proved"}
+  r53 --> n32
+  r54{"AND<br/>DERIVE-CM-RANK-TWO-<br/>PROJECTIVELY-LINKED-ORDINARITY<br/>+3 omitted proof premises<br/>proved"}
   class r54 proved
-  n31 --> r54
-  r54 --> n38
-  r55{"AND<br/>DERIVE-CM-RM-FINITE-ONE-<br/>FAILURE-PRESCRIPTIONS-WITH-<br/>FULL-JOINT-IMAGE<br/>+1 omitted proof premise<br/>proved"}
+  r54 --> n33
+  r55{"AND<br/>DERIVE-CM-RM-CUBIC-FINITE-<br/>LOCAL-ONE-FAILURE-<br/>PRESCRIPTIONS<br/>+5 omitted proof premises<br/>proved"}
   class r55 proved
-  n41 --> r55
-  n10 --> r55
-  r55 --> n53
-  r56{"AND<br/>DERIVE-CM-RM-FIXED-CHEBOTAREV-<br/>SQRT-WEYL<br/>+3 omitted proof premises<br/>proved"}
+  n6 --> r55
+  n39 --> r55
+  r55 --> n42
+  r56{"AND<br/>DERIVE-CM-RM-CYCLIC-<br/>ENDOMORPHISM-GENERATOR-<br/>ORDINARITY<br/>+3 omitted proof premises<br/>proved"}
   class r56 proved
-  r56 --> n1
-  r57{"AND<br/>DERIVE-CM-RM-FROBENIUS-<br/>RATIONAL-DENOMINATOR-SIEVE<br/>+5 omitted proof premises<br/>proved"}
+  r56 --> n11
+  r57{"AND<br/>DERIVE-CM-RM-DEGREE-ONE-<br/>SINGLE-FAILURE-FROBENIUS-WEYL<br/>proved"}
   class r57 proved
-  r57 --> n10
-  r58{"AND<br/>DERIVE-CM-RM-HECKE-BOUNDED-<br/>DEGREE-OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
+  n32 --> r57
+  r57 --> n39
+  r58{"AND<br/>DERIVE-CM-RM-FINITE-ONE-<br/>FAILURE-PRESCRIPTIONS-WITH-<br/>FULL-JOINT-IMAGE<br/>+1 omitted proof premise<br/>proved"}
   class r58 proved
-  r58 --> n3
-  r59{"AND<br/>DERIVE-CM-RM-LEVEL-97-SPLIT-<br/>FAILURE-WITH-FULL-JOINT-IMAGE<br/>+1 omitted proof premise<br/>proved"}
+  n42 --> r58
+  n12 --> r58
+  r58 --> n54
+  r59{"AND<br/>DERIVE-CM-RM-FIXED-CHEBOTAREV-<br/>SQRT-WEYL<br/>+3 omitted proof premises<br/>proved"}
   class r59 proved
-  n38 --> r59
-  r59 --> n42
-  r60{"AND<br/>DERIVE-CM-RM-LOGARITHMIC-<br/>DISCRIMINANT-COFACTOR<br/>+5 omitted proof premises<br/>proved"}
+  r59 --> n1
+  r60{"AND<br/>DERIVE-CM-RM-FROBENIUS-<br/>RATIONAL-DENOMINATOR-SIEVE<br/>+5 omitted proof premises<br/>proved"}
   class r60 proved
-  n38 --> r60
-  n43 --> r60
-  r60 --> n54
-  r61{"AND<br/>DERIVE-CM-RM-PAIRWISE-SATO-<br/>TATE-COFACTOR-BOUNDS<br/>proved"}
+  r60 --> n12
+  r61{"AND<br/>DERIVE-CM-RM-HECKE-BOUNDED-<br/>DEGREE-OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
   class r61 proved
-  n7 --> r61
-  r61 --> n18
-  r62{"AND<br/>DERIVE-CM-RM-PAIRWISE-SATO-<br/>TATE-FROBENIUS-CLASSES<br/>+8 omitted proof premises<br/>proved"}
+  r61 --> n3
+  r62{"AND<br/>DERIVE-CM-RM-LEVEL-97-SPLIT-<br/>FAILURE-WITH-FULL-JOINT-IMAGE<br/>+1 omitted proof premise<br/>proved"}
   class r62 proved
-  r62 --> n7
-  r63{"AND<br/>DERIVE-CM-RM-RELATIVE-TRACE-<br/>TUPLE-THIN-EXCLUSION<br/>+5 omitted proof premises<br/>proved"}
+  n39 --> r62
+  r62 --> n43
+  r63{"AND<br/>DERIVE-CM-RM-LOGARITHMIC-<br/>DISCRIMINANT-COFACTOR<br/>+5 omitted proof premises<br/>proved"}
   class r63 proved
-  r63 --> n11
-  r64{"AND<br/>DERIVE-CM-RM-SPLIT-BOUNDED-<br/>DISCRIMINANT-COFACTOR<br/>+3 omitted proof premises<br/>proved"}
+  n39 --> r63
+  n44 --> r63
+  r63 --> n55
+  r64{"AND<br/>DERIVE-CM-RM-PAIRWISE-SATO-<br/>TATE-COFACTOR-BOUNDS<br/>proved"}
   class r64 proved
-  n38 --> r64
-  r64 --> n43
-  r65{"AND<br/>DERIVE-CM-RM-SPLIT-COFACTORS-<br/>JOINT-THIN-EXCLUSION<br/>proved"}
+  n8 --> r64
+  r64 --> n20
+  r65{"AND<br/>DERIVE-CM-RM-PAIRWISE-SATO-<br/>TATE-FROBENIUS-CLASSES<br/>+8 omitted proof premises<br/>proved"}
   class r65 proved
-  n11 --> r65
-  r65 --> n21
-  r66{"AND<br/>DERIVE-CM-RM-SPLIT-<br/>DISCRIMINANT-COFACTOR-VARYING-<br/>QUADRATIC-NORM<br/>+1 omitted proof premise<br/>proved"}
+  r65 --> n8
+  r66{"AND<br/>DERIVE-CM-RM-RELATIVE-TRACE-<br/>TUPLE-THIN-EXCLUSION<br/>+5 omitted proof premises<br/>proved"}
   class r66 proved
-  n38 --> r66
-  n43 --> r66
-  r66 --> n56
-  r67{"AND<br/>DERIVE-CM-RM-SPLIT-FAILED-<br/>PAIR-GENUS-CHARACTER-RATE<br/>+1 omitted proof premise<br/>proved"}
+  r66 --> n13
+  r67{"AND<br/>DERIVE-CM-RM-SPLIT-BOUNDED-<br/>DISCRIMINANT-COFACTOR<br/>+3 omitted proof premises<br/>proved"}
   class r67 proved
-  n44 --> r67
-  r67 --> n55
-  r68{"AND<br/>DERIVE-CM-RM-SPLIT-FAILED-<br/>PAIR-GENUS-CHARACTERS<br/>+3 omitted proof premises<br/>proved"}
+  n39 --> r67
+  r67 --> n44
+  r68{"AND<br/>DERIVE-CM-RM-SPLIT-COFACTORS-<br/>JOINT-THIN-EXCLUSION<br/>proved"}
   class r68 proved
-  n38 --> r68
-  r68 --> n44
-  r69{"AND<br/>DERIVE-CM-RM-SPLIT-HODGE-<br/>TENSOR-DENOMINATOR-<br/>DISTRIBUTION<br/>proved"}
+  n13 --> r68
+  r68 --> n23
+  r69{"AND<br/>DERIVE-CM-RM-SPLIT-<br/>DISCRIMINANT-COFACTOR-VARYING-<br/>QUADRATIC-NORM<br/>+1 omitted proof premise<br/>proved"}
   class r69 proved
-  n25 --> r69
-  n38 --> r69
-  r69 --> n45
-  r70{"AND<br/>DERIVE-CM-RM-SPLIT-HODGE-<br/>VECTOR-EXACT-DENOMINATOR-<br/>STAIRCASE<br/>proved"}
+  n39 --> r69
+  n44 --> r69
+  r69 --> n57
+  r70{"AND<br/>DERIVE-CM-RM-SPLIT-FAILED-<br/>PAIR-GENUS-CHARACTER-RATE<br/>+1 omitted proof premise<br/>proved"}
   class r70 proved
-  n14 --> r70
-  r70 --> n25
-  r71{"AND<br/>DERIVE-CM-RM-SPLIT-ISOGENY-<br/>RETURN-MINIMUM<br/>+2 omitted proof premises<br/>proved"}
+  n45 --> r70
+  r70 --> n56
+  r71{"AND<br/>DERIVE-CM-RM-SPLIT-FAILED-<br/>PAIR-GENUS-CHARACTERS<br/>+3 omitted proof premises<br/>proved"}
   class r71 proved
-  r71 --> n57
-  r72{"AND<br/>DERIVE-CM-RM-SPLIT-LARGE-<br/>ORDER-FINITE-FIELD-<br/>REALIZABILITY<br/>+2 omitted proof premises<br/>proved"}
+  n39 --> r71
+  r71 --> n45
+  r72{"AND<br/>DERIVE-CM-RM-SPLIT-HODGE-<br/>TENSOR-DENOMINATOR-<br/>DISTRIBUTION<br/>proved"}
   class r72 proved
-  n58 --> r72
-  r72 --> n72
-  r73{"AND<br/>DERIVE-CM-RM-SPLIT-<br/>LOGARITHMIC-TRACE-COFACTOR<br/>+4 omitted proof premises<br/>proved"}
+  n27 --> r72
+  n39 --> r72
+  r72 --> n46
+  r73{"AND<br/>DERIVE-CM-RM-SPLIT-HODGE-<br/>VECTOR-EXACT-DENOMINATOR-<br/>STAIRCASE<br/>proved"}
   class r73 proved
-  r73 --> n4
-  r74{"AND<br/>DERIVE-CM-RM-SPLIT-MOVING-<br/>IDEAL-THIN-QUOTIENT<br/>+1 omitted proof premise<br/>proved"}
+  n16 --> r73
+  r73 --> n27
+  r74{"AND<br/>DERIVE-CM-RM-SPLIT-ISOGENY-<br/>RETURN-MINIMUM<br/>+2 omitted proof premises<br/>proved"}
   class r74 proved
-  n11 --> r74
-  r74 --> n22
-  r75{"AND<br/>DERIVE-CM-RM-SPLIT-ONE-<br/>FAILURE-TRACE-LATTICE-SCALE<br/>+3 omitted proof premises<br/>proved"}
+  r74 --> n58
+  r75{"AND<br/>DERIVE-CM-RM-SPLIT-LARGE-<br/>ORDER-FINITE-FIELD-<br/>REALIZABILITY<br/>+3 omitted proof premises<br/>proved"}
   class r75 proved
-  n38 --> r75
-  r75 --> n46
-  r76{"AND<br/>DERIVE-CM-RM-SPLIT-POLYNOMIAL-<br/>COFACTOR-STRIPS<br/>+2 omitted proof premises<br/>proved"}
+  r75 --> n72
+  r76{"AND<br/>DERIVE-CM-RM-SPLIT-<br/>LOGARITHMIC-TRACE-COFACTOR<br/>+4 omitted proof premises<br/>proved"}
   class r76 proved
-  n4 --> r76
-  r76 --> n16
-  r77{"AND<br/>DERIVE-CM-RM-SPLIT-PROJECTIVE-<br/>PCURVATURE-FIRST-DENOMINATORS<br/>+2 omitted proof premises<br/>proved"}
+  r76 --> n5
+  r77{"AND<br/>DERIVE-CM-RM-SPLIT-MOVING-<br/>IDEAL-THIN-QUOTIENT<br/>+1 omitted proof premise<br/>proved"}
   class r77 proved
-  r77 --> n14
-  r78{"AND<br/>DERIVE-CM-RM-SPLIT-SQRT-<br/>COFACTOR-PROFILES<br/>+1 omitted proof premise<br/>proved"}
+  n13 --> r77
+  r77 --> n24
+  r78{"AND<br/>DERIVE-CM-RM-SPLIT-ONE-<br/>FAILURE-TRACE-LATTICE-SCALE<br/>+3 omitted proof premises<br/>proved"}
   class r78 proved
-  n1 --> r78
-  r78 --> n12
-  r79{"AND<br/>DERIVE-CM-RM-SPLIT-SQRT-<br/>PROFILE-POWER-GRH<br/>+2 omitted proof premises<br/>conditional"}
-  class r79 conditional
-  n12 --> r79
-  r79 --> n23
-  r80{"AND<br/>DERIVE-CM-RM-SPLIT-TRACE-<br/>FOURIER-ORDINARITY-CRITERION<br/>+1 omitted proof premise<br/>proved"}
+  n39 --> r78
+  r78 --> n47
+  r79{"AND<br/>DERIVE-CM-RM-SPLIT-POLYNOMIAL-<br/>COFACTOR-STRIPS<br/>+2 omitted proof premises<br/>proved"}
+  class r79 proved
+  n5 --> r79
+  r79 --> n18
+  r80{"AND<br/>DERIVE-CM-RM-SPLIT-PROJECTIVE-<br/>PCURVATURE-FIRST-DENOMINATORS<br/>+2 omitted proof premises<br/>proved"}
   class r80 proved
-  n4 --> r80
-  r80 --> n26
-  r81{"AND<br/>DERIVE-CM-RM-SPLIT-TRACE-<br/>LATTICE-MOVING-LEVEL-COUNT<br/>+1 omitted proof premise<br/>proved"}
+  r80 --> n16
+  r81{"AND<br/>DERIVE-CM-RM-SPLIT-SQRT-<br/>COFACTOR-PROFILES<br/>+1 omitted proof premise<br/>proved"}
   class r81 proved
-  n46 --> r81
-  r81 --> n58
+  n1 --> r81
+  r81 --> n14
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -6484,6 +6484,6 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 82 routes (697 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 82 routes (700 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.

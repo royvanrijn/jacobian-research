@@ -3,9 +3,9 @@
   "date": "2026-11-26",
   "edition": {
     "file": "cm-newton-polygon-constraints.pdf",
-    "sha256": "ac68ebd89f5932b132a6f1a96cde2be370b039a6cfd061fda0bc878cde7e9a07",
-    "pages": 24,
-    "source_bundle_sha256": "c98f59bad87884c457375bd7a9cfa052e674765997506956d4356774f0e6bba1"
+    "sha256": "0b1155cda3eaeb7a71f48e62ed45e0aacd627bc63cd62dc3c804746120a2806a",
+    "pages": 28,
+    "source_bundle_sha256": "333bd5ca2fe71333fd0512e2d5f368d9f395060c0159d91673dadc29ff96dc65"
   },
   "build": {
     "command": "SOURCE_DATE_EPOCH=1795651200 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=cm-newton-polygon-constraints main.tex",
@@ -35,27 +35,35 @@
       "result": "Recomputed the genus-four cyclic covering character counts and relative Frobenius quartics at 7 and 13, checked ordinary middle coefficients and the S4 factorization witnesses, distinguished the two absolute Frobenius fields by splitting at 2, and verified the ordinary reduction at the inert prime 11. The article supplies the specialization argument from these certificates to the geometric endomorphism ring."
     }
   },
-  "replay_scope": "All five commands were executed from the archived supplement in Python 3.12.3 or PARI/GP 2.15.4. The programs check the stated finite examples. The adjoint and CM norm results, twelvefold construction, and fourfold density theorem use written arguments.",
+  "replay_scope": "All five commands were executed from the archived supplement in Python 3.12.3 or PARI/GP 2.15.4. The programs check the stated finite examples. The adjoint norm and p-rank results, CM norm and numerical bounds, twelvefold construction, fourfold density theorem and finite-field Pfaffian sharpness use written arguments.",
   "review": {
     "external_human_review": false,
     "formal_verification": false,
     "pdf_only_internal_review": {
       "reviewer": "Fresh isolated Codex readers",
-      "candidate_pdf_sha256": "867838ed39137e99d65ddd1987511611c5f3b29e1c72dbe8fd18a6670c0b737a",
-      "final_pdf_sha256": "ac68ebd89f5932b132a6f1a96cde2be370b039a6cfd061fda0bc878cde7e9a07",
-      "context": "The complete text extracted from the compiled PDF, selected rendered pages, and the five neutral reader prompts. The final reader received rendered pages 1, 7, 9, 10, 19 and 24. No repository material or previous conversation was supplied, and the reviewers made no tool calls.",
+      "candidate_pdf_sha256": "2b9f22f43a36b2c762e607d334b139147c2cd938642ec0f42d8c4b6a3153f752",
+      "final_pdf_sha256": "0b1155cda3eaeb7a71f48e62ed45e0aacd627bc63cd62dc3c804746120a2806a",
+      "context": "The complete text extracted from the compiled PDF, selected rendered pages and the five neutral reader prompts. The final reader received rendered pages 1, 5–8, 10 and 14. No repository material or previous conversation was supplied, and the readers made no tool calls.",
       "findings": [
-        "Recovered the factorwise adjoint bound, the original-field balanced fourfold theorem, the simultaneous CM coefficient bounds and the sharp numerical p-rank formula. Distinguished the known unbalanced case of the fourfold density theorem from its balanced extension.",
-        "Explained the weighted lost-pole argument and the Pfaffian parity argument on the interchanging components. Identified the twelvefold as a two-active example for which the split CM inequalities permit a nonordinary polygon.",
-        "Located the projected Kottwitz class comparison in Section 2.2 and the lattice determinant and Pfaffian calculation in Section 4.2 as the hardest steps. Reconstructed the displayed local and global bounds without finding an internal contradiction.",
-        "Distinguished finite-extension density, original-field density in the balanced fourfold case, numerical sharpness and the unresolved independent split cubic case. The specialist review points are the precise tensor comparison and monodromy inputs, the Pfaffian lattice comparison and the arithmetic realization of the twelvefold.",
-        "The reader could reconstruct the finite fourfold certificate from its printed data. Execution of the supplement and the polygon counts was checked separately. The reader suggested displaying the compositum K tau(E) explicitly in the unbalanced endomorphism-field identification; the notation KE in the draft means that compositum."
+        "Recovered the factorwise weighted adjoint bound, the exact half-slope and p-rank formulas, the original-field splitting criterion and the separate fourfold and numerical CM conclusions.",
+        "Explained the effect of a flat active factor on the tensor weights, the unpowered block trace product in the original-field case, and the finite-integer norm exclusions.",
+        "Located the one-step crystalline comparison as the hardest step. The candidate reader asked why the comparison over an unramified tensor-defining extension still applies to the one-step Frobenius. The revision identifies the geometric special point, the Frobenius-invariant tensors and the one-step class explicitly, and locates admissibility in Kisin–Madapusi Pera–Shin. The final reader recovered this argument and identified its cited inputs for specialist review.",
+        "Distinguished eventual ordinarity, the original-field tensor criterion with its extra hypotheses, the full-endomorphism hypothesis for the fourfold, and the finite-field scope of the sharp higher-rank Pfaffian bound. Identified the split cubic real-multiplication case as a remaining density question.",
+        "The first reader requested an explicit compositum in the unbalanced fourfold discussion. The revision writes K tau(E). The final reader flagged missing absolute-value bars in the extracted rank-two trace formula. The rendered page 18 and the LaTeX source both contain the bars, which were lost by text extraction. The finite replays and their proof scopes were checked separately from the PDF-only review."
       ],
-      "revisions_and_rechecks": "The Hui bibliography entry was recomposed between candidate and final for a warning-free build. Both reviews recovered the scope and proof mechanism of the new fourfold result and the twelvefold example."
+      "revisions_and_rechecks": "Expanded the one-step Frobenius argument and stated the unbalanced compositum explicitly. The cited Kisin–Madapusi Pera–Shin statements were inspected in the linked Harvard author copy, where Proposition 1.3.6 applies to each geometric special point, Section 1.3.7 constructs the one-step class and Lemma 1.3.8 gives admissibility. A fresh final reader followed the revised route and found no internal contradiction in the displayed headline arguments."
     }
   },
   "remaining": [
     "Specialist review of the tensor comparison, adjoint and Pfaffian arguments, the corestriction realization over a number field, the numerical minima, and priority.",
     "Density of one flat active factor at completely split primes with three independent active labels in the cubic real multiplication case."
-  ]
+  ],
+  "additional_arithmetic_check": {
+    "environment": "PARI/GP 2.15.4",
+    "inputs": [
+      "polresultant(x^2-x+p,x^2+p,x)==p",
+      "polresultant(x^4+p*x^2+p^2,x^2+p,x)==p^4"
+    ],
+    "result": "Both symbolic equalities hold over Z[p], checking the determinant factors 1/p and 1 in the finite-field sharpness construction by resultants. The manuscript gives the algebraic derivation."
+  }
 }

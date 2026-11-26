@@ -170,6 +170,9 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Nonzero prime-power sphere moments at a fixed prime and unbounded conductor | Internal result | proved | [Source](extended-geometry/CM_NEWTON_NONSPLIT_NONCM_PRIME_POWER_MOMENTS.md) |
 | Infinitely many nonzero sphere moments from a fixed nonordinary cyclic cover | Internal result | proved | [Source](extended-geometry/CM_NEWTON_UNBOUNDED_TWISTED_MOMENT_QUOTIENTS.md) |
 | Exact primitive 5-rank on the fixed-prime cyclic-cover family | Internal result | proved | [Source](extended-geometry/CM_NEWTON_NONSPLIT_NONCM_PRIME_POWER_MOMENTS.md) |
+| Exact half-slope multiplicity and density-one p-rank bound in adjoint type A1 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_ADJOINT_PROJECTIVE_TRACE_BOUNDS.md) |
+| Original-field ordinary density and its least field in adjoint type A1 | Unpublished; independent review pending | proved | [Source](../../unpublished/cm-newton-polygon-constraints/README.md) |
+| Sharp finite-field range of the Pfaffian integrality argument | Unpublished; independent review pending | proved | [Source](../../unpublished/cm-newton-polygon-constraints/README.md) |
 
 **Computed obligations:** 11 unresolved; 3 resolved within their exact scope.
 
