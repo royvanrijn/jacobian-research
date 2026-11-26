@@ -364,70 +364,57 @@ chosen \(k\) and the stated margins.
 
 ## An adaptive common-power sector with a third-letter lock
 
-**CPW5.** Put \(n=X^L\). Fix \(w>0\), and consider
-original primitive rows of height at most \(X\) with
-two letters \(U=Ax^k,\ V=By^k\) for positive integral
-coefficients and roots. The order and orientation
-may vary by row. Require an actual divisor
-\(D\ge X^w\) of the third letter. Suppose the
-coefficient pairs and divisor choices have
-catalogue sizes \(n^{f+o_X(1)}\) and
-\(n^{\mu+o_X(1)}\), respectively. It is enough
-to know \(\operatorname{rad}(D)\le n^\mu\),
-since the powers on a fixed support have a
-uniform height-subpower count. A direct joint
-catalogue bound can replace the sum \(f+\mu\).
-
-For every fixed \(\eta>0\) and all sufficiently
-small fixed \(L\), the count is
+**CPW5.** Put \(n=X^L\). Consider original primitive rows
+of height at most \(X\) with two letters \(U=A x^k,\ V=B y^k\)
+for positive integral coefficients and roots. The order and
+orientation may vary by row. Require an actual divisor \(D\) of
+the third letter with \(D\ge X^{2/k}\). If the joint catalogue
+of \((A,B,D)\) has size \(M\), the count is
 \[
-                    O\bigl(n^{f+\mu+\eta}X^\varepsilon\bigr)
-                                  \qquad(\varepsilon>0)
+                             O_\varepsilon(M X^\varepsilon)
+                                      \qquad(\varepsilon>0).
 \]
-if \(k\ge K_0(L)\to\infty\). The same conclusion
-holds for fixed lower orders with \(kw>2\) by
-a fixed margin. In particular a uniform gap
-\(f+\mu\le1/3-\delta\) gives a strict sector
-saving by taking \(\eta<\delta\). All original
-radical caps and primitive repair eligibility
-may be retained.
+The same estimate permits \(D\) to be omitted from the record
+when both roots are one. In particular separate catalogues of
+sizes \(n^{f+o_X(1)}\) and \(n^{\mu+o_X(1)}\) cost
+\(n^{f+\mu} X^\varepsilon\), uniformly in the permitted order
+choices. The cap \(\operatorname{rad}(D)\le n^\mu\) supplies
+the divisor catalogue by uniform fixed-support enumeration.
 
-Fix the two coefficients, the divisor and
-the orientation. Primitivity makes \(A,B,x,y\)
-units modulo \(D\). The signed equation
-determines \((x/y)^k\bmod D\). At each
-prime power of \(D\), a nonempty unit fibre
-of the \(k\)-th power map has size at most
-\(2k\), including primes dividing \(k\).
-This follows from cyclicity at odd prime
-powers and the two cyclic factors at
-powers of two. For fixed \(k\) there are
-at most \((2k)^{\omega(D)}=X^{o_X(1)}\)
-unit slope classes. Two roots in a single
-class satisfy \(x_1y_2\equiv x_2y_1\bmod D\).
-Since \(x_i,y_i\le X^{1/k}\), the two cross
-products are each at most \(X^{2/k}<D\).
-Their equality recovers the same positive
-reduced fraction and hence the same
-coprime pair and original row.
+The condition holds when \(D\ge X^w\) for fixed \(w>0\) and
+\(k w\ge2\), including at equality with the stated exact height
+caps. In particular it holds for every \(k\ge K_0(L)\to\infty\)
+at sufficiently small fixed \(L\). The exact condition also
+allows the numerical divisor weight to vary. There is a strict
+sector saving whenever the joint record price has a fixed
+margin below one third. All original radical caps and primitive
+repair eligibility may be retained.
 
-For \(k\le J/L\), apply this argument to
-the finite list of orders at each fixed
-budget. The required comparison holds
-for sufficiently small \(L\) under
-\(K_0(L)\to\infty\), or directly from the
-stated fixed-order inequality. For
-\(k>J/L\), enumerate the two roots
-up to \(n^{1/J}\) after fixing the
-coefficients. If either root exceeds
-one, only \(k\le\log_2 X\) can occur.
-If both are one, the coefficient pair
-determines the row. This branch needs
-no divisor enumeration. Choose \(2/J<\eta\)
-and absorb height-subpower charges in
-\(X^\varepsilon\). It works at every growth rate of \(K_0\)
-and also when the divisor has primes dividing \(k\). CPW3 retains its
-separate unbounded-height conclusion.
+Fix the coefficients, divisor and orientation. Primitivity
+makes \(A,B,x,y\) units modulo \(D\). The signed equation
+determines \((x/y)^k\bmod D\). A nonempty unit fibre of the
+\(k\)-th power map has at most \(2k\) elements at each prime
+power of \(D\). This follows from cyclicity at odd prime powers
+and the two cyclic factors at powers of two, including for
+primes dividing \(k\). Thus there are at most
+\((2k)^{\omega(D)}\) unit slope classes. Two roots in one class
+satisfy \(x_1y_2\equiv x_2y_1\bmod D\). The two cross products
+are positive and at most \(X^{2/k}\), so their absolute
+difference is strictly less than \(D\) even at equality.
+The resulting rational equality recovers the coprime
+positive root pair and then the original row.
+
+Uniformity in the order follows by splitting at an integer
+\(J>4/\varepsilon\). For \(k\le J\), the total number of unit
+classes is \(X^{o_X(1)}\) since \(D\le X\).
+For \(k>J\), enumerate both roots up to \(X^{1/J}\) for each
+coefficient pair. At most \(\log_2 X\) orders can occur with a
+root larger than one. When both roots are one the coefficient
+pair determines the row, with no need to record the order or
+divisor. This gives \(O_\varepsilon(X^\varepsilon)\) completions
+per record across all orders after reducing the inner allowances.
+CPW3 retains the separate unbounded-height conclusion.
+[Fixed-support enumeration (EB3)](ABC_EFFECTIVE_RADICAL_BUDGET.md#counting-by-a-sublogarithmic-prime-partition-sum)
 
 If the remaining third letter has positive
 nonatomic mass along a putative balanced

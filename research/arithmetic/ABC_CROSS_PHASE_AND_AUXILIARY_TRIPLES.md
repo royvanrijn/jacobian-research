@@ -193,3 +193,117 @@ For a powerful-triple transfer, at every odd prime outside the actual cross-gcds
 · [Four distinct form factors (MTK1)](ABC_MULTI_TARGET_MIXED_KERNEL_COUNTS.md#the-mixed-kernel-count)
 · [Limiting small-budget count](ABC_OMITTED_COORDINATE_GRAPH.md#a-limiting-small-budget-coefficient-of-13)
 · [High-powerful transfer](POWERFUL_TRIPLES_ABC_ENDPOINT_TRANSFER.md#theorem-a-strict-saving-from-endpoint-diffusion)
+
+
+## The common-field transfer for moving and even targets
+
+**CP6.** The two auxiliary triples of CP4 extend to
+arbitrary positive \(c_1,c_2\) in the same parity field.
+Use the same common absolute lock
+\(M\mid(c_1,c_2)\), \(M\) odd and \(M\ge X^\nu\),
+with \(a_1\equiv a_2\bmod M\).
+Use the nonzero reduced shifts \(h=\Delta_-\),
+\(j=\Delta_+\) as before. Apart from repeated
+or swapped rows, the two primitive auxiliary triples
+are recoverable from the genuine pair and conversely
+recover it at height-subpower cost. Both auxiliary
+targets have height at least \(X^{\nu/4}/2\)
+after the subpower branch orientation choices.
+
+The four positive integer values \(U,V,U',V'\)
+are as in CP4, but now
+\[
+ U+V=U'+V'=c_1c_2,\qquad
+ UU'=G^2h^2,\qquad VV'=G^2j^2.
+\]
+These identities use the unscaled cross products
+and \(G=(c_1,c_2)\).
+Partition the odd part of \(G\) into its aligned
+part \(G_A\) and its opposite part \(G_O\) according
+to the same unit branches as CP2. At an odd prime
+of \(G\), one pair consists of units and the other
+has orders \(2v_p(G)+2v_p(h)\) and
+\(2v_p(G)+2v_p(j)\). The shifts cannot both
+vanish modulo \(p\): when the two target orders
+differ both are units, and with equal orders
+their difference is \(2v a_2\bmod p\), a unit.
+At an exclusive target prime the original phase
+norms are units. Away from both targets a pair
+cannot have a common prime divisor since it sums
+to \(c_1c_2\).
+
+Consequently \(d_O=(U,V),d_A=(U',V')\) have odd
+parts \(G_O^2,G_A^2\) respectively, and both
+divide \(G^2\). To check the latter at two,
+if \(uv\) is odd then \(d_O,d_A\mid c_1c_2=uvG^2\)
+suffices. If \(uv\) is even, one of \(u,v\)
+is even and the other unscaled row at the
+corresponding even target has odd operands.
+Thus \(h,j\) are odd and the two product
+identities give the bound at two.
+Divide the two pairs by the respective gcds.
+The resulting auxiliary target odd parts are
+\[
+                    (uv)_{\rm odd}G_A^2,\qquad
+                    (uv)_{\rm odd}G_O^2.
+\]
+In each auxiliary the first operand has
+radical dividing \(2\operatorname{rad}(h)\)
+and the second dividing \(2\operatorname{rad}(j)\).
+The odd gcd of the two targets gives
+\((uv)_{\rm odd}\), hence the original product
+\(c_1c_2\) and the normalizations are determined
+away from two. Enumerate the powers of two
+at logarithmic-power cost. Restoring the
+two phase values recovers the nonreal product
+of the two original integral quadratic
+elements as in CP2. The common field and
+the two original rows then follow at divisor cost.
+
+It remains to verify the positive height floor
+for both auxiliary targets. Select the stronger
+alignment part \(M_0\ge M^{1/2}\) and swap the
+second row if necessary so that this part is
+aligned. The original same-residue relation
+becomes \(a_2\equiv\pm a_1\bmod M_0\) with one
+common sign. The target \(T_A=c_1c_2/d_O\)
+is at least \(M_0^2\). Put \(R_0=G^2/d_A\),
+so \(T_O=c_1c_2/d_A=uvR_0\).
+In the plus residue orientation,
+\(U\equiv-4a_1^2\) and \(h\equiv(u-v)a_1\bmod M_0\).
+The identity \(U'/d_A=R_0h^2/U\) gives
+\[
+                 4U'/d_A+R_0(u-v)^2\equiv0\bmod M_0 .
+\]
+It is a positive integer at most
+\(R_0(u+v)^2\le4T_O^2\), using \(U'/d_A\le T_O\)
+and \(u,v\ge1\). In the minus residue orientation,
+use \(V'\) and \(j\): \(V\equiv-4a_1^2\)
+and \(j\equiv(u-v)a_1\). This gives the
+same lower bound \(T_O\ge\sqrt{M_0}/2\).
+A complete residue class at a fixed odd deep
+common divisor is enough for both bounds.
+
+With full normalized shift radical caps
+\(b_h,b_j\), and full radical caps \(r_U,r_E\)
+on \(c_1c_2\) and \(uv\) respectively, the limiting
+one-third estimate thus gives pair exponent
+\[
+              [2(b_h+b_j)+r_U+r_E]/3+\eta
+\]
+under the same finite height meshes as CP4.
+Indeed the product of the auxiliary odd
+target radicals equals the product of the
+odd radicals of \(c_1c_2\) and \(uv\).
+No common field catalogue enters the count.
+If \(c_1c_2\) is fixed, either one of the
+two auxiliary triples suffices for recovery
+after fixing the bounded choice of its sign,
+so its individual actual radical price can
+replace the sum. The target orders in each
+auxiliary are those of \(uv\) plus twice the
+respective branch part of \(G\), at all odd
+primes. The operand-order statement of CP4
+also extends away from two and the actual
+cross-operand gcds. A high-powerful transfer
+requires these actual surviving orders.

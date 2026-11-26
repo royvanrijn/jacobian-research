@@ -827,6 +827,16 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All-dimension fixed-correlation quadratic Strong Factorial windows | Internal result | proved | [Source](image-rigidity/QUADRATIC_STRONG_FACTORIAL_WINDOWS_FROM_MATCHINGS.md) |
 | Exclusion of the diagonal rank-one residue at a front prime | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_PRIME_FRONT_DIAGONAL_LIFT.md) |
 | Exact prime-front four-window from the remaining finite-field gcd | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_PRIME_FRONT_REDUCTION.md) |
+| Exact finite-height reduction for opposite unit-gap rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_OPPOSITE_HEIGHT_FACTOR_SPECIALIZATION.md) |
+| First-digit exclusion of the three remaining prime-front residues | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_PRIME_FRONT_ZERO_LIFTS.md) |
+| Every compatible support and every start has a sharp matching window | Internal result | proved | [Source](image-rigidity/QUADRATIC_MATCHING_EVERY_SUPPORT_SHARP_WINDOWS.md) |
+| Every compatible no-cross support has a sharp actual window at every start | Internal result | proved | [Source](image-rigidity/QUADRATIC_MATCHING_EVERY_SUPPORT_SHARP_WINDOWS.md) |
+| Four-window exclusion at every first-position prime | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_PRIME_FIRST_ZERO_RANK_LIFT.md) |
+| Four-window exclusion at every second-position prime | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_PRIME_SECOND_ZERO_RANK_LIFT.md) |
+| Even binary quadratic four-window at any prime position | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_PRIME_FRONT_REDUCTION.md) |
+| Original even-moment exclusion at close dyadic axes | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_CLOSE_AXIS_FINAL_EVEN.md) |
+| Second boundary pairing at close dyadic axes | Internal result | proved | [Source](image-rigidity/BINARY_EVEN_QUADRATIC_CLOSE_AXIS_SECOND_PAIRING.md) |
+| Sylvester normal rank criterion at repeated Gaussian contact | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SYLVESTER_CONTACT_NORMAL_POLYTOPE.md) |
 
 **Computed obligations:** 50 unresolved; 34 resolved within their exact scope.
 
@@ -935,6 +945,7 @@ Scope limits:
 - Every nonzero zero-constant binary quadratic with singular Hessian B^2=4AC has no four consecutive zero positive factorial moments and satisfies the Strong Factorial window of its actual support, over every characteristic-zero field at every positive start. The compact proof is self-contained through native integral coefficients, a residue rational generating formula and explicit smaller-support recurrences. General nonsingular Hessian, unrestricted nonzero constants, full binary/SFC2/SFC3 and the stronger H anti gate remain outside this result.
 - The stronger uniform four-moment window for zero-constant singular-Hessian binary quadratics is optimal: an explicit algebraic five-monomial phase has its first three moments zero and its fourth nonzero. Native polynomial identities prove the three zeros independently; the existing uniform-four theorem supplies the nonzero fourth moment. This does not assert optimality of an actual five-term SFC window, or any full binary/SFC2/SFC3 or H closure.
 - In every dimension, zero-constant quadratics with B_ij^2=4c_ij A_iA_j for fixed rational odd-denominator c_ij have the k+ell factorial window and their actual-support Strong Factorial window. The native residue series is a matching polynomial quotient; the proof is self-contained and includes same-variable linears, diagonal, rank-one and principal-zero sign patterns. Exact independent binary restriction routes also preserve the old singular-Hessian four-window and actual-support theorems. Arbitrary independent quadratic coefficients, general nonzero constants and unrestricted SFC2/SFC3 remain outside this result.
+- For every fixed rational odd-denominator quadratic coupling pattern, every compatible diagonal/linear support with p>=1 and every positive start n, an algebraic phase has p-1 zero moments in that block followed by a nonzero moment. Thus the matching p=k+ell window is sharp on every support at every start; the witness may depend on n. Actual-support sharpness is asserted only when there are no cross monomials. Existence uses the exact classical homogeneous common-zero theorem, while exact full support/next moment use the independently proved matching upper theorem. No unrestricted quadratic/SFC2/SFC3 closure or smaller coefficient field witness is asserted.
 
 Tracked obligations (computed states):
 

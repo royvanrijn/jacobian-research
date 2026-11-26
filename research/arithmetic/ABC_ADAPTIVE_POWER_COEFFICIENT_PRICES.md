@@ -163,11 +163,11 @@ sufficiently small fixed \(L\), the count is
  n^{\,b_0+\max\{(1-(1-a)t)/3,\ at+\mu\}+\eta}
                                       X^\varepsilon\right).
 \]
-The constants are uniform in the chosen
-pool states under the displayed uniform
-bound. If a common \(k\) is fixed below
-\(K(L)\), the same estimate holds whenever
-\(kw>2\) by a fixed margin.
+The constants are uniform in the chosen pool states
+under the displayed uniform bound. More generally it
+suffices to have \(D\ge X^{2/k}\) on each row, so a fixed
+order with \(kw\ge2\) qualifies under the exact height
+bounds. The small fixed budget is used in the heavy branch.
 
 Fix \(k,S\). Let \(R_S\) be the product of
 the primes on which the reduced coefficient
@@ -199,34 +199,15 @@ coefficient pairs in this state.
 [Effective original radical pricing (EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
 · [Separating prime pools (VS2–VS4)](ABC_VALUATION_SPAN_COSETS.md#strict-saving-from-a-separating-prime-pool)
 
-For each such coefficient pair and each
-choice of \(D\), the original equation
-prescribes one value of \((x/y)^k\bmod D\).
-All four quantities \(A,B,x,y\) are units
-there. For \(k\le J/L\), with \(J\) fixed
-as in the preceding proof, there are
-height-subpower many unit-root classes.
-Two pairs in one slope class satisfy
-\(x_1 y_2\equiv x_2 y_1\bmod D\).
-Both cross products are at most
-\(X^{2/k}<D\) at sufficiently small fixed
-\(L\), or whenever the asserted fixed
-order inequality holds. Their equality
-fixes the reduced positive pair, since
-\(\gcd(x,y)=1\). Thus the light branch
-costs \(n^{at+\mu+o(1)}\) in this range.
-For \(k>J/L\) the two roots cost
-\(n^{2/J}\), without enumerating \(D\).
-There are at most \(\log_2 X\) orders
-with either root larger than one. In
-the stipulated single larger-order
-state the coefficients specify the
-original row. Choose \(J\) large enough
-for the counting allowance, sum the
-actual pool catalogue and absorb the
-order count.
-This proves APC2 without a uniform
-subspace-theorem constant in \(k\).
+For the light branch apply CPW5 after fixing the
+coefficient pair and the actual divisor. Its slope
+condition is \(D\ge X^{2/k}\), which follows from
+the stated hypotheses on \(k\) and \(w\).
+The joint recording cost in that branch is
+\(n^{at+\mu+o_X(1)}\). The order states number
+\(O(\log X)\) under the root-one convention, and
+CPW5 includes primes dividing the order and the large-order
+branch. [Primitive slope reconstruction (CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#an-adaptive-common-power-sector-with-a-third-letter-lock)
 
 For \(0\le\mu<1/3\), the heavy branch decreases
 in \(t\), and the light branch is nondecreasing.
@@ -939,6 +920,195 @@ size \(n^{d+o_X(1)}\), this version of the
 obstruction exceeds the original total radical
 cap by a fixed power. It retains both operand caps.
 
+## Conditional separation with a joint divisor pool
+
+Keep the genuine primitive shell and total budget \(L\)
+of APC2. Fix \(\beta,\mu_0\ge0\), and at each orientation
+and order allow a prescribed catalogue of at most
+\(n^{b_0+o_X(1)}\) states \((S,T)\). Require
+\[
+        \sum_{p\in S\cup T,\ p\le X}p^{-a}=o(\log X)
+                     \quad\text{uniformly},\qquad 0\le a<1 .
+\]
+Each row is assigned a state and an actual divisor \(D\mid W\)
+with \(D\ge X^{2/k}\) and
+\(\operatorname{rad}_{T^c}(D)\le n^{\mu_0}\). Here and below
+\(\operatorname{rad}_{T^c}\) retains the primes outside \(T\).
+Fix the actual divisor and the signed coefficient valuations
+on \(S\). Require at most \(n^{\beta+o_X(1)}\) possible
+exact coefficient ratios in this conditional class; \(\beta=0\)
+includes exact separation. Use canonical positive coefficients
+and the single state for orders above \(\log_2 X\), as in APC2.
+
+**APC7.** For any fixed \(0<t\le1\) and any \(\eta>0\), at
+sufficiently small fixed \(L\) the count is
+\[
+ O\!\left(n^{\,b_0+\max\{(1-(1-a)t)/3,\ at+\mu_0+\beta\}
+                   +\eta}X^\varepsilon\right).
+\]
+In particular if \(u=\mu_0+\beta<1/3\), the optimum is
+\(b_0+[a+(1-a)u]/(1+2a)\).
+
+For a fixed state measure the combined support used in the
+records, namely the primes of \(Q_k\) on \(S\) and of \(D\)
+on \(T\). These sets are disjoint by primitivity and both
+occur on the original triple. If the product is at least
+\(n^t\), price the union \(S\cup T\) by EB5 to obtain the
+heavy count. Here the actual primes of \(D\) use the original
+third letter's radical budget. Otherwise Rankin enumeration
+gives at most \(n^{at+o_X(1)}\) combined supports. Assigning
+each prime to one of the two records and choosing exact
+signed valuations costs \(X^{o_X(1)}\), by the uniform
+fixed-support estimate. The outside support of \(D\) then
+costs \(n^{\mu_0}\), with complete exponents again at subpower
+cost. The remaining ratio choices cost \(n^{\beta+o_X(1)}\)
+conditionally. CPW5 completes the rows. Summing the order
+states and balancing the two counts proves the formula.
+[Effective radical pricing (EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md#fixed-supports-and-polynomial-prime-prices)
+· [Slope reconstruction (CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#an-adaptive-common-power-sector-with-a-third-letter-lock)
+
+With \(T=\varnothing\) and \(\beta=0\), this already allows
+the exact separation to depend on \(D\). If part of the
+third divisor is supplied by the prescribed sparse alphabet,
+the correct input price is its outside radical, together
+with the conditional dictionary. For example, at \(a=1/2\)
+the values \(b_0=3/50\), \(\mu_0=1/50\), \(\beta=0\) give
+\(63/200<1/3\) before allowances. With full divisor price
+\(\mu=9/50\), the APC2 formula at the same \(a,b_0\) would
+give \(71/200\). These are comparisons of sufficient record
+budgets.
+
+## Conditional recovery from the root ratio
+
+**APC8.** Use a centered signed decomposition
+\(U/V=Q r^k\) at a fixed order in a genuine primitive shell
+with total radical budget \(L\). In each prime position choose
+a nearest nonnegative integer to \(v_p(U)/k\) or \(v_p(V)/k\)
+on the respective role. Fix a tie convention. If \(D\mid W\)
+and \(D\ge X^{kL}\), the actual root ratio \(r\) and \(D\)
+determine the original row at that order. For every divisor
+weight \(w>0\), at \(D\ge X^w\) this applies throughout
+\(kL\le w\), including orders of size \(L^{-\alpha}\) for
+fixed \(0<\alpha<1\) at sufficiently small fixed \(L\).
+
+Indeed the reduced numerator and denominator of \(Q\) are
+each at most \(\operatorname{rad}(UV)^{k/2}\le X^{kL/2}\).
+The equation fixes \(Q\equiv\pm r^{-k}\pmod D\).
+Two possible positive coefficient ratios therefore have
+congruent cross products, both at most \(X^{kL}\). The
+difference has magnitude strictly less than \(D\), so they
+are equal. The exact complete odds \(Q r^k\) recover the
+original coprime positive pair. All quantities are units
+at \(D\), by primitivity.
+
+Consequently the APC7 estimate also holds with the signed
+root valuations on \(S\) and at most \(n^{\beta+o_X(1)}\)
+conditional exact root ratios. Use \(D\ge X^{kL}\) in this
+route. The heavy cost has the same formula because the
+projected root primes occur on the original powered roles.
+A direct joint root-ratio and divisor dictionary also works
+at its actual price. Where both \(D\ge X^{kL}\) and
+\(D\ge X^{4/k}\) hold, the joint centered coefficient and
+divisor dictionary and the joint root-ratio and divisor
+dictionary have the same exponent at each fixed order.
+For the converse direction the centered root height is at
+most \(X^{2/k}\) and the same unit slope argument as in CPW5
+applies to the signed decomposition. These statements retain
+all three caps and do not require any valuation limit.
+[Centered decomposition](ABC_MOVING_SIGNED_POWER_COEFFICIENTS.md#a-count-with-unrecorded-coefficients)
+
+A small relative cover for the root ratio can replace
+conditional exact root enumeration. After fixing the actual
+divisor and projection, choose an actual center \(r_0\)
+in a class of diameter \(H(r/r_0)\le X^{c/k}\).
+The positive rational output \(Q(r/r_0)^k\) has
+height at most \(X^{kL/2+c}\) and a prescribed residue
+\(\pm r_0^{-k}\bmod D\). Thus it is unique when
+\(D\ge X^{kL+2c}\). This gives the same count with \(\beta\)
+the conditional cover price, without a lower bound on the
+individual scaled valuations of \(D\).
+
+## A mixed fourth-power defect replaces exact power records
+
+**APC9.** Fix which original role is \(W\). Define the
+signed fourth-power-free part \(\kappa\) of \(U V W^2\),
+taking a minus sign when \(W=U+V\). The support of this
+record consists of the nonzero valuation residues modulo
+four on \(U,V\) and the odd valuations on \(W\).
+There are \(O_\varepsilon(X^\varepsilon)\) original primitive
+rows per exact \(\kappa\), uniformly at height at most \(X\).
+If \(4\mid k\) in a weighted power representation of \(U,V\),
+only the remainders modulo four of their coefficients enter.
+
+To prove the count, take signed \(P,Q\) of magnitudes \(U,V\)
+with \(r=P-Q\) of magnitude \(W\), with \(P>0\). Then
+\(P Q r^2=\kappa m^4\) for a positive integer \(m\).
+Set \(x=Pr/m^2,\ y=Pr^2/m^3\). Direct substitution gives
+\(y^2=x^3-\kappa x\). This curve is nonsingular and \((0,0)\)
+has exact order two. The coefficients and the point have
+polynomial height uniformly, so Dujella's Corollary 1.3
+gives \(X^{o_X(1)}\) possible points. Since
+\(x^3/y^2=P/r\) and \(\gcd(P,r)=1\), each point recovers
+the signed primitive pair and the original row, up to the
+bounded number of orientations.
+[Dujella, Theorem 1.1 and Corollary 1.3](https://arxiv.org/html/2312.03655v1)
+
+In the original total radical budget, suppose a prescribed
+catalogue of \(n^{b_0+o_X(1)}\) pools \(S\) has
+\(\sum_{p\in S,\ p\le X}p^{-a}=o(\log X)\) uniformly,
+with \(0\le a<1\). If each assigned row has
+\(\operatorname{rad}_{S^c}(|\kappa|)\le n^\mu\), then
+\[
+              O\!\left(n^{\,b_0+[a+(1-a)\mu]/(1+2a)+\eta}
+                                    X^\varepsilon\right)
+\]
+holds for \(\mu<1/3\), any \(\eta>0\), and sufficiently
+small fixed \(L\). Split at \(n^t\) on the projected defect
+support. In the heavy branch these primes all divide the
+original \(UVW\), so use EB5. In the light branch record
+both parts of the defect support at \(n^{at+\mu+o_X(1)}\),
+and choose residues in \(\{1,2,3\}\) at subpower cost.
+Apply the fixed-\(\kappa\) count, then take the APC2 split.
+A direct actual defect dictionary can also be used at its
+own price. If the valuations of the defect on \(S\)
+separate the actual records, the same bound holds with
+\(\mu=0\) independently of the outside defect mass.
+In the light branch the projection then determines the
+whole record. This criterion uses the third letter's actual
+parity and needs no numerical divisor.
+
+For example, view the defect exponent vectors in a state
+as elements of \((\mathbb Z/4\mathbb Z)^{\{p\le X\}}\)
+and fix the sign. Let \(G\) be their difference subgroup.
+If \(G\) has at most \(d\) generators, then
+\(G[2]\) has dimension at most \(d\) over \(\mathbb F_2\).
+Indeed its cardinality is \(|G/2G|\le 2^d\).
+Choose at most \(d\) prime coordinates which separate
+\(G[2]\), by ordinary linear algebra on the coordinates
+\(0,2\). Projection on these coordinates is injective on
+\(G\). Any order-four element in its kernel would have a
+nonzero double in the kernel on \(G[2]\).
+Thus a prescribed catalogue of such states with
+\(d=O((\log X)^s)\) for fixed \(s>0\) supplies
+separating pools for every fixed \(a>\max(0,1-1/s)\)
+with \(a<1\). Use the actual state catalogue price and the
+\(\mu=0\) formula. This only asks for finite-module rank
+of the joint residue record.
+
+For a necessary condition at saturation, write \(x_0\) for
+the combined raw mass at odd valuations and \(y_T\) for the
+mass at valuations \(2\bmod4\) on role \(T\), in base \(n\).
+For any fixed tolerance \(\xi>0\) on an exponent-full sequence,
+apart from a power-small fraction, simultaneously for each
+choice of \(W\) one has
+\(x_0+\sum_{T\ne W} y_T\ge1/3-\xi\).
+Indeed the left side is exactly the radical price of the
+mixed record and a cheaper support has a power-small
+count by fixed-\(\kappa\) recovery. In particular
+\(x_0+(2/3)\sum_T y_T\ge1/3-\xi\).
+The inequalities allow broad residue laws and do not furnish
+the needed defect extraction in arbitrary profiles.
+
 ## The extraction obligation with all three original caps
 
 Put \(n=X^L\). Suppose that a sequence of fixed
@@ -956,7 +1126,9 @@ the given ones. Use two genuine powered roles
 and a divisor of fixed positive numerical
 weight on the third role. Allow the power
 order to tend to infinity with the outer
-budget or use a qualifying fixed lower order.
+budget or require the exact CPW5 condition
+\(D\ge X^{2/k}\). In particular \(kw\ge2\)
+qualifies under exact numerical bounds.
 
 By CPW5 a direct joint coefficient and
 divisor catalogue suffices if its total
@@ -976,7 +1148,19 @@ cover on the light branch. Replace \(\mu\)
 by \(\mu+b_1\) in the formula, where \(b_1\)
 prices the cover after both the actual divisor
 and the projected valuation vector are fixed.
-Comparable unequal orders are also permitted.
+Comparable unequal orders are also permitted under the
+regrouping conditions of APC4. APC7–APC8 allow the same
+price condition with \(u=\mu_0+\beta\) for conditional
+exact ratio records, using the appropriate reconstruction
+threshold on the actual divisor. In the centered root route
+the ratio recorded is \(r\) and the threshold is \(D\ge
+X^{kL}\). Alternatively, APC9 permits the same price condition
+with \(u=\mu\) for the outside mixed-defect support and
+requires no divisor. Each route must have fixed numerical
+and counting margins along the retained outer budgets and
+uniform subpower catalogue errors at arbitrarily large
+inner heights.
+
 This weaker extraction still needs genuine
 three-cap arithmetic. The matching obstruction
 forces the full small-radius cover price with

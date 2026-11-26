@@ -114,17 +114,10 @@ uses the exact interior moments together with (8) to exclude
 additional \(2\)-adic sectors. Outside these exclusions the
 remaining target is the simultaneous interior and boundary system.
 
-The [prime-terminal proof](BINARY_EVEN_QUADRATIC_PRIME_TERMINAL_FOUR_WINDOW.md)
-and [prime-penultimate proof](BINARY_EVEN_QUADRATIC_PRIME_PENULTIMATE_FOUR_WINDOW.md)
-give the four-window whenever either of its last two indices
-is a prime at least five. The [prime-front reduction](BINARY_EVEN_QUADRATIC_PRIME_FRONT_REDUCTION.md)
-gives necessary residue conditions when a prime at least seven
-is in either of the other two positions, and the
-[negative rank-one lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_NEGATIVE_RANK_LIFT.md)
-and the
-[diagonal lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_DIAGONAL_LIFT.md)
-exclude two of its three leading residues. The remaining
-residue is governed by the position-specific finite-field tests.
+The [all-position prime theorem](BINARY_EVEN_QUADRATIC_PRIME_FRONT_REDUCTION.md#four-window-exclusion-at-any-prime-position)
+gives the four-window whenever one of its four indices is a
+prime at least five. The first and second positions each use
+a uniform arithmetic lift when the normalized cross coefficient has residue zero.
 The [composite prime-block transfer](BINARY_EVEN_QUADRATIC_COMPOSITE_PRIME_BLOCK_TRANSFER.md)
 reduces windows containing a large-prime multiple and its next
 index to a uniformly bounded set of leading residues.
@@ -144,7 +137,11 @@ restrict all equal-axis reciprocal-dyadic endpoints when
 both scaled axis residues differ from one. The
 [close-axis endpoint theorem](BINARY_EVEN_QUADRATIC_CLOSE_AXIS_ENDPOINT.md)
 adds exclusions when both scaled residues equal one
-at a terminal divisible by twice the dyadic scale.
+at a terminal divisible by twice the dyadic scale. The
+[final-even proof](BINARY_EVEN_QUADRATIC_CLOSE_AXIS_FINAL_EVEN.md)
+and the [second axis pairing](BINARY_EVEN_QUADRATIC_CLOSE_AXIS_SECOND_PAIRING.md)
+extend this branch using the original even moment together
+with the paired axis coefficients.
 
 ## 5. Scope
 

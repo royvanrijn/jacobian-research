@@ -10801,18 +10801,18 @@ radical unrestricted.
 
 A quantitative Subspace Theorem application gives an
 unbounded-height cardinality estimate for weighted powers
-with a fixed finite set of places. At finite height the
-shared-order sector has a simpler bound. After fixing the
-actual coefficient and third-divisor records, the original
-addition fixes a unit power residue of the primitive slope.
-Its denominator and numerator are too small for different
-slopes to coincide there when \(X^{2/k}<D\). Thus a fixed
-divisor height \(D\ge X^w\) allows any order threshold
-\(K(L)\to\infty\) or any fixed lower order with \(kw>2\).
-Primes dividing the order are allowed. The coefficient
-and divisor catalogue prices give the resulting strict
-sector margin. The large-order branch enumerates the
-small roots. [Shared-order sector (CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#an-adaptive-common-power-sector-with-a-third-letter-lock)
+with a fixed finite set of places. The finite-height shared-order sector uses a separate
+elementary count. After fixing the coefficient and third-divisor
+records the addition fixes a unit power residue of the primitive
+slope. Positive cross products in one class coincide as soon as
+\(D\ge X^{2/k}\). This gives height-subpower completion uniformly
+over all adaptive orders and primes dividing them. In particular a
+divisor of fixed height \(D\ge X^w\) allows every threshold
+\(K(L)\to\infty\) at late fixed budgets, and fixed orders with
+\(kw\ge2\) under exact height bounds. Large orders are counted by
+enumerating the small roots. The actual joint record price controls
+the sector saving.
+[Shared-order sector (CPW5)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#an-adaptive-common-power-sector-with-a-third-letter-lock)
 · [Unbounded-height statement (CPW3)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#uniform-upper-bounds-once-the-shift-part-is-larger)
 
 ## Primitive slopes and radical prices of power differences
@@ -10829,6 +10829,36 @@ completion at third-divisor height \(X^w\). This removes
 the growing-order requirement for the finite-height application
 with the same strict joint record price.
 [Primitive slope count (CPW7)](ABC_COPRIME_SHORT_POWER_WINDOWS.md#finite-height-slope-counts-for-unequal-orders)
+
+APC2 balances the original three-letter prime-budget count
+against reconstruction from a light projected coefficient record
+and the actual third divisor. At divisor price \(\mu<1/3\) its
+optimal split is \(t=(1-3\mu)/(1+2a)\), giving exponent
+\(b_0+[a+(1-a)\mu]/(1+2a)\). In particular \(a=1/2\) gives
+\(1/4+b_0+\mu/4\). APC7 lets a prescribed sparse prime pool
+also supply part of the third divisor. The same formula uses
+\(u=\mu_0+\beta\), where \(\mu_0\) is the outside divisor
+radical price and \(\beta\) is the actual conditional ratio
+dictionary price after fixing the divisor and projection.
+In centered fine grids the coefficient is recovered from the
+actual root ratio modulo the divisor when \(D\ge X^{kL}\).
+Thus the conditional record can instead describe the root ratio,
+including a sufficiently small relative-height cover.
+[Optimized coefficient pools (APC2)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#a-separating-pool-for-the-joint-coefficient)
+· [Conditional joint pools (APC7)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#conditional-separation-with-a-joint-divisor-pool)
+· [Root-ratio recovery (APC8)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#conditional-recovery-from-the-root-ratio)
+
+A different record keeps only the mixed fourth-power defect of
+\(UVW^2\). Its support detects residues modulo four on the
+two operands and odd valuations on the third letter. Fixing the
+defect gives a uniform bounded-height count on an elliptic curve
+with rational two-torsion. A sparse pool can price this joint
+defect at the same optimized exponent with its outside defect
+price in place of the divisor price. No numerical lock is needed.
+A saturating family must have mixed defect price at least
+\(1/3-o(1)\) in every orientation, but no cheap conditional
+defect record is forced on enough rows.
+[Mixed fourth-power defect records (APC9)](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md#a-mixed-fourth-power-defect-replaces-exact-power-records)
 
 An independent curve argument allows the centered signed
 coefficient ratio to move without recording its dictionary.
@@ -11071,6 +11101,41 @@ actual reduced shifts. This transfers both exceptional-set
 and high-fullness estimates to the pair when those shift
 records are affordable in the original family.
 [Cross-phase pair counts and auxiliary triples (CP1–CP5)](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md)
+
+## Joint displacements and one-auxiliary recovery
+
+For a fixed vector of exact changes to the three complete
+letters, each role gives its own fixed-shift dictionary.
+Pruning the translated chart and combining all three residue
+supports bounds the joint fibre below the two-letter count
+in a range of positive multiplicities. On full-scale genuine
+pairs, small primitive quotients can be discarded by the
+small-feature bound, so the remaining shifted projection
+prices are half their individual outside caps without a
+low-valuation restriction. The count prices the actual
+joint signed residue differences or an independent exact
+shift catalogue. At a deep three-lock chart the pairs
+with all three registers equal alone exclude the
+maximal-depth boundary throughout \(1/6<\alpha<2/9\),
+with no additive-compression assumption.
+[Displacement fibres and the deep same-register bound (JD1–JD4)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md)
+
+The determinant of the products of the two scaled operand
+pairs gives one ordinary primitive auxiliary triple for any
+two parity fields. It can recover the original rows through
+a quartic double cover, with only the shared parity kernel
+that vanished from the auxiliary support to be supplied.
+That record is cheap on generic full-scale pairs and in
+near-maximal fixed-target fibres. The original common
+absolute residue gives positive numerical height
+for the auxiliary even when the complete targets differ.
+In the same-field case the two square-phase auxiliaries
+also extend to moving and even targets with tall output
+targets at this original absolute lock. Their actual
+surviving prime orders identify when the strict
+powerful-triple estimates are applicable.
+[One-auxiliary determinant recovery (FP1–FP4)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md)
+· [Moving common-field transfer (CP6)](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md#the-common-field-transfer-for-moving-and-even-targets)
 
 ## The unrestricted small-budget obligation
 

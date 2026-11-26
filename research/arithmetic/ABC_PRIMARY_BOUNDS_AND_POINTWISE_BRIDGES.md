@@ -190,12 +190,13 @@ linear forms selected by the two exact powered letters.
 The number of places can grow. Root-choice and
 exponent-vector catalogues cost only an exponential in
 the number of primes, which is height-subpower.
-A cheap divisor of fixed positive numerical weight \(w\)
-on the third letter gives a simpler finite-height count.
-Fix the actual coefficient and divisor records and recover
-the primitive slope as soon as \(kw>2\). The count thereby
-allows any threshold \(K(L)\to\infty\), or a qualifying fixed
-lower order, and the divisor may contain primes dividing \(k\).
+An actual divisor \(D\) on the third letter gives a simpler
+finite-height count when \(D\ge X^{2/k}\). Fix the coefficient
+and divisor records and recover the primitive slope at
+height-subpower cost, uniformly over the adaptive orders.
+The condition holds at fixed positive divisor weight \(w\)
+for \(kw\ge2\) under the exact height bounds, and primes
+dividing \(k\) are allowed.
 The sector saving follows when the two records together
 cost less than one third by a fixed margin. The Subspace
 Theorem route above gives the separate unbounded-height

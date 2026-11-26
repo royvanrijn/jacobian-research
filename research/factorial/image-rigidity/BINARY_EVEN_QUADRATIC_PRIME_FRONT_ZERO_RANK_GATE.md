@@ -281,7 +281,7 @@ right side of (2) to the left. The two ranges contain
 | Second | \(7\le p<550\) | \(p=19:\ X+2\) |
 | First | \(7\le p<200\) | \(p=11:\ X+6;\quad p=37:\ X+9\) |
 
-The listed nonzero roots satisfy the necessary equations.
-Their lifting to characteristic-zero solutions is unresolved.
-The derivation of (1)–(2) holds for every prime \(p\ge7\).
-The residue \(1\) remains outside this argument.
+The listed nonzero roots satisfy the necessary equations,
+and the [first-digit lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_ZERO_LIFTS.md)
+excludes all three in characteristic zero. The derivation of
+(1)–(2) holds for every prime \(p\ge7\).

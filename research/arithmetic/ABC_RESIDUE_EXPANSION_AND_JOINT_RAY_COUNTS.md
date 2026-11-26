@@ -920,3 +920,273 @@ locks are compatible with maximal
 normalized word spread under the
 two stipulated original caps.
 [Prime number theorem at modulus one](https://academic.csuohio.edu/soprunov-ivan/wp-content/uploads/sites/93/2023/02/primes.pdf)
+
+
+### Two adaptive normalized lock roles without a common power grid
+
+**RX9.** Fix \(0<f_A<f_C<1/6\), a fixed numerical lower
+bound \(\nu>0\), and finitely many signed word
+patterns. At arbitrarily late fixed budgets there are
+genuine primitive complete-label occurrence matchings,
+with the original \(A,C\) caps, on which normalized
+word collisions are absent beyond formal rebalancing.
+This holds simultaneously on every full-divisor fibre
+of either of these roles with numerical weight at least
+\(\nu\). Each capped role is diffuse with consecutive
+degree slots and has a prescribed cheap full divisor.
+The remaining letter violates its original cap.
+Compared with the common-power construction (RX6),
+the proof uses the signed residue moment (RX7) and
+has no growing common order.
+
+#### Cartesian source
+
+Take a large integer \(m\) and set \(L=1/m\), \(n=X^L\).
+Use the \(J=2m-1\) original degree positions
+\[
+                         e=2m+1,\ldots,4m-1.
+\]
+Their mean scaled degree is three. Put
+\(a=1/3-f_A,\ c=1/3-f_C\), so \(a>c>0\).
+In each degree position choose four disjoint prime
+pools of logarithmic prime sizes in base \(n\)
+asymptotic to \(f_A/J,f_C/J,a/J,c/J\).
+Prescribe one fixed prime in each of the first two
+pools and form the full factors \(D_A^0,D_C^0\)
+from these primes raised to their slot exponents.
+The variable \(A\)-cofactor uses independent roots
+in the third pool of every slot. The variable
+\(C\)-cofactor uses those in the fourth pool.
+The actual values are \(A=D_A^0 A_0\),
+\(C=D_C^0 C_0\), and \(B=C-A\).
+
+At each fixed \(m\) let \(S\) be the sum of all
+slot exponents. For example, choose both prescribed
+fixed-prime multipliers in units of their target
+scale in \([1/2,e^{\tau/S}/2]\). Choose the
+\(C\)-cofactor multipliers in
+\([2e^{-\zeta_2/S},2e^{-\zeta_1/S}]\) with
+\(0<\tau<\zeta_1<\zeta_2<\log2\).
+This makes \(C\in(X/2,X]\) and
+\(\operatorname{rad}(C)\le n^{1/3}\).
+Choose the \(A\)-cofactor multipliers similarly with
+\(\log4<\zeta_1-\tau<\zeta_2<\log8\).
+Then \(A\in[X/8,X/4]\) and its radical cap holds.
+The prime number theorem gives all prime pools
+of sizes \(n^{\beta+o_X(1)}\) at their prescribed
+exponents \(\beta\). Pools with coinciding scales
+can be disjointly subdivided in their intervals.
+All heights are \(\asymp X\) and every row is
+primitive, since the two source alphabets are
+disjoint. For either original capped role the
+degree measure converges to
+\((1/3)\,\mathrm{Unif}[2,4]\).
+The degree exponents are consecutive. In particular
+a growing literal common order divides only
+\(o(1)\) of the raw mass of either role, since
+at most \(O(J/k+1)\) of the exponent slots are
+multiples of order \(k\). This concerns literal
+orders and makes no separate claim about arbitrary
+adaptive signed decompositions.
+
+Let \(N_A=n^{a+o_X(1)}\), \(N_C=n^{c+o_X(1)}\)
+be the cardinalities of the source dictionaries.
+Each Cartesian edge determines one genuine row.
+For any fixed \(B_*<2(a+c)\), the number of edges
+with \(\operatorname{rad}(B)\le n^{B_*}\) is
+\(o(N_A N_C)\), uniformly at sufficiently late
+fixed budgets. Indeed their effective original
+radical cap after pricing the two prescribed
+full supports at zero is \(n^{a+c+B_*}\).
+Their capped total raw radical is \(n^{O(1)}\).
+Apply the limiting one-third bound (EB4) on the
+actual original height shell, choosing the
+count allowance below the fixed gap from
+\((a+c+B_*)/3\) to \(a+c\).
+In particular \(B_*\) can be \(1/3\).
+
+#### Uniform adaptive lock fibre count
+
+Consider any full divisor \(M\) on the \(C\) role,
+with \(M\ge X^\nu\). Because the degree alphabets use
+disjoint prime pools, its choice fixes exactly a
+subset of the actual variable \(C\)-slots and a
+subset of the fixed \(D_C^0\)-slots. If its variable
+slots have raw mass \(g\), the catalogue for their
+prime values costs \(n^{g+o_X(1)}\). The number of
+slot subsets is fixed at the budget. At fixed \(M\)
+use the genuine unit record \(A_i/(C_i/M)\bmod M\).
+Its selected two integer operands have total
+outside radical cap \(a+c-g+o_X(1)\), excluding
+the prescribed supports of \(D_A^0,D_C^0\) and
+the chosen slot primes of \(M\). The modulus is
+polynomial-height and large enough for RX7.
+The argument on the \(A\) role uses the record
+\(C_i/(A_i/M)\bmod M\), the same sum cap, and the
+mass \(g\) of the variable \(A\)-slots fixed there.
+
+For a fixed pattern of nonzero weights
+\(v_1,\ldots,v_r\), \(r\ge2\), consider a congruence
+of the product of these normalized records to 1
+on \(r\) distinct original edges in the same
+fixed \(M\)-fibre. By RX7 on the \(2r\) signed
+integer operands, the number of candidates is
+\[
+                      O(n^{r(a+c-g)/2+\eta}X^\varepsilon).
+\]
+One can use a fixed arbitrary small \(\eta\)
+simultaneously in both roles and for the finite
+word pattern list. The fixed support and modulus
+may depend on the full record; this is uniform
+in their permitted ranges in RX7.
+
+Now independently sample each Cartesian edge
+at probability \(1/(N_A\log X)=n^{-a+o_X(1)}\).
+After summing over all lock records of mass \(g\),
+the expected number of sampled \(r\)-distinct
+congruences is
+\[
+          O\!\left(n^{\,g(1-r/2)+r(c-a)/2+\eta}
+                                X^{O(\varepsilon)+o_X(1)}\right).
+\]
+This tends to zero for \(r\ge2\): the first term
+is nonpositive and \(c-a<0\) is fixed. Choose the
+allowances after this gap and before taking the
+height limit. Joint fibres of both role locks
+are subsets of the individual fibres, so no
+extra enumeration is needed for them.
+
+To apply the result to a comparison of two
+ordered tuples using the same signed word, merge
+repeated labels and cancel all zero effective
+weights. If any labels remain the active length
+is at least two, since their weights sum to zero.
+There are finitely many such patterns. Hence
+the sampled matching may be taken with no such
+nontrivial collision at any full lock \(M\) in
+either role. The same statement holds at every
+greater depth \(M^\ell\) because equality there
+implies equality at \(M\). The alternative
+free numerator \(B\) agrees with the chosen
+one up to fixed sign at depth one, by the
+actual additive equation, so it cannot create
+higher-depth collisions for the same words.
+
+#### Complete matching and simultaneous root records
+
+The expected sample size is \(N_C/\log X\).
+Each \(C\)-value admits \(N_A\) candidate edges,
+and each \(A\)- or \(B\)-value admits at most \(N_C\):
+for a fixed \(B\), each \(C\) determines \(A\).
+Thus the expected number of label collisions is
+\(O(N_C/(\log X)^2)\). The expected number of
+edges with \(\operatorname{rad}(B)\le n^{B_*}\)
+is \(o(N_C/\log X)\). Choose a sample with
+the stated lower bound on size, negligible
+bad edges, and zero nontrivial normalized
+word collisions. Removing the bad edges and
+complete-label collisions yields the claimed
+matching of exponent \(c\).
+
+For each subset \(I\) of variable prime slots
+of the two capped roles with summed raw price \(t_I\),
+the conditional mean sample occupancy of a
+fixed slot record is at most
+\(n^{c-t_I+o_X(1)}\). A binomial upper-tail
+bound over the finitely many slot sets and
+polynomially many slot values makes the
+maximum occupancy \(n^{(c-t_I)_++o_X(1)}\)
+simultaneously, and deletions preserve this.
+If \(Y_I\) is that record on a uniformly
+chosen retained edge, then
+\[
+ H(Y_I)=\min(c,t_I)\log n+o_X(\log n),\qquad
+ H(\mathrm{row}\mid Y_I)=(c-t_I)_+\log n+o_X(\log n).
+\]
+Every further restriction to any such record
+within any adaptive full-lock fibre still
+has only formal normalized word collisions.
+In particular its signed word catalogue on
+distinct tuples has full exponent at every
+fixed order. Any purported forced compression
+from two-role caps, these record exponents,
+valence-zero complete labels, bounded diffuse
+degrees, and two adaptable full locks would
+contradict this construction. The original
+cap on the third operand \(B\) is essential.
+
+[Signed modular moment (RX7)](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md#signed-residue-words-and-diagonal-energy-on-the-cells)
+· [Weighted small-budget count (EB4–EB5)](ABC_EFFECTIVE_RADICAL_BUDGET.md)
+
+#### Uniform obstruction to close relative coefficients
+
+**RX10.** The same model rules out a small full relative coefficient
+window for every sufficiently large order, independently
+of adaptive order choices. Fix \(\xi>0\). On any subset of
+the residual slots of combined raw mass at least \(\xi\),
+and for every positive integer \(k\) sufficiently large
+in terms of \(\xi\), the minimal centered remainder obeys
+\[
+    \sum_e \operatorname{dist}(e,k\mathbb Z)
+                   \cdot(\text{selected raw mass at }e)
+          \ \gg_\xi\ L^{-1}\min(1,kL).
+                       \tag{NG1}
+\]
+The assertion is uniform in the subset. In fact each
+original degree has combined cap \(O(L)\), and the
+degrees between \(2/L\) and \(4/L\) with
+\(\operatorname{dist}(e,k\mathbb Z)<\delta k\) number at
+most \(O((\delta+1/k)/L)\) if \(kL\le8\). To obtain this
+bound there are \(O(1+1/(kL))\) relevant multiples of
+\(k\), each contributing \(O(1+\delta k)\) integers.
+With \(\delta\) sufficiently small in terms of \(\xi\)
+and then \(k\) sufficiently large, these exceptional
+degrees have combined cap below \(\xi/2\). For \(kL\ge8\)
+one has \(e\le k/2\) and the minimal remainder is \(e\)
+itself, proving (NG1) on the other range.
+
+Suppose a comparison uses supported representations
+\(A_i/C_i=Q_i z_i^{k_i}\) with both prime supports
+restricted to actual \(A_i C_i\), as in APC4.
+Strip the fixed actual chart records when taking the
+relative coefficient. At every residual prime unique
+to one of the two rows, the coefficient on that row
+has valuation in its original signed residue class
+modulo \(k_i\). Its magnitude is at least the centered
+remainder in (NG1), irrespective of the chosen
+representation. If each row has at least \(\xi\) raw
+mass on its remaining private primes,
+\[
+      \log_X H(Q_1/Q_2)
+                 \gg_\xi \min(1,k_1L)+\min(1,k_2L),
+\]
+where \(H\) is the rational height. This follows
+because the private contributions from the two rows
+are disjoint and half their absolute logarithmic
+sum is a lower bound for rational height.
+Thus no adaptive choice of the two sufficiently
+large orders produces a narrow relative coefficient
+of small normalized width on such pairs.
+
+In the model's simultaneous root-record bound,
+any fixed fibre with exponent at least \(c-g-o(1)\)
+after fixing total variable slot mass \(g<c\)
+has power-few pairs sharing an additional fixed
+positive raw mass outside the fixed slots.
+For a fixed reference row, select any subset of
+shared remaining slots of that mass. There are
+finitely many subsets at the fixed budget, and
+each puts the queried row in a further fixed
+record to which the same occupancy bound applies.
+The shared-cap comparison is uniform provided
+\(c-g\) has a fixed positive lower bound.
+Thus on any such exponent-full adaptive fibre
+there is a fixed positive private mass on almost
+all pairs: the remaining \(A,C\) mass is
+\(a+c-g\), bounded below independently of the
+outer budget. Both the low normalized word
+catalogue and the small supported relative
+coefficient extraction therefore fail in this
+two-cap model. None of these properties
+imposes a small cap on the third original
+letter \(B\).

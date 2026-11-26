@@ -15,22 +15,30 @@ put \(t=b/2\) and let bars denote residue. Necessarily
  v_p(k)=2/p,\qquad \overline{k^p/p^2}=-2,\qquad
  \bar c=\bar t^2,\quad \bar t\in\{0,1,-1\}.                 \tag{1}
 \]
-The other two positions of a prime in a four-window are
-excluded by the
-[prime-terminal proof](BINARY_EVEN_QUADRATIC_PRIME_TERMINAL_FOUR_WINDOW.md)
-and the
-[prime-penultimate proof](BINARY_EVEN_QUADRATIC_PRIME_PENULTIMATE_FOUR_WINDOW.md).
-The [negative rank-one lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_NEGATIVE_RANK_LIFT.md)
-excludes the residue \(\bar t=-1\) in both early-prime
-positions, and the
-[diagonal lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_DIAGONAL_LIFT.md)
-excludes \(\bar t=1\) for the same positions. The only
-possible residue is therefore \(\bar t=0\), for which the
-[zero-residue conditions](BINARY_EVEN_QUADRATIC_PRIME_FRONT_ZERO_RANK_GATE.md)
-give two position-specific finite-field systems. If the
-corresponding two polynomials are coprime over \(\mathbb F_p\),
-the four-window holds at that start. The surviving solutions
-of those systems still require lifting.
+## Four-window exclusion at any prime position
+
+**Corollary.** If at least one of \(j,j+1,j+2,j+3\) is a
+prime at least five, the corresponding four factorial moments
+of \(ax^2+bxy+cy^2+k\) with \(abck\ne0\) cannot all vanish.
+
+The [prime-terminal proof](BINARY_EVEN_QUADRATIC_PRIME_TERMINAL_FOUR_WINDOW.md)
+and [prime-penultimate proof](BINARY_EVEN_QUADRATIC_PRIME_PENULTIMATE_FOUR_WINDOW.md)
+cover the last two positions. For \(p\ge7\) in either of the
+first two positions, the [negative rank-one lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_NEGATIVE_RANK_LIFT.md)
+and [diagonal lift](BINARY_EVEN_QUADRATIC_PRIME_FRONT_DIAGONAL_LIFT.md)
+exclude \(\bar t=-1\) and \(\bar t=1\), respectively.
+The [first-position zero-residue lift](BINARY_EVEN_QUADRATIC_PRIME_FIRST_ZERO_RANK_LIFT.md)
+and [second-position zero-residue lift](BINARY_EVEN_QUADRATIC_PRIME_SECOND_ZERO_RANK_LIFT.md)
+exclude \(\bar t=0\) in their respective positions. If \(p=5\)
+is in the first or second position, \(7\) is in the third or
+fourth position, so the last-two-position results apply.
+
+The [zero-residue gcd criterion](BINARY_EVEN_QUADRATIC_PRIME_FRONT_ZERO_RANK_GATE.md)
+and the [first-digit exclusion at its three small exceptional residues](BINARY_EVEN_QUADRATIC_PRIME_FRONT_ZERO_LIFTS.md)
+give shorter exact replays in their stated finite ranges. In
+particular, for \(p\ge7\) coprimality of the two polynomials
+in the relevant zero-residue system over \(\mathbb F_p\)
+already excludes a four-zero block at that start.
 
 The assertions can be applied over an algebraic \(p\)-adic
 closure. To use them in testing existence over any

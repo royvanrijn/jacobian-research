@@ -1485,6 +1485,20 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A projective ratio of the two actual shifts has a subpower mixed-kernel fibre | Internal result | proved | [Source](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md) |
 | Equal-target common-field pairs yield two auxiliary primitive abc triples | Internal result | proved | [Source](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md) |
 | Diffuse two-cap matchings retain maximal word spread under adaptive locks | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| Three actual translated dictionaries constrain an exact displacement fibre | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Typical primitive quotients give half-price shifted projections on all roles | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Joint signed residues and a lattice bound price exact displacement catalogues | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| Three coincident registers exclude a maximal-depth balanced sector | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| The scaled product determinant gives an ordinary primitive abc triple | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| One ordinary auxiliary plus the invisible parity mass recovers both primitive rows | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Two genuine auxiliary comparisons give field-free pair recovery | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| One ordinary three-term monomial identity uses both cross shifts | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Common-field auxiliary triples stay tall at moving and even targets | Internal result | proved | [Source](ABC_CROSS_PHASE_AND_AUXILIARY_TRIPLES.md) |
+| Two adaptive target locks can retain full word spread without a common power grid | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| The same two-cap matching also resists growing adaptive supported orders | Internal result | proved | [Source](ABC_RESIDUE_EXPANSION_AND_JOINT_RAY_COUNTS.md) |
+| A prescribed joint pool can price both coefficients and the third divisor | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| Fine centered roots and the third divisor recover the coefficient ratio | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
+| A mixed Euclidean defect can be priced by sparse prime pools | Internal result | proved | [Source](ABC_ADAPTIVE_POWER_COEFFICIENT_PRICES.md) |
 
 **Computed obligations:** 110 unresolved; 19 resolved within their exact scope.
 

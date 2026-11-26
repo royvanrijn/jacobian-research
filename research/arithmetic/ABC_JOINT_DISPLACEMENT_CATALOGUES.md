@@ -220,11 +220,13 @@ positive gcd \(g\). For all nonzero coordinates
 the absolute values form an actual primitive
 additive triple. If its height has a fixed
 positive numerical floor and its outside
-radical cap is \(n^\beta\), EB4 yields
-a direction catalogue of exponent
-\(\beta/3+\eta\). Fix the height bins
-first, as in NGT3, to obtain the height-first
-count. For a prescribed direction \(v\),
+radical cap is \(n^\beta\), fix the actual
+powers on the prescribed pool at subpower
+cost. MCB2 on the other prime powers costs
+at most half the two cheapest direction
+masses, hence yields a catalogue of
+exponent \(\beta/3+\eta\). The fixed
+positive height floor suffices for MCB2. For a prescribed direction \(v\),
 the scale is a multiple of
 \[
              g_0(v)=\prod_T D_T/\gcd(D_T,v_T).
@@ -355,10 +357,9 @@ Thus \(q_{\mathrm{cond}}\le2u+o(1)\)
 already gives a strict saving when
 \(D\ge X\) and \(u>0\), with the
 actual chart and regularization allowances
-inside the gap \(u/2\). It is not enough
-to have small difference lists separately
-in each cell, since those lists may
-vary with the cell. This is a precise
-remaining catalogue obligation.
+inside the gap \(u/2\). The estimate requires a common catalogue across
+cells, since separate lists may vary with the
+cell. Extracting that common catalogue remains
+open.
 [Regular genuine residue cells (RB4)](ABC_BALANCED_DICTIONARY_RESIDUE_CELLS.md#the-actual-residue-cell-sizes)
 · [Tight locks at fixed shifts (NJ5)](ABC_NORMALIZED_JOINT_MODULAR_MOMENTS.md#tight-full-locks-and-the-third-register)

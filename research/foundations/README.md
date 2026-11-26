@@ -93,6 +93,7 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Computable uniform finite window for full-width reconstruction | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
 | Two coprime unmarked minors on an exceptional conductor-18 radial line | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
 | All-parameter moments for odd quartic and even radial terms at conductor 18 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| Three-pole conductor-18 reconstruction on coordinate slices and at prime 331 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
 | Full-width four-branch families with zero primitive p-rank and positive uniform prime density | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
 | Split cubic discriminant cofactors are norms from the varying field Q(sqrt p) | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPLIT_COFACTOR_NORM_AND_TRACE_COUNT.md) |
 | Uniform split one-failure trace lattice count with a moving auxiliary modulus | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPLIT_COFACTOR_NORM_AND_TRACE_COUNT.md) |

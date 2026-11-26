@@ -661,7 +661,10 @@ two-pair tests pass, every surviving common factor is a single
 simple irreducible quadratic, uniformly on a compact positive
 strength interval for that fixed core. Independent clock velocities
 also give uniform exclusion for the indicated moment-balanced
-families.
+families. The [Sylvester normal test](MULTIVARIATE_SYLVESTER_CONTACT_NORMAL_POLYTOPE.md)
+extends the higher-degree exclusion to repeated reference roots,
+including factors that retain only part of a reference block.
+It gives a finite rank and interval condition at each reference.
 
 The [signed core replacement theorem](MULTIVARIATE_SIGNED_CORE_REPLACEMENT_CONTACTS.md)
 extends the response equations to varying cores by accounting for
@@ -2027,9 +2030,14 @@ coprimality for an arbitrary core and preserves exact mirroring
 when the core is mirrored. The
 [two independent unit-gap heights](MULTIVARIATE_TWO_HEIGHT_FACTOR_SPECIALIZATION.md)
 give a zero-dimensional common-factor locus under the exact
-translation comparison. For comparable cores the test is automatic
-if at least one of the two multiplicities is odd, and this family
-has a finite decision in every degree with unrestricted such counts.
+translation comparison. For comparable cores the test is
+automatic for every multiplicity, and for mixed cores it is
+automatic when both multiplicities are even. Both families
+admit an all-degree finite decision with independently unbounded
+heights and a core of prescribed bounded height. The
+[opposite-orientation reduction](MULTIVARIATE_OPPOSITE_HEIGHT_FACTOR_SPECIALIZATION.md)
+instead uses a finite exact separation test on limiting
+polynomial values for each fixed multiplicity pair.
 
 For any fixed terminal \(N\), add an integer \(T\) to both entries
 of every unequal row. If \(D\) is the sum of the unsigned row gaps,
