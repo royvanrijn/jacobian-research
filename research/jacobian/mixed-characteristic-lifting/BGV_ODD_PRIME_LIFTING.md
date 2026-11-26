@@ -8,7 +8,9 @@ of its polynomial Witt reductions are unbounded.
 
 For the prime-three seed, the minimum polynomial degree of a
 determinant-one lift is \(81\) both modulo \(9\) and modulo \(27\).
-For any prime, polynomial
+Modulo \(81\), the minimum within the Frobenius shifts of the radial
+first lift is \(109\). The degree-\(109\) witness gives the same upper
+bound over all first lifts. For any prime, polynomial
 lifts of a fixed nonautomorphic residue map modulo every \(p^n\), with
 one common degree cap, would already give a characteristic-zero
 counterexample.
@@ -356,9 +358,9 @@ first lift. Other modulus-\(9\) lifts can have different linear
 extension equations, and the unrestricted modulus-\(81\) minimum
 remains open.
 
-The [certificate checker](verify_bgv_first_lift_degree.py) replays
-both monomial-cap tests and both polynomial determinant identities
-with Python 3.12 and the standard library. Run it
+The [certificate checker](verify_bgv_first_lift_degree.py) checks
+the monomial-annihilation conditions and all the retained polynomial
+determinants with Python 3.12 and the standard library. Run it
 from the repository root with
 
     python3 research/jacobian/mixed-characteristic-lifting/verify_bgv_first_lift_degree.py
@@ -366,17 +368,18 @@ from the repository root with
 The two sharp bounds concern moduli \(9\) and \(27\).
 Growth of the minimum degrees across the whole tower remains open.
 
-### The full Frobenius orbit of the radial first lift
+### Sharp degree 109 for the Frobenius shifts of the radial first lift
 
-**Proposition BGVFrobeniusFirstLiftObstruction.** At \(p=3\) and
-maximum coordinate degree \(81\), no determinant-one lift modulo
-\(81\) reduces modulo \(9\) to a pair of the form
+**Proposition BGVFrobeniusFirstLiftObstruction.** At \(p=3\), the
+minimum of the larger coordinate degree of a determinant-one lift
+modulo \(81\) is \(109\) among lifts that reduce modulo \(9\) to a pair
+of the form
 \[
  (P+3A,Q+3D),
- \qquad A,D\in\mathbb F_3[x^3,y^3]_{\le81},
+ \qquad A,D\in\mathbb F_3[x^3,y^3],
 \]
-where \(P,Q\) are the radial first lift above. There are \(3^{812}\)
-distinct pairs in this family, including the radial lift.
+where \(P,Q\) are the radial first lift above. The minimum is attained
+with \(A=D=0\).
 
 Use integral coefficient representatives of \(A,D\) with the same
 Frobenius support. Their partial derivatives are multiples of \(3\).
@@ -391,18 +394,28 @@ determinant equation over \(\mathbb Z/9\) is
  +\frac{\operatorname{Jac}(A,Q)}3
  +\frac{\operatorname{Jac}(P,D)}3=0 .
 \]
-All quantities are integral. The same twenty-weight dual used for the
-fixed branch kills the last two terms as well. The checker verifies
-this by evaluating the two divided Jacobian columns at each of the
-\(406\) monomials \(x^{3i}y^{3j}\), \(i+j\le27\), in each coordinate.
-The first term still has value \(3\bmod9\). This contradicts the
-equation over \(\mathbb Z/9\). The two polynomials \(A,D\) have \(406\)
-independent coefficients each over \(\mathbb F_3\); multiplying by \(3\)
-modulo \(9\) gives \(3^{812}\) distinct first lifts.
+All quantities are integral. At cap \(108\), the fifteen-weight
+functional **FROBENIUS_CAP108_DUAL** in the certificate checker
+annihilates the correction columns and has value \(3\bmod9\) on the
+first term. The checker tests all \(11990\) ordinary monomial columns
+from \(U,V\) and all \(1406\) divided columns from \(A,D\). The latter
+are indexed by \(x^{3i}y^{3j}\) with \(i+j\le36\) in each coordinate.
+This excludes every lift of degree at most \(108\) in the family.
 
-A first lift whose gradients differ from the radial gradients modulo
-\(3\) after dividing its difference by \(3\) lies outside this family.
-Those branches remain subject to the all-branch criterion below.
+At degree \(109\), the checker retains two correction polynomials
+with \(54\) and \(39\) terms to add with multiplier \(9\) to \(P,Q\).
+It checks the literal degree pair \((109,105)\), exact reduction to
+the radial first lift modulo \(9\), and the entire polynomial
+Jacobian determinant modulo \(81\). The upper and lower bounds give
+the stated minimum. The earlier twenty-weight certificate also
+annihilates the \(812\) divided columns at cap \(81\), where the
+Frobenius family has \(3^{812}\) first lifts.
+
+A first lift with different gradients after dividing its difference
+from \((P,Q)\) by \(3\) and reducing modulo \(3\) lies outside this
+family. In particular the unrestricted minimum modulo \(81\) lies
+in \([81,109]\). The degree-\(81\) test for the remaining branches is
+the all-branch criterion below.
 
 ### All degree-\(81\) branches modulo \(81\)
 

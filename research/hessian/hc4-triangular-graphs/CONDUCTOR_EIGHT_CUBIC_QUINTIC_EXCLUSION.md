@@ -7,8 +7,8 @@ Then the generic order \(K[P,Q]\subset K[x]\), \(K=\mathbb C(y)\), has
 pole semigroup \(\langle4,5,6\rangle\), and its reduced one-place
 characteristic sequence is \((6,4,5)\). Thus the remaining embedding
 has generators of source degrees six and four and an approximate
-root of degree five. Whether this remaining embedding admits an
-actual Keller map is open.
+root of degree five. This last type is treated in the separate
+[global octic conductor proof](GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md).
 
 The proof first reduces the singular rational orders directly,
 using the one-place characteristic sequence. It then excludes the
@@ -275,5 +275,5 @@ nonzero multiples of the fixed canonical actions, a contradiction.
 
 This excludes the entire cubic–quintic branch, including
 contacts, coincident collision values and source-fibre degree
-drops. The sequence \((6,4,5)\) is the only remaining possibility
-in global conductor degree eight.
+drops. In global conductor degree eight it suffices to exclude
+sequence \((6,4,5)\), as in the linked global proof.

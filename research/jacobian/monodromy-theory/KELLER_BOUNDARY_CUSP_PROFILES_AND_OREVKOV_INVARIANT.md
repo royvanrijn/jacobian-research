@@ -189,6 +189,25 @@ quotient is four, and the restriction to \(x=0\) has orders
 three and two in \(y^2\). This local example leaves the global
 polynomial source question open.
 
+This four-sheet germ is unique up to analytic changes of source
+and target. The \((2,3)\) cusp has a unique analytic type: in a
+normalization parameter with first coordinate \(t^2\), subtract
+the even part of the second coordinate and divide by its
+nonzero leading unit in \(t^2\). Its complement group has the
+meridional presentation \(\langle s,t:sts=tst\rangle\).
+One obtains it by the plane-curve van Kampen presentation
+projecting \(v^2=u^3\) onto \(u\): a circuit about zero is
+three half twists of the two roots, and the two meridians are
+identified with their images under that braid. In a four-sheet
+local cover both generators go to 3-cycles and their subgroup
+is transitive. After naming \(s=(1\,2\,3)\), the cycle for \(t\)
+must involve sheet four. Conjugation by \(\langle s\rangle\)
+leaves two possibilities, represented by \((1\,2\,4)\) and
+\((1\,4\,2)\). Only the latter satisfies the braid relation.
+Thus the connected unbranched cover of the cusp complement is
+unique in this degree and index. Normal extension determines
+its finite analytic germ.
+
 ## Consequences in generic sheet degree six
 
 **Theorem SixSheetFiniteCuspProfiles.** A six-sheet plane Keller

@@ -101,11 +101,66 @@ SECOND_DIGIT_Q = {
 }
 
 
+# Exact certificates at modulus 81. The cap-108 functional tests all
+# later digits and all capped Frobenius shifts of the first lift.
+FROBENIUS_CAP108_DUAL = {
+    (76, 18): 3, (78, 19): 3, (87, 21): 3, (91, 23): 6,
+    (93, 24): 6, (94, 27): 3, (96, 28): 3, (97, 26): 3,
+    (99, 27): 3, (103, 24): 3, (103, 29): 6, (109, 27): 3,
+    (114, 27): 1, (118, 29): 2, (145, 35): 2,
+}
+
+# These digits are multiplied by 9 and added to the radial first lift.
+DEGREE109_WITNESS_P = {
+    (1, 0): 7, (5, 2): 6, (7, 3): 3, (8, 1): 1,
+    (10, 2): 2, (11, 0): 7, (13, 1): 6, (14, 4): 1,
+    (16, 0): 3, (16, 5): 3, (17, 3): 8, (20, 2): 7,
+    (22, 3): 3, (23, 1): 3, (23, 6): 1, (25, 2): 1,
+    (25, 7): 3, (26, 0): 1, (26, 5): 5, (28, 1): 6,
+    (31, 5): 5, (32, 3): 1, (32, 8): 4, (34, 4): 3,
+    (35, 2): 3, (35, 7): 4, (37, 8): 1, (38, 1): 3,
+    (38, 6): 6, (39, 9): 2, (41, 10): 1, (43, 6): 6,
+    (43, 11): 3, (44, 4): 6, (44, 9): 4, (46, 0): 6,
+    (46, 10): 6, (47, 8): 6, (49, 9): 6, (50, 7): 3,
+    (50, 12): 7, (52, 3): 6, (52, 13): 3, (53, 11): 6,
+    (55, 12): 3, (56, 10): 6, (59, 14): 6, (61, 15): 3,
+    (62, 13): 3, (64, 9): 3, (68, 16): 6, (70, 12): 3,
+    (82, 18): 6, (88, 21): 6,
+}
+
+DEGREE109_WITNESS_Q = {
+    (0, 1): 2, (2, 2): 2, (7, 2): 1, (8, 0): 6,
+    (10, 1): 8, (11, 4): 1, (12, 2): 8, (13, 0): 4,
+    (16, 4): 5, (17, 2): 5, (18, 5): 2, (19, 3): 3,
+    (20, 1): 2, (23, 5): 3, (26, 4): 6, (28, 5): 6,
+    (29, 8): 7, (32, 2): 2, (32, 7): 8, (35, 1): 8,
+    (38, 5): 3, (38, 10): 1, (41, 4): 4, (44, 8): 5,
+    (47, 7): 8, (50, 1): 6, (53, 5): 3, (53, 10): 2,
+    (56, 14): 5, (59, 8): 6, (59, 13): 7, (62, 7): 6,
+    (65, 11): 3, (65, 16): 8, (71, 14): 3, (77, 17): 6,
+    (80, 16): 6, (83, 20): 3, (86, 19): 3,
+}
+
+
 def evaluate(polynomial, weights, modulus):
     return sum(
         weight * polynomial.get(exponent, 0)
         for exponent, weight in weights.items()
     ) % modulus
+
+
+def check_frobenius_obstruction(lift_p, lift_q, error, cap, weights):
+    assert evaluate(error, weights, 9) == 3
+    for i in range(cap + 1):
+        for j in range(cap + 1 - i):
+            monomial = {(i, j): 1}
+            left = jac(monomial, lift_q)
+            right = jac(lift_p, monomial)
+            assert evaluate(left, weights, 9) == 0
+            assert evaluate(right, weights, 9) == 0
+            if i % 3 == j % 3 == 0:
+                assert evaluate(quotient(left, 3), weights, 9) == 0
+                assert evaluate(quotient(right, 3), weights, 9) == 0
 
 
 def main():
@@ -142,26 +197,21 @@ def main():
     assert {(i, j): c for (i, j), c in lift_q_27.items() if i == 0} == {(0, 1): 1}
 
     error_81 = mod(quotient(sub(jac(lift_p, lift_q), ONE), 9), 9)
-    assert evaluate(error_81, RADIAL_BRANCH_CERTIFICATE, 9) == 3
-    frobenius_monomials = 0
-    for i in range(82):
-        for j in range(82 - i):
-            monomial = {(i, j): 1}
-            left = jac(monomial, lift_q)
-            right = jac(lift_p, monomial)
-            assert evaluate(left, RADIAL_BRANCH_CERTIFICATE, 9) == 0
-            assert evaluate(right, RADIAL_BRANCH_CERTIFICATE, 9) == 0
-            if i % 3 == j % 3 == 0:
-                frobenius_monomials += 1
-                assert evaluate(quotient(left, 3), RADIAL_BRANCH_CERTIFICATE, 9) == 0
-                assert evaluate(quotient(right, 3), RADIAL_BRANCH_CERTIFICATE, 9) == 0
-    assert frobenius_monomials == 406
+    check_frobenius_obstruction(lift_p, lift_q, error_81, 81, RADIAL_BRANCH_CERTIFICATE)
+    check_frobenius_obstruction(lift_p, lift_q, error_81, 108, FROBENIUS_CAP108_DUAL)
+
+    lift_p_81 = add(lift_p, scale(DEGREE109_WITNESS_P, 9))
+    lift_q_81 = add(lift_q, scale(DEGREE109_WITNESS_Q, 9))
+    assert mod(lift_p_81, 9) == lift_p and mod(lift_q_81, 9) == lift_q
+    assert mod(jac(lift_p_81, lift_q_81), 81) == ONE
+    assert (degree(lift_p_81), degree(lift_q_81)) == (109, 105)
 
     print("Mod 9: cap 80 obstructed on all 6642 correction monomials.")
     print("Mod 9: witness degrees (51, 81), reduction and determinant verified.")
     print("Mod 27: witness degrees (62, 81), reduction and determinant verified.")
     print("Mod 81: radial and all 3^812 Frobenius-shifted mod-9 choices obstructed at cap 81.")
-    print("The dual kills 6806 regular and 812 divided derivative columns over Z/9.")
+    print("Mod 81: cap 108 fails for all Frobenius shifts (11990 regular and 1406 divided columns).")
+    print("Mod 81: witness degrees (109, 105), radial first lift and determinant verified.")
 
 
 if __name__ == "__main__":

@@ -13,10 +13,9 @@ The same hypothesis can be made over an algebraic closure of \(K\)
 and after an affine change of \(x\) there. Then this Keller map is
 impossible. This excludes the hyperelliptic branch of global
 conductor degree eight, including changes of ambient embedding
-and possible drops in the specialized conductor degree. Equivalently,
-an open degree-eight case must have generic order with least positive
-source degree at least three, even after algebraic extension of the
-parameter field.
+and possible drops in the specialized conductor degree. The
+[global octic exclusion](GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md)
+covers the other reduced characteristic sequences as well.
 
 ## 1. The centre and the four reflected pairs
 

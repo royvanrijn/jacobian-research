@@ -293,3 +293,99 @@ gives a saving on this profile, even with trivial
 kernels on \(U,V\). This does not assert that the
 profile is realized by primitive triples, or rule out
 a different use of the conic and the third radical cap.
+
+## A small squarefree kernel suffices for abc finiteness
+
+Fix any \(\eta>0\). The full \(abc\) conjecture is equivalent
+to the following restriction: for every fixed \(0<\mu<1\)
+there are only finitely many positive triples
+\[
+  x^2+D y^2=z^2,\qquad
+  \gcd(x^2,Dy^2,z^2)=1,\qquad
+  D\ \text{squarefree},\quad D\le (z^2)^\eta,\qquad
+  \operatorname{rad}(Dxyz)<(z^2)^\mu.
+  \tag{K2}
+\]
+The same fixed \(\eta\) works for all \(\mu\). This is a
+finiteness reduction with a changed radical threshold.
+
+To see the quantitative transfer, take a positive primitive
+triple \(a+b=c\), put \(R=\operatorname{rad}(abc)\), and set
+\[
+ g_0=\gcd(a-b,c)\in\{1,2\},\quad s=(a-b)/g_0,\quad
+ t=c/g_0,\quad E=t^2-s^2=4ab/g_0^2 .
+\]
+Primitivity gives the asserted gcd and \(\gcd(s,t)=1\).
+For a fixed integer \(k\ge1\), write
+\((s+\sqrt{-E})^k=P+Q\sqrt{-E}\) with \(P,Q\in\mathbb Z\).
+The norm and the difference of the two conjugate powers give
+\[
+       P^2+EQ^2=t^{2k},\qquad
+       |P|\le t^k,\qquad |Q|\le kt^{k-1}.
+\]
+For the last inequality, divide the difference of the two
+kth powers by the difference of their bases, then bound
+each of the \(k\) summands using \(|s\pm\sqrt{-E}|=t\).
+After setting \(t=1\), the expressions \(P,Q\) are nonzero
+polynomials in \(s\), with respective values \(1,k\) at
+\(s=1\). Homogeneity shows that \(PQ=0\) occurs at finitely
+many ratios \(s/t\) for fixed \(k\). Each ratio recovers the
+single primitive ordered triple from \(a/c=(1+s/t)/2\).
+
+The even binomial terms give
+\(P\equiv2^{k-1}s^k\bmod t\), since \(-E\equiv s^2\bmod t\).
+Hence \(g=\gcd(P,t^k)\le2^{k(k-1)}\), using
+\(\gcd(P,t^k)\mid\gcd(P,t)^k\).
+When \(PQ\ne0\), divide the norm relation by \(g^2\).
+Its two square letters have coprime roots \(x=|P|/g\) and
+\(z=t^k/g\). The other letter is a positive integer with
+squarefree kernel \(D=\operatorname{sf}_2(E)=\operatorname{sf}_2(ab)\),
+since multiplication by the rational square \(Q^2/g^2\)
+preserves valuation parity. This yields the primitive triple
+in (K2), with \(C=z^2\) satisfying
+\[
+  C\asymp_k c^{2k},\qquad D\le R,\qquad
+  \operatorname{rad}(Dxyz)\le R|P Q|
+                      \ll_k R c^{2k-1}.
+\]
+For the radical bound, primes in \(tE\) already belong to
+\(abc\), including 2, and division by \(g^2\) adds no prime
+to the three integer letters.
+
+If \(abc\) fails, choose \(0<\lambda<1\) and an unbounded
+sequence with \(R<c^\lambda\). Fix \(k\) with \(1/(2k)<\eta\).
+The images have unbounded \(C\) and \(D\le C^\eta\) for all
+sufficiently large \(c\). Their radicals are
+\(O_k(C^{1-(1-\lambda)/(2k)})\). Any fixed
+\(\mu\) strictly between \(1-(1-\lambda)/(2k)\) and \(1\)
+therefore gives infinitely many exceptions to (K2).
+The other implication is restriction to the triples in (K2).
+Ellenberg's congruence reduction also uses a height
+amplification built from \((a-b)/c\). The norm power here
+keeps the third letter in the initial squareclass of \(ab\)
+throughout the amplification.
+[Ellenberg, Lemma 4 and Theorem 3](https://people.math.wisc.edu/~ellenberg/CongruenceABC.pdf).
+
+The restriction has an exact binary sextic form. Take coprime
+positive integers \(u,v\) with \(u^2>Dv^2\) and put
+\[
+  J=u^2-Dv^2,\qquad K=2uv,\qquad S=u^2+Dv^2,\qquad
+  b=\gcd(J,K,S).
+\]
+Then \((x,y,z)=(J,K,S)/b\) gives precisely the primitive
+positive conic points. The inverse parameter is
+\([u:v]=[z+x:y]\). At an odd prime dividing \(b\), the
+relations and \(\gcd(u,v)=1\) force the prime to divide \(u,D\)
+and be prime to \(v\). Its valuation on \(S\) is one because
+\(D\) is squarefree. Thus \(b\) is supported on the primes
+of \(2D\). The prime 2 always appears in the primitive
+additive triple, so every prime removed by division by \(b\)
+still lies in \(\operatorname{rad}(Dxyz)\). In particular
+\[
+ \operatorname{rad}(Dxyz)
+   =\operatorname{rad}\bigl(2Duv(u^2-Dv^2)(u^2+Dv^2)\bigr),
+ \qquad z=S/b .
+\]
+The remaining finiteness estimate can be posed directly
+for those sextic values, with the exact moving-kernel
+constraint \(D\le(S/b)^{2\eta}\) and threshold \((S/b)^{2\mu}\).

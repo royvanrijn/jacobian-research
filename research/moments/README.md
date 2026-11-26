@@ -226,13 +226,13 @@ Scope limits:
 
 Tracked obligations (computed states):
 
-- **mathematical / open:** [General safety-to-purity/original-vacuum primitivity.](README.md) — MOMENTS-SAFETY-PURITY
+- **mathematical / stale:** [General safety-to-purity/original-vacuum primitivity.](README.md) — MOMENTS-SAFETY-PURITY
 - **mathematical / open:** [Constant quadratic fibre over two ordinary bases.](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) — MOMENTS-TWO-BASE-SAFETY
 - **mathematical / open:** [Determine whether the first sixteen moments force purity for every complex ternary polynomial of degree at most three. The exceptional orbit has exact local cutoff sixteen. For each residual component of the actual first-sixteen ideal, seek a later cutting moment or a generic-point purity certificate using computable finite recognition.](vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md) — GAP-TERNARY-PURE-PREFIX
 - **mathematical / open:** [For every actual smooth-cubic even-BD face whose simple anti-Prym has full geometric End0=Q(zeta5), is the selected Hasse coefficient nonzero at infinitely many good absolute-degree-one primes p=1 mod 10 after a fixed extension? Primitive phase safety has a separate proof.](../foundations/extended-geometry/EVEN_QUINTIC_REPEATED_CUBIC_AND_SIXFOLD_REDUCTION.md) — GAP-EVEN-BD-SIMPLE-E5-SELECTED-HASSE-FREQUENCY
 - **mathematical / open:** [Decide if any balanced Gaussian partition beats the regular simplex at positive correlation. The fixed-partition low-correlation result and finite cubic search do not establish the universal inequality.](../plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md) — GAP-PIS-BALANCED-POSITIVE-CORRELATION
 - **mathematical / open:** [Is the exact tetrahedral first Hermite mass a global upper bound for balanced Gaussian four-cell partitions? The compact affine reduction includes rank-deficient Gram matrices. The known local maximum leaves the rest of that domain open.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE
 - **mathematical / open:** [Can a pure winding-one septic with a quadruple leading root and varying invariant lie in the exceptional coefficient loci left by the Lefschetz, exact moment, and Cartier residue exclusions?](../foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_GENERIC_EXCLUSION.md) — GAP-HOPF-MIXED-CUBIC-SEPTIC-UNIT-CENTER
-- **mathematical / open:** [Prove the sufficient canonical Wick-power detection lemma for a phase with original unit period 1−t.](../BREAKTHROUGH_TARGET_ASSESSMENT.md) — GAP-GAUSSIAN-CANONICAL-WICK-LINEAR-VACUUM-DETECTION
+- **mathematical / stale:** [Prove the sufficient canonical Wick-power detection lemma for a phase with original unit period 1−t.](../BREAKTHROUGH_TARGET_ASSESSMENT.md) — GAP-GAUSSIAN-CANONICAL-WICK-LINEAR-VACUUM-DETECTION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -246,3 +246,167 @@ Taking \(A=B=C=N\) in this argument also gives the earlier
 \(N^{29/9+\varepsilon}\) estimate and the corresponding
 \(3+(4/9)(k-3/2)\) upper exponent for the minimum moment on
 \(3/2\le k\le2\).
+
+## Reflection and the unrestricted degree-36 count
+
+Write \(h(d)=|\operatorname{Cl}(\mathbb Q(\sqrt d))[3]|\) for a
+signed squarefree \(d\), and put \(h(1)=1\). For \(\theta\ge0\)
+consider the signed second-moment estimate
+\[
+ \sum_{\substack{d\ {\rm squarefree}\\0<\pm d\le Z}}
+       h(d)^2\ll_\varepsilon Z^{1+\theta+\varepsilon}.
+ \tag{CM3}
+\]
+The unrestricted degree-36 field count of MP7, with either
+edge sign allowed and neighboring kernels allowed to be smaller
+than the common kernel, has bound \(O_\varepsilon
+(Y^{(1+\theta)/18+\varepsilon})\) if and only if (CM3) holds.
+The mixed-sign subfamily with the two neighboring kernels
+equal to \(1,3\) in either order already suffices for the
+reverse implication.
+
+For the forward transfer from the moment to fields, put
+\(x\asymp A,\ y\asymp B,\ z\asymp C\) and \(P=ABC\).
+The kernels are positive, squarefree and pairwise coprime.
+Each signed product of two kernels of size \(O(AB)\) has
+divisor-many ordered representations. Thus the sum of
+\(h(\epsilon_1 xy)^2\) over the pairs \((x,y)\) is
+\(\ll_\varepsilon (AB)^{1+\theta+\varepsilon}\), and the analogous
+sum for \((x,z)\) is \(\ll_\varepsilon(AC)^{1+\theta+\varepsilon}\).
+Apply Cauchy–Schwarz over triples, including the trivial third
+coordinate multiplicities. The two-edge product sum is
+\[
+ \ll_\varepsilon P^{1+\varepsilon}
+                  \bigl((AB)(AC)\bigr)^{\theta/2}
+ \le P^{1+\theta+\varepsilon}.
+\]
+The cubic-field correspondence bounds the number of ordered
+pairs of cubic fields by this product sum. In the regular
+\(S_3\times S_3\) action of MP7, every odd prime of \(xyz\)
+has inertia of order two and discriminant exponent \(18\).
+This gives \(|\operatorname{Disc}|\asymp (xyz)^{18}\), since the
+factor at 2 is bounded in fixed degree and \(xyz\) is squarefree.
+Sum over dyadic boxes with \(P\ll Y^{1/18}\).
+
+For the reverse transfer take real squarefree \(d>1\) and
+its Scholz partner \(-\operatorname{sf}(3d)\), where
+\(\operatorname{sf}\) denotes positive squarefree part.
+Scholz reflection gives
+\(h(d)\le h(-\operatorname{sf}(3d))\le3h(d)\).
+The two quadratic radicands occur in
+the required two-edge family with common \(x\) and signs \(+,-\):
+\[
+ (x,y,z)=
+ \begin{cases}
+ (d,1,3) & 3\nmid d,\\
+ (d/3,3,1) & 3\mid d .
+ \end{cases}
+\]
+These signs occur in the mixed orientations of MP4: the
+positive edge joins a summand to the target, and the negative
+edge joins the two summands. The third edge has signed
+radicand \(+3\). The two quadratic characters in the chosen
+pair are distinct and nontrivial except for the excluded
+case \(d=1\), and hence independent. For each edge of
+radicand \(D\) there are \((h(D)-1)/2\) choices of cubic
+field of fundamental discriminant. The group and inertia
+calculations of MP7 therefore apply. The resulting regular
+degree-36 field has discriminant \(\ll d^{18}\).
+
+For \(h(d)>3\), the product of the two choice counts is
+\(\gg h(d)^2\). A fixed degree-36 field receives only boundedly
+many ordered pairs, including pairs from different \(d\),
+because it has boundedly many cubic subfields and the
+positive radicand of the first one recovers \(d\). Terms
+with \(h(d)\le3\) cost \(O(Z)\) in (CM3). Consequently a
+field-count bound at \(Y\asymp Z^{18}\) proves the real
+second moment. The map \(d\mapsto\operatorname{sf}(3d)\) on
+positive squarefree integers is an involution, changes
+the scale by at most three and gives the imaginary moment
+by the same reflection inequality.
+[Scholz, 1932](https://doi.org/10.1515/crll.1932.166.201) ·
+[Fouvry–Klüners, Scholz's Theorem, equation (1)](https://msp.org/ant/2010/4-5/ant-v4-n5-p01-s.pdf).
+
+The reflected subfamily alone has \(\gg Y^{1/18}\) fields.
+Indeed, a real cubic field of positive fundamental
+discriminant \(D\le Z\) supplies the first cubic field of a
+reflected pair. Its real quadratic radicand \(d\) is at most
+\(Z\), and reflection guarantees at least one choice for the
+imaginary cubic field. Choose one such partner for each real
+cubic field, and apply the same bounded multiplicity and
+discriminant bound. Davenport–Heilbronn gives \(\gg Z\) real
+cubic fields of positive fundamental discriminant at most
+\(Z\). Take \(Z\) a small constant times \(Y^{1/18}\).
+Thus the proposed exponent \(1/18\) cannot be lowered even
+in the fixed-neighbor imbalance.
+[Bhargava–Taniguchi–Thorne, Theorem 1.2 and equation (3)](https://arxiv.org/pdf/2107.12819v2).
+
+## A marginal second moment also bounds the degree-54 fields
+
+Use the same kernel boxes, now on all three edges with the
+prescribed signs. The triangle Cauchy–Schwarz inequality of
+MP4 bounds the three-edge product sum by
+\[
+ \sum_{x,y,z}^{*}h(\epsilon_{12}xy)h(\epsilon_{13}xz)h(\epsilon_{23}yz)
+ \ll_\varepsilon \bigl((AB)(AC)(BC)\bigr)^{(1+\theta+\varepsilon)/2}
+ =P^{1+\theta+\varepsilon},
+\]
+assuming (CM3). By MP7 the resulting degree-54 fields have
+\(|\operatorname{Disc}|\asymp(xyz)^{24}\). Thus their count
+is \(O_\varepsilon(Y^{(1+\theta)/24+\varepsilon})\).
+At \(\theta=0\) this gives the cubic minimum moment in all
+shapes, including the lower torsion thresholds. The same
+bound for that moment follows directly from the displayed
+product estimate. The unconditional [prime-path second
+moment](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md#moment-consequences-and-remaining-terms)
+allows \(\theta=3/14\), giving the field upper exponents
+\(17/252\) in degree \(36\) and \(17/336\) in degree \(54\).
+
+The reflected pair that forces the reverse implication in
+degree 36 has \(h(3)=1\) on the third edge. It therefore
+contributes no cubic triples and only a unit weight to the
+cubic minimum moment. The implication from the marginal
+second moment gives one proof route for the degree-54 gap.
+The three-edge problem can also be studied without an
+unrestricted two-edge result.
+
+## Reducing the signed triangle to imaginary quadratic fields
+
+For a sign pattern of negative product, there are zero or two
+positive edges. In the mixed case, label the unique negative
+edge \(xy\), so the positive edges are \(xz,yz\). Reflect
+both positive radicands by Scholz reflection. To express the
+result with three pairwise coprime squarefree vertex kernels,
+leave the prime factors other than 3 as they are and change
+the location of 3 by the involution
+\[
+       \text{absent}\ \longleftrightarrow\ z,\qquad
+       x\ \longleftrightarrow\ y .
+\]
+The product \(xy\) is unchanged. Membership of 3 is toggled
+on both other edges, exactly as required for their new
+radicands \(-\operatorname{sf}(3xz)\) and
+\(-\operatorname{sf}(3yz)\). The coordinates change by
+factors in \(\{1/3,1,3\}\), so the target boxes form a bounded
+union of comparable dyadic boxes. Each changed class-group
+size is comparable to its old value within a factor of three.
+This proves equivalence of the uniform \(k\)-th minimum-moment
+bounds for any fixed \(k\ge0\) and of the full product-moment
+bounds. The comparison holds for a common upper threshold
+on the minimum up to a constant rescaling of that threshold.
+
+The all-negative case also suffices for the degree-54 field
+bound. Both reflected weights are at least their real weights,
+and the weight on \(xy\) stays fixed. The factors \(h-1\) in
+the cubic choice counts therefore do not decrease. Every
+tuple with a nonzero transformed choice count has three
+independent quadratic characters by MP7: they are distinct
+because equality of two negative characters would leave the
+third radicand \(-1\), and their product is the character of
+\(\mathbb Q(i)\). The change of kernels is injective and
+changes \(xyz\) by at most a factor of three. The discriminant
+comparison and bounded multiplicities in MP7 then bound the
+mixed-sign field count at \(Y\) by a constant times the
+all-negative field count at \(O(Y)\). In a family that ranges
+over every negative-product sign pattern, the all-negative
+family is itself included.

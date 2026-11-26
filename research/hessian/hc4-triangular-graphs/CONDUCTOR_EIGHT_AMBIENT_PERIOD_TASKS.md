@@ -1,10 +1,15 @@
-# Conductor-eight ambient families and period obligations
+# Alternate ambient families for conductor eight
 
-For an actual plane Keller map in the monic source frame, the global
-coordinate-order conductor has even degree. Degrees two, four and six are
-excluded; the [hyperelliptic octic branch](HYPERELLIPTIC_OCTIC_CONDUCTORS_AND_FOUR_PERIOD_RIGIDITY.md)
-is also excluded. This note fixes the remaining degree-eight research tasks.
-It asserts no new exclusion.
+The [global octic proof](GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md) excludes
+degree eight by classifying the singular generic order directly and
+using its actual polynomial generators through degeneration. With
+the lower-degree exclusions, the global bound in a monic source
+frame is now ten. Individual specialized source lines may still
+have smaller conductor degrees.
+
+The smooth genus-four transfer and period calculations below are
+alternative approaches. Their mathematical statements have separate
+scopes and are not required for the conductor-eight exclusion.
 
 The [Nakazawa–Oka Main Theorem 1.9, printed p. 670](sources/nakazawa-oka-genus-four-1997.pdf)
 classifies **minimal smooth affine plane curves of compactification genus
