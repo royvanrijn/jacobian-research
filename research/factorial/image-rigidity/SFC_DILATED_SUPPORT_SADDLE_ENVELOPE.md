@@ -308,3 +308,100 @@ monomials by a different arithmetic argument. The hypotheses
 here allow arbitrary exponent sharing, including fully shared
 supports. They use a sufficiently large dilation of the given
 columns and distinct weighted total degrees.
+
+## Uniform separated supports and density one
+
+The dilation need not divide any actual exponent. Fix \(r,s\)
+and rational bounds \(0<\varepsilon\le M\) and \(g>0\).
+There is a computable \(D_0=D_0(r,s,\varepsilon,M,g)\) with
+the following property. Suppose an ordinary integer matrix
+\(a=(a_{\nu i})\) and a real scale \(D\ge D_0\) satisfy
+\[
+ \frac{a_{\nu i}}{D}\in\{0\}\cup[\varepsilon,M],
+ \qquad
+ \frac{1}{D}\left|\sum_\nu(a_{\nu i}-a_{\nu j})\right|\ge g
+                    \quad (i\ne j).                             \tag{9}
+\]
+For the *given* support \(X^{a_i}\), any nonzero coefficient
+vector has at most \(s'-1\) zero moments in total, where \(s'\)
+is its active support size.
+
+To see this, take \(b_i=a_i/D\) in the proof. The normalized
+matrix varies in a compact set, a finite union of compact sets
+with a fixed zero pattern. The centers are separated by at least
+\(g/r\) in sup norm. The positive active coordinates lie between
+\(\varepsilon\) and \(M\), so the derivative and Hessian bounds
+are uniform. The logarithm of \(P_i\) is holomorphic in a box
+near its own peak, using the positive active branches and the
+linear term \(-y_\nu\) in inactive coordinates. Although \(P_j\)
+for a different peak need not be holomorphic at an inactive
+coordinate when written with real exponents, the ratio
+\((P_j/P_i)^D\) uses the actual integer differences of exponents.
+It is holomorphic in the local polydisc, since a negative
+difference occurs only in a coordinate active at \(i\).
+Its modulus is controlled by (3), with \(P_j\) there evaluated
+on coordinate moduli for the power factors. The common
+exponential cancels in the ratio. On real boxes and the orthant
+all formulas use ordinary positive real powers; (2) is unchanged.
+
+The peak gaps \(-\log P_j(b_i)\) for \(j\ne i\) have a common
+positive lower bound, interpreting zero values as infinite gaps.
+Indeed \(b\mapsto u_b(b)\) is positive and continuous on the
+compact shape set, and \(P_j(b_i)<1\) whenever the two centers
+differ. At a zero coordinate of \(b_i\), the exponent of the
+corresponding factor of \(P_j\) is either zero or bounded below
+by \(\varepsilon\), making this continuity valid on each zero
+pattern. The same compact margins hold on sufficiently small
+complex boxes by the modulus bound above. The deficits outside
+the real boxes can be bounded at the active and inactive
+endpoints as before, with active endpoints a fixed positive
+distance from zero. The integrability bound away from the boxes
+is uniform by \(\prod_\nu (1+y_\nu^M)e^{-\sum_\nu y_\nu}\)
+and the positive lower bounds for the normalizers \(u_j(b_j)\).
+These are effective bounds. For example one can enclose
+continuous power factors on the compact sets pattern by
+pattern, using \(z^\varepsilon\) to bound the factors near
+a zero argument. The strict compact margins make this search
+terminate. Finally, in the switch count the pairwise slope
+lower bound becomes \(Dg/2\), and the upper bound for the
+differences of raw slopes is \(DrM\). All choices above now
+depend only on the parameters in (9).
+
+**Density-one corollary.** Fix any zero pattern with at most
+one identically zero column. Fill each of its other entries
+independently with an integer in \(\{1,\ldots,H\}\). As
+\(H\to\infty\), a fraction tending to one of the resulting
+matrices satisfies the total zero-order bound, simultaneously
+for all coefficient vectors. For any prescribed rational
+tolerance, a height giving that proportion is computable.
+
+In fact take \(D=H\) and \(M=1\) in (9). The fraction with
+any positive entry less than \(\varepsilon H\) is at most
+\(rs(\varepsilon+1/H)\). For a pair of columns, fix all
+entries except one free entry in either column. At most
+\(2gH+2\) values of that entry can put their degrees within
+\(gH\). Thus the remaining excluded fraction is at most
+\(\binom s2(2g+2/H)\). Pairs without any eligible free
+entry cannot occur, by the assumption on all-zero columns.
+Choose \(\varepsilon,g\) sufficiently small and then \(H\)
+above the uniform threshold. All possible repeated columns
+are already included in the cases with small degree gaps.
+Supports with clustered total degrees or positive entries on
+arbitrarily small normalized scales remain open in this argument.
+
+## Sharpness at prescribed orders
+
+On either family covered by the total zero-order bound,
+fix any \(s-1\) distinct positive orders. The corresponding
+\(s-1\) homogeneous moment forms have a nonempty projective
+common zero set over \(\overline{\mathbb Q}\), by the
+[projective dimension theorem](https://stacks.math.columbia.edu/tag/0B2R).
+No zero can lie on any coordinate hyperplane, because a
+coefficient vector there has at most \(s-1\) active monomials
+and hence at most \(s-2\) zero orders. The common zero set has
+dimension zero, since a positive-dimensional projective
+component would meet a coordinate hyperplane by the same
+dimension theorem. Every point of this finite coefficient
+locus has all \(s\) monomials and has exactly the prescribed
+zero orders. The case \(s=1\) uses the single coefficient
+point in \(\mathbb P^0\) and the empty order set.

@@ -269,6 +269,156 @@ matrix, including all its AD2 data, is identical for these two
 models. These finite tests use genuine addition and primitivity
 and do not impose the limiting small-budget caps.
 
+
+## DI4. All common chart moduli act through two integral directions
+
+Let positive primitive rows lie on one chart with fixed full divisors
+\(D_A,D_B,D_C\) and fixed signed register projections modulo
+\(m_T\mid D_T\). The pairwise coprimality of the \(D_T\) follows from
+primitivity. Suppose \(A,B\) are affine integer functions of common
+integer features in a lattice \(V\cong\mathbb Z^r\). Subtract an actual
+anchor row, and write \(\ell:V\to\mathbb Z^2\) for the integral map
+from feature differences to \((\Delta A,\Delta B)\). Write
+\(\Lambda=\ell(V)\), \(D=\prod_T D_T\) and \(m=\prod_T m_T\).
+
+The simultaneous position congruences define a lattice \(L_0\subseteq
+\mathbb Z^2\). Its quotient has Smith factors \(m,D\), with a factor
+of one allowed. At a prime of \(D_T\), take \(T\) and the signed
+register operand as position coordinates. The change has determinant
+\(\pm1\) and the two local factors are \(p^{v_p(m_T)}\) and
+\(p^{v_p(D_T)}\). At any other prime both local factors are one. The
+global statement follows by CRT.
+
+The simultaneous congruences in the feature lattice define
+\(\Gamma=\ell^{-1}(L_0)\), with the exact index
+\[
+ [V:\Gamma]=[\Lambda:\Lambda\cap L_0]
+          =\frac{mD}{[\mathbb Z^2:\Lambda+L_0]} .
+\]
+The quotient \(V/\Gamma\) is isomorphic to the subgroup
+\((\Lambda+L_0)/L_0\) of the position quotient. It has at most two
+nontrivial Smith factors, all congruences vanish on the same
+saturated sublattice \(\ker\ell\) of rank at least \(r-2\), and these
+statements hold at primes where \(\ell\) is degenerate modulo \(p\).
+When the affine differences span the feature space, their maximal
+minors in a basis of \(\Gamma\) are their original minors divided by
+\([V:\Gamma]\). This extracts the joint determinant factor at once.
+Elimination of more than two directions needs information beyond the
+common position congruences. JD8 takes \(\Lambda=\mathbb Z^2\) in
+position coordinates.
+
+There is a corresponding restriction on the actual derivative
+columns in AD2 for the primes already fixed by the chart. If a
+selected prime \(p\) divides a full \(D_T\), its valuation on every
+row is the same \(e_p=v_p(D_T)\) in role \(T\) and is zero in the
+other two roles. In the integer derivative evaluation matrix its
+column is supported on the \(T\) slots and there it is
+\((e_p/p)(T_i)_i\). All fixed chart primes span at most three rational
+directions in derivative evaluation and at most two after taking
+the signed additivity residual. For the latter, use
+\((C_i)_i=(A_i)_i+(B_i)_i\). If at least two rows are distinct,
+\((A_i)_i,(B_i)_i\) are independent by primitivity. With chart primes
+selected in every role, an additive derivative formed only from
+those primes therefore has equal logarithmic rates on the three
+roles and its evaluation image has rational rank one. These column
+equalities hold for genuine primitive rows at all radical caps.
+Large local divisibility from common support can coexist with this
+bounded rational rank. DI3 is still needed for the derivative
+columns on varying support.
+
+### The last derivative digit on a full register cell
+
+There is an integral comparison for the remaining derivative
+digit. Fix a selected prime \(p\) with \(p^e\parallel D_C\), and
+work on the basis rows of AD2 on a full joint register cell.
+Write \(r_0\) for their number and let the \(i\)-th row of \(W\)
+be \(V_{A_i}-V_{B_i}\). Its rational rank is \(s\). The relation
+module \(\mathcal K=\ker(W^{\mathsf T}:\mathbb Z_p^{r_0}\to
+\mathbb Z_p^S)\) is saturated. Let \(M\) be the additive
+derivative matrix of these rows, with each row divided by the
+unit \(A_i\). Since \(B_i=C_i-A_i\), for any \(\lambda\in\mathcal K\)
+every non-\(p\) column of \(\lambda^{\mathsf T}M\) is divisible by
+\(p^e\). For the \(p\) column there is the exact identity
+\[
+ p^{1-e}(\lambda^{\mathsf T}M)_p
+     =-e\sum_i\frac{\lambda_i(C_i/p^e)}{A_i}.
+\]
+The fixed registers give \(A_i=A_0\bmod p^e\) and
+\(C_i=C_0+D z_i\) with an actual anchor. Consequently, for
+\(\sum_i\lambda_i=0\) the expression on the right is
+\[
+            -\frac{e}{A_0}\frac{D}{p^e}\sum_i\lambda_i z_i
+                                                     \pmod{p^e}.
+\]
+This comparison uses unit normalization and a saturated relation
+module, with no denominator cost at \(p\). If \(p\nmid e\),
+the coefficient is a unit, so the divisibility on the affine
+relations is exactly the divisibility of the corresponding
+linear form in the actual quotient features, up to depth \(e\).
+
+In particular, if all relations in \(\mathcal K\) annihilate
+\((C_i/p^e)_i\bmod p\), or if \(p\mid e\), the contribution
+\(e(r_0-s)-1\) from this \(p^e\) in AD3 improves to
+\(e(r_0-s)\). Extend a basis of \(\mathcal K\) to a
+\(\mathbb Z_p\)-basis. The corresponding \(r_0-s\) transformed
+rows now have every column divisible by \(p^e\), and the row
+change is unimodular. For \(p\nmid e\) the annihilation
+condition uses all of \(\mathcal K\); a check only on affine
+relations suffices if \(1\) belongs to the \(\mathbb Q_p\)-column
+span of \(W\). The result tests one digit of the common-depth
+bound. A uniform rank saving would still need correlations on
+the varying supports or a numerical bound on the quotient
+features across different charts.
+
+[Full position index (JD8)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#a-rank-two-affine-index-bound)
+
+## DI5. Prime-by-prime restoration forces an exact feature relation
+
+Retain the full joint register cell of DI4 and its basis rows.
+Let \(s'\) be the rank over \(\mathbb Q\) of the matrix
+\([1\mid W]\), where \(W\) is the valuation-difference matrix,
+and write \(Z=\max_i|z_i|\). Let \(\mathcal P\) be a set of
+selected primes dividing \(D_C\) for which \(p\nmid e_p\),
+with \(e_p=v_p(D_C)\). Suppose for each \(p\in\mathcal P\)
+and each integral affine relation \(\lambda\) among the rows of
+\([1\mid W]\) that
+\[
+                   p^{e_p}\mid(\lambda^{\mathsf T}M)_p
+                   \quad\text{in }\mathbb Z_p .
+\]
+The normalized derivative matrix \(M\) is the one in DI4.
+If
+\[
+       \prod_{p\in\mathcal P}p>
+       (s'+1)(\sqrt{s'}\max(1,\log_2 X))^{s'} Z ,
+\]
+then the actual quotient vector \(z=(z_i)_i\) belongs to the
+rational column span of \([1\mid W]\).
+
+To prove this, choose \(s'\) independent rows and \(s'\)
+columns giving a nonzero square minor. Adjoin each remaining row
+in turn and use the signed \(s'\)-minors on those columns to
+produce an integral affine relation, supported on at most
+\(s'+1\) rows. The coefficient of the newly adjoined row is
+nonzero and these relations span the whole relation space.
+Their coefficients have absolute value at most
+\((\sqrt{s'}\max(1,\log_2 X))^{s'}\) by Hadamard. DI4 makes
+each \(\lambda^{\mathsf T}z\) a multiple of every prime in
+\(\mathcal P\); the displayed numerical bound forces it to vanish.
+In fact the hypothesis only needs the specified relations.
+The factor in the bound depends on the valuation rank, with no
+dependence on the number of rows. For example, if \(Z\le n^K\)
+and the prime product is at least \(n^{K+\sigma}\) for fixed
+\(K,\sigma>0\), this forces exact dependence whenever
+\(s'\log(s'\log X)=o(L\log X)\) at fixed \(L>0\).
+
+The restoration input refers to the selected relation values.
+The depth-defect bound on the gcd of maximal minors alone gives
+no such input. All the primes here recover a single complete
+letter's quotient direction on the same cell. A saving in a
+growing feature dimension needs more than duplicating this
+direction at many primes.
+
 ## Obstruction and the remaining extraction
 
 Here is a genuine rank-one obstruction to deducing the numerical
@@ -292,6 +442,50 @@ and its largest difference is \(H\). Replacing \(H\) by the shift
 the same derivative-minor gcd and deficits and bounded feature
 minors. This counterexample imposes primitivity and the numerical
 shell. It makes no claim of simultaneous small radical caps.
+
+### The same obstruction on a deep register cell
+
+The comparison can have a nonzero rank defect and still leave the
+feature minors undetermined. Fix primes \(q>3\), \(s,t>20q\),
+and \(p>\max(s,t)\) with \(p\equiv1\bmod 3\). Take arbitrarily large
+\(D=p^m\equiv1\bmod 3(qst)^2\) with \(p\nmid m\). Choose
+\(H\equiv2\bmod (qst)^2p\) with \(H\asymp D^\gamma\) for any fixed
+\(\gamma>0\). Compare the shift lists \(z=(0,1,H)\) and \(z=(0,1,2)\)
+in the primitive rows
+\[
+ A_i=(D-1)/3+D(T+qz_i),\quad B_i=2A_i+1,\quad C_i=3A_i+1.
+\]
+Use the same \(T\in[4qH,5qH]\) for both lists. Require
+\(T\equiv q\bmod q^2\); all three \(A_i\) then have \(q\)-valuation
+one. At \(s,t\), the nine form roots modulo the prime are distinct,
+since the shifts \(0,q,2q\) and the translates by \(0,1/2,1/3\)
+are distinct. Choose \(T\) modulo \(s^2,t^2\) so that \(s\) occurs
+only on \(B_3\) and \(t\) only on \(C_3\), both to order one.
+Avoid the at most three values of \(T\bmod p\) that would raise a
+target valuation above \(m\). These constraints work for both
+lists and have fixed combined modulus. Thus CRT gives the chosen
+\(T\) for large \(D\). Both lists lie in \(X/2<C_i\le X=20DqH\)
+and in one full register cell with full divisors \(q,1,D\).
+
+Select \(p,q,s,t\) in the derivative matrix. The first two rows
+are supported at \(p,q\); their \(2\)-minor there has absolute value
+\(mD/p\), from \(C_i=3A_i+1\) and \(A_2-A_1=Dq\). The third row
+has the private coordinates \(s,t\). Thus the three rows are
+independent and the nonzero maximal minors are the \(2\)-minor
+times \(B_3/s\) or \(C_3/t\). Those two factors are coprime by
+primitivity, so the maximal-minor gcd is \(mp^{m-1}\) for both
+lists. At every prime and depth, if the third row contributes to
+AD2, its difference vector has a private \(s\) or \(t\) coordinate
+and increments both the row count and the rank by one. Hence
+all AD2 deficits agree between the two lists. In particular the
+deficit sum at \(p\) is \(m\), with the one-digit loss attained.
+
+The true saturated rank-one feature has largest difference \(H\)
+versus \(2\), since both feature lists have a difference of one.
+For any fixed \(L,K>0\), choosing \(0<\gamma<KL/2\) gives depth
+\(Dq\ge X/n^K\) with \(n=X^L\). The example has the numerical
+height, primitive rows and exact common divisors. It imposes no
+small-budget radical caps.
 
 The exact reduction in DI2 concerns a congruence system on an
 already common affine model. DI3 computes the actual shared-coordinate restriction and its local

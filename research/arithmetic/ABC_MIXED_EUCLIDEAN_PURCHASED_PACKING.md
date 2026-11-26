@@ -747,6 +747,34 @@ price-free three-edge product moment at \(k=3\) remains open.
 
 [Shared-kernel cubic second moment](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#an-averaged-saving-from-short-cubic-certificates)
 
+## MP13. Larger class exponents after the prime-path bound
+
+The signed marginal classes satisfy the stronger moment exponent
+\[
+ f_{\mathrm{path}}(k)=
+ \begin{cases}
+ 1& (0\le k\le1),\\
+ \max\{1+3(k-1)/14,\ 1+(1597/5000)(k-2)\}&(k\ge1).
+ \end{cases}
+\]
+Use this in place of \(f\) in MP1 and in the separate moments
+used by MP4. The proofs use only the stated signed moment
+bound, so the packing hypotheses and record prices are
+unchanged. At \(k=2,4\) the marginal exponents are \(17/14,23/14\).
+This is an additional local inequality for a future exponent
+program.
+
+For the genuine joint count, if all three edge weights exceed
+\(\max(AB,AC,BC)^{5/18}\), the \(k=3\) minimum moment costs
+only \((ABC)^{1+\varepsilon}\). This part of an actual parity
+kernel catalogue therefore admits separation \(1/81\) in all
+three orientations at the maximum conditional price. For
+balanced kernels and the full range \(2\le k\le3\), the
+minimum moment is at most \(N^{3+(5/11)(k-2)+\varepsilon}\).
+At \(k=3\) the unrestricted joint moment still needs a bound
+for lower torsion thresholds.
+[Prime paths and the class-group tail](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md)
+
 ## Remaining valuation extraction
 
 A sufficient unrestricted advance would extract from every

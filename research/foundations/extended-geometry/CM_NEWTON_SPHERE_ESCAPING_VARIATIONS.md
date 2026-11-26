@@ -517,6 +517,11 @@ Hence in characteristic zero the full finite responses
 have respective ranks five and eight. This finite check
 uses direct angular and height extraction.
 
+The [fixed-boundary stratum argument](CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md)
+transports attachment from one rational seed across a connected
+open set. It gives coherent detection at actual zeros of the
+short finite response determinants.
+
 ## A generic eight-row window
 
 **Corollary (a short generic reconstruction window).**

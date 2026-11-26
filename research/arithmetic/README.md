@@ -1579,7 +1579,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The short-term window bound gives numerical depth on both target quotients | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
 | Pell descent and exponent-one repair for consecutive powerful triples | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Unique extremizer of the consecutive-triple pairwise functional | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
-| Joint determinant surface cover near the balanced Pell box | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
+| Joint determinant surface cover in every dyadic kernel box | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Sharper nonfundamental count from the cubic Pell trace | Partial result | open | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Consecutive-powerful triple count via the fixed-shift contact determinant | Partial result | open | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Primitive cubic discriminants satisfy the sharp shared-kernel row second moment | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
@@ -1590,8 +1590,21 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The full determinant gcd is conditionally cheap at tied pair incidence | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
 | Both shared summand matching products cannot be numerically tall at the raw pair tie | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
 | Prime-power target pairs attain the first quotient-lock catalogue boundary | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| A movable valuation window forces a loss at diffuse two-letter equality | Internal result | proved | [Source](ABC_QUANTITATIVE_DEGREE_WINDOWS.md) |
+| Two exact determinant values recover the original target on a bought summand modulus | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| The ordinary raw product pair-loss boundary has a fixed gap above one sixth | Internal result | proved | [Source](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md) |
+| Cubic Fermat and a rank-two identity force many nondegenerate split-prime paths | Internal result | proved | [Source](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md) |
+| A shared prime cube improves the quadratic 3-torsion large-value count | Internal result | proved | [Source](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md) |
+| Full moduli sharpen the signed quadratic 3-torsion tail | Internal result | proved | [Source](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md) |
+| The signed quadratic second and fourth torsion moments have exponents 17/14 and 23/14 | Internal result | proved | [Source](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md) |
+| The class minimum moment has a price-free high cubic sector and a smaller balanced loss | Internal result | proved | [Source](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md) |
+| Prime paths lower the signed class weights in mixed Euclidean packing | Internal result | proved | [Source](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md) |
+| Full register cells at bounded depth loss have arbitrarily small count exponent | Internal result | proved | [Source](ABC_JOINT_DISPLACEMENT_CATALOGUES.md) |
+| All common divisor and register congruences factor through two integral directions | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
+| A restored derivative digit gives a true quotient-feature congruence | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
+| Identical nonzero derivative defects coexist with different feature sizes on deep cells | Internal result | proved | [Source](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md) |
 
-**Computed obligations:** 111 unresolved; 19 resolved within their exact scope.
+**Computed obligations:** 112 unresolved; 19 resolved within their exact scope.
 
 
 Scope limits:
@@ -1732,7 +1745,7 @@ Scope limits:
 - The coefficient-aware low-product theorem does not improve unrestricted1/4; actual-support capacity has only a one-way sufficient bridge, not a converse or unconditional estimate.
 - The coherent-cycle33/134 theorem is unconditional for all positive3-full prescribed sums, including noncoprime original values. Its primitive coefficient theorem is uniform. The stronger actual middle-carrier capacity remains an independent OPEN sufficient condition; there is no converse from the representation saving.
 - For every fixedk>=3 the explicit all-target prescribed-sum bound is33/(33k+35), with saving2/((k+1)(33k+35)) below1/(k+1). Primitive positive coefficients are uniform; original noncoprime values use exact gcd normalization. No coefficient1-to-uniform-primitive converse or carrier-capacity implication is asserted.
-- Erdos #364 uses consecutive integers. Pell descent gives the unconditional nonfundamental exponent 1/6. The stronger 293/3660 and global 293/1220 transfers use explicit preprint inputs. The unconditional joint surface cover leaves the per-cell point count open.
+- Erdos #364 uses consecutive integers. The nonfundamental exponent 1/6 is elementary, and 293/3660 and global 293/1220 use explicit preprint inputs. The joint determinant covers all dyadic boxes. At width exponent 11/105, the 6/25 target uses only the strict near-binding fundamental boxes and the collision exponent 142/525 after removing the counted component classes, which include averaged degree-22 curves, geometrically rational curves and binomial surfaces.
 
 Tracked obligations (computed states):
 
@@ -1822,6 +1835,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Prove an absolute delta>0 and N_lambda(X) << X^((1/3-delta)lambda+epsilon) for all sufficiently small fixed positive lambda. The equivalent minimally repaired primitive quotient count remains open at arbitrary balanced profiles. A transfer must force a bounded-radical imbalanced output, a sufficiently low affine power defect, or another restriction using all three original radical caps.](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) — GAP-ARITH-ABC-STRICT-SMALL-BUDGET-COEFFICIENT
 - **mathematical / open:** [Decide whether pi(x+y) exceeds pi(x)+pi(y) for any integers x,y>=2. In particular, is the width-3159 factorial count of order 447 positive for some X?](SECOND_HARDY_LITTLEWOOD.md) — GAP-HL2-PRIME-COUNTING-SUBADDITIVITY
 - **mathematical / open:** [Can the balanced target-only minimal repair count be bounded by a fixed power strictly below 1/M?](POWERFUL_TRIPLES_COMMON_DIVISOR_BOUND.md) — GAP-ARITH-ABC-ONE-TARGET-MINIMAL-REPAIR-STRICT-SAVING
-- **mathematical / open:** [Can the joint auxiliary surface cover be counted uniformly while retaining both consecutive shifts?](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) — GAP-ERDOS-364-JOINT-SURFACE-POINT-COUNT
+- **mathematical / open:** [Can the remaining fundamental candidates after the component bounds meet the averaged cell budget?](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) — GAP-ERDOS-364-JOINT-SURFACE-POINT-COUNT
+- **mathematical / open:** [Can the coupled count of distinct surviving fundamental centers in common cells reach 142/525 at width exponent 11/105?](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) — GAP-ERDOS-364-COUPLED-COLLISIONS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

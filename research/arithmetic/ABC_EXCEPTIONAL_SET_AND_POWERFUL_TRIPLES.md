@@ -11319,6 +11319,26 @@ quotient. These pair conditions retain the original
 three caps and do not give an unrestricted count.
 [Reduced determinant-ratio count (FP12)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#a-deep-target-divisor-on-the-reduced-determinant-ratio)
 
+At fixed chart price \(b_0\), a usable pair fraction at least
+\(n^{-\rho}\), auxiliary radical cap \(n^q\), and missing parity
+price \(\zeta\), FP2 requires
+\(q+3\zeta+3\rho+6b_0<2\) by a fixed margin. In these conventions
+the pair fraction is measured within each chart before summing
+the chart catalogue. With the genuine joint registers fixed on
+a chart of normalized depth loss at most a fixed \(K\), JD12 gives
+the sharper bound \(b_0+t+\eta\) for any fixed \(\eta>0\) and
+sufficiently small fixed budget. In the projected case with
+only one short quotient, JD6 instead gives
+\(1/3-\delta_1+b_0+t_I\).
+The full chart congruences have at most two integral Smith
+directions on a common affine model, and the common fixed
+prime columns give at most two rational directions in the
+derivative additivity constraints. Thus a derivative approach
+to a growing feature rank needs a quantitative link with
+varying prime support.
+[Deep registers (JD12)](ABC_JOINT_DISPLACEMENT_CATALOGUES.md#two-short-crt-quotient-coordinates-give-arbitrarily-small-count)
+· [Integral chart comparison (DI4)](ABC_DERIVATIVE_FEATURE_CONGRUENCE_INDEX.md#di4-all-common-chart-moduli-act-through-two-integral-directions)
+
 Inside a surviving rich shared record, the two residual summands
 on each side are wholly nonatomic. The all-atomic alternative
 would reduce to three high prime powers, which is sparse by the
@@ -11334,6 +11354,17 @@ have fixed positive depth. The remaining target-only
 configuration admits a sharp \(1/12\) catalogue obstruction,
 so the summands' arithmetic is essential to any further discount.
 [Structure of the remaining pair records](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#structure-inside-the-remaining-rich-pair-records)
+
+The purchased private summand divisor and two determinant labels
+give a new edge incidence estimate. On the raw FP8 boundary
+it excludes the one-tall matching branch. The two-short branch
+has a strict saving from the movable degree window on the
+original projection, and both matching products tall were
+already excluded. Thus the raw product-pair loss has a fixed
+positive margin above \(1/6\) in the ordinary balanced setting,
+uniformly across the dictionary interval.
+[Two-label incidence and raw boundary (FP13)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#a-private-summand-modulus-excludes-the-thin-determinant)
+
 
 
 [MP10](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp10-transverse-norm-catalogues-at-minkowski-height)
@@ -11354,6 +11385,16 @@ The unrestricted count still needs suitable exact valuation
 records on enough rows.
 [Shared-kernel cubic second moment](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#an-averaged-saving-from-short-cubic-certificates)
 · [Parity transfer (MP12)](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp12-a-price-free-two-edge-moment-for-all-parity-kernel-sizes)
+
+The linked-prime count improves the signed marginal class
+moments at \(k=2,4\) to \(17/14,23/14\). It gives the full balanced
+minimum-moment bound \(N^{3+(5/11)(k-2)+\varepsilon}\) for
+\(2\le k\le3\), with price-free \(k=3\) on the large-torsion
+sector specified in MP13. The lower-torsion joint range and
+the extraction of sufficiently cheap parity records remain
+open.
+[Prime-path class moment](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md)
+
 
 ## Complementary words and reduced least-repaired target ratios
 

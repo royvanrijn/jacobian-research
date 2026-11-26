@@ -25,6 +25,13 @@ For rational \(k=a/b\ge1\) and rational \(w_0>0\) with
 \]
 The two branches are \(w_-\le w_0\), and \(w_-\ge w_0\) with the displayed bound. In particular \(k=1,\ w_0=1/9\) gives \(D\le\rho_+\). The test uses retained masses and has no short-height hypothesis.
 
+The [prime-path class-group bound](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md)
+also permits replacing \(f(k)\) by
+\(\max\{1+3(k-1)/14,\,1+(1597/5000)(k-2)\}\) for \(k\ge1\) in
+the same local inequality. The argument below uses only the
+signed moment at the specified \(k\). Existing exact
+certificates retain their source inequalities.
+
 **Local separation.** Write the signed canonical equation \(Ax^2+By^3=Cz^6\), with square-free, cube-free and sixth-free coefficient magnitudes. Put \(\Delta=A^3 B^2 C\), \(U=-AB y/z^2\) and \(V=A^2B x/z^3\). On \(E_\Delta:V^2=U^3+\Delta\), the ratio \(t=U^3/\Delta=-By^3/(Cz^6)\) determines the primitive triple and \(t+1=Ax^2/(Cz^6)\). Scaling to \(E_1\) by a sixth root of \(\Delta\) gives \(u^3=t,\ v^2=t+1\) and \(\widehat h=h(t)/6+O(1)\). Counted points have height at most \(\log X/6+O(1)\). Rational torsion is uniformly bounded by Northcott on \(E_1\), since the scaled points have degree at most six and bounded height. [Silverman, VIII.9](https://www.math.ens.psl.eu/~obenoist/refs/Silverman.pdf#page=264)
 
 Fix the coefficients and the retained valuation of each residual prime used by \(w_-\). The residual radical \(R=\operatorname{rad}|\Delta|\) determines at most \(8^{\omega(R)}\) coefficient magnitudes, and the retained classes or omitted tail give at most \(7^{\omega(R)}\) assignments. At \(p\nmid6\) with locked valuation \(i\), primitivity gives \(v_p(t+1)=i\) on \(S\), \(v_p(t)=i\) on \(T\), and \(v_p(t)=-i\) on \(F\). On \(E_1\) these are residue discs about \((u,0)\) with \(u^3=-1\), about \((0,\pm1)\), and about infinity, respectively. Their local parameters \(v,u,u/v\) have valuations \(i/2,i/3,i/6\). Partition by the disc at each locked prime. Translation by the corresponding torsion point and the integral formal group law put a difference \(P-Q\) in the infinity disc with parameter valuation at least \(i/e_J\). The function \(t\) has pole order six there. Thus the rational \(t(P-Q)\) has denominator divisible by \(p^{6i/e_J}\). Omitting \(2,3\) loses at most \(O(1)\) in the log weight of the retained classes. There are \(X^{o(1)}\) parts, and distinct Mordell–Weil vectors in each part satisfy \(\widehat h(P-Q)\ge (w_--o(1))\log X\). [Silverman, IV.1–3 and VII.2](https://www.math.ens.psl.eu/~obenoist/refs/Silverman.pdf#page=134)

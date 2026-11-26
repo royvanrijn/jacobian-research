@@ -413,6 +413,22 @@ two opposite roles both meet the short-quotient test and the chart
 price is below \(1/3-s\) by a fixed margin. Neither this test nor
 the full joint depth is an extraction result for arbitrary rows.
 
+For a fixed \(K>0\), this finite-depth result subsumes the JD4
+trigger at sufficiently small fixed budgets whenever the chart
+has exponent \(d>t+\theta\) by a fixed margin and
+\(D\ge X/n^\theta\), \(\theta\le K\). In fact it rules out
+\(d>t\) by any fixed margin throughout that depth range. Under the
+three caps \(n^C\), the elementary two-letter support count gives
+\(d\le 2C+o(1)\). Thus every JD4 trigger with a fixed gap can use
+one fixed \(K>2C\) and JD12, taking the cell allowance \(\eta\)
+below the gap. At the default balanced register prices
+\(s=2\alpha-1/3\), the full tuple costs at most \(3s\), so the
+total count exponent is at most \(b_0+6\alpha-1+\eta\).
+In particular any fixed \(\alpha<2/9-b_0/6\) is excluded in this
+finite-depth range. Actual joint support can improve this
+criterion. JD6 can use relative depth in just one role or a
+cheaper projection for which the second quotient remains large.
+
 The same arbitrarily small bound holds on the **whole chart**
 without charging the projected residue support when the two
 least-residue lists, each translated by its own chart minimum,

@@ -2278,3 +2278,70 @@ The [weighted critical-point theorem](FACTORIAL_SEMIWEIGHTED_CRITICAL_WINDOWS.md
 gives explicit finite windows for coupled phases with degenerate
 critical points under its weighted principal-part hypotheses. The
 weighted theorem's window size can exceed the support size.
+
+The [freezing and point-counting theorem](MULTIVARIATE_AX_FREEZING_POLYLOG_HEIGHTS.md)
+uses Ax's theorem on semialgebraic arcs and Pfaffian block counting
+to bound exceptional heights by a power of their logarithm along
+any affine parameter ray, uniformly over all multiplicities.
+Slicing gives density-one all-degree regularity for independently
+varying row heights with bounded gaps, and allows one unrestricted
+gap after a curvature count. The
+[polynomial first-marker theorem](MULTIVARIATE_POLYNOMIAL_HEIGHT_FIRST_MARKER.md)
+extends this count to polynomial heights with a real first marker.
+The [first-block prime criterion](MULTIVARIATE_FIRST_BLOCK_PRIME_INTERACTIONS.md)
+forces a collision to block large primes at both orders for every
+sufficiently large-gap row, without a template restriction.
+
+For arbitrary support size and dimension, the
+[saddle envelope theorem](SFC_DILATED_SUPPORT_SADDLE_ENVELOPE.md)
+bounds the total number of zero orders by the active support size
+minus one after sufficiently large anisotropic dilation. Its
+uniform version applies directly to ordinary supports with
+macroscopically separated total degrees and entries at a common
+scale. This includes a density-one fraction of exponent arrays
+in each fixed zero pattern. In the undilated case a
+[unique highest-degree monomial](FACTORIAL_UNIQUE_TOP_MONOMIAL_TAIL.md)
+gives an explicit nonzero limiting ratio and coefficient-uniform
+finite windows, which can exceed the support size.
+
+The [homogeneous saddle filter](SFC_HOMOGENEOUS_DILATED_SADDLE_WINDOWS.md)
+also treats equal total degrees when the exponent columns have
+the same number of positive entries. It gives the actual
+support-size window at every starting order on large separated
+ordinary supports, and hence on a density-one fraction of
+homogeneous exponent arrays in every fixed dimension and
+support size.
+
+Its [mixed-coordinate extension](SFC_HOMOGENEOUS_MIXED_ACTIVE_SADDLE_WINDOWS.md)
+allows unequal positive-coordinate counts by filtering relative
+frequency clusters and retaining their largest endpoint
+amplitudes. This gives the actual all-order window after
+sufficiently large dilation of any homogeneous support, and
+density-one regularity in any homogeneous zero pattern that
+permits distinct columns.
+
+The [square-root saddle theorem](SFC_HOMOGENEOUS_SQUARE_ROOT_SEPARATION.md)
+gives the actual all-order window for homogeneous supports with
+large positive entries and separated square-root exponent columns.
+At equal active-coordinate counts it allows arbitrary row-scale
+ratios and coalescing normalized columns. The
+[common-translation theorem](SFC_TERNARY_COMMON_TRANSLATION_CUBIC_OBSTRUCTION.md)
+gives the initial support-size window for all ternary supports
+on high common rays, including profiles whose square-root
+distances tend to zero. [Existing-row peeling](SFC_EXISTING_ROW_PEELING_CERTIFICATE.md)
+gives exact simultaneous residue certificates for prescribed
+finite windows while retaining all original row differences.
+
+For mixed degrees,
+[top-block dominance](SFC_MIXED_DEGREE_TOP_BLOCK_TAIL_WINDOWS.md)
+gives all-order windows for each fixed phase after large
+dilation and actual support-size windows for arbitrary
+coefficients through an exponential starting order. The
+[incomparable-coordinate theorem](SFC_MIXED_DEGREE_INCOMPARABLE_COORDINATES.md)
+also treats the very large crossover, under incomparability
+of active coordinate sets across degree groups. For ordinary
+binomials the
+[central mark theorem](MULTIVARIATE_CENTRAL_AFFINE_MULTISCALE_MARKS.md)
+gives effective all-order height cutoffs for independently
+repeated reflected pairs and a growing height-band result
+with arbitrary row counts under its reflected maximum test.

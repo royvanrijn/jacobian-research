@@ -177,11 +177,12 @@ Pell procedure of
 As \(x\ge L\), this proves part 3.
 More generally, for bounded \(d\) the permitted bound \(B\)
 can grow with \(L\) as
-\(o(\log_2^* L\,\log_3^* L/\log_4^* L)\), where here
-\(\log_k^* L\) denotes the \(k\)-fold iterated natural logarithm.
-This notation is unrelated to the base-two logarithm used in
-\(B(d)\). To see this, take \(y(t)=\max(3,B(t))\) nondecreasing
-and apply
+\[
+ o\!\left(\frac{(\log\log L)(\log\log\log L)}
+                   {\log\log\log\log L}\right).
+\]
+To see this, take a nondecreasing majorant \(y(t)\ge\max(3,B(t))\)
+with the same growth bound and apply
 [Stewart, Theorem 1 and (4)](https://uwaterloo.ca/pure-mathematics/sites/default/files/uploads/documents/on_sequences-2.pdf)
 to the consecutive integers above. The hypothesis implies
 that the gaps between successive integers with greatest prime
@@ -202,8 +203,11 @@ in either orientation, and any gap at most \(D\). Indeed its
 whole factor block is a unit modulo each \(p\mid P\), since
 its entries are congruent to integers in \([1,JD]\).
 Therefore the bounded-gap conclusion holds with any number
-of heights and any multiplicities for \(L>M(B)\), even if
-their total curvature tends to a positive limit. A similar
+of heights and any multiplicities for \(L>M(B)\). For any
+\(T>0\), one can take heights \(M\to\infty\) divisible by \(P\)
+and give a mirrored pair of unit-gap rows at height \(M\)
+multiplicity \(\lfloor T(M+1)/2\rfloor\) in each orientation.
+Their curvature tends to \(T\). A similar
 congruence gives the large-gap conclusion by taking a tagged
 row with \(B(d)\) exceeding the fixed core and other gaps in
 the same sense. These conditions isolate one arithmetic

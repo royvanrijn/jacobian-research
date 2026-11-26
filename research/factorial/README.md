@@ -939,6 +939,25 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Effective all-multiplicity exclusion at zero strength in full-rank affine templates | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AX_AFFINE_COLLISION_BRANCHES.md) |
 | Effective all-degree coprimality with two linked active polynomial height scales | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AX_TWO_ACTIVE_HEIGHT_SCALES.md) |
 | Codimension bound for common-factor branches with several independent multiplicities | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MULTIPLICITY_AX_CODIMENSION.md) |
+| A total zero-order bound for arbitrary supports after anisotropic dilation | Internal result | proved | [Source](image-rigidity/SFC_DILATED_SUPPORT_SADDLE_ENVELOPE.md) |
+| All-order support-size bounds for uniformly separated ordinary supports | Internal result | proved | [Source](image-rigidity/SFC_DILATED_SUPPORT_SADDLE_ENVELOPE.md) |
+| Sharpness at arbitrary prescribed orders for separated supports | Internal result | proved | [Source](image-rigidity/SFC_DILATED_SUPPORT_SADDLE_ENVELOPE.md) |
+| Polylogarithmically many exceptional affine heights with arbitrary independent counts | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AX_FREEZING_POLYLOG_HEIGHTS.md) |
+| Uniform all-order density one for independent ordinary row heights | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_AX_FREEZING_POLYLOG_HEIGHTS.md) |
+| Polylogarithmic collision count for polynomial heights with a real first marker | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_POLYNOMIAL_HEIGHT_FIRST_MARKER.md) |
+| A template-free large-prime interaction requirement for factorial collisions | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_FIRST_BLOCK_PRIME_INTERACTIONS.md) |
+| Undilated factorial tails with a unique highest-degree monomial | Internal result | proved | [Source](image-rigidity/FACTORIAL_UNIQUE_TOP_MONOMIAL_TAIL.md) |
+| All-order support-size windows for separated homogeneous ordinary supports | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_DILATED_SADDLE_WINDOWS.md) |
+| Density-one all-order Strong Factorial for homogeneous exponent arrays | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_DILATED_SADDLE_WINDOWS.md) |
+| All-order support-size windows for homogeneous supports with arbitrary zero patterns | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_MIXED_ACTIVE_SADDLE_WINDOWS.md) |
+| Density-one all-order support-size windows for arbitrary homogeneous zero patterns | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_MIXED_ACTIVE_SADDLE_WINDOWS.md) |
+| All-order homogeneous support windows under square-root separation | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_SQUARE_ROOT_SEPARATION.md) |
+| Top-degree factorial windows under large common dilation | Internal result | proved | [Source](image-rigidity/SFC_MIXED_DEGREE_TOP_BLOCK_TAIL_WINDOWS.md) |
+| Mixed-degree support-size windows up to an exponential starting order | Internal result | proved | [Source](image-rigidity/SFC_MIXED_DEGREE_TOP_BLOCK_TAIL_WINDOWS.md) |
+| All-order mixed-degree windows with incomparable coordinate sets | Internal result | proved | [Source](image-rigidity/SFC_MIXED_DEGREE_INCOMPARABLE_COORDINATES.md) |
+| Exact factorial certificates by translating disjoint blocks of existing rows | Internal result | proved | [Source](image-rigidity/SFC_EXISTING_ROW_PEELING_CERTIFICATE.md) |
+| The initial Strong Factorial window on every high coalescing ternary ray | Internal result | proved | [Source](image-rigidity/SFC_TERNARY_COMMON_TRANSLATION_CUBIC_OBSTRUCTION.md) |
+| All-order exact central marks for independently repeated reflected rows | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_CENTRAL_AFFINE_MULTISCALE_MARKS.md) |
 
 **Computed obligations:** 50 unresolved; 34 resolved within their exact scope.
 

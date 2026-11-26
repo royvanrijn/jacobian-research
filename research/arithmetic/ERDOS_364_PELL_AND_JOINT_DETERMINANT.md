@@ -154,4 +154,105 @@ Using just the products of the two slopes gives \((r_-r_+)^3(s_-s_+)^2=1-t^2\). 
 
 Linearly independent auxiliary forms modulo \(G_0\) may have a common divisor on \(V\). The rank bound leaves open whether the base locus is a union of curves, and a curve cover would still require a uniform arithmetic point count including exceptional components. The coefficient bound in the determinant proof is polynomial in \(X\) with a degree-dependent exponent, so a polynomial dependence on the coefficients in a point-counting theorem cannot be absorbed into \(X^\varepsilon\).
 
-For an explicit sufficient estimate take \(\rho=1/1000\), \(\mu_- =\mu_+=53/500\). These values satisfy the strict determinant inequality, and every candidate in the box is fundamental for large \(X\), since \(q\ge X^{1/3-2\rho}\) and nonfundamental solutions have \(q\ll X^{2/9}\). A uniform \(O_\varepsilon(X^{7/250+\varepsilon})\) bound per cell on the points of its auxiliary surface cover would give \(O_\varepsilon(X^{6/25+\varepsilon})\) in the box. The per-cell estimate remains open. To improve the transferred \(293/1220\) bound globally along this route also requires controlling the near-binding boxes outside the chosen joint cover. Neither counting route settles existence of fundamental or nonfundamental candidates.
+Let \(\Psi=\min_{i<j}\Phi(\beta_i,\beta_j)\), using the clipped kernel exponents \(\beta_i\) in \([0,1/3]\) for the old pairwise estimates. Clipping and changes of window affect the actual exponents by \(O(1/\log X)\). With \(\eta=1/1600\), the stability proof gives the following exact region:
+
+\[
+\Psi\ge \frac6{25}\quad\Longleftrightarrow\quad
+ \frac{14}{45}\le\beta_i+\beta_j\le\frac{16}{45}\quad(i<j).
+\]
+
+In the forward direction the two adjacent sums in sorted order lie within \(\kappa=1/45\) of \(1/3\), hence so does the third. Conversely, the pair-sum conditions give span at most \(2/45\), every exponent within \(1/30\) of \(1/6\), and \(m\ge14/75\) for all pairs. The gate holds, both positive parts vanish, and \(B_{\rm red}\ge\theta-81/(64\cdot45^2)=6/25\). The other two terms \(s,h\) in \(\Phi\) are strictly greater than \(6/25\) throughout this region. Consequently \(\Psi>6/25\) corresponds exactly to all three pair sums in the open interval \((14/45,16/45)\). The old pairwise estimates already handle equality, with the window perturbations absorbed into \(X^\varepsilon\). For these boxes \(q\gg X^{14/45}\), so the Pell height inequality makes every candidate fundamental for sufficiently large \(X\). Also, at fixed kernel vector, the residues \(n\equiv-i\pmod{b_i^3}\) pin down \(n\) in the height band. Indeed their combined modulus is \((b_-b_0b_+)^3\gg X^{7/5}\) by summing the three pair-sum inequalities and using pairwise coprimality.
+
+Take \(\mu_-=\mu_+=\mu=11/105\), which satisfies \(\mu^2-8/729=1/893025>0\). The strict margin allows a sufficiently large fixed auxiliary degree. There are \(K=O(X^{22/105})\) cells per box. In the boxes with \(\Psi>6/25\), remove the union of the candidate points already counted by the component estimates below, applying each estimate to a bounded number of its components per cell. Their total is \(O_\varepsilon(X^{6/25+\varepsilon})\). Let \(N_R\) count the remaining candidates in cell \(R\). A bound of \(O_\varepsilon(X^{16/525+\varepsilon})\) per cell, or for the mean over the cells of the box, suffices. Together with the old fixed-shift pairwise estimates in the other boxes this gives \(O_\varepsilon(X^{6/25+\varepsilon})\) overall, improving \(293/1220\) by \(1/6100\).
+
+An alternative sufficient bound counts the ordered distinct collisions between those remaining points:
+
+\[
+P(X)=\sum_R N_R(N_R-1)\ll_\varepsilon X^{142/525+\varepsilon}.
+\]
+
+Indeed \((\sum_R N_R)^2\le K(\sum_R N_R+P(X))\), so \(\sum_R N_R\ll K+\sqrt{KP(X)}\). The exponent of the square-root term is \((22/105+142/525)/2=6/25\). For a collision of two candidates \(n,n'\), define \(u_i=b_i b'_0\), \(u'_i=b'_i b_0\), \(v_i=a_i a'_0\), \(v'_i=a'_i a_0\) for \(i=\pm1\). Then
+
+\[
+u_i^3v_i^2-u_i'^3v_i'^2=i(n'-n),\qquad
+|u_i-u'_i|\ll B_iB_0X^{-\mu_i},\qquad |v_i-v'_i|\ll A_iA_0X^{-\mu_i}.
+\]
+
+The difference bounds follow from the cell intervals on \(r_i\) and their induced intervals on \(s_i\), since \(t=O(X^{-1})\). Either sign's two products determine the ordered centers: their difference gives \(n'-n\), and their product formula \(u_i^3v_i^2=(n+i)n'\) is strictly increasing in \(n\) for fixed \(n'-n\) on the positive domain. Neither difference in the size bounds vanishes for distinct candidates, by the pair-ratio separation below. The open collision count concerns the actual packed products with their common middle factors and the original squarefreeness and primitivity conditions.
+
+A shared geometrically irreducible surface whose two images under \((r_-,s_-)\) and \((r_+,s_+)\) both have dimension at most one has constant \(t\), so it contributes at most one center. If \(t\) were nonconstant, the two fields generated by the images, each containing \(t\), would both be algebraic over the one-variable field generated by \(t\) over the algebraic closure of the constants. Their compositum is the field of the surface in this chart, of transcendence degree two, a contradiction. Thus the surfaces that require a new count dominate at least one of these pair projections.
+
+## A divisibility bound on shared surfaces
+
+Fix one index \(i\) and let \(j,k\) be the other two. Use the integer coordinates
+\[
+x=n+i,\qquad w_1=b_i^2b_j a_i a_j,\qquad w_2=b_i^2b_k a_i a_k.
+\]
+They are evaluations of sections of bidegree \((3,2)\) on the affine normalization by the shift 1. Suppose the component's points obey a nonzero integer polynomial \(P(x,w_1,w_2)\) of fixed bounded degree and coefficient height \(X^{O(1)}\). If one monomial of its support uniquely minimizes both weights \((2,1,1)\) and \((3,2,2)\), with corresponding coefficient \(c\), the component contributes \(O_\varepsilon(X^\varepsilon)\) centers. This includes the case of nonzero constant term.
+
+To see this, take any prime \(p\mid a_i b_i\), with \(e=v_p(a_i)\) and \(f=v_p(b_i)\). Coprimality across the three terms gives the coordinate valuations \(e(2,1,1)+f(3,2,2)\). The monomial singled out has valuation, before its coefficient, at least \(e+f\) below every other monomial. The zero polynomial value forces \(p^{e+f}\mid c\). Hence \(a_i b_i\mid c\), leaving \(O_\varepsilon(X^\varepsilon)\) divisor pairs and at most one center for each. The condition is on the actual support of an equation satisfied by the component. The general determinant does not ensure such an equation.
+
+## Pair-ratio separation and binomial components
+
+Fix distinct indices \(i,j\). For two centers \(n,n'\) in a height band \([X,2X]\), put \(u=b_i b'_j\), \(u'=b'_i b_j\), \(v=a_i a'_j\), \(v'=a'_i a_j\). The same product identity gives
+
+\[
+u^3v^2-u'^3v'^2=(i-j)(n'-n),\qquad
+u^3v^2,u'^3v'^2\ge (X-1)^2.
+\]
+
+If \(u=u'\) and \(v\ne v'\), the left side has absolute value at least \(u^3(v+v')\ge2u^{3/2}(X-1)\). Equal kernel ratios give the same pair of kernels by primitivity, so \(u=b_i b_j\ge2\) since distinct positive squares have gap at least three. This lower bound exceeds \(2X\) for \(X\ge2\). If \(v=v'\) and \(u\ne u'\), the left side has absolute value at least \(3v^2\min(u,u')^2\ge3v^{2/3}(X-1)^{4/3}>2X\) for large \(X\). If both products agree the centers coincide. Thus a fixed rational ratio in either coordinate block admits at most one candidate center per sufficiently large height band, in any box. This gives the fixed-pair count without a separate Pell or Thue bound.
+
+Write \(x=(x_-,x_0,x_+)\) for either the kernel vector or the square-part vector. In a nontrivial homogeneous binomial constraint \(\prod_i x_i^{m_i}=c\) with fixed bounded integer exponents summing to zero, at least two coordinates are active. If a point exists, \(c=A/B\) is positive rational with \(A,B\) coprime and of polynomial height in \(X\), by evaluation at that point. Pairwise coprimality forces every prime of an active coordinate to divide \(AB\). Each such prime can occur at at most one active coordinate, and its valuation is fixed once that index is specified by \(m_i v_p(x_i)=v_p(c)\). There are at most \(3^{\omega(AB)}\ll_\varepsilon X^\varepsilon\) choices for the active coordinates, each fixing at most one center by pair-ratio separation.
+
+More generally, in either block suppose an integer equation of bounded degree and polynomial coefficient height has a unique monomial of least exponent in coordinate \(x_i\), with coefficient \(c_i\). For each \(p^e\parallel x_i\) every other coordinate is a unit modulo \(p\). After factoring out the least monomial valuation, all other terms have an extra factor \(p^e\). Thus \(x_i\mid c_i\). If this holds for two distinct coordinates, whose minimizing monomials may differ, divisor counting and the fixed-pair result again give \(O_\varepsilon(X^\varepsilon)\) centers on the component.
+
+## Averaging the reduced lattice heights
+
+For equal width exponent \(\mu\), let \(M=\lceil X^\mu\rceil\). For each cell with lower endpoints \(r_-^0,r_+^0\), form the rank-three lattice given by mapping \(b\in\mathbb Z^3\) to
+
+\[
+\left(\frac{b_0}{B_0},\ M\left(\frac{b_-}{B_-}-r_-^0\frac{b_0}{B_0}\right),\ M\left(\frac{b_+}{B_+}-r_+^0\frac{b_0}{B_0}\right)\right).
+\]
+
+Use the analogous lattice for \(a\), with \(A_i\) and slopes \((r_i^0)^{-3/2}\). The normalized lattice images of genuine candidates are in a fixed cube, since \(1/n\ll1/M\). Let \(L_b,L_a\) be the reciprocals of the first sup-norm minima, capped below by 1. For \(T>1\) and \(T\ge C\max B_i/M\) with a sufficiently large absolute \(C\), the number of cells with \(L_b\ge T\) is \(O(B_0B_-B_+/T^3)\). A short vector has \(q_0=|b_0|\) between 1 and \(B_0/T\): if \(b_0=0\), each of the other integer coordinates must have absolute value less than 1. Reverse the sign so that \(b_0=q_0\). The other two coordinates are positive and comparable to \(q_0 B_i/B_0\), giving \(O(B_-B_+q_0^2/B_0^2)\) choices. Each such vector constrains each interval endpoint to a range of length \(O(B_0/(MTq_0))\), hence meets \(O((B_0/(Tq_0))^2)\) cells. Summing over \(q_0\) proves the tail bound. The same argument applies on the \(a\) side because the endpoint map \(r\mapsto r^{-3/2}\) preserves spacing up to constant factors on \([1/2,2]\).
+
+For \(S=B,A\), put \(L_{*,S}=\max(1,\max S_i/M,(S_0S_-S_+/M^2)^{1/3})\). Summing the tails in dyadic ranges gives \(\sum_R L_b^p\ll_p M^2 L_{*,B}^{p}\) for \(0<p<3\), and the analogous result for \(a\). Hölder yields \(\sum_R L_b^p L_a^q\ll_{p,q}M^2 L_{*,B}^p L_{*,A}^q\) for \(p,q\ge0\), \(p+q<3\), including an exponent zero by the separate moment bound. In the localized region write \(\alpha_i=(1-3\beta_i)/2\) and let bars denote coordinate averages. The spans imply \(\max\beta_i-\bar\beta\le4/135\) and \(\max\alpha_i-\bar\alpha\le2/45\). For \(4/45\le\mu\le1/5\), the reference heights satisfy \(L_{*,B}\ll X^{\bar\beta-2\mu/3}\) and \(L_{*,A}\ll X^{\bar\alpha-2\mu/3+(2/45-\mu/3)_+}\), up to fixed factors from the window conventions. The exponents are positive, and \(3\bar\beta+2\bar\alpha=1\) gives
+
+\[
+L_{*,B}^3L_{*,A}^2\ll X^{\max\{1-10\mu/3,\ 49/45-4\mu\}}.
+\]
+
+For the arithmetic lift, choose three independent vectors at successive minima in each lattice. Their index is bounded by the upper bound in Minkowski's second theorem and Hadamard's determinant inequality. Cramer's rule and the same bound on the product of the minima give coordinates \(O(L_b)\) and \(O(L_a)\) for vectors in the fixed cube. Multiplication by the respective index gives integer coordinates with the same bounds. This is an invertible rational linear change of the original integer coordinates on each side. Take its 60 monomials of bidegree \((3,2)\). They are integers of height \(O(L_b^3L_a^2)\), and the two fixed differences become two affine linear equations. On \(V\) these equations give the affine chart of its Segre–Veronese image where \(b_0^3a_0^2-b_-^3a_-^2\ne0\), scaled so this linear form is 1. Each lifted point determines its center by the linear form for \(b_0^3a_0^2\).
+
+If a cell contains a bounded number of integral curve components of bounded degrees, let \(d=3d_b+2d_a\) denote the degree in this embedding. Here \(d_b,d_a\) are the degrees of the pullbacks of the hyperplane classes to the curve, so they include the degree of a nonconstant projection onto its image. The affine chart preserves \(d\), and [Castryck–Cluckers–Dittmann–Nguyen, Theorem 3](sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf) bounds each component by \(O_{d,\varepsilon}(X^\varepsilon(L_b^3L_a^2)^{1/d})\). The lifts have polynomial height even in the exceptional cells. For \(d\ge2\) the relevant mixed moment has total order \(5/d<3\). Thus summing over cells gives exponent
+
+\[
+E_d(\mu)=2\mu+\frac1d\max\left\{1-\frac{10\mu}{3},\ \frac{49}{45}-4\mu\right\}.
+\]
+
+The unequal-window term comes from the square-part reference height. The triple \((2/15,8/45,8/45)\), approached from the strict region, attains \(\max\alpha_i-\bar\alpha=2/45\). At \(\mu=11/105\), the height exponent is \(211/315\) and
+
+\[
+E_{22}(11/105)=\frac{1663}{6930}=\frac6{25}-\frac1{34650}.
+\]
+
+This handles degree at least 22 in the sum over cells. For degree 21 the unequal-window term alone would require \(\mu\le889/8550<2\sqrt{2}/27\) to reach \(6/25\). The same source's Theorem 2 separately handles surface components whose projection to \(\mathbb P_b^2\) is an integral curve of bounded image degree at least 8. The CRT gives at most one center per projected point, the lattice coordinates on that side give projective height \(O(L_b)\), and the summed exponent is at most \(22/105+(2/8)(8/45-22/315)=149/630<6/25\). These deductions apply to the indicated components of bounded multiplicity per cell.
+
+## Rational curves with controlled parametrizations
+
+Suppose a rational curve in \(V\) is given by two triples \(P_i,Q_i\) of integral homogeneous binary forms, with one fixed degree per triple, no common zero within either triple, and coefficient heights at most \(X^K\) for fixed \(K\). Count only the candidate points with rational preimages under the supplied map. A birational normalization covers all smooth rational points, and singular points can be treated separately. Put \(M_i=P_i^3Q_i^2\) and \(G=M_0-M_-=M_+-M_0\). If the curve carries a genuine parametrized point, \(G\not\equiv0\). The function \(f=M_0/G\) is the center at those points, so a constant \(f\) contributes at most one center.
+
+If \(f\) has degree \(d>0\), let \(Z\) be the geometric projective roots of \(G\), let \(p\) count the poles of \(f\), and let \(e\) count points of \(Z\) over \(-1,0,1\). All poles are in \(Z\), and \(p+e\le|Z|\). The multiplicity of every point outside \(Z\) in the three finite fibers is at least two: \(f+i=M_i/G\) and every zero of \(M_i\) has multiplicity at least two. These fibers together contribute at least \(3d/2-e/2\) to the ramification, and the poles contribute \(d-p\). Riemann–Hurwitz for \(f:\mathbb P^1\to\mathbb P^1\) gives \(d\le 2p+e-4\), hence \(|Z|\ge3\).
+
+At a primitive integral parameter \((s,t)\), the gcd \(g_P\) of the three values \(P_i(s,t)\) divides a fixed nonzero integer \(R_P\) of size \(X^{O(1)}\), and likewise for \(Q\). For a positive-degree triple use the homogeneous resultant of one nonzero coordinate form with a bounded integer linear combination of all three that avoids its zeros. Such a combination exists by testing coefficients \((1,j,j^2)\) for more than twice the degree many integers \(j\). The resultant identities in the two parameter charts and \(\gcd(s,t)=1\) give the gcd divisibility. For degree zero use the gcd of the constants. A genuine point has primitive coordinate vectors, so the shift 1 gives \(|G(s,t)|=g_P^3g_Q^2\). The primitive squarefree part of \(G\) is an integral binary form of degree at least three, divides \(G\), and takes a nonzero signed divisor value of \(R_P^3R_Q^2\). [Stewart's Theorem 1, consequence on p. 796](https://uwaterloo.ca/pure-mathematics/sites/default/files/uploads/documents/s0894-0347-1991-1119199-x_0.pdf) applies to content one and nonzero discriminant, including reducible forms. Summing its uniform bound over the divisor values gives \(O_\varepsilon(X^\varepsilon)\) genuine parametrized centers at bounded degree and polynomial coefficient height.
+
+## Polynomial-height normalizations from candidate points
+
+Let a geometrically integral genus-zero curve over \(\mathbb Q\) in \(V\) have bounded \(\mathcal O(3,2)\)-degree \(D\). Its singular points contribute \(O_D(1)\) centers. Indeed a finite birational projection to a plane curve of degree \(D\) is an isomorphism over the smooth locus of the plane curve. The plane singular locus has at most \(D(D-1)\) points by intersecting with a nonzero partial derivative, and each projection fiber has at most \(D\) points by the linear-section degree bound. This uses the finite birational projection of [Castryck–Cluckers–Dittmann–Nguyen, Proposition 4.3.2](sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf).
+
+If there are at most \(D^2\) smooth candidates, the count is already bounded in terms of \(D\). Otherwise select \(D^2+1\) distinct smooth candidate points. The normalization has a rational point and hence is \(\mathbb P^1_{\mathbb Q}\). Fix the first three preimages at \([1:0],[0:1],[1:1]\) by a rational change of parameter. In a polynomial system for the coefficients of the two binary-form triples, prescribe their degrees \(d_b,d_a\) from this normalization, with \(3d_b+2d_a=D\). In each triple fix to 1 a coefficient that is nonzero in the actual map, and require a nonzero resultant of two fixed bounded integer combinations by adjoining its reciprocal as a variable. Constant triples just need the nonzero fixed coefficient. Prescribe the selected projective images by cross multiplication at their preimages. For all marks after the three fixed ones use unknown affine parameters in the chart omitting \([1:0]\), which none of them equals. This gives a system with bounded dimension, number of equations and degrees in terms of \(D\), and log coefficient height \(O_D(\log X)\).
+
+Every complex solution gives a morphism with image degree at most \(D\) containing the \(D^2+1\) distinct selected points. By the projective Bézout degree bound the image is the original curve. Its pullback of the embedding line bundle has degree \(D\), so the map has degree one onto that curve. The three specified preimages on its smooth locus fix the parameter change on the normalization. The coefficient scales, other preimages, and resultant reciprocals are then unique. Thus the affine system has a single point, which is rational because the original normalized map and preimages are rational. [Krick–Pardo–Sombra, Corollary 2.11](sources/krick-pardo-sombra-nullstellensatz-math9911094.pdf) bounds the log height of this point by \(O_D(\log X)\) from the height of the equations. Clearing denominators gives coefficient heights \(X^{O_D(1)}\). The preceding rational-curve count applies to all smooth rational points via this normalization, giving a uniform \(O_{D,\varepsilon}(X^\varepsilon)\) count on the full genus-zero curve including its bounded singular locus.
+
+The residual arithmetic count concerns shared surfaces outside the proved component classes and any remaining curves of degree at most 21. A bounded-degree geometrically integral curve in this residual can only require a new curve count in positive genus. The sufficient collision bound retains both shifts, squarefreeness and primitivity on the surviving points.

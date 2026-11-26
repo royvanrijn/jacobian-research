@@ -17,9 +17,9 @@ is required. The bound holds uniformly over all
 multiplicities and all orders.
 
 More precisely, fix the number of types \(k\) and an upper
-bound \(D\) on their gaps. With
+bound \(D\) on the gaps of types with positive slope. With
 \[
-       M_H=1+\max_i(a_i+s_i H+d_i),
+       M_H=1+\max_i(a_i+s_i H),
 \]
 there is an effective estimate \(C_{k,D}(\log(2+H+M_H))^{\kappa_{k,D}}\),
 uniform over the core, the affine forms and the orientations.
@@ -168,8 +168,10 @@ forces each row type at a collision to satisfy
 \[
                   r_i\,\frac{d_i^2}{a_i+s_i T+d_i}<12 .
 \]
-For \(0\le T\le H\) all ordinary collisions therefore lie in
-the box \(0\le r_i\le 12M_H\).
+Since \(d_i\ge1\), \((a_i+s_i T+d_i)/d_i^2\le 1+a_i+s_iT\).
+Thus all ordinary collisions in \(0\le T\le H\) lie in
+the box \(0\le r_i\le 12M_H\), even when the fixed-height
+types have gaps larger than \(D\).
 
 For each such box the collision set is restricted
 sub-Pfaffian of format and degree bounded solely in
@@ -181,7 +183,10 @@ coordinates \(x_{j,h,i}\) with
 \]
 For \(0\le T\le H\) the right side lies between one and an
 explicit positive upper bound, so all the \(x_{j,h,i}\)
-range in a finite box. The coefficient multipliers in the
+range in a finite box. The polynomial \(P_{j,h,i}\) has degree
+at most \(J D\) for a moving type and degree zero for a
+fixed-height type, where its coefficient is a positive
+constant of arbitrary magnitude. The coefficient multipliers in the
 resultant equation are \(\exp(\sum_i r_i x_{j,h,i})\).
 On these boxes the exponential of each fixed-degree
 polynomial \(f\) is a Pfaffian chain entry, since its
@@ -241,7 +246,7 @@ For each allowed multiplicity vector, require a present row with
 This holds in particular when all multiplicities are positive and
 each slope column is nonzero. Put
 \[
-       L=1+\max_i\left(a_i+d_i+H\sum_{\ell=1}^b s_{i\ell}\right).
+       L=1+\max_i\left(a_i+H\sum_{\ell=1}^b s_{i\ell}\right).
 \]
 Say a grid point is exceptional if some admissible integer
 multiplicities support a physical consecutive collision.
@@ -252,14 +257,16 @@ of exceptional grid points in \(\prod_{j=1}^b E_j\) is at most
             C_{k,D} \bigl(\log(2+H+L)\bigr)^{\kappa_{k,D}}
                              \prod_{j\ne\ell}|E_j| .           \tag{1}
 \]
-The constants do not depend on the fixed core, slopes, intercepts,
-or the number of parameter coordinates. The count is simultaneous
+Here \(D\) need only bound the gaps of the types with positive
+slope in the chosen direction. The constants do not depend on
+the fixed core, the other gaps, the slopes, the intercepts, or
+the number of parameter coordinates. The count is simultaneous
 over all adjacent orders and all multiplicities.
 
 Fix the other coordinates in the grid. The remaining ray has
 intercepts \(a_i+\sum_{j\ne\ell}s_{ij}T_j\), slopes \(s_{i\ell}\),
 and at least one moving row for each admissible witness.
-Every lower and upper endpoint on \(0\le T_\ell\le H\)
+Every smaller endpoint on \(0\le T_\ell\le H\)
 is bounded by \(L\). The format-uniform one-parameter bound
 therefore applies with the same constants on every slice.
 There are exactly \(\prod_{j\ne\ell}|E_j|\) slices in the
@@ -274,7 +281,21 @@ of the tuples gives all-order coprimality for *every* choice of
 positive integer multiplicities. Gaps in \(\{1,\ldots,D\}\) and
 both orientations can even be allowed to vary with the tuple:
 take the union of the at most \((2D)^k\) exceptional sets.
-Unlike a one-scale conclusion, this permits every height to
-vary independently. The estimate allows sparse exceptional
+Each height coordinate in this grid varies independently. The estimate allows sparse exceptional
 tuples and its format bound depends on the number of types and
 the gap bound.
+
+
+The restriction on gaps in this example can be relaxed. If one
+height coordinate has gap at most \(D\), (1) is uniform over
+arbitrarily large fixed gaps in the other coordinates. Moreover
+one can vary one of those other gaps without prescribing it in
+advance. For any collision and any positive multiplicity, the
+curvature bound forces a gap at a lower height at most \(H\)
+to be at most \(6+\sqrt{36+12H}\). When all but that one gap
+are bounded, a union over its \(O(\sqrt{H+1})\) possible values
+therefore leaves a fraction
+\(O_{k,D}((\log(2+H))^\kappa/\sqrt{H+1})\) of exceptional
+tuples in \(\{0,\ldots,H\}^k\). This corollary assumes \(k\ge2\)
+and all types present. It is simultaneous over the unbounded
+gap as well as the multiplicities and the orientations.

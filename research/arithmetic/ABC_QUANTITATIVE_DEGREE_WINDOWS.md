@@ -357,24 +357,75 @@ All choices on the right are fixed before the small-budget limit. In particular 
 
 ### A restriction at equality of the nonatomic total
 
-Suppose a balanced limiting profile has total nonatomic mass \(c_A+c_B+c_C=1/2\). The three pair inequalities force \(c_A=c_B=c_C=1/6\). Consider any two letters \(U,V\) with finitely many positive atomic scales, and let \(p\) be the total number of their positive atomic scales on the two letters, counting a shared positive scale once per letter. If \(p=0\), this profile is impossible. For \(p\ge1\), their nonatomic measures satisfy, on compact positive-scale intervals away from those atoms, the local mass bound
+More generally, let \(d\) be the normalized count exponent in a
+height-first limit, \(c_U,c_V\) the nonatomic masses on two
+roles, and suppose the modulus role has positive nonatomic
+mass. Use arbitrary fixed polynomial-height supported
+coefficients, with the measures on the residual factors.
+The original complete values stay primitive, so those
+coefficients are units at every modulus on the other role.
+
+Assume the two free measures have finitely many positive atomic
+scales. Write \(p\) for their total number, counting a common
+scale once per role. Fix a compact interval of positive scales
+on a free role, away from its positive atoms. If a small interval
+\(I\) in it has positive nonatomic mass \(t\) and width \(\sigma\),
+with continuity endpoints, then
 \[
-\nu_{T,\mathrm{na}}(I)\ll |I|^{1/p}\qquad(T=U,V).
-\tag{UW3}
+        d\le c_U+c_V-t/4
+        \qquad \text{whenever } \sigma\le c\,t^p ,
+                                                        \tag{UW4}
 \]
-For \(p=1\), this entails locally bounded densities on those intervals.
+where \(c>0\) can depend on the fixed scale ranges and the
+limiting profile. This inequality concerns the two free
+measures and does not require minimal total nonatomic mass.
+In particular, if \(p=0\) and \(c_U+c_V>0\), then
+\(d<c_U+c_V\).
 
-To prove it, free all atom windows on \(U,V\) along with their zero windows. Also choose a small interval \(I\) on one of those letters in a compact scale range positively separated from zero and the finite atom lists. Choose continuity endpoints and let \(t=\nu_{T,\mathrm{na}}(I)>0\), \(\sigma=|I|\). Free it as one additional group at its midpoint. Thus \(m=p+1\), the combined retained cost reduction beyond the atoms is \(t\), and \(E\le \sigma t\). The combined frozen cost on \(U,V\) is \(1/3-t\).
+Retain all the positive atom windows and the two zero windows.
+Keep \(I\) on its free letter as one more degree group. With
+\(m=p+1\) groups, the full frozen price on those two letters is
+\(c_U+c_V-t+o(1)\), and the wider numerical exponent is
+\(E\le \sigma t+o(1)\). The zero windows contribute vanishing
+numerical height. The high scaled-degree tails, including any
+escaped first moment, can be frozen at arbitrarily small
+radical price. All intervals and the inner tolerances can be
+chosen after fixing the limiting \(t,\sigma>0\).
 
-The modulus letter has nonatomic mass \(1/6\). Fix a compact positive range \([a,b]\) containing positive nonatomic mass in its interior. For all sufficiently small \(t\) choose a finite union of continuity intervals in this range of total mass \(\mu\in[t/4,t/2]\). Indeed take an atom-free measurable set of mass \(t/3\), a compact subset of mass at least \(t/4\), and an open neighborhood of total mass below \(t/2\). A finite cover of the compact subset by continuity intervals inside that neighborhood suffices. The degree factors in this union give a modulus of weight \(at/4\le w\le bt/2\). Choose \(\kappa=a/2\), below its fullness.
+On the modulus letter take a compact positive band \([a,b]\)
+with positive nonatomic mass. For small fixed \(t\) choose a
+finite union of continuity intervals in this band of total mass
+\(\mu\in[t/4,t/2]\). A compact atom-free subset of appropriate
+mass and an open neighborhood of total mass below \(t/2\) give
+such intervals by regularity. The full lock has numerical
+weight \(at/4\le w\le bt/2\). Take \(\kappa=a/2\) below the
+scaled fullness. In (UW2) the narrow height constants for the
+positive atom windows can be taken \(O(1/t)\). The interval
+group has constant \(O(1)\), since its raw mass is \(t\).
+Choose a fixed \(\ell\) large enough that
+\(B_m w/(\ell\kappa)<t/8\). The amplified height product is
+\(O(t^{-p})\), while \(\ell E/w=O(\sigma)\). Thus a sufficiently
+small constant in \(\sigma\le c t^p\) meets the wide-height
+criterion and makes \(E\sum_i 1/q_i<t/8\). Inserting these
+bounds in (UW2) proves (UW4). In the case \(p=0\), any
+sufficiently short continuity interval inside a positive
+nonatomic band works. It can be chosen with positive mass
+tending to zero, since the measure in the band has no atoms.
 
-The height constants for the atom groups can be taken \(O(1/t)\), while for the extra group they are \(O(1)\), uniformly in the location of \(I\) inside the chosen compact positive range. Choose the fixed \(\ell\) large enough that \(B_m w/(\ell\kappa)<t/8\). The product of the amplified height constants is then \(O(t^{-p})\), with a constant independent of the small interval. Since \(\ell E/w=O(\sigma)\), the wider-height criterion holds whenever \(\sigma\le c t^p\) for a sufficiently small positive constant \(c\). Also \(E\sum_i1/q_i<t/8\) for all sufficiently small \(\sigma\), by the fixed positive lower scales. Then (UW2) would give
+At equality \(d=c_U+c_V>0\), the same argument for \(p\ge1\)
+therefore yields the local bounds
 \[
-d\le1/3-t+t/2+t/8+t/8<1/3.
+                    \nu_{U,\mathrm{na}}(I),
+                    \nu_{V,\mathrm{na}}(I)
+                          \ll |I|^{1/p} .             \tag{UW3}
 \]
-For \(p=0\), any sufficiently short positive-mass interval works, a contradiction. The mass of small intervals in the compact range tends uniformly to zero with their length, since the measure there has no atoms. For \(p\ge1\), the contradiction gives \(t\ll\sigma^{1/p}\), with constants uniform on the compact separations just specified. For discontinuity endpoints, enlarge the intervals by arbitrarily small amounts to continuity endpoints. This proves (UW3).
-
-When \(p=1\), the uniform interval estimate is linear in interval length. It extends to open subsets of each compact range by disjoint intervals and to Borel subsets by regularity, yielding absolutely continuous nonatomic restrictions of locally bounded density. This excludes a singular nonatomic component in this particular finite-atom configuration.
+They hold on compact positive intervals away from the finite
+atom lists. Enlarge intervals with discontinuity endpoints to
+continuity intervals. For \(p=1\) the restriction has locally
+bounded density by regularity. At a balanced endpoint with
+\(c_A+c_B+c_C=1/2\), the three pair inequalities give
+\(c_U=c_V=c_C=1/6\), so this includes the previous minimal
+total-mass conclusion.
 
 ## An explicit positive-degree mass in terms of numerical height
 

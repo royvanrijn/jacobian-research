@@ -200,6 +200,12 @@ Formal developments and characteristic-zero Hopf/Image classifications: complete
 | Actual sphere variations detect the escaping periods in two phases | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
 | Exact finite marked rank for the two escaping phases | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
 | Generic eight-row reconstruction at conductor 18 | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ESCAPING_VARIATIONS.md) |
+| A quintic obstruction for three correction inputs | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| Short coherent reconstruction for every radial parameter over an open base | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| Large-prime detection with arbitrary radial coefficient | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| A single normalized pole cannot prevent the seventeen-shift test | Internal result | proved | [Source](extended-geometry/CM_NEWTON_FULL_WIDTH_STRIP_MOMENTS.md) |
+| Coherent sphere detection throughout a fixed-boundary stratum | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md) |
+| An exact coherent obstruction to the first eight rows and a sharp ninth row | Internal result | proved | [Source](extended-geometry/CM_NEWTON_SPHERE_ATTACHMENT_STRATUM.md) |
 
 **Computed obligations:** 12 unresolved; 3 resolved within their exact scope.
 

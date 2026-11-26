@@ -1763,3 +1763,232 @@ needs price at least \(1/12-o_X(1)\) even after fixing \(G\).
 This example imposes only the target conditions. The two original
 summand caps and their additive relation carry the additional
 content of the preceding results.
+
+### A private summand modulus excludes the thin determinant
+
+**FP13.** Put \(r=1/6\), \(n=X^L\), with the height limit at
+each fixed budget before \(L\to0\). Work on a rich exact shared
+record of a putatively tied FP8 family. It supplies \(n^{2r-o(1)}\)
+selected pairs, with at most \(n^{r+o(1)}\) rows on either side.
+Apply the preceding low-target-multiplicity pruning. The right
+residual summands are each wholly nonatomic, and its target
+quotient has at most two macro prime powers times a numerical
+\(X^{o(1)}\) remainder, after removal of known fixed supported
+powers. Retain in the macro tuple only powers of positive
+limiting numerical weight, and include any numerically
+vanishing power in the remainder. Each retained prime base has
+raw price at least a fixed \(b>0\), the exact exponent labels
+are fixed at the inner limit, and the full moving raw quotient
+cap is \(r+o(1)\), including the remainder.
+
+Choose one signed determinant \(K=H\) or \(J\), writing
+\[
+                  D K=u a_1-v w_2,\qquad
+        (D,w_2)=(d_h,a_2)\text{ or }(d_j,b_2).
+\]
+Suppose its complete exact dictionary on this record has
+exponent at most \(s\), where
+\[
+                        s<\min\{r+b,3r/2\}
+\]
+with fixed positive margins. Then the putatively tied record is
+impossible. More precisely, after fixing the bought common
+modulus and retaining one edge per first-row and label incidence,
+write \(A_*\) for the number of permitted first rows and \(K_*\)
+for the size of the exact signed determinant dictionary. At fixed
+quotient cap \(r+o(1)\), with every right macro base priced at least
+\(b-o(1)\), the simple edge count satisfies
+\[
+    E\ll n^\eta X^\varepsilon
+           \left(A_*^{1/2}K_*+
+                  A_* K_*^{1/2} n^{(r-b)/2}\right) .    \tag{FP13}
+\]
+Here the compression and diffuse-profile refinements are made
+with sufficiently small fixed tolerances for any fixed
+\(\eta>0\). The count before fixing the common modulus has
+its actual catalogue price added. No relation between the
+first and second complete target sizes beyond the original
+height shell is needed.
+
+**A common unit modulus.** Buy a full divisor \(F\mid w_2\)
+in a compact positive-degree band of its nonatomic residual
+spectrum outside the prescribed and shared pools. As in GE1,
+for arbitrarily small fixed price \(\mu>0\) it has fixed positive
+numerical depth and order \(\gg1/L\). Fix the exact \(F\)
+after radical and supported factor enumeration, leaving
+\(n^{2r-\mu-o(1)}\) edges. Since \(F\) is outside the exact
+shared support, its primes do not occur on the first original
+row of any eligible pair. Original primitivity makes \(u\) a
+unit there, and \(D\) is supported on shared primes. Thus
+\[
+                          DK\equiv u a_1\pmod F
+\]
+is a unit congruence. For one first row and one exact \(K\),
+the same equation modulo \(v\) puts \(u\) in one class.
+The original height shell bounds \(u/v\) between two fixed
+positive constants, so there are boundedly many possible
+\(u\)'s. Their right target fibres cost arbitrarily little.
+Retain one partner per first-row and \(K\)-label incidence.
+
+**A common label and macro tuple.** Color primes into the
+right macro slots and remainder at height-subpower cost.
+Now each prime has a fixed slot or stays in the remainder.
+The loss of a coloring is height-subpower by the uniform
+\(\omega\)-bound at polynomial height and a fixed number
+of colors. For two first rows \(i,i'\) with a common \(K\)
+label, the corresponding right quotients \(u,u'\) satisfy
+\[
+                         u'/u\equiv a_i/a_{i'}\pmod F .
+\]
+Amplified GW counts exact \(u'/u\) in this class at
+\(n^{o(1)}\) in the normalized limiting exponent. There
+are boundedly many narrow rational prime ratios of height
+\(n^{O(1)}\) with the exact fixed orders, times a ratio of
+two numerical \(X^{o(1)}\) remainders. Fix the macro
+cancellation patterns and use GW's independent numerator
+and denominator coloring for amplification. The original
+slot coloring gives divisor-bounded recovery of the
+collapsed powered factors. Only the exact ratio is counted,
+so equal cancelled macro factors need not be reconstructed.
+
+If the two macro tuples differ, their exact ratio identifies
+at least one of the differing prime bases since it occurs
+in the reduced numerator or denominator by the coloring.
+The slot and exponent are fixed up to bounded or divisor
+cost. Each such exact ratio thus has at most \(n^{r-b+o(1)}\)
+ordered preimages in complete quotients. Fix one known
+macro power, count the remaining support and full powers
+at its remaining raw cap, and recover the other quotient
+by the ratio. The conditional right target completions
+cost arbitrarily little and determine the \(K\)-label
+when the two first rows are fixed. Thus each pair of
+first rows has at most \(n^{r-b+o(1)}\) common labels with
+different right macro tuples.
+
+If \(E\le 4A_*\) then (FP13) follows from the second term.
+Otherwise discard first rows of degree below \(E/(2A_*)\);
+the remaining simple graph retains at least \(E/2\) edges.
+Cauchy–Schwarz over \(K\) gives at least \(E^2/(4K_*)\)
+ordered common-label collisions. The different-macro
+collisions cost at most \(A_*^2 n^{r-b+o(1)}\).
+Partition the edges by \((K_0,M_0)\), its determinant label
+and exact right macro tuple. Each class consists of different
+first rows. For each such row fix the right partner at \(K_0\),
+with right quotient \(u_0\). The following recovery bounds
+the total edges away from \(K_0\) on all the first rows of
+one class.
+
+**Two exact labels recover the anchor's target.** At
+an edge of label \(K\ne K_0\), the two congruences
+with the same first row give
+\[
+                          R=u/u_0\equiv K/K_0\pmod F .
+\]
+The denominator macro product \(M_0\) is fixed and
+a unit; after absorbing it, \(R\) again has boundedly
+many narrow powered prime roots and a wider short
+rational. Amplified GW counts its exact possibilities
+for the fixed label at \(n^{o(1)}\). Write
+\(R=A/B>0\) in lowest terms. Subtracting \(R\)
+times the determinant equation at \(K_0\) from the
+equation at \(K\) gives
+\[
+                      v(Rw_{2,0}-w_2)=D(K-RK_0).
+\]
+If the right side vanishes, \(w_2=Rw_{2,0}\) and
+\(c_2=Rc_{2,0}\). The two original right primitive rows
+are proportional and thus equal, so \(R=1\) and
+\(K=K_0\), impossible. Otherwise
+\[
+                           v\mid D(BK-AK_0)
+\]
+leaves divisor-many possibilities. The cleared integer
+has polynomial height. Then \(Gv\) is the first
+complete target and its conditional fibre costs
+arbitrarily little. The chosen first row and \(K\)
+fix the edge in the simple graph. Thus over the first rows of a class there are at most
+\(K_*n^\eta X^\varepsilon\) edges away from \(K_0\).
+Each first row in the class has at least \(E/(4A_*)\) other
+labels after the degree pruning. Therefore a class has size
+\(O(A_*K_* n^\eta X^\varepsilon/E)\). Summing its square
+against the other classes gives at most
+\(O(A_*K_* n^\eta X^\varepsilon)\) equal-macro collisions.
+The two collision counts and the Cauchy–Schwarz lower bound
+prove (FP13). Arbitrarily small changes of \(\eta\) absorb
+the target fibre and GW errors.
+
+On a rich record, \(A_*\le n^{r+o(1)}\) and
+\(K_*\le n^{s+o(1)}\). The original multiplicities discarded
+on fixing a label cost arbitrarily little, and the \(F\)
+catalogue costs \(\mu\). The selected pair exponent per
+record is at most
+\[
+           \mu+\max\{r/2+s,\,(3r-b+s)/2\}+\eta
+\]
+with fixed-height allowances. In particular \(s=r\) gives a
+strict saving for every fixed \(b>0\), taking \(\mu,\eta\)
+small in terms of \(b,r\). At the first raw tie the possible
+macro prices are at least \(r/2-o(1)\) on both sides, so the
+per-record upper exponent is \(7/24+\eta\) on this sector.
+
+[Wide-cofactor congruence (GW)](ABC_WIDE_COFACTOR_CONGRUENCES.md#a-bounded-number-of-small-roots)
+
+### Excluding the entire first raw pair boundary
+
+Take the ordinary original balanced caps of FP6–FP8, with
+a fixed global prescribed polynomial-height pool allowed
+when the same original balance is read outside it.
+Matchings and profiles are refined on common fixed-budget
+degree meshes on the selected pairs before picking rich
+records. This permits the limiting statements on both row
+projections and on rich records to use the same profiles.
+
+Both summand matching products of positive fixed numerical
+depth are excluded by the preceding separate congruences
+after fixing \(g\). If just one is tall, the other
+normalized determinant factor \(K\) has outside radical
+cap \(r+o(1)\) by the preceding exact \((r,2r)\) split.
+The entire known support, including \(g\), costs subpower
+to fix its powers, so the exact \(K\)-dictionary has
+\(s\le r+o(1)\). Use FP13 with a cheap full divisor of the
+corresponding right diffuse summand. This excludes all
+one-tall cases with either one or two active target macros.
+
+It remains to take both matching products of numerical
+weight tending to zero. Outside the globally fixed pool
+the matched original shared summand powers are then
+numerically short. Unequal or cross-role shared powers
+contribute only \(o(1)\) raw mass at the FP8 tie.
+The full outside measures of both original summands are
+therefore \(r\delta_0\) plus wholly nonatomic mass \(r\),
+by the corresponding fixed-record classifications.
+The exponent-full selected pairs project globally to
+row exponent \(2r\) on either side, by FP6. If a globally
+fixed pool is used, fix all its supported original powers
+at subpower cost before this profile argument.
+GE1, using a cheap full lock on one diffuse summand, then
+forces nonatomic mass at least \(r\) on the target.
+With both free summands having no positive atomic scales,
+the \(p=0\) case of UW4 bounds the global row exponent
+strictly below \(2r\). This excludes the last case.
+
+Hence under the original three balanced caps and the
+FP6–FP8 pair-budget hypotheses, there is a fixed positive
+margin in the required pair loss above \(\rho=1/6\).
+Indeed if no such margin were possible, a height-first
+sequence of purportedly viable raw pair strata with
+tolerances tending to zero would have \(\rho\to1/6\)
+by FP8, giving one of the excluded profiles. The
+constant for ordinary caps is independent of the
+complete dictionary exponent. A pre-fixed pool
+requires the same balance and polynomial-height
+conditions throughout. For the both-short argument,
+use the matching depth outside that pool. All locks
+in the other cases can likewise be taken outside it.
+
+This proves a strict restriction on the raw product-pair
+budget. A global saving for the original count still
+requires producing a suitable number of pairs with
+controlled auxiliary radicals, or a different reduction.
+
+[Two free degree windows (UW4)](ABC_QUANTITATIVE_DEGREE_WINDOWS.md#a-restriction-at-equality-of-the-nonatomic-total)
