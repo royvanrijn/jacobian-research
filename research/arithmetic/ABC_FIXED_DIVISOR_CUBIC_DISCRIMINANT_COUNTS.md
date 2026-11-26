@@ -10,7 +10,12 @@ It gives the balanced first-moment row bound
 \[
 \sum_{\substack{N\le y\le 2N\\y\ \mathrm{squarefree}\\(x,y)=1}} h_3(\pm xy)\ll_\varepsilon N^{4/3+\varepsilon},
 \]
-and the averaged refinement below gives \(O_\varepsilon(N^{29/9+\varepsilon})\) for the balanced two-edge moment. All implicit constants below are uniform in \(x,N\), apart from dependence on the indicated constants.
+and the averaged refinement below gives
+\(O_\varepsilon(N^{3+\varepsilon})\) for the balanced two-edge
+moment. With unequal kernel lengths \(A,B,C\), it gives the
+natural bound \((ABC)^{1+\varepsilon}\) for two edges meeting at
+a smallest kernel. These estimates follow by keeping short
+cubic certificates within their own successive-minima ranges. All implicit constants below are uniform in \(x,N\), apart from dependence on the indicated constants.
 
 ## Integral representatives and a lattice count
 
@@ -114,116 +119,130 @@ For each fixed \(x\), the quadratic fields \(\mathbb Q(\sqrt{\pm xy})\) in the r
 
 ## An averaged saving from short cubic certificates
 
-Let \(S_x=\sum_y(h_3(xy)+h_3(-xy))\) on the balanced squarefree
-coprime row of size scale \(N\). Then
+Let \(1\le A\le B\) and let \(C_0>0\) be fixed. For squarefree \(q\asymp A\) prime to \(6\), let \(M_q\) count \(\mathrm{GL}_2(\mathbb Z)\)-orbits of primitive irreducible integral binary cubic forms with \(0<|\operatorname{Disc}(F)|\le C_0 AB\) and \(q\mid\operatorname{Disc}(F)\). The interval \(q\asymp A\) has fixed positive lower and upper comparability constants. Then
 \[
-                  \sum_x S_x^2\ll_\varepsilon N^{29/9+\varepsilon}.
+                        \sum_q M_q^2\ll_{C_0,\varepsilon} (AB)^\varepsilon A B^2.       \tag{CM2}
 \]
-Keep \(R=N^{1/2}\), \(q=x/\gcd(x,6)\), and the weighted boxes from
-the single-row proof. For any form in such a box, substitution
-\(F(X,Y)\mapsto F(X+mY,Y)\) for \(|m|\le t^2\) yields \(\gg t^2\)
-distinct forms in a fixed enlargement of the box. Indeed the
-corresponding substitution on \(F(tX,t^{-1}Y)\) has parameter
-\(m/t^2\), and a nontrivial unipotent cannot stabilize the three
-distinct projective roots of a nonsingular cubic. An orbit
-represented in the original box is therefore counted by the
-enlarged-box form count divided by \(\gg t^2\). Distinct orbits
-have disjoint sets of translates. We can split this form majorant
-into two terms without assigning an entire orbit to either term.
-For \(t\ge N^{1/18}\) the quadratic-in-\(d\) coefficient bound
-proved above, whose derivation uses only \(a\ne0\) and \(Rt^3\ll N\),
-gives a contribution
-\(O_\varepsilon(N^{3/2+\varepsilon}t^{-5})
- =O_\varepsilon(N^{11/9+\varepsilon})\) per \(x\).
+The result includes either sign and any further subset of this collection. Fundamental discriminants force the corresponding forms to be primitive: a form's content to the fourth power divides its discriminant, and no fundamental discriminant is divisible by a prime fourth power.
 
-For \(t<N^{1/18}\) use the minima argument in the enlarged box.
-Count only forms of fundamental discriminant, so they are
-primitive (content to the fourth power divides the discriminant).
-Rank one now gives at most two forms per assignment. Rank four
-gives \(O(1)\) as before. In rank two classify an assignment by
-whether \(\lambda_1\lambda_2\) is at least \(q^{2/3+1/9}\), and
-in rank three by whether \(\lambda_1\lambda_2\lambda_3\) is at
-least \(q^{5/4+1/36}\). In either large-product case there are
-\(O(N^{2/9})\) points per assignment, hence
-\(O_\varepsilon(N^{11/9+\varepsilon})\) per \(x\). A short
-certificate in the other cases is respectively \(F_1\) of
-weighted norm \(\ll J_2=N^{7/18}\), or the nonzero integral
-dual cubic \(G_{n/q}\) of weighted norm \(\ll J_3=N^{5/18}\).
-Both have the prescribed repeated roots modulo every \(p\mid q\).
+We derive (1) by counting short vectors in repeated-root lattices. Averaging over \(q\) is essential: the discriminants of the short vectors restrict the possible moduli. The contribution of each size range for the lattice minima is bounded in second moment before combining the ranges.
 
-Here is a bound over all centers \(x\) for the short nonsingular
-certificates at either norm bound \(J=J_2,J_3\). Write the
-certificate \(V=cV'\) by content \(c\ge1\). Its nonzero
-discriminant, of polynomial size in \(N\), supplies only
-\(O_\varepsilon(N^\varepsilon)\) possible divisors \(q\). The
-assignment is unique at each prime of \(q\) outside \(c\) and
-costs at most \(O_\varepsilon(N^\varepsilon c)\) jointly at
-the other primes. For \(J'=J/c\), the weighted coefficient
-box for \(V'\) with leading coefficient nonzero has
-\(O((J')^4)\) points whenever nonempty. When the leading
-coefficient is zero, the second coefficient is nonzero
-by nonsingularity. Its box has \(O((J')^3t^3)\) points when
-nonempty. In these two cases, respectively, \(J'\gg t^3\)
-or \(J'\gg t\), so the indicated lengths cover the shorter
-nonzero coordinate. Summing the two bounds with weight \(c\)
-gives \(O(J^4+J^3t^3)=O(J^4)\) because \(t^3\ll J\). Thus the
-total assignment count over \(x\) is \(O_\varepsilon(J^4
-N^\varepsilon)\), with the bounded ambiguity at 2 and 3 harmless.
-
-For a singular certificate use the factorization
-\(V=c\ell^2m\) with primitive integer linear forms, as in
-the rank-three argument. Put \(e=\gcd(q,c)\). The root at
-each prime outside \(e\) is fixed by \(\ell\). There are
-\(O_\varepsilon(N^\varepsilon e)\) assignments at the
-remaining primes. Also \(\|\ell\|_t^2\ll tJ/e\).
-If \(\ell=Y\) up to sign, the leading coefficient of every
-form in the lattice is divisible by \(q/e\). The certificate
-has \(e\le |c|\ll Jt^3\), so \(RJ=o(q)\) makes the
-leading-coefficient bound \(O(R/t^3)\) strictly smaller than
-\(q/e\) for all sufficiently large \(N\). There would be no
-irreducible form in the box. For any other \(\ell\), its
-\(X\)-coefficient is nonzero, so there are \(O(tJ/e)\)
-choices in its weighted box. Multiply by the \(e\)-weighted
-root count and sum over divisors \(e\mid q\). The per-center
-assignment cost is \(O_\varepsilon(tJ N^\varepsilon)\).
-After the old per-assignment rank-two and rank-three point
-bounds, the per-center exponents for these singular cases
-are at most \(1/18+7/18+1/3=7/9\) and
-\(1/18+5/18+1/4=7/12\).
-
-We have proved \(S_x\le G_x+B_x\) with nonnegative form-count
-majorants. The large cusp, the larger products, the singular
-certificates, and the trivial classes give
-\(G_x\ll_\varepsilon N^{11/9+\varepsilon}\).
-The nonsingular certificates give
+Use the weighted binary cubic boxes and repeated-root lattices
+of the preceding proof with \(R=(AB)^{1/4}\) and \(q\asymp A\).
+For each dyadic \(t\), the coefficient bounds are
 \[
- \sum_x B_x\ll_\varepsilon
-    N^\varepsilon\bigl(N^{4(7/18)+1/3}+N^{4(5/18)+1/4}\bigr)
-    \ll_\varepsilon N^{17/9+\varepsilon}.
+ (|a|,|b|,|c|,|d|)
+   \ll_{C_0} (R/t^3,R/t,Rt,Rt^3).
 \]
-We used the old per-assignment point counts in this last bound,
-and absorbed the dyadic summation. Now use
-\(\sum_x S_x\ll_\varepsilon N^{2+\varepsilon}\) from the
-signed ordinary first moment, and the uniform old row bound
-\(S_x\ll_\varepsilon N^{4/3+\varepsilon}\). Multiplying the
-good term by the first and the bad term by the second proves
-the exponent \(29/9\).
+Here \(t^3\ll_{C_0}R\) in a nonempty irreducible box because
+\(a\ne0\). If the lattice vectors in the corresponding
+weighted ball span \(j\) dimensions, write
+\(P=\lambda_1\cdots\lambda_j\) for the product of the
+successive minima. Their point count is \(O_{C_0}(R^j/P)\).
+There are \(O_\varepsilon(A(AB)^\varepsilon)\) assignments
+of repeated roots for each \(q\).
 
-This improves the balanced degree-36 estimate in MP11 for any
-two sign choices. It also improves the balanced joint minimum
-moment. With the squarefree and pairwise coprimality restrictions,
-write \(h_{xy}=h_3(\epsilon_1xy)\), and analogously for \(xz,yz\).
-For \(3/2\le k\le2\) the result is
+For each dyadic \(t\), the aggregate number of occurrences of
+primitive irreducible forms across \(q\) and all assignments is
+\(O_\varepsilon((AB)^{1+\varepsilon})\). There are
+\(O_{C_0}(R^4)\) coefficient tuples with \(a\ne0\): whenever a
+box contains one, all four extents are bounded below by a
+positive constant. The nonzero discriminant of a form allows
+only divisor-many \(q\)'s. A primitive form is nonzero modulo
+every prime, so its repeated root is unique at each \(p\mid q\).
+The assignment is therefore unique. The same aggregate bound
+holds for every subset of these occurrences.
+
+### Counting short certificates
+
+Fix \(t\) and a positive height bound \(J\) of polynomial size in \(AB\). A certificate is a nonzero integral cubic \(V\in\Lambda\) with \(\|V\|_t\ll J\). Across all \(q\asymp A\), the number of assignments admitting a nonsingular certificate is
 \[
- \sum_{x,y,z}^{*} \min(h_{xy},h_{xz},h_{yz})^k
- \ll_{\varepsilon,k} N^{3+(4/9)(k-3/2)+\varepsilon}.
+                       \ll_{\varepsilon}(AB)^\varepsilon(J^4+J^3t^3).             \tag{4}
 \]
-Indeed the new two-edge count bounds the common threshold
-tail by \(O_\varepsilon(N^{29/9+\varepsilon}H^{-2})\).
-The MP4 triangle bound supplies \(O_\varepsilon(N^{3+\varepsilon}
-H^{-3/2})\). These cross at \(H=N^{4/9}\). Sum dyadically,
-using \(3/2\le k\le2\). This improves the previous \(k>3/2\)
-moment over the full balanced range, with the target
-price-free \(N^{3+\varepsilon}\) moment at \(k=2\) still open.
+To prove this, write \(V=kV'\) with \(k\ge1\) its content and \(V'\) primitive. For each given \(V\), there are divisor-many \(q\), as \(q\mid\operatorname{Disc}(V)\ne0\). At primes dividing \(q/\gcd(q,k)\) the root is unique. At the remaining primes there are in total \(O_\varepsilon((AB)^\varepsilon\gcd(q,k))\le O_\varepsilon((AB)^\varepsilon k)\) choices. In the box for \(V'\), with scale \(J/k\), if its leading coefficient \(a\ne0\) then \(J/k\gg t^3\), and the number of tuples is \(O((J/k)^4)\). If \(a=0\), nonsingularity forces \(b\ne0\), so \(J/k\gg t\) and the number of tuples is \(O((J/k)^3t^3)\). Multiplying by \(k\) and summing proves (4). Also the total number of pairs of a modulus and a root assignment is always \(O_\varepsilon((AB)^\varepsilon A^2)\).
 
-[Balanced triangle bound (MP4)](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md)
+For fixed \(q\), the number of assignments admitting a singular certificate is
+\[
+                            \ll_\varepsilon (AB)^\varepsilon J t^3.                 \tag{5}
+\]
+Write \(V=k\ell^2 m\), with \(k\ne0\) an integer and \(\ell,m\) primitive integral linear forms. This factorization follows because a multiple root in a rational cubic is rational, and by Gauss's lemma. The weighted norm for linear forms is also defined by \((X,Y)\mapsto(tX,t^{-1}Y)\). Multiplication has \(\|\ell^2m\|_t\gg\|\ell\|_t^2\|m\|_t\), by compactness of the unit spheres and the absence of zero divisors. Since \(\|m\|_t\ge1/t\), on putting \(e=\gcd(q,k)\) this gives \(\|\ell\|_t^2\ll tJ/e\). Outside primes of \(e\), \(\ell\) determines the repeated root. At primes of \(e\) allow \(O_\varepsilon((AB)^\varepsilon e)\) choices. If the \(X\)-coefficient of \(\ell\) is nonzero, the count of linear forms of weighted size at most \(O((tJ/e)^{1/2})\) is \(O(tJ/e)\): the two coordinate extents have this product and each is bounded below when nonempty. If the \(X\)-coefficient is zero, primitivity requires \(\ell=\pm Y\), and these two choices cost at most \(O_\varepsilon((AB)^\varepsilon Jt^3)\) assignments for each \(e\). Here \(e\le |k|\ll Jt^3\), by the ordinary integer coefficient bound on \(V\). Summing the two branches over \(e\mid q\) proves (5).
+
+### Small cusp and the dyadic minima argument
+
+Assume \(t\le A^{1/14}\). Group every rank case into dyadic \(P\) where needed, and distinguish singular and nonsingular certificates. There are only \(O_{C_0}(\log(2AB))\) possible values of dyadic \(P\), since the minima are at most \(O_{C_0}(R)\) and at least \(t^{-3}\) up to a fixed constant. All bounds that follow allow \((AB)^\varepsilon\), with an arbitrarily small exponent.
+
+Rank zero is irrelevant. In rank one, there are at most two primitive integral vectors in the rational line. Thus the count per \(q\) is \(O_\varepsilon((AB)^\varepsilon A)\), and the aggregate count is \(O_\varepsilon((AB)^\varepsilon AB)\). In rank four, \(P\gg q^2\), as the determinant of the independent lattice vectors is a nonzero multiple of the lattice index \(q^2\). The weighted transformation has determinant one. The bound the lattice point bound and the assignment count give a count per \(q\) of order at most \(A R^4/A^2=B\), with the same bound on aggregate count. For each of these ranks, the product of the supremum per \(q\) and the aggregate count is \(O_\varepsilon((AB)^\varepsilon AB^2)\), which bounds its second moment.
+
+For rank two, the resultant of \(F_1,F_2\) is nonzero if the ball contains an irreducible form. A common nonconstant proper factor over \(\mathbb Q\) would otherwise divide every form in their span. Modulo every \(p\mid q\), the Sylvester map from pairs of binary quadratics to binary quintics via \((S,T)\mapsto S F_1+T F_2\) has image in \(\ell_p^2\mathbb F_p[X,Y]_3\), of dimension at most four. Therefore \(q^2\) divides the nonzero resultant. The resultant is invariant under determinant-one substitution and has bidegree \((3,3)\). Consequently \(P\gg q^{2/3}\). The certificate \(V=F_1\) has \(J=\sqrt P\) up to a fixed constant.
+
+- If the certificate is nonsingular, (4) gives \(O_\varepsilon((AB)^\varepsilon P^2)\) assignments globally, because \(J\gg A^{1/3}\ge t^3\) up to constants. Each has \(O(R^2/P)\) forms, so the product of the supremum and aggregate bounds is
+\[
+                       \frac{A R^2}{P}\cdot\frac{P^2 R^2}{P}=A R^4=A^2B\le AB^2.
+\]
+- If the certificate is singular, (5) gives count per \(q\) of order at most \(t^3R^2/\sqrt P\). This is at most \(O(B)\), since \(t^3\le A^{3/14}\), \(P\gg A^{2/3}\), and \(A^{3/14+1/2-1/3} B^{1/2}\le B\). Use the aggregate \(O_\varepsilon((AB)^\varepsilon AB)\) bound, restricted to primitive irreducible counts.
+
+For rank three, the integral dual cubic from the single-row
+argument is the short certificate for that assignment. In detail,
+let \(n=(n_1,n_2,n_3,n_4)\) be the signed integer cofactor vector of the rows \(F_1,F_2,F_3\). It is nonzero and \(v=n/q\) is integral, since the row ranks modulo all \(p\mid q\) are at most two. Moreover \(v\bmod p\) annihilates \(E_p\). If their reductions span \(E_p\), this follows by exact cofactor orthogonality to the three rows, which persists after division by \(q\). If their reductions have rank at most one, each minor is divisible by \(p^2\), and thus \(v=0\bmod p\). Write
+\[
+            G_v(X,Y)=v((-Y X_0+X Y_0)^3)
+                     =v_4X^3-3v_3X^2Y+3v_2XY^2-v_1Y^3,
+\]
+where the functional \(v\) acts on cubics in \(X_0,Y_0\). At a root of \(\ell_p\), the linear form \(-Y X_0+X Y_0\) is proportional to \(\ell_p(X_0,Y_0)\), so evaluation of the cube and its first derivatives shows \(G_v\) is divisible by \(\ell_p^2\) modulo \(p\). Thus \(V=G_v\) is a nonzero certificate in the very same lattice. Under the determinant-one matrix \(D_t=\operatorname{diag}(t^3,t,t^{-1},t^{-3})\), the cofactor vector becomes \(D_t^{-1}n\), whereas the coordinates of \(D_t G_v\) reverse those of \(D_t^{-1}n/q\) up to the fixed multipliers \(1,-3,3,-1\). Hadamard's bound therefore gives \(\|G_v\|_t\ll P/q\). Use \(J=P/A\) up to a fixed constant.
+
+- If \(G_v\) is nonsingular, \(q\mid\operatorname{Disc}(G_v)\ne0\) implies \(J\gg A^{1/4}\), since the discriminant is invariant under determinant-one substitution and homogeneous of degree four. Hence \(t^3\ll J\), so (4) combines with the trivial global assignment bound to give \(O_\varepsilon((AB)^\varepsilon\min((P/A)^4,A^2))\) assignments. The count in each is \(O(R^3/P)\). The product of the supremum and aggregate bounds is at most a constant times
+\[
+                 R^6\min(P^2/A^3,\ A^3/P^2)\le R^6=(AB)^{3/2}\le AB^2 .
+\]
+- If \(G_v\) is singular, (5) gives count per \(q\) of order at most \(t^3 J R^3/P=t^3 R^3/A\ll R^4/A=B\) by the upper bound \(t^3\ll R\) from irreducibility. Again use the aggregate \(O_\varepsilon((AB)^\varepsilon AB)\) bound.
+
+For each branch use the elementary inequality \(\sum_q U_q^2\le (\sup_q U_q)\sum_qU_q\) for nonnegative counts. This proves the target second moment for each dyadic component in the small cusp. The assignment used to count primitive irreducible forms is unique, and the choices of minima/certificates can be made independently for each assignment; no uniqueness of certificate is needed for (4) or (5).
+
+### Large cusp and passage to orbits
+
+Assume \(t\ge A^{1/14}\). For fixed \(a,b,c\), the discriminant as a polynomial in \(d\) is
+\[
+   -27a^2d^2+(18abc-4b^3)d+b^2c^2-4ac^3.
+\]
+For \(p\mid q\), it has at most two roots if \(p\nmid a\), at most one if \(p\mid a,p\nmid b\), and at most \(p\) otherwise. Thus CRT bounds the number of classes modulo \(q\) by \(2^{\omega(q)}\gcd(q,a,b)\). The range of \(d\) permits \(O_{C_0}(1+Rt^3/A)\) representatives per class. The divisor formula for the gcd gives
+\[
+ \sum_{0<|a|\ll R/t^3,\,|b|\ll R/t}\gcd(q,a,b)
+ \ll\sum_{e\mid q}e\,\frac{R}{t^3e}\left(1+\frac{R}{te}\right)
+ \ll_\varepsilon (AB)^\varepsilon \frac{R^2}{t^4}.
+\]
+The first extent estimate uses \(a\ne0\), and \(R/t\gg1\) in a nonempty irreducible box. Summing also over \(c\) yields a uniform form count per \(q\) of
+\[
+                 O_{C_0,\varepsilon}\big((AB)^\varepsilon(R^3t^{-3}+R^4/A)\big).
+\]
+
+For each \(t\), the number of orbits represented in (2) is at most \(O(t^{-2})\) times the number of forms in a fixed enlargement of (2). Indeed each orbit with representative \(F\) in (2) has \(\gg t^2\) distinct representatives \(n(m)F\) in the enlarged box for integral \(|m|\le t^2\), where \(n(m)=\left(\begin{smallmatrix}1&0\\m&1\end{smallmatrix}\right)\). Conjugation by \(\operatorname{diag}(t,t^{-1})\) sends \(n(m)\) to \(n(m/t^2)\), whose operator norm is bounded independently of \(t\). The representatives are distinct since a nontrivial unipotent cannot stabilize a set of three distinct projective roots in characteristic zero. Primitivity, irreducibility, and the discriminant are preserved, and different orbits contribute disjoint forms.
+
+Use the weighted count obtained by multiplying enlarged-box form counts by \(O(t^{-2})\) as a majorant for orbits in this range. The uniform bound is \(O_\varepsilon((AB)^\varepsilon(R^3t^{-5}+B t^{-2}))\). By the earlier divisor argument the aggregate bound across \(q\) is \(O_\varepsilon((AB)^\varepsilon AB/t^2)\). Their product is \(O_\varepsilon((AB)^\varepsilon AB^2)\), since \(R^3/t^7\le A^{1/4}B^{3/4}\le B\). This proves the large-cusp second moment. In the small cusp the unweighted form counts already majorize the counted orbits. Summing the \(O_{C_0}((\log(2AB))^2)\) components by Cauchy–Schwarz and adjusting \(\varepsilon\) proves (CM2).
+
+### Class-group and field-count consequences
+
+Let \(x\asymp A\), \(y\asymp B\) be positive squarefree, \(\gcd(x,y)=1\), and use either fixed sign. The quadratic field \(\mathbb Q(\sqrt{\pm xy})\) has fundamental discriminant of absolute value \(O(AB)\) divisible by \(q=x/\gcd(x,6)\). Each \(q\) accounts for at most four \(x\). For a given \(x\), distinct \(y\) give distinct quadratic fields. By the class field theoretic correspondence between index-three subgroups and cubic fields of fundamental discriminant, their first-moment row \(S_B(x)=\sum_y^* h_3(\pm xy)\) is bounded by \(O(B+M_q)\). The \(O(B)\) term contributes \(O(AB^2)\) to the second moment over \(x\). Thus (CM2) gives
+\[
+                         \sum_x S_B(x)^2\ll_\varepsilon (AB)^\varepsilon AB^2.
+\]
+The analogous estimate for \(z\asymp C\) holds for any \(C\ge A\), for the sign on that edge. By Cauchy–Schwarz,
+\[
+            \sum_{x,y,z}^{*}h_3(\epsilon_1 xy)h_3(\epsilon_2 xz)
+                     \ll_\varepsilon (ABC)^\varepsilon ABC ,
+                     \qquad A\le\min(B,C).
+\]
+The star may impose all three pairwise coprimality conditions. In particular the balanced MP7 degree-36 family has
+\(O_\varepsilon(N^{3+\varepsilon})\) fields by its pair-of-cubic-fields
+description. For the restricted family in which the shared kernel
+is smallest by size, the same estimate on each dyadic box, and the
+discriminant identity in MP7, give
+\(O_\varepsilon(Y^{1/18+\varepsilon})\) up to discriminant \(Y\).
+The different field-count question with common kernel larger
+than a neighbor is not needed for the minimum moment below. This also proves the price-free three-edge minimum moment for every fixed \(0\le k\le2\) in all dyadic kernel shapes, by taking the smallest kernel to be \(x\) and using \(\min(h_{xy},h_{xz},h_{yz})^k\le h_{xy}h_{xz}\).
+
+The argument uses neither a pointwise quadratic torsion estimate nor an averaged cubic-field estimate with ramification conditions. It uses cubic reduction, the classical correspondence, and the elementary lattice and divisibility arguments written above. A counting advance for the unrestricted abc problem still requires extraction or a compatible valuation-price analysis at the resulting separation threshold.
+
+Taking \(A=B=C=N\) in this argument also gives the earlier
+\(N^{29/9+\varepsilon}\) estimate and the corresponding
+\(3+(4/9)(k-3/2)\) upper exponent for the minimum moment on
+\(3/2\le k\le2\).

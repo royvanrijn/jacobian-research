@@ -83,12 +83,15 @@ The affine sections at \(x=0,t=\pm1\) are regular for the phase
 because its \(y\)-derivative is \(-2\).
 
 The checker proves irreducibility of \(R\) by reduction
-at 11 and 73, respectively. It then computes in the reduced
-quotient by \(R\) at 11 and 331, respectively. The denominator
+at 11 and 73, respectively. It substitutes the resulting \(H\)
+in both derivative equations exactly over \(\mathbb Q[Z]/(R)\).
+It then computes in the reduced quotient by \(R\) at 11 and
+331, respectively. The denominator
 of the solution for \(H\) is a unit, and both equations vanish
 at the computed \(H\). The Jacobian of the derivative numerators
 and the critical value are units. The powers of the critical
-value up to degree \(\deg R-1\) form a basis.
+value up to degree \(\deg R-1\) have basis determinant
+\(2\bmod11\) and \(110\bmod331\), respectively.
 The unit tests and basis determinant lift to characteristic
 zero. The resultant and the linear equation for \(H\) give
 all critical points at nonzero finite values, with exactly one
@@ -243,7 +246,77 @@ multiplicities at infinity, for each primitive eigenvalue,
 are \(2,2\) in orders \(18,14\) for phase 1, and \(3,1\)
 in orders \(18,54\) for phase 2.
 
-## Why the sphere variations contain these sectors
+## The arithmetic attachment lemma
+
+**Lemma (arithmetic attachment of finite variations).**
+Let \(K\subset\mathbb C\) be a number field, and let
+\(U=\mathbb P^1\setminus(\{0,\infty\}\cup S)\), where \(S\)
+is a single Galois orbit of nonzero finite values over \(K\).
+Suppose local systems on \(U\) fit into
+\[
+        0\longrightarrow V\longrightarrow E
+          \longrightarrow\mathbb C_U\longrightarrow0 .
+\]
+Choose \(e\in E\) over \(1\) at an exterior base point.
+For each \(c\in S\), suppose the image of \(T_c-1\) on \(E\)
+is contained in a line \(L_c\subset V\).
+Let a monodromy-equivariant scalar period evaluation of \(e\)
+give a germ \(R\) fixed at infinity, with Laurent coefficients
+in \(K\). Assume that \(R\) is nonrational and that its
+continuation span is finite-dimensional with regular-singular
+growth at the punctures.
+
+Then the span \(\mathscr V\subset V\) of all differences
+\(T_\gamma e-e\) contains every \(L_c\).
+On \(V/\mathscr V\), monodromy about infinity is inverse to
+monodromy about zero for positively oriented local loops.
+In particular, if \(\xi^{-1}\) is absent from the spectrum
+at zero on \(V\), the whole generalized \(\xi\)-eigenspace
+at infinity lies in \(\mathscr V\).
+
+If the finite monodromies were trivial on the continuation
+span of \(R\), the loop relation and the invariance at infinity
+would make \(R\) single-valued. Moderate growth at the punctures
+would make it meromorphic on \(\mathbb P^1\), hence rational.
+Thus at least one \(c\in S\) acts nontrivially.
+
+To transfer this conclusion, use the monic Wronskian operator
+of a basis of the continuation span. Its coefficient ratios
+are single-valued. Near a puncture the Wronskian determinants
+transform by a common scalar, the determinant of the
+monodromy matrix of the basis. Dividing out the corresponding
+local power leaves single-valued functions of moderate
+growth, so the ratios are meromorphic there. The operator
+has rational-function coefficients. It is minimal, since
+any annihilator of \(R\) kills all its continuations, and
+its local solution space is their span. It descends to
+\(K\) by matching the Laurent coefficients of \(R\) after
+clearing denominators. For fixed coefficient degree bounds
+this is a linear system over \(K\) with finitely many
+unknowns. Solvability with nonzero leading coefficient
+is preserved under descent. Uniqueness of the monic
+minimal operator gives the claim.
+
+At a regular-singular point, local monodromy is the
+identity exactly when the minimal operator has a full
+basis of Laurent series solutions. In Euler form, the
+integer roots of the indicial polynomial give the only
+possible leading exponents. Subsequent Laurent
+coefficients satisfy a recurrence that is invertible
+except at those finitely many integer roots. The
+dimension is therefore determined by finite linear
+constraints over the local coefficient field. Regular
+singularity gives convergence. This dimension is invariant
+under conjugating \(c\), so every \(T_c\) acts nontrivially
+on the continuation span. Some \(T_c T_\gamma e-T_\gamma e\)
+has a nonzero period and belongs to \(L_c\), proving
+\(L_c\subset\mathscr V\). Finally \(\mathscr V\) is stable,
+and every \(T_c\) acts trivially on \(V/\mathscr V\).
+The loop relation gives the inverse assertion and hence
+the spectral inclusion. The inclusion is independent
+of orientation if zero lacks an entire primitive order.
+
+## Applying the lemma to the two pencils
 
 Let \(R_1(L)\) be the sphere resolvent with marker 1,
 for the rotated phase and value parameter. Its series at
@@ -268,89 +341,68 @@ denominator with constant term one would then give a
 recurrence with coefficients integral away from finitely
 many primes. This contradicts the residues.
 
-The resolvent is an algebraic period on the smooth family of
-fibre complements. Its Gauss–Manin connection is regular
-singular at every place by
+Here \(V\) is the absolute homology of the fibre with
+the small \(t=0\) puncture filled. The relative homology
+with the two cap sections as boundary gives \(E\) and its
+trivial quotient. The residue of every marker used here
+extends at the filled puncture. The angular residue
+formula identifies the scalar evaluation with the
+sphere resolvent, whose initial sphere is fixed on the
+exterior loop. Its regular-singular growth follows from
+the smooth fibre-complement Gauss–Manin connection by
 [Katz, Theorem 14.3 (Deligne)](https://web.math.princeton.edu/~nmk/old/nilpconn.pdf).
-The angular residue also expresses it on the distinguished
-relative fibre path between the two affine sections. The
-small \(t=0\) end crossed by that path can be filled, since
-the residue extends there. The uniform end charts above
-therefore show that the germ and all its branches have
-possible finite monodromy only at the listed node values
-and at zero. If all nonzero finite monodromies were trivial
-on the orbit of the germ, the loop relation and the fact that
-the initial sphere is fixed at infinity would make the germ
-single-valued. Its moderate growth at the punctures would
-then make it rational. At least one nonzero node value has
-nontrivial monodromy on the orbit.
+The uniform end charts show that the relative family
+has no further nonzero finite bad values.
 
-Here the one Galois orbit of node values yields visibility
-at every node. The monic Wronskian operator of a basis of
-the complex span of the continuations of \(R_1\) has
-rational-function coefficients. The Wronskian ratios are
-single-valued. Near a puncture, their determinants have the
-same scalar monodromy character, since the basis changes
-by one constant matrix. Dividing both by a common local
-power removes the character. Regular-singular moderate
-growth then makes the quotients meromorphic. The operator
-is minimal, since an annihilator must kill every
-continuation, and its solution space is precisely their
-span. It is defined over \(\mathbb Q\): after clearing
-denominators, solve for the coefficients over \(\mathbb Q\)
-by matching the rational Laurent series, keeping the same
-order and a nonzero leading coefficient. There are only
-finitely many unknown coefficients, so the possibly
-infinite equations have the same rank over \(\mathbb Q\)
-as over \(\mathbb C\). Minimality and monic normalization
-give the same operator.
-
-For a regular-singular equation, identity monodromy at an
-algebraic point is equivalent to a full basis of Laurent
-series solutions. Their dimension is invariant under
-conjugation of the point. The integer indicial roots and
-the finite recurrence constraints at those roots determine
-the dimension over the local coefficient field, and the
-resulting formal Laurent solutions converge by regular
-singularity. Thus nontrivial local monodromy at one node
-implies nontrivial local monodromy at all its conjugates.
-
-Let \(\mathscr V\) be the complex span of the differences of
-transported relative chains of the sphere. They are closed
-chains, since the endpoints are sections. The angular
-residue identifies their periods with variations of the
-sphere resolvent. This span is stable under monodromy.
-At each nonzero node some transported sphere chain has a
-nonzero variation, as just proved using \(R_1\). The
-one-node Picard–Lefschetz formula makes the variation a
-multiple of the vanishing cycle. In the local smoothing
-\(u v=L-L_*\), monodromy twists the annulus once. Each
-signed traversal of the annulus adds its core circle,
-and the boundary sections lie outside this chart. Since its period is nonzero on some
-branch, the coefficient of that cycle is nonzero.
-Thus every node cycle lies in \(\mathscr V\).
-
-On the quotient of the absolute homology by \(\mathscr V\),
-all the finite nonzero monodromies are the identity, again
-by Picard–Lefschetz. The monodromy at infinity is therefore
-identified with that at zero or its inverse, depending on
-the orientation of the loop. The primitive orders found
-absent at zero are absent on this quotient. The compact
-multiplicity and absence statements apply also in the
-partially compactified fibre of the relative path, because
-its peripheral kernel has eigenvalues at most \(1,-1\).
-Consequently the entire generalized eigenspaces at
-infinity of the selected primitive orders lie in
-\(\mathscr V\).
+Each nonzero node gives a rank-one variation in relative
+homology with the boundary sections away from the node.
+In the smoothing \(uv=L-L_*\), one turn twists the
+annulus once, so every signed traversal adds a multiple
+of the core circle. The hypotheses of the lemma now
+hold with \(R=R_1\) and the single Galois orbit found above.
+The compact absence and multiplicity statements also
+hold on the selected eigenspaces in the partially
+compactified fibre, because its peripheral kernel has
+only eigenvalues \(1,-1\). The lemma therefore puts the
+entire generalized eigenspaces of the selected primitive
+orders in the sphere-variation span.
 
 ## Evaluation of the coefficient rows
 
 For both phases, compact core cycles carried by the
 central cover and projected to the character of
 \(\lambda^{-5/18}\) give two independent holomorphic
-period rows with zero correction part. The simple-root
-continuation on a compact angular core carries the
-deck action to the monodromy. The two ray periods on the
+period rows with zero correction part. To see the exact monodromy on these
+cycles, write the scaled level equation as
+\[
+  G_{\varepsilon}(z,T)=
+    T^{18}Q+\varepsilon T^{17}B+\varepsilon^2T^{16}D=1,
+       \qquad \zeta=e^{2\pi i/18}.
+\]
+It satisfies
+\(G_{\varepsilon}(z,\zeta T)=G_{\zeta^{-1}\varepsilon}(z,T)\).
+Label the simple roots on local charts of a fixed compact
+angular core by \(T_{j+1}(z,0)=\zeta T_j(z,0)\).
+Uniqueness of simple-root continuation gives
+\[
+       \zeta T_j(z,\zeta^{-1}\varepsilon)
+                 =T_{j+1}(z,\varepsilon).
+\]
+Both sides relabel together on overlaps. A large
+counterclockwise turn of \(\lambda\) replaces
+\(\varepsilon\) by \(\zeta^{-1}\varepsilon\), and restoring
+the original scaled chart gives this same deck shift,
+with \(z\) fixed. Thus the lifted core chains form an
+invariant subspace supported over that fixed core.
+Projection to a primitive character stays inside this
+subspace even when an escaping cycle shares the character.
+
+The boundary circles of the core on the central cover
+have eigenvalues only \(1,-1\), since there are one or
+two lifts of each removed disk. Thus a primitive
+compact-cover class can be represented by projecting a
+closed chain on the core, and then continuing the chain
+by the simple-root identification. The two ray periods on the
 central cover have determinant \(-2I_0I_1\) after their
 sheet factors are removed. Their homology classes can be
 represented on a compact core by moving the endpoints of
@@ -434,6 +486,16 @@ space by the multiplicities above. The two escaping
 correction rows are independent, as their \(c_0,c_1\)
 minor equals \(-g^2\) in the displayed row order.
 
+For \(\deg C\le2\), the kernel of the displayed first
+matrix has \(A=0\) and \(C(i)=0\). The kernel of the
+second, using both escaping orders, has \(A=0\) and
+\(C(i)=C'(i)=0\), so its correction direction is
+\(C\in\mathbb C\,(z-i)^2\). With only the coherent
+order in the second phase the correction condition is
+\(C'(i)-C(i)/(3i)=0\). The escaping coefficients
+thus give evaluation and derivative data at the
+finite root.
+
 The computed rows are in the span of actual sphere
 variations by the monodromy argument. This calculation
 specifies the coefficient spaces at the stated exponents;
@@ -453,6 +515,26 @@ Their interval denominators are units at 1009.
 Hence in characteristic zero the full finite responses
 have respective ranks five and eight. This finite check
 uses direct angular and height extraction.
+
+## A generic eight-row window
+
+**Corollary (a short generic reconstruction window).**
+Fix \(Q=(z^2+1)^4/z\), \(\deg B\le5\), and
+\(D=-z^{-1}+c+ez\). On a nonempty Zariski-open set of this
+coefficient space, the unmarked reconstruction rows
+\(0,\ldots,7\) recover the two protected coherent inputs
+and all six correction inputs of degree at most five.
+
+In the fixed marker basis the response matrix of these
+eight rows has polynomial entries in \(B,c,e\) with fixed
+rational denominators. The two finite determinants above
+prove that its determinant \(\Delta_8(B,c,e)\) is a
+nonzero polynomial. An additional rational specialization
+with both highest lower degrees present is
+\(B=1+z^5,\ D=-z^{-1}+z\), whose determinant is
+\(3\bmod1009\). Thus \(\Delta_8\ne0\) gives the desired
+open set and a specified eight-row test. The rank is
+that of the full finite matrix.
 
 Run the [checker](verify_cm_newton_sphere_escaping_variations.py)
 with SageMath 10.9 from the repository root.

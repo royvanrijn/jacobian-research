@@ -11313,9 +11313,9 @@ A fixed relative real imbalance supplies the ratio constraint
 with \(\mu=0\). The direct pair test also gives a strict saving at
 \(s+4\rho+2\mu+4b_0<4/3\), with \(s\) the fresh difference
 price and no parity charge. At the initial \(\rho=1/6\) boundary, the remaining
-private parts of both target quotients have vanishing small-prime
-height and at most two prime powers carrying any positive
-numerical height. These pair conditions retain the original
+parts of both target quotients have fixed positive numerical
+weight, carried by at most two private prime powers in each
+quotient. These pair conditions retain the original
 three caps and do not give an unrestricted count.
 [Reduced determinant-ratio count (FP12)](ABC_FIELD_FREE_CROSS_PRODUCT_TRANSFERS.md#a-deep-target-divisor-on-the-reduced-determinant-ratio)
 
@@ -11324,12 +11324,19 @@ admits long minimum ideals in the balanced two-edge field problem
 when the actual transverse norm coefficients have a small list.
 [MP11](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp11-uniform-balanced-rows-via-cubic-coefficient-lattices)
 counts cubic coefficient lattices with a prescribed discriminant
-divisor. Averaging the short certificates by their discriminants
-and amplifying each orbit by integral unipotent translations gives
-\(N^{29/9+\varepsilon}\) for the full balanced two-edge count and
-\(N^{3+(4/9)(k-3/2)+\varepsilon}\) for the balanced minimum moment
-on \(3/2\le k\le2\). The price-free target at \(k=2\) is \(3\).
-[Averaged cubic certificates](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#an-averaged-saving-from-short-cubic-certificates)
+divisor. Dyadically separating the products of the successive
+minima in the short-certificate count gives the full
+\(N^{3+\varepsilon}\) balanced two-edge bound. With unequal
+kernel lengths \(A,B,C\), the bound is \((ABC)^{1+\varepsilon}\)
+when the two edges share a smallest kernel. In particular the
+price-free minimum moment through \(k=2\) holds across all
+dyadic shapes. Two such orientations at local separation
+\(1/27\) now suffice at the conditional parity and full-divisor
+record price. This resolves the \(k=2\) class-moment input.
+The unrestricted count still needs suitable exact valuation
+records on enough rows.
+[Shared-kernel cubic second moment](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#an-averaged-saving-from-short-cubic-certificates)
+· [Parity transfer (MP12)](ABC_MIXED_EUCLIDEAN_PURCHASED_PACKING.md#mp12-a-price-free-two-edge-moment-for-all-parity-kernel-sizes)
 
 ## Complementary words and reduced least-repaired target ratios
 

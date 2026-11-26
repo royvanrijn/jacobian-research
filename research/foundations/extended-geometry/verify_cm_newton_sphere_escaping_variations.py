@@ -3,7 +3,7 @@
 
 from collections import defaultdict
 
-from sage.all import GF, PolynomialRing, matrix
+from sage.all import GF, QQ, PolynomialRing, matrix
 from sympy import I, Matrix, Poly, Rational, diff, expand, gcd, resultant, sqrt, symbols
 
 
@@ -12,12 +12,12 @@ def finite_critical_orbits():
     v = z-1
     P = (1-z*z)**4
     cases = [
-        (z*v**4, v*v, 11, 11, 10, 1,
+        (z*v**4, v*v, 11, 11, 10, 1, 2,
          [6627, 28341, -5474, -46, -6173, 1653, 156, 4]),
-        (2*z*v*v*(4+5*v*v-v**3), 1+2*v*v, 73, 331, 11, -4,
+        (2*z*v*v*(4+5*v*v-v**3), 1+2*v*v, 73, 331, 11, -4, 110,
          [3654, -66528, 344629, -787520, 904709, -459752, 88183, 264, 9]),
     ]
-    for V, W, irreducibility_prime, check_prime, power, scale, coefficients in cases:
+    for V, W, irreducibility_prime, check_prime, power, scale, determinant, coefficients in cases:
         Phi = P+h*V+h*h*W
         a = 18*P+17*h*V+16*h*h*W
         b = z*diff(Phi, z)-Phi
@@ -35,36 +35,44 @@ def finite_critical_orbits():
         modulus = ring(list(reversed(coefficients)))
         assert modulus.degree() == len(coefficients)-1 and modulus.is_irreducible()
 
-        field = GF(check_prime)
-        ring = PolynomialRing(field, "Z")
-        modulus = ring(list(reversed(coefficients))).monic()
-        assert modulus.degree() == len(coefficients)-1 and modulus.is_squarefree()
-        quotient = ring.quotient(modulus, "q")
-        Z = quotient.gen()
-
-        def evaluate(polynomial, H=None):
-            return sum(
-                quotient(field(int(coefficient)))*Z**j*(H**k if k else 1)
-                for (j, k), coefficient in Poly(polynomial, z, h).terms()
-            )
-
         eliminated = Poly(16*W*b - (z*diff(W, z)-W)*a, h)
         assert eliminated.degree() == 1
-        assert all(x.is_unit() for x in (Z, Z*Z-1, evaluate(W), evaluate(P)))
-        H = -evaluate(eliminated.nth(0))/evaluate(eliminated.nth(1))
-        assert H.is_unit()
-        assert not evaluate(a, H) and not evaluate(b, H)
+
+        def quotient_solution(field):
+            ring = PolynomialRing(field, "Z")
+            modulus = ring(list(reversed(coefficients))).monic()
+            assert modulus.degree() == len(coefficients)-1 and modulus.is_squarefree()
+            quotient = ring.quotient(modulus, "q")
+            Z = quotient.gen()
+
+            def evaluate(polynomial, H=None):
+                return sum(
+                    quotient(field(int(coefficient)))*Z**j*(H**k if k else 1)
+                    for (j, k), coefficient in Poly(polynomial, z, h).terms()
+                )
+
+            assert all(x.is_unit() for x in (Z, Z*Z-1, evaluate(W), evaluate(P)))
+            H = -evaluate(eliminated.nth(0))/evaluate(eliminated.nth(1))
+            assert H.is_unit()
+            assert not evaluate(a, H) and not evaluate(b, H)
+            return Z, H, evaluate
+
+        # Check both zero identities in characteristic zero before the modular checks.
+        quotient_solution(QQ)
+        field = GF(check_prime)
+        Z, H, evaluate = quotient_solution(field)
         jacobian = diff(a, z)*diff(b, h)-diff(a, h)*diff(b, z)
         assert evaluate(jacobian, H).is_unit()
         critical_value = evaluate(Phi, H)/(Z*H**18)
         assert critical_value.is_unit()
-        degree = modulus.degree()
+        degree = len(coefficients)-1
         powers = matrix(field, [
             [(critical_value**j).lift()[k] for k in range(degree)]
             for j in range(degree)
         ])
-        assert powers.det()
-        print(f"{degree} distinct nonzero finite Morse values in one Galois orbit")
+        assert powers.det() == determinant
+        print(f"{degree} distinct nonzero finite Morse values in one Galois orbit"
+              f" (power-basis determinant {determinant} modulo {check_prime})")
 
 
 def finite_marker_rank():
@@ -84,6 +92,7 @@ def finite_marker_rank():
     phases = [
         (v**4, z-2*i, 349, 576),
         (-2/sqrt3*v*v*(4+5*tau*tau-tau**3), -4*i/3+2*z/3, 323, 52),
+        (1+z**5, z, 3, None),
     ]
     for B, D, determinant, short_determinant in phases:
         phase = {(j-1, 0): c for j, c in top.dict().items()}
@@ -109,8 +118,11 @@ def finite_marker_rank():
                         product[angle+step, deficit+loss] += c*value
                 coefficients = product
         assert matrix(field, rows).det() == determinant
-        assert matrix(field, [row[:5] for row in rows[:5]]).det() == short_determinant
-        print(f"Verified marked ranks eight and five: determinants {determinant}, {short_determinant}")
+        if short_determinant is None:
+            print(f"Generic eight-row witness: determinant {determinant} modulo 1009")
+        else:
+            assert matrix(field, [row[:5] for row in rows[:5]]).det() == short_determinant
+            print(f"Verified marked ranks eight and five: determinants {determinant}, {short_determinant}")
 
 
 def normalized_period_rows():

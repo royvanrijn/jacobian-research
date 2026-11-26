@@ -364,12 +364,12 @@ the bound itself is on genuine primitive triples satisfying them.
 
 ## MP7. A discriminant formulation of the balanced moment
 
-The following implications are conditional on weak Malle upper
-bounds for explicit permutation actions. They give a field-count
-form of the missing balanced joint moment. Work with the signed
-squareclasses in MP4, whose product is minus a square. Triangles
-with any \(h_{ij}=1\) contribute at most \(ABC\) to the minimum
-moment.
+The degree-54 implication below is conditional on a restricted
+weak Malle upper bound. The balanced degree-36 count and the
+minimum moment through \(k=2\) are proved in MP12. Work with the
+signed squareclasses in MP4, whose product is minus a square.
+Triangles with any \(h_{ij}=1\) contribute at most \(ABC\) to
+the minimum moment.
 
 For the other triangles choose one cubic field of fundamental
 discriminant associated with each edge. The three quadratic
@@ -432,10 +432,13 @@ has index 18, the minimum. At odd primes the inertia is an
 involution, with single or double flips according to which
 quadratic discriminants contain the prime. Its discriminant
 is \(O((xyz)^{18})\) when using the \(xy,xz\) edges, and the
-vertex factors are recovered by gcd. The weak \(Y^{1/18+\varepsilon}\)
-bound in this regular action would therefore give the exponent
-free \(k\le2\) moment for balanced kernels as well. Degenerate
-cases with a trivial edge weight have already been removed.
+vertex factors are recovered by gcd. The weak \(Y^{1/18+\varepsilon}\) bound for this restricted
+family would give the price-free \(k\le2\) moment. MP12 proves
+the count whenever the shared kernel is smallest by size, and
+therefore gives the minimum moment in every dyadic shape.
+Degenerate cases with a trivial edge weight have already been
+removed.
+
 Current results for a symmetric group times an abelian group,
 or for the product-action wreath families, have different
 groups or permutation representations from these two counts.
@@ -663,15 +666,86 @@ modulus, and a sufficiently small wedge forces a rational
 double root. At the present pointwise class bound this
 does not yet lower the symmetric threshold in MP4.
 
-The averaged short-certificate argument improves this further
-to \(N^{29/9+\varepsilon}\) on the whole balanced two-edge moment.
-Nonsingular short certificates restrict the shared squarefree
-kernel by their discriminants. Singular certificates restrict the
-root assignments directly. Combining the two-edge estimate with
-MP4 gives \(N^{3+(4/9)(k-3/2)+\varepsilon}\) for the balanced
-three-edge minimum moment on \(3/2\le k\le2\). The \(k=2\) target
-\(N^{3+\varepsilon}\) remains open.
-[Averaged cubic certificates](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#an-averaged-saving-from-short-cubic-certificates)
+## MP12. A price-free two-edge moment for all parity kernel sizes
+
+Let \(x\asymp A\), \(y\asymp B\), \(z\asymp C\) be the three
+positive squarefree parity kernels of an original primitive row.
+Relabel them so that \(A\le\min(B,C)\). For either fixed sign on
+each edge, write \(h_{xy}=h_3(\epsilon_{xy}xy)\) and similarly.
+The averaged cubic lattice theorem gives
+\[
+           \sum_{x,y,z}^{*}h_{xy}h_{xz}
+                        \ll_\varepsilon (ABC)^{1+\varepsilon}.
+\]
+The star permits all three pairwise coprimality conditions.
+Hence the entire three-edge minimum moment has the same bound
+for \(0\le k\le2\), since
+\(\min(h_{xy},h_{xz},h_{yz})^k\le h_{xy}h_{xz}\).
+It follows that two orientations whose quadratic kernels share
+a smallest parity role are enough at separation \(1/27\).
+More precisely, if both orientations meet that separation and
+their conditional prices after fixing the parity tuple are
+at most \(q_{\max}\), the row exponent is at most
+\[
+                  \sigma_x+\sigma_y+\sigma_z+q_{\max},
+\]
+with the usual arbitrary inner height allowance. Indeed the
+minimum of the two pointwise bounds from MP1 is at most
+\(n^{q_{\max}} h_{xy}h_{xz}X^\varepsilon\).
+Use dyadic boxes of actual parity sizes and then the count
+above. Every prescribed full divisor purchase and every
+additional defective power remains in its conditional price.
+
+One can also keep unequal separation and purchasing prices. For
+\(p_{xy},p_{xz},p_{yz}\ge0\), the same joint moment is price-free
+for the monomial \(\prod h_{ij}^{p_{ij}}\) whenever
+\[
+              \max(p_{xy},p_{xz})+p_{yz}\le1.
+\]
+Use the two-edge moment above and the ordinary first moment of
+\(h_{yz}\) at scale \(BC\), summing over \(x\) at cost \(A\).
+Hölder interpolates between \(h_{xy}h_{xz}\) and \(h_{yz}\);
+the remaining exponents can be decreased because all weights
+are at least one. For comparable dyadic lengths all three
+two-edge moments are available. Their exponent vectors and the
+vectors below them span
+\[
+                  0\le p_{ij}\le1,\qquad \sum_{i<j}p_{ij}\le2 .
+\]
+Apply Hölder on this convex polytope. Thus if orientation \(T\)
+has pointwise class exponent \(k_T\) at conditional record price
+\(q_T\), choose geometric-mean weights \(\lambda_T\ge0\),
+\(\sum_T\lambda_T=1\), and put \(p_{SF}=\lambda_Tk_T\)
+for the edge complementary to \(T\). The new mixed row bound
+has exponent \(\sum_J\sigma_J+\sum_T\lambda_Tq_T\) when the
+corresponding monomial is price-free. The condition is a finite
+linear test once the actual separations are fixed.
+
+For example, give each original role odd mass \(3/40\) in exact
+valuations \(1\bmod 12\), even noncube mass \(1/20\) in
+valuations \(2\bmod12\), both in scaled degrees
+\([39/100,2/5]\). Give the remaining mass to valuations divisible
+by six with mean chosen to give each role numerical height one.
+Every cyclic orientation has conditional price \(1/10\)
+after fixing the parity tuple. Its defect contribution to local
+separation is at least
+\((39/100)(3/40+1/40)=39/1000>1/27\).
+The total normalized exponent is \(13/40<1/3\). This
+separation is below the price-free threshold of MP4 without
+additional purchases. These exact-valuation data can coexist
+with diffuse limiting measures. The theorem counts actual
+primitive rows in those strata and makes no assertion that
+such a limiting profile occurs.
+
+The count uses all original caps when imposed, and the MP1
+least-repair transfer applies to the same primitive quotients.
+The two-edge moment requires no bound on a single class group
+or any hypothesis about the balanced dictionary size. A further
+unrestricted result would need the stated conditional prices
+and separation on enough rows, or a different route. The
+price-free three-edge product moment at \(k=3\) remains open.
+
+[Shared-kernel cubic second moment](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#an-averaged-saving-from-short-cubic-certificates)
 
 ## Remaining valuation extraction
 

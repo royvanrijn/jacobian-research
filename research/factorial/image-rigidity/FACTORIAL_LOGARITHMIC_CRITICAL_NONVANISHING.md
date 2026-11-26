@@ -86,6 +86,12 @@ This gives a finite rational system \(Y'=A(s)Y\) with entries
 polynomial in \(u\) of degree at most \(m+1\).
 Its constant matrix \(A_0\) acts on the amplitudes as
 multiplication by \(F\) in the full logarithmic critical algebra.
+The description of a leading multiplication matrix is part of the
+Brieskorn lattice construction on the complex torus. Here (2) uses
+the factorial functional on the affine coordinate space, so the
+calculation below includes the critical points on the coordinate
+boundary as well.
+[Douai–Sabbah, §2.c and Proposition 2.13](https://www.numdam.org/item/10.5802/aif.1974.pdf)
 
 ## Positive exponents at every simple critical point
 

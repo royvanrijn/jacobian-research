@@ -1232,6 +1232,80 @@ the per-record exponent is at most \(1/4+\mu+o(1)\), so any fixed
 \(\mu<1/12\) excludes it by a fixed margin. The result is uniform
 across the original balanced dictionary range.
 
+#### Short target quotients are sparse on a shared record
+
+Fix two original summand supported parts and an actual divisor
+\(G\) of the target. Let \(B,C\) denote the two complete summands
+in this paragraph and write \(B+C=Gz\) in the original height shell.
+Suppose \(B\) outside its prescribed support has radical cap
+\(n^r\) for a fixed \(r>0\), and keep the fixed upper bounds on
+the other original radical caps. There exist positive \(\theta,\delta,L_0\)
+depending on the fixed caps and support height bounds such that
+\(z\le X^\theta\) gives count
+\(O(n^{r-\delta}X^\varepsilon)\) at sufficiently small fixed \(L\).
+This is the short-term movable-window argument applied to the
+moving quotient with a fixed coefficient.
+
+If all these choices failed, take actual fixed-support fibres
+with exponent at least \(r-o(1)\) and \(z=X^{o(1)}\), first
+taking the height limit at each fixed budget. Refine the two
+residual summand measures along such a sequence. If both are atomic, the fixed \(G\ge X^{1-o(1)}/2\)
+supplies a known full modulus of fixed positive numerical
+height and orders at least \(\kappa/L\) for a sufficiently
+small fixed \(\kappa>0\). Indeed its bounded radical price
+makes the part below those orders short. Group the residual
+atomic windows on both summands, freezing the unused mass
+and escaped tail at arbitrarily small radical cost. GW
+counts the ratio of the summands in its fixed unit class
+modulo the known modulus at arbitrarily small additional
+cost, as in GE1. Its exact value determines the original row
+by primitivity. If just one residual summand is nonatomic,
+buy an arbitrarily cheap positive-depth full block there.
+Group the atomic windows on the other summand, and include
+the short \(z\) in the wide rational factor of its ratio
+to \(Gz\). The coefficient \(G\) is a unit at the block
+and is fixed. The same GW argument again gives arbitrarily
+small total cost.
+
+If both residual summands are nonatomic in part, take a short
+positive-degree continuity interval on \(B\) of mass \(t>0\),
+and freeze its complement at price at most \(r-t\). Group
+its roots as in SH1, with fixed narrow degree window of width
+\(\sigma_I\). There is an arbitrarily small choice of positive
+such \(t\). On \(C\) buy a full block of radical mass between
+\(t/16\) and \(t/8\) in a compact positive-degree band carrying
+nonatomic mass. Atom neighborhoods may be removed first so
+the overshoot is arbitrarily small compared to \(t\). The block
+has height and fullness margins as in the SH1 movable-window
+proof. The ratio of \(B\) to \(Gz\) on this modulus has one
+grouped root and a wider rational correction of numerical height
+at most \(\sigma_I t+o(1)\). Its fixed coefficient includes
+\(G^{-1}\) and all frozen parts of \(B\), and is a unit by
+original primitivity. Apply UW1 with the same fixed
+amplification and the narrow width chosen before \(t\), as
+in SH1. The determinant and exact-fibre contributions are
+each at most \(t/16+o(1)\). Even including the block purchase
+the exponent is at most \(r-3t/4+o(1)\). This contradicts
+the assumed exponent. In each branch the support pools and
+fixed coefficients may vary with the chart. The proof uses
+numerical margins chosen from a violating limit, which gives
+uniform thresholds by contradiction at fixed budgets before
+passing to smaller budgets.
+
+At the first raw FP8 tie the rich refined shared records
+cost \(1/6+o(1)\). They fix \(G\) and all supported parts.
+Each of their two original row sets has residual summand
+caps \(1/6+o(1)\). MCB2 bounds one side by \(n^{1/6+o(1)}\).
+A short \(v=c_1/G\) or \(u=c_2/G\) on the other side gives
+a fixed exponent saving by the same limiting contradiction
+with both residual caps tending to \(1/6\). Summing the
+record prices and the two row counts excludes exponent \(1/2\).
+Thus each quotient has positive numerical height by a fixed
+margin on the remaining near-tied sector.
+
+[Movable window (SH1)](ABC_SHORT_HEIGHT_AND_REAL_GAP.md#a-movable-window-on-one-tall-letter)
+· [Wide ratio grouping (GE1)](ABC_WIDE_COFACTOR_CONGRUENCES.md#nonatomic-mass-in-the-scaled-degrees)
+
 #### A discrete restriction on the remaining tied profiles
 
 Fix \(0<\kappa<\mu<1/12\). For either of \(u,v\), take the product
@@ -1262,13 +1336,19 @@ boundary the radical of either quotient outside the shared record
 and the prescribed pool is at most \(n^{1/6+o(1)}\). For any
 fixed \(1/18<\kappa<1/12\), at most two primes \(p>n^\kappa\)
 from that outside support can carry its remaining numerical
-weight. If the prescribed pool has nonvanishing mass, or shared
-primes occur on the quotient at unequal original valuations,
-their numerical powers are kept as separate prescribed-support
-parts in this statement. Thus the **private** quotient has
-vanishing small-prime height and at most four remaining
-prime-power factors. This condition is stronger than weak
-atomicity of its scaled valuation measure. In particular a compact
+weight. Any part of a quotient supported on the prescribed pool or
+the shared support is fixed by the record. If this part has
+positive numerical height it gives the quotient lock at price
+zero, including at unequal original valuations. Thus the
+remaining positive numerical height of each quotient comes
+from its **private** primes, with vanishing small-prime
+height and at most two remaining prime-power factors. This
+condition is stronger than weak atomicity of the scaled
+valuation measure. If two private primes have positive numerical
+weight in a diagonal limit, both prices tend to \(1/12\):
+a fixed margin below \(1/12\) would make that single tall power
+an affordable lock, and their combined raw price is at most
+\(1/6+o(1)\). In particular a compact
 positive nonatomic band on either private quotient would have
 positive numerical weight on small primes at any fixed
 \(\kappa>0\); trim its heavy atom windows as in CF1.

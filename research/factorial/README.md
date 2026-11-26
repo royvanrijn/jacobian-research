@@ -921,6 +921,13 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Ordinary mirrored row mergers can move root angles in opposite directions | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ORDINARY_ROW_MERGER_ANGULAR_NONMONOTONICITY.md) |
 | Pure-cross three-windows for transcendental and real-conjugate cross ratios | Internal result | proved | [Source](image-rigidity/BILINEAR_REAL_CONJUGATE_RATIO_THREE_WINDOW.md) |
 | Pure-cross three-windows at the first three starts without coefficient restrictions | Internal result | proved | [Source](image-rigidity/BILINEAR_REAL_CONJUGATE_RATIO_THREE_WINDOW.md) |
+| Uniform finite windows for all inhomogeneous quadratic phases in every dimension | Internal result | proved | [Source](image-rigidity/FACTORIAL_QUADRATIC_EVENTUAL_NONVANISHING.md) |
+| Explicit factorial windows for arbitrary separated univariate polynomial sums and powers | Internal result | proved | [Source](image-rigidity/FACTORIAL_SEPARATED_POLYNOMIAL_POWER_WINDOWS.md) |
+| Independent mixtures of univariate polynomial and arbitrary quadratic blocks | Internal result | proved | [Source](image-rigidity/FACTORIAL_SEPARATED_POLYNOMIAL_POWER_WINDOWS.md) |
+| Explicit factorial windows for coupled phases with simple logarithmic critical points | Internal result | proved | [Source](image-rigidity/FACTORIAL_LOGARITHMIC_CRITICAL_NONVANISHING.md) |
+| Shifted Strong Factorial windows reduce exactly to initial windows by linear adjunction | Internal result | proved | [Source](image-rigidity/SFC_SHIFT_TO_INITIAL_LINEAR_ADJUNCTION.md) |
+| Signed endpoint Laplace criterion for all-degree diffuse-tail physical separation | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SIGNED_ENDPOINT_LAPLACE_RADIAL_CLOSURE.md) |
+| Density-one all-degree balanced-tail separation from linked rational exponent tests | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_BALANCED_RESIDUE_SUPPORT_DENSITY.md) |
 
 **Computed obligations:** 50 unresolved; 34 resolved within their exact scope.
 

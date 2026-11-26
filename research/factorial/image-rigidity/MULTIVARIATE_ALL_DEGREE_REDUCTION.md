@@ -2227,3 +2227,30 @@ arbitrarily diffuse mirrored support with equal total degrees.
 The effect occurs at degree four and arbitrarily large degrees.
 Thus a structural row-merger transfer cannot rely on coordinatewise
 angular monotonicity alone.
+
+The [signed endpoint criterion](MULTIVARIATE_SIGNED_ENDPOINT_LAPLACE_RADIAL_CLOSURE.md)
+certifies all degrees with arbitrary balanced diffuse tails on a
+mirrored core when the aggregate endpoint transform has one sign
+and dominates the odd coefficient response. It allows opposite
+midpoint orders in different gap groups. For the balanced four-type
+band, the [prime support argument](MULTIVARIATE_BALANCED_RESIDUE_SUPPORT_DENSITY.md)
+closes every multiplicity at a density-one set of heights when the
+two linked rational equations have no joint integer exponent. A
+joint exponent can make both integer marks compatible to full depth,
+so that case needs a different exact test.
+
+The [initial-window reduction](SFC_SHIFT_TO_INITIAL_LINEAR_ADJUNCTION.md)
+takes a shifted support-size zero window to an initial support-size
+zero window after adding independent linear terms. The corresponding
+moment ideals agree after eliminating the symmetric tail coefficients.
+For ordinary binomials the absolute eventual cutoff bounds the
+number of added terms, leaving unrestricted binomial exponent data.
+
+For general phases, [quadratic factorial nonvanishing](FACTORIAL_QUADRATIC_EVENTUAL_NONVANISHING.md)
+now includes arbitrary linear and constant terms in every dimension
+and all positive powers. [Independent polynomial blocks](FACTORIAL_SEPARATED_POLYNOMIAL_POWER_WINDOWS.md)
+allow arbitrary-degree univariate summands and disjoint quadratic
+blocks. The [logarithmic critical-point criterion](FACTORIAL_LOGARITHMIC_CRITICAL_NONVANISHING.md)
+gives an explicit finite window at every start for coupled phases
+of arbitrary degree under the two stated critical-system tests.
+These finite windows can exceed the support size.
