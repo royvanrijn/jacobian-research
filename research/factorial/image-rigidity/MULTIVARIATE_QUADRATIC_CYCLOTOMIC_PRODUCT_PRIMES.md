@@ -198,6 +198,56 @@ A uniform argument that at least one required fresh
 prime fails to occur for every remaining ordinary pair
 is still needed.
 
+## The sign forces an inert-prime parity
+
+For a prime \(q>30\) put \(\delta_q=\mathbf 1_{q\mid V}\)
+and \(L_q^\circ=L_q/q^{\delta_q}\).
+Every prime \(p\mid L_q\) other than \(q\) is primitive
+in the Lehmer sequence. To see this, \(p\nmid D\) by the
+monic trace polynomial argument. Reducing
+\(Y+Y^{-1}=T\) modulo \(p\) for \(Y\) the root quotient,
+one obtains \(\Phi_q(Y)=0\). As \(p\ne q\), the order
+of \(Y\) is exactly \(q\). In particular \(Y^2\ne1\),
+so \(p\nmid UV\), and no earlier Lehmer number vanishes
+modulo \(p\).
+
+In characteristic \(q\) one has
+\(C_q(t)\equiv(t-2)^d\) because
+\(\Phi_q(Y)=(Y-1)^{q-1}\). Also \(C_q(2)=q\).
+Thus
+\[
+             L_q\equiv(-V)^d\pmod q .
+\]
+If \(q\mid V\), then \(D\) is a unit at \(q\) and
+\(T-2=-V/D\) is divisible by \(q\).
+The Taylor expansion
+\(C_q(2+X)=X^d+qR(X)\) with \(R(0)=1\)
+shows \(L_q/q\equiv D^d\pmod q\) since \(d\ge2\).
+In particular \(v_q(L_q)=\delta_q\).
+
+Combining (4) over the prime factors of \(L_q^\circ\)
+now yields the exact sign restriction
+\[
+ (-1)^{\sum_{p\ \mathrm{inert},\ p\mid L_q^\circ}v_p(L_q^\circ)}
+    =\operatorname{sgn}(L_q)
+       \begin{cases}
+            \left(\frac{-V}{q}\right),&q\nmid V,\\[2mm]
+            \left(\frac{D}{q}\right),&q\mid V .
+       \end{cases}                                              \tag{5}
+\]
+Indeed each prime in that product is \(1\) or \(-1\)
+modulo \(q\) according to its splitting symbol, and
+Euler's criterion evaluates the preceding residues.
+The real sign in (5) is the sign of \(\sin(q\theta)\)
+for \(\theta=\arg\alpha\in(0,\pi)\), by
+\(L_q=D^d\sin(q\theta)/\sin\theta\).
+Thus a negative right side forces an inert prime
+\(p\equiv-1\bmod q\) in the common divisor of the
+two self products. A strict angle interval can already
+fix the real sign. This refinement relates it to the
+discriminant complement modulo \(q\), or to the reduced
+norm denominator in the index-prime case.
+
 ## An ordinary pair permitting a quadratic at the first residue
 
 Take the mirrored rows \((13,12),(12,13)\) at orders

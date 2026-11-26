@@ -673,6 +673,14 @@ these responses cancel to second order. There are retained cores
 for which equal reciprocal moments give coefficient approximation
 through every finite order.
 
+The [signed slot alternation theorem](MULTIVARIATE_SIGNED_SLOT_ALTERNATION_CONTACT_RIGIDITY.md)
+controls errors by the signed low moments when factorial slot
+weights have bounded sign changes. Suitable rank conditions
+force an exact contact sequence of simple pairs to exceed those
+budgets, with arbitrary row counts and unbounded gaps. A fixed
+signed gap chart gives an additional single-pair test when the
+earlier signed moments match.
+
 The [common-height tail theorem](MULTIVARIATE_COMMON_HEIGHT_BOUNDED_GAP_TAIL_CLOSURE.md)
 excludes exact ordinary common roots in every degree for any fixed
 core and a tail of bounded integer gaps at a sufficiently large
@@ -727,6 +735,23 @@ even terminal for arbitrary ordinary rows. It is absent on at
 most two adjacent indices of the selected parent. The theorem
 classifies the exact odd-terminal exception to this window rule
 and charges an explicit prime-overlap budget to any common factor.
+The [moving mark cancellation theorem](MULTIVARIATE_MOVING_MARK_PRIME_CANCELLATION.md)
+constructs exact ordinary extensions with the same envelope and
+horizontal Newton polygons at growing sets of mark primes in
+both parents. Their overlap load can exceed the required budget
+by an unbounded factor, with all-degree coprimality certified at
+an independent prime. The constructions attain every positive
+strength and permitted diffuse bias. A genuine prime in a
+sufficiently high upper window gives a different test. The
+[wide upper mark theorem](MULTIVARIATE_WIDE_UPPER_PRIME_MARKS.md)
+uses this test to treat every sufficiently wide upper window
+at once outside a density-zero set of maximal smaller exponents,
+uniformly in all the other row data. The
+[linked quadratic specialization theorem](MULTIVARIATE_ODD_CORNER_LINKED_QUADRATIC_ANCHORS.md)
+uses rational shifts to give a nonzero divisor condition at
+every simultaneous odd corner. Together with the original
+mark windows it gives exact finite candidate lists on every
+fixed relative translation family.
 The [aligned unit-gap test](MULTIVARIATE_ALIGNED_UNIT_GAP_CENTRAL_NEWTON.md)
 reduces the high-count Newton polygons to fixed central faces
 when all smaller exponents satisfy the stated congruence.
@@ -1032,6 +1057,13 @@ For bounded fields and fixed split prime support, a nonattained
 contact needs a trace denominator exceeding every polynomial
 bound in reciprocal diffuseness. There is a moving-prime bound
 with explicit support dependence.
+The [cyclotomic pair-product theorem](MULTIVARIATE_QUADRATIC_CYCLOTOMIC_PRODUCT_PRIMES.md)
+forces a noncyclotomic common quadratic to have a fresh residue
+prime of quotient order \(q\) for every prime \(q>30\).
+At large \(q\) the required prime lies beyond every factorial
+argument. Exact integer pair products jointly constrain its
+trace, norm and primitive scale. A sign and squareclass condition
+can force an inert prime.
 The [single-order norm gap](MULTIVARIATE_HIGH_ORDER_NORM_DENOMINATOR_GROWTH.md)
 uses a signed high-order factorial difference to construct two
 scaled rational norms with a strictly positive small difference.

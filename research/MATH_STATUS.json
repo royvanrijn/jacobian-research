@@ -19273,6 +19273,164 @@
           "independent_replay": false,
           "dependency_coverage": "partial",
           "graph_scope_note": "This result has the stated support scope."
+        },
+        {
+          "id": "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW",
+          "title": "Universal quadratic-face three-forcing window",
+          "state": "proved",
+          "dependency_coverage": "partial",
+          "canonical_source": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "scope": "For every characteristic-zero field K, every r,z in K with z!=0, and every integer k>=1, at least one T_k(r,z),T_(k+1)(r,z),T_(k+2)(r,z) is nonzero, where h_j=Lambda1((rX2+X+z)^j),T_j=h_j+jh_j-1. This is exactly the existing QTF universal assertion U.",
+          "scope_limits": [
+            "Local half exclusion is proved here; this global theorem additionally requires the exact proved CLASS necessity.",
+            "No monic anti gate, finite-prefix or formal-series premise.",
+            "No full nonsymmetric binary quadratic SFC, SFC2 or SFC3 claim."
+          ],
+          "checker": null,
+          "additional_checkers": [],
+          "artifact_hash": null,
+          "proof_type": "written_native_factorial_and_nonarchimedean_valuation_proof",
+          "evidence": [
+            "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md"
+          ],
+          "replay_commands": [],
+          "review_status": "internal-review-pending",
+          "formal_verification": false,
+          "external_review": false,
+          "independent_replay": false,
+          "worldwide_priority": false
+        },
+        {
+          "id": "FACTORIAL-SYMMETRIC-BINARY-QUADRATIC-FIVE-WINDOW",
+          "title": "Symmetric binary quadratic five-moment window",
+          "state": "proved",
+          "dependency_coverage": "partial",
+          "canonical_source": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "scope": "For every characteristic-zero field, every a,e,c with aec!=0, arbitrary b, and every n>=1, f=a(x2+y2)+bxy+e(x+y)+c has at least one nonzero factorial moment from n through n+4. At b0 this is its actual support-five Strong Factorial window; at b!=0 this is a stronger five-zero exclusion for six support terms.",
+          "scope_limits": [
+            "Uses only the universal forcing theorem and the exact REC identity.",
+            "No converse from this symmetric sector to universal T3 or H.",
+            "Equal diagonal and equal linear coefficients remain essential; no full binary/SFC2/SFC3."
+          ],
+          "checker": null,
+          "additional_checkers": [],
+          "artifact_hash": null,
+          "proof_type": "written_native_factorial_and_nonarchimedean_valuation_proof",
+          "evidence": [
+            "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md"
+          ],
+          "replay_commands": [],
+          "review_status": "internal-review-pending",
+          "formal_verification": false,
+          "external_review": false,
+          "independent_replay": false,
+          "worldwide_priority": false
+        },
+        {
+          "id": "FACTORIAL-SYMMETRIC-ZERO-CONSTANT-QUADRATIC-FOUR-WINDOW",
+          "title": "Symmetric zero-constant quadratic four-moment window",
+          "state": "proved",
+          "dependency_coverage": "partial",
+          "canonical_source": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md",
+          "scope": "For every characteristic-zero field, every a,e with ae!=0, arbitrary b and n>=1, f=a(x2+y2)+bxy+e(x+y) has a nonzero factorial moment in n..n+3. At b0 this is the actual four-support Strong Factorial window; at b!=0 it is a stronger four-zero exclusion for five terms.",
+          "scope_limits": [
+            "The z0 two-forcing theorem is self-contained; the interior application additionally uses REC.",
+            "No symmetric interior moment-window sharpness claim from the separate forcing witness.",
+            "No general binary/SFC2/SFC3 conclusion."
+          ],
+          "checker": null,
+          "additional_checkers": [],
+          "artifact_hash": null,
+          "proof_type": "written_native_factorial_and_nonarchimedean_valuation_proof",
+          "evidence": [
+            "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md"
+          ],
+          "replay_commands": [],
+          "review_status": "internal-review-pending",
+          "formal_verification": false,
+          "external_review": false,
+          "independent_replay": false,
+          "worldwide_priority": false
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-MOVING-MARK-PRIME-CANCELLATION",
+          "title": "Exact cancellation of moving factorial mark primes",
+          "state": "proved",
+          "scope": "Ordinary extensions of any fixed core with arbitrary prescribed positive limiting diffuse strength, permitted bias and signed added gap preserve both full envelopes while flattening both Newton polygons at growing sets of selected moving primes. Their compulsory overlap budget can be exceeded by an unbounded factor. A separate prime guarantees all-degree angular separation of the same original profiles.",
+          "canonical_source": "factorial/image-rigidity/MULTIVARIATE_MOVING_MARK_PRIME_CANCELLATION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "This result has the stated support scope."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-WIDE-UPPER-PRIME-MARKS",
+          "title": "Coprimality at wide upper mark windows for a density-one set of heights",
+          "state": "proved",
+          "scope": "A prime in a protected upper window above the lower factorial arguments excludes all degrees of common factor. Mean-square prime gap bounds give this witness simultaneously in all sufficiently wide upper windows for all bounded-curvature profiles outside a density-zero set of maximal smaller exponents. Large least gap thus gives all-degree coprimality at density-one heights, with arbitrary row counts and orientations.",
+          "canonical_source": "factorial/image-rigidity/MULTIVARIATE_WIDE_UPPER_PRIME_MARKS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "This result has the stated support scope."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-SIGNED-SLOT-ALTERNATION-CONTACT-RIGIDITY",
+          "title": "Sign changes required for exact factorial replacement contacts",
+          "state": "proved",
+          "scope": "Exact Gauss slots with arbitrary signed gaps and row counts yield signed measures whose finite alternation bounds control coefficient errors by signed moments even at coalescing slot heights. At positive Gaussian references of simple roots, the specified response rank forces exact contacts to exceed the prescribed budgets. A fixed-gap chart also gives a scalar gate when the earlier signed moments match.",
+          "canonical_source": "factorial/image-rigidity/MULTIVARIATE_SIGNED_SLOT_ALTERNATION_CONTACT_RIGIDITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "This result has the stated support scope."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-QUADRATIC-CYCLOTOMIC-PRODUCT-PRIMES",
+          "title": "Fresh residue primes and paired cyclotomic products for a common quadratic",
+          "state": "proved",
+          "scope": "Exact integer self and cross products constrain the same common quadratic's primitive norm, angle and scale in arbitrary ordinary parent profiles. Every noncyclotomic common quadratic requires a fresh prime of residue quotient order q for each prime q greater than thirty; these primes pass beyond the full original coefficient support. A sign condition forces inert-prime parity in the primitive angular product.",
+          "canonical_source": "factorial/image-rigidity/MULTIVARIATE_QUADRATIC_CYCLOTOMIC_PRODUCT_PRIMES.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "This result has the stated support scope."
+        },
+        {
+          "id": "FACTORIAL-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS",
+          "title": "Linked quadratic specializations at odd corners and finite exact translation lists",
+          "state": "proved",
+          "scope": "Every simultaneous odd corner above terminal five has a nonzero divisor bound on an explicit affine form in the original largest smaller exponent. Two linked denominator-prime tests ensure nonvanishing at one of two anchors. Further corners yield simultaneous prime-power scalar tests. Together with the noncorner window, every fixed ordinary relative translation template admits a finite exact candidate list for all-degree failures.",
+          "canonical_source": "factorial/image-rigidity/MULTIVARIATE_ODD_CORNER_LINKED_QUADRATIC_ANCHORS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "external_review": false,
+          "formal_verification": false,
+          "independent_replay": false,
+          "dependency_coverage": "partial",
+          "graph_scope_note": "This result has the stated support scope."
         }
       ],
       "open_questions": [
@@ -19478,31 +19636,7 @@
           "source": "factorial/image-rigidity/QUADRATIC_STRONG_FACTORIAL_LINEAR_ADJUNCTION_BRIDGE.md"
         },
         {
-          "question": "Prove the actual five-support window for a(x^2+y^2)+e(x+y)+c with aec!=0, without inferring a shorter window by specializing the six-term theorem.",
-          "source": "factorial/image-rigidity/FULL_SYMMETRIC_BINARY_QUADRATIC_STRONG_FACTORIAL.md",
-          "kind": "mathematical",
-          "node": "SBQ-OPEN-SYMMETRIC-FIVE-TERM-WITHOUT-CROSS"
-        },
-        {
-          "question": "Exclude every three-zero quadratic forcing block at all positive starts; the proved local exclusions leave an exact exceptional family.",
-          "source": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md",
-          "kind": "mathematical",
-          "node": "QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW"
-        },
-        {
-          "question": "Prove all exceptional quadratic-field adjacent-pair coprimeness assertions, q1or2mod4, equivalent to the universal forcing gate.",
-          "source": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_ZERO_RESIDUAL_FRONTIER.md",
-          "kind": "mathematical",
-          "node": "QTF-OPEN-EXCEPTIONAL-QUADRATIC-FAMILY-PAIR-COPRIMALITY"
-        },
-        {
-          "question": "Prove adjacent-pair coprimeness for every eligible exceptional q>=5; the two smaller eligible cases are now exactly certified, but no infinite tail is seeded.",
-          "source": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_FIRST_TWO_RESIDUAL_PAIRS.md",
-          "kind": "mathematical",
-          "node": "Q12-OPEN-EXCEPTIONAL-PAIR-COPRIMALITY-TAIL-Q-GE-FIVE"
-        },
-        {
-          "question": "Prove the FULL universal actual monic ordinary Anti-coefficient bound H for every statedM,z,chosenoddp,ALLhigherbinarypackets andALLj<e. No arbitrary factor rescaling, native block or bounded diagnostic substitutes for this gate.",
+          "question": "Does the optional stronger monic ordinary Anti-coefficient property H hold with all its stated quantifiers? Universal quadratic forcing is already proved independently; no converse to H is asserted.",
           "source": "factorial/image-rigidity/QUADRATIC_HALF_VALUATION_MONIC_ANTI_GATE_CONDITIONAL_CLOSURE.md",
           "kind": "mathematical",
           "node": "HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND"
@@ -19599,7 +19733,8 @@
         "Ordinary consecutive coprimality is proved in every degree whenever there is a private variable on each side. The remaining general binary profiles have at most one private side.",
         "One-private profiles satisfy all-degree angular separation if twice the total private exponent plus the shared absolute curvature is at least thirteen. A separate explicit weak-tail hypothesis gives all-order physical coprimality with a single private unit and arbitrary signed shared gap.",
         "Standard SFC(2) and SFC(3) count variables. Exact support-size windows for homogeneous binary quadratics are proved; arbitrary inhomogeneous binary quadratics and full dimension-two/three SFC remain separate open goals. Two-monomial profile results do not imply them.",
-        "Ramified native pattern and unadjusted odd highblock congruence are proved. The actual monic ordinary Anti gateH remains OPEN; a proved one-way conditional context H=>universalT3 is recorded, with existing equivalences and b0 implication unchanged. No formal quotient/factor transfer or fullbinary/SFC2/SFC3 closure is claimed."
+        "Ramified native pattern and unadjusted odd highblock congruence are proved. The actual monic ordinary Anti gateH remains OPEN; a proved one-way conditional context H=>universalT3 is recorded, with existing equivalences and b0 implication unchanged. No formal quotient/factor transfer or fullbinary/SFC2/SFC3 closure is claimed.",
+        "Native backward valuations close the universal quadratic-face three-window and the entire exceptional adjacent-pair criterion, with an exact controlled equivalence to the existing U assertion. Symmetric equal-diagonal/equal-linear quadratics satisfy a five-moment window for aec nonzero and arbitrary b; the independent c0 sector satisfies a four-window. The auxiliary forcing three-window is sharp. H and the general binary/SFC2/SFC3 goals are not closed."
       ],
       "gap_ids": [
         "FACTORIAL-GENERAL-FC",
@@ -207934,7 +208069,7 @@
           },
           {
             "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-            "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+            "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
             "locator": "Fixed terminal scopes and the absolute eventual cutoff"
           },
           {
@@ -220848,7 +220983,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-            "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+            "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
             "locator": "Corollary following the positive-curvature theorem"
           }
         ]
@@ -233576,7 +233711,7 @@
         "topic": "factorial",
         "gap_kind": "mathematical",
         "dependency_coverage": "partial",
-        "scope": "OPEN: for every characteristic-zero field, aec!=0 and f=a(x^2+y^2)+e(x+y)+c, prove the actual support-five Strong Factorial window at all n>=1. The six-term theorem assumes b!=0 and cannot be specialized to assert a shorter five-window. A proved forward implication from the still-open universal quadratic forcing three-window supplies a conditional route. No unconditional proof or converse is asserted.",
+        "scope": "Proved actual support-five Strong Factorial window: over every characteristic-zero field, aec!=0 and f=a(x^2+y^2)+e(x+y)+c has a nonzero factorial moment among every five consecutive positive indices. The direct universal forcing theorem and the polynomial symmetric recurrence give an unconditional proof; the larger arbitrary-b family also has the same five-moment exclusion. No converse to universal forcing or the stronger monic Anti bound is asserted.",
         "sources": []
       },
       {
@@ -233837,7 +233972,7 @@
         ],
         "gap_kind": "mathematical",
         "dependency_coverage": "partial",
-        "scope": "OPEN universal assertion U of Proposition3: for every characteristic-zero K, all r,z with z!=0 and k>=1, at least one T_k,T_(k+1),T_(k+2) is nonzero. Local branch exclusions and necessary residual classification do not seed this assertion.",
+        "scope": "Proved universal assertion U: for every characteristic-zero field, all r,z with z!=0 and k>=1, at least one T_k,T_(k+1),T_(k+2) is nonzero. The direct native backward-valuation proof is recorded in DQC. The older local exclusions and necessary classification alone did not seed this assertion.",
         "sources": []
       },
       {
@@ -233851,7 +233986,7 @@
         ],
         "gap_kind": "mathematical",
         "dependency_coverage": "partial",
-        "scope": "OPEN assertion R of Proposition3: for every q>=1,q1or2mod4, m=q(4q+3)^2 and zq=-8q(q+1)(2q+1)+omega in Q(omega),omega2=-3q(q+1), the adjacent r-polynomials T_(m-1),T_m are coprime. Conjugation covers both signs; this universal assertion is not established by finite diagnostics.",
+        "scope": "Proved assertion R: for every q>=1 with q=1 or2 modulo4, m=q(4q+3)^2 and zq=-8q(q+1)(2q+1)+omega, omega^2=-3q(q+1), T_(m-1) and T_m are coprime over Q(omega)[r]. The direct critical-half pair proof and explicit family substitution close all q independently of the global necessity theorem; the conjugate sign follows as well.",
         "sources": []
       },
       {
@@ -234011,7 +234146,7 @@
         ],
         "gap_kind": "mathematical",
         "dependency_coverage": "partial",
-        "scope": "OPEN: for every integerq>=5,q1or2mod4,m=q(4q+3)^2,Lq=Q(omega),omega2=-3q(q+1),zq=-8q(q+1)(2q+1)+omega, prove gcd_(Lq[r])(T_(m-1)(r,zq),T_m(r,zq))=1. The minus sign is conjugate. Two finite proved cases and an equivalence context do not seed this infinite tail.",
+        "scope": "Proved tail of the exceptional pair criterion: for every q>=5 with q=1 or2 modulo4, m=q(4q+3)^2 and zq=-8q(q+1)(2q+1)+omega, omega^2=-3q(q+1), T_(m-1) and T_m are coprime over Q(omega)[r]. This now follows from the full direct all-q theorem. The earlier two finite certificates remain independent valid cases; no finite-to-infinite inference is used.",
         "sources": []
       },
       {
@@ -234174,7 +234309,7 @@
       },
       {
         "id": "HAG-OPEN-UNIVERSAL-MONIC-ORDINARY-ANTI-COEFFICIENT-BOUND",
-        "title": "Universal actual monic ordinary Anti-coefficient gate remains open",
+        "title": "Optional stronger monic ordinary Anti coefficient bound",
         "kind": "goal",
         "status": "open",
         "origin": "internal",
@@ -234183,7 +234318,7 @@
         ],
         "gap_kind": "mathematical",
         "dependency_coverage": "partial",
-        "scope": "OPEN HypothesisH, with FULL quantifiers: for EVERY M>=2,M1or2mod4, every cubic half root z,v2z1/2, K=Q2z and coefficient Anti=(a-sigma(a))/2, choose odd p=M ifModd elseM-1. For EVERY higher binary degree e>=4 occurring in p, S=pmod e,ell=s2S, and EVERY j<e in the ACTUAL native MONIC whole packetg_e(V)=V^e Q_e(1/V)/Q_e0, require v2Anti(a_j)>=ell+2. Not only one selected root, highest packet, bounded sample, formal quotient or arbitrarily scaled factor. This strong sufficient statement is NOT proved and has no converse from U.",
+        "scope": "Optional stronger property, still OPEN and no longer needed for universal forcing: OPEN HypothesisH, with FULL quantifiers: for EVERY M>=2,M1or2mod4, every cubic half root z,v2z1/2, K=Q2z and coefficient Anti=(a-sigma(a))/2, choose odd p=M ifModd elseM-1. For EVERY higher binary degree e>=4 occurring in p, S=pmod e,ell=s2S, and EVERY j<e in the ACTUAL native MONIC whole packetg_e(V)=V^e Q_e(1/V)/Q_e0, require v2Anti(a_j)>=ell+2. Not only one selected root, highest packet, bounded sample, formal quotient or arbitrarily scaled factor. This strong sufficient statement is NOT proved and has no converse from U. The universal three-forcing theorem is now proved independently by native backward valuations; no converse from that theorem to this coefficient property is known here.",
         "sources": []
       },
       {
@@ -234325,6 +234460,259 @@
             "path": "arithmetic/ABC_COPRIME_SHORT_POWER_WINDOWS.md",
             "sha256": "ff41a3cdd036931602331d58da22518acf47030045c5133eefe707b346fc3e43",
             "locator": "Uniform upper bounds once the shift part is larger"
+          }
+        ]
+      },
+      {
+        "id": "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+        "title": "Direct native backward-valuation proof of quadratic-face three-windows",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "Sections1--6 independently prove native coefficient bounds, exact syzygy/recurrence, both half-branch starts and all-index backward contradiction. Section7 gives local critical pairs and an explicit residual-family proof independent of CLASS; the global all-characteristic-zero conclusion additionally imports CLASS and the symmetric application additionally imports REC. No H or formal/Hensel input.",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+            "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+            "locator": "Complete written proof"
+          }
+        ]
+      },
+      {
+        "id": "SRC-DQC-ZERO-CONSTANT-BOUNDARY-WRITTEN-PROOF",
+        "title": "Zero-constant forcing boundary and exact forcing sharpness proof",
+        "kind": "source",
+        "status": "proved",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "Self-contained native h recurrence and pivot-free elimination prove the z0 two-forcing-window at every start; literal r=-2/5,z=-6/5 proves forcing-window sharpness. All-z three-window additionally uses the direct nonzero-z theorem; the symmetric c0 four-window additionally imports only REC. No moment-window sharpness or full binary closure.",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md",
+            "sha256": "4bcfb077b24967794c32177d912d35bd59c427b7b5c70e85d7fe2c12d2c7bb41",
+            "locator": "Complete written proof"
+          }
+        ]
+      },
+      {
+        "id": "DQC-NATIVE-COEFFICIENT-BOUND-AND-UNIT-CLASSES",
+        "title": "Native coefficient bounds and unit classes without ramified field hypotheses",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For every n,j<=n and any z in Q2bar with v2z=1/2, Qn has coefficient valuation>=s2(j), exact if4|j orj=n. All corrections in the literal coefficient formula are integral; only l2 can be a unit, and it gains at those indices. No trace, no-carry, z2/2 congruence, anti or PD-factor theorem is assumed.",
+        "sources": []
+      },
+      {
+        "id": "DQC-NATIVE-CUBIC-AND-NORMALIZED-RECURRENCE",
+        "title": "Exact native cubic syzygy and normalized affine recurrence",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "The native h recurrence yields the universal T syzygy z^(i-1)Pi_i=delta_iT_i+1+2(i+1)[1-r(2i+1)delta_i]T_i-i(i+1)(delta_i+2)(1-4rz)T_i-1. At half z, all delta are units and normalized Qn=A Qprev+C Qprev2+R has vA0,vC=1-2/e and vR>=s2n-n/e-1 at a selected radius. No coefficient pivot is waived.",
+        "sources": []
+      },
+      {
+        "id": "DQC-SELECTED-COMMON-RADIUS-AND-GAUSS-BOUND",
+        "title": "Common higher binary radius and narrow predecessor Gauss bound",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "A hypothetical half-z triple has middle M1or2mod4; p=M orM-1 is1mod4. Top units exclude r0. Qp and Qp+1 have standard binary polygons only at these two indices; their common zero has xi radius-1/e for some bit e>=4. With p=D+e+S,S1mod4,nu=s2D-D/e, every Qn at n in[D+e,p] has value>=nu, while Q_(D+e-1) has exact value nu from its unique coefficient indexD. No full arbitrary-n polygon assertion.",
+        "sources": []
+      },
+      {
+        "id": "DQC-BOTH-PARITIES-INITIAL-VALUATIONS",
+        "title": "Exact initial valuations in both middle-index parities",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For both M=p odd and M=p+1 even, the normalized recurrence and exact Pi differences force vQp-2=nu+ell-1-(S-2)/e and vQp-3=nu+ell-2-(S-3)/e. The even orientation first has vQp-1=nu+ell-(S-1)/e. All minima are strict. S1 contradicts the exact Gauss boundary immediately.",
+        "sources": []
+      },
+      {
+        "id": "DQC-BINARY-EXCESS-BACKWARD-DESCENT",
+        "title": "Uniform binary-excess backward descent and exact stopping",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For S>=5,ell=s2S, E_d=s2(p-d)-s2p+d has E2=v2(p-1)>=2 and nonnegative increments. The residual exceeds the backward least term by at least E_d-1-(d-1)/e>0. This propagates vQp-j=nu+ell-j+1-(S-2j+3)/e through j=ell+1, whose index is in[D+e,p] and whose value is strictly below nu. ell2 requires no additional step; no bounded test is extrapolated.",
+        "sources": []
+      },
+      {
+        "id": "DQC-UNCONDITIONAL-HALF-VALUATION-EXCLUSION",
+        "title": "Unconditional local half-valuation three-forcing exclusion",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For every r,z in Q2bar with v2z=1/2 and every k>=1, T_k,T_k+1,T_k+2 cannot all vanish. This is the closed Theorem1 from native bounds and exact backward valuation, without any anti gate, formal completion or Newton-factor transfer.",
+        "sources": []
+      },
+      {
+        "id": "DQC-CRITICAL-HALF-ADJACENT-PAIR-COPRIMENESS",
+        "title": "Every critical half adjacent pair is coprime",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For every M>=2 and z in Q2bar with Pi_M(z)=0 and v2z=1/2, the r-polynomials T_M-1,T_M are coprime over Q2(z). A common root would give T_M+1=0 by the exact syzygy and unit deltaM, contradicting local half exclusion. No global CLASS premise.",
+        "sources": []
+      },
+      {
+        "id": "DQC-EXPLICIT-RESIDUAL-FAMILY-CUBIC-AND-HALF-VALUATION",
+        "title": "Explicit residual family satisfies the critical half hypotheses",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For every q>=1,q1or2mod4, M=q(4q+3)^2,omega2=-3q(q+1),z=-8q(q+1)(2q+1)+omega, one has z+M=q+omega and Pi_M=(2(z+M)+4q+3)*[(z+M)^2-2q(z+M)+q(4q+3)]=0. Every 2-adic embedding has vomega1/2 and rational center valuation4, so vz1/2. Common roots embed in a number field. This proof is independent of CLASS.",
+        "sources": []
+      },
+      {
+        "id": "DQC-EXACT-EXISTING-UNIVERSAL-DEFINITION-CONTEXT",
+        "title": "Identical-assertion context for the new global theorem and existing U",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "The new global principal P and existing QTF assertion U have exactly the same quantifiers: every characteristic-zero field, every r,z with z nonzero and every k>=1, at least one T_k,T_k+1,T_k+2 is nonzero. Both implications are definitional restrictions of the same statement. This proved context seeds neither member by itself.",
+        "sources": []
+      },
+      {
+        "id": "DQC-SYMMETRIC-FIVE-WINDOW-IMPLICATION-CONTEXT",
+        "title": "One-way symmetric five-window implication context",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For aec nonzero and arbitrary b over every characteristic-zero field, REC plus five interior moment zeros starting n>=1 gives the three normalized face zeros T_n+2,T_n+3,T_n+4, using Hj=Lambda1((at2+et+c)^j). Thus the universal three-window implies the displayed symmetric five-window; b0 is its actual five-support specialization. No converse to U, R or H.",
+        "sources": []
+      },
+      {
+        "id": "DQC-ZERO-CONSTANT-TWO-FORCING-WINDOW",
+        "title": "Self-contained zero-constant two-forcing window",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For all characteristic-zero fields, all r and k>=1, T_k(r,0),T_k+1(r,0) are not both zero. The native syzygy is derived locally; only at i>=2 is its z0 specialization homogeneous, with nonzero rational coefficient of T_i-1. Backward descent reaches T1=2r+2,T2=24r2+16r+4, and r=-1 givesT2=12. No main source, CLASS or REC premise.",
+        "sources": []
+      },
+      {
+        "id": "DQC-ALL-CONSTANT-THREE-FORCING-WINDOW",
+        "title": "Universal all-constant quadratic-face three-window",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For every characteristic-zero field, every r,z including z0, and k>=1, at least one T_k,T_k+1,T_k+2 is nonzero. This combines only the proved nonzero-z global principal and the independently proved z0 two-window.",
+        "sources": []
+      },
+      {
+        "id": "DQC-SYMMETRIC-ZERO-CONSTANT-FOUR-WINDOW",
+        "title": "Symmetric zero-constant four-moment window",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For f=a(x2+y2)+bxy+e(x+y),e nonzero, no four consecutive factorial moments at positive start can vanish: REC gives two adjacent normalized z0 face zeros. In particular b0,ae nonzero has actual support4; abe nonzero support5 enjoys the stronger4 exclusion. No shorter support window inferred from further coefficient zeros.",
+        "sources": []
+      },
+      {
+        "id": "DQC-SHARP-THREE-FORCING-WINDOW-WITNESS",
+        "title": "Exact sharpness of the forcing three-window only",
+        "kind": "claim",
+        "status": "open",
+        "origin": "internal",
+        "topics": [
+          "factorial"
+        ],
+        "dependency_coverage": "partial",
+        "evidence_type": "written_proof",
+        "scope": "For r=-2/5,z=-6/5, literal factorial evaluation gives h0=1,h1=-1,h2=2,h3=-1986/125 and T1=T2=0,T3=-1236/125 nonzero. Thus universal two-forcing exclusion is false even for the dense quadratic face. No symmetric interior moment counterexample or moment-window sharpness is asserted.",
+        "sources": []
+      },
+      {
+        "id": "FACT-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS-REPLAY",
+        "kind": "claim",
+        "title": "Exact linked quadratic anchor replay",
+        "scope": "Exact arithmetic checks of quadratic specializations, the denominator-prime nonvanishing comparison, and the two scalar remainders for fixed relative ordinary data.",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/verify_multivariate_odd_corner_linked_quadratic_anchors.py",
+            "sha256": "d240b6df4d30fd14073342831639d4d2e20a27deae1c869f6653451af96bd42f",
+            "locator": "Exact arithmetic checks of quadratic specializations, the denominator-prime nonvanishing comparison, and the two scalar remainders for fixed relative ordinary data."
           }
         ]
       }
@@ -350770,7 +351158,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+          "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
           "locator": "Theorem and proof by varying-profile subsequences"
         },
         "dependency_coverage": "partial"
@@ -350786,7 +351174,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+          "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
           "locator": "Corollary"
         },
         "dependency_coverage": "partial"
@@ -350876,7 +351264,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+          "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
           "locator": "Corollary"
         },
         "dependency_coverage": "partial"
@@ -352007,7 +352395,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+          "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
           "locator": "The remaining large-order regime"
         },
         "dependency_coverage": "partial"
@@ -353246,7 +353634,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+          "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
           "locator": "The fixed-terminal obligation"
         },
         "dependency_coverage": "partial"
@@ -353754,7 +354142,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+          "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
           "locator": "The remaining large-order regime"
         },
         "dependency_coverage": "partial"
@@ -381229,6 +381617,371 @@
           "locator": "Paying support on all three letters"
         },
         "dependency_coverage": "partial"
+      },
+      {
+        "id": "RULE-DQC-NATIVE-COEFFICIENTS",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF"
+        ],
+        "conclusion": "DQC-NATIVE-COEFFICIENT-BOUND-AND-UNIT-CLASSES",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Lemma2;Section1"
+        }
+      },
+      {
+        "id": "RULE-DQC-NATIVE-CUBIC-RECURRENCE",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF"
+        ],
+        "conclusion": "DQC-NATIVE-CUBIC-AND-NORMALIZED-RECURRENCE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Section4 Equations9--13"
+        }
+      },
+      {
+        "id": "RULE-DQC-RADIUS-GAUSS",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+          "DQC-NATIVE-COEFFICIENT-BOUND-AND-UNIT-CLASSES",
+          "DQC-NATIVE-CUBIC-AND-NORMALIZED-RECURRENCE"
+        ],
+        "conclusion": "DQC-SELECTED-COMMON-RADIUS-AND-GAUSS-BOUND",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Sections2--3;Lemma3"
+        }
+      },
+      {
+        "id": "RULE-DQC-BOTH-PARITIES-STARTS",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+          "DQC-NATIVE-CUBIC-AND-NORMALIZED-RECURRENCE",
+          "DQC-SELECTED-COMMON-RADIUS-AND-GAUSS-BOUND"
+        ],
+        "conclusion": "DQC-BOTH-PARITIES-INITIAL-VALUATIONS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Section5 Equations14--17"
+        }
+      },
+      {
+        "id": "RULE-DQC-BACKWARD-DESCENT",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+          "DQC-SELECTED-COMMON-RADIUS-AND-GAUSS-BOUND",
+          "DQC-NATIVE-CUBIC-AND-NORMALIZED-RECURRENCE",
+          "DQC-BOTH-PARITIES-INITIAL-VALUATIONS"
+        ],
+        "conclusion": "DQC-BINARY-EXCESS-BACKWARD-DESCENT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Section6 Equations18--20"
+        }
+      },
+      {
+        "id": "RULE-DQC-LOCAL-HALF-CLOSURE",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+          "DQC-NATIVE-COEFFICIENT-BOUND-AND-UNIT-CLASSES",
+          "DQC-SELECTED-COMMON-RADIUS-AND-GAUSS-BOUND",
+          "DQC-BINARY-EXCESS-BACKWARD-DESCENT"
+        ],
+        "conclusion": "DQC-UNCONDITIONAL-HALF-VALUATION-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Theorem1;Sections1--6"
+        }
+      },
+      {
+        "id": "RULE-DQC-CRITICAL-HALF-PAIR",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+          "DQC-UNCONDITIONAL-HALF-VALUATION-EXCLUSION",
+          "DQC-NATIVE-CUBIC-AND-NORMALIZED-RECURRENCE"
+        ],
+        "conclusion": "DQC-CRITICAL-HALF-ADJACENT-PAIR-COPRIMENESS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Corollary4"
+        }
+      },
+      {
+        "id": "RULE-DQC-EXPLICIT-RESIDUAL-FAMILY",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF"
+        ],
+        "conclusion": "DQC-EXPLICIT-RESIDUAL-FAMILY-CUBIC-AND-HALF-VALUATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Section7 explicit z+M and cubic factorization"
+        }
+      },
+      {
+        "id": "RULE-DQC-EXISTING-UNIVERSAL-DEFINITION-CONTEXT",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF"
+        ],
+        "conclusion": "DQC-EXACT-EXISTING-UNIVERSAL-DEFINITION-CONTEXT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Corollary5;exact same quantifiers as existing U"
+        }
+      },
+      {
+        "id": "RULE-DQC-SYMMETRIC-FIVE-CONTEXT",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+          "SBQ-FULL-SYMMETRIC-STEIN-EULER-RECURRENCE"
+        ],
+        "conclusion": "DQC-SYMMETRIC-FIVE-WINDOW-IMPLICATION-CONTEXT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Section7 final application"
+        }
+      },
+      {
+        "id": "RULE-DQC-CLOSED-GLOBAL-THREE-WINDOW",
+        "premises": [
+          "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+          "DQC-UNCONDITIONAL-HALF-VALUATION-EXCLUSION",
+          "QTF-EXACT-EXCEPTIONAL-QUADRATIC-FAMILY-NECESSITY"
+        ],
+        "conclusion": "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Corollary5;Section7 global algebraicity/embedding"
+        }
+      },
+      {
+        "id": "RULE-DQC-EXISTING-RESIDUAL-PAIR-CLOSURE",
+        "premises": [
+          "DQC-CRITICAL-HALF-ADJACENT-PAIR-COPRIMENESS",
+          "DQC-EXPLICIT-RESIDUAL-FAMILY-CUBIC-AND-HALF-VALUATION"
+        ],
+        "conclusion": "QTF-OPEN-EXCEPTIONAL-QUADRATIC-FAMILY-PAIR-COPRIMALITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Section7 direct all-q adjacent-pair proof independent of CLASS"
+        }
+      },
+      {
+        "id": "RULE-DQC-SYMMETRIC-FIVE-PRINCIPAL",
+        "premises": [
+          "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW",
+          "DQC-SYMMETRIC-FIVE-WINDOW-IMPLICATION-CONTEXT"
+        ],
+        "conclusion": "FACTORIAL-SYMMETRIC-BINARY-QUADRATIC-FIVE-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Section7 symmetric five-window"
+        }
+      },
+      {
+        "id": "RULE-DQC-EXISTING-SYMMETRIC-FIVE-GOAL",
+        "premises": [
+          "FACTORIAL-SYMMETRIC-BINARY-QUADRATIC-FIVE-WINDOW"
+        ],
+        "conclusion": "SBQ-OPEN-SYMMETRIC-FIVE-TERM-WITHOUT-CROSS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "locator": "Section7 b0 actual support-five restriction"
+        }
+      },
+      {
+        "id": "RULE-DQC-ZERO-CONSTANT-TWO-WINDOW",
+        "premises": [
+          "SRC-DQC-ZERO-CONSTANT-BOUNDARY-WRITTEN-PROOF"
+        ],
+        "conclusion": "DQC-ZERO-CONSTANT-TWO-FORCING-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md",
+          "sha256": "4bcfb077b24967794c32177d912d35bd59c427b7b5c70e85d7fe2c12d2c7bb41",
+          "locator": "Theorem1;self-contained h recurrence and native elimination"
+        }
+      },
+      {
+        "id": "RULE-DQC-ALL-CONSTANT-THREE-WINDOW",
+        "premises": [
+          "SRC-DQC-ZERO-CONSTANT-BOUNDARY-WRITTEN-PROOF",
+          "DQC-ZERO-CONSTANT-TWO-FORCING-WINDOW",
+          "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW"
+        ],
+        "conclusion": "DQC-ALL-CONSTANT-THREE-FORCING-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md",
+          "sha256": "4bcfb077b24967794c32177d912d35bd59c427b7b5c70e85d7fe2c12d2c7bb41",
+          "locator": "Corollary2"
+        }
+      },
+      {
+        "id": "RULE-DQC-ZERO-CONSTANT-SYMMETRIC-FOUR",
+        "premises": [
+          "SRC-DQC-ZERO-CONSTANT-BOUNDARY-WRITTEN-PROOF",
+          "DQC-ZERO-CONSTANT-TWO-FORCING-WINDOW",
+          "SBQ-FULL-SYMMETRIC-STEIN-EULER-RECURRENCE"
+        ],
+        "conclusion": "DQC-SYMMETRIC-ZERO-CONSTANT-FOUR-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md",
+          "sha256": "4bcfb077b24967794c32177d912d35bd59c427b7b5c70e85d7fe2c12d2c7bb41",
+          "locator": "Section1 symmetric c0 application"
+        }
+      },
+      {
+        "id": "RULE-DQC-ZERO-SYMMETRIC-PRINCIPAL",
+        "premises": [
+          "DQC-SYMMETRIC-ZERO-CONSTANT-FOUR-WINDOW"
+        ],
+        "conclusion": "FACTORIAL-SYMMETRIC-ZERO-CONSTANT-QUADRATIC-FOUR-WINDOW",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md",
+          "sha256": "4bcfb077b24967794c32177d912d35bd59c427b7b5c70e85d7fe2c12d2c7bb41",
+          "locator": "Section1 actual b0 support4 and arbitrary-b4 exclusion"
+        }
+      },
+      {
+        "id": "RULE-DQC-FORCING-SHARPNESS",
+        "premises": [
+          "SRC-DQC-ZERO-CONSTANT-BOUNDARY-WRITTEN-PROOF"
+        ],
+        "conclusion": "DQC-SHARP-THREE-FORCING-WINDOW-WITNESS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md",
+          "sha256": "4bcfb077b24967794c32177d912d35bd59c427b7b5c70e85d7fe2c12d2c7bb41",
+          "locator": "Section2 literal witness"
+        }
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-MOVING-MARK-PRIME-CANCELLATION",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS",
+          "FACTORIAL-MULTIVARIATE-UNIVERSAL-OPPOSED-PADIC-ANGLE-MARKING",
+          "FACTORIAL-MULTIVARIATE-DENSE-CLUSTERED-UNIT-GAP-CLOSURE",
+          "FACTORIAL-MULTIVARIATE-EFFECTIVE-ABSOLUTE-EVENTUAL-ANGLES"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-MOVING-MARK-PRIME-CANCELLATION",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/MULTIVARIATE_MOVING_MARK_PRIME_CANCELLATION.md",
+          "sha256": "b926f1c55c52b6b409110fcb2577b191b92692a4bf6f9f57c3b1fe0261fc1167",
+          "locator": "Simultaneous determinant isolation, neutral rows, prime mass and a curvature-cheap independent angular certificate"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-WIDE-UPPER-PRIME-MARKS",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS",
+          "FACTORIAL-MULTIVARIATE-EFFECTIVE-ABSOLUTE-EVENTUAL-ANGLES"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-WIDE-UPPER-PRIME-MARKS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/MULTIVARIATE_WIDE_UPPER_PRIME_MARKS.md",
+          "sha256": "774bcc72654b17ec58b8495b480827d3a498d95f7aa3c287a45c4c51a3c93aba",
+          "locator": "Prime reduction and the uniform exceptional-height bound from the mean square prime gaps"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-SIGNED-SLOT-ALTERNATION-CONTACT-RIGIDITY",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-SIGNED-CORE-REPLACEMENT-CONTACTS",
+          "FACTORIAL-MULTIVARIATE-POSITIVE-DIFFUSE-EXCEPTION-SIGNED-JETS"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-SIGNED-SLOT-ALTERNATION-CONTACT-RIGIDITY",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/MULTIVARIATE_SIGNED_SLOT_ALTERNATION_CONTACT_RIGIDITY.md",
+          "sha256": "333c2b6b9970e87d55ab92d170861a494a0d585fcd7817c12641270acdb77c7b",
+          "locator": "Signed interpolation estimate, exact slot ratios, finite rank, and fixed-gap signed center response"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-QUADRATIC-CYCLOTOMIC-PRODUCT-PRIMES",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-QUADRATIC-JOINT-PARITY-DISCRIMINANT-BUDGET"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-QUADRATIC-CYCLOTOMIC-PRODUCT-PRIMES",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/MULTIVARIATE_QUADRATIC_CYCLOTOMIC_PRODUCT_PRIMES.md",
+          "sha256": "a1c73704c1aa634f7fa323d4db4ab267c47e3fad5e93fe1277e7a8080bee0d06",
+          "locator": "Paired integer product identities, Lehmer primitive divisors, and inert-prime sign constraint"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-FACTORIAL-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS",
+        "premises": [
+          "FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS",
+          "FACTORIAL-MULTIVARIATE-EFFECTIVE-ABSOLUTE-EVENTUAL-ANGLES",
+          "FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-NONDIVISIBILITY",
+          "FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-TERMINAL-FIVE"
+        ],
+        "conclusion": "FACTORIAL-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/MULTIVARIATE_ODD_CORNER_LINKED_QUADRATIC_ANCHORS.md",
+          "sha256": "38fabc5ae4d904f20fe33e9ec3909fa01679f806ce58255a1b898be64d895338",
+          "locator": "Linked anchors, Sylvester minor divisibility, two-remainder reduction, and finite translation lists"
+        },
+        "dependency_coverage": "partial"
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -389005,7 +389758,8 @@
         "members": [
           "QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW",
           "QTF-OPEN-EXCEPTIONAL-QUADRATIC-FAMILY-PAIR-COPRIMALITY",
-          "Q12-OPEN-EXCEPTIONAL-PAIR-COPRIMALITY-TAIL-Q-GE-FIVE"
+          "Q12-OPEN-EXCEPTIONAL-PAIR-COPRIMALITY-TAIL-Q-GE-FIVE",
+          "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW"
         ],
         "directions": [
           {
@@ -389066,6 +389820,36 @@
               "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_FIRST_TWO_RESIDUAL_PAIRS.md",
               "sha256": "0f70eb9de314ebaf72e69c012c6db4ad03fd573b5abb4ce8fee88980162182ea",
               "locator": "Proposition3 finite-pair plus tail direction"
+            }
+          },
+          {
+            "id": "RULE-DQC-NEW-GLOBAL-TO-EXISTING-UNIVERSAL",
+            "premises": [
+              "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW",
+              "DQC-EXACT-EXISTING-UNIVERSAL-DEFINITION-CONTEXT"
+            ],
+            "conclusion": "QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW",
+            "status": "proved",
+            "dependency_coverage": "partial",
+            "proof": {
+              "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+              "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+              "locator": "Corollary5;identical universal assertion"
+            }
+          },
+          {
+            "id": "RULE-DQC-EXISTING-UNIVERSAL-TO-NEW-GLOBAL",
+            "premises": [
+              "QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW",
+              "DQC-EXACT-EXISTING-UNIVERSAL-DEFINITION-CONTEXT"
+            ],
+            "conclusion": "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW",
+            "status": "proved",
+            "dependency_coverage": "partial",
+            "proof": {
+              "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+              "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+              "locator": "Corollary5;identical universal assertion"
             }
           }
         ]
@@ -397414,6 +398198,14 @@
               ],
               "role": "mathematical_input",
               "locator": "Theorem 2.1, Newton polygon product rule"
+            },
+            {
+              "path": "factorial/image-rigidity/MULTIVARIATE_ODD_CORNER_LINKED_QUADRATIC_ANCHORS.md",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS"
+              ],
+              "role": "mathematical_input",
+              "locator": "Theorem 2.1, product of Newton polygons used at a denominator prime"
             }
           ],
           "verification": "source_read",
@@ -437696,6 +438488,86 @@
           "title_status": "source_title",
           "verification": "source_read",
           "verification_basis": "Primary theorem statement and application hypotheses inspected."
+        },
+        {
+          "id": "EXT-PAPER-DOI-10-1515-CRLL-2001-080",
+          "title": "Existence of primitive divisors of Lucas and Lehmer numbers",
+          "citation": "Yuri Bilu, Guillaume Hanrot and Paul M. Voutier, with an appendix by Maurice Mignotte, Existence of primitive divisors of Lucas and Lehmer numbers, Journal für die reine und angewandte Mathematik 539 (2001), 75–122.",
+          "identifiers": {
+            "doi": "10.1515/crll.2001.080"
+          },
+          "urls": [
+            "https://doi.org/10.1515/crll.2001.080",
+            "https://oskar-bordeaux.fr/handle/20.500.12278/166397"
+          ],
+          "local_sources": [],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Author copy and the Lehmer-pair and primitive-divisor definitions inspected. Theorem 1.4 holds at every index greater than thirty.",
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/MULTIVARIATE_QUADRATIC_CYCLOTOMIC_PRODUCT_PRIMES.md",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-QUADRATIC-CYCLOTOMIC-PRODUCT-PRIMES"
+              ],
+              "role": "mathematical_input",
+              "locator": "Theorem 1.4, Lehmer primitive divisor at prescribed prime index"
+            }
+          ]
+        },
+        {
+          "id": "REF-FACTORIAL-MAYNARD-MEAN-SQUARE-PRIME-GAPS",
+          "title": "On the difference between consecutive primes",
+          "citation": "James Maynard, On the difference between consecutive primes, arXiv:1201.1787v3 (2012), reproducing an earlier result of A. S. Peck.",
+          "identifiers": {
+            "arxiv": "1201.1787"
+          },
+          "urls": [
+            "https://arxiv.org/pdf/1201.1787"
+          ],
+          "local_sources": [],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Theorem 3.1 gives the unconditional mean-square exponent 5/4 up to an arbitrary positive error. The paper credits the earlier result to Peck's thesis.",
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/MULTIVARIATE_WIDE_UPPER_PRIME_MARKS.md",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-WIDE-UPPER-PRIME-MARKS"
+              ],
+              "role": "mathematical_input",
+              "locator": "Theorem 3.1, baseline mean-square gap input"
+            }
+          ]
+        },
+        {
+          "id": "REF-FACTORIAL-STADLMANN-MEAN-SQUARE-PRIME-GAPS",
+          "title": "On the mean square gap between primes",
+          "citation": "Julia Stadlmann, On the mean square gap between primes, arXiv:2212.10867v2 (2026), accepted for publication in Mathematische Zeitschrift.",
+          "identifiers": {
+            "arxiv": "2212.10867"
+          },
+          "urls": [
+            "https://arxiv.org/pdf/2212.10867v2",
+            "https://arxiv.org/abs/2212.10867"
+          ],
+          "local_sources": [],
+          "verification": "source_read",
+          "resource_type": "paper",
+          "title_status": "source_title",
+          "verification_basis": "Accepted author version, Theorem 1, gives the unconditional mean-square exponent 1.23 up to an arbitrary positive error. The author record reports acceptance.",
+          "uses": [
+            {
+              "path": "factorial/image-rigidity/MULTIVARIATE_WIDE_UPPER_PRIME_MARKS.md",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-WIDE-UPPER-PRIME-MARKS"
+              ],
+              "role": "mathematical_input",
+              "locator": "Theorem 1, sharpened mean-square input"
+            }
+          ]
         }
       ],
       "internal_citations": [
@@ -593396,7 +594268,7 @@
         },
         {
           "path": "factorial/image-rigidity/MULTIVARIATE_ALL_DEGREE_REDUCTION.md",
-          "sha256": "a4a702c4cfe63ddc627efdba10512e214950591ecd57b961102e5d1e0501aa88",
+          "sha256": "47eea00248db64651bd7213b5f2e4a2d4992d793d27f554c46d49ffa88ee7f72",
           "claims": [
             "FACTORIAL-MULTIVARIATE-UNIFORM-POSITIVE-CURVATURE-FULLY-SHARED",
             "FACTORIAL-MULTIVARIATE-UNIFORM-EVENTUAL-FULLY-SHARED",
@@ -593930,7 +594802,12 @@
             "FACTORIAL-MULTIVARIATE-SIGNED-CORE-REPLACEMENT-CONTACTS",
             "FACTORIAL-MULTIVARIATE-COUNTABLE-CORE-CURVATURE-HEIGHT-SEPARATION",
             "FACTORIAL-MULTIVARIATE-QUADRATIC-PRINCIPAL-DIVISOR-LOG-HEIGHT",
-            "FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS"
+            "FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS",
+            "FACTORIAL-MULTIVARIATE-MOVING-MARK-PRIME-CANCELLATION",
+            "FACTORIAL-MULTIVARIATE-WIDE-UPPER-PRIME-MARKS",
+            "FACTORIAL-MULTIVARIATE-SIGNED-SLOT-ALTERNATION-CONTACT-RIGIDITY",
+            "FACTORIAL-MULTIVARIATE-QUADRATIC-CYCLOTOMIC-PRODUCT-PRIMES",
+            "FACTORIAL-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS"
           ],
           "role": "proof",
           "gaps": [],
@@ -615813,6 +616690,242 @@
           "statements": [],
           "role": "proof",
           "explanation": null
+        },
+        {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_THREE_WINDOW_AND_SYMMETRIC_FIVE_WINDOW.md",
+          "sha256": "e8d3aa9fdb271dee0aca92b9ad2e56bb99fad42bb21ed4538011c691af38eaed",
+          "role": "proof",
+          "claims": [
+            "SRC-DQC-DIRECT-THREE-WINDOW-WRITTEN-PROOF",
+            "DQC-NATIVE-COEFFICIENT-BOUND-AND-UNIT-CLASSES",
+            "DQC-NATIVE-CUBIC-AND-NORMALIZED-RECURRENCE",
+            "DQC-SELECTED-COMMON-RADIUS-AND-GAUSS-BOUND",
+            "DQC-BOTH-PARITIES-INITIAL-VALUATIONS",
+            "DQC-BINARY-EXCESS-BACKWARD-DESCENT",
+            "DQC-UNCONDITIONAL-HALF-VALUATION-EXCLUSION",
+            "DQC-CRITICAL-HALF-ADJACENT-PAIR-COPRIMENESS",
+            "DQC-EXPLICIT-RESIDUAL-FAMILY-CUBIC-AND-HALF-VALUATION",
+            "DQC-EXACT-EXISTING-UNIVERSAL-DEFINITION-CONTEXT",
+            "DQC-SYMMETRIC-FIVE-WINDOW-IMPLICATION-CONTEXT",
+            "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW",
+            "FACTORIAL-SYMMETRIC-BINARY-QUADRATIC-FIVE-WINDOW",
+            "QTF-OPEN-UNIVERSAL-QUADRATIC-FORCING-THREE-WINDOW",
+            "QTF-OPEN-EXCEPTIONAL-QUADRATIC-FAMILY-PAIR-COPRIMALITY",
+            "SBQ-OPEN-SYMMETRIC-FIVE-TERM-WITHOUT-CROSS"
+          ],
+          "dependencies": [
+            "QTF-EXACT-EXCEPTIONAL-QUADRATIC-FAMILY-NECESSITY",
+            "SBQ-FULL-SYMMETRIC-STEIN-EULER-RECURRENCE"
+          ],
+          "gaps": [],
+          "explanation": "All5 actual named statements mapped. Local half/pair and explicit residual family need no CLASS; globalP additionally CLASS, symmetricP5 additionally REC. Existing U/R/b0 are proved through exact guarded routes without editing their raw records.",
+          "statements": [
+            {
+              "locator": "Theorem 1 (unconditional local half exclusion).** There are no r,z in",
+              "kind": "theorem",
+              "line": 5,
+              "title": "Theorem 1 (unconditional local half exclusion).** There are no r,z in",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "DQC-UNCONDITIONAL-HALF-VALUATION-EXCLUSION"
+              ]
+            },
+            {
+              "locator": "Lemma 2 (the only native coefficient facts needed).** For every n and j",
+              "kind": "lemma",
+              "line": 34,
+              "title": "Lemma 2 (the only native coefficient facts needed).** For every n and j",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "DQC-NATIVE-COEFFICIENT-BOUND-AND-UNIT-CLASSES"
+              ]
+            },
+            {
+              "locator": "Lemma 3.** At the xi in(6),",
+              "kind": "lemma",
+              "line": 107,
+              "title": "Lemma 3.** At the xi in(6),",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "DQC-SELECTED-COMMON-RADIUS-AND-GAUSS-BOUND"
+              ]
+            },
+            {
+              "locator": "Corollary 4 (critical half pair).** If M>=2, Pi_M(z)=0 and v(z)=1/2,",
+              "kind": "corollary",
+              "line": 262,
+              "title": "Corollary 4 (critical half pair).** If M>=2, Pi_M(z)=0 and v(z)=1/2,",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "DQC-CRITICAL-HALF-ADJACENT-PAIR-COPRIMENESS"
+              ]
+            },
+            {
+              "locator": "Corollary 5 (universal quadratic-face three-window).** For every",
+              "kind": "corollary",
+              "line": 291,
+              "title": "Corollary 5 (universal quadratic-face three-window).** For every",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW"
+              ]
+            }
+          ],
+          "unmapped_statements": []
+        },
+        {
+          "path": "factorial/image-rigidity/QUADRATIC_FACE_FORCING_ZERO_CONSTANT_AND_SHARPNESS.md",
+          "sha256": "4bcfb077b24967794c32177d912d35bd59c427b7b5c70e85d7fe2c12d2c7bb41",
+          "role": "proof",
+          "claims": [
+            "SRC-DQC-ZERO-CONSTANT-BOUNDARY-WRITTEN-PROOF",
+            "DQC-ZERO-CONSTANT-TWO-FORCING-WINDOW",
+            "DQC-ALL-CONSTANT-THREE-FORCING-WINDOW",
+            "DQC-SYMMETRIC-ZERO-CONSTANT-FOUR-WINDOW",
+            "DQC-SHARP-THREE-FORCING-WINDOW-WITNESS",
+            "FACTORIAL-SYMMETRIC-ZERO-CONSTANT-QUADRATIC-FOUR-WINDOW"
+          ],
+          "dependencies": [
+            "FACTORIAL-QUADRATIC-FACE-FORCING-UNIVERSAL-THREE-WINDOW",
+            "SBQ-FULL-SYMMETRIC-STEIN-EULER-RECURRENCE"
+          ],
+          "gaps": [],
+          "explanation": "Both actual declarations mapped. ZERO2 and exact forcing sharpness are self-contained. Allz3 additionally P; c0four additionally REC. Forcing sharpness is not moment-window sharpness.",
+          "statements": [
+            {
+              "locator": "Theorem 1 (zero-constant two-window).** For every r in K and every k>=1,",
+              "kind": "theorem",
+              "line": 7,
+              "title": "Theorem 1 (zero-constant two-window).** For every r in K and every k>=1,",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "DQC-ZERO-CONSTANT-TWO-FORCING-WINDOW"
+              ]
+            },
+            {
+              "locator": "Corollary 2 (all-constant three-window).** The universal no-three-forcing",
+              "kind": "corollary",
+              "line": 42,
+              "title": "Corollary 2 (all-constant three-window).** The universal no-three-forcing",
+              "mapping_kind": "exact-statement",
+              "nodes": [
+                "DQC-ALL-CONSTANT-THREE-FORCING-WINDOW"
+              ]
+            }
+          ],
+          "unmapped_statements": []
+        },
+        {
+          "path": "factorial/image-rigidity/MULTIVARIATE_MOVING_MARK_PRIME_CANCELLATION.md",
+          "sha256": "b926f1c55c52b6b409110fcb2577b191b92692a4bf6f9f57c3b1fe0261fc1167",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-MOVING-MARK-PRIME-CANCELLATION"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS",
+            "FACTORIAL-MULTIVARIATE-UNIVERSAL-OPPOSED-PADIC-ANGLE-MARKING",
+            "FACTORIAL-MULTIVARIATE-DENSE-CLUSTERED-UNIT-GAP-CLOSURE",
+            "FACTORIAL-MULTIVARIATE-EFFECTIVE-ABSOLUTE-EVENTUAL-ANGLES"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem.** Fix orders \\(4\\le n<N=n+1\\), a finite ordinary core,",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-MOVING-MARK-PRIME-CANCELLATION"
+              ]
+            }
+          ],
+          "explanation": "Ordinary extensions of any fixed core with arbitrary prescribed positive limiting diffuse strength, permitted bias and signed added gap preserve both full envelopes while flattening both Newton polygons at growing sets of selected moving primes. Their compulsory overlap budget can be exceeded by an unbounded factor. A separate prime guarantees all-degree angular separation of the same original profiles."
+        },
+        {
+          "path": "factorial/image-rigidity/MULTIVARIATE_WIDE_UPPER_PRIME_MARKS.md",
+          "sha256": "774bcc72654b17ec58b8495b480827d3a498d95f7aa3c287a45c4c51a3c93aba",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-WIDE-UPPER-PRIME-MARKS"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS",
+            "FACTORIAL-MULTIVARIATE-EFFECTIVE-ABSOLUTE-EVENTUAL-ANGLES"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem.** Outside a set of",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-WIDE-UPPER-PRIME-MARKS"
+              ]
+            }
+          ],
+          "explanation": "A prime in a protected upper window above the lower factorial arguments excludes all degrees of common factor. Mean-square prime gap bounds give this witness simultaneously in all sufficiently wide upper windows for all bounded-curvature profiles outside a density-zero set of maximal smaller exponents. Large least gap thus gives all-degree coprimality at density-one heights, with arbitrary row counts and orientations."
+        },
+        {
+          "path": "factorial/image-rigidity/MULTIVARIATE_SIGNED_SLOT_ALTERNATION_CONTACT_RIGIDITY.md",
+          "sha256": "333c2b6b9970e87d55ab92d170861a494a0d585fcd7817c12641270acdb77c7b",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-SIGNED-SLOT-ALTERNATION-CONTACT-RIGIDITY"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-SIGNED-CORE-REPLACEMENT-CONTACTS",
+            "FACTORIAL-MULTIVARIATE-POSITIVE-DIFFUSE-EXCEPTION-SIGNED-JETS"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact Gauss slots with arbitrary signed gaps and row counts yield signed measures whose finite alternation bounds control coefficient errors by signed moments even at coalescing slot heights. At positive Gaussian references of simple roots, the specified response rank forces exact contacts to exceed the prescribed budgets. A fixed-gap chart also gives a scalar gate when the earlier signed moments match."
+        },
+        {
+          "path": "factorial/image-rigidity/MULTIVARIATE_QUADRATIC_CYCLOTOMIC_PRODUCT_PRIMES.md",
+          "sha256": "a1c73704c1aa634f7fa323d4db4ab267c47e3fad5e93fe1277e7a8080bee0d06",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-QUADRATIC-CYCLOTOMIC-PRODUCT-PRIMES"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-QUADRATIC-JOINT-PARITY-DISCRIMINANT-BUDGET"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact integer self and cross products constrain the same common quadratic's primitive norm, angle and scale in arbitrary ordinary parent profiles. Every noncyclotomic common quadratic requires a fresh prime of residue quotient order q for each prime q greater than thirty; these primes pass beyond the full original coefficient support. A sign condition forces inert-prime parity in the primitive angular product."
+        },
+        {
+          "path": "factorial/image-rigidity/MULTIVARIATE_ODD_CORNER_LINKED_QUADRATIC_ANCHORS.md",
+          "sha256": "38fabc5ae4d904f20fe33e9ec3909fa01679f806ce58255a1b898be64d895338",
+          "role": "proof",
+          "claims": [
+            "FACTORIAL-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS"
+          ],
+          "dependencies": [
+            "FACTORIAL-MULTIVARIATE-UNIVERSAL-ENVELOPE-MARKS",
+            "FACTORIAL-MULTIVARIATE-EFFECTIVE-ABSOLUTE-EVENTUAL-ANGLES",
+            "FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-NONDIVISIBILITY",
+            "FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-TERMINAL-FIVE"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem.** For every such profile, at least one of two explicitly selected affine moduli \\(aB+b\\) must divide a nonzero integer determined just by the deficits \\(t_i\\), the gaps, orientations, and multiplicities if the physical moments have a common root. The two chosen moduli are coprime. More generally, a list of \\(m-1\\) rational specializations gives simultaneous necessary divisor conditions on the original profile, including exact prime-power conditions from two scalar remainders. In particular there are only finitely many exceptional translations with these row data fixed. Their possible values lie in an explicit divisor list.",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS"
+              ]
+            }
+          ],
+          "explanation": "Every simultaneous odd corner above terminal five has a nonzero divisor bound on an explicit affine form in the original largest smaller exponent. Two linked denominator-prime tests ensure nonvanishing at one of two anchors. Further corners yield simultaneous prime-power scalar tests. Together with the noncorner window, every fixed ordinary relative translation template admits a finite exact candidate list for all-degree failures."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_multivariate_odd_corner_linked_quadratic_anchors.py",
+          "sha256": "d240b6df4d30fd14073342831639d4d2e20a27deae1c869f6653451af96bd42f",
+          "role": "evidence",
+          "claims": [
+            "FACT-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS-REPLAY",
+            "FACTORIAL-MULTIVARIATE-ODD-CORNER-LINKED-QUADRATIC-ANCHORS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact arithmetic checks of quadratic specializations, the denominator-prime nonvanishing comparison, and the two scalar remainders for fixed relative ordinary data."
         }
       ]
     },

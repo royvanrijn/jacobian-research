@@ -212,7 +212,7 @@ for each \(p\), because \(p\) is coprime to \(p_0\) for large \(A\).
 Writing \(K D\) for an upper bound on the total number of selected
 primes from both windows, choose \(C\) also large enough that
 \(K F_J/C<1/4\). The upper bound on their number just obtained
-allows \(K\) independent of \(C\) once \(C\ge1\). If \(D\ll H\),
+allows \(K\) independent of \(C\) once \(C\ge1\). If \(D=o(H)\),
 the sum over all forbidden residues uses less than half the
 available interval for large \(A\). Thus a baseline in the
 prescribed residue class exists for every such choice of \(H\).
@@ -220,12 +220,12 @@ One can require avoidance for all gaps up to \(J\) by using
 the longest ramp in this count.
 
 When \(\lambda\ne0\), use a baseline \(B_1\) in such an interval
-with \(D\ll H_1\ll A\) and \(B_1\equiv0\bmod p_0\). Take
+with \(D=o(H_1)\), \(H_1=o(A)\), and \(B_1\equiv0\bmod p_0\). Take
 \(\lfloor |\lambda|(B_1+1)\rfloor\) unit-gap rows with sign
 \(\operatorname{sgn}\lambda\). They give the missing curvature
 and bias. For \(\lambda=0\) omit this block. Correct the resulting
 signed gap to \(\Delta\) with unit-gap rows at a safe baseline
-\(B_2\equiv0\bmod p_0\), \(H_1\ll H_2\ll A\).
+\(B_2\equiv0\bmod p_0\), \(H_1=o(H_2)\) and \(H_2=o(A)\).
 This costs \(O((H_1+|\Delta|)/H_2)=o(1)\) curvature.
 The two blocks are also prime-to-\(p_0\) in all stripped
 ramps for \(j<J\).
@@ -233,10 +233,10 @@ ramps for \(j<J\).
 Finally use gap \(J\) at a safe baseline \(B_3\equiv-1\bmod p_0\)
 with
 \[
-                  A D^{-1/2}\log A\ll H_3\ll A.
+          A D^{-1/2}\log A=o(H_3),\qquad H_3=o(A).
 \]
 Such \(H_3\) exists because \(D\) is a fixed positive power of \(A\).
-Then \(D\ll H_3\) as well. Use equal numbers \(R_3\) of the
+Then \(D=o(H_3)\) as well. Use equal numbers \(R_3\) of the
 two orientations. At \(p_0\) the only nonunit factor of either
 ramp at order \(2\le j<J\) is \(j(B_3+1)\). It occurs once in
 the combined endpoints and twice at every interior index, since
@@ -255,9 +255,10 @@ interior valuation strictly above the chord simultaneously.
 Its curvature cost is \(O(R_3/H_3)=o(1)\).
 
 The [opposed-row angular argument](MULTIVARIATE_UNIVERSAL_OPPOSED_PADIC_ANGLE_MARKING.md#binomial-reductions-separate-root-quotients)
-now gives all-degree separation. After positive-valuation
-normalization of the endpoints over the algebraic closure of
-the \(p_0\)-adic field, the residual polynomials are \(1+z^j\).
+now gives all-degree separation. Rescale the argument over the
+algebraic closure of the \(p_0\)-adic field to equalize the two
+endpoint valuations, and divide by the constant coefficient.
+The residual polynomials are \(1+z^j\).
 They are squarefree because \(p_0>J\), and quotients of distinct
 roots at adjacent orders reduce to disjoint nontrivial
 root-of-unity sets. Equal nonreal arguments would give the
