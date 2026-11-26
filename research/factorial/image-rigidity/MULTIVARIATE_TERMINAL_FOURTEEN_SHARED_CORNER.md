@@ -30,9 +30,9 @@ endpoint factors one.
 
 The last two bands use the
 [grouped projected Rouché comparison](MULTIVARIATE_TERMINAL_FOURTEEN_SHARED_LOW_U.md#angular-bounds-from-grouped-root-disks).
-The declared cap remains \(2/25\). Enumeration raises the
-integer reciprocal floor only for bounding outer ratios as in
-that comparison.
+The declared cap remains \(2/25\). The adaptive integer
+enumeration in that comparison tightens the cap and the
+outer-loss ratio on each band.
 
 | Mean band | Grouped root rectangles |
 |---|---:|
