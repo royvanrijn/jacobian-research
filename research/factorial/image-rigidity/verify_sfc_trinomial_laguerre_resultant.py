@@ -73,6 +73,50 @@ def filtered_resultant(a, d, left, right):
     return result
 
 
+@lru_cache(None)
+def row_kernel(exponents):
+    """One-row filtered product integral, with two or three factors."""
+    if tuple(sorted(exponents)) != exponents:
+        return row_kernel(tuple(sorted(exponents)))
+    if len(exponents) == 2:
+        r, s = exponents
+        return poly({2*i: comb(r, i)*comb(s, i) for i in range(min(r, s)+1)})
+    if len(exponents) != 3:
+        raise ValueError('The retained row kernel has two or three factors.')
+    r, s, t = exponents
+    answer = defaultdict(int)
+    for i in range(r+1):
+        for j in range(s+1):
+            factor = comb(r, i)*comb(s, j)
+            for k in range(abs(i-j), min(t, i+j)+1):
+                answer[i+j+k] += factor*comb(t, k)*coupling(*sorted((i, j, k)))
+    return poly(answer)
+
+
+def kernel_moments(a, d, left, right):
+    """Assemble complete forms from the separate row kernels."""
+    exponents = (left, left+a, left+d)
+    total = left+right+d
+    answer = []
+    for order in (2, 3):
+        integrals = {}
+        for i in range(order+1):
+            for j in range(order-i+1):
+                k = order-i-j
+                nodes = [exponents[0]]*i+[exponents[1]]*j+[exponents[2]]*k
+                integrals[i, j, k] = (row_kernel(tuple(sorted(nodes)))
+                    *row_kernel(tuple(sorted(total-e for e in nodes))))
+        for y_degree in range(order+1):
+            value = fmpz_poly([0])
+            for i in range(order-y_degree+1):
+                for j in range(y_degree+1):
+                    value += (comb(order, y_degree)*comb(order-y_degree, i)
+                              *comb(y_degree, j)*(-1)**(order-i-j)
+                              *integrals[i, j, order-i-j])
+            answer.append(value)
+    return tuple(answer)
+
+
 RING = fmpq_mpoly_ctx.get(('L', 'H', 'a', 'b'))
 L, H, A, B = RING.gens()
 ZERO = RING.constant(0)
@@ -181,6 +225,49 @@ def verify_couplings():
     return checked
 
 
+def verify_row_kernels():
+    import sympy as sp
+
+    x, y, w, z = sp.symbols('x y w z')
+    # These are polynomial identities for the complete generating functions,
+    # rather than a finite interpolation in the row exponents.
+    pair = ((1-x)*(1-y)-z*z*x*y).expand()
+    triple = ((1-x)*(1-y)*(1-w)
+              -z*z*(x*y*(1-w)+x*w*(1-y)+y*w*(1-x))
+              -2*z**3*x*y*w).expand()
+    require(sp.expand(pair-(1-x-y+(1-z*z)*x*y)) == 0,
+            'The exact pair-kernel denominator changed.')
+    require(sp.expand(triple-(1-x-y-w+(1-z*z)*(x*y+x*w+y*w)
+            -(1-3*z*z+2*z**3)*x*y*w)) == 0,
+            'The exact cubic-kernel denominator changed.')
+
+    zz = fmpz_poly([0, 1])
+
+    def at(indices):
+        return fmpz_poly([0]) if min(indices) < 0 else row_kernel(indices)
+
+    controls = 0
+    for r in range(4):
+        for s in range(4):
+            pair = at((r-1, s))+at((r, s-1))-(1-zz*zz)*at((r-1, s-1))
+            if r+s == 0:
+                pair += 1
+            require(at((r, s)) == pair, 'The pair coefficient recurrence failed.')
+            require(at((r, s))(1) == comb(r+s, r), 'A pair kernel at one changed.')
+            controls += 1
+            for t in range(4):
+                triple = (at((r-1, s, t))+at((r, s-1, t))+at((r, s, t-1))
+                    -(1-zz*zz)*(at((r-1, s-1, t))+at((r-1, s, t-1))+at((r, s-1, t-1)))
+                    +(1-3*zz*zz+2*zz**3)*at((r-1, s-1, t-1)))
+                if r+s+t == 0:
+                    triple += 1
+                require(at((r, s, t)) == triple, 'The cubic coefficient recurrence failed.')
+                require(at((r, s, t))(1) == factorial(r+s+t)//(factorial(r)*factorial(s)*factorial(t)),
+                        'A cubic kernel at one changed.')
+                controls += 1
+    return controls
+
+
 def direct_factorial_moments(a,d,left,right):
     from fractions import Fraction
 
@@ -237,6 +324,8 @@ def verify_full_controls():
     coefficients=0
     for a,d,left,right in profiles:
         moments=filtered_moments(a,d,left,right)
+        require(moments==kernel_moments(a,d,left,right),
+                'The separate-row assembly disagrees with the tensor Laguerre expansion.')
         require([int(p(1)) for p in moments]==direct_factorial_moments(a,d,left,right),
                 'The filtered moments at one disagree with direct factorial integration.')
         result=filtered_resultant(a,d,left,right)
@@ -263,9 +352,11 @@ def verify_full_controls():
 
 def main():
     couplings=verify_couplings()
+    kernels=verify_row_kernels()
     verify_symbolic_jet()
     profiles,coefficients=verify_full_controls()
     print(f'Passed {couplings} exact Laguerre coupling/integral controls and the positive recurrence.')
+    print(f'Verified both exact row-kernel generating denominators and {kernels} recurrence/value controls.')
     print('Verified the universal resultant coefficients at orders 18, 19 and 20 over Q[L,H,a,b].')
     print(f'Passed {profiles} full filtered profiles ({coefficients} nonzero resultant coefficients), compared with direct factorial moments.')
     print('The signed-remainder negative control and the explicit span-two factorization passed.')

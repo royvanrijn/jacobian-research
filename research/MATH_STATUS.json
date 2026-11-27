@@ -74761,6 +74761,96 @@
           "dependency_coverage": "partial",
           "graph_scope_note": "The fields of HG2–HG3 give ≫ X^(1/4)/(log X)^2 distinct real discriminants at most X and ≫ Z^(1/8)/(log Z)^2 distinct common conductor values at most Z.",
           "verification_note": "Applied Stewart–Top Theorem 2 to the squarefree binary octic on the fixed CRT slice; exact octic and residue checks."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
+          "title": "A second marked genus-three octic has three independent cubic norm functions",
+          "state": "proved",
+          "scope": "The explicit even octic of MO1 has three degree-eight maps in the sign eigenspaces, split Jacobian and three independent cubic norm directions. Its three specified fixed curves have generic quadratic-twist rank one.",
+          "canonical_source": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+          "artifact_hash": "sha256:1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The explicit even octic of MO1 has three degree-eight maps in the sign eigenspaces, split Jacobian and three independent cubic norm directions. Its three specified fixed curves have generic quadratic-twist rank one.",
+          "verification_note": "Written degree and sign quotient proof with exact maps, branch squarefreeness and two prime traces distinguishing all three rational isogeny factors."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+          "title": "Three locally cubed virtual norms give real class rank two and imaginary mirror class rank three",
+          "state": "proved",
+          "scope": "On fixed open local conditions for the original octic there are ≫ X^(1/4)/(log X)^2 real fields of discriminant at most X with class 3-rank at least two and imaginary mirror class 3-rank at least three. All three associated fixed elliptic twists have positive rank with conductors 44D², 396D², 198D².",
+          "canonical_source": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+          "artifact_hash": "sha256:1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "On fixed open local conditions for the original octic there are ≫ X^(1/4)/(log X)^2 real fields of discriminant at most X with class 3-rank at least two and imaginary mirror class 3-rank at least three. All three associated fixed elliptic twists have positive rank with conductors 44D², 396D², 198D².",
+          "verification_note": "Written valuations, split cube residues, unit kernel and mirror descent. Replayed local squareclasses, cube character rows and specialized conductor exponents."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS",
+          "title": "A cubic base change gives four virtual norms and an unramified degree-81 imaginary mirror extension",
+          "state": "proved",
+          "scope": "On the explicit local slice of t=3u³/7 the three markings and the additional norm 11³ give four independent virtual classes that are cubes at three. Real class 3-rank is at least three and imaginary mirror class 3-rank at least four. The mirror has forty complex cubic fields of fundamental discriminant −3D and an unramified degree-81 extension split at three. Primes above 19,31,37,43 span its Frobenius quotient. Three fixed D-twists have positive rank and conductors 28D²,252D²,126D².",
+          "canonical_source": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+          "artifact_hash": "sha256:1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "On the explicit local slice of t=3u³/7 the three markings and the additional norm 11³ give four independent virtual classes that are cubes at three. Real class 3-rank is at least three and imaginary mirror class 3-rank at least four. The mirror has forty complex cubic fields of fundamental discriminant −3D and an unramified degree-81 extension split at three. Primes above 19,31,37,43 span its Frobenius quotient. Three fixed D-twists have positive rank and conductors 28D²,252D²,126D².",
+          "verification_note": "Written moving-prime valuations divisible by the cubic base change, uniform fixed-place control, and rank-four cubic residue matrix. Maps, norm, fixed-place data and conductor inputs replayed in Sage."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-MIRROR-RANK-FOUR-QUANTITATIVE-CONDUCTOR-COUNT",
+          "title": "A degree-twenty-four field count for the four-direction mirror construction",
+          "state": "proved",
+          "scope": "The real fields in MO3 yield ≫ X^(1/12)/(log X)^2 distinct discriminants at most X with distinct imaginary mirrors of discriminant size at most 3X. Their conductor triples yield ≫ Z^(1/24)/(log Z)^2 values with largest conductor at most Z.",
+          "canonical_source": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+          "artifact_hash": "sha256:1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The real fields in MO3 yield ≫ X^(1/12)/(log X)^2 distinct discriminants at most X with distinct imaginary mirrors of discriminant size at most 3X. Their conductor triples yield ≫ Z^(1/24)/(log Z)^2 values with largest conductor at most Z.",
+          "verification_note": "Written Stewart–Top Theorem 2 application on the fixed local slice of the squarefree degree-24 binary form."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER",
+          "title": "The marked octic boundary norm gives exact odd-prime torsion after a prime-degree base change",
+          "state": "proved",
+          "scope": "The principal anti-invariant divisors supported on the four points above 0 and infinity on the original octic are exactly the multiples of div β=2(δ₀+δ∞). On every c·u^ℓ base change for odd prime ℓ the analogous lattice is generated by the pulled-back divisor 2ℓ(δ′₀+δ′∞), and the divided divisor of β gives a class of exact order ℓ.",
+          "canonical_source": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+          "artifact_hash": "sha256:1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The principal anti-invariant divisors supported on the four points above 0 and infinity on the original octic are exactly the multiples of div β=2(δ₀+δ∞). On every c·u^ℓ base change for odd prime ℓ the analogous lattice is generated by the pulled-back divisor 2ℓ(δ′₀+δ′∞), and the divided divisor of β gives a class of exact order ℓ.",
+          "verification_note": "Written pole divisor and Kummer restriction proof with the nontorsion boundary point certified by reductions and a nonzero sixfold multiple."
         }
       ],
       "open_questions": [
@@ -295108,7 +295198,7 @@
       {
         "id": "EXT-ARITH-CASSELS-TATE-REDUCED-THREE-PRIMARY-PERFECT",
         "title": "Each elliptic primary Sha has finite reduced quotient with a perfect alternating Cassels-Tate pairing",
-        "kind": "external",
+        "kind": "source",
         "status": "proved",
         "topic": "arithmetic",
         "origin": "literature",
@@ -295125,7 +295215,7 @@
       {
         "id": "EVIDENCE-ARITH-MORDELL-ONE-PRIME-POINT-CERTIFICATES",
         "title": "Five exact quadratic-point prime controls, with governing norm and four-embedding symbols",
-        "kind": "evidence",
+        "kind": "source",
         "status": "proved",
         "topic": "arithmetic",
         "origin": "internal",
@@ -295234,6 +295324,23 @@
         "gap_kind": "mathematical",
         "endpoint_role": "alternative_method",
         "next_action": "Audit and accept the ramified-CM converse at the additive prime3, including the cited upstream reciprocity and main-conjecture arguments, or identify another fully applicable input. Good ordinary or good supersingular theorems do not directly match."
+      },
+      {
+        "id": "ARITH-MORDELL-QUADRATIC-NON-TORSION-POINT-CONSTRUCTION",
+        "title": "The quadratic one-prime point construction is a written identity independent of finite controls",
+        "kind": "claim",
+        "status": "open",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "For R0=5C as in MCT16, every integer a with a^2=1350 mod C and a=+/-1 mod18 yielding a prime q=(a^2-1350)/C outsideR0 gives the explicit non-torsion points(44), with q53 mod72. The congruences have CRT solutions. This general construction is a written identity, independent of the finite prime scan and norm/symbol certificates.",
+        "sources": [
+          {
+            "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+            "sha256": "44c31892bfb2ee3bb225d58baad15dfdf756c22e094e2c479dd16018aacc1b8c",
+            "locator": "Proposition MCT18, general point identities(43)--(44), CRT and congruences, before the finite controls"
+          }
+        ]
       }
     ],
     "implications": [
@@ -476885,7 +476992,8 @@
         "id": "MORDELL-QUADRATIC-PRIME-FROBENIUS-GATE-TO-INFINITE-EXACT-RANK-ONE",
         "premises": [
           "GAP-ARITH-MORDELL-QUADRATIC-PRIME-VALUES-NONSINGULAR-FROBENIUS",
-          "ARITH-MORDELL-ONE-PRIME-QUADRATIC-POINT-FAMILY-AND-RANK-ONE-CONTROLS"
+          "ARITH-MORDELL-QUADRATIC-NON-TORSION-POINT-CONSTRUCTION",
+          "ARITH-MORDELL-NONSINGULAR-BLOCK-THREE-PRIMARY-DICHOTOMY-AND-CORANK-ONE"
         ],
         "conclusion": "GAP-ARITH-MORDELL-ONE-MOVING-PRIME-EXACT-RANK-ONE",
         "status": "proved",
@@ -476913,6 +477021,99 @@
         "assumptions": [
           "HYP-ARITH-MORDELL-RAMIFIED-CM-THREE-CONVERSE"
         ]
+      },
+      {
+        "id": "THREE-SIGN-QUOTIENT-PATTERN-TO-SECOND-MARKED-OCTIC",
+        "premises": [
+          "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "sha256": "c6cb32893877974e8e977485e08443197d643b36174d1323321fdf808dbf3cbd",
+          "locator": "Theorem MO1"
+        }
+      },
+      {
+        "id": "MARKED-OCTIC-LOCAL-CUBE-TO-MIRROR-RANK-THREE-COUNT",
+        "premises": [
+          "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
+          "ARITH-GENUS-THREE-THREE-MARKED-TWISTS-SAME-CONDUCTOR",
+          "ARITH-BIELLIPTIC-TWIST-MIRROR-CLASS-RANK-TWO-MARKED-PRIMES",
+          "ARITH-MESTRE-MARKED-BOTH-MIRROR-CLASS-RANK-TWO",
+          "EXT-ARITH-COHEN-PAZUKI-GENERAL-THREE-ISOGENY-KUMMER",
+          "EXT-ARITH-STEWART-TOP-DISTINCT-POWERFREE-PARTS"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "sha256": "c6cb32893877974e8e977485e08443197d643b36174d1323321fdf808dbf3cbd",
+          "locator": "Theorem MO2"
+        }
+      },
+      {
+        "id": "CUBIC-CHANGE-OF-PARAMETER-TO-FOUR-VIRTUAL-UNRAMIFIED-DIRECTIONS",
+        "premises": [
+          "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
+          "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+          "ARITH-MESTRE-MARKED-BOTH-MIRROR-CLASS-RANK-TWO",
+          "EXT-CUBIC-NORMAL-CLOSURE-CONDUCTOR"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "sha256": "c6cb32893877974e8e977485e08443197d643b36174d1323321fdf808dbf3cbd",
+          "locator": "Theorem MO3"
+        }
+      },
+      {
+        "id": "MARKED-OCTIC-DEGREE-TWENTY-FOUR-TO-MIRROR-AND-CONDUCTOR-COUNT",
+        "premises": [
+          "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS",
+          "EXT-ARITH-STEWART-TOP-DISTINCT-POWERFREE-PARTS"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-MIRROR-RANK-FOUR-QUANTITATIVE-CONDUCTOR-COUNT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "sha256": "c6cb32893877974e8e977485e08443197d643b36174d1323321fdf808dbf3cbd",
+          "locator": "Corollary MO4"
+        }
+      },
+      {
+        "id": "MARKED-OCTIC-NORM-IDENTITY-TO-EXACT-BOUNDARY-TORSION",
+        "premises": [
+          "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "sha256": "c6cb32893877974e8e977485e08443197d643b36174d1323321fdf808dbf3cbd",
+          "locator": "Theorem MO5"
+        }
+      },
+      {
+        "id": "MORDELL-QUADRATIC-IDENTITIES-TO-NON-TORSION-POINT-CONSTRUCTION",
+        "premises": [
+          "ARITH-MORDELL-ONE-PRIME-RATIONAL-POINT-CONSTRAINTS"
+        ],
+        "conclusion": "ARITH-MORDELL-QUADRATIC-NON-TORSION-POINT-CONSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+          "sha256": "44c31892bfb2ee3bb225d58baad15dfdf756c22e094e2c479dd16018aacc1b8c",
+          "locator": "Proposition MCT18, general point identities(43)--(44), CRT and congruences, before the finite controls"
+        }
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -503223,6 +503424,15 @@
               "nodes": [
                 "EXT-CUBIC-NORMAL-CLOSURE-CONDUCTOR",
                 "ARITH-BIELLIPTIC-TWIST-MIRROR-CLASS-RANK-TWO-MARKED-PRIMES"
+              ]
+            },
+            {
+              "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+              "locator": "MO3, fundamental cubic fields in the unramified mirror extension",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-CUBIC-NORMAL-CLOSURE-CONDUCTOR",
+                "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS"
               ]
             }
           ],
@@ -555610,6 +555820,16 @@
                 "EXT-ARITH-STEWART-TOP-DISTINCT-POWERFREE-PARTS",
                 "ARITH-GENUS-THREE-SAME-CONDUCTOR-TRIPLE-TWIST-QUANTITATIVE"
               ]
+            },
+            {
+              "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+              "locator": "MO2 and MO4, Theorem 2 for the octic and its degree-24 cubic base change",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-STEWART-TOP-DISTINCT-POWERFREE-PARTS",
+                "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+                "ARITH-MARKED-OCTIC-MIRROR-RANK-FOUR-QUANTITATIVE-CONDUCTOR-COUNT"
+              ]
             }
           ],
           "verification": "source_read",
@@ -558106,6 +558326,16 @@
               "nodes": [
                 "EXT-ARITH-COHEN-PAZUKI-GENERAL-THREE-ISOGENY-KUMMER",
                 "ARITH-GENUS-THREE-THREE-MARKED-TWISTS-SAME-CONDUCTOR"
+              ]
+            },
+            {
+              "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+              "locator": "MO2–MO3, normalized rational twist Kummer evaluation",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-COHEN-PAZUKI-GENERAL-THREE-ISOGENY-KUMMER",
+                "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+                "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS"
               ]
             }
           ],
@@ -770593,7 +770823,8 @@
             "ARITH-MORDELL-RAY-ONE-MOVING-PRIME-ARBITRARY-BLOCK",
             "ARITH-MORDELL-ONE-PRIME-RATIONAL-POINT-CONSTRAINTS",
             "ARITH-MORDELL-NONSINGULAR-BLOCK-THREE-PRIMARY-DICHOTOMY-AND-CORANK-ONE",
-            "ARITH-MORDELL-ONE-PRIME-QUADRATIC-POINT-FAMILY-AND-RANK-ONE-CONTROLS"
+            "ARITH-MORDELL-ONE-PRIME-QUADRATIC-POINT-FAMILY-AND-RANK-ONE-CONTROLS",
+            "ARITH-MORDELL-QUADRATIC-NON-TORSION-POINT-CONSTRUCTION"
           ],
           "dependencies": [
             "ARITH-MORDELL-INERT-PRIME-EXACT-CUBIC-RAY-SELMER",
@@ -770797,7 +771028,8 @@
               "line": 1619,
               "title": "Proposition MCT18 (quadratic point construction and exact controls).",
               "nodes": [
-                "ARITH-MORDELL-ONE-PRIME-QUADRATIC-POINT-FAMILY-AND-RANK-ONE-CONTROLS"
+                "ARITH-MORDELL-ONE-PRIME-QUADRATIC-POINT-FAMILY-AND-RANK-ONE-CONTROLS",
+                "ARITH-MORDELL-QUADRATIC-NON-TORSION-POINT-CONSTRUCTION"
               ],
               "mapping_kind": "exact-statement"
             },
@@ -773935,6 +774167,97 @@
           ],
           "statements": [],
           "explanation": "Exact arXiv2002.04767v5 mirror for the optional ramified-CM converse. Statement and terminal proof/application inspected; upstream full proof not accepted as an unconditional input here."
+        },
+        {
+          "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
+          "sha256": "c6cb32893877974e8e977485e08443197d643b36174d1323321fdf808dbf3cbd",
+          "role": "proof",
+          "claims": [
+            "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
+            "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+            "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS",
+            "ARITH-MARKED-OCTIC-MIRROR-RANK-FOUR-QUANTITATIVE-CONDUCTOR-COUNT",
+            "ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER"
+          ],
+          "dependencies": [
+            "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
+            "ARITH-GENUS-THREE-THREE-MARKED-TWISTS-SAME-CONDUCTOR",
+            "ARITH-MESTRE-MARKED-BOTH-MIRROR-CLASS-RANK-TWO",
+            "ARITH-BIELLIPTIC-TWIST-MIRROR-CLASS-RANK-TWO-MARKED-PRIMES",
+            "EXT-CUBIC-NORMAL-CLOSURE-CONDUCTOR",
+            "EXT-ARITH-COHEN-PAZUKI-GENERAL-THREE-ISOGENY-KUMMER",
+            "EXT-ARITH-STEWART-TOP-DISTINCT-POWERFREE-PARTS"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem MO1.** Put",
+              "kind": "theorem",
+              "line": 15,
+              "title": "Theorem MO1.** Put",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem MO2.** There are",
+              "kind": "theorem",
+              "line": 67,
+              "title": "Theorem MO2.** There are",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem MO3.** On a fixed local parameter slice of",
+              "kind": "theorem",
+              "line": 169,
+              "title": "Theorem MO3.** On a fixed local parameter slice of",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary MO4.** The fields in MO3 have at least",
+              "kind": "corollary",
+              "line": 285,
+              "title": "Corollary MO4.** The fields in MO3 have at least",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-MIRROR-RANK-FOUR-QUANTITATIVE-CONDUCTOR-COUNT"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem MO5.** On \\(C\\) let \\(P_0^\\pm\\) and \\(P_\\infty^\\pm\\)",
+              "kind": "theorem",
+              "line": 304,
+              "title": "Theorem MO5.** On \\(C\\) let \\(P_0^\\pm\\) and \\(P_\\infty^\\pm\\)",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Second marked octic, virtuality on two local slices, moving-prime cube support through cubic base change, exact mirror Frobenius and conductor counts, and rigidity of the boundary divisor."
+        },
+        {
+          "path": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+          "sha256": "1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+          "role": "evidence",
+          "claims": [
+            "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
+            "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+            "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS",
+            "ARITH-MARKED-OCTIC-MIRROR-RANK-FOUR-QUANTITATIVE-CONDUCTOR-COUNT",
+            "ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact octic map and norm identities, local cube residue matrices, conductor exponents and boundary point verification."
         }
       ]
     },

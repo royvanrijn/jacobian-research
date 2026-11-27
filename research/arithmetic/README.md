@@ -1911,11 +1911,13 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Prime weighted markings force the norm of the CM index to be prime | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
 | A logarithmic saving for prime triangles on a fixed cyclotomic trace orbit | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
 | The rank-one cyclotomic count extends to the full trace coset | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
-| Explicit tame and wild ray blocks with ten complete Mordell Cassels-Tate matrices | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
-| General Mordell ray bases, pairwise variation and a finite local pairing reduction | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
-| Explicit Hilbert-90 local scalar descent and direct Mordell ray pairing certificates | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
-| Infinitely many admissible twists have a uniform nonzero ray block and global Hasse failures | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
-| One moving inert prime realizes every arbitrarily large fixed tame block with rank at most one for nonsingular targets | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Explicit tame and wild ray blocks with ten complete Mordell Cassels-Tate matrices | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| General Mordell ray bases, pairwise variation and a finite local pairing reduction | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Explicit Hilbert-90 local scalar descent and direct Mordell ray pairing certificates | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Infinitely many admissible twists have a uniform nonzero ray block and global Hasse failures | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| One moving inert prime realizes every arbitrarily large fixed tame block with rank at most one for nonsingular targets | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Nonsingular one-prime blocks determine reduced three-primary Sha and force full Selmer corank one | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| A quadratic one-prime sequence has explicit points and four certified exact-rank-one controls | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | A power bound for large square-root scales in binary quartic values | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
 | Binary quartic squareclass collisions are sparse outside projective root symmetries | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
 | Unweighted cubic tangent fields have a power-saving second factorial moment | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
@@ -1926,8 +1928,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Imaginary tangent companion twists give even nonzero 3-Selmer ranks on many conductors | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
 | Four exact cubic tangent companion ranks and 3-torsion in Sha | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
 | The quadratic companion has exact generic rank one on each tangent parameter line | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
-| General Mordell ray pairings have normalized Frobenius variation and a full local-symbol reduction | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
-| The 5-23 block has its exact correction at 3 and the wild-5 block is explicit | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| General Mordell ray pairings have normalized Frobenius variation and a full local-symbol reduction | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| The 5-23 block has its exact correction at 3 and the wild-5 block is explicit | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | Prime occupancy reduction for a stronger fifth-torsion moment | Internal result | proved | [Source](ABC_COHERENT_PRIME_PATH_HIGHER_ODD_TORSION.md) |
 | Elliptic translation transfers weighted tangent fields and their maximal cubic norm class | Internal result | proved | [Source](ABC_WEIGHTED_TANGENT_SHARED_FIELD_TRANSLATIONS.md) |
 | Two different weighted tangent lines give six genuine primes in the same fields | Internal result | proved | [Source](ABC_WEIGHTED_TANGENT_SHARED_FIELD_TRANSLATIONS.md) |
@@ -1944,16 +1946,16 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Distinct degree-two weighted tangent projections in hyperelliptic genus three force two symmetric profiles | Internal result | proved | [Source](ABC_QUADRATIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | The real genus-three model has two generic norm classes and a universal dyadic support failure | Internal result | proved | [Source](ABC_QUADRATIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Rational parameter maps of degree at most two cannot give two positive weighted tangent directions with independent generic norm classes | Internal result | proved | [Source](ABC_QUADRATIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
-| Exact full Mordell ray matrices, including the coordinate at3, are evaluable from norm certificates | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
-| The twists R=71 and R=355 have rank zero, Sha[3]=(Z/3)^2 and explicit Hasse-failing cubics | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Exact full Mordell ray matrices, including the coordinate at3, are evaluable from norm certificates | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| The twists R=71 and R=355 have rank zero, Sha[3]=(Z/3)^2 and explicit Hasse-failing cubics | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | Cubic parameter maps have no mixed-degree-two companion and share the norm class in common genus one or two | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Two cubic parameter maps with common genus four are projectively related | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Two non-projectively-related cubic maps in common genus five have restricted branch matching | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Terminal mass, seven-weight local orbits and changing candidate leaves | Internal result | proved | [Source](TERMINAL_MASS_HURWITZ_DESCENT.md) |
 | Product singularity parity restricts genus-five cubic pairings and excludes doubled symmetric branches | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Two geometrically cyclic cubic projections cannot give a nonprojective common genus-five tangent cover | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
-| Prime-block norm assembly and a terminating full Mordell ray matrix algorithm for arbitrary support | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
-| The entire Mordell ray pairing is an explicit alternating wedge sum with exact rank compression | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Prime-block norm assembly and a terminating full Mordell ray matrix algorithm for arbitrary support | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| The entire Mordell ray pairing is an explicit alternating wedge sum with exact rank compression | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | Equianharmonic off-diagonal branch matching cannot come from a rational bidegree-(3,3) correspondence | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | The doubled asymmetric genus-five cubic parameter family has an exact inverse-coefficient model | Internal result | proved | [Source](ABC_CUBIC_TANGENT_DOUBLED_BRANCH_FAMILY.md) |
 | The doubled genus-five family fails the virtual-unit test at its coefficient primes | Internal result | proved | [Source](ABC_CUBIC_TANGENT_DOUBLED_BRANCH_FAMILY.md) |
@@ -1986,8 +1988,13 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Three fixed positive-rank twists have independent cubic evaluations and the same conductor | Internal result | proved | [Source](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md) |
 | Two independent local valuation obstructions leave only one virtual cubic direction | Internal result | proved | [Source](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md) |
 | An octic count of real fields and common conductors of three marked twists | Internal result | proved | [Source](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md) |
+| A second marked genus-three octic has three independent cubic norm functions | Internal result | proved | [Source](QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md) |
+| Three locally cubed virtual norms give real class rank two and imaginary mirror class rank three | Internal result | proved | [Source](QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md) |
+| A cubic base change gives four virtual norms and an unramified degree-81 imaginary mirror extension | Internal result | proved | [Source](QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md) |
+| A degree-twenty-four field count for the four-direction mirror construction | Internal result | proved | [Source](QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md) |
+| The marked octic boundary norm gives exact odd-prime torsion after a prime-degree base change | Internal result | proved | [Source](QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md) |
 
-**Computed obligations:** 168 unresolved; 27 resolved within their exact scope.
+**Computed obligations:** 170 unresolved; 28 resolved within their exact scope.
 
 
 Scope limits:
@@ -2135,7 +2142,7 @@ Scope limits:
 - A coherent three-prime path lifts with free orientations exactly via the positive integral Heron defect and its incident-prime unit test. The squarefree part of that defect fixes the field.
 - Singular balanced six-cycles have a coherent-gcd upper tail below the trivial bound for G above B^(13/4), with B=2T. The T^2 budget holds for G>=B^(43/12).
 - Three complementary edge gcds force unit square congruences on actual continuation roots. This counts the singular T^2 sector at g_*>=B^(41/12), and at g_*>=B^(11/4+b/3) when the four-edge divisor product is at most B^b.
-- Mordell ray spaces have a complete tame-plus-wild basis, normalized pairwise variation and exact full local-symbol evaluation. MCT13 proves a terminating full-matrix algorithm for every admissible parameter, including the wild coordinate, without supplied norm witnesses. Practical quantitative bounds, a Frobenius-only rule with all reference constants evaluated and standard Weil-sign calibration remain open. MCT15-MCT16 independently realize every alternating block on 2r fixed tame coordinates by one moving inert prime; nonsingular targets give infinitely many curves with rank<=1 and dim Sha[3]>=2r. These are internal written proofs with finite exact arithmetic controls where specified, without independent replay, formal verification or external review.
+- Mordell ray spaces have a complete tame-plus-wild basis, normalized pairwise variation and exact full local-symbol evaluation. MCT13 proves a terminating full-matrix algorithm for every admissible parameter, including the wild coordinate, without supplied norm witnesses. Practical quantitative bounds, a Frobenius-only rule with all reference constants evaluated and standard Weil-sign calibration remain open. MCT15-MCT16 independently realize every alternating block on 2r fixed tame coordinates by one moving inert prime; nonsingular targets give infinitely many curves with rank<=1 and dim Sha[3]>=2r. These are internal written proofs with finite exact arithmetic controls where specified, without independent replay, formal verification or external review. MCT18 gives a quadratic point sequence and four exact rank-one controls, all with Sha[3^infinity]=(Z/3)^2. At every nonsingular target MCT19 gives reduced three-primary Sha=(Z/3)^(2r), possible divisible corank1-rank, and full3-primary Selmer corank1. An infinite exact-rank-one refinement is conditional here on the prime-value/Frobenius gate or the stated ramified-CM converse; neither finite controls nor good-ordinary converses close that step.
 - Erdős #365: a coefficient-uniform cubic Thue application bounds the fixed (R_D,Q_D) fiber by O(d(R_D)d(Q_D)) without a unit or common-divisor height cap. It gives a summable critical logarithmic sector with a loglog saving and polynomial period counts on Q_D<=tau_D^B for each fixed B>0. The complementary weighted rate and unrestricted polynomial period count remain open.
 - Erdős #675: compatible safe assignments of square witnesses at all negative sites have joint modulus at least exp((2+o(1))*sqrt(N)). Their least positive CRT representatives remain uncontrolled; the actual return 2376 through 49 has modulus 44100. No lower exponent beyond Ho's c<25/72 is obtained.
 
@@ -2271,5 +2278,8 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Can the terminating arbitrary-support Mordell matrix algorithm be given useful quantitative height, precision or runtime bounds?](MORDELL_RAY_CASSELS_TATE_PAIRING.md) — GAP-ARITH-MORDELL-RAY-QUANTITATIVE-MATRIX-GENERATION
 - **mathematical / open:** [Can every Mordell ray pairing entry be expressed by normalized governing fields and Frobenius symbols with all absolute reference constants evaluated?](MORDELL_RAY_CASSELS_TATE_PAIRING.md) — GAP-ARITH-MORDELL-RAY-FROBENIUS-ONLY-PAIRING-FORMULA
 - **verification / open:** [Calibrate the common Weil normalization of the displayed Mordell matrices against the standard torsion-basis convention; this is separate from rank and radical computations.](MORDELL_RAY_CASSELS_TATE_PAIRING.md) — VERIFY-ARITH-MORDELL-STANDARD-WEIL-NORMALIZATION
+- **mathematical / conditional:** [For every r>=1, obtain a fixed admissible R0 with2r fixed primes and infinitely many eligible q with nonsingular fixed block and a non-torsion rational point. This would give exact rank1 and Sha[3^infinity]=(Z/3)^(2r). MCT16 proves only rank<=1 unconditionally here. MCT18 supplies a point family and finite controls; MCT19 gives a conditional converse route via full Selmer corank1.](MORDELL_RAY_CASSELS_TATE_PAIRING.md) — GAP-ARITH-MORDELL-ONE-MOVING-PRIME-EXACT-RANK-ONE
+- **mathematical / open:** [For every r>=1 choose C as a product of2r-1 distinct primes71 mod72 and a progression of a with a^2=1350 mod C and a=+/-1 mod18. Prove infinitely many primes q=(a^2-1350)/C outside5C for which the fixed2r block is nonsingular. Finite r1 controls show compatibility, not infinitude. The required assertion combines quadratic prime values and a nonabelian Frobenius condition.](MORDELL_RAY_CASSELS_TATE_PAIRING.md) — GAP-ARITH-MORDELL-QUADRATIC-PRIME-VALUES-NONSINGULAR-FROBENIUS
+- **mathematical / open:** [For E_R/Q with CM by O_(Q(sqrt(-3))), full3-primary Selmer corank1 implies analytic and rational rank1 and finite Sha. This is stated by Kriz2002.04767v5 Theorems1.1/10.13; its exact hypotheses and terminal proof have been inspected, but this project has not audited and accepted the complete upstream reciprocity/main-conjecture proof chain. It is an explicit mathematical assumption for the conditional refinement, not a claim that the statement is historically unknown or false.](MORDELL_RAY_CASSELS_TATE_PAIRING.md) — HYP-ARITH-MORDELL-RAMIFIED-CM-THREE-CONVERSE
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

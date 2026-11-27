@@ -45,6 +45,16 @@ prime characteristics. The conclusion gives a torsion condition
 on any sequence where the product of certified moving primes
 outgrows this power of the projective denominator.
 
+The [two-moment amplification comparison](STEPANOV_AUXILIARY_DETERMINANTS_SFC2.md#34-multiplication-closure-and-the-finite-zeta-comparison)
+identifies the missing input for a larger auxiliary determinant.
+Coefficient multiplication preserves exactly the original gcd
+corank, and an actual fully shared terminal-fifteen example has
+two zero moments modulo 127 with a full-rank marked Hankel matrix.
+A stronger rank defect therefore needs a transfer using the global
+common factor and justified eligible-prime conditions; it does not
+follow merely from the two local zero equations. The bounds below
+retain their stated prime hypotheses.
+
 ## Distinct conjugates and denominators
 
 All \(\beta_i\) are conjugates over \(\mathbb Q\). Indeed the

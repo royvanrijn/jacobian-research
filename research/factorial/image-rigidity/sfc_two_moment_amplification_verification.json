@@ -1,0 +1,236 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "scope": "local modular non-closure and finite controls of the written multiplication-rank theorem",
+  "actual_profile": {
+    "alpha": [
+      1,
+      2
+    ],
+    "beta": [
+      3,
+      1
+    ],
+    "terminal": 15,
+    "fully_shared": true,
+    "shared_curvature": "11/6",
+    "prime": 127,
+    "coefficient_ratio": 17,
+    "modular_gcd": "t-17",
+    "M14_M15_XM14_X2M14_mod_127": [
+      0,
+      0,
+      97,
+      100
+    ],
+    "marked_hankel_matrix": [
+      [
+        0,
+        97
+      ],
+      [
+        97,
+        100
+      ]
+    ],
+    "marked_hankel_determinant": 116,
+    "maximum_factorial_argument": 45,
+    "characteristic_zero_gcd_degree": 0,
+    "lower_moment_coefficients_mod_127": [
+      126,
+      7,
+      50,
+      90,
+      78,
+      32,
+      81,
+      110,
+      114,
+      112,
+      25,
+      36,
+      72,
+      64,
+      93
+    ],
+    "upper_moment_coefficients_mod_127": [
+      31,
+      25,
+      115,
+      109,
+      4,
+      37,
+      106,
+      39,
+      64,
+      61,
+      42,
+      13,
+      84,
+      37,
+      61,
+      27
+    ]
+  },
+  "actual_multiplication_ranks": [
+    {
+      "coefficient_degree": 28,
+      "rows": 29,
+      "columns": 29,
+      "rank": 28,
+      "corank": 1
+    },
+    {
+      "coefficient_degree": 29,
+      "rows": 31,
+      "columns": 30,
+      "rank": 29,
+      "corank": 1
+    },
+    {
+      "coefficient_degree": 32,
+      "rows": 37,
+      "columns": 33,
+      "rank": 32,
+      "corank": 1
+    },
+    {
+      "coefficient_degree": 42,
+      "rows": 57,
+      "columns": 43,
+      "rank": 42,
+      "corank": 1
+    }
+  ],
+  "synthetic_multiplication_controls": [
+    {
+      "degrees": [
+        2,
+        3
+      ],
+      "coefficient_degree": 4,
+      "gcd_degree": 0,
+      "rank": 5,
+      "corank": 0
+    },
+    {
+      "degrees": [
+        2,
+        3
+      ],
+      "coefficient_degree": 5,
+      "gcd_degree": 0,
+      "rank": 6,
+      "corank": 0
+    },
+    {
+      "degrees": [
+        2,
+        3
+      ],
+      "coefficient_degree": 6,
+      "gcd_degree": 0,
+      "rank": 7,
+      "corank": 0
+    },
+    {
+      "degrees": [
+        2,
+        3
+      ],
+      "coefficient_degree": 7,
+      "gcd_degree": 0,
+      "rank": 8,
+      "corank": 0
+    },
+    {
+      "degrees": [
+        2,
+        3
+      ],
+      "coefficient_degree": 4,
+      "gcd_degree": 1,
+      "rank": 4,
+      "corank": 1
+    },
+    {
+      "degrees": [
+        2,
+        3
+      ],
+      "coefficient_degree": 5,
+      "gcd_degree": 1,
+      "rank": 5,
+      "corank": 1
+    },
+    {
+      "degrees": [
+        2,
+        3
+      ],
+      "coefficient_degree": 6,
+      "gcd_degree": 1,
+      "rank": 6,
+      "corank": 1
+    },
+    {
+      "degrees": [
+        2,
+        3
+      ],
+      "coefficient_degree": 7,
+      "gcd_degree": 1,
+      "rank": 7,
+      "corank": 1
+    },
+    {
+      "degrees": [
+        3,
+        4
+      ],
+      "coefficient_degree": 6,
+      "gcd_degree": 2,
+      "rank": 5,
+      "corank": 2
+    },
+    {
+      "degrees": [
+        3,
+        4
+      ],
+      "coefficient_degree": 7,
+      "gcd_degree": 2,
+      "rank": 6,
+      "corank": 2
+    },
+    {
+      "degrees": [
+        3,
+        4
+      ],
+      "coefficient_degree": 8,
+      "gcd_degree": 2,
+      "rank": 7,
+      "corank": 2
+    },
+    {
+      "degrees": [
+        3,
+        4
+      ],
+      "coefficient_degree": 9,
+      "gcd_degree": 2,
+      "rank": 8,
+      "corank": 2
+    }
+  ],
+  "negative_control": "the proposed vanishing of the first spatial mark is rejected by residue 97",
+  "not_established": [
+    "a characteristic-zero SFC counterexample",
+    "a transfer conditional on a global common factor and eligible primes",
+    "Matsusaka seed propagation or optimized SFC determinant bounds"
+  ],
+  "checker_sha256": "8bb1a0d3ea389396fd40559bbcc5a8e51eb1d74f1fff49073f17eff6f72f86b5",
+  "assurance": "internal exact computation; no independent replay, formal verification or external review"
+}

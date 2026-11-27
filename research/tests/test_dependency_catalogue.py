@@ -173,6 +173,11 @@ class RetainedDependencyTests(unittest.TestCase):
         self.assertEqual(without_points[structure]["state"], "proved")
         self.assertEqual(without_points[goal]["state"], "conditional")
         self.assertEqual(without_points[goal]["assumptions"], [converse])
+        prime_hypothesis = self.graph.evaluate({controls: "stale", prime_values: "proved"})
+        point_route = next(r for r in prime_hypothesis[goal]["routes"]
+                           if r["id"] == "MORDELL-QUADRATIC-PRIME-FROBENIUS-GATE-TO-INFINITE-EXACT-RANK-ONE")
+        self.assertEqual(point_route["state"], "conditional")
+        self.assertEqual(point_route["assumptions"], [prime_values])
 
     def test_primitive_leading_factor_route_does_not_assume_a_small_root(self):
         small_root_formula = "DIX-POLYNOMIAL-WEYL-SMALL-ROOT-FRACTIONAL-POWER-MATE"

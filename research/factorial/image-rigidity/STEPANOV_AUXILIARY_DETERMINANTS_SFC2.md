@@ -5,6 +5,14 @@ Research investigation, 21 November 2026. Inspected base revision:
 
 ## Outcome and assurance
 
+**Current target.** Ordinary univariate binomial SFC is now closed by the
+[all-order theorem](ORDINARY_BINOMIAL_RESIDUAL_REGION.md). The determinant
+transfer question below concerns arbitrary multivariate monomial pairs,
+especially the [remaining fully shared and small-private-degree profiles](MULTIVARIATE_ALL_DEGREE_REDUCTION.md).
+Section 3.4 separates multiplication closure from an actual modular rank
+transfer and gives a fully shared terminal-fifteen obstruction to the
+unconditional local transfer.
+
 **Continuation update.** The subsequent investigation has closed all four
 formerly remaining lower-three gaps, so **every ordinary phase
 `X^3(A+BX^d)`, d>=1, now satisfies all-order SFC**. It also proves the infinite
@@ -415,6 +423,132 @@ This is an algebraic invertibility statement over any Q-algebra. It does
 not turn the factorial functional on complex-coefficient polynomials into
 a positive inner product. Theorem M uses many fewer markers when the support
 lies on the binomial progression.
+
+### 3.4 Multiplication closure and the finite-zeta comparison
+
+Matsusaka announced *One of the numbers Z_A(3) and Z_A(5) is non-zero*
+on 27 November 2026. The [announced PDF](sources/matsusaka-finite-zeta-nonvanishing-2026-11-27.pdf)
+was retrieved through his [homepage](https://sites.google.com/site/tmatsusaka556/).
+The comparison uses pages 2--4, Lemma 2.1 and Proposition 2.3.
+Under vanishing of the two finite zeta objects, his low-weight relations
+kill the correction terms in finite-polylogarithm functional equations.
+They yield, for weight at most seven and degree at most p-2,
+\[
+ \Lambda_{\boldsymbol k}(P)
+   \equiv\sum_{s=1}^p P(s-1)\zeta_s(\boldsymbol k)\pmod p.
+ \tag{AZ1}
+\]
+The harmonic product satisfies
+\(\zeta_s(u*v)=\zeta_s(u)\zeta_s(v)\). Applying (AZ1) to products
+of binomial-basis polynomials makes the rational auxiliary matrix
+agree, on the allowed degree range, with a matrix factoring through p
+evaluation coordinates. This entrywise comparison is the transfer
+step needed before the determinant estimates.
+
+This is a reading of the stated transfer argument, not a complete
+verification of the preprint or its imported finite-zeta identities.
+No finite-zeta theorem is a premise of an SFC claim here. The two
+repository arguments compared with it are (12)--(13) above and the
+[short projective resultant bounds](MULTIVARIATE_PROJECTIVE_BINOMIAL_PRIME_RESULTANTS.md).
+Both were unchanged between revision `c42b4346b7235dc4efe8376e739cf87062c2ccde`
+and the start of this comparison.
+
+#### What multiplication of the two equations actually gives
+
+Let F be any field, let S=F[A,B], and let nonzero homogeneous
+P,Q have degrees n,n+1. Write G=gcd(P,Q), e=deg G. For D>=2n,
+\[
+ \dim_F(P S_{D-n}+Q S_{D-n-1})=D+1-e.                \tag{AZ2}
+\]
+Indeed the kernel of (U,V)\mapsto UP+VQ consists exactly of
+\((U,V)=(TQ/G,-TP/G)\). Its dimension is D-2n+e (zero at
+D=2n,e=0). Subtract this from the domain dimension
+2D-2n+1 to obtain (AZ2). The ambient degree-D space has
+dimension D+1, so its corank is exactly e at every such D.
+
+Apply this to the homogeneous moment polynomials M_n,M_(n+1).
+Multiplying the two zero equations by arbitrary coefficient
+polynomials does supply an ideal of further identities. Its
+degree-D Macaulay matrix has exactly the original gcd corank;
+increasing D supplies no additional corank. A proposed nonzero
+maximal-minor argument for this family would already have to
+exclude G. This is the homogeneous multiplication counterpart
+of the full shifted-jet obstruction in Section 5.2.
+
+Over a Q-algebra there is also a formal way to make the factorial functional
+multiplicative: define
+\[
+ X^\alpha\circ X^\beta
+       =\frac{\alpha!\beta!}{(\alpha+\beta)!}X^{\alpha+\beta}.
+\]
+This is associative, by diagonal transport of the ordinary
+product under X^\alpha\mapsto\alpha!X^\alpha, and
+\(\mathcal L(g\circ h)=\mathcal L(g)\mathcal L(h)\).
+It supplies a multiplication-stable zero ideal for this different
+product. But every matrix [L(g_i\circ h_j)] has rank at most one
+already in characteristic zero. Its determinants cannot supply
+an independently nonzero seed. Ordinary multiplication remains
+different: L(X^2)=2 whereas L(X)^2=1.
+
+#### A genuine multivariate modular obstruction
+
+Use the fully shared columns alpha=(1,2), beta=(3,1), terminal
+N=15, prime p=127, and f=XY^2+17X^3Y over F_127. Exact arithmetic gives
+\[
+ \mathcal L(f^{14})=\mathcal L(f^{15})=0,\qquad
+ \mathcal L(Xf^{14})=97,\qquad
+ \mathcal L(X^2f^{14})=100\quad\text{in }F_{127}.       \tag{AZ3}
+\]
+Thus the marked Hankel matrix is
+\[
+ \begin{pmatrix}0&97\\97&100\end{pmatrix},\qquad
+                         \det=116\ne0\pmod{127}.       \tag{AZ4}
+\]
+The first spatial marker already fails to propagate. All factorial
+arguments used in (AZ3) are at most 45, strictly below 127, and
+both endpoint coefficients of each moment polynomial are units.
+No factorial-content cancellation or degree drop accounts for
+the failure. In the coefficient ratio t=B/A, the exact modular
+gcd is t-17. Its degree-D multiplication matrices have ranks
+28,29,32,42 at D=28,29,32,42 respectively: each corank is one.
+The shared-curvature sum is 4/3+1/2=11/6<12, with no private row.
+
+This refutes the proposed implication from just two local
+modular zeros to spatial-marker vanishing or this marked
+Hankel rank loss, even in a profile of the residual shape class.
+It does not refute a transfer conditional on a global
+characteristic-zero common factor and additional eligible-prime
+conditions. In fact this particular pair is coprime over Q,
+as the checker also verifies. The reduction at 127 is an
+exceptional modular coincidence, not an SFC counterexample.
+
+The [checker](verify_sfc_two_moment_amplification.py) compares
+the binomial coefficient arrays with direct multiplication in
+the original spatial polynomial ring, retains both moment arrays
+modulo 127, and checks the four ranks and twelve further synthetic
+controls of (AZ2). Its [receipt](sfc_two_moment_amplification_verification.json)
+records Python 3.12.3 and python-flint 0.9.0. These are internal
+exact controls; the proof of (AZ2) supplies its unbounded scope.
+Replay from the repository root:
+
+```sh
+.venv/bin/python research/factorial/image-rigidity/verify_sfc_two_moment_amplification.py
+```
+
+#### The remaining transfer obligation
+
+A useful amplification must use more than coefficient multiples,
+formal product transport, or the two local congruences alone.
+Starting from an actual characteristic-zero common factor, it must
+construct a family whose reduction admits a finite evaluation
+factorization like (AZ1), at an explicitly justified set of primes,
+while its rational determinant remains independently nonzero.
+Any proposed prime conditions must explain why the control
+(AZ3)--(AZ4) is excluded or compatible with the claimed rank bound.
+The eligible-prime supply and denominator budget in the projective
+resultant argument remain separate obligations. No such transfer
+has been established by this comparison, so seed propagation and
+new determinant-bound optimization are not conclusions of it.
 
 ## 4. Hankel determinants: exact failures and the scope of nonvanishing
 

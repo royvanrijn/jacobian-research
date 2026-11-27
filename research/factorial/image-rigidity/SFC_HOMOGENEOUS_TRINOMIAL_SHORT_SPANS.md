@@ -677,6 +677,76 @@ Replay with Python 3.12.3, python-flint 0.9.0 and SymPy 1.14.0:
 .venv/bin/python research/factorial/image-rigidity/verify_sfc_trinomial_laguerre_resultant.py
 ~~~
 
+### Exact row kernels and the remaining sign problem
+
+All mixed cubic moments admit a three-index generating function.
+This gives an exact recurrence at every exponent, but does not yet
+give a recurrence preserving the sign of the resultant.
+
+Put \(q_r(z,x)=\sum_{i=0}^r\binom ri z^i\ell_i(x)\), and define
+\[
+ K_2(r,s;z)=\int_0^\infty q_r(z,x)q_s(z,x)e^{-x}\,dx,
+ \qquad
+ K_3(r,s,t;z)=\int_0^\infty q_r(z,x)q_s(z,x)q_t(z,x)e^{-x}\,dx.
+\]
+As formal power series in the exponent markers,
+\[
+ \sum_{r,s\ge0}K_2(r,s;z)X^rY^s
+   =\frac1{1-X-Y+(1-z^2)XY},                              \tag{23}
+\]
+\[
+ \sum_{r,s,t\ge0}K_3(r,s,t;z)X^rY^sW^t
+  =\frac1{1-X-Y-W+(1-z^2)(XY+XW+YW)
+                      -(1-3z^2+2z^3)XYW}.                \tag{24}
+\]
+To prove both identities, use
+\(\sum_{r\ge i}\binom ri X^r=X^i/(1-X)^{i+1}\) in the
+orthogonality formula or in (18). For (24), the denominator
+before collecting terms is
+\[
+ (1-X)(1-Y)(1-W)
+ -z^2\{XY(1-W)+XW(1-Y)+YW(1-X)\}-2z^3XYW.
+\]
+Its constant term is one, so formal inversion and coefficient
+extraction are legitimate. The coefficients are precisely
+\[
+ K_2(r,s;z)=\sum_i\binom ri\binom si z^{2i},\qquad
+ K_3(r,s,t;z)=\sum_{i,j,k}\binom ri\binom sj\binom tk
+                           \Lambda(i,j,k)z^{i+j+k}.
+\]
+In particular every row kernel has nonnegative integer coefficients.
+At \(z=1\) these specialize to the ordinary binomial and trinomial
+coefficients. For any column multiset \(j_1,\ldots,j_m\), \(m=2,3\),
+the complete two-row mixed moment is the product
+\[
+ \int\prod_{\nu=1}^m\mathcal T_z\psi_{j_\nu}\,e^{-x-y}dxdy
+   =K_m(r_{j_1},\ldots,r_{j_m};z)
+    K_m(s_{j_1},\ldots,s_{j_m};z).                        \tag{25}
+\]
+Thus (23)–(25) determine every coefficient of all seven forms
+without enumerating triples of two-row Laguerre indices.
+
+For example, write \(K=K_3\), with negative indices zero and
+\(K(0,0,0)=1\). Away from the origin, (24) gives
+\[
+\begin{split}
+ K(r,s,t)={}&K(r-1,s,t)+K(r,s-1,t)+K(r,s,t-1)\\
+ &-(1-z^2)\{K(r-1,s-1,t)+K(r-1,s,t-1)+K(r,s-1,t-1)\}\\
+ &+(1-3z^2+2z^3)K(r-1,s-1,t-1).
+\end{split}                                             \tag{26}
+\]
+The negative pair terms in (26), and the subtractions in the
+binary resultant, prevent a direct coefficientwise induction.
+Neither positivity of the kernels nor the strictly positive
+order-eighteen resultant coefficient proves \(\mathcal R(1)>0\).
+The unresolved assertion remains (22).
+
+The same checker verifies the two denominator identities exactly,
+checks 80 finite recurrence and specialization controls, and compares
+the separate-row assembly (25) with the tensor Laguerre expansion
+in the six retained profiles. These checks support the displayed
+identities; they do not certify (22) or exclude all integer translations.
+
 ## An all-order factor in the formal gap parameters
 
 Each reciprocal-height layer of \(Q_{a-1,b-1}\) is divisible,

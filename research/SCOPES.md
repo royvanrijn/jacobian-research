@@ -28928,7 +28928,7 @@ Tracked obligations from the catalogue:
 
 **Topic scope:** Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)). A common-kernel-gcd refined square-quotient weight gives another coefficient-uniform actual C6 tail, with an explicit reverse route to the previous quotient tail. Elementary real-quadratic norm recovery removes the kernel-gcd coefficient loop and yields stronger selected-cycle weighted tails, with an explicit chi coefficient gain. Fixed mixed powers2<=k<j,3|j,k∤j admit kernel-gcd recovery and chi-sensitive actual path/cycle weights, using casewise norm/Thue lifting; the square-cube case has a separate direct route. A conditional coarse-global-triple to actual-path transfer and exact majorant comparison identify a limited exponent-only barrier; they supply no prescribed-sum improvement. Dual graphs give uniform positive-coefficient counts for unrestricted products of two fixed powers; the squarefull3/10result has a separatefullscope alternate proof. Exact-five carriers give stronger restricted sectors for3-full sums. Coherent six-cycles give the unconditional all-target bound r3(N)<<N^(33/134+epsilon), resolving the positive-saving target; the stronger carrier support-capacity estimate remains open.
 
-**Computed obligation progress:** 167 open; 27 proved / discharged; 1 stale.
+**Computed obligation progress:** 1 conditional; 169 open; 28 proved / discharged.
 
 **Authored scope assessment:** For every fixed imaginary quadratic field K, with arbitrary finite ideal class group G, ordered primitive principal norm numerical-value sums and the individual local/genus-shadow sums have sharp scale N J_K(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside that local set. For B=2G nonzero, every0<delta<delta_star(B) gives R_Lambda-R_P<<K,delta N J_K/log^(1+delta)N uniformly allN>=3 and all target valuations, where delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4. In particular the exponent1/5 works in every fixed field; constants remain field dependent. If2G=0, the individual sets coincide and the error is zero. The relative comparison holds on sufficiently large admissible targets. No endpoint, varying-field uniformity, mixed-field theorem, leading constant, numerical cutoff or exact exception list is asserted here.
 
@@ -29216,7 +29216,7 @@ Tracked obligations from the catalogue:
 
 **Authored scope assessment:** Three complementary edge gcds force unit square congruences on actual continuation roots. This counts the singular T^2 sector at g_*>=B^(41/12), and at g_*>=B^(11/4+b/3) when the four-edge divisor product is at most B^b.
 
-**Authored scope assessment:** Mordell ray spaces have a complete tame-plus-wild basis, normalized pairwise variation and exact full local-symbol evaluation. MCT13 proves a terminating full-matrix algorithm for every admissible parameter, including the wild coordinate, without supplied norm witnesses. Practical quantitative bounds, a Frobenius-only rule with all reference constants evaluated and standard Weil-sign calibration remain open. MCT15-MCT16 independently realize every alternating block on 2r fixed tame coordinates by one moving inert prime; nonsingular targets give infinitely many curves with rank<=1 and dim Sha[3]>=2r. These are internal written proofs with finite exact arithmetic controls where specified, without independent replay, formal verification or external review.
+**Authored scope assessment:** Mordell ray spaces have a complete tame-plus-wild basis, normalized pairwise variation and exact full local-symbol evaluation. MCT13 proves a terminating full-matrix algorithm for every admissible parameter, including the wild coordinate, without supplied norm witnesses. Practical quantitative bounds, a Frobenius-only rule with all reference constants evaluated and standard Weil-sign calibration remain open. MCT15-MCT16 independently realize every alternating block on 2r fixed tame coordinates by one moving inert prime; nonsingular targets give infinitely many curves with rank<=1 and dim Sha[3]>=2r. These are internal written proofs with finite exact arithmetic controls where specified, without independent replay, formal verification or external review. MCT18 gives a quadratic point sequence and four exact rank-one controls, all with Sha[3^infinity]=(Z/3)^2. At every nonsingular target MCT19 gives reduced three-primary Sha=(Z/3)^(2r), possible divisible corank1-rank, and full3-primary Selmer corank1. An infinite exact-rank-one refinement is conditional here on the prime-value/Frobenius gate or the stated ramified-CM converse; neither finite controls nor good-ordinary converses close that step.
 
 **Authored scope assessment:** Erdős #365: a coefficient-uniform cubic Thue application bounds the fixed (R_D,Q_D) fiber by O(d(R_D)d(Q_D)) without a unit or common-divisor height cap. It gives a summable critical logarithmic sector with a loglog saving and polynomial period counts on Q_D<=tau_D^B for each fixed B>0. The complementary weighted rate and unrestricted polynomial period count remain open.
 
@@ -55850,11 +55850,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every admissible R divisible by 115, the normalized chi_5,chi_23 entry is the sum over q dividing R/115 of kappa(q)+chi_9(q), where chi_9(2)=1. For 5 dividing R with epsilon_R=1, the wild chi_0,chi_5 entry is the sum of kappa_0,5(q) over q dividing R/5 minus 2. Two norm identities and twenty rational Kummer certificates give ten selected complete matrices, including four spaces with the wild coordinate. Standard Weil-sign calibration and evaluated formulas for arbitrary ray pairs remain separate.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-RAY-COMPARISON-TO-FIXED-BLOCK-AND-MATRICES (stale); MORDELL-RAY-NORM-TO-HEISENBERG-GOVERNING-FIELD (stale); MORDELL-RAY-COORDINATES-AND-CLASSICAL-PAIRING-TO-LOCAL-REDUCTION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal written pairwise comparison and ramification normalization, with the correction at 3 calibrated by a full rational Kummer span. Standard-library replay passed for two norm identities, all symbol embeddings, twenty rational Kummer identities, torsion geometry and ten selected matrices. No independent replay, formal verification or external review.
 
@@ -55864,11 +55864,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every admissible squarefree R, MCT3 gives a normalized Kummer basis, including the wild unit class when epsilon_R=1. MCT4 gives normalized pairwise variation with genuine absolute reference values. MCT7 specializes van Beek-Fisher to a finite local-symbol formula for every entry, retaining the cubic local descent and the four-dimensional symbol at 3. The local points, descent classes, arbitrary-pair reference values and standard Weil sign are not computed by this reduction; MCT13 separately settles terminating matrix computation; quantitative performance, a Frobenius-only rule and standard-sign calibration are separate.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-RAY-COORDINATES-AND-CLASSICAL-PAIRING-TO-LOCAL-REDUCTION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal written specialization of Koymans-Smith and van Beek-Fisher, with exact torsion geometry checked by the existing checker. The checker does not certify the global comparison or provide the uncomputed local lifting data. No independent replay, formal verification or external review.
 
@@ -55878,11 +55878,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every local field and admitted matching point in MCT7, the explicit Hilbert-90 sum in MCT8 gives the scalar a_i/((Y-3R sqrt(6) sqrt(-3)) Norm(gamma)) representing the cubic local descent class, in a cubic field or split cubic algebra. MCT9 gives a finite unit cube test at 3. A SageMath checker verifies universal polynomial identities, exact norm inputs, all denominator-prime local contributions and the direct complete matrices at R=145, R=115 and R=71, including the wild coordinate. This scalar-descent reduction does not itself generate arbitrary-parameter certificates; MCT13 separately supplies unrestricted terminating generation. Practical performance and standard Weil-sign calibration remain separate.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-RAY-GENERAL-LOCAL-REDUCTION-TO-EXPLICIT-SCALAR-DESCENT (stale); MORDELL-RAY-COORDINATES-AND-CLASSICAL-PAIRING-TO-LOCAL-REDUCTION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal written scalar-descent proof and finite SageMath 10.9 replay. Universal curve identities are checked exactly; local arithmetic has verified precision margins, forty-one local records and negative controls for a corrupted norm and a missing auxiliary prime. Global comparison and reciprocity remain written inputs; no independent mathematical review.
 
@@ -55892,11 +55892,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** Among primes q=-1 mod9 inert in Q(sqrt(-2)), the explicitly defined kappa(q) takes each F3 value with relative natural density 1/3. For the two thirds with kappa(q)!=0, R=115q is admissible, the pairing has rank two, rank E_R(Q)<=1 and dim Sha(E_R)[3]>=2. All four nonzero lines in span(chi_5,chi_23) have no rational representative at any height. The nonzero prime set has density 1/18 among all rational primes.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-RAY-GOVERNING-CHEBOTAREV-TO-GLOBAL-OBSTRUCTIONS (stale); MORDELL-RAY-COMPARISON-TO-FIXED-BLOCK-AND-MATRICES (stale); MORDELL-RAY-NORM-TO-HEISENBERG-GOVERNING-FIELD (stale); MORDELL-RAY-COORDINATES-AND-CLASSICAL-PAIRING-TO-LOCAL-REDUCTION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written Chebotarev argument for the degree-324 compositum, with explicit disjointness and conjugacy class size nine. Infinitude is not inferred from finite symbol calculations; no independent mathematical review.
 
@@ -55906,13 +55906,41 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every r>=1, fix R0=5*p2*...*p_(2r), with distinct pi=71 mod72 for i>=2. Every alternating 2r by 2r F3 matrix occurs as the normalized fixed tame block of E_(R0*q), for primes q=-1 mod9 inert in Q(sqrt(-2)) of relative natural density 3^(-binom(2r,2)) among eligible primes, and absolute density 1/(12*3^binom(2r,2)). A nonsingular target forces rank E(Q)<=1 and dim Sha(E)[3]>=2r. R0=4 mod9 and R0*q=5 mod9, so the full Selmer dimension is 2r+1 without a wild coordinate. The moving row, exact rank one and the entire 3-primary group are not determined.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-JOINT-CENTER-AND-CHEBOTAREV-TO-ONE-PRIME-ARBITRARY-BLOCK (stale); MORDELL-WRITTEN-COCHAIN-NORMALIZATION-TO-TAME-PAIRWISE-VARIATION (stale); MORDELL-RAY-SELMER-TO-COMPLETE-KUMMER-BASIS (stale); MORDELL-TAME-PAIR-FIELDS-AND-INDEPENDENT-CHARACTERS-TO-JOINT-CENTER (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal written audit of MS1/MCT3/MCT4, joint commutator surjectivity, abelianization, cyclotomic disjointness, conjugacy-class density and the Kummer rank/Sha bounds. Adaptation of the governing-group mechanism in Wu-Zhu Lemma6.1 with the proof supplied for M_-2. Numerical reference constants only translate the target; MCT13 and large norm certificates are not required for existence. No independent mathematical review, replay or formal verification.
+
+### ARITH-MORDELL-NONSINGULAR-BLOCK-THREE-PRIMARY-DICHOTOMY-AND-CORANK-ONE
+
+[Nonsingular one-prime blocks determine reduced three-primary Sha and force full Selmer corank one](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
+
+**Exact scope:** For every nonsingular-target MCT16 curve and rho=rank E_R(Q), Sha(E_R)[3^infinity] is abstractly (Z/3)^(2r) direct sum (Q3/Z3)^(1-rho), and the full3-primary Selmer corank is exactly1. This uses Milne's finite-plus-divisible structure and perfect alternating reduced quotient, without assuming Sha finite. A non-torsion rational point, or finite3-primary Sha, forces rho=1 and the entire3-primary group (Z/3)^(2r). It does not unconditionally eliminate the rank-zero/divisible alternative.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written MCT19 orthogonal splitting and finite reduced quotient argument. Milne I Remark6.7, Remark6.10(b), Theorem6.13(a) read in the retained primary edition. No computation or finiteness conjecture is used to exclude longer finite cyclic factors. The remaining divisible summand is explicit; independent mathematical review and formal verification remain unclaimed.
+
+### ARITH-MORDELL-ONE-PRIME-QUADRATIC-POINT-FAMILY-AND-RANK-ONE-CONTROLS
+
+[A quadratic one-prime sequence has explicit points and four certified exact-rank-one controls](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
+
+**Exact scope:** For R0=5C from MCT16 and integers a with a^2=1350 mod C and a=+/-1 mod18, every prime q=(a^2-1350)/C outside R0 is53 mod72. Explicit non-torsion points are Q=(Cq,aCq) on E'_R and P=((a^2+4050)/9,a(a^2-12150)/27) on E_R. A nonsingular fixed block forces rank1 and Sha[3^infinity]=(Z/3)^(2r), without a Sha-finiteness assumption. At C71, the complete even t<=200 with t=0,2 mod9 scan has five prime controls. Four have nonzero fixed block and exact rank1 with Sha[3^infinity]=(Z/3)^2 at R=8172455,130707095,204217655,835012895. The zero-block control R95495 has a point but no rank/group assertion from this block. No infinitude of prime values or joint Frobenius distribution is proved.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal standard-library replay passed for all five retained prime controls, exact original/isogenous points, norm(47), all four symbol embeddings and three deliberately corrupted inputs. The base B355=2 is imported from the retained MCT11 result. The finite controls do not prove prime-value infinitude. Proof of the rank/group upgrade is written and uses MCT19; no independent replay, formal verification or external review.
 
 ### ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL
 
@@ -56060,11 +56088,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every tame pair p,r, normalize its Heisenberg field away from auxiliary primes and at 3. Then B_R(chi_p,chi_r)=B_pr(chi_p,chi_r)+sum_{q|R/(pr)} kappa_tilde_(p,r)(q), without a congruence restriction, also when epsilon_R=1. Wild-tame variation is (13) between parameters with epsilon=1. All entries also have the cubic-norm/local-descent formula (20). Pairwise absolute reference constants and local lifting data remain explicit inputs; a uniformly evaluated ray-only rule is not claimed.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-COCHAIN-NORMALIZATION-TO-GENERAL-RAY-VARIATION (stale); MORDELL-RAY-SELMER-TO-COMPLETE-KUMMER-BASIS (stale); MORDELL-KUMMER-BASIS-TO-GENERAL-LOCAL-SYMBOL-REDUCTION (stale); MORDELL-RAY-COMPARISON-TO-FIXED-BLOCK-AND-MATRICES (stale); MORDELL-RAY-NORM-TO-HEISENBERG-GOVERNING-FIELD (stale); MORDELL-RAY-COORDINATES-AND-CLASSICAL-PAIRING-TO-LOCAL-REDUCTION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written normalization of auxiliary central ramification, one-dimensional unramified tame restrictions at 3, alternating transvection argument and specialized van Beek-Fisher local formula. Sources and local hypotheses inspected internally; MCT13 separately supplies unrestricted terminating matrix computation; standard sign, practical scaling, independent review and replay remain separate.
 
@@ -56074,11 +56102,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every admissible R divisible by115, B_R(chi_5,chi_23)=sum_{q|R/115}(kappa(q)+chi_9(q)), where chi_9(2)=1. For 5|R and epsilon_R=1, B_R(chi_0,chi_5)=sum_{q|R/5}kappa_(0,5)(q)-2, using the exact norm (16). The new normalized matrices at R=19895,3335,235,145,27485,33695 have ranks0,2,0,2,2,2. The finite checker includes ten complete matrices overall. A single common F3 scaling is retained; the usual Weil sign remains uncalibrated.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-GENERAL-VARIATION-AND-RATIONAL-CONTROLS-TO-TWO-EXPLICIT-BLOCKS (stale); MORDELL-COCHAIN-NORMALIZATION-TO-GENERAL-RAY-VARIATION (stale); MORDELL-RAY-SELMER-TO-COMPLETE-KUMMER-BASIS (stale); MORDELL-KUMMER-BASIS-TO-GENERAL-LOCAL-SYMBOL-REDUCTION (stale); MORDELL-RAY-COMPARISON-TO-FIXED-BLOCK-AND-MATRICES (stale); MORDELL-RAY-NORM-TO-HEISENBERG-GOVERNING-FIELD (stale); MORDELL-RAY-COORDINATES-AND-CLASSICAL-PAIRING-TO-LOCAL-REDUCTION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Two exact norms and20 rational Kummer identities replayed with the Python standard library. The full rational span at19895 uniquely fixes the chi_9 coefficient to1; the span at235 gives the wild-5 reference value. Nonzero entries of both formulas agree at33695, checking relative normalization. Global variation remains a written proof input; no independent review.
 
@@ -56312,11 +56340,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every admissible R>1 with verified norm lifts for the complete MCT3 basis, averaging(27), exhaustive local3 tests and formulas(28)-(30) evaluate all entries, including the wild coordinate and all auxiliary denominator primes. Seven full matrices are retained. MCT12-MCT13 add fixed-row prime-block generation, adaptive precision and an unbounded exhaustive fallback proving unrestricted termination, without a useful runtime bound; bounded mode may still fail. MCT14 supplies an alternating wedge formula and exact rank compression. Standard Weil normalization is a common remaining convention.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-RATIONAL-LIFT-AVERAGING-AND-LOCAL-CLASS-TESTS-TO-FULL-MATRIX (stale); MORDELL-RAY-SELMER-TO-COMPLETE-KUMMER-BASIS (stale); MORDELL-KUMMER-BASIS-TO-GENERAL-LOCAL-SYMBOL-REDUCTION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Seven current full certificates replay internally, four agree with separately constructed full controls, and R71 agrees with scalar Hilbert-90 descent. R145 includes five exact prime-block witnesses and adaptive generation from precision6 to12. Direct entry evaluation, alternating wedge sum and compressed ranks agree in all seven cases. Five corruptions and a small exhaustive-fallback witness are checked. No independent mathematical review.
 
@@ -56326,11 +56354,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For E_R:y^2=x^3-2R^2 at R=71 and355, the full ray pairing matrices in bases(0,71) and(5,71) are respectively [[0,1],[2,0]] and [[0,2],[1,0]], in the common normalization. MS1 gives Selmer dimension2, so rational rank is0 and Sha(E_R)[3]=(Z/3)^2. The smooth plane cubics 2U^3+15U^2V+36UV^2+30V^3+213W^3=0 and U^3-7U^2V+18UV^2-14V^3+71W^3=0 are everywhere locally soluble and globally insoluble. No Sha finiteness conjecture or global point search is used.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-FULL-TWO-DIMENSIONAL-PAIRINGS-TO-RANK-ZERO-HASSE-FAILURES (stale); MORDELL-RATIONAL-LIFT-AVERAGING-AND-LOCAL-CLASS-TESTS-TO-FULL-MATRIX (stale); MORDELL-RAY-SELMER-TO-COMPLETE-KUMMER-BASIS (stale); MORDELL-KUMMER-BASIS-TO-GENERAL-LOCAL-SYMBOL-REDUCTION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Full local-symbol certificates, independently constructed opposite entries, exact complete Selmer dimension and the Kummer sequence. R71 is cross-checked by the other internal scalar-descent implementation. The two implementations are not recorded as independent mathematical review.
 
@@ -56424,11 +56452,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For each tame ray representative a_p, every allowed prime q is a norm from the fixed field Q(sqrt6,cuberoot(a_p)); multiplying such prime witnesses assembles any R. For the wild representative, a squarefree allowed product is a norm exactly when it is +/-1 modulo9, and its factors split into zero-sum blocks of at most three primes. The exact swap(34) gives forward norms. Exhaustive rational-coefficient norm enumeration and adaptive local precision with six formal-group translates prove termination of a full-matrix algorithm for every admissible R>1. This is an unrestricted exact-arithmetic existence/termination result, with no useful runtime or height bound; ordinary bounded mode can still fail.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-FIXED-ROW-NORM-BLOCKS-AND-COMPLETE-SEARCH-TO-TERMINATING-MATRIX (stale); MORDELL-RAY-SELMER-TO-COMPLETE-KUMMER-BASIS (stale); MORDELL-KUMMER-BASIS-TO-GENERAL-LOCAL-SYMBOL-REDUCTION (stale); MORDELL-RATIONAL-LIFT-AVERAGING-AND-LOCAL-CLASS-TESTS-TO-FULL-MATRIX (stale); MORDELL-RAY-WRITTEN-NORM-AND-LOCAL-TERMINATION (stale); SRC-MORDELL-RAY-WRITTEN-MATRIX-TERMINATION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proofs MCT12-MCT14 distinguish unrestricted termination from performance. Seven full replays check all local arithmetic, the wedge formula and compressed rank; R145 verifies five prime-block witnesses and adaptive precision6-to12. Five corrupted certificates and a small exhaustive-fallback witness are checked internally. Independent replay, formal verification and external mathematical review are not claimed.
 
@@ -56438,11 +56466,11 @@ Tracked obligations from the catalogue:
 
 **Exact scope:** For every admissible R>1, the full ray-basis pairing, including3, is the alternating wedge sum(37) of local descent, tame residue and all auxiliary valuation/residue vectors, up to the common Weil normalization. The positive auxiliary-wedge sign follows by antisymmetrizing the full global sum; individual local matrices need not alternate. Choosing a basis W of the vector span gives B=W J W^T with rank(B)=rank(J). Every retained full certificate checks both this formula and direct opposite entries. This is a norm/local-symbol formula, not a Frobenius-only evaluation of every reference constant.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** MORDELL-LOCAL-SYMBOL-ROWS-AND-ALTERNATION-TO-FULL-WEDGE-FORMULA (stale); MORDELL-RATIONAL-LIFT-AVERAGING-AND-LOCAL-CLASS-TESTS-TO-FULL-MATRIX (stale); MORDELL-RAY-SELMER-TO-COMPLETE-KUMMER-BASIS (stale); MORDELL-KUMMER-BASIS-TO-GENERAL-LOCAL-SYMBOL-REDUCTION (stale); MORDELL-FIXED-ROW-NORM-BLOCKS-AND-COMPLETE-SEARCH-TO-TERMINATING-MATRIX (stale); MORDELL-RAY-WRITTEN-NORM-AND-LOCAL-TERMINATION (stale); SRC-MORDELL-RAY-WRITTEN-MATRIX-TERMINATION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proofs MCT12-MCT14 distinguish unrestricted termination from performance. Seven full replays check all local arithmetic, the wedge formula and compressed rank; R145 verifies five prime-block witnesses and adaptive precision6-to12. Five corrupted certificates and a small exhaustive-fallback witness are checked internally. Independent replay, formal verification and external mathematical review are not claimed.
 
@@ -56893,6 +56921,76 @@ Tracked obligations from the catalogue:
 **Current blockers:** none in declared routes.
 
 **Verification limits:** Applied Stewart–Top Theorem 2 to the squarefree binary octic on the fixed CRT slice; exact octic and residue checks.
+
+### ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL
+
+[A second marked genus-three octic has three independent cubic norm functions](arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md)
+
+**Exact scope:** The explicit even octic of MO1 has three degree-eight maps in the sign eigenspaces, split Jacobian and three independent cubic norm directions. Its three specified fixed curves have generic quadratic-twist rank one.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written degree and sign quotient proof with exact maps, branch squarefreeness and two prime traces distinguishing all three rational isogeny factors.
+
+### ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE
+
+[Three locally cubed virtual norms give real class rank two and imaginary mirror class rank three](arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md)
+
+**Exact scope:** On fixed open local conditions for the original octic there are ≫ X^(1/4)/(log X)^2 real fields of discriminant at most X with class 3-rank at least two and imaginary mirror class 3-rank at least three. All three associated fixed elliptic twists have positive rank with conductors 44D², 396D², 198D².
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written valuations, split cube residues, unit kernel and mirror descent. Replayed local squareclasses, cube character rows and specialized conductor exponents.
+
+### ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS
+
+[A cubic base change gives four virtual norms and an unramified degree-81 imaginary mirror extension](arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md)
+
+**Exact scope:** On the explicit local slice of t=3u³/7 the three markings and the additional norm 11³ give four independent virtual classes that are cubes at three. Real class 3-rank is at least three and imaginary mirror class 3-rank at least four. The mirror has forty complex cubic fields of fundamental discriminant −3D and an unramified degree-81 extension split at three. Primes above 19,31,37,43 span its Frobenius quotient. Three fixed D-twists have positive rank and conductors 28D²,252D²,126D².
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written moving-prime valuations divisible by the cubic base change, uniform fixed-place control, and rank-four cubic residue matrix. Maps, norm, fixed-place data and conductor inputs replayed in Sage.
+
+### ARITH-MARKED-OCTIC-MIRROR-RANK-FOUR-QUANTITATIVE-CONDUCTOR-COUNT
+
+[A degree-twenty-four field count for the four-direction mirror construction](arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md)
+
+**Exact scope:** The real fields in MO3 yield ≫ X^(1/12)/(log X)^2 distinct discriminants at most X with distinct imaginary mirrors of discriminant size at most 3X. Their conductor triples yield ≫ Z^(1/24)/(log Z)^2 values with largest conductor at most Z.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written Stewart–Top Theorem 2 application on the fixed local slice of the squarefree degree-24 binary form.
+
+### ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER
+
+[The marked octic boundary norm gives exact odd-prime torsion after a prime-degree base change](arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md)
+
+**Exact scope:** The principal anti-invariant divisors supported on the four points above 0 and infinity on the original octic are exactly the multiples of div β=2(δ₀+δ∞). On every c·u^ℓ base change for odd prime ℓ the analogous lattice is generated by the pulled-back divisor 2ℓ(δ′₀+δ′∞), and the divided divisor of β gives a class of exact order ℓ.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written pole divisor and Kummer restriction proof with the nontorsion boundary point certified by reductions and a nonzero sixfold multiple.
 
 ### Supporting statements and targets
 
@@ -57974,8 +58072,8 @@ Tracked obligations from the catalogue:
 | ARITH-ABC-SPLIT-QUARTIC-FIXED-ORDER-ROOT-EXCESS | claim | proved / partial | For L_i=A_i x_i^k_i with fixed positive A_i,k_i and sum 1/k_i>=2, let J=product x_i/rad(x_i). Then rad(uv(u−v)(u+v)) J >> u^(2−epsilon) unless exactly two unequal nontrivial orders are on long forms and the short form has order one. With no nontrivial orders, with two equal ones, or with at least three, J can be replaced by its part outside any fixed prime set. | [arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md): Fixed valuation orders and the short factor |
 | ARITH-ABC-SPLIT-QUARTIC-HYPERBOLIC-FIXED-ORDER-FINITENESS | claim | proved / partial | If L_i=A_i x_i^k_i with fixed positive A_i,k_i on the quartic factors and sum 1/k_i<2, there are finitely many coprime opposite-parity u>v>0. It is enough for all valuations of L_i outside one fixed set of primes to be divisible by k_i. | [arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md): The fixed cover and the real proximity estimate |
 | ARITH-ABC-SPLIT-QUARTIC-CYCLIC-ORDER-DISCRIMINANT-LOSS | claim | proved / partial | On full-degree cyclic fibres the finite order–field discriminant difference outside S is sum_p ((1−1/k)m_p−1+gcd(k,m_p)/k) log p and can be proportional to log u on an explicit primitive family. The archimedean diagonal term is (1−1/k)log(u/s)+O(1). Combined with K7 this yields the arithmetic-discriminant inequality without constraining the field-discriminant deficit for such fibres. | [arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md): The normalization cost in the arithmetic discriminant |
-| ARITH-MORDELL-EXPLICIT-TAME-AND-WILD-KUMMER-BASIS | claim | stale / partial | For L=Q(sqrt(6)), choose norm(-p) generators pi_p and uniquely adjust p*pi_p by (5+2sqrt(6))^e modulo cubes so its sqrt(6) coefficient is divisible by 3. These give all tame ray coordinates; [5+2sqrt(6)] is the extra wild coordinate exactly when epsilon_R=1. Generator choices at a fixed prime ideal alter only cubes; conjugating the prime reverses the ray coordinate. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Proposition MCT3, complete basis construction and norm/unit/local-three checks |
-| ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD | claim | stale / partial | For a=-35+15 sqrt(6), b=667+276 sqrt(6) and the exact cubic norm solution (2), the symmetrized Kummer construction (6)-(7) has a degree-54 quotient H/Q with group Heis_3 semidirect C_2, unramified outside 2,3,5,23, with abelianization Q(sqrt(-2)). For allowed q outside 5,23 the finite-field kappa(q) is the central coordinate of squared Frobenius, independent of both embedding choices. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Coordinates and an exact norm solution; Explicit central symbol; The governing extension and its descent, equations (1)-(7) |
+| ARITH-MORDELL-EXPLICIT-TAME-AND-WILD-KUMMER-BASIS | claim | proved / partial | For L=Q(sqrt(6)), choose norm(-p) generators pi_p and uniquely adjust p*pi_p by (5+2sqrt(6))^e modulo cubes so its sqrt(6) coefficient is divisible by 3. These give all tame ray coordinates; [5+2sqrt(6)] is the extra wild coordinate exactly when epsilon_R=1. Generator choices at a fixed prime ideal alter only cubes; conjugating the prime reverses the ray coordinate. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Proposition MCT3, complete basis construction and norm/unit/local-three checks |
+| ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD | claim | proved / partial | For a=-35+15 sqrt(6), b=667+276 sqrt(6) and the exact cubic norm solution (2), the symmetrized Kummer construction (6)-(7) has a degree-54 quotient H/Q with group Heis_3 semidirect C_2, unramified outside 2,3,5,23, with abelianization Q(sqrt(-2)). For allowed q outside 5,23 the finite-field kappa(q) is the central coordinate of squared Frobenius, independent of both embedding choices. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Coordinates and an exact norm solution; Explicit central symbol; The governing extension and its descent, equations (1)-(7) |
 | ARITH-POWERFUL-FERMAT-BOX-GCD-EXPONENT | claim | proved / partial | Primitive signed solutions with fixed powers p,q,r>=2 and nonzero integer coefficients satisfy the coefficient-uniform bound (2). Pairwise coprime powers with r<=max(p,q), and equally powered boxes, need only W^2+W*M^(1/r). Distinct powers in [s,s+A] have reducible-slice exponent at most A/s. | [arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md](arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md): Rectangular and nearly equal exponent consequences, equation (2) |
 | ARITH-POWERFUL-FIXED-OFFSET-REFINED-SURFACE-LOSS | claim | proved / complete | In the primitive fixed-offset dyadic step, counting the three free maximum-scale coordinates costs at most L^(s^(-3/2)*(1+sqrt(s/(s-1)))+epsilon) for base order s>=2. | [arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md](arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md): Transfer to the fixed-offset surface step, equation (4) |
 | ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP | claim | proved / partial | The tall quartic roots lie in a narrow real strip and in a lattice modulo the short cubic cofactor. Their area divided by the covolume has exponent s=3 beta+gamma+xi-1, independent of the unknown short tail height. Lattice reduction and the diagonal surface cover give three affine branches, and exponent at most 407/888 at the denominator-37 profile. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Using the short cofactor to count in a lattice |
@@ -58249,8 +58347,8 @@ Tracked obligations from the catalogue:
 | ARITH-ABC-SMALL-BUDGET-DOMINANT-COORDINATES | claim | proved / partial | At sufficiently small fixed budget lambda, if D exceeds L/2+3lambda/ceil(lambda^(-1/2)), each letter has at most one high-degree coordinate exceeding the stated mass threshold. The other coordinates have total weighted height O(sqrt(lambda)). Both tall letters have a dominant coordinate of degree at least a constant times 1/lambda. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): One possible high-degree coordinate per letter |
 | ARITH-ABC-TALL-RESIDUE-PROFILE-OBSTRUCTION | claim | proved / partial | At unit radical budget the displayed asymmetric six-index profile with zero tail mass and two height-one letters permits D=2627/4796 under the projected pair and Fourier rows, the whole-tail geometry and grouped collision rows, direct residue-energy rows, and paired-shift rows. The assertion concerns the exponent inequalities. | [arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md](arithmetic/ABC_OMITTED_COORDINATE_GRAPH.md): An asymmetric obstruction for the height-tagged bounds; [arithmetic/verify_abc_tall_residue_obstruction.py](arithmetic/verify_abc_tall_residue_obstruction.py): main |
 | ARITH-ABC-SPLIT-QUARTIC-ODD-CYCLIC-FULL-SPECIALIZATION | claim | proved / complete | For fixed k, if the field K(y) over K=Q(mu_k) on the cyclic quartic fibre has degree d<k, then k/d divides all four valuation orders outside the fixed primes dividing 2k. If k/d>=3 there are only finitely many such pairs by the hyperbolic fixed-order profile. In particular for every odd k>=3, full degree holds outside a finite set. | [arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md): The normalization cost in the arithmetic discriminant |
-| ARITH-MORDELL-GENERAL-NORM-AND-LOCAL-SYMBOL-REDUCTION | claim | stale / partial | For squarefree admissible R>1, work over Q(sqrt(6)) with rho^3=R, S=(0,3R sqrt(6)), T=(-6rho^2,3R sqrt(6)sqrt(-3)). Norm lifts (18), descended local discrepancies (19), and formula (20) give every tame or wild entry. The local symbol at 3 is the explicit four-dimensional table (21). This reduction takes local points and cubic descent as inputs. MCT13 separately supplies terminating matrix-data generation, without a useful runtime bound; standard-sign calibration is separate. R=1 has a zero one-dimensional alternating matrix. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Proposition MCT7, equations (18)-(21) and all local descent/degree factors |
-| ARITH-MORDELL-RAY-NORMALIZED-TAME-PAIRWISE-VARIATION | claim | stale / partial | For every distinct allowed tame pair p,r, the normalized exponent-three Heisenberg field has quotient characters chi_p,chi_r and the same nonzero commutator convention. Its squared-Frobenius symbol satisfies MCT4 equation(12) for every admissible R divisible by pr. Reference constants are retained symbolically. This is the written tame-pair assertion; no numerical norm certificate or full-matrix generator is a premise. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Normalizing the pairwise governing field and Proposition MCT4, tame formula(12) and its proof |
+| ARITH-MORDELL-GENERAL-NORM-AND-LOCAL-SYMBOL-REDUCTION | claim | proved / partial | For squarefree admissible R>1, work over Q(sqrt(6)) with rho^3=R, S=(0,3R sqrt(6)), T=(-6rho^2,3R sqrt(6)sqrt(-3)). Norm lifts (18), descended local discrepancies (19), and formula (20) give every tame or wild entry. The local symbol at 3 is the explicit four-dimensional table (21). This reduction takes local points and cubic descent as inputs. MCT13 separately supplies terminating matrix-data generation, without a useful runtime bound; standard-sign calibration is separate. R=1 has a zero one-dimensional alternating matrix. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Proposition MCT7, equations (18)-(21) and all local descent/degree factors |
+| ARITH-MORDELL-RAY-NORMALIZED-TAME-PAIRWISE-VARIATION | claim | proved / partial | For every distinct allowed tame pair p,r, the normalized exponent-three Heisenberg field has quotient characters chi_p,chi_r and the same nonzero commutator convention. Its squared-Frobenius symbol satisfies MCT4 equation(12) for every admissible R divisible by pr. Reference constants are retained symbolically. This is the written tame-pair assertion; no numerical norm certificate or full-matrix generator is a premise. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Normalizing the pairwise governing field and Proposition MCT4, tame formula(12) and its proof |
 | ARITH-POWERFUL-FIXED-OFFSET-MASS-SLACK-CONSTANT | claim | proved / complete | In the competitive fixed-offset boxes, the sum T of the three maximum normalized masses is at most 1+(1+sqrt(3))/(4*sqrt(s))+O_(u,v)(s^(-1)). The coefficient is 2/3 if the three chosen powers are distinct or the two smaller-scale powers coincide. | [arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md](arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md): Retaining the actual side lengths in fixed-offset boxes, equations (3) and (4) |
 | ARITH-ABC-COHERENT-NORM-FROBENIUS-CLASS-LABEL-COST | claim | proved / partial | For imaginary quadratic K with D<-4, conductor f coprime to 6D, and a prime divisors of f split in the reflected quadratic field, the kernel of the first color map on Cl(K)[3] has size h_0>=\|Cl(K)[3]\|/3^a. It supplies (h_0-1)(h_0-3) independent ordered pairs as soon as h_0>=9, whose four lines pass all the prescribed first-color tests. In polynomial conductor ranges on polynomially large torsion groups the loss in class-pair counts is subpower. This concerns class labels before matching any prime norms. | [arithmetic/ABC_COHERENT_NORM_RING_CLASS_RESIDUES.md](arithmetic/ABC_COHERENT_NORM_RING_CLASS_RESIDUES.md): Cost of the Frobenius conditions on class labels |
 | ARITH-MS-EXACT-THM-MINUS7-EXACT | claim | proved / partial | Exact -7 core sumset excludes only11,29 among7-unit targets; primitive sumset excludes7,77,203 among49-unit targets. Every eligible N>=2^69 has at leastN^(2/3)/20000 ordered numerical-value pairs. | [../results/eisenstein-restricted-prime-sums/sections/minus7-exact.tex](../results/eisenstein-restricted-prime-sums/sections/minus7-exact.tex): thm:minus7-exact |
@@ -58415,8 +58513,8 @@ Tracked obligations from the catalogue:
 | ARITH-ABC-CUBIC-ADJOINT-STRIPPED-NORM-HEIGHT | claim | proved / complete | Divide the norm of the fixed cubic algebraic adjoint value by the product C of all prime-to-residue-characteristic local factors. Half the log of the resulting positive rational number is log c+O(log c/log(log c+2)), uniformly over the nonexceptional Frey triples. Bounded global invariant-group factors can also be removed. The sharp coefficient bound against log rad(abc) is equivalent to abc. | [arithmetic/ABC_CUBIC_ADJOINT_TAMAGAWA_FACTORS.md](arithmetic/ABC_CUBIC_ADJOINT_TAMAGAWA_FACTORS.md): Consequence for the abc valuation problem, equation (CT3) |
 | ARITH-ABC-RATIONAL-MODULAR-DEGREE-ADJOINT-QUOTIENT | claim | proved / complete | For every nonexceptional Frey triple, the optimal modular degree has logarithmic asymptotic log delta_1,N = log c + log rad(abc) + O(log(log c+2)). The differential-normalized modular degree B_E equals N times the naive adjoint L(1) divided by 2 pi times the Neron period area. The algebraic quotient Theta=N X_E/B_E lies in Q(zeta_3) and its absolute log magnitude is O(log(log rad(abc)+2)). | [arithmetic/ABC_CUBIC_ADJOINT_SHIMURA_PROJECTORS.md](arithmetic/ABC_CUBIC_ADJOINT_SHIMURA_PROJECTORS.md): The rational modular degree and the adjoint quotient, equations (SP1)-(SP3) |
 | ARITH-ERDOS365-NEAR-MINIMAL-UNIT-SUBPOWER-MULTIPLIER-RATE | claim | proved / partial | For every fixed 0<=theta<1/10, set H_D=gcd(D,U_D), Q_D=U_D/H_D and R_D=D/H_D. Let F(x)=log x times [log(2L(x))/L(x)]^(1/3) with L(x)=log log(e^e x). There are C_theta,c_theta>0 such that the tail of sum_D 1/tau_D over D>Z satisfying Q_D<=R_D^theta and log R_D>=C_theta F(D) is O_theta(exp(-c_theta F(Z))). The corresponding pair count is S_theta Y+O_theta(Y exp(-c'_theta F(Y))). | [arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md](arithmetic/ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md): Theorem (A summable range with subpower period multipliers). |
-| ARITH-MORDELL-RAY-UNRESTRICTED-MATRIX-TERMINATION | claim | stale / partial | For every admissible squarefree R>1, a terminating exact-arithmetic algorithm computes the full normalized ray-basis pairing matrix, including the wild coordinate when present, without supplied norm witnesses. This is the written MCT13 existence/termination theorem. It gives no useful uniform runtime or height bound, Frobenius-only representation or standard Weil-sign calibration. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Theorem MCT13, unrestricted effective full-matrix rule |
-| ARITH-MORDELL-RAY-JOINT-TAME-GOVERNING-GROUP | claim | stale / partial | For every n>=2 and n distinct allowed fixed primes, the compositum of their normalized tame pair fields has Galois group (F3^n times F3^(n choose 2)) semidirect C2 with multiplication(40), inversion on the first quotient and trivial action on the center. Commutators of coordinate lifts generate each central direction separately; the maximal abelian subfield is exactly Q(sqrt(-2)). | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Lemma MCT15, joint tame governing group, equation(40) and complete surjectivity/abelianization proof |
+| ARITH-MORDELL-RAY-UNRESTRICTED-MATRIX-TERMINATION | claim | proved / partial | For every admissible squarefree R>1, a terminating exact-arithmetic algorithm computes the full normalized ray-basis pairing matrix, including the wild coordinate when present, without supplied norm witnesses. This is the written MCT13 existence/termination theorem. It gives no useful uniform runtime or height bound, Frobenius-only representation or standard Weil-sign calibration. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Theorem MCT13, unrestricted effective full-matrix rule |
+| ARITH-MORDELL-RAY-JOINT-TAME-GOVERNING-GROUP | claim | proved / partial | For every n>=2 and n distinct allowed fixed primes, the compositum of their normalized tame pair fields has Galois group (F3^n times F3^(n choose 2)) semidirect C2 with multiplication(40), inversion on the first quotient and trivial action on the center. Commutators of coordinate lifts generate each central direction separately; the maximal abelian subfield is exactly Q(sqrt(-2)). | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Lemma MCT15, joint tame governing group, equation(40) and complete surjectivity/abelianization proof |
 | ARITH-POWERFUL-VZERO-EXPLICIT-SURFACE-ERROR | claim | proved / complete | For fixed u>=0 and sufficiently large base order s, the primitive positive triples of orders (s+u,s,s) have the leading saving 2/s^2 with exponent error at most 3*(1+sqrt(3))/4*s^(-5/2)+O_u(s^(-3)). For the boxes in (4), the coefficient 3*(1+sqrt(3))/4 can be replaced by 2. | [arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md](arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md): Explicit surface-only error for offsets (u,0), equation (5) |
 | GAP-PRIMITIVE-NORM-EXACT-11 | gap | proved / partial | Resolved: P_-11+P_-11={N>=2:N even and121 not dividingN}. The exact stronger split-core identity is proved by the complete finite certificate, all35intermediate analytic bins and the larger-core estimate. No residual finite family remains unchecked. | [arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md](arithmetic/PRIMITIVE_NORM_MINUS11_EFFECTIVE.md): TheoremM11 and complete proof throughM11.20 |
 | GAP-PRIMITIVE-NORM-EXACT-8 | gap | proved / partial | Resolved: P_-8+P_-8={N>=2:16 does not divideN}, with no exceptions. Both stronger cores C+C andC+2C are exact. Complete finite coverage,107analytic intervals, the independent old prime/core bounds and descent leave no unexhausted family. | [arithmetic/PRIMITIVE_NORM_MINUS8_EXACT.md](arithmetic/PRIMITIVE_NORM_MINUS8_EXACT.md): TheoremM8 and complete proof throughM8.13 |
@@ -58659,6 +58757,7 @@ Tracked obligations from the catalogue:
 | ARITH-ABC-FREY-MONODROMY-GCD-TRANSFER | claim | proved / partial | Take the gcd G of the norms over all level subsets U of size 2 or 3 according to the parity of the number k of odd radical primes and all pivots p in U. Put W=delta_1,N/product over odd r of n_r. Then G=W T xi, with xi supported at coefficient primes at most 163 and of rational height O(k+1), and T=gcd of products over (\|U\|-1)-element subsets. T is a bounded power of two for even k; for odd k the remaining valuation at each coefficient prime above 163 is the second smallest valuation of the n_r, and log T=O(1+log R/(k-1)). Thus log G=log c+log R+O(log c/log(log c+2)). | [arithmetic/ABC_FREY_MONODROMY_NORMS.md](arithmetic/ABC_FREY_MONODROMY_NORMS.md): Gcd across the two-vertex graphs, (MN5)-(MN7); [arithmetic/sources/pasten-shimura-abc-1705.09251v4.pdf](arithmetic/sources/pasten-shimura-abc-1705.09251v4.pdf): Theorem 6.1(b.2), Corollary 6.2, Lemmas 6.10 and 6.12, Theorem 16.7 |
 | ARITH-ABC-FREY-MONODROMY-NORM-HEIGHT | claim | proved / partial | At any odd p exactly dividing M, the norm H is the weighted squared norm of a primitive degree-zero supersingular eigenvector. Uniformly over each admissible factorization and odd pivot, log H=log c+log R+O(log c/log(log c+2)). The sharp uniform bound H<<_epsilon R^(2+epsilon) for one choice per triple is equivalent to abc; two-vertex graphs with p dividing M suffice including D=1. | [arithmetic/ABC_FREY_MONODROMY_NORMS.md](arithmetic/ABC_FREY_MONODROMY_NORMS.md): Two vertices suffice for the norm bound, (MN3)-(MN4); [arithmetic/sources/longo-rotger-vigni-shimura-uniformization-0910.3391.pdf](arithmetic/sources/longo-rotger-vigni-shimura-uniformization-0910.3391.pdf): Sections 2.2 and 3.5, supersingular degree-zero module at p exactly dividing the level |
 | ARITH-ABC-FREY-SIGNED-NEW-DEGREE-DIVISIBILITY | claim | proved / partial | For an odd admissible factorization with at least two odd primes in M, take each toric pivot p exactly dividing M, including 2 when its conductor exponent is one. Let B be the lcm of the Frey projector denominators on the saturated exact-conductor N, matching Atkin-Lehner sign lattices. Then B divides delta_D,M, which divides 12 L^\|U\| 2^omega(N) B product_{r in U} v_r(Delta_E), with U the set of primes exactly dividing M and L=lcm(1,...,163). On the canonical small-level family log B=log c+log R+O(log c/log(log c+2)). | [arithmetic/ABC_FREY_FULL_LEVEL_CONGRUENCES.md](arithmetic/ABC_FREY_FULL_LEVEL_CONGRUENCES.md): Recovering the Frey degree from the smaller lattices, (HN1)-(HN4) |
+| ARITH-MORDELL-ONE-PRIME-RATIONAL-POINT-CONSTRAINTS | claim | proved / partial | For MCT16 curves R=5 mod9, no finite rational point on E_R is integral at3. For all admissible R the rational torsion on both isogenous curves is zero, by reductions at11,17 and absence of2,3torsion. A nonsingular fixed block intersects the rational Kummer image only in zero; every nonzero rational Kummer class has nonzero q-coordinate. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Lemma MCT17, dual Kummer cube at3, complete mod9 obstruction, torsion and fixed-block radical argument |
 | ARITH-D19-EXACT-PRIMITIVE-SUMSET | claim | proved / partial | For P={x^2+xy+5y^2>0:gcd(x,y)=1}, allowing signs and zero coordinates, P+P={N>=2:N even,361 does not divide N} minus{4,76,380}. The core exception20 is filled by1+19, and ramified targets transfer the core exceptions4,20 to76,380. Both summands are positive primitive values. | [arithmetic/PRIMITIVE_NORM_MINUS19_EXACT.md](arithmetic/PRIMITIVE_NORM_MINUS19_EXACT.md): TheoremM19 M19.2; final ramified transfer |
 | ARITH-D23-CUBE-ATOM-ANALYTIC-ONSET | claim | proved / partial | For splitp outside2,3,N=c*p³>=2^43 has positive signedU+U shell. WithY3floor(N^(7/20)), spectral+large-prime error leaves exact scaled surplus139/192. The complete badp event includes full four-coordinate content. | [arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md](arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md): Sections1-6, exact finite and unrestricted scopes |
 | ARITH-D23-PRINCIPAL-ATOM-ONSET | claim | proved / partial | For principal splitp and c5/10/15, c*p>=2^40 belongs toU+U. The separate all-prime block sieve and p-avoidance give exact scaled surplus328385/164736. This is a sufficient onset, NOT completeness for principal atoms below it. | [arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md](arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md): Sections1-6, exact finite and unrestricted scopes |
@@ -58757,6 +58856,7 @@ Tracked obligations from the catalogue:
 | ARITH-FIXED-PLANE-LOCAL-HASSE-COUNTS | claim | proved / partial | On EVERY fixed rational affine plane P, A_P(B)=O_P(B^2). On each plane other thanu0/c0, also G_P(B),L_P(B)=O_P(B^2). On the two section planes A_P=0 andG_P=L_P=4B^3/zeta3+O(B^2). Thus exactly these two planes have orderB^3 local/global counts. Constants depend onP; no improved ambient bound by summing moving planes is claimed. | [arithmetic/FIXED_MAP_PLANE_LOCAL_COUNTS.md](arithmetic/FIXED_MAP_PLANE_LOCAL_COUNTS.md): PLC2 |
 | ARITH-ABC-FIXED-LEVEL-ABELIAN-CONDUCTOR-RADICAL-IDENTITY | claim | proved / complete | For any fixed odd N>=3, add one half the normalized log norm of the mixed conductor quotient over U to log rd(U)+log rd(U')-log rd(UU'), where the second abelian cover separates the possible quadratic auxiliary prime. This is log rad(abc)+O(log(2N)), with exact equality on the tame support when the field discriminants also omit 2N. All base fields have degrees bounded solely by N and all four conductor terms are over U. | [arithmetic/ABC_PAIRED_TWIST_CONDUCTORS.md](arithmetic/ABC_PAIRED_TWIST_CONDUCTORS.md): A height comparison at one fixed odd level |
 | ARITH-ABC-FREY-FINITE-JOINT-FIELD-DEGREE-HEIGHT | claim | proved / partial | For ell>=5 the joint intersection exponent e_ell lies between the ell-adic valuation of the signed toric projector lcm and that of the classical optimal modular degree. Over F=Q(mu_infty), the base-changed fields for distinct ell>=5 are linearly disjoint, with their compositum J finite. Then log((delta_1)_{2,3} [J:F]^(1/3)) = log c + log R + O(log c/log(log c+2)) uniformly. | [arithmetic/ABC_FREY_JOINT_DIVISION_FIELDS.md](arithmetic/ABC_FREY_JOINT_DIVISION_FIELDS.md): Comparing the intersection depth and One finite extension, (DF6)-(DF8); [arithmetic/sources/katz-modular-forms-characteristic-p.pdf](arithmetic/sources/katz-modular-forms-characteristic-p.pdf): Section II, Corollary 3, injectivity of theta in small weights; [arithmetic/sources/agashe-ribet-stein-modular-degree-congruences.pdf](arithmetic/sources/agashe-ribet-stein-modular-degree-congruences.pdf): Theorem 3.6(b) and Lemma 4.2, classical congruence denominator |
+| ARITH-MORDELL-QUADRATIC-NON-TORSION-POINT-CONSTRUCTION | claim | proved / partial | For R0=5C as in MCT16, every integer a with a^2=1350 mod C and a=+/-1 mod18 yielding a prime q=(a^2-1350)/C outsideR0 gives the explicit non-torsion points(44), with q53 mod72. The congruences have CRT solutions. This general construction is a written identity, independent of the finite prime scan and norm/symbol certificates. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Proposition MCT18, general point identities(43)--(44), CRT and congruences, before the finite controls |
 | ARITH-D23-CUBE-ATOM-FINITE-BRIDGE | claim | proved / partial | For every nonprincipal splitp<2^14 and c5/10/15, there exist two positive primitive23-unit Q values summing toc*p³. This is a finite EXISTENCE statement, with no assertion that every global theorem must use the particular retained witness coordinates. | [arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md](arithmetic/MINUS23_NEUTRAL_CUBE_ATOM_CLOSURE.md): Sections1-6, exact finite and unrestricted scopes |
 | ARITH-D23-PRINCIPAL-ATOM-SMALL-EXISTENCE | claim | proved / partial | For every principal split primep andc5/10/15 withcp<2^30, there EXIST two positive primitive23-unit norm values summing tocp. This is the logical finite existence assertion, separate from the stronger claim about particular native output bytes. | [arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md](arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md): Sections1-5, exact theorem scope |
 | ARITH-D23-PRINCIPAL-NEUTRAL-ATOMS | claim | proved / partial | For every principal split primep andc in{5,10,15}, cp belongs toU+U, whereU is the positive primitiveQ value set prime to23. This unrestricted prime-parameter statement follows from the proven2^30 onset and the ACTUAL complete finite bridge. | [arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md](arithmetic/MINUS23_PRINCIPAL_ATOMS_AND_INERT_CORE_FIVE.md): Sections1-5, exact theorem scope |
@@ -59355,7 +59455,7 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-ABC-FREY-BAD-COEFFICIENT-ADJOINT-EXCESS** (mathematical; proved / discharged): For every primitive positive abc triple with at least two odd radical primes the excess sum over ell>=5 dividing N is identically zero. The exact equality is length S_ell + T_ell + v_ell(v_ell(Delta_E)) = v_ell(delta_1) prime by prime.
 - **GAP-ARITH-ERDOS943-EFFECTIVE-SLOPE-ELLIPTIC-RESIDUAL** (mathematical; open): In precisely the paired norm-squareclass residual and coefficient gate of (H), prove the pointwise O_epsilon(n^(26/51+epsilon)) count after additionally discarding cycles meeting the effective-slope class thresholds or the equal-class nontrivial elliptic dependence test. The equal-class remainder includes equal products, reciprocal products and pairs independent modulo torsion.
 - **GAP-ARITH-ERDOS943-PAIRED-MULTIPLICATION-RESIDUAL** (mathematical; open): In the exact coefficient family and effective-slope and elliptic-dependence residual for (H), prove the pointwise O_epsilon(n^(26/51+epsilon)) count after also discarding cycles meeting the paired-product squareclass threshold and either unconditional equal-product scale or common divisor threshold. In the equal-class part this leaves equal products outside those tests and pairs of independent elliptic points modulo torsion.
-- **GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX** (mathematical; stale): For every admissible R>1, compute the complete normalized Mordell ray-basis pairing matrix, including the wild coordinate when present, without supplied norm witnesses. MCT13 gives a terminating exact algorithm with exhaustive fallback and certified adaptive local precision. This endpoint requires no useful uniform runtime bound or Frobenius-only representation; the standard Weil sign is separate.
+- **GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX** (mathematical; proved / discharged): For every admissible R>1, compute the complete normalized Mordell ray-basis pairing matrix, including the wild coordinate when present, without supplied norm witnesses. MCT13 gives a terminating exact algorithm with exhaustive fallback and certified adaptive local precision. This endpoint requires no useful uniform runtime bound or Frobenius-only representation; the standard Weil sign is separate.
 - **GAP-ARITH-ABC-FIFTH-PRIME-OCCUPANCY-SAVING** (mathematical; open): For each fixed B>=128, both signs and every epsilon>0, bound the residual occupancy sum PO6 by O_B,epsilon((ZV)^epsilon(Z^(5/3)V^2+Z^3)), uniformly X=Z^10/V^2>=2 and Z^(17/10)<=V<=Z^(9/5). All three normalized coefficients exceed V/Z^(1/3). Keep the divisor condition, unit fifth-root classes, distinct small prime occupants and exact squarefree field-window weight PO3--PO4. This explicit majorant is sufficient; retaining the original selected-path restrictions also suffices.
 - **GAP-ARITH-ABC-GENUS-FIVE-CUBIC-PARAMETER-INDEPENDENT-POSITIVE-PAIR** (mathematical; proved / discharged): An explicit nonprojective pair of cubic maps to the weighted profiles k1=32/343 and k2=3087/4913 has a common genus-five quadratic field, two geometrically independent generic norm classes, and an interval of simultaneous positive directions. DB3 proves existence on an unbounded family of fields. DB2 and DB4 give a separate exclusion of simultaneous genuine prime triangles.
 - **GAP-ARITH-HURWITZ-TERMINAL-MASS-PLATEAU-ESCAPE** (mathematical; open): For every r>=7 and every full-A_(2r+1) full-cycle DT tuple with mu=m>0, find a braid staying at mass m which reaches either a minimizing outer one-contact, or an adjacent pair rotation with intermediate masses <=m and a final rotating-factor mass <m. This sufficient monotone strategy remains open and is not asserted equivalent to unrestricted extraction.
@@ -59363,6 +59463,9 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-MORDELL-RAY-FROBENIUS-ONLY-PAIRING-FORMULA** (mathematical; open): Give every tame and wild entry using normalized pairwise governing fields and Frobenius symbols, with all absolute reference constants evaluated. The terminating norm/local algorithm is not this representation.
 - **VERIFY-ARITH-MORDELL-STANDARD-WEIL-NORMALIZATION** (verification; open): Identify the common orientation factor between the current normalized F3 matrices and the standard three-isogeny Weil pairing, with the displayed torsion basis and embedding fixed. The matrix algorithm is proved up to that common factor; its rank and radical consequences do not require this calibration.
 - **GAP-ARITH-HURWITZ-THREE-FACTOR-MINIMUM-EXCLUSION** (mathematical; open): For every full-A_(2r+1) full-cycle DT orbit, r>=7, with hypothetical positive minimum m, find a minimizing representative and a consecutive three-factor window whose complete local orbit has a candidate mass below m. Seven-weight coefficients and at most twelve literal endpoint labels give the finite inequalities. This is a sufficient local strategy, not an asserted equivalence with extraction. All 189 owners of one nine-label forest are classified; other forests and global compatibility remain open.
+- **GAP-ARITH-MORDELL-ONE-MOVING-PRIME-EXACT-RANK-ONE** (mathematical; conditional): For every r>=1, obtain a fixed admissible R0 with2r fixed primes and infinitely many eligible q with nonsingular fixed block and a non-torsion rational point. This would give exact rank1 and Sha[3^infinity]=(Z/3)^(2r). MCT16 proves only rank<=1 unconditionally here. MCT18 supplies a point family and finite controls; MCT19 gives a conditional converse route via full Selmer corank1.
+- **GAP-ARITH-MORDELL-QUADRATIC-PRIME-VALUES-NONSINGULAR-FROBENIUS** (mathematical; open): For every r>=1 choose C as a product of2r-1 distinct primes71 mod72 and a progression of a with a^2=1350 mod C and a=+/-1 mod18. Prove infinitely many primes q=(a^2-1350)/C outside5C for which the fixed2r block is nonsingular. Finite r1 controls show compatibility, not infinitude. The required assertion combines quadratic prime values and a nonabelian Frobenius condition.
+- **HYP-ARITH-MORDELL-RAMIFIED-CM-THREE-CONVERSE** (mathematical; open): For E_R/Q with CM by O_(Q(sqrt(-3))), full3-primary Selmer corank1 implies analytic and rational rank1 and finite Sha. This is stated by Kriz2002.04767v5 Theorems1.1/10.13; its exact hypotheses and terminal proof have been inspected, but this project has not audited and accepted the complete upstream reciprocity/main-conjecture proof chain. It is an explicit mathematical assumption for the conditional refinement, not a claim that the statement is historically unknown or false.
 
 Tracked obligations from the catalogue:
 
@@ -59496,6 +59599,9 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-MORDELL-RAY-QUANTITATIVE-MATRIX-GENERATION — mathematical; open.** [Can the terminating arbitrary-support Mordell matrix algorithm be given useful quantitative height, precision or runtime bounds?](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
 - **GAP-ARITH-MORDELL-RAY-FROBENIUS-ONLY-PAIRING-FORMULA — mathematical; open.** [Can every Mordell ray pairing entry be expressed by normalized governing fields and Frobenius symbols with all absolute reference constants evaluated?](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
 - **VERIFY-ARITH-MORDELL-STANDARD-WEIL-NORMALIZATION — verification; open.** [Calibrate the common Weil normalization of the displayed Mordell matrices against the standard torsion-basis convention; this is separate from rank and radical computations.](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
+- **GAP-ARITH-MORDELL-ONE-MOVING-PRIME-EXACT-RANK-ONE — mathematical; conditional.** [For every r>=1, obtain a fixed admissible R0 with2r fixed primes and infinitely many eligible q with nonsingular fixed block and a non-torsion rational point. This would give exact rank1 and Sha\[3^infinity\]=(Z/3)^(2r). MCT16 proves only rank<=1 unconditionally here. MCT18 supplies a point family and finite controls; MCT19 gives a conditional converse route via full Selmer corank1.](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
+- **GAP-ARITH-MORDELL-QUADRATIC-PRIME-VALUES-NONSINGULAR-FROBENIUS — mathematical; open.** [For every r>=1 choose C as a product of2r-1 distinct primes71 mod72 and a progression of a with a^2=1350 mod C and a=+/-1 mod18. Prove infinitely many primes q=(a^2-1350)/C outside5C for which the fixed2r block is nonsingular. Finite r1 controls show compatibility, not infinitude. The required assertion combines quadratic prime values and a nonabelian Frobenius condition.](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
+- **HYP-ARITH-MORDELL-RAMIFIED-CM-THREE-CONVERSE — mathematical; open.** [For E_R/Q with CM by O_(Q(sqrt(-3))), full3-primary Selmer corank1 implies analytic and rational rank1 and finite Sha. This is stated by Kriz2002.04767v5 Theorems1.1/10.13; its exact hypotheses and terminal proof have been inspected, but this project has not audited and accepted the complete upstream reciprocity/main-conjecture proof chain. It is an explicit mathematical assumption for the conditional refinement, not a claim that the statement is historically unknown or false.](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
 
 ## Formal verification
 
