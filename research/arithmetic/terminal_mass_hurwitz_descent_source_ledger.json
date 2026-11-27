@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_utc_date": "2026-11-27",
   "result_document": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
-  "assurance": "Internal written terminal-mass, exact-phase and pair re-minimization proofs, singleton equal-middle capture, terminal-bridge exclusion and antipodal equality-singleton structure, with bounded exact controls. For N>=15 a positive minimum requires (1,t;2t), even t, N=3t+1 and m=(N-4)/3. Extraction is proved for N not congruent to 1 modulo 6; the remaining singleton family and mixed connectivity are open.",
+  "assurance": "Internal written terminal-mass proofs and exact bounded controls. Lemma 19 excludes stability of a fixed two-to-one projection under all complementary braids for even t>=4; Theorem 20 excludes all positive global polynomial DT orbit minima for odd N>=15 and proves extraction without a monodromy hypothesis. Pure-DT connectivity follows with the retained degree-thirteen base and two-leaf absorption; mixed connectivity remains open. No independent replay, formal verification or external review.",
   "declarations": [
     {
       "name": "Lemma 1. Terminal mass detects exactly the removable locus",
@@ -75,6 +75,14 @@
     {
       "name": "Lemma 18. Saturated singleton covers force antipodal roots",
       "scope": "In the equality singleton family, for even t>=4 the middle roots differ by t in the complementary 2t-cycle. Saturated phase covers and the elementary noncrossing property of a reduced cycle factorization prove this. Every terminal-middle edge projects modulo t to its terminal partner, giving exactly the terminal tree. Its support intersection with the minimizer is zero or two at every phase; odd contacts with the minimizer can occur only at one middle label of a middle-middle factor. The natural antipodal matching is broken by terminal-middle generators; no global invariant code is established."
+    },
+    {
+      "name": "Lemma 19. Complementary braids cannot preserve a saturated projection",
+      "scope": "For a polynomial DT tree with cuts (1,t;2t), even t>=4, t-1 terminal-middle and t/2 middle-middle factors, no fixed two-to-one projection M->U can make every terminal-middle edge project to its terminal partner after every complementary braid. Pair conjugations force a common lifted terminal tree, then fibrewise action of every middle-middle factor on its vertices; conjugating such a factor by a terminal-middle factor forces it to fix those vertices, contradicting middle connectivity."
+    },
+    {
+      "name": "Theorem 20. Every residual pure-DT orbit admits extraction",
+      "scope": "For every polynomial DT braid orbit on odd N>=15 sheets the global minimum terminal mass is zero, with no monodromy hypothesis. Every orbit therefore has a removable two-leaf DT. The complete degree-thirteen base and canonical two-leaf absorption give absolute unmarked pure-DT connectivity for every residual degree; exact marking removal gives marked connectivity. Mixed connectivity remains separate."
     }
   ],
   "primary_source_comparison": [
@@ -125,6 +133,24 @@
       "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
       "locator": "Theorem 1.1, printed page 1",
       "role": "Actual cached statement read: primitive plus a prime cycle fixing at least three points implies A_n"
+    },
+    {
+      "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
+      "sha256": "8230f2b99df53463583f0b8cb07a7075d34283952bcf375dff85a647358ed36c",
+      "locator": "Complete degree-thirteen pure-DT orbit theorem and certificate",
+      "role": "Finite base for residual connectivity induction"
+    },
+    {
+      "path": "research/arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md",
+      "sha256": "2a80b8a203bc8dadbe7eaf631cb5f1469abfb7bec85e584c81955d29e84af43b",
+      "locator": "Theorem 1 and Corollary 3",
+      "role": "Absorb the extracted factor at arbitrary distinct old anchors"
+    },
+    {
+      "path": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
+      "sha256": "18f83cbfcd0fb48ea3f9f56497448c6bfe1f8e55370403d9fcf2db86ec8ff879",
+      "locator": "Theorem 4 and the full-twist absolute quotient argument",
+      "role": "Exact marked connectivity from absolute unmarked connectivity"
     }
   ],
   "evidence": {
@@ -135,7 +161,7 @@
     "software": "Python 3.12.3; standard library only",
     "scope": "Existing 392-tuple degree-seven domain: 42 strict pruning controls in both bringing orders, 56 two-contact captures in both pair orders and 6720 weighted quotient comparisons. Additional period-two control, cyclic r=4,7,12,25 controls and literal degree-fifteen one-move capture. A second full-A15 witness has mass one in all24 pair/power cases covering every power of each initially adjacent pair, yet [-3,-4] gives1,1,0 and two new leaves. Invalid controls rejected."
   },
-  "remaining_frontier": "For N>=15 exclude the equality singleton family (1,t;2t), even t>=6, under full alternating monodromy. N=3t+1, m=t-1=(N-4)/3. The middle roots are antipodal and terminal-middle edges project to exactly the terminal tree, so their contacts with the minimizer are even in every complementary twist. Control middle-middle one-contacts and overlaps between complementary factors, enough for the proper-code contradiction or an endpoint decrease. The natural antipodal matching is broken by terminal-middle generators; a nonempty invariant matching of all or part of the odd transitive sheet set is impossible. General extraction and mixed connectivity remain open.",
+  "remaining_frontier": "Pure-DT extraction, residual unmarked and exact marked connectivity, and the every-orbit imprimitive-deletion representative are established by the written fixed-projection argument and retained induction inputs. Mixed polynomial connectivity and original even-passport uniform connectivity remain open. Direct three-factor-window and stronger monotone plateau-escape strategies remain optional unresolved methods. Independent mathematical review of Lemma 19, its global-minimum application, and the induction dependencies is pending.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
@@ -150,7 +176,7 @@
     "deterministic_input": "Literal nine-label triple and owner map in symbolic_path_control; all seven-block owner partitions generated by two pair identifications in owner_partition_controls; existing degree-fifteen plateau certificate supplies all five initial windows.",
     "scope": "Complete local generator closure with every transition checked against a separate permutation implementation. All 189 owners for the specified forest, exact minimal masks and constructive positive isolated-system witnesses. 1245 comparisons with full-tree factor cuts; a twelve-label support control, proper order-168 positive local minimum, and four invalid controls. Internal replay only."
   },
-  "primary_source_comparison_reinspection": "Reinspected the actual primary HTML statements of Ripoll Definition 0.3 and Theorems 0.4 and 5.5, and Liu--Osserman Proposition 1.1 and Theorem 1.2. The same reflection/single-cycle hypothesis gaps remain. The exact phase and re-minimization arguments import no connectivity theorem and make no novelty claim. For Lemma 15 the actual same primary theorem statements were reinspected; the reflection/single-cycle hypothesis gaps persist. Its tree and commuting-swap proof is self-contained relative to the named earlier lemmas; no novelty assertion is made. For Theorem 17 and Lemma 18 the actual Ripoll Definition 0.3/Theorem 0.4 and Liu--Osserman Proposition 1.1/Theorem 1.2 were reinspected; the same reflection/single-cycle hypothesis gaps persist. The new terminal-cut, saturated-cover and noncrossing arguments are supplied in full and import no connectivity or classification theorem; no priority claim is made.",
+  "primary_source_comparison_reinspection": "Actual primary statements rechecked: Ripoll Definition 0.3, Theorems 0.4 and 5.5, and Liu--Osserman Proposition 1.1, Theorem 1.2 and Section 2. The reflection and single-cycle hypotheses do not cover the paired DT action. Lemma 19 is a self-contained pair-conjugation and tree argument. Theorem 20 uses the named earlier minimum reductions and retained degree-thirteen base, two-leaf absorption and marking-removal proofs. No imported connectivity theorem or priority assertion is added.",
   "global_compatibility_evidence": {
     "checker": "research/arithmetic/verify_terminal_mass_global_compatibility.py",
     "checker_sha256": "a7d5ecec7195a64f2647ef6d1c119896e3a48f03133a96353ce924e4759a63d3",
@@ -172,5 +198,15 @@
     "software": "Python 3.12.3; standard library only",
     "deterministic_input": "Pruefer sequences generate all labeled trees with b=1,c=t,d=t+1 for t=2..4; all edge bijections. Canonical paired paths generate all edge pairings and complementary orders for t=3..8, plus reverse and even-then-odd orders at t=16,32. Literal t=2 boundary and deliberately invalid capture inputs are embedded in the checker.",
     "scope": "Internal replay: 1555 labeled tree/pairing cases, with 1,2,12 all-factor-mass survivors for t=2,3,4; every t>=3 survivor captured. All 5912 complementary orders and 5912 path pairings through t=8, four larger orders, both signs of final capture, exact full product and lower full-cycle deletion. The t=2 complete five-state orbit has mass one and group order ten. Three invalid capture inputs rejected. These bounded controls supplement the universal written proof and do not establish all-degree extraction."
+  },
+  "projection_escape_evidence": {
+    "checker": "research/arithmetic/verify_terminal_mass_projection_escape.py",
+    "checker_sha256": "499cfbbbad29fb9cba94511c2e45b6b92c4c7d977c47f1c8a0e2d52afdd4e706",
+    "receipt": "research/arithmetic/terminal_mass_projection_escape_verification.json",
+    "command": "python3 research/arithmetic/verify_terminal_mass_projection_escape.py",
+    "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
+    "software": "Python 3.12.3; standard library only",
+    "deterministic_input": "All Pruefer trees and binary endpoint lift assignments for t=2..4; all labeled terminal trees and all DTs on 2t middle sheets for t=3..5 with normalized active lifts. Literal t=2 endpoint-exchange control. Five canonical saturated path trees with even t=4,6,8,12,16, opposite-half pairing of the last t middle path edges, and first-factor roots computed from complementary cycles.",
+    "scope": "Internal exact checks of 1076 lift assignments, 82245 terminal-tree/MM pairs and five full-tree escape certificates including projection break, twist, outer contact and pruning. Independent endpoint conjugation cross-checks permutation composition. These bounded controls supplement universal written proofs and do not constitute a higher-degree census or independent review."
   }
 }

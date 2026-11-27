@@ -267,13 +267,12 @@ algebraic polynomial with a particular tuple. Connectivity in degree
 sixteen and uniform connectivity remain open.
 
 For the residual pure-DT polynomial problem on \(N\ge15\) sheets,
-[Theorem 17 and Lemma 18](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-17-only-the-equality-singleton-family-can-remain)
-leave only singleton cuts \((1,t;2t)\), even \(t\), with \(N=3t+1\),
-\(m=(N-4)/3\) and antipodal middle roots. Extraction follows for
-\(N\not\equiv1\pmod6\). Full alternating monodromy has not yet been
-shown to exclude the remaining singleton family. This structural result
-does not extend the finite census above or resolve the separate mixed
-polynomial problem needed for degree sixteen.
+[Theorem 20 of the terminal-mass note](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-20-every-residual-pure-dt-orbit-admits-extraction)
+proves extraction in every orbit. Combined with the degree-thirteen base
+above and two-leaf absorption, it gives pure-DT connectivity in all residual
+degrees, including the exact marked version. This structural argument does
+not extend the finite census or resolve the separate mixed polynomial
+problem needed for the original degree-sixteen passport.
 
 ## Evidence
 

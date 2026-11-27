@@ -411,6 +411,22 @@ controls \(\sum c_E\); the desired bound requires control of
 \(\sum\binom{c_E}{2}\) with the common fundamental discriminant
 and the relative local condition retained.
 
+More precisely, for an original quadratic sign \(\sigma\), let
+\(P_\sigma(X)\) count these unordered pairs with
+\(|\Delta|\le X\) and mirror sign \(-\sigma\). Omit
+\(E=\mathbb Q(\sqrt{-3})\), which would correspond to the
+excluded trivial original field; the original cyclotomic field
+instead has trivial mirror. Then, with exactly the AFM5 family,
+\[
+             P_\sigma(X)=6N_{3,\sigma}(X^4).
+\]
+Thus \(P_\sigma(X)\ll_\varepsilon X^{1+\varepsilon}\)
+is a fourth equivalent endpoint alongside the degree-nine count,
+the full signed quadratic second moment, and the unrestricted
+degree-36 count above. Each direction uses the displayed identity
+and rescales \(\varepsilon\); it does not require a new asymptotic
+input. Either original sign suffices by AFM5 and Scholz reflection.
+
 ### Comparison with inductive field-counting theorems
 
 [Alberts, arXiv:1804.11318v3, Theorem 2.6 and Definition 2.4](https://arxiv.org/html/1804.11318v3)
@@ -451,6 +467,37 @@ would give \(1/18\) and \(1/24\), respectively; the retained
 \(\beta=17/56\) recovers \(17/252\) and \(17/336\).
 These implications do not extract the valuation data needed to
 prove abc.
+
+The same hypothesis bounds the full three-edge product sum, and
+hence its cubic minimum moment, by
+\((ABC)^{4\beta+\varepsilon}\): substitute
+\(1+\theta=4\beta\) in the triangle inequality below and use
+\(\min(h_{12},h_{13},h_{23})^3\le h_{12}h_{13}h_{23}\).
+This includes the all-negative and mixed-sign cases and every
+dyadic shape. The exponent transfers are:
+
+| Quantity | From a degree-nine upper exponent \(\beta\) | At the sharp target \(\beta=1/4\) |
+|---|---|---|
+| Full quadratic second moment at cutoff \(X\) | \(X^{4\beta+\varepsilon}\) | \(X^{1+\varepsilon}\) |
+| MP7 degree-36 count at cutoff \(Y\) | \(Y^{2\beta/9+\varepsilon}\) | \(Y^{1/18+\varepsilon}\) |
+| MP7 degree-54 count at cutoff \(Y\) | \(Y^{\beta/6+\varepsilon}\) | \(Y^{1/24+\varepsilon}\) |
+| Cubic minimum moment over kernel boxes | \((ABC)^{4\beta+\varepsilon}\) | \((ABC)^{1+\varepsilon}\) |
+
+At the sharp target the last row supplies MP7's minimum moments
+for every fixed \(0\le k\le3\), since every \(h_{ij}\ge1\).
+It therefore supplies the class-moment input for separation
+\(1/81\) in all three orientations at the existing conditional
+record cost. Positivity also bounds the sum restricted to
+\(\min h_{ij}\le\max(AB,AC,BC)^{5/18}\); the lower-threshold
+joint cubic-moment obligation would then be discharged.
+Extraction of genuine primitive rows with the
+required exact valuations and affordable charts remains a
+separate obligation. The current sector and interpolation bounds
+remain available whenever they are stronger than the general
+\(\beta\)-transfer. The
+[elliptic-conductor transfer](ELLIPTIC_CONDUCTOR_MOMENTS_FROM_QUADRATIC_TORSION.md#afm5-and-the-linear-conductor-moment-target)
+also gives \(\sum_{q\le Q}E(q)^{2\gamma}
+\ll_\varepsilon Q^{4\beta+\varepsilon}\).
 
 The next counting task is to bound pairs of distinct cubic-field
 orbits with the same fundamental discriminant \(|\Delta|\le X\),

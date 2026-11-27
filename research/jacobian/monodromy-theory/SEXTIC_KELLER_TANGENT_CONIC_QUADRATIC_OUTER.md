@@ -4920,3 +4920,581 @@ vanishing forces \(\Delta=0\).
 Thus \(b_0=xa_0,\ c_0=x^2a_0\). The claimed
 highest tuple follows by comparing \(z\)-degree
 minus \(y\)-degree in each entry.
+
+## The doubled square-member frame through axial weight two
+
+**Theorem SexticKellerTangentConicDoubledSquareMemberAxialThroughTwo.**
+For a degree-at-most-six characteristic-zero Keller map
+with ordinary highest tuple \((x^2P^2,x^4P,x^6)\),
+where \(P=xz+y^2\), the highest tuple in weights
+\((1,1,w)\) is \((x^4z^2,x^5z,x^6)\) for
+\(1<w<2\). At \(w=2\) the highest tuple is binary
+in \(x,z\).
+
+### The remaining tie at three-halves
+
+The nontrivial binary tie at \(3/2\) was already
+excluded. In the nonbinary case, replace \(iy+ex\)
+by \(y\). The leading tuple is then
+\[
+                     (Wz^2,Wxz,Wx^2),\qquad W=x^4+y z^2 .
+\]
+Take the leading pair \(B=Wxz,C=Wx^2\).
+Its differentials are independent at the generic
+point of \(z=0\): their transverse and tangential
+terms are \(x^5\,dz, 6x^5\,dx\).
+Thus there must be a rational slice regular along
+that divisor. In the source field
+\(k(B,C)(x)\), put \(t=B/C=z/x\). Directly
+\[
+                         J(B,C,x)=-C xz^2 .
+\]
+A primitive for unit value of this derivation is
+\(1/(2Cz^2)\), and all such primitives differ
+by a function of \(B,C\). Multiplying the displayed
+primitive by \(B^2\), its residue at \(z=0\) is
+\(x^4/2\). The restricted valuation on \(k(B,C)\)
+is \(B\)-adic, with residue field \(k(C)=k(x^6)\),
+so no invariant can cancel the pole. This
+excludes the nonbinary tie.
+
+### The binary tie at five-thirds
+
+With the tuple unchanged at \(3/2\), the axial
+monomial test for ordinary correction terms of
+degree at most five gives only one possible tie
+before \(w=2\), at \(5/3\). Its form is
+\[
+             (x^4z^2,\ x^5z+a z^4,\ x^6+(b x+c y)z^3).
+\]
+The first two entries are independent in \(x,z\),
+so the leading determinant gives \(c=0\).
+
+Suppose \((a,b)\ne(0,0)\). Put \(t=z^3/x^5\) and
+\(\rho=x^2/z\). Then \(x=t\rho^3,z=t^2\rho^5\).
+For the leading outputs \(A,B,C\), the ratios are
+\[
+        AC/B^2=(1+b t)/(1+a t)^2,\qquad
+        B^{11}/A^{10}=(1+a t)^{11}/t^3 .
+\]
+When \(a\ne0\), their degrees as rational functions
+are at most two and exactly eleven, and the first
+is nonconstant. Thus they generate \(k(t)\).
+When \(a=0,b\ne0\), the first alone is affine
+nonconstant. The powers of \(\rho\) in the
+outputs are \(22,20,18\), so the image field is
+\(k(t,\rho^2)\), containing \(X=x^2,J=xz,Z=z^2\).
+
+Raise the \(y\)-weight from one to the first tie,
+at most \(4/3\) by the ordinary term \(x^2y^4\).
+Specialization at \(y=0\) identifies the new leading
+image ring with the binary one. Indeed the leading
+determinant still vanishes, and the specialized ring
+has the same dimension two. Integral elements of
+the binary image field therefore lift to polynomials,
+with their original weights, by the normalization
+argument in the first axial tie analysis.
+
+When \(a\ne0\), the binary tuple vanishes
+simultaneously only at the origin, so \(X,J,Z\)
+are integral. When \(a=0,b\ne0\), the identities
+\[
+          X^5(C-X^3)^2=b^2 A^3,\qquad
+          J^3=X(C-X^3)/b
+\]
+first make \(X\) integral and then make the rational
+lift of \(J\) polynomial. In either case the
+weight-two \(X\) must lift as \(x^2\). The
+weight-\(8/3\) element \(J\) can only acquire
+a multiple of \(y^2\), at weight \(4/3\).
+But \(J^2=XZ\) forces \(x\) to divide the
+lift of \(J\). In the second case where \(Z\)
+is initially rational, this divisibility follows
+instead from \(J^3=X(C-X^3)/b\). Hence \(J=xz\)
+and \(Z=z^2\) in the lift. As the three entries
+are polynomial in \(X,J,Z\), this contradicts
+the existence of the tie.
+
+### Nonbinary tuples at weight two
+
+At weight two the monomial test, after the
+preceding exclusions, gives the highest tuple
+on \(x\ne0\) as
+\[
+              (x^8t^2 F,\ x^7t G,\ x^6 H),
+                    \qquad s=y/x,\quad t=z/x^2,
+\]
+where
+\[
+ \begin{aligned}
+ F&=1+t a(s)+t^2 A_0,\\
+ G&=1+t b(s)+t^2 B(s),\\
+ H&=1+t c(s)+t^2 D(s)+t^3 C_0.
+ \end{aligned}
+\]
+Here \(\deg a,\deg D\le2,\ \deg b\le3,\ 
+\deg B\le1,\ \deg c\le4\), and \(A_0,C_0\)
+are scalars. Put \(R=FH/G^2,\ V=G^8/(t^6 F^7)\).
+The leading determinant implies their dependence.
+In particular a rational function of \(R,V\)
+of order zero at \(s=\infty\) has scalar residue
+whenever the valuation of their field is nontrivial.
+
+For the preliminary coefficient identities, the
+matrix with rows
+\[
+       (8F,2F+tF_t,F_s),\quad
+       (7G,G+tG_t,G_s),\quad
+       (6H,tH_t,H_s)
+\]
+has determinant zero. Use subscripts for the
+coefficients of powers of \(s\). Its coefficient
+of \(t\) gives \(c_4=0,\ c_3=2b_3,\ c_2=2b_2-a_2\)
+and \(c_1=2b_1-a_1\). At \(t^2s^5\) the remaining
+term is \(36b_3^2\); at \(t^2s^3\), after \(b_3=0\),
+it is \(24(a_2-b_2)^2\). Thus \(b_3=c_3=0\)
+and \(a_2=b_2=c_2\). If \(a_1=a_2=0\),
+the coefficient of \(t^2s\) also gives
+\(D_2=b_1^2\).
+
+Suppose first \(a_2\ne0\). At \(s=\infty\),
+\(V\) has pole order two with leading coefficient
+\(a_2/t^5\), and the residue of \(R\) is
+\(1+tD_2/a_2\). Hence \(D_2=0\).
+Unless \(D_1=2B_1\), the function \(R-1\) has order
+one and \((R-1)^2V\) has residue proportional to
+\(t^{-3}\), a contradiction. Thus write
+\(G=F+L,\ H=F+2L+K\), where \(L\) is of degree
+at most one in \(s\) and \(K\) is independent of
+\(s\). Now \(FH-G^2=FK-L^2\) has degree at most
+two in \(s\). If its leading coefficient in \(s\)
+is \(N(t)\) in degrees two, one, or zero,
+respectively, the order-zero test functions are
+\((R-1)V,\ (R-1)^2 V^3,\ (R-1)V^2\).
+Their residues, up to nonzero scalars, are
+\(N/t^7,\ N^2/t^{19},\ N/t^{12}\).
+The degrees of \(N\) are at most four, five, five,
+respectively. None of the residues can be constant.
+Thus \(F K=L^2\). If \(K\ne0\), the discriminant
+of \(F\) in \(s\) must vanish. But its linear term
+in \(t\) is \(-4a_2 t\). Therefore \(K=L=0\) and
+\(F=G=H\).
+
+Next let \(a_2=0,\ a_1\ne0\).
+If \(G\) is independent of \(s\), then
+\(c_1=-a_1\) and \(R\) has pole order \(m=2\) or
+\(3\), according to whether \(D_2=0\).
+The residue of \(R^7 V^m\) has \(t\)-order
+\(-12\) or \(-18\) at zero. Indeed the leading
+coefficient of \(V\) at \(s=\infty\) has
+\(t\)-order \(-13\), and that of \(R\) has
+\(t\)-order \(m\). This is impossible.
+If \(G\) depends on \(s\), then \(V\) has pole
+order one. If \(D_2\ne0\), the residue of \(R/V\)
+is proportional to \(t^6/(b_1+t B_1)^{10}\),
+nonconstant. Thus \(D_2=0\), and the residue
+of \(R\) is
+\[
+                         R_0=a_1(c_1+t D_1)/(b_1+t B_1)^2.
+\]
+If it is zero, then \(c_1=D_1=0\) and \(b_1=a_1/2\).
+The residue of \(RV\) has \(t\)-order \(-6\),
+again impossible. A nonzero constant \(R_0\)
+forces \(B_1=D_1=0\) by polynomial degrees in
+\(t\). The numerator of \(R-R_0\) has \(s\)-degree
+at most one. As above, a nonzero leading
+coefficient \(N(t)\) of \(s\)-degree one or zero
+gives residue proportional to \(N/t^7\) for
+\((R-R_0)V\), or \(N/t^{12}\) for
+\((R-R_0)V^2\), respectively. Its degree in
+\(t\) is at most five. Thus \(R=R_0=1\),
+where the last equality follows at \(t=0\).
+Then \(a_1=c_1=b_1\), and \(F=G=H\) since
+\(F(H-2G+F)=(G-F)^2\) and the latter two
+differences are independent of \(s\).
+
+In either of these cases with \(F=G=H\) the
+leading tuple is \((Wz^2,Wxz,Wx^2)\) with
+\[
+                   W=x^4+(a_0x^2+a_1xy+a_2y^2)z+A_0z^2 .
+\]
+For \(a_2\ne0\), fix generic \(C=Wx^2\) and
+\(r=z/x=B/C\). Complete the square in \(y\) with
+\(\widetilde y=y+a_1 x/(2a_2)\) and put
+\(M=x^2\widetilde y\). Then
+\[
+ M^2=\frac{x}{a_2 r}
+         \left(C-x^6-(a_0-a_1^2/(4a_2))r x^5-A_0r^2 x^4\right).
+\]
+This polynomial is squarefree of degree seven
+for generic values. The relative form of the
+leading pair \(B,C\) is proportional to \(dx/M\),
+a nonzero regular differential on the complete
+curve. If \(a_2=0,a_1\ne0\), the source field
+is \(k(B,C)(x)\). As in the weight-three-halves
+obstruction, the pair \(B,C\) is regular at the
+generic point of \(z=0\). Here
+\(J(B,C,x)=-a_1 C x^2 z\), and the primitive
+\(1/(2a_1 C xz)\) has a simple pole along \(z=0\).
+Multiplying by \(B\) gives residue
+\(1/(2a_1x^2)\) outside \(k(C)=k(x^6)\).
+Both cases contradict the slice.
+
+It remains to take \(a_1=a_2=0\). If \(G\) is
+independent of \(s\), then \(V\) is a nonconstant
+function of \(t\) alone and dependence forces \(H\)
+to be independent of \(s\) as well. Otherwise
+\(V\) has pole order eight at \(s=\infty\), and
+\(D_2=b_1^2\). If \(b_1=0\), then \(G_1=B_1t^2\)
+and \(H_1=D_1t^2\), with no quadratic term.
+If \(H_1\ne0\), the residue of \(R^8V\) has
+\(t\)-order \(-6\); if \(H_1=0\), that of \(R^4V\)
+has the same order. This is impossible.
+Thus \(b_1\ne0\), and constancy of the residue
+of \(R\) gives \(F=(1+kt)^2\), \(k=B_1/b_1\),
+by substituting \(t=0\) in that residue.
+In particular the residue is one. If \(R\ne1\)
+and the numerator of \(R-1\) has leading coefficient
+\(N(t)\) in \(s\)-degree one or zero, respectively,
+the residues of \((R-1)^8V\) or \((R-1)^4V\)
+have respective \(t\)-orders
+\(8\operatorname{ord}_0 N-14\) or
+\(4\operatorname{ord}_0 N-6\), which cannot
+be zero. Hence \(FH=G^2\), giving
+\(G=(1+kt)(1+(j+b_1s)t)\) and
+\(H=(1+(j+b_1s)t)^2\).
+For \(k\ne0\) this uses divisibility of \(G\)
+by \(1+kt\); for \(k=0\) its degree in \(t\)
+is at most one because \(H\) has degree at most
+three.
+
+In source variables the tuple is
+\(((zL)^2,zLM,M^2)\) with \(L=x^2+kz\),
+\(M=x^3+(j x+b_1y)z\).
+If \(k\ne0\), on generic \(zL=r,M=s\) set
+\(N=xz\). Then \(N^2=rz-kz^3\) is elliptic,
+and the relative form is proportional to
+\(dz/(zN)\). This form has one double pole,
+at \(z=0\), and no other poles. A primitive
+would give a degree-one map from the elliptic
+curve to the projective line. If \(k=0\), use
+\(B=zLM,C=M^2\), which are independent at the
+generic point of \(z=0\). With \(P_0=x^2z\),
+\[
+                         J(B,C,x)=-2b_1 M^2 P_0 .
+\]
+The source field is \(k(P_0,M)(x)\).
+A primitive \(-x/(2b_1M^2P_0)\) has a pole
+whose coefficient at \(P_0=0\) contains \(x\)
+over \(k(M)=k(x^3)\); no invariant cancels it.
+The contradiction finishes the weight-two
+nonbinary exclusion.
+
+### Returning to the conic in the binary doubled frame
+
+**Theorem SexticKellerTangentConicDoubledSquareMemberWeight234Reduction.**
+Under the doubled square-member hypotheses, the
+highest tuple in weights \((2,3,4)\) is
+\[
+             (x^2P^2,\ x^4P+kxP^2,\ x^6+jx^3P+eP^2),
+                                 \qquad ke=0 .
+\]
+
+At axial weight two the binary tuple has form
+\[
+       (x^4 z^2+a x^2 z^3+A z^4,\
+        x^5z+b x^3z^2+B xz^3,\
+        x^6+c x^4z+C x^2z^2+D z^3).
+\]
+Raise the weight of \(y\) from one to \(3/2\),
+holding the weights of \(x,z\) at one and two.
+The allowed monomials which could tie, using the
+previous weight bound and ordinary support, are
+\[
+\begin{array}{c|lll}
+ w_y &F_1&F_2&F_3\\ \hline
+ 6/5&&&y^5\\
+ 5/4&&y^4z&xy^4\\
+ 4/3&y^3z^2&xy^3z&x^2y^3,\ y^3z\\
+ 7/5&&y^5&\\
+ 3/2&y^4z,\ xy^2z^2,\ x^2y^4,\ x^3y^2z&
+     y^2z^2,\ xy^4,\ x^2y^2z,\ x^4y^2&
+     y^4,\ xy^2z,\ x^3y^2 .
+\end{array}
+\]
+The isolated ties are impossible, since each pair
+of unchanged entries is independent. This is seen
+by comparing their weights \(8,7,6\) and orders
+\(2,1,0\) in \(z/x^2\) at zero. At \(5/4\), on
+the generic level of the first output, the
+relative bracket of the two affine functions of
+\(y^4\) would make the ratio of their \(y^4\)
+coefficients constant along that binary level
+if both were nonzero. Their ratio is proportional
+to \(z/x\), which is independent of the first
+output. If just one coefficient were nonzero,
+the other binary output would be dependent on
+the first one. This rules out the tie at \(5/4\).
+
+At \(4/3\), write \(Y=y^3\). Denote the four
+potential corrections by \(qYz^2,r xYz,u x^2Y+
+vYz\). The determinant in \(x,Y,z\) vanishes.
+Taking the coefficients at \(x^{10}z^2\) and
+\(x^6Yz^2\) gives \(q-2r+u=0,\ qr-2qu+ru=0\),
+hence \(q=r=u\). The coefficient at \(Y^2z^3\)
+gives \(qrv=0\). If \(q=0\), the coefficient at
+\(x^8z^3\) now gives \(v=0\). Otherwise \(v=0\),
+and the coefficients at \(x^4Yz^3,x^2Yz^4,Yz^5\)
+give \(c=2b-a,\ C=2B-A,\ D=0\).
+The coefficients at \(x^6z^4,x^2z^6\) then reduce
+to \(10q(a-b)^2,\ 8q(A-B)^2\). Thus the
+candidate tuple is \((Wz^2,Wxz,Wx^2)\) with
+\(W=x^4+a x^2 z+A z^2+q y^3\).
+At generic levels \(z/x=t,\ Wx^2=s\),
+the variable \(M=xy\) satisfies
+\[
+                          M^3=x(s-x^6-a t x^5-A t^2 x^4)/q .
+\]
+The relative form of the leading pair of last
+outputs is proportional to \(x\,dx/M^2\).
+The polynomial is squarefree for generic \(s,t\).
+At the simple finite branch points this form
+is regular; at infinity \(x,M\) have pole orders
+three and seven. Hence the form is nonzero and
+regular on the complete curve. This excludes the
+tie at \(4/3\).
+
+At \(3/2\) use coordinates \(x,P,z\) in the
+subring \(k[x,y^2,z]\). The allowed tuple is
+\[
+ \begin{aligned}
+ A_1&=x^2P^2+p_1 P^2z+p_2xPz^2+p_3x^2z^3+p_4z^4,\\
+ B_1&=x^4P+p_5xP^2+p_6x^2Pz+p_7Pz^2+p_8x^3z^2+p_9xz^3,\\
+ C_1&=x^6+p_{10}x^3P+p_{11}x^4z+p_{12}P^2+
+                          p_{13}xPz+p_{14}x^2z^2+D z^3 .
+ \end{aligned}
+\]
+Its determinant in \(x,P,z\) is zero. Write
+\(a=p_1,d=p_5,b=p_6,h=p_7,g=p_8,j=p_{10},e=p_{12}\).
+Taking the coefficients at \(x^{11}z^2,x^{10}Pz,
+x^9z^3,x^9P^2,x^8Pz^2,x^6P^3,x^7P^2z,x^5P^2z^2\),
+in that order, gives
+\[
+\begin{gathered}
+ p_3=0,\quad p_2=2g,\quad p_4=g^2,\quad
+ p_{11}=2b-a,\quad p_9=g(b-a),\\
+ p_{13}=(a j-14ad+4jb+4bd)/6,\qquad
+ p_{14}=(a-b)^2+(j-4d)g+2h,\\
+ D=4adg-4dbg-a p_{14}+2bh+p_{13}g.
+\end{gathered}
+\]
+Let \(I\) be the rational ideal of coefficients of the
+determinant after these substitutions. The following
+polynomials to the indicated powers belong to \(I\).
+\[
+\begin{array}{c|r}
+ \text{polynomial}&\text{power}\\ \hline
+ aj&6\\
+ ag&2\\
+ ad&4\\
+ a^2-ab-dg+h&3\\
+ e(ab+gj-2h)&3\\
+ b(j-2d)&6\\
+ bj^2+8ae-4be&6\\
+ g(dj-2e)&3\\
+ g(d^2-e)&3
+\end{array}
+\]
+The [retained checker](verify_doubled_square_weight_234.py)
+constructs the rational coefficient ideal and
+verifies polynomial identities witnessing all nine
+memberships. It also checks both tie lists and the
+eight eliminations. Run it with Python 3 and Singular
+4.3.2 from the repository root.
+
+These equations give five families. For \(a\ne0\)
+one has \(j=g=d=0\) and \(h=ab-a^2\).
+If \(e\ne0\), then \(b=2a\). If \(a=0\),
+then \(h=dg\); with \(g\ne0\) one gets \(e=d^2\)
+and either \(j=2d\) or \(b=d=e=0\).
+With \(a=g=0\), either \(b=0\), or \(j=2d\)
+and \(e=d^2\). Substitution yields the following
+list, allowing overlaps:
+\[
+\begin{array}{l|l}
+ \text{highest tuple}&\text{parameters}\\ \hline
+ (P^2L,PL^2,L^3+eP^2)&L=x^2+a z\\
+ (P^2L,PLN,LN^2)&L=x^2+a z,\ N=x^2+(b-a)z\\
+ (x^2P^2,x^4P+dxP^2,x^6+jx^3P+eP^2)&\\
+ (W^2,x^3W,x^6+jx^2W)&W=xP+g z^2\\
+ (W^2,WV,V^2)&W=xP+g z^2,\ V=x^3+dP+b xz .
+\end{array}
+\]
+
+### Generic-fibre differentials of the five families
+
+All generic levels in the following calculations may
+be taken over the algebraic closure of their parameter
+field. A nonzero scalar multiple on a fixed level
+does not change exactness. We also use that for a
+smooth double cover \(M^2=f(x)\) with \(f\) squarefree,
+the cover branches at the simple roots and at
+infinity when \(\deg f\) is odd. In the residue-zero
+cases with a double pole at just one point of a
+positive-genus curve, a primitive would have a
+single simple pole and hence degree one.
+
+**The first family.** If \(a\ne0\), the first two
+outputs give the same relative differential up to
+scalar as \(P,L\), since their bracket in \(P,L\)
+is \(3P^2L^2\). On generic \(P=s,L=t\) one gets
+\(y^2=s+(x^3-tx)/a\) and relative form \(dx/y\).
+This is regular and nonzero on the elliptic model.
+If \(a=0\) the family is already the third one.
+
+**The second family.** Write
+\(L=x^2+\alpha z,\ N=x^2+\beta z\).
+When \(\alpha=\beta\), use the first family.
+Otherwise fix \(P/N=s,\ LN^2=t\), furnished by
+the leading pair of the two last outputs.
+Use \(r=N\), \(M=xr\). Then
+\[
+ M^2=\frac{\alpha r^3-\beta t}{\alpha-\beta},
+ \qquad
+ y^2=sr+\frac{M}{\alpha-\beta}
+                 -\frac{Mt}{(\alpha-\beta)r^3},\qquad
+ \omega\ \propto\ \frac{dr}{M y}.
+\]
+The form follows from the Jacobian of
+\((P/N,LN^2,N)\) in \((P,L,N)\), which is \(N\),
+and \(J(P,L,N)\), which is proportional to \(xy\).
+If \(\alpha\beta\ne0\), the first cover is elliptic.
+At its finite ramification points \(dr/M\) is regular;
+at \(r=0\) the pole of \(y^2\) only increases the
+order of the differential. Other finite zeros of
+\(y^2\) are simple for generic \(s\): they come
+from a generic level of the rational function
+obtained by solving the displayed equation for
+\(s\). At infinity of the final curve, the pole
+orders of \(r,M,y\) are \(4,6,3\), respectively.
+Hence the form is everywhere regular and nonzero.
+
+If \(\alpha=0,\ \beta\ne0\), \(M\) is a nonzero
+scalar on each first component. The double cover
+in \(y\) of the \(r\)-line has four simple finite
+zeros in addition to its odd poles at zero and
+infinity, so has genus two. The form has a double
+pole at infinity and is regular elsewhere.
+If \(\beta=0,\ \alpha\ne0\), normalize \(r=\ell^2\),
+\(M=\ell^3\). The differential becomes a scalar
+multiple of \(d\ell/(\ell^2 y)\). The poles of
+\(y^2=s\ell^2+\ell^3/\alpha-t/(\alpha\ell^3)\)
+are of order three at \(\ell=0,\infty\).
+The form is regular there (order zero at zero),
+and the generic finite zeros are simple. Thus
+this case also gives a nonzero regular form.
+All nontrivial cases contradict the slice.
+
+**The third family.** If \(de\ne0\), the last
+two outputs as functions of \(x,P\) have independent
+differentials at \(x=0\), with Jacobian
+\(2deP^3\) there. Their derivation annihilates
+\(k(x,P)\), and this is the full invariant field
+since \(k(x,y,z)=k(x,P)(y)\). The derivative of
+\(y\) equals the Jacobian in \(x,P\) times
+\(J(x,P,y)=-x\). A slice would therefore be a
+nonzero scalar times \(y\) divided by that
+derivative, plus an invariant. Its simple pole
+at \(x=0\) cannot be removed since its coefficient
+involves \(y\) outside \(k(P)=k(y^2)\).
+Thus \(de=0\).
+
+**The fourth family.** For \(g\ne0\), the first
+two outputs fix \(W\) and \(x\) on each geometric
+component. The conic
+\(xy^2+x^2z+g z^2=W\) has relative form
+proportional to \(dz/y\). At each point above
+\(z=\infty\), \(y\) has pole order one and the
+form has a nonzero residue. If \(g=0\), the
+tuple is already in the third family.
+
+**The fifth family.** Fix generic \(W=r,V=s\)
+using the first two outputs, whose bracket in
+\(W,V\) is \(2W^2\). Write
+\(\alpha=d,\ \beta=b,\ \gamma=g\).
+If \(\alpha\gamma\ne0\), elimination yields
+\[
+ \begin{aligned}
+ M&=2\alpha\gamma z-\beta x^2,\\
+ M^2&=(\beta^2+4\alpha\gamma)x^4-4\alpha\gamma s x+
+                                                 4\alpha^2\gamma r,\\
+ y^2&=(s-x^3-(\alpha+\beta)xz)/\alpha,\qquad
+                      \omega\ \propto\ dx/(y M).
+ \end{aligned}
+\]
+The first cover is a squarefree quartic or linear
+cover. Its finite ramification cancels the factor
+\(M\) in the differential. Finite zeros of \(y^2\)
+are simple for generic \(r,s\). Indeed on \(y^2=0\)
+the two fixed-level polynomials restrict to a map
+of the \(x,z\) plane, and any rank-deficient locus
+there has nondominant image in characteristic zero.
+If that plane map is nondominant, there are no
+zeros on the generic fibre at all.
+
+For the quartic case, at infinity
+\(z=\zeta x^2+O(x^{-1})\) on either first branch.
+If the cubic term of \(y^2\) cancels, then
+\(\gamma=\alpha+\beta\), \(\zeta=-1/(\alpha+\beta)\),
+and the constant term of \(y^2\) is
+\(s/(2\alpha+\beta)\ne0\).
+Thus \(y\) is a unit or has a pole, and \(dx/M\)
+is regular. For the linear case the first cover
+has \(x,M\) of pole orders two and one. If the
+cubic term in \(y^2\) cancels, then
+\(\beta=-2\alpha,\ \gamma=-\alpha\); the next
+term is a nonzero multiple of \(xM\), of pole
+order three. Otherwise the pole order of \(y^2\)
+is six. In both cases the pole of \(y\) cancels
+the possible pole of \(dx/M\) after pullback.
+Hence the form is nonzero and regular.
+
+If \(\alpha\beta\ne0\) but \(\gamma=0\),
+the equation is
+\[
+               y^2=(x^3-s)/\beta+
+                        (\alpha+\beta)r/(\beta x),
+               \qquad \omega\ \propto\ dx/(x^2 y).
+\]
+For \(\alpha+\beta\ne0\) it is a double cover
+of genus two, with exactly one double pole of
+\(\omega\) at \(x=0\). This can be read off
+from \((xy)^2=x(x^4-sx+(\alpha+\beta)r)/\beta\).
+For \(\alpha+\beta=0\), the identity
+\[
+                d(y/x)=\frac{x^3/2+s}{\beta x^2y}\,dx
+\]
+reduces \(\omega\) modulo exact differentials
+to a nonzero scalar multiple of \(x\,dx/y\).
+The latter is nonzero in the cyclic-cover
+remainder on the squarefree cubic.
+
+If \(\alpha=0,\ \beta\ne0\), the equation is
+\[
+ y^2=r/x-(s-x^3)/\beta-\gamma(s-x^3)^2/(\beta^2x^3),
+                   \qquad \omega\ \propto\ dx/(x^2y).
+\]
+When \(\gamma=0\), the same genus-two analysis
+gives a unique double pole. For \(\gamma\ne0\),
+\(y^2\) has a pole of order three at zero.
+At infinity it grows as \(x^3\) or is a unit,
+with limiting value \(s/\beta\) in the latter
+case \(\gamma=\beta\). The form is regular at
+both points and at the generic simple zeros
+of \(y^2\). If \(\alpha=\beta=0,\gamma\ne0\),
+use the conic of the fourth family.
+Finally if \(\alpha\ne0,\beta=\gamma=0\), the
+tuple is in the third family with
+\(d=\alpha,e=\alpha^2\), already excluded.
+When all three parameters vanish the tuple is
+the uncorrected one. This concludes the reduction.

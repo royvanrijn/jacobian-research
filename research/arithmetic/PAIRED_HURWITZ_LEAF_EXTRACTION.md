@@ -11,8 +11,10 @@ broader class of external interactions. The cyclic tuples from the
 [unmarked reduction](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md)
 then satisfy an exact lower-degree recursion.
 
-Turning the arbitrary-input overlap gate into arbitrary-input
-leaf extraction and full connectivity remains open.
+The later [terminal-mass theorem](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-20-every-residual-pure-dt-orbit-admits-extraction)
+proves arbitrary-input extraction for odd degrees at least fifteen. Together
+with the retained base and absorption results it establishes residual pure-DT
+connectivity. The overlap gate alone does not give that conclusion.
 
 ## Lemma 1. Pure four-move extraction
 
@@ -397,20 +399,13 @@ tuple is in its orbit.
 The later [two-leaf absorption theorem](UNIFORM_TWO_LEAF_DT_ABSORPTION.md)
 controls every pair of distinct old attachment vertices over the canonical
 component. The [degree-thirteen polynomial census](DEGREE_FOURTEEN_HURWITZ_ORBIT.md)
-settles the next finite case, leaving the two polynomial connectivity
-questions first unresolved in degree fifteen.
-
-For the pure-DT extraction input, the
-[terminal-mass argument](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
+settles the next finite case. For the pure-DT extraction input,
+[Theorem 20](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-20-every-residual-pure-dt-orbit-admits-extraction)
 uses a minimum over an entire braid orbit, without monotonicity along
-intermediate braids. For \(N\ge15\),
-[Theorem 17 and Lemma 18](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-17-only-the-equality-singleton-family-can-remain)
-leave only singleton cuts \((1,t;2t)\), even \(t\), with
-\(N=3t+1\), \(m=(N-4)/3\), and antipodal middle roots. Extraction
-holds for \(N\not\equiv1\pmod6\). Terminal-middle factors meet the
-minimizer evenly, but middle-middle one-contacts and overlaps between
-complementary factors remain uncontrolled. The remaining singleton family
-and mixed connectivity are open.
+intermediate braids. Its fixed-projection contradiction excludes the last
+singleton family and proves extraction in every odd degree at least fifteen.
+The base and absorption theorem then give marked and unmarked pure-DT
+connectivity in every residual degree. Mixed connectivity remains open.
 
 The [checker](verify_paired_hurwitz_leaf_extraction.py) verifies the
 literal identity, its pure strand action, every recursive step in

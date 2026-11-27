@@ -476,23 +476,15 @@ absolute cardinality meets the removable locus. For any fixed \(0<c'<c\), an orb
 \(e^{-c'N}\) meets the locus for all sufficiently large \(N\),
 where \(c\) is the absolute exponent in the tree estimate.
 This includes every orbit of relative size at least \(r^{-C}\)
-for fixed \(C>0\). An all-orbit size lower bound of this kind
-remains open. The every-orbit
-obligation in the pure domain remains
-\(\texttt{GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE}\).
+for fixed \(C>0\). The separate structural
+[Theorem 20](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-20-every-residual-pure-dt-orbit-admits-extraction)
+now proves the every-orbit removable-factor assertion in the pure domain
+for odd \(N\ge15\), without an orbit-size hypothesis. Its fixed-projection
+argument excludes the last positive terminal-mass minimum. The
+degree-thirteen base and two-leaf absorption give pure-DT connectivity in
+all residual degrees. These conclusions add no new census or orbit-size
+bound and do not settle the marked mixed or even Laurent domain.
 [Marked subgroup and braid action](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md#the-spaces-and-the-exact-marked-subgroup)
-
-For the pure domain, a separate
-[orbit-minimum reduction](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
-gives necessary structure for an orbit missing that locus: its positive
-minimum terminal mass satisfies, for \(N\ge15\), \(m=(N-4)/3\),
-\(N=3t+1\) with even \(t\), and only singleton cuts \((1,t;2t)\).
-[Theorem 17 and Lemma 18](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-17-only-the-equality-singleton-family-can-remain)
-also give antipodal middle roots and the exact projected terminal tree.
-Extraction is proved for \(N\not\equiv1\pmod6\); exclusion of the
-remaining singleton family is still required for the every-orbit assertion.
-These are structural restrictions, with no new census or orbit-size bound. They are proved for pure DT trees; no corresponding
-restriction for the marked mixed or even Laurent domain is asserted here.
 
 ## The even alternating Laurent passport
 

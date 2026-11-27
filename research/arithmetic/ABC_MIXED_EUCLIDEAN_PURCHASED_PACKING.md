@@ -439,6 +439,23 @@ therefore gives the minimum moment in every dyadic shape.
 Degenerate cases with a trivial edge weight have already been
 removed.
 
+The full prime-level
+[AFM5 route](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#the-degree-nine-affine-route-back-to-the-abc-moments)
+provides a sufficient alternative counting target: the specified
+degree-nine scalar fields at exponent \(1/4+\varepsilon\),
+equivalently pairs of distinct cubic fields with one common
+fundamental discriminant at exponent \(1+\varepsilon\).
+The latter retain relative splitting above three over their
+quadratic mirror; the original quadratic field has no splitting
+restriction at two or three. Such a bound would give the full
+quadratic second moment, the unrestricted degree-36 count above,
+both signed and all-negative degree-54 counts, and the minimum
+moments through \(k=3\) in every dyadic shape. Thus it would
+supply the class-moment input for separation \(1/81\), with the
+same conditional record costs. This target is open. The exact
+valuation, retention and chart-cost extraction required for abc
+is still separate, even under this counting hypothesis.
+
 Current results for a symmetric group times an abelian group,
 or for the product-action wreath families, have different
 groups or permutation representations from these two counts.

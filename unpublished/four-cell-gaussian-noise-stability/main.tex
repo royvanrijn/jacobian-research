@@ -1,3 +1,809 @@
 \documentclass[11pt,reqno]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage[expansion=false]{microtype}
+\usepackage{xcolor}
+\usepackage{amssymb,mathtools}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\E}{\mathbb E}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\ip}[2]{\langle #1,#2\rangle}
+\newcommand{\norm}[1]{\lVert #1\rVert}
+\newcommand{\ga}{\gamma}
+\newcommand{\LL}{\mathcal L}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\DD}{\mathcal D}
+\newcommand{\VV}{\mathcal V}
+\newcommand{\RR}{\mathcal R}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\dist}{dist}
+\hypersetup{pdftitle={The tetrahedral partition maximizes Gaussian noise stability for small positive correlations},pdfauthor={Roy van Rijn}}
+\title[Tetrahedral Gaussian noise stability]{The tetrahedral partition maximizes Gaussian noise stability for small positive correlations}
+\author{Roy van Rijn}
+\subjclass[2020]{60G15, 49K21, 28A75}
+\keywords{Gaussian noise stability, tetrahedral partition, simplex conjecture, first moments, second variation}
+\date{}
 \begin{document}
+\begin{abstract}
+We prove that the regular tetrahedral partition maximizes Gaussian noise
+stability among all measurable four-cell partitions of equal Gaussian
+measure, for every sufficiently small positive correlation. The correlation
+interval is independent of the ambient dimension, and equality determines
+the tetrahedral partition up to orthogonal maps, labels and cylindrical
+extension. We use Zhang's equal-cell first-moment theorem and balanced
+covariance deficit identity to obtain quantitative moment alignment and a
+first-moment interface form whose only zero modes are rotations. The
+nonlinear argument normalizes transfers by their exact Ornstein--Uhlenbeck
+score regret. A weighted exterior estimate prevents the normalized
+transfers from escaping to infinity, and their limiting normal flux
+satisfies a sharp quadratic regret bound. The interaction converges to its
+first-moment part, giving a rotational-kernel contradiction. The threshold
+is qualitative; no conclusion for all positive correlations is asserted.
+\end{abstract}
+\maketitle
+
+\section{The result and the proof mechanism}
+
+Let $\ga_d$ denote standard Gaussian probability on $\R^d$, with density
+$\phi_d$. For $0<\rho<1$ put
+\[
+ T_\rho f(x)=\int f(\rho x+\sqrt{1-\rho^2}\,y)\,d\ga_d(y).
+\]
+An ordinary measurable partition $A=(A_1,\ldots,A_4)$ is \emph{balanced}
+if $\ga_d(A_i)=1/4$. Its noise stability is
+\[
+ S_\rho(A)=\sum_{i=1}^4\int 1_{A_i}T_\rho1_{A_i}\,d\ga_d.
+\]
+Choose vertices $v_1,\ldots,v_4$ of a regular tetrahedron centered at the
+origin in $\R^3$. The corresponding central partition is
+\[
+ T_i=\{x:v_i\cdot x\ge v_j\cdot x\text{ for every }j\}.
+\]
+In $\R^d$, $d\ge3$, the same notation denotes its cylindrical extension.
+Boundaries and all partition equalities below are understood modulo null sets.
+
+\begin{theorem}\label{thm:main}
+There exists $\rho_0>0$, independent of $d\ge3$, such that every balanced
+measurable four-cell partition of $\R^d$ satisfies
+\[
+ S_\rho(A)\le S_\rho(T)\qquad(0<\rho\le\rho_0).
+\]
+Equality holds precisely for orthogonal images and relabelings of the
+cylindrical central tetrahedral partition.
+\end{theorem}
+
+Embedding $\R$ or $\R^2$ into $\R^3$ gives the same upper bound in those
+dimensions, with strict inequality: an equality partition would have a
+rank-three moment matrix, whereas a partition extended from a smaller
+dimension does not.
+
+The Gaussian simplex problem is the continuous partition problem associated
+with Plurality is Stablest; we state the Gaussian conclusion explicitly.
+Heilman \cite{Heilman14} proved the three-cell small-correlation theorem
+in fixed dimension. Heilman and Tarter \cite{HT} proved that a maximizer
+with $k$ prescribed positive cell masses is cylindrical over $\R^{k-1}$
+when the ambient dimension is at least $k-1$. Their theorem makes the
+small-correlation three-cell conclusion dimension independent.
+For four cells, the missing first-moment endpoint was already isolated in
+\cite[Section~8, Conjecture~3]{Heilman14}.
+
+We use Zhang's equal-cell first-moment theorem and covariance deficit
+identity \cite{Zhang}. The exact imported statements are given in
+Section~\ref{sec:alignment}. We derive their quantitative consequences
+here; the metric estimate is not attributed to the cited preprint.
+The imported Gaussian geometric input behind that covariance identity is
+the multi-bubble perimeter theorem of Milman and Neeman
+\cite[Theorem~1.1]{MN}, applied to four cells in dimension three.
+
+The main difficulty is that a small Gaussian change of labels need not
+be a small smooth displacement of the original interfaces. It may introduce
+new components at arbitrarily large distances. The first Hermite deficit
+does not uniformly control the full noise-stability deficit; a precise
+example is given in Proposition~\ref{prop:obstruction}.
+
+Our normalization uses the \emph{actual} tetrahedral OU score regret.
+If $e_i=1_{A_i}-1_{T_i}$, quadratic expansion gives
+\begin{equation}\label{eq:comparison-intro}
+ S_\rho(A)-S_\rho(T)=\widetilde Q_\rho(e)-2\LL_\rho(A),
+\end{equation}
+where $\LL_\rho(A)$ is the nonnegative loss obtained by assigning the
+labels of $A$ to the fixed scores $T_\rho1_{T_i}$, and
+$\widetilde Q_\rho$ is the interaction with the constant Hermite part
+removed. The regret saturates in a remote cell interior, just as the
+bounded OU scores do. This makes it the appropriate scale for tail control.
+
+Near a facet, write $t\ge0$ for normal distance into its old cell and
+let $\ell$ be the common distance between adjacent cell moment vectors.
+The score loss is $\rho\ell t$ to first order. Transferring a one-sided
+normal strip of width $h$ therefore costs
+$\rho\ell h^2/2$ times Gaussian surface density. Its first variation
+as a measure is the surface flux of density $h$. This explains the factor
+$1/2$ in the limiting regret estimate and the interface quadratic form
+\[
+ Q(f)=\ell\norm{f}_{\HH}^2-\norm{\DD f}_F^2.
+\]
+Quantitative moment alignment implies that this form is nonnegative and
+has exactly the rotational kernel. The proof of the main theorem turns
+arbitrary measurable transfers into such fluxes without assuming a global
+interface graph.
+
+More precisely, if $\rho_m\downarrow0$ and $A^{(m)}$ were improving or
+tied nontetrahedral partitions, we would normalize their transfer measures
+by $s_m$, where $s_m^2=\LL_{\rho_m}(A^{(m)})/\rho_m$.
+A weighted exterior inequality makes these normalized measures tight,
+even when $s_m$ is smaller than every power of $\rho_m$.
+The limiting flux $f$ satisfies
+$\norm{\DD f}_F^2\ge2\ge\ell\norm{f}_{\HH}^2$.
+It must be rotational. Aligning the closest regular moment matrix removes
+that mode exactly and yields the contradiction.
+
+Measure-valued second-order conditions with curvature concentrated on a
+switching surface are an established method. Christof and Wachsmuth
+\cite[Theorems~4.4, 6.4 and~6.12 in version~2]{CW} develop such conditions
+for bang-bang problems. Their explicit scalar theorem assumes a bounded
+Lipschitz domain, a regular switching set and weak-star continuity of the
+quadratic term. Those hypotheses do not directly cover this unbounded
+Gaussian multicell problem or its rotational degeneracy. Sections
+\ref{sec:tails}--\ref{sec:compactness} prove the required weighted
+compactness and flux bounds directly.
+
+\section{First moments and quantitative alignment}\label{sec:alignment}
+
+Put $P=I-\one\one^T/4$, $E=\one^\perp\subset\R^4$ and
+\[
+ F=\frac{(\E\max_{i\le4}Z_i)^2}{3},\qquad Q_*=P/3,
+\]
+where the $Z_i$ are independent standard normal variables.
+For a partition define $b_i=\int_{A_i}x\,d\ga_d$ and let $B$ have
+rows $b_i$. Thus $W_1(A)=\norm{B}_F^2$ and $\sum_i b_i=0$.
+The regular moment matrices form the orthogonal orbit
+\[
+ \mathcal M_d=\{B_*:B_*B_*^T=FQ_*\}\qquad(d\ge3).
+\]
+Every member is the actual moment matrix of its regular winning partition.
+
+For centered positive semidefinite $Q$ define the balanced score value
+\[
+ \mathcal C(Q)=\inf_{\lambda\in\R^4}
+ \left\{\tfrac14\sum_i\lambda_i+
+ \E\max_i(Y_i-\lambda_i)\right\},\qquad Y\sim N(0,Q).
+\]
+
+\begin{proposition}[Zhang's first-moment and covariance results]\label{prop:zhang}
+For every balanced measurable partition, $W_1(A)\le F$.
+Equality is attained only by central regular tetrahedral partitions,
+extended cylindrically when $d\ge3$; below dimension three it is strict.
+For centered trace-one $Q\succeq0$, let $Q_t=Q_*+t(Q-Q_*)$.
+For $t<1$, its balanced affine winning cells have positive facet weights
+$w_{ij}(t)$, pair lengths $\ell_{ij}(t)$ and total interface perimeter
+$S(t)$. With $e,f$ denoting the six unordered label pairs,
+\begin{equation}\label{eq:cov-deficit}
+ F-\mathcal C(Q)^2
+ =\int_0^1\frac{D(t)}{t^2}\,dt,
+ \quad
+ D(t)=\frac23\left[
+ \sum_{e<f}w_e(t)w_f(t)(\ell_e(t)-\ell_f(t))^2
+ +S(t)^2-S_*^2\right],
+\end{equation}
+where $S_*=\sqrt{3F/2}$ and $S(t)\ge S_*$.
+\end{proposition}
+
+The first assertion is \cite[Theorem~1]{Zhang}; the covariance statement
+and its singular endpoint are \cite[Sections~2--4, equations~(13)--(14)]{Zhang}.
+Here perimeter is the sum of ordinary Gaussian interface areas, or half
+the sum of individual cell perimeters. The inequality $S(t)\ge S_*$
+uses \cite[Theorem~1.1]{MN} in ambient dimension three, within its range
+$4\le3+1$. Smooth balancing prices and the coarea formula for weights
+are supplied by \cite[Lemma~2]{Zhang}.
+
+\begin{proposition}\label{prop:alignment}
+There are finite constants $L,K$ such that the following holds for all
+$d\ge3$. If $\delta=F-W_1(A)$, one can choose a closest
+$B_*\in\mathcal M_d$ so that
+\begin{equation}\label{eq:alignment}
+ \norm{B-B_*}_F^2\le L\delta,
+ \qquad
+ \sum_i\ga_d(A_i\mathbin\triangle T_i)\le K\sqrt\delta,
+\end{equation}
+where $T$ is the winning partition of the scores $b_i^*\cdot x$.
+The same choice satisfies $B-B_*\perp T_{B_*}\mathcal M_d$.
+\end{proposition}
+
+\begin{proof}
+We first derive a covariance bound from \eqref{eq:cov-deficit}.
+For $0\le t\le1/2$, the eigenvalues of $Q_t$ on $E$ lie in $[1/6,1]$.
+Choose prices with $\sum_i\lambda_i=0$. Since
+$\mathcal C(Q_t)\le\E|Y|\le1$ and
+$\mathcal C(Q_t)\ge-\min_i\lambda_i$, all prices are at least $-1$
+and $\norm{\lambda}\le\sqrt{12}$.
+For a pair $i,j$, let $z_i=z_j=1/2$ and the other coordinates be $-1/2$.
+The radius-$1/4$ disk centered at $\lambda+z$ in
+$y_i-y_j=\lambda_i-\lambda_j$ lies in the top $ij$ facet.
+It stays in $|y|\le6$. The score-space Gaussian density on it is at least
+$(2\pi)^{-3/2}e^{-108}$.
+Coarea, whose score-difference gradient has norm $\sqrt2$, gives
+\[
+ w_{ij}(t)=\frac1{\sqrt2}\int_{\text{top }ij\text{ facet}}
+          \phi_{Q_t}(y)\,d\HH^2(y)\ge\alpha>0,
+ \quad
+ \alpha=\frac{\pi e^{-108}}{16\sqrt2(2\pi)^{3/2}}.
+\]
+
+Write $H=Q-Q_*$ and $d_{ij}=(e_i-e_j)^TH(e_i-e_j)$.
+Then $\ell_{ij}(t)^2=2/3+td_{ij}$, $\ell_{ij}(t)\le\sqrt2$,
+and $\sum_{i<j}d_{ij}=0$. If $D_H$ has off-diagonal entries $d_{ij}$
+and zero diagonal, $H=-PD_HP/2$. Consequently
+\[
+ \sum_{e<f}(d_e-d_f)^2=6\sum_e d_e^2\ge12\norm{H}_F^2,
+ \quad
+ (\ell_e(t)-\ell_f(t))^2\ge t^2(d_e-d_f)^2/8.
+\]
+Retaining $0<t<1/2$ in \eqref{eq:cov-deficit} proves
+\begin{equation}\label{eq:cov-coercivity}
+ F-\mathcal C(Q)^2\ge\beta\norm{Q-Q_*}_F^2,
+ \qquad \beta=\alpha^2/2.
+\end{equation}
+
+Put $W=\norm{B}_F^2$. If $W>0$, the original labels give a feasible
+balanced score assignment, so
+$W\le\mathcal C(BB^T)=\sqrt W\,\mathcal C(BB^T/W)$.
+It follows from \eqref{eq:cov-coercivity} that
+$\norm{BB^T/W-Q_*}_F^2\le\delta/\beta$.
+Choose the closest regular matrix by singular value decomposition.
+If its three singular values are all $a=\sqrt{F/3}$ and those of $B$
+are $s_j$, then
+\begin{align*}
+ \norm{B-B_*}_F^2
+ &=\sum_{j=1}^3(s_j-a)^2
+ \le\frac3F\norm{BB^T-FQ_*}_F^2\\
+ &=\frac3F\left[W^2\norm{BB^T/W-Q_*}_F^2+\delta^2/3\right]
+ \le(1+3F/\beta)\delta.
+\end{align*}
+The right singular vectors can be completed when $B$ has deficient rank.
+If $W=0$, every regular matrix has squared distance $F=\delta$.
+Thus one may take $L=1+3F/\beta$.
+
+The regret against these same regular scores is
+\begin{equation}\label{eq:linear-regret}
+ r=\int\bigl(\max_i b_i^*\cdot x-b_{I_A(x)}^*\cdot x\bigr)d\ga_d
+ =F-\ip{B_*}{B}_F
+ =\tfrac12\left(\delta+\norm{B-B_*}_F^2\right).
+\end{equation}
+The first equality to $F-\ip{B_*}{B}_F$ uses the fact that the regular
+winning cells have moment matrix $B_*$. Every pairwise score difference
+is a centered normal with standard deviation $\ell=\sqrt{2F/3}$.
+Hence the gap $g$ between the two largest scores satisfies
+$\ga_d(g\le u)\le Mu$, where $M=6\sqrt{3/(\pi F)}$.
+If $\eta=\ga_d(I_A\ne I_T)$, then
+$\eta\le Mu+r/u\le2\sqrt{Mr}$ after minimization.
+Since the total symmetric difference is $2\eta$, this proves
+\eqref{eq:alignment} with $K=4\sqrt{M(1+L)/2}$.
+Orthogonality follows by differentiating squared distance along the
+smooth regular moment orbit at its minimizing point.
+\end{proof}
+
+\section{The rotational kernel of the interface form}\label{sec:interface}
+
+In dimension three fix $T$ and $B_*$, and put
+$n_{ij}=(b_i^*-b_j^*)/\ell$ and $F_{ij}=T_i\cap T_j$.
+Write $d\nu_{ij}=\phi_3\,d\HH^2$ on each facet.
+Let $f_{ij}$ be the outward speed of $T_i$, so its velocity is
+$-f_{ij}n_{ij}$, and set $f_{ji}=-f_{ij}$.
+Define
+\[
+ \HH=\bigoplus_{i<j}L^2(F_{ij},\nu_{ij}),\qquad
+ \HH_0=\left\{f:\sum_{j\ne i}\int_{F_{ij}}f_{ij}\,d\nu_{ij}=0
+                       \text{ for every }i\right\}.
+\]
+The bounded finite-rank operator $\DD$ has rows
+$ (\DD f)_i=\sum_{j\ne i}\int_{F_{ij}}x f_{ij}\,d\nu_{ij}$.
+Its boundedness follows from the finite Gaussian facet second moments.
+For $\Omega^T=-\Omega$, let
+$f^\Omega_{ij}=-(\Omega x)\cdot n_{ij}$ and set
+\[
+ \RR=\{f^\Omega:\Omega^T=-\Omega\},\qquad
+ \VV=\{\text{matrices with rows }\Omega b_i^*:\Omega^T=-\Omega\}.
+\]
+
+\begin{lemma}\label{lem:interface}
+On $\HH_0$, the quadratic form
+\[
+ Q(f)=\ell\norm{f}_{\HH}^2-\norm{\DD f}_F^2
+\]
+is nonnegative and has kernel exactly the three-dimensional space $\RR$.
+Moreover there is $\kappa>0$ with
+$Q(f)\ge\kappa\dist_{\HH}(f,\RR)^2$.
+\end{lemma}
+
+\begin{proof}
+Start with smooth speeds compactly supported in facet interiors and
+satisfying the linear volume conditions. They admit exactly balanced
+deformations: correct the $O(t^2)$ volume errors of their initial motions
+with three fixed interior facet bumps whose cell pairs form a spanning
+tree. Their volume derivative has rank three, so the implicit function
+theorem supplies corrections with zero initial speed.
+
+Boundary differentiation gives $B'(0)=\DD f$ and
+\begin{equation}\label{eq:moment-variation}
+ -\tfrac12 W_1''(0)=\ell\norm{f}_{\HH}^2-\norm{\DD f}_F^2=Q(f).
+\end{equation}
+For the local term, the first-variation score difference is
+$(b_i^*-b_j^*)\cdot x=0$ on $F_{ij}$, and its derivative under velocity
+$-f_{ij}n_{ij}$ is $-\ell f_{ij}$. Acceleration terms are multiplied
+by the vanishing score. Differentiating the squared moments contributes
+$2\norm{\DD f}_F^2$, which proves \eqref{eq:moment-variation}.
+The first-moment bound in Proposition~\ref{prop:zhang} gives $Q\ge0$.
+
+For such a deformation,
+$B(t)=B_*+t\DD f+O(t^2)$ and $F-W_1(A(t))=t^2Q(f)+o(t^2)$.
+Proposition~\ref{prop:alignment} and the tangent-space limit of distance
+to the smooth moment orbit therefore give
+\begin{equation}\label{eq:tangent-alignment}
+ \dist_F(\DD f,\VV)^2\le LQ(f).
+\end{equation}
+The chosen speeds are dense in $\HH_0$: approximate on facet interiors,
+then remove the converging volume errors with the same three fixed bumps.
+Continuity extends nonnegativity and \eqref{eq:tangent-alignment} to
+all of $\HH_0$.
+
+Rotations preserve volumes and $W_1$, so $Q(f^\Omega)=0$ and
+$\DD f^\Omega$ has rows $\Omega b_i^*$. Their polynomial speeds are
+Gaussian integrable; truncation justifies the same boundary formulas.
+If $Q(f)=0$, \eqref{eq:tangent-alignment} gives $r\in\RR$ with
+$\DD r=\DD f$. A nonnegative quadratic form has zero polarization
+against its kernel. Thus $Q(f-r)=0$, while $\DD(f-r)=0$ implies
+$Q(f-r)=\ell\norm{f-r}^2$. Hence $f=r$.
+The moment vectors span $\R^3$, so the rotational space has dimension three.
+Finally $Q$ on $\HH_0$ is represented by $\ell I$ minus a finite-rank
+self-adjoint operator. On the complement of its kernel it has a positive
+gap: outside that finite-dimensional range its value is $\ell I$, and
+on the range the least positive eigenvalue is positive.
+\end{proof}
+
+\section{Exact OU regret and exterior control}\label{sec:tails}
+
+Put $\sigma=\sqrt{1-\rho^2}$ and
+$U_{\rho,ij}=T_\rho(1_{T_i}-1_{T_j})$.
+Let $H_{ij}=n_{ij}^\perp$. On this entire plane the same notation
+$\nu_{ij}$ denotes Gaussian surface measure. In coordinates
+$x=z+tn_{ij}$,
+\[
+ d\ga_3=\phi_1(t)\,dt\,d\ga_2(z),\qquad
+ d\nu_{ij}=\phi_0\,d\ga_2(z),\quad \phi_0=\phi_1(0).
+\]
+
+\begin{lemma}\label{lem:margin}
+There is $c_T>0$ such that, for all $x\in T_i$ and $0<\rho<1$,
+\begin{equation}\label{eq:saturated-margin}
+ c_T\min\{\rho n_{ij}\cdot x/\sigma,1\}
+ \le U_{\rho,ij}(x)
+ \le\min\{\sqrt{2/\pi}\,\rho n_{ij}\cdot x/\sigma,1\}.
+\end{equation}
+On every original facet,
+\begin{equation}\label{eq:facet-gradient}
+ \rho\ell/\sigma\le\partial_{n_{ij}}U_{\rho,ij}
+             \le(\rho/\sigma)\sqrt{2/\pi}.
+\end{equation}
+Also $U_{\rho,ij}=0$ on $H_{ij}$ and
+$\nabla U_{\rho,ij}/\rho\to b_i^*-b_j^*$ uniformly on compact sets.
+\end{lemma}
+
+\begin{proof}
+Reflection $G$ across $H_{ij}$ interchanges $T_i,T_j$. Cone scaling,
+with $m=\rho x/\sigma$ and $y_N=n_{ij}\cdot y$, gives
+\[
+ U_{\rho,ij}(x)=\int_{T_i}[\phi_3(y-m)-\phi_3(Gy-m)]dy,
+ \quad
+ \phi_3(Gy-m)/\phi_3(y-m)=e^{-2m_Ny_N}.
+\]
+For $m\in T_i$ the integrand is nonnegative. Enlarging to the positive
+halfspace gives the upper bound $2\Phi(m_N)-1$.
+Choose a fixed ball $D$ in $T_i$ with $z_N\ge a>0$ on it and
+$\ga_3(D)=p>0$. Since $m+D\subset T_i$, restricting the integral
+there gives $p(1-e^{-2am_N})\ge c_T\min\{m_N,1\}$.
+Symmetry makes the constant common to the six pairs.
+
+If $x\in F_{ij}$, then $m_N=0$ and differentiation gives
+\[
+ \partial_{n_{ij}}U_{\rho,ij}(x)
+ =\frac{2\rho}{\sigma}\int_{T_i-m}z_N\phi_3(z)dz
+ \ge\frac{2\rho}{\sigma}\int_{T_i}z_N\phi_3(z)dz
+ =\frac{\rho\ell}{\sigma}.
+\]
+Here $T_i\subset T_i-m$, and the extra integrand is nonnegative.
+Differentiation of the original Gaussian convolution bounds the derivative
+above by $(\rho/\sigma)\E|Z_N|$.
+Reflection makes $U_{\rho,ij}$ vanish on the pair plane.
+Finally the Mehler kernel relative to $\ga_3\otimes\ga_3$ is
+\begin{equation}\label{eq:mehler}
+ M_\rho(x,y)=(1-\rho^2)^{-3/2}
+ \exp\left(\frac{2\rho x\cdot y-\rho^2(|x|^2+|y|^2)}{2(1-\rho^2)}\right).
+\end{equation}
+Its value and first correlation derivative at zero are $1$ and $x\cdot y$.
+Spatial derivatives on compact sets are Gaussian dominated. Taylor
+expansion proves the asserted local gradient convergence.
+\end{proof}
+
+For a partition $A$, set $h_{ij}=1_{T_i\cap A_j}$ for $i\ne j$ and
+$e_i=1_{A_i}-1_{T_i}=\sum_{j\ne i}(h_{ji}-h_{ij})$.
+Its tetrahedral OU regret is
+\[
+ \LL_\rho(A)=\sum_{i\ne j}\int U_{\rho,ij}h_{ij}\,d\ga_3.
+\]
+Every ordered transfer has $t=n_{ij}\cdot x\ge0$, and
+\begin{equation}\label{eq:regret-cost}
+ \LL_\rho(A)\ge c_T\rho
+ \sum_{i\ne j}\int\min\{n_{ij}\cdot x,1\}h_{ij}\,d\ga_3
+ \qquad(0<\rho\le1/16).
+\end{equation}
+Indeed $\min\{\rho t/\sigma,1\}\ge\rho\min\{t,1\}$.
+The following estimates do not require $A$ to be balanced.
+
+\begin{lemma}\label{lem:weighted}
+Let $w(x)=(1+|x|^2)e^{|x|^2/16}$. For every unit $n$ and every
+measurable $0\le h\le1$ supported in $\{t=n\cdot x\ge0\}$,
+\begin{equation}\label{eq:weighted-tail}
+ \left(\int_{|x|>R}wh\,d\ga_3\right)^2
+ \le\beta(R)\int\min\{t,1\}h\,d\ga_3\qquad(R\ge2),
+\end{equation}
+where $\beta(R)\to0$ independently of $n,h$.
+One can bound it by $C(1+R^6)e^{-3(R^2-1)/8}$.
+There is a finite constant for the same estimate without the tail restriction.
+\end{lemma}
+
+\begin{proof}
+On $t\ge1$, Cauchy--Schwarz bounds the square of the weighted mass by
+$\int_{|x|>R}w^2d\ga_3$ times its mass, which is its cost.
+On $0\le t<1$, write $x=z+tn$.
+Then $|z|>\sqrt{R^2-1}$ in the tail, and
+$w(z+tn)\le2e^{1/16}(1+|z|^2)e^{|z|^2/16}$.
+For $m(z)=\int_0^1h(z+tn)\phi_1(t)dt$, the density bound
+$h\phi_1\le\phi_0$ implies
+\begin{equation}\label{eq:bathtub}
+ m(z)^2\le2\phi_0\int_0^1t h(z+tn)\phi_1(t)dt.
+\end{equation}
+In fact every density $v\le\phi_0$ on the positive halfline of mass $m$
+satisfies
+$\int t v(t)dt\ge\int_0^{m/\phi_0}(m-\phi_0s)ds=m^2/(2\phi_0)$.
+Apply Cauchy--Schwarz in $z$. Its other factor is the tail integral of
+$(1+|z|^2)^2e^{|z|^2/8}$ against $\ga_2$.
+These two radial Gaussian tails tend to zero and have the stated upper
+bound. Adding the normal ranges changes only a constant.
+The same integrals without tail restrictions give the global estimate.
+\end{proof}
+
+\begin{lemma}\label{lem:kernel}
+For $0<\rho\le1/16$, the normalized kernel
+$L_\rho=(M_\rho-1)/\rho$ satisfies
+\begin{equation}\label{eq:kernel-weight}
+ |L_\rho(x,y)|\le Cw(x)w(y).
+\end{equation}
+It converges to $x\cdot y$ uniformly on every compact product.
+\end{lemma}
+
+\begin{proof}
+Write $L_\rho=\int_0^1\partial_rM_r|_{r=s\rho}ds$.
+The derivative is a quadratic polynomial in $x,y$ with uniformly bounded
+coefficients times $M_r$. Formula~\eqref{eq:mehler} gives
+$M_r\le C\exp[(|x|^2+|y|^2)/34]$ for $0\le r\le1/16$.
+Since $1+|x|^2+|y|^2\le(1+|x|^2)(1+|y|^2)$, this proves
+\eqref{eq:kernel-weight}. Taylor expansion on compact sets gives the limit.
+\end{proof}
+
+Write $\Pi_0v=\int v\,d\ga_3$ and define
+\[
+ \widetilde Q_\rho(v)=\sum_i\ip{v_i}{(T_\rho-\Pi_0)v_i}_{L^2(\ga_3)}.
+\]
+This form is positive semidefinite because its Hermite eigenvalues are
+$0,\rho,\rho^2,\ldots$. If $A$ is balanced, exact expansion gives
+\begin{equation}\label{eq:comparison}
+ S_\rho(A)-S_\rho(T)=\widetilde Q_\rho(e)-2\LL_\rho(A).
+\end{equation}
+For cut-off pieces the removal of constants is essential: their individual
+cell masses need not vanish.
+
+\begin{corollary}\label{cor:exterior}
+Let $e^{\rm out}=e1_{\{|x|>R\}}$ and $e^{\rm in}=e-e^{\rm out}$;
+let $\LL_\rho^{\rm out},\LL_\rho^{\rm in}$ be the corresponding
+regret integrals. Uniformly over partitions and $0<\rho\le1/16$,
+\begin{align}
+ \left(\sum_i\int_{|x|>R}w|e_i|d\ga_3\right)^2
+ &\le C\beta(R)\LL_\rho(A)/\rho,\label{eq:tv-tail}\\
+ 0\le\widetilde Q_\rho(e^{\rm out})
+ &\le\varepsilon(R)\LL_\rho^{\rm out},
+ \quad\varepsilon(R)\to0.\label{eq:exterior-energy}
+\end{align}
+There is also a global constant $C_0$ with
+$\widetilde Q_\rho(e^{\rm in})\le C_0\LL_\rho^{\rm in}$.
+For every $a>0$,
+\begin{equation}\label{eq:cross}
+ \widetilde Q_\rho(e)\le\widetilde Q_\rho(e^{\rm in})
+ +a\LL_\rho^{\rm in}
+ +\varepsilon(R)(1+C_0/a)\LL_\rho^{\rm out}.
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Apply Lemma~\ref{lem:weighted} to the twelve ordered transfers and use
+\eqref{eq:regret-cost}. The kernel bound gives
+\[
+ \widetilde Q_\rho(v)/\rho
+ \le C\left(\sum_i\int w|v_i|d\ga_3\right)^2.
+\]
+For \eqref{eq:exterior-energy}, apply the weighted estimate to the
+transfers already restricted to $|x|>R$. Its global version gives the
+bound on the interior piece. Positivity controls the mixed term by
+$2\sqrt{C_0\varepsilon(R)\LL_\rho^{\rm in}\LL_\rho^{\rm out}}$.
+Young's inequality proves \eqref{eq:cross}.
+\end{proof}
+
+\section{Normal-flux compactness}\label{sec:compactness}
+
+The next proposition is the nonlinear step. It makes no interface-graph
+assumption on the partitions.
+
+\begin{proposition}\label{prop:compactness}
+Suppose $\rho_m\downarrow0$ and $A^{(m)}$ are balanced partitions of
+$\R^3$ with $\ga_3(I_{A^{(m)}}\ne I_T)\to0$. Put
+$s_m^2=\LL_{\rho_m}(A^{(m)})/\rho_m$, and suppose $s_m>0$ and
+$s_m\to0$. After a subsequence there is $f\in\HH_0$ such that
+\begin{align}
+ 1&\ge\frac\ell2\norm{f}_{\HH}^2,\label{eq:flux-liminf}\\
+ \frac{\widetilde Q_{\rho_m}(e^{(m)})}{\rho_ms_m^2}
+ &\longrightarrow\norm{\DD f}_F^2.\label{eq:interaction-limit}
+\end{align}
+If $B_m-B_*\perp\VV$ for all $m$, then $\DD f\perp\VV$.
+\end{proposition}
+
+\begin{proof}
+Normalize the signed transfer measures by
+$\mu_{m,i}=e_i^{(m)}\ga_3/s_m$.
+The global version of \eqref{eq:tv-tail} bounds their weighted total
+variations. Its exterior version gives
+\begin{equation}\label{eq:normalized-tightness}
+ \sup_m\sum_i\int_{|x|>R}w\,d|\mu_{m,i}|
+ \le C\sqrt{\beta(R)}\longrightarrow0.
+\end{equation}
+
+\smallskip\noindent\emph{Ordered fluxes.}
+For every ordered pair define a nonnegative density on its whole plane by
+\begin{equation}\label{eq:theta}
+ \theta_{m,ij}(z)=\frac1{s_m\phi_0}
+ \int_0^\infty h_{ij}^{(m)}(z+tn_{ij})\phi_1(t)dt.
+\end{equation}
+These twelve densities are uniformly bounded in $L^2(\nu_{ij})$.
+Indeed split the normal mass at $t=1$.
+Equation~\eqref{eq:bathtub} controls the square of the first part.
+The square of the second is bounded by a fixed constant times that mass.
+Thus
+\[
+ \left(\int_0^\infty h\phi_1dt\right)^2
+ \le C\int_0^\infty\min\{t,1\}h\phi_1dt,
+\]
+and \eqref{eq:regret-cost} gives the claim after division by $s_m^2$.
+Choose simultaneous weak $L^2$ limits $\theta_{ij}\ge0$.
+
+For every fixed $b>0$, \eqref{eq:regret-cost} implies
+\begin{equation}\label{eq:far-normal}
+ s_m^{-1}\int_{t\ge b}h_{ij}^{(m)}d\ga_3\le C_bs_m\to0.
+\end{equation}
+For a compact continuous test function $\psi$, replacing $\psi(z+tn)$
+by $\psi(z)$ in the ordered transfer integral has vanishing error.
+On $t<b$ use uniform continuity and bounded normalized mass; on $t\ge b$
+use \eqref{eq:far-normal}. Let $m\to\infty$ and then $b\downarrow0$.
+The ordered transfer measures therefore converge to $\theta_{ij}\nu_{ij}$.
+This density is supported on $F_{ij}$. A compact subset of
+$H_{ij}\setminus F_{ij}$ has positive distance from the closed cone
+$T_i$, so reaching $T_i$ requires a fixed positive normal distance;
+its normalized mass vanishes by \eqref{eq:far-normal}.
+No limiting mass lies on a triple ray or the fourfold point, since these
+have plane measure zero and the limits have $L^2$ densities.
+
+Set $f_{ij}=\theta_{ji}-\theta_{ij}$ for $i<j$ and extend antisymmetrically.
+Then, against compact continuous test functions,
+\begin{equation}\label{eq:measure-limit}
+ \mu_{m,i}\rightharpoonup
+ \mu_i:=\sum_{j\ne i} f_{ij}\nu_{ij}|_{F_{ij}}.
+\end{equation}
+Equation~\eqref{eq:normalized-tightness} passes total masses and first
+moments. Exact balance gives $f\in\HH_0$; the moment orthogonality,
+when imposed, gives $\DD f\perp\VV$.
+
+\smallskip\noindent\emph{The regret lower bound.}
+Fix a compact tangential cutoff $0\le\chi\le1$ and $0<b<1$.
+On the resulting compact cylinder, Lemma~\ref{lem:margin} and its
+vanishing on the pair plane give the multiplicative estimate
+\[
+ U_{\rho_m,ij}(z+tn_{ij})
+ \ge\rho_m(\ell-o(1))t\qquad(0\le t\le b).
+\]
+This estimate remains valid when the transferred thickness is much
+smaller than $\rho_m$: there is no additive error at the pair plane.
+Discard the nonnegative regret outside these cylinders.
+For $m_{m,ij}^b(z)=\int_0^b h_{ij}^{(m)}(z+tn)\phi_1(t)dt$,
+\eqref{eq:bathtub} bounds its first moment below by
+$(m_{m,ij}^b)^2/(2\phi_0)$.
+Divide by $\rho_ms_m^2=\LL_{\rho_m}(A^{(m)})$.
+The truncated densities $m_{m,ij}^b/(s_m\phi_0)$ have the same weak
+$L^2$ limits as \eqref{eq:theta}. Their difference tends to zero in
+$L^1$ by \eqref{eq:far-normal}, and is bounded in $L^2$; approximation
+of an $L^2$ test by bounded tests proves the assertion.
+Weak lower semicontinuity and exhaustion of the planes by cutoffs give
+\begin{equation}\label{eq:ordered-liminf}
+ 1\ge\frac\ell2\sum_{i\ne j}\norm{\theta_{ij}}_{L^2(\nu_{ij})}^2
+ \ge\frac\ell2\norm{f}_{\HH}^2.
+\end{equation}
+The last inequality uses nonnegativity:
+$(\theta_{ji}-\theta_{ij})^2\le\theta_{ij}^2+\theta_{ji}^2$.
+The conversion $d\nu_{ij}=\phi_0d\ga_2$ supplies exactly the factor
+in \eqref{eq:ordered-liminf}.
+
+\smallskip\noindent\emph{The interaction limit.}
+The left side of \eqref{eq:interaction-limit} is
+\[
+ \sum_i\iint L_{\rho_m}(x,y)d\mu_{m,i}(x)d\mu_{m,i}(y).
+\]
+On a compact product, $L_{\rho_m}\to x\cdot y$ uniformly.
+By \eqref{eq:kernel-weight}, the part with either variable outside a
+ball is at most a fixed constant times the weighted tail variation in
+\eqref{eq:normalized-tightness} times the bounded global variation.
+It tends to zero uniformly as the ball grows.
+First moments converge in \eqref{eq:measure-limit} by the same weighted
+tightness, since $|x|\le w(x)$. The remaining product integral therefore
+converges to $\sum_i|\int x\,d\mu_i|^2=\norm{\DD f}_F^2$.
+This proves \eqref{eq:interaction-limit}.
+\end{proof}
+
+\section{Rigidity and the dimension-independent interval}
+
+\begin{theorem}\label{thm:rigidity}
+There exists $\rho_0>0$ such that, for $0<\rho\le\rho_0$, every
+balanced measurable partition $A$ of $\R^3$ with
+$S_\rho(A)\ge S_\rho(T)$ belongs to the tetrahedral orbit.
+\end{theorem}
+
+\begin{proof}
+Otherwise choose $\rho_m\downarrow0$ and nontetrahedral balanced
+$A^{(m)}$ with $S_{\rho_m}(A^{(m)})\ge S_{\rho_m}(T)$.
+The Hermite expansion and Parseval give
+\[
+ S_\rho(A)=\tfrac14+\rho W_1(A)+R_\rho(A),\qquad
+ 0\le R_\rho(A)\le3\rho^2/4.
+\]
+Thus $0\le\delta_m=F-W_1(A^{(m)})\le3\rho_m/4$.
+Choose the closest regular moment matrix and rotate it to the fixed $B_*$.
+Proposition~\ref{prop:alignment} gives simultaneously
+\begin{equation}\label{eq:gauge}
+ \ga_3(I_{A^{(m)}}\ne I_T)\to0,\qquad B_m-B_*\perp\VV.
+\end{equation}
+These orthogonal maps and any label changes preserve the objective and balance.
+
+Let $s_m^2=\LL_{\rho_m}(A^{(m)})/\rho_m$.
+The saturated margin makes $s_m>0$, since after alignment the partition
+is still not $T$. Exact comparison \eqref{eq:comparison} and the kernel
+bound give
+\begin{equation}\label{eq:scale}
+ s_m^2\le\frac{\widetilde Q_{\rho_m}(e^{(m)})}{2\rho_m}
+ \le C\left(\sum_i\int w|e_i^{(m)}|d\ga_3\right)^2\longrightarrow0.
+\end{equation}
+The last limit follows from \eqref{eq:gauge}, $|e_i^{(m)}|\le1$
+and $w\in L^1(\ga_3)$.
+
+Apply Proposition~\ref{prop:compactness}. Its flux satisfies
+\[
+ \norm{\DD f}_F^2\ge2\ge\ell\norm{f}_{\HH}^2,
+ \qquad f\in\HH_0,\quad\DD f\perp\VV.
+\]
+The first inequality follows from \eqref{eq:comparison}, since its
+normalized interaction is at least $2$ for every $m$.
+Lemma~\ref{lem:interface} now gives $Q(f)=0$ and $f\in\RR$.
+For such a flux $\DD f\in\VV$; orthogonality forces $\DD f=0$,
+contradicting $\norm{\DD f}_F^2\ge2$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+At each fixed $0<\rho<1$, a maximizer exists by
+\cite[Lemma~2.3]{HT}. In dimension $d\ge3$, every four-cell maximizer
+is cylindrical over $\R^3$, after an orthogonal map, by
+\cite[Theorem~1.9]{HT}. Its reduced partition has the same stability
+and masses. For $\rho$ in the interval of Theorem~\ref{thm:rigidity},
+that reduced maximizer must be tetrahedral. Hence no improving partition
+exists in any $d\ge3$. Every equality partition is itself a maximizer,
+so the same reduction proves the equality classification.
+\end{proof}
+
+\section{Scope and the first-moment deficit}
+
+The argument proves existence of an interval and supplies no numerical
+value of $\rho_0$. Its compactness step uses $\rho\downarrow0$ and
+does not classify maximizers throughout $0<\rho<1$.
+The uniformity concerns all measurable balanced partitions, including
+arbitrarily small remote transfers. It does not yield a noise-stability
+deficit proportional to their first-moment deficit.
+
+\begin{proposition}\label{prop:obstruction}
+At any fixed $0<\rho<1$, there is no $c(\rho)>0$ such that
+\[
+ S_\rho(T)-S_\rho(A)\ge c(\rho)\rho\,[F-W_1(A)]
+\]
+for all balanced four-cell partitions with positive first-moment deficit,
+even in arbitrarily small Gaussian-measure neighborhoods of $T$ in $\R^3$.
+\end{proposition}
+
+\begin{proof}
+Use the vertices $(1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1)$.
+By symmetry $b_i^*=c s_i$ with $c>0$.
+Set $U=x_1$, $N=(x_2+x_3)/\sqrt2$, $V=(x_2-x_3)/\sqrt2$.
+Reflection $G:N\mapsto-N$ interchanges $T_1,T_2$.
+For large $R$, the box
+\[
+ E_R=\{-R-1<U<-R,\ -4R-1<N<-4R,\ |V|<1\}
+\]
+lies in $T_2$: its conditions are $N<0$ and
+$U>(N+|V|)/\sqrt2$. Exchange $E_R$ and $GE_R$ between these cells,
+leaving the others unchanged. Their common mass $p_R$ makes this balanced,
+and the changed-label mass $2p_R$ tends to zero.
+Let $a_R=-\int_{E_R}N\,d\ga_3>4Rp_R$.
+The moment changes are $-2a_R n$ and $2a_R n$, where $n$ is the $N$ axis.
+Since $b_1^*-b_2^*=2\sqrt2c n$,
+\[
+ F-W_1(A_R)=8\sqrt2c a_R-8a_R^2
+ \ge4\sqrt2c a_R>16\sqrt2c Rp_R
+\]
+for large $R$, as $a_R\to0$.
+Changing labels on mass $2p_R$ changes agreement only when at least one
+member of the correlated pair lies there. Thus
+$|S_\rho(T)-S_\rho(A_R)|\le4p_R$.
+The ratio to $\rho[F-W_1(A_R)]$ tends to zero, proving the assertion.
+\end{proof}
+
+The regret in Section~\ref{sec:tails} uses bounded OU score differences,
+so it saturates on such remote interiors. The weighted estimate and the
+normalization \eqref{eq:scale} keep their cost in the compactness argument
+without replacing it by an unbounded linear-score loss.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{CW}
+C.~Christof and G.~Wachsmuth,
+\emph{No-gap second-order conditions via a directional curvature functional},
+SIAM J. Optim. \textbf{28} (2018), 2097--2130.
+\href{https://doi.org/10.1137/17M1140418}{doi:10.1137/17M1140418}.
+Theorem numbering refers to \href{https://arxiv.org/abs/1707.07579v2}{arXiv:1707.07579v2}.
+
+\bibitem{Heilman14}
+S.~Heilman, \emph{Euclidean partitions optimizing noise stability},
+Electron. J. Probab. \textbf{19} (2014), no.~71, 1--37.
+\href{https://arxiv.org/abs/1211.7138v2}{arXiv:1211.7138v2}.
+
+\bibitem{HT}
+S.~Heilman and A.~Tarter,
+\emph{Three candidate plurality is stablest for small correlations},
+Forum Math. Sigma \textbf{9} (2021), e65.
+\href{https://doi.org/10.1017/fms.2021.56}{doi:10.1017/fms.2021.56}.
+
+\bibitem{MN}
+E.~Milman and J.~Neeman,
+\emph{The Gaussian double-bubble and multi-bubble conjectures},
+Ann. of Math. (2) \textbf{195} (2022), 89--206.
+\href{https://doi.org/10.4007/annals.2022.195.1.2}{doi:10.4007/annals.2022.195.1.2}.
+
+\bibitem{Zhang}
+Y.~Zhang (mxym/math research project),
+\emph{Equal Gaussian cells: the sharp simplex first-moment theorem},
+preprint, 8 October 2026.
+Immutable release \texttt{gaussian-balanced-simplex-all-k-v1},
+commit \texttt{ebfd90558439afca21babeb7b77c8d8837ea745f}.
+\url{https://github.com/mxym/math/releases/tag/gaussian-balanced-simplex-all-k-v1}.
+\end{thebibliography}
 \end{document}

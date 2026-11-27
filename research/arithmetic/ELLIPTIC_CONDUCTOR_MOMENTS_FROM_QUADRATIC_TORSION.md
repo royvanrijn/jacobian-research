@@ -14,6 +14,40 @@ Every quadratic field has a unique signed squarefree radicand \(d\ne1\). Its fun
 \]
 More generally, for each fixed \(k\ge1\), the exponent supplied by the same argument is \(\max(1+3(k-1)/14,\,1+(1597/5000)(k-2))\). These are proof consequences of the retained prime-path argument. The source review and publication status of that argument are inherited only as dependencies. In particular, fixed moments supply bounds on the number of unusually large conductors by Markov's inequality. The Brumer–Silverman pointwise conjecture \(E(q)\ll_\varepsilon q^\varepsilon\) remains open.
 
+## AFM5 and the linear conductor moment target
+
+Suppose, for a fixed \(1/4\le\beta\le17/56\), that the
+specified degree-nine fields of
+[AFM5](TWO_PRIME_MIRROR_INTERMEDIATE_FIELDS.md#the-full-prime-level-second-moment)
+satisfy \(N_3(Y)\ll_\varepsilon Y^{\beta+\varepsilon}\)
+for every \(\varepsilon>0\), on either original quadratic sign.
+The [affine counting transfer](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md#the-degree-nine-affine-route-back-to-the-abc-moments)
+gives the quadratic second moment with exponent \(4\beta\).
+Scholz reflection gives both signs, and the discriminant
+conversion above gives the full field-discriminant moment.
+Apply the same Pierce–Turnage-Butterbaugh–Wood Theorem 1.12 with
+\(k=2\) and \(\Theta_2=4\beta\ge1\). It yields
+\[
+       \sum_{q\le Q} E(q)^{2\gamma}
+                    \ll_\varepsilon Q^{4\beta+\varepsilon}.
+\]
+The proof also covers the larger number of isomorphism classes,
+as above. At the retained exponent \(\beta=17/56\) this
+recovers \(17/14\); at the open sharp target \(\beta=1/4\)
+it would give the linear bound \(Q^{1+\varepsilon}\).
+This is a one-way consequence: no converse from conductor
+moments to AFM5 is asserted. Markov's inequality also gives
+\[
+ \#\{q\le Q:E(q)\ge T\}
+       \ll_\varepsilon Q^{4\beta+\varepsilon}T^{-2\gamma}
+       \qquad(Q\ge2,\ T\ge1).
+\]
+The sharp counting hypothesis remains open; it does not make
+the pointwise Brumer–Silverman conjecture a proved consequence.
+The fourth quadratic moment, and hence the \(4\gamma\)-th
+conductor moment, is a different input from this second-moment
+transfer.
+
 ## Comparison at the same moments
 
 Corollary 1.13 of the transfer paper gives \(23/18\) at \(2\gamma\) and \(11/6\) at \(4\gamma\), using [Heath-Brown–Pierce, Corollary 1.4](https://arxiv.org/pdf/1409.3177v2). The decreases from those two exponents are \(4/63\) and \(4/21\), respectively.

@@ -6,10 +6,10 @@ The double-transposition case has a uniform explicit generating tuple
 and a literal braid stabilizer that cycles every finite branch label.
 The case with one 3-cycle has a distinguished branch type already.
 
-This reduces the remaining uniform connectivity problem for the
-original even-degree passport to two unmarked polynomial-cactus
-connectivity problems. It does not establish either remaining
-connectivity assertion.
+This reduces the uniform connectivity problem for the original even-degree
+passport to two unmarked polynomial-cactus connectivity problems. The later
+terminal-mass theorem resolves the pure-DT branch; the mixed branch remains
+open. The stabilizer arguments here supply marking removal.
 
 ## The spaces and the exact marked subgroup
 
@@ -252,17 +252,14 @@ established. The [complete degree-thirteen polynomial census](DEGREE_FOURTEEN_HU
 settles degree fourteen. The remaining original sequence starts at degree
 sixteen, with polynomial degree fifteen and r=7.
 
-For the pure space X_D, the
-[orbit-minimum criterion](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
-replaces a monotone extraction algorithm by exclusion of every positive
-global terminal-mass minimum. For \(N\ge15\),
-[Theorem 17 and Lemma 18](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-17-only-the-equality-singleton-family-can-remain)
-leave only singleton cuts \((1,t;2t)\), even \(t\), with
-\(N=3t+1\) and \(m=(N-4)/3\). The middle roots are antipodal
-and terminal-middle edges project to the terminal tree. Extraction follows
-for \(N\not\equiv1\pmod6\). Excluding the remaining singleton family
-under full alternating monodromy remains open, as does the separate X_T
-assertion; all-degree X_D transitivity is not yet established.
+For the pure space X_D,
+[Theorem 20](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-20-every-residual-pure-dt-orbit-admits-extraction)
+excludes every positive global terminal-mass minimum for \(N\ge15\):
+complementary braid stability is incompatible with the fixed projection in
+the last singleton family. Every pure-DT orbit contains a removable factor.
+The degree-thirteen base and two-leaf absorption give unmarked X_D
+transitivity for every residual degree; Theorem 4 then gives the exact marked
+assertion. The separate X_T assertion remains open.
 
 ## Exact evidence and scope
 
@@ -276,8 +273,9 @@ controls for Lemma3. These supplement the symbolic all-degree proof.
 The subgroup equality in Lemma1 is proved by the configuration-space
 argument, rather than inferred from finite permutation tests.
 No complete census in polynomial degree thirteen or higher is
-claimed. No rational-point theorem or uniform unmarked connectivity
-theorem follows from these stabilizers.
+claimed. No rational-point theorem follows from these stabilizers. Pure-DT
+connectivity additionally uses the later extraction theorem and the retained
+base and absorption results.
 
 The [source ledger](unmarked_polynomial_hurwitz_reduction_source_ledger.json)
 pins the existing proof inputs and the new exact evidence. No

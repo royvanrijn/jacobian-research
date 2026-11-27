@@ -263,16 +263,14 @@ higher-degree orbit distinction. In the previously classified
 higher cases, an input with only symmetric deletions can still
 lie in the orbit of (2).
 
-For the residual range \(N=2r+1\ge15\), the equivalent removable-factor
-route is now organized by
-[global terminal-mass minima](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent).
-[Theorem 17 and Lemma 18](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-17-only-the-equality-singleton-family-can-remain)
-leave only singleton cuts \((1,t;2t)\), even \(t\), with
-\(N=3t+1\), \(m=(N-4)/3\), antipodal middle roots and the exact
-projected terminal tree. Extraction is proved for \(N\not\equiv1\pmod6\);
-the remaining singleton family leaves a full-alternating compatibility problem. In particular
-a singleton terminal in such a cut is a leaf, but does not imply an
-imprimitive deletion or membership in the normal-form locus.
+For the residual range \(N=2r+1\ge15\),
+[Theorem 20 of the terminal-mass note](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-20-every-residual-pure-dt-orbit-admits-extraction)
+proves removable-factor extraction in every orbit. The complete
+degree-thirteen base and two-leaf absorption then put every such orbit in
+the canonical component. In particular each orbit meets the imprimitive
+deletion locus classified here; this is an orbit-level conclusion and does
+not assert that an initial leaf deletion is already imprimitive. Mixed
+polynomial connectivity remains separate.
 
 ## Exact verification
 

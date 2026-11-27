@@ -549,7 +549,7 @@ def main():
         "support_code_interface_controls": code_interface,
         "terminal_comparison_and_noncrossing_controls": terminal_comparison,
         "saturated_singleton_controls": saturated_singleton,
-        "scope": "Exact controls of complementary twists, phase alignment, pair re-minimization and the tree support-code criterion, augmented by exact terminal-bridge mass comparisons and disjoint-edge noncrossing on the retained degree-seven domain and bounded saturated order-two covers. The written Theorem 17 excludes equal-terminal minima for N>=15 and gives extraction for N not congruent to 1 modulo 6; Lemma 18 forces antipodal middle roots in the remaining singleton family. No higher-degree census or exclusion of that remaining family.",
+        "scope": "Exact controls of complementary twists, phase alignment, pair re-minimization and the tree support-code criterion, augmented by exact terminal-bridge mass comparisons and disjoint-edge noncrossing on the retained degree-seven domain and bounded saturated order-two covers. The written Theorem 17 excludes equal-terminal minima for N>=15 and gives extraction for N not congruent to 1 modulo 6; Lemma 18 forces antipodal middle roots in the remaining singleton family. These bounded controls do not themselves prove the separate fixed-projection exclusion in Lemma 19 and Theorem 20; no higher-degree census.",
         "independent_replay": False, "formal_verification": False, "external_review": False,
     }
     args.output.write_text(json.dumps(receipt, indent=2) + "\n")

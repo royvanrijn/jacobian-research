@@ -566,14 +566,12 @@ gathering states also have \(\mu=m\). The seven-component owner data
 must be computed **after** this gathering: its other external cuts
 need not agree with those of the original separated triple.
 
-The principal open objective is therefore to show that **every
-hypothetical positive global orbit minimum in the full-alternating
-residual domain has a minimizing representative and a three-factor
-window violating (18)**, or to find another contradiction to a
-positive minimum. That would prove extraction directly by (17),
-without a globally nonincreasing extraction algorithm. It is a
-sufficient three-factor strategy; no equivalence with this restricted
-local strategy is asserted.
+One sufficient local strategy would show that every hypothetical positive
+global orbit minimum in the full-alternating residual domain has a minimizing
+representative and a three-factor window violating (18). Theorem 20 instead
+excludes positive minima using complementary braid stability. A direct
+three-factor-window exclusion remains a separate optional strategy; no
+equivalence with that restricted local strategy is asserted.
 
 There are finitely many endpoint templates and finitely many linear
 inequalities per template, but their mere finiteness does not prove
@@ -924,8 +922,7 @@ Exact ratio-three covers actually produce an odd three-label contact;
 they do not by themselves establish code invariance. Corollary 13
 resolves that case through new minimizers instead.
 
-The remaining full-alternating problem is to exclude the singleton family
-in Theorem 17 below, by forcing
+The support-code strategy for the singleton family in Theorem 17 would force
 even intersections for **all** factor pairs or an endpoint decrease.
 The one-cut covers (24) constrain contacts with the minimizer, but do
 not constrain every middle-middle attachment or the overlaps between
@@ -940,9 +937,10 @@ The paired paths give the same rooted cyclic coordinates, so every
 terminal hit is accompanied by a middle hit in every complementary
 twist. Nevertheless \(A,B_0\) overlap in three labels. The last
 factor is removable, so this is not a positive global minimum and
-does not refute the proposed global bridge. Compatibility of all
-minimizing cuts and middle-middle attachments in that singleton family remains open;
-arbitrary extraction and mixed connectivity are not established.
+does not refute the proposed global bridge. Lemma 19 instead uses stability
+of the antipodal projection under complementary braids to force an endpoint
+decrease in the remaining saturated family. This weaker phase-compatible
+example lacks that stability. Mixed connectivity remains separate.
 
 ## Lemma 15. Equal-middle singleton cuts force a removable factor
 
@@ -1162,13 +1160,146 @@ group. The paired vertices would be an invariant nonempty subset and
 hence all sheets, which is impossible in odd degree. Allowing one
 unpaired fixed sheet does not avoid this transitivity obstruction.
 
-The remaining code obligation is still to force even intersections for
-**all** factor pairs, or an endpoint decrease. Lemma 18 controls the
-minimizer against terminal-middle factors; it does not control contacts
-between complementary factors or the middle-middle one-contacts. No
-imprimitivity system or invariant proper code is established for this
-last family. The \(t=2\), degree-seven order-168 controls show why a
-monodromy-free exclusion of every equality case would be false.
+Lemma 18 by itself controls the minimizer against terminal-middle factors.
+Its additional force is that the *same* projection must work after every
+complementary braid. The next lemma exploits that requirement without
+asserting an invariant matching or code. The \(t=2\), degree-seven order-168
+controls show why the lower size restriction matters.
+
+## Lemma 19. Complementary braids cannot preserve a saturated projection
+
+Let a polynomial DT tuple have first factor
+\(A=(a\,b)(c\,d)\), with cut components
+\(\{a\},M,U\), where \(|M|=2t\), \(|U|=t\), and \(t\ge4\) is even.
+Suppose its complementary factors consist of \(t-1\) terminal-middle
+factors and \(t/2\) middle-middle factors. Fix a two-to-one map
+\(\pi:M\to U\). It is impossible that, after **every** braid on the
+complementary factors, each terminal-middle factor has the form
+\[
+                (x\,y)(\pi(x)\,\pi(y)),\qquad \pi(x)\ne\pi(y).
+                                                               \tag{42}
+\]
+Thus some finite complementary braid violates (42).
+
+**Proof.** Complementary moves keep all edges within their original
+components and retain \(A\). The graph remains a tree, so its edges on
+\(U\) form a tree \(T_U\), each supplied by exactly one terminal-middle
+factor. The middle edges of those factors will be called the lifted edges.
+Any two selected complementary factors can be brought adjacent while keeping
+both literal permutations unchanged: move the right selected factor left
+through intervening factors by positive moves. Only crossed factors are
+conjugated. Either adjacent order permits conjugating either selected factor
+by the other while retaining that other factor. All these operations leave
+\(A\) and the complementary product fixed.
+
+Assume (42) holds throughout this complementary braid orbit. If two edges
+\(uv,uw\) of \(T_U\) use distinct middle lifts \(x,x'\) of \(u\),
+their factors have the form
+\[
+ C=(x\,y)(u\,v),\qquad D=(x'\,z)(u\,w),
+ \quad \pi(y)=v,\quad\pi(z)=w,\quad x\ne x'.
+\]
+Their middle supports are disjoint, since \(u,v,w\) are distinct.
+Gather \(C,D\) unchanged and conjugate \(D\) by \(C\). The middle
+edge \(x'z\) is unchanged, but the terminal edge becomes \(vw\).
+This violates (42). Therefore all lifted edges incident at any terminal
+vertex use the same lift. Since \(T_U\) is connected and has no isolated
+vertex, the lifted edges form an isomorphic tree \(F\) on
+\[
+                  L=\{x_u:u\in U\}\subset M,
+                  \qquad \pi(x_u)=u.                         \tag{43}
+\]
+This conclusion holds in every complementary state.
+
+Let \(B\) be any middle-middle factor in one such state. For each lifted
+edge \(x_ux_v\), gather its factor \(C\) and \(B\), then conjugate
+\(C\) by \(B\). Its terminal edge is unchanged, so (42) requires
+\[
+ \{\alpha(u),\alpha(v)\}=\{u,v\}\quad(uv\in T_U),
+ \qquad \alpha(u)=\pi(Bx_u).                                  \tag{44}
+\]
+The selected factors, \(\pi\), and the displayed labels are unchanged by
+gathering, so (44) constrains the factors in the original state.
+Every vertex with two distinct neighbors is fixed by \(\alpha\), by
+intersecting the two endpoint sets in (44). Every leaf has such a neighbor
+when a tree has at least three vertices; its own equation then fixes that
+leaf. Consequently
+\[
+                         \pi(Bx)=\pi(x)\quad(x\in L).          \tag{45}
+\]
+We have proved (45) for every middle-middle factor in every state.
+
+Suppose \(B\) moves some \(x\in L\), and choose a lifted edge
+\(xy\) with factor \(C=(x\,y)(u\,v)\). Gather \(B,C\)
+unchanged. The resulting lifted tree may differ elsewhere, but it still
+contains \(xy\). By (45), \(Bx=x^*\), where \(x^*\ne x\)
+is the other sheet above \(u\); it lies outside the current lifted
+vertex set. Now conjugate \(B\) by \(C\), retaining \(C\).
+Every terminal-middle factor remains unchanged by this single move,
+so the lifted tree and its vertex set remain fixed. The new middle-middle
+factor \(B'=CBC\) satisfies
+\[
+                   B'y=CBx=Cx^*=x^*,
+                   \qquad \pi(B'y)=u\ne v=\pi(y),             \tag{46}
+\]
+contradicting (45) in the new state. Thus every middle-middle factor
+fixes \(L\) pointwise. Every terminal-middle factor preserves \(L\).
+No complementary edge can therefore join the nonempty sets \(L\) and
+\(M\setminus L\), whereas the complementary edges on \(M\) form a
+connected tree. This is the contradiction. \(\square\)
+
+The edge-set argument (44) is where \(t\ge3\) is essential. On a
+two-vertex terminal tree a map can exchange its endpoints and still
+preserve its sole edge. No invariant antipodal matching is used in this
+proof; the fibres of \(\pi\) serve only as fixed coordinates against
+which to test the changed factors.
+
+## Theorem 20. Every residual pure-DT orbit admits extraction
+
+Every polynomial DT braid orbit on odd \(N\ge15\) sheets contains a
+factor with one exclusive leaf on each of its two transpositions. No
+monodromy hypothesis is needed for this extraction statement. In particular
+the remaining equality singleton minimum is impossible, and the existing
+degree-thirteen base and two-leaf absorption theorem imply pure-DT
+connectivity in every residual degree, both unmarked and with the first
+branch marked.
+
+**Proof.** Suppose the orbit minimum is positive. By Theorem 17 every
+minimizing representative has a minimizing factor with cuts
+\((1,t;2t)\), even \(t\), and \(N=3t+1\). Thus \(t\ge6\)
+in the stated degree range. Front-place this factor by Lemma 9. Every
+braid on the complementary factors retains its three component sets,
+its mass \(t-1\), and their product \(R\). Global minimality therefore
+makes every such endpoint a minimizing representative. The cycles
+\(R_M,R_U\) and the attachment roots \(b,d\) remain literal, so Lemma 18
+gives (42) in every state for the **same** map
+\(\pi(R_M^k b)=R_U^k d\). Its factor counts also remain unchanged.
+Lemma 19 is a contradiction. Proposition 8 and Lemma 1 now give extraction.
+
+For connectivity use the retained complete degree-thirteen pure-DT base
+and Corollary 3 of the
+[two-leaf absorption theorem](UNIFORM_TWO_LEAF_DT_ABSORPTION.md#corollary-3-recursive-extensions-and-the-buffered-families).
+Move a removable factor to the end by positive moves. Every crossed factor
+fixes its two leaves, so only its old anchors are conjugated. Delete those two
+leaves and that factor. The remaining tree has full-cycle product and
+degree \(N-2\); induction normalizes it to the canonical component.
+Two-leaf absorption restores the deleted factor at its two distinct old
+anchors. This proves absolute unmarked connectivity for every odd
+\(N\ge15\). The full twist realizes every product-preserving sheet
+relabeling, and Theorem 4 of the
+[marking-removal note](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md#theorem-4-unmarked-connectivity-suffices-for-both-marked-spaces)
+then gives connectivity under its exact marked subgroup. \(\square\)
+
+There is also an explicit escape interpretation of the contradiction.
+If a complementary braid first breaks (42), choose a terminal endpoint
+residue absent from the two projected middle endpoints of that factor.
+A complementary full twist placing this residue at the fixed root \(d\)
+gives precisely one outer contact with \(A\): neither antipodal middle
+root is hit. Lemma 3 lowers the mass. An earlier decrease already suffices.
+The proof uses pair conjugations, cut-preserving gathering, and a
+complementary twist; it need not establish invariance of the binary support
+code. Mixed connectivity, independent mathematical review and formal
+verification remain separate.
 
 ## The remaining plateau-escape obligation
 
@@ -1272,10 +1403,21 @@ They also verify that a terminal-middle generator breaks the natural
 antipodal pairing. These bounded tests support Theorem 17 and Lemma 18;
 the universal statements follow from their written arguments.
 
+The [projection checker](verify_terminal_mass_projection_escape.py) and its
+[receipt](terminal_mass_projection_escape_verification.json) check all 1,076
+lift assignments over labeled terminal trees of sizes two through four,
+detecting split lifts by the explicit pair conjugation. They also test all
+82,245 labeled-tree/middle-middle pairs for terminal sizes three through five,
+including every allowed active attachment and its conjugation obstruction.
+A two-vertex edge exchange checks the necessary limitation of (44). Five
+deterministic saturated full-tree inputs at \(t=4,6,8,12,16\) have exact
+projection-breaking braid words, complementary twist phases, outer contacts
+and strict pruning certificates. These are internal bounded controls; the
+unrestricted conclusions follow from the written proof, not extrapolation.
+
 The [receipt](terminal_mass_hurwitz_descent_verification.json) and
 [source ledger](terminal_mass_hurwitz_descent_source_ledger.json) record
-the replays and exact inputs. No new degree census, exclusion of every
-positive global orbit minimum, universal plateau escape,
-extraction in the remaining degrees \(N\equiv1\pmod6\), mixed connectivity, formal
-verification, independent replay, external review or priority claim is
-asserted.
+the replays and exact inputs. Extraction for every odd \(N\ge15\) and the
+resulting pure-DT connectivity are written mathematical conclusions. No new
+degree census, universal monotone plateau escape, mixed connectivity, formal
+verification, independent replay, external review or priority claim is asserted.
