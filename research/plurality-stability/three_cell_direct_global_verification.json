@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "command": "python3 research/plurality-stability/check_three_cell_direct_global.py",
+  "working_directory": "repository root in Ubuntu-24.04 WSL",
+  "checker_sha256": "65aeb3bd4ce1fc18495487fff0f6f5e3e66794813aef6b374596c56752445118",
+  "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
+  "proof_source_sha256": "c21a7144103e02cd625bf08787a0595fe2edeb58d0f1f1137a1ac5ab30dc9077",
+  "result": {
+    "status": "pass",
+    "python": "3.12.3",
+    "arithmetic": "exact fractions and IEEE-754 binary64 diagnostics",
+    "quadrature": "composite Simpson on [0,pi/2], 8192 subintervals",
+    "quadrant_max_absolute_discrepancy": 3.3306690738754696e-16,
+    "radial_mean": "0",
+    "radial_norm_squared": "1/12",
+    "radial_dirichlet_energy": "2/9",
+    "near_one_limit": 0.041377919059062705,
+    "finite_correlation_controls": [
+      {
+        "rho": 0.1,
+        "E_rho": -0.006827255075960326,
+        "E_rho_over_one_minus_rho": -0.0075858389732892505
+      },
+      {
+        "rho": 0.5,
+        "E_rho": -0.022962918299165115,
+        "E_rho_over_one_minus_rho": -0.04592583659833023
+      },
+      {
+        "rho": 0.9,
+        "E_rho": -0.0034660465876245293,
+        "E_rho_over_one_minus_rho": -0.0346604658762453
+      },
+      {
+        "rho": 0.95,
+        "E_rho": -0.0003640683151223019,
+        "E_rho_over_one_minus_rho": -0.007281366302446032
+      },
+      {
+        "rho": 0.99,
+        "E_rho": 0.0002926617878077336,
+        "E_rho_over_one_minus_rho": 0.029266178780773335
+      },
+      {
+        "rho": 0.999,
+        "E_rho": 4.01014812918619e-05,
+        "E_rho_over_one_minus_rho": 0.04010148129186187
+      },
+      {
+        "rho": 0.9999,
+        "E_rho": 4.124959407992636e-06,
+        "E_rho_over_one_minus_rho": 0.04124959407993091
+      }
+    ],
+    "scope": "Finite normalization diagnostics only; written DG1-DG12 supply analytic claims. No unrestricted Gaussian partition search or interval certification."
+  },
+  "assurance": {
+    "internal_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "limits": "The closed quadrant expression is compared with Simpson quadrature, not certified intervals. The all-rho equal-circle theorem uses fixed-measure circular rearrangement. The unrestricted global inequality remains open."
+}

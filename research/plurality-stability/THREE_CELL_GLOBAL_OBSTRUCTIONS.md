@@ -1,7 +1,8 @@
 # Restrictions on a competing three-cell maximizer
 
-Fix $0<\rho<1$. After dimension reduction to the active plane, every
-global maximizer has three pairwise interfaces of positive surface measure.
+Fix $0<\rho<1$. Every global maximizer with three positive prescribed
+masses has a two-dimensional active plane, full moment rank and three
+pairwise interfaces of positive surface measure.
 A balanced maximizer with convex cells, or one invariant under dilations
 about the origin, is the regular three-sector partition. Thus a nonsimplex
 maximizer at the first continuation endpoint must escape both classes.
@@ -186,6 +187,61 @@ $\int a$, whereas (G6) involves the correlation derivative of each
 score on its own interface. No implication between the two signs is
 available here. [Heilman, Lemma 5.5](https://arxiv.org/html/2209.11216v1).
 
+## A first-crossing obstruction at the level of Hermite weights
+
+Fix any proposed crossing $s\in(0,1)$. Nonnegative Hermite masses,
+the exact zeroth coefficient, Parseval's sum, the smaller first moment
+of the competitor and a strictly larger leading perimeter-angle
+coefficient do not by themselves preclude a transverse first crossing.
+The following example uses formal Hermite masses and makes no
+assertion that they belong to a measurable partition.
+
+Write $W_m=W_m(T)$ for the actual nonnegative Hermite masses of the
+simplex, so $S_\rho(T)=\sum_m W_m\rho^m$, $W_0=1/3$ and
+$\sum_m W_m=1$. Both $W_1$ and $W_3$ are positive. For the latter,
+integrate the degree-three Hermite polynomial $x_1^3-3x_1$ over the
+wedge centered on $e_1$. With $R$ the planar Gaussian radius, the
+radial relation $\mathbb E R^3=3\mathbb E R$ and angular integrals
+$\int_{-\pi/3}^{\pi/3}\cos^3\theta\,d\theta=3\sqrt3/4$ and
+$\int_{-\pi/3}^{\pi/3}\cos\theta\,d\theta=\sqrt3$ give a nonzero
+inner product.
+
+First decrease $W_1$ by $\epsilon s$, increase $W_2$ by
+$\epsilon(1+s)$, and decrease $W_3$ by $\epsilon$, keeping every
+other mass fixed. For small $\epsilon>0$ this yields a nonnegative
+sequence with the same sum and formal deficit
+$\epsilon\rho(1-\rho)(s-\rho)$. To impose strict positivity near one,
+put
+
+\[
+ H(\rho)=\sum_{m\ge2}W_m(\rho-\rho^m)
+        =1-S_\rho(T)-(1-W_0)(1-\rho),
+ \qquad J(\rho)=\frac{H(\rho)}{\rho(1-\rho)}.
+\]
+
+Add to the deficit the term $\eta[H(\rho)-J(s)\rho(1-\rho)]$.
+Its coefficients add nonnegative amounts $\eta W_m$ to the proposed
+competitor masses for $m\ge3$. The coefficient adjustments in degrees
+one and two preserve nonnegativity and leave $W_1$ strictly smaller
+if $\eta>0$ is small enough relative to $\epsilon$. The sum and
+zeroth mass stay fixed. For $0\le\rho\le s$ the function
+$J(\rho)=\sum_{m\ge2}W_m(1+\rho+\cdots+\rho^{m-2})$ has bounded
+derivative, by comparison with the power series of a geometric sum.
+Choose $\eta\sup_{[0,s]}|J'|<\epsilon$. The complete deficit
+
+\[
+ \rho(1-\rho)\,[\epsilon(s-\rho)+\eta(J(\rho)-J(s))]
+ \tag{G9}
+\]
+
+is positive for $0<\rho<s$, zero at $s$ and has strictly negative
+derivative there. At the other endpoint its leading coefficient in
+$\arccos\rho$ is $3\eta/(2\pi)>0$ by the
+[simplex expansion](THREE_CELL_DEFICIT_AND_PERIMETER.md#exact-correlation-derivative-for-the-three-cell-simplex).
+These formal masses therefore produce another crossing between $s$
+and one. A first-crossing proof must use geometric information on
+realizable partitions or stronger relations among their Hermite masses.
+
 ## Complete adjacency
 
 If a pair of cells had no common interface of positive measure, the
@@ -214,6 +270,82 @@ The local Gaussian perimeter analogue of positive adjacency appears in
 Milman–Neeman, Theorem 12.4. Its hypotheses and operator concern the
 Gaussian perimeter, whereas the argument here uses the nonlocal
 cylinder form (G1). [Milman–Neeman, Theorem 12.4](https://arxiv.org/html/1805.10961v3).
+
+## One active dimension is impossible
+
+Every three-cell global maximizer with positive masses in $d\ge2$
+uses two active directions, and its Gaussian cell moments span that
+plane. Suppose first that the cells depend on just one coordinate.
+The score differences minus prices are analytic on the line with
+discrete zeros, by Gaussian convolution injectivity and the distinct
+indicators, so the transitions are locally discrete. Choose a
+transition at zero if one exists. Otherwise choose the smallest
+positive transition $x$, reflecting the coordinate if necessary.
+Let the labels immediately to its left and right be $i,j$. Testing
+(G1) at a single-transition speed requires
+
+\[
+ (T_\rho(1_{A_j}-1_{A_i}))'(x)\ge2\rho\phi_\sigma(x-\rho x),
+ \qquad \sigma=\sqrt{1-\rho^2},
+ \tag{G8}
+\]
+
+where $\phi_\sigma$ is the standard-deviation-$\sigma$ scalar normal
+density. The diagonal interaction coefficient is 2 times the joint
+diagonal density divided by the marginal density, giving the right
+side after the Hermite factor $\rho$.
+Compare $g=1_{A_j}-1_{A_i}$ to the step $s(y)=\operatorname{sgn}(y-x)$,
+whose smoothed derivative is exactly the right side. The difference is
+
+\[
+ \frac{\rho}{\sigma^2}\int(g(y)-s(y))(y-\rho x)\phi_\sigma(y-\rho x)dy.
+\]
+
+On $y>x$ the first factor is nonpositive and the second positive.
+On $y<\rho x$ their signs are reversed. In the possible interval
+$(\rho x,x)$ the left label is $i$ throughout, so the first factor
+vanishes. The third label has positive measure outside that interval,
+giving strict negativity. This contradicts (G8).
+
+If the centered cell moments spanned a smaller space than the active
+plane, translation in a nonzero direction orthogonal to all moments
+would have zero first-order mass change by Gaussian divergence.
+Heilman–Tarter's translation test then forces all normals to be
+orthogonal to that direction, since otherwise the constrained second
+variation is strictly positive. Their cutoff and volume correction
+argument applies as in their proof of Theorem 1.9. Distributional
+differentiation would make the cells invariant in that direction,
+which was just excluded.
+
+## Each cell uses both active directions
+
+In the active plane of a three-cell global maximizer with positive
+prescribed masses, no individual cell is invariant under a nonzero
+translation direction. In particular, none of the cells is a halfplane,
+a parallel slab, or a union of parallel slabs.
+
+Suppose $A_3$ were invariant along a unit vector $v$. The normal
+translation speed $s_v$ vanishes on interfaces $31$ and $32$, and is
+nonzero by full active dimension. On its support in $\Sigma_{12}$ the
+interaction kernel is $2M_\rho>0$. Thus (G1)–(G2) applied to $|s_v|$
+force $s_v$ to have only one sign. Orient $12$ and if necessary reverse
+$v$ so that $D_v1_{A_1}$ is a nonnegative nonzero measure. Then
+$D_v1_{A_2}=-D_v1_{A_1}$ and $D_v1_{A_3}=0$.
+Convolution with a strictly positive Gaussian gives
+$\partial_v U_1>0$, $\partial_v U_2<0$ and $\partial_v U_3=0$
+throughout the plane. This follows by convergent Gaussian integration
+by parts. Equivalently, slice along $v$ and use that the first two
+indicators are oppositely monotone with a nonzero measure of
+nonconstant slices.
+
+The transverse indicator of $A_3$ has locally finite variation by
+the interface regularity of actual maximizers. Its reduced boundary
+consists of parallel lines, locally finite in the transverse coordinate.
+By complete adjacency there is a positive-length interface of $A_3$
+with at least one other label on one such line. However, the relevant
+stationary pair score is strictly monotone on the line, whereas
+stationarity makes it constant on that interface. This contradiction
+establishes the claim.
 
 ## Convex and conical maximizers
 
@@ -323,6 +455,12 @@ conicality is given. Conicality of an arbitrary maximizer remains the
 missing step. [Heilman, arXiv:2209.11216v1, Definition 1.3, Theorem 1.5 and Lemmas 8.2–8.3](https://arxiv.org/html/2209.11216v1).
 
 ## Circular balance and compatibility of first angular moments
+
+The [polar deficit decomposition](THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md)
+gives the equal-circle comparison and a separate obstruction to dropping
+the angular Cauchy–Schwarz remainder. Here the first angular moment
+supplies equality rigidity and a bound retaining compatibility across
+different radii.
 
 For a planar partition let $p_i(r)$ be the fraction of the circle of
 radius $r$ in label $i$, and let $u_i(r)$ be its first angular vector

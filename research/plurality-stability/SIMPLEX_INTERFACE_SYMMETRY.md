@@ -8,9 +8,14 @@ three-cell sign sector for every positive correlation. Reflected
 one-dimensional Ornstein--Uhlenbeck comparisons and a single elementary
 bound at correlation $1/2$ now give an explicit full three-cell gap for
 **every $0<\rho<1$**, uniformly in the ambient dimension $d\ge2$.
-The complete proof is in the section on reflected kernels below. The
-higher-cell blocks and global optimality remain open. External review
-and formal verification have not occurred.
+The complete proof is in the section on reflected kernels below. For every
+cell count, the ambient-dimension extension reduces exactly to the balanced
+problem in the active space, with an explicit loss in the gap. The higher-cell
+sign kernel also has an exact positive determinant formula on an ordered
+chamber. Neither statement supplies the missing active-space gap for
+$k\ge4$ at arbitrary correlation. The remaining higher-cell blocks and
+global optimality remain open. External review and formal verification
+have not occurred.
 
 ## The signed facet representation
 
@@ -761,10 +766,275 @@ alternative is now excluded. This remains a global rigidity obligation,
 not a proof of full simplex optimality.
 
 For $k\ge4$, (S4) supplies the precise symmetry blocks but no sign for
-their remaining infinite dimensional parts. In particular (S18) does
-not extend merely by replacing the three rays by higher dimensional
-facets: a full sign-type function may change sign inside a reference
-facet.
+their remaining infinite dimensional parts. The following reductions
+separate the ambient-dimension issue, which can be settled for every $k$,
+from the active-space spectral inequality, which remains open.
+
+## Every cell count: the active gap lifts to all ambient dimensions
+
+Fix $k\ge3$, $n=k-1$ and $0<\rho<1$. In this section the operators are
+defined on the **unconstrained** active facet space $\mathcal H$ by the
+same formulas as (B6). Write
+
+\[
+ L_\rho f=(a_{\rho,ij}/\rho)f_{ij},\qquad
+ \langle f,\mathsf B_\rho f\rangle=B_\rho(f),\qquad
+ \mu_\rho=\ell/\sigma,\qquad
+ \mathcal T_k=\{t^v:t^v_{ij}=v\cdot n_{ij},\ v\in E\}.
+ \tag{S39}
+\]
+
+The bounds and Hilbert--Schmidt proof in (B7) apply without a mass
+constraint, so these are bounded self-adjoint operators and
+$L_\rho\ge\mu_\rho I$. Equation (S5) gives
+$\mathcal T_k=\operatorname{ran}C^*$ and
+$\mathcal H=\mathcal T_k\mathbin\oplus\mathcal H_0$ orthogonally.
+
+**Translation identity.** On the entire active space,
+
+\[
+       \mathsf B_\rho t=\rho^{-1}L_\rho t
+       \quad(t\in\mathcal T_k),\qquad
+       (L_\rho-\rho\mathsf B_\rho)t=0.
+ \tag{S40}
+\]
+
+Here is a direct proof for the simplex, without a maximizing assumption.
+The distributional gradient of $1_{T_i}$ is
+$\sum_{j\ne i}n_{ij}\mathcal H^{n-1}|_{F_{ij}}$. Gaussian convolution
+therefore gives
+$\partial_vT_\rho1_{T_i}=\rho\sum_{j\ne i}\int
+M_\rho(x,y)t^v_{ij}\,d\nu_{ij}(y)$.
+Subtract the formula for $j$. Reflection swapping $i,j$ makes
+$U_{\rho,ij}$ zero on the whole pair plane, so its gradient there is
+$a_{\rho,ij}n_{ij}$. Comparing the two expressions yields
+$\rho^2\mathsf B_\rho t=a_\rho t$, which is (S40).
+All integrals converge by the Gaussian facet bounds. Equivalently one
+can first use compact cutoffs in the distributional calculation and
+then remove them. Heilman--Tarter, Lemma 5.4, contains the corresponding
+translation formula for actual maximizers; their maximizing hypothesis
+does not establish simplex stability. The direct calculation above
+verifies the identity needed here.
+[Primary source, Lemmas 4.6 and 5.4](https://stevenheilman.org/~heilman/papers/plurthreeB.pdf).
+
+Assume only that the active balanced form is nonnegative. For any
+$h=t+g$, $t\in\mathcal T_k$, $g\in\mathcal H_0$, (S40) gives
+
+\[
+\begin{split}
+ \langle h,(L_\rho-\rho\mathsf B_\rho)h\rangle
+ &=\rho\mathfrak q_\rho(g)+(1-\rho)\langle g,L_\rho g\rangle\\
+ &\ge(1-\rho)\mu_\rho
+                    \operatorname{dist}(h,\mathcal T_k)^2.
+\end{split}
+\tag{S41}
+\]
+
+In particular this unconstrained form is nonnegative with exactly the
+translation kernel. The use of the orthogonal decomposition by $C^*$
+is essential: no change from Gaussian mass orthogonality to
+$a_\rho$-weighted orthogonality has been made.
+
+**Dimension-lifting theorem.** Suppose, in the active space, that
+$\mathfrak q_\rho(g)\ge\kappa_{\rm act}
+\operatorname{dist}(g,\mathcal R_k)^2$ for all $g\in\mathcal H_0$,
+where $\kappa_{\rm act}>0$. Then, for every $d\ge k-1$ and all balanced
+Gaussian $L^2$ facet speeds of the cylindrical simplex,
+
+\[
+ \boxed{\displaystyle
+ \mathfrak q_{\rho,d}(f)\ge
+ \min\!\left\{\kappa_{\rm act},
+              \frac{\ell(1-\rho)}{\sqrt{1-\rho^2}}\right\}
+                  \operatorname{dist}(f,\mathcal R_{k,d})^2.}
+ \tag{S42}
+\]
+
+To prove this, expand in Hermites in $z\in\mathbb R^{d-n}$.
+In extra degree $m$ the active form is
+$\mathfrak q_\rho^{[m]}(h)=\langle h,
+(L_\rho-\rho^m\mathsf B_\rho)h\rangle$.
+Only $m=0$ is mass constrained. Degree one is (S41). For $m\ge2$,
+
+\[
+ L_\rho-\rho^m\mathsf B_\rho
+  =\rho^{m-1}(L_\rho-\rho\mathsf B_\rho)
+                      +(1-\rho^{m-1})L_\rho
+  \ge(1-\rho)\mu_\rho I.
+ \tag{S43}
+\]
+
+The degree-zero kernel is $\mathcal R_k$. The degree-one kernel is
+$\mathcal T_k$ tensored with the linear functions of $z$; these are
+exactly rotations mixing the active and unused coordinates. Rotations
+inside the unused space have zero facet speeds. Thus the full kernel
+has dimension
+$n(n-1)/2+n(d-n)=(k-1)(2d-k)/2$ and equals
+$\mathcal R_{k,d}$. Orthogonal Hermite expansion and boundedness of the
+forms justify the sum and prove (S42). For $k=2$, the active balanced
+space is zero and the extra-degree forms are exactly
+$\mu_\rho(1-\rho^{m-1})|h|^2$: degree zero is forbidden, degree one
+is rotation, and the sharp nonrotational gap for $d\ge2$ is
+$\ell(1-\rho)/\sigma$.
+
+Consequently the arbitrary-$k$ extension of (S37) is **equivalent to its
+active-space version**. All extra-dimensional modes, their gaps and
+their kernels are accounted for. In particular the known fixed-$k$
+small-correlation active theorem already gives an ambient-dimension
+independent gap on its interval. No active-space theorem at a new
+correlation is inferred from this lifting argument.
+
+## Every cell count: the reflected sign kernel is a determinant
+
+Fix $k\ge3$, put $p=k-1$, and write
+
+\[
+ W=\{x\in E:x_1=x_2>x_3>\cdots>x_k\},\quad
+ I=(2,3,\ldots,k),\quad \tau=\rho/\sigma^2,
+\]
+
+\[
+ \Gamma_\rho(x,y)=\sigma^{-(k-1)}
+  \exp\!\left[-\frac{\rho^2(|x|^2+|y|^2)}{2\sigma^2}\right].
+\]
+
+A sign-isotypic speed is determined by $h=f_{12}$, which is alternating
+under permutations of $3,\ldots,k$. Restricting $h$ to $W$ makes it an
+arbitrary scalar function; extend it alternatingly to $F_{12}$ and then
+by the sign action to the other facets. Chamber walls have zero surface
+measure. The full norm and quadratic form are both multiplied by
+$\binom{k}{2}(k-2)!$ relative to this scalar description, so the same
+factor cancels from spectral inequalities.
+
+Let $\mathsf K_\rho=\rho\mathsf B_\rho$. Before antisymmetrizing the
+remaining labels, its sign-sector kernel on $F_{12}$ is
+
+\[
+ \widetilde K_\rho(x,y)=2\Gamma_\rho(x,y)
+ \left[e^{\tau x\cdot y}
+        -\sum_{l=3}^k e^{\tau x\cdot(2l)y}\right].
+ \tag{S44}
+\]
+
+Indeed edges disjoint from $12$ do not interact. For each $l$, the
+$1l$ and $2l$ terms both have sign minus after applying the sign action
+and their incidence signs. Their Mehler kernels agree on $H_{12}$,
+because $(12)$ fixes $x$. The diagonal coefficient is $2$.
+Also
+$x\cdot(2l)y=x\cdot y-(x_2-x_l)(y_2-y_l)$.
+For $k=3$ this is exactly $K_-$ in (S14).
+
+For $k\ge4$ the kernel (S44) is negative near the origin:
+
+\[
+ \widetilde K_\rho(0,0)=2\sigma^{-(k-1)}(3-k)<0.
+ \tag{S45}
+\]
+
+Continuity gives negativity on open relative-interior patches as well.
+Thus the direct pointwise comparison of (S44) with a positive reflected
+kernel fails. This is not a negative quadratic-form example: the
+admissible functions on $F_{12}$ are alternating, and their cancellations
+must be retained.
+
+**Ordered-chamber formula.** After folding these cancellations, the exact
+scalar kernel on $W$, integrating against $\nu_{12}|_W$, is
+
+\[
+ \boxed{\displaystyle
+ \mathcal K_\rho(x,y)=
+  2\Gamma_\rho(x,y)e^{\tau x_2y_2}
+       \det\!\left[e^{\tau x_i y_j}\right]_{i,j\in I}>0
+             \qquad(x,y\in W).}
+ \tag{S46}
+\]
+
+For the identity, split the $y$ integral into chambers and sum (S44)
+against the signs of $S_{\{3,\ldots,k\}}$. The representatives
+$1,(23),\ldots,(2k)$, followed by this subgroup, enumerate every
+permutation of $I$ once. Coordinate $1$ always contributes
+$x_1y_1=x_2y_2$; the other coordinates give the determinant expansion,
+with precisely its permutation signs. This proves (S46) for all $k$.
+
+Here is a self-contained proof of its strict sign. For distinct ordered
+real $a_i,b_j$ and $\tau>0$, the determinant
+$\det[e^{\tau a_i b_j}]$ cannot vanish. Otherwise a nonzero combination
+of $p$ exponentials with distinct real exponents would have $p$ distinct
+zeros. Dividing by the exponential with least exponent, differentiating,
+and using Rolle's theorem proves by induction that such a combination
+has at most $p-1$ zeros. The determinant sign is constant on the connected
+ordered domain. Expanding at $\tau=0$ determines this sign:
+
+\[
+ \det[e^{\tau a_i b_j}]
+ =\frac{\tau^{p(p-1)/2}}{\prod_{j=0}^{p-1}j!}
+    \prod_{i<j}(a_i-a_j)\prod_{i<j}(b_i-b_j)
+                  +O(\tau^{p(p-1)/2+1})>0
+ \tag{S47}
+\]
+
+for sufficiently small positive $\tau$, hence for every $\tau>0$.
+This also identifies the same degree $d_k=p(p-1)/2$ as the Hermite
+floor (S12). The finite checker compares the full coset sum with the
+independent determinant expansion for $3\le k\le8$ and rejects omitted
+or incorrectly signed adjacent terms. The universal proof is the coset
+argument above, not this bounded replay.
+
+The classical mechanism is the alternating method of images.
+Grabiner, Theorem 5 and Section 4, equations (5)--(6), printed
+pp. 184--186, give the reflection sum and Gaussian determinant for
+Brownian motion killed on a Weyl-chamber wall. His definition on
+pp. 182--183 requires the diffusion to be invariant under the reflection
+group. Those hypotheses and the proof's path-cancellation step were
+inspected. The determinant identity and positivity here were proved
+directly; this comparison makes no claim of a new reflection principle.
+[Primary source](https://www.numdam.org/article/AIHPB_1999__35_2_177_0.pdf).
+
+## What the reflection mechanism still has to prove
+
+For three cells the positive sign kernel has a known positive ground
+state $r$, with $K_-r=a_\rho r$. This converts the form to the
+nonnegative squared differences (S18). The standard sector instead has
+the exact translation row identity, and the reflected even OU gap beats
+its negative mass term in the overlapping correlation ranges. These
+ground-state identities and quantitative comparisons, in addition to
+pointwise positivity, are what prove (S37).
+
+For $k\ge4$, (S46) supplies positivity in the sign chamber, but rotations
+belong to the hook representation, not the sign representation. There
+is no rotational sign ground state to substitute into (S18). The exact
+remaining sign-sector assertion is
+
+\[
+ \left\|a_\rho^{-1/2}\mathcal K_\rho
+                         a_\rho^{-1/2}\right\|_{L^2(W,\nu_{12})}<1.
+ \tag{S48}
+\]
+
+The operator is compact, self-adjoint and nonnegative as a quadratic
+form, by restriction of the Mehler form. A positive kernel alone gives
+neither this norm bound nor comparison with $a_\rho$. A positive
+supersolution $w$ satisfying
+$\mathcal K_\rho w\le\theta_\rho a_\rho w$ with
+$\theta_\rho<1$ would suffice by the weighted Schur bound; none is
+established here at arbitrary correlation.
+
+In particular (S46) cannot simply inherit the ordinary Weyl-chamber OU
+spectrum. In the coordinates $a=(x_2,x_3,\ldots,x_k)$, the facet metric
+and centering relation are
+$2\,da_1^2+\sum_{j=2}^p da_j^2$ and
+$2a_1+\sum_{j=2}^p a_j=0$. Permuting $a_1$ with another coordinate
+preserves neither. The extra factor $e^{\tau x_2y_2}$ in (S46) records
+this duplicated coordinate. Grabiner's reflection-invariance hypothesis
+therefore does not identify this operator with the ordinary killed OU
+semigroup in the facet metric. For $k=3$ the facet is one dimensional
+and the separate pointwise comparisons (S32) supply the needed bridge.
+
+The all-$k$ dimensional part of (S37) is settled by (S42). Its active
+balanced gap for $k\ge4$, including (S48) and the other blocks in (S4),
+is still an open mathematical obligation. Neither a global simplex
+inequality nor exclusion of tied maximizers follows from these
+reductions.
 
 ## Monotonicity and the other global obligations
 
@@ -789,9 +1059,11 @@ $\Delta_\rho/\arccos\rho$ by a balanced three-slab partition.
 
 The remaining targets are distinct:
 
-* Obtain explicit bounds in the higher-cell blocks of (S4). Equation
-  (S23) and the full three-cell interface problem are settled by
-  (S29)--(S38).
+* Prove the active-space higher-cell gap in (S4). The sign block has the
+  positive determinant kernel (S46), with the precise remaining norm
+  bound (S48). Equation (S42) then handles every ambient dimension.
+  Equation (S23) and the full three-cell interface problem are settled
+  by (S29)--(S38).
 * Classify stationary stable balanced partitions. Simplex spectral
   stability does not classify critical points away from the simplex.
 * Exclude a nonsimplex maximizer tied with the simplex. The continuation
@@ -813,9 +1085,12 @@ OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_simpl
 The exact part requires only Python's standard library. It checks all 30
 permutations in the $S_3/S_4$ character examples, (S21), the elementary
 polynomial bounds (S32)/(S36), and the interval inequalities used in
-(S27)--(S28), including rejection controls. The analytic operator
-reduction, OU parity spectra, tensor decomposition and all-$k$
-representation argument still require written proof review. The optional
+(S27)--(S28), including rejection controls. It also compares the geometric
+coset sum (S44) with the determinant (S46) as exact formal exponential
+sums for $3\le k\le8$, including omitted-term and wrong-sign controls.
+The analytic operator reduction, OU parity spectra, tensor decomposition,
+dimension lifting, determinant positivity and all-$k$ representation
+argument still require written proof review. The optional
 quadrature uses NumPy 1.26.4 to check the displayed gap constants and
 extra-degree-one block at four chosen correlations, with two grids on
 $[0,10]$, and checks the separate perimeter expansion at three angles.

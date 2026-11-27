@@ -360,3 +360,311 @@ A rational function with a pole has differential with
 a pole in characteristic zero. Thus this nonzero
 regular differential cannot have a rational primitive.
 The contradiction gives \(\gamma=0\), as claimed.
+
+
+## Axial pole exclusion with two nonzero coefficients
+
+Write \(A=F_1,\ B=F_2,\ C=F_3\). Use the preceding
+\((2,3,4)\) reduction, with third form
+\(x^6+kx^3P+eP^2\), and assume \(ke\ne0\).
+Write \(C^\flat=C-eA^{2/3}\) when taking a filtered
+initial form, using the binomial branch with highest
+term \((xz)^2\) for \(A^{2/3}\).
+The polynomial
+\[
+ D=(C^3-e^3 A^2)/(3e^2)
+\]
+records the same leading information without any
+fractional power. If \(A_*=T^3\), \(C_*=eT^2\) and
+\(C^\flat\) has strictly lower weight than \(C\), then
+\(D_*=T^4(C^\flat)_*\).
+
+**Lemma SexticKellerSquareCuspAxialPoleExclusion.**
+Suppose that at weights \((2,3,w)\) with \(w\ge5\) the
+highest forms of \(A,C\) are \(T^3,eT^2\), where
+\(T=xz\). The second component may be replaced by a
+constant multiple of \(C\) subtracted from it. Suppose
+its highest form and the normalized third form are
+\[
+ B_*=Tx^4+H(T)+\frac{bT^m}{x^u},\qquad
+ (C^\flat)_*=kTx^3+\frac{cT^n}{x^v},
+\]
+of weights \(w+10,w+8\), respectively. Here \(H\) is a
+polynomial, the displayed powers are integral, \(m,n\ge0\), \(1\le
+u<4\) if \(b\ne0\), and \(v>0\) if \(c\ne0\).
+Then \(b=c=0\).
+
+Indeed \(T\) is in the field of the four polynomial
+highest forms of \(A,B,C,D\) by the ratio of \(T^3\)
+and \(eT^2\). Over \(k(T)\), regard the two displayed
+functions as rational functions of \(x\). At infinity
+they have pole orders four and three. In the intermediate
+function field they generate, the place under infinity
+has ramification index one by these two orders. Its
+residue field is \(k(T)\). Any other place above it
+would have a pole of the first function of order at
+least four, whereas its only other possible pole is
+at zero of order \(u<4\). The degree formula at this
+place shows that the intermediate field is all of
+\(k(T)(x)\). In particular the four polynomial highest
+forms have fraction field \(k(x,z)\).
+
+Increase the weight \(s\) of \(y\) from three to the
+first tie in these four polynomials. There must be a
+tie by \(s\le3(w+2)\), since at least one of \(A,B,C\)
+depends on \(y\) and \(3(w+2)\) is their largest current
+weight. At a tie, all three-component leading brackets
+vanish. Besides the Keller bracket and the identically
+zero bracket for \(A,C,D\), the brackets involving
+\(A,B,D\) and \(B,C,D\) are constant multiples of
+\(C^2\) and \(A\), respectively. The expected weights
+exceed those actual weights by \(4w+22-s>0\).
+The algebra of the new highest forms therefore has
+transcendence degree at most two. Specialization at
+\(y=0\) maps it onto the old algebra of transcendence
+degree two, hence gives an isomorphism. This also
+identifies their graded fraction fields.
+
+Denote the rational lifts of \(T,x,z\) by \(T',X,Z\).
+The equality \((T')^3=A_*\) makes \(T'\) polynomial
+by normality of the polynomial source ring. Its
+weight is \(w+2\), and it specializes to \(xz\).
+Since \(s>3\), no new monomial containing \(y\)
+can also contain \(z\). Thus \(T'=xz+f(x,y)\) is
+squarefree. It is irreducible if \(x\nmid f\), and
+otherwise is \(x\) times a linear polynomial in \(z\)
+with coefficient one. At a prime divisor where \(X\)
+has a pole, \(T'X^4\) would have negative order and
+would be the unique polar term of the lifted \(B_*\).
+This uses the bound \(0\le\operatorname{ord}T'\le1\).
+So \(X\) is polynomial, and its weight two and
+specialization force \(X=x\).
+
+If \(Z=T'/x\) had a pole, it would be at \(x=0\),
+where \(T'\) is then a unit. For \(b\ne0\) the
+lifted term \(b(T')^m/x^u\) in \(B_*\) makes a
+pole there. For \(c\ne0\) the term \(c(T')^{n+4}/x^v\)
+in \(D_*\) does the same. Either contradicts
+polynomiality. Thus if \(b\) or \(c\) is nonzero,
+\(Z\) is polynomial. At a genuine first tie
+it must have a nonzero correction \(Z=z+g(x,y)\):
+otherwise all four highest forms would be the old
+forms in \(x,z\). Use this polynomial shear as a
+source change. It removes the tie and preserves the
+binary forms at all preceding weights. A subsequent
+tie would occur at a strictly larger \(s\). There
+are only finitely many possible shear weights
+\(2i+sj=w\) with \(i\ge0,j\ge1,s>3\).
+Iterating therefore contradicts existence of a tie.
+This proves the lemma.
+
+## An affine scalar in the mixed square-cusp sector
+
+**Theorem SexticKellerSquareCuspMixedConstantsAffineReduction.**
+In the \((2,3,4)\) square-cusp tuple
+\((P^3,Px^4,x^6+kx^3P+eP^2)\), suppose \(ke\ne0\).
+After a constant target shear in the second component
+and a translation in \(x\), the three complete axial
+degrees are \(3,1,2\), with highest \(z\)-terms
+\[
+               x^3z^3,\qquad a(x)z,\qquad e x^2 z^2 ,
+ \qquad \deg a=5 .
+\]
+Over the algebraic closure, if a completion in this sector
+is noninvertible, then
+\(a\) has a repeated root at zero. Only at that root
+can the constant term \(g(x,y)\) of the second
+component restrict to a constant in \(y\). In that
+case \(g(0,y)\) is constant and \(g_x(0,y)\) is
+a nonzero constant. There are at most two other
+distinct roots of \(a\).
+
+The \((2,3,4)\) support gives
+\[
+\begin{aligned}
+ A &=\theta z^4+(x^3+bxy+c x^2+d y+f x+g_0)z^3
+                  +A_2z^2+\cdots,\\
+ B &=\beta z^3+(\alpha xy+\sigma x^2+\tau y+\lambda x+\mu)z^2
+                  +B_1z+B_0,\\
+ C &=(e x^2+\eta y+\xi x+\chi)z^2+C_1z+C_0 .
+\end{aligned}
+\]
+Here \(A_2,B_1,C_1\) have \((2,3)\)-highest parts
+\(3x^2y^2,x^5,2exy^2+kx^4\), respectively.
+
+At \(w=5\) the \(z\)-leading expansion of the fractional
+power gives
+\[
+ B_*=Tx^4+\alpha xyz^2+\beta z^3,\quad
+ (C^\flat)_*=kTx^3+(\eta-2eb/3)yz^2- (2e\theta/3)z^3/x .
+\]
+To see the fractional terms, write \(A=P^3+(A-P^3)\)
+and retain \(P^2+\tfrac23(A-P^3)/P\) at weights
+at least thirteen. The only weight-twenty terms
+of \(A-P^3\) are \(\theta z^4+bxyz^3\).
+On fixing \(T\), the \(y\)-coefficients in the
+displayed \(B_*,(C^\flat)_*\) are constant multiples
+of \(x^{-1},x^{-2}\), respectively. The coefficient
+of \(y\) in their planar bracket forces their product
+to vanish. If either vanishes but the other does not,
+the remaining derivative in \(x\) gives a contradiction,
+since the \(y\)-free parts have nonzero positive powers
+\(Tx^4,kTx^3\). Hence \(\alpha=0,\ \eta=2eb/3\).
+The axial pole exclusion then gives \(\beta=\theta=0\).
+
+For the higher weights the fractional expansion can be
+written uniformly. Put \(a_3=x^3+bxy+cx^2+dy+fx+g_0\).
+The coefficients of \(z^2,z\) in \(C^\flat\) are
+\[
+ R_2=e x^2+\eta y+\xi x+\chi-e a_3^{2/3},\qquad
+ R_1=C_1-\frac{2e}{3}A_2 a_3^{-1/3}.
+\]
+Expand powers of \(a_3\) from its \((2,3)\)-highest
+term \(x^3\). Then \(R_1\) has highest part \(kx^4\).
+Every monomial of the remaining Laurent series in
+\(z\), with \(z\)-exponent \(j\le0\), has
+\((2,3)\)-weight at most \(12-4j\). This follows by
+expanding \(A^{2/3}\) from \(a_3 z^3\): the coefficients
+of the ratios of all other \(A\)-terms to \(a_3z^3\)
+have total \((2,3,4)\)-weight at most zero. Thus for
+\(w>4\) these terms cannot tie \(kx^4 z\).
+The same expansion justifies the coefficient
+comparisons in each weight below.
+
+At \(w=6\), the weighted degree-two part of \(R_2\) is
+\[
+                (\xi-2ec/3)x+\frac{e b^2}{9}y^2/x^2 .
+\]
+Here \(B_*=Tx^4+\sigma T^2\). On fixing \(T,B_*\),
+the free \(y\) forces \(b=0\); the axial pole exclusion
+then forces \(\xi=2ec/3\). In particular \(\eta=0\).
+Replace \(B\) by \(B-(\sigma/e)C\), cancelling its
+\(x^2z^2\) term. At \(w=7\) the only possible new
+term of this \(B_*\) is \(\tau y z^2\), and the
+only correction to \(kTx^3\) is
+\(-2ed\,y z^2/(3x)\). Their \(y\)-coefficients at
+fixed \(T\) now have distinct powers \(x^{-2},x^{-3}\).
+The same planar bracket argument gives \(\tau=d=0\).
+
+Thus \(a_3\) is univariate and the remaining possible
+\(z^2\) coefficient of the sheared second component
+is linear in \(x\). At weights eight, ten and twelve
+the comparisons have the following forms. In each row
+all the earlier corrections have vanished.
+\[
+\begin{array}{c|cc}
+ w & B_*-Tx^4 & (C^\flat)_*-kTx^3\\ \hline
+ 8 & \text{scalar}\cdot x z^2 & [x^0]R_2\ z^2\\
+ 10& \text{scalar}\cdot z^2   & [x^{-1}]R_2\ z^2/x\\
+ 12& 0 & [x^{-2}]R_2\ z^2/x^2 .
+\end{array}
+\]
+With \(z=T/x\), these are exactly the polar terms
+of the lemma. All coefficients in the table therefore
+vanish. This gives an affine second component and
+\[
+          a_3(x)^{2/3} - c_2(x)/e=O(x^{-3})
+\]
+in Laurent series at infinity, where \(c_2=[z^2]C\).
+Translate \(x\) to center the monic cubic \(a_3\) as
+\(x^3+f_1x+g_1\). The estimate gives
+\(c_2/e=x^2+2 f_1/3\), and \(a_3^2-(c_2/e)^3\)
+has degree at most one. Its coefficients of \(x^3\)
+and \(x^2\) are \(2g_1\) and \(-f_1^2/3\), so
+\(f_1=g_1=0\).
+
+It remains to show the second coefficient depends only
+on \(x\). At ordinary axial \(z=\infty\), the polynomial
+\(D\) now has highest \(z\)-part \(T^5 v\), where
+\[
+                 u=B_1/x,\qquad
+                 v=C_1/x-2e A_2/(3x^2).
+\]
+The leading bracket of \(A,B,D\) shows that \(u,v\)
+are algebraically dependent in \(k(x,y)\): fixing
+\(T=xz\), their factors \(T,T^5\) are constant,
+and the bracket has expected \(z\)-degree eight versus
+actual degree four. Their \((2,3)\)-highest parts are
+\(x^4,kx^3\). Over \(k(y)\), the pole orders at
+\(x=\infty\) are four and three. At \(x=0\) the pole
+order of \(u\) is at most one, and there are no other
+possible poles. The same place-degree argument as in
+the lemma gives \(k(y)(u,v)=k(y)(x)\).
+
+Over the algebraic closure of \(k\), the curve with
+field \(k(u,v)\) is rational: specialize \(y\) to a
+scalar, retaining the nonconstant \(u\), to embed its
+field in \(k(x)\) and apply Lüroth's theorem. Choose
+a parameter with its simple pole at the place under
+\(x=\infty\). The degree-one parametrization over
+\(k(y)\) then writes it as \(t=a(y)x+b(y)\), and the
+coefficient of \(x^4\) in \(u\) makes \(a(y)\) a
+nonzero scalar, which can be normalized to one.
+If either function has a pole at \(x=0\), then
+\(b(y)\) equals one of the fixed finite poles of
+that function in \(t\), so \(b(y)\) is constant.
+If both are regular there, \(u\) is polynomial,
+\(u=u_0(x+b(y))\) with \(u_0\) monic of degree four.
+Its \(x^3\) coefficient is \(4b(y)\) plus a
+constant. This coefficient is polynomial in \(y\),
+and the \((2,3)\) bound on \(u\) makes it constant.
+Thus \(B_1=xu\) is a monic univariate polynomial of
+degree five, as asserted.
+
+### Restrictions at the roots of the affine coefficient
+
+Put \(R=B=a(x)z+g(x,y)\) in the last frame.
+The [normal-residue proposition](KELLER_LINEAR_SOURCE_COEFFICIENT_CUBIC_CLASSIFICATION.md#normal-residues-along-a-repeated-line)
+applies without a degree restriction. It says that
+\(g(\zeta,y)\) for a root \(\zeta\) of \(a\) is
+either affine with nonzero slope, or constant.
+The constant case requires a repeated root and
+\(g_x(\zeta,y)\) a nonzero constant.
+
+Here the \((2,3)\)-bound of fourteen on \(g\) makes
+its \(y\)-degree at most four and its \(y^4\)
+coefficient scalar. That coefficient vanishes
+by restriction to any root, so the \(y\)-degree
+is at most three. If every restriction is affine
+with nonzero slope, the
+[parallel-fibre coordinate construction](KELLER_LINEAR_SOURCE_COEFFICIENT_CUBIC_CLASSIFICATION.md#coordinates-on-the-parallel-support-fibres)
+gives on \(R=t\) the inverse coordinates
+\(y=\psi(x,t)+a(x)M,\ z=(t-g(x,y))/a(x)\).
+The first has degree at most six in \(x,M\).
+The \(y^3,y^2,y,1\) coefficients of \(g\) have
+\(x\)-degrees at most \(2,4,5,6\), respectively,
+so the quotient for \(z\) has degree at most fifteen.
+The two remaining outputs on each fibre have degree
+at most \(6\cdot15=90\). Use the planar degree-one-hundred theorem on those fibres
+and the fibrewise injectivity argument in the
+[bounded coordinate-completion proof](LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md).
+The inverse descends to the base field.
+
+If a restriction is constant at \(\zeta\ne0\), the
+first and third outputs restricted to \(x=\zeta\)
+have nonzero constant planar determinant because
+\(R_x(\zeta,y,z)\) is a nonzero constant and
+\(R_y=R_z=0\) there. Their \(z\)-degrees are three
+and two with nonzero constant highest coefficients.
+Such a planar pair is impossible: translate \(z\)
+by a polynomial in \(y\) to complete the square
+in the quadratic, writing the pair as
+\[
+             a_0z^3+p_2(y)z^2+p_1(y)z+p_0(y),
+                 \qquad b_0z^2+q(y),\quad a_0b_0\ne0.
+\]
+The constant determinant term requires
+\(p_1 q'\) to be a nonzero constant. Both factors
+are constant, but the \(z^2\) coefficient gives
+\(2b_0 p_1'-3a_0 q'=0\), a contradiction.
+The constant restriction can therefore occur
+only at zero. There \(g_y\) and \(\partial_x g_y\)
+vanish, so the monic degree-four coefficient of
+\(y^2\) in \(g\) is divisible by \(x^2\).
+It also vanishes at every other root of \(a\).
+There can be at most two such distinct roots.
+
+The [exact checker](check_sextic_square_cusp_mixed_axial.py)
+replays the first axial supports, the first binomial
+coefficients and the critical-plane bracket in Python
+with SymPy.

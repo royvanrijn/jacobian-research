@@ -100,7 +100,9 @@ In \(H_\kappa(r,r)\), the angular operator still has parameter
 \(\kappa=\rho r u/s_\rho^2\), not \(\rho r^2/s_\rho^2\).
 The diagonal notation refers only to its two angular arguments.
 
-**Proposition DG1 (exact polar deficit).** For every ordinary balanced
+### Proposition DG1 (exact polar deficit)
+
+For every ordinary balanced
 three-cell partition of \(\mathbb R^2\),
 
 \[
@@ -151,7 +153,9 @@ not compare its size with \(\mathcal R_\rho\).
 
 ## The comparison under equal circular masses
 
-**Proposition DG2 (equal-circle comparison).** Suppose that
+### Proposition DG2 (equal-circle comparison)
+
+Suppose that
 \(p_i(r)=1/3\) for every label and almost every radius. Then
 \(S_\rho(A)\leq S_\rho(T)\), equivalently
 \(\widetilde Q_\rho(e)\leq2L_\rho(A;T)\), for every \(0<\rho<1\).
@@ -192,7 +196,9 @@ The angular Cauchy--Schwarz bound replaces
  \tag{DG5}
 \]
 
-**Proposition DG3 (failure of the angular Cauchy relaxation).** There
+### Proposition DG3 (failure of the angular Cauchy relaxation)
+
+There
 is an exactly balanced family of ordinary planar partitions, with each
 label a single arc on every circle, for which
 \(\mathcal B_\rho(A)>S_\rho(T)\) for every sufficiently large fixed
@@ -298,6 +304,19 @@ First fix any sufficiently large \(\rho<1\), and then take sufficiently
 small \(t\ne0\) in (DG8). This proves Proposition DG3 with the stated
 order of quantifiers. It asserts nothing adverse about the actual
 stability of \(A(t)\), since (DG5) has discarded \(\mathcal C_\rho\).
+
+An exact finite-correlation expression, useful for checking the
+normalization independently of the limit, is
+
+\[
+ E_\rho=s_\rho^2\left[
+    J(1+2s_\rho^2,\rho/2)-J(1+s_\rho^2,\rho/2)
+      +\tfrac14J(1,\rho/2)-\frac1{3(4-\rho^2)}\right].
+ \tag{DG13}
+\]
+
+It follows by expanding \(b^2=e^{-r^2}-e^{-r^2/2}+1/4\) in the
+quadrant integral for \(\int m_\rho b^2d\mu\).
 Unlike the independent-arc relaxation in the separate
 [global obstruction note](THREE_CELL_GLOBAL_OBSTRUCTIONS.md), the
 partition here remains disjoint on every circle. The loss occurs in

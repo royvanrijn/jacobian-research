@@ -2145,7 +2145,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | An l-divisible rational split-fiber class gives a new Jacobian direction under one ramified change of parameter | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
 | A genus-five Pell curve realizes the exceptional geometric direction and a genuine ordinary class | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
 | The fixed quartic Pell curve has no rational affine point for an extra class direction | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
-| Polynomial passport component reductions, rigid classification and exact higher-index splits | Internal result | proved | [Source](POLYNOMIAL_PASSPORT_COMPONENTS.md) |
+| Polynomial passport component reductions, rigid classification and exact higher-index splits | Internal result | stale | [Source](POLYNOMIAL_PASSPORT_COMPONENTS.md) |
 | Balanced affine cube-leading Mestre constructions cannot degenerate to genus three | Internal result | proved | [Source](GENUS_THREE_MESTRE_DEGENERATIONS.md) |
 
 **Computed obligations:** 197 unresolved; 37 resolved within their exact scope.

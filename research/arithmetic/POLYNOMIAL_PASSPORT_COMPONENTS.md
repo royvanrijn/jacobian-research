@@ -128,6 +128,12 @@ are necessary component invariants. The statements do not assert that
 these invariants are sufficient or that the return permutations can be
 independently braided as a single inner tuple.
 
+The [return-transport theorem](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md)
+now constructs that common-fibre tuple and its exact coupled action.
+It proves sufficiency of decorated quotient components for block sizes
+two and three, classifies a free cyclic-branch lifting family in every
+degree, and gives an explicit failure of sufficiency at block size four.
+
 **Proof.** A return cycle of length \(s\) on one block corresponds to a
 cycle of length \(\ell_Os\) on the union of its \(\ell_O\) blocks.
 The contribution to the index is therefore
@@ -411,10 +417,14 @@ The unresolved structural tasks are:
    at least three finite branch values. A group or standard-spin label
    is not a sufficient theorem; H6 already disproves that proposed
    criterion when the rigid boundary is included.
-2. Classify the joint braid action on lifts above each quotient component
-   in H3, keeping the complete block-divisor lattice and decorated return
-   data. Separate outer and inner component lists do not supply this
-   gluing action, and polynomial decomposition chains need not be unique.
+2. Classify the orbits of the explicit quotient-stabilizer action in
+   the [return-transport theorem](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md#theorem-l3-exact-transport-and-the-quotient-stabilizer-action)
+   for the remaining larger fibres. Its small-block theorem resolves
+   sizes two and three, and its free cyclic-branch theorem resolves a
+   further all-degree family. Its degree-eight example shows that
+   separate outer and inner component lists do not determine this
+   action. Keep the complete block lattice and nonunique decomposition
+   chains in any further reduction.
 3. Prove extraction and restoration within these actual components, or
    replace extraction by a complete normal form for the cycle-incidence
    tree under whole-factor braids. H8 demonstrates a possible refinement

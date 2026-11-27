@@ -73,6 +73,73 @@ def character_checks():
     return {"permutations_checked": checked, "orientation_negative_control": "passed"}
 
 
+def higher_cell_reflection_checks():
+    """Compare the geometric reflection sum and determinant as formal sums.
+
+    A term is exp(tau * a^T Q b), represented by its integer matrix Q.
+    No transcendental evaluation or spectral conclusion is involved.
+    """
+    cases = []
+    for k in range(3, 9):
+        p = k - 1
+
+        def coordinate(i):
+            return 0 if i < 2 else i - 1
+
+        def geometric_exponent(permutation):
+            matrix = [0] * (p * p)
+            for i, j in enumerate(permutation):
+                matrix[p * coordinate(i) + coordinate(j)] += 1
+            return tuple(matrix)
+
+        def add_term(terms, matrix, coefficient):
+            terms[matrix] = terms.get(matrix, 0) + coefficient
+            if terms[matrix] == 0:
+                del terms[matrix]
+
+        folded, omitted, wrong_sign = {}, {}, {}
+        for rest in itertools.permutations(range(2, k)):
+            permutation = [0, 1, *rest]
+            sign = parity(rest)
+            exponent = geometric_exponent(permutation)
+            for terms in (folded, omitted, wrong_sign):
+                add_term(terms, exponent, 2 * sign)
+            for l in range(2, k):
+                reflected = permutation.copy()
+                reflected[1], reflected[l] = reflected[l], reflected[1]
+                exponent = geometric_exponent(reflected)
+                add_term(folded, exponent, -2 * sign)
+                if l != k - 1:
+                    add_term(omitted, exponent, -2 * sign)
+                add_term(wrong_sign, exponent, 2 * sign)
+
+        determinant = {}
+        for permutation in itertools.permutations(range(p)):
+            matrix = [0] * (p * p)
+            matrix[0] = 1  # The additional exp(tau*x_2*y_2) factor.
+            for i, j in enumerate(permutation):
+                matrix[p * i + j] += 1
+            add_term(determinant, tuple(matrix), 2 * parity(permutation))
+
+        assert folded == determinant
+        assert len(determinant) == math.factorial(p)
+        assert omitted != determinant
+        assert wrong_sign != determinant
+        # The prefolding kernel's value at the origin, divided by Gamma.
+        origin_coefficient = 2 * (3 - k)
+        assert origin_coefficient == 2 - 2 * (k - 2)
+        if k >= 4:
+            assert origin_coefficient < 0
+        cases.append({"k": k, "determinant_terms": len(determinant),
+                      "prefolding_origin_coefficient": origin_coefficient})
+
+    return {
+        "cases": cases,
+        "omitted_adjacent_and_wrong_sign_controls": "passed",
+        "scope": "Exact bilinear-exponent monomial comparison for S44/S46 at 3<=k<=8. The all-k identity, determinant positivity, operator norm and dimension lifting require the written proofs; no all-k spectral inequality is certified.",
+    }
+
+
 def explicit_gap_check():
     t = Q(15, 16)
     assert t - t**3 / 6 > Q(4, 5)
@@ -352,7 +419,9 @@ def main():
         "proof_source_sha256": hashlib.sha256((here / "SIMPLEX_INTERFACE_SYMMETRY.md").read_bytes()).hexdigest(),
         "perimeter_proof_source_sha256": hashlib.sha256((here / "THREE_CELL_DEFICIT_AND_PERIMETER.md").read_bytes()).hexdigest(),
         "exact_checks": {"characters": character_checks(), "half_correlation_bound": explicit_gap_check(),
-                         "elementary_half_point_and_reflections": elementary_half_point_and_reflections(), "interval_gap": interval_gap_check()},
+                         "elementary_half_point_and_reflections": elementary_half_point_and_reflections(),
+                         "higher_cell_reflections": higher_cell_reflection_checks(),
+                         "interval_gap": interval_gap_check()},
         "analytic_claims_certified_by_this_script": False,
         "independent_replay": False,
         "formal_verification": False,

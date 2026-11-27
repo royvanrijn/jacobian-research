@@ -213,8 +213,7 @@ the joint kernel. Adding both changes gives a balanced competitor with
 strictly lower disagreement whenever $\mathcal J(B)<0$.
 
 **Small-support Euclidean junction comparison.** Put
-$c_*=(1-e^{-1})\exp(-25/32)/32$, where $e^{-1}$ here denotes the
-exponential of $-1$. If $B$ differs from $Y$ only in a disk of radius
+$c_*=(1-\exp(-1))\exp(-25/32)/32$. If $B$ differs from $Y$ only in a disk of radius
 $0<R<c_*\pi/24$, then $\mathcal J(B)>0$ unless it agrees almost
 everywhere. The disk can have any center and the comparison has no mass
 constraint.
@@ -417,6 +416,161 @@ to the convolutions of the limiting halfplanes, which tie only on
 the interface. This identifies the possible shapes along open rays.
 The orientation and the three-label junction require further control.
 [Cinti–Serra–Valdinoci, Corollary 1.23](https://cvgmt.sns.it/media/doc/paper/2917/Quantita-Nonloca-Perim10.pdf).
+
+## Intermediate scales and localization of triple ties
+
+Consider the aligned planar maximizers $A^{(j)}$, with $x_j\to x_*$
+and scales $\ell_j\downarrow0$ satisfying $\delta_j=e_j/\ell_j\to0$.
+Their labels in the coordinates $x_j+\ell_j u$ are precompact in
+$L^1_{\rm loc}$. Each limit minimizes Euclidean perimeter against
+compact changes of arbitrary volumes. Every nonempty phase has
+infinite area, so the possibilities are a constant label, two
+halfplanes, or three $120^\circ$ sectors with a translated junction.
+Along each convergent subsequence the local normalized disagreement
+energies converge at balls whose boundary carries no limiting
+perimeter.
+
+For the proof, write $G_\delta(v-u)=\delta^{-2}\phi_1((v-u)/\delta)$
+in two dimensions. The local rescaled energy $J_j(U;B_R)$ is
+$1/\delta_j$ times the integral of the label disagreement on pairs
+with at least one endpoint in $B_R$, weighted by
+
+\[
+ W_j(u,v)=\phi_{a_j}(x_j+\ell_j(u+v)/2)G_{\delta_j}(v-u).
+\]
+
+The corresponding physical normalization is $e_j\ell_j$.
+A compact change in $B_R$ gives a physical volume error $O_R(\ell_j^2)$.
+Two fixed volume bumps away from $x_*$ correct this by the uniform
+pullback argument above, costing $O_R(e_j\ell_j^2)$. The mixed
+interaction with the change is exponentially small because the
+physical supports are separated. The repair thus costs $o(1)$ after
+normalization. Filling $B_R$ by one label leaves only crossing pairs,
+whose unnormalized integral is bounded by $C_R\delta_j$. Indeed for
+each displacement $h$ the crossing area is at most the perimeter of
+$B_R$ times $|h|$, and the Gaussian has first moment of order
+$\delta_j$. Optimality bounds $J_j$ on each fixed ball.
+
+On fixed compact sets the midpoint factors converge uniformly to
+$\phi_1(x_*)>0$. The local mollification and directional difference
+proof of (P2)–(P3), applied on smaller balls with both endpoints in
+$B_R$, gives local $L^1$ compactness and
+
+\[
+ \liminf_j J_j(A^{(j)}_{x_j,\ell_j};B_R)
+ \ge \sqrt{2/\pi}\,\phi_1(x_*)\mathcal P(U;B_R).
+ \tag{P7}
+\]
+
+Here $A^{(j)}_{x_j,\ell_j}$ denotes the rescaled labels and
+$\mathcal P$ is the unweighted interface perimeter counted once.
+Take exhaustion by balls to obtain a locally BV limit. For any fixed
+locally finite-perimeter competitor $V$ agreeing with $U$ outside
+$B_R$, glue $V$ to the rescaled maximizers in $B_t$, with $t\in(a,b)$
+and $R<a<b$. The possible increase of its local cut over that of
+$V$ in $B_t$ lies in pairs crossing $\partial B_t$. It is bounded
+above by
+
+\[
+ 2\int_{|x|<t<|y|} W_j(x,y)
+                 1_{\{A^{(j)}_{x_j,\ell_j}(y)\ne V(y)\}}dx\,dy.
+\]
+
+Averaging in $t$ restricts the interval of radii for a pair to one
+of length at most $|x-y|$. On $y\in B_{b+1}\setminus B_a$ the
+averaged integral is at most $C\delta_j$ times the local $L^1$
+mismatch with $U$, which is $o(\delta_j)$. For $y$ outside $B_{b+1}$
+it is a Gaussian tail since $|x-y|\ge1$ and $|x|\le b$. Choose
+$t_j\in(a,b)$ with error $o(\delta_j)$. Compare with the repaired
+glued partition, and use nonnegativity to restrict the left to
+$B_a$. This gives
+
+\[
+ \limsup_j J_j(A^{(j)}_{x_j,\ell_j};B_a)
+                         \le \limsup_j J_j(V;B_b).
+\]
+
+For fixed $V$, the right side is at most
+$\sqrt{2/\pi}\,\phi_1(x_*)\mathcal P(V;\overline{B_b})$.
+In fact each displacement $\delta_j z$ counted in the integral
+has one endpoint in $B_b$. The scalar directional BV estimate
+bounds the integrated label-$i$ difference by
+$\delta_j |z\cdot D1_{V_i}|(B_{b+2\delta_j|z|})$. This estimate follows
+from integrating the distributional directional derivative along
+segments, first for smooth mollifications and then by BV convergence
+on a slightly larger ball. For $|z|\le1/\delta_j$ dominate the
+normalized bound by $|z|$ times the variation in $B_{b+2}$, and use
+the uniformly convergent midpoint weight on fixed compacts. For
+$|z|>1/\delta_j$ bound the pair difference by one and the possible
+first-endpoint area by $2|B_b|$, and use a Gaussian tail. This proves
+the stated upper bound. Taking $b\downarrow a$ at radii with no
+limiting interface mass on the sphere and using (P7) proves perimeter
+minimality. Taking $V=U$ also gives the claimed local energy convergence.
+
+Every phase of $U$ of positive area has infinite area. Choose winner
+points of that label in bounded rescaled coordinates by $L^1_{\rm loc}$
+convergence. For any fixed rescaled radius, (P6) applies for large $j$
+since $R_0e_j/\ell_j\to0$. Pass the estimate to the limit. As the
+rescaled radius can be arbitrarily large, the phase has infinite area.
+The planar classification then follows from Novaga–Paolini–Tortorelli,
+Theorems 4.2 and 4.5. Those theorems concern compact volume-preserving
+comparisons, which are included here. Their all-infinite-area cases
+with up to three phases give precisely the three possibilities above.
+[Novaga–Paolini–Tortorelli, arXiv:2312.13709](https://arxiv.org/pdf/2312.13709).
+
+For all sufficiently large $j$, every fixed small disk about the
+limiting junction contains at least one triple score tie. To prove
+existence, take three points on the boundary circle in the interiors
+of the limiting sectors. Along each successive arc between such
+points only the two corresponding labels can win by (P6) and local
+distance convergence. At the endpoints the winning labels are unique.
+Write $s_i$ for the scores minus their prices. If there were no triple
+equality in the disk, $\max_i s_i-\min_i s_i$ would have a positive
+minimum on it. For smaller $\varepsilon>0$, the map with components
+$(s_i-\max s+\varepsilon)_+$, divided by their sum, would be a
+continuous map of the disk to the boundary of the probability triangle.
+On each of the three boundary arcs the excluded label has a strictly
+positive minimum gap. Decrease $\varepsilon$ so the three arcs map to
+successive edges of the triangle and their endpoints to the distinct
+corners. This boundary map has winding number one, which prevents
+the asserted extension over the disk.
+
+In any fixed compact disk around the limiting junction, the set of
+triple ties has diameter $O(e_j)$. All such points tend to the
+origin by local distance convergence of the winner sets. If two
+triple ties had separation $\ell_j\gg e_j$, take the intermediate
+scale $\ell_j$ centered at one tie. Pass to a subsequence on which
+the other tie tends to a point at distance one. Each of the three
+labels is a winner at both centers, so (P6) and strong convergence
+give positive area proportions for all three phases in every ball
+centered at either limiting point. But among the classified limiting
+partitions only the three-sector partition has such a point, and it
+has exactly one. This contradiction proves the diameter bound. It
+leaves the number and geometry of ties within the noise scale open.
+
+## Uniform gradients at winning ties near one
+
+On any fixed compact set of the aligned active plane there is $c>0$
+such that, for all sufficiently large $\rho<1$, every winning tie
+between labels $i,j$ of a balanced maximizer satisfies
+
+\[
+ e\,|\nabla(U_i-U_j)(x)|\ge c.
+ \tag{P8}
+\]
+
+Otherwise take a sequence of ties $x_j$ in the compact set and pass
+to a noise-length blow-up limit as above, with the same pair of
+labels. The rescaled conditional means and standard deviations are
+$\rho_j u-e_jx_j/2$ and $\sqrt{(1+\rho_j)/2}$ in coordinates
+$x=x_j+e_ju$. Strong local label convergence and Gaussian tails
+therefore give local $C^1$ convergence of the rescaled scores to
+$P_i=G*1_{A_i}$ for the Euclidean minimizing limit $A$.
+For derivatives this follows by differentiating the conditional
+density, with its uniformly integrable Gaussian tail times a linear
+polynomial. By (P4) the price differences tend to zero, so the limiting
+scores have a winning tie at $u=0$. A vanishing scaled gradient would
+contradict the [Euclidean compact recoloring argument](EUCLIDEAN_THREE_CELL_JUNCTION.md#nonzero-gradients-at-winning-score-ties).
 
 Ordinary Gaussian perimeter convergence suppresses the
 $e^2$ corrections that this test resolves. The gap in the

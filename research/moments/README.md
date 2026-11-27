@@ -193,8 +193,24 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Any first three-cell global transition must have a nonsimplex tied maximizer | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | The known three-cell noise value has a nonzero quadratic perimeter-angle correction | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DEFICIT_AND_PERIMETER.md) |
 | Balanced three slabs refute universal perimeter-angle deficit monotonicity | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DEFICIT_AND_PERIMETER.md) |
+| All-correlation three-cell comparison under equal circular masses | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| Angular Cauchy relaxation exceeds the simplex even for disjoint balanced arcs | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| Translation cuts and dilation constraints at three-cell maximizers | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Every pair is adjacent at a three-cell Gaussian noise maximizer | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Three-cell global maximizers require two active coordinates and full moment rank | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Convex or origin-conical balanced three-cell maximizers are regular sectors | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Circular balance and first angular moment compatibility for three cells | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Any first three-cell global transition is strictly above two-fifths | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Independent circular arcs exceed the simplex in a relaxation near one | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Moving-partition perimeter compactness and simplex localization near one | Internal result | stale | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
+| Near-one maximizer score prices vanish relative to the noise length | Internal result | stale | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
+| Noise-scale Euclidean junction obstruction and small-support rigidity | Internal result | stale | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
+| Noise-length blow-ups of maximizers minimize the Euclidean Gaussian cut | Internal result | stale | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
+| Uniform phase density and open-ray halfplane blow-ups near one | Internal result | stale | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
+| Every fixed-cell active interface gap lifts uniformly in ambient dimension | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| The reflected higher-cell sign kernel is a positive ordered-chamber determinant | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 
-**Computed obligations:** 42 unresolved; 23 resolved within their exact scope.
+**Computed obligations:** 44 unresolved; 23 resolved within their exact scope.
 
 
 Scope limits:
@@ -278,6 +294,7 @@ Scope limits:
 - The four-cell small-positive-correlation interval now has an internal analytic proof. Saturated tetrahedral score margins imply uniform exterior control relative to OU regret. A normalized hypothetical improving or tied sequence has tight weighted transfer measures and L2 facet-flux limits; its regret has lower bound ell*||f||^2/2 and its interaction converges to ||D f||^2. The first-moment kernel is rotational and the exact nearest-moment gauge removes it. Published maximizer dimension reduction supplies one interval independent of d>=3. The imported first-moment preprint, new normal-flux proof and dimension-reduction application await independent review; no explicit rho_0, formal verification, publication, or all-positive-correlation theorem is claimed. Full-noise interface coercivity and the inverse-correlation-scale chart remain additional internal results.
 - For EVERY fixed k>=2 the normal-flux proof now gives a qualitative small-positive-correlation interval rho_k independent of d>=k-1, with regular-simplex equality rigidity. The new all-cell interface kernel has only n(n-1)/2 rotational modes, n=k-1; reflection margins and weighted tails are proved with constants depending on k. The accepted external first-moment input and the extension await independent review. A positive-correlation compactness theorem gives closedness of the optimality set and a first-transition dichotomy: a nonsimplex global tie or improving maximizers approaching the simplex. Neither is excluded, so no all-correlation conclusion follows from local stability or the perimeter limit alone. No interval uniform in k, explicit threshold, formal verification, external review or publication is asserted.
 - For each fixed k, regret-relative exterior control now holds uniformly for 0<rho<=b at every fixed b<1, using b/(2(1+b))<alpha<1/4. At a fixed positive r, IF the full interface form is nonnegative with only rotational kernel, weighted normal flux gives a uniform measurable local comparison and Gaussian L1 quadratic growth near r. The full interaction is compact and the local coefficient positive on all facets. A finite first global endpoint therefore has a nonsimplex tied maximizer or an extra nonrotational interface zero mode. Neither is excluded; arbitrary-rho local positivity and global variational rigidity remain distinct open obligations. No uniform rho->1 tail bound, external review or formal verification is asserted.
+- The direct three-cell comparison is now recorded separately: exact polar deficit DG3 retains a nonnegative angular Cauchy remainder C_rho and a radial mean gain R_rho. Fixed-measure circular rearrangement settles all positive correlations when the three circular masses are each 1/3, including arbitrary C3-equivariant three-cell partitions. An exactly balanced family of disjoint consecutive arcs proves that discarding C_rho gives an upper bound strictly above the simplex near rho=1; the positive asymptotic coefficient is (4-2*pi/sqrt(3))/9. This is an obstruction to that proof shortcut, not a counterexample to simplex optimality. The unrestricted coupled inequality DG4 remains open; no assurance flags are upgraded.
 
 Tracked obligations (computed states):
 
