@@ -315,6 +315,9 @@ the ratio of consecutive units exceeds one and has integral
 trace at least three. With \(\gg Y/\log Y\) primes available,
 the distinct-field count follows. This requires no squarefree-value
 estimate for \(d\).
+[PF3](PELL_UNIT_PRIMITIVITY_FROM_TRACE_EQUATIONS.md) replaces this unit spacing
+bound by almost injective specialization and dispenses with the auxiliary
+nonpower congruences after discarding a sparse set of parameters.
 
 ## An exact first detection degree
 

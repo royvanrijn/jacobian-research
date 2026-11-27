@@ -476,3 +476,146 @@ polynomial.
 
 For \(M=1\), the global rational slice is \(1/(x^2y)\), by the
 monomial bracket formula.
+
+
+## Higher weighted coefficients of a slice
+
+**Theorem WeightedHamiltonianSliceClassicalJetObstruction.**
+Let \((r,s)\) be integral weights with \(w=r+s>0\).
+For a nonconstant principal symbol \(p_0\), write the
+rescaled full symbol of a scalar-commutator Weyl operator
+in symmetric ordering as
+\[
+           P_\epsilon=p_0+p_1\epsilon+p_2\epsilon^2+\cdots .
+\]
+If the operator has a scalar commutator mate, there is a
+rational-coefficient series \(F_\epsilon\) satisfying
+\[
+                   J(P_\epsilon,F_\epsilon)\equiv 1
+                                    \pmod{\epsilon^{2w}},
+        \qquad J(A,B)=A_x B_y-A_y B_x.
+ \tag{4}
+\]
+The same condition holds for a plane Keller component,
+with its rescaled polynomial in place of the symbol,
+and in that case the equation holds to all orders.
+At each order the test is exactness of a relative
+differential of \(p_0\) whose numerator depends on the
+earlier coefficients. Solvability is independent of
+the choice of earlier solutions.
+
+For the Weyl statement use the symmetric star product
+on \(k(x,y)[[\epsilon]]\) with parameter \(\epsilon^w\).
+It is the product obtained by exponentiating
+\((\partial_y\otimes\partial_x-\partial_x\otimes\partial_y)/2\)
+times \(\epsilon^w\), followed by multiplication.
+It is associative since the derivatives commute.
+The monomials in symmetric ordering identify with the
+ordinary monomials: on linear forms the exponential
+for the product of a linear form with its own powers
+has only its zeroth term, and polarization gives the
+symmetrized products. Also \(y\star x-x\star y=\epsilon^w\).
+Thus the rescaled symbols of a scalar mate pair have
+commutator \(\kappa\epsilon^{d_P+d_Q}\).
+Commuting the two inputs reverses the sign of the
+operator in the exponential, so
+\[
+            [A,B]_\star=-\epsilon^w J(A,B)+O(\epsilon^{3w}).
+\]
+
+Apply the algebraic-constant lifting argument of the
+[weighted Weyl slice theorem](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md)
+in this symmetric star product. Reduction modulo \(\epsilon\)
+is the ordinary field, and the leading commutator is the
+Poisson bracket up to sign. These are the ingredients
+needed in the separable simple-root lifting argument:
+the linearization at each order is the derivative of
+a minimal polynomial, and the lift commutes by
+differentiating that equation with the commutator
+derivation. Subtract commuting lifts from the rescaled
+mate through order \(d_P+d_Q-w-1\).
+The remaining series is divisible by
+\(\epsilon^{d_P+d_Q-w}\), and dividing gives a
+commutator that is a nonzero scalar times \(\epsilon^w\)
+exactly. Rescale the series by a constant and use
+the odd-power commutator expansion to obtain (4).
+For the plane statement the formal subtraction proof
+of the preceding leading-face criterion already does
+the same with the ordinary Jacobian, and division
+gives the exact equation to all orders.
+
+For \(j>0\), equation (4) in degree \(j<2w\) is
+\[
+                   J(p_0,f_j)=-\sum_{i=1}^j J(p_i,f_{j-i}).
+ \tag{5}
+\]
+On a normalized generic component of \(p_0\) the right
+side times its relative Jacobian differential must be
+exact. To justify independence of earlier choices,
+let two partial solutions satisfy the equations
+through order \(j-1\). At the first differing order
+their difference commutes with \(p_0\), hence is
+algebraic over \(k(p_0)\).
+Its simple-root lift for the *ordinary multiplication*
+equation with \(P_\epsilon\) commutes with that series
+for \(J\), by the same differentiated-minimal-polynomial
+argument in the commutative field. Subtract the lift,
+multiplied by the appropriate power of \(\epsilon\),
+from one of the solutions. This preserves solvability
+and aligns that coefficient. Continuing aligns all
+coefficients below order \(j\). Thus an obstruction
+found using one partial solution is an obstruction
+to extension of any of them.
+
+**Corollary WeightedHamiltonianSliceBoundaryAdmissibleJetExclusion.**
+For every \(\lambda\) in characteristic zero the polynomial
+\[
+  p_\lambda=x^3y^2+x^6y^3+x^{10}y^4+x^{15}y^5+x^{21}y^6
+                         +\lambda x^7y^3
+\]
+passes all leading-symbol slice tests at weights of positive
+sum, yet has no polynomial plane Jacobian mate and is not
+the symmetric symbol of any rank-one Weyl operator with a
+nonzero scalar commutator mate.
+
+The point \((7,3)\) is strictly inside the Newton polygon
+of \(f_4\), so the face criterion is unchanged for every
+\(\lambda\). At weights \((-2,7)\) the sum is five and
+the degree is nine. The nonzero entries of the weighted
+jet before order ten are
+\[
+  p_0=x^6y^3,\qquad p_1=x^3y^2+x^{10}y^4,\qquad
+  p_2=\lambda x^7y^3,\qquad p_4=x^{15}y^5,\qquad
+  p_9=x^{21}y^6 .
+\]
+Use \(f_0=x^{-5}y^{-2}/3\), and, at each successful
+step, choose the solution with no Laurent monomials
+in the kernel of \(J(p_0,\cdot)\).
+At order one equation (5) gives \(f_1=-2x^{-8}y^{-3}/9\).
+At order two its right side has the term
+\((4/9-\lambda/3)x\).
+On \(t=x^2y\) fixed, \(J(p_0,\cdot)=-3t^2x^2\partial_x\);
+a monomial \(x^i y^j\) in the right side has a nonzero
+residue obstruction exactly when \(i-2j=1\).
+Distinct \(j\)'s at that exponent give distinct Laurent
+powers of the parameter \(t\), so there is no cancellation
+between them. Thus order two requires \(\lambda=4/3\).
+
+At that value the Laurent monomial recursion has no
+resonance at orders three through seven. At order eight
+the right side has the resonant term
+\[
+                          \frac{8030}{59049}\,x^{-3}y^{-2}.
+\]
+These exact coefficients are reproduced by the
+[jet checker](check_weighted_hamiltonian_slice_jets.py),
+run from the repository root with
+`python3 research/dixmier/dixmier-formal-lifting/check_weighted_hamiltonian_slice_jets.py`.
+It forms the brackets in (5) and solves each nonresonant
+monomial using
+\[
+             J(p_0,x^u y^v)=(6v-3u)x^{u+5}y^{v+2}.
+\]
+The obstruction at either order occurs below \(2w=10\),
+where (4) is required in both settings. This excludes the
+entire family, including the unperturbed \(f_4\).

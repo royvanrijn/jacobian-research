@@ -7506,3 +7506,245 @@ unramified double cover. The differential has a
 simple pole with nonzero residue there, a contradiction.
 This excludes the last common-root case and proves
 inversion for every corrected axial tuple.
+
+
+## The next axial weight
+
+**Theorem SexticKellerDoubledSquareUncorrectedAxialFourReduction.**
+Suppose the doubled square-member tuple is uncorrected
+at weights \((2,3,4)\) and \((1,1,3)\).
+Then it remains uncorrected along axial weights
+\((1,1,w)\) for \(3<w<4\). At \((1,1,4)\) it has the form
+\[
+                        (x^4z^2,\ x^5z,\ x^6+c x^2z).
+\]
+If \(c\ne0\) and the map is not invertible, the first
+\(y\)-weight tie with \(w_x=1,w_z=4\) has one of two
+forms. At \(w_y=2\) the third output becomes
+\(x^2 V+w(x)\) in polynomial coordinates
+\((x,y,V)\) after translating \(x\), with \(w'(0)\ne0\).
+At \(w_y=5/2\) the highest tuple is
+\((x^2P^2,x^4P,x^6+c xP)\).
+
+The two initial weight supports and the ordinary sextic
+support give no tie between axial weights three and four.
+At four the possible entries are
+\[
+\begin{aligned}
+ A&=x^4z^2+a z^3,\\
+ B&=x^5z+(b x+\beta y)z^2,\\
+ C&=x^6+(c x^2+dxy+e y^2)z.
+\end{aligned}
+\]
+The determinant has coefficients proportional to
+\(d-2\beta,\ e,\ 5ae-2be-\beta d\)
+at \(x^9z^3,x^8 y z^3,x^4 y z^4\), respectively.
+Thus \(\beta=d=e=0\).
+The [axial checker](check_sextic_doubled_square_uncorrected_axial.py)
+verifies the support, these determinant coefficients,
+and the possible transverse lifts used below.
+
+Put \(t=z/x^4\) on the binary frame. The ratios are
+\[
+ R=\frac{B^2}{AC}=\frac{(1+bt)^2}{(1+at)(1+ct)},\qquad
+ S=\frac{A}{C^2}=\frac{t^2(1+at)}{(1+ct)^2}.
+\]
+Raise the \(y\)-weight from one to the first tie,
+at most \(5/2\) by the ordinary \(x^2y^4\) term in \(A\).
+The expected determinant weight is positive to this
+bound. The first tie therefore has the same image
+closure as the binary specialization, and rational
+identities of the binary image lift as before.
+
+### A nonconstant ratio
+
+If \(R\) is nonconstant, \(t=0\) is the only place
+over its restriction to \(k(R,S)\). The only other
+possible finite zero of \(S\) is at \(1+at=0\), and
+for \(R\) to be a unit there would require \(a=b=c\),
+contrary to nonconstancy. Infinity is not a zero of
+\(S\). Since the zero of \(S\) at zero has order two,
+the degree of \(k(t)/k(R,S)\) divides two.
+If \(S\) has degree three, this already gives degree one.
+In the remaining cases, if \(a=c\ne0\), use
+\(u=(1+bt)/(1+at)\), so \(R=u^2\) and
+\[
+                        S=\frac{(1-u)^2}{(a-b)(a u-b)}.
+\]
+Its simple finite pole at \(u=b/a\) either moves under
+\(u\mapsto-u\) or is at the fixed point zero with odd
+order. Thus it is not a function of \(u^2\).
+If \(a=0,c\ne0\), then \(u=t/(1+ct)\) gives
+\(S=u^2,\ R=(1+(b-c)u)^2/(1-cu)\).
+For \(b\ne0\) the pole of \(R\) at \(1/c\) is not
+invariant under reflection, and for \(b=0\) the ratio
+is linear, recovering \(u\) directly. If \(a=c=0\),
+\(S=t^2\) while \(R=(1+bt)^2\) is not even for
+\(b\ne0\). Thus \(t\) is recovered in each case.
+
+Now \(X=x^3\) is recovered from \(B/C\), and \(W=z/x=Xt\).
+The lifted equations are
+\[
+       A=X^2W^2+a X W^3,\qquad B=X^2W+b X W^2,\qquad
+                              C=X^2+c X W.
+\]
+At a pole of \(X\) the equation for \(C\) forces
+\(\operatorname{ord}W=\operatorname{ord}X\), since
+otherwise the lowest nonzero term of \(C\) has a pole.
+In the equality case cancellation in all three equations
+forces \(1+at,1+bt,1+ct\) to vanish at the same residue
+of \(t\), implying \(a=b=c\). This contradicts
+nonconstancy. Thus \(X\) is polynomial.
+
+The lift \(X\) of weight three can differ from \(x^3\)
+only by \(y^2\) at \(3/2\) or \(xy\) at two.
+Any changed lift is squarefree. If \(a\ne0\) or
+\(b\ne0\), a pole of \(W\) is impossible for squarefree
+\(X\), by the lowest term of \(A\) or \(B\).
+That would make the specialization \(W=z/x\)
+polynomial, a contradiction. Thus \(X=x^3\), and
+the same pole calculation bounds the poles of \(W\)
+by a simple pole along \(x=0\).
+Then \(T=xW\) lifts polynomially with weight four
+and specializes to \(z\). If it changes, its ordinary
+degree \(m\) is two or three, by the weights of possible
+terms containing \(y\). But in \(A=x^4 T^2+a T^3\)
+the first term then has degree \(4+2m>3m\), greater
+than six. So \(T\) cannot change, which is also
+impossible at a first tie. This proves that a
+nonconstant ratio requires \(a=b=0\).
+
+In that case put \(L=XW\). The lifted equations are
+\[
+                      (A,B,C)=(L^2,XL,X^2+cL).
+\]
+The lift of \(L\) is polynomial, of weight six and
+ordinary degree at most three. It can gain \(y^3\)
+or \(yz\) at two, or \(xy^2\) at \(5/2\).
+At \(3/2\) a change \(X=x^3+\delta y^2\) gives
+\(2\delta x^3 y^2\) in \(C\), forbidden by its
+\((2,3,4)\) support, as \(L\) has ordinary degree
+at most three. At \(5/2\), necessarily \(X=x^3\)
+and \(L=xP\) by the ordinary \(2x^3 y^2 z\) term.
+This gives the stated tuple.
+
+At two, the \(y^3\) term of \(L\) would give
+forbidden \(y^6\) in \(A\). Thus write
+\(X=x^3+\delta xy,\ L=(x^2+\gamma y)z\).
+The actual third output has \((1,2,4)\)-weight at
+most six, so is
+\[
+          C_0=q(x)y^2+u(x)y+w(x)+(c\gamma y+v(x))z.
+\]
+Here \(v\) has leading term \(c x^2\),
+\(\deg u\le4,\ \deg q\le2,\ \deg w\le6\).
+If \(\gamma\ne0\), the same coordinate changes as
+in the [simultaneous axial corrections](#the-simultaneous-axial-corrections-at-123)
+put \(C_0=Y Z+\tau(x)\) with
+\(\tau=w-uv/(c\gamma)+qv^2/(c\gamma)^2\).
+The product-plus-univariate obstruction yields
+\(\deg\tau\le1\), and \(\tau\) is not constant by
+the submersion condition. In coordinates
+\((C_0,Y,Z)\), solving for \(x\) has degree at most
+two, solving for \(y\) has degree at most four, and
+solving for \(z\) has degree at most eight.
+The planar degree bound after completion is thus
+forty-eight, giving inversion.
+
+If \(\gamma=0\) at the tie, then \(\delta\ne0\),
+so \(q,v\) both have degree two.
+The [affine-output root restriction](#residues-and-coordinate-completion-for-the-affine-transverse-output)
+makes \(q^2=0\) modulo \(v\). If \(v,u\) are
+coprime, the inverse of \(q y^2+u y+w\) modulo \(v\)
+has degree at most two in its argument. Lift it
+with coefficients in \(x\) of degree at most one.
+The same coordinate completion as above for affine
+outputs in \(z\) has inverse degrees at most three
+in \(y\) and six in \(z\): the numerator of the
+\(z\)-formula has degree at most eight before
+division by \(v\). This gives inversion by planar
+degree at most thirty-six.
+Otherwise a common root of \(v,u\) is double in
+both \(v,q\) and in \(u\), with \(w'\) nonzero there.
+Translate the root to zero. Then
+\[
+             C_0=x^2 V+w(x),\qquad
+             V=c z+\delta^2 y^2+\ell(x)y
+\]
+is the stated form, with \(V\) a polynomial coordinate.
+
+### A constant ratio
+
+If \(R=1\), unique factorization of the linear
+factors gives \(a=b=c\).
+In the corrected case this scalar is nonzero and
+the binary tuple is
+\[
+                      W_0(z^2,xz,x^2),\qquad W_0=x^4+a z .
+\]
+The common factor \(W_0\) is squarefree.
+The conic factorization at the first tie is
+\(\widetilde W(Z^2,XZ,X^2)\).
+By squarefreeness its specialization at \(y=0\)
+has parameters \(z,x\) up to a common scalar,
+which we normalize away. The weights are four,
+four and one for \(\widetilde W,Z,X\), respectively.
+Thus \(X=x\), and any change of \(Z\) would have
+ordinary degree at least two and make \(A\) of
+degree at least eight. So \(Z=z\).
+Any first tie must therefore arise by a change
+in \(\widetilde W\) of weight four.
+
+On a generic pair \(B,C\) fix \(t_0=z/x\), so
+\(C=x^2\widetilde W\), and the relative
+differential is proportional to \(x\,dx/C_y\)
+with the derivative taken at fixed \(t_0\).
+A change \(\lambda y^3\) at \(4/3\) gives
+\[
+         y^3=(C-x^6-a t_0 x^3)/(\lambda x^2),
+                         \qquad \omega\propto dx/(xy^2).
+\]
+A change \(\lambda xy^2\) at \(3/2\) gives
+\[
+         y^2=(C-x^6-a t_0 x^3)/(\lambda x^3),
+                         \qquad \omega\propto dx/(x^2y).
+\]
+Both differentials are regular and nonzero on the
+complete curves, by the same orders as for the
+earlier squarefree factor: the numerator has only
+simple nonzero roots on generic levels, and the
+orders of \(x,y\) over zero and infinity depend
+only on its nonzero constant and its degree six.
+This contradicts a rational slice.
+
+At two the possible change is \(d y^2+e x^2y\).
+If \(d\ne0\), complete the square with
+\(Y=y+e x^2/(2d)\). Then \(U=xY\) satisfies
+\[
+             U^2=(C-a t_0 x^3-(1-e^2/(4d))x^6)/d,
+                              \qquad \omega\propto dx/U.
+\]
+The generic radicand is squarefree of degree six
+or three, so the nonzero differential is regular
+on the complete curve, again impossible.
+If \(d=0,e\ne0\), use the pair \(A,B\) instead and
+put \(t_1=B/A=x/z\).
+The full field is \(k(A,t_1)(z)\), since the
+equation for \(A\) solves for \(y\).
+The determinant satisfies \(J(A,B,x)=-Ae x^3\).
+Thus a rational slice is a nonzero scalar times
+\(1/(2Ae x^2)\) plus an invariant in \(k(A,t_1)\).
+On \(x=0\) the two differentials of \(A,B\) are
+independent generically: \(A=a z^3\) there and
+\(B\) has a simple zero with nonzero \(x\)-derivative.
+The divisor-regular slice theorem requires regularity
+there. The coefficient of \(t_1^{-2}\) of the pole
+of the displayed primitive is a nonzero constant
+times \(1/(A z^2)\) at \(x=0\). It does not belong
+to \(k(A|_{x=0})=k(z^3)\), while every Laurent
+coefficient at that order of a rational invariant
+belongs to this field. Pole cancellation is therefore
+impossible. This excludes the tie at two.
+There is no remaining tie through \(5/2\), contrary
+to the ordinary \(x^2y^4\) term. This proves the
+weight-four reduction for all cases.

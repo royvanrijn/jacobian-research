@@ -347,6 +347,13 @@ give distinct positive isogeny classes by the
 argument of PM2. Its fixed-conductor multiplicity
 bound gives the last count.
 
+[PF2–PF3](PELL_UNIT_PRIMITIVITY_FROM_TRACE_EQUATIONS.md) strengthen the
+PM2 and PM3 isogeny-class counts by showing that almost all specialized
+Pell units are fundamental.
+[CP5](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) also strengthens the
+PM2 count of distinct conductors, using a large prime visible in each
+selected conductor.
+
 ## An exact generic rank-two moving-prime example
 
 **Corollary PM4.** In PM3 take \(S=\{3\}\), \(B=27\),

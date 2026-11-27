@@ -179,8 +179,15 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | An interface-kernel criterion for uniform measurable local quadratic growth | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
 | Every fixed-cell simplex has a full interface gap at small positive correlation | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
 | A finite first global transition has a nonsimplex tie or an extra interface zero mode | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
+| Signed induction and symmetry blocks of every Gaussian simplex interface | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| The first-moment rotation gauge is the exact L2 rotation complement | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Exact first interaction degree in the full simplex sign sector | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Only rotations vanish in the complete three-cell sign sector at every positive correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| The remaining three-cell full-interface problem is one constrained scalar inequality | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| An explicit full three-cell interface gap on one-quarter through three-fifths correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| The unnormalized simplex noise-stability deficit is not monotone in correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 
-**Computed obligations:** 39 unresolved; 21 resolved within their exact scope.
+**Computed obligations:** 44 unresolved; 21 resolved within their exact scope.
 
 
 Scope limits:

@@ -1,4 +1,4 @@
-"""Exact polynomial, local, independence, and reduction data for CP1–CP4."""
+"""Exact polynomial, local, independence, and reduction data for CP1–CP5."""
 
 from sage.all import CRT_list, EllipticCurve, GF, QQ, ZZ, PolynomialRing, QuadraticField, matrix
 
@@ -214,6 +214,7 @@ def verify_squarefree_slice():
     assert integral_quartic.denominator() == 1
     assert integral_quartic.change_ring(GF(2)) == 1
     polynomial = integral_quartic**2+1
+    assert polynomial.change_ring(ZZ).content() == 10
     for prime in period.prime_divisors():
         if prime == 2:
             continue
@@ -238,4 +239,4 @@ if __name__ == "__main__":
     verify_family_squareclasses()
     verify_rank_zero_descents()
     verify_squarefree_slice()
-    print("CP1–CP4 exact certificates passed")
+    print("CP1–CP5 exact certificates passed")

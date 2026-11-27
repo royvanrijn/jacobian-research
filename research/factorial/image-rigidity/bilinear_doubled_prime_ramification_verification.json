@@ -8,8 +8,8 @@
     "sympy": "1.14.0"
   },
   "sources": {
-    "BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md": "9ac1e12968a415c60e79725eff5ea5412a11a4ceaf09c8854f69605d0478d219",
-    "verify_bilinear_doubled_prime_ramification.py": "43eba38a61f9c2a53fd7093891cd37213c44bb71ce6699d8eef5db8af054b8c0"
+    "BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md": "a9ad990e66300a0ca8d6869ebcdea67279daa79d595692da16528e55dc10f21d",
+    "verify_bilinear_doubled_prime_ramification.py": "ce2c56bf712c9166d80c86d763b05c0b8e1fcecfe6ef7006a10735e72a261dc5"
   },
   "native_checks": [
     {
@@ -85,7 +85,98 @@
       "root_valuation": "-1/3",
       "gcd_degree": 3,
       "rejected": true
+    },
+    "wild_coefficient_field": {
+      "field": "Q_3(pi), pi^3=3",
+      "polynomial": "(3*A^3-3*pi*A+2)*(A^2+1)",
+      "degree": 5,
+      "double_root": "1/pi",
+      "gcd_degree": 1,
+      "edge_polynomial": "2+Y",
+      "edge_is_separable": true,
+      "tame_hypothesis": false,
+      "application_rejected": true
     }
+  },
+  "good_prime_lift_controls": [
+    {
+      "m": 1,
+      "p": 3,
+      "n": 2,
+      "frobenius_congruences": 1,
+      "edge_coefficient_identities": 1
+    },
+    {
+      "m": 2,
+      "p": 3,
+      "n": 5,
+      "frobenius_congruences": 1,
+      "edge_coefficient_identities": 2
+    },
+    {
+      "m": 2,
+      "p": 5,
+      "n": 9,
+      "frobenius_congruences": 1,
+      "edge_coefficient_identities": 2
+    },
+    {
+      "m": 3,
+      "p": 5,
+      "n": 14,
+      "frobenius_congruences": 1,
+      "edge_coefficient_identities": 3
+    },
+    {
+      "m": 3,
+      "p": 7,
+      "n": 20,
+      "frobenius_congruences": 1,
+      "edge_coefficient_identities": 3
+    },
+    {
+      "m": 4,
+      "p": 5,
+      "n": 19,
+      "frobenius_congruences": 1,
+      "edge_coefficient_identities": 4
+    },
+    {
+      "m": 4,
+      "p": 7,
+      "n": 27,
+      "frobenius_congruences": 1,
+      "edge_coefficient_identities": 4
+    },
+    {
+      "m": 5,
+      "p": 11,
+      "n": 54,
+      "frobenius_congruences": 1,
+      "edge_coefficient_identities": 5
+    }
+  ],
+  "small_base_resultants": {
+    "resultants": {
+      "2": 1,
+      "3": 128,
+      "4": 11232608256,
+      "5": 48486493455098668080168960000
+    },
+    "bad_prime_controls": [
+      {
+        "m": 4,
+        "p": 23,
+        "good_prime_hypothesis": false,
+        "application_rejected": true
+      },
+      {
+        "m": 5,
+        "p": 7,
+        "good_prime_hypothesis": false,
+        "application_rejected": true
+      }
+    ]
   },
   "independent_replay": false,
   "external_review": false,

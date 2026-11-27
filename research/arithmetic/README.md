@@ -2103,8 +2103,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A genuine moving prime and a global unit realize each lower shift on the same real quadratic fields | Internal result | proved | [Source](RAMIFIED_CYCLOTOMIC_MIRROR_AFFINE_SHIFTS.md) |
 | An explicit genus-three Mordell cover transfers arbitrarily large three-primary Sha | Internal result | proved | [Source](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md) |
 | Every rational Pell coordinate on the marked genus-three curve has the same dyadic obstruction | Internal result | proved | [Source](GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md) |
-| An explicit quartic Pell model gives two ordinary class directions and a noncubic unit | Internal result | stale | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
-| The two ordinary Pell directions and the wild unit give exact scalar affine discriminant strata | Internal result | stale | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
+| An explicit quartic Pell model gives two ordinary class directions and a noncubic unit | Internal result | proved | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
+| The two ordinary Pell directions and the wild unit give exact scalar affine discriminant strata | Internal result | proved | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
 | Every smooth septic square-plus-one model at five has Jacobian three-rank at most four | Internal result | proved | [Source](SEPTIC_PELL_FIVE_DIRECTION_CONSTRUCTION.md) |
 | The exact powerful-pair period is a narrow ring class unit index | Internal result | proved | [Source](PELL_PERIOD_RING_CLASS_INERTIA.md) |
 | The position of ramified inertia determines its first cyclic detection degree | Internal result | proved | [Source](PELL_PERIOD_RING_CLASS_INERTIA.md) |
@@ -2125,14 +2125,23 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | In the composite mirror all primary wild conductors are simultaneous and exact | Internal result | proved | [Source](PELL_PRIME_PATH_WILD_AFFINE_FIELDS.md) |
 | Infinite simple genus-three exact [3,3] family with rational Weierstrass point | Internal result | proved | [Source](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md) |
 | Two rational-Weierstrass norm directions satisfy simultaneous all-prime virtuality | Internal result | proved | [Source](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md) |
-| The quartic Pell Mordell curve has generic rank exactly three | Internal result | stale | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
-| The quartic Pell progression gives a counted rank-three Mordell conductor family | Internal result | stale | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
+| The quartic Pell Mordell curve has generic rank exactly three | Internal result | proved | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
+| The quartic Pell progression gives a counted rank-three Mordell conductor family | Internal result | proved | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
 | Prescribed deep Pell ring class inertia coexists with rank-two Mordell points | Internal result | proved | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
 | A prime-path Mordell model has generic rank exactly two at unbounded ring class depth | Internal result | proved | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
-| The marked Pell points form full generic integral Mordell-Weil bases | Internal result | stale | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
+| The marked Pell points form full generic integral Mordell-Weil bases | Internal result | proved | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
 | Arbitrary index-two Hurwitz mixtures and fully marked connectivity | Internal result | proved | [Source](INDEX_TWO_HURWITZ_MIXTURES.md) |
+| Every rational reflected quartic Pell pencil has an irreducible octic | Internal result | proved | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
+| The fixed quartic Pell octic has full wreath splitting group and a positive squarefree sieve product | Internal result | proved | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
+| Shifted power traces yield fundamental Pell units outside subpower-many parameters | Internal result | proved | [Source](PELL_UNIT_PRIMITIVITY_FROM_TRACE_EQUATIONS.md) |
+| The quartic Pell specialization is almost injective with fundamental norm-minus-one units | Internal result | proved | [Source](PELL_UNIT_PRIMITIVITY_FROM_TRACE_EQUATIONS.md) |
+| The moving prime families have almost injective field specialization without nonpower selectors | Internal result | proved | [Source](PELL_UNIT_PRIMITIVITY_FROM_TRACE_EQUATIONS.md) |
+| The critical positive Pell trace shift leaves exact small power obstructions | Internal result | proved | [Source](PELL_UNIT_PRIMITIVITY_FROM_TRACE_EQUATIONS.md) |
+| Explicit rational HLP family has unbounded dual three-isogeny Selmer ratio | Internal result | proved | [Source](GENUS_THREE_RANK_ZERO_THREE_SHA.md) |
+| Rank-zero genus-three Jacobians with arbitrarily large elementary three-Sha | Internal result | proved | [Source](GENUS_THREE_RANK_ZERO_THREE_SHA.md) |
+| A visible large prime counts distinct rank-three Mordell conductors without an exponent loss | Internal result | proved | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
 
-**Computed obligations:** 191 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 192 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:

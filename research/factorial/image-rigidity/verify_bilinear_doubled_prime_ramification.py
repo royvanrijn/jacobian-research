@@ -20,6 +20,8 @@ NOTE = HERE / "BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md"
 RECEIPT = HERE / "bilinear_doubled_prime_ramification_verification.json"
 PRIMES = (3, 5, 7, 11, 13, 17)
 GCD_PRIMES = (3, 5, 7)
+LIFT_PAIRS = ((1, 3), (2, 3), (2, 5), (3, 5), (3, 7),
+              (4, 5), (4, 7), (5, 11))
 
 
 def trim(poly):
@@ -180,9 +182,70 @@ def check_negative_controls():
     assert bad.degree() == 6 and gcd.degree() == 3
     # The same valuation occurs six times, and the degree is exactly 2p.
     assert sp.discriminant(bad.as_expr(), a) == 0
+    pi = sp.real_root(3, 3)
+    wild = sp.Poly((3*a**3 - 3*pi*a + 2) * (a*a + 1), a,
+                   domain=sp.QQ.algebraic_field(pi))
+    common = sp.gcd(wild, wild.diff())
+    assert wild.degree() == 5 and common.degree() == 1
+    b = pi**2 / 3
+    assert sp.simplify(wild.eval(b)) == 0
+    assert sp.simplify(wild.diff().eval(b)) == 0
+    assert sp.simplify(wild.diff().diff().eval(b)) != 0
+    y = sp.symbols("Y")
+    residual = sp.Poly(y + 2, y, modulus=3)
+    assert sp.gcd(residual, residual.diff()).degree() == 0
     return {"degree_bound_removed": {"polynomial": str(bad.as_expr()),
             "p": 3, "root_valuation": "-1/3", "gcd_degree": gcd.degree(),
-            "rejected": True}}
+            "rejected": True},
+            "wild_coefficient_field": {"field": "Q_3(pi), pi^3=3",
+                "polynomial": "(3*A^3-3*pi*A+2)*(A^2+1)", "degree": 5,
+                "double_root": "1/pi", "gcd_degree": common.degree(),
+                "edge_polynomial": "2+Y", "edge_is_separable": True,
+                "tame_hypothesis": False, "application_rejected": True}}
+
+
+def check_lift_pair(m, prime, e):
+    assert prime > m and prime % 2
+    n = m * prime - 1
+    expected = mul(power(e[m - 1], prime),
+                   power([-4, 0, 1], (prime - 1) // 2))
+    assert modulo(e[n], prime) == modulo(expected, prime)
+    coeffs = [e[n]]
+    for _ in range(n):
+        coeffs.append(derivative(coeffs[-1]))
+    base_derivative = e[m - 1]
+    for k in range(1, m + 1):
+        j = k * prime - 1
+        divisor = prime**(k - 1)
+        assert all(value % divisor == 0 for value in coeffs[j])
+        reduced = modulo([value // divisor for value in coeffs[j]], prime)
+        expected = modulo(scale(power(base_derivative, prime), (-1)**k), prime)
+        assert reduced == expected
+        base_derivative = derivative(base_derivative)
+    return {"m": m, "p": prime, "n": n,
+            "frobenius_congruences": 1, "edge_coefficient_identities": m}
+
+
+def check_small_base_resultants(e, d):
+    u, a = sp.symbols("u A")
+    expected = {2: 1, 3: 2**7, 4: 2**18 * 3**4 * 23**2,
+                5: 2**51 * 3**15 * 5**4 * 7**4}
+    actual = {}
+    for m in expected:
+        expr = sum(sp.Integer(value) * u**i for i, value in enumerate(e[m - 1]))
+        f = sum(sp.diff(expr, u, j) * a**j for j in range(m))
+        dm = sum(sp.Integer(value) * u**i for i, value in enumerate(d[m]))
+        r = int(sp.resultant(dm, sp.discriminant(f, a), u))
+        assert r == expected[m]
+        actual[m] = r
+    for m, prime in LIFT_PAIRS:
+        assert (actual[m] if m > 1 else 1) % prime != 0
+    bad = []
+    for m, prime in ((4, 23), (5, 7)):
+        assert prime > m and actual[m] % prime == 0
+        bad.append({"m": m, "p": prime, "good_prime_hypothesis": False,
+                    "application_rejected": True})
+    return {"resultants": actual, "bad_prime_controls": bad}
 
 
 def sha256(path):
@@ -190,10 +253,13 @@ def sha256(path):
 
 
 def main():
-    e, d = native_polynomials(2 * max(PRIMES))
+    cap = max(2 * max(PRIMES), max(m * p for m, p in LIFT_PAIRS))
+    e, d = native_polynomials(cap)
     native = [check_native(prime, e, d) for prime in PRIMES]
     exact_gcds = [check_discriminant(prime, e, d) for prime in GCD_PRIMES]
     negative = check_negative_controls()
+    lift_checks = [check_lift_pair(m, p, e) for m, p in LIFT_PAIRS]
+    bases = check_small_base_resultants(e, d)
     receipt = {
         "status": "passed",
         "evidence_type": "internal_exact_finite_transcription_and_negative_controls",
@@ -204,13 +270,16 @@ def main():
         "native_checks": native,
         "exact_discriminant_controls": exact_gcds,
         "negative_controls": negative,
+        "good_prime_lift_controls": lift_checks,
+        "small_base_resultants": bases,
         "independent_replay": False,
         "external_review": False,
         "formal_verification": False,
     }
     RECEIPT.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"status": receipt["status"], "native_primes": list(PRIMES),
-                      "gcd_primes": list(GCD_PRIMES), "negative_controls": 1,
+                      "gcd_primes": list(GCD_PRIMES), "negative_controls": 4,
+                      "lift_pairs": list(LIFT_PAIRS),
                       "receipt": str(RECEIPT.relative_to(Path.cwd()))}))
 
 

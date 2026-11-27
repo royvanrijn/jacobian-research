@@ -1,6 +1,6 @@
 # Prime and doubled-prime pure-cross three-windows
 
-Sections 1--7 exclude every noncentral resonance of odd prime terminal order. Combining this with the canonical opposite-axis theorem closes the pure-cross three-window at every odd prime terminal order. Sections 8--12 prove the doubled-prime window when the two linear coefficients do not have quotient \(\pm i\). Other composite terminals and that exceptional quotient at doubled primes remain outside the new theorem.
+Sections 1--7 exclude every noncentral resonance of odd prime terminal order. Combining this with the canonical opposite-axis theorem closes the pure-cross three-window at every odd prime terminal order. Sections 8--12 prove doubled-prime windows away from the two fourth-root axis ratios. Section 13 gives a uniform good-prime lift from a smaller Chebyshev array, including further explicit families at terminals \(3p,4p,5p\). The exceptional axis families and arbitrary terminal orders remain open.
 
 ## 1. Statement and normalization
 
@@ -329,4 +329,92 @@ The degree and tame-value-group hypotheses in Section 9 cannot be dropped. Over 
 At \(p=3\), the resonance polynomial is \(M_3(u^2-2)=(u^2-2)^2-3\). For \(a^2=2\) in characteristic three, direct differentiation of \(E_5=u^5-4u^3+3u\) gives \(\bar F_5(a,A)=-a-A+aA^2\). Its unique double root is \(A=a\), with \(\bar F_u=1\) and \(\bar F_{AA}=2a\). This illustrates the unit fold explicitly; its lift is unramified and cannot equal a root of the displayed Eisenstein-in-\(u^2-2\) resonance. The negative-valuation branch has root degree at least three and cannot repeat in degree five.
 
 The [doubled-prime checker](verify_bilinear_doubled_prime_ramification.py) independently constructs the integer Chebyshev recurrences. It checks (21), both differential identities, coefficient divisibility, and the three endpoint valuations for the explicitly recorded primes. It also checks exact discriminant coprimality with \(M_p(u^2-2)\) at three small primes, and rejects removal of the degree bound using \((1+3A^3)^2\). The [receipt](bilinear_doubled_prime_ramification_verification.json) records the environment, source hashes, precise finite domains and actual outcome. These checks are internal transcription and small-case controls; the proof for all odd primes is Sections 8--11. No independent replay, external review, or formal verification is claimed.
+
+## 13. A uniform good-prime lift of the smaller factorial array
+
+For \(m\ge2\), set
+\[
+ \Delta_{m-1}(u)=\operatorname{disc}_A F_{m-1}(u,A),\qquad
+ R_m=\operatorname{Res}_u(D_m(u),\Delta_{m-1}(u))\in\mathbb Z,
+                                                               \tag{28}
+\]
+and put \(R_1=1\). The discriminant of a degree-one polynomial is one, so \(R_2=1\). A prime is called good here only when \(p\nmid R_m\); no assertion that \(R_m\ne0\) for every \(m\) is assumed.
+
+**Theorem (good-prime lifting).** Let \(m\ge1\), let \(p>m\) be an odd prime, and suppose \(p\nmid R_m\). If
+\[
+                    D_{mp}(u)=0,\qquad D_m(u)\ne0,
+\]
+then \(F_{mp-1}(u,A)\) is squarefree in characteristic zero. Consequently, for \(Bde\ne0\) and \(d^m+e^m\ne0\), the three factorial moments of \(BXY+dX+eY\) ending at \(mp\) cannot all vanish, over every characteristic-zero field.
+
+Here \(m,p\) both vary. The explicitly testable smaller-array condition in (28) is a hypothesis. It is not replaced by an unproved all-index squarefreeness assertion.
+
+To prove the theorem put \(n=mp-1\) and \(w=D_m(u)\). Composition gives \(D_p(w)=0\), and \(w\ne0\) gives \(M_p(w)=0\). Thus \(v(w)=1/(p-1)\). The residue \(a=\bar u\) is a root of \(D_m\). The identities
+\[
+ D_m'=mE_{m-1},\qquad
+ D_m^2+(4-u^2)E_{m-1}^2=4
+\]
+show that \(a^2\ne4\) and \(E_{m-1}(a)\ne0\); indeed \(D_m(\pm2)=2(\pm1)^m\ne0\). As \(p>m\), \(D_m'(a)\ne0\). After an unramified extension \(L\) containing the residue \(a\), Hensel lifting of \(D_m(X)=w\) puts \(u\) in \(L(w)\), with value group \((p-1)^{-1}\mathbb Z\). The parameter \(u\) is not unramified because \(D_m(u)=w\) has nonintegral valuation.
+
+The Laurent formula now gives the uniform congruence
+\[
+ E_{mp-1}(u)\equiv E_{m-1}(u)^p(u^2-4)^{(p-1)/2}\pmod p.  \tag{29}
+\]
+For \(a_j(u)=E_n^{(j)}(u)\), the factorial divisibility and \(n<p^2\) give \(v(a_j(u))\ge\lfloor j/p\rfloor\). Also \(a_0\) and \(a_{p-1}\) are units, while \(v(a_n)=m-1\). When \(m\ge2\), the lower coefficient polygon consists of the horizontal interval from 0 to \(p-1\), followed by the line of slope \(1/p\) ending at \(mp-1\). One can check this without a polygon theorem: for a negative candidate root valuation \(t\), the least lower bound in each block \(kp\le j<(k+1)p\) occurs at its right endpoint, and the successive endpoint heights differ by \(1+pt\). Hence a negative root must have \(t=-1/p\). Positive root valuations are excluded by the unit constant term. For \(m=1\), the leading coefficient is a unit and all roots have valuation zero.
+
+For every unit-valued repeated root, equations (8) and (24), with \(n+1=mp\), again give the two unit derivatives in (25): \(E_n(a)\ne0\) and \(4-a^2\ne0\) by (29). The Hensel argument of Section 10 would make \(u\) unramified. Thus every possible repeated root has valuation \(-1/p\).
+
+The negative-valuation roots retain the smaller factorial array exactly. For \(1\le k\le m\), coefficient extraction in (29) gives
+\[
+ \frac{a_{kp-1}(u)}{p^{k-1}}
+       \equiv(-1)^k\bigl(E_{m-1}^{(k-1)}(a)\bigr)^p\pmod{\mathfrak m}.
+                                                               \tag{30}
+\]
+Here division is legitimate coefficientwise over \(\mathbb Z_p\). To check the factor, the unit part of \((kp-1)!\) is
+\[
+ (kp-1)!/p^{k-1}\equiv(-1)^k(k-1)!\pmod p.
+\]
+In the Hasse derivative of order \(kp-1\), the only contributing term of \((u+t)^2-4\) raised to \((p-1)/2\) has degree \(p-1\), and the other factor contributes degree \((k-1)p\). Its coefficient is \((E_{m-1}^{[k-1]}(a))^p\). Since \(k-1<p\), multiplying by \((k-1)!\) gives (30).
+
+Let \(Y=pA^p\). After division by \(A^{p-1}\), the terms lying on the negative-valuation edge therefore reduce to
+\[
+ r_a(Y)=-\sum_{j=0}^{m-1}(-1)^j
+                         \bigl(E_{m-1}^{(j)}(a)\bigr)^pY^j. \tag{31}
+\]
+This is the coefficientwise Frobenius twist of \(-F_{m-1}(a,-Y)\), of degree \(m-1\), with nonzero constant term. The hypothesis \(p\nmid R_m\), and the fact that \((m-1)!\) is a unit, imply that \(F_{m-1}(a,A)\) is squarefree at every root \(a\) of \(D_m\). Thus \(r_a\) has \(m-1\) distinct nonzero roots.
+
+Here is the full root-separation step, including the wild denominator \(p\). Enlarge \(L\) unramifiedly to contain the residue roots of \(r_a\), and set \(K=L(w)\); its value group is still \((p-1)^{-1}\mathbb Z\). Adjoin \(\pi\) with \(\pi^p=p\). The polynomial
+\[
+                    \pi^{p-1}F_n(u,Z/\pi)
+\]
+has integral coefficients and a unit leading coefficient. Its reduction is
+\(Z^{p-1}r_a(Z^p)\). Over the residue field this has one factor \(Z^{p-1}\), and \(m-1\) pairwise coprime factors \((Z-\zeta)^p\), each associated to one root \(\eta=\zeta^p\) of \(r_a\). Coprime-factor Hensel lifting, by the coefficient-lifting argument of Section 3, shows that each nonzero residue cluster contains exactly \(p\) roots counted with multiplicity.
+
+The cluster labeled by \(\eta\) is intrinsically the condition \(\overline{pA^p}=\eta\). It is preserved by every automorphism of \(\overline{\mathbb Q}_p/K\), because \(\eta\) lies in the residue field of \(K\). Its monic degree-\(p\) factor is therefore in \(K[A]\). Each root has valuation \(-1/p\); the distinct valuations modulo \(v(K^\times)\) of \(1,A,\ldots,A^{p-1}\) force its minimal polynomial over \(K\) to have degree at least \(p\). The cluster factor is consequently irreducible of degree \(p\), and is separable in characteristic zero. Its roots are simple in that cluster, and the different clusters are disjoint. This excludes all negative-valuation repeated roots. Separability of the residual polynomial alone, without this value-group and degree argument, would not suffice in a wildly ramified coefficient field.
+
+Finally \(u=(d+e)/s\), \(s^2=de\), gives
+\[
+                       D_m(u)=\frac{d^m+e^m}{s^m}.
+\]
+The native zero-triple condition and the algebraic embedding argument of Section 11 prove the phase conclusion.
+
+Direct exact evaluation of the small base resultants gives
+\[
+ \begin{array}{c|c}
+ m&R_m\\ \hline
+ 2&1\\
+ 3&2^7\\
+ 4&2^{18}3^4\,23^2\\
+ 5&2^{51}3^{15}5^4\,7^4.
+ \end{array}                                                \tag{32}
+\]
+Thus the theorem includes every terminal \(3p\) with odd prime \(p>3\), every \(4p\) with prime \(p>4\), \(p\ne23\), and every \(5p\) with prime \(p>7\), provided respectively \(d^3+e^3\), \(d^4+e^4\), or \(d^5+e^5\) is nonzero. The excluded lower-axis families are not closed by this lift. A bad prime in (32) is a failure of this sufficient modular test, not a counterexample to a factorial window.
+
+The retained checker also verifies (29)--(31) on its listed \((m,p)\) pairs, computes (32) exactly, and rejects the bad-prime applications \((m,p)=(4,23),(5,7)\). These are finite checks of the uniform mechanism and the four literal constants in (32); they do not establish an unrestricted theorem by an initial-range extrapolation.
+
+A concrete control shows why residual separability needs the tame coefficient field. Let \(\pi^3=3\), \(b=\pi^{-1}\), and work over \(\mathbb Q_3(\pi)\). The degree-five polynomial
+\[
+ (3A^3-3\pi A+2)(A^2+1)
+                  =3(A-b)^2(A+2b)(A^2+1)
+\]
+has the same coefficient lower bounds and the same two root valuations as the doubled-prime case \(p=3,m=2\). Its negative-edge polynomial is the separable linear polynomial \(2+Y\), \(Y=3A^3\), but \(b\) is a double root. Its coefficient value group already contains thirds. This refutes the broader residual-separability shortcut, not a factorial-window conjecture. The checker verifies the double root and the simple residual polynomial exactly.
 

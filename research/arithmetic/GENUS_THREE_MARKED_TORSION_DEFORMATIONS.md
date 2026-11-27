@@ -17,6 +17,10 @@ Jacobians with exact torsion [3,3] and a rational Weierstrass point.
 HG12 imposes simultaneous all-prime virtuality for its two marked
 functions. These are intermediate construction results, not solutions
 of the three-direction or exact [6,6] targets.
+The separate [HG13–HG14 construction](GENUS_THREE_RANK_ZERO_THREE_SHA.md)
+now gives rank-zero genus-three Jacobians with arbitrarily large
+elementary three-Sha. It uses a different HLP elliptic family; the
+specific HG8 companion-rank problem remains open.
 
 ## Primary comparison and the actual target
 
@@ -278,6 +282,9 @@ second term must now be bounded on an infinite such subfamily to obtain
 the requested controlled-rank theorem. The construction is split and
 does not preserve three independent rational three-torsion classes.
 The unrestricted geometric simplicity target remains separate.
+The [alternative HLP family, HG13–HG14](GENUS_THREE_RANK_ZERO_THREE_SHA.md),
+achieves the general rank-controlled Sha existence objective with rank
+zero. It does not bound the rank of the specific \(D_R\) above.
 
 The [exact symbolic checker](verify_genus_three_mordell_sha_cover.py) verifies
 the discriminants with indeterminate \(a\), both maps, their degrees and

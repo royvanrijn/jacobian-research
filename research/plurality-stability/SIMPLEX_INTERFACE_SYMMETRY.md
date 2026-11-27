@@ -4,10 +4,12 @@ This note studies the full interface form from
 [the positive-correlation continuation argument](POSITIVE_CORRELATION_CONTINUATION.md#the-full-interface-form-at-a-fixed-positive-correlation).
 It gives the exact signed induction model for every cell count, identifies
 the mass and rotation constraints, and proves positivity of the complete
-three-cell sign sector for every positive correlation. It also gives an
-explicit gap in that sector at correlation $1/2$. The other sectors and
-global optimality remain open. These are written analytic arguments with
-internal checks; external review and formal verification have not occurred.
+three-cell sign sector for every positive correlation. An analytic
+Hilbert--Schmidt reduction and rational interval certificate also give an
+explicit full three-cell gap throughout $1/4\le\rho\le3/5$. The full
+three-cell problem outside the known intervals, the higher-cell blocks,
+and global optimality remain open. External review and formal verification
+have not occurred.
 
 ## The signed facet representation
 
@@ -145,7 +147,8 @@ other than the three nontrivial types in (S7). Even in those types it
 sees only finite dimensional subspaces of their multiplicity spaces.
 
 **Exact rotation gauge.** The
-[first-moment interface theorem](SMALL_POSITIVE_CORRELATION_INTERVAL.md#extension-to-every-fixed-cell-count)+gives $Q_0(f)=\ell\|f\|^2-\|Df\|_F^2\ge0$ on $\mathcal H_0$
+[first-moment interface theorem](SMALL_POSITIVE_CORRELATION_INTERVAL.md#extension-to-every-fixed-cell-count)
+gives $Q_0(f)=\ell\|f\|^2-\|Df\|_F^2\ge0$ on $\mathcal H_0$
 with kernel $\mathcal R_k$. Polarization at $r\in\mathcal R_k$ gives
 
 \[
@@ -395,7 +398,7 @@ comparison is rational arithmetic. Consequently
 
 This is a sector gap, not a full-interface or global-optimality theorem.
 
-## The remaining three-cell scalar inequality
+## The standard sector and an explicit full gap
 
 The full three-cell interface-kernel assertion is now equivalent to the
 following strict scalar inequality for every $0<\rho<1$:
@@ -416,6 +419,95 @@ orthogonality uses $a_\rho\nu$-mean. Removing the top generalized
 eigenfunction without accounting for this difference does not prove
 (S23). Also $K_+-K_-=3M_{-1/2}$ is not asserted to be a positive or
 negative quadratic form on this mean-zero space.
+
+There is nevertheless a direct bound on a substantial explicit interval.
+Put $v=\nu([0,\infty))=\phi(0)/2$, and define
+
+\[
+ P(x)=\frac14+\frac{\arcsin x}{2\pi},\quad
+ R_\rho=4J_\rho(2)+4J_\rho(1/2)+J_\rho(-1),\quad
+ L_\rho=\frac{2P(\rho)}{\sqrt{1-\rho^2}}
+                 +\frac{P(-\rho/2)}{\sqrt{1-\rho^2/4}},
+\]
+
+\[
+ G(\rho)=\frac4{9\rho^2}R_\rho
+              -\frac{16(1-\rho^2)}{9\rho^2}L_\rho^2.
+ \tag{S24}
+\]
+
+Let $c_\rho=v^{-2}\iint K_+\,d\nu d\nu$ and
+$\overline K_+=K_+-c_\rho$. On mean-zero $h$ subtracting this constant
+does not change the quadratic interaction. The same quadrant Gaussian
+integral as in (S19) gives
+
+\[
+ \iint K_+\,d\nu d\nu=\frac{L_\rho}{2\pi},\qquad
+ \iint K_+^2\,d\nu d\nu=\frac{R_\rho}{2\pi(1-\rho^2)},
+ \qquad
+ \frac{\|\overline K_+\|_{HS}^2}{(\rho\ell/\sigma)^2}=G(\rho).
+ \tag{S25}
+\]
+
+Here the squared norm after subtracting the optimal constant is
+$\|K_+\|_{HS}^2-v^{-2}(\iint K_+)^2$. These formulas can also be
+derived in polar coordinates from
+$\int_0^{\pi/2}(A-B\sin2\theta)^{-1}d\theta$.
+Thus, whenever $G(\rho)<1$, the standard sector satisfies
+
+\[
+ \mathfrak q_\rho(h)\ge\frac\ell\sigma(1-\sqrt{G(\rho)})
+                                      \|h\|_{L^2(\nu)}^2.
+ \tag{S26}
+\]
+
+This uses the ordinary $L^2(\nu)$ operator norm of the centered kernel,
+bounded by its Hilbert--Schmidt norm; it does not replace the mass
+constraint by weighted spectral orthogonality.
+
+**Explicit three-cell full gap.** For every $1/4\le\rho\le3/5$ and
+every balanced $f\in\mathcal H_0$,
+
+\[
+ \boxed{\displaystyle
+ \mathfrak q_\rho(f)\ge
+  \ell(1-3/\sqrt{10})\operatorname{dist}(f,\mathcal R_3)^2.}
+ \tag{S27}
+\]
+
+In particular rotations are the only zero modes throughout this interval.
+At $\rho=1/2$ the stronger bound is
+
+\[
+ \mathfrak q_{1/2}(f)\ge
+  \ell(2/\sqrt3-1)\operatorname{dist}(f,\mathcal R_3)^2.
+ \tag{S28}
+\]
+
+The exact certificate verifies $H(\rho)<19/10$ and $G(\rho)<4/5$
+throughout $[1/4,3/5]$. Equations (S20) and (S26), followed by the
+orthogonal sign/standard decomposition, give (S27), since
+$\sqrt{4/5}<3/\sqrt{10}$ and $\sigma\le1$. At $1/2$, the certificate
+also gives $G(1/2)<9/16$; combine (S22) with (S26) to get (S28).
+
+The certificate is a finite reduction covering the whole stated interval,
+not evaluations at sample correlations. It uses the 350 closed intervals
+$[j/1000,(j+1)/1000]$, $250\le j<600$, and rational interval arithmetic
+in the displayed formulas for $H$ and $G$. Square roots are enclosed by
+integer squares. For $0\le x<1$ the positive series
+
+\[
+ \arcsin x=\sum_{n\ge0}\frac{\binom{2n}n}{4^n(2n+1)}x^{2n+1}
+\]
+
+has decreasing coefficients; after 64 terms its tail is bounded by the
+next coefficient times $x^{129}/(1-x^2)$. Odd symmetry handles negative
+arguments. Alternating arctangent sums and
+$\pi=16\arctan(1/5)-4\arctan(1/239)$ enclose $\pi$. The identity
+follows from $\tan(4\arctan(1/5))=120/119$ and the subtraction formula.
+Every subsequent rounding is outward to rational endpoints. The checker
+and receipt below retain the exact grid, bounds, algorithm and hashes;
+replaying this calculation is part of verifying (S27)--(S28).
 
 For $k\ge4$, (S4) supplies the precise symmetry blocks but no sign for
 their remaining infinite dimensional parts. In particular (S18) does
@@ -457,8 +549,18 @@ The remaining targets are distinct:
   relative error, and formulate a normalized monotonicity statement
   before testing it.
 
-The exact checker `check_simplex_interface_symmetry.py` checks the small
-signed character decompositions and rational inequalities in (S21).
-Its receipt records that finite scope. The arguments for (S3)--(S23)
-and the raw-deficit obstruction are analytic proofs, not consequences of
-that finite check.
+Run the exact checker and its optional exploratory quadrature with
+
+```sh
+OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_simplex_interface_symmetry.py --quadrature --output research/plurality-stability/simplex_interface_symmetry_verification.json
+```
+
+The exact part requires only Python's standard library. It checks all 30
+permutations in the $S_3/S_4$ character examples, (S21), and the interval
+inequalities used in (S27)--(S28), including rejection controls. The
+analytic operator reduction and the all-$k$ representation argument
+still require written proof review. The optional quadrature requires
+NumPy 1.26.4 and evaluates the open standard-sector inequality at four
+chosen correlations with two grids on $[0,10]$. It has no certified
+tail or discretization errors and proves no inequality. Its agreement
+is separate from the rational interval certificate.

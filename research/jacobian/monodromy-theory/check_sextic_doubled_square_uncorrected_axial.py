@@ -192,6 +192,53 @@ def check_simultaneous_corrections():
     assert expand(Y*Z+w-u*v/ell+q*v**2/ell**2-(q*y**2+u*y+w+(ell*y+v)*z)) == 0
 
 
+def check_axial_four_reduction():
+    monomials = {m for m in product(range(7), repeat=3) if sum(m) <= 6}
+    first = (
+        {(4, 0, 2), (3, 2, 1), (2, 4, 0)},
+        {(5, 0, 1), (4, 2, 0)},
+        {(6, 0, 0)},
+    )
+    ref = ((4, 0, 2), (5, 0, 1), (6, 0, 0))
+    pure = cut((monomials,) * 3, (2, 3, 4), first)
+    through_three = cut(pure, (1, 1, 3), tuple({m} for m in ref))
+    assert competing_monomials(through_three, (1, 1, 0), 2, 3, 4, ref) == (
+        {4: {(0, 0, 3)}},
+        {4: {(1, 0, 2), (0, 1, 2)}},
+        {4: {(2, 0, 1), (1, 1, 1), (0, 2, 1)}},
+    )
+
+    x, y, z = symbols("x y z")
+    a, b, beta, c, d, e = symbols("a b beta c d e")
+    determinant = jacobian(
+        (x**4*z**2+a*z**3, x**5*z+(b*x+beta*y)*z**2,
+         x**6+(c*x**2+d*x*y+e*y**2)*z), (x, y, z),
+    )
+    expected = {
+        (9, 0, 3): 6*(d-2*beta),
+        (8, 1, 3): 12*e,
+        (4, 1, 4): 6*(5*a*e-2*b*e-beta*d),
+    }
+    for monomial, value in expected.items():
+        assert expand(determinant.coeff_monomial(monomial)-value) == 0
+
+    lifts = {
+        1: {},
+        3: {Q(3, 2): {(0, 2, 0)}, 2: {(1, 1, 0)}},
+        4: {Q(4, 3): {(0, 3, 0)}, Q(3, 2): {(1, 2, 0)},
+            2: {(0, 2, 0), (2, 1, 0)}},
+        6: {2: {(0, 3, 0), (0, 1, 1)}, Q(5, 2): {(1, 2, 0)}},
+    }
+    for target, desired in lifts.items():
+        actual = {}
+        for i, j, k in product(range(4), repeat=3):
+            if j and i+j+k <= 3:
+                y_weight = Q(target-i-4*k, j)
+                if 1 < y_weight <= Q(5, 2):
+                    actual.setdefault(y_weight, set()).add((i, j, k))
+        assert actual == desired
+
+
 if __name__ == "__main__":
     check_weights()
     check_coefficients()
@@ -200,4 +247,5 @@ if __name__ == "__main__":
     check_isolated_third_correction()
     check_isolated_second_correction()
     check_simultaneous_corrections()
+    check_axial_four_reduction()
     print("Uncorrected doubled-square frame: axial support, determinants and fibre identities verified.")

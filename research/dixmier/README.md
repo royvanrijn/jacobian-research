@@ -132,6 +132,8 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Signed slice tests glue independently across exposed Newton edges | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
 | Arbitrarily long mixed Newton chains pass every signed slice test | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
 | Full rational slices fail for the boundary-admissible mixed chains | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| Classical rational slice jets obstruct weighted Weyl and plane Keller mates | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| A boundary-admissible one-parameter family has no plane or Weyl mate | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

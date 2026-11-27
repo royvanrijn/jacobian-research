@@ -165,6 +165,10 @@ the upper bound by prime-to-11 torsion specialization. The function
 \(U\) gives the infinity difference of exact order four by the
 constant-norm degree argument of LY9.
 
+[PF2](PELL_UNIT_PRIMITIVITY_FROM_TRACE_EQUATIONS.md) strengthens the count below to
+\(\gg X^{1/8}\) and shows that almost all parameters give the fundamental
+unit. The elementary bound here follows directly from the unit spacing.
+
 As \(N\) ranges up to \(T\) in the fixed progression there are
 \(\gg T\) parameters and \(D_K\ll T^8\). The positive units \(U\)
 are at most \(O(T^4)\). In any fixed real quadratic field the
@@ -392,6 +396,76 @@ Both counts use eventual strict monotonicity of \(f\).
 The unconditional argument gives all fixed finite sieves.
 For squarefree values themselves it leaves the large-prime-square
 tail of Granville's sieve.
+
+## Distinct conductors from large primes that remain visible
+
+**Corollary CP5.** On the fixed refined slice of CP4, the rank-at-least-three
+Mordell family of PM2 has \(\gg X^{1/16}\) distinct conductors up to \(X\).
+More precisely, at least \((7/32-o(1))T\) distinct conductors occur on
+\(T<j\le2T\). This uses the large-prime sixth-power bound in
+[OpenAI, Proposition 1.4](sources/openai-polynomial-powerfree-values-2026-excerpt.pdf).
+
+Here is the prime-support argument. For any fixed irreducible
+\(g\in\mathbb Z[j]\) of degree \(d\ge2\), with positive leading
+coefficient, put \(I=(T,2T]\cap\mathbb Z\).
+The logarithmic sum of its values on \(I\) is
+\(dT\log T+O_g(T+\log T)\). Fix a constant \(C\ge1\).
+Primes \(p\le CT\) contribute at most
+\((1+o(1))T\log T\) to this sum. To see this, write
+\(\rho_g(p^k)=\#\{j\bmod p^k:g(j)\equiv0\bmod p^k\}\).
+Outside the finite set of bad primes, a root is simple and
+\(\rho_g(p^k)=\rho_g(p)\le d\). For such primes the contribution is
+at most
+\[
+       T\sum_{p\le CT}\frac{\rho_g(p)\log p}{p-1}
+           +O_{g,C}\bigl(\pi(CT)\log T\bigr).
+\]
+This follows by counting in residue classes for each \(k\), with
+\(k\log p\ll_g\log T\) for every nonempty class in the interval.
+The root action over \(\mathbb Q\) is transitive, so its mean
+fixed-point count is one. Chebotarev and partial summation give
+\(\sum_{p\le CT}\rho_g(p)\log p/(p-1)=\log T+o(\log T)\).
+The error term is \(O_{g,C}(T)\). At a fixed bad prime, \(g\) is
+separable over \(\mathbb Q_p\). In small disjoint disks at its
+roots in \(\mathbb Z_p\), the valuation has the form
+\(v_p(j-\theta)+v_p(g'(\theta))\), and it is bounded on the
+compact complement. This gives \(\rho_g(p^k)\ll_{g,p}1\)
+uniformly in \(k\), so the fixed bad primes contribute \(O_g(T)\).
+
+Each parameter contributes at most \(d\log T+O_g(1)\).
+Thus at least \(((d-1)/d-o(1))T\) parameters have some prime
+\(p>CT\) dividing \(g(j)\). If all but \(o(T)\) parameters
+avoid an exponent divisible by a fixed \(k\ge2\) at every such
+prime, the same lower bound holds for parameters with a
+\(p>CT\) in \(\prod_{v_p(g(j))\not\equiv0\bmod k}p\).
+A fixed value of this truncated prime support with a prime \(p>CT\)
+has at most \(d\) preimages in \(I\), because each must be a
+root modulo the same \(p\) and the interval has length \(T\).
+This counting argument shares its log-sum step with
+[Erdős's largest-prime argument](https://users.renyi.hu/~p_erdos/1952-07.pdf).
+
+Apply it to \(g=f\) and \(k=6\). The primitive part \(f/10\) has
+positive leading coefficient and is irreducible of degree eight by
+CP3. For \(p>CT\) it has the same valuation as \(f\), once \(T\) is
+large enough to exclude the fixed content primes. Proposition 1.4 of
+the cited preprint, with \(d-2=6\), bounds the parameters with a sixth
+power of any \(p>T\) dividing this primitive part by \(O_f(T^{1-\delta})\)
+for some \(\delta>0\). This is the only input on large prime powers.
+
+Take \(N_0'\) between \(0\) and \(L'-1\) and \(C>6L'\). For \(j\in I\)
+and \(T\) large, \(0<N_j=N_0'+L'j<p/2\) for every \(p>CT\).
+As \(f\) comes from an even polynomial in \(t=N_j/128\), its
+roots in this variable modulo \(p\) come in opposite pairs
+apart from a possible zero. No zero or pair can give more than
+one of the selected parameters, and the nonzero pairs number at
+most four. Each conductor with a visible \(p>CT\) consequently has
+at most four preimages in \(I\). Divide the parameter bound
+\((7/8-o(1))T\) by four. The PM2 conductor is \(O(T^{16})\) on
+this interval, giving the height count.
+
+The proposition is used at its stated fixed-polynomial interface.
+This application leaves the large-prime-square tail in CP4 open.
+It uses no uniformity in the coefficients of \(f\).
 
 ## Scope and verification
 

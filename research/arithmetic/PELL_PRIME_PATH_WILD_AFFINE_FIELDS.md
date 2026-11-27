@@ -346,6 +346,10 @@ PI3. In particular this gives
 degree-\(m\) fields with discriminant at most \(Y\) on
 each prescribed Frobenius slice.
 
+[PF3](PELL_UNIT_PRIMITIVITY_FROM_TRACE_EQUATIONS.md) gives almost injective
+specialization inside each fixed Frobenius slice and removes one logarithm
+from these field counts.
+
 ## Verification
 
 The [exact checker](verify_pell_prime_path_wild_affine_fields.py)

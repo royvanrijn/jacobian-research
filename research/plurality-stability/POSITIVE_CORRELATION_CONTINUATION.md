@@ -9,6 +9,15 @@ for sufficiently small correlations; it is not proved throughout $(0,1)$.
 All proofs and source audits here are internal. Independent mathematical
 review and formal verification remain unperformed.
 
+The [symmetry-sector analysis](SIMPLEX_INTERFACE_SYMMETRY.md) now gives
+the signed $S_k$ facet decomposition. For three cells it proves the
+rotational-only kernel on the entire sign sector at every positive
+correlation, and an explicit full-interface gap on $[1/4,3/5]$ by an
+analytic operator bound and exact rational interval certificate. The
+standard-sector inequality at arbitrary correlation and all higher-cell
+blocks remain open. These local results do not exclude a distant tied
+global maximizer.
+
 Fix $k\ge2$ and $n=k-1$. Let $T=(T_1,\ldots,T_k)$ be the central regular
 simplex partition of $\mathbb R^n$, with cell moments $b_i^*$ and common
 moment difference length $\ell>0$. Write $B_*$ for its moment matrix and

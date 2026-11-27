@@ -1,0 +1,93 @@
+{
+  "checker_sha256": "2604ffa354b4914f48136c6b8a9bf3b56bbedb84a5dbad55c4076aed70dce4fd",
+  "proof_source_sha256": "7c21b6632989de7ab4c718a4a3cf20242031c6c0e61562e0e2c509b1f055b568",
+  "exact_checks": {
+    "characters": {
+      "permutations_checked": 30,
+      "orientation_negative_control": "passed"
+    },
+    "half_correlation_bound": {
+      "H_half_rational_upper": "3176504/1819125",
+      "H_half_upper_less_than_7_over_4": true,
+      "scope": "Rational arithmetic in S21; uses analytic Gaussian integral and classical 3<pi<22/7 from the proof.",
+      "gap": "ell*(2/sqrt(3)-1), sign sector at rho=1/2 only"
+    },
+    "interval_gap": {
+      "interval": [
+        "1/4",
+        "3/5"
+      ],
+      "closed_cover_mesh": "1/1000",
+      "closed_cover_intervals": 350,
+      "H_upper": "467983229/250000000",
+      "G_upper": "7683994769/10000000000",
+      "targets": {
+        "H_less_than": "19/10",
+        "G_less_than": "4/5"
+      },
+      "half_correlation_G_upper": "100735031/200000000",
+      "arithmetic": "Python Fraction, integer-square-root enclosures; positive arcsin series with geometric tail, alternating atan series and Machin pi identity; outward rational rounding.",
+      "scope": "Uniform H/G bounds on every point of the stated interval, via the analytic operator reduction S24-S26. No sampling argument.",
+      "full_three_cell_gap": "ell*(1-3/sqrt(10)) on [1/4,3/5]",
+      "full_three_cell_gap_at_half": "ell*(2/sqrt(3)-1)"
+    }
+  },
+  "analytic_claims_certified_by_this_script": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "standard_sector_exploration": {
+    "numpy_version": "1.26.4",
+    "scope": "Uncertified Nystrom exploration on [0,10]; no tail, discretization or rounding error enclosure; not an all-rho or fixed-rho proof.",
+    "cases": [
+      {
+        "nodes": 180,
+        "cutoff": 10,
+        "rho": 0.1,
+        "largest_constrained_generalized_eigenvalue": 0.23933767159473626
+      },
+      {
+        "nodes": 180,
+        "cutoff": 10,
+        "rho": 0.5,
+        "largest_constrained_generalized_eigenvalue": 0.5184438777792926
+      },
+      {
+        "nodes": 180,
+        "cutoff": 10,
+        "rho": 0.9,
+        "largest_constrained_generalized_eigenvalue": 0.8960364434523342
+      },
+      {
+        "nodes": 180,
+        "cutoff": 10,
+        "rho": 0.99,
+        "largest_constrained_generalized_eigenvalue": 0.9898285740542135
+      },
+      {
+        "nodes": 360,
+        "cutoff": 10,
+        "rho": 0.1,
+        "largest_constrained_generalized_eigenvalue": 0.2393376715947513
+      },
+      {
+        "nodes": 360,
+        "cutoff": 10,
+        "rho": 0.5,
+        "largest_constrained_generalized_eigenvalue": 0.5184438777793046
+      },
+      {
+        "nodes": 360,
+        "cutoff": 10,
+        "rho": 0.9,
+        "largest_constrained_generalized_eigenvalue": 0.8960364434523411
+      },
+      {
+        "nodes": 360,
+        "cutoff": 10,
+        "rho": 0.99,
+        "largest_constrained_generalized_eigenvalue": 0.9898285740542166
+      }
+    ]
+  }
+}
