@@ -1,4 +1,4 @@
-# Higher three-power quotients on the marked octic's cyclotomic mirror
+# Higher-order quotients on the marked octic's cyclotomic mirror
 
 The fourth marked norm can give a cyclic quotient of
 order \(3^n\) in the class group of a cyclotomic layer
@@ -8,7 +8,8 @@ the parameter scale makes the same norm a local
 supply independent cubic quotients. On actual prime
 ratios, a fixed rational residue test controls the
 numerator prime, and the denominator prime splits
-completely.
+completely. The construction extends to every odd
+order and to arbitrary fixed split primes.
 
 ## The higher power scale
 
@@ -189,6 +190,13 @@ lifts by fixing the radicals, and commutes with
 the one in (2). In particular, for \(n>1\), the
 order-\(m\) factor contributes only order three
 to the abelianization over \(M\).
+For every \(1\le k\le n\), the same four elements
+also give the corresponding extension over
+\(M\mathbb Q(\zeta_{3^k})^+\). The valuations and
+local powers for \(3^n\) imply those for \(3^k\).
+Choose compatible roots inside \(L'\). Taking the
+fixed fields of the same involution yields nested
+extensions as \(k\) increases.
 
 Since \(3\) splits in \(K\), the local field of
 \(M\) at three is \(\mathbb Q_3(\sqrt{-3})\).
@@ -229,7 +237,7 @@ ratios \(t=s_m(P/Q)^m\), with distinct rational
 primes \(P,Q\equiv1\bmod m\), at scale \(X^{1/(8m)}\).
 There are \(\gg_m X^{1/(4m)}/(\log X)^{B_m}\)
 distinct resulting \(D\le X\). In \(W/B\),
-all primes above \(Q\) split; the Frobenius order
+all primes above \(Q\) split. The Frobenius order
 above \(P\) can be prescribed as any divisor of
 \(m\) without changing the exponent. The cubic
 factors from the three \(\delta_i\) split at both
@@ -307,3 +315,243 @@ This gives the claimed field count after a
 logarithmic loss. The explicit residue tests
 are local to each moving prime, including the
 case \(m=3\).
+
+## Odd exponents and arbitrary finite splitting conditions
+
+**Theorem YR4.** Fix any odd \(m>1\) and put
+\(N_0=\operatorname{lcm}(3,m)\). Choose \(a\) and
+\(c_m\) as in YR1. For a fixed finite set \(\mathcal S\)
+of rational primes, there are
+\(\gg_{m,\mathcal S} X^{1/(4m)}/(\log X)^2\) real
+quadratic fields of discriminant at most \(X\) from
+\(t=c_mu^m\) with every prime of \(\mathcal S\)
+split. Each has imaginary mirror \(M\) and field
+\(B=M\mathbb Q(\zeta_{N_0})^+\) with an abelian
+unramified extension \(W/B\) of group
+\[
+                    \mathbb Z/m\times(\mathbb Z/3)^3
+\]
+split above the primes of \(\mathcal S\cup\{p:p\mid N_0\}\).
+The extension over \(M\) is the semidirect product
+by
+\[
+       \Gamma=\{a_0\in(\mathbb Z/N_0)^\times:
+                            a_0\equiv1\bmod3\},
+\]
+acting by \(a_0\bmod m\) on the \(\mathbb Z/m\)
+factor and trivially on the three cubic factors.
+The discriminant of \(B\) is
+\[
+      |\operatorname{Disc}(\mathbb Q(\zeta_{N_0}))|
+                              D^{\varphi(N_0)/2}.
+\]
+Thus the lower count in the bound \(Y\) for this
+discriminant is
+\(\gg_{m,\mathcal S}Y^{1/(2m\varphi(N_0))}/(\log Y)^2\).
+With the same exponent and a logarithmic loss,
+the fields can be obtained from genuine prime
+ratios as in YR3, now with \(P,Q\equiv1\bmod N_0\).
+All denominator primes split in \(W/B\), and every
+order dividing \(m\) can be prescribed above the
+numerator prime. The three cubic factors split
+at both moving primes.
+
+The common simplification is to take the parameter
+near infinity at every prime where a local power
+is needed. On the branch where \(\beta\) has a pole,
+the leading term of \(\gamma\) after substitution
+is
+\[
+           \frac{(7/3)^4}{11^3}(c_mu^m)^4
+                           =11^{4a-3}u^{4m}.
+\]
+This is a rational \(m\)-th power. The quotient by
+it tends to one at the pole and hence lies in the
+local \(m\)-th powers sufficiently near that pole
+at any fixed prime. The other branch is reciprocal.
+The three cubic marks likewise become local cubes
+by the leading-coefficient table of YR1. Make these
+choices at all primes of \(\mathcal S\), at the
+primes dividing \(N_0\), and at \(2,3,5,7,11\).
+At all other primes the valuations of \(\gamma\)
+are multiples of \(m\) by the trace test, since
+\(v_p(t)\) is divisible by \(m\). The good-prime
+proof for the three cubic marks still applies.
+
+For each prime \(\ell\mid m\), \(\gamma\) is
+geometrically non-\(\ell\)-power on \(R^2=F(c_mu^m)\).
+The degree-\(m\) Kummer change can kill a base
+\(\ell\)-class only in the line of \(t\).
+The orders of \(\gamma\) at the two points over
+zero are \(4,-4\), whereas those of \(t\) agree.
+For \(3\mid m\), the same argument shows geometric
+independence of \(\gamma\) and all three cubic
+marks modulo cubes, since the latter have
+cube-divisible divisors. For \(3\nmid m\), the
+three cubic classes remain independent after the
+cover of degree prime to three.
+
+For each required prime exponent, the geometric
+Kummer cover and its twists now supply fixed
+residue directions. Choose distinct sufficiently
+large primes \(q\) splitting the required roots
+of unity and outside the fixed bad and splitting
+sets. The covers are geometrically connected
+at good reductions. For any chosen nontrivial
+character of \(\gamma\) at an \(\ell\mid m\),
+or a basis character of the required cubic space,
+the finite-field Hasse–Weil bound on the associated
+twist gives a point realizing that character
+for all sufficiently large such \(q\). One deletes
+the finitely many points over zeros, poles and
+branch fibers. All conditions are on \(u\) and are
+therefore attainable simultaneously. At one further
+fixed prime \(p_0\nmid N_0\), impose a valuation-one
+condition on the radicand near a simple root of
+\(F(c_mu^m)\) modulo that prime. Choose \(p_0\)
+completely split in its splitting field, outside
+all the other fixed primes. The root is finite
+and nonzero since the leading and constant
+coefficients are units there. The condition makes
+\(K\) ramify at \(p_0\) and ensures disjointness
+from \(\mathbb Q(\zeta_{N_0})\).
+
+Now use \(L=K\mathbb Q(\zeta_{N_0})\).
+A non-power class for an odd prime \(\ell\) in
+the real field \(K\) stays a non-power in the
+abelian extension \(L/K\). An irreducible
+\(X^\ell-z\) would otherwise give a Galois
+degree-\(\ell\) subfield containing \(\zeta_\ell\),
+which is impossible for real \(K\).
+For each prime divisor of \(m\), divide any
+purported Kummer relation by its highest common
+power of that prime. The relevant roots of unity
+are already present in \(L\), so the resulting
+relation contradicts the residue tests. At three
+use the full rank-four test when \(3\mid m\).
+This gives the stated product over \(L\).
+The central involution and its order-two descent
+in YR2 work with \(N_0\) in place of \(m\). The lifts
+of the elements of \(\Gamma\) act by their cyclotomic
+characters and fix the chosen radicals, giving the
+semidirect product. The checker also verifies local
+fifteenth powers and the mixed cubic and quintic
+residue tests for \(m=15\).
+The congruence condition on \(\Gamma\) is exactly
+the restriction fixing \(M\). At every prime
+dividing \(N_0\), \(K\) is split, so the local
+algebra of \(B\) is the full cyclotomic local
+algebra. Outside \(N_0\) the cyclotomic extension
+is unramified. This proves the discriminant
+formula. The group of \(B/\mathbb Q\) can have
+several quadratic subfields when \(m\) is
+composite. Its number of quadratic subfields
+depends only on \(N_0\), and each possible \(M\)
+determines \(D\). The height-to-discriminant
+calculation of YR3 therefore still gives the
+claimed exponents. The fixed elliptic twist
+conductors in YR3 also hold.
+
+For the prime restriction, write \(u=u_*P/Q\)
+with one fixed rational \(u_*\) of sufficiently
+negative valuation at the specified split primes.
+The remaining residue conditions are all unit
+conditions, including the one at \(p_0\).
+On the boundary of the moving primes the same
+unit coefficients \(A,1\) as in YR3 result.
+The unit condition \(P,Q\equiv1\bmod N_0\)
+makes each prime split in the cyclotomic field.
+Valuation four at two gives the full cyclic
+extension for \(A\) over \(\mathbb Q(\zeta_{N_0})\).
+The fixed ratio congruences away from its
+ramification are independent of this Frobenius
+condition by disjointness of the corresponding
+cyclotomic fields. The degree-\(8m\) prime
+count of YR3 then applies for every fixed \(m\).
+
+## An explicit degree-\(m\) field
+
+**Corollary YR5.** For each field in YR4, let
+\(D_j(Z,1)\) be the Dickson polynomials with
+\(D_0=2,\ D_1=Z,\ D_{j+1}=ZD_j-D_{j-1}\).
+The polynomial
+\[
+            D_m(Z,1)-\operatorname{Tr}_{K/\mathbb Q}\gamma
+\]
+is irreducible and defines a degree-\(m\) field \(F_m\)
+of signature \((1,(m-1)/2)\) with affine Galois closure
+group \((\mathbb Z/m)\rtimes(\mathbb Z/m)^\times\).
+Its field discriminant has absolute value
+\[
+       D^{(m-1)/2}
+       \prod_{p^e\parallel m}
+          p^{(m/p^e)\left(e p^e-2(p^e-1)/(p-1)\right)}.
+ \tag{4}
+\]
+For each fixed \(m\), this gives
+\(\gg_m Y^{1/(2m(m-1))}/(\log Y)^2\) distinct degree-\(m\)
+fields of absolute discriminant at most \(Y\).
+In the prime-ratio version the numerator prime has
+\(m/j\) factors of degree \(j\), for any prescribed
+\(j\mid m\), and the denominator prime splits
+completely. The logarithmic loss for that version
+may be a larger fixed power.
+
+Use the high-order radical alone:
+\[
+           L_m'=K(\zeta_m,\theta),\qquad \theta^m=\gamma .
+\]
+The same independence argument as in YR4 gives
+degree \(m\) over \(K(\zeta_m)\). Its norm-one
+involution sends \(\theta\) and \(\zeta_m\) to their
+inverses, alongside conjugation on \(K\). Its fixed
+field has Galois group over \(\mathbb Q\) equal to
+the affine semidirect product. The complement
+\((\mathbb Z/m)^\times\) fixes \(\theta+\theta^{-1}\).
+The [Dickson identity in PA3](ABC_HIGHER_PRIME_PATH_AFFINE_REFLECTION.md)\ngives the \(m\) conjugates
+\(\theta\zeta_m^i+\theta^{-1}\zeta_m^{-i}\).
+They are distinct, since equality at two indices
+would force \(\theta^2\) to be a root of unity and
+hence \(\gamma=1\). This also gives the faithful
+affine action. The positive real \(\gamma\) has a
+positive real \(m\)-th root \(\theta\ne1\), so exactly
+one of the conjugates is real. The trace in the
+polynomial can also be written \(T(t)^2/11^3-2\)
+using the trace \(T(t)\) of \(\beta\).
+
+At \(p\nmid m\), ramification can occur only when
+\(p\mid D\). At such a prime the cyclotomic extension
+is unramified, and inertia over \(\mathbb Q_p\)
+is a group of order two with multiplier \(-1\) in
+the affine action. Every affine transformation of
+multiplier \(-1\) on \(\mathbb Z/m\) fixes one point
+and swaps the remaining \(m-1\) points in pairs.
+The prime \(2\) splits in \(K\), so all these
+inertia groups are tame. This gives the
+\(D^{(m-1)/2}\) factor.
+
+At \(p^e\parallel m\), the local field \(K\) splits
+and \(\gamma\) is a local \(m\)-th power, so at one
+branch we can take \(\theta\in\mathbb Q_p\).
+The local action on the \(m\) roots of the Dickson
+polynomial is therefore the action on the \(m\)-th
+roots of unity under the displayed bijection.
+The two finite étale algebras over \(\mathbb Q_p\)
+are isomorphic. After passing to the maximal
+unramified extension, the prime-to-\(p\) roots of
+unity give \(m/p^e\) components and the \(p\)-power
+part gives the fields of primitive \(p^k\)-th roots
+for \(0\le k\le e\). Thus the discriminant exponent
+is
+\[
+      \frac{m}{p^e}\sum_{k=1}^e
+            p^{k-1}(k(p-1)-1)
+        =\frac{m}{p^e}\left(e p^e-2\frac{p^e-1}{p-1}\right).
+\]
+This proves (4). In the moving-prime slice the
+affine Frobenius is a translation of the order
+computed in YR4. Its cycles have that order
+throughout. Formula (4) distinguishes different
+\(D\)'s and changes the cutoff in YR4 from \(X\)
+to a constant times \(Y^{2/(m-1)}\), giving the
+count.

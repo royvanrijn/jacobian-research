@@ -2,7 +2,7 @@
 from pathlib import Path
 from runpy import run_path
 
-from sage.all import GF, LaurentSeriesRing, Matrix, QQ, Qp, ZZ
+from sage.all import GF, LaurentSeriesRing, Matrix, NumberField, PolynomialRing, QQ, Qp, ZZ
 
 data = run_path(str(Path(__file__).with_name("verify_marked_octic_mirror_class_rank_four.py")))
 F, marks, beta = (data[name] for name in ("F", "points", "beta"))
@@ -84,5 +84,57 @@ for p, v in [(73, m), (37, -m)]:
     expected = GF(p)(constant if v > 0 else 1)
     assert actual**((p-1)//m) == expected**((p-1)//m)
     assert (expected**((p-1)//m)).multiplicative_order() == (m if v > 0 else 1)
+
+# A mixed exponent instance of YR4 with local fifteenth powers at three and five.
+m = 15
+c = QQ(3)/7*11**12
+for p in (3, 5):
+    t = c*QQ(p)**(-5*m)
+    local = Qp(p, prec=1000)
+    root = local(F(t)).sqrt()
+    for sign in (1, -1):
+        evaluation = local(beta[1](t))+sign*local(beta[0](t))*root
+        gamma = evaluation**2/11**3
+        assert gamma.valuation() % m == 0 and gamma.precision_relative() >= 3
+        assert ZZ(gamma.unit_part().lift())**(p-1) % p**2 == 1
+
+mixed_rows = []
+for p, u, radical, zeta, row in [
+    (13, 7, 1, 3, [0, 2, 2, 1]), (19, 4, 3, 7, [1, 2, 2, 2]),
+    (31, 3, 6, 25, [2, 1, 2, 1]), (37, 2, 10, 26, [2, 2, 2, 2]),
+]:
+    k = GF(p)
+    t = k(c*u**m)
+    root = k(radical)
+    assert root != 0 and root**2 == F.change_ring(k)(t)
+    zeta = k(zeta)
+    for (coefficient, rational), exponent in zip(marks+[beta], row):
+        value = evaluate(rational)+root*evaluate(coefficient)
+        assert value != 0 and value**((p-1)//3) == zeta**exponent
+    if p == 31:
+        gamma = (evaluate(beta[1])+root*evaluate(beta[0]))**2/k(11**3)
+        assert gamma**6 == k(16)
+    mixed_rows.append(row)
+assert Matrix(GF(3), mixed_rows).rank() == 4
+
+# For a rational local radical, the Dickson algebra has the cyclotomic discriminant.
+ring = PolynomialRing(QQ, "Z")
+Z = ring.gen()
+previous, dickson = ring(2), Z
+for d in range(2, 16):
+    previous, dickson = dickson, Z*dickson-previous
+    if d not in (5, 9, 15):
+        continue
+    local_model = dickson-(QQ(2)**d+QQ(2)**(-d))
+    factors = local_model.factor()
+    assert all(multiplicity == 1 for _, multiplicity in factors)
+    assert sorted(f.degree() for f, _ in factors) == {
+        5: [1, 4], 9: [1, 2, 6], 15: [1, 2, 4, 8]
+    }[d]
+    discriminant = 1
+    for factor, _ in factors:
+        if factor.degree() != 1:
+            discriminant *= abs(NumberField(factor, "a").discriminant())
+    assert discriminant == {5: 5**3, 9: 3**10, 15: 3**5*5**9}[d]
 
 print("Verified the boundary cube coefficients, higher three-adic powers, and prime residue tests.")

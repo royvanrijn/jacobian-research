@@ -9245,6 +9245,40 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Written proof by discriminant coefficients and the relative area form of the weighted pair on the first nontrivial divisor."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-SQUARE-CUSP-WEIGHT-456-REDUCTION",
+          "title": "The square-cusp highest tuple is unchanged in weights (4,5,6)",
+          "scope": "If a three-variable characteristic-zero Keller map has ordinary highest tuple (P^3,P*x^4,x^6) with P=x*z+y^2, the same tuple is highest in weights (4,5,6). In particular its third degree-five correction is divisible by x^3.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof by four isolating weighted determinant coefficients and coprimeness of the leading derivative minors for the possible remaining tie."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-SQUARE-CUSP-BINARY-EDGE-REDUCTION",
+          "title": "The square cusp reaches a binary weight edge with no mixed correction to its second output",
+          "scope": "Under the square-cusp hypothesis, the highest tuple in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). Both the second and third degree-five corrections satisfy the resulting stronger divisibilities by x^2 and x^3 respectively.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof by enumerating the first transverse ties, lifting the finite leading normalization, and regular descent along an ordinary cusp on a generic fixed level."
         }
       ],
       "open_questions": [
@@ -9321,7 +9355,7 @@
           "source": "jacobian/monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md"
         },
         {
-          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections obey E_2=b*x*P^2 mod x^2 and E_3=c*x*P^2 mod x^3. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The remaining normalized common factors are g=p with q=x^2, or g=x^2 with binary q, with p=xz+y^2. In the latter case with q(0,y) nonzero, the degree-five error is absorbed by a Veronese reference. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
+          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The remaining normalized common factors are g=p with q=x^2, or g=x^2 with binary q, with p=xz+y^2. In the latter case with q(0,y) nonzero, the degree-five error is absorbed by a Veronese reference. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
           "source": "jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md",
           "kind": "mathematical",
           "node": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
@@ -75833,7 +75867,7 @@
           "review_status": "internal_only",
           "dependency_coverage": "partial",
           "graph_scope_note": "For every fixed c in Q×, each fixed rational function on R²=F(cu³) yields a fifth independent virtual class at only o(H²) parameters of height at most H. No finite list can provide a uniform fifth class on a nonempty slice defined by finitely many local open conditions. VB2 gives the sharper O_c(H^(3/2) log H) bound; no uniformity over moving scales or functions, or upper count at unrestricted witness height, is asserted.",
-          "verification_note": "Written application of the exact norm-function span, divisor virtuality obstruction and finite-place lattice density.",
+          "verification_note": "Written application of the exact norm-function span, divisor virtuality obstruction and finite-place lattice density; the sharper bound uses VB2–VB4 with c and the functions fixed.",
           "checker": null,
           "artifact_hash": null
         },
@@ -76080,6 +76114,131 @@
           "dependency_coverage": "partial",
           "graph_scope_note": "Apart from finitely many parameters in MP3, the quadratic twist of the explicit Tate curve by fundamental D has positive rank and exact conductor 27161D². For each sign the conductor count has exponent 1/(4m) with the respective unrestricted and prime-ratio logarithmic losses.",
           "verification_note": "Written anti-invariant point argument, and exact base conductor, local squareclasses and conductor exponents checked in SageMath."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-FOUR-VIRTUAL-MARKS-WITH-HIGH-THREE-POWER-LOCAL-NORM",
+          "title": "The marked octic supports one high three-power virtual norm and three independent cubic marks",
+          "state": "proved",
+          "scope": "For every fixed m=3^n, taking t=(3/7)11^a u^m with 4a≡3 mod m gives a fixed slice of real fields on which the norm-one fourth mark is m-virtual and a local m-th power at three. The three norm-one elliptic marks are virtual cubic classes and cubes at three, all four independent modulo cubes. The primes 2,3,5,7,11 split.",
+          "canonical_source": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_cyclotomic_three_power_reflection.py",
+          "artifact_hash": "sha256:01f574843c3bde5a4c4c137e53114dd92c24b5b4c8d4acf3aff7b7437022bb47",
+          "proof_type": "written+exact_certificate",
+          "additional_checkers": [
+            {
+              "path": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+              "sha256": "1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+              "locator": "Base elliptic maps and norm identity imported by the higher-power checker"
+            }
+          ],
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every fixed m=3^n, taking t=(3/7)11^a u^m with 4a≡3 mod m gives a fixed slice of real fields on which the norm-one fourth mark is m-virtual and a local m-th power at three. The three norm-one elliptic marks are virtual cubic classes and cubes at three, all four independent modulo cubes. The primes 2,3,5,7,11 split.",
+          "verification_note": "Written scale and trace valuation proof for all n, with exact boundary coefficients, independent character rows, and p-adic replays at m=3,9,27."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-CYCLOTOMIC-MIRROR-MIXED-THREE-POWER-QUOTIENT",
+          "title": "The cyclotomic mirror has an unramified mixed three-power quotient split at three",
+          "state": "proved",
+          "scope": "For each field of YR1, M=Q(sqrt(−3D)) and B=M Q(ζ_m)^+ give an unramified extension W/B split above three with Galois group Z/m×(Z/3)^3. Over M the order-m part has cyclotomic semidirect action by four of the order-m/3 group. Compatible smaller levels occur for the same fixed field up to n. The discriminant of B is 3^((2n−1)m/3)D^(m/3).",
+          "canonical_source": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_cyclotomic_three_power_reflection.py",
+          "artifact_hash": "sha256:01f574843c3bde5a4c4c137e53114dd92c24b5b4c8d4acf3aff7b7437022bb47",
+          "proof_type": "written+exact_certificate",
+          "additional_checkers": [
+            {
+              "path": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+              "sha256": "1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+              "locator": "Base elliptic maps and norm identity imported by the higher-power checker"
+            }
+          ],
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For each field of YR1, M=Q(sqrt(−3D)) and B=M Q(ζ_m)^+ give an unramified extension W/B split above three with Galois group Z/m×(Z/3)^3. Over M the order-m part has cyclotomic semidirect action by four of the order-m/3 group. Compatible smaller levels occur for the same fixed field up to n. The discriminant of B is 3^((2n−1)m/3)D^(m/3).",
+          "verification_note": "Written Kummer independence, central involution and cyclotomic action argument, descent of ramification and discriminant computation. The checker supplies YR1 inputs."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-HIGH-THREE-POWER-MOVING-PRIME-ARTIN-TYPES-AND-COUNT",
+          "title": "Actual prime ratios give controlled Frobenius orders in the higher cyclotomic mirror",
+          "state": "proved",
+          "scope": "For every fixed m=3^n the unrestricted K count has exponent 1/(4m) with log-squared loss, and the cyclotomic layer discriminant count exponent 3/(4m²). Restricting to genuine distinct prime ratios preserves exponent 1/(4m) with a log-power loss. The denominator prime splits in W/B. The numerator prime has any prescribed order dividing m by the fixed pure-radical residue (98/3)^4/11^6. Three fixed positive-rank twists have conductors 1540D²,13860D²,6930D².",
+          "canonical_source": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_cyclotomic_three_power_reflection.py",
+          "artifact_hash": "sha256:01f574843c3bde5a4c4c137e53114dd92c24b5b4c8d4acf3aff7b7437022bb47",
+          "proof_type": "written+exact_certificate",
+          "additional_checkers": [
+            {
+              "path": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+              "sha256": "1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+              "locator": "Base elliptic maps and norm identity imported by the higher-power checker"
+            }
+          ],
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every fixed m=3^n the unrestricted K count has exponent 1/(4m) with log-squared loss, and the cyclotomic layer discriminant count exponent 3/(4m²). Restricting to genuine distinct prime ratios preserves exponent 1/(4m) with a log-power loss. The denominator prime splits in W/B. The numerator prime has any prescribed order dividing m by the fixed pure-radical residue (98/3)^4/11^6. Three fixed positive-rank twists have conductors 1540D²,13860D²,6930D².",
+          "verification_note": "Written prime residue identities and Chebotarev-CRT compatibility, comparison of fixed parameter heights with discriminants and field multiplicity, and exact sample order-nine and completely split residue tests."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION-SPLIT-SET",
+          "title": "Every odd order occurs in the marked octic cyclotomic reflection with prescribed finite splitting",
+          "state": "proved",
+          "scope": "For each fixed odd m>1 and finite rational prime set S, the explicit marked family gives ≫ X^(1/(4m))/(log X)^2 real D≤X. For N0=lcm(3,m), the cyclotomic mirror B=M Q(ζ_N0)^+ has an unramified Z/m×(Z/3)^3 quotient split above S and the primes dividing N0, with explicit cyclotomic action over M and discriminant |Disc(Qζ_N0)| D^(φ(N0)/2). The same exponent with logarithmic loss holds on genuine prime ratios with every numerator Frobenius order and complete denominator splitting.",
+          "canonical_source": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_cyclotomic_three_power_reflection.py",
+          "artifact_hash": "sha256:01f574843c3bde5a4c4c137e53114dd92c24b5b4c8d4acf3aff7b7437022bb47",
+          "proof_type": "written+exact_certificate",
+          "additional_checkers": [
+            {
+              "path": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+              "sha256": "1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+              "locator": "Base elliptic maps and norm identity imported by the higher-power checker"
+            }
+          ],
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For each fixed odd m>1 and finite rational prime set S, the explicit marked family gives ≫ X^(1/(4m))/(log X)^2 real D≤X. For N0=lcm(3,m), the cyclotomic mirror B=M Q(ζ_N0)^+ has an unramified Z/m×(Z/3)^3 quotient split above S and the primes dividing N0, with explicit cyclotomic action over M and discriminant |Disc(Qζ_N0)| D^(φ(N0)/2). The same exponent with logarithmic loss holds on genuine prime ratios with every numerator Frobenius order and complete denominator splitting.",
+          "verification_note": "Written leading m-th power calculation at the common pole, finite-field character specialization and general odd Kummer descent. Exact m=15 local power and mixed quintic/cubic residue example."
+        },
+        {
+          "id": "ARITH-MARKED-OCTIC-DICKSON-ODD-DEGREE-EXACT-AFFINE-FIELD-DISCRIMINANTS",
+          "title": "The marked odd-order radical gives explicit affine fields with exact discriminants",
+          "state": "proved",
+          "scope": "For fixed odd m>1 the Dickson polynomial D_m(Z,1)−Tr gamma is irreducible and has the full affine Galois closure group Z/m ⋊ (Z/m)×. Its degree-m field has signature (1,(m−1)/2) and |Disc|=D^((m−1)/2) times the specified fixed product over p^e dividing m. Counts are ≫_m Y^(1/(2m(m−1)))/(log Y)^2, or with a power of log loss on genuine prime ratios, with any numerator translation-cycle length and complete denominator splitting.",
+          "canonical_source": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_marked_octic_cyclotomic_three_power_reflection.py",
+          "artifact_hash": "sha256:01f574843c3bde5a4c4c137e53114dd92c24b5b4c8d4acf3aff7b7437022bb47",
+          "proof_type": "written+exact_certificate",
+          "additional_checkers": [
+            {
+              "path": "arithmetic/verify_marked_octic_mirror_class_rank_four.py",
+              "sha256": "1e7bdf4c9a266d5d2a719b160561be91df6ce64ec3267b0e1b28cb6cd5d9854c",
+              "locator": "Base elliptic maps and norm identity imported by the higher-power checker"
+            }
+          ],
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For fixed odd m>1 the Dickson polynomial D_m(Z,1)−Tr gamma is irreducible and has the full affine Galois closure group Z/m ⋊ (Z/m)×. Its degree-m field has signature (1,(m−1)/2) and |Disc|=D^((m−1)/2) times the specified fixed product over p^e dividing m. Counts are ≫_m Y^(1/(2m(m−1)))/(log Y)^2, or with a power of log loss on genuine prime ratios, with any numerator translation-cycle length and complete denominator splitting.",
+          "verification_note": "Written affine root permutation, tame quadratic inertia and local cyclotomic algebra calculation. Exact local Dickson algebra discriminant checks for m=5,9,15."
         }
       ],
       "open_questions": [
@@ -290746,7 +290905,7 @@
       {
         "id": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION",
         "title": "Three-variable sextic Keller inversion",
-        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections obey E_2=b*x*P^2 mod x^2 and E_3=c*x*P^2 mod x^3. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The remaining normalized common factors are g=p with q=x^2, or g=x^2 with binary q, with p=xz+y^2. In the latter case with q(0,y) nonzero, the degree-five error is absorbed by a Veronese reference. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
+        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The remaining normalized common factors are g=p with q=x^2, or g=x^2 with binary q, with p=xz+y^2. In the latter case with q(0,y) nonzero, the degree-five error is absorbed by a Veronese reference. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
         "kind": "gap",
         "status": "open",
         "origin": "internal",
@@ -290754,7 +290913,7 @@
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
         "dependency_coverage": "partial",
-        "next_action": "Handle the cubic outer map cuspidal at the square member and the two remaining common-factor frames for quadratic outer maps on tangent-conic pencils. Study the weight thresholds for transverse degree one. For lower leading rank, study the nonbinary square-member case of the reduced (6,4,4) profile, (6,5,4) with a repeated lower leading factor, and the non-ordinary-cusp derivative lines in binary mixed profiles with lower forms sharing a factor.",
+        "next_action": "Handle the remaining binary edge and quartic-critical contact for the cubic outer map cuspidal at the square member and the two remaining common-factor frames for quadratic outer maps on tangent-conic pencils. Study the weight thresholds for transverse degree one. For lower leading rank, study the nonbinary square-member case of the reduced (6,4,4) profile, (6,5,4) with a repeated lower leading factor, and the non-ordinary-cusp derivative lines in binary mixed profiles with lower forms sharing a factor.",
         "sources": [
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md",
@@ -291215,6 +291374,16 @@
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md",
+            "sha256": "b30958f42c2f8c761d4180d95e5f96711b95778d2d12035c3a3feeb6adda1602",
+            "locator": "SexticKellerSquareCuspWeight456Reduction"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md",
+            "sha256": "b30958f42c2f8c761d4180d95e5f96711b95778d2d12035c3a3feeb6adda1602",
+            "locator": "SexticKellerSquareCuspBinaryEdgeReduction"
           }
         ]
       },
@@ -479940,7 +480109,8 @@
         "id": "MARKED-NORM-SPAN-AND-DIVISOR-OBSTRUCTION-TO-NO-DENSE-FIFTH-FUNCTION",
         "premises": [
           "ARITH-MARKED-OCTIC-CUBIC-COVER-NORM-FUNCTIONS-EXHAUSTED",
-          "ARITH-QUADRATIC-PARAMETER-VIRTUALITY-NECESSARY-DIVISOR-POWER"
+          "ARITH-QUADRATIC-PARAMETER-VIRTUALITY-NECESSARY-DIVISOR-POWER",
+          "ARITH-QUADRATIC-VIRTUALITY-FIXED-FUNCTION-POWER-SAVING"
         ],
         "conclusion": "ARITH-MARKED-OCTIC-NO-DENSE-FIFTH-FIXED-VIRTUAL-FUNCTION",
         "status": "proved",
@@ -479948,7 +480118,7 @@
         "proof": {
           "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
           "sha256": "5c5d5abecffe6b5d7552a27b9f2b7f3686a5172e2181b63bf0c785bfe8b23aed",
-          "locator": "Corollary CK5"
+          "locator": "Corollary CK5, qualitative argument and VB2–VB4 quantitative refinement for every fixed c"
         }
       },
       {
@@ -480269,6 +480439,123 @@
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection"
+        }
+      },
+      {
+        "id": "MARKED-OCTIC-TRACE-AND-CUBIC-MAPS-TO-HIGH-THREE-POWER-LOCAL-CHOICE",
+        "premises": [
+          "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
+          "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+          "ARITH-MARKED-OCTIC-BETA-EXACT-LOCAL-TRACE-CRITERION",
+          "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-FOUR-VIRTUAL-MARKS-WITH-HIGH-THREE-POWER-LOCAL-NORM",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "sha256": "1a5cef60252f89acf3505d74563918309561ab032eeb8c849331188574370bad",
+          "locator": "Proposition YR1"
+        }
+      },
+      {
+        "id": "HIGH-THREE-POWER-VIRTUAL-MARKS-TO-CYCLOTOMIC-MIRROR-QUOTIENT",
+        "premises": [
+          "ARITH-MARKED-OCTIC-FOUR-VIRTUAL-MARKS-WITH-HIGH-THREE-POWER-LOCAL-NORM"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-CYCLOTOMIC-MIRROR-MIXED-THREE-POWER-QUOTIENT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "sha256": "1a5cef60252f89acf3505d74563918309561ab032eeb8c849331188574370bad",
+          "locator": "Theorem YR2"
+        }
+      },
+      {
+        "id": "CYCLOTOMIC-MIRROR-TO-FIXED-HEIGHT-AND-MOVING-PRIME-ARTIN-COUNT",
+        "premises": [
+          "ARITH-MARKED-OCTIC-FOUR-VIRTUAL-MARKS-WITH-HIGH-THREE-POWER-LOCAL-NORM",
+          "ARITH-MARKED-OCTIC-CYCLOTOMIC-MIRROR-MIXED-THREE-POWER-QUOTIENT",
+          "ARITH-MARKED-OCTIC-TWO-INEQUIVALENT-FOUR-MARK-COVERS-SPLIT-SLICE",
+          "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES",
+          "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT",
+          "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
+          "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-HIGH-THREE-POWER-MOVING-PRIME-ARTIN-TYPES-AND-COUNT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "sha256": "1a5cef60252f89acf3505d74563918309561ab032eeb8c849331188574370bad",
+          "locator": "Corollary YR3"
+        }
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-SQUARE-CUSP-WEIGHT-456-REDUCTION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-SQUARE-TANGENT-CONIC-AT-CUSP-FIRST-CORRECTION",
+          "JAC-KELLER-SATURATED-LEADING-PENCIL-EXCLUSION"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-SQUARE-CUSP-WEIGHT-456-REDUCTION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md",
+          "sha256": "b30958f42c2f8c761d4180d95e5f96711b95778d2d12035c3a3feeb6adda1602",
+          "locator": "SexticKellerSquareCuspWeight456Reduction"
+        }
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-SQUARE-CUSP-BINARY-EDGE-REDUCTION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-SQUARE-CUSP-WEIGHT-456-REDUCTION",
+          "JAC-KELLER-SATURATED-LEADING-PENCIL-EXCLUSION",
+          "JAC-KELLER-FINITE-BIRATIONAL-BINARY-LEADING-EXCLUSION",
+          "JAC-SEXTIC-KELLER-BINARY-ORDINARY-CUSP-EXCLUSION"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-SQUARE-CUSP-BINARY-EDGE-REDUCTION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md",
+          "sha256": "b30958f42c2f8c761d4180d95e5f96711b95778d2d12035c3a3feeb6adda1602",
+          "locator": "SexticKellerSquareCuspBinaryEdgeReduction"
+        }
+      },
+      {
+        "id": "COMMON-POLE-MTH-POWER-TO-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION",
+        "premises": [
+          "ARITH-MARKED-OCTIC-FOUR-VIRTUAL-MARKS-WITH-HIGH-THREE-POWER-LOCAL-NORM",
+          "ARITH-MARKED-OCTIC-CYCLOTOMIC-MIRROR-MIXED-THREE-POWER-QUOTIENT",
+          "ARITH-MARKED-OCTIC-HIGH-THREE-POWER-MOVING-PRIME-ARTIN-TYPES-AND-COUNT",
+          "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
+          "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT",
+          "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION-SPLIT-SET",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "sha256": "1a5cef60252f89acf3505d74563918309561ab032eeb8c849331188574370bad",
+          "locator": "Theorem YR4"
+        }
+      },
+      {
+        "id": "ODD-CYCLOTOMIC-REFLECTION-AND-DICKSON-IDENTITY-TO-EXACT-AFFINE-DISCRIMINANTS",
+        "premises": [
+          "ARITH-MARKED-OCTIC-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION-SPLIT-SET",
+          "ARITH-ABC-HIGHER-PRIME-PATH-AFFINE-REFLECTION-DICKSON-POLYNOMIAL"
+        ],
+        "conclusion": "ARITH-MARKED-OCTIC-DICKSON-ODD-DEGREE-EXACT-AFFINE-FIELD-DISCRIMINANTS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "sha256": "1a5cef60252f89acf3505d74563918309561ab032eeb8c849331188574370bad",
+          "locator": "Corollary YR5"
         }
       }
     ],
@@ -512491,6 +512778,24 @@
               "nodes": [
                 "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
                 "ARITH-MARKED-OCTIC-CUBIC-COVER-EXACT-RATIONAL-THREE-TORSION"
+              ]
+            },
+            {
+              "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+              "locator": "YR3, prime residue order over the fixed cyclotomic field",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
+                "ARITH-MARKED-OCTIC-HIGH-THREE-POWER-MOVING-PRIME-ARTIN-TYPES-AND-COUNT"
+              ]
+            },
+            {
+              "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+              "locator": "YR4, quadratic irreducibility condition and prescribed prime Artin orders",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
+                "ARITH-MARKED-OCTIC-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION-SPLIT-SET"
               ]
             }
           ],
@@ -562725,10 +563030,59 @@
               "nodes": [
                 "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES"
               ]
+            },
+            {
+              "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+              "locator": "YR3, fixed-local degree-two quadratic field count",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT",
+                "ARITH-MARKED-OCTIC-HIGH-THREE-POWER-MOVING-PRIME-ARTIN-TYPES-AND-COUNT"
+              ]
+            },
+            {
+              "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+              "locator": "YR4, arbitrary fixed finite sets and degree-two parameter map",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT",
+                "ARITH-MARKED-OCTIC-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION-SPLIT-SET"
+              ]
             }
           ],
           "verification": "source_read",
           "verification_basis": "Theorem 1.2 and its proof setup checked directly, including quadratic degree, fixed thin exclusion, local and height conditions. Corollary 1.4 and Theorem 1.5 give the stated comparison scopes."
+        },
+        {
+          "id": "REF-ARITH-HUBBARD-WASHINGTON-KUMMER-LAMBDA-0810.1691",
+          "title": "Kummer generators and lambda invariants",
+          "citation": "David Hubbard and Lawrence C. Washington, arXiv:0810.1691v1 (2008).",
+          "identifiers": {
+            "arxiv": "0810.1691v1"
+          },
+          "urls": [
+            "https://arxiv.org/pdf/0810.1691"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/hubbard-washington-kummer-lambda-0810.1691.pdf",
+              "sha256": "58dd4ba8b970b9bde651a5da1561f28318e14befe8f71d7633d530a6f915b630",
+              "locator": "Theorem 2 and Proposition 6, author copy pp. 13 and 18"
+            }
+          ],
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+              "locator": "YR2, comparison of Kummer generators and exact hypotheses",
+              "role": "context",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-CYCLOTOMIC-MIRROR-MIXED-THREE-POWER-QUOTIENT"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Read Theorem 2 and Proposition 6 for the radicand prime to three, class-number and lambda hypotheses. Comparison only."
         }
       ],
       "internal_citations": [
@@ -778967,7 +779321,8 @@
             "ARITH-MARKED-OCTIC-BETA-TWELVE-VIRTUAL-FOUR-LOCAL-CUBE-SCALES",
             "ARITH-MARKED-OCTIC-CUBIC-SCALES-RECIPROCAL-ISOMORPHISM-CLASSIFICATION",
             "ARITH-MARKED-OCTIC-TWO-INEQUIVALENT-FOUR-MARK-COVERS-SPLIT-SLICE",
-            "ARITH-FIXED-QUADRATIC-MARKED-FUNCTION-OBSTRUCTION-FIELD-COUNT-SCALES"
+            "ARITH-FIXED-QUADRATIC-MARKED-FUNCTION-OBSTRUCTION-FIELD-COUNT-SCALES",
+            "ARITH-QUADRATIC-VIRTUALITY-FIXED-FUNCTION-POWER-SAVING"
           ],
           "gaps": [
             "GAP-ARITH-MARKED-OCTIC-FIFTH-INDEPENDENT-VIRTUAL-CLASS"
@@ -779390,6 +779745,151 @@
           ],
           "statements": [],
           "explanation": "Finite exact normalized controls for the exceptional middle prime 31: first transverse layer 945/961 at e=2, none below one at e=3, and leading-row Wronskian 31*17 modulo 31^2 at e=2,...,6. No uniform closure is claimed."
+        },
+        {
+          "path": "arithmetic/MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md",
+          "sha256": "1a5cef60252f89acf3505d74563918309561ab032eeb8c849331188574370bad",
+          "role": "proof",
+          "claims": [
+            "ARITH-MARKED-OCTIC-FOUR-VIRTUAL-MARKS-WITH-HIGH-THREE-POWER-LOCAL-NORM",
+            "ARITH-MARKED-OCTIC-CYCLOTOMIC-MIRROR-MIXED-THREE-POWER-QUOTIENT",
+            "ARITH-MARKED-OCTIC-HIGH-THREE-POWER-MOVING-PRIME-ARTIN-TYPES-AND-COUNT",
+            "ARITH-MARKED-OCTIC-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION-SPLIT-SET",
+            "ARITH-MARKED-OCTIC-DICKSON-ODD-DEGREE-EXACT-AFFINE-FIELD-DISCRIMINANTS"
+          ],
+          "dependencies": [
+            "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
+            "ARITH-MARKED-OCTIC-REAL-CLASS-RANK-TWO-IMAGINARY-MIRROR-RANK-THREE",
+            "ARITH-MARKED-OCTIC-CUBIC-BASE-CHANGE-FOUR-VIRTUAL-MIRROR-DIRECTIONS",
+            "ARITH-MARKED-OCTIC-BETA-EXACT-LOCAL-TRACE-CRITERION",
+            "ARITH-MARKED-OCTIC-TWO-INEQUIVALENT-FOUR-MARK-COVERS-SPLIT-SLICE",
+            "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES",
+            "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT",
+            "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
+            "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+            "ARITH-ABC-HIGHER-PRIME-PATH-AFFINE-REFLECTION-DICKSON-POLYNOMIAL"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Proposition YR1.** Fix \\(m=3^n\\) for \\(n\\ge1\\), choose",
+              "kind": "proposition",
+              "line": 15,
+              "title": "Proposition YR1.** Fix \\(m=3^n\\) for \\(n\\ge1\\), choose",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-FOUR-VIRTUAL-MARKS-WITH-HIGH-THREE-POWER-LOCAL-NORM"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem YR2.** For a quadratic field in YR1 with",
+              "kind": "theorem",
+              "line": 121,
+              "title": "Theorem YR2.** For a quadratic field in YR1 with",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-CYCLOTOMIC-MIRROR-MIXED-THREE-POWER-QUOTIENT"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary YR3.** For each fixed \\(m=3^n\\), the",
+              "kind": "corollary",
+              "line": 223,
+              "title": "Corollary YR3.** For each fixed \\(m=3^n\\), the",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-HIGH-THREE-POWER-MOVING-PRIME-ARTIN-TYPES-AND-COUNT"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem YR4.** Fix any odd \\(m>1\\) and put",
+              "kind": "theorem",
+              "line": 320,
+              "title": "Theorem YR4.** Fix any odd \\(m>1\\) and put",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION-SPLIT-SET"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary YR5.** For each field in YR4, let",
+              "kind": "corollary",
+              "line": 473,
+              "title": "Corollary YR5.** For each field in YR4, let",
+              "nodes": [
+                "ARITH-MARKED-OCTIC-DICKSON-ODD-DEGREE-EXACT-AFFINE-FIELD-DISCRIMINANTS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Higher-power scaling, split-at-three Kummer descent to cyclotomic mirrors, and exact moving prime residue tests."
+        },
+        {
+          "path": "arithmetic/verify_marked_octic_cyclotomic_three_power_reflection.py",
+          "sha256": "01f574843c3bde5a4c4c137e53114dd92c24b5b4c8d4acf3aff7b7437022bb47",
+          "role": "evidence",
+          "claims": [
+            "ARITH-MARKED-OCTIC-FOUR-VIRTUAL-MARKS-WITH-HIGH-THREE-POWER-LOCAL-NORM",
+            "ARITH-MARKED-OCTIC-CYCLOTOMIC-MIRROR-MIXED-THREE-POWER-QUOTIENT",
+            "ARITH-MARKED-OCTIC-HIGH-THREE-POWER-MOVING-PRIME-ARTIN-TYPES-AND-COUNT",
+            "ARITH-MARKED-OCTIC-ARBITRARY-ODD-CYCLOTOMIC-REFLECTION-SPLIT-SET",
+            "ARITH-MARKED-OCTIC-DICKSON-ODD-DEGREE-EXACT-AFFINE-FIELD-DISCRIMINANTS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact leading cube coefficients, finite-prime rows, and finite higher-power local replays."
+        },
+        {
+          "path": "arithmetic/sources/hubbard-washington-kummer-lambda-0810.1691.pdf",
+          "sha256": "58dd4ba8b970b9bde651a5da1561f28318e14befe8f71d7633d530a6f915b630",
+          "role": "reference",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Primary comparison on Kummer generators in cyclotomic layers under different quadratic base hypotheses."
+        },
+        {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md",
+          "sha256": "b30958f42c2f8c761d4180d95e5f96711b95778d2d12035c3a3feeb6adda1602",
+          "role": "proof",
+          "claims": [
+            "JAC-SEXTIC-KELLER-SQUARE-CUSP-WEIGHT-456-REDUCTION",
+            "JAC-SEXTIC-KELLER-SQUARE-CUSP-BINARY-EDGE-REDUCTION"
+          ],
+          "dependencies": [
+            "JAC-SEXTIC-KELLER-SQUARE-TANGENT-CONIC-AT-CUSP-FIRST-CORRECTION",
+            "JAC-KELLER-SATURATED-LEADING-PENCIL-EXCLUSION",
+            "JAC-KELLER-FINITE-BIRATIONAL-BINARY-LEADING-EXCLUSION",
+            "JAC-SEXTIC-KELLER-BINARY-ORDINARY-CUSP-EXCLUSION"
+          ],
+          "gaps": [
+            "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem SexticKellerSquareCuspWeight456Reduction.",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem SexticKellerSquareCuspWeight456Reduction.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-SQUARE-CUSP-WEIGHT-456-REDUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem SexticKellerSquareCuspBinaryEdgeReduction.",
+              "kind": "theorem",
+              "line": 9,
+              "title": "Theorem SexticKellerSquareCuspBinaryEdgeReduction.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-SQUARE-CUSP-BINARY-EDGE-REDUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Determines the highest tuple at weights (4,5,6) and reduces the later binary edge at weights (10,15,18)."
         }
       ]
     },

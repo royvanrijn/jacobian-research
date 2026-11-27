@@ -2035,6 +2035,11 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | One set of local rows certifies three virtual marks for every fixed three-power exponent | Internal result | proved | [Source](MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md) |
 | Both quadratic signs have mixed three-power class groups with two actual moving prime witnesses | Internal result | proved | [Source](MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md) |
 | The mixed three-power fields give positive-rank twists of conductor 27161D² | Internal result | proved | [Source](MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md) |
+| The marked octic supports one high three-power virtual norm and three independent cubic marks | Internal result | proved | [Source](MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md) |
+| The cyclotomic mirror has an unramified mixed three-power quotient split at three | Internal result | proved | [Source](MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md) |
+| Actual prime ratios give controlled Frobenius orders in the higher cyclotomic mirror | Internal result | proved | [Source](MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md) |
+| Every odd order occurs in the marked octic cyclotomic reflection with prescribed finite splitting | Internal result | proved | [Source](MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md) |
+| The marked odd-order radical gives explicit affine fields with exact discriminants | Internal result | proved | [Source](MARKED_OCTIC_CYCLOTOMIC_THREE_POWER_REFLECTION.md) |
 
 **Computed obligations:** 175 unresolved; 28 resolved within their exact scope.
 
