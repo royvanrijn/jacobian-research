@@ -3,7 +3,15 @@
 The four-cell first Hermite problem reduces exactly to a three-dimensional
 balanced affine assignment. The tetrahedron is a strict local maximizer in
 centroid Gram space up to its orthogonal symmetries, with no equal-norm
-assumption. A deterministic search from 76 asymmetric initializations
+assumption. If one first moment lies in the closed convex hull of the other
+three, then $W_1\le0.3252948978196\ldots<1/3<W_1(T)$, by the exact bound
+below. This holds for arbitrary measurable balanced partitions. A planar
+centroidal configuration in strictly convex quadrilateral position is unstable
+on adding a third Gaussian coordinate. Together these facts exclude every
+rank-deficient global maximum in dimension at least three. The global theorem
+therefore reduces to the full-rank stationary stability obligation. The
+separate value comparison for all planar configurations remains open.
+A deterministic search from 76 asymmetric initializations
 converged numerically to the tetrahedral Gram matrix. The global balanced
 first-order comparison remains open in this work.
 
@@ -96,6 +104,395 @@ $L$ be the weighted graph Laplacian with edge weights
 $a_{ij}/\|m_i-m_j\|$. If $M$ has rows $m_i$ then $LM=M$, and the columns
 span $\mathbf1^\perp$ because the rank is three. Thus
 $L=I-\mathbf1\mathbf1^\mathsf{T}/4$ and every edge ratio equals $1/4$.
+
+## Balanced second variation
+
+Put $J(z)=2F(z)-\sum_i\|z_i\|^2$. At a full-rank tuple with balanced
+biases $b$, write $d_{ij}=\|z_i-z_j\|$, $w_{ij}=a_{ij}/d_{ij}$, and let
+$L$ be the Laplacian with these weights. For a site perturbation $V$, define
+
+$$
+q_{ij}(x)=(V_i-V_j)\cdot x,\qquad
+r_i=\sum_{j\ne i}\frac1{d_{ij}}\int_{F_{ij}}q_{ij}(x)\phi_3(x)\,d\mathcal H^2(x),
+\qquad
+Q(V)=\sum_{i<j}\frac1{d_{ij}}\int_{F_{ij}}q_{ij}(x)^2\phi_3(x)\,d\mathcal H^2(x).
+$$
+
+Here $\sum_i r_i=0$. The exact Hessian after rebalancing is
+
+$$
+D^2J(z)[V,V]=2\left(Q(V)-r^\mathsf T L^+r-\sum_i\|V_i\|^2\right),
+\tag{BV}
+$$
+
+where $L^+$ is the inverse on $\mathbf1^\perp$, extended by zero on
+constants. At a full-rank stationary tuple, the six interface identities
+give $L=I-\mathbf1\mathbf1^\mathsf T/4$, so the correction is exactly
+$\|r\|^2$. Thus Gaussian first and second moments on six interfaces
+determine a test for a positive second variation. The correction cannot
+be dropped when testing stability of the balanced problem.
+
+To prove (BV), perturb both sites and biases by $(V,c)$. The moving-face
+calculation gives
+
+$$
+D^2G(z,b)[(V,c),(V,c)]
+=\sum_{i<j}\frac1{d_{ij}}\int_{F_{ij}}
+  (q_{ij}(x)+c_i-c_j)^2\phi_3(x)\,d\mathcal H^2(x)
+=Q(V)+2r\cdot c+c^\mathsf TLc.
+$$
+
+The full-rank orthant charts used below also apply with nonzero biases,
+so differentiation is justified by Gaussian domination. All six edge
+weights are positive. Differentiating the balance equations in the
+mean-zero gauge gives $Lc=-r$. The implicit function theorem applies
+because $L$ is positive definite on that gauge. Substitution and
+differentiation of the squared norm prove (BV).
+
+This is the Gaussian whole-space calculation. The closest checked
+transport result is [Kitagawa, Merigot and Thibert, Theorem 1.3 and
+equation (1.8)](https://arxiv.org/pdf/1603.05579), which gives the
+interface Hessian for bias variations with compact source support.
+Their Theorem 1.5 also assumes compact support and does not by itself
+give a convergence or global optimality theorem for this Gaussian
+problem. The site variation, elimination of the balancing biases, and
+the boundary argument below are derived here; no priority claim is made.
+
+## Lifting a planar stationary configuration
+
+Let $z_1,\ldots,z_4\in\mathbb R^2$ be distinct, centered sites with no
+three collinear. Choose their balanced affine cells and assume the
+centroidal equations $m_i=z_i$. Edges with no positive-length interface
+have $a_{ij}=w_{ij}=0$. Gaussian integration by parts still gives
+$LZ=Z$, where $Z$ has rows $z_i$. For any $v\in\mathbf1^\perp$, lift
+the sites to $z_i(t)=(z_i,tv_i)$ in $\mathbb R^3$ and rebalance. Then
+
+$$
+\left.\frac{d^2}{dt^2}J(z(t))\right|_{t=0}
+=2v^\mathsf T(L-I)v.
+\tag{PL}
+$$
+
+Here is a justification at the rank-deficient tuple, where a full-rank
+orthant chart is unavailable. With the planar slopes fixed, put
+$h(b)=\mathbb E_X\max_i(z_i\cdot X+b_i)$. Its bias Hessian is $L(b)$.
+Indeed each equality line contains a winning interval, ray, or empty
+set; differentiating a cell mass gives $a_{ij}/d_{ij}$. There are no
+triple ties along a line because no three sites are collinear. The
+interval endpoints vary continuously, including when a facet shrinks
+to a point. Hence the face integrals, and the Hessian, are continuous.
+They are globally bounded: each Gaussian line area is at most
+$1/\sqrt{2\pi}$ and all $d_{ij}>0$ are fixed. The adjacency graph is
+connected, since a generic segment between cell interiors crosses
+facets and avoids the finitely many multiple-tie points. All cells have
+positive area by balance. Consequently $L(b)$ is positive definite
+on $\mathbf1^\perp$ at the balanced biases.
+
+For an independent standard normal $Y$, the lifted unreduced objective
+is $\mathbb E_Y h(b+tvY)-\frac14\sum_i b_i$. Its mixed $t,b$
+derivative at zero vanishes because $\mathbb E Y=0$, and its second
+$t$ derivative is $v^\mathsf TLv$ because $\mathbb E Y^2=1$.
+The bounded bias Hessian justifies differentiation under the expectation.
+The balance equations and the implicit function theorem give $b'(0)=0$.
+The resulting biases are minimizing biases by convexity. Differentiating
+the site norm proves (PL).
+
+**Convex quadrilateral exclusion.** Under these hypotheses, if all four
+sites are vertices of their convex hull, the remaining eigenvalue
+$\lambda$ of $L$ on $\mathbf1^\perp$ satisfies $\lambda\ge2$.
+In particular there is a unit lift with $J''(0)\ge2$, so this tuple
+cannot be a local maximum in dimension three.
+
+For the proof, let $v$ be a unit vector satisfying
+$v\perp\mathbf1$ and $Z^\mathsf Tv=0$. The affine dependence of a
+strict convex quadrilateral has two positive and two negative
+coefficients, with each sign pair on opposite vertices. This follows
+by writing the intersection of the diagonals as a strict convex
+combination of each pair of endpoints. Symmetry of $L$, together with
+$LZ=Z$ and $L\mathbf1=0$, gives
+
+$$
+L=P+(\lambda-1)vv^\mathsf T,\qquad
+P=I-\mathbf1\mathbf1^\mathsf T/4.
+$$
+
+At least one of the two same-sign pairs has zero interface area. To see
+this directly, set $s_i(x)=z_i\cdot x+b_i$ and $k=\sum_i v_i b_i$,
+so $\sum_i v_i s_i(x)=k$ for every $x$. On a winning tie of the
+positive pair this sum is nonnegative, and it is strictly positive
+except at an all-four tie. Thus a positive-length interface for that
+pair requires $k>0$. An interface for the negative pair similarly
+requires $k<0$. An all-four tie is at most one point because the slopes
+span the plane. Both same-sign pairs therefore cannot have positive
+interface length.
+
+For an absent same-sign pair $i,j$, the off-diagonal entry of $L$ yields
+
+$$
+0=-\tfrac14+(\lambda-1)v_i v_j,\qquad
+\lambda-1=\frac1{4v_i v_j}\ge1.
+$$
+
+For the last inequality, write $s=v_i+v_j=-(v_k+v_l)$. The unit norm
+gives $1\ge s^2$, and $v_i v_j\le s^2/4\le1/4$.
+Equation (PL) now proves the strict improvement. Since $v$ is outside
+the column space of $Z$, the lifted tuples have rank three for $t\ne0$.
+Their balanced assignments have $W_1\ge J(z(t))>J(z)=W_1(A)$ for
+sufficiently small nonzero $t$, by completing squares.
+
+The square is an exact control. Its centroid sites are
+$(\pm a,\pm a)$ with $a=1/(2\sqrt{2\pi})$. Adjacent sites have
+distance $1/\sqrt{2\pi}$ and interface area $1/(2\sqrt{2\pi})$.
+Thus $L$ is one half the four-cycle Laplacian, with eigenvalues
+$0,1,1,2$. The lift has $J''(0)=2$. The spectral bound above is sharp.
+
+For an internal floating-point control, the following command uses the
+[variation diagnostic](check_balanced_variations.py) and the existing
+facet integrator without changing the integrator. On Python 3.12.3 and
+NumPy 1.26.4 the three printed quotients were respectively
+$0.9784197060$, $0.9935889388$, and $0.9978691748$, approaching the
+analytic value $(J(t)-J(0))/t^2\to1$. The existing full-rank facet
+finite-difference controls also passed. At the fixed asymmetric tuple
+retained in the diagnostic, the balancing correction was $0.1439216576$;
+the Schur-complement Hessian and a direct finite difference of the
+rebalanced gradient differed by $2.47\cdot10^{-10}$ at step $2\cdot10^{-5}$.
+The rule has 80 Gauss--Legendre nodes. These are diagnostics; the proof
+is the analytic argument above.
+
+```sh
+python3 research/plurality-stability/check_balanced_variations.py
+```
+
+This exclusion assumes centroidal stationarity and quadrilateral
+position. It does not bound $W_1$ for every planar affine assignment.
+The next argument handles all non-extreme first-moment configurations,
+including an interior centroid, without using the lifting formula.
+
+## A first moment inside the triangle of the other three
+
+Let $A_1,\ldots,A_4$ be any measurable balanced partition of a standard
+Gaussian space, in any dimension. Suppose, after relabeling,
+$m_4\in\operatorname{conv}\{m_1,m_2,m_3\}$. The convex hull is closed:
+an edge point, a repeated first moment, or a degenerate triangle is allowed.
+No affine-assignment or stationarity hypothesis is imposed. Set
+
+$$
+q=\Phi^{-1}(3/4),\qquad c=\phi(q),\qquad C=\frac9{8\pi},\qquad
+B=\frac{\sqrt{C^2/9+16Cc^2}-C/3}{2}
+ =\frac3{16\pi}\left(\sqrt{1+64e^{-q^2}}-1\right).
+$$
+
+**Non-extreme first-moment bound.** Under these hypotheses,
+
+$$
+W_1(A)\le B=0.3252948978196\ldots<\frac13<W_1(T).
+\tag{NE}
+$$
+
+The idea is to combine two estimates which constrain the fourth moment
+in opposite ways. Put $W=W_1(A)$ and $t=\|m_4\|^2$. Every cell of mass
+$1/4$ has $\|m_i\|\le c$. Indeed, for a unit vector $u$ and
+$Y=u\cdot X$, the pointwise inequality
+$(Y-q)(1_{A_i}-1_{\{Y\ge q\}})\le0$, together with the equal masses,
+gives $u\cdot m_i\le\mathbb E[Y1_{\{Y\ge q\}}]=\phi(q)$.
+Choose $u$ in the direction of $m_i$, with the zero case immediate.
+Consequently
+
+$$
+W\le3c^2+t. \tag{NE1}
+$$
+
+On the other hand the fourth linear score is pointwise dominated by
+the largest of the first three scores. Thus
+
+$$
+W=\sum_i\int_{A_i}m_i\cdot x\,d\gamma_n(x)
+ \le\mathbb E\max_i m_i\cdot X
+ =\mathbb E\max_{1\le i\le3}m_i\cdot X.
+$$
+
+For any three vectors $u_1,u_2,u_3$, with
+$\bar u=(u_1+u_2+u_3)/3$, the exact three-score identity and its
+Cauchy--Schwarz consequence are
+
+$$
+\mathbb E\max_{1\le i\le3}u_i\cdot X
+=\frac{\sum_{i<j}\|u_i-u_j\|}{2\sqrt{2\pi}},\qquad
+\left(\mathbb E\max_{1\le i\le3}u_i\cdot X\right)^2
+\le C\sum_{i=1}^3\|u_i-\bar u\|^2. \tag{3G}
+$$
+
+For completeness, for three real numbers their range is half the sum
+of the three pairwise absolute differences. The centered Gaussian
+score vector is invariant in law under simultaneous negation, so its
+expected maximum is half its expected range. The absolute Gaussian
+first moment gives the identity. Squaring, applying Cauchy--Schwarz to
+the three lengths, and using
+$\sum_{i<j}\|u_i-u_j\|^2=3\sum_i\|u_i-\bar u\|^2$ proves the
+inequality. This also covers coincident or collinear vectors.
+The constant and Gaussian-maximum interpretation agree with
+[Khot and Naor, Corollary 3.4 and Lemma 3.7](https://cs.nyu.edu/~khot/papers/kernel.pdf).
+The primary statements and their proofs were inspected. Here (3G) is
+derived directly; no four-cell propeller theorem or novelty claim is used.
+
+Since $\sum_i m_i=0$, the first three moments have mean $-m_4/3$ and
+their centered squared norm sum is $W-4t/3$. Therefore
+
+$$
+W^2\le C(W-4t/3). \tag{NE2}
+$$
+
+Substitute $t\ge W-3c^2$ from (NE1) into (NE2). This gives
+$W^2+(C/3)W-4Cc^2\le0$. Its nonnegative root is $B$, proving the
+stated value bound. This substitution remains valid if $W-3c^2<0$;
+no division by $W$, $t$, or a first-moment norm is needed.
+
+The strict comparison with $T$ has an elementary rational check, so it
+does not depend on the displayed decimal. Using $25/8<\pi<22/7$ and
+$e^{-s^2/2}\le1-s^2/2+s^4/8$ gives
+
+$$
+\Phi(2/3)-\tfrac12
+ <\tfrac25\left(\tfrac23-\frac{(2/3)^3}{6}+\frac{(2/3)^5}{40}\right)
+ =\frac{1508}{6075}<\tfrac14.
+$$
+
+Hence $q>2/3$. The exponential series gives
+$e^{4/9}>1+4/9+(4/9)^2/2=125/81$, so
+$c^2<81/(250\pi)$. The positive root $B$ consequently satisfies, with
+$u=\pi B$, $u^2+3u/8<729/500$. The polynomial is increasing for
+$u\ge0$, and
+
+$$
+(25/24)^2+\tfrac38(25/24)-\tfrac{729}{500}
+=\frac{637}{36000}>0.
+$$
+
+It follows that $B<25/(24\pi)<1/3$. Finally the tetrahedral formula
+and $\arcsin(1/3)>1/3$ imply
+
+$$
+W_1(T)>\frac{400}{363\pi}>
+\frac7{22}\frac{400}{363}=\frac13+\frac{23}{1331}.
+$$
+
+Thus (NE) excludes the requested interior-centroid case by value. It
+also excludes every configuration with a first moment on an edge of
+the other three, and every repeated first moment. For a nonstationary
+affine assignment the hypothesis concerns its actual first moments;
+the locations of its input score sites alone do not imply it.
+The [variation diagnostic](check_balanced_variations.py) checks the
+displayed rational margins using exact fractions and prints $B$ using
+the standard-library Gaussian quantile. The decimal is illustrative;
+the proof of the strict comparisons is the analytic argument above.
+
+## Boundary exclusion and the remaining global obligation
+
+The rank-one case also has a sharper bound. If the first moments are
+collinear, write $m_i=\alpha_i u$ with $u$
+unit and sort the $\alpha_i$. The balanced linear assignment to these
+scores consists of the four consecutive quartile intervals of
+$u\cdot X$. For example, expand a sorted score as its smallest value
+plus the three nonnegative successive differences. Each difference
+multiplies the integral over a union of the highest-score cells of
+fixed mass; that integral is maximized by an upper Gaussian tail.
+This proves the asserted quartile assignment, also when scores tie.
+Writing $q=\Phi^{-1}(3/4)$, its scalar moments are
+
+$$
+c=(-\phi(q),\ \phi(q)-\phi(0),\ \phi(0)-\phi(q),\ \phi(q)).
+$$
+
+The assignment bound and Cauchy--Schwarz give
+$W_1(A)\le\sum_i\alpha_i c_i\le\sqrt{W_1(A)}\|c\|$, whence
+
+$$
+W_1(A)\le2\bigl(\phi(q)^2+(\phi(0)-\phi(q))^2\bigr)<\frac1\pi<W_1(T).
+\tag{R1}
+$$
+
+The zero-moment case is immediate. Strictness follows because both
+$\phi(q)$ and $\phi(0)-\phi(q)$ are positive and sum to $\phi(0)$.
+
+**No rank-deficient global maximum.** Every balanced four-cell
+first-Hermite global maximizer in dimension $n\ge3$ has first-moment
+rank three. To prove this, suppose the four moments span at most a
+plane. Four planar points either have a point in the closed convex
+hull of the other three or are the four distinct vertices of a strict
+convex quadrilateral. This follows by considering the number of
+vertices of their convex hull; repeated and collinear cases are
+included. In the first case (NE) puts the value below the feasible
+tetrahedron. In the second case, a global maximizing partition must
+be a balanced affine assignment to its own moments: if $F(m)>W_1$,
+then $J(m)>W_1$ would contradict global maximality. Equality in the
+pointwise dual bound forces the affine winner almost everywhere.
+The distinct planar slopes have no positive-measure ties, so this
+partition depends only on the moment plane. It is centroidal, and
+the convex-quadrilateral lift in an unused Gaussian coordinate
+strictly improves its value. This again contradicts maximality.
+
+The remaining sufficient statement can be restricted to the tetrahedral
+value level:
+
+**High-value full-rank stability gap (open):** every centered rank-three
+centroidal balanced affine tuple with $J\ge W_1(T)$, other than the
+tetrahedral centroid tuple up to orthogonal maps and label permutations,
+has an improving site perturbation for $J$. A positive value of (BV)
+in one direction is sufficient. This statement remains open.
+
+**Full-rank stability gap (open):** the same improving-perturbation
+statement for every non-tetrahedral full-rank stationary tuple, without
+restricting its value. This is a stronger sufficient statement; its
+restriction gives the high-value gap. No classification of all the
+remaining stationary tuples has been proved here.
+
+Either stability statement implies the global first-Hermite inequality
+and its tetrahedral equality characterization. The compact affine reduction
+supplies a global maximum at its natural scale. Completing squares
+makes it centroidal, and the boundary exclusion makes it full rank.
+An improving perturbation would contradict maximality, so the remaining
+statement forces the tetrahedron. Equality for any original partition
+forces a maximizing assignment to tetrahedral centroid sites, whose
+linear winner is unique almost everywhere. The quantization identity
+transfers this conclusion to balanced four-symbol squared distortion
+for every $n\ge3$. No positive-correlation noise-stability comparison
+follows from this reduction.
+
+The **planar value gap remains open** as a separate comparison: every
+balanced four-cell affine assignment in $\mathbb R^2$, including ties
+subdivided into equal masses, should have $W_1<W_1(T)$. It is no longer
+a required premise of the route above. A planar configuration violating
+this value bound would have to have its first moments in strict convex
+quadrilateral position, by (NE). Its instability in dimension three
+does not by itself rule out a large planar value.
+
+Conversely, the global first-Hermite inequality together with the proved
+boundary exclusion would settle this strict planar comparison. Extend a
+planar balanced partition to dimension three by an independent Gaussian
+coordinate. Its first moments and $W_1$ are unchanged and have rank at most
+two. A value above $W_1(T)$ would violate the global inequality. Equality
+would make the extended partition a rank-deficient global maximizer,
+contrary to the boundary exclusion. Thus the planar comparison is a
+consequence of the global bound, even though it is not a required premise
+of the remaining stability route.
+
+For a computer-assisted route, the existing local theorem is qualitative:
+it supplies no certified neighborhood radius. A complete interval proof
+still needs an explicit local radius, rigorous Gaussian tail bounds,
+coverage of the rank-deficient and coincident-site strata, and an
+exhaustive cover of the remaining compact normalized Gram domain.
+For upper bounds on the value, **a certified bias solve is unnecessary**:
+every fixed mean-zero bias $\beta$ gives $F(z)\le G(z,\beta)$, even
+if the resulting cells are unbalanced. On a box of centered sites of
+unit Frobenius norm, a rigorous uniform bound
+$G(z,\beta)\le\sqrt{W_1(T)}$ suffices. Different boxes may use
+different fixed biases. Certification of stationary tuples, in contrast,
+must enforce the balance equations before using (BV) or the six
+interface identities. Compactness alone supplies no numerical certificate.
+The analytic boundary exclusion is sufficient when searching for global
+maxima. It supplies no explicit neighborhood or value bound around the
+entire rank-deficient stratum; an interval proof requiring such a
+neighborhood must still quantify it.
 
 ## Local tetrahedral maximality
 

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "role": "Full-A15 changing-candidate captures, including an exact plateau for every immediate adjacent-pair rotation",
+  "degree": 15,
+  "tuple_edges": [
+    [[6, 7], [10, 11]],
+    [[3, 4], [9, 10]],
+    [[2, 3], [8, 9]],
+    [[1, 2], [5, 6]],
+    [[11, 12], [13, 14]],
+    [[4, 5], [7, 8]],
+    [[0, 1], [12, 13]]
+  ],
+  "factor_masses": [9, 7, 7, 9, 11, 10, 1],
+  "word": [-2],
+  "terminal_mass_trajectory": [1, 0],
+  "captured_factor_index_zero_based": 2,
+  "new_leaves": [3, 9],
+  "three_cycle_from_first_pair_product_squared": [9, 10, 11],
+  "plateau_witness": {
+    "degree": 15,
+    "tuple_edges": [
+      [[1, 2], [13, 14]],
+      [[6, 7], [10, 11]],
+      [[3, 4], [11, 12]],
+      [[4, 5], [9, 10]],
+      [[8, 9], [12, 13]],
+      [[0, 1], [2, 3]],
+      [[5, 6], [7, 8]]
+    ],
+    "factor_masses": [1, 9, 5, 8, 9, 11, 11],
+    "initial_pair_rotation_mass_profiles": [
+      [1, 1],
+      [1, 1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1, 1],
+      [1, 1],
+      [1, 1]
+    ],
+    "word": [-3, -4],
+    "terminal_mass_trajectory": [1, 1, 0],
+    "captured_factor_index_zero_based": 4,
+    "new_leaves": [4, 12],
+    "three_cycle_from_second_pair_product_squared": [10, 12, 11]
+  }
+}

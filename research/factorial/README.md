@@ -1046,6 +1046,8 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Quadratic triangle windows exclude coefficient fields of degree at most two | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_BOUNDARY.md) |
 | Separated degree clusters and finite reductions across all bivariate degrees | Internal result | proved | [Source](image-rigidity/SFC_SEPARATED_DEGREE_CLUSTER_WINDOWS.md) |
 | Uniform large-exponent exclusion for the initial homogeneous trinomial window | Internal result | proved | [Source](image-rigidity/SFC_UNIFORM_HOMOGENEOUS_TRINOMIAL_INITIAL_CORNER.md) |
+| Strict initial trinomial remainder sign under angular separation | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_ANGULAR_SEPARATION.md) |
+| Consecutive factorial windows for separated homogeneous supports | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_ANGULAR_SEPARATION.md) |
 | An effective absolute degree reduction for initial homogeneous trinomial windows | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_AXIS_DEGREE_SIEVE.md) |
 | Dyadic leading layer for power-of-two triangle exponents | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_PREFIX_WINDOWS.md) |
 | Residue restriction for quadratic triangle windows above a dyadic prefix | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_PREFIX_WINDOWS.md) |
@@ -1195,6 +1197,7 @@ Scope limits:
 - At the first wild three-adic radius, the next linked degree-eight moment identity forces both adjacent ternary digits to vanish. This closes the XY foreign column. The X^4 or Y^4 column is also excluded for all prime-power axes by a uniform precision-four lift. At the next radius the low even-digit foreign branch obeys the three-start pole constraints; a unit foreign coefficient with two surviving poles is excluded at both radii and at all radii on prime-to-three grids.
 - All three second-radius low foreign candidate classes now have explicit simultaneous residue solutions in the cubic-axis XY model, for every block quotient. This isolates the need for higher-precision actual-moment equations at that radius.
 - The D=1 monomial triangle has an all-order simplex recurrence. Four moments suffice in every window and three suffice at each odd-prime-power window start; the remaining three-moment windows stay explicit.
+- Gaussian common zeros need not prevent a fixed-window corner theorem. For offsets (0,9k),(3k,6k),(4k,5k),(9k,0) at every fixed positive integer k, two genuine Gaussian zeros cannot lift: the integral forced difference is k+2k^3 and the fifth jet is nonzero. A nonreal next height correction excludes real gamma heights as well. Orders 1,2,3,5 are not consecutive, and no numerical or uniform-in-k cutoff is claimed.
 
 Tracked obligations (computed states):
 

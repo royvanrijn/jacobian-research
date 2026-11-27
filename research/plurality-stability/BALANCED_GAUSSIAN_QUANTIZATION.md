@@ -31,4 +31,10 @@ For comparison, for four independent standard normals \(G_i\), the tetrahedral v
  W_1(T)=\frac{3}{4\pi}\left(1+\frac{2}{\pi}\arcsin(1/3)\right)^2
  >\frac1\pi ,
 \]
-where \(\arcsin(1/3)>1/3\) and \(\pi<4\) imply strictness. Thus a better balanced quantizer would have to break antipodal pairing of the optimal reconstruction tuple. General rank-two tuples and nonlocal full-rank configurations are still subject to the compact affine optimization problem.
+where \(\arcsin(1/3)>1/3\) and \(\pi<4\) imply strictness. Thus a better balanced quantizer would have to break antipodal pairing of the optimal reconstruction tuple.
+
+## Excluding an interior reconstruction at a global optimum
+
+The [non-extreme first-moment bound](BALANCED_AFFINE_CENTROID_OPTIMIZATION.md#a-first-moment-inside-the-triangle-of-the-other-three) shows that if one optimal reconstruction \(4m_i\) lies in the closed convex hull of the other three, then \(W_1\le B<1/3<W_1(T)\), where the exact constant \(B\) is approximately \(0.3252948978\). This holds for arbitrary measurable balanced cells, including repeated reconstructions and points on an edge. Such a quantizer has optimized distortion at least \(n-4B\), strictly greater than the tetrahedral distortion.
+
+Together with the stationary convex-quadrilateral lift, this [excludes every rank-deficient global optimum](BALANCED_AFFINE_CENTROID_OPTIMIZATION.md#boundary-exclusion-and-the-remaining-global-obligation) in dimension \(n\ge3\). The high-value full-rank stationary stability statement is now a sufficient remaining obligation for the tetrahedral quantization theorem. The value comparison for every planar quantizer remains a separate open problem; the quadrilateral lift supplies an improving three-dimensional competitor.

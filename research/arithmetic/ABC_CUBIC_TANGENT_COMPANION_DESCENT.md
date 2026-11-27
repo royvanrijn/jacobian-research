@@ -369,7 +369,7 @@ places impose no extra
 cubic condition.
 This gives the second
 description. Finally
-[BES, equation (21)](https://arxiv.org/html/1610.05759#S7.SS4)
+[BES, equation (21)](sources/bhargava-elkies-shnidman-mordell-isogeny-selmer.pdf)
 and CD2 show the dimension
 difference, since neither
 rational isogeny kernel
@@ -457,7 +457,7 @@ global root number is
 since \(m\equiv1\bmod4\).
 The finite \(3\)-Selmer
 parity in
-[BES, Proposition 42](https://arxiv.org/html/1610.05759#S8.SS1)
+[BES, Proposition 49](sources/bhargava-elkies-shnidman-mordell-isogeny-selmer.pdf)
 is \(2-\mathbf{1}_{d>0}\)
 modulo two by CD2,
 with no rational

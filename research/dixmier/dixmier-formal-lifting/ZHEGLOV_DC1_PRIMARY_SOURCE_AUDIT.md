@@ -152,10 +152,13 @@ For fixed source subcorner \(A\), the remaining possible dependence is
                  \frac{(a-b)(ab-2A)}{2a(aN+b)}.
 \]
 For \(a>b>0\), the conditional comparison forces \(A=ab/2\);
-it supplies no contradiction in that case. The actual-pair/global
-polynomial constraint on this subprincipal corner and the earlier
-reconstruction bridges remain unverified. This is an exact local
-calculation correction, not a counterexample to the main theorem.
+it supplies no contradiction in that case. The
+[exact indicial-mean proof](POLYNOMIAL_WEYL_FIXED_AND_MOVING_SPECTRAL_SPLITTINGS.md#exact-indicial-means-and-the-mixed-weyl-coefficient)
+now gives \(A=ab/2\) for the actual centered polynomial pair
+directly. The earlier reconstruction bridges remain open, and
+even a proof of those bridges would leave this expression
+constant. The correction concerns the final comparison and
+does not refute the main statement of DC1.
 
 The [scalar-gauge admission argument](SCALAR_GAUGE_SUBPRINCIPAL_AND_POLYNOMIAL_ADMISSION.md)
 separates local residue freedom from actual polynomial landing. Formal
@@ -164,7 +167,7 @@ string equations and chopped orders. For an actual polynomial Weyl
 pair, a nonconstant rational position gauge cannot land both conjugates
 polynomially: invariant polynomial lattices give a finite-dimensional
 quotient whose scalar commutator has nonzero trace. This global constraint
-does not classify nonrational formal gauges or force the residue to zero.
+does not classify nonrational formal gauges. The centered coefficient is fixed independently by the exact indicial means.
 
 The [one-place algebraic curve control](ONE_ROOT_BC_CURVE_AND_ADMISSION_GAP.md)
 also retains the homogeneous coefficient with a full degree-eight
@@ -232,8 +235,7 @@ DC-pairs, and the all-\(N\) result follows from the written proof.
 
 The retained local results are (2), the complete one-root ODE
 classification and countercontrol, and the conditional invariance lemma. The earlier application inputs and the main DC1 claim remain
-unverified. The corrected final rational expression need not vary
-with \(N\); its potential residual requires the actual subprincipal
-coefficient. A final expression alone cannot supply the missing inputs. No metadata is upgraded, and no
+unverified. On the actual centered locus the corrected final expression
+is constant because the mixed Weyl coefficient vanishes. No metadata is upgraded, and no
 formal verification, independent whole-proof review, external review
 or novelty priority is claimed.

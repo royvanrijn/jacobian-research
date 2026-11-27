@@ -221,3 +221,54 @@ and checker. All actual pair claims are precisely the written theorem;
 the one-operator examples are explicitly not full Weyl-pair
 constructions. No old source or metadata is changed, and no formal
 verification, external review or DC1 resolution is claimed.
+
+## Rational differential intertwiners in the centered chart
+
+**Corollary PolynomialWeylCenteredRationalIntertwinerRigidity.**
+Let two actual centered complex polynomial Weyl pairs as in the
+[one-pole reduction](POLYNOMIAL_WEYL_ALL_DEGREE_SPECTRAL_REDUCTION.md)
+be written in the same coordinate system. If a nonzero ordinary
+rational differential operator \(S\in\mathbb C(x)[D_x]\) intertwines
+the two pairs, then \(S\) is constant and the two pairs coincide.
+
+First, any ordinary rational differential operator intertwining
+actual polynomial scalar-commutator pairs as in (1) is polynomial.
+The image of \(S\mathbb C[x]\) in \(\mathbb C(x)/\mathbb C[x]\)
+is finite dimensional, because the rational coefficients of \(S\)
+have a common denominator. The image is invariant under \(P,Q\)
+by (1), and their nonzero scalar commutator on it forces it to
+vanish by the trace identity. Thus \(S\) sends polynomials to
+polynomials. Applying it to \(1,x,\ldots,x^{\operatorname{ord}S}\)
+and solving for its coefficients successively proves they are
+polynomial.
+
+The nonzero polynomial intertwiner preserves polynomial degrees
+as in (5). Its leading coefficient therefore has degree at most
+its differential order. The position and differential degrees
+of the two \(P\)'s agree, and intertwining forces equality of
+their top corner coefficients by leading comparison. Their
+mixed coefficients agree by the
+[exact centered coefficient theorem](POLYNOMIAL_WEYL_FIXED_AND_MOVING_SPECTRAL_SPLITTINGS.md#exact-indicial-means-and-the-mixed-weyl-coefficient).
+Apply the Fourier automorphism to the pairs and to the now
+polynomial \(S\). Equality of top and mixed coefficients persists:
+the symmetric Weyl symbols transform by the linear symplectic
+substitution, which just swaps the two corner exponents and
+changes signs. The Fourier-transformed \(P\)'s have maximum
+position degree \(M\) strictly greater than their differential
+order \(N\). Write \(p_N(x)\) for their common leading
+differential coefficient, of degree \(M\), with leading
+scalar \(\alpha_0\). If the Fourier-transformed \(S\) has
+order \(r\) and leading coefficient of degree \(c\), then
+\(c\le r\). The same coefficient comparison as in (8),
+now with \(p_N\) in place of \(x^a\), gives as the difference
+of the mixed coefficients
+\(\alpha_0(Nc-Mr)\). This follows by using
+\(s_r'/s_r=c/x+O(x^{-2})\) at infinity.
+Equality of mixed coefficients and \(M>N\) force \(r=0\),
+and the preserved degree gives \(c=0\). The operator is a
+nonzero constant in both presentations.
+
+This argument concerns ordinary rational differential operators.
+A quotient of noncommuting differential operators in the Weyl
+division algebra need not be ordinary, and is outside the
+corollary.

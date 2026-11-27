@@ -148,8 +148,11 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Two residue restrictions on the quartic-leading family | Internal result | proved | [Source](../foundations/extended-geometry/WINDING_ONE_CUBIC_QUARTIC_LEADING_CARTIER_RESIDUE_EXCLUSIONS.md) |
 | Pure Gaussian phases in the sixteen-dimensional sextic family | Internal result | proved | [Source](../foundations/extended-geometry/CM_NEWTON_POLYGONS_AND_MOMENT_OBSTRUCTIONS.md) |
 | Sharp Gaussian distortion for antipodally paired reconstructions | Internal result | proved | [Source](../plurality-stability/BALANCED_GAUSSIAN_QUANTIZATION.md) |
+| Planar convex quadrilateral centroidal configurations are unstable | Internal result | proved | [Source](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) |
+| Balanced first-moment bound for a non-extreme centroid | Internal result | proved | [Source](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) |
+| Every balanced four-cell global maximizer has rank three | Internal result | proved | [Source](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) |
 
-**Computed obligations:** 34 unresolved; 12 resolved within their exact scope.
+**Computed obligations:** 36 unresolved; 12 resolved within their exact scope.
 
 
 Scope limits:
@@ -224,6 +227,7 @@ Scope limits:
 - The full van den Essen–Zhao one-operator assertion holds for arbitrary polynomial multipliers over commutative Q-algebras. The field prime obstruction gives zero eventual radical for c≠0 and nonconstant P. Finite remainder windows and the shifted coefficient estimates permit descent across zero divisors.
 - All-order Gaussian purity is classified for the sixteen homogeneous sextic directions with Laurent weight at most four on q=1, including all nonsquarefree and zero faces.
 - Long’s binary Factorial theorem yields a trivial eventual pure-moment radical on the two Gaussian radii of block sizes (2,2). In the two-pair polynomial Image problem, it excludes a vertex in the nonnegative orthant of the weight hull of an eventually pure phase. See the exact transfer arguments.
+- For balanced four-cell Gaussians, every non-extreme first-moment tuple satisfies W_1<=B<1/3<W_1(T), with B approximately 0.3252948978196. Combining this value bound with the stationary quadrilateral lift excludes every rank-deficient global maximum in dimension at least three. Full-rank stationary stability alone suffices for the global first-Hermite and balanced quantization theorem. The separate planar value bound remains open.
 
 Tracked obligations (computed states):
 
@@ -232,8 +236,10 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Determine whether the first sixteen moments force purity for every complex ternary polynomial of degree at most three. The exceptional orbit has exact local cutoff sixteen. For each residual component of the actual first-sixteen ideal, seek a later cutting moment or a generic-point purity certificate using computable finite recognition.](vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md) — GAP-TERNARY-PURE-PREFIX
 - **mathematical / open:** [For every actual smooth-cubic even-BD face whose simple anti-Prym has full geometric End0=Q(zeta5), is the selected Hasse coefficient nonzero at infinitely many good absolute-degree-one primes p=1 mod 10 after a fixed extension? Primitive phase safety has a separate proof.](../foundations/extended-geometry/EVEN_QUINTIC_REPEATED_CUBIC_AND_SIXFOLD_REDUCTION.md) — GAP-EVEN-BD-SIMPLE-E5-SELECTED-HASSE-FREQUENCY
 - **mathematical / open:** [Decide if any balanced Gaussian partition beats the regular simplex at positive correlation. The fixed-partition low-correlation result and finite cubic search do not establish the universal inequality.](../plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md) — GAP-PIS-BALANCED-POSITIVE-CORRELATION
-- **mathematical / open:** [Is the exact tetrahedral first Hermite mass a global upper bound for balanced Gaussian four-cell partitions? The compact affine reduction includes rank-deficient Gram matrices. The known local maximum leaves the rest of that domain open. Equivalently, is the regular tetrahedron the optimal balanced four-symbol Gaussian quantizer?](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE
+- **mathematical / open:** [Is the tetrahedron the global balanced four-cell first-Hermite maximizer and optimal balanced four-symbol Gaussian quantizer? Non-extreme first moments have W_1<=0.3252948978196<1/3<W_1(T), and every rank-deficient global maximum is excluded. The full-rank stationary stability classification alone now suffices.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE
 - **mathematical / open:** [Can a pure winding-one septic with a quadruple leading root and varying invariant lie in the exceptional coefficient loci left by the Lefschetz, exact moment, and Cartier residue exclusions?](../foundations/extended-geometry/WINDING_ONE_CUBIC_QUADRUPLE_ROOT_GENERIC_EXCLUSION.md) — GAP-HOPF-MIXED-CUBIC-SEPTIC-UNIT-CENTER
 - **mathematical / open:** [Prove the sufficient canonical Wick-power detection lemma for a phase with original unit period 1−t.](../BREAKTHROUGH_TARGET_ASSESSMENT.md) — GAP-GAUSSIAN-CANONICAL-WICK-LINEAR-VACUUM-DETECTION
+- **mathematical / open:** [Does every balanced four-cell planar affine assignment have W_1<W_1(T)? Any counterexample must have first moments in strict convex quadrilateral position, since the closed-triangle case is bounded by 0.3252948978196. This planar value comparison remains open and is not required by the current full-rank global route.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-PLANAR-BALANCED-AFFINE-VALUE
+- **mathematical / open:** [Every centered rank-three centroidal balanced Gaussian affine tuple in dimension three, except the tetrahedral centroid tuple up to orthogonal maps and label permutations, has a site perturbation increasing J=2F-||z||_F^2 after exact rebalancing. A positive second variation in the retained Hessian is sufficient; such a classification is not proved.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-FULL-RANK-STATIONARY-STABILITY
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

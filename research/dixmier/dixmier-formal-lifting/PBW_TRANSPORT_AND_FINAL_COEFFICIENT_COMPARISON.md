@@ -185,9 +185,15 @@ Consequently, if all later application hypotheses and Laurent
 invariance are supplied, this comparison would force (8).
 It does not by itself give a contradiction or force the earlier
 homogeneous-branch parameter to vanish. Condition (8) is precisely
-the adjacent PBW coefficient of the Weyl-ordered leading corner;
-whether the actual simultaneous pair supplies it is an explicit
-remaining source obligation.
+the adjacent PBW coefficient of the Weyl-ordered leading corner.
+For actual centered rectangular Weyl pairs, the
+[exact indicial-mean theorem](POLYNOMIAL_WEYL_FIXED_AND_MOVING_SPECTRAL_SPLITTINGS.md#exact-indicial-means-and-the-mixed-weyl-coefficient)
+now supplies the zero mixed Weyl corner directly. The Fourier change
+exchanging the two rectangle directions preserves this zero condition.
+Thus the numerical corner value is settled in that centered class.
+The uncentered source data and the subsequent transport, body-tail and
+scalarization hypotheses of the comparison remain separate obligations;
+zero corner alone gives no contradiction.
 
 ## Exact controls and scope
 
@@ -197,7 +203,8 @@ including unequal centroid and adjacent coefficient controls. It
 also verifies (7) as a seven-variable polynomial identity after
 clearing denominators, and checks the constant and nonconstant cases
 of (8). The [receipt](pbw_transport_final_coefficient_controls.json)
-pins this note, checker, primary PDF and corrected Laurent source.
+pins the original edition of this note, checker, primary PDF and
+corrected Laurent source. Its historical hashes are retained.
 
 The raw first-component assertion and the elementary Schur
 calculations are exact. The passage to (6) is conditional on the

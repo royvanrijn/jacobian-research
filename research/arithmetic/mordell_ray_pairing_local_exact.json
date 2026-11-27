@@ -1,0 +1,852 @@
+{
+  "schema_version": 1,
+  "scope": "Direct local Cassels-Tate computations using exact global norms and Hilbert-90 scalar descent. No entry is reconstructed from rational points or assumed matrix rank. The global comparison and local reciprocity remain written inputs.",
+  "normalization": "The chosen tangent/Weil root convention agrees with the existing normalized matrix at R=145. This is one overall normalization; a separate standard Weil-sign calibration is not claimed.",
+  "software": "SageMath 10.9; exact global arithmetic and capped-relative p-adic arithmetic with verified residual and unit-class precision.",
+  "cases": [
+    {
+      "R": 145,
+      "precision": 240,
+      "basis": [
+        {
+          "index": 0,
+          "representative": [
+            5,
+            2
+          ],
+          "norm_coefficients": [
+            [
+              "442265/17",
+              "540538/51"
+            ],
+            [
+              "84142/17",
+              "102940/51"
+            ],
+            [
+              "15982/17",
+              "19636/51"
+            ]
+          ]
+        },
+        {
+          "index": 5,
+          "representative": [
+            -35,
+            15
+          ],
+          "norm_coefficients": [
+            [
+              "3289823926765128101536315017870582502826387359257438173220321888388396984651506220561159835814788435097934576778230/17623209319081260056638660929",
+              "4029194982086929287198486132689630550926363041778786163346215761641827216230302135195962282258820953489963706640630/52869627957243780169915982787"
+            ],
+            [
+              "626205177606377478575085670933633911037906135178448890574498708890243494088617321249037454675955179898646637032348/17623209319081260056638660929",
+              "766941579712269963814276171551853867825769360259869012670540660436588680850704169626024629995891593339448184348804/52869627957243780169915982787"
+            ],
+            [
+              "39731905940897130825009988074536994635873050029055657512610620464863814380070860613693177360317891549839082415701/5874403106360420018879553643",
+              "145984344095180308148458725703740888938171328598938919782693624613920669467200320091771790836474764436803162450101/52869627957243780169915982787"
+            ]
+          ]
+        },
+        {
+          "index": 29,
+          "representative": [
+            145,
+            87
+          ],
+          "norm_coefficients": [
+            [
+              "33194435191066837570949463509636099267014476230353726967443594163787615257175882036259193358238470802536478232580419721186596642509706665976982058353211598210/16441160573354406557817",
+              "4517190473222176849449646330005769400326811161627795241468445669277215281772990074986011878313531436291646483074931532941231918725897542931050417083798072137/5480386857784802185939"
+            ],
+            [
+              "6318431517034017170229068229604076470009527105895768907454458840220834862048177996564029637881982158472300252010381299634840543091119552799365652360543983711/16441160573354406557817",
+              "859829621747376694590469583469546914084778439562811295131545287267000261992816658455446613103730727859092130862218319668885625139476502379798150739623017333/5480386857784802185939"
+            ],
+            [
+              "1202688842441657401392636106228969221168805951961917919227824151305909015043220359131571498234572713311679988497705494463917748086704860830158805869880241054/16441160573354406557817",
+              "163665221295589644363121607310708192500943265281520793584389922018727293373029962640051040781080043871533220365782967340289711329550465133873590842456440008/5480386857784802185939"
+            ]
+          ]
+        }
+      ],
+      "local": [
+        {
+          "index": 0,
+          "p": 3,
+          "negative_s": false,
+          "point": {
+            "x": "21",
+            "y_unit_residue": 1
+          },
+          "weight": 2,
+          "symbols": [
+            1,
+            2,
+            2
+          ],
+          "scalar_coordinates": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "index": 0,
+          "p": 5,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 0,
+          "p": 5,
+          "negative_s": true,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 0,
+          "p": 17,
+          "negative_s": false,
+          "point": {
+            "x": "2",
+            "y_unit_residue": 9
+          },
+          "weight": 2,
+          "symbols": [
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "index": 0,
+          "p": 29,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 0,
+          "p": 29,
+          "negative_s": true,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 3,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 2,
+          "symbols": [
+            1,
+            1,
+            1
+          ],
+          "scalar_coordinates": [
+            1,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "index": 5,
+          "p": 5,
+          "negative_s": false,
+          "point": {
+            "x": "5",
+            "y_unit_residue": 3
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 5,
+          "negative_s": true,
+          "point": {
+            "x": "5",
+            "y_unit_residue": 3
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 29,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 29,
+          "negative_s": true,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 43,
+          "negative_s": false,
+          "point": {
+            "x": "5",
+            "y_unit_residue": 19
+          },
+          "weight": 2,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 43,
+          "negative_s": true,
+          "point": {
+            "x": "5",
+            "y_unit_residue": 19
+          },
+          "weight": 2,
+          "symbols": [
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "index": 29,
+          "p": 3,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 2,
+          "symbols": [
+            2,
+            0,
+            0
+          ],
+          "scalar_coordinates": [
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "index": 29,
+          "p": 5,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 29,
+          "p": 5,
+          "negative_s": true,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 29,
+          "p": 19,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 5
+          },
+          "weight": 2,
+          "symbols": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 29,
+          "p": 19,
+          "negative_s": true,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 5
+          },
+          "weight": 2,
+          "symbols": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "index": 29,
+          "p": 29,
+          "negative_s": false,
+          "point": {
+            "x": "29",
+            "y_unit_residue": 4
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "index": 29,
+          "p": 29,
+          "negative_s": true,
+          "point": {
+            "x": "29",
+            "y_unit_residue": 4
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "matrix": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "R": 115,
+      "precision": 240,
+      "basis": [
+        {
+          "index": 5,
+          "representative": [
+            -35,
+            15
+          ],
+          "norm_coefficients": [
+            [
+              "-8195/114259",
+              "3485/114259"
+            ],
+            [
+              "14016/114259",
+              "5821/114259"
+            ],
+            [
+              "-9834/114259",
+              "4182/114259"
+            ]
+          ]
+        },
+        {
+          "index": 23,
+          "representative": [
+            667,
+            276
+          ],
+          "norm_coefficients": [
+            [
+              "-299/59",
+              "-138/59"
+            ],
+            [
+              "22/59",
+              "21/59"
+            ],
+            [
+              "12/59",
+              "4/59"
+            ]
+          ]
+        }
+      ],
+      "local": [
+        {
+          "index": 5,
+          "p": 3,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 2,
+          "symbols": [
+            0,
+            0
+          ],
+          "scalar_coordinates": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "index": 5,
+          "p": 5,
+          "negative_s": false,
+          "point": {
+            "x": "5",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            2,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 5,
+          "negative_s": true,
+          "point": {
+            "x": "5",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            2,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 23,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 23,
+          "negative_s": true,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 114259,
+          "negative_s": false,
+          "point": {
+            "x": "2",
+            "y_unit_residue": 68657
+          },
+          "weight": 2,
+          "symbols": [
+            2,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "p": 114259,
+          "negative_s": true,
+          "point": {
+            "x": "2",
+            "y_unit_residue": 68657
+          },
+          "weight": 2,
+          "symbols": [
+            2,
+            0
+          ]
+        },
+        {
+          "index": 23,
+          "p": 3,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 2,
+          "symbols": [
+            0,
+            0
+          ],
+          "scalar_coordinates": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 23,
+          "p": 5,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 23,
+          "p": 5,
+          "negative_s": true,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 23,
+          "p": 23,
+          "negative_s": false,
+          "point": {
+            "x": "23",
+            "y_unit_residue": 4
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            2
+          ]
+        },
+        {
+          "index": 23,
+          "p": 23,
+          "negative_s": true,
+          "point": {
+            "x": "23",
+            "y_unit_residue": 4
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            2
+          ]
+        },
+        {
+          "index": 23,
+          "p": 59,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 29
+          },
+          "weight": 2,
+          "symbols": [
+            0,
+            1
+          ]
+        }
+      ],
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "R": 71,
+      "precision": 240,
+      "basis": [
+        {
+          "index": 0,
+          "representative": [
+            5,
+            2
+          ],
+          "norm_coefficients": [
+            [
+              "116/11",
+              "67/33"
+            ],
+            [
+              "46/11",
+              "-7/33"
+            ],
+            [
+              "-3/11",
+              "16/33"
+            ]
+          ]
+        },
+        {
+          "index": 71,
+          "representative": [
+            5183,
+            2130
+          ],
+          "norm_coefficients": [
+            [
+              "-4354350125/1331",
+              "1777678120/1331"
+            ],
+            [
+              "-95596926/121",
+              "429306663/1331"
+            ],
+            [
+              "-253951656/1331",
+              "103676651/1331"
+            ]
+          ]
+        }
+      ],
+      "local": [
+        {
+          "index": 0,
+          "p": 3,
+          "negative_s": false,
+          "point": {
+            "x": "21",
+            "y_unit_residue": 2
+          },
+          "weight": 2,
+          "symbols": [
+            2,
+            1
+          ],
+          "scalar_coordinates": [
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "index": 0,
+          "p": 11,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 8
+          },
+          "weight": 2,
+          "symbols": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 0,
+          "p": 71,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 0,
+          "p": 71,
+          "negative_s": true,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 71,
+          "p": 3,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 1
+          },
+          "weight": 2,
+          "symbols": [
+            1,
+            0
+          ],
+          "scalar_coordinates": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "index": 71,
+          "p": 11,
+          "negative_s": false,
+          "point": {
+            "x": "1",
+            "y_unit_residue": 8
+          },
+          "weight": 2,
+          "symbols": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 71,
+          "p": 71,
+          "negative_s": false,
+          "point": {
+            "x": "71",
+            "y_unit_residue": 14
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 71,
+          "p": 71,
+          "negative_s": true,
+          "point": {
+            "x": "71",
+            "y_unit_residue": 14
+          },
+          "weight": 1,
+          "symbols": [
+            0,
+            0
+          ]
+        }
+      ],
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    }
+  ]
+}

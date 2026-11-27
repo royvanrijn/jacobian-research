@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "kind": "terminal_mass_descent_controls",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "0718f36bc5814aec06d6746934619353fe4545f9d37ae956ce7782d24cba5a1f",
+  "input_sha256": {
+    "TERMINAL_MASS_HURWITZ_DESCENT.md": "5725d773adb14b40aefac19316f1d02f54131fd73ebd07350ae93a8c67f1de93",
+    "terminal_mass_hurwitz_descent_certificate.json": "d2f2ba4d9c9d7cbb665183bf33fe3cbc195401ff37fd0dd9a339138a961257d0",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f",
+    "alternating_hurwitz_source_ledger.json": "3479790b2a1c3967e41c5baa9ad49e0893d9393a8f67e933c31a6e70e4f49dfe"
+  },
+  "degree7_mechanism_controls": {
+    "existing_fixed_product_domain": 392,
+    "outer_contact_descents": 42,
+    "bringing_orders": {
+      "B_left": 21,
+      "B_right": 21
+    },
+    "two_contact_captures_checked_in_both_orders": 56,
+    "weighted_quotient_mass_checks": 6720,
+    "pair_period_distribution": {
+      "3": 252,
+      "4": 224,
+      "5": 140,
+      "6": 168
+    },
+    "full_A7_mass_distribution": {
+      "0": 210,
+      "1": 42,
+      "2": 42
+    },
+    "proper_order168_mass_distribution": {
+      "1": 98
+    },
+    "proper_G3_group_order": 168
+  },
+  "degree15_changing_candidate_certificate": {
+    "degree": 15,
+    "initial_minimizing_factor_zero_based": 6,
+    "initial_mass": 1,
+    "minimizing_outer_contacts": 0,
+    "word": [
+      -2
+    ],
+    "mass_trajectory": [
+      1,
+      0
+    ],
+    "captured_factor_was_not_minimizing": true,
+    "both_captured_sheets_were_initially_degree_two": true,
+    "lower_full_cycle_degree": 13,
+    "full_A15_scope": "Written odd-degree primitivity and the literal 3-cycle, then Jordan; no group closure claimed"
+  },
+  "degree15_local_plateau_certificate": {
+    "degree": 15,
+    "initial_mass": 1,
+    "minimizing_outer_contacts": 0,
+    "all_single_adjacent_pair_powers_have_mass_one": true,
+    "pair_periods": [
+      2,
+      6,
+      6,
+      6,
+      2,
+      2
+    ],
+    "complete_pair_power_cases": 24,
+    "word": [
+      -3,
+      -4
+    ],
+    "mass_trajectory": [
+      1,
+      1,
+      0
+    ],
+    "captured_original_factor_mass": 5,
+    "captured_factor_mass_after_flat_step": 2,
+    "new_leaves": [
+      4,
+      12
+    ],
+    "lower_full_cycle_degree": 13,
+    "scope": "Complete local non-descent for every power of one initially adjacent pair, not a global orbit obstruction"
+  },
+  "cyclic_larger_controls": [
+    {
+      "r": 4,
+      "degree": 9,
+      "pruning_word_length": 3,
+      "first_strict_drop_step": 3,
+      "terminal_component_shrink": 1,
+      "both_bringing_orders_checked": true
+    },
+    {
+      "r": 7,
+      "degree": 15,
+      "pruning_word_length": 6,
+      "first_strict_drop_step": 6,
+      "terminal_component_shrink": 1,
+      "both_bringing_orders_checked": true
+    },
+    {
+      "r": 12,
+      "degree": 25,
+      "pruning_word_length": 11,
+      "first_strict_drop_step": 11,
+      "terminal_component_shrink": 1,
+      "both_bringing_orders_checked": true
+    },
+    {
+      "r": 25,
+      "degree": 51,
+      "pruning_word_length": 24,
+      "first_strict_drop_step": 24,
+      "terminal_component_shrink": 1,
+      "both_bringing_orders_checked": true
+    }
+  ],
+  "invalid_controls": {
+    "repeated_edge_tree_rejected": true,
+    "wrong_overlap_for_pruning_rejected": true,
+    "wrong_target_for_opposite_capture_sign_detected": true,
+    "external_pivot_interaction_rejected": true
+  },
+  "disjoint_support_pair_control": {
+    "degree": 9,
+    "pair_period": 2,
+    "weighted_mass_checks": 4
+  },
+  "scope": "Written cut-preserving bringing, strict outer-contact pruning, adjacent two-contact capture and five-weight pair rotation. A full-A15 input is flat under every power of each initial adjacent pair but extracts after a two-pair word. Finite controls do not prove global plateau escape or arbitrary extraction.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "symbolic fifth-jet identity for every positive integer scale k; no numerical height cutoff computed",
+  "orders": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "gaussian_roots": "z^3+b*z, 4*b^2+12*b+15=0",
+  "forced_difference": "k+2*k^3",
+  "fifth_residual": "k^3*((5548662*k^2-10756503)+(8427720*k^2-5716900)*b)/17187500",
+  "imaginary_height_correction": "k^3*(465440178*k^2-354929845)/360419340 * Im(b)",
+  "direct_gamma_comparisons": 180,
+  "symmetric_lifting_control": "passed through degree five; exact lifting follows separately by reflection",
+  "python_flint": "0.9.0",
+  "sympy": "1.14.0",
+  "assurance": "internal exact symbolic replay; not independent review or formal verification"
+}

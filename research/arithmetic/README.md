@@ -1911,14 +1911,48 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Prime weighted markings force the norm of the CM index to be prime | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
 | A logarithmic saving for prime triangles on a fixed cyclotomic trace orbit | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
 | The rank-one cyclotomic count extends to the full trace coset | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
-| An explicit 5-23 ray block and complete selected Mordell Cassels-Tate matrices | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Explicit tame and wild ray blocks with ten complete Mordell Cassels-Tate matrices | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| General Mordell ray bases, pairwise variation and a finite local pairing reduction | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Explicit Hilbert-90 local scalar descent and direct Mordell ray pairing certificates | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | Infinitely many admissible twists have a uniform nonzero ray block and global Hasse failures | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | A power bound for large square-root scales in binary quartic values | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
 | Binary quartic squareclass collisions are sparse outside projective root symmetries | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
 | Unweighted cubic tangent fields have a power-saving second factorial moment | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
 | Asymmetric weighted tangent field repeats have power-saving incidence | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
+| A primitive quadratic companion point realizes the cubic tangent edge class | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
+| The companion isogeny pair has exact local conditions and ratio | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
+| The companion Selmer groups are a split mirror class group and a ray class group modulo six | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
+| Imaginary tangent companion twists give even nonzero 3-Selmer ranks on many conductors | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
+| Four exact cubic tangent companion ranks and 3-torsion in Sha | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
+| The quadratic companion has exact generic rank one on each tangent parameter line | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md) |
+| General Mordell ray pairings have normalized Frobenius variation and a full local-symbol reduction | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| The 5-23 block has its exact correction at 3 and the wild-5 block is explicit | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Prime occupancy reduction for a stronger fifth-torsion moment | Internal result | proved | [Source](ABC_COHERENT_PRIME_PATH_HIGHER_ODD_TORSION.md) |
+| Elliptic translation transfers weighted tangent fields and their maximal cubic norm class | Internal result | proved | [Source](ABC_WEIGHTED_TANGENT_SHARED_FIELD_TRANSLATIONS.md) |
+| Two different weighted tangent lines give six genuine primes in the same fields | Internal result | proved | [Source](ABC_WEIGHTED_TANGENT_SHARED_FIELD_TRANSLATIONS.md) |
+| The two prime-supported cubic directions fail to have order three in their common enlarged order | Internal result | proved | [Source](ABC_WEIGHTED_TANGENT_SHARED_FIELD_TRANSLATIONS.md) |
+| Rational branch points of weighted tangent quartics occur on a degree-four profile locus | Internal result | proved | [Source](ABC_RECIPROCAL_GENUS_TWO_TANGENT_OBSTRUCTION.md) |
+| Reciprocal genus-two projections carry independent generic cubic norm classes | Internal result | proved | [Source](ABC_RECIPROCAL_GENUS_TWO_TANGENT_OBSTRUCTION.md) |
+| Reciprocal projections cannot both have positive directions or pass a fixed split-prime valuation test | Internal result | proved | [Source](ABC_RECIPROCAL_GENUS_TWO_TANGENT_OBSTRUCTION.md) |
+| Reciprocal elliptic projections give infinitely many relaxed quadratic fields of norm-class rank two | Internal result | proved | [Source](ABC_RECIPROCAL_GENUS_TWO_TANGENT_OBSTRUCTION.md) |
+| Genus-two degree-two weighted projections either share the norm direction or are reciprocal | Internal result | proved | [Source](ABC_RECIPROCAL_GENUS_TWO_TANGENT_OBSTRUCTION.md) |
+| Uniform joint fibers of the Pell period ratio and unit quotient | Internal result | proved | [Source](ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) |
+| Summable Pell rates on the critical logarithmic multiplier boundary | Internal result | proved | [Source](ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) |
+| Polynomial Pell period counts with a period-dependent quotient cutoff | Internal result | proved | [Source](ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) |
+| Joint square-witness cover with an exponential CRT modulus | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
+| Distinct degree-two weighted tangent projections in hyperelliptic genus three force two symmetric profiles | Internal result | proved | [Source](ABC_QUADRATIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
+| The real genus-three model has two generic norm classes and a universal dyadic support failure | Internal result | proved | [Source](ABC_QUADRATIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
+| Rational parameter maps of degree at most two cannot give two positive weighted tangent directions with independent generic norm classes | Internal result | proved | [Source](ABC_QUADRATIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
+| Exact full Mordell ray matrices, including the coordinate at3, are evaluable from norm certificates | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| The twists R=71 and R=355 have rank zero, Sha[3]=(Z/3)^2 and explicit Hasse-failing cubics | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Cubic parameter maps have no mixed-degree-two companion and share the norm class in common genus one or two | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
+| Two cubic parameter maps with common genus four are projectively related | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
+| Two non-projectively-related cubic maps in common genus five have restricted branch matching | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
+| Terminal-mass descent with changing candidate leaves | Internal result | proved | [Source](TERMINAL_MASS_HURWITZ_DESCENT.md) |
+| Product singularity parity restricts genus-five cubic pairings and excludes doubled symmetric branches | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
+| Two geometrically cyclic cubic projections cannot give a nonprojective common genus-five tangent cover | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 
-**Computed obligations:** 162 unresolved; 26 resolved within their exact scope.
+**Computed obligations:** 165 unresolved; 26 resolved within their exact scope.
 
 
 Scope limits:
@@ -2066,6 +2100,9 @@ Scope limits:
 - A coherent three-prime path lifts with free orientations exactly via the positive integral Heron defect and its incident-prime unit test. The squarefree part of that defect fixes the field.
 - Singular balanced six-cycles have a coherent-gcd upper tail below the trivial bound for G above B^(13/4), with B=2T. The T^2 budget holds for G>=B^(43/12).
 - Three complementary edge gcds force unit square congruences on actual continuation roots. This counts the singular T^2 sector at g_*>=B^(41/12), and at g_*>=B^(11/4+b/3) when the four-edge divisor product is at most B^b.
+- Mordell ray spaces now have a basis including the wild coordinate, pairwise variation and a full local-symbol reduction. The 5-23 block includes the cubic-character correction at 3; a wild-5 block and ten selected complete matrices have exact algebraic controls. Arbitrary-pair absolute constants and certified local descent data remain open. The comparison and local reduction have internal written-proof status, without independent replay, formal verification or external review. The cubic local descent now has a universal Hilbert-90 scalar formula and direct local certificate replay at R=145 and R=115, including every auxiliary prime; a validated arbitrary-parameter input generator remains open.
+- Erdős #365: a coefficient-uniform cubic Thue application bounds the fixed (R_D,Q_D) fiber by O(d(R_D)d(Q_D)) without a unit or common-divisor height cap. It gives a summable critical logarithmic sector with a loglog saving and polynomial period counts on Q_D<=tau_D^B for each fixed B>0. The complementary weighted rate and unrestricted polynomial period count remain open.
+- Erdős #675: compatible safe assignments of square witnesses at all negative sites have joint modulus at least exp((2+o(1))*sqrt(N)). Their least positive CRT representatives remain uncontrolled; the actual return 2376 through 49 has modulus 44100. No lower exponent beyond Ho's c<25/72 is obtained.
 
 Tracked obligations (computed states):
 
@@ -2195,5 +2232,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [For every epsilon>0 prove Z(E)<<_epsilon rad(abc)^(2+epsilon), where Z is the 2,3-primary classical modular degree times the full classical adjoint Selmer orders at every ell>=5. The mixed capped expression equals this product pointwise. The estimate is equivalent to full abc, and an unbounded ratio for any fixed epsilon>0 would disprove abc.](ABC_FREY_MULTIPLICATIVE_ADJOINT_DEGREE.md) — GAP-ARITH-ABC-FREY-MIXED-ADJOINT-DEGREE-BOUND
 - **mathematical / open:** [In precisely the paired norm-squareclass residual and coefficient gate of (H), prove the pointwise O_epsilon(n^(26/51+epsilon)) count after additionally discarding cycles meeting the effective-slope class thresholds or the equal-class nontrivial elliptic dependence test. The equal-class remainder includes equal products, reciprocal products and pairs independent modulo torsion.](ERDOS_943_PAIRED_PATH_ELLIPTIC_DEPENDENCE.md) — GAP-ARITH-ERDOS943-EFFECTIVE-SLOPE-ELLIPTIC-RESIDUAL
 - **mathematical / open:** [In the exact coefficient family and effective-slope and elliptic-dependence residual for (H), prove the pointwise O_epsilon(n^(26/51+epsilon)) count after also discarding cycles meeting the paired-product squareclass threshold and either unconditional equal-product scale or common divisor threshold. In the equal-class part this leaves equal products outside those tests and pairs of independent elliptic points modulo torsion.](ERDOS_943_PAIRED_PRODUCT_MULTIPLICATION.md) — GAP-ARITH-ERDOS943-PAIRED-MULTIPLICATION-RESIDUAL
+- **mathematical / open:** [For each fixed B>=128, both signs and every epsilon>0, bound the residual occupancy sum PO6 by O_B,epsilon((ZV)^epsilon(Z^(5/3)V^2+Z^3)), uniformly X=Z^10/V^2>=2 and Z^(17/10)<=V<=Z^(9/5). All three normalized coefficients exceed V/Z^(1/3). Keep the divisor condition, unit fifth-root classes, distinct small prime occupants and exact squarefree field-window weight PO3--PO4. This explicit majorant is sufficient; retaining the original selected-path restrictions also suffices.](ABC_COHERENT_PRIME_PATH_HIGHER_ODD_TORSION.md) — GAP-ARITH-ABC-FIFTH-PRIME-OCCUPANCY-SAVING
+- **mathematical / open:** [Construct or exclude a nonprojective pair of rational degree-three maps to weighted tangent profiles sharing a nonsquare genus-five quadratic function field, independent generic marked norm classes, and a real interval of simultaneous positive directions. CP3–CP5 constrain the branch matrix and polarization and require at least one map geometrically non-Galois. In the symmetric case positivity and independence follow from existence of the nonprojective pair. Prime specialization and aggregate class-group moments remain separate.](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) — GAP-ARITH-ABC-GENUS-FIVE-CUBIC-PARAMETER-INDEPENDENT-POSITIVE-PAIR
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

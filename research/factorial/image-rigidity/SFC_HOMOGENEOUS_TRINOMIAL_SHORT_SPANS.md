@@ -562,6 +562,10 @@ rational margins and the 105 oriented pairs of span \(2\) through
 
 ## Integral and shift formulas
 
+There is also a pointwise [sign theorem for separated angular exponents](SFC_HOMOGENEOUS_ANGULAR_SEPARATION.md).
+In particular, \(R<0\) whenever the smaller gap is at least
+\(6\sqrt{L+H+d+2}\).
+
 Let \(N=L+H+d\), \(e_0=0,e_1=a,e_2=d\) and
 \[
  \phi_j(t)=t^{L+e_j}(1-t)^{H+d-e_j},\qquad
@@ -623,6 +627,84 @@ count vector gives different multipliers to the signed summands of
 \(S\), leaving a positivity-preserving recurrence for \(S\) open.
 The unrestricted inequality and the lower-degree coefficient
 signs beyond the checked spans also remain open.
+
+## Exact Beta Gram determinants and the fractional-gap obstruction
+
+The Beta kernel does have an exact positive determinant before
+taking the highest-gap approximation. For real \(d>0\),
+\(L,H\ge0\), and distinct \(e_i\in[0,d]\), put
+\[
+ K(e,f)=B(2L+e+f+1,\,2H+2d-e-f+1).
+\]
+With \(\phi_e(t)=t^{L+e}(1-t)^{H+d-e}\), it satisfies
+\[
+ \det\bigl(K(e_i,e_j)\bigr)_{i,j=0}^2
+ =\frac1{3!}\int_{[0,1]^3}
+       \det\bigl(\phi_{e_i}(t_j)\bigr)_{i,j=0}^2^{\,2}
+            \,dt_0dt_1dt_2>0.                              \tag{9}
+\]
+Expand both determinants, integrate term by term, and relabel
+the three integration variables to obtain the identity.
+Strictness follows from linear independence: after division
+by the common positive envelope and substitution
+\(x=t/(1-t)\), the three functions are distinct powers
+\(x^{e_i}\). Their Wronskian is a nonzero Vandermonde
+factor times a power of \(x\). All integrals converge.
+This is the Gram specialization of Andréief's formula; see
+[Forrester, equation (1.7) and Section 2.2](https://arxiv.org/abs/1806.10411),
+which states and proves the integral identity. The argument
+above supplies its application here. Dividing each function
+by its first integral preserves the determinant sign.
+
+However, the positive exact Gram determinant does not itself
+give the sign of \(S\). Allow fractional gaps just for this
+test, and define \(S_{\rm ang}\) by (4), using
+\(f_i=\phi_{e_i}/\int\phi_{e_i}\) and
+\((e_0,e_1,e_2)=(0,a,d)\). At
+\((L,H,a,d)=(1,0,1/2,1)\), direct Beta integrals give
+\[
+ S_{\rm ang}=
+ \frac{9(143613\pi^4-996096\pi^2-4194304)}{448000\pi^4}<0,
+ \qquad
+ \det\bigl(\int f_if_j\bigr)
+   =\frac{27(256-25\pi^2)}{400\pi^2}>0.                    \tag{10}
+\]
+The failure persists at integer span two:
+\[
+ (L,H,a,d)=(19,0,3/2,2),\qquad
+                 -4/3<S_{\rm ang}<-13/10.                  \tag{11}
+\]
+The Gram determinant is positive there as well. Both examples
+have a gap less than one, so neither is an admissible ordinary
+trinomial support for the theorem at the start of this note.
+They also are not assertions of common zeros of the quadratic
+and cubic: \(S=0\) is only a necessary common-zero condition.
+
+The [exact Beta checker](verify_sfc_initial_beta_faces.py)
+derives these expressions from Gamma values by recurrence and
+certifies their signs with rational interval arithmetic.
+For (11), half-integer Gamma values put every coefficient in
+\(\mathbb Q(\pi)\). Bounds for \(\pi\) follow from
+\(\pi=16\arctan(1/5)-4\arctan(1/239)\) and the alternating
+arctangent series, using 18 terms and its next-term bound.
+The identity follows by the tangent addition formula, with
+the angles in the first quadrant. Polynomial interval
+evaluation then verifies the stated rational enclosure
+without floating point.
+
+Thus an exact positive lift of (8) needs more than positivity
+of the Beta Gram kernel on arbitrary ordered real nodes.
+The exact mixed cubic moments must also be controlled, and
+the admissible gap restrictions must enter that argument.
+The coefficientwise gap inequalities (6) and the initial
+integer-support sign remain open.
+
+For the alternative translation route, the
+[initial fractional-face theorem](SFC_ROW_TRANSLATION_DIVISOR_SIEVE.md#initial-windows-with-arbitrary-deleted-rows)
+removes the fractional/Gamma nonvanishing obstacle at deleted
+orders \(1,2\), even when the two columns differ in both rows.
+Its divisor lists still need to be eliminated. It supplies no
+unrestricted three-moment sign theorem.
 
 ## Replay
 

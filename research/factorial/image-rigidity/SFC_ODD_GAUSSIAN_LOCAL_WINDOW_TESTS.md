@@ -624,6 +624,11 @@ with the even-start theorem, this gives the
 large-height exclusion for fixed homogeneous
 bivariate trinomial supports at every start through
 \(12002\), as well as the families of Sections 5 and 7.
+For every start in this proved domain, the
+[explicit cutoff transfer](SFC_EXPLICIT_GAUSSIAN_NONLIFTING_CUTOFF.md)
+now supplies a numerical corner bound from the exponent span and
+maximum prescribed order. This does not enlarge the all-order scope
+of the Gaussian exclusion.
 
 ## 7. Large prime powers dividing the initial order
 

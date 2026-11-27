@@ -347,3 +347,251 @@ These test (5)–(6) and recovery of \(-\iota d\delta^2\), with opposite
 signs. The fixtures only test the algebraic identities.
 
 Taking seventh powers of the same prime products gives common scales \(4\) and \(196\) in the imaginary and real fixtures, respectively. Both give unit power congruences in (7b), with the exponent \(7\) on the unknown prime, and recover the same signed fields. In either exponent the congruence follows numerically by substituting the displayed prime generators.
+
+## Prime occupancy with the field window retained
+
+The estimate (7a) charges one possible small prime to every compatible
+class when \(|yz|>Z\). At \(\ell=5,V=Z^{7/4}\), its first term is
+\(Z^{11/2}=Z^{1/4}V^3\). A saving strictly larger than \(Z^{1/4}\)
+in that term would therefore improve the old crossover. The saving
+below is an **open estimate**. The exact reduction, removal of small
+coefficients, and conditional moment implication are proved here.
+
+### An explicit occupancy weight
+
+Fix a constant \(B\ge128\), absorbing the fixed witness constants.
+Let \(a=p_1^5,b=p_2^5\), choose nonzero signed \(y,z\) of absolute
+value at most \(BV\), and choose a signed divisor
+\[
+             x\mid ay^2-bz^2,\qquad 0<|x|\le BV.                 \tag{PO1}
+\]
+Require pairwise coprimality of \(x,y,z\), and
+\((x,p_1p_2)=(y,p_2)=(z,p_1)=1\). Put \(m=|yz|\), and let
+\[
+ R(p_1,p_2;x,y,z)=
+ \{r\in(\mathbb Z/m\mathbb Z)^\times:
+             r^5x^2\equiv ay^2+bz^2\pmod m\}.                  \tag{PO2}
+\]
+For \(m=1\) use its one residue class. There are
+\(O_\varepsilon((ZV)^\varepsilon)\) such classes. With an integer
+representative \(r\), enumerate its possible occupants as
+\(t=r+km\in[Z,2Z)\), and retain only distinct odd primes
+\(t\ne p_1,p_2\). In particular \((t,yz)=1\).
+
+**Lemma PO0 (Exact field test).** For each such occupant the traces in
+(5), with \(P_3=t^5\), are integers, and
+\[
+ E(t)=\frac{4ab-u_{12}(t)^2}{x^2}
+ =\frac{4ab\,y^2z^2-(ay^2+bz^2-t^5x^2)^2}{x^2y^2z^2}
+                  \in\mathbb Z\setminus\{0\}.                  \tag{PO3}
+\]
+Write uniquely \(E(t)=-\iota d\delta^2\), where \(d,\delta>0\)
+and \(d\) is squarefree. Thus the field-window condition is exactly
+\(X\le d<2X\), with \(d\ne1\) for \(\iota=1\).
+
+The two reductions of (PO2), together with (PO1), give (6), hence
+trace integrality. Set \(A=ay^2,B'=bz^2,C=t^5x^2\). The numerator
+in (PO3) is
+\(-(A-B')^2+2C(A+B')-C^2\), divisible by \(x^2\).
+Since \((x,yz)=1\) and the trace is integral, this proves \(E\) is
+integral. It is nonzero because \(4(p_1p_2)^5\) is not a square.
+The other two norm defects are the same \(E\), by expansion of (5).
+The traces and coefficients \(\delta(x,y,z)\) consequently give
+integral algebraic numbers of the required norms and coherent product.
+If also \((\delta,p_1p_2t)=1\), their incident coefficient units give
+the one-sided prime ideal factorizations: a supporting prime cannot
+divide both the element and its conjugate. Its ramification would
+force its norm valuation to be one, contrary to the fifth-power norm.
+The coherent product forces opposite orientations at the middle prime.
+This proves the field test and the stated norm interpretation.
+
+Define \(W_{\iota,X}(t)\) to be one when this squarefree-part test and
+\((\delta,p_1p_2t)=1\) hold, and when
+\[
+ \max_{ij}|u_{ij}|\le BZ^5,\qquad
+       |E(t)|\max(x^2,y^2,z^2)\le B^2Z^{10}.                    \tag{PO4}
+\]
+Otherwise put it zero. These are explicit necessary conditions for
+the selected witnesses, once \(B\) is fixed large enough. Their sum
+is a majorant; passing them does not assert membership in the particular
+real unit interval or the previously chosen path selection. Those
+additional restrictions can be retained if needed.
+
+This retains the squarefree part of \(E\), rather than replacing it
+by \(|E|\). In a balanced coefficient box, rescaling
+\(p_i=Zr_i\) and \((x,y,z)=V(s_x,s_y,s_z)\) gives
+\(E=(Z^{10}/V^2)\mathcal E(r,s)\). Even with \(\delta=1\), the
+relaxed condition \(1<|\mathcal E|<2\) contains open real regions
+of both signs. For example take all \(r_i=r\in(1,2)\),
+\(s_x=1,s_y=s_z=s\), so
+\(\mathcal E=r^{10}(4-s^{-2})\), and then perturb inside the box.
+This only checks the archimedean region; it makes no assertion about
+the density of integer, prime or squarefree records. Magnitude alone
+does not furnish the desired power saving by an interval-length argument.
+
+### Small normalized coefficients already meet the target
+
+**Proposition PO1 (Small-coefficient removal).** For a fixed odd prime
+exponent, \(1\le U\le BV\), and either sign, the coherent triangles
+with \(\min(|x|,|y|,|z|)\le U\) number
+\[
+        O_{B,\ell,\varepsilon}((ZV)^\varepsilon
+                                  (Z^2UV+Z^3)).                 \tag{PO5}
+\]
+The bound is uniform under additional field-window and path restrictions.
+
+Permute the vertices so a small coefficient is \(y\), leaving it
+free in the divisor argument. For fixed \(p_1,p_2,y,z\), (PO1)
+gives divisor-many \(x\). The remaining prime costs at most a
+subpower multiple of \(1+Z/|yz|\). Summing \(0<|y|\le U\),
+\(0<|z|\le BV\) gives \(UV+O(Z\log(2U)\log(2BV))\).
+The first two primes cost \(O(Z^2)\). The finite choices of vertex
+permutation and signs complete the proof. If \(U<1\) the sector is empty.
+
+In particular \(U=V/Z^{1/3}\) removes this sector at cost
+\(O_\varepsilon((ZV)^\varepsilon(Z^{5/3}V^2+Z^3))\).
+The residual has **all three** coefficients greater than this threshold;
+they need not lie in one dyadic box.
+
+### A uniform open estimate and its fourth-moment consequence
+
+Let \(\mathcal O_{5,\iota}^{\rm res}(Z,V;X)\) be the sum, over
+the divisor records (PO1) with
+\(\min(|x|,|y|,|z|)>V/Z^{1/3}\), of
+\[
+ \sum_{r\in R(p_1,p_2;x,y,z)}
+ \ \sum_{\substack{k\in\mathbb Z:\ t=r+k|yz|\in[Z,2Z)\\
+                  t\text{ odd prime},\ t\ne p_1,p_2}}
+                                      W_{\iota,X}(t).           \tag{PO6}
+\]
+The first two primes are distinct odd primes in \([Z,2Z)\).
+This is an explicit sufficient majorant for the selected residual paths.
+
+**Open estimate PO2 (Uniform residual prime occupancy).** For each
+fixed \(B\) and \(\varepsilon>0\), prove
+\[
+ \mathcal O_{5,\iota}^{\rm res}(Z,V;X)
+       \ll_{B,\varepsilon}(ZV)^\varepsilon
+                             (Z^{5/3}V^2+Z^3)                  \tag{PO7}
+\]
+for \(X=Z^{10}/V^2\ge2\), both signs, and the entire band
+\[
+                         Z^{17/10}\le V\le Z^{9/5}.             \tag{PO8}
+\]
+It would also suffice to prove this with the original selection
+restrictions retained. An estimate at \(V=Z^{7/4}\) alone does not
+supply (PO7). Throughout the residual band each coefficient is
+\(>Z^{41/30}\), and \(|yz|>Z^{41/15}\). For sufficiently large
+\(Z\), every class therefore has at most one integer occupant in
+the prime interval. The missing bound concerns how often that occupant
+exists and passes the prime and norm tests, averaged over these
+correlated divisor records.
+
+**Conditional corollary PO3 (Fourth moment from occupancy).** If
+(PO7) holds throughout (PO8) for a fixed sign, then
+\[
+ \sum_{\substack{0<d\le X\\ d\text{ squarefree},\ \iota d\ne1}}
+       h_5(\iota d)^4\ll_\varepsilon X^{59/29+\varepsilon}.      \tag{PO9}
+\]
+This implication does not assert (PO7) or improve the current
+unconditional exponent \(53/26\).
+
+Combine (PO5) and (PO7), divide by the path lower bound (4), and
+substitute \(Z=X^{1/2+4\eta}/H,V=Z^5/\sqrt X\). In (PO8) this gives
+\[
+ N_{5,\iota}(H;X)\ll_\varepsilon X^\varepsilon
+            (1+XH^{-2}+X^{13/3}H^{-32/3}).                     \tag{PO10}
+\]
+Choose the auxiliary \(\eta>0\) sufficiently small for the final
+\(\varepsilon\), as in (1). Ignoring these absorbable subpowers,
+the band corresponds to
+\(11/32\le h=\log_XH\le23/66\). The new tail crosses \(X/H\)
+at \(h=10/29\), strictly inside the band, where
+\(V=Z^{16/9}\). Multiplying the tail by \(H^4\) gives the exponent
+\(1+3(10/29)=59/29\) at this crossing and a decreasing main
+contribution above it.
+
+Below the crossing the pair tail, together with the trivial count
+below \(H=X^{1/4}\), gives at most
+\(\max(2,1+3(10/29))\). The decreasing \(X^{5/2}H^{-6}\)
+pair term contributes at most \(X^2\). Above the occupancy band,
+use the original fifth-power triangle tail (1). Its rank-one and
+rank-two fourth-moment contributions at \(h=23/66\) have exponents
+\[
+ \frac{11}{2}-10\frac{23}{66}=\frac{133}{66},\qquad
+ 4-\frac{23}{4}\frac{23}{66}=\frac{527}{264},
+\]
+both strictly below \(59/29\), and both decrease with \(h\).
+The term \(XH^{-2}\) contributes at most \(X^{9/5+\varepsilon}\)
+up to the nonexceptional cap \(H\le X^{2/5+\eta}\).
+Exceptional fields cost \(X^{2+\varepsilon}\), as before.
+The strict margins at the band endpoints absorb the \(\eta\)
+allowances. Dyadic summation proves (PO9). The improvement would be
+\(53/26-59/29=3/754\). Frey's comparison in the
+[five-Selmer application](X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md#transferred-moments)
+would then transfer the negative-sign version to its second moment.
+
+More generally, for \(0<\theta\le1\), a bound
+\(Z^{2-\theta}V^2+Z^3\) gives the tail term
+\(X^{(9-\theta)/2}H^{-(11-\theta)}\), with crossing
+\(b_\theta=(7-\theta)/(20-2\theta)\). This is below \(9/26\)
+exactly when \(\theta>1/4\), and its crossover is
+\(V=Z^{(5+\theta)/3}\). This algebra presupposes a bound uniform
+around that new scale and enough surrounding parameter coverage;
+it does not establish another moment theorem by itself.
+
+### Primary-source comparison and exact controls
+
+The closest retained pair argument is Heath-Brown--Pierce,
+Proposition 2.3 and Section 3, in
+[arXiv:1409.3177v2](sources/heath-brown-pierce-1409.3177v2.pdf).
+It uses a unit square-root congruence and the trace interval to count
+two-prime norm records. Chan--Koymans,
+[arXiv:2505.00611v1, Proposition 5.1](https://arxiv.org/pdf/2505.00611v1),
+supplies the analogous real quadratic pair bound with bounded witnesses.
+Neither statement counts the third-prime occupancy in (PO6).
+
+The modular-root comparison inspected here is Shkredov--Shparlinski--Zaharescu,
+[Theorem 1.1, published pp. 2--3](https://doi.org/10.1007/s00209-024-03436-5).
+It bounds average discrepancy for \(s^2\equiv\lambda p\pmod q\),
+over prime moduli \(q\le Q\), by
+\(P(P^{-1/12}+P^{-1/5}Q^{1/10})Q^{o(1)}\), for \(1\le P\le Q\).
+This concerns quadratic roots with an unweighted modulus average.
+Our classes are fifth roots for composite \(|yz|\), with divisor and
+field weights coupled to the same variables. No reduction to its
+hypotheses is established. With \(Q\asymp V^2,P\asymp Z\) at the
+critical scale, even its displayed error is not a saving over \(P\).
+
+For an arithmetic-progression comparison, Li,
+[arXiv:2611.29075v1, Theorem 1.1](https://arxiv.org/pdf/2611.29075v1),
+assumes a fixed nonzero residue \(a\), divisor-bounded product weights,
+and in particular \(Q_1Q_2\le x^{8/15-\varepsilon}\), with three
+additional restrictions on the factors. Here the prime scale is
+\(x\asymp Z\), the classes vary with the divisor record, and already
+\(|yz|>Z^{41/15}\) in the residual band. That theorem does not
+directly apply. These are scoped comparisons, not a complete priority
+survey or proof that other methods cannot establish (PO7).
+
+[The occupancy checker](verify_fifth_prime_occupancy.py) uses only the
+Python standard library. It checks the two signed norm fixtures,
+rejects corrupted prime tuples, compares CRT enumeration with direct
+enumeration at \(Z=10,V=7\), and checks the rational crossing and
+endpoint exponents. Its census counts compatible
+classes, integer occupants, distinct prime occupants and the exact
+field-window survivors separately, using positive coefficients only.
+The canonical command is
+`python3 research/arithmetic/verify_fifth_prime_occupancy.py`.
+The direct control matches 402 tuples. At \(Z=10,V=56\), the census
+has 56,554 divisor records, 57,262 compatible classes, 6,776 integer
+occupants and 1,320 distinct-prime occupants; none reaches the residual
+coefficient sector or the prescribed field window. At the exact critical
+scale \(Z=16,V=128,X=2^{26}\), the command with `--Z 16 --V 128`
+gives 616,886 divisor records, 625,852 compatible classes, 29,212 integer
+occupants, 5,466 distinct-prime occupants and twelve residual prime
+occupants. None passes the field window. One residual example is
+\((p_1,p_2,p_3)=(17,23,29)\), \((x,y,z)=(57,113,53)\), whose
+squarefree defect is \(3,304,670,587>2X\). A separate norm fixture
+over \(\mathbb Q(\sqrt{-3})\) checks acceptance of the field test
+and rejection after changing the window; it is not a dyadic prime-box
+fixture. These finite controls test reconstruction, coverage and rejection,
+and supply no asymptotic occupancy exponent or new moment bound.

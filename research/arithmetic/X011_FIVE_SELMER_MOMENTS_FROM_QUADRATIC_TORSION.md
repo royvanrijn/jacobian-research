@@ -125,6 +125,34 @@ moment. Using (4) as well adds the terms
 \(X^{7/4+\varepsilon}Y^{-3/2}\) and
 \(X^{5/2+\varepsilon}Y^{-5/2}\) to the minimum.
 
+## Conditional occupancy improvement
+
+**Corollary (Conditional five-Selmer second moment).** If the negative-sign
+uniform residual occupancy estimate (PO7) holds throughout the band (PO8) in
+[the fifth-prime occupancy reduction](ABC_COHERENT_PRIME_PATH_HIGHER_ODD_TORSION.md#prime-occupancy-with-the-field-window-retained), then
+\[
+ \sum_{\substack{d\in\mathcal D_{11}\\ |d|\le X}} S(d)^2
+                  \ll_\varepsilon X^{59/29+\varepsilon}.
+ \tag{7}
+\]
+Indeed the conditional fourth-moment bound (PO9), together with
+\(S(d)^2\le h_5(d)^4\) from (2), gives the same nonnegative-sum
+restriction used to prove (3). The occupancy estimate remains open;
+(3) is the current unconditional second-moment bound.
+
+**Corollary (Conditional Selmer and Sha tails).** Under the same occupancy
+hypothesis, each count in (5), including its \(\Sha[5]\) version, is
+\[
+             \ll_\varepsilon
+                 \min\{X,\ X^{59/29+\varepsilon}Y^{-2}\}.
+ \tag{8}
+\]
+The dimension version has \(Y^{-2}=5^{-2t}\). The proof of (5)--(6)
+applies to (7) unchanged: use Markov's inequality and the same Kummer
+quotient. For fixed \(\eta>0\), taking \(\varepsilon=\eta\) gives
+\(O_\eta(X^{1-\eta})\) above size \(X^{15/29+\eta}\).
+The unconditional threshold recorded above remains \(27/52\).
+
 ## Comparison with the same family and quantity
 
 The classical antecedents already supply the bridge to this family.

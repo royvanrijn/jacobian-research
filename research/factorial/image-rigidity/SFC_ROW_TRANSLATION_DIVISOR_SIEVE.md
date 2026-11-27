@@ -180,6 +180,87 @@ binomials. The new higher-support bound is for each prescribed
 order set. At support size at least three no uniform terminal
 cutoff is supplied by this argument.
 
+### Initial windows with arbitrary deleted rows
+
+**Theorem.** At the initial orders \(I=\{1,2,3\}\), every
+admissible upper mark \(j=3\), \(1\le h\le a\),
+\(\gcd(h,3)=1\), has \(R(a-h/3)>0\). The two deleted
+columns may differ in any of the unmarked coordinates. There
+is no separation condition on \(a\) or \(w\). Consequently
+every fixed three-column profile with a unique row minimum
+has an exact finite list of potentially failing translations
+in that row, uniformly over characteristic-zero coefficient fields.
+
+For the proof, put \(A=a-h/3\ge2a/3>0\), and write the
+two face monomials on the positive orthant as
+\[
+ \psi_0(x)=x_1^A\prod_{i>1}x_i^{b_{i0}},\qquad
+ \psi_1(x)=x_1^{A+w}\prod_{i>1}x_i^{b_{i1}}.
+\]
+Use the product-exponential measure \(d\mu=e^{-\sum x_i}dx\).
+The real powers are unambiguous there, and their first and
+second integrals converge. The two functions are linearly
+independent because the exponent columns are distinct. Write
+\[
+ U_1=pZ_0+rZ_1,\qquad U_2=uZ_0^2+2vZ_0Z_1+zZ_1^2.
+\]
+The factorial normalization in (1) gives
+\[
+ p=\frac{\int\psi_0\,d\mu}{\Gamma(A+1)},\quad
+ r=\frac{\int\psi_1\,d\mu}{\Gamma(A+1)},\quad
+ (u,v,z)=\frac{\bigl(\int\psi_0^2,\int\psi_0\psi_1,
+                         \int\psi_1^2\bigr)}{\Gamma(2A+1)},
+\]
+with the same measure in the three numerator integrals.
+In particular \(p,r>0\), and
+\[
+ R(A)=p^2z-2prv+r^2u
+     =\frac{1}{\Gamma(2A+1)}
+          \int(r\psi_0-p\psi_1)^2\,d\mu>0.                 \tag{I1}
+\]
+Indeed \(U_1=0\) has only the projective direction \((-r,p)\),
+and \(U_2\) is positive there. This proves nonvanishing over
+\(\mathbb C\). At rational \(A\), the normalized forms have
+rational coefficients, so their nonzero resultant excludes a
+common direction over every characteristic-zero field as well.
+This uses positivity of the first two Gamma moments directly;
+it does not invoke an ordinary integer-exponent binomial theorem.
+
+For an explicit divisor integer, let
+\[
+ R_h=3^{4w}(p^2z-2prv+r^2u)\in\mathbb Z_{>0}.
+\]
+Equation (3) specializes to
+\[
+ 3L+h\mid c_3^2 R_h^3 B_{1,h}^{6}B_{2,h}^{3}.               \tag{I2}
+\]
+Every factor on the right is nonzero. Taking \(h=1\) alone
+therefore gives a finite divisor list; using all admissible
+\(h\) intersects those lists. For a homogeneous bivariate
+trinomial one may use either exponent row. The other row,
+including its common translation, is fixed when forming the
+integer in (I2). Thus this is a finite decision for that fixed
+row profile, not a bound independent of both translations or
+the support. The candidate \(L=0\) always survives the
+\(h=1\) divisibility test, so nonvanishing of the marked face
+alone does not eliminate the physical residual.
+
+The [exact face checker](verify_sfc_initial_beta_faces.py) checks
+75 rational marked faces with arbitrary orientations in up to
+two unmarked rows, a repeated-column failure of strictness,
+and four specializations of the full ternary resultant to (I2).
+These finite controls check the formulas and normalization;
+the square integral proves the unrestricted statement. Replay
+from the repository root with Python 3.12.3 and SymPy 1.14.0:
+
+~~~sh
+.venv/bin/python research/factorial/image-rigidity/verify_sfc_initial_beta_faces.py
+~~~
+
+At higher starts the deleted orders need not be \(1,2\).
+The fractional/Gamma-binomial window and elimination of the
+surviving integer translations remain separate obligations.
+
 ## 3. Integer marks using an ordinary deleted face
 
 Integer specializations cause all restricted higher forms to

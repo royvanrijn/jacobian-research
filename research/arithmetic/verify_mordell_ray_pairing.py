@@ -43,6 +43,36 @@ def norm(a):
     return a[0] ** 2 - 6 * a[1] ** 2
 
 
+def verify_torsion_geometry():
+    """Polynomial identities after factoring out powers of rho, rho^3=R.
+
+    Coefficients lie in Q(s,d), s^2=6, d^2=-3. This checks the general
+    S+T= sigma(T) relation and tangent slope, independently of any curve rank.
+    """
+    zero, one = (F(0), F(0)), (F(1), F(0))
+
+    def badd(a, b):
+        return add(a[0], b[0]), add(a[1], b[1])
+
+    def bscale(a, c):
+        return scale(a[0], c), scale(a[1], c)
+
+    def bmul(a, b):
+        return add(mul(a[0], b[0]), scale(mul(a[1], b[1]), -3)), add(
+            mul(a[0], b[1]), mul(a[1], b[0]))
+
+    s, d = ((F(0), F(1)), zero), (zero, one)
+    z = bscale(badd((neg(one), zero), d), F(1, 2))
+    slope = bscale(bmul(s, z), -1)  # S-to-T slope divided by rho.
+    xsum = badd(bmul(slope, slope), (scale(one, 6), zero))
+    assert xsum == bscale(z, -6)
+    ysum = badd(bmul(slope, bscale(xsum, -1)), bscale(s, -3))
+    assert ysum == bscale(bmul(s, d), 3)
+    tangent = bscale(bmul(s, d), -1)
+    assert bmul(tangent, bscale(bmul(s, d), 6)) == (scale(one, 108), zero)
+    assert bmul(ysum, ysum) == (scale(one, -162), zero)
+
+
 def quadratic(a):
     return tuple(map(F, a))
 
@@ -173,6 +203,7 @@ def reconstruct_matrix(n, radical_vectors, entry, extra_entries=()):
 
 
 def main():
+    verify_torsion_geometry()
     data = json.loads(Path(__file__).with_name('mordell_ray_pairing_exact.json').read_text())
     reps = {int(p): quadratic(a) for p, a in data['kummer_basis'].items()}
     for p, a in reps.items():
@@ -272,7 +303,7 @@ def main():
         assert len(basis) - rank(m) == len(vectors)
         print(f"R={R}: exact normalized matrix {m}; rank {rank(m)}; "
               f"rational Kummer dimension {len(vectors)}")
-    print(f'PASS: two exact norm identities, four embeddings per local symbol, '
+    print(f'PASS: general torsion geometry, two exact norm identities, four embeddings per local symbol, '
           f'{witness_count} rational Kummer identities, and {len(data["curves"])} complete matrices. '
           'Global comparison and Chebotarev remain written proof inputs.')
 

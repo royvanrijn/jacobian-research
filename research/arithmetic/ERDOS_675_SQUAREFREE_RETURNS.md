@@ -16,6 +16,14 @@ every fixed \(r\). The asymptotic order of the unrestricted
 least shift remains open.
 [Ho's note, Theorem 1.1 and Proposition 1.3](https://boonsuan.github.io/erdos675_squarefree.pdf)
 
+The two proved upper-scale statements have different quantifiers:
+\[
+ \log t_r(N)\ll_r N^{1/r},\qquad
+ -\log\delta_N\sim(1+1/\sqrt2)\sqrt N\quad(r=2).
+\]
+The first is a growing-prefix, finite-height existence theorem. The
+second takes the shift bound to infinity for each fixed prefix.
+
 The [density of all returns](#natural-density-of-all-squarefree-returns)
 has a sharp logarithmic asymptotic.
 The [prime-divisibility profile](#prime-divisibility-patterns-of-power-free-returns)
@@ -1026,6 +1034,127 @@ is absorbed when \(X\ge\exp(C'_rY^2/\log Y)\) with
 \(C'_r\) large. Both finite-height conclusions require
 intervals above the scale of the first unrestricted squarefree
 return, whose order remains open.
+
+## Joint square witnesses and their least CRT representatives
+
+Ho's Theorem 1.1 and Proposition 3.1 force individual small prime
+squares into every return by finding a squarefree positive site in a
+forbidden residue class. They do not use the simultaneous witnesses at
+the negative sites. The density argument above does use their overlaps,
+but counts residue probabilities. For individual returns the least
+positive representative of the joint residue assignment must also be
+retained. The following elementary formulation makes that distinction
+explicit; it does not improve Ho's lower exponent.
+
+Put \(A=S_2\cap[1,N]\), \(B=[1,N]\setminus A\), and fix an integer
+height \(X\ge1\). A witness assignment is a map \(w\) from \(B\) to
+the primes at most \(P=\lfloor\sqrt{X+N}\rfloor\). Require
+\[
+ \begin{split}
+ w(a)=w(b)=q&\ \Longrightarrow\ a\equiv b\pmod{q^2},\\
+ w(b)=q,\ a\in A&\ \Longrightarrow\ a\not\equiv b\pmod{q^2}.
+ \end{split}                                                     \tag{675.W1}
+\]
+These are the overlap and positive-site safety tests. For each used
+prime \(q\), choose any \(b_q\) assigned to it and impose
+\(t\equiv-b_q\pmod{q^2}\). The first condition makes this independent
+of the choice. Let
+\[
+ M(w)=\prod_{q\in w(B)}q^2,\qquad
+ 0\le r(w)<M(w)
+\]
+be the joint modulus and its Chinese remainder representative. With
+empty \(B\), use \(M=1,r=0\). Define
+\[
+ C_X(r,M)=\left\lfloor\frac{X-r}{M}\right\rfloor
+                  -\left\lfloor\frac{-r}{M}\right\rfloor .
+                                                               \tag{675.W2}
+\]
+This counts positive integers at most \(X\) in that class, including
+the convention that a zero representative first occurs at \(M\).
+
+**Proposition (Joint witness cover and exponential modulus).**
+Every
+squarefree prefix return \(1\le t\le X\) belongs to at least one of
+the classes just defined. Consequently
+\[
+ \#\{t\in\mathcal R_N:t\le X\}
+       \le\sum_{w\text{ satisfying }(675.W1)} C_X(r(w),M(w)).      \tag{675.W3}
+\]
+For all sufficiently large \(N\), every assignment in this sum satisfies
+\[
+ M(w)\ \ge\prod_{N^{3/10}<p\le\sqrt N}p^2
+                 =\exp((2+o(1))\sqrt N).                       \tag{675.W4}
+\]
+The uniform lower bound is on the joint modulus, not on \(t\).
+
+For the cover, select one square-divisor prime of \(t+b\) at each
+\(b\in B\). These primes are at most \(P\), and preservation of
+every positive site gives (675.W1). Equation (675.W2) and a union
+bound prove (675.W3).
+
+For (675.W4), use the positive-site forcing argument in the density
+proof: for \(q\le N^{3/10}\), the only class avoiding all positive
+sites modulo \(q^2\) is zero. Set \(H=\sqrt N\) and
+\(Z=N^{3/10}\). Each prime \(Z<p\le H\) supplies the negative site
+\(p^2\). Its assigned witness cannot be \(q\le Z\), since the safety
+test would then force \(q^2\mid p^2\), hence \(q=p>Z\).
+The witnesses for different such primes are distinct. Otherwise the
+common odd witness \(q>Z\) would satisfy
+\(q^2\mid(p-p')(p+p')\). The two factors have greatest common divisor
+2, so \(q^2\) divides one of them, impossible because
+\(q^2>Z^2>2H\) for large \(N\). There are
+\(\pi(H)-\pi(Z)\) distinct witnesses above \(Z\). Their product is
+at least the product of the same number of smallest primes above
+\(Z\), proving the inequality in (675.W4). The prime number theorem
+gives its asymptotic. No collision-conic estimate is needed for this
+single-site-per-row argument.
+
+If \(X=\lfloor\exp(N^c)\rfloor\), \(c<1/2\), then \(M(w)>X\)
+for every assignment, once \(N\) is large. Thus each summand in
+(675.W3) is exactly the indicator of \(0<r(w)\le X\).
+Replacing the right side by its density approximation \(X/M(w)\)
+loses the decisive information. A sufficient next estimate is absence
+of these small representatives for some \(c>25/72\). It is stronger
+than necessary if the positive tests at unused primes are discarded.
+Keeping those tests, a candidate representative is an actual return
+exactly when every \(r(w)+a\), \(a\in A\), is squarefree. This is the
+finite-height obligation; (675.W4) alone does not discharge it.
+
+### A witness exchange with a small joint representative
+
+The return \(t=2376\) through \(N=49\), displayed in Ho's Figure 1,
+has a useful joint assignment. Every
+negative site other than 25 and 49 retains its original witness 2 or 3,
+whereas
+\[
+             t+25=2401=7^4,\qquad t+49=2425=5^2\cdot97.
+\]
+The witnesses at \(5^2\) and \(7^2\) are exchanged. The resulting
+assignment on all negative sites uses primes \(2,3,5,7\), with
+\[
+ M=4\cdot9\cdot25\cdot49=44100,\qquad r=2376<M.
+\]
+All positive sites through 49 survive. At position 50 the pattern
+fails: \(50\) is not squarefree, while \(2426=2\cdot1213\) is.
+This finite example rules out the inference \(t\ge M(w)\) for a
+compatible safe assignment, even after every positive site is checked.
+It is not a counterexample to an asymptotic square-root lower bound.
+
+The exact control script
+[verify_arithmetic_endpoint_joint_controls.py](verify_arithmetic_endpoint_joint_controls.py)
+checks this exchange, the finite CRT cover against a direct squarefree
+sieve, and the prime-two normalization in (365.J2) of the
+[Pell endpoint](ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md#a-joint-count-in-the-period-ratio-and-unit-quotient).
+Its finite domain does not establish either endpoint or an asymptotic.
+An internal run on 27 November 2026 with Python 3.12.3 passed: the
+cover was exhausted for \(1\le N\le12\), \(1\le t\le500\), giving
+2412 safe assignments and 773 returns summed over the 12 prefixes.
+After all positive tests, the union equalled the direct squarefree
+sieve in every prefix. Conflicting overlaps, positive-site hits, and
+the spurious shift zero were explicitly rejected. The full command is
+`python3 research/arithmetic/verify_arithmetic_endpoint_joint_controls.py`
+from the repository root; only the Python standard library is needed.
 
 ## The common divisor of the returns
 

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
+  "assurance": "Internal written uniform conditional descent and local capture, with exact finite mechanism controls. Global plateau escape and arbitrary extraction remain open.",
+  "declarations": [
+    {
+      "name": "Lemma 1. Terminal mass detects exactly the removable locus",
+      "scope": "For every polynomial DT tree on N=2r+1 sheets, lambda(A) is the sum of its two terminal-component sizes minus two. The minimum mu over all factors lies in [0,N-4] and is zero exactly when a DT has two exclusive leaves on different edges."
+    },
+    {
+      "name": "Lemma 2. Bringing another factor preserves a chosen cut",
+      "scope": "For arbitrary factors A,B, move B unchanged toward A, using positive moves from the right or negative moves from the left. All three component sets after deleting A stay literal and connected; both selected factors are unchanged. The cost is their positional distance minus one."
+    },
+    {
+      "name": "Lemma 3. An outer one-contact gives strict descent",
+      "scope": "If mu>0 and a minimizing DT A has support intersection exactly one with B at an outer endpoint a, cut-preserving bringing followed by conjugating B by A strictly reduces mu in at most r-1 ordinary moves. Stop at the first decrease to keep all preceding masses equal. The terminal mass drops by the size of the nonempty branch pruned from the a-component."
+    },
+    {
+      "name": "Lemma 4. Two degree-two contacts can create two new leaves",
+      "scope": "For adjacent A=(ab)(cd),B=(ae)(cf) on six distinct labels, with every other factor fixing a,c, one inverse move produces ((be)(df),A). The two degree-two contacts become exclusive leaves of A; deleting them and A leaves a full-cycle polynomial tuple. Reverse the adjacent input order and use a positive move for the same retained A. No claim about arbitrary bringing preserving these degree conditions."
+    },
+    {
+      "name": "Lemma 5. Five weighted components control every adjacent-pair rotation",
+      "scope": "For any adjacent DT pair, delete its four edges and record five positive component weights and the component of each support label. Every pair rotation has exactly the terminal masses computed on that weighted quotient tree. Q^k(A,B)=(A(AB)^k,A(AB)^(k+1)) and ord(AB) is in {2,3,4,5,6}. An endpoint mass inequality does not control intermediate masses or guarantee any descending pair exists."
+    }
+  ],
+  "primary_source_comparison": [
+    {
+      "authors": "Vivien Ripoll",
+      "version": "arXiv:0903.3604v3, 27 January 2010",
+      "url": "https://arxiv.org/html/0903.3604v3",
+      "inspected": "Definition 0.3; Theorems 0.4 and 5.5; actual primary HTML statements",
+      "conclusion": "The primitive-factorization orbit theorem permits only one nonreflection. The present 2^r DT shape has no reflection blocks. The general stratum/orbit correspondence does not supply the required connectedness.",
+      "role": "context; no extraction theorem imported"
+    },
+    {
+      "authors": "Fu Liu and Brian Osserman",
+      "version": "arXiv:math/0609118v1, 4 September 2006",
+      "url": "https://arxiv.org/html/math/0609118v1",
+      "inspected": "Proposition 1.1, Theorem 1.2 and Section 2 pure-cycle definition; actual primary HTML statements",
+      "conclusion": "Every branch permutation must be a single cycle. A DT fails the single ramified point hypothesis.",
+      "role": "context; no DT or mixed-DT transitivity imported"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "research/arithmetic/terminal_mass_hurwitz_descent_certificate.json",
+      "sha256": "d2f2ba4d9c9d7cbb665183bf33fe3cbc195401ff37fd0dd9a339138a961257d0",
+      "locator": "Two literal degree-fifteen tuples, factor masses, words, leaf labels and complete initial pair-rotation profiles",
+      "role": "Exact changing-candidate captures and local plateau obstruction"
+    },
+    {
+      "path": "research/arithmetic/verify_paired_hurwitz_leaf_extraction.py",
+      "sha256": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+      "locator": "Permutation helpers, DT class, cyclic controls, deletion and finite closure",
+      "role": "Reuse the retained degree-seven domain and exact helper functions"
+    },
+    {
+      "path": "research/arithmetic/verify_unmarked_polynomial_hurwitz_reduction.py",
+      "sha256": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f",
+      "locator": "Permutation composition and Hurwitz moves",
+      "role": "Exact permutation primitives imported transitively"
+    },
+    {
+      "path": "research/arithmetic/alternating_hurwitz_source_ledger.json",
+      "sha256": "3479790b2a1c3967e41c5baa9ad49e0893d9393a8f67e933c31a6e70e4f49dfe",
+      "locator": "Jones Theorem 1.1 primary statement",
+      "role": "Full A15 from a literal 3-cycle and written odd-degree primitivity"
+    },
+    {
+      "path": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "locator": "Theorem 1.1, printed page 1",
+      "role": "Actual cached statement read: primitive plus a prime cycle fixing at least three points implies A_n"
+    }
+  ],
+  "evidence": {
+    "checker": "research/arithmetic/verify_terminal_mass_hurwitz_descent.py",
+    "receipt": "research/arithmetic/terminal_mass_hurwitz_descent_verification.json",
+    "command": "python3 research/arithmetic/verify_terminal_mass_hurwitz_descent.py",
+    "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
+    "software": "Python 3.12.3; standard library only",
+    "scope": "Existing 392-tuple degree-seven domain: 42 strict pruning controls in both bringing orders, 56 two-contact captures in both pair orders and 6720 weighted quotient comparisons. Additional period-two control, cyclic r=4,7,12,25 controls and literal degree-fifteen one-move capture. A second full-A15 witness has mass one in all24 pair/power cases covering every power of each initially adjacent pair, yet [-3,-4] gives1,1,0 and two new leaves. Invalid controls rejected."
+  },
+  "remaining_frontier": "Prove a uniform escape from every positive terminal-mass plateau in the full-alternating residual domain. The arbitrary overlap gate supplies no mass control or outer-endpoint location. Mixed three-cycle connectivity is separate.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

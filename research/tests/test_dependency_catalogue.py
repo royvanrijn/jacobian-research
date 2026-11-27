@@ -83,6 +83,42 @@ class RetainedDependencyTests(unittest.TestCase):
                             if row["id"] == bound_node]
                 self.assertTrue(all(not row["domain_excluded"] for row in restored))
 
+    def test_high_value_stability_and_reverse_planar_consequence(self):
+        stronger = "GAP-PIS-FULL-RANK-STATIONARY-STABILITY"
+        high_value = "GAP-PIS-HIGH-VALUE-FULL-RANK-STABILITY"
+        global_bound = "GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE"
+        planar = "GAP-PIS-PLANAR-BALANCED-AFFINE-VALUE"
+        boundary = "PIS-RANK-DEFICIENT-GLOBAL-MAXIMUM-EXCLUSION"
+        # Lower-valued stationary tuples are not an obligation of the global route.
+        restricted = self.graph.evaluate({stronger: "stale", high_value: "proved"})
+        self.assertEqual(restricted[global_bound]["state"], "conditional")
+        self.assertEqual(restricted[planar]["state"], "conditional")
+        self.assertNotIn(stronger, restricted[global_bound]["assumptions"])
+        # A planar equality would become a forbidden rank-deficient maximizer.
+        reverse = self.graph.evaluate({global_bound: "proved", high_value: "stale"})
+        self.assertEqual(reverse[planar]["state"], "conditional")
+        withdrawn = self.graph.evaluate({global_bound: "proved", boundary: "stale"})
+        self.assertEqual(withdrawn[planar]["state"], "stale")
+
+    def test_terminal_mass_tree_proof_does_not_require_its_finite_example(self):
+        controls = "SRC-HURWITZ-TERMINAL-MASS-DESCENT"
+        written = "SRC-HURWITZ-TERMINAL-MASS-WRITTEN-LEMMA-CORE"
+        plateau = "GAP-ARITH-HURWITZ-TERMINAL-MASS-PLATEAU-ESCAPE"
+        extraction = "GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE"
+        lemmas = ("ARITH-HURWITZ-TERMINAL-MASS-LOCUS",
+                  "ARITH-HURWITZ-OUTER-OVERLAP-STRICT-DESCENT",
+                  "ARITH-HURWITZ-FIVE-WEIGHT-PAIR-ROTATIONS")
+        without_controls = self.graph.evaluate({controls: "stale", plateau: "proved"})
+        for lemma in lemmas:
+            self.assertEqual(without_controls[lemma]["state"], "proved")
+        self.assertEqual(without_controls[extraction]["state"], "conditional")
+        self.assertEqual(without_controls[
+            "ARITH-HURWITZ-A15-CHANGING-CANDIDATE-CAPTURE"]["state"], "stale")
+        without_proof = self.graph.evaluate({written: "stale", plateau: "proved"})
+        for lemma in lemmas:
+            self.assertEqual(without_proof[lemma]["state"], "stale")
+        self.assertEqual(without_proof[extraction]["state"], "stale")
+
     def test_wirtinger_verification_reaches_named_equalities_without_blocking_lift_bounds(self):
         equality_claims = (
             "MRC-ALL-CHARACTERISTIC-LIFTS-THM-PANEL",

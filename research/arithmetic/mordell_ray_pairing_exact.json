@@ -1,48 +1,752 @@
 {
   "schema_version": 1,
-  "scope": "Exact algebraic support for the fixed 5-23 pairing block, its rational controls and selected complete matrices. The written global comparison and Chebotarev arguments are not certified by this input.",
+  "scope": "Exact algebra for the original block, its cubic-character correction at 3, the wild-5 block, and selected complete ray-basis matrices. Global comparison and ramification-normalization arguments remain written inputs.",
   "normalization": "A single nonzero scalar on the F_3-valued pairing is fixed so that the 5-23 entry is the sum of the central symbols minus its value at 503. This is shared by all curves; the usual map j/3 -> j differs by at most an overall sign.",
   "kummer_basis": {
-    "5": ["-35", "15"],
-    "23": ["667", "276"],
-    "53": ["53", "159"],
-    "359": ["-25489", "10770"],
-    "503": ["9557", "6036"]
+    "5": [
+      "-35",
+      "15"
+    ],
+    "23": [
+      "667",
+      "276"
+    ],
+    "53": [
+      "53",
+      "159"
+    ],
+    "359": [
+      "-25489",
+      "10770"
+    ],
+    "503": [
+      "9557",
+      "6036"
+    ],
+    "0": [
+      "5",
+      "2"
+    ],
+    "29": [
+      "145",
+      "87"
+    ],
+    "47": [
+      "-611",
+      "282"
+    ],
+    "173": [
+      "24047",
+      "9861"
+    ],
+    "239": [
+      "-5975",
+      "2868"
+    ],
+    "293": [
+      "-23147",
+      "9669"
+    ]
   },
-  "norm_solution_coefficients": [["-8/3", "14/3"], ["13/3", "1/3"], ["-64/15", "-7/5"]],
-  "central_symbols": {"53": 2, "71": 1, "359": 2, "503": 0},
+  "norm_solution_coefficients": [
+    [
+      "-8/3",
+      "14/3"
+    ],
+    [
+      "13/3",
+      "1/3"
+    ],
+    [
+      "-64/15",
+      "-7/5"
+    ]
+  ],
+  "central_symbols": {
+    "53": 2,
+    "71": 1,
+    "359": 2,
+    "503": 0,
+    "29": 0,
+    "173": 2,
+    "239": 2,
+    "293": 0
+  },
   "curves": [
     {
-      "R": 115, "primes": [5, 23], "known_block_from_symbol": false,
-      "rational_kummer_witnesses": [
-        {"point": ["-5", "845"], "vector": [2, 0], "cube_root": ["1/5", "-1/5"]},
-        {"point": ["-69", "621"], "vector": [0, 1], "cube_root": ["-3", "1"]}
+      "R": 115,
+      "primes": [
+        5,
+        23
       ],
-      "normalized_pairing_matrix": [[0, 0], [0, 0]], "pairing_rank": 0
+      "known_block_from_symbol": false,
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "-5",
+            "845"
+          ],
+          "vector": [
+            2,
+            0
+          ],
+          "cube_root": [
+            "1/5",
+            "-1/5"
+          ]
+        },
+        {
+          "point": [
+            "-69",
+            "621"
+          ],
+          "vector": [
+            0,
+            1
+          ],
+          "cube_root": [
+            "-3",
+            "1"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pairing_rank": 0
     },
     {
-      "R": 57845, "primes": [5, 23, 503], "known_block_from_symbol": false,
-      "rational_kummer_witnesses": [
-        {"point": ["-1509", "421011"], "vector": [0, 0, 1], "cube_root": ["-3", "1"]},
-        {"point": ["7545/4", "3463155/8"], "vector": [2, 0, 2], "cube_root": ["87/5030", "-1/2515"]},
-        {"point": ["11569/4", "3621097/8"], "vector": [0, 2, 1], "cube_root": ["-29/46", "6/23"]}
+      "R": 57845,
+      "primes": [
+        5,
+        23,
+        503
       ],
-      "normalized_pairing_matrix": [[0, 0, 0], [0, 0, 0], [0, 0, 0]], "pairing_rank": 0
+      "known_block_from_symbol": false,
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "-1509",
+            "421011"
+          ],
+          "vector": [
+            0,
+            0,
+            1
+          ],
+          "cube_root": [
+            "-3",
+            "1"
+          ]
+        },
+        {
+          "point": [
+            "7545/4",
+            "3463155/8"
+          ],
+          "vector": [
+            2,
+            0,
+            2
+          ],
+          "cube_root": [
+            "87/5030",
+            "-1/2515"
+          ]
+        },
+        {
+          "point": [
+            "11569/4",
+            "3621097/8"
+          ],
+          "vector": [
+            0,
+            2,
+            1
+          ],
+          "cube_root": [
+            "-29/46",
+            "6/23"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pairing_rank": 0
     },
     {
-      "R": 6095, "primes": [5, 23, 53], "known_block_from_symbol": true,
-      "rational_kummer_witnesses": [
-        {"point": ["795", "50085"], "vector": [2, 0, 1], "cube_root": ["3/5", "2/5"]}
+      "R": 6095,
+      "primes": [
+        5,
+        23,
+        53
       ],
-      "normalized_pairing_matrix": [[0, 2, 0], [1, 0, 1], [0, 2, 0]], "pairing_rank": 2
+      "known_block_from_symbol": true,
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "795",
+            "50085"
+          ],
+          "vector": [
+            2,
+            0,
+            1
+          ],
+          "cube_root": [
+            "3/5",
+            "2/5"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "pairing_rank": 2
     },
     {
-      "R": 2188105, "primes": [5, 23, 53, 359], "known_block_from_symbol": true,
-      "rational_kummer_witnesses": [
-        {"point": ["-26925", "15460335"], "vector": [1, 0, 0, 2], "cube_root": ["-147/359", "-52/359"]},
-        {"point": ["530265/16", "1099129635/64"], "vector": [2, 1, 2, 0], "cube_root": ["-39/1060", "16/265"]}
+      "R": 2188105,
+      "primes": [
+        5,
+        23,
+        53,
+        359
       ],
-      "normalized_pairing_matrix": [[0, 1, 1, 0], [2, 0, 1, 2], [2, 2, 0, 2], [0, 1, 1, 0]], "pairing_rank": 2
+      "known_block_from_symbol": true,
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "-26925",
+            "15460335"
+          ],
+          "vector": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "cube_root": [
+            "-147/359",
+            "-52/359"
+          ]
+        },
+        {
+          "point": [
+            "530265/16",
+            "1099129635/64"
+          ],
+          "vector": [
+            2,
+            1,
+            2,
+            0
+          ],
+          "cube_root": [
+            "-39/1060",
+            "16/265"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "pairing_rank": 2
+    },
+    {
+      "R": 19895,
+      "primes": [
+        5,
+        23,
+        173
+      ],
+      "known_block_from_symbol": false,
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "3979",
+            "290467"
+          ],
+          "vector": [
+            0,
+            1,
+            2
+          ],
+          "cube_root": [
+            "-139/173",
+            "57/173"
+          ]
+        },
+        {
+          "point": [
+            "99475",
+            "31374415"
+          ],
+          "vector": [
+            1,
+            2,
+            1
+          ],
+          "cube_root": [
+            "43/23",
+            "-17/23"
+          ]
+        },
+        {
+          "point": [
+            "204819025/7744",
+            "2932960073255/681472"
+          ],
+          "vector": [
+            1,
+            2,
+            2
+          ],
+          "cube_root": [
+            "-70429/350152",
+            "28871/350152"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pairing_rank": 0
+    },
+    {
+      "R": 3335,
+      "primes": [
+        5,
+        23,
+        29
+      ],
+      "known_block_from_symbol": true,
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "-3335/4",
+            "36685/8"
+          ],
+          "vector": [
+            1,
+            1,
+            2
+          ],
+          "cube_root": [
+            "5/58",
+            "-3/58"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "pairing_rank": 2
+    },
+    {
+      "R": 235,
+      "primes": [
+        5,
+        47
+      ],
+      "basis": [
+        0,
+        5,
+        47
+      ],
+      "known_block_from_symbol": false,
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "-141",
+            "423"
+          ],
+          "vector": [
+            2,
+            0,
+            1
+          ],
+          "cube_root": [
+            "-3",
+            "1"
+          ]
+        },
+        {
+          "point": [
+            "705/4",
+            "23265/8"
+          ],
+          "vector": [
+            1,
+            2,
+            1
+          ],
+          "cube_root": [
+            "3/10",
+            "1/5"
+          ]
+        },
+        {
+          "point": [
+            "235",
+            "3995"
+          ],
+          "vector": [
+            0,
+            1,
+            2
+          ],
+          "cube_root": [
+            "13/47",
+            "6/47"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pairing_rank": 0
+    },
+    {
+      "R": 145,
+      "primes": [
+        5,
+        29
+      ],
+      "basis": [
+        0,
+        5,
+        29
+      ],
+      "known_block_from_symbol": true,
+      "block_formula": "wild_0_5",
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "435",
+            "9135"
+          ],
+          "vector": [
+            1,
+            2,
+            2
+          ],
+          "cube_root": [
+            "21/145",
+            "-1/145"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "pairing_rank": 2
+    },
+    {
+      "R": 27485,
+      "primes": [
+        5,
+        23,
+        239
+      ],
+      "basis": [
+        5,
+        23,
+        239,
+        0
+      ],
+      "known_block_from_symbol": true,
+      "additional_blocks": [
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "formula": "wild_0_5"
+        }
+      ],
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "16491",
+            "2127339"
+          ],
+          "vector": [
+            0,
+            2,
+            2,
+            2
+          ],
+          "cube_root": [
+            "705/5497",
+            "-283/5497"
+          ]
+        },
+        {
+          "point": [
+            "-27485/9",
+            "2995865/27"
+          ],
+          "vector": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "cube_root": [
+            "-1/3",
+            "0"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          0
+        ]
+      ],
+      "pairing_rank": 2
+    },
+    {
+      "R": 33695,
+      "primes": [
+        5,
+        23,
+        293
+      ],
+      "basis": [
+        5,
+        23,
+        293,
+        0
+      ],
+      "known_block_from_symbol": true,
+      "additional_blocks": [
+        {
+          "pair": [
+            0,
+            5
+          ],
+          "formula": "wild_0_5"
+        }
+      ],
+      "rational_kummer_witnesses": [
+        {
+          "point": [
+            "4395",
+            "382365"
+          ],
+          "vector": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "cube_root": [
+            "39/293",
+            "20/293"
+          ]
+        },
+        {
+          "point": [
+            "-1725",
+            "237015"
+          ],
+          "vector": [
+            1,
+            2,
+            0,
+            2
+          ],
+          "cube_root": [
+            "-231/23",
+            "94/23"
+          ]
+        }
+      ],
+      "normalized_pairing_matrix": [
+        [
+          0,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          0
+        ]
+      ],
+      "pairing_rank": 2
     }
-  ]
+  ],
+  "tame_5_23_correction": 1,
+  "wild_norm_solution_coefficients": [
+    [
+      "-28",
+      "-1"
+    ],
+    [
+      "-28",
+      "10"
+    ],
+    [
+      "-53",
+      "25"
+    ]
+  ],
+  "wild_symbols": {
+    "23": 2,
+    "29": 1,
+    "47": 2,
+    "239": 0,
+    "293": 2
+  }
 }

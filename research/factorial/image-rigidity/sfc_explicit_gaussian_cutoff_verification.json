@@ -1,0 +1,44 @@
+{
+  "size": 4,
+  "degree": 9,
+  "maximum_order": 5,
+  "variables": 8,
+  "polynomials": 14,
+  "polynomial_degree": 140,
+  "coefficient_bits": 478,
+  "N": 37915129118720000000,
+  "Delta": 2234,
+  "A": 1101,
+  "cutoff_exponent": 373029362779174993920000137,
+  "cutoff": "2^373029362779174993920000137",
+  "status": "PASS",
+  "scale": 1,
+  "scope": "explicit sufficient corner height cutoff; extremely conservative; not a computed exceptional set",
+  "assurance": "internal arithmetic/normalization replay; imported radius theorem and compactified exclusion are written proof inputs",
+  "scale_one_full_normalization_audit": [
+    {
+      "order": 1,
+      "terms": 213,
+      "actual_w_degree": 19,
+      "coefficient_norm_bits": 40
+    },
+    {
+      "order": 2,
+      "terms": 1854,
+      "actual_w_degree": 38,
+      "coefficient_norm_bits": 95
+    },
+    {
+      "order": 3,
+      "terms": 7945,
+      "actual_w_degree": 57,
+      "coefficient_norm_bits": 157
+    },
+    {
+      "order": 5,
+      "terms": 59374,
+      "actual_w_degree": 95,
+      "coefficient_norm_bits": 294
+    }
+  ]
+}

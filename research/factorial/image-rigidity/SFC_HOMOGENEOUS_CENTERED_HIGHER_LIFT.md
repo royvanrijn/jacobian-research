@@ -43,6 +43,9 @@ These are fixed-support, fixed-window statements with complex
 coefficients. Section 4 gives a finite decision under additional
 hypotheses, with a nonvanishing conclusion over every
 characteristic-zero field at ordinary integer heights.
+Sections 5–7 classify a simple root on its forced diagonal and give
+an infinite family whose Gaussian zeros cannot lift. In that family
+a fifth-order obstruction even excludes escaping real heights.
 
 ## 1. Centered phase and change of law
 
@@ -291,3 +294,279 @@ every characteristic-zero field.
 The general odd-start quadratic Gaussian problem remains open.
 A deficient Jacobian, vanishing \(\Theta\), or a nonzero real
 ratio with irrational square can prevent this decision from applying.
+
+## 5. Exact residual on a forced diagonal
+
+Suppose \(F\) is a full-degree Gaussian zero with projective rank
+\(s-1\), \(\Theta\ne0\), and \(\Phi=0\). Assume first that
+\(d=D_*\) is an integer. Put
+\[
+ L_y=2/t^2,\qquad L_x=2/t^2+d,\qquad t>0.
+ \tag{7}
+\]
+Use the binomial Vandermonde basis \(U_k\) of the
+[exact graded normalization](SFC_BIVARIATE_TRANSLATION_GAUSSIAN_JETS.md#1-exact-graded-normalization),
+with its first \(s\) coefficients equal to the identity, and divide
+\(U_k\) by \(t^k\). Strip the common factor \(m^{mD}\) from the
+moment and denote the resulting forms by \(f_m(t,a;d)\). Their
+coefficients are rational functions of \(t,d\), regular at \(t=0\),
+and \(f_m(0,a;d)=G_m(a)\). For example, if
+\(Y_i=X_i/(mL_i)\), the cumulants of \((Y_i-1)/t\) are
+\[
+ \kappa_1=t\eta_i/m,\qquad
+ \kappa_j=(j-1)!m^{1-j}t^{j-2}\eta_i^{j-1}
+               (1+t^2\eta_i/m)\quad(j\ge2),
+ \qquad \eta_x=(2+dt^2)^{-1},\quad\eta_y=1/2.
+\]
+The phase in these variables is polynomial with no negative powers
+of \(t\). Thus the finite moment-cumulant formula proves the claimed
+regularity. This construction uses exact finite products, rather
+than treating an asymptotic Stirling series as convergent.
+
+In the monic chart select \(s-1\) equations with invertible Jacobian
+\(J\) at \(F\). The analytic implicit function theorem gives a unique
+coefficient branch \(a(t)\), with \(a(0)=F\), satisfying these equations.
+Let
+\[
+ R_F(t)=f_{m_0}(t,a(t);d)
+ \tag{8}
+\]
+be the remaining equation. The branch and residual are algebraic
+analytic germs over \(\overline{\mathbb Q}\): after clearing denominators,
+the selected equations define a smooth curve germ, with parameter
+\(t\) and nonzero Jacobian minor. Its function field is algebraic
+over \(\overline{\mathbb Q}(t)\).
+
+**Diagonal dichotomy.** If \(R_F\ne0\), a finite nonzero Taylor
+coefficient excludes all sufficiently large lifts to this diagonal
+near \(F\). If \(R_F=0\) identically, the branch gives exact complex
+common zeros for every sufficiently large real value of \(L_y\) on
+the diagonal, and hence for every sufficiently large integer value.
+In the latter case every original column coefficient is nonzero
+near the limit.
+
+Indeed a nonzero analytic germ has the form \(t^q(c+O(t))\),
+\(c\ne0\); all nearby common zeros must be on the unique selected
+branch. Conversely an identically zero residual satisfies every
+equation. For the last assertion, write
+\(U_k=\sum_j w_{kj}Y_x^{\lambda_j}Y_y^{D-\lambda_j}\).
+Then the original normalized coefficient of column \(j\) has leading
+term \(t^{-(s-1)}w_{s-1,j}\). Here
+\[
+ w_{s-1,j}=(s-1)!\big/\prod_{i\ne j}(\lambda_j-\lambda_i)\ne0.
+\]
+The subsequent height rescalings are nonzero too. This is an exact
+support assertion, not just a statement on its coefficient closure.
+
+The dichotomy is decidable at an algebraic Gaussian root. Clear the
+denominators in the selected equations, localize at their Jacobian
+minor and the denominators, and compute the irreducible component
+through \((0,F)\). Smoothness makes that local component unique.
+The residual vanishes identically exactly when the remaining
+polynomial vanishes on that component. Polynomial factorization and
+ideal membership over algebraic numbers decide this. Iterating jets
+alone is a terminating exclusion test only on the nonzero branch;
+the component test is what also decides persistence.
+
+For a direct jet computation, write \(a(t)=a_*+\sum_{n\ge1}a_nt^n\).
+Having found \(a_1,\ldots,a_{n-1}\), substitute the truncated branch,
+extract the coefficient of \(t^n\) in the selected equations, and
+solve one linear system with matrix \(J\) for \(a_n\). Substitute in
+the remaining equation to obtain \([t^n]R_F\). A zero through a
+finite order does not establish persistence. If every Gaussian root
+has zero ratio and satisfies the rank and scalar assumptions, the
+nonintegral-diagonal exclusions and these residual tests classify
+all integer-height escapes. Excluding every root gives a computable
+corner cutoff, without a Gaussian zero-free theorem. Bounded rows
+and columns still require the Section 4 tests.
+
+## 6. A four-column family with nonliftable Gaussian zeros
+
+**Four-column nonlifting theorem.** Fix a positive integer \(k\).
+For the four offsets
+\[
+ (0,9k),\quad(3k,6k),\quad(4k,5k),\quad(9k,0)
+ \tag{9}
+\]
+there is a computable \(H(k)\) such that no nonzero coefficient
+direction has all four factorial moments of orders \(1,2,3,5\)
+zero when both common integer heights exceed \(H(k)\).
+In fact the same corner exclusion holds for the real-height gamma
+extension. At integer heights the nonvanishing statement holds
+over every characteristic-zero field. An explicit, very large value
+of \(H(k)\) is supplied by the [quantitative cutoff theorem](SFC_EXPLICIT_GAUSSIAN_NONLIFTING_CUTOFF.md).
+No cutoff uniform in \(k\) is asserted.
+
+This theorem has Gaussian common zeros. All of them, in the monic
+cubic chart, are
+\[
+ F_b(z)=z^3+bz,\qquad 4b^2+12b+15=0,
+ \qquad b=(-3\pm i\sqrt6)/2.
+ \tag{10}
+\]
+To check completeness, write \(F=z^3+cz^2+bz+a\). The first
+moment gives \(a=-c\), and the next relevant moments are
+\[
+ G_2=\frac{4b^2+12b+6c^2+15}{8},\qquad
+ G_3=\frac{4c(3b-c^2+5)}9,
+\]
+\[
+ G_5=\frac{8c}{3125}
+ (375b^3-125b^2c^2+1575b^2+300bc^2+2835b
+                       -210c^4+555c^2+2079).
+\]
+If \(c\ne0\), substitute \(c^2=3b+5\). Then \(G_2=0\)
+requires \(4b^2+30b+45=0\), whereas the parenthesis in \(G_5\)
+becomes \(-10(4b^2+30b+45)+54\), a contradiction. Hence
+\(c=a=0\), giving (10). In the chart of degree at most two,
+the first and third equations force the quadratic and constant
+coefficients to vanish; the second then forces the linear
+coefficient to vanish. There are no projective zeros at lower degree.
+
+For the selected orders \(1,2,3\), with coefficient coordinates
+\((a_0,a_1,a_2)\), the Jacobian at (10) is
+\[
+ J=\begin{pmatrix}
+ 1&0&1\\
+ 0&b+3/2&0\\
+ -b-25/12&0&b/3+5/36
+ \end{pmatrix},\qquad \det J=(2b-15)/9\ne0.
+ \tag{11}
+\]
+Normalize the left null vector of the full four-equation Jacobian
+by \(u_5=1\). Then
+\[
+ u_1=-\frac{57951b}{68750}-\frac{135783}{550000},\quad
+ u_2=0,\quad
+ u_3=\frac{56214b}{171875}+\frac{97929}{343750},
+\]
+\[
+ \Theta=\frac{306126}{171875}-\frac{1332}{6875}b\ne0,
+ \qquad\Phi=0.
+ \tag{12}
+\]
+The vanishing of \(\Phi\) also follows by parity: the odd-order
+integrands are odd and \(u_2=0\).
+
+The centered exponents are \(k(-4,-1,0,5)\), so that
+\(\bar\lambda=4k\), \(e_3=20k^3\), and
+\[
+                         D_*=k+2k^3\in\mathbb Z.
+ \tag{13}
+\]
+Thus Section 3 confines any escaping integer family to this single
+diagonal. Construct (8) using selected orders \(1,2,3\), and let
+the remaining equation be order five. The exact fifth-jet identity is
+\[
+ R_{F_b}(t)=C_5(k,b)t^5+O(t^6),\qquad
+ C_5=\frac{k^3}{17187500}
+ \left(5548662k^2-10756503+(8427720k^2-5716900)b\right).
+ \tag{14}
+\]
+All coefficients of degrees zero through four vanish. The
+coefficient of \(b\) in (14) is positive for \(k\ge1\); since
+\(b\) is nonreal, \(C_5\ne0\). Equations (8), (13) and (14)
+prove the integer-height assertion. This is an identity in the
+indeterminate \(k\), rather than a finite scale experiment.
+
+For completeness, real heights are excluded too. Allow the difference
+\(d=L_x-L_y\) in (7) to vary near \(D_*\). The selected branch and
+residual are analytic in \((t,d)\). The exact symmetry
+\(f_m(-t,((-1)^{3-j}a_j)_j;d)=(-1)^m f_m(t,a;d)\)
+and uniqueness of the selected branch imply that its residual is odd
+in \(t\). Its linear coefficient vanishes; formula (5) gives its
+cubic coefficient as \(-\Theta(d-D_*)/6\). Consequently
+\[
+ R(t,d)=t^3\left(-\frac{\Theta}{6}(d-D_*)
+                  +t^2 C_5(k,b)+O(t^2|d-D_*|+t^4)\right).
+\]
+The implicit function theorem now forces an actual lift to have
+\[
+ d(t)=D_*+\frac{6C_5(k,b)}{\Theta}t^2+O(t^4),\qquad
+ \operatorname{Im}\frac{6C_5}{\Theta}
+ =\frac{k^3(465440178k^2-354929845)}{360419340}
+                       \operatorname{Im}b\ne0.
+ \tag{15}
+\]
+Here Section 3 first ensures \(d\to D_*\), so that this local
+two-parameter argument covers every possible real-height escape
+near the root. A real height difference cannot satisfy (15).
+
+Finally, projective compactness in the exact Gaussian normalization
+forces any escaping sequence of common zeros to approach one of
+the two roots (10). Both have just been excluded. This proves a
+corner bound for each fixed \(k\). Real quantifier elimination on
+the exact rising-factorial forms finds such a bound by searching
+integer cutoffs. At integer heights, the forms are rational, and
+the Nullstellensatz transfers nonvanishing to every characteristic-zero
+field. The orders \(1,2,3,5\) are not consecutive; this does not
+settle the open odd-start quadratic consecutive-window problem.
+
+## 7. Exact certificate, lifting control and literature scope
+
+The [checker](verify_sfc_gaussian_diagonal_nonlifting.py) derives
+(10)–(15) in exact rational arithmetic, keeping \(k\) symbolic.
+For each order \(m\), its coefficient normalization uses
+\(\sum_j w_{ij}\binom{\lambda_j}{h}=\delta_{ih}\),
+\(0\le i,h\le3\). For a count vector \(\alpha\), set
+\(U=\sum_j\lambda_j\alpha_j\). Its normalized law factor is
+\[
+ \prod_{\nu=1}^{U}\left(1+\frac{\nu t^2}{m(2+dt^2)}\right)
+ \prod_{\nu=1}^{mD-U}\left(1+\frac{\nu t^2}{2m}\right).
+ \tag{16}
+\]
+The logarithmic coefficient of degree \(r\) in the first rising
+factorial is \((-1)^{r-1}\sum_{\nu=1}^U\nu^r/(r(mL_x)^r)\).
+Faulhaber's polynomial gives this sum with symbolic \(U\).
+Exponentiation uses \(q_0=1\),
+\(nq_n=\sum_{r=1}^n r\ell_rq_{n-r}\). Expanding through
+\(t^{3m+5}\) before dividing by \(t^{3m}\) supplies every term
+needed through the fifth jet; lower powers cancel exactly. The
+recursion in Section 5 then solves the first three equations through
+degree five and produces (14). The checker also verifies the cubic
+response \(-\Theta/6\) after shifting \(d\) by one, and the
+imaginary coefficient in (15).
+
+As a lifting control, use the symmetric support
+\((0,3k),(k,2k),(2k,k),(3k,0)\) at \(L_x=L_y\).
+An antisymmetric phase has all odd moments zero. Its space has
+dimension two, and the second moment is a homogeneous quadratic,
+so it has a nonzero complex projective zero. Thus actual lifting
+does occur here. The checker finds zero residual through degree
+five for this control; exact persistence follows from the preceding
+reflection argument, not from those five coefficients.
+
+Replay from the repository root:
+
+```sh
+.venv/bin/python research/factorial/image-rigidity/verify_sfc_gaussian_diagonal_nonlifting.py
+```
+
+The current internal replay passed with Python 3.12, python-flint
+0.9.0 and SymPy 1.14.0, including 180 comparisons of the symbolic
+law series with independently multiplied finite products at
+\(k=1,2\). Those comparisons test the implementation; the symbolic
+identity is what covers every \(k\ge1\). The
+[receipt](sfc_gaussian_diagonal_nonlifting_verification.json)
+records this scope. There is no independent mathematical review,
+external replay or formal verification for the new result.
+
+The closest all-order homogeneous result is
+[Liu–Sun, Theorem 2.6, pp. 74–75](https://doi.org/10.1017/S0004972719000546).
+Its hypothesis is vanishing at every positive order. Its proof
+reduces by an angular integral to the polynomial moment theorem
+stated as Lemma 2.5. Inspection of that statement and proof does
+not give the four prescribed orders or the lifting exclusion above.
+[Rocks's 2015 author preprint, Section 1.2](https://people.math.sc.edu/rocks/BradyRocksSFC2015.pdf)
+formulates consecutive windows and the coefficient-system viewpoint;
+the present skipped-order family is not a proof of that conjecture.
+The implicit-function residual mechanism in Section 5 is classical.
+The retained contribution is its exact factorial application and
+the symbolic certificate (14)–(15); this bounded comparison does
+not establish historical priority.
+
+The remaining classification includes singular Gaussian roots,
+vanishing \(\Theta\), and the nonzero-real-ratio branches of
+Section 3. Even on a forced integral diagonal, a few vanishing jets
+do not decide persistence. The component test or a later nonzero
+coefficient is still required in every such case.

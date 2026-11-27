@@ -1426,9 +1426,120 @@ and the second by summing the allowed lengths in \(v\) over
 \(u\). Now double \(L\) starting at \(\log Z\); the block bound
 is summable because \(2a+b<1\). This proves (365.S1).
 
+## A joint count in the period ratio and unit quotient
+
+The same primitive Thue estimate also gives a count without an upper
+bound on the fundamental unit or on the common divisor. Write
+\(d(n)\) for the divisor function in this section.
+
+**Proposition (Uniform joint fibers).**
+For all positive integers \(R,Q\),
+\[
+ \#\{D>1:D\text{ squarefree},\ R_D=R,\ Q_D=Q\}
+                    \ll d(R)d(Q).                              \tag{365.J1}
+\]
+The constant is absolute. In fact the bound also holds when all positive
+integral Pell solutions are counted, without requiring fundamentality.
+
+Here is the normalization, including the prime two. Put
+\(H=\gcd(D,U)\), let \(h\) be its odd part, and take the coprime factors
+\(A=T-1,B=T+1\) if \(T\) is even and
+\(A=(T-1)/2,B=(T+1)/2\) if \(T\) is odd. For each odd prime in \(h\),
+its cube divides exactly one factor. Assigning these primes gives
+\[
+ A=d^3fu^2,\quad B=e^3gv^2,\quad de=h,\quad D=defg,
+ \qquad g v^2e^3-f u^2d^3=s.                         \tag{365.J2}
+\]
+All variables are positive, \(\gcd(d,e)=1\), and the coefficients
+\(fu^2,gv^2\) are coprime. The exact possibilities are
+
+| Parity | \(fg\) | \(uv\) | \(s\) |
+|---|---|---|---|
+| \(T\) even | \(R\) | \(Q\) | 2 |
+| \(T\) odd, \(D\) odd | \(R\) | \(Q/2\) | 1 |
+| \(T\) odd, \(D\) even | \(2R\) | \(Q\) | 1 |
+
+The second row requires even \(Q\). For example, in the last row
+\(H=2h\) and \(AB=D(U/2)^2=h^3(2R)Q^2\), which explains both
+factors of two. The Pell congruences exclude \(T\) even with \(D\) even.
+
+For each row there are \(O(d(R)d(Q))\) ordered choices of \(f,g,u,v\),
+since \(d(2n)\le2d(n)\). Fix those choices. The binary cubic
+\(gv^2X^3-fu^2Y^3\) has content one and nonzero discriminant.
+[Stewart, consequence of Theorem 1, printed p. 796](https://uwaterloo.ca/pure-mathematics/sites/default/files/uploads/documents/s0894-0347-1991-1119199-x_0.pdf)
+bounds its primitive solutions at either fixed right side \(s=1,2\)
+by an absolute constant, including reducible cubics. Each solution
+\((e,d)\) recovers \(D\), \(T\), and then positive \(U\) uniquely.
+This proves (365.J1). This is an application of that classical uniform
+Thue bound, not a new uniform Thue theorem.
+
+### The critical logarithmic boundary
+
+**Corollary (A logarithmic saving on the multiplier boundary).**
+Fix \(0\le a<1/2\) and \(\eta>0\). Put \(b=1-2a\) and
+\(\ell(D)=\log\log(e^eD)\). Then
+\[
+ \sum_{\substack{D>Z,\ D\text{ squarefree}\\
+       \log R_D\le(\log D)^a,\quad
+       Q_D\le(\log D)^b/\ell(D)^{2+\eta}}}
+       \frac{H_D}{D\log\epsilon_D}
+                \ll_{a,\eta}\ell(Z)^{-\eta}\qquad(Z\ge3).     \tag{365.J3}
+\]
+Thus the strict inequality \(2a+b<1\) in (365.S1) can be replaced
+by equality with the displayed extra saving. This remains a restricted
+sector; it supplies no bound for unrestricted large \(Q_D\).
+
+To prove it, use the blocks \(e^L\le D<e^{2L}\). The weight is
+\(\ll1/(R_DL)\). In (365.J2) the coefficient products satisfy
+\(fg\ll\exp((2L)^a)\) and
+\(uv\ll L^b/(\log L)^{2+\eta}\), for sufficiently large \(L\).
+The uniform primitive count just proved bounds the block by
+\[
+ \frac1L\sum_{fg\ll\exp((2L)^a)}\frac1{fg}
+       \sum_{uv\ll L^b/(\log L)^{2+\eta}}1
+ \ll_{a,\eta}\frac{L^{2a+b-1}}{(\log L)^{1+\eta}}
+ =\frac1{(\log L)^{1+\eta}}.
+\]
+Here \(\sum_{uv\le V}1\ll V\log(2V)\), and \(b>0\).
+Summing over \(L=2^j\log Z\) gives (365.J3); bounded initial
+blocks are absorbed in the constant. The exact count (2) and dominated
+convergence give a logarithmic asymptotic on this sector.
+
+### Polynomial period counts with a period-dependent quotient cutoff
+
+**Corollary (Polynomial quotient sector).**
+Uniformly for \(Y\ge2,V\ge1\),
+\[
+ \#\{D>1:D\text{ squarefree},\ \tau_D\le Y,\ Q_D\le V\}
+                         \ll YV\log(2V).                       \tag{365.J4}
+\]
+Indeed \(\tau_D\ge R_D\log\epsilon_D>\tfrac12R_D\log D\)
+and \(D\ge R_D\). Consequently
+\(R_D\ll Y/\log(2Y)\); the finitely small values of \(R_D\)
+cause no exception. Sum (365.J1), using
+\(\sum_{n\le B}d(n)\ll B\log(2B)\).
+
+For any fixed \(B>0\), the fixed sector
+\(\{D:Q_D\le\tau_D^B\}\) therefore has period count
+\(O_B(Y^{1+B}\log(2Y))\), and its powerful-pair count is
+\(O_B((\log X)^{1+B}\log\log X)\), by (2) and
+\(\sum_{k\ge1}k^{-1-B}<\infty\). To finish the weaker global
+polynomial-period target by this route, one still has to bound the
+complementary kernels with \(Q_D>\tau_D^B\) for some fixed \(B\).
+
 The full rate in (3) remains open. A sufficient estimate on the
 complement of the proved summable ranges is a bound
 \(O((\log W)^{-1-\eta})\) for some \(\eta>0\) on its weighted sum
 \(\sum_{W\le D<2W} H_D/(D\log\epsilon_D)\). In particular the
 estimates above still leave large \(Q_D\) together with large
 \(H_D\) outside their unit and multiplier cutoffs.
+
+The [joint endpoint control script](verify_arithmetic_endpoint_joint_controls.py)
+was run internally with Python 3.12.3 on 27 November 2026 from the
+repository root. Its exact prime-two normalization checks passed for
+all 3041 squarefree \(2\le D\le5000\): 770 even-trace, 1256
+odd-trace/odd-kernel, and 1015 odd-trace/even-kernel cases. It also
+checks the finite witness-cover controls specified in the
+[squarefree return note](ERDOS_675_SQUAREFREE_RETURNS.md#joint-square-witnesses-and-their-least-crt-representatives).
+These controls check vulnerable normalizations and examples; the
+unrestricted statements (365.J1)--(365.J4) use the written proofs above.
