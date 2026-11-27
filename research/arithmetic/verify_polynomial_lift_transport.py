@@ -209,15 +209,17 @@ def components(vertices,edges):
 def small_block_controls():
     rows=[]
     for outer in [
+        (m.perm(2,[(0,1)]),tuple(range(2))),
         (m.perm(3,[(0,1)]),m.perm(3,[(1,2)])),
         (m.perm(4,[(0,1)]),m.perm(4,[(1,2)]),m.perm(4,[(2,3)]))
     ]:
         quotient_orbit,_=c.closure(outer);d=len(outer[0]);r=len(outer)
         moves=tuple(sign*(i+1) for i in range(r-1) for sign in (-1,1))
         for b in (2,3):
-            X={(q,R) for q in quotient_orbit for R in all_small_returns(q,b)}
+            X={(q,R) for q in quotient_orbit for R in all_small_returns(q,b)
+               if all(c.index(g) for g in to_perms(lift(q,R)))}
             Y={decorated(q,R) for q,R in X};xe={};ye={};phase_controls=0
-            literal_states=set()
+            literal_states=set();symmetric_base_control=None
             for q,R in X:
                 state=lift(q,R);literal=to_perms(state);c.validate(literal)
                 literal_states.add(literal);assert to_wreath(literal,d)==state
@@ -225,6 +227,11 @@ def small_block_controls():
                 f=3 if b==3 and sum(c.index(h)>0 for h in R)==2 else 1
                 sy=sum(decorated_rotation(data,k)==data for k in range(d))
                 assert c.stabilizer_size(literal)==b*sy//f
+                if d==2 and b==3 and any(m.cycle_lengths(g)==[1]*4+[2] for g in literal):
+                    normal=group_from_transposition(literal)
+                    assert normal[:2]==(3,2) and c.h.group_closure(literal)==72
+                    symmetric_base_control={"normal_block_size":3,"block_count":2,
+                                            "exact_group_order":72,"group":"S3 wr C2"}
                 for move in moves:
                     new=wbraid(state,move);key=extract(new);assert key in X
                     assert lift(*key)==new
@@ -254,14 +261,16 @@ def small_block_controls():
                         A=to_perms(((q[0],maps),))[0]
                         B=m.compose(m.inverse(A),P)
                         assert to_wreath((A,B),d)[1][0]==q[1]
-                        if c.index(A)+c.index(B)==b*d-1:candidates.add((A,B))
+                        if c.index(A) and c.index(B) and c.index(A)+c.index(B)==b*d-1:
+                            candidates.add((A,B))
                 assert candidates==literal_states;independent=len(candidates)
             rows.append({"quotient_degree":d,"block_size":b,"quotient_orbit":len(quotient_orbit),
                          "complete_return_model_states":len(X),"decorated_states":len(Y),
                          "original_components":len(xc),"decorated_components":len(yc),
                          "literal_component_sizes":sorted(map(len,xc)),
                          "root_phase_controls":phase_controls,
-                         "independent_wreath_first_factor_completion":independent})
+                         "independent_wreath_first_factor_completion":independent,
+                         "symmetric_base_control":symmetric_base_control})
     return rows
 
 
@@ -302,7 +311,8 @@ def free_cyclic_controls():
     outer5=(m.perm(5,[(0,1,2)]),m.perm(5,[(2,3,4)]))
     pure5=c.v.one.fixed_product(c.v.one.pure_canonical(2))
     _,pure7=c.v.one.pure_small()
-    cases=[(outer3,2),(outer5,2),(outer5,3),(outer5,4),(pure5,2)]
+    cases=[((m.perm(2,[(0,1)]),),2),((m.perm(3,[(0,1,2)]),),3),
+           (outer3,2),(outer5,2),(outer5,3),(outer5,4),(pure5,2)]
     cases.extend((q,2) for q in pure7);rows=[]
     for outer,b in cases:
         d=len(outer[0]);r=len(outer)+1
@@ -336,6 +346,22 @@ def free_cyclic_controls():
             point_generators.append(tuple(perm))
         assert c.h.group_closure(tuple(point_generators))==K
         predicted=b**d*K
+        C=m.perm(b,[tuple(range(b))])
+        cyclic={m.power(C,k) for k in range(b)}
+        assert all(A in cyclic for _,maps in to_wreath(seed,d) for A in maps)
+        paths={0:()};queue=deque([0])
+        while queue:
+            a=queue.popleft()
+            for j,g in enumerate(outer):
+                z=g[a]
+                if z not in paths:paths[z]=(j+1,)+paths[a];queue.append(z)
+        assert len(paths)==d
+        certificates=[]
+        for a,word in sorted(paths.items()):
+            witness=word+(r,)+tuple(-x for x in reversed(word))
+            value=c.group_word(seed,witness)
+            assert value==m.perm(b*d,[tuple(a+d*t for t in range(b))])
+            certificates.append({"block":a,"group_word_for_local_cycle":witness})
         exact=c.h.group_closure(seed) if predicted<=70000 else None
         if exact is not None:assert exact==predicted
         normal=None
@@ -344,9 +370,11 @@ def free_cyclic_controls():
         rows.append({"quotient_degree":d,"block_size":b,"quotient_factors":len(outer),
                      "quotient_literal_orbit":len(O),"quotient_group_order":K,
                      "literal_lift_orbit":len(orbit),"absolute_lift_orbit":r*len(O),
-                     "cyclic_stabilizer_order":b,"predicted_wreath_order":predicted,
+                     "cyclic_stabilizer_order":b,"certified_wreath_order":predicted,
                      "exact_generated_group_closure":exact,
-                     "group_basis":"written cyclic-base wreath proof + exact quotient closure",
+                     "group_basis":"cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+                     "cyclic_wreath_embedding_checked":True,
+                     "cyclic_base_generator_certificates":certificates,
                      "transposition_normal_closure":normal,
                      "literal_seed":seed,"orbit_sha256":c.digest(orbit),
                      "meridian_point_actions":point_generators})
@@ -475,9 +503,9 @@ def negative_controls():
     return {"wrong_fixed_return_product_rejected":True,"excess_return_index_rejected":True,
             "nonminimal_quotient_rejected":True,"nonpreserved_block_partition_rejected":True}
 
-def canonical_divisor_controls():
+def canonical_divisor_controls(obstruction):
     rows=[]
-    for n in (6,10,12):
+    for n in (6,9,10,12,15):
         state=(m.perm(n,[tuple(range(n))]),)
         divisors=c.block_divisors(state)
         chosen=max(d for d in divisors if 1<d<n)
@@ -485,10 +513,18 @@ def canonical_divisor_controls():
             if 1<d<n:
                 q,R=extract(to_wreath(state,d))
                 assert to_perms(lift(q,R))==state
-        assert chosen==n//2
+        least=min(k for k in range(2,n+1) if n%k==0)
+        assert chosen==n//least
         rows.append({"degree":n,"all_block_divisors":divisors,
-                     "canonical_quotient_degree":chosen,"canonical_block_size":2})
-    return rows
+                     "canonical_quotient_degree":chosen,"canonical_block_size":least})
+    filtered=[]
+    for row in obstruction["complete_full_passport_components"]:
+        proper=[d for d in row["block_divisors"] if 1<d<8]
+        chosen=max(proper)
+        assert chosen==(2 if row["group_order"]==576 else 4)
+        filtered.append({"literal_orbit":row["literal_orbit"],"group_order":row["group_order"],
+                         "canonical_quotient_degree":chosen,"canonical_block_size":8//chosen})
+    return {"cyclic_nonunique_decomposition_controls":rows,"degree8_component_filter":filtered}
 
 
 def main():
@@ -497,9 +533,10 @@ def main():
     args=parser.parse_args()
     small=small_block_controls();free=free_cyclic_controls();loops=schreier_loop_controls()
     four=inner_four_obstruction();transpositions=transposition_monodromy_controls()
-    negatives=negative_controls();canonical=canonical_divisor_controls()
+    negatives=negative_controls();canonical=canonical_divisor_controls(four)
     paths=["POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md","POLYNOMIAL_PASSPORT_COMPONENTS.md",
-           "INDEX_TWO_HURWITZ_MIXTURES.md","verify_polynomial_passport_components.py",
+           "INDEX_TWO_HURWITZ_MIXTURES.md","HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md",
+           "verify_polynomial_passport_components.py",
            "verify_index_two_hurwitz_mixtures.py","verify_mixed_hurwitz_isolation.py",
            "verify_terminal_mass_hurwitz_descent.py","verify_terminal_mass_projection_escape.py",
            "verify_paired_hurwitz_leaf_extraction.py","verify_unmarked_polynomial_hurwitz_reduction.py"]

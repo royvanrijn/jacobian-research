@@ -3,11 +3,12 @@
   "kind": "polynomial_lift_return_transport",
   "result": "PASS",
   "python": "3.12.3",
-  "checker_sha256": "aec67dcd31b579c40024003f2a690bafd77e576f31cc95adff86c43d5fb17a72",
+  "checker_sha256": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
   "input_sha256": {
-    "POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md": "4c4aef78561907a0749eb1c0215ac18f446fd3df77e0c966de3a0c70bfd287e3",
-    "POLYNOMIAL_PASSPORT_COMPONENTS.md": "aa71be0dde8694bb9f64d8535cebfeeb3c7e55a090864cbd975330584402c631",
+    "POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md": "ad4749a21f2b7796a4537f9ceb005fddae987437507fb757f5283ac009a3a161",
+    "POLYNOMIAL_PASSPORT_COMPONENTS.md": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
     "INDEX_TWO_HURWITZ_MIXTURES.md": "d00bcd0d26a129ed5831a81fa14cb35d4a1c961756be289b3166232644d64206",
+    "HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md": "e53c9f25872a75b09b60601c816968056ac5b5ce934477cf3b6c137ec76742e6",
     "verify_polynomial_passport_components.py": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
     "verify_index_two_hurwitz_mixtures.py": "1f66c391650dc11f5226c25470dcae22a3800643c1b1d737b1fb687831fc2d3f",
     "verify_mixed_hurwitz_isolation.py": "6763c1ebf292c314c3cf9b7f7f9de345beb0191143e4b832d0516b8bebc0336b",
@@ -17,6 +18,43 @@
     "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f"
   },
   "small_block_return_domains": [
+    {
+      "quotient_degree": 2,
+      "block_size": 2,
+      "quotient_orbit": 2,
+      "complete_return_model_states": 4,
+      "decorated_states": 4,
+      "original_components": 1,
+      "decorated_components": 1,
+      "literal_component_sizes": [
+        4
+      ],
+      "root_phase_controls": 2,
+      "independent_wreath_first_factor_completion": 4,
+      "symmetric_base_control": null
+    },
+    {
+      "quotient_degree": 2,
+      "block_size": 3,
+      "quotient_orbit": 2,
+      "complete_return_model_states": 22,
+      "decorated_states": 10,
+      "original_components": 3,
+      "decorated_components": 3,
+      "literal_component_sizes": [
+        4,
+        6,
+        12
+      ],
+      "root_phase_controls": 11,
+      "independent_wreath_first_factor_completion": 22,
+      "symmetric_base_control": {
+        "normal_block_size": 3,
+        "block_count": 2,
+        "exact_group_order": 72,
+        "group": "S3 wr C2"
+      }
+    },
     {
       "quotient_degree": 3,
       "block_size": 2,
@@ -30,7 +68,8 @@
         6
       ],
       "root_phase_controls": 4,
-      "independent_wreath_first_factor_completion": 12
+      "independent_wreath_first_factor_completion": 12,
+      "symmetric_base_control": null
     },
     {
       "quotient_degree": 3,
@@ -49,7 +88,8 @@
         18
       ],
       "root_phase_controls": 22,
-      "independent_wreath_first_factor_completion": 66
+      "independent_wreath_first_factor_completion": 66,
+      "symmetric_base_control": null
     },
     {
       "quotient_degree": 4,
@@ -64,7 +104,8 @@
         96
       ],
       "root_phase_controls": 9,
-      "independent_wreath_first_factor_completion": null
+      "independent_wreath_first_factor_completion": null,
+      "symmetric_base_control": null
     },
     {
       "quotient_degree": 4,
@@ -84,10 +125,140 @@
         576
       ],
       "root_phase_controls": 117,
-      "independent_wreath_first_factor_completion": null
+      "independent_wreath_first_factor_completion": null,
+      "symmetric_base_control": null
     }
   ],
   "free_cyclic_lifts": [
+    {
+      "quotient_degree": 2,
+      "block_size": 2,
+      "quotient_factors": 1,
+      "quotient_literal_orbit": 1,
+      "quotient_group_order": 2,
+      "literal_lift_orbit": 4,
+      "absolute_lift_orbit": 2,
+      "cyclic_stabilizer_order": 2,
+      "certified_wreath_order": 8,
+      "exact_generated_group_closure": 8,
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            2
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            1,
+            2,
+            -1
+          ]
+        }
+      ],
+      "transposition_normal_closure": [
+        2,
+        2,
+        2
+      ],
+      "literal_seed": [
+        [
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          3
+        ]
+      ],
+      "orbit_sha256": "ff27190fd6e7912127751d4b9380f1888bae5556dfdbf9ef40f3eb2fd55b6278",
+      "meridian_point_actions": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "quotient_degree": 3,
+      "block_size": 3,
+      "quotient_factors": 1,
+      "quotient_literal_orbit": 1,
+      "quotient_group_order": 3,
+      "literal_lift_orbit": 6,
+      "absolute_lift_orbit": 2,
+      "cyclic_stabilizer_order": 3,
+      "certified_wreath_order": 81,
+      "exact_generated_group_closure": 81,
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            2
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            1,
+            2,
+            -1
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            1,
+            1,
+            2,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "transposition_normal_closure": null,
+      "literal_seed": [
+        [
+          7,
+          2,
+          3,
+          1,
+          5,
+          6,
+          4,
+          8,
+          0
+        ],
+        [
+          3,
+          1,
+          2,
+          6,
+          4,
+          5,
+          0,
+          7,
+          8
+        ]
+      ],
+      "orbit_sha256": "d7611ea7d3e7b7497f57c930efe904bdb1cfcedd5e6d433955a2f47295b28ea4",
+      "meridian_point_actions": [
+        [
+          2,
+          0,
+          1
+        ]
+      ]
+    },
     {
       "quotient_degree": 3,
       "block_size": 2,
@@ -97,9 +268,36 @@
       "literal_lift_orbit": 27,
       "absolute_lift_orbit": 9,
       "cyclic_stabilizer_order": 2,
-      "predicted_wreath_order": 48,
+      "certified_wreath_order": 48,
       "exact_generated_group_closure": 48,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            3
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            -1
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            2,
+            1,
+            3,
+            -1,
+            -2
+          ]
+        }
+      ],
       "transposition_normal_closure": [
         2,
         3,
@@ -154,9 +352,62 @@
       "literal_lift_orbit": 75,
       "absolute_lift_orbit": 15,
       "cyclic_stabilizer_order": 2,
-      "predicted_wreath_order": 1920,
+      "certified_wreath_order": 1920,
       "exact_generated_group_closure": 1920,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            3
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            -1
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            1,
+            1,
+            3,
+            -1,
+            -1
+          ]
+        },
+        {
+          "block": 3,
+          "group_word_for_local_cycle": [
+            2,
+            1,
+            1,
+            3,
+            -1,
+            -1,
+            -2
+          ]
+        },
+        {
+          "block": 4,
+          "group_word_for_local_cycle": [
+            2,
+            2,
+            1,
+            1,
+            3,
+            -1,
+            -1,
+            -2,
+            -2
+          ]
+        }
+      ],
       "transposition_normal_closure": [
         2,
         5,
@@ -227,9 +478,62 @@
       "literal_lift_orbit": 75,
       "absolute_lift_orbit": 15,
       "cyclic_stabilizer_order": 3,
-      "predicted_wreath_order": 14580,
+      "certified_wreath_order": 14580,
       "exact_generated_group_closure": 14580,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            3
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            -1
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            1,
+            1,
+            3,
+            -1,
+            -1
+          ]
+        },
+        {
+          "block": 3,
+          "group_word_for_local_cycle": [
+            2,
+            1,
+            1,
+            3,
+            -1,
+            -1,
+            -2
+          ]
+        },
+        {
+          "block": 4,
+          "group_word_for_local_cycle": [
+            2,
+            2,
+            1,
+            1,
+            3,
+            -1,
+            -1,
+            -2,
+            -2
+          ]
+        }
+      ],
       "transposition_normal_closure": null,
       "literal_seed": [
         [
@@ -311,9 +615,62 @@
       "literal_lift_orbit": 75,
       "absolute_lift_orbit": 15,
       "cyclic_stabilizer_order": 4,
-      "predicted_wreath_order": 61440,
+      "certified_wreath_order": 61440,
       "exact_generated_group_closure": 61440,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            3
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            -1
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            1,
+            1,
+            3,
+            -1,
+            -1
+          ]
+        },
+        {
+          "block": 3,
+          "group_word_for_local_cycle": [
+            2,
+            1,
+            1,
+            3,
+            -1,
+            -1,
+            -2
+          ]
+        },
+        {
+          "block": 4,
+          "group_word_for_local_cycle": [
+            2,
+            2,
+            1,
+            1,
+            3,
+            -1,
+            -1,
+            -2,
+            -2
+          ]
+        }
+      ],
       "transposition_normal_closure": null,
       "literal_seed": [
         [
@@ -410,9 +767,54 @@
       "literal_lift_orbit": 75,
       "absolute_lift_orbit": 15,
       "cyclic_stabilizer_order": 2,
-      "predicted_wreath_order": 320,
+      "certified_wreath_order": 320,
       "exact_generated_group_closure": 320,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            3
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            1,
+            2,
+            3,
+            -2,
+            -1
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            2,
+            3,
+            -2
+          ]
+        },
+        {
+          "block": 3,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            -1
+          ]
+        },
+        {
+          "block": 4,
+          "group_word_for_local_cycle": [
+            2,
+            1,
+            3,
+            -1,
+            -2
+          ]
+        }
+      ],
       "transposition_normal_closure": [
         2,
         5,
@@ -483,9 +885,86 @@
       "literal_lift_orbit": 4116,
       "absolute_lift_orbit": 588,
       "cyclic_stabilizer_order": 2,
-      "predicted_wreath_order": 322560,
+      "certified_wreath_order": 322560,
       "exact_generated_group_closure": null,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            4
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            2,
+            3,
+            4,
+            -3,
+            -2
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            2,
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3,
+            -2
+          ]
+        },
+        {
+          "block": 3,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3,
+            -1
+          ]
+        },
+        {
+          "block": 4,
+          "group_word_for_local_cycle": [
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3
+          ]
+        },
+        {
+          "block": 5,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            4,
+            -3,
+            -1
+          ]
+        },
+        {
+          "block": 6,
+          "group_word_for_local_cycle": [
+            3,
+            4,
+            -3
+          ]
+        }
+      ],
       "transposition_normal_closure": [
         2,
         7,
@@ -597,9 +1076,88 @@
       "literal_lift_orbit": 4116,
       "absolute_lift_orbit": 588,
       "cyclic_stabilizer_order": 2,
-      "predicted_wreath_order": 322560,
+      "certified_wreath_order": 322560,
       "exact_generated_group_closure": null,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            4
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            2,
+            3,
+            4,
+            -3,
+            -2
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            1,
+            2,
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3,
+            -2,
+            -1
+          ]
+        },
+        {
+          "block": 3,
+          "group_word_for_local_cycle": [
+            2,
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3,
+            -2
+          ]
+        },
+        {
+          "block": 4,
+          "group_word_for_local_cycle": [
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3
+          ]
+        },
+        {
+          "block": 5,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            4,
+            -3,
+            -1
+          ]
+        },
+        {
+          "block": 6,
+          "group_word_for_local_cycle": [
+            3,
+            4,
+            -3
+          ]
+        }
+      ],
       "transposition_normal_closure": [
         2,
         7,
@@ -711,9 +1269,84 @@
       "literal_lift_orbit": 1372,
       "absolute_lift_orbit": 196,
       "cyclic_stabilizer_order": 2,
-      "predicted_wreath_order": 21504,
+      "certified_wreath_order": 21504,
       "exact_generated_group_closure": 21504,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            4
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            2,
+            3,
+            4,
+            -3,
+            -2
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3,
+            -1
+          ]
+        },
+        {
+          "block": 3,
+          "group_word_for_local_cycle": [
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3
+          ]
+        },
+        {
+          "block": 4,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            4,
+            -3,
+            -1
+          ]
+        },
+        {
+          "block": 5,
+          "group_word_for_local_cycle": [
+            2,
+            1,
+            3,
+            4,
+            -3,
+            -1,
+            -2
+          ]
+        },
+        {
+          "block": 6,
+          "group_word_for_local_cycle": [
+            3,
+            4,
+            -3
+          ]
+        }
+      ],
       "transposition_normal_closure": [
         2,
         7,
@@ -825,9 +1458,88 @@
       "literal_lift_orbit": 1372,
       "absolute_lift_orbit": 196,
       "cyclic_stabilizer_order": 2,
-      "predicted_wreath_order": 21504,
+      "certified_wreath_order": 21504,
       "exact_generated_group_closure": 21504,
-      "group_basis": "written cyclic-base wreath proof + exact quotient closure",
+      "group_basis": "cyclic wreath embedding + explicit words for every base generator + exact quotient closure",
+      "cyclic_wreath_embedding_checked": true,
+      "cyclic_base_generator_certificates": [
+        {
+          "block": 0,
+          "group_word_for_local_cycle": [
+            4
+          ]
+        },
+        {
+          "block": 1,
+          "group_word_for_local_cycle": [
+            2,
+            3,
+            4,
+            -3,
+            -2
+          ]
+        },
+        {
+          "block": 2,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3,
+            -1
+          ]
+        },
+        {
+          "block": 3,
+          "group_word_for_local_cycle": [
+            2,
+            1,
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3,
+            -1,
+            -2
+          ]
+        },
+        {
+          "block": 4,
+          "group_word_for_local_cycle": [
+            3,
+            2,
+            3,
+            4,
+            -3,
+            -2,
+            -3
+          ]
+        },
+        {
+          "block": 5,
+          "group_word_for_local_cycle": [
+            1,
+            3,
+            4,
+            -3,
+            -1
+          ]
+        },
+        {
+          "block": 6,
+          "group_word_for_local_cycle": [
+            3,
+            4,
+            -3
+          ]
+        }
+      ],
       "transposition_normal_closure": [
         2,
         7,
@@ -1470,43 +2182,86 @@
     "nonminimal_quotient_rejected": true,
     "nonpreserved_block_partition_rejected": true
   },
-  "canonical_divisor_controls": [
-    {
-      "degree": 6,
-      "all_block_divisors": [
-        1,
-        2,
-        3,
-        6
-      ],
-      "canonical_quotient_degree": 3,
-      "canonical_block_size": 2
-    },
-    {
-      "degree": 10,
-      "all_block_divisors": [
-        1,
-        2,
-        5,
-        10
-      ],
-      "canonical_quotient_degree": 5,
-      "canonical_block_size": 2
-    },
-    {
-      "degree": 12,
-      "all_block_divisors": [
-        1,
-        2,
-        3,
-        4,
-        6,
-        12
-      ],
-      "canonical_quotient_degree": 6,
-      "canonical_block_size": 2
-    }
-  ],
+  "canonical_divisor_controls": {
+    "cyclic_nonunique_decomposition_controls": [
+      {
+        "degree": 6,
+        "all_block_divisors": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "canonical_quotient_degree": 3,
+        "canonical_block_size": 2
+      },
+      {
+        "degree": 9,
+        "all_block_divisors": [
+          1,
+          3,
+          9
+        ],
+        "canonical_quotient_degree": 3,
+        "canonical_block_size": 3
+      },
+      {
+        "degree": 10,
+        "all_block_divisors": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "canonical_quotient_degree": 5,
+        "canonical_block_size": 2
+      },
+      {
+        "degree": 12,
+        "all_block_divisors": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          12
+        ],
+        "canonical_quotient_degree": 6,
+        "canonical_block_size": 2
+      },
+      {
+        "degree": 15,
+        "all_block_divisors": [
+          1,
+          3,
+          5,
+          15
+        ],
+        "canonical_quotient_degree": 5,
+        "canonical_block_size": 3
+      }
+    ],
+    "degree8_component_filter": [
+      {
+        "literal_orbit": 16,
+        "group_order": 576,
+        "canonical_quotient_degree": 2,
+        "canonical_block_size": 4
+      },
+      {
+        "literal_orbit": 8,
+        "group_order": 64,
+        "canonical_quotient_degree": 4,
+        "canonical_block_size": 2
+      },
+      {
+        "literal_orbit": 16,
+        "group_order": 576,
+        "canonical_quotient_degree": 2,
+        "canonical_block_size": 4
+      }
+    ]
+  },
   "scope": "Written all-degree return bijection, coupled transport, small-fibre sufficiency, free-cyclic-branch component classification and lifted index-two catalogue. Finite replay domains are explicit. Arbitrary primitive and remaining larger-fibre component classification remains open; no extrapolation from these controls.",
   "independent_replay": false,
   "formal_verification": false,

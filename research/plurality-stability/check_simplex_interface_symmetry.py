@@ -97,13 +97,14 @@ def higher_cell_reflection_checks():
             if terms[matrix] == 0:
                 del terms[matrix]
 
-        folded, omitted, wrong_sign = {}, {}, {}
+        folded, omitted, wrong_sign, standard_folded = {}, {}, {}, {}
         for rest in itertools.permutations(range(2, k)):
             permutation = [0, 1, *rest]
             sign = parity(rest)
             exponent = geometric_exponent(permutation)
             for terms in (folded, omitted, wrong_sign):
                 add_term(terms, exponent, 2 * sign)
+            add_term(standard_folded, exponent, 2)
             for l in range(2, k):
                 reflected = permutation.copy()
                 reflected[1], reflected[l] = reflected[l], reflected[1]
@@ -112,16 +113,20 @@ def higher_cell_reflection_checks():
                 if l != k - 1:
                     add_term(omitted, exponent, -2 * sign)
                 add_term(wrong_sign, exponent, 2 * sign)
+                add_term(standard_folded, exponent, 1)
 
-        determinant = {}
+        determinant, permanent = {}, {}
         for permutation in itertools.permutations(range(p)):
             matrix = [0] * (p * p)
             matrix[0] = 1  # The additional exp(tau*x_2*y_2) factor.
             for i, j in enumerate(permutation):
                 matrix[p * i + j] += 1
             add_term(determinant, tuple(matrix), 2 * parity(permutation))
+            add_term(permanent, tuple(matrix), 1 + (permutation[0] == 0))
 
         assert folded == determinant
+        assert standard_folded == permanent
+        assert standard_folded != determinant
         assert len(determinant) == math.factorial(p)
         assert omitted != determinant
         assert wrong_sign != determinant
@@ -136,7 +141,8 @@ def higher_cell_reflection_checks():
     return {
         "cases": cases,
         "omitted_adjacent_and_wrong_sign_controls": "passed",
-        "scope": "Exact bilinear-exponent monomial comparison for S44/S46 at 3<=k<=8. The all-k identity, determinant positivity, operator norm and dimension lifting require the written proofs; no all-k spectral inequality is certified.",
+        "standard_permanent_identity": "passed",
+        "scope": "Exact bilinear-exponent monomial comparisons for the sign determinant S44/S46 and standard permanent S49/S50 at 3<=k<=8. The all-k identities, determinant positivity, operator norm and dimension lifting require the written proofs; no all-k spectral inequality is certified.",
     }
 
 

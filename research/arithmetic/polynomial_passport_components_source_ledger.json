@@ -112,7 +112,7 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
-      "sha256": "34df05a24fbe435ae3f0b2de7e5864be7e3f4a7607d0dfe496bd15a6317e20f0",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
       "locator": "H1–H10; exact universal, finite and imported scopes and remaining full classification"
     },
     {
@@ -140,7 +140,7 @@
     "checker": "research/arithmetic/verify_polynomial_passport_components.py",
     "checker_sha256": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
     "receipt": "research/arithmetic/polynomial_passport_components_verification.json",
-    "receipt_sha256": "83c5ce649c42e95155d616ee007acc2b17abe282e70b4ce49a743b94e9c637fd",
+    "receipt_sha256": "abdc763c06defb534936b9589545c577b57a1fafb98a3468fd27b0be9ffba15c",
     "command": "python3 research/arithmetic/verify_polynomial_passport_components.py",
     "working_directory": "Canonical Ubuntu-24.04 WSL repository root",
     "software": "Python3.12.3, standard library only, active assertions",
@@ -155,5 +155,5 @@
     "formal_verification": false,
     "external_review": false
   },
-  "remaining_frontier": "The active target remains complete component classification for all genus-zero polynomial passports. H4 resolves two finite values; H2–H3 constrain imprimitive gluing; H5 rules out standard-spin separation in the odd-order genus-zero domain; H6 shows even group+block+spin data are insufficient. Primitive Sn/An components for r>=3 and the joint braid action on lifts above quotient components remain open."
+  "remaining_frontier": "The complete arbitrary-passport target remains active. POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md now constructs the literal return-tuple bijection and exact coupled stabilizer action, proves sufficiency for block sizes2/3 and classifies the all-degree free-cyclic-branch family, including lifts of all index-two exceptions. The degree8 b4 sector proves that separate inner/outer components and return partitions are insufficient. General primitive Sn/An passports with r>=3, remaining larger-fibre return orbits and reduced lifting classification remain open."
 }

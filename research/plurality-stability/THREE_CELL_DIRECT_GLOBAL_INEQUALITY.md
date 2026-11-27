@@ -4,7 +4,10 @@ The unrestricted inequality
 \(\widetilde Q_\rho(e)\leq2L_\rho(A;T)\) remains open here.
 The exact expansion (B1) in the [continuation note](POSITIVE_CORRELATION_CONTINUATION.md)
 makes it equivalent to \(S_\rho(A)\leq S_\rho(T)\), including for
-partitions far from the simplex. The argument below proves the comparison
+partitions far from the simplex. Proposition DG4 below now gives a direct
+computer-assisted proof for every balanced three-cell partition in every
+dimension \(d\geq2\) throughout \(0<\rho\leq21/50\). The full range
+\(21/50<\rho<1\) remains open here. The argument also proves the comparison
 at every positive correlation when the three labels occupy equal portions
 of almost every circle. For general balanced partitions it isolates an
 exact missing inequality and proves that discarding the angular
@@ -13,7 +16,16 @@ The counterexample is to an upper-bound strategy, not to simplex optimality.
 
 ## Primary results and scope
 
-The closest inspected primary text is Heilman,
+The closest inspected global theorem is Heilman,
+[arXiv:2608.00333v1](https://arxiv.org/html/2608.00333v1), Theorem A.1,
+which proves the balanced comparison for \(0<\rho\leq2/5\).
+Corollary A.3 is an all-parameter angular inequality; the endpoint
+\(2/5\) enters through the directed radial certificate in Lemma A.4.
+Proposition DG4 adapts that certificate to \([2/5,21/50]\), with its
+analytic tail domain checked explicitly. This is an application of that
+method, not a new rearrangement mechanism or a historical-priority claim.
+
+The earlier inspected text is Heilman,
 [arXiv:2306.03312v3](https://arxiv.org/html/2306.03312v3), Theorem 1.5,
 Sections 1.4, 5, 6 and 8. Its current theorem statement gives the
 unrestricted positive comparison for \(0<\rho\leq0.1082\), not every
@@ -322,9 +334,176 @@ Unlike the independent-arc relaxation in the separate
 partition here remains disjoint on every circle. The loss occurs in
 replacing interactions between different circles by angular self-energies.
 
+## A direct global interval through twenty-one fiftieths
+
+### Proposition DG4 (global comparison through rho equal to 21/50)
+
+For every \(d\geq2\), every ordinary measurable Gaussian three-cell
+partition with cell masses \(1/3\), and every \(0<\rho\leq21/50\),
+
+\[
+ S_\rho(A)\leq S_\rho(T),\qquad
+ \widetilde Q_\rho(1_A-1_T)\leq2L_\rho(A;T).
+ \tag{DG14}
+\]
+
+This is a direct global comparison on the stated interval. It does not
+use the continuation theorem or a hypothesis that \(A\) is close to
+the simplex. The proof imports Heilman's sharpened aligned-arc inequality
+and maximizer dimension reduction, and uses a new directed interval run.
+
+Here are the exact analytic inputs and their range. Put
+\(d_\rho=1-\rho^2\), \(\kappa_\rho=\rho^2/d_\rho\), and use
+\(d\nu(t)=e^{-t}dt\). The planar radius is \(r=\sqrt{2t}\).
+For \(a\geq0\) define
+
+\[
+\begin{split}
+ j_1&=\frac{9-\pi\sqrt3}{4\pi^2}>0,\qquad
+ \theta(a)=\frac{j_1 a e^{-a}}{2I_0(a)},\\
+ \tau_+(a)&=\frac1{2I_0(a)}\int_0^{2/3}(2+3v)e^{a\cos(\pi v)}dv,\\
+ w(a)&=\frac1{2I_0(a)}\int_0^{2/3}(1-3v)e^{a\cos(\pi v)}dv,\\
+ a(t,s)&=\frac{2\rho\sqrt{ts}}{d_\rho},\qquad
+ R_0(t,s)=\frac{e^{-\kappa_\rho(t+s)}}{d_\rho}I_0(a(t,s)),\\
+ K_+(t,s)&=R_0(t,s)[\tau_+(a(t,s))-4\theta(a(t,s))],\\
+ J_+(t)&=\int R_0(t,s)[w(a(t,s))+\theta(a(t,s))]d\nu(s).
+\end{split}
+ \tag{DG15}
+\]
+
+Write \(\mathcal K_+\) for this kernel operator, and put
+\(z_i(t)=p_i(\sqrt{2t})-1/3\). The fixed masses give
+\(\int z_i\,d\nu=0\). Circular rearrangement and Corollary A.3,
+equation (142), in the inspected primary text imply
+
+\[
+ S_\rho(A)-S_\rho(T)
+ \leq\sum_i\left[\langle z_i,\mathcal K_+z_i\rangle_\nu
+                    -2\int J_+z_i^2d\nu\right].
+ \tag{DG16}
+\]
+
+Corollary A.3 is stated for every angular parameter \(a\geq0\) and
+every pair of three-component probability vectors. Consequently this
+reduction is valid for every fixed \(0<\rho<1\), whenever its integrals
+are evaluated, rather than only the interval of Theorem A.1. The proof
+of Lemma A.2, the first-mode decomposition (140)--(142), and the
+assembly of (146) were inspected. We import that inequality with partial
+proof-audit coverage; no independent review of the preprint is asserted.
+
+Let \(\ell_\rho\) be the exact binary64 polynomial specified by
+`CENTER` in the retained upstream positive certificate. No approximation
+property of this choice is assumed. Set
+\(\widetilde J_+(x)=J_+(x^2)/x\), using its positive continuous limit
+at zero. Since additive centering vanishes on mean-zero functions,
+the Hilbert--Schmidt estimate gives
+
+\[
+\begin{split}
+ \langle z,\mathcal K_+z\rangle_\nu
+   &\leq h_+(\rho)\int J_+z^2d\nu,\\
+ h_+(\rho)^2
+   &=4\iint_{(0,\infty)^2}e^{-x^2-y^2}
+       \frac{[K_+(x^2,y^2)-\ell_\rho(x)-\ell_\rho(y)]^2}
+            {\widetilde J_+(x)\widetilde J_+(y)}dx\,dy.
+\end{split}
+ \tag{DG17}
+\]
+
+This is the same calculation as equations (151)--(152) of the source.
+Its use of the mean-zero constraint is essential. Boundedness of the
+\(z_i\), positivity of \(J_+\), and the finite bound below justify
+the integrals and the weighted Cauchy--Schwarz step.
+
+The full directed run, on the entire interval
+\([2/5,21/50]\), gives the conservative bounds
+
+\[
+                  h_+(\rho)^2<3.999335108,
+             \qquad h_+(\rho)<1.999834<2.
+ \tag{DG18}
+\]
+
+It accepted all 85 covering correlation subintervals after 166 attempts.
+The run used 3200 radial panels per coordinate on \([0,7]^2\), 64
+second-order angular midpoint panels, and the same Arb precision and
+auxiliary table sizes as the original certificate. All transcendental
+tables and polynomial-center coefficients were reevaluated over the new
+correlation interval. The displayed source output was rounded to twelve
+significant digits; (DG18) rounds it further upward.
+
+The change of range also needs an analytic check. The source's lower
+bound and envelope, valid here, are
+
+\[
+\begin{split}
+ \widetilde J_+(x)&\geq c_+\frac{\rho}{\sqrt{d_\rho}}
+                         e^{-\kappa_\rho x^2},
+ &c_+&=\frac{6-\pi}{4\pi^{3/2}}>0,\\
+ |K_+(x^2,y^2)|&\leq\frac{1+2j_1/e}{d_\rho}
+       e^{-\kappa_\rho(x^2+y^2)+(2\rho/d_\rho)xy}.
+\end{split}
+ \tag{DG19}
+\]
+
+After division by the weights, the squared-kernel tail is bounded by
+a constant times
+\(\exp[-(x^2+y^2-4\rho xy)/d_\rho]\).
+Completing the square leaves a positive Gaussian rate because
+\(\rho\leq21/50<1/2\); at the upper endpoint that rate is
+\(736/2059\). For the polynomial-center tails the rate is
+\(1-\kappa_\rho\geq1618/2059>0\). Thus both tail arguments
+remain valid beyond the original advertised endpoint. At the slab with
+the largest certified total, the reported squared-norm tail contributions were
+\(8.5647947864\times10^{-5}\) and
+\(2.44677710152\times10^{-11}\), respectively. Endpoint expansion by
+one binary64 step encloses both exact rational endpoints. Failed slabs
+were subdivided on both sides; no unaccepted slab or sampled-only gap
+remained when the process exited successfully.
+
+Combining (DG16)--(DG18) proves the planar comparison on
+\([2/5,21/50]\), with the stronger radial-mass estimate
+
+\[
+ S_\rho(T)-S_\rho(A)
+       \geq(2-h_+(\rho))\sum_i\int J_+(t)z_i(t)^2d\nu(t).
+ \tag{DG20}
+\]
+
+Theorem A.1 of the source supplies the interval below \(2/5\).
+For each ambient dimension, take an actual maximizing partition using
+Heilman--Tarter Lemma 2.3, and apply their Theorem 1.9 to reduce that
+maximizer to a plane. The planar bound then bounds every competitor in
+that ambient dimension. This is a reduction of a maximizer, not of an
+arbitrary competitor. Finally apply the exact quadratic expansion (B1)
+to get the second inequality in (DG14).
+
+The [verification record](positive_correlation_extension_verification.json)
+pins the complete command, environment, exact source hashes, interval
+inputs, output and assurance limits. The two original upstream modules
+are retained unchanged in
+[the source directory](sources/cut_bounds_6b720fe57bfe/plur_cert_positive.py),
+from [the source repository](https://github.com/sheilman77/cut_bounds)
+at commit `6b720fe57bfe2a3c8fffc51521d00b31011aa1a3`. The short
+[extension wrapper](sources/cut_bounds_6b720fe57bfe/check_positive_extension.py)
+changes only the correlation-range constants and mesh arguments. The
+executed ignored copies and retained copies have identical bytes.
+Replay from the repository root with the existing environment:
+
+```sh
+OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/sources/cut_bounds_6b720fe57bfe/check_positive_extension.py
+```
+
+This is an internally executed computer-assisted proof under the stated
+analytic inputs. It is not formal verification, an independent replay,
+external mathematical review, or an unrestricted positive-correlation
+result. In particular the tail estimate's validity below \(1/2\)
+does not prove the norm bound on that larger interval.
+
 ## Remaining obligation and reproducible controls
 
-An unrestricted direct proof must establish (DG4), retaining enough of
+Above the newly certified cutoff \(21/50\), an unrestricted direct proof
+must establish (DG4), retaining enough of
 \(\mathcal C_\rho\) or using a different mechanism. Global balance
 alone does not remove \(\mathcal R_\rho\); equal circular masses do.
 Proposition DG3 rules out proving the stronger mass-only inequality after

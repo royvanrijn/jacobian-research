@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "claim": "For every rho in [2/5,21/50], the weighted mean-zero positive radial Hilbert-Schmidt bound h_plus is strictly below 2. With Heilman Corollary A.3 and maximizer dimension reduction, every balanced Gaussian three-cell partition satisfies the simplex noise-stability bound through rho=21/50.",
+  "upstream_repository": "https://github.com/sheilman77/cut_bounds",
+  "upstream_commit": "6b720fe57bfe2a3c8fffc51521d00b31011aa1a3",
+  "upstream_source_files": [
+    {
+      "path": "plurality-stability/sources/cut_bounds_6b720fe57bfe/plur_cert.py",
+      "sha256": "eb0489a1e3e02eeee08178795cf52a84807d71a8bf36b0dc4bf1a4a78a6fed85",
+      "preserved_bytes": true
+    },
+    {
+      "path": "plurality-stability/sources/cut_bounds_6b720fe57bfe/plur_cert_positive.py",
+      "sha256": "5b62c1f840bb6d7f651db71f3231ffc1204c446324dd313dfc4c3825ded2ce08",
+      "preserved_bytes": true
+    }
+  ],
+  "checker": "plurality-stability/sources/cut_bounds_6b720fe57bfe/check_positive_extension.py",
+  "checker_sha256": "93ce6011a55a5e1cd9240d742931820dc70bd0882297ae1d6a08513edcb82d1d",
+  "executed_command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python .scratch/pis-positive-extension/extend.py",
+  "replay_command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/sources/cut_bounds_6b720fe57bfe/check_positive_extension.py",
+  "working_directory": "canonical repository root, Ubuntu-24.04 WSL",
+  "execution_note": "The executed wrapper and both imported inputs are byte-identical to the retained copies. No upstream source byte was modified. The wrapper overrides the advertised correlation limits and mesh arguments only; the analytic range extension is justified separately in Proposition DG4.",
+  "environment": {
+    "python": "3.12.3",
+    "python-flint": "0.9.0",
+    "numpy": "1.26.4"
+  },
+  "parameters": {
+    "rho_interval": [
+      "2/5",
+      "21/50"
+    ],
+    "radial_cutoff": 7,
+    "radial_panels": 3200,
+    "initial_correlation_panels": 4,
+    "minimum_correlation_width": "0.000025",
+    "angular_midpoint_panels": 64,
+    "q_bins": 4096,
+    "a_bins": 16384,
+    "exponential_bins": 65536,
+    "table_power": 2,
+    "chunk": 48,
+    "arb_precision_bits": 100,
+    "quick_mode": false,
+    "center": "unchanged binary64 polynomial matrix CENTER in the pinned upstream plur_cert_positive.py"
+  },
+  "result": {
+    "status": "pass",
+    "exit_code": 0,
+    "accepted_correlation_slabs": 85,
+    "attempted_correlation_slabs": 166,
+    "finite_worst_squared_bound_display": "3.99924945947",
+    "worst_slab_display": [
+      "0.4196093750",
+      "0.4196875000"
+    ],
+    "kernel_tail_display": "8.5647947864e-05",
+    "additive_tail_display": "2.44677710152e-11",
+    "certified_squared_bound_display": "3.99933510745",
+    "certified_norm_bound_display": "1.99983376995",
+    "conservative_squared_bound": "3.999335108",
+    "conservative_norm_bound": "1.999834",
+    "seconds": 418.39,
+    "coverage": "All adaptive subintervals cover [2/5,21/50]; both rational endpoints are enclosed by outward-rounded binary64 endpoint expansion. No sampled-correlation conclusion is used."
+  },
+  "tail_domain_checks": {
+    "kernel_completion_lower_rate": "736/2059 > 0 at rho=21/50",
+    "additive_gaussian_lower_rate": "1618/2059 > 0 at rho=21/50",
+    "mathematical_restriction": "rho<1/2 for the displayed squared-kernel tail; every rho in the extension interval satisfies it."
+  },
+  "assurance": {
+    "internal_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "limits": "Imports the stated all-parameter sharpened arc inequality and maximizer existence/dimension reduction. This is an internally executed directed certificate for a fixed interval, not the all-positive-correlation theorem or a formal verification of the Python enclosure implementation."
+}

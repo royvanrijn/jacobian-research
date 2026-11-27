@@ -2145,10 +2145,11 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | An l-divisible rational split-fiber class gives a new Jacobian direction under one ramified change of parameter | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
 | A genus-five Pell curve realizes the exceptional geometric direction and a genuine ordinary class | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
 | The fixed quartic Pell curve has no rational affine point for an extra class direction | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
-| Polynomial passport component reductions, rigid classification and exact higher-index splits | Internal result | stale | [Source](POLYNOMIAL_PASSPORT_COMPONENTS.md) |
+| Polynomial passport component reductions, rigid classification and exact higher-index splits | Internal result | proved | [Source](POLYNOMIAL_PASSPORT_COMPONENTS.md) |
 | Balanced affine cube-leading Mestre constructions cannot degenerate to genus three | Internal result | proved | [Source](GENUS_THREE_MESTRE_DEGENERATIONS.md) |
+| Polynomial return transport, small-block sufficiency and cyclic lifting | Internal result | proved | [Source](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md) |
 
-**Computed obligations:** 197 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 199 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -2314,6 +2315,7 @@ Scope limits:
 - Theorem M7 of the mixed isolation note establishes one literal unmarked and exactly marked mixed full-cycle orbit for every odd N>=3, T isolation for N>=7 with the genuine N=5 boundary, removable-DT extraction and arbitrary fresh-leaf restoration. Its complete mixed-nine base bridges all four pure-seven cores. Pure and mixed connectivity now complete the original even full-alternating passport criterion for every even n>=8. Independent mathematical review and arithmetic realization questions remain separate.
 - A1–A8 of INDEX_TWO_HURWITZ_MIXTURES.md establish arbitrary minimal T/DT connectivity, even under the pure braid group for every ordered passport. The collective maximum puts all other Ts in a unique largest cut component; Q^5 exchanges two T markings with literal endpoint restored. The only multiple index-two orbits are the four pure-DT degree-seven ones. A9–A10 exhibit higher-index proper and imprimitive monodromy; A11 gives a genuine genus-one spin split outside minimality. General disconnected higher-index extraction/restoration and independent review remain open.
 - The active higher-index Hurwitz target is complete genus-zero polynomial component classification. H1–H9 give cycle-incidence trees, the complete block-divisor lattice, exact quotient/fibre budgets and a uniform two-factor plane-tree classifier. Six degree11 components all have A11 and standard spin+1; the degree15 split has groups A15 and C3 wr A5, both spin-1, with cyclic stabilizers1 and3. Primitive Sn/An components for r>=3 and joint imprimitive lift gluing remain open; group or spin classification alone does not close the target.
+- L1–L9 of POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md give a literal degree-reducing return tuple and the exact coupled quotient-stabilizer action. Decorated quotient components suffice for blocks2/3; the degree8 b4 sector has two components with the same actual576 group despite unique inner/outer components. Free cyclic-branch lifts have group C_b wr K and one component per quotient component. Thus every b>=2 gives four classified block-size-b components on7b sheets, including two identical C_b-wr-A7 groups that remain distinct. General primitive Sn/An components and remaining larger-fibre return-action orbits keep the full classification goal open.
 
 Tracked obligations (computed states):
 
@@ -2463,9 +2465,11 @@ Tracked obligations (computed states):
 - **verification / open:** [Independently review M1--M7: both Q^2 pruning identities, maximization and common complementary phases, unique-largest paired-leaf alignment, the three-way type obstruction, diagonal star induction, outside support in the five-move escape, degree-five boundary, all four pure degree-seven cores, mixed-nine completeness, one-anchor restoration, exact marking, monodromy and lifting conventions. Present proof audit and replay are internal only.](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md) — VERIFY-ARITH-MIXED-HURWITZ-ISOLATION-CONNECTIVITY
 - **verification / open:** [Independently review the arbitrary-mixture collective isolation, pure braid connectivity and obstruction proof.](INDEX_TWO_HURWITZ_MIXTURES.md) — VERIFY-ARITH-INDEX-TWO-MIXTURE-PROOF
 - **mathematical / open:** [Classify primitive Sn/An components with at least three finite branch values.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS
-- **mathematical / open:** [Determine the joint braid action on admissible imprimitive lifts over quotient components, with return data and deck symmetries.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-POLYNOMIAL-IMPRIMITIVE-LIFT-GLUING
+- **mathematical / open:** [Classify all imprimitive components using the now explicit return action; resolve its remaining larger-fibre orbits beyond the proved small-block and free-cyclic families.](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md) — GAP-ARITH-POLYNOMIAL-IMPRIMITIVE-LIFT-GLUING
 - **mathematical / open:** [Determine the reduced lifting invariants actually defined in each genus-zero monodromy/passport domain and any limits on their sufficiency.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION
 - **verification / open:** [Independently review the uniform block/two-factor reductions and exact finite component certificates.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — VERIFY-ARITH-POLYNOMIAL-PASSPORT-COMPONENT-PROOF
 - **mathematical / open:** [Classify all components of arbitrary genus-zero polynomial passports with disconnected higher-index factors; unrestricted connectivity is not the target.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-HIGHER-INDEX-DISCONNECTED-TREE-FACTORS
+- **mathematical / open:** [Classify the restricted quotient-stabilizer orbits on the remaining larger-fibre return tuples.](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md) — GAP-ARITH-POLYNOMIAL-LARGER-FIBRE-RETURN-ORBITS
+- **verification / open:** [Independently review and replay the return-tuple bijection, exact transport, cyclic family and b4 obstruction.](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md) — VERIFY-ARITH-POLYNOMIAL-LIFT-TRANSPORT
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

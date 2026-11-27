@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "388790bdf2e687871ed861b4ea34e6f1c0d438b77035944f43ae7fe543d864b5",
-  "proof_source_sha256": "120d61a9f980d4468056ad9f7613f02fc96efaea5b7252555c52ee953f27f9bb",
+  "checker_sha256": "56c8d50ebaca377ec61759be9a6365ed164cb7e46901e71158454300fe646748",
+  "proof_source_sha256": "02a63d8ff024ce2959d30d6ea8c5358da5616a377e331accf8f2e4be406e2083",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -70,7 +70,8 @@
         }
       ],
       "omitted_adjacent_and_wrong_sign_controls": "passed",
-      "scope": "Exact bilinear-exponent monomial comparison for S44/S46 at 3<=k<=8. The all-k identity, determinant positivity, operator norm and dimension lifting require the written proofs; no all-k spectral inequality is certified."
+      "standard_permanent_identity": "passed",
+      "scope": "Exact bilinear-exponent monomial comparisons for the sign determinant S44/S46 and standard permanent S49/S50 at 3<=k<=8. The all-k identities, determinant positivity, operator norm and dimension lifting require the written proofs; no all-k spectral inequality is certified."
     },
     "interval_gap": {
       "interval": [

@@ -53,8 +53,22 @@ def check_parallel_plane():
     assert determinant.nth(2) == 2*b*p1.diff(y) - 3*a*q.diff(y)
 
 
+def check_zero_e_binary_ratios():
+    from sympy import cancel
+    x, t, theta, sigma, rho = symbols("x t theta sigma rho")
+    z = t*x**3
+    first = z**3*(x**3 + theta*z)
+    second = x**2*z*(x**3 + sigma*z)
+    third = x*z*(x**3 + rho*z)
+    ratio_one = t**3*(1 + theta*t)**2/(1 + sigma*t)**3
+    ratio_two = (1 + sigma*t)**7/(t*(1 + rho*t)**8)
+    assert cancel(first**2/second**3 - ratio_one) == 0
+    assert cancel(second**7/third**8 - ratio_two) == 0
+
+
 if __name__ == "__main__":
     check_first_axial_weight()
     check_fractional_coefficient()
     check_parallel_plane()
-    print("Checked the first axial supports, fractional coefficients and parallel-plane bracket.")
+    check_zero_e_binary_ratios()
+    print("Checked the first axial supports, fractional coefficients, parallel-plane bracket and binary ratios.")

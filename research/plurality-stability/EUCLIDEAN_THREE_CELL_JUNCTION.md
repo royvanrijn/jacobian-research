@@ -218,6 +218,437 @@ coordinates and identify three incident analytic arcs. Pairwise
 distinct gradients may still be collinear, which the test above
 does not exclude.
 
+## Conserved stress and the three affine asymptotes
+
+Every planar compact-perturbation minimizer for $G$ with three
+nonempty phases has three concurrent $120^\circ$ asymptotic rays.
+Outside a compact set the interfaces are analytic normal graphs
+over those rays, with offsets and slopes tending to zero.
+
+The density argument (P6) in the [near-one note](THREE_CELL_NEAR_ONE.md#uniform-phase-density-and-two-label-blow-ups-on-open-rays)
+applies with $W(u,v)=G(v-u)$ and no volume repair. Its recurrence
+holds at all radii, and winner scores are at least $1/3$ at their
+centers. Each winning label thus occupies a fixed fraction of
+every ball at its center with radius $R\ge R_0$. Likewise the
+intermediate-scale proof (P7) applies to any $U(x_j+R_j\,\cdot)$
+with $R_j\to\infty$, constant midpoint factor, $\delta_j=1/R_j$,
+and no repair. All fixed-center blow-downs are centered tripods:
+each phase has a fixed winner point whose density estimate gives a
+positive fraction of each phase at the origin of the limit.
+The same bound upgrades local convergence to convergence in local
+distance of the closed winner sets, by testing balls centered
+outside or inside the limiting classes.
+
+Write $q(x,y)$ for disagreement. The stress tensor is
+
+\[
+ \mathsf S(w)=2I\int G(z)q(w,w+z)\,dz
+ -\int G(z)z\otimes z\int_0^1 q(w-tz,w+(1-t)z)\,dt\,dz .
+ \tag{J5}
+\]
+
+Pull back both variables by $x\mapsto x+sV(x)$ for $V$ smooth and
+compactly supported. The Jacobian derivatives give the first term.
+The kernel derivative is $-G(z)z\cdot(V(x+z)-V(x))$; write the
+difference of $V$ as the integral of $DV$ along the segment to
+obtain the second term. The differentiated density is dominated
+by a polynomial times a Gaussian, with one endpoint in a fixed
+compact set. Equilibrium gives $\int\mathsf S:DV=0$, so $\mathsf S$
+is divergence-free row by row. For the counterclockwise quarter
+turn $J$ this gives global potentials
+
+\[
+                       D\Psi=\mathsf S J^T,\qquad \nabla F=J\Psi .
+ \tag{J6}
+\]
+
+The rows of $\mathsf S J^T$ are curl-free, and symmetry of $\mathsf S$
+gives $\operatorname{div}\Psi=0$. Integrate smooth mollifications and
+fix constants at the origin to obtain the potentials by local uniform
+limits. On a single-phase ball $B_d(w)$ the integrands in (J5) vanish
+for $|z|<d$, so $|D\Psi(w)|\le Ce^{-c d^2}$. The resulting bound
+also controls increments along any segment of such phase depth,
+by mollifying in a smaller tube around it.
+
+For each large $r$, choose a labeled centered tripod agreeing with
+the winner sets in local distance to $o(r)$ in $B_{4r}$, and let
+$p_i(r)$ be a point on its label-$i$ bisector at radius $r$.
+The approximations exist uniformly by blow-down compactness.
+At scales $r$ and $2r$ the labeled rays are close by overlap.
+The segment from $p_i(r)$ to $p_i(2r)$ has phase depth at least
+$cr$ by the angular margin. The dyadic chains give
+$\Psi(p_i(r))\to L_i$ and $F(p_i(r))-J L_i\cdot p_i(r)\to C_i$:
+along each segment the sum of the remaining increments bounds
+$|\Psi-L_i|\le Ce^{-cr^2}$. Integrating $\nabla F-J L_i$ gives a
+summable bound for the second limit. Two radii within a factor of
+two can be joined by similar deep segments, so these limits are
+independent of the starting scales.
+
+Take any sequence of winning pair ties $x_j$ tending to infinity.
+For sufficiently small fixed $c_0>0$, only the pair can win in
+$B_{10c_0|x_j|}(x_j)$, by the tripod approximation at scale $|x_j|$.
+For every $R\le r\le c_0|x_j|$, the pair phases approximate
+halfplanes through $x_j$ in $B_{4r}(x_j)$, with discrepancy confined
+to a slab of width $\varepsilon r$ for $\varepsilon$ arbitrarily
+small as $R,j$ grow. Otherwise take a contradicting sequence at
+scales tending to infinity. If $r/|x_j|\to0$, the corresponding
+blow-down is a two-phase partition by the third-phase exclusion
+and (P7). Density puts its line through the center. If $r/|x_j|$
+stays bounded below, take an origin blow-down, which already gives
+a single line in the comparison ball. In both cases density turns
+local convergence into the slab estimate.
+
+After a subsequence, the unit-scale partitions at $x_j$ converge to
+a two-phase Euclidean halfplane pair, by the constant-weight version
+of the [noise-length compactness argument](THREE_CELL_NEAR_ONE.md#blow-ups-of-moving-maximizers-minimize-the-euclidean-cut)
+with no repair, and the two-phase classification cited there.
+The limiting scores tie at zero by local strong convergence and
+Gaussian tails, so the line is through zero. Let $n$ point toward
+label $i$, the other label being $k$. For fixed large $R$ the slab
+normal at radius $R$ is close to $n$, and consecutive dyadic slab
+normals are close by overlap. On each side, connect the points
+$x_j\pm r n_r$ at consecutive radii, starting with $x_j\pm Rn$.
+Each segment has phase depth at least $cr$. Stop at a radius in
+$[c_0|x_j|/2,c_0|x_j|]$ and connect the last points to
+$p_i(|x_j|),p_k(|x_j|)$ inside the corresponding deep convex
+sectors of the approximating tripod. The depth of the last segments
+is bounded below by a fixed multiple of $|x_j|$.
+For $\ell=i$ on the plus side and $\ell=k$ on the minus side, the
+same tail estimates along the chains give
+
+\[
+ |\Psi(x_j\pm Rn)-L_\ell|
+ +|F(x_j\pm Rn)-J L_\ell\cdot(x_j\pm Rn)-C_\ell|
+ \le Ce^{-cR^2}
+ \tag{J7}
+\]
+
+for all sufficiently large $j$ at each fixed large $R$. The constants
+are independent of $R$ and of the chosen subsequence.
+
+For the limiting halfplane $H$, its tensor $\mathsf S_H(sn)$ is even
+in $s$ and independent of the tangential coordinate. Direct integration
+in (J5) gives, for $\tau=J^T n$,
+
+\[
+ \int_{\mathbb R}\mathsf S_H(sn)\,ds
+ =2\mathbb E|Z\cdot n| I-\mathbb E[(Z\otimes Z)|Z\cdot n|]
+ =\sqrt{2/\pi}\,\tau\otimes\tau .
+ \tag{J8}
+\]
+
+The disagreement interval of $s$ has length $|z\cdot n|$ at each
+displacement $z$. The last identity uses independence of Gaussian
+coordinates and $\mathbb E|Z\cdot n|^3=2\mathbb E|Z\cdot n|$.
+Strong local label convergence gives local $L^1$ convergence of
+the translated stresses: for bounded $z$ shift the integration
+variable to each endpoint in (J5), then control the larger $z$
+by Gaussian tails. The translated $\Psi$ have locally uniformly
+convergent subsequences by their Lipschitz bound and (J7).
+A limit has derivative $\mathsf S_H J^T$ and endpoint values
+$L_k,L_i$ on the normal line by (J7). Thus (J8) gives
+$L_i-L_k=\sqrt{2/\pi}\,\tau$. The microscopic normal $n$ is the
+same for every far tie of this pair.
+
+Evenness of $\mathsf S_H$ makes the limiting potential on the
+normal line its midpoint $(L_i+L_k)/2$ plus an odd function.
+Integrate (J6) along that line. The limit of
+$F(x_j+Rn)-F(x_j-Rn)$ for fixed $R$ is $R J(L_i+L_k)\cdot n$.
+Evaluate the difference also by (J7) and send $R$ to infinity:
+
+\[
+               (J L_i-J L_k)\cdot x_j+C_i-C_k\ \longrightarrow\ 0 .
+ \tag{J9}
+\]
+
+The translated scores at every far tie converge in $C^1$ to their
+halfplane counterparts. For any fixed $v$ with $v\cdot n>0$, the
+directional derivative of $P_i-P_k$ in direction $v$ is therefore
+positive at all sufficiently far ties. If a blow-down ray for the
+pair had inward normal $n_*\ne n$, choose such a $v$ with
+$v\cdot n_*<0$. A segment parallel to $v$ crossing that ray away
+from the junction, rescaled back far out, has no third winner and
+goes from positive to negative score difference. This contradicts
+the positive derivative at all its zeros. Thus every pair normal
+agrees with its blow-down normal. The oriented rays are at
+$120^\circ$, and the three lines in (J9) are concurrent since their
+normal vectors and offsets telescope in cyclic label order and the
+first two normals are independent.
+
+Far from the junction every interface lies in a tube of any fixed
+small relative width about its blow-down ray. Normal segments
+across the tube have opposite unique winners at the endpoints
+and all zeros are strict crossings with the same orientation.
+Each segment meets the interface once. The analytic implicit
+function theorem gives the graph. The microscopic halfplane
+convergence gives slope tending to zero, and (J9) gives offset
+tending to zero from the affine asymptote.
+
+## Exponential convergence of the branch graphs
+
+Use coordinates $(s,y)$ with one affine asymptote $y=0,\ s>0$, and let
+$g(s)\to0$ be the graph of the corresponding interface between labels
+$i$ above and $k$ below. For some fixed $\eta>0$, the partition on
+$s$ large and $|y|<4\eta s$ is that binary graph. Extend $g$ to a
+bounded function on the whole line and denote the ordinary two-phase
+partition given by this extended graph by $U^g$. We prove that
+$|g(s)|\le C e^{-\kappa s}$ for some $\kappa>0$. Constants in this
+proof may depend on the partition and the choice of extension.
+
+Let $J$ be counterclockwise rotation by $\pi/2$, and use the stress
+potentials $D\Psi=SJ^\top$, $\nabla F=J\Psi$ and their phase constants
+$L_a,C_a$ from the affine asymptote proof. At $y=\eta s$ and
+$y=-\eta s$, respectively, the deep-phase estimates give
+\[
+ \Psi(s,\pm\eta s)=L_{i,k}+O(e^{-c s^2}),\qquad
+ F(s,\pm\eta s)=J L_{i,k}\cdot(s,\pm\eta s)+C_{i,k}+O(e^{-c s^2}).
+\]
+The horizontal asymptote implies $C_i=C_k$ and
+$J(L_i-L_k)\cdot(1,0)=0$.
+Define the signed moment of the graph stress by
+\[
+ M_g(s)=\int_{\mathbb R} y S^g_{11}(s,y)\,dy .
+\]
+For $|y|\le\eta s$, the true and graph stresses differ by
+$O(e^{-c s^2})$, since every endpoint in the stress formula is
+within $|z|$ of $(s,y)$ and the two partitions agree there when
+$|z|\le c' s$ with $c'>0$ sufficiently small. For $|y|>\eta s$,
+the graph stress is $O(e^{-c(|y|-\|g\|_\infty)^2})$, since points at
+distance less than $|y|-\|g\|_\infty$ remain on the same side of the
+graph. The Gaussian bounds in both estimates include the polynomial
+factor $|z|^2$ in the stress. Thus, writing $D=\eta s$ and using
+$\partial_y\Psi_1=S_{11}$ and $\partial_y F=\Psi_1$, we obtain
+\[
+ \begin{aligned}
+ M_g(s)
+ &= \int_{-D}^D y S_{11}(s,y)\,dy+O(e^{-c s^2})\\
+ &= D[\Psi_1(s,D)+\Psi_1(s,-D)]
+    -[F(s,D)-F(s,-D)]+O(e^{-c s^2})
+  = O(e^{-c s^2}).
+ \end{aligned}
+ \tag{E1}
+\]
+The terms linear in $D$ cancel since $(J L)_2=L_1$. Those linear
+in $s$ and the constant difference vanish by the two affine
+asymptote identities. The stress primitives are Lipschitz on compact
+sets, so the integration by parts holds for almost every $s$,
+which suffices below.
+
+Write $P_\sigma$ for convolution in one dimension with the centered
+Gaussian of standard deviation $\sigma$, with $P_0=I$. Let $H,B$
+be independent standard one-dimensional Gaussians, let
+$\Phi(t)=\Pr(B\le t)$, and put $c_0=2\Phi'(0)=\sqrt{2/\pi}$.
+At a point $(s,g(s))$ on the true interface the incident scores tie.
+Replacing the true partition by $U^g$ in the convolution costs
+$O(e^{-c s^2})$ by the same agreement tube, since $g$ is bounded.
+For the graph, conditional on the horizontal displacement $H=h$,
+the difference of the upper and lower scores is
+$2\Phi(g(s)-g(s+h))-1$. Taylor expansion gives
+\[
+ (I-P_1)g(s)=O(e^{-c s^2})+R_1(s),\qquad
+ |R_1(s)|\le (K_1*|g|^3)(s),
+ \tag{E2}
+\]
+where $K_1$ is a finite positive measure with all exponential
+moments. Indeed $2\Phi(t)-1=c_0t+O(|t|^3)$, and
+$|g(s)-g(s+h)|^3\le4(|g(s)|^3+|g(s+h)|^3)$. One may take $K_1$
+to be a fixed multiple of the sum of a unit atom and the law of $H$.
+
+The moment in (E1) gives a second expansion. Let
+$\mathcal N(a)=\mathbb E|a-B|$. Then $\mathcal N(0)=\mathcal N''(0)=c_0$, $\mathcal N'(0)=0$,
+$\mathcal N(a)=c_0+O(a^2)$, and $\mathcal N'(a)=c_0 a+O(|a|^3)$. The normal
+Gaussian integration identity is
+$\mathbb E[B|a-B|]=-\mathcal N'(a)$, by Gaussian integration by parts.
+The contribution from $2I\int G(z)q(w,w+z)\,dz$ to $M_g$ is
+\[
+ \mathbb E_H\left[(g(s)+g(s+H))\mathcal N(a)+\mathcal N'(a)\right],
+ \qquad a=g(s+H)-g(s).
+ \tag{E3}
+\]
+In fact the two label heights in the disagreement indicator are
+$g(s)$ and $g(s+H)-B$. The signed first moment of the interval
+between any two heights $p,q$ is $(p+q)|p-q|/2$. This proves
+(E3) after the factor two in the stress and expectation in $B$.
+Its linear part is $2c_0 P_1g(s)$.
+
+For the other stress contribution put $g_-=g(s-tH)$ and
+$g_+=g(s+(1-t)H)$. The heights are $g_-+tB$ and
+$g_+-(1-t)B$. The same interval computation gives the following term to
+subtract from (E3).
+\[
+ \frac12\mathbb E_H H^2\int_0^1
+   \left[(g_-+g_+)\mathcal N(d)-(2t-1)\mathcal N'(d)\right]dt,
+ \qquad d=g_+-g_- .
+ \tag{E4}
+\]
+Its linear part is
+\[
+ c_0\mathbb E_H H^2\int_0^1 [t g_-+(1-t)g_+]dt
+   =2c_0\int_0^1 t\,\mathbb E_H[H^2g(s+tH)]\,dt ,
+\]
+where reflection of $H$ and substitution $t\mapsto1-t$ give the
+last equality. Every remainder in (E3) and (E4) is bounded by a
+constant times the sum of cubes of its two values of $g$, with
+the factor $H^2$ retained in (E4). The measures with shifts $H$
+and $\pm tH$, weighted by $1$ or $H^2$ and averaged over
+$0\le t\le1$, have all exponential moments. Hence the combined
+remainder is bounded by a convolution $K_2*|g|^3$ with another
+finite positive measure $K_2$ of that type.
+
+The multiplier of the resulting linear operator $M_g/c_0$ is
+\[
+ 2e^{-\xi^2/2}-
+    2\int_0^1 t(1-\xi^2t^2)e^{-\xi^2t^2/2}\,dt
+   = \frac{2(1-e^{-\xi^2/2})}{\xi^2}.
+\]
+To check the identity, set $u=t^2$ and integrate
+\((1-\xi^2 u)e^{-\xi^2 u/2}
+ =\frac{d}{du}(2u e^{-\xi^2u/2})-e^{-\xi^2u/2}\).
+The right side has value one at $\xi=0$ and is the multiplier of
+$A=\int_0^1 P_{\sqrt u}\,du$. This computation is an identity of
+convolution measures, so it applies to the bounded extension of
+$g$. Equations (E1), (E3) and (E4) therefore give
+\[
+ Ag(s)=O(e^{-c s^2})+R_2(s),\qquad
+ |R_2(s)|\le (K_2*|g|^3)(s).
+ \tag{E5}
+\]
+
+The sum of (E2) and (E5) gives, for $s$ sufficiently large,
+\[
+ |(\mathcal B g)(s)|\le C e^{-c s^2}+(K*|g|^3)(s),
+ \qquad \mathcal B=I-P_1+A,\quad K=K_1+K_2.
+ \tag{E6}
+\]
+The Fourier multiplier of $\mathcal B$ is
+$m(\xi)=(1-e^{-\xi^2/2})(1+2/\xi^2)$, with removable value
+$m(0)=1$. In every closed strip \(|\operatorname{Im}\xi|\le
+\kappa_0<\sqrt{2}\) it is nonzero. Besides the zeros
+$\pm i\sqrt{2}$ of the rational factor, the possible nonzero zeros
+are solutions of $\xi^2=4\pi i n$, $n\in\mathbb Z\setminus\{0\}$.
+The function $m^{-1}-1$ is analytic on the strip and is bounded
+there by $C_{\kappa_0}(1+|\operatorname{Re}\xi|)^{-2}$.
+Fourier inversion and contour shifting yield a continuous inverse
+transform $k$ with $|k(s)|\le C_{\kappa_0} e^{-\kappa_0|s|}$.
+The vertical contour contributions tend to zero by that uniform
+quadratic bound. It follows by uniqueness of Fourier transforms
+of finite measures that $\delta_0+k(s)\,ds$ is a convolution
+inverse of the finite measure defining $\mathcal B$.
+
+Here are the absorption details on the whole line, which allow
+for an arbitrary bounded extension of $g$. Fix
+$0<\kappa<\kappa_0$. Let $b=\delta_0+|k(s)|\,ds$ and for a
+finite positive measure $\lambda$ write
+$M_\kappa(\lambda)=\int e^{\kappa|h|}\,d\lambda(h)$.
+Choose $\varepsilon>0$ with
+$\varepsilon^2 M_\kappa(b) M_\kappa(K)<1/2$. Since $g(s)\to0$,
+choose $T$ large enough that $|g(s)|\le\varepsilon$ for
+$s>T$. On $s\le T$, bound $|g|^3$ by
+$G_*^3 1_{\{s\le T\}}$, where $G_*=\|g\|_\infty$.
+On the bounded-above range of $s$ where (E6) has not been shown,
+$\mathcal B g$ is bounded since $\mathcal B$ is a finite
+convolution measure. Thus globally
+\[
+ |\mathcal B g| \le \mathcal F+\varepsilon^2 K*|g|,
+\]
+where $\mathcal F$ is the sum of a constant times a left-half-line
+indicator, a Gaussian right tail, and
+$G_*^3K*1_{\{s\le T\}}$. In particular $e^{\kappa s_+}\mathcal F(s)$
+is bounded. For the last summand, use
+$e^{\kappa s_+}\le e^{\kappa|h|}e^{\kappa(s-h)_+}$ on
+$s-h\le T$. Applying the convolution inverse gives
+\[
+ |g| \le b*\mathcal F+\varepsilon^2 (b*K)*|g|.
+\]
+The bounded weights $w_N(s)=e^{\kappa\min(s_+,N)}$ satisfy
+$w_N(s)/w_N(s-h)\le e^{\kappa|h|}$.
+Consequently
+\[
+ \|w_N g\|_\infty
+ \le M_\kappa(b)\|e^{\kappa s_+}\mathcal F\|_\infty
+   +\varepsilon^2 M_\kappa(b)M_\kappa(K)\|w_N g\|_\infty .
+\]
+Each norm on the left is finite before absorption because $g$
+and $w_N$ are bounded. Absorb uniformly and send $N\to\infty$.
+This proves the exponential estimate, first almost everywhere and
+then everywhere on the graph by continuity.
+
+The same argument applies to all three branches. Outside a fixed
+disk the labels agree with the asymptotic tripod away from the
+strips between each graph and its asymptote. Their total area
+there is bounded by a constant times
+$\sum_{\text{branches}}\int_{s_0}^\infty |g(s)|\,ds<\infty$.
+Thus the partition differs from the translated tripod by a set of
+finite area. The junction core remains unrestricted by this estimate.
+
+## Rigidity from one exact two-sided separation
+
+Let $U$ be an ordinary Euclidean compact-perturbation minimizer
+with three phases and $Y$ its affine asymptotic tripod. Assume
+one pair line separates its incident labels everywhere: label
+$A$ occurs only on the left and label $B$ only on the right.
+Then $U=Y$ almost everywhere. The hypothesis concerns only
+this single line.
+
+By exponential convergence, $U$ differs in finite area from $Y$.
+Minimality extends to any competitor differing from $U$ in finite
+area: truncate its change to a ball and use the estimate that two
+competitors differing on a set of area $a$ have relative cuts
+differing by at most $2a$. The estimate follows from $\int G=1$
+and the fact that the integrand can differ only when an endpoint
+lies in the change set.
+
+Choose coordinates with pair line $x=0$ and let $D=\{x>0\}$.
+On $D$ let $m$ indicate the third phase $M$, and let $n$ indicate
+its reflection from the left. The other labels are determined
+by the exact separation assumption. For $p,q\in D$ put
+$K^-(p,q)=G(p-q)$, $K^+(p,q)=G(p-\sigma q)$ with $\sigma$ reflection
+across the line. Write $s=m+n$ and $d=m-n$. In the agreement
+quadratic form the terms depending on $d$ are exactly the product
+$d(p)d(q)$ against $K^- -K^+/2$, as is seen by expanding the
+same-side agreements and the cross-side terms
+$K^+(m(p)n(q)+n(p)m(q))$. Replacing $m,n$ by their pointwise
+maximum and minimum leaves $s$ fixed and replaces $d$ by $|d|$.
+The coefficient is strictly positive. If $d$ had both signs on
+positive-area sets, agreement would strictly increase, contrary
+to minimality. Thus $d$ has one sign. Now compare to the two
+competitors obtained by duplicating $m$ on both sides or $n$ on
+both sides. The same-side terms sum to twice the original terms,
+while the summed cross-side agreement increases by
+$2\iint K^+(p,q)d(p)d(q)\,dp\,dq$. This is strictly positive
+unless $d=0$ almost everywhere. All comparisons change finite
+area since the two sides have the same third phase in $Y$.
+Hence $m=n$.
+
+For a reflection-symmetric oriented profile, the relative cut
+from the tripod reduces to the scalar cut with kernel
+$K_*=2K^-+K^+$ and potential $1-\Phi(x)$:
+
+\[
+ \iint_{D^2} K_*(p,q)
+  \big(|m(p)-m(q)|-|m_Y(p)-m_Y(q)|\big)\,dp\,dq
+            -2\int_D (1-\Phi(x))(m-m_Y)\,dp .
+ \tag{J10}
+\]
+
+This follows by expanding the same-side binary agreements and
+$2K^+m(p)m(q)$, using $\int_D K^+(p,q)\,dq=1-\Phi(x)$.
+Orient the vertical coordinate so that $m_Y=1_{\{g>0\}}$ for
+$g(x,y)=y-f_0(x)$ with affine $f_0$. At any $p$ with $g(p)=c$,
+the tripod translated vertically by $c$ has a tie there between
+$M$ and $B$. Its score equality reads
+$\int_D K_*(p,q)1_{\{g(q)>c\}}\,dq=\Phi(x)$, by the two reflected
+convolutions. It follows that $\operatorname{sgn}(g(p)-g(q))$
+has kernel divergence $1-\Phi(x)$. The inequality in (J1) for
+this sign function then bounds the cut part in (J10) below by
+the potential part, so the cut difference is nonnegative.
+Equality requires preservation of the order of $g$ for almost
+every pair with distinct labels, since $K_*>0$. Hence $m$ is a
+level threshold of $g$ up to null sets. Any nonzero threshold
+shift changes infinite area. Minimality of $U$ also gives the
+reverse cut inequality against $Y$, by finite-area comparison,
+so equality holds and $m=m_Y$. This proves the claimed rigidity.
+
 ## A fractional obstruction to convex total-variation calibration
 
 For a simplex-valued $u$ that agrees with the vector indicator $1_Y$

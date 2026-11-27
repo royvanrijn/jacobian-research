@@ -434,6 +434,11 @@ Every imprimitive component occurs in that selected list and in no
 other selected list. Its quotient and fibre degrees are both smaller
 than \(N\).
 
+In L8, both order-576 groups have only the proper block-count divisor
+two, so their selected fibre size really is four. Choosing a different
+decomposition cannot remove that coupling obstruction. The order-64
+component has additional blocks and is selected at fibre size two.
+
 For the full classification, identity quotient entries can be deleted
 before classifying the quotient: they cross any factor unchanged, so
 their insertion does not create new full braid components. Consequently

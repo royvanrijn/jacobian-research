@@ -576,7 +576,12 @@ Ordinary Gaussian perimeter convergence suppresses the
 $e^2$ corrections that this test resolves. The gap in the
 [spectral theorem](SIMPLEX_INTERFACE_SYMMETRY.md) is of order $e$, and
 the fixed-correlation measurable comparison has a neighborhood depending
-on $\rho$. The remaining near-one problem is to control all shrinking
-defects of actual maximizers, including changes on the scale in (P5).
+on $\rho$. Every three-label Euclidean minimizing limit differs by
+finite area from a tripod, with exponential decay along its three
+branches. Exact separation across one pair line already forces the
+tripod. The remaining near-one problem is to exclude unrestricted
+junction defects and to control shrinking defects of the original
+Gaussian maximizers uniformly across scales.
+[Euclidean junction analysis](EUCLIDEAN_THREE_CELL_JUNCTION.md#conserved-stress-and-the-three-affine-asymptotes)
 
 The arguments are written analytic proofs with internal review.

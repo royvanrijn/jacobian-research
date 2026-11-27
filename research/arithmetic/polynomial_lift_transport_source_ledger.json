@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+  "assurance": "Internal written universal reductions and classifications of the stated subdomains, plus exact bounded controls and direct finite obstruction classification. The complete arbitrary-passport goal remains open. No independent replay, formal verification, external review or priority claim.",
+  "declarations": [
+    {
+      "name": "Lemma L1. The canonical quotient tree and its fibre coordinates",
+      "node": "ARITH-POLYNOMIAL-QUOTIENT-TREE-FIBRE-GAUGE",
+      "scope": "For a minimal degree-d quotient tuple with full-cycle product, deleting the parent-return edge of each quotient cycle gives a canonical tree. Root-normalized fibre charts uniquely make its tree transports identity; the remaining maps are common-fibre return permutations."
+    },
+    {
+      "name": "Theorem L2. A literal degree-reducing return-tuple bijection",
+      "node": "ARITH-POLYNOMIAL-LITERAL-RETURN-TUPLE-BIJECTION",
+      "scope": "For each fixed literal quotient q of r factors, original minimal lifts with product P_(bd) are in literal bijection with M=(r-1)d+1 return factors on b letters, product P_b and total index b-1. Local cycle inflation ell*nu is the only original-passport constraint. Explicit reconstruction and product straightening recover every original permutation exactly."
+    },
+    {
+      "name": "Theorem L3. Exact transport and the quotient-stabilizer action",
+      "node": "ARITH-POLYNOMIAL-QUOTIENT-STABILIZER-RETURN-ACTION",
+      "scope": "Wreath-coordinate multiplication, original signed Hurwitz moves and return extraction give the exact coupled transport. Above one quotient braid component, original components are exactly the orbits of the quotient stabilizer on admissible lower-degree return tuples. Explicit finite Schreier loops generate that action; no full inner braid action is assumed."
+    },
+    {
+      "name": "Theorem L4. Decorated quotient components are sufficient for \\(b=2,3\\)",
+      "node": "ARITH-POLYNOMIAL-SMALL-BLOCK-GLUING-CLASSIFICATION",
+      "scope": "For b=2 or3, decorated quotient braid components, recording every return partition at its quotient cycle, are sufficient component labels. The only literal fibre multiplicities are1 or3, and available full-twist root phases connect them. The cyclic stabilizer formula is bs/f and corresponding absolute orbit sizes agree. This does not extend to b4."
+    },
+    {
+      "name": "Theorem L5. Complete lifting over a free cyclic branch",
+      "node": "ARITH-POLYNOMIAL-FREE-CYCLIC-BRANCH-LIFT-CLASSIFICATION",
+      "scope": "For any b>=2 and degree-d quotient passport, add one single b-cycle branch and replace all other quotient factors by b disjoint copies. In the union of original components preserving blocks of size b, there is exactly one component above each quotient component. Stabilizer image on the d marked blocks is exactly K; group C_b wr K, literal size d(s+1)L, deck order b and absolute size(s+1)L. Other original components lacking this block system are excluded explicitly."
+    },
+    {
+      "name": "Lemma L6. Monodromy containing a transposition",
+      "node": "ARITH-POLYNOMIAL-TRANSPOSITION-WREATH-MONODROMY",
+      "scope": "Every transitive group containing a transposition is the full imprimitive wreath S_a wr K, with canonical blocks from the normal-closure support graph and normal subgroup S_a^e. This is independent of the chosen transposition. Its natural centralizer is trivial for a>=3 and diagonal C2 for a2. No genus assumption or component uniqueness follows."
+    },
+    {
+      "name": "Corollary L7. An infinite higher-index component catalogue",
+      "node": "ARITH-POLYNOMIAL-LIFTED-INDEX-TWO-COMPONENT-CATALOGUE",
+      "scope": "The free cyclic-branch construction lifts the complete minimal index-two component catalogue in every b>=2. In degree7b, passport(2^(2b)1^(3b))^3 plus(b1^(6b)) has, in its block-size-b subdomain, two C_b-wr-A7 components of literal size4116/absolute588 and two C_b-wr-PSL3(2) components1372/196, each deck order b. In particular the two A7 lifts have the same standard embedded group but are distinct components. Generic connected-quotient sizes use L=binom(s,k)d^(s-1)(s-1)^m."
+    },
+    {
+      "name": "Theorem L8. The first nontrivial return-coupling obstruction",
+      "node": "ARITH-POLYNOMIAL-DEGREE8-COUPLED-RETURN-OBSTRUCTION",
+      "scope": "The degree8 passport(4,2,2),(2,2,1^4) has full literal orbit sizes16,16,8 and exact groups576,576,64 with deck orders1,1,2. Both576 groups are the identical parity kernel H in S4 wr S2. In the all-transposition-return sector the quotient and full inner components are each unique, but the quotient-stabilizer action has two8-cycles, giving two glued components. Direct complete enumeration proves this finite sharpness result."
+    },
+    {
+      "name": "Proposition L9. A canonical divisor prevents decomposition overcounting",
+      "node": "ARITH-POLYNOMIAL-CANONICAL-DIVISOR-CLASSIFICATION-REDUCTION",
+      "scope": "For every imprimitive component choose the largest proper admissible block-count divisor d*. This invariant numerical choice partitions the imprimitive domain without overcounting nonunique decomposition chains. Quotient and fibre degrees are smaller than N; deleting quotient identities creates no new full-braid components. Complete primitive Sn/An classification plus known rigid/exceptional cases and the remaining return actions would therefore yield the full classification by induction. The latter inputs remain open."
+    }
+  ],
+  "primary_comparison": [
+    {
+      "authors": "Gareth A. Jones and Alexander Zvonkin",
+      "title": "Orbits of braid groups on cacti",
+      "url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "inspected": "Actual primary Section5.4, retained author pp155–159: imprimitive cacti from quotient copies and specified additional edge placements; Theorem3.1 full twist and Section1.1 cactus conventions",
+      "role": "Primary comparison. The new common-fibre construction, transport formulas and classification proofs are self-contained, with the previously proved H2/H3 input.",
+      "application": "The concrete attachment choices motivate retaining exact lift data. The paper's group/component distinction does not supply an arbitrary lift action."
+    },
+    {
+      "authors": "Peter Müller",
+      "title": "Primitive Monodromy Groups of Polynomials",
+      "url": "https://ypfmde.github.io/Papers/mon.pdf",
+      "path": "research/arithmetic/sources/mueller-primitive-polynomial-monodromy-author.pdf",
+      "sha256": "d8965d633757a5569d0ef3e0a85ee535f6c151b0bff3f8b4cc74b366ff116954",
+      "inspected": "Actual Appendix decomposition setup, including the Lüroth/intermediate-group correspondence",
+      "role": "Context for polynomial decomposition; no new decomposition uniqueness theorem imported",
+      "application": "A choice of two constituent polynomial factors alone does not specify the braid action on a common-fibre tuple. L9 handles duplicate decomposition descriptions by a canonical invariant divisor."
+    },
+    {
+      "authors": "Joachim König, Danny Neftin and Shai Rosenberg",
+      "title": "Polynomial compositions with large monodromy groups and applications to arithmetic dynamics",
+      "url": "https://neftin.net.technion.ac.il/files/2024/02/version-2.pdf",
+      "version": "Actual online author version version-2.pdf",
+      "inspected": "Primary Theorem1.1 and surrounding introduction, pp2–3",
+      "role": "Context only, not a component or small-fibre theorem",
+      "application": "Theorem1.1 assumes Q-polynomials of constituent degrees>=5 with alternating/symmetric monodromy and proves wreath-product largeness. It does not determine component gluing; the cyclic and degree2/3 cases here are outside those hypotheses."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "ad4749a21f2b7796a4537f9ceb005fddae987437507fb757f5283ac009a3a161",
+      "locator": "L1–L9; full scope and conditional residual classification route"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H1–H3 cycle-incidence tree, every block system and exact quotient/fibre budget; H4 rigid classifier"
+    },
+    {
+      "path": "research/arithmetic/INDEX_TWO_HURWITZ_MIXTURES.md",
+      "sha256": "d00bcd0d26a129ed5831a81fa14cb35d4a1c961756be289b3166232644d64206",
+      "locator": "Complete index-two quotient component and monodromy catalogue, including pure7 exceptions"
+    },
+    {
+      "path": "research/arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md",
+      "sha256": "e53c9f25872a75b09b60601c816968056ac5b5ce934477cf3b6c137ec76742e6",
+      "locator": "Exact class-character count for any arrangement of T/DT factors"
+    },
+    {
+      "path": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
+      "sha256": "f54e47a6de99123044a87f0e44f5e75065a0d4d734f41db3489a5bdb65be0109",
+      "locator": "Pure-DT all-degree classification input to L7; existing large pure bases are not rerun here"
+    },
+    {
+      "path": "research/arithmetic/verify_polynomial_passport_components.py",
+      "sha256": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+      "locator": "Literal permutation, class-count and small-domain helper implementation"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_lift_transport.py",
+    "checker_sha256": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
+    "receipt": "research/arithmetic/polynomial_lift_transport_verification.json",
+    "receipt_sha256": "5ae26ada6e553bb2e15b9b8e60f22c440c55c4de988e0556b516fa906ffdd744",
+    "command": "python3 research/arithmetic/verify_polynomial_lift_transport.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL repository root",
+    "software": "Python3.12.3, standard library only; assertions required",
+    "deterministic_inputs": "Three quotient seeds: a degree2 swap/identity tuple and minimal transposition chains in degrees3 and4, with all quadratic/cubic return tuples. Independent first-factor wreath enumeration and product completion in the degree6/9 two-factor cases. Free cyclic lifts of quotient C2, C3, S3, A5, D5 and all four pure7 representatives, including b2/3/4 cases. All directed Schreier loops of the15-state degree5 quotient with an identity position. Direct DT completion for the degree8 obstruction, direct16-element inner triple-T domain, and complete216+27 /1800+75 transposition passport controls. Cyclic N6/9/10/12/15 divisor checks, the degree8 canonical selection and four invalid inputs.",
+    "coverage": "PASS:2120 complete generated small-block model states with literal inverse, signed transport, independent decoration action and deck checks;4/22/12/66 independent small wreath completions. Eleven complete free-cyclic lift orbit controls including4116,4116,1372,1372 for all four pure7 lifts. Sixty directed Schreier loops have image A5 of order60 on marked blocks. The b4 stabilizer action is8+8 despite one16-state inner component. All degree8 passport40 literal tuples are classified. Two additional full transposition domains243 and1875 split into216+27 and1800+75, with primitive Sn certified by the complete normal-transposition support graph.",
+    "proof_boundary": "Uniform correctness uses the written tree normalization, exact inverse, root phase argument and point-action proof. Finite controls do not establish other passports. Wreath orders in the finite lift controls are certified by cyclic embedding, explicit group words for every local base generator and exact quotient closure. Full lifted group closures are separately recorded only where actually executed."
+  },
+  "mathematical_review": {
+    "scope": "Internal audit of literal root labels, edge/face order, quotient identities, product straightening, the complete stabilizer rather than an independent inner braid group, small-fibre phase transitivity, exact free-branch image K and deck order, full symmetric normal closure of a transposition, inherited pure7 components, the identical576 subgroup obstruction and canonical-divisor overcounting filter.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "remaining_frontier": "The full genus-zero polynomial component classification remains open. Its two explicit remaining classification inputs are primitive Sn/An passports with r>=3 and restricted return-action orbits for larger fibres outside the classified free-cyclic subdomain. The separate reduced-lifting question remains. L8 proves that inner/outer component labels and return partitions do not by themselves fill that gap."
+}

@@ -11,8 +11,9 @@ bound at correlation $1/2$ now give an explicit full three-cell gap for
 The complete proof is in the section on reflected kernels below. For every
 cell count, the ambient-dimension extension reduces exactly to the balanced
 problem in the active space, with an explicit loss in the gap. The higher-cell
-sign kernel also has an exact positive determinant formula on an ordered
-chamber. Neither statement supplies the missing active-space gap for
+sign and standard kernels also have exact positive determinant and
+permanent formulas on an ordered chamber. These reductions do not supply
+the missing active-space gap for
 $k\ge4$ at arbitrary correlation. The remaining higher-cell blocks and
 global optimality remain open. External review and formal verification
 have not occurred.
@@ -873,7 +874,7 @@ $n(n-1)/2+n(d-n)=(k-1)(2d-k)/2$ and equals
 $\mathcal R_{k,d}$. Orthogonal Hermite expansion and boundedness of the
 forms justify the sum and prove (S42). For $k=2$, the active balanced
 space is zero and the extra-degree forms are exactly
-$\mu_\rho(1-\rho^{m-1})|h|^2$: degree zero is forbidden, degree one
+$\mu_\rho(1-\rho^{m-1})\|h\|_{\mathcal H}^2$: degree zero is forbidden, degree one
 is rotation, and the sharp nonrotational gap for $d\ge2$ is
 $\ell(1-\rho)/\sigma$.
 
@@ -1036,6 +1037,87 @@ is still an open mathematical obligation. Neither a global simplex
 inequality nor exclusion of tied maximizers follows from these
 reductions.
 
+## Every cell count: the standard sector is a scalar positive kernel
+
+The standard block also has a scalar reduction for every $k\ge3$.
+Formula (S4) associates $V_{(k-1,1)}$ only with the trivial
+$S_{k-2}$ type. Thus its multiplicity functions $h$ on $F_{12}$ are
+invariant under permutations of $3,\ldots,k$. Let $h_{ij}$ be the
+transport of $h$ to $F_{ij}$; stabilizer invariance makes this definition
+independent of the transporter. For $v\in E$ write
+$f^{v,h}_{ij}=(v_i-v_j)h_{ij}$, using the same $h_{ji}=h_{ij}$.
+These tensor speeds span the whole standard isotypic space. Their norms
+and mass changes are
+
+\[
+ \|f^{v,h}\|^2=k|v|^2\|h\|_{L^2(\nu_{12})}^2,\qquad
+       Cf^{v,h}=kv\int h\,d\nu_{12}.
+\]
+
+For a nonzero $v$, balance therefore imposes exactly the ordinary
+$\nu_{12}$-mean-zero condition. The scalar interaction kernel on the
+full reference facet is
+
+\[
+ K_{{\rm std},\rho}(x,y)=\Gamma_\rho(x,y)
+   \left[2e^{\tau x\cdot y}
+               +\sum_{l=3}^k e^{\tau x\cdot(2l)y}\right]>0,
+ \qquad
+ \int K_{{\rm std},\rho}(x,y)d\nu_{12}(y)=a_\rho(x)/\rho.
+ \tag{S49}
+\]
+
+To verify the coefficients, pair the $1l$ and $2l$ terms in the $12$
+row of (S10). Their geometric kernels agree after transport to the
+reference facet, and their label coefficients subtract to
+$(v_1-v_l)-(v_2-v_l)=v_1-v_2$. The diagonal coefficient is $2$.
+This proves the kernel identity. Setting $h=1$ gives the row sum by
+(S40), or directly by differentiating the reflected score. When a
+particular $v_1-v_2$ is zero, use a different nonzero component or
+linearity; the scalar operator does not depend on $v$.
+
+Let $A=[e^{\tau x_i y_j}]_{i,j\in I}$ as in (S46), and let
+$A_0=[e^{\tau x_i y_j}]_{i,j=3}^k$. Folding invariant functions to $W$
+gives the exact positive kernel
+
+\[
+ \mathcal K_{{\rm std},\rho}(x,y)
+  =\Gamma_\rho(x,y)e^{\tau x_2y_2}
+       \left[\operatorname{per}A
+                   +e^{\tau x_2y_2}\operatorname{per}A_0\right].
+ \tag{S50}
+\]
+
+Indeed the first permanent enumerates every permutation of $I$ once,
+while the second supplies one additional copy of the permutations fixing
+$2$. This gives coefficient $2$ for the self term and $1$ for every
+adjacent term, exactly as in (S49). No factorial normalization is
+inserted: the kernel integrates against $\nu_{12}|_W$, and both scalar
+forms and norms acquire the same factor $(k-2)!$ under unfolding.
+
+Consequently the precise higher-cell extension of (S23) is the scalar
+inequality below on invariant mean-zero $h$:
+
+\[
+\begin{split}
+ \frac{\rho\mathfrak q_\rho(f^{v,h})}{k|v|^2}
+ &=\int a_\rho h^2\,d\nu_{12}
+               -\iint K_{{\rm std},\rho}(x,y)h(x)h(y)\,d\nu_{12}^2\\
+ &=\frac12\iint K_{{\rm std},\rho}(x,y)(h(x)-h(y))^2d\nu_{12}^2
+              -(1-\rho)\int\frac{a_\rho}{\rho}h^2d\nu_{12}.
+\end{split}
+\tag{S51}
+\]
+
+Strict positivity of (S51) on its stated constraint remains unproved
+here for arbitrary correlation when $k\ge4$. Constants are the
+translation ground state for the row-normalized kernel; they are
+excluded by ordinary mass balance, whereas the squared-difference form
+has the varying weight $a_\rho/\rho$. This is the same mass-versus-weight
+issue identified after (S23). The permanent formula resolves the
+reflection signs, not this weighted Poincare inequality. The higher
+hook and other blocks in (S4) require their own estimates as well.
+
 ## Monotonicity and the other global obligations
 
 **Raw-deficit obstruction.** For every $k\ge2$, the unnormalized
@@ -1061,7 +1143,9 @@ The remaining targets are distinct:
 
 * Prove the active-space higher-cell gap in (S4). The sign block has the
   positive determinant kernel (S46), with the precise remaining norm
-  bound (S48). Equation (S42) then handles every ambient dimension.
+  bound (S48); the standard block has the positive kernel (S49)--(S50)
+  and the unresolved weighted Poincare inequality (S51).
+  Equation (S42) then handles every ambient dimension.
   Equation (S23) and the full three-cell interface problem are settled
   by (S29)--(S38).
 * Classify stationary stable balanced partitions. Simplex spectral
@@ -1087,7 +1171,8 @@ permutations in the $S_3/S_4$ character examples, (S21), the elementary
 polynomial bounds (S32)/(S36), and the interval inequalities used in
 (S27)--(S28), including rejection controls. It also compares the geometric
 coset sum (S44) with the determinant (S46) as exact formal exponential
-sums for $3\le k\le8$, including omitted-term and wrong-sign controls.
+sums for $3\le k\le8$, including omitted-term and wrong-sign controls,
+and verifies the standard-sector permanent identity (S49)--(S50).
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

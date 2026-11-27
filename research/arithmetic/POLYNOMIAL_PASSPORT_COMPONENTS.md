@@ -128,12 +128,6 @@ are necessary component invariants. The statements do not assert that
 these invariants are sufficient or that the return permutations can be
 independently braided as a single inner tuple.
 
-The [return-transport theorem](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md)
-now constructs that common-fibre tuple and its exact coupled action.
-It proves sufficiency of decorated quotient components for block sizes
-two and three, classifies a free cyclic-branch lifting family in every
-degree, and gives an explicit failure of sufficiency at block size four.
-
 **Proof.** A return cycle of length \(s\) on one block corresponds to a
 cycle of length \(\ell_Os\) on the union of its \(\ell_O\) blocks.
 The contribution to the index is therefore
@@ -150,6 +144,12 @@ The two sums in (4) follow. Projection commutes with conjugation, hence
 with both signed Hurwitz moves. Conjugation by a block-preserving
 permutation only permutes the block cycles and conjugates their return
 maps; this proves (5). \(\square\)
+
+The [return-transport theorem](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md)
+constructs a common-fibre tuple and its exact coupled action from this
+budget. It proves sufficiency of decorated quotient components for block
+sizes two and three, classifies a free cyclic-branch lifting family in
+every degree, and gives a failure of sufficiency at block size four.
 
 ## Theorem H4. Complete classification with two finite branch values
 

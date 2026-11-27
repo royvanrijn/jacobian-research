@@ -189,6 +189,74 @@ available here. [Heilman, Lemma 5.5](https://arxiv.org/html/2209.11216v1).
 
 ## A first-crossing obstruction at the level of Hermite weights
 
+At a tangential first tie, allowing the competitor to move with
+correlation gives a second-order condition. Let $A$ tie the simplex $T$
+at the first endpoint $r$, put $D(\rho)=S_\rho(T)-S_\rho(A)$, and suppose
+$D'(r)=0$. For a smooth compactly supported balanced speed $h$ on the
+regular interfaces of $A$, let
+$Q_0(h)=\int a h^2\,d\nu-\langle h,Kh\rangle$ at $r$ and use the
+interface function $g_e=\partial_\rho(U_i-U_j)|_r$ from (G6). Then
+
+\[
+                  \left|\int gh\,d\nu\right|^2
+                      \le \tfrac12 D''(r)Q_0(h).
+ \tag{G10}
+\]
+
+To see this, realize $h$ by an exactly balanced smooth deformation
+$A_t$ using two mass-correcting bumps as for (G1). Its fixed-correlation
+first variation vanishes at $r$ and its second derivative is
+$-2Q_0(h)$. The mixed derivative is $2\int gh\,d\nu$ by differentiating
+the first variation in $\rho$ at fixed $A$. Differentiation is valid
+on the compactly supported flows by the smooth Gaussian joint density.
+For each fixed $c\in\mathbb R$ apply global comparison to $A_{c\epsilon}$
+at $r-\epsilon$. Its deficit, divided by $\epsilon^2$, tends to
+$D''(r)/2+2c\int gh\,d\nu+c^2Q_0(h)$. Nonnegativity for every $c$
+proves (G10), including when $Q_0(h)=0$.
+
+Suppose also that $\int_{A_i}|x|^2d\gamma_2=2/3$ for all $i$.
+Then the dilation speed $b=x\cdot N_e$ is balanced by Gaussian divergence.
+Cut it off and subtract fixed compact mass bumps, whose coefficients
+tend to zero. The polynomial-weighted bounds used in (G6) justify
+passing to the limit in (G10). Put $A_b=\int a b^2d\nu$ and $q=Q_0(b)$.
+The dilation identity yields
+$\int gb\,d\nu=-A_b/r-rq/(1-r^2)$. For $A_b>0$, (G10) forces $q>0$
+and gives
+
+\[
+ \qquad D''(r)\ge
+   2\big(A_b/r+rq/(1-r^2)\big)^2/q
+   \ \ge\ \frac{8 A_b}{1-r^2}.
+ \tag{G11}
+\]
+
+In particular $D'(r)=D''(r)=0$ together with equal second radial
+moments forces $b=0$ on the interfaces. This gives dilation
+invariance by distributional differentiation along radial rays, and
+hence the simplex by the conical rigidity below. The extra radial
+moment hypothesis and the slope equality remain open at a general tie.
+
+An exact condition also holds at every tie with the simplex, including
+a transverse first tie. Write $f_i=1_{A_i}-1_{T_i}$. For any measurable
+$E$ with $\int_E f_i\,d\gamma_2=0$ for every $i$, put $f_E=1_E f$.
+Patching the labels from $A$ into $T$ on $E$ or on $E^c$ produces two
+balanced ordinary partitions. Their summed deficit at any $\rho$ is
+
+\[
+ S_\rho(T)-S_\rho(A)
+       +2\sum_i\langle (f_E)_i,T_\rho(f_{E^c})_i\rangle .
+ \tag{G12}
+\]
+
+This follows by expanding both quadratic energies around $T$.
+Consequently the cross term is nonnegative at a tied global optimum,
+with equality exactly when both patches are optimal. The inequality
+holds for every rotation and relabeling of $T$. If the cut is saturated
+at a first tie, its cross term has derivative at most
+$(S'_r(A)-S'_r(T))/2$, by differentiating (G12) from the left.
+
+### Limits of a coefficient-only test
+
 Fix any proposed crossing $s\in(0,1)$. Nonnegative Hermite masses,
 the exact zeroth coefficient, Parseval's sum, the smaller first moment
 of the competitor and a strictly larger leading perimeter-angle
@@ -346,6 +414,35 @@ with at least one other label on one such line. However, the relevant
 stationary pair score is strictly monotone on the line, whereas
 stationarity makes it constant on that interface. This contradiction
 establishes the claim.
+
+## A strict independent pair-splitting bound
+
+Let $A$ be an actual balanced three-cell global maximizer, and let
+$p_{kk}=\Pr[X,Y\in A_k]$ at its correlation $\rho$. Put
+$h_\rho=1-\arccos(\rho)/\pi$ and $s=S_\rho(A)$. Then
+
+\[
+ s-2\frac{s-h_\rho/3}{1+h_\rho}
+            <p_{kk}<\frac{s-h_\rho/3}{1+h_\rho}\qquad(k=1,2,3).
+ \tag{G13}
+\]
+
+Work in the cylinder of the active plane. Keep the cylinder of $A_k$
+and split the cylinder of its complement by the sign of the
+independent third coordinate. Each new cell has mass $1/3$. The
+contribution of the split pair is $h_\rho(1/3+p_{kk})$: the
+probability of both active observations lying outside $A_k$ is
+$1/3+p_{kk}$, and the independent sign labels agree with probability
+$h_\rho$ by the planar Gaussian angle formula. Optimality bounds
+this new contribution by $s-p_{kk}$. Equality would make the new
+partition a global maximizer, so dimension reduction would give
+a common invariant direction. Since the unchanged cell uses both
+active directions, this direction would have to be parallel to the
+third axis, but the two new cells depend on its sign. This proves
+the strict upper bound, and summing it for the other two cells
+gives the lower bound. At a first tie one can use the known simplex
+value for $s$. The pointwise derivative condition in (G3) involves
+different data from these three diagonal entries.
 
 ## Convex and conical maximizers
 
