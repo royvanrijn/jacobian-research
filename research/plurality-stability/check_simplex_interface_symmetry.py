@@ -162,6 +162,125 @@ def explicit_gap_check():
     }
 
 
+def hook_cone_checks():
+    """Exact bounded controls for S52-S61, separate from their universal proof."""
+    def dot(v, w):
+        return sum(a * b for a, b in zip(v, w))
+
+    def swap(v, i, j):
+        w = list(v)
+        w[i], w[j] = w[j], w[i]
+        return w
+
+    def wedge(v, w):
+        return [v[i] * w[j] - v[j] * w[i]
+                for i, j in itertools.combinations(range(len(v)), 2)]
+
+    def symmetric(v, w):
+        return [v[i] * w[j] + v[j] * w[i]
+                for i in range(len(v)) for j in range(i, len(v))]
+
+    def adjacent(v, l):
+        # I - 2*w_l*w_l^T on H12; all selected vectors are integral.
+        assert v[0] == v[1]
+        s = v[0] - v[l]
+        w = list(v)
+        w[0] -= s
+        w[1] -= s
+        w[l] += 2 * s
+        return w
+
+    cases, two_row_cases = [], []
+    wedge_pairs = 0
+    for k in range(3, 8):
+        rays = [[k-m] * m + [-m] * (k-m) for m in range(2, k)]
+        root = [1, -1] + [0] * (k-2)
+        for ray in rays:
+            for l in range(2, k):
+                first = wedge(swap(root, 1, l), swap(ray, 1, l))
+                second = wedge(swap(root, 0, l), swap(ray, 0, l))
+                assert [a+b for a, b in zip(first, second)] == wedge(root, adjacent(ray, l))
+                wedge_pairs += 1
+        for m, ray in enumerate(rays, 2):
+            for j, other in enumerate(rays, 2):
+                assert dot(ray, other) == k * min(j, m) * (k-max(j, m)) > 0
+
+        x = [sum(ray[i] for ray in rays) for i in range(k)]
+        y = [sum((m+1) * ray[i] for m, ray in enumerate(rays)) for i in range(k)]
+        assert x[0] == x[1] and y[0] == y[1]
+        assert all(x[i] > x[i+1] and y[i] > y[i+1] for i in range(1, k-1))
+        terms = []
+        for rest in itertools.permutations(range(2, k)):
+            perm = [0, 1, *rest]
+            z = [y[i] for i in perm]
+            terms.append((dot(x, z), perm, None))
+            for l in range(2, k):
+                terms.append((dot(x, swap(z, 1, l)), perm, l))
+        minimum = min(e for e, _, _ in terms)
+        powers = {e: 1 << (e-minimum) for e, _, _ in terms}
+        matrix = [[0] * (k-2) for _ in range(k-2)]
+        for exponent, perm, l in terms:
+            for m, ray in enumerate(rays):
+                v = [ray[i] for i in perm]
+                v = [2*a for a in v] if l is None else adjacent(v, l)
+                for j in range(k-2):
+                    difference = v[j+1] - v[j+2]
+                    assert difference % k == 0
+                    matrix[j][m] += (difference // k) * powers[exponent]
+        assert all(entry > 0 for row in matrix for entry in row)
+        cases.append({"k": k, "matrix_size": k-2, "positive_entries": (k-2)**2,
+                      "tau": "log(2)", "x_gap_coordinates": [1] * (k-2),
+                      "y_gap_coordinates": list(range(1, k-1))})
+        if k >= 4:
+            q = k-2
+            rays0 = [[0, 0] + [q-m]*m + [-m]*(q-m) for m in range(1, q)]
+            for m, ray in enumerate(rays0, 1):
+                for j, other in enumerate(rays0, 1):
+                    assert dot(ray, other) == q*min(j, m)*(q-max(j, m)) > 0
+                for l in range(2, k):
+                    first = symmetric(swap(root, 1, l), swap(ray, 1, l))
+                    second = symmetric(swap(root, 0, l), swap(ray, 0, l))
+                    assert [a+b for a, b in zip(first, second)] == symmetric(root, ray)
+            matrix0 = [[0]*(q-1) for _ in range(q-1)]
+            for exponent, perm, l in terms:
+                for m, ray in enumerate(rays0):
+                    v = [ray[i] for i in perm]
+                    factor = 2 if l is None else 1
+                    for j in range(q-1):
+                        difference = v[j+2] - v[j+3]
+                        assert difference % q == 0
+                        matrix0[j][m] += factor*(difference//q)*powers[exponent]
+            assert all(entry > 0 for row in matrix0 for entry in row)
+            # Exact exponent identity forcing the ordered residual R_j-R_(j+1).
+            for rest in itertools.permutations(range(2, k)):
+                z = [y[i] for i in [0, 1, *rest]]
+                for j in range(2, k-1):
+                    first = dot(x, swap(z, 1, j))
+                    second = dot(x, swap(swap(z, j, j+1), 1, j+1))
+                    assert first-second == (x[j]-x[j+1])*(z[1]-z[j+1]) > 0
+            if k == 4:
+                # Scalar sign and (2,2) kernels have a strict positive difference.
+                sign_sum = sum((2 if l is None else -2)*parity(perm)*powers[e]
+                               for e, perm, l in terms)
+                assert 0 < sign_sum < matrix0[0][0]
+            two_row_cases.append({"k": k, "matrix_size": q-1,
+                                  "positive_entries": (q-1)**2,
+                                  "ordered_residual_exponent_identity": "passed"})
+
+    # Domain control: the three-cell hook kernel is negative for x=-r2,y=r2.
+    assert 2 - 2 * 2**9 < 0
+    root, ray = [1, -1, 0], [1, 1, -2]
+    assert wedge(root, adjacent(ray, 2)) != wedge(root, [-a for a in ray])
+    return {
+        "wedge_transport_pairs": wedge_pairs,
+        "strict_integer_matrix_controls": cases,
+        "two_row_symmetric_transport_and_matrices": two_row_cases,
+        "four_cell_sign_domination_control": "passed",
+        "outside_chamber_and_wrong_reflection_coefficient_controls": "passed",
+        "scope": "Exact finite exterior/symmetric transport, Gram and ordered-residual exponent identities, selected strictly positive folded matrices for 3<=k<=7, and one exact four-cell sign domination control. Exponentials are exact powers of two after factoring a common positive term. These controls do not certify all x,y,k,rho; the universal pairing, supersolution and spectral arguments S54-S61 remain written mathematics.",
+    }
+
+
 def elementary_half_point_and_reflections():
     """The finite polynomial/rational arithmetic used in S32 and S36."""
     x = Q(93, 100)
@@ -427,6 +546,7 @@ def main():
         "exact_checks": {"characters": character_checks(), "half_correlation_bound": explicit_gap_check(),
                          "elementary_half_point_and_reflections": elementary_half_point_and_reflections(),
                          "higher_cell_reflections": higher_cell_reflection_checks(),
+                         "hook_cone": hook_cone_checks(),
                          "interval_gap": interval_gap_check()},
         "analytic_claims_certified_by_this_script": False,
         "independent_replay": False,

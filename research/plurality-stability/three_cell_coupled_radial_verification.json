@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "command": ".venv/bin/python research/plurality-stability/check_three_cell_coupled_radial.py",
+  "working_directory": "canonical repository root in Ubuntu-24.04 WSL",
+  "environment": {
+    "python": "3.12.3",
+    "python-flint": "0.9.0"
+  },
+  "checker_sha256": "a0e99d609c9c43da756604b7fa7346bba1b95dcbd21a26bc351bb6bb91e62d39",
+  "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
+  "proof_source_sha256": "392bfdb6a9aeb7c89636cc18d0a723f1dabfcf415cc5a72f5a58884342ac83d8",
+  "result": {
+    "status": "pass",
+    "rho": "1/2",
+    "exponents": [
+      0,
+      1,
+      16
+    ],
+    "coefficients": [
+      "-21/34",
+      "1",
+      "2"
+    ],
+    "exact_mean": "0",
+    "panels": 8192,
+    "arb_precision_bits": 100,
+    "angular_rule": "interval Riemann enclosures over every subinterval of [0,2/3]",
+    "numerator_enclosure": [
+      0.04246770917137514,
+      0.04269273290054704
+    ],
+    "denominator_enclosure": [
+      0.02038863476986967,
+      0.02045166944681092
+    ],
+    "numerator_minus_twice_denominator": [
+      0.0015643702774122553,
+      0.0019154633611487425
+    ],
+    "rayleigh_quotient_enclosure": [
+      2.076491072773933,
+      2.093947615474463
+    ],
+    "closure_correction_enclosure": [
+      0.005810135707537683,
+      0.005810135707537685
+    ],
+    "corrected_quadratic_coefficient": [
+      -0.004245765430352803,
+      -0.0038946723461615682
+    ],
+    "exact_gram_controls": {
+      "closing_rational_cases": 4,
+      "nonclosing_control_rejected": true,
+      "bound_and_defect_pairs": [
+        [
+          "30/127",
+          "4/5"
+        ],
+        [
+          "18/65",
+          "4/5"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "30/127",
+          "3947/100"
+        ]
+      ]
+    },
+    "scope": "Scalar radial inequality fails at rho=1/2. The explicit angular-closure correction makes this one profile coefficient negative. Finite Gram controls support the written algebraic lemma; they are not its unrestricted proof. No full-rho Gaussian partition theorem is asserted."
+  },
+  "certified_scope": "At rho=1/2, the exact bounded mean-zero test f=e^(-t)+2e^(-16t)-21/34 violates the scalar positive radial inequality, and the explicit angular-closure correction makes its quadratic coefficient strictly negative.",
+  "analytic_scope": "The all-profile Gram bound and coupled angular inequality are written proofs in DG6; their finite rational controls are not an unrestricted verification. DG7 uses the uniform local expansion of that written bound plus the certified negative coefficient.",
+  "arithmetic_scope": "All infinite radial integrals are reduced analytically to closed quadrant formulas. Arb encloses every angular integrand on each of 8192 intervals, at 100-bit precision; no sampled angular rule or omitted radial tail is used.",
+  "assurance": {
+    "internal_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "limits": "This refutes a sufficient scalar operator estimate, not Gaussian simplex optimality. The comparison at rho=1/2 is restricted to sufficiently small multiples of the explicit circular-mass profile. The unrestricted all-positive-correlation target remains open."
+}

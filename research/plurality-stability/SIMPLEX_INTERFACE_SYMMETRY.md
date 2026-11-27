@@ -12,9 +12,14 @@ The complete proof is in the section on reflected kernels below. For every
 cell count, the ambient-dimension extension reduces exactly to the balanced
 problem in the active space, with an explicit loss in the gap. The higher-cell
 sign and standard kernels also have exact positive determinant and
-permanent formulas on an ordered chamber. These reductions do not supply
-the missing active-space gap for
-$k\ge4$ at arbitrary correlation. The remaining higher-cell blocks and
+permanent formulas on an ordered chamber. In the rotation hook, positivity
+in chamber-gap coordinates and a left/right ground-state argument prove
+the rotational-only kernel and a positive gap at every correlation for
+every $k$. A strict supersolution also settles the $(k-2,2)$ sector for
+all $k\ge4$ and the four-cell sign sector. The four-cell problem reduces
+to one scalar standard-sector inequality. These results do not supply
+the missing full active-space gap
+for $k\ge4$ at arbitrary correlation. The remaining higher-cell blocks and
 global optimality remain open. External review and formal verification
 have not occurred.
 
@@ -183,14 +188,16 @@ $F_{12}$ under $(34)$. Formula (S4) reads
 | $S_4$ type | Multiplicity space | Constraint or known zero mode |
 |---|---|---|
 | $(3,1)$ | $K_+$ | Remove one mass copy |
-| $(2,2)$ | $K_-$ | No geometric zero mode |
-| $(2,1,1)$ | $K_+\oplus K_-$ | Remove one rotation copy |
-| $(1,1,1,1)$ | $K_-$ | First-moment invisible |
+| $(2,2)$ | $K_-$ | Strict gap by (S60) |
+| $(2,1,1)$ | $K_+\oplus K_-$ | Rotation copy; gap off it by (S56) |
+| $(1,1,1,1)$ | $K_-$ | First-moment invisible; strict gap by (S61) |
 
 Each multiplicity space is infinite dimensional. The full operator may
-mix the two branches inside the $(2,1,1)$ multiplicity space. Apart from
-the removed finite dimensional copies, all four types remain possible
-locations of an additional zero mode.
+mix the two branches inside the $(2,1,1)$ multiplicity space. The complete
+hook argument (S52)--(S56) below handles that mixing and excludes every
+additional hook zero mode at every positive correlation. The $(2,2)$
+and sign types are strictly positive by (S60)--(S61). Only the standard
+type remains to be estimated.
 
 ## Interaction sparsity and the sign-sector Hermite floor
 
@@ -766,8 +773,8 @@ tied ordinary global maximizer: the additional-interface-zero-mode
 alternative is now excluded. This remains a global rigidity obligation,
 not a proof of full simplex optimality.
 
-For $k\ge4$, (S4) supplies the precise symmetry blocks but no sign for
-their remaining infinite dimensional parts. The following reductions
+For $k\ge4$, (S4) supplies the precise symmetry blocks. The rotation hook
+is settled below, while the other blocks still require estimates. The following reductions
 separate the ambient-dimension issue, which can be settled for every $k$,
 from the active-space spectral inequality, which remains open.
 
@@ -1014,11 +1021,12 @@ remaining sign-sector assertion is
 
 The operator is compact, self-adjoint and nonnegative as a quadratic
 form, by restriction of the Mehler form. A positive kernel alone gives
-neither this norm bound nor comparison with $a_\rho$. A positive
+neither this norm bound nor comparison with $a_\rho$. The four-cell
+case is proved below by (S61); it remains open here for $k\ge5$. A positive
 supersolution $w$ satisfying
 $\mathcal K_\rho w\le\theta_\rho a_\rho w$ with
-$\theta_\rho<1$ would suffice by the weighted Schur bound; none is
-established here at arbitrary correlation.
+$\theta_\rho<1$ would suffice by the weighted Schur bound; no such
+all-correlation supersolution is established here for $k\ge5$.
 
 In particular (S46) cannot simply inherit the ordinary Weyl-chamber OU
 spectrum. In the coordinates $a=(x_2,x_3,\ldots,x_k)$, the facet metric
@@ -1032,8 +1040,10 @@ semigroup in the facet metric. For $k=3$ the facet is one dimensional
 and the separate pointwise comparisons (S32) supply the needed bridge.
 
 The all-$k$ dimensional part of (S37) is settled by (S42). Its active
-balanced gap for $k\ge4$, including (S48) and the other blocks in (S4),
-is still an open mathematical obligation. Neither a global simplex
+balanced gap for $k\ge4$, including (S48) and the standard and nonhook
+blocks in (S4), is still an open mathematical obligation. The rotation
+hook, two-row moment block and four-cell sign block are settled by
+(S56), (S60) and (S61) below. Neither a global simplex
 inequality nor exclusion of tied maximizers follows from these
 reductions.
 
@@ -1115,8 +1125,376 @@ translation ground state for the row-normalized kernel; they are
 excluded by ordinary mass balance, whereas the squared-difference form
 has the varying weight $a_\rho/\rho$. This is the same mass-versus-weight
 issue identified after (S23). The permanent formula resolves the
-reflection signs, not this weighted Poincare inequality. The higher
-hook and other blocks in (S4) require their own estimates as well.
+reflection signs, not this weighted Poincare inequality. The hook is
+treated next; the other blocks in (S4) require their own estimates as well.
+
+## Every cell count: cone positivity settles the rotation hook
+
+**Hook theorem.** For every $k\ge3$ and every $0<\rho<1$, the complete
+$V_{(k-2,1,1)}$ isotypic part of the active interface form is
+nonnegative. Its kernel is precisely the one geometric rotation copy,
+and it has a positive $L^2$ gap modulo that copy. This includes mixing
+between all multiplicity branches, and uses no maximizing hypothesis.
+For $k=3$ this is the sign sector already treated above.
+
+The useful generalization of a positive scalar ground state is a matrix
+kernel preserving the ordered chamber. Its right ground state is the
+rotation field $x$. A positive Gram matrix supplies a positive left
+ground state as well. Both positivity statements are needed below.
+
+### The complete hook kernel
+
+Put $H=E\cap\{x_1=x_2\}$, $n=(e_1-e_2)/\sqrt2$ and
+$G_0=S_{\{3,\ldots,k\}}$. The minus-eigenspace of $(12)$ in
+$\Lambda^2E$ is exactly $n\wedge H$. Thus signed induction identifies
+the hook multiplicity space with fields $v:F_{12}\to H$ satisfying
+$v(\pi y)=\pi v(y)$ for $\pi\in G_0$, or, equivalently, arbitrary
+$H$-valued fields on $W$. This is the whole multiplicity space, not
+just fields of the form $h(x)x$. For example its scalar speeds are the
+matrix coefficients of $g(n\wedge v(x))$ on the other facets, with a
+fixed vector of $\Lambda^2E$ supplying the representation coordinate.
+The inner product on the multiplicity space is the ordinary Euclidean
+one on $H$, integrated against $\nu_{12}$; an overall positive constant
+in the induced identification cancels from the form and the norm.
+
+For $l\ge3$ define $w_l=(e_1+e_2)/2-e_l\in H$ and
+$C_l=I_H-2w_lw_l^T$. The unnormalized interaction on these equivariant
+fields is the matrix kernel
+
+\[
+ K_{{\rm hook},\rho}(x,y)=\Gamma_\rho(x,y)
+ \left[2e^{\tau x\cdot y}I_H+
+       \sum_{l=3}^k e^{\tau x\cdot(2l)y}C_l\right].
+ \tag{S52}
+\]
+
+To check the coefficient, the adjacent transports $(2l)$ and $(1l)$
+have equal Gaussian kernels on the reference plane. Both have incidence
+coefficient $1$ when the transported edge keeps its orientation.
+For $v\in H$, direct exterior algebra gives
+
+\[
+ (2l)(n\wedge v)+(1l)(n\wedge v)
+                   =n\wedge\bigl(v-2w_l(w_l\cdot v)\bigr).
+\]
+
+Indeed put $a=e_2-e_l=w_l-n/\sqrt2$ and
+$a'=e_1-e_l=w_l+n/\sqrt2$, and expand the two reflections.
+The terms outside $n\wedge H$ cancel. This proves (S52), including
+its coefficient $C_l$, whose eigenvalue along $w_l$ is $-2$.
+Treating $C_l$ as an ordinary orthogonal reflection would be incorrect.
+
+Let $r_m\in H$, $2\le m\le k-1$, have entries $k-m$ in the first
+$m$ positions and $-m$ in the others. Write $V\eta=\sum_m\eta_mr_m$.
+Then
+
+\[
+ (V^{-1}v)_j=(v_j-v_{j+1})/k,\quad 2\le j\le k-1,
+ \qquad
+ (V^TV)_{jm}=k\min(j,m)\bigl(k-\max(j,m)\bigr)>0.
+\]
+
+In particular $V$ carries the positive coordinate cone to $\overline W$.
+After folding equivariant fields from $F_{12}$ to $W$, the kernel in
+these coordinates is
+
+\[
+ \mathcal A_\rho(x,y)=V^{-1}
+   \sum_{\pi\in G_0} K_{{\rm hook},\rho}(x,\pi y)\pi V.
+ \tag{S53}
+\]
+
+### Positivity in chamber-gap coordinates
+
+We prove the pointwise assertion
+
+\[
+       (\mathcal A_\rho(x,y))_{jm}>0
+       \qquad(x,y\in W,\ 2\le j,m\le k-1).
+ \tag{S54}
+\]
+
+The common factor $\Gamma_\rho$ is positive and can be suppressed.
+For each permutation put $z=\pi y$, $v=\pi r_m$ and $b=k-m$.
+Then $z_1=z_2=y_2$, $v_1=v_2=b$, and the remaining $v_i$ take two
+values, $b$ and $-m$, in the same order as the corresponding $z_i$.
+Write $E_0(z)=e^{\tau x\cdot z}$ and
+$E_l(z)=e^{\tau x\cdot(2l)z}$.
+The matrix entry is $1/k$ times the sum of the output differences
+between coordinates $j$ and $j+1$ of
+$2E_0v+\sum_lE_lC_lv$.
+
+First let $j=2$. Put $d=b-v_3\ge0$. The self term together with the
+$l=3$ term is
+$2d(E_0(z)-E_3(z))\ge0$, because
+$x\cdot z-x\cdot(23)z=(x_2-x_3)(z_2-z_3)>0$.
+For each $l\ge4$, the remaining coefficient is $v_l-v_3$.
+Pair $\pi$ with $(3l)\pi$. The coefficient changes sign, while
+
+\[
+ x\cdot(2l)z-x\cdot(2l)(3l)z
+                         =(x_2-x_3)(z_l-z_3).
+\]
+
+The exponential difference therefore has the same sign as $v_l-v_3$;
+each paired contribution is nonnegative. There is a permutation with
+$v_3=-m$, since $m\le k-1$. Its self-minus-adjacent contribution is
+strictly positive. This proves (S54) in row $2$.
+
+Now let $j\ge3$ and put $d=v_j-v_{j+1}$. Pair each permutation with
+$s\pi$, $s=(j,j+1)$. For the self term and each $l\notin\{j,j+1\}$,
+the coefficient is respectively $2d$ and $d$. It changes sign under
+the pairing, and the exponent difference has the sign of
+$(x_j-x_{j+1})(z_j-z_{j+1})$. Thus all these contributions are
+nonnegative. The two exceptional adjacent terms have coefficients
+$D=2b-v_j-v_{j+1}\ge0$ and $-D$, respectively. Their paired sum is
+
+\[
+ D\bigl[E_j(z)-E_{j+1}(sz)+E_j(sz)-E_{j+1}(z)\bigr]\ge0,
+\]
+
+because the exponent differences in these two brackets are
+$(x_j-x_{j+1})(z_2-z_{j+1})$ and
+$(x_j-x_{j+1})(z_2-z_j)$, both strictly positive.
+If $m\ge3$, the remaining coordinates include both values of $v_i$,
+so the self pairing is strict for some permutation. If $m=2$, then
+every remaining $v_i=-2$ and $D=2k>0$, making the exceptional pairing
+strict instead. This proves every entry in (S54). Counting each pair
+twice only inserts the same positive factor $1/2$ in these sums.
+
+### The rotation field fixes the entire top eigenspace
+
+Set $J=V^TV$ and work on $L^2(W,\nu_{12};\mathbb R^{k-2})$, first
+with its equivalent $J$ inner product. The normalized operator is
+$\mathcal T=a_\rho^{-1/2}\mathcal A_\rho a_\rho^{-1/2}$.
+It is compact and self-adjoint in this inner product, by (B7) and the
+original symmetric interface form. In ordinary coordinate inner
+product, $\mathcal T^*J=J\mathcal T$.
+
+Rotational equivariance gives $K_{{\rm hook},\rho}x=a_\rho x$.
+For completeness, differentiating the rotated indicators gives
+$\delta 1_{T_i}=\lambda_i^{f^\Omega}$, whereas commutation of OU with
+rotations gives
+$\delta U_{\rho,ij}=-(\Omega x)\cdot\nabla U_{\rho,ij}
+=a_{\rho,ij}f^\Omega_{ij}$ on the facet. Thus
+$\mathsf K_\rho f^\Omega=a_\rho f^\Omega$ without a mass
+restriction. In hook multiplicity coordinates this is the claimed
+identity for $x$.
+Consequently
+
+\[
+ \psi(x)=\sqrt{a_\rho(x)}V^{-1}x>0,\qquad
+ \chi(x)=J\psi(x)>0,\qquad
+       \mathcal T\psi=\psi,\quad\mathcal T^*\chi=\chi.
+ \tag{S55}
+\]
+
+Both fields are in $L^2$, and every entry of $J$ is positive. The
+left ground state cannot be omitted: the gap-coordinate basis is not
+orthogonal, so entrywise positivity is not itself self-adjointness in
+the ordinary coordinate norm.
+
+Here is the required positive-operator argument directly. For every
+nonzero $L^2$ eigenvector $u$ with eigenvalue $\lambda$, positivity of
+the matrix kernel and Tonelli's theorem give
+
+\[
+ |\lambda|\int\chi\cdot|u|\,d\nu_{12}
+ \le\int\chi\cdot\mathcal T|u|\,d\nu_{12}
+ =\int\chi\cdot|u|\,d\nu_{12}.
+\]
+
+The common integral is finite and strictly positive by Cauchy--Schwarz
+and (S55). Hence $|\lambda|\le1$. Compactness accounts for every
+nonzero spectral value. If a real eigenvector has eigenvalue $1$,
+equality in the triangle inequality, together with the strictly
+positive entries (S54), forces all its components to have one common
+sign almost everywhere. Two independent eigenvectors at $1$ would
+give a nonzero one orthogonal to $\psi$ in the $J$ inner product.
+That is impossible for a one-sign field, since $J\psi>0$. The
+eigenvalue $1$ is therefore simple.
+
+Let $\delta_{k,\rho}=1-\sup\bigl(\{0\}\cup
+\operatorname{spec}(\mathcal T|_{\psi^{\perp_J}})\bigr)>0$.
+Conjugating back and using $a_\rho/\rho\ge\ell/\sigma$ proves
+
+\[
+ \boxed{\displaystyle
+ \mathfrak q_\rho(f)\ge\frac{\ell}{\sigma}\delta_{k,\rho}
+             \operatorname{dist}(f,\mathcal R_k)^2
+       \quad\text{on the entire rotation hook}.}
+ \tag{S56}
+\]
+
+The multiplicity ground state $v(x)=x$ supplies exactly one
+$\Lambda^2E$ copy in the full isotypic space, namely geometric
+rotations. This proves the hook theorem. The constant is a proved
+positive spectral constant, not an evaluated explicit function of
+$k,\rho$. The argument is a matrix version of the positive
+ground-state mechanism behind (S18). The two-row block and four-cell
+sign block are treated next; the standard and remaining higher-cell
+nonhook bounds require further arguments.
+
+## Every cell count: a strict supersolution for the two-row moment sector
+
+**Two-row theorem.** For every $k\ge4$ and every $0<\rho<1$, the
+complete $V_{(k-2,2)}$ isotypic part has a strictly positive $L^2$ gap.
+It has no zero modes. The argument uses the hook identity, but does not
+assume positivity in the standard sector.
+
+Put $q=k-2$ and
+$H^0=\{v\in E:v_1=v_2=0,\ \sum_{l=3}^kv_l=0\}$.
+In $\operatorname{Sym}^2E=\mathbf1\oplus E\oplus V_{(k-2,2)}$,
+the $(12)$ minus-space is $n\odot H$. Its standard summand is the
+line $n\odot p$, where $p=(e_1+e_2)/2-\mathbf1/k$, and its
+orthogonal complement is $n\odot H^0$. Here $u\odot v$ denotes
+$uv^T+vu^T$. To check the standard line, the equivariant map
+$z\mapsto P_E\operatorname{diag}(z)P_E$ sends $n$ to $n\odot p$.
+Thus the entire two-row multiplicity space consists of $H^0$-valued
+$G_0$-equivariant fields on $F_{12}$, or arbitrary fields on $W$.
+
+The symmetric, rather than exterior, transport identity is
+
+\[
+ (2l)(n\odot v)+(1l)(n\odot v)=n\odot v.
+\]
+
+It follows by expanding the same two reflections as in (S52). The
+quadratic $a\odot a$ terms now contribute and cancel the
+$-2n\odot w_l(w_l\cdot v)$ term. Consequently the full-reference
+kernel in this sector is simply
+
+\[
+             K_{{\rm std},\rho}(x,y)I_{H^0}.
+ \tag{S57}
+\]
+
+For $1\le m\le q-1$, let $s_m\in H^0$ have first two entries zero,
+the next $m$ entries $q-m$, and the rest $-m$. Let $V_0$ have these
+columns and $J_0=V_0^TV_0$; its entries are
+$q\min(j,m)(q-\max(j,m))>0$.
+The folded kernel
+
+\[
+ \mathcal A^{(2)}_\rho(x,y)=V_0^{-1}
+       \sum_{\pi\in G_0}K_{{\rm std},\rho}(x,\pi y)\pi V_0
+                   \quad\text{is strictly entrywise positive.}
+ \tag{S58}
+\]
+
+Here is the additional pairing needed to prove this assertion. As before,
+put $z=\pi y$, $v=\pi s_m$, and consider an output difference between
+coordinates $j,j+1$, $j\ge3$. Every coefficient in (S57) is
+$d=v_j-v_{j+1}$. Pair with $s\pi$, $s=(j,j+1)$.
+The self term and the terms $l\notin\{j,j+1\}$ are nonnegative by
+the same ordered-exponential comparison as in (S54). For the two
+exceptional terms the paired contribution is
+$d\Phi$, where
+$\Phi=E_j(z)+E_{j+1}(z)-E_j(sz)-E_{j+1}(sz)$.
+Choose the member of the pair with $z_j>z_{j+1}$, so $d\ge0$.
+Writing
+
+\[
+ \alpha=\tau(x_2-x_j)\ge0,\quad
+ \beta=\tau(x_j-x_{j+1})>0,\quad
+ u=z_2-z_j>0,\quad t=z_j-z_{j+1}>0,
+\]
+
+and dividing by $E_j(sz)>0$, direct expansion gives
+
+\[
+ \frac{\Phi}{E_j(sz)}
+ =(e^{\alpha t}-1)(e^{\beta t}-e^{-\beta u})
+                          +(e^{\beta t}-1)>0.
+\]
+
+The self term is strict for some permutation for every input ray
+$s_m$, because both values of its remaining coordinates occur.
+This proves (S58) for all $k$.
+
+Let $P_0$ be orthogonal projection onto $H^0$ and put
+$v_0(x)=P_0x$. Projecting the rotation identity in (S52) onto $H^0$
+gives the exact strict-supersolution residual
+
+\[
+ a_\rho v_0-K_{{\rm std},\rho}v_0
+       =2\sum_{l=3}^k\left(e_l-\frac1q\sum_{r=3}^ke_r\right)R_l(x),
+ \qquad
+ R_l(x)=\int_{F_{12}}\Gamma_\rho(x,y)
+    e^{\tau x\cdot(2l)y}(y_2-y_l)d\nu_{12}(y).
+ \tag{S59}
+\]
+
+For $j\ge3$, substitute $(j,j+1)y$ into $R_{j+1}$. The difference
+of the two exponents is
+$\tau(x_j-x_{j+1})(y_2-y_{j+1})>0$ in the facet interior.
+Both integrals then have the same nonnegative factor $y_2-y_j$.
+It follows that $R_j(x)>R_{j+1}(x)$ for every $x\in W$.
+Thus every gap-coordinate component of (S59) is strictly positive.
+
+Normalize $\mathcal A^{(2)}$ by $a_\rho^{-1/2}$ as before, obtaining
+$\mathcal T_2$, self-adjoint in the $J_0$ inner product. The field
+$\psi_2=\sqrt{a_\rho}V_0^{-1}v_0$ is strictly positive, and (S59)
+says $\mathcal T_2\psi_2<\psi_2$ componentwise. Therefore
+$\chi_2=J_0\psi_2>0$ satisfies
+$\mathcal T_2^*\chi_2<\chi_2$, since every entry of $J_0$ is positive.
+All these fields are in $L^2$, by the Gaussian first-moment bounds.
+For a nonzero eigenvector $u$ with eigenvalue $\lambda$, the direct
+argument used after (S55) now gives the strict inequality
+
+\[
+ |\lambda|\int\chi_2\cdot|u|d\nu_{12}
+ \le\int\mathcal T_2^*\chi_2\cdot|u|d\nu_{12}
+ <\int\chi_2\cdot|u|d\nu_{12}.
+\]
+
+Hence $|\lambda|<1$ for every nonzero spectral value. Compactness
+gives $\delta^{(2)}_{k,\rho}=1-\sup\operatorname{spec}\mathcal T_2>0$,
+and
+
+\[
+ \boxed{\displaystyle
+ \mathfrak q_\rho(f)\ge\frac{\ell}{\sigma}
+       \delta^{(2)}_{k,\rho}\|f\|^2
+              \quad(f\text{ in }V_{(k-2,2)}).}
+ \tag{S60}
+\]
+
+These are positive spectral constants; their numerical values have not
+been evaluated. This theorem treats the entire two-row block, not only
+the finite-dimensional part seen by the moment map.
+
+## Four cells: domination settles the remaining sign block
+
+For $k=4$, $H^0$ is a line and (S57) acts on functions odd under
+$(34)$. Let $S=\Gamma_\rho\sum_{\pi\in G_0}\operatorname{sgn}(\pi)
+e^{\tau x\cdot\pi y}$ and
+$U=\Gamma_\rho\sum_{\pi\in G_0}\operatorname{sgn}(\pi)
+\sum_{l=3}^4e^{\tau x\cdot(2l)\pi y}$.
+The two-row and sign scalar kernels on $W$ are respectively $2S+U$
+and $2S-2U$. The exceptional pairing just proved, with $j=3$,
+shows $U>0$ for $x,y\in W$. Consequently
+
+\[
+        0<\mathcal K_{{\rm sign},\rho}
+                  <\mathcal K_{(2,2),\rho}\quad\text{on }W\times W.
+ \tag{S61}
+\]
+
+The positive function $w(x)=x_3-x_4$ is a strict supersolution for
+the larger kernel by (S59), and therefore for the sign kernel too.
+After normalization by $a_\rho^{-1/2}$ it is a positive strict left
+supersolution as well, since this scalar kernel is symmetric.
+The same eigenvalue argument proves (S48) for $k=4$: its sign sector
+has no zero modes and has a strictly positive $L^2$ gap for every
+$0<\rho<1$. No claim about sign sectors for $k\ge5$ follows from
+this four-cell domination.
+
+Combining (S56), (S60) and (S61), the **entire four-cell active-space
+interface assertion is equivalent to the single standard-sector
+inequality (S51)**. A proof of that inequality, with a positive gap,
+would give the full four-cell analogue of (S37) in every ambient
+dimension by (S42). That scalar inequality is not proved here.
 
 ## Monotonicity and the other global obligations
 
@@ -1141,10 +1519,13 @@ $\Delta_\rho/\arccos\rho$ by a balanced three-slab partition.
 
 The remaining targets are distinct:
 
-* Prove the active-space higher-cell gap in (S4). The sign block has the
-  positive determinant kernel (S46), with the precise remaining norm
-  bound (S48); the standard block has the positive kernel (S49)--(S50)
+* Prove the active-space higher-cell gap in (S4). For $k\ge5$ the sign
+  block has the positive determinant kernel (S46), with the remaining
+  norm bound (S48); the standard block has the positive kernel (S49)--(S50)
   and the unresolved weighted Poincare inequality (S51).
+  The complete rotation hook has the all-correlation gap (S56).
+  The $(k-2,2)$ block has the strict gap (S60), and the four-cell sign
+  block is settled by (S61). In four cells only (S51) remains.
   Equation (S42) then handles every ambient dimension.
   Equation (S23) and the full three-cell interface problem are settled
   by (S29)--(S38).
@@ -1173,6 +1554,15 @@ polynomial bounds (S32)/(S36), and the interval inequalities used in
 coset sum (S44) with the determinant (S46) as exact formal exponential
 sums for $3\le k\le8$, including omitted-term and wrong-sign controls,
 and verifies the standard-sector permanent identity (S49)--(S50).
+It checks the adjacent bivector identity and chamber Gram matrix for
+$3\le k\le7$, and exact positive folded hook matrices at one stated
+pair of chamber points for each such $k$, with $\tau=\log2$ so every
+exponential is an exact power of two. It rejects the wrong reflection
+coefficient and a point outside the ordered cone. These are bounded
+controls; it also checks the symmetric transport, two-row Gram and
+ordered-residual exponent identities, selected positive two-row matrices,
+and one exact four-cell sign domination. The universal pairing,
+supersolution and spectral arguments are written proofs.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

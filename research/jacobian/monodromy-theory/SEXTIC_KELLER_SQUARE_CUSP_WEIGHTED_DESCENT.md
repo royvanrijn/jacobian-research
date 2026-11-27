@@ -897,3 +897,709 @@ it must be repeated. The degree-three coefficient
 of \(y^2\) in \(g\) then vanishes twice at zero
 and vanishes at every other root, so at most one
 other root occurs.
+
+
+## Inversion when both lower axial components are affine
+
+**Theorem SexticKellerSquareCuspZeroETwoAffineInversion.**
+In the square-cusp sector \(e=0,k\ne0\), any completion
+in which the second component is also affine in \(z\)
+is invertible.
+
+In this case write the highest axial tuple as
+\((a_3(x,y)z^3,b(x,y)z,c(x,y)z)\). Its coefficient
+bounds are those of the preceding theorem. In particular
+\(a_3\) has \(y\)-degree at most one, \(b=x^5+\cdots\),
+and \(c=kx^4+\cdots\), where all the omitted terms
+have strictly smaller \((2,3)\)-weight.
+Fixing \(c z\) in the highest tuple makes
+\[
+                    u=b/c,\qquad v=a_3/c^3
+\]
+algebraically dependent by the leading determinant.
+Over \(k(y)\), the pole order of \(u\) at \(x=\infty\)
+is one, and the zero order of \(v\) there is nine.
+The place below infinity has ramification index one.
+No finite place lies above it, since the numerator of
+\(v\) has \(x\)-degree three, and a finite zero would
+have order at least nine. It follows that
+\(k(y)(u,v)=k(y)(x)\).
+
+Over the algebraic closure, specialize generic \(y\)
+to embed \(k(u,v)\) in a rational field, as before.
+Take a parameter with simple pole at the place under
+\(x=\infty\). Over \(k(y)\) it is affine in \(x\), and
+the leading coefficient of \(u\) at infinity,
+\(1/k\), makes the affine slope a scalar. After scaling,
+the parameter is \(x+s(y)\). The constant Laurent
+coefficient of \(u\) at infinity involves only
+\([x^4]b\) and \([x^3]c\), which are scalars by the
+\((2,3)\)-bounds. It therefore makes \(s(y)\)
+constant. Thus \(u,v\) are univariate in \(x\).
+Since \(a_3=v c^3\) has \(y\)-degree at most one,
+\(c\) must be univariate, and so must \(b=uc\).
+
+Now write \(B=b(x)z+g(x,y)\) and \(C=c(x)z+h(x,y)\).
+Choose a generic nonzero constant \(\lambda\) and use the
+scalar \(C+\lambda B\). Its coefficient \(c+\lambda b\)
+has degree five. A repeated root outside the common
+roots of \(b,c\) must be a critical point of the
+nonconstant rational function \(c/b\). This excludes
+only finitely many \(\lambda\). At a common root of
+\(b,c\), the restrictions of \(g,h\) cannot both be
+constant, since then \(dB,dC\) would be proportional
+on that whole plane. At each of these finitely many
+roots, avoid the value of \(\lambda\) for which the
+restriction of \(h+\lambda g\) is constant, if there
+is one. For the resulting scalar the normal-residue
+proposition gives an affine restriction with nonzero
+slope at every root of its coefficient.
+
+The parallel-fibre coordinates used above now apply.
+The \((2,3)\)-weight bound of fourteen on \(h+\lambda g\)
+permits a \(y^4\) term only with a scalar coefficient,
+which vanishes at every root of the degree-five
+coefficient and is therefore zero. The \(x\)-degrees
+of the coefficients of \(y^3,y^2,y,1\) are at most
+two, four, five and six, respectively. Hence the inverse
+coordinates on each fibre have degree at most fifteen,
+and the two restricted outputs have degree at most
+ninety. The planar bound and the same fibrewise
+injectivity argument give inversion and descend it to \(k\).
+
+
+## The generic-fibre residue in the quadratic-middle case
+
+**Theorem SexticKellerSquareCuspZeroEQuadraticMiddleInversion.**
+In the square-cusp sector \(e=0,k\ne0\), any completion
+with second component quadratic in \(z\) is invertible.
+
+Suppose the completion is noninvertible.
+Use the frame from the affine reduction, writing
+\[
+ A=x^3z^3+A_2z^2+A_1z+A_0,\qquad
+ B=\sigma x^2z^2+B_1z+B_0,\qquad C=a(x)z+h(x,y).
+\]
+The constant restriction at zero has \(C_x(0,y,z)\)
+a nonzero constant and \(C_y=C_z=0\) there. Hence the
+restrictions of \(A,B\) to \(x=0\) are a planar Keller
+pair, with \(z\)-degrees at most two and one. The proof
+of the mixed-sector inversion shows that either
+\(B_1(0,y)=0\) and \(B_0(0,y)\) is affine with nonzero
+slope, or \(B_1(0,y)\) is a nonzero constant and on
+that plane \(A=H(B)+\ell y+r\). In the latter case
+\(\deg_y A(0,y,0)=6\) forces \(H\) quadratic and
+\(B_0(0,y)\) cubic, since \(\deg H\le2\) and
+\(\deg_y B_0(0,y)\le4\).
+
+The \(y^4\)-coefficient of \(B_0\) and the \(y^3\)-coefficient
+of \(B_1\) are scalars by the \((2,3)\)-bounds, so both
+vanish from this plane calculation. Write \(h=h_2(x)y^2+
+h_1(x)y+h_0(x)\): there is no \(y^3\) term since its
+coefficient has degree at most one and vanishes twice
+at zero by the constant-restriction condition.
+The polynomial \(h_2\) has degree three with highest
+coefficient \(k\), and \(x^2\mid h_2,h_1\).
+
+From the preceding affine reduction,
+\(B_1/x-2\sigma A_2/(3x^2)\) is univariate.
+The \(y^2\)-coefficient of \(B_1\) has degree at most
+one in \(x\), and vanishes at zero. Its \(x\)-term
+is \(2\sigma x\), by the identity with \(A_2\), whose
+leading \(y^2\)-coefficient is \(3x^2\). Thus
+\[
+       [y^2]B_1=2\sigma x,\qquad [y^2]A_2=3x^2,
+                    \qquad [y^3]A_2=0 .
+\]
+Also \([y^4]A_1=3x+\delta\) for a scalar \(\delta\).
+
+On the generic fibre \(C=t\), put \(z=(t-h)/a\).
+The two resulting Laurent-rational polynomials in
+\(x,y\) have bracket \(\pm\kappa/a(x)\).
+Their \(y^6\)-coefficient in \(A\) and \(y^4\)-coefficient
+in \(B\) are respectively
+\[
+    (1-xh_2/a)^3-\delta h_2/a,\qquad
+                 \sigma (xh_2/a)(xh_2/a-2).
+\]
+These are their largest possible \(y\)-degrees.
+At \(x=\infty\), the first coefficient tends to zero
+and the second tends to \(-\sigma\ne0\). If the first
+is nonzero, the leading \(y\)-bracket requires the
+fourth power of the first coefficient divided by the
+sixth power of the second to be a nonzero constant
+in \(x\). This contradicts its limit. Thus the first
+is zero identically. Since \(h_2/a\sim 1/x\), comparison
+at infinity gives \(\delta=0\), and then \(a=xh_2\).
+In particular \(x^3\mid a\), and the \(y^4\)-coefficient
+of the fibre polynomial \(B\) is exactly \(-\sigma\).
+
+The scalar residue method used in the
+[parallel-coefficient argument](SEXTIC_KELLER_PARALLEL_COEFFICIENT_SCALAR.md#reduction-to-quadratic-mates)
+now makes \(dx/a(x)\) rationally exact. Explicitly,
+on the fixed \(C\)-fibre the identity
+\[
+ \partial_x(A B_y B^{-1/4})-\partial_y(A B_x B^{-1/4})
+                     =\{A,B\}_{x,y} B^{-1/4}
+\]
+holds in the formal Laurent series at \(y=\infty\).
+The \(y^{-1}\)-coefficient of \(B^{-1/4}\) is a
+nonzero scalar, and a \(y\)-derivative has zero
+\(y^{-1}\)-coefficient. Taking this coefficient
+therefore gives a primitive of \(dx/a(x)\).
+A nonzero root of the quartic \(a\) would be simple,
+because \(x^3\mid a\), and would give a nonzero
+residue. Hence \(a=kx^4\) and \(h_2=kx^3\), giving
+\[
+        C=kx^3(xz+y^2)+h_1(x)y+h_0(x),\qquad x^2\mid h_1.
+ \tag{2}
+\]
+
+
+To finish, give \(x,y\) weights \((-2,3)\) on the
+generic fibre (2), and put \(\theta=(t-h_0(0))/k\ne0\).
+Since \(x^2\mid h_1\), substituting for \(z\) gives
+\[
+    (xz+y^2)_*=\theta x^{-3},\qquad \deg_w z\le8 .
+\]
+Indeed \(xz+y^2=(t-h_0-h_1y)/(kx^3)\), whose numerator
+has weight zero and leading term \(t-h_0(0)\).
+The identities already proved give
+\[
+\begin{aligned}
+ A-P^3&=(A_2-3x^2y^2)z^2+(A_1-3xy^4)z+(A_0-y^6),\\
+ B-\sigma P^2&=(B_1-2\sigma xy^2)z+(B_0-\sigma y^4).
+\end{aligned}
+\]
+The coefficient of \(y\) in \(A_2-3x^2y^2\)
+is divisible by \(x^2\), since it equals
+\((3x/(2\sigma))[y]B_1\) and \(B_1(0,y)\) is
+constant. Its constant coefficient is polynomial,
+and it has no higher \(y\)-term. Thus the three
+terms of \(A-P^3\) have weights at most \(16,17,15\),
+respectively. The linear-in-\(y\) part of
+\(B_1-2\sigma xy^2\) is divisible by \(x\);
+this coefficient of \(z\) therefore has weight at
+most one, and \(B_0\) has \(y\)-degree at most three.
+Consequently the highest forms of the two Laurent
+polynomials on the generic fibre are
+\[
+             A_*=\theta^3 x^{-9},\qquad
+             B_*=\sigma\theta^2 x^{-6}-\sigma y^4.
+\]
+Their bracket is \(36\sigma\theta^3x^{-10}y^3\) of
+weight twenty-nine, so it is the highest bracket of
+the fibre polynomials. The required bracket
+\(\pm\kappa/(kx^4)\) has weight eight. This proves the
+contradiction and settles the quadratic-middle case.
+
+**Corollary SexticKellerSquareCuspNonzeroKInversion.**
+Every characteristic-zero sextic Keller map in the
+cubic-outer square-cusp frame with \(k\ne0\) in the
+\((2,3,4)\) reduction is invertible.
+
+For \(e\ne0\) this is the mixed-sector inversion.
+For \(e=0\) the preceding reduction makes the third
+output affine, and the two cases according to the
+\(z\)-degree of the second output are settled above.
+
+
+## Inversion at zero \(k\) and nonzero \(e\)
+
+**Theorem SexticKellerSquareCuspZeroKNonzeroEInversion.**
+Every characteristic-zero sextic Keller map in the
+cubic-outer square-cusp \((2,3,4)\) frame with
+\(k=0\) and \(e\ne0\) is invertible.
+
+Use \(A,B,C\), \(C^\flat=C-eA^{2/3}\), and
+\(D=(C^3-e^3A^2)/(3e^2)\) as in the preceding
+axial argument. We first extend its pole comparison
+to a leading field that contains \(x^2\).
+
+### Lifting \(x^2\) at a transverse tie
+
+Write \(T=xz\) and \(S=x^2\).
+Suppose that at weights \((2,3,w)\), \(w>4\), \(A_*=T^3\),
+\(C_*=eT^2\), and the two binary forms \(B_*,(C^\flat)_*\)
+have the shape
+\[
+ T x^4+H(T)+b_0T^m/x^u,\qquad G(T,x)+c_0T^n/x^v,
+ \tag{3}
+\]
+where \(B_*\) has weight \(w+10\), \(H,G\) are
+polynomials, \(m,n\ge0\), and \(u,v>0\) when the
+corresponding coefficient is nonzero.
+In the applications below, the field of the four
+polynomial forms \(A_*,B_*,C_*,D_*\) is either
+\(k(T,x)\) or \(k(T,S)\). In the second case the displayed
+terms are even in \(x\), so \(G\) is polynomial in \(T,S\).
+In both cases (3) forces \(b_0=c_0=0\).
+
+For the proof use the first increase of the weight \(s\)
+of \(y\) that ties in any of the four forms, as in the
+[axial pole exclusion](#axial-pole-exclusion-with-two-nonzero-coefficients).
+It occurs by \(s\le3(w+2)\), since otherwise the original
+three outputs would all be independent of \(y\).
+If \(d\) is the weight of \((C^\flat)_*\), then \(D_*\)
+has weight \(4(w+2)+d\). The expected weights of
+the brackets \((A,B,D)\) and \((B,C,D)\) exceed those
+of their actual values by \(3w+14+d-s>0\)
+for the positive \(d\) used here. The other two
+three-output leading brackets vanish as before.
+Thus specialization at \(y=0\) gives an isomorphism
+of the new and old binary image rings.
+The lift of \(T\) is polynomial by its cube, and
+it is squarefree because it is \(xz+f(x,y)\),
+with \(f\) containing no \(z\).
+
+In the first field case a pole of the lift of \(x\)
+would give a unique pole of \(T x^4\) in the second
+output, so \(x\) lifts identically by weight two.
+In the square-field case the corresponding argument
+for \(T S^2\) gives a polynomial lift of \(S\). Its
+only possible change is \(x^2+\nu y\) at \(s=4\).
+If \(\nu\ne0\), that prime does not divide the lift
+of \(T\), since the latter's \(z\)-coefficient is \(x\).
+Any nonzero polar term in \(B_*\) or \(D_*\) would
+then have a pole on this prime. So the lift of \(S\)
+is \(x^2\). In either case a nonzero polar term forces
+\(x\mid T'\) for the lifted \(T'\), by the same
+comparison on \(x=0\). The resulting polynomial
+\(Z=T'/x\) has highest weight \(w\) and specializes
+to \(z\). Its triangular source shear removes the tie.
+As before only finitely many shear weights
+\(2i+sj=w\) with \(j>0,\ s>3\) are possible, proving
+the assertion.
+
+For the field calculations in (3), we will use the
+degree at the place below \(x=\infty\), over \(k(T)\).
+With pole orders four and either six or two there,
+the ramification index is at most two. Any other
+pole of the first function at zero with order one or
+three cannot lie above the same place, whose pole
+order for that function is four or two. If the
+degree is two, its involution must preserve infinity
+and the only other possible pole of either function,
+at zero. This involution is \(x\mapsto -x\).
+In particular an odd term excludes degree two when
+there is such a finite pole. We also use directly
+that the normalized field is \(k(T,S)\) when \(S^2\)
+and a nonzero odd function of \(S\) are given.
+
+### Increasing the axial weight
+
+At \((2,3,4)\) use the coefficient notation
+\[
+\begin{aligned}
+ A &=\theta z^4+(x^3+bxy+cx^2+dy+fx+g_0)z^3
+                              +A_2z^2+A_1z+A_0,\\
+ B &=\beta z^3+(\alpha xy+\sigma x^2+\tau y+\lambda x+\mu)z^2
+                              +B_1z+B_0,\\
+ C &=(e x^2+\eta y+\xi x+\chi)z^2+C_1z+C_0 .
+\end{aligned}
+\]
+Here the \((2,3)\)-highest parts of \(A_2,A_1,A_0\)
+are \(3x^2y^2,3xy^4,y^6\), those of \(B_1,B_0\)
+are \(x^5,x^4y^2\), and those of \(C_1,C_0\) are
+\(2exy^2,x^6+ey^4\). All lower ordinary terms
+satisfy the strict weight bounds from the
+\((2,3,4)\)-reduction.
+
+Increase the \(z\)-weight to \(9/2\). The highest
+part of \(C^\flat\) is \(x^6+(\eta-2eb/3)yz^2\),
+so fixing \(T,B_*=Tx^4\) gives \(\eta=2eb/3\).
+At \(w=14/3\) the only possible correction to \(x^6\)
+is \(-2e\theta z^3/(3x)\), from the \(z^4\)-term
+of \(A-P^3\) in the linear binomial term
+\(-2e(A-P^3)/(3P)\).
+If it is present, \(T, S^2\), and
+\(S^3-2e\theta T^3/(3S^2)\) generate \(k(T,S)\).
+The pole comparison gives \(\theta=0\).
+
+At \(w=5\), denote by \(s_0\) the coefficient of
+\(y^3z^2\) in \(A_2z^2\). The weight-deficit-one
+and weight-deficit-two terms of \(A-P^3\) from
+its top weight twenty-one are \(bxy z^3\) and
+\(cx^2z^3+s_0y^3z^2\).
+Using the linear and quadratic binomial terms,
+and expanding \(1/P\) around \(1/T\), gives
+\[
+ \begin{aligned}
+ B_*&=T x^4+\beta z^3+\alpha xy z^2,\\
+ (C^\flat)_*&=x^6+(\xi-2ec/3)xz^2+\gamma_0 x^2 y z
+          -\tfrac{2e}{3}(s_0-b)y^3z/x
+          +\tfrac{e b^2}{9}y^2z^2/x^2,
+ \end{aligned}
+\]
+where \(\gamma_0=[x^2y]C_1\).
+If \(\alpha\ne0\), fix \(T,B_*\) and solve for \(y\).
+In decreasing order, the coefficients of the third,
+second and first powers of \(B_*\) in \((C^\flat)_*\)
+would depend on nonzero powers \(x,x^{-2},x^2\),
+respectively. Constancy on this level forces them
+all to vanish. The remaining expression is
+nonconstant in \(x\) since it has the \(x^6\) term,
+a contradiction. If \(\alpha=0\) the free \(y\)
+directly forces the three coefficients to vanish.
+Thus \(\alpha=\gamma_0=b=s_0=\eta=0\).
+The remaining poles are \(\beta T^3/x^3\) in the
+second output and \((\xi-2ec/3)T^2/x\) in the
+normalized third. If either occurs, the pole order
+argument gives \(k(T,x)\), and (3) excludes both.
+In particular \(\xi=2ec/3\).
+
+The coefficient \(a_3=[z^3]A\) is now
+\(x^3+cx^2+dy+fx+g_0\), and \(A\) has \(z\)-degree
+three. Use the Laurent expansion
+\[
+ C^\flat=R_2 z^2+R_1z+R_0+\cdots,\quad
+ R_2=[z^2]C-e a_3^{2/3},\quad
+ R_1=C_1-\tfrac{2e}{3}A_2a_3^{-1/3}.
+\]
+Powers of \(a_3\) are expanded from \(x^3\).
+The \((2,3)\)-highest part of \(R_0\) is \(x^6\):
+the leading terms from \(A_1,A_2\) contribute
+\(2ey^4-ey^4=ey^4\) in \(eA^{2/3}\).
+The negative powers of \(z\) have weight less than
+twelve for \(w>4\), by their \((2,3,4)\) bounds.
+Also \(R_1\) has \((2,3)\)-weight at most six:
+the weight-eight terms cancel, and the weight-seven
+possibility \(x^2y\) was excluded at weight five.
+For this last bound the only weight-nine term
+allowed in \(A_2-3x^2y^2\) was \(s_0y^3\), now zero.
+Both \(R_1\) and its subsequent expansions have
+\(y\)-degree at most two once \(d=0\).
+
+At \(w=11/2\) the weight-one term \(-2ed\,y/(3x)\)
+in \(R_2\) would give a \(y\)-dependent term in
+\((C^\flat)_*\) while \(A_*,B_*\) fix \(x,z\).
+Thus \(d=0\). At \(w=6\), the second form is
+\(Tx^4+\sigma T^2\). In the third the possible
+term proportional to \(y^2z\) again vanishes,
+leaving \(x^6+\gamma x^3z+[x^0]R_2\, z^2\).
+With \(S=x^2\) these give
+\(TS^2+\sigma T^2,\ S^3+\gamma T S+[x^0]R_2\,T^2/S\),
+which recover \(S\). Therefore (3) gives \([x^0]R_2=0\).
+Subtract \((\sigma/e) C\) from the second output
+to cancel its \(x^2z^2\) term. This target shear
+does not affect its leading \(z\)-coefficient \(x^5\)
+in weights \((2,3)\).
+
+If \(\gamma\ne0\), at \(w=7\) the leading normalized
+third output is \(\gamma T x^2\), forcing the possible
+\(yz^2\) term of the second output to vanish.
+At \(w=8\), the two forms at fixed \(T\) are
+\[
+ T x^4+b_1T^2/x,\qquad \gamma T x^2+[x^{-1}]R_2\,T^2/x^3.
+\]
+Nonzero poles give the full field \(k(T,x)\) by
+the degree and involution test, and are eliminated
+by (3). At \(w=10\) the two forms at fixed \(T\)
+are \(TS^2+b_2T^2/S,\ \gamma T S+[x^{-2}]R_2\,T^2/S^2\).
+They recover \(S\) by pole orders two and one
+at infinity and the bound of one for the other
+pole of the second output. Both poles are again
+eliminated.
+
+If \(\gamma=0\), at \(w=7\) the normalized third
+output can have an \(xy z\) term from the
+weight-five part of \(R_1\). At fixed \(T\) the
+two \(y\)-coefficients in the second and normalized
+third forms are proportional to \(x^{-2}\) and
+\(1\), respectively. The same bracket comparison
+as at weight five eliminates both. A correction
+\([x^{-1}]R_2\,T^2/x^3\) would then give the full
+field and a pole, so it vanishes too.
+Translate \(x\) to center \(a_3\); the preceding
+vanishings \([x]R_2=[x^0]R_2=[x^{-1}]R_2=0\)
+give \(a_3=x^3+F x\), as in the mixed-sector
+calculation. This translation preserves the
+weighted bounds and the identities of highest forms.
+At \(w=8\) the normalized third form is
+\[
+ x^6+\gamma_2 x^2z+\epsilon_2 y^2z/x+
+                                [x^{-2}]R_2\,z^2/x^2.
+\]
+The \(y\)-term vanishes since the second form is
+binary. At fixed \(T\), the potential remaining poles
+are \(b_1 T^2/x\) in the second and
+\([x^{-2}]R_2\,T^2/x^4\) in the normalized third.
+If there is a pole and either \(b_1\) or \(\gamma_2\)
+is nonzero, the involution test gives \(k(T,x)\).
+Otherwise the forms give \(S^2\) and
+\(S^3+[x^{-2}]R_2\,T^2/S^2\), recovering \(S\).
+Thus the poles vanish by (3).
+
+In both cases the four coefficients of \(R_2\)
+through \(x^{-2}\) now vanish. The centered-cubic
+calculation gives \(a_3=x^3\), \([z^2]C=e x^2\)
+after translation.
+When \(\gamma=0,\gamma_2\ne0\), the last possible
+pole of the second form at \(w=10\) is \(b_2 T^2/x^2\)
+and the normalized third form is \(\gamma_2 T x\).
+Thus (3) applies directly. When
+\(\gamma=\gamma_2=0\), the weight-three term of
+\(R_1\) is proportional to \(y\). Its tie at
+\(w=9\) is excluded by fixing \(T,B_*\).
+At \(w=10\) the last possible pole \(b_2 T^2/S\)
+in the second output accompanies \(S^3+\text{scalar}
+\cdot T\) in the normalized third. Over \(k(T)\)
+the orders two and three at infinity and the smaller
+other pole of the second output recover \(S\), so
+(3) applies. This completes the reduction to
+an affine middle output with \(B_1\) of highest
+\((2,3)\)-part \(x^5\).
+
+### The coefficient of the affine middle output
+
+In the last frame put \(u=B_1/x,\ v=R_1/x\).
+The bracket at \(z=\infty\) gives algebraic dependence
+of \(u,v\) as in the mixed-sector case, with \(v\)
+having \(x\)-degree at infinity at most two.
+If \(v\) is nonconstant, use \(L=v\). If \(v\)
+is constant, use \(L\) equal to the \(z^0\)-coefficient
+of \(C^\flat-v A^{1/3}\). The generic leading
+determinant of \(A,B,C^\flat-v A^{1/3}\) gives
+algebraic dependence of \(u,L\): the three
+\(z\)-degrees are \(3,1,0\) and the bracket is
+unchanged. The formula
+\[
+         L=C_0-\frac{2e}{3}A_1/x+\frac{e}{9}A_2^2/x^4
+                              -\frac v3 A_2/x^2
+\]
+shows its \((2,3)\)-highest part is \(x^6\).
+In either case \(u,L\) have no finite poles in
+\(x\) other than possibly zero, over \(K=k(y)\).
+
+At infinity \(u\) has pole order four.
+When \(L=v\), a nonconstant \(v\) must also be
+nonconstant in \(x\), by algebraic dependence with
+\(u\). It has either pole order at most two or,
+after subtracting its finite value there, zero
+order at most two, since its denominator divides
+\(x^2\). When using the other \(L\), it has pole
+order six at infinity. In both cases the index at
+infinity over \(K(u,L)\) is at most two. There is
+no other place above it, since the only other
+possible pole of \(u\) has order at most one.
+Thus the rational-curve parameter from the mixed
+case pulls back to a polynomial of degree one or
+two in \(x\). Its leading coefficient can be made
+one by the constant leading coefficient of \(u\).
+If \(u\) or \(L\) has a finite pole, then the
+parameter must have fixed scalar value at \(x=0\);
+in degree two the two preimages of that value
+must coincide there. Hence that parameter is
+univariate in \(x\). If neither has a finite pole,
+\(u=U(Q)\) is a monic polynomial in the parameter.
+In degree one its \(x^3\)-coefficient forces a
+constant shift. In degree two the \(x^3,x^2\)
+coefficients and their \((2,3)\) bounds give
+\[
+                    Q=x^2+\alpha x+\beta y+\gamma
+\]
+with scalar coefficients and \(U\) monic quadratic.
+
+If \(\beta\ne0\), the affine coefficient
+\(B_1=xU(Q)\) has a multiplicity-one component
+\(x=0\). The residue of \(dx\wedge dy/B_1\) there
+is \(dy/U(\beta y+\gamma)\), with an affine pole.
+This contradicts the
+[linear-source residue restriction](KELLER_QUARTIC_TRIPLE_BOUNDARY_AND_LINEAR_COMPONENTS.md#a-residue-restriction-for-components-linear-in-a-source-variable).
+Therefore \(B_1\) is univariate in all cases.
+
+The three highest \(z\)-terms and the weight bound
+on \(B_0\) are now exactly those used in the
+mixed-sector affine-scalar proof. The normal-residue
+restriction and parallel-fibre coordinates give
+inversion unless a repeated root produces a
+constant scalar restriction. A nonzero such root
+would give the impossible planar \((3,2)\)-pair
+with constant highest coefficients. At zero the
+planar degree mismatch six versus four excludes
+the constant restriction as in the mixed-sector
+inversion. This completes the proof.
+
+
+## The first axial forms when both coefficients vanish
+
+**Theorem SexticKellerSquareCuspBothZeroAxialReduction.**
+In the square-cusp frame with \(k=e=0\), the highest
+tuple at \((2,3,5)\) is \(((xz)^3,x^5z,x^6)\).
+At \((2,3,6)\) the highest tuple is
+\[
+           (x^3z^3,\ x^5z+\sigma x^2z^2,\ x^6+\delta x^3z).
+\]
+In particular the first component has \(z\)-degree
+three and the third has \(z\)-degree at most one.
+
+Use the support from the preceding section, putting
+\(k=e=0\). At \(w=9/2\), the \(\eta yz^2\) tie in
+\(C\) vanishes by independence of the two binary
+forms in \(A,B\). At \(w=5\) the possible other
+forms are \(Tx^4+\alpha xyz^2+\beta z^3\) and
+\(x^6+\xi xz^2+\gamma_0 x^2 y z\).
+The bracket at fixed \(T=xz\) forces
+\(\alpha=\gamma_0=0\) by the \(y\)-coefficient
+comparison.
+
+Suppose either \(\beta\) or \(\xi\) is nonzero.
+The field generated by the forms at \(w=5\), after
+adjoining \(T\), is \(k(T,x)\) by the pole-order
+argument of the preceding section. Before adjoining
+\(T\), the field is \(k(x^3,z/x)\), over the algebraic
+closure. Indeed the extension given by \(T^3=A_*\)
+has possible conjugates \(T\mapsto\omega T\),
+\(\omega^3=1\), which induce fractional linear
+changes in \(x\) over \(k(T)\). The pole orders of
+the fixed functions at infinity and zero force
+\(x\mapsto d x\). Their leading positive powers
+give \(\omega d^4=1,\ d^6=1\). The nonzero
+pole in either function forces \(d^3=1\).
+Conversely simultaneous scaling of \(x,z\) by
+a cube root of unity fixes all three forms.
+This proves the field claim.
+
+At a first transverse tie lift \(H_1=x^3,\ M=z^3\)
+and \(Q=z/x\) as rational functions. The specialization
+is an isomorphism of the old and new image rings,
+since the leading determinant is zero and the old
+binary rank is two. For any prime of the source
+write \(n=\operatorname{ord}(H_1)/3\) and
+\(m=\operatorname{ord}(M)/3\) for the orders of the
+lifts, so \(m-n=\operatorname{ord}(Q)\) is integral.
+The first form gives \(n+m\ge0\).
+If \(n<0\), the \(x^6\)-term gives a unique pole
+in the third form, since the other term \(xz^2\)
+has order \(n+2m>0\). Thus \(H_1\) is polynomial.
+If \(\beta\ne0\), \(m<0\) gives a unique
+pole in the second form. If \(\beta=0,\xi\ne0\),
+use the weight-six lift \(H_1\). It either remains
+\(x^3\) or acquires \(\nu xy\) at weight four or
+\(\nu y\) at weight six. In the changed case \(H_1\)
+is squarefree, so \(m<0\) gives \(n+2m<0\).
+In the unchanged case \(0\le n\le1\) is integral
+and \(m-n\) is integral, with the same conclusion.
+Either would give a unique pole in the third form.
+Thus \(M\) is polynomial. If \(H_1\) had changed
+it would be squarefree, and \(M=H_1 Q^3\) together
+with regularity would make \(H_1\mid M\). This is
+impossible on specialization to \(x^3,z^3\).
+Therefore the lift of \(H_1\) remains \(x^3\), and
+\(Z=xQ\) is polynomial by regularity of its cube.
+As in the previous axial argument its shear removes
+the first tie; only finitely many shear weights
+are available. This excludes both \(\beta,\xi\).
+
+At \(w=6\) the only possible \(y\)-term in the
+highest tuple is \(y^2z\) in the third output.
+The first two binary forms are independent, so it
+vanishes. The tuple is
+\[
+  \bigl(z^3(x^3+\theta z),\
+        x^2z(x^3+\sigma z),\
+        x^6+\delta x^3 z+\chi z^2\bigr).
+ \tag{5}
+\]
+Put \(t=z/x^3,\ S=x^2,\ f=1+\delta t+\chi t^2\).
+The weight-zero ratios \(U=A_* / C_*^2\) and
+\(V=B_*^3/C_*^4\) are
+\[
+         U=\frac{t^3(1+\theta t)}{f^2},\qquad
+         V=\frac{t^3(1+\sigma t)^3}{f^4}.
+\]
+Both vanish to order three at zero. If the
+ramification index of \(t=0\) in their generated
+field is one, no other point lies above its place:
+the only possible other zeros of \(U\) have order
+one. Thus the ratio field is \(k(t)\). If the index
+is three, \(U\) is a local parameter downstairs,
+and \(V/U\) is a power series in \(U\).
+Its terms of \(t\)-degree one and two give
+\[
+       \delta=(3\sigma-\theta)/2,\qquad
+       \chi=3(\sigma-\theta)^2/8.
+\]
+Subtract its constant and the multiple of \(U\)
+matching its \(t^3\)-coefficient. The next two
+coefficients, up to the nonzero factors
+\(-(\sigma-\theta)^2/64\) and
+\((\sigma-\theta)^2/64\), are
+\[
+  9\sigma^2+38\theta\sigma-95\theta^2,\qquad
+  27\sigma^3+105\theta\sigma^2-259\theta^2\sigma+31\theta^3.
+\]
+If \(\sigma\ne\theta\) these cannot both vanish:
+for \(\theta=0\) the first suffices, and otherwise
+divide by the powers of \(\theta\). The second
+polynomial has remainder \(64r-64\) on dividing by
+the first in \(r=\sigma/\theta\), and \(r=1\)
+does not solve the first. Thus the exceptional
+ratio field requires \(\sigma=\theta,\ f=1+\theta t\).
+Then \(V=U=t^3/(1+\theta t)\) and the index is three.
+In every other case the field of (5) is \(k(t,S)\),
+since \(B_*/C_*\) recovers \(S\) once \(t\) is known.
+
+In this last field consider first \(\theta\ne0\).
+At a transverse tie let \(n,m\) be the orders of
+the rational half-powers \(x,z\), computed from
+the respective lifts of \(S,z^2\). If \(m<0\),
+the first form requires \(m=3n<0\) and
+\(\operatorname{ord}(x^3+\theta z)\ge-9n\).
+The second then requires \(\sigma=\theta\).
+For the third to be regular, \(f\) must vanish at
+\(-1/\theta\). Since the exceptional case was
+removed, this requires \(\chi\ne0\), and gives
+order at least \(-6n\ge3\) for the third form.
+Its binary specialization has multiplicities at
+most two, a contradiction. If \(n<0,m\ge0\),
+the second form forces \(m\ge-5n\), and the
+first has order at least \(-12n\ge6\), again
+contradicting its binary multiplicities, at most
+three. As in the earlier lift, any homogeneous
+prime in either argument specializes nontrivially
+with positive weight. Thus the lifts of \(S,z^2\)
+are polynomial. The lift of \(T\) is polynomial
+by \(T^2=S z^2\). If \(S'=x^2+\nu y\) changed
+at weight four, its divisibility into \((T')^2\)
+would contradict the coefficient \(x\) of \(z\)
+in \(T'\). So \(S'=x^2\), and \(T'/x\) is
+polynomial by its square. The finite shear
+argument excludes the tie. Hence \(\theta\ne0\)
+is possible only in the exceptional ratio case.
+
+If \(\theta=0,\chi\ne0\), we are also in the
+field \(k(T,S)\). Use the identities
+\(A_*=T^3\), \(B_*=T S^2+\sigma T^2\), and
+\(C_*=S^3+\delta T S+\chi T^2/S\) at a first
+transverse tie. The squarefree \(T'\) excludes
+a pole of \(S'\) by the second form. The last
+term of the third forces \(S'=x^2\) and \(x\mid T'\),
+by the pole comparison in (3). Both source
+coordinates lift, so this tie is likewise impossible.
+Thus \(\chi=0\) when \(\theta=0\).
+
+Finally, in the exceptional case with \(\theta\ne0\),
+the leading relation \(A_* C_*^2=B_*^3\) survives the
+first transverse tie. Unique factorization writes
+the new forms as \(D p^3,D p q^2,D q^3\) with
+coprime \(p,q\). On specialization \(y=0\),
+\(D\) specializes to \(x^3+\theta z\) up to a
+unit: its specialization divides this irreducible
+polynomial, and a scalar specialization would
+force the first form to be a cube. Thus \(p,q\)
+specialize to \(z,x\), after constant rescalings.
+They have weights six and two. Hence \(q=x\).
+For \(3<s<4\), neither \(p\) nor \(D\) can acquire
+a \(y\)-term of weight six, so no first transverse
+tie occurs there. At \(s=4\) the ordinary term
+\(y^6\) in \(A\) has weight twenty-four and must
+tie. The displayed factorization at that weight
+has \(p=z+\mu xy\), \(D=x^3+\theta z+\nu xy\),
+because these are the only extra monomials of
+weight six. It would give \(A_*|_{x=0}=\theta z^4\),
+contrary to the term \(y^6\) at weight twenty-four.
+This excludes the exceptional common factor and
+proves the theorem. The [exact checker](check_sextic_square_cusp_mixed_axial.py)
+reproduces the weight-five binomial identity and the
+coefficient comparisons for the projective ratio field.

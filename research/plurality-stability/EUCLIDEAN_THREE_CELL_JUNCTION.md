@@ -2,12 +2,13 @@
 
 The Euclidean test in [the near-one analysis](THREE_CELL_NEAR_ONE.md#a-compact-euclidean-junction-test)
 uses the planar $120^\circ$ three-sector partition $Y$ with the
-unit-variance Gaussian convolution kernel. Every nontrivial compact
-change holding one cell fixed increases its cut, as does every compact
-change with transfers in only one cyclic orientation. In contrast,
-the convex total-variation relaxation has a strict fractional
-improvement with the same exterior labels. This distinction matters
-when using calibration arguments for the junction.
+unit-variance Gaussian convolution kernel. Every nontrivial ordinary
+change of finite area strictly increases the cut. The proof combines
+[one-dimensional fiber rearrangement](#strict-comparison-by-fiber-rearrangement)
+with the scalar calibration (J10). Together with the affine asymptotes
+and exponential decay below, this classifies every whole-plane
+minimizer with three nonempty phases. The convex total-variation
+relaxation admits a strict fractional improvement.
 
 ## Finite transfers with one phase fixed
 
@@ -649,6 +650,100 @@ shift changes infinite area. Minimality of $U$ also gives the
 reverse cut inequality against $Y$, by finite-area comparison,
 so equality holds and $m=m_Y$. This proves the claimed rigidity.
 
+## Strict comparison by fiber rearrangement
+
+Let $U$ be any ordinary planar partition with $|\{U\ne Y\}|<\infty$.
+Then $\mathcal J(U)\ge0$ in (P5), with equality only at $Y$ almost
+everywhere. Choose coordinates $(s,x)$ along and normal to the
+$A/B$ ray, oriented so that $s>0$ on that ray. The reference fibers
+are a left half-line of label $A$, a right half-line of label $B$,
+and a centered interval of label $M$. The interval is empty on
+$s>0$. Denote the reference $A,B$ thresholds by $a_Y(s),b_Y(s)$,
+with $b_Y=-a_Y$. For almost every $s$ put
+
+\[
+ a_s=a_Y(s)+\int(1_{U_A}(s,x)-1_{Y_A}(s,x))\,dx,\qquad
+ b_s=b_Y(s)-\int(1_{U_B}(s,x)-1_{Y_B}(s,x))\,dx .
+ \tag{J11}
+\]
+
+The third fiber has finite length $m_s=b_s-a_s\ge0$ by summing
+the three indicators. Rearrange it to the centered interval of
+length $m_s$ and fill the two tails with $A$ on the left and $B$
+on the right. Denote the new partition by $U^*$. It has a
+finite-area defect from $Y$, since the changed fiber length is
+$|m_s-|Y_M(s,\cdot)||\le\int|1_{U_M}(s,x)-1_{Y_M}(s,x)|\,dx$.
+
+For a pair of fibers at $s,t$ and a normal displacement $h$, the
+agreement loss of the binary $A$ indicators is their $L^1(dx)$
+difference
+
+\[
+ \int|1_{U_A}(s,x)-1_{U_A}(t,x+h)|\,dx
+             \ \ge\ |a_s-a_t+h|.
+ \tag{J12}
+\]
+
+The inequality follows by taking the absolute value of the signed
+integral, using (J11) to compute it by comparison with the reference
+half-lines. For $B$ the lower bound is $|b_s-b_t+h|$ with the
+opposite signed integral. Let $\phi$ be the scalar Gaussian density
+and $F(c)=\int\phi(h)|c+h|\,dh$. This is even and strictly convex
+since $F''=2\phi>0$. Averaging the bounds and writing
+$c_s=(a_s+b_s)/2$ gives
+
+\[
+ F(a_s-a_t)+F(b_s-b_t)
+              \ \ge\ 2F((m_s-m_t)/2).
+ \tag{J13}
+\]
+
+The right side is the exact summed binary $A$ and $B$ cost of
+$U^*$, and equality in (J13) requires $c_s=c_t$.
+For the $M$ fibers the binary cost is $m_s+m_t$ minus twice their
+Gaussian pairing. The one-dimensional Riesz rearrangement
+inequality maximizes this pairing by centered intervals of those
+lengths, since the Gaussian is already symmetric decreasing.
+[Riesz rearrangement, as stated in Burchard–Hajaiej, (1.2)](https://arxiv.org/pdf/math/0506336).
+
+Multiply the three fiber comparisons by the tangential factor
+$\phi(s-t)$ and add. An ordinary disagreement is one half of
+the sum of the three binary differences. Subtract the same
+reference fiber costs before integrating: each full difference
+is absolutely integrable, since its pair integrand can change
+only when an endpoint is in the finite-area defect of the
+corresponding partition. The result is $\mathcal J(U)\ge\mathcal
+J(U^*)$. By construction $U^*$ is reflection symmetric with exact
+separation of $A$ and $B$, so (J10) gives $\mathcal J(U^*)\ge0$,
+with equality only at $U^*=Y$.
+
+Suppose $\mathcal J(U)=0$. The nonnegative slacks in (J12)–(J13)
+then vanish almost everywhere because both Gaussian factors are
+strictly positive. In particular $c_s$ is constant almost
+everywhere. Its integral in absolute value is finite by (J11)
+and $a_Y+b_Y=0$, so it is zero. For almost every fixed $s$,
+choose a sequence $t_j\to+\infty$ of good fibers for which the
+$A,B$ indicators converge in $L^1$ difference to their reference
+half-lines with threshold zero. Such a sequence exists by
+integrability of their defects on $t>0$ and Fubini's theorem.
+Equality in (J12) extends from almost every $h$ to all $h$ for
+each pair $s,t_j$ by continuity of translations, using a half-line
+plus an $L^1$ difference to represent the fibers. At
+$h=a_{t_j}-a_s$ the right side is zero. This makes the $A$ fiber
+at $s$ equal to the translated $A$ fiber at $t_j$. Passing to the
+limit gives the left half-line with threshold $a_s$. The same
+argument gives the right half-line with threshold $b_s$ for $B$.
+The third fiber fills the interval between them, which is
+centered since $c_s=0$. Thus $U=U^*=Y$.
+
+Finally, any whole-plane compact-perturbation minimizer for the
+unit Gaussian cut with three nonempty phases has finite-area
+defect from its asymptotic tripod by (E1)–(E6). Its comparisons
+extend to finite-area changes by truncation. Comparison with
+that tripod gives $\mathcal J(U)\le0$, so the strict comparison
+forces equality of the partitions. In particular no ordinary
+compact modification in (P5) improves the tripod.
+
 ## A fractional obstruction to convex total-variation calibration
 
 For a simplex-valued $u$ that agrees with the vector indicator $1_Y$
@@ -718,6 +813,5 @@ This fractional energy differs from the soft agreement extension
 using $1-u(x)\cdot u(y)$. Weak approximations by hard labels converge
 for compact changes in the soft agreement extension, and their
 limit need not have the total-variation value (J3). The strict
-decrease in (J3) therefore leaves the ordinary compact-change
-comparison for $Y$ open. The restricted comparisons (J1)–(J2) and
-the relaxation counterexample are analytic.
+decrease in (J3) is compatible with the strict ordinary comparison
+above. That comparison uses the three labels as an exact partition.

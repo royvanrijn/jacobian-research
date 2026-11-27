@@ -500,12 +500,305 @@ external mathematical review, or an unrestricted positive-correlation
 result. In particular the tail estimate's validity below \(1/2\)
 does not prove the norm bound on that larger interval.
 
+## The scalar radial bound fails at correlation one half
+
+### Proposition DG5 (a bounded radial obstruction at rho equal to 1/2)
+
+For the exact operators \(K_+,J_+\) in (DG15), at \(\rho=1/2\) put
+
+\[
+ f(t)=e^{-t}+2e^{-16t}-\frac{21}{34},\qquad
+ N=\langle f,\mathcal K_+f\rangle_\nu,\qquad
+ D=\int J_+f^2d\nu.
+ \tag{DG21}
+\]
+
+Then \(f\) is bounded, \(\int f\,d\nu=1/2+2/17-21/34=0\), and
+
+\[
+           D>0,\qquad N-2D>0.0015,\qquad N/D>2.07.
+ \tag{DG22}
+\]
+
+Thus no choice of additive center, or sharper estimate of the same
+scalar operator norm, can extend the sufficient condition
+\(\langle f,\mathcal K_+f\rangle\leq2\int J_+f^2d\nu\) to
+\(\rho=1/2\). This is not a partition beating the simplex. It is a
+counterexample to a sufficient radial estimate used after relaxation.
+
+Here is an exact reduction of (DG22) to a one-dimensional interval
+calculation. For \(P>c^2\) define
+
+\[
+ \Xi(P,c)=\frac1{P-c^2}
+       -\frac{c\arccos(c/\sqrt P)}{(P-c^2)^{3/2}}.
+ \tag{DG23}
+\]
+
+For \(A,B>0\), \(P=AB\), this is the positive-quadrant integral
+\(\iint uv\exp[-(Au^2+Bv^2+2cuv)/2]du\,dv\).
+The formula is valid for either sign of \(c\). It follows by scaling
+the quadrant Gaussian integral and differentiating in \(c\).
+For nonnegative \(\lambda,\mu\), put
+\(P_{\lambda\mu}=(1+\lambda d_\rho)(1+\mu d_\rho)\). Directly
+substituting \(t=d_\rho u^2/2\), \(s=d_\rho v^2/2\) gives
+
+\[
+ \iint R_0(t,s)\frac{e^{a(t,s)z}}{I_0(a(t,s))}
+           e^{-\lambda t-\mu s}d\nu(t)d\nu(s)
+       =d_\rho\Xi(P_{\lambda\mu},-\rho z).
+\]
+
+Write \(F_{\lambda\mu}(v)=d_\rho
+\Xi(P_{\lambda\mu},-\rho\cos(\pi v))\), and set
+
+\[
+\begin{split}
+ B_{\lambda\mu}
+  &=\frac{j_1\rho d_\rho}{2}
+    \left[\frac{(P_{\lambda\mu}+2\rho^2)
+              \arccos(\rho/\sqrt{P_{\lambda\mu}})}
+                    {(P_{\lambda\mu}-\rho^2)^{5/2}}
+            -\frac{3\rho}{(P_{\lambda\mu}-\rho^2)^2}\right],\\
+ N_{\lambda\mu}
+  &=\frac12\int_0^{2/3}(2+3v)F_{\lambda\mu}(v)dv-4B_{\lambda\mu},\\
+ D_{\lambda\mu}
+  &=\frac12\int_0^{2/3}(1-3v)F_{\lambda\mu}(v)dv+B_{\lambda\mu}.
+\end{split}
+ \tag{DG24}
+\]
+
+The first expression is the pairing of the kernel
+\(R_0\theta\) against the two exponentials: use
+\(\theta(a)=(j_1/2)ae^{-a}/I_0(a)\) and differentiate the preceding
+identity in \(z\) at \(z=-1\). For
+\(\lambda=(0,1,16)\), \(c=(-21/34,1,2)\), the required values are
+
+\[
+ N=\sum_{i,j}c_i c_jN_{\lambda_i\lambda_j},\qquad
+ D=\sum_{i,j}c_i c_jD_{\lambda_i+\lambda_j,0}.
+ \tag{DG25}
+\]
+
+All radial integrals have been evaluated exactly; no radial cutoff or
+unbounded numerical tail is used here. The
+[coupled-radial checker](check_three_cell_coupled_radial.py) evaluates
+the remaining angular integrals by Arb interval Riemann enclosures over
+all 8192 subintervals of \([0,2/3]\), at 100-bit precision. The
+[retained verification](three_cell_coupled_radial_verification.json)
+gives outward enclosures, in particular
+\(0.00156437027<N-2D<0.00191546337\). This proves (DG22).
+
+## An explicit correction for angular moment closure
+
+The [first-moment compatibility argument](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#circular-balance-and-compatibility-of-first-angular-moments)
+defines a positive deficit by a compact vector optimization. The next
+bound replaces that optimization by an elementary expression. It applies
+to every pair of actual circular partitions, at every positive angular
+parameter.
+
+### Proposition DG6 (an explicit angular compatibility penalty)
+
+Let \(p,q\in\Delta_3\). Initially assume all their coordinates are
+positive. Put
+
+\[
+ a_i=\frac{\sin(\pi p_i)}\pi,\qquad
+ b_i=\frac{\sin(\pi q_i)}\pi,\qquad r_i=b_i/a_i.
+\]
+
+Let \(G(a)\) be the symmetric matrix with
+\(G(a)_{ii}=a_i^2\) and
+\(G(a)_{ij}=(a_k^2-a_i^2-a_j^2)/2\) for distinct \(i,j,k\).
+Define
+
+\[
+\begin{split}
+ M(r)&=\max\left(0,\max_{\{i,j,k\}=\{1,2,3\}}
+                         \frac{(r_i-r_j)(r_i-r_k)}{r_i}\right),\\
+ \Gamma_0(a,b)&=\frac{r^TG(a)r}{2(\sum_i r_i+M(r))},\\
+ \Gamma(p,q)&=\max\{\Gamma_0(a,b),\Gamma_0(b,a)\}.
+\end{split}
+ \tag{DG26}
+\]
+
+Set \(\Gamma(p,q)=0\) if either profile has a zero coordinate.
+For two circular partitions with masses \(p,q\), let \(u_i,v_i\)
+be their first angular vector moments, with probability measure
+\(d\theta/(2\pi)\). Then
+
+\[
+ \sum_i a_i b_i-\sum_i u_i\cdot v_i\ \geq\ \Gamma(p,q)\geq0.
+ \tag{DG27}
+\]
+
+For interior profiles, \(\Gamma(p,q)>0\) exactly when \(p\ne q\).
+For fixed vectors \(x,y\) of coordinate sum zero, as \(\epsilon\to0\),
+
+\[
+ \Gamma(\tfrac13\mathbf1+\epsilon x,
+        \tfrac13\mathbf1+\epsilon y)
+       =\frac{\epsilon^2}{16}\|x-y\|^2+O(\epsilon^3).
+ \tag{DG28}
+\]
+
+**Proof.** Projection in the direction of the angular moment gives
+\(|u_i|\leq a_i\), \(|v_i|\leq b_i\), by selecting the largest
+cosine values. Since the slices are partitions,
+\(\sum_i u_i=\sum_i v_i=0\). Write
+\(\Delta=\sum_i a_i b_i-\sum_i u_i\cdot v_i\),
+\(d_i=a_i^2-|u_i|^2\), and \(e_i=b_i^2-|v_i|^2\).
+The exact square identity is
+
+\[
+ 2\Delta=\sum_i\left|\sqrt{r_i}u_i-v_i/\sqrt{r_i}\right|^2
+                      +\sum_i r_i d_i+\sum_i e_i/r_i.
+\]
+
+In particular all three terms on the right are nonnegative. Closure
+and weighted Cauchy--Schwarz imply
+\( |\sum_i r_i u_i|^2\leq2(\sum_i r_i)\Delta\).
+For a closing triple, its Gram matrix is determined by its three
+squared lengths. With
+\(\eta_i=(r_i-r_j)(r_i-r_k)\), this gives
+
+\[
+ r^TG(a)r=\left|\sum_i r_i u_i\right|^2+\sum_i\eta_i d_i
+ \leq2(\sum_i r_i)\Delta+M(r)\sum_i r_i d_i
+ \leq2(\sum_i r_i+M(r))\Delta.
+\]
+
+This proves the first one-sided bound. Interchanging the triples gives
+the other. The matrix \(G(a)\) is positive semidefinite: take the
+angular moments of consecutive arcs of widths \(p_i\). They close
+and have lengths \(a_i\), so their Gram matrix is exactly \(G(a)\).
+For interior profiles they form a nondegenerate triangle, with kernel
+\(\operatorname{span}(\mathbf1)\). Thus its quadratic form vanishes
+only if all \(r_i\) agree. The side lengths then define similar
+triangles with angles \(\pi p_i\), \(\pi q_i\); uniqueness of their
+ordered angle triples gives \(p=q\). The boundary definition uses
+only the trivial nonnegative bound from the square identity or individual
+Cauchy--Schwarz, and makes no strictness claim there.
+
+Finally at the balanced profile, with \(a_*=\sqrt3/(2\pi)\),
+\(G(a)=\tfrac32a_*^2P+O(\epsilon)\), where
+\(P=I-\mathbf1\mathbf1^T/3\), and
+\(r_i=1+\epsilon(y_i-x_i)/(2a_*)+O(\epsilon^2)\).
+The numerator of \(\Gamma_0\) is therefore
+\(3\epsilon^2\|x-y\|^2/8+O(\epsilon^3)\), while its denominator
+is \(6+O(\epsilon^2)\). The same leading term holds for the reverse
+bound, proving (DG28). The expansion is uniform for bounded \(x,y\).
+
+To apply this to the noise kernel, write
+
+\[
+ k_a(\vartheta)=c_a\cos\vartheta+R_a(\vartheta),\qquad
+ c_a=\frac{ae^{-a}}{I_0(a)}.
+\]
+
+As a function of \(z=\cos\vartheta\), the remainder is
+\([e^{az}-ae^{-a}z]/I_0(a)\), nonnegative and nondecreasing on
+\([-1,1]\). Its derivative is \(a(e^{az}-e^{-a})/I_0(a)\).
+Theorem I of
+[Friedberg--Luttinger](https://digital.library.unt.edu/ark:/67531/metadc1025197/m2/1/high_res_d/4446751.pdf),
+printed pp. 1--2, equations (2)--(5), therefore bounds each same-label
+pairing for the remainder by aligned arcs. The theorem and its
+nonnegativity/monotonicity hypotheses were inspected in the primary
+report; use two functions and set the other kernel factor to one.
+Finite unions of arcs approximate arbitrary measurable sets in \(L^1\),
+and the bounded kernel makes this extension continuous. The separated
+cosine pairing is exactly \(u_i\cdot v_i\), while aligned arcs give
+\(a_i b_i\). Hence the actual angular pairing is at most its
+aligned-arc envelope minus \(c_a\Gamma(p,q)\).
+
+Define the positive radial kernel
+\(V_\rho(t,s)=R_0(t,s)a(t,s)e^{-a(t,s)}/I_0(a(t,s))\).
+Applying Corollary A.3 only to the remaining envelope gives the explicit
+global upper bound
+
+\[
+\begin{split}
+ S_\rho(A)-S_\rho(T)\leq{}&
+ \sum_i[\langle z_i,\mathcal K_+z_i\rangle-2\int J_+z_i^2d\nu]\\
+ &-\iint V_\rho(t,s)\Gamma(p(\sqrt{2t}),p(\sqrt{2s}))d\nu(t)d\nu(s).
+\end{split}
+ \tag{DG29}
+\]
+
+Every term is finite at fixed \(0<\rho<1\). In particular
+\(c_a\leq1/e\), and the penalty is bounded by the actual first-moment
+deficit, which is at most \(2\sum_i a_i b_i\leq6/\pi^2\).
+Thus its integral is controlled by the radial Markov measure. No
+stationarity or closeness of the partition is assumed.
+
+### Corollary DG7 (the coupled bound handles the explicit profile at rho equal to 1/2)
+
+At \(\rho=1/2\), there exists \(\epsilon_0>0\) such that every
+ordinary planar partition with circular mass profile
+
+\[
+ p_i(\sqrt{2t})=\tfrac13+\epsilon(1,-1,0)_i f(t),
+                  \qquad 0<|\epsilon|<\epsilon_0,
+ \tag{DG30}
+\]
+
+strictly loses to the simplex. This permits arbitrary angular shapes,
+not only consecutive arcs. The profiles are balanced by (DG21) and
+are feasible, for example by consecutive arcs, for sufficiently small
+\(\epsilon\), since \(|f|\leq81/34\).
+
+To check the sign, define
+\(N_B=\sum c_i c_jB_{\lambda_i\lambda_j}\) and
+\(D_B=\sum c_i c_jB_{\lambda_i+\lambda_j,0}\), with the same
+coefficients and exponents as in (DG25). Since
+\(R_0\theta=(j_1/2)V_\rho\), (DG28) shows that the coefficient of
+\(2\epsilon^2\) in the right side of (DG29) is
+
+\[
+       N-2D-\frac{D_B-N_B}{4j_1}<-0.0038.
+ \tag{DG31}
+\]
+
+The directed checker certifies this inequality as well as (DG22).
+Its enclosure for the subtracted correction is
+\([0.005810135707537683,0.005810135707537685]\), and its enclosure
+for the corrected coefficient lies inside
+\([-0.004246,-0.003894]\). The remainder is \(O(\epsilon^3)\)
+uniformly over partitions with profile (DG30): (DG28) is uniform for
+bounded profiles near the balanced one, \(f\) is bounded, and
+\(V_\rho\) has finite integral. Therefore the strictly negative
+quadratic coefficient proves the assertion.
+
+The checker also performs exact rational controls of the Gram identity,
+both one-sided bounds, the coincident-triple case and a rejected
+nonclosing triple. These finite controls are supplementary to the
+unrestricted algebraic proof of Proposition DG6. The all-profile
+dominance of the right side of (DG29) remains open; Corollary DG7 does
+not extend the unrestricted cutoff in Proposition DG4.
+
+Run both the directed witness and the exact rational controls from the
+repository root with the existing environment:
+
+```sh
+.venv/bin/python research/plurality-stability/check_three_cell_coupled_radial.py
+```
+
+The verification record pins this checker, its exact inputs and the
+current proof source. These new arguments have internal checking only;
+independent replay, formal verification and external review remain
+unperformed.
+
 ## Remaining obligation and reproducible controls
 
 Above the newly certified cutoff \(21/50\), an unrestricted direct proof
 must establish (DG4), retaining enough of
 \(\mathcal C_\rho\) or using a different mechanism. Global balance
 alone does not remove \(\mathcal R_\rho\); equal circular masses do.
+Proposition DG5 rules out extending the particular scalar operator
+estimate in (DG17) through \(\rho=1/2\), even with optimal additive
+centering. Proposition DG6 supplies an explicit nonlinear correction
+retaining moment closure, and Corollary DG7 shows it handles that
+obstructing profile. A bound uniform over all profiles is still needed.
 Proposition DG3 rules out proving the stronger mass-only inequality after
 the angular Cauchy step throughout \((0,1)\). It does not rule out
 stronger coupled angular estimates, a different direct proof, or the

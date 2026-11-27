@@ -66,9 +66,65 @@ def check_zero_e_binary_ratios():
     assert cancel(second**7/third**8 - ratio_two) == 0
 
 
+def check_generic_fibre():
+    x, y, a, h2, h1, t, sigma, delta, theta = symbols(
+        "x y a h2 h1 t sigma delta theta"
+    )
+    z_level = (t - h1*y - h2*y**2)/a
+    p_level = x*z_level + y**2
+    leading_a = Poly(expand(p_level**3 + delta*y**4*z_level), y).nth(6)
+    leading_b = Poly(expand(sigma*(p_level**2 - y**4)), y).nth(4)
+    assert expand(leading_a - ((1-x*h2/a)**3-delta*h2/a)) == 0
+    assert expand(leading_b - sigma*(x*h2/a)*(x*h2/a-2)) == 0
+
+    # The final signed face is computed after the residue forces a=k*x**4.
+    pair = Matrix([theta**3/x**9, sigma*theta**2/x**6 - sigma*y**4])
+    assert expand(pair.jacobian((x, y)).det()) == 36*sigma*theta**3*y**3/x**10
+
+
+def check_zero_k_axial_binomial():
+    from sympy import Rational
+    x, y, z, e, b, c, s, xi, gamma = symbols("x y z e b c s xi gamma")
+    toric = x*z
+    phi = b*x*y*z**3 + c*x**2*z**3 + s*y**3*z**2
+    norm = (
+        x**6 + xi*x*z**2 + gamma*x**2*y*z + Rational(2, 3)*e*b*y*z**2
+        - Rational(2, 3)*e*phi*(1/toric - y**2/toric**2)
+        + e*phi**2/(9*toric**4)
+    )
+    terms = expand(norm).as_ordered_terms()
+    face = sum(
+        term for term in terms
+        if sum(w*term.as_powers_dict().get(v, 0)
+               for v, w in ((x, 2), (y, 3), (z, 5))) == 12
+    )
+    expected = (
+        x**6 + (xi-Rational(2, 3)*e*c)*x*z**2 + gamma*x**2*y*z
+        - Rational(2, 3)*e*(s-b)*y**3*z/x + e*b**2*y**2*z**2/(9*x**2)
+    )
+    assert expand(face - expected) == 0
+
+
+def check_both_zero_projective_index():
+    from sympy import Rational, factor, rem
+    t, theta, sigma, r = symbols("t theta sigma r")
+    f = 1 + (3*sigma-theta)*t/2 + Rational(3, 8)*(sigma-theta)**2*t**2
+    u = series(t**3*(1+theta*t)/f**2, t, 0, 6).removeO().expand()
+    ratio = series((1+sigma*t)**3/((1+theta*t)*f**2), t, 0, 6).removeO().expand()
+    leftover = (ratio - ratio.coeff(t, 3)*u).expand()
+    quadratic = 9*sigma**2+38*theta*sigma-95*theta**2
+    cubic = 27*sigma**3+105*theta*sigma**2-259*theta**2*sigma+31*theta**3
+    assert factor(leftover.coeff(t, 4) + (sigma-theta)**2*quadratic/64) == 0
+    assert factor(leftover.coeff(t, 5) - (sigma-theta)**2*cubic/64) == 0
+    assert rem(cubic.subs({sigma:r, theta:1}), quadratic.subs({sigma:r, theta:1}), r) == 64*r-64
+
+
 if __name__ == "__main__":
     check_first_axial_weight()
     check_fractional_coefficient()
     check_parallel_plane()
     check_zero_e_binary_ratios()
-    print("Checked the first axial supports, fractional coefficients, parallel-plane bracket and binary ratios.")
+    check_generic_fibre()
+    check_zero_k_axial_binomial()
+    check_both_zero_projective_index()
+    print("Checked axial supports, binomial expansion, fibre brackets, and projective field ratios.")

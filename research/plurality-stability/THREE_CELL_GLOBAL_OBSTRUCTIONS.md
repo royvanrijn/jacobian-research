@@ -25,22 +25,32 @@ $(h_+-2)\sum_i\langle p_i-1/3,M_{J_+}(p_i-1/3)\rangle$, in the radial
 measure of Appendix A. The weight $J_+$ is positive at every positive
 radius and $h_+<2$. Thus equality forces $p_i(r)=1/3$ almost everywhere.
 The circular comparison below gives equality rigidity on this class.
-It follows that the first transition correlation, if below one, is
-strictly greater than $2/5$: the
+The [direct interval extension](THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md#proposition-dg4-global-comparison-through-rho-equal-to-2150)
+proves the same inequality through $21/50$. Its strict radial-mass
+remainder (DG20), with $J_+(t)>0$ for $t>0$, forces circular balance
+throughout $[2/5,21/50]$ at equality. Dimension reduction applies to
+each equal-value optimizer and the circular comparison gives
+simplex rigidity on the active plane. Thus the first transition
+correlation is **strictly greater than $21/50$**: the
 [three-cell continuation implication](SIMPLEX_INTERFACE_SYMMETRY.md#reflected-kernels-close-the-three-cell-spectral-problem)
-would require a nonsimplex tied maximizer at a first transition.
+would require a nonsimplex tied maximizer at any first transition.
 
-The preprint's Theorem 1.3 already gives the corresponding discrete
-interval. In the precise positive-correlation formulation, fix $q=3$,
-$\rho\in(0,2/5]$, and $\epsilon>0$. There is a $\tau>0$ such that for
+The preprint's Theorem 1.3 gives the discrete interval through $2/5$.
+The same implication with the extended Gaussian bound now gives the
+following statement for $\rho\in(0,21/50]$. Fix $\epsilon>0$. There is
+a $\tau>0$ such that for
 any $m$ and balanced $f:\{1,2,3\}^m\to\{1,2,3\}$, if all influences of
 the three indicator coordinates of $f$ are at most $\tau$, then
 $S_\rho(f)\le\lim_{n\to\infty}S_\rho(\mathrm{PLUR}_{n,3})+\epsilon$.
 The noise retains each vote with probability $\rho$ and otherwise
-resamples it uniformly and independently. The invariance implication
-uses Isaksson–Mossel Theorems 1.10 and 7.1 and their plurality limit in
-Lemma 7.3. Extension of this discrete conclusion to every positive
-correlation requires the corresponding Gaussian bound. [Isaksson–Mossel, arXiv:0903.3362](https://arxiv.org/pdf/0903.3362).
+resamples it uniformly and independently. Theorem 7.1 of
+Isaksson–Mossel supplies an ordinary Gaussian label function in
+dimension $2m$ with the same means and noise stability within
+$\epsilon$. Its Lemma 7.3 identifies the plurality limit with the
+planar simplex value. As in their proof of Theorem 1.10, the hypothesis
+can use influences truncated at a suitable degree instead.
+Extension to every positive correlation requires the corresponding
+Gaussian bound. [Isaksson–Mossel, arXiv:0903.3362](https://arxiv.org/pdf/0903.3362).
 
 ## Translation equations on an unconstrained space of speeds
 
@@ -611,6 +621,65 @@ ordered angle profile. Conversely $p=q$ permits a closing saturated
 triple with $u=v$. This gives a strict radial coupling term for
 different interior profiles. Its dominance over the relaxed excess
 near one remains open.
+
+## Angular mode deficits for compatible circular arcs
+
+Suppose almost every centered circle is divided into three
+contiguous single arcs, one per label, allowing empty arcs and
+either cyclic order. For each nonzero angular frequency $n$ not
+divisible by three, the contribution to the noise stability of
+this partition is at most the corresponding simplex contribution
+at every positive correlation. The exact mode deficit retains
+the relative phases at different radii.
+
+Write $c_n(r)$ for the vector of indicator Fourier coefficients
+on the circle of radius $r$, using angular probability measure.
+If $\theta_1,\theta_2,\theta_3$ are the circular endpoints there,
+put $z_j(r)=e^{-in\theta_j(r)}$. Each component of $c_n(r)$ is a
+signed difference of the corresponding two endpoints divided by
+$2\pi i n$. Hence
+
+\[
+ \|c_n(r)\|^2
+       =\frac{9-|\sum_j z_j(r)|^2}{4\pi^2 n^2}.
+\]
+
+This also holds for coincident endpoints. The simplex attains the
+upper bound $9/(4\pi^2 n^2)$ if $3\nmid n$, and its mode vanishes
+if $3\mid n$. For $3\nmid n$ the exact deficit between radii $r,s$
+is
+
+\[
+ \frac{9}{4\pi^2 n^2}-\operatorname{Re}\langle c_n(r),c_n(s)\rangle
+   =\frac{|\sum_j z_j(r)|^2+|\sum_j z_j(s)|^2}{8\pi^2 n^2}
+               +\frac12\|c_n(r)-c_n(s)\|^2 .
+ \tag{G14}
+\]
+
+In the polar Mehler kernel each frequency has a nonnegative
+weight. To see this expand
+$\exp(\kappa\cos(\theta-\varphi))$ as the product of the
+exponentials of $\kappa e^{i(\theta-\varphi)}/2$ and its conjugate.
+The coefficient at $n$ is a sum of nonnegative terms for
+$\kappa>0$. The same expansion underlies the arc calculation
+in [Heilman, (136)](https://arxiv.org/pdf/2608.00333v1).
+Thus the modes still requiring a joint bound on this class
+are the radial mode and the nonzero multiples of three.
+The arc hypothesis is not known for a general tied maximizer.
+
+An unweighted prefix domination for the nonzero frequencies
+already fails on a single circle. Use endpoints $-u,u,\pi$
+and vary $u=\pi/3+h$. The squared coefficient norm is
+$[9-(2\cos(nu)+(-1)^n)^2]/(4\pi^2 n^2)$. In the block
+$n=3j-2,3j-1,3j$, the two good deficits have quadratic
+coefficients $3/(4\pi^2)$ each and cubic coefficients
+$\sqrt3(3j-2)/(4\pi^2)$ and $-\sqrt3(3j-1)/(4\pi^2)$.
+The last mode contributes $-3h^2/(2\pi^2)+O(h^4)$ to the
+deficit. Thus for every fixed $J\ge1$ the sum of the first
+$3J$ positive-frequency norm deficits is
+$-J\sqrt3 h^3/(4\pi^2)+O_J(h^4)$, negative for small $h>0$.
+This is a slice calculation. It leaves the radial balance and
+the specific Mehler weights essential in a full comparison.
 
 ## Independent circular arcs can exceed the simplex value
 

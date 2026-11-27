@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md",
+  "assurance": "Internal written universal proofs R1-R5, exact finite R6 sharpness and bounded word/orbit controls. Artin's primary characterization is imported explicitly. The entire arbitrary-passport component goal remains active; no independent replay, formal verification, external review or priority claim.",
+  "declarations": [
+    {
+      "name": "Theorem R1. Universal realization of return transport by inner braids",
+      "node": "ARITH-POLYNOMIAL-RETURN-ARTIN-BRAID-REALIZATION",
+      "scope": "For every minimal polynomial quotient, normalized return transport with free generators is a positive peripheral substitution preserving their ordered product. Artin's actual Theorem16 realizes it as an inner braid independently of fibre degree. The exact substitution cocycle supplies the quotient-stabilizer subgroup of B_M; full inner braid availability is not asserted."
+    },
+    {
+      "name": "Corollary R2. The inner component and its monodromy",
+      "node": "ARITH-POLYNOMIAL-INNER-COMPONENT-AND-BLOCK-MONODROMY",
+      "scope": "The full inner braid orbit is an invariant of the original component preserving the stated blocks. Its literal generated group equals the group induced on root block zero by its setwise stabilizer in the original monodromy group. This is necessary and is not asserted sufficient."
+    },
+    {
+      "name": "Lemma R3. The four-sheet return fibres",
+      "node": "ARITH-POLYNOMIAL-QUARTIC-RETURN-FIBRES",
+      "scope": "For block size4, the complete return budget list is one4cycle, C3+T, DT+T or T+T+T. The first three cases have one root-phase orbit and therefore no additional gluing components above a decorated quotient component. Three transpositions give16 literal returns and four free root-phase orbits."
+    },
+    {
+      "name": "Theorem R4. A complete \\(A_4\\) criterion for four-sheet gluing",
+      "node": "ARITH-POLYNOMIAL-QUARTIC-RETURN-A4-CLASSIFICATION",
+      "scope": "For every quotient degree and branch count, all block-size4 gluing components are determined by an explicit four-state edge action in A4 in the triple-T sector and by the decoration in all other sectors. The complete Schreier subgroup H_Y has point orbit pattern1+1+1+1,2+2,1+3 or4; an h-point orbit gives4h|Y| literal tuples. Deck rotations and the canonical-divisor filter are retained. This is a uniform four-state criterion over the decorated quotient graph, not an assertion of connectivity or a classification for b>=5."
+    },
+    {
+      "name": "Theorem R5. Every inner component obstruction survives a cyclic outer lift",
+      "node": "ARITH-POLYNOMIAL-CYCLIC-OUTER-OBSTRUCTION-INHERITANCE",
+      "scope": "Every degree-b polynomial inner tuple with literal group J has a cyclic outer lift of degree bd for each d>=2, with passport(d^b) plus the inner factors extended by fixed points, literal group the standard J wr C_d, and the original inner tuple after deleting identity returns. Distinct full inner components stay distinct. Hence every d>=2 gives at least six components with the same standard A11 wr C_d for passport(d^11),(3^2 1^(11d-6)),(3^3 1^(11d-9)); for odd d the standard spin is+1. This is not a complete list of that passport's components."
+    },
+    {
+      "name": "Proposition R6. All four component patterns occur",
+      "node": "ARITH-POLYNOMIAL-QUARTIC-GLUING-SHARPNESS",
+      "scope": "All four A4 point-orbit patterns occur in explicit complete finite quotient sectors. For the degree16 passport(2^5 1^6)^3, its whole block-size4 sector has2048 literal tuples in four components256,256,768,768, deck order1 and absolute sizes16,16,48,48. Their block-count divisors are exactly1,4,16, so canonical selection really has fibre4. Other sectors of that passport are not excluded."
+    }
+  ],
+  "primary_comparison": [
+    {
+      "authors": "Emil Artin",
+      "title": "Theory of Braids",
+      "year": 1947,
+      "doi": "10.2307/1969218",
+      "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/artinbraids.pdf",
+      "path": "research/arithmetic/sources/artin-theory-of-braids-1947.pdf",
+      "sha256": "6fb7ae639cc460390f3274af5711de5f83f9e951e770f08b18a2223f796cd63b",
+      "inspected": "Actual primary Theorems15-16, printed pp113-115, especially sufficiency by shortening conjugators on pp114-115; formula(14) and faithfulness Theorems11-14; string deletion p116.",
+      "hypotheses": "Each free basis generator maps to a conjugate of a positive basis generator, and their ordered product is fixed.",
+      "application": "R1 verifies the two exact hypotheses for free-group fibre transport and uses Artin sufficiency. It does not claim the original quotient stabilizer surjects onto the inner braid group."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md",
+      "sha256": "cd3bab4647cebe8d211920256fad55d03d9ad188eb1900d7095f2eedf9fd5ccc",
+      "locator": "R1-R6, exact conventions and residual scope"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L1-L3 literal tree construction, root phases and exact return action; L9 canonical divisor"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H2-H3 block/budget inputs; H5 forced odd-order spin; H6 six literal A11 inner components"
+    },
+    {
+      "path": "research/arithmetic/polynomial_passport_components_inputs.json",
+      "sha256": "6fd3f187d31bb4c1c0052adce2bf7ea37814caf7e2dbbef473b8f185df0b6557",
+      "locator": "Six degree11 literal pair representatives and 3cycle word certificates"
+    },
+    {
+      "path": "research/arithmetic/verify_polynomial_lift_transport.py",
+      "sha256": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
+      "locator": "Exact literal lift/extract helpers and ordinary permutation cross-checks"
+    },
+    {
+      "path": "research/arithmetic/verify_polynomial_passport_components.py",
+      "sha256": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+      "locator": "Literal group words, exact ordinary braid closures, block and deck tests"
+    },
+    {
+      "path": "research/arithmetic/sources/artin-theory-of-braids-1947.pdf",
+      "sha256": "6fb7ae639cc460390f3274af5711de5f83f9e951e770f08b18a2223f796cd63b",
+      "locator": "Essential imported primary proof: Theorems15-16 and faithfulness"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_return_braids.py",
+    "checker_sha256": "7d6222493a39a47ac962fadaac3e4de6b893d21ff3c06a08b1e07627fe027775",
+    "receipt": "research/arithmetic/polynomial_return_braids_verification.json",
+    "receipt_sha256": "33006ffd22fff610ecf792bad62f7c7d410cc68c93de0b345708bf43f04abea3",
+    "command": "python3 research/arithmetic/verify_polynomial_return_braids.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL repository root",
+    "software": "Python3.12.3, standard library only, assertions active",
+    "deterministic_inputs": "Six exact quotient seeds: transposition chains in degrees2,3,4 with zero, one or two retained identity positions as declared in the checker. All51 quotient vertices and230 signed edges; complete quartic active-slot choices for five quotient seeds. Six retained degree11 rigid representatives, each lifted through cyclic outer degrees2 and3.",
+    "coverage": "PASS:230 symbolic signed edges,460 two-sided inverse checks,82 braid relation checks,51 full-twist phases and690 permutation specializations at fibre degrees4/5/6. Complete16-triple/four-label quartic catalogue and all10 subgroups of A4. Twenty-two complete decorated components with1661 vertices and26576 direct original tuples, including all four split patterns and the whole2048-tuple degree16 block-size4 sector. Twelve cyclic-outer inheritance controls and three invalid Artin inputs.",
+    "proof_boundary": "Unbounded R1 uses group-valued normalization and Artin's inspected primary theorem, not extrapolation from free-word tests. R4 uses the complete four-sheet catalogue and exact Schreier action. R5 monodromy equality uses the explicit local base generators and straightening within J^d; no large A11-wreath closure was attempted. The odd-d spin assertion uses H5's proven type formula, not a new Clifford computation."
+  },
+  "mathematical_review": {
+    "scope": "Internal audit of positivity/peripheral cycles, fixed product over an arbitrary group, signed literal inverses, exact substitution convention, identity deletion, root-phase quotient, the A4 rather than S4 image, complete index-three return patterns, complete subgroup orbit table, direct sharpness with canonical fibre4, and cyclic-outer preservation of all inner components with exact embedded monodromy.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "remaining_frontier": "The full objective remains open: primitive Sn/An components with r>=3, restricted inner-braid actions for fibres at least5 outside L5's cyclic family, and reduced lifting invariants. Fibre4 is now resolved by R3-R4, with all possible split patterns shown in R6."
+}

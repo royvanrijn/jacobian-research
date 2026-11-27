@@ -1,0 +1,6652 @@
+{
+  "schema_version": 1,
+  "kind": "polynomial_return_braids_and_quartic_gluing",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "7d6222493a39a47ac962fadaac3e4de6b893d21ff3c06a08b1e07627fe027775",
+  "input_sha256": {
+    "POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md": "cd3bab4647cebe8d211920256fad55d03d9ad188eb1900d7095f2eedf9fd5ccc",
+    "POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+    "POLYNOMIAL_PASSPORT_COMPONENTS.md": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+    "verify_polynomial_lift_transport.py": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
+    "verify_polynomial_passport_components.py": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+    "polynomial_passport_components_inputs.json": "6fd3f187d31bb4c1c0052adce2bf7ea37814caf7e2dbbef473b8f185df0b6557",
+    "sources/artin-theory-of-braids-1947.pdf": "6fb7ae639cc460390f3274af5711de5f83f9e951e770f08b18a2223f796cd63b"
+  },
+  "free_group_controls": {
+    "complete_domains": [
+      {
+        "quotient_degree": 2,
+        "factor_positions": 2,
+        "complete_quotient_orbit": 2,
+        "signed_edges": 4,
+        "two_sided_inverse_tests": 8,
+        "braid_relation_tests": 0,
+        "full_twist_root_phase_tests": 2,
+        "permutation_specializations_degrees": [
+          4,
+          5,
+          6
+        ],
+        "permutation_specialization_tests": 12
+      },
+      {
+        "quotient_degree": 2,
+        "factor_positions": 3,
+        "complete_quotient_orbit": 3,
+        "signed_edges": 12,
+        "two_sided_inverse_tests": 24,
+        "braid_relation_tests": 3,
+        "full_twist_root_phase_tests": 3,
+        "permutation_specializations_degrees": [
+          4,
+          5,
+          6
+        ],
+        "permutation_specialization_tests": 36
+      },
+      {
+        "quotient_degree": 3,
+        "factor_positions": 2,
+        "complete_quotient_orbit": 3,
+        "signed_edges": 6,
+        "two_sided_inverse_tests": 12,
+        "braid_relation_tests": 0,
+        "full_twist_root_phase_tests": 3,
+        "permutation_specializations_degrees": [
+          4,
+          5,
+          6
+        ],
+        "permutation_specialization_tests": 18
+      },
+      {
+        "quotient_degree": 3,
+        "factor_positions": 3,
+        "complete_quotient_orbit": 9,
+        "signed_edges": 36,
+        "two_sided_inverse_tests": 72,
+        "braid_relation_tests": 9,
+        "full_twist_root_phase_tests": 9,
+        "permutation_specializations_degrees": [
+          4,
+          5,
+          6
+        ],
+        "permutation_specialization_tests": 108
+      },
+      {
+        "quotient_degree": 3,
+        "factor_positions": 4,
+        "complete_quotient_orbit": 18,
+        "signed_edges": 108,
+        "two_sided_inverse_tests": 216,
+        "braid_relation_tests": 54,
+        "full_twist_root_phase_tests": 18,
+        "permutation_specializations_degrees": [
+          4,
+          5,
+          6
+        ],
+        "permutation_specialization_tests": 324
+      },
+      {
+        "quotient_degree": 4,
+        "factor_positions": 3,
+        "complete_quotient_orbit": 16,
+        "signed_edges": 64,
+        "two_sided_inverse_tests": 128,
+        "braid_relation_tests": 16,
+        "full_twist_root_phase_tests": 16,
+        "permutation_specializations_degrees": [
+          4,
+          5,
+          6
+        ],
+        "permutation_specialization_tests": 192
+      }
+    ],
+    "degree2_literal_substitutions": [
+      {
+        "original_word": [
+          1
+        ],
+        "return_images": [
+          [
+            3
+          ],
+          [
+            -3,
+            1,
+            3
+          ],
+          [
+            -3,
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "original_word": [
+          -1
+        ],
+        "return_images": [
+          [
+            1,
+            2,
+            -1
+          ],
+          [
+            1
+          ],
+          [
+            3
+          ]
+        ]
+      },
+      {
+        "original_word": [
+          1,
+          1
+        ],
+        "return_images": [
+          [
+            -3,
+            1,
+            3
+          ],
+          [
+            -3,
+            -1,
+            3,
+            1,
+            3
+          ],
+          [
+            -3,
+            2,
+            3
+          ]
+        ]
+      }
+    ]
+  },
+  "quartic_inner_and_subgroups": {
+    "two_return_patterns": [
+      {
+        "ordered_return_pattern": "C,T",
+        "literal_fibre": 4,
+        "root_phase_orbits": 1,
+        "literal_pairs": [
+          [
+            [
+              0,
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              1,
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              2,
+              1,
+              3,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              3
+            ]
+          ]
+        ]
+      },
+      {
+        "ordered_return_pattern": "D,T",
+        "literal_fibre": 2,
+        "root_phase_orbits": 1,
+        "literal_pairs": [
+          [
+            [
+              1,
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              3,
+              2,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              3
+            ]
+          ]
+        ]
+      }
+    ],
+    "all_triple_T_tuples": [
+      [
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          0,
+          3,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          3,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          3,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          0,
+          3,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          1,
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ]
+      ]
+    ],
+    "four_rotation_class_representatives": [
+      [
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          0,
+          3,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          3,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "inner_Q1_Q2_actions": [
+      [
+        3,
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1,
+        3
+      ]
+    ],
+    "inner_absolute_image_order": 12,
+    "complete_A4_subgroup_order_census": {
+      "2": 3,
+      "3": 4,
+      "1": 1,
+      "4": 1,
+      "12": 1
+    }
+  },
+  "complete_quartic_gluing_controls": {
+    "complete_domains": [
+      {
+        "quotient_degree": 2,
+        "factor_positions": 2,
+        "all_base_triples_inspected": 1,
+        "decorated_components": [
+          {
+            "decorated_vertices": 2,
+            "directed_edges": 4,
+            "return_label_group_order": 2,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "literal_component_sizes": [
+              16,
+              16
+            ],
+            "base_active_positions": [
+              0,
+              1,
+              2
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  3
+                ],
+                "literal_orbit": 16,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  2,
+                  8
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    4,
+                    3,
+                    2,
+                    7,
+                    6,
+                    5
+                  ],
+                  [
+                    1,
+                    4,
+                    3,
+                    2,
+                    7,
+                    6,
+                    5,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "f3d0159a51480ef73590e3395b89d79696ef9c19e75a4525ecc89b5f844fda2b"
+              },
+              {
+                "label_orbit": [
+                  1,
+                  2
+                ],
+                "literal_orbit": 16,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  2,
+                  8
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3
+                  ],
+                  [
+                    1,
+                    2,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "a34714730cb940a4d2b74816967e8e31e913fdce23280775f98f90b5974202dd"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "quotient_degree": 2,
+        "factor_positions": 3,
+        "all_base_triples_inspected": 10,
+        "decorated_components": [
+          {
+            "decorated_vertices": 12,
+            "directed_edges": 48,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              192
+            ],
+            "base_active_positions": [
+              0,
+              1,
+              2
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 192,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 24,
+                "all_block_divisors": [
+                  1,
+                  2,
+                  8
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    7,
+                    6,
+                    5
+                  ],
+                  [
+                    0,
+                    1,
+                    2,
+                    7,
+                    4,
+                    5,
+                    6,
+                    3
+                  ],
+                  [
+                    1,
+                    2,
+                    7,
+                    4,
+                    3,
+                    6,
+                    5,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "391c7335c362e7126c0e5c921d10597847302bed0ff41f613bbe97d2087e350c"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 12,
+            "directed_edges": 48,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              192
+            ],
+            "base_active_positions": [
+              1,
+              2,
+              3
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 192,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 24,
+                "all_block_divisors": [
+                  1,
+                  2,
+                  8
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    7,
+                    6,
+                    5
+                  ],
+                  [
+                    0,
+                    7,
+                    4,
+                    3,
+                    2,
+                    5,
+                    6,
+                    1
+                  ],
+                  [
+                    7,
+                    4,
+                    3,
+                    2,
+                    1,
+                    6,
+                    5,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "ece426b4b27495973e0b0d82930ad1b3181f20de72b1e0e69421e286712fcf98"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "quotient_degree": 3,
+        "factor_positions": 2,
+        "all_base_triples_inspected": 4,
+        "decorated_components": [
+          {
+            "decorated_vertices": 6,
+            "directed_edges": 12,
+            "return_label_group_order": 1,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "label_orbits": [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              24,
+              24,
+              24,
+              24
+            ],
+            "base_active_positions": [
+              0,
+              1,
+              2
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0
+                ],
+                "literal_orbit": 24,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    2,
+                    1,
+                    3,
+                    8,
+                    7,
+                    6,
+                    5,
+                    10,
+                    9,
+                    11,
+                    4
+                  ],
+                  [
+                    2,
+                    1,
+                    3,
+                    11,
+                    7,
+                    6,
+                    5,
+                    4,
+                    9,
+                    8,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "16d3386657e09a15ce25749bcd5a1904a6f2825262a0f16ade2cc81ccfe3c489"
+              },
+              {
+                "label_orbit": [
+                  1
+                ],
+                "literal_orbit": 24,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    2,
+                    1,
+                    3,
+                    11,
+                    7,
+                    6,
+                    8,
+                    10,
+                    9,
+                    5,
+                    4
+                  ],
+                  [
+                    2,
+                    1,
+                    3,
+                    11,
+                    10,
+                    6,
+                    5,
+                    7,
+                    9,
+                    8,
+                    4,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "c7d4159576e8580def86091c03b0beb98d77928cd8e3b6ea9f14a6b98082aaea"
+              },
+              {
+                "label_orbit": [
+                  2
+                ],
+                "literal_orbit": 24,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    2,
+                    1,
+                    3,
+                    5,
+                    7,
+                    6,
+                    11,
+                    10,
+                    9,
+                    8,
+                    4
+                  ],
+                  [
+                    2,
+                    1,
+                    3,
+                    11,
+                    4,
+                    6,
+                    5,
+                    10,
+                    9,
+                    8,
+                    7,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "0c075af4f0816d18e68a16001d44d50e9e1d08b7cfe6ee99dac8a6e669aa4286"
+              },
+              {
+                "label_orbit": [
+                  3
+                ],
+                "literal_orbit": 24,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    2,
+                    1,
+                    3,
+                    5,
+                    10,
+                    9,
+                    8,
+                    7,
+                    6,
+                    11,
+                    4
+                  ],
+                  [
+                    2,
+                    1,
+                    3,
+                    11,
+                    4,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "ea1954da8b6d092ec1dbe0a9ebf4f5145adaf6f5f4312c12a3758b8d62dea097"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 6,
+            "directed_edges": 12,
+            "return_label_group_order": 1,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "label_orbits": [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              24,
+              24,
+              24,
+              24
+            ],
+            "base_active_positions": [
+              0,
+              2,
+              3
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0
+                ],
+                "literal_orbit": 24,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    2,
+                    1,
+                    6,
+                    5,
+                    4,
+                    3,
+                    11,
+                    10,
+                    9,
+                    8,
+                    7
+                  ],
+                  [
+                    2,
+                    1,
+                    6,
+                    5,
+                    4,
+                    3,
+                    11,
+                    10,
+                    9,
+                    8,
+                    7,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "b11dd08006bcb9a2df6eb8fe53e0b46a5ae25f8947598395708a383fd51df5f1"
+              },
+              {
+                "label_orbit": [
+                  1
+                ],
+                "literal_orbit": 24,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    2,
+                    1,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    11,
+                    10
+                  ],
+                  [
+                    2,
+                    1,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    11,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "84727bf40575c09ed5a05508737797a5960ae846e62d662048231f259a609665"
+              },
+              {
+                "label_orbit": [
+                  2
+                ],
+                "literal_orbit": 24,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    2,
+                    1,
+                    3,
+                    11,
+                    10,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4
+                  ],
+                  [
+                    2,
+                    1,
+                    3,
+                    11,
+                    10,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "b47cfa26ec27485b3feaefbcfc2dc8ec7616d5a56d9509e34959cc546f26d176"
+              },
+              {
+                "label_orbit": [
+                  3
+                ],
+                "literal_orbit": 24,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 2,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    2,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    11,
+                    10,
+                    9,
+                    8,
+                    1
+                  ],
+                  [
+                    11,
+                    1,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    10,
+                    9,
+                    8,
+                    7,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "8e8cc5b692858816c324d1413f14af0c67ab036e4368518d9ba23bcc3355b623"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "quotient_degree": 3,
+        "factor_positions": 3,
+        "all_base_triples_inspected": 35,
+        "decorated_components": [
+          {
+            "decorated_vertices": 27,
+            "directed_edges": 108,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              432
+            ],
+            "base_active_positions": [
+              0,
+              1,
+              2
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 432,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 36,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    11,
+                    9,
+                    10,
+                    8
+                  ],
+                  [
+                    0,
+                    2,
+                    1,
+                    3,
+                    5,
+                    7,
+                    6,
+                    11,
+                    10,
+                    9,
+                    8,
+                    4
+                  ],
+                  [
+                    2,
+                    1,
+                    3,
+                    11,
+                    4,
+                    6,
+                    5,
+                    7,
+                    9,
+                    8,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "3376c80bd133d69193289b745b671f2c9d5081c9d54e5e276b3dbaf5d39dd3ca"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 54,
+            "directed_edges": 216,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              864
+            ],
+            "base_active_positions": [
+              0,
+              2,
+              3
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 864,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 72,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    11,
+                    9,
+                    10,
+                    8
+                  ],
+                  [
+                    0,
+                    2,
+                    1,
+                    3,
+                    11,
+                    7,
+                    6,
+                    5,
+                    10,
+                    9,
+                    8,
+                    4
+                  ],
+                  [
+                    2,
+                    1,
+                    3,
+                    11,
+                    7,
+                    6,
+                    5,
+                    4,
+                    9,
+                    8,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "20cc4bc998a677af3dfeddd4ef945ee46cff3b7b1853f418410e4058ac4c35c0"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 54,
+            "directed_edges": 216,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              864
+            ],
+            "base_active_positions": [
+              0,
+              2,
+              4
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 864,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 72,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    11,
+                    6,
+                    10,
+                    8,
+                    9,
+                    7,
+                    5
+                  ],
+                  [
+                    0,
+                    2,
+                    1,
+                    3,
+                    11,
+                    10,
+                    6,
+                    8,
+                    7,
+                    9,
+                    5,
+                    4
+                  ],
+                  [
+                    2,
+                    1,
+                    3,
+                    11,
+                    4,
+                    6,
+                    5,
+                    7,
+                    9,
+                    8,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "c57825060233b850b001f7611648e3ddee3294682153037504ce1713cda737ae"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 54,
+            "directed_edges": 216,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              864
+            ],
+            "base_active_positions": [
+              0,
+              2,
+              5
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 864,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 72,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    11,
+                    9,
+                    10,
+                    8
+                  ],
+                  [
+                    0,
+                    2,
+                    1,
+                    6,
+                    5,
+                    4,
+                    3,
+                    11,
+                    10,
+                    9,
+                    8,
+                    7
+                  ],
+                  [
+                    2,
+                    1,
+                    6,
+                    5,
+                    4,
+                    3,
+                    11,
+                    7,
+                    9,
+                    8,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "17fc81decafb356b54543bbb052dde2221f1536bb05aefd28c2261a610b81a6c"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 54,
+            "directed_edges": 216,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              864
+            ],
+            "base_active_positions": [
+              2,
+              3,
+              4
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 864,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 72,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    11,
+                    6,
+                    10,
+                    8,
+                    9,
+                    7,
+                    5
+                  ],
+                  [
+                    0,
+                    11,
+                    4,
+                    3,
+                    2,
+                    10,
+                    6,
+                    8,
+                    7,
+                    9,
+                    5,
+                    1
+                  ],
+                  [
+                    11,
+                    4,
+                    3,
+                    2,
+                    1,
+                    6,
+                    5,
+                    7,
+                    9,
+                    8,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "d7b31d74f25131e0942757c56806cb2d4478f852ca1e3b552f1bd560bdd9ea66"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 27,
+            "directed_edges": 108,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              432
+            ],
+            "base_active_positions": [
+              2,
+              3,
+              5
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 432,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 36,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    11,
+                    9,
+                    10,
+                    8
+                  ],
+                  [
+                    0,
+                    11,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    10,
+                    9,
+                    8,
+                    1
+                  ],
+                  [
+                    11,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1,
+                    9,
+                    8,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "327bcf20194656b26e9ade06b7e8e8d61f6ed9195eba54bd2411a8acbfee0984"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 9,
+            "directed_edges": 36,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              144
+            ],
+            "base_active_positions": [
+              2,
+              4,
+              6
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2
+              ],
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 144,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 12,
+                "all_block_divisors": [
+                  1,
+                  3,
+                  12
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    11,
+                    3,
+                    10,
+                    5,
+                    9,
+                    7,
+                    8,
+                    6,
+                    4,
+                    2
+                  ],
+                  [
+                    0,
+                    11,
+                    10,
+                    3,
+                    5,
+                    4,
+                    6,
+                    8,
+                    7,
+                    9,
+                    2,
+                    1
+                  ],
+                  [
+                    11,
+                    1,
+                    3,
+                    2,
+                    4,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "1b3594cc590e8a5e483b219192895cb1d03b8980ed9de4914f6b7b0cfd8eb9a8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "quotient_degree": 4,
+        "factor_positions": 3,
+        "all_base_triples_inspected": 84,
+        "decorated_components": [
+          {
+            "decorated_vertices": 16,
+            "directed_edges": 64,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              256
+            ],
+            "base_active_positions": [
+              0,
+              1,
+              2
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 256,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 16,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    9,
+                    11,
+                    14,
+                    12,
+                    13,
+                    15,
+                    10
+                  ],
+                  [
+                    0,
+                    3,
+                    2,
+                    1,
+                    4,
+                    7,
+                    6,
+                    9,
+                    8,
+                    15,
+                    10,
+                    13,
+                    12,
+                    11,
+                    14,
+                    5
+                  ],
+                  [
+                    3,
+                    1,
+                    2,
+                    4,
+                    15,
+                    5,
+                    6,
+                    8,
+                    7,
+                    9,
+                    10,
+                    12,
+                    11,
+                    13,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "26f6c6612ac226cce1c0617153da809cb5decdd5c3e6c423db211138e316f8db"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 192,
+            "directed_edges": 768,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                2,
+                3,
+                0,
+                1
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              3072
+            ],
+            "base_active_positions": [
+              0,
+              1,
+              3
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 3072,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 192,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    9,
+                    11,
+                    10,
+                    12,
+                    13,
+                    15,
+                    14
+                  ],
+                  [
+                    0,
+                    3,
+                    2,
+                    1,
+                    4,
+                    7,
+                    6,
+                    9,
+                    8,
+                    15,
+                    10,
+                    13,
+                    12,
+                    11,
+                    14,
+                    5
+                  ],
+                  [
+                    3,
+                    1,
+                    2,
+                    4,
+                    15,
+                    5,
+                    6,
+                    8,
+                    7,
+                    13,
+                    10,
+                    12,
+                    11,
+                    9,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "c46208cf37b4b6c4c42f930ab2884da7a16f84ea39e9c64c35735cb8670c2129"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 96,
+            "directed_edges": 384,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              1536
+            ],
+            "base_active_positions": [
+              0,
+              1,
+              6
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 1536,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 96,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    9,
+                    11,
+                    14,
+                    12,
+                    13,
+                    15,
+                    10
+                  ],
+                  [
+                    0,
+                    3,
+                    2,
+                    1,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    15,
+                    10,
+                    13,
+                    12,
+                    11,
+                    14,
+                    9
+                  ],
+                  [
+                    3,
+                    1,
+                    2,
+                    8,
+                    7,
+                    5,
+                    6,
+                    4,
+                    15,
+                    9,
+                    10,
+                    12,
+                    11,
+                    13,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "00069a85b1432735f59db61ccc6e5a36824f7d65e4cebb39ef33760b2143e4c2"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 384,
+            "directed_edges": 1536,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                2,
+                3,
+                0,
+                1
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              6144
+            ],
+            "base_active_positions": [
+              0,
+              3,
+              4
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 6144,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 384,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    9,
+                    11,
+                    10,
+                    12,
+                    13,
+                    15,
+                    14
+                  ],
+                  [
+                    0,
+                    3,
+                    2,
+                    1,
+                    4,
+                    15,
+                    6,
+                    13,
+                    12,
+                    11,
+                    10,
+                    9,
+                    8,
+                    7,
+                    14,
+                    5
+                  ],
+                  [
+                    3,
+                    1,
+                    2,
+                    4,
+                    15,
+                    13,
+                    6,
+                    12,
+                    11,
+                    9,
+                    10,
+                    8,
+                    7,
+                    5,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "dd9e726836043549360a59879a9ed99c445a8eb4381e455b0aa65450c6fcacf8"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 48,
+            "directed_edges": 192,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              768
+            ],
+            "base_active_positions": [
+              0,
+              3,
+              5
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 768,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 48,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    9,
+                    15,
+                    14,
+                    12,
+                    13,
+                    11,
+                    10
+                  ],
+                  [
+                    0,
+                    3,
+                    2,
+                    1,
+                    4,
+                    15,
+                    6,
+                    9,
+                    8,
+                    7,
+                    10,
+                    13,
+                    12,
+                    11,
+                    14,
+                    5
+                  ],
+                  [
+                    3,
+                    1,
+                    2,
+                    4,
+                    15,
+                    9,
+                    6,
+                    8,
+                    7,
+                    5,
+                    14,
+                    12,
+                    11,
+                    13,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "3b65ed14224539adba6e0e6add66eb3f30125068c77b3158eabed154f210eb00"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 192,
+            "directed_edges": 768,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                2,
+                3,
+                0,
+                1
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              3072
+            ],
+            "base_active_positions": [
+              0,
+              4,
+              6
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 3072,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 192,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    9,
+                    11,
+                    14,
+                    12,
+                    13,
+                    15,
+                    10
+                  ],
+                  [
+                    0,
+                    15,
+                    2,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    10,
+                    13,
+                    12,
+                    11,
+                    14,
+                    1
+                  ],
+                  [
+                    15,
+                    9,
+                    2,
+                    8,
+                    7,
+                    5,
+                    6,
+                    4,
+                    3,
+                    1,
+                    10,
+                    12,
+                    11,
+                    13,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "202931201bc9487ef3150780a9248cfdd0901a00e22a5e1cf28c66428b7572e5"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 96,
+            "directed_edges": 384,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              1536
+            ],
+            "base_active_positions": [
+              0,
+              4,
+              7
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 1536,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 96,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    9,
+                    15,
+                    14,
+                    12,
+                    13,
+                    11,
+                    10
+                  ],
+                  [
+                    0,
+                    3,
+                    2,
+                    1,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    15,
+                    14,
+                    13,
+                    12,
+                    11,
+                    10,
+                    9
+                  ],
+                  [
+                    3,
+                    1,
+                    2,
+                    8,
+                    7,
+                    5,
+                    6,
+                    4,
+                    15,
+                    9,
+                    10,
+                    12,
+                    11,
+                    13,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "4a60d0d0701a5c6309fe83a1a2be9779de7147f635b49fc109818d849ad40b3a"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 192,
+            "directed_edges": 768,
+            "return_label_group_order": 12,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                1,
+                3,
+                2,
+                0
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ],
+              [
+                2,
+                1,
+                3,
+                0
+              ],
+              [
+                3,
+                0,
+                2,
+                1
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              3072
+            ],
+            "base_active_positions": [
+              3,
+              4,
+              5
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 3072,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 192,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    9,
+                    15,
+                    14,
+                    12,
+                    13,
+                    11,
+                    10
+                  ],
+                  [
+                    0,
+                    15,
+                    2,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    10,
+                    13,
+                    12,
+                    11,
+                    14,
+                    1
+                  ],
+                  [
+                    15,
+                    9,
+                    2,
+                    8,
+                    7,
+                    5,
+                    6,
+                    4,
+                    3,
+                    1,
+                    14,
+                    12,
+                    11,
+                    13,
+                    10,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "689cf9a685d53838ad5416c7e4c57e01f25352e894fb540f28b1cdb303aba28c"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 64,
+            "directed_edges": 256,
+            "return_label_group_order": 3,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                1,
+                2,
+                0,
+                3
+              ],
+              [
+                2,
+                0,
+                1,
+                3
+              ]
+            ],
+            "label_orbits": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              256,
+              768
+            ],
+            "base_active_positions": [
+              3,
+              4,
+              6
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0,
+                  1,
+                  2
+                ],
+                "literal_orbit": 768,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 48,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    8,
+                    13,
+                    11,
+                    10,
+                    12,
+                    9,
+                    15,
+                    14
+                  ],
+                  [
+                    0,
+                    15,
+                    2,
+                    13,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    11,
+                    10,
+                    9,
+                    12,
+                    3,
+                    14,
+                    1
+                  ],
+                  [
+                    15,
+                    13,
+                    2,
+                    8,
+                    7,
+                    5,
+                    6,
+                    4,
+                    3,
+                    9,
+                    10,
+                    12,
+                    11,
+                    1,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "31a6ef82d94fba0b99bf62896e6c50e787effc8506d14abb0c784a2e8f4789d6"
+              },
+              {
+                "label_orbit": [
+                  3
+                ],
+                "literal_orbit": 256,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 16,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    13,
+                    7,
+                    6,
+                    8,
+                    9,
+                    11,
+                    10,
+                    12,
+                    5,
+                    15,
+                    14
+                  ],
+                  [
+                    0,
+                    15,
+                    2,
+                    13,
+                    4,
+                    7,
+                    6,
+                    5,
+                    12,
+                    11,
+                    10,
+                    9,
+                    8,
+                    3,
+                    14,
+                    1
+                  ],
+                  [
+                    15,
+                    13,
+                    2,
+                    4,
+                    3,
+                    5,
+                    6,
+                    12,
+                    11,
+                    9,
+                    10,
+                    8,
+                    7,
+                    1,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "7b2175db0bffd913e29d22743efd0367052c79d670b06fe58f25bd2dda4d9c66"
+              }
+            ]
+          },
+          {
+            "decorated_vertices": 64,
+            "directed_edges": 256,
+            "return_label_group_order": 3,
+            "return_label_generators": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                3,
+                1
+              ],
+              [
+                0,
+                3,
+                1,
+                2
+              ]
+            ],
+            "label_orbits": [
+              [
+                0
+              ],
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "literal_component_sizes": [
+              256,
+              768
+            ],
+            "base_active_positions": [
+              3,
+              4,
+              8
+            ],
+            "base_literal_quotient": [
+              [
+                1,
+                0,
+                2,
+                3
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                0,
+                1,
+                3,
+                2
+              ]
+            ],
+            "direct_original_component_controls": [
+              {
+                "label_orbit": [
+                  0
+                ],
+                "literal_orbit": 256,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 16,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    9,
+                    7,
+                    6,
+                    8,
+                    5,
+                    15,
+                    14,
+                    12,
+                    13,
+                    11,
+                    10
+                  ],
+                  [
+                    0,
+                    15,
+                    2,
+                    9,
+                    4,
+                    7,
+                    6,
+                    5,
+                    8,
+                    3,
+                    14,
+                    13,
+                    12,
+                    11,
+                    10,
+                    1
+                  ],
+                  [
+                    15,
+                    9,
+                    2,
+                    4,
+                    3,
+                    5,
+                    6,
+                    8,
+                    7,
+                    1,
+                    10,
+                    12,
+                    11,
+                    13,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "883b303e63dc28a1a20ff00ed3897e1d9d66e7c8369be8b1d08410d5ee710c12"
+              },
+              {
+                "label_orbit": [
+                  1,
+                  2,
+                  3
+                ],
+                "literal_orbit": 768,
+                "cyclic_stabilizer_order": 1,
+                "absolute_orbit": 48,
+                "all_block_divisors": [
+                  1,
+                  4,
+                  16
+                ],
+                "literal_seed": [
+                  [
+                    0,
+                    1,
+                    3,
+                    2,
+                    4,
+                    5,
+                    7,
+                    6,
+                    12,
+                    9,
+                    11,
+                    10,
+                    8,
+                    13,
+                    15,
+                    14
+                  ],
+                  [
+                    0,
+                    15,
+                    2,
+                    13,
+                    12,
+                    7,
+                    6,
+                    5,
+                    8,
+                    11,
+                    10,
+                    9,
+                    4,
+                    3,
+                    14,
+                    1
+                  ],
+                  [
+                    15,
+                    13,
+                    2,
+                    12,
+                    7,
+                    5,
+                    6,
+                    4,
+                    11,
+                    9,
+                    10,
+                    8,
+                    3,
+                    1,
+                    14,
+                    0
+                  ]
+                ],
+                "orbit_sha256": "712af8d483613d5a8be3729053c12d245d0614180b6b37ee489be1b7af46a250"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "direct_original_literal_states": 26576,
+    "degree16_three_2power5_sector": {
+      "decorated_vertices": 128,
+      "literal_states": 2048,
+      "literal_components": [
+        256,
+        256,
+        768,
+        768
+      ],
+      "absolute_components": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "all_block_divisors": [
+        1,
+        4,
+        16
+      ]
+    }
+  },
+  "cyclic_outer_inheritance": {
+    "six_distinct_inner_components": true,
+    "controls": [
+      {
+        "outer_degree": 2,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            21,
+            2,
+            1,
+            4,
+            3,
+            6,
+            5,
+            8,
+            7,
+            10,
+            9,
+            12,
+            11,
+            14,
+            13,
+            16,
+            15,
+            18,
+            17,
+            20,
+            19,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            6,
+            5,
+            20,
+            7,
+            8,
+            9,
+            12,
+            11,
+            18,
+            13,
+            14,
+            15,
+            16,
+            17,
+            10,
+            19,
+            4,
+            21
+          ],
+          [
+            2,
+            1,
+            20,
+            3,
+            4,
+            5,
+            8,
+            7,
+            18,
+            9,
+            10,
+            11,
+            14,
+            13,
+            16,
+            15,
+            12,
+            17,
+            6,
+            19,
+            0,
+            21
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            3,
+            10,
+            4,
+            6,
+            9,
+            7,
+            8,
+            5,
+            2
+          ],
+          [
+            1,
+            10,
+            2,
+            4,
+            9,
+            5,
+            7,
+            8,
+            6,
+            3,
+            0
+          ]
+        ],
+        "group": "A11 wr C2",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": null,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 3,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            31,
+            2,
+            3,
+            1,
+            5,
+            6,
+            4,
+            8,
+            9,
+            7,
+            11,
+            12,
+            10,
+            14,
+            15,
+            13,
+            17,
+            18,
+            16,
+            20,
+            21,
+            19,
+            23,
+            24,
+            22,
+            26,
+            27,
+            25,
+            29,
+            30,
+            28,
+            32,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            7,
+            8,
+            30,
+            10,
+            11,
+            12,
+            13,
+            14,
+            18,
+            16,
+            17,
+            27,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            15,
+            28,
+            29,
+            6,
+            31,
+            32
+          ],
+          [
+            3,
+            1,
+            2,
+            30,
+            4,
+            5,
+            6,
+            7,
+            8,
+            12,
+            10,
+            11,
+            27,
+            13,
+            14,
+            15,
+            16,
+            17,
+            21,
+            19,
+            20,
+            24,
+            22,
+            23,
+            18,
+            25,
+            26,
+            9,
+            28,
+            29,
+            0,
+            31,
+            32
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            3,
+            10,
+            4,
+            6,
+            9,
+            7,
+            8,
+            5,
+            2
+          ],
+          [
+            1,
+            10,
+            2,
+            4,
+            9,
+            5,
+            7,
+            8,
+            6,
+            3,
+            0
+          ]
+        ],
+        "group": "A11 wr C3",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": 1,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              1,
+              2,
+              -1,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              1,
+              3,
+              -1,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 2,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            21,
+            2,
+            1,
+            4,
+            3,
+            6,
+            5,
+            8,
+            7,
+            10,
+            9,
+            12,
+            11,
+            14,
+            13,
+            16,
+            15,
+            18,
+            17,
+            20,
+            19,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            6,
+            5,
+            20,
+            7,
+            8,
+            9,
+            16,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            17,
+            10,
+            19,
+            4,
+            21
+          ],
+          [
+            2,
+            1,
+            20,
+            3,
+            4,
+            5,
+            8,
+            7,
+            18,
+            9,
+            12,
+            11,
+            14,
+            13,
+            10,
+            15,
+            16,
+            17,
+            6,
+            19,
+            0,
+            21
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            3,
+            10,
+            4,
+            8,
+            6,
+            7,
+            9,
+            5,
+            2
+          ],
+          [
+            1,
+            10,
+            2,
+            4,
+            9,
+            6,
+            7,
+            5,
+            8,
+            3,
+            0
+          ]
+        ],
+        "group": "A11 wr C2",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": null,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 3,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            31,
+            2,
+            3,
+            1,
+            5,
+            6,
+            4,
+            8,
+            9,
+            7,
+            11,
+            12,
+            10,
+            14,
+            15,
+            13,
+            17,
+            18,
+            16,
+            20,
+            21,
+            19,
+            23,
+            24,
+            22,
+            26,
+            27,
+            25,
+            29,
+            30,
+            28,
+            32,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            7,
+            8,
+            30,
+            10,
+            11,
+            12,
+            13,
+            14,
+            24,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            27,
+            25,
+            26,
+            15,
+            28,
+            29,
+            6,
+            31,
+            32
+          ],
+          [
+            3,
+            1,
+            2,
+            30,
+            4,
+            5,
+            6,
+            7,
+            8,
+            12,
+            10,
+            11,
+            27,
+            13,
+            14,
+            18,
+            16,
+            17,
+            21,
+            19,
+            20,
+            15,
+            22,
+            23,
+            24,
+            25,
+            26,
+            9,
+            28,
+            29,
+            0,
+            31,
+            32
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            3,
+            10,
+            4,
+            8,
+            6,
+            7,
+            9,
+            5,
+            2
+          ],
+          [
+            1,
+            10,
+            2,
+            4,
+            9,
+            6,
+            7,
+            5,
+            8,
+            3,
+            0
+          ]
+        ],
+        "group": "A11 wr C3",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": 1,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              1,
+              2,
+              -1,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              1,
+              3,
+              -1,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 2,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            21,
+            2,
+            1,
+            4,
+            3,
+            6,
+            5,
+            8,
+            7,
+            10,
+            9,
+            12,
+            11,
+            14,
+            13,
+            16,
+            15,
+            18,
+            17,
+            20,
+            19,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            6,
+            5,
+            20,
+            7,
+            10,
+            9,
+            16,
+            11,
+            12,
+            13,
+            14,
+            15,
+            8,
+            17,
+            18,
+            19,
+            4,
+            21
+          ],
+          [
+            2,
+            1,
+            20,
+            3,
+            4,
+            5,
+            16,
+            7,
+            8,
+            9,
+            12,
+            11,
+            14,
+            13,
+            10,
+            15,
+            18,
+            17,
+            6,
+            19,
+            0,
+            21
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            3,
+            10,
+            5,
+            8,
+            6,
+            7,
+            4,
+            9,
+            2
+          ],
+          [
+            1,
+            10,
+            2,
+            8,
+            4,
+            6,
+            7,
+            5,
+            9,
+            3,
+            0
+          ]
+        ],
+        "group": "A11 wr C2",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": null,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 3,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            31,
+            2,
+            3,
+            1,
+            5,
+            6,
+            4,
+            8,
+            9,
+            7,
+            11,
+            12,
+            10,
+            14,
+            15,
+            13,
+            17,
+            18,
+            16,
+            20,
+            21,
+            19,
+            23,
+            24,
+            22,
+            26,
+            27,
+            25,
+            29,
+            30,
+            28,
+            32,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            7,
+            8,
+            30,
+            10,
+            11,
+            15,
+            13,
+            14,
+            24,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            12,
+            25,
+            26,
+            27,
+            28,
+            29,
+            6,
+            31,
+            32
+          ],
+          [
+            3,
+            1,
+            2,
+            30,
+            4,
+            5,
+            6,
+            7,
+            8,
+            24,
+            10,
+            11,
+            12,
+            13,
+            14,
+            18,
+            16,
+            17,
+            21,
+            19,
+            20,
+            15,
+            22,
+            23,
+            27,
+            25,
+            26,
+            9,
+            28,
+            29,
+            0,
+            31,
+            32
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            3,
+            10,
+            5,
+            8,
+            6,
+            7,
+            4,
+            9,
+            2
+          ],
+          [
+            1,
+            10,
+            2,
+            8,
+            4,
+            6,
+            7,
+            5,
+            9,
+            3,
+            0
+          ]
+        ],
+        "group": "A11 wr C3",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": 1,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              1,
+              2,
+              -1,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              1,
+              3,
+              -1,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 2,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            21,
+            2,
+            1,
+            4,
+            3,
+            6,
+            5,
+            8,
+            7,
+            10,
+            9,
+            12,
+            11,
+            14,
+            13,
+            16,
+            15,
+            18,
+            17,
+            20,
+            19,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            10,
+            5,
+            6,
+            7,
+            8,
+            9,
+            20,
+            11,
+            12,
+            13,
+            16,
+            15,
+            18,
+            17,
+            14,
+            19,
+            4,
+            21
+          ],
+          [
+            2,
+            1,
+            20,
+            3,
+            6,
+            5,
+            8,
+            7,
+            4,
+            9,
+            12,
+            11,
+            18,
+            13,
+            14,
+            15,
+            16,
+            17,
+            10,
+            19,
+            0,
+            21
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            5,
+            3,
+            4,
+            10,
+            6,
+            8,
+            9,
+            7,
+            2
+          ],
+          [
+            1,
+            10,
+            3,
+            4,
+            2,
+            6,
+            9,
+            7,
+            8,
+            5,
+            0
+          ]
+        ],
+        "group": "A11 wr C2",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": null,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 3,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            31,
+            2,
+            3,
+            1,
+            5,
+            6,
+            4,
+            8,
+            9,
+            7,
+            11,
+            12,
+            10,
+            14,
+            15,
+            13,
+            17,
+            18,
+            16,
+            20,
+            21,
+            19,
+            23,
+            24,
+            22,
+            26,
+            27,
+            25,
+            29,
+            30,
+            28,
+            32,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            15,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            30,
+            16,
+            17,
+            18,
+            19,
+            20,
+            24,
+            22,
+            23,
+            27,
+            25,
+            26,
+            21,
+            28,
+            29,
+            6,
+            31,
+            32
+          ],
+          [
+            3,
+            1,
+            2,
+            30,
+            4,
+            5,
+            9,
+            7,
+            8,
+            12,
+            10,
+            11,
+            6,
+            13,
+            14,
+            18,
+            16,
+            17,
+            27,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            15,
+            28,
+            29,
+            0,
+            31,
+            32
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            5,
+            3,
+            4,
+            10,
+            6,
+            8,
+            9,
+            7,
+            2
+          ],
+          [
+            1,
+            10,
+            3,
+            4,
+            2,
+            6,
+            9,
+            7,
+            8,
+            5,
+            0
+          ]
+        ],
+        "group": "A11 wr C3",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": 1,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              1,
+              2,
+              -1,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              1,
+              3,
+              -1,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 2,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            21,
+            2,
+            1,
+            4,
+            3,
+            6,
+            5,
+            8,
+            7,
+            10,
+            9,
+            12,
+            11,
+            14,
+            13,
+            16,
+            15,
+            18,
+            17,
+            20,
+            19,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            10,
+            5,
+            6,
+            7,
+            8,
+            9,
+            20,
+            11,
+            14,
+            13,
+            16,
+            15,
+            12,
+            17,
+            18,
+            19,
+            4,
+            21
+          ],
+          [
+            2,
+            1,
+            20,
+            3,
+            6,
+            5,
+            8,
+            7,
+            4,
+            9,
+            16,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            17,
+            10,
+            19,
+            0,
+            21
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            3,
+            10,
+            5,
+            6,
+            4,
+            8,
+            9,
+            7,
+            2
+          ],
+          [
+            1,
+            10,
+            2,
+            6,
+            4,
+            5,
+            9,
+            7,
+            8,
+            3,
+            0
+          ]
+        ],
+        "group": "A11 wr C2",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": null,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 3,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            31,
+            2,
+            3,
+            1,
+            5,
+            6,
+            4,
+            8,
+            9,
+            7,
+            11,
+            12,
+            10,
+            14,
+            15,
+            13,
+            17,
+            18,
+            16,
+            20,
+            21,
+            19,
+            23,
+            24,
+            22,
+            26,
+            27,
+            25,
+            29,
+            30,
+            28,
+            32,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            15,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            30,
+            16,
+            17,
+            21,
+            19,
+            20,
+            24,
+            22,
+            23,
+            18,
+            25,
+            26,
+            27,
+            28,
+            29,
+            6,
+            31,
+            32
+          ],
+          [
+            3,
+            1,
+            2,
+            30,
+            4,
+            5,
+            9,
+            7,
+            8,
+            12,
+            10,
+            11,
+            6,
+            13,
+            14,
+            24,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            27,
+            25,
+            26,
+            15,
+            28,
+            29,
+            0,
+            31,
+            32
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            3,
+            10,
+            5,
+            6,
+            4,
+            8,
+            9,
+            7,
+            2
+          ],
+          [
+            1,
+            10,
+            2,
+            6,
+            4,
+            5,
+            9,
+            7,
+            8,
+            3,
+            0
+          ]
+        ],
+        "group": "A11 wr C3",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": 1,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              1,
+              2,
+              -1,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              1,
+              3,
+              -1,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 2,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            21,
+            2,
+            1,
+            4,
+            3,
+            6,
+            5,
+            8,
+            7,
+            10,
+            9,
+            12,
+            11,
+            14,
+            13,
+            16,
+            15,
+            18,
+            17,
+            20,
+            19,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            18,
+            5,
+            6,
+            7,
+            10,
+            9,
+            16,
+            11,
+            12,
+            13,
+            14,
+            15,
+            8,
+            17,
+            20,
+            19,
+            4,
+            21
+          ],
+          [
+            2,
+            1,
+            20,
+            3,
+            6,
+            5,
+            16,
+            7,
+            8,
+            9,
+            12,
+            11,
+            14,
+            13,
+            10,
+            15,
+            4,
+            17,
+            18,
+            19,
+            0,
+            21
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            9,
+            3,
+            5,
+            8,
+            6,
+            7,
+            4,
+            10,
+            2
+          ],
+          [
+            1,
+            10,
+            3,
+            8,
+            4,
+            6,
+            7,
+            5,
+            2,
+            9,
+            0
+          ]
+        ],
+        "group": "A11 wr C2",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": null,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          }
+        ]
+      },
+      {
+        "outer_degree": 3,
+        "inner_degree": 11,
+        "literal_seed": [
+          [
+            31,
+            2,
+            3,
+            1,
+            5,
+            6,
+            4,
+            8,
+            9,
+            7,
+            11,
+            12,
+            10,
+            14,
+            15,
+            13,
+            17,
+            18,
+            16,
+            20,
+            21,
+            19,
+            23,
+            24,
+            22,
+            26,
+            27,
+            25,
+            29,
+            30,
+            28,
+            32,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            27,
+            7,
+            8,
+            9,
+            10,
+            11,
+            15,
+            13,
+            14,
+            24,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            12,
+            25,
+            26,
+            30,
+            28,
+            29,
+            6,
+            31,
+            32
+          ],
+          [
+            3,
+            1,
+            2,
+            30,
+            4,
+            5,
+            9,
+            7,
+            8,
+            24,
+            10,
+            11,
+            12,
+            13,
+            14,
+            18,
+            16,
+            17,
+            21,
+            19,
+            20,
+            15,
+            22,
+            23,
+            6,
+            25,
+            26,
+            27,
+            28,
+            29,
+            0,
+            31,
+            32
+          ]
+        ],
+        "inner_rigid_component_label": [
+          [
+            0,
+            1,
+            9,
+            3,
+            5,
+            8,
+            6,
+            7,
+            4,
+            10,
+            2
+          ],
+          [
+            1,
+            10,
+            3,
+            8,
+            4,
+            6,
+            7,
+            5,
+            2,
+            9,
+            0
+          ]
+        ],
+        "group": "A11 wr C3",
+        "group_basis": "R5 wreath embedding + H6 A11 certificate + local conjugates",
+        "standard_spin_from_H5": 1,
+        "local_factor_certificates": [
+          {
+            "block": 0,
+            "inner_factor": 1,
+            "group_word": [
+              2
+            ]
+          },
+          {
+            "block": 0,
+            "inner_factor": 2,
+            "group_word": [
+              3
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              2,
+              -1
+            ]
+          },
+          {
+            "block": 1,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              3,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 1,
+            "group_word": [
+              1,
+              1,
+              2,
+              -1,
+              -1
+            ]
+          },
+          {
+            "block": 2,
+            "inner_factor": 2,
+            "group_word": [
+              1,
+              1,
+              3,
+              -1,
+              -1
+            ]
+          }
+        ]
+      }
+    ],
+    "assurance": "No large lifted group closure was attempted; wreath equality uses R5 and H6."
+  },
+  "negative_controls": {
+    "peripheral_but_wrong_boundary_rejected": true,
+    "boundary_but_nonperipheral_rejected": true,
+    "negative_generator_rejected": true
+  },
+  "scope": "Uniform R1-R5 written proofs use Artin's actual characterization, the literal tree construction and the finite quartic return catalogue. Bounded controls do not prove other quotient or larger-fibre classifications. The complete arbitrary-passport goal remains open.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

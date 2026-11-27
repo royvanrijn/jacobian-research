@@ -18,7 +18,9 @@ literal degree-\(b\) tuple, determine the induced braid transport, and
 prove sufficiency of the decorated quotient component when \(b=2,3\).
 An explicit degree-eight example shows that this sufficiency fails at
 \(b=4\), even when the separate inner and outer components are unique.
-The arbitrary-passport classification remains open.
+The [quartic return criterion](POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md)
+classifies that extra gluing by a four-state \(A_4\) action for arbitrary
+quotient degree. The arbitrary-passport classification remains open.
 
 ## Primary comparison and conventions
 
@@ -464,7 +466,9 @@ The full component-classification goal remains open. L3 replaces the
 unspecified gluing action by an exact action on smaller-degree data.
 L4 resolves its extra-fibre obstruction for \(b=2,3\), and L5--L7
 classify a further all-degree cyclic-inner subdomain. Arbitrary
-primitive \(S_N/A_N\) passports with at least three finite values,
-and the remaining restricted return actions for larger fibres, still
-require a complete classification. Independent review, independent
-replay and formal verification are not asserted.
+block-size-four sectors are now classified by the
+[return-braid criterion](POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md).
+Primitive \(S_N/A_N\) passports with at least three finite values,
+and the remaining restricted return actions for fibres at least five,
+still require a complete classification. Independent review,
+independent replay and formal verification are not asserted.

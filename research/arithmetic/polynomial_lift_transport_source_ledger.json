@@ -84,7 +84,7 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
-      "sha256": "ad4749a21f2b7796a4537f9ceb005fddae987437507fb757f5283ac009a3a161",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
       "locator": "L1–L9; full scope and conditional residual classification route"
     },
     {
@@ -117,11 +117,11 @@
     "checker": "research/arithmetic/verify_polynomial_lift_transport.py",
     "checker_sha256": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
     "receipt": "research/arithmetic/polynomial_lift_transport_verification.json",
-    "receipt_sha256": "5ae26ada6e553bb2e15b9b8e60f22c440c55c4de988e0556b516fa906ffdd744",
+    "receipt_sha256": "9be38eec134da19cd7eaed98424fe2913052bd5630fbaa0118e9206cf7c16640",
     "command": "python3 research/arithmetic/verify_polynomial_lift_transport.py",
     "working_directory": "Canonical Ubuntu-24.04 WSL repository root",
     "software": "Python3.12.3, standard library only; assertions required",
-    "deterministic_inputs": "Three quotient seeds: a degree2 swap/identity tuple and minimal transposition chains in degrees3 and4, with all quadratic/cubic return tuples. Independent first-factor wreath enumeration and product completion in the degree6/9 two-factor cases. Free cyclic lifts of quotient C2, C3, S3, A5, D5 and all four pure7 representatives, including b2/3/4 cases. All directed Schreier loops of the15-state degree5 quotient with an identity position. Direct DT completion for the degree8 obstruction, direct16-element inner triple-T domain, and complete216+27 /1800+75 transposition passport controls. Cyclic N6/9/10/12/15 divisor checks, the degree8 canonical selection and four invalid inputs.",
+    "deterministic_inputs": "Three quotient seeds: a degree2 swap/identity tuple and minimal transposition chains in degrees3 and4, with all quadratic/cubic return tuples. Independent first-factor wreath enumeration and product completion for the two-factor controls of degrees4,6,6 and9. Free cyclic lifts of quotient C2, C3, S3, A5, D5 and all four pure7 representatives, including b2/3/4 cases. All directed Schreier loops of the15-state degree5 quotient with an identity position. Direct DT completion for the degree8 obstruction, direct16-element inner triple-T domain, and complete216+27 /1800+75 transposition passport controls. Cyclic N6/9/10/12/15 divisor checks, the degree8 canonical selection and four invalid inputs.",
     "coverage": "PASS:2120 complete generated small-block model states with literal inverse, signed transport, independent decoration action and deck checks;4/22/12/66 independent small wreath completions. Eleven complete free-cyclic lift orbit controls including4116,4116,1372,1372 for all four pure7 lifts. Sixty directed Schreier loops have image A5 of order60 on marked blocks. The b4 stabilizer action is8+8 despite one16-state inner component. All degree8 passport40 literal tuples are classified. Two additional full transposition domains243 and1875 split into216+27 and1800+75, with primitive Sn certified by the complete normal-transposition support graph.",
     "proof_boundary": "Uniform correctness uses the written tree normalization, exact inverse, root phase argument and point-action proof. Finite controls do not establish other passports. Wreath orders in the finite lift controls are certified by cyclic embedding, explicit group words for every local base generator and exact quotient closure. Full lifted group closures are separately recorded only where actually executed."
   },
@@ -131,5 +131,5 @@
     "formal_verification": false,
     "external_review": false
   },
-  "remaining_frontier": "The full genus-zero polynomial component classification remains open. Its two explicit remaining classification inputs are primitive Sn/An passports with r>=3 and restricted return-action orbits for larger fibres outside the classified free-cyclic subdomain. The separate reduced-lifting question remains. L8 proves that inner/outer component labels and return partitions do not by themselves fill that gap."
+  "remaining_frontier": "The full genus-zero polynomial component classification remains open. POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md proves the return action is an inner Artin braid action and resolves all fibre4 gluing by a four-state A4 criterion. L4's fibres2/3 and L5's free-cyclic family remain established. Primitive Sn/An passports with r>=3, remaining restricted actions for fibres>=5 and reduced lifting classification remain open."
 }

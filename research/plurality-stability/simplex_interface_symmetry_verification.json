@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "56c8d50ebaca377ec61759be9a6365ed164cb7e46901e71158454300fe646748",
-  "proof_source_sha256": "02a63d8ff024ce2959d30d6ea8c5358da5616a377e331accf8f2e4be406e2083",
+  "checker_sha256": "d21d0da20f41d9e0c7b9f7ef5d876fd031aeec060d20cfb497df7d6c97e50209",
+  "proof_source_sha256": "959595fe6b4cd0c279de24eaf07df4d1bf1982e4534a665d6d7c6f1ae8a6ec4e",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -72,6 +72,120 @@
       "omitted_adjacent_and_wrong_sign_controls": "passed",
       "standard_permanent_identity": "passed",
       "scope": "Exact bilinear-exponent monomial comparisons for the sign determinant S44/S46 and standard permanent S49/S50 at 3<=k<=8. The all-k identities, determinant positivity, operator norm and dimension lifting require the written proofs; no all-k spectral inequality is certified."
+    },
+    "hook_cone": {
+      "wedge_transport_pairs": 55,
+      "strict_integer_matrix_controls": [
+        {
+          "k": 3,
+          "matrix_size": 1,
+          "positive_entries": 1,
+          "tau": "log(2)",
+          "x_gap_coordinates": [
+            1
+          ],
+          "y_gap_coordinates": [
+            1
+          ]
+        },
+        {
+          "k": 4,
+          "matrix_size": 2,
+          "positive_entries": 4,
+          "tau": "log(2)",
+          "x_gap_coordinates": [
+            1,
+            1
+          ],
+          "y_gap_coordinates": [
+            1,
+            2
+          ]
+        },
+        {
+          "k": 5,
+          "matrix_size": 3,
+          "positive_entries": 9,
+          "tau": "log(2)",
+          "x_gap_coordinates": [
+            1,
+            1,
+            1
+          ],
+          "y_gap_coordinates": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "k": 6,
+          "matrix_size": 4,
+          "positive_entries": 16,
+          "tau": "log(2)",
+          "x_gap_coordinates": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "y_gap_coordinates": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "k": 7,
+          "matrix_size": 5,
+          "positive_entries": 25,
+          "tau": "log(2)",
+          "x_gap_coordinates": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "y_gap_coordinates": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "two_row_symmetric_transport_and_matrices": [
+        {
+          "k": 4,
+          "matrix_size": 1,
+          "positive_entries": 1,
+          "ordered_residual_exponent_identity": "passed"
+        },
+        {
+          "k": 5,
+          "matrix_size": 2,
+          "positive_entries": 4,
+          "ordered_residual_exponent_identity": "passed"
+        },
+        {
+          "k": 6,
+          "matrix_size": 3,
+          "positive_entries": 9,
+          "ordered_residual_exponent_identity": "passed"
+        },
+        {
+          "k": 7,
+          "matrix_size": 4,
+          "positive_entries": 16,
+          "ordered_residual_exponent_identity": "passed"
+        }
+      ],
+      "four_cell_sign_domination_control": "passed",
+      "outside_chamber_and_wrong_reflection_coefficient_controls": "passed",
+      "scope": "Exact finite exterior/symmetric transport, Gram and ordered-residual exponent identities, selected strictly positive folded matrices for 3<=k<=7, and one exact four-cell sign domination control. Exponentials are exact powers of two after factoring a common positive term. These controls do not certify all x,y,k,rho; the universal pairing, supersolution and spectral arguments S54-S61 remain written mathematics."
     },
     "interval_gap": {
       "interval": [
