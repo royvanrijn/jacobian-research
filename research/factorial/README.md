@@ -1013,8 +1013,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | All-order factorial windows from uncontaminated residue sections | Internal result | proved | [Source](image-rigidity/SFC_SINGLETON_RESIDUE_SECTION_WINDOWS.md) |
 | Universal two-sevenths L8 native cusp | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_L8_SEVENTH_POWER_CANCELLATION_AND_SHORT_GRID_PROOF.md) |
 | Actual-support windows for binary phases with prime-power axis terms and constant shifts | Internal result | proved | [Source](image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md) |
+| Trinomial three-windows with a sufficiently distant third exponent | Internal result | proved | [Source](image-rigidity/SFC_UNIVARIATE_TRINOMIALS.md) |
 
-**Computed obligations:** 58 unresolved; 36 resolved within their exact scope.
+**Computed obligations:** 59 unresolved; 36 resolved within their exact scope.
 
 
 Scope limits:
@@ -1181,5 +1182,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Prove f(1,5)=infinity, where f is the supremum of v_5 of finite sums of distinct factorials whose smallest index is 1. A uniform carry invariant is one proposed route, not a known equivalence.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE
 - **mathematical / open:** [Construct increasing indices starting at 1 such that the 5-adic valuations of their partial factorial sums tend to infinity. The compactness implication from f(1,5)=infinity is proved in the canonical note, but that premise is open.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-INFINITE-SEQUENCE
 - **mathematical / open:** [At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 size four remains only for the low-adjacent-digit nonsingleton profile (10) with the exact restrictions (11), (16), (17), and (19). Foreign XY and the axis quartic are fully excluded at this radius. At L>=9 the remaining sizes run from 3 through L+1 when c=0 or through L when c!=0. On the low even-digit foreign four-term branch the L=9 candidates satisfy (25) and (26).](image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md) — GAP-FACTORIAL-BINARY-THREE-ADIC-WILD-CANCELED-ROW
+- **mathematical / open:** [For every characteristic-zero field, 0<=a<b<c, ABC!=0 and n>=1, at least one of the factorial moments of A*x^a+B*x^b+C*x^c at orders n,n+1,n+2 is nonzero.](image-rigidity/SFC_UNIVARIATE_TRINOMIALS.md) — GAP-SFC-ARBITRARY-UNIVARIATE-TRINOMIALS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

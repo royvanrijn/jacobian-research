@@ -443,6 +443,6 @@ and low-defect pointwise action results remain explicit inputs.
 No formal verification, independent whole-proof replay or external
 human review is claimed.
 
-The remaining noninvertible class has even global coordinate-conductor
-degree at least EIGHT. This does not prove its absence or automatic
-trace/codifferent integrality, HC4 or JC2.
+This sextic exclusion gave even global coordinate-conductor degree at
+least eight. The [current lower bound](GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md)
+is eighteen. Automatic trace/codifferent integrality, HC4 and JC2 remain open.

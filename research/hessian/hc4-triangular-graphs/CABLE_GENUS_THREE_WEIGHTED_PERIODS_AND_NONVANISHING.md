@@ -233,9 +233,9 @@ The result excludes an ALL-ZERO action vector at a cable fibre.
 It neither turns (H,X) into a target automorphism nor proves a
 Jacobian-preserving reduction to the quartic branch. The later
 [global sextic exclusion](GLOBAL_SEXTIC_CONDUCTOR_EXCLUSION_AND_PERIOD_POLE_REPAIR.md)
-raises the global even coordinate-order conductor bound to eight.
+closed global conductor degree six, including its cable branch. The
+[current global bound](GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md) is eighteen.
 Individual special fibres may still have degree two, four or six.
-Cable families, higher conductors and automatic target/trace integrality
-require additional arguments.
+Higher conductors and automatic target/trace integrality remain open.
 Independent replay, formal verification and external review are
 not claimed.

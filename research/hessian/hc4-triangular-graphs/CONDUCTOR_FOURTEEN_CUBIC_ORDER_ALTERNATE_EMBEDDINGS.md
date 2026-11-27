@@ -100,70 +100,83 @@ For a complex polynomial plane Keller map, in a longitudinal
 frame with \(P\) monic, the exact directional order cannot
 have reduced sequence \((12,8,3)\).
 
-Here \(W\) has source degree twelve and \(V\) degree eight.
-The monic approximate root has degree three in \(V\) and
-source degree three. The terms in \(V^j\) for \(j=0,1,2\)
-have degrees distinct modulo twelve, so terms of weight
-above 24 cannot cancel, where \(W,V\) have weights twelve
-and eight. Normalize both generators to be source monic.
-The leading terms of the approximate root are \(V^3-W^2\).
-Its coefficient of \(V^2\) is constant and that of \(V\)
-is at most affine in \(W\). Complete the square in \(W\)
-by a triangular shear in \(V\), then depress the cubic in
-\(V\) by a translation. The resulting generators satisfy
+Apply Theorem DirectionalThreeTwoLaurentExclusion below with
+\(m=4\), \(r=3\).
+
+## The general three-to-two Laurent obstruction
+
+**Theorem DirectionalThreeTwoLaurentExclusion.** Let \(F=(P,Q)\)
+be a complex polynomial plane Keller map with \(P\) monic in
+the longitudinal source coordinate \(x\). Its reduced generic
+directional order cannot have one-place characteristic sequence
+\((3m,2m,r)\) with \(2\le r\le m\) and \(\gcd(m,r)=1\).
+
+Set \(K=\mathbb C(y)\) and let the reduced generators \(W,V\)
+have source degrees \(3m,2m\), respectively. The one-place
+approximate root for the gcd \(m\) is monic of degree three in
+\(V\) and has source degree \(r\). For its terms in \(V^j\)
+with \(j=0,1,2\), the weights \(2mj\) are distinct modulo
+\(3m\), so no terms of weight above \(6m\) can cancel. After
+normalizing \(V,W\) to be source monic, the terms of weight
+\(6m\) are \(V^3-W^2\). The coefficient of \(V^2\) is
+constant and that of \(V\) is at most affine in \(W\).
+Complete the square in \(W\) by a triangular shear in \(V\),
+then depress the cubic in \(V\) by a translation. The
+resulting generators satisfy
 \[
- W^2=V^3+kV+C+\eta U,\qquad \eta\ne0,\qquad\deg U=3.
+ W^2=V^3+kV+C+\eta U,\qquad \eta\ne0,\qquad \deg_x U=r ,
  \tag{2}
 \]
-The scalars and polynomials are over the parameter field.
+where \(U\) is a scalar normalization of the approximate root.
 
-Order the target pair as \((V,W)\), and let \(\lambda\)
-be the determinant of the ambient target change from the
-original \(P,Q\) to this pair. Put \(x=\rho z\) with
-\(\rho^{20}=\lambda\) and multiply the two generators
-by \(\rho^{-8},\rho^{-12}\), respectively. Over the finite
-parameter extension the resulting target determinant is one.
-Keep \(V,W\) for the normalized generators. Equation (2)
-keeps its form, with rescaled coefficients and \(U\).
-The [parameter identity](CONDUCTOR_TWELVE_HYPERELLIPTIC_AND_CUBIC_EXCLUSIONS.md#the-cubicseptic-branch)
-therefore gives
+Order the target pair as \((V,W)\), and write \(\lambda\)
+for the determinant of the ambient target change from \(P,Q\)
+to this pair. Put \(x=\rho z\) with \(\rho^{5m}=\lambda\) and
+multiply the two generators by \(\rho^{-2m},\rho^{-3m}\).
+The resulting target determinant is one over the finite
+parameter extension. Keep \(V,W\) for these normalized
+generators. Equation (2) retains its form with rescaled
+coefficients and \(U\). The
+[parameter identity](CONDUCTOR_TWELVE_HYPERELLIPTIC_AND_CUBIC_EXCLUSIONS.md#the-cubicseptic-branch)
+gives
 \[
  V_z W_y-V_y W_z=J\rho+\partial_z H(V,W)
  \tag{3}
 \]
-for a polynomial \(H\) over the extended parameter field.
-The divergence of the polynomial parameter field of a
-target automorphism with determinant one is zero, so this
-parameter field is Hamiltonian as in the cubic–septic proof.
+for a polynomial \(H\) over that extension. Here \(J\) is the
+original nonzero constant Jacobian. The parameter derivative
+field of the determinant-one target change has divergence zero,
+so its contribution in (3) is Hamiltonian.
 
-In the monic Laurent branch at \(z=\infty\), (2) gives
+At \(z=\infty\), the monic Laurent branch of (2) gives
 \[
- W=V^{3/2}+\tfrac{k}{2}V^{-1/2}+O(z^{-9}).
+ W=V^{3/2}+\tfrac{k}{2}V^{-1/2}+O(z^{r-3m}).
 \]
-Indeed the contribution of \(C+\eta U\) has order at most
-\(3-12=-9\), and the higher powers of the binomial correction
-have still smaller \(z\)-degree. The contribution of \(V^{3/2}\)
-to the left side of (3) cancels by the chain rule. The
-\(O(z^{-9})\) term has no contribution to the polynomial
-part of that Jacobian, because \(V_z\) and \(V_y\) have degrees
-at most seven. Thus the exact polynomial Jacobian is
+The contribution of \(C+\eta U\) to this expansion has degree
+at most \(r-3m\). The quadratic and later binomial corrections
+have degree at most \(-5m\). Differentiation in \(y\) preserves
+the degree bound on the tail and differentiation in \(z\)
+lowers it. Since \(V_z,V_y\) both have degree at most \(2m-1\),
+the tail makes no contribution to the polynomial part of
+the Jacobian. The chain rule cancels the term \(V^{3/2}\)
+and gives the exact polynomial identity
 \[
- V_z W_y-V_y W_z=k' \partial_z \bigl([\sqrt V]_{\ge0}\bigr).
+ V_z W_y-V_y W_z=k'\partial_z\bigl([\sqrt V]_{\ge0}\bigr),
  \tag{4}
 \]
-Here \([\sqrt V]_{\ge0}\) is the monic polynomial part of the
-Laurent square root, of degree four. This follows by applying
-the chain rule to \((k/2)V^{-1/2}\) and then taking the
-polynomial part.
+where \([\sqrt V]_{\ge0}\) is monic of degree \(m\).
 
-It follows from (3)–(4) that \(H(V,W)\) has degree at most
-four. The pole semigroup \(\langle3,8\rangle\) has only
-nongaps zero and three in this range, so
-\(H(V,W)=\beta U+\text{constant}\). Equating the degree-three
-coefficients of (3)–(4) forces \(k'=0\). The degree-two
-coefficient then forces \(\beta=0\), contradicting the
-nonzero \(J\rho\) at degree zero. This excludes the embedding
-without a specialized-embedding comparison.
+From (3)–(4), \(H(V,W)\) has degree at most \(m\). Its
+possible degrees in that range are multiples of \(r\) by the
+semigroup \(\langle3m,2m,r\rangle\). The condition
+\(\gcd(m,r)=1\) with \(r\ge2\) excludes degree \(m\).
+Thus \(\partial_z H\) has degree at most \(m-2\). Comparing
+degree \(m-1\) in (3)–(4) forces \(k'=0\). This makes
+\(\partial_z H=-J\rho\) a nonzero constant, contrary to the
+absence of degree one in the order.
+
+In particular the theorem excludes the conductor-18 sequence
+\((15,10,3)\) by taking \(m=5\), \(r=3\).
 
 ## Exact replay
 

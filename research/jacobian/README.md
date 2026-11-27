@@ -87,7 +87,7 @@ Scope limits:
 - Marked quadratic models with ord_0 M>=2 exclude ruling excess zero. The reduced S2 and MX0 double-zero frames also exclude excess one. The (8,12) bound is then seven; larger excess and global coverage remain open.
 - For p=3 the unrestricted minimum lift degree is 81 at both moduli 9 and 27. A bounded Witt tower can be chosen compatibly, so unrestricted degree growth is equivalent to excluding any integral polynomial lift of the seed. The degree growth is proved for lifts affine along a lift of the fixed residue line.
 - The planar degree assessment tracks the Santibáñez-Leal certificate route for (72,108) and the normalized Giraudin F2 and degree-147 exclusions. These exact scopes have separate verification obligations.
-- Global directional coordinate-conductor degrees two, four, six, eight, ten and twelve are excluded. In a monic longitudinal frame the global degree is even and at least fourteen, with defect at least seven where the global leading coefficient is nonzero. On arbitrary specialized lines the bound remains two.
+- Global directional coordinate-conductor degrees two to sixteen of even degree are excluded. In a monic longitudinal frame the global degree is even and at least eighteen, with defect at least nine where its leading coefficient is nonzero. The bound remains two on arbitrary specialized lines. Four embeddings remain at degree eighteen.
 
 Tracked obligations (computed states):
 

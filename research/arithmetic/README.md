@@ -169,6 +169,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Uniform 5/14 bound for sums of two square-full integers | Internal result | proved | [Source](ERDOS_943_SIXTH_POWER_CARRY.md) |
 | Uniform one-third bound for sums of two square-full integers | Internal result | proved | [Source](ERDOS_943_KERNEL_GRAPH.md) |
 | Uniform three-tenths bound for sums of two square-full integers | Internal result | proved | [Source](ERDOS_943_DUAL_KERNEL_GRAPHS.md) |
+| Nonfundamental square-full representations of every prime-power target | Internal result | proved | [Source](ERDOS_943_PRIME_POWER_DESCENT.md) |
 | Uniform pointwise bound for sums of two k-full integers | Internal result | proved | [Source](POWERFUL_SUM_GRAPHS.md) |
 | Uniform positive binomial Thue count including reducible forms | Internal result | proved | [Source](POWERFUL_SUM_GRAPHS.md) |
 | Mean and structured lower bound for square-full kernel pairs | Internal result | proved | [Source](POWERFUL_SUM_GRAPHS.md) |
@@ -1663,8 +1664,10 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A separated multiplicative model with a cheap residual excludes dense cells | Internal result | proved | [Source](ABC_SEPARATED_TARGET_RADICAL_PROBES.md) |
 | Scholz reflection reduces parity triangles to imaginary quadratic fields | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
 | Restricted degree-36 and degree-54 cubic-field discriminant bounds | Internal result | proved | [Source](ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md) |
+| The 2gamma-th elliptic-curve conductor moment | Internal result | proved | [Source](ELLIPTIC_CONDUCTOR_MOMENTS_FROM_QUADRATIC_TORSION.md) |
+| The 4gamma-th elliptic-curve conductor moment | Internal result | proved | [Source](ELLIPTIC_CONDUCTOR_MOMENTS_FROM_QUADRATIC_TORSION.md) |
 
-**Computed obligations:** 127 unresolved; 25 resolved within their exact scope.
+**Computed obligations:** 129 unresolved; 25 resolved within their exact scope.
 
 
 Scope limits:
@@ -1907,5 +1910,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Determine a constant c>0 giving both h(q)<(log q)^(c+o(1)) generally and h(q)>(log q)^(c-o(1)) infinitely often. The ordinary lower exponent is at least one by Narumi–Tachiya. The new logarithmic lower bound with coprimality supplies no part of the uniform upper bound.](ERDOS_942_COPRIME_SQUARE_INTERVALS.md) — GAP-ARITH-ERDOS942-LOGARITHMIC-RATE
 - **mathematical / open:** [Prove N(X)=#{n<=X:n,n+1 powerful}=O((log X)^C) for some fixed C. The proved power bound has exponent 12127/49920+epsilon.](ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — GAP-ARITH-ERDOS365-POLYLOGARITHMIC-COUNT
 - **verification / open:** [Complete the standalone audit of Plymesser Theorem 1.1 at its k=2 hypotheses, including the Reuss Theorem 1 and Heath-Brown Theorem 15 estimates or Proposition 7.1(ii) optimization. Those parts are not used in the new subquarter argument. Independent review of the imported original-width window proof has not been recorded.](ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — GAP-ARITH-ERDOS365-PLYMESSER-K2-SOURCE-AUDIT
+- **verification / open:** [Independently review the coherent split-prime path count and full-modulus lattice proof behind the signed second and fourth quadratic 3-torsion moments and the conductor consequences.](ELLIPTIC_CONDUCTOR_MOMENTS_FROM_QUADRATIC_TORSION.md) — VERIFY-ARITH-QUADRATIC-THREE-TORSION-PRIME-PATHS
+- **verification / open:** [Independently verify the trace-to-cubic fixed fiber in both signs, its class-group average, and the use of Plymesser's original-width determinant window at shift one in the bound with exponent 12127/49920.](ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — VERIFY-ARITH-ERDOS365-SUBQUARTER-PROOF
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

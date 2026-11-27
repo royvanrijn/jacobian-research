@@ -1472,3 +1472,285 @@ for large \(u\). The radical is at most a fixed constant times
 deficit. This identifies a genuine different-powers route for
 the residual profile, alongside the remaining repeated parts
 inside roots and the profiles without fixed orders.
+
+## Field discriminants of cyclic lifts with mixed valuations
+
+For each integer \(k\ge2\), use the smooth projective curve \(C_k\)
+with affine equation
+\[
+ y^k=q(t),\qquad q(t)=\frac{t(1-t)}{1+t},
+\]
+over \(K=\mathbb Q(\mu_k)\). Its degree-\(k\) projection \(\pi\)
+is totally ramified at each of \(0,1,-1,\infty\). It has genus
+\(k-1\), and the reduced divisor \(D_k\) over the four marks
+satisfies \(kD_k=\pi^*([0]+[1]+[-1]+[\infty])\). For an admissible
+pair, take any lift \(P\) of \(t=v/u\) and put
+\[
+ L=K(P)=K\left(\sqrt[k]{\frac{v(u-v)}{u(u+v)}}\right),\qquad
+ d_{\rm fld}(P)=\frac{\log|\operatorname{disc} L|}{[L:\mathbb Q]}.
+\]
+The lift has degree at most \(k\) over \(K\). The use of an
+absolute field discriminant changes the corresponding normalized
+relative discriminant over \(K\) by a fixed constant.
+
+Let \(S\) be any fixed finite set of rational primes containing
+\(2\) and the prime divisors of \(k\), and write \(\mathcal S\) for
+all archimedean places and the places of \(K\) above \(S\). Write
+\(m_p=v_p(F(u,v))\) and \(g_p=\gcd(k,m_p)\) at each \(p\mid F\).
+There is an exact weighted comparison up to a bounded term:
+\[
+\begin{aligned}
+ W_{k,S}(u,v)&=\prod_{\substack{p\mid F\\p\notin S}}
+                    p^{1+(m_p-g_p)/k},\\
+ m_{\mathcal S}(D_k,P)+h_{K_{C_k}}(P)-d_{\rm fld}(P)
+        &=2\log u-\log W_{k,S}(u,v)+O_{k,S}(1).             \tag{K13}
+\end{aligned}
+\]
+Here the heights and local absolute values are normalized
+absolutely. Every valuation that divides \(k\) costs exactly
+one copy of its prime in \(W_{k,S}\), even when the valuations
+on a single letter have several different orders.
+
+### Computing the field and height terms
+
+At \(p\notin S\), the cyclotomic base is unramified and a prime
+of \(K\) over \(p\) has \(\operatorname{ord} q(t)=m_p\) or \(-m_p\)
+if \(p\mid F\). Coprimality puts \(p\) on only one of the four
+forms. Over the maximal unramified local extension the unit
+part of \(q(t)\) has a \(k\)-th root, by lifting a root of its
+residue. The valuation part then gives ramification index
+\(k/g_p\). For \(p\nmid F\) the extension is unramified. The tame
+different exponent in a local extension of ramification index
+\(e\) is \(e-1\). On summing over all places over \(p\) and
+dividing by \([L:\mathbb Q]\), the discriminant contribution is
+\((1-1/e)\log p\). This also holds when \([L:K]<k\). At the
+fixed primes in \(S\), there are finitely many local Kummer
+classes, as the valuation modulo \(k\) and the unit group modulo
+\(k\)-th powers are both finite. They give bounded contributions.
+Consequently
+\[
+ d_{\rm fld}(P)=\sum_{\substack{p\mid F\\p\notin S}}
+                    (1-g_p/k)\log p+O_{k,S}(1).
+\]
+[Vojta, §23, logarithmic discriminant normalization](https://math.berkeley.edu/~vojta/cime/cime.pdf).
+
+By Riemann–Hurwitz, the canonical divisor is the pullback of
+\(K_{\mathbb P^1}+(1-1/k)D_0\) as a rational divisor class,
+where \(D_0=[0]+[1]+[-1]+[\infty]\). Thus its height is
+\((2-4/k)\log u+O_k(1)\). By functoriality of local heights,
+the proximity to \(D_k\) is \(1/k\) times the proximity to
+\(D_0\) at \(t\), up to a bounded term. The latter is
+\(\log(u/s)+\log F_S+O(1)\). Indeed the two archimedean marks
+that can be approached are 0 and 1, and at each finite place
+primitivity gives the valuation of the corresponding form.
+The local-degree weights sum to one above each rational place.
+Since \(\log F=4\log u-\log(u/s)+O(1)\), we obtain
+\[
+ m_{\mathcal S}(D_k,P)+h_{K_{C_k}}(P)
+          =2\log u-\frac1k\log F_{\overline S}+O_{k,S}(1).
+\]
+This proves (K13).
+
+### The exact field-discriminant obligation
+
+The bounded-degree form of Vojta's conjecture, on just these
+fibres with ample divisor \(\pi^*\mathcal O(1)\), asks that the
+left side of (K13) be at most \(\varepsilon\log u+O(1)\) for
+every \(\varepsilon>0\). A finite exceptional set on the fixed
+curve can be absorbed in the constant. On these fibres the
+condition is equivalent to \(W_{k,S}\gg u^{2-\varepsilon}\).
+[Vojta, Conjecture 24.1(b)](https://math.berkeley.edu/~vojta/cime/cime.pdf).
+
+For any fixed finite set of allowed valuation orders outside
+\(S\), one can choose \(k\) divisible by every allowed order.
+The single-curve bound would then give the full radical threshold
+on that mixed-order class. For arbitrary orders, write
+\(R_{\overline S}=\prod_{p\mid F,\,p\notin S}p\). The exact surcharge
+satisfies
+\[
+ 0\le\log \frac{W_{k,S}}{R_{\overline S}}
+    =\frac1k\sum_{\substack{p\mid F\\p\notin S}}(m_p-g_p)\log p
+    \le\frac{4\log u+O(1)}{k}.
+\]
+It follows that full abc is equivalent to this restricted
+field-discriminant inequality for an unbounded sequence of
+\(k\). In the forward direction use \(W_{k,S}\ge R_{\overline S}\).
+In the reverse direction take a large fixed \(k\) for the requested
+strict threshold, so the surcharge is small enough. This is a
+cyclic-fibre specialization of the relation between Vojta's
+conjecture and abc. The formula specifies the price of arbitrary
+mixed orders at each prime.
+
+### The normalization cost in the arithmetic discriminant
+
+Suppose now \([L:K]=k\), and enlarge \(S\) to include the finitely
+many bad places of a fixed regular proper model of \(C_k\) and
+its cover. Outside \(S\) the horizontal closure of \(P\) is the
+whole specialized fibre. Indeed the finite flat fibre has that
+generic fibre, so its order embeds in \(L\) and is the closure.
+At a prime with \(p\mid F\), a local equation is
+\(Y^k=q(t)\) or \(Y^k=1/q(t)\), taking the one with integral
+right side. The discriminant of this order, from the trace
+form on \(1,Y,\ldots,Y^{k-1}\), has valuation \((k-1)m_p\)
+before normalization. Its normalized contribution is
+\((1-1/k)m_p\log p\). Thus the finite-place difference between
+the order and field discriminants outside \(S\) is exactly
+\[
+ \sum_{\substack{p\mid F\\p\notin S}}
+ \left((1-1/k)m_p-1+g_p/k\right)\log p .                    \tag{K14}
+\]
+This records ramified fibres coalescing in the model even at
+primes where the specialized field is unramified.
+
+For fixed odd \(k\), every admissible pair outside a finite set
+has full specialization degree. In fact if \(d=[L:K]<k\), the
+cyclic subgroup acting on \(y\) has order \(d\), so \(y^d\in K\).
+Hence \(q(t)=(y^d)^{k/d}\), and every nonzero \(m_p\) outside
+\(S\) is divisible by \(k/d\). If \(k/d\ge3\), the four orders
+\((k/d,k/d,k/d,k/d)\) give a hyperbolic profile in the fixed-order
+argument, which has only finitely many pairs. This leaves only
+degree \(k/2\) for possible unbounded proper-degree families
+when \(k\) is even. In particular, the field-discriminant route
+to full abc can be restricted to full-degree fibres for an
+unbounded set of odd values of \(k\).
+
+For example, fix distinct odd primes \(p,r\notin S\) and take
+\(u=2r p^{kn}\), \(v=1\). At \(r\) the inertia has order \(k\),
+so the specialization has degree \(k\). At \(p\) the field is
+unramified, but the order contributes
+\((k-1)n\log p=(1-1/k)\log u+O_k(1)\), with the fixed primes
+held constant. Thus the difference in (K14) can have the scale
+of the height, including on full-degree specializations.
+
+At infinity these full-degree fibres also contribute
+\((1-1/k)\log(u/s)+O_k(1)\) to the arithmetic discriminant.
+For \(t\) near 0 or 1 the \(k\) points in each fibre have local
+coordinates \(\zeta y\), with \(\zeta\in\mu_k\) and
+\(|y|\asymp(s/u)^{1/k}\). The diagonal Green functions on the
+ordered pairs of distinct lifts sum to the stated contribution
+after division by the degree. On compact subintervals away
+from 0 and 1 they are bounded. The order discriminant is
+nonnegative at the other finite places. In the normalization
+of the arithmetic discriminant \(d_a\), this gives
+\[
+ d_a(P)\ge (1-1/k)\bigl(\log F_{\overline S}+\log(u/s)\bigr)-O_{k,S}(1).
+\]
+[Levin, §3, equation (6) in the preprint and (8) in the published version](https://arxiv.org/abs/math/0601686).
+
+In particular, for these full-degree fibres the inequality with
+\(d_a\) in place of \(d_{\rm fld}\) follows already from (K7).
+The last displayed lower bound minus the canonical height and
+proximity terms in (K13) is at least
+\(2\log u-\log F_S-k^{-1}\log(u/s)-O(1)\). By (K7) this is at least
+\((1-1/k)\log(u/s)-\varepsilon\log u-O(1)\). Thus the proved
+arithmetic-discriminant inequality on these fibres supplies no
+bound on the mixed-order surcharge in (K13). The needed
+field-discriminant bound must account for the normalization
+loss in (K14).
+[Song and Tucker, equations (0.0.1) and (0.0.4)](https://doi.org/10.1023/A:1000948001301).
+
+## Counting cyclic fibres by tame field discriminant
+
+For the cyclic lift of degree \(k\), write
+\[
+ D_{k,S}^{\rm tame}(u,v)=
+ \prod_{\substack{p\mid F\\p\notin S}}p^{1-\gcd(k,m_p)/k}.
+\]
+This is at most \(\exp d_{\rm fld}(P)\), since the displayed
+factors are exact and the contributions at \(S\) are nonnegative.
+For a fixed prime \(\ell\), take \(\ell^a\mid k\) and a fixed
+triple of positive integers \(b_1,b_2,b_3\le a\) with
+\(\sum_{i=1}^3\ell^{-b_i}<1\). Put \(b_*=\max_i b_i\) and define
+\[
+ Q_j=\prod_{\substack{p\mid F,\ p\notin S\\v_\ell(m_p)=j}}p,
+ \qquad \nu_j=\#\{i:b_i>j\}\qquad(0\le j<b_*).
+\]
+Let \(N(T)\) count admissible pairs of all heights with
+\(D_{k,S}^{\rm tame}\le T\), where \(T\ge1\). Then
+\[
+ N(T)\ll_\ell C_\ell^{|S|}
+       T^\gamma(1+\log T)^{A_\ell},\qquad
+ \gamma=\max_{0\le j<b_*}\frac{\nu_j}{4(1-\ell^{j-a})}.
+ \tag{K15}
+\]
+The constants \(C_\ell,A_\ell\) can be chosen independently
+of \(k,a\) and the signature. The same bound holds with
+\(\exp d_{\rm fld}(P)\le T\), including proper-degree fibres.
+
+Each choice of three forms in \(F\) gives a primitive positive
+additive triple by one of
+\[
+ v+(u-v)=u,\quad u+v=u+v,\quad
+ 2v+(u-v)=u+v,\quad (u-v)+(u+v)=2u.
+\]
+In the second equality the right side is the single form \(u+v\).
+The two doubled relations are primitive, since \(u-v\)
+and \(u+v\) are odd and the original forms are pairwise coprime.
+For each relation its ordered triple determines \(u,v\), and
+doubling changes valuations only at \(2\in S\).
+
+Assign the three orders \(\ell^{b_i}\) to the selected forms
+and let \(B\) be the product of primes outside \(S\) violating
+their assigned divisibility condition. Average \(\log B\) over
+the four omissions and the six permutations of the orders.
+A prime in \(Q_j\) lies on just one form, which is assigned a
+testing order greater than \(\ell^j\) with frequency
+\(\nu_j/4\). Higher depths have frequency zero. Hence at least
+one assignment has
+\[
+ B\le\prod_{j=0}^{b_*-1}Q_j^{\nu_j/4}.
+ \tag{K16}
+\]
+For a prime in \(Q_j\), the ramification index in the
+degree-\(k\) cover is divisible by \(\ell^{a-j}\). Thus
+\(D_{k,S}^{\rm tame}\ge\prod_j Q_j^{1-\ell^{j-a}}\),
+and (K16) gives \(B\le T^\gamma\).
+
+For a prescribed assignment and \(B\), the ordered triple lies
+on a hyperbolic prime-primary valuation grid of defect support
+contained in \(B\prod_{p\in S}p\). The support-only bound gives
+at most \(C_\ell^{1+|S|+\omega(B)}\) triples, uniformly in the
+orders. It uses the class-rank bound in the specialization tower
+and uniform Mordell–Lang on a fixed covering curve.
+[Prime-primary grid bound](ABC_MISMATCHED_GRID_NUMBER_FIELDS.md#a-support-only-bound-from-a-single-prime-in-the-three-orders).
+[Gao–Ge–Kühne, Theorem 1.1′](https://arxiv.org/pdf/2105.15085v4).
+For any integer \(M\ge C_\ell\), \(C_\ell^{\omega(B)}\le
+\tau_M(B)\) for squarefree \(B\), where \(\tau_M\) counts ordered
+factorizations with \(M\) factors. Summing over \(B\le Y\) is
+\(O_M(Y(1+\log Y)^{M-1})\), by summing trivially over the last
+factor and using the harmonic sum for each other factor. Apply
+this with \(Y=T^\gamma\) and sum over the at most 24 assignments.
+Since \(\gamma\le3/2\), the logarithmic constant can be chosen
+uniformly. The proof also bounds subfamilies with a separate cap
+\(Y\) on the right of (K16) by \(O_\ell(C_\ell^{|S|}
+Y(1+\log Y)^{A_\ell})\).
+
+For \(\ell\ge5\) use \((b_1,b_2,b_3)=(1,1,1)\). For \(\ell=3\)
+and \(a\ge2\) use \((1,1,2)\), for which the right side of (K16)
+is \(Q_0^{3/4}Q_1^{1/4}\). In both cases
+\(\gamma=3/[4(1-\ell^{-a})]\). For \(\ell=2\) and \(a\ge3\),
+the signature \((1,2,3)\) gives that same \(\gamma\), since the
+depth-one and depth-two ratios are smaller. In particular for
+\(k=3^a\) and \(S=\{2,3\}\), \(a\ge2\), the field bound is
+uniform in \(a\) and the power of \(T\) tends to \(3/4\).
+Taking \((5,5,5)\) and \(S=\{2,5\}\) in the triple argument
+gives \(O(T^{3/4}(1+\log T)^A)\) pairs of all heights with
+\(R(u,v)\le T\), since \(Q_0\le R(u,v)\) in that application.
+
+Two selected forms alone cannot supply a height-free count by
+their defects. For any choice of two forms and any fixed positive
+integer \(r\), their ratio maps \(0<t<1\) bijectively onto an open
+interval in \(\mathbb R_{>0}\). Choose the ratio \(c\) of one admissible pair and set the
+ratio to \(cz^r\) with rational
+\(z\equiv1\bmod 2^n\) in \(\mathbb Q_2\) for sufficiently large
+\(n\). Infinitely many such rational \(z\) lie in the real
+interval because the rationals in that 2-adic class are real
+dense. Outside \(2\) and the primes with nonzero valuation on \(c\), coprimality of the
+two forms forces each valuation to be a multiple of \(r\).
+The primitive pairs are distinct, so the defect support on
+the two forms is contained in one fixed finite set.
+
+The count is uniform over heights for a fixed discriminant
+budget. In (K13) the relevant budget grows as a power of the
+height. The pointwise lower bound must still control how large
+\(u\) can be within each ramification class.

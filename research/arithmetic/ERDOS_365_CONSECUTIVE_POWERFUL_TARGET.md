@@ -214,8 +214,30 @@ all dyadic sizes and kernel scales. Their count gives (1) by
 taking a smaller exponent loss in each window and absorbing the
 logarithms.
 
-The fixed fiber and optimization are written proofs. The determinant
-estimate is an imported theorem whose stated windows and proof
-interfaces above were checked. See also the
-[primary source audit](PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md).
-The argument has no independent mathematical review or formal replay.
+## Internal review of the subquarter argument
+
+At an odd prime, a self-conjugate prime ideal dividing \((\alpha)\)
+would divide its conjugate and hence \(2\). This rules out both the
+inert and ramified cases. For a split prime with nonzero cube residue
+the choice is just which of its two primes occurs. The trace-form
+change of variables has nonzero determinant because the ideal basis
+has irrational ratio. Thus the form has nonzero discriminant before
+primitivization, and its content divides 2 on an occupied fiber.
+Stewart's primitive-form bound therefore applies with right-hand side
+1 or 2, including when the form is reducible.
+
+In the cached Plymesser source, §2.3 uses \(D,E\ge1/2\) and \(x>1\)
+with \(U,V\) determined by those scales. The grid above has \(D,E>1/2\)
+for positive kernels and \(x>1\) once the finitely many small \(n\) are
+discarded. Theorem 6.3 permits each fixed \(h,c,\mathcal G\). The
+application uses \(h=1\), \(c=1/10\) and \(\mathcal G=\{1\}\), justified
+before applying the determinant estimate. Clipping does not change that
+eligibility in the remaining region. The fixed-trace average handles
+both assignments of the smaller kernel while the determinant window
+keeps its original orientation. In the exact optimization the
+quadratic's stationary point \(s=187/585\) lies in the allowed interval;
+substitution gives the stated exponent, with \(1/4-\theta=353/49920\).
+See the [primary source audit](PLYMESSER_2026_POWERFUL_COUNTS_SOURCE_SCOPE.md)
+for the imported geometric and counting estimates. These are internal
+checks. Independent review of the trace-fiber argument and the complete
+original-width window theorem remains open.

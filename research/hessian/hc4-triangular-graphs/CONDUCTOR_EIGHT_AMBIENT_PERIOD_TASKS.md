@@ -3,14 +3,11 @@
 The [global octic proof](GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md) excludes
 degree eight by classifying the singular generic order directly and
 using its actual polynomial generators through degeneration. The
-[exclusion through degree ten](GLOBAL_CONDUCTOR_TEN_EXCLUSION.md)
-gives global conductor degree at least twelve for an actual
-noninvertible complex plane Keller map in a source frame with \(P\)
-monic of positive \(x\)-degree. The
-[degree-twelve exclusion](GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md) raises
-this to fourteen in the same frame. On arbitrary specialized lines
-the lower bounds are two for conductor degree and one for
-normalization defect.
+[current global bound](GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md) is eighteen
+for an actual noninvertible complex plane Keller map in a source frame
+with \(P\) monic of positive \(x\)-degree. On arbitrary specialized lines
+the lower bounds are two for conductor degree and one for normalization
+defect.
 
 The smooth genus-four transfer and period calculations below are
 alternative approaches. Their mathematical statements have separate

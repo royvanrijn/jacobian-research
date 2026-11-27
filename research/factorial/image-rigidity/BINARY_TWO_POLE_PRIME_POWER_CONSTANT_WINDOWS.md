@@ -1653,6 +1653,332 @@ constructs an admissible axis word, and all admissible
 words occur. Keeping the positive even digit counts
 therefore gives exactly the attainable profiles.
 
+### The second-radius lift for digit counts at least four
+
+**High digit-count second-radius exclusion.** In the
+canceled \(L=9\) row of (25), if the total number of
+ones in the two foreign digit words is even and at
+least four, the four-window holds at every starting
+index. Let \(d_x,d_y\) be the leading digits of the two
+words, including leading zeros to give lengths \(q_x,q_y\).
+Let \(e_x,e_y\) be their next digits. Use zero for an
+absent digit. With
+\[
+                  F_2=\frac12\binom{2\alpha}{\alpha}
+                                  \binom{2\beta}{\beta},
+\]
+the precision-four test leaves the following
+conditions on an exact four-zero block:
+\[
+\begin{array}{c|l}
+s & \text{necessary conditions at precision } I_4\\ \hline
+17 & \text{excluded}\\
+20 & d_x=d_y=e_x=e_y=0,\quad F_2\equiv11\pmod {27}\\
+23 & d_x=d_y=0,\quad F_2\equiv17-9(e_x+e_y)\pmod {27}.
+\end{array}                                                        \tag{29}
+\]
+For each exponent profile meeting the conditions in the
+last two rows, and for every \(H\), the four normalized
+moment congruences at that \(s\) admit a simultaneous
+solution modulo \(I_4\) in a finite valued extension
+of \(\mathbb Q_3\). The first three moments can be
+made exactly zero in such a solution. The start \(s=20\)
+is excluded at the higher precision \(I_{38/9}\).
+At \(s=23\), higher precision first forces
+\(e_x=e_y=0\) and \(Q_x,Q_y>1\), then gives
+incompatible residues in the linked moment rows.
+
+The possible exponent data at either precision
+\(I_h\), \(h=3,4\), simplify because only one and
+two foreign insertions survive. Their binomial factors
+use \(b_m=m b_1\) when the leading \(h-1\) digits are
+retained, since \(m\le2\) and there is no carry.
+An axis \(Q=1\) has a separate type with no foreign
+digits. For other axes, use length \(h-1\), padding
+shorter words with zeros at the low end. At precision
+\(I_4\) keep \(Q=3\) with foreign digit \(1\) as a
+separate type. To check the padding rule, the
+extra factors after scaling a binomial by three
+are \(1+3^{q+1}x/j\) for \(3\nmid j\) through a
+multiple of three. At the padding steps from \(q=1\)
+to \(2\) at precision three and from \(q=2\) to \(3\)
+at precision four, their linear terms sum to zero
+at the required precision because each full block
+has reciprocal sum zero modulo three. The quadratic
+terms are already beyond that precision. The zero
+foreign word on \(Q=3\) requires no separate type.
+
+For any pair of the resulting axis types with at least
+one ordinary prefix type and for any \(F_2\equiv-1\bmod3\),
+the data occur modulo \(3^h\). Indeed take an arbitrarily
+long axis with that prefix and append isolated ones
+well below the prefix and at distance at least four
+from one another. The product for the unit factorial
+ratio of doubling a word depends on windows of four
+digits, by the \(g\)-formula above. An isolated one
+in a position at least one with these separations
+contributes
+\(\binom{2\cdot3^j}{3^j}\equiv20\bmod81\)
+for \(j\ge1\). This follows by multiplying the
+four \(g(2\cdot3^a)/g(3^a)^2\) values for
+\(a=0,1,2,3\), which are \(2,10,1,1\) modulo
+\(81\), using just the available values when \(j<3\).
+The residue \(20\) generates the units modulo
+\(81\) since \(20^{18}=28\) and \(20^{27}=-1\)
+there. Choose the number of ones to obtain the
+target residue of \(F_2\), adding a full period to
+ensure at least four ones. The combined digit count
+is even since the doubled factorial ratios each
+reduce to \((-1)\) to the power of their digit count.
+Pairs with both axes of the exceptional types cannot
+have enough ones. Interchanging the axes and
+renormalizing the first coefficient to one does not
+change \(F_2\) or the start. There are therefore
+\(126\) unordered axis-pair and \(F_2\) profiles at
+precision \(I_3\), and \(1404\) at precision \(I_4\).
+
+For the linked rows use (27) and the normalized
+scalar reduction of the \(XY\) calculation. In
+fact \(H\bmod9\) suffices even at precision \(I_4\)
+for this calculation. If \(H\) changes by a
+multiple of nine, every scalar changes by an element
+of \(I_3\). For the nonnegative offsets \(\ell<9\)
+its change belongs to \(I_4\) owing to the valuations
+of the denominators. For \(18\le\ell\le26\) the
+only denominators of valuation two are at \(9,18\).
+The two reciprocal residues after multiplication by
+nine sum to zero modulo three, so their first-order
+changes cancel at precision \(I_4\). For the middle
+offsets \(9\le\ell\le17\), the second-order
+combination \(Z_j\) uses coefficients of \(DR\) of
+index at least two, as \(j\ge19\). At index above
+two those coefficients belong to \(I_1\). The only
+index two case is \(\ell=17,j=19\), where the
+scalar itself has valuation \(14/9\), so its change
+has valuation at least \(3+14/9\).
+The negative offsets also multiply indices above
+two in \(DR\). Thus \(Z_{s+2},Z_{s+3}\) are invariant
+modulo \(I_4\). For \(E_s,E_{s+1}\) the parameter
+bounds established by their first orders use
+precision below \(I_3\). Each multiplier used to
+cancel a term with one of these two rows in the
+final reduction has value at least one, as checked
+in the calculation. Their changes in \(I_3\) therefore
+have no effect on the reducing identity modulo \(I_4\).
+
+The [checker](verify_binary_low_digit_second_radius.py)
+uses the axis factors just described and the pure
+axis quotient modulo \(81\). It first performs the
+center and valuation checks from the \(XY\) calculation
+and then the same reduction of the final row. At
+precision \(I_3\) the only zero remainders satisfy
+\[
+\begin{array}{c|l}
+s & \text{conditions}\\ \hline
+17 & d_x=d_y=0,\quad F_2\equiv23-9(e_x+e_y)\pmod {27}\\
+20 & d_x=d_y=0,\quad F_2\equiv2\pmod9\\
+23 & F_2\equiv8-3(d_x+d_y)\pmod9.
+\end{array}                                                        \tag{30}
+\]
+The computation at \(I_4\) needs only the refinements
+of (30). It gives zero remainders exactly in (29);
+all other remainders have a unit constant initial
+coefficient. This proves necessity for exact
+four-zero blocks. To replay both stages, run
+\(\texttt{python3 research/factorial/image-rigidity/verify_binary_low_digit_second_radius.py}\)
+from the repository root.
+
+To prove the realization statement, use the exact
+first three forms at the chosen \(H\), with the
+parameters and refinements checked in the reduction.
+Over the complete discrete valuation ring generated
+by the uniformizer and \(i\), clear denominators
+that are units as formal series, using powers of
+the unit part of \(k\). Divide each form by its
+verified common uniformizer factor. Row combinations
+and multiplication by unit constants give three
+polynomials with reductions
+\[
+        A'^9-a_0,\qquad B'^9-b_0,\qquad C-c_0 .
+\]
+Here the primes on \(A',B'\) also denote the unchanged
+parameters in the cases with no refined scaling.
+These monic polynomials in distinct variables form
+a regular sequence. The quotient by the three
+lifted polynomials is torsion-free over the discrete
+valuation ring. If a uniformizer multiple is in
+their ideal, its representation
+reduces to a syzygy of the three initial polynomials.
+These syzygies are generated by the pairwise
+relations, by induction using that each successive
+monic polynomial is a nonzerodivisor modulo the
+earlier ones. Lift and remove the pairwise relations
+and divide the remaining representation by the
+uniformizer. The quotient's uniformizer completion
+is still torsion-free. It is finite over the base
+ring, since the \(81\) residue basis monomials
+generate by successive uniformizer approximation.
+Inverting the uniformizer therefore gives a nonzero
+finite algebra over the base field. A maximal
+ideal gives a point over a finite field extension
+with all three parameters integral. It solves the
+first three forms exactly. The fourth form is in
+their ideal modulo \(I_4\) by the zero remainder
+identity. This proves the claimed simultaneous
+congruence for the actual exponent word, with no
+limit in its exponents.
+
+One further precision still gives a finite test here.
+At precision \(I_5\), the counts \(m=3,4\) may enter
+for total digit count four. If the digit count is
+at least six, only \(m=1,2\) contribute as before.
+For \(I_5\) the pure axis quotient is independent of
+the positive axis height. To see this, decompose it
+into successive units at heights \(j\). The factor
+for a single block at height \(j\) is
+\[
+        \prod_{\substack{1\le r\le 3^j\\3\nmid r}}
+                        (1+3^j x/r).
+\]
+For \(j\ge2\), the sum of \(r^{-2}\) is divisible by
+three by counting the units. Pairing \(r\) with
+\(3^j-r\) shows that the sum of \(r^{-1}\) is
+divisible by \(3^{j+1}\), since the number of
+pairs is \(3^{j-1}\) and each product
+\(r(3^j-r)\) reduces to \(-1\).
+The linear and quadratic terms therefore vanish
+modulo \(3^{2j+1}\), and the terms of higher
+degree already have valuation at least \(3j\).
+The block is \(1\bmod243\).
+The axis interaction reduction above now retains
+four leading digits instead of three, with the
+bounded carries for \(m=3,4\) retained when needed.
+Together with the same unit product modulo \(243\),
+this gives the inputs for a lift above precision four.
+
+For \(s=20\) it suffices to use \(I_{114/27}\).
+At this precision the third and later foreign
+insertions are still invisible. For the first two
+insertions the new coefficient errors at modulus
+\(81\) have value at least \(4+4/9>114/27\).
+Only the pure axis factors need the higher modulus
+\(243\). By (29) there are five unordered axis
+pairs represented by \((0,0),(3,0),(3,1)\) as
+height-prefix types, excluding \((0,0)\) paired
+with itself. The three possible residues of \(F_2\)
+modulo \(81\) are \(11,38,65\).
+When \(H\) changes by a multiple of \(27\), the
+normalized scalar differences gain one valuation
+unit over the preceding \(H\bmod9\) comparison.
+The first two forms are invariant modulo \(I_4\),
+and the two \(Z\) forms are invariant modulo \(I_5\).
+The final reduction again uses first-row multipliers
+of value at least one. Thus \(H\bmod27\) suffices.
+In all \(405\) representatives the initial
+remainder is constant and nonzero at a valuation
+at most \(113/27\). This excludes the middle start.
+
+At \(s=23\), take \(I_{37/9}\) if either second
+digit is one. The same modulus and omission bounds
+apply as for \(s=20\). There are nine eligible
+axis pairs among the five types \((0,0),(3,0),(3,1),
+(3,3),(3,4)\), with at least one of the last two
+types present. Equation (29) fixes \(F_2\bmod27\).
+Every one of the \(729\) representatives has its
+constant obstruction at valuation four.
+
+If both first and second digits are zero and one
+axis has degree one, take \(I_{41/9}\). Now the
+first insertion uses four leading digits for its
+binomial, and the second insertion can still use
+\(F_2\bmod81\). The four prefixes for the nontrivial
+axis are \(0,1,3,4\), with axis height four.
+Padding a height-three word with a low zero preserves
+the binomial factors modulo \(243\) by the same
+reciprocal-sum argument. With the two leading zeros,
+every shorter word is zero.
+
+The third insertion term has value at least \(13/3\)
+and can be discarded from the reducing identity
+at this precision. For the first two forms its value
+plus the multiplier bound of one exceeds \(41/9\).
+For the \(Z\) forms, \(3\alpha<Q_x\) and \(3\beta<Q_y\)
+because the leading digits are zero. The axis
+binomials for the third insertion are then one
+modulo three, and its contribution to \(DR\)
+is \(F_3u^3T^3\) modulo \(I_{16/3}\). The constant-shift
+coefficients at offsets \(22,23\) have values \(7/9\)
+and \(11/9\), respectively. Their products with
+the third insertion also have values above \(41/9\).
+All higher insertions are beyond the working
+precision. The reduction at the \(324\) resulting
+representatives gives a nonzero constant at valuation
+\(40/9\).
+
+For two axes of degree above one with both leading
+digits zero on each, the same input reduction and
+third-insertion omission hold through \(I_{43/9}\).
+In fact the third insertion errors in the first two
+rows have value at least \(13/3\) before multiplication
+by the row coefficients of value at least one.
+Its errors in the \(Z\) forms remain above
+\(I_{43/9}\), and the fourth insertion has value
+at least \(43/9\). Thus there are ten unordered
+pairs of the ordinary prefixes \(0,1,3,4\).
+Write \(r_x,r_y\) for the third foreign digits.
+The \(810\) residue tests at \(I_{42/9}\) consider
+the three \(F_2\bmod81\) residues allowed by (29).
+For \(3\mid H\) all final initial coefficients
+evaluate to a nonzero residue at the forced
+parameters. For \(3\nmid H\) the only remaining
+cases satisfy \(F_2\equiv44-27(r_x+r_y)\pmod {81}\).
+In these \(180\) cases the last reduction at \(I_{43/9}\)
+has initial order \(41\) in \(\pi\), with coefficient
+\(i(B-h)\), where \(h=1\) for \(H\equiv1\bmod3\)
+and \(h=-1\) for \(H\equiv2\bmod3\). Thus
+\(v(B-h)\ge1/9\) in an exact block.
+
+The first two moment rows give
+\(A\equiv h(1-i),\ B\equiv h\) in the residue field.
+The ninth-power comparison used for (28) permits
+\(A=h(1-i)+tA'\), \(B=h+tB'\), \(t^3=\pi\), with
+\(A',B'\) integral. In the \(h=-1\) case their
+order-\(36\) rows in \(t\) give \(\bar B'\ne0\),
+contradicting \(v(B-h)\ge1/9\).
+
+In the \(h=1\) case those rows give
+\(\bar A'=-1-i\), \(\bar B'=0\). Use
+\(A'=-1-i+A_1\), \(B'=t^2B_1\). In suitable
+combinations \(X,Y\) of the first two rows the
+checker obtains, through the orders indicated,
+\[
+\begin{split}
+ X &= t^{36}A_1^9
+       +t^{39}\bigl(-1-i+\text{terms divisible by }A_1\bigr)
+       \pmod{t^{40}},\\
+ Y+t^3X &= t^{42}(2+i-B_1)A_1^9
+       +t^{45}\bigl((1+i)B_1+(i-1)B_1^3
+                        +\text{terms divisible by }A_1\bigr)
+       \pmod{t^{46}} .
+\end{split}
+\]
+The first equation with \(X=0\) gives
+\(t^{-3}A_1^9\equiv1+i\) in the residue field.
+Substitute this into the second and take its
+order-\(45\) residue to obtain
+\(1+(i-1)\bar B_1^3=0\). Thus \(\bar B_1=-1+i\).
+In contrast, the final reduced row is
+\[
+       i\pi^{41}(B-1) +(1+i)\pi^{42}A(B+1)
+                   \pmod{\pi^{43}} .
+\]
+With \(B=1+\pi B_1\) and \(\bar A=1-i\),
+its order-\(42\) coefficient is \(i\bar B_1+1\).
+This would require \(\bar B_1=i\), a contradiction.
+The argument uses exact congruences only through
+\(I_{43/9}\), so higher foreign insertions cannot
+restore a zero block.
+
 ### A unit low foreign coefficient
 
 **Unit foreign coefficient.** Keep the low even-digit
@@ -1753,10 +2079,14 @@ Section 9 gives the quadratic numerator test and the
 three possible starts with precise pole constraints
 at \(L=9\). The linked higher-precision equations
 exclude all three starts for \(XY\) at this radius.
-Other low even-digit foreign terms reduce to
-finitely many realizable native profiles at precision
-four, whose linked lifts are still needed. For a unit
-low foreign coefficient it
+Other low even-digit foreign terms reduce to finitely
+many realizable native profiles at precision four.
+For digit counts at least four, (29) gives exactly
+the surviving congruence profiles at precision four.
+The subsequent linked lifts exclude all three starts
+for exact blocks. At \(L=9\), the low even-digit sector
+still requires the remaining two-digit profiles
+beyond \(XY\). For a unit low foreign coefficient it
 also excludes the first two critical radii and all
 radii on prime-to-three grids, when both distinct
 poles survive. One must use the linked

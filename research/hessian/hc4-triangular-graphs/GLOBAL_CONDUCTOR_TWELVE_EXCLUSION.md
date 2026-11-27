@@ -100,5 +100,6 @@ coefficient, collision, and root-scale identities. The reduction to
 the six sequences and the passage through finite parameter places
 are written arguments. The
 [conductor-fourteen exclusion](GLOBAL_CONDUCTOR_FOURTEEN_EXCLUSION.md)
-raises the global bound to sixteen. Automatic codifferent landing
-and the unrestricted plane Jacobian conjecture remain open.
+and [conductor-sixteen exclusion](GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md)
+raise the bound to eighteen. Automatic codifferent landing and the
+unrestricted plane Jacobian conjecture remain open.
