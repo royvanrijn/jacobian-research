@@ -1,0 +1,55 @@
+{
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "pari_gp": "2.15.4",
+  "control": {
+    "P_ascending": [
+      12,
+      -190,
+      735,
+      2708,
+      2740,
+      1168,
+      224,
+      16
+    ],
+    "Z_ascending": [
+      0,
+      2,
+      2
+    ],
+    "H_ascending": [
+      -1,
+      16,
+      20,
+      4
+    ],
+    "bad_at_five": true,
+    "good_seven_order": 119112,
+    "rational_three_rank": 1,
+    "unit_and_local_cube_slice": "n=0 mod9; virtuality and specialized independence not asserted"
+  },
+  "complete_mod_five_sieve": {
+    "normalized_polynomials": 15625,
+    "reflection_representatives": 7875,
+    "good_representatives": 5012,
+    "weighted_counts_by_v3_order": {
+      "0": 5689,
+      "1": 2670,
+      "2": 1019,
+      "3": 396,
+      "4": 110,
+      "5": 33,
+      "6": 4,
+      "bad": 5704
+    },
+    "multiplicity_at_one_when_v3_at_least_five": {
+      "1": 20,
+      "2": 8,
+      "3": 9
+    },
+    "maximum_certified_upper_bound": 4,
+    "trace_sha256": "49837a583da277362346f09e77b0388112b813f55557254ec03c489d4cfabceb"
+  },
+  "scope": "degree profiles, complete good-reduction obstruction at five, one-direction control; rank-five target open"
+}

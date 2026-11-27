@@ -6,9 +6,10 @@ below deduces a dimension-independent square-root distance estimate with
 explicit constants, without optimizing them. This is an internal written
 deduction from that preprint, not a claim made in its frozen edition and
 not an independently reviewed or formally verified theorem. The uniform
-positive-correlation interval for four cells now has an
+positive-correlation interval for every fixed cell count now has an
 [internal normal-flux compactness proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md)
-using these inputs; independent mathematical review is pending.
+using these inputs, with a threshold depending on the cell count but
+independent of the ambient dimension; independent mathematical review is pending.
 
 ## External endpoint and application audit
 

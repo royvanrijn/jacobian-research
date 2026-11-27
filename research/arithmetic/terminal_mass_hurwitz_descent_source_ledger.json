@@ -169,7 +169,7 @@
     "checker": "research/arithmetic/verify_terminal_mass_three_factor.py",
     "checker_sha256": "265ecb6bb3565a89dce53d1374743f68135682fd99bcc2009038b5b486c45663",
     "receipt": "research/arithmetic/terminal_mass_three_factor_verification.json",
-    "receipt_sha256": "4816dc11399328929e59a807767064b6c20312a013af0b0100ef1d3b82ca4462",
+    "receipt_sha256": "381b5a1f74ec98c36bbb9e8e4150457dd24785182e9eb70ca933c6ff2cfe650e",
     "command": "python3 research/arithmetic/verify_terminal_mass_three_factor.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
@@ -179,20 +179,20 @@
   "primary_source_comparison_reinspection": "Actual primary statements rechecked: Ripoll Definition 0.3, Theorems 0.4 and 5.5, and Liu--Osserman Proposition 1.1, Theorem 1.2 and Section 2. The reflection and single-cycle hypotheses do not cover the paired DT action. Lemma 19 is a self-contained pair-conjugation and tree argument. Theorem 20 uses the named earlier minimum reductions and retained degree-thirteen base, two-leaf absorption and marking-removal proofs. No imported connectivity theorem or priority assertion is added.",
   "global_compatibility_evidence": {
     "checker": "research/arithmetic/verify_terminal_mass_global_compatibility.py",
-    "checker_sha256": "a7d5ecec7195a64f2647ef6d1c119896e3a48f03133a96353ce924e4759a63d3",
+    "checker_sha256": "d86754898e6567ca7023765300b947d0e702f4d71d85aa9879e38aee4a8f07fa",
     "receipt": "research/arithmetic/terminal_mass_global_compatibility_verification.json",
-    "receipt_sha256": "2cedeafe0d12f69451010e1dd533ceec8fb9258166e6b82432f437e86061c9a9",
+    "receipt_sha256": "66ce5577d00b08ccf0f0bbba025956f6d643060d79159b2ac437301fc8eb5620",
     "command": "python3 research/arithmetic/verify_terminal_mass_global_compatibility.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
     "deterministic_input": "Existing fixed-product degree-seven domain generated from the DT class; retained degree-fifteen plateau certificate; four literal synchronized-tree controls and two negative controls in checker source. Translation-normalized exact coset patterns for g=1..12 and coprime terminal multipliers 1..8; literal five-label pair; odd g=3..31 positive weighting controls; a literal paired-path degree-fifteen control. All terminal-bridge cuts and all disjoint middle/terminal component-edge pairs in the same 392-tuple domain; all normalized (h,q) patterns in Z/(2t) for even t=2..40; literal terminal-middle permutations breaking the antipodal matching.",
-    "scope": "Internal replay: existing four degree-seven orbits and former controls; 15182 normalized modular patterns, 2064 covered endpoint lifts, all ten literal middle/terminal pair masks, 270 pair-feasible weightings rejected by the new-minimizer dichotomy, corrupted-mask rejection, exact support-code criterion on 392 retained tuples (98 invariant, 294 noninvariant), and a phase-compatible but nonminimal degree-fifteen tuple with noninvariant code. Universal results have complete written proofs; no higher-degree census or complete extraction. New internal controls: 126 exact terminal-bridge comparisons and 966 complementary-component noncrossing comparisons on the retained domain, and bounded saturated order-two phase and pairing-break controls. These support the written equal-terminal exclusion, degree-congruence extraction and antipodal singleton structure; the equality singleton exclusion remains open."
+    "scope": "Internal replay: existing four degree-seven orbits and former controls; 15182 normalized modular patterns, 2064 covered endpoint lifts, all ten literal middle/terminal pair masks, 270 pair-feasible weightings rejected by the new-minimizer dichotomy, corrupted-mask rejection, exact support-code criterion on 392 retained tuples (98 invariant, 294 noninvariant), and a phase-compatible but nonminimal degree-fifteen tuple with noninvariant code. Universal results have complete written proofs; no higher-degree census or complete extraction. New internal controls: 126 exact terminal-bridge comparisons and 966 complementary-component noncrossing comparisons on the retained domain, and bounded saturated order-two phase and pairing-break controls. These support the written equal-terminal exclusion, degree-congruence extraction and antipodal singleton structure; the separate universal fixed-projection proof now excludes equality singleton minima."
   },
   "singleton_equal_cut_evidence": {
     "checker": "research/arithmetic/verify_terminal_mass_singleton_equal_cut.py",
     "checker_sha256": "d82814f5a9b55a86d391de91b7edd38814c98e2e897537a7a6c66131678c3f52",
     "receipt": "research/arithmetic/terminal_mass_singleton_equal_cut_verification.json",
-    "receipt_sha256": "d481449e59f0220320c00572a17be948a9f71f8f07acd1a69bee435d0bcceda9",
+    "receipt_sha256": "d808f9cdab4f642814dd488120c3f9a65d2d6fd1797d832b2048de87d813d18c",
     "command": "python3 research/arithmetic/verify_terminal_mass_singleton_equal_cut.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
@@ -207,6 +207,7 @@
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
     "deterministic_input": "All Pruefer trees and binary endpoint lift assignments for t=2..4; all labeled terminal trees and all DTs on 2t middle sheets for t=3..5 with normalized active lifts. Literal t=2 endpoint-exchange control. Five canonical saturated path trees with even t=4,6,8,12,16, opposite-half pairing of the last t middle path edges, and first-factor roots computed from complementary cycles.",
-    "scope": "Internal exact checks of 1076 lift assignments, 82245 terminal-tree/MM pairs and five full-tree escape certificates including projection break, twist, outer contact and pruning. Independent endpoint conjugation cross-checks permutation composition. These bounded controls supplement universal written proofs and do not constitute a higher-degree census or independent review."
+    "scope": "Internal exact checks of 1076 lift assignments, 82245 terminal-tree/MM pairs and five full-tree escape certificates including projection break, twist, outer contact and pruning. Independent endpoint conjugation cross-checks permutation composition. These bounded controls supplement universal written proofs and do not constitute a higher-degree census or independent review.",
+    "receipt_sha256": "0b155cdf80124f679fabfb02c462400fd4021a9ea9d5c9b227ed9d73a7bf3627"
   }
 }

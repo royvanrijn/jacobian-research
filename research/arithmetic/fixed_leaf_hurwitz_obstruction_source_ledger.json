@@ -52,7 +52,7 @@
     "receipt": "research/arithmetic/fixed_leaf_hurwitz_obstruction_verification.json",
     "scope": "All392 fixed-product degree7 DT triples, all1134 chosen-leaf inputs and3444 allowed elementary moves;1092 rejected spread moves; uniform path/3-cycle/block/escape controls through r50; exact small wreath and symmetric group closures."
   },
-  "remaining_frontier": "Arbitrary-input leaf extraction and control of all extensions remain open. A successful proof must allow changing the chosen leaf or temporarily spreading it.",
+  "remaining_frontier": "Theorem 20 of TERMINAL_MASS_HURWITZ_DESCENT.md proves pure-DT extraction in every odd degree N>=15. The retained degree-thirteen base, two-leaf absorption and exact marking removal establish residual pure-DT connectivity and an imprimitive-deletion representative in every residual orbit. Mixed polynomial connectivity and the original even-passport uniform classification remain open. These later conclusions do not enlarge the scope of this ledger's original checker or its recorded review assurances.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

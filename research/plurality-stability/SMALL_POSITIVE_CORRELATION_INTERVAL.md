@@ -7,6 +7,12 @@ mathematical review or formal verification. Its most important new steps are
 the relative exterior estimate (C4) and the normal-flux lower bound (C11).
 No explicit numerical correlation threshold is claimed.
 
+The [fixed-cell extension](#extension-to-every-fixed-cell-count) below proves
+the same conclusion for **every fixed $k\ge2$**, with a threshold depending
+on $k$ but independent of the ambient dimension $d\ge k-1$. It includes the
+all-cell interface-kernel argument and the dimension-dependent tail estimates;
+the four-cell proof is retained explicitly as its original specialization.
+
 **Three-dimensional rigidity.** There exists $\rho_0>0$ such that, for every
 $0<\rho\le\rho_0$, every balanced measurable four-cell partition $A$ of
 $\mathbb R^3$ satisfying $S_\rho(A)\ge S_\rho(T)$ is a central regular
@@ -411,3 +417,371 @@ of limiting junction mass in (C9)--(C10), the factor in (C11), and the
 weighted product-kernel limit (C12), together with the exact imported
 first-moment and dimension-reduction hypotheses. Repository consistency
 checks are not such a review. No submission or release is asserted.
+
+## Extension to every fixed cell count
+
+**Fixed-cell small-correlation theorem.** For every integer $k\ge2$ there
+exists $\rho_k>0$ such that, for every $d\ge k-1$, every ordinary measurable
+partition $A=(A_1,\ldots,A_k)$ of $\mathbb R^d$ with
+$\gamma_d(A_i)=1/k$ satisfies
+
+\[
+ S_\rho(A)\le S_\rho(T_k)\qquad(0<\rho\le\rho_k).
+ \tag{A1}
+\]
+
+Equality holds precisely for central regular-simplex partitions and their
+cylindrical extensions, up to orthogonal maps, labels and null sets.
+Here $\rho_k$ may depend on $k$; there is no claim of one positive interval
+uniform over unbounded cell counts. The proof is internal and analytic,
+under the same accepted external first-moment input as the four-cell result.
+Independent mathematical review remains open.
+
+Put $n=k-1$, $F=F_k$ and $\ell=\sqrt{2F/n}$. Work first in dimension
+$n$. Let $b_i^*$ be the regular cell moments, so their matrix has Gram
+matrix $FP/n$, and put
+$n_{ij}=(b_i^*-b_j^*)/\ell$. Define $H_{ij}$, $F_{ij}$ and
+$d\nu_{ij}=\phi_n\,d\mathcal H^{n-1}$ as above. In dimension one the
+pair plane is a point, with its zero-dimensional Gaussian surface measure.
+The following checks supply each ingredient of (C1)--(C12) for general $k$.
+
+### The all-cell first-moment interface kernel
+
+Use
+
+\[
+\begin{split}
+\mathcal H&=\bigoplus_{i<j}L^2(F_{ij},\nu_{ij}),\\
+\mathcal H_0&=\left\{f:\ \sum_{j\ne i}\int f_{ij}\,d\nu_{ij}=0
+                                      \text{ for every }i\right\},\\
+(\mathcal Df)_i&=\sum_{j\ne i}\int x f_{ij}(x)\,d\nu_{ij}(x),\qquad
+Q_k(f)=\ell\|f\|_{\mathcal H}^2-\|\mathcal Df\|_F^2.
+\end{split}
+\]
+
+Speeds are extended antisymmetrically. Positive $f_{ij}$ is outward
+motion of cell $i$, whose inward normal is $n_{ij}$.
+The same shape derivative as (H1) gives $-W_1''/2=Q_k(f)$ on
+$\mathcal H_0$. Here is a justification that does not assume a
+classification of stationary simplex shapes. Start with smooth speeds
+compactly supported on facet interiors. Disjoint tubular neighborhoods
+give actual interface motions. Correct their second-order volume errors
+by $k-1$ additional facet bumps supported on a spanning tree of the
+complete label graph. Their mass derivative is an incidence matrix of
+rank $k-1$, so the implicit function theorem gives exactly balanced
+deformations without changing the initial speed. For $k=2,n=1$,
+$\mathcal H_0=\{0\}$ and the assertions are immediate.
+
+For the other cases the moment derivative is $\mathcal Df$ and
+the exact second derivative of $W_1$ gives the displayed form: in the
+score term each interface contributes
+$-\ell\int f_{ij}^2d\nu_{ij}$ to $W_1''/2$; the derivative of the
+moment square contributes $\|\mathcal Df\|_F^2$. The acceleration terms
+cancel because the original regular scores agree on each interface.
+The imported global first-moment theorem gives $Q_k\ge0$.
+
+Let $\mathcal M$ be the regular moment orbit and $\mathcal V$ its
+tangent space at $B_*$, with rows $\Omega b_i^*$ for $\Omega^T=-\Omega$.
+Apply the all-cell quantitative moment estimate (M2) to these exactly
+balanced deformations and divide by the square of the deformation
+parameter. Since distance to the smooth orbit has first-order tangent
+distance, this yields
+
+\[
+ \operatorname{dist}(\mathcal Df,\mathcal V)^2\le L_kQ_k(f).
+ \tag{A2}
+\]
+
+Truncate and smooth arbitrary $\mathcal H_0$ speeds on facet interiors,
+then correct their converging linear mass errors by the same tree bumps.
+This proves density and extends nonnegativity and (A2) to all speeds.
+All facet second moments are finite, so $\mathcal D$ is continuous.
+
+Rotations have speeds $f^\Omega_{ij}=-(\Omega x)\cdot n_{ij}$,
+belong to $\mathcal H_0$, have zero $Q_k$, and satisfy
+$(\mathcal Df^\Omega)_i=\Omega b_i^*$. Gaussian flux or truncation of
+the actual rotational deformation justifies these identities on the
+unbounded facets. If $Q_k(f)=0$, (A2) supplies a rotational speed $r$
+with $\mathcal Dr=\mathcal Df$. Nonnegativity makes the polarization
+against $r$ vanish; hence
+$0=Q_k(f-r)=\ell\|f-r\|^2$. The kernel is therefore exactly
+
+\[
+ \mathcal R_k=\{f^\Omega:\Omega^T=-\Omega\},\qquad
+ \dim\mathcal R_k=n(n-1)/2.
+ \tag{A3}
+\]
+
+The moment vectors span $\mathbb R^n$, proving injectivity of this
+rotation map. Finally $Q_k$ on $\mathcal H_0$ is $\ell I$ minus a
+finite-rank operator; its nonzero eigenvalues are bounded below away
+from zero. Thus it also has a gap modulo $\mathcal R_k$. The closing
+argument needs only nonnegativity and (A3), not a numerical gap.
+
+### Saturated margins for every simplex
+
+The transposition $i\leftrightarrow j$ is the orthogonal reflection
+$G_{ij}$ in $H_{ij}$; it interchanges $T_i,T_j$ and fixes the remaining
+vertices. Write $v_i=b_i^*/|b_i^*|$. Every inward normal of $T_i$
+satisfies
+
+\[
+ n_{ij}\cdot v_i=\sqrt{\frac{k}{2(k-1)}}\ge1/\sqrt2.
+\]
+
+Consequently $D_i=B(v_i,1/4)$ is contained in $T_i$, and
+$z\cdot n_{ij}\ge a:=1/\sqrt2-1/4>0$ on $D_i$.
+Its Gaussian mass is at least
+$p_n=\operatorname{vol}_n(B(0,1/4))(2\pi)^{-n/2}e^{-25/32}>0$.
+For $m=\rho x/\sqrt{1-\rho^2}$ the reflection identity (T3), now in
+$n$ dimensions, has nonnegative integrand whenever $x\in T_i$.
+Restricting it to $m+D_i\subset T_i$ proves
+
+\[
+ U_{\rho,ij}(x)\ge
+ p_n(1-e^{-2a})\min\{\rho n_{ij}\cdot x/\sqrt{1-\rho^2},1\}.
+ \tag{A4}
+\]
+
+Indeed the reflected density ratio is
+$e^{-2m_N(m_N+z_N)}\le e^{-2am_N}$, and concavity of
+$1-e^{-2au}$ on $[0,1]$ gives the stated bound. Thus (C1) holds with
+$c_T$ replaced by the fixed positive constant in (A4), for the
+$k(k-1)$ ordered transfers. Also $U_{\rho,ij}=0$ on the whole pair
+plane, and
+
+\[
+ \rho^{-1}\nabla U_{\rho,ij}(x)\longrightarrow b_i^*-b_j^*
+ \quad\text{locally uniformly as }\rho\downarrow0.
+ \tag{A5}
+\]
+
+For example differentiate the Mehler kernel at zero, obtaining
+$\partial_\rho M_\rho|_0=x\cdot y$; its first $x$ derivatives are
+dominated on compact $x$ sets by an integrable polynomial times a
+Gaussian in $y$ for $\rho$ in a neighborhood of zero. This proves (A5)
+without a bound on remote normal derivatives.
+
+### Weighted tails in dimension $k-1$
+
+Keep $w(x)=(1+|x|^2)e^{|x|^2/16}$ and $R\ge2$. The proof of (C3)
+works with $z\in\mathbb R^{n-1}$. More explicitly an admissible
+decreasing bound, up to a constant depending only on $n$, is
+
+\[
+\begin{split}
+\beta_n(R)=C_n\bigg[&\int_{|x|>R}(1+|x|^2)^2e^{|x|^2/8}d\gamma_n(x)\\
+ &+\int_{|z|>\sqrt{R^2-1}}
+              (1+|z|^2)^2e^{|z|^2/8}d\gamma_{n-1}(z)\bigg]
+ \longrightarrow0.
+ \tag{A6}
+\end{split}
+\]
+
+When $n=1$ the second integral is zero. Split $t\ge1$ and $t<1$,
+use Cauchy--Schwarz on the former and the bounded one-dimensional
+density inequality on the latter, exactly as in (C3). The global
+constant comes from the same integrals without tail restrictions.
+This establishes (C3) in all fixed dimensions; the polynomial $R^6$
+bound stated earlier is specific to dimension three and is not imported
+unchanged.
+
+The $n$-dimensional Mehler derivative satisfies
+$|L_\rho(x,y)|\le C_nw(x)w(y)$ for $0<\rho\le1/16$.
+Indeed
+$M_r\le C_n\exp((|x|^2+|y|^2)/34)$ in this range and its derivative
+is a quadratic polynomial with uniformly bounded coefficients times
+$M_r$. The exponent $1/16$ in $w$ leaves room to absorb that polynomial.
+Summing the ordered transfers now proves (C4)--(C5) with constants
+depending on $k$ and exterior factor tending to zero. No constant has
+to be uniform in $k$.
+
+### Normal-flux contradiction and dimension reduction
+
+If (A1) failed arbitrarily close to zero in dimension $n$, choose
+$\rho_j\downarrow0$ and balanced partitions outside the simplex orbit
+with $S_{\rho_j}(A^{(j)})\ge S_{\rho_j}(T_k)$. Nonnegative Hermite
+masses and Parseval give
+
+\[
+ 0\le\delta_j=F-W_1(A^{(j)})\le(1-1/k)\rho_j.
+ \tag{A7}
+\]
+
+Align the nearest regular moment matrix with $B_*$. The all-cell
+(M2)--(M3) and (G2) give changed-label measure tending to zero and
+the exact condition $B_j-B_*\perp\mathcal V$ simultaneously.
+The regret is strictly positive by (A4). With
+$s_j^2=\mathcal L_{\rho_j}(A^{(j)})/\rho_j$, (C2), the global
+weighted bound and localization give $s_j\to0$, exactly as in (C7).
+The measures $\mu_{j,i}=e_i^{(j)}\gamma_n/s_j$ have bounded weighted
+variation and weighted exterior variation tending to zero uniformly,
+by (A6).
+
+For every ordered pair $i,l$ set
+
+\[
+ \theta_{j,il}(z)=\frac1{s_j\phi_1(0)}
+     \int_0^\infty h_{il}^{(j)}(z+tn_{il})\phi_1(t)dt.
+\]
+
+They are bounded in $L^2(H_{il},\nu_{il})$ by (C1) and the same
+one-dimensional mass-cost inequality as (C9). Along a subsequence they
+converge weakly to nonnegative $\theta_{il}$. Transfers at any fixed
+positive normal distance have mass $O(s_j^2)$, so the normalized measures
+concentrate on their pair planes. The limits are supported on $F_{il}$
+because transfers originate in $T_i$. Junctions have dimension at most
+$n-2$ and are null for $\nu_{il}$; the weak $L^2$ limit gives them
+no mass. For $n=1$ there are no junctions. With
+$f_{il}=\theta_{li}-\theta_{il}$ for $i<l$, antisymmetrically extended,
+we obtain precisely
+
+\[
+ \mu_i=\sum_{l\ne i}f_{il}\nu_{il}|_{F_{il}},\qquad
+ f\in\mathcal H_0,\qquad\mathcal Df\perp\mathcal V.
+\]
+
+Total masses and first moments pass to the limit by weighted tightness,
+so these last two conditions are exact. The plane normalization is
+$d\nu_{il}=\phi_1(0)d\gamma_{n-1}$, including $n=1$.
+This is why the factor in (C11) is independent of dimension.
+On compact normal cylinders (A5) gives
+$U_{\rho_j,il}(z+tn)\ge\rho_j(\ell-o(1))t$. The bound
+$\int_0^bth\phi_1dt\ge(\int_0^bh\phi_1dt)^2/(2\phi_1(0))$,
+weak lower semicontinuity, and exhaustion of tangential cutoffs therefore
+give
+
+\[
+ 1\ge\frac\ell2\sum_{i\ne l}\|\theta_{il}\|_2^2
+       \ge\frac\ell2\|f\|_{\mathcal H}^2.
+\]
+
+No simultaneous normal cylinders need be disjoint: regret is already a
+sum of separately indexed ordered transfers, and each summand is
+estimated only once. Weighted tightness and local uniform convergence
+$L_{\rho_j}\to x\cdot y$ then give (C12) in dimension $n$. Thus
+
+\[
+ \|\mathcal Df\|_F^2\ge2\ge\ell\|f\|_{\mathcal H}^2,
+ \qquad Q_k(f)\le0.
+ \tag{A8}
+\]
+
+Nonnegativity and (A3) make $f$ rotational. Its moment lies in
+$\mathcal V$ and is orthogonal to $\mathcal V$, contradicting (A8).
+This proves rigidity for every sufficiently small positive correlation
+in dimension $n$, with one threshold for this fixed $k$.
+
+For arbitrary $d\ge n$, the fixed-mass existence argument below, applied
+in dimension $d$, gives a global maximizer (also the conclusion of
+Heilman--Tarter Lemma 2.3). Their Theorem 1.9 reduces **each global
+maximizer** to $n$ dimensions. In their notation set $m=k$ and $n_{\rm HT}+1=d$;
+their condition $m\le n_{\rm HT}+2$ is exactly $k\le d+1$.
+A hypothetical improving competitor would yield an improving maximizer,
+which the $n$-dimensional rigidity excludes. Every equality case is now
+a global maximizer and reduces in the same way. This proves (A1) and
+its equality statement; individual competitors were never dimension
+reduced. If desired, cylindrical embedding also gives the upper bound
+for $1\le d<n$, with strict inequality by moment rank.
+
+### Audit boundary of the fixed-cell extension
+
+The all-cell input is the exact frozen first-moment/covariance preprint,
+not an extrapolation of the four-cell endpoint. Its covariance path uses
+Milman--Neeman in dimension $k-1$, within the stated cell-count range.
+The all-cell moment estimate (M2) supplies (A2); no unproved Hessian
+classification or compact stationary-shape search enters. The exact
+Heilman--Tarter statement and proof of its existence lemma were inspected
+again for general $k$. The displayed convex set in that lemma's proof
+omits the fixed-mass equations. For the present application the argument
+below proves existence directly on the mass-constrained set and proves
+ordinaryness by a strictly positive quadratic variation. This fills in
+the required fixed-mass step without importing an assertion about the
+extreme points of a different feasible set.
+
+The new proof obligations for independent review are (A2)--(A3), the
+reflection ball in (A4), the dimension-dependent tails (A6), and their
+applications to (C9)--(C12). The $k=2$ zero-dimensional facet and trivial
+balanced speed space have been treated explicitly. No finite computation
+or source-consistency check establishes the analytic theorem, and no
+all-positive-correlation conclusion or publication is asserted.
+
+## A rigorous continuation boundary in correlation
+
+For fixed $k$, work in $n=k-1$ dimensions and let $V_k(\rho)$ be the
+maximum balanced noise stability. Write
+$G_k(\rho)=V_k(\rho)-S_\rho(T_k)\ge0$. The following facts constrain
+a continuation argument; they do not rule out a transition.
+
+**Compactness of maximizers and closed optimality.** On every compact
+subinterval of $(0,1)$, $V_k$ is Lipschitz, the set $\{G_k=0\}$ is
+closed, and any sequence of global maximizers with correlations tending
+to an interior value has a subsequence converging in $L^2(\gamma_n)^k$
+to an ordinary global maximizer there.
+
+To check existence and the last assertion with the balance constraints
+explicit, use the weakly compact convex set
+
+\[
+ \mathcal K=\{(u_i):0\le u_i\le1,\ \sum_i u_i=1,
+                                      \ \int u_i\,d\gamma_n=1/k\}.
+\]
+
+On fixed finite-dimensional Gaussian space $T_\rho$ is compact on
+$L^2$: degree-$m$ Hermite eigenspaces have finite multiplicity and
+eigenvalues $\rho^m\to0$. Hence its quadratic functional is weakly
+continuous on $\mathcal K$, and a maximum exists. Every maximizer is
+ordinary. Otherwise some pair $u_i,u_j$ is bounded away from zero on
+a set of positive measure. On that set both are also bounded away from
+one. A nonzero bounded function $g$ supported there with zero Gaussian
+integral gives two feasible perturbations $u\pm\varepsilon g(e_i-e_j)$.
+Their average objective exceeds that of $u$, since
+$\langle g,T_\rho g\rangle>0$ for every nonzero $g$, by the strictly
+positive Hermite eigenvalues. This contradicts maximality.
+
+The Hermite formula also gives, for $a\le\rho,\tau\le b<1$,
+
+\[
+ \|T_\rho-T_\tau\|_{2\to2}
+ \le\left(\sup_{m\ge1}m b^{m-1}\right)|\rho-\tau|.
+ \tag{A9}
+\]
+
+The factor is finite and $\sum_i\|u_i\|_2^2\le1$ on $\mathcal K$.
+Taking maxima proves the Lipschitz statement, and therefore closedness.
+For correlations $\rho_j\to r\in(0,1)$, pass a maximizing sequence
+weakly in $\mathcal K$. Compactness of $T_r$, (A9), and continuity of
+$V_k$ make its limit a maximizer at $r$, thus ordinary by the preceding
+argument. Both the ordinary sequence and its limit have squared Hilbert
+norm one, so weak convergence is strong. This is compactness at positive
+correlation; $T_0$ has no strictly positive higher-degree eigenvalues and
+the same argument cannot give ordinary strong limits at zero.
+
+Define the endpoint of the initial optimality interval by
+
+\[
+ r_k=\sup\{r\in(0,1):G_k(\rho)=0\text{ for every }0<\rho\le r\}.
+\]
+
+By (A1), $r_k>0$. If $r_k<1$, continuity proves $G_k(r_k)=0$.
+There are correlations $\rho_j>r_k$, $\rho_j\to r_k$, with
+$G_k(\rho_j)>0$; choose their maximizers and pass to a strong limit at
+$r_k$. Consequently a finite continuation endpoint has at least one of
+two mechanisms:
+
+* The limit is a nonsimplex global maximizer tied with $T_k$ at $r_k$.
+* The limit is a simplex, and improving maximizers approach its orbit
+  as the correlation approaches $r_k$.
+
+The first mechanism is a global crossing that a strict local interface
+Hessian at the simplex would not exclude. The second requires a
+comparison uniform in both the correlation and arbitrary measurable
+nearby partitions, including remote transfers; a smooth fixed-correlation
+second variation alone does not supply it. Thus closedness, local
+stability, and optimality on the small-correlation interval cannot
+justify continuation by themselves. Proving that neither mechanism can
+occur, or directly proving a global comparison at every correlation,
+remains the unrestricted objective. The large-correlation perimeter
+limit must also control moving maximizers and its error relative to
+their deformation; a pointwise limit for each fixed partition is
+insufficient for that purpose.

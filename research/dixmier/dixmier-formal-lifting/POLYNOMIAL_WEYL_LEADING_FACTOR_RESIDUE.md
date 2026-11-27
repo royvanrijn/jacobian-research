@@ -151,3 +151,183 @@ If \(A,b\) are the leading coefficients of \(h,B\), the limits at
 strictly increasing, the limits differ and \(M\) is odd.
 Nonreal roots contribute even total multiplicity, which gives the
 last two conclusions from \(\deg h=gM\).
+
+## Weighted Poisson symbols of a scalar commutator pair
+
+**Theorem WeylWeightedSymbolRationalHamiltonianSlice.**
+Let \(P,Q\) belong to the first Weyl algebra over a
+characteristic-zero field \(k\), with
+\([P,Q]=\kappa\in k^\times\). Give \(x,D\) integer
+weights \(\rho,\sigma\) with \(\rho+\sigma>0\).
+If the highest Poisson symbol \(p\in k[x,\xi]\)
+of \(P\) is nonconstant, there exists a rational
+\(f\in k(x,\xi)\) such that
+\[
+              \{p,f\}=\kappa,\qquad
+         \{a,b\}=a_\xi b_x-a_x b_\xi .
+\]
+One can choose \(f\) weighted homogeneous of weight
+\(\rho+\sigma-\deg_{(\rho,\sigma)}p\).
+Consequently the differential dual to
+\(\{p,\cdot\}\) on every geometric component of
+the generic level of \(p\) has an exact primitive.
+
+For comparison, [Guccione, Guccione and Valqui,
+Theorem 3.5(3)](https://arxiv.org/pdf/1205.6827)
+constructs a homogeneous companion with bracket
+\(p\) under \(\sigma\le0\), positive weighted
+degrees, a vanishing leading bracket and
+nonintegral degree ratios in both directions.
+On that range the companion divided by \(p\)
+gives a rational slice. The construction here
+works directly in a completed rational symbol
+algebra for weights of positive sum.
+
+### Lifting the algebraic constants of the leading symbol
+
+Put \(K=k(x,\xi)\) and \(r=\rho+\sigma>0\).
+In \(K[[\epsilon]]\) use the normal symbol product
+\[
+         a\star b=\sum_{j\ge0}
+          \frac{\epsilon^{rj}}{j!}
+                 (\partial_\xi^j a)(\partial_x^j b).
+\]
+The sum converges formally, and the Leibniz rule
+for the two commuting derivatives gives
+associativity. It restricts on polynomials to the
+normal ordering relation
+\(\xi\star x-x\star\xi=\epsilon^r\).
+The first coefficient of a commutator of two
+symbols with leading terms \(a_0,b_0\), at degree
+\(r\) in \(\epsilon\), is \(\{a_0,b_0\}\).
+
+Use normal symbols with coefficient functions
+of \(x\) on the left. If \(d_P,d_Q\) are the
+weighted degrees, scale to
+\[
+ \mathcal P=\epsilon^{d_P}P(\epsilon^{-\rho}x,
+                                      \epsilon^{-\sigma}\xi),\qquad
+ \mathcal Q=\epsilon^{d_Q}Q(\epsilon^{-\rho}x,
+                                      \epsilon^{-\sigma}\xi).
+\]
+Both are formal polynomials in \(\epsilon\) with
+nonnegative exponents, and
+\([\mathcal P,\mathcal Q]_\star=\kappa\epsilon^{d_P+d_Q}\).
+Indeed \(\epsilon^{-\sigma}\xi\) and
+\(\epsilon^{-\rho}x\) have commutator one for this
+product, so the rescaling preserves the Weyl
+relation before the final scalar multiplication.
+
+If \(a_0\in K\) Poisson commutes with \(p\),
+then \(a_0\) is algebraic over \(k(p)\), by the
+Jacobian criterion for algebraic dependence.
+Let \(\sum_i c_i(p)X^i\) be its minimal polynomial
+over \(k(p)\). The coefficients lift to rational
+functions \(c_i(\mathcal P)\) in the \(\star\)
+algebra by inverting polynomial denominators,
+which are units because their constant terms
+are nonzero. They commute with \(\mathcal P\).
+Solve
+\[
+              \sum_i c_i(\mathcal P)\star \widehat a^{\star i}=0,
+                       \qquad \widehat a=a_0+O(\epsilon)
+\]
+recursively. The coefficient of each new unknown
+is the ordinary derivative of the minimal
+polynomial at \(a_0\), nonzero by separability.
+Furthermore \(\widehat a\) commutes with
+\(\mathcal P\). If their commutator had a first
+nonzero coefficient, commuting the defining
+equation with \(\mathcal P\) would multiply
+that coefficient by the same nonzero derivative,
+a contradiction. This argument accommodates
+constants algebraic over \(k(p)\), including
+the missing roots of powers in the leading symbol.
+
+Set \(N=d_P+d_Q-r\ge0\); the inequality follows
+because every \(\star\) commutator starts at
+order \(r\) or higher. At each order \(j<N\)
+in \(\mathcal Q\), after the preceding coefficients
+have been removed, the order-\((j+r)\) commutator
+coefficient gives \(\{p,q_j\}=0\).
+Subtract \(\epsilon^j\widehat q_j\) using the
+commuting lift just constructed. The commutator
+is unchanged. At \(j=N\) the same coefficient
+now gives \(\{p,q_N\}=\kappa\), as required.
+
+To choose a homogeneous primitive, replace
+\((x,\xi)\) in any rational solution by
+\((t^\rho x,t^\sigma \xi)\) and expand at \(t=0\).
+The Poisson bracket with \(p\) of the rescaled
+solution equals \(\kappa t^{r-d_P}\).
+The coefficient of \(t^{r-d_P}\) of the rescaled
+rational function is itself rational and of
+weight \(r-d_P\), by rescaling the variables
+once more. It gives the desired solution.
+The differential assertion follows from
+\(df(\{p,\cdot\})=\kappa\) on the generic level.
+
+### The cyclic cover for a weighted homogeneous symbol
+
+**Corollary WeylWeightedSymbolCyclicDifferential.**
+Assume the hypotheses of the weighted symbol theorem,
+and scale \((\rho,\sigma)\) to be primitive. Choose
+integers \(a,b\) with \(\rho a+\sigma b=1\).
+Put \(z=x^a\xi^b,\ t=x^{-\sigma}\xi^\rho\).
+Writing \(p=z^d F(t)\) with \(d=\deg_{(\rho,\sigma)}p\),
+if \(d\ne0\) the generic-component obstruction is
+exactness of
+\[
+                         z^{\rho+\sigma}t^{a-b-1}\,dt
+                      \quad\text{on}\quad z^d=s/F(t),
+\]
+where \(s\) is the generic value of \(p\).
+If \(d=0\), the Hamiltonian differential on each
+geometric generic component is a scalar multiple
+of \(z^{\rho+\sigma-1}dz\) and is exact.
+
+The monomial change is unimodular:
+\(x=z^\rho t^{-b},\ \xi=z^\sigma t^a\).
+It gives
+\(\{z,t\}=-z^{1-\rho-\sigma}t^{1+b-a}\).
+For \(d\ne0\) the dual form on \(p=s\) is
+\(-z^{\rho+\sigma}t^{a-b-1}\,dt/(d s)\).
+For \(d=0\), \(F(t)=s\) makes \(t\) a scalar on
+each geometric component and \(F'(t)\ne0\)
+there, giving the claimed form in \(z\).
+For differential-order weights \((0,1)\), the
+older common-leading-factor condition is recovered
+as \(dx/\lambda\) on the cover \(\lambda^g=h\).
+For a general weight, the same [finite-dimensional
+exactness test](../../jacobian/monodromy-theory/KELLER_LEADING_PAIR_DE_RHAM_OBSTRUCTION.md)
+applies on the displayed curve.
+
+**Corollary WeylWeightedBinomialSumObstruction.**
+Let \(\alpha,\beta,\gamma\in k^\times\) and
+\(m,n\ge2,\ j\ge1\). An operator with weighted
+leading symbol \(\gamma(\alpha \xi^m+\beta x^n)^j\)
+has no scalar commutator mate in the first Weyl
+algebra, for weights making this polynomial
+homogeneous with positive sum.
+
+Indeed the geometric generic curve is a level of
+\(\alpha\xi^m+\beta x^n\). Its Hamiltonian
+differential is proportional to \(dx/\xi^{m-1}\)
+on the squarefree cyclic model
+\(\xi^m=(s-\beta x^n)/\alpha\). The numerator one
+has nonzero cyclic-cover remainder, since
+\(0\le n-2\). This excludes a rational slice.
+
+### A missing-root control
+
+Let \(L=D+x^2,\ P=L^2+x,\ Q=-L\), so
+\([P,Q]=1\). At weights \((1,2)\) the leading
+symbols are \(p=\ell^2,\ q=-\ell\) with
+\(\ell=\xi+x^2\). Here \(\ell\) is algebraic
+over \(k(p)\). The rescaled \(\mathcal P\) is
+\(\ell\star\ell+\epsilon^3x\), and the lift of
+\(\ell\) begins
+\(\widehat\ell=\ell+\epsilon^3x/(2\ell)+O(\epsilon^4)\).
+Subtracting \(-\widehat\ell\) from \(\mathcal Q\)
+therefore exposes \(f=x/(2\ell)\), with
+\(\{\ell^2,f\}=1\).

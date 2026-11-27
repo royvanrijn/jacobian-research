@@ -124,6 +124,8 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | The order-seven operator independently excludes the primitive multiplicity-26 branch | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | The even multiplicity-26 profiles have fixed four-type and indicial constraints | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | The surviving even Weyl profile gives a primitive length-two commutator problem | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| Weighted Weyl symbols reduce to exactness on explicit cyclic curves | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
+| Weighted powers of a binomial sum cannot be leading symbols of scalar commutator pairs | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

@@ -6,6 +6,7 @@ Drafts and standalone notes with their current review status.
 
 | Paper | Status |
 |---|---|
+| [The tetrahedral partition maximizes Gaussian noise stability for small positive correlations](four-cell-gaussian-noise-stability/) | ready for specialist review |
 | [A genus-three hyperelliptic curve with rational Jacobian three-torsion of rank three](genus-three-rational-three-torsion/) | ready for specialist review |
 | [Finite Tests for Mixed Moments of Regular Functions](finite-tests-for-mixed-moments/) | draft |
 | [Relative Frobenius norms and density-one ordinary reduction](cm-newton-polygon-constraints/) | ready for review |

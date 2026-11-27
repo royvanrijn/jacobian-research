@@ -58,7 +58,7 @@
     "receipt": "research/arithmetic/paired_hurwitz_leaf_extraction_verification.json",
     "scope": "Exact extraction and block evacuation; cyclic controls through r50; all72 allowed external anchors; marked T window; paired blocker; complete degree7 domain392 and its group orders; overlap gate and exchange for all294 full A7 inputs; all5985 even-intersection DT pair updates; higher-degree deterministic gate controls."
   },
-  "remaining_frontier": "The canonical component now has full two-leaf attachment absorption, and degree-thirteen polynomial connectivity is settled. For the residual pure-DT extraction problem in N>=15, use full alternating monodromy to contradict the simultaneous complementary cyclic covers at a positive global orbit minimum with equal terminal sizes or a singleton. The overlap-one gate does not yet force such a contradiction. Mixed connectivity remains separate.",
+  "remaining_frontier": "Theorem 20 of TERMINAL_MASS_HURWITZ_DESCENT.md proves pure-DT extraction in every odd degree N>=15. The retained degree-thirteen base, two-leaf absorption and exact marking removal establish residual pure-DT connectivity and an imprimitive-deletion representative in every residual orbit. Mixed polynomial connectivity and the original even-passport uniform classification remain open. These later conclusions do not enlarge the scope of this ledger's original checker or its recorded review assurances.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

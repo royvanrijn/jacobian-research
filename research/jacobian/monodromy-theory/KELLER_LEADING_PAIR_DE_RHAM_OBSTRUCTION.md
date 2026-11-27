@@ -130,11 +130,15 @@ For example on a Poisson surface take
 \(\delta=\{a,\cdot\}\) on the generic level of \(a\).
 The same de Rham test applies to a proposed Hamiltonian
 slice \(\{a,f\}=1\), using an affine open on which the
-dual differential is regular. For a filtered Weyl
-calculation it applies whenever symbol comparison has
-actually produced such a derivation equation on a curve.
-Vanishing of a leading Poisson bracket by itself does
-not yield that equation.
+dual differential is regular. For a scalar commutator pair in the first Weyl algebra,
+the [weighted Hamiltonian slice theorem](../../dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#weighted-poisson-symbols-of-a-scalar-commutator-pair)
+produces the rational slice for every nonconstant
+leading symbol at integer weights of positive sum.
+It derives the equation from the full commutator,
+using commuting lifts of the algebraic constants.
+For a weighted homogeneous symbol, the same theorem
+and its corollary give the cyclic curve and differential
+on which to run the exactness test.
 
 ## A cyclic-cover calculation
 

@@ -46,7 +46,7 @@
     "receipt": "research/arithmetic/unmarked_polynomial_hurwitz_reduction_verification.json",
     "scope": "Exact tuple/product/stabilizer/label checks at r2,3,4,5,6,7,12,25,50; completeSr quotient adjustments r2..7. The subgroup equality and uniform results have written proofs."
   },
-  "remaining_frontier": "The complete degree-thirteen census settles original degree fourteen. The two residual unmarked polynomial connectivity assertions start at N=15, r=7, for original degree sixteen. In the pure-DT problem, positive global minima satisfy 3m>=N-4 and have equal terminal sizes or a singleton under the common complementary cyclic covers. A full-alternating contradiction and the separate mixed assertion remain open.",
+  "remaining_frontier": "Theorem 20 of TERMINAL_MASS_HURWITZ_DESCENT.md proves pure-DT extraction in every odd degree N>=15. The retained degree-thirteen base, two-leaf absorption and exact marking removal establish residual pure-DT connectivity and an imprimitive-deletion representative in every residual orbit. Mixed polynomial connectivity and the original even-passport uniform classification remain open. These later conclusions do not enlarge the scope of this ledger's original checker or its recorded review assurances.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

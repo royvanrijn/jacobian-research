@@ -58,7 +58,7 @@
     "receipt": "research/arithmetic/imprimitive_leaf_normal_form_verification.json",
     "scope": "Complete degree7 domain392 and all1134 leaf choices; actual normalization of all126 imprimitive inputs and common literal endpoints; all3072 ordered/twisted four-block controls with fixed root0/attachment3; deterministic arbitrary-label higher controls through r50; exact recursive and3-cycle identities."
   },
-  "remaining_frontier": "Whether every residual full-alternating DT orbit reaches an imprimitive-deletion representative remains open. The equivalent removable-factor route has global minimum constraints 3m>=N-4 and, for N>=15, equal terminal sizes or a singleton, subject to one common complementary cyclic development. A singleton cut does not establish an imprimitive deletion. Symmetric-deletion inputs, including the degree-seven boundary orbit, retain their stated scope.",
+  "remaining_frontier": "Theorem 20 of TERMINAL_MASS_HURWITZ_DESCENT.md proves pure-DT extraction in every odd degree N>=15. The retained degree-thirteen base, two-leaf absorption and exact marking removal establish residual pure-DT connectivity and an imprimitive-deletion representative in every residual orbit. Mixed polynomial connectivity and the original even-passport uniform classification remain open. These later conclusions do not enlarge the scope of this ledger's original checker or its recorded review assurances.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,

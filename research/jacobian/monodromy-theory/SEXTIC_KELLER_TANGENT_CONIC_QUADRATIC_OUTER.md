@@ -5498,3 +5498,488 @@ tuple is in the third family with
 \(d=\alpha,e=\alpha^2\), already excluded.
 When all three parameters vanish the tuple is
 the uncorrected one. This concludes the reduction.
+
+## An affine output below two quartic transverse parts
+
+**Lemma KellerTwoQuarticTransversePartsAffineOutputExclusion.**
+In characteristic zero, give \(x,y,z\) weights
+\((0,3,4)\). Suppose the first two outputs of a
+polynomial map have weights at most twelve, with
+\(y^4\)-coefficients \(p(x),r(x)\) of degrees two
+and at most one, respectively, with \(r\ne0\).
+Suppose the third output is
+\(q(x)y^2+u(x)y+v(x)z+w(x)\), where \(v\ne0\)
+and \(\deg q\ge3\). Then the determinant cannot
+be a nonzero constant.
+
+Increase the \(z\)-weight from four to six. At
+four the only extra highest terms in the first
+two entries are multiples of \(z^3\). The only
+possible intervening tie is \(yz^2\) at \(9/2\).
+At either weight fix \(q y^2=S\). The first two
+highest entries are \(S^2p/q^2+a(x)\zeta\),
+\(S^2r/q^2+b(x)\zeta\), where \(\zeta\) is the
+tying monomial. The leading Jacobian in \(x,\zeta\)
+vanishes because the expected determinant weight
+is positive. If both coefficients are nonzero, its
+\(\zeta\) coefficient makes their ratio constant,
+and its remaining coefficient would make a
+nonzero scalar combination of \(p/q^2,r/q^2\)
+constant. If only one coefficient is nonzero,
+the other rational function would be constant.
+Neither is possible by their distinct positive
+orders at \(x=\infty\). Both ties disappear.
+
+At six normalize by fixing \(q y^2+v z=S\)
+and setting \(H=y^2/S\). The first two highest
+entries, divided by \(S^2\), are quadratic
+polynomials in \(H\) over \(k(x)\). Their image
+over \(k(S)\) has dimension at most one. If
+one depends on \(H\), the image is a curve of
+degree at most two by the polynomial-parametrization
+argument for the [mixed doubled frame](#increasing-the-transverse-weight).
+At \(H=1/q\) the two values are \(p/q^2,r/q^2\).
+Writing their orders at infinity as \(m,n\),
+one has \(0<m<n<2m\), since \(\deg q\ge3\).
+Thus the orders \(0,m,n,2m,m+n,2n\) of the six
+monomials of degree at most two are distinct.
+No curve equation of degree at most two can hold.
+Both polynomials are therefore independent of \(H\).
+It follows that the weight-\((0,1,2)\) highest
+tuple is
+\[
+           (pU^2,rU^2,qU),\qquad U=y^2+(v/q)z .
+\]
+From \(r(v/q)^2\in k[x]\) and \(\deg r\le1\),
+a finite pole of \(v/q\) is impossible. Put
+\(T=v/q\in k[x]\).
+
+The bracket on the level of the actual third
+output now has the form from the mixed
+doubled-frame proof. In detail, after solving
+for \(z\) and substituting \(U=(S-u y-w)/q\),
+both outputs have form
+\[
+ a_3(x)y^3+a_2(x)y^2+(b_0(x)+b_1(x)S)y
+                     +d_0(x)+d_1(x)S+d_2(x)S^2 .
+\]
+The respective \(d_2\)'s are \(p/q^2,r/q^2\),
+and the bracket is a nonzero constant divided by
+\(v(x)\), as a polynomial identity over \(k(x)[S]\).
+The degree reductions and the arguments for
+[a linear output](#one-degree-at-least-two-and-one-degree-one)
+and [both degrees at most one](#both-degrees-at-most-one)
+use only this form, the distinct orders of the
+\(d_2\)'s, and the bracket. The remaining
+cubic-quadratic case also applies without
+requiring \(T\) affine or any bound on the
+degree in \(x\) of \(b_1\).
+Indeed use the rational scale \(h\) in the
+[cubic-quadratic argument](#degrees-three-and-two),
+write \(D=Y^2+d(x,S)\) with \(Y=hy+(b_0+b_1S)/(2h)\),
+and let \(G=\eta Y^3+c(S)D+e(x)Y+f(S)\).
+The comparison of the \(S y^2\) coefficient gives
+\(b_1/(2h)\in k\). The \(S^2\) coefficient
+of \(d\) is constant in \(x\) by the same bracket
+calculation. Adding \((b_1/(2h))^2\) shows that
+the original \(d_2\) of \(D\) is constant,
+a contradiction. This proves the lemma.
+
+## Removing the mixed lower corrections in small \(x\)-weights
+
+**Theorem SexticKellerDoubledSquareNonzeroMixedCoefficientsExclusion.**
+Under the doubled square-member reduction at weights
+\((2,3,4)\), one cannot have \(k j\ne0\) when \(e=0\).
+
+Divide the second and third entries by \(k,j\),
+respectively, in the leading computations. Lower
+the \(x\)-weight \(s\) from two while keeping the
+\(y,z\)-weights three and four. The reference tuple
+is \((x^2y^4,xy^4,x^3y^2)\). Testing
+\(si+3h+4l=2s+12,s+12,3s+6\) using the support
+at \((2,3,4)\) gives the following list. It is
+tested from larger to smaller \(s\), removing
+the terms ruled out at each step.
+\[
+\begin{array}{c|lll}
+ s&A&B&C\\ \hline
+ 5/3&&&yz^2\\
+ 3/2&yz^3,\ y^5&&xy^3\\
+ 4/3&&&y^2z\\
+ 1&y^2z^2,\ xy^3z&y^3z&y^3,\ xz^2,\ x^2yz\\
+ 2/3&&&z^2\\
+ 1/2&y^3z&&xyz\\
+ 1/3&&&yz .
+\end{array}
+\]
+The isolated transverse terms in the third entry
+are excluded by fixing the independent first two
+highest entries, which fix \(x,y\) algebraically.
+
+### The tie at \(s=3/2\)
+
+Fix the leading value \(S=xy^4\) of the middle
+entry. The first and third on this level are
+\[
+            S^2/y^4+a y z^3+b y^5,\qquad
+                            S^3/y^{10}+cS/y .
+\]
+The latter is nonconstant in \(y\), so vanishing
+of the leading determinant forces \(a=0\).
+
+If \(b\) or \(c\) is nonzero, the resulting binary
+leading image field is \(k(x,y)\). For \(b\ne0\)
+the two rational functions on the fixed middle level
+have degrees nine and ten in \(y\). For \(b=0,c\ne0\)
+the first determines \(y^4\) and the second has
+degree ten. Any common proper field then has
+index two and must be fixed by \(y\mapsto-y\),
+which fails for the term \(cS/y\).
+
+Raise the \(z\)-weight from eight with \(x,y\)
+of weights three and six, a common scaling of
+the current frame. The first new tie is at most
+nine, since the ordinary \(x^4z^2\) in the first
+entry ties then. Specialization at \(z=0\)
+identifies the image rings, as in binary
+normalization lifting, since both are domains
+of transcendence degree two. If \(b\ne0\), the
+identity \(b y^9-Ay^4+B^2=0\) makes \(y\)
+integral, so it lifts unchanged (its weight is
+below that of \(z\)). Any pole of the lifted
+\(x=B/y^4\) must therefore be along \(y=0\).
+A pole of order \(m\ge1\) there would give a
+pole of order \(3m-2\) in \(x^3y^2+cxy^3\),
+since its first term has strictly lower valuation
+than the second. Hence \(x\) also lifts as a
+polynomial and is unchanged.
+
+If \(b=0,c\ne0\), use the rational lifts of
+\(x,y\). At a prime divisor where \(x\) has pole
+order \(m\ge1\), polynomiality of \(x^2y^4\)
+requires that \(y\) have positive order.
+Polynomiality of \(x^3y^2+cxy^3\) then forces
+\(\operatorname{ord} y\ge3m/2\), since its first
+term has strictly lower valuation than the
+second. It follows that \(B=xy^4\) vanishes to
+order at least \(5m\) there. The divisor can be
+taken weighted homogeneous, as the rational
+lifts are homogeneous. Its defining prime
+specializes to a nonzero nonconstant polynomial
+at \(z=0\), since \(B|_{z=0}=xy^4\ne0\).
+This would give a factor of multiplicity at
+least five in \(xy^4\), impossible.
+Thus \(x\) is polynomial and unchanged by its
+weight. A pole of \(y\) is now incompatible
+with \(B=xy^4\), since \(x\) is prime of
+multiplicity one. Hence \(y\) is also unchanged.
+In either case the unchanged rational parameters
+preclude the first \(z\)-tie. Therefore \(b=c=0\).
+
+### The tie at \(s=1\)
+
+The potential highest tuple is
+\[
+ \left(
+ x^2y^4+a y^2z^2+bxy^3z,\
+ xy^4+c y^3z,\
+ x^3y^2+d y^3+f xz^2+g x^2yz
+ \right).
+\]
+The coefficients of its determinant at
+\(x^4y^8,\ x^3y^7z,\ x^2y^6z^2,\ xy^5z^3,\ y^4z^4\)
+give, after division by nonzero scalars,
+\[
+ \begin{gathered}
+ 5b-4c-2g,\quad 10a+bc+3bg-6cg-4f,\quad
+ 6ac+8ag-bcg+bf-8cf,\\
+ 4acg+6af-3bcf,\qquad acf .
+ \end{gathered}
+\]
+If \(c=0\), the first two identities give
+\(g=5b/2,\ f=5a/2+15b^2/8\).
+The others give \(b(20a+f)=0\) and \(af=0\),
+so \(a=b=f=g=0\).
+If \(c\ne0,f=0\), the fourth identity gives
+\(ag=0\). If \(g=0\), the first and third
+give \(b=4c/5,a=0\), contradicting the second.
+If \(a=0\) and \(g\ne0\), the third gives \(b=0\)
+and the first \(g=-2c\), again contradicting
+the second. Finally if \(acf=0\) with \(cf\ne0\),
+then \(a=0\), and the fourth gives \(b=0\);
+the third now contradicts \(cf\ne0\).
+Thus \(a,b,c,f,g=0\).
+
+If \(d\ne0\), the binary tuple gives \(x\) and
+\(y^4\) by the first two entries. The last entry
+\(x^3y^2+d y^3\) has degree three in \(y\) over
+\(k(x)\), so the degrees four and three give
+\(y\) in the image field. It is integral by the
+last entry. At the first new \(z\)-tie, of weight
+at most five by the ordinary first output,
+\(y\) therefore lifts unchanged. The rational
+lift \(x=B/y^4\) cannot have a pole along \(y=0\),
+since \(x^3y^2+d y^3\) is polynomial. Its
+weight then forces it unchanged, a contradiction.
+Thus \(d=0\).
+
+### The last ties and the affine obstruction
+
+At \(s=1/2\), on the level \(S=xy^4\) the two
+other entries have the form
+\(S^2/y^4+a y^3z,\ S^3/y^{10}+b S z/y^3\).
+If \(a\ne0\), eliminating \(z\) with the
+first entry gives the second as a combination
+of \(A y^{-6}\) and \(y^{-10}\), with coefficients
+\(bS/a\) and \((1-b/a)S^3\). They cannot both
+vanish, contrary to the leading rank condition.
+If \(a=0\) the unchanged first entry forces
+\(b=0\). This eliminates all positive \(s\)
+ties. At \(s=0\) the first two outputs have
+weight at most twelve, with \(y^4\)-coefficients
+of degrees two and one. The third output
+has weight at most six and therefore has form
+\(q(x)y^2+u(x)y+v(x)z+w(x)\).
+Here \(q,v\) are nonzero of degrees three and
+four from the \(j x^3P\) term in the initial
+\((2,3,4)\) highest tuple. These are precisely
+the hypotheses of the two-quartic transverse
+parts exclusion, giving the contradiction.
+
+**Theorem SexticKellerDoubledSquareQuarticThirdCorrectionExclusion.**
+Under the doubled square-member reduction at weights
+\((2,3,4)\), one cannot have \(e\ne0\).
+
+Here \(k=0\) by the preceding reduction. Lower the
+\(x\)-weight \(s\) from two with the \(y,z\)-weights
+three and four. The reference tuple is
+\((x^2 y^4,x^4y^2,e y^4)\).
+The possible ties, tested in order using the
+strict bounds at \((2,3,4)\), are as follows.
+\[
+\begin{array}{c|ll}
+ s&A&B\\ \hline
+ 7/4&&y^3z\\
+ 5/3&&xyz^2\\
+ 3/2&yz^3,\ y^5&z^3,\ y^4,\ x^2y^3\\
+ 4/3&&xy^2z\\
+ 5/4&&yz^2\\
+ 1&y^2z^2,\ xy^3z&y^2z,\ xy^3,\ x^2z^2,\ x^3yz\\
+ 3/4&&y^3\\
+ 2/3&&xz^2\\
+ 1/2&y^3z&z^2,\ x^2yz\\
+ 1/3&&xyz\\
+ 1/4&&yz .
+\end{array}
+\]
+The third entry stays \(e y^4\) throughout the
+descent, as every other term has positive
+\(x\)-weight at two or strictly smaller
+\((0,3,4)\)-weight. The isolated transverse
+ties are impossible because the unchanged
+entries fix \(x,y\) algebraically.
+
+### The tie at \(s=3/2\)
+
+Fix \(y\) generically using the third entry.
+The first two are
+\[
+        x^2 y^4+a y z^3+b y^5,\qquad
+             x^4 y^2+c z^3+d y^4+g x^2 y^3.
+\]
+If \(a\ne0\), eliminating \(z^3\) using the
+first leaves an uncancelled \(x^4y^2\) in the
+second, contradicting the leading rank.
+Then \(a=0\) forces \(c=0\).
+Subtract \(d/e\) times the third entry from
+the second by a constant target shear.
+The only introduced degree-six term is an
+\(x^6\) term, below the reference at all
+\(s<2\).
+
+Put \(L=x^2+b y\). On the binary level,
+\(L=A/(C/e)\) and \(y^4=C/e\). The second
+entry is
+\[
+           y^2 L^2+(g-2b)L y^3+(b^2-bg)y^4.
+\]
+If \(b\ne0,\ g\ne2b\), then \(y\) belongs
+to the image field: in the extension of
+\(k(L,y^4)\) obtained by adjoining \(y\),
+no nontrivial fourth-root scaling preserves
+the cubic term. If \(b=0,g\ne0\), the same
+conclusion follows from degrees four and
+three in \(y\) over \(k(L)\).
+
+In either case \(y\) is integral, as is
+\(K=x^2y\) from \(B=K^2+g y^2 K\).
+Raise the \(z\)-weight from eight with
+\(x,y\) of weights three and six. The first
+tie is at most nine by the ordinary first
+entry. The integral lifts are \(y\) unchanged
+and possibly \(K=x^2y+\delta xz\), the only
+new term allowed by its weight twelve.
+But the identity \(A=y^3K+b y^5\) cannot
+supply the ordinary \(x^4z^2\) required
+at nine. If the tie were earlier, neither
+generator could lift nontrivially. Both
+possibilities are impossible.
+
+It remains at this tie to check \(b\ne0\),
+\(g=2b\). Here \(Y=y^2\) belongs to the image
+field since \(B=Y L^2-b^2Y^2\), with \(L\)
+and \(Y^2\) already in the field.
+The integral \(Y\) lifts either unchanged
+or as \(y^2+\delta xz\) at nine. If it stays
+unchanged, \(yL\) in the source rational
+field is polynomial by \(B=Y L^2-b^2Y^2\).
+The same weight-twelve bound on \(yL\) as
+on \(K\) prevents the first entry \(A=y^3(yL)\)
+from acquiring the required ordinary term.
+If the lift of \(Y\) has \(\delta\ne0\), it
+is prime, and \(Y L^2\) polynomial implies
+\(L\) is polynomial. Its weight makes it
+unchanged. Then \(A=Y^2 L\) and the ordinary
+terms force \(\delta=1\). But the leading
+pair \(C,A\) on the generic level of \(Y,L\)
+gives a differential proportional to \(dx/x\):
+here \(Y=xz+y^2,\ L=x^2+b y\), and one
+solves first for \(y\) and then for \(z\).
+The nonzero residue contradicts the slice.
+Thus both \(b,g\) vanish.
+
+### The ties at \(s=1\) and \(s=3/4\)
+
+On the generic \(y\)-level at \(s=1\), write
+\(t=z/(xy)\). The first two entries become
+\[
+                 x^2y^4 L(t),\qquad
+                 x^4y^2 M(t)+xy^3 N(t),
+\]
+with \(L(0)=M(0)=1\) and degrees at most two,
+two, and one, respectively. The coefficients
+of the relative bracket in \(x,t\) give
+\(M=L^2\) and \(N^2/L\) constant when \(N\)
+is nonzero. In particular \(L\) has degree
+at most one. If \(L=1+b t\) with \(b\ne0\),
+then \(N=0\) and the leading tuple is
+\((y^3 R,R^2,e y^4)\) with \(R=x^2 y+b xz\).
+At fixed \(y,R\) the relative form for the
+pair \(C,A\) is proportional to \(dx/x\),
+by solving for \(z\). This excludes \(b\ne0\).
+If \(L=1\), then \(M=1\), \(N\) is a scalar
+\(d\), and the tuple is
+\((x^2y^4,x^4y^2+dxy^3,e y^4)\).
+
+Suppose \(d\ne0\) and put \(H=xy^2\).
+The field \(k(H,y)\) over \(k(H^2,y^4)\)
+has the sign action on \(H\) and the fourth-root
+action on \(y\). The entry \(B=H^4/y^6+d H y\)
+is invariant exactly under the simultaneous sign.
+Thus the image field contains \(Y=y^2\) and
+\(J=yH\). They are integral, using the third
+entry for \(Y\) and
+\(J^4+dY^5 J-Y^5B=0\) for \(J\).
+Raise the \(z\)-weight from four to the first
+tie, at most five. The lift of \(Y\) is \(y^2\)
+or \(y^2+\delta xz\) at five. In the latter
+case with \(\delta\ne0\), \(B\) is no longer
+needed to see divisibility: \(A=J^2/Y\)
+polynomial gives \(Y\mid J\).
+Then \(J/Y\) has weight four and is unchanged,
+equal to \(xy\), giving \(A=Yx^2y^2\).
+This cannot supply the ordinary \(x^4z^2\).
+If \(Y=y^2\), then \(J/y\) is polynomial of
+weight seven. Its only possible \(z\)-correction
+is a multiple of \(x^2z\) at five. The
+ordinary first entry forces \(J/y=xP\) there,
+but \(B=J^4/Y^5+dJ\) would then have a pole
+at \(y=0\). This excludes \(d\ne0\).
+
+At \(s=3/4\) the only new tie is \(d y^3\)
+in the second entry. If \(d\ne0\), the binary
+tuple gives \(x^2=A/(C/e)\); over this parameter
+\(C\) gives \(y^4\) and the second entry has
+degree three in \(y\), so \(y\) is in the
+image field. With \(K=x^2 y\) the two integral
+parameters are \(y,K\), since
+\[
+                  (A,B,C)=(y^3K,K^2+d y^3,e y^4).
+\]
+Use weights three and twelve for \(x,y\),
+and raise the \(z\)-weight from sixteen to
+the first tie, at most twenty-one. Then \(y\)
+is unchanged, and the only possible new
+term in \(K\) is \(\delta z\) at weight
+eighteen. Without it the tie is impossible.
+With \(\delta\ne0\), take \(x,y,K\) as source
+coordinates, with weights \(3,12,18\).
+Raise the now unused \(x\)-weight. At every
+first tie the image ring again lifts by its
+integral parameters \(y,K\). They can acquire
+only terms in \(x\) alone for \(y\), and terms
+in \(x\) and linear in \(y\) for \(K\).
+Take the lifted pair as new coordinates,
+preserving the binary tuple on \(x=0\).
+The possible weights for these changes are
+finite, and the \(x\)-weight strictly increases
+at each step. A tie must recur because the
+Keller map depends on \(x\); its first tie
+has \(x\)-weight at most the largest component
+weight, so the leading determinant still
+has positive expected weight at every step.
+This gives a contradiction and excludes the tie.
+
+### The tie at \(s=1/2\)
+
+Fix \(y\) generically and write \(t=z/x^2\).
+The first two highest entries are
+\(x^2y^4+a y^3z,\ x^4y^2+b z^2+c x^2 y z\).
+The relative bracket forces the second to be
+the square of \(R=x^2y+a z\): the ratio of
+its \(t\)-polynomial to the square of the
+\(t\)-polynomial of \(R/x^2\) is constant
+and equals one at \(t=0\). If \(a=0\) there
+is no tie. Otherwise take \(x,y,R\) as source
+coordinates of weights \(1,6,8\), scaling the
+current weights by two. The highest tuple is
+\((y^3R,R^2,e y^4)\).
+In its image field the elements \(Y=y^2,J=yR\)
+are integral, since \(Y^2=C/e,\ J^2=YB\);
+also \(A=YJ\). They are rational there by
+these formulas, for instance \(Y=A^2/(BC/e)\)
+and \(J=A/Y\).
+
+Raise the unused \(x\)-weight to the first
+tie. The lifted \(Y\) is monic quadratic in
+\(y\), as its weight is twelve and the other
+weights are positive. If it is squarefree
+then \(Y\mid J\) by \(J^2=YB\). Specializing
+at \(x=0\) would make \(y^2\mid yR\), impossible.
+Thus \(Y\) is the square of \(y+\ell\) for a
+polynomial \(\ell\) of weight six in \(x\)
+alone, since \(R\) has weight eight. Use
+\(y+\ell\) as coordinate. The quotient
+\(J/(y+\ell)\) is polynomial of weight
+eight and specializes to \(R\). It differs
+from \(R\) only by terms in \(x\) and at most
+linear in the new \(y\). Taking it as new
+coordinate preserves the same binary tuple.
+Again only finitely many increasing \(x\)
+weights permit these changes, whereas a
+first tie must recur, with positive expected
+determinant weight by the same bound.
+This excludes \(a\ne0\).
+
+All positive \(s\) ties have been eliminated.
+At \(s=0\), the first and third entries
+have weight at most twelve, with \(y^4\)
+coefficients of degrees two and zero.
+The second has weight at most six, so is
+\(q(x)y^2+u(x)y+v(x)z+w(x)\).
+The ordinary terms give \(\deg q=4,\deg v=5\),
+as the target shear introduced only the
+ordinary pure power \(x^6\).
+The two-quartic transverse parts exclusion
+now applies after putting this affine output
+last. This proves \(e=0\).

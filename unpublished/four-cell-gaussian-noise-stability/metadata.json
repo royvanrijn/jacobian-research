@@ -1,0 +1,38 @@
+{
+  "title": "The tetrahedral partition maximizes Gaussian noise stability for small positive correlations",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Proves dimension-independent Gaussian optimality and equality rigidity of the balanced tetrahedral partition for a qualitative interval of small positive correlations, using the imported equal-cell first-moment theorem and covariance deficit identity.",
+  "published": false,
+  "status": "ready-for-review",
+  "source": "main.tex",
+  "pdf": "four-cell-gaussian-noise-stability.pdf",
+  "source_archive": "source.zip",
+  "source_bundle": "source.zip",
+  "build": "SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=four-cell-gaussian-noise-stability main.tex",
+  "verification": "Written analytic proof with explicit external inputs; warning-free LaTeX build, all-page visual inspection, isolated internal AI PDF-only reading and isolated source-archive build. No external specialist review or formal verification.",
+  "verification_record": "verification.json",
+  "next_steps": [
+    "Obtain specialist review of the imported covariance identity, quantitative alignment, weighted exterior estimate and normal-flux limit.",
+    "Audit novelty and the precise relation to earlier three-cell small-correlation arguments before selecting a submission venue."
+  ],
+  "catalogued_on": "2026-11-27",
+  "abstract": "We prove that the regular tetrahedral partition maximizes Gaussian noise\nstability among all measurable four-cell partitions of equal Gaussian\nmeasure, for every sufficiently small positive correlation. The correlation\ninterval is independent of the ambient dimension, and equality determines\nthe tetrahedral partition up to orthogonal maps, labels and cylindrical\nextension. We use Zhang's equal-cell first-moment theorem and balanced\ncovariance deficit identity to obtain quantitative moment alignment and a\nfirst-moment interface form whose only zero modes are rotations. The\nnonlinear argument normalizes transfers by their exact Ornstein--Uhlenbeck\nscore regret. A weighted exterior estimate prevents the normalized\ntransfers from escaping to infinity, and their limiting normal flux\nsatisfies a sharp quadratic regret bound. The interaction converges to its\nfirst-moment part, giving a rotational-kernel contradiction. The threshold\nis qualitative; no conclusion for all positive correlations is asserted.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "mathematical_status_nodes": [
+    "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY",
+    "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY"
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "submitted": false
+}
