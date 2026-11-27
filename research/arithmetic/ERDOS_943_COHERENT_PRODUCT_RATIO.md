@@ -401,9 +401,12 @@ Let \(\mathcal R_N(T)\) be the actual cycles for which both
        \operatorname{lcm}(d_1,d_2,d_3)>8T^2
 \]
 hold, and which are either nonsingular, or singular with
-\(g_*(C)>T^{1/2}\). Define \(\mathcal R_N^{\rm pr}(T)\) by keeping all
-nonsingular cycles in \(\mathcal R_N(T)\), and keeping a singular cycle
-in it only if
+\(g_*(C)>T^{1/2}\). Define \(\mathcal R_N^{\rm pr}(T)\) by keeping a nonsingular cycle
+in \(\mathcal R_N(T)\) only if \(U/V\) is a non-power rational with
+reduced height greater than \(T^{5/2+\eta/4}\), using the absolute
+\(\eta\) of [FixedReducedCycleRatio](ERDOS_943_SIX_CYCLES.md#fixed-reduced-ratios-and-proper-powers-for-every-target).
+Here \(U/V\) is the alternating product of the six selected root
+ratios in cycle order. Keep a singular cycle in the residual only if
 \[
  \begin{split}
                     H(P/Q)&>T^{1/4},\\
@@ -426,9 +429,7 @@ for all such actual balanced graphs is equivalent to
                                   \ll_\varepsilon T^{2+\varepsilon}.
                                                                \tag{29}
 \]
-Both unrestricted statements remain open. For odd prime targets the
-same equivalence holds after imposing, on the nonsingular part only,
-the proper-power exclusion described below.
+Both unrestricted statements remain open.
 
 The forward implication is the subset inclusion. For the converse use
 the established actual low-kernel-lcm and small-intrinsic-gcd sector
@@ -439,31 +440,16 @@ These are the counts in LowKernelLcmSector and
 SingularWeightedAndSmallGcdSector in
 [Six-cycle counts and their residual domain](ERDOS_943_SIX_CYCLES.md).
 
-Every remaining cycle is in \(\mathcal R_N(T)\). A member of this set
-which is not in \(\mathcal R_N^{\rm pr}(T)\) is singular and has either
+Every remaining cycle is in \(\mathcal R_N(T)\).
+FixedReducedCycleRatio bounds the excluded nonsingular cycles by
+\(O_\varepsilon(T^{2+\varepsilon})\) for every \(N\).
+An excluded singular cycle has either
 \(H(P/Q)\le T^{1/4}\), or a reduced cubic center of height at most
 \(T^{1/6}\). Theorem 6 and Theorem 3 bound these two sectors by
 \(O_\varepsilon(T^{2+\varepsilon})\), respectively. In applying those
 theorems the maximum kernel cutoff is \(2T\); this changes their
 constants, not the displayed exponents or the thresholds in (27).
 The union bound and (29) prove (28).
-
-For the prime specialization, write the selected roots on
-\((b_i,d_i)\) as \((a_i,c_i)\) and those on
-\((b_{i+1},d_i)\) as \((\widetilde a_i,\widetilde c_i)\), and set
-\[
-           U=\prod_i a_i\widetilde c_i,\qquad
-           V=\prod_i\widetilde a_i c_i .
-\]
-Nonsingularity is \(U\ne V\). On odd prime targets, the established
-ProperPowerCycleSector count bounds all nonsingular cycles for which
-\(U/V\) is a positive rational proper power by
-\(O_\varepsilon(T^{1+\varepsilon})\).
-Thus one can additionally require \(U/V\) not to be a rational proper
-power on the nonsingular part of \(\mathcal R_N^{\rm pr}(T)\).
-The subset implication is unchanged, and the converse adjoins this
-one further already-counted sector. No global prime sign or
-proper-power removal is asserted for composite moduli.
 
 The old sector theorems are premises only for this equivalence; none
 is used in Theorems 1--3 or 6. In particular the new frequency counts

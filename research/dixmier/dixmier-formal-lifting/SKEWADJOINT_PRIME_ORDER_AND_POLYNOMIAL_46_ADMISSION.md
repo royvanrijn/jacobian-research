@@ -179,9 +179,8 @@ only remaining case, proving the result.
 
 ## Remaining admissions
 
-A monic admitted polynomial pair of orders four and six must have
-nonconstant \(v\) after polynomial depression. Equations (1)–(3)
-give the residual within that class. The
+The [complete constant-leading polynomial exclusion](MONIC_POLYNOMIAL_FOUR_SIX_STRING_EXCLUSION.md)
+also treats nonconstant \(v\) in equations (1)–(3). The
 [centered rectangle](CENTERED_46_RECTANGLE_NEWTON_FACE_GATE.md) permits
 nonconstant order-four leading coefficients. Passing to a coefficient
 cover to make the leading coefficient monic can leave the polynomial

@@ -1001,7 +1001,720 @@ to be \(1\), contrary to (19). This includes the two
 cubic axes and uses no tameness or discreteness of
 the coefficient value group.
 
-## 9. Scope and remaining cases
+### A complete exclusion for the foreign quartic on one axis
+
+**First critical quartic exclusion.** Under the two-pole
+hypothesis, the four-term support with foreign monomial
+\(X^4\) or \(Y^4\) has its four-window at \(v(k)=1/3\) for
+arbitrary prime-power axis exponents. The proof applies to
+every starting index and every real-valued extension of
+\(v_3\).
+
+By symmetry take \(X^4\). Condition (10) rules out
+\(Q_x=1,3\), and the adjacent-digit condition rules out
+\(Q_x=9\). The only starting indices to consider are
+\(9H+5\), \(H\ge0\). For the lift adjoin \(\pi\) with
+\(\pi^3=3\), and use integral parameters \(A,B,C\) given by
+\[
+        k=\pi(1+i)+\pi^2 A,\qquad b=i+\pi B,\qquad
+        u=-k+\pi^4 C .                                             \tag{21}
+\]
+Indeed \(v(b-i)\ge1/3,\ v(u+k)\ge4/3\) by Section 8.
+Also \(U\equiv i-1\bmod3\mathcal O\) gives
+\((k/\pi)^3\equiv(1+i)^3\bmod3\mathcal O\). If the two
+cube bases differed by valuation strictly between zero
+and \(1/3\), the cube of their difference would be
+the unique least term below valuation one. Their
+residues agree, so \(A\) is integral.
+
+We use precision \(I_4\). Write \(E_i=\widetilde E_i\)
+for \(5\le i\le8\) in the following calculation and
+\(Z_i=E_i-(1+b)E_{i-1}+bE_{i-2}\) at \(i=7,8\).
+Two uniform reductions make the arithmetic finite.
+
+1. In each normalized moment only offsets
+   \(-27\le\ell\le i\) from \(j_0=9H\) can contribute at
+   precision \(I_4\). A block four or more nine-index
+   steps back loses at least four valuation units, by
+   (3). For nonnegative \(\ell\), its coefficient is
+   \(k^\ell/\prod_{t=1}^{\ell}(9H+t)\). The ratio after
+   changing \(H\) modulo \(27\) is \(1\bmod I_4\)
+   because every \(1\le t\le8\) has valuation at most
+   one. For a negative offset \(-d\) use
+   \(k^{-d}\prod_{t=0}^{d-1}(9H-t)\), a product that is
+   zero if the index falls below zero. Telescoping the
+   difference when \(H\) changes modulo \(27\) gives
+   valuation at least
+   \[
+                   3+\lceil d/3\rceil+\lceil d/9\rceil-d/3
+                           \ \ge\ 4 .
+   \]
+   Indeed each original factor has its lower bound
+   \(\mathbf1_{3\mid t}+\mathbf1_{9\mid t}\le2\), and a
+   changed factor has at least five. The subtraction of
+   \(d/3\) is from \(k^{-d}\). Thus \(H\bmod27\) suffices.
+
+2. Use \(Q_x\in\{27,81,243\}\) and \(Q_y\in\{1,3\}\)
+   as representatives. The axis quotient in (20)
+   satisfies, for every power \(Q>1\), the stronger
+   congruence \(1+9\binom{n+1}{3}\bmod81\). In its proof
+   all cross terms of two factors divisible by nine
+   still disappear. Each term for \(r\ge1\) in the
+   iterated sum is \(3^{3r-1}(n^3-n)/2\), divisible
+   by nine. This explains why \(Q_y=3\) represents
+   every nontrivial power. For \(Q_x\ge243\), factor
+   the extra \(x\)-binomial
+   \(\binom{Q_x x+4m}{4m}=\prod_{j=1}^{4m}(1+Q_x x/j)\)
+   away from the axis and foreign-only coefficients.
+   For \(m=1,2\) it is \(1\bmod81\). For \(3\le m\le5\)
+   it is \(1\bmod27\), and the terms already have
+   valuation at least two from \(u^m\) and the native
+   factorial quotient. For \(m\ge6\), the bound
+   \(m/3+v_3(m!)\ge4\) discards the whole term. Thus
+   \(Q_x=243\) represents all \(Q_x\ge243\) at this
+   precision.
+
+The [exact Python checker](verify_binary_wild_x4_first_radius.py)
+expands the 162 representative systems in
+\(\mathbb Z[i,\pi,A,B,C]/(i^2+1,\pi^3-3,\pi^{12})\).
+It uses the \(3\)-free factorial parts and integer valuations
+for each coefficient. For a negative offset it uses the
+falling product above, with the unit \((1+i+\pi A)^{-d}\)
+expanded by its finite binomial truncation. Thus the
+formal substitutions are valid at integral parameters in
+arbitrary valued extensions, including fractional
+valuations within the coefficient ring. In the following
+initial coefficients, \(\bar i\) and the other residues are
+written without bars.
+
+The first four initial polynomials are as follows, where
+\(\varepsilon=0\) if \(Q_x=27\), and \(1\) otherwise:
+\[
+\begin{array}{c|c|l}
+\text{form}&\pi\text{ order}&\text{initial coefficient}\\ \hline
+ E_5&3&i B^3-i A^3+(1+i)H\\
+ E_6&3&-B^3+(1-i)A^3\\
+ Z_7&4&2+i-iC\\
+ Z_8&8&iC^2+(2+i)C+\varepsilon-H .
+\end{array}                                                        \tag{22}
+\]
+The first two equations have an invertible matrix in the
+cubes, and the third is affine with unit slope. Thus a
+block forces the residues \(A=(i-1)H,\ B=H,\ C=1+i\), and
+then \(H\equiv\varepsilon+2\bmod3\). Furthermore the
+degree-four row of \(Z_7\) gives \(C=1+i+\pi W\) with
+\(W\) integral, by the actual \(\pi^5\) error bound.
+Make this substitution for all remaining rows.
+
+If \(Q_x=27\), the order-nine initial coefficient of \(Z_8\)
+is independent of \(W\) and evaluates to \(-1-i\) at the
+forced \(A,B\) for \(H\equiv2\). This is impossible. For
+\(Q_x\ge81\) we have \(H\equiv0\), so \(A,B\) have positive
+valuation. If \(Q_y=1\), the order-five row of \(Z_7\) is
+\(i(A-W)\), hence \(W\) also has positive valuation. The
+initial order-ten coefficient of
+\(Z_8+i\pi^6E_5+2\pi^6E_6\) at zero residues is \(-i\),
+again impossible.
+
+If \(Q_x\ge81,\ Q_y>1\), put
+\[
+ G=Z_8+(2+i)\pi^6 E_5+iZ_7^2
+        +\pi^7B\big((1+2i)E_5+iE_6\big)+(2+2i)\pi^6 Z_7 .
+\]
+The checker verifies its first order is eleven and its
+coefficient there is
+\(c_H+B+(2+2i)B^5+A^3B^2\), with \(c_H\) a constant.
+If \(c_H\ne0\) the positive valuations of \(A,B\)
+exclude the block. Otherwise the coefficient is \(B\)
+times a unit, so \(v(B)\ge1/3\) by the order-twelve
+error. At order four in \(E_5,E_6\) neither coefficient
+depends on \(W\). Their constants are respectively zero
+and \(i\). From \(E_5/\pi^3\) and \(v(B)\ge1/3\) we
+obtain \(v(A^3)>1/3\), since the degree-four row has
+zero residue at \(A=B=0\). Now \(E_6/\pi^3\) has its
+order-four constant \(i\pi\) as the unique term of
+valuation \(1/3\), a contradiction.
+
+Run the finite verification from the repository root with
+Python 3.12 via
+\(\texttt{python3 research/factorial/image-rigidity/verify_binary_wild_x4_first_radius.py}\).
+The representative reductions above are independent of
+the computation and supply its all-start and all-axis scope.
+
+## 9. Low foreign exponents at larger critical radii
+
+Suppose \(p=3,\ L=3^h\ge9\), and the foreign term of a
+four-term phase is \(u X^\alpha Y^\beta/(\alpha!\beta!)\)
+with \(v(u)>0,\ \alpha<Q_x,\ \beta<Q_y\). Assume the
+foreign exponents have only digits \(0,1\) and an even
+total digit count. This includes \(XY\) when both axis
+powers are at least three. Keep the two unit axes and
+the canceled leading row. In particular the ratio
+\(r=b/a\) reduces to a primitive fourth root.
+Normalize \(a=1\) and put \(\delta=v(k)=(1-1/L)/2\).
+
+**Quadratic numerator filter.** A four-zero block may
+only start at \(3LH+s\) with \(2L-1\le s\le3L-4\).
+Let \(j=s+2-2L\), and apply the following filter to both
+indices \(j,j+1\). An index \(t\) with \(s_3(t)\le2\)
+cannot be divisible by three. At a unit index \(t\)
+of digit sum at most two, one has \(v(u)=\delta\) and
+\[
+ v(u+k)\ \ge\ \delta+\begin{cases}
+          1-v(k^t/t!) &t\equiv1\bmod3,\\
+          (1-v(k^t/t!))/2 &t\equiv2\bmod3.
+          \end{cases}                                              \tag{23}
+\]
+
+Indeed the native series modulo the full \(3\mathcal O\)
+ideal is \((1+uT-u^2T^2)/D\). For one or two foreign
+insertions all digits fit below both axes without
+carries, since each digit is at most one. The
+foreign-only second coefficient is \(-1\bmod3\)
+by its even digit count, and counts of at least three
+have integer coefficients divisible by three.
+Use (6) and the low constant polynomial
+\(K(T)=\sum_{t=0}^{L-1}k^tT^t/t!\). Its effective degree
+in \(\mathcal O/3\mathcal O\) is \(2L/3\): positive
+coefficients survive exactly at digit sum at most two.
+The degree of \((1+uT-u^2T^2)K(T)\) is therefore
+less than \(L\). Multiplying by \(e_2(UT^L)\) shows
+that the only contributions at \(2L+j,2L+j+1\) come
+from its highest term. These two numerator coefficients
+must vanish modulo \(3\mathcal O\), by the degree at most
+\(s+1\) of the actual prefix times \(D\).
+After removing \(U^2/2\), the condition for \(t=j,j+1\)
+is
+\[
+   \frac{k^t}{t!}\big(1+t z-t(t-1)z^2\big)\equiv0
+                  \pmod{3\mathcal O},\qquad z=u/k,                   \tag{24}
+\]
+where fair interpretation of (24) at \(t=1\) simply
+omits the quadratic term.
+
+If \(3\mid t\), the linear and quadratic terms in
+brackets have positive valuation since \(v(z)>-\delta>-1/2\).
+Thus a small digit sum would contradict (24). At a unit
+index of small digit sum, \(v(z)>0\) leaves the constant
+uniquely least. For \(v(z)<0\), the linear term is
+uniquely least when \(t\equiv1\), and the quadratic
+term uniquely least when \(t\equiv2\). For the first
+assertion use \(1+2v(z)>v(z)\), again by \(v(z)>-1/2\).
+Hence \(z\) has value zero and its residue is \(-1\),
+the unique root in either case. With \(z=-1+y\), the
+constant term \(1-t^2\) has valuation at least one.
+The linear coefficient \(t(2t-1)\) is a unit at
+\(t\equiv1\), while at \(t\equiv2\) it is divisible
+by three and the quadratic coefficient is a unit.
+The least-term comparison in this expansion gives
+(23).
+
+**Second critical radius.** For \(L=9\), any such
+exact four-zero block must start in one of the
+following three classes, with the indicated
+necessary conditions:
+\[
+\begin{array}{c|c|c}
+s\bmod27 & \text{constraint on }u,k & v(r^2+1)\\ \hline
+17 & v(u+k)\ge1 & 1/27\\
+20 & v(u+k)\ge2/3 & 2/27\\
+23 & v(u)\ge1/3 & \ge1/9 .
+\end{array}                                                        \tag{25}
+\]
+In the first two rows (23) also gives \(v(u)=4/9\).
+To see there are only these starts, the candidate
+values of \(j\) are \(1,\ldots,7\), and \(3,6\) are the
+positive multiples of three of digit sum at most two
+among the test indices. Their exclusion leaves
+\(j=1,4,7\). At the first two, (23) yields the
+displayed bounds on \(u+k\). At \(j=7\) the only
+potential term below valuation one in the direct
+coefficient
+\(K_7+uK_6-u^2K_5\) is \(uK_6\), where
+\(K_t=k^t/t!\) and \(v(K_6)=2/3\). This proves the
+third-row bound.
+
+For the pole constraints, put \(H_0=e_2(UT^9)\) and
+\(S=(1+uT-u^2T^2)K(T)\), and work in
+\(\mathcal O/3\mathcal O\). At \(s=17\) the bound
+\(v(u+k)\ge1\) gives \(S=1+P T^3+Q T^6\), where
+\(P=-8k^3/6,\ Q=-35 k^6/6!\) have valuations
+\(1/3,2/3\). Indeed at \(u=-k\) the degree-\(t\)
+coefficient is \((1-t^2)k^t/t!\). Agreement of
+\(D\) times the actual prefix with \(H_0 S\) through
+degree twenty then gives the exact divisibility
+\[
+                D\mid S(1+UT^9)+(U^2/2)T^{18}
+                       \quad\text{in }\mathcal A[T].
+\]
+Let \(z_a=U,\ z_b=U/b^9\), and let \(\xi_a,\xi_b\)
+be the corresponding distinct roots \(-1\pm i\)
+of \(e_2\) in a valued extension. Evaluation at
+the two poles gives
+\(e_2(z_h)=-(1+z_h)(S(h^{-1})-1)\)
+modulo \(3\mathcal O\) for \(h=1,b\). Consequently
+the errors \(\Delta_h=z_h-\xi_h\) have valuation
+\(1/3\) and the residues of \(\Delta_h/P\) are
+\(-\bar h^{-3}\), using \(e_2'(\xi_h)=1+\xi_h\).
+Since \(\zeta=\xi_a/\xi_b\) is the fourth root
+congruent to \(b\), the residue of
+\((\Delta_a-\zeta\Delta_b)/P\) equals
+\(-1+\bar b^{-2}=-2\ne0\). Thus \(v(b^9-\zeta)=1/3\).
+
+At \(s=20\), write \(w=u+k\) so \(v(w)\ge2/3\).
+Expanding \(S\) gives \(1+wT+P T^3+Q T^6\) modulo
+\(3\mathcal O\). In fact the \(w\)-correction beyond
+degree one is \(wK_{t-1}+(2kw-w^2)K_{t-2}\), of
+valuation at least one for \(3\le t\le8\); in
+degree two combine it as \(3kw-w^2\). The last
+omitted term through degree twenty-four of \(H_0S\)
+is \((U^2/2)Q T^{24}\). The actual zero block forces
+\[
+                     D\mid H_0S-(U^2/2)Q T^{24}.
+\]
+Since \(S\) reduces to one at each of the two poles
+and \(\bar b^{24}=1\), the two evaluations of
+\(e_2\) at the \(z_h\) have value \(2/3\) with ratio
+of residue one. The opposite unit derivatives of
+\(e_2\) at the two roots imply
+\(\overline{\Delta_a/\Delta_b}=-1\).
+It follows that \(v(b^9-\zeta)=2/3\).
+
+At \(s=23\), the product \(H_0S\) has degree at most
+twenty-six in \(\mathcal A[T]\), and the same
+comparison through degree twenty-six gives
+\(D\mid H_0S\), now with no term removed. Both evaluations
+of \(S\) are units, so \(v(b^9-\zeta)\ge1\).
+In each of the three cases, if \(0<v(b-\zeta)<1/9\)
+the ninth power of \(b-\zeta\) is the unique least
+term in \(b^9-\zeta\), and otherwise
+\(v(b^9-\zeta)\ge1\). Since \(b+\zeta\) is a unit,
+this proves the three claims on \(v(r^2+1)\) in
+(25). They hold in the original coefficient field,
+even though the roots of \(e_2\) were taken in a
+valued extension.
+
+**Late second-radius coefficient alignment.** In the
+\(s=23\) row of (25) one has the stronger bounds
+\[
+                        v(u)=4/9,\qquad v(u+k)\ge10/9.                \tag{26}
+\]
+This lift applies to all the low even-digit foreign
+monomials of Section 9.
+
+To prove it, normalize the four moments by
+\(k^{27H}/(27H)!\) and use the degree-twenty-five
+combination \(D\widetilde E\). Write \(K_\ell=k^\ell/\ell!\)
+for constant-power indices in its main block. Its native
+series, to precision \(I_{16/9}\) once \(v(u)=4/9\), is
+\[
+       DR(T)=1+uT-u^2T^2+
+          3uT\left(\frac{d_xT}{1-T}+\frac{d_y bT}{1-bT}\right).
+\]
+This follows from the modulo-nine single-insertion
+calculation for (18), now with both upper quotients zero.
+The pure error has value at least two, the double
+insertion error has value at least \(1+2v(u)=17/9\),
+and counts of at least three have value at least
+\(1+3v(u)\). Initially use only \(v(u)\ge1/3\) from
+(25). At precision \(I_{4/3}\) the same formula without
+the \(3u\) term is valid.
+
+Every constant-power block before the main one loses
+at least one valuation unit, and at degree twenty-five
+it multiplies a native coefficient of \(DR\) at an
+index greater than two. Such a coefficient has value
+at least \(1+v(u)\). Hence all earlier blocks may be
+discarded even at precision \(I_{16/9}\). The main
+inverse-binomial factors are \(1\bmod3\). In the three
+retained products from \(1+uT-u^2T^2\) their errors
+have value at least two, since \(v(K_{24})=2/3\),
+\(v(K_{25})=10/9,\ v(K_{23})=11/9\) and
+\(v(u)\ge1/3\). Thus at precision \(I_{4/3}\) the
+zero condition reads
+\((u+k/25)K_{24}=0\bmod I_{4/3}\). This gives
+\(v(u)=4/9\).
+
+We can now retain the \(3u\) term, with value \(13/9\).
+It sees only the constant-power indices \(0,9,18\)
+at precision \(I_{16/9}\), because every other
+index costs at least \(1/3\). Their residue polynomial
+is \(e_2(UT^9)\equiv D^9\bmod3\) at the canceled
+row. Its product with the two displayed simple
+fractions has degree at most eighteen over the
+residue field, so its degree-twenty-four coefficient
+vanishes. Thus the same zero condition for
+\((u+k/25)K_{24}\) holds at precision \(I_{16/9}\).
+Subtracting \(k/25-k\) of valuation \(13/9\) proves
+(26).
+
+### Realization of the three second-radius congruences
+
+**Second-radius residue realizations.** Each of the three
+classes in (25) occurs as a simultaneous zero of the four
+normalized equations modulo \(3\mathcal O\), for any
+\(H\ge0\), even with cubic axes and foreign \(XY\).
+Thus the full modulo-three test for this slice has an
+explicit lift in all three classes.
+
+Take \(u=-k,\ L=9\) and let \(\psi=k^3/3\), so
+\(\psi^3=3U\). The exact polynomial
+\[
+ S_0(T)=1-4\psi T^3-\frac7{16}\psi^2T^6
+\]
+represents \(S\bmod3\mathcal O\). Use the truncated
+polynomials
+\[
+ \begin{split}
+ F_{17}(T)&=S_0(T)(1+UT^9)+(U^2/2)T^{18},\\
+ F_{20}(T)&=S_0(T)(1+UT^9)
+               +(U^2/2)T^{18}(1-4\psi T^3).
+ \end{split}
+\]
+For either \(s=17,20\), choose \(\psi\) of value \(1/3\)
+so that \(F_s(1)=0\) with \(U=\psi^3/3\).
+After substituting \(\psi=\pi Z,\ \pi^3=3\), the resulting
+equation for \(Z\) has integral coefficients and reduces
+to \(e_2(Z^3)=0\). Choose a unit root lifting either
+residue satisfying this equation. To justify the lifts
+even for multiple residue roots, factor an integral
+polynomial of nonzero reduction over a valued algebraic
+closure. Normalize each factor with a negative-valuation
+root by its constant term. Such factors have constant
+nonzero reduction, and each other factor reduces to
+\(T\) minus the residue of its root. The product can
+be scaled to the original polynomial by a unit, since
+the product of the reduced factors is nonzero. Thus
+every root of the reduction is the residue of a root.
+
+The reduction of \(F_s(T)\) is \(e_2(\bar U T^9)\).
+Besides \(T=1\) it has a distinct finite residue root.
+Choose a root \(1/b\) lifting that residue by the
+same argument, and choose \(k^3=3\psi\). Then
+\(D=(1-T)(1-bT)\) divides \(F_s(T)\) exactly,
+and \(F_s/D\) has degree at most \(s-1\).
+Through index \(s+3\), \(F_s\) agrees with \(e_2(UT^9)S\)
+modulo three, so the four low-prefix coefficients
+of indices \(s,\ldots,s+3\) vanish. Equation (6) in its
+congruence form transfers this test to every \(3LH+s\).
+
+For \(s=23\), take \(U\) to be a root of \(e_2\) and
+\(b^9\) the ratio of that root to the other root.
+Set \(k^9=81U,\ u=-k\). Then \(D\) divides \(e_2(UT^9)\)
+exactly and \(e_2(UT^9)S_0/D\) has degree twenty-two.
+This realizes the third sequence of congruences.
+All three families concern the normalized residue
+tests; the exact moment equations retain higher
+valuation terms.
+
+### The foreign product at the second radius
+
+**Second critical \(XY\) exclusion.** With two unit
+prime-power axes \(Q_x,Q_y\ge3\), a foreign term \(uXY\)
+of positive valuation, and distinct residue poles,
+there are no four consecutive zero moments at
+\(v(k)=4/9\). This holds for all starting indices and
+arbitrary real-valued extensions of \(v_3\).
+
+The uncanceled rows are already excluded in Section 3.
+For the canceled row take \(a=1\), order the axes as
+\(Q_x\le Q_y\), and use (25) and (26). Let \(i^2=-1\)
+reduce to \(\bar b\). In the proof of (25) the root
+\(\xi_a\) is then \(-1-i\), since its ratio to the
+other root is \(i\). The same proof gives
+\(v(U-\xi_a)\ge1/3,2/3,1\) for \(s=17,20,23\),
+respectively. Adjoin \(\pi\) with \(\pi^e=3\) and
+write
+\[
+ k=\pi^{4e/9}(-1-i+\pi^j A),\qquad
+ b=i+\pi^j B,\qquad u=-k+\pi^\rho C,
+ \qquad
+ \begin{array}{c|rrr}
+ s&e&j&\rho\\\hline
+ 17&27&1&27\\
+ 20&27&2&18\\
+ 23&9&1&10
+ \end{array}                                                        \tag{27}
+\]
+with \(A,B,C\) integral. For \(A\), note that
+\((-1-i)^9=16(-1-i)\equiv\xi_a\bmod3\mathcal O\).
+The residues of \(k/\pi^{4e/9}\) and \(-1-i\)
+agree by injectivity of the ninth power in the
+residue field. If the bases of the ninth powers
+differ by a value strictly between zero and \(1/9\),
+the ninth power of their difference is the unique
+least term and has valuation less than one. This
+gives the bound \(j/e\). The parameters \(B,C\)
+are integral by (25) and (26).
+
+Set \(E_j=\widetilde E_j\) after dividing by
+\(k^{27H}/(27H)!\), and
+\(Z_j=E_j-(1+b)E_{j-1}+bE_{j-2}\). The exact block
+forces the four forms \(E_s,E_{s+1},Z_{s+2},Z_{s+3}\)
+to vanish. The following reductions justify the
+finite calculation of their coefficients.
+
+1. Let the working precision be \(I_{N/e}\), with
+   \(N/e\le4\), and write \(h=\lceil N/e\rceil\).
+   Formula (3) shows that each block of twenty-seven
+   indices before \(27H\) costs at least one further
+   valuation unit. Thus the only offsets \(\ell\)
+   from \(27H\) needed here satisfy
+   \(-27(h-1)\le\ell\le s+3\).
+   The scalars are invariant modulo \(I_h\) when
+   \(H\) changes modulo \(3^{h-1}\). For \(\ell\ge0\),
+   all denominators \(27H+t\), \(1\le t\le\ell\le26\),
+   have value at most two, and the scalar is integral.
+   For \(\ell=-d<0\), use
+   \(k^{-d}\prod_{t=0}^{d-1}(27H-t)\), which also gives
+   zero when the previous index is negative. A changed
+   factor has difference of value at least \(h+2\).
+   Each original factor has lower bound
+   \(\mathbf1_{3\mid t}+\mathbf1_{9\mid t}+\mathbf1_{27\mid t}\).
+   Removing one of these lower bounds and dividing by
+   \(k^d\) gives for the telescoped difference
+   \[
+   h-1+\lceil d/3\rceil+\lceil d/9\rceil
+       +\lceil d/27\rceil-4d/9\ \ge\ h .
+   \]
+
+2. At precision \(I_h\), use representatives
+   \(Q\in\{3,9,27\}\) if \(h\le3\) and
+   \(Q\in\{3,9,27,81\}\) if \(h=4\). Indeed both pure
+   axis quotients have the common reduction modulo
+   \(81\) proved after (21). With \(m\) insertions
+   of \(XY\), the additional factors are \(m!\) and
+   the two binomials \(\binom{Qx+m}{m}\) for the
+   corresponding axis counts \(x\). Since \(v(u)=4/9\),
+   counts \(m\ge6\) cost more than four. For \(m=1,2\)
+   the product \(\prod_{j=1}^m(1+Qx/j)\) is
+   \(1\bmod3^h\) as soon as \(Q\ge3^h\).
+   For \(3\le m\le5\) it is \(1\bmod 3^{h-1}\)
+   and \(m!\,u^m\) already has valuation at least one.
+   This proves stabilization at the largest representative.
+
+The [checker](verify_binary_xy_second_radius.py) works
+in \(\mathbb Z[i,\pi,A,B,C]/(i^2+1,\pi^e-3,\pi^N)\).
+It computes factorial ratios by valuations and unit
+parts. For \(\ell<0\) it expands the inverse of the
+unit \(-1-i+\pi^jA\) by the finite binomial
+truncation. The first two rows have an invertible
+initial matrix in \(A^9,B^9\). At \(s=17,20\) their
+unique residue centers \((a_0,b_0)\) are
+\((-1+i,-1)\), \((i,1)\), respectively. At \(s=23\)
+with \(Q_x=3\) and \(3\mid H\), both centers are zero.
+For these cases take \(t^3=\pi\), with \(v_t(t)=1\).
+The checker subtracts the centers and verifies that
+the first two rows can be combined to start with
+unit multiples of \((A-a_0)^9,(B-b_0)^9\), both at
+the same coefficient order \(p\). It checks, at
+all remaining coefficient orders \(\ell<p+9r\),
+that each monomial of total degree \(d\) in the two
+centered variables has \(\ell+rd\ge p+9r\).
+Here \(r=1,2,1\) for \(s=17,20,23\), respectively.
+If the least of the two centered valuations were
+\(0<z<r\), the row for the variable attaining that
+minimum would have its ninth power uniquely least:
+for \(d<9\) the checked inequality gives
+\(\ell+dz>p+9z\), and for \(d\ge9\) this follows from
+\(\ell>p\). The minimum is therefore at least \(r\).
+Make the substitutions \(A=a_0+t^r A'\),
+\(B=b_0+t^r B'\), with integral \(A',B'\).
+The other cases at \(s=23\) need no substitution.
+
+To reduce \(Z_{s+3}\), the checker combines the
+first two rows to give leading monomials \(A'^9,B'^9\),
+each with a unit coefficient and possibly a constant
+term. For the unrecentered cases these are \(A^9,B^9\).
+The initial coefficient of \(Z_{s+2}\) is a unit
+multiple of \(C\), again allowing a constant.
+In increasing uniformizer order the checker cancels
+monomials divisible by one of these three leading
+monomials, by subtracting the corresponding monomial
+multiple of its row. At a fixed order this decreases
+degree, since only the constant term of the pivot
+row can contribute another term there. All replacements
+are congruences modulo the ideal generated by the
+first three forms and the working precision. The
+first nonzero coefficient left is a nonzero constant
+in every system:
+\[
+\begin{array}{c|l|r|c}
+s & \text{axis condition} & \text{valuation} & \text{residue}\\\hline
+17 & Q_x=Q_y=3 & 17/9 & 1\\
+17 & Q_x=3<Q_y & 7/3 & -1-i\\
+17 & Q_x\ge9 & 17/9 & -1\\
+20 & Q_x=Q_y=3 & 20/9 & -1+i\\
+20 & Q_x=3<Q_y & 20/9 & 1-i\\
+20 & Q_x=Q_y=9 & 29/9 & 1-i\\
+20 & Q_x=9<Q_y & 11/3 & 1\\
+20 & Q_x\ge27 & 29/9 & -1+i\\
+23 & Q_x=Q_y=3 & 3 & i\\
+23 & Q_x=3<Q_y & 23/9 & i\\
+23 & Q_x\ge9 & 23/9 & -i
+\end{array}                                                        \tag{28}
+\]
+Each constant has value below its working precision,
+so the four forms cannot vanish. The arithmetic is
+over formal integral parameters throughout, including
+when the coefficient field has fractional valuations
+between successive powers of the uniformizer. The
+291 systems use only the Python 3.12 standard library.
+Run the checker from the repository root with
+\(\texttt{python3 research/factorial/image-rigidity/verify_binary_xy_second_radius.py}\).
+
+### Finite native data for the remaining low foreign terms
+
+**Low-digit native profiles at precision four.** Suppose
+\(Q_x=3^{q_x}, Q_y=3^{q_y}\), with foreign exponents
+\(\alpha<Q_x,\beta<Q_y\) consisting of digits \(0,1\)
+and positive even total digit count. If \(v(u)\ge4/9\),
+the whole native moment series modulo \(I_4\) is
+determined by the unit axis coefficients, \(u\), and
+a finite set of exponent profiles. The realizable
+profiles can be enumerated by finite-state transfers
+on the two digit words. Thus at \(L=9\) the all-axis
+reduction for \(XY\) can be replaced by a finite
+profile reduction for this low even-digit sector.
+The exact four-row lift for the other profiles remains
+open.
+
+For axis counts \(x,y\) and foreign count \(m\), the
+native coefficient of \(b^y u^m\) factors as the two
+pure axis quotients times
+\[
+  F_m\binom{Q_x x+m\alpha}{m\alpha}
+       \binom{Q_y y+m\beta}{m\beta},\qquad
+  F_m=\frac{(m\alpha)!\,(m\beta)!}{m!\,(\alpha!\beta!)^m}.
+\]
+Here \(a=1\) as before. Write
+\(\sigma=s_3(\alpha)+s_3(\beta)\). The digit bound
+\(s_3(mn)\le s_3(m)s_3(n)\) follows by expanding the
+product in base three and carrying. Hence
+\[
+             v_3(F_m)\ge(\sigma-1)v_3(m!).
+\]
+In particular \(m\ge6\) gives value above four
+after multiplication by \(u^m\). If \(\sigma\ge4\),
+then \(3\le m\le5\) also gives value above four,
+since \(v_3(m!)=1\) in that range. Counts \(m=0,1\)
+have \(F_m=1\); the other counts can use \(F_m\bmod81\).
+
+For either exponent \(a<3^q\) of this kind, let
+\(q_*=\min(q,3)\), \(d=q-q_*\), and
+\(b_m=\lfloor ma/3^d\rfloor\). For \(1\le m\le5\),
+\(ma<3\cdot3^q\), so each factor \(1+3^q x/j\),
+\(1\le j\le ma\), is integral. Factors with \(3^d\nmid j\)
+are \(1\bmod81\): if \(d>0\), then
+\(q-v_3(j)\ge q-d+1=4\). The remaining factors
+give
+\[
+             \binom{3^q x+ma}{ma}
+          \equiv \binom{3^{q_*}x+b_m}{b_m}\pmod {81}.
+\]
+The pure quotient depends only on whether \(q=0\),
+by the identity following (21); the remaining axis
+data are \(q_*\) and the five \(b_m\), each bounded
+independently of \(q\).
+
+For exact reachability of the \(F_m\) data, read
+each axis word from the least significant end.
+At position \(j\), put \(n_j=\lfloor a/3^j\rfloor\),
+\(c_{m,j}=\lfloor m(a\bmod3^j)/3^j\rfloor\); then
+\(\lfloor ma/3^j\rfloor=mn_j+c_{m,j}\).
+If the next digit is \(d_j\), the carry updates by
+\(c_{m,j+1}=\lfloor(md_j+c_{m,j})/3\rfloor\).
+Legendre's formula gives the valuation of
+\((ma)!/(a!)^m\) as \(\sum_{j\ge1}c_{m,j}\).
+For a fixed \(m\) this sum need only be stored up
+to \(4+v_3(m!)\), since reaching that threshold
+already makes \(F_m=0\bmod81\).
+
+Let \(g(n)=\prod_{1\le k\le n,\ 3\nmid k} k\bmod81\).
+The product of the units modulo \(81\) is \(-1\),
+so \(g(n+81)=-g(n)\). The unit of the same factorial
+ratio is the product over \(j\ge0\) of
+\(g(mn_j+c_{m,j})/g(n_j)^m\). Each factor depends
+only on the carry and \(n_j\bmod81\), since changing
+\(n_j\) by \(81\) cancels the two signs. Four digits
+at a time give \(n_j\bmod81\), so the product is
+updated with a bounded delay. At the end, append
+zeros to flush the last digits and carries. The
+\(b_m\) can be read from the top \(q_*\) digits and
+the carry at their lower edge, obtained by retaining
+the last three digits and their incoming carries.
+Length truncated at three, digit count truncated at
+four, and digit-count parity also have finite state.
+The two resulting axis states give the \(F_m\) by
+combining the valuation sums and dividing the
+unit products by the unit of \(m!\).
+Every finite path that ends at a word boundary
+constructs an admissible axis word, and all admissible
+words occur. Keeping the positive even digit counts
+therefore gives exactly the attainable profiles.
+
+### A unit low foreign coefficient
+
+**Unit foreign coefficient.** Keep the low even-digit
+foreign monomial of Section 9 and the two unit axes, but
+now take \(u\) a unit. Assume that the reduced native
+residue retains both distinct poles. Then the four-window
+holds at every noncritical constant valuation and at
+the first two critical radii \(1/3,4/9\), with arbitrary
+coefficient ramification. If the nonconstant coefficient
+grid is prime to \(3\), it holds at all constant valuations.
+
+Here the polynomial part of
+\(\overline R(T)=(1+\bar u T-\bar u^2T^2)/
+((1-\bar a T)(1-\bar b T))\) is the nonzero constant
+\(J=-\bar u^2/(\bar a\bar b)\). Both exponential
+coefficients of its proper part are nonzero, so
+\(\overline R\) has a two-window at positive indices.
+The zero, negative, and noncritical positive constant
+arguments in Section 2 apply unchanged to this
+two-window. At \(v(k)=0\), index zero of the
+three-entry test is a unit, giving a three-window.
+
+At a critical radius use (4). In any row \(d\),
+the polynomial part affects only \(t=0\), where its
+additional contribution at \(W=1\) is \(J\mu^d/d!\).
+At positive \(t\), the two-exponential test of (5)
+applies. Any row whose two exponential multipliers
+do not both vanish has at most one consecutive zero
+at positive indices, and at most two starting at
+its first entry. A block that crosses such a row
+boundary can have at most one zero from the end
+of the preceding row and two from the beginning
+of the next. The only exception can be the canceled
+row \(d=2\), where entry zero is a unit because of
+\(J\), and all positive entries vanish. This zero
+run ends before the next period because its initial
+entry is \(R_0=1\). For \(L=3\) even this run has
+only two zeros. For \(L=9\) a candidate four-window
+inside it has \(s=19,\ldots,23\). The coefficient
+test (24) remains valid there: with \(u\) a unit,
+\(v(z)=-\delta\), so a small digit-sum index is
+impossible in every residue class, by the same
+least-term comparison. This leaves \(s=23\).
+At its index \(t=7\), the numerator coefficient
+\(K_7+uK_6-u^2K_5\) has value \(2/3\) from
+the unique term \(uK_6\). Thus it cannot vanish
+modulo \(3\mathcal O\).
+
+Finally, in a prime-to-three coefficient grid the
+multiplicity bound in Section 4 covers any canceled
+row at every radius. Any four-zero block inside it
+has positive \(t\) at its last two entries, so the
+proper part gives (5) at both. The derivative in
+\(W\) at \(1\) has nonzero weights at both frequencies
+because the roots of \(e_2\) are simple, and cannot
+vanish at two consecutive \(t\). At either index the
+actual block would force multiplicity at least two.
+This contradicts the lattice-variable multiplicity
+bound. The mixed term in the polynomial part never
+enters these two tests, since only \(t=0\) sees it.
+
+## 10. Scope and remaining cases
 
 [Edo–van den Essen, Definition 2.7 and Conjecture 2.8](https://arxiv.org/pdf/1304.3956)
 give the actual-support and every-start target.
@@ -1026,14 +1739,27 @@ At \(L=3\), only support size four with a nonsingleton foreign
 column satisfying (10) remains. The explicit congruence solution
 shows that the full modulo-three equations alone leave this
 profile. Its actual solutions must satisfy (11), (16) and
-the vanishing adjacent digits in (19).
+the vanishing adjacent digits in (19). Within those
+conditions the fourth power on an axis is also excluded by
+(21)–(22) and the subsequent linked lifts.
 At \(L\ge9\), a candidate block of length at least three is
 confined to the canceled row, with its one allowed left
 extension when \(c=0\). Only support lengths at most
 \(L+\mathbf 1_{c=0}\) need further work there. Equation (6)
 retains the linked small native prefixes modulo \(3\mathcal O\),
 and Section 7 discards further starts on the full modulo-three
-support class. One must use the linked
+support class. For the low even-digit foreign term,
+Section 9 gives the quadratic numerator test and the
+three possible starts with precise pole constraints
+at \(L=9\). The linked higher-precision equations
+exclude all three starts for \(XY\) at this radius.
+Other low even-digit foreign terms reduce to
+finitely many realizable native profiles at precision
+four, whose linked lifts are still needed. For a unit
+low foreign coefficient it
+also excludes the first two critical radii and all
+radii on prime-to-three grids, when both distinct
+poles survive. One must use the linked
 higher-precision native coefficients or another exact constraint. For example, a bound on the least term at \(v(k)\)
 alone loses a factor \(p\) as soon as the coefficient grid permits
 denominators divisible by \(p\). The polynomial native residue

@@ -629,7 +629,65 @@ integer specializations may attain additional norm values. In particular,
 the simultaneous translation through 9 and the prescribed-norm problem
 for arbitrary \(N\) remain open here.
 
-## 13. Review and computation scope
+## 13. Power substitutions also exclude position 9
+
+**Proposition Erdos675PellPowerCoverObstruction.** Let \(b\in\mathbb Z\),
+\(h\ge1\), and take the function field \(K_1=\mathbb Q(X,Y)\) of
+\(X^2-3Y^2=1\). Define \(z,k\in K_1\) by
+\[
+ z+k\sqrt3=(1+\sqrt3)(2+\sqrt3)^b(X+Y\sqrt3)^h .
+\]
+Then \((2k^2-1)^2+8\) is never a norm from \(K_1(i)\) to \(K_1\).
+This includes the substitutions for all arithmetic progressions of the
+Pell exponents.
+
+Write \(\varepsilon=2+\sqrt3\). Modulo \(11\), the unit
+\(\varepsilon\) has order \(10\): its fifth power is \(-1\), and
+\(\varepsilon^2\ne1\). The two base points given by exponents \(1,8\)
+satisfy
+\[
+ (1+\sqrt3)\varepsilon\equiv5+3\sqrt3,\qquad
+ (1+\sqrt3)\varepsilon^8\equiv6+3\sqrt3\pmod{11}.
+\]
+Indeed \(\varepsilon^8\equiv\varepsilon^{-2}=7-4\sqrt3\) here.
+At both points \(m=2k^2-1\equiv6\pmod{11}\) and \(m^2+8\equiv0\).
+These are simple zeros on the base conic. The derivative of
+\(z^2-3k^2+2\) with respect to \(z\) is a unit, so \(k\) is a local
+coordinate, and the derivative of \(m^2+8\) is \(8km\ne0\bmod11\).
+
+Write \(h=2^r n\) with \(n\) odd. First use the cover of degree \(2^r\)
+with the given shift exponent \(b\). Choose \(e=1\) if \(b\) is odd
+and \(e=8\) if \(b\) is even. There is an integer \(j\) with
+\(b+2^rj\equiv e\bmod10\). Thus \(X+Y\sqrt3\equiv\varepsilon^j\bmod11\)
+maps to one of the two simple zeros. To apply Hensel's lemma, choose
+\(\rho\in\mathbb Z_{11}\) with \(\rho^2=3\) and \(\rho\equiv5\bmod11\).
+The coordinate \(w=X+\rho Y\) identifies the norm-one conic over
+\(\mathbb Z_{11}\) with the invertible elements, using
+\(X=(w+w^{-1})/2\) and \(Y=(w-w^{-1})/(2\rho)\).
+The base conic has the same coordinate after dividing by
+\(1+\rho\), since its norm is \(-2\), a unit here.
+In these coordinates the cover is multiplication by a unit times
+\(w^{2^r}\), whose derivative at the selected point is a unit.
+The zero therefore lifts to a simple zero at some \(w_0\in
+\mathbb Z_{11}^{\times}\) of the degree-\(2^r\) pullback.
+
+The full cover substitutes \(w^n\) for \(w\). The polynomial
+\(w^n-w_0\) has an irreducible factor of odd degree over \(\mathbb Q_{11}\)
+because \(n\) is odd. For a root \(w_1\) of that factor,
+\(L=\mathbb Q_{11}(w_1)\) omits \(i\): the irreducible polynomial
+\(x^2+1\) over \(\mathbb Q_{11}\) would force an even degree.
+Since \(w_1\ne0\), the derivative of \(w^n\) at \(w_1\) is nonzero
+in characteristic zero, so the full pullback still has a simple zero.
+
+Finally \(w=w_1+T\) embeds \(K_1\) into \(L((T))\) and maps the
+function at position \(9\) to a series of order one. It extends
+to an embedding of \(K_1(i)\) into \(L(i)((T))\) that respects
+conjugation. Conjugation preserves the order, so every norm has even
+order. This proves the obstruction for every \(b,h\).
+Individual integer points on these covers may still represent position
+\(9\) as a sum of two squares.
+
+## 14. Review and computation scope
 
 The [exact checker](verify_erdos675_reduction.py) independently enumerates
 two-square representations in a bounded range, checks locked valuations

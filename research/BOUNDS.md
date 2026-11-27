@@ -28,6 +28,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | HESSIAN-GLOBAL-OCTIC-CONDUCTOR-EXCLUSION | proved | global-directional-coordinate-conductor-degree | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate | lower: 10 |  |
 | HESSIAN-GLOBAL-CONDUCTOR-TEN-EXCLUSION | proved | global-directional-coordinate-conductor-degree | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate | lower: 12 |  |
 | HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION | proved | global-directional-coordinate-conductor-degree | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate | lower: 14 |  |
+| HESSIAN-EXCEPTIONAL-FOLD-WEIGHTED-DEGREE-BOUND | proved | exceptional-polar-fold-transverse-polynomial-degree | actual complex plane Keller pair with an omitted index-two exceptional fold in its normalized (a,b) chart | lower: 18 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,ordinary factorial shape beta=1 | lower: 5 |  |
 | BINOMIAL-INITIAL-BOUNDARY | proved | uniform separated initial terminal order | Nonzero complex X^a(A+B X^d),integers a>=0,d>=1,every positive Gamma shape beta | lower: 4 |  |
 | FACTORIAL-ORDINARY-BINOMIAL-SFC | proved | sufficient common terminal cutoff | all ordinary univariate binomial supports over every characteristic-zero field | exact: 2 |  |
@@ -716,6 +717,9 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-TERMINAL-FOUR-SCHEME | proved | sharp coefficient ideal and phase nilpotence index | Distinct multivariate monomials at terminal four, ordinary over Q or fixed positive real Gamma shapes over R | exact: 6 |  |
 | FACTORIAL-MULTIVARIATE-TWO-MONOMIAL-TERMINAL-FOUR-SCHEME | proved | dimension of universal consecutive moment quotient | Distinct multivariate monomials at terminal four, ordinary over Q or fixed positive real Gamma shapes over R | exact: 12 |  |
 | FACTORIAL-MULTIVARIATE-ONE-PRIVATE-LINEAR-UNIFORM-TAIL | proved | sufficient uniform terminal cutoff | Ordinary multivariate two-monomial supports with private exponent sums {1,D}, D>=2 | upper: 361 |  |
+| ARITH-ABC-SPLIT-QUARTIC-EXCEPTION-COUNT-EIGHT-NINTHS | proved | coprime opposite-parity pairs u>v>0 with u<=X and rad(uv(u−v)(u+v))<=u^beta | fixed 0<beta<=2 | upper: O_beta,epsilon(X^(min(beta/2,max(4beta/9,beta/4+7/18,4/5))+epsilon)) |  |
+| ARITH-ABC-SPLIT-QUARTIC-POLYNOMIAL-REPEATED-PART-BOUND | proved | product of the absolute evaluated polynomial divisors of the four repeated parts | fixed polynomial prescriptions on primitive opposite-parity pairs | upper: O_(M_i)(u min(v,u−v)) |  |
+| ARITH-ABC-SPLIT-QUARTIC-UNIFORM-MOVING-POLYNOMIAL-DIVISOR-BOUND | proved | specialized polynomial repeated-part product divided by u min(v,u−v) | monic pairwise coprime P_i of total degree d and root bound H, with n>=2H and P_i(n)\|L_i | upper: (16(1+H))^(32d^2)/n |  |
 
 ## Comparable improvements
 
@@ -728,6 +732,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 
 - JAC-CUBIC-CUBE-ZERO-SHARP29 has bound 195. JAC-CUBIC-CUBE-ZERO-SHARP48-INVERSE-DEGREE29 improves it to 48 under the same assumptions.
 - HESSIAN-GLOBAL-CONDUCTOR-TEN-EXCLUSION has bound 12. HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION improves it to 14 under the same assumptions.
+- HESSIAN-EXCEPTIONAL-FOLD-SOURCE-DEGREE-BOUND has bound 9. HESSIAN-EXCEPTIONAL-FOLD-WEIGHTED-DEGREE-BOUND improves it to 18 under the same assumptions.
 - FACTORIAL-ORDINARY-INITIAL-FOUR has bound 4. FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH improves it to 5 under the same assumptions.
 - FACTORIAL-EXPLICIT-ARITHMETIC-ORDINARY-BINOMIAL-CUTOFF has bound 3150. FACTORIAL-ORDINARY-BINOMIAL-SFC improves it to 2 under the same assumptions.
 - ARITH-D20-EFFECTIVE-ALL-TARGETS has bound 73786976294838206464. ARITH-D20-EXACT-SUMSET-AFFIRMATIVE improves it to 5 under the same assumptions.

@@ -751,3 +751,724 @@ radicals. Their combined exponent is at most
 and the height-sensitive bound costs \(H^{r+\varepsilon}\).
 At \(\mu=1\) this improves the \(2/7\) exponent when
 \(\theta<5/7\).
+
+## Four linear factors suffice for abc finiteness
+
+For coprime integers \(u>v>0\) of opposite parity put
+\[
+ F(u,v)=uv(u-v)(u+v),\qquad R(u,v)=\operatorname{rad}(F(u,v)).
+\]
+The four factors are pairwise coprime. In particular \(u-v\) and
+\(u+v\) are odd, and their gcd divides both \(2u\) and \(2v\).
+The abc conjecture is equivalent to finiteness of the pairs with
+\(R(u,v)<u^{2-\delta}\) for every fixed \(0<\delta<2\).
+
+In one direction, apply abc to the primitive triple
+\(v^2+(u^2-v^2)=u^2\), whose radical is exactly \(R(u,v)\).
+Conversely, suppose infinitely many primitive \(a+b=c\) satisfy
+\(\operatorname{rad}(abc)<c^\lambda\) for some fixed \(0<\lambda<1\).
+If \(c\) is odd, take \(u=\max(a,b)\), \(v=\min(a,b)\). If \(c\)
+is even, take \(u=c\), \(v=a\). In both cases \(u\asymp c\),
+with the required coprimality and parity. The product \(F(u,v)\)
+is \(abc\) times one positive integer at most \(2c\), so
+\(R(u,v)\ll u^{1+\lambda}\). These unbounded pairs violate the
+four-factor threshold for every fixed \(0<\delta<1-\lambda\).
+The four points \(0,1,-1,\infty\) and the squaring map also occur
+in Smirnov's arithmetic Hurwitz formulation.
+[Smirnov, Hurwitz inequalities for number fields](https://www.mathnet.ru/eng/aa316).
+
+## Counting small radicals of the four linear factors
+
+For fixed \(0<\beta\le2\), the number of these pairs with \(u\le X\)
+and \(R(u,v)\le u^\beta\) is
+\[
+ O_{\beta,\varepsilon}\!\left(X^{e(\beta)+\varepsilon}\right),
+ \qquad
+ e(\beta)=\min\left\{\frac{\beta}{2},
+ \max\left(\frac{4\beta}{9},\frac{\beta}{4}+\frac7{18},\frac45\right)\right\}.
+ \tag{K5}
+\]
+In particular \(e(2)=8/9\). For comparison, using only the three
+cheapest radicals and applying Theorem 1.2 to their additive
+relation gives \(15/16\) at \(\beta=2\), since their combined
+budget is \(3\beta/4\) and doubling costs at most a factor two.
+The proof of (K5) uses the lattice of all four divisibilities and
+the Fourier bounds from all four additive relations.
+[Bernert, Browning, Lichtman and Teräväinen, Theorem 1.2 and Proposition 3.1](https://arxiv.org/html/2410.12234v2).
+
+### Valuation slots and a four-factor lattice bound
+
+Use dyadic ranges \(u\asymp H\) and \(\min(v,u-v)\asymp W\).
+The product of the four linear values \(L_i\) is \(\asymp H^3W\).
+After fixing which value is short, use \((u,v)\) or \((u,u-v)\)
+as integral coordinates, with box dimensions \(O(H),O(W)\).
+
+Fix a large integer \(m\ge4\). Write
+\(L_i=q_i\prod_{j=1}^m x_{ij}^j\), where \(x_{ij}\) is the
+product of primes of exact valuation \(j\) and \(q_i\) contains
+the full prime powers of valuation above \(m\). Since
+\(\operatorname{rad}(q_i)\ll H^{1/(m+1)}\), the fixed-radical
+bound used for (K4) gives \(O_{m,\eta}(H^{4/(m+1)+\eta})\)
+possibilities for the ordered \(q_i\). Fix these and the dyadic
+scales \(H^{a_{ij}}\) of all \(x_{ij}\). Write
+\(a_i=\sum_j a_{ij}\), \(p_j=\sum_i a_{ij}\), \(B=\sum_j p_j\).
+Then \(B\le\beta+o(1)\), \(\sum_j jp_j\le4+o(1)\), and
+\(3a_{i3}\le1+o(1)\).
+
+Choose a subset \(I\) of slots to leave free and fix all other
+slots. Put \(S=\sum_{(i,j)\in I}a_{ij}\) and
+\(T=\sum_{(i,j)\in I}(j-1)a_{ij}\). For each \(i\) the fixed
+variables prescribe a divisor \(M_i=q_i\prod_{j:(i,j)\notin I}x_{ij}^j\)
+of \(L_i\). The \(M_i\) are pairwise coprime whenever the pattern
+has a solution. The Chinese remainder theorem gives a lattice of
+index \(\prod_i M_i\), since each linear form is primitive modulo
+its own modulus. The index is \(\asymp_m H^3W H^{-S-T}\).
+
+The number of primitive points for this fixed pattern is
+\(O(1+HW/\prod_i M_i)\). To see this, scale the two box dimensions
+to bounded size. If the lattice points in the box are collinear
+through the origin, there are at most two primitive integral
+preimages. Otherwise two independent points of bounded size
+generate a sublattice of bounded covering radius. The full lattice
+has at most that covering radius, so the disjoint Voronoi cells of
+the counted points lie in a box of bounded area. Each cell has area
+\(\prod_i M_i/(HW)\). Multiplying by \(O_m(H^{B-S})\) choices of
+fixed slots gives a count \(O_m(H^{B-S}+H^{B-2+T})\).
+
+### Fourier bounds and exponent elimination
+
+Each of the four triples of linear forms determines \((u,v)\)
+and participates in one of the relations
+\[
+ (u-v)+v=u,\qquad u+v=(u+v),\qquad
+ (u-v)+2v=(u+v),\qquad (u-v)+(u+v)=2u.
+\]
+Use the second and fourth moment estimates in the proof of
+Proposition 3.1, equations (3.1)–(3.2), on each letter of a relation.
+Its coordinate product is \(H^{a_i}\). For every \(2\le j\le m\),
+the moments are at most \(H^{a_i+\eta}\) and
+\(H^{3a_i-a_{ij}+\eta}\), up to constants. The fourth moment saves
+the product over all multiples of \(j\), which includes slot \(j\).
+The fixed coefficient \(q_i\) and any doubling only dilate the
+integral argument by an integer. Orthogonality, Cauchy–Schwarz and
+Hölder give the exponent \((2/3)\sum_i a_i-(1/6)\sum_i a_{ij}+\eta\)
+for the three letters in the relation. Dropping the constraints on
+the omitted form can only increase the count. Averaging the four
+bounds gives \(B/2-p_j/8+\eta\).
+[Bernert, Browning, Lichtman and Teräväinen, proof of Proposition 3.1](https://arxiv.org/html/2410.12234v2#S3).
+
+It suffices to rule out limiting exponents \(D>e(\beta)\) for
+fixed boxes. Indeed, if the stated estimate fails for some
+\(\varepsilon>0\), take \(m\) large and \(\eta\) small so that
+the loss from \(q_i\) and the logarithmically many scales and shells
+is less than \(\varepsilon/2\). Along a sequence of offending
+boxes take a convergent subsequence of the bounded log sizes.
+The geometric and Fourier estimates yield
+\[
+ D\le\max(B-S,B-2+T),\qquad p_j\le4B-8D\quad(j\ge2),
+\]
+for every choice of free slots, with \(B\le\beta\),
+\(\sum_j jp_j\le4\), and \(a_{i3}\le1/3\). The arbitrary
+\(H^\eta\) loss in the moment bound disappears in this limit.
+
+If \(p_2\ge D\), Fourier gives \(D\le4B/9\). Otherwise leave all
+degree-one and degree-two slots free. Since \(B\le2\), the second
+geometric exponent is at most \(p_2<D\), giving
+\(p_1+p_2\le B-D\). The height inequality then implies
+\[
+ 4B-4\le3p_1+2p_2+p_3,
+ \qquad p_2\le4-B-3D+p_3\le4+3B-11D.
+\]
+If \(p_2+2/3\ge D\), this gives \(D\le B/4+7/18\).
+In the remaining case also leave the largest degree-three slot
+free, of size \(a\in[p_3/4,1/3]\). The second geometric exponent
+is at most \(p_2+2a<D\), giving \(p_1+p_2+p_3/4\le B-D\).
+Therefore
+\[
+ 4B-4\le3(p_1+p_2)+p_3-p_2
+ \le3(B-D)+p_3/4\le4B-5D,
+\]
+so \(D\le4/5\). Fourier also gives \(D\le B/2\). This proves
+(K5), uniformly including shells with one small linear value.
+
+## The lattice of repeated-prime divisors
+
+For a fixed admissible pair, take \(E_i=L_i(u,v)/\operatorname{rad}(L_i(u,v))\)
+and \(E=\prod_i E_i\). Let \(\Lambda\) consist of integral \((r,t)\)
+with \(E_i\mid L_i(r,t)\) for each of the four forms. Then
+\[
+ \Lambda=\{(r,t)\in\mathbb Z^2:E\mid ut-vr\}
+         =\mathbb Z(u,v)+E\mathbb Z(r_0,t_0),\qquad ut_0-vr_0=1.
+ \tag{K6}
+\]
+Modulo \(E_u\), the coefficient \(v\) is a unit and \(u=0\).
+Modulo \(E_v\), the coefficient \(u\) is a unit and \(v=0\).
+Modulo each of \(E_+\) and \(E_-\), the coefficient \(u\) is a
+unit and \(v\equiv\mp u\), respectively. Thus each divisibility
+condition is equivalent to \(E_i\mid ut-vr\). Their product is
+permitted by pairwise coprimality. The final equality in (K6)
+uses the determinant-one integral basis given by Bézout's identity.
+
+Take \(s=\min(v,u-v)\) and let \(\ell\) be the corresponding
+linear form. In the real coordinates \((r/u,\ell(r,t)/s)\),
+the pair is \((1,1)\) and the lattice has determinant
+\[
+ \Delta=\frac{E}{us}
+       =\frac{\max(v,u-v)(u+v)}{R(u,v)}\asymp \frac{u^2}{R(u,v)}.
+\]
+The least sup norm \(\rho\) of a lattice vector independent of
+\((1,1)\) satisfies
+\[
+ \frac{\Delta}{2}\le\rho\le\frac{\Delta+1}{2}.
+\]
+Indeed the difference of the two coordinates of an independent
+vector is a nonzero integral multiple of \(\Delta\) in absolute
+value. The second basis vector in (K6) has coordinate difference
+of absolute value \(\Delta\). Translate by a multiple of \((1,1)\)
+to put the coordinate mean within \(1/2\) of zero.
+
+Full abc is therefore also equivalent to a bound
+\(\rho\ll_\varepsilon u^\varepsilon\) for each \(\varepsilon>0\).
+In a hypothetical strict exception with \(R(u,v)<u^{2-\delta}\),
+the lattice has only one direction in every bounded normalized box
+once \(u\) is large. Bounding the volume contribution in (K5)
+still leaves such primitive points. A pointwise argument using
+these congruences must constrain which repeated-prime divisors can
+occur at the input pair. Ordinary lattice counting also permits
+the isolated primitive directions described by (K6).
+
+### Continued fractions for a prescribed divisor pattern
+
+Prescribe four pairwise coprime positive divisors \(M_i\) and fix
+which linear value is \(s=\min(v,u-v)\). In the coordinates
+\((u,s)\), write \(u=M_0 x\), \(s=M_1 y\), where \(M_0,M_1\)
+correspond to \(u,s\). Put \(Q=M_2M_3\) for the other two moduli.
+If \(s=v\), the other forms give \(s\equiv u,-u\) modulo their
+respective moduli \(M_{u-v},M_{u+v}\). If \(s=u-v\), they give
+\(s\equiv u,2u\) modulo \(M_v,M_{u+v}\). Hence they prescribe
+\(y\equiv kx\pmod Q\) for a uniquely determined \(0\le k<Q\).
+The residue is obtained by multiplying the indicated slopes by
+\(M_0 M_1^{-1}\) modulo each remaining modulus.
+
+Suppose \(M=\prod_i M_i>2us\). Then \(2xy<Q\), so for
+\(n=(kx-y)/Q\) we have
+\[
+ 0<\frac{k}{Q}-\frac{n}{x}=\frac{y}{Qx}<\frac{1}{2x^2}.
+\]
+The fraction \(n/x\) is reduced because \(\gcd(x,y)=1\).
+By Legendre's criterion it is a convergent of \(k/Q\). To include
+the terminating rational convention, one can use both finite
+continued-fraction expansions. The criterion follows by extending
+the two expansions of \(n/x\). Their intervals end at mediants
+with the respective preceding fractions, on opposite sides and
+at distances \(1/[x(x+b)]\) with preceding denominator \(b<x\).
+For an integer approximation the upper interval starts with that
+integer. Here the exact final convergent cannot occur since \(y>0\).
+
+Thus the Euclidean algorithm lists every admissible pair in this
+range for the prescribed pattern. Recover \(y=kx-nQ\) and check
+positivity, the choice of short value, coprimality and parity.
+There are \(O(\log(2Q))\) convergents. In the expansion giving
+\(n/x\), the next partial quotient is \(M/(us)+O(1)\). This follows
+from the exact convergent error, since its inverse after
+multiplication by \(x^2\) is the next complete quotient plus the
+ratio of the preceding denominator to \(x\).
+
+For \(M_i=E_i\) the next partial quotient is therefore
+\(\Delta+O(1)\) and captures every sufficiently large strict
+exception. Conversely, a family of prescribed patterns and
+reconstructed admissible pairs with unbounded \(u\) disproves abc
+if \(M/\operatorname{rad}(M)\gg u^{1+\delta}s\) for some fixed
+\(\delta>0\). Indeed \(M/\operatorname{rad}(M)\) divides \(E\),
+so \(R(u,v)\ll u^{2-\delta}\). Short lattice vectors for prescribed
+prime powers are also used in Dokchitser's search on the
+three-letter equation. The congruence here uses all four factors
+and depends on the actual short value.
+[Dokchitser, LLL & ABC](https://arxiv.org/abs/math/0307322).
+
+### A fixed set of primes cannot supply the excess
+
+Fix any finite prime set \(S_0\). Let \(F_{S_0}\) denote the
+full \(S_0\)-part of \(F(u,v)\). The Subspace Theorem gives
+\[
+ F_{S_0}\ll_{S_0,\varepsilon} us\,u^\varepsilon
+ \qquad(\varepsilon>0).
+ \tag{K7}
+\]
+Use the two independent real forms \(u,\ell(u,v)\) and, at each
+\(p\in S_0\), the single form \(L_i\) divisible by \(p\). If none
+is divisible by \(p\), use \(u\). There are finitely many choices
+of these form systems and the product in Theorem 4.1 is exactly
+\(us/F_{S_0}\). For a fixed system, a product at most
+\(u^{-\varepsilon}\) confines the pairs to finitely many proper
+rational subspaces of \(\mathbb Q^2\). Each line contains at most
+two primitive integer vectors.
+[Schlickewei, Theorem 4.1, with two real forms and one form per finite place](https://matwbn.icm.edu.pl/ksiazki/aa/aa31/aa3148.pdf).
+
+In particular, if \(R(u,v)<u^{2-\delta}\), the part of \(E\)
+supported outside any fixed \(S_0\) is
+\(\gg_{S_0,\varepsilon}u^{\delta-\varepsilon}\). This follows
+from \(E\gg us\,u^\delta\) and \(E_{S_0}\le F_{S_0}\).
+An unbounded disproof family through the divisor reconstruction
+must obtain a power-sized contribution from primes outside every
+fixed set. The pointwise gap is control of the normalized excess
+from such varying prime supports.
+
+## Fixed polynomial prescriptions for the repeated parts
+
+Index the four forms by \(u,v,u-v,u+v\), and write
+\(s=\min(v,u-v)\). Fix four nonzero polynomials
+\(M_i(T)\in\mathbb Z[T]\). For every integer \(n\ge2\) with all
+\(M_i(n)\ne0\), and every admissible pair satisfying
+\[
+ |M_i(n)|\mid \frac{L_i(u,v)}{\operatorname{rad}(L_i(u,v))}
+ \qquad\text{for all }i,
+\]
+one has the effective bound
+\[
+                    \prod_i |M_i(n)|\ll_{(M_i)} us . \tag{K8}
+\]
+In particular, a fixed polynomial prescription for all four
+exact repeated parts gives \(R(u,v)\gg_{(M_i)}u^2\). The polynomials
+can have values supported on primes that grow with \(n\). A finite
+list of polynomial prescriptions, including a fixed set of residue
+classes with one prescription on each class, gives the same bound.
+The order \(us\) is attained by \(u=2n^k,v=1\) for \(n\) a power
+of two, with \(M_u(T)=T^k\) and the other moduli equal to one.
+
+### Finite polynomial directions for the specialized lattices
+
+First assume only \(|M_i(n)|\mid L_i(u,v)\) and put
+\(M(T)=\prod_i M_i(T)\). If there is a nonconstant common polynomial
+factor of two moduli, its primitive integral representative divides
+both integral polynomials by Gauss's lemma. For large \(n\) its
+absolute value exceeds one, contrary to coprimality of distinct
+linear values. Thus, for the large-\(n\) argument, the moduli are
+pairwise coprime in \(\mathbb Q[T]\). Finitely many remaining \(n\)
+give bounded \(|M(n)|/(us)\).
+
+In the chart \((u,s)\), write the forms as \(u,s,u-s,u+s\) or
+\(u,s,u-s,2u-s\), with the moduli reordered accordingly. Over
+\(\mathbb Q[T]\), the simultaneous divisibilities define a free
+rank-two module with a basis of determinant \(M(T)\). Explicitly,
+write the first two coordinates as \(M_0 x,M_1 y\). The other two
+congruences give \(y\equiv kx\pmod{M_2M_3}\) by the polynomial Chinese
+remainder theorem. The columns \((M_0,M_1k)\) and
+\((0,M_1M_2M_3)\) are the desired basis. A modulus that is constant
+imposes the trivial congruence over \(\mathbb Q[T]\).
+
+There is a constant \(C\) and a finite list of nonzero polynomial
+directions, depending only on the moduli and chart, such that
+\(|M(n)|>Cus\) implies \((u,s)\) is proportional to the evaluation
+of a listed direction. For the proof, let
+\(\theta=\log_n(u/s)\). In the range \(|M(n)|>us\), this lies in a
+fixed bounded interval because \(u\le |M(n)|\). Order the coordinate
+monomials by degree on the first coordinate and degree plus
+\(\theta\) on the second, resolving ties in favor of the first.
+The order is constant on each open interval between successive
+integers and on each integer singleton. In each of these finitely
+many cases, reduce the polynomial basis by subtracting a monomial
+multiple of one column from the other whenever their leading
+positions agree. Choose the multiple to cancel the leading term
+of the column with the larger degree in that position. Each step
+strictly lowers a leading monomial in the fixed order, so the
+process terminates with distinct leading positions. This is the
+two-column form of reduction to weak Popov form.
+[Mulders and Storjohann, §2](https://cs.uwaterloo.ca/~astorjoh/jscpopov.pdf).
+
+Multiply both columns by a fixed positive integer \(D\) to clear
+denominators of their entries and all four polynomial quotients.
+The resulting columns \(b_1,b_2\), evaluated at \(n\), span a
+sublattice of index \(D^2\) in the integer congruence lattice. Indeed
+the evaluated determinant has absolute value \(D^2|M(n)|\), and
+the full lattice has determinant \(|M(n)|\) by coprimality of the
+evaluated moduli and the Chinese remainder theorem.
+
+Use \(\|(x,y)\|_\theta=\max(|x|,n^\theta|y|)\) after specialization.
+The opposite leading positions give
+\[
+ n^\theta D^2|M(n)|\asymp
+             \|b_1(n)\|_\theta\,\|b_2(n)\|_\theta .
+\]
+In the polynomial determinant, the product of the leading entries
+has strictly higher degree than the crossed product. If one column
+has equal weighted degrees, the other has a strict inequality by
+the tie rule. The specialization estimate is uniform within each
+of the finitely many orders because the absolute value of every
+nonzero fixed polynomial is comparable to \(n^{\deg}\) for large
+\(n\). Writing \((u,s)=\alpha_1b_1(n)+\alpha_2b_2(n)\), one has
+\(\alpha_j\in D^{-2}\mathbb Z\). Cramer's rule and
+\(\|(u,s)\|_\theta=u\) give \(|\alpha_j|\ll u/\|b_j(n)\|_\theta\).
+If both are nonzero, the last two estimates imply \(|M(n)|\ll us\).
+Taking the basis columns over the finitely many orders proves the
+claim for arbitrary reconstructed integer pairs. General parametric
+LLL addresses a fixed metric. The argument here explicitly allows
+the aspect ratio \(u/s\) to depend on the reconstructed pair.
+[Bogart, Goodrick and Woods, Theorems 1.2 and 1.4](https://arxiv.org/abs/1909.04762).
+
+### Specialization and repeated polynomial factors
+
+Normalize a listed direction to coprime \(U,V\in\mathbb Z[T]\) in
+the \((u,s)\) chart, writing \(V(n)\) for the short coordinate before
+primitive normalization. The gcd of the evaluated coordinates divides
+a fixed nonzero integer by the polynomial Bézout identity. Thus
+\(us\asymp |U(n)V(n)|\), and \(|M_i(n)|\) divides the corresponding
+form value \(A_i(n)=L_i(U(n),V(n))\) in this chart. Directions with a
+vanishing form have no admissible pairs. A constant direction gives a
+bounded primitive pair and contributes bounded prescribed divisors.
+
+For all sufficiently large \(n\), the evaluation divisibilities force
+\(M_i(T)\mid A_i(T)\) over \(\mathbb Q[T]\). In polynomial division,
+clear denominators and compare the remainder of smaller degree
+with \(|M_i(n)|\), which divides its integer value. A nonzero
+remainder is impossible for large \(n\). Write \(Y_i=A_i/M_i\).
+For a primitive irreducible factor \(f\) of \(M_i\) with
+\(f\nmid Y_i\), divide a constant multiple of \(Y_i\) by \(f\)
+to obtain a nonzero integral remainder of degree below \(\deg f\).
+Under the repeated-part divisibilities in (K8), \(|M_i(n)|
+\operatorname{rad}|M_i(n)|\) divides \(A_i(n)\), so every prime
+divisor of \(f(n)\) divides the remainder at \(n\). This uses Gauss's
+lemma to pass from \(f\mid M_i\) over \(\mathbb Q[T]\) to integral
+divisibility. Since \(f\) and the remainder are coprime over
+\(\mathbb Q[T]\), another polynomial Bézout identity confines all
+prime divisors of \(f(n)\) to a fixed finite set.
+
+If one such \(f\) has degree at least two, it has at least two
+distinct roots. If there are two distinct such linear factors,
+their product has two distinct roots and values supported in the
+union of the two fixed sets. In either case the effective
+\(S\)-part estimate for a polynomial with at least two distinct
+roots bounds \(n\). Thus for large \(n\) at most one linear factor
+is missing from the corresponding \(Y_i\).
+[Bugeaud, Evertse and Győry, Theorem 2.2](https://arxiv.org/abs/1708.08290).
+
+For a nonconstant direction, the Wronskian \(W=UV'-U'V\) is
+nonzero and has degree at most \(\deg U+\deg V-1\). For any form
+\(A_i\), complete it by an independent linear form in \(U,V\).
+Their Wronskian is a nonzero constant multiple of \(W\). Hence a
+factor of multiplicity \(e\) in \(A_i\) divides \(W\) to at least
+multiplicity \(e-1\). Each factor of \(M_i\) has gained a
+multiplicity in \(A_i=M_iY_i\), except for the possible single
+missing linear factor. Since the \(M_i\) are pairwise coprime,
+\(M\mid W\) or \(M\mid fW\) over \(\mathbb Q[T]\), with \(f\)
+linear. In either case \(\deg M\le\deg U+\deg V\), giving (K8)
+on the finite list of directions. Denominator clearing, polynomial
+comparisons and the effective \(S\)-part bound make the constant
+computable from the prescriptions.
+
+There is also a bound for prescriptions that use ordinary
+divisors. Let \(Q(T)\) be the product of the distinct primitive
+irreducible factors of \(M(T)\). If \(|M(n)|>Cus\), use the same
+list of directions and \(M/Q\mid W\) to obtain, for large \(n\),
+\[
+ \frac{|M(n)|}{\operatorname{rad}|M(n)|\,us}
+ \ll_{(M_i)}\frac{|Q(n)|}{n\operatorname{rad}|Q(n)|}. \tag{K9}
+\]
+Here \(\operatorname{rad}|Q(n)|\mid\operatorname{rad}|M(n)|\).
+A disproof that uses only the excess guaranteed by a fixed
+polynomial prescription of ordinary divisors would therefore
+need a separate power-sized repeated part in values of its
+squarefree polynomial \(Q\). The repeated-part prescription in
+(K8) cannot produce a fixed positive deficit. These bounds leave
+open prescriptions with varying polynomials or growing exponents,
+as well as repeated parts outside the prescribed moduli.
+
+## Uniform bounds for moving polynomial divisors
+
+Let \(P_i(T)\in\mathbb Z[T]\) be monic, pairwise coprime over
+\(\mathbb Q[T]\), and put \(P=\prod_i P_i\). Write \(d=\deg P\ge1\),
+\(Q=\operatorname{rad}_{\mathbb Q[T]}P\) in monic normalization,
+and \(B=P/Q\). Suppose all complex roots of \(P\) have modulus at
+most \(H\ge1\). If \(n\ge 2H\) is an integer and \(P_i(n)\mid L_i(u,v)\)
+on an admissible pair, then
+\[
+ \frac{B(n)}{us}\le \frac{(16(1+H))^{32d^2}}{n},
+ \qquad s=\min(v,u-v).                                      \tag{K10}
+\]
+The estimate permits the polynomials, their coefficients and
+their multiplicities to vary with \(n\). In particular,
+\[
+ \frac{P(n)}{us\,\operatorname{rad}P(n)}
+ \le (16(1+H))^{32d^2}\,\frac{Q(n)}{n\operatorname{rad}Q(n)}.
+\]
+The loss depends on the total degree and root bound. This makes
+the specialization in (K9) uniform without assuming the normalized
+congruence lattice has only one direction.
+
+### Polynomial bases with bounded coefficients
+
+Work in the appropriate \((u,s)\) chart from (K8), so the four
+forms are \(u,s,u-s,u+s\) or \(u,s,u-s,2u-s\). Set
+\(\theta=\log_n(u/s)\) and \(D=\deg B\le d-1\). If \(\theta>2d\),
+then \(us=s^2n^\theta>n^{2d}\) and \(B(n)\le(3n/2)^D\) give
+(K10) directly. In the remaining range use the leading-position
+order with weights \(0,\theta\) and ties favoring the first
+coordinate, as in the fixed-prescription argument.
+
+For each of the two leading positions, choose a vector in the
+polynomial congruence module with the smallest possible leading
+monomial at that position. Its degree there is at most \(d\),
+since the corresponding coordinate vector times \(P\) belongs to
+the module. The degree in the other coordinate is at most \(3d\).
+The two vectors form a basis over \(\mathbb Q[T]\). Cancel the
+leading monomial of any module vector by a monomial multiple of
+the basis vector in the same position and iterate. These are
+elementary shifted polynomial basis arguments of the type used
+for modular polynomial equations.
+[Neiger, Problems 1 and 2](https://arxiv.org/abs/1602.00710).
+
+The basis vectors \(b_1,b_2\) can be chosen in \(\mathbb Z[T]^2\)
+with coefficients of absolute value at most
+\(A=(16(1+H))^{12d^2}\). To see this, set the leading coefficient
+at each selected position to one and use the remaining allowed
+coefficients as unknowns. The congruences give \(d\) linear
+equations from their remainders, together with the leading
+coefficient equation. Their integer entries have absolute value
+at most \((16(1+H))^{4d}\). For a monic modulus of degree \(q\ge1\),
+the quotient of \(T^k\), \(k\le3d\), is the polynomial part of
+\(T^{k-q}\prod_{j=1}^q(1-\alpha_j/T)^{-1}\). Its coefficients are
+bounded by \(2^{4d}(1+H)^{3d}\), using the expansion in the roots.
+The modulus has coefficient sum at most \((1+H)^q\). Subtraction
+then bounds each remainder coefficient, with the linear form
+coefficients contributing at most a factor two. A nonsingular
+minor of rank at most \(d+1\), Cramer's rule and denominator
+clearing give the stated \(A\). Scaling a column by a nonzero
+integer does not change its leading monomial or its status as
+a basis over \(\mathbb Q[T]\).
+
+Write \(w_j\) for the weighted leading degree of \(b_j\). The
+determinant is \(cP(T)\) for some nonzero integer \(c\) by the
+polynomial Chinese remainder theorem. Distinct leading positions
+give \(w_1+w_2=d+\theta\). The basis columns satisfy the integral
+congruences after evaluation, since division by a monic polynomial
+preserves integral quotients. Their span has index \(|c|\) in the
+evaluated congruence lattice. The latter has determinant \(P(n)\)
+because its four moduli are coprime as divisors of the four
+pairwise coprime linear values.
+
+### The Wronskian bounds every admissible short point
+
+In the norm \(\|(x,y)\|_\theta=\max(|x|,n^\theta|y|)\), each
+evaluated column has norm at most \(2A n^{w_j}\). Also
+\(P(n)\ge(n/2)^d\) and \(\|(u,s)\|_\theta=u\). In the expansion
+\((u,s)=\lambda_1 b_1(n)+\lambda_2 b_2(n)\), the coefficients belong
+to \(c^{-1}\mathbb Z\). Cramer's rule gives, for every nonzero
+\(\lambda_j\),
+\[
+ \frac1{|c|}\le |\lambda_j|
+ \le \frac{2^{d+2} A u}{|c| n^{w_j}}.
+\]
+Thus a nonzero coefficient at a weight \(w_j\) forces
+\(u\ge n^{w_j}/(2^{d+2}A)\).
+
+If both coefficients are nonzero, choose the larger weight.
+It satisfies \(2w_j-\theta\ge d\ge D+1\). If only one coefficient
+is nonzero, write its column as \((U,V)\). For a nonzero
+Wronskian \(UV'-U'V\), each factor of \(P_i\) of multiplicity
+\(m\) occurs in that Wronskian to order at least \(m-1\).
+Indeed complete \(L_i(U,V)\) by an independent form in \(U,V\)
+and differentiate. The two Wronskians differ by a nonzero scalar.
+The four polynomial moduli are coprime, so \(B\) divides the
+Wronskian and \(D\le\deg U+\deg V-1\le 2w_j-\theta-1\).
+If the Wronskian vanishes, the column has constant direction.
+Every form on it is a nonzero constant multiple of \(V\),
+because its evaluation gives an admissible pair. Thus all \(P_i\)
+divide \(V\), and \(w_j\ge d+\theta\) again suffices.
+
+In all cases, \(us=u^2/n^\theta\ge n^{D+1}/(2^{2d+4}A^2)\).
+Combining this with \(B(n)\le(3n/2)^D\) proves (K10).
+The radical form follows from \(P=BQ\) and
+\(\operatorname{rad}Q(n)\mid\operatorname{rad}P(n)\).
+
+### Nearby prime bases with growing valuation orders
+
+For each form, suppose a product \(G_i\) of powers \(q^k\),
+\(k\ge1\), divides its repeated part \(E_i\). Assume the bases
+are distinct primes or pairwise coprime squarefree integers
+\(q=n+a\) with \(|a|\le H\). Replace a selected power \(q^k\) by
+the polynomial \((T+a)^{k+1}\) in the corresponding \(P_i\).
+The evaluated product divides \(L_i\), since
+\(G_i\operatorname{rad}G_i\mid L_i\). In (K10) the value \(B(n)\)
+is exactly \(\prod_i G_i\). The total polynomial degree is at most
+twice the sum of the selected excess exponents \(k\).
+
+In an unbounded sequence with \(n\to\infty\), if
+\(d\log(2+H)=o(\log n)\), then
+\[
+                       \prod_i G_i \le \frac{us}{n}\,u^{o(1)} .
+\]
+Indeed one modulus has degree at least \(d/4\), so
+\(u\ge (n/2)^{d/4}/2\). The logarithm of the degree and root
+loss in (K10) is therefore \(o(\log u)\). This regime includes
+fixed offsets with unbounded total excess order \(o(\log n)\).
+At any fixed strict deficit \(R(u,v)<u^{2-\delta}\), the ratio
+\(E/\prod_i G_i\) must then be at least \(n u^{\delta-o(1)}\).
+The possible excess at other primes or in higher valuations
+remains a pointwise obligation.
+
+## Fixed valuation orders and the short factor
+
+Fix positive integers \(A_i,k_i\) on the four forms and consider
+admissible pairs with \(L_i(u,v)=A_i x_i^{k_i}\), \(x_i\ge1\). Put
+\[
+ \sigma=\sum_i\frac1{k_i},\qquad
+ J=\prod_i\frac{x_i}{\operatorname{rad}(x_i)},\qquad
+ s=\min(v,u-v)=L_j(u,v).
+\]
+The same results apply with fixed \(k_i\) and all valuations of
+\(L_i\) divisible by \(k_i\) outside a fixed finite set of primes.
+The \(k_i\)-power-free coefficients then range over finitely many
+choices. There is no restriction on where primes in the \(x_i\)
+lie or how far apart they are.
+
+* If \(\sigma<2\), there are only finitely many admissible pairs.
+* In all other cases,
+  \[
+             R(u,v)J\gg_{(A_i),(k_i),\varepsilon} u^{2-\varepsilon}
+             \qquad(\varepsilon>0),                         \tag{K11}
+  \]
+  with one residual case. This is the case of exactly two
+  distinct orders greater than one, both on long forms, with
+  \(k_j=1\) on the short form.
+
+When at least three orders exceed one, or exactly two do and
+they are equal, (K11) holds with \(J\) replaced by \(J_{\overline S}\),
+the part of \(J\) outside any fixed prime set \(S\). The same
+strengthening holds when all orders are one.
+
+Consequently a strict radical deficit in the covered profiles
+requires a power-sized repeated part in the roots \(x_i\). In
+particular, (K11) gives full finiteness at every fixed strict
+threshold on these profiles if \(J\le u^{o(1)}\). In the strengthened
+cases it suffices for each prime valuation outside \(S\) to be
+either zero or the order of its letter. Valuations at the fixed
+primes can be arbitrary.
+
+### The fixed cover and the real proximity estimate
+
+Write \(t=v/u\). The four marked points on \(\mathbb P^1\) are
+\(\infty,0,1,-1\). Give the corresponding points orders \(k_i\),
+omitting the order-one points from the ramification data. If
+at least three orders exceed one, or if exactly two do and they
+are equal, the resulting orbifold has a finite cover by a smooth
+projective curve. In complex terms it is a quotient of a Riemann
+surface by a finite group, with local orders exactly \(k_i\).
+Riemann existence and descent give a cover
+\(\pi:C\to\mathbb P^1\) over a number field, ramified only as
+prescribed. For degree \(d=\deg\pi\), Riemann–Hurwitz gives
+\[
+                       2-2g(C)=d(\sigma-2).
+\]
+[Behrend and Noohi, Proposition 5.7](https://webspace.maths.qmul.ac.uk/b.noohi/papers/Uniformization.pdf)
+· [Darmon and Granville, §3.1](https://www.math.mcgill.ca/darmon/pub/Articles/Research/12.Granville/pub12.pdf).
+
+All admissible \(t\) in this fixed profile lift to \(C(K)\) for
+one fixed number field \(K\). For the descent, take the root stack
+on the marked projective line, so the cover is finite étale over
+this stack. Outside a fixed finite set of primes the marked
+sections are disjoint and the cover and its finite étale property
+spread out. Enlarge this set by the primes dividing the \(A_i\).
+The point \([v:u]\) has intersection order \(v_p(L_i(u,v))\)
+with the corresponding section, by primitivity. These divisors
+are divisible by their orders, so their quotient divisors give
+the required root line bundles with sections on the base ring.
+After base extension the intersection orders remain divisible.
+Pulling back the cover gives a finite étale scheme of degree \(d\)
+over the ring of integers with the fixed primes inverted. Its
+field factors have bounded degree and ramification in that fixed
+set. Hermite–Minkowski gives one finite extension containing all
+the lifts. This is the specialization argument in the
+Darmon–Granville method.
+[Darmon and Granville, Proposition 3.2 and proof of Theorem 2](https://www.math.mcgill.ca/darmon/pub/Articles/Research/12.Granville/pub12.pdf).
+
+For \(\sigma<2\), there are at least three nontrivial orders and
+\(C\) has genus greater than one. Faltings gives finiteness of
+the lifts, and \(t\) determines the primitive pair.
+[Faltings, Satz 7](https://doi.org/10.1007/BF01388432).
+
+For the other genera, the primitive height of \(t\) is \(u\).
+At each archimedean place, a lift of \(t\) close to the short
+mark approaches some preimage with order \(k_j\). At a place
+above a prime \(p\in S\), use the mark whose form is divisible
+by \(p\), if there is one. Coprimality ensures uniqueness.
+Near each preimage, the morphism to that mark has local order
+\(k_i\), including order one at an unramified mark. Thus the
+weighted sum of local logarithmic proximities is
+\[
+ \frac{\log(u/s)}{k_j}+
+     \sum_{p\in S}\sum_i\frac{v_p(L_i)}{k_i}\log p+O(1).
+\]
+The weights are the local degrees divided by \([K:\mathbb Q]\)
+and sum to one above each place of \(\mathbb Q\). The indicated
+proximities differ by bounded constants from the local expressions
+also at the finitely many bad primes, by the local form of a
+map of curves and compactness. There are finitely many choices
+of target preimages. The identity cover gives the same argument
+when all orders are one.
+
+When \(g(C)=0\), enlarge \(K\) once to obtain a parameter on
+\(C\). Its logarithmic height is \((\log u)/d+O(1)\). Apply the
+number-field Roth bound with the chosen target at each of the
+fixed places. In the dimension-one Subspace Theorem, take
+one linear form vanishing at the target and one that is a unit
+in its local projective chart. This gives the upper bound
+\((2+\eta)\log u/d+O_{\eta}(1)\) for the weighted sum. Taking
+all archimedean places preserves the coefficient \(2\) with
+absolute logarithmic heights. Here \(2/d=\sigma-2\).
+[Evertse and Ferretti, equation (1.1) and §1.4](https://arxiv.org/abs/math/0408381).
+
+When \(g(C)=1\), enlarge \(K\) once to give the curve an origin
+and to make the preimages rational over \(K\). The fixed-place
+approximation estimate on an elliptic curve gives upper bound
+\(\eta\log u+O_\eta(1)\) for that sum for every \(\eta>0\). To
+apply it at a preimage, translate that point to the origin.
+The local canonical height is the logarithmic proximity to the
+origin up to a bounded term. The global canonical height is
+\(O(1+h(t))\) by comparison of ample heights on the fixed curve.
+Apply the fixed-place height estimate to each translate, using
+that the local heights at the other fixed places are bounded
+below.
+Here \(\sigma=2\).
+[Gross and Silverman, Proposition 9](https://msp.org/pjm/1995/167-2/pjm-v167-n2-p05-s.pdf).
+
+Since the four letters are pairwise coprime,
+\(RJ\asymp_{(A_i)}\prod_i x_i\). On the other hand
+\(\prod_i x_i\asymp_{(A_i)}u^\sigma(s/u)^{1/k_j}\), as the
+three long forms are comparable to \(u\). Also
+\(\log(J/J_{\overline S})\le\sum_{p\in S,i}v_p(L_i)\log p/k_i\),
+so the proximity bounds give the strengthened (K11). If exactly
+one order exceeds one, or two
+orders do and the short form has one of them, the elementary
+bound \(\sigma-1/k_j\ge2\) already suffices.
+
+### Two unequal powers and an unpowered short form
+
+Suppose the two powered long forms have distinct orders
+\(k,\ell\ge2\), and the short form is unpowered. In the \((u,s)\)
+charts the long forms are \(u,u-s,u+s\) or \(u,u-s,2u-s\).
+The two powered forms therefore give a difference
+\(|A x^k-B y^\ell|\asymp s\), after multiplying one coefficient
+by two if necessary. The compared terms are \(\asymp u\) and
+have gcd at most two. In this case the exact radical accounting
+above gives
+\[
+                  RJ\asymp u^{1+1/k+1/\ell}s .               \tag{K12}
+\]
+Thus the remaining instance of (K11) is the generalized Hall
+lower exponent \(1-1/k-1/\ell\) for the gap between the selected
+powers. For \((k,\ell)=(2,3)\) this is the weak Hall exponent
+\(1/6\) in the height of the compared terms.
+[Laniewski and Müller, Weak Hall's conjecture, approximation gains, and continued fractions](https://arxiv.org/abs/2609.35252).
+
+Conversely, a family of coprime positive powers with fixed
+coefficients and unbounded maximum \(u\) would disprove abc if
+\(0<h=|A x^k-B y^\ell|<u^{1-1/k-1/\ell-\delta}\) for one
+fixed \(\delta>0\). For opposite parities, use the larger and
+smaller terms as \(u,v\). For two odd terms, use \(u\) and \(v=h\).
+Both constructions are admissible, with the smaller term
+appearing as \(v\) or \(u-v\) and with \(h\) as the short form
+for large \(u\). The radical is at most a fixed constant times
+\(u^{1+1/k+1/\ell}h\), which produces a strict four-factor
+deficit. This identifies a genuine different-powers route for
+the residual profile, alongside the remaining repeated parts
+inside roots and the profiles without fixed orders.

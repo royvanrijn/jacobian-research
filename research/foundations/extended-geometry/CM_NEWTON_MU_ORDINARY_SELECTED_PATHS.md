@@ -175,3 +175,23 @@ This family uses the fixed subleading cyclic-cover face
 and increasing dominant radial terms. The ordinary
 return or full ordinarity of the primitive factor is
 unnecessary for the selected moment. \(\square\)
+
+## Blache's generic ordinarity and prescribed covers
+
+Blache's Theorem 1.1 gives generic \(\mu\)-ordinarity on the
+fixed-monodromy Hurwitz space of tame abelian covers in characteristic
+\(p\). Theorem 4.5 gives the cyclic character-orbit Newton polygon
+and its Hasse-polynomial test for distinct branch points.
+[arXiv:2607.21033v1](https://arxiv.org/html/2607.21033v1)
+
+Check the monodromy tuple, character orbit and polygon conventions
+against the actual prescribed cover or subfamily. For the fixed
+quintic cover above, start with branch exponents \((2,2,2,4)\),
+including infinity, and the residue class \(p\equiv3\bmod5\).
+Choose an admissible branch chart before restricting the Hasse
+polynomial. Generic nonvanishing on the ambient Hurwitz space leaves
+nonvanishing on the prescribed subfamily or at its specified point
+to be proved. A prime-density application for a fixed
+characteristic-zero cover also needs a separate estimate on the
+reductions at varying primes. The fixed-cover proof above uses its
+own arithmetic input.

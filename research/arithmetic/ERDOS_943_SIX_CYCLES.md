@@ -89,6 +89,238 @@ Every even exponent is already covered by \(j=2\). For an odd exponent, \(U\ne V
 
 For fixed \(U,V\), the twelve ordered positive root labels have at most \(d_6(U)d_6(V)\ll_\varepsilon N^\varepsilon\) factorizations. Here \(d_6\) counts ordered factorizations into six positive factors, and \(U,V\ll T^6\). The nonzero-determinant equations (1) give at most one kernel-cycle lift for each label tuple. All interval, coprimality and squarefree-cube tests only discard tuples. Thus each fixed \(m\) contributes subpower many actual cycles, and summing over the at most \(2M\) nonzero quotients proves (3). This argument does not count the complementary non-power ratios.
 
+### Fixed reduced ratios and proper powers for every target
+
+**Theorem FixedReducedCycleRatio.** Let \(P,Q\) be fixed distinct positive
+coprime integers. There is an absolute \(\eta>0\) such that
+uniformly in the balanced graph and in \(P,Q\), there are at most
+\[
+                O_\varepsilon\!\left(N^\varepsilon
+                    \min\{T^{2-\eta},T^6/H\}\right),\qquad H=\max(P,Q),
+                                                                  \tag{4a}
+\]
+actual simple six-cycles with \(U/V=P/Q\). For every target \(N\) the
+nonsingular proper-power sector has \(O_\varepsilon(T^{2-\eta+\varepsilon})\)
+cycles. The nonsingular sector of reduced height \(H\le T^{5/2+\eta/4}\)
+has \(O_\varepsilon(T^{2-\eta/2+\varepsilon})\) cycles, with no
+power condition. The \(O_\varepsilon(T^{2-\eta+\varepsilon})\)
+bound also holds for all nonsingular ratios in any one prescribed
+positive rational squareclass, uniformly in that class.
+
+For \(U=hP,V=hQ\), the coprimality of the roots with \(N\) gives
+\(N\mid P^2-Q^2\). In particular \(H\ge\sqrt N\).
+Also \(P/Q\) is bounded above and below by absolute positive constants
+since \(T^6\le U,V<(2T)^6\), so \(PQ\gg N\).
+For the second bound in the minimum of (4a), there are
+\(O(T^6/H)\) choices of \(h\). Each product pair gives subpower many
+root factorizations, and (1) gives at most one lift per factorization.
+
+For the first bound, orient the six edges in cycle order, starting
+from a left vertex. The product of the roots at the initial vertices
+of the oriented edges is \(U\), and the product at their terminal
+vertices is \(V\). Allocate \(P\) as a product of six divisors of the
+initial roots, and \(Q\) as a product of six divisors of the terminal
+roots. Such an allocation exists prime by prime. There are
+\(O_\varepsilon(N^\varepsilon)\) ordered pairs of allocations since
+\(P,Q<(2T)^6\). Fix one. On edge \(i\) it imposes divisibilities
+\(f_i\mid a\) and \(g_i\mid c\) in the usual left/right notation.
+Set \(B_0=2T\) and \(v_i=\log_{B_0}(f_i g_i)\).
+Every nonempty allocation has \(0\le v_i\le2\), and
+\[
+                  \sum_i v_i=\log_{B_0}(PQ)
+                        \ge 5-O(1/\log B_0).                 \tag{4b}
+\]
+
+Consider one position with divisors \(f,g\) and \(v=\log_{B_0}(fg)\).
+For a fixed left kernel \(b\), the root \(a\) must be a multiple of
+\(f\) and satisfy \(b^3a^2\equiv N\bmod g^2\).
+A nonempty set of edges forces \((fg,N)=(f,g)=(b,g)=1\) by actual
+summand coprimality. Substituting \(a=f u\) therefore gives a unit
+square-root congruence for \(u\), with at most
+\(O_\varepsilon(N^\varepsilon)\) residue classes modulo \(g^2\).
+This includes \(g=1\), with one residue class. Each allowed \(a,b\)
+determines the other summand and hence \(c,d\) uniquely by the
+squarefree cube decomposition. The restricted degree at a fixed
+left kernel is at most
+\[
+                O_\varepsilon(N^\varepsilon(1+B_0/(fg^2))).
+\]
+At a fixed right kernel the corresponding bound uses \(gf^2\).
+Both are bounded by \(O_\varepsilon(N^\varepsilon B_0^{D(v)})\),
+where \(D(v)=(1-v)_+\). For an unrestricted choice of this edge,
+sum the smaller of the two degree bounds over its fixed-side kernels.
+That gives \(O_\varepsilon(N^\varepsilon B_0^{\max(1,2-3v/2)})\)
+since \(\max(f,g)\ge(fg)^{1/2}\).
+Alternatively, first choose the two roots in
+\(O(B_0^2/(fg))\) ways. Heath-Brown's Theorem 1.3 gives subpower
+many kernels for each root pair, with third variable \(1\).
+Thus the unrestricted edge count is
+\(O_\varepsilon(N^\varepsilon B_0^{E(v)})\), with
+\[
+           E(v)=\min\{2-v,\max(1,2-3v/2)\}.                    \tag{4c}
+\]
+
+Here are the cycle counts available for this fixed allocation.
+The exponent cost of a choice of two opposite edges is the sum of
+their \(E\) costs. Once these edges are fixed, the two undisclosed
+vertices are each found by one actual codegree bound.
+For any four-edge consecutive window, choose a seed edge in the
+window using its \(E\) cost. Grow the path from the seed using the
+three other \(D\) costs, then find its missing sixth vertex by
+the actual codegree bound. Finally, if three edges alternate around
+the cycle, we may seed two of them. A neighboring edge of the third
+can then be grown from a known vertex, after which the third
+alternating edge also grows from a known vertex. The final edge
+is a test between two already specified vertices. These counts
+hold with the same subpower loss by using a smaller epsilon per
+edge or codegree. All completions occur in the original graph and
+satisfy its selected-edge convention.
+
+Retain the directed bound when needed. In cycle order write
+\(x_i,y_i\) for the base-\(B_0\) logarithms of the prescribed
+divisors at the initial and terminal roots of edge \(i\).
+Then \(0\le x_i,y_i\le1\) and \(v_i=x_i+y_i\). Growing that edge
+from its initial vertex costs at most \((1-x_i-2y_i)_+\).
+Growing it in reverse costs at most \((1-y_i-2x_i)_+\).
+
+We show that some strategy costs strictly less than \(2\) whenever
+\(\sum_i v_i\ge5\). Call an edge high if \(v_i\ge1\).
+If no edge is high, a four-edge window has total at least \(10/3\)
+by averaging. It has a seed with \(v_i\ge2/3\) and \(E(v_i)\le1\).
+The other three degree costs sum to \(3-\sum_{\rm window}v_j+v_i\),
+so the total is at most \(5-10/3<2\).
+
+With just one high edge, use any four-edge window containing it.
+The two excluded values are both below \(1\), so the window sum
+exceeds \(3\). Seed the high edge at cost \(2-v_i\), then use
+\(1-v_j\) on the other three edges. The total is \(5\) minus the
+window sum, hence below \(2\).
+
+With two high edges, if an adjacent high and nonhigh pair sums to
+less than \(2\), exclude that pair. The complementary window again
+has just one high edge and sum exceeding \(3\).
+Assume all such adjacent pairs sum to at least \(2\).
+If the two high edges are opposite and at least one has value above
+\(1\), seeding both costs strictly below \(2\). If both have value
+\(1\), a nonhigh neighbor yields the adjacent pair already treated.
+
+If the high edges are adjacent, take the window with their two
+outer neighbors. If both neighbors are positive, a high seed and
+its neighbor have sum at least \(2\), plus the other positive
+neighbor. If just one outer neighbor is zero, use the high seed
+next to it, which has value \(2\), and the other positive neighbor.
+If both are zero, one of the other nonhigh edges is positive by the
+sum constraint. Extend the window toward it and again seed an edge
+of value \(2\). If the highs are at distance two, use the window
+with the middle edge and one of the two outer neighbors. If an
+outer neighbor is positive, the seed and middle edge sum to at
+least \(2\), plus the positive outer neighbor. If both outer
+neighbors are zero, both highs have value \(2\) and the middle
+edge is positive, since the remaining nonhigh edge has value
+less than \(1\). In all these windows the seed and the two nonhigh
+values sum to more than \(2\), and the other high edge costs zero
+to grow. Hence the cost is strictly below \(2\).
+
+If a four-edge window has three high edges, a high seed has
+\(E\le1\), two high edges cost zero to grow, and the fourth cost
+is at most \(1\). This is strict if a high seed has value above
+\(1\) or the fourth edge has positive value.
+There is a window containing any three high edges which do not
+alternate, because their largest cyclic gap has length at least
+three. With exactly three highs all of value \(1\), every
+nonhigh value is positive by the sum constraint.
+With at least four highs, any designated high edge can be
+included with two others in a four-edge window: only one
+alternating triple contains the designated edge. Thus any high
+value above \(1\) can be used as the seed. If all high values
+are \(1\) and there are exactly four, both nonhigh values are
+positive by the sum constraint. With five or six highs there is
+a window of high edges. This settles every nonalternating case.
+
+For exactly three alternating highs, let \(W\) be their sum
+and \(L_1\) the sum of the three low values, with minimum
+\(\ell_{\min}\). Each high edge lies in a four-edge window
+containing the two largest low values. If all these windows
+cost at least \(2\) with the undirected bounds, every high
+value \(w\) satisfies \(w+L_1-\ell_{\min}\le2\).
+Summing gives \(W+2L_1\le6\), since \(3\ell_{\min}\le L_1\).
+If high edge \(i\) is omitted from the two alternating seeds,
+let \(\ell_i^*\) be the larger of its neighboring low values.
+Seeding the other two highs and growing through that low edge
+followed by the omitted high costs at most
+\(5-(W-w_i+\ell_i^*)\).
+If all these costs are at least \(2\), we get \(2W+L_1\le9\)
+by summing, since \(\sum_i\ell_i^*\ge L_1\).
+With \(W+L_1\ge5\) these inequalities force \(W=4,L_1=1\).
+Equality in the seed inequalities forces the low values to be
+\(1/3\) and the high values \(4/3\). For any low edge at least
+one of \(x_i,y_i\) is positive. Choose the direction of growth
+whose degree bound saves this positive amount relative to
+\(D(v_i)=2/3\). Seed the high edge immediately before that low edge in the
+chosen direction and grow the four-edge window from it. Its undirected cost
+would equal \(2\), so the directed degree gives strictness.
+
+The minimum of these finitely many costs is continuous on the
+compact region in \([0,1]^{12}\) with total at least \(5\).
+The strict inequality everywhere implies a uniform positive
+saving below \(2\). Increase coordinates within \([0,1]\) by
+a total of \(O(1/\log B_0)\) until their total is at least \(5\)
+if the actual allocation has the deficit in (4b).
+The cost functions are Lipschitz, so the strategy chosen at
+the increased point costs only \(O(1/\log B_0)\) more on the
+original coordinates. This affects the count by a fixed
+constant. Sum over allocations and take the resulting
+\(\eta\) at most \(1/2\). This proves the first bound in (4a).
+
+To deduce the proper-power count, write \(P=R^j,Q=S^j\) with
+\(R,S\) positive coprime and \(j\ge2\). Since \(P\ne Q\), we need
+only \(j=O(\log N)\). The unit fraction \(R/S\) satisfies
+\((R/S)^{2j}=1\bmod N\). Fix a sufficiently large constant \(J\)
+depending on epsilon. For \(3\le j\le J\) there are at most
+\((4j)^{\omega(N)}\) unit classes by the prime-power unit groups.
+Each class contains at most one reduced fraction of height
+\((2T)^{6/j}\) for large \(T\), since the cross difference of two
+such fractions is smaller than \(N\). For \(j>J\), count all pairs
+\(R,S\) of height \((2T)^{6/j}\) trivially, obtaining
+\(O_\varepsilon(N^\varepsilon)\) possibilities across all these \(j\)
+by choosing \(J\) large enough. Thus (4a) bounds the nonsquare
+proper-power sector by \(O_\varepsilon(T^{2-\eta+\varepsilon})\).
+
+For the square case, prove the uniform result in a prescribed
+squareclass. Let \(K\) be its positive squarefree representative.
+For positive coprime \(P,Q\) in that class write \(P=A R^2\),
+\(Q=C S^2\) with \(A,C\) positive squarefree and \(AC=K\).
+If the class occurs, \(K\le PQ<(2T)^{12}\), so the number
+of factorizations \(AC=K\) is subpower. For each one,
+the unit \(R/S\) satisfies
+\[
+                     (R/S)^4\equiv (C/A)^2\pmod N .
+\]
+Split \(H\) into dyadic intervals \([L,2L)\).
+In each of the \(O_\varepsilon(N^\varepsilon)\) unit fourth-root
+classes modulo \(N\), there are \(O(1+L/N)\) reduced fractions
+\(R/S\) of height at most \(\sqrt{2L}\) by angular packing.
+Indeed two such vectors in one class have nonzero determinant
+divisible by \(N\), so their angles are separated by at least
+\(N/(4L)\). Each class lies in a quadrant of bounded angular
+length. Apply (4a) and use
+\[
+                 (1+L/N)\min(T^{2-\eta},T^6/L)
+                       \le T^{2-\eta}+T^6/N\ll T^{2-\eta}.
+\]
+The logarithmic number of dyadic intervals and the choices of
+\(A,C\) are absorbed in the subpower factor. Taking \(K=1\)
+settles the \(j=2\) case and hence the proper-power count on
+arbitrary moduli. The prime small-quotient result (3) is stronger
+on its sector.
+
+For the reduced-height sector, \(P/Q\) ranges over unit square roots
+of \(1\) modulo \(N\). At height at most \(T^{5/2+\eta/4}\), the same
+angular packing bounds their number by
+\(O_\varepsilon(N^\varepsilon(1+T^{5+\eta/2}/N))\).
+Multiply by the first bound of (4a) to get
+\(O_\varepsilon(T^{2-\eta/2+\varepsilon})\), as asserted.
+
 ### Kernel overlap
 
 **Proposition LowKernelLcmSector.** For every target \(N\), the number of actual simple cycles with
@@ -167,8 +399,8 @@ Orient a cycle from an edge attaining its minimum gcd. For each selected edge an
 - \(U\ne V\); or
 - \(U=V\) and \(g_*>T^{1/2}\).
 
-Then a uniform bound \(\#C_6(G)\ll_\varepsilon T^{2+\varepsilon}\) for all balanced targets is equivalent to the same uniform bound for \(\#\mathcal R_N(T)\). Both statements remain open. For odd prime targets the analogous equivalence holds after further requiring \(U/V\) to be a non-power rational number on the nonsingular part of \(\mathcal R_N(T)\).
+Then a uniform bound \(\#C_6(G)\ll_\varepsilon T^{2+\varepsilon}\) for all balanced targets is equivalent to the same uniform bound for \(\#\mathcal R_N(T)\). The equivalence still holds after excluding rational proper-power ratios and ratios of reduced height at most \(T^{5/2+\eta/4}\) on the nonsingular part of \(\mathcal R_N(T)\). The remaining bound is open.
 
-The forward directions hold because these are subsets of the actual cycles. Conversely, all cycles outside \(\mathcal R_N(T)\) lie either in a low-lcm sector or in the small-coherent-gcd singular sector. Each has just been bounded by \(O_\varepsilon(T^{2+\varepsilon})\); adjoining a bound for the residual sector gives the full bound. On odd prime targets the removed proper-power sector costs only \(O_\varepsilon(T^{1+\varepsilon})\) by (3), so the prime specialization has the same converse. These implications do not establish the remaining estimate or an improved representation exponent.
+The forward directions hold because these are subsets of the actual cycles. Conversely, all cycles outside \(\mathcal R_N(T)\) lie either in a low-lcm sector or in the small-coherent-gcd singular sector. Each has just been bounded by \(O_\varepsilon(T^{2+\varepsilon})\); adjoining a bound for the residual sector gives the full bound. FixedReducedCycleRatio bounds both further excluded nonsingular sectors for arbitrary \(N\). These implications do not establish the remaining estimate or an improved representation exponent.
 
 Large coherent \(g_*\) has not been shown to force small kernel lcm. The weighted estimate in (12) cannot be turned into an unweighted bound for large \(g_*\) without another input. A cubic completion theorem for fixed labels likewise does not count how often the nonsingular cube tests in (1) hold. The remaining arithmetic problem retains these exact constraints.

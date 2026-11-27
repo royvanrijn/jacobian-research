@@ -26,8 +26,9 @@ Apply the filter to
 [actual simultaneous polynomial subrectangular candidates](CENTERED_46_RECTANGLE_NEWTON_FACE_GATE.md)
 *after* constructing both full operators. A face calculation alone
 does not determine mass of the operator. The displayed order-(4,6)
-rectangle allows grades from `−4` through `8` for `P` and `−6`
-through `12` for `Q`, before coefficient constraints. Its surviving
+rectangle allows grades from `−3` through `7` for `P` and `−5`
+through `11` for `Q`, before the additional coefficient constraints.
+The Weyl-to-PBW conversion preserves each grade. Its surviving
 square/cube top faces can have only three and four grades, but the
 unfixed lower coefficients may occupy more than six. The existing
 rectangle therefore is not removed by the theorem. Its total-degree

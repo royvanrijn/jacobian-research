@@ -18,6 +18,184 @@ use simultaneous approximation to obtain ordinary occupancy of order
 at least \(\log q/\log\log q\) infinitely often. Their approximation
 conditions do not impose pairwise coprimality.
 
+## A larger lower bound from choosing the cancellation coefficients modulo primes
+
+**Theorem (Coprime occupancy with exponent one third).** For each integer
+\(m\ge2\), there is an interval \((q^2,(q+1)^2)\) containing at least
+\(\lceil m/2\rceil\) pairwise coprime nonsquare powerful integers, where
+\[
+ m\le q,\qquad \log q\ll m^3\log(m+1)
+\]
+with an absolute constant. In particular the coprime occupancy is
+\(\gg \bigl(\log q/\log\log q\bigr)^{1/3}\) along an unbounded
+sequence of \(q\).
+
+In the construction below, small primes are handled by scaling the shifts.
+For the intermediate primes, extra coefficients in the cancellation
+polynomial allow all the values to be units at a prescribed argument.
+This reduces the size of the shifts, which determines how far out the
+square-root approximations become accurate.
+
+Let \(n=2m+1\), \(d=2m(n+1)\), \(C=8(m+1)\), and put
+\[
+ A=4^{2n+1}(2n+3)!,\qquad M=A\prod_{p\le C}p.
+\]
+Use \(m\) shifts \(d_i=M t_i\), where the \(t_i\) will be primes
+larger than \(2d\) and of size \(m^{O(1)}\). Let
+\[
+ \begin{split}
+ S(T)&=T^{m+1}+\sum_{\ell=0}^m s_\ell T^\ell,\qquad
+ R(T)=T\prod_i(T-d_i)S(T)=\sum_{k=0}^n r_{k+1}T^{k+1},\\
+ P(Z)&=\sum_{k=0}^n p_k Z^k,\qquad
+ p_k=c_{n+1}r_{k+1}/c_{k+1},\qquad c_j=\binom{-3/2}{j},\\
+ L_i(Z)&=\sum_{k=0}^n p_k\sum_{j=0}^k c_j d_i^j Z^{k-j},
+ \qquad F_i(Z)=(Z+d_i)L_i(Z).
+ \end{split}                                                     \tag{942.1}
+\]
+The three polynomials in \(Z\) are monic. Since \(R(d_i)=0\),
+the same Laurent coefficient calculation as in the construction below
+shows that the \(Z^{-1}\) term of \(P(Z)(1+d_i/Z)^{-3/2}\) vanishes.
+Take all \(s_\ell\equiv0\bmod M\). Then all coefficients of \(R\)
+below the leading one are multiples of \(M\). The denominators of the
+rational factors \(c_{n+1}c_j/c_{k+1}\) in (942.1) divide \(A\),
+by the binomial formula for \(c_j\). Each nonleading term in a
+coefficient of \(P\) or \(L_i\) has a factor \(r_{k+1}\) with \(k<n\)
+or a positive power of \(d_i\). The polynomials are therefore integral
+and all their nonleading coefficients are divisible by \(M/A\).
+This holds also for \(F_i\). Thus \(B\equiv1\bmod p\) keeps all
+\(F_i(B^2)\) nonzero modulo every \(p\le C\).
+
+### Choosing the shifts and the intermediate prime conditions
+
+First work with \(S(T)=T^{m+1}\). For each pair \(i\ne j\) the
+resultant of \(F_i,F_j\) is a nonzero polynomial in the shifts.
+Indeed, specialize only \(d_i=a\ne0\) and set the other shifts to zero.
+With \(\lambda=c_{n+1}/c_n\), this gives
+\(P(Z)=Z^{n-1}(Z-\lambda a)\) and \(F_j(Z)=Z^n(Z-\lambda a)\).
+The polynomial part formula gives
+\[
+ L_i(0)=a^n(c_n-\lambda c_{n-1}),\qquad
+ L_i(\lambda a)=c_n a^n .
+\]
+Both values are nonzero since \(c_j/c_{j-1}\) varies with \(j\).
+Also \(Z+a\) is nonzero at both arguments since \(\lambda\ne-1\).
+The product of the pairwise resultants has total degree \(O(m^4)\)
+in the shifts, using a Sylvester matrix of size \(2(n+1)\) and the
+bound \(n+1\) on each coefficient degree. Substituting \(d_i=M t_i\)
+preserves nonvanishing as a polynomial in the \(t_i\).
+The grid lemma below therefore allows a choice of the \(t_i\)
+among any \(O(m^4)\) distinct primes above \(2d\), with the implicit
+constant chosen larger than the degree bound. There are sufficiently
+many such primes of size \(m^{O(1)}\). Indeed
+\(\binom{2u}{u}\ge4^u/(2u+1)\), and the exponent of each prime \(p\)
+in this binomial coefficient is at most \(\lfloor\log_p(2u)\rfloor\):
+each power \(p^j\le2u\) contributes zero or one by the factorial
+valuation formula. Comparing logarithms gives
+\(\pi(2u)\gg u/\log(2u)\). Choose \(u\) a sufficiently large
+fixed power of \(m\) times an absolute constant. Fix the resulting
+vector of shifts, for which the pairwise resultants are nonzero at
+\(s_0=\cdots=s_m=0\).
+
+Fix now a prime \(C<p\le2d\). The \(d_i\) and the \(c_j\),
+\(0\le j\le n+1\), are units modulo \(p\). We will take
+\(B\equiv0\bmod p\), so it suffices to make each \(L_i(0)\) nonzero.
+Write
+\[
+ T\prod_j(T-d_j)=\sum_{k=0}^m a_k T^{k+1},\qquad a_m=1 .
+\]
+For \(0\le\ell\le m\), the coefficient of \(s_\ell\) in \(L_i(0)\)
+is
+\[
+ c_{n+1}d_i^\ell
+ \sum_{k=0}^m a_k d_i^k\frac{c_{k+\ell}}{c_{k+\ell+1}}
+ =
+ c_{n+1}d_i^\ell
+ \sum_{k=0}^m\frac{a_k d_i^k}{2(k+\ell)+3}.                 \tag{942.2}
+\]
+The constant \(-1\) in the quotient
+\(c_j/c_{j+1}=-1+1/(2j+3)\) disappears because
+\(\sum_k a_k d_i^k=0\).
+If all \(m+1\) coefficients (942.2) vanished, the rational function
+\[
+ X\longmapsto\sum_{k=0}^m\frac{a_k d_i^k}{X+2k+3}
+\]
+would vanish at \(X=0,2,\ldots,2m\) in \(\mathbb F_p\).
+None of these points is a pole because \(p>C\). Its numerator over
+the common denominator has degree at most \(m\), so it would be the
+zero polynomial. The poles \(-2k-3\) are distinct, and the numerator
+evaluated at \(-2m-3\) is \(d_i^m\prod_{k<m}(2k-2m)\ne0\).
+This contradiction shows that \(L_i(0)=0\) excludes an affine
+hyperplane of coefficient vectors modulo \(p\). The \(m\) hyperplanes
+together have at most \(m p^m<p^{m+1}\) points. Choose a vector
+outside their union for each intermediate prime.
+
+The prescribed residues of \(\mathbf s\), including \(0\bmod M\),
+give a Cartesian grid of progressions with common step
+\(K=M\prod_{C<p\le2d}p\), with \(\log K=O(m^2)\) by the
+primorial bound below. For our fixed shifts the resultant product is
+a nonzero polynomial in \(\mathbf s\), as seen at the zero vector.
+Its total degree is \(O(m^3)\) since the coefficients of each
+\(F_i\) are affine in \(\mathbf s\). Take the first sufficiently many
+nonnegative integers in each progression and apply the grid lemma
+again. We obtain \(\log(2+\max_\ell|s_\ell|)=O(m^2)\), preserving all
+intermediate prime conditions and all nonzero resultants.
+
+### Choosing the square interval
+
+The chosen shifts satisfy \(\log(2+\max_i d_i)=O(m\log(m+1))\).
+It follows from (942.1) that the logarithms of all coefficient
+heights of \(P,L_i,F_i\) are \(O(m^2\log(m+1))\). To see this,
+the product \(T\prod_i(T-d_i)\) has coefficient sum bounded by
+\(\prod_i(1+d_i)\), its product with \(S\) costs at most the
+coefficient sum of \(S\), and the polynomial part formula uses
+at most \(O(m^2)\) terms with one power \(d_i^j\), \(j\le n\).
+The bounds \(1\le|c_j|\le2j+1\) control the other factors.
+
+Let \(R_1\) be the product of the absolute values of the pairwise
+resultants of the chosen integral \(F_i\). The Sylvester determinants
+give \(\log(2R_1)=O(m^5\log(m+1))\). Enforce the chosen residues
+\(B\equiv1\bmod p\) for \(p\le C\) and \(B\equiv0\bmod p\) for
+\(C<p\le2d\). Their common step is \(\prod_{p\le2d}p\), of logarithm
+\(O(m^2)\). A prime \(p>2d\) outside \(R_1\) cannot divide two
+different \(F_i(B^2)\). For the remaining primes \(p>2d\) dividing
+\(R_1\), exclude the roots of the monic polynomial
+\(\prod_i F_i(B^2)\) of degree \(d\). There are at most \(d\)
+forbidden residues per prime. The progression estimate below
+uses only the step, the bound \(d\) on the number of excluded classes,
+and \(J=1+\lceil\log_2 R_1\rceil\) as an upper bound for the number
+of primes. In particular it works for the present prescribed residue
+just as for \(B\equiv1\) on the small primes. In its notation \(Y=100(d+1)J=m^{O(1)}\), and only primes
+\(2d<p\le Y\) contribute to the small-prime sum \(S\).
+The primorial bound gives \(\pi(x)\ll x/\log x\) by counting primes
+above \(\sqrt x\) with weight at least \((\log x)/2\).
+Partial summation therefore gives
+\(\sum_{2d<p\le Y}1/p=O(1)\) because \(\log Y/\log(2d)=O(1)\).
+Thus \(S=O(d)\), and the error factor in the progression estimate
+has \(\log E=O(d\log(m+1))\). With this bound the estimate supplies
+an admissible \(B\) within \(\exp(O(m^2\log(m+1)))\) beyond any
+positive threshold.
+
+Use the Laurent remainder estimate below with degree \(n\), shift bound
+\(D=\max_i d_i\) and coefficient bound \(H\) for \(P,L_i\).
+A threshold \(B\) greater than a sufficiently large constant times
+\((n+2)^2 H D^{n+2}\) ensures the common square-root error is less than
+one, and its logarithm is \(O(m^2\log(m+1))\).
+It also ensures that every \(B^2+d_i\) is strictly between \(B^2\)
+and \((B+1)^2\) and that all polynomial values in (942.1) are
+positive. We can therefore choose \(B\) with
+\(\log B=O(m^2\log(m+1))\).
+
+The integers \((B^2+d_i)^3 L_i(B^2)^2\) are pairwise coprime
+since their prime supports are those of the \(F_i(B^2)\). They
+are powerful and nonsquare, and their square roots differ from
+the common integer \(Q=B^3P(B^2)\) by less than one.
+At least half lie in one of the two open intervals of length one
+with endpoint \(Q\). In either case its lower endpoint \(q\) is
+at least \(m\) by the choice of threshold, and
+\(\log q=O(n\log B+\log H)=O(m^3\log(m+1))\).
+This proves the theorem. It gives a lower bound for coprime occupancy;
+the logarithmic uniform upper bound in Erdős #942 remains open.
+
 ## Growing coprime multiplicity
 
 **Theorem (Growing coprime occupancy).**

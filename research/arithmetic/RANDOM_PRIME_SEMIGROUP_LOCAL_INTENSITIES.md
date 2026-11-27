@@ -405,6 +405,62 @@ to these prime supports. These source comparisons are targeted readings;
 their full builds and the proposed arithmetic transfers have not been
 replayed or proved here.
 
+### Clipped one- and two-root test
+
+In Long's *Mesoscopic Switching*, `prop:truncated-intensity` derives
+a clipped \(L^2\) estimate by comparing one uniform root and two
+uniform roots with the independent endpoint model.
+`thm:intensity-L1` then removes the clip with a selected-endpoint
+tail bound. *Independence Peeling*, `lem:finite-intensity`, makes
+the trade-off quantitative. Its bound before optimizing the cutoff
+\(T\) is \(C(T\sqrt u+T^{1-p})\), where \(u=\mathcal B_n+n^{-1}\)
+contains the finite endpoint comparison error and \(p>1\) is the
+available moment exponent. The rate after choosing \(T=u^{-1/(2p)}\)
+is \(O(u^{(p-1)/(2p)})\) in that model.
+[Mesoscopic Switching](https://github.com/long-mathematics/luce-tsetlin-permutations/blob/24be08fabda1ceb6c8d27ac70afe611644c7ec63/papers/mesoscopic-switching/mesoscopic-luce-cycles.tex)
+· [Independence Peeling](https://github.com/long-mathematics/luce-tsetlin-permutations/blob/24be08fabda1ceb6c8d27ac70afe611644c7ec63/papers/independence-peeling/luce_independence_peeling.tex)
+
+For the finite arithmetic test take \(k=2\), \(\gamma=1/2\), the
+cutoff \(Y\) and grids of (6), and \(f(s)=1-e^{-s}\). Set
+\(Z_n=f(\min(\mu_n,T))\) and
+\(A_{X,T}=X^{-1}\sum_{n\le X} Z_n\), with integer \(X\). Choose an
+\(\mathcal F_Y\)-measurable target \(m_{Y,T}\) from a finite-exposure
+version of the Haar law and check its approximation to
+\(\mathbb E_U f(\min(BS(U),T))\) as \(Y\) increases. For
+independent uniform roots \(N_1,N_2\in\{1,\ldots,X\}\), put
+\[
+\begin{split}
+ e_1 &= \mathbb E\left|
+ \mathbb E[Z_{N_1}\mid\mathcal F_Y]-m_{Y,T}\right|,\\
+ e_2 &= \mathbb E\left|
+ \mathbb E[Z_{N_1}Z_{N_2}\mid\mathcal F_Y]-m_{Y,T}^2\right|.
+\end{split}
+\]
+The two conditional moments are \(A_{X,T}\) and \(A_{X,T}^2\),
+so expanding the squared difference gives
+\(\mathbb E|A_{X,T}-m_{Y,T}|^2\le e_2+2e_1\).
+Using distinct roots instead incurs \(O(1/X)\) for this bounded test.
+Compare both roots with Haar samples sharing the exposed labels.
+Bound the arithmetic contribution of reused primes in the moment
+expansion, keeping the unexposed selectors independent between
+copies. Same-completion support overlap in the first part of (6)
+is a separate estimate.
+
+For quantitative tail removal, bound the empirical and Haar
+positive-part tails at \(T\). For this \(1\)-Lipschitz test those
+tails bound the cost of removing clipping. An arithmetic bound
+\(e_2+2e_1\ll T^2 u_X\) and a tail bound \(O(T^{1-p})\) would give
+the same cutoff optimization, with any finite-exposure target error
+added separately. The quantities and rates still need arithmetic
+proof. For the full route, extend the clipped estimates to a
+countable convergence-determining class of bounded Lipschitz tests.
+Prove almost-sure clipped convergence at countably many \(T\)
+(for example by summable error probabilities on each grid) and
+almost-sure vanishing clipping errors as \(T\to\infty\) along the
+same grids. Then the triangle inequality for each test gives weak
+convergence to the realized Haar law \(BS(U)\). The finite \(k=2\)
+test, even if successful, leaves this full grid conclusion open.
+
 The new unconditional claims use the retained counting, residue and
 forced-prime moment results. Ma–Tang's finite-field threshold is
 provenance for the comparison of dependence mechanisms. The statements

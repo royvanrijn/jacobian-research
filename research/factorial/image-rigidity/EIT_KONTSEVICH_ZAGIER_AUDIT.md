@@ -313,11 +313,35 @@ characteristic-five matrix argument to the remaining valuation regime;
 another seeks a resultant invariant of the recurrence. A longer finite
 scan cannot settle the universal statement.
 
-Universal coprimality would remove the exceptional scale set for this
-degree-four elliptic factorial family only after the relevant EIT V
-period-comparison input is audited. It would not close an SFC finite
-window. A common coordinate zero would invalidate this certificate,
-not prove the associated period vanishes. Reuse the existing block-radial
-limit argument here; the separate strict-extremum audit above remains
-the more direct integration task. No full EIT VI Lean build, universal
-gcd proof, or counterexample is claimed.
+A common coordinate zero would invalidate this certificate. The
+associated period could still be nonzero.
+
+## Elliptic continued-density comparison and period consequence
+
+For the phase \(q=Y^2-X^3+3X\) on the fixed triangle
+\(T=\operatorname{conv}\{(-1/2,-1),(1/2,0),(-1/2,1)\}\), audit the
+\((S^*)\) branch of EIT V's linear single-chain comparison.
+In V, `lem:elliptic-continuation` continues the actual coarea density
+germ from near \(0\), through the meeting of the boundary endpoints at
+\(11/8\), to the node at \(2\). Check the orientation, logarithmic
+coefficient and resulting nonzero Gelfand–Leray monodromy variation.
+Trace the weighted-phase and Morse hypotheses, the irreducible
+interior module, the fixed boundary span containing \(1\), and the
+ordinary-point specialization used in `thm:linear`. The target is
+linear comparison at each nonzero algebraic scale on this triangle.
+The saddle is outside the triangle, so the odd-family strict-extremum
+argument is inapplicable. [Pinned EIT V, the elliptic triangle and the continuation alternative](https://github.com/long-mathematics/exponential-integral-theorem/blob/92db79eedeb064694ff20e9201d73fc2bc0857f4/papers/05-polynomial-flags/polynomial-flag-exponential-periods.tex)
+
+To obtain the all-scale period consequence, use VI's
+`prop:recurrence`, which identifies \(W_k(t)=4^k(a_k(3t),b_k(3t))\)
+for its two twisted-remainder coordinates. A constant gcd forces this
+pair to be nonzero at \(t=1/(3\xi)\) for every nonzero algebraic \(\xi\).
+VI's `eq:elliptic-remainder` writes \(J_k(\xi)\) as this nonzero linear
+combination of the two basis periods, with coefficients rescaled by
+\(4^{-k}\), plus a term in the fixed boundary span. Linear comparison
+therefore makes \(J_k(\xi)\) transcendental. The block-radial limit in
+`thm:elliptic-family` then gives eventual factorial nonvanishing
+for its stated family, at every nonzero algebraic scale once both
+premises are established. The algebraic gcd problem is independent of
+the comparison. A finite SFC window requires separate estimates.
+[Pinned EIT VI](sources/long-eit-vi-current.tex)

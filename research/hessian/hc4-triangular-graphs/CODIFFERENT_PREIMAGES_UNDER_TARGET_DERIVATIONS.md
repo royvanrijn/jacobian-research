@@ -285,3 +285,63 @@ full codifferent multiplication, T3 trace perfection, HC4 or JC2.
 Replay:
 
     .venv/bin/python research/hessian/hc4-triangular-graphs/verify_codifferent_derivation_preimages.py
+
+## 8. One source-finite velocity detects every omitted image
+
+**Corollary SourceFiniteOneVelocityFullBoundaryTrace.**
+Let \(B\subset R=\mathbb C[x,y]\) be an actual plane Keller inclusion
+in a source-finite polynomial frame, so \(R\) is finite over \(B[y]\).
+Use any polynomial target coordinate pair \(P^*,Q^*\) of \(B\).
+At every omitted prime \(E\) of the full finite normalization one has
+\(q_E=-v_E(y)>0\). For each distinct image \(\Gamma\) of an omitted
+prime, let \(H_\Gamma\) be its reduced target equation and put
+\[
+ n_\Gamma=\max_{E\to\Gamma}\left(\left\lfloor q_E/e_E\right\rfloor+1\right).
+\]
+For any finite \(B\)-generating list \(s_1,\ldots,s_m\) of the
+full normalization, the traces
+\(\operatorname{Tr}(s_i P_x^*)\) have common denominator ideal
+\(\prod_\Gamma H_\Gamma^{n_\Gamma}B\). A single constant-linear
+combination of the markers can attain the maximal pole order
+\(n_\Gamma\) simultaneously along every such curve.
+
+If \(v_E(y)\ge0\), then \(B[y]\) lies in the source valuation ring
+of \(E\). By source finiteness and integral closedness that ring
+contains \(x\) as well. Thus \(x,y\) give a map of its valuation
+spectrum to the original source plane. Composing with the source
+open immersion into the full finite normalization agrees with
+the original valuation map on the generic point. Separatedness
+makes the maps agree on the closed point, contradicting that
+\(E\) is omitted. Therefore \(q_E>0\) at every omitted prime.
+
+An omitted image is a component of the nonproperness curve of
+the actual map. Apply
+[Chau's no-line component theorem](../../jacobian/affine-complements/sources/global-boundary-topology/chau-2003-two-remarks.pdf)
+after the polynomial target change to \(P^*,Q^*\).
+Every omitted image projects nonconstantly to the \(P^*\)-line,
+since a vertical irreducible curve would be that affine line.
+Its equation therefore has positive \(Q^*\)-degree, and its
+\(Q^*\)-derivative is nonzero modulo the equation by the strict
+degree drop in characteristic zero. This proves transversality
+of \(D_{Q^*}\) at every omitted image for the selected frame.
+The exact relation is \(P_x^*=J^*D_{Q^*}(y)\), with \(J^*\ne0\)
+constant. The clearing calculation of Section 4 now gives the
+asserted ideal, supported on the entire nonproperness curve,
+including wholly unramified omissions.
+
+At each \(\Gamma\), at least one trace in the generating list
+has pole order \(n_\Gamma\), because otherwise its factor in the
+common denominator could be lowered. The coefficient of pole
+order \(n_\Gamma\) depends \(\mathbb C\)-linearly on the marker
+coefficients and is a nonzero linear map to the residue field
+of \(\Gamma\). Avoiding its kernel for the finitely many curves
+gives one marker with all the asserted orders. Concretely, if
+there are \(b\) distinct omitted images, among any
+\(1+b(m-1)\) distinct integer choices for \(c\) some marker
+\(\sum_{i=1}^m c^{i-1}s_i\) works. At each curve its residue
+polynomial is nonzero of degree at most \(m-1\).
+
+This determines the affected traces throughout the actual full
+normalization. Eliminating the omitted primes, or proving that
+the marked poles cannot arise for an actual Keller map, remains
+open.

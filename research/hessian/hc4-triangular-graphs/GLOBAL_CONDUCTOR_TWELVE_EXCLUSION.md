@@ -98,6 +98,7 @@ This exhausts the degree-twelve characteristic sequences.
 The exact checkers accompanying these arguments replay the finite
 coefficient, collision, and root-scale identities. The reduction to
 the six sequences and the passage through finite parameter places
-are written arguments. Conductor degree fourteen is the next global
-threshold. Automatic codifferent landing and the unrestricted plane
-Jacobian conjecture remain open.
+are written arguments. The
+[conductor-fourteen exclusion](GLOBAL_CONDUCTOR_FOURTEEN_EXCLUSION.md)
+raises the global bound to sixteen. Automatic codifferent landing
+and the unrestricted plane Jacobian conjecture remain open.
