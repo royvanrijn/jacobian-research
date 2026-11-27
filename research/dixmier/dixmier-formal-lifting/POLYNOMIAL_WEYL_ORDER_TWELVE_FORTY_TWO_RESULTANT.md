@@ -288,3 +288,7 @@ every root-count profile.
 The [second resultant and leading-field calculations](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_LEADING_FIELDS.md)
 give the order-\(99\) operator, its leading algebras on the high-root
 Newton faces, and its common small-root accessory term.
+
+The joint small-root and outer Euler transfer
+[excludes actual Weyl pairs with small roots](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_OUTER_FIBRES.md#exclusion-of-the-multiplicity-three-roots).
+The indicial analysis above supplies the local Euler input.

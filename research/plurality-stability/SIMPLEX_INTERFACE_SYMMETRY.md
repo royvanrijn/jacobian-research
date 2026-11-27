@@ -32,6 +32,15 @@ have not occurred.
 The common compressed-immanant formula (S67)--(S69) gives entrywise
 nonnegative matrix kernels in a fixed Young basis for every cell count
 and every symmetry block. It leaves the remaining spectral bounds explicit.
+The Hermite floor (S80) and Schur estimate (S81) also give explicit
+gaps in every sufficiently deep representation at each fixed correlation,
+including the complete two-column family $(2^r)$, $r\ge4$, for
+$0<\rho\le1/2$.
+The convex covariance proof (S82) gives the explicit first-moment
+interface gap $\ell/k$ without global first-moment optimality. It
+also supplies a uniform initial full gap $\ell/(2k)$ in (S83), on
+the explicit interval $0<\rho\le[6\sqrt3\,k(k-1)]^{-1}$ in
+every ambient dimension.
 
 ## The signed facet representation
 
@@ -171,7 +180,10 @@ sees only finite dimensional subspaces of their multiplicity spaces.
 **Exact rotation gauge.** The
 [first-moment interface theorem](SMALL_POSITIVE_CORRELATION_INTERVAL.md#extension-to-every-fixed-cell-count)
 gives $Q_0(f)=\ell\|f\|^2-\|Df\|_F^2\ge0$ on $\mathcal H_0$
-with kernel $\mathcal R_k$. Polarization at $r\in\mathcal R_k$ gives
+with kernel $\mathcal R_k$. The independent convex-covariance proof
+(S82) below gives the stronger explicit gap $\ell/k$ without the
+global first-moment theorem; it does not use this paragraph.
+Polarization at $r\in\mathcal R_k$ gives
 
 \[
  \langle Dr,Df\rangle_F=\ell\langle r,f\rangle_{\mathcal H}.
@@ -2678,6 +2690,314 @@ moment identity, the rational negative margin and both lower-dimensional
 sign controls; the pair moment integrals, orthant realization and
 all-correlation family use the written proof.
 
+## Every representation has an explicit Hermite floor
+
+The sign cancellation (S12) is a special case of a representation-wide
+degree obstruction. It gives useful bounds even when a positive
+supersolution for the compressed immanant has not been found.
+
+For a nontrivial partition $\lambda=(\lambda_1,\ldots,\lambda_r)$ of
+$k$, put
+
+\[
+ n(\lambda)=\sum_{i=1}^r(i-1)\lambda_i,\qquad
+ D_\lambda=n(\lambda)-(r-1).
+\]
+
+On its complete interface isotypic space, in every ambient dimension
+$d\ge k-1$, the coefficients in (S11) satisfy
+
+\[
+ \boxed{E_m(f)=0\quad(m<D_\lambda),\qquad
+ 0\le B_\rho(f)\le(\rho/b)^{D_\lambda-1}B_b(f)
+                  \quad(0<\rho\le b<1).}
+ \tag{S80}
+\]
+
+The comparison includes $D_\lambda=0$, although only $D_\lambda\ge2$
+will give the new gap estimates below. For the standard, rotation hook,
+two-row moment block, mixed $(k-3,2,1)$ block and third exterior hook,
+the respective floors are $0,1,1,2,3$. For the sign they are
+$(k-1)(k-2)/2$, recovering (S12).
+
+Here is the representation argument, including the polynomial input.
+In characteristic zero the smallest polynomial degree of a Specht
+module $V_\beta$ in independent variables permuted by $S_s$ is
+$n(\beta)$. The Specht polynomial is the product of the Vandermondes
+of the columns, of that degree. The lower bound follows because a
+nonzero Young-symmetrizer image alternates within each column and is
+therefore divisible by that product. For the precise classical facts,
+see Debus--Kretschmer, *Symmetric Ideals and Invariant Hilbert Schemes*,
+[arXiv:2404.15240v2](https://arxiv.org/pdf/2404.15240v2), section 2.1,
+Theorem 2.1 and the paragraph after Lemma 3.7 on printed page 9.
+This is a classical polynomial representation input, not a new
+minimal-degree theorem here. The retained PDF was inspected, including
+the column-divisibility argument and the explicit degree statement.
+
+Let $\mathcal P_{\le m}(E)$ be polynomials of degree at most $m$.
+Frobenius reciprocity gives
+
+\[
+ \operatorname{Hom}_{S_k}\bigl(V_\lambda,
+             \mathbb R^k\otimes\mathcal P_{\le m}(E)\bigr)
+ \simeq
+ \operatorname{Hom}_{S_{k-1}}\bigl(
+       \operatorname{Res}V_\lambda,\mathcal P_{\le m}(E)\bigr).
+\]
+
+The subgroup fixes the first label. On $E$, the other $k-1$
+coordinates are independent, so its polynomial action is precisely
+the permutation action in $k-1$ variables. The branching theorem
+removes one corner box from $\lambda$, with multiplicity one:
+Vershik--Okounkov, retained version math/0503040v3, Theorem 5.8,
+printed page 22. Removing a box from row $i$ changes $n$ by $i-1$.
+The bottom row is removable, hence the smallest degree on the right
+is exactly $n(\lambda)-(r-1)$.
+
+The degree-$m$ Hermite coefficient map in (S11) takes values in
+$E\otimes\mathcal P_{\le m}(E)$, a submodule of the left-hand
+target. It consequently vanishes below $D_\lambda$. Extra ambient
+coordinates are fixed by $S_k$; their polynomial factors cannot
+decrease this minimum active degree. Nonnegative Hermite coefficients
+then prove the comparison in (S80). The argument bounds the entire
+multiplicity space. It does not assert that the interface coefficient
+map attains every degree allowed in the polynomial target.
+
+### A quantitative gap for all sufficiently deep sectors
+
+Write $\phi_0=\phi_1(0)$, $\sigma_\rho=\sqrt{1-\rho^2}$ and
+$\ell=kv_k$. For every $\lambda$ with $D=D_\lambda\ge1$,
+every $\rho\le b<1$ and every speed in that isotypic space,
+
+\[
+ \boxed{\displaystyle
+ \mathfrak q_\rho(f)\ge
+ \left[\frac{\ell}{\sigma_\rho}
+  -\frac{4\phi_0}{b\sqrt{1-b^2}}
+                    (\rho/b)^{D-1}\right]\|f\|^2.}
+ \tag{S81}
+\]
+
+This gives a positive gap whenever its displayed bracket is positive;
+the constant is independent of the ambient dimension. It does not
+require a sign assertion for individual adjacent-facet terms.
+
+To prove it, the absolute kernel row in (S10), before the $1/b$
+factor, is
+$2R_0+2\sum_lR_l\le2(2R_0+\sum_lR_l)=2a_b/b$,
+using the standard row identity (S49). Gaussian differentiation of
+$T_b(1_{T_1}-1_{T_2})$ in the unit normal direction gives
+$0<a_b\le2b\phi_0/\sqrt{1-b^2}$: the derivative is bounded by
+$(b/\sqrt{1-b^2})\mathbb E|Z|$. The symmetric Schur bound therefore
+gives
+$B_b(f)\le4\phi_0\|f\|^2/(b\sqrt{1-b^2})$.
+Combine this with (S80) and the local lower bound
+$a_\rho/\rho\ge\ell/\sigma_\rho$.
+
+The constants can be made independent of Gaussian facet integrals.
+With $Z_1,\ldots,Z_k$ independent standard normals,
+
+\[
+ \ell=\frac{\sqrt2}{k-1}\mathbb E\max_iZ_i
+                  \ge\frac{2\phi_0}{k-1}.
+\]
+
+Indeed integrate out the common trace coordinate of the supporting
+hyperplane to obtain
+$v_k=\sqrt2\int\phi(t)^2\Phi(t)^{k-2}dt$.
+Integration by parts in the maximum density
+$k\phi(t)\Phi(t)^{k-1}$ gives the equality. The maximum increases
+with $k$ and $\mathbb E\max(Z_1,Z_2)=1/\sqrt\pi$, giving the bound.
+Thus the relative error in (S81), with $b=(1+\rho)/2$, is at most
+
+\[
+ \frac{8(k-1)}{\sqrt{(1+\rho)(3+\rho)}}
+       \left(\frac{2\rho}{1+\rho}\right)^{D-1}
+ <5(k-1)\left(\frac{2\rho}{1+\rho}\right)^{D-1}.
+\]
+
+In particular the gap is at least $\ell/(2\sigma_\rho)$ whenever
+
+\[
+ D\ge 1+\left\lceil
+ \frac{\log(10(k-1))}{\log((1+\rho)/(2\rho))}\right\rceil.
+\]
+
+At fixed correlation, any sectors not covered by this bound have
+$D_\lambda=O_\rho(\log k)$. If $s=r-1$ and
+$t=k-\lambda_1$, then $D_\lambda\ge s(s-1)/2$ and
+$t\le D_\lambda+s$. Hence these remaining partitions have
+$O_\rho(\log k)$ boxes outside their first row. This is a restriction
+on what remains to estimate, not a solution of those remaining blocks
+or of the standard mass constraint.
+
+A second convenient choice is $b=\sqrt{D/(D+1)}$, allowed when
+$\rho\le b$. The square of the relative error is at most
+
+\[
+ 4(k-1)^2(1-\rho^2)
+       \frac{(D+1)^{D+1}}{D^D}\rho^{2D-2}.
+\]
+
+For example, an infinite family of previously untreated sectors now
+has an explicit gap: for $k=2r$, $r\ge4$, $\lambda=(2^r)$ and
+$0<\rho\le1/2$,
+
+\[
+ \mathfrak q_\rho(f)\ge
+             \frac{2\ell}{3\sigma_\rho}\|f\|^2.
+\]
+
+Here $D=(r-1)^2\ge9$. The last squared error is increasing up to
+$\rho=1/2$ on this interval. Since $(1+1/D)^D<3$, it is bounded by
+$9(2r-1)^2((r-1)^2+1)/4^{(r-1)^2-1}$.
+At $r=4$ this is $4410/65536<1/9$; on increasing $r$ its numerator
+grows by a factor less than $4$ whereas its denominator grows by
+$4^{2r-1}$. It therefore stays below $1/9$. The auxiliary estimate
+$(1+1/D)^D<3$ follows by the binomial expansion and
+$\sum_{j\ge0}1/j!<3$. This proof covers all $r\ge4$, all speeds
+in the block and all ambient dimensions, rather than a finite scan
+of cells or polynomials.
+
+The checker independently computes graded character multiplicities
+through $k=9$ to control the floor formula, checks the rational
+constants and tests the first two-column instance. These are finite
+algebraic controls. The unrestricted branching, Schur bound, Gaussian
+maximum identity and spectral conclusions are the written proof.
+
+### An explicit first-moment gap from convex covariance
+
+The same degree structure gives an independent proof of the
+first-moment interface theorem used in (S8). In the active space,
+for every $k\ge3$ and balanced speed,
+
+\[
+ \boxed{Q_0(f)=\ell\|f\|^2-\|Df\|_F^2
+       \ge\frac{\ell}{k}
+                  \operatorname{dist}(f,\mathcal R_k)^2.}
+ \tag{S82}
+\]
+
+Equality $Q_0(f)=0$ holds precisely for geometric rotation speeds.
+This proof uses convex Gaussian covariance, the decomposition (S7)
+and the Gaussian rotational identity (S55), rather than the accepted
+global first-moment optimality theorem. In particular it does not
+assume (S8) or its rotation gauge (S9).
+
+Let $\mathsf B_0=D^*D$ on the balanced space. The degree-one target
+in (S7) contains each nontrivial type at most once. Thus on each of
+the standard, two-row and rotation-hook multiplicity spaces,
+$\mathsf B_0$ has rank at most one. It vanishes on every other type,
+also directly by (S80). The trivial target in (S7) has no interface
+source. We now compute or bound these three possible eigenvalues.
+
+On the balanced standard space, (S77) gives the rank-one eigenvalue
+$\ell s_k^2/2\le\ell/2$. For the two-row type, set
+$H^0=\{z\in E:z_1=z_2=0\}$ and $v_0(y)=P_0y$, with $P_0$ the
+orthogonal projection onto $H^0$. The conditional facet law has
+
+\[
+ \mathbb E v_0=0,\qquad
+ \mathbb E[v_0v_0^T]=\gamma_kP_0,\qquad0<\gamma_k\le1.
+\]
+
+The scalar covariance follows from the irreducible remaining-label
+action; for $k=4$ it is a one-dimensional assertion. Positivity
+follows from the open facet interior. The upper bound is the convex
+Gaussian Poincare argument of (S77), applied to any unit direction
+in $H^0$, with the same bounded smoothing and moment limit.
+
+The two-row kernel is the scalar kernel (S57) on these vector fields.
+Its first derivative uses
+
+\[
+ A=2I+\sum_{l=3}^kD_l
+     =kI-\sum_lw_lw_l^T,\qquad A|_{H^0}=(k-1)I.
+\]
+
+Since $\int v_0d\nu=0$ and
+$\int yv_0(y)^Td\nu=v_k\gamma_kP_0$, differentiation at zero
+gives
+$\mathsf B_0v_0=(k-1)v_k\gamma_kv_0$ in the complete two-row
+multiplicity model. This nonzero field therefore identifies its
+only nonzero multiplicity eigenvalue. It is at most
+$(k-1)v_k=(1-1/k)\ell$, so this whole sector has first-moment
+gap at least $\ell/k$. For $k=3$ this sector is absent.
+
+Finally the rotation identity gives
+$\mathsf B_0r=\ell r$ for $r\in\mathcal R_k$.
+One may take the limit of the exact Gaussian identity (S55): on
+balanced speeds the interaction tends in Hilbert--Schmidt norm to
+$D^*D$, while $a_\rho/\rho$ tends strongly to $\ell$.
+Both convergence assertions follow from the Gaussian Taylor
+domination used in (S77), applied to the finitely many facets;
+no positivity of $Q_0$ is used in this limit. The injective geometric
+rotation map supplies the one rotation-hook copy. Since the target
+has multiplicity one, $\mathsf B_0$ on that entire isotypic space
+is exactly $\ell$ times the orthogonal projection onto this copy.
+Every other copy consequently has gap $\ell$.
+
+Combining the three bounds with orthogonality of representation
+types proves (S82) and the asserted kernel. The rotation-gauge
+identity (S8) now follows by polarization, with no global
+first-moment optimality assumption. This is a local interface
+statement; it does not prove global first-moment optimality over
+arbitrary partitions.
+
+### An explicit initial full gap without global first-moment optimality
+
+For every $k\ge3$, every $d\ge k-1$, every balanced Gaussian $L^2$
+facet speed and every $0<\rho\le[6\sqrt3\,k(k-1)]^{-1}$,
+
+\[
+ \boxed{\mathfrak q_{\rho,d}(f)\ge\frac{\ell}{2k}
+                 \operatorname{dist}(f,\mathcal R_{k,d})^2.}
+ \tag{S83}
+\]
+
+The interaction remainder has a direct bound, so no unevaluated
+continuity modulus is needed. In the balanced compression the
+constant Hermite term vanishes. Nonnegativity of every coefficient
+in (S11) gives, for $0<\rho\le b<1$,
+
+\[
+ 0\le\mathsf B_\rho-\mathsf B_0
+       \le\frac\rho b(\mathsf B_b-\mathsf B_0)
+       \le\frac\rho b\mathsf B_b,
+ \qquad \mathsf B_0=D^*D.
+\]
+
+The absolute-row estimate in (S81), with $b=\sqrt{2/3}$, yields
+
+\[
+ \|\mathsf B_\rho-\mathsf B_0\|
+        \le\frac{4\phi_0\rho}{b^2\sqrt{1-b^2}}
+        =6\sqrt3\phi_0\rho\qquad(\rho\le\sqrt{2/3}).
+\]
+
+For balanced $g\perp\mathcal R_k$, combine $L_\rho\ge\ell I$
+with (S82) to obtain
+
+\[
+ \mathfrak q_\rho(g)\ge
+        (\ell/k-6\sqrt3\phi_0\rho)\|g\|^2.
+\]
+
+Since $\ell\ge2\phi_0/(k-1)$, the specified endpoint makes the
+subtracted error at most $\ell/(2k)$. Exact rotational mixed
+nullity (S55) allows subtraction of the rotation projection for
+every $f$. The lift (S42) preserves this constant because
+$\ell(1-\rho)/\sqrt{1-\rho^2}\ge\ell/\sqrt3>\ell/(2k)$
+for $\rho\le1/2$. This proves (S83).
+
+Both the gap and the interval endpoint are explicit. The multiplier
+does not converge uniformly on the unbounded facets; only its global
+lower bound is used. This route removes the accepted global
+first-moment theorem from the initial interface theorem, without
+establishing any new global optimality claim or an arbitrary-correlation
+full gap. In particular (S83) is an explicit, restricted-correlation
+extension of (S37) to every cell count.
+
 ## Monotonicity and the other global obligations
 
 **Raw-deficit obstruction.** For every $k\ge2$, the unnormalized
@@ -2715,7 +3035,10 @@ The remaining targets are distinct:
   The $(k-2,2)$ block has the strict gap (S60), and every sign block is
   settled by (S61)--(S66). The third exterior hook is settled by (S73).
   In four and five cells only (S51) remains, by (S76) and its four-cell
-  analogue. For $k\ge6$ the other blocks also need estimates.
+  analogue. For $k\ge6$ the other blocks also need estimates outside
+  the explicit Hermite-floor ranges (S80)--(S81). At fixed correlation
+  those ranges cover every sufficiently deep representation, leaving
+  only partitions with $O_\rho(\log k)$ boxes outside their first row.
   Equation (S42) then handles every ambient dimension.
   Equation (S23) and the full three-cell interface problem are settled
   by (S29)--(S38).
@@ -2788,6 +3111,20 @@ For (S79) it checks the dimension polynomial and the explicit
 19-dimensional normalized negative margin. The Gaussian pair moments,
 orthant independence and all-correlation family are analytic
 written arguments, not assertions inferred from a bounded dimension scan.
+For (S80)--(S83) it independently computes graded character multiplicities
+through nine cells and checks rational relative-error identities, the
+first two-column instance and rejection of a shallow block outside
+the estimate. The unrestricted branching and analytic gap proof are
+written arguments; the checker does not certify their hypotheses or
+an interface realization of the first possible polynomial degree.
+For (S82) it checks the two-row first-derivative transport on a basis
+through twelve cells. The conditional covariance theorem, multiplicity
+argument and uniform initial-interval deduction remain written proofs.
+For the explicit endpoint in (S83), bounded Hermite-power inequalities
+and rational endpoint substitutions are checked, with controls that
+reject inclusion of an unbalanced constant term or an unsubtracted
+first-moment term. The unrestricted nonnegative series comparison
+and operator-norm conclusion are the written argument.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

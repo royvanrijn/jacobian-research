@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "command": ".venv/bin/python research/plurality-stability/check_three_cell_radial_angular_modes.py",
+  "working_directory": "canonical repository root in Ubuntu-24.04 WSL",
+  "environment": {
+    "python": "3.12.3",
+    "python_flint": "0.9.0"
+  },
+  "checker_sha256": "d4352437e3c17d0cf71be52d8855aa9d11425d848a2ae206d9fcdf5a09a10efa",
+  "proof_source": "THREE_CELL_RADIAL_ANGULAR_MODE_ISOLATION.md",
+  "proof_source_sha256": "c344b5597e62efdd7aab771cd8735bf759e446dabca9041dc4e4efd5429828ba",
+  "input_sources": [
+    {
+      "path": "plurality-stability/check_three_cell_coupled_radial.py",
+      "sha256": "3d34471ddee5b3d3ad6e680ac645fce7ff53aa6e0288ff6b8f4dfe9edaee9b1a",
+      "locator": "Unchanged closed quadrant and first_mode formulas and outward binary64 enclosure helper"
+    }
+  ],
+  "result": {
+    "status": "pass",
+    "rho": "99/100",
+    "arb_precision_bits": 160,
+    "arithmetic": "directed Arb closed Gaussian quadrant and derivative formulas",
+    "radial_exponents": [
+      0,
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "basis_coefficients": [
+      [
+        "-21/34",
+        "1",
+        "0",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-688761381/23286770000",
+        "27/1000",
+        "37/1000",
+        "37/500",
+        "181/1000",
+        "29/200",
+        "1"
+      ]
+    ],
+    "exact_radial_means": [
+      "0",
+      "0"
+    ],
+    "old_block": {
+      "ff": [
+        -0.03925812235691135,
+        -0.03925812235691133
+      ],
+      "fg": [
+        8.697386761891846e-06,
+        8.697386761891849e-06
+      ],
+      "gg": [
+        1.202983953209141e-06,
+        1.2029839532091414e-06
+      ],
+      "determinant": [
+        -4.730253576497131e-08,
+        -4.7302535764971294e-08
+      ],
+      "positive_eigenvalue_in_coefficient_norm": [
+        1.2049107446686638e-06,
+        1.2049107446686642e-06
+      ],
+      "positive_eigenvector_f_over_g": [
+        0.00022153682620683194,
+        0.000221536826206832
+      ],
+      "positive_cone_f_over_g": [
+        [
+          -0.005318493653388253,
+          -0.005318493653388251
+        ],
+        [
+          0.005761580904623571,
+          0.005761580904623573
+        ]
+      ]
+    },
+    "two_mode_block": {
+      "ff": [
+        -0.039692869758180004,
+        -0.03969286975817999
+      ],
+      "fg": [
+        -9.269163159577801e-05,
+        -9.269163159577798e-05
+      ],
+      "gg": [
+        -3.6543431849324196e-05,
+        -3.654343184932418e-05
+      ],
+      "determinant": [
+        1.4419219423442641e-06,
+        1.4419219423442646e-06
+      ],
+      "negative_coefficient_margin": "1/30000",
+      "shifted_determinant": [
+        1.1871928045439813e-07,
+        1.1871928045439816e-07
+      ]
+    },
+    "positive_control_old_bound_rejected": true,
+    "scope": "The older exact-arc/secant quadratic form has one positive eigenvalue in span{f,g}; the new two-angular-mode form is <=-(c_f^2+c_g^2)/30000 on that entire span. Closed formulas have no radial/angular quadrature or sampled-only gaps. Written uniform Taylor control gives a common small-profile Gaussian comparison for these directions with arbitrary angular shapes. This certificate does not cover other radial directions at ordertwo or finite amplitudes; the written finite-higher-order existence theorem is separate."
+  },
+  "certified_scope": "At exactly99/100, the older DG40 coefficient matrix in the exact radial basis(f,g) has negative determinant and exactly one positive eigenvalue. The new two-angular-mode matrix plusI/30000 is negative definite by its directed leading entry and determinant. This exhausts all real coefficient directions in that2D radial block, not all radial functions. Exact rational input coefficients and mean-zero identities are retained. All transcendental evaluations are160-bit Arb closed formulas, with no quadrature or finite radial cutoff.",
+  "analytic_scope": "RMA1-RMA4 prove all-correlation weighted compactness and uniformly finite adverse scalar spaces. RMA5-RMA9 prove a global polynomial-angular-loss bound with finite endpoint optimizations. RMA10-RMA12 prove that some finite angular order outweighs every scalar radial direction at quadratic order on each compact positive correlation interval. RMA13-RMA14 and the uniform Taylor remainder turn the finite block matrix into a small-profile comparison for arbitrary angular shapes. These analytic claims are not inferred from the selected directed run.",
+  "assurance": {
+    "internal_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "limits": "The numerical certificate covers only the specified two-function radial block at99/100 and angular ordertwo. It does not give a numerical count or basis for all adverse radial modes, a numerical angular order for the whole space, or finite-amplitude global domination. The unrestricted target Qtilde<=2L remains open."
+}

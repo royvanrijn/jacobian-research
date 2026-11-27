@@ -36,15 +36,14 @@ of extension are implicit, with no new explicit numerical cutoff.
 
 ## Weighted compactness for the separated criterion
 
-On any compact \(I\subset(0,1/2)\) we use the following elementary
+On any compact \(I\subset(0,1)\) we use the following elementary
 bounds from (DG15), stated with constants depending on \(I\).
 Write \(d_\rho=1-\rho^2\), \(k=\rho^2/d_\rho\), and
 \(a=2\rho\sqrt{ts}/d_\rho\). Then
 \[
  \begin{split}
  |K_\rho(t,s)|&\le C_I e^{-k(t+s)+a},\\
- c_I e^{-kt}\sqrt t(1+t)^{-3/2}
-             &\le J_\rho(t)\le C_I\min(\sqrt t,1).
+ c_I\min(\sqrt t,1)&\le J_\rho(t)\le C_I\min(\sqrt t,1).
  \end{split}
  \tag{ST3}
 \]
@@ -54,13 +53,17 @@ the remaining \(a e^{-a}\) term satisfies the same bound.
 The term \(w(a)\) in \(J_\rho\) is nonnegative: the angular
 weight \(1-3v\) integrates to zero on \([0,2/3]\), changes
 sign at \(1/3\), and \(e^{a\cos(\pi v)}\) is decreasing.
-The positive \(\theta(a)\) term alone gives the lower
-bound on \(J_\rho\). After cancellation of \(I_0(a)\)
-restrict its radial integration to
-\(1/(2(1+t))\le s\le 1/(1+t)\). There \(a\) stays bounded
-and \(\int\sqrt s\,ds\) is bounded below by a constant
-times \((1+t)^{-3/2}\), while the factor \(\sqrt t\)
-comes from \(a\).
+For $t\le1$, restrict the positive $\theta(a)$ contribution
+to $1\le s\le2$. Its unnormalized factor is comparable to
+$\sqrt t$ there, uniformly over $I$. For $t\ge1$, use that
+$R_0(t,s)d\nu(s)$ is the conditional radial probability given
+$|X|=\sqrt{2t}$. With conditional probability at least one half,
+the component of $Y$ along $X$ is at least $\rho\sqrt{2t}$,
+so $s\ge\rho^2 t$. On this event $a$ is bounded away from
+zero. The function $w(a)+\theta(a)$ is positive for $a>0$
+and has limit $1/2$ at infinity, by concentration of the
+normalized angular kernel at zero. It is therefore bounded
+below on that event.
 
 For the upper bound, \(w(a)+\theta(a)\le C\min(a,1)\).
 For \(a\le1\) use the zero integral of the angular
@@ -85,12 +88,12 @@ The bound (ST3) gives \(w_\rho\in H\) and continuity of
 \(w_\rho\) in \(H\) by dominated convergence. The squared
 kernel times \(d\nu(t)d\nu(s)\) is dominated on \(I\) by
 \[
- C_I (ts)^{-1/2}(1+t)^{3/2}(1+s)^{3/2}
-                      e^{-c_I(t+s)}\,dt\,ds .
+ C_I (1+t^{-1/2})(1+s^{-1/2})e^{-c_I(t+s)}\,dt\,ds .
 \]
-In the exponent before domination the numerator is
-\(-(t+s-4\rho\sqrt{ts})/d_\rho\), which has a strictly
-negative Gaussian rate since \(\sup I<1/2\).
+In fact the exponential before domination is
+$\exp(-[(1+\rho^2)(t+s)-4\rho\sqrt{ts}]/d_\rho)$.
+The inequality $2\sqrt{ts}\le t+s$ leaves the strictly
+positive rate $(1-\rho)^2/d_\rho$.
 This proves Hilbert--Schmidt compactness and continuity
 of \(A_\rho\) on \(I\). Pointwise continuity of \(J_\rho\)
 follows by dominated integration in (DG15).
@@ -348,3 +351,180 @@ which equals the plurality limit by their Lemma 7.3. The
 perturbation retains each discrete coordinate independently
 with probability $\rho$ and resamples uniformly otherwise.
 [Isaksson–Mossel](https://arxiv.org/pdf/0903.3362)
+
+## Strict two-by-two minors and bounded scalar nulls
+
+The uncentered radial kernel has strictly positive two-by-two
+minors for increasing positive arguments. This excludes
+nonzero bounded null profiles at any semidefinite parameter
+in $(0,1)$.
+
+After removing positive separable factors the kernel is
+$H(a)=F(a)-b a e^{-a}$, where $a=2\rho\sqrt{ts}/d_\rho$,
+$b=2j_1<19/100$, and
+\[
+ F(a)=\tfrac12\int_0^{2/3}(2+3v)e^{a\cos(\pi v)}dv.
+\]
+Write $m=(\log F)'$, $L=1+m$ and $q=b a e^{-a}/F(a)$ so that
+$H=F(1-q)$. The log derivative $m$ is a tilted expectation of
+the cosine, and $m'$ is its variance. In particular
+$m\ge m(0)=\sqrt3/\pi-9/(4\pi^2)>8/25$, $m\le1$, and
+$F(0)=1$. Thus $13/10\le L\le2$ and
+$0\le q\le b a e^{-(13/10)a}<0.055$.
+Put $\ell=13/10$. Direct differentiation gives
+\[
+ q'+a q''=(q/a)[1-3aL+(aL)^2-a^2m'],\qquad
+ a(q')^2=(q^2/a)(1-aL)^2 .
+\]
+The first quantity divided by $1-q$ is at most
+$\max(b,16b/(\ell^2\exp(2)))/(1-0.055)<0.262$, using
+$1-3x+x^2\le\max(1,x^2)$ for $x\ge0$. The second quantity
+divided by $(1-q)^2$ is at most
+\[
+ \frac{b^2}{(1-0.055)^2}
+ \left[\frac1{2\ell\exp(1)}+4\left(\frac2{2\ell\exp(1)}\right)^2
+                    +4\left(\frac3{2\ell\exp(1)}\right)^3\right]<0.032 .
+\]
+These numerical comparisons follow from $\exp(1)>27/10$,
+$3.1415<\pi<3.1416$ and $1.7320<\sqrt3<1.7321$.
+Consequently
+\[
+ (a(\log H)')'\ge m(0)-0.262-0.032>0 .
+ \tag{ST9}
+\]
+The mixed derivative of $\log H(c\sqrt{ts})$ with respect to
+$\log t$ and $\log s$ is $a(a(\log H)')'/4$. Integration over
+any nontrivial ordered rectangle proves the strict minor
+inequality. Positive separable factors, including the weights
+in the normalized operator $A_\rho$, preserve it.
+
+Suppose that the separated form is semidefinite at some
+$0<\rho<1$ and that a nonzero bounded mean-zero null $z$
+satisfies (ST4). Then $\lambda=0$. Indeed the conditional radial
+probability with kernel $R_0(t,s)d\nu(s)$ has $s/t\to\rho^2$
+in probability as $t\to\infty$, from the conditional planar
+Gaussian. Hence $a\to\infty$ in probability. Angular Laplace
+concentration in (DG15) gives $\tau_+(a)-4\theta(a)\to1$ and
+$w(a)+\theta(a)\to1/2$, since the angular probability density
+concentrates at zero and the factors are bounded. This yields
+$J_\rho(t)\to1/2$, and the limit superior and inferior of
+$\mathcal K_\rho z(t)$ are bounded by the corresponding essential
+upper and lower limits of $z(s)$ at infinity. Evaluate (ST4)
+along sequences approaching these two limits of $z(t)$. This
+gives $\lambda\le0$ and $\lambda\ge0$. Now let $t\downarrow0$.
+The upper bound in (ST3) and boundedness of $z$ show
+$\mathcal K_\rho z(0)=0$. In addition to $\int z\,d\nu=0$ this
+gives $\int e^{-\kappa_\rho t}z(t)d\nu(t)=0$, using (DG15) at
+$a=0$. A nonzero real function with both these zero integrals
+must change sign at least twice: with a single sign transition
+at $t_0$, testing against $e^{-\kappa_\rho t}-e^{-\kappa_\rho t_0}$
+has a fixed strict sign after multiplication by $z$.
+
+On the other hand the eigenfunction $y=\sqrt{J_\rho}z$ of
+$A_\rho$ with eigenvalue $2$ has at most one sign transition.
+Here are the spectral details. The compact self-adjoint
+operator $A_\rho$ has a strictly positive kernel, so its
+principal eigenvalue is simple, positive and strictly larger
+in modulus than every other eigenvalue. This follows by
+applying the Rayleigh bound to absolute values, with strictness
+for sign-changing eigenfunctions. The positive principal
+eigenfunction cannot lie in $w_\rho^\perp$. Since $y$ does
+lie there, the principal eigenvalue exceeds two. Semidefiniteness
+on this codimension-one subspace permits at most one eigenvalue
+above two. The exterior square operator is also compact and
+self-adjoint, with strictly positive kernel on the ordered
+pairs by (ST9). Its spectrum consists of pairwise products of
+distinct indexed eigenvalues of $A_\rho$, using antisymmetric
+products of its orthonormal eigenbasis. The positive, simple,
+strictly dominant eigenvalue in modulus must therefore be
+the principal eigenvalue times two: a larger or equally
+large absolute value from a negative second eigenvalue
+would produce a negative peripheral eigenvalue. Thus the
+antisymmetric product of the principal eigenfunction and $y$
+has a constant strict sign on ordered pairs. Dividing by the
+positive principal eigenfunction at both points shows that
+their ratio is strictly monotone almost everywhere. This
+contradicts the two orthogonality conditions on $z$.
+
+Thus every semidefinite separated parameter has no nonzero
+bounded scalar null. The proof of (ST6) now applies about any
+such parameter: the positive-size radial branch contradicts
+absence of bounded nulls and the small-size branch uses the
+annular comparison. This gives a relative radial deficit in
+an open correlation neighborhood of every separated
+semidefinite parameter. For parameters below $1/\sqrt2$,
+the weight in (ST8) has $k_*<1$ on a sufficiently small
+neighborhood, so the same argument gives a quadratic
+planar distance deficit there.
+
+## The positive index grows near correlation one
+
+For all sufficiently large $\rho<1$, the separated scalar
+form $q_\rho$ is strictly positive on a space of bounded
+mean-zero radial tests of dimension at least
+$c(1-\rho^2)^{-1/4}$. Consequently a correction to this form
+using only a uniformly bounded number of linear radial
+moments cannot make the resulting criterion valid near one.
+
+Set $B(a)=\tau_+(a)-2w(a)-6\theta(a)$ in the notation of
+(DG15), and put $\sigma=\sqrt{1-\rho^2}$. The identity
+\[
+ \tau_+(a)-2w(a)=\frac{9}{2\pi}
+     \mathbb E[|\Theta|1_{\{\,|\Theta|\le2\pi/3\,\}}]
+\]
+uses the signed angular displacement $\Theta$ with density
+$k_a$ on the circle. Changing variables to $\sqrt a\,\Theta$
+and comparing $1-\cos\theta$ with $\theta^2$ on $[-\pi,\pi]$
+gives
+\[
+ \sqrt a B(a)\longrightarrow \frac{9}{2\pi}\sqrt{\frac2\pi},
+ \qquad |B(a)|\le C(1+a)^{-1/2}.
+\]
+The $\theta(a)$ term is exponentially small at large $a$.
+Define the row surplus $\beta_\rho(t)=\int R_0(t,s)B(a(t,s))d\nu(s)$.
+Uniformly on $1\le t\le2$,
+\[
+ \frac{\beta_\rho(t)}{\sigma}\longrightarrow
+ \frac{9}{2\pi\sqrt{2t}}\sqrt{\frac2\pi}
+                    \quad(\rho\uparrow1).
+ \tag{ST10}
+\]
+Indeed, for $r=\sqrt{2t}$ in this annulus, the conditional
+radius $u$ converges uniformly in probability to $r$. On
+$r/2\le u\le3r/2$ one has $a=\rho r u/\sigma^2$ and the
+rescaled integrand tends to the claimed limit. The
+remaining conditional probability is exponentially small
+uniformly in $r$, while $B$ is bounded.
+
+By symmetry of $K_\rho$ the exact form is
+\[
+ q_\rho(z)=\int\beta_\rho(t)z(t)^2d\nu(t)
+       -\tfrac12\iint K_\rho(t,s)(z(t)-z(s))^2d\nu(t)d\nu(s).
+\]
+The kernel satisfies $K_\rho\le C R_0$, since its normalized
+angular factors are universally bounded. For a test $z$
+supported on $[1,2]$, write $\widetilde z(x)=z(|x|^2/2)$.
+The Dirichlet form with kernel $R_0$ equals
+$\langle\widetilde z,(I-T_\rho)\widetilde z\rangle_{\gamma_2}$.
+In Hermite degree $m$, $1-\rho^m\le(1-\rho)m$ and the
+Gaussian gradient form has multiplier $m$. Together with
+(ST10) this gives, for such tests in $H^1$,
+\[
+ q_\rho(z)\ge c\sigma\int z^2d\nu
+                     -C\sigma^2\int |z'|^2d\nu .
+ \tag{ST11}
+\]
+Use the span of the first $n$ Dirichlet sine modes on $[1,2]$,
+extended by zero. The Gaussian radial weight is comparable
+to Lebesgue measure on the interval, giving
+$\int|z'|^2d\nu\le Cn^2\int z^2d\nu$. Choose
+$n=\lfloor c_0/\sqrt\sigma\rfloor$ with $c_0>0$ small, and
+impose the one mean-zero constraint. The resulting space
+has dimension at least $n-1$ and is positive for $q_\rho$.
+It intersects the kernel of every fixed number of linear
+moment constraints nontrivially for sufficiently large
+$\rho$. Each direction also gives feasible balanced circular
+masses by taking a sufficiently small multiple in two
+opposite label coordinates. The failure concerns the
+separated criterion, while the true comparison near one
+is given by the [exact near-one theorem](THREE_CELL_NEAR_ONE_EXACT.md).

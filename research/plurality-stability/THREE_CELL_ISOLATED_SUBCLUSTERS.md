@@ -8,7 +8,13 @@ the remaining non-$j$ cells by an arbitrarily wide region of
 label $j$. In a fixed central disk, such components also have
 a positive minimum diameter under the quantitative condition
 below. These restrictions allow either or both non-$j$ labels
-within $S$.
+within $S$. A single-label component also needs a strictly positive
+amount of exterior interaction. Angular variations impose additional
+conditions on the position of either kind of component. Every
+centered disk pocket of a balanced maximizer gives a third
+negative direction. The circular-interface test also excludes
+some translated circles and persists for pockets with boundaries
+trapped in sufficiently thin annuli.
 
 Use the normals, the interface measure, the weight $a$, and the
 quadratic forms from the [maximizer analysis](THREE_CELL_GLOBAL_OBSTRUCTIONS.md).
@@ -64,7 +70,7 @@ Conditional on $X=x$, differentiation of the Gaussian
 density of $Y$ gives the kernel factor
 \[
  \frac{\rho^2}{\sigma^4}
- \left[\sigma^2|v|^2-igl((y-\rho x)\cdot v\bigr)^2
+ \left[\sigma^2|v|^2-\bigl((y-\rho x)\cdot v\bigr)^2
               +\frac{\sigma^2}{\rho}(x\cdot v)((y-\rho x)\cdot v)\right]
 \]
 for the negative differential operator in (IC1). Completing
@@ -187,3 +193,421 @@ exponential on the left. A strict inequality in the opposite
 direction in (IC5) rules out a sequence with $d\downarrow0$.
 When there is only one inside label, the stronger coefficient
 in (IC7) gives the stated $\rho^2/\exp(1)$ threshold.
+
+## Exterior interaction required by a single-label pocket
+
+Suppose $S$ contains just one label different from $j$. Orient $D=\partial^*S$
+outward and set $u=1_D$ in this orientation, so $K=2M_\rho$ on $D^2$. Define
+\[
+ I=\iint_{D^2} K\,d\nu^2,\qquad
+ I_N=\iint_{D^2} K\,N(x)\cdot N(y)\,d\nu^2,\qquad
+ X_D=\sum_{v\in\{e_1,e_2\}}Q^{(1)}(1_D v\cdot N).
+\]
+Tracing the definition of $Q^{(1)}$ gives $X_D=\|u\|_a^2-\rho I_N$.
+Let $P_V$ be the weighted projection onto translations. By (G2), the
+translation part of $Q_0$ is orthogonal to the remaining part, and
+\[
+ Q_0(u-P_Vu)=X_D-I+\rho I_N+\frac{1-\rho}{\rho}\|P_Vu\|_a^2.
+ \tag{IC9}
+\]
+A negative right-hand side gives a third negative direction. The trace
+identity and (G17) at $m=1$ give
+\[
+ X_D=\rho(I-I_N)+Q^{(1)}(u)
+ \ge 2\rho m_0\left(P_\gamma(S)^2-\left|\int_S x\,d\gamma_2\right|^2\right)
+       +(1-\rho)\|u-P_Vu\|_a^2,\qquad
+ m_0=\min_{\overline S\times\overline S}M_\rho>0.
+ \tag{IC10}
+\]
+Here $P_\gamma(S)=\nu(D)$ and $\int_D N\,d\nu=-\int_S x\,d\gamma_2$.
+The difference in parentheses is
+$\iint_{D^2}(1-N(x)\cdot N(y))d\nu^2$. It is bounded below by
+$(\min_{\overline S}\phi_2)^2\operatorname{Per}(S)^2>0$, since
+$\int_D N\,d\mathcal H^1=0$ by Euclidean divergence and $S$ is bounded
+with positive area.
+
+Let $\delta$ be the essential infimum of $|y-c_\rho x|$ on the
+interaction-weighted law of (IC2), and suppose $S\subset B_R$. Taking
+the trace of the identity behind (IC2) and applying (IC10) gives
+\[
+ M(2\sigma^2+\alpha_\rho^2R^2-\delta^2)
+ \ge \frac{\sigma^4}{\rho^2}X_D
+ \ge \frac{2\sigma^4 m_0}{\rho}
+     (\min_{\overline S}\phi_2)^2\operatorname{Per}(S)^2>0.
+ \tag{IC11}
+\]
+This gives a positive minimum exterior interaction for each fixed
+pocket geometry. The general sign in (IC9) still requires control of
+$X_D$ and the translation projection.
+
+## Angular variations of an enclosed component
+
+Let $J$ be counterclockwise rotation by $\pi/2$, put $b=\rho/\sigma^2$,
+and define
+\[
+ W_{\mathrm{in}}(x,y)=H(x)\cdot H(y),\qquad
+ W_{\mathrm{out}}(x,y)=H(x)\cdot B(y)+1_S(x).
+\]
+On $S$, $H$ has the form $e_i-e_j$ for $i\ne j$. The weights are
+nonnegative, supported respectively on $S^2$ and on $S\times E$, where
+$E$ is the set of non-$j$ labels remaining after filling $S$. On each
+support the weight is two for matching non-$j$ labels and one for
+distinct labels.
+
+For any smooth function $\eta$ put $\eta_x=\eta(|x|^2)$. The speed
+$f_\eta=1_D\eta_x Jx\cdot N$ has zero first variation of all masses.
+It satisfies the following two identities, with $d\gamma^2$ denoting
+the product of the planar Gaussian measures:
+\[
+\begin{split}
+0={}&\iint\left[\tfrac12 W_{\mathrm{in}}(\eta_x-\eta_y)
+                    +W_{\mathrm{out}}\eta_x\right]
+            (Jx\cdot y)M_\rho(x,y)\,d\gamma^2,\\
+0\le Q_0(f_\eta)={}&b\iint\left[\tfrac12 W_{\mathrm{in}}(\eta_x-\eta_y)^2
+                    +W_{\mathrm{out}}\eta_x^2\right]
+       [x\cdot y-b(Jx\cdot y)^2]M_\rho(x,y)\,d\gamma^2.
+\end{split}
+\tag{IC12}
+\]
+
+To prove this, write $R_x=Jx\cdot\nabla_x$ and $L_x=\eta_x R_x$.
+The vector field of $L$ has zero Gaussian divergence. The distributional
+jump formula gives $LH=-\sum_{e\in D}d_e f_\eta\,d\mathcal H^1$.
+Integrating against Gaussian density yields zero in every label, as
+$H$ has bounded support. This proves balance. Approximate the bounded
+speed on $D$ by smooth compact speeds on the regular interfaces in
+$L^2(a\,d\nu)$ and in $L^1(d\nu)$ on a fixed compact disk. These
+approximations use local finiteness of the interface measure and
+restriction to regular patches. Subtract two fixed regular mass
+bumps to make the approximations balanced. The correction coefficients
+tend to zero by flux convergence. Now (G1) ensures continuity of $Q_0$
+in the weighted norm, so ordinary stability applies to $f_\eta$.
+
+The first variation is zero because the stationary pair-score constants
+are differences of cell prices. With Gaussian integration by parts this
+gives $\langle H,LT_\rho A\rangle=0$. The same integration by parts with
+the normal-score equation gives $\|f_\eta\|_a^2=-\langle H,L^2T_\rho A\rangle$.
+Integrating the two derivatives of $H$ against Mehler's kernel yields
+\[
+ \langle f_\eta,Kf_\eta\rangle
+  =\iint W_{\mathrm{in}}\eta_x\eta_y R_xR_y M_\rho\,d\gamma^2.
+\]
+Simultaneous rotation invariance gives $R_y M_\rho=-R_x M_\rho$.
+The kernels $R_x M_\rho$ and $R_x^2 M_\rho$ are respectively
+antisymmetric and symmetric in $x,y$, and $L_x^2=\eta_x^2R_x^2$.
+Substitute $A=B+H$ into the pairings with $T_\rho A$ and symmetrize
+the $H$ terms. Adding $1_S(x)$ to each exterior term integrates to zero
+since $\int M_\rho(x,y)d\gamma_2(y)=1$. Use
+$R_x M_\rho=b(Jx\cdot y)M_\rho$ and
+$R_x^2 M_\rho=b[b(Jx\cdot y)^2-x\cdot y]M_\rho$ to obtain (IC12).
+The derivatives and integrals are justified by bounded support in the
+differentiated pocket variables and the Gaussian conditional moments.
+
+If $E$ has positive mass, $\eta=1$ gives conditions on the same
+normalized law as in (IC2):
+\[
+ \mathbb E_*[JX\cdot Y]=0,\qquad
+ \mathbb E_*[X\cdot Y]\ge b\,\mathbb E_*[(JX\cdot Y)^2]>0.
+ \tag{IC13}
+\]
+The signed angular displacement must have both signs. In particular,
+it is impossible that $x\cdot y\le b(Jx\cdot y)^2$ almost everywhere on
+$S\times E$, which also excludes pair angles all at least $\pi/2$.
+The equality set has product measure zero, so the displayed pointwise
+condition makes the balanced speed in (IC12) strictly unstable. If
+$E$ has zero mass, the inequality in (IC12) still applies to a radial
+cut $\eta=1_{\{r_1<|x|<r_2\}}$ by bounded approximation in its integral.
+It excludes the same pointwise condition across the cut if both sides
+have positive pocket mass.
+
+For a finite rotation $R_\theta$ satisfying
+$\gamma_2(R_\theta S\cap E)=0$, the partition $B+H\circ R_{-\theta}$
+has the original Gaussian masses. The self-interaction of $H$ is
+rotation invariant. Thus the stability change is twice the change
+in its interaction with $B$. If $E$ has positive mass, maximality gives
+\[
+ \mathbb E_*\exp\!\left(b\big[(\cos\theta-1)X\cdot Y+
+                             \sin\theta\,JX\cdot Y\big]\right)\le1 .
+ \tag{IC14}
+\]
+The exponential is the ratio of rotated to original Mehler kernels.
+The $1_S$ part of the cross weight integrates to $\gamma_2(S)$ at
+both angles, so it cancels in the comparison.
+
+## Circular interfaces and pockets in a thin annulus
+
+At a planar maximizer, a whole circle $D=p+\partial B_R$ with
+$R>0$ cannot separate the same two labels with consistent
+orientation under either condition
+\[
+ \begin{array}{ll}
+ R\le1,&e^{-\kappa_\rho |p|^2}\ge\rho,\\
+ R^2\le3,&e^{-\kappa_\rho |p|^2}\ge\rho^{1-R^2/3},
+ \end{array}
+ \qquad
+ \kappa_\rho=\frac{1-\rho}{2(1+\rho)}.
+ \tag{IC15}
+\]
+The first condition includes all $|p|\le2$ when $R\le1$.
+Indeed $\log(1/\rho)>2(1-\rho)/(1+\rho)$ for $0<\rho<1$.
+The difference vanishes at one and its derivative is
+$-(1-\rho)^2/[\rho(1+\rho)^2]$. The second condition includes
+$|p|^2/4+R^2/3\le1$.
+
+Orient $D$ outwards from its bounded side and let $F=U_i-U_j$,
+where $i$ is the inside label along $D$ and $j$ the outside
+label. The score-gradient identity gives $a=-\partial_N F$ almost
+everywhere on $D$. Use the speed $f=\phi_2^{-1/2}$ on $D$
+and zero elsewhere, with its sign changed if the fixed edge
+orientation is the reverse. Its local energy is $\int_D a\,ds$,
+where $ds=d\mathcal H^1$. This compactly supported bounded speed
+is admissible by the extension of (G1).
+
+Put $\sigma^2=1-\rho^2$. Averaging $F(p+r\theta)$ over
+unit directions $\theta$ radializes the input contrast about
+$\rho p$, because the conditional Gaussian mean is
+$\rho p+\rho r\theta$. If $h(s)$ is that radialized contrast,
+then $|h|\le1$ and the average is $\int_0^\infty h(s)q_r(s)\,ds$,
+with conditional radius density
+\[
+ q_r(s)=\frac{s}{\sigma^2}
+ e^{-(s^2+\rho^2 r^2)/(2\sigma^2)} I_0(\rho rs/\sigma^2).
+ \tag{IC16}
+\]
+Here $I_0(z)=\int_0^{2\pi}e^{z\cos\theta}\,d\theta/(2\pi)$ and
+$I_1=I_0'$. For $b=I_1/I_0$, differentiation gives
+$b'=\operatorname{Var}_z(\cos\theta)>0$, using the probability
+density proportional to $e^{z\cos\theta}$. Periodic integration
+of $(\sin\theta\,e^{z\cos\theta})'$ gives
+$b'=1-b/z-b^2$ for $z>0$. At $z_R=\rho R^2/\sigma^2$,
+this implies $b(z_R)<\rho$: the expression $1-u/z_R-u^2$
+decreases for $u\ge0$, is positive at $u=b(z_R)$, and is
+nonpositive at $u=\rho$ when $R\le1$.
+
+At $r=R$, the derivative $\partial_r q_r(s)$ changes sign
+from negative to positive at the unique $t>0$ given by
+$t b(\rho Rt/\sigma^2)=\rho R$. This follows by differentiating
+(IC16), since $s b(\rho Rs/\sigma^2)$ increases strictly from
+zero to infinity. Also $t>\rho R$ since $b<1$, and $t>R$
+if $R\le1$ by the preceding bound. The same differentiation, with
+$I_1'=I_0-I_1/z$, gives
+\[
+ \partial_r q_r(s)=-\frac{\rho}{\sigma^2}\,
+   \partial_s\!\left[s e^{-(s^2+\rho^2r^2)/(2\sigma^2)}
+                                      I_1(\rho rs/\sigma^2)\right].
+\]
+Thus the radial derivative of the average contrast is bounded
+in absolute value by
+\[
+ \int_0^\infty |\partial_r q_r(s)|_{r=R}\,ds
+  =\frac{2\rho^2 R}{\sigma^2}
+       e^{-(t^2+\rho^2R^2)/(2\sigma^2)} I_0(\rho Rt/\sigma^2)
+  =2\rho^2 q_R(R)\frac{F_0(t)}{F_0(R)},\qquad F_0(s)=q_R(s)/s .
+ \tag{IC17}
+\]
+The boundary terms at zero and infinity vanish and the equality
+uses the equation for $t$. Differentiation is justified by
+Gaussian domination locally in $r$. The function $F_0$ is
+strictly decreasing on $s\ge R$, since its logarithmic derivative
+is $(\rho R b(\rho Rs/\sigma^2)-s)/\sigma^2<0$. Thus $R\le1$
+gives $F_0(t)/F_0(R)<1$.
+
+For arbitrary $R>0$, we also have $F_0(t)/F_0(R)<\rho^{-R^2/3}$.
+It suffices to consider $t<R$. Monotonicity of $b$ and the
+equation for $t$ give
+\[
+ \begin{split}
+ \log\frac{F_0(t)}{F_0(R)}
+ &\le \frac{1}{\sigma^2}\int_t^R (s-\rho^2R^2/t)\,ds\\
+ &=\frac{R^2}{\sigma^2}
+      \left[\frac{1-\lambda^2}{2}-\frac{\rho^2}{\lambda}+\rho^2\right],
+ \qquad \lambda=t/R.
+ \end{split}
+\]
+The bracket is maximal at $v=\rho^{2/3}$ on $(0,\infty)$,
+where it equals $(1-v)^2(1+2v)/2$. After division by
+$\sigma^2=1-v^3$ this is strictly less than
+$\tfrac12\log(1/v)=\tfrac13\log(1/\rho)$, since
+$(1+v)(1+2v)<2(1+v+v^2)$ and
+$\log(1/v)\ge 2(1-v)/(1+v)$.
+
+For the interaction let $G_\rho$ be the joint Lebesgue density
+and $k_\rho(x,y)=G_\rho(x,y)/\sqrt{\phi_2(x)\phi_2(y)}$.
+On a centered circle, $\int_{\partial B_R}k_\rho(x,y)\,ds_y
+=q_R(R)$ for every $x\in\partial B_R$, since the two marginal
+densities are equal there. The same-pair label factor is two.
+Write $J_\circ=2(2\pi R)q_R(R)>0$ for the centered interaction.
+The joint Gaussian density gives
+\[
+ k_\rho(p+x,p+y)
+  =k_\rho(x,y)e^{-\kappa_\rho(|p|^2+p\cdot(x+y))}.
+ \tag{IC18}
+\]
+Under simultaneous inversion of $x,y$ on the centered circle,
+$k_\rho$ is unchanged. Averaging the two integrals replaces the
+factor $e^{-\kappa_\rho p\cdot(x+y)}$ by a hyperbolic cosine,
+so $\langle f,Kf\rangle\ge e^{-\kappa_\rho|p|^2}J_\circ$.
+By (IC17) the local energy is at most
+$\rho^2 J_\circ F_0(t)/F_0(R)$.
+Either condition in (IC15) gives $Q^{(1)}(f)<0$, contrary to
+(G1). More explicitly, let $h=f-P_V f$. By (G2) translations
+are in the bilinear kernel of $Q^{(1)}$, so
+$Q^{(1)}(h)=Q^{(1)}(f)<0$. Then
+$Q_0(h)=[Q^{(1)}(h)-(1-\rho)\|h\|_a^2]/\rho<0$.
+The two translations and $h$ span a negative three-dimensional space.
+
+If an enclosed component is a disk, its boundary carries one pair
+even when both non-enclosing labels occur deeper inside. The
+analytic strict-winner closures stratify its circle into
+finitely many arcs and exceptional points. Each arc has the enclosing
+label $j$ outside and one of the other labels inside. If both types
+occur, choose a point where the inside label changes from $i$ to
+$k$. Both adjusted contrasts against $j$ vanish on the entire
+circle by analyticity. The tangential derivative of $V_i-V_k$
+is zero. Its inward normal derivative is nonnegative on the $i$
+arcs and nonpositive on the $k$ arcs by the winning-score rule.
+By continuity the two gradients coincide at the change point. The
+three winners accumulate there, contrary to the distinct gradients
+at genuine triple junctions proved after (G20). Thus one pair
+covers the circle with consistent orientation. For a balanced
+maximizer a centered disk therefore satisfies (IC15). Its mass
+is at most $2/3$ since the surrounding cell has mass $1/3$,
+so $R^2\le 2\log 3<3$.
+
+The exclusion persists for pockets whose whole outer boundary is
+trapped in a sufficiently thin annulus. Fix a compact set of
+parameters $(\rho,p,R)$, with $0<\rho<1$ and $R>0$, satisfying
+one of the conditions in (IC15) at each parameter. There is a
+uniform $\varepsilon>0$ with the following property. Let $S$ be a
+bounded set of finite perimeter and $D=\partial^* S$. Suppose
+\[
+ B(p,R-\varepsilon)\subset S\subset B(p,R+\varepsilon)
+\]
+up to volume-null sets, and $D$ lies almost everywhere on one
+pair interface with its normal from $i$ to $j$ agreeing with
+the outer normal of $S$. This configuration cannot occur at
+a maximizer.
+
+Indeed, the same speed on $D$ has local energy
+$-\int_S\Delta F\,dx$ by Gauss–Green. Its difference from the
+flux $-\int_{B(p,R)}\Delta F\,dx$ is bounded by
+$4\pi R\varepsilon\|\Delta F\|_\infty$, which is uniformly
+$O(\varepsilon)$ by the convolution derivative bound.
+The virtual circular flux is bounded by (IC17), regardless of
+whether the comparison circle is itself an interface. For the
+interaction, write $r=|x-p|$, $e_r=(x-p)/r$, and let
+$g\ge0$ be smooth on the unit circle. Apply Gauss–Green to
+$g(e_r)e_r/r$, with a radial cutoff equal to one on the
+annulus and zero near $p$ and beyond the exterior ball.
+Away from the cutoffs its divergence is zero. The inner
+cutoff changes from zero to one inside the included ball and
+contributes $\int g\,d\theta$ to the integral of divergence
+over $S$. The outer cutoff contributes zero. It follows that
+\[
+ \int_D g(e_r)\,ds
+ \ \ge\ (R-\varepsilon)\int_D g(e_r)(N\cdot e_r)/r\,ds
+ \ =\ (R-\varepsilon)\int g\,d\theta.
+\]
+Thus the radial pushforward of $ds$ dominates
+$(R-\varepsilon)d\theta$. On $D\times D$, the positive
+kernel $k_\rho$ is at least $1-O(\varepsilon)$ times its
+value at the respective projections onto $p+\partial B_R$.
+This follows from the uniform bound on the derivatives of
+$\log k_\rho$ on the compact spatial and correlation range.
+The two projected measures and the positive lower bound on $R$ give an
+interaction at least $1-O(\varepsilon)$ times the circular
+interaction. The resulting circular upper bound
+$\rho J_\circ[\rho F_0(t)/F_0(R)-e^{-\kappa_\rho|p|^2}]$
+for $Q^{(1)}$ is continuous and strictly negative at every
+parameter in the compact set. Here $t$ is continuous by
+strict monotonicity in its defining equation. Taking $\varepsilon$
+sufficiently small therefore again gives $Q^{(1)}(f)<0$.
+
+### Mixed inside labels in a thin annulus
+
+For balanced maximizers the thin-annulus exclusion also holds with
+a common outside label $j$ and either other label on the inside
+of each reduced boundary arc. Suppose it fails for a sequence with
+annulus widths tending to zero and parameters in a compact set as
+above. Pass to convergent parameters $(p,R,\rho)$ and relabel so
+the outside label is fixed. Strong maximizer compactness gives a
+limiting actual balanced maximizer. The normalized prices have a
+convergent subsequence because price differences are bounded by
+the score range. The scores and their spatial gradients converge
+uniformly on compact sets by the strong convergence and the
+conditional Gaussian kernel bounds on compact correlation
+intervals. All limiting pair contrasts are nonconstant by
+injectivity of $T_\rho$, so ties have zero Gaussian measure.
+
+Write $F_i=U_i-U_j-\beta_i+\beta_j$ for the two limiting
+adjusted contrasts, and denote their prelimit versions by $F_i^n$.
+The angular flux estimate for the annulus shows that $ds$ on
+the prelimit reduced boundary projects to at least
+$(R_n-\varepsilon_n)d\theta$. Almost everywhere on that boundary
+the outside label $j$ ties with one of the two remaining labels,
+and both contrasts are nonpositive. Consequently the same holds
+at every point of the limiting circle by uniform score convergence
+and positive projected boundary measure on every angular interval.
+Use (G20) and a lower bound for the Gaussian density on the
+bounding disk to obtain a uniform bound
+$\int_{\partial^*S_n}a^{-1}ds\le C$. Suppose that on an angular
+interval $L$ the only possible active pairs for large $n$
+are among $(i,j)$ for $i$ in a set of labels $E$. Along
+the corresponding prelimit boundary, the local $a$ is bounded
+above by $m(\theta)+o(1)$, uniformly, where
+\[
+ m(\theta)=\max_{i\in E}|\nabla F_i(p+R\theta)|.
+\]
+This follows from the uniform score-gradient convergence and
+the annular trapping. The angular measure bound and Fatou's
+lemma yield $\int_L m(\theta)^{-1}\,d\theta\le C/R$. The
+function $m$ is Lipschitz, so it cannot vanish at any interior
+point of $L$.
+
+At least one of the two restricted contrasts vanishes
+identically on the circle, since otherwise their analytic zero
+sets on the circle would be finite and could not cover it.
+If only $F_i$ vanishes identically, the other contrast is
+strictly negative away from finitely many points. On every
+closed subarc avoiding those points, take $E=\{i\}$ in the
+preceding bound. Then $\nabla F_i\ne0$ there and the limit
+circle is an active $i,j$ interface on that subarc. At the
+finitely many exceptional points the nonvanishing result for
+closure points of active pair interfaces again gives
+$\nabla F_i\ne0$. Thus the circle carries the same oriented
+pair almost everywhere.
+
+If both contrasts vanish identically on the circle, take $E$
+to consist of both labels. At every angle the three adjusted
+score derivatives in the inward normal direction have distinct
+maximum and minimum values, since $m>0$, and tangential
+derivatives of their contrasts vanish. In the signed inward
+distance $t$ from the circle, for each pair of labels the
+first nonidentically zero Taylor coefficient of its contrast
+is an analytic function of the angle. Such a coefficient exists
+because the pair contrast cannot vanish in an open set. Exclude
+the finitely many angular zeros of these three coefficients.
+On each remaining arc, at each angle and for sufficiently small
+$t>0$ or $t<0$, the winner is a single label fixed on that
+side of the arc. The inside and outside winners differ, since
+the maximum and minimum first derivatives differ.
+
+If the winner on one side changes at an exceptional angle,
+the two changing labels have the same extremal first derivative
+there. The third has a strictly separated derivative, hence
+loses in a neighborhood on that side for all sufficiently
+small nonzero $t$. In arbitrarily small connected collar
+neighborhoods of the exceptional point, both changing labels
+have strict-winner sets of positive area. Their reduced pair
+interface therefore accumulates there, since otherwise their
+indicators would have zero distributional gradient and be
+constant in such a neighborhood. But their contrast has zero
+tangential and normal derivatives at that point, again contrary
+to nonvanishing on the closure of an active pair interface.
+No change of winners along either side is possible. The limit
+circle is therefore one consistently oriented pair interface
+in this case as well.
+
+In either case the limiting actual maximizer has an interface
+excluded by (IC15). This proves the uniform thin-annulus
+exclusion for a fixed outside label.

@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md",
+  "assurance": "Internal written all-parameter CRT/irreducibility and return-budget proofs, with bounded exact rational/permutation controls. Primary existence and counts are imported with the printed hypothesis slip explicitly corrected from the actual proof. No novelty, independent replay, external review, formal verification or unrestricted classification is asserted.",
+  "declarations": [
+    {
+      "name": "Theorem K1. Exact coefficient spaces, including the boundary",
+      "node": "ARITH-POLYNOMIAL-STABLE-HERMITE-EXACT-COEFFICIENT-SPACE",
+      "scope": "For all admissible nonidentity polynomial passports with k>=1 factors of index>=2, s>=1 literal transpositions, p total nontrivial cycles in those k factors, and s>=p-k: the complete root-marked monic coefficient locus is a nonempty algebraic open in the exact CRT chart f=Phi+QR if N>=M=I+p, or in the full moment incidence F(u)v=e if N<M. With h=M-N-1=p-s-2, rows F_bi=sum residues of z^b/Q over color i, b0..h, give every degree/monicity constraint, including all feasible deficient ranks. Critical quotient/value norm give necessary and sufficient exact exclusions. Existence uses corrected primary count/Riemann existence."
+    },
+    {
+      "name": "Theorem K2. One component and unirationality in the stable range",
+      "node": "ARITH-POLYNOMIAL-STABLE-HERMITE-CONNECTIVITY",
+      "scope": "Every such passport with s>=max(1,p-k) has exactly one absolute and one literal full-braid orbit. The affine-quotient polynomial Hurwitz space is unirational overQ of dimension k+s-2. Beyond the former p-2 threshold, K5-K6 bound every feasible deficient-rank stratum below the pure Hurwitz dimension, so each component meets one irreducible full-rank affine bundle. Finite label quotients and the full-twist argument give the asserted orbit conventions. No quotient-field rationality is claimed."
+    },
+    {
+      "name": "Theorem K3. Actual groups, all blocks, deck groups and sizes",
+      "node": "ARITH-POLYNOMIAL-STABLE-HERMITE-GROUPS-AND-SIZES",
+      "scope": "For k>=2 in this range, every tuple generates actual S_N, has only block counts1,N and deck1. For k=1, D=gcd of its full partition (including fixed points), n=N/D>=2, actual group S_n wr C_D, block counts divisors(D) union{N}, deck2 exactly n2 otherwise1. The unique full component has literal size W*N^(r-1)*product((c_i-1)!/product m_i,a!) and absolute size F*deck/N, with W the number of distinct factor-type placements."
+    },
+    {
+      "name": "Proposition K4. The first excluded level already splits",
+      "node": "ARITH-POLYNOMIAL-STABLE-HERMITE-THRESHOLD-COUNTEREXAMPLE",
+      "scope": "The degree6 passport DT,DT,T has p4,k2,s1=p-k-1 and exactly two components, literal216/27, absolute36/9, actual groups S6 and S2 wr D3 of orders720/48, deck1/2. Signed disjoint orbit closures exhaust independent ordinary hook total243. Thus the p-k sufficient threshold cannot be lowered uniformly; no classification below it is inferred."
+    },
+    {
+      "name": "Lemma K5. Moment derivatives and the polynomial product bound",
+      "node": "ARITH-POLYNOMIAL-STABLE-HERMITE-MOMENT-DERIVATIVES",
+      "scope": "For h>=1, g=Phi_w with Fw in C*e has deg<=N and B_g=g'/Z of degree<=s. For any beta of degree<=h the exact moving-critical-point derivative is beta(dF)w=-sum_j beta(u_j)B_g(u_j)*du_j/P'(u_j). At admissible monic points this is a Vandermonde Jacobian of row rank h+1. Polynomial product subspaces satisfy dim span(UV)>=dimU+dimV-1, proved by distinct leading degrees."
+    },
+    {
+      "name": "Theorem K6. Rank loss cannot create another component",
+      "node": "ARITH-POLYNOMIAL-STABLE-HERMITE-RANK-CODIMENSION",
+      "scope": "For h>=1 and k>=h+2, every feasible rank-r incidence stratum with deficiency delta=h+1-r has dimension<=p-delta+1, while the admissible locus is smooth pure dimension D=p+k-h-1>=p+1. Proof: left-kernel polynomials beta have degree<=h-1, derivative space V has dimension k-r; products beta*B_g have degree<=p-3, inject into p-point evaluations and supply conormal rank>=delta+k-r-1. No component can live at deficient rank. The nonempty full-rank affine-bundle open is rational and irreducible and meets every component, proving the whole good root-marked coefficient space rational/irreducible."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "I.P. Goulden and D.M. Jackson",
+      "title": "The Combinatorial Relationship Between Trees, Cacti and Certain Connection Coefficients for the Symmetric Group",
+      "publication": "European Journal of Combinatorics13(1992),357-365",
+      "doi": "10.1016/S0195-6698(05)80015-0",
+      "url": "https://uwaterloo.ca/math/sites/default/files/uploads/documents/gjeurjc1992.pdf",
+      "path": "research/arithmetic/sources/goulden-jackson-cacti-1992.pdf",
+      "sha256": "a43abccf0519d4839d4c012a4990cff66c9ed4636bc459512e84a2825fc78331",
+      "inspected": "Actual primary9-pagePDF Section3 pp361-363; visually inspected printed Theorem3.2 p362 and full coefficient calculation p363. Read tree/cactus bijections and proof. Compared Jones-Zvonkin Section1.3 retainedp133.",
+      "application": "Positive exact count for fixed ordered factor partitions of a fixed full cycle, hence existence. The printed hypothesis sum c_i=N+1 in Theorems3.1/3.2 must be sum c_i=(r-1)N+1. The proof's final line gives the latter and its final coefficient is product factorials times[N^r-N^(r-1)*sum indices], yielding the imported formula.",
+      "scope_boundary": "The printed slip is not silently propagated. This imports a count/existence statement only; no component theorem is attributed to this paper."
+    },
+    {
+      "authors": "Scott Mullane",
+      "title": "Strata of differentials of the second kind, positivity and irreducibility of certain Hurwitz spaces",
+      "publication": "Annales de l'Institut Fourier72(4)(2022),1379-1416",
+      "doi": "10.5802/aif.3497",
+      "url": "https://www.numdam.org/item/10.5802/aif.3497.pdf",
+      "path": "research/arithmetic/sources/mullane-second-kind-hurwitz-2022.pdf",
+      "sha256": "8c802f1799eaf202480c90e99fdc804ed0d3689ca198adaea0ef78f41c76608f",
+      "inspected": "Actual published Theorem7.11 p1413, purity definition and surrounding proof pp1413-1415.",
+      "application": "Closest simple-branch genus-zero irreducibility comparison: at least N-3 transpositions with at most one nonpure branch partition.",
+      "scope_boundary": "Comparison only. Does not supply arbitrary multiple disconnected finite branches or the p-k threshold here; no priority conclusion is drawn."
+    },
+    {
+      "authors": "Gareth A. Jones and Alexander Zvonkin",
+      "title": "Orbits of braid groups on cacti",
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "inspected": "Theorem1.1 polynomial/cactus braid correspondence; Section1.3 retainedp133 exact cactus formula for valid passports.",
+      "application": "Polynomial orbit interpretation and corroboration of corrected primary count convention.",
+      "scope_boundary": "Not used as a general component classification."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md",
+      "sha256": "14735b7c0243e24e8afc76d41cef77721be241d31e1a13b7b5aa8d7d093bc42f",
+      "locator": "K1-K6 exact scope, moment differentiation, conormal codimension and proofs"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H1-H3 polynomial tree, canonical blocks and return budget"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L6 full symmetric normal transposition base; full twist convention"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md",
+      "sha256": "2dea2ca7fb7e37f1c4a8f6353c28a92f1421b3b8daf60389404fd66c60625366",
+      "locator": "B1-B5 prior classification comparison and degree6 seed controls"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_stable_hermite.py",
+    "checker_sha256": "030a738921eb154e21175c2f8d825cbb1367d7d593233f8a351151b650cdbf59",
+    "receipt": "research/arithmetic/polynomial_stable_hermite_verification.json",
+    "receipt_sha256": "e676a0f9bd85a381d9a0aab15dea63e915da6b973198b798898a2ae9b6a3e097",
+    "command": "python3 research/arithmetic/verify_polynomial_stable_hermite.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "software": "Python3.12.3 standard library, assertions active",
+    "chart_scope": "31 listed exact rational charts, including full moment systems through h4 (five rows), the earlier monicity hyperplanes and residual charts. All CRT congruences, rational moment coefficients, exact monicity, critical quotient and norm/discriminant/open exclusions.",
+    "norm_control": "Newton traces compared with direct exact determinants at degree+1 points, proving the norm polynomial identity in each represented finite algebra.",
+    "orbit_scope": "15 listed complete stable passports,21392 literal tuples, one signed closure equals independent ordinary hook total in each. Actual normal-transposition graph, quotient closure, direct small group closure, all block divisors, deck and type-placement counts checked.",
+    "colored_orbit_scope": "Two additional complete fixed-pattern absolute controls of sizes160 and3500, generated by all pure braid generators plus same-type exchanges and cyclic rotations. Independent ordinary hook totals give full literal domains15360 and700000. Together17 distinct complete passports represent736752 literal tuples.",
+    "differential_scope": "Six exact moment/residue controls: full-rank h1..4 and two feasible rank-deficient antipodal-pair configurations.216 identities compare moving-contour residue derivatives to the independently constructed CRT/Vandermonde formula. The stable rank-deficient conormal has dimension2>deficiency1; the excluded k2 case has dimension1=deficiency1.",
+    "sharpness_scope": "243-tuple domain completely exhausted by disjoint216/27 closures; group orders720/48 and deck1/2 checked independently of the imported global involution classification.",
+    "negative_scope": "Five invalid domains/supports and five distinct exact-open-condition failure modes rejected.",
+    "limits": "All-parameter nonemptiness/irreducibility/group classification are written K1-K6 proofs with a primary count input. Finite charts/orbits do not establish the unrestricted theorem. No general period-cell implementation."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal proof/source/exact computation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Exact CRT converse and all exclusions",
+      "All moment degree/monicity constraints",
+      "Moving-point residue Jacobian with denominator variation checked",
+      "Feasible rank-stratum kernel bundles and product-space conormal",
+      "Pure dimension from admissible Vandermonde Jacobian; no deficient-rank components",
+      "Corrected primary count and polynomial existence",
+      "Quotients and braid/literal interpretation",
+      "Return budget excludes all proper quotients for k>=2",
+      "Single-heavy gcd power and actual full wreath group",
+      "All blocks, deck and count conventions",
+      "Complete below-threshold counterexample"
+    ]
+  }
+}

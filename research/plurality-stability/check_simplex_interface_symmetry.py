@@ -647,6 +647,139 @@ def higher_exterior_hook_checks():
             "scope": "Exact third-exterior transport, rank-one junction-pair and selected ordered coordinate identities for 4<=k<=8; selected strict positive folded exterior matrices for 4<=k<=6. A control rejects positivity of abstract row rates without their required ordering. The all-degree Gaussian creation identity S72 and complete third-hook spectral gap S73 are written proofs, not certified by these finite controls."}
 
 
+def representation_hermite_floor_checks():
+    """Finite character controls for the written all-k floor and Schur bound."""
+    @lru_cache(None)
+    def partitions(total, cap=None):
+        if total == 0:
+            return ((),)
+        cap = total if cap is None else min(cap, total)
+        return tuple((first,)+rest for first in range(cap, 0, -1)
+                     for rest in partitions(total-first, first))
+
+    def cells(shape):
+        return {(i, j) for i, length in enumerate(shape) for j in range(length)}
+
+    @lru_cache(None)
+    def character(shape, cycle):
+        # Murnaghan--Nakayama, enumerating every contained remainder shape.
+        if not cycle:
+            return int(not shape)
+        length, rest = cycle[0], cycle[1:]
+        outer, answer = cells(shape), 0
+        for remainder in partitions(sum(shape)-length):
+            inner = cells(remainder)
+            if not inner <= outer:
+                continue
+            strip = outer-inner
+            if any({(i, j), (i+1, j), (i, j+1), (i+1, j+1)} <= strip
+                   for i, j in strip):
+                continue
+            reached = {next(iter(strip))}
+            pending = list(reached)
+            while pending:
+                i, j = pending.pop()
+                for neighbor in ((i-1, j), (i+1, j), (i, j-1), (i, j+1)):
+                    if neighbor in strip and neighbor not in reached:
+                        reached.add(neighbor)
+                        pending.append(neighbor)
+            if reached == strip:
+                answer += (-1)**(len({i for i, j in strip})-1)*character(remainder, rest)
+        return answer
+
+    def centralizer(cycle):
+        counts = {v: cycle.count(v) for v in set(cycle)}
+        return math.prod(v**count*math.factorial(count) for v, count in counts.items())
+
+    def symmetric_powers(cycle, cap):
+        # det(I-t*g|E)^(-1) = (1-t)*product_l (1-t^l)^(-1).
+        values = [1]+[0]*cap
+        for length in cycle:
+            for degree in range(length, cap+1):
+                values[degree] += values[degree-length]
+        return [values[i]-(values[i-1] if i else 0) for i in range(cap+1)]
+
+    cases, multiplicity_tests, character_norms = [], 0, 0
+    for k in range(3, 10):
+        shapes = partitions(k)
+        cap = (k-1)*(k-2)//2
+        powers = {cycle: symmetric_powers(cycle, cap) for cycle in shapes}
+        for shape in shapes:
+            norm = sum(Q(character(shape, cycle)**2, centralizer(cycle)) for cycle in shapes)
+            assert norm == 1
+            character_norms += 1
+            if len(shape) == 1:
+                continue
+            degree = sum(i*length for i, length in enumerate(shape))-(len(shape)-1)
+            if degree == 0:
+                assert shape == (k-1, 1)
+            if degree == 1:
+                assert shape in ((k-2, 1, 1), (k-2, 2))
+            multiplicities = [sum(Q(character(shape, cycle)*(cycle.count(1)-1)*powers[cycle][m],
+                                      centralizer(cycle)) for cycle in shapes)
+                              for m in range(degree+1)]
+            assert all(value == 0 for value in multiplicities[:degree])
+            assert multiplicities[degree] > 0
+            assert all(value.denominator == 1 for value in multiplicities)
+            multiplicity_tests += degree+1
+            cases.append({"k": k, "partition": list(shape), "first_target_degree": degree,
+                          "target_multiplicity": int(multiplicities[degree])})
+
+    # The standard target contains degree zero: ordinary balance is separate.
+    assert next(c for c in cases if c["k"] == 5 and c["partition"] == [4, 1])["first_target_degree"] == 0
+    assert next(c for c in cases if c["k"] == 6 and c["partition"] == [3, 2, 1])["first_target_degree"] == 2
+    assert next(c for c in cases if c["k"] == 8 and c["partition"] == [2, 2, 2, 2])["first_target_degree"] == 9
+
+    # Exact rational squares of the midpoint-b and optimized-b errors.
+    midpoint_cases = []
+    for k, rho, degree in ((8, Q(1, 2), 9), (12, Q(1, 2), 15), (20, Q(3, 4), 50)):
+        b = (1+rho)/2
+        direct = 4*(k-1)**2*(1-rho*rho)*rho**(2*degree-2)/(b**(2*degree)*(1-b*b))
+        simplified = Q(64*(k-1)**2, 1)/((1+rho)*(3+rho))*(2*rho/(1+rho))**(2*degree-2)
+        assert direct == simplified
+        assert simplified < 25*(k-1)**2*(2*rho/(1+rho))**(2*degree-2)
+        midpoint_cases.append({"k": k, "rho": str(rho), "degree": degree,
+                               "relative_error_square": str(simplified)})
+    k, degree, rho = 8, 9, Q(1, 2)
+    optimized = 4*(k-1)**2*(1-rho*rho)*Q((degree+1)**(degree+1), degree**degree)*rho**(2*degree-2)
+    coarse = Q(9*(k-1)**2*(degree+1), 4**(degree-1))
+    assert optimized < Q(1, 16)
+    assert optimized < coarse == Q(4410, 65536) < Q(1, 9)
+    # A shallow-sector input must not be declared positive by the same bound.
+    shallow = 4*(6-1)**2*(1-rho*rho)*Q(3**3, 2**2)*rho**2
+    assert shallow > 1
+    # Squared balanced-remainder coefficient for b^2=2/3 in S83.
+    assert Q(16, 1)/(Q(2, 3)**2*Q(1, 3)) == 108
+    remainder_cases = []
+    for rho, b in ((Q(1, 4), Q(1, 2)), (Q(1, 2), Q(3, 4))):
+        for degree in range(2, 13):
+            assert rho**(degree-1) <= rho/b*b**(degree-1)
+        # The constant and linear terms must be removed by balance/subtraction.
+        assert rho**(-1) > rho/b*b**(-1)
+        assert Q(1) > rho/b
+        remainder_cases.append({"rho": str(rho), "b": str(b), "degrees": [2, 12]})
+    endpoint_cases = []
+    for k in range(3, 21):
+        # rho_endpoint^2, and the error divided by phi0 after sqrt(3) cancels.
+        endpoint_square = Q(1, 108*k*k*(k-1)**2)
+        error = Q(1, k*(k-1))
+        ell_lower = Q(2, k-1)
+        assert endpoint_square < Q(1, 4) < Q(2, 3)
+        assert error == ell_lower/(2*k)
+        endpoint_cases.append({"k": k, "endpoint_square": str(endpoint_square),
+                               "error_divided_phi0": str(error)})
+    return {"cell_range": [3, 9], "character_norm_controls": character_norms,
+            "graded_multiplicity_tests": multiplicity_tests, "partition_cases": cases,
+            "midpoint_bound_controls": midpoint_cases,
+            "two_column_first_instance_optimized_error_square": str(optimized),
+            "two_column_first_instance_coarse_error_square": str(coarse),
+            "shallow_sector_rejection": "passed",
+            "balanced_remainder_power_controls": remainder_cases,
+            "explicit_initial_endpoint_controls": endpoint_cases,
+            "unbalanced_and_unsubtracted_remainder_rejections": "passed",
+            "scope": "Exact graded-character controls through k=9 for the first degree in E tensor Sym^m(E) and the D=0/1 classification, rational Schur-bound algebra, the first two-column instance, and bounded Hermite-power/explicit initial-endpoint controls. The m=0/1 rejection controls require balance and subtraction of the first moment. These controls do not assert interface attainment of the polynomial target degree. The all-k Hermite vanishing, Schur bound, infinite-family positive gap and convex-covariance first-moment/explicit initial full-gap deductions in S80-S83 are written proofs."}
+
+
 def five_cell_mixed_certificate():
     """Exhaustive formal positivity certificate for the five-cell (2,2,1) block."""
     k, shape = 5, (2, 2, 1)
@@ -846,7 +979,13 @@ def standard_initial_and_antipodal_controls():
         assert all(dot(w, p0) == Q(1, 2) for w in vectors)
         transported = [k*p0[i]-sum(w[i]*dot(w, p0) for w in vectors) for i in range(k)]
         assert transported == [Q(k, 2)*a for a in p0]
-        initial.append({"k": k, "moment_direction_eigenvalue": str(Q(k, 2))})
+        for j in range(2, k-1):
+            value = [Q(0)]*k
+            value[j], value[j+1] = Q(1), Q(-1)
+            image = [k*value[i]-sum(w[i]*dot(w, value) for w in vectors) for i in range(k)]
+            assert image == [(k-1)*a for a in value]
+        initial.append({"k": k, "moment_direction_eigenvalue": str(Q(k, 2)),
+                        "two_row_direction_eigenvalue": k-1})
     obstruction = []
     for k in range(7, 21):
         rays = {m: [Q(k-m)]*m+[Q(-m)]*(k-m) for m in range(2, k)}
@@ -1170,6 +1309,7 @@ def main():
                          "standard_mass_weight": standard_mass_weight_control(),
                          "standard_hook_gaussian": standard_hook_gaussian_controls(),
                          "higher_exterior_hooks": higher_exterior_hook_checks(),
+                         "representation_hermite_floors": representation_hermite_floor_checks(),
                          "five_cell_mixed_certificate": five_cell_mixed_certificate(),
                          "standard_initial_and_antipodal": standard_initial_and_antipodal_controls(),
                          "convex_nonlocal_mass_counterexample": convex_nonlocal_mass_counterexample(),

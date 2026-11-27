@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "ab5eed90c2b6e29fd21ea5575f49886d0ad0275c9a1b279eee7b0b2adbd30c8e",
-  "proof_source_sha256": "5c7f42535ac4359e1f28d9639e0af9f883104b1f7a2fe920f30594e3c5c8d1f1",
+  "checker_sha256": "54943248a56a4427abd05b982da50d1dbfe0946815c9871f8790e210c7f2eb97",
+  "proof_source_sha256": "176ad15ae157e4763bf77f19699933ea5c3ec4e19e1a4f119a2ad76fd78e2a7c",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -596,6 +596,1087 @@
       "unordered_positive_rates_control": "passed",
       "scope": "Exact third-exterior transport, rank-one junction-pair and selected ordered coordinate identities for 4<=k<=8; selected strict positive folded exterior matrices for 4<=k<=6. A control rejects positivity of abstract row rates without their required ordering. The all-degree Gaussian creation identity S72 and complete third-hook spectral gap S73 are written proofs, not certified by these finite controls."
     },
+    "representation_hermite_floors": {
+      "cell_range": [
+        3,
+        9
+      ],
+      "character_norm_controls": 93,
+      "graded_multiplicity_tests": 551,
+      "partition_cases": [
+        {
+          "k": 3,
+          "partition": [
+            2,
+            1
+          ],
+          "first_target_degree": 0,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 3,
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 4,
+          "partition": [
+            3,
+            1
+          ],
+          "first_target_degree": 0,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 4,
+          "partition": [
+            2,
+            2
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 4,
+          "partition": [
+            2,
+            1,
+            1
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 4,
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 5,
+          "partition": [
+            4,
+            1
+          ],
+          "first_target_degree": 0,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 5,
+          "partition": [
+            3,
+            2
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 5,
+          "partition": [
+            3,
+            1,
+            1
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 5,
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 5,
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 5,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 6,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            5,
+            1
+          ],
+          "first_target_degree": 0,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            4,
+            2
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            4,
+            1,
+            1
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            3,
+            3
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            3,
+            2,
+            1
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            2,
+            2,
+            2
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 6,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 6,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 10,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            6,
+            1
+          ],
+          "first_target_degree": 0,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            5,
+            2
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            5,
+            1,
+            1
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            4,
+            3
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            4,
+            2,
+            1
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            4,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            3,
+            3,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            3,
+            2,
+            2
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            3,
+            2,
+            1,
+            1
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 6,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "first_target_degree": 6,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            2,
+            2,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 7,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 10,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 7,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 15,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            7,
+            1
+          ],
+          "first_target_degree": 0,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            6,
+            2
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            6,
+            1,
+            1
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            5,
+            3
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            5,
+            2,
+            1
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            5,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            4,
+            4
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            4,
+            3,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            4,
+            2,
+            2
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            4,
+            2,
+            1,
+            1
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            4,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 6,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            3,
+            3,
+            2
+          ],
+          "first_target_degree": 5,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            3,
+            3,
+            1,
+            1
+          ],
+          "first_target_degree": 5,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            3,
+            2,
+            2,
+            1
+          ],
+          "first_target_degree": 6,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            3,
+            2,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 7,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 10,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "first_target_degree": 9,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
+          "first_target_degree": 9,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            2,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 11,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 15,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 8,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 21,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            8,
+            1
+          ],
+          "first_target_degree": 0,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            7,
+            2
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            7,
+            1,
+            1
+          ],
+          "first_target_degree": 1,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            6,
+            3
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            6,
+            2,
+            1
+          ],
+          "first_target_degree": 2,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            6,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            5,
+            4
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            5,
+            3,
+            1
+          ],
+          "first_target_degree": 3,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            5,
+            2,
+            2
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            5,
+            2,
+            1,
+            1
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            5,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 6,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            4,
+            4,
+            1
+          ],
+          "first_target_degree": 4,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            4,
+            3,
+            2
+          ],
+          "first_target_degree": 5,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            4,
+            3,
+            1,
+            1
+          ],
+          "first_target_degree": 5,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            4,
+            2,
+            2,
+            1
+          ],
+          "first_target_degree": 6,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            4,
+            2,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 7,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            4,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 10,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            3,
+            3,
+            3
+          ],
+          "first_target_degree": 7,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            3,
+            3,
+            2,
+            1
+          ],
+          "first_target_degree": 7,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            3,
+            3,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 8,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            3,
+            2,
+            2,
+            2
+          ],
+          "first_target_degree": 9,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            3,
+            2,
+            2,
+            1,
+            1
+          ],
+          "first_target_degree": 9,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            3,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 11,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 15,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            2,
+            2,
+            2,
+            2,
+            1
+          ],
+          "first_target_degree": 12,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            2,
+            2,
+            2,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 13,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 16,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 21,
+          "target_multiplicity": 1
+        },
+        {
+          "k": 9,
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_target_degree": 28,
+          "target_multiplicity": 1
+        }
+      ],
+      "midpoint_bound_controls": [
+        {
+          "k": 8,
+          "rho": "1/2",
+          "degree": 9,
+          "relative_error_square": "117440512/129140163"
+        },
+        {
+          "k": 12,
+          "rho": "1/2",
+          "degree": 15,
+          "relative_error_square": "8315056685056/480412641554181"
+        },
+        {
+          "k": 20,
+          "rho": "3/4",
+          "degree": 50,
+          "relative_error_square": "2236188663310464920660434360358484131213358264706244348463871809037164734324932608/2310340364017684279531891263643012007755145142074732429238496665279779614026377185715"
+        }
+      ],
+      "two_column_first_instance_optimized_error_square": "478515625/8264970432",
+      "two_column_first_instance_coarse_error_square": "2205/32768",
+      "shallow_sector_rejection": "passed",
+      "balanced_remainder_power_controls": [
+        {
+          "rho": "1/4",
+          "b": "1/2",
+          "degrees": [
+            2,
+            12
+          ]
+        },
+        {
+          "rho": "1/2",
+          "b": "3/4",
+          "degrees": [
+            2,
+            12
+          ]
+        }
+      ],
+      "explicit_initial_endpoint_controls": [
+        {
+          "k": 3,
+          "endpoint_square": "1/3888",
+          "error_divided_phi0": "1/6"
+        },
+        {
+          "k": 4,
+          "endpoint_square": "1/15552",
+          "error_divided_phi0": "1/12"
+        },
+        {
+          "k": 5,
+          "endpoint_square": "1/43200",
+          "error_divided_phi0": "1/20"
+        },
+        {
+          "k": 6,
+          "endpoint_square": "1/97200",
+          "error_divided_phi0": "1/30"
+        },
+        {
+          "k": 7,
+          "endpoint_square": "1/190512",
+          "error_divided_phi0": "1/42"
+        },
+        {
+          "k": 8,
+          "endpoint_square": "1/338688",
+          "error_divided_phi0": "1/56"
+        },
+        {
+          "k": 9,
+          "endpoint_square": "1/559872",
+          "error_divided_phi0": "1/72"
+        },
+        {
+          "k": 10,
+          "endpoint_square": "1/874800",
+          "error_divided_phi0": "1/90"
+        },
+        {
+          "k": 11,
+          "endpoint_square": "1/1306800",
+          "error_divided_phi0": "1/110"
+        },
+        {
+          "k": 12,
+          "endpoint_square": "1/1881792",
+          "error_divided_phi0": "1/132"
+        },
+        {
+          "k": 13,
+          "endpoint_square": "1/2628288",
+          "error_divided_phi0": "1/156"
+        },
+        {
+          "k": 14,
+          "endpoint_square": "1/3577392",
+          "error_divided_phi0": "1/182"
+        },
+        {
+          "k": 15,
+          "endpoint_square": "1/4762800",
+          "error_divided_phi0": "1/210"
+        },
+        {
+          "k": 16,
+          "endpoint_square": "1/6220800",
+          "error_divided_phi0": "1/240"
+        },
+        {
+          "k": 17,
+          "endpoint_square": "1/7990272",
+          "error_divided_phi0": "1/272"
+        },
+        {
+          "k": 18,
+          "endpoint_square": "1/10112688",
+          "error_divided_phi0": "1/306"
+        },
+        {
+          "k": 19,
+          "endpoint_square": "1/12632112",
+          "error_divided_phi0": "1/342"
+        },
+        {
+          "k": 20,
+          "endpoint_square": "1/15595200",
+          "error_divided_phi0": "1/380"
+        }
+      ],
+      "unbalanced_and_unsubtracted_remainder_rejections": "passed",
+      "scope": "Exact graded-character controls through k=9 for the first degree in E tensor Sym^m(E) and the D=0/1 classification, rational Schur-bound algebra, the first two-column instance, and bounded Hermite-power/explicit initial-endpoint controls. The m=0/1 rejection controls require balance and subtraction of the first moment. These controls do not assert interface attainment of the polynomial target degree. The all-k Hermite vanishing, Schur bound, infinite-family positive gap and convex-covariance first-moment/explicit initial full-gap deductions in S80-S83 are written proofs."
+    },
     "five_cell_mixed_certificate": {
       "k": 5,
       "partition": [
@@ -734,43 +1815,53 @@
       "initial_rank_one_transport": [
         {
           "k": 3,
-          "moment_direction_eigenvalue": "3/2"
+          "moment_direction_eigenvalue": "3/2",
+          "two_row_direction_eigenvalue": 2
         },
         {
           "k": 4,
-          "moment_direction_eigenvalue": "2"
+          "moment_direction_eigenvalue": "2",
+          "two_row_direction_eigenvalue": 3
         },
         {
           "k": 5,
-          "moment_direction_eigenvalue": "5/2"
+          "moment_direction_eigenvalue": "5/2",
+          "two_row_direction_eigenvalue": 4
         },
         {
           "k": 6,
-          "moment_direction_eigenvalue": "3"
+          "moment_direction_eigenvalue": "3",
+          "two_row_direction_eigenvalue": 5
         },
         {
           "k": 7,
-          "moment_direction_eigenvalue": "7/2"
+          "moment_direction_eigenvalue": "7/2",
+          "two_row_direction_eigenvalue": 6
         },
         {
           "k": 8,
-          "moment_direction_eigenvalue": "4"
+          "moment_direction_eigenvalue": "4",
+          "two_row_direction_eigenvalue": 7
         },
         {
           "k": 9,
-          "moment_direction_eigenvalue": "9/2"
+          "moment_direction_eigenvalue": "9/2",
+          "two_row_direction_eigenvalue": 8
         },
         {
           "k": 10,
-          "moment_direction_eigenvalue": "5"
+          "moment_direction_eigenvalue": "5",
+          "two_row_direction_eigenvalue": 9
         },
         {
           "k": 11,
-          "moment_direction_eigenvalue": "11/2"
+          "moment_direction_eigenvalue": "11/2",
+          "two_row_direction_eigenvalue": 10
         },
         {
           "k": 12,
-          "moment_direction_eigenvalue": "6"
+          "moment_direction_eigenvalue": "6",
+          "two_row_direction_eigenvalue": 11
         }
       ],
       "antipodal_obstruction": [

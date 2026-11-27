@@ -9,7 +9,7 @@
   },
   "checker_sha256": "b7049af4d9b0086a251ac4bd933d077fe58f1f960e78e3307fec1b617001703c",
   "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
-  "proof_source_sha256": "e72ee7812ee9d9a252260061c449617c2b2b54f7ee61b7aa49e972f7d5fcec3d",
+  "proof_source_sha256": "2b17ea5797e4624f1e6f8848e26d0bdaa1f44e19d2c4de6d5ad4c020559aabec",
   "result": {
     "status": "pass",
     "arb_precision_bits": 100,

@@ -2215,6 +2215,53 @@ and their annular and reflection witnesses remain valid. The global
 comparison beyond this direct interval and below the near-one interval
 remains open.
 
+## Isolating radial directions and proving their angular cost
+
+### Theorem DG16 (finite adverse modes and directional angular domination)
+
+The [radial and angular mode proof](THREE_CELL_RADIAL_ANGULAR_MODE_ISOLATION.md)
+establishes the following three statements, with their proofs and
+normalizations in RMA1--RMA14.
+
+First, the compressed weighted scalar operator is compact at every
+\(0<\rho<1\), not only below \(1/2\). The new lower bound
+\(J_\rho(t)\ge j_I\min(\sqrt t,1)\) on each compact correlation
+interval restores an integrable Hilbert--Schmidt tail at all such
+correlations. All positive or nearly positive scalar modes therefore
+lie in a uniformly finite-dimensional space. On its complement the
+scalar form has a fixed negative gap.
+
+Second, Hermite interpolation of the exponential angular kernel gives
+global moment-loss bounds (RMA5)--(RMA7), with exact angular optimizations
+over finitely many endpoints and allowing disconnected cells. At
+quadratic order about balanced circular masses, some finite angular
+order outweighs every positive scalar radial direction uniformly on
+each compact correlation interval, by (RMA12). The order is qualitative;
+it is not uniform as \(\rho\uparrow1\). This directional assertion
+does not bound every finite-amplitude mass profile.
+
+Third, at \(\rho=99/100\) the two-dimensional radial space spanned by
+the explicit \(f\) in (DG21) and \(g\) following (DG40) has exactly
+one positive direction for the older exact-arc/secant quadratic bound.
+The second angular mode makes the entire block negative:
+\[
+ q_{99/100}^{[2]}(c_f f+c_g g)\le-(c_f^2+c_g^2)/30000.
+ \tag{DG67}
+\]
+The directed closed-form checker proves the matrix inequality, and the
+uniform Taylor argument gives a common small-profile comparison over
+all unit directions in that block, with arbitrary angular shapes.
+This repairs an isolated adverse block rather than only one test
+function. It does not claim that this block contains every adverse
+mode of the unrestricted scalar operator.
+
+The remaining direct step is quantitative domination at every feasible
+amplitude: the unavoidable angular loss plus the negative radial
+remainder must exceed the positive finite-mode contribution in (RMA4).
+The source proves the complete quadratic directional statement and
+one explicit block certificate; this global nonlinear amplitude
+inequality remains open.
+
 ## Remaining obligation and reproducible controls
 
 Completing the all-positive-correlation statement requires a comparison

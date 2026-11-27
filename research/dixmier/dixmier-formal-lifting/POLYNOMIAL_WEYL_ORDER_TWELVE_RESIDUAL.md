@@ -313,3 +313,10 @@ gives a third commuting indicial shift at the multiplicity-three
 roots. The same note gives the bound on the number of small
 roots and the exact form when the multiplicity-fifteen root is
 unique.
+
+The simultaneous Euler-face transfer
+[excludes every multiplicity-three root](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_OUTER_FIBRES.md#exclusion-of-the-multiplicity-three-roots)
+in an actual reduced Weyl pair. The remaining profiles
+have an even number of multiplicity-fifteen roots. Their
+transferred planar pairs have
+[exact geometric degree eight times that number](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_OUTER_FIBRES.md#exact-geometric-degree-and-genus).

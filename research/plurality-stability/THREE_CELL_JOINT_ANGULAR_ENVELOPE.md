@@ -583,3 +583,112 @@ masses, narrow enough to preserve the four strict output
 signs. The input then has two cyclic sign changes. This
 example concerns signed convolution, independent of the
 mass-constrained optimizer.
+
+## Compatibility of exact paired maximizers across radii
+
+Fix $0<\rho<1$. Suppose the angular slices of an ordinary planar
+partition attain the exact paired envelope for almost every
+pair of positive radii. Then almost every slice consists of a
+single arc for each positive label, with empty or full arcs
+allowed. In addition, the sets of radii with exactly two and
+exactly three positive masses cannot both have positive radial
+measure.
+
+At almost every radius $r$, the slice is a Lebesgue point in
+$L^1(S^1)^3$ on compact intervals of positive radii. For almost
+every such $r$ the paired equality also holds for almost every
+partner radius. Choose partner radii tending to $r$ along which
+the slices converge in $L^1$ to that at $r$. The pairing is
+continuous under this limit, since the kernels converge
+uniformly. The envelope has the same continuity by its mass
+Lipschitz bound and the uniform kernel convergence. Thus the
+slice at $r$ attains its self-envelope. Consecutive arcs with
+the prescribed masses attain the sum of the scalar self bounds
+for any mass vector. Equality requires every nontrivial label
+to be an arc by the positive cosine component in the proof of
+(JA2).
+
+For a two-label slice paired with a three-label slice, the
+boundary envelope formula in the finite arc reduction shows
+that equality must attain both scalar upper bounds. Again
+subtract the positive cosine component. For each matched label,
+equality of the cosine term requires that its arc centers agree
+in the two slices, since both first moment norms are strictly
+positive. In a two-label slice the two arc centers are
+antipodal. In a three-label arc partition the distance between
+the centers of any two arcs is $\pi(p_i+p_j)<\pi$, by measuring
+along their common endpoint. Thus no pair of these two types
+attains the envelope. Positive radial measure of both types
+would contradict the assumed paired equality almost everywhere.
+
+## Sharp circular mass penalty for the first moment
+
+For every $p\in\Delta_3$, put $B(p)=\sum_i(p_i-1/3)^2$.
+Then
+\[
+ \sum_i\sin^2(\pi p_i)\le \frac94-\frac32 B(p).
+ \tag{JA7}
+\]
+Equality holds at the equal vector and at permutations of
+$(0,1/2,1/2)$, so the coefficient of $B$ is optimal. To prove
+it, use $\sum_i\sin^2(\pi p_i)=2+2\prod_i\cos(\pi p_i)$.
+When all $p_i\le1/2$, put $q_i=1/2-p_i$, with $\sum q_i=1/2$.
+The desired bound on the product becomes
+$\prod_i\sin(\pi q_i)\le(3/2)\sum_{i<j}q_iq_j$.
+The logarithm of $\sin(\pi q)/q^{2/3}$ is strictly concave
+on $(0,1/2)$, since its second derivative is
+$-\pi^2/\sin^2(\pi q)+2/(3q^2)<0$. Jensen's inequality gives
+$\prod_i\sin(\pi q_i)\le(9/2)(q_1q_2q_3)^{2/3}$; apply the
+arithmetic-geometric mean inequality to the three products
+$q_iq_j$, and take boundary limits. When $p_1>1/2$, put
+$s=1-p_1<1/2$. The cosine addition formula gives
+$\cos(\pi p_2)\cos(\pi p_3)\ge\cos(\pi s)$, so the cosine
+product is at most $-\cos^2(\pi s)\le-4(1/2-s)^2$. Also
+$B(p)\le2/3-2s+2s^2$, which gives
+$1/8-3B(p)/4\ge-(3/2)(1/2-s)^2$. This proves the bound also
+in this case, with strict inequality.
+
+The norm of the first Gaussian moment vector of an ordinary
+planar partition satisfies
+\[
+ \sqrt{M_1(A)}\le\frac{3}{\sqrt{8\pi}}-
+          \frac{1}{2\pi}\int r B(p(r))d\mu(r),\qquad
+ M_1(A)=\sum_i\left|\int_{A_i}x\,d\gamma_2(x)\right|^2 .
+ \tag{JA8}
+\]
+Indeed the per-circle moment caps are $\sin(\pi p_i)/\pi$.
+The triangle inequality applied to the vector of the three
+integrated moments bounds its norm by the integral of the
+per-circle norm. Use (JA7) and the linear upper tangent to
+the square root at $9/(4\pi^2)$. The reference moment is the
+integral of the constant per-circle norm $3/(2\pi)$ times $r$.
+
+For balanced partitions, (JA8) also gives an explicit exclusion
+of some large radial deviations at intermediate correlations.
+Let $B_0=\int B(p(r))d\mu(r)$, $W=\int r B(p(r))d\mu(r)$,
+and put $a=\log(3/2)$, $b=\log 3$ and
+$M=[4a^2+(2a-b)^2+b^2]/9$. Orthogonality of the radial and
+angular-mean-zero parts of the indicators gives
+\[
+\begin{split}
+ S_\rho(A)\le {}&\tfrac13+\rho^4 B_0+(\rho^2-\rho^4)\min(M,B_0)\\
+ &+\min\left\{\rho(2/3-B_0),\ \rho^2(2/3-B_0)
+       +(\rho-\rho^2)\left(\frac3{\sqrt{8\pi}}-\frac{W}{2\pi}\right)^2\right\} .
+ \tag{JA9}
+\end{split}
+To bound the radial degree-two coefficient, use $t=r^2/2$
+and $m_i=\int(t-1)p_i\,d\nu$. In the scalar product
+$\sum_i m_i\int(t-1)p_i\,d\nu$, hold the weights $m_i$ fixed
+and sort them. The optimal assignment allocates the three
+ordered quantile intervals with endpoints $a,b$ to the
+ordered weights. One proof writes the sorted weights as a
+constant plus two nonnegative increments times upper
+label sums, and maximizes each integral against the
+increasing function $t-1$ by the upper tail of its prescribed
+mass. The squared norm of the resulting moment vector is
+$M$, so Cauchy–Schwarz gives $\sum_i m_i^2\le M$. It is also
+at most $B_0$ by projection. All remaining nonconstant radial
+Hermite degrees are at least four. The angular-mean-zero
+part has total squared norm $2/3-B_0$, first-degree weight
+$M_1(A)$, and all remaining degrees at least two. Apply the
+corresponding eigenvalue bounds and (JA8) to obtain (JA9).

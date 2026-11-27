@@ -2155,8 +2155,9 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | All-degree component criterion for one arbitrary factor and a single-cycle tail | Internal result | proved | [Source](POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md) |
 | Colored period reduction and explicit algebraic cubic coupling pair | Internal result | proved | [Source](POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md) |
 | Rational Hermite charts for positive-dimensional power-phase components | Internal result | proved | [Source](POLYNOMIAL_HERMITE_POWER_PHASE_CHARTS.md) |
+| A simple-branch threshold for arbitrary polynomial passport components | Internal result | proved | [Source](POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md) |
 
-**Computed obligations:** 208 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 209 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -2329,6 +2330,7 @@ Scope limits:
 - F1–F3 of POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md import the actual CGPT2026 fixed-residue theorem through a written df/f bridge: one arbitrary nonidentity lambda plus s>=2 single-cycle tails has two components exactly for strict lambda and all-odd tails, otherwise one. All actual groups/gcd block systems/decks are explicit. Separate split degrees and finite lifting identification remain open; arbitrary multiple-disconnected-factor passports remain outside the result.
 - G1–G4 of POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md give every passport as a colored integer-period diagonal and a finite rational-cell reduction via the explicitly imported November2026 CMST period model. Root gcd produces canonical power phases, which are insufficient: the exact quartic-square parameters(9+/-3sqrt3)/16 give the same-phase/same-class H576 cubic pair. General graph construction/classification and full-branch quotient actions remain open; connected ambient fibers can contain genuinely cubic-split positive-dimensional diagonals.
 - J1–J4 of POLYNOMIAL_HERMITE_POWER_PHASE_CHARTS.md give exact rational coefficient models for the positive-dimensional stable family(2^n),(2^a1^(2n-2a)),T^(n-a-1),n>2a>=4. Every phase component is rational overQ of dimension n-a-1, with S_n-wr-C2, all blocks/deck and exact sizes. A working Hermite/norm generator and degree10 surfaces test grouped critical-value diagonals. This is a separate proof/model for previously classified counts; it does not implement general period graphs or add a genuine lifting split.
+- K1–K6 of POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md classify all arbitrary polynomial passports with s>=max(1,p-k), p the total nontrivial cycles and k the number of non-transposition factors: one component, full CRT/moment coefficient spaces, rational root-marked locus, unirational affine quotient and exact actual groups/blocks/decks/counts. A moving-point Vandermonde Jacobian and polynomial-product conormal bound exclude every deficient-rank component. At least two such factors force S_N; a single factor has the gcd cyclic wreath group. The degree6 DT,DT,T split lies one level below. General lower-simple and zero-simple classification stays open.
 
 Tracked obligations (computed states):
 
@@ -2493,5 +2495,6 @@ Tracked obligations (computed states):
 - **verification / open:** [Independently audit/replay the colored-period finite reduction and exact quartic cubic split.](POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md) — VERIFY-ARITH-POLYNOMIAL-PERIOD-DIAGONALS-AND-QUARTIC-CUBIC-SPLIT
 - **mathematical / open:** [Classify the colored integer-period cell graphs and full-branch quotients, with actual groups, counts, blocks, decks and lifting data.](POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md) — GAP-ARITH-POLYNOMIAL-PERIOD-DIAGONAL-COMPONENT-CLASSIFICATION
 - **verification / open:** [Independently audit/replay the rational Hermite phase charts and stable-range exact sizes.](POLYNOMIAL_HERMITE_POWER_PHASE_CHARTS.md) — VERIFY-ARITH-POLYNOMIAL-HERMITE-PHASE-RATIONALITY
+- **verification / open:** [Independently audit/replay the stable Hermite simple-branch threshold and exact groups/counts.](POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md) — VERIFY-ARITH-POLYNOMIAL-STABLE-HERMITE-CLASSIFICATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -468,3 +468,8 @@ above a single high \(x\)-value there are both poles
 and regular points of \(Q\), which is impossible for
 a rational function of \(x\) on that fibre.
 Hence \(k(P,Q,x)=k(x,X)\).
+
+The [two-Euler refinement](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_OUTER_FIBRES.md)
+excludes small roots and accounts for twelve regular
+outer points. In that refined transfer the geometric
+degree equals the high-root pole lower bound.
