@@ -18,6 +18,236 @@ use simultaneous approximation to obtain ordinary occupancy of order
 at least \(\log q/\log\log q\) infinitely often. Their approximation
 conditions do not impose pairwise coprimality.
 
+## Coprime occupancy with quadratic logarithmic height
+
+**Theorem (Coprime occupancy with exponent one half).** For every sufficiently
+large integer \(m\), there is an open interval \((q^2,(q+1)^2)\) containing
+at least \(3m/8\) pairwise coprime nonsquare powerful integers, with
+\(q\ge m\) and \(\log q=O(m^2\log m)\). In particular the coprime occupancy
+is \(\gg(\log q/\log\log q)^{1/2}\) along an unbounded sequence of \(q\).
+
+Use the same Laurent cancellation as below, with prime shifts of size
+\(O(m\log m)\). Interpolation over the small prime completions allows
+these shifts to stay small. Once the argument \(B^2\) is fixed, we use
+the rank of the evaluation forms in the remaining coefficients to
+bound the number of pairs that share a larger prime.
+
+### Cancellation and small-prime interpolation
+
+Choose \(P_0=\lceil C m\log m\rceil>4m+5\) with a sufficiently large
+absolute constant \(C\). The elementary prime count below supplies \(m\)
+distinct odd primes \(d_1,\ldots,d_m\le P_0\) from one residue class
+modulo \(8\). Put \(n=2m\), \(c_j=\binom{-3/2}{j}\) and
+\[
+ R_0(T)=\prod_i(T-d_i)=\sum_{j=0}^m a_jT^j,\qquad
+ S(T)=\sum_{\ell=0}^m s_\ell T^\ell,\qquad
+ R_0(T)S(T)=\sum_{k=0}^n r_k T^k .
+\]
+The coefficients of \(S\) will be rational with power-of-two denominators.
+Set
+\[
+ \lambda_k(Z,d)=\frac{1}{c_{k+1}}\sum_{j=0}^k c_j d^j Z^{k-j},
+ \qquad
+ P(Z)=\sum_{k=0}^n\frac{r_k}{c_{k+1}} Z^k,\qquad
+ L_i(Z)=\sum_{k=0}^n r_k\lambda_k(Z,d_i).
+\]
+The coefficient of \(Z^{-1}\) in \(P(Z)(1+d_i/Z)^{-3/2}\) is
+\(d_iR_0(d_i)S(d_i)=0\), and \(L_i(Z)\) is the polynomial part.
+For \(E=2T\frac{d}{dT}+3\) and \(\Phi=E^{-1}(R_0S)\), we also have
+\(L_i(0)=\Phi(d_i)\). Indeed \(E\) multiplies \(T^k\) by \(2k+3\),
+and \(c_k/c_{k+1}=-1+1/(2k+3)\).
+
+For an odd prime \(p\le P_0\), construct
+\(\Phi_p\in\mathbb Z_p[T]\) of degree less than \(2m\) such that
+\(E\Phi_p(d_i)=0\) for all \(i\) and \(\Phi_p(d_i)\) is a unit
+whenever \(d_i\) is. For the shifts in a nonzero class \(a\bmod p\)
+use the series \((1+(T-a)/a)^{-3/2}\) in the quotient by the product
+of \((T-d_i)^2\) over that class, taking \(a\) to be an integer
+representative. The binomial coefficients are \(p\)-integral. If
+there are \(r\) shifts in the class, \((T-a)^{2r}\) is divisible by
+\(p\) in the quotient, so this series converges there. Evaluation
+modulo each \((T-d_i)^2\) gives its value and first derivative at \(d_i\).
+The value is \(1\bmod p\) and the series satisfies \(Ef=0\).
+For the zero class use the zero polynomial. The defining products for
+distinct classes are comaximal over \(\mathbb Z_p\), since they have
+unit resultants. The polynomial Chinese remainder theorem gives
+\(\Phi_p\).
+
+At \(p=2\), let \(a\) be an odd representative of the common class
+modulo \(8\), and write \(U=(T-a)/8\). In the finite free
+\(\mathbb Z_2\)-algebra obtained by quotienting by
+\(\prod_i(U-(d_i-a)/8)^2\), use \((1+8U/a)^{-3/2}\).
+Its \(j\)-th coefficient has valuation at least \(j\), so the series
+converges. Its polynomial representative of degree less than \(2m\)
+gives a polynomial \(\Phi_2\) in \(T\) with coefficient valuations at
+least \(-6m\). Evaluation modulo the squared linear factors gives
+unit values at every \(d_i\) and the same differential equation
+\(E\Phi_2(d_i)=0\), by the change of variable. The quotient maps
+used in both constructions are continuous on the finite free
+coefficient modules, so taking the limits preserves the value and
+derivative identities.
+
+For each \(p\le P_0\), \(S_p=E\Phi_p/R_0\) is a polynomial of degree
+less than \(m\). Division by the monic \(R_0\) preserves the coefficient
+valuation bounds. Put
+\[
+ e_p=1+\lfloor\log_p(4m+3)\rfloor,\qquad D_0=2^{6m},\qquad
+ K=D_0\prod_{p\le P_0}p^{e_p},\qquad X=m^{12}.
+\]
+Choose \(A_\ell\in[0,K)\) by the integer Chinese remainder theorem
+so that
+\[
+ D_0s_\ell=A_\ell+Kh_\ell,\qquad X\le h_\ell<2X,\qquad h_\ell\in\mathbb Z,
+\]
+gives \(v_p(S-S_p)\ge e_p\) coefficientwise at every \(p\le P_0\).
+For this, approximate the \(p\)-integral coefficient of \(D_0S_p\)
+to precision \(p^{e_p+v_p(D_0)}\). Applying \(E^{-1}\) loses at
+most \(e_p-1\) powers of \(p\). Thus every \(L_i(0)\) is integral at
+these primes, with residue \(\Phi_p(d_i)\).
+
+Require \(B\) to be divisible by \(K_B=\prod_{p\le P_0}p^{b_p}\),
+where \(b_2=10m+10\) and \(b_p=1+2\lfloor\log_p(4m+3)\rfloor\)
+at odd \(p\). Then \(L_i(B^2)\equiv L_i(0)\bmod p\) at all these
+primes. To see this, each term of positive \(Z\)-degree in
+\(L_i(Z)\) has valuation at least \(1\) upon substituting \(Z=B^2\).
+At odd \(p\) the \(r_k,c_j\) are integral and
+\(v_p(c_{k+1})\le 2\lfloor\log_p(4m+3)\rfloor\), by the binomial
+formula and the factorial valuation formula. At \(2\) we have
+\(v_2(r_k)\ge-6m\), \(v_2(c_j)\ge-2j\) and \(v_2(c_{k+1})\le0\),
+also by the binomial formula. Beyond \(P_0\), the denominators in
+\(L_i\) are units. Consequently \(L_i(B^2)\) is an integer. Also,
+every prime \(p\le P_0\) can divide at most one of
+\((B^2+d_i)L_i(B^2)\), namely the one with \(d_i=p\) if such a
+shift is present.
+
+### Choosing the square argument
+
+The primorial bound below gives \(\log K,\log K_B=O(m\log m)\).
+Indeed the extra powers beyond the primorial contribute at most
+\(O(m\log m)\) in total, since only \(p\le4m+3\) contribute them.
+The coefficient heights of \(P\) and all \(L_i\) are bounded by a
+uniform \(H=\exp(O(m\log m))\) for all the allowed \(h_\ell\).
+This follows from \(\sum |a_j|\le\prod_i(1+d_i)\), the bounds
+on \(s_\ell\) and \(d_i\), and \(1\le |c_j|\le 2j+1\).
+The common leading coefficient has modulus
+\(|s_m/c_{n+1}|\ge 1/(2n+3)\), since \(s_m\ge1\).
+Hence the Laurent remainder estimate below supplies a threshold
+of logarithm \(O(m\log m)\) above which \(B^2+d_i\) is strictly
+between consecutive squares, \(P(B^2)\) and all \(L_i(B^2)\)
+are nonzero, and
+\[
+ \big|(B^2+d_i)^{3/2}|L_i(B^2)|-|B^3P(B^2)|\big|<\tfrac12 .
+\]
+The same threshold can ensure \(|B^3P(B^2)|\ge m+2\), using
+leading-term dominance uniformly in \(S\).
+
+Choose \(B\) beyond this threshold, with \(K_B\mid B\) and with
+no prime \(P_0<p\le Y=m^3\) dividing any \(B^2+d_i\).
+Write \(B=K_B b\). For each of these primes at most \(2m\) classes
+of \(b\) are forbidden, so their densities \(v_p\) satisfy
+\(v_p<1/2\). The bound \(\pi(x)\ll x/\log x\) and partial summation
+give \(\sum_{P_0<p\le Y}1/p=O(1)\). Thus
+\(V=\prod_p(1-v_p)\ge \exp(-2\sum_p v_p)=\exp(-O(m))\).
+As in the progression estimate below, truncate inclusion-exclusion
+at a sufficiently large odd order \(O(m)\). With \(S_0=\sum_p v_p\),
+the absolute main-term tail is bounded by
+\(\sum_{j>k}S_0^j/j!\) at order \(k\), which is at most \(V/2\)
+for \(k\) a sufficiently large odd integer of size \(O(S_0+1)\).
+The integer counting error is at most the sum of the forbidden
+class counts for the subsets used, bounded by
+\(\sum_{j\le k}(2mY)^j=\exp(O(m\log m))\).
+An interval of \(b\) of length \(\exp(O(m\log m))\), starting beyond
+the prescribed threshold, then contains an admissible \(b\). This
+gives \(\log B=O(m\log m)\). The numbers \(B^2+d_i\) are pairwise
+coprime. At \(p\le P_0\) only \(d_i=p\) can contribute, and at
+\(p>P_0\) the differences of the shifts are nonzero modulo \(p\).
+
+### Rank and large-prime collisions
+
+Fix \(Z=B^2\). The \(m\) forms \(L_i(Z)\) in the coefficients of \(S\)
+have rank \(m\) over every \(\mathbb F_p\) with \(p>P_0\).
+For a relation with weights \(w_i\), put
+\(\mu_k=\sum_i w_i\lambda_k(Z,d_i)\). Vanishing of the relation
+on coefficients of \(S\) says \(\sum_{j=0}^m a_j\mu_{j+\ell}=0\)
+for \(0\le\ell\le m\). Since \(R_0\) is monic and the shifts
+are distinct modulo \(p\), the Vandermonde matrix on the first
+\(m\) terms and this recurrence yield
+\(\mu_k=\sum_i C_i d_i^k\) for \(0\le k\le2m\).
+The identity
+\[
+ (2k+3)\lambda_k(Z,d_i)+2(k+1)Z\lambda_{k-1}(Z,d_i)
+   =-2(k+1)d_i^k,\qquad 1\le k\le2m,
+\]
+therefore implies
+\[
+ \sum_i\bigl((2k+3)C_i+2(k+1)(ZC_i/d_i+w_i)\bigr)d_i^k=0
+ \qquad(1\le k\le2m).
+\]
+The sequences \(d_i^k\) and \(k d_i^k\) are independent on these
+indices. Indeed, relabeling \(k=j+1\) identifies relations
+between them with relations between evaluations and first
+derivatives on polynomials of degree less than \(2m\), since the
+\(d_i\) are nonzero. These evaluation and derivative functionals
+are independent by the Chinese remainder theorem modulo
+\(\prod_i(T-d_i)^2\). For each \(i\), subtracting the coefficient
+of \(k\) in the last displayed relation from its constant
+coefficient gives \(C_i=0\), and then \(w_i=0\).
+
+After the substitution \(D_0s_\ell=A_\ell+Kh_\ell\), clear
+denominators by a common factor supported at primes at most \(P_0\),
+for instance \(D_0\,4^{2n+1}(2n+3)!\). Denote the resulting
+integer affine forms by \(G_i\). Their linear parts still have
+rank \(m\) over every \(p>P_0\), and hence over \(\mathbb Q\).
+Their coefficient logarithmic heights are \(O(m^2\log m)\)
+because \(Z=B^2\) and their degree before evaluation at \(Z\)
+was at most \(2m\). Primes \(p>P_0\) divide \(L_i(Z)\) exactly
+when they divide \(G_i\).
+
+Choose the \(h_\ell\) independently and uniformly in their
+integer ranges. For each pair \(i,j\) and each prime
+\(P_0<p\le X\), use a nonsingular two-column minor of the two
+linear parts and fix all other coordinates. The probability
+that \(p\) divides both \(G_i,G_j\) is at most
+\((1/p+1/X)^2\le 4/p^2\). The expected number of pairs with a
+collision of this kind is \(O(m^2/P_0)=o(m)\).
+
+For \(p>X\), any collision has some coordinate in which at least
+one of the two linear coefficients is nonzero modulo \(p\).
+For each such candidate coordinate \(\ell\), fix the other
+coordinates, and write the forms as \(u h_\ell+v\) and
+\(u' h_\ell+v'\). We can skip coordinates with \(u=u'=0\).
+The eliminant \(u'v-uv'\) is a nonzero affine form in the other
+coordinates, since the two linear parts are independent over
+\(\mathbb Q\). Its probability of taking the value zero is at
+most \(1/X\). Otherwise its logarithmic size is \(O(m^2\log m)\),
+so it has \(O(m^2)\) prime divisors larger than \(X\). For each
+such prime at which \(u,u'\) are not both zero, at most one
+choice of \(h_\ell\) gives the collision. Summing over
+coordinates gives \(O(m^3/X)\) per pair.
+
+Finally consider a prime \(p>P_0\) dividing \(Z+d_i\) and \(G_j\)
+for \(j\ne i\). It must be greater than \(Y\). For \(p\le X\),
+rank one of the single linear part gives probability at most
+\(2/p\). For each \(i\) the sum of \(1/p\) over such divisors of
+\(Z+d_i\) is bounded by \(\log(Z+d_i)/(Y\log Y)\).
+For \(p>X\) the probability is at most \(1/X\) and the number
+of these divisors is at most \(\log(Z+d_i)/\log X\).
+Summing over ordered pairs gives \(O(m^3/Y+m^3/X)\).
+Together with pairwise coprimality of the bases and the
+small-prime conditions, the expected number of pairs sharing a
+prime in \((Z+d_i)L_i(Z)\) is \(o(m)\).
+
+Take a choice with at most \(m/4\) such pairs, and remove at most
+one index per pair to retain at least \(3m/4\) pairwise coprime
+powerful integers \((Z+d_i)^3L_i(Z)^2\). Each is nonsquare
+because \(Z+d_i\) is nonsquare. Their square roots lie within
+\(1/2\) of the same real number, so they meet at most two open
+unit intervals with integer endpoints. At least \(3m/8\) lie
+in one such interval \((q,q+1)\). The threshold ensured \(q\ge m\),
+and the coefficient and argument bounds give
+\(\log q=O(n\log B+\log H)=O(m^2\log m)\). This proves the
+claimed lower bound since \(x/\log x\) is increasing for \(x>e\).
+
 ## A larger lower bound from choosing the cancellation coefficients modulo primes
 
 **Theorem (Coprime occupancy with exponent one third).** For each integer
