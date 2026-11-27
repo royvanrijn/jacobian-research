@@ -77499,7 +77499,7 @@
           "canonical_source": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
           "evidence": [],
           "checker": "arithmetic/verify_genus_three_pell_wild_dickson_fields.py",
-          "artifact_hash": "sha256:9b17d958b708e4954ed895cfbd10a31d6a374d4c7b36d5943b096af045b3b220",
+          "artifact_hash": "sha256:874c2e219f14236ea87bd9ec5fc8403f137ad3598eeec2b803d82d1839ccab29",
           "proof_type": "written+exact_certificate",
           "independent_replay": false,
           "formal_verification": false,
@@ -77517,7 +77517,7 @@
           "canonical_source": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
           "evidence": [],
           "checker": "arithmetic/verify_genus_three_pell_wild_dickson_fields.py",
-          "artifact_hash": "sha256:9b17d958b708e4954ed895cfbd10a31d6a374d4c7b36d5943b096af045b3b220",
+          "artifact_hash": "sha256:874c2e219f14236ea87bd9ec5fc8403f137ad3598eeec2b803d82d1839ccab29",
           "proof_type": "written+exact_certificate",
           "independent_replay": false,
           "formal_verification": false,
@@ -77535,7 +77535,7 @@
           "canonical_source": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
           "evidence": [],
           "checker": "arithmetic/verify_genus_three_pell_wild_dickson_fields.py",
-          "artifact_hash": "sha256:9b17d958b708e4954ed895cfbd10a31d6a374d4c7b36d5943b096af045b3b220",
+          "artifact_hash": "sha256:874c2e219f14236ea87bd9ec5fc8403f137ad3598eeec2b803d82d1839ccab29",
           "proof_type": "written+exact_certificate",
           "independent_replay": false,
           "formal_verification": false,
@@ -77553,7 +77553,7 @@
           "canonical_source": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
           "evidence": [],
           "checker": "arithmetic/verify_genus_three_pell_wild_dickson_fields.py",
-          "artifact_hash": "sha256:9b17d958b708e4954ed895cfbd10a31d6a374d4c7b36d5943b096af045b3b220",
+          "artifact_hash": "sha256:874c2e219f14236ea87bd9ec5fc8403f137ad3598eeec2b803d82d1839ccab29",
           "proof_type": "written+exact_certificate",
           "independent_replay": false,
           "formal_verification": false,
@@ -78464,6 +78464,60 @@
               "locator": "Theorem HG8: explicit covers, dual isogenies and MCT16 consequence"
             }
           ]
+        },
+        {
+          "id": "ARITH-GENUS-THREE-ALL-RATIONAL-PELL-FIBERS-DYADIC-OBSTRUCTION",
+          "title": "Every rational Pell coordinate on the marked genus-three curve has the same dyadic obstruction",
+          "state": "proved",
+          "scope": "For the HG1 curve all four rational split fibers have conjugate difference of exact order twelve. The constant norm of a primitive rational divisor function has squareclass 6 on each fiber. All nonconstant norm-one functions supported on one rational split fiber have nonzero valuations at two on every quadratic specialization, excluding an integral Pell unit of either sign from a change of degree-two coordinate on this fixed curve.",
+          "canonical_source": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_genus_three_pell_wild_dickson_fields.py",
+          "artifact_hash": "sha256:874c2e219f14236ea87bd9ec5fc8403f137ad3598eeec2b803d82d1839ccab29",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For the HG1 curve all four rational split fibers have conjugate difference of exact order twelve. The constant norm of a primitive rational divisor function has squareclass 6 on each fiber. All nonconstant norm-one functions supported on one rational split fiber have nonzero valuations at two on every quadratic specialization, excluding an integral Pell unit of either sign from a change of degree-two coordinate on this fixed curve.",
+          "verification_note": "Written transport of constant norm squareclass and local parity, with the norm identity and order-three elliptic quotient images checked."
+        },
+        {
+          "id": "ARITH-QUARTIC-PELL-EXACT-TWO-CLASS-DIRECTIONS",
+          "title": "An explicit quartic Pell model gives two ordinary class directions and a noncubic unit",
+          "state": "proved",
+          "scope": "The displayed integral quartic square-plus-one model has J(Q)[3]=C3² and infinity difference of order four. Every sufficiently large specialization in the stated progression has two independent virtual classes locally cubic at both places over three, a norm-minus-one integral unit noncubic there, ramification at two, and real quadratic class 3-rank at least two. The number of distinct fields of discriminant at most X is ≫ X^(1/8)/log X.",
+          "canonical_source": "arithmetic/QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_quartic_pell_two_class_directions.py",
+          "artifact_hash": "sha256:9f0c421dd928275f1132583d9bbcdcb7497c2754afca305edb1cd80500b0fc24",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The displayed integral quartic square-plus-one model has J(Q)[3]=C3² and infinity difference of order four. Every sufficiently large specialization in the stated progression has two independent virtual classes locally cubic at both places over three, a norm-minus-one integral unit noncubic there, ramification at two, and real quadratic class 3-rank at least two. The number of distinct fields of discriminant at most X is ≫ X^(1/8)/log X.",
+          "verification_note": "Exact two-section construction, all-prime argument via a resultant, CRT, cubic-residue determinant, three finite-field point counts, and uniform norm-unit multiplicity proof."
+        },
+        {
+          "id": "ARITH-QUARTIC-PELL-TWO-ORDINARY-ONE-WILD-MIRROR-DISCRIMINANTS",
+          "title": "The two ordinary Pell directions and the wild unit give exact scalar affine discriminant strata",
+          "state": "proved",
+          "scope": "For every CP1 field the mirror extension has group C3³ over M of discriminant −3D; its quotient split above three is C3² and the nonzero local line has order-three ray conductor exponent two. For each k-dimensional subspace (k=1,2,3) the affine degree-3^k field has signature (1,(3^k−1)/2), and absolute discriminant (3D)^((3^k−1)/2) with an additional factor 3^(2·3^(k−1)) exactly for subspaces meeting the wild line nontrivially under localization. The respective ordinary and mixed multiplicities are (4,9), (1,12), (0,1).",
+          "canonical_source": "arithmetic/QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_quartic_pell_two_class_directions.py",
+          "artifact_hash": "sha256:9f0c421dd928275f1132583d9bbcdcb7497c2754afca305edb1cd80500b0fc24",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every CP1 field the mirror extension has group C3³ over M of discriminant −3D; its quotient split above three is C3² and the nonzero local line has order-three ray conductor exponent two. For each k-dimensional subspace (k=1,2,3) the affine degree-3^k field has signature (1,(3^k−1)/2), and absolute discriminant (3D)^((3^k−1)/2) with an additional factor 3^(2·3^(k−1)) exactly for subspaces meeting the wild line nontrivially under localization. The respective ordinary and mixed multiplicities are (4,9), (1,12), (0,1).",
+          "verification_note": "Written scalar Kummer descent, local Eisenstein cubic and Artin conductor proof, and exact finite conductor arithmetic."
         }
       ],
       "open_questions": [
@@ -276636,7 +276690,7 @@
           },
           {
             "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-            "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+            "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
             "locator": "Reflection and the unrestricted degree-36 count"
           }
         ],
@@ -276661,12 +276715,12 @@
           },
           {
             "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-            "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+            "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
             "locator": "A marginal second moment also bounds the degree-54 fields"
           },
           {
             "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-            "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+            "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
             "locator": "Reducing the signed triangle to imaginary quadratic fields"
           }
         ]
@@ -282809,7 +282863,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-            "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+            "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
             "locator": "Reflection and the unrestricted degree-36 count"
           },
           {
@@ -282817,7 +282871,8 @@
             "sha256": "f47fe0989589413d3f5a3c9660025fef1d443cec673816fbe1625ad0f4875ae0",
             "locator": "AFM5, exact equivalent prime-level scalar affine count"
           }
-        ]
+        ],
+        "next_action": "Use the AFM5 degree-nine route and its counting-method comparison in ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md. The exact fixed-mirror mass is (q_E-1)(q_E-3)/48. Seek a simultaneous count of distinct cubic orbits with the same fundamental discriminant, keeping relative splitting above three; local ramification data alone do not bound this multiplicity."
       },
       {
         "id": "GAP-ARITH-ABC-DEGREE-54-IMAGINARY-TRIANGLE-CUBIC-DISCRIMINANT-COUNT",
@@ -282833,7 +282888,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-            "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+            "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
             "locator": "Reducing the signed triangle to imaginary quadratic fields"
           }
         ]
@@ -282851,7 +282906,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-            "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+            "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
             "locator": "Reflection and the unrestricted degree-36 count"
           }
         ]
@@ -283170,7 +283225,7 @@
         "sources": [
           {
             "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-            "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+            "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
             "locator": "Reflection and the unrestricted degree-36 count"
           }
         ]
@@ -300143,7 +300198,7 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "Proposition LY1, equations (1)–(4), exact integer inputs"
           },
           {
@@ -300160,7 +300215,7 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "LY1–LY6, Replay and limits"
           }
         ],
@@ -300532,7 +300587,7 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "Replay and limits, final degree-ten unit-line target"
           }
         ],
@@ -300619,7 +300674,7 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "The real rank-five target; LY7; Exact bounded fibre probe"
           }
         ],
@@ -300640,7 +300695,7 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "The real rank-five target; LY7; Exact bounded fibre probe"
           }
         ],
@@ -300661,7 +300716,7 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "The real rank-five target; LY7; Exact bounded fibre probe"
           }
         ],
@@ -301041,7 +301096,7 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "Proposition LY8; equations (20)--(21); pushforward proof"
           },
           {
@@ -301069,7 +301124,7 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "Proposition LY9; equations (22)--(24); rejected P=t^7+3 candidate"
           },
           {
@@ -301087,7 +301142,7 @@
       {
         "id": "GAP-ARITH-PELL-FIVE-CLASS-NONCUBE-UNIT-FAMILY",
         "title": "Construct five independent virtual classes together with a noncubic integral Pell unit",
-        "scope": "Construct a new squarefree Pellian hyperelliptic model, for example P^2+1 with five independent classes from 2PZ_i+Z_i^2-1=H_i^3 and deg Z_i<deg P, and a nonempty integral specialization slice with five independent virtual classes locally cubic at3, an integral noncube unit at3, and infinitely many distinct real quadratic fields. Then the unit-line argument gives real class3-rank at least five. This is separate from the LY4-specific goals and does not inherit their count or mirror splitting structure.",
+        "scope": "Construct a new squarefree Pellian hyperelliptic model, for example P^2+1 with five independent classes from 2PZ_i+Z_i^2-1=H_i^3 and deg Z_i<deg P, and a nonempty integral specialization slice with five independent virtual classes locally cubic at3, an integral noncube unit at3, and infinitely many distinct real quadratic fields. Then the unit-line argument gives real class3-rank at least five. This is separate from the LY4-specific goals and does not inherit their count or mirror splitting structure. CP1 constructs an explicit quartic with two sections meeting the integral, localized and independent conditions, and proves that its Jacobian has precisely two directions. The higher-rank construction remains open.",
         "topic": "arithmetic",
         "kind": "gap",
         "origin": "internal",
@@ -301097,8 +301152,13 @@
         "sources": [
           {
             "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-            "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+            "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
             "locator": "A unit built into the replacement model; simultaneous requirements after (24)"
+          },
+          {
+            "path": "arithmetic/QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md",
+            "sha256": "619b89816cc6196cad6d826981283a1d59bc5b38dca355037e8d93cb5d2c7cda",
+            "locator": "CP1 and scope, exact two-direction partial construction"
           }
         ],
         "gap_kind": "mathematical",
@@ -301279,12 +301339,17 @@
         "origin": "internal",
         "dependency_coverage": "partial",
         "evidence_type": "mathematical_obligation",
-        "next_action": "Seek a degree-nine count keeping the common C_3² scalar normal closure and relative splitting above three. A count of individual cubic subfields gives only a first moment.",
+        "next_action": "Bound pairs of distinct cubic fields with the same fundamental discriminant |Delta|<=X and normal closures split above three over the quadratic mirror by O_epsilon(X^(1+epsilon)). Each degree-nine field receives exactly six unordered pairs. The inspected Alberts Theorem 2.6 and Alberts-Lemke Oliver-Wang-Wood Theorem 1.11 retain class-group or unramified-cohomology multiplicities; no improved exponent is obtained.",
         "sources": [
           {
             "path": "arithmetic/TWO_PRIME_MIRROR_INTERMEDIATE_FIELDS.md",
             "sha256": "f47fe0989589413d3f5a3c9660025fef1d443cec673816fbe1625ad0f4875ae0",
             "locator": "AFM5, unbounded degree-nine upper-count problem"
+          },
+          {
+            "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
+            "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
+            "locator": "The degree-nine affine route back to the abc moments; Comparison with inductive field-counting theorems"
           }
         ]
       },
@@ -459922,7 +459987,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "Integral representatives and a lattice count"
         },
         "dependency_coverage": "partial"
@@ -459939,7 +460004,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "Consequences and limits"
         },
         "dependency_coverage": "partial"
@@ -460195,7 +460260,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "An averaged saving from short cubic certificates"
         },
         "dependency_coverage": "partial"
@@ -460209,7 +460274,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "An averaged saving from short cubic certificates"
         },
         "dependency_coverage": "partial"
@@ -461022,7 +461087,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "An averaged saving from short cubic certificates"
         },
         "dependency_coverage": "partial"
@@ -461037,7 +461102,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "Class-group and field-count consequences"
         },
         "dependency_coverage": "partial"
@@ -466510,7 +466575,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "Reducing the signed triangle to imaginary quadratic fields"
         },
         "dependency_coverage": "partial"
@@ -466526,7 +466591,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "A marginal second moment also bounds the degree-54 fields"
         },
         "dependency_coverage": "partial"
@@ -466544,7 +466609,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "locator": "Reflection and the unrestricted degree-36 count and A marginal second moment also bounds the degree-54 fields"
         },
         "dependency_coverage": "partial"
@@ -484729,7 +484794,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Theorem LY2: all-prime virtuality, local cubes, four character rows and mirror descent"
         }
       },
@@ -484744,7 +484809,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Corollary LY3: fixed coordinate classes and degree-ten positive binary form"
         }
       },
@@ -484989,7 +485054,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
-          "sha256": "0f95d97f024f872a232d2e111ce8ac30f14277eb28b8e18cedf63a18fd5e7de7",
+          "sha256": "4cce30d77b617f839ba61b2dcc65a1a43ed63f7e3a10a0699194f224329f9c88",
           "locator": "Proposition WD1"
         }
       },
@@ -485006,7 +485071,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
-          "sha256": "0f95d97f024f872a232d2e111ce8ac30f14277eb28b8e18cedf63a18fd5e7de7",
+          "sha256": "4cce30d77b617f839ba61b2dcc65a1a43ed63f7e3a10a0699194f224329f9c88",
           "locator": "Theorem WD2"
         }
       },
@@ -485022,7 +485087,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
-          "sha256": "0f95d97f024f872a232d2e111ce8ac30f14277eb28b8e18cedf63a18fd5e7de7",
+          "sha256": "4cce30d77b617f839ba61b2dcc65a1a43ed63f7e3a10a0699194f224329f9c88",
           "locator": "Theorem WD3"
         }
       },
@@ -485040,7 +485105,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
-          "sha256": "0f95d97f024f872a232d2e111ce8ac30f14277eb28b8e18cedf63a18fd5e7de7",
+          "sha256": "4cce30d77b617f839ba61b2dcc65a1a43ed63f7e3a10a0699194f224329f9c88",
           "locator": "Corollary WD4"
         }
       },
@@ -485055,7 +485120,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Theorem LY4: common leading cube, all-prime valuations, five residue rows and mirror descent"
         }
       },
@@ -485070,7 +485135,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Corollary LY5: positive squarefree degree-thirty form and fixed coordinate classes"
         }
       },
@@ -485086,7 +485151,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Corollary LY6: two trivial three-primary prime classes, d>=4 and -3/125 control"
         }
       },
@@ -485102,7 +485167,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Corollary LY6: four trivial three-primary prime classes, d>=5 and -1/25 control"
         }
       },
@@ -485428,7 +485493,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Proposition LY7: exact sequence, localization and modulo-nine test"
         }
       },
@@ -485444,7 +485509,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "LY7: localization is injective on the one-dimensional unit line"
         }
       },
@@ -485460,7 +485525,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "LY7 equation (18), applied to infinitely many distinct LY4 fields"
         }
       },
@@ -485964,7 +486029,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Proposition LY8: reduction, CF completeness and pushforward"
         }
       },
@@ -485978,7 +486043,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "locator": "Proposition LY9: affine units, exact infinity order, trace criterion and coefficient system"
         }
       },
@@ -486681,6 +486746,51 @@
           "locator": "Dimension-independent interval statement and its proof"
         },
         "dependency_coverage": "partial"
+      },
+      {
+        "id": "GENUS-THREE-PELL-NORM-PARITY-TRANSPORT-TO-ALL-PELL-COORDINATES",
+        "premises": [
+          "ARITH-GENUS-THREE-PELL-NORM-EXACT-WILD-VIRTUALITY",
+          "ARITH-GENUS-THREE-FULL-RATIONAL-ARITHMETIC",
+          "ARITH-GENUS-THREE-MARKED-NORM-SMOOTH-DEFORMATIONS"
+        ],
+        "conclusion": "ARITH-GENUS-THREE-ALL-RATIONAL-PELL-FIBERS-DYADIC-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
+          "sha256": "4cce30d77b617f839ba61b2dcc65a1a43ed63f7e3a10a0699194f224329f9c88",
+          "locator": "Theorem WD5 and parity transport lemma"
+        }
+      },
+      {
+        "id": "SQUARE-PLUS-ONE-TWO-SECTION-SYMMETRY-TO-CLASS-UNIT-SEPARATION",
+        "premises": [
+          "ARITH-PELL-SQUARE-PLUS-ONE-NONCUBE-UNIT"
+        ],
+        "conclusion": "ARITH-QUARTIC-PELL-EXACT-TWO-CLASS-DIRECTIONS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md",
+          "sha256": "619b89816cc6196cad6d826981283a1d59bc5b38dca355037e8d93cb5d2c7cda",
+          "locator": "Theorem CP1"
+        }
+      },
+      {
+        "id": "QUARTIC-PELL-CLASS-UNIT-SEPARATION-TO-EXACT-MIRROR-CONDUCTORS",
+        "premises": [
+          "ARITH-QUARTIC-PELL-EXACT-TWO-CLASS-DIRECTIONS",
+          "EXT-ARITH-MILNE-RAY-CLASS-AND-CONDUCTOR-DISCRIMINANT"
+        ],
+        "conclusion": "ARITH-QUARTIC-PELL-TWO-ORDINARY-ONE-WILD-MIRROR-DISCRIMINANTS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md",
+          "sha256": "619b89816cc6196cad6d826981283a1d59bc5b38dca355037e8d93cb5d2c7cda",
+          "locator": "Corollary CP2"
+        }
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -494723,7 +494833,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-              "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+              "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
               "locator": "Reflection and the unrestricted degree-36 count"
             },
             "dependency_coverage": "partial"
@@ -494739,7 +494849,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-              "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+              "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
               "locator": "Reflection and the unrestricted degree-36 count"
             },
             "dependency_coverage": "partial"
@@ -494794,7 +494904,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-              "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+              "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
               "locator": "Reducing the signed triangle to imaginary quadratic fields"
             },
             "dependency_coverage": "partial"
@@ -494808,7 +494918,7 @@
             "status": "proved",
             "proof": {
               "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-              "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+              "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
               "locator": "Reducing the signed triangle to imaginary quadratic fields"
             },
             "dependency_coverage": "partial"
@@ -555764,12 +555874,15 @@
         {
           "id": "REF-ABC-ALBERTS-WEAK-MALLE-SOLVABLE",
           "title": "The Weak Form of Malle's Conjecture and Solvable Groups",
-          "citation": "Brandon Alberts. Weak discriminant conjecture and solvable permutation groups.",
+          "citation": "Brandon Alberts. The Weak Form of Malle's Conjecture and Solvable Groups; inspected arXiv:1804.11318v3.",
           "urls": [
-            "https://arxiv.org/abs/1804.11318"
+            "https://arxiv.org/abs/1804.11318",
+            "https://arxiv.org/html/1804.11318v3"
           ],
           "local_sources": [],
-          "identifiers": {},
+          "identifiers": {
+            "arxiv": "1804.11318v3"
+          },
           "resource_type": "paper",
           "uses": [
             {
@@ -555779,11 +555892,20 @@
               "nodes": [
                 "ARITH-ABC-BALANCED-JOINT-CLASS-MOMENTS-REDUCE-TO-DEGREE-36-AND-54-MALLE-COUNTS"
               ]
+            },
+            {
+              "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
+              "locator": "The degree-nine affine route back to the abc moments; Theorem 2.6, Definition 2.4 and Section 4",
+              "role": "context",
+              "nodes": [
+                "GAP-ARITH-ABC-QUADRATIC-THREE-TORSION-SECOND-MOMENT",
+                "GAP-ARITH-DEGREE-NINE-SCALAR-MIRROR-FIELD-COUNT"
+              ]
             }
           ],
           "title_status": "source_title",
           "verification": "source_read",
-          "verification_basis": "Primary theorem statement and application hypotheses inspected."
+          "verification_basis": "Primary theorem statement and application hypotheses inspected. For the AFM5 comparison, inspected 1804.11318v3, Theorem 2.6, Definition 2.4 and Section 4. Context comparison only; no sharp counting application or full proof audit asserted."
         },
         {
           "id": "REF-ABC-MASRI-THORNE-TSAI-WANG-SYMMETRIC-TIMES-ABELIAN",
@@ -555812,12 +555934,15 @@
         {
           "id": "REF-ABC-INDUCTIVE-NUMBER-FIELDS",
           "title": "Inductive methods for counting number fields",
-          "citation": "Brandon Alberts, Robert J. Lemke Oliver, Jiuya Wang and Melanie Matchett Wood. Final Crelle version.",
+          "citation": "Brandon Alberts, Robert J. Lemke Oliver, Jiuya Wang and Melanie Matchett Wood. Inductive methods for counting number fields; inspected arXiv:2501.18574v1; DOI 10.1515/crelle-2025-0074.",
           "urls": [
-            "https://doi.org/10.1515/crelle-2025-0074"
+            "https://doi.org/10.1515/crelle-2025-0074",
+            "https://arxiv.org/html/2501.18574v1"
           ],
           "local_sources": [],
-          "identifiers": {},
+          "identifiers": {
+            "arxiv": "2501.18574v1"
+          },
           "resource_type": "paper",
           "uses": [
             {
@@ -555827,11 +555952,20 @@
               "nodes": [
                 "ARITH-ABC-BALANCED-JOINT-CLASS-MOMENTS-REDUCE-TO-DEGREE-36-AND-54-MALLE-COUNTS"
               ]
+            },
+            {
+              "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
+              "locator": "The degree-nine affine route back to the abc moments; Theorem 1.11, Lemmas 4.1 and 6.3, and Section 6.3",
+              "role": "context",
+              "nodes": [
+                "GAP-ARITH-ABC-QUADRATIC-THREE-TORSION-SECOND-MOMENT",
+                "GAP-ARITH-DEGREE-NINE-SCALAR-MIRROR-FIELD-COUNT"
+              ]
             }
           ],
           "title_status": "source_title",
           "verification": "source_read",
-          "verification_basis": "Primary theorem statement and application hypotheses inspected."
+          "verification_basis": "Primary theorem statement and application hypotheses inspected. For the AFM5 comparison, inspected 2501.18574v1, Theorem 1.11, Lemmas 4.1 and 6.3, and Section 6.3. Context comparison only; no sharp counting application or full proof audit asserted."
         },
         {
           "id": "EXT-PAPER-CADILHAC-FINKEL-MCKENZIE-AFFINE-PARIKH",
@@ -566873,6 +567007,14 @@
               "nodes": [
                 "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE"
               ]
+            },
+            {
+              "path": "arithmetic/QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md",
+              "locator": "Introduction, Theorems 1–3 and Corollary 10",
+              "role": "context",
+              "nodes": [
+                "ARITH-QUARTIC-PELL-EXACT-TWO-CLASS-DIRECTIONS"
+              ]
             }
           ],
           "verification": "source_read",
@@ -567327,6 +567469,15 @@
               "nodes": [
                 "EXT-ARITH-MILNE-RAY-CLASS-AND-CONDUCTOR-DISCRIMINANT",
                 "ARITH-GENUS-THREE-PELL-CYCLOTOMIC-RAY-EXACT-CHARACTER-CONDUCTORS"
+              ]
+            },
+            {
+              "path": "arithmetic/QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md",
+              "locator": "CP2, local discriminant and conductor exponent at the unique ramified prime",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-MILNE-RAY-CLASS-AND-CONDUCTOR-DISCRIMINANT",
+                "ARITH-QUARTIC-PELL-TWO-ORDINARY-ONE-WILD-MIRROR-DISCRIMINANTS"
               ]
             }
           ],
@@ -569500,7 +569651,7 @@
             },
             {
               "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-              "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+              "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
               "locator": "LY5 comparison, Theorem1.5 printed p.3 and its proof printed p.8",
               "role": "context",
               "nodes": [
@@ -579065,7 +579216,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-              "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+              "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
               "locator": "LY1–LY6 and exact literature comparison"
             },
             {
@@ -579230,6 +579381,38 @@
           "novelty_limit": "The general second-order switching-measure mechanism and lower-dimensional curvature cost are established methods. No novelty certification or claim that the cited general theorem already covers the Gaussian multicell setting is made.",
           "remaining_obligation": "Independent mathematical review of the written proof and the exact imported first-moment and dimension-reduction hypotheses; no explicit quantitative correlation threshold is supplied.",
           "inspection_scope": "Actual primary theorem statements, standing assumptions and relevant proof passages inspected, with a written self-audit of the local adaptation. No independent review or formalization asserted."
+        },
+        {
+          "id": "ANT-ABC-AFM5-INDUCTIVE-COUNTING-MULTIPLICITY",
+          "title": "Inductive counting retains the quadratic lifting multiplicity in the AFM5 family",
+          "relation": "comparison_only",
+          "nodes": [
+            "GAP-ARITH-ABC-QUADRATIC-THREE-TORSION-SECOND-MOMENT",
+            "GAP-ARITH-DEGREE-NINE-SCALAR-MIRROR-FIELD-COUNT"
+          ],
+          "references": [
+            {
+              "paper_id": "REF-ABC-ALBERTS-WEAK-MALLE-SOLVABLE",
+              "locator": "arXiv:1804.11318v3, Theorem 2.6 and Definition 2.4",
+              "statement": "The restricted-local bound includes class-group homomorphism counts over quotient fields."
+            },
+            {
+              "paper_id": "REF-ABC-INDUCTIVE-NUMBER-FIELDS",
+              "locator": "arXiv:2501.18574v1, Theorem 1.11, Lemmas 4.1 and 6.3",
+              "statement": "The inductive bound requires an average unramified-cohomology input; local-factor bounds retain its multiplicity."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
+              "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
+              "locator": "The degree-nine affine route back to the abc moments; Comparison with inductive field-counting theorems"
+            }
+          ],
+          "application": "Specialize AFM5 to (C_3)^2 semidirect C_2 of order eighteen. The fixed-mirror mass is (q_E-1)(q_E-3)/48 and its discriminant is |Delta_E|^4. Involutions have index four, translations index six, and the involutions generate the group. This identifies the remaining simultaneous cubic-orbit counting task and transfers any improved exponent to the existing degree-36 and degree-54 abc counts.",
+          "novelty_limit": "The class-field subgroup mass and cubic-pair interpretation are classical. This comparison provides no new upper exponent, priority claim or general obstruction to field-counting methods.",
+          "remaining_obligation": "Prove the stated simultaneous count with common fundamental discriminant and relative splitting above three. The sharp moment and field-count endpoints remain open.",
+          "inspection_scope": "Primary statements, definitions and the indicated proof passages inspected; the group, class-field and exponent specializations are written in the cited local source. No independent review or formal verification asserted."
         }
       ]
     },
@@ -592344,7 +592527,7 @@
         },
         {
           "path": "arithmetic/ABC_FIXED_DIVISOR_CUBIC_DISCRIMINANT_COUNTS.md",
-          "sha256": "a69862f82d2f7daad242776afc5da2fb9fab4764d17c29db5de8bfa55eb74cad",
+          "sha256": "b0586f7199b286a8f284527950aedd87f61c971c4d5ead98b72a6ab135b91b38",
           "claims": [
             "ARITH-ABC-FIXED-SQUAREFREE-DIVISOR-CUBIC-RINGS-SUCCESSIVE-MINIMA-COUNT",
             "ARITH-ABC-UNIFORM-BALANCED-THREE-TORSION-ROW-AND-TWO-EDGE-MOMENT",
@@ -592366,13 +592549,15 @@
             "ARITH-ABC-PRIMITIVE-CUBIC-RINGS-SHARED-KERNEL-ROW-SECOND-MOMENT",
             "EXT-ABC-SCHOLZ-QUADRATIC-THREE-TORSION-REFLECTION",
             "ARITH-ABC-SIGNED-QUADRATIC-THREE-TORSION-SECOND-FOURTH-MOMENTS-PRIME-PATHS",
-            "EXT-ABC-DAVENPORT-HEILBRONN-POSITIVE-FUNDAMENTAL-CUBIC-FIELDS"
+            "EXT-ABC-DAVENPORT-HEILBRONN-POSITIVE-FUNDAMENTAL-CUBIC-FIELDS",
+            "ARITH-FULL-QUADRATIC-PRIME-TORSION-SECOND-MOMENT-AFFINE-EQUIVALENCE"
           ],
           "gaps": [
             "GAP-ARITH-ABC-DEGREE-36-SIGNED-PAIR-CUBIC-DISCRIMINANT-COUNT",
             "GAP-ARITH-ABC-DEGREE-54-SIGNED-TRIANGLE-CUBIC-DISCRIMINANT-COUNT",
             "GAP-ARITH-ABC-QUADRATIC-THREE-TORSION-SECOND-MOMENT",
-            "GAP-ARITH-ABC-DEGREE-54-IMAGINARY-TRIANGLE-CUBIC-DISCRIMINANT-COUNT"
+            "GAP-ARITH-ABC-DEGREE-54-IMAGINARY-TRIANGLE-CUBIC-DISCRIMINANT-COUNT",
+            "GAP-ARITH-DEGREE-NINE-SCALAR-MIRROR-FIELD-COUNT"
           ],
           "statements": [],
           "role": "proof",
@@ -788714,7 +788899,7 @@
         },
         {
           "path": "arithmetic/LEVIN_YAN_WILJANEN_DEGREE_TEN_MIRROR_SLICE.md",
-          "sha256": "f36601d8a75bcabfcc5f2e55994e143c175486693e71481597ee5d28a6dc4622",
+          "sha256": "9dd49205c9f1efcc40ddf3a0b49e7a12c88524b513cfa97346845790231d8b66",
           "role": "proof",
           "claims": [
             "ARITH-LYW-DEGREE-TEN-EXACT-CUBE-NORM-AND-STURM-INPUTS",
@@ -788953,13 +789138,14 @@
         },
         {
           "path": "arithmetic/GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md",
-          "sha256": "0f95d97f024f872a232d2e111ce8ac30f14277eb28b8e18cedf63a18fd5e7de7",
+          "sha256": "4cce30d77b617f839ba61b2dcc65a1a43ed63f7e3a10a0699194f224329f9c88",
           "role": "proof",
           "claims": [
             "ARITH-GENUS-THREE-PELL-NORM-EXACT-WILD-VIRTUALITY",
             "ARITH-GENUS-THREE-PELL-DICKSON-WILD-EXACT-DISCRIMINANTS",
             "ARITH-GENUS-THREE-PELL-CYCLOTOMIC-RAY-EXACT-CHARACTER-CONDUCTORS",
-            "ARITH-GENUS-THREE-PELL-DICKSON-GENUINE-MOVING-PRIME-FROBENIUS"
+            "ARITH-GENUS-THREE-PELL-DICKSON-GENUINE-MOVING-PRIME-FROBENIUS",
+            "ARITH-GENUS-THREE-ALL-RATIONAL-PELL-FIBERS-DYADIC-OBSTRUCTION"
           ],
           "dependencies": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
@@ -788970,7 +789156,10 @@
             "EXT-ARITH-MILNE-RAY-CLASS-AND-CONDUCTOR-DISCRIMINANT",
             "ARITH-ABC-PRIME-PROGRESSION-GENUS-TWO-TWIST-MULTIPLICITY",
             "ARITH-ABC-PRIME-PROGRESSION-COHERENT-NORM-FIELD-COUNT",
-            "EXT-GAO-GE-KUEHNE-UNIFORM-MORDELL-LANG"
+            "EXT-GAO-GE-KUEHNE-UNIFORM-MORDELL-LANG",
+            "ARITH-GENUS-THREE-PELL-NORM-EXACT-WILD-VIRTUALITY",
+            "ARITH-GENUS-THREE-FULL-RATIONAL-ARITHMETIC",
+            "ARITH-GENUS-THREE-MARKED-NORM-SMOOTH-DEFORMATIONS"
           ],
           "gaps": [],
           "statements": [
@@ -789013,24 +789202,35 @@
                 "ARITH-GENUS-THREE-PELL-DICKSON-GENUINE-MOVING-PRIME-FROBENIUS"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem WD5.** On the HG1 genus-three curve,",
+              "kind": "theorem",
+              "line": 410,
+              "title": "Theorem WD5.** On the HG1 genus-three curve,",
+              "nodes": [
+                "ARITH-GENUS-THREE-ALL-RATIONAL-PELL-FIBERS-DYADIC-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
           "explanation": "An exact wild Pell norm, affine Dickson fields and elliptic twist counts, all local ray conductors, and Frobenius control on genuine prime ratios."
         },
         {
           "path": "arithmetic/verify_genus_three_pell_wild_dickson_fields.py",
-          "sha256": "9b17d958b708e4954ed895cfbd10a31d6a374d4c7b36d5943b096af045b3b220",
+          "sha256": "874c2e219f14236ea87bd9ec5fc8403f137ad3598eeec2b803d82d1839ccab29",
           "role": "evidence",
           "claims": [
             "ARITH-GENUS-THREE-PELL-NORM-EXACT-WILD-VIRTUALITY",
             "ARITH-GENUS-THREE-PELL-DICKSON-WILD-EXACT-DISCRIMINANTS",
             "ARITH-GENUS-THREE-PELL-CYCLOTOMIC-RAY-EXACT-CHARACTER-CONDUCTORS",
-            "ARITH-GENUS-THREE-PELL-DICKSON-GENUINE-MOVING-PRIME-FROBENIUS"
+            "ARITH-GENUS-THREE-PELL-DICKSON-GENUINE-MOVING-PRIME-FROBENIUS",
+            "ARITH-GENUS-THREE-ALL-RATIONAL-PELL-FIBERS-DYADIC-OBSTRUCTION"
           ],
           "dependencies": [],
           "gaps": [],
           "statements": [],
-          "explanation": "Exact Pell identities, local polynomial residues, sample Eisenstein discriminants, conductor arithmetic and moving leading units."
+          "explanation": "Exact Pell identities, local polynomial residues, sample Eisenstein discriminants, conductor arithmetic and moving leading units. WD5 checks the primitive norm squareclass and the elliptic images of the four split fibers."
         },
         {
           "path": "arithmetic/sources/schwein-formal-degree-2024.pdf",
@@ -790310,6 +790510,60 @@
           ],
           "statements": [],
           "explanation": "Internal closing proof of a qualitative four-cell Gaussian small-positive-correlation interval: weighted transfer/exterior domination, regret normalization, normal-flux compactness and sharp lower bound, full-kernel interaction limit, rotational contradiction and maximizer dimension reduction. The external first-moment input retains its assurance scope; independent mathematical review is pending."
+        },
+        {
+          "path": "arithmetic/QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md",
+          "sha256": "619b89816cc6196cad6d826981283a1d59bc5b38dca355037e8d93cb5d2c7cda",
+          "role": "proof",
+          "claims": [
+            "ARITH-QUARTIC-PELL-EXACT-TWO-CLASS-DIRECTIONS",
+            "ARITH-QUARTIC-PELL-TWO-ORDINARY-ONE-WILD-MIRROR-DISCRIMINANTS"
+          ],
+          "dependencies": [
+            "ARITH-PELL-SQUARE-PLUS-ONE-NONCUBE-UNIT",
+            "ARITH-FULL-QUADRATIC-PRIME-TORSION-SECOND-MOMENT-AFFINE-EQUIVALENCE",
+            "ARITH-GENUS-THREE-ALL-RATIONAL-PELL-FIBERS-DYADIC-OBSTRUCTION",
+            "EXT-ARITH-MILNE-RAY-CLASS-AND-CONDUCTOR-DISCRIMINANT"
+          ],
+          "gaps": [
+            "GAP-ARITH-PELL-FIVE-CLASS-NONCUBE-UNIT-FAMILY"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem CP1.** There is an integral quartic polynomial",
+              "kind": "theorem",
+              "line": 16,
+              "title": "Theorem CP1.** There is an integral quartic polynomial",
+              "nodes": [
+                "ARITH-QUARTIC-PELL-EXACT-TWO-CLASS-DIRECTIONS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary CP2.** For every field in CP1 let \\(D=\\operatorname{Disc}(K)\\)",
+              "kind": "corollary",
+              "line": 179,
+              "title": "Corollary CP2.** For every field in CP1 let \\(D=\\operatorname{Disc}(K)\\)",
+              "nodes": [
+                "ARITH-QUARTIC-PELL-TWO-ORDINARY-ONE-WILD-MIRROR-DISCRIMINANTS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Explicit reflected Pell norm sections, joint local and unit controls, and their affine mirror strata. The five-direction endpoint stays open."
+        },
+        {
+          "path": "arithmetic/verify_quartic_pell_two_class_directions.py",
+          "sha256": "9f0c421dd928275f1132583d9bbcdcb7497c2754afca305edb1cd80500b0fc24",
+          "role": "evidence",
+          "claims": [
+            "ARITH-QUARTIC-PELL-EXACT-TWO-CLASS-DIRECTIONS",
+            "ARITH-QUARTIC-PELL-TWO-ORDINARY-ONE-WILD-MIRROR-DISCRIMINANTS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact finite identities, resultants, CRT and cubic residues, point counts, and discriminant arithmetic."
         }
       ]
     },

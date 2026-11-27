@@ -24,13 +24,16 @@ family in Corollary 16 is impossible in the residual degree range. Theorem 17
 leaves only singleton cuts of sizes \((1,t;2t)\), with even \(t\), so a
 positive minimum requires \(N\equiv1\pmod6\) and equality in \(3m\ge N-4\).
 Lemma 18 identifies the antipodal middle coordinates and the exact projected
-terminal tree in this last family.
+terminal tree in this last family. Lemma 19 uses the fact that this projection
+is fixed under every complementary braid: incident terminal edges must have
+the same middle lift, and conjugating a middle-middle factor then contradicts
+this common lift. Theorem 20 excludes the last family and proves removable
+factor extraction in every odd degree at least fifteen.
 
-These statements do **not** yet prove extraction from every full-alternating
-tuple. The principal remaining objective is to exclude a positive minimum
-over an entire braid orbit. This needs no monotonicity along a braid.
-Theorem 10, Theorem 17 and Lemma 18 below give necessary global compatibility
-conditions, not that complete exclusion.
+This proof uses a minimum over the entire braid orbit and does not require
+monotonicity along a braid. It also supplies the extraction input to the
+existing pure-DT connectivity induction. The mixed three-cycle problem
+remains separate.
 The [overlap-one theorem](PAIRED_HURWITZ_LEAF_EXTRACTION.md#theorem-5-every-full-alternating-dt-tree-reaches-overlap-one)
 does not locate its overlap at the required outer endpoint, or control this
 complexity during its braid. The mixed three-cycle problem remains separate.

@@ -784,9 +784,11 @@ a nonempty integral congruence slice on which all five are virtual
 and locally cubic at three while \(P(n)\equiv3\) or \(6\pmod9\),
 and infinitely many distinct fields on that same slice. Finite bad
 primes and specialized independence need explicit proofs as in LY4.
-All these simultaneous requirements remain open. This replacement
-is not a subfamily of LY4, so its success would not itself resolve
-the LY4-specific endpoints or inherit (16).
+All these simultaneous requirements remain open for five directions.
+[CP1](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) meets them for two
+independent directions on a quartic Pell model. Its exact Jacobian
+three-torsion excludes further directions on that fixed model.
+The replacement is a separate family from LY4 and its count (16).
 
 The simplest candidate \(P=t^7+3\) supplies (22) on
 \(n\equiv0\pmod9\), but its good reduction at eleven has

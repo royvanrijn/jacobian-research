@@ -341,6 +341,128 @@ Thus the proposed exponent \(1/18\) cannot be lowered even
 in the fixed-neighbor imbalance.
 [Bhargava–Taniguchi–Thorne, Theorem 1.2 and equation (3)](https://arxiv.org/pdf/2107.12819v2).
 
+## The degree-nine affine route back to the abc moments
+
+[AFM5](TWO_PRIME_MIRROR_INTERMEDIATE_FIELDS.md#the-full-prime-level-second-moment)
+gives another counting formulation of (CM3), with every dyadic and
+three-adic quadratic type included. At prime level three the group is
+\(G=V\rtimes\{\pm1\}\), \(V=\mathbb F_3^2\), in its affine
+degree-nine action; its order is eighteen. The counted fields have
+normal closure \(W\), quadratic mirror \(E=W^V\), and
+\(W/E\) everywhere unramified and split above three. No splitting
+condition at two or three is imposed on the original quadratic field
+\(K\). The splitting condition on the relative extension is retained.
+
+Write \(D=\operatorname{disc}K\) and \(\Delta=\operatorname{disc}E\).
+The excluded cyclotomic case is \(K=\mathbb Q(\sqrt{-3})\).
+For the other nontrivial quadratic fields,
+\[
+ \Delta=\begin{cases}-3D&3\nmid D,\\-D/3&3\mid D,\end{cases}
+ \qquad |\operatorname{Disc}L|=|\Delta|^4.
+\]
+The first equality follows by taking the fundamental discriminant
+of the squareclass \(-3D\); it also holds for even \(D\).
+The second is AFM5's formula (5). Equivalently, the permutation
+representation consists of the trivial character and four induced
+pairs of nontrivial characters of \(V\). Each induced pair has
+conductor \(|\Delta|\), since its character over \(E\) is unramified.
+Thus this equality includes wild quadratic ramification at two.
+
+The fixed-mirror multiplicity has a classical class-field description.
+Set
+\[
+ Q_3(E)=\operatorname{Cl}(E)/
+       \bigl(3\operatorname{Cl}(E)+
+                    \langle[\mathfrak p]:\mathfrak p\mid3\rangle\bigr),
+ \qquad q_E=|Q_3(E)|.
+\]
+Everywhere unramified \(C_3^2\)-extensions split above three
+correspond to surjections \(Q_3(E)\twoheadrightarrow\mathbb F_3^2\)
+modulo \(\operatorname{GL}_2(\mathbb F_3)\). Quadratic conjugation
+acts by inversion on ideal classes, because the product of an ideal
+and its conjugate is principal. These extensions are therefore
+Galois over \(\mathbb Q\) with the required scalar action. AFM1's
+complement conjugacy gives one degree-nine field per extension.
+Consequently the exact contribution of \(E\) is
+\[
+       \frac{(q_E-1)(q_E-3)}{48}.
+\]
+Indeed there are \((q_E-1)(q_E-3)\) ordered independent
+characters, and \(|\operatorname{GL}_2(\mathbb F_3)|=48\).
+The classes above three span at most one dimension modulo three:
+in the split case the two classes are inverse, in the inert case
+the prime is principal, and in the ramified case its class has
+order dividing two. In particular
+\(h_3(E)/3\le q_E\le h_3(E)\), where
+\(h_3(E)=|\operatorname{Cl}(E)[3]|\). A fixed local splitting
+condition leaves a second-moment problem, rather than removing
+its multiplicity. This is a classical description of the
+prime-three specialization, not a new asymptotic estimate.
+
+There is also an exact simultaneous cubic interpretation. Let
+\(c_E=(q_E-1)/2\) count cubic fields of fundamental discriminant
+\(\Delta\) whose normal closures split above three over \(E\).
+Distinct such fields have distinct cyclic cubic closures over \(E\);
+any pair generates a \(C_3^2\)-extension. Each such extension has
+four cubic subfields up to \(\mathbb Q\)-isomorphism, so its six
+unordered pairs all give the same degree-nine field. The contribution
+is therefore \(\binom{c_E}{2}/6\). Counting individual cubic fields
+controls \(\sum c_E\); the desired bound requires control of
+\(\sum\binom{c_E}{2}\) with the common fundamental discriminant
+and the relative local condition retained.
+
+### Comparison with inductive field-counting theorems
+
+[Alberts, arXiv:1804.11318v3, Theorem 2.6 and Definition 2.4](https://arxiv.org/html/1804.11318v3)
+allow an abelian normal subgroup and infinitely many local restrictions.
+Their bound retains a sum of class-group homomorphism counts over
+quotient fields. Here \(N=V\) and \(C_G(V)=V\), so that term is
+\(|\operatorname{Hom}(\operatorname{Cl}(E),C_3^2)|=h_3(E)^2\).
+The theorem can encode the ramification restriction but supplies
+no independent estimate for that sum.
+
+[Alberts–Lemke Oliver–Wang–Wood, arXiv:2501.18574v1, Theorem 1.11, Lemmas 4.1 and 6.3](https://arxiv.org/html/2501.18574v1)
+retain an average of unramified cohomology sizes as input. Their
+Lemma 6.3 keeps that multiplicity in the bound by local factors;
+Lemma 4.1 bounds it using equivariant class-group homomorphisms.
+Theorem 1.11(i) requires its input exponent \(\theta<1/a(T)\).
+These are comparisons with the inspected statements, not applications
+establishing a new bound for the restricted AFM5 family.
+
+The group calculation explains the difficulty. A nonzero translation
+has three orbits of length three, hence index six. An affine
+involution \(x\mapsto v-x\) has one fixed point and four pairs,
+hence index four. The involutions generate \(G\), since their
+products give every translation. Thus \(a(G)=4\), \(a(V)=6\),
+and \(G\) is not concentrated in a proper normal subgroup in the
+sense of the latter paper. The minimum-index elements already
+have the permitted inertia type. Its asymptotic theorem for groups
+concentrated in an abelian subgroup does not directly give this
+case. This diagnoses the inspected methods; it does not exclude
+other methods or an adaptation exploiting additional structure.
+
+For the abc branch, any bound \(N_3(Y)\ll_\varepsilon
+Y^{\beta+\varepsilon}\), with \(1/4\le\beta\le17/56\), gives
+(CM3) with \(1+\theta=4\beta\), by AFM5 and the finitely many
+local cutoff factors. Hence it gives the unrestricted MP7
+degree-36 count with exponent \(2\beta/9\), and the degree-54
+count below with exponent \(\beta/6\). The target \(\beta=1/4\)
+would give \(1/18\) and \(1/24\), respectively; the retained
+\(\beta=17/56\) recovers \(17/252\) and \(17/336\).
+These implications do not extract the valuation data needed to
+prove abc.
+
+The next counting task is to bound pairs of distinct cubic-field
+orbits with the same fundamental discriminant \(|\Delta|\le X\),
+retaining the relative splitting above three, by
+\(O_\varepsilon(X^{1+\varepsilon})\). A simultaneous binary-cubic
+orbit count or a new average bound on the unramified lifting
+multiplicity would address this task. A count of possible
+discriminants or a product of local densities alone does not.
+The odd-prime-power Jacobian and isogeny results in
+[OPR1–OPR6](ODD_PRIME_POWER_RECIPROCAL_NORM_CURVES.md) remain
+separate geometric inputs; they do not supply this upper bound.
+
 ## A marginal second moment also bounds the degree-54 fields
 
 Use the same kernel boxes, now on all three edges with the
