@@ -94,6 +94,47 @@ class BoundsTests(unittest.TestCase):
                 with self.assertRaisesRegex(AssertionError, "strictly improve"):
                     bounds_records(graph)
 
+    def test_recorded_replacements_propagate_through_a_chain(self):
+        graph = self.graph([("old", "same", "lower", 4, "proved", []),
+                            ("middle", "same", "lower", 6, "proved", []),
+                            ("new", "same", "lower", 8, "proved", [])])
+        graph.nodes["old"]["bounds"][0]["superseded_by"] = "middle"
+        graph.nodes["middle"]["bounds"][0]["superseded_by"] = "new"
+
+        comparison = bound_comparisons(graph)[0]
+        self.assertEqual(comparison["opportunities"], [])
+        self.assertEqual([row["replacement"] for row in comparison["recorded_updates"]],
+                         ["new", "new"])
+        self.assertEqual(len(bounds_records(graph)), 3)
+
+        # A changed intermediate proof must expose the unpropagated improvement.
+        graph.evaluate()["middle"]["state"] = "stale"
+        comparison = bound_comparisons(graph)[0]
+        self.assertEqual(comparison["recorded_updates"], [])
+        self.assertEqual(comparison["opportunities"][0]["weaker_claim"], "old")
+
+        # An intermediate conditional theorem cannot bridge unconditional bounds.
+        graph.evaluate()["middle"].update(state="conditional", assumptions=["H"])
+        comparison = next(row for row in bound_comparisons(graph) if row["state"] == "proved")
+        self.assertEqual(comparison["recorded_updates"], [])
+        self.assertEqual(comparison["opportunities"][0]["weaker_claim"], "old")
+
+    def test_replacement_chain_checks_the_matching_assertion_on_multi_bound_nodes(self):
+        graph = self.graph([("old", "same", "lower", 4, "proved", []),
+                            ("middle", "same", "lower", 6, "proved", []),
+                            ("new", "same", "lower", 8, "proved", [])])
+        graph.nodes["old"]["bounds"][0]["superseded_by"] = "middle"
+        graph.nodes["middle"]["bounds"].append({
+            "quantity": "collision dimension", "domain": "other", "sense": "lower",
+            "value": 7, "superseded_by": "new"})
+        graph.nodes["new"]["bounds"].append({
+            "quantity": "collision dimension", "domain": "other", "sense": "lower", "value": 9})
+
+        comparison = next(row for row in bound_comparisons(graph) if row["domain"] == "same")
+        self.assertEqual(comparison["recorded_updates"], [])
+        self.assertEqual([row["weaker_claim"] for row in comparison["opportunities"]],
+                         ["old", "middle"])
+
     def test_inconsistent_bounds_are_exposed(self):
         graph = self.graph([("upper", "same", "upper", 3, "proved", []),
                             ("lower", "same", "lower", 4, "proved", [])])

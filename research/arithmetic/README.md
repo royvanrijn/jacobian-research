@@ -10,8 +10,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 |---|---|---|---|
 | Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber | Unpublished; independent review pending | proved | [Source](../../unpublished/common-arithmetic-fibers/README.md) |
 | Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map | Unpublished; independent review pending | proved | [Source](../../unpublished/fixed-map-hasse-failures/README.md) |
-| Binary sums of Hasse-failing fibre parameters on one fixed Keller line | Internal result | conditional | [Source](FIXED_MAP_HASSE_SUMSETS.md) |
-| Consecutive Hasse failures on one fixed Keller line | Internal result | conditional | [Source](FIXED_MAP_CONSECUTIVE_HASSE_FAILURES.md) |
+| Binary sums of Hasse-failing fibre parameters on one fixed Keller line | Internal result | proved | [Source](FIXED_MAP_HASSE_SUMSETS.md) |
+| Consecutive Hasse failures on one fixed Keller line | Internal result | proved | [Source](FIXED_MAP_CONSECUTIVE_HASSE_FAILURES.md) |
 | The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps | Unpublished; independent review pending | proved | [Source](../../unpublished/quadratic-gauge-nonproperness/README.md) |
 | Generic Discriminants of Polynomial Tangent Pencils | Unpublished; independent review pending | proved | [Source](../../unpublished/discriminant-pencils/README.md) |
 | Exact Real Chamber Spectra of Explicit Keller Maps | Unpublished; independent review pending | proved | [Source](../../unpublished/exact-real-chamber-spectra/README.md) |
@@ -211,11 +211,11 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Connors-Keating fixed-shift sums-of-two-squares indicator asymptotic | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
 | Uniform sums-of-two-squares pair asymptotics for logarithmic shifts | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
 | Poisson variance of sums of two squares at the mean-spacing scale | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
-| Averaged Gaussian-norm triples reduce to one signed centered correlation | Internal result | conditional | [Source](AVERAGED_GAUSSIAN_NORM_TRIPLES.md) |
+| Averaged Gaussian-norm triples reduce to one signed centered correlation | Internal result | proved | [Source](AVERAGED_GAUSSIAN_NORM_TRIPLES.md) |
 | Fixed consecutive gaps and binary patterns with two prescribed ones for sums of two squares | Internal result | proved | [Source](CONNORS_KEATING_INDICATOR_CORRELATIONS.md) |
 | A prime plus a sum of two squares for almost all targets | Internal result | proved | [Source](PRIME_PLUS_GAUSSIAN_NORM.md) |
 | Major arcs and auxiliary weights for the reflected prime-plus-norm problem | Internal result | proved | [Source](PRIME_PLUS_GAUSSIAN_NORM.md) |
-| A prime plus a sum of two squares for every target under ZF | Internal result | conditional | [Source](REFLECTED_PRIME_NORM_POINTWISE.md) |
+| A prime plus a sum of two squares for every target under ZF | Internal result | proved | [Source](REFLECTED_PRIME_NORM_POINTWISE.md) |
 | Sixth zeta moment reduction to an unshifted signed averaged divisor remainder | Internal result | proved | [Source](SIXTH_ZETA_MOMENT_AVERAGED_DIVISOR_REMAINDER.md) |
 | Pointwise binary sums with prime factors three modulo four | Internal result | proved | [Source](PRIME_THREE_MOD_FOUR_SUMS.md) |
 | Pointwise binary sums supported on primes three modulo ten | Internal result | proved | [Source](PRIME_THREE_MOD_TEN_SUMS.md) |
@@ -228,7 +228,11 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Stretched-exponential lower bound for sums-of-two-squares return times | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
 | Square-anchor obstruction for Pell return identities through 9 | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
 | Inert prime divisors of the branch difference of Pell return identities | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
+| Prescribed quadratic characters on short Gaussian norms | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
+| Branch congruences for all primes in a linear range | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
+| Exponential height of a fixed number of squareclass branches | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
 | Uniform count and square-root logarithmic height for squarefree returns | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
+| Short power-free prefix shifts for bounded prime tests | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
 | Sharp logarithmic density of all squarefree prefix returns | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
 | Common divisor of short squarefree prefix returns | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
 | Size limit for a common divisor of squarefree returns | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
@@ -879,59 +883,82 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Fifth-twisted quadratic class fields share exactly the genus field | Internal result | proved | [Source](ABC_FIFTH_TWISTED_PRIME_PARTITIONS.md) |
 | Fifth-twisted prime partitions can realize any finite bipartite incidence | Internal result | proved | [Source](ABC_FIFTH_TWISTED_PRIME_PARTITIONS.md) |
 | A fixed quadratic twist shares small witnesses for genuine torsion | Internal result | proved | [Source](QUADRATIC_TWIST_SHARED_SMALL_TORSION_NORMS.md) |
-| A fixed norm coefficient transfers independent ideal classes to Jacobian rank | Internal result | unmapped | [Source](QUADRATIC_NORM_COLOUR_CLASS_RANK.md) |
-| Prime arithmetic progressions realize two independent coherent cubic classes in one colour | Internal result | open | [Source](ABC_COHERENT_PRIME_PROGRESSION_NORMS.md) |
+| A fixed norm coefficient transfers independent ideal classes to Jacobian rank | Internal result | proved | [Source](QUADRATIC_NORM_COLOUR_CLASS_RANK.md) |
+| Prime arithmetic progressions realize two independent coherent cubic classes in one colour | Internal result | proved | [Source](ABC_COHERENT_PRIME_PROGRESSION_NORMS.md) |
 | The sextic progression gives uniformly few primitive pairs per radicand | Internal result | proved | [Source](ABC_COHERENT_PRIME_PROGRESSION_NORMS.md) |
-| Many distinct quadratic fields contain independent coherent prime progressions | Internal result | open | [Source](ABC_COHERENT_PRIME_PROGRESSION_NORMS.md) |
-| Geometrically independent Kummer functions on all odd-prime progression curves | Internal result | unmapped | [Source](ABC_COHERENT_HIGHER_PRIME_PROGRESSION_FIELDS.md) |
-| Independent same-colour prime progressions exist in many fields of either sign for all odd prime exponents | Internal result | open | [Source](ABC_COHERENT_HIGHER_PRIME_PROGRESSION_FIELDS.md) |
+| Many distinct quadratic fields contain independent coherent prime progressions | Internal result | proved | [Source](ABC_COHERENT_PRIME_PROGRESSION_NORMS.md) |
+| Geometrically independent Kummer functions on all odd-prime progression curves | Internal result | proved | [Source](ABC_COHERENT_HIGHER_PRIME_PROGRESSION_FIELDS.md) |
+| Independent same-colour prime progressions exist in many fields of either sign for all odd prime exponents | Internal result | proved | [Source](ABC_COHERENT_HIGHER_PRIME_PROGRESSION_FIELDS.md) |
 | Rational Jacobian reduction gives a higher-prime unit-profile slice criterion | Internal result | proved | [Source](ABC_COHERENT_HIGHER_PRIME_PROGRESSION_FIELDS.md) |
 | The fifth-power common-colour Heron form remains irreducible on viable fixed positive prime lines | Internal result | proved | [Source](ABC_COHERENT_HIGHER_PRIME_PROGRESSION_FIELDS.md) |
-| A tangent square improves the field count for coherent prime progressions at every odd prime exponent at least five | Internal result | open | [Source](ABC_COHERENT_HIGHER_PRIME_PROGRESSION_FIELDS.md) |
-| A positive weighted prime line has at most one polynomial tangent square in its Heron form | Internal result | open | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
-| The exponent-prime valuation controls factor degrees after the Heron tangent square | Internal result | open | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
-| Low even-weight valuations force even degrees for fifth-power tangent factors | Internal result | open | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
-| The fifth-power tangent octic has no rational projective root | Internal result | open | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
-| A reducible fifth-power tangent octic can only split as a cubic and quintic | Internal result | open | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
-| Only finitely many weight ratios can split the fifth-power tangent residual | Internal result | open | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
-| Higher-prime weighted Heron tangent residuals have symmetric monodromy and finitely many reducible ratios | Internal result | open | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
+| A tangent square improves the field count for coherent prime progressions at every odd prime exponent at least five | Internal result | proved | [Source](ABC_COHERENT_HIGHER_PRIME_PROGRESSION_FIELDS.md) |
+| A positive weighted prime line has at most one polynomial tangent square in its Heron form | Internal result | proved | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
+| The exponent-prime valuation controls factor degrees after the Heron tangent square | Internal result | proved | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
+| Low even-weight valuations force even degrees for fifth-power tangent factors | Internal result | proved | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
+| The fifth-power tangent octic has no rational projective root | Internal result | proved | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
+| A reducible fifth-power tangent octic can only split as a cubic and quintic | Internal result | proved | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
+| Only finitely many weight ratios can split the fifth-power tangent residual | Internal result | proved | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
+| Higher-prime weighted Heron tangent residuals have symmetric monodromy and finitely many reducible ratios | Internal result | proved | [Source](ABC_WEIGHTED_HERON_TANGENT_SQUARES.md) |
 | The cubic tangent square identifies the two consecutive virtual-unit classes | Internal result | proved | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
 | Two fixed squareclass rows prove independent Mordell points in the cubic tangent family | Internal result | proved | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
-| A genus-one double cover has at most one unramified norm-cubic direction | Internal result | unmapped | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
-| The cubic tangent family gives dyadic squarefree fields and rank two at prime scale X^(1/4) | Internal result | open | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
-| Cubic tangent witnesses give rank-at-least-two Mordell curves at Omega(Y^(1/5)/log^4 Y) conductors | Internal result | open | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
+| A genus-one double cover has at most one unramified norm-cubic direction | Internal result | proved | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
+| The cubic tangent family gives dyadic squarefree fields and rank two at prime scale X^(1/4) | Internal result | proved | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
+| Cubic tangent witnesses give rank-at-least-two Mordell curves at Omega(Y^(1/5)/log^4 Y) conductors | Internal result | proved | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
 | A large simple prime support on the tangent quartic forces independent Mordell points | Internal result | proved | [Source](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md) |
 | The cubic tangent elliptic surface has explicit geometric rank six with S3 descent | Internal result | proved | [Source](ABC_CUBIC_TANGENT_ELLIPTIC_SURFACE.md) |
 | The cubic tangent surface has integral orthogonal bases over Q and the pure cubic field | Internal result | proved | [Source](ABC_CUBIC_TANGENT_ELLIPTIC_SURFACE.md) |
-| The cubic tangent prime families attain ranks at least two, three, four and six over fixed fields | Internal result | open | [Source](ABC_CUBIC_TANGENT_ELLIPTIC_SURFACE.md) |
+| The cubic tangent prime families attain ranks at least two, three, four and six over fixed fields | Internal result | proved | [Source](ABC_CUBIC_TANGENT_ELLIPTIC_SURFACE.md) |
 | All fixed rational constant sextic twists of the tangent surface have known generic rank | Internal result | proved | [Source](ABC_CUBIC_TANGENT_ELLIPTIC_SURFACE.md) |
 | The three cubic tangent twists have exact local dual-isogeny Selmer images in one quadratic algebra | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
-| The tangent prime norm class is shared by all three cubic-twist Selmer groups | Internal result | open | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
-| A third cubic twist has dual Selmer dimension at least three on many conductors | Internal result | open | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
-| The shared Selmer class has an explicit genus-one covering of generic period and index three | Internal result | open | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
-| The coherent prime triangle (11,17,23) gives a certified failure of the Hasse principle | Internal result | open | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
-| Rational realizability of the common class is a twisted cyclic Mordell–Weil coboundary condition | Internal result | open | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
-| The tangent genus-one cover has a rational split-A2 total cubic surface | Internal result | open | [Source](ABC_CUBIC_TANGENT_COVER_SURFACE.md) |
-| The tangent covering total surface has constant Brauer group and soluble parameters approximate local opens | Internal result | open | [Source](ABC_CUBIC_TANGENT_COVER_SURFACE.md) |
-| Rational points of a tangent prime-gap fibre force coprime additive triples of pure cubic norms | Internal result | open | [Source](ABC_CUBIC_TANGENT_COVER_SURFACE.md) |
-| The tangent prime family has a power saving for fibres with small rational representatives | Internal result | open | [Source](ABC_CUBIC_TANGENT_COVER_SURFACE.md) |
+| The tangent prime norm class is shared by all three cubic-twist Selmer groups | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
+| A third cubic twist has dual Selmer dimension at least three on many conductors | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
+| The shared Selmer class has an explicit genus-one covering of generic period and index three | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
+| The coherent prime triangle (11,17,23) gives a certified failure of the Hasse principle | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
+| Rational realizability of the common class is a twisted cyclic Mordell–Weil coboundary condition | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COMMON_SELMER_CLASS.md) |
+| The tangent genus-one cover has a rational split-A2 total cubic surface | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COVER_SURFACE.md) |
+| The tangent covering total surface has constant Brauer group and soluble parameters approximate local opens | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COVER_SURFACE.md) |
+| Rational points of a tangent prime-gap fibre force coprime additive triples of pure cubic norms | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COVER_SURFACE.md) |
+| The tangent prime family has a power saving for fibres with small rational representatives | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COVER_SURFACE.md) |
+| Exact local two-Selmer conditions for a dyadic family of Mordell curves | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| The pure cubic two-Selmer group is a ray class character group or an explicit subgroup | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| Odd pure-cubic ray class order certifies Hasse failure on the marked tangent covering | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| The split pure cubic ray group selects exactly one of two ramified local directions at three | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| Exact two-Selmer transfer from a Mordell sextic family to fixed cubic-twist families | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| The pure cubic Selmer ray group controls quartic resolvent counts at four exact discriminants | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| Exact third tangent root sign and a rank-zero criterion in the split pure cubic type | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| Mean size three and positive odd-ray proportion outside the prime-marking constraint | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| Two certified prime-gap tangent Hasse failures on opposite quadratic signs | Internal result | proved | [Source](ABC_CUBIC_TANGENT_PURE_CUBIC_TWO_SELMER.md) |
+| Polynomial square extraction on a genuine fixed cubic prime line forces reflected-class collapse | Internal result | proved | [Source](ABC_CUBIC_TANGENT_RING_CLASS_LIFTS.md) |
+| A linear cofactor evaluation determines the moving conductor support of a cubic tangent residue | Internal result | proved | [Source](ABC_CUBIC_TANGENT_RING_CLASS_LIFTS.md) |
+| The prime progression tangent difference gives the diagonal cyclotomic order class | Internal result | proved | [Source](ABC_CUBIC_TANGENT_RING_CLASS_LIFTS.md) |
+| A real fundamental unit can kill or preserve the tangent order class | Internal result | proved | [Source](ABC_CUBIC_TANGENT_RING_CLASS_LIFTS.md) |
+| Coherent prime progressions give independent order classes and high ring three-torsion ranks | Internal result | proved | [Source](ABC_CUBIC_TANGENT_RING_CLASS_LIFTS.md) |
+| Exact three-primary Fourier isogeny for a pure cubic restriction of scalars | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
+| The cubic restriction local Kummer image matches the common tangent Selmer intersection | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
+| One abelian threefold isogeny realizes the full common tangent Selmer group | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
+| Exact dual Selmer ratio for the common cubic restriction isogeny | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
+| The common-class secondary lifting obstruction is an exact sum of local Tate pairings | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
+| The three elliptic Cassels–Tate pairings cancel on the common tangent Selmer group | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
+| The two imaginary Hasse examples pass the simultaneous Selmer lift with exact elliptic Sha[3] sizes | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
+| The real Hasse example has one additional simultaneous pairing test despite all individual lifts | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
+| The real mixed pairing vanishes and the Hasse obstruction passes the simultaneous descent | Internal result | proved | [Source](ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md) |
 | A coherent norm triangle has an exact reflected binary cubic | Internal result | proved | [Source](ABC_COHERENT_NORM_CUBIC_REFLECTION.md) |
 | Coherent norm coefficient classes turn a triangle into a line on a diagonal cubic | Internal result | proved | [Source](ABC_COHERENT_NORM_CUBIC_REFLECTION.md) |
 | The unit-normalized prime triangle has a reflected cubic field of fundamental discriminant | Internal result | proved | [Source](ABC_COHERENT_NORM_CUBIC_REFLECTION.md) |
 | The unit-norm Heron sextic is irreducible on viable fixed prime line slices | Internal result | proved | [Source](ABC_COHERENT_PRIME_TRIANGLES_SQUAREFREE_WINDOW.md) |
 | A linear–quintic factorization produces dyadic squarefree coherent prime triangles | Internal result | proved | [Source](ABC_COHERENT_PRIME_TRIANGLES_SQUAREFREE_WINDOW.md) |
-| Same-colour prime triangles give two independent Mordell points in a dyadic squarefree window | Internal result | open | [Source](ABC_COHERENT_PRIME_TRIANGLES_SQUAREFREE_WINDOW.md) |
-| A weighted secant gives same-colour witnesses with all three primes in one dyadic interval | Internal result | open | [Source](ABC_COHERENT_PRIME_TRIANGLES_SQUAREFREE_WINDOW.md) |
-| Small real coherent norm coefficients separate all virtual-unit vertex labels | Internal result | unmapped | [Source](REAL_COHERENT_NORM_VIRTUAL_CLASS_RANK.md) |
-| Real same-colour cubic triangles give two independent rational points through the virtual-unit span | Internal result | open | [Source](REAL_COHERENT_NORM_VIRTUAL_CLASS_RANK.md) |
-| Real squarefree dyadic fields realize same-colour prime triangles and rank at least two | Internal result | open | [Source](REAL_COHERENT_NORM_VIRTUAL_CLASS_RANK.md) |
-| Prime progressions give rank growth on the Fermat curve over reflected cubic fields | Internal result | open | [Source](ABC_COHERENT_NORM_CUBIC_REFLECTION.md) |
+| Same-colour prime triangles give two independent Mordell points in a dyadic squarefree window | Internal result | proved | [Source](ABC_COHERENT_PRIME_TRIANGLES_SQUAREFREE_WINDOW.md) |
+| A weighted secant gives same-colour witnesses with all three primes in one dyadic interval | Internal result | proved | [Source](ABC_COHERENT_PRIME_TRIANGLES_SQUAREFREE_WINDOW.md) |
+| Small real coherent norm coefficients separate all virtual-unit vertex labels | Internal result | proved | [Source](REAL_COHERENT_NORM_VIRTUAL_CLASS_RANK.md) |
+| Real same-colour cubic triangles give two independent rational points through the virtual-unit span | Internal result | proved | [Source](REAL_COHERENT_NORM_VIRTUAL_CLASS_RANK.md) |
+| Real squarefree dyadic fields realize same-colour prime triangles and rank at least two | Internal result | proved | [Source](REAL_COHERENT_NORM_VIRTUAL_CLASS_RANK.md) |
+| Prime progressions give rank growth on the Fermat curve over reflected cubic fields | Internal result | proved | [Source](ABC_COHERENT_NORM_CUBIC_REFLECTION.md) |
 | A small quadratic residue computation determines the reflected field at 3 | Internal result | proved | [Source](ABC_COHERENT_REFLECTION_AT_THREE.md) |
 | Prime paths can be selected in the fundamental reflected discriminant sector | Internal result | proved | [Source](ABC_COHERENT_REFLECTION_AT_THREE.md) |
 | The reflected cubic Frobenius at each marked prime is an explicit residue test | Internal result | proved | [Source](ABC_REFLECTED_PRIME_LINE_SPLITTING.md) |
-| Reflected prime progressions realize prescribed local cubic splitting in many fields | Internal result | open | [Source](ABC_REFLECTED_PRIME_LINE_SPLITTING.md) |
-| The norm curve ranks bound the class labels joined by coherent prime colours | Internal result | open | [Source](QUADRATIC_NORM_COLOUR_CLASS_RANK.md) |
-| A squarefree binary sextic gives two independent small cubic norms and Mordell points | Internal result | open | [Source](QUADRATIC_NORM_COLOUR_CLASS_RANK.md) |
+| Reflected prime progressions realize prescribed local cubic splitting in many fields | Internal result | proved | [Source](ABC_REFLECTED_PRIME_LINE_SPLITTING.md) |
+| The norm curve ranks bound the class labels joined by coherent prime colours | Internal result | proved | [Source](QUADRATIC_NORM_COLOUR_CLASS_RANK.md) |
+| A squarefree binary sextic gives two independent small cubic norms and Mordell points | Internal result | proved | [Source](QUADRATIC_NORM_COLOUR_CLASS_RANK.md) |
 | Mixed torsion moments bound dihedral composita with a fixed quadratic twist | Internal result | proved | [Source](TWISTED_DIHEDRAL_COMPOSITA_COUNTS.md) |
 | Cubic and quintic dihedral composita with twisted quadratic resolvents have two-sided counts | Internal result | proved | [Source](TWISTED_DIHEDRAL_COMPOSITA_COUNTS.md) |
 | Dihedral quintic norm triples recover one rational root orbit | Internal result | proved | [Source](D5_FOURIER_NORM_INTEGRALITY.md) |
@@ -1762,6 +1789,9 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Exact order criterion for consecutive powerful neighbours of a power | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Wieferich burden of a power-of-two centered powerful triple | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Cubic Wieferich burden of a power-of-two centered powerful triple | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
+| Least powerful-triple index from Pell trace prime orders | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
+| Prime-square and prime-cube conditions on admissible Pell indices | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
+| Exact index lower bounds for three Pell fields in Erdős #364 | Internal result | proved | [Source](ERDOS_364_PELL_AND_JOINT_DETERMINANT.md) |
 | Uniform count for three repaired consecutive terms | Partial result | open | [Source](ERDOS_137_UNIFORM_SMALL_COEFFICIENT_COUNTS.md) |
 | All-width count of powerful-product starts for Erdős #137 | Partial result | open | [Source](ERDOS_137_UNIFORM_SMALL_COEFFICIENT_COUNTS.md) |
 | Pell repair remainder at one-third the retuned exponent | Partial result | open | [Source](ERDOS_137_UNIFORM_SMALL_COEFFICIENT_COUNTS.md) |
@@ -1855,10 +1885,22 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Uniform offset bound for integral quartic Gaussian norm identities | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
 | A fixed block excludes quartics that become even | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
 | Forced prime content for polynomial Gaussian norm constructions | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
+| Linear prime range for polynomial Gaussian norm identities | Internal result | proved | [Source](ERDOS_675_TRANSLATION_PATTERNS.md) |
 | Forced small prime powers of any power-free prefix return | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
 | Sharp prescribed prime-divisibility profiles for power-free returns | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
 | Sharp power-free return density and concentration of prime divisibility | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
 | Second-order density of power-free returns | Internal result | proved | [Source](ERDOS_675_SQUAREFREE_RETURNS.md) |
+| The common scale of a cofactor pair sharpens occupied rank-one cube-class counts | Internal result | proved | [Source](ABC_COHERENT_CUBE_PRODUCTS_AND_COFACTOR_COUNTS.md) |
+| One reduced coordinate and one selected edge recover a three-edge path | Internal result | proved | [Source](ERDOS_943_PAIRED_PRODUCT_MULTIPLICATION.md) |
+| Cross-cancellation bounds prescribed paired products and quotients by their heights | Internal result | proved | [Source](ERDOS_943_PAIRED_PRODUCT_MULTIPLICATION.md) |
+| High rational powers of the paired product fit the critical cycle budget | Internal result | proved | [Source](ERDOS_943_PAIRED_PRODUCT_MULTIPLICATION.md) |
+| Single-coordinate and weighted paired-product sectors can be removed from the critical cycle count | Internal result | proved | [Source](ERDOS_943_PAIRED_PRODUCT_MULTIPLICATION.md) |
+| Relative cube classes give an aggregate count of occupied cofactor profiles | Internal result | proved | [Source](ABC_COHERENT_COFACTOR_PROJECTIVE_RECOVERY.md) |
+| The cubic tangent double cover is a trace coset of y²=x³+1 | Internal result | proved | [Source](ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) |
+| The three prime vertices force primitivity in the companion trace coset | Internal result | proved | [Source](ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) |
+| All rational maps preserving the tangent squareclass are odd elliptic quotient maps | Internal result | proved | [Source](ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) |
+| Fixed Möbius relations among tangent parameters have finitely many collisions | Internal result | proved | [Source](ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) |
+| Height packing controls all prime progression multiplicities over a tangent field | Internal result | proved | [Source](ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) |
 
 **Computed obligations:** 161 unresolved; 26 resolved within their exact scope.
 
@@ -2074,7 +2116,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Prove a positive one-sided parity margin of order 1/(log X)^2 for the degree-at-most-three squarefree power-rough twin correlation. For the permissive column route, show d=o(b) and lower-bound the mean over prime shifts 2p at the same sparse scale, or obtain the margin directly.](ROUGH_TWIN_PARITY_ENTROPY.md) — GAP-ARITH-ROUGH-TWIN-ONE-SIDED-PARITY
 - **mathematical / open:** [Do three pairwise coprime positive 4-full integers satisfy a+b=c at unrestricted height?](ERDOS_939_PRIMITIVE_FOUR_FULL_TRIPLES.md) — GAP-ARITH-ERDOS939-PRIMITIVE-FOUR-FULL-EXISTENCE
 - **mathematical / open:** [Prove positive upper density for F=x^3+2y^3+4z^3. The square-discriminant and sparse exceptional classes, short differences for fixed g, and unbalanced directions with a small primitive coordinate have negligible collision counts in the proved ranges. For the remaining nonsquare fibers, the critical congruence calculation on the balanced squarefree-coefficient family leaves the large-denominator three-coordinate discrepancy and a logarithmic loss for the two-coordinate terms. The other difference ranges also require summable actual counts. A small enough proportion of triples incident to a collision within a fixed relative distance would suffice in place of a full second moment.](ERDOS_940_DIAGONAL_CUBIC_COLLISIONS.md) — GAP-ARITH-ERDOS940-FIXED-CUBIC-POSITIVE-DENSITY
-- **mathematical / open:** [Prove the subpolynomial pointwise bound for ordered representations of N as the sum of two positive square-full integers in Erdős #943. The two graph bounds and the mixed cubic estimate give O_epsilon(N^(3/10+epsilon)).](ERDOS_943_CUBE_MODULUS_BOXES.md) — GAP-ARITH-ERDOS943-SQUAREFULL-SUBPOLYNOMIAL-REPRESENTATIONS
+- **mathematical / open:** [Prove the subpolynomial pointwise bound for ordered representations of N as the sum of two positive square-full integers in Erdős #943. The two graph bounds and the mixed cubic estimate give O_epsilon(N^(3/10+epsilon)). The ideal-class descent bounds nonfundamental prime-power pairs and isolates torsion for large kernels at odd perfect powers. Fundamental and arbitrary-target counts remain open.](ERDOS_943_CUBE_MODULUS_BOXES.md) — GAP-ARITH-ERDOS943-SQUAREFULL-SUBPOLYNOMIAL-REPRESENTATIONS
 - **mathematical / open:** [Obtain the independent short-box carry or exact-square average sum of A_b over squarefree b comparable to B bounded by O_epsilon(M^(2/3+epsilon)/B) in the stated active boxes. At the balanced one-third scale this asks for O_epsilon(B^(1+epsilon)) amplified product pairs per modulus on average. The kernel-graph one-third theorem bypasses this estimate.](ERDOS_943_SIXTH_POWER_CARRY.md) — GAP-ARITH-ERDOS943-ONE-THIRD-CARRY-AVERAGE
 - **mathematical / open:** [Bound the ordered distinct unit collisions c_1^2 d_1^3 = c_2^2 d_2^3 modulo b^3 summed over squarefree b between B and 2B, with squarefree d_i comparable to B and c_i comparable to B^(3/4), by O_epsilon(B^(2+epsilon)). The current bound is O_epsilon(B^(71/28+epsilon)). A sufficient asymmetric estimate for the full one-third pointwise goal is equation (9).](ERDOS_943_OFF_DIAGONAL_COLLISIONS.md) — GAP-ARITH-ERDOS943-OFF-DIAGONAL-TWO
 - **mathematical / open:** [At T comparable to N^(1/5), prove O_epsilon(T^(2-eta+epsilon)) compatible distinct squarefree kernel pairs with unit fraction witnesses of height O(T^2), for some absolute 0<eta<=1. The current mean is O_epsilon(T^(1+epsilon)) and the pointwise construction attains order T. This estimate would improve the square-full balanced box via the kernel graph.](POWERFUL_SUM_GRAPHS.md) — GAP-ARITH-ERDOS943-POINTWISE-KERNEL-PAIR-SAVING
@@ -2096,10 +2138,8 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Prove a positive-saving content-aware total capacity for ACTUAL covers of the exact NO-short/SOME-full complement at delta1/8.](ERDOS_943_RATIONAL_WITNESS_FAMILIES_AND_AUXILIARY_CURVE_CONTENT.md) — GAP-ARITH-ERDOS943-POSITIVE-SAVING-ACTUAL-CURVE-CAPACITY
 - **mathematical / open:** [Bound the actual cycles with both kernel lcms>8T^2 after removing the singular g_*<=sqrt(T) sector; on odd prime targets proper-power product ratios may also be removed.](ERDOS_943_SIX_CYCLES.md) — GAP-ARITH-ERDOS943-BALANCED-SIX-CYCLE-RESIDUAL
 - **mathematical / open:** [Count the actual high-lcm residual cycles after removing small coherent gcd and the now-counted small product-ratio/cubic-center sectors; equivalently close the full pointwise balanced C6 bound.](ERDOS_943_COHERENT_PRODUCT_RATIO.md) — GAP-ARITH-ERDOS943-COHERENT-PRODUCT-RATIO-RESIDUAL
-- **mathematical / open:** [Prove the critical rectangular cycle budget26/51 for the small weighted squarefree coefficient family in(H); this suffices for the all-target5/17 bound.](ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md) — GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-CYCLE-BUDGET
+- **mathematical / open:** [For alln>=2 and every fixed positive coprime squarefree coefficient pair kappa_max^134*kappa_min^117<=n, bound simple cycles in the shaped graph2s by O_epsilon(n^(26/51+epsilon)), uniformly in the coefficients and arbitrary selected actual edge representatives. Root caps2n^(11/51)/(kappa1^2*kappa2)^(1/3) and symmetric; kernel caps2n^(32/153)/(kappa1^4*kappa2^2)^(1/9) and symmetric. This is still OPEN.](ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md) — GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-CYCLE-BUDGET
 - **mathematical / open:** [Count the critical cycles after the proved lcm, shared-neighbor root-gcd, coherent-gcd and both product-ratio sectors are removed; this is exactly equivalent to(H), still open.](ERDOS_943_CRITICAL_RECTANGULAR_CYCLE_CRITERION.md) — GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-RESIDUAL
-- **mathematical / open:** [Can an additional fixed-target frequency input treat cube-poor prescribed targets and improve the all-target squarefull representation bound? The proved arbitrary-base seventh-power2/7 result does not settle the general/subpolynomial obligation.](ERDOS_943_FIXED_TARGET_LINES_AND_SEVENTH_POWER_SUMS.md) — GAP-ARITH-ERDOS943-SQUAREFULL-SUBPOLYNOMIAL-REPRESENTATIONS
-- **mathematical / open:** [Can a new frequency input force enough square-cube residual cycles into a large recovered-kernel-gcd weight sector? The mixed-power sector theorem itself does not close the all-target critical cycle budget.](ERDOS_943_MIXED_POWER_KERNEL_GCD_WEIGHTS.md) — GAP-ARITH-ERDOS943-CRITICAL-RECTANGULAR-CYCLE-BUDGET
 - **mathematical / open:** [Can a fixed positive eta satisfy the actual middle exact-five carrier support-capacity estimate(15) uniformly for every positive target?](ERDOS_943_THREE_FULL_EXACT_FIVE_CARRIERS.md) — TFC-OPEN-ACTUAL-MIDDLE-CARRIER-SUPPORT-CAPACITY-SAVING
 - **mathematical / open:** [Prove an absolute delta>0 and N_lambda(X) << X^((1/3-delta)lambda+epsilon) for all sufficiently small fixed positive lambda. The equivalent minimally repaired primitive quotient count remains open at arbitrary balanced profiles. A transfer must force a bounded-radical imbalanced output, a sufficiently low affine power defect, or another restriction using all three original radical caps.](ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md) — GAP-ARITH-ABC-STRICT-SMALL-BUDGET-COEFFICIENT
 - **mathematical / open:** [Decide whether pi(x+y) exceeds pi(x)+pi(y) for any integers x,y>=2. In particular, is the width-3159 factorial count of order 447 positive for some X?](SECOND_HARDY_LITTLEWOOD.md) — GAP-HL2-PRIME-COUNTING-SUBADDITIVITY

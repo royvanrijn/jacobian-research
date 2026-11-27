@@ -68,7 +68,7 @@ def bound_comparisons(graph, evaluation=None):
     Conditional and unconditional claims are kept separate. Symbolic formulas,
     restricted families and different dimensions are never compared by guessing.
     A recorded replacement is current only if it attains the best available
-    value in the same group.
+    value in the same group, either directly or through recorded replacements.
     """
     groups = defaultdict(list)
     for row in bounds_records(graph, evaluation):
@@ -89,10 +89,32 @@ def bound_comparisons(graph, evaluation=None):
         opportunities, recorded_updates = [], []
         for sense, candidates, best in (("upper", upper, best_upper), ("lower", lower, best_lower)):
             stronger_claims = sorted({row["id"] for row in candidates if row["value"] == best})
+            by_claim = defaultdict(list)
+            for candidate in candidates:
+                by_claim[candidate["id"]].append(candidate)
+
+            def current_replacement(row):
+                pending, visited = [row], set()
+                while pending:
+                    previous = pending.pop()
+                    replacement = previous.get("superseded_by")
+                    if replacement is None:
+                        continue
+                    for candidate in by_claim.get(replacement, []):
+                        if not _strictly_improves(candidate, previous):
+                            continue
+                        if replacement in stronger_claims:
+                            return replacement
+                        key = id(candidate)
+                        if key not in visited:
+                            visited.add(key)
+                            pending.append(candidate)
+                return None
+
             for row in candidates:
                 if row["value"] == best:
                     continue
-                replacement = row.get("superseded_by")
+                replacement = current_replacement(row)
                 update = {"weaker_claim": row["id"], "sense": sense, "old_value": row["value"],
                           "stronger_value": best}
                 if replacement in stronger_claims:

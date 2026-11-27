@@ -108,7 +108,10 @@ The checker rejects unknown nodes/resources and changed inspected proof bytes.
 
 [Bounds](BOUNDS.md) retain the quantity, exact domain, direction, parameter
 restrictions and units. Numeric comparisons require all these to agree, and
-different conditional assumptions are kept separate. Symbolic criteria and
+different conditional assumptions are kept separate. Recorded `superseded_by`
+chains follow supported improvements in that same comparison group. Older bounds
+remain available as fallbacks; a stale or differently conditional intermediate
+cannot hide an improvement still needing propagation. Symbolic criteria and
 asymptotic comparisons require an explicit proved bridge; the tool does not
 guess their order. For an intermediate bound on a domain later shown to be empty,
 set `domain_excluded_by` to the graph node proving exclusion for that entire domain.
@@ -244,6 +247,11 @@ The engine recomputes every reachable result on each command. A completed premis
 can support several levels of consequences without manually updating their graph
 statuses. Generated pages are checked for drift, so CI rejects summaries left
 behind after a dependency update.
+
+`opportunities` also flags literal assumptions that exactly name an already proved
+node. Check the statement and application before converting such an assumption to
+a premise; keep unresolved assumptions and formal axiom boundaries explicit. The
+report never discharges an assumption automatically.
 
 For retained TeX and Lean sources, `make check` also detects unpinned local
 input/import dependencies and retained Lean toolchain/configuration files. Add

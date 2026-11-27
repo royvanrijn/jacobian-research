@@ -1,6 +1,6 @@
 # Cube classes of products in coherent prime paths
 
-The product of the six determinant coefficients of a coherent four-point configuration has a cube class determined by its cross-ratio. Each such class contains only a subpower number of cross-ratios of bounded height. A related product on a cofactor plane gives pointwise power savings for some occupied rank-one records at the quadratic third- and fifth-torsion crossovers.
+The product of the six determinant coefficients of a coherent four-point configuration has a cube class determined by its cross-ratio. Each such class contains only a subpower number of cross-ratios of bounded height. A related product on a cofactor plane gives pointwise power savings for some occupied rank-one records at the quadratic third- and fifth-torsion crossovers. [Bounding the common scale of the cofactor coordinates](#counting-the-common-scale-of-a-cofactor-pair) gives the largest radical ranges below.
 
 ## The class of a product across a sum
 
@@ -62,6 +62,65 @@ For the aggregate sector, the complementary large-index count, restricted to the
 Indeed, fix \(g,t_1,t_2,t_3\) in each dyadic box \(g\asymp G'\), and choose \((q_i,a_i)\), \((q_j,a_j)\). The coordinate divisibilities give \(O((Q_i/t_i)(Pt_i/(Q_i g)))=O(P/g)\) choices for the first pair, and the same for the second pair. Choose \(q_k\) among divisors of the nonzero \(A_i+A_j\). The choices of \(g\) and the split cost \(O_\varepsilon(G'^{1+\varepsilon})\), so the box costs \(O_\varepsilon((ZV)^\varepsilon P^2/G')\), and \(P^2\ll ZQ\) gives the bound. This proof works at both powers because \(\ell-2\ge1\). The exceptional \(h=t_k r_k\) sector costs \(O_\varepsilon(V^{14/5+\varepsilon})\) at the third power or \(O_\varepsilon(V^{18/7+\varepsilon})\) at the fifth by the [extra-prime count](ABC_COHERENT_NORM_DUAL_PRODUCT_LATTICE.md#the-extra-prime-in-a-pair-gcd).
 
 For \(g\le G\) and \(h=t_k\), sum over the \(O_\varepsilon(R^{1+\varepsilon})\) classes of radical at most \(R\). Here \(R\) can be cut off at a fixed power of \(ZV\). With \(Z=V^{4/5}\), use \(G=V^{49/60}\) and \(R=V^{3/2}\). The small-index contribution is \(O_\varepsilon(V^{2/3+49/60+3/2+\varepsilon})\), and the large-index one is \(O_\varepsilon(V^{4/5+3-49/60+\varepsilon})\). Both exponents are \(179/60\). At \(Z=V^{4/7}\), use \(G=V^{131/210}\) and \(R=V^{9/5}\). The exponents \(11/21+131/210+9/5\) and \(4/7+3-131/210\) both equal \(619/210\). More generally, balancing \(R V^{2/3}G\) against \(ZV^3/G\) at the third power gives \(O_\varepsilon(V^{67/30+\varepsilon}R^{1/2}+V^{14/5+\varepsilon})\) at its crossover. At the fifth power balance \(R(ZV)^{1/3}G\) against \(ZV^3/G\) to obtain \(O_\varepsilon(V^{43/21+\varepsilon}R^{1/2}+V^{18/7+\varepsilon})\). The balancing choice has \(G\ge1\) whenever these estimates improve on \(V^3\). Thus the small-radical bounds save a fixed power up to \(R\le V^{23/15-\eta}\) and \(R\le V^{40/21-\eta}\), respectively, for any fixed \(\eta>0\). A union over the three pairs costs only a constant. The frequency of the classes of large radical remains open.
+
+## Counting the common scale of a cofactor pair
+
+For a nonzero pair write \(a_i=h b_i,\ a_j=h b_j\) with \(h=\gcd(a_i,a_j)>0\) and \(\gcd(b_i,b_j)=1\). The signs of \(b_i,b_j\) are retained. The successive-minimum bound \(P^2\ll Z q_iq_jq_k\) gives
+\[
+                   h^2|b_i b_j|=|a_i a_j|\ll Z q_k\ll ZV.        \tag{7}
+\]
+This bounds the number of possible common scales by \(O(\sqrt{ZV/|b_i b_j|})\). In particular, there are no choices if the product of the primitive coordinates exceeds the bound in (7).
+
+**Theorem (Weighted cofactor cube-class counts).** Let \(q_i\ll V\) and \(r_i\in[Z,2Z)\) for \(Z,V\ge2\) in an occupied full-modulus rank-one record. Use the cofactor plane of the first two successive minima, with \(A_i=a_i^\ell q_i^{\ell-2}\) for a fixed odd prime \(\ell\). Fix a pair \(i,j\) with \(A_i A_j(A_i+A_j)\ne0\) and set \(\chi=[A_i A_j(A_i+A_j)]_3\). The number of records at a prescribed \(\chi\) satisfies, up to \(O_{\ell,\varepsilon}((ZV)^\varepsilon)\),
+\[
+              Z^{1/2}V^{5/6}\quad(\ell=3),\qquad
+              (ZV)^{1/2}\quad(\ell\ge5).
+\]
+The number with \(\operatorname{rad}(\chi)\le R\), where the radical refers to the positive cube-free representative, satisfies
+\[
+\begin{array}{ll}
+ Z^{1/2}V^{5/6}\min\{R^{5/6},V^{2/3}R^{1/2}\}, & \ell=3,\[1mm]
+ (ZV)^{1/2}\min\{R,VR^{1/2}\}, & \ell\ge5
+\end{array}                                                        \tag{8}
+\]
+with the same subpower factor, for \(R\ge1\). These bounds hold for either quadratic field sign and under further field-window or witness restrictions. At the third- and fifth-power crossovers they give a fixed power saving over \(V^3\) for \(R\le V^{11/5-\eta}\) and \(R\le V^{17/7-\eta}\), respectively, for fixed \(\eta>0\).
+
+To prove the theorem, put \(J=A_i/A_j\). Its height is bounded by a fixed power of \(ZV\), by the cofactor height bound and \(q_i,q_j\ll V\). The [cube-class slope lemma](#the-class-of-a-product-across-a-sum) gives \(O_{\ell,\varepsilon}((ZV)^\varepsilon)\) possible \(J\)'s for each \(\chi\), and \(O_{\ell,\varepsilon}((ZV)^\varepsilon R)\) in total for \(\operatorname{rad}(\chi)\le R\). For the latter count, if \(R\) exceeds the maximal radical of these slopes, cut \(R\) off at that polynomial bound before absorbing the divisor factor into \((ZV)^\varepsilon\).
+
+Every specified \(q_i,q_j,b_i,b_j,h\) leaves only subpower many choices of \(q_k\), because \(q_k\) divides the nonzero integer
+\[
+        h^\ell\big(b_i^\ell q_i^{\ell-2}+b_j^\ell q_j^{\ell-2}\big).
+\]
+For actual parameters this integer is polynomially bounded in \(ZV\). The complete moduli leave subpower many unit root classes, and rank one then leaves at most one positive primitive prime direction in the original ball. In the estimates below the divisor and root-class factors are absorbed uniformly before enlarging any sums. Simultaneously negating \(b_i,b_j\) costs at most a factor two.
+
+For \(\ell=3\) write \(q_i=c_i u_i^3,\ q_j=c_j u_j^3\), with \(c_i,c_j>0\) cube-free. Since \(q_i,q_j\) are coprime, the valuations of \(J\) modulo three determine \(c_i,c_j\) uniquely. Write \(B/C\), with \(C>0\) and \(\gcd(B,C)=1\), for the signed rational cube root of \(J c_j/c_i\). If there is no such root there is no record. We have \(b_i/b_j=B u_j/(C u_i)\). With
+\[
+ d_i=\gcd(|B|,u_i),\qquad d_j=\gcd(C,u_j),\qquad
+ w_i=u_i/d_i,\qquad w_j=u_j/d_j,
+\]
+the primitive pair, up to sign, is \(((B/d_i)w_j,(C/d_j)w_i)\). Indeed \(\gcd(Bu_j,Cu_i)=d_i d_j\) by coprimality of \(B,C\) and of \(u_i,u_j\). Using (7) and summing over \(w_i\ll V^{1/3}/(c_i^{1/3}d_i)\), \(w_j\ll V^{1/3}/(c_j^{1/3}d_j)\) gives
+\[
+ \sum_{w_i,w_j}\#\{h\}
+   \ll \frac{\sqrt{ZV}\sqrt{d_i d_j}}{\sqrt{|BC|}}
+              \sum_{w_i,w_j}(w_i w_j)^{-1/2}
+   \ll \frac{Z^{1/2}V^{5/6}}{(c_ic_j)^{1/6}\sqrt{|BC|}} .
+\]
+The two factors \(d_i,d_j\) cancel in this estimate. There are divisor-many splits \(d_i\mid B,d_j\mid C\), of subpower cost since \(B,C\) have polynomial height. This proves the count for an exact \(J\) with an extra weight \(1/D\), where \(D=(c_ic_j)^{1/6}\sqrt{|BC|}\).
+
+The number of slopes with \(D\le T\) is \(O(T^6(1+\log T))\). For each \(|B|,C\) the constraint \(c_ic_j\le T^6/(|B|C)^3\) gives this bound after the sum of \((|B|C)^{-3}\). There is also a bound \(O(T^2V^{4/3}(1+\log T))\), by fixing \(c_i,c_j\ll V\), counting \(|B|C\le T^2/(c_ic_j)^{1/3}\), and using \(\sum_{c\ll V}c^{-1/3}\ll V^{2/3}\). Here both estimates use the elementary \(O(L(1+\log L))\) bound on positive pairs with product at most \(L\). Thus the sum of \(1/D\) over the requested slopes, by dyadic \(T\ge1\), is bounded up to subpower factors by either
+\[
+   \sum_{T}\frac{\min(T^6,R)}{T}\ll R^{5/6},\qquad
+   \sum_{T}\frac{\min(T^2V^{4/3},R)}{T}\ll V^{2/3}R^{1/2}.
+\]
+For the second inequality, if \(R^{1/2}V^{-2/3}<1\), the sum is \(O(R)\), which is within the stated bound. This gives the first line of (8).
+
+For \(\ell\ge5\) put \(s=\ell-2\). Since \(J=(b_i/b_j)^\ell(q_i/q_j)^s\) and \(\gcd(\ell,s)=1\), its valuations modulo \(s\) determine the \(s\)-power-free parts \(c_i,c_j>0\) of \(|b_i|,|b_j|\). This uses \(\gcd(b_i,b_j)=1\) to allocate every nonzero residue to one side. Write \(|b_i|=c_i w_i^s,\ |b_j|=c_j w_j^s\). For each such pair, \(J\) determines \(q_i/q_j\) by an odd root, hence determines \(q_i,q_j\) by coprimality. The sign of \(b_i/b_j\) is fixed by \(J\). By (7), summing over the roots \(w_i,w_j\) costs
+\[
+           O_\ell\left(\frac{\sqrt{ZV}}{\sqrt{c_ic_j}}\right),
+\]
+since \(\sum_{m\ge1}m^{-s/2}\) converges. For a radical-\(R\) family this yields \(O_{\ell,\varepsilon}((ZV)^\varepsilon\sqrt{ZV}R)\) by summing over \(J\).
+
+For a second estimate, split at \(\sqrt{c_ic_j}=T\ge1\). Above \(T\) the same weighted bound costs \(\sqrt{ZV}R/T\). Below \(T\), fix \(c_i,c_j\), then allow all \(O(V^2)\) pairs \(q_i,q_j\). For each such pair the powers of \(w_i,w_j\) and the scale \(h\) still cost \(O_\ell(\sqrt{ZV}/\sqrt{c_ic_j})\) by (7). The sum of \((c_ic_j)^{-1/2}\) for \(c_ic_j\le T^2\) is \(O(T(1+\log T))\), by summing over one coordinate first. Thus the other contribution is \(\sqrt{ZV}V^2T\) up to the subpower factor. When \(R\ge V^2\), take \(T=R^{1/2}/V\) to get the second line of (8). When \(R<V^2\), use the first estimate. At \(Z=V^{4/5}\) the second bound on the cubic line is \(V^{19/10}R^{1/2}\). At \(Z=V^{4/7}\) the second bound on the fifth-power line is \(V^{25/14}R^{1/2}\). These give the stated crossover savings. The result leaves the occupancy in which all three pair classes have large radical open.
 
 ## Exact examples
 

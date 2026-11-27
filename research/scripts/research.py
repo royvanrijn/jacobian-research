@@ -136,6 +136,22 @@ def dependency_graph(data: dict) -> DependencyGraph | None:
     return DependencyGraph(data, ROOT, REPOSITORY) if data.get("graph") else None
 
 
+def proved_named_assumptions(graph, evaluation: dict) -> list[dict]:
+    """Find literal assumptions whose exact registered input is now proved.
+
+    This is an audit suggestion, not automatic discharge: the application and
+    any formal-assumption boundary still need inspection before editing a route.
+    """
+    rows = []
+    for kind, items in (("node", graph.nodes), ("implication", graph.rules)):
+        for owner, item in items.items():
+            for assumption in item.get("assumptions", []):
+                if assumption in graph.nodes and evaluation[assumption]["state"] == "proved":
+                    rows.append({"owner": owner, "owner_kind": kind, "assumption": assumption,
+                                 "already_a_premise": assumption in item.get("premises", [])})
+    return rows
+
+
 def topic_progress(topic: dict, evaluation: dict) -> list[str]:
     if not evaluation or not topic.get("gap_ids"):
         return []
@@ -890,6 +906,7 @@ def main() -> None:
                       "proof_link_issues": linked["issues"]
                       + tex_proof_registration_issues(data, graph, linked["links"]),
                       "bound_improvements_or_conflicts": comparisons,
+                      "proved_named_assumptions": proved_named_assumptions(graph, evaluated),
                       "pending_external_applications": [
                           {"id": paper["id"], "title": paper["title"], "verification": paper["verification"]}
                           for paper in cited["papers"] if any(use["role"] == "application_unverified"

@@ -159,11 +159,13 @@ for the shared absolute curvature. The
 [private entropy theorem](MULTIVARIATE_ONE_PRIVATE_ENTROPY_THIRTEEN.md)
 closes \(2P+S_{\rm sh}\ge13\). The
 [private-degree-six theorem](MULTIVARIATE_ONE_PRIVATE_DEGREE_SIX_ALL_ANGLES.md)
-handles the remaining \(P=6\) profiles, so every \(P\ge6\) is
-covered with arbitrary shared rows. For \(2\le P\le5\), the
+handles the remaining \(P=6\) profiles. The
+[private-degree-five theorem](MULTIVARIATE_ONE_PRIVATE_DEGREE_FIVE_ALL_ANGLES.md)
+also covers arbitrary shared rows, so every \(P\ge5\) is
+covered. For \(2\le P\le4\), the
 [sharper one-private reserve](MULTIVARIATE_ONE_PRIVATE_ENTROPY_SHARPER_RESERVE.md)
 covers \(S_{\rm sh}+(35/18)P\ge12\) at every terminal, leaving the strict
-shared curvature caps \(73/9,37/6,38/9,41/18\) for \(P=2,3,4,5\),
+shared curvature caps \(73/9,37/6,38/9\) for \(P=2,3,4\),
 respectively. The [integer-twist theorem for one private unit](MULTIVARIATE_ONE_PRIVATE_UNIT_ALL_INTEGER_TWISTS.md)
 closes \(P=1\) at a computable positive weak shared curvature cap,
 with arbitrary signed shared degree difference. The
@@ -179,7 +181,7 @@ Let \(J=N_{\rm ang}\) be the
 [absolute angular cutoff](MULTIVARIATE_EFFECTIVE_ABSOLUTE_EVENTUAL_ANGLES.md).
 To prove all-degree coprimality it suffices to exclude physical common
 roots for \(15\le N<J\) on fully shared profiles with \(S_{\rm sh}<12\)
-and on profiles with exactly one private side and \(1\le P\le5\) below
+and on profiles with exactly one private side and \(1\le P\le4\) below
 the respective caps above. Closing that residual proves the original
 claim: the terminal theorems give \(2\le N\le14\), the cutoff gives
 \(N\ge J\), and the curvature and private-side theorems cover all other
@@ -189,14 +191,17 @@ profiles are still unbounded.
 
 ### The private-degree-five branch
 
-At \(P=5\) the residual requires only \(S_{\rm sh}<41/18\).
-The [cancelled Gamma estimate](MULTIVARIATE_ONE_PRIVATE_CANCELLED_GAMMA_BUDGET.md)
-gives \(W_{\rm eff}q\le4 e^{-s_0/2}\) at the private endpoint.
-An angular closure by this method still requires the actual
-coefficient envelope, the first-coefficient comparison and the final
-phase reserve. A proof of this branch removes \(P=5\) from the
-residual. Together with the fully shared and \(P\le4\) residual it
-covers all profiles in the residual implication.
+At \(P=5\), the [sharper entropy reserve](MULTIVARIATE_ONE_PRIVATE_ENTROPY_SHARPER_RESERVE.md)
+covers \(S_{\rm sh}\ge41/18\). The
+[private-degree-five comparison](MULTIVARIATE_ONE_PRIVATE_DEGREE_FIVE_ALL_ANGLES.md)
+handles the strict complement at every \(N\ge15\).
+It uses the cancelled Gamma budget for the actual first
+coefficient and coefficient tail, and leaves a phase reserve
+greater than \(\theta/2\) at a putative common angle
+\(0<\theta<\pi\). Together with the small terminals this
+closes the \(P=5\) branch. The earlier residual formulation
+with \(1\le P\le5\) decomposes into this branch and the current
+residual with \(1\le P\le4\) and the fully shared profiles.
 
 The [fixed-terminal compactification](MULTIVARIATE_FIXED_TERMINAL_COMPACTIFICATION.md)
 describes the full closure of the normalized coefficient pairs and

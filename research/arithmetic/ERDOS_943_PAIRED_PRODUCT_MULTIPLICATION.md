@@ -86,6 +86,44 @@ Indeed \(\gcd(A_i,\lambda_i)=1\), because \(A_i\mid y_{0,i}x_{2,i}\) and \(\lamb
 
 Modulo \(P^{e-2a}\) the two normalized ratios \((A_i/P^a)/\lambda_i\) are unit square roots of \(-C'\) and agree up to sign. Thus the corresponding difference or sum of their cross products is divisible by \(P^{e-2a}\). Its absolute value is at most \(P^{e-2a}/\sqrt{C'}\) by Cauchy–Schwarz. If \(C'>1\), the sum cannot vanish, so the difference vanishes and the two positive norm pairs coincide. This contradicts the distinct endpoint scales. If \(C'=1\), the difference is strictly less than \(P^{e-2a}\) since both coordinates are positive, and equality in the bound for the sum occurs only at a coordinate swap. Finally if \(a=0\), compare either pair with \((p,q)\), which is already a primitive representation of the same prime power with \(C=1\). The same root and cross-product argument forces \(A_i=p\) or \(q\), which means one of the two consecutive internal ratios is one. Two selected edges at a shared vertex cannot have the same root and different neighbors. This proves the assertion.
 
+## Recovering a path from one coordinate of its product
+
+**Proposition (Numerator or denominator recovery).** Fix the first selected edge of an oriented three-edge path and the numerator \(p\) of its reduced internal product \(J=p/q\). There are \(O_\varepsilon(n^\varepsilon)\) possible paths, uniformly in \(p\), without specifying \(q\). The same count holds for a prescribed denominator \(q\) and last edge. In particular, with either coordinate prescribed, the number of oriented paths through the graph is \(O_\varepsilon(n^\varepsilon e(G))\).
+
+In the [path factorization](ERDOS_943_PAIRED_THREE_EDGE_PRODUCTS.md#the-endpoint-equation), factor the known \(y_0=\alpha h w\) and the given \(p=uz\) at divisor cost. The root \(x_1=\alpha u\) at the known second kernel determines the middle edge by subtracting its summand from \(n\). Divide the complementary positive integer by the other side's coefficient, then use the unique expression as a square times a squarefree cube. Keep only the selected middle edge with that root. Its terminal root \(y_1\) is now known. Choose \(\beta\mid y_1\), so \(v=y_1/\beta\), and set \(x_2=\beta h z\). This root and the third kernel determine the final edge by the same exact subtraction. Retain the simple paths whose reduced product has the specified numerator. All divisor inputs are polynomially bounded in \(n\). Reversal interchanges numerator and denominator and begins with the previously last edge.
+
+Consequently, if one path has \(\min(p,q)\le U\) and the other has a prescribed norm squareclass, either absolute or relative to the first, the cycle count is \(O_\varepsilon(n^\varepsilon e(G)U)\). Count the first paths by prescribing the small coordinate and the corresponding outside edge. The first path determines both endpoints. It also determines the absolute class of the second product when a relative class is prescribed. The [uniform norm squareclass bound](ERDOS_943_PAIRED_PATH_NORM_CLASSES.md#a-uniform-bound-in-one-squareclass) and [fixed-endpoint recovery](ERDOS_943_PAIRED_THREE_EDGE_PRODUCTS.md#recovery-and-pointwise-counts) give subpower many second paths. This includes equal-product cycles with an arbitrarily large other coordinate when \(U\le n^{107/510}\) in the critical rectangle.
+
+## The remaining factors of a paired product
+
+Put \(B=R_1R_2\), assume \(2B<n\), and let \(H(W)\) be the maximum of the numerator and denominator of a positive reduced rational \(W\).
+
+**Theorem (Height-sensitive paired-product and quotient counts).** The number of cycles with a prescribed \(W=J_1J_2\) or \(W=J_2/J_1\) is
+\[
+                          O_\varepsilon\left(n^\varepsilon e(G)
+                                       \frac B{\sqrt{H(W)}}\right).   \tag{7}
+\]
+The estimate holds also for a prescribed \([\Theta(W)]\) if only cycles with \(H(W)\ge H_0\) are counted, with \(H_0\) in place of \(H(W)\) in (7). For the product, one can take the minimum of the bound in (7) and the earlier prescribed-product bound \(O_\varepsilon(n^\varepsilon K^2)\).
+
+First take \(W=J_1J_2=P/Q\) with \(P,Q\) coprime. Write the reduced products \(J_i=p_i/q_i\). Removing \(g=\gcd(p_1,q_2)\) and \(h=\gcd(p_2,q_1)\) gives
+\[
+      p_1=g a,\quad q_1=h b,\quad p_2=h c,\quad q_2=g d,\qquad
+                          P=ac,\quad Q=bd .                          \tag{8}
+\]
+The last fractions are reduced because each \(J_i\) was reduced and both opposite cross gcds have been removed. Choose \(a,c\) and \(b,d\) at divisor cost. At least one of \(a,b,c,d\) is at least \(\sqrt{\max(P,Q)}\). If it is \(a\) or \(d\), its shared scale \(g\) is at most \(B/\max(a,d)\), since both corresponding path coordinates are at most \(B\). For each \(g\), fix the path coordinate carrying the larger factor and recover that path by the preceding proposition, using an outer edge. If the largest factor is \(b\) or \(c\), do the same with \(h\le B/\max(b,c)\). The recovered path fixes both endpoints and \(J_i\). The product \(W\) now fixes the other internal product, so fixed-endpoint recovery counts the other path at subpower cost. The simple-cycle condition can be checked on the resulting paths. More precisely, for the factorization in (8) this proof uses at most \(B/\max(a,b,c,d)\) possible scales. If either \(g\) or \(h\) is required to be at most \(L\), it can instead use that scale, with at most \(2L\) choices over both placements. The corresponding bound is the minimum of (7) and \(O_\varepsilon(n^\varepsilon e(G)L)\).
+
+For the quotient, invert the first product when performing (8). Numerator or denominator recovery uses the outer edge in the corresponding orientation. After recovering one path, orient it as in the prescribed quotient and then recover the other product with its correct orientation. The same proof bounds the quotient. For the squareclass version the polynomial bound \(H(W)\le B^2\) allows the uniform norm squareclass bound, which gives a subpower list of exact values of \(W\). Sum (7) over that list with \(H(W)\ge H_0\).
+
+In the critical rectangle \(B\le4n^{22/51}\) and \(e(G)\ll_\varepsilon n^{3/10+\varepsilon}\). Thus for \(H(W)\ge n^\sigma\), one can sum over any collection of \(O(n^{\sigma/2-113/510})\) prescribed values or norm squareclasses of \(W\) within the cycle budget, whenever \(\sigma\ge113/255\). For instance, with \(H(W)\ge n^{3/4}\) this includes all \([\Theta(W)]\) with squarefree representative at most \(n^{313/2040}\), for either the product or the quotient. Both individual products in this high-height sector necessarily have height at least \(n^{3/4}/B\), which exceeds \(n^{107/510}\) for large \(n\).
+
+**Corollary (High rational powers of the paired product).** In the critical rectangle, the cycles with a pair of paths for which \(J_1J_2\) is a rational \(k\)-th power for some integer \(k\ge14\) satisfy the pointwise budget \(O_\varepsilon(n^{26/51+\varepsilon})\), at all allowed product heights.
+
+The value \(1\) already has the prescribed-product bound. For \(W\ne1\), there are \(O(\log n)\) eligible exponents, since \(H(W)\le B^2\) and a reduced positive rational distinct from one has height at least two. In a dyadic height range \(H\le H(W)<2H\), at most \(O(H^{2/k})\) values are \(k\)-th powers, by counting the reduced numerator and denominator of the rational \(k\)-th root. Take the smaller of the two product bounds. Up to subpower factors this gives
+\[
+                     H^{2/k}\min\bigl(n^{64/153},\,n^{3/10+22/51}H^{-1/2}\bigr).
+\]
+The first branch increases and the second decreases in \(H\). Their intersection is at \(H=n^{479/765}\), giving the bound \(n^{64/153+958/(765 k)}\). At \(k=14\) the exponent is \(2719/5355<26/51\). The logarithmic numbers of heights and exponents give the result.
+
 ## Example and remaining cycle count
 
 At \(n=26497\) take the [two paths with internal products \(14/45\) and \(45/14\)](ERDOS_943_PAIRED_THREE_EDGE_PRODUCTS.md#exact-examples-and-remaining-count). Both endpoint kernels are \(1\). The two outer left endpoint roots are \(82,73\), and the two right endpoint roots are \(73,82\). Thus \(M=N=5986\). From the left seed and \(J_1J_2=1\), (2) allows \(N=5986\) or \(20511\). The former recovers the actual factorizations with right roots \(73,82\); the test counts only completions that pass all six edge equations.
@@ -93,3 +131,13 @@ At \(n=26497\) take the [two paths with internal products \(14/45\) and \(45/14\
 **Corollary (Critical residual after paired products and equal-product scale tests).** From the [effective slope and elliptic dependence residual](ERDOS_943_PAIRED_PATH_ELLIPTIC_DEPENDENCE.md#example-and-residual), delete cycles having a paired product \(J_1J_2\) whose combined squareclass representative is at most \(n^{14/153}\), including every reciprocal pair. Also delete equal-product cycles meeting either of the two unconditional critical thresholds in (4). The critical-budget count on the complement is equivalent to (H) with the same coefficient family.
 
 The two theorems count every removed sector at the pointwise critical budget. The reverse implication follows by subset inclusion. Inside the equal-class sector of the new residual, the two products are equal with larger reduced endpoint differences and smaller common divisors, or they give independent points modulo torsion. The frequency of the unrestricted remaining product classes also remains open.
+
+For the same example, the first path starts with roots \((82,3)\). Its reduced numerator \(14\) admits the choices \(u=1,z=14\) and \(\alpha=h=1,w=3\). The recovered middle edge has roots \((1,30)\). Taking \(\beta=2\) then gives \(x_2=28\) and the last edge with roots \((28,73)\), recovering \(q_1=45\) without prescribing it. For the quotient \(J_2/J_1=2025/196\), invert the first product in (8). Its factorization with \(a=c=45,\ b=d=14\) has \(g=h=1\).
+
+**Corollary (Residual after single-coordinate and weighted paired-product tests).** In the residual of the preceding corollary, delete cycles admitting a pair of paths at opposite endpoints with any of the following properties.
+
+- The norm squareclasses of their internal products agree, and one of the two products has its smaller reduced coordinate at most \(n^{107/510}\).
+- Either \(W=J_1J_2\) or \(W=J_2/J_1\) has height at least \(n^{3/4}\), and the squarefree representative of \([\Theta(W)]\) is at most \(n^{313/2040}\).
+- The paired product \(J_1J_2\) is a rational \(k\)-th power for some integer \(k\ge14\).
+
+The pointwise \(O_\varepsilon(n^{26/51+\varepsilon})\) bound on the smaller residual is equivalent to (H) within the same coefficient family. The cycle counts just proved give the budget for the three deleted sectors, using \(e(G)\ll_\varepsilon n^{3/10+\varepsilon}\) for the first. A bound for (H) applies to the smaller residual by inclusion. The occupied frequencies outside these sectors remain open, including equal products with both coordinates large and without an endpoint-scale test.

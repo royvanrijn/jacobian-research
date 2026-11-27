@@ -24,12 +24,15 @@ two columns on one side and one on the other, suppose the
 unique largest fixed offset belongs to the two-column side.
 Then for every \(n\ge1\), the actual consecutive orders
 \(n,n+1,n+2\) have only a computable finite set of possibly
-exceptional degrees. At even starts this degree sieve
+exceptional degrees. At every start, condition (2) also
+covers a sufficiently separated unique maximum over a
+same-side survivor pair. Successive separation also gives
+consecutive support-sized orders for multivariable axes. At even starts this degree sieve
 also holds when the mark leaves a same-side pair with
 gap larger than the binary length bound below. The
 same bound, increased by one, also covers a tied maximum.
 The two even marks narrow the remaining wide-gap baselines
-to (2). Condition (3) also treats deep upper-endpoint
+to (3). Condition (4) also treats deep upper-endpoint
 baselines at arbitrary gaps.
 
 **Independent heights.** Fix a finite list of bivariate
@@ -154,6 +157,83 @@ proves that the unspecialized decoupled resultant is
 nonzero, since multiplication by \(D-D_*\) is invertible
 over \(\mathbb Q(D)\).
 
+### Every start with a separated unique maximum
+
+Suppose the unique maximum is \(M\), the two survivors
+are on one side with offsets \(a<b\), and set
+\(g=M-b\), \(\delta=b-a\). For every start \(n\ge1\)
+put \(q=n+2\). If
+\[
+        \#\{1\le h\le g:\gcd(h,q)=1\}>\delta n(n+1),
+        \tag{2}
+\]
+the decoupled resultant at the consecutive orders
+\(n,n+1,n+2\) is nonzero. In particular it suffices
+that \(g\ge q(\lfloor\delta n(n+1)/\varphi(q)\rfloor+1)\).
+The bound does not depend on the common offset \(a\).
+
+At \(D_h=M-h/q\) the order-\(q\) denominator has a
+vanishing factor at \(qD_h=qM-h\). The pure maximal
+column has a simple pole. Every other same-side term
+has \(U\le qM-g\le qM-h\), so its denominator stops
+before that factor. Multiplication by \(D-D_h\)
+therefore deletes the maximal column at each of
+these marks. The lower orders are regular since
+\(h/q\) has denominator \(q\).
+
+For \(m=n,n+1\), divide the surviving binary form by
+its constant pure coefficient and clear the remaining
+denominator \((m(D-a))_{\underline{m\delta}}\).
+In its coefficient of \(X^{m-k}Y^k\) the degree in
+\(D\) is at most \(\delta(m-k)\). The resultant of
+the two binary forms is nonzero as a polynomial in
+\(D\). Indeed, for the pair itself the order-\((n+1)\)
+mark at \(D=b-1/(n+1)\) deletes the higher column by
+its pole, and the lower pure coefficient is nonzero
+there. The normalization and denominator clearing
+are by nonzero rational functions in \(D\), which
+preserve generic nonvanishing. The degree of the
+cleared resultant is at most \(\delta n(n+1)\):
+scaling \(X\) scales the binary resultant with
+weight \(n(n+1)\), so every coefficient monomial in
+it has that total weight when the coefficient of
+\(X^{m-k}Y^k\) has weight \(m-k\).
+On the marks \(D_h\) we have \(D_h>b\), so all these
+normalizations are regular and invertible. The
+distinct marks in (2) cannot all be zeros of the
+resultant. A nonzero mark gives the claimed
+consecutive-order degree sieve.
+
+The same argument gives support-sized consecutive
+orders in any dimension when the total fixed
+offsets are successively separated. Use the
+multivariable axis profiles of Section 2 and write
+the distinct total fixed offsets as
+\(u_1<\cdots<u_s\). For \(r\ge3\), put
+\(W=u_{r-1}-u_1\), \(g=u_r-u_{r-1}\), and
+\(q=n+r-1\). Suppose at each such \(r\) that
+\[
+ \#\{1\le h\le g:\gcd(h,q)=1\}
+       >(r-1)W\prod_{m=n}^{q-1}m .
+\]
+Induct on the number of columns, using the
+two-column result of Section 1. For the first
+\(r-1\) columns, multiply every order-\(m\) form by
+\((mD)_{\underline{mu_1}}\) and then clear the
+remaining denominator with
+\((m(D-u_1))_{\underline{mW}}\). Each coefficient
+now has degree at most \(mW\), independently of
+the individual fixed exponents. Resultant
+multihomogeneity bounds the degree of this
+nonzero lower resultant by the right side of
+the inequality. At \(D=u_r-h/q\), we have
+\(D>u_{r-1}\), and the terminal residue again
+deletes only the maximal column. One of the
+marks avoids all roots of the lower resultant.
+Section 2 gives the effective ordinary degree
+cutoff for the \(s\) consecutive orders
+\(n,\ldots,n+s-1\).
+
 ### Even starts and wide offsets
 
 For an even start \(n\), mark the order \(q\) divisible
@@ -271,7 +351,7 @@ the three prescribed orders, then for some integer
 \(1\le h\le\delta\),
 \[
  R\le v_2(a+h)\le R+Q^2(\delta+2K+3).
- \tag{2}
+ \tag{3}
 \]
 Thus the obstruction for wide gaps is supported on
 explicit residue classes near \(-1,\ldots,-\delta\).
@@ -334,7 +414,7 @@ and \(L_m=m-j_m+1\), the coefficient valuations are
 \]
 The oscillation of \(\epsilon_{m,k}\) is at most \(K\),
 including a last-coefficient correction at a tie.
-For \(H\) larger than the upper bound in (2),
+For \(H\) larger than the upper bound in (3),
 the segment from \(j_m-1\) to \(m\) is the last
 Newton edge. Indeed its rise beyond \(\sigma_m L_m\)
 is \(H+v_2(m)-R+\epsilon_{m,m}-\epsilon_{m,j_m-1}\).
@@ -354,7 +434,7 @@ slopes differ by at least \((H-R)/Q^2\). All remaining
 contributions to the slope difference have total
 absolute value at most \(\delta+2K+1\).
 The two Newton polygons have disjoint slopes in
-either case, proving (2).
+either case, proving (3).
 
 ### A narrow-gap consequence at the upper endpoint
 
@@ -365,7 +445,7 @@ and \(H=v_2(a+\delta)\). It is enough that
 \[
                    2^H> (n+2)\delta,\qquad
                    H>\delta+1+2s .
- \tag{3}
+ \tag{4}
 \]
 Use the mark \(q\) divisible by four. In the factorial
 ratio for order \(m\), the factors before \(ma+m\delta\)
@@ -408,12 +488,88 @@ comparison. The rise to the last coefficient is
 where \(\tau_m=0\) in the unique-maximum case and
 \(0\le\tau_m\le1/2\) at a tie. The \(v_2(m)\) from
 the last numerator factor cancels the binomial
-valuation at degree \(m-1\). Condition (3) makes this
+valuation at degree \(m-1\). Condition (4) makes this
 rise larger than both truncated slope bounds, so
 the final edges have width one. Their slopes
 differ by at least \(\delta-1/2>0\).
 No slope is common. This includes the gap-one case
 with \(v_2(a+1)>\max\{2,\log_2(n+2)\}\).
+
+### Exact certificates with the offsets left free
+
+For start \(3\) and \(1\le\delta\le5\), and for starts
+\(4,5,6,7\) with \(\delta=1\), the consecutive degree sieve
+holds for every integer \(a\) and \(M\) in both the
+same-side survivor and tied-maximum cases.
+
+Write \(C=M-a\). For each \(q\in\{n,n+1,n+2\}\),
+mark \(D=M-1/q\). The other two orders are regular
+because \(n\ge3\) and \(q\) divides neither. The
+coefficient of \(z^k\) in the binary form after
+clearing the denominator is
+\[
+  \binom mk
+  \prod_{j=1}^{\delta k}(ma+j)
+  \prod_{j=\delta k}^{m\delta-1}(m(C-1/q)-j).
+  \tag{5}
+\]
+At a tie set \(C=\delta\) and multiply the leading
+coefficient by \(1+t^m\), where \(t^q=-1\).
+A common direction at the mark forces the binary
+resultant of (5) to vanish. At a tie it forces the
+resultant of that eliminant with \(t^q+1\) to vanish.
+These implications include the binary chart at infinity,
+since we specialize the Sylvester determinants with
+their original binary sizes. The case where both
+maximal variables vanish is excluded by a lower
+pure moment.
+
+For gap one, before denominator clearing the binary
+polynomial is a Gauss hypergeometric polynomial with
+Jacobi parameter \(-m(C-1/q)-1<-1\). The hypotheses in
+[Arvesú, Driver and Littlejohn, Theorem 1](https://arxiv.org/pdf/2009.10196)
+require both a positive-weight parameter range and
+coprimality of the pair.
+
+The checker removes factors from the three eliminants
+by exact gcd division with
+\[
+\begin{split}
+ & (q a+qC-1)(q(C-a-\delta)-1)
+       \prod_{k=1}^{\delta}(a+k)(qC-1-q(k-1))
+          &&\text{for the unique maximum},\\
+ & (q a+q\delta-1)\prod_{k=1}^{q\delta}(a+k)
+          &&\text{for the tied maximum}.
+\end{split}
+\]
+All displayed factors are nonzero at the admissible
+integer parameters. The quotients are cleared to
+integer polynomials. If all three marks fail at one
+integer profile, then all three stripped eliminants
+vanish at its simultaneous residues. This is impossible
+if their reductions generate the unit ideal over a
+prime field, or if a complete search modulo a specified
+integer has no surviving residues.
+
+The [certificate checker](verify_sfc_consecutive_axis_marks.py)
+uses the unit ideal over \(\mathbb F_{65537}\) except
+for the unique maximum at starts \(4\) and \(6\),
+gap one. The complete dyadic searches have 128 and
+524288 survivors at levels 18 and 20, respectively,
+and zero at the next level in each case. Each step
+lifts both coordinates of all surviving residues and
+reevaluates the eliminants. Internal replay used
+Python 3.12.3 and Singular 4.3.2.
+
+~~~sh
+python3 research/factorial/image-rigidity/verify_sfc_consecutive_axis_marks.py 3 1 2 3 4 5
+python3 research/factorial/image-rigidity/verify_sfc_consecutive_axis_marks.py 4 1 --mode tied
+python3 research/factorial/image-rigidity/verify_sfc_consecutive_axis_marks.py 4 1 --mode unique --dyadic-depth 19
+python3 research/factorial/image-rigidity/verify_sfc_consecutive_axis_marks.py 5 1
+python3 research/factorial/image-rigidity/verify_sfc_consecutive_axis_marks.py 6 1 --mode tied
+python3 research/factorial/image-rigidity/verify_sfc_consecutive_axis_marks.py 6 1 --mode unique --dyadic-depth 22
+python3 research/factorial/image-rigidity/verify_sfc_consecutive_axis_marks.py 7 1
+~~~
 
 ## 2. Returning to ordinary degrees
 
@@ -608,8 +764,10 @@ terminal order. For trinomials it is enough on a fixed
 axis to settle both the same-side adjacent pair at
 \(D=M-1/(n+2)\) after a unique maximum is deleted and
 the tied case when the cyclotomic degree is small.
-For even starts, the comparison in Section 1 covers
-wide pairs and leaves the indicated smaller gaps.
+Condition (2) handles separated maxima at every start.
+For even starts, (3) bounds the depth of the remaining
+wide-pair obstruction, and (4) covers the deep
+upper-endpoint cases at every gap.
 Moving the pole to \(M-h/q\) can retain mixed terms:
 a count vector with deficit \(qM-U<h\) also has the
 vanishing denominator factor when \(1\le h<q\).

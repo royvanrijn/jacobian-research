@@ -300,3 +300,475 @@ slope \(-v_2(n)/2\) in the resultant in \(h=C/B\).
 If that slope occurs, the resultant supplies an odd-pair zero
 at the specified valuation. The even-order equation must
 still vanish at the same coefficient direction.
+
+## 5. Odd starts with a large prime-power divisor in the middle order
+
+**Theorem.** Let the middle order be \(n=2k p^e\),
+with \(k,e\ge1\) and \(p\) an odd prime satisfying
+\(p>4k\). Define
+\[
+ P_k(Z)=\sum_{j=0}^{k}\frac{k_{\underline j}}{(2j)!}Z^j,
+ \qquad
+ Q_k(Z)=\sum_{j=0}^{k-1}
+             \frac{(k-1)_{\underline j}}{(2j+1)!}(-Z)^j,
+ \qquad
+ R_k=\operatorname{Res}_Z((2k)!\,P_k,(2k-1)!\,Q_k).
+\]
+The integer \(R_k\) is nonzero. If \(p\nmid R_k\),
+the moments \(G_{n-1},G_n,G_{n+1}\) have no common
+projective zero over any characteristic-zero field.
+In particular, for each fixed \(k\), the theorem covers
+all exponents \(e\) at all sufficiently large primes.
+
+The proof uses \(p\)-adic reduction of the middle
+equation to locate the only surviving chart and to
+determine one valuation there. The odd equations on
+that chart either separate at the cubic term or reduce
+to \(P_k,Q_k\). The degree-\(k\) test is independent of
+\(e\).
+
+### The middle equation forces a valuation
+
+Assume a common projective zero. By the Nullstellensatz,
+we may take algebraic coefficients and embed them in
+\(\overline{\mathbb Q}_p\). Write \(v=v_p\) and choose
+projective integral coordinates with at least one unit.
+Use
+\[
+ V(r)=v((2r-1)!!),\quad V(0)=0,\qquad
+ L=\sum_{d=1}^e p^{-d}=\frac{1-p^{-e}}{p-1}.
+\]
+Since \(2n<p^{e+1}\), no odd factor through \(2n-1\)
+has valuation greater than \(e\). In the order-\(n\)
+integer form \(n^nG_n\) the coefficient indexed by
+\(i\) constant factors and \(b\) linear factors, with
+\(b\) even, has valuation
+\[
+ e(i+b/2)+V(n-i-b/2)+v\binom n{i,b,n-i-b}.
+\]
+For \(l=i+b/2>0\), the \(l\) odd factors removed from
+\((2n-1)!!\) have total valuation strictly less than
+\(el\) because the first removed factor \(2n-1\) is a
+unit. Thus \(p^{-V(n)} n^n G_n\) reduces to a nonzero
+multiple of \(C^n\). Consequently \(\bar C=0\).
+
+In \(G_{n+1}\), the order is a unit congruent to \(1\),
+and all Gaussian moments of degrees at least \(p\)
+vanish modulo \(p\). In the truncated polynomial
+ring modulo \(X^p\) in characteristic \(p\),
+\((A+BX+CX^2)^{n+1}=A^n(A+BX+CX^2)\).
+The residue of the equation is \(A^n(A+C)=0\).
+It forces \(\bar A=0\). Hence \(B\) is a unit.
+Set \(x=A/B,\ h=C/B\), so both have positive valuation
+with infinity allowed at zero.
+
+Rescale the middle equation to
+\[
+ \mathbb E(u+Y+wY^2)^n=0,\qquad
+ u=\sqrt n\, x,\quad w=h/\sqrt n,\quad Y\sim\mathcal N(0,1).
+\]
+A nonzero term with \(i,b,j\) constant, linear, and
+quadratic factors has \(b\) even, \(i+b+j=n\), and a
+Gaussian factor of valuation \(V(r)\) with
+\(r=(n-i+j)/2\). At \(v(w)=-L/2\), its valuation is
+\[
+ \frac{nL}{2}+i\bigl(v(u)-L/2\bigr)
+       +V(r)-rL+v\binom n{i,b,j}.
+\]
+For \(d\le e\), the contribution to \(V(r)\) is
+\(\lfloor(r+(p^d-1)/2)/p^d\rfloor\). It equals \(r/p^d\)
+if all three counts are divisible by \(p^d\), and it
+exceeds \(r/p^d-1/2\) otherwise. In the latter case
+the contribution to the multinomial valuation at that
+level is at least one because the counts sum to a
+multiple of \(p^d\). Thus the last three terms beyond
+\(nL/2\) are nonnegative in total. Equality requires
+\(i=0\) and all counts divisible by \(p^e\), since
+\(v(u)>e/2>L/2\). The pure linear and pure quadratic
+terms both achieve equality. If \(v(w)>-L/2\), the
+pure linear term is uniquely least, including at \(w=0\).
+If \(v(w)<-L/2\), the pure quadratic term is uniquely
+least. The middle equation therefore forces
+\[
+                            c:=v(h)=e/2-L/2 .
+ \tag{4}
+\]
+
+### The odd equations when \(v(x)\ge v(h)\)
+
+Use the two odd orders \(m=n-1,n+1\). For either of
+them divide the chart polynomial by
+\(m\mu_{m-1}\), where \(\mu_j=\mathbb E X_m^j\).
+The term of degree one in \(x,h\) is \(x+h\).
+Only odd total degrees \(\ell\) occur. The valuation
+of any coefficient at degree \(\ell\) is bounded below
+by minus the valuation of
+\(\prod_{s=1}^{(\ell-1)/2}(m-2s)\). Indeed this is the
+denominator of \(\mu_{m-\ell}/\mu_{m-1}\) up to units,
+and additional factors from powers of \(h\) have
+nonnegative valuation.
+
+There is no loss for \(\ell<p\). For \(\ell\ge p\),
+the loss is at most \(\ell/(p-1)\): at each level
+\(p^d\le\ell\) at most
+\(\lfloor(\ell+p^d)/(2p^d)\rfloor\le\ell/p^d\) factors
+are divisible by \(p^d\), since \(m\equiv\pm1\bmod p^d\)
+for \(1\le d\le e\). Higher levels cannot occur.
+For \(p\ge7\) we have \(c\ge(p-2)/(2(p-1))\), so
+\((\ell-3)c>\ell/(p-1)\) for \(\ell\ge p\).
+For \(p=5\) the same inequality holds when \(e\ge2\).
+The sole remaining case \(p=5,e=1\) here has \(k=1\),
+hence \(n=10\), already covered by Section 4.
+
+Suppose \(v(x)\ge c\). All degrees at least five
+then have valuation strictly larger than \(3c\).
+The degree-three coefficients are integral at \(p\).
+A zero thus requires \(v(x+h)\ge3c\). Write
+\(x=-h+y\), so terms in the cubic involving \(y\)
+also have valuation larger than \(3c\).
+The cubic at \(x=-h\), divided by \(h^3\), is
+\(-2(m-1)/(3m)\), by the tilt computation in Section 1.
+The two equations therefore give
+\[
+  0=y-\frac{2(m-1)}{3m}h^3 + E_m,
+             \qquad v(E_m)>3c,\qquad m=n-1,n+1.
+\]
+The two cubic coefficients differ by a \(p\)-adic
+unit. Their equations cannot both hold.
+
+### The odd equations when \(v(x)<v(h)\)
+
+Suppose \(v(x)<c\). In each total degree \(\ell\)
+the pure \(x^\ell\) term has strictly smaller
+valuation than every term involving \(h\): replacing
+an \(x\) by an \(h\) increases the parameter valuation,
+and the corresponding Gaussian moment ratio is
+\(p\)-integral. Thus a least-valuation comparison in
+the two odd equations can use the pure \(x\)-polynomials
+alone.
+
+Let \(P=p^e,\ N=n/2=kP,\ \lambda=P L\). After division
+by \(m\mu_{m-1}x\), the coefficient of \(x^{2r}\)
+in the pure polynomial is
+\[
+ U^+_r=\frac{(2(n+1))^r N_{\underline r}}{(2r+1)!}
+   \quad (0\le r\le N),\qquad
+ U^-_r=\frac{(2(n-1))^r (N-1)_{\underline r}}{(2r+1)!}
+   \quad (0\le r<N).
+\]
+This follows by cancelling the factors
+\(m-2,m-4,\ldots,m-2r\) against the binomial
+coefficient. Since \(k<p/4\),
+\(v(N-i)=v(i)\) for \(0<i<N\). Therefore, with
+\(W(r)=v((2r+1)!)-v(r!)\), we have
+\(v(U^-_r)=-W(r)\) and
+\(v(U^+_r)=-W(r)+e-v(r)\) for \(r>0\).
+Here \(U^+_0=1\).
+
+If \(s_d=r\bmod p^d\), the \(d\)-th contribution to
+\(W(r)\) is
+\(\lfloor r/p^d\rfloor+\mathbf 1_{s_d\ge(p^d-1)/2}\).
+It follows that \(v(U^+_r)\ge-rL\), with equality
+precisely at multiples of \(P\): the correction
+\(e-v(r)\) counts the levels where \(s_d\ne0\).
+In particular the endpoints are on this line.
+The upper odd equation forces \(v(x)=L/2\), since
+otherwise one endpoint is uniquely least. At that
+valuation the plus polynomial retains \(r=tP\),
+\(0\le t\le k\). In the minus polynomial the minimum
+of \(v(U^-_r)+rL\) occurs exactly when
+\(s_d=(p^d-1)/2\) at every level. These indices are
+\(r=(P-1)/2+tP\), \(0\le t<k\).
+
+Put \(Z=(-1)^\lambda 2 x^{2P}/p^\lambda\), a unit.
+For an integer \(j\) with base-\(p\) digits \(j_d\),
+the unit part of \(j!\) reduces to
+\((-1)^{v(j!)}\prod_d j_d!\) by grouping the nonmultiples
+of \(p\) in blocks and using Wilson's congruence.
+For \(r=tP\) the high digits of \(N,N-r,2r+1\)
+are respectively \(k,k-t,2t\), with the lower digit
+factorials contributing one. The factor
+\((2(n+1))^{tP}\) reduces to \(2^t\), so the plus
+residue is \(P_k(\bar Z)\). For
+\(r=(P-1)/2+tP\) divide by the first retained term.
+The lower digits of \(N-1-r,2r+1\) are independent of
+\(t\), and their high digits are \(k-1-t,2t+1\).
+The additional factor \((2(n-1))^{tP}\) reduces to
+\((-2)^t\). Thus the minus residue is \(Q_k(\bar Z)\).
+The assumption on \(R_k\) excludes a common residue.
+
+For completeness, \(P_k(-2X^2)\) is proportional to
+the probabilists' Hermite polynomial of degree \(2k\),
+and \(Q_k(2X^2)\) to the degree-\((2k-1)\) polynomial
+divided by \(X\). This follows from the coefficient
+formula obtained from \(\exp(Xt-t^2/2)\).
+Hermite orthogonality for the positive Gaussian
+weight gives simple real roots. Consequently all
+roots of \(P_k\) are strictly negative and all roots
+of \(Q_k\) are strictly positive, so \(R_k\ne0\).
+
+For \(k=1\) the second polynomial is constant and
+\(R_1=1\). For \(k=2\) the only root of \(Q_2\) is \(6\),
+and \(P_2(6)=10\). For \(k=3\) the integer polynomials
+may be taken to be \(Z^3+30Z^2+180Z+120\) and
+\(Z^2-20Z+60\). Dividing the former by the latter
+leaves \(160(7Z-18)\). Substitution of \(18/7\) in
+the latter gives \(24\cdot31/49\). Thus the theorem
+covers \(n=2p^e\) and \(4p^e\) under the displayed prime
+bound, and \(6p^e\) for \(p>12\) with \(p\ne31\).
+
+## 6. Exact tests at prime divisors of the prescribed orders
+
+For fixed even \(n\) and \(p\ge5\) dividing \(n\),
+write \(e=v_p(n)\) and \(V(r)=v_p((2r-1)!!)\),
+with \(V(0)=0\). Compute the rational bounds
+\[
+ b=\min_{1\le l\le n}\frac{el+V(n-l)-V(n)}{2l},
+ \qquad
+ b_*=\max_{\substack{m=n-1,n+1\\ 5\le j\le m,\ j\ {\rm odd}}}
+       \frac{V((m-1)/2)-V((m-j)/2)}{j-3}.
+\]
+If \(b>\max(0,b_*)\), every common direction would
+reduce to the pure linear direction. Indeed the strict
+positivity of the numerators defining \(b\) gives
+the pure quadratic reduction of the middle form
+after dividing by its minimum coefficient valuation,
+as in Section 5. The reduction of \(G_{n+1}\) then
+forces \(\bar A=0\). In \(B=1\) put \(x=A/B\), \(h=C/B\).
+Relative to the pure quadratic term, a term of
+\(n^nG_n\) with \(i\) constant factors and \(j\) linear
+factors has valuation at least
+\[
+ el+V(n-l)-V(n)-(i+j)v(h),
+ \qquad l=i+j/2 .
+\]
+If \(0<v(h)<b\), this is strictly positive for
+\(l>0\), since \(i+j\le2l\). Thus \(v(h)\ge b\)
+with infinity allowed. If \(v(x)\ge v(h)\), the bound
+\(b_*\) makes all terms above the cubic have strictly
+greater valuation than \(3v(h)\). Cubic comparison as
+in Section 5 gives a contradiction. If \(h=0\) and
+\(v(x)\ge v(h)\), the middle pure linear term already
+excludes that direction.
+
+It remains to test \(v(x)<v(h)\). Within each total
+degree in the odd equations, retaining only the pure
+\(x\) term gives the coefficient of least valuation.
+Compute the two Newton polygons from the pure
+coefficients \(U^\pm_r\) of Section 5, using their
+factorial formulas with \(N=n/2\), without the
+restriction \(n=2kp^e\) with \(p>4k\).
+A common zero would require a common positive root
+valuation of the pure polynomials in \(x\). For each
+such valuation, scale \(x\) by the corresponding
+power of a uniformizer in a ramified extension and
+keep the initial terms of both polynomials. Remove
+their initial powers of \(x\). The resulting reductions,
+viewed as polynomials in the square of the scaled
+variable, must then have a common nonzero root.
+The [prime-divisor checker](verify_sfc_odd_gaussian_prime_divisors.py)
+uses these exact comparisons and gcds over \(\mathbb F_p\).
+The unit parts of factorials needed for the reductions
+are computed by stripping factors of \(p\) from each
+integer in the product.
+
+### The first and last orders
+
+The same quadratic lower bound applies at a prime
+\(p\ge3\) dividing either outer order \(m\), with
+\(n\) replaced by \(m\) in the definition of \(b\).
+If \(b>0\) the residue of \(C\) is zero. For a prime
+dividing the first order, the next order has residue
+\(A^m(A+C)\), yielding the pure linear chart.
+The lower bound \(v(h)\ge b\) then applies.
+If \(b\) exceeds every positive root valuation of
+the pure even Hermite polynomial, the even equation
+requires \(v(x)<v(h)\). A comparison of the two
+remaining pure Hermite polynomials and their initial
+forms tests this case exactly.
+
+For a prime dividing the last order, the two
+preceding orders are \(p\)-integral. On \(C=0,B=1\)
+their reductions are just the scaled linear
+Gaussian moment polynomials in \(A\). The chart
+\(C=B=0\) is excluded by the pure \(A\) term. If
+the reductions have no common nonzero root, then
+any surviving residue must have \(A=0\).
+The same lower bound and even/odd initial-form
+comparison apply in that chart. These endpoint
+tests use only factorial valuations and univariate
+gcds in addition to the middle-order test.
+
+### Exact coverage of odd starts
+
+Together with Section 4, the three prime-divisor
+tests certify every odd start through \(12001\).
+The combined test certifies all 5923 odd starts
+from \(157\) through \(12001\). For comparison, its
+middle-order branch alone certifies 382 of the 423
+odd starts from \(157\) through \(1001\).
+
+~~~sh
+python3 research/factorial/image-rigidity/verify_sfc_odd_gaussian_prime_divisors.py 157 5001
+python3 research/factorial/image-rigidity/verify_sfc_odd_gaussian_prime_divisors.py 5003 12001
+python3 research/factorial/image-rigidity/verify_sfc_odd_gaussian_prime_divisors.py \
+    157 1001 --middle-only --expect-unresolved \
+    159 161 179 185 191 215 223 239 251 255 269 287 319 323 349 359 383 \
+    419 431 447 479 485 499 503 511 539 569 575 599 629 639 647 719 \
+    767 791 839 863 899 959 971
+~~~
+
+Internal replay used Python 3.12.3. The underlying
+exclusions hold over characteristic zero. Combined
+with the even-start theorem, this gives the
+large-height exclusion for fixed homogeneous
+bivariate trinomial supports at every start through
+\(12002\), as well as the families of Sections 5 and 7.
+
+## 7. Large prime powers dividing the initial order
+
+**Theorem.** Suppose the odd start is \(q=(2k+1)p^e\),
+where \(k\ge0\), \(e\ge1\), \(p\) is odd prime and
+\(p>4k+2\). Define
+\[
+ S_k(Z)=\sum_{j=0}^k\frac{k_{\underline j}}{(2j+1)!}Z^j,
+ \qquad
+ T_k=\operatorname{Res}_Z((2k+1)!\,S_k(Z),(2k+1)!\,S_k(2Z)),
+ \qquad T_0=1 .
+\]
+If \(p\nmid T_k\) and either \(e=1\) or \(2\) is a
+quadratic nonresidue modulo \(p\), the Gaussian gate
+closes over characteristic zero. In particular this
+covers all odd prime starts and all powers of every odd
+prime at which \(2\) is a nonresidue.
+
+Let \(P=p^e\) and \(L=\sum_{d=1}^e p^{-d}\).
+Since \(2q<p^{e+1}\), the reduction argument of
+Section 5 applied to \(q^qG_q\) forces \(C\) to
+vanish in the residue field. The reduction of
+\(G_{q+1}\) is \(A^q(A+C)\), so \(A\) vanishes too
+and we may use \(B=1,\ x=A/B,\ h=C/B\).
+Both \(x,h\) now have positive valuation.
+
+In the rescaled order-\(q\) equation put
+\(u=\sqrt q\,x,\ w=h/\sqrt q\). The term comparison
+of Section 5 uses the valuation of the pure
+quadratic term at \(v(w)=-L/2\) as a lower bound
+for all terms. At smaller \(v(w)\) its quadratic
+count is uniquely maximal, so it dominates.
+Thus \(v(h)\ge e/2-L/2\), with infinity allowed.
+
+Set \(N=(q+1)/2\). In the even order \(q+1\),
+divide the pure polynomial by its constant
+Gaussian moment. In the odd order \(q+2\),
+divide it by \((q+2)\mu_{q+1}x\). The two
+coefficient lists in \(x^2\) are
+\[
+ E_r=\frac{(2(q+1))^r N_{\underline r}}{(2r)!},
+ \qquad
+ O_r=\frac{(2(q+2))^r N_{\underline r}}{(2r+1)!},
+ \qquad 0\le r\le N .
+\]
+Write \(M_d=(p^d-1)/2,\ N_d=(p^d+1)/2\), and
+\(s_d=r\bmod p^d\). The ordinates of the two
+Newton polygons are the negatives of
+\[
+ v(r!)+\sum_{d=1}^e\mathbf 1_{s_d=N_d},
+ \qquad
+ v(r!)+\sum_{d=1}^e\mathbf 1_{s_d\in\{M_d,N_d\}},
+\]
+respectively. To see this, use \(N\bmod p^d=N_d\)
+in the Legendre formula for the numerator and
+denominator. All factorial arguments are less than
+\(p^{e+1}\).
+
+For \(p\ge5\), the even polygon through \(N_e\)
+has vertices \(0,N_1,\ldots,N_e\). The odd polygon
+through \(M_e\) has vertices \(0,M_1,\ldots,M_e\).
+For an edge after the first one ending at \(N_d\)
+or \(M_d\), the width is \(D_d=(p-1)p^{d-1}/2\),
+and the slope is
+\[
+             -\sum_{j=1}^{d-1}p^{-j}-1/D_d.
+\]
+At the left endpoint the offset of each of the
+first \(d-1\) level contributions from its linear
+function \(r/p^j\) is maximal. These contributions
+increase by at most the linear increment at
+interior points. At the right endpoint they attain
+that increment and the \(d\)-th level adds one.
+All interior points therefore lie strictly above
+the chord. The first edges have slopes \(-1/N_1\)
+and \(-1/M_1\), respectively, with earlier ordinates
+zero. The slopes increase strictly. For \(p=3\)
+the prime bound forces \(k=0\). When \(e\ge2\) the
+even hull starts with the single edge \(0,N_2=5\)
+of slope \(-3/5\): the ordinates at \(1,2,3,4\)
+are \(0,-1,-1,-1\), above that edge. Subsequent
+edges and the odd polygon follow the same argument.
+When \(p=3,e=1\), both first edges are as in the
+original lists.
+
+After \(N_e\) in the even polygon and \(M_e\) in
+the odd polygon there is an edge of slope \(-L\)
+and width \(kP\) if \(k>0\). Its initial points
+are exactly \(N_e+tP\) or \(M_e+tP\) for
+\(0\le t\le k\), since these are the indices
+at which all \(e\) level offsets are simultaneously
+maximal. The odd polygon then has a final flat
+edge of width one.
+
+The positive root valuations of the even pure
+polynomial in \(x\) are at most \(3/10\), from
+these slopes and the factor two for \(x^2\).
+Since \(e/2-L/2>3/10\), the even equation cannot
+vanish with \(v(x)\ge v(h)\). All positive
+degrees would have strictly greater valuation
+than its constant, because coefficients of terms
+involving \(h\) are the pure coefficient times
+integral Gaussian moment ratios and binomial
+coefficients. Thus \(v(x)<v(h)\), and both
+equations can be tested by the initial forms of
+their pure polynomials, as in Section 6.
+
+For a shared edge of width \(D_d\), the initial
+forms are binomials after removing their initial
+monomials. At an odd endpoint \(r=M_j\), the even
+endpoint is \(r+1=N_j\), and
+\[
+ \frac{E_{r+1}}{O_r}
+ =\frac{(q+1)(N-r)}{r+1}
+         \left(\frac{q+1}{q+2}\right)^r
+ \equiv 2\cdot2^{-r}\pmod p.
+\]
+Hence the ratio of the normalized final
+coefficients is \(2^{-D_d}\equiv
+2^{-(p-1)/2}\pmod p\). A nonresidue gives opposite
+coefficients and excludes a common root. Such edges
+are absent for \(e=1\). When \(2\) is a residue and
+these slopes occur, their initial binomials agree.
+
+For the last shared slope \(-L\), put
+\(\lambda=PL\) and \(Z=(-1)^\lambda 2x^{2P}/p^\lambda\).
+The unit-factorial computation from Section 5 gives
+the normalized even and odd residues \(S_k(\bar Z)\)
+and \(S_k(2\bar Z)\). Indeed, the top digits of
+\(N-r\) and of the corresponding factorial argument
+\(2r\) or \(2r+1\) are \(k-t\) and \(2t+1\).
+The lower digits are independent of \(t\). The
+extra power \((2m)^{tP}\) gives \(2^t\) at the
+even order and \(4^t\) at the odd order.
+The assumption \(p\nmid T_k\) excludes this slope.
+
+For \(k>0\), \(S_k(2X^2)\) is proportional to the
+odd Hermite polynomial of degree \(2k+1\) divided
+by \(X\). Schur's irreducibility of the squared
+nonzero Hermite polynomial, used in the
+[Hermite isolation proof](SFC_SCALED_HERMITE_ROOT_ISOLATION.md#square-node-groups),
+implies that \(S_k\) is irreducible. Its constant
+coefficient is one and its linear coefficient
+changes under scaling by two. Thus \(S_k(Z)\)
+and \(S_k(2Z)\) are coprime over \(\mathbb Q\)
+and \(T_k\ne0\). For each fixed \(k\) only
+finitely many primes are excluded by this
+resultant condition.

@@ -173,9 +173,11 @@ In the [direct head comparison](MULTIVARIATE_ABSOLUTE_CURVATURE_12.md#direct-est
 [connected comparison](MULTIVARIATE_ABSOLUTE_CURVATURE_12.md#connected-estimates-in-one-orientation),
 (1) supplies the edge and degree-derivative inputs, and
 (4) controls the product of their budget with \(D=Nq\).
-In both arguments the supply of an actual coefficient envelope,
-the first-factor bound and the final phase budget are still
-needed. For \(P=5\), the linear bound simplifies to
+Both arguments also require an actual coefficient envelope,
+a first-factor bound and a final phase budget. For \(P=5\), the linear bound simplifies to
 \(W_{\rm eff}q\le4e^{-s_0/2}\), uniformly over all shared rows,
 by the decrease of \((4+s)e^{-s/2}\) on \(s\ge0\).
+The [private-degree-five theorem](MULTIVARIATE_ONE_PRIVATE_DEGREE_FIVE_ALL_ANGLES.md)
+uses (4) at \(s_0=0\) with the exact private first-factor loss,
+and derives its coefficient tail from the cancelled interpolation.
 

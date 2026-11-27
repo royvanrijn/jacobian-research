@@ -1002,6 +1002,42 @@ one starts with an integral-output polynomial on a fixed
 arithmetic progression of parameter values and first substitutes
 its affine parametrization into \(T\).
 
+**Theorem Erdos675PolynomialLinearPrimeRange.** Let \(T\in\mathbb Z[X]\)
+have degree \(d\ge1\), and suppose \(T(X)+a\) is a Gaussian norm in
+\(\mathbb Q(X)\) for every \(a\in E\cap[1,N]\). Every inert prime
+\[
+                         100d^2<p\le N/(50d^2)
+\]
+divides each nonconstant coefficient of \(T\). In particular for
+fixed \(d\) and leading coefficient \(A\),
+\(\log |A|\ge(1/(100d^2)+o(1))N\).
+
+To prove this, suppose the reduction \(f=T\bmod p\) is nonconstant.
+Use \(H=\lceil4d\sqrt p\rceil\) so that \(H<p/2\) and \(2H^2\le N\).
+Write \(S=\{x^2\bmod p:1\le x\le H\}\), a set of size \(H\).
+The number of \((v,x,y)\in\mathbb F_p\times S^2\) satisfying
+\(f(v)+x+y=0\) is \(H^2\) from the zero Fourier term, with error
+at most \((d-1)\sqrt p\,H\). Indeed, for every nonzero frequency
+the complete additive sum over \(f\) is at most
+\((d-1)\sqrt p\) by the Weil bound, since its degree is between
+one and \(d<p\). Parseval gives \(pH\) for the sum over all
+frequencies of \(\lvert\sum_{x\in S}e_p(hx)\rvert^2\).
+[Weil's additive bound, Kowalski, Theorem 3.2](https://people.math.ethz.ch/~kowalski/exponential-sums-elementary.pdf)
+
+At most \(d-1\) possible \(v\) have \(f'(v)=0\).
+For each such value at most \(H\) pairs \((x,y)\) can
+contribute, since \(x\) determines \(y\).
+Thus there is a positive norm \(a\le2H^2\) for which
+\(T(X)+a\) has a simple root modulo \(p\).
+Among the lifts of that root modulo \(p^2\), only one
+makes \(T(X)+a\) divisible by \(p^2\).
+Choose an integer from one of the other classes,
+avoiding the finitely many poles in a norm identity.
+The resulting value has valuation one at the inert prime \(p\),
+which is impossible for a rational Gaussian norm.
+The leading coefficient bound follows from the prime number
+theorem in the class three modulo four.
+
 ## Quartic polynomial norm identities
 
 **Theorem Erdos675QuarticNormOffsets.** Let \(T\) be an integral quartic
@@ -1332,6 +1368,154 @@ to be a residue. Hence both \(t_0+b\) and \(t_0+c\) are
 zero modulo \(p\). The prime number theorem in arithmetic
 progressions counts the resulting divisors of the branch
 difference.
+
+### Linear range for congruences between the branch points
+
+**Lemma Erdos675NormCharacterPatterns.**
+Fix \(m\ge1\). There is \(C_m>0\) such that for every sufficiently
+large odd prime \(p\), every list of \(1\le r\le m\) nonconstant
+linear polynomials \(L_1,\ldots,L_r\) over \(\mathbb F_p\) with
+distinct roots, and every choice \(s_j\in\{1,-1\}\), there are
+\(\gg_{m,\varepsilon}p^{1-\varepsilon}\) distinct \(a\in
+E\cap[1,C_m p]\) with \(\chi_p(L_j(a))=s_j\) for all \(j\).
+Here \(\varepsilon>0\) is arbitrary and \(\chi_p\) is the
+quadratic character, extended by zero.
+
+Put \(H=\lceil K\sqrt p\rceil\) with \(K\) depending only on \(m\),
+and \(S=\{x^2\bmod p:1\le x\le H\}\).
+For large \(p\) we have \(H<p/2\), so \(|S|=H\).
+For a nonempty subset \(I\) put \(P_I=\prod_{j\in I}L_j\).
+By Cauchy–Schwarz,
+\[
+ \left|\sum_{x,y\in S}\chi_p(P_I(x+y))\right|^2
+ \le H\sum_{y,z\in S}\sum_{x\in\mathbb F_p}
+       \chi_p(P_I(x+y)P_I(x+z)).
+\]
+The diagonal contributes at most \(pH^2\). For \(y\ne z\),
+the product is not a constant times a square over
+\(\overline{\mathbb F}_p\). Otherwise its two translated
+root sets would coincide. This would make a nonempty
+set of at most \(m<p\) elements of \(\mathbb F_p\)
+invariant under translation by \(y-z\ne0\).
+The Weil bound is \(O_m(\sqrt p)\) for each such complete
+sum. It follows from the Hasse–Weil bound on the
+hyperelliptic curve defined by the odd-multiplicity part
+of the product. The zeros removed and the points at infinity
+change the count by \(O(m)\). The
+correlation divided by \(H^2\) is therefore
+\(O_m((K^{-2}+K^{-1})^{1/2})\).
+
+Expand \(2^{-r}\prod_j(1+s_j\chi_p(L_j(x+y)))\) and sum
+over \(S^2\). For \(K\) large enough the nonempty subsets
+contribute at most \(H^2/2^{r+1}\) in absolute value.
+At most \(rH\) pairs give a zero in some factor. Removing
+them gives \(\gg_m H^2\) pairs with the specified signs.
+The corresponding integer norms are at most \(2H^2\).
+Each has at most \(r_2(a)\le4\tau(a)\ll_\varepsilon
+p^\varepsilon\) representations by Jacobi's identity
+and the divisor bound. Choose \(C_m\ge2(K+1)^2\).
+
+**Theorem Erdos675TwoSquareclassLinearPrimeRange.**
+Suppose (T.18) certifies \(t+a\) as a Gaussian norm for
+every \(a\in E\cap[1,N]\). Write \(b=B_1/C_1\) and
+\(c=B_2/C_2\) using reduced integer coordinates with
+positive denominators. There are absolute constants
+\(p_0,A>0\) such that
+\[
+       \prod_{\substack{p\ {\rm prime}\\p_0<p\le N/A}}p
+                  \ \mid\ B_2C_1-B_1C_2 .
+\]
+In particular the logarithm of
+\(\max(|B_1|,C_1,|B_2|,C_2)\) is \(\gg N\)
+as \(N\to\infty\), uniformly in the family. The assertion
+uses only necessity in the squareclass criterion, so no
+rational seed is needed.
+
+For any \(X\le N\), the two direct square conditions
+\((a-b)/D_1\in\mathbb Q^2\) and \((a-c)/D_2\in\mathbb Q^2\)
+between them hold for \(O_\varepsilon(X^{3/5+\varepsilon})\)
+integers \(1\le a\le X\), uniformly in the coefficients.
+Indeed, multiplying each affine polynomial by a fixed
+positive integer square clears its rational denominators
+and preserves square values. A rational square that is an
+integer is an integer square. Apply the uniform bound
+for squares in a nonconstant arithmetic progression.
+This counts the branch offsets themselves if they occur.
+[Bombieri–Zannier, Theorem 1, p. 69](https://www.bdim.eu/item?fmt=pdf&id=RLIN_2002_9_13_2_69_0)
+
+If \(p\nmid B_2C_1-B_1C_2\), the primitive linear factors
+of \(F(a)=(C_1a-B_1)(B_2-C_2a)\) reduce to two linear
+polynomials with distinct roots, or to a unit constant
+and one nonconstant linear polynomial. The remaining
+square condition is \(\lambda F(a)\in\mathbb Q^2\),
+where \(\lambda=(C_1 C_2 D_1 D_2)^{-1}\).
+If \(v_p(\lambda)\) is odd, any nonzero value of \(F\bmod p\)
+makes this condition fail. If \(v_p(\lambda)\) is even,
+choose signs so that \(\chi_p(p^{-v_p(\lambda)}\lambda
+F(a))=-1\) with both factors nonzero. In either case
+the preceding lemma gives \(\gg_\varepsilon p^{1-\varepsilon}\)
+such offsets \(a\in E\cap[1,C_2' p]\), for an absolute
+\(C_2'\). For \(p\) sufficiently large this exceeds the
+combined direct-square bound at \(X=C_2'p\), for example by
+using \(\varepsilon=1/10\) in both bounds. If \(C_2'p\le N\)
+there is an offset satisfying none of the three necessary
+conditions, a contradiction. This proves the product
+divisibility with \(A=C_2'\). Since the branch points are
+distinct, the determinant is nonzero. Its absolute value
+is at most twice the square of the maximum coordinate.
+The prime number theorem gives the claimed height bound.
+
+**Theorem Erdos675FixedBranchCountHeight.**
+Fix \(m\ge2\) and distinct rational branches \(b_1,\ldots,b_m\).
+Use the function field over \(\mathbb Q(t)\) given by
+\(t+b_j=D_j x_j^2\) with positive rational \(D_j\).
+Suppose it has a rational point over an integer \(t_0\)
+and every \(t+a\), \(a\in E\cap[1,N]\), is a Gaussian norm
+in that function field. Write \(b_j=B_j/C_j\) in reduced
+coordinates. There are \(p_m,A_m>0\) depending only on \(m\)
+such that
+\[
+ \prod_{\substack{p_m<p\le N/A_m\\p\equiv3\bmod4}}p
+       \ \mid\ \prod_{i<j}(B_jC_i-B_iC_j).
+\]
+In particular \(\log\max_j (|B_j|,C_j)\gg_m N\).
+
+Suppose instead that an inert \(p\) in this range divides
+none of the displayed determinants, so all branch points
+are distinct in \(\mathbb P^1(\mathbb F_p)\). For each
+\(p\)-integral \(b_j\), write \(D_j=p^{e_j}D_j^*\) with
+\(D_j^*\) a \(p\)-adic unit. Apply the lemma to the distinct
+linear roots \(b_j\bmod p\) and choose \(a\in E\) through
+\(A_mp\) with
+\(\chi_p((b_j-a)/D_j^*)=1\) for every integral branch.
+Then \((b_j-a)/D_j\) has squareclass \(1\) or \(p\)
+in \(\mathbb Q_p^\times/\mathbb Q_p^{\times2}\).
+For a pole \(b_j\) at \(p\), the squareclass is \(1\),
+because the seed gives
+\[
+     (b_j-a)/D_j=x_j(t_0)^2\left(1-\frac{a+t_0}{b_j+t_0}\right)
+\]
+and the parenthesis belongs to \(1+p\mathbb Z_p\).
+In particular \(a\ne b_j\) for every \(j\).
+
+At \(t=-a\), expand in the variable \(s=t+a\).
+The function field embeds in \(L((s))\), with \(L\)
+generated by the square roots of the values
+\((b_j-a)/D_j\), since all these radicands are nonzero.
+At the chosen \(p\), \(L\) embeds in \(\mathbb Q_p(\sqrt p)\).
+The latter is ramified, whereas \(-1\) gives an unramified
+quadratic extension of \(\mathbb Q_p\). Thus \(i\notin L\).
+Conjugation in \(L(i)((s))\) preserves the \(s\)-order, so a
+Gaussian norm has even order. The element \(s=t+a\) has
+order one, contrary to certification. This proves the
+divisibility. There are \(\binom m2\) nonzero determinants,
+each at most twice the square of the maximum coordinate.
+The prime number theorem in the class three modulo four
+gives the lower bound for the height.
+
+These bounds exclude branches of height \(\exp(o(N))\)
+in the stated families. Allowing unrestricted branch heights
+leaves the existence of a uniform construction open.
 
 ## 17. Review and computation scope
 

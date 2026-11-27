@@ -151,6 +151,208 @@ so there \(m=k\).
 The power-of-two existence question still requires proving
 non-stabilization or finding an admissible exponent.
 
+## Prime orders for the Pell traces
+
+Mollin and Walsh reduce existence to powerful Pell traces with odd
+indices and \(D\mid U_k\). Reinhart's search for \(D\mid U_1\)
+leaves \(4099215\) and \(39028039587479\) as possible sources of
+a triple, with the initial trace excluded in each. The criteria
+below apply at every odd index and also when \(D\nmid U_1\).
+[Mollin, Theorem 1 and p. 126](https://doi.org/10.1155/S0161171287000152)
+· [Reinhart, Definition 1.4 and §3](https://arxiv.org/html/2402.09827v2#S3)
+
+**Theorem (Least index from prime orders of a Pell trace).**
+Fix a squarefree \(D\equiv7\bmod8\) whose least positive Pell
+unit \(\epsilon=t+u\sqrt D\) has \(t\) even. Write
+\(\epsilon^k=T_k+U_k\sqrt D\), and put \(R=D/\gcd(D,u)\).
+For each odd \(p\nmid D\), if the order of \(\epsilon\) modulo
+\(p\) is \(4d_p\) with \(d_p\) odd, impose
+\[
+  d_p\mid k,\quad v_p(T_{d_p})=1
+       \quad\Longrightarrow\quad p\mid k.                     \tag{364.1}
+\]
+Other primes impose no condition. The admissible indices are
+exactly the positive odd multiples of \(R\) satisfying all of
+(364.1). Admissibility means \(T_k-1,T_k,T_k+1\) are powerful.
+
+Start at \(M=R\) and visit the odd primes in increasing order.
+Multiply \(M\) by \(p\) when (364.1) requires \(p\mid M\) and
+\(p\) is still absent. After the primes through \(B\), the product
+\(M_B\) is the least positive odd multiple of \(R\) satisfying
+the tests through \(B\), and it divides every other such index.
+The products stabilize exactly when the field gives a triple.
+The stable value is the least admissible index and is squarefree.
+
+The Pell reduction gives the parity restrictions and \(R\mid k\).
+In particular \(4\mid t\), and \(v_2(T_k)=v_2(t)\) at odd \(k\).
+Primes dividing \(D\) cannot divide a trace. For \(p\nmid2D\)
+the norm-one subgroup of the quadratic algebra over \(\mathbb F_p\)
+is cyclic of order \(p-\chi_p\), where \(\chi_p=(D/p)\).
+In the split case its two coordinates are inverse elements of
+\(\mathbb F_p^\times\). In the inert case it is the norm kernel
+in \(\mathbb F_{p^2}^\times\). Since \(-1\) is its unique
+involution, \(p\mid T_k\) exactly when \(\epsilon^{2k}=-1\bmod p\).
+At odd indices this requires order \(4d_p\) with odd \(d_p\mid k\).
+In particular \(d_p\le(p+1)/4<p\).
+
+Use \(v_p\) in the quadratic ring to mean the greatest exponent
+of \(p\) dividing both coordinates. When \(p\mid T_j\), the identity
+\[
+ \epsilon^{4j}-1=(\epsilon^{2j}-1)(2T_j\epsilon^j)
+\]
+gives \(v_p(\epsilon^{4j}-1)=v_p(T_j)\), since the first
+factor is \(-2\bmod p\). For \(z\equiv1\bmod p\) with
+\(z\ne1\), binomial expansion gives
+\(v_p(z^h-1)=v_p(z-1)+v_p(h)\). An exponent prime to \(p\)
+preserves the first nonzero coefficient after dividing by the
+appropriate power of \(p\), and raising to \(p\) advances that
+power by one. Apply this to \(\epsilon^{4d_p}\) to get
+\[
+ v_p(T_k)=v_p(T_{d_p})+v_p(k)
+       \quad(d_p\mid k,\ k\text{ odd}).                       \tag{364.2}
+\]
+Together with the order test this proves (364.1).
+
+When the sweep visits \(p\), all factors of \(d_p\) are smaller
+than \(p\). If \(d_p\mid M\), every index that passed the previous
+tests is a multiple of \(M\) by induction, so the only new
+required factor is \(p\) if \(v_p(T_{d_p})=1\).
+If \(d_p\nmid M\), the current product already passes.
+Adding \(p\) cannot change an earlier trigger. Each full
+solution bounds the products by divisibility, forcing
+stabilization. A stable limit satisfies each individual test.
+
+### Prime-square and prime-cube consequences
+
+For an odd trace rank \(d_p\), one has \(p^j\mid T_{d_p}\)
+exactly when \(\epsilon^{p-\chi_p}\equiv1\bmod p^j\) in the
+quadratic ring. Indeed \(4d_p\mid p-\chi_p\) with quotient
+prime to \(p\), so the lifting argument applies unchanged.
+
+**Theorem (Many primes are required by an admissible Pell index).**
+Let \(k>1\) be admissible, let \(w=\omega(k)\), and let \(P\)
+be its greatest prime factor. There are at least \(2^{w-1}\)
+distinct primes \(\ell>P\) with
+\(\epsilon^{\ell-\chi_\ell}\equiv1\bmod\ell^2\), and at
+least one such prime is \(\ge4k-1\).
+Let \(S\) be the primes \(p\mid k\) with \(p\equiv3,5\bmod8\)
+and \(p\nmid t\). For each \(p\in S\) such that \(p\mid D\),
+or \(d_p\) is undefined, or \(d_p\) is outside \(S\), there is
+a distinct \(\ell\equiv3,5\bmod8\) outside the prime divisors
+of \(k\) with \(\epsilon^{\ell-\chi_\ell}\equiv1\bmod\ell^3\).
+
+For the first assertion take an odd \(m>1\) and write
+\[
+ A_m=\prod_{d\mid m}(2T_d)^{\mu(m/d)}
+     =\epsilon^{\varphi(m)}
+       \prod_{d\mid m}(1+\epsilon^{-2d})^{\mu(m/d)}.
+\]
+The valuation at 2 vanishes since \(v_2(T_d)=v_2(t)\).
+By (364.2), the valuation at an odd prime \(\ell\nmid D\)
+is zero unless \(m=d_\ell h\). When \(h=1\) the valuation
+is \(v_\ell(T_{d_\ell})\). When \(h>1\) it is
+\(\sum_{j\mid h}\mu(h/j)v_\ell(j)\), which is one if
+\(h\) is an \(\ell\)-power and zero otherwise. Thus \(A_m\)
+is an integer. Any prime from the second case is the largest
+prime factor of \(m\), since \(d_\ell<\ell\). The product
+\(\prod_{d\ge1}(1+\epsilon^{-2d})\) is less than 2 by the
+geometric-series bound for its logarithm. Since \(\epsilon>7\),
+we have \(A_m>\epsilon^{\varphi(m)}/2>P^+(m)\), with \(P^+(m)\)
+the largest prime factor of \(m\). Hence \(A_m\) has a prime
+\(\ell\) of rank \(m\), with \(\ell\ge4m-1\).
+
+Take the \(2^{w-1}\) squarefree divisors of \(k\) obtained by
+multiplying \(P\) by any subset of its other prime factors.
+Also take \(m=k\) for the height bound. At each chosen rank
+\(m\), the prime \(\ell>P\) cannot divide \(k\), so admissibility
+and (364.2) give \(\ell^2\mid T_m\). Distinct ranks give
+distinct primes.
+
+For the second assertion, if \(p\in S\) then
+\[
+ A_p=T_p/t\equiv(-1)^{(p-1)/2}p\equiv5\bmod8
+\]
+by the Chebyshev identity for \(T_p/t\bmod t^2\).
+Also \(\gcd(A_p,t)=1\) since \(p\nmid t\), so every prime
+of \(A_p\) has rank \(p\). The supplementary law for
+\((2/\ell)\) gives a prime \(\ell\equiv3,5\bmod8\) to
+odd exponent. Choose one such \(\ell\) for each \(p\in S\).
+It satisfies \(\ell>p\), and if \(\ell\mid k\) it belongs
+to \(S\). The choices from different \(p\) are distinct
+because \(\ell\) determines its rank \(p\). Iterate the
+choices until leaving \(S\). The starting primes specified
+in the theorem cannot be reached from another member of \(S\),
+so their chains have distinct final primes. At the final
+\(\ell\) the odd exponent in \(A_p\) equals \(v_\ell(T_k)\)
+by (364.2). Admissibility makes it at least three.
+
+### Exact bounds for three Pell fields
+
+**Corollary (Index bounds for three specified Pell fields).**
+The prime sweep through \(10^8\) gives the following data.
+The number of decimal digits is for \(M_{10^8}\). The last
+column counts certified starting primes for the prime-cube
+bound. A certified start either divides \(R\) and belongs to
+\(S\), or is a forced member of \(S\) whose rank cannot belong
+to \(S\).
+
+| \(D\) | Continued fraction period of \(\sqrt D\) | \(R\) | Additional primes in \(M_{10^8}\) | Largest additional prime | Digits | Starts for the prime-cube bound |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| \(7\) | \(4\) | \(7\) | \(57\) | \(99893971\) | \(353\) | \(23\) |
+| \(4099215\) | \(436\) | \(1\) | \(8\) | \(65753899\) | \(45\) | \(2\) |
+| \(39028039587479\) | \(3650856\) | \(1\) | \(498\) | \(99680461\) | \(3423\) | \(255\) |
+
+Thus for \(D=39028039587479\), any triple requires
+\(k>10^{3422}\), at least \(2^{497}\) primes above \(99680461\)
+with the stated prime-square congruence, and at least \(255\)
+primes with the stated prime-cube congruence. At least one
+prime with the prime-square congruence is \(\ge4k-1\).
+
+The [replay](verify_erdos_364_pell_trace_orders.cpp) uses the
+continued fraction of \(\sqrt D\). The conjugate of each
+complete quotient \((m+\sqrt D)/v\) after the first lies in
+\((-1,0)\). Thus \(v=1\) occurs exactly at the period endpoint
+with partial quotient \(2\lfloor\sqrt D\rfloor\). The
+convergent preceding the complete quotient with denominator
+\(v\) has Pell norm \(v\) or \(-v\) by the identity for the
+determinant of two consecutive convergents. The first endpoint
+at even period length gives the fundamental solution of norm
+one. Every positive solution is a convergent by Legendre's
+criterion applied to
+\(\lvert x/y-\sqrt D\rvert=1/(y^2(x/y+\sqrt D))\).
+The replay multiplies integer matrices for the partial
+quotients and checks the norm and parity. Trial division
+checks squarefreeness and gives the primes used to compute \(R\).
+
+For each tested prime put \(g=\gcd(M,\operatorname{oddpart}(p-\chi_p))\).
+If an odd rank exists, \(p\mid T_g\) detects \(d_p\mid M\).
+As \(g<p\), the test \(p^2\nmid T_g\) then detects
+\(v_p(T_{d_p})=1\). A sieve gives the primes and least prime
+factors. Euler's criterion computes \(\chi_p\), and a tree
+of products and remainders computes \(t\bmod p^2\) for the
+sweep. The modular trace uses \(T_{2i}=2T_i^2-1\) and
+\(T_{2i+1}=2T_iT_{i+1}-t\). For each newly forced prime,
+divide factors out of \(g\) while the trace remains zero
+modulo \(p\) to recover the rank. A forced prime in class
+\(3,5\bmod8\) with rank greater than one is a certified start
+if the rank is composite, or if it is prime and either in a
+different class or dividing \(t\).
+
+Replay from the repository root with GCC 13.3.0 and GMP 6.3.0.
+Each row reports the radicand and the six numerical columns.
+
+~~~sh
+g++ -std=c++20 -O3 -Wall -Wextra \
+  research/arithmetic/verify_erdos_364_pell_trace_orders.cpp \
+  -lgmpxx -lgmp -o /tmp/erdos364-pell-orders
+for d in 7 4099215 39028039587479; do
+  /tmp/erdos364-pell-orders "$d" 100000000
+done
+~~~
+
+These lower bounds apply to all possible indices in each of the
+three fields. Whether any of the prime sweeps stabilizes is open.
+
 ## Transfers from the preprint counting statements
 
 Plymesser's [powerful-products paper](sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf), Lemma 8.3, states that for every \(\varepsilon>0\) there is \(\eta>0\) such that fixed positive integer coefficients \(f_i\le Y^\eta\) give \(O_\varepsilon(Y^{\theta+\varepsilon})\) starts, where \(\theta=77/320\) and the three terms belong to the respective \(f_i\) times the powerful integers. For fixed \(k\) the possible coefficients from the repair form a finite set. Apply the lemma with start \(t-2\) and \(Y=(2X)^{1/k}\), increasing the threshold for \(X\) to fit \(Y^\eta\). Using it at \(k=3,5\), and the elementary middle-term bound for \(k\ge7\), gives

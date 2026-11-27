@@ -24,6 +24,10 @@ counts at finite height when the negative sites have bounded witness primes.
 The [common divisor of all returns](#the-common-divisor-of-the-returns)
 is already realized at height \(\exp(O(\sqrt N))\).
 
+The [bounded-prime tests](#short-shifts-for-bounded-prime-tests) admit
+shifts with logarithm \((r+o(1))N^{1/r}\), even when the same tests
+are imposed on a growing number of multiples of the shift.
+
 ## Returns divisible by the small prime powers
 
 **Theorem (Uniform count of power-free prefix returns).**
@@ -141,6 +145,97 @@ using the bounded derivative in the first argument on
 \([0,\eta_r]\) and \(\sum_{p>Y}(p/Y)^{-r}\ll_r Y/\log Y\).
 The omitted tail is \(O_r((Y/\log Y)B^{1-r})\), by partial
 summation. Letting \(B\) tend to infinity gives the formula.
+
+## Short shifts for bounded prime tests
+
+Let \(Z\ge Y=N^{1/r}\). A shift passes the tests through \(Z\)
+if it preserves the indicator of having no prime \(q\le Z\)
+with \(q^r\) dividing the integer, at every offset \(1\le a\le N\).
+
+**Theorem (Short shifts for bounded prime-power tests).**
+Fix \(r\ge2\), put \(M=\prod_{p\le Y}p^r\), and let \(L\ge1\)
+be an integer. Write
+\[
+ \rho=\prod_{Y<q\le Z}
+ \frac{\lceil(q^r-N)/(2^r L)\rceil}{q^r},
+\]
+where the product is over primes. For every integer \(H\ge1\),
+there are at least \(\lceil(H+1)\rho\rceil-1\) distinct
+\(u\in[1,H]\) such that every \(jMu\), \(1\le j\le L\),
+passes the tests through \(Z\). The smallest such \(t=Mu\) satisfies
+\[
+ 0\le \log(t/M)
+ \le \bigl(\pi(Z)-\pi(Y)\bigr)\log(2^r L)+O_r(Y/\log Y).
+\]
+In particular, if \(\pi(Z)\log(2L)=o(Y)\), then
+\(\log t=(r+o(1))Y\). For example the hypothesis holds for
+\(Z=Y(\log Y)^{1/3}\) and \(L=\lfloor\exp((\log Y)^{1/3})\rfloor\).
+
+For each \(q\in(Y,Z]\), let \(B_q\) consist of the nonnegative
+multiples of \(2^r\) no greater than \((q^r-N-1)/L\), viewed
+as residues modulo \(q^r\). Its cardinality is
+\(\lceil(q^r-N)/(2^r L)\rceil\). Let \(B\) be the set of
+integers \(b\) such that \(Mb\bmod q^r\) belongs to \(B_q\)
+for all these primes. Because \(\gcd(M,q^r)=1\), the Chinese
+remainder theorem gives a periodic set with density \(\rho\).
+Averaging the count in a block of \(H+1\) consecutive
+integers over one period gives a block containing
+\(\lceil(H+1)\rho\rceil\) or more elements of \(B\).
+Subtract the smallest element from each other element in
+the block to obtain the claimed number of distinct \(u\).
+
+At each \(q\) in the product, a difference \(Mu\) has an
+integer representative \(d\) modulo \(q^r\) that is divisible
+by \(2^r\) and satisfies \(|d|\le(q^r-N-1)/L\). For
+\(1\le j\le L\) and \(a\in S_r\cap[1,N]\), the integer
+\(a+jd\) has absolute value less than \(q^r\) and is
+nonzero since \(2^r\nmid a\). Thus \(q^r\nmid a+jMu\).
+At the primes \(p\le Y\), the shift is zero modulo \(p^r\),
+so every original test is preserved there. Every offset
+outside \(S_r\) has a witness \(p\le Y\), which remains a
+witness at all \(a+jMu\).
+
+Taking \(H=\lfloor\rho^{-1}\rfloor\) gives at least one
+positive difference. The definition of \(\rho\) gives
+\[
+ \log(\rho^{-1})\le
+ \bigl(\pi(Z)-\pi(Y)\bigr)\log(2^r L)
+ +\sum_{Y<q\le Z}-\log\!\left(1-(Y/q)^r\right).
+\]
+For \(q>2Y\) the sum is \(O_r(Y/\log Y)\) by partial
+summation using \(\pi(x)\ll x/\log x\). For \(Y<q\le2Y\),
+each summand is \(O_r(1+\log(Y/(q-Y)))\). For
+\(0<q-Y\le\sqrt Y\) use the simpler \(O_r(\log Y)\) bound
+from the integer inequality \(q^r-N\ge1\). This range
+contributes \(O_r(\sqrt Y\log Y)\). For
+\(\sqrt Y\le h\le Y/2\), the primes \(Y<q\le Y+h\) divide
+\(\binom{\lfloor Y\rfloor+\lceil h\rceil}{\lceil h\rceil}\),
+since their factors occur in the numerator and
+\(q>\lceil h\rceil\). The usual binomial coefficient upper
+bound then gives
+\[
+ \#\{q:Y<q\le Y+h\}\ll
+ \frac{h\log(2Y/h)}{\log Y}.
+\]
+Summing the weighted count in dyadic intervals for
+\(q-Y\) gives \(O_r(Y/\log Y)\), since
+\(\sum_{k\ge1}2^{-k}(1+k)^2<\infty\). The interval
+\(3Y/2<q\le2Y\) contributes the same order by the
+prime counting bound. Finally \(\log M=r\vartheta(Y)=(r+o(1))Y\).
+
+For \(L=1\) and \(N\ge 2^r-1\), any local set whose differences
+enforce the positive tests at \(q\) has at most \(q^r/2^r\)
+elements. Indeed the translates of the set by
+\(0,1,\ldots,2^r-1\) are disjoint since each positive
+difference between two translation indices is \(r\)-free.
+The density of \(B_q\) reaches this upper bound
+asymptotically when \(q/Y\to\infty\). Taking all primes
+in this local difference construction therefore cannot
+give a positive product of densities. To turn the short
+shifts above into actual returns one needs to exclude
+prime-power divisors with \(q>Z\) at every positive site for
+at least one candidate. The theorem supplies no estimate
+for that loss.
 
 ## Natural density of all squarefree returns
 

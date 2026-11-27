@@ -9,6 +9,7 @@ import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from dependency_bounds import bound_comparisons, bounds_records
 from dependency_coverage import declarations
+from research import proved_named_assumptions
 
 
 def graph_for_bounds(bounds):
@@ -20,6 +21,21 @@ def graph_for_bounds(bounds):
 
 
 class ToolingReviewTests(unittest.TestCase):
+    def test_newly_proved_inputs_expose_literal_assumptions_without_discharging_them(self):
+        graph = SimpleNamespace(
+            nodes={"input": {}, "unresolved": {},
+                   "leaf": {"assumptions": ["input", "unresolved", "input in another domain"]}},
+            rules={"route": {"premises": ["input"], "assumptions": ["input"]}})
+        evaluation = {"input": {"state": "proved"}, "unresolved": {"state": "open"}}
+        self.assertEqual(proved_named_assumptions(graph, evaluation), [
+            {"owner": "leaf", "owner_kind": "node", "assumption": "input",
+             "already_a_premise": False},
+            {"owner": "route", "owner_kind": "implication", "assumption": "input",
+             "already_a_premise": True}])
+        self.assertEqual(graph.rules["route"]["assumptions"], ["input"])
+        evaluation["input"]["state"] = "conditional"
+        self.assertEqual(proved_named_assumptions(graph, evaluation), [])
+
     def test_blockquoted_and_admonition_theorems_are_not_omitted(self):
         forms = [
             "> **Theorem (quoted).** Every admissible x satisfies P.\n",

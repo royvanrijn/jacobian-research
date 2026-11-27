@@ -37,9 +37,23 @@ respectively.
 At ordinary degree at most six, the
 [triple-line exclusion](SEXTIC_KELLER_TRIPLE_LINE_SEXTIC_QUARTIC_MATES.md)
 and the [parabolic exclusion](KELLER_PARABOLIC_SHEAR_QUADRATIC_MATES.md#the-full-sextic-exclusion)
-remove the first two forms in (1). In the third form the
-[tangent-conic calculation](SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_MATE.md)
-excludes free mate degrees zero, one and two after localization.
+remove the first two forms in (1). The
+[tangent-conic exclusion](SEXTIC_KELLER_TANGENT_CONIC_HIGH_MATES.md#exclusion-of-the-tangent-conic-quartic-form)
+removes the third form. For the fourth form the
+[squarefree mate restrictions](KELLER_SQUAREFREE_QUARTIC_FIBRES_AND_MATES.md)
+require both mates to depend on \(z\) and at least one to have
+\(z\)-degree at least two. For sextic maps the
+[high source-degree exclusion](SEXTIC_KELLER_SQUAREFREE_MATE_DEGREES.md)
+also bounds both \(z\)-degrees by three and gives the
+two possible leading coefficient forms at \(z\)-degree three.
+
+**Corollary SexticKellerQuarticAffineSourceSquarefreeResidual.**
+A noninvertible characteristic-zero polynomial Keller map of ordinary
+degree at most six with a quartic component affine in a source
+direction can be put in the fourth form in (1). Both mate degrees
+in that source direction are in \([1,3]\), and at least one is at
+least two. The cubic leading restriction above applies to each mate
+of degree three in that direction.
 
 ## Affine normal forms and the completion bounds
 

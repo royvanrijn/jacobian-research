@@ -1,5 +1,10 @@
 # Common leading factors for polynomial Weyl pairs of differential-order gcd three
 
+The [Newton-edge argument](#exclusion-in-all-orders) below excludes all
+nondividing differential orders of gcd three. The local factor and degree
+restrictions give intermediate tests that also explain how the residue and
+Bernstein results apply to this problem.
+
 **Theorem PolynomialGcdThreeLeadingFactor.** Let \(k\) have characteristic
 zero. If polynomial differential operators of orders \(3a,3b\), for
 coprime \(a,b\ge2\), have nonzero scalar commutator, their leading
@@ -135,8 +140,8 @@ orders in the new presentation are \(a,b\), contrary to
 the [coprime scalar obstruction](ALL_COPRIME_ALGEBRAIC_STRING_OBSTRUCTION.md).
 
 Finally \(r=1\) gives \(M=2\), so \(f\) has a double root and a
-simple root. The Bernstein leading symbol of \(P\) is the square
-of a homogeneous cubic with a repeated and a simple linear
+simple root. The Bernstein leading symbol of \(P\) is the
+\(a\)-th power of a homogeneous cubic with a repeated and a simple linear
 factor. These two factors are independent linear forms and can
 be made the two Weyl coordinates by a linear change and scaling.
 Then the leading monomials of \(P,Q\) are proportional to
@@ -209,6 +214,26 @@ higher root has multiplicity a multiple of three, at least six.
 It follows that a single root must also have multiplicity at
 least six, which finishes the degree bound.
 
+## Multiple roots and perfect cubes
+
+**Corollary PolynomialGcdThreeMultiRootMultiplicities.** Under the
+hypotheses above, if \(h\) has at least two geometric roots, it has
+at least two roots of multiplicity one or two and at least one root
+of multiplicity divisible by three and at least six.
+
+If all multiplicities were divisible by three, \(h\) would be a
+cube over the algebraic closure, contrary to the
+[perfect-power obstruction](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#perfect-power-leading-factors).
+The only remaining multiplicities are one and two. If \(s,t\)
+count the simple and double roots, respectively, then \(s+t>0\)
+and \(s+2t\equiv0\pmod3\) because \(3\mid\deg h\).
+Consequently \(s+t\ge2\). The leading-factor residue theorem
+requires some multiplicity greater than three, which must be
+a multiple of three at least six. In the one-root case, \(h\)
+is a scalar multiple of \((x-x_0)^d\) with \(3\mid d\).
+
+## Normalization at infinity
+
 **Corollary PolynomialGcdThreeInfinityDegreeBound.** Under the hypotheses
 of PolynomialGcdThreeLeadingFactor the degree \(d=\deg h\) is divisible
 by three and at least fifteen. A polynomial shear of \(D\) gives
@@ -217,6 +242,8 @@ by three and at least fifteen. A polynomial shear of \(D\) gives
                     \deg q_i\le b(d-3)+i .
 \]
 Here \(p_i,q_i\) are the coefficients of \(D^i\) after the shear.
+The Bernstein degrees of the sheared pair are exactly
+\(a(d+3),b(d+3)\), and the pair is nongenerating.
 
 The divisibility of \(d\) follows from the theorem, including when
 \(h\) has one root. Use the shear \(D\mapsto D-A(x)\), where \(A\)
@@ -259,3 +286,68 @@ and \(x^{bd}\xi^{3b}\), respectively. The Bernstein degrees are
 bracket is \(3a+a(d-3)j\) times the leading scalar of \(P\).
 Thus the pair is nongenerating, and the Guccione–Guccione–Valqui
 bound gives \(d+3>15\). Divisibility by three yields \(d\ge15\).
+
+## Degree-pair exclusions
+
+**Corollary PolynomialGcdThreeDegreePairBounds.** With \(a<b\) and
+\(M=d+3\), a pair as above must satisfy \(aM\ge60\) and \(bM\ge105\).
+
+The [Weyl generation bound through 59](POLYNOMIAL_WEYL_BERNSTEIN_FIFTY_SIX.md)
+applies to the sheared pair, so \(aM\ge60\). The degrees \(aM,bM\)
+are nondividing since \(a,b\ge2\) are coprime. The
+[exact degree-pair transfer](POLYNOMIAL_WEYL_CONDITIONAL_THROUGH_FORTY_NINE_FROM_F7.md#two-inputs-from-polynomial-degree-pairs)
+would give a complex plane Keller counterexample of these degrees.
+[Nguyen, Theorem 3.6](https://doi.org/10.2989/16073606.2025.2482655)
+excludes maximum degree at most \(104\).
+
+In particular, taking \(M\) through the multiples of three starting
+at \(18\), the full list with \(60\le aM<bM\le104\) consists of
+\((72,90),(63,84),(72,96),(60,90),(66,99)\), in order of increasing
+\(M\). The inequalities used to enumerate the list are
+\(\max(2,\lceil60/M\rceil)\le a<b\le\lfloor104/M\rfloor\) and
+\(\gcd(a,b)=1\). Each of the five also lies within Moh's degree-100
+bound. The two additional possibilities through maximum degree
+\(107\) are \((63,105)\) and \((84,105)\), both with \(M=21\).
+They are excluded if one imports the planar bound through \(107\)
+from the [GGHV reduction](../../BREAKTHROUGH_TARGET_ASSESSMENT.md#four-variable-hessian-conjecture-and-planar-degree-bounds).
+That reduction below \(125\) supplies an existential reduced
+representative of degrees \(72,108\). To use its list to exclude
+another specific transferred pair of maximum degree at least \(108\)
+would require checking that the reduction preserves the relevant
+degrees or excludes the transferred shape.
+
+## Exclusion in all orders
+
+**Theorem PolynomialGcdThreeNondividingOrdersExclusion.** Over a
+characteristic-zero field, polynomial differential operators of orders
+\(3a,3b\), for coprime integers \(a,b\ge2\), cannot have a nonzero
+scalar commutator.
+
+Work over the algebraic closure. The one-root and multiple-root cases
+both give a root \(x_0\) of \(h\) of multiplicity \(m>3\). For one
+root this follows from PolynomialGcdThreeLeadingFactor, and for multiple
+roots it follows already from the leading-factor residue theorem. The
+[translated-root crossing theorem](POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md#the-finite-list-for-a-fixed-differential-order-gcd)
+then gives \(u=3\). Its only row with \(u=3\) is
+\(C_0=(3,6), C_1=(1,0)\) at direction \((3,-1)\), with
+\((f_1,f_2)=(2,4)\). It yields \(C_2=(2-1/3,2)\), forbidden
+by Guccione–Guccione–Valqui, Proposition 7.3(6).
+
+## Consequences for reduced orders
+
+**Corollary PolynomialWeylReducedOrderFourBound.** In a proper
+characteristic-zero polynomial Weyl pair both differential orders
+are composite and at least eight, and neither can be nine.
+Triangular mate subtraction gives nondividing orders with gcd at
+least four.
+
+Use the [preliminary reduced-order bounds](POLYNOMIAL_GCD_TWO_AND_REDUCED_ORDER_BOUNDS.md).
+If one order is six or nine, keep that member fixed and repeatedly
+subtract powers of it from the other member while the latter's
+order is a multiple of the fixed order. The residual order is at
+least six and is no longer a multiple of the fixed order. Since
+every proper divisor of six or nine is less than six, the two
+orders are nondividing. Their gcd is at least three by the
+coprime and gcd-two exclusions, and its only remaining possible
+value is three, which the theorem excludes. The general triangular
+reduction then gives the claimed gcd bound.

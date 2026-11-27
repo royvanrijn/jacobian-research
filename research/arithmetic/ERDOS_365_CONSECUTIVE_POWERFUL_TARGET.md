@@ -1293,7 +1293,142 @@ the floors for \(D\le\sqrt Y\), for an error \(O(\sqrt Y)\).
 The rest of the error is at most \(Y\) times the rate tail
 at \(\sqrt Y\), which gives the claimed logarithmic law.
 
-This argument controls near-minimal units in the domain
-(365.M1). The rate outside the proved summable domains,
-including smaller multipliers with large units, still
-requires an unrestricted estimate.
+## A larger square factor range for polynomial period multipliers
+
+**Theorem (Weighted estimate with larger square factors).**
+For squarefree \(D>1\) retain \(H_D=\gcd(D,U_D)\),
+\(R_D=D/H_D\), and \(Q_D=U_D/H_D\). For \(W\ge2\),
+\[
+ \sum_{\substack{W\le D<2W,\ D\ {\rm squarefree}\\
+                  R_D\ge D^{5/16},\ Q_D\le R_D^{1/5}}}
+       \frac{H_D}{D\log\epsilon_D}\ll W^{-1/5000}.                 \tag{365.P1}
+\]
+The hypotheses permit \(\epsilon_D\) up to order \(D^{5/4}\), since
+\(\epsilon_D\asymp \sqrt D\,H_D Q_D\le D^{3/2}R_D^{-4/5}\).
+The rate in this range is finite, and (2) gives a restricted
+logarithmic asymptotic with a power saving in \(Y\).
+
+Use the trace boxes \(T_D\asymp P\), \(D\asymp W\) and let \(h\)
+be the odd part of \(H_D\). If \(h\le4P^{1/3}\), then
+\[
+ P\asymp \sqrt W\,H_D Q_D
+ \ll W^{7/10}H_D^{4/5}\ll W^{7/10}P^{4/15}.
+\]
+Thus \(P\ll W^{21/22}\). For sufficiently large \(W\) these
+kernels have \(\epsilon_D\le D\), and the estimate from (6) at
+\(\alpha=1\) gives (365.P1) on this part.
+
+For \(h>4P^{1/3}\) use the factorization in the proof of
+(365.M2) and the same dyadic scales. In an occupied box,
+\[
+ \sigma\le\frac{\beta}{5}+O(1/\log P),\qquad
+ 2=3\psi+\beta+2\sigma+O(1/\log P).
+\]
+As \(\log D=(\psi+\beta)\log P+O(1)\) and
+\(\log R_D=\beta\log P+O(1)\), the lower bound on \(R_D\)
+gives \(38\beta+10\sigma\ge10-O(1/\log P)\).
+Consequently \(1/4-O(1/\log P)\le\beta\le1+O(1/\log P)\).
+The upper bound uses \(\psi\ge1/3-O(1/\log P)\) and \(\sigma\ge0\).
+
+For fixed \(u,v\) subdivide the normalized \(t\)-range into intervals
+of length at most \(P^{-\mu}\), with
+\(\mu=\beta-\sigma-1/1000\). Use the determinant with \(2K\)
+columns from the preceding proof, taking \(K=5\) for
+\(\beta\le13/50\) and \(K=4\) for \(\beta>13/50\). Put
+\[
+ A_j=\frac{(2K-j)(2K-j-1)+j(j-1)}2\qquad(0\le j\le K).
+\]
+The excess of the decay exponent for the term with \(j\) error
+columns over the clearing exponent is
+\[
+ j+\mu A_j-K\psi-K(K-1)\beta
+ \ \ge\
+ j-\frac{2K}{3}
+ +\beta\!\left(\frac45 A_j+\frac7{15}K-K(K-1)\right)
+ -\frac{A_j}{1000}-O(1/\log P).
+\]
+Indeed the coefficient of \(\sigma\) before bounding it is
+\(2K/3-A_j<0\). The minimum of the displayed affine expression
+before the last two subtractions can be checked at the endpoints
+for each \(j\).
+
+| \(K\) | Interval for \(\beta\), up to \(O(1/\log P)\) | Minimum before subtractions | Largest \(A_j\) |
+| --- | --- | --- | --- |
+| \(5\) | \([1/4,13/50]\) | \(1/20\) | \(45\) |
+| \(4\) | \([13/50,1]\) | \(2/75\) | \(28\) |
+
+For \(K=4\) the minimum occurs at \(j=2\), where \(A_2=16\).
+For \(j\ne2\) in that row the minimum is at least \(1/15\).
+Thus all the excesses are positive by a fixed margin for large \(P\).
+Every interval has a nonzero auxiliary equation of bidegree at most
+\((1,K-1)\), of polynomial coefficient height in \(P\).
+
+The count on an auxiliary equation in the preceding proof is
+\(O_\varepsilon(P^\varepsilon)\) for these two fixed degrees.
+For the irreducible-form case this uses the primitive Thue bound of
+[Stewart, p. 796](https://uwaterloo.ca/pure-mathematics/sites/default/files/uploads/documents/s0894-0347-1991-1119199-x_0.pdf),
+with both the degree and the polynomial size of the right side as
+in (365.M3). The \(O(P^\sigma)\) choices of \(u,v\) and
+\(O(P^\mu)\) intervals give a count
+\(O_\varepsilon(P^{\beta-1/1000+\varepsilon})\) per box.
+The weight in (365.P1) is \(1/(R_D\log\epsilon_D)\),
+which is \(\ll P^{-\beta}/\log P\). There are
+only polynomially many boxes in \(\log W\) since
+\(\sqrt W\ll P\ll W^{5/4}\) and all factor sizes are bounded
+by a fixed power of \(W\). Using a sufficiently small fixed
+\(\varepsilon>0\) proves (365.P1).
+Summing the dyadic bounds gives a rate tail \(O(Z^{-1/5000})\).
+Keeping the floors in (2) for \(D\le\sqrt Y\) gives the claimed
+power saving in \(Y\).
+
+## Very small period multipliers and logarithmic square factors
+
+**Theorem (Weighted tail for very small period multipliers).**
+Fix \(a,b\ge0\) with \(2a+b<1\). Then
+\[
+ \sum_{\substack{D>Z,\ D\ {\rm squarefree}\\
+              \log R_D\le(\log D)^a,\ Q_D\le(\log D)^b}}
+       \frac{H_D}{D\log\epsilon_D}
+ \ll_{a,b} (\log Z)^{2a+b-1}\log(2\log Z)\qquad(Z\ge3).            \tag{365.S1}
+\]
+Here the units satisfy \(\epsilon_D=D^{3/2+o(1)}\) along the
+specified range as \(D\to\infty\), since
+\(\epsilon_D\asymp D^{3/2}Q_D/R_D\).
+
+For each \(D\) assign the odd primes in \(H_D\) to the factor
+of \(T_D^2-1\) in which they occur. As in the proof of (365.M2),
+this gives a tuple of positive integers with
+\[
+ e^3v^2g-d^3u^2f=s,\qquad
+ s\in\{\pm1,\pm2\},\qquad D=defg,\qquad
+ fg\asymp R_D,\quad uv\asymp Q_D
+\]
+and coprime shifted terms. This factorization uses no lower bound
+on \(de\). Fix \(f,g,u,v,s\). The form \(v^2g X^3-u^2f Y^3\)
+has nonzero discriminant and content one in an occupied tuple,
+and \(\gcd(d,e)=1\). The primitive-solution bound of Stewart
+on p. 796 gives \(O(1)\) pairs \((e,d)\), uniformly in the
+coefficients, since the degree is three and the right side has
+absolute value at most two. Each pair fixes \(D\).
+
+On \(\exp(L)\le D<\exp(2L)\), with \(L\ge1\), the weight is
+\(\ll1/(fg L)\) since \(\log\epsilon_D>\tfrac12\log D\).
+The hypotheses give \(fg\ll\exp((2L)^a)\) and \(uv\ll (2L)^b\).
+Summing after the uniform primitive count bounds the block by
+\[
+ \frac1L
+ \sum_{fg\ll \exp((2L)^a)}\frac1{fg}
+ \sum_{uv\ll(2L)^b}1
+ \ \ll_{a,b}\ L^{2a+b-1}\log(2L).
+\]
+The first sum is bounded by the product of two harmonic sums,
+and the second by summing the allowed lengths in \(v\) over
+\(u\). Now double \(L\) starting at \(\log Z\); the block bound
+is summable because \(2a+b<1\). This proves (365.S1).
+
+The full rate in (3) remains open. A sufficient estimate on the
+complement of the proved summable ranges is a bound
+\(O((\log W)^{-1-\eta})\) for some \(\eta>0\) on its weighted sum
+\(\sum_{W\le D<2W} H_D/(D\log\epsilon_D)\). In particular the
+estimates above still leave large \(Q_D\) together with large
+\(H_D\) outside their unit and multiplier cutoffs.
