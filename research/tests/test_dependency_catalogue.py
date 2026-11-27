@@ -135,6 +135,45 @@ class RetainedDependencyTests(unittest.TestCase):
         for conclusion in (algorithm, endpoint):
             self.assertEqual(without_norms[conclusion]["state"], "stale")
 
+    def test_mordell_one_prime_realization_uses_joint_group_without_matrix_generation(self):
+        realization = "ARITH-MORDELL-RAY-ONE-MOVING-PRIME-ARBITRARY-BLOCK"
+        joint_group = "ARITH-MORDELL-RAY-JOINT-TAME-GOVERNING-GROUP"
+        tame_variation = "ARITH-MORDELL-RAY-NORMALIZED-TAME-PAIRWISE-VARIATION"
+        # The existence proof translates an unevaluated base block. Its written
+        # MCT4 route must survive withdrawal of generators and finite matrices.
+        without_computations = self.graph.evaluate({
+            "ARITH-MORDELL-RAY-UNRESTRICTED-MATRIX-TERMINATION": "stale",
+            "EVIDENCE-ARITH-MORDELL-RAY-PAIRING-EXACT": "stale",
+            "EVIDENCE-ARITH-MORDELL-RAY-PAIRING-DIRECT-LOCAL": "stale",
+            "EVIDENCE-ARITH-MORDELL-RAY-FULL-MATRIX-CERTIFICATES": "stale",
+        })
+        for conclusion in (tame_variation, joint_group, realization):
+            self.assertEqual(without_computations[conclusion]["state"], "proved")
+        for premise in (joint_group, tame_variation,
+                        "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY"):
+            with self.subTest(premise=premise):
+                withdrawn = self.graph.evaluate({premise: "stale"})
+                self.assertEqual(withdrawn[realization]["state"], "stale")
+
+    def test_mordell_point_controls_do_not_close_the_infinite_rank_one_route(self):
+        controls = "EVIDENCE-ARITH-MORDELL-ONE-PRIME-POINT-CERTIFICATES"
+        family = "ARITH-MORDELL-ONE-PRIME-QUADRATIC-POINT-FAMILY-AND-RANK-ONE-CONTROLS"
+        structure = "ARITH-MORDELL-NONSINGULAR-BLOCK-THREE-PRIMARY-DICHOTOMY-AND-CORANK-ONE"
+        goal = "GAP-ARITH-MORDELL-ONE-MOVING-PRIME-EXACT-RANK-ONE"
+        prime_values = "GAP-ARITH-MORDELL-QUADRATIC-PRIME-VALUES-NONSINGULAR-FROBENIUS"
+        converse = "HYP-ARITH-MORDELL-RAMIFIED-CM-THREE-CONVERSE"
+        actual = self.graph.evaluate()
+        self.assertEqual(actual[family]["state"], "proved")
+        self.assertEqual(actual[structure]["state"], "proved")
+        self.assertEqual(actual[prime_values]["state"], "open")
+        self.assertEqual(actual[goal]["state"], "conditional")
+        self.assertEqual(actual[goal]["assumptions"], [converse])
+        without_points = self.graph.evaluate({controls: "stale"})
+        self.assertEqual(without_points[family]["state"], "stale")
+        self.assertEqual(without_points[structure]["state"], "proved")
+        self.assertEqual(without_points[goal]["state"], "conditional")
+        self.assertEqual(without_points[goal]["assumptions"], [converse])
+
     def test_primitive_leading_factor_route_does_not_assume_a_small_root(self):
         small_root_formula = "DIX-POLYNOMIAL-WEYL-SMALL-ROOT-FRACTIONAL-POWER-MATE"
         general_resultant = "DIX-POLYNOMIAL-WEYL-PRIMITIVE-LEADING-RESULTANT"

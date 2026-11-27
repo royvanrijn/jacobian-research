@@ -1,0 +1,7967 @@
+{
+  "schema_version": 1,
+  "kind": "seven_weight_three_factor_orbits",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "265ecb6bb3565a89dce53d1374743f68135682fd99bcc2009038b5b486c45663",
+  "input_sha256": {
+    "TERMINAL_MASS_HURWITZ_DESCENT.md": "bc376d60d9bfde54982aa2601d1e418e62abb1fe825ec95131093efee48dae9f",
+    "terminal_mass_hurwitz_descent_certificate.json": "d2f2ba4d9c9d7cbb665183bf33fe3cbc195401ff37fd0dd9a339138a961257d0",
+    "verify_terminal_mass_hurwitz_descent.py": "0718f36bc5814aec06d6746934619353fe4545f9d37ae956ce7782d24cba5a1f",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f"
+  },
+  "symbolic_nine_label_path_template": {
+    "support_size": 9,
+    "orbit_states": 162,
+    "directed_generator_edges": 648,
+    "orbit_sha256": "ebec6a9190b616a6bd6672d45e7cdd54aa7884d8e3c22ba94cdb64eb1392c5d3",
+    "all_distinct_terminal_forms": 27,
+    "all_terminal_coefficient_sets": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        0,
+        1,
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        1,
+        6
+      ],
+      [
+        0,
+        1,
+        2,
+        6
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      [
+        0,
+        5,
+        6
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        0,
+        1,
+        5,
+        6
+      ],
+      [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      [
+        3,
+        5,
+        6
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      [
+        0,
+        4,
+        5,
+        6
+      ],
+      [
+        1,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        1,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "irredundant_for_positive_weights": [
+      {
+        "components": [
+          0,
+          3
+        ],
+        "word": [
+          -1,
+          -1,
+          -2
+        ],
+        "factor_index_zero_based": 2
+      },
+      {
+        "components": [
+          1,
+          3
+        ],
+        "word": [
+          1,
+          1,
+          -2
+        ],
+        "factor_index_zero_based": 2
+      },
+      {
+        "components": [
+          0,
+          5
+        ],
+        "word": [
+          1,
+          -2
+        ],
+        "factor_index_zero_based": 2
+      },
+      {
+        "components": [
+          1,
+          5
+        ],
+        "word": [
+          -1,
+          -2
+        ],
+        "factor_index_zero_based": 2
+      },
+      {
+        "components": [
+          3,
+          5
+        ],
+        "word": [
+          2,
+          1
+        ],
+        "factor_index_zero_based": 0
+      },
+      {
+        "components": [
+          0,
+          6
+        ],
+        "word": [
+          1,
+          2,
+          2
+        ],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          1,
+          6
+        ],
+        "word": [
+          -1,
+          2,
+          2
+        ],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          3,
+          6
+        ],
+        "word": [
+          2
+        ],
+        "factor_index_zero_based": 1
+      }
+    ],
+    "weights": [
+      4,
+      1,
+      4,
+      1,
+      2,
+      1,
+      2
+    ],
+    "endpoint_label_counts": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1
+    ],
+    "initial_factor_masses": [
+      5,
+      8,
+      9
+    ],
+    "minimum_candidate_mass": 0,
+    "initial_edges_on_support": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        [
+          7,
+          8
+        ]
+      ]
+    ],
+    "owners": [
+      0,
+      1,
+      2,
+      2,
+      3,
+      4,
+      4,
+      5,
+      6
+    ],
+    "uniform_strict_domination_of_original_factors": [
+      {
+        "initial_factor_index_zero_based": 0,
+        "initial_components": [
+          0,
+          5,
+          6
+        ],
+        "strictly_smaller_components": [
+          0,
+          5
+        ],
+        "positive_drop_components": [
+          6
+        ]
+      },
+      {
+        "initial_factor_index_zero_based": 1,
+        "initial_components": [
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        "strictly_smaller_components": [
+          0,
+          5
+        ],
+        "positive_drop_components": [
+          1,
+          4,
+          6
+        ]
+      },
+      {
+        "initial_factor_index_zero_based": 2,
+        "initial_components": [
+          0,
+          1,
+          2,
+          6
+        ],
+        "strictly_smaller_components": [
+          0,
+          6
+        ],
+        "positive_drop_components": [
+          1,
+          2
+        ]
+      }
+    ],
+    "word_capturing_components_1_5": [
+      -1,
+      -2
+    ],
+    "collapsed_endpoint_orbit_states": 147,
+    "uniform_weight_domain": "integer w_i >= endpoint_label_counts[i]; no upper bound"
+  },
+  "complete_owner_inventory_for_the_nine_label_support_forest": {
+    "scope": "All owner partitions for the fixed three-disjoint-two-edge-path support forest; not all triple forests",
+    "owner_partitions": 189,
+    "common_local_orbit_states": 162,
+    "coefficient_bitmask_convention": "Bit i is the coefficient of w_i; every form has constant -2",
+    "minimal_form_count_distribution": {
+      "8": 162,
+      "12": 27
+    },
+    "number_of_possible_initial_minimizers_distribution": {
+      "0": 44,
+      "1": 111,
+      "2": 33,
+      "3": 1
+    },
+    "marked_templates_excluded_uniformly": 387,
+    "marked_templates_with_positive_isolated_linear_witness": 180,
+    "all_weight_witnesses_checked_with_odd_total": true,
+    "templates": [
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          20,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          20,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          116,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          20,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          116,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          20,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          20,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          116,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          20,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          116,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          20,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          20,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          116,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          20,
+          103
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          4,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          116,
+          103
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          20,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          20,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          116,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          20,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          116,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          20,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          20,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          116,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          20,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          116,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          20,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          20,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          116,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          20,
+          103
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          116,
+          103
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          115,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          115,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          19,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          19,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          115,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          115,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          115,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          19,
+          88
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          19,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          115,
+          71
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          115,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          115,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          19,
+          120
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          19,
+          103
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          115,
+          103
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          20,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          20,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          116,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          20,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          116,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          20,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          20,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          116,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          20,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          116,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          20,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          20,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          116,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          20,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          116,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          20,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          20,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          116,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          20,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          116,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          20,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          20,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          116,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          20,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          116,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          20,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          20,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          116,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          20,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          4,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          116,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          115,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          115,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          19,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          19,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          115,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          115,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          115,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          19,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          19,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          115,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          115,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          115,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          19,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          19,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          4,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          115,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          124,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          124,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          102,
+          124,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          124,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          124,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          124,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          28,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          34,
+          36,
+          40,
+          48,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          28,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          124,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          124,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          48,
+          66,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          38,
+          124,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          40,
+          66,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          124,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          124,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          124,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          124,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          124,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          124,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          28,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          12,
+          20,
+          36,
+          40,
+          48,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          28,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          33,
+          36,
+          40,
+          48,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          124,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          124,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          48,
+          65,
+          68,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          1,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          124,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          40,
+          65,
+          68,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          123,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          123,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          27,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          3,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          123,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          4,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          97,
+          123,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          123,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          123,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          27,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          123,
+          87
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          123,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          123,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          18,
+          34,
+          40,
+          48,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          123,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          17,
+          33,
+          40,
+          48,
+          65,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          27,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          33,
+          34,
+          40,
+          48,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          123,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          48,
+          65,
+          66,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          2,
+          5,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          33,
+          123,
+          104
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          40,
+          65,
+          66,
+          72
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          36,
+          112
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          66,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          36,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          66,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          36,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          66,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          36,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          66,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          6,
+          5
+        ],
+        "initial_coefficient_bitmasks": [
+          126,
+          28,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          36,
+          112
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          65,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          36,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          65,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          36,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          65,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          36,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          65,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          6,
+          5
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          28,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          2,
+          3,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          35,
+          112
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          65,
+          66,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          2,
+          4,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          35,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          65,
+          66,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          2,
+          5,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          27,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          2,
+          6,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          35,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          65,
+          66,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          2,
+          6,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          35,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          65,
+          66,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          2,
+          6,
+          5
+        ],
+        "initial_coefficient_bitmasks": [
+          121,
+          27,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          3,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          36,
+          112
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          66,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          3,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          36,
+          112
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          65,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          3,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          35,
+          112
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          65,
+          66,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          3,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          36,
+          55
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          66,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          3,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          36,
+          55
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          65,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          3,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          35,
+          55
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          65,
+          66,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          36,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          66,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          36,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          65,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          35,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          65,
+          66,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          36,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          66,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          36,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          65,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          35,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          65,
+          66,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          0,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          1,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          28,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          2,
+          6
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          27,
+          72
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          2
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          6,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          62,
+          28,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          6,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          28,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          6,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          57,
+          27,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          70,
+          36,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          66,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          70,
+          36,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          66,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0,
+          5
+        ],
+        "initial_coefficient_bitmasks": [
+          70,
+          28,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          1,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          36,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          65,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          1,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          36,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          65,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          1,
+          5
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          28,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          2,
+          3
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          35,
+          119
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          65,
+          66,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          2,
+          4
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          35,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          65,
+          66,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          2,
+          5
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          27,
+          79
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          3,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          70,
+          36,
+          55
+        ],
+        "minimal_coefficient_bitmasks": [
+          18,
+          20,
+          34,
+          36,
+          66,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          3,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          36,
+          55
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          20,
+          33,
+          36,
+          65,
+          68,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          3,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          35,
+          55
+        ],
+        "minimal_coefficient_bitmasks": [
+          17,
+          18,
+          33,
+          34,
+          65,
+          66,
+          80,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          4,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          70,
+          36,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          34,
+          36,
+          66,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          4,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          36,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          33,
+          36,
+          65,
+          68,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          4,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          35,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          33,
+          34,
+          65,
+          66,
+          72,
+          96
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          5,
+          0
+        ],
+        "initial_coefficient_bitmasks": [
+          70,
+          28,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          10,
+          12,
+          18,
+          20,
+          66,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": []
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          5,
+          1
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          28,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          12,
+          17,
+          20,
+          65,
+          68,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      },
+      {
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          5,
+          2
+        ],
+        "initial_coefficient_bitmasks": [
+          65,
+          27,
+          15
+        ],
+        "minimal_coefficient_bitmasks": [
+          9,
+          10,
+          17,
+          18,
+          65,
+          66,
+          72,
+          80
+        ],
+        "possible_initial_minimizer_indices": [
+          0
+        ]
+      }
+    ]
+  },
+  "degree15_all_initial_three_factor_windows": [
+    {
+      "support_size": 11,
+      "orbit_states": 18,
+      "directed_generator_edges": 72,
+      "orbit_sha256": "aaccb561428edfb8e3695ce6020cad2d39c05c409cc07ecd477a741a26127363",
+      "all_distinct_terminal_forms": 7,
+      "all_terminal_coefficient_sets": [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ]
+      ],
+      "irredundant_for_positive_weights": [
+        {
+          "components": [
+            0,
+            1,
+            4
+          ],
+          "word": [
+            2
+          ],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            0,
+            6
+          ],
+          "word": [],
+          "factor_index_zero_based": 0
+        }
+      ],
+      "weights": [
+        2,
+        2,
+        3,
+        4,
+        1,
+        2,
+        1
+      ],
+      "endpoint_label_counts": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "initial_factor_masses": [
+        1,
+        9,
+        5
+      ],
+      "minimum_candidate_mass": 1,
+      "window_start_zero_based": 0,
+      "full_tree_mass_comparisons": 54,
+      "support_labels": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "owners": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6
+      ],
+      "components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          7,
+          8,
+          9,
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          14
+        ]
+      ]
+    },
+    {
+      "support_size": 9,
+      "orbit_states": 144,
+      "directed_generator_edges": 576,
+      "orbit_sha256": "8afd5050a5deb3aef82e49b26f19a1f1f308390c7d5ef20c7f9cfa66f4f0f17c",
+      "all_distinct_terminal_forms": 24,
+      "all_terminal_coefficient_sets": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          6
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          6
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ]
+      ],
+      "irredundant_for_positive_weights": [
+        {
+          "components": [
+            0,
+            4
+          ],
+          "word": [
+            1,
+            2,
+            -1,
+            -1
+          ],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            1,
+            4
+          ],
+          "word": [
+            2,
+            1
+          ],
+          "factor_index_zero_based": 0
+        },
+        {
+          "components": [
+            0,
+            5
+          ],
+          "word": [
+            1
+          ],
+          "factor_index_zero_based": 0
+        },
+        {
+          "components": [
+            1,
+            5
+          ],
+          "word": [
+            1,
+            2,
+            -1
+          ],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            0,
+            6
+          ],
+          "word": [],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            1,
+            6
+          ],
+          "word": [
+            -2
+          ],
+          "factor_index_zero_based": 2
+        }
+      ],
+      "weights": [
+        4,
+        1,
+        2,
+        3,
+        1,
+        1,
+        3
+      ],
+      "endpoint_label_counts": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "initial_factor_masses": [
+        9,
+        5,
+        8
+      ],
+      "minimum_candidate_mass": 0,
+      "window_start_zero_based": 1,
+      "full_tree_mass_comparisons": 432,
+      "support_labels": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "owners": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        5,
+        6
+      ],
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12,
+          13,
+          14
+        ]
+      ]
+    },
+    {
+      "support_size": 9,
+      "orbit_states": 162,
+      "directed_generator_edges": 648,
+      "orbit_sha256": "ebec6a9190b616a6bd6672d45e7cdd54aa7884d8e3c22ba94cdb64eb1392c5d3",
+      "all_distinct_terminal_forms": 27,
+      "all_terminal_coefficient_sets": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "irredundant_for_positive_weights": [
+        {
+          "components": [
+            0,
+            3
+          ],
+          "word": [
+            -1,
+            -1,
+            -2
+          ],
+          "factor_index_zero_based": 2
+        },
+        {
+          "components": [
+            1,
+            3
+          ],
+          "word": [
+            1,
+            1,
+            -2
+          ],
+          "factor_index_zero_based": 2
+        },
+        {
+          "components": [
+            0,
+            5
+          ],
+          "word": [
+            1,
+            -2
+          ],
+          "factor_index_zero_based": 2
+        },
+        {
+          "components": [
+            1,
+            5
+          ],
+          "word": [
+            -1,
+            -2
+          ],
+          "factor_index_zero_based": 2
+        },
+        {
+          "components": [
+            3,
+            5
+          ],
+          "word": [
+            2,
+            1
+          ],
+          "factor_index_zero_based": 0
+        },
+        {
+          "components": [
+            0,
+            6
+          ],
+          "word": [
+            1,
+            2,
+            2
+          ],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            1,
+            6
+          ],
+          "word": [
+            -1,
+            2,
+            2
+          ],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            3,
+            6
+          ],
+          "word": [
+            2
+          ],
+          "factor_index_zero_based": 1
+        }
+      ],
+      "weights": [
+        4,
+        1,
+        4,
+        1,
+        2,
+        1,
+        2
+      ],
+      "endpoint_label_counts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "initial_factor_masses": [
+        5,
+        8,
+        9
+      ],
+      "minimum_candidate_mass": 0,
+      "window_start_zero_based": 2,
+      "full_tree_mass_comparisons": 486,
+      "support_labels": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "owners": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    },
+    {
+      "support_size": 11,
+      "orbit_states": 18,
+      "directed_generator_edges": 72,
+      "orbit_sha256": "e38911b2a6b19da5745d47c0aba69c9fe69fdb68341fe58f53fb8e7f29006de7",
+      "all_distinct_terminal_forms": 7,
+      "all_terminal_coefficient_sets": [
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "irredundant_for_positive_weights": [
+        {
+          "components": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "word": [
+            -1
+          ],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ],
+          "word": [],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            4,
+            6
+          ],
+          "word": [
+            1
+          ],
+          "factor_index_zero_based": 0
+        },
+        {
+          "components": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ],
+          "word": [],
+          "factor_index_zero_based": 0
+        }
+      ],
+      "weights": [
+        1,
+        2,
+        2,
+        4,
+        1,
+        3,
+        2
+      ],
+      "endpoint_label_counts": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "initial_factor_masses": [
+        8,
+        9,
+        11
+      ],
+      "minimum_candidate_mass": 1,
+      "window_start_zero_based": 3,
+      "full_tree_mass_comparisons": 54,
+      "support_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "owners": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6
+      ],
+      "components": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    },
+    {
+      "support_size": 11,
+      "orbit_states": 18,
+      "directed_generator_edges": 72,
+      "orbit_sha256": "e38911b2a6b19da5745d47c0aba69c9fe69fdb68341fe58f53fb8e7f29006de7",
+      "all_distinct_terminal_forms": 7,
+      "all_terminal_coefficient_sets": [
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "irredundant_for_positive_weights": [
+        {
+          "components": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "word": [
+            1,
+            2
+          ],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ],
+          "word": [
+            1,
+            2,
+            2
+          ],
+          "factor_index_zero_based": 1
+        },
+        {
+          "components": [
+            4,
+            6
+          ],
+          "word": [
+            1,
+            -2
+          ],
+          "factor_index_zero_based": 2
+        },
+        {
+          "components": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ],
+          "word": [
+            1,
+            -2,
+            -2
+          ],
+          "factor_index_zero_based": 2
+        }
+      ],
+      "weights": [
+        1,
+        2,
+        3,
+        2,
+        1,
+        4,
+        2
+      ],
+      "endpoint_label_counts": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "initial_factor_masses": [
+        9,
+        11,
+        11
+      ],
+      "minimum_candidate_mass": 1,
+      "window_start_zero_based": 4,
+      "full_tree_mass_comparisons": 54,
+      "support_labels": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13
+      ],
+      "owners": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6
+      ],
+      "components": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8
+        ],
+        [
+          9,
+          10,
+          11,
+          12
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    }
+  ],
+  "proper_order168_positive_local_minimum_control": {
+    "support_size": 7,
+    "orbit_states": 49,
+    "directed_generator_edges": 196,
+    "orbit_sha256": "12890c177befca794b13fb9911a89be6f27bcc044f10f2236b3c5cc708d2c889",
+    "all_distinct_terminal_forms": 14,
+    "all_terminal_coefficient_sets": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        3,
+        4
+      ],
+      [
+        0,
+        1,
+        2,
+        5
+      ],
+      [
+        2,
+        3,
+        5
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        3,
+        4,
+        5
+      ],
+      [
+        0,
+        2,
+        6
+      ],
+      [
+        1,
+        2,
+        3,
+        6
+      ],
+      [
+        0,
+        1,
+        4,
+        6
+      ],
+      [
+        3,
+        4,
+        6
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        0,
+        3,
+        5,
+        6
+      ],
+      [
+        2,
+        4,
+        5,
+        6
+      ]
+    ],
+    "irredundant_for_positive_weights": [
+      {
+        "components": [
+          0,
+          1,
+          3
+        ],
+        "word": [],
+        "factor_index_zero_based": 0
+      },
+      {
+        "components": [
+          1,
+          2,
+          4
+        ],
+        "word": [
+          -1,
+          2
+        ],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "word": [
+          1,
+          2
+        ],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "word": [],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          2,
+          3,
+          5
+        ],
+        "word": [
+          1
+        ],
+        "factor_index_zero_based": 0
+      },
+      {
+        "components": [
+          0,
+          4,
+          5
+        ],
+        "word": [
+          2,
+          1
+        ],
+        "factor_index_zero_based": 0
+      },
+      {
+        "components": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "word": [
+          2
+        ],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          0,
+          2,
+          6
+        ],
+        "word": [
+          1,
+          1,
+          2,
+          -1
+        ],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "word": [
+          1,
+          1,
+          2
+        ],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "word": [
+          1,
+          2,
+          -1
+        ],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          3,
+          4,
+          6
+        ],
+        "word": [
+          -2
+        ],
+        "factor_index_zero_based": 2
+      },
+      {
+        "components": [
+          1,
+          5,
+          6
+        ],
+        "word": [],
+        "factor_index_zero_based": 2
+      },
+      {
+        "components": [
+          0,
+          3,
+          5,
+          6
+        ],
+        "word": [
+          1,
+          -2
+        ],
+        "factor_index_zero_based": 2
+      },
+      {
+        "components": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "word": [
+          -1
+        ],
+        "factor_index_zero_based": 1
+      }
+    ],
+    "weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "endpoint_label_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "initial_factor_masses": [
+      1,
+      2,
+      1
+    ],
+    "minimum_candidate_mass": 1,
+    "window_start_zero_based": 0,
+    "full_tree_mass_comparisons": 147,
+    "support_labels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "owners": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "components": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ]
+    ]
+  },
+  "twelve_distinct_support_labels_control": {
+    "support_size": 12,
+    "orbit_states": 6,
+    "directed_generator_edges": 24,
+    "orbit_sha256": "2e2c2eee892c38d7705c04899d05852da750b1186ac38e2bcd52ed3369fe31ae",
+    "all_distinct_terminal_forms": 3,
+    "all_terminal_coefficient_sets": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "irredundant_for_positive_weights": [
+      {
+        "components": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "word": [],
+        "factor_index_zero_based": 2
+      },
+      {
+        "components": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "word": [],
+        "factor_index_zero_based": 1
+      },
+      {
+        "components": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "word": [],
+        "factor_index_zero_based": 0
+      }
+    ],
+    "weights": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "endpoint_label_counts": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    "initial_factor_masses": [
+      9,
+      9,
+      9
+    ],
+    "minimum_candidate_mass": 9,
+    "window_start_zero_based": 0,
+    "full_tree_mass_comparisons": 18,
+    "support_labels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "owners": [
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      6
+    ],
+    "components": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        11,
+        12
+      ]
+    ]
+  },
+  "invalid_controls": {
+    "non_DT_rejected": true,
+    "insufficient_component_weights_rejected": true,
+    "quotient_loops_rejected": true,
+    "incomplete_orbit_detected": true
+  },
+  "scope": "Complete local orbits and exact coefficient sets for the stated templates. The path template gives eight inequalities and uniform strict domination of each original factor. All 189 owner partitions for its nine-label support forest exclude 387 of 567 marked templates uniformly, leaving 180 with positive isolated linear witnesses. Seven-weight compression and global-minimum necessity have written proofs. Other support forests and exclusion of every positive global orbit minimum remain open.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "scope": "analytic identities with quadrature/finite-difference controls, not a global or interval certificate",
+  "tetrahedron": {
+    "eigenvalues": [
+      -1.653996781499382,
+      -1.6539967814993817,
+      -1.6539967814993808,
+      -1.2401805514225739,
+      -1.2401805514225732
+    ],
+    "shape_trace": -7.442351447343292,
+    "balancing_trace": 1.721175723671646,
+    "stationarity_residual": 9.614813431917819e-17
+  },
+  "asymmetric_hessian": {
+    "step": 2e-05,
+    "maximum_entry_discrepancy": 7.053901907028148e-10,
+    "omitted_correction_matrix_norm": 1.1746290823198493,
+    "anisotropy_direction_squared_norm": 4.398390026292138,
+    "cell_second_moment_mixed_error": 1.1102230246251565e-16
+  },
+  "local_radius": {
+    "polar_frobenius_radius": "1/100000",
+    "value_gap_coefficient": "1/100",
+    "exact_taylor_margin": "661/337500"
+  },
+  "assurance": "internal controls; no independent review or formal verification"
+}

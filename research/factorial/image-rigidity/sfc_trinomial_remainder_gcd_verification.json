@@ -1,0 +1,463 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "scope": "exact gcd factorization and coprimality at the listed fixed supports only",
+  "controls": {
+    "direct_moment_profiles": 6,
+    "trinomial_eliminations": [
+      {
+        "middle": 1,
+        "span": 3,
+        "L_eliminant": {
+          "degree": 122,
+          "bidegree": [
+            122,
+            0
+          ],
+          "terms": 123,
+          "sha256": "60be6d1add3ff73e5d72d22615e9dee03b1f69df14446c2001e497c8fa1b06e8"
+        },
+        "H_eliminant": {
+          "degree": 122,
+          "bidegree": [
+            0,
+            122
+          ],
+          "terms": 121,
+          "sha256": "9839c01f7e19875b2d4076b16fab7ece20f34e6832085996eaf069c13e0c326b"
+        },
+        "nonnegative_integer_L_roots": [
+          1
+        ],
+        "nonnegative_integer_H_roots": [
+          0
+        ],
+        "candidate_pairs": [
+          [
+            1,
+            0
+          ]
+        ],
+        "common_pairs": [],
+        "original_common_pairs": []
+      },
+      {
+        "middle": 2,
+        "span": 3,
+        "L_eliminant": {
+          "degree": 104,
+          "bidegree": [
+            104,
+            0
+          ],
+          "terms": 104,
+          "sha256": "62a8db817b63b0ca17f52b748676e12e886f674fb9f2e2f7a9d2579d5e102969"
+        },
+        "H_eliminant": {
+          "degree": 104,
+          "bidegree": [
+            0,
+            104
+          ],
+          "terms": 103,
+          "sha256": "14ad6a69900b606cc9bf978a2d03457b46619e03415638c032859d5e2f52b2a8"
+        },
+        "nonnegative_integer_L_roots": [
+          0,
+          1
+        ],
+        "nonnegative_integer_H_roots": [
+          0
+        ],
+        "candidate_pairs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "common_pairs": [],
+        "original_common_pairs": []
+      }
+    ],
+    "degree_drop_control": {
+      "L_eliminant": {
+        "degree": 1,
+        "bidegree": [
+          1,
+          0
+        ],
+        "terms": 1,
+        "sha256": "a543fcd295f0f1c17f1d9ba665fe2312233c2b37c0493edd3cae74d3d73eb698"
+      },
+      "H_eliminant": {
+        "degree": 1,
+        "bidegree": [
+          0,
+          1
+        ],
+        "terms": 1,
+        "sha256": "c1b8610cdac77db6023393de63bef63e16c724ccfc1accf90aae81f4a5949ecb"
+      },
+      "nonnegative_integer_L_roots": [
+        0
+      ],
+      "nonnegative_integer_H_roots": [
+        0
+      ],
+      "candidate_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "common_pairs": []
+    },
+    "common_root_control": {
+      "L_eliminant": {
+        "degree": 2,
+        "bidegree": [
+          2,
+          0
+        ],
+        "terms": 3,
+        "sha256": "d3b9e9acd8e0e380ff16c41d94c2ec1ab23f44a0edd9f6b33b42ac70f9324d17"
+      },
+      "H_eliminant": {
+        "degree": 2,
+        "bidegree": [
+          0,
+          2
+        ],
+        "terms": 3,
+        "sha256": "aaf360b3397230373b61a2c2946a69304d12019445ce4cfd2e131f5342a691f8"
+      },
+      "nonnegative_integer_L_roots": [
+        1,
+        2
+      ],
+      "nonnegative_integer_H_roots": [
+        1,
+        2
+      ],
+      "candidate_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "common_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "corrupted_gcd_control": "omitting a common linear factor is rejected"
+  },
+  "profiles": [
+    {
+      "middle": 1,
+      "span": 81,
+      "termwise_common_factor_blocks": [
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 2,
+          "last_shift": 81,
+          "shift_stride": 1,
+          "multiplicity": 3
+        },
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 1,
+          "last_shift": 1,
+          "shift_stride": 1,
+          "multiplicity": 7
+        },
+        {
+          "axis": "L",
+          "step": 2,
+          "first_shift": 1,
+          "last_shift": 1,
+          "shift_stride": 2,
+          "multiplicity": 1
+        },
+        {
+          "axis": "H",
+          "step": 1,
+          "first_shift": 1,
+          "last_shift": 80,
+          "shift_stride": 1,
+          "multiplicity": 3
+        }
+      ],
+      "total_degree_factor_multiplicity_removed": 3,
+      "additional_axis_factor_blocks": [
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 2,
+          "last_shift": 40,
+          "shift_stride": 1,
+          "multiplicity": 1
+        }
+      ],
+      "additional_common_factors": [],
+      "gcd_certified_positive_on_nonnegative_quadrant": true,
+      "reduced_S": {
+        "degree": 599,
+        "bidegree": [
+          281,
+          320
+        ],
+        "terms": 90519,
+        "sha256": "429431423d373576a3d4abefbf66238b2cdedce62835eb0f0d22216507cdac8a"
+      },
+      "reduced_T": {
+        "degree": 599,
+        "bidegree": [
+          282,
+          319
+        ],
+        "terms": 90557,
+        "sha256": "09de21fd59cad4e57a88e60d955ce9161ef8ff2f77ca47a6fd2ce348a095c549"
+      },
+      "coprimality_prime": 1000000007,
+      "degree_preserving_modular_gcd": "1",
+      "reduced_S_nonnegative_coefficients_positive_constant": true,
+      "elapsed_seconds": 24.799
+    },
+    {
+      "middle": 2,
+      "span": 81,
+      "termwise_common_factor_blocks": [
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 3,
+          "last_shift": 81,
+          "shift_stride": 1,
+          "multiplicity": 3
+        },
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 1,
+          "last_shift": 2,
+          "shift_stride": 1,
+          "multiplicity": 7
+        },
+        {
+          "axis": "L",
+          "step": 2,
+          "first_shift": 1,
+          "last_shift": 1,
+          "shift_stride": 2,
+          "multiplicity": 1
+        },
+        {
+          "axis": "H",
+          "step": 1,
+          "first_shift": 1,
+          "last_shift": 79,
+          "shift_stride": 1,
+          "multiplicity": 3
+        }
+      ],
+      "total_degree_factor_multiplicity_removed": 3,
+      "additional_axis_factor_blocks": [
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 3,
+          "last_shift": 40,
+          "shift_stride": 1,
+          "multiplicity": 1
+        }
+      ],
+      "additional_common_factors": [],
+      "gcd_certified_positive_on_nonnegative_quadrant": true,
+      "reduced_S": {
+        "degree": 599,
+        "bidegree": [
+          282,
+          319
+        ],
+        "terms": 90557,
+        "sha256": "646003bf3a4ab20ef17e527e9bc615089b8cac5ee3d2b6a40e06a21b61483854"
+      },
+      "reduced_T": {
+        "degree": 599,
+        "bidegree": [
+          284,
+          317
+        ],
+        "terms": 90627,
+        "sha256": "0c650bc038fbaa0ba48b93a4fc704a11967c8267117ba9f92bd087042fcc706d"
+      },
+      "coprimality_prime": 1000000007,
+      "degree_preserving_modular_gcd": "1",
+      "reduced_S_nonnegative_coefficients_positive_constant": true,
+      "elapsed_seconds": 25.333
+    },
+    {
+      "middle": 40,
+      "span": 81,
+      "termwise_common_factor_blocks": [
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 41,
+          "last_shift": 81,
+          "shift_stride": 1,
+          "multiplicity": 3
+        },
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 1,
+          "last_shift": 40,
+          "shift_stride": 1,
+          "multiplicity": 7
+        },
+        {
+          "axis": "L",
+          "step": 2,
+          "first_shift": 1,
+          "last_shift": 39,
+          "shift_stride": 2,
+          "multiplicity": 1
+        },
+        {
+          "axis": "H",
+          "step": 1,
+          "first_shift": 1,
+          "last_shift": 41,
+          "shift_stride": 1,
+          "multiplicity": 3
+        }
+      ],
+      "total_degree_factor_multiplicity_removed": 3,
+      "additional_axis_factor_blocks": [],
+      "additional_common_factors": [],
+      "gcd_certified_positive_on_nonnegative_quadrant": true,
+      "reduced_S": {
+        "degree": 580,
+        "bidegree": [
+          301,
+          281
+        ],
+        "terms": 85161,
+        "sha256": "f7ea1144dce7221c1d39b8ce516c5c41cf086d816585ea9be00786eeb20b9983"
+      },
+      "reduced_T": {
+        "degree": 580,
+        "bidegree": [
+          341,
+          241
+        ],
+        "terms": 82761,
+        "sha256": "43970dbfbbc8f9ba0f5af9adca6343da32ea0d9da3e2024a1225fa7a08e9e0ad"
+      },
+      "coprimality_prime": 1000000007,
+      "degree_preserving_modular_gcd": "1",
+      "reduced_S_nonnegative_coefficients_positive_constant": true,
+      "elapsed_seconds": 8.907
+    },
+    {
+      "middle": 80,
+      "span": 81,
+      "termwise_common_factor_blocks": [
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 81,
+          "last_shift": 81,
+          "shift_stride": 1,
+          "multiplicity": 3
+        },
+        {
+          "axis": "L",
+          "step": 1,
+          "first_shift": 1,
+          "last_shift": 80,
+          "shift_stride": 1,
+          "multiplicity": 7
+        },
+        {
+          "axis": "L",
+          "step": 2,
+          "first_shift": 1,
+          "last_shift": 79,
+          "shift_stride": 2,
+          "multiplicity": 1
+        },
+        {
+          "axis": "H",
+          "step": 1,
+          "first_shift": 2,
+          "last_shift": 40,
+          "shift_stride": 1,
+          "multiplicity": 1
+        },
+        {
+          "axis": "H",
+          "step": 1,
+          "first_shift": 1,
+          "last_shift": 1,
+          "shift_stride": 1,
+          "multiplicity": 3
+        }
+      ],
+      "total_degree_factor_multiplicity_removed": 3,
+      "additional_axis_factor_blocks": [],
+      "additional_common_factors": [],
+      "gcd_certified_positive_on_nonnegative_quadrant": true,
+      "reduced_S": {
+        "degree": 481,
+        "bidegree": [
+          281,
+          202
+        ],
+        "terms": 57243,
+        "sha256": "38b8aad17421a383bd60930ca1e59cf0402cc294c8f4ccbdd8f33ad8ce89fb4e"
+      },
+      "reduced_T": {
+        "degree": 481,
+        "bidegree": [
+          361,
+          122
+        ],
+        "terms": 44523,
+        "sha256": "3a72e57305f8db8628f2793686982a72d8539e5584bdf1bc6ebe0440e1c92f7e"
+      },
+      "coprimality_prime": 1000000007,
+      "degree_preserving_modular_gcd": "1",
+      "reduced_S_nonnegative_coefficients_positive_constant": true,
+      "elapsed_seconds": 3.954
+    }
+  ],
+  "assurance": "internal computation; no independent review or formal verification"
+}

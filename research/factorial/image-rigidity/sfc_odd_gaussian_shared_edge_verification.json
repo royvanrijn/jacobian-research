@@ -284,6 +284,6 @@
   "perturbation_coefficient_checks": 1498,
   "controls": "old leading collision retained; corrupted kappa rejected; nonresidue case passes",
   "exact_rational_control": "start 49 at prime 7, full 27-coefficient syzygy has unique constant least term",
-  "remaining_final_slope_example": "q=5*13^e; S_2(Y) and S_2(2Y) share Y=2 modulo 13, not an actual Gaussian common-zero certificate",
+  "final_slope_collision_control": "q=5*13^e; S_2(Y) and S_2(2Y) share Y=2 modulo 13; a separate final-residue proof excludes its lift at every exponent",
   "assurance": "internal replay; not independent mathematical review or formal verification"
 }

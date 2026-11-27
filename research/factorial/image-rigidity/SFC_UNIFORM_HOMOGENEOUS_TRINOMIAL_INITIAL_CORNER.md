@@ -239,6 +239,115 @@ At coinciding nodes the first two equations instead
 give \(u=-\lambda,\ v^2=-2\lambda(\lambda+1)\); the third
 is then \(\lambda(\lambda+1)^2\ne0\).
 
+### A quantitative margin for a pair and a singleton
+
+The preceding exclusion has a uniform lower bound in the Newton
+basis, including at a coincident pair. Fix \(R\ge0\) and
+\(\Lambda\ge1\), and let the pair have distance
+\(0\le\delta\le R\), with singleton weight
+\(\Lambda^{-1}\le\lambda\le\Lambda\). Translate the pair to
+\(0,\delta\). Its phase in the Newton basis is
+\(A\phi_0+B[0,\delta]\phi\); the separate singleton has coefficient
+\(c\). Define, by continuous extension at zero,
+\[
+ q(\delta)=\frac{2(1-e^{-\delta^2/4})}{\delta^2},\qquad
+ \kappa(\delta)=\frac32
+          \frac{1-e^{-\delta^2/3}}{1-e^{-\delta^2/4}},
+ \qquad q(0)=\tfrac12,\quad\kappa(0)=2.
+\]
+The three normalized forms are
+\[
+ \begin{split}
+ P_1&=A+\lambda c,\\
+ P_2&=A^2+qB^2-q\delta AB+\lambda c^2,\\
+ P_3&=A^3+\kappa qAB^2-\kappa q\delta A^2B+\lambda c^3.
+ \end{split}                                                    \tag{7}
+\]
+Put \(q_R=q(R)\) and
+\[
+ \epsilon_{R,\Lambda}
+ =\frac{q_R^{3/2}}
+ {512(\Lambda+1)^3\Lambda(\Lambda^2+3\Lambda+4)}>0.
+                                                               \tag{8}
+\]
+For every complex coefficient vector with
+\(\max(|A|,|B|,|c|)=1\),
+\[
+                    \max_{1\le m\le3}|P_m|>
+                                      \epsilon_{R,\Lambda}.     \tag{9}
+\]
+
+Here is a direct proof, avoiding an unevaluated compactness margin.
+One has \(q_R\le q\le1/2\), \(q\delta^2\le2\), and
+\(3/2\le\kappa\le2\). The first bounds follow by writing
+\((1-e^{-t})/t=\int_0^1e^{-st}\,ds\). For the last bounds put
+\(x=e^{-\delta^2/4}\); then
+\(1\le(1-x^{4/3})/(1-x)\le4/3\), by convexity of \(x^{4/3}\).
+Polynomial division gives the identity
+\[
+ P_3-\kappa A P_2-JP_1=\rho c^3,
+ \quad
+ \begin{cases}
+ J=(1-\kappa)(A^2-\lambda Ac+\lambda^2c^2)-\kappa\lambda c^2,\\
+ \rho=\lambda(\lambda+1)(1+(\kappa-1)\lambda).
+ \end{cases}                                                   \tag{10}
+\]
+In particular \(\rho\ge\Lambda^{-1}\) and
+\(|J|\le1+3\Lambda+\Lambda^2\) on the unit polydisc.
+If all three forms had modulus at most \(\epsilon\), (10) would give
+\[
+ |c|^3\le C\epsilon,\qquad
+ |A|\le\epsilon+\Lambda|c|,
+ \qquad C=\Lambda(\Lambda^2+3\Lambda+4).
+\]
+Take \(t=\sqrt{q_R}/(8(\Lambda+1))\) and
+\(\epsilon=t^3/C\), the value in (8).
+Then \(\epsilon\le t\), \(\epsilon\le q_R/8\),
+\(|c|\le t<1\), and \(|A|\le(\Lambda+1)t<1\).
+From the second form and
+\(q\delta|A||B|\le q|B|^2/2+q\delta^2|A|^2/2\),
+\[
+ |B|^2\le\frac2{q_R}
+          (\epsilon+2|A|^2+\Lambda|c|^2)
+ \le\frac{2\epsilon}{q_R}+\frac3{32}
+ \le\frac{11}{32}<1.
+\]
+This contradicts the coefficient normalization and proves (9).
+On the exact locus \(P_1=P_2=0\), the stronger residual formula
+\(P_3=\rho c^3\) is already sufficient.
+
+Consequently any perturbation of (7) whose coefficient absolute
+errors sum to less than \(\epsilon_{R,\Lambda}\) in each row has
+no common projective zero. In particular, an error less than
+\(\epsilon_{R,\Lambda}/10\) in each coefficient suffices, since
+there are at most ten monomials in any row.
+
+For the angular factorial kernels this gives the proposed bridge
+directly: with the pair's \(\eta\)-span at most \(R\), all three
+columns interior, and the singleton-to-pair width ratio in
+\([\Lambda^{-1},\Lambda]\), sufficiently large least exponent and
+sufficiently large distance from the singleton to the pair imply
+nonvanishing at orders \(1,2,3\). Use (2) for the pure terms and
+(3), averaged over the pair's divided-difference intervals, for
+the mixed terms. There is at most one derivative per pair argument,
+so the error has no inverse power of the pair distance. After division
+by \(\sqrt{2\pi/m}\) times the pair width, the bounded width ratio
+makes these coefficient errors uniformly small. This is a quantitative
+model margin for the cluster case already used below; it does not
+settle higher starting windows or evaluate the absolute corner cutoff.
+Unbounded width ratios still require the width-group assignment.
+
+The [exact control](verify_sfc_pair_singleton_margin.py) derives (7)
+from the Gaussian exponential kernel, verifies (10) symbolically,
+and checks the coalescent forms by Gaussian polynomial integration.
+The inequalities above supply the unrestricted margin proof.
+An internal replay with Python 3.12.3 and SymPy 1.14.0 passed all
+these controls. Run from the repository root:
+
+~~~sh
+.venv/bin/python research/factorial/image-rigidity/verify_sfc_pair_singleton_margin.py
+~~~
+
 Finally, for any number \(r\) of singleton nodes with positive
 weights \(\lambda_i\), their weighted powers
 \(\sum_i\lambda_i c_i^m\) have no common nonzero point

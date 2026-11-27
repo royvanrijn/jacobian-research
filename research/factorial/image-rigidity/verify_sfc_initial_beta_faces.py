@@ -7,6 +7,7 @@ gap witnesses are certified using rational intervals, without floating point.
 """
 
 from fractions import Fraction
+from itertools import product
 from math import comb, factorial, gcd, prod
 
 import sympy as sp
@@ -198,14 +199,31 @@ def verify_fractional_obstruction():
     return 2
 
 
+def verify_unit_spacing_controls():
+    """Only 45 specified half-integer profiles; no continuum claim."""
+    checked = 0
+    gaps = (sp.Integer(1), sp.Rational(3, 2), sp.Integer(2))
+    for a, b in product(gaps, repeat=2):
+        if a.q == 1 and b.q == 1:
+            continue
+        for left, right in product((0, 1, 19), repeat=2):
+            value, _ = angular_coefficients(left, right, a, a+b)
+            require(rational_interval(value)[0] > 0,
+                    f"Unit-spacing control failed at {(left, right, a, b)}.")
+            checked += 1
+    return checked
+
+
 def main():
     faces = verify_faces()
     specializations = verify_specializations()
     obstructions = verify_fractional_obstruction()
+    spacing_controls = verify_unit_spacing_controls()
     print(f"Passed {faces} exact fractional-face controls and a repeated-column control.")
     print(f"Passed {specializations} full resultant specializations, including varying unmarked rows.")
     print(f"Certified {obstructions} negative fractional-gap remainders with positive Beta Gram determinants.")
     print("At (L,H,a,d)=(19,0,3/2,2), -4/3 < S_angular < -13/10.")
+    print(f"Certified {spacing_controls} positive half-integer unit-spacing controls; the real-gap question remains open.")
 
 
 if __name__ == "__main__":

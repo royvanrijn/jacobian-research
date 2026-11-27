@@ -1095,3 +1095,10 @@ most two by the same displayed tuple. Hence
 excludes this last chart. The preceding reductions
 now exclude all three weighted pencils of the
 coprime binary branch.
+
+
+## Completion of the cube cases
+
+The [cube-divisor regularity argument](SEXTIC_KELLER_CUBE_VERONESE_REGULARITY.md)
+excludes the two ordinary residual cubic pencils and the
+\((2,2,3)\) residual pencil from a binary quartic common factor.

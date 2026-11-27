@@ -24,6 +24,11 @@ primes and vary just one further prime to realize every alternating
 matrix on the fixed tame coordinates. A nonsingular target gives
 infinitely many curves with rational rank at most one and
 \(\dim_{\mathbf F_3}\Sha(E_R)[3]\ge2r\) (MCT15–MCT16).
+MCT18 gives a quadratic one-prime point construction and four exact
+rank-one controls. At every nonsingular target, MCT19 determines the
+reduced 3-primary group and proves full 3-primary Selmer corank one.
+The infinite exact-rank-one refinement is conditional on a point
+infinitude statement or an imported ramified-CM converse.
 Complete normalized matrices are obtained below for selected products of
 two, three and four allowed primes, including spaces with the wild
 coordinate. The cubic local descent has the explicit scalar formula
@@ -1574,12 +1579,244 @@ is this inert-prime family with one moving prime and simultaneous
 rank control. This audit is internal written mathematics, without
 independent replay, formal verification or external review.
 
+## Rational points in the one-moving-prime family
+
+An explicit rational point would strengthen the nonsingular-target
+conclusion to exact rank one. The following construction gives such
+points on a quadratic sequence of candidate moving primes. Its prime
+values with a nonsingular block remain an infinitude obligation.
+
+### A necessary denominator and the moving coordinate
+
+**Lemma MCT17 (rational-point constraints).** In the family of MCT16,
+every finite rational point of \(E_R\) has denominator divisible by
+3. Both \(E_R(\mathbf Q)\) and \(E'_R(\mathbf Q)\) have trivial
+torsion. If \(W\) is the nonsingular fixed tame block, the rational
+Kummer image in \(S_R\) intersects \(W\) only in zero. In
+particular, every nonzero rational Kummer class has a nonzero moving
+\(q\)-coordinate.
+
+Proof. MS1 makes the dual Kummer class
+\([y-R\sqrt{-2}]\) zero for every rational point of \(E_R\).
+If such a point were integral at 3, a cube root in
+\(\mathbf Q(\sqrt{-2})\) would be integral at both primes over
+3: its cube is integral there. Since 3 splits and 2 is a unit,
+write this cube root as \(a+b\sqrt{-2}\), with
+\(a,b\in\mathbf Z_3\). Comparing the linear coefficient gives,
+up to sign,
+\[
+ R=b(3a^2-2b^2).
+\]
+Because \(3\nmid R\), \(b\) is a unit. Reduction modulo 9
+gives only \(R\in\{1,2,7,8\}\bmod9\), whereas MCT16 has
+\(R\equiv5\bmod9\). This contradiction proves the denominator
+assertion.
+
+For completeness there is a torsion argument valid for every
+admissible \(R\). The primes 11 and 17 never divide \(6R\),
+since they are split in \(\mathbf Q(\sqrt{-2})\). The cube map
+on either residue field is bijective, so both curves have respectively
+12 and 18 points. Injectivity of prime-to-residue-characteristic
+torsion under good reduction bounds rational torsion by their gcd, 6.
+There is no rational 2-torsion, since the constant coefficient has
+2-adic valuation one. There is no rational 3-torsion: the two
+isogeny kernels have nonsplit quadratic coefficient lines, and the
+image of any rational 3-torsion point under either isogeny would
+belong to the other rational kernel. Hence rational torsion is zero.
+Finally rational Kummer classes are in the pairing radical. The
+intersection of that radical with the nonsingular block \(W\)
+is zero, proving the last assertion.
+
+### A quadratic sequence with explicit points
+
+**Proposition MCT18 (quadratic point construction and exact controls).**
+Let \(R_0=5C\) be as in MCT16, so \(C\equiv-1\pmod{72}\).
+Choose an integer \(a\) with
+\[
+ a^2\equiv1350\pmod C,\qquad a\equiv\pm1\pmod{18},
+ \qquad q=\frac{a^2-1350}{C}>0.                           \tag{43}
+\]
+Whenever \(q\) is a prime not dividing \(R_0\), it is
+\(53\bmod72\), and \(R=R_0q\) is admissible with no wild
+coordinate. There are explicit non-torsion points
+\[
+ Q=(Cq,aCq)\in E'_R(\mathbf Q),\qquad
+ P=\left(\frac{a^2+4050}{9},
+          \frac{a(a^2-12150)}{27}\right)\in E_R(\mathbf Q).
+                                                               \tag{44}
+\]
+If the fixed block at this \(q\) is nonsingular, then
+\[
+ \operatorname{rank}E_R(\mathbf Q)=1,\qquad
+ \Sha(E_R)[3^\infty]\cong(\mathbf Z/3\mathbf Z)^{2r}.      \tag{45}
+\]
+No finiteness assumption on \(\Sha\) is needed for this implication.
+
+Proof. Every prime dividing \(C\) satisfies \((6/p)=1\),
+so the quadratic congruence in (43) has roots modulo every such
+prime. The Chinese remainder theorem combines these with either
+class modulo 18. Since \(a\) is odd and \(C\equiv-1\pmod8\),
+\(q\equiv5\pmod8\). The congruence at 9 gives
+\(q\equiv-1\pmod9\); together these give \(53\bmod72\).
+The identity \(a^2=Cq+1350\) verifies the first point in (44).
+The normalized dual isogeny is
+\[
+ \hat\psi(X,Y)=
+ \left(\frac{X^3+216R^2}{9X^2},
+       \frac{Y(X^3-432R^2)}{27X^3}\right),
+\]
+and substitution gives the second point. Both are non-torsion by
+MCT17. Nonsingularity bounds the rank by one, so it is exactly one.
+The Kummer sequence now makes \(\dim\Sha(E_R)[3]=2r\).
+The fixed block injects into this space and exhausts it, with
+nondegenerate restricted pairing. If an element had order nine,
+its nonzero triple would pair trivially with every three-torsion
+element, since \(\langle3z,x\rangle=\langle z,3x\rangle=0\).
+This is impossible. Every 3-primary element is therefore killed
+by three, proving (45). This is the same elementary group argument
+as [Wu–Zhu, Lemma 4.1](sources/wu-zhu-fermat-pairing-2611.29541v1.pdf),
+with the rank-one lower bound supplied here by (44).
+
+For \(C=71\), take \(a=71t+1\). Then
+\[
+ q=71t^2+2t-19.                                           \tag{46}
+\]
+Even \(t\equiv0,2\pmod9\) meet (43). The fixed block can be
+tested without generating a full matrix for \(355q\). For
+\(s^2=6\), put \(a_5=-35+15s\), \(a_{71}=5183+2130s\),
+and \(u^3=a_5\). There is the exact norm certificate
+\[
+ \begin{split}
+ \xi={}&-21058+\tfrac{25765}{3}s
+          +(5048-2075s)u
+          +(-1197+\tfrac{1520}{3}s)u^2,\\
+ &N_{\mathbf Q(s,u)/\mathbf Q(s)}\xi=a_{71}.              \tag{47}
+ \end{split}
+\]
+Its only denominator prime is 3. Its norm and radicand have support
+at 71 and 5, so its governing field has no auxiliary ramification
+outside \(2,3,5,71\). The possible normalization at 3 changes
+the raw symbol only by a multiple of \(\chi_9\), zero for these
+moving primes. Let \(\kappa_{5,71}(q)\) be its raw symbol,
+computed by (3) with the data in (47). The retained MCT11 reference
+has \(B_{355}(\chi_5,\chi_{71})=2\) in these exact orientations.
+Thus MCT4 gives
+\[
+ B_{355q}(\chi_5,\chi_{71})=2+\kappa_{5,71}(q).           \tag{48}
+\]
+
+The complete scan over even \(2\le t\le200\) with
+\(t\equiv0,2\pmod9\) gives the following prime values:
+
+| \(t\) | \(q\) | \(\kappa_{5,71}(q)\) | Fixed entry |
+|---|---|---|---|
+| 2 | 269 | 1 | 0 |
+| 18 | 23021 | 2 | 1 |
+| 72 | 368189 | 2 | 1 |
+| 90 | 575261 | 2 | 1 |
+| 182 | 2352149 | 2 | 1 |
+
+In particular, \(t=18\) gives \(R=8172455\) and
+\[
+ P=\left(\frac{1639891}{9},\frac{2076700789}{27}\right),
+ \qquad \operatorname{rank}E_R(\mathbf Q)=1,
+ \qquad \Sha(E_R)[3^\infty]\cong(\mathbf Z/3\mathbf Z)^2.
+\]
+The other three nonzero controls have the same rank and group.
+The zero control supplies a rational point but this block does
+not determine its rank or 3-primary group.
+All exact points, the norm, symbols in all four embeddings and
+the bounded scan are retained in
+[the point certificate](mordell_one_prime_point_certificates.json)
+and checked by
+[the standard-library verifier](verify_mordell_one_prime_points.py).
+Three deliberately corrupted certificates are rejected. This is
+an internal replay, not an infinitude argument or independent review.
+
+### The full Selmer corank and the remaining infinite step
+
+**Proposition MCT19 (3-primary dichotomy at a nonsingular target).**
+For every nonsingular-target curve of MCT16, put
+\(\rho=\operatorname{rank}E_R(\mathbf Q)\). Then
+\[
+ \Sha(E_R)[3^\infty]\cong
+    (\mathbf Z/3\mathbf Z)^{2r}
+       \oplus(\mathbf Q_3/\mathbf Z_3)^{1-\rho},\qquad
+ \operatorname{corank}_{\mathbf Z_3}
+             \operatorname{Sel}_{3^\infty}(E_R)=1.        \tag{49}
+\]
+In particular a non-torsion point, or finiteness of the 3-primary
+group, forces (45). The first assertion is an abstract group
+decomposition; it does not assert that the divisible summand vanishes.
+
+Proof. The standard inputs are the finite-plus-divisible structure
+of each primary part and the perfect alternating pairing on its
+finite reduced quotient. They hold without assuming finiteness of
+\(\Sha\): see [Milne, *Arithmetic Duality Theorems*, I,
+Remark 6.7, Remark 6.10(b), Theorem 6.13(a), pp. 77, 79, 82](sources/milne-arithmetic-duality-2006.pdf).
+The elliptic polarization comes from the rational identity divisor.
+
+Let \(G=\Sha(E_R)[3^\infty]\). The image \(H\) of the
+fixed block in \(G[3]\) has dimension \(2r\) and a perfect
+restricted pairing. Pairing against \(H\) gives a retraction
+\(G\to H\), since every functional on \(H\) is represented
+by exactly one element of \(H\). Hence
+\(G=H\oplus H^\perp\). The Kummer sequence gives
+\(\dim G[3]=2r+1-\rho\), so
+\(\dim H^\perp[3]=1-\rho\le1\).
+The finite reduced quotient of \(H^\perp\) has a perfect
+alternating pairing. A nonzero such finite 3-group needs at least
+two generators: its restriction to a cyclic group is zero.
+Its three-torsion dimension is at most one, so it is zero.
+Thus \(H^\perp\) is divisible of corank \(1-\rho\), proving
+the first formula. The full primary Kummer sequence adds \(\rho\)
+to this corank, giving the second formula.
+
+There are two precise routes to an infinite exact-rank-one result.
+
+* **Point route.** Prove that, for every \(r\), some progression
+  of \(a\)'s in (43) gives infinitely many primes for which the
+  fixed block is nonsingular, or supply another point construction
+  with that property. After restricting \(a\) to a progression,
+  (43) is an irreducible quadratic polynomial, with discriminant
+  a nonzero square times 6. Infinitely many prime values with the
+  required joint Frobenius condition are an additional obligation.
+  Neither ordinary Chebotarev nor a theorem about prime values of
+  irreducible binary cubics supplies that assertion. The finite
+  controls above show compatibility for \(r=1\); they do not
+  establish this infinite step for any \(r\).
+* **Converse route.** An applicable 3-converse from full Selmer
+  corank one to rational rank one would settle all nonsingular
+  MCT16 targets directly. [Kriz, arXiv:2002.04767v5, Theorems 1.1
+  and 10.13](sources/kriz-ramified-cm-converse-2002.04767v5.pdf)
+  states exactly such an implication for elliptic curves with CM
+  by the full ring of integers at its ramified prime. Here the CM
+  field is \(\mathbf Q(\sqrt{-3})\), its full ring acts over
+  that field through \((x,y)\mapsto(\zeta_3x,y)\), and the
+  ramified prime is 3. It is a different field from the ray field
+  \(\mathbf Q(\sqrt{-2})\). Thus the stated hypotheses match
+  (49), including this additive prime. Assuming that converse,
+  every nonsingular MCT16 target has analytic and rational rank
+  one, finite \(\Sha\), and group (45).
+
+The retained Kriz source was inspected for the exact statement,
+the terminal proof of Theorem 10.13 and its dependence on
+Corollary 10.12, Proposition 10.10 and the earlier reciprocity and
+main-conjecture inputs. That full proof chain has not been audited
+here. The converse route is therefore recorded conditionally in
+this project; it is not an unconditional upgrade of MCT16. The
+ordinary or good-supersingular CM converse theorems cannot simply
+be substituted at this additive ramified prime. No assertion that
+the converse is historically unknown or false follows from this
+local review limit.
+
 ## Evidence, replay and remaining scope
 
 Run from the repository root:
 
 ```sh
 python3 research/arithmetic/verify_mordell_ray_pairing.py
+python3 research/arithmetic/verify_mordell_one_prime_points.py
 ```
 
 The checker uses Python's standard library and exact fractions. It

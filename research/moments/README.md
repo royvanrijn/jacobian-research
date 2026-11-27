@@ -128,6 +128,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Four-cell Gaussian stability at low correlation | Internal result | proved | [Source](../plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md) |
 | Complete primitive balanced-degree spectrum in two contraction pairs | Internal result | proved | [Source](../foundations/extended-geometry/PRIMITIVE_BALANCED_IMAGE_DEGREE_SPECTRUM.md) |
 | Strict tetrahedral local maximum of first Hermite mass | Internal result | proved | [Source](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) |
+| Balanced tail swaps obstruct relative Hermite control | Internal result | proved | [Source](../plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md) |
 | The one-operator Image theorem for constant coefficients | Internal result | proved | [Source](../foundations/extended-geometry/ONE_OPERATOR_IMAGE_MATHIEU.md) |
 | Exact operator count for the characteristic-zero Image assertion | Internal result | proved | [Source](../foundations/extended-geometry/ONE_OPERATOR_IMAGE_MATHIEU.md) |
 | Pure primitive two-pair quintic normal forms and orbit equivalence | Internal result | proved | [Source](../foundations/extended-geometry/QUINTIC_HOPF_PURITY_NORMAL_FORMS.md) |
@@ -151,8 +152,9 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Planar convex quadrilateral centroidal configurations are unstable | Internal result | proved | [Source](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) |
 | Balanced first-moment bound for a non-extreme centroid | Internal result | proved | [Source](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) |
 | Every balanced four-cell global maximizer has rank three | Internal result | proved | [Source](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) |
+| Five balanced Gaussian shape directions and an explicit local exclusion | Internal result | proved | [Source](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) |
 
-**Computed obligations:** 37 unresolved; 12 resolved within their exact scope.
+**Computed obligations:** 38 unresolved; 13 resolved within their exact scope.
 
 
 Scope limits:
@@ -228,6 +230,8 @@ Scope limits:
 - All-order Gaussian purity is classified for the sixteen homogeneous sextic directions with Laurent weight at most four on q=1, including all nonsquarefree and zero faces.
 - Long’s binary Factorial theorem yields a trivial eventual pure-moment radical on the two Gaussian radii of block sizes (2,2). In the two-pair polynomial Image problem, it excludes a vertex in the nonnegative orthant of the weight hull of an eventually pure phase. See the exact transfer arguments.
 - For balanced four-cell Gaussians, every non-extreme first-moment tuple satisfies W_1<=B<1/3<W_1(T), with B approximately 0.3252948978196. Combining this value bound with the stationary quadrilateral lift excludes every rank-deficient global maximum in dimension at least three. Full-rank stationary stability alone suffices for the global first-Hermite and balanced quantization theorem. The separate planar value bound remains open.
+- Exactly balanced remote tail swaps have positive first-Hermite deficit tending to zero and an unbounded relative W_2 gain. They falsify uniform relative higher-Hermite control by delta, and any positive fixed-correlation lower bound proportional to rho*delta over all balanced partitions. First-Hermite optimality and one uniform small positive-correlation interval remain separate open endpoints.
+- Balanced four-cell stationary Gaussian optimization now has an exact five-dimensional Hessian quotient, an averaged trace with the full mass-balancing correction, and exact negative tetrahedral eigenvalues. A uniform Taylor bound excludes polar perturbations through radius1/100000 and normalized balanced shapes with ||sqrt(3C)-I||_F<=1/300000 unless tetrahedral. The trace and anisotropy Rayleigh signs outside this region are open; high-value full-rank stability and the global first-Hermite/quantization endpoints remain unresolved.
 
 Tracked obligations (computed states):
 
@@ -242,5 +246,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Does every balanced four-cell planar affine assignment have W_1<W_1(T)? Any counterexample must have first moments in strict convex quadrilateral position, since the closed-triangle case is bounded by 0.3252948978196. This planar value comparison remains open and is not required by the current full-rank global route.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-PLANAR-BALANCED-AFFINE-VALUE
 - **mathematical / open:** [Every centered rank-three centroidal balanced Gaussian affine tuple in dimension three, except the tetrahedral centroid tuple up to orthogonal maps and label permutations, has a site perturbation increasing J=2F-||z||_F^2 after exact rebalancing. A positive second variation in the retained Hessian is sufficient; such a classification is not proved. This all-values statement is stronger than the high-value obligation needed for the global route.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-FULL-RANK-STATIONARY-STABILITY
 - **mathematical / open:** [Does every non-tetrahedral centered full-rank balanced stationary tuple with J>=W_1(T) admit an improving perturbation? With rank-deficient global maxima excluded, this restricted statement suffices for the global bound.](../plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md) — GAP-PIS-HIGH-VALUE-FULL-RANK-STABILITY
+- **mathematical / open:** [Does the tetrahedron maximize noise stability on one positive-correlation interval uniform over all balanced four-cell Gaussian partitions? Exactly balanced remote tail swaps falsify relative higher-Hermite control by delta, but do not decide this question.](../plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md) — GAP-PIS-FOUR-CELL-UNIFORM-SMALL-CORRELATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

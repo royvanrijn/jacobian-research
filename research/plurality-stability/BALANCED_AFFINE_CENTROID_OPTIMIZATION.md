@@ -11,6 +11,10 @@ on adding a third Gaussian coordinate. Together these facts exclude every
 rank-deficient global maximum in dimension at least three. The global theorem
 therefore reduces to the full-rank stationary stability obligation. The
 separate value comparison for all planar configurations remains open.
+The balanced Hessian now has an explicit five-dimensional shape reduction,
+a trace identity and exact tetrahedral eigenvalues. The local theorem below
+also has an explicit polar Frobenius radius $10^{-5}$. These results do not
+prove instability of every other high-valued full-rank stationary tuple.
 A deterministic search from 76 asymmetric initializations
 converged numerically to the tetrahedral Gram matrix. The global balanced
 first-order comparison remains open in this work.
@@ -157,6 +161,201 @@ Their Theorem 1.5 also assumes compact support and does not by itself
 give a convergence or global optimality theorem for this Gaussian
 problem. The site variation, elimination of the balancing biases, and
 the boundary argument below are derived here; no priority claim is made.
+
+## Five shape directions and the averaged trace
+
+Assume here that the tuple is centered, has rank three, is exactly balanced,
+and is centroidal: $m_i=z_i$. Regard $Z$ as the $4$ by $3$ matrix of row
+sites, and put $C=Z^{\mathsf T}Z$, $W=\operatorname{tr}C=J(Z)$.
+All six weights equal $1/4$. The centered site space has dimension nine.
+Its rotation directions are $ZA$ for $A^{\mathsf T}=-A$, and its radial
+direction is $Z$. The five-dimensional orthogonal complement is
+
+$$
+\mathcal S_Z=\{V:\ \mathbf1^{\mathsf T}V=0,\quad
+ Z^{\mathsf T}V\text{ is symmetric},\quad
+ \langle Z,V\rangle_F=0\}. \tag{S5}
+$$
+
+The metric is the ordinary Frobenius metric of site perturbations.
+For anisotropic $C$, taking $V=ZS$ with $S$ symmetric does not in
+general give the orthogonal complement to rotations: the correct
+condition is $CS$ symmetric.
+
+**Shape reduction.** At such a stationary tuple, the balanced Hessian
+vanishes on rotations, has radial eigenvalue $-2$, and restricts to (BV)
+on $\mathcal S_Z$. Optimizing positive scale gives
+
+$$
+\Psi(Z)=\max_{t\ge0}J(tZ)=F(Z)^2/\|Z\|_F^2,\qquad
+D^2\Psi[V,V]=D^2J[V,V]+2\langle Z,V\rangle_F^2/W. \tag{OS}
+$$
+
+Thus a positive eigenvalue on $\mathcal S_Z$ is exactly a positive
+second variation after removing rotations and optimizing scale.
+For the proof, positive homogeneity gives $D^2F[Z,\cdot]=0$.
+Rotational invariance and the vanishing gradient of $J$ give
+$D^2J[ZA,\cdot]=0$. Differentiating $F^2/\|Z\|_F^2$, using
+$F=W$ and $\nabla F=Z$, proves (OS).
+
+An explicit orthonormal frame is available. Diagonalize $C$ with
+eigenvalues $\lambda_a>0$ and work in those physical coordinates.
+Two diagonal directions are
+$V=Z\operatorname{diag}(d_a/\sqrt{\lambda_a})$, where the two unit
+vectors $d$ span $(\sqrt{\lambda_1},\sqrt{\lambda_2},
+\sqrt{\lambda_3})^\perp$. For each $a<b$, the third through fifth
+directions are $V=ZT$ with only
+
+$$
+T_{ab}=\sqrt{\frac{\lambda_b}{\lambda_a(\lambda_a+\lambda_b)}},
+\qquad
+T_{ba}=\sqrt{\frac{\lambda_a}{\lambda_b(\lambda_a+\lambda_b)}}
+\tag{SF}
+$$
+
+nonzero. Direct multiplication verifies all five orthogonality and norm
+conditions. Equal eigenvalues cause no singularity.
+
+For each interface let $\mu_{ij}$ and $T_{ij}$ be its conditional
+Gaussian first and raw second moments; set $\tau_{ij}=\operatorname{tr}T_{ij}$.
+Define the symmetric cell second-moment matrices
+
+$$
+D_i=\int_{A_i}(xx^{\mathsf T}-I)\,d\gamma_3(x)
+ =\sum_{j\ne i}(z_i-z_j)
+      \left(\frac1{d_{ij}}\int_{F_{ij}}x\phi_3(x)\,d\mathcal H^2(x)\right)^{\mathsf T}.
+$$
+
+The second equality follows by integrating each derivative of
+$x_b\phi_3$. In particular $\sum_iD_i=0$. For $V=ZT$, the bias
+derivative in (BV) is $r_i=\langle D_i,T\rangle_F$.
+
+**Shape trace identity.** For an orthonormal basis of $\mathcal S_Z$,
+the sum of its five balanced Hessian values is exactly
+
+$$
+\operatorname{Tr}_{\mathcal S_Z}D^2J
+ =\sum_{i<j}\tau_{ij}
+       -2\sum_i\operatorname{tr}(D_i C^{-1}D_i)-16. \tag{ST}
+$$
+
+To verify this, first trace (BV) over the full centered nine-dimensional
+site space. The functional $V\mapsto(V_i-V_j)\cdot x$ has squared
+dual norm $2\|x\|^2$. Since $a_{ij}/d_{ij}=1/4$, the trace of $Q$
+is $\frac12\sum_{i<j}\tau_{ij}$. The metric on $T$ is
+$\operatorname{tr}(T^{\mathsf T}CT)$, so the squared dual norm of
+$T\mapsto\langle D_i,T\rangle_F$ is
+$\operatorname{tr}(D_i C^{-1}D_i)$. This is the full trace of the
+balancing correction. The norm term has trace nine. Removing the
+three zero rotation eigenvalues and the radial eigenvalue $-2$ gives
+(ST). In particular, positivity of its right-hand side is sufficient
+for an improving perturbation. Its positivity at all relevant
+non-tetrahedral stationary tuples has not been proved.
+
+There is also a specific anisotropy direction in this space:
+
+$$
+T=C^{-1}-\frac3W I,\qquad V=ZT,\qquad
+\|V\|_F^2=\operatorname{tr}C^{-1}-\frac9W. \tag{AD}
+$$
+
+It is nonzero unless $C=(W/3)I$. Isotropy, together with centering and
+rank three, means that the four sites form a regular tetrahedron;
+balance fixes zero biases, and centroidal stationarity fixes the
+tetrahedral scale. Thus (AD) is nonzero at every configuration still
+under consideration. Its exact test is
+
+$$
+\frac12 D^2J[V,V]
+ =\frac14\sum_{i<j}(T(z_i-z_j))^{\mathsf T}T_{ij}(T(z_i-z_j))
+  -\sum_i\bigl(\operatorname{tr}(TD_i)\bigr)^2
+  -\left(\operatorname{tr}C^{-1}-\frac9W\right). \tag{AT}
+$$
+
+Positivity of (AT) on every non-tetrahedral stationary tuple with
+$W\ge W_1(T)$ would suffice. This is a candidate scalar inequality,
+not an established sign or a replacement for the other shape directions.
+
+### Exact tetrahedral spectrum
+
+Write $z_i^*=c s_i$, with $s_i$ the even sign vectors as below, and let
+$\theta=\arctan\sqrt2$, $t=\sin(2\theta)/(2\theta)$.
+The conditional mean on a tetrahedral facet is $\eta u$, where $u$
+is its shared-sign coordinate axis and
+$\eta=\sqrt{\pi/3}/\theta$. This follows from the polar wedge
+coordinates: the mean radius is $\sqrt{\pi/2}$ and the mean axial
+angle factor is $\sin\theta/\theta$. Consequently
+$D_i=(c\eta/2)(s_i s_i^{\mathsf T}-I)$.
+
+For a symmetric perturbation $V=ZS$, the balancing correction is
+$\eta^2/2$ times $\|V\|_F^2$ on off-diagonal $S$ and zero on
+traceless diagonal $S$. Combining this with the unbalanced facet
+calculation in the local proof gives the five exact eigenvalues
+
+$$
+\lambda_{\rm off}=-1+t-\frac{\pi}{3\theta^2}
+       =-1.653996781499\ldots\quad(\text{multiplicity }3),
+$$
+$$
+\lambda_{\rm diag}=-\frac12-\frac32t
+       =-1.240180551423\ldots\quad(\text{multiplicity }2).
+\tag{TS}
+$$
+
+Their sum is $-4-\pi/\theta^2=-7.442351447343\ldots$.
+In (ST), each $\tau_{ij}=2$ and the correction trace is
+$\pi/(2\theta^2)$. This checks the constants and shows why the
+balancing correction materially changes the averaged Hessian. The
+trace criterion is not a positive quantity throughout a neighborhood
+of the tetrahedron; any use away from it must exploit stationarity
+and the value threshold.
+
+### Evaluating the interface moments
+
+The face quantities require only one bivariate Gaussian probability,
+not a numerical derivative of the balance solve. On a face write
+$x=hn+y$, $y\perp n$. Let its two winning inequalities in that
+plane be $u\cdot y\ge a$, $v\cdot y\ge b$, for tangent unit vectors
+$u,v$ with $\rho=u\cdot v\in(-1,1)$ and $s=\sqrt{1-\rho^2}$.
+Put
+
+$$
+p=\Phi_2(-a,-b;\rho),\quad
+f=\phi(a)\Phi((\rho a-b)/s),\quad
+g=\phi(b)\Phi((\rho b-a)/s),\quad
+e=\phi(a)\phi((b-\rho a)/s).
+$$
+
+The unnormalized tangent moments are
+
+$$
+M=fu+gv,
+$$
+$$
+N=p(I-nn^{\mathsf T})+afuu^{\mathsf T}+bgvv^{\mathsf T}
+ +\frac e s\bigl(uv^{\mathsf T}+vu^{\mathsf T}
+                    -\rho(uu^{\mathsf T}+vv^{\mathsf T})\bigr).
+\tag{FM}
+$$
+
+Gaussian integration by parts on the two bounding lines proves these
+formulas. The line at $u\cdot y=a$ has Gaussian area $f$ and
+first moment $af u+e(v-\rho u)/s$; the other line gives the symmetric
+expression. The ambient area, first moment and second moment are
+$\phi(h)p$, $\phi(h)(hnp+M)$ and
+$\phi(h)(h^2nn^{\mathsf T}p+h(nM^{\mathsf T}+Mn^{\mathsf T})+N)$.
+
+The [shape diagnostic](check_balanced_shape_hessian.py) implements (FM),
+the full balanced Hessian and (SF). At the tetrahedron it reproduces
+(TS) and (ST). At the fixed asymmetric tuple it compares all nine
+columns of the analytic Hessian with centered finite differences of
+the rebalanced gradient: maximum entry discrepancy $7.06\cdot10^{-10}$
+at step $2\cdot10^{-5}$. Omitting the correction changes that Hessian
+by Frobenius norm $1.1746\ldots$. The
+[receipt](balanced_shape_hessian_verification.json) records Python 3.12.3,
+NumPy 1.26.4 and the 80-node rule. These are floating-point controls;
+the formulas have the analytic proofs above, and no global stationary
+classification or interval sign certificate is supplied.
 
 ## Lifting a planar stationary configuration
 
@@ -476,9 +675,9 @@ contrary to the boundary exclusion. Thus the planar comparison is a
 consequence of the global bound, even though it is not a required premise
 of the remaining stability route.
 
-For a computer-assisted route, the existing local theorem is qualitative:
-it supplies no certified neighborhood radius. A complete interval proof
-still needs an explicit local radius, rigorous Gaussian tail bounds,
+For a computer-assisted route, the explicit local theorem below supplies
+a polar Frobenius neighborhood of radius $10^{-5}$. A complete interval proof
+still needs rigorous Gaussian tail bounds,
 coverage of the rank-deficient and coincident-site strata, and an
 exhaustive cover of the remaining compact normalized Gram domain.
 For upper bounds on the value, **a certified bias solve is unnecessary**:
@@ -593,6 +792,113 @@ the tetrahedral linear score maximize pointwise almost everywhere. Thus
 the cells must be tetrahedral up to an orthogonal map and null sets.
 The local argument compares the first Hermite coefficient. It gives no
 uniform positive correlation interval for all nearby partitions.
+
+## An explicit tetrahedral neighborhood
+
+The local exclusion can be quantified without solving any biases. Keep
+$z_i^*=c s_i$ at its centroidal scale and $W_*=W_1(T)$, and put
+$h(x)=\max_i z_i^*\cdot x$. For $P=I+S$ symmetric with
+$\|S\|_F\le10^{-5}$, the unbalanced upper objective satisfies
+
+$$
+\mathcal U((Pz_i^*)_i)
+ \le W_*-\frac1{100}\|S\|_F^2. \tag{LR}
+$$
+
+Thus every four-cell partition, balanced or otherwise, whose centroid
+Gram matrix has this polar representative lies strictly below the
+tetrahedron unless $S=0$. No claim about the entire compact shape
+domain follows from this radius.
+
+Here is a bound for the Taylor remainder. For $P_t=I+tS$, set
+$H(t)=\mathbb E h(P_tX)$ and change variables in its Gaussian integral.
+For fixed $y$, write $x=P_t^{-1}y$, $B_t=SP_t^{-1}$ and let $l_t(y)$
+be the logarithm of its density. Since $S$ commutes with $P_t$,
+
+$$
+l'=-\operatorname{tr}B_t+x^{\mathsf T}B_tx,\quad
+l''=\operatorname{tr}B_t^2-3x^{\mathsf T}B_t^2x,\quad
+l'''=-2\operatorname{tr}B_t^3+12x^{\mathsf T}B_t^3x.
+$$
+
+Writing $R=\|X\|$, bounding each trace by three times its operator
+norm, and using the third derivative of an exponential gives
+
+$$
+|H'''(t)|\le
+ a\frac{1+r}{(1-r)^3}\|S\|_F^3\,
+ \mathbb E\bigl[R(60+75R^2+18R^4+R^6)\bigr],
+\quad a=\max_i\|z_i^*\|,\quad r=\|S\|_F.
+$$
+
+For three standard Gaussian coordinates,
+$\mathbb ER^3=4\mathbb ER$, $\mathbb ER^5=24\mathbb ER$ and
+$\mathbb ER^7=192\mathbb ER$, so the expectation is
+$984\mathbb ER$. The tetrahedral formula and
+$\arcsin(1/3)<\pi/6$ give $W_*<4/(3\pi)<1$.
+We have $a=\sqrt{W_*}/2<1/2$,
+$\mathbb ER<2$, and $(1+r)/(1-r)^3<2$ for $r\le1/10$.
+Thus $|H'''(t)|\le1968\|S\|_F^3$. The change of variables
+also justifies differentiation: on $r\le1/10$ all density derivatives
+are bounded by a fixed polynomial times a decaying Gaussian.
+
+The local facet calculation gives
+$D^2H(0)\le(5/6)\sum_i\|S z_i^*\|^2$.
+Indeed $\theta>\pi/4>\sqrt2/2$ implies
+$t=\sqrt2/(3\theta)<2/3$, so both $\mu_u/2$ and
+$3\mu_v/4$ are less than $5/6$. Since $W_*>1/3$,
+the second derivative of $\mathcal U$ is at most
+$-W_*\|S\|_F^2/9\le-\|S\|_F^2/27$.
+Its first derivative vanishes, and its third derivative is bounded
+by $3936\|S\|_F^3$. Taylor's theorem yields
+
+$$
+\mathcal U((Pz_i^*)_i)
+ \le W_*-\frac1{54}\|S\|_F^2+656\|S\|_F^3
+ \le W_*-\frac1{100}\|S\|_F^2,
+$$
+
+where the last strict arithmetic margin at $r=10^{-5}$ is
+$1/54-656/100000-1/100=661/337500>0$.
+The shape diagnostic checks this rational arithmetic; the radius is
+proved by the uniform derivative bound, not by sampled perturbations.
+
+**Normalized shape neighborhood.** For a centered rank-three tuple of
+unit Frobenius norm, let $C=Z^{\mathsf T}Z$. If
+
+$$
+\delta(Z):=\|\sqrt{3C}-I\|_F\le\frac1{300000}, \tag{NR}
+$$
+
+then $F(Z)^2<W_*$ unless its shape is regular tetrahedral. This bound
+does not require stationarity. To prove it, rotate the tuple to
+$Z=Z_0P$, where $Z_0=z^*/\sqrt{W_*}$ and $P$ is positive definite.
+Then $\|P\|_F=\sqrt3$ and $\|P-I\|_F=\delta(Z)=\rho$.
+Bessel's inequality gives $W_1(A)\le3/4$ for every balanced partition,
+so its support function $F$ is $\sqrt3/2$-Lipschitz in the site norm.
+Consequently $|F(Z)-\sqrt{W_*}|\le\rho/2$.
+At the optimizing scale the tuple is $F(Z)Z$, whose polar factor
+relative to $z^*$ is $P_*=F(Z)P/\sqrt{W_*}$. Since $W_*>1/3$,
+
+$$
+\|P_*-I\|_F
+ \le\frac{\rho}{2\sqrt{W_*}}\sqrt3+\rho<3\rho\le10^{-5}.
+$$
+
+Apply (LR) and $J\le\mathcal U$. The only exception $P_*=I$
+forces $P=I$ by the unit normalization. In particular any remaining
+non-tetrahedral high-value stationary tuple must satisfy
+$\|\sqrt{3C/W}-I\|_F>1/300000$. This supplies an explicit excluded
+region near isotropy, while leaving the sign of (ST) or (AT) outside
+that region open.
+
+For context, [Heilman's published Problem 1.15 and Conjecture 1.16](https://link.springer.com/article/10.1007/s00526-026-03408-z)
+retain the balanced first-moment optimization as a separate finite-dimensional
+obligation. His Theorem 1.5 concerns Gaussian surface area plus a small
+first-moment penalty, and does not establish the pure first-moment maximum.
+The checked transport and propeller results cited above likewise do not
+supply the sign in (ST) or (AT). These formulas and the local radius do
+not assert that the global conjecture has been resolved.
 
 ## Deterministic search
 

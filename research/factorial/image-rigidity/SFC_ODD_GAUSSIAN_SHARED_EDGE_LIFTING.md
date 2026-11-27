@@ -27,6 +27,11 @@ Define
 characteristic-zero field. In particular this holds at every odd
 prime-power start \(q=p^e\).
 
+The [final-residue refinement](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md)
+also proves this conclusion whenever \(e=1\) or \((2/p)=-1\),
+without the resultant condition. The argument below proves the
+internal-edge exclusion independently of that refinement.
+
 Use the initial-order reduction proved in Section 7 of the linked
 note. A hypothetical algebraic zero, embedded in
 \(\overline{\mathbb Q}_p\), has the chart and valuations
@@ -238,9 +243,11 @@ dominant initial and middle prime-power families and verified finite
 domain. The character restriction on the initial shared edges is
 removed and is no longer a remaining obstruction.
 
-A concrete remaining final-slope exception is \(q=5\cdot13^e\).
-Here \(S_2\) is proportional to \(Y^2+20Y+60\); modulo \(13\),
-this and its argument-doubled polynomial have gcd \(Y-2\).
-The point \(Y=2\) is a common residue zero, not a Gaussian common
-zero. A higher compatibility condition at this same residue, or a
-uniform alternative-prime argument, is still needed for that family.
+The final-slope family \(q=5\cdot13^e\) is now excluded for every
+\(e\ge1\) by the [same-residue compatibility proof](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md#5-the-requested-family-and-the-next-boundary).
+At the common residue \(Z=2\), the next corrections disagree.
+A concrete remaining profile is \(q=9\cdot89^e\), \(e\ge2\):
+the reductions of \(S_4(Z),S_4(2Z)\) have gcd \(Z+25\).
+Here \((2/89)=1\), and the first secondary compatibility vanishes
+at \(Z=64\). This is a surviving residue test, not a Gaussian
+common zero.

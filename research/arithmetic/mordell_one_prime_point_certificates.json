@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "scope": "Exact internal controls for the quadratic point family at fixed R0=355. No assertion of infinitely many prime values or asymptotic Frobenius distribution.",
+  "bounded_scan": {
+    "t_min": 2,
+    "t_max": 200,
+    "t_step": 2,
+    "t_mod_9": [
+      0,
+      2
+    ]
+  },
+  "family": {
+    "R0": 355,
+    "B": 5,
+    "C": 71,
+    "a": "71*t+1",
+    "q": "71*t^2+2*t-19"
+  },
+  "pair_norm": {
+    "a": [
+      -35,
+      15
+    ],
+    "b": [
+      5183,
+      2130
+    ],
+    "coefficients": [
+      [
+        "-21058",
+        "25765/3"
+      ],
+      [
+        "5048",
+        "-2075"
+      ],
+      [
+        "-1197",
+        "1520/3"
+      ]
+    ],
+    "denominator_factors": [
+      "(3, 1)"
+    ]
+  },
+  "reference": {
+    "R": 355,
+    "basis": [
+      5,
+      71
+    ],
+    "entry": 2,
+    "source": "mordell_ray_full_pairing_certificates.json",
+    "scope": "The retained MCT11 full matrix, in exactly these oriented representatives."
+  },
+  "cases": [
+    {
+      "t": 2,
+      "q": 269,
+      "R": 95495,
+      "a": 143,
+      "Q": [
+        19099,
+        2731157
+      ],
+      "kappa": 1,
+      "entry": 0,
+      "point_on_E": [
+        "24499/9",
+        "1186757/27"
+      ]
+    },
+    {
+      "t": 18,
+      "q": 23021,
+      "R": 8172455,
+      "a": 1279,
+      "Q": [
+        1634491,
+        2090513989
+      ],
+      "kappa": 2,
+      "entry": 1,
+      "point_on_E": [
+        "1639891/9",
+        "2076700789/27"
+      ]
+    },
+    {
+      "t": 72,
+      "q": 368189,
+      "R": 130707095,
+      "a": 5113,
+      "Q": [
+        26141419,
+        133661075347
+      ],
+      "kappa": 2,
+      "entry": 1,
+      "point_on_E": [
+        "26146819/9",
+        "133605854947/27"
+      ]
+    },
+    {
+      "t": 90,
+      "q": 575261,
+      "R": 204217655,
+      "a": 6391,
+      "Q": [
+        40843531,
+        261031006621
+      ],
+      "kappa": 2,
+      "entry": 1,
+      "point_on_E": [
+        "40848931/9",
+        "260961983821/27"
+      ]
+    },
+    {
+      "t": 182,
+      "q": 2352149,
+      "R": 835012895,
+      "a": 12923,
+      "Q": [
+        167002579,
+        2158174328417
+      ],
+      "kappa": 2,
+      "entry": 1,
+      "point_on_E": [
+        "167007979/9",
+        "2158034760017/27"
+      ]
+    }
+  ]
+}

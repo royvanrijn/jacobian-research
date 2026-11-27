@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_utc_date": "2026-11-27",
   "result_document": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
-  "assurance": "Internal written uniform conditional descent and local capture, with exact finite mechanism controls. Global plateau escape and arbitrary extraction remain open.",
+  "assurance": "Internal written terminal-mass lemmas and orbit-minimum reduction, with exact finite local-orbit calculations and uniform weight inequalities. Exclusion of all positive global orbit minima and arbitrary extraction remain open.",
   "declarations": [
     {
       "name": "Lemma 1. Terminal mass detects exactly the removable locus",
@@ -23,6 +23,18 @@
     {
       "name": "Lemma 5. Five weighted components control every adjacent-pair rotation",
       "scope": "For any adjacent DT pair, delete its four edges and record five positive component weights and the component of each support label. Every pair rotation has exactly the terminal masses computed on that weighted quotient tree. Q^k(A,B)=(A(AB)^k,A(AB)^(k+1)) and ord(AB) is in {2,3,4,5,6}. An endpoint mass inequality does not control intermediate masses or guarantee any descending pair exists."
+    },
+    {
+      "name": "Lemma 6. Seven weighted components control the complete three-factor orbit",
+      "scope": "For every consecutive triple in a full-cycle polynomial DT tree, its six edges leave seven weighted components. Keep at most twelve literal support labels and their owner map. The complete local B3 orbit has at most 2205225 states independently of N. Each rotating factor mass is a 0/1 linear expression in the seven weights minus two; subset-minimal coefficient vectors suffice for every positive weighting."
+    },
+    {
+      "name": "Proposition 7. The plateau window has eight uniform inequalities",
+      "scope": "The stated nine-label path-owner template has 162 local states and 27 terminal coefficient vectors, with exactly eight minimal supports. Its smallest candidate mass is min(alpha+beta,alpha+gamma,beta+gamma)-2, where alpha=min(w0,w1), beta=w3, gamma=min(w5,w6). Every original factor is uniformly strictly dominated. All 189 tree-quotient owner partitions of this fixed support forest exclude 387 of 567 marked templates; 180 have positive isolated linear witnesses with odd total weight. Other triple support forests and global completions are not classified."
+    },
+    {
+      "name": "Proposition 8. Orbit minima replace monotone descent",
+      "scope": "Extraction in a fixed-degree braid orbit is equivalent to its minimum terminal mass being zero. At a positive orbit minimum m, every local candidate vector satisfies c.w>=m+2, and an initially minimizing factor satisfies equality. Any endpoint violation contradicts minimality regardless of intermediate masses. Three chosen factors including a minimizer can be gathered while preserving their literal permutations and the chosen cut; recompute seven-component data after gathering."
     }
   ],
   "primary_source_comparison": [
@@ -83,8 +95,19 @@
     "software": "Python 3.12.3; standard library only",
     "scope": "Existing 392-tuple degree-seven domain: 42 strict pruning controls in both bringing orders, 56 two-contact captures in both pair orders and 6720 weighted quotient comparisons. Additional period-two control, cyclic r=4,7,12,25 controls and literal degree-fifteen one-move capture. A second full-A15 witness has mass one in all24 pair/power cases covering every power of each initially adjacent pair, yet [-3,-4] gives1,1,0 and two new leaves. Invalid controls rejected."
   },
-  "remaining_frontier": "Prove a uniform escape from every positive terminal-mass plateau in the full-alternating residual domain. The arbitrary overlap gate supplies no mass control or outer-endpoint location. Mixed three-cycle connectivity is separate.",
+  "remaining_frontier": "Exclude a positive minimum over a full-alternating residual braid orbit. The sufficient three-factor route must force an endpoint inequality violation at some minimizing representative, without monotonicity along the local braid. Other support forests and the global compatibility of surviving weighted templates remain uncontrolled. The older monotone plateau strategy remains open; mixed three-cycle connectivity is separate.",
   "independent_replay": false,
   "formal_verification": false,
-  "external_review": false
+  "external_review": false,
+  "three_factor_evidence": {
+    "checker": "research/arithmetic/verify_terminal_mass_three_factor.py",
+    "checker_sha256": "265ecb6bb3565a89dce53d1374743f68135682fd99bcc2009038b5b486c45663",
+    "receipt": "research/arithmetic/terminal_mass_three_factor_verification.json",
+    "receipt_sha256": "7816073929890e3b40bba7df3121c3d9a062ae11177cc25341f798f904904919",
+    "command": "python3 research/arithmetic/verify_terminal_mass_three_factor.py",
+    "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
+    "software": "Python 3.12.3; standard library only",
+    "deterministic_input": "Literal nine-label triple and owner map in symbolic_path_control; all seven-block owner partitions generated by two pair identifications in owner_partition_controls; existing degree-fifteen plateau certificate supplies all five initial windows.",
+    "scope": "Complete local generator closure with every transition checked against a separate permutation implementation. All 189 owners for the specified forest, exact minimal masks and constructive positive isolated-system witnesses. 1245 comparisons with full-tree factor cuts; a twelve-label support control, proper order-168 positive local minimum, and four invalid controls. Internal replay only."
+  }
 }

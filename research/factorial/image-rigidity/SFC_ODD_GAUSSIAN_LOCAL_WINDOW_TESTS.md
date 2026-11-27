@@ -641,10 +641,16 @@ where \(k\ge0\), \(e\ge1\), \(p\) is odd prime and
  T_k=\operatorname{Res}_Z((2k+1)!\,S_k(Z),(2k+1)!\,S_k(2Z)),
  \qquad T_0=1 .
 \]
-If \(p\nmid T_k\), the Gaussian gate closes over characteristic
-zero for every \(e\ge1\). In particular this covers every odd
-prime-power start. The [shared-edge lifting argument](SFC_ODD_GAUSSIAN_SHARED_EDGE_LIFTING.md)
-completes the quadratic-residue case of the Newton reduction.
+The Gaussian gate closes over characteristic zero if
+\[
+       e=1\quad\text{or}\quad(2/p)=-1\quad\text{or}\quad p\nmid T_k.
+\]
+In particular this covers every odd prime-power start and every
+\(q=5\cdot13^e\), \(e\ge1\). The
+[shared-edge lifting argument](SFC_ODD_GAUSSIAN_SHARED_EDGE_LIFTING.md)
+completes the quadratic-residue internal edges of the Newton reduction.
+The [final-residue argument](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md)
+removes the resultant condition when \(e=1\) or \((2/p)=-1\).
 
 Let \(P=p^e\) and \(L=\sum_{d=1}^e p^{-d}\).
 Since \(2q<p^{e+1}\), the reduction argument of
@@ -766,7 +772,13 @@ and \(S_k(2\bar Z)\). Indeed, the top digits of
 The lower digits are independent of \(t\). The
 extra power \((2m)^{tP}\) gives \(2^t\) at the
 even order and \(4^t\) at the odd order.
-The assumption \(p\nmid T_k\) excludes this slope.
+The assumption \(p\nmid T_k\) excludes this slope. Even when the
+residues coincide, the [next digit layer](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md#3-the-next-digit-layer)
+excludes a common lift for \((2/p)=-1\). A common first-order
+coordinate change gives the same exclusion for \(e=1\) without
+a character restriction. For \(e\ge2,(2/p)=1,p\mid T_k\),
+this first compatibility can vanish; these cases remain outside
+the stated theorem.
 
 For \(k>0\), \(S_k(2X^2)\) is proportional to the
 odd Hermite polynomial of degree \(2k+1\) divided

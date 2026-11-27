@@ -1915,6 +1915,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | General Mordell ray bases, pairwise variation and a finite local pairing reduction | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | Explicit Hilbert-90 local scalar descent and direct Mordell ray pairing certificates | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | Infinitely many admissible twists have a uniform nonzero ray block and global Hasse failures | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| One moving inert prime realizes every arbitrarily large fixed tame block with rank at most one for nonsingular targets | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
 | A power bound for large square-root scales in binary quartic values | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
 | Binary quartic squareclass collisions are sparse outside projective root symmetries | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
 | Unweighted cubic tangent fields have a power-saving second factorial moment | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
@@ -1948,7 +1949,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Cubic parameter maps have no mixed-degree-two companion and share the norm class in common genus one or two | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Two cubic parameter maps with common genus four are projectively related | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Two non-projectively-related cubic maps in common genus five have restricted branch matching | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
-| Terminal-mass descent with changing candidate leaves | Internal result | proved | [Source](TERMINAL_MASS_HURWITZ_DESCENT.md) |
+| Terminal mass, seven-weight local orbits and changing candidate leaves | Internal result | proved | [Source](TERMINAL_MASS_HURWITZ_DESCENT.md) |
 | Product singularity parity restricts genus-five cubic pairings and excludes doubled symmetric branches | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Two geometrically cyclic cubic projections cannot give a nonprojective common genus-five tangent cover | Internal result | proved | [Source](ABC_CUBIC_PARAMETER_TANGENT_OBSTRUCTION.md) |
 | Prime-block norm assembly and a terminating full Mordell ray matrix algorithm for arbitrary support | Internal result | stale | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
@@ -1969,8 +1970,24 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The product of the doubled cubic norm classes is a virtual unit exactly on the dyadically unit branch | Internal result | proved | [Source](ABC_CUBIC_TANGENT_VIRTUAL_PRODUCT_FAMILY.md) |
 | The odd inverse profile pair yields infinitely many genuine order-three ideal classes from a product of obstructed norms | Internal result | proved | [Source](ABC_CUBIC_TANGENT_VIRTUAL_PRODUCT_FAMILY.md) |
 | Three fixed twists have positive rank on a counted family with actual order-three class-group torsion | Internal result | proved | [Source](ABC_CUBIC_TANGENT_VIRTUAL_PRODUCT_FAMILY.md) |
+| A rational inverse-coefficient family produces actual class-three virtual products while the individual directions fail | Internal result | proved | [Source](ABC_CUBIC_TANGENT_VARYING_INVERSE_PROFILES.md) |
+| The varying doubled construction gives a quantitative count with both quadratic fields and inverse profile pairs distinct | Internal result | proved | [Source](ABC_CUBIC_TANGENT_VARYING_INVERSE_PROFILES.md) |
+| A dyadically virtual cubic product that is a cube at three gives class-group torsion in both mirror fields | Internal result | proved | [Source](ABC_CUBIC_TANGENT_MIRROR_CLASS_FAMILY.md) |
+| Fixed inverse weighted profiles give a counted family with three-torsion in both mirror class groups | Internal result | proved | [Source](ABC_CUBIC_TANGENT_MIRROR_CLASS_FAMILY.md) |
+| The varying inverse profile family gives a quantitative simultaneous count of mirror pairs and coefficient pairs | Internal result | proved | [Source](ABC_CUBIC_TANGENT_MIRROR_CLASS_FAMILY.md) |
+| Two independent marked norm classes on a genus-six Mestre twist of exact generic rank two | Internal result | proved | [Source](QUADRATIC_MIRROR_RANK_TWO_FROM_MARKED_MESTRE_TWISTS.md) |
+| A congruence-restricted Mestre twist has class rank at least two in both quadratic mirrors | Internal result | proved | [Source](QUADRATIC_MIRROR_RANK_TWO_FROM_MARKED_MESTRE_TWISTS.md) |
+| A counted family of mirror class-rank-two fields with rational rank-two elliptic twists | Internal result | proved | [Source](QUADRATIC_MIRROR_RANK_TWO_FROM_MARKED_MESTRE_TWISTS.md) |
+| Two bielliptic projections preserve independent marked norm classes and give exact generic rank two | Internal result | proved | [Source](QUADRATIC_MIRROR_RANK_TWO_FROM_BIELLIPTIC_TWISTS.md) |
+| A bielliptic sextic gives two virtual cubic classes that reflect with independent prime marks | Internal result | proved | [Source](QUADRATIC_MIRROR_RANK_TWO_FROM_BIELLIPTIC_TWISTS.md) |
+| A power-order count of bielliptic rank-two mirror pairs and elliptic twists by conductor | Internal result | proved | [Source](QUADRATIC_MIRROR_RANK_TWO_FROM_BIELLIPTIC_TWISTS.md) |
+| Fixed doubled tangent profiles meet a squarefree-value theorem without subpower counting loss | Internal result | proved | [Source](QUADRATIC_MIRROR_RANK_TWO_FROM_BIELLIPTIC_TWISTS.md) |
+| An explicit genus-three hyperelliptic curve has rational Jacobian three-rank three | Internal result | proved | [Source](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md) |
+| Three fixed positive-rank twists have independent cubic evaluations and the same conductor | Internal result | proved | [Source](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md) |
+| Two independent local valuation obstructions leave only one virtual cubic direction | Internal result | proved | [Source](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md) |
+| An octic count of real fields and common conductors of three marked twists | Internal result | proved | [Source](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md) |
 
-**Computed obligations:** 167 unresolved; 27 resolved within their exact scope.
+**Computed obligations:** 168 unresolved; 27 resolved within their exact scope.
 
 
 Scope limits:
@@ -2118,7 +2135,7 @@ Scope limits:
 - A coherent three-prime path lifts with free orientations exactly via the positive integral Heron defect and its incident-prime unit test. The squarefree part of that defect fixes the field.
 - Singular balanced six-cycles have a coherent-gcd upper tail below the trivial bound for G above B^(13/4), with B=2T. The T^2 budget holds for G>=B^(43/12).
 - Three complementary edge gcds force unit square congruences on actual continuation roots. This counts the singular T^2 sector at g_*>=B^(41/12), and at g_*>=B^(11/4+b/3) when the four-edge divisor product is at most B^b.
-- Mordell ray spaces now have a basis including the wild coordinate, pairwise variation and a full local-symbol reduction. The 5-23 block includes the cubic-character correction at 3; a wild-5 block and ten selected complete matrices have exact algebraic controls. Arbitrary-pair absolute constants and certified local descent data remain open. The comparison and local reduction have internal written-proof status, without independent replay, formal verification or external review. The cubic local descent now has a universal Hilbert-90 scalar formula and direct local certificate replay at R=145 and R=115, including every auxiliary prime; a validated arbitrary-parameter input generator remains open.
+- Mordell ray spaces have a complete tame-plus-wild basis, normalized pairwise variation and exact full local-symbol evaluation. MCT13 proves a terminating full-matrix algorithm for every admissible parameter, including the wild coordinate, without supplied norm witnesses. Practical quantitative bounds, a Frobenius-only rule with all reference constants evaluated and standard Weil-sign calibration remain open. MCT15-MCT16 independently realize every alternating block on 2r fixed tame coordinates by one moving inert prime; nonsingular targets give infinitely many curves with rank<=1 and dim Sha[3]>=2r. These are internal written proofs with finite exact arithmetic controls where specified, without independent replay, formal verification or external review.
 - Erdős #365: a coefficient-uniform cubic Thue application bounds the fixed (R_D,Q_D) fiber by O(d(R_D)d(Q_D)) without a unit or common-divisor height cap. It gives a summable critical logarithmic sector with a loglog saving and polynomial period counts on Q_D<=tau_D^B for each fixed B>0. The complementary weighted rate and unrestricted polynomial period count remain open.
 - Erdős #675: compatible safe assignments of square witnesses at all negative sites have joint modulus at least exp((2+o(1))*sqrt(N)). Their least positive CRT representatives remain uncontrolled; the actual return 2376 through 49 has modulus 44100. No lower exponent beyond Ho's c<25/72 is obtained.
 

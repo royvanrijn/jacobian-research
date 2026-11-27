@@ -131,6 +131,14 @@ under $x\mapsto -x$ have $W_1(A)=0$, which gives a common threshold of
 approximately $0.544498$. The displayed bound approaches zero when
 $W_1(A)$ approaches $W_1(T)$ from below.
 
+A uniform replacement by a relative higher-Hermite error is obstructed by
+[exactly balanced tail swaps](RELATIVE_HERMITE_TAIL_OBSTRUCTION.md).
+They have $\delta(A)=W_1(T)-W_1(A)>0$ tending to zero while
+$(W_2(A)-W_2(T))/\delta(A)$ is unbounded. Even at a fixed positive
+correlation, no positive uniform lower bound proportional to
+$\rho\delta(A)$ holds for all balanced partitions. A uniform interval of
+tetrahedral optimality remains a separate open question.
+
 ## Polynomial family and numerical comparison
 
 Index the classes by $s\in\{-1,1\}^3$ with $s_1s_2s_3=1$. For $j=1,2,3$,

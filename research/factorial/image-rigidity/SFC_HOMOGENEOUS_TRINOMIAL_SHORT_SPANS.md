@@ -2,8 +2,9 @@
 
 **Theorem.** A nonzero homogeneous bivariate trinomial whose exponent
 span in one row is at most 80 has a nonzero factorial moment among
-orders 1, 2 and 3 over every characteristic-zero field. The exact
-coefficient check includes every independent common translation.
+orders 1, 2 and 3 over every characteristic-zero field. The same holds
+at span 81 for middle offsets \(a\in\{1,2,40,80\}\). The exact
+coefficient checks include every independent common translation.
 
 Write the offsets as \((0,d),(a,d-a),(d,0)\), with integers \(0<a<d\),
 and the common translation as \((L,H)\). At order \(m\) strip the
@@ -410,6 +411,272 @@ factored implementation at orders two and three. Equation
 (13) and its multinomial proof, not this finite control,
 supply the unrestricted divisibility statement.
 
+## Removing harmless common components before eliminating the heights
+
+For a fixed integer support, let \(g=\gcd_{\mathbb Q[L,H]}(S,T)\),
+up to a nonzero rational scalar, and write \(S_0=S/g,T_0=T/g\).
+The following weaker target than a sign theorem suffices for direct
+height elimination:
+\[
+       g(L,H)\ne0\qquad\text{for every real }L,H\ge0.       \tag{EG1}
+\]
+Under (EG1), failed ordinary translations are exactly the nonnegative
+integer points of \(V(S_0,T_0)\). This variety is finite, and both
+height coordinates can be eliminated without an analytic cutoff.
+This is a conditional reduction; (EG1) is not proved for all supports.
+
+Here is an elementary finiteness proof, including coordinate factors.
+If a reduced polynomial is a nonzero constant there are no common
+zeros. Otherwise coprimality and Gauss's lemma give a Bezout identity
+over \(\mathbb Q(L)[H]\). Clearing its denominators produces
+\(0\ne U(L)\in(S_0,T_0)\). Interchanging the heights gives
+\(0\ne V(H)\in(S_0,T_0)\). Every common zero belongs to the finite
+Cartesian product of their root sets. Nonzero resultants, or generators
+of the two elimination ideals, supply such projection polynomials.
+This argument preserves pure-height factors and requires coprimality
+of the actual reduced pair, rather than two specializations.
+
+For integer translations, factor the two projection polynomials over
+\(\mathbb Q\), retain their nonnegative integer roots, and test their
+Cartesian product in both reduced equations at the same height pair.
+Apply the [reduced divisor sieve](SFC_ROW_TRANSLATION_DIVISOR_SIEVE.md#a-smaller-initial-window-divisor-integer)
+to those pairs, and check survivors in the original moment equations.
+Common leading-coefficient zeros can create extraneous resultant
+roots; independently finding two projection roots is not a common-zero
+certificate. The axes \(L=0,H=0\) remain included. A factor of \(g\)
+without a nonvanishing certificate must retain its entire zero set as
+an unresolved component; it cannot be discarded by this procedure.
+
+The finiteness step is ordinary elimination theory. In particular,
+[Gallet, Rahkooy and Zafeirakopoulos, Proposition 2.6](https://arxiv.org/html/1307.5330)
+separates the projected common-zero locus from the common
+leading-coefficient locus. [Liu and Sun's Theorem 2.6](https://doi.org/10.1017/S0004972719000546)
+assumes all positive moments vanish and does not supply the initial
+three-moment exclusion. Neither finite decidability nor general
+resultant elimination is claimed as new here. The practical question
+is whether this specific remainder pair admits short certificates.
+
+### Four exact span-81 gcds
+
+For \(d=81\), put \(b=81-a\), \(N=L+H+81\), and
+\[
+ \begin{split}
+ K^{\rm pair}_{a,81}={}&(L+1)_{81}^3(L+1)_a^4
+        \prod_{\substack{1\le j\le a\\j\text{ odd}}}(2L+j)
+        (H+1)_b^2(H+1)_{\max(b,40)},\\
+ E_a(L)={}&\prod_{j=a+1}^{40}(L+j),
+ \end{split}
+\]
+where an empty product is one. The exact gcd at each of
+\(a=1,2,40,80\), up to a nonzero rational scalar, is
+\[
+                    g=K^{\rm pair}_{a,81}N^3E_a(L).       \tag{EG2}
+\]
+Every displayed factor is strictly positive at nonnegative real
+heights. There are no additional common components in these four
+supports. No universal formula for the gcd is asserted.
+
+| Middle offset \(a\) | Extra factor \(E_a\) | Reduced total degrees \((S_0,T_0)\) | Reduced bidegrees \((S_0,T_0)\) |
+|---:|---|---|---|
+| 1 | \((L+2)_{39}\) | \((599,599)\) | \((281,320),(282,319)\) |
+| 2 | \((L+3)_{38}\) | \((599,599)\) | \((282,319),(284,317)\) |
+| 40 | \(1\) | \((580,580)\) | \((301,281),(341,241)\) |
+| 80 | \(1\) | \((481,481)\) | \((281,202),(361,122)\) |
+
+The [two-remainder checker](verify_sfc_trinomial_remainder_gcd.py)
+forms all seven projected coefficients over \(\mathbb Z[L,H]\),
+removes only exact polynomial factors, and factors the remaining gcd.
+It proves that nothing was missed by reducing the final primitive
+quotients modulo \(p=1000000007\): both total degrees are preserved
+and their modular gcd is one. Indeed, any nonconstant characteristic-zero
+common factor has a primitive integral representative. Degree
+preservation for each product forces degree preservation for that
+factor and its cofactors, so it would remain a nonconstant common
+factor modulo \(p\), a contradiction. This is an exact coprimality
+certificate, not an extrapolation from finitely many height values.
+
+In these four tests the reduced \(S_0\) also has nonnegative
+coefficients and a positive constant. Together with (EG2), this proves
+\(S>0\) on the entire nonnegative real quadrant and supplies the four
+additional supports in the opening theorem. Large-span eliminants
+are therefore unnecessary for their exclusion and were not computed.
+Their reduced degrees show why coprimality alone does not yet establish
+that full elimination will have a small certificate at every support.
+
+The checker also runs complete two-height elimination for the two
+oriented span-three supports. At \(a=1\) the integer projection
+sets are \(L\in\{1\},H\in\{0\}\); at \(a=2\) they are
+\(L\in\{0,1\},H\in\{0\}\). All three pairs are rejected
+by the original remainders. Six small support profiles are compared
+with an independent direct expansion of the moment forms. A genuine
+two-point common-zero control, a spurious degree-drop control, and
+an omitted-common-factor corruption control test the elimination
+and coprimality checks.
+
+The [receipt](sfc_trinomial_remainder_gcd_verification.json) records
+the exact factor products, reduced polynomial hashes, degrees,
+coefficient signs and finite controls. These are internal computations;
+independent replay, formal verification and external review are not
+claimed. Replay with Python 3.12.3 and python-flint 0.9.0:
+
+~~~sh
+.venv/bin/python research/factorial/image-rigidity/verify_sfc_trinomial_remainder_gcd.py --output research/factorial/image-rigidity/sfc_trinomial_remainder_gcd_verification.json
+~~~
+
+The unrestricted task is (EG1), or an admissible common factor
+contradicting it. For a support lacking an independent sign
+certificate, the next task after a harmless-gcd certificate is to
+compute its two projection polynomials and exclude every surviving
+integer height pair. No such unrestricted exclusion follows from
+the four span-81 controls.
+
+## An exact Laguerre expansion of the full resultant
+
+There is an exact discrete replacement for the Gaussian
+approximation at ordinary integer exponents. It controls
+the full quadratic–cubic resultant rather than the sign
+of one remainder. The coefficient assertion needed to
+finish this route is still open.
+
+Let \(\ell_n(x)=(-1)^nL_n(x)\) be the signed ordinary
+Laguerre polynomial. With exponential measure on the
+positive ray,
+\[
+ \int\ell_i\ell_j e^{-x}dx=\delta_{ij},\qquad
+ \frac{x^r}{r!}=\sum_{i=0}^r\binom ri\ell_i(x).
+ \tag{17}
+\]
+The cubic couplings are the nonnegative integers
+\[
+ \Lambda(i,j,k)=\int\ell_i\ell_j\ell_k e^{-x}dx,
+ \qquad
+ \sum_{i,j,k\ge0}\Lambda(i,j,k)u^iv^jw^k
+       =\frac1{1-uv-uw-vw-2uvw}.                          \tag{18}
+\]
+For example, \(\Lambda(1,1,1)=2\) and
+\(\Lambda(2,2,2)=10\). The generating function gives the
+positive recurrence
+\[
+ \Lambda(i,j,k)=\Lambda(i-1,j-1,k)+\Lambda(i-1,j,k-1)
+ +\Lambda(i,j-1,k-1)+2\Lambda(i-1,j-1,k-1),
+ \tag{19}
+\]
+with \(\Lambda(0,0,0)=1\), negative indices interpreted as
+zero, and (19) used away from the origin. This is the
+\(m=3,\alpha=0\) case of
+[Foata–Zeilberger, equation (1.8)](https://doi.org/10.1137/0401043).
+Its application is also obtained directly: the generating
+function of \(\ell_n\) is
+\((1+u)^{-1}\exp(xu/(1+u))\); integrate the product of
+three such functions. Two factors give \((1-uv)^{-1}\),
+proving the orthogonality in (17). The second identity in
+(17) follows by binomial inversion.
+
+For \((r_j,s_j)=(L,H+d),(L+a,H+b),(L+d,H)\), normalize
+\(\psi_j=x^{r_j}y^{s_j}/(r_j!s_j!)\). Its coefficient at
+\(\ell_i(x)\ell_k(y)\) is
+\(\binom{r_j}{i}\binom{s_j}{k}\), and its integral is one.
+Define the polynomial filter
+\(\mathcal T_z(\ell_i\ell_k)=z^{i+k}\ell_i\ell_k\), and put
+\[
+ u_z=\mathcal T_z(\psi_0-\psi_2),\qquad
+ v_z=\mathcal T_z(\psi_1-\psi_2).
+\]
+Their means vanish. Equations (17)–(19) give their exact
+quadratic and cubic moments by finite sums, with coupling
+\(\Lambda(i_1,i_2,i_3)\Lambda(k_1,k_2,k_3)\).
+Let \(\mathcal R_{L,H;a,d}(z)\in\mathbb Z[z]\) be the
+binary resultant of these two forms. Its degree is at
+most \(12N\), where \(N=L+H+d\). At \(z=1\), it is the
+resultant of the actual normalized first-plane moments.
+Thus \(\mathcal R(1)>0\) excludes the initial window over
+every characteristic-zero field.
+
+**Proposition.** Uniformly over all nonnegative integer
+\(L,H\) and positive integer gaps \(a,b\), with \(d=a+b\),
+write \(V=abd\) and \(J=3(L-H)+a-b\). Then
+\[
+ \begin{split}
+ \mathcal R(z)=V^6z^{18}\bigg[162+324Nz
+   +\bigg\{\frac{27}{2}(47N^2-74N-1)
+       +81(a^2+b^2+d^2)+240J^2\bigg\}z^2+O(z^3)\bigg].
+ \end{split}                                             \tag{20}
+\]
+All three displayed coefficients are strictly positive.
+For the third, use
+\(47N^2-74N-1=47(N-2)^2+114(N-2)+39\) and \(N\ge2\).
+
+Here is why (20) is an unrestricted finite polynomial
+identity. Every coefficient of \(z^n\) in the resultant
+is a polynomial of total parameter degree at most \(n\):
+each binomial coefficient has degree at most its index,
+which is exactly the assigned filter degree. When two
+column exponents coincide, replace their difference by
+the exponent difference times a divided difference.
+Scaling one of the two first-plane basis functions by
+that exponent difference scales the binary resultant
+by its sixth power. Hence every coefficient is divisible
+by \(a^6b^6d^6\). The three gap factors are pairwise
+relatively prime, so the coefficients below order eighteen
+vanish identically.
+
+The order-eighteen quotient is a constant. At
+\((L,H,a,d)=(0,0,1,2)\), direct calculation gives
+\[
+       \mathcal R(z)=2592z^{18}(1+z)^4(z^2+4),             \tag{21}
+\]
+fixing that constant at \(162\). For the next two
+coefficients, expand (18) and the binary resultant over
+\(\mathbb Q[L,H,a,b]\). The quadratic starts at filter
+order two, and the cubic starts at order four: its
+potential order-three term is proportional to
+\(\int(x-y)^3e^{-x-y}dxdy=0\). Therefore quadratic
+coefficients only through order eight and cubic
+coefficients only through order ten suffice for the
+complete resultant through order twenty. The
+[exact Laguerre checker](verify_sfc_trinomial_laguerre_resultant.py)
+performs precisely this bounded coefficient extraction
+and checks the two displayed polynomial formulas in
+(20). This is not interpolation from a span sample.
+
+The positive cubic coupling does not by itself settle
+the remainder or resultant signs. At the admissible
+profile \((L,H,a,d)=(3,0,3,4)\), the corresponding
+filtered signed remainder has \([z^{10}]S_z=-72576\).
+Nevertheless the full filtered resultant in that profile
+has nonnegative coefficients. The checker confirms full
+coefficient nonnegativity in six specified profiles
+(474 nonzero coefficients), compares their moments at
+\(z=1\) with direct factorial integration, and checks
+56 cubic couplings by direct polynomial integration.
+These are finite controls within the existing span range.
+
+An exact sufficient assertion for the complete initial
+integer-exponent family is
+\[
+ [z^n]\mathcal R_{L,H;a,d}(z)\ge0
+ \quad\text{for every integer }L,H\ge0,\ a,b\ge1,
+                  \quad n\ge21.                         \tag{22}
+\]
+Indeed (20) would then give \(\mathcal R(1)\ge162V^6>0\).
+Equation (22) has not been proved. It is an alternative
+route, not a consequence of nonnegative individual
+Laguerre couplings. The two-by-two rising-factorial
+positivity theorem in
+[Karp, Theorem 1](https://arxiv.org/abs/1203.1482)
+requires its specific Toeplitz expression and a strictly
+log-concave input sequence; no such representation of
+this resultant has been established. The higher-order
+coefficient assertion in Section 4 of that source is
+labelled Conjecture 4 there, so it is not an available
+proof input.
+
+Replay with Python 3.12.3, python-flint 0.9.0 and SymPy 1.14.0:
+
+~~~sh
+.venv/bin/python research/factorial/image-rigidity/verify_sfc_trinomial_laguerre_resultant.py
+~~~
+
 ## An all-order factor in the formal gap parameters
 
 Each reciprocal-height layer of \(Q_{a-1,b-1}\) is divisible,
@@ -799,6 +1066,32 @@ The exact mixed cubic moments must also be controlled, and
 the admissible gap restrictions must enter that argument.
 The coefficientwise gap inequalities (6) and the initial
 integer-support sign remain open.
+
+### The real-gap question with minimum spacing one
+
+The following stronger sign question remains open:
+\[
+ S_{\rm ang}(L,H;a,a+b)>0
+ \quad\text{for every real }L,H\ge0,\quad a,b\ge1.          \tag{17}
+\]
+It would imply the integer-support remainder sign, but is not
+implied by Gram positivity. The counterexamples (10)--(11)
+do not satisfy these spacing hypotheses. At (10), both gaps
+are \(1/2\); at (11), the second gap is \(1/2\).
+
+The exact Beta checker certifies positivity at the 45 profiles
+\[
+ (a,b)\in\{1,3/2,2\}^2\setminus\{1,2\}^2,
+ \qquad (L,H)\in\{0,1,19\}^2.
+\]
+All the integrals lie in \(\mathbb Q(\pi)\); the same rational
+Machin intervals used for the negative controls certify these
+positive signs. This is finite evidence, including both orientations
+and heights near the known fractional obstruction. It supplies
+no sign proof between the tested points or for unbounded parameters.
+A proof of (17), or a certified witness with both gaps at least one,
+is still needed. No assertion of SFC failure follows merely from
+a negative remainder.
 
 For the alternative translation route, the
 [initial fractional-face theorem](SFC_ROW_TRANSLATION_DIVISOR_SIEVE.md#initial-windows-with-arbitrary-deleted-rows)

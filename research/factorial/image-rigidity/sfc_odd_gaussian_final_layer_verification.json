@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "scope": "finite exact controls of the written final-layer theorem; not an all-order experiment",
+  "cases": [
+    {
+      "k": 2,
+      "prime": 13,
+      "exponent": 1,
+      "start": 65,
+      "delta": "6/13",
+      "leading_residue_gcd": [
+        11,
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "5/13",
+      "character": -1
+    },
+    {
+      "k": 2,
+      "prime": 13,
+      "exponent": 2,
+      "start": 845,
+      "delta": "7/13",
+      "leading_residue_gcd": [
+        11,
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "64/169",
+      "character": -1
+    },
+    {
+      "k": 2,
+      "prime": 13,
+      "exponent": 3,
+      "start": 10985,
+      "delta": "7/13",
+      "leading_residue_gcd": [
+        11,
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "3859/4394",
+      "character": -1
+    },
+    {
+      "k": 2,
+      "prime": 13,
+      "exponent": 4,
+      "start": 142805,
+      "delta": "7/13",
+      "leading_residue_gcd": [
+        11,
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "39363/28561",
+      "character": -1
+    },
+    {
+      "k": 3,
+      "prime": 37,
+      "exponent": 1,
+      "start": 259,
+      "delta": "18/37",
+      "leading_residue_gcd": [
+        33,
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "17/37",
+      "character": -1
+    },
+    {
+      "k": 3,
+      "prime": 37,
+      "exponent": 2,
+      "start": 9583,
+      "delta": "19/37",
+      "leading_residue_gcd": [
+        33,
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "628/1369",
+      "character": -1
+    },
+    {
+      "k": 4,
+      "prime": 89,
+      "exponent": 1,
+      "start": 801,
+      "delta": "44/89",
+      "leading_residue_gcd": [
+        25,
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "43/89",
+      "character": 1
+    },
+    {
+      "k": 4,
+      "prime": 89,
+      "exponent": 2,
+      "start": 71289,
+      "delta": "45/89",
+      "leading_residue_gcd": [
+        25,
+        1
+      ],
+      "compatibility_gcd": [
+        25,
+        1
+      ],
+      "perturbation_margin": "3826/7921",
+      "character": 1
+    },
+    {
+      "k": 1,
+      "prime": 7,
+      "exponent": 2,
+      "start": 147,
+      "delta": "4/7",
+      "leading_residue_gcd": [
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "13/49",
+      "character": 1
+    },
+    {
+      "k": 2,
+      "prime": 11,
+      "exponent": 2,
+      "start": 605,
+      "delta": "6/11",
+      "leading_residue_gcd": [
+        1
+      ],
+      "compatibility_gcd": [
+        1
+      ],
+      "perturbation_margin": "43/121",
+      "character": -1
+    }
+  ],
+  "straightening_remainder_coefficients": 6948,
+  "exact_13_certificate": "254/45 = 12 modulo 13; incompatible lift corrections 9 and 4",
+  "exact_wronskian": "90*(B'*A-A'*B)=(Z-2)^2+13*(Z+2)",
+  "retained_residue_control": "q=9*89^e, e>=2: common residue survives this first compatibility layer",
+  "corruption_control": "incorrect positive inter-row phase at p=13 rejected by exact coefficient residues",
+  "assurance": "internal replay; no independent review or formal verification"
+}
