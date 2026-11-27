@@ -16,7 +16,11 @@ the following cases.
   with all other degrees distinct, and \(I\) contains an even order.
 - There are three bivariate columns of the same degree and \(I\)
   consists of three consecutive orders starting at any even
-  order or at an odd order from one through 155.
+  order or at an odd start covered by the
+  [odd-start Gaussian theorem](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md).
+  This includes every odd start through \(12001\) and every
+  \(q=(2k+1)p^e\), with \(k\ge0,e\ge1\) and odd prime
+  \(p>4k+2\), without a character or resultant restriction.
 
 In two variables, for each fixed offset support and order set in
 this theorem, one can decide by finitely many exact calculations
@@ -177,7 +181,9 @@ which is impossible by isolation and the presence of an even
 order. If \(C\ne0\), dividing by \(C\) gives the
 [quadratic Gaussian gate at even starts](SFC_COLLINEAR_TERNARY_EVEN_START_AND_DYADIC_REDUCTION.md)
 or the
-[verified odd-start gates](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md#4-a-verified-prefix-of-odd-windows).
+[proved odd-start gates](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md),
+including the complete
+[dominant initial-prime family](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md#7-large-prime-powers-dividing-the-initial-order).
 Those results exclude the common moment zero. This works for
 independent heights since the Taylor and cumulant bounds hold
 throughout the positive corner, with no fixed direction.

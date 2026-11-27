@@ -1573,8 +1573,10 @@ rational nonzero point. The Kummer exact sequence therefore gives
 This is a written consequence of MS1, MCT3, MCT4, the joint group
 argument and Chebotarev. It requires no large norm certificate or
 use of MCT13 to establish existence. It realizes the fixed block;
-the row involving \(q\) is not prescribed. The result does not
-give exact rank one or determine the entire 3-primary group.
+the row involving \(q\) is not prescribed. MCT19 below sharpens
+these bounds to the full primary and every finite 3-power Selmer
+group. Rational rank one remains conditional on identifying the
+single divisible direction with a rational point.
 The governing-group method is adapted from Wu–Zhu; unbounded
 \(\Sha[3]\) in other families is already known. The scope here
 is this inert-prime family with one moving prime and simultaneous
@@ -1653,6 +1655,8 @@ If the fixed block at this \(q\) is nonsingular, then
  \Sha(E_R)[3^\infty]\cong(\mathbf Z/3\mathbf Z)^{2r}.      \tag{45}
 \]
 No finiteness assumption on \(\Sha\) is needed for this implication.
+At every nonsingular member, the full primary and all finite
+3-power Selmer groups are given by (50) below.
 
 Proof. Every prime dividing \(C\) satisfies \((6/p)=1\),
 so the quadratic congruence in (43) has roots modulo every such
@@ -1725,6 +1729,8 @@ In particular, \(t=18\) gives \(R=8172455\) and
  \qquad \Sha(E_R)[3^\infty]\cong(\mathbf Z/3\mathbf Z)^2.
 \]
 The other three nonzero controls have the same rank and group.
+For these four curves, (50) also gives every higher Selmer group
+with \(r=1\).
 The zero control supplies a rational point but this block does
 not determine its rank or 3-primary group.
 All exact points, the norm, symbols in all four embeddings and
@@ -1735,7 +1741,7 @@ and checked by
 Three deliberately corrupted certificates are rejected. This is
 an internal replay, not an infinitude argument or independent review.
 
-### The full Selmer corank and the remaining infinite step
+### The full Selmer group and the remaining infinite step
 
 **Proposition MCT19 (3-primary dichotomy at a nonsingular target).**
 For every nonsingular-target curve of MCT16, put
@@ -1815,7 +1821,11 @@ Taking \(3^n\)-torsion of the first group in (50) proves the second.
 Thus the abstract groups at all higher descent levels are the same
 in the rank-one and rank-zero/divisible alternatives.
 
-There are two precise routes to an infinite exact-rank-one result.
+The outstanding issue is whether the unique divisible direction in
+(50) comes from a rational point or divisible \(\Sha\). The
+immediate source-review priority is the ramified-CM converse; it
+would settle every nonsingular target. The point construction
+supplies a separate sufficient infinitude route.
 
 * **Point route.** Prove that, for every \(r\), some progression
   of \(a\)'s in (43) gives infinitely many primes for which the
@@ -1841,6 +1851,8 @@ There are two precise routes to an infinite exact-rank-one result.
   (49), including this additive prime. Assuming that converse,
   every nonsingular MCT16 target has analytic and rational rank
   one, finite \(\Sha\), and group (45).
+  Together with MCT16, this would give infinitely many such curves
+  for every \(r\ge1\).
 
 The retained Kriz source was inspected for the exact statement,
 the terminal proof of Theorem 10.13 and its dependence on

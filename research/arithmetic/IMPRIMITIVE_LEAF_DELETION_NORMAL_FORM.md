@@ -263,6 +263,16 @@ higher-degree orbit distinction. In the previously classified
 higher cases, an input with only symmetric deletions can still
 lie in the orbit of (2).
 
+For the residual range \(N=2r+1\ge15\), the equivalent removable-factor
+route is now organized by
+[global terminal-mass minima](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent).
+Theorem 10 and Corollary 11 there impose simultaneous complementary cyclic
+covers, \(3m\ge N-4\), and equal terminal sizes or a singleton at every
+minimizer of a hypothetical positive-minimum orbit. These necessary
+conditions leave a full-alternating compatibility problem. In particular
+a singleton terminal in such a cut is a leaf, but does not imply an
+imprimitive deletion or membership in the normal-form locus.
+
 ## Exact verification
 
 The [checker](verify_imprimitive_leaf_normal_form.py) implements

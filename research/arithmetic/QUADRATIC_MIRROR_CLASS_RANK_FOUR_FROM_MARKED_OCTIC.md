@@ -18,6 +18,16 @@ conductors \(28D^2,252D^2,126D^2\), and
 at most \(X\). The real bound is three; a bound of four
 on both sides remains open.
 
+The subsequent [torsion calculation](MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md)
+exhausts the rational cubic directions on this cover.
+The [scale classification](MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md)
+leaves two inequivalent covers when the fourth marking
+is also a local cube above three. Both have exactly
+four rational cubic directions. The remaining
+rank-four question is arithmetic: separate the four
+marked classes from the unit line, or construct a
+fifth virtual class by another method.
+
 ## A second marked octic
 
 **Theorem MO1.** Put
@@ -439,18 +449,52 @@ The more precise
 now shows that \(P_c(\mathbb Q)[3]\) has rank exactly
 four for every nonzero rational scaling \(c\), and that
 these are all the rational \(3\)-torsion classes of the
-full Jacobian for \(c=3/7\). Consequently another
-rational norm function whose divisor is divisible by
-three on this fixed cover cannot supply a fifth
+full Jacobian for every \(c\in\mathbb Q^\times\).
+Consequently another rational norm function whose divisor
+is divisible by three on any of these covers cannot supply a fifth
 independent direction. CK2 uses smaller quotient
 Jacobians and exact finite-group witnesses, beyond a
 bound from the genus-eleven characteristic polynomial
 alone. The associated checker has been replayed internally;
 this is not independent or external review.
 
+The restriction is stronger for a fixed rational function
+on this cover: [CK5](MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md#virtuality-on-a-positive-proportion-of-parameters)
+allows an additional independent virtual class at only
+\(o(H^2)\) rational parameters of height at most \(H\).
+For any fixed finite list of functions,
+[VB4](QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md#applications-to-the-existing-field-counts)
+improves the exceptional parameter count to
+\(O(H^{3/2}\log H)\). At the construction height
+\(H=O(X^{1/24})\) of MO4, this accounts for at most
+\(O(X^{1/16}\log X)\) exceptional fields. These bounds
+concern the specified witnesses, not all representations
+of fields of discriminant at most \(X\).
+
+Changing the cubic scale also cannot add a generic
+direction. [BS2–BS4](MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md#the-allowable-cube-classes-and-the-cover-isomorphisms)
+classify twelve virtual scales, of which precisely
+\(49,147,14,42\) allow the fourth marking to be a local
+cube above three. Their reciprocal pairs give two
+inequivalent covers. CK2 gives rational \(3\)-rank exactly
+four for the full Jacobian at every nonzero rational
+scale, including all twelve virtual scales. BS4 gives split slices
+with the same class-rank lower bounds and field-count
+exponent as MO3–MO4, and twist conductors
+\(1540D^2,13860D^2,6930D^2\). These slices are distinct
+from MO3 by their splitting at \(5,11\); no disjointness
+between the two inequivalent covers' field sets is asserted.
+
 A fifth arithmetic virtual class would therefore need
-a different construction or specialization argument.
-The unit-line route in MO7 remains open. Independently,
+a construction on a thinner parameter set, field-dependent
+input, or a different cover. Combining the markings of
+the two inequivalent covers in common quadratic fields
+is a possible route, but neither the necessary infinitude
+of common fields nor extra independence is proved.
+The unit-line route in MO7 is the priority for the existing
+marked family: a fifth direction from any fixed finite
+list cannot improve its established field-count scale.
+Independently,
 MO5 already excludes another direction from repeating
 its two-boundary-fibre construction.
 
@@ -488,6 +532,11 @@ one-dimensional \(U\), whereas it vanishes on \(W\).
 Hence \(W\cap U=0\). Five independent virtual classes
 lose at most one dimension in the same exact sequence.
 
+The concrete remaining target is unit-line separation,
+with the sufficient local condition directing attention
+to fundamental units and their three-adic regulators.
+The local cube conditions on the markings do not
+establish that condition on the fundamental unit.
 The exact sequence proves these sufficient implications,
 not the fundamental-unit condition or the fifth class
 on any infinite subfamily. Establishing either route

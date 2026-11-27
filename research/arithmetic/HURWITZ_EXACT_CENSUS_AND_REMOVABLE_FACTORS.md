@@ -482,6 +482,18 @@ obligation in the pure domain remains
 \(\texttt{GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE}\).
 [Marked subgroup and braid action](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md#the-spaces-and-the-exact-marked-subgroup)
 
+For the pure domain, a separate
+[orbit-minimum reduction](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
+gives necessary structure for an orbit missing that locus: its positive
+minimum terminal mass satisfies \(3m\ge N-4\), and for \(N\ge15\)
+every minimizing factor has equal terminal sizes or a singleton.
+The complementary cyclic covers and shared terminal matching of
+[Theorem 10](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-10-cyclic-compatibility-excludes-closed-terminal-trees)
+must hold simultaneously. These are structural restrictions on a missing
+orbit, not a lower bound for its size or a replacement for the still-open
+every-orbit assertion. They are proved for pure DT trees; no corresponding
+restriction for the marked mixed or even Laurent domain is asserted here.
+
 ## The even alternating Laurent passport
 
 Let \(n=2b\ge10\). Fix an \((n-1)\)-cycle with one fixed sheet

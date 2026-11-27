@@ -215,7 +215,13 @@ virtual cubic class. In particular the bound is
 smaller than the established distinct-field lower
 counts at their construction heights.
 
-The first row is CK3. In the even sextic of SL1
+The first row is CK3. More generally, for every fixed
+\(c\in\mathbb Q^\times\), CK2–CK3 give the same
+four-direction exhaustion on \(R^2=F(cu^3)\), and VB2
+gives the same exceptional-parameter bound, with a
+constant allowed to depend on \(c\). The field-count
+comparisons here use the displayed established families.
+In the even sextic of SL1
 the degree-two maps to the two elliptic quotients
 are the two signs for \(t\mapsto-t\). As in CK2,
 diagonal push-pull is two and off-diagonal

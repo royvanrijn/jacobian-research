@@ -266,6 +266,14 @@ of its Hurwitz component, and no braid word identifying an unspecified
 algebraic polynomial with a particular tuple. Connectivity in degree
 sixteen and uniform connectivity remain open.
 
+For the residual pure-DT polynomial problem on \(N\ge15\) sheets,
+the [global compatibility restrictions](TERMINAL_MASS_HURWITZ_DESCENT.md#corollary-11-positive-minima-have-restricted-mass-and-terminal-sizes)
+force a hypothetical positive orbit minimum to satisfy \(3m\ge N-4\),
+with equal terminal sizes or a singleton at a minimizing factor.
+Full alternating monodromy has not yet been shown to contradict these
+remaining cases. These restrictions neither extend the finite census above
+nor resolve the separate mixed polynomial problem needed for degree sixteen.
+
 ## Evidence
 
 The [foreground census record](degree_fourteen_hurwitz_census_inputs.json)

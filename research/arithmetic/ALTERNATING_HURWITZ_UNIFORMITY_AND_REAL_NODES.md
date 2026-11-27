@@ -506,3 +506,12 @@ The [unmarked reduction](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md) now
 supplies uniform marking and attachment control, leaving two unmarked
 polynomial connectivity assertions as a sufficient all-degree criterion.
 
+On the pure-DT side, the
+[global terminal-mass restrictions](TERMINAL_MASS_HURWITZ_DESCENT.md#corollary-11-positive-minima-have-restricted-mass-and-terminal-sizes)
+now force \(3m\ge N-4\) at a positive orbit minimum and equal terminal
+sizes or a singleton for \(N\ge15\). The missing step is a contradiction
+between the common complementary cyclic covers and full alternating
+monodromy in these two cases. Isolated local weight witnesses do not supply
+global compatibility. Pure-DT extraction, mixed connectivity and the
+original degree-sixteen classification remain open.
+

@@ -47,7 +47,10 @@ For a consecutive window starting at \(N\), the order assigned
 to the first row of the triple is \(N+s_{\rm low}\), where
 \(s_{\rm low}\) is the number of lower-degree offsets.
 The theorem applies at every prescribed start for which that
-number is even, and at any odd value through 155. The only
+number is even or is an odd assigned start covered in Section 4.
+These include all odd values through \(12001\) and all dominant
+initial-prime values \((2k+1)p^e\) with \(p>4k+2\).
+The only
 required separations are at the boundaries of the triple.
 The threshold may depend on the prescribed orders and on
 the internal degree differences of the other clusters.
@@ -218,8 +221,14 @@ since a window of its size contains at least as many
 even orders as there are pairs. A homogeneous tripled
 class satisfies (1) at every even assigned start by the
 [even-start quadratic Gaussian theorem](SFC_COLLINEAR_TERNARY_EVEN_START_AND_DYADIC_REDUCTION.md#even-orders-and-distinct-valuations),
-and at each odd assigned start through 155 by the
-[exact odd-start certificates](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md#4-a-verified-prefix-of-odd-windows).
+and at each odd assigned start covered by the
+[odd-start Gaussian theorem](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md).
+In particular, this covers every odd assigned start through
+\(12001\) and every \(q=(2k+1)p^e\), \(k\ge0,e\ge1\),
+with odd prime \(p>4k+2\). The two-secondary-layer theorem
+removes all character and resultant restrictions in that family,
+including every \(q=9\cdot89^e\). These conditions concern the
+start assigned to the triple, not necessarily the full window's start.
 This proves the stated example with a triple surrounded
 by classes of size at most two. Several separated tripled
 classes are allowed if each has a certified assigned window.

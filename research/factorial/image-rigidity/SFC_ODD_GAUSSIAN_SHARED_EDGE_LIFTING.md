@@ -3,7 +3,7 @@
 The quadratic Gaussian window is zero-free at **every odd prime-power
 start**. More generally, the dominant initial prime-power theorem in
 [the odd-start note, Section 7](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md#7-large-prime-powers-dividing-the-initial-order)
-does not need a quadratic-character restriction on the prime.
+does not need a quadratic-character or final-resultant restriction.
 
 Retain the same prospective root in the two unit-order equations.
 Their leading binomials can coincide. A short polynomial combination
@@ -40,18 +40,18 @@ note. A hypothetical algebraic zero, embedded in
  \qquad v(h)\ge b=e/2-L/2,\quad L=\sum_{j=1}^e p^{-j}.       \tag{1}
 \]
 The even-order polygon forces \(v(x)<v(h)\). The two unit-order
-pure Hermite equations have distinct first slopes. Their final common
-slope, when \(k>0\), is excluded by \(p\nmid T_k\). The remaining
-possible common valuations are
+pure Hermite equations have distinct first slopes. The final shared
+slope, when \(k>0\), is treated separately by the final-residue
+refinement, including when \(p\mid T_k\). Here the possible
+internal common valuations are
 \[
  \alpha=\frac{J+1}{2J(p-1)},\qquad J=p^a,\quad1\le a<e.       \tag{2}
 \]
 A quadratic nonresidue \(2\) already separates their leading
 binomials. The case requiring a new argument therefore has
 \(e\ge2,(2/p)=1\), and \(p\ge7\). The preceding reduction and
-the optional final-slope resultant test are unchanged inputs to
-the earlier shortcut; the final-residue refinement now closes
-that slope even when the resultant vanishes modulo \(p\).
+the optional final-slope resultant shortcut are retained. The
+internal-edge argument below does not use a final-slope exclusion.
 
 Put \(N=(q+1)/2\). The normalized pure even and odd polynomials are
 \[
@@ -200,12 +200,14 @@ excluded, proving the prime-power window theorem.
 ## 5. Example, evidence and remaining scope
 
 **Factorial consequence.** For every fixed homogeneous bivariate
-trinomial support and every start covered by the prime-power window
-theorem, its factorial moments at \(q,q+1,q+2\) cannot all vanish
+trinomial support and every \(q=(2k+1)p^e\), \(k\ge0,e\ge1\),
+with odd prime \(p>4k+2\), its factorial moments at
+\(q,q+1,q+2\) cannot all vanish
 once both common heights exceed a computable support- and
 start-dependent threshold. This follows from the
 [exact Gaussian transfer](SFC_BIVARIATE_TRANSLATION_GAUSSIAN_JETS.md#1-exact-graded-normalization).
-It includes all odd prime-power starts and makes no assertion of a
+It includes all odd prime-power starts and every \(9\cdot89^e\),
+and makes no assertion of a
 cutoff uniform over starts or supports.
 
 At start \(49\), prime \(7\), the shared valuation is

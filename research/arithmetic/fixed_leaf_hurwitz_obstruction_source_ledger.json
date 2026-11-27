@@ -30,7 +30,7 @@
     },
     {
       "path": "research/arithmetic/PAIRED_HURWITZ_LEAF_EXTRACTION.md",
-      "sha256": "df40145e7aa8e1fa759573d1caaae312cca4442ab2b80cfed835fb2f50998952",
+      "sha256": "1c1230cec6cec05630d807acf582f213aaf71d91142adde147e8ba6625baa8aa",
       "locator": "Tree graph and leaf terminology; local strategy frontier",
       "role": "Context for the failure of restricting elementary paths to preserve a chosen sheet leaf."
     },

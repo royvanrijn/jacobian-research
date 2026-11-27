@@ -27,6 +27,13 @@ independent height failures of the prescribed window lie on
 finitely many computable horizontal or vertical fibers.
 The exact resultant test on those fibers gives a finite decision.
 
+For homogeneous trinomial offsets this applies at every even start,
+every odd start through \(12001\), and every other odd start in the
+[proved Gaussian domain](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md).
+The domain includes every \(q=(2k+1)p^e\), \(k\ge0,e\ge1\),
+with odd prime \(p>4k+2\), including all \(9\cdot89^e\).
+The corner cutoff remains support- and start-dependent.
+
 At a Gaussian zero where the projective Jacobian has rank \(s-1\),
 the first perturbation gives an additional lifting condition.
 For a homogeneous support of size \(s\), at a simple Gaussian
@@ -217,5 +224,6 @@ zero necessarily has degree two by
 for the lower-degree possibilities. The first lifting test
 therefore applies to hypothetical odd-window roots of the
 [quadratic Gaussian gate](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md)
-that satisfy the rank and scalar tests. In the equal-ratio
+outside the proved zero-free domain that satisfy the rank and
+scalar tests. In the equal-ratio
 direction (5) leaves a higher-order problem.

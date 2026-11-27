@@ -11,6 +11,17 @@ of the cubic base change and expresses the rational
 \(3\)-torsion in terms of divisibility of ramification-point
 differences on the original Jacobian.
 
+Both the full-Jacobian and Prym assertions hold for
+every nonzero rational scale. Chebotarev repeats the
+two checked actions on three-torsion at primes away
+from any fixed scale, removing restrictions at the
+original certificate primes. In particular,
+[BS2–BS4](MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md#the-allowable-cube-classes-and-the-cover-isomorphisms)
+classify the scales allowed by virtuality of the fourth
+mark. Changing scale supplies no fifth generic direction.
+The four scales also allowing local cubes above three give two
+inequivalent covers, each with rational \(3\)-rank four.
+
 ## A ramification divisor criterion for the cubic Prym
 
 **Proposition CK1.** Let \(C\) be a smooth projective
@@ -114,16 +125,14 @@ and let \(C_c:R^2=F(cu^3)\) for \(c\in\mathbb Q^\times\).
 For every \(c\) its norm kernel \(P_c\) over
 \(C:R^2=F(t)\) has
 \[
- P_c(\mathbb Q)[3]
+ \operatorname{Jac}(C_c)(\mathbb Q)[3]=P_c(\mathbb Q)[3]
     =\pi^*J(\mathbb Q)[3]\oplus
        \langle[2B_{3,c}]\rangle
     \simeq(\mathbb Z/3)^4 ,
 \]
 using the boundary divisor \(B_{3,c}\) of
 [MO5](QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md).
-If \(v_{83}(c)\) and \(v_{137}(c)\) are divisible by three,
-the same group is all of \(\operatorname{Jac}(C_c)(\mathbb Q)[3]\).
-This includes \(c=3/7\).
+There are no local restrictions on \(c\).
 
 To apply CK1, the four ramification points are
 \(P_0^\pm,P_\infty^\pm\) in MO5.
@@ -170,13 +179,13 @@ pullbacks is an isogeny with kernel killed by two. It
 identifies the rational \(3\)-torsion with the direct
 sum of that of the two factors.
 
-At either \(p=83,137\), every unit of \(\mathbb Q_p\)
-is a cube because \(p\equiv2\bmod3\). When \(v_p(c)\)
-is divisible by three, scaling \(u\) gives the equation
-with \(c=3/7\) over \(\mathbb Q_p\), compatibly with
-both involutions. The following good reductions of
-these models give the bounds. Prime-to-\(p\) torsion
-specializes injectively. See
+First fix \(c_0=3/7\). The following good reductions
+of its quotient models give bounds on their rational
+three-torsion. Prime-to-\(p\) torsion specializes
+injectively, and reduction identifies the geometric
+three-torsion with that of the special fiber, respecting
+the unramified Frobenius action. For the reduction
+injection see
 [Müller–Reitsma, Section 1.1](sources/muller-reitsma-genus-three-torsion-2211.03372v4.pdf).
 
 | factor | \(p\) | Jacobian order | affine points giving order-nine witnesses |
@@ -200,19 +209,66 @@ and an element of order nine has \(3\)-rank at most
 two. In the second row the independent triples imply
 that the two order-nine points generate a subgroup
 of order \(81\), exhausting the \(3\)-primary subgroup.
-Thus the rational ranks of both factors are at most two.
-The Prym already supplies four independent points.
+Thus the three-torsion fixed by Frobenius at \(83\)
+on \(\operatorname{Jac}(A_{c_0})[3]\), and at \(137\)
+on \(\operatorname{Jac}(B_{c_0})[3]\), has dimension
+at most two in each case.
+
+To transport each bound, let \((J_0,p_0)\) be either
+\((\operatorname{Jac}(A_{c_0}),83)\) or
+\((\operatorname{Jac}(B_{c_0}),137)\), and put
+\(L=\mathbb Q(J_0[3],\mu_3)\). This is a finite Galois
+extension unramified at \(p_0\): multiplication by three
+on the abelian scheme of good reduction has finite
+étale kernel, since \(p_0\ne3\). Its geometric fibers
+identify the three-torsion and its Frobenius action.
+Let \(\gamma\) be its
+Frobenius conjugacy class at \(p_0\). By
+[Lenstra, Theorem 3.1](sources/lenstra-chebotarev-density-notes.pdf),
+infinitely many primes have Frobenius class \(\gamma\).
+Its restriction to \(\mathbb Q(\mu_3)\) is nontrivial,
+so all these primes satisfy \(p\equiv2\bmod3\).
+Conjugate actions on \(J_0[3]\) have the same fixed-space
+dimension. At every such good prime the reduced
+Jacobian therefore has three-torsion rank at most two.
+Only this mod-three action is transported; the full
+group order need not agree with the certificate row.
+
+For any fixed \(c\in\mathbb Q^\times\), choose such a
+prime away from \(3,7\), the bad reduction primes and
+the numerator and denominator of \(c\). Then
+\(c/c_0\) is a \(p\)-adic unit. Cubing is bijective
+on \(\mathbb F_p^\times\), and Hensel's lemma lifts
+each cube root uniquely to a unit of \(\mathbb Q_p\).
+Write \(d^3=c/c_0\). The map
+\((u,R)\mapsto(du,R)\) identifies \(C_c\) with
+\(C_{c_0}\) over \(\mathbb Q_p\), compatibly with
+both involutions. On the quotients it gives
+\((v,Z)\mapsto(d^2v,Z)\) for \(A_c\), and
+\((v,Z)\mapsto(d^2v,dZ)\) for \(B_c\).
+Consequently the corresponding Jacobian for \(c\)
+has good reduction and rational three-torsion rank at
+most two. The primes for the two factors may be
+chosen separately. Their direct sum bounds the full
+rational three-torsion rank by four for every \(c\).
+The Prym already supplies four independent points,
+giving equality.
 
 The [exact checker](verify_marked_cubic_base_change_rational_torsion.py)
 uses SageMath 10.9 to check squarefreeness, recompute
 the two Frobenius polynomials, and verify the order-nine
 divisors and the elliptic boundary reduction. The proof
 uses the finite group structures as well as the orders.
+An internal replay with SageMath 10.9 verified these
+certificates unchanged for the unrestricted-scale
+deduction. Chebotarev transport is the written argument
+above, not a computation of torsion fields or an
+independent mathematical review.
 
 ## Consequence for cubic norm functions
 
-**Corollary CK3.** Under the two local conditions on \(c\)
-in CK2, let \(a\in\mathbb Q(C_c)^\times\) have all divisor
+**Corollary CK3.** For every \(c\in\mathbb Q^\times\),
+let \(a\in\mathbb Q(C_c)^\times\) have all divisor
 multiplicities divisible by three and quadratic norm
 \(a\bar a\in\mathbb Q(u)^{\times3}\).
 Modulo cubes in \(\mathbb Q(C_c)^\times\), \(a\) lies
@@ -341,7 +397,7 @@ an equation for the Cartier divisor. Pulling back gives
 the required divisibility whenever \(a_s\) is defined
 and nonzero.
 
-**Corollary CK5.** For the values of \(c\) in CK2,
+**Corollary CK5.** For every fixed \(c\in\mathbb Q^\times\),
 a fixed function \(a\in\mathbb Q(C_c)^\times\) can
 supply a fifth independent virtual cubic class at only
 \(o(H^2)\) rational parameters of height at most \(H\).
@@ -372,4 +428,10 @@ theorem and primitive lattice point count give
 The bound in (3) is in parameter height. It leaves open
 which virtual classes can occur on thinner parameter
 sets or after selecting new functions separately for
-each field.
+each field. The sharper
+[VB4 bound](QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md#applications-to-the-existing-field-counts)
+is \(O(H^{3/2}\log H)\) for any fixed finite list of
+functions, giving \(O(X^{1/16}\log X)\) exceptional
+fields through the height-bounded witnesses in MO4.
+It gives no upper count for extra classes obtained
+from witnesses of unrestricted height.

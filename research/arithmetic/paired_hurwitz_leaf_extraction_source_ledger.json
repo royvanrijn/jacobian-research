@@ -36,7 +36,7 @@
   "inputs": [
     {
       "path": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
-      "sha256": "806a421b8e2ff6081623dc4b7f7f628aaf36fcbf1446396e1d55ebb840d13c1e",
+      "sha256": "b7dfa9857d820da3a53b8b3e68a9f4db3e686a3cd3cc22fea82b2be04d955f86",
       "locator": "Theorem2",
       "role": "Uniform cyclic tuple; full A_n follows by an explicit3-cycle, primitivity and Jordan."
     },
@@ -58,7 +58,7 @@
     "receipt": "research/arithmetic/paired_hurwitz_leaf_extraction_verification.json",
     "scope": "Exact extraction and block evacuation; cyclic controls through r50; all72 allowed external anchors; marked T window; paired blocker; complete degree7 domain392 and its group orders; overlap gate and exchange for all294 full A7 inputs; all5985 even-intersection DT pair updates; higher-degree deterministic gate controls."
   },
-  "remaining_frontier": "Use the arbitrary-input overlap-one gate and local exchanges to extract two exclusive leaves, then control all lower-degree extensions. No uniform connectivity theorem or new full-alternating orbit distinction.",
+  "remaining_frontier": "The canonical component now has full two-leaf attachment absorption, and degree-thirteen polynomial connectivity is settled. For the residual pure-DT extraction problem in N>=15, use full alternating monodromy to contradict the simultaneous complementary cyclic covers at a positive global orbit minimum with equal terminal sizes or a singleton. The overlap-one gate does not yet force such a contradiction. Mixed connectivity remains separate.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

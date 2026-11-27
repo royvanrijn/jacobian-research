@@ -30,7 +30,7 @@
     },
     {
       "path": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
-      "sha256": "806a421b8e2ff6081623dc4b7f7f628aaf36fcbf1446396e1d55ebb840d13c1e",
+      "sha256": "b7dfa9857d820da3a53b8b3e68a9f4db3e686a3cd3cc22fea82b2be04d955f86",
       "locator": "Theorem4 and central full-twist discussion",
       "role": "Conjugation by the centralizer of a full product cycle is realized by braid moves."
     },
@@ -58,7 +58,7 @@
     "receipt": "research/arithmetic/imprimitive_leaf_normal_form_verification.json",
     "scope": "Complete degree7 domain392 and all1134 leaf choices; actual normalization of all126 imprimitive inputs and common literal endpoints; all3072 ordered/twisted four-block controls with fixed root0/attachment3; deterministic arbitrary-label higher controls through r50; exact recursive and3-cycle identities."
   },
-  "remaining_frontier": "Whether every full-alternating DT orbit reaches an imprimitive-deletion representative. Full symmetric-deletion inputs exist, including an entire degree7 full-A7 orbit. No new higher-degree orbit distinction or uniform connectivity theorem.",
+  "remaining_frontier": "Whether every residual full-alternating DT orbit reaches an imprimitive-deletion representative remains open. The equivalent removable-factor route has global minimum constraints 3m>=N-4 and, for N>=15, equal terminal sizes or a singleton, subject to one common complementary cyclic development. A singleton cut does not establish an imprimitive deletion. Symmetric-deletion inputs, including the degree-seven boundary orbit, retain their stated scope.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,

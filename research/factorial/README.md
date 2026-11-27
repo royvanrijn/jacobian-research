@@ -1204,6 +1204,7 @@ Scope limits:
 - Every dominant initial-prime start q=(2k+1)p^e with k>=0,e>=1 and p>4k+2 has a zero-free quadratic Gaussian window, without character or resultant exceptions. The second secondary layer excludes the positive-character cases, including every q=9*89^e. Fixed homogeneous trinomial supports inherit computable corner cutoffs at those starts. Unrestricted odd starts remain open.
 - The initial homogeneous trinomial window is also excluded at span 81 for a=1,2,40,80: the full remainder gcd is harmless and the reduced S is positive. The universal harmless-gcd assertion and finite-candidate exclusion at other supports remain open.
 - The finite-zeta determinant comparison identifies a missing common-factor transfer lemma. An exact fully shared profile at N=15,p=127 has zero moments 14,15 and a full-rank marked Hankel matrix. Coefficient multiplication preserves the original gcd corank. The global common-factor amplification remains open; ordinary univariate binomials remain closed.
+- The dominant initial-prime Gaussian closure propagates to finite independent-height decisions, separated clusters with a homogeneous tripled class at its assigned start, and the explicit corner formula with s=3,M=q+2. It includes every 9*89^e. Offsets and starts remain fixed when applying these cutoffs; unrestricted odd starts stay open.
 
 Tracked obligations (computed states):
 

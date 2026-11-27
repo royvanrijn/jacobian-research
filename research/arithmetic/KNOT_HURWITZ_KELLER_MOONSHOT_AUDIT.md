@@ -23,7 +23,7 @@ historical priority claim.
 | --- | --- | --- |
 | Prime augmentation gaps | Unbounded bridge number | Proved for every sufficiently large bridge number, with explicit families and non-effective thresholds; direct prime-family certificates also hold at bridge five and six. |
 | Rational square pencils | Degree 26 | The reciprocal ansatz is excluded over Q. The complete affine-trace slice lies on an explicit curve of genus at least 1051, so its normalized rational models form a finite set; their existence remains undecided. A good number-field point of degree at most twelve is certified. Normalized rational even-numerator degree-ten models also form a finite set. General rational degree-26 existence remains open. |
-| Hurwitz classification | Degree fourteen and an infinite D5-lobe family | One absolute full-A14 orbit. Ordered one-vertex D5 lobe trees reach the canonical wreath-leaf form in at most quartic cost. The distance grows quadratically for the common-root bouquets. Imprimitive leaf deletion and specified coalesced attachment holonomy are classified. Degree sixteen and arbitrary-tuple uniform connectivity remain open. |
+| Hurwitz classification | Degree fourteen, infinite D5-lobe families and global orbit-minimum restrictions | One absolute full-A14 orbit. Ordered one-vertex D5 lobe trees reach the canonical wreath-leaf form in at most quartic cost; common-root bouquets have quadratic distance. Imprimitive leaf deletion and specified attachment holonomy are classified. A positive pure-DT orbit minimum satisfies 3m>=N-4 and, for N>=15, has equal terminal sizes or a singleton. Excluding those remaining cut shapes using full alternating monodromy remains open, as do degree sixteen and uniform connectivity. |
 | One fixed Keller map | Every admissible degree | One fixed rational A3 map for each degree m^2+1, odd m>=3, has infinitely many complete A_n field fibres. The paired degree-ten pencil also has its own fixed map. |
 | Generic alternating Keller group | All even natural actions n>=6; the smallest plane case A4 | Polynomial A3 realizations in all even degrees; regular arithmetic A_(m^2+1) over Q(sqrt(-3)). Every plane A4 action is excluded. General plane realization or exclusion remains open. |
 | Hasse algebras | Uniform admissible degrees | The concentrated-inertia cover gives minimum-rank Hasse families and one fixed A3 map of generic group S_(2^(n-2)) per admissible degree. Numerical optimality follows from Maroti's prior covering theorem. The optimal subgroup family is classified uniformly. The original double-transposition pencil has a separate rank-301 family on one fixed A4 map and retains its rank-256 density obstruction after every solvable rational base change. |
@@ -242,6 +242,20 @@ component with r ≥ 3. At r = 2, the five adjacent-anchor extensions
 stay in the other full-A7 orbit. For r ≥ 7 the pure-DT connectivity
 problem is now equivalent to reaching a representative with a removable
 two-leaf factor. The proven degree-thirteen case starts the induction.
+
+The [terminal-mass reduction](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
+recasts this extraction problem as exclusion of positive minima over entire
+pure-DT braid orbits. Intermediate braids need not be monotone. Its
+[global compatibility theorem](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-10-cyclic-compatibility-excludes-closed-terminal-trees)
+uses one complementary product to impose simultaneous cyclic contact covers
+and a common matching between paired terminal edges. These force
+\(3m\ge N-4\); for \(N\ge15\), a minimizing factor has equal terminal
+sizes or a singleton, with the further ratios and divisibilities of
+Corollary 11. The remaining step is to contradict these cases using full
+alternating monodromy or overlapping-window endpoint inequalities.
+The 180 isolated witnesses surviving one local support-forest calculation
+are not global completions. These restrictions do not settle arbitrary
+extraction, the mixed polynomial problem or degree-sixteen connectivity.
 
 The [reciprocal ODE theorem](PAIRED_CRITICAL_RECIPROCAL_OBSTRUCTION.md)
 classifies the direct extension of the degree-ten reciprocal construction.

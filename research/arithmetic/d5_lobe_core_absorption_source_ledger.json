@@ -37,7 +37,7 @@
     },
     {
       "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
-      "sha256": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+      "sha256": "e7448828216510955d0514ce39fc7b5224275170a9ab711189ffbfe0ec5ec95f",
       "locator": "Complete polynomialD^6 degree13orbit; retained small-degreecontrols",
       "role": "Indispensable completefinite connectivity for fixed13and9sheetcontrollers."
     },
@@ -49,7 +49,7 @@
     },
     {
       "path": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
-      "sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+      "sha256": "d6161447847a945c6677a004ff015e89fd9ce0763984713a263a70a6dda642d7",
       "locator": "Theorem3 and Corollary4",
       "role": "CanonicalWr_rtuple and its fullalternating group."
     },

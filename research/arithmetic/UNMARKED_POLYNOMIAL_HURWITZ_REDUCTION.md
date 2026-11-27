@@ -248,8 +248,20 @@ types. ∎
 
 This is a sufficient criterion. The original tuple space can connect
 different coalesced polynomial types, so a converse has not been
-established. Degree fourteen, with polynomial degree thirteen and
-r=6, remains the first unresolved complex case in the sequence.
+established. The [complete degree-thirteen polynomial census](DEGREE_FOURTEEN_HURWITZ_ORBIT.md)
+settles degree fourteen. The remaining original sequence starts at degree
+sixteen, with polynomial degree fifteen and r=7.
+
+For the pure space X_D, the
+[orbit-minimum criterion](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
+replaces a monotone extraction algorithm by exclusion of every positive
+global terminal-mass minimum. Complementary-twist compatibility forces
+\(3m\ge N-4\) and, for \(N\ge15\), equal terminal sizes or a singleton
+at each minimizing factor. The common cyclic covers and the exact remaining
+size restrictions are in
+[Theorem 10 and Corollary 11](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-10-cyclic-compatibility-excludes-closed-terminal-trees).
+Their contradiction under full alternating monodromy remains open. They
+do not establish either X_D transitivity or the separate X_T assertion.
 
 ## Exact evidence and scope
 

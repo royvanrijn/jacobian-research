@@ -11,7 +11,7 @@
   "proof_imports": [
     {
       "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
-      "sha256": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+      "sha256": "e7448828216510955d0514ce39fc7b5224275170a9ab711189ffbfe0ec5ec95f",
       "locator": "Theorems1-2; exact character bound and complete queue algorithm",
       "role": "Finite degree13 polynomial domains and degree14 original Hurwitz orbit."
     },
@@ -41,7 +41,7 @@
     },
     {
       "path": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
-      "sha256": "806a421b8e2ff6081623dc4b7f7f628aaf36fcbf1446396e1d55ebb840d13c1e",
+      "sha256": "b7dfa9857d820da3a53b8b3e68a9f4db3e686a3cd3cc22fea82b2be04d955f86",
       "locator": "Lemmas1-3; cyclic seed and literal stabilizer",
       "role": "Full marking-stabilizer subgroup; unmarked-to-marked criterion; full-alternating cyclic seed and branch-label stabilizer."
     }

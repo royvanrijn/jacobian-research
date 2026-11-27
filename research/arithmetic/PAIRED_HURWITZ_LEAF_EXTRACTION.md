@@ -394,12 +394,21 @@ support conditions of Lemma1 or its repaired version in Lemma3.
 No such leaf-extraction theorem is proved here. The recursion for G_r does not imply that every
 tuple is in its orbit.
 
-After a general deletion, one would also need control of all
-ways of restoring the two leaves and their attachment vertices.
-Identifying the smaller generated group alone does not supply
-that extension connectivity. The two unmarked polynomial
-connectivity questions, first unresolved in polynomial degree
-thirteen, remain open in this work.
+The later [two-leaf absorption theorem](UNIFORM_TWO_LEAF_DT_ABSORPTION.md)
+controls every pair of distinct old attachment vertices over the canonical
+component. The [degree-thirteen polynomial census](DEGREE_FOURTEEN_HURWITZ_ORBIT.md)
+settles the next finite case, leaving the two polynomial connectivity
+questions first unresolved in degree fifteen.
+
+For the pure-DT extraction input, the
+[terminal-mass argument](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
+uses a minimum over an entire braid orbit, without monotonicity along
+intermediate braids. Its complementary-twist compatibility theorem forces
+\(3m\ge N-4\) and, for \(N\ge15\), equal terminal sizes or a singleton
+at a minimizer. Full alternating monodromy supplies an odd overlap here,
+but no argument yet forces that overlap to violate the common cyclic
+covers or a three-factor endpoint inequality. The two residual cut shapes
+and mixed connectivity remain open.
 
 The [checker](verify_paired_hurwitz_leaf_extraction.py) verifies the
 literal identity, its pure strand action, every recursive step in

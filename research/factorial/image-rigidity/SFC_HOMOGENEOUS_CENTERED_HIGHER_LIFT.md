@@ -291,7 +291,11 @@ solution exists exactly when an algebraic one does.
 Consequently any nonvanishing certificate holds over
 every characteristic-zero field.
 
-The general odd-start quadratic Gaussian problem remains open.
+The [proved odd-start Gaussian domain](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md)
+already excludes roots at every dominant initial-prime start
+\(q=(2k+1)p^e\), \(k\ge0,e\ge1\), \(p>4k+2\), including
+every \(9\cdot89^e\). The general odd-start quadratic Gaussian
+problem remains open outside the established domain.
 A deficient Jacobian, vanishing \(\Theta\), or a nonzero real
 ratio with irrational square can prevent this decision from applying.
 

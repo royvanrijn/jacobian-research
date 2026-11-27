@@ -657,6 +657,16 @@ transfers this conclusion to balanced four-symbol squared distortion
 for every $n\ge3$. No positive-correlation noise-stability comparison
 follows from this reduction.
 
+The [balanced reflected-swap results](RELATIVE_HERMITE_TAIL_OBSTRUCTION.md)
+separate the full-noise task from this first-Hermite route. Remote tail
+swaps falsify uniform relative higher-Hermite control by the first-Hermite
+deficit, so that bridge is retired. Nevertheless every proper reflected
+swap of a tetrahedral cell pair strictly loses full noise stability for
+every $0<\rho<1$, by an exact Gaussian kernel comparison. That theorem
+does not reduce arbitrary balanced competitors to reflected swaps.
+The high-value gap above can be attacked with the five shape directions;
+a uniform full-noise comparison still requires its own argument.
+
 The **planar value gap remains open** as a separate comparison: every
 balanced four-cell affine assignment in $\mathbb R^2$, including ties
 subdivided into equal masses, should have $W_1<W_1(T)$. It is no longer

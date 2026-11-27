@@ -5,20 +5,20 @@
   "claims": {
     "uniform_equivalence": "Exact quadratic critical-value algebra presentation and rational inverse chart for all good paired even-H pencils in both numerator parities.",
     "ambient_coordinates": "3h rational coefficients q,a,rho; 2h+epsilon interpolation/normalization equations with explicit unit and discriminant opens.",
-    "canonical_norm": "Norm_A/B(u)=rho\u00b2; pole coefficient N0=(-1)^(b+1)(n-1)Norm_B/k(rho)\u00b2.",
-    "critical_point_discriminant": "The residual critical-point polynomial S(z\u00b2) has square discriminant; separate from the pencil discriminant.",
+    "canonical_norm": "Norm_A/B(u)=rho²; pole coefficient N0=(-1)^(b+1)(n-1)Norm_B/k(rho)².",
+    "critical_point_discriminant": "The residual critical-point polynomial S(z²) has square discriminant; separate from the pencil discriminant.",
     "scope_limits": [
       "No rational parametrization or unirationality assertion for the implicit solution locus.",
       "No new rational degree12 or26 model or uniform rational existence theorem.",
       "Even-H/odd-Laurent locus only; no claim all covers have this symmetry.",
       "The modulo9 control uses unit inversions but not division by nonunit Euler constants; no local-to-Q descent."
     ],
-    "root_free_real_criterion": "Every finite critical point is real iff the Hermite trace matrices H_w and H_(w+4rho*a\u00b2) are positive definite; overQ this is2h strict rational leading-principal-minor inequalities."
+    "root_free_real_criterion": "Every finite critical point is real iff the Hermite trace matrices H_w and H_(w+4rho*a²) are positive definite; overQ this is2h strict rational leading-principal-minor inequalities."
   },
   "proof_imports": [
     {
       "path": "research/arithmetic/ALTERNATING_HURWITZ_UNIFORMITY_AND_REAL_NODES.md",
-      "sha256": "71fafa28475593b8993271247266d70274460e583b4b128735949d519f1fdce0",
+      "sha256": "ab2b5496e6f309976d54fc0ca06cb19bf5aa4b5b5d5ce6ae2c0f223bd3d1be47",
       "locator": "Proposition4 normalized paired critical criterion",
       "role": "Prior squared-critical-value algebra criterion for the odd numerator case; the new uniform note spells out both parity conventions."
     },

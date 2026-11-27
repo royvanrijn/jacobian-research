@@ -291,6 +291,17 @@ with a suitable reduced core remains a separate global problem.
 In particular the next unclassified degree16 original passport
 and all-degree arbitrary-tuple connectivity remain open.
 
+The extraction side now has an
+[orbit-minimum formulation](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent):
+an orbit meets the removable locus exactly when its minimum terminal mass
+is zero. The complementary-twist restrictions in
+[Theorem 10 and Corollary 11](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-10-cyclic-compatibility-excludes-closed-terminal-trees)
+force a positive minimum to satisfy \(3m\ge N-4\); for \(N\ge15\),
+the terminal components at a minimizer have equal sizes or include a
+singleton. Excluding these remaining cases using full alternating monodromy
+would supply the missing extraction input to the induction. The extension
+theorem here does not supply that contradiction.
+
 ## Exact evidence and limits
 
 The [checker](verify_uniform_two_leaf_dt_absorption.py) verifies

@@ -138,7 +138,13 @@ Gaussian start \(q\) then gives (2) with \(s=3,M=q+2\).
 Gaussian zero-freeness makes compactified exclusion immediate. This
 applies to every odd start through \(12001\) and the infinite families
 in the [odd-start note](SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md).
+In particular, it applies at every \(q=(2k+1)p^e\), with
+\(k\ge0,e\ge1\) and odd prime \(p>4k+2\), without a
+character or resultant restriction. Thus every \(q=9\cdot89^e\)
+inherits the same explicit formula, with its own \(M=q+2\).
 Thus explicit bounds are now available throughout that proved domain.
+The bound still depends on the support span and the chosen start;
+no cutoff uniform over starts or supports is asserted.
 It remains unproved that the joint prime-divisor tests succeed at
 every odd start, or that every remaining Gaussian direction cannot lift.
 The finite prefix is not an all-order theorem.

@@ -36,7 +36,7 @@
     },
     {
       "path": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
-      "sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+      "sha256": "d6161447847a945c6677a004ff015e89fd9ce0763984713a263a70a6dda642d7",
       "locator": "Theorem1: one-T/DT deletion-group dichotomy",
       "role": "A polynomial DT leaf deletion is either S_(2r) or the full natural C2 wr S_r. Lemma1 rules out its imprimitive alternative."
     },

@@ -18,7 +18,7 @@
   "proof_imports": [
     {
       "path": "research/arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md",
-      "sha256": "0bb4149424eac7d246d001e3b54b49cd1c773bad0d2110c38e2ee6dcd6f95c21",
+      "sha256": "a392b0f366db579a76dcd906096f5edd5f0a01124bdcf8dd007340b422cca4d6",
       "locator": "Theorem1, Theorem2 and Corollary3",
       "role": "Complete cyclic representative classification, six-core outside-pair compatibility, uniform absorption and sharp lower boundary."
     },
@@ -36,7 +36,7 @@
     },
     {
       "path": "research/arithmetic/IMPRIMITIVE_LEAF_DELETION_NORMAL_FORM.md",
-      "sha256": "c6a522b2b9a3b7eac8d7a7631aed9046f00510411498e7a00fd5c6c9f53fdd09",
+      "sha256": "d6161447847a945c6677a004ff015e89fd9ce0763984713a263a70a6dda642d7",
       "locator": "Theorems1 and3; Lemma2",
       "role": "Wreath block-tree criterion and constructive normalization; recurrence gives bound2r^2+1 for r+1 factors."
     },
@@ -54,7 +54,7 @@
     },
     {
       "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
-      "sha256": "e02f4fa055c934cc0bf3ab0dd8e2913ab4f2ecf1e030e8388217c7518c832a77",
+      "sha256": "e7448828216510955d0514ce39fc7b5224275170a9ab711189ffbfe0ec5ec95f",
       "locator": "Complete degree13 polynomial orbit and character-count method",
       "role": "Indispensable finite core controller theorem."
     },
