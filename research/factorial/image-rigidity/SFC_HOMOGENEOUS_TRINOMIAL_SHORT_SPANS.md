@@ -216,7 +216,7 @@ The layer checker converts the powers of each gap using
  z\binom zj=j\binom zj+(j+1)\binom z{j+1}.
 \]
 It verifies nonnegative coefficients in this basis at orders
-\(t^5,\ldots,t^{16}\). Thus the twelve highest homogeneous parts of
+\(t^5,\ldots,t^{24}\). Thus the twenty highest homogeneous parts of
 \(S\) have nonnegative height coefficients for every admissible support.
 In particular, the negative shifted-gap monomial at order \(t^{12}\)
 is compatible with positivity in the binomial basis.
@@ -231,9 +231,334 @@ A sufficient recurrence target for the uniform height-coefficient
 sign is coefficientwise nonnegativity of the first forward differences
 \(\Delta_A Q\) and \(\Delta_B Q\) at every gap pair. This weaker
 condition than positivity of all Newton coefficients would propagate
-the height coefficient signs from \(Q_{0,0}\). Strict positivity of
-\(S(0,0)\) at each support would then give strict positivity at every
-nonnegative height pair.
+the height coefficient signs from \(Q_{0,0}\). In the original heights
+the two targets are coefficientwise nonnegativity of
+\[
+ \begin{aligned}
+   S(L,H;a+1,d+1)-432L^{11}H^3 S(L,H;a,d),\\
+   S(L,H;a,d+1)-432L^7H^7 S(L,H;a,d).
+ \end{aligned}
+\]
+The normalizing powers change by \((11,3)\) and \((7,7)\),
+respectively. It suffices to prove the first inequality on the edge
+\(d-a=1\) and the second everywhere. One can first raise \(a\) along
+that edge and then raise \(d-a\) with \(a\) fixed.
+The origin proposition below supplies strict positivity once
+the coefficientwise signs have been proved.
+
+## Common factors in the gap increments
+
+Put \(b=d-a\). The greatest common product of primitive linear
+factors across the expanded products of summands in \(S\) is
+\[
+ K_{a,d}=(L+1)_d^3(L+1)_a^4(H+1)_d(H+1)_b^2
+          \prod_{\substack{1\le j\le a\\ j\ {\rm odd}}}(2L+j).
+ \tag{5}
+\]
+Indeed, the \(L\)-integer factors in (2) occur three times with
+length \(d\) and four times with length \(a\) in every product.
+The remaining second-order \(L\)-factors have half-integer shifts.
+Their intersection across the three products comes from \(B\)
+in \(ABG\) and is exactly the odd \(j\le a\) in (5).
+The third-order noninteger shifts occur in thirds and the term
+\(C^2D\) omits them. In \(H\), the lengths in \(C^2D\) are
+\(b,b,d\). The other products contain at least the same factors.
+This establishes (5) as a termwise common product.
+
+Write \(P_{a,d}=S/K_{a,d}\). For the step increasing \(b\) at fixed \(a\),
+the new common product divided by the old is
+\[
+ (L+d+1)^3(H+d+1)(H+b+1)^2 .
+\]
+For the step increasing \(a\) at fixed \(b\), the ratio is
+\[
+ (L+d+1)^3(L+a+1)^4(H+d+1)(2L+a+1)^\epsilon,\qquad
+ \epsilon=\mathbf 1_{a\ {\rm even}}.
+\]
+Retaining their leading monomials gives sufficient
+coefficientwise bounds for the two increments,
+\[
+ \begin{aligned}
+ P_{a,d+1}&\succeq 432 L^4H^4 P_{a,d},\\
+ P_{a+1,d+1}&\succeq \frac{432}{2^\epsilon}L^{4-\epsilon}H^2 P_{a,d}
+                      \qquad (b=1).
+ \end{aligned}
+ \tag{6}
+\]
+Here \(U\succeq V\) denotes coefficientwise nonnegativity of \(U-V\).
+These inequalities propagate coefficientwise nonnegativity of
+the quotients from \(P_{1,2}\), whose coefficients are checked
+directly. Multiplication by (5) then gives the original signs.
+
+In the [exact increment check](verify_sfc_homogeneous_trinomial_gap_increments.py)
+through source span 34, even the following multipliers in place of
+those in (6) work:
+\[
+ \rho_b=\frac{432(d+1)^3(b+1)^4(d+3)}{d^3b^4(d+2)},\qquad
+ \rho_a=\frac{432(a+1)^2(d+1)^3(d+3)}{2^\epsilon a^2d^3(d+2)}.
+ \tag{7}
+\]
+These are the ratios at the least \(L\) exponent of the respective
+leading homogeneous parts, after the monomial shifts in (6).
+Indeed, the factor \((L+H)^4\) is shared, and
+\((d-1)L+(d+3)H\) minus \((d+3)/(d+2)\) times
+\((d-2)L+(d+2)H\) is \(4L/(d+2)\).
+The least-\(L\) coefficient gives an upper bound on any multiplier
+for the full comparison. The checker verifies that (7) attains
+this bound on 561 steps in each direction, checking both
+increments at every source support in that range.
+Uniform comparison in (6) remains open.
+
+## An all-order factor in the formal gap parameters
+
+Each reciprocal-height layer of \(Q_{a-1,b-1}\) is divisible,
+as a polynomial in the gap parameters, by \(a^2d^3b^4\),
+where \(d=a+b\). To see this, let
+\(\Phi_m(z)\) be the formal normalized product for counts whose
+total right offset is \(z\). Its factors have lengths \(md-z,z\)
+and the power-sum formulas above give polynomial coefficients in
+the lengths. Write \(q_s=\Phi_1(s)\), let \(T_s\) denote translation
+in \(z\) by \(s\), and put
+\[
+ {\cal D}_s=q_0 T_s-q_s,\qquad
+ \widehat C_{m,k}=\binom mk
+   ({\cal D}_d^{\,m-k}{\cal D}_b^k\Phi_m)(0).
+\]
+The second formula is exactly the normalized signed count sum
+in (1). The operators commute. Since
+\({\cal D}_s=q_0(T_s-1)+(q_0-q_s)\) is divisible by \(s\),
+\(\widehat C_{m,k}\) is divisible by \(d^{m-k}b^k\).
+Each of the three products defining \(S\) has total \(X,Y\)
+degrees \(3,4\), which gives \(d^3b^4\).
+
+For the remaining factor, put \(u={\cal D}_d\) and
+\(w={\cal D}_b-{\cal D}_d\), so the two original operators are
+\(u,u+w\) and \(w\) is divisible by \(a=d-b\). Write \(A,U,V\)
+for the evaluations of \(u^2,uw,w^2\) on \(\Phi_2\) at zero,
+and \(D,P_1,P_2,P_3\) for those of
+\(u^3,u^2w,uw^2,w^3\) on \(\Phi_3\).
+In these variables the normalized \(S\) is
+\[
+ \bigl((2U+V)^2-AV\bigr)D
+   -6A(U+V)P_1+3A(A-V)P_2+2A(A+U)P_3 .
+\]
+Each monomial uses at least two factors of \(w\).
+The three linear gap polynomials \(a,d,b\) are pairwise
+relatively prime, so their powers give the claimed product.
+The factor persists after removing (5) from the normalized series,
+with the gap parameters considered separately on each parity of
+\(a\). In reciprocal heights the normalized product (5) has
+constant term one. Its remaining coefficients are polynomial in
+the gaps by the power-sum formula, including the odd shifts by
+using length \(\lceil a/2\rceil\) on each parity. Its formal
+inverse therefore has polynomial coefficients on each parity.
+
+## Highest gap degrees and the finite test for each coefficient
+
+For \(p,q\ge0\) set \(n=p+q\) and
+\(F_{p,q}(a,b)=[x^py^q]Q_{a-1,b-1}(x,y)\).
+These are polynomials in the two gaps. For \(n<5\) they vanish.
+For every \(n\ge5\), \(F_{p,q}\) has gap degree \(2n\), and its
+degree-\(2n\) part has a positive coefficient at every monomial
+\(a^2b^4 a^i b^{2n-6-i}\) with \(0\le i\le 2n-6\).
+
+To derive this highest part, replace the gaps by \(\lambda a,\lambda b\)
+and the reciprocal heights by \(x/\lambda^2,y/\lambda^2\).
+In degree \(n\) in the reciprocal heights, the gap degree is at most
+\(2n\). Indeed, the \(r\)-th logarithmic coefficient of each product
+of normalized rising factorials has gap degree at most \(r+1\),
+with equality \(r+1=2r\) only at \(r=1\). Thus only the quadratic
+part of the first logarithmic coefficient contributes to the
+degree-\(2n\) part. For a row of order \(m\) with total right offset
+\(z\), the resulting highest-gap series is
+\[
+ \Phi_m^{\rm top}(z)=
+   \exp\!\left(\frac{(md-z)^2x+z^2y}{2m}\right).
+\]
+All subsequent identities are in formal power series in \(x,y\).
+
+Use the three right offsets \(z_i\in\{d,b,0\}\). Dividing each
+column by its first-order series
+\(p_i=\exp(((d-z_i)^2x+z_i^2y)/2)\) gives the kernel
+\[
+ \frac{\Phi_m^{\rm top}(\sum_{\nu=1}^m z_{i_\nu})}
+      {\prod_{\nu=1}^m p_{i_\nu}}
+ =\exp\!\left(-\frac{x+y}{2m}
+        \sum_{1\le\nu<\mu\le m}(z_{i_\nu}-z_{i_\mu})^2\right).
+\]
+Write \(s=x+y\). On the first-moment zero plane with coefficients
+\((X,Y,-X-Y)\), the two diagonal quadratic coefficients are
+\(2(1-e^{-d^2s/4})\) and \(2(1-e^{-b^2s/4})\).
+The cubic on that plane is \(-3XY(X+Y)\det M\), where
+\(M_{ij}=e^{-s(z_i-z_j)^2/6}\). For example, for coefficients
+\(c_0+c_1+c_2=0\), the pure cubes sum to \(3c_0c_1c_2\)
+and \(c_i^2c_j+c_ic_j^2=-c_0c_1c_2\); the resulting expression
+is \(3c_0c_1c_2(1-\sum_{i<j}M_{ij}^2+2M_{01}M_{02}M_{12})\).
+Consequently \(S\) for the normalized columns is
+\(12(1-e^{-d^2s/4})(1-e^{-b^2s/4})\det M\).
+Restoring the column scales in the eliminated chart multiplies
+this by \((p_0p_2)^3(p_1p_2)^4\).
+
+Factor \(e^{-s z_i^2/6}\) from each row and column of \(M\).
+The determinant left over reduces at its zero node to
+\((e^{sb^2/3}-1)(e^{sd^2/3}-1)-(e^{sbd/3}-1)^2\).
+Expanding the two products and pairing distinct indices gives
+the complete series of highest gap degrees,
+\[
+ 12e^{\gamma_x x+\gamma_y y}
+ (e^{d^2s/4}-1)(e^{b^2s/4}-1)
+ \sum_{1\le i<j}
+ \frac{(b^id^j-b^jd^i)^2}{i!j!}(s/3)^{i+j},
+ \qquad
+ \begin{aligned}
+ \gamma_x&=(59a^2+70ab+28b^2)/12,\\
+ \gamma_y&=(11d^2+17b^2)/12 .
+ \end{aligned}
+ \tag{8}
+\]
+In particular this expression uses the height reversal and the
+\(432^d\) normalization of \(Q\). All of its coefficients in
+\(a,b,x,y\) are nonnegative. After dividing by \(a^2b^4\) they
+remain nonnegative because
+\(b^id^j-b^jd^i=b^id^i(d^{j-i}-b^{j-i})\) and dividing
+\(d^{j-i}-b^{j-i}\) by \(a=d-b\) leaves a positive sum.
+The first term of each difference of exponentials and the term
+\(i=1,j=2\) yield \(a^2b^4d^4s^5/72\) times
+\(e^{\gamma_x x+\gamma_y y}\). Both quadratics \(\gamma_x,\gamma_y\)
+have positive coefficients in every monomial of degree two in
+the gaps. For every \(p+q=n\ge5\) the displayed contribution
+therefore has all gap monomials asserted above after division
+by \(a^2b^4\).
+
+This determines a finite exact test for both gap increments of
+each fixed reciprocal-height coefficient. Let \(c_{p,q}>0\) be the
+smallest coefficient of the degree-\(2n\) part of \(F_{p,q}\)
+among its monomials divisible by \(a^2b^4\).
+Let \(N_{p,q}\) be the sum of the absolute values of its negative
+coefficients of lower gap degree. Every negative monomial
+\(a^i b^j\) has \(i\ge2,j\ge4\) by the formal gap factor.
+Raise its exponent in the larger gap by \(2n-i-j\) to get a
+monomial in the positive top part. Under a forward difference
+in either gap, the larger monomial contributes at least
+\(\max(a,b)^{2n-i-j}\) times the forward difference of the
+smaller monomial at the point \((a,b)\). If the difference acts
+on the raised exponent, use
+\[
+ (z+1)^{k+\ell}-z^{k+\ell}
+ \ \ge\ z^\ell\bigl((z+1)^k-z^k\bigr)
+ \qquad(z\ge1,\ \ell\ge0).
+\]
+If the difference acts on the other variable the factor simply
+pulls out. Each negative contribution is thus bounded by
+its absolute coefficient divided by \(c_{p,q}\max(a,b)\) times
+the forward difference of the whole top part. It follows that
+\[
+ \Delta_a F_{p,q}(a,b)>0,\qquad \Delta_b F_{p,q}(a,b)>0
+ \quad\text{if}\quad
+ \max(a,b)>N_{p,q}/c_{p,q},\qquad a,b\ge1.
+\]
+A smaller cutoff follows by summing negative contributions
+assigned to the same top monomial. Write \(f_{ij}=[a^ib^j]F_{p,q}\).
+For \(a\ge b\), all negative terms with the same \(j\) are
+assigned to \(a^{2n-j}b^j\). Both differences are positive if
+\[
+ \sum_{i:f_{ij}<0}\frac{-f_{ij}}{f_{2n-j,j}}\,
+                  a^{-(2n-i-j)}<1
+ \quad\text{for every such }j.
+\]
+For \(b>a\), group by \(i\) and use \(b\) and \(f_{i,2n-i}\)
+instead. Each sum decreases to zero, so exact rational bisection
+gives a cutoff in each of the two regions. The layer checker can
+test both increments on the remaining finite triangles using
+`--fixed-deficit`. This gives a terminating exact test of
+either sign assertion for any prescribed reciprocal coefficient.
+The cutoff depends on the reciprocal degree, leaving the two
+uniform inequalities open. The fixed-deficit replay also certifies
+both differences in reciprocal degree 25, extending the initial
+band of whole-lattice increment signs by one degree. For that degree the maximum matched cutoffs are 109 and
+49 in the respective regions. The exact check visits 34,933
+coefficient-gap pairs.
+
+## Strict sign at zero heights for every span
+
+**Proposition.** \(S(0,0;a,d)>0\) for every \(0<a<d\) with integer
+offsets.
+
+Let \(k=\binom da\) and use the angular functions
+\(f_0=(1-t)^d,\ f_1=k t^a(1-t)^b,\ f_2=t^d\) on \([0,1]\).
+The contrasts are \(f_0-f_2,f_1-f_2\). At order \(m\) divide
+by \(\int_0^1f_2^m=1/(md+1)\). The resulting remainder differs
+from the original by a positive factor, since the chart
+coefficients are rescaled by \(d!,d!/k\) and the row by
+\((md)!\). Reflection gives \(D=0\), so it suffices to prove
+\(BG-CF>0\). Put
+\[
+\begin{gathered}
+ t_0=\binom{2d}{d}^{-1},\quad
+ p=\frac{k}{\binom{2d}{a}},\quad r=\frac{k}{\binom{2d}{b}},\quad
+ s=\frac{k^2}{\binom{2d}{2a}},\\
+ x_0=\binom{3d}{d}^{-1},\quad z=\frac{k}{\binom{3d}{b}},\quad
+ w_0=\frac{k^2}{\binom{3d}{2a}},\quad w=\frac{k^2}{\binom{3d}{2b}},\quad
+ g=\frac{k^3}{\binom{3d}{3a}},\quad h=\frac{k}{\binom{3d}{d+a}} .
+\end{gathered}
+\]
+The beta integral gives
+\[
+ B=2(1-t_0+p-r),\quad C=1+s-2r,\quad
+ F=3(w_0-w-2h+2z+x_0-1),\quad G=g-3w+3z-1 .
+\]
+In particular \(B>0\) since \(t_0\le 2^{-d}\) and \(r\le 2^{-b}\).
+With \(J=1+w-w_0-2z-x_0\), the inequality
+\(BG-CF\ge BG+3CJ\) follows from \(h\ge0\) and \(C>0\).
+
+For the large spans use \(d\ge16\) and \(e=1/8192\).
+Termwise binomial ratios and Vandermonde's convolution give
+\[
+ \begin{gathered}
+ p\le2^{-a},\quad r\le2^{-b},\quad z\le3^{-b},\quad
+ x_0\le3^{-d},\\
+ w_0\le s(2/3)^{2a},\quad
+ w\le s(2/3)^{2b},\quad s\le1 .
+ \end{gathered}
+\]
+For instance \(\binom{n}{j}/\binom{mn}{j}\le m^{-j}\)
+by comparing descending factorial factors.
+If \(c=a\) or \(b\), then
+\[
+ s=\frac{\binom{2c}{c}}{2^c}
+        \prod_{i=0}^{c-1}\frac{d-i}{2(d-i)-1}
+ \ \ge\ \frac{\binom{2c}{c}}{4^c}.
+\]
+For a gap at least 13, its mixed second coefficient
+and its corresponding \(w_0\) or \(w\) are at most \(e\),
+as is \(z\) when \(b\ge13\). Also \(x_0\le e\).
+For a gap of one the corresponding \(w_0\) or \(w\) is
+\(2d/[3(3d-1)]\) in \([2/9,23/100]\).
+When \(b=1\), \(r=1/2,\ z=1/3,\ g\ge2/9\), the last
+bound following by comparing each factor of \(\binom{3d}{3}\)
+with \(3d\). When \(b=2\), \(r=(d-1)/(2(2d-1))\ge1/5\)
+and the product for \(s\) gives
+\(w\le(2/3)^4(3/2)(15/29)^2<2/25\).
+
+The following rational bounds use these estimates:
+\[
+\begin{array}{c|c|c|c|c}
+ & C\ {\rm lower} & J\ {\rm lower} & B\ {\rm upper} & -G\ {\rm upper}\\ \hline
+ a,b\ge4 & 7/8 &187/200 &17/8 &28/25\\
+ a=1 &3/2-2e &77/100-3e &3 &1+3e\\
+ a=2,3 &21/16-2e &65/81-3e &5/2 &1+3e\\
+ b=1 &1/2 &5/9-2e &1+2e &421/900\\
+ b=2 &7/8 &7/9-2e &8/5+2e &31/25\\
+ b=3 &17/16 &25/27-2e &2+2e &307/243
+\end{array}
+\]
+In the first row \(w,w_0<1/25\) and \(2z+x_0<1/40\).
+The other rows use the distant-gap bounds and the indicated
+specific near-gap ratios. In each row, three times the
+product of the two lower bounds exceeds the product
+of the two upper bounds. The increment checker verifies these
+rational margins and the 105 oriented pairs of span \(2\) through
+15 by the same beta formulas. This proves the proposition.
 
 ## Integral and shift formulas
 
@@ -311,4 +636,12 @@ and SymPy 1.14.0. The internal replay ran spans 2 through 64 and
 
 ~~~sh
 .venv/bin/python research/factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py
+~~~
+
+~~~sh
+.venv/bin/python research/factorial/image-rigidity/verify_sfc_homogeneous_trinomial_gap_increments.py
+~~~
+
+~~~sh
+.venv/bin/python factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py --fixed-deficit 25
 ~~~

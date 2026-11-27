@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Verify the leading height layers and the integer-gap sign certificates."""
 
+import argparse
 from collections import defaultdict
 from functools import lru_cache
-from math import comb
+from math import comb, lcm
 
-from flint import fmpq, fmpq_mpoly_ctx
+from flint import fmpq, fmpq_mpoly_ctx, fmpz_mpoly_ctx
 from sympy import bernoulli
 
 from verify_sfc_homogeneous_trinomial_factored_sign import (
@@ -17,8 +18,6 @@ from verify_sfc_homogeneous_trinomial_factored_sign import (
 
 RING = fmpq_mpoly_ctx.get(("a0", "b0", "x", "y"))
 A0, B0, X, Y = RING.gens()
-MIDDLE, GAP = A0 + 1, B0 + 1
-SPAN = MIDDLE + GAP
 LIMIT = 24
 DIFFERENCE_ORDER = 18
 
@@ -37,25 +36,27 @@ def power_sum(length, power):
     )
 
 
-def normalized_series(order, y_degree):
-    result = [RING.constant(0) for _ in range(LIMIT + 1)]
-    for multiplier, offset, i, j in count_terms(order, y_degree, MIDDLE, SPAN):
+def normalized_series(order, y_degree, limit, shift):
+    middle, gap = A0 + shift, B0 + shift
+    span = middle + gap
+    result = [RING.constant(0) for _ in range(limit + 1)]
+    for multiplier, offset, i, j in count_terms(order, y_degree, middle, span):
         log = [RING.constant(0)]
-        for power in range(1, LIMIT + 1):
+        for power in range(1, limit + 1):
             left = (
-                fmpq(1, order**power) * power_sum(order * SPAN - offset, power)
-                + (i + j) * power_sum(SPAN, power)
-                + (y_degree - j) * power_sum(MIDDLE, power)
+                fmpq(1, order**power) * power_sum(order * span - offset, power)
+                + (i + j) * power_sum(span, power)
+                + (y_degree - j) * power_sum(middle, power)
             )
             right = (
                 fmpq(1, order**power) * power_sum(offset, power)
-                + (order - y_degree - i) * power_sum(SPAN, power)
-                + (y_degree - j) * power_sum(GAP, power)
+                + (order - y_degree - i) * power_sum(span, power)
+                + (y_degree - j) * power_sum(gap, power)
             )
             log.append(fmpq((-1)**(power - 1), power) * (left * X**power + right * Y**power))
 
         series = [RING.constant(1)]
-        for degree in range(1, LIMIT + 1):
+        for degree in range(1, limit + 1):
             # Differentiate exp(log) and compare coefficients.
             series.append(fmpq(1, degree) * sum(
                 j * log[j] * series[degree - j] for j in range(1, degree + 1)
@@ -65,25 +66,25 @@ def normalized_series(order, y_degree):
     return result
 
 
-def multiply_series(left, right):
+def multiply_series(left, right, limit):
     return [
         sum((left[i] * right[degree-i] for i in range(degree+1)
              if left[i] and right[degree-i]), RING.constant(0))
-        for degree in range(LIMIT + 1)
+        for degree in range(limit + 1)
     ]
 
 
-def remainder_layers():
-    a, b, c = (normalized_series(2, k) for k in range(3))
-    d, f, g = (normalized_series(3, k) for k in (0, 2, 3))
+def remainder_layers(limit=LIMIT, shift=1):
+    a, b, c = (normalized_series(2, k, limit, shift) for k in range(3))
+    d, f, g = (normalized_series(3, k, limit, shift) for k in (0, 2, 3))
     if any(poly[0] for poly in (a, b, c)) or any(any(poly[:2]) for poly in (d, f, g)):
         raise ArithmeticError("Unexpected terms below order four.")
-    ccd = multiply_series(multiply_series(c, c), d)
-    abg = multiply_series(multiply_series(a, b), g)
-    acf = multiply_series(multiply_series(a, c), f)
+    ccd = multiply_series(multiply_series(c, c, limit), d, limit)
+    abg = multiply_series(multiply_series(a, b, limit), g, limit)
+    acf = multiply_series(multiply_series(a, c, limit), f, limit)
     return {
         degree: (ccd[degree] + abg[degree] - acf[degree]).to_dict()
-        for degree in range(4, LIMIT + 1)
+        for degree in range(4, limit + 1)
     }
 
 
@@ -171,7 +172,85 @@ def verify_complete_gap_differences():
     print(f"Verified all {checked} complete gap differences of order at most {DIFFERENCE_ORDER}.")
 
 
+def matched_cutoff(coefficients, degree, grow_a):
+    # One group of negative monomials per dominating highest-degree monomial.
+    groups = defaultdict(list)
+    for (i, j), value in coefficients.items():
+        if value < 0:
+            target = (degree-j, j) if grow_a else (i, degree-i)
+            ratio = -value / coefficients[target]
+            groups[target].append((degree-i-j, ratio))
+
+    def sufficient(gap):
+        return all(
+            sum(ratio / gap**drop for drop, ratio in group) < 1
+            for group in groups.values()
+        )
+
+    low, high = 0, 1
+    while not sufficient(high):
+        high *= 2
+    while high - low > 1:
+        middle = (low + high) // 2
+        if sufficient(middle):
+            high = middle
+        else:
+            low = middle
+    return high
+
+
+def verify_fixed_deficit(deficit):
+    # Unshifted gap variables are needed for the a^2 b^4 support bound.
+    layers = remainder_layers(limit=deficit, shift=0)
+    by_height_power = defaultdict(dict)
+    for (i, j, p, q), value in layers[deficit].items():
+        by_height_power[p, q][i, j] = value
+
+    gap_ring = fmpz_mpoly_ctx.get(("a", "b"))
+    a, b = gap_ring.gens()
+    degree = 2*deficit
+    max_a, max_b, checked = 0, 0, 0
+    for p in range(deficit + 1):
+        q = deficit - p
+        coefficients = by_height_power[p, q]
+        if any(i < 2 or j < 4 or i+j > degree for i, j in coefficients):
+            raise ArithmeticError(f"Gap support bound failed at {(p, q)}.")
+        if any(coefficients.get((i, degree-i), 0) <= 0 for i in range(2, degree-3)):
+            raise ArithmeticError(f"Highest gap support or sign failed at {(p, q)}.")
+        cutoff_a = matched_cutoff(coefficients, degree, True)
+        cutoff_b = matched_cutoff(coefficients, degree, False)
+        max_a, max_b = max(cutoff_a, max_a), max(cutoff_b, max_b)
+
+        denominator = lcm(*(int(c.denominator) for c in coefficients.values()))
+        polynomial = gap_ring.from_dict({
+            key: int(value*denominator) for key, value in coefficients.items()
+        })
+        step_a = polynomial.compose(a+1, b) - polynomial
+        step_b = polynomial.compose(a, b+1) - polynomial
+        candidates = (
+            ((a0, b0) for a0 in range(1, cutoff_a) for b0 in range(1, a0+1)),
+            ((a0, b0) for b0 in range(1, cutoff_b) for a0 in range(1, b0)),
+        )
+        for triangle in candidates:
+            for a0, b0 in triangle:
+                if step_a(a0, b0) < 0 or step_b(a0, b0) < 0:
+                    raise ArithmeticError(f"Negative gap difference at {(p, q, a0, b0)}.")
+                checked += 1
+
+    print(f"Deficit {deficit}: verified both normalized differences at every gap pair.")
+    print(f"Matched cutoffs: {max_a} in a-dominant region, {max_b} in b-dominant region.")
+    print(f"Checked {checked} finite coefficient-gap pairs.")
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--fixed-deficit", type=int, help="verify one degree in the reciprocal heights")
+    args = parser.parse_args()
+    if args.fixed_deficit is not None:
+        if args.fixed_deficit < 5:
+            parser.error("The fixed deficit must be at least 5.")
+        verify_fixed_deficit(args.fixed_deficit)
+        return
     layers = remainder_layers()
     if layers[4]:
         raise ArithmeticError("Order four did not cancel.")

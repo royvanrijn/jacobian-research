@@ -10,9 +10,9 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 13907 claim/source nodes, 11381 implication rules and 134 documented equivalence components. conditional: 32; falsified: 24; open: 537; proved: 13314.
+The graph contains 13955 claim/source nodes, 11409 implication rules and 134 documented equivalence components. conditional: 32; falsified: 24; open: 540; proved: 13359.
 
-The complete endpoint inventory contains 565 records. Curated topic obligation lists omit 88 unresolved endpoints. Inspect the full graph from the repository root.
+The complete endpoint inventory contains 568 records. Curated topic obligation lists omit 88 unresolved endpoints. Inspect the full graph from the repository root.
 
 ```sh
 python3 research/scripts/research.py gaps --all
@@ -1223,8 +1223,10 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | [JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-REDUCED-CUBIC-CASES](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_REDUCED_CUBIC_CASES.md) | proved | complete | none in declared routes |
 | [JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-QUADRATIC-AFFINE-EXCLUSION](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_QUADRATIC_AFFINE_MATES.md) | proved | complete | none in declared routes |
 | [JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-TWO-QUADRATIC-MATES-EXCLUSION](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_TWO_QUADRATIC_MATES.md) | proved | complete | none in declared routes |
+| [JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md) | proved | complete | none in declared routes |
 | [JAC-ALPOGE-GALLAGHER-SEPARATE-COORDINATE-DEGREE-OBSTRUCTIONS](jacobian/monodromy-theory/ALPOGE_GALLAGHER_SEPARATE_DEGREE_OBSTRUCTIONS.md) | proved | complete | none in declared routes |
 | [JAC-SEXTIC-KELLER-GRADED-ONE-NEGATIVE-ONE-NEGATIVE-TWO](jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_112.md) | proved | complete | none in declared routes |
+| [JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION](jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_ACTION.md) | proved | complete | none in declared routes |
 | [JAC-SEXTIC-TANGENT-CONIC-TWELVE-SIX-EXCLUSION](jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_TWELVE_SIX.md) | proved | complete | none in declared routes |
 | [JAC-SEXTIC-TANGENT-CONIC-QUARTIC-SCALAR-EXCLUSION](jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_HIGH_MATES.md) | proved | complete | none in declared routes |
 | [JAC-PLANE-SIX-SHEET-A6-ORDINARY-CUSP-COPRIME-WIDTHS-EXCLUSION](jacobian/monodromy-theory/KELLER_WIDTH_FIVE_ALTERNATING_ORDINARY_CUSP_EXCLUSION.md) | proved | complete | none in declared routes |
@@ -1232,6 +1234,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | [JAC-PLANE-SIX-SHEET-A6-PUISEUX-TWO-FIVE-CUSP-COPRIME-WIDTHS-EXCLUSION](jacobian/monodromy-theory/KELLER_ALTERNATING_PUISEUX_TWO_FIVE_COPRIME_WIDTHS.md) | proved | complete | none in declared routes |
 | [JAC-PLANE-SIX-SHEET-A6-PUISEUX-TWO-FIVE-CUSP-COMPOSITE-WIDTH](jacobian/monodromy-theory/KELLER_ALTERNATING_PUISEUX_TWO_FIVE_COPRIME_WIDTHS.md) | proved | complete | none in declared routes |
 | [JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-SQUAREFREE-RESIDUAL](jacobian/monodromy-theory/QUARTIC_AFFINE_SOURCE_COMPONENTS_THROUGH_DEGREE_SEVEN.md) | proved | complete | none in declared routes |
+| [JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -1242,7 +1245,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | GAP-JAC-BGV-UNRESTRICTED-WITT-DEGREE-GROWTH | mathematical | open | partial | For each fixed odd prime and degree cap, determine whether the prescribed BGV seed eventually has no determinant-one lift within the cap, across all correction choices. Radial and affine-line restrictions give scoped exclusions. The unrestricted minimum and existence of an integral polynomial lift beyond them remain open. | GAP-JAC-BGV-UNRESTRICTED-WITT-DEGREE-GROWTH (open) |
 | GAP-JAC-PLANE-SIX-SHEET-ADMISSION | mathematical | open | complete | Exclude actual polynomial plane Keller maps of generic sheet degree six. Retain the refined S6 and A6 affine cusp profiles and the full normalization. The two saturated S6 profiles and the A6 case with two unramified primes require nonabelian Orevkov invariant. With one unramified prime A6 requires a unique A1 source singularity over an ordinary cusp, and with zero its sole intrinsic cusp is (2,5). All cases have no proper intermediate field. In the smooth six-sheet cases, the S₆ directional bounds are 7, 7 and 8, with weighted total-degree bounds 8, 8 and 9. A sole-transposition exceptional fold has original longitudinal degree at least 48. The immersed sole-transposition slice strengthens the fold bound to 60, with restriction degrees (8,10) at equality. The immersed A₆ sole 3-cycle branch has composite width at least six and genus at least two. At width six the remaining genus and pole-count pairs are (2,4) and (3,2). In both cuspidal alternating profiles, every width is composite and at least six, the ordinary degree of the ramified curve is at least eight, and no polynomial target frame has coprime widths. The singular width-five genus-two profile is excluded. Marked admission of the mixed symmetric elliptic slices remains open. | GAP-JAC-PLANE-SIX-SHEET-ADMISSION (open) |
 | GAP-JAC-SUBTREE-SHUFFLE-UNIFORM | mathematical | open | partial | Cubic eventual shuffle membership holds forp<=3 and fails for everyp>=17. Determine the least failing length in[4,17], particularly whether fixedp4 has a finite dimension-uniform inverse bound or an unbounded inverse family. The58-variable index4 example gives only a lower bound207; the7/9 fibre obstructions and scalar restart barriers do not decide this alternative. | GAP-JAC-SUBTREE-SHUFFLE-UNIFORM (open) |
-| GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION | mathematical | open | partial | Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. For a quartic component affine in a source direction, the triple-line and parabolic shears are excluded. The localized tangent-conic form is excluded. In the squarefree coefficient residual a constant target frame leaves only mate z-degrees (3,2), with leading coefficients proportional to a,a or to x^3,x^2(gamma(xy−1)+delta), where a=x(xy−1). The ordinary minimum is seven in the equivariant class of weight (1,−1,−2). Without equivariance the minimum is six or seven. | GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION (open) |
+| GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION | mathematical | open | partial | Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. The unrestricted minimum is six or seven. | GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION (open) |
 | GAP-JACOBIAN-1 | mathematical | open | partial | A complete classification of Keller-map monodromy remains open. | GAP-JACOBIAN-1 (open) |
 | GAP-JACOBIAN-3 | mathematical | open | partial | Complete-type ruling descent and existence of a genuine proper intermediate remain open. | GAP-JACOBIAN-3 (open) |
 | GAP-JACOBIAN-4 | mathematical | open | partial | Improve any of four construction upper bounds in its stated class: dimension twelve for an integral cubic Keller collision, dimension eighteen for a rational homogeneous cubic Keller collision, dimension eighty-nine for an integral cube-linear map with a rational collision, or thirty-six nonlinear output-monomial pairs for an integral cubic collision in dimension twelve. Preserve the full constant Jacobian identity and an explicit collision. Plane existence is the separate GOAL-JC2. | GAP-JACOBIAN-4 (open) |
@@ -1767,7 +1770,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 82 statements and 85 routes (791 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 82 statements and 85 routes (797 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -2504,7 +2507,7 @@ Current unconditional proof-source leaves are omitted from this diagram; each di
 
 Factorial moment functionals, composition rigidity and Strong Factorial families. Coefficient-uniform windows are proved for all quadratic phases in every dimension. Ordinary two-monomial coprimality in arbitrary dimension first remains at terminal fifteen.
 
-**Computed obligation progress:** 69 open; 37 proved / discharged.
+**Computed obligation progress:** 71 open; 37 proved / discharged.
 
 **Authored scope assessment:** Dense univariate quadratics and their independent one- and two-linear adjunctions have complete all-start windows of lengths three, four and five respectively, over every characteristic-zero field. The older q=91 resonance was a limit of an earlier criterion.
 
@@ -3853,7 +3856,8 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | GAP-SFC-ARBITRARY-UNIVARIATE-TRINOMIALS | mathematical | open | partial | For every characteristic-zero field, 0<=a<b<c, ABC!=0 and n>=1, at least one of the factorial moments of A*x^a+B*x^b+C*x^c at orders n,n+1,n+2 is nonzero. | GAP-SFC-ARBITRARY-UNIVARIATE-TRINOMIALS (open) |
 | GAP-SFC-D1-TRIANGLE-NONPRIME-POWER-WINDOWS | mathematical | open | partial | For every n>=1 outside the proved prime-power and shifted windows, the dyadic boundary and prefix tests, and the starts n=2^k-j for k>=3 and j in {4,5,6,7}, rule out P_n=P_(n+1)=P_(n+2)=0 for abc Delta!=0 with distinct complex coefficients and all a+b+c-2t nonzero. Every common zero must obey the exact two-power relation (3) at the same point. | GAP-SFC-D1-TRIANGLE-NONPRIME-POWER-WINDOWS (open) |
 | GAP-SFC-DEEPEST-ORDER-JET-MINORS | mathematical | open | partial | For bivariate phases with a strictly isolated effective slope, exclude actual support-size zero windows at high-depth starts through shifted local expansions or an equivalent quantitative separation. The literal monomial-cost upper bound on leading-column minors is falsified. A valid threshold must account for cancellation or allow later jet columns when the initial columns have high valuation. Bounded-depth starts and phases with tied slopes still require separate arguments. | GAP-SFC-DEEPEST-ORDER-JET-MINORS (open) |
-| GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN | mathematical | open | partial | Prove R(L,H;a,d)<0 in the chart eliminating column 2 for every real L,H>=0 and integer d>=2, 0<a<d. The all-height test covers d<=80 and the leading height part gives a fixed-support interior sign threshold. Coefficientwise nonpositivity is a sufficient route. | GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN (open) |
+| GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS | mathematical | open | partial | For integer 0<a<d, with P=S/K defined by (5), prove coefficientwise P_(a,d+1)>=432 L^4 H^4 P_(a,d) everywhere and P_(a+1,d+1)>=(432/2^epsilon) L^(4-epsilon) H^2 P_(a,d) on d-a=1, where S=-R and epsilon is the indicator of even a. | GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS (open) |
+| GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS | mathematical | open | partial | For every nonnegative integer pair A,B, prove coefficientwise nonnegativity in the reciprocal heights of Q_(A+1,B)-Q_(A,B) and Q_(A,B+1)-Q_(A,B), with Q the normalization of -R by the height reversal and 432^d. | GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS (open) |
 | GAP-SFC-HOMOGENEOUS-TRINOMIAL-SHIFTED-AXIS-TERMINAL | mathematical | open | partial | For every higher start n>=3 and homogeneous bivariate trinomial axis profile, establish a nonzero rational decoupled resultant at n,n+1,n+2, or find an identically vanishing profile. Established cases include a unique maximum on the two-column side, a sufficiently separated unique maximum, and the specified residue and gap conditions at even starts. | GAP-SFC-HOMOGENEOUS-TRINOMIAL-SHIFTED-AXIS-TERMINAL (open) |
 | GAP-SFC-ISOLATED-SLOPE-TOWER-ADJACENT-GERMS | mathematical | open | partial | For each fixed bivariate phase with unique least slope, prove that at least one full expansion (7) is nonzero across every window of s consecutive integer centers, where s is the actual support size, or give a counterexample to that formal separation. This would prove eventual support-size windows for the specified prime-power approaches. General starts and tied minimum slopes remain separate. | GAP-SFC-ISOLATED-SLOPE-TOWER-ADJACENT-GERMS (open) |
 | GAP-SFC-MARKED-DELETED-FACE-WINDOWS | mathematical | open | partial | On three-term bivariate supports with a unique minimum in an exponent row, obtain nonvanishing marks in the unresolved ranges of the fractional and integer reductions. In particular cover odd starts with a varying unmarked row and even starts below the digit-width separation. Prove that actual baseline candidates never collide, uniformly in the starting order and exponent profile, or find a counterexample. The arbitrary-support determinant handles a face with variation in only the marked row, up to finitely many missed starts per face width profile. | GAP-SFC-MARKED-DELETED-FACE-WINDOWS (open) |
@@ -3867,10 +3871,11 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | FACTORIAL-GAP3-HURWITZ-TN | mathematical | open | partial | Prove that the whole infinite H3(W_(n,n+beta-1)) is totally nonnegative for every integer n>=2 and every beta>0; the n<=16 theorem and first nine pivots do not prove this. | FACTORIAL-GAP3-STAIRCASE-POSITIVITY (open) |
 | GAP-FACT-ERDOS404-INFINITE-SEQUENCE | mathematical | open | partial | Construct increasing indices starting at 1 such that the 5-adic valuations of their partial factorial sums tend to infinity. The compactness implication from f(1,5)=infinity is proved in the canonical note, but that premise is open. | GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE (open) |
 | GAP-FACTORIAL-EIT-VI-ELLIPTIC-ALL-SCALE-PERIOD | mathematical | open | partial | For the fixed triangle and phase of EIT VI thm:elliptic-family, J_k(ξ)=∫_T ((1−2X−2Y)/4)^k exp(ξq) dX dY is transcendental and hence nonzero for every k≥0 and every nonzero algebraic ξ. This removes the exceptional scales for the corresponding block-radial factorial limit. | GAP-FACTORIAL-EIT-VI-ELLIPTIC-RECURRENCE-COPRIMALITY (open); GAP-FACTORIAL-EIT-V-ELLIPTIC-CONTINUED-DENSITY-COMPARISON (open) |
-| GAP-SFC-HOMOGENEOUS-TRINOMIAL-INITIAL-AXIS | mathematical | open | partial | Rule out simultaneous ordinary factorial zeros at orders 1, 2 and 3 for all homogeneous bivariate trinomial supports in the residual below the computable absolute degree bound. The unrestricted initial homogeneous trinomial statement reduces to this finite residual. | GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN (open) |
+| GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN | mathematical | open | partial | Prove R(L,H;a,d)<0 in the chart eliminating column 2 for every real L,H>=0 and integer d>=2, 0<a<d. The all-height test covers d<=80 and the leading height part gives a fixed-support interior sign threshold. Coefficientwise nonpositivity is a sufficient route. | GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS (open); GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS (open) |
 | GAP-POSITIVE-GAMMA-TERMINAL-FIVE | mathematical | proved / discharged | partial | For every positive real Gamma shape beta and integers a>=0,d>=1, each nonzero complex binomial X^a(A+B X^d) has a nonzero power moment at order four or five under the Gamma(beta) functional. This follows from the independent-Gamma two-monomial angular theorem by taking one row (a,a+d) of shape beta. The finite-Gamma-convolution counterexample concerns a different class. | none in declared routes |
 | GOAL-FACTORIAL-SFC-TWO-VARIABLES | goal | open | partial | For every nonzero f in C[x,y] with s nonzero monomials and every n>=1, at least one L(f^n),...,L(f^(n+s-1)) is nonzero. Arbitrary degrees and supports; this is the standard dimension-two conjecture, not the two-monomial family. | FACTORIAL-GENERAL-SFC (open) |
 | GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE | mathematical | open | partial | Do there exist a prime p and an infinite increasing sequence a_1<a_2<... of positive indices whose partial factorial sums have p-adic valuations tending to infinity? Equivalently, does f(a,p)=infinity hold for some positive a and prime p by compactness? The recorded p=5 and a=1 route is sufficient. The existence of many cancelling starts in Z_p, with a Hausdorff dimension lower bound, gives no individual positive-integer start. A uniform prime-41 certificate gives f(1,41)>=199623130720, with the first unhandled carry boundary of size eight. | GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE (open); GAP-FACT-ERDOS404-PRIME41-UNBOUNDED-JUMPS (open) |
+| GAP-SFC-HOMOGENEOUS-TRINOMIAL-INITIAL-AXIS | mathematical | open | partial | Rule out simultaneous ordinary factorial zeros at orders 1, 2 and 3 for all homogeneous bivariate trinomial supports in the residual below the computable absolute degree bound. The unrestricted initial homogeneous trinomial statement reduces to this finite residual. | GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS (open); GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS (open) |
 | GOAL-FACTORIAL-SFC-BINARY-QUADRATICS | goal | open | partial | For every nonzero f in C[x,y] of total degree at most two, with its actual number s of nonzero monomials, and every n>=1, at least one moment from n through n+s-1 is nonzero. Constant and linear terms are included; homogeneous quadratic closure alone does not prove this. | FACTORIAL-GENERAL-SFC (open) |
 | GAP-SFC-POWERED-TRIANGLE-FINITE-STARTS | mathematical | proved / discharged | partial | For each integer 2<=D<=35 and 3<=n<10000, prove the support-sized factorial window for every nonzero a(xy)^D+b(yz)^D+c(zx)^D over characteristic-zero fields. The actual number of active monomials sets the window length. This finite residual is equivalent to the unrestricted powered-triangle claim for D>=2. | none in declared routes |
 | FACTORIAL-KZ-SIMPLEX-FORMAL-VISIBILITY | mathematical | open | partial | For the same coherent representatives xi_Q from FACTORIAL-KZ-SIMPLEX-REPRESENTATION, prove xi_Q!=0 modulo every allowed formal relation. Retain actual-chain detection and boundary terms; nonexactness of a differential alone is insufficient. | FACTORIAL-KZ-SIMPLEX-REPRESENTATION (open); EIT-III-SIMPLEX-FORMAL-VISIBILITY-AND-NUMERICAL-NONVANISHING-EQUIVALENCE (open) |
@@ -4411,7 +4416,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 82 statements and 85 routes (3252 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 82 statements and 85 routes (3257 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -4443,7 +4448,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 
 **Authored scope assessment:** Global admission permits negative Laurent support. Isolated and every scalar ordered-square family are closed by universal all-order proofs.
 
-**Authored scope assessment:** For DC1, differential orders six, eight and nine force generation. Each order of a proper rank-one polynomial Weyl pair is composite and at least ten. Triangular mate subtraction gives nondividing orders with gcd at least four. An order-ten member would reduce with its mate to orders 10 and 15, with common factor of degree at least 30 and high root multiplicity exactly twenty.
+**Authored scope assessment:** For DC1, differential orders six, eight and nine force generation. Each order of a proper rank-one polynomial Weyl pair is composite and at least ten. Triangular mate subtraction gives nondividing orders with gcd at least four. An order-ten member would reduce with its mate to orders 10 and 15, with common factor of degree at least 30 and high root multiplicity exactly twenty. An order-twelve member has reduced mate order 16, 18, 30, 42 or 78, with the stated leading-factor profiles.
 
 **Authored scope assessment:** The mixed S_lambda and its specified first-order nonsymmetric perturbation are closed in every finite mate order by distinct adjoint and residue arguments. Every integer monomial-pole quadratic-square face is excluded by a weaker divisor character with its adjoint. Neither claim classifies the full actual division ring.
 
@@ -4562,6 +4567,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | [DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RESIDUE](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) | proved | complete | none in declared routes |
 | [DIX-POLYNOMIAL-WEYL-PERFECT-POWER-LEADING-FACTOR](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) | proved | complete | none in declared routes |
 | [DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RAMIFICATION](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) | proved | complete | none in declared routes |
+| [DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) | proved | complete | none in declared routes |
 | [DIX-POLYNOMIAL-GCD-THREE-LEADING-FACTOR](dixmier/dixmier-formal-lifting/POLYNOMIAL_GCD_THREE_LEADING_FACTOR.md) | proved | complete | none in declared routes |
 | [DIX-POLYNOMIAL-GCD-THREE-MULTI-ROOT-MULTIPLICITIES](dixmier/dixmier-formal-lifting/POLYNOMIAL_GCD_THREE_LEADING_FACTOR.md) | proved | complete | none in declared routes |
 | [DIX-POLYNOMIAL-GCD-THREE-INFINITY-DEGREE-BOUND](dixmier/dixmier-formal-lifting/POLYNOMIAL_GCD_THREE_LEADING_FACTOR.md) | proved | complete | none in declared routes |
@@ -4574,6 +4580,9 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | [DIX-POLYNOMIAL-WEYL-GCD-FIVE-NONCONSTANT-LEADING-FACTOR](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) | proved | complete | none in declared routes |
 | [DIX-POLYNOMIAL-WEYL-ORDER-TEN-RESIDUAL](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) | proved | complete | none in declared routes |
 | [DIX-POLYNOMIAL-WEYL-ORDER-FIFTEEN-RESIDUAL](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) | proved | complete | none in declared routes |
+| [DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) | proved | complete | none in declared routes |
+| [DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-FORTY-TWO-ROOT-FIELD](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) | proved | complete | none in declared routes |
+| [DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-REAL-FORTY-TWO-RESIDUAL](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) | proved | complete | none in declared routes |
 | [DIX-MONIC-POLYNOMIAL-ORDER-THROUGH-FIFTEEN](dixmier/dixmier-formal-lifting/MONIC_POLYNOMIAL_ORDER_THROUGH_FIFTEEN.md) | proved | complete | none in declared routes |
 | [DIX-POLYNOMIAL-WEYL-NONCONSTANT-LEADING-DEGREE-BOUND](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_WEIGHTED_DESCENT_AND_ORDER_THIRTY_ONE.md) | proved | complete | none in declared routes |
 | [DIX-MONIC-POLYNOMIAL-ORDER-THROUGH-THIRTY-ONE](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_WEIGHTED_DESCENT_AND_ORDER_THIRTY_ONE.md) | proved | complete | none in declared routes |
@@ -4669,17 +4678,17 @@ flowchart LR
   class n10 proved
   n11["DIX-POLYNOMIAL-WEYL-LEADING-<br/>FACTOR-RAMIFICATION<br/>proved"]
   class n11 proved
-  n12["DIX-POLYNOMIAL-WEYL-PERFECT-<br/>POWER-LEADING-FACTOR<br/>proved"]
+  n12["DIX-POLYNOMIAL-WEYL-LEADING-<br/>FACTOR-REAL-PARITY<br/>proved"]
   class n12 proved
-  n13["DIX-POLYNOMIAL-WEYL-<br/>TRANSLATED-ROOT-CROSSING<br/>proved"]
+  n13["DIX-POLYNOMIAL-WEYL-PERFECT-<br/>POWER-LEADING-FACTOR<br/>proved"]
   class n13 proved
-  n14["DIXMIER-PLANE-KELLER-GRAPH-<br/>FIXED-CHARACTERISTIC-<br/>UNIFORMITY<br/>proved"]
+  n14["DIX-POLYNOMIAL-WEYL-<br/>TRANSLATED-ROOT-CROSSING<br/>proved"]
   class n14 proved
-  n15["DIXMIER-EULER-REDUCTION<br/>proved"]
+  n15["DIXMIER-PLANE-KELLER-GRAPH-<br/>FIXED-CHARACTERISTIC-<br/>UNIFORMITY<br/>proved"]
   class n15 proved
-  n16["DIXMIER-CENTRALIZER-COMPLETION<br/>proved"]
+  n16["DIXMIER-EULER-REDUCTION<br/>proved"]
   class n16 proved
-  n17["DIXMIER-SCALAR-MATES<br/>proved"]
+  n17["DIXMIER-CENTRALIZER-COMPLETION<br/>proved"]
   class n17 proved
   n18["DIX-POLYNOMIAL-GCD-TWO-LOW-<br/>DEGREE-LEADING-FACTOR<br/>proved"]
   class n18 proved
@@ -4687,123 +4696,123 @@ flowchart LR
   class n19 proved
   n20["DIX-POLYNOMIAL-GCD-TWO-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"]
   class n20 proved
-  n21["DIXMIER-SKEWADJOINT-PRIME-<br/>STRING-OBSTRUCTION<br/>proved"]
+  n21["DIX-POLYNOMIAL-GCD-THREE-<br/>INFINITY-DEGREE-BOUND<br/>proved"]
   class n21 proved
-  n22["DIX-POLYNOMIAL-GCD-THREE-<br/>INFINITY-DEGREE-BOUND<br/>proved"]
+  n22["DIX-POLYNOMIAL-GCD-THREE-<br/>MULTI-ROOT-MULTIPLICITIES<br/>proved"]
   class n22 proved
-  n23["DIX-POLYNOMIAL-GCD-THREE-<br/>MULTI-ROOT-MULTIPLICITIES<br/>proved"]
+  n23["DIX-POLYNOMIAL-GCD-THREE-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"]
   class n23 proved
-  n24["DIX-POLYNOMIAL-GCD-THREE-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"]
+  n24["DIXMIER-LAURENT-FACES-AND-<br/>ADMISSION<br/>proved"]
   class n24 proved
-  n25["DIXMIER-LAURENT-FACES-AND-<br/>ADMISSION<br/>proved"]
+  n25["DIX-POLYNOMIAL-WEYL-REDUCED-<br/>ORDER-BOUNDS<br/>proved"]
   class n25 proved
-  n26["DIX-POLYNOMIAL-WEYL-REDUCED-<br/>ORDER-BOUNDS<br/>proved"]
+  n26["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THROUGH-FIFTEEN<br/>proved"]
   class n26 proved
-  n27["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THROUGH-FIFTEEN<br/>proved"]
+  n27["DIX-POLYNOMIAL-WEYL-<br/>NONCONSTANT-LEADING-DEGREE-<br/>BOUND<br/>proved"]
   class n27 proved
-  n28["DIX-POLYNOMIAL-WEYL-<br/>NONCONSTANT-LEADING-DEGREE-<br/>BOUND<br/>proved"]
+  n28["DIX-POLYNOMIAL-WEYL-REDUCED-<br/>ORDER-FOUR-BOUND<br/>proved"]
   class n28 proved
-  n29["DIX-POLYNOMIAL-WEYL-REDUCED-<br/>ORDER-FOUR-BOUND<br/>proved"]
+  n29["DIXMIER-ALL-COPRIME-ALGEBRAIC-<br/>STRING<br/>proved"]
   class n29 proved
-  n30["DIXMIER-ALL-COPRIME-ALGEBRAIC-<br/>STRING<br/>proved"]
+  n30["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THROUGH-THIRTY-ONE<br/>proved"]
   class n30 proved
-  n31["DIXMIER-SELFADJOINT-POWER-TWO-<br/>STRINGS<br/>proved"]
+  n31["DIX-POLYNOMIAL-WEYL-GCD-FIVE-<br/>NONCONSTANT-LEADING-FACTOR<br/>proved"]
   class n31 proved
-  n32["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THROUGH-THIRTY-ONE<br/>proved"]
+  n32["DIX-POLYNOMIAL-WEYL-GCD-FOUR-<br/>NONCONSTANT-LEADING-FACTOR<br/>proved"]
   class n32 proved
-  n33["DIX-POLYNOMIAL-WEYL-GCD-FIVE-<br/>NONCONSTANT-LEADING-FACTOR<br/>proved"]
+  n33["DIXMIER-MONIC-POLYNOMIAL-FOUR-<br/>SIX-CONSTANT-SKEW<br/>proved"]
   class n33 proved
-  n34["DIX-POLYNOMIAL-WEYL-GCD-FOUR-<br/>NONCONSTANT-LEADING-FACTOR<br/>proved"]
+  n34["DIXMIER-FORMAL-LIFTING<br/>proved"]
   class n34 proved
-  n35["DIXMIER-MONIC-POLYNOMIAL-FOUR-<br/>SIX-CONSTANT-SKEW<br/>proved"]
+  n35["DIXMIER-CUBIC-COVER-<br/>COMPATIBILITY<br/>proved"]
   class n35 proved
-  n36["DIXMIER-FORMAL-LIFTING<br/>proved"]
+  n36["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THIRTY-TWO-FACES<br/>proved"]
   class n36 proved
-  n37["DIXMIER-CUBIC-COVER-<br/>COMPATIBILITY<br/>proved"]
+  n37["DIXMIER-MONIC-POLYNOMIAL-FOUR-<br/>SIX-STRING-EXCLUSION<br/>proved"]
   class n37 proved
-  n38["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THIRTY-TWO-FACES<br/>proved"]
+  n38["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THIRTY-TWO<br/>proved"]
   class n38 proved
-  n39["DIXMIER-MONIC-POLYNOMIAL-FOUR-<br/>SIX-STRING-EXCLUSION<br/>proved"]
+  n39["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>GCD-SIXTEEN-QUOTIENTS<br/>proved"]
   class n39 proved
-  n40["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THIRTY-TWO<br/>proved"]
+  n40["DIX-POLYNOMIAL-FOUR-SIX-<br/>INFINITY-DEGREE-GATE<br/>proved"]
   class n40 proved
-  n41["DIXMIER-POLYNOMIAL-FOUR-SIX-<br/>LEADING-FACTOR-DEGREE-TWO<br/>proved"]
+  n41["DIX-POLYNOMIAL-FOUR-SIX-<br/>STRING-EXCLUSION<br/>proved"]
   class n41 proved
-  n42["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>GCD-SIXTEEN-QUOTIENTS<br/>proved"]
+  n42["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>DEGREE-THROUGH-THIRTY-THREE<br/>proved"]
   class n42 proved
-  n43["DIX-POLYNOMIAL-FOUR-SIX-<br/>INFINITY-DEGREE-GATE<br/>proved"]
+  n43["DIX-POLYNOMIAL-WEYL-SHAPED-<br/>GCD-SIXTEEN-SQUARE-CLASS<br/>proved"]
   class n43 proved
-  n44["DIX-POLYNOMIAL-FOUR-SIX-<br/>STRING-EXCLUSION<br/>proved"]
+  n44["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>DEGREE-THROUGH-FORTY-ONE<br/>proved"]
   class n44 proved
-  n45["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>DEGREE-THROUGH-THIRTY-THREE<br/>proved"]
+  n45["DIX-POLYNOMIAL-WEYL-<br/>INDIVIDUAL-LEADING-DEGREE-<br/>FORTY-TWO<br/>proved"]
   class n45 proved
-  n46["DIX-POLYNOMIAL-WEYL-SHAPED-<br/>GCD-SIXTEEN-SQUARE-CLASS<br/>proved"]
+  n46["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>FORTY-TWO-RESIDUAL<br/>proved"]
   class n46 proved
-  n47["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>DEGREE-THROUGH-FORTY-ONE<br/>proved"]
+  n47["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SECONDARY-ROOT-CONSTRAINTS<br/>proved"]
   class n47 proved
-  n48["DIX-POLYNOMIAL-WEYL-<br/>INDIVIDUAL-LEADING-DEGREE-<br/>FORTY-TWO<br/>proved"]
+  n48["DIX-POLYNOMIAL-WEYL-NONSQUARE-<br/>MINUS-FIFTEEN-THROUGH-FORTY-<br/>SEVEN<br/>proved"]
   class n48 proved
-  n49["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>FORTY-TWO-RESIDUAL<br/>proved"]
+  n49["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SCALAR-FACE-COEFFICIENT-<br/>DESCENT<br/>proved"]
   class n49 proved
-  n50["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SECONDARY-ROOT-CONSTRAINTS<br/>proved"]
+  n50["DIX-POLYNOMIAL-WEYL-FORMALLY-<br/>REAL-THROUGH-FORTY-SEVEN<br/>proved"]
   class n50 proved
-  n51["DIX-POLYNOMIAL-WEYL-NONSQUARE-<br/>MINUS-FIFTEEN-THROUGH-FORTY-<br/>SEVEN<br/>proved"]
+  n51["DIX-POLYNOMIAL-WEYL-TWO-<br/>NONSQUARES-THROUGH-FORTY-NINE<br/>proved"]
   class n51 proved
-  n52["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SCALAR-FACE-COEFFICIENT-<br/>DESCENT<br/>proved"]
+  n52["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>EULER-LOWER-COEFFICIENTS<br/>proved"]
   class n52 proved
-  n53["DIX-POLYNOMIAL-WEYL-FORMALLY-<br/>REAL-THROUGH-FORTY-SEVEN<br/>proved"]
+  n53["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>FINITE-POLE<br/>proved"]
   class n53 proved
-  n54["DIX-POLYNOMIAL-WEYL-TWO-<br/>NONSQUARES-THROUGH-FORTY-NINE<br/>proved"]
+  n54["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>EULER-ODD-HIERARCHY<br/>proved"]
   class n54 proved
-  n55["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>EULER-LOWER-COEFFICIENTS<br/>proved"]
+  n55["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>REGULAR-FINITE-POLE<br/>proved"]
   class n55 proved
-  n56["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>FINITE-POLE<br/>proved"]
+  n56["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>NORMALIZED-CUSP-RELATION<br/>proved"]
   class n56 proved
-  n57["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>EULER-ODD-HIERARCHY<br/>proved"]
+  n57["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>OPPOSITE-FOURIER-GEVREY<br/>proved"]
   class n57 proved
-  n58["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>REGULAR-FINITE-POLE<br/>proved"]
+  n58["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>REGULAR-SPECTRAL-MONODROMY<br/>proved"]
   class n58 proved
-  n59["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>NORMALIZED-CUSP-RELATION<br/>proved"]
+  n59["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SPLIT-PRIME-F7-TRANSFER<br/>proved"]
   class n59 proved
-  n60["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>OPPOSITE-FOURIER-GEVREY<br/>proved"]
+  n60["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SECOND-CUSP-CANCELLATION<br/>proved"]
   class n60 proved
-  n61["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>REGULAR-SPECTRAL-MONODROMY<br/>proved"]
+  n61["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>INDICIAL-JORDAN-DOMINATION<br/>proved"]
   class n61 proved
-  n62["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SPLIT-PRIME-F7-TRANSFER<br/>proved"]
+  n62["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>ISOLATED-FINITE-RESONANCE<br/>proved"]
   class n62 proved
-  n63["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SECOND-CUSP-CANCELLATION<br/>proved"]
+  n63["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>DIRECT-F7-CERTIFICATE<br/>proved"]
   class n63 proved
-  n64["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>INDICIAL-JORDAN-DOMINATION<br/>proved"]
+  n64["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>GRADED-FIELDS<br/>proved"]
   class n64 proved
-  n65["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>ISOLATED-FINITE-RESONANCE<br/>proved"]
+  n65["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SECOND-SPECTRAL-SPLITTING<br/>proved"]
   class n65 proved
-  n66["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>DIRECT-F7-CERTIFICATE<br/>proved"]
+  n66["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>EXCLUSION-UNDER-F7<br/>proved<br/>OR routes"]
   class n66 proved
-  n67["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>GRADED-FIELDS<br/>proved"]
+  n67["DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FORTY-<br/>NINE-FROM-F7<br/>proved<br/>OR routes"]
   class n67 proved
-  n68["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>SECOND-SPECTRAL-SPLITTING<br/>proved"]
+  n68["DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FIFTY-ONE-<br/>FROM-F7<br/>proved"]
   class n68 proved
-  n69["DIX-POLYNOMIAL-WEYL-FORTY-TWO-<br/>EXCLUSION-UNDER-F7<br/>proved<br/>OR routes"]
+  n69["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>THROUGH-FIFTY-THREE<br/>proved"]
   class n69 proved
-  n70["DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FORTY-<br/>NINE-FROM-F7<br/>proved<br/>OR routes"]
+  n70["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>THROUGH-FIFTY-FIVE<br/>proved"]
   class n70 proved
-  n71["DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FIFTY-ONE-<br/>FROM-F7<br/>proved"]
+  n71["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>FIFTY-SIX-PLANAR-SYSTEMS<br/>proved"]
   class n71 proved
-  n72["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>THROUGH-FIFTY-THREE<br/>proved"]
+  n72["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>THROUGH-FIFTY-NINE<br/>proved"]
   class n72 proved
-  n73["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>THROUGH-FIFTY-FIVE<br/>proved"]
+  n73["DIX-POLYNOMIAL-GCD-THREE-<br/>DEGREE-PAIR-BOUNDS<br/>proved"]
   class n73 proved
-  n74["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>FIFTY-SIX-PLANAR-SYSTEMS<br/>proved"]
+  n74["DIX-POLYNOMIAL-WEYL-ORDER-<br/>EIGHT-GENERATION<br/>proved"]
   class n74 proved
-  n75["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>THROUGH-FIFTY-NINE<br/>proved"]
+  n75["DIX-POLYNOMIAL-WEYL-ORDER-<br/>FIFTEEN-RESIDUAL<br/>proved"]
   class n75 proved
-  n76["DIX-POLYNOMIAL-GCD-THREE-<br/>DEGREE-PAIR-BOUNDS<br/>proved"]
+  n76["DIX-POLYNOMIAL-WEYL-ORDER-TEN-<br/>RESIDUAL<br/>proved"]
   class n76 proved
-  n77["DIX-POLYNOMIAL-WEYL-ORDER-<br/>EIGHT-GENERATION<br/>proved"]
+  n77["DIX-POLYNOMIAL-WEYL-ORDER-<br/>TWELVE-RESIDUAL<br/>proved"]
   class n77 proved
-  n78["DIX-POLYNOMIAL-WEYL-ORDER-<br/>FIFTEEN-RESIDUAL<br/>proved"]
+  n78["DIX-POLYNOMIAL-WEYL-ORDER-<br/>TWELVE-FORTY-TWO-ROOT-FIELD<br/>proved"]
   class n78 proved
-  n79["DIX-POLYNOMIAL-WEYL-ORDER-TEN-<br/>RESIDUAL<br/>proved"]
+  n79["DIX-POLYNOMIAL-WEYL-ORDER-<br/>TWELVE-REAL-FORTY-TWO-RESIDUAL<br/>proved"]
   class n79 proved
   r0{"AND<br/>DERIVE-DIX-KF-FAITHFUL-<br/>BOUNDED-GRAPH-TRANSFER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r0 proved
@@ -4817,60 +4826,58 @@ flowchart LR
   r2 --> n5
   r3{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THIRTY-TWO<br/>+1 pinned source<br/>proved"}
   class r3 proved
-  n38 --> r3
-  n32 --> r3
-  r3 --> n40
+  n36 --> r3
+  n30 --> r3
+  r3 --> n38
   r4{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THIRTY-TWO-FACES<br/>+2 pinned sources<br/>proved"}
   class r4 proved
-  n32 --> r4
-  n28 --> r4
-  r4 --> n38
+  n30 --> r4
+  n27 --> r4
+  r4 --> n36
   r5{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THROUGH-FIFTEEN<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r5 proved
-  n26 --> r5
+  n25 --> r5
   n20 --> r5
   n18 --> r5
   n19 --> r5
-  r5 --> n27
+  r5 --> n26
   r6{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THROUGH-THIRTY-ONE<br/>+1 pinned source<br/>proved"}
   class r6 proved
-  n28 --> r6
-  n26 --> r6
+  n27 --> r6
+  n25 --> r6
   n19 --> r6
-  r6 --> n32
+  r6 --> n30
   r7{"AND<br/>DERIVE-DIX-MONIC-SCALAR-<br/>COMMUTATOR-RESIDUE<br/>+1 pinned source<br/>proved"}
   class r7 proved
   r7 --> n4
   r8{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-HIGHER-ROOT-LOCAL-GATE<br/>+1 omitted proof premise<br/>proved"}
   class r8 proved
   r8 --> n6
-  r9{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-INFINITY-DEGREE-GATE<br/>+1 pinned source<br/>proved"}
+  r9{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-INFINITY-DEGREE-GATE<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r9 proved
   n6 --> r9
-  n39 --> r9
-  n41 --> r9
-  r9 --> n43
+  n37 --> r9
+  r9 --> n40
   r10{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-LEADING-FACTOR-RESIDUE<br/>proved"}
   class r10 proved
   n4 --> r10
   r10 --> n7
-  r11{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-STRING-EXCLUSION<br/>proved"}
+  r11{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-STRING-EXCLUSION<br/>+1 omitted proof premise<br/>proved"}
   class r11 proved
-  n39 --> r11
-  n41 --> r11
+  n37 --> r11
   n7 --> r11
   n6 --> r11
-  r11 --> n44
+  r11 --> n41
   r12{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-DEGREE-PAIR-BOUNDS<br/>+1 omitted proof premise<br/>proved"}
   class r12 proved
-  n22 --> r12
-  n75 --> r12
+  n21 --> r12
+  n72 --> r12
   n3 --> r12
-  r12 --> n76
+  r12 --> n73
   r13{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-INFINITY-DEGREE-BOUND<br/>+1 pinned source<br/>proved"}
   class r13 proved
   n19 --> r13
-  r13 --> n22
+  r13 --> n21
   r14{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-LEADING-FACTOR<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r14 proved
   n8 --> r14
@@ -4879,15 +4886,15 @@ flowchart LR
   r15{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-MULTI-ROOT-<br/>MULTIPLICITIES<br/>proved"}
   class r15 proved
   n19 --> r15
-  n12 --> r15
+  n13 --> r15
   n8 --> r15
-  r15 --> n23
+  r15 --> n22
   r16{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-NONDIVIDING-ORDERS-<br/>EXCLUSION<br/>proved"}
   class r16 proved
   n19 --> r16
   n8 --> r16
-  n13 --> r16
-  r16 --> n24
+  n14 --> r16
+  r16 --> n23
   r17{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-TWO-<br/>LEADING-FACTOR<br/>proved"}
   class r17 proved
   n8 --> r17
@@ -4902,313 +4909,326 @@ flowchart LR
   r19 --> n20
   r20{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-DEGREE-THROUGH-<br/>FORTY-ONE<br/>+3 pinned sources<br/>proved"}
   class r20 proved
-  n45 --> r20
-  n40 --> r20
-  n28 --> r20
-  r20 --> n47
+  n42 --> r20
+  n38 --> r20
+  n27 --> r20
+  r20 --> n44
   r21{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-DEGREE-THROUGH-<br/>THIRTY-THREE<br/>+1 pinned source<br/>proved"}
   class r21 proved
-  n42 --> r21
-  n28 --> r21
-  r21 --> n45
+  n39 --> r21
+  n27 --> r21
+  r21 --> n42
   r22{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-FIFTY-SIX-PLANAR-<br/>SYSTEMS<br/>+6 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r22 proved
-  n73 --> r22
-  n71 --> r22
+  n70 --> r22
+  n68 --> r22
   n3 --> r22
-  r22 --> n74
+  r22 --> n71
   r23{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-FORTY-TWO-RESIDUAL<br/>+2 pinned sources<br/>proved"}
   class r23 proved
-  n47 --> r23
-  n48 --> r23
-  r23 --> n49
+  n44 --> r23
+  n45 --> r23
+  r23 --> n46
   r24{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-GCD-SIXTEEN-<br/>QUOTIENTS<br/>+3 pinned sources<br/>proved"}
   class r24 proved
+  n36 --> r24
   n38 --> r24
-  n40 --> r24
-  r24 --> n42
+  r24 --> n39
   r25{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-FIVE<br/>+5 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r25 proved
-  n72 --> r25
-  n71 --> r25
+  n69 --> r25
+  n68 --> r25
   n3 --> r25
-  r25 --> n73
+  r25 --> n70
   r26{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-NINE<br/>+4 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r26 proved
-  n74 --> r26
-  n73 --> r26
-  n72 --> r26
+  n71 --> r26
+  n70 --> r26
+  n69 --> r26
   n3 --> r26
-  r26 --> n75
+  r26 --> n72
   r27{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-THREE<br/>+3 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r27 proved
-  n71 --> r27
-  n49 --> r27
+  n68 --> r27
+  n46 --> r27
   n3 --> r27
-  r27 --> n72
+  r27 --> n69
   r28{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FIFTY-ONE-<br/>FROM-F7<br/>+3 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r28 proved
-  n70 --> r28
+  n67 --> r28
   n3 --> r28
-  n47 --> r28
-  r28 --> n71
+  n44 --> r28
+  r28 --> n68
   r29{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FORTY-<br/>NINE-FROM-F7<br/>+1 omitted proof premise<br/>proved"}
   class r29 proved
-  n66 --> r29
+  n63 --> r29
   n3 --> r29
-  n47 --> r29
-  n42 --> r29
+  n44 --> r29
+  n39 --> r29
+  n48 --> r29
   n51 --> r29
-  n54 --> r29
-  r29 --> n70
+  r29 --> n67
   r30{"AND<br/>PLANAR-F7-ALTERNATIVE-TO-WEYL-<br/>DEGREES-THROUGH-FORTY-NINE<br/>+1 omitted proof premise<br/>proved"}
   class r30 proved
-  n69 --> r30
+  n66 --> r30
   n3 --> r30
-  n47 --> r30
-  n42 --> r30
+  n44 --> r30
+  n39 --> r30
+  n48 --> r30
   n51 --> r30
-  n54 --> r30
-  r30 --> n70
+  r30 --> n67
   r31{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORMALLY-REAL-THROUGH-FORTY-<br/>SEVEN<br/>proved"}
   class r31 proved
-  n51 --> r31
-  r31 --> n53
+  n48 --> r31
+  r31 --> n50
   r32{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-<br/>DIRECT-F7-CERTIFICATE<br/>+2 pinned sources<br/>proved"}
   class r32 proved
-  n62 --> r32
-  n49 --> r32
-  n58 --> r32
   n59 --> r32
-  r32 --> n66
+  n46 --> r32
+  n55 --> r32
+  n56 --> r32
+  r32 --> n63
   r33{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-EULER-LOWER-<br/>COEFFICIENTS<br/>proved"}
   class r33 proved
-  n50 --> r33
-  n52 --> r33
-  r33 --> n55
+  n47 --> r33
+  n49 --> r33
+  r33 --> n52
   r34{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-EULER-ODD-HIERARCHY<br/>proved"}
   class r34 proved
-  n55 --> r34
-  r34 --> n57
+  n52 --> r34
+  r34 --> n54
   r35{"AND<br/>AUDITED-PLANAR-F7-TO-WEYL-<br/>DEGREE-FORTY-TWO<br/>+1 omitted proof premise<br/>blocked"}
   class r35 open
-  n62 --> r35
-  r35 --> n69
+  n59 --> r35
+  r35 --> n66
   r36{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-EXCLUSION-UNDER-F7<br/>conditional"}
   class r36 conditional
-  n62 --> r36
-  r36 --> n69
+  n59 --> r36
+  r36 --> n66
   r37{"AND<br/>DIRECT-CERTIFICATE-TO-WEYL-<br/>DEGREE-FORTY-TWO-EXCLUSION<br/>proved"}
   class r37 proved
-  n66 --> r37
-  r37 --> n69
+  n63 --> r37
+  r37 --> n66
   r38{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-FINITE-POLE<br/>proved"}
   class r38 proved
+  n46 --> r38
+  n47 --> r38
   n49 --> r38
-  n50 --> r38
-  n52 --> r38
   n8 --> r38
-  r38 --> n56
+  r38 --> n53
   r39{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-GRADED-FIELDS<br/>proved"}
   class r39 proved
-  n63 --> r39
-  n59 --> r39
-  r39 --> n67
+  n60 --> r39
+  n56 --> r39
+  r39 --> n64
   r40{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-INDICIAL-JORDAN-<br/>DOMINATION<br/>proved"}
   class r40 proved
-  n56 --> r40
-  n61 --> r40
-  r40 --> n64
+  n53 --> r40
+  n58 --> r40
+  r40 --> n61
   r41{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-ISOLATED-FINITE-<br/>RESONANCE<br/>proved"}
   class r41 proved
-  n56 --> r41
+  n53 --> r41
+  n55 --> r41
   n58 --> r41
-  n61 --> r41
-  r41 --> n65
+  r41 --> n62
   r42{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-NORMALIZED-CUSP-<br/>RELATION<br/>proved"}
   class r42 proved
-  n50 --> r42
-  n58 --> r42
-  r42 --> n59
+  n47 --> r42
+  n55 --> r42
+  r42 --> n56
   r43{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-OPPOSITE-FOURIER-<br/>GEVREY<br/>proved"}
   class r43 proved
-  n49 --> r43
-  n58 --> r43
-  r43 --> n60
+  n46 --> r43
+  n55 --> r43
+  r43 --> n57
   r44{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-REGULAR-FINITE-POLE<br/>+1 pinned source<br/>proved"}
   class r44 proved
-  n56 --> r44
-  r44 --> n58
+  n53 --> r44
+  r44 --> n55
   r45{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-REGULAR-SPECTRAL-<br/>MONODROMY<br/>proved"}
   class r45 proved
-  n56 --> r45
-  n58 --> r45
-  r45 --> n61
+  n53 --> r45
+  n55 --> r45
+  r45 --> n58
   r46{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-SCALAR-FACE-<br/>COEFFICIENT-DESCENT<br/>proved"}
   class r46 proved
-  n50 --> r46
-  r46 --> n52
+  n47 --> r46
+  r46 --> n49
   r47{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-SECOND-CUSP-<br/>CANCELLATION<br/>proved"}
   class r47 proved
-  n59 --> r47
-  r47 --> n63
+  n56 --> r47
+  r47 --> n60
   r48{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-SECOND-SPECTRAL-<br/>SPLITTING<br/>proved"}
   class r48 proved
-  n59 --> r48
+  n56 --> r48
+  n58 --> r48
   n61 --> r48
-  n64 --> r48
-  r48 --> n68
+  r48 --> n65
   r49{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-SECONDARY-ROOT-<br/>CONSTRAINTS<br/>+1 pinned source<br/>proved"}
   class r49 proved
-  n49 --> r49
-  r49 --> n50
+  n46 --> r49
+  r49 --> n47
   r50{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>FORTY-TWO-SPLIT-<br/>PRIME-F7-TRANSFER<br/>+2 pinned sources<br/>proved"}
   class r50 proved
-  n49 --> r50
-  n58 --> r50
-  n56 --> r50
-  r50 --> n62
+  n46 --> r50
+  n55 --> r50
+  n53 --> r50
+  r50 --> n59
   r51{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>GCD-FIVE-NONCONSTANT-LEADING-<br/>FACTOR<br/>+3 pinned sources<br/>proved"}
   class r51 proved
-  n13 --> r51
-  n28 --> r51
+  n14 --> r51
+  n27 --> r51
   n8 --> r51
-  r51 --> n33
+  r51 --> n31
   r52{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>GCD-FOUR-NONCONSTANT-LEADING-<br/>FACTOR<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r52 proved
-  n13 --> r52
-  n28 --> r52
+  n14 --> r52
+  n27 --> r52
   n8 --> r52
-  n12 --> r52
+  n13 --> r52
   n3 --> r52
-  r52 --> n34
+  r52 --> n32
   r53{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>INDIVIDUAL-LEADING-DEGREE-<br/>FORTY-TWO<br/>proved"}
   class r53 proved
-  n47 --> r53
-  n28 --> r53
-  r53 --> n48
+  n44 --> r53
+  n27 --> r53
+  r53 --> n45
   r54{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>LEADING-FACTOR-RAMIFICATION<br/>proved"}
   class r54 proved
   n8 --> r54
   r54 --> n11
-  r55{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>LEADING-FACTOR-RESIDUE<br/>proved"}
+  r55{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>LEADING-FACTOR-REAL-PARITY<br/>proved"}
   class r55 proved
-  n4 --> r55
-  r55 --> n8
-  r56{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>NONCONSTANT-LEADING-DEGREE-<br/>BOUND<br/>+1 pinned source<br/>proved"}
+  n8 --> r55
+  r55 --> n12
+  r56{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>LEADING-FACTOR-RESIDUE<br/>proved"}
   class r56 proved
-  n8 --> r56
-  n26 --> r56
-  r56 --> n28
-  r57{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>NONSQUARE-MINUS-FIFTEEN-<br/>THROUGH-FORTY-SEVEN<br/>+3 pinned sources<br/>proved"}
+  n4 --> r56
+  r56 --> n8
+  r57{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>NONCONSTANT-LEADING-DEGREE-<br/>BOUND<br/>+1 pinned source<br/>proved"}
   class r57 proved
-  n49 --> r57
-  n28 --> r57
-  r57 --> n51
-  r58{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-EIGHT-GENERATION<br/>+1 omitted proof premise<br/>proved"}
+  n8 --> r57
+  n25 --> r57
+  r57 --> n27
+  r58{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>NONSQUARE-MINUS-FIFTEEN-<br/>THROUGH-FORTY-SEVEN<br/>+3 pinned sources<br/>proved"}
   class r58 proved
-  n29 --> r58
-  n75 --> r58
-  n20 --> r58
-  n34 --> r58
-  r58 --> n77
-  r59{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-FIFTEEN-RESIDUAL<br/>proved"}
+  n46 --> r58
+  n27 --> r58
+  r58 --> n48
+  r59{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-EIGHT-GENERATION<br/>+1 omitted proof premise<br/>proved"}
   class r59 proved
-  n77 --> r59
-  n29 --> r59
-  n75 --> r59
-  n33 --> r59
-  r59 --> n78
-  r60{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-TEN-RESIDUAL<br/>+1 omitted proof premise<br/>proved"}
+  n28 --> r59
+  n72 --> r59
+  n20 --> r59
+  n32 --> r59
+  r59 --> n74
+  r60{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-FIFTEEN-RESIDUAL<br/>proved"}
   class r60 proved
-  n77 --> r60
-  n29 --> r60
-  n75 --> r60
-  n33 --> r60
-  n8 --> r60
-  n12 --> r60
-  n11 --> r60
-  n3 --> r60
-  r60 --> n79
-  r61{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>PERFECT-POWER-LEADING-FACTOR<br/>+1 pinned source<br/>proved"}
+  n74 --> r60
+  n28 --> r60
+  n72 --> r60
+  n31 --> r60
+  r60 --> n75
+  r61{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-TEN-RESIDUAL<br/>+1 omitted proof premise<br/>proved"}
   class r61 proved
+  n74 --> r61
+  n28 --> r61
+  n72 --> r61
+  n31 --> r61
   n8 --> r61
-  r61 --> n12
-  r62{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>REDUCED-ORDER-BOUNDS<br/>+3 omitted proof premises<br/>proved"}
+  n13 --> r61
+  n11 --> r61
+  n3 --> r61
+  r61 --> n76
+  r62{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-TWELVE-FORTY-TWO-ROOT-<br/>FIELD<br/>+1 pinned source<br/>proved"}
   class r62 proved
-  n20 --> r62
-  r62 --> n26
-  r63{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>REDUCED-ORDER-FOUR-BOUND<br/>proved"}
+  n77 --> r62
+  r62 --> n78
+  r63{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-TWELVE-REAL-FORTY-TWO-<br/>RESIDUAL<br/>proved"}
   class r63 proved
-  n26 --> r63
-  n24 --> r63
-  r63 --> n29
-  r64{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>SHAPED-GCD-SIXTEEN-SQUARE-<br/>CLASS<br/>+2 pinned sources<br/>proved"}
+  n77 --> r63
+  n78 --> r63
+  n12 --> r63
+  r63 --> n79
+  r64{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>ORDER-TWELVE-RESIDUAL<br/>+6 pinned sources<br/>+2 omitted proof premises<br/>proved"}
   class r64 proved
-  n42 --> r64
-  r64 --> n46
-  r65{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>TRANSLATED-ROOT-CROSSING<br/>+2 pinned sources<br/>proved"}
+  n32 --> r64
+  n14 --> r64
+  n74 --> r64
+  n28 --> r64
+  n27 --> r64
+  n8 --> r64
+  n11 --> r64
+  n72 --> r64
+  n3 --> r64
+  r64 --> n77
+  r65{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>PERFECT-POWER-LEADING-FACTOR<br/>+1 pinned source<br/>proved"}
   class r65 proved
   n8 --> r65
   r65 --> n13
-  r66{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>TWO-NONSQUARES-THROUGH-FORTY-<br/>NINE<br/>+3 pinned sources<br/>proved"}
+  r66{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>REDUCED-ORDER-BOUNDS<br/>+3 omitted proof premises<br/>proved"}
   class r66 proved
-  n51 --> r66
-  n46 --> r66
-  n47 --> r66
-  r66 --> n54
-  r67{"AND<br/>DERIVE-DIX-WEYL-NONDIVIDING-<br/>BERNSTEIN-DEGREE-PAIR-TO-<br/>PLANAR-KELLER<br/>+2 pinned sources<br/>proved"}
+  n20 --> r66
+  r66 --> n25
+  r67{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>REDUCED-ORDER-FOUR-BOUND<br/>proved"}
   class r67 proved
-  r67 --> n3
-  r68{"AND<br/>DERIVE-DIXMIER-ALL-COPRIME-<br/>ALGEBRAIC-STRING<br/>+6 omitted proof premises<br/>proved"}
+  n25 --> r67
+  n23 --> r67
+  r67 --> n28
+  r68{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>SHAPED-GCD-SIXTEEN-SQUARE-<br/>CLASS<br/>+2 pinned sources<br/>proved"}
   class r68 proved
-  r68 --> n30
-  r69{"AND<br/>SOURCE-ROUTE-DIXMIER-<br/>CENTRALIZER-COMPLETION<br/>+13 omitted proof premises<br/>proved"}
+  n39 --> r68
+  r68 --> n43
+  r69{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>TRANSLATED-ROOT-CROSSING<br/>+2 pinned sources<br/>proved"}
   class r69 proved
-  r69 --> n16
-  r70{"AND<br/>SOURCE-ROUTE-DIXMIER-CUBIC-<br/>COVER-COMPATIBILITY<br/>+25 omitted proof premises<br/>proved"}
+  n8 --> r69
+  r69 --> n14
+  r70{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>TWO-NONSQUARES-THROUGH-FORTY-<br/>NINE<br/>+3 pinned sources<br/>proved"}
   class r70 proved
-  r70 --> n37
-  r71{"AND<br/>SOURCE-ROUTE-DIXMIER-EULER-<br/>REDUCTION<br/>+2 omitted proof premises<br/>proved"}
+  n48 --> r70
+  n43 --> r70
+  n44 --> r70
+  r70 --> n51
+  r71{"AND<br/>DERIVE-DIX-WEYL-NONDIVIDING-<br/>BERNSTEIN-DEGREE-PAIR-TO-<br/>PLANAR-KELLER<br/>+2 pinned sources<br/>proved"}
   class r71 proved
-  r71 --> n15
-  r72{"AND<br/>SOURCE-ROUTE-DIXMIER-FORMAL-<br/>LIFTING<br/>+60 omitted proof premises<br/>proved"}
+  r71 --> n3
+  r72{"AND<br/>DERIVE-DIXMIER-ALL-COPRIME-<br/>ALGEBRAIC-STRING<br/>+6 omitted proof premises<br/>proved"}
   class r72 proved
-  r72 --> n36
-  r73{"AND<br/>SOURCE-ROUTE-DIXMIER-LAURENT-<br/>FACES-AND-ADMISSION<br/>+20 omitted proof premises<br/>proved"}
+  r72 --> n29
+  r73{"AND<br/>SOURCE-ROUTE-DIXMIER-<br/>CENTRALIZER-COMPLETION<br/>+13 omitted proof premises<br/>proved"}
   class r73 proved
-  r73 --> n25
-  r74{"AND<br/>DERIVE-DIXMIER-MONIC-<br/>POLYNOMIAL-FOUR-SIX-CONSTANT-<br/>SKEW<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r73 --> n17
+  r74{"AND<br/>SOURCE-ROUTE-DIXMIER-CUBIC-<br/>COVER-COMPATIBILITY<br/>+25 omitted proof premises<br/>proved"}
   class r74 proved
   r74 --> n35
-  r75{"AND<br/>DERIVE-DIXMIER-MONIC-<br/>POLYNOMIAL-FOUR-SIX-STRING-<br/>EXCLUSION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r75{"AND<br/>SOURCE-ROUTE-DIXMIER-EULER-<br/>REDUCTION<br/>+2 omitted proof premises<br/>proved"}
   class r75 proved
-  n35 --> r75
-  r75 --> n39
-  r76{"AND<br/>DERIVE-DIXMIER-PLANE-KELLER-<br/>GRAPH-FIXED-CHARACTERISTIC-<br/>UNIFORMITY<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r75 --> n16
+  r76{"AND<br/>SOURCE-ROUTE-DIXMIER-FORMAL-<br/>LIFTING<br/>+60 omitted proof premises<br/>proved"}
   class r76 proved
-  n9 --> r76
-  n2 --> r76
-  r76 --> n14
-  r77{"AND<br/>DERIVE-DIXMIER-PLANE-KELLER-<br/>GRAPH-PBW-NORM-CERTIFICATE<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r76 --> n34
+  r77{"AND<br/>SOURCE-ROUTE-DIXMIER-LAURENT-<br/>FACES-AND-ADMISSION<br/>+20 omitted proof premises<br/>proved"}
   class r77 proved
-  r77 --> n9
-  r78{"AND<br/>DERIVE-DIXMIER-PLANE-KELLER-<br/>GRAPH-TWO-DEGREE-LM<br/>+1 omitted proof premise<br/>proved"}
+  r77 --> n24
+  r78{"AND<br/>DERIVE-DIXMIER-MONIC-<br/>POLYNOMIAL-FOUR-SIX-CONSTANT-<br/>SKEW<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r78 proved
-  r78 --> n2
-  r79{"AND<br/>DERIVE-DIXMIER-POLYNOMIAL-<br/>FOUR-SIX-LEADING-FACTOR-<br/>DEGREE-TWO<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r78 --> n33
+  r79{"AND<br/>DERIVE-DIXMIER-MONIC-<br/>POLYNOMIAL-FOUR-SIX-STRING-<br/>EXCLUSION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r79 proved
-  n39 --> r79
-  r79 --> n41
-  r80{"AND<br/>SOURCE-ROUTE-DIXMIER-SCALAR-<br/>MATES<br/>+28 omitted proof premises<br/>proved"}
+  n33 --> r79
+  r79 --> n37
+  r80{"AND<br/>DERIVE-DIXMIER-PLANE-KELLER-<br/>GRAPH-FIXED-CHARACTERISTIC-<br/>UNIFORMITY<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r80 proved
-  r80 --> n17
-  r81{"AND<br/>DERIVE-DIXMIER-SELFADJOINT-<br/>POWER-TWO-STRINGS<br/>+6 omitted proof premises<br/>proved"}
+  n9 --> r80
+  n2 --> r80
+  r80 --> n15
+  r81{"AND<br/>DERIVE-DIXMIER-PLANE-KELLER-<br/>GRAPH-PBW-NORM-CERTIFICATE<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r81 proved
-  r81 --> n31
-  r82{"AND<br/>DERIVE-DIXMIER-SKEWADJOINT-<br/>PRIME-STRING-OBSTRUCTION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r81 --> n9
+  r82{"AND<br/>DERIVE-DIXMIER-PLANE-KELLER-<br/>GRAPH-TWO-DEGREE-LM<br/>+1 omitted proof premise<br/>proved"}
   class r82 proved
-  r82 --> n21
+  r82 --> n2
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -5217,7 +5237,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 83 routes (569 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 83 routes (577 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -5825,7 +5845,7 @@ Current unconditional proof-source leaves are omitted from this diagram; each di
 
 Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)). A common-kernel-gcd refined square-quotient weight gives another coefficient-uniform actual C6 tail, with an explicit reverse route to the previous quotient tail. Elementary real-quadratic norm recovery removes the kernel-gcd coefficient loop and yields stronger selected-cycle weighted tails, with an explicit chi coefficient gain. Fixed mixed powers2<=k<j,3|j,k∤j admit kernel-gcd recovery and chi-sensitive actual path/cycle weights, using casewise norm/Thue lifting; the square-cube case has a separate direct route. A conditional coarse-global-triple to actual-path transfer and exact majorant comparison identify a limited exponent-only barrier; they supply no prescribed-sum improvement. Dual graphs give uniform positive-coefficient counts for unrestricted products of two fixed powers; the squarefull3/10result has a separatefullscope alternate proof. Exact-five carriers give stronger restricted sectors for3-full sums. Coherent six-cycles give the unconditional all-target bound r3(N)<<N^(33/134+epsilon), resolving the positive-saving target; the stronger carrier support-capacity estimate remains open.
 
-**Computed obligation progress:** 161 open; 26 proved / discharged.
+**Computed obligation progress:** 162 open; 26 proved / discharged.
 
 **Authored scope assessment:** For every fixed imaginary quadratic field K, with arbitrary finite ideal class group G, ordered primitive principal norm numerical-value sums and the individual local/genus-shadow sums have sharp scale N J_K(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside that local set. For B=2G nonzero, every0<delta<delta_star(B) gives R_Lambda-R_P<<K,delta N J_K/log^(1+delta)N uniformly allN>=3 and all target valuations, where delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4. In particular the exponent1/5 works in every fixed field; constants remain field dependent. If2G=0, the individual sets coincide and the error is zero. The relative comparison holds on sufficiently large admissible targets. No endpoint, varying-field uniformity, mixed-field theorem, leading constant, numerical cutoff or exact exception list is asserted here.
 
@@ -8008,6 +8028,22 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | [ARITH-ABC-CUBIC-TANGENT-FIELD-PRESERVING-ELLIPTIC-QUOTIENT-MAPS](arithmetic/ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) | proved | partial | none in declared routes |
 | [ARITH-ABC-CUBIC-TANGENT-MOBIUS-COLLISIONS-FINITE](arithmetic/ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) | proved | partial | none in declared routes |
 | [ARITH-ABC-CUBIC-TANGENT-FIELD-MULTIPLICITY-VIA-HEIGHT](arithmetic/ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) | proved | partial | none in declared routes |
+| [ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON](arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md) | proved | partial | none in declared routes |
+| [ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS](arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md) | proved | partial | none in declared routes |
+| [ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-SHA-TAILS](arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-ORBIT-REDUCTION](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-COLLISION-EXAMPLES](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-PRIME-INDEX-COUNT](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-FULL-CYCLOTOMIC-COSET-COUNT](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) | proved | partial | none in declared routes |
+| [ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md) | proved | partial | none in declared routes |
+| [ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md) | proved | partial | none in declared routes |
+| [ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL](arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) | proved | partial | none in declared routes |
+| [ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE](arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-CUBIC-TANGENT-FIELD-COLLISION-FACTORIAL-MOMENT](arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) | proved | partial | none in declared routes |
+| [ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-COLLISION-INCIDENCE](arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -8094,6 +8130,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | GAP-ARITH-M12-LITERATURE | verification | proved / discharged | partial | Completed statement and hypothesis audit of the full Iwaniec-Pomykala 1993 paper. Theorem 1 is unconditional for each fixed admissible difference. Theorem 2 gives conditional eventual coprime sums, with logarithmic-order counts, assuming P4 uniformly for target-sized shifts. For Q(zeta_12), its splitting-prime semigroup is exactly C12, with sum targets 2 mod 12 and difference targets 0 mod 12. The count has product_(p\|N)(1-epsilon_p/p), with epsilon_p=1 on allowed primes and -1 otherwise; no explicit leading asymptotic is printed. This is a completed source comparison, not an unconditional sum theorem or a certification of historical priority. The present target-uniform C12 theorem now supplies the older coprime scope with an explicit leading constant and logarithmic saving by Mobius inversion. Later deconditioning of the original P4/P5 route, balance adaptations and exhaustive historical priority remain separate. | none in declared routes |
 | GAP-ARITH-M12-NATURAL-LOWER | mathematical | open | partial | OPEN: for every sufficiently large admissible N, prove R(N)>=cN T(N) with one fixed c>0, where R is the unrestricted positive raw simultaneous-norm coordinate count. The proved local singular-product comparison and unconditional upper bound do not supply this lower bound. Balanced and centered-window analogues are additional stronger input obligations; the original balanced H1 remains unproved. | GAP-ARITH-M12-NATURAL-LOWER (open) |
 | GAP-ARITH-M12-SEMILINEAR-MIXED-REMAINDER | mathematical | open | partial | For some fixed 0 < sigma < 1/2, prove for every sufficiently large N congruent to 2 modulo 12 that the specified half-dimensional lower-weight remainder sum at D = N^(1/2+sigma), z = sqrt(N), is at least -o(X_N V_N(sqrt(N))). Equivalently, after exact finite-kernel compression and a negligible small-k tail, control the concrete signed mixed average (22) with mu(k), 2^omega(ell) and lambda^-_(k ell). The small coefficient portion is controlled, but the required large-ell region is not. No individual large-coefficient asymptotic, arbitrary combined-modulus phase estimate or L1 bound is being assumed. The stronger absolute estimate (9) would suffice but is not proved. | GAP-ARITH-M12-SEMILINEAR-MIXED-REMAINDER (open) |
+| GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX | mathematical | open | partial | Give exact formulas and certified replay data for every entry of the ray-character Cassels-Tate pairing for arbitrary admissible R, including epsilon_R=1 and the local correction at 3 for twist ratios that are not local cubes. The fixed 5-23 block and selected matrices do not settle this scope. | GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX (open) |
 | GAP-ARITH-POWERFUL-FIXED-OFFSET-SHARP-ERROR | mathematical | open | partial | For unequal fixed offsets u>v, improve the error in the aligned common-neighbor graph argument itself from O_(u,v)(r^(-11/5)) to O_(u,v)(r^(-5/2)) after the leading saving 2/r^2. The numerical count at that threshold follows from the stronger abc endpoint bound. | GAP-ARITH-POWERFUL-FIXED-OFFSET-SHARP-ERROR (open) |
 | GAP-ARITH-RANDOM-PRIME-CRITICAL-BOUNDED-TEST-INTENSITY | mathematical | open | partial | For the critical model, cutoff and countable geometric grids of equation (6), prove almost-sure empirical convergence for clipped conditional intensities μ_n at fixed integer cutoffs and on a countable convergence-determining bounded Lipschitz class. Prove vanishing empirical and Haar clipping errors as the cutoffs tend to infinity, along the same grids. The finite k=2 one- and two-root moment comparison and arithmetic tail estimate are the initial test. | GAP-ARITH-RANDOM-PRIME-CRITICAL-BOUNDED-TEST-INTENSITY (open) |
 | GAP-ARITH-RANDOM-PRIME-CRITICAL-SUPPORT-OVERLAP | mathematical | open | partial | For every fixed k>=2 at gamma=1-1/k, lambda=1, 2 admitted, fix 0<b<1 and expose primes through exp((log X)^b). Almost surely on a countable geometric-grid family with ratios decreasing to 1, prove X^-1 sum_{n<=X} Delta_n=o(1), where Delta_n sums conditional joint probabilities over distinct unordered representations of n with intersecting unexposed prime supports, as in (6). | GAP-ARITH-RANDOM-PRIME-CRITICAL-SUPPORT-OVERLAP (open) |
@@ -8705,7 +8742,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 80 routes (4609 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 80 routes (4638 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 

@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from dependency_graph import DependencyGraph
 from dependency_sources import missing_source_closure
+from dependency_bounds import bounds_records
 
 
 class RetainedDependencyTests(unittest.TestCase):
@@ -55,6 +56,32 @@ class RetainedDependencyTests(unittest.TestCase):
             with self.subTest(premise=premise):
                 scenario = self.graph.simulate({premise: "stale"})
                 self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_squarefree_quartic_bounds_retire_only_with_the_full_exclusion(self):
+        exclusion = "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION"
+        inversion = "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION"
+        bound_node = "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-MATE-SOURCE-DEGREES"
+        broader_goal = "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
+        actual = self.graph.evaluate(distinct_blockers=True)
+        self.assertEqual(actual[exclusion]["state"], "proved")
+        self.assertEqual(actual[inversion]["state"], "proved")
+        self.assertEqual(actual[broader_goal]["state"], "open")
+        retained = [row for row in bounds_records(self.graph, actual) if row["id"] == bound_node]
+        self.assertEqual(len(retained), 2)
+        self.assertTrue(all(row["domain_excluded"] for row in retained))
+
+        for case in ("COMMON", "MIXED"):
+            with self.subTest(case=case):
+                premise = ("JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-" + case
+                           + "-CUBIC-QUADRATIC-LEADING-EXCLUSION")
+                changed = self.graph.evaluate({premise: "stale"}, distinct_blockers=True)
+                self.assertEqual(changed[exclusion]["state"], "stale")
+                self.assertEqual(changed[inversion]["state"], "stale")
+                self.assertEqual(changed[bound_node]["state"], "proved")
+                self.assertEqual(changed[broader_goal]["state"], "open")
+                restored = [row for row in bounds_records(self.graph, changed)
+                            if row["id"] == bound_node]
+                self.assertTrue(all(not row["domain_excluded"] for row in restored))
 
     def test_wirtinger_verification_reaches_named_equalities_without_blocking_lift_bounds(self):
         equality_claims = (

@@ -59,7 +59,7 @@ not a degree-five isogeny Selmer group; see its definition on p. 650.
 [Frey, theorem and corollary](sources/frey-selmer-twists-1988.pdf)
 
 In particular (1) includes even radicands and both odd classes modulo 4.
-For example \(d=-1,-2,-3,-6\) satisfy (1). Fundamental discriminants
+For example \(d=-1,-3,-14,-26\) satisfy (1). Fundamental discriminants
 are \(D=d\) if \(d\equiv1\pmod4\), and \(D=4d\) otherwise; hence
 \(|d|\le |D|\le4|d|\). The counting parameter below is \(|d|\).
 The same exponents hold if it is replaced by \(|D|\).

@@ -86,8 +86,11 @@ and applications have their own scoped obligations; a citation supplies no proof
 [Cited resources](REFERENCES.md) distinguish citation identity, a retained/read
 source, and review of a particular application. A mathematical input needs an
 exact theorem scope and locator in the graph in addition to its bibliographic
-entry. Context references never become theorem premises merely because they
-appear in a bibliography.
+entry. Each citation use has one of three roles: `context` for background or
+comparison, `mathematical_input` for an imported proof input, or
+`application_unverified` for an application still needing review. Context
+references never become theorem premises merely because they appear in a
+bibliography.
 
 Classical-background comparisons live in
 `graph.external_references.antecedent_reviews` in the same catalogue.

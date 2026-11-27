@@ -52,6 +52,9 @@ def check_prime_fixtures():
         for prime, mark in zip(primes, (0, 1, -1)):
             reduction = EllipticCurve(GF(prime), [0, 360**2])
             assert (3 * n**2 + 1) * reduction(360, -360 * 19) == (2 * mark) * reduction(0, 360)
+            translated = point - mark * e(0, 360)
+            local_exponents = [translated[0].valuation(ideal) for ideal in field.primes_above(prime)]
+            assert sorted(max(0, -v) for v in local_exponents) == [0, 2]
 
     rational_curve = EllipticCurve(QQ, [0, 2025]).minimal_model()
     assert tuple(pari(rational_curve).ellrank()[:2]) == (1, 1)

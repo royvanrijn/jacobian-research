@@ -211,22 +211,47 @@ Bernstein cutoff through 59. The same cutoff requires
 the residue theorem makes \(d\) a multiple of six. This proves
 the order table.
 
+In the \((12,18)\) boundary profile \((26,1,1,1,1)\), the
+[ramification bound for the residue equation](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#a-rational-map-from-the-residue-equation)
+has \(M=5,\Delta=5,N=4\), with a unique pole at the high root.
+In the reciprocal coordinate \(z=1/(x-x_0)\), the map \(S\)
+is a polynomial of degree four and is totally ramified at \(z=0\).
+Therefore \(S(z)=c_0+c_1z^4\) with \(c_0c_1\ne0\).
+In the coordinate \(t=x-x_0\), the residue equation forces
+\[
+         h=A\,t^{26}(t^4-\lambda),\qquad
+         B=\frac{3t(t^4-\lambda)}{10\lambda},
+         \qquad A\lambda\ne0 .
+\]
+These polynomials satisfy the residue equation by direct substitution.
+
+**Corollary PolynomialWeylOrderTwelveFortyTwoRootField.** Over a
+characteristic-zero field \(k\), each multiplicity-fifteen root \(x_0\)
+in the reduced \((12,42)\) branch satisfies
+\(\sqrt{-15}\in k(x_0)\).
+If \(-15\) is nonsquare in \(k\), the common factor degree is
+at least thirty. At degree thirty the common factor is a scalar
+multiple of the fifteenth power of an irreducible quadratic with
+splitting field \(k(\sqrt{-15})\).
+
+At such a root the \((6,15)\) crossing is defined over \(k(x_0)\).
+Make both powers monic at the upper endpoint by multiplying by
+scalars in that field. The quotient \(R^7/(R^2)^3\) gives the
+common factor \(R=XL(XY^3)\) over \(k(x_0)\).
+In the [local two-root calculation](POLYNOMIAL_WEYL_BERNSTEIN_FORTY_TWO_REAL_BOUND.md#the-two-roots-and-real-coefficients),
+\(L\) has roots of multiplicities four and one, whose ratio \(c\)
+satisfies \(2c^2-5c+5=0\). Both roots belong to \(k(x_0)\) because
+their multiplicities are distinct, so \((4c-5)^2=-15\) in that
+field. If \(-15\) is nonsquare in \(k\), the root \(x_0\) has
+even degree over \(k\). Its conjugates have the same multiplicity,
+giving the degree bound and the quadratic assertion at equality.
+
 **Corollary PolynomialWeylOrderTwelveRealFortyTwoResidual.** Over
 \(\mathbb R\), the reduced \((12,42)\) branch requires
-\(d\equiv6\pmod{12}\) and \(d\ge30\). At \(d=30\) the common
-leading factor is a scalar multiple of the fifteenth power of a
-real quadratic with no real roots.
+\(d\equiv6\pmod{12}\), with \(d\ge30\), and at most one
+real root of \(h\), whose multiplicity is even if it occurs.
 
-For \(b=7\), every high root comes from the \((6,15)\) crossing.
-At any real high root the translated common factor is real up
-to a nonzero scalar: after making the powers monic at the upper
-endpoint, their quotient gives \(R=R^7/(R^2)^3\).
-But the [local two-root calculation](POLYNOMIAL_WEYL_BERNSTEIN_FORTY_TWO_REAL_BOUND.md#the-two-roots-and-real-coefficients)
-gives roots of multiplicities four and one in \(L\) with ratio
-\(c\) satisfying \(2c^2-5c+5=0\). These two roots would each
-be real because their multiplicities are distinct, which is
-impossible. Thus all real roots of \(h\) have multiplicity below
-six. The [real residue obstruction](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#real-roots-and-parity)
-makes \(d/6\) odd, which excludes \(d=24\). At \(d=30\) the
-nonreal roots of multiplicity fifteen must occur as a single
-conjugate pair, accounting for the whole degree.
+All real roots of \(h\) have multiplicity below six by the
+root-field condition. The
+[real residue obstruction](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#real-roots-and-parity)
+then gives the root count and makes \(d/6\) odd.

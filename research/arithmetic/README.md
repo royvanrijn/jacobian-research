@@ -1901,8 +1901,24 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | All rational maps preserving the tangent squareclass are odd elliptic quotient maps | Internal result | proved | [Source](ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) |
 | Fixed Möbius relations among tangent parameters have finitely many collisions | Internal result | proved | [Source](ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) |
 | Height packing controls all prime progression multiplicities over a tangent field | Internal result | proved | [Source](ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md) |
+| Class-group comparison for the exact negative twist family of X_0(11) | Internal result | proved | [Source](X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md) |
+| Full five-Selmer second moment for negative twists of X_0(11) | Internal result | proved | [Source](X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md) |
+| Large full five-Selmer groups and Sha[5] in negative X_0(11) twists | Internal result | proved | [Source](X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md) |
+| Weighted cubic tangent elliptic fibres form two order-three translates | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
+| The marked three-isogeny merges all three weighted tangent fibres | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
+| An asymmetric tangent has a cyclotomic CM trace orbit with a reduction test | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
+| Two genuine unequal-weight triangles share a rank-one companion twist | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
+| Prime weighted markings force the norm of the CM index to be prime | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
+| A logarithmic saving for prime triangles on a fixed cyclotomic trace orbit | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
+| The rank-one cyclotomic count extends to the full trace coset | Internal result | proved | [Source](ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md) |
+| An explicit 5-23 ray block and complete selected Mordell Cassels-Tate matrices | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| Infinitely many admissible twists have a uniform nonzero ray block and global Hasse failures | Internal result | proved | [Source](MORDELL_RAY_CASSELS_TATE_PAIRING.md) |
+| A power bound for large square-root scales in binary quartic values | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
+| Binary quartic squareclass collisions are sparse outside projective root symmetries | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
+| Unweighted cubic tangent fields have a power-saving second factorial moment | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
+| Asymmetric weighted tangent field repeats have power-saving incidence | Internal result | proved | [Source](ABC_CUBIC_TANGENT_COLLISION_MOMENT.md) |
 
-**Computed obligations:** 161 unresolved; 26 resolved within their exact scope.
+**Computed obligations:** 162 unresolved; 26 resolved within their exact scope.
 
 
 Scope limits:

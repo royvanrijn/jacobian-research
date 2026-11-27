@@ -7619,7 +7619,7 @@ Tracked obligations from the catalogue:
 
 ### JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-REDUCED-CUBIC-CASES
 
-[Two leading pairs remain in the squarefree quartic branch with a cubic mate](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_REDUCED_CUBIC_CASES.md)
+[Cubic leading-pair reduction in the squarefree quartic branch](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_REDUCED_CUBIC_CASES.md)
 
 **Exact scope:** In a characteristic-zero Keller triple of ordinary degree at most six with the squarefree quartic normal form, a cubic z-mate admits a constant target frame fixing R with mate z-degrees (3,2). Their leading coefficients are proportional to a,a or to x^3,x^2(gamma(xy−1)+delta), where a=x(xy−1) and gamma,delta are not both zero.
 
@@ -7659,6 +7659,20 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Internally checked written proof.
 
+### JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION
+
+[A quartic target component of source-direction degree one forces inversion through sextic degree](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md)
+
+**Exact scope:** Over any field of characteristic zero, every three-variable Keller map of ordinary degree at most six is invertible if a quartic linear combination of its target components has degree exactly one in some affine source direction.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal exact checks of the Taylor, pole and bracket identities.
+
 ### JAC-ALPOGE-GALLAGHER-SEPARATE-COORDINATE-DEGREE-OBSTRUCTIONS
 
 [Separate source or target coordinate changes preserve the degree-seven lower bound for the Alpöge–Gallagher example](jacobian/monodromy-theory/ALPOGE_GALLAGHER_SEPARATE_DEGREE_OBSTRUCTIONS.md)
@@ -7686,6 +7700,20 @@ Tracked obligations from the catalogue:
 **Current blockers:** none in declared routes.
 
 **Verification limits:** Internal exact replay found all four reduced bases equal to {1} over Q with Singular 4.3.2 and SymPy 1.14.0.
+
+### JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION
+
+[Ordinary degree seven is minimal for counterexamples with a nontrivial diagonal one-parameter action](jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_ACTION.md)
+
+**Exact scope:** In characteristic zero, a three-variable Keller map of ordinary degree at most six is invertible if equivariant for algebraic one-parameter torus actions in affine diagonal source and target frames over the algebraic closure, with nontrivial source action. The rational degree-seven Alpöge–Gallagher example realizes the minimum in this class.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal exact replay over Q found unit ideals on 349 ordinary mixed-sign charts without zero weights, 20 fixed-line charts and five balanced charts. Four separately replayed exact charts cover the remaining weight (1,−1,−2). Uses Singular 4.3.2 and SymPy 1.14.0.
 
 ### JAC-SEXTIC-TANGENT-CONIC-TWELVE-SIX-EXCLUSION
 
@@ -7784,6 +7812,20 @@ Tracked obligations from the catalogue:
 **Current blockers:** none in declared routes.
 
 **Verification limits:** Internal source and proof checks.
+
+### JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION
+
+[No sextic Keller completion of the squarefree quartic normal form](jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md)
+
+**Exact scope:** Over a characteristic-zero field, the squarefree quartic normal form R=x(xy−1)z+b with both prescribed nonzero affine fibre slopes has no polynomial Keller completion with both other ordinary degrees at most six.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Existing written leading-pair exclusions and source-degree cases assembled. No mathematical computation or independent review is asserted.
 
 ### Supporting statements and targets
 
@@ -8206,7 +8248,7 @@ Tracked obligations from the catalogue:
 - **GAP-JAC-PLANE-SIX-SHEET-ADMISSION** (mathematical; open): Exclude actual polynomial plane Keller maps of generic sheet degree six. Retain the refined S6 and A6 affine cusp profiles and the full normalization. The two saturated S6 profiles and the A6 case with two unramified primes require nonabelian Orevkov invariant. With one unramified prime A6 requires a unique A1 source singularity over an ordinary cusp, and with zero its sole intrinsic cusp is (2,5). All cases have no proper intermediate field. In the smooth six-sheet cases, the S₆ directional bounds are 7, 7 and 8, with weighted total-degree bounds 8, 8 and 9. A sole-transposition exceptional fold has original longitudinal degree at least 48. The immersed sole-transposition slice strengthens the fold bound to 60, with restriction degrees (8,10) at equality. The immersed A₆ sole 3-cycle branch has composite width at least six and genus at least two. At width six the remaining genus and pole-count pairs are (2,4) and (3,2). In both cuspidal alternating profiles, every width is composite and at least six, the ordinary degree of the ramified curve is at least eight, and no polynomial target frame has coprime widths. The singular width-five genus-two profile is excluded. Marked admission of the mixed symmetric elliptic slices remains open.
 - **GAP-JAC-QUINTIC-INDEPENDENT-LEADING-COMPLETION** (mathematical; proved / discharged): In characteristic zero no polynomial Keller map has degree-five leading vector (z⁵,z³q,zq²), q=x²+yz.
 - **GAP-JAC-QUINTIC-DEPENDENT-QUARTIC-COMPLETION** (mathematical; proved / discharged): Every degree-five three-variable Keller map over a characteristic-zero field is invertible.
-- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION** (mathematical; open): Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. For a quartic component affine in a source direction, the triple-line and parabolic shears are excluded. The localized tangent-conic form is excluded. In the squarefree coefficient residual a constant target frame leaves only mate z-degrees (3,2), with leading coefficients proportional to a,a or to x^3,x^2(gamma(xy−1)+delta), where a=x(xy−1). The ordinary minimum is seven in the equivariant class of weight (1,−1,−2). Without equivariance the minimum is six or seven.
+- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION** (mathematical; open): Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. The unrestricted minimum is six or seven.
 
 Tracked obligations from the catalogue:
 
@@ -8222,7 +8264,7 @@ Tracked obligations from the catalogue:
 - **GAP-JAC-INDEX-FOUR-WEIGHTED-GRADES-104-206 — mathematical; open.** [Do all 103 weighted cubic Engel classes U_104 through U_206 vanish? One certified nonzero class gives an exact-index-four counterexample to the proposed degree ceiling 207.](jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md)
 - **GAP-JAC-BGV-UNRESTRICTED-WITT-DEGREE-GROWTH — mathematical; open.** [Does every common degree cap eventually fail for unrestricted lifts of the odd-prime BGV seed?](jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md)
 - **GAP-JAC-PLANE-SIX-SHEET-ADMISSION — mathematical; open.** [Exclude actual polynomial plane Keller maps of generic sheet degree six. Retain the refined S6 and A6 affine cusp profiles and the full normalization. The two saturated S6 profiles and the A6 case with two unramified primes require nonabelian Orevkov invariant. With one unramified prime A6 requires a unique A1 source singularity over an ordinary cusp, and with zero its sole intrinsic cusp is (2,5). All cases have no proper intermediate field. In the smooth six-sheet cases, the S₆ directional bounds are 7, 7 and 8, with weighted total-degree bounds 8, 8 and 9. A sole-transposition exceptional fold has original longitudinal degree at least 48. The immersed sole-transposition slice strengthens the fold bound to 60, with restriction degrees (8,10) at equality. The immersed A₆ sole 3-cycle branch has composite width at least six and genus at least two. At width six the remaining genus and pole-count pairs are (2,4) and (3,2). In both cuspidal alternating profiles, every width is composite and at least six, the ordinary degree of the ramified curve is at least eight, and no polynomial target frame has coprime widths. The singular width-five genus-two profile is excluded. Marked admission of the mixed symmetric elliptic slices remains open.](jacobian/monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md)
-- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION — mathematical; open.** [Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. For a quartic component affine in a source direction, the triple-line and parabolic shears are excluded. The localized tangent-conic form is excluded. In the squarefree coefficient residual a constant target frame leaves only mate z-degrees (3,2), with leading coefficients proportional to a,a or to x^3,x^2(gamma(xy−1)+delta), where a=x(xy−1). The ordinary minimum is seven in the equivariant class of weight (1,−1,−2). Without equivariance the minimum is six or seven.](jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md)
+- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION — mathematical; open.** [Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. The unrestricted minimum is six or seven.](jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md)
 
 ## Hessian and Schur reductions
 
@@ -9480,7 +9522,7 @@ Tracked obligations from the catalogue:
 
 **Topic scope:** Factorial moment functionals, composition rigidity and Strong Factorial families. Coefficient-uniform windows are proved for all quadratic phases in every dimension. Ordinary two-monomial coprimality in arbitrary dimension first remains at terminal fifteen.
 
-**Computed obligation progress:** 69 open; 37 proved / discharged.
+**Computed obligation progress:** 71 open; 37 proved / discharged.
 
 **Authored scope assessment:** Dense univariate quadratics and their independent one- and two-linear adjunctions have complete all-start windows of lengths three, four and five respectively, over every characteristic-zero field. The older q=91 resonance was a limit of an earlier criterion.
 
@@ -23069,7 +23111,10 @@ Tracked obligations from the catalogue:
 | FACTORIAL-SFC-HIGHER-DEGREE-CONSTANT-SHIFT-UNIT-PRODUCT | claim | proved / partial | After removing factorial scaling and a geometric unit, prime-power factorial units are analytic and close to one in coefficient valuation on the full order disk for odd primes and on parity disks at p=2. | [factorial/image-rigidity/SFC_HIGHER_DEGREE_CONSTANT_SHIFT.md](factorial/image-rigidity/SFC_HIGHER_DEGREE_CONSTANT_SHIFT.md): Section 5, factorial unit blocks and logarithmic discrete sums |
 | FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-AXIS-DEGREE-SIEVE-FRACTIONAL | claim | proved / partial | For every fixed three-column axis profile the rational decoupled order-one through order-three forms have nonzero resultant. At degree M minus one-third the pole isolates the maximal columns and the first two forms exclude the resulting coefficient directions. | [factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_AXIS_DEGREE_SIEVE.md](factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_AXIS_DEGREE_SIEVE.md): Section 1, the pole at the fractional degree and the tied-maximum case |
 | FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-COEFFICIENT-SIGN-80 | claim | proved / partial | For all integers 2<=d<=80 and 0<a<d, the eliminated polynomial R has nonpositive coefficients in L,H and a negative constant coefficient. | [factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md](factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md): Theorem and Common factorial factors and exact sign check; [factorial/image-rigidity/verify_sfc_homogeneous_trinomial_factored_sign.py](factorial/image-rigidity/verify_sfc_homogeneous_trinomial_factored_sign.py): verify_profile, verify_unfactored_comparison and main |
-| FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-LEADING-SIGN | claim | proved / partial | For all integers d>=2 and 0<a<d, the polynomial -R in the two heights has degree 14d-5 and the explicit highest part (3). For each fixed support -R is strictly positive when both real heights exceed an effective threshold, independently of their ratio. Its twelve highest homogeneous layers, degrees 14d-5 through 14d-16, have nonnegative height coefficients by a symbolic rational check in the integer-gap binomial basis. All 190 complete gap differences of combined order at most 18 have nonnegative coefficients. | [factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md](factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md): Highest homogeneous part at every span, formula (3); [factorial/image-rigidity/verify_sfc_homogeneous_trinomial_factored_sign.py](factorial/image-rigidity/verify_sfc_homogeneous_trinomial_factored_sign.py): verify_symbolic_leading_part; [factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py](factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py): remainder_layers, verify_integer_gap_layers and verify_complete_gap_differences |
+| FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-GAP-FACTORS | claim | proved / partial | The signed cubic remainder -R has the common termwise factor (5) at every support. Its normalized height layers have formal gap factor a^2*d^3*(d-a)^4. The factored induction base has nonnegative coefficients and the exact sharp leading-ratio comparison (7) holds for all 561 source supports in each gap direction through source span 34. | [factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md](factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md): Common factors in the gap increments and An all-order factor in the formal gap parameters; [factorial/image-rigidity/verify_sfc_homogeneous_trinomial_gap_increments.py](factorial/image-rigidity/verify_sfc_homogeneous_trinomial_gap_increments.py): checked_quotient, verify_increment and main |
+| FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-HIGHEST-GAP-DEGREES | claim | proved / partial | For each reciprocal coefficient of total degree n>=5 in normalized Q, its gap-degree 2n part contains all monomials divisible by a^2*b^4 with positive coefficients, with generating series (8). Both gap increments at that coefficient are positive outside an effectively computed finite region of gap pairs. Exact replay settles reciprocal degree 25 for all gap pairs. | [factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md](factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md): Highest gap degrees and the finite test for each coefficient, formula (8); [factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py](factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py): matched_cutoff and verify_fixed_deficit |
+| FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-LEADING-SIGN | claim | proved / partial | For all integers d>=2 and 0<a<d, the polynomial -R in the two heights has degree 14d-5 and the explicit highest part (3). For each fixed support -R is strictly positive when both real heights exceed an effective threshold, independently of their ratio. Its twenty highest homogeneous layers, degrees 14d-5 through 14d-24, have nonnegative height coefficients by a symbolic rational check in the integer-gap binomial basis. All 190 complete gap differences of combined order at most 18 have nonnegative coefficients. | [factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md](factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md): Highest homogeneous part at every span, formula (3); [factorial/image-rigidity/verify_sfc_homogeneous_trinomial_factored_sign.py](factorial/image-rigidity/verify_sfc_homogeneous_trinomial_factored_sign.py): verify_symbolic_leading_part; [factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py](factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py): main with default LIMIT=24 and DIFFERENCE_ORDER=18: remainder_layers, verify_integer_gap_layers, expanded comparisons and all 190 complete differences |
+| FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-ORIGIN-SIGN | claim | proved / partial | For every integer d>=2 and 0<a<d, the initial homogeneous trinomial remainder satisfies R(0,0;a,d)<0 in the chart eliminating column 2. Explicit beta bounds cover d>=16 and exact rational replay covers all 105 oriented pairs through span 15. | [factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md](factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md): Strict sign at zero heights for every span; [factorial/image-rigidity/verify_sfc_homogeneous_trinomial_gap_increments.py](factorial/image-rigidity/verify_sfc_homogeneous_trinomial_gap_increments.py): origin_normalized and verify_origin |
 | FACTORIAL-SFC-INDEPENDENT-COMMON-HEIGHT-DECISION-DISTINCT | claim | proved / partial | Arbitrary support with distinct total degrees and any prescribed set of s orders has a nonzero constant term in the reciprocal height resultant. | [factorial/image-rigidity/SFC_INDEPENDENT_COMMON_HEIGHT_DECISION.md](factorial/image-rigidity/SFC_INDEPENDENT_COMMON_HEIGHT_DECISION.md): Section 1, normalization (1) and the determinant limit |
 | FACTORIAL-SFC-LOGARITHMIC-TOWER-RESIDUES-EXPANSION | claim | proved / partial | For every dimension and support with strict isolated least slope and for bounded archimedean size of the prime-power approaches, the regularized factorial moments admit the derivative-jet expansion (2) with effective truncation at each fixed precision. | [factorial/image-rigidity/SFC_LOGARITHMIC_TOWER_RESIDUES.md](factorial/image-rigidity/SFC_LOGARITHMIC_TOWER_RESIDUES.md): Sections 1–2, falling-factorial pole bound, logarithmic count error and effective tail |
 | FACTORIAL-SFC-MIXED-ANCHOR-CONSTANT-SHIFT-REFERENCE | claim | proved / partial | For t+xy with v(t)>=2/(p-1), the minimum valuation of two successive n!-normalized moments at starts n,n+1 is at most n/(p-1), at every order. A finite truncated Casoratian has a unit after dividing by the correct power of t, including at equality where the reference companion need not converge. | [factorial/image-rigidity/SFC_MIXED_ANCHOR_CONSTANT_SHIFT.md](factorial/image-rigidity/SFC_MIXED_ANCHOR_CONSTANT_SHIFT.md): Section 1, recurrence (3), finite determinant (4) and bound (5) |
@@ -24637,6 +24682,8 @@ Tracked obligations from the catalogue:
 - **GAP-SFC-HOMOGENEOUS-TRINOMIAL-SHIFTED-AXIS-TERMINAL** (mathematical; open): For every higher start n>=3 and homogeneous bivariate trinomial axis profile, establish a nonzero rational decoupled resultant at n,n+1,n+2, or find an identically vanishing profile. Established cases include a unique maximum on the two-column side, a sufficiently separated unique maximum, and the specified residue and gap conditions at even starts.
 - **GAP-SFC-HOMOGENEOUS-TRINOMIAL-INITIAL-AXIS** (mathematical; open): Rule out simultaneous ordinary factorial zeros at orders 1, 2 and 3 for all homogeneous bivariate trinomial supports in the residual below the computable absolute degree bound. The unrestricted initial homogeneous trinomial statement reduces to this finite residual.
 - **GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN** (mathematical; open): Prove R(L,H;a,d)<0 in the chart eliminating column 2 for every real L,H>=0 and integer d>=2, 0<a<d. The all-height test covers d<=80 and the leading height part gives a fixed-support interior sign threshold. Coefficientwise nonpositivity is a sufficient route.
+- **GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS** (mathematical; open): For integer 0<a<d, with P=S/K defined by (5), prove coefficientwise P_(a,d+1)>=432 L^4 H^4 P_(a,d) everywhere and P_(a+1,d+1)>=(432/2^epsilon) L^(4-epsilon) H^2 P_(a,d) on d-a=1, where S=-R and epsilon is the indicator of even a.
+- **GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS** (mathematical; open): For every nonnegative integer pair A,B, prove coefficientwise nonnegativity in the reciprocal heights of Q_(A+1,B)-Q_(A,B) and Q_(A,B+1)-Q_(A,B), with Q the normalization of -R by the height reversal and 432^d.
 - **GAP-SFC-POWERED-TRIANGLE-FINITE-STARTS** (mathematical; proved / discharged): For each integer 2<=D<=35 and 3<=n<10000, prove the support-sized factorial window for every nonzero a(xy)^D+b(yz)^D+c(zx)^D over characteristic-zero fields. The actual number of active monomials sets the window length. This finite residual is equivalent to the unrestricted powered-triangle claim for D>=2.
 
 Tracked obligations from the catalogue:
@@ -24714,7 +24761,7 @@ Tracked obligations from the catalogue:
 
 **Authored scope assessment:** Global admission permits negative Laurent support. Isolated and every scalar ordered-square family are closed by universal all-order proofs.
 
-**Authored scope assessment:** For DC1, differential orders six, eight and nine force generation. Each order of a proper rank-one polynomial Weyl pair is composite and at least ten. Triangular mate subtraction gives nondividing orders with gcd at least four. An order-ten member would reduce with its mate to orders 10 and 15, with common factor of degree at least 30 and high root multiplicity exactly twenty.
+**Authored scope assessment:** For DC1, differential orders six, eight and nine force generation. Each order of a proper rank-one polynomial Weyl pair is composite and at least ten. Triangular mate subtraction gives nondividing orders with gcd at least four. An order-ten member would reduce with its mate to orders 10 and 15, with common factor of degree at least 30 and high root multiplicity exactly twenty. An order-twelve member has reduced mate order 16, 18, 30, 42 or 78, with the stated leading-factor profiles.
 
 **Authored scope assessment:** The mixed S_lambda and its specified first-order nonsymmetric perturbation are closed in every finite mate order by distinct adjoint and residue arguments. Every integer monomial-pole quadratic-square face is excluded by a weaker divisor character with its adjoint. Neither claim classifies the full actual division ring.
 
@@ -25234,6 +25281,20 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Internal proof and source check.
 
+### DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY
+
+[Low-multiplicity real roots force odd normalized leading-factor degree](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md)
+
+**Exact scope:** Over R, if h has at least two geometric roots and admits the Weyl leading-factor residue equation, and every real root has multiplicity below g, then h has at most one real root and M=deg(h)/g is odd. Odd g forces one real root of odd multiplicity. Even g forces even multiplicity for a sole real root.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal proof and source checks.
+
 ### DIX-POLYNOMIAL-GCD-THREE-LEADING-FACTOR
 
 [Root multiplicity restrictions for polynomial differential-order gcd three](dixmier/dixmier-formal-lifting/POLYNOMIAL_GCD_THREE_LEADING_FACTOR.md)
@@ -25401,6 +25462,48 @@ Tracked obligations from the catalogue:
 **Current blockers:** none in declared routes.
 
 **Verification limits:** Internal proof and source check.
+
+### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL
+
+[Order twelve reduces to five possible mate orders](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md)
+
+**Exact scope:** A proper characteristic-zero polynomial Weyl pair with a member of differential order twelve has fixed-member reduction to mate order 16, 18, 30, 42 or 78. The high root multiplicities and lower bounds on factor degree in those branches are respectively 12 and 24; 26 or 30 and 30; 30 and 30; 15 and 24; 30 and 30. In the (12,18) branch with factor degree thirty the normalized Bernstein degrees are (72,108); the residue profile (26,1,1,1,1) forces h=A t^26(t^4-lambda) after translation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal proof and source checks. The checker replays the first-coordinate-six rows and the finite (6,30) successor lattice.
+
+### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-FORTY-TWO-ROOT-FIELD
+
+[High roots in reduced orders (12,42) contain a square root of minus fifteen](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md)
+
+**Exact scope:** Over a characteristic-zero field k, any multiplicity-fifteen root x0 of the common factor for a proper polynomial Weyl pair of reduced differential orders 12 and 42 satisfies sqrt(-15) in k(x0). If -15 is nonsquare in k, the factor degree is at least thirty, with equality only for a scalar multiple of the fifteenth power of an irreducible quadratic of splitting field k(sqrt(-15)).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal proof and source checks.
+
+### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-REAL-FORTY-TWO-RESIDUAL
+
+[The real Weyl branch of reduced orders (12,42) has factor degree six modulo twelve](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md)
+
+**Exact scope:** In the real polynomial Weyl branch of reduced differential orders 12 and 42, the common factor degree is congruent to six modulo twelve and at least thirty. There is at most one real root, with even multiplicity if present.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal proof and source checks.
 
 ### DIX-MONIC-POLYNOMIAL-ORDER-THROUGH-FIFTEEN
 
@@ -26072,6 +26175,7 @@ Tracked obligations from the catalogue:
 | DIX-SCALAR-STRING-EXACT-ALGEBRAIC-TIME | claim | proved / partial | For finite scalar P,Q of orders at least2 over a characteristic-zero differential field F finite over C(z), where C=ker(delta) and z is transcendental, [P,Q]=kappa nonzero constant yields an exact time after finite algebraic coefficient extension and monic normalization E=rho*D. The explicit finite residue primitive gives x in that extended field with delta_E(x)=1, where delta_E=rho*delta. No algebraic primitive of1 for the original derivation is asserted. | [dixmier/dixmier-formal-lifting/ALL_COPRIME_ALGEBRAIC_STRING_OBSTRUCTION.md](dixmier/dixmier-formal-lifting/ALL_COPRIME_ALGEBRAIC_STRING_OBSTRUCTION.md): Section2, finite residue primitive and reduction to an algebraic extension of C(x) |
 | DIX-PLANE-GRAPH-CENTRAL-PBW-COEFFICIENT-BOUND | claim | proved / partial | For an actual graph algebra B over a perfect field of characteristic p>deg f, write b=sum a_ij U^i V^j, 0<=i,j<p, with norm degree at most t. Then every nonzero coefficient has p deg a_ij <= t+(p-1-i)d1+(p-1-j)d2-2(p-1). For fixed t and bounded map degrees this bounds the central coefficient degrees independently of p. | [dixmier/dixmier-formal-lifting/PLANE_KELLER_GRAPH_PBW_NORM_CERTIFICATES.md](dixmier/dixmier-formal-lifting/PLANE_KELLER_GRAPH_PBW_NORM_CERTIFICATES.md): PlaneGraphCentralPBWCoefficientBound, equations (1)–(3) |
 | DIX-PLANE-GRAPH-ODD-DEGREE-FULLNESS | claim | proved / partial | If m>=3 is odd and p>m, a full degree m piece in the actual graph idealizer's graded algebra implies fullness at 2m-2 and at every t>=(m-1)(2m-3), and the corresponding uniform BW bound. | [dixmier/dixmier-formal-lifting/PLANE_KELLER_GRAPH_PBW_NORM_CERTIFICATES.md](dixmier/dixmier-formal-lifting/PLANE_KELLER_GRAPH_PBW_NORM_CERTIFICATES.md): PlaneGraphOddDegreeFullness |
+| DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS | claim | proved / complete | A polynomial Weyl crossing with normalized endpoints (6,30),(1,0), direction (6,-1), positive weights of ratio 2:b with b>=3 odd, zero leading bracket and nonzero scalar commutator requires b in {3,5,13}. | see incoming proof routes |
 | DIX-DIFFERENTIAL-IDEAL-LOW-ORDER-SPECIALIZATION | claim | proved / partial | For a DVR O stable under delta with delta(m) subset m, regular P,Q and a finite fraction-field decomposition Q=sum(a_j P^j,j>=1)+V with ordV=r<ord(Pbar)=s, all a_j and coefficients of V are regular; if ord(Qbar)>r then s divides ord(Qbar). Coefficients a_j need not be constants and the uniformizer need not be constant. | [dixmier/dixmier-formal-lifting/SELFADJOINT_POWER_OF_TWO_STRING_CLASSIFICATION.md](dixmier/dixmier-formal-lifting/SELFADJOINT_POWER_OF_TWO_STRING_CLASSIFICATION.md): LowOrderRemainderSpecialization; Section4 |
 | DIX-STARRED-CORRECT-NEXT-ODD-COEFFICIENT | claim | proved / partial | For beta-symmetric P0 and beta-skew P1 of positive X-degrees r,s in the characteristic-zero first Weyl algebra, with leading g(Y),h(Y), put T=s gprime h-r hprime g. The next odd coefficient of [P0,P1] is (r+s-1)Tprime/2. Thus T=0 gives no remaining 2r g hsecond term. | [dixmier/dixmier-formal-lifting/STARRED_DIXMIER_PRIMARY_COEFFICIENT_AUDIT.md](dixmier/dixmier-formal-lifting/STARRED_DIXMIER_PRIMARY_COEFFICIENT_AUDIT.md): CorrectNextOddCoefficient; Section1 C1-C4 |
 | DIX-ADJOINT-AIRY-XQ-CROSSING-COHOMOLOGY | claim | proved / partial | For the polynomial connection d+ad M(XQ)*d(XQ), traceless H0=H1=0 and H2=sl2(k). Nonzero X/Q weights contract by the torus Euler field; the zero-weight complex is V -> V² -> V with C maps(DC,DC), (A,B) maps D(t(B-A)). The obstruction of R0(t)dX wedge dQ is (D^-1 R0)(0). Full Mat2 H0=kI,H1=0,H2=sl2(k). Adding affine P,Z preserves these groups. The constant H=diag(1,-1) two-form is nonexact; it is not claimed to arise from an actual lower quantum jet. | [dixmier/dixmier-formal-lifting/ADJOINT_AIRY_CROSSING_COHOMOLOGY_AND_SOLVER.md](dixmier/dixmier-formal-lifting/ADJOINT_AIRY_CROSSING_COHOMOLOGY_AND_SOLVER.md): The polynomial crossing complex; Adding the remaining affine source variables |
@@ -27881,7 +27985,7 @@ Tracked obligations from the catalogue:
 
 **Topic scope:** Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)). A common-kernel-gcd refined square-quotient weight gives another coefficient-uniform actual C6 tail, with an explicit reverse route to the previous quotient tail. Elementary real-quadratic norm recovery removes the kernel-gcd coefficient loop and yields stronger selected-cycle weighted tails, with an explicit chi coefficient gain. Fixed mixed powers2<=k<j,3|j,k∤j admit kernel-gcd recovery and chi-sensitive actual path/cycle weights, using casewise norm/Thue lifting; the square-cube case has a separate direct route. A conditional coarse-global-triple to actual-path transfer and exact majorant comparison identify a limited exponent-only barrier; they supply no prescribed-sum improvement. Dual graphs give uniform positive-coefficient counts for unrestricted products of two fixed powers; the squarefull3/10result has a separatefullscope alternate proof. Exact-five carriers give stronger restricted sectors for3-full sums. Coherent six-cycles give the unconditional all-target bound r3(N)<<N^(33/134+epsilon), resolving the positive-saving target; the stronger carrier support-capacity estimate remains open.
 
-**Computed obligation progress:** 161 open; 26 proved / discharged.
+**Computed obligation progress:** 162 open; 26 proved / discharged.
 
 **Authored scope assessment:** For every fixed imaginary quadratic field K, with arbitrary finite ideal class group G, ordered primitive principal norm numerical-value sums and the individual local/genus-shadow sums have sharp scale N J_K(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside that local set. For B=2G nonzero, every0<delta<delta_star(B) gives R_Lambda-R_P<<K,delta N J_K/log^(1+delta)N uniformly allN>=3 and all target valuations, where delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4. In particular the exponent1/5 works in every fixed field; constants remain field dependent. If2G=0, the individual sets coincide and the error is zero. The relative comparison holds on sufficiently large admissible targets. No endpoint, varying-field uniformity, mixed-field theorem, leading constant, numerical cutoff or exact exception list is asserted here.
 
@@ -54651,6 +54755,230 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Uniform canonical-height comparison and anti-invariant separation, rational two-isogeny rank bound, volume packing, and the fixed prime-forms count.
 
+### ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON
+
+[Class-group comparison for the exact negative twist family of X_0(11)](arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md)
+
+**Exact scope:** For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, writing h=|Cl(Q(sqrt(d)))[5]| and S=|Sel_5(E^(d)/Q)|, Frey gives h|S|h^2 with constant one. The existing Cesnavicius base-change comparison and quadratic descent also give h^2/25<=S<=h^2. No condition modulo four or splitting symbol at five is imposed.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Primary theorem statements and local specialization checked; exact rational curve and exponent controls passed. The higher torsion moment input remains internally reviewed; navigation checks do not replay it.
+
+### ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS
+
+[Full five-Selmer second moment for negative twists of X_0(11)](arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md)
+
+**Exact scope:** For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, X>=2 and every epsilon>0, sum_(|d|<=X) |Sel_5(E^(d)/Q)|^2 <<_epsilon X^(53/26+epsilon). Adjacent Selmer orders 3/2 and 5/2 have exponents 7/4 and 5/2. These are consequences of the retained quadratic fifth-torsion moments, with their internal assurance limits.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Primary theorem statements and local specialization checked; exact rational curve and exponent controls passed. The higher torsion moment input remains internally reviewed; navigation checks do not replay it.
+
+### ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-SHA-TAILS
+
+[Large full five-Selmer groups and Sha\[5\] in negative X_0(11) twists](arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md)
+
+**Exact scope:** For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, X>=2 and Y>=1, the count with |Sel_5(E^(d)/Q)|>=Y, or with |Sha(E^(d)/Q)[5]|>=Y, is O_epsilon(min(X,X^(53/26+epsilon)/Y^2)). Dimension>=t has the factor 5^(-2t). The second-moment tail has power saving for Y>=X^(27/52+eta), fixed eta>0. No finiteness of the entire Sha group is assumed.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Primary theorem statements and local specialization checked; exact rational curve and exponent controls passed. The higher torsion moment input remains internally reviewed; navigation checks do not replay it.
+
+### ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS
+
+[Weighted cubic tangent elliptic fibres form two order-three translates](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md)
+
+**Exact scope:** For any fixed genuine smooth tangent line, the normalized parameter quartic is f_k(t)=−3t⁴+4(2k+1)t³−6k(k+1)t²+k²(k+1)². Its elliptic model has a rational order-three subgroup D, and the six points at the three prime markings are its union with its translate by T. The deck involution is T−P and T is torsion precisely when two scaled normal coefficients agree.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Explicit polynomial and birational identities, marked evaluations and elementary prime-to-good-reduction torsion bounds.
+
+### ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT
+
+[The marked three-isogeny merges all three weighted tangent fibres](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md)
+
+**Exact scope:** The quotient by the rational order-three subgroup descends to the explicit degree-three map r=t(t−k)(t−k−1)/(2Q), where Q is quadratic of discriminant −3w². Its target quartic g satisfies g(r(t))=4r′(t)² f_k(t), giving the same field away from exceptional parameters.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Specialized Cohen–Pazuki isogeny, degree-two quotient and exact polynomial identity.
+
+### ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-ORBIT-REDUCTION
+
+[An asymmetric tangent has a cyclotomic CM trace orbit with a reduction test](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md)
+
+**Exact scope:** For each fixed asymmetric profile over Q(sqrt(−3)), the odd CM trace orbit P_n has infinitely many finite rational parameters with all three markings positive. At a good prime dividing marking i, [3n²+1]T=[2]D_i modulo that prime.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Explicit CM trace and group-law identity with density in the anti-invariant identity circle. The finite modular tests are replayed at the two genuine fixtures.
+
+### ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-COLLISION-EXAMPLES
+
+[Two genuine unequal-weight triangles share a rank-one companion twist](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md)
+
+**Exact scope:** For (x,y,z)=(10,1,9) and p1+9p2−10p3=0, the prime triples (56611,6451,11467) and (8826476898331,1502124583051,2234559814579) are genuine over Q(sqrt(−3)). Their anti-invariant points are 3JT and 5JT, and the companion quadratic twist has rank one. This falsifies extension of unweighted rank-one uniqueness to all fixed weighted lines.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Exact Sage primality, reconstruction, orbit and finite-field calculations. The equal unconditional rank bounds [1,1] use PARI ellrank on the rational isogenous curve.
+
+### ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM
+
+[Prime weighted markings force the norm of the CM index to be prime](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md)
+
+**Exact scope:** On the specified cyclotomic trace orbit of a fixed asymmetric profile, each of the three prime-to-S markings is the norm of a CM denominator ideal at the same index λ=(1+n sqrt(−3))/2 and a different rational torsion translate of T. A single prime marking for sufficiently large |n| forces (3n²+1)/4 prime.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Étale valuation matching and coprime conjugate indices, followed by Streng primitive divisors at the index and a large proper divisor. Exact marking valuations are verified on both prime fixtures.
+
+### ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-PRIME-INDEX-COUNT
+
+[A logarithmic saving for prime triangles on a fixed cyclotomic trace orbit](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md)
+
+**Exact scope:** For each fixed nonsymmetric cubic tangent profile, the orbit in WM3 has O_k(N/log N) prime triangles for |n|≤N and O_k(sqrt(log Z)/loglog Z) when the prime vertices are at most Z. This count is for the specified orbit.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** One-dimensional upper bound sieve for 3j²+3j+1 and the degree-four centered elliptic height map, with constants depending on the fixed profile.
+
+### ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-FULL-CYCLOTOMIC-COSET-COUNT
+
+[The rank-one cyclotomic count extends to the full trace coset](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md)
+
+**Exact scope:** For every fixed asymmetric weighted tangent profile of rank one on E_w over Q, the whole cyclotomic trace coset has O_k(sqrt(log Z)/loglog Z) genuine prime triples with all vertices at most Z. The index trace equation is an affine line in the Eisenstein ring. A fixed one of the three marks removes the torsion translate and forces prime rational index norm except at finitely many indices. There is no estimate uniform in the varying profile.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Torsion over the cyclotomic field via good-prime reduction, elementary two-isogeny descent, and Fermat exponent three. Free rank-one CM module and exact sign normalization remove the fixed torsion shift at one marked fibre. Then apply the same primitive-divisor and sieve argument with its affine index equation.
+
+### ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES
+
+[An explicit 5-23 ray block and complete selected Mordell Cassels-Tate matrices](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
+
+**Exact scope:** For R=115t, t a squarefree product of allowed primes away from 5,23 and t=+/-1 mod9, the pairing entry between chi_5 and chi_23 is the sum of the explicit residue-field kappa(q), minus kappa(503)=0, in one fixed F3 normalization. This gives complete normalized matrices at R=115,57845,6095,2188105 of ranks 0,0,2,2, with rational ranks 2,3,1,2 and Sha(E_R)[3]=(Z/3)^2 in the last two cases. The usual Weil-sign calibration and arbitrary ray pairs are not asserted.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written specialization of Koymans-Smith with d=54, explicit Heisenberg norm construction and exact rational Kummer controls. Standard-library internal replay passed; no independent replay or external mathematical review.
+
+### ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS
+
+[Infinitely many admissible twists have a uniform nonzero ray block and global Hasse failures](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md)
+
+**Exact scope:** Among primes q=-1 mod9 inert in Q(sqrt(-2)), the explicitly defined kappa(q) takes each F3 value with relative natural density 1/3. For the two thirds with kappa(q)!=0, R=115q is admissible, the pairing has rank two, rank E_R(Q)<=1 and dim Sha(E_R)[3]>=2. All four nonzero lines in span(chi_5,chi_23) have no rational representative at any height. The nonzero prime set has density 1/18 among all rational primes.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written Chebotarev argument for the degree-324 compositum, with explicit disjointness and conjugacy class size nine. Infinitude is not inferred from finite symbol calculations; no independent mathematical review.
+
+### ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL
+
+[A power bound for large square-root scales in binary quartic values](arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md)
+
+**Exact scope:** For fixed separable integral binary quartic F and 0<alpha≤1/3, at most O_{F,alpha,eps}(B^(2−alpha+eps)) primitive projective directions of height at most B with F≠0 have square-root scale above B^alpha in F=d s².
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Root-lattice count at large primes and a product divisor at small primes, together with the fixed cubic or quartic large prime-square tail.
+
+### ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE
+
+[Binary quartic squareclass collisions are sparse outside projective root symmetries](arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md)
+
+**Exact scope:** On any set of primitive projective directions of height at most B with one per rational branch-symmetry orbit, incidences with repeated signed squarefree quartic values are O_{F,eps}(B^(47/27+eps)), improved to O_{F,eps}(B^(39/23+eps)) for irreducible F. Ordered collisions with both square scales at most B^(7/27), or B^(7/23) respectively, satisfy the same bound.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Reduced square-scale ratio, two root lattices and a uniformly smooth quartic in a determinant box. The largest monomial size is at least the box volume. Auxiliary curves and the square-factor tail are explicitly summed.
+
+### ARITH-ABC-CUBIC-TANGENT-FIELD-COLLISION-FACTORIAL-MOMENT
+
+[Unweighted cubic tangent fields have a power-saving second factorial moment](arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md)
+
+**Exact scope:** For all genuine unweighted prime progressions with p≤Z and arbitrary square factors of R, sum_d N_d(Z)(N_d(Z)−1) is O_eps(Z^(39/23+eps)). For any fixed locally admissible rectangle of CT4 the count of fields is asymptotic to the prime-form triangle count, also with prime h/6 and within each sign, without a squarefree sieve.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Uses the symmetric branch classification and uniform determinant/p-adic estimate with the field-height packing for large scales. The attached exact finite census has no repeat among 1365099 triangles with centers at most 45000.
+
+### ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-COLLISION-INCIDENCE
+
+[Asymmetric weighted tangent field repeats have power-saving incidence](arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md)
+
+**Exact scope:** On every fixed asymmetric weighted tangent line, among primitive prime triangles with vertices at most Z, incidence with another triangle on the line in the same quadratic field is O_{profile,eps}(Z^(47/27+eps)), or O(Z^(39/23+eps)) for irreducible parameter quartic. The estimate permits the explicit cyclotomic collisions and does not vary the profile.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The branch representation projects onto full S3 on two-torsion, so it is S4 or a point stabilizer and has trivial centralizer. Apply the unrestricted quartic incidence estimate.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -55026,6 +55354,7 @@ Tracked obligations from the catalogue:
 | EXT-BV-LOPSIDED-AFFINE-COVER | claim | proved / partial | Browning and Verzobio, Theorem 1.1, in the rectangular box with side lengths B1,B2,B3. The leading monomial scale and a coprime side congruence determine the cover and exceptional-point counts through K. | [arithmetic/sources/browning-verzobio-affine-side-condition-2408.11453.pdf](arithmetic/sources/browning-verzobio-affine-side-condition-2408.11453.pdf): Theorem 1.1 and equations (2)–(5) |
 | EXT-BV-WEIGHTED-POWERFUL-COORDINATE-OPTIMIZATION | claim | proved / partial | With nonnegative gamma_i for 0<=i<s and sum (s+i)gamma_i<=1, sum gamma_i-(1-theta)max gamma_i <= max_{0<=j<s} 2(j+theta)/((j+1)(2s+j)) for theta>=0. | [arithmetic/sources/browning-verzobio-powerful-sums-2608.24512v1.pdf](arithmetic/sources/browning-verzobio-powerful-sums-2608.24512v1.pdf): Lemma 4.3 and its proof |
 | EXT-CCDN-UNIFORM-FINITE-PROJECTION | claim | proved / partial | A geometrically integral projective variety of dimension k and degree d admits a finite birational linear projection to a hypersurface of degree d in P^(k+1), with projection coefficients bounded in terms of the ambient dimension and d. | [arithmetic/sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf](arithmetic/sources/castryck-cluckers-dittmann-nguyen-dimension-growth-2020.pdf): Proposition 4.3.2 and proof |
+| EXT-CESNAVICIUS-X011-QUADRATIC-SELMER-COMPARISON | claim | proved / partial | For E=Cremona 11a1 and imaginary quadratic K with 11 inert, 2r_5(K)-1<=dim_F5 Sel_5(E/K)<=2r_5(K)+1, where r_5(K)=dim_F5 Cl(K)[5]. The same example at K=Q gives dim_F5 Sel_5(E/Q)=1 using its bound and parity formula. | [arithmetic/sources/cesnavicius-selmer-flat-1301.4724v4.pdf](arithmetic/sources/cesnavicius-selmer-flat-1301.4724v4.pdf): arXiv:1301.4724v4, Example 1.12, printed p.4, equations (1)-(3); ordinary class group and full Selmer domain |
 | EXT-CHAN-UNIT-MONOMIAL-BOX-COMPLETION | claim | proved / partial | For a unit target modulo q, the c^2 d^3 congruence has box main term phi(q)KL/q^2 and error O_epsilon((K+L)q^(-1/2+epsilon)+q^(1/2+epsilon)). | [arithmetic/sources/chan-squarefull-progressions-1407.0054.pdf](arithmetic/sources/chan-squarefull-progressions-1407.0054.pdf): Theorem 4 and Lemma 4 |
 | EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY | claim | proved / partial | For a finite Galois extension of number fields, unramified primes in a conjugacy class have natural density equal to the class size divided by the group order. Frobenius cycle lengths on roots agree with factor degrees away from the polynomial discriminant. Application: The exact all-even subset of the residual sextic's full signed-pair group has 21 of 48 elements, so the bad-prime set has density7/16. Positive density implies divergence of its reciprocal-prime sum, used in the finite-CRT product proof. Assurance: Exact theorem, factorization/cycle statement, hypotheses and both density conventions inspected. Chebotarev itself is imported, not independently reproved. The nonmonic sextic is replaced by 9^5*g(T/9) outside3. | [arithmetic/sources/lenstra-chebotarev-density-notes.pdf](arithmetic/sources/lenstra-chebotarev-density-notes.pdf): Fact 2.1 and Theorem 3.1, page 3; natural-density definition and validity for both densities, pages 3-4; [arithmetic/alternating_ramification_density_source_ledger.json](arithmetic/alternating_ramification_density_source_ledger.json): Exact hypotheses and application |
 | EXT-CHEN-QUANTITATIVE-TWIN-ALMOST-PRIMES | claim | proved / partial | For all sufficiently large X, at least a positive constant times X/(log X)^2 primes p<=X have p+2 with at most two prime factors counted with multiplicity. | [arithmetic/sources/halberstam-chen-twin-1975.pdf](arithmetic/sources/halberstam-chen-twin-1975.pdf): Chen theorem, a=1 and h=2, printed pp. 281–282 |
@@ -55088,6 +55417,7 @@ Tracked obligations from the catalogue:
 | EXT-FBS-MRSTT-MAXIMAL-FOURIER | claim | proved / partial | Matomaki-Radziwill-Shao-Tao-Teravainen, published2026 Theorem1.1(ii): for Y^(1/3+epsilon)<=h<=Y^(1-epsilon), arbitrary fixed log savings hold for Lambda-Lambda^sharp against all linear phases outside a correspondingly log-small exceptional set of real starts. The model is equation1.1; equation1.4 maximizes over all APs inside the interval. Used at fixed AP k=1 modL and cofactor-scaled lengths, with the unit-circle nilsequence. It is not a variance theorem for full C_q pair counts. | [arithmetic/PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md](arithmetic/PRESCRIBED_PRIME_SEMIGROUP_DENSITY_ONE.md): Published Theorem1.1(ii), equations1.1/1.4 and exact cofactor/prime-power transfer |
 | EXT-FIXED-DIRICHLET-L-BOUNDARY-NONVANISHING | claim | proved / partial | The fixed Dirichlet L-functions have Euler products on Re s>1 and continue to a neighborhood of Re s=1 without zeros there, with only the principal character having a simple pole at s=1. | [foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf](foundations/extended-geometry/sources/soprounov_pnt_arithmetic_progressions.pdf): Claims 1, 2 and 4 in §2 |
 | EXT-FIXED-ORDER-NONAMBIGUOUS-PRIME-COUNT | claim | proved / partial | For each fixed negative form discriminant, a nonambiguous proper inverse-class pair has rational-prime count Li(x)/h + O_D(x exp(-c_D sqrt(log x))). Nonfundamental fixed discriminants are allowed; the claim has no varying-conductor uniformity. | [arithmetic/sources/bourgain-fuchs-1105.3698v2.pdf](arithmetic/sources/bourgain-fuchs-1105.3698v2.pdf): Bourgain–Fuchs Section2 part(5), Lemma2, equation(5.2), p15; nonambiguous normalization |
+| EXT-FREY-1988-NEGATIVE-FIVE-SELMER-COMPARISON | claim | proved / partial | For p=5, a rational point P of order five outside the reduction kernel at five, negative squarefree d coprime to 5N_E, and the local conditions of the theorem (p.651), the full Selmer size is divisible by h_5(Q(sqrt(d))) and at most s_E times its square; s_E=1 if the exceptional set of odd q\|N_E with q=-1 mod5 and 5 not dividing v_q(Delta_E) is empty. At 2 require d=3 mod4 only if 2\|N_E; at bad q outside {2,5,S_E}, require (d/q)=-1 for split multiplicative or potentially good reduction and +1 otherwise; if v_5(j_E)<0 require (d/5)=-1. | [arithmetic/sources/frey-selmer-twists-1988.pdf](arithmetic/sources/frey-selmer-twists-1988.pdf): Printed pp.649-652: class-torsion and full Selmer definitions; theorem; Lemma 1; corollary and X_0(11) example |
 | EXT-GAO-GE-KUEHNE-UNIFORM-MORDELL-LANG | claim | proved / partial | Gao–Ge–Kühne Theorem 1.1 and Theorem 1.1 prime. An irreducible subvariety of a polarized abelian variety intersects a rank-r subgroup in at most C^(1+r) cosets contained in the subvariety, with C depending only on ambient dimension and polarized degree. For a curve of genus at least two in its Jacobian all such cosets are points. In particular the bound is uniform across varying curves of fixed genus embedded by Abel–Jacobi with their principal polarizations. | [arithmetic/sources/gao-ge-kuehne-uniform-mordell-lang-2105.15085v4.pdf](arithmetic/sources/gao-ge-kuehne-uniform-mordell-lang-2105.15085v4.pdf): Theorem 1.1, specialized to a curve without a positive-dimensional abelian coset |
 | EXT-GAUSSIAN-RV-FOURIER-BOUND | claim | proved / partial | ActualTheorem1.5 of arXiv2509.23260v1: arbitrary fixed logarithmic Fourier savings under its printed rational-approximation range for B=C4. This imports only an upper bound; neither the displayed Eq6 constant nor a binary/ternary asymptotic is assumed. | [arithmetic/sources/ramare-viswanadham-2509.23260v1.pdf](arithmetic/sources/ramare-viswanadham-2509.23260v1.pdf): DefinitionB p2 and Theorem1.5 printedpp4-5; proofSections10-12 |
 | EXT-GLOBAL-SPECIALIZATION-INERTIA-CONTROL | claim | proved / partial | For a generically Galois tamely ramified cover of curves over a global field, a fixed finite exceptional set suffices so specialization inertia outside it is trivial or conjugate to the relevant power subgroup of a geometric branch inertia group. Application: Integral parameters avoid infinity outside an enlarged finite exceptional set. All nontrivial finite specialization inertia there is generated by a double transposition. Hensel roots handle every exceptional prime. Assurance: Exact theorem, hypotheses, branch-intersection setup, and proof architecture inspected through pdftotext. Main specialization theorem and local-model proof are imported, not independently reproved. | [arithmetic/sources/conrad-inertia-groups-fibers-1999.pdf](arithmetic/sources/conrad-inertia-groups-fibers-1999.pdf): Theorem 0.2, page 2; setup and relation to Beckmann's Theorem 0.1, pages 1-3; [arithmetic/alternating_subgroup_hasse_source_ledger.json](arithmetic/alternating_subgroup_hasse_source_ledger.json): Exact statement, hypotheses, version and application boundaries |
@@ -55115,6 +55445,7 @@ Tracked obligations from the catalogue:
 | EXT-HL-SIEGEL-WALFISZ | claim | proved / partial | Green2005 Prop4.2p1617eq4.4: logarithmicprime sum in a reduced progression, arbitrary interval endpoints<=N, q<=log^B N, equals interval length/phi(q) plus O(N exp(-C_BsqrtlogN)), with ineffective constants. Characterexpansionandpartialsumgive the high-prime estimate needed in the AP repair. | [arithmetic/sources/green-roth-primes-2005.pdf](arithmetic/sources/green-roth-primes-2005.pdf): Proposition4.2printedp1617,eq4.4 |
 | EXT-INTEGRAL-HILBERT-FULL-ARITHMETIC | claim | proved / partial | For the splitting field of a monic irreducible polynomial over k(T), exceptional integral one-parameter specializations over Q have count O(B^(1/2) log B); regularity is not required. Application: Apply after affine substitution s=s_*+M0*n, whose generic group is still A10. Apply also to its compositum with any previously chosen finite Galois extension, whose generic group is A10 times the constant Galois group, to obtain linear disjointness. Assurance: Exact integral statement and its preceding hypotheses inspected from retained primary paper. Cohen-Serre estimate is explicitly attributed and imported; no quantitative proof is claimed here. | [arithmetic/sources/zywina-quantitative-hit-2010.pdf](arithmetic/sources/zywina-quantitative-hit-2010.pdf): Section 1.1, Theorem 1.2 (Cohen, Serre), page 2; notation and full arithmetic-group specialization, pages 1-2; [arithmetic/alternating_subgroup_hasse_source_ledger.json](arithmetic/alternating_subgroup_hasse_source_ledger.json): Exact statement, hypotheses, version and application boundaries |
 | EXT-JAESCHKE-SEVEN-BASE-PRIMALITY | claim | proved / partial | An odd integer >17 and <341550071728321 passing the strong tests to 2,3,5,7,11,13,17 is prime. | [arithmetic/sources/jaeschke-strong-pseudoprimes-1993.pdf](arithmetic/sources/jaeschke-strong-pseudoprimes-1993.pdf): Gerhard Jaeschke, Math. Comp. 61 (1993), pp. 915–926, Section 3 case SC2, printed pp. 924–925 |
+| EXT-JAMES-ONO-FIVE-SELMER-KUMMER-SEQUENCE | claim | proved / partial | For an elliptic curve A/Q, 0 -> A(Q)/5A(Q) -> Sel_5(A/Q) -> Sha(A/Q)[5] -> 0. Thus \|Sha(A/Q)[5]\|<=\|Sel_5(A/Q)\| independently of finiteness of the entire Tate-Shafarevich group. | [arithmetic/sources/james-ono-selmer-quadratic-twists.pdf](arithmetic/sources/james-ono-selmer-quadratic-twists.pdf): Equation (1.5), full ell-Selmer group and Sha[ell], specialized to ell=5 |
 | EXT-JANSON-HARRIS-BERNOULLI-SUPPORTS | claim | proved / partial | A family of successes requiring specified subsets of independently selected elements has P(W=0)<=exp(-mu^2/(mu+Delta)), where Delta is the ordered distinct-pair intersection sum. If every success probability is less than one, Harris gives a lower bound by the product of the marginal failure probabilities. | [arithmetic/sources/janson-warnke-1406.1248v1.pdf](arithmetic/sources/janson-warnke-1406.1248v1.pdf): Introductory equations (2)–(3), PDF pp. 1–2 |
 | EXT-JORDAN-PRIMITIVE-PRIME-CYCLE | claim | proved / partial | A primitive degree-n permutation group containing a prime cycle with at least three fixed points contains A_n. Jones arXiv1209.5169v1 Theorem1.1, applied with n8,p5. | [arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf](arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf): Jones, Theorem 1.1, p1; Section3 derivation from Jordan; [arithmetic/alternating_hurwitz_source_ledger.json](arithmetic/alternating_hurwitz_source_ledger.json): Jones theorem statement, application and reading limits |
 | EXT-KHOVANSKII-ZDRAVKOVSKA-LOW-DEFECT | claim | proved / partial | Theorem3, printed66/PDF12, gives unmarked topological uniqueness for a degree k polynomial when d=sum d_ij over nonsimple finite critical values is at most k+1; d_ij is localdegree, multiplicity of criticalpoint is d_ij-1. A DTvalue contributes4 and a3cyclevalue contributes3. No marked-stabilizer theorem is supplied. | [arithmetic/sources/khovanskii-zdravkovska-branched-covers-1996.pdf](arithmetic/sources/khovanskii-zdravkovska-branched-covers-1996.pdf): Theorem3 printed66/PDF12; definitions and proof steps inspected; [arithmetic/alternating_hurwitz_cycle_folding_source_ledger.json](arithmetic/alternating_hurwitz_cycle_folding_source_ledger.json): Exact scope and defect convention |
@@ -55228,6 +55559,7 @@ Tracked obligations from the catalogue:
 | HYP-BINARY-DIRICHLET-FIXED-ZEROFREE | claim | proved / partial | Theorem3.1, printedp10, of pinned30September2026QRHpreprint: everyDirichletL-function is nonzero onRe(s)>11/12, principalpoleallowed, allconductors/heights. Applicable PartI proof reconstructed, including reflection, scalar nonzero correction, sextic sieve and uniform-epsilon continuation. PartII7/8 is not used. | [arithmetic/sources/qrh-sep30-2026.pdf](arithmetic/sources/qrh-sep30-2026.pdf): Theorem3.1p10 and applicable PartI proof Sections2-11 |
 | HYP-BINARY-WEIGHTED-DILATION-ROOT-MOMENT | claim | proved / partial | ExactTheorem3.5k1rootmoment, Lemmas3.4/3.6 and endpointCorollary3.11 of pinned24September2026weighted-dilationpreprint, under its stated idealnorm/bank/complexityhypotheses. Complete applicableSection3 signedmemory/rootmomentproof inspected and reconstructed; own AP/large-target modifications proved separately. | [arithmetic/sources/weighted-dilation-graphs-sep24-2026.pdf](arithmetic/sources/weighted-dilation-graphs-sep24-2026.pdf): Definitions3.1-3.3, Lemmas3.4/3.6, Theorem3.5 and Corollary3.11; entireSection3 proof |
 | HYP-HECKE-AUTOMORPHIC-CONTINUATION-GROWTH | claim | open / partial | AUT as stated in equationH.17: for every primitive Dirichlet character eta of conductor q, Q_eta(s)=L(s,eta)L(s,Sym^2f tensor eta)/L(2s,eta^2) continues meromorphically to Re(s)>=3/4, with only the principal simple pole of residue R_f, and its pole-removed product is polynomially bounded in q(3+\|t\|) on3/4<=Re(s)<=2. Include the corresponding Dirichlet L polynomial bound and deleted Euler factors for imprimitive tests. These standard automorphic analytic inputs are explicit assumptions of the rough-mean implication; the full uniform interface has not been independently revalidated in this audit and is not derived from the Dirichlet-only ZF premise. | [arithmetic/SQUARED_HECKE_EIGENVALUE_PAIRS.md](arithmetic/SQUARED_HECKE_EIGENVALUE_PAIRS.md): Section7 explicit analytic interface AUT, equationH.17 and imprimitive convention in Section6 |
+| PROOF-ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-NONCUBE-COEFFICIENT | claim | proved / partial | For any rational k other than 0, −1 and the three symmetric profiles, 4k(k+1) is not a rational cube. A cube would give a point of y²=x³+1 with nonzero x; the exact rank-zero descent and torsion classify it. This sublemma does not assume the rank-one hypothesis of the later count. | [arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md](arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md): Theorem WM7, first torsion calculation independent of rank-one hypothesis |
 | PROOF-ARITH-ABC-CUBIC-TANGENT-FIXED-ELLIPTIC-HEIGHT-COMPARISON | claim | proved / partial | For E:y²=x³+1 over Q, the absolute height of x differs from twice the canonical height by an absolute bounded amount. For τ=(x+1)/y, its square is a degree-two morphism of x, giving h(τ)=h(x)+O(1). This is uniform over all quadratic fields. | [arithmetic/ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md](arithmetic/ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md): Theorem FC5, canonical height and degree-two morphism |
 | SRC-ARITH-ABC-FULLOC-REPAIR-INPUTS | claim | proved / partial | The pinned 20 November verifier and compressed certificate and the local rational delta give a completed 84,177-leaf check with exact largest bound 7/12. The repair adds the missing reverse logical branches and replaces the two original leaves above 7/12. | [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Exact upper bound and Replay; [arithmetic/abc_pair_deviation_7_12_delta.json](arithmetic/abc_pair_deviation_7_12_delta.json): Reverse branches and two replacement subtrees; [arithmetic/verify_abc_pair_deviation_certificate.py](arithmetic/verify_abc_pair_deviation_certificate.py): Exact checker and repaired coverage construction; [arithmetic/sources/zeng-abc-modulus-locking-24407593/cert_fulloc_5840_improved_73_125.json.gz](arithmetic/sources/zeng-abc-modulus-locking-24407593/cert_fulloc_5840_improved_73_125.json.gz): Archived all_deg tree at budget one; [arithmetic/sources/zeng-abc-modulus-locking-24407593/check_extended_pairdev.py](arithmetic/sources/zeng-abc-modulus-locking-24407593/check_extended_pairdev.py): Row and dual reconstruction for the 20 November finite tree |
 | SRC-ARITH-ABC-GROUPED-FULLOC-INPUTS | claim | proved / partial | The compressed delta replaces exactly 4,834 sufficiently high leaves of the repaired FullOC exponent tree. Exact branch and dual validation gives 106,845 leaves in the resulting finite implication, with exact maximum right-hand side 240591/413150<1747/3000. | [arithmetic/verify_abc_grouped_fulloc_certificate.py](arithmetic/verify_abc_grouped_fulloc_certificate.py): sparse_branches, ancestor_rows, check_subtree and main; [arithmetic/abc_grouped_fulloc_delta.json.gz](arithmetic/abc_grouped_fulloc_delta.json.gz): Compact list of replacement paths and rational leaf certificates; [arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md](arithmetic/ABC_PAIR_DEVIATION_CERTIFICATE_AUDIT.md): Grouped-root certificate |
@@ -55716,6 +56048,7 @@ Tracked obligations from the catalogue:
 | ARITH-ABC-SPLIT-QUARTIC-FIXED-ORDER-ROOT-EXCESS | claim | proved / partial | For L_i=A_i x_i^k_i with fixed positive A_i,k_i and sum 1/k_i>=2, let J=product x_i/rad(x_i). Then rad(uv(u−v)(u+v)) J >> u^(2−epsilon) unless exactly two unequal nontrivial orders are on long forms and the short form has order one. With no nontrivial orders, with two equal ones, or with at least three, J can be replaced by its part outside any fixed prime set. | [arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md): Fixed valuation orders and the short factor |
 | ARITH-ABC-SPLIT-QUARTIC-HYPERBOLIC-FIXED-ORDER-FINITENESS | claim | proved / partial | If L_i=A_i x_i^k_i with fixed positive A_i,k_i on the quartic factors and sum 1/k_i<2, there are finitely many coprime opposite-parity u>v>0. It is enough for all valuations of L_i outside one fixed set of primes to be divisible by k_i. | [arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md): The fixed cover and the real proximity estimate |
 | ARITH-ABC-SPLIT-QUARTIC-CYCLIC-ORDER-DISCRIMINANT-LOSS | claim | proved / partial | On full-degree cyclic fibres the finite order–field discriminant difference outside S is sum_p ((1−1/k)m_p−1+gcd(k,m_p)/k) log p and can be proportional to log u on an explicit primitive family. The archimedean diagonal term is (1−1/k)log(u/s)+O(1). Combined with K7 this yields the arithmetic-discriminant inequality without constraining the field-discriminant deficit for such fibres. | [arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md](arithmetic/ABC_SQUAREFREE_KERNEL_PROJECTIVE_LOCKS.md): The normalization cost in the arithmetic discriminant |
+| ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD | claim | proved / partial | For a=-35+15 sqrt(6), b=667+276 sqrt(6) and the exact cubic norm solution (2), the symmetrized Kummer construction (6)-(7) has a degree-54 quotient H/Q with group Heis_3 semidirect C_2, unramified outside 2,3,5,23, with abelianization Q(sqrt(-2)). For allowed q outside 5,23 the finite-field kappa(q) is the central coordinate of squared Frobenius, independent of both embedding choices. | [arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md](arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md): Coordinates and an exact norm solution; Explicit central symbol; The governing extension and its descent, equations (1)-(7) |
 | ARITH-POWERFUL-FERMAT-BOX-GCD-EXPONENT | claim | proved / partial | Primitive signed solutions with fixed powers p,q,r>=2 and nonzero integer coefficients satisfy the coefficient-uniform bound (2). Pairwise coprime powers with r<=max(p,q), and equally powered boxes, need only W^2+W*M^(1/r). Distinct powers in [s,s+A] have reducible-slice exponent at most A/s. | [arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md](arithmetic/POWERFUL_SUMS_INFINITY_POLE_BOUND.md): Rectangular and nearly equal exponent consequences, equation (2) |
 | ARITH-POWERFUL-FIXED-OFFSET-REFINED-SURFACE-LOSS | claim | proved / complete | In the primitive fixed-offset dyadic step, counting the three free maximum-scale coordinates costs at most L^(s^(-3/2)*(1+sqrt(s/(s-1)))+epsilon) for base order s>=2. | [arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md](arithmetic/POWERFUL_SUMS_SLICE_POWER_TEST.md): Transfer to the fixed-offset surface step, equation (4) |
 | ARITH-ABC-CUBIC-TWO-QUARTICS-LATTICE-STRIP | claim | proved / partial | The tall quartic roots lie in a narrow real strip and in a lattice modulo the short cubic cofactor. Their area divided by the covolume has exponent s=3 beta+gamma+xi-1, independent of the unknown short tail height. Lattice reduction and the diagonal surface cover give three affine branches, and exponent at most 407/888 at the denominator-37 profile. | [arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md](arithmetic/ABC_EXCEPTIONAL_SET_AND_POWERFUL_TRIPLES.md): Using the short cofactor to count in a lattice |
@@ -57081,6 +57414,7 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-ABC-FREY-BAD-COEFFICIENT-ADJOINT-EXCESS** (mathematical; proved / discharged): For every primitive positive abc triple with at least two odd radical primes the excess sum over ell>=5 dividing N is identically zero. The exact equality is length S_ell + T_ell + v_ell(v_ell(Delta_E)) = v_ell(delta_1) prime by prime.
 - **GAP-ARITH-ERDOS943-EFFECTIVE-SLOPE-ELLIPTIC-RESIDUAL** (mathematical; open): In precisely the paired norm-squareclass residual and coefficient gate of (H), prove the pointwise O_epsilon(n^(26/51+epsilon)) count after additionally discarding cycles meeting the effective-slope class thresholds or the equal-class nontrivial elliptic dependence test. The equal-class remainder includes equal products, reciprocal products and pairs independent modulo torsion.
 - **GAP-ARITH-ERDOS943-PAIRED-MULTIPLICATION-RESIDUAL** (mathematical; open): In the exact coefficient family and effective-slope and elliptic-dependence residual for (H), prove the pointwise O_epsilon(n^(26/51+epsilon)) count after also discarding cycles meeting the paired-product squareclass threshold and either unconditional equal-product scale or common divisor threshold. In the equal-class part this leaves equal products outside those tests and pairs of independent elliptic points modulo torsion.
+- **GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX** (mathematical; open): Give exact formulas and certified replay data for every entry of the ray-character Cassels-Tate pairing for arbitrary admissible R, including epsilon_R=1 and the local correction at 3 for twist ratios that are not local cubes. The fixed 5-23 block and selected matrices do not settle this scope.
 
 Tracked obligations from the catalogue:
 

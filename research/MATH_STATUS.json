@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "authority": "MATH_STATUS.json",
-  "scope": "Principal current mathematical claims and explicit implication routes. Recorded states and propagated states are separate. Source leaves retain internal claim status with their exact assurance limits; file hashes establish evidence identity, not proof validity. Publication and review remain in paper metadata. Dependency expansion is partial and no new mathematical replay is asserted by this registry.",
+  "scope": "Principal current mathematical claims and explicit implication routes. Recorded states and propagated states are separate. Source leaves retain internal claim status with their exact assurance limits; file hashes establish evidence identity, not proof validity. Publication and review remain in paper metadata. Dependency expansion is partial. The registry and navigation checks do not themselves replay computations; recorded commands and bounds identify the executions explicitly reported for individual claims.",
   "topics": [
     {
       "id": "moments",
@@ -7890,13 +7890,15 @@
               "quantity": "z-degree of an individual mate",
               "sense": "lower",
               "value": 1,
-              "domain": "Characteristic-zero Keller completions of the squarefree quartic normal form with ordinary degree at most six"
+              "domain": "Characteristic-zero Keller completions of the squarefree quartic normal form with ordinary degree at most six",
+              "domain_excluded_by": "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION"
             },
             {
               "quantity": "z-degree of an individual mate",
               "sense": "upper",
               "value": 3,
-              "domain": "Characteristic-zero Keller completions of the squarefree quartic normal form with ordinary degree at most six"
+              "domain": "Characteristic-zero Keller completions of the squarefree quartic normal form with ordinary degree at most six",
+              "domain_excluded_by": "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION"
             }
           ]
         },
@@ -7970,7 +7972,7 @@
         },
         {
           "id": "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-REDUCED-CUBIC-CASES",
-          "title": "Two leading pairs remain in the squarefree quartic branch with a cubic mate",
+          "title": "Cubic leading-pair reduction in the squarefree quartic branch",
           "scope": "In a characteristic-zero Keller triple of ordinary degree at most six with the squarefree quartic normal form, a cubic z-mate admits a constant target frame fixing R with mate z-degrees (3,2). Their leading coefficients are proportional to a,a or to x^3,x^2(gamma(xy−1)+delta), where a=x(xy−1) and gamma,delta are not both zero.",
           "state": "proved",
           "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_REDUCED_CUBIC_CASES.md",
@@ -8020,6 +8022,23 @@
           "verification_note": "Internally checked written proof."
         },
         {
+          "id": "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION",
+          "title": "A quartic target component of source-direction degree one forces inversion through sextic degree",
+          "scope": "Over any field of characteristic zero, every three-variable Keller map of ordinary degree at most six is invertible if a quartic linear combination of its target components has degree exactly one in some affine source direction.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof with internal exact checks of the Taylor, pole and bracket identities."
+        },
+        {
           "id": "JAC-ALPOGE-GALLAGHER-SEPARATE-COORDINATE-DEGREE-OBSTRUCTIONS",
           "title": "Separate source or target coordinate changes preserve the degree-seven lower bound for the Alpöge–Gallagher example",
           "scope": "In characteristic zero, composing the known degree-seven example on the source with any dominant polynomial map, or on the target with any polynomial automorphism, yields degree at least seven. An additional affine automorphism on the opposite side is allowed.",
@@ -8052,6 +8071,25 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Internal exact replay found all four reduced bases equal to {1} over Q with Singular 4.3.2 and SymPy 1.14.0."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION",
+          "title": "Ordinary degree seven is minimal for counterexamples with a nontrivial diagonal one-parameter action",
+          "scope": "In characteristic zero, a three-variable Keller map of ordinary degree at most six is invertible if equivariant for algebraic one-parameter torus actions in affine diagonal source and target frames over the algebraic closure, with nontrivial source action. The rational degree-seven Alpöge–Gallagher example realizes the minimum in this class.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_ACTION.md",
+          "checker": "jacobian/monodromy-theory/verify_sextic_graded_action.py",
+          "artifact_hash": "sha256:b518c2723c784450321e917fee74fc93466fe8177c49500a81dd94d911541cc4",
+          "evidence": [
+            "jacobian/monodromy-theory/verify_sextic_graded_112.py"
+          ],
+          "proof_type": "written proof with exact replay",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal exact replay over Q found unit ideals on 349 ordinary mixed-sign charts without zero weights, 20 fixed-line charts and five balanced charts. Four separately replayed exact charts cover the remaining weight (1,−1,−2). Uses Singular 4.3.2 and SymPy 1.14.0."
         },
         {
           "id": "JAC-SEXTIC-TANGENT-CONIC-TWELVE-SIX-EXCLUSION",
@@ -8201,6 +8239,23 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Internal source and proof checks."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION",
+          "title": "No sextic Keller completion of the squarefree quartic normal form",
+          "scope": "Over a characteristic-zero field, the squarefree quartic normal form R=x(xy−1)z+b with both prescribed nonzero affine fibre slopes has no polynomial Keller completion with both other ordinary degrees at most six.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written assembly of retained mate-degree exclusions",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Existing written leading-pair exclusions and source-degree cases assembled. No mathematical computation or independent review is asserted."
         }
       ],
       "open_questions": [
@@ -8277,7 +8332,7 @@
           "source": "jacobian/monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md"
         },
         {
-          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. For a quartic component affine in a source direction, the triple-line and parabolic shears are excluded. The localized tangent-conic form is excluded. In the squarefree coefficient residual a constant target frame leaves only mate z-degrees (3,2), with leading coefficients proportional to a,a or to x^3,x^2(gamma(xy−1)+delta), where a=x(xy−1). The ordinary minimum is seven in the equivariant class of weight (1,−1,−2). Without equivariance the minimum is six or seven.",
+          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. The unrestricted minimum is six or seven.",
           "source": "jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md",
           "kind": "mathematical",
           "node": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
@@ -29566,6 +29621,8 @@
         "GAP-SFC-HOMOGENEOUS-TRINOMIAL-SHIFTED-AXIS-TERMINAL",
         "GAP-SFC-HOMOGENEOUS-TRINOMIAL-INITIAL-AXIS",
         "GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN",
+        "GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS",
+        "GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS",
         "GAP-SFC-POWERED-TRIANGLE-FINITE-STARTS"
       ],
       "scope_note": " The dense univariate quadratic sharp-window problem is proved by the complete divided-power argument. Its earlier partial resonance frontier and exact equivalence also yield all remaining rational pair coprimality; full binary quadratic SFC and SFC(2) remain open. The new no-carry ordinary Newton-polygon/factor-degree proof removes the height guard and strengthens a necessary dense resonance criterion. Hurwitz integrality is not asserted, and the no-height packet alone supplies no universal Dense seed. Quadraticmomentnativepolygons now transfer atalloddprimeunitconstants, withfull equalityforpdividingmomentindex and a precise genericinitialblock. Bounded degree capacities give additional necessary resonance constraints; that native-polygon packet alone supplies no full quadratic Strong Factorial seed. The existing dense quadratic/residual-coprimality equivalence extends to restricted four-term binary and five-term ternary classes by a reversible linear-adjunction proof. All four restricted members are now proved via the complete Dense theorem; full binary/SFC2/SFC3 goals are not equivalent. The dense univariate quadratic support-three Strong Factorial window is proved by an independent divided-power Hensel factorization and different argument. Existing written equivalences propagate exactly the restricted assertions; full inhomogeneous binary quadratic, SFC(2) and SFC(3) goals remain open. Every nonzero one-variable polynomial of degree at most2 satisfies the actual-support Strong Factorial window. Independently proved sparse strata extend the existing Dense equivalence to this all-support assertion. Full binary quadratic SFC, SFC2 and SFC3 are not concluded. Additional exact binary quadratic sectors: even four-term phases on b=2a,b=2c,a=c; and every nonzero g(x+y) with deg g<=2, with actual support windows. These do not prove the full binary quadratic or SFC2/SFC3 goals. Symmetric bilinear four-support and full symmetric six-support binary quadratics have all-field Strong Factorial windows, with exact four-window transport to the five-term affine-face sector. General binary quadratic SFC/SFC2/SFC3 remain OPEN; no-cross symmetric five-support is a separate OPEN target. Local quadratic face-forcing branches v2z=-1 and>=1 are excluded. Exact exceptional quadratic-family pair-coprimeness is equivalent to the still-OPEN universalT3 gate; it conditionally suffices for the existing symmetric b0 five-window. Necessary prefix starts below46 are excluded without claiming universal closure. Full binary/SFC2/SFC3 remain OPEN. Exact q1/q2 exceptional pairs are coprime; actual symmetric five-moment prefix extends through2641. The remaining q>=5 pair criterion is a new OPEN member equivalent to oldR using proved finite context, retaining oldR/U and b0 only as conditional targets. No infinite/fullbinary/SFC2/SFC3 assertion is proved."
@@ -30547,6 +30604,23 @@
           "verification_note": "Internal proof and source check."
         },
         {
+          "id": "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY",
+          "title": "Low-multiplicity real roots force odd normalized leading-factor degree",
+          "scope": "Over R, if h has at least two geometric roots and admits the Weyl leading-factor residue equation, and every real root has multiplicity below g, then h has at most one real root and M=deg(h)/g is odd. Odd g forces one real root of odd multiplicity. Even g forces even multiplicity for a sole real root.",
+          "state": "proved",
+          "canonical_source": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal proof and source checks."
+        },
+        {
           "id": "DIX-POLYNOMIAL-GCD-THREE-LEADING-FACTOR",
           "title": "Root multiplicity restrictions for polynomial differential-order gcd three",
           "scope": "A hypothetical polynomial scalar-commutator pair of orders 3a,3b for coprime a,b≥2 has common leading factor h of degree divisible by three and at least six. Each root has multiplicity one, two or a multiple of three at least six.",
@@ -30786,6 +30860,66 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Internal proof and source check."
+        },
+        {
+          "id": "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL",
+          "title": "Order twelve reduces to five possible mate orders",
+          "scope": "A proper characteristic-zero polynomial Weyl pair with a member of differential order twelve has fixed-member reduction to mate order 16, 18, 30, 42 or 78. The high root multiplicities and lower bounds on factor degree in those branches are respectively 12 and 24; 26 or 30 and 30; 30 and 30; 15 and 24; 30 and 30. In the (12,18) branch with factor degree thirty the normalized Bernstein degrees are (72,108); the residue profile (26,1,1,1,1) forces h=A t^26(t^4-lambda) after translation.",
+          "state": "proved",
+          "canonical_source": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+          "checker": "dixmier/dixmier-formal-lifting/verify_weyl_order_twelve.py",
+          "artifact_hash": "sha256:fb87c23cf1c4516f6b51039ffa1bd39cdfa7f018fb8c2e56f87b58743c40f816",
+          "evidence": [],
+          "proof_type": "written proof with exact replay",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal proof and source checks. The checker replays the first-coordinate-six rows and the finite (6,30) successor lattice.",
+          "bounds": [
+            {
+              "quantity": "degree of the common polynomial leading factor",
+              "domain": "Actual proper characteristic-zero polynomial Weyl pairs after fixed order-twelve mate reduction",
+              "sense": "lower",
+              "value": 24,
+              "units": "ordinary polynomial degree"
+            }
+          ]
+        },
+        {
+          "id": "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-FORTY-TWO-ROOT-FIELD",
+          "title": "High roots in reduced orders (12,42) contain a square root of minus fifteen",
+          "scope": "Over a characteristic-zero field k, any multiplicity-fifteen root x0 of the common factor for a proper polynomial Weyl pair of reduced differential orders 12 and 42 satisfies sqrt(-15) in k(x0). If -15 is nonsquare in k, the factor degree is at least thirty, with equality only for a scalar multiple of the fifteenth power of an irreducible quadratic of splitting field k(sqrt(-15)).",
+          "state": "proved",
+          "canonical_source": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal proof and source checks."
+        },
+        {
+          "id": "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-REAL-FORTY-TWO-RESIDUAL",
+          "title": "The real Weyl branch of reduced orders (12,42) has factor degree six modulo twelve",
+          "scope": "In the real polynomial Weyl branch of reduced differential orders 12 and 42, the common factor degree is congruent to six modulo twelve and at least thirty. There is at most one real root, with even multiplicity if present.",
+          "state": "proved",
+          "canonical_source": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Internal proof and source checks."
         },
         {
           "id": "DIX-MONIC-POLYNOMIAL-ORDER-THROUGH-FIFTEEN",
@@ -31725,7 +31859,7 @@
         "QSO3A treats every finite algebraic cubic mate and all lower flows. Every regular generic cubic exact-R Long repair is excluded; the first possible generic scalar first-image order is at least4. Cubic Airy-type pairs still exist.",
         "Broad meromorphic reconstruction remains open; existing algebraic branches bypass it by forward direct Stokes injectivity.",
         "Global admission permits negative Laurent support. Isolated and every scalar ordered-square family are closed by universal all-order proofs.",
-        "For DC1, differential orders six, eight and nine force generation. Each order of a proper rank-one polynomial Weyl pair is composite and at least ten. Triangular mate subtraction gives nondividing orders with gcd at least four. An order-ten member would reduce with its mate to orders 10 and 15, with common factor of degree at least 30 and high root multiplicity exactly twenty.",
+        "For DC1, differential orders six, eight and nine force generation. Each order of a proper rank-one polynomial Weyl pair is composite and at least ten. Triangular mate subtraction gives nondividing orders with gcd at least four. An order-ten member would reduce with its mate to orders 10 and 15, with common factor of degree at least 30 and high root multiplicity exactly twenty. An order-twelve member has reduced mate order 16, 18, 30, 42 or 78, with the stated leading-factor profiles.",
         "The mixed S_lambda and its specified first-order nonsymmetric perturbation are closed in every finite mate order by distinct adjoint and residue arguments. Every integer monomial-pole quadratic-square face is excluded by a weaker divisor character with its adjoint. Neither claim classifies the full actual division ring.",
         "The next scalar face must pass both its bottom-divisor and adjoint tests; actual global admission and the original R-mate equation remain separate constraints.",
         "QQL1 excludes scalar J amplification entrywise at every matrix size, while the explicitly shifted Jtilde admits a genuinely nonscalar Weyl pair and full rational matrix Long completion. These statements have different hypotheses.",
@@ -71765,6 +71899,354 @@
           "dependency_coverage": "partial",
           "graph_scope_note": "If r_d is the rank of y²=x³+d³, then the number of genuine tangent progressions with center at most Z and quadratic field d is at most (1+C sqrt(log(2Z)/log(2|d|)))^r_d. Uniformly it is exp(O(log Z/loglog Z)), giving X^(1/2)exp(-O(log X/loglog X)) distinct fields of either sign with discriminant at most X without sieving square factors of R. The claim permits also requiring prime h/6.",
           "verification_note": "Uniform canonical-height comparison and anti-invariant separation, rational two-isogeny rank bound, volume packing, and the fixed prime-forms count."
+        },
+        {
+          "id": "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON",
+          "title": "Class-group comparison for the exact negative twist family of X_0(11)",
+          "state": "proved",
+          "scope": "For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, writing h=|Cl(Q(sqrt(d)))[5]| and S=|Sel_5(E^(d)/Q)|, Frey gives h|S|h^2 with constant one. The existing Cesnavicius base-change comparison and quadratic descent also give h^2/25<=S<=h^2. No condition modulo four or splitting symbol at five is imposed.",
+          "canonical_source": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Primary theorem statements and local specialization checked; exact rational curve and exponent controls passed. The higher torsion moment input remains internally reviewed; navigation checks do not replay it.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, writing h=|Cl(Q(sqrt(d)))[5]| and S=|Sel_5(E^(d)/Q)|, Frey gives h|S|h^2 with constant one. The existing Cesnavicius base-change comparison and quadratic descent also give h^2/25<=S<=h^2. No condition modulo four or splitting symbol at five is imposed.",
+          "sources": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "sha256": "60cfe8a9761ab417c3e249284b3484b81a88a3a0891d1b5aab23605a118cacac",
+              "locator": "The curve and the exact twist conditions; Comparison with the same family and quantity"
+            }
+          ]
+        },
+        {
+          "id": "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS",
+          "title": "Full five-Selmer second moment for negative twists of X_0(11)",
+          "state": "proved",
+          "scope": "For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, X>=2 and every epsilon>0, sum_(|d|<=X) |Sel_5(E^(d)/Q)|^2 <<_epsilon X^(53/26+epsilon). Adjacent Selmer orders 3/2 and 5/2 have exponents 7/4 and 5/2. These are consequences of the retained quadratic fifth-torsion moments, with their internal assurance limits.",
+          "canonical_source": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Primary theorem statements and local specialization checked; exact rational curve and exponent controls passed. The higher torsion moment input remains internally reviewed; navigation checks do not replay it.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, X>=2 and every epsilon>0, sum_(|d|<=X) |Sel_5(E^(d)/Q)|^2 <<_epsilon X^(53/26+epsilon). Adjacent Selmer orders 3/2 and 5/2 have exponents 7/4 and 5/2. These are consequences of the retained quadratic fifth-torsion moments, with their internal assurance limits.",
+          "sources": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "sha256": "60cfe8a9761ab417c3e249284b3484b81a88a3a0891d1b5aab23605a118cacac",
+              "locator": "Transferred moments, equations (3)-(4)"
+            }
+          ],
+          "bounds": [
+            {
+              "quantity": "Power of X in the full five-Selmer moment upper bound",
+              "domain": "E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1 with |d|<=X, X>=2",
+              "parameters": {
+                "selmer_prime": 5,
+                "moment_order": 1.5,
+                "ordering": "absolute squarefree radicand"
+              },
+              "sense": "upper",
+              "expression": "7/4+epsilon for every epsilon>0"
+            },
+            {
+              "quantity": "Power of X in the full five-Selmer moment upper bound",
+              "domain": "E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1 with |d|<=X, X>=2",
+              "parameters": {
+                "selmer_prime": 5,
+                "moment_order": 2,
+                "ordering": "absolute squarefree radicand"
+              },
+              "sense": "upper",
+              "expression": "53/26+epsilon for every epsilon>0"
+            },
+            {
+              "quantity": "Power of X in the full five-Selmer moment upper bound",
+              "domain": "E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1 with |d|<=X, X>=2",
+              "parameters": {
+                "selmer_prime": 5,
+                "moment_order": 2.5,
+                "ordering": "absolute squarefree radicand"
+              },
+              "sense": "upper",
+              "expression": "5/2+epsilon for every epsilon>0"
+            }
+          ]
+        },
+        {
+          "id": "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-SHA-TAILS",
+          "title": "Large full five-Selmer groups and Sha[5] in negative X_0(11) twists",
+          "state": "proved",
+          "scope": "For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, X>=2 and Y>=1, the count with |Sel_5(E^(d)/Q)|>=Y, or with |Sha(E^(d)/Q)[5]|>=Y, is O_epsilon(min(X,X^(53/26+epsilon)/Y^2)). Dimension>=t has the factor 5^(-2t). The second-moment tail has power saving for Y>=X^(27/52+eta), fixed eta>0. No finiteness of the entire Sha group is assumed.",
+          "canonical_source": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Primary theorem statements and local specialization checked; exact rational curve and exponent controls passed. The higher torsion moment input remains internally reviewed; navigation checks do not replay it.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For E=X_0(11), Cremona 11a1 (LMFDB 11.a2), and negative squarefree radicands d with gcd(d,55)=1 and (d/11)=-1, X>=2 and Y>=1, the count with |Sel_5(E^(d)/Q)|>=Y, or with |Sha(E^(d)/Q)[5]|>=Y, is O_epsilon(min(X,X^(53/26+epsilon)/Y^2)). Dimension>=t has the factor 5^(-2t). The second-moment tail has power saving for Y>=X^(27/52+eta), fixed eta>0. No finiteness of the entire Sha group is assumed.",
+          "sources": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "sha256": "60cfe8a9761ab417c3e249284b3484b81a88a3a0891d1b5aab23605a118cacac",
+              "locator": "Large Selmer groups and Sha[5], equations (5)-(6)"
+            }
+          ]
+        },
+        {
+          "id": "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+          "title": "Weighted cubic tangent elliptic fibres form two order-three translates",
+          "state": "proved",
+          "scope": "For any fixed genuine smooth tangent line, the normalized parameter quartic is f_k(t)=−3t⁴+4(2k+1)t³−6k(k+1)t²+k²(k+1)². Its elliptic model has a rational order-three subgroup D, and the six points at the three prime markings are its union with its translate by T. The deck involution is T−P and T is torsion precisely when two scaled normal coefficients agree.",
+          "canonical_source": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "checker": "arithmetic/verify_weighted_cubic_tangent_elliptic_marks.py",
+          "artifact_hash": "sha256:cc672b95bc605bacc83d61acd041fe768f12bd0059518196c45c1a7776a647c2",
+          "evidence": [],
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For any fixed genuine smooth tangent line, the normalized parameter quartic is f_k(t)=−3t⁴+4(2k+1)t³−6k(k+1)t²+k²(k+1)². Its elliptic model has a rational order-three subgroup D, and the six points at the three prime markings are its union with its translate by T. The deck involution is T−P and T is torsion precisely when two scaled normal coefficients agree.",
+          "verification_note": "Explicit polynomial and birational identities, marked evaluations and elementary prime-to-good-reduction torsion bounds."
+        },
+        {
+          "id": "ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT",
+          "title": "The marked three-isogeny merges all three weighted tangent fibres",
+          "state": "proved",
+          "scope": "The quotient by the rational order-three subgroup descends to the explicit degree-three map r=t(t−k)(t−k−1)/(2Q), where Q is quadratic of discriminant −3w². Its target quartic g satisfies g(r(t))=4r′(t)² f_k(t), giving the same field away from exceptional parameters.",
+          "canonical_source": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "checker": "arithmetic/verify_weighted_cubic_tangent_elliptic_marks.py",
+          "artifact_hash": "sha256:cc672b95bc605bacc83d61acd041fe768f12bd0059518196c45c1a7776a647c2",
+          "evidence": [],
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "The quotient by the rational order-three subgroup descends to the explicit degree-three map r=t(t−k)(t−k−1)/(2Q), where Q is quadratic of discriminant −3w². Its target quartic g satisfies g(r(t))=4r′(t)² f_k(t), giving the same field away from exceptional parameters.",
+          "verification_note": "Specialized Cohen–Pazuki isogeny, degree-two quotient and exact polynomial identity."
+        },
+        {
+          "id": "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-ORBIT-REDUCTION",
+          "title": "An asymmetric tangent has a cyclotomic CM trace orbit with a reduction test",
+          "state": "proved",
+          "scope": "For each fixed asymmetric profile over Q(sqrt(−3)), the odd CM trace orbit P_n has infinitely many finite rational parameters with all three markings positive. At a good prime dividing marking i, [3n²+1]T=[2]D_i modulo that prime.",
+          "canonical_source": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For each fixed asymmetric profile over Q(sqrt(−3)), the odd CM trace orbit P_n has infinitely many finite rational parameters with all three markings positive. At a good prime dividing marking i, [3n²+1]T=[2]D_i modulo that prime.",
+          "verification_note": "Explicit CM trace and group-law identity with density in the anti-invariant identity circle. The finite modular tests are replayed at the two genuine fixtures."
+        },
+        {
+          "id": "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-COLLISION-EXAMPLES",
+          "title": "Two genuine unequal-weight triangles share a rank-one companion twist",
+          "state": "proved",
+          "scope": "For (x,y,z)=(10,1,9) and p1+9p2−10p3=0, the prime triples (56611,6451,11467) and (8826476898331,1502124583051,2234559814579) are genuine over Q(sqrt(−3)). Their anti-invariant points are 3JT and 5JT, and the companion quadratic twist has rank one. This falsifies extension of unweighted rank-one uniqueness to all fixed weighted lines.",
+          "canonical_source": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "checker": "arithmetic/verify_weighted_cubic_tangent_elliptic_marks.py",
+          "artifact_hash": "sha256:cc672b95bc605bacc83d61acd041fe768f12bd0059518196c45c1a7776a647c2",
+          "evidence": [],
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For (x,y,z)=(10,1,9) and p1+9p2−10p3=0, the prime triples (56611,6451,11467) and (8826476898331,1502124583051,2234559814579) are genuine over Q(sqrt(−3)). Their anti-invariant points are 3JT and 5JT, and the companion quadratic twist has rank one. This falsifies extension of unweighted rank-one uniqueness to all fixed weighted lines.",
+          "verification_note": "Exact Sage primality, reconstruction, orbit and finite-field calculations. The equal unconditional rank bounds [1,1] use PARI ellrank on the rational isogenous curve."
+        },
+        {
+          "id": "ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM",
+          "title": "Prime weighted markings force the norm of the CM index to be prime",
+          "state": "proved",
+          "scope": "On the specified cyclotomic trace orbit of a fixed asymmetric profile, each of the three prime-to-S markings is the norm of a CM denominator ideal at the same index λ=(1+n sqrt(−3))/2 and a different rational torsion translate of T. A single prime marking for sufficiently large |n| forces (3n²+1)/4 prime.",
+          "canonical_source": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "checker": "arithmetic/verify_weighted_cubic_tangent_elliptic_marks.py",
+          "artifact_hash": "sha256:cc672b95bc605bacc83d61acd041fe768f12bd0059518196c45c1a7776a647c2",
+          "evidence": [],
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "On the specified cyclotomic trace orbit of a fixed asymmetric profile, each of the three prime-to-S markings is the norm of a CM denominator ideal at the same index λ=(1+n sqrt(−3))/2 and a different rational torsion translate of T. A single prime marking for sufficiently large |n| forces (3n²+1)/4 prime.",
+          "verification_note": "Étale valuation matching and coprime conjugate indices, followed by Streng primitive divisors at the index and a large proper divisor. Exact marking valuations are verified on both prime fixtures."
+        },
+        {
+          "id": "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-PRIME-INDEX-COUNT",
+          "title": "A logarithmic saving for prime triangles on a fixed cyclotomic trace orbit",
+          "state": "proved",
+          "scope": "For each fixed nonsymmetric cubic tangent profile, the orbit in WM3 has O_k(N/log N) prime triangles for |n|≤N and O_k(sqrt(log Z)/loglog Z) when the prime vertices are at most Z. This count is for the specified orbit.",
+          "canonical_source": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For each fixed nonsymmetric cubic tangent profile, the orbit in WM3 has O_k(N/log N) prime triangles for |n|≤N and O_k(sqrt(log Z)/loglog Z) when the prime vertices are at most Z. This count is for the specified orbit.",
+          "verification_note": "One-dimensional upper bound sieve for 3j²+3j+1 and the degree-four centered elliptic height map, with constants depending on the fixed profile."
+        },
+        {
+          "id": "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-FULL-CYCLOTOMIC-COSET-COUNT",
+          "title": "The rank-one cyclotomic count extends to the full trace coset",
+          "state": "proved",
+          "scope": "For every fixed asymmetric weighted tangent profile of rank one on E_w over Q, the whole cyclotomic trace coset has O_k(sqrt(log Z)/loglog Z) genuine prime triples with all vertices at most Z. The index trace equation is an affine line in the Eisenstein ring. A fixed one of the three marks removes the torsion translate and forces prime rational index norm except at finitely many indices. There is no estimate uniform in the varying profile.",
+          "canonical_source": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every fixed asymmetric weighted tangent profile of rank one on E_w over Q, the whole cyclotomic trace coset has O_k(sqrt(log Z)/loglog Z) genuine prime triples with all vertices at most Z. The index trace equation is an affine line in the Eisenstein ring. A fixed one of the three marks removes the torsion translate and forces prime rational index norm except at finitely many indices. There is no estimate uniform in the varying profile.",
+          "verification_note": "Torsion over the cyclotomic field via good-prime reduction, elementary two-isogeny descent, and Fermat exponent three. Free rank-one CM module and exact sign normalization remove the fixed torsion shift at one marked fibre. Then apply the same primitive-divisor and sieve argument with its affine index equation."
+        },
+        {
+          "id": "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES",
+          "title": "An explicit 5-23 ray block and complete selected Mordell Cassels-Tate matrices",
+          "state": "proved",
+          "scope": "For R=115t, t a squarefree product of allowed primes away from 5,23 and t=+/-1 mod9, the pairing entry between chi_5 and chi_23 is the sum of the explicit residue-field kappa(q), minus kappa(503)=0, in one fixed F3 normalization. This gives complete normalized matrices at R=115,57845,6095,2188105 of ranks 0,0,2,2, with rational ranks 2,3,1,2 and Sha(E_R)[3]=(Z/3)^2 in the last two cases. The usual Weil-sign calibration and arbitrary ray pairs are not asserted.",
+          "canonical_source": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+          "checker": "arithmetic/verify_mordell_ray_pairing.py",
+          "artifact_hash": "sha256:7fc63bbff1d199d90cfda1ae2310b9a7f1f56dc7e3b7c6b78d0c97170e5da4ff",
+          "evidence": [
+            "arithmetic/mordell_ray_pairing_exact.json"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written specialization of Koymans-Smith with d=54, explicit Heisenberg norm construction and exact rational Kummer controls. Standard-library internal replay passed; no independent replay or external mathematical review.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For R=115t, t a squarefree product of allowed primes away from 5,23 and t=+/-1 mod9, the pairing entry between chi_5 and chi_23 is the sum of the explicit residue-field kappa(q), minus kappa(503)=0, in one fixed F3 normalization. This gives complete normalized matrices at R=115,57845,6095,2188105 of ranks 0,0,2,2, with rational ranks 2,3,1,2 and Sha(E_R)[3]=(Z/3)^2 in the last two cases. The usual Weil-sign calibration and arbitrary ray pairs are not asserted."
+        },
+        {
+          "id": "ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS",
+          "title": "Infinitely many admissible twists have a uniform nonzero ray block and global Hasse failures",
+          "state": "proved",
+          "scope": "Among primes q=-1 mod9 inert in Q(sqrt(-2)), the explicitly defined kappa(q) takes each F3 value with relative natural density 1/3. For the two thirds with kappa(q)!=0, R=115q is admissible, the pairing has rank two, rank E_R(Q)<=1 and dim Sha(E_R)[3]>=2. All four nonzero lines in span(chi_5,chi_23) have no rational representative at any height. The nonzero prime set has density 1/18 among all rational primes.",
+          "canonical_source": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+          "checker": "arithmetic/verify_mordell_ray_pairing.py",
+          "artifact_hash": "sha256:7fc63bbff1d199d90cfda1ae2310b9a7f1f56dc7e3b7c6b78d0c97170e5da4ff",
+          "evidence": [
+            "arithmetic/mordell_ray_pairing_exact.json"
+          ],
+          "proof_type": "hybrid",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written Chebotarev argument for the degree-324 compositum, with explicit disjointness and conjugacy class size nine. Infinitude is not inferred from finite symbol calculations; no independent mathematical review.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Among primes q=-1 mod9 inert in Q(sqrt(-2)), the explicitly defined kappa(q) takes each F3 value with relative natural density 1/3. For the two thirds with kappa(q)!=0, R=115q is admissible, the pairing has rank two, rank E_R(Q)<=1 and dim Sha(E_R)[3]>=2. All four nonzero lines in span(chi_5,chi_23) have no rational representative at any height. The nonzero prime set has density 1/18 among all rational primes."
+        },
+        {
+          "id": "ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL",
+          "title": "A power bound for large square-root scales in binary quartic values",
+          "state": "proved",
+          "scope": "For fixed separable integral binary quartic F and 0<alpha≤1/3, at most O_{F,alpha,eps}(B^(2−alpha+eps)) primitive projective directions of height at most B with F≠0 have square-root scale above B^alpha in F=d s².",
+          "canonical_source": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For fixed separable integral binary quartic F and 0<alpha≤1/3, at most O_{F,alpha,eps}(B^(2−alpha+eps)) primitive projective directions of height at most B with F≠0 have square-root scale above B^alpha in F=d s².",
+          "verification_note": "Root-lattice count at large primes and a product divisor at small primes, together with the fixed cubic or quartic large prime-square tail."
+        },
+        {
+          "id": "ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE",
+          "title": "Binary quartic squareclass collisions are sparse outside projective root symmetries",
+          "state": "proved",
+          "scope": "On any set of primitive projective directions of height at most B with one per rational branch-symmetry orbit, incidences with repeated signed squarefree quartic values are O_{F,eps}(B^(47/27+eps)), improved to O_{F,eps}(B^(39/23+eps)) for irreducible F. Ordered collisions with both square scales at most B^(7/27), or B^(7/23) respectively, satisfy the same bound.",
+          "canonical_source": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "On any set of primitive projective directions of height at most B with one per rational branch-symmetry orbit, incidences with repeated signed squarefree quartic values are O_{F,eps}(B^(47/27+eps)), improved to O_{F,eps}(B^(39/23+eps)) for irreducible F. Ordered collisions with both square scales at most B^(7/27), or B^(7/23) respectively, satisfy the same bound.",
+          "verification_note": "Reduced square-scale ratio, two root lattices and a uniformly smooth quartic in a determinant box. The largest monomial size is at least the box volume. Auxiliary curves and the square-factor tail are explicitly summed."
+        },
+        {
+          "id": "ARITH-ABC-CUBIC-TANGENT-FIELD-COLLISION-FACTORIAL-MOMENT",
+          "title": "Unweighted cubic tangent fields have a power-saving second factorial moment",
+          "state": "proved",
+          "scope": "For all genuine unweighted prime progressions with p≤Z and arbitrary square factors of R, sum_d N_d(Z)(N_d(Z)−1) is O_eps(Z^(39/23+eps)). For any fixed locally admissible rectangle of CT4 the count of fields is asymptotic to the prime-form triangle count, also with prime h/6 and within each sign, without a squarefree sieve.",
+          "canonical_source": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "checker": "arithmetic/verify_cubic_tangent_collision_census.py",
+          "artifact_hash": "sha256:00b696de1da3ed695744de8d3fe002616e23683615bfe8a7a5fe6c9e42c7c078",
+          "evidence": [],
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For all genuine unweighted prime progressions with p≤Z and arbitrary square factors of R, sum_d N_d(Z)(N_d(Z)−1) is O_eps(Z^(39/23+eps)). For any fixed locally admissible rectangle of CT4 the count of fields is asymptotic to the prime-form triangle count, also with prime h/6 and within each sign, without a squarefree sieve.",
+          "verification_note": "Uses the symmetric branch classification and uniform determinant/p-adic estimate with the field-height packing for large scales. The attached exact finite census has no repeat among 1365099 triangles with centers at most 45000."
+        },
+        {
+          "id": "ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-COLLISION-INCIDENCE",
+          "title": "Asymmetric weighted tangent field repeats have power-saving incidence",
+          "state": "proved",
+          "scope": "On every fixed asymmetric weighted tangent line, among primitive prime triangles with vertices at most Z, incidence with another triangle on the line in the same quadratic field is O_{profile,eps}(Z^(47/27+eps)), or O(Z^(39/23+eps)) for irreducible parameter quartic. The estimate permits the explicit cyclotomic collisions and does not vary the profile.",
+          "canonical_source": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "On every fixed asymmetric weighted tangent line, among primitive prime triangles with vertices at most Z, incidence with another triangle on the line in the same quadratic field is O_{profile,eps}(Z^(47/27+eps)), or O(Z^(39/23+eps)) for irreducible parameter quartic. The estimate permits the explicit cyclotomic collisions and does not vary the profile.",
+          "verification_note": "The branch representation projects onto full S3 on two-torsion, so it is S4 or a point stabilizer and has trivial centralizer. Apply the unrestricted quartic incidence estimate."
         }
       ],
       "open_questions": [
@@ -72857,7 +73339,8 @@
         "GAP-ARITH-ABC-FREY-MIXED-ADJOINT-DEGREE-BOUND",
         "GAP-ARITH-ABC-FREY-BAD-COEFFICIENT-ADJOINT-EXCESS",
         "GAP-ARITH-ERDOS943-EFFECTIVE-SLOPE-ELLIPTIC-RESIDUAL",
-        "GAP-ARITH-ERDOS943-PAIRED-MULTIPLICATION-RESIDUAL"
+        "GAP-ARITH-ERDOS943-PAIRED-MULTIPLICATION-RESIDUAL",
+        "GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX"
       ],
       "scope_note": "This family bound allows all integer degrees but excludes arbitrary alternative fraction witnesses and transformed Pade sequences. Its uniform height and reduced-congruence gates eventually force d<=6; no bound for the full K_N(T) follows."
     },
@@ -82679,6 +83162,11 @@
             "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md",
             "sha256": "eb83a59f3c6f1ab02ca1cc6f512007af0ef7dc76b5ff69c575c6a2e3a36ea164",
             "locator": "PolynomialWeylOrderEightGeneration, PolynomialWeylOrderTenResidual and PolynomialWeylOrderFifteenResidual"
+          },
+          {
+            "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+            "sha256": "4b5fa89acb53bf5e44a38d59c5affd88a512cbf8746bed40bc19e6cc7ef3b965",
+            "locator": "PolynomialWeylOrderTwelveResidual and PolynomialWeylOrderTwelveFortyTwoRootField"
           }
         ],
         "dependency_coverage": "partial",
@@ -283198,6 +283686,77 @@
         "dependency_coverage": "complete"
       },
       {
+        "id": "EVIDENCE-DIX-WEYL-ORDER-TWELVE-CROSSINGS",
+        "title": "Exact order-twelve crossing and successor arithmetic",
+        "scope": "The checker exhausts the proved crossing range at upper first coordinate six and the (6,30) fractional lattice at ratio 2:b, including equality in the scalar denominator bound for degree one.",
+        "sources": [
+          {
+            "path": "dixmier/dixmier-formal-lifting/verify_weyl_order_twelve.py",
+            "sha256": "fb87c23cf1c4516f6b51039ffa1bd39cdfa7f018fb8c2e56f87b58743c40f816",
+            "locator": "check_first_coordinate_six and check_six_thirty_successors"
+          }
+        ],
+        "topic": "dixmier",
+        "origin": "internal",
+        "kind": "source",
+        "status": "proved",
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "SRC-DIX-WEYL-ORDER-TWELVE-LOWER-CROSSINGS",
+        "title": "Local ratio-two restrictions at (5,20), (6,10) and (6,12)",
+        "scope": "For the indicated polynomial Weyl crossing faces with positive nondividing ratio 2:b, the local fractional successors exclude (6,10) and (6,12), and require b=3 at (5,20).",
+        "sources": [
+          {
+            "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_BERNSTEIN_DEGREE_THROUGH_THIRTY_THREE.md",
+            "sha256": "244842d9c4bbd94d5ca9e5aec2afc81261b13b9b3bb701ca36b210c5dd459596",
+            "locator": "The necessary scalar successor at the (6,10) corner"
+          },
+          {
+            "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_BERNSTEIN_DEGREE_THROUGH_FORTY_ONE.md",
+            "sha256": "3998de88273a597148e328e2b376d63ebff1c4aa7f0ce9ea8595ce6fff34a910",
+            "locator": "Sum eighteen, row (6,12)"
+          },
+          {
+            "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_CONDITIONAL_THROUGH_FIFTY_ONE_FROM_F7.md",
+            "sha256": "43e965e2b3a8dc272d0a600c42e23758f39fb7a48366ecbecc518c22bf249a37",
+            "locator": "Local scalar and commuting successor tests for (5,20)"
+          }
+        ],
+        "topic": "dixmier",
+        "origin": "internal",
+        "kind": "source",
+        "status": "proved",
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "SRC-DIX-WEYL-SIX-FIFTEEN-LOCAL-SUCCESSORS",
+        "title": "Local ratio-two (6,15) successor and root-ratio quadratic",
+        "scope": "At the polynomial Weyl crossing (6,15),(1,0) at (3,-1) with positive nondividing ratio 2:b, the local shifted successors force b=7, and the multiplicity-four and simple roots of L have ratio c with 2c^2-5c+5=0.",
+        "sources": [
+          {
+            "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_BERNSTEIN_FORTY_TWO_REAL_BOUND.md",
+            "sha256": "c902613a8f7c773d49d66be33b634f00b7ed3d360a945de870a6ab5e2a312bf2",
+            "locator": "The crossing face, scalar and commuting successor tests, and the two-root calculation"
+          }
+        ],
+        "topic": "dixmier",
+        "origin": "internal",
+        "kind": "source",
+        "status": "proved",
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS",
+        "title": "The (6,30) Weyl crossing requires quotient three, five or thirteen",
+        "scope": "A polynomial Weyl crossing with normalized endpoints (6,30),(1,0), direction (6,-1), positive weights of ratio 2:b with b>=3 odd, zero leading bracket and nonzero scalar commutator requires b in {3,5,13}.",
+        "topic": "dixmier",
+        "origin": "internal",
+        "kind": "claim",
+        "status": "open",
+        "dependency_coverage": "complete"
+      },
+      {
         "id": "SRC-DIX-WEYL-FOUR-TWELVE-LOCAL-SUCCESSORS",
         "title": "Local Weyl successors of the (4,12) translated crossing",
         "scope": "For a positive-weight polynomial Weyl diagonal crossing with normalized endpoints (4,12),(1,0) at weight (4,-1) and coprime nondividing quotient ratio a:b, the local bracket mate and fractional successors force the ratio {2j+3,3j+4}. The two-root quartic-edge descent rules out that branch, and the scalar successor of the remaining branch at (7/4,3) gives the family.",
@@ -286051,7 +286610,7 @@
       {
         "id": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION",
         "title": "Three-variable sextic Keller inversion",
-        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. For a quartic component affine in a source direction, the triple-line and parabolic shears are excluded. The localized tangent-conic form is excluded. In the squarefree coefficient residual a constant target frame leaves only mate z-degrees (3,2), with leading coefficients proportional to a,a or to x^3,x^2(gamma(xy−1)+delta), where a=x(xy−1). The ordinary minimum is seven in the equivariant class of weight (1,−1,−2). Without equivariance the minimum is six or seven.",
+        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. The unrestricted minimum is six or seven.",
         "kind": "gap",
         "status": "open",
         "origin": "internal",
@@ -286059,7 +286618,7 @@
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
         "dependency_coverage": "partial",
-        "next_action": "Classify the unresolved leading ranks and primitive pencils. In the affine-source quartic branch, settle the two remaining squarefree (3,2) leading pairs.",
+        "next_action": "Classify degree-adapted sextic leading ranks and primitive pencils. In a counterexample every quartic target combination has directional degree either zero or at least two in every nonzero affine source direction.",
         "sources": [
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md",
@@ -286220,6 +286779,16 @@
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_TWO_QUADRATIC_MATES.md",
             "sha256": "07ec2e1778e8b3bd9f46f9aab2a99ca2231d347a73d9ecff32eb1b70cf24aff4",
             "locator": "SexticKellerSquarefreeQuarticTwoQuadraticMatesExclusion"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+            "sha256": "097c609533af523c74cdded9ac3e400767697ef37c46ecca610424877e8393f3",
+            "locator": "SexticKellerQuarticAffineSourceInversion"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_ACTION.md",
+            "sha256": "44e5b8858c653da977939e19164cd35b6d85870e9a607cc04eea31b24f54232f",
+            "locator": "SexticKellerDiagonalTorusInversion"
           }
         ]
       },
@@ -287235,7 +287804,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
-            "sha256": "d13d0dc82232e79c202ce9f18b201f4243446f2c8b70eb2a916b1dc9507372b1",
+            "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
             "locator": "Theorem and Common factorial factors and exact sign check"
           },
           {
@@ -287248,7 +287817,7 @@
       {
         "id": "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-LEADING-SIGN",
         "title": "Leading height polynomial of the initial homogeneous trinomial remainder",
-        "scope": "For all integers d>=2 and 0<a<d, the polynomial -R in the two heights has degree 14d-5 and the explicit highest part (3). For each fixed support -R is strictly positive when both real heights exceed an effective threshold, independently of their ratio. Its twelve highest homogeneous layers, degrees 14d-5 through 14d-16, have nonnegative height coefficients by a symbolic rational check in the integer-gap binomial basis. All 190 complete gap differences of combined order at most 18 have nonnegative coefficients.",
+        "scope": "For all integers d>=2 and 0<a<d, the polynomial -R in the two heights has degree 14d-5 and the explicit highest part (3). For each fixed support -R is strictly positive when both real heights exceed an effective threshold, independently of their ratio. Its twenty highest homogeneous layers, degrees 14d-5 through 14d-24, have nonnegative height coefficients by a symbolic rational check in the integer-gap binomial basis. All 190 complete gap differences of combined order at most 18 have nonnegative coefficients.",
         "kind": "claim",
         "status": "proved",
         "topic": "factorial",
@@ -287258,7 +287827,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
-            "sha256": "d13d0dc82232e79c202ce9f18b201f4243446f2c8b70eb2a916b1dc9507372b1",
+            "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
             "locator": "Highest homogeneous part at every span, formula (3)"
           },
           {
@@ -287268,10 +287837,137 @@
           },
           {
             "path": "factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py",
-            "sha256": "93b5e1d2321b0a6e0358aae420c5efe71dc8c7508f03c9ebc562f5137a19fe62",
-            "locator": "remainder_layers, verify_integer_gap_layers and verify_complete_gap_differences"
+            "sha256": "7403cb0b14d99943feabc22cb42337190bd1b7dc18e678cb63d3347231bb6866",
+            "locator": "main with default LIMIT=24 and DIFFERENCE_ORDER=18: remainder_layers, verify_integer_gap_layers, expanded comparisons and all 190 complete differences"
+          }
+        ],
+        "assessment": "Internal replay of the current checker default LIMIT=24 passed, verifying all twenty height layers (orders 5 through 24), comparison with the expanded remainders through span 6 and all 190 complete gap differences through order 18. The negative shifted-gap power-basis coefficient at order twelve is retained. This is internal exact computation; no independent replay, formal verification or external review is asserted.",
+        "replay": {
+          "command": ".venv/bin/python research/factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py",
+          "working_directory": "repository root",
+          "parameters": {
+            "LIMIT": 24,
+            "DIFFERENCE_ORDER": 18
+          },
+          "versions": {
+            "python": "3.12.3",
+            "python-flint": "0.9.0",
+            "sympy": "1.14.0"
+          },
+          "outcome": "passed",
+          "coverage": "Expansion orders 5–24 in the integer-gap binomial basis, the order-twelve shifted-power-basis obstruction, exact comparisons at all profiles through span 6, and all 190 complete gap differences of combined order at most 18."
+        }
+      },
+      {
+        "id": "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-ORIGIN-SIGN",
+        "title": "Strict SFC remainder sign at the unshifted height pair",
+        "scope": "For every integer d>=2 and 0<a<d, the initial homogeneous trinomial remainder satisfies R(0,0;a,d)<0 in the chart eliminating column 2. Explicit beta bounds cover d>=16 and exact rational replay covers all 105 oriented pairs through span 15.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
+            "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
+            "locator": "Strict sign at zero heights for every span"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_sfc_homogeneous_trinomial_gap_increments.py",
+            "sha256": "5b9a9000248c7f63626820776fdd614fd5a898221658289545cb28076e51379c",
+            "locator": "origin_normalized and verify_origin"
           }
         ]
+      },
+      {
+        "id": "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-GAP-FACTORS",
+        "title": "Common factors and sharp finite tests for trinomial gap increments",
+        "scope": "The signed cubic remainder -R has the common termwise factor (5) at every support. Its normalized height layers have formal gap factor a^2*d^3*(d-a)^4. The factored induction base has nonnegative coefficients and the exact sharp leading-ratio comparison (7) holds for all 561 source supports in each gap direction through source span 34.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
+            "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
+            "locator": "Common factors in the gap increments and An all-order factor in the formal gap parameters"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_sfc_homogeneous_trinomial_gap_increments.py",
+            "sha256": "5b9a9000248c7f63626820776fdd614fd5a898221658289545cb28076e51379c",
+            "locator": "checked_quotient, verify_increment and main"
+          }
+        ]
+      },
+      {
+        "id": "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-HIGHEST-GAP-DEGREES",
+        "title": "Highest gap degrees and effective fixed-coefficient tests for SFC increments",
+        "scope": "For each reciprocal coefficient of total degree n>=5 in normalized Q, its gap-degree 2n part contains all monomials divisible by a^2*b^4 with positive coefficients, with generating series (8). Both gap increments at that coefficient are positive outside an effectively computed finite region of gap pairs. Exact replay settles reciprocal degree 25 for all gap pairs.",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
+            "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
+            "locator": "Highest gap degrees and the finite test for each coefficient, formula (8)"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py",
+            "sha256": "7403cb0b14d99943feabc22cb42337190bd1b7dc18e678cb63d3347231bb6866",
+            "locator": "matched_cutoff and verify_fixed_deficit"
+          }
+        ]
+      },
+      {
+        "id": "GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS",
+        "title": "Prove both forward gap steps for the normalized initial SFC remainder",
+        "scope": "For every nonnegative integer pair A,B, prove coefficientwise nonnegativity in the reciprocal heights of Q_(A+1,B)-Q_(A,B) and Q_(A,B+1)-Q_(A,B), with Q the normalization of -R by the height reversal and 432^d.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "endpoint_role": "alternative_method",
+        "evidence_type": "mathematical_obligation",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
+            "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
+            "locator": "Newton expansion in the integer gaps and Highest gap degrees and the finite test for each coefficient"
+          }
+        ],
+        "next_action": "Seek a coefficient comparison compatible with all reciprocal degrees, or a uniform way to resolve the finite exceptions from the highest-gap formula. The cutoff for a fixed coefficient grows with its degree; it is not a uniform certificate."
+      },
+      {
+        "id": "GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS",
+        "title": "Prove the factored gap-step inequalities for the initial SFC remainder",
+        "scope": "For integer 0<a<d, with P=S/K defined by (5), prove coefficientwise P_(a,d+1)>=432 L^4 H^4 P_(a,d) everywhere and P_(a+1,d+1)>=(432/2^epsilon) L^(4-epsilon) H^2 P_(a,d) on d-a=1, where S=-R and epsilon is the indicator of even a.",
+        "kind": "gap",
+        "status": "open",
+        "topic": "factorial",
+        "origin": "internal",
+        "gap_kind": "mathematical",
+        "endpoint_role": "alternative_method",
+        "evidence_type": "mathematical_obligation",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
+            "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
+            "locator": "Common factors in the gap increments, inequalities (6)"
+          }
+        ],
+        "next_action": "Use the commuting difference representation after removing the height and gap factors. The sharper ratios (7) are candidate bounds, with equality already forced at one leading monomial. A proof of the weaker (6) is sufficient."
       },
       {
         "id": "GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN",
@@ -287288,11 +287984,11 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
-            "sha256": "d13d0dc82232e79c202ce9f18b201f4243446f2c8b70eb2a916b1dc9507372b1",
+            "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
             "locator": "Common factorial factors and exact sign check, and Integral and shift formulas"
           }
         ],
-        "next_action": "Seek a coefficientwise nonnegative first forward-difference recurrence in the two gaps for the reciprocal-height normalization Q. The integer-gap binomial basis certifies the top twelve height layers and every complete difference of combined order at most 18. Strict positivity of S at zero heights is a separate sufficient condition once the coefficient signs are known."
+        "next_action": "Prove the full normalized gap steps, or use their sufficient factored variant. Strict positivity at zero heights is proved. For each fixed reciprocal coefficient both normalized steps have effective finite exception sets, but the bounds depend on degree."
       },
       {
         "id": "GAP-SFC-HOMOGENEOUS-TRINOMIAL-INITIAL-AXIS",
@@ -289121,6 +289817,11 @@
             "path": "arithmetic/ABC_CUBIC_TANGENT_WEIL_RESTRICTION_SELMER.md",
             "sha256": "051b28fe0f5f8e53055b39c56a3fc2e1093e148bcd290806c9071bbe67b97647",
             "locator": "Theorem WR6, Weil pairing formula and kernel of the individual lifting obstruction"
+          },
+          {
+            "path": "arithmetic/sources/van-beek-fisher-cubic-norm-pairing-1711.02432v1.pdf",
+            "sha256": "35b7158dfccb1f01d1955b807325cd793ea650c70dcacfb9cc97b48eaa7ba767",
+            "locator": "Introduction, full-descent kernel statement before (2); Definition 1.2, Lemma 1.3 and Theorems 2.8/2.11"
           }
         ]
       },
@@ -289226,6 +289927,313 @@
             "path": "arithmetic/ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md",
             "sha256": "9083e861c9c02d8bb1a4799000fbd0878b6d825f9dc6b0141d04b06154db2cf2",
             "locator": "Theorem FC5, canonical height and degree-two morphism"
+          }
+        ]
+      },
+      {
+        "id": "EXT-FREY-1988-NEGATIVE-FIVE-SELMER-COMPARISON",
+        "kind": "claim",
+        "title": "Frey negative-twist full five-Selmer/class-group comparison",
+        "scope": "For p=5, a rational point P of order five outside the reduction kernel at five, negative squarefree d coprime to 5N_E, and the local conditions of the theorem (p.651), the full Selmer size is divisible by h_5(Q(sqrt(d))) and at most s_E times its square; s_E=1 if the exceptional set of odd q|N_E with q=-1 mod5 and 5 not dividing v_q(Delta_E) is empty. At 2 require d=3 mod4 only if 2|N_E; at bad q outside {2,5,S_E}, require (d/q)=-1 for split multiplicative or potentially good reduction and +1 otherwise; if v_5(j_E)<0 require (d/5)=-1.",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "arithmetic/sources/frey-selmer-twists-1988.pdf",
+            "sha256": "3466c5838853d54d535b68700aed2acf127a78b7bb7e429fbae7d8565e798dad",
+            "locator": "Printed pp.649-652: class-torsion and full Selmer definitions; theorem; Lemma 1; corollary and X_0(11) example"
+          }
+        ]
+      },
+      {
+        "id": "EXT-CESNAVICIUS-X011-QUADRATIC-SELMER-COMPARISON",
+        "kind": "claim",
+        "title": "Existing full five-Selmer comparison for X_0(11) over imaginary quadratic fields",
+        "scope": "For E=Cremona 11a1 and imaginary quadratic K with 11 inert, 2r_5(K)-1<=dim_F5 Sel_5(E/K)<=2r_5(K)+1, where r_5(K)=dim_F5 Cl(K)[5]. The same example at K=Q gives dim_F5 Sel_5(E/Q)=1 using its bound and parity formula.",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "arithmetic/sources/cesnavicius-selmer-flat-1301.4724v4.pdf",
+            "sha256": "5fb7c540d089f967d7432ad1ac2ed66e823d8e42ba2432c4933942bbb0433891",
+            "locator": "arXiv:1301.4724v4, Example 1.12, printed p.4, equations (1)-(3); ordinary class group and full Selmer domain"
+          }
+        ]
+      },
+      {
+        "id": "EXT-JAMES-ONO-FIVE-SELMER-KUMMER-SEQUENCE",
+        "kind": "claim",
+        "title": "Five-Selmer Kummer exact sequence and finite Sha[5] quotient",
+        "scope": "For an elliptic curve A/Q, 0 -> A(Q)/5A(Q) -> Sel_5(A/Q) -> Sha(A/Q)[5] -> 0. Thus |Sha(A/Q)[5]|<=|Sel_5(A/Q)| independently of finiteness of the entire Tate-Shafarevich group.",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "arithmetic/sources/james-ono-selmer-quadratic-twists.pdf",
+            "sha256": "d42e4dc0eb79cf017d8e1b4adb33616dd3baf726b086462c0a40f314cfb3b626",
+            "locator": "Equation (1.5), full ell-Selmer group and Sha[ell], specialized to ell=5"
+          }
+        ]
+      },
+      {
+        "id": "EXT-ARITH-COHEN-PAZUKI-MORDELL-THREE-ISOGENY",
+        "title": "Cohen–Pazuki explicit rational three-isogeny",
+        "scope": "The specialization with a=0, D=1 gives the normalized map (x,y)→((x³+4B²)/x²,y(x³−8B²)/x³) with kernel {O,(0,±B)} on y²=x³+B² and target y²=x³−27B². The dual composes to multiplication by three.",
+        "topic": "arithmetic",
+        "kind": "source",
+        "status": "proved",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/cohen-pazuki-2009-three-isogeny.pdf",
+            "sha256": "c132f6ddb621c498e49a3abb8ec59bf7f0b9f1c7456b066ddf353c1ed07efc17",
+            "locator": "Section 1, Definition 1.3 and Proposition 1.4"
+          }
+        ]
+      },
+      {
+        "id": "EXT-ARITH-STRENG-CM-ELLIPTIC-PRIMITIVE-DIVISORS",
+        "title": "Primitive denominator primes for CM ideal-indexed elliptic divisibility",
+        "scope": "Over a number field containing the endomorphisms, for a fixed non-torsion point and the denominator ideals indexed by invertible ideals of the endomorphism order, every index outside a finite set has a primitive prime divisor. Strong divisibility makes the rank of apparition unique. This imports no uniform bounds over different curves or base points.",
+        "topic": "arithmetic",
+        "kind": "source",
+        "status": "proved",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/streng-2008-cm-elliptic-divisibility.pdf",
+            "sha256": "6c0935f40c6b671434f0ab2c486b80df6c4d834da673d0edfaf5d5ecdd80a85f",
+            "locator": "Main Theorem, pp. 183–184, and Lemma 3.3 and primitive rank of apparition"
+          }
+        ]
+      },
+      {
+        "id": "EXT-ARITH-RICHERT-UPPER-SIEVE-FIXED-DIMENSION",
+        "title": "Richert upper sieve at a fixed dimension",
+        "scope": "Under conditions Omega1 and Omega2(kappa), Theorem 11.1 gives S(A,P,z)=O(X W(z)+sum_{squarefree d≤z²}3^omega(d)|R_d|). In the irreducible discriminant −3 quadratic application the prime weights have dimension one.",
+        "topic": "arithmetic",
+        "kind": "source",
+        "status": "proved",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/richert-sieve-methods-1976.pdf",
+            "sha256": "9fe0998535480c741a7a23a9a8dfa944ec2fe5ed3304c779f3dd218e23c774e2",
+            "locator": "Theorem 11.1 printed p.135 and equation (11.4)"
+          }
+        ]
+      },
+      {
+        "id": "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-COMMON-CUBIC-QUADRATIC-LEADING-EXCLUSION",
+        "title": "The common leading coefficient is impossible for cubic and quadratic squarefree mates",
+        "scope": "In characteristic zero and ordinary degree at most six the squarefree quartic normal form R=x(xy−1)z+b cannot have mates of z-degrees (3,2) with both leading coefficients proportional to x(xy−1).",
+        "sources": [
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+            "sha256": "097c609533af523c74cdded9ac3e400767697ef37c46ecca610424877e8393f3",
+            "locator": "SexticKellerSquarefreeQuarticCommonCubicQuadraticLeadingExclusion"
+          }
+        ],
+        "kind": "source",
+        "status": "proved",
+        "topic": "jacobian",
+        "origin": "internal",
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-MIXED-CUBIC-QUADRATIC-LEADING-EXCLUSION",
+        "title": "The mixed leading pair is impossible for cubic and quadratic squarefree mates",
+        "scope": "In characteristic zero and ordinary degree at most six the squarefree quartic normal form cannot have mates of z-degrees (3,2) with leading coefficients proportional to x^3 and x^2(gamma(xy−1)+delta), for any (gamma,delta) different from (0,0).",
+        "sources": [
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+            "sha256": "097c609533af523c74cdded9ac3e400767697ef37c46ecca610424877e8393f3",
+            "locator": "SexticKellerSquarefreeQuarticMixedCubicQuadraticLeadingExclusion"
+          }
+        ],
+        "kind": "source",
+        "status": "proved",
+        "topic": "jacobian",
+        "origin": "internal",
+        "dependency_coverage": "complete"
+      },
+      {
+        "id": "EVIDENCE-ARITH-MORDELL-RAY-PAIRING-EXACT",
+        "title": "Finite exact algebra for the retained Mordell-ray pairing fixtures",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "exact_computation",
+        "dependency_coverage": "complete",
+        "scope": "For the retained fixed input, verifies the relative norm identity, the eight rational Kummer point identities, central-symbol values at 53,71,359,503 under all four orientation choices, and the unique alternating F3 matrices satisfying the supplied entry and radical-vector constraints at R=115,57845,6095,2188105. Matrix ranks are 0,0,2,2. This finite algebra does not establish that these are the actual Cassels–Tate pairings; the global comparison and Chebotarev arguments are separate written inputs.",
+        "sources": [
+          {
+            "path": "arithmetic/verify_mordell_ray_pairing.py",
+            "sha256": "7fc63bbff1d199d90cfda1ae2310b9a7f1f56dc7e3b7c6b78d0c97170e5da4ff",
+            "locator": "main: norm and Kummer identities, four local-symbol embeddings and constrained alternating-matrix reconstruction"
+          },
+          {
+            "path": "arithmetic/mordell_ray_pairing_exact.json",
+            "sha256": "86f88f72918d1b2b357ed08f7f69e00e31ca3908a1eca4884e784be5e65f7190",
+            "locator": "Frozen Kummer representatives, norm solution, local symbols and rational witness points"
+          }
+        ],
+        "assessment": "Internal standard-library replay of python3 research/arithmetic/verify_mordell_ray_pairing.py passed. The corrupted norm control is rejected. No global pairing theorem, independent replay, formal verification or external review is asserted.",
+        "replay": {
+          "command": "python3 research/arithmetic/verify_mordell_ray_pairing.py",
+          "working_directory": "repository root",
+          "python_version": "3.12.3",
+          "outcome": "passed",
+          "coverage": "The four frozen curve fixtures and stated finite norm, Kummer, residue-symbol and constrained-matrix identities. The global Cassels–Tate identification and Chebotarev remain outside this replay."
+        }
+      },
+      {
+        "id": "EVIDENCE-JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION",
+        "title": "Exact unit ideals for the diagonal sextic action charts",
+        "scope": "The 349 ordinary mixed-sign charts without zero weights, 20 mixed-sign fixed-line charts and five balanced charts generated by the replay have coefficient ideals equal to the unit ideal over Q.",
+        "kind": "source",
+        "status": "proved",
+        "topic": "jacobian",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "jacobian/monodromy-theory/verify_sextic_graded_action.py",
+            "sha256": "b518c2723c784450321e917fee74fc93466fe8177c49500a81dd94d911541cc4",
+            "locator": "Exact determinant coefficient generation and 374 unit-ideal replays"
+          },
+          {
+            "path": "jacobian/monodromy-theory/verify_sextic_graded_112.py",
+            "sha256": "b1c7d17c0c17bf26a737e9dc340abb53bf83850f1344e85dada9ed70642f0217",
+            "locator": "Imported bracket and verify_unit_ideal"
+          }
+        ]
+      },
+      {
+        "id": "EXT-ARITH-KOYMANS-SMITH-CUBIC-TWIST-PAIRING-COMPARISON",
+        "title": "Koymans-Smith comparison of cubic-twist Cassels-Tate pairings by generalized Redei symbols",
+        "kind": "source",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "scope": "For any nonzero d, nonzero m and k=1 or 2, Proposition 4.1 compares CTP_(d,m p^k) and CTP_(d,m q^k) on the common isogeny Selmer classes when p/q is a cube in every Q_r for r dividing 6dm. The comparison is the generalized Redei symbol for mu_3 tensor M_-3d tensor M_-3d -> mu_3. Its proof gives the cochain formula with fixed local lifts and zero varying local lifts.",
+        "sources": [
+          {
+            "path": "arithmetic/sources/koymans-smith-cubic-twist-pairing-2405.09311v1.pdf",
+            "sha256": "daff4e64033ad83023a1071d3be034b8ee8d1b7c1ce201af39c4fcbed2c0aec0",
+            "locator": "Definition 2.2 and Lemma 2.3; Section 4.1 equations (4.1)-(4.4); Proposition 4.1 and complete proof, printed pp.30-31"
+          }
+        ],
+        "assessment": "Exact primary theorem, coefficient lines, local hypotheses and cochain proof inspected internally. The application d=54 and multi-prime extension are proved separately in the current note; no independent review."
+      },
+      {
+        "id": "ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD",
+        "title": "An exact norm solution gives the 5-23 ray Heisenberg field with quadratic subfield Q(sqrt(-2))",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "evidence_type": "written_derivation",
+        "dependency_coverage": "partial",
+        "scope": "For a=-35+15 sqrt(6), b=667+276 sqrt(6) and the exact cubic norm solution (2), the symmetrized Kummer construction (6)-(7) has a degree-54 quotient H/Q with group Heis_3 semidirect C_2, unramified outside 2,3,5,23, with abelianization Q(sqrt(-2)). For allowed q outside 5,23 the finite-field kappa(q) is the central coordinate of squared Frobenius, independent of both embedding choices.",
+        "sources": [
+          {
+            "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+            "sha256": "d68329e91b8b182a978657ff83535c2563ad47fa12046f6fb426935a69f92350",
+            "locator": "Coordinates and an exact norm solution; Explicit central symbol; The governing extension and its descent, equations (1)-(7)"
+          }
+        ],
+        "assessment": "Internal explicit norm, group-action, commutator and quadratic descent argument. Finite algebra checked separately."
+      },
+      {
+        "id": "GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX",
+        "title": "Explicit pairing matrix for arbitrary Mordell ray bases, including the wild coordinate",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "mathematical_obligation",
+        "scope": "Give exact formulas and certified replay data for every entry of the ray-character Cassels-Tate pairing for arbitrary admissible R, including epsilon_R=1 and the local correction at 3 for twist ratios that are not local cubes. The fixed 5-23 block and selected matrices do not settle this scope.",
+        "sources": [
+          {
+            "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+            "sha256": "d68329e91b8b182a978657ff83535c2563ad47fa12046f6fb426935a69f92350",
+            "locator": "Evidence, replay and remaining scope, final paragraph"
+          }
+        ],
+        "next_action": "Construct pairwise norm/cochain data and the wild local symbol at 3; separately fix the standard j/3 -> j Weil-sign convention."
+      },
+      {
+        "id": "EXT-ARITH-HELFGOTT-CUBIC-LARGE-SQUARE-TAIL",
+        "title": "Helfgott large prime-square divisors of a binary cubic",
+        "scope": "For a fixed irreducible homogeneous integral binary form of degree three, O(B^(4/3)(log B)^A) primitive pairs of height at most B have a prime above B whose square divides the value.",
+        "topic": "arithmetic",
+        "kind": "source",
+        "status": "proved",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/helfgott-square-free-sieve-0309109.pdf",
+            "sha256": "1f63d33e9d8234b31d766cd9a5054b91e7113aa5cf3eb70e6032ac70e949472f",
+            "locator": "Proposition 4.13"
+          }
+        ]
+      },
+      {
+        "id": "EXT-ARITH-SALBERGER-SMOOTH-QUARTIC-UNEQUAL-BOX-COUNT",
+        "title": "Salberger smooth surface determinant estimate in unequal boxes",
+        "scope": "For a smooth quartic surface in P3 and box sizes B_i, write V for their product and T for the largest nonzero monomial size. Theorem 3.16 counts points outside O((V/T^(1/4))^(1/4) log V+1) bounded-degree curves by O((V/T^(1/4))^(1/2) (log V)^4+(V/T^(1/4))^(1/4) V^epsilon), uniformly in the surface. Theorem 0.11 bounds points on an integral degree-delta curve by O(B^(2/delta+epsilon)); lines and conics on the smooth quartic are uniformly bounded in number.",
+        "topic": "arithmetic",
+        "kind": "source",
+        "status": "proved",
+        "origin": "external",
+        "evidence_type": "external_theorem",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/sources/salberger-counting-rational-points-2023.pdf",
+            "sha256": "b0e772be50160bec9a00a74719f9c036faf57e01cd3304c44f268a4cdc0707d9",
+            "locator": "Notation 1.1, Theorems 3.16 and 0.11, degree-at-most-d−2 curves after Theorem 0.5"
+          }
+        ]
+      },
+      {
+        "id": "PROOF-ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-NONCUBE-COEFFICIENT",
+        "title": "The weighted companion has noncube coefficient parameter outside the symmetric profiles",
+        "scope": "For any rational k other than 0, −1 and the three symmetric profiles, 4k(k+1) is not a rational cube. A cube would give a point of y²=x³+1 with nonzero x; the exact rank-zero descent and torsion classify it. This sublemma does not assume the rank-one hypothesis of the later count.",
+        "topic": "arithmetic",
+        "kind": "claim",
+        "status": "proved",
+        "origin": "internal",
+        "evidence_type": "written",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+            "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+            "locator": "Theorem WM7, first torsion calculation independent of rank-one hypothesis"
           }
         ]
       }
@@ -457191,7 +458199,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md",
-          "sha256": "1c2211be495cf7176a624350703e378b93957cfeb8fc322bd963d7d89d05f582",
+          "sha256": "5c518e3b3a6b808f54d22d2b856aacba52c266f4a2097df1a0a795ba51ba7c30",
           "locator": "PolynomialWeylLeadingFactorResidue"
         }
       },
@@ -457206,7 +458214,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md",
-          "sha256": "1c2211be495cf7176a624350703e378b93957cfeb8fc322bd963d7d89d05f582",
+          "sha256": "5c518e3b3a6b808f54d22d2b856aacba52c266f4a2097df1a0a795ba51ba7c30",
           "locator": "PolynomialWeylPerfectPowerLeadingFactor"
         }
       },
@@ -457220,8 +458228,22 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md",
-          "sha256": "1c2211be495cf7176a624350703e378b93957cfeb8fc322bd963d7d89d05f582",
+          "sha256": "5c518e3b3a6b808f54d22d2b856aacba52c266f4a2097df1a0a795ba51ba7c30",
           "locator": "PolynomialWeylLeadingFactorRamification"
+        }
+      },
+      {
+        "id": "DERIVE-DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY",
+        "premises": [
+          "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RESIDUE"
+        ],
+        "conclusion": "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md",
+          "sha256": "5c518e3b3a6b808f54d22d2b856aacba52c266f4a2097df1a0a795ba51ba7c30",
+          "locator": "PolynomialWeylLeadingFactorRealParity"
         }
       },
       {
@@ -457730,6 +458752,84 @@
           "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md",
           "sha256": "eb83a59f3c6f1ab02ca1cc6f512007af0ef7dc76b5ff69c575c6a2e3a36ea164",
           "locator": "PolynomialWeylOrderFifteenResidual"
+        }
+      },
+      {
+        "id": "DERIVE-DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS",
+        "premises": [
+          "EXT-GGV-WEYL-NONMINIMAL-CROSSING-INPUTS",
+          "EXT-GGV-II-RAMIFIED-FACE-SUCCESSOR",
+          "SRC-DIX-RECIPROCAL-POLYNOMIAL-PRIMITIVE-OBSTRUCTION",
+          "EVIDENCE-DIX-WEYL-ORDER-TWELVE-CROSSINGS"
+        ],
+        "conclusion": "DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+          "sha256": "4b5fa89acb53bf5e44a38d59c5affd88a512cbf8746bed40bc19e6cc7ef3b965",
+          "locator": "PolynomialWeylSixThirtyScalarSuccessors"
+        }
+      },
+      {
+        "id": "DERIVE-DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL",
+        "premises": [
+          "DIX-POLYNOMIAL-WEYL-GCD-FOUR-NONCONSTANT-LEADING-FACTOR",
+          "SRC-DIX-WEYL-FOUR-TWELVE-LOCAL-SUCCESSORS",
+          "SRC-DIX-WEYL-ABSCISSA-FIVE-LOCAL-SUCCESSORS",
+          "SRC-DIX-WEYL-ORDER-TWELVE-LOWER-CROSSINGS",
+          "SRC-DIX-WEYL-SIX-FIFTEEN-LOCAL-SUCCESSORS",
+          "DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS",
+          "DIX-POLYNOMIAL-WEYL-TRANSLATED-ROOT-CROSSING",
+          "EVIDENCE-DIX-WEYL-ORDER-TWELVE-CROSSINGS",
+          "EXT-GGV-WEYL-NONMINIMAL-CROSSING-INPUTS",
+          "DIX-POLYNOMIAL-WEYL-ORDER-EIGHT-GENERATION",
+          "DIX-POLYNOMIAL-WEYL-REDUCED-ORDER-FOUR-BOUND",
+          "DIX-POLYNOMIAL-WEYL-NONCONSTANT-LEADING-DEGREE-BOUND",
+          "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RESIDUE",
+          "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RAMIFICATION",
+          "DIX-POLYNOMIAL-WEYL-BERNSTEIN-THROUGH-FIFTY-NINE",
+          "DIX-WEYL-NONDIVIDING-BERNSTEIN-DEGREE-PAIR-TO-PLANAR-KELLER",
+          "EXT-JC2-DEGREE-100"
+        ],
+        "conclusion": "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+          "sha256": "4b5fa89acb53bf5e44a38d59c5affd88a512cbf8746bed40bc19e6cc7ef3b965",
+          "locator": "PolynomialWeylOrderTwelveResidual and the degree-thirty profile"
+        }
+      },
+      {
+        "id": "DERIVE-DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-FORTY-TWO-ROOT-FIELD",
+        "premises": [
+          "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL",
+          "SRC-DIX-WEYL-SIX-FIFTEEN-LOCAL-SUCCESSORS"
+        ],
+        "conclusion": "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-FORTY-TWO-ROOT-FIELD",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+          "sha256": "4b5fa89acb53bf5e44a38d59c5affd88a512cbf8746bed40bc19e6cc7ef3b965",
+          "locator": "PolynomialWeylOrderTwelveFortyTwoRootField"
+        }
+      },
+      {
+        "id": "DERIVE-DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-REAL-FORTY-TWO-RESIDUAL",
+        "premises": [
+          "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL",
+          "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-FORTY-TWO-ROOT-FIELD",
+          "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY"
+        ],
+        "conclusion": "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-REAL-FORTY-TWO-RESIDUAL",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+          "sha256": "4b5fa89acb53bf5e44a38d59c5affd88a512cbf8746bed40bc19e6cc7ef3b965",
+          "locator": "PolynomialWeylOrderTwelveRealFortyTwoResidual"
         }
       },
       {
@@ -464199,8 +465299,40 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
-          "sha256": "d13d0dc82232e79c202ce9f18b201f4243446f2c8b70eb2a916b1dc9507372b1",
+          "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
           "locator": "Initial projective-exclusion argument and Common factorial factors and exact sign check"
+        }
+      },
+      {
+        "id": "DERIVE-SFC-HOMOGENEOUS-TRINOMIAL-UNIFORM-FROM-NORMALIZED-GAP-STEPS",
+        "premises": [
+          "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-GAP-FACTORS",
+          "GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS",
+          "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-ORIGIN-SIGN"
+        ],
+        "conclusion": "GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
+          "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
+          "locator": "Newton expansion in the integer gaps, induction from Q at the zero gap pair"
+        }
+      },
+      {
+        "id": "DERIVE-SFC-HOMOGENEOUS-TRINOMIAL-UNIFORM-FROM-FACTORED-GAP-STEPS",
+        "premises": [
+          "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-GAP-FACTORS",
+          "GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS",
+          "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-ORIGIN-SIGN"
+        ],
+        "conclusion": "GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
+          "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
+          "locator": "Newton expansion in the integer gaps and Common factors in the gap increments, induction from (6)"
         }
       },
       {
@@ -464213,7 +465345,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
-          "sha256": "d13d0dc82232e79c202ce9f18b201f4243446f2c8b70eb2a916b1dc9507372b1",
+          "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
           "locator": "Initial projective-exclusion argument and Common factorial factors and exact sign check"
         }
       },
@@ -467522,6 +468654,350 @@
           "path": "arithmetic/ABC_CUBIC_TANGENT_FIELD_COLLISIONS.md",
           "sha256": "9083e861c9c02d8bb1a4799000fbd0878b6d825f9dc6b0141d04b06154db2cf2",
           "locator": "Theorem FC5"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FREY-AND-CESNAVICIUS-TO-X011-NEGATIVE-TWIST-COMPARISON",
+        "premises": [
+          "EXT-FREY-1988-NEGATIVE-FIVE-SELMER-COMPARISON",
+          "EXT-CESNAVICIUS-X011-QUADRATIC-SELMER-COMPARISON"
+        ],
+        "conclusion": "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+          "sha256": "60cfe8a9761ab417c3e249284b3484b81a88a3a0891d1b5aab23605a118cacac",
+          "locator": "The curve and the exact twist conditions; Comparison with the same family and quantity, quadratic restriction/corestriction"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "FIFTH-TORSION-MOMENTS-TO-X011-FULL-FIVE-SELMER-MOMENTS",
+        "premises": [
+          "ARITH-ABC-HIGHER-ODD-PRIME-PATH-SIGNED-TORSION-MOMENTS",
+          "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON"
+        ],
+        "conclusion": "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+          "sha256": "60cfe8a9761ab417c3e249284b3484b81a88a3a0891d1b5aab23605a118cacac",
+          "locator": "Transferred moments, nonnegative restriction and orders 3,4,5"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "X011-FIVE-SELMER-MOMENTS-TO-SELMER-AND-SHA-TAILS",
+        "premises": [
+          "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS",
+          "EXT-JAMES-ONO-FIVE-SELMER-KUMMER-SEQUENCE"
+        ],
+        "conclusion": "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-SHA-TAILS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+          "sha256": "60cfe8a9761ab417c3e249284b3484b81a88a3a0891d1b5aab23605a118cacac",
+          "locator": "Large Selmer groups and Sha[5], Markov inequality and the Kummer quotient"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "WEIGHTED-TANGENT-NORMAL-TO-TWO-MARKED-ELLIPTIC-COSETS",
+        "premises": [
+          "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION",
+          "ARITH-ABC-CUBIC-TANGENT-SQUARE-FORCES-REFLECTED-CLASS-COLLAPSE"
+        ],
+        "conclusion": "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+          "locator": "Theorem WM1"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "RATIONAL-THREE-TORSION-TO-WEIGHTED-TANGENT-ISOGENY-QUOTIENT",
+        "premises": [
+          "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+          "EXT-ARITH-COHEN-PAZUKI-MORDELL-THREE-ISOGENY"
+        ],
+        "conclusion": "ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+          "locator": "Proposition WM2"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "WEIGHTED-TANGENT-MARKS-TO-CYCLOTOMIC-TRACE-ORBIT-REDUCTION",
+        "premises": [
+          "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS"
+        ],
+        "conclusion": "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-ORBIT-REDUCTION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+          "locator": "Proposition WM3"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "EXPLICIT-CM-TRACE-ORBIT-TO-RANK-ONE-WEIGHTED-TANGENT-COLLISION",
+        "premises": [
+          "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION",
+          "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+          "ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT",
+          "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-ORBIT-REDUCTION",
+          "ARITH-ABC-CUBIC-TANGENT-PRIME-MARKS-FORCE-PRIMITIVE-POINTS"
+        ],
+        "conclusion": "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-COLLISION-EXAMPLES",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+          "locator": "Proposition WM4 and Sage checker"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "WEIGHTED-MARK-CM-DENOMINATORS-TO-PRIME-INDEX-NORM",
+        "premises": [
+          "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-ORBIT-REDUCTION",
+          "EXT-ARITH-STRENG-CM-ELLIPTIC-PRIMITIVE-DIVISORS"
+        ],
+        "conclusion": "ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+          "locator": "Theorem WM5"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "CM-INDEX-NORM-UPPER-SIEVE-TO-PRIME-TANGENT-ORBIT-COUNT",
+        "premises": [
+          "ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM",
+          "EXT-ARITH-RICHERT-UPPER-SIEVE-FIXED-DIMENSION",
+          "PROOF-ARITH-ABC-CUBIC-TANGENT-FIXED-ELLIPTIC-HEIGHT-COMPARISON"
+        ],
+        "conclusion": "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-PRIME-INDEX-COUNT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+          "locator": "Corollary WM6"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-SQUAREFREE-RESIDUAL",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-REDUCED-CUBIC-CASES",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-QUADRATIC-AFFINE-EXCLUSION",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-TWO-QUADRATIC-MATES-EXCLUSION",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-COMMON-CUBIC-QUADRATIC-LEADING-EXCLUSION",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-MIXED-CUBIC-QUADRATIC-LEADING-EXCLUSION"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+          "sha256": "097c609533af523c74cdded9ac3e400767697ef37c46ecca610424877e8393f3",
+          "locator": "SexticKellerQuarticAffineSourceInversion"
+        }
+      },
+      {
+        "id": "ASSEMBLE-JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-MATE-SOURCE-DEGREES",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-QUADRATIC-AFFINE-EXCLUSION",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-TWO-QUADRATIC-MATES-EXCLUSION",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-REDUCED-CUBIC-CASES",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-COMMON-CUBIC-QUADRATIC-LEADING-EXCLUSION",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-MIXED-CUBIC-QUADRATIC-LEADING-EXCLUSION"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION",
+        "status": "proved",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+          "sha256": "097c609533af523c74cdded9ac3e400767697ef37c46ecca610424877e8393f3",
+          "locator": "SexticKellerSquarefreeQuarticExclusion: exhaustive mate-degree cases"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "SQUAREFREE-EXCLUSION-TO-JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-SQUAREFREE-RESIDUAL",
+          "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION",
+        "status": "proved",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+          "sha256": "097c609533af523c74cdded9ac3e400767697ef37c46ecca610424877e8393f3",
+          "locator": "SexticKellerQuarticAffineSourceInversion"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "CM-RANK-ONE-TRACE-LATTICE-TO-ALL-CYCLOTOMIC-TANGENT-PRIME-TRIPLES",
+        "premises": [
+          "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+          "ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT",
+          "ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM",
+          "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-PRIME-INDEX-COUNT",
+          "EXT-ARITH-STRENG-CM-ELLIPTIC-PRIMITIVE-DIVISORS",
+          "EXT-ARITH-TATE-TWO-ISOGENY-RANK-FORMULA",
+          "EXT-ABC-FERMAT-EXPONENT-THREE"
+        ],
+        "conclusion": "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-FULL-CYCLOTOMIC-COSET-COUNT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+          "locator": "Theorem WM7"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION",
+        "premises": [
+          "EVIDENCE-JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION",
+          "JAC-SEXTIC-KELLER-GRADED-ONE-NEGATIVE-ONE-NEGATIVE-TWO",
+          "JAC-THREE-VARIABLE-KELLER-BOUNDED-COORDINATE-COMPLETION",
+          "EXT-JC2-DEGREE-100",
+          "JAC-KELLER-SINGLETON-LINE-NONPROPER-CONTROL"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_ACTION.md",
+          "sha256": "44e5b8858c653da977939e19164cd35b6d85870e9a607cc04eea31b24f54232f",
+          "locator": "SexticKellerDiagonalTorusInversion"
+        }
+      },
+      {
+        "id": "MORDELL-RAY-NORM-TO-HEISENBERG-GOVERNING-FIELD",
+        "premises": [
+          "ARITH-MORDELL-INERT-PRIME-EXACT-CUBIC-RAY-SELMER",
+          "EVIDENCE-ARITH-MORDELL-RAY-PAIRING-EXACT"
+        ],
+        "conclusion": "ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+          "sha256": "d68329e91b8b182a978657ff83535c2563ad47fa12046f6fb426935a69f92350",
+          "locator": "The governing extension and its descent, equations (6)-(7)"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MORDELL-RAY-COMPARISON-TO-FIXED-BLOCK-AND-MATRICES",
+        "premises": [
+          "ARITH-MORDELL-INERT-PRIME-EXACT-CUBIC-RAY-SELMER",
+          "EXT-ARITH-KOYMANS-SMITH-CUBIC-TWIST-PAIRING-COMPARISON",
+          "EXT-ARITH-VAN-BEEK-FISHER-THREE-ISOGENY-CASSELS-TATE-FORMULA",
+          "ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD",
+          "EVIDENCE-ARITH-MORDELL-RAY-PAIRING-EXACT"
+        ],
+        "conclusion": "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+          "sha256": "d68329e91b8b182a978657ff83535c2563ad47fa12046f6fb426935a69f92350",
+          "locator": "Proposition MCT1 and comparison proof; Complete exact matrices and rational controls"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "MORDELL-RAY-GOVERNING-CHEBOTAREV-TO-GLOBAL-OBSTRUCTIONS",
+        "premises": [
+          "ARITH-MORDELL-INERT-PRIME-EXACT-CUBIC-RAY-SELMER",
+          "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES",
+          "ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD",
+          "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY"
+        ],
+        "conclusion": "ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+          "sha256": "d68329e91b8b182a978657ff83535c2563ad47fa12046f6fb426935a69f92350",
+          "locator": "Theorem MCT2, degree-324 Chebotarev count and Kummer rank/Sha bounds"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "BINARY-ROOT-LATTICES-TO-QUARTIC-SQUARE-SCALE-TAIL",
+        "premises": [
+          "EXT-ARITH-HELFGOTT-CUBIC-LARGE-SQUARE-TAIL",
+          "EXT-ARITH-HELFGOTT-QUARTIC-QUINTIC-LARGE-SQUARE-TAIL"
+        ],
+        "conclusion": "ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "sha256": "653d6342175ecbf673f070c8ce0d2a3177ced23779cf77b4b69bd54788b6cd75",
+          "locator": "Lemma FM1"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "SQUARE-SCALE-BOXES-TO-BINARY-QUARTIC-COLLISION-SAVING",
+        "premises": [
+          "ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL",
+          "EXT-ARITH-SALBERGER-SMOOTH-QUARTIC-UNEQUAL-BOX-COUNT"
+        ],
+        "conclusion": "ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "sha256": "653d6342175ecbf673f070c8ce0d2a3177ced23779cf77b4b69bd54788b6cd75",
+          "locator": "Theorem FM2"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "QUARTIC-COLLISION-INCIDENCE-AND-FIELD-PACKING-TO-TANGENT-FACTORIAL-MOMENT",
+        "premises": [
+          "ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL",
+          "ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE",
+          "ARITH-ABC-CUBIC-TANGENT-MOBIUS-COLLISIONS-FINITE",
+          "ARITH-ABC-CUBIC-TANGENT-FIELD-MULTIPLICITY-VIA-HEIGHT",
+          "EXT-ARITH-GREEN-TAO-ZIEGLER-FINITE-COMPLEXITY-PRIME-FORMS"
+        ],
+        "conclusion": "ARITH-ABC-CUBIC-TANGENT-FIELD-COLLISION-FACTORIAL-MOMENT",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "sha256": "653d6342175ecbf673f070c8ce0d2a3177ced23779cf77b4b69bd54788b6cd75",
+          "locator": "Theorem FM3"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "ASYMMETRIC-TWO-TORSION-TO-TRIVIAL-BRANCH-SYMMETRY-COLLISION-SAVING",
+        "premises": [
+          "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+          "PROOF-ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-NONCUBE-COEFFICIENT",
+          "EXT-ARITH-TATE-TWO-ISOGENY-RANK-FORMULA",
+          "ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE"
+        ],
+        "conclusion": "ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-COLLISION-INCIDENCE",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "sha256": "653d6342175ecbf673f070c8ce0d2a3177ced23779cf77b4b69bd54788b6cd75",
+          "locator": "Corollary FM4"
         },
         "dependency_coverage": "partial"
       }
@@ -478008,6 +479484,15 @@
                 "EXT-GGV-WEYL-NONMINIMAL-CROSSING-INPUTS",
                 "DIX-POLYNOMIAL-WEYL-TRANSLATED-ROOT-CROSSING"
               ]
+            },
+            {
+              "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+              "locator": "Proposition 7.3 at first coordinate six and Theorem 4.1 at the preceding edge",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-GGV-WEYL-NONMINIMAL-CROSSING-INPUTS",
+                "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL"
+              ]
             }
           ],
           "verification": "source_read",
@@ -480339,7 +481824,8 @@
             "arxiv": "2607.20210"
           },
           "urls": [
-            "https://arxiv.org/abs/2607.20210"
+            "https://arxiv.org/abs/2607.20210",
+            "https://arxiv.org/html/2607.20210v1#S2"
           ],
           "local_sources": [],
           "uses": [
@@ -499461,6 +500947,15 @@
                 "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
                 "ARITH-ABC-CUBIC-NORM-GRAPH-CUT-VERTEX-ORIENTATION"
               ]
+            },
+            {
+              "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+              "locator": "Theorem MCT2, degree-324 compositum and conjugacy class of size nine",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
+                "ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS"
+              ]
             }
           ],
           "resource_type": "paper",
@@ -499534,7 +501029,8 @@
           "identifiers": {},
           "urls": [
             "https://arxiv.org/pdf/2608.02863v1",
-            "https://arxiv.org/html/2608.02863v1"
+            "https://arxiv.org/html/2608.02863v1",
+            "https://arxiv.org/html/2608.02863v1#S2"
           ],
           "local_sources": [
             {
@@ -499566,6 +501062,14 @@
               "role": "context",
               "nodes": [
                 "JAC-SEXTIC-KELLER-GRADED-ONE-NEGATIVE-ONE-NEGATIVE-TWO"
+              ]
+            },
+            {
+              "path": "jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_ACTION.md",
+              "locator": "Section 2, quotient formulas for graded Keller maps",
+              "role": "context",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION"
               ]
             }
           ],
@@ -506721,6 +508225,15 @@
                 "EXT-RICHERT-SELBERG-UPPER-THEOREM-9-1",
                 "ARITH-ABC-CUBIC-TANGENT-SQUAREFREE-DYADIC-FIELD-COUNT"
               ]
+            },
+            {
+              "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+              "locator": "Theorem 11.1 and dimension-one hypothesis (11.4)",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-RICHERT-UPPER-SIEVE-FIXED-DIMENSION",
+                "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-PRIME-INDEX-COUNT"
+              ]
             }
           ],
           "resource_type": "book",
@@ -512130,6 +513643,15 @@
               "locator": "Salberger, Theorem 0.10 attested at line 140",
               "role": "application_unverified",
               "nodes": []
+            },
+            {
+              "path": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+              "locator": "Notation 1.1, Theorems 3.16 and 0.11, and low-degree curve finiteness",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-SALBERGER-SMOOTH-QUARTIC-UNEQUAL-BOX-COUNT",
+                "ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE"
+              ]
             }
           ],
           "title_status": "source_title",
@@ -519391,6 +520913,14 @@
               "role": "context",
               "nodes": [
                 "ARITH-ABC-COHERENT-RANK-ONE-EXTRA-PRIME-GCD-COUNT"
+              ]
+            },
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "locator": "Theorem 1.5 at ell=5 and k=3,4,5, comparison on the same twist family",
+              "role": "context",
+              "nodes": [
+                "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS"
               ]
             }
           ],
@@ -527921,6 +529451,16 @@
               "nodes": [
                 "EXT-ARITH-HELFGOTT-QUARTIC-QUINTIC-LARGE-SQUARE-TAIL",
                 "ARITH-ABC-CUBIC-TANGENT-SQUAREFREE-DYADIC-FIELD-COUNT"
+              ]
+            },
+            {
+              "path": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+              "locator": "Propositions 4.12–4.13, large prime-square tail",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-HELFGOTT-CUBIC-LARGE-SQUARE-TAIL",
+                "EXT-ARITH-HELFGOTT-QUARTIC-QUINTIC-LARGE-SQUARE-TAIL",
+                "ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL"
               ]
             }
           ],
@@ -541636,6 +543176,14 @@
               "nodes": [
                 "ARITH-ABC-HIGHER-ODD-PRIME-PATH-SIGNED-TORSION-MOMENTS"
               ]
+            },
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "locator": "Theorem 1.1 at field degree 2, ell=5, r=4, comparison only",
+              "role": "context",
+              "nodes": [
+                "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS"
+              ]
             }
           ],
           "title_status": "source_title",
@@ -543705,6 +545253,14 @@
                 "EXT-ARITH-STEWART-XIAO-BINARY-FORM-ESSENTIAL-REPRESENTATIONS",
                 "ARITH-ABC-CUBIC-TANGENT-SQUAREFREE-DYADIC-FIELD-COUNT"
               ]
+            },
+            {
+              "path": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+              "locator": "Lemma 2.4, comparison with equal integral values",
+              "role": "context",
+              "nodes": [
+                "ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE"
+              ]
             }
           ],
           "verification": "source_read",
@@ -544707,6 +546263,15 @@
                 "EXT-GGV-II-RAMIFIED-FACE-SUCCESSOR",
                 "DIX-POLYNOMIAL-WEYL-GCD-FOUR-NONCONSTANT-LEADING-FACTOR",
                 "DIX-POLYNOMIAL-WEYL-ORDER-TEN-RESIDUAL"
+              ]
+            },
+            {
+              "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+              "locator": "Proposition 4.3 at the (6,30) crossing and its successors",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-GGV-II-RAMIFIED-FACE-SUCCESSOR",
+                "DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS"
               ]
             }
           ],
@@ -546941,6 +548506,14 @@
               "nodes": [
                 "JAC-SEXTIC-KELLER-GRADED-ONE-NEGATIVE-ONE-NEGATIVE-TWO"
               ]
+            },
+            {
+              "path": "jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_ACTION.md",
+              "locator": "Section 3.4 and Theorem 3.3",
+              "role": "mathematical_input",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION"
+              ]
             }
           ],
           "title_status": "source_title",
@@ -547802,9 +549375,16 @@
           "citation": "Monique Van Beek and Tom Fisher, arXiv:1711.02432, Definition 1.2 and the kernel statement in the introduction.",
           "identifiers": {},
           "urls": [
-            "https://arxiv.org/pdf/1711.02432"
+            "https://arxiv.org/pdf/1711.02432",
+            "https://arxiv.org/pdf/1711.02432v1"
           ],
-          "local_sources": [],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/van-beek-fisher-cubic-norm-pairing-1711.02432v1.pdf",
+              "sha256": "35b7158dfccb1f01d1955b807325cd793ea650c70dcacfb9cc97b48eaa7ba767",
+              "locator": "Retained arXiv:1711.02432v1, 7 November 2017"
+            }
+          ],
           "resource_type": "paper",
           "uses": [
             {
@@ -547825,6 +549405,16 @@
               "nodes": [
                 "EXT-ARITH-VAN-BEEK-FISHER-THREE-ISOGENY-CASSELS-TATE-FORMULA",
                 "ARITH-ABC-CUBIC-TANGENT-REAL-MIXED-PAIRING-VANISHES-AND-LIFTS"
+              ]
+            },
+            {
+              "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+              "locator": "Pairing, kernel and literature match; introduction and Definition 1.2",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-VAN-BEEK-FISHER-THREE-ISOGENY-CASSELS-TATE-FORMULA",
+                "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES",
+                "ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS"
               ]
             }
           ],
@@ -547883,6 +549473,15 @@
                 "ARITH-ABC-CUBIC-TANGENT-FIXED-ELLIPTIC-TRACE-COSET",
                 "ARITH-ABC-CUBIC-TANGENT-FIELD-MULTIPLICITY-VIA-HEIGHT"
               ]
+            },
+            {
+              "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+              "locator": "Section 2, rank zero of y²=x³+1 by the two-isogeny quartics",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-TATE-TWO-ISOGENY-RANK-FORMULA",
+                "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-FULL-CYCLOTOMIC-COSET-COUNT"
+              ]
             }
           ],
           "verification": "source_read",
@@ -547937,6 +549536,322 @@
           ],
           "verification": "source_read",
           "verification_basis": "Read the quotient definition and semiconjugacy."
+        },
+        {
+          "id": "REF-FREY-SELMER-TWISTS-1988",
+          "title": "On the Selmer group of twists of elliptic curves with Q-rational torsion points",
+          "citation": "G. Frey, Canadian Journal of Mathematics 40 (1988), 649-665.",
+          "urls": [
+            "https://doi.org/10.4153/CJM-1988-028-9"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/frey-selmer-twists-1988.pdf",
+              "sha256": "3466c5838853d54d535b68700aed2acf127a78b7bb7e429fbae7d8565e798dad",
+              "locator": "Printed pp.649-652, definitions, theorem and corollary"
+            }
+          ],
+          "identifiers": {
+            "doi": "10.4153/CJM-1988-028-9"
+          },
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "locator": "Theorem p.651 and corollary p.652, full Selmer comparison",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-FREY-1988-NEGATIVE-FIVE-SELMER-COMPARISON",
+                "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON"
+              ]
+            }
+          ],
+          "title_status": "source_title",
+          "verification": "source_read",
+          "verification_basis": "The identified primary statements and application hypotheses were inspected internally; source reading is not independent mathematical review."
+        },
+        {
+          "id": "REF-CESNAVICIUS-SELMER-FLAT-1301-4724V4",
+          "title": "Selmer groups as flat cohomology groups",
+          "citation": "Kestutis Cesnavicius, arXiv:1301.4724v4.",
+          "urls": [
+            "https://arxiv.org/pdf/1301.4724v4"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/cesnavicius-selmer-flat-1301.4724v4.pdf",
+              "sha256": "5fb7c540d089f967d7432ad1ac2ed66e823d8e42ba2432c4933942bbb0433891",
+              "locator": "Example 1.12, printed p.4, equations (1)-(3)"
+            }
+          ],
+          "identifiers": {
+            "arxiv": "1301.4724v4"
+          },
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "locator": "Example 1.12, equations (2)-(3), exact curve and quadratic base change",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-CESNAVICIUS-X011-QUADRATIC-SELMER-COMPARISON",
+                "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON"
+              ]
+            }
+          ],
+          "title_status": "source_title",
+          "verification": "source_read",
+          "verification_basis": "The identified primary statements and application hypotheses were inspected internally; source reading is not independent mathematical review."
+        },
+        {
+          "id": "REF-JAMES-ONO-SELMER-QUADRATIC-TWISTS-1999",
+          "title": "Selmer groups of quadratic twists of elliptic curves",
+          "citation": "Kevin James and Ken Ono, Mathematische Annalen 314 (1999), 1-17.",
+          "urls": [
+            "https://uva.theopenscholar.com/files/ken-ono/files/043_8.pdf",
+            "https://doi.org/10.1007/s002080050283"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/james-ono-selmer-quadratic-twists.pdf",
+              "sha256": "d42e4dc0eb79cf017d8e1b4adb33616dd3baf726b086462c0a40f314cfb3b626",
+              "locator": "Equation (1.5), Definition 11, Proposition 12 and Theorem 14"
+            }
+          ],
+          "identifiers": {
+            "doi": "10.1007/s002080050283"
+          },
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "locator": "Equation (1.5), Kummer sequence",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-JAMES-ONO-FIVE-SELMER-KUMMER-SEQUENCE",
+                "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-SHA-TAILS"
+              ]
+            },
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "locator": "Definition 11, Proposition 12 and Theorem 14(ii), exact distinction of good twist and good curve conditions",
+              "role": "context",
+              "nodes": [
+                "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON",
+                "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS"
+              ]
+            }
+          ],
+          "title_status": "source_title",
+          "verification": "source_read",
+          "verification_basis": "The identified primary statements and application hypotheses were inspected internally; source reading is not independent mathematical review."
+        },
+        {
+          "id": "REF-BHARGAVA-SHANKAR-FIVE-SELMER-1312-7859",
+          "title": "The average size of the 5-Selmer group of elliptic curves is 6, and the average rank is less than 1",
+          "citation": "Manjul Bhargava and Arul Shankar, arXiv:1312.7859.",
+          "urls": [
+            "https://arxiv.org/pdf/1312.7859"
+          ],
+          "local_sources": [],
+          "identifiers": {
+            "arxiv": "1312.7859"
+          },
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "locator": "Theorems 1-2, all curves by height and finite coefficient congruence families; not a fixed twist-family theorem",
+              "role": "context",
+              "nodes": [
+                "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS"
+              ]
+            }
+          ],
+          "title_status": "source_title",
+          "verification": "source_read",
+          "verification_basis": "The identified primary statements and application hypotheses were inspected internally; source reading is not independent mathematical review."
+        },
+        {
+          "id": "REF-LMFDB-X011-11A2",
+          "title": "Elliptic curve 11.a2 (Cremona 11a1)",
+          "citation": "LMFDB, curve 11.a2; accessed 2026-11-27.",
+          "urls": [
+            "https://www.lmfdb.org/EllipticCurve/Q/11/a/2"
+          ],
+          "local_sources": [],
+          "identifiers": {},
+          "resource_type": "dataset",
+          "uses": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "locator": "Model for X_0(11), minimal equation, invariants and P=(5,5) of order five; curve arithmetic checked directly",
+              "role": "context",
+              "nodes": [
+                "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON"
+              ]
+            }
+          ],
+          "title_status": "source_title",
+          "verification": "source_read",
+          "verification_basis": "Exact curve entry inspected; invariants and torsion multiples checked with rational arithmetic."
+        },
+        {
+          "id": "REF-ARITH-COHEN-PAZUKI-EXPLICIT-MORDELL-ISOGENY",
+          "title": "Elementary 3-descent with a 3-isogeny",
+          "citation": "Henri Cohen and Fabien Pazuki, Acta Arithmetica 140 (2009), Section 1.",
+          "identifiers": {},
+          "urls": [
+            "https://www.impan.pl/shop/publication/transaction/download/product/82564"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/cohen-pazuki-2009-three-isogeny.pdf",
+              "sha256": "c132f6ddb621c498e49a3abb8ec59bf7f0b9f1c7456b066ddf353c1ed07efc17",
+              "locator": "Definition 1.3 and Proposition 1.4"
+            }
+          ],
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+              "locator": "Section 1, explicit map with a=0, D=1",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-COHEN-PAZUKI-MORDELL-THREE-ISOGENY",
+                "ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Read the exact map, kernel and dual composition in Section 1."
+        },
+        {
+          "id": "REF-ARITH-STRENG-CM-ELLIPTIC-DIVISIBILITY",
+          "title": "Divisibility sequences for elliptic curves with complex multiplication",
+          "citation": "Marco Streng, Algebra & Number Theory 2 (2008), 183–208.",
+          "identifiers": {},
+          "urls": [
+            "https://msp.org/ant/2008/2-2/ant-v2-n2-p04-p.pdf"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/streng-2008-cm-elliptic-divisibility.pdf",
+              "sha256": "6c0935f40c6b671434f0ab2c486b80df6c4d834da673d0edfaf5d5ecdd80a85f",
+              "locator": "Main Theorem and Lemma 3.3"
+            }
+          ],
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+              "locator": "Main Theorem, strong divisibility and rank of apparition",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-STRENG-CM-ELLIPTIC-PRIMITIVE-DIVISORS",
+                "ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM"
+              ]
+            },
+            {
+              "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+              "locator": "Main Theorem for the rank-one module generator and Lemma 3.3",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-STRENG-CM-ELLIPTIC-PRIMITIVE-DIVISORS",
+                "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-FULL-CYCLOTOMIC-COSET-COUNT"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Read the invertible-index hypothesis, primitive divisor definition, and strong divisibility."
+        },
+        {
+          "id": "REF-ARITH-PARI-ELLRANK-RANK-BOUNDS",
+          "title": "Catalogue of GP/PARI Functions: Elliptic curves",
+          "citation": "PARI/GP, ellrank documentation.",
+          "identifiers": {},
+          "urls": [
+            "https://pari.math.u-bordeaux.fr/dochtml/html/Elliptic_curves.html"
+          ],
+          "local_sources": [],
+          "resource_type": "documentation",
+          "uses": [
+            {
+              "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+              "locator": "ellrank, unconditional upper and lower rank bounds",
+              "role": "mathematical_input",
+              "nodes": [
+                "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-COLLISION-EXAMPLES"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Read the unconditional descent interpretation of equal rank bounds, separate from optional analytic guessing."
+        },
+        {
+          "id": "REF-ARITH-KOYMANS-SMITH-CUBIC-TWIST-PAIRING-2405.09311V1",
+          "title": "Sums of rational cubes and the 3-Selmer group",
+          "citation": "Peter Koymans and Alexander Smith, arXiv:2405.09311v1 (15 May 2024).",
+          "identifiers": {
+            "arxiv": "2405.09311v1"
+          },
+          "urls": [
+            "https://arxiv.org/pdf/2405.09311v1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/koymans-smith-cubic-twist-pairing-2405.09311v1.pdf",
+              "sha256": "daff4e64033ad83023a1071d3be034b8ee8d1b7c1ce201af39c4fcbed2c0aec0",
+              "locator": "Definition 2.2, Lemma 2.3, equations (4.1)-(4.8), Proposition 4.1 and its complete proof"
+            }
+          ],
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+              "locator": "d=54, M_-3d=M_-2; Proposition MCT1 local hypotheses and cochain comparison",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-KOYMANS-SMITH-CUBIC-TWIST-PAIRING-COMPARISON",
+                "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Read the actual coefficient-module construction, generalized Redei symbol conditions, comparison statement and full proof; checked the family match and supplied the multi-prime adaptation."
+        },
+        {
+          "id": "REF-ARITH-WU-ZHU-FERMAT-PAIRING-2611.29541V1",
+          "title": "Rank-two twists of the Fermat cubic with 3-primary Tate-Shafarevich group (Z/3Z)^(2m)",
+          "citation": "Hongfeng Wu and Li Zhu, arXiv:2611.29541v1 (22 November 2026).",
+          "identifiers": {
+            "arxiv": "2611.29541v1"
+          },
+          "urls": [
+            "https://arxiv.org/pdf/2611.29541v1"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/wu-zhu-fermat-pairing-2611.29541v1.pdf",
+              "sha256": "56368d94dca587cc37b7cf709a218c8db55b4722928653c8dc8126719a006771",
+              "locator": "Theorems A/B; Lemmas 6.1/6.2, Corollary 6.3 and their proofs"
+            }
+          ],
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+              "locator": "Pairing, kernel and literature match; governing-field method comparison",
+              "role": "context",
+              "nodes": [
+                "ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD",
+                "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES",
+                "ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Read governing-field construction, inert-prime correction, local cochain comparison and exact family hypotheses. The Fermat-family realization/counting theorems are not applied to this family."
         }
       ],
       "internal_citations": [
@@ -555443,6 +557358,92 @@
           "novelty_limit": "The uniform diagonal cubic bound and the real growth exponent are imported. The applications use the determinant product and the occupied-record lattice data.",
           "remaining_obligation": "The pointwise frequency of occupied records with large-radical pair classes across the moving field window is open.",
           "inspection_scope": "Read the exact primary statements and the proof passages of the imported bounds."
+        },
+        {
+          "id": "ANT-X011-EXACT-FAMILY-FIVE-SELMER-MOMENT-COMPARISON",
+          "title": "Classical Selmer/class-group bridge and improved exponent for the exact X_0(11) twist family",
+          "relation": "classical_corollary",
+          "nodes": [
+            "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON",
+            "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS",
+            "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-SHA-TAILS"
+          ],
+          "references": [
+            {
+              "paper_id": "REF-FREY-SELMER-TWISTS-1988",
+              "locator": "Theorem p.651; corollary and explicit X_0(11) example p.652",
+              "statement": "h_5(d) divides the full five-Selmer size, which divides its square, on the stated local family."
+            },
+            {
+              "paper_id": "REF-CESNAVICIUS-SELMER-FLAT-1301-4724V4",
+              "locator": "Example 1.12, equations (2)-(3)",
+              "statement": "Base-change full Selmer dimensions for the exact curve already give comparison with h_5(d)^2 up to a fixed factor after quadratic descent."
+            },
+            {
+              "paper_id": "REF-ABC-HEATH-BROWN-PIERCE-1409.3177",
+              "locator": "Theorem 1.5, ell=5, k=4",
+              "statement": "The fourth class-torsion moment has exponent 11/5; the same Frey transfer gives the previous compared Selmer second-moment bound."
+            },
+            {
+              "paper_id": "REF-KOYMANS-THORNER-CLASS-GROUP-MOMENTS",
+              "locator": "Theorem 1.1, degree 2, ell=5, r=4",
+              "statement": "The comparison exponent is 7/3 after quadratic-field counting and bounded discriminant conversion."
+            },
+            {
+              "paper_id": "REF-JAMES-ONO-SELMER-QUADRATIC-TWISTS-1999",
+              "locator": "Definition 11, Proposition 12 and Theorem 14(ii)",
+              "statement": "Same good-twist double divisibility; small-Selmer counting has an additional curve hypothesis."
+            },
+            {
+              "paper_id": "REF-BHARGAVA-SHANKAR-FIVE-SELMER-1312-7859",
+              "locator": "Theorems 1-2",
+              "statement": "Average six is for all curves by height and finite coefficient congruence families, not the thin fixed twist family."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+              "sha256": "60cfe8a9761ab417c3e249284b3484b81a88a3a0891d1b5aab23605a118cacac",
+              "locator": "The curve and the exact twist conditions; Transferred moments; Large Selmer groups and Sha[5]; Comparison with the same family and quantity"
+            }
+          ],
+          "application": "Check the curve reduction and local conditions explicitly, square the classical upper comparison, use the retained fourth class-torsion moment, and apply Markov plus the Kummer quotient.",
+          "novelty_limit": "The bridge and comparison up to a fixed factor are classical. The checked improvement is 11/5 to 53/26 in the same full five-Selmer second moment, a saving of 21/130 in its exponent.",
+          "remaining_obligation": "No exhaustive historical priority claim; independent review of the retained higher-odd torsion proof and external review of the new exposition remain outstanding.",
+          "inspection_scope": "Read exact primary theorem statements, Frey definitions and corollary (including rendered scanned pp.651-652), the entire Cesnavicius example, and James-Ono exact sequence and good-twist statements; rational curve and exponent controls passed internally."
+        },
+        {
+          "id": "ANT-MORDELL-RAY-EXPLICIT-BLOCK-GOVERNING-COMPARISON",
+          "title": "Cubic-twist pairing comparison specializes to the inert-prime Mordell ray family",
+          "relation": "classical_method",
+          "nodes": [
+            "ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD",
+            "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES",
+            "ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS"
+          ],
+          "references": [
+            {
+              "paper_id": "REF-ARITH-KOYMANS-SMITH-CUBIC-TWIST-PAIRING-2405.09311V1",
+              "locator": "Definition 2.2; Section 4.1; Proposition 4.1, complete proof pp.30-31",
+              "statement": "Cubic-twist pairing variation is the generalized Redei symbol when the twist ratio is a cube at the fixed bad primes."
+            },
+            {
+              "paper_id": "REF-ARITH-WU-ZHU-FERMAT-PAIRING-2611.29541V1",
+              "locator": "Lemma 6.1, Lemma 6.2 and Corollary 6.3",
+              "statement": "Heisenberg governing cochains convert local invariant sums into central Frobenius values, also at inert moving primes."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+              "sha256": "d68329e91b8b182a978657ff83535c2563ad47fa12046f6fb426935a69f92350",
+              "locator": "Pairing, kernel and literature match; Proposition MCT1 and Theorem MCT2"
+            }
+          ],
+          "application": "Set d=54 so M_-3d=M_-2, check all local cubic-ratio hypotheses, construct an explicit symmetrized norm field and use Chebotarev with q=-1 mod9. Recover selected full matrices from rational Kummer radical certificates.",
+          "novelty_limit": "The comparison and governing-field method are classical. This note supplies the specific exact norm, admissible-prime block formula and selected matrices; no exhaustive novelty claim or direct use of Wu-Zhu Theorems A/B.",
+          "remaining_obligation": "Arbitrary ray-pair entries, the extra wild coordinate, standard Weil-sign calibration and independent mathematical review remain outside the proved scope.",
+          "inspection_scope": "Actual primary statements and complete comparison/construction proofs inspected; finite algebra replayed internally with Python standard-library arithmetic."
         }
       ]
     },
@@ -632179,16 +634180,21 @@
         },
         {
           "path": "factorial/image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md",
-          "sha256": "d13d0dc82232e79c202ce9f18b201f4243446f2c8b70eb2a916b1dc9507372b1",
+          "sha256": "fd191f232c776306d65db4d92e739a57bf72e135ec13b56a21fe9d2dfcf63690",
           "role": "proof",
           "claims": [
             "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-SHORT-SPANS",
             "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-LEADING-SIGN",
-            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-COEFFICIENT-SIGN-80"
+            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-COEFFICIENT-SIGN-80",
+            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-GAP-FACTORS",
+            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-ORIGIN-SIGN",
+            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-HIGHEST-GAP-DEGREES"
           ],
           "dependencies": [],
           "gaps": [
-            "GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN"
+            "GAP-SFC-HOMOGENEOUS-TRINOMIAL-REMAINDER-SIGN",
+            "GAP-SFC-HOMOGENEOUS-TRINOMIAL-FACTORED-GAP-INCREMENTS",
+            "GAP-SFC-HOMOGENEOUS-TRINOMIAL-NORMALIZED-GAP-STEPS"
           ],
           "statements": [
             {
@@ -632207,6 +634213,24 @@
               "locator": "Coefficient signs in the seven highest degrees",
               "nodes": [
                 "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-LEADING-SIGN"
+              ]
+            },
+            {
+              "locator": "Common factors in the gap increments",
+              "nodes": [
+                "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-GAP-FACTORS"
+              ]
+            },
+            {
+              "locator": "Proposition.** \\(S(0,0;a,d)>0\\) for every \\(0<a<d\\) with integer",
+              "nodes": [
+                "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-ORIGIN-SIGN"
+              ]
+            },
+            {
+              "locator": "Highest gap degrees and the finite test for each coefficient",
+              "nodes": [
+                "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-HIGHEST-GAP-DEGREES"
               ]
             }
           ],
@@ -653280,16 +655304,30 @@
           "explanation": "Exact factored coefficient signs for both orientations and symbolic leading-part replay."
         },
         {
-          "path": "factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py",
-          "sha256": "93b5e1d2321b0a6e0358aae420c5efe71dc8c7508f03c9ebc562f5137a19fe62",
+          "path": "factorial/image-rigidity/verify_sfc_homogeneous_trinomial_gap_increments.py",
+          "sha256": "5b9a9000248c7f63626820776fdd614fd5a898221658289545cb28076e51379c",
           "role": "evidence",
           "claims": [
-            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-LEADING-SIGN"
+            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-GAP-FACTORS",
+            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-ORIGIN-SIGN"
           ],
           "dependencies": [],
           "gaps": [],
           "statements": [],
-          "explanation": "Exact rational generating-series and Newton certificates for the top twelve height layers, the obstruction in the shifted-gap power basis, and all 190 complete differences of order at most 18."
+          "explanation": "Sharp finite coefficient comparisons for both factored gap steps, origin ratios, and rational lower bounds."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_sfc_homogeneous_trinomial_top_layers.py",
+          "sha256": "7403cb0b14d99943feabc22cb42337190bd1b7dc18e678cb63d3347231bb6866",
+          "role": "evidence",
+          "claims": [
+            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-LEADING-SIGN",
+            "FACTORIAL-SFC-HOMOGENEOUS-TRINOMIAL-HIGHEST-GAP-DEGREES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact rational generating-series and Newton certificates. The current internal replay verifies all twenty height layers through order 24, the shifted-gap power-basis obstruction, expanded comparisons through span 6 and all 190 complete differences through order 18. Also checks fixed reciprocal degrees over all gaps using exact cutoffs."
         },
         {
           "path": "factorial/image-rigidity/verify_sfc_homogeneous_trinomial_short_spans.py",
@@ -748172,12 +750210,13 @@
         },
         {
           "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md",
-          "sha256": "1c2211be495cf7176a624350703e378b93957cfeb8fc322bd963d7d89d05f582",
+          "sha256": "5c518e3b3a6b808f54d22d2b856aacba52c266f4a2097df1a0a795ba51ba7c30",
           "role": "proof",
           "claims": [
             "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RESIDUE",
             "DIX-POLYNOMIAL-WEYL-PERFECT-POWER-LEADING-FACTOR",
-            "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RAMIFICATION"
+            "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RAMIFICATION",
+            "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY"
           ],
           "dependencies": [
             "DIX-MONIC-SCALAR-COMMUTATOR-RESIDUE",
@@ -748187,7 +750226,7 @@
             "GOAL-DC1",
             "DIX-GAP-ACTUAL-POLYNOMIAL-SUBPRINCIPAL-CONSTRAINT"
           ],
-          "explanation": "The leading-factor residue equation, its perfect-power obstruction and its rational-map ramification bound.",
+          "explanation": "The leading-factor residue equation, its perfect-power obstruction and its rational-map ramification bound. Real monotonicity gives a separate parity obstruction.",
           "statements": [
             {
               "locator": "Theorem PolynomialWeylLeadingFactorResidue.** Let \\(k\\) have",
@@ -748216,6 +750255,16 @@
               "title": "Corollary PolynomialWeylLeadingFactorRamification.** Suppose \\(h\\)",
               "nodes": [
                 "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RAMIFICATION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary PolynomialWeylLeadingFactorRealParity.** Suppose",
+              "kind": "corollary",
+              "line": 128,
+              "title": "Corollary PolynomialWeylLeadingFactorRealParity.** Suppose",
+              "nodes": [
+                "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY"
               ],
               "mapping_kind": "exact-statement"
             }
@@ -750442,7 +752491,8 @@
           "claims": [
             "DIX-POLYNOMIAL-WEYL-BERNSTEIN-GCD-SIXTEEN-QUOTIENTS",
             "DIX-POLYNOMIAL-WEYL-BERNSTEIN-DEGREE-THROUGH-THIRTY-THREE",
-            "SRC-DIX-WEYL-FOUR-TWELVE-LOCAL-SUCCESSORS"
+            "SRC-DIX-WEYL-FOUR-TWELVE-LOCAL-SUCCESSORS",
+            "SRC-DIX-WEYL-ORDER-TWELVE-LOWER-CROSSINGS"
           ],
           "dependencies": [
             "DIX-MONIC-POLYNOMIAL-ORDER-THIRTY-TWO-FACES",
@@ -751333,7 +753383,8 @@
           "claims": [
             "DIX-POLYNOMIAL-WEYL-BERNSTEIN-DEGREE-THROUGH-FORTY-ONE",
             "DIX-POLYNOMIAL-WEYL-INDIVIDUAL-LEADING-DEGREE-FORTY-TWO",
-            "SRC-DIX-WEYL-ABSCISSA-FIVE-LOCAL-SUCCESSORS"
+            "SRC-DIX-WEYL-ABSCISSA-FIVE-LOCAL-SUCCESSORS",
+            "SRC-DIX-WEYL-ORDER-TWELVE-LOWER-CROSSINGS"
           ],
           "dependencies": [
             "DIX-POLYNOMIAL-WEYL-BERNSTEIN-DEGREE-THROUGH-THIRTY-THREE",
@@ -751377,7 +753428,8 @@
           "claims": [
             "DIX-POLYNOMIAL-WEYL-BERNSTEIN-FORTY-TWO-RESIDUAL",
             "DIX-POLYNOMIAL-WEYL-NONSQUARE-MINUS-FIFTEEN-THROUGH-FORTY-SEVEN",
-            "DIX-POLYNOMIAL-WEYL-FORMALLY-REAL-THROUGH-FORTY-SEVEN"
+            "DIX-POLYNOMIAL-WEYL-FORMALLY-REAL-THROUGH-FORTY-SEVEN",
+            "SRC-DIX-WEYL-SIX-FIFTEEN-LOCAL-SUCCESSORS"
           ],
           "dependencies": [
             "DIX-POLYNOMIAL-WEYL-BERNSTEIN-DEGREE-THROUGH-FORTY-ONE",
@@ -756024,7 +758076,8 @@
           "claims": [
             "DIX-POLYNOMIAL-WEYL-CONDITIONAL-THROUGH-FIFTY-ONE-FROM-F7",
             "SRC-DIX-RECIPROCAL-POLYNOMIAL-PRIMITIVE-OBSTRUCTION",
-            "SRC-DIX-WEYL-ABSCISSA-FIVE-LOCAL-SUCCESSORS"
+            "SRC-DIX-WEYL-ABSCISSA-FIVE-LOCAL-SUCCESSORS",
+            "SRC-DIX-WEYL-ORDER-TWELVE-LOWER-CROSSINGS"
           ],
           "dependencies": [
             "DIX-POLYNOMIAL-WEYL-CONDITIONAL-THROUGH-FORTY-NINE-FROM-F7",
@@ -758345,34 +760398,608 @@
           "explanation": "Retained Section 2 for the two-isogeny rank formula and squareclass quartic used in FC1 and FC5."
         },
         {
-          "path": "arithmetic/sources/cesnavicius-selmer-flat-1301.4724v4.pdf",
-          "sha256": "5fb7c540d089f967d7432ad1ac2ed66e823d8e42ba2432c4933942bbb0433891",
-          "claims": [],
-          "dependencies": [],
+          "path": "arithmetic/X011_FIVE_SELMER_MOMENTS_FROM_QUADRATIC_TORSION.md",
+          "sha256": "60cfe8a9761ab417c3e249284b3484b81a88a3a0891d1b5aab23605a118cacac",
+          "role": "proof",
+          "claims": [
+            "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-CLASS-COMPARISON",
+            "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS",
+            "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-SHA-TAILS"
+          ],
+          "dependencies": [
+            "EXT-FREY-1988-NEGATIVE-FIVE-SELMER-COMPARISON",
+            "EXT-CESNAVICIUS-X011-QUADRATIC-SELMER-COMPARISON",
+            "EXT-JAMES-ONO-FIVE-SELMER-KUMMER-SEQUENCE",
+            "ARITH-ABC-HIGHER-ODD-PRIME-PATH-SIGNED-TORSION-MOMENTS"
+          ],
           "gaps": [],
-          "statements": [],
-          "role": "reference",
-          "explanation": "Retained Selmer/twist reference PDF. This inventory entry supplies no theorem premise and records no application audit."
+          "statements": [
+            {
+              "locator": "Corollary (Full five-Selmer moments).** For \\(X\\ge2\\) and every",
+              "kind": "corollary",
+              "line": 72,
+              "title": "Corollary (Full five-Selmer moments).** For \\(X\\ge2\\) and every",
+              "nodes": [
+                "ARITH-X011-NEGATIVE-TWIST-FULL-FIVE-SELMER-MOMENTS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary (Selmer and Sha tails).** Uniformly for \\(X\\ge2,Y\\ge1\\),",
+              "kind": "corollary",
+              "line": 94,
+              "title": "Corollary (Selmer and Sha tails).** Uniformly for \\(X\\ge2,Y\\ge1\\),",
+              "nodes": [
+                "ARITH-X011-NEGATIVE-TWIST-FIVE-SELMER-SHA-TAILS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Exact Frey local specialization, existing stronger comparison via quadratic descent, full five-Selmer moments, Sha[5] tails and same-family literature comparison. No priority or independent verification claim."
         },
         {
           "path": "arithmetic/sources/frey-selmer-twists-1988.pdf",
           "sha256": "3466c5838853d54d535b68700aed2acf127a78b7bb7e429fbae7d8565e798dad",
-          "claims": [],
+          "role": "imported-source",
+          "claims": [
+            "EXT-FREY-1988-NEGATIVE-FIVE-SELMER-COMPARISON"
+          ],
           "dependencies": [],
           "gaps": [],
           "statements": [],
-          "role": "reference",
-          "explanation": "Retained Selmer/twist reference PDF. This inventory entry supplies no theorem premise and records no application audit."
+          "explanation": "Printed pp.649-652: class-torsion and full Selmer definitions; theorem; Lemma 1; corollary and X_0(11) example"
+        },
+        {
+          "path": "arithmetic/sources/cesnavicius-selmer-flat-1301.4724v4.pdf",
+          "sha256": "5fb7c540d089f967d7432ad1ac2ed66e823d8e42ba2432c4933942bbb0433891",
+          "role": "imported-source",
+          "claims": [
+            "EXT-CESNAVICIUS-X011-QUADRATIC-SELMER-COMPARISON"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "arXiv:1301.4724v4, Example 1.12, printed p.4, equations (1)-(3); ordinary class group and full Selmer domain"
         },
         {
           "path": "arithmetic/sources/james-ono-selmer-quadratic-twists.pdf",
           "sha256": "d42e4dc0eb79cf017d8e1b4adb33616dd3baf726b086462c0a40f314cfb3b626",
-          "claims": [],
+          "role": "imported-source",
+          "claims": [
+            "EXT-JAMES-ONO-FIVE-SELMER-KUMMER-SEQUENCE"
+          ],
           "dependencies": [],
           "gaps": [],
           "statements": [],
+          "explanation": "Equation (1.5), full ell-Selmer group and Sha[ell], specialized to ell=5"
+        },
+        {
+          "path": "arithmetic/ABC_WEIGHTED_CUBIC_TANGENT_ELLIPTIC_MARKS.md",
+          "sha256": "8a10f74ce5ec646101a2b424a27c6e687fdd71565cf0c7e84c923362b8ddbe46",
+          "role": "proof",
+          "claims": [
+            "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+            "ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT",
+            "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-ORBIT-REDUCTION",
+            "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-COLLISION-EXAMPLES",
+            "ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM",
+            "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-PRIME-INDEX-COUNT",
+            "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-FULL-CYCLOTOMIC-COSET-COUNT"
+          ],
+          "dependencies": [
+            "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION",
+            "ARITH-ABC-CUBIC-TANGENT-SQUARE-FORCES-REFLECTED-CLASS-COLLAPSE",
+            "ARITH-ABC-CUBIC-TANGENT-PRIME-MARKS-FORCE-PRIMITIVE-POINTS",
+            "EXT-ARITH-COHEN-PAZUKI-MORDELL-THREE-ISOGENY",
+            "EXT-ARITH-STRENG-CM-ELLIPTIC-PRIMITIVE-DIVISORS",
+            "EXT-ARITH-RICHERT-UPPER-SIEVE-FIXED-DIMENSION",
+            "PROOF-ARITH-ABC-CUBIC-TANGENT-FIXED-ELLIPTIC-HEIGHT-COMPARISON",
+            "EXT-ARITH-TATE-TWO-ISOGENY-RANK-FORMULA",
+            "EXT-ABC-FERMAT-EXPONENT-THREE"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Theorem WM1.** The weighted tangent field is",
+              "kind": "theorem",
+              "line": 32,
+              "title": "Theorem WM1.** The weighted tangent field is",
+              "nodes": [
+                "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition WM2.** The quotient by",
+              "kind": "proposition",
+              "line": 111,
+              "title": "Proposition WM2.** The quotient by",
+              "nodes": [
+                "ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition WM3.** Over",
+              "kind": "proposition",
+              "line": 167,
+              "title": "Proposition WM3.** Over",
+              "nodes": [
+                "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-ORBIT-REDUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition WM4.** The normalized",
+              "kind": "proposition",
+              "line": 239,
+              "title": "Proposition WM4.** The normalized",
+              "nodes": [
+                "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-COLLISION-EXAMPLES"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem WM5.** Fix a nonsymmetric weighted",
+              "kind": "theorem",
+              "line": 316,
+              "title": "Theorem WM5.** Fix a nonsymmetric weighted",
+              "nodes": [
+                "ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary WM6.** For each fixed",
+              "kind": "corollary",
+              "line": 433,
+              "title": "Corollary WM6.** For each fixed",
+              "nodes": [
+                "ARITH-ABC-WEIGHTED-TANGENT-CYCLOTOMIC-PRIME-INDEX-COUNT"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem WM7.** Fix a nonsymmetric weighted",
+              "kind": "theorem",
+              "line": 492,
+              "title": "Theorem WM7.** Fix a nonsymmetric weighted",
+              "nodes": [
+                "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-FULL-CYCLOTOMIC-COSET-COUNT"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Weighted tangent elliptic geometry, exact same-field prime examples and CM index restrictions with a fixed-orbit count."
+        },
+        {
+          "path": "arithmetic/verify_weighted_cubic_tangent_elliptic_marks.py",
+          "sha256": "cc672b95bc605bacc83d61acd041fe768f12bd0059518196c45c1a7776a647c2",
+          "role": "evidence",
+          "claims": [
+            "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+            "ARITH-ABC-WEIGHTED-TANGENT-THREE-ISOGENY-PARAMETER-QUOTIENT",
+            "ARITH-ABC-WEIGHTED-TANGENT-RANK-ONE-COLLISION-EXAMPLES",
+            "ARITH-ABC-WEIGHTED-TANGENT-PRIME-MARK-PRIME-CM-INDEX-NORM"
+          ],
+          "dependencies": [
+            "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION",
+            "EXT-ARITH-COHEN-PAZUKI-MORDELL-THREE-ISOGENY"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Sage exact polynomial, group, primality and valuation checks with PARI unconditional numerical rank bounds."
+        },
+        {
+          "path": "arithmetic/sources/cohen-pazuki-2009-three-isogeny.pdf",
+          "sha256": "c132f6ddb621c498e49a3abb8ec59bf7f0b9f1c7456b066ddf353c1ed07efc17",
           "role": "reference",
-          "explanation": "Retained Selmer/twist reference PDF. This inventory entry supplies no theorem premise and records no application audit."
+          "claims": [],
+          "dependencies": [
+            "EXT-ARITH-COHEN-PAZUKI-MORDELL-THREE-ISOGENY"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Retained explicit three-isogeny source for the marked quotient."
+        },
+        {
+          "path": "arithmetic/sources/streng-2008-cm-elliptic-divisibility.pdf",
+          "sha256": "6c0935f40c6b671434f0ab2c486b80df6c4d834da673d0edfaf5d5ecdd80a85f",
+          "role": "reference",
+          "claims": [],
+          "dependencies": [
+            "EXT-ARITH-STRENG-CM-ELLIPTIC-PRIMITIVE-DIVISORS"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Retained CM primitive-divisor theorem for the fixed elliptic denominator sequences."
+        },
+        {
+          "path": "dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md",
+          "sha256": "4b5fa89acb53bf5e44a38d59c5affd88a512cbf8746bed40bc19e6cc7ef3b965",
+          "role": "proof",
+          "claims": [
+            "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL",
+            "DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS",
+            "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-FORTY-TWO-ROOT-FIELD",
+            "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-REAL-FORTY-TWO-RESIDUAL"
+          ],
+          "dependencies": [
+            "DIX-POLYNOMIAL-WEYL-GCD-FOUR-NONCONSTANT-LEADING-FACTOR",
+            "SRC-DIX-WEYL-FOUR-TWELVE-LOCAL-SUCCESSORS",
+            "SRC-DIX-WEYL-ABSCISSA-FIVE-LOCAL-SUCCESSORS",
+            "SRC-DIX-WEYL-ORDER-TWELVE-LOWER-CROSSINGS",
+            "SRC-DIX-WEYL-SIX-FIFTEEN-LOCAL-SUCCESSORS",
+            "DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS",
+            "DIX-POLYNOMIAL-WEYL-TRANSLATED-ROOT-CROSSING",
+            "EVIDENCE-DIX-WEYL-ORDER-TWELVE-CROSSINGS",
+            "EXT-GGV-WEYL-NONMINIMAL-CROSSING-INPUTS",
+            "DIX-POLYNOMIAL-WEYL-ORDER-EIGHT-GENERATION",
+            "DIX-POLYNOMIAL-WEYL-REDUCED-ORDER-FOUR-BOUND",
+            "DIX-POLYNOMIAL-WEYL-NONCONSTANT-LEADING-DEGREE-BOUND",
+            "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RESIDUE",
+            "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-RAMIFICATION",
+            "DIX-POLYNOMIAL-WEYL-BERNSTEIN-THROUGH-FIFTY-NINE",
+            "DIX-WEYL-NONDIVIDING-BERNSTEIN-DEGREE-PAIR-TO-PLANAR-KELLER",
+            "EXT-JC2-DEGREE-100",
+            "EXT-GGV-II-RAMIFIED-FACE-SUCCESSOR",
+            "SRC-DIX-RECIPROCAL-POLYNOMIAL-PRIMITIVE-OBSTRUCTION",
+            "DIX-POLYNOMIAL-WEYL-LEADING-FACTOR-REAL-PARITY"
+          ],
+          "gaps": [
+            "GOAL-DC1"
+          ],
+          "explanation": "Order-twelve reduction, (6,30) successor analysis and the root-field restrictions at orders (12,42).",
+          "statements": [
+            {
+              "locator": "Theorem PolynomialWeylOrderTwelveResidual.** Let \\(P,Q\\) be a",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem PolynomialWeylOrderTwelveResidual.** Let \\(P,Q\\) be a",
+              "nodes": [
+                "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition PolynomialWeylSixThirtyScalarSuccessors.** A",
+              "kind": "proposition",
+              "line": 105,
+              "title": "Proposition PolynomialWeylSixThirtyScalarSuccessors.** A",
+              "nodes": [
+                "DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary PolynomialWeylOrderTwelveFortyTwoRootField.** Over a",
+              "kind": "corollary",
+              "line": 227,
+              "title": "Corollary PolynomialWeylOrderTwelveFortyTwoRootField.** Over a",
+              "nodes": [
+                "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-FORTY-TWO-ROOT-FIELD"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary PolynomialWeylOrderTwelveRealFortyTwoResidual.** Over",
+              "kind": "corollary",
+              "line": 248,
+              "title": "Corollary PolynomialWeylOrderTwelveRealFortyTwoResidual.** Over",
+              "nodes": [
+                "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-REAL-FORTY-TWO-RESIDUAL"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ]
+        },
+        {
+          "path": "dixmier/dixmier-formal-lifting/verify_weyl_order_twelve.py",
+          "sha256": "fb87c23cf1c4516f6b51039ffa1bd39cdfa7f018fb8c2e56f87b58743c40f816",
+          "role": "evidence",
+          "claims": [
+            "EVIDENCE-DIX-WEYL-ORDER-TWELVE-CROSSINGS",
+            "DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-RESIDUAL",
+            "DIX-POLYNOMIAL-WEYL-SIX-THIRTY-SCALAR-SUCCESSORS"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "explanation": "Exhaustive exact integer and rational tests within the proved crossing and successor ranges.",
+          "statements": []
+        },
+        {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_SQUAREFREE_CUBIC_QUADRATIC_MATES.md",
+          "sha256": "097c609533af523c74cdded9ac3e400767697ef37c46ecca610424877e8393f3",
+          "role": "proof",
+          "claims": [
+            "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-COMMON-CUBIC-QUADRATIC-LEADING-EXCLUSION",
+            "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-MIXED-CUBIC-QUADRATIC-LEADING-EXCLUSION",
+            "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION",
+            "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION"
+          ],
+          "dependencies": [
+            "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-SQUAREFREE-RESIDUAL",
+            "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-REDUCED-CUBIC-CASES",
+            "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-QUADRATIC-AFFINE-EXCLUSION",
+            "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-TWO-QUADRATIC-MATES-EXCLUSION",
+            "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-COMMON-CUBIC-QUADRATIC-LEADING-EXCLUSION",
+            "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-MIXED-CUBIC-QUADRATIC-LEADING-EXCLUSION"
+          ],
+          "gaps": [
+            "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
+          ],
+          "explanation": "Target-parameter Taylor identities and rational pole tests close both squarefree cubic–quadratic leading patterns.",
+          "statements": [
+            {
+              "locator": "Theorem SexticKellerSquarefreeQuarticCommonCubicQuadraticLeadingExclusion.",
+              "kind": "theorem",
+              "line": 12,
+              "title": "Theorem SexticKellerSquarefreeQuarticCommonCubicQuadraticLeadingExclusion.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-COMMON-CUBIC-QUADRATIC-LEADING-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem SexticKellerSquarefreeQuarticMixedCubicQuadraticLeadingExclusion.",
+              "kind": "theorem",
+              "line": 17,
+              "title": "Theorem SexticKellerSquarefreeQuarticMixedCubicQuadraticLeadingExclusion.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-MIXED-CUBIC-QUADRATIC-LEADING-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary SexticKellerSquarefreeQuarticExclusion.** In characteristic",
+              "kind": "corollary",
+              "line": 22,
+              "title": "Corollary SexticKellerSquarefreeQuarticExclusion.** In characteristic",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-SQUAREFREE-QUARTIC-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary SexticKellerQuarticAffineSourceInversion.",
+              "kind": "corollary",
+              "line": 35,
+              "title": "Corollary SexticKellerQuarticAffineSourceInversion.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-QUARTIC-AFFINE-SOURCE-INVERSION"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ]
+        },
+        {
+          "path": "arithmetic/verify_mordell_ray_pairing.py",
+          "sha256": "7fc63bbff1d199d90cfda1ae2310b9a7f1f56dc7e3b7c6b78d0c97170e5da4ff",
+          "role": "evidence",
+          "claims": [
+            "EVIDENCE-ARITH-MORDELL-RAY-PAIRING-EXACT"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact finite algebra only; the global comparison and Chebotarev arguments are separate written inputs."
+        },
+        {
+          "path": "arithmetic/mordell_ray_pairing_exact.json",
+          "sha256": "86f88f72918d1b2b357ed08f7f69e00e31ca3908a1eca4884e784be5e65f7190",
+          "role": "evidence",
+          "claims": [
+            "EVIDENCE-ARITH-MORDELL-RAY-PAIRING-EXACT"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Frozen exact norm and rational Kummer certificates, finite central symbols and normalized matrices."
+        },
+        {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_GRADED_ACTION.md",
+          "sha256": "44e5b8858c653da977939e19164cd35b6d85870e9a607cc04eea31b24f54232f",
+          "role": "proof",
+          "claims": [
+            "JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION"
+          ],
+          "dependencies": [
+            "EVIDENCE-JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION",
+            "JAC-SEXTIC-KELLER-GRADED-ONE-NEGATIVE-ONE-NEGATIVE-TWO",
+            "JAC-THREE-VARIABLE-KELLER-BOUNDED-COORDINATE-COMPLETION",
+            "EXT-JC2-DEGREE-100",
+            "JAC-KELLER-SINGLETON-LINE-NONPROPER-CONTROL"
+          ],
+          "gaps": [
+            "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
+          ],
+          "explanation": "Rank of the monomial resonance vectors and exact finite chart reduction.",
+          "statements": [
+            {
+              "locator": "Theorem SexticKellerDiagonalTorusInversion.",
+              "kind": "theorem",
+              "line": 3,
+              "title": "Theorem SexticKellerDiagonalTorusInversion.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ]
+        },
+        {
+          "path": "jacobian/monodromy-theory/verify_sextic_graded_action.py",
+          "sha256": "b518c2723c784450321e917fee74fc93466fe8177c49500a81dd94d911541cc4",
+          "role": "evidence",
+          "claims": [
+            "JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION",
+            "EVIDENCE-JAC-SEXTIC-KELLER-DIAGONAL-TORUS-INVERSION"
+          ],
+          "dependencies": [
+            "EVIDENCE-JAC-SEXTIC-KELLER-GRADED-ONE-NEGATIVE-ONE-NEGATIVE-TWO"
+          ],
+          "gaps": [],
+          "explanation": "Exhaustive finite chart generation and exact unit ideals, with determinant coefficient controls.",
+          "statements": []
+        },
+        {
+          "path": "arithmetic/MORDELL_RAY_CASSELS_TATE_PAIRING.md",
+          "sha256": "d68329e91b8b182a978657ff83535c2563ad47fa12046f6fb426935a69f92350",
+          "role": "proof",
+          "claims": [
+            "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES",
+            "ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS",
+            "ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD"
+          ],
+          "dependencies": [
+            "ARITH-MORDELL-INERT-PRIME-EXACT-CUBIC-RAY-SELMER",
+            "EXT-ARITH-KOYMANS-SMITH-CUBIC-TWIST-PAIRING-COMPARISON",
+            "EXT-ARITH-VAN-BEEK-FISHER-THREE-ISOGENY-CASSELS-TATE-FORMULA",
+            "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
+            "EVIDENCE-ARITH-MORDELL-RAY-PAIRING-EXACT"
+          ],
+          "gaps": [
+            "GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX"
+          ],
+          "statements": [
+            {
+              "locator": "Proposition MCT1 (fixed-block formula).** Let \\(t\\) be a squarefree",
+              "kind": "proposition",
+              "line": 143,
+              "title": "Proposition MCT1 (fixed-block formula).** Let \\(t\\) be a squarefree",
+              "nodes": [
+                "ARITH-MORDELL-RAY-PAIRING-FIXED-BLOCK-AND-EXACT-MATRICES"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem MCT2.** Among primes satisfying",
+              "kind": "theorem",
+              "line": 283,
+              "title": "Theorem MCT2.** Among primes satisfying",
+              "nodes": [
+                "ARITH-MORDELL-RAY-PAIRING-INFINITE-GLOBAL-OBSTRUCTIONS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Fixed ray block, explicit Heisenberg descent, infinite admissible family and selected complete normalized matrices. Arbitrary entries and standard sign calibration remain delimited."
+        },
+        {
+          "path": "arithmetic/sources/koymans-smith-cubic-twist-pairing-2405.09311v1.pdf",
+          "sha256": "daff4e64033ad83023a1071d3be034b8ee8d1b7c1ce201af39c4fcbed2c0aec0",
+          "role": "imported-source",
+          "claims": [
+            "EXT-ARITH-KOYMANS-SMITH-CUBIC-TWIST-PAIRING-COMPARISON"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact versioned primary source; inspected theorem/application scope is recorded in the reference and antecedent records."
+        },
+        {
+          "path": "arithmetic/sources/van-beek-fisher-cubic-norm-pairing-1711.02432v1.pdf",
+          "sha256": "35b7158dfccb1f01d1955b807325cd793ea650c70dcacfb9cc97b48eaa7ba767",
+          "role": "imported-source",
+          "claims": [
+            "EXT-ARITH-VAN-BEEK-FISHER-THREE-ISOGENY-CASSELS-TATE-FORMULA"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact versioned primary source; inspected theorem/application scope is recorded in the reference and antecedent records."
+        },
+        {
+          "path": "arithmetic/sources/wu-zhu-fermat-pairing-2611.29541v1.pdf",
+          "sha256": "56368d94dca587cc37b7cf709a218c8db55b4722928653c8dc8126719a006771",
+          "role": "imported-source",
+          "claims": [
+            "ARITH-MORDELL-RAY-PAIRING-EXPLICIT-HEISENBERG-FIELD"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact versioned primary source; inspected theorem/application scope is recorded in the reference and antecedent records."
+        },
+        {
+          "path": "arithmetic/ABC_CUBIC_TANGENT_COLLISION_MOMENT.md",
+          "sha256": "653d6342175ecbf673f070c8ce0d2a3177ced23779cf77b4b69bd54788b6cd75",
+          "role": "proof",
+          "claims": [
+            "ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL",
+            "ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE",
+            "ARITH-ABC-CUBIC-TANGENT-FIELD-COLLISION-FACTORIAL-MOMENT",
+            "ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-COLLISION-INCIDENCE"
+          ],
+          "dependencies": [
+            "EXT-ARITH-HELFGOTT-CUBIC-LARGE-SQUARE-TAIL",
+            "EXT-ARITH-HELFGOTT-QUARTIC-QUINTIC-LARGE-SQUARE-TAIL",
+            "EXT-ARITH-SALBERGER-SMOOTH-QUARTIC-UNEQUAL-BOX-COUNT",
+            "EXT-ARITH-GREEN-TAO-ZIEGLER-FINITE-COMPLEXITY-PRIME-FORMS",
+            "ARITH-ABC-CUBIC-TANGENT-MOBIUS-COLLISIONS-FINITE",
+            "ARITH-ABC-CUBIC-TANGENT-FIELD-MULTIPLICITY-VIA-HEIGHT",
+            "ARITH-ABC-WEIGHTED-TANGENT-ELLIPTIC-TWO-MARKED-COSETS",
+            "PROOF-ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-NONCUBE-COEFFICIENT",
+            "EXT-ARITH-TATE-TWO-ISOGENY-RANK-FORMULA"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Lemma FM1.** For \\(0<\\alpha\\le1/3\\), the",
+              "kind": "lemma",
+              "line": 24,
+              "title": "Lemma FM1.** For \\(0<\\alpha\\le1/3\\), the",
+              "nodes": [
+                "ARITH-BINARY-QUARTIC-PRIMITIVE-SQUARE-ROOT-SCALE-TAIL"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem FM2.** The number of directions",
+              "kind": "theorem",
+              "line": 103,
+              "title": "Theorem FM2.** The number of directions",
+              "nodes": [
+                "ARITH-BINARY-QUARTIC-SQUARECLASS-COLLISION-INCIDENCE"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem FM3.** Let \\(N_d(Z)\\) count the",
+              "kind": "theorem",
+              "line": 301,
+              "title": "Theorem FM3.** Let \\(N_d(Z)\\) count the",
+              "nodes": [
+                "ARITH-ABC-CUBIC-TANGENT-FIELD-COLLISION-FACTORIAL-MOMENT"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary FM4.** For each fixed asymmetric",
+              "kind": "corollary",
+              "line": 374,
+              "title": "Corollary FM4.** For each fixed asymmetric",
+              "nodes": [
+                "ARITH-ABC-ASYMMETRIC-WEIGHTED-TANGENT-COLLISION-INCIDENCE"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Primitive binary quartic square-root tails, uniform unequal-box determinant count, unweighted ordered collision moment and asymmetric weighted incidence bound."
+        },
+        {
+          "path": "arithmetic/verify_cubic_tangent_collision_census.py",
+          "sha256": "00b696de1da3ed695744de8d3fe002616e23683615bfe8a7a5fe6c9e42c7c078",
+          "role": "evidence",
+          "claims": [
+            "ARITH-ABC-CUBIC-TANGENT-FIELD-COLLISION-FACTORIAL-MOMENT"
+          ],
+          "dependencies": [
+            "ARITH-ABC-CUBIC-TANGENT-MOBIUS-COLLISIONS-FINITE"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Bounded exact PARI squarefree-core census. The 45000 interval checks the reported count and is independent of the unbounded mathematical argument."
         }
       ]
     },

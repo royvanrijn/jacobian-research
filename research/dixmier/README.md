@@ -39,6 +39,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Exact common leading-factor differential for polynomial Weyl pairs | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
 | Multi-root perfect-power Weyl leading factors are excluded | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
 | Rational-map ramification restricts Weyl leading-factor multiplicities | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
+| Low-multiplicity real roots force odd normalized leading-factor degree | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
 | Root multiplicity restrictions for polynomial differential-order gcd three | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_GCD_THREE_LEADING_FACTOR.md) |
 | Multiple-root gcd-three factors require at least two simple or double roots | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_GCD_THREE_LEADING_FACTOR.md) |
 | Degree at least fifteen for the common factor at differential-order gcd three | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_GCD_THREE_LEADING_FACTOR.md) |
@@ -51,6 +52,9 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Nonconstant gcd-five Weyl factors have two possible high-root crossings | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) |
 | Order ten reduces to orders ten and fifteen with a degree-at-least-thirty leading factor | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) |
 | Order fifteen reduces to a mate of order ten, twenty, twenty-five or eighty | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) |
+| Order twelve reduces to five possible mate orders | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) |
+| High roots in reduced orders (12,42) contain a square root of minus fifteen | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) |
+| The real Weyl branch of reduced orders (12,42) has factor degree six modulo twelve | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) |
 | Every constant-leading polynomial Weyl member through order fifteen forces generation | Internal result | proved | [Source](dixmier-formal-lifting/MONIC_POLYNOMIAL_ORDER_THROUGH_FIFTEEN.md) |
 | Nonconstant leading Weyl members have order plus leading-coefficient degree at least 32 | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_WEIGHTED_DESCENT_AND_ORDER_THIRTY_ONE.md) |
 | Constant-leading Weyl orders through 31 and four higher odd orders force generation | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_WEIGHTED_DESCENT_AND_ORDER_THIRTY_ONE.md) |
@@ -106,7 +110,7 @@ Scope limits:
 - QSO3A treats every finite algebraic cubic mate and all lower flows. Every regular generic cubic exact-R Long repair is excluded; the first possible generic scalar first-image order is at least4. Cubic Airy-type pairs still exist.
 - Broad meromorphic reconstruction remains open; existing algebraic branches bypass it by forward direct Stokes injectivity.
 - Global admission permits negative Laurent support. Isolated and every scalar ordered-square family are closed by universal all-order proofs.
-- For DC1, differential orders six, eight and nine force generation. Each order of a proper rank-one polynomial Weyl pair is composite and at least ten. Triangular mate subtraction gives nondividing orders with gcd at least four. An order-ten member would reduce with its mate to orders 10 and 15, with common factor of degree at least 30 and high root multiplicity exactly twenty.
+- For DC1, differential orders six, eight and nine force generation. Each order of a proper rank-one polynomial Weyl pair is composite and at least ten. Triangular mate subtraction gives nondividing orders with gcd at least four. An order-ten member would reduce with its mate to orders 10 and 15, with common factor of degree at least 30 and high root multiplicity exactly twenty. An order-twelve member has reduced mate order 16, 18, 30, 42 or 78, with the stated leading-factor profiles.
 - The mixed S_lambda and its specified first-order nonsymmetric perturbation are closed in every finite mate order by distinct adjoint and residue arguments. Every integer monomial-pole quadratic-square face is excluded by a weaker divisor character with its adjoint. Neither claim classifies the full actual division ring.
 - The next scalar face must pass both its bottom-divisor and adjoint tests; actual global admission and the original R-mate equation remain separate constraints.
 - QQL1 excludes scalar J amplification entrywise at every matrix size, while the explicitly shifted Jtilde admits a genuinely nonscalar Weyl pair and full rational matrix Long completion. These statements have different hypotheses.

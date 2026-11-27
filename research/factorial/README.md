@@ -1068,7 +1068,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Three factorial moments suffice at starts 2^k-6 of the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_EARLIER_DYADIC_WINDOWS.md) |
 | Three factorial moments suffice at starts 2^k-7 of the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_EARLIER_DYADIC_WINDOWS.md) |
 
-**Computed obligations:** 69 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 71 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:

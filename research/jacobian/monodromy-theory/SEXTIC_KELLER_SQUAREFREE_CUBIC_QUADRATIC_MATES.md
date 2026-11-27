@@ -17,10 +17,36 @@ for the squarefree quartic normal form.
 
 **Theorem SexticKellerSquarefreeQuarticMixedCubicQuadraticLeadingExclusion.**
 In the same setting, the leading pair \(p=x^3\),
-\(q=x^2(\gamma(xy-1)+\delta)\) is impossible if
-\(\gamma\ne0\) and \(\gamma\ne2\delta\).
-Thus the remaining quadratic leading coefficients in this pattern,
-up to nonzero scalars, are \(x^2\) and \(x^2(2xy-1)\).
+\(q=x^2(\gamma(xy-1)+\delta)\) is impossible for
+all \((\gamma,\delta)\ne(0,0)\).
+
+**Corollary SexticKellerSquarefreeQuarticExclusion.** In characteristic
+zero, the squarefree quartic normal form has no polynomial Keller
+completion whose two other components have ordinary degree at most six.
+
+The [mate-degree reductions](SEXTIC_KELLER_SQUAREFREE_MATE_DEGREES.md)
+leave source-direction degrees one through three, with at least one
+at least two. The [quadratic-affine exclusion](SEXTIC_KELLER_SQUAREFREE_QUADRATIC_AFFINE_MATES.md)
+removes the pair (2,1), and the [two-quadratic exclusion](SEXTIC_KELLER_SQUAREFREE_TWO_QUADRATIC_MATES.md)
+removes (2,2). If a cubic mate occurs, the
+[reduced cubic cases](SEXTIC_KELLER_SQUAREFREE_REDUCED_CUBIC_CASES.md)
+give precisely the two (3,2) patterns excluded above. This covers every
+pair, including the constant target changes in those reductions.
+
+**Corollary SexticKellerQuarticAffineSourceInversion.**
+Let \(F\) be a three-variable polynomial Keller map of ordinary
+degree at most six over a characteristic-zero field. If some
+quartic linear combination of its target components has degree
+exactly one in some affine source direction, then \(F\) is
+invertible.
+
+The [affine-source quartic reduction](QUARTIC_AFFINE_SOURCE_COMPONENTS_THROUGH_DEGREE_SEVEN.md)
+leaves only the squarefree form at degree six. In that form the
+[quadratic-affine exclusion](SEXTIC_KELLER_SQUAREFREE_QUADRATIC_AFFINE_MATES.md)
+and the two-quadratic exclusion handle the case when neither mate
+is cubic in the distinguished variable. When a mate is cubic,
+the cubic leading reduction gives exactly the two patterns
+excluded here.
 
 ## Expansion in the target parameter
 
@@ -215,7 +241,11 @@ All coefficients of \(U,V\), as Laurent polynomials in \(s\),
 belong to \(\mathbb C[t,t^{-1}]\). In particular \(\alpha,\beta\)
 are regular at \(t=-1\).
 
-Suppose now \(d(-1)\ne0\). If \(\alpha(-1)\ne0\), the
+### Regularity at \(x=0\) when \(d(-1)\ne0\)
+
+The following regularity argument uses the shape
+\(u=\alpha s+\beta,\ w=\rho u^2+\nu u+\omega\).
+Suppose \(d(-1)\ne0\). If \(\alpha(-1)\ne0\), the
 coefficients \(\nu,\omega\) are also regular at \(-1\), by
 changing from \(s\) to \(u\) in \(w\). At the generic point of
 the original divisor \(x=0\), \(t=-1+xy\) and \(s=1/x\), so
@@ -247,3 +277,153 @@ first gives \(x^2\mid p_2\). Regularity of \(V_2\) then gives
 linear \(z\)-coefficient \(q_1\), so \(x\mid q_1\).
 Consequently \(P_z,Q_z,R_z\) all vanish on \(x=0\),
 contradicting the nonzero Jacobian determinant.
+
+
+### The critical case \(d(-1)=0\)
+
+Rescale \(Q\) so that \(\delta=1,\ \gamma=2\), and put
+\(\zeta=(t+1)/t\). Then \(\ell=\zeta^2-1,\ m=(\zeta-1)^3\)
+and \(\rho=1/(4\zeta^2)\). The coefficient of \(s^2\) in
+\(w\) is \(\xi^2\), where \(\xi=\alpha/(2\zeta)\). Its
+regularity at \(t=-1\) implies that \(\alpha\) vanishes there
+at least to order one. Consequently \(u\) is regular along
+the original divisor \(x=0\), and so is \(w=Q-\ell R^2-Ru\).
+Since the coefficients of \(w\) as a polynomial in \(s\)
+are regular at \(t=-1\), the term \(\xi^2s^2\) would give
+an uncancelled double pole along \(x=0\) if \(\xi(-1)\ne0\).
+Thus \(\xi\) vanishes at least to order one.
+
+The coefficient of \(s^3\) in \(P\) comes from \(V_3\) in
+(1), and equals \(\alpha^3(m''\rho+m'''/6)=\xi^3\).
+Here \(m''=(3/4)(\zeta^{-1}-\zeta^{-3})\) and
+\(m'''=(3/8)(-\zeta^{-3}+3\zeta^{-5})\).
+Write \(w_1\) for the coefficient of \(s\) in \(w\).
+With \(S=\xi s+\zeta r+e(t)\) and \(e=w_1/(2\xi)\),
+we can complete the square in \(Q\) and write
+\[
+ Q=S^2+q(t,r),\qquad P=S^3+p(t,r)S^2+h(t,r)S+j(t,r).
+\]
+The coefficients are in \(K[r]\), and the coefficient of
+\(r^2\) in \(q\) is \(\ell-\zeta^2=-1\).
+At fixed \(r\), the bracket in \(t,S\) is \(\kappa/(t\xi)\).
+Its coefficients of \(S^3,S^2,S\) are
+\(2p_t,2h_t-3q_t,2j_t-2p q_t\).
+Thus \(p=p(r)\), \(h=3q/2+h_0(r)\),
+and \(j=p(r)q+j_0(r)\) for polynomials in \(r\) with
+constant coefficients. The constant equation
+\(-h q_t=\kappa/(t\xi)\) forces both factors \(h,q_t\)
+to be independent of \(r\), since they are polynomials
+over \(K\) with nonzero product of degree zero in \(r\).
+Consequently
+\[
+ q=-r^2+c r+q_0(t),\qquad
+ h=\tfrac32q_0(t)+h_* ,\qquad
+ P=S^3+h S+p(r)Q+j_0(r)
+\]
+with \(c,h_*\) constant.
+
+The coefficients \(2\zeta e+c\) and \(e^2+q_0\) in the
+part of \(Q\) independent of \(s\) are regular at \(t=-1\).
+In particular \(e\) has at most a simple pole there. If
+it is regular, so are \(q_0,h\), and \(S\) is regular along
+\(x=0\) since \(\xi\) vanishes at \(-1\). Then
+\(R_z=xt,\ S_z=x(t+1)\) and the expressions for \(P,Q\)
+give \(P_z=Q_z=R_z=0\) along \(x=0\).
+
+If \(e\) has a simple pole, write its leading term as
+\(e_{-1}/(t+1)\), \(e_{-1}\ne0\). Along \(x=0\), \(S-e\)
+is regular, and \(h=-3e^2/2+O(1)\) at \(t=-1\).
+In particular \(Q_z=2SS_z+(-2R+c)R_z\) vanishes on \(x=0\)
+and \(P_z\) restricts there to the restriction of
+\((3S^2+h)S_z\). Using \(S_z=x(t+1)\) and \(t+1=xy\),
+this is \(3e_{-1}^2/(2y)\) on \(y\ne0\). The restriction
+of a polynomial derivative to \(x=0\) cannot have that
+pole. This excludes \(d(-1)=0\).
+
+## A constant multiple of \(x^2\) as leading coefficient
+
+Let \(\gamma=0\) and rescale \(Q\) so that \(\delta=1\).
+Put \(\zeta=1/t,\ \rho=1/(4\zeta^2)\) and
+\(\chi=m''/2=3/(8\zeta)\). Now \(\ell=\zeta^2,\ m=\zeta^3\).
+In (2), set
+\[
+ Z=w-\rho u^2+(A''u+B')/(2\chi).
+\]
+Expanding \(G/\chi\) gives \(Z^2=T(u)\) of degree at most
+three, with cubic coefficient
+\(T_3=-(\rho A''+A'''/6)/\chi\).
+Modulo this relation, \(H\) is polynomial in \(u\) plus
+a polynomial of degree at most two in \(u\) times \(Z\).
+The \(u^2Z\)-coefficient is \(-3\chi T_3\). To check
+the cancellation, the weight-five part of \(H\) is
+\(\chi' u(w-\rho u^2)^2\), where \(\chi'=-2\rho\chi\).
+Together with the terms \(A''w^2/2+A'''u^2w/2\), this gives
+the stated coefficient after the shift.
+
+If \(u\) were constant in \(s\), the quadratic equation
+for \(w\) and then (2) would be incompatible. If \(T_3\ne0\),
+\(Z^2=T(u)\) is irreducible over \(\overline K(u)\).
+At infinity \(u,Z\) have pole orders two and three,
+respectively, since \(T\) has odd degree three. Thus the
+\(u^2Z\)-term has pole order seven and cannot cancel
+with the polynomial in \(u\), whose pole order is even
+if it has a pole. This contradicts (2) in
+\(\overline K(u,Z)=\overline K(s)\).
+Hence \(A'''+6\rho A''=0\), giving
+\(A=a_1\ell+a_2\zeta+a_3\) for constants \(a_1,a_2,a_3\).
+For example \(6\rho=3/(2\ell)\), so \(A''\) is proportional
+to \(\ell^{-3/2}\).
+
+Adding \(2a_2 R/3\) to \(Q\) replaces the term \(a_2\zeta\)
+in \(A\) by zero, since \(m'=3\zeta/2\). Subtracting
+appropriate scalar multiples of \(Q\) and \(R^2\) from
+\(P\) then gives \(A=0\). These changes preserve the
+\(z\)-degrees, leading coefficients, and determinant.
+The remaining proof uses polynomiality with the two
+specified \(z\)-degrees, with no bound on the resulting
+ordinary degrees.
+
+Now \(Z=w-\rho u^2+B'/(2\chi)\),
+\(T=L u^2+M u+N\), where
+\[
+ L=-(\rho B'+B''/2)/\chi,\qquad M=-C'/\chi,\qquad
+ N=B'^2/(4\chi^2)-D/\chi .
+\]
+Modulo \(Z^2=T(u)\),
+\(H=-\chi(2Lu+M)Z+J(u)\), with
+\(u^2\)-coefficient of \(J\) equal to \(3\rho C'+C''/2\).
+Indeed, in addition to its weight-five part,
+\[
+ H-\chi' u(w-\rho u^2)^2
+    = B''u w+B'''u^3/6+C'w+C''u^2/2+D'u .
+\]
+Substitution and reduction give the claimed coefficients.
+
+If \(L\ne0\) and \(T\) is nonsquare, at its two places
+over \(u=\infty\) the leading terms of \(Z/u\) are
+opposite nonzero constants. If \(J\) has degree higher
+than two, \(H\) has a pole of order higher than two.
+Otherwise the term \(-2\chi LuZ\) ensures a pole of
+order two at at least one place. Both contradict (2).
+If \(T\) is square with \(L\ne0\), or if \(L=M=0\),
+\(Z\) is affine in \(u\) over \(K\). Then \(H\) is polynomial
+in \(u\), so (2) forces \(u\) affine in \(s\). The relation
+for \(w\) has the shape required by the regularity argument
+with \(d(-1)\ne0\), which applies since \(d=2\). This is
+again impossible.
+
+Finally suppose \(L=0,\ M\ne0\). Then \(u=(Z^2-N)/M\),
+and \(H=C'Z+J(u)\). By (2), \(J\) must be constant in
+\(u\), so \(C''+6\rho C'=0\). Thus \(C'\) is a nonzero
+scalar times \(\zeta^{-3}\) and \(M\) is proportional
+to \(\zeta^{-2}\). The coefficient of \(s\) in \(H\)
+is \(\kappa/(t\ell_t)\), proportional to \(\zeta^{-2}\).
+Therefore \(Z\) is affine in \(s\) with slope a nonzero
+scalar times \(\zeta\). It follows that \(u\) is quadratic
+in \(s\) with leading coefficient proportional to
+\(\zeta^4\), nonzero at \(t=-1\). Then \(w\) has degree
+four in \(s\) with nonzero leading coefficient there
+from \(\rho u^2\). As the coefficients of \(u,w\) in
+\(s\) are regular at \(t=-1\), along \(x=0\) the term \(w\)
+in \(Q=\ell R^2+Ru+w\) has an uncancelled pole of order
+four. This completes the mixed-leading exclusion.
