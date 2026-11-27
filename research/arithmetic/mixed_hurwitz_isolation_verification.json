@@ -1,0 +1,3288 @@
+{
+  "schema_version": 1,
+  "kind": "mixed_hurwitz_isolation_and_small_bases",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "6763c1ebf292c314c3cf9b7f7f9de345beb0191143e4b832d0516b8bebc0336b",
+  "input_sha256": {
+    "MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md": "468f14520ced6bbc29095bb12003a54f0d8c5137ac0b41bf6a7768b4ac306738",
+    "TERMINAL_MASS_HURWITZ_DESCENT.md": "f54e47a6de99123044a87f0e44f5e75065a0d4d734f41db3489a5bdb65be0109",
+    "DEGREE_FOURTEEN_HURWITZ_ORBIT.md": "2cdd1ade6d5afee867abe97510bf82fa9a3d0cc4f3af3180915b12b21aac76b1",
+    "UNIFORM_TWO_LEAF_DT_ABSORPTION.md": "ab1a18bddd9bce55f938f3b8ad024e09d81b32590047e3730a227a163ad93254",
+    "UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md": "b8cf47fe94b74c405681a5814585660bffa4335edde4882f6175ad71310ea283",
+    "HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md": "e53c9f25872a75b09b60601c816968056ac5b5ce934477cf3b6c137ec76742e6",
+    "verify_terminal_mass_hurwitz_descent.py": "0718f36bc5814aec06d6746934619353fe4545f9d37ae956ce7782d24cba5a1f",
+    "verify_terminal_mass_projection_escape.py": "499cfbbbad29fb9cba94511c2e45b6b92c4c7d977c47f1c8a0e2d52afdd4e706",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f"
+  },
+  "local_identities_and_cut_controls": {
+    "one_contact_owner_patterns": 8,
+    "both_two_move_identities": true,
+    "two_leaf_capture_identity": true,
+    "three_equal_projection_break": true
+  },
+  "paired_tree_isolation_controls": {
+    "complete_small_tree_orders": [
+      {
+        "terminal_size": 3,
+        "all_labeled_tree_orders": 6,
+        "total_normalizing_moves": 4
+      },
+      {
+        "terminal_size": 4,
+        "all_labeled_tree_orders": 96,
+        "total_normalizing_moves": 198
+      },
+      {
+        "terminal_size": 5,
+        "all_labeled_tree_orders": 3000,
+        "total_normalizing_moves": 12528
+      }
+    ],
+    "larger_path_controls": [
+      {
+        "terminal_size": 6,
+        "orientation": -1,
+        "star_normalizing_word_length": 10
+      },
+      {
+        "terminal_size": 6,
+        "orientation": 1,
+        "star_normalizing_word_length": 10
+      },
+      {
+        "terminal_size": 6,
+        "orientation": -1,
+        "star_normalizing_word_length": 10
+      },
+      {
+        "terminal_size": 6,
+        "orientation": 1,
+        "star_normalizing_word_length": 10
+      },
+      {
+        "terminal_size": 12,
+        "orientation": -1,
+        "star_normalizing_word_length": 55
+      },
+      {
+        "terminal_size": 12,
+        "orientation": 1,
+        "star_normalizing_word_length": 55
+      },
+      {
+        "terminal_size": 12,
+        "orientation": -1,
+        "star_normalizing_word_length": 55
+      },
+      {
+        "terminal_size": 12,
+        "orientation": 1,
+        "star_normalizing_word_length": 55
+      },
+      {
+        "terminal_size": 20,
+        "orientation": -1,
+        "star_normalizing_word_length": 171
+      },
+      {
+        "terminal_size": 20,
+        "orientation": 1,
+        "star_normalizing_word_length": 171
+      },
+      {
+        "terminal_size": 20,
+        "orientation": -1,
+        "star_normalizing_word_length": 171
+      },
+      {
+        "terminal_size": 20,
+        "orientation": 1,
+        "star_normalizing_word_length": 171
+      }
+    ]
+  },
+  "unique_largest_phase_alignment_controls": {
+    "all_small_labeled_tree_orders": 103,
+    "nonzero_phase_examples": [
+      {
+        "smaller_size": 3,
+        "largest_size": 5,
+        "paired_edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "gather_word": [
+          -3,
+          -2
+        ],
+        "twist_phase": 2,
+        "rho_drop": 2
+      },
+      {
+        "smaller_size": 4,
+        "largest_size": 5,
+        "paired_edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "gather_word": [
+          -3,
+          -2
+        ],
+        "twist_phase": 3,
+        "rho_drop": 3
+      }
+    ]
+  },
+  "complete_small_pure_orbits": [
+    {
+      "degree": 5,
+      "literal_orbit": 5,
+      "absolute_orbit": 1,
+      "group_order": 10,
+      "representative": [
+        [
+          0,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "degree": 7,
+      "literal_orbit": 147,
+      "absolute_orbit": 21,
+      "group_order": 2520,
+      "representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "degree": 7,
+      "literal_orbit": 147,
+      "absolute_orbit": 21,
+      "group_order": 2520,
+      "representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "degree": 7,
+      "literal_orbit": 49,
+      "absolute_orbit": 7,
+      "group_order": 168,
+      "representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "degree": 7,
+      "literal_orbit": 49,
+      "absolute_orbit": 7,
+      "group_order": 168,
+      "representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ]
+    }
+  ],
+  "complete_small_mixed_bases": [
+    {
+      "degree": 3,
+      "literal_unmarked_orbit": 1,
+      "literal_exact_marked_orbit": 1,
+      "independent_character_count_marked": 1,
+      "sorted_orbit_sha256": "d7b3d4012540102c40a23acdeee417e06a42a74a5d66c7efe59f4e4aa0537c5c",
+      "literal_seed": [
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "rho_distribution": {
+        "0": 1
+      },
+      "seed_removable_DT_indices": [],
+      "exact_marked_generators": [],
+      "generated_group_order": 3,
+      "group_scope": "exact closure"
+    },
+    {
+      "degree": 5,
+      "literal_unmarked_orbit": 10,
+      "literal_exact_marked_orbit": 5,
+      "independent_character_count_marked": 5,
+      "sorted_orbit_sha256": "a9997877652ebd68a16a0d8baca4e964fc3989d6bb80b93033c55167e5b5e231",
+      "literal_seed": [
+        [
+          2,
+          1,
+          4,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          4
+        ]
+      ],
+      "rho_distribution": {
+        "1": 10
+      },
+      "seed_removable_DT_indices": [
+        1
+      ],
+      "exact_marked_generators": [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "generated_group_order": 60,
+      "group_scope": "exact closure"
+    },
+    {
+      "degree": 7,
+      "literal_unmarked_orbit": 588,
+      "literal_exact_marked_orbit": 196,
+      "independent_character_count_marked": 196,
+      "sorted_orbit_sha256": "7d761fbff7b90a4f79ac4ad12622ca54150714f98b777e09f3862421b3d01cc8",
+      "literal_seed": [
+        [
+          1,
+          4,
+          2,
+          3,
+          0,
+          5,
+          6
+        ],
+        [
+          0,
+          3,
+          2,
+          1,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4,
+          6
+        ]
+      ],
+      "rho_distribution": {
+        "0": 105,
+        "1": 168,
+        "2": 315
+      },
+      "seed_removable_DT_indices": [
+        1,
+        2
+      ],
+      "exact_marked_generators": [
+        [
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -2
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "generated_group_order": 2520,
+      "group_scope": "exact closure"
+    },
+    {
+      "degree": 9,
+      "literal_unmarked_orbit": 78732,
+      "literal_exact_marked_orbit": 19683,
+      "independent_character_count_marked": 19683,
+      "sorted_orbit_sha256": "34fb445c35086a17e092229e4fb0195c232915f6aca88f4c24f4c453d3c459f0",
+      "literal_seed": [
+        [
+          1,
+          5,
+          2,
+          3,
+          4,
+          0,
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          4,
+          2,
+          3,
+          1,
+          8,
+          6,
+          7,
+          5
+        ],
+        [
+          0,
+          3,
+          2,
+          1,
+          4,
+          7,
+          6,
+          5,
+          8
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          6,
+          5,
+          7,
+          8
+        ]
+      ],
+      "rho_distribution": {
+        "0": 14112,
+        "1": 17496,
+        "2": 22140,
+        "3": 23040,
+        "4": 1944
+      },
+      "seed_removable_DT_indices": [
+        1,
+        2,
+        3
+      ],
+      "exact_marked_generators": [
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -2
+        ],
+        [
+          -3
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "generated_group_order": null,
+      "group_scope": "A9 by written primitivity/Jordan proof"
+    }
+  ],
+  "all_56_degree7_core_extension_bridges": [
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 0,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -3,
+        -1,
+        2,
+        2,
+        2,
+        -3,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 0,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -3,
+        -1,
+        2,
+        2,
+        2,
+        -3,
+        -1,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 1,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        3,
+        -2,
+        -2,
+        3,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -3,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 1,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        3,
+        -2,
+        -2,
+        3,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        -3,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 2,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        2,
+        -1,
+        2,
+        2,
+        -3,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 2,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        2,
+        -1,
+        2,
+        2,
+        -3,
+        1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 3,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        2,
+        -1,
+        2,
+        2,
+        3,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 3,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        2,
+        -1,
+        2,
+        2,
+        3,
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 4,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -3,
+        -3,
+        2,
+        -3,
+        -3,
+        -3,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 4,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -3,
+        -3,
+        2,
+        -3,
+        -3,
+        -3,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 5,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        1,
+        -2,
+        1,
+        -2,
+        -3,
+        2,
+        2,
+        -3,
+        -3,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 5,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        1,
+        -2,
+        1,
+        -2,
+        -3,
+        2,
+        2,
+        -3,
+        -3,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 6,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        -2,
+        3,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        -3,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          4,
+          3,
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 6,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        -2,
+        3,
+        1,
+        2,
+        -1,
+        -1,
+        2,
+        2,
+        -3,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 0,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -1,
+        -2,
+        -2,
+        -3,
+        1,
+        2,
+        2,
+        2,
+        -3,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 0,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -1,
+        -2,
+        -2,
+        -3,
+        1,
+        2,
+        2,
+        2,
+        -3,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 1,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -2,
+        -3,
+        -3,
+        -3,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 1,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -2,
+        -3,
+        -3,
+        -3,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 2,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -2,
+        1,
+        -2,
+        3,
+        -2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 2,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -2,
+        1,
+        -2,
+        3,
+        -2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 3,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        2,
+        -1,
+        -1,
+        2,
+        -3,
+        -3,
+        1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 3,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        2,
+        -1,
+        -1,
+        2,
+        -3,
+        -3,
+        1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 4,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 4,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 5,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        1,
+        2,
+        -3,
+        -3,
+        -3,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 5,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        1,
+        2,
+        -3,
+        -3,
+        -3,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 6,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        -2,
+        1,
+        -2,
+        3,
+        -2,
+        1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 2520,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          2,
+          4,
+          3,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 6,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        -2,
+        1,
+        -2,
+        3,
+        -2,
+        1,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 0,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -3,
+        -3,
+        -3,
+        2,
+        -3,
+        -1,
+        -1,
+        -2,
+        -2,
+        -3,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 0,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -3,
+        -3,
+        -3,
+        2,
+        -3,
+        -1,
+        -1,
+        -2,
+        -2,
+        -3,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 1,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        3,
+        1,
+        -2,
+        3,
+        3,
+        3,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 1,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        3,
+        1,
+        -2,
+        3,
+        3,
+        3,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 2,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        1,
+        2,
+        -3,
+        -1,
+        2,
+        -3,
+        -3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 2,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        1,
+        2,
+        -3,
+        -1,
+        2,
+        -3,
+        -3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 3,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        3,
+        3,
+        -2,
+        1,
+        -2,
+        3,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 3,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        3,
+        3,
+        -2,
+        1,
+        -2,
+        3,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 4,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -1,
+        2,
+        3,
+        3,
+        3,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 4,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -1,
+        2,
+        3,
+        3,
+        3,
+        -1,
+        -2,
+        1,
+        1,
+        -2,
+        -2,
+        1,
+        -2,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 5,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        1,
+        2,
+        -3,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -3,
+        -3,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 5,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        1,
+        2,
+        -3,
+        -2,
+        -2,
+        -2,
+        1,
+        -2,
+        -2,
+        -3,
+        -3,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 6,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        -2,
+        -2,
+        3,
+        -2,
+        1,
+        -2,
+        3,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          3,
+          2,
+          6,
+          5,
+          4
+        ],
+        [
+          0,
+          6,
+          2,
+          3,
+          5,
+          4,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          1,
+          4,
+          5,
+          0
+        ]
+      ],
+      "anchor": 6,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -2,
+        3,
+        -2,
+        -2,
+        3,
+        -2,
+        1,
+        -2,
+        3,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 0,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        3,
+        3,
+        3,
+        -2,
+        -2,
+        1,
+        -2,
+        3,
+        3,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 0,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        3,
+        3,
+        3,
+        -2,
+        -2,
+        1,
+        -2,
+        3,
+        3,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 1,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        1,
+        -2,
+        -3,
+        -3,
+        -3,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 1,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        1,
+        -2,
+        -3,
+        -3,
+        -3,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 2,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        1,
+        -2,
+        1,
+        -2,
+        3,
+        3,
+        3,
+        -2,
+        3,
+        -2,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 2,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        1,
+        -2,
+        1,
+        -2,
+        3,
+        3,
+        3,
+        -2,
+        3,
+        -2,
+        1,
+        1,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 3,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        3,
+        -2,
+        1,
+        -2,
+        -2,
+        3,
+        -2,
+        1,
+        -2,
+        -2,
+        -3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 3,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        3,
+        -2,
+        1,
+        -2,
+        -2,
+        3,
+        -2,
+        1,
+        -2,
+        -2,
+        -3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 4,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -3,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        3,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 4,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -3,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        3,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -2,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 5,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -1,
+        2,
+        -3,
+        -3,
+        -3,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 5,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -1,
+        2,
+        -3,
+        -3,
+        -3,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 6,
+      "orientation": -1,
+      "word_to_common_mixed_seed": [
+        -2,
+        -3,
+        2,
+        -3,
+        -2,
+        -2,
+        1,
+        -2,
+        -3,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "pure_group_order": 168,
+      "pure_representative": [
+        [
+          0,
+          1,
+          4,
+          3,
+          2,
+          6,
+          5
+        ],
+        [
+          0,
+          6,
+          3,
+          2,
+          4,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          2,
+          3,
+          1,
+          5,
+          0
+        ]
+      ],
+      "anchor": 6,
+      "orientation": 1,
+      "word_to_common_mixed_seed": [
+        -2,
+        -3,
+        2,
+        -3,
+        -2,
+        -2,
+        1,
+        -2,
+        -3,
+        2,
+        1,
+        1
+      ]
+    }
+  ],
+  "one_anchor_restoration_controls": {
+    "all_anchors_and_orientations": 154,
+    "pure_factor_counts": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "lifting_controls": {
+    "DT_lift_square_minus_one": true,
+    "even_centralizer_conjugates_the_two_lift_signs": true
+  },
+  "negative_controls": {
+    "repeated_edge_tree_rejected": true,
+    "wrong_branch_class_rejected": true,
+    "outside_satellite_contact_prevents_false_isolation": true
+  },
+  "scope": "Complete fixed-product mixed bases in degrees 3,5,7,9 and pure controls in degrees 5,7. All unrestricted isolation/connectivity conclusions use the written proof and retained pure-DT bases and absorption. No larger census, independent replay, formal verification or external review.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md",
+  "assurance": "Internal universal written isolation and connectivity proofs, bounded exact controls and complete small-domain replay. No independent replay, formal verification, external mathematical review or priority claim.",
+  "declarations": [
+    {
+      "name": "Lemma M1. A single contact enlarges either other component",
+      "scope": "In every mixed full-cycle DT/3-cycle tree, a unique support contact of a DT with T=(abc) at a permits Q^2 and Q^-2, after cut-preserving literal gathering, to enlarge respectively either other complementary component. At a global maximum, the contact can therefore occur only in a unique largest component."
+    },
+    {
+      "name": "Lemma M2. Complementary twists synchronize equal component trees",
+      "scope": "At a global maximum of the largest T-cut component, complementary full twists preserve the same three roots/cycles. Internal DTs in a component not uniquely largest are impossible. Edge-pairings incident to such a component require equal component sizes and the same rooted cyclic edge bijection; pairing a smaller component with a unique largest is impossible. These constraints reapply after every complementary braid."
+    },
+    {
+      "name": "Lemma M3. A unique largest component forces isolation",
+      "scope": "At a global maximum, a unique largest T-cut component forces both other components to be singletons. Otherwise two equal smaller trees are synchronized, a paired exclusive-leaf DT is aligned at both roots, and Q^2 enlarges the largest component by s-1."
+    },
+    {
+      "name": "Lemma M4. Three equal nontrivial components are impossible",
+      "scope": "Three equal nontrivial T-cut components are impossible at the maximum. Each DT pairs two equal component trees; all three types have (q-1)/2 factors. Different projected edge types cannot share a vertex, by a literal pair conjugation violating the same cyclic matching. Their two-type component tree would then be disconnected."
+    },
+    {
+      "name": "Lemma M5. The two-largest tie has a uniform seven-sheet escape",
+      "scope": "For the two-largest tie at the maximum, the third component is a singleton and the two equal q-vertex trees are synchronized. For q>=3, diagonal transposition Hurwitz moves normalize to paired stars and the literal word (-1,-1,-1,2,2) on T and two satellites creates two exclusive T leaves. All outside satellites are explicitly fixed."
+    },
+    {
+      "name": "Theorem M6. Mixed-factor isolation and its exact boundary",
+      "scope": "For every mixed full-cycle tuple on odd N>=7 with one 3-cycle and all other factors DTs, some full braid representative has two exclusive leaves of the 3-cycle; deleting it and those leaves leaves a pure-DT full-cycle tuple on N-2 sheets. At N=3 this is trivial. At N=5 it is impossible, and every tuple has cuts (1,2,2). No monodromy hypothesis is required."
+    },
+    {
+      "name": "Theorem M7. All-degree mixed connectivity, extraction and restoration",
+      "scope": "For every odd N>=3, the full-cycle mixed domain has one literal unmarked braid orbit and one exactly first-marked orbit; its absolute quotient is also connected. Every N>=5 orbit has a removable DT. Arbitrary two-fresh-leaf DT extensions of a mixed tuple, starting with A3, restore to the unique mixed component. Isolated 3-cycle extensions of any pure-DT core have no additional anchor or orientation orbit. The proof uses universal T isolation, the pure classification, and the separate complete mixed degree-nine base."
+    }
+  ],
+  "primary_source_comparison": [
+    {
+      "authors": "Fu Liu and Brian Osserman",
+      "version": "arXiv:math/0609118v1",
+      "url": "https://arxiv.org/html/math/0609118v1",
+      "inspected": "Proposition 1.1, Theorem 1.2 and Section 2 pure-cycle hypothesis; actual primary HTML",
+      "conclusion": "A DT is not a single cycle, so their pure-cycle irreducibility theorem does not directly apply.",
+      "role": "context; not an imported DT connectivity proof"
+    },
+    {
+      "authors": "Vivien Ripoll",
+      "version": "arXiv:0903.3604v3",
+      "url": "https://arxiv.org/html/0903.3604v3",
+      "inspected": "Definition 0.3 and Theorem 0.4; actual primary HTML",
+      "conclusion": "Primitive block factorizations have only one nonreflection; every factor here has reflection length two. Independent transposition braiding changes the allowed paired action.",
+      "role": "context; not an imported paired connectivity proof"
+    },
+    {
+      "authors": "Gareth A. Jones",
+      "version": "cached arXiv:1209.5169v1 source",
+      "path": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "inspected": "Actual retained PDF, printed page 1, Theorem 1.1, extracted and read in this task",
+      "conclusion": "Primitive plus a prime-length cycle fixing at least three points implies containment of An. For mixed odd N>=7 the literal 3-cycle and small-support block argument satisfy the hypotheses. N=3,5 are handled by exact finite closure.",
+      "role": "mathematical input for monodromy only"
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md",
+      "sha256": "468f14520ced6bbc29095bb12003a54f0d8c5137ac0b41bf6a7768b4ac306738",
+      "locator": "Lemmas M1--M5, Theorems M6--M7 and Monodromy, inner components and lifting invariants"
+    },
+    {
+      "path": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
+      "sha256": "f54e47a6de99123044a87f0e44f5e75065a0d4d734f41db3489a5bdb65be0109",
+      "locator": "Theorem 20: unrestricted residual pure-DT extraction and its connectivity induction"
+    },
+    {
+      "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
+      "sha256": "2cdd1ade6d5afee867abe97510bf82fa9a3d0cc4f3af3180915b12b21aac76b1",
+      "locator": "Complete pure bases in degrees 9,11,13 and exact independent totals; retained receipt has actual completed runs"
+    },
+    {
+      "path": "research/arithmetic/degree_fourteen_hurwitz_verification.json",
+      "sha256": "009545e432aee4cf61c877f26b59b2e53c63d5153a8e5c644e1931dc43c14ced",
+      "locator": "Recorded pure base cardinalities and completed engine results; no new replay of the large bases is claimed"
+    },
+    {
+      "path": "research/arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md",
+      "sha256": "ab1a18bddd9bce55f938f3b8ad024e09d81b32590047e3730a227a163ad93254",
+      "locator": "Theorem 1, Corollary 3 and explicit W_s: arbitrary-anchor absorption and canonical removable satellite"
+    },
+    {
+      "path": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
+      "sha256": "b8cf47fe94b74c405681a5814585660bffa4335edde4882f6175ad71310ea283",
+      "locator": "Theorem 4 and exact marked subgroup in stated range; cyclic full-twist relabeling"
+    },
+    {
+      "path": "research/arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md",
+      "sha256": "e53c9f25872a75b09b60601c816968056ac5b5ce934477cf3b6c137ec76742e6",
+      "locator": "Class-product finite-difference proof of complete small mixed total"
+    },
+    {
+      "path": "research/arithmetic/ALTERNATING_HURWITZ_CYCLE_FOLDING.md",
+      "sha256": "73709eb5a049b6f855e844ce8f2f291aa1b599d813d1fe068f87a749c257613f",
+      "locator": "Corollaries 4--6 for the separate original even-passport consequence"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_mixed_hurwitz_isolation.py",
+    "checker_sha256": "6763c1ebf292c314c3cf9b7f7f9de345beb0191143e4b832d0516b8bebc0336b",
+    "receipt": "research/arithmetic/mixed_hurwitz_isolation_verification.json",
+    "receipt_sha256": "afb4cacef189b4c6c8925d4e09dfd8691e842daf24f487fb0712f28779edf4b2",
+    "command": "python3 research/arithmetic/verify_mixed_hurwitz_isolation.py",
+    "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
+    "software": "Python 3.12.3; standard library only",
+    "deterministic_inputs": "Literal local formulas and all contracted one-contact owners; all Pruefer terminal trees and edge orders at sizes 3..5; paired paths at sizes 6,12,20; all smaller paired-tree orders with a five-vertex unique largest component; complete fixed-product mixed braid closures at N=3,5,7,9 compared to an exact class-character total and direct completion at N=5,7; complete pure domains N=5,7. All 56 oriented pure degree-seven core extensions have literal bridge words in the receipt.",
+    "scope": "Current internal pass: 3102 complete paired-tree orders, 103 unique-largest phase-alignment controls, exact local escape and 12 larger path/orientation controls; complete mixed base cardinalities 1,10,588,78732, exact marked closures 1,5,196,19683, all pure degree-five/seven orbits, one-anchor transport and exact Clifford lift calculations. Three invalid controls are rejected. No new census above degree nine."
+  },
+  "mathematical_review": {
+    "scope": "Internal dependency and argument audit only. Checked quantifiers, both gathering conventions, fixed common phase maps after complementary braids, unique-largest phase alignment, outside support in the five-move identity, exceptional pure cores, one-anchor transport, exact marked subgroup and fixed-product inner conventions.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "remaining_frontier": "No mathematical gap in the stated mixed one-3-cycle full-cycle domain is asserted. Independent mathematical review and historical comparison remain separate. Other index-two mixtures, non-full-cycle products and prescribed lifted branch elements are not classified by this theorem."
+}

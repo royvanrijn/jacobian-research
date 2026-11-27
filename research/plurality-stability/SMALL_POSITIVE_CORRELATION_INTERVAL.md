@@ -719,6 +719,10 @@ closed, and any sequence of global maximizers with correlations tending
 to an interior value has a subsequence converging in $L^2(\gamma_n)^k$
 to an ordinary global maximizer there.
 
+The existence, Lipschitz and compactness assertions hold in every fixed
+finite dimension $d\ge1$ by the same proof, replacing $n$ by $d$.
+For continuation of the simplex comparison we use $d=n=k-1$.
+
 To check existence and the last assertion with the balance constraints
 explicit, use the weakly compact convex set
 
@@ -785,3 +789,13 @@ remains the unrestricted objective. The large-correlation perimeter
 limit must also control moving maximizers and its error relative to
 their deformation; a pointwise limit for each fixed partition is
 insufficient for that purpose.
+
+The [positive-correlation continuation proof](POSITIVE_CORRELATION_CONTINUATION.md)
+extends regret-relative exterior control uniformly to every fixed range
+$0<\rho\le b<1$. Under a full-interface form that is nonnegative with
+only rotational zero modes at a fixed positive correlation, it proves a
+uniform local comparison for arbitrary measurable nearby partitions,
+including remote transfers. Consequently a finite first continuation
+endpoint has either a nonsimplex tied global maximizer or an additional
+nonrotational interface zero mode. Neither possibility is excluded; the
+interface-kernel hypothesis throughout $(0,1)$ remains open.

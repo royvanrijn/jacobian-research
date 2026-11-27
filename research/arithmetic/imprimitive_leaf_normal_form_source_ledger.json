@@ -58,7 +58,7 @@
     "receipt": "research/arithmetic/imprimitive_leaf_normal_form_verification.json",
     "scope": "Complete degree7 domain392 and all1134 leaf choices; actual normalization of all126 imprimitive inputs and common literal endpoints; all3072 ordered/twisted four-block controls with fixed root0/attachment3; deterministic arbitrary-label higher controls through r50; exact recursive and3-cycle identities."
   },
-  "remaining_frontier": "Theorem 20 of TERMINAL_MASS_HURWITZ_DESCENT.md proves pure-DT extraction in every odd degree N>=15. The retained degree-thirteen base, two-leaf absorption and exact marking removal establish residual pure-DT connectivity and an imprimitive-deletion representative in every residual orbit. Mixed polynomial connectivity and the original even-passport uniform classification remain open. These later conclusions do not enlarge the scope of this ledger's original checker or its recorded review assurances.",
+  "remaining_frontier": "Mixed isolation and connectivity are proved in MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md: one mixed fixed-product orbit in every odd degree N>=3, T isolation for N>=7 with a genuine N=5 boundary, removable DT extraction and arbitrary fresh-leaf restoration. The separate degree-nine mixed base bridges all four pure degree-seven cores. Together with pure-DT connectivity, the original even full-alternating passport is connected from degree eight. Independent review, refined lifted domains and arithmetic realization questions remain separate; no old checker scope is enlarged.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,

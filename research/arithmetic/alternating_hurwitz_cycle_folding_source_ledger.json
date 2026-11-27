@@ -96,7 +96,7 @@
     "declaration": "Corollary6. Uniform attachment transitivity",
     "checker": "research/arithmetic/verify_uniform_hurwitz_attachment.py",
     "receipt": "research/arithmetic/uniform_hurwitz_attachment_verification.json",
-    "scope": "Four literal degree7 marked polynomial stabilizers with complete attachment/splitting cable replay; elementary tree leaf-extension gives both marked attachment conditions for every r>=3. The later fixed-projection extraction and induction establish residual marked pure-DT connectivity; the marked mixed polynomial branch remains open.",
+    "scope": "Four literal degree7 marked polynomial stabilizers with complete attachment/splitting cable replay; elementary tree leaf-extension gives both marked attachment conditions for every r>=3. The later fixed-projection extraction and induction establish residual marked pure-DT connectivity; the separate mixed isolation theorem establishes the marked mixed branch.",
     "independent_replay": false,
     "formal_verification": false,
     "external_review": false

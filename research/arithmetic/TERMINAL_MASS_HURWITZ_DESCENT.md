@@ -32,11 +32,11 @@ factor extraction in every odd degree at least fifteen.
 
 This proof uses a minimum over the entire braid orbit and does not require
 monotonicity along a braid. It also supplies the extraction input to the
-existing pure-DT connectivity induction. The mixed three-cycle problem
-remains separate.
+existing pure-DT connectivity induction. The later [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) establishes the mixed three-cycle branch using the pure
+classification proved here as its lower-core input.
 The [overlap-one theorem](PAIRED_HURWITZ_LEAF_EXTRACTION.md#theorem-5-every-full-alternating-dt-tree-reaches-overlap-one)
 does not locate its overlap at the required outer endpoint, or control this
-complexity during its braid. The mixed three-cycle problem remains separate.
+complexity during its braid. The mixed three-cycle branch is proved separately in the [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration).
 
 ## Domain and literature comparison
 
@@ -940,7 +940,7 @@ factor is removable, so this is not a positive global minimum and
 does not refute the proposed global bridge. Lemma 19 instead uses stability
 of the antipodal projection under complementary braids to force an endpoint
 decrease in the remaining saturated family. This weaker phase-compatible
-example lacks that stability. Mixed connectivity remains separate.
+example lacks that stability. Mixed connectivity is proved separately in the [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration).
 
 ## Lemma 15. Equal-middle singleton cuts force a removable factor
 
@@ -1298,8 +1298,8 @@ gives precisely one outer contact with \(A\): neither antipodal middle
 root is hit. Lemma 3 lowers the mass. An earlier decrease already suffices.
 The proof uses pair conjugations, cut-preserving gathering, and a
 complementary twist; it need not establish invariance of the binary support
-code. Mixed connectivity, independent mathematical review and formal
-verification remain separate.
+code. Mixed connectivity is now proved in the [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration). Independent
+mathematical review and formal verification remain separate.
 
 ## The remaining plateau-escape obligation
 
@@ -1419,5 +1419,6 @@ The [receipt](terminal_mass_hurwitz_descent_verification.json) and
 [source ledger](terminal_mass_hurwitz_descent_source_ledger.json) record
 the replays and exact inputs. Extraction for every odd \(N\ge15\) and the
 resulting pure-DT connectivity are written mathematical conclusions. No new
-degree census, universal monotone plateau escape, mixed connectivity, formal
-verification, independent replay, external review or priority claim is asserted.
+degree census, universal monotone plateau escape, formal verification,
+independent replay, external review or priority claim is asserted. Mixed
+connectivity is established separately by the [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration).

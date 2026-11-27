@@ -405,7 +405,8 @@ uses a minimum over an entire braid orbit, without monotonicity along
 intermediate braids. Its fixed-projection contradiction excludes the last
 singleton family and proves extraction in every odd degree at least fifteen.
 The base and absorption theorem then give marked and unmarked pure-DT
-connectivity in every residual degree. Mixed connectivity remains open.
+connectivity in every residual degree. The later [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) establishes
+mixed connectivity by isolating the 3-cycle and normalizing its pure core.
 
 The [checker](verify_paired_hurwitz_leaf_extraction.py) verifies the
 literal identity, its pure strand action, every recursive step in

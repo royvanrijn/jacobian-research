@@ -1,0 +1,420 @@
+{
+  "scope": "First four Euclidean pivots of multiblock Gaussian merger limits; all starts, arbitrary block count, b_i>=1 and h_i>=0 with sum h_i>0. This does not prove all-order interlacing or unrestricted SFC.",
+  "third_pivot": {
+    "1111": {
+      "numerator": {
+        "terms": 5,
+        "degrees": [
+          4,
+          0,
+          0
+        ],
+        "minimum_coefficient": "62",
+        "constant": "3240",
+        "terms_sha256": "3fbe31db879d9036e2cd0cf7758ef5498a1ffd71a39568f05bd5d41390e5a722"
+      },
+      "denominator": {
+        "terms": 5,
+        "degrees": [
+          4,
+          0,
+          0
+        ],
+        "minimum_coefficient": "1",
+        "constant": "144",
+        "terms_sha256": "907d76b001624a1d5f9ba883c2d47636c79f83f78bd0ec6b0930b74fc5b475f2"
+      }
+    },
+    "211": {
+      "numerator": {
+        "terms": 21,
+        "degrees": [
+          6,
+          2,
+          0
+        ],
+        "minimum_coefficient": "27",
+        "constant": "9936",
+        "terms_sha256": "b82d9ff2b50b09f49b68521c4951f4337181b61a2366b76f958c4e2bc9a5ccb9"
+      },
+      "denominator": {
+        "terms": 21,
+        "degrees": [
+          6,
+          2,
+          0
+        ],
+        "minimum_coefficient": "1",
+        "constant": "864",
+        "terms_sha256": "018d7de69a00d01d41ac0574a02df50af3e135b49e0265a1132310e8ad21a8d0"
+      }
+    },
+    "22": {
+      "numerator": {
+        "terms": 81,
+        "degrees": [
+          8,
+          2,
+          2
+        ],
+        "minimum_coefficient": "22",
+        "constant": "59616",
+        "terms_sha256": "17e15ccdc1b2d7bf56d4cd5f27b78a33176eb271735196d105c27373e369b478"
+      },
+      "denominator": {
+        "terms": 81,
+        "degrees": [
+          8,
+          2,
+          2
+        ],
+        "minimum_coefficient": "2",
+        "constant": "10368",
+        "terms_sha256": "56f62ab6db73378f6bfe921cc5036427d6be2f016246290b3de00bf7279900d2"
+      }
+    },
+    "31": {
+      "numerator": {
+        "terms": 35,
+        "degrees": [
+          6,
+          4,
+          0
+        ],
+        "minimum_coefficient": "21",
+        "constant": "1728",
+        "terms_sha256": "2b5029e8eca024dd86f35e066f8fc10b68e468f7ec4a7d5464585ac1175ce08a"
+      },
+      "denominator": {
+        "terms": 35,
+        "degrees": [
+          6,
+          4,
+          0
+        ],
+        "minimum_coefficient": "3",
+        "constant": "432",
+        "terms_sha256": "705c211c97c5bd1145a866226302132002d3405c63f0140e8c52b45e7e35d59d"
+      }
+    },
+    "4": {
+      "numerator": {
+        "terms": 49,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "minimum_coefficient": "12",
+        "constant": "864",
+        "terms_sha256": "2163090af4a0a608da07b00b24afe45ac12c398623450e5c0bef6cf59af7b656"
+      },
+      "denominator": {
+        "terms": 49,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "minimum_coefficient": "12",
+        "constant": "864",
+        "terms_sha256": "3c388272de029eb0311838b3d6df76b3a70989e97558554d2c42199d1b72b955"
+      }
+    }
+  },
+  "fourth_pivot": {
+    "6": {
+      "numerator": {
+        "terms": 144,
+        "degrees": [
+          11,
+          11,
+          0,
+          0
+        ],
+        "minimum_coefficient": "144",
+        "constant": "4478976",
+        "terms_sha256": "fd922ea2a57abe0a8906c1f7575a0c8b3801c4cc72659642b4230f49d39eb187"
+      },
+      "denominator": {
+        "terms": 144,
+        "degrees": [
+          11,
+          11,
+          0,
+          0
+        ],
+        "minimum_coefficient": "144",
+        "constant": "4478976",
+        "terms_sha256": "6f03c77fa9bc8dc47ccf811635e2727339e727e68a495dd46587b735816f27bf"
+      }
+    },
+    "51": {
+      "numerator": {
+        "terms": 99,
+        "degrees": [
+          10,
+          8,
+          0,
+          0
+        ],
+        "minimum_coefficient": "312",
+        "constant": "5557248",
+        "terms_sha256": "34555988ffd28bd65cddbf05c5063f76c10463b7a9c348247e390c1f4cb32707"
+      },
+      "denominator": {
+        "terms": 99,
+        "degrees": [
+          10,
+          8,
+          0,
+          0
+        ],
+        "minimum_coefficient": "24",
+        "constant": "829440",
+        "terms_sha256": "b65b7b544de5d9c05db7e0dad98e60033738dbe0a6330377fc7c79e997629e10"
+      }
+    },
+    "42": {
+      "numerator": {
+        "terms": 405,
+        "degrees": [
+          14,
+          8,
+          2,
+          0
+        ],
+        "minimum_coefficient": "2160",
+        "constant": "6652772352",
+        "terms_sha256": "c652761f06fb0642cf7db32ea68c92a84459946bf22e34ea2b8160ca641abe0f"
+      },
+      "denominator": {
+        "terms": 405,
+        "degrees": [
+          14,
+          8,
+          2,
+          0
+        ],
+        "minimum_coefficient": "48",
+        "constant": "398131200",
+        "terms_sha256": "3228f89a1e432772b852887b282c2fb4e503ba9c6d060c6a16c0e90c7291901f"
+      }
+    },
+    "411": {
+      "numerator": {
+        "terms": 117,
+        "degrees": [
+          12,
+          8,
+          0,
+          0
+        ],
+        "minimum_coefficient": "2544",
+        "constant": "566009856",
+        "terms_sha256": "224a4e84de485e8318cc3d0a3ee5305662210f8ee3a3b0df2d7892c157e4a549"
+      },
+      "denominator": {
+        "terms": 117,
+        "degrees": [
+          12,
+          8,
+          0,
+          0
+        ],
+        "minimum_coefficient": "24",
+        "constant": "16588800",
+        "terms_sha256": "5fb63dbd4c6e43b9174bef4cb381c0832b92b4743c49100534730edc02cbde0d"
+      }
+    },
+    "33": {
+      "numerator": {
+        "terms": 350,
+        "degrees": [
+          13,
+          4,
+          4,
+          0
+        ],
+        "minimum_coefficient": "2556",
+        "constant": "6648293376",
+        "terms_sha256": "5d055d91e76fd01c16a47dca96537a94ad6a683c756679aab7ac328d8e3c890d"
+      },
+      "denominator": {
+        "terms": 350,
+        "degrees": [
+          13,
+          4,
+          4,
+          0
+        ],
+        "minimum_coefficient": "36",
+        "constant": "298598400",
+        "terms_sha256": "965c221ead24fc94a54224d11e2a7c9e3784fd13a870b8cd95daffa1e5a89482"
+      }
+    },
+    "321": {
+      "numerator": {
+        "terms": 195,
+        "degrees": [
+          12,
+          4,
+          2,
+          0
+        ],
+        "minimum_coefficient": "3228",
+        "constant": "5591669760",
+        "terms_sha256": "4d53039fb6661c0806d5788f3d6f0bcbc714d01d6d95dfef66e56d7ce1395feb"
+      },
+      "denominator": {
+        "terms": 195,
+        "degrees": [
+          12,
+          4,
+          2,
+          0
+        ],
+        "minimum_coefficient": "12",
+        "constant": "82944000",
+        "terms_sha256": "9992be2fe8a41b04a05448b277d10bf898e1b2b6475a22c723e3e8b098351f67"
+      }
+    },
+    "3111": {
+      "numerator": {
+        "terms": 55,
+        "degrees": [
+          10,
+          4,
+          0,
+          0
+        ],
+        "minimum_coefficient": "3648",
+        "constant": "468115200",
+        "terms_sha256": "8efdb2808d79bfe41cc0cb5f7f9a5444476db46fe7c6c598a1810acc58766242"
+      },
+      "denominator": {
+        "terms": 55,
+        "degrees": [
+          10,
+          4,
+          0,
+          0
+        ],
+        "minimum_coefficient": "6",
+        "constant": "3456000",
+        "terms_sha256": "94e0f7b9622b2b9bcb4b3f9f5cffd066b695a70d686a1e43ba269931c7a56b84"
+      }
+    },
+    "222": {
+      "numerator": {
+        "terms": 405,
+        "degrees": [
+          14,
+          2,
+          2,
+          2
+        ],
+        "minimum_coefficient": "3544",
+        "constant": "221891788800",
+        "terms_sha256": "babf4f7e4547d726ea01d7fd1610bfcec9f714d621ec7d6a36d23b2cf432c316"
+      },
+      "denominator": {
+        "terms": 405,
+        "degrees": [
+          14,
+          2,
+          2,
+          2
+        ],
+        "minimum_coefficient": "8",
+        "constant": "2211840000",
+        "terms_sha256": "3964f97dd98e6c10f9d1b5beb241c2f5d89a29d714cb1c4991118e0e5eaa8197"
+      }
+    },
+    "2211": {
+      "numerator": {
+        "terms": 117,
+        "degrees": [
+          12,
+          2,
+          2,
+          0
+        ],
+        "minimum_coefficient": "4056",
+        "constant": "18543974400",
+        "terms_sha256": "2ec0ae23e9828563add516030a39636a1813084229bb3afec3cb170f02e4afa8"
+      },
+      "denominator": {
+        "terms": 117,
+        "degrees": [
+          12,
+          2,
+          2,
+          0
+        ],
+        "minimum_coefficient": "4",
+        "constant": "92160000",
+        "terms_sha256": "6da2cb65df8ac04d502f2f369f275914b7d4e7d064926de5f30001d68983f94e"
+      }
+    },
+    "21111": {
+      "numerator": {
+        "terms": 33,
+        "degrees": [
+          10,
+          2,
+          0,
+          0
+        ],
+        "minimum_coefficient": "4558",
+        "constant": "1541376000",
+        "terms_sha256": "acfd22d84ad52e5d8c79fada360e222d71f5d9fa3c5b9aa9956e187c5dd53c1c"
+      },
+      "denominator": {
+        "terms": 33,
+        "degrees": [
+          10,
+          2,
+          0,
+          0
+        ],
+        "minimum_coefficient": "2",
+        "constant": "3840000",
+        "terms_sha256": "d434803985c0ac123729bf77bea3e7b8d740b935f1dfbf4a78f64279c8eb6a8a"
+      }
+    },
+    "111111": {
+      "numerator": {
+        "terms": 9,
+        "degrees": [
+          8,
+          0,
+          0,
+          0
+        ],
+        "minimum_coefficient": "5095",
+        "constant": "127656000",
+        "terms_sha256": "e90e22d8f687c9fe5cdac1a8a899fb4f46903901cb08cefaa98931c10d149ba0"
+      },
+      "denominator": {
+        "terms": 9,
+        "degrees": [
+          8,
+          0,
+          0,
+          0
+        ],
+        "minimum_coefficient": "1",
+        "constant": "160000",
+        "terms_sha256": "007c7631199cd83afeea2eaed4c776d551f581e49250a6e778e4e6534dd32c94"
+      }
+    }
+  },
+  "rational_control_pairs": 64,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "69396d955257178b9887cbe66b6b64f3e11469f48b7be22005f6c6507df83172",
+  "outcome": "PASS",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

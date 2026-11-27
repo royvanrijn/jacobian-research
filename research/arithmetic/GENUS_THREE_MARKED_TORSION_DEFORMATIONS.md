@@ -8,6 +8,9 @@ simple rational example, an infinite family with maximal rational
 three-torsion, or a rational-Weierstrass curve with three virtual
 directions. HG8 below does give a family transferring unbounded
 three-primary Sha, with a genus-two companion whose rank remains uncontrolled.
+HG9 explains why the present rational isogeny class cannot realize exact
+odd full torsion. HG10 completely classifies one repeated-factor gluing
+chart and excludes it from the rational-conic family search.
 
 ## Primary comparison and the actual target
 
@@ -281,6 +284,143 @@ the companion rank, Selmer groups or Sha groups. The result is an explicit
 classical quotient construction applied to the existing Mordell theorem,
 not a new general gluing method or a priority claim for large Sha.
 
+## A rational two-torsion obstruction to exact odd full torsion
+
+**Proposition HG9.** Let \(A/\mathbb Q\) be isogenous over
+\(\mathbb Q\) to a product of elliptic curves each having a nonzero
+rational point of order two. Every abelian variety over \(\mathbb Q\)
+isogenous to \(A\) has a nonzero rational point of order two.
+In particular no member of the rational isogeny class of HG1 has exact
+full torsion [3,3,3] or [3,9]. Moreover a rational non-split
+(2,2,2) gluing of three elliptic curves cannot yield exact odd full
+torsion.
+
+**Proof.** On each elliptic factor the mod-two Galois image fixes a
+nonzero vector, so is a subgroup of the order-two stabilizer in
+\(\operatorname{GL}_2(\mathbb F_2)\). The kernel of reduction from
+\(\operatorname{GL}_2(\mathbb Z_2)\) is pro-two. Consequently the
+Galois image on the product's two-adic Tate module is pro-two. A
+rational isogeny identifies the rational two-adic representations.
+Replacing the integral Tate lattice therefore still gives a finite
+two-group as the image on the new abelian variety's two-torsion.
+A two-group acting on a nonzero vector space over \(\mathbb F_2\)
+has a nonzero fixed vector: its nontrivial orbits on the odd-sized set
+of nonzero vectors have even size. This proves the first assertion.
+
+For the last assertion, [HLP, Lemma 13 and the paragraph following its
+proof, pp. 20–21](sources/howe-leprevost-poonen-split-jacobians.pdf)
+classify the non-split maximal isotropic gluing kernels and show that
+descent of such a kernel requires a rational nonzero \(Q_i\in E_i[2]\)
+on each factor. Thus the first assertion applies to the glued quotient.
+This is a consequence of the classical gluing classification, not a
+new obstruction to arbitrary constructions of Jacobians. In particular
+it does not exclude the even exact group [6,6], nor varieties outside
+this rational isogeny class. The marked-norm deformation problem must
+leave that class to reach exact [3,3,3].
+
+## Complete classification of a repeated marked factor
+
+Write the HG1 elliptic family in the coordinate \(U=X+1\) as
+\[
+ E_h:Y^2=U(U^2+A_hU+B_h),\qquad
+ A_h=h^2-3,\quad B_h=2h+3.
+\]
+For the particular repeated-factor chart set
+\[
+ h_1=h_2=(b-3)/2,\qquad h_3=(bs^2-3)/2,
+ \quad b,s\in\mathbb Q,
+\]
+using the marked two-torsion point \(U=0\) on all three factors.
+Exclude \(b=0,1,9\), \(s=0\), and singular third factors. Put
+\(A=(b^2-6b-3)/4\). The nondegenerate branch of HLP equation (10)
+with this marking has equation
+\[
+ 2(b^2-6b-3)(b^2s^4-6bs^2-3)
+       -s\bigl((b^2-6b-3)^2+64b\bigr)=0. \tag{11}
+\]
+Indeed with \(d_1=d_2\) the other sign in (10) would give
+\(A_3/d_3=1\), hence \(B_3=0\). On the displayed branch,
+\(A_3/d_3=(A^2+4b)/(A^2-4b)\). Together with
+\(A_3^2-d_3^2=4bs^2\) this gives
+\(d_3=s(A^2-4b)/(2A)\) after choosing the sign of \(s\), and
+\(2AA_3=s(A^2+4b)\), which is (11).
+The division by \(A\) loses no rational point, since its two roots
+\(b=3\pm2\sqrt3\) are irrational. Changing the two-torsion markings
+is outside this chart.
+
+**Proposition HG10.** The normalization of (11) is the elliptic
+curve
+\[
+             E:v^2=u^3+u^2-24u+36
+                    =(u+6)(u-2)(u-3).
+\]
+It has rank zero and rational group [2,4]. Its only admissible rational
+images \((b,s)\) are
+\[
+                 (6,-3/2),\qquad(-3/5,-3).
+\]
+For both images the HLP quotient conic has no real point. Thus this
+repeated marked factor chart provides no rational-conic gluing and
+cannot provide an infinite family of the requested kind.
+
+**Exact proof certificate.** Homogenize (11) with
+\((x:y:z)=(1:s:b)\), obtaining the irreducible degree-eight
+polynomial \(F_0\) in the retained checker. Apply two quadratic
+Cremona substitutions \(q\mapsto M_i(yz,xz,xy)^t\), with
+\[
+ M_1=\begin{pmatrix}0&0&1\\0&1&1\\1&0&1\end{pmatrix},
+ \qquad
+ M_2=\begin{pmatrix}-1&-1/2&1/8\\0&1&-3/4\\1&0&1\end{pmatrix}.
+\]
+After removing exceptional factors \(x^4y^4z^3\) and
+\(x^2y^3z^2\), and constant contents, the strict transforms have
+degrees five and three. The latter is the smooth cubic
+\[
+ 32x^3+144x^2y+162xy^2-96x^2z-216xyz
+                -81y^2z+72yz^2-16z^3=0,
+\]
+with flex \((0:1:0)\). Conversion with this flex gives the stated
+elliptic model. Exact descent proves rank zero; the torsion is [2,4].
+The eight rational points map to the following eight points on the
+original projective plane model:
+\[
+\begin{gathered}
+ (1:-3:-3/5),\ (0:1:0),\ (1:-3:1),\ (1:1:9),\\
+ (1:-3/2:6),\ (1:-1/3:9),\ (0:0:1),\ (1:2:0).
+\end{gathered}
+\]
+The checker extends the composed map at its base points by exact
+power-series arithmetic on the smooth cubic. Its three sections have
+degree four, so their vanishing orders are at most twelve; precision
+twenty suffices to recover their projective limits. Every rational
+singular point of the original plane model is outside the admissible
+chart, so no admissible rational point is lost on normalization.
+Excluding the stated degeneracies leaves exactly the two pairs above.
+
+Finally set \(\Delta=A^2-4b\), \(\Delta_3=A_3^2-4bs^2\),
+\(d_3=s\Delta/(2A)\) and \(R=\Delta d_3\). Substitution in
+HLP Proposition 14 gives conic coefficients
+\(d=e=1/(bs)\), \(f=-1/b\), with the required quartic signs.
+Thus the quotient conic is
+\[
+                     X^2+Y^2-sZ^2=0.
+\]
+Both admissible values of \(s\) are negative. These conics are
+definite and have no real, hence no rational, point. This excludes
+their presentation as double covers of a rational parameter line;
+it does not deny the existence of the hyperelliptic double covers
+of these anisotropic conics.
+
+The [retained exact checker](verify_genus_three_hlp_repeated_factor.py)
+passed with SageMath 10.9:
+```sh
+sage -python research/arithmetic/verify_genus_three_hlp_repeated_factor.py
+```
+Its scope is this chart, not the full three-factor gluing surface.
+The next infinite-family search must use a non-diagonal parameter
+curve or a different marking and separately certify rationality of
+its conic and nonconstant geometric moduli.
+
 ## Verification scope
 
 The replay command is the HG6 command, SageMath 10.9 with exact rational
@@ -292,3 +432,7 @@ between formal and rational families are written arguments. Independent
 replay, external mathematical review and formal verification are absent.
 HG8 has its separate symbolic replay above; its unboundedness conclusion
 retains MCT16's recorded proof and review scope.
+HG9 is the written pro-two Galois argument above using the retained
+HLP classification. HG10 has the separate exact replay above, including
+the proven rank-zero computation and all eight rational images. Neither
+result resolves the broad geometrically simple or infinite-family gaps.

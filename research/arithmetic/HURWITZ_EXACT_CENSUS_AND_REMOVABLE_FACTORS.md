@@ -35,7 +35,8 @@ below verifies the cardinalities directly on the fixed-product spaces,
 including the free quotient when \(N\) is composite. Equation (2)
 gives the size of the directly removable locus in
 \(\texttt{GAP-ARITH-HURWITZ-UNIFORM-REMOVABLE-DT-REPRESENTATIVE}\).
-Whether every braid orbit meets it remains open. [Goulden–Jackson, Theorems 3.1–3.2 and the last line of the proof](https://www-users.cse.umn.edu/~reiner/Classes/Math8680Fall2014Papers/GouldenJacksonOnCacti.pdf)
+The terminal-mass extraction theorem proves that every residual pure-DT orbit
+meets it. The later [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) proves the corresponding mixed extraction assertion. [Goulden–Jackson, Theorems 3.1–3.2 and the last line of the proof](https://www-users.cse.umn.edu/~reiner/Classes/Math8680Fall2014Papers/GouldenJacksonOnCacti.pdf)
 
 ## The class product as a finite difference
 
@@ -483,7 +484,8 @@ for odd \(N\ge15\), without an orbit-size hypothesis. Its fixed-projection
 argument excludes the last positive terminal-mass minimum. The
 degree-thirteen base and two-leaf absorption give pure-DT connectivity in
 all residual degrees. These conclusions add no new census or orbit-size
-bound and do not settle the marked mixed or even Laurent domain.
+bound. The later [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) establishes marked mixed connectivity, and the
+folding/attachment criterion then gives the even full-alternating passport.
 [Marked subgroup and braid action](UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md#the-spaces-and-the-exact-marked-subgroup)
 
 ## The even alternating Laurent passport

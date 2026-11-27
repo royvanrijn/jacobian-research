@@ -217,11 +217,13 @@ variables. Nonzero leading coefficients and squarefree \(P^2+1\)
 are necessary open conditions. These counts are a description of the
 system, not a dimension theorem or an obstruction to exceptional solutions.
 
-The next symbolic target is a simultaneous solution in a chart such
-as (S6), using the two factorization profiles for quintic rows and
-allowing mixed quadratic/quintic rows. The finite-field obstruction
-forbids accepting a good-at-five degree-seven model regardless of how
-many rows an algebraic solver returns. A characteristic-zero solution
+The [extension SN2](SEPTIC_PELL_NODAL_FIVE_OBSTRUCTION.md#all-multiplicities-at-five)
+excludes every model that is integral and degree-preserving at five,
+including the chart (S6). The next symbolic target requires a rational
+coefficient model outside that chart, using the two factorization profiles
+for quintic rows and allowing mixed quadratic/quintic rows.
+[SN3](SEPTIC_PELL_NODAL_FIVE_OBSTRUCTION.md#rational-models-outside-the-integral-chart)
+exhibits the full local three-torsion rank outside the integral chart. A characteristic-zero solution
 still needs five independent divided divisors; repeated or dependent
 rows do not qualify. It then needs a common integral specialization
 slice with all-prime virtuality, independence modulo the unit line,

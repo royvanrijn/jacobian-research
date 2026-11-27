@@ -292,9 +292,10 @@ every pure-DT orbit on odd \(N\ge15\) sheets contains a removable factor.
 Induct from the complete degree-thirteen pure-DT base: move the removable
 factor to the end by positive moves, delete its two exclusive leaves,
 normalize the lower tuple, then apply Theorem 1 at its two old anchors.
-Thus all residual pure-DT tuples lie in the canonical component. The separate
-mixed polynomial connectivity problem, and hence the original degree-sixteen
-and all-degree even-passport conclusions, remain open.
+Thus all residual pure-DT tuples lie in the canonical component. The later
+[mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) handles the mixed branch through 3-cycle isolation and one-anchor
+restoration, including the exact small exceptions. The two polynomial
+connectivity statements now complete the original even-passport criterion.
 
 ## Exact evidence and limits
 

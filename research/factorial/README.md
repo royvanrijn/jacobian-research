@@ -621,7 +621,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Physical coprimality for linked Gamma moments and a single shared unit gap | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_SHARED_UNIT_GAP_GAMMA_NUMERICAL_RANGE.md) |
 | Matched tanh angular response at simple roots of an arbitrary core | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_MATCHED_TANH_SIMPLE_CORE_ANGULAR_RESPONSE.md) |
 | Native Newton edges certify first-order angular separation under weak shared tails | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_NATIVE_NEWTON_ANGULAR_RESPONSE.md) |
-| Simultaneous mirrored merger limits and permutation matchings | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_MULTIBLOCK_MERGER_MATCHINGS.md) |
+| Mirrored merger limits, exact adjacent slot shifts and four positive Euclidean pivots | Internal result | proved | [Source](image-rigidity/SFC_PHYSICAL_MULTIBLOCK_MERGER_MATCHINGS.md) |
 | A primitive norm gate for common quadratic factors | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_PRIMITIVE_QUADRATIC_NORM_GATE.md) |
 | All-degree angular separation with a private side of large degree | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_ENTROPY_THIRTEEN.md) |
 | All-degree weak shared tails around a single private unit | Internal result | proved | [Source](image-rigidity/MULTIVARIATE_ONE_PRIVATE_UNIT_ALL_INTEGER_TWISTS.md) |
@@ -1072,7 +1072,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Explicit corner cutoffs for factorial families with nonliftable Gaussian zeros | Internal result | proved | [Source](image-rigidity/SFC_EXPLICIT_GAUSSIAN_NONLIFTING_CUTOFF.md) |
 | Two-moment multiplication closure and a modular marked-rank obstruction | Internal result | proved | [Source](image-rigidity/STEPANOV_AUXILIARY_DETERMINANTS_SFC2.md) |
 
-**Computed obligations:** 74 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 75 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:

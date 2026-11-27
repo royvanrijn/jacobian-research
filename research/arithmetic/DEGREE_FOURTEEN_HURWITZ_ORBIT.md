@@ -263,8 +263,8 @@ the retained alternating generating tuple. ∎
 The theorem classifies a finite Nielsen passport. It supplies no
 rational coefficients, rational point or unirational parametrization
 of its Hurwitz component, and no braid word identifying an unspecified
-algebraic polynomial with a particular tuple. Connectivity in degree
-sixteen and uniform connectivity remain open.
+algebraic polynomial with a particular tuple. Uniform connectivity is supplied by the later pure-DT extraction and
+[mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration); the finite census itself retains its exact degree range.
 
 For the residual pure-DT polynomial problem on \(N\ge15\) sheets,
 [Theorem 20 of the terminal-mass note](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-20-every-residual-pure-dt-orbit-admits-extraction)

@@ -5983,3 +5983,612 @@ ordinary pure power \(x^6\).
 The two-quartic transverse parts exclusion
 now applies after putting this affine output
 last. This proves \(e=0\).
+
+
+## The third-output mixed correction
+
+**Theorem SexticKellerDoubledSquareThirdMixedCorrectionExclusion.**
+In the doubled square-member weight-\((2,3,4)\) reduction, the
+coefficient \(j\) is zero.
+
+Suppose \(j\ne0\). The preceding exclusions give \(k=e=0\).
+Work over the algebraic closure and scale the third output by \(1/j\).
+Its weight-\((2,3,4)\) highest part is then \(x^6/j+x^3P\), with
+\(P=xz+y^2\). Denote the highest parts at subsequent weights by
+\(A,B,C\). At each weight used below the expected determinant
+weight, the sum of the three output weights minus the sum of
+the source weights, is positive. Thus the highest triple has
+rank at most two. For a first tie obtained by increasing the
+weight of a source variable absent from a binary triple, the
+image field identifies with that of the binary specialization.
+Indeed, both images have dimension two and the latter is a
+closed subset of the former after taking closures. Rational
+parameters of the binary image therefore lift as homogeneous
+rational functions of the same weights.
+
+### Axial weights up to three
+
+At weights \((1,1,w)\) with \(w>2\), the reference triple is
+\((x^4z^2,x^5z,x^4z)\). Comparison with the weight-\((2,3,4)\)
+support gives the following possible ties through \(w=4\).
+The ordinary degree bound is six.
+\[
+\begin{array}{c|lll}
+w&A&B&C\\ \hline
+5/2&&z^3&\\
+3&xz^3,\ yz^3&x^2z^2,\ xyz^2&xz^2,\ yz^2\\
+4&z^3&xz^2,\ yz^2&z^2
+\end{array}
+\]
+The support comparisons and determinant identities in this proof
+are reproduced by the [exact coefficient checker](check_sextic_doubled_square_third_mixed.py).
+Run it from the repository root with
+`.venv/bin/python research/jacobian/monodromy-theory/check_sextic_doubled_square_third_mixed.py`.
+The internal replay used SymPy 1.14.0 and Singular 4.3.2 over the rationals.
+
+At \(w=5/2\), suppose \(B=x^5z+\lambda z^3\) with
+\(\lambda\ne0\). The image field is \(k(x,z)\): use \(z=A/C\),
+\(x^4=C/z\), and \(x^5=(B-\lambda z^3)/z\).
+Increase the weight of \(y\) from one to its first tie, which
+occurs at or before \(7/4\) because \(x^2y^4\) occurs in the
+first output. Use \(x,z\) also for their rational lifts.
+At a pole of \(z\), the identity \(C=x^4z\) makes \(x\) regular,
+and \(\lambda z^3\) then dominates \(B\), impossible.
+At a pole of \(x\) of order \(m\ge1\), regularity of \(B\)
+forces \(\operatorname{ord}z\ge5m\) and thus
+\(\operatorname{ord}A\ge6m\). A homogeneous prime dividing \(A\)
+specializes at \(y=0\) to a nonzero polynomial of positive
+weight, and its sixth power cannot divide \(x^4z^2\).
+The lifts are polynomial. The lift of \(x\), of weight one,
+is unchanged. The only possible changes to the lift of \(z\)
+are adding a multiple of \(y^2\) at \(w_y=5/4\) or of \(xy\)
+at \(w_y=3/2\). Either change produces a term of ordinary degree
+eight in \(x^4z^2\) after substitution. Hence there is no first
+tie, contradicting the presence of \(x^2y^4\).
+This excludes \(\lambda\ne0\).
+
+At \(w=3\) write the possible highest triple as
+\[
+ \bigl(x^4z^2+(a x+\beta y)z^3,\quad
+       x^5z+(c x^2+\delta xy)z^2,\quad
+       x^4z+(e x+\varphi y)z^2\bigr).
+\]
+Three determinant coefficients give
+\[
+ -\beta-4\delta+6\varphi=0,\qquad
+ -5\beta\delta+5\beta\varphi+2\delta\varphi=0,\qquad
+ \beta\delta\varphi=0 .
+\]
+The last equation sets one variable to zero, the second sets
+another to zero, and the first sets the third to zero.
+
+The resulting binary image field is \(k(x,z)\) for all
+\(a,c,e\). In fact, put \(\theta=z/x^3\). The ratios
+\[
+ R=B^7/C^8=\frac{(1+c\theta)^7}{\theta(1+e\theta)^8},
+ \qquad S=A^4/B^5=\frac{\theta^3(1+a\theta)^4}{(1+c\theta)^5}
+\]
+have orders \((-1,3)\) at \(\theta=0\). No other place
+restricts to the same place of \(k(R,S)\). At a finite
+nonzero pole of \(R\), if \(c\ne e\) its pole order is
+eight and the order of \(S\) is zero or four. If \(c=e\)
+its pole order is one and \(S\) has a pole. At infinity
+\(R\) can have a pole only if \(e=0,c\ne0\). Its pole
+order is then six and the order of \(S\) is two or minus
+two. Since the pole at zero is simple and all residue
+fields are \(k\), the degree formula for places yields
+\(k(R,S)=k(\theta)\). Now \(B/C=x(1+c\theta)/(1+e\theta)\)
+recovers \(x\), and then \(z\).
+
+Increase \(w_y\) from one to the first tie, at most two
+because \(x^2y^4\) occurs in the first output. For a
+homogeneous prime write \(u=\operatorname{ord}x\) and
+\(v=\operatorname{ord}z\) for the rational lifts.
+If \(u<0\) and \(v>3u\), regularity of \(B\) gives
+\(v\ge-5u\). Then \(A\) has order at least \(-6u\),
+impossible since \(x z^2(x^3+a z)\) has no factor of
+multiplicity six. If \(u<0\) and \(v<3u\), the term of
+\(A\) of smallest valuation is unique and has a pole.
+If \(u<0\) and \(v=3u\), cancellation in all three
+outputs requires \(a=c=e\ne0\). Regularity of \(A\)
+forces \(\operatorname{ord}(x^3+a z)\ge-7u\), so \(C\)
+has order at least \(-3u\). Its binary specialization
+\(xz(x^3+a z)\) is squarefree, which is again impossible.
+These specialization arguments use that the relevant
+output restricts to a nonzero polynomial. Thus the
+weight-one lift of \(x\) is polynomial and is \(x\)
+itself.
+
+If \(a\ne0\) or \(e\ne0\), the lift of \(z\) is
+polynomial, since at any pole of \(z\) the \(a xz^3\)
+or \(e xz^2\) term has a strictly smaller and negative
+valuation than the other term in its output. Here
+\(\operatorname{ord}x\) is zero or one. A change to \(z\)
+of weight three can only add a multiple of \(y^2\) at
+\(w_y=3/2\) or of \(xy\) at \(w_y=2\).
+It gives a term of degree eight in \(x^4z^2\), while
+the substituted \(a xz^3\) has degree at most seven.
+No first tie is possible, so \(a=e=0\).
+
+If \(c\ne0\), the only possible pole of \(z\) is along
+\(x=0\) by \(C=x^4z\). The identity for \(B\) bounds it
+by a simple pole, so \(U=xz\) lifts polynomially.
+Its weight is four. Its possible corrections containing
+\(y\) are \(y^3\) at \(4/3\), \(xy^2\) at \(3/2\),
+and \(x^2y,y^2\) at two. Any ordinary cubic correction
+would give a term of degree eight in \(A=x^2U^2\).
+The only first tie is therefore at two and the lift is
+\(U=xz+y^2=P\), with coefficient fixed by the ordinary
+term \(2x^3y^2z\) of \(A\).
+At \((1,2,3)\) we would have highest triple
+\((x^2P^2,x^4P+cP^2,x^3P)\).
+
+For this putative triple, lower the weight \(s\) of \(x\)
+from one, with \(y,z\)-weights two and three, comparing
+to the reference \((x^2y^4,c y^4,x^3y^2)\).
+The only ties for \(0<s<1\) are
+\[
+\begin{array}{c|lll}
+s&A&B&C\\ \hline
+2/3&&&z^2,\ y^3\\
+1/2&z^3,\ y^3z&&xyz\\
+1/3&&&yz .
+\end{array}
+\]
+At \(s=2/3\) rank removes \(z^2\). If \(C=x^3y^2+d y^3\)
+with \(d\ne0\), the binary image field is \(k(x,y)\).
+The first two entries recover \(x^2,y^4\), and no
+nonidentity element of the group \(\mu_2\times\mu_4\)
+fixes \(C\), by comparing its two monomials.
+Use scaled weights \((2,6,9)\) and raise \(w_z\) to
+the first tie, at most ten by the term \(x^4z^2\).
+The lift of \(y\) is polynomial by \(y^4=B/c\) and
+cannot change by weight. The identity \(A=x^2y^4\)
+allows the lift of \(x\) poles only along \(y=0\),
+where \(x^3y^2+d y^3\) would then have a pole.
+Thus \(x\) also lifts polynomially and cannot change.
+This contradicts the tie. At \(s=1/2\) fix \(y\)
+and use the bracket of the resulting first and third
+outputs in \(x,z\). If the tying coefficients are
+\(a',b',c'\), respectively, the \(z^2,z^1,z^0\)
+coefficients, after nonzero monomial factors are removed,
+give \(a'=0,\ b'c'=0,\ 2c'-3b'=0\).
+At \(s=1/3\) the two unchanged outputs already have
+rank two in \(x,y\), excluding \(yz\).
+
+At \(s=0\) the first two outputs have weight at most eight
+with \(y^4\)-coefficients of degrees two and zero, the latter
+equal to \(c\). The third has form \(q(x)y^2+u(x)y+v(x)z+w(x)\)
+with \(\deg q=3\) and \(\deg v=4\). Apply the proof of the
+[two quartic transverse parts lemma](#an-affine-output-below-two-quartic-transverse-parts)
+with initial weights \((0,2,3)\) instead of \((0,3,4)\).
+The only initial extra highest term is \(yz^2\),
+and there is no intervening tie before \(w_z=4\).
+The comparison at four is again the weight-\((0,1,2)\)
+comparison, so the rest of that proof applies unchanged.
+This excludes \(c\ne0\) and completes the axial analysis
+through \(w=3\).
+
+
+### Axial weights four and five
+
+At \(w=4\) the first and third outputs are already independent
+in \(x,z\). Thus the possible \(yz^2\) term of \(B\) vanishes.
+The binary triple is
+\[
+      (x^4z^2+a z^3,\quad x^5z+b xz^2,\quad x^4z+c z^2).
+\]
+Increase the \(y\)-weight \(t\) through \(5/2\). The possible
+ties from the starting support and the axial exclusions are
+\[
+\begin{array}{c|lll}
+t&A&B&C\\ \hline
+5/3&&y^3z&\\
+2&y^2z^2,\ x^2yz^2&xy^2z,\ x^3yz&y^2z,\ x^2yz\\
+9/4&&y^4&\\
+7/3&xy^3z&x^2y^3&xy^3\\
+12/5&y^5&&\\
+5/2&x^2y^4,\ x^3y^2z&y^2z,\ x^4y^2&x^3y^2 .
+\end{array}
+\]
+At each row with only one monomial the other two binary
+entries are independent, as seen from their two-variable
+bracket at the smallest \(z\)-power. This removes that tie.
+
+At \(t=2\), write
+\[
+\begin{aligned}
+ A&=z^2(x^4+d y^2+f x^2y+a z),\\
+ B&=xz(x^4+g y^2+h x^2y+b z),\\
+ C&=z(x^4+i y^2+\ell x^2y+c z).
+\end{aligned}
+\]
+The determinant equations imply that all \(y\)-coefficients
+are zero, or that \(a=b=c=g=i=0,\ \ell=h,\ f=2h,\ d=h^2\).
+For the algebraic verification, let \(I\) be the ideal of the
+determinant coefficients over \(\mathbb Q\). The checker
+reduces each product of a generator of \((d,f,g,h,i,\ell)\)
+and a generator of \((a,b,c,g,i,\ell-h,f-2h,d-h^2)\)
+to zero modulo a Gröbner basis of \(\sqrt I\). Over the
+algebraic closure this forces one of the two stated cases.
+In the second case, put \(Q=x^2+h y\). If \(h\ne0\), the
+last two entries are \(B=x^3 z Q\), \(C=x^2 z Q\).
+They fix \(x\) and \(zQ\) on the generic fibre and hence
+the function field of the fibre is \(k(B,C)(z)\).
+The relative Jacobian differential for that pair is
+\[
+     \frac{dz}{J(B,C,z)}=\frac{1}{C x^2 h}\frac{dz}{z}.
+\]
+Its residue at \(z=0\) is nonzero, contradicting the
+[leading-pair rational slice](KELLER_LEADING_PAIR_RATIONAL_SLICE.md).
+Thus the tie at \(t=2\) disappears.
+
+At \(t=7/3\) use \(Y=y^3\) and denote the three new
+coefficients by \(d,e,f\). The determinant in \(x,Y,z\)
+has coefficients \(-d-4e+6f,\ -5de+5df+2ef,\ def\)
+at \(x^9z^2,\ x^6Yz,\ x^3Y^2\), respectively.
+Their vanishing forces \(d=e=f=0\).
+
+At \(t=5/2\) the ordinary leading terms fix the
+coefficients that recombine into \(P\). The tuple in
+\(x,P,z\) is
+\[
+ (x^2P^2+a z^3,\quad x^4P+b' xz^2+g Pz,\quad x^3P+c z^2)
+\]
+where \(b'=b-g\). The change to \(x,P,z\) has determinant
+\(2y\), so the determinant in \(x,P,z\) vanishes. Its
+coefficients at \(x^6Pz^2,\ x^5P^2z,\ x^4P^3,\ x^2Pz^3\)
+give \(3a=0,\ 4(2b'-3c)=0,\ 4g=0,\ -9ag-4b'c=0\).
+Consequently \(a=b'=c=g=0\), proving that at
+\((1,5/2,4)\) the highest tuple is
+\((x^2P^2,x^4P,x^3P)\).
+
+The latter weights bound the transverse degrees by
+\((2,2,1)\), with the coefficient of \(z^2\) in the
+second output at most constant in \(x,y\). If this
+coefficient is \(\lambda\ne0\), the highest triple at
+\((1,1,5)\) is
+\((x^4z^2,x^5z+\lambda z^2,x^4z)\). Its image field is
+again \(k(x,z)\), by \(z=A/C\) and recovery of \(x^4,x^5\).
+Raise the \(y\)-weight to the first tie, at most three
+by \(x^2y^4\). At an \(x\)-pole of order \(m\), \(C\)
+first forces \(\operatorname{ord}z\ge4m\), and \(B\)
+then forces \(\operatorname{ord}z\ge5m\). The latter
+gives order at least \(6m\) for \(A\) and contradicts
+binary specialization. Thus the lift of \(x\) is
+polynomial and unchanged. At any \(z\)-pole, the term
+\(\lambda z^2\) now dominates \(B\), so \(z\) also
+lifts polynomially. A change in that lift must have
+ordinary degree at least two, since no linear monomial
+in \(x,y\) has weight five. Such a change gives ordinary
+degree at least eight in \(A=x^4z^2\). There can be no
+first tie. This proves that the transverse degrees are
+\((2,1,1)\).
+
+### The exact bracket on the third-output fibres
+
+Let \(a_2,b_1,c_1\in k[x,y]\) be the respective highest
+\(z\)-coefficients. The weight-\((1,5/2,4)\) bound makes
+each at most linear in \(y\). On \(y=0\) their respective
+\(x\)-degrees are \(4,5,4\).
+The highest \(z\)-coefficient of the determinant of the
+actual map vanishes, so the triple
+\((a_2 z^2,b_1 z,c_1 z)\) has rank at most two.
+Fixing \(c_1 z\) gives algebraic dependence of
+\(a_2/c_1^2\) and \(b_1/c_1\) in \(x,y\).
+
+If \(T=b_1/c_1\) depends on \(y\), express \(a_2/c_1^2\)
+as a polynomial over \(k(x)\) in \(T\) of degree at
+most two. Indeed, for \(c_1\) nonconstant in \(y\),
+both \(1/c_1\) and \(a_2/c_1\) are affine in \(T\)
+by linear fractional inversion. For \(c_1\) independent
+of \(y\), \(T\) and \(a_2/c_1^2\) are affine in \(y\).
+The Jacobian in \(x,T\) then forces every coefficient
+of this polynomial to be constant. But on \(y=0\)
+its value has order four at \(x=\infty\), while
+\(T\) has a pole there. This is impossible. Thus
+\(T\in k(x)\), and \(T\) is nonconstant by its pole
+at infinity. The same Jacobian forces \(a_2/c_1^2\)
+to be independent of \(y\). Since \(a_2,c_1\) have
+\(y\)-degree at most one and \(a_2\ne0\), it follows
+that \(c_1\) and hence both \(a_2,b_1\) belong to
+\(k[x]\).
+
+On a level \(S\) of the actual third output solve
+for \(z\) over \(k(x)\). The other outputs become
+\[
+ G=p(x)S^2+r(x,y)S+u(x,y),\qquad
+ H=q(x)S+v(x,y),
+ \qquad p=a_2/c_1^2,\quad q=b_1/c_1,
+\]
+where \(r,u,v\in k(x)[y]\). Their \(x,y\) bracket at
+fixed \(S\) equals \(\det JF/c_1\), a nonzero function
+of \(x\). The \(S^2\) term gives \(r=h v+i(x)\) with
+\(h=p'/q'\). The \(S\) term gives
+\[
+             u=\frac{h'}{2q'}v^2+\frac{i'}{q'}v+j_0(x).
+\]
+The constant term in \(S\) is then
+\[
+      \left[\left(\frac{h'}{2q'}\right)'v^2+
+             \left(\frac{i'}{q'}\right)'v+j_0'\right]v_y .
+\]
+It is nonzero, so \(v\) has positive \(y\)-degree, and
+it has \(y\)-degree zero, forcing
+\((h'/q')'=0\). In characteristic zero this gives
+\(h=\alpha q+\beta\) and \(p=\alpha q^2/2+\beta q+\gamma\)
+for constants \(\alpha,\beta,\gamma\).
+The order of \(p\) at \(x=\infty\) is four and \(q\)
+has a pole there, a contradiction. This proves \(j=0\).
+
+
+## The second-output mixed correction
+
+**Theorem SexticKellerDoubledSquareSecondMixedCorrectionInversion.**
+In the doubled square-member weight-\((2,3,4)\) reduction,
+if \(k\ne0\), the map is invertible.
+
+By the preceding exclusions, \(j=e=0\).
+Work over the algebraic closure and scale the second output by \(1/k\).
+Write \(A,B,C\) for the highest entries at the weight under
+consideration. At weights \((s,3,4)\) just below \(s=2\) they are
+\((x^2y^4,xy^4,x^6)\).
+The following are all possible ties as \(s\) decreases strictly
+between two and zero. In this table the second entry has been
+scaled as above.
+\[
+\begin{array}{c|lll}
+s&A&B&C\\ \hline
+11/6&&&yz^2\\
+9/5&&&xy^3\\
+7/4&&&x^2yz\\
+5/3&&&y^2z\\
+8/5&&&xz^2\\
+3/2&yz^3,\ y^5&&y^3,\ x^2y^2,\ x^4y\\
+7/5&&&xyz\\
+4/3&&&z^2,\ x^3z\\
+6/5&&&xy^2\\
+7/6&&&yz\\
+1&y^2z^2,\ xy^3z&y^3z&y^2,\ x^2z,\ x^3y\\
+4/5&&&xz\\
+3/4&&&x^2y\\
+2/3&&&z\\
+3/5&&&xy\\
+1/2&y^3z&&y
+\end{array}
+\]
+The [exact checker](check_sextic_doubled_square_second_mixed.py)
+enumerates the support using ordinary degree at most six and
+the stated weight-\((2,3,4)\) highest tuple. It also checks the
+subsequent tie lists and the determinant coefficients used below.
+Run it from the repository root with
+`.venv/bin/python research/jacobian/monodromy-theory/check_sextic_doubled_square_second_mixed.py`.
+The internal replay used SymPy 1.14.0.
+
+At each tie here and below the expected determinant weight
+is positive, so the highest entries have rank at most two.
+When only \(C\) can tie and the tying monomials involve \(z\),
+the first two entries fix \(x,y\) algebraically and all those
+coefficients vanish.
+
+### Binary ties
+
+When a binary tie below changes the leading tuple, increase
+the weight of the unused variable \(z\) to the first further tie.
+In a frame \((s,3,4)\) with \(A\) containing \(x^2y^4\), this
+occurs at or before \(w_z=6-s\), by the ordinary term \(2x^3y^2z\).
+The expected determinant weight remains positive to this bound.
+The leading image field at the tie identifies with its binary
+specialization at \(z=0\) by the rank argument of the preceding
+section. Use this identification for the rational lifts below.
+
+First suppose \(A=x^2y^4,\ B=xy^4\) and
+\(C=x^6+\lambda x^a y^b\) with \(\lambda\ne0\) and \(b\) odd.
+This covers the isolated binary ties at \(9/5,3/4,3/5,1/2\),
+once the possible term of \(A\) at \(1/2\) is removed. At that
+last weight \(B,C\) are independent in \(x,y\), by the contribution
+of \(x^6\) to their bracket, and thus the term \(y^3z\) of \(A\)
+vanishes. In each odd case \(A/B=x\) and \(B/x=y^4\), and the
+last entry recovers \(y^b\), so the binary image field is \(k(x,y)\).
+If the lift of \(x\) has a pole, \(B\) forces the lift of \(y\)
+to have a zero there. The \(x^6\) term then gives a pole of \(C\),
+since \(a<6\). Thus the polynomial lift of \(x\) is unchanged by
+weight. A pole of \(y\) could occur only at \(x=0\), where
+\(\operatorname{ord}x=1\) and \(xy^4\) would have a pole.
+Thus \(y\) also lifts polynomially and is unchanged by weight.
+This contradicts the further tie.
+
+At \(s=3/2\), \(B,C\) are independent in \(x,y\), since the
+term \(x^6\) of \(C\) gives a nonzero monomial of their bracket
+with \(B=xy^4\). This removes \(yz^3\) from \(A\).
+The remaining possible binary tie is
+\[
+   (x^2y^4+a y^5,\quad xy^4,\quad
+                 x^6+c y^3+d x^2y^2+e x^4y).
+\]
+If \(a\ne0\), put \(\theta=y/x^2\) and \(T=A/B\).
+Two weight-zero ratios are
+\[
+     R=C/T^6=\frac{1+e\theta+d\theta^2+c\theta^3}{(1+a\theta)^6},
+       \qquad S=B/T^9=\frac{\theta^4}{(1+a\theta)^9}.
+\]
+The point \(\theta=0\) is the only point above its place in
+\(k(R,S)\), since the only other zero of \(S\) is infinity,
+where \(R=0\) instead of one. The degree of the extension
+therefore divides four. The unique pole of \(S\) has order
+nine, so the degree also divides nine. Consequently
+\(k(R,S)=k(\theta)\), and \(T=x(1+a\theta)\) recovers \(x\)
+and then \(y\). For their lifts an \(x\)-pole forces positive
+order of \(y\) by \(B=xy^4\), and then \(x^6\) gives \(C\)
+a pole. A \(y\)-pole of order \(m\) forces
+\(\operatorname{ord}x\ge4m\) by \(B\), so \(a y^5\)
+gives \(A\) a pole. Thus both lifts are polynomial and
+unchanged, contradicting the further tie. This excludes \(a\ne0\).
+With \(a=0\), if \(c\ne0\) or \(e\ne0\), the binary field is
+again full: the expression \(C\) has a trivial stabilizer
+in the fourth-root extension obtained by adjoining \(y\) to
+\(k(x,y^4)\). The same \(x\)-pole argument applies. Once \(x\)
+has lifted unchanged, \(B\) excludes a pole of \(y\).
+Thus only \(d x^2y^2\) in \(C\) can survive this tie.
+
+At \(s=1\) write the tuple as
+\[
+\begin{aligned}
+ A&=x^2y^4+a y^2z^2+b xy^3z,\qquad
+ B=xy^4+c y^3z,\\
+ C&=x^6+d y^2+e x^2z+f x^3y .
+\end{aligned}
+\]
+The determinant coefficients at \(x^7 y^6,x^6y^5z,x^4y^7,
+x^2y^5z^2,xy^8\) respectively give \(b=c,\ a=0,\ e=cf/4,\
+c^2 e=0,\ cd=0\), substituting the earlier equations as needed.
+If \(c=0\), this is a binary tie with \(e=0\).
+When \(f\ne0\) the field is full by the fourth-root argument,
+and regularity of the lifts follows as at \(3/2\) with \(a=0\).
+Thus for \(c=0\) only \(d y^2\) can survive.
+
+The quadratic binary corrections in \(C\) remaining at
+\(s=3/2,6/5,1\) are of the common form
+\[
+               C=x^6+\lambda x^m y^2,\qquad m=2,1,0
+\]
+respectively. Assume \(\lambda\ne0\).
+The binary field is \(k(x,Y)\) with \(Y=y^2\).
+At an \(x\)-pole, \(B=xY^2\) again forces \(Y\) to vanish,
+leaving a pole in \(C\). Thus \(x\) lifts as the unchanged
+polynomial \(x\), and \(B=xY^2\) excludes any pole of \(Y\).
+The lift of \(Y\), of weight six, can acquire a term containing
+\(z\) at a weight \(4<w_z\le6-s\) only in the form of a
+multiple of \(xz\), at \(w_z=6-s\). The ordinary coefficient
+of \(x^3 y^2 z\) in \(A=x^2Y^2\) fixes that multiple to one.
+The new highest tuple is
+\[
+                      (x^2P^2,xP^2,x^6+\lambda x^mP).
+\]
+
+### The three quadratic corrections
+
+For \(m=2\) scale the weights of the last tuple to \((1,2,3)\)
+and the third output by \(1/\lambda\). Lower \(w_x=s\)
+from one. Relative to \((x^2y^4,xy^4,x^2y^2)\) the only
+positive intermediate tie is at \(s=1/2\):
+the first entry can add \(a z^3+b y^3z\), the third \(e yz\).
+The determinant coefficients at \(x^2 y^5 z^2,x^2y^8,y^7z\)
+force \(a=0,\ 3b=2e,\ be=0\). Thus the tie disappears.
+At \(s=0\) the first two entries have weight at most eight,
+with \(y^4\)-coefficients \(p,r\) of degrees two and one.
+The third output is
+\[
+                         q(x)y^2+u(x)y+v(x)z+w(x)
+\]
+with \(\deg q=2,\ \deg v=3\).
+Use the proof of the
+[two quartic transverse parts lemma](#an-affine-output-below-two-quartic-transverse-parts)
+starting at weights \((0,2,3)\).
+Here the orders of \(p/q^2,r/q^2\) at infinity are two and
+three, so the same inequalities \(0<2<3<4\) distinguish all
+six orders of the monomials of degree at most two.
+The only extra initial term is \(yz^2\), with no intervening
+tie before the weight-\((0,1,2)\) comparison. The remainder
+of the lemma's proof uses the stated orders and \(\deg r\le1\).
+This excludes \(m=2\).
+
+For \(m=0\), the weights \((1,3,5)\) of the last tuple already
+put the third output in the displayed affine form, with \(q\)
+constant nonzero and \(v\) linear nonconstant.
+The [affine-output root restriction](#residues-and-coordinate-completion-for-the-affine-transverse-output)
+requires each root of \(v\) to be a root of \(q\), which is
+impossible.
+
+For \(m=1\), keep \(y,z\)-weights \(3,24/5\) and lower
+\(w_x=s\) from \(6/5\), scaling the third output by \(1/\lambda\).
+Relative to \((x^2y^4,xy^4,xy^2)\) the possible ties are
+\[
+\begin{array}{c|lll}
+s&A&B&C\\ \hline
+9/10&y^3z&&\\
+3/5&xy z^2&y z^2&\\
+3/10&y z^2&& .
+\end{array}
+\]
+At the isolated ties the unchanged \(B,C\) are independent
+in \(x,y\), so the tying coefficient is zero.
+At \(s=3/5\) write the corrections as \(a xy z^2,b y z^2\).
+On a fixed generic level \(C=t\), the first two entries
+are \(A=t^2+a t z^2/y\), \(B=t y^2+b y z^2\).
+If \(a\ne0\), eliminating \(z^2\) makes
+\(B=y^2(t+b(A-t^2)/(at))\) nonconstant at a generic fixed
+value of \(A\), contradicting rank. Thus \(a=0\).
+
+If \(b\ne0\), the leading pair \(B,C\) is independent.
+Over its generic values the fibre has equation
+\(z^2=\lambda_0/y+\mu_0 y\), with
+\(\lambda_0=B/b,\ \mu_0=-t/b\).
+The relative Jacobian differential is \(dy/(2b y^3 z)\).
+Modulo exact differentials, \(dy/(y^3 z)\) is the nonzero
+constant multiple \(-\mu_0/(3\lambda_0)\) of \(dy/(y z)\),
+since
+\[
+       d(z/y)=-\frac{3\lambda_0 y^{-3}+\mu_0 y^{-1}}{2z}\,dy .
+\]
+The latter form is regular on the complete normalization.
+The double cover is branched at zero, infinity and the two
+simple zeros of \(\lambda_0/y+\mu_0 y\). At zero the orders
+of \(y,z,dy\) are \(2,-1,1\), at infinity they are
+\(-2,-1,-3\), and at either simple zero they are \(0,1,1\).
+Every other point is regular for the displayed form.
+It is nonzero, so it cannot have a rational primitive on
+the complete curve: the derivative of a function with a
+pole has a pole, and a regular function on the complete
+curve is constant. This contradicts the
+[leading-pair rational slice](KELLER_LEADING_PAIR_RATIONAL_SLICE.md)
+and excludes \(b\ne0\).
+
+At \(s=0\) the third output now has the displayed affine form
+with \(q\) linear and \(v\) quadratic. Using the already
+established frame at \((1,5/2,4)\), the other coefficients
+have \(\deg u\le3,\ \deg w\le6\).
+The affine-output root restriction gives \(v\) proportional
+to \(q^2\), and \(u\) is a unit modulo \(v\), since a common
+root would force a multiple root of \(q\).
+Modulo \(v\) the substitution \(y\mapsto qy^2+uy+w\) has a
+polynomial inverse in the argument \(t\) of degree at most
+two by \(q^2=0\). In fact it is
+\((t-w)/u-(q/u)((t-w)/u)^2\) in this quotient.
+Lift its coefficients to degree at most one in \(x\),
+giving \(L(x,t)\) of total degree at most three.
+As in the coprime coordinate completion above,
+\[
+                 (x,C,(y-L(x,C))/v)
+\]
+is a polynomial coordinate system.
+Its inverse components in \(y,z\) have degrees at most
+three and five: use \(y=L+vh\) and
+\(z=(t-qy^2-uy-w)/v\) in coordinates \((x,t,h)\).
+The numerator in the last quotient has degree at most seven
+and is divisible by \(v\).
+Consequently the composed Keller map fixes \(t\) and the
+two other outputs have degree at most thirty. The
+[planar specialization and descent argument](LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md)
+with the retained planar bound proves invertibility over the
+original field. This settles the quadratic correction for \(m=1\).
+
+### Completion of the lower-weight analysis
+
+If \(c\ne0\) at \(s=1\), the coefficient identities give
+\(a=d=e=f=0,\ b=c\). For \(s<1\) just below that tie the
+reference tuple is \((cxy^3z,cy^3z,x^6)\).
+The only further positive ties are in the third output:
+\(xz,\ x^2y,\ z,\ xy,\ y\) at \(4/5,3/4,2/3,3/5,1/2\),
+respectively. At each, the first two entries fix \(x\)
+and \(y^3z\). The tying monomial is nonconstant in \(y\)
+at fixed \(x,y^3z\), so its coefficient is zero.
+Thus in this case \(C\) comes from an actual third output
+depending only on \(x\). If \(c=0\) at \(s=1\) and no
+quadratic correction survives anywhere, the binary
+exclusions likewise leave \(x^6\) as the highest third
+output down to arbitrarily small positive \(s\). This
+again forces the actual third output to depend only on \(x\).
+Its \(x\)-degree is six, so its derivative divides the
+Jacobian determinant and cannot be a nonzero constant.
+This contradiction exhausts the case \(k\ne0\).

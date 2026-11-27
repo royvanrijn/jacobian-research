@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_utc_date": "2026-11-27",
   "result_document": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
-  "assurance": "Internal written terminal-mass proofs and exact bounded controls. Lemma 19 excludes stability of a fixed two-to-one projection under all complementary braids for even t>=4; Theorem 20 excludes all positive global polynomial DT orbit minima for odd N>=15 and proves extraction without a monodromy hypothesis. Pure-DT connectivity follows with the retained degree-thirteen base and two-leaf absorption; mixed connectivity remains open. No independent replay, formal verification or external review.",
+  "assurance": "Internal written terminal-mass proofs and exact bounded controls. Lemma 19 excludes stability of a fixed two-to-one projection under all complementary braids for even t>=4; Theorem 20 excludes all positive global polynomial DT orbit minima for odd N>=15 and proves extraction without a monodromy hypothesis. Pure-DT connectivity follows with the retained degree-thirteen base and two-leaf absorption; mixed connectivity is established by the separate isolation theorem. No independent replay, formal verification or external review.",
   "declarations": [
     {
       "name": "Lemma 1. Terminal mass detects exactly the removable locus",
@@ -161,7 +161,7 @@
     "software": "Python 3.12.3; standard library only",
     "scope": "Existing 392-tuple degree-seven domain: 42 strict pruning controls in both bringing orders, 56 two-contact captures in both pair orders and 6720 weighted quotient comparisons. Additional period-two control, cyclic r=4,7,12,25 controls and literal degree-fifteen one-move capture. A second full-A15 witness has mass one in all24 pair/power cases covering every power of each initially adjacent pair, yet [-3,-4] gives1,1,0 and two new leaves. Invalid controls rejected."
   },
-  "remaining_frontier": "Pure-DT extraction, residual unmarked and exact marked connectivity, and the every-orbit imprimitive-deletion representative are established by the written fixed-projection argument and retained induction inputs. Mixed polynomial connectivity and original even-passport uniform connectivity remain open. Direct three-factor-window and stronger monotone plateau-escape strategies remain optional unresolved methods. Independent mathematical review of Lemma 19, its global-minimum application, and the induction dependencies is pending.",
+  "remaining_frontier": "Mixed isolation and connectivity are proved in MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md: one mixed fixed-product orbit in every odd degree N>=3, T isolation for N>=7 with a genuine N=5 boundary, removable DT extraction and arbitrary fresh-leaf restoration. The separate degree-nine mixed base bridges all four pure degree-seven cores. Together with pure-DT connectivity, the original even full-alternating passport is connected from degree eight. Independent review, refined lifted domains and arithmetic realization questions remain separate; no old checker scope is enlarged.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
@@ -169,7 +169,7 @@
     "checker": "research/arithmetic/verify_terminal_mass_three_factor.py",
     "checker_sha256": "265ecb6bb3565a89dce53d1374743f68135682fd99bcc2009038b5b486c45663",
     "receipt": "research/arithmetic/terminal_mass_three_factor_verification.json",
-    "receipt_sha256": "381b5a1f74ec98c36bbb9e8e4150457dd24785182e9eb70ca933c6ff2cfe650e",
+    "receipt_sha256": "b7dbbae906bb5200c2c3ada4c7bcd98c064f528e0a1d5f35510cca4b3799b5ea",
     "command": "python3 research/arithmetic/verify_terminal_mass_three_factor.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
@@ -181,7 +181,7 @@
     "checker": "research/arithmetic/verify_terminal_mass_global_compatibility.py",
     "checker_sha256": "d86754898e6567ca7023765300b947d0e702f4d71d85aa9879e38aee4a8f07fa",
     "receipt": "research/arithmetic/terminal_mass_global_compatibility_verification.json",
-    "receipt_sha256": "66ce5577d00b08ccf0f0bbba025956f6d643060d79159b2ac437301fc8eb5620",
+    "receipt_sha256": "e4718bcec1f6b4ee438eaf11be9baabc226696fcb57215359bd639006fbb545e",
     "command": "python3 research/arithmetic/verify_terminal_mass_global_compatibility.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
@@ -192,7 +192,7 @@
     "checker": "research/arithmetic/verify_terminal_mass_singleton_equal_cut.py",
     "checker_sha256": "d82814f5a9b55a86d391de91b7edd38814c98e2e897537a7a6c66131678c3f52",
     "receipt": "research/arithmetic/terminal_mass_singleton_equal_cut_verification.json",
-    "receipt_sha256": "d808f9cdab4f642814dd488120c3f9a65d2d6fd1797d832b2048de87d813d18c",
+    "receipt_sha256": "67980d042a8ab63b842165d99214f7ea83342ff502d340f2139e07223ad4c966",
     "command": "python3 research/arithmetic/verify_terminal_mass_singleton_equal_cut.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
@@ -208,6 +208,6 @@
     "software": "Python 3.12.3; standard library only",
     "deterministic_input": "All Pruefer trees and binary endpoint lift assignments for t=2..4; all labeled terminal trees and all DTs on 2t middle sheets for t=3..5 with normalized active lifts. Literal t=2 endpoint-exchange control. Five canonical saturated path trees with even t=4,6,8,12,16, opposite-half pairing of the last t middle path edges, and first-factor roots computed from complementary cycles.",
     "scope": "Internal exact checks of 1076 lift assignments, 82245 terminal-tree/MM pairs and five full-tree escape certificates including projection break, twist, outer contact and pruning. Independent endpoint conjugation cross-checks permutation composition. These bounded controls supplement universal written proofs and do not constitute a higher-degree census or independent review.",
-    "receipt_sha256": "0b155cdf80124f679fabfb02c462400fd4021a9ea9d5c9b227ed9d73a7bf3627"
+    "receipt_sha256": "237fa13c194e0f544c35c18511e2dd04825f047bd24e38105181c20fb57569d2"
   }
 }

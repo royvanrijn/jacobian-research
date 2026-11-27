@@ -6,9 +6,10 @@ The doubled edge can be placed in two adjacent branch permutations, with no
 other edge incident to the fixed sheet. Coalescing these two permutations
 then gives an odd-degree alternating polynomial tuple.
 
-This is a uniform normal-form reduction. It does not prove one complex
-Hurwitz component in degree twelve or higher: connectivity of the remaining
-colored-tree forms, and compatibility of their expansions, remain open here.
+This is a uniform normal-form reduction. Its connectivity premises are now
+supplied by the terminal-mass pure-DT theorem and the [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration). Together with
+the attachment and cross-type results below, these give one absolute
+full-alternating component in every even degree at least eight.
 
 ## Theorem 1. The unicyclic graph and fixed-sheet trajectory
 
@@ -408,7 +409,8 @@ trees with one marked adjacent doubled-edge expansion. To obtain
 uniform braid transitivity by degree induction one still needs, for
 example, a valid operation producing a block with two leaf edges whose
 leaf labels occur nowhere else, followed by control of the reduced
-orbit and all expansion choices. No such operation is proved here.
+orbit and all expansion choices. The later [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) supplies isolation, removable-DT extraction and restoration
+for the mixed branch; the terminal-mass theorem supplies pure-DT extraction.
 
 The polynomial-cactus viewpoint is established prior work. Jones and
 Zvonkin's [primary article](https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf),

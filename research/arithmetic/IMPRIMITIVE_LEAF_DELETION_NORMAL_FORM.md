@@ -269,8 +269,8 @@ proves removable-factor extraction in every orbit. The complete
 degree-thirteen base and two-leaf absorption then put every such orbit in
 the canonical component. In particular each orbit meets the imprimitive
 deletion locus classified here; this is an orbit-level conclusion and does
-not assert that an initial leaf deletion is already imprimitive. Mixed
-polynomial connectivity remains separate.
+not assert that an initial leaf deletion is already imprimitive. The later
+[mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) establishes the separate mixed branch.
 
 ## Exact verification
 

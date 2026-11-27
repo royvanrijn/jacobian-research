@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_utc_date": "2026-11-18",
   "result_document": "research/arithmetic/UNMARKED_POLYNOMIAL_HURWITZ_REDUCTION.md",
-  "assurance": "Internal mathematical proof and exact finite controls; no uniform unmarked connectivity or rational-point claim.",
+  "assurance": "Internal mathematical proof and exact finite controls; the separate later pure and mixed theorems establish uniform unmarked connectivity; no rational-point claim.",
   "declarations": [
     {
       "name": "Lemma1. The allowed generators give the full strand stabilizer",
@@ -46,7 +46,7 @@
     "receipt": "research/arithmetic/unmarked_polynomial_hurwitz_reduction_verification.json",
     "scope": "Exact tuple/product/stabilizer/label checks at r2,3,4,5,6,7,12,25,50; completeSr quotient adjustments r2..7. The subgroup equality and uniform results have written proofs."
   },
-  "remaining_frontier": "Theorem 20 of TERMINAL_MASS_HURWITZ_DESCENT.md proves pure-DT extraction in every odd degree N>=15. The retained degree-thirteen base, two-leaf absorption and exact marking removal establish residual pure-DT connectivity and an imprimitive-deletion representative in every residual orbit. Mixed polynomial connectivity and the original even-passport uniform classification remain open. These later conclusions do not enlarge the scope of this ledger's original checker or its recorded review assurances.",
+  "remaining_frontier": "Mixed isolation and connectivity are proved in MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md: one mixed fixed-product orbit in every odd degree N>=3, T isolation for N>=7 with a genuine N=5 boundary, removable DT extraction and arbitrary fresh-leaf restoration. The separate degree-nine mixed base bridges all four pure degree-seven cores. Together with pure-DT connectivity, the original even full-alternating passport is connected from degree eight. Independent review, refined lifted domains and arithmetic realization questions remain separate; no old checker scope is enlarged.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

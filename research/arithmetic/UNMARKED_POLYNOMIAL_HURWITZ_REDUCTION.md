@@ -7,9 +7,9 @@ and a literal braid stabilizer that cycles every finite branch label.
 The case with one 3-cycle has a distinguished branch type already.
 
 This reduces the uniform connectivity problem for the original even-degree
-passport to two unmarked polynomial-cactus connectivity problems. The later
-terminal-mass theorem resolves the pure-DT branch; the mixed branch remains
-open. The stabilizer arguments here supply marking removal.
+passport to two unmarked polynomial-cactus connectivity problems. The terminal-mass theorem resolves the pure-DT branch, and the later
+[mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) resolves the mixed branch. The stabilizer arguments here supply
+marking removal. Both premises of the even-passport criterion are now proved.
 
 ## The spaces and the exact marked subgroup
 
@@ -259,7 +259,10 @@ complementary braid stability is incompatible with the fixed projection in
 the last singleton family. Every pure-DT orbit contains a removable factor.
 The degree-thirteen base and two-leaf absorption give unmarked X_D
 transitivity for every residual degree; Theorem 4 then gives the exact marked
-assertion. The separate X_T assertion remains open.
+assertion. The separate [mixed isolation and connectivity theorem](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md#theorem-m7-all-degree-mixed-connectivity-extraction-and-restoration) proves X_T transitivity in every degree,
+with a degree-five isolation boundary and the explicit degree-nine mixed base.
+Corollary 5 and the retained degree-eight base therefore give one absolute
+full-alternating orbit for every original even degree at least eight.
 
 ## Exact evidence and scope
 
