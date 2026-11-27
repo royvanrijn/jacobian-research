@@ -6,16 +6,9 @@ nonbinary quartic, and the basepoint of the line pencil is
 \([0:0:1]\).
 
 **Theorem SexticKellerHighTransverseQuarticFactorReduction.**
-For a characteristic-zero three-variable Keller completion,
-the \(z\)-degree of \(g\) can only be one or three. If it
-is three, then the whole map has \(z\)-degree three. In
-an affine binary source frame write
-\[
-               F=z^3 A(x,y)+z^2 B(x,y)+zC(x,y)+D(x,y).
-\]
-Then \(A=\ell(x,y)\nu(x,y)\) with \(\ell\) a nonzero
-homogeneous linear form, \(B\) has no terms of degree
-less than two, and \(C(0,0)=0\).
+If \(g(x,y,z)\nu(x,y)\) is the highest tuple of a
+characteristic-zero three-variable Keller map, then
+\(\deg_z g=1\).
 
 **Theorem SexticKellerNonbinaryQuarticLineWeightTwoReduction.**
 Suppose \(\deg_z g=1\), write \(g=z\beta(x,y)+g_4(x,y)\),
@@ -183,7 +176,12 @@ The equality follows by substituting
 \(B_1=(2ax, ay+bx,2by)\).
 Hence \(B_1=0\). The degree-four part of the same coefficient
 now reduces to \(\det(A_x,A_y,C_0)=0\), so \(C_0=0\).
-This proves the first theorem.
+In the centered binary source frame write the map as
+\(F=z^3A(x,y)+z^2B(x,y)+zC(x,y)+D(x,y)\).
+We have \(A(0,0)=B(0,0)=C(0,0)=0\), so \(F(0,0,z)=D(0,0)\).
+Consequently \(\partial_z F\) vanishes along this affine line,
+contradicting the nonzero Jacobian determinant. This excludes
+\(s=3\) and leaves \(s=1\).
 
 ## Weight-two parameters when the quartic factor is linear in \(z\)
 

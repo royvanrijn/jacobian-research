@@ -1070,8 +1070,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Three factorial moments suffice at starts 2^k-6 of the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_EARLIER_DYADIC_WINDOWS.md) |
 | Three factorial moments suffice at starts 2^k-7 of the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_EARLIER_DYADIC_WINDOWS.md) |
 | Explicit corner cutoffs for factorial families with nonliftable Gaussian zeros | Internal result | proved | [Source](image-rigidity/SFC_EXPLICIT_GAUSSIAN_NONLIFTING_CUTOFF.md) |
+| Two-moment multiplication closure and a modular marked-rank obstruction | Internal result | proved | [Source](image-rigidity/STEPANOV_AUXILIARY_DETERMINANTS_SFC2.md) |
 
-**Computed obligations:** 73 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 74 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -1200,8 +1201,9 @@ Scope limits:
 - The D=1 monomial triangle has an all-order simplex recurrence. Four moments suffice in every window and three suffice at each odd-prime-power window start; the remaining three-moment windows stay explicit.
 - Gaussian common zeros need not prevent a fixed-window corner theorem. For offsets (0,9k),(3k,6k),(4k,5k),(9k,0) at every fixed positive integer k, two genuine Gaussian zeros cannot lift: the integral forced difference is k+2k^3 and the fifth jet is nonzero. A nonreal next height correction excludes real gamma heights as well. Orders 1,2,3,5 are not consecutive, and no numerical or uniform-in-k cutoff is claimed.
 - The four-column nonlifting family has an explicit sufficient cutoff H(k). At k=1, both heights greater than 2^373029362779174993920000137 ensure nonvanishing among orders 1,2,3,5. This enormous theoretical bound follows from Basu–Roy and does not compute the exceptional set. Every already excluded odd-start trinomial Gaussian window also has an explicit support-dependent cutoff; all remaining odd starts stay open.
-- Every odd prime-power start has a zero-free quadratic Gaussian window and a computable independent-height corner exclusion for each fixed homogeneous bivariate trinomial support. Internal shared edges no longer require a character restriction. For q=(2k+1)p^e with p>4k+2 the final-residue proof gives the sufficient condition e=1 or (2/p)=-1 or p not dividing T_k, settling q=5*13^e for every e>=1. General odd starts remain open; q=9*89^e,e>=2 retains a positive-character common residue at Z=64.
+- Every dominant initial-prime start q=(2k+1)p^e with k>=0,e>=1 and p>4k+2 has a zero-free quadratic Gaussian window, without character or resultant exceptions. The second secondary layer excludes the positive-character cases, including every q=9*89^e. Fixed homogeneous trinomial supports inherit computable corner cutoffs at those starts. Unrestricted odd starts remain open.
 - The initial homogeneous trinomial window is also excluded at span 81 for a=1,2,40,80: the full remainder gcd is harmless and the reduced S is positive. The universal harmless-gcd assertion and finite-candidate exclusion at other supports remain open.
+- The finite-zeta determinant comparison identifies a missing common-factor transfer lemma. An exact fully shared profile at N=15,p=127 has zero moments 14,15 and a full-rank marked Hankel matrix. Coefficient multiplication preserves the original gcd corank. The global common-factor amplification remains open; ordinary univariate binomials remain closed.
 
 Tracked obligations (computed states):
 
@@ -1250,5 +1252,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Can moving-center jet minors rule out all sufficiently deep exact zero windows for each bivariate phase with a strictly isolated effective slope?](image-rigidity/SFC_DEEPEST_RATIONAL_ORDER_WINDOWS.md) — GAP-SFC-DEEPEST-ORDER-JET-MINORS
 - **mathematical / open:** [Prove a sufficient carry lift for factorial subsums at prime 41 through all jumps of size at least eight, including unbounded jump sizes. The exact one-block and two-block proof covers all jumps through size seven. A uniform covering proof would give f(1,41)=infinity and solve the existence question in Erdős #404.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-PRIME41-UNBOUNDED-JUMPS
 - **mathematical / open:** [Can the full two-remainder gcd be proved nonvanishing at all nonnegative heights for every integer support, leaving direct finite height elimination without an analytic cutoff?](image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md) — GAP-SFC-HOMOGENEOUS-TRINOMIAL-HARMLESS-GCD
+- **mathematical / open:** [Can a genuine characteristic-zero common factor of two multivariate binomial moments force a multiplication-compatible modular evaluation identity and a useful auxiliary rank defect? Plain multiplication and two local zeros do not suffice.](image-rigidity/STEPANOV_AUXILIARY_DETERMINANTS_SFC2.md) — GAP-FACTORIAL-MULTIVARIATE-MOMENT-AMPLIFICATION-TRANSFER
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

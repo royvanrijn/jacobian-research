@@ -163,10 +163,381 @@
       "character": -1
     }
   ],
+  "second_layer_cases": [
+    {
+      "k": 1,
+      "prime": 7,
+      "exponent": 2,
+      "start": 147,
+      "character": 1,
+      "first_gap": "4/7",
+      "next_gap": "5/7",
+      "odd_even_ratios": [
+        1,
+        2
+      ],
+      "even_inventory": [
+        4,
+        11,
+        25,
+        53,
+        60,
+        74
+      ],
+      "odd_inventory": [
+        4,
+        11,
+        25,
+        26,
+        53,
+        60,
+        74,
+        75
+      ],
+      "coefficients_enumerated": 150,
+      "independent_unit_checks": 24,
+      "perturbation_margin": "6/49",
+      "leading_residue_gcd": [
+        1
+      ],
+      "next_compatibility_gcd": [
+        1
+      ]
+    },
+    {
+      "k": 1,
+      "prime": 7,
+      "exponent": 4,
+      "start": 7203,
+      "character": 1,
+      "first_gap": "4/7",
+      "next_gap": "5/7",
+      "odd_even_ratios": [
+        1,
+        2
+      ],
+      "even_inventory": [
+        172,
+        515,
+        1201,
+        2573,
+        2916,
+        3602
+      ],
+      "odd_inventory": [
+        172,
+        515,
+        1201,
+        1202,
+        2573,
+        2916,
+        3602,
+        3603
+      ],
+      "coefficients_enumerated": 7206,
+      "independent_unit_checks": 24,
+      "perturbation_margin": "2687/2401",
+      "leading_residue_gcd": [
+        1
+      ],
+      "next_compatibility_gcd": [
+        1
+      ]
+    },
+    {
+      "k": 3,
+      "prime": 17,
+      "exponent": 3,
+      "start": 34391,
+      "character": 1,
+      "first_gap": "9/17",
+      "next_gap": "10/17",
+      "odd_even_ratios": [
+        1,
+        2
+      ],
+      "even_inventory": [
+        145,
+        434,
+        2457,
+        5058,
+        5347,
+        7370,
+        9971,
+        10260,
+        12283,
+        14884,
+        15173,
+        17196
+      ],
+      "odd_inventory": [
+        145,
+        434,
+        2457,
+        2458,
+        5058,
+        5347,
+        7370,
+        7371,
+        9971,
+        10260,
+        12283,
+        12284,
+        14884,
+        15173,
+        17196,
+        17197
+      ],
+      "coefficients_enumerated": 34394,
+      "independent_unit_checks": 48,
+      "perturbation_margin": "8345/9826",
+      "leading_residue_gcd": [
+        1
+      ],
+      "next_compatibility_gcd": [
+        1
+      ]
+    },
+    {
+      "k": 4,
+      "prime": 41,
+      "exponent": 2,
+      "start": 15129,
+      "character": 1,
+      "first_gap": "21/41",
+      "next_gap": "22/41",
+      "odd_even_ratios": [
+        1,
+        2
+      ],
+      "even_inventory": [
+        21,
+        62,
+        841,
+        1702,
+        1743,
+        2522,
+        3383,
+        3424,
+        4203,
+        5064,
+        5105,
+        5884,
+        6745,
+        6786,
+        7565
+      ],
+      "odd_inventory": [
+        21,
+        62,
+        841,
+        842,
+        1702,
+        1743,
+        2522,
+        2523,
+        3383,
+        3424,
+        4203,
+        4204,
+        5064,
+        5105,
+        5884,
+        5885,
+        6745,
+        6786,
+        7565,
+        7566
+      ],
+      "coefficients_enumerated": 15132,
+      "independent_unit_checks": 60,
+      "perturbation_margin": "737/1681",
+      "leading_residue_gcd": [
+        1
+      ],
+      "next_compatibility_gcd": [
+        1
+      ]
+    },
+    {
+      "k": 4,
+      "prime": 89,
+      "exponent": 2,
+      "start": 71289,
+      "character": 1,
+      "first_gap": "45/89",
+      "next_gap": "46/89",
+      "odd_even_ratios": [
+        1,
+        2
+      ],
+      "even_inventory": [
+        45,
+        134,
+        3961,
+        7966,
+        8055,
+        11882,
+        15887,
+        15976,
+        19803,
+        23808,
+        23897,
+        27724,
+        31729,
+        31818,
+        35645
+      ],
+      "odd_inventory": [
+        45,
+        134,
+        3961,
+        3962,
+        7966,
+        8055,
+        11882,
+        11883,
+        15887,
+        15976,
+        19803,
+        19804,
+        23808,
+        23897,
+        27724,
+        27725,
+        31729,
+        31818,
+        35645,
+        35646
+      ],
+      "coefficients_enumerated": 71292,
+      "independent_unit_checks": 60,
+      "perturbation_margin": "3737/7921",
+      "leading_residue_gcd": [
+        25,
+        1
+      ],
+      "next_compatibility_gcd": [
+        1
+      ]
+    },
+    {
+      "k": 4,
+      "prime": 89,
+      "exponent": 3,
+      "start": 6344721,
+      "character": 1,
+      "first_gap": "45/89",
+      "next_gap": "46/89",
+      "odd_even_ratios": [
+        1,
+        2
+      ],
+      "even_inventory": [
+        3961,
+        11882,
+        352485,
+        708930,
+        716851,
+        1057454,
+        1413899,
+        1421820,
+        1762423,
+        2118868,
+        2126789,
+        2467392,
+        2823837,
+        2831758,
+        3172361
+      ],
+      "odd_inventory": [
+        3961,
+        11882,
+        352485,
+        352486,
+        708930,
+        716851,
+        1057454,
+        1057455,
+        1413899,
+        1421820,
+        1762423,
+        1762424,
+        2118868,
+        2126789,
+        2467392,
+        2467393,
+        2823837,
+        2831758,
+        3172361,
+        3172362
+      ],
+      "coefficients_enumerated": 6344724,
+      "independent_unit_checks": 0,
+      "perturbation_margin": "1370153/1409938",
+      "leading_residue_gcd": [
+        25,
+        1
+      ],
+      "next_compatibility_gcd": [
+        1
+      ]
+    },
+    {
+      "k": 2,
+      "prime": 13,
+      "exponent": 3,
+      "start": 10985,
+      "character": -1,
+      "first_gap": "7/13",
+      "next_gap": "8/13",
+      "odd_even_ratios": [
+        12,
+        11
+      ],
+      "even_inventory": [
+        85,
+        254,
+        1099,
+        2282,
+        2451,
+        3296,
+        4479,
+        4648,
+        5493
+      ],
+      "odd_inventory": [
+        85,
+        254,
+        1099,
+        1100,
+        2282,
+        2451,
+        3296,
+        3297,
+        4479,
+        4648,
+        5493,
+        5494
+      ],
+      "coefficients_enumerated": 10988,
+      "independent_unit_checks": 36,
+      "perturbation_margin": "3521/4394",
+      "leading_residue_gcd": [
+        11,
+        1
+      ],
+      "next_compatibility_gcd": [
+        1
+      ]
+    }
+  ],
   "straightening_remainder_coefficients": 6948,
   "exact_13_certificate": "254/45 = 12 modulo 13; incompatible lift corrections 9 and 4",
   "exact_wronskian": "90*(B'*A-A'*B)=(Z-2)^2+13*(Z+2)",
-  "retained_residue_control": "q=9*89^e, e>=2: common residue survives this first compatibility layer",
-  "corruption_control": "incorrect positive inter-row phase at p=13 rejected by exact coefficient residues",
+  "exact_89_certificate": "at Z=64: A'=14, B'=21, -2*Z*A'*B'=15 modulo 89; next gap 46/89",
+  "exact_first_compatibility": "B'*P_k(Z)-A'*P_k(2Z)=B'*A-A'*B over Q; checked k=1 through 9",
+  "retained_residue_control": "q=9*89^e: first compatibility survives; next layer excludes the common residue",
+  "corruption_control": "incorrect first-layer phase at p=13 and next-layer ratio 1 at p=89 are rejected",
   "assurance": "internal replay; no independent review or formal verification"
 }

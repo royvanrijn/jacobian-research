@@ -8,11 +8,16 @@ minimizing. Arbitrary external trees compress to five weights for two
 factors and seven weights for three factors, retaining the distinct
 endpoint labels and their component memberships. A complete three-factor
 calculation below gives eight inequalities valid at every weighting of
-the plateau example's local pattern.
+the plateau example's local pattern. Complementary full twists impose
+simultaneous cyclic contact conditions on a minimizing factor's three
+cut components. These global conditions exclude small positive orbit
+minima and strongly restrict the terminal component sizes.
 
 These statements do **not** yet prove extraction from every full-alternating
 tuple. The principal remaining objective is to exclude a positive minimum
 over an entire braid orbit. This needs no monotonicity along a braid.
+Theorem 10 and Corollary 11 below give necessary global compatibility
+conditions, not that complete exclusion.
 The [overlap-one theorem](PAIRED_HURWITZ_LEAF_EXTRACTION.md#theorem-5-every-full-alternating-dt-tree-reaches-overlap-one)
 does not locate its overlap at the required outer endpoint, or control this
 complexity during its braid. The mixed three-cycle problem remains separate.
@@ -565,6 +570,199 @@ test may miss a decrease in an outside factor. The positive local
 minimum in the proper order-168 degree-seven control shows that an
 unqualified assertion about all DT trees would be false.
 
+## Lemma 9. Complementary twists develop the three cuts simultaneously
+
+Suppose a tuple attains a positive global orbit minimum \(m\), and
+\(A\) is a minimizing factor. There is a representative with \(A\)
+in the first position, possibly conjugated, with its three component
+sets and mass unchanged. Write it as
+\[
+ (A,B_1,\ldots,B_{r-1}),\qquad
+ A=(a\,b)(c\,d),\quad
+ a\in S,\ b,c\in M,\ d\in U,
+ \qquad R=B_1\cdots B_{r-1}.                         \tag{20}
+\]
+The restrictions \(R_S,R_M,R_U\) are full cycles on their respective
+sets, including the identity cycle on a singleton. For every integer
+\(k\), the tuple
+\[
+ (A,R^{-k}B_1R^k,\ldots,R^{-k}B_{r-1}R^k)             \tag{21}
+\]
+is in the same braid orbit, has these same cuts for \(A\), and has
+\(\mu=m\). None of its other factors has an outer one-contact with
+\(A\).
+
+**Proof.** Move the selected factor left by inverse moves
+\((D,A)\mapsto(DAD,D)\). Each crossed \(D\) is unchanged and preserves
+the three component sets of the current cut. The new edges of \(A\)
+therefore still connect \(S\) to \(M\) and \(M\) to \(U\). The
+unchanged complement connects each set, so these remain precisely the
+three components after deleting the new \(A\). Its mass remains \(m\).
+This placement conjugates \(A\); it differs from the literal-factor
+bringing of Lemma 2.
+
+The complement edges in each set form a tree. Their product uses each
+edge once, so the leaf-insertion proof gives a full cycle there.
+The ordinary full twist on the last \(r-1\) strands simultaneously
+conjugates their entries by \(R^{-1}\). Explicitly its word is
+\((Q_2Q_3\cdots Q_{r-1})^{r-1}\); for one complementary strand it
+is the empty word. This follows by cycling the first complementary
+entry to the end \(r-1\) times. It proves (21), also for negative
+powers. Conjugation by \(R\) preserves each component set and its
+connected complement tree, so the cut and \(\lambda(A)=m\) persist.
+Global minimality forces \(\mu=m\), even if individual intermediate
+moves in this full twist might have behaved differently without that
+hypothesis. Lemma 3 excludes every asserted outer contact. \(\square\)
+
+## Theorem 10. Cyclic compatibility excludes closed terminal trees
+
+Use (20), and put \(s=|S|\), \(u=|U|\), \(\ell=|M|\). At a positive
+global orbit minimum the following restrictions hold simultaneously.
+
+1. No complementary DT has both its edges in \(S\), or both in \(U\).
+2. A DT pairing an \(S\)-edge with a \(U\)-edge forces \(s=u\).
+   Moreover all such pairs agree with the **same** bijection
+   \[
+       f:S\longrightarrow U,\qquad f(R_S^k a)=R_U^k d.               \tag{22}
+   \]
+   Its two edges are \(e\) and \(f(e)\).
+3. At least one DT pairs a terminal edge with a middle edge.
+   Every DT pairing an \(S\)-edge with an \(M\)-edge satisfies
+   \[
+          \ell\le2s,\qquad \ell/\gcd(s,\ell)\le4.                 \tag{23}
+   \]
+   The corresponding inequalities with \(u\) hold for every
+   \(U\)-to-\(M\) pair.
+
+These restrictions require only the polynomial DT tree and global
+minimality, not full alternating monodromy.
+
+**Proof.** For a fixed complementary factor \(B\), define the periodic
+sets of integers
+\[
+ \begin{split}
+ E_S(B)&=\{k:R_S^k a\in\operatorname{supp}(B)\},\\
+ E_U(B)&=\{k:R_U^k d\in\operatorname{supp}(B)\},\\
+ E_M(B)&=\{k:R_M^k b\text{ or }R_M^k c\in\operatorname{supp}(B)\}.
+ \end{split}                                                       \tag{24}
+\]
+They record intersections with the **fixed** support of \(A\) in
+(21). Their common phase \(k\), and the three cycles defining it,
+come from one complementary tuple. They are not independently chosen
+weights or witnesses for separate windows.
+
+Every complementary edge lies wholly inside one component. If both
+edges of \(B\) lie in \(S\), then \(E_U=E_M=\varnothing\), whereas
+\(E_S\ne\varnothing\) because \(R_S\) is a full cycle. At such a
+phase the intersection with \(A\) is precisely \(\{a\}\), contrary
+to Lemma 9. This proves assertion 1, also for \(U\).
+
+For an \(S\)-to-\(U\) pair, \(E_M=\varnothing\). Neither outer
+endpoint may occur alone, so \(E_S=E_U\). Their densities in a common
+period are \(2/s\) and \(2/u\), respectively. Thus \(s=u\).
+Equality of these sets modulo \(s\) says exactly that (22) carries
+the two endpoints of the \(S\)-edge to those of the \(U\)-edge.
+The roots and cycles in (22) are fixed for all factors, proving the
+simultaneous, rather than pairwise independently chosen, matching.
+
+For an \(S\)-to-\(M\) pair, the absence of an outer one-contact says
+\(E_S\subseteq E_M\). The former has density \(2/s\). The latter
+is a union of at most four residue classes modulo \(\ell\): two
+middle endpoints can meet either \(b\) or \(c\). Hence
+\(2/s\le4/\ell\). In addition, even one residue class modulo \(s\)
+in \(E_S\) runs through \(\ell/\gcd(s,\ell)\) distinct residues
+modulo \(\ell\). They must all belong to \(E_M\), proving (23).
+
+It remains to exclude a closed pair of terminal trees, in which no
+terminal edge is paired with a middle edge. By assertion 1, all
+\(s-1\) edges of \(T_S\) are then paired with all \(u-1\) edges
+of \(T_U\). If both sizes are one then \(m=0\), already a
+contradiction. Otherwise there is a paired edge, so assertion 2
+identifies the two edge-colored trees by \(f\), with \(f(a)=d\).
+A finite tree of size at least two has a leaf \(v\ne a\). Then
+\(f(v)\ne d\) is also a leaf, and their two incident edges belong
+to one DT. Only \(A\) connects these terminal trees to the middle,
+at \(a,d\). Thus \(v,f(v)\) are exclusive leaves in the full tree
+on different edges of that DT. Lemma 1 gives \(\mu=0\), the final
+contradiction. \(\square\)
+
+## Corollary 11. Positive minima have restricted mass and terminal sizes
+
+Every positive global orbit minimum of a polynomial DT tuple satisfies
+\[
+                         3m\ge N-4.                               \tag{25}
+\]
+At every minimizing factor, unequal nonsingleton terminal sizes are
+possible only with
+\[
+       (\{s,u\},\ell,N)=(\{2,3\},4,9)
+          \quad\text{or}\quad(\{3,4\},6,13).                       \tag{26}
+\]
+Consequently, in the residual degree range \(N\ge15\), the terminal
+sizes are equal or one is a singleton. If the sizes are \(1,t\),
+\(t>1\), their middle size satisfies one of the four exact conditions
+\[
+ \begin{array}{c|c}
+ \ell & \text{necessary divisibility}\\ \hline
+ t & \text{none}\\
+ 2t & 2\mid t\\
+ 3t/2 & 4\mid t\\
+ 4t/3 & 6\mid t .
+ \end{array}                                                       \tag{27}
+\]
+For equal terminal sizes \(s=u>1\), \(\ell\) is odd and
+\(\ell/\gcd(s,\ell)\) is either 1 or 3.
+
+**Proof.** Let \(x,y,z,q\) count complementary factors of types
+\(SU,SM,UM,MM\), respectively. Theorem 10 exhausts the possible types,
+and the tree edge counts give the coupled equalities
+\[
+ x+y=s-1,\qquad x+z=u-1,\qquad y+z+2q=\ell-1.                      \tag{28}
+\]
+At least one of \(y,z\) is positive. For its terminal size \(v\),
+(23) gives \(\ell\le2v\le2(m+1)\), since \(s+u=m+2\).
+Now \(N=\ell+m+2\le3m+4\), proving (25).
+
+If \(s\ne u\), assertion 2 gives \(x=0\). Suppose both sizes exceed
+one and put \(k=\min(s,u)\). Then \(y,z>0\), so (23) and (28) give
+\[
+   m+1\le\ell\le2k\le s+u-1=m+1.
+\]
+All are equal: the sizes are \(k,k+1\), \(\ell=2k\), and \(q=0\).
+Apply the gcd inequality in (23) to the larger terminal component:
+\[
+              \frac{2k}{\gcd(k+1,2k)}
+              =\frac{2k}{\gcd(k+1,2)}\le4.
+\]
+For \(k\ge2\), this leaves only \(k=2,3\), proving (26).
+
+For sizes \(1,t\), (28) gives \(\ell=t+2q\), while (23) gives
+\(\ell\le2t\) and \(\ell/\gcd(t,\ell)\le4\). Write
+\(t=ag,\ell=bg\) with \(\gcd(a,b)=1\). The conditions
+\(a\le b\le2a\), \(b\le4\) leave exactly
+\((a,b)=(1,1),(1,2),(2,3),(3,4)\). Integrality of
+\(q=(\ell-t)/2\) gives the divisibilities in (27).
+For \(s=u\), (28) gives \(y=z>0\) and odd \(\ell\). Its positive
+odd divisor ratio in (23) is therefore 1 or 3. \(\square\)
+
+This is a global compatibility obstruction: a positive isolated
+seven-weight witness must admit one common complement, its three
+cycles, all covers (24), the shared matching (22), and the edge counts
+(28). No assertion is made that these necessary conditions suffice
+for a global orbit minimum. In particular no new count of surviving
+marked templates is inferred.
+
+The remaining problem is to rule out the equal-terminal and
+singleton-terminal cases in full-alternating monodromy, using their
+overlapping windows or another orbit argument. Full alternating
+monodromy supplies an odd support intersection by Lemma 4 of the
+[paired-tree note](PAIRED_HURWITZ_LEAF_EXTRACTION.md#lemma-4-the-even-overlap-code-is-a-hurwitz-invariant),
+but the present argument does not transport that intersection to an
+outer endpoint of a minimizing factor. That is still an open implication.
+The proper order-168 degree-seven orbit has \(m=1\), attaining
+\(3m=N-4\); dropping the monodromy hypothesis from the desired complete
+exclusion would remain false.
+
 ## The remaining plateau-escape obligation
 
 A stronger monotone strategy is the following, still **open** and no
@@ -616,6 +814,21 @@ partitions of the specified nine-label forest are computed, including
 387 uniform exclusions and 180 positive isolated linear witnesses.
 The inventory for other support forests and a global contradiction to
 (18)--(19) remain open.
+
+The [global compatibility checker](verify_terminal_mass_global_compatibility.py)
+and its [receipt](terminal_mass_global_compatibility_verification.json)
+replay front placement and complementary full twists in the retained
+392-tuple degree-seven domain. Its two proper-group orbits have positive
+minimum one, and all their minimizing marked inputs satisfy the cyclic
+covers and terminal-size restrictions. Both full-\(A_7\) orbits have
+minimum zero. The degree-fifteen plateau example (9) develops an outer
+one-contact after one complementary full twist; either that endpoint
+already lowers \(\mu\), or Lemma 3 then does. Four synchronized-tree
+controls have removable factors, while an unequal edge matching between
+equal-sized terminal trees and a DT wholly inside a terminal component
+are detected as incompatible with the phase covers. These are internal
+controls of the written global argument, not a higher-degree census or
+a computational proof of complete extraction.
 
 The [receipt](terminal_mass_hurwitz_descent_verification.json) and
 [source ledger](terminal_mass_hurwitz_descent_source_ledger.json) record

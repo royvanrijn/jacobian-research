@@ -188,6 +188,12 @@ permitted in \(J_{-2}\) are \(1,X\), contrary to
 \(J_{-2}\in(Y,X^2)\) with nonzero \(Y\)-coefficient.
 This proves the second theorem.
 
+Together the two theorems impose a necessary condition on a
+simultaneous reduction of this map to ordinary degree at most
+six. The source automorphism must lie outside the displayed
+flag-triangular class, and the highest forms of
+\(x_1,y_1,2-3x_1y_1-x_1^2z_1\) must be algebraically dependent.
+
 The two source classes need not coincide. For example
 \(\Psi=(x,y-xz/3,z)\) satisfies the second criterion:
 the highest forms of \(x_1,y_1,g_1\) are

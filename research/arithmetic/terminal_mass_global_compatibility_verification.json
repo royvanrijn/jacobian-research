@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "kind": "terminal_mass_global_compatibility_controls",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "a0ac25b41a477dc94e5cc4c45445441af7bc1c0088455d19353f5a04d710e199",
+  "input_sha256": {
+    "TERMINAL_MASS_HURWITZ_DESCENT.md": "ef4d40a50464591ea5367227a90ca02ee9abcf5ff9fbb973045e8679047b636e",
+    "terminal_mass_hurwitz_descent_certificate.json": "d2f2ba4d9c9d7cbb665183bf33fe3cbc195401ff37fd0dd9a339138a961257d0",
+    "verify_terminal_mass_hurwitz_descent.py": "0718f36bc5814aec06d6746934619353fe4545f9d37ae956ce7782d24cba5a1f",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f"
+  },
+  "degree7_complete_orbit_controls": [
+    {
+      "orbit_size": 147,
+      "group_order": 2520,
+      "minimum_mass": 0,
+      "front_and_twist_tests": 105,
+      "positive_minimizing_marked_inputs": 0,
+      "positive_phase_tests": 0,
+      "positive_cut_size_distribution": {}
+    },
+    {
+      "orbit_size": 147,
+      "group_order": 2520,
+      "minimum_mass": 0,
+      "front_and_twist_tests": 105,
+      "positive_minimizing_marked_inputs": 0,
+      "positive_phase_tests": 0,
+      "positive_cut_size_distribution": {}
+    },
+    {
+      "orbit_size": 49,
+      "group_order": 168,
+      "minimum_mass": 1,
+      "front_and_twist_tests": 84,
+      "positive_minimizing_marked_inputs": 84,
+      "positive_phase_tests": 336,
+      "positive_cut_size_distribution": {
+        "(1, 2, 4)": 84
+      }
+    },
+    {
+      "orbit_size": 49,
+      "group_order": 168,
+      "minimum_mass": 1,
+      "front_and_twist_tests": 84,
+      "positive_minimizing_marked_inputs": 84,
+      "positive_phase_tests": 336,
+      "positive_cut_size_distribution": {
+        "(1, 2, 4)": 84
+      }
+    }
+  ],
+  "degree15_plateau_control": {
+    "initial_mass": 1,
+    "front_word": [],
+    "separate_changing_candidate_front_word": [
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1
+    ],
+    "cut_sizes_terminal_terminal_middle": [
+      2,
+      1,
+      12
+    ],
+    "complete_phase_period": 12,
+    "first_forbidden_phase": 1,
+    "factor_index_zero_based": 5,
+    "lower_mass_at_phase_or_after_outer_pruning": true
+  },
+  "synchronized_terminal_tree_controls": [
+    {
+      "terminal_size": 2,
+      "degree": 9,
+      "minimum_mass": 0
+    },
+    {
+      "terminal_size": 3,
+      "degree": 11,
+      "minimum_mass": 0
+    },
+    {
+      "terminal_size": 5,
+      "degree": 15,
+      "minimum_mass": 0
+    },
+    {
+      "terminal_size": 9,
+      "degree": 23,
+      "minimum_mass": 0
+    }
+  ],
+  "negative_controls": {
+    "unsynchronized_equal_terminal_trees_detected": true,
+    "DT_wholly_in_a_terminal_component_detected": true
+  },
+  "scope": "Exact controls of cut-preserving front placement, complementary full twists, cyclic contact covers, paired-terminal synchronization, the positive orbit-minimum bound 3m>=N-4 and the terminal-size restrictions. General statements have written proofs. No higher-degree census or exclusion of all positive full-alternating orbit minima.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

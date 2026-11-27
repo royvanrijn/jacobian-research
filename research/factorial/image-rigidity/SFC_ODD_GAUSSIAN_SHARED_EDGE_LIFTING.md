@@ -22,14 +22,14 @@ Define
  T_k=\operatorname{Res}_Z((2k+1)!S_k(Z),(2k+1)!S_k(2Z)),\quad T_0=1.
 \]
 
-**Prime-power window theorem.** If \(p\nmid T_k\), the forms
+**Prime-power window theorem.** For every \(p>4k+2\), the forms
 \(G_q,G_{q+1},G_{q+2}\) have no common projective zero over any
 characteristic-zero field. In particular this holds at every odd
 prime-power start \(q=p^e\).
 
 The [final-residue refinement](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md)
-also proves this conclusion whenever \(e=1\) or \((2/p)=-1\),
-without the resultant condition. The argument below proves the
+proves the final-slope conclusion for every exponent and both
+quadratic characters, without the resultant condition. The argument below proves the
 internal-edge exclusion independently of that refinement.
 
 Use the initial-order reduction proved in Section 7 of the linked
@@ -49,7 +49,9 @@ possible common valuations are
 A quadratic nonresidue \(2\) already separates their leading
 binomials. The case requiring a new argument therefore has
 \(e\ge2,(2/p)=1\), and \(p\ge7\). The preceding reduction and
-the final-slope resultant test are unchanged inputs.
+the optional final-slope resultant test are unchanged inputs to
+the earlier shortcut; the final-residue refinement now closes
+that slope even when the resultant vanishes modulo \(p\).
 
 Put \(N=(q+1)/2\). The normalized pure even and odd polynomials are
 \[
@@ -243,11 +245,16 @@ dominant initial and middle prime-power families and verified finite
 domain. The character restriction on the initial shared edges is
 removed and is no longer a remaining obstruction.
 
-The final-slope family \(q=5\cdot13^e\) is now excluded for every
+The final-slope family \(q=5\cdot13^e\) is excluded for every
 \(e\ge1\) by the [same-residue compatibility proof](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md#5-the-requested-family-and-the-next-boundary).
 At the common residue \(Z=2\), the next corrections disagree.
-A concrete remaining profile is \(q=9\cdot89^e\), \(e\ge2\):
+A profile requiring the second secondary layer is
+\(q=9\cdot89^e\), \(e\ge2\):
 the reductions of \(S_4(Z),S_4(2Z)\) have gcd \(Z+25\).
 Here \((2/89)=1\), and the first secondary compatibility vanishes
-at \(Z=64\). This is a surviving residue test, not a Gaussian
-common zero.
+at \(Z=64\). The [next layer](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md#6-the-second-secondary-layer-at-positive-character-primes)
+has normalized odd/even ratio two, forcing Wronskian valuation
+\(46/89<1\) against a lower bound of one. This excludes every
+exponent in that family and removes the remaining dominant
+initial-prime final-residue exceptions. Unrestricted odd starts
+remain separate.

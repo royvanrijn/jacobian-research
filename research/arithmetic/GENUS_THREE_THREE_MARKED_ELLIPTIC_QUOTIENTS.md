@@ -112,7 +112,32 @@ specified claims on (1). The question of genus three
 with rational Jacobian \(3\)-rank three is recorded after
 Theorem 9 in
 [Levin–Yan–Wiljanen](sources/levin-yan-wiljanen-large-three-rank.pdf).
-The explicit curve (1) satisfies that property.
+The explicit curve (1) satisfies that property, independently
+of the class-group applications.
+
+For a focused comparison, the retained Levin–Yan–Wiljanen
+preprint (arXiv:1910.12276v1, printed p. 13) asks for
+hyperelliptic genus three with rational Jacobian \(3\)-rank
+three; its preceding rank-three example has genus four.
+HG1 answers that stated existence question. The gluing
+mechanism is classical: Howe–Leprévost–Poonen,
+Proposition 14, constructs hyperelliptic Jacobians from
+three elliptic curves when the specified twisting factor
+vanishes. The direct equations, squarefreeness, map degrees,
+sign characters and push-pull argument above supply the
+proof for this particular octic.
+
+[Müller–Reitsma, Theorem 1.1 and Remark 1.2](sources/muller-reitsma-genus-three-torsion-2211.03372v4.pdf)
+(arXiv:2211.03372v4, pp. 1–2) distinguish geometrically
+simple Jacobians and exact full torsion groups from
+subgroups of rational torsion. HG1 has a split Jacobian
+and determines its rational \(3\)-torsion subgroup; it
+does not assert geometric simplicity or that the entire
+torsion group is \((\mathbb Z/3)^3\).
+These inspected statements support a separate existence
+result, but do not settle historical priority or exclude
+later constructions. Specialist novelty and proof review
+remain open.
 
 ## Three specialized Kummer directions and a common conductor
 
@@ -129,7 +154,7 @@ The three elements
 \(K^\times/K^{\times3}\).
 The three \(D\)-twists of (2) are pairwise nonisogenous
 elliptic curves over \(\mathbb Q\), each of positive rank
-and conductor \(80D^2\).
+and conductor \(10D^2\).
 
 First \(F(t)>0\) for all real \(t\). In (3), substitute
 \(y^2=2/3-2x^2\) and take \(0\le x^2\le 1/3\).
@@ -170,12 +195,20 @@ The base conductors of the three curves are \(90,90,30\).
 As shown in HG3 below, \(2\) and \(5\) both split in \(K\),
 so \(D\) is the positive squarefree radicand and is
 coprime to \(10\). At \(3\), each twist is locally
-isomorphic to the twist by \(3\), and those three fixed
-twists all have conductor \(720\). At other primes
-dividing \(D\) the base curves have good reduction and
-the twist conductor exponent is two. Thus all three
-conductors are \(720(D/3)^2=80D^2\). Twisting preserves
-rational isogeny and nonisogeny.
+isomorphic to the twist by \(3\). Those three fixed
+twists have conductor \(720=2^4\cdot3^2\cdot5\), so only
+their exponent two at \(3\) is relevant. At the split
+prime \(2\) the local twist is trivial and preserves
+the base exponent one; the same holds at \(5\).
+At other primes dividing \(D\) the base curves have
+good reduction and the twist conductor exponent is two.
+Thus all three conductors are
+\[
+ N=2\cdot3^2\cdot5\,(D/3)^2=10D^2.
+\]
+Importing the entire conductor of the twist by \(3\)
+would incorrectly replace the exponent at \(2\) by four.
+Twisting preserves rational isogeny and nonisogeny.
 
 ## Two independent valuation obstructions
 
@@ -278,3 +311,93 @@ gives the second lower bound. The
 [exact checker](verify_genus_three_marked_elliptic_quotients.py)
 replays the three maps and the witnesses for the local
 and conductor calculations.
+
+## Exact transfer of three-primary descent
+
+**Theorem HG5.** For either curve in HG1 or
+[MO1](QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md#a-second-marked-octic),
+let \(J=\operatorname{Jac}(C)\), let
+\(\pi_i:C\to E_i\) be the specified degree-eight maps, and put
+\[
+ A=E_1\times E_2\times E_3,\qquad
+ \Phi=\sum_i\pi_i^*:A\longrightarrow J,\qquad
+ \Psi=(\pi_{1*},\pi_{2*},\pi_{3*}):J\longrightarrow A.
+\]
+Then
+\[
+ \Psi\Phi=[8]_A,\qquad \Phi\Psi=[8]_J,\qquad
+ \deg\Phi=\deg\Psi=8^3=2^9.
+\]
+For every \(d\in\mathbb Q^\times/\mathbb Q^{\times2}\) and
+every integer \(n\ge1\), these maps induce isomorphisms
+\[
+ \operatorname{Sel}_{3^n}(J^d/\mathbb Q)
+ \simeq\bigoplus_{i=1}^3\operatorname{Sel}_{3^n}(E_i^d/\mathbb Q),
+ \qquad
+ \Sha(J^d/\mathbb Q)[3^n]
+ \simeq\bigoplus_{i=1}^3\Sha(E_i^d/\mathbb Q)[3^n].
+\]
+They also identify the full \(3\)-primary Sha groups.
+No finiteness assumption on Sha is needed.
+
+For the proof, the pullbacks occupy distinct nontrivial
+characters of the sign group. For \(i\ne j\), choose a
+sign involution whose eigenvalues on the two images are
+opposite. Equivariance gives
+\(\pi_{i*}\pi_j^*=-\pi_{i*}\pi_j^*\).
+The group of homomorphisms of abelian varieties has no
+integer torsion, so the cross term vanishes. Equivalently,
+pairwise rational nonisogeny of the targets makes it zero.
+On the diagonal, push-pull for a degree-eight morphism gives
+\(\pi_{i*}\pi_i^*=[8]\). Thus \(\Psi\Phi=[8]_A\).
+In particular \(\ker\Phi\subset A[8]\) is finite; since
+\(\dim A=\dim J=3\), \(\Phi\) is an isogeny.
+Composing with the surjection \(\Phi\) now gives
+\(\Phi\Psi=[8]_J\). Under the canonical principal
+polarizations, pullback and pushforward are dual.
+Hence their degrees agree and
+\[
+ (\deg\Phi)^2=\deg[8]_A=8^6.
+\]
+The maps are defined over \(\mathbb Q\) and commute with
+\([-1]\), so both identities persist after every quadratic
+twist.
+
+Set \(m=3^n\), and choose an integer \(a\) with
+\(8a\equiv1\bmod m\). On \(m\)-torsion, \(\Phi^d\)
+and \(a\Psi^d\) are inverse Galois-module maps. They
+therefore identify global and local \(H^1\).
+For each completion \(k=\mathbb Q_v\), the same maps are
+inverse on \(A^d(k)/mA^d(k)\) and \(J^d(k)/mJ^d(k)\).
+Naturality of the Kummer connecting maps identifies
+their images in local \(H^1\), including at \(v=3\)
+and the archimedean place. Taking the global classes
+satisfying all local Kummer conditions proves the Selmer
+isomorphism. The product has the direct sum of the three
+elliptic local conditions. Finally, the induced maps on
+global and local \(H^1\) of the abelian varieties preserve
+the kernel defining Sha. Their composites are multiplication
+by eight, which is invertible on every \(3^n\)-torsion
+subgroup and on the full \(3\)-primary group.
+
+This transfer uses the particular isogeny of degree \(2^9\).
+The earlier genus-five decomposition with degree \(3^8\)
+does not permit the same argument at three. The
+genus-eleven cubic cover likewise needs its own descent
+analysis; its power-of-three isogeny is not covered by HG5.
+
+The written push-pull and Kummer argument proves the
+unrestricted statement. The Sage replay checks the
+displayed maps and their degrees, not all Selmer groups.
+
+The internal replay used SageMath 10.9 from the repository
+root, with both commands passing:
+```sh
+sage -python research/arithmetic/verify_genus_three_marked_elliptic_quotients.py
+sage -python research/arithmetic/verify_marked_octic_mirror_class_rank_four.py
+```
+The first includes the local conductor exponents and the
+conductor fixture at \(D=129\); the second checks the MO
+norm identities, local data and conductor inputs. These
+are internal exact computations, not independent review
+or a computation of every Selmer group.

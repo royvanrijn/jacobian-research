@@ -9,6 +9,7 @@ positive/negative compatibility controls at selected exact inputs.
 
 import json
 import platform
+import sys
 from fractions import Fraction as F
 from math import comb, factorial, isqrt
 
@@ -167,6 +168,150 @@ def exact_differential_identities():
             if j < k:
                 coefficient += (j + 1) * (4 * j + 6) * s[j + 1]
             assert coefficient == 0
+        doubled = [c*2**j for j, c in enumerate(s)]
+        p_doubled = [c*2**j for j, c in enumerate(p)]
+        ds = [j*s[j] for j in range(1, len(s))]
+        db = [j*doubled[j] for j in range(1, len(doubled))]
+        exact = [F(0)]*(2*k)
+        for sign, left, right in ((1, db, p), (-1, ds, p_doubled),
+                                   (-1, db, s), (1, ds, doubled)):
+            for i, a in enumerate(left):
+                for j, b in enumerate(right):
+                    exact[i+j] += sign*a*b
+        assert not any(exact)  # B'P-A'P(2Z) is exactly W, over Q.
+
+
+def factorial_valuation(number, prime):
+    result = 0
+    while number:
+        number //= prime
+        result += number
+    return result
+
+
+def factorial_unit(number, prime, small):
+    """Wilson recursion, independent of the term-by-term factorial tables."""
+    result = 1
+    while number:
+        quotient, digit = divmod(number, prime)
+        result = result * small[digit] * (-1 if quotient % 2 else 1) % prime
+        number = quotient
+    return result
+
+
+def check_second_layer(k, p, e, claimed_next_ratio=None):
+    assert k >= 1 and p > 4*k+2 and e >= 2
+    assert all(p % divisor for divisor in range(2, isqrt(p)+1))
+    power = p**e
+    child_power = power//p
+    q = (2*k+1)*power
+    half = (q+1)//2
+    left, off = (power+1)//2, (child_power+1)//2
+    following = off+child_power
+    ell = (power-1)//(p-1)
+    lam = F(ell, power)
+    beta = F(e, 2)-lam/2
+    gamma = -beta
+    first_gap, next_gap = F(p+1, 2*p), F(p+3, 2*p)
+    scale = 2*power*(p-1)
+    scaled_threshold = int((gamma+next_gap)*scale)
+    assert F(scaled_threshold, scale) == gamma+next_gap
+    factorial_half = factorial_valuation(half, p)
+    even_inventory, odd_inventory = set(), set()
+    # Every coefficient is checked, not merely the Newton vertices.
+    for i in range(half+1):
+        numerator = factorial_half-factorial_valuation(half-i, p)
+        ev = numerator-factorial_valuation(2*i, p)
+        ov = numerator-factorial_valuation(2*i+1, p)
+        if ev*scale+2*i*(power-1) <= scaled_threshold:
+            even_inventory.add(i)
+        if ov*scale+2*(i+1)*(power-1) <= scaled_threshold:
+            odd_inventory.add(i+1)
+    leading = {left+j*power for j in range(k+1)}
+    first = {off+j*power for j in range(k+1)}
+    second = {following+j*power for j in range(k+1)}
+    children = {i+1 for i in leading}
+    assert even_inventory == leading | first | second
+    assert odd_inventory == leading | children | first | second
+    assert lam > F(1, p) and first_gap+lam > next_gap
+    perturbation_margin = beta-lam/2-next_gap
+    assert perturbation_margin > 0
+
+    small = [1]
+    for i in range(1, p):
+        small.append(small[-1]*i % p)
+
+    def coefficient(index, parity):
+        valuation = (factorial_half-factorial_valuation(half-index, p)
+                     -factorial_valuation(2*index+parity, p))
+        unit = (pow(2*(q+1+parity), index, p)*factorial_unit(half, p, small)
+                *pow(factorial_unit(half-index, p, small)
+                     *factorial_unit(2*index+parity, p, small), -1, p)) % p
+        return valuation, unit
+
+    def shape(base, parity):
+        valuation, unit = coefficient(base, parity)
+        result = []
+        for j in range(k+1):
+            value, scalar = coefficient(base+j*power, parity)
+            assert value == valuation-j*ell
+            result.append(scalar*pow(unit, -1, p)*pow((-1)**ell*2, -j, p) % p)
+        return result
+
+    s, pp = shapes(k)
+    sr, pr = [residue(x, p) for x in s], [residue(x, p) for x in pp]
+    doubled = [x*pow(2, j, p) % p for j, x in enumerate(sr)]
+    p_doubled = [x*pow(2, j, p) % p for j, x in enumerate(pr)]
+    assert shape(left, 0) == sr and shape(left-1, 1) == doubled
+    chi = 1 if pow(2, (p-1)//2, p) == 1 else -1
+    ratios = []
+    for v, base in enumerate((off, following)):
+        assert shape(base, 0) == pr and shape(base-1, 1) == p_doubled
+        assert coefficient(base, 0)[0]+base*lam-gamma == first_gap+F(v, p)
+        assert coefficient(base-1, 1)[0]+base*lam-gamma == first_gap+F(v, p)
+        ratio = (coefficient(left, 0)[1]*coefficient(base-1, 1)[1]
+                 *pow(coefficient(left-1, 1)[1]*coefficient(base, 0)[1], -1, p)) % p
+        expected = chi*pow(2, v, p) % p
+        if v == 1 and claimed_next_ratio is not None:
+            expected = claimed_next_ratio % p
+        assert ratio == expected
+        ratios.append(ratio)
+    for i in leading:
+        parent, child = coefficient(i-1, 1), coefficient(i, 1)
+        assert parent[0] == child[0] and child[1]*pow(parent[1], -1, p) % p == 2
+
+    # Cross-check both arithmetic implementations on these bounded cases.
+    cross_checked = 0
+    if q <= 100000:
+        values, units = factorial_tables(q+2, p)
+        even = pure_hermite(q+1, p, values, units)
+        odd = pure_hermite(q+2, p, values, units)
+        for parity, polynomial in ((0, even), (1, odd)):
+            for i in sorted(even_inventory | {j-1 for j in odd_inventory}):
+                assert coefficient(i, parity) == (polynomial[0][i], polynomial[1][i])
+                cross_checked += 1
+
+    ds, db = derivative(sr, p), derivative(doubled, p)
+    common = gcd(sr, doubled, p)
+    wronskian = add(multiply(db, sr, p), [-x % p for x in multiply(ds, doubled, p)], p)
+    first_compatibility = add(multiply(db, pr, p),
+                              [-x % p for x in multiply(ds, p_doubled, p)], p)
+    assert first_compatibility == wronskian
+    assert remainder(wronskian, multiply(common, common, p), p) == []
+    next_compatibility = add(multiply(db, pr, p),
+                             [-2*x % p for x in multiply(ds, p_doubled, p)], p)
+    obstruction = gcd(common, next_compatibility, p)
+    assert obstruction == [1]
+    if k == 4 and p == 89:
+        assert common == [25, 1] and ratios == [1, 2]
+        assert sum(c*64**j for j, c in enumerate(next_compatibility)) % p == 15
+    print(f"Second-layer inventory passed: k={k}, p={p}, e={e}, q={q}", file=sys.stderr)
+    return dict(k=k, prime=p, exponent=e, start=q, character=chi,
+                first_gap=str(first_gap), next_gap=str(next_gap), odd_even_ratios=ratios,
+                even_inventory=sorted(even_inventory), odd_inventory=sorted(odd_inventory),
+                coefficients_enumerated=2*(half+1), independent_unit_checks=cross_checked,
+                perturbation_margin=str(perturbation_margin), leading_residue_gcd=common,
+                next_compatibility_gcd=obstruction)
 
 
 def rational_valuation(value, p):
@@ -248,6 +393,15 @@ def main():
     # The positive-character example must remain unresolved by this layer.
     residue_control = check_case(4, 89, 2)
     assert len(residue_control["compatibility_gcd"]) > 1
+    second_inputs = [(1, 7, 2), (1, 7, 4), (3, 17, 3), (4, 41, 2),
+                     (4, 89, 2), (4, 89, 3), (2, 13, 3)]
+    second_cases = [check_second_layer(*item) for item in second_inputs]
+    try:
+        check_second_layer(4, 89, 2, claimed_next_ratio=1)
+    except AssertionError:
+        pass
+    else:
+        raise AssertionError("A corrupted second-layer ratio was accepted")
     try:
         check_case(2, 13, 2, claimed_character=1)
     except AssertionError:
@@ -257,11 +411,14 @@ def main():
     print(json.dumps(dict(
         status="PASS", python=platform.python_version(),
         scope="finite exact controls of the written final-layer theorem; not an all-order experiment",
-        cases=cases, straightening_remainder_coefficients=straightening_controls(),
+        cases=cases, second_layer_cases=second_cases,
+        straightening_remainder_coefficients=straightening_controls(),
         exact_13_certificate="254/45 = 12 modulo 13; incompatible lift corrections 9 and 4",
         exact_wronskian="90*(B'*A-A'*B)=(Z-2)^2+13*(Z+2)",
-        retained_residue_control="q=9*89^e, e>=2: common residue survives this first compatibility layer",
-        corruption_control="incorrect positive inter-row phase at p=13 rejected by exact coefficient residues",
+        exact_89_certificate="at Z=64: A'=14, B'=21, -2*Z*A'*B'=15 modulo 89; next gap 46/89",
+        exact_first_compatibility="B'*P_k(Z)-A'*P_k(2Z)=B'*A-A'*B over Q; checked k=1 through 9",
+        retained_residue_control="q=9*89^e: first compatibility survives; next layer excludes the common residue",
+        corruption_control="incorrect first-layer phase at p=13 and next-layer ratio 1 at p=89 are rejected",
         assurance="internal replay; no independent review or formal verification",
     ), indent=2))
 

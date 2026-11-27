@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_utc_date": "2026-11-27",
   "result_document": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
-  "assurance": "Internal written terminal-mass lemmas and orbit-minimum reduction, with exact finite local-orbit calculations and uniform weight inequalities. Exclusion of all positive global orbit minima and arbitrary extraction remain open.",
+  "assurance": "Internal written terminal-mass, local-orbit and global complementary-twist compatibility arguments with exact finite controls. Positive minima obey 3m>=N-4 and the cut-size restrictions. Exclusion of all positive full-alternating orbit minima and arbitrary extraction remain open.",
   "declarations": [
     {
       "name": "Lemma 1. Terminal mass detects exactly the removable locus",
@@ -35,6 +35,18 @@
     {
       "name": "Proposition 8. Orbit minima replace monotone descent",
       "scope": "Extraction in a fixed-degree braid orbit is equivalent to its minimum terminal mass being zero. At a positive orbit minimum m, every local candidate vector satisfies c.w>=m+2, and an initially minimizing factor satisfies equality. Any endpoint violation contradicts minimality regardless of intermediate masses. Three chosen factors including a minimizer can be gathered while preserving their literal permutations and the chosen cut; recompute seven-component data after gathering."
+    },
+    {
+      "name": "Lemma 9. Complementary twists develop the three cuts simultaneously",
+      "scope": "A minimizing factor can be conjugated to the first position while retaining its literal cut sets. The complementary product is a full cycle on each set; its full twist simultaneously develops every complementary factor, preserving those sets and the minimum. Outer one-contacts are absent at every phase."
+    },
+    {
+      "name": "Theorem 10. Cyclic compatibility excludes closed terminal trees",
+      "scope": "For every positive global minimum of a full-cycle polynomial DT braid orbit, front-place a minimizing A with cut sets S,M,U and complementary product R. Its restrictions are full cycles and simultaneous R-power conjugation of the complement retains the cuts and mass. The absence of outer one-contacts forces no terminal-internal DT, a common rooted cyclic matching for every SU pair, and at least one SM or UM pair. Each such pair satisfies ell<=2s and ell/gcd(s,ell)<=4 (or the U analogue). No full alternating monodromy assumption is needed."
+    },
+    {
+      "name": "Corollary 11. Positive minima have restricted mass and terminal sizes",
+      "scope": "Every positive global orbit minimum m of a full-cycle polynomial DT tuple satisfies 3m>=N-4. Unequal nonsingleton terminal sizes at a minimizing factor are possible only for (s,u,ell)=(2,3,4) or (3,4,6), up to terminal swap, in degrees nine or thirteen. For N>=15 terminals therefore have equal sizes or a singleton. Sizes (1,t) force ell=t; ell=2t with 2|t; ell=3t/2 with 4|t; or ell=4t/3 with 6|t. Equal terminals force odd ell and ell/gcd(s,ell) in {1,3}. These are necessary conditions, not complete exclusion of full-alternating positive minima."
     }
   ],
   "primary_source_comparison": [
@@ -95,7 +107,7 @@
     "software": "Python 3.12.3; standard library only",
     "scope": "Existing 392-tuple degree-seven domain: 42 strict pruning controls in both bringing orders, 56 two-contact captures in both pair orders and 6720 weighted quotient comparisons. Additional period-two control, cyclic r=4,7,12,25 controls and literal degree-fifteen one-move capture. A second full-A15 witness has mass one in all24 pair/power cases covering every power of each initially adjacent pair, yet [-3,-4] gives1,1,0 and two new leaves. Invalid controls rejected."
   },
-  "remaining_frontier": "Exclude a positive minimum over a full-alternating residual braid orbit. The sufficient three-factor route must force an endpoint inequality violation at some minimizing representative, without monotonicity along the local braid. Other support forests and the global compatibility of surviving weighted templates remain uncontrolled. The older monotone plateau strategy remains open; mixed three-cycle connectivity is separate.",
+  "remaining_frontier": "For N>=15 a positive global orbit minimum has equal terminal sizes or a singleton, with the common cyclic phase covers and exact ratios of Theorem 10 and Corollary 11. Use full alternating monodromy to contradict these remaining global cases or force an overlapping-window endpoint violation. The 180 surviving isolated witnesses are not global completions. Other triple support forests remain unclassified; the stronger monotone strategy and mixed connectivity remain separate.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
@@ -103,11 +115,23 @@
     "checker": "research/arithmetic/verify_terminal_mass_three_factor.py",
     "checker_sha256": "265ecb6bb3565a89dce53d1374743f68135682fd99bcc2009038b5b486c45663",
     "receipt": "research/arithmetic/terminal_mass_three_factor_verification.json",
-    "receipt_sha256": "7816073929890e3b40bba7df3121c3d9a062ae11177cc25341f798f904904919",
+    "receipt_sha256": "cc7e3a22a291de5519a7ed26003ca69f5c1705e6ddbf34894096d899aef9bc27",
     "command": "python3 research/arithmetic/verify_terminal_mass_three_factor.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
     "deterministic_input": "Literal nine-label triple and owner map in symbolic_path_control; all seven-block owner partitions generated by two pair identifications in owner_partition_controls; existing degree-fifteen plateau certificate supplies all five initial windows.",
     "scope": "Complete local generator closure with every transition checked against a separate permutation implementation. All 189 owners for the specified forest, exact minimal masks and constructive positive isolated-system witnesses. 1245 comparisons with full-tree factor cuts; a twelve-label support control, proper order-168 positive local minimum, and four invalid controls. Internal replay only."
+  },
+  "primary_source_comparison_reinspection": "Reinspected the actual primary HTML statements of Ripoll Definition 0.3 and Theorems 0.4 and 5.5, and Liu--Osserman Proposition 1.1 and Theorem 1.2. The same hypothesis gaps remain. Lemma 9, Theorem 10 and Corollary 11 import no new connectivity theorem; their argument is supplied in full.",
+  "global_compatibility_evidence": {
+    "checker": "research/arithmetic/verify_terminal_mass_global_compatibility.py",
+    "checker_sha256": "a0ac25b41a477dc94e5cc4c45445441af7bc1c0088455d19353f5a04d710e199",
+    "receipt": "research/arithmetic/terminal_mass_global_compatibility_verification.json",
+    "receipt_sha256": "79873a9f7351e138ee1069851d8b488ef84b21d36ec4a0d6ac0637bf16e7b44a",
+    "command": "python3 research/arithmetic/verify_terminal_mass_global_compatibility.py",
+    "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
+    "software": "Python 3.12.3; standard library only",
+    "deterministic_input": "Existing fixed-product degree-seven domain generated from the DT class; retained degree-fifteen plateau certificate; four literal synchronized-tree controls and two negative controls in checker source.",
+    "scope": "Exact front placement and complementary twist controls; all minimizing marked inputs in the four existing degree-seven orbits; cyclic contact covers, paired-tree synchronization, mass and size restrictions, degree-fifteen obstruction and negative controls. Universal conclusions have written proofs. No new degree census or complete full-alternating extraction theorem."
   }
 }

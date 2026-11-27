@@ -42,6 +42,16 @@ for coordinate, v_coefficient, a, b, c, h in rows:
 assert [E.change_ring(GF(11)).trace_of_frobenius() for E in curves] == [6, -6, 0]
 assert [E.conductor() for E in curves] == [90, 90, 30]
 assert [E.quadratic_twist(3).conductor() for E in curves] == [720, 720, 720]
+# HG2 imports only the exponent at 3 from these twists.
+assert [E.conductor().valuation(2) for E in curves] == [1, 1, 1]
+assert [E.quadratic_twist(3).conductor().valuation(3) for E in curves] == [2, 2, 2]
+assert [E.quadratic_twist(3).conductor().valuation(2) for E in curves] == [4, 4, 4]
+# At t=1, D=129 is locally split at 2 and 5 and locally 3 at 3.
+# This is a conductor fixture, not the full CRT independence slice.
+assert 129 % 8 == 1 and GF(5)(129).is_square()
+assert (QQ(129)/3) % 3 == 1
+assert [E.quadratic_twist(129).conductor() for E in curves] == [10*129**2]*3
+
 assert F(1) == 129 and F(1) % 9 == 3
 assert points[0][0] == (-QQ(135)*y*y/16 - QQ(5)/2 + QQ(25)/(9*y*y))/4
 assert points[1][0] == (-1215*x**4 + 126*x*x + 1)/(576*x*x)

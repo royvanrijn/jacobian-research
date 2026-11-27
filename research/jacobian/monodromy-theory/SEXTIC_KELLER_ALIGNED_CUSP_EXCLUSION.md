@@ -17,12 +17,12 @@ There is no characteristic-zero three-variable Keller map
 whose highest weighted tuple is \((W^2,W^3,h)\).
 
 **Theorem SexticKellerWeightedSquareCoordinate.**
-Let \(F\) be a characteristic-zero three-variable Keller map of
-ordinary degree at most six. Suppose a component has highest
-form \((x^2+\ell(y,z))^2\) in weights \((1,2,2)\), with
-\(\ell\ne0\) linear. That component has a polynomial coordinate
-completion with inverse of ordinary degree at most four.
-Consequently \(F\) is invertible.
+Let \(F\) be a characteristic-zero three-variable Keller map.
+Suppose a component has highest form \((x^2+\ell(y,z))^2\) in
+weights \((1,2,2)\), with \(\ell\ne0\) linear. That component
+has a polynomial coordinate completion with inverse of ordinary
+degree at most four. If \(F\) has ordinary degree at most
+twenty-five, then it is invertible.
 
 **Corollary SexticKeller654AlignedLinearPowerInversion.**
 Let a characteristic-zero three-variable Keller map of
@@ -158,7 +158,7 @@ On this chart write
        P_\epsilon=s^2+U,\qquad
        Q_\epsilon=c(s,\epsilon)+V_* .
 \]
-Here \(c(s,\epsilon)\) is the reference third expression
+Here \(c(s,\epsilon)\) is the second reference component
 \(\varphi(V)+\lambda T\) rescaled on the fixed level.
 It has \(c_0=s^3\), quadratic coefficient of order at
 least two in \(\epsilon\), and linear coefficient of
@@ -250,7 +250,7 @@ each step, so the map factors through the polynomial
 pair \((V,T)\), contradicting the Keller condition.
 
 For \(W=x^2+y,\ H=y^3z^2\), the hypotheses were checked
-above and \(N=15\). In this particular case the double
+above and \(N=15\). In this particular case the cubic
 pole comparison is unnecessary: at \(W=0,\ H=S\) one
 can set \(y=-x^2,\ z=\gamma/x^3,\ \gamma^2=-S\), with
 \(x\) free. A correction of weight \(j=4-r\in\{1,2,3\}\)
@@ -265,7 +265,7 @@ nonconstant correction.
 
 Choose a linear frame with \(\ell=y\) and put
 \(X=x,\ Y=x^2+y,\ Z=z\), a weighted polynomial
-coordinate change. The component \(P\) in the second
+coordinate change. The component \(P\) in the weighted-square
 theorem must have the form
 \[
        P=Y^2+a(X)Y+b(X)+c(X)Z,\qquad
@@ -296,8 +296,12 @@ is linear with nonzero slope. Use
            y=Y_1-a(x)/2-x^2,\qquad z=Z .
 \]
 Its ordinary degree is at most four.
-The [bounded coordinate completion theorem](LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md)
-applies since \(6\cdot4\le100\).
+The calculation uses only the weight-four highest form and
+the absence of critical points of \(P\). For a Keller map
+of ordinary degree \(d\le25\), the resulting inverse completion
+degree \(e\) satisfies \(de\le25\cdot4=100\), so the
+[bounded coordinate completion theorem](LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md)
+gives invertibility.
 The aligned-linear-power corollary follows from the
 [first-weight theorem](SEXTIC_KELLER_ALIGNED_LINEAR_POWERS.md),
 which gives precisely such a weighted square for the

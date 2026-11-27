@@ -26,7 +26,9 @@ infinitely many curves with rational rank at most one and
 \(\dim_{\mathbf F_3}\Sha(E_R)[3]\ge2r\) (MCT15–MCT16).
 MCT18 gives a quadratic one-prime point construction and four exact
 rank-one controls. At every nonsingular target, MCT19 determines the
-reduced 3-primary group and proves full 3-primary Selmer corank one.
+reduced 3-primary group, the full 3-primary Selmer group and every
+finite 3-power Selmer group. Exactly one divisible Selmer direction
+remains, arising from rational rank one or divisible \(\Sha\).
 The infinite exact-rank-one refinement is conditional on a point
 infinitude statement or an imported ramified-CM converse.
 Complete normalized matrices are obtained below for selected products of
@@ -1746,8 +1748,21 @@ For every nonsingular-target curve of MCT16, put
              \operatorname{Sel}_{3^\infty}(E_R)=1.        \tag{49}
 \]
 In particular a non-torsion point, or finiteness of the 3-primary
-group, forces (45). The first assertion is an abstract group
-decomposition; it does not assert that the divisible summand vanishes.
+group, forces (45). Moreover, as abstract groups,
+\[
+ \begin{split}
+ \operatorname{Sel}_{3^\infty}(E_R)
+     &\cong\mathbf Q_3/\mathbf Z_3
+                  \oplus(\mathbf Z/3\mathbf Z)^{2r},\\
+ \operatorname{Sel}_{3^n}(E_R)
+     &\cong\mathbf Z/3^n\mathbf Z
+                  \oplus(\mathbf Z/3\mathbf Z)^{2r}
+                  \qquad(n\ge1).
+ \end{split}                                             \tag{50}
+\]
+These decompositions do not identify the divisible Selmer direction
+with a rational point: it can instead map isomorphically onto the
+divisible summand of \(\Sha\) in the rank-zero alternative.
 
 Proof. The standard inputs are the finite-plus-divisible structure
 of each primary part and the perfect alternating pairing on its
@@ -1771,6 +1786,34 @@ Its three-torsion dimension is at most one, so it is zero.
 Thus \(H^\perp\) is divisible of corank \(1-\rho\), proving
 the first formula. The full primary Kummer sequence adds \(\rho\)
 to this corank, giving the second formula.
+
+For the group assertions (50), write the primary Kummer sequence as
+\[
+ 0\longrightarrow E_R(\mathbf Q)\otimes\mathbf Q_3/\mathbf Z_3
+  \longrightarrow\operatorname{Sel}_{3^\infty}(E_R)
+  \longrightarrow G\longrightarrow0.
+\]
+Its left term is \((\mathbf Q_3/\mathbf Z_3)^\rho\), hence
+is divisible and therefore injective as an abelian group. The
+sequence splits abstractly; substituting (49) gives the first
+isomorphism in (50). The absence of rational 3-torsion in MCT16
+implies \(E_R(\mathbf Q)[3^\infty]=0\). The coefficient sequence
+\[
+ 0\longrightarrow E_R[3^n]\longrightarrow E_R[3^\infty]
+  \xrightarrow{3^n}E_R[3^\infty]\longrightarrow0
+\]
+therefore identifies \(H^1(\mathbf Q,E_R[3^n])\) with
+\(H^1(\mathbf Q,E_R[3^\infty])[3^n]\). Under this identification,
+the two Selmer conditions agree: both require that the induced
+class in \(H^1(\mathbf Q_v,E_R)\) vanish at every place \(v\).
+Consequently the natural map gives
+\[
+ \operatorname{Sel}_{3^n}(E_R)
+    \xrightarrow{\sim}\operatorname{Sel}_{3^\infty}(E_R)[3^n].
+\]
+Taking \(3^n\)-torsion of the first group in (50) proves the second.
+Thus the abstract groups at all higher descent levels are the same
+in the rank-one and rank-zero/divisible alternatives.
 
 There are two precise routes to an infinite exact-rank-one result.
 

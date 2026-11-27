@@ -10,6 +10,13 @@ change of parameter makes the valuations of this fourth
 direction divisible by three at moving primes. The four
 directions then give class \(3\)-rank at least three in
 the real field and at least four in its imaginary mirror.
+Together MO3–MO4 give at least forty associated complex
+cubic fields of the same fundamental discriminant,
+three specified positive-rank elliptic twists with
+conductors \(28D^2,252D^2,126D^2\), and
+\(\gg X^{1/12}/(\log X)^2\) distinct real discriminants
+at most \(X\). The real bound is three; a bound of four
+on both sides remains open.
 
 ## A second marked octic
 
@@ -55,6 +62,10 @@ with \(X_i=U_i-1,\ Y_i=V_i\). The identities can also be
 checked directly in (1). All three maps have degree
 eight and lie in the three nontrivial sign eigenspaces.
 The joint morphism on Jacobians is an isogeny.
+The pullback addition map has degree \(2^9\), and
+[HG5](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md#exact-transfer-of-three-primary-descent)
+gives the exact \(3^n\)-Selmer and \(3^n\)-Sha transfer
+for every quadratic twist.
 The curves have traces \((-4,2,-4)\) at \(13\) and
 \((6,6,0)\) at \(23\), giving pairwise rational
 nonisogeny. This proves the generic ranks and independence
@@ -368,3 +379,140 @@ supply a single additional norm direction by this
 mechanism. The arithmetic specialization in MO3
 uses the \(\ell=3\) instance and also needs its finite
 prime conditions.
+
+## The genus-eleven cover and its Prym
+
+**Proposition MO6.** Let \(C':R^2=F(3u^3/7)\) and
+\(\pi:C'\to C\) be the degree-three map of MO3.
+Then \(g(C')=11\), the norm kernel
+\[
+ P=\ker(\pi_*:\operatorname{Jac}(C')\to\operatorname{Jac}(C))
+\]
+is connected of dimension eight, and the rational order-three
+class \(T=[2B_{3,3/7}]\) from MO5 lies in \(P\).
+The addition map
+\[
+ \operatorname{Jac}(C)\times P\longrightarrow
+ \operatorname{Jac}(C'),\qquad (a,p)\longmapsto\pi^*a+p
+\]
+is an isogeny with kernel isomorphic to
+\(\operatorname{Jac}(C)[3]\), of order \(3^6\).
+In particular, it does not give a prime-to-three
+Selmer transfer.
+
+The polynomial of degree \(24\) defining \(C'\) is squarefree,
+as in MO4, so its hyperelliptic genus is eleven.
+The map \(\pi\) is totally ramified at the four points
+over \(t=0,\infty\), with ramification index three.
+Riemann–Hurwitz also gives
+\(2g(C')-2=3(2\cdot3-2)+4(3-1)=20\).
+
+The identity \(\pi_*\pi^*=[3]\) makes \(\pi_*\)
+surjective. To check connectedness of its kernel,
+it suffices by duality to check that \(\pi^*\) is
+injective. Work over the algebraic closure.
+Any nonzero line bundle in \(\ker\pi^*\) would have
+exact order three. Its associated connected étale
+cyclic cover of \(C\) would become trivial on \(C'\),
+so \(\pi\) would factor through that cover. Both
+covers have degree three, contradicting the ramification
+of \(\pi\). Thus \(\pi^*\) is injective, the norm kernel
+is connected, and its dimension is \(11-3=8\).
+The boundary points are individually rational and
+pushforward gives
+\(\pi_*B_{3,3/7}=B_0\). By MO5,
+\(\pi_*T=[2B_0]=0\), proving \(T\in P\).
+
+The intersection of \(\pi^*\operatorname{Jac}(C)\)
+with \(P\) is exactly
+\(\pi^*\operatorname{Jac}(C)[3]\), by injectivity and
+push-pull. The two subvarieties therefore span the
+eleven-dimensional Jacobian, and the kernel of addition
+is
+\(\{(a,-\pi^*a):a\in\operatorname{Jac}(C)[3]\}\).
+This proves the degree assertion.
+
+The inherited directions already lie in \(P[3]\), so
+membership in the Prym never establishes new independence.
+The more precise
+[CK2–CK3 calculation](MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md#exact-rational-torsion-on-the-marked-cover)
+now shows that \(P_c(\mathbb Q)[3]\) has rank exactly
+four for every nonzero rational scaling \(c\), and that
+these are all the rational \(3\)-torsion classes of the
+full Jacobian for \(c=3/7\). Consequently another
+rational norm function whose divisor is divisible by
+three on this fixed cover cannot supply a fifth
+independent direction. CK2 uses smaller quotient
+Jacobians and exact finite-group witnesses, beyond a
+bound from the genus-eleven characteristic polynomial
+alone. The associated checker has been replayed internally;
+this is not independent or external review.
+
+A fifth arithmetic virtual class would therefore need
+a different construction or specialization argument.
+The unit-line route in MO7 remains open. Independently,
+MO5 already excludes another direction from repeating
+its two-boundary-fibre construction.
+
+## The real unit line is the remaining arithmetic loss
+
+**Proposition MO7.** For a real field \(K\) in MO3, put
+\[
+ V_3(K)=\{a\in K^\times:v_{\mathfrak p}(a)\equiv0\bmod3
+                  \text{ for every finite }\mathfrak p\}/K^{\times3},
+ \qquad U=\mathcal O_K^\times/\mathcal O_K^{\times3}.
+\]
+Let \(W\subset V_3(K)\) be the four-dimensional marked
+space of MO3. Its image in \(\operatorname{Cl}(K)[3]\)
+has dimension \(4-\dim(W\cap U)\).
+Thus \(W\cap U=0\) gives real class \(3\)-rank at least
+four. A sufficient condition is that a fundamental
+unit of \(K\) is not a cube in at least one completion
+above \(3\). Alternatively, a fifth virtual class
+independent of \(W\) gives the same real class bound.
+
+Indeed the virtual-unit exact sequence is
+\[
+ 0\longrightarrow U\longrightarrow V_3(K)
+ \xrightarrow{\ [a]\mapsto[\mathfrak a],\ (a)=\mathfrak a^3\ }
+ \operatorname{Cl}(K)[3]\longrightarrow0.
+\]
+It is surjective by the definition of ideal class
+three-torsion, and its kernel consists exactly of
+unit classes. Dirichlet's theorem gives \(\dim U=1\);
+the sign contributes nothing modulo cubes.
+All four marked classes are cubes in both completions
+above \(3\). If a fundamental unit is not a local cube
+in one completion, localization is injective on the
+one-dimensional \(U\), whereas it vanishes on \(W\).
+Hence \(W\cap U=0\). Five independent virtual classes
+lose at most one dimension in the same exact sequence.
+
+The exact sequence proves these sufficient implications,
+not the fundamental-unit condition or the fifth class
+on any infinite subfamily. Establishing either route
+uniformly on an admissible local slice would preserve
+the count in MO4; isolated specializations or an
+unspecified infinite set do not establish that count.
+The imaginary mirror bound in MO3 remains at least four.
+
+## Three fully cubicized fibres cannot come from a rational parameter
+
+**Proposition MO8.** In characteristic zero there is no
+nonconstant morphism \(f:\mathbb P^1\to\mathbb P^1\)
+whose ramification indices are all divisible by three
+above each of three distinct target points.
+
+If \(n=\deg f\), each such fibre has at most \(n/3\)
+geometric points, since the ramification indices sum
+to \(n\). Its contribution to ramification is therefore
+\(\sum(e_x-1)=n-\#f^{-1}(y)\ge2n/3\).
+The three disjoint fibres contribute at least \(2n\),
+whereas Riemann–Hurwitz gives total ramification \(2n-2\).
+This is impossible.
+
+Thus a third fully cubicized fibre needs a different
+divisor construction or a parameter curve of positive
+genus. The proposition excludes this particular
+rational-parameter method; it supplies no obstruction
+to all possible fifth virtual classes.

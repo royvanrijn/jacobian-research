@@ -1,12 +1,13 @@
-# Balanced tail swaps obstruct relative Hermite control
+# Balanced reflected swaps: a Hermite obstruction and full-noise loss
 
 There is no finite constant $C$ such that
 $W_2(A)-W_2(T)\le C\delta(A)$ for every balanced four-cell Gaussian
 partition with $\delta(A)=W_1(T)-W_1(A)>0$. This fails already in dimension
 three, arbitrarily close to $T$ in Gaussian measure and in centroid Gram
 space. Consequently the proposed uniform higher-Hermite bound also fails.
-The first-Hermite theorem and a uniform interval of positive-correlation
-optimality remain open; neither is contradicted by this obstruction.
+Every proper reflected swap nevertheless strictly loses full noise stability
+at every $0<\rho<1$, by the kernel comparison below. The first-Hermite theorem
+and a uniform interval of positive-correlation optimality remain open.
 
 ## Normalization and comparison with the literature
 
@@ -227,8 +228,101 @@ $\kappa(\rho)$ such that
 $S_\rho(T)-S_\rho(A)\ge\kappa(\rho)\rho\delta(A)$ for every balanced
 $A$ with positive deficit. In particular the suggested
 $\rho\delta(A)(1-C\rho)$ bound cannot hold uniformly on a nonzero
-interval. This conclusion uses no assumed sign of the noise-stability
-difference and gives no partition beating $T$.
+interval. The estimate does not require a sign for the noise-stability
+difference. The next theorem establishes that it is strictly positive for
+every member of this family.
+
+## Proper reflected swaps strictly lose full noise stability
+
+Let $n\ge3$ and extend the tetrahedral cells cylindrically to $\mathbb R^n$.
+Let $g$ be the orthogonal reflection above, acting trivially on unused
+coordinates. Up to null boundaries, $gT_1=T_2$, and $T_1$ lies in
+$\{x_N>0\}$. For any measurable $B\subset T_1$, put $C=T_1\setminus B$ and
+
+$$
+A_1=C\cup gB,\qquad A_2=B\cup gC,\qquad A_3=T_3,\quad A_4=T_4.
+$$
+
+**Reflected-swap theorem.** This partition is balanced. For every
+$0<\rho<1$,
+
+$$
+S_\rho(T)-S_\rho(A)
+=4\int_{B\times C}\bigl[K_\rho(x,y)-K_\rho(x,gy)\bigr]
+\,d\gamma_n(x)d\gamma_n(y)\ge0. \tag{11}
+$$
+
+Equality holds exactly when $\gamma_n(B)=0$ or $\gamma_n(C)=0$.
+In particular every proper swap, meaning $0<\gamma_n(B)<1/4$, has
+$S_\rho(A)<S_\rho(T)$ for every $0<\rho<1$.
+
+Here the noise kernel is the density of the correlated Gaussian pair
+relative to $\gamma_n\otimes\gamma_n$:
+
+$$
+K_\rho(x,y)=(1-\rho^2)^{-n/2}
+\exp\!\left(
+\frac{2\rho\,x\cdot y-\rho^2(\|x\|^2+\|y\|^2)}{2(1-\rho^2)}
+\right). \tag{12}
+$$
+
+This follows by dividing the joint Gaussian density, with covariance
+$\begin{psmallmatrix}I&\rho I\\\rho I&I\end{psmallmatrix}$, by the two
+standard Gaussian densities. In particular the kernel is positive,
+symmetric, and satisfies $K_\rho(gx,gy)=K_\rho(x,y)$.
+
+**Proof.** Reflection preserves Gaussian measure, so
+$\gamma_n(A_1)=\gamma_n(C)+\gamma_n(B)=1/4$, and likewise for $A_2$.
+Write $I_\rho(E,F)=\int_{E\times F}K_\rho\,d\gamma_n d\gamma_n$.
+The four self-interactions of $B,C,gB,gC$ cancel between the two
+partitions, and the contributions of cells 3 and 4 are unchanged. The
+remaining difference is
+
+$$
+2\bigl[I_\rho(B,C)+I_\rho(gB,gC)
+       -I_\rho(C,gB)-I_\rho(B,gC)\bigr]
+=4\bigl[I_\rho(B,C)-I_\rho(B,gC)\bigr].
+$$
+
+The equality uses reflection invariance and symmetry. Changing variables
+in the last integral proves (11), including its factor four. All terms
+are finite since the full kernel integrates to one. Since reflection
+changes $x\cdot y$ by $2x_Ny_N$ and preserves norms, (12) gives
+
+$$
+\frac{K_\rho(x,y)}{K_\rho(x,gy)}
+=\exp\!\left(\frac{2\rho x_Ny_N}{1-\rho^2}\right)>1
+\quad\text{for almost every }(x,y)\in B\times C. \tag{13}
+$$
+
+If both sets have positive measure, their product has positive measure,
+so (11) is strictly positive. If either is null, the partition agrees
+with $T$ up to null sets or globally interchanges labels 1 and 2, and
+the difference is zero. This proves the equality characterization.
+
+Taking $B=gE_R$ gives exactly (3), so all the tail counterexamples are
+strictly suboptimal at every positive correlation. Combining (8) and
+(11) yields, for each fixed $0<\rho<1$,
+
+$$
+0<\frac{S_\rho(T)-S_\rho(A_R)}{\rho\delta(A_R)}
+\le\frac1{4\sqrt2c\,\rho R}\longrightarrow0.
+$$
+
+Thus strict full-noise loss coexists with failure of any positive uniform
+lower bound on this deficit scale. No Hermite truncation is used in the
+kernel proof.
+
+The closest checked rearrangement mechanism is the two-point
+polarization argument in [Kindler, O'Donnell and Witmer, *Remarks on the
+Most Informative Function Conjecture at fixed mean*, July 1, 2015,
+Theorem 4.2 and Lemmas 4.4--4.7](https://www.cs.cmu.edu/~odonnell/papers/continuous-most-informative-function.pdf).
+That theorem uses uniform sphere measure, a bounded nondecreasing
+inner-product kernel and a convex uniformly continuous outer function.
+Its reflection identities and sign comparison motivate (11)--(13);
+the Gaussian density and balanced four-cell identity are proved here
+directly. This comparison makes no novelty claim and supplies no
+reduction of arbitrary four-cell competitors to reflected swaps.
 
 ## Effect on the remaining proof route
 
@@ -238,13 +332,20 @@ eventual solution to one interval uniform over all balanced partitions.
 The affine replacement used for $W_1$ preserves neither $W_2$ nor noise
 stability, so an affine-only test cannot remove this obstruction.
 
-A uniform small-correlation theorem may still hold. A next bridge must
-either compare the full Ornstein--Uhlenbeck functional on the tails, where
-individual Hermite degrees need not approximate it uniformly, or prove a
-reduction to a restricted competitor class that excludes the swaps above.
-Any estimate on such a class needs its hypotheses and the reduction proved
-separately. A quantitative gap proportional to the unrestricted $\delta$
-cannot be its conclusion, by (8).
+A uniform small-correlation theorem may still hold. Equations (11)--(13)
+settle the full-noise comparison for every single reflected swap of a
+tetrahedral cell pair, including the remote tails. A remaining full-kernel
+approach could seek balance-preserving rearrangements that improve an
+arbitrary competitor toward $T$. No such reduction or sequence of
+rearrangements has been established. Comparisons for different cell pairs
+cannot simply be iterated using (11): its proof assumes the initial pair
+is the reflected tetrahedral pair. A quantitative gap proportional to
+the unrestricted $\delta$ cannot be the conclusion, by (8).
+
+The other task is the high-value full-rank first-Hermite stability gap,
+using the [five-dimensional shape Hessian](BALANCED_AFFINE_CENTROID_OPTIMIZATION.md#five-shape-directions-and-the-averaged-trace).
+That finite-dimensional obligation and a uniform full-noise comparison
+remain distinct; resolving the former alone does not resolve the latter.
 
 ## Reproducible controls and assurance
 
@@ -260,5 +361,7 @@ python3 research/plurality-stability/check_relative_tail_swaps.py
 
 The internal run uses Python 3.12.3 and its standard library at
 $R=1,2,4,8$. Floating-point controls check normalization and implementation;
-the proof for unbounded $R$ is (2)--(8). There is no interval certificate,
-independent replay, formal verification or external review.
+the proof for unbounded $R$ is (2)--(8). The full-noise theorem (11)--(13)
+is a written kernel argument for arbitrary measurable $B$; the tensor
+checker does not verify it. There is no interval certificate, independent
+replay, formal verification or external review.

@@ -136,8 +136,11 @@ A uniform replacement by a relative higher-Hermite error is obstructed by
 They have $\delta(A)=W_1(T)-W_1(A)>0$ tending to zero while
 $(W_2(A)-W_2(T))/\delta(A)$ is unbounded. Even at a fixed positive
 correlation, no positive uniform lower bound proportional to
-$\rho\delta(A)$ holds for all balanced partitions. A uniform interval of
-tetrahedral optimality remains a separate open question.
+$\rho\delta(A)$ holds for all balanced partitions. Nevertheless every
+proper reflected swap strictly loses full noise stability for every
+$0<\rho<1$, by the [full-kernel identity](RELATIVE_HERMITE_TAIL_OBSTRUCTION.md#proper-reflected-swaps-strictly-lose-full-noise-stability).
+A uniform interval over arbitrary balanced partitions remains open,
+separately from the high-value full-rank first-Hermite stability gap.
 
 ## Polynomial family and numerical comparison
 

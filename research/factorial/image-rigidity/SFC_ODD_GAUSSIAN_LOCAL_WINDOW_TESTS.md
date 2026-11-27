@@ -641,16 +641,16 @@ where \(k\ge0\), \(e\ge1\), \(p\) is odd prime and
  T_k=\operatorname{Res}_Z((2k+1)!\,S_k(Z),(2k+1)!\,S_k(2Z)),
  \qquad T_0=1 .
 \]
-The Gaussian gate closes over characteristic zero if
-\[
-       e=1\quad\text{or}\quad(2/p)=-1\quad\text{or}\quad p\nmid T_k.
-\]
+The Gaussian gate closes over characteristic zero for every such
+\(k,p,e\), without a quadratic-character or resultant restriction.
 In particular this covers every odd prime-power start and every
-\(q=5\cdot13^e\), \(e\ge1\). The
+\(q=5\cdot13^e\) and \(q=9\cdot89^e\), \(e\ge1\). The
 [shared-edge lifting argument](SFC_ODD_GAUSSIAN_SHARED_EDGE_LIFTING.md)
 completes the quadratic-residue internal edges of the Newton reduction.
 The [final-residue argument](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md)
-removes the resultant condition when \(e=1\) or \((2/p)=-1\).
+removes the resultant condition for every exponent and both
+quadratic characters. At positive-character primes its second
+secondary layer supplies the nonzero Wronskian obstruction.
 
 Let \(P=p^e\) and \(L=\sum_{d=1}^e p^{-d}\).
 Since \(2q<p^{e+1}\), the reduction argument of
@@ -776,9 +776,12 @@ The assumption \(p\nmid T_k\) excludes this slope. Even when the
 residues coincide, the [next digit layer](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md#3-the-next-digit-layer)
 excludes a common lift for \((2/p)=-1\). A common first-order
 coordinate change gives the same exclusion for \(e=1\) without
-a character restriction. For \(e\ge2,(2/p)=1,p\mid T_k\),
-this first compatibility can vanish; these cases remain outside
-the stated theorem.
+a character restriction. For \(e\ge2,(2/p)=1\), the first
+compatibility is the original Wronskian itself. The
+[second secondary layer](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md#6-the-second-secondary-layer-at-positive-character-primes)
+absorbs that term into a unit and forces Wronskian valuation
+\((p+3)/(2p)<1\), whereas the squared-gcd argument gives at
+least one. Thus the final shared slope is always excluded.
 
 For \(k>0\), \(S_k(2X^2)\) is proportional to the
 odd Hermite polynomial of degree \(2k+1\) divided
@@ -790,5 +793,7 @@ coefficient is one and its linear coefficient
 changes under scaling by two. Thus \(S_k(Z)\)
 and \(S_k(2Z)\) are coprime over \(\mathbb Q\)
 and \(T_k\ne0\). For each fixed \(k\) only
-finitely many primes are excluded by this
-resultant condition.
+finitely many primes fail this optional resultant shortcut.
+The second-layer proof excludes those primes as well whenever
+\(p>4k+2\). Schur irreducibility is therefore unnecessary for
+the updated dominant initial-prime theorem.
