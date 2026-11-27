@@ -29,10 +29,14 @@ The circular comparison below gives equality rigidity on this class.
 The [direct interval extension](THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md#proposition-dg4-global-comparison-through-rho-equal-to-2150)
 proves the same inequality through $21/50$. Its strict radial-mass
 remainder (DG20), with $J_+(t)>0$ for $t>0$, forces circular balance
-throughout $[2/5,21/50]$ at equality. Dimension reduction applies to
-each equal-value optimizer and the circular comparison gives
-simplex rigidity on the active plane. Thus the first transition
-correlation is **strictly greater than $21/50$**: the
+throughout $[2/5,21/50]$ at equality. The spectral bound (DG10)
+extends the explicit interval through $11/25$.
+The [comparison beyond the separated scalar threshold](THREE_CELL_BEYOND_SCALAR_THRESHOLD.md)
+then gives an implicit $r_1>11/25$ through which the global
+comparison holds, with simplex rigidity on $[11/25,r_1]$.
+One may choose $r_1$ in the interior of the extension neighborhood.
+Thus the first transition correlation, if it exists, exceeds $r_1$:
+the
 [three-cell continuation implication](SIMPLEX_INTERFACE_SYMMETRY.md#reflected-kernels-close-the-three-cell-spectral-problem)
 would require a nonsimplex tied maximizer at any first transition.
 
@@ -45,7 +49,7 @@ balanced low-influence plurality inequality on that interval.
 
 The preprint's Theorem 1.3 gives the discrete interval through $2/5$.
 The same implication with the extended Gaussian bound now gives the
-following statement for $\rho\in(0,21/50]$. Fix $\epsilon>0$. There is
+following statement for $\rho\in(0,r_1]$. Fix $\epsilon>0$. There is
 a $\tau>0$ such that for
 any $m$ and balanced $f:\{1,2,3\}^m\to\{1,2,3\}$, if all influences of
 the three indicator coordinates of $f$ are at most $\tau$, then
@@ -253,6 +257,69 @@ moments forces $b=0$ on the interfaces. This gives dilation
 invariance by distributional differentiation along radial rays, and
 hence the simplex by the conical rigidity below. The extra radial
 moment hypothesis and the slope equality remain open at a general tie.
+
+### Balanced dilation at an endpoint tie
+
+The radial-moment hypothesis in (G11) can be replaced by an explicit
+correction. Use the weighted norm $\|f\|_a^2=\int a f^2d\nu$ and the
+translation space $V=\{s_v:v\in\mathbb R^2\}$ from (G17). The
+first-order mass map $\mathcal M$ sends an oriented speed to its
+vector of outward mass fluxes. By the full cell-moment rank proved
+below, its restriction to translations is an isomorphism onto the
+label sum-zero space. In fact, with $m_i=\int_{A_i}x\,d\gamma_2$,
+Gaussian divergence gives
+\[
+ \mathcal M(s_v)_i=-v\cdot m_i,
+ \qquad \mathcal M(b)_i=\int_{A_i}(2-|x|^2)d\gamma_2 .
+\]
+Choose the unique $v$ for which $\mathcal M(s_v)=\mathcal M(b)$,
+and write $w=s_v$, $h=b-w$. The dilation about $v$ has balanced
+speed $h$. Equivalently the conditional second moments about
+$v/2$ are equal in all three cells. The flux identities can be
+read as limits of compact spatial cutoffs. For (G10), cut off
+$h$ and correct the resulting small fluxes by two fixed regular
+interface bumps. The polynomial-weighted bounds of (G3) and
+(G6) justify passing to the limit in the quadratic forms and the
+pairing with $g$.
+
+Set $c_r=(1-r)/r$, $q=Q_0(h)$, and
+$B_h=(1+r)\|h\|_a^2+\langle w,h\rangle_a$. The bilinear dilation
+identity from (G6) gives the exact expression
+\[
+ -(1-r^2)\langle g,h\rangle
+ =Q^{(1)}(b,h)+c_r\langle b,h\rangle_a
+ =r q+c_r B_h .
+ \tag{G21}
+\]
+For the second equality use that $w$ lies in the kernel of
+$Q^{(1)}$ and that $Q^{(1)}(h)=r q+(1-r)\|h\|_a^2$. The
+inequality (G10) applies at a tie with $D'(r)=0$ whenever
+distinct correlations of simplex optimality accumulate at $r$.
+The same second-order argument uses the sign of the correlation
+displacement along such a sequence. If $B_h>0$, then (G10)
+forces $q>0$ and the inequality $(r q+c_r B_h)^2/q\ge4r c_r B_h$
+yields
+\[
+ D''(r)\ge \frac{8(1-r)B_h}{(1-r^2)^2},\qquad
+ B_h\ge (1+r)\|b-P_V b\|_a^2-\frac{\|w\|_a^2}{4(1+r)} .
+ \tag{G22}
+\]
+The latter follows by completing the square in the translation
+part of $h$. For $w=0$ the direct expression for $B_h$ recovers
+(G11).
+
+If $D''(r)=0$, (G10) makes the left side of (G21) zero. Since
+$q\ge0$, this forces $B_h\le0$, which can also be written as
+\[
+ \|b-P_V b\|_a^2+
+ \left\|P_V b-\frac{1+2r}{2(1+r)}w\right\|_a^2
+        \le \frac{\|w\|_a^2}{4(1+r)^2} .
+ \tag{G23}
+\]
+Thus higher-order contact requires a nontrivial Gaussian
+second-moment imbalance when the partition stays far from
+conical geometry. A uniform form of this last requirement
+follows from (G24)–(G25) below.
 
 An exact condition also holds at every tie with the simplex, including
 a transverse first tie. Write $f_i=1_{A_i}-1_{T_i}$. For any measurable
@@ -804,6 +871,63 @@ indicator has zero weak radial derivative, so it is conical
 about $p$. The translated-cone classification above forces the
 simplex. Thus (G19) quantifies the sign obstruction at any
 nonsimplex tie in terms of failure of conicality about every point.
+
+### A uniform gap from conical geometry
+
+For an affine vector field $X$ in the active plane, the following
+identity expresses the weighted normal form by volume integrals:
+\[
+ \int a(X\cdot N)^2d\nu
+ =-\sum_i\int_{A_i}\operatorname{div}_{\gamma_2}
+          \{X(X\cdot\nabla U_i)\}\,d\gamma_2 .
+ \tag{G24}
+\]
+Apply Gaussian divergence to a compact cutoff of the vector field
+on the right. The sum of its outward normal traces on the two
+sides of an interface is $-a(X\cdot N)^2$ by the stationary
+normal-gradient identity. Polynomial-weighted finiteness from
+(G3) and (G6) allows the cutoff to tend to one on the boundary.
+The volume terms and cutoff errors pass to the limit by Gaussian
+integrability, since the derivatives of $U_i$ through order two
+are bounded at any fixed positive correlation.
+
+On compact subintervals of $(0,1)$ these derivative bounds are
+uniform over all input partitions. Along strong $L^2(\gamma_2)$
+convergence of maximizers with convergent correlations, the score
+derivatives converge on bounded sets by Gaussian convolution.
+With a uniform Gaussian integrable polynomial bound, (G24) is
+therefore continuous along such sequences. Polarizing it for
+$X(x)=x$ and the two constant coordinate fields shows that
+$\|b\|_a^2$, the translation Gram matrix, and the two mixed
+products are all continuous. In particular
+$\|b-P_V b\|_a^2$ is continuous since the translation Gram matrix
+is positive definite at every such maximizer.
+
+For each compact interval $J\subset(0,1)$ this gives
+\[
+ \inf\bigl\{\|b-P_V b\|_a^2:\rho\in J,\ A\text{ is a nonsimplex
+   planar balanced global maximizer at }\rho\bigr\}>0
+ \tag{G25}
+\]
+whenever the family is nonempty. A violating sequence has an
+ordinary strong maximizer limit by positive-correlation compactness.
+It cannot limit to the simplex orbit by the measurable local
+comparison (B11) and the spectral gap (S37). But (G24) and the
+translated-cone classification imply that a limit with zero
+dilation residual is exactly a simplex, a contradiction.
+
+The restricted mass map on translations has a uniformly bounded
+inverse on the same compact family by continuity of the cell first
+moments and full active rank. Also the largest eigenvalue of the
+translation Gram matrix is uniformly bounded by (G24). Consequently
+$\|w\|_a\le C_J|\mathcal M(b)|$ for the balancing translation in
+(G21). At a nonsimplex tie with $D'(r)=D''(r)=0$ and correlations
+of simplex optimality accumulating at $r\in J$, (G23)–(G25)
+imply $|\mathcal M(b)|\ge c_J>0$. With $|\mathcal M(b)|$ smaller
+than a sufficiently small threshold depending on $J$, (G22)
+instead gives a strictly positive lower bound on $D''(r)$ at
+a tangential tie. These statements use the mass imbalance of
+the original cells, before recentering the dilation.
 
 ## Regular interface arcs and isolated triple junctions
 

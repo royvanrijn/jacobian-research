@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "command": ".venv/bin/python research/plurality-stability/check_three_cell_global_arc_reduction.py",
+  "working_directory": "canonical repository root in Ubuntu-24.04 WSL",
+  "environment": {
+    "python": "3.12.3",
+    "python_flint": "0.9.0"
+  },
+  "checker_sha256": "b7049af4d9b0086a251ac4bd933d077fe58f1f960e78e3307fec1b617001703c",
+  "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
+  "proof_source_sha256": "e72ee7812ee9d9a252260061c449617c2b2b54f7ee61b7aa49e972f7d5fcec3d",
+  "result": {
+    "status": "pass",
+    "arb_precision_bits": 100,
+    "arithmetic": "python-flint Arb directed real balls; exact Fraction order controls",
+    "labeled_consecutive_orders": 6,
+    "oversized_inner_mass_control_rejected": true,
+    "explicit_instance": {
+      "rho": "1/2",
+      "inner_mass": "1/100000000",
+      "outer_annulus": [
+        "2",
+        "3"
+      ],
+      "inner_radius_squared": [
+        1.0000000329744254,
+        1.0000000329744259
+      ],
+      "outer_mass": [
+        0.12422628669837037,
+        0.1242262866983704
+      ],
+      "inner_mass_available": [
+        0.14869729794101913,
+        0.14869729794101919
+      ],
+      "cross_gap_delta": [
+        0.0022839264946420594,
+        0.0022839264946420603
+      ],
+      "outer_phase_coercivity": [
+        0.0358718911794771,
+        0.03587189117947712
+      ],
+      "cross_phase_lipschitz": [
+        1.7118576886652754,
+        1.7118576886652759
+      ],
+      "cross_error_coefficient": [
+        7.605583317526168,
+        7.60558331752617
+      ],
+      "inner_self_kernel_bound": [
+        2.244573231475484,
+        2.244573231475485
+      ],
+      "quadratic_cost": [
+        405.37983943766847,
+        405.3798394376686
+      ],
+      "stability_advantage_over_every_consecutive_partition": [
+        5.633936166484404e-12,
+        5.633936166484406e-12
+      ],
+      "remaining_pure_radial_masses": [
+        [
+          0.27122018665081477,
+          0.2712201866508149
+        ],
+        [
+          0.27122018665081477,
+          0.2712201866508149
+        ],
+        [
+          0.3333333299999999,
+          0.33333333000000004
+        ]
+      ]
+    },
+    "interior_profile_control": {
+      "mixing_parameter": "1/100000000000000",
+      "minimum_circular_mass": "1/300000000000000",
+      "remaining_gap_lower_bound": [
+        5.433936166484403e-12,
+        5.433936166484405e-12
+      ]
+    },
+    "scope": "One explicit balanced two-annulus instance has a positive directed lower gap over every consecutive-arc partition with its circular masses, using the written uniform comparison DG60-DG65. The all-rho theorem and interior-profile extension are analytic, not inferred from this selected correlation. No partition beating the regular simplex is asserted."
+  },
+  "certified_scope": "Directed100-bit Arb bounds for the explicitrho1/2,inner Gaussian mass10^-8 instance: radial admissibility, positive remaining pure-label masses, uniform comparison constants and lower stability gap greater than5.633936166484404e-12 over the consecutive-arc class with the same circular masses. All6 labeled orders are exhausted in exact Fraction arithmetic. Mixing parameter10^-14 retains a positive gap with every circular mass at least1/(3*10^14). The oversized mass1/100 is rejected by this sufficient-margin check.",
+  "analytic_scope": "DG60-DG64 prove the angular cross gap, outer phase coercivity, uniform control of arbitrary measurable inner/outer rotations and cyclic orders, exact radial balance and all-positive-correlation construction. The profile-interior extension uses endpoint displacement and Markov L1 continuity. These unrestricted claims are written analytic proofs, not inferred from the selected directed instance.",
+  "assurance": {
+    "internal_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "limits": "The falsified assertion is a nondecreasing consecutive-arc replacement for every balanced partition at fixed circular masses. This neither gives a partition beating the simplex nor disproves an arc classification restricted to actual global maximizers. The unregularized example has moment rankone and is not a global maximizer. The full target inequality remains open."
+}

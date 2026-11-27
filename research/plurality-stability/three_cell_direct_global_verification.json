@@ -5,7 +5,7 @@
   "working_directory": "repository root in Ubuntu-24.04 WSL",
   "checker_sha256": "65aeb3bd4ce1fc18495487fff0f6f5e3e66794813aef6b374596c56752445118",
   "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
-  "proof_source_sha256": "c0815a3b769a1f031b826ef9af9b6f6097aef8a599ffef037b2429364d4f97ff",
+  "proof_source_sha256": "e72ee7812ee9d9a252260061c449617c2b2b54f7ee61b7aa49e972f7d5fcec3d",
   "result": {
     "status": "pass",
     "python": "3.12.3",

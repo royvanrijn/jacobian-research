@@ -7,6 +7,10 @@ makes it equivalent to \(S_\rho(A)\leq S_\rho(T)\), including for
 partitions far from the simplex. Proposition DG10 gives a direct
 computer-assisted proof for every balanced three-cell partition in every
 dimension \(d\geq2\) throughout \(0<\rho\leq11/25\), extending DG4.
+The [scalar-threshold argument](THREE_CELL_BEYOND_SCALAR_THRESHOLD.md),
+adopted in DG15 below, extends the direct comparison qualitatively
+past the first obstruction to that separated scalar criterion. It gives
+no new explicit numerical cutoff.
 A separate [near-one result](THREE_CELL_NEAR_ONE_EXACT.md) records a qualitative
 interval adjacent to one. The full all-positive-correlation statement remains
 open; no overlap closing the intermediate range is established here. The argument also proves the comparison
@@ -1498,11 +1502,725 @@ for annular mass profiles separated from the balanced one as in (DG49).
 No exclusion of that entire class, or certified overlap of the correlation
 intervals, follows from this localization.
 
+## Exact comparisons within reflection orbits
+
+### Proposition DG12 (reflection cuts and the limit of type-constant sorting)
+
+Fix \(0<\rho<1\), a reflection \(R\) through a hyperplane containing
+the origin, and one of its open half-spaces \(H\). A reflection-pair
+swap exchanges the labels of \(x\) and \(Rx\), for an arbitrary
+measurable set of pairs. Such swaps preserve every cell's circular mass
+at every radius where that mass is defined, and hence preserve Gaussian
+balance. They have an exact quadratic comparison and an exact cut
+criterion, given below. If at most two unordered label-pair types occur,
+a common orientation increases stability, strictly unless the partition
+already has that orientation or its reverse almost everywhere on the
+active pairs.
+
+With all three pair types present this sorting statement is false.
+For every fixed \(\rho\in(0,1)\), there is an ordinary balanced planar
+partition and a reflection for which every choice of a single orientation
+per unordered pair type has strictly smaller stability. This is a
+counterexample to that sorting operation, not to the simplex comparison.
+
+For context, scalar polarization places the maximum of two reflected
+values on one side and the minimum on the other; see
+[Bianchi--Gardner--Gronchi--Kiderlen, equation (1), printed p. 2](https://arxiv.org/pdf/1912.07498).
+That primary definition concerns a scalar function. No three-label
+monotonicity theorem is imported here; all the comparisons below follow
+directly from the Gaussian kernel.
+
+Write \(F=(1_{A_1},1_{A_2},1_{A_3})\), and let the Gaussian-relative
+Mehler kernel in dimension \(d\) be
+
+\[
+ M_\rho(x,y)=(1-\rho^2)^{-d/2}
+ \exp\left[-\frac{\rho^2(|x|^2+|y|^2)-2\rho x\cdot y}
+                  {2(1-\rho^2)}\right].
+\]
+
+For \(x,y\in H\), put
+\(W(x,y)=M_\rho(x,y)-M_\rho(x,Ry)\). This is strictly positive:
+if \(u,v>0\) are the normal coordinates, then
+\(M_\rho(x,Ry)=M_\rho(x,y)e^{-2\rho uv/(1-\rho^2)}\).
+On \(H\), define
+
+\[
+ m(x)=\tfrac12(F(x)+F(Rx)),\qquad
+ E=\{x:F(x)\ne F(Rx)\}.
+\]
+
+The unordered pair at \(x\in E\) is denoted \(e(x)\in\{12,23,31\}\).
+Choose incidence vectors
+\(d_{12}=(1,-1,0)\), \(d_{23}=(0,1,-1)\),
+\(d_{31}=(-1,0,1)\). Every partition with these same reflection-pair
+multisets is specified by a measurable sign \(\sigma:E\to\{-1,1\}\),
+through \(F(x)-F(Rx)=\sigma(x)d_{e(x)}\). Its stability is exactly
+
+\[
+ S_\rho(A_\sigma)=C_R(m)+\frac12
+ \int_{E\times E}W(x,y)
+   (d_{e(x)}\cdot d_{e(y)})\sigma(x)\sigma(y)
+                  d\gamma_d(x)d\gamma_d(y),
+ \tag{DG50}
+\]
+
+where
+\(C_R(m)=2\int_{H\times H}(M_\rho(x,y)+M_\rho(x,Ry))
+m(x)\cdot m(y)d\gamma_d(x)d\gamma_d(y)\).
+Indeed, putting \(\delta_x=F(x)-F(Rx)\), the two sums of label
+inner products are
+\[
+ \begin{split}
+ F(x)\cdot F(y)+F(Rx)\cdot F(Ry)
+     &=2m(x)\cdot m(y)+\tfrac12\delta_x\cdot\delta_y,\\
+ F(x)\cdot F(Ry)+F(Rx)\cdot F(y)
+     &=2m(x)\cdot m(y)-\tfrac12\delta_x\cdot\delta_y.
+ \end{split}
+\]
+Splitting the full Gaussian integral into its four half-space pairs
+proves (DG50). All integrals are finite since \(0<W\le M_\rho\)
+on \(H\times H\) and the label vectors are bounded.
+
+If \(\sigma'\) reverses \(\sigma\) on \(B\subset E\), then
+
+\[
+ S_\rho(A_{\sigma'})-S_\rho(A_\sigma)
+ =-2\int_{B\times(E\setminus B)}W(x,y)
+   (d_{e(x)}\cdot d_{e(y)})\sigma(x)\sigma(y)
+                         d\gamma_d(x)d\gamma_d(y).
+ \tag{DG51}
+\]
+
+Thus nonnegativity of every integral on the right before the factor
+\(-2\) is necessary and sufficient for maximality within this fixed
+reflection-orbit class: every other sign function differs on one such
+set \(B\). Every balanced global maximizer satisfies these inequalities
+for every reflection. This is a finite-variation condition, requiring no
+interface regularity or closeness assumption. Preservation of circular
+masses follows by pairing points under the radius-preserving reflection
+on each sphere; it does not require an integration in the radius.
+
+If only two pair types occur, orient both incidence vectors away from
+their common label. Their inner products are then \(2\) for equal
+types and \(1\) for different types. The kernel multiplying the signs
+in (DG50) is strictly positive. Consequently constant signs maximize it;
+the gain over any other sign choice is
+\(2\int_{\{\sigma=1\}\times\{\sigma=-1\}}W(d_e\cdot d_f)
+d\gamma_d d\gamma_d>0\) when both sets have positive measure.
+The same conclusion holds with one type. With all three cyclic incidence
+vectors no choice of three fixed sign gauges makes every inner product
+positive: their three off-diagonal sign requirements have product \(-1\).
+The following construction proves that this sign obstruction is realized
+by ordinary Gaussian partitions, even after exact balance is imposed.
+
+Work in \(\mathbb R^2\), with \(H=\{(t,v):v>0\}\) and
+\(R(t,v)=(t,-v)\). Put \(h=1-\rho^2\) and
+\[
+ a=\sqrt{\frac{h\log2}{2\rho}},\qquad
+ x_j=((2j-5)a,1),\quad 1\le j\le4,\qquad
+ w_j=W(x_j,x_j)^{-1/2}.
+\]
+The exact normalized interaction is
+\[
+ w_iw_jW(x_i,x_j)
+ =\exp\left[-\frac{\rho((2i-5)a-(2j-5)a)^2}{2h}\right]
+ =2^{-(i-j)^2}.
+ \tag{DG52}
+\]
+Assign the four patches types \((12,23,31,12)\). The unordered atomic
+orientation energy is
+\[
+ \mathcal E(s)=\sum_{i<j}2^{-(i-j)^2}
+                 (d_{e_i}\cdot d_{e_j})s_i s_j.
+\]
+Exhausting its sixteen signs gives
+\[
+ \mathcal E(1,-1,1,-1)=\frac{351}{256},\qquad
+ \max_{s_1=s_4}\mathcal E(s)=\frac{161}{256},\qquad
+ \sum_{i<j}2^{-(i-j)^2}|d_{e_i}\cdot d_{e_j}|=\frac{417}{256}.
+ \tag{DG53}
+\]
+The restriction \(s_1=s_4\) is exactly a single orientation for type
+\(12\); the other two types each occur once and their signs are free.
+The strict gap is therefore \(95/128\).
+
+Here are explicit choices transferring this gap to positive-area patches.
+Let
+\[
+ R_0=\sqrt{1+9a^2},\qquad
+ L=2\left[\frac{\rho(R_0+1)}{1-\rho}+2\right],\qquad
+ b=\min\{1/4,a/4,1/(100L)\}.
+\]
+For points in the \(b\)-balls about any two centers, the normal
+coordinates exceed \(1/2\) and the norms are at most \(R_0+1\).
+Writing \(\beta=2\rho/h\), direct differentiation gives
+\[
+ \nabla_x\log W(x,y)
+ =\frac{-\rho^2x+\rho y}{h}
+       +\frac{\beta v}{e^{\beta uv}-1}(0,1).
+\]
+The second term has norm at most \(1/u\le2\), and the first at most
+\(\rho(R_0+1)/(1-\rho)\). The same bounds hold for \(\nabla_y\).
+Integrating along the two segments from the centers gives
+\[
+ |\log W(x,y)-\log W(x_i,x_j)|\le Lb\le1/100.
+\]
+Hence the relative kernel error is at most \(\eta=1/50\), since
+\(e^{1/100}\le100/99<1+\eta\) and
+\(e^{-1/100}\ge99/100>1-\eta\).
+
+Set \(C=\sum_jw_j\) and choose the positive number
+\[
+ \epsilon=\frac12\min\left\{\frac1{12C},
+       \min_j\frac{\gamma_2(B(x_j,b))}{w_j}\right\}.
+\]
+There is a unique radius less than \(b\) giving a ball \(B_j\)
+centered at \(x_j\) of Gaussian mass \(m_j=\epsilon w_j\).
+The four balls are disjoint and lie in \(H\). Their total mass is
+at most \(1/24\). On \(B_j\cup RB_j\), assign the two labels of
+type \(e_j\), one to each reflected ball, with orientation \(s_j\).
+On the remaining half-space region \(G=H\setminus\bigcup_jB_j\),
+choose three measurable sets \(C_k\) of masses
+\[
+ \gamma_2(C_k)=\frac12\left(\frac13-
+                         \sum_{j:k\in e_j}m_j\right).
+\]
+These masses are positive and sum to \(\gamma_2(G)\). For a concrete
+choice take successive quantiles of the tangent coordinate \(t\) under
+Gaussian measure restricted to \(G\). This measure has no atoms on
+coordinate levels, so the specified masses are attained. Label both
+\(C_k\) and \(RC_k\) by \(k\). Each full cell then has mass exactly
+\(1/3\), independently of the four signs. Null boundaries may be
+assigned arbitrarily.
+
+All sixteen resulting partitions have the same reflection-pair multisets
+and the same circular masses. The normalized cross-patch couplings
+\(\epsilon^{-2}\int_{B_i\times B_j}W\,d\gamma_2d\gamma_2\)
+differ from (DG52) by at most the relative error \(\eta\).
+The within-patch terms and \(C_R(m)\) are independent of the signs.
+It follows from (DG50)--(DG53) that the split signs \((1,-1,1,-1)\)
+beat every type-constant choice by at least
+\[
+ \epsilon^2\left[\frac{95}{128}
+                 -2\frac1{50}\frac{417}{256}\right]
+       =\frac{4333}{6400}\epsilon^2>0.
+ \tag{DG54}
+\]
+This proves the stated ordinary balanced counterexample at every fixed
+positive correlation. It excludes only a universal type-constant sorting
+step; the exact all-cut condition (DG51) remains valid with all three
+types. It neither supplies nor excludes a global simplex improver.
+
+The [exact finite checker](check_three_cell_reflection_orientation.py)
+exhausts the 81 four-label identities, sixteen orientation patterns,
+eight type-constant choices and 256 sign/cut identities, and checks the
+rational robustness margin. The Gaussian normalization, explicit patch
+construction and unrestricted statements use the written proof above.
+Its [verification record](three_cell_reflection_orientation_verification.json)
+records the internal replay and its limits. Run from the repository root:
+
+```sh
+python3 research/plurality-stability/check_three_cell_reflection_orientation.py
+```
+
+## Reflection order and a necessary three-type witness
+
+### Theorem DG13 (reflection-triangle rigidity for actual maximizers)
+
+Fix \(0<\rho<1\). An ordinary balanced planar global maximizer is a
+centered regular simplex if and only if, for every reflection through the
+origin, at least one of the three unordered reflected label-pair types
+has zero Gaussian measure. Thus every nonsimplex global maximizer has
+some reflection with all three types present on positive-measure sets.
+The four-patch partition in DG12 is not asserted to be a global maximizer.
+
+First there is a quantitative three-type defect valid for any partition.
+Let \(P_H A_i\) be scalar polarization of the individual cell toward
+\(H\); the three resulting sets need not form a partition. Define
+\(\mathcal P_R(A)=\sum_i S_\rho(P_H A_i)-S_\rho(A)\), where the
+stability of a single set means its indicator quadratic form. With
+\(\delta_i(x)=1_{A_i}(x)-1_{A_i}(Rx)\) on \(H\),
+
+\[
+ \begin{split}
+ \mathcal P_R(A)&=\frac12\int_{H^2}W(x,y)
+  [\sum_i|\delta_i(x)||\delta_i(y)|-\delta(x)\cdot\delta(y)]
+                                     d\gamma_2(x)d\gamma_2(y)\\
+ &=2\sum_i\int_{\{\delta_i=1\}\times\{\delta_i=-1\}}
+                                     W(x,y)d\gamma_2(x)d\gamma_2(y)\ge0.
+ \end{split}
+ \tag{DG55}
+\]
+
+In three labels the absolute product sum is
+\(|d_{e(x)}\cdot d_{e(y)}|\) on active pairs. Thus this is the
+defect between (DG50)'s absolute-kernel envelope and the actual energy.
+If \(K\subset H\), \(W\ge w>0\) on \(K^2\), and
+\(m_e=\gamma_2(K\cap E_e)\), then
+
+\[
+ \mathcal P_R(A)\ge2w\min\{m_{12}m_{23},m_{23}m_{31},m_{31}m_{12}\}.
+ \tag{DG56}
+\]
+
+For \(K=\{|x|\le B,x\cdot n\ge s\}\), \(s>0\), an explicit
+choice is
+\(w=(1-\rho^2)^{-1}e^{-\rho B^2/(1-\rho)}
+(1-e^{-2\rho s^2/(1-\rho^2)})>0\), directly from the Mehler formula.
+This bound does not compare the polarized-set sum with the simplex value.
+
+**The integrated defect.** Replacing scalar \(\delta_i\) by
+\(|\delta_i|\) in (DG50) proves (DG55). Since \(W>0\), its
+vanishing is equivalent to each \(\delta_i\) having one sign almost
+everywhere on \(H\). For the cyclic incidences of DG12, the cross-type
+defect on \(K\) is at least
+\(w\sum_{e<f}\int_{(E_e\cap K)\times(E_f\cap K)}
+(1+\sigma(x)\sigma(y))d\gamma_2d\gamma_2\); same-type terms are
+nonnegative. For every triple of signs,
+\((1+s_1s_2)+(1+s_2s_3)+(1+s_3s_1)\ge2\).
+Integrating over the three type sets gives a weighted sum at least
+\(2m_{12}m_{23}m_{31}\). Its coefficients are at most
+\(M=\max_e m_e\), so the unweighted cross-type sum is at least
+\(2m_{12}m_{23}m_{31}/M\). This is (DG56). If a mass is zero,
+the asserted lower bound is zero and no division is required.
+
+**Reflection order gives fixed-axis caps.** Suppose now that \(A\)
+is a balanced global maximizer and every reflection has at most two
+active types. DG12's strict two-type comparison gives
+\(\mathcal P_R(A)=0\) for every \(R\). Thus each cell is ordered
+with its reflection on either half-space. Put
+\(b_i=\int x1_{A_i}d\gamma_2\). The
+[full active-rank result](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#one-active-dimension-is-impossible)
+gives \(\operatorname{span}\{b_i\}=\mathbb R^2\). Since
+\(\sum_i b_i=0\), all three vectors are nonzero and no pair is
+parallel. Set \(c_i=b_i/|b_i|\). For every unit normal \(n\),
+
+\[
+ b_i\cdot n=\int_{H_n}(x\cdot n)
+                  [1_{A_i}(x)-1_{A_i}(R_nx)]d\gamma_2(x).
+ \tag{DG57}
+\]
+
+The bracket has a fixed sign, so its order is determined by
+\(c_i\cdot n\); it vanishes if that dot product is zero. Hence,
+for almost every radius, the section of \(A_i\) is an arc centered
+at \(c_i\), possibly empty or full. To check the measurable step,
+reflection with normal orthogonal to \(c_i\) gives axis symmetry.
+Rotate this axis to angle zero. For \(0<\theta_1<\theta_2<\pi\),
+reflection with axis \(\alpha=(\theta_1+\theta_2)/2\) sends the
+first point to the second. Its normal \((\sin\alpha,-\cos\alpha)\)
+has positive dot product with both \(c_i\) and the first point.
+Fubini in \((r,\alpha,\theta_1)\), followed by this nonsingular
+angular change of variables, gives the decreasing binary order for
+almost every \((r,\theta_1,\theta_2)\). A binary function with
+this pairwise order is an initial interval up to null sets; axis
+symmetry gives the claimed arc.
+
+This is the familiar foliated Schwarz order characterization. The
+measurable Lebesgue \(L^p\) statement in
+[Brock--Chiacchio--Croce--Mercaldo, Theorem 2.3](https://www.degruyterbrill.com/document/doi/10.1515/anona-2025-0103/html)
+was inspected. A Gaussian cell need not be Lebesgue \(L^p\) on the
+whole plane, so that theorem is context; (DG57) and the Fubini argument
+prove the weighted measurable version needed here.
+
+**Maximizing scores exclude radial changes.** Three such disjoint arcs
+partitioning a circle either have one full and two empty members or
+have all three nonempty and proper. Exactly two nonempty proper arcs
+would be complementary and have antipodal centers, contrary to the
+nonparallel \(c_i\). In the three-arc case their order is the cyclic
+order of the fixed centers. Their widths satisfy
+\(\omega_i+\omega_{i+1}=2g_i\), where \(g_i\) are the consecutive
+center gaps and indices are cyclic. This system has a unique solution,
+independent of radius. Write \(I_i\) for these fixed open arcs.
+Three-arc radii have positive measure, since otherwise every cell is
+radial and all \(b_i=0\).
+
+The first circular moment of \(1_{A_i}\) is \(a_i(r)c_i\), with
+\(a_i(r)\ge0\) and strict positivity on the three-arc radii.
+For \(U_i=T_\rho1_{A_i}\), positive radial Gaussian factors and
+\(I_1(\kappa)>0\) give
+
+\[
+ \int_{S^1}\theta U_i(r\theta)d\sigma(\theta)
+                  =q_i(r)c_i,\qquad q_i(r)>0\quad(r>0).
+ \tag{DG58}
+\]
+
+Thus \(U_i-U_k\) cannot be constant on an entire positive-radius
+circle, since its first circular moment is
+\(q_i(r)c_i-q_k(r)c_k\ne0\).
+
+The actual maximizing-score rule assigns \(A_i\) by the largest
+\(U_i-\lambda_i\), up to null sets, with constant prices and
+real-analytic Gaussian scores, as in the
+[conical rigidity argument](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#convex-cells-and-conical-partitions).
+For completeness, the exact quadratic expansion at a global maximum
+shows that \(A\) maximizes the linear assignment with scores \(U_i\).
+Minimize \(\frac13\sum_i\lambda_i+
+\int\max_i(U_i-\lambda_i)d\gamma_2\) in the gauge
+\(\sum_i\lambda_i=0\). This convex functional is coercive, since
+\(\int U_i=1/3\) bounds it below by \(1/3-\min_i\lambda_i\).
+Every adjusted pair difference is nonconstant analytic: its first
+Gaussian moment is \(\rho(b_i-b_k)\ne0\). Ties are null, so
+differentiation of the price functional makes every winning mass
+\(1/3\). The winning assignment is unique almost everywhere, and
+\(A\), having the same optimal linear value, equals it.
+On each \(I_i\), the label depends only on radius: it is \(i\) at
+three-arc radii and the full-circle label otherwise. For almost every
+radius its winning inequalities hold at every angle in \(I_i\), by
+continuity from the almost-everywhere version. If two radial labels had
+positive measure, their essential supports, together with those of the
+remaining label, form a finite closed cover of \((0,\infty)\).
+Connectedness forces two nonempty supports to meet at a positive radius.
+Approach it through good radii of both labels. Their adjusted scores
+then agree on all of \(I_i\). Angular analyticity extends equality
+to the whole circle, contradicting (DG58). The radial label on each
+\(I_i\) is therefore constant, and is \(i\) because three-arc radii
+have positive measure. Thus the partition consists of three fixed
+sectors. Balance forces their widths to be \(2\pi/3\).
+
+Conversely each simplex cell is the fixed cap
+\(c_i\cdot x/|x|>1/2\), so its reflection difference has one sign
+on every half-space. Formula (DG55) vanishes. If three types were
+present, exhaustion by bounded sets separated from the reflecting line
+would capture positive mass of each, contradicting (DG56). This proves
+the stated equivalence.
+
+**Uniform witnesses for the remaining failure class.** Together with
+DG11, this gives finitely many fixed planar reflections
+\(R_1,\ldots,R_N\) and \(\eta>0\) such that every hypothetical
+strict failure has a planar balanced maximizing representative \(B\)
+at \(11/25<\rho<u\) for which some \(j\) satisfies
+
+\[
+ \gamma_2(B_i\cap R_jB_k)\ge\eta\qquad(1\le i<k\le3).
+ \tag{DG59}
+\]
+
+Here is the compactness proof, including its relaxation step. The
+relaxed balanced set \(0\le f_i\le1\), \(\sum_i f_i=1\) is
+weakly compact in \(L^2\). At positive correlation the OU operator
+is compact and its form is strictly positive on nonzero functions.
+A relaxed maximizer is ordinary: where two coordinates stay a fixed
+distance from zero and one, two disjoint equal-mass pieces admit a
+nonzero mean-zero transfer \(h\), with both \(f+h\) and \(f-h\)
+feasible. Their average energy exceeds that of \(f\) by the positive
+form of \(h\). If no such set exists, the vector is ordinary almost
+everywhere. This also proves equality of relaxed and ordinary maxima.
+On \([11/25,u]\), the operators are norm continuous, since
+\(\sup_{m\ge0}|\rho^m-s^m|\to0\) uniformly away from one.
+Energies on the relaxed set change by at most this operator-norm
+difference, so the maximum value is continuous as well.
+A weak limit of maximizers is therefore a relaxed maximizer at the
+limiting correlation, hence ordinary. Its summed squared norm is one,
+as for the sequence, so convergence is strong in \(L^2\) and \(L^1\).
+
+The planar maximizing family in this compact correlation interval is
+therefore \(L^1\)-compact. Impose DG11's closed condition
+\(E_J(B)\ge\delta\), continuous in \(L^1\) by conditional
+expectation and bounded circular masses. This leaves a compact family
+containing every strict-failure representative and no centered simplex.
+On it
+\(\max_R\min_{i<k}\gamma_2(B_i\cap RB_k)\) is strictly positive
+by the rigidity above and continuous: overlaps obey a uniform
+symmetric-difference bound in \(B\), and rotations are strongly
+continuous on Gaussian \(L^1\). A positive minimum and a finite open
+subcover give fixed witness reflections and (DG59). If this compact
+family is empty the assertion is vacuous.
+
+Each overlap in (DG59) equals the mass of its unordered type in either
+half-space. Removing a thin strip and a distant exterior loses at most
+\(\eta/2\) of each type, uniformly in \(B\) and the reflection.
+Then (DG56), uniformly over the compact correlation interval, gives a
+fixed positive scalar polarization defect at the selected reflection.
+The constants are qualitative. No estimate excluding this defect or
+the entire remaining maximizing class is proved; the original global
+inequality remains open.
+
+The reflection checker exhausts the eight triangle signs and checks
+the absolute-incidence identity in all 81 label cases. These support
+(DG55)--(DG56). The measurable order, analytic scores and compactness
+arguments are written proofs, not conclusions from finite sampling.
+
+## A global obstruction to reducing every circular slice to consecutive arcs
+
+### Theorem DG14 (balanced global consecutive-arc reduction is false)
+
+For every fixed \(0<\rho<1\), there is an ordinary balanced planar
+partition \(A\) such that
+\[
+ S_\rho(A)>\sup\{S_\rho(C):p_C(r)=p_A(r)\text{ a.e., and each slice
+ of }C\text{ consists of consecutive arcs}\}.
+\]
+The competitors may choose arbitrary measurable rotations and either
+cyclic label order at each radius. Empty arcs and a full-circle arc are
+allowed. There is also such an example with every circular mass bounded
+below by one fixed positive constant. Thus reducing a single global
+partition to consecutive arcs while preserving its circular masses is
+not a universally increasing operation. No comparison of this example
+with the simplex is asserted.
+
+The [joint angular note](THREE_CELL_JOINT_ANGULAR_ENVELOPE.md) already
+excludes the analogous reduction for a bilinear pair of slices away from
+balanced masses. The issue here is different: radial self-interactions
+could in principle repair a failed pair reduction. The proof controls
+all those self-interactions and arbitrary outer rotations explicitly.
+The inspected primary Corollary A.3 in
+[Heilman, arXiv:2608.00333v1](https://arxiv.org/html/2608.00333v1)
+bounds the sum of individually aligned same-label arc pairings; it does
+not assert their joint attainment by a three-cell partition on every
+circle. Its upper bound and (DG16) remain valid.
+
+**An angular gap.** Write \(k_\kappa=e^{\kappa\cos\theta}/I_0(\kappa)\).
+Let \(h_\kappa\) be its convolution with the half-circle centered at
+zero, and let \(g_\kappa(t)\) be the pairing of that half-circle
+with the arc of length \(1/3\) centered at angle \(t\), using
+probability measure on both circles. Direct endpoint differentiation gives
+\[
+ h_\kappa'(t)=-\frac{\sinh(\kappa\sin t)}{\pi I_0(\kappa)},\qquad
+ g_\kappa'(t)=\frac{h_\kappa(t+\pi/3)-h_\kappa(t-\pi/3)}{2\pi}.
+\]
+Both functions are even and strictly decreasing in circular distance
+from zero on \((0,\pi)\). For \(0\le t\le\pi/6\), the interval
+\([\pi/3-t,\pi/3+t]\) lies in \([\pi/6,\pi/2]\), where
+\(\sin v\ge1/2\). Integrating the displayed derivatives therefore gives
+\[
+ g_\kappa(0)-g_\kappa(\pi/6)
+                  \ge\frac{\sinh(\kappa/2)}{72 I_0(\kappa)}>0.
+ \tag{DG60}
+\]
+For the monotonicity of \(g\), the circular distance of
+\(t+\pi/3\) from zero is larger than that of \(t-\pi/3\) for
+\(0<t<\pi\); use the monotonicity of \(h\).
+
+Give the outer slice masses \((1/2,1/2,0)\), with its first two
+half-circles centered at zero and \(\pi\). The inner slice of masses
+\((1/3,1/3,1/3)\) can put label 1's arc at zero and label 2's arc at
+\(\pi\), leaving label 3 the two complementary arcs. Its cross
+pairing is \(2g_\kappa(0)\). In any consecutive inner slice the
+first two centers differ by \(\pm2\pi/3\), so their offsets from the
+two outer centers have circular separation \(\pi/3\). At least one
+offset is at distance at least \(\pi/6\). Its total pairing is at
+most \(g_\kappa(0)+g_\kappa(\pi/6)\). Formula (DG60) is thus a
+uniform strict gap over both cyclic orders and all inner rotations.
+
+**The radial construction and constants.** Put \(d=1-\rho^2\),
+\(d\mu(r)=r e^{-r^2/2}dr\), and
+\[
+ Q(r,s)=d^{-1}e^{-\rho^2(r^2+s^2)/(2d)},\qquad
+ \kappa(r,s)=\rho rs/d.
+\]
+The polar Mehler kernel is \(Qe^{\kappa\cos\theta}\).
+Take an outer annulus \(V=[2,3]\) of radial mass
+\(\beta=e^{-2}-e^{-9/2}\), and an inner annulus
+\(U=[1,r_\alpha]\subset[1,5/4]\) of mass \(\alpha\).
+On \(U\), use the nonconsecutive inner slice just described; on
+\(V\), use the two fixed half-circles. At each remaining radius use
+a single label for the full circle. Partition those remaining radii
+into three sets of respective \(\mu\)-masses
+\[
+ 1/3-\alpha/3-\beta/2,\quad
+ 1/3-\alpha/3-\beta/2,\quad 1/3-\alpha/3.
+\]
+They are positive if \(\alpha\le1/12\), since \(\beta<1/3\), and
+sum to \(1-\alpha-\beta\). Successive radial quantiles on the
+complement of \(U\cup V\) specify these sets. The full partition
+is ordinary and exactly balanced. All interactions with those pure
+radii depend only on the circular masses and hence cancel in every
+comparison under consideration.
+
+For arbitrary rotating outer half-circles with center \(t(s)\), put
+\(z=\beta^{-1}\int_V e^{it(s)}d\mu(s)\) and \(v=1-|z|^2\).
+Their same-annulus energy is at most the aligned value minus
+\[
+                        c\beta^2v,\qquad
+ c=\frac{8\rho}{\pi^2d^2}e^{-9\rho^2/d}>0.
+ \tag{DG61}
+\]
+Indeed the two-label angular pairing at relative rotation \(t\) is
+\(1/2+(4/\pi^2)\sum_{m\ge1\text{ odd}}I_m(\kappa)
+\cos(mt)/(m^2I_0(\kappa))\). All Fourier coefficients are positive.
+Keep its first mode, use \(I_1(\kappa)\ge\kappa/2\), and use
+\(r,s\in[2,3]\) to obtain (DG61).
+
+The following constants are positive and finite for each fixed \(\rho\):
+\[
+ \begin{split}
+ \delta&=\frac{e^{-169\rho^2/(32d)}}{72d}\sinh(\rho/d),\\
+ L&=\frac{2}{3\pi d}\sinh(15\rho/(4d)),\qquad
+ C=\sqrt2\pi L,\\
+ M&=d^{-1}e^{25\rho/(16(1+\rho))},\qquad
+ K=M+C^2/(4c).
+ \end{split}
+ \tag{DG62}
+\]
+For \(r\in U,s\in V\), the factor \(Q\) is at least
+\(d^{-1}e^{-169\rho^2/(32d)}\), and \(\kappa\ge2\rho/d\).
+Thus (DG60), after multiplication by \(QI_0\), gives cross gap at
+least \(\delta\) against any consecutive inner slice and a fixed
+outer phase. The cross pairing changes by at most \(L|t-t_0|\)
+under rotation of the outer half-circles: its derivative is bounded by
+\((2/3)Q\sinh\kappa/\pi\), since the inner first two masses sum
+to \(2/3\), and \(\kappa\le15\rho/(4d)\).
+The inner Mehler kernel is at most \(M\), using
+\(|x|,|y|\le5/4\) and
+\(M_\rho(x,y)\le d^{-1}
+e^{\rho(|x|^2+|y|^2)/(2(1+\rho))}\).
+
+Choose \(t_0=\arg z\), arbitrarily if \(z=0\). For circular
+distance \(|t-t_0|\le\pi\),
+\[
+ \beta^{-1}\int_V|t(s)-t_0|d\mu(s)
+ \le\frac\pi2\sqrt{2(1-|z|)}\le\frac\pi{\sqrt2}\sqrt v.
+\]
+This follows from \(|t-t_0|\le(\pi/2)|e^{it}-e^{it_0}|\) and
+Cauchy--Schwarz. Rotate the constructed partition to phase \(t_0\);
+its stability is unchanged. Combining the uniform cross gap, the
+cross rotation error, (DG61), and the worst possible inner self cost
+gives, for every consecutive-arc competitor \(C_*\) with this profile,
+\[
+ \begin{split}
+ S_\rho(A)-S_\rho(C_*)&\ge
+ 2\delta\alpha\beta+c\beta^2v-C\alpha\beta\sqrt v-M\alpha^2\\
+ &\ge2\delta\alpha\beta-K\alpha^2.
+ \end{split}
+ \tag{DG63}
+\]
+The factor two in the cross terms counts both ordered radial pairs.
+The final step completes the square in \(\beta\sqrt v\).
+This estimate controls all measurable outer rotations and all inner
+rotations and cyclic orders; it is not a comparison only with a fixed
+pair of reference angular shapes.
+
+For an explicit admissible choice set
+\[
+ \alpha=\tfrac12\min\{1/12,e^{-1/2}-e^{-25/32},\delta\beta/K\},
+ \qquad r_\alpha=\sqrt{-2\log(e^{-1/2}-\alpha)}.
+ \tag{DG64}
+\]
+Then \(1<r_\alpha<5/4\), its annulus has exactly the stated mass,
+and (DG63) is at least \(\delta\alpha\beta>0\).
+This proves the all-parameter assertion with the order of quantifiers
+stated: the construction and its positive gap may depend on \(\rho\).
+
+**Strictly positive profiles.** Let \(G>0\) be the lower gap in
+(DG63). Replace the profile by
+\(p^\tau=(1-\tau)p+\tau(1/3,1/3,1/3)\). It is balanced and every
+coordinate is at least \(\tau/3\). Reallocate angular mass within
+each slice to realize it by an ordinary \(A^\tau\) satisfying
+\(\sum_i\gamma_2(A_i^\tau\triangle A_i)\le2\tau\).
+For example remove the required mass from surplus labels in label
+order, starting clockwise at angle zero, and assign the pieces to
+deficit labels in label order. The profile and angular shapes here
+have finitely many radial classes, so these choices are measurable.
+
+Conversely every consecutive-arc partition of profile \(p^\tau\)
+can be changed to one of profile \(p\) while keeping its starting
+endpoint and cyclic order, with summed symmetric difference at most
+\(8\tau\). In fact shifting the two cumulative endpoints bounds
+the sum by \(4\int\|p^\tau-p\|_1d\mu\le8\tau\).
+For any two partitions \(B,D\), Markov contraction gives
+\(|S_\rho(B)-S_\rho(D)|\le2\sum_i\gamma_2(B_i\triangle D_i)\).
+Thus the new strict gap is at least \(G-20\tau>0\) when
+\(0<\tau<G/40\). The obstruction persists with uniformly interior
+circular masses.
+
+The [directed checker](check_three_cell_global_arc_reduction.py) certifies
+one explicit instance at \(\rho=1/2\), \(\alpha=10^{-8}\), with
+\[
+ 5.633936166484404\,10^{-12}
+ <2\delta\alpha\beta-K\alpha^2
+ <5.633936166484406\,10^{-12}.
+ \tag{DG65}
+\]
+It also checks the exact six labeled consecutive orders, radial
+admissibility, the remaining positive masses, and a rejected oversized
+annulus control. The all-parameter and all-competitor proof is
+(DG60)--(DG64); the selected directed run supplies a concrete numerical
+instance only. The [verification record](three_cell_global_arc_reduction_verification.json)
+pins its environment, inputs and internal scope. Replay from the root:
+
+```sh
+.venv/bin/python research/plurality-stability/check_three_cell_global_arc_reduction.py
+```
+
+The example obstructs an operation on arbitrary balanced partitions.
+It does not disprove a consecutive-arc classification restricted to
+actual global maximizers. In particular its original unregularized
+form has first moments on one line and is excluded as a global
+maximizer by the full active-rank theorem. The obstruction also exists
+at correlations already covered by DG10, where the simplex comparison
+is known to hold.
+
+## Adopting the direct comparison across the scalar obstruction
+
+### Corollary DG15 (a direct interval beyond the first scalar threshold)
+
+Let \(\rho_{\mathrm s}\) be the first separated scalar obstruction
+defined by (ST1) in the
+[threshold proof](THREE_CELL_BEYOND_SCALAR_THRESHOLD.md). Then
+\(11/25<\rho_{\mathrm s}<1/2\), and there is \(\varepsilon>0\)
+such that every ordinary balanced Gaussian three-cell partition in
+every \(d\ge2\) satisfies
+\[
+ \widetilde Q_\rho(1_A-1_T)\le2L_\rho(A;T)
+                  \qquad(0<\rho<\rho_{\mathrm s}+\varepsilon).
+ \tag{DG66}
+\]
+The threshold and extension are implicit. On a neighborhood of
+\(\rho_{\mathrm s}\), the planar comparison has the stronger weighted
+radial-mass deficit (ST2), and equality forces the simplex. This does
+not assert that the separated scalar criterion itself remains valid
+above its first obstruction.
+
+The proof source is (ST1)--(ST6) and their subsequent compactness
+argument; its complete proof remains there. Its essential new point
+is strict angular loss on every nonzero scalar null profile. At the
+threshold the scalar form is nonpositive. A bounded null profile
+satisfies the Euler equation (ST4), hence has analytic representatives
+on the positive radial axis. Its mass coordinates are interior except
+at isolated zeros and are not all constant. The penalty \(\Gamma\)
+of DG6 is strictly positive on a positive-measure set of unequal
+interior profile pairs, so (DG29) is strictly negative on that null
+profile.
+
+Uniformity across the threshold uses the compact normalized radial
+operator for correlations strictly below \(1/2\). A sequence nearly
+violating (ST2) either has weighted mass norm tending to zero, in which
+case the adopted annular comparison (DG48) gives a uniform contradiction,
+or has a nonzero strongly convergent scalar null limit. In the latter
+case positivity and continuity of \(\Gamma\) at almost every limiting
+pair, followed by Fatou, give a strictly positive angular loss, again a
+contradiction. The source also proves density of bounded mean-zero
+tests in the weighted hyperplane, compactness and continuity of its
+uncentered operator, and the relaxation-to-null step. These hypotheses
+are needed; pointwise strictness alone would not supply a neighborhood.
+
+This adopts the direct threshold comparison, rather than the
+fixed-correlation interface isolation theorem. Maximizer existence and
+dimension reduction extend its planar bound to all competitors in
+\(d\ge2\), and (B1) gives (DG66). The internal audit checked the
+weighted origin and Gaussian tail bounds, feasible bounded limiting
+profiles, analytic interiority, and the two norm cases in the uniformity
+argument. No new numerical spectral cutoff, independent replay, formal
+verification or external review is claimed.
+
+In particular the lower bound \(11/25\) in the necessary failure
+localizations (DG49) and (DG59) may be strengthened to one fixed
+\(v>\rho_{\mathrm s}\), by taking
+\(v=\rho_{\mathrm s}+\varepsilon/2\) after shrinking
+\(\varepsilon\) so that \(v<1/2\). Their qualitative upper bound
+and their annular and reflection witnesses remain valid. The global
+comparison beyond this direct interval and below the near-one interval
+remains open.
+
 ## Remaining obligation and reproducible controls
 
 Completing the all-positive-correlation statement requires a comparison
-across the remaining intermediate range between the direct interval through
-\(11/25\) and the separate qualitative near-one interval. In the polar
+across the remaining intermediate range above the qualitative direct
+interval in DG15 and below the separate near-one interval. DG10 still
+supplies the explicit numerical cutoff \(11/25\). In the polar
 route, the unresolved all-partition comparison is (DG4), retaining enough of
 \(\mathcal C_\rho\) or using a different mechanism. Global balance
 alone does not remove \(\mathcal R_\rho\); equal circular masses do.
@@ -1524,6 +2242,11 @@ Proposition DG3 rules out proving the stronger mass-only inequality after
 the angular Cauchy step throughout \((0,1)\). It does not rule out
 stronger coupled angular estimates, a different direct proof, or the
 classification of actual maximizers.
+Theorem DG14 rules out a universal global reduction to consecutive arcs
+at fixed circular masses, even for uniformly positive profiles. A proof
+using such a reduction specifically for actual global maximizers would
+still need their maximizing-score information; it cannot follow from a
+monotonic rearrangement available to every balanced partition.
 
 The supplementary [checker](check_three_cell_direct_global.py) checks the
 quadrant formula against independent numerical integration, exact radial

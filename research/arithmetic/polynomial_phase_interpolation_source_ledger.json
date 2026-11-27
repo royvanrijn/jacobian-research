@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_HERMITE_POWER_PHASE_CHARTS.md",
+  "assurance": "Internal written Hermite/interpolation/rational-invariant proofs, with exact rational chart/norm and bounded permutation controls. The prior published BG classification is read for comparison; the new connectedness proof does not import it. No novelty, independent replay, external review, formal verification or general period-cell implementation is asserted.",
+  "declarations": [
+    {
+      "name": "Theorem J1. Exact Hermite coefficient charts",
+      "node": "ARITH-POLYNOMIAL-HERMITE-POWER-PHASE-EXACT-CHARTS",
+      "scope": "For a>=2,n>2a,s=n-a-1, every polynomial of passport(2^n),(2^a1^(2n-2a)),T^s has an exact Hermite power chart f=(vQ+P_+^2 P_-^2 R)^2, degP_+=j,degP_-=a-j,degR=n-2a. Q is the unique CRT interpolant +/-1 modulo the two squares. A=H'/(nP) and C(Y)=Norm_(C[z]/A)(Y-H^2) give all necessary and sufficient discriminant/nonzero/collision exclusions. Balanced phase bins require the explicit swap involution."
+    },
+    {
+      "name": "Theorem J2. Nonemptiness, components, and rationality",
+      "node": "ARITH-POLYNOMIAL-HERMITE-POWER-PHASE-RATIONALITY",
+      "scope": "For every n>2a>=4 and j=0..floor(a/2), the exact chart open is nonempty and irreducible. A Rolle/interpolation perturbation proves uniform nonemptiness, independently of the imported BG component theorem. Phase counts separate the resulting complete list of components. Centering and scaling, followed by the balanced-bin swap if needed, have diagonal rational invariant fields, proving each affine-quotient component rational overQ and of complex dimension n-a-1."
+    },
+    {
+      "name": "Theorem J3. Actual groups, every block, and exact sizes",
+      "node": "ARITH-POLYNOMIAL-HERMITE-POWER-PHASE-GROUPS-AND-SIZES",
+      "scope": "Every such phase component has the identical actual group S_n wr C2, order2(n!)^2, every block divisor{1,2,2n} and deck1. Canonical transposition blocks and the return budget exclude all larger dihedral quotients in n>2a. Exact full literal size is L*2^s*(2-indicator(2j=a))*C_n(j,a-j;s), L=(s+2)(s+1), with B4's elementary factorial count; absolute size divides by2n. The proof uses lower critical-value square-root choices and sign quotient, not an extrapolated finite census."
+    },
+    {
+      "name": "Proposition J4. Two explicit rational surfaces in degree ten",
+      "node": "ARITH-POLYNOMIAL-DEGREE10-RATIONAL-PHASE-SURFACES",
+      "scope": "For n5,a2 the two components have explicit Hermite surfaces H0=-v+[z(z-1)]^2(z+t) and H1=v(1-6z^2+4z^3)+[z(z-1)]^2(z+t), with exact norm exclusions. Pair reversal sends(t,v) to(-1-t,-v) or(-1-t,v), giving rational quotient coordinates((2t+1)/v,v^2) and((2t+1)^2,v). Literal sizes2400/6000, absolute240/600, fixed-type critical-value degrees20/50. Their intrinsic branch classes already differ; this is not a new genuine lifting split."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Andrei Bogatyrev and Quentin Gendron",
+      "title": "The space of solvable Pell–Abel equations",
+      "publication": "Compositio Mathematica161(2025),1483-1511",
+      "doi": "10.1112/S0010437X25007158",
+      "url": "https://doi.org/10.1112/S0010437X25007158",
+      "path": "research/arithmetic/sources/bogatyrev-gendron-pell-abel-2025.pdf",
+      "sha256": "f1bac7cda93f5f4110e855190274a0aad25deea8d0103cd44ac96e77048ba77c",
+      "inspected": "Actual retained published Theorem1.2 printedp1484, extremal-polynomial reduction p1485 and Corollary2 pp1485-1486; checked specialization A=n,B=a,g=n-a-1, originaldegree2n.",
+      "application": "Known prior exact component classification and degree-partition comparison. J1-J2 give a separate coefficient-space connectedness/rationality argument. Exact counts use the already written elementary B4 hook/factorial count.",
+      "scope_boundary": "No claim that these component counts are new; no use of internal experiments to establish the published theorem."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_HERMITE_POWER_PHASE_CHARTS.md",
+      "sha256": "05fa6e9dc06f36e51316735f00c8f65fcccff4a4d9bc145ff4942dfe0678c518",
+      "locator": "J1-J4 and exact stable range, rationality, counts and boundary limits"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md",
+      "sha256": "2dea2ca7fb7e37f1c4a8f6353c28a92f1421b3b8daf60389404fd66c60625366",
+      "locator": "B4 elementary count; earlier B1/B3/B5 comparison only"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md",
+      "sha256": "e734ecb30e9ffa4115d9861a07697721118804ed530cb726a4373815c5963f52",
+      "locator": "G3 canonical power phases and positive-dimensional diagonal interpretation"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L6 transposition blocks, full symmetric base and centralizer; full-twist literal convention"
+    },
+    {
+      "path": "research/arithmetic/sources/bogatyrev-gendron-pell-abel-2025.pdf",
+      "sha256": "f1bac7cda93f5f4110e855190274a0aad25deea8d0103cd44ac96e77048ba77c",
+      "locator": "Primary exact previous classification read for comparison"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_phase_interpolation.py",
+    "checker_sha256": "ed5b5aa8fd7afa01d8fdfc3f78c97bbdfbdd5a4c02175a4471b77abe734f0c91",
+    "receipt": "research/arithmetic/polynomial_phase_interpolation_verification.json",
+    "receipt_sha256": "fbb67ac40975d2a3c139787678329917c5eb86eb1d6a1be50191448652946152",
+    "command": "python3 research/arithmetic/verify_polynomial_phase_interpolation.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "software": "Python3.12.3 standard library, assertions active",
+    "chart_scope": "20 exact rational chart witnesses for a2..5 and n5..12 in the listed stable domains, all phase bins. CRT congruences, derivative divisibility, critical quotient, quotient-algebra norm polynomial and every exact open condition are checked.",
+    "independent_norm_control": "Trace/Newton characteristic polynomial compared with direct rational determinant at degree+1 values for every norm: a complete polynomial identity check.",
+    "surface_scope": "Six rational degree10 points verify both explicit formulas, pair-reversal source action and quotient coordinates. The symmetric unwanted critical-value collision is rejected.",
+    "count_scope": "110 factorial/descriptive arithmetic domains throughn24,12 independent ordinary hook totals, and complete8400-literal degree10 orbit coverage with every phase label, normal transposition support, all block divisors and deck tests.",
+    "negative_scope": "Excluded n=2a parameters, intersecting phase supports, zero bundled value, symmetric squared-critical-value collision and the n4 smaller-base boundary distinction.",
+    "limits": "Finite witnesses do not prove uniform nonemptiness or rationality. Those use J1-J3. Global CMS graph enumeration/gluing remains unimplemented."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal proof/source/exact computation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Unique rational CRT chart and converse",
+      "Norm/discriminant exclusion completeness",
+      "Rolle base and surjective critical-value perturbation",
+      "Nonempty irreducible phase chart and component quotient",
+      "Translation centering and weighted diagonal action",
+      "Balanced-bin sign involution and rational invariant lattice",
+      "Stable-range return-budget exclusion of all other bases",
+      "Lower S_n primitivity and exact square-root/sign count",
+      "Degree10 source involutions and rational quotient",
+      "Correct prior attribution and no global graph implementation claim"
+    ]
+  }
+}

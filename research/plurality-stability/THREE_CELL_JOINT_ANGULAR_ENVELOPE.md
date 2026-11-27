@@ -492,3 +492,94 @@ $\varepsilon$ for (JA4) and $\delta_J$ sufficiently small
 to absorb each term with a factor of $\mu(B)$ or
 $\sqrt{\mu(B)}$. This leaves positive coefficients on
 $X_G,X_B,Y,Z$ and proves (JA1) with the weaker hypothesis.
+
+## Finite arc reduction for interior paired masses
+
+Fix $0<k_-\le k_+<\infty$ and a lower bound $\delta>0$ on
+each of the six masses in (JA2). Uniformly on these parameters,
+there is a finite bound on the total number of arc components
+of every ordinary maximizing pair. This gives a finite arc
+endpoint description of the exact two-slice envelope on
+compact interior parameter sets, allowing multiple arcs per label.
+
+The key point is that a score contrast in either slice is
+nonconstant even at a soft joint maximizer. Suppose, for example,
+that $U_\kappa(v_i-v_j)$ is constant. The nonconstant Fourier
+eigenvalues of $U_\kappa$ are positive, so $v_i-v_j$ is constant.
+As both means are positive, the two components overlap on a
+set of positive measure and are bounded below by a positive
+constant on some positive-measure subset. Since $v$ maximizes
+the linear functional with $u$ fixed, every bounded mean-zero
+transfer between $v_i$ and $v_j$ in this subset has zero
+first derivative. Thus $U_\kappa(u_i-u_j)$ is constant on the
+subset and, by analyticity, everywhere. The same overlap
+property then holds for $u_i,u_j$.
+
+Choose bounded mean-zero transfers $h,k$ within those overlaps
+of $u,v$. They can be chosen so that
+$\langle h,U_\kappa k\rangle>0$. In fact start with any nonzero
+$k$: its convolution is analytic and nonconstant. Its
+difference from its mean on the other overlap, restricted
+to that set, provides $h$ with strictly positive pairing.
+Make both transfers with the same small parameter, preserving
+the fixed masses and simplex-valued feasibility. Both linear
+terms vanish by the constant-score identities. The mixed
+quadratic term is $2\langle h,U_\kappa k\rangle$ times the
+squared parameter, contradicting maximality.
+
+To obtain a uniform bound, take a sequence of ordinary
+maximizing pairs and extract a weak-star limit and convergent
+parameters. This limit is a soft joint maximizer. The kernel
+pairing is jointly weak-star continuous, and the feasible mass
+vectors can be adjusted continuously in $L^1$ by transferring
+the appropriate fractions of each surplus label to the deficit
+labels. In each original slice use the bounded centered
+assignment prices from the proof of (JA2), passing to a
+convergent subsequence. The adjusted contrasts converge
+uniformly on compact complex neighborhoods of the real circle,
+since $e^{\kappa\cos(\theta-\varphi)}$ is entire in $\theta$
+and the convolution kernels and their derivatives are uniformly
+bounded on compact complex sets. The limiting contrasts are
+nonzero analytic functions by the soft maximum argument. Each
+has finitely many zeros on a period. In small complex disks
+around those zeros the number of zeros in the approximants
+is eventually constant by Rouché's theorem. Off the disks
+there are no real zeros for large indices. Since a winner can
+switch only at a contrast zero, this rules out unbounded arc
+counts.
+
+On the mass boundary there is a simple exact formula. If
+$q_j=0$, the envelope is $\sum_i B_\kappa(p_i,q_i)$.
+Take the two remaining arcs of the second slice complementary,
+with opposite centers. Center the corresponding two arcs of
+the first slice at those centers. They are disjoint because
+their widths sum to at most one. The remaining points in the
+first slice are assigned to $j$. This saturates both individual
+rearrangement bounds. Changing a mass vector by total $\ell^1$
+distance $d$ changes the envelope by at most $d/2$ in either
+argument. Relabel a set of total circular mass $d/2$ from
+surplus colors to deficit colors and use that the convolved
+score difference at a relabeled point has absolute value at
+most one. Apply this in each direction to compare optima.
+
+### The circular kernel can increase sign changes
+
+A uniform arc-count argument based on variation diminution of
+$U_\kappa$ would require additional structure. For every
+$\kappa>1/2$ the kernel has an explicit failure of this property.
+Choose $\kappa<\lambda<\kappa^2+1/4$ and take the signed input
+concentrated at $-t,0,t$ with respective weights
+$1,-(2+\lambda t^2),1$. The convolved function divided by
+$t^2 k_\kappa(\theta)$ converges as $t\to0$ to
+\[
+ \frac{k_\kappa''(\theta)}{k_\kappa(\theta)}-\lambda
+       =-\kappa\cos\theta+\kappa^2\sin^2\theta-\lambda .
+\]
+It is negative at $0$ and $\pi$, and positive at the two
+angles with $\cos\theta=-1/(2\kappa)$. For small nonzero $t$
+the output has at least four cyclic sign changes. Replace
+the three atoms by smooth disjoint bumps with the same signed
+masses, narrow enough to preserve the four strict output
+signs. The input then has two cyclic sign changes. This
+example concerns signed convolution, independent of the
+mass-constrained optimizer.

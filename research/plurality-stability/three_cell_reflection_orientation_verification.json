@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "command": "python3 research/plurality-stability/check_three_cell_reflection_orientation.py",
+  "working_directory": "canonical repository root in Ubuntu-24.04 WSL",
+  "environment": {
+    "python": "3.12.3",
+    "dependencies": "standard library only"
+  },
+  "checker_sha256": "0c8bc7c352f7ff9c0340014b817ebf13d372a35ac199962b46ee1abff37ef2ad",
+  "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
+  "proof_source_sha256": "e72ee7812ee9d9a252260061c449617c2b2b54f7ee61b7aa49e972f7d5fcec3d",
+  "result": {
+    "status": "pass",
+    "arithmetic": "exact Python Fraction arithmetic",
+    "four_label_identity_cases": 81,
+    "orientation_patterns": 16,
+    "type_constant_patterns": 8,
+    "flip_identity_cases": 256,
+    "two_type_positive_gauges_verified": true,
+    "three_type_positive_gauge_excluded": true,
+    "scalar_polarization_identity_cases": 81,
+    "triangle_sign_cases": 8,
+    "triangle_defect_range": [
+      2,
+      6
+    ],
+    "types": [
+      "12",
+      "23",
+      "31",
+      "12"
+    ],
+    "normalized_neighbor_weights": {
+      "1": "1/2",
+      "2": "1/16",
+      "3": "1/512"
+    },
+    "best_split_orientation": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "split_energy": "351/256",
+    "best_type_constant_energy": "161/256",
+    "exact_gap": "95/128",
+    "absolute_interaction_mass": "417/256",
+    "relative_kernel_error": "1/50",
+    "robust_gap": "4333/6400",
+    "scope": "Finite identities, all16 four-patch orientations and all8 three-type triangle signs are exhausted. Written DG12 supplies the Gaussian small-ball realization; DG13 supplies the integrated frustration bound, measurable reflection-order rigidity and compactness argument. This is not a finite proof of Gaussian simplex optimality."
+  },
+  "certified_scope": "Exact finite identities:81 four-label and scalar absolute-incidence cases,16 four-patch orientations,8 type-constant choices,256 sign/cut cases and all8 three-type triangle signs. Positive two-type gauges, their three-type obstruction, exact gap95/128 and robustness margin4333/6400.",
+  "analytic_scope": "DG50-DG51 are unrestricted reflection-orbit identities. DG52-DG54 give the explicit balanced Gaussian four-patch realization for every fixed0<rho<1. DG55-DG56 derive the scalar polarization defect and its integrated three-type lower bound. DG13 separately proves measurable fixed-axis cap order, stationary-score sector rigidity and compact finite-reflection witnesses for hypothetical failures. These continuum and compactness statements use written analytic proofs, not finite sampling.",
+  "assurance": {
+    "internal_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "limits": "Type-constant sorting is falsified. Neither this construction nor its exact finite certificate is a counterexample to the simplex comparison. The full direct all-positive-correlation inequality remains open."
+}

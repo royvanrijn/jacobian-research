@@ -21,7 +21,10 @@ The exterior Gaussian identity (S72) and a linear positive
 supersolution also settle the whole third exterior hook
 $(k-3,1,1,1)$ for every $k\ge4$, by (S73).
 The four-cell problem reduces
-to one scalar standard-sector inequality. These results do not supply
+to one scalar standard-sector inequality. The exact polynomial
+certificate (S74)--(S76) also settles the five-cell $(2,2,1)$ block,
+so five cells reduce to the standard inequality as well.
+These results do not supply
 the missing full active-space gap
 for $k\ge4$ at arbitrary correlation. The remaining higher-cell blocks and
 global optimality remain open. External review and formal verification
@@ -2193,9 +2196,487 @@ the same lower gap bound. Parseval proves (S73) for all $L^2$ speeds
 in every ambient dimension, with the stated dimension-independent
 constant.
 
-The complete five-cell problem now reduces to
-the standard $(4,1)$ and the remaining $(2,2,1)$ blocks; (S73) does
-not settle those blocks or every higher exterior degree.
+The third-hook result alone leaves the standard $(4,1)$ and
+$(2,2,1)$ blocks in five cells. The next section settles the latter;
+(S73) does not settle every higher exterior degree.
+
+## Five cells: an exact positive polynomial certificate for the mixed block
+
+**Theorem S74 (five-cell mixed block).**
+
+For $k=5$, every $d\ge4$ and every $0<\rho<1$, the entire
+$V_{(2,2,1)}$ isotypic component has a positive $L^2$ gap and no
+kernel:
+
+\[
+ \mathfrak q_\rho(f)\ge\kappa^{221}_{5,\rho}\|f\|^2,
+               \qquad\kappa^{221}_{5,\rho}>0.
+ \tag{S74}
+\]
+
+The constant is independent of $d$ and qualitative here. The proof
+uses an exhaustive rational polynomial expansion, with a written
+covering argument for every strictly totally positive matrix. It is
+not an extrapolation from selected chamber points or correlations.
+The analytic operator proof and the finite calculation have only
+internal review; there is no proof-assistant formalization or
+independent replay.
+
+### The linear positive field and exact residual
+
+In a rational seminormal basis of the $(12)$-minus space, put
+
+\[
+ L=\begin{pmatrix}
+ 0&0&0&5/4&-5/4\\
+ 0&0&5/4&-5/12&-5/6\\
+ 0&0&5/8&-5/8&0
+ \end{pmatrix},\qquad W(x)=Lx.
+\]
+
+This basis is a positive diagonal rescaling of the orthonormal Young
+basis, with metric $J=\operatorname{diag}(1,9/8,3/2)$.
+The adjacent transports $T_l=2P_-R((2l))P_-$ are
+
+\[
+ T_3=\begin{pmatrix}-2&0&0\\0&1&0\\0&0&1\end{pmatrix},\quad
+ T_4=\begin{pmatrix}2/3&-1&0\\-8/9&-5/3&0\\0&0&1\end{pmatrix},\quad
+ T_5=\begin{pmatrix}2/3&1/2&1\\4/9&1/3&-4/3\\2/3&-1&-1\end{pmatrix}.
+\]
+
+The checker reconstructs these data from Young's rational generators
+for shape $(2,2,1)$, verifies all Coxeter relations and the
+$G_0=S_{\{3,4,5\}}$ equivariance $L\pi=R(\pi)L$.
+To specify the basis without a phase convention, the three retained
+tableaux have the box positions of labels $1,\ldots,5$ respectively
+
+\[
+ ((0,0),(1,0),(2,0),(0,1),(1,1)),\quad
+ ((0,0),(1,0),(0,1),(2,0),(1,1)),\quad
+ ((0,0),(1,0),(0,1),(1,1),(2,0)).
+\]
+
+The rational generators have diagonal $1/r$ at axial distance $r$;
+the off-diagonal entry towards the tableau with longer row-reading
+inversion count is $1$, and the reverse entry is $1-r^{-2}$.
+These explicit finite matrices, rather than floating point square
+roots, are the inputs to the coefficient calculation.
+
+On $W$, all components of $W(x)$ are positive: they are positive
+multiples of $x_4-x_5$, $3(x_3-x_4)+2(x_4-x_5)$ and
+$x_3-x_4$. Also $Lp_0=0$. The full-facet kernel is
+$\mathsf K_{221}=2M_0I+\sum_{l=3}^5M_lT_l$, and its folded
+kernel is entrywise nonnegative by (S67)--(S69). Its self-adjoint
+metric is $J$, as verified by $JT_l=T_l^TJ$ and the corresponding
+unitarity of $G_0$.
+
+Let $m_l(x)=\int_{F_{12}}M_l(x,y)y\,d\nu_{12}(y)$, including
+$l=0$. The rotation identity (S71) says
+$2m_0+\sum_lC_lm_l=a_\rho x$. Applying $L$ and subtracting the
+mixed-block interaction gives the exact identity
+
+\[
+       a_\rho W-\mathsf K_{221}W
+                =\sum_{l=3}^5(LC_l-T_lL)m_l.
+\]
+
+It remains to prove that this residual is strictly positive in every
+coordinate. That is the purpose of the following finite formal
+calculation.
+
+### Nine immanants positive on every strictly TP four-by-four matrix
+
+Let $r_m$ be the chamber rays of (S53), now with $k=5$, and
+$y=\sum_{m=2}^4\eta_mr_m$, where
+$\eta_m=(y_m-y_{m+1})/5>0$. For $\pi\in G_0$ and $3\le l\le5$
+put $g=(2l)\pi\in S_{\{2,3,4,5\}}$. Define a rational coefficient
+vector indexed by this group by
+
+\[
+ c_{g,m}=(LC_l-T_lL)\pi r_m,
+\]
+
+and set it to zero for permutations fixing $2$. The displayed
+parametrization of the other permutations is unique. For a $4\times4$
+matrix $A$ indexed by $2,3,4,5$, define the three-component immanant
+
+\[
+ \Phi_m(A)=\sum_g c_{g,m}\prod_{i=2}^5A_{i,g^{-1}(i)}.
+ \qquad (\Phi_m(A))_a>0
+       \quad\text{for every strictly TP }A,\ a=1,2,3.
+ \tag{S75}
+\]
+
+Here is a covering reduction that makes a finite coefficient check
+sufficient for the stated unrestricted matrix assertion. Write
+the four matrix indices as $1,2,3,4$ in this factorization. Set
+$x_i(t)=I+tE_{i+1,i}$ and $z_i(t)=I+tE_{i,i+1}$, and substitute
+
+\[
+ A=x_1(t_1)x_2(t_2)x_1(t_3)x_3(t_4)x_2(t_5)x_1(t_6)
+       \operatorname{diag}(d_1,d_2,d_3,d_4)
+       z_1(s_1)z_2(s_2)z_3(s_3)z_1(s_4)z_2(s_5)z_1(s_6),
+\]
+
+with all sixteen parameters positive. Every strictly TP $4\times4$
+matrix has this form. For a direct verification, ordinary elimination
+gives $A=BDU$ with unit lower and upper factors and positive diagonal
+pivots. For each $r$, the flag minors of $B$ with columns $1,\ldots,r$
+are the corresponding minors of $A$ divided by $d_1\cdots d_r$,
+so they are positive. Write
+
+\[
+ B=\begin{pmatrix}1&0&0&0\\a&1&0&0\\b&c&1&0\\d&e&f&1\end{pmatrix}.
+\]
+
+Its lower Jacobi parameters, in the order used above, are
+
+\[
+ t_1=\frac{a(cf-e)-bf+d}{cf-e},\quad
+ t_2=\frac{cf-e}{f},\quad
+ t_3=\frac{f(be-cd)}{e(cf-e)},\quad
+ t_4=f,\quad t_5=e/f,\quad t_6=d/e.
+\]
+
+Every numerator and denominator is positive by those flag minors:
+$d,e,f,cf-e,be-cd,a(cf-e)-bf+d$ are respectively the flag
+minors with row/column sets
+$(4;1)$, $(1,4;1,2)$, $(1,2,4;1,2,3)$,
+$(1,3,4;1,2,3)$, $(3,4;1,2)$ and $(2,3,4;1,2,3)$.
+Multiplying the six elementary factors gives $B$ with these parameters.
+Applying the same argument to $A^T$ supplies the positive parameters
+for $U$ in the reversed upper word. Thus no strictly TP input is
+excluded by the substitution.
+
+The exact checker constructs the sixteen-variable matrix and all
+twenty-four permutation monomials, derives the $c_{g,m}$ from the
+displayed representation data, and collects every coefficient using
+rational arithmetic. The numbers of nonzero monomials are
+
+| Component | $m=2$ | $m=3$ | $m=4$ |
+| --- | ---: | ---: | ---: |
+| $1$ | 164 | 158 | 187 |
+| $2$ | 290 | 224 | 217 |
+| $3$ | 126 | 78 | 61 |
+
+All **1505** coefficients are strictly positive. The receipt records
+the count, minimum coefficient, maximum total degree and a canonical
+coefficient hash for each polynomial. The whole polynomial is
+reconstructed from the retained code and inputs, with no interpolation
+or numerical tests. Each polynomial is therefore strictly positive
+for all positive parameter values. The covering argument proves (S75).
+
+Total positivity is necessary for this method. For the positive-entry
+matrix with rows $(3,5,5,3)$, $(2,6,6,5)$, $(4,4,4,1)$ and
+$(6,3,6,6)$, the minor with rows $1,3$ and columns $1,2$ is $-8$,
+and the second component of $\Phi_2$ is $-22825$. The checker verifies
+this rejection control. It is not a Gaussian simplex counterexample.
+
+### Strict supersolution and the five-cell reduction
+
+For $x,y\in W$, use $A=[e^{\tau x_i y_j}]_{i,j=2}^5$, which is
+strictly TP by (S47). Splitting the residual integral into its six
+remaining-coordinate chambers gives
+
+\[
+ a_\rho(x)W(x)-(\mathsf K_{221}W)(x)
+  =\int_W\Gamma_\rho(x,y)e^{\tau x_2y_2}
+                    \sum_{m=2}^4\eta_m\Phi_m(A)\,d\nu_{12}(y)>0
+\]
+
+in every coordinate. The positive field $\psi=\sqrt{a_\rho}W$
+is consequently a strict supersolution for the normalized folded
+operator. Rescale by $J^{1/2}$ to make the basis orthonormal; this
+preserves all coordinate inequalities and kernel nonnegativity.
+The eigenvector integration and compactness argument used for (S73)
+give norm $\theta_{221,\rho}<1$ and active gap
+$\mu_\rho(1-\theta_{221,\rho})>0$ on the entire multiplicity space.
+The same Hermite factorization as in (S73) proves (S74) in every
+ambient dimension, with this unchanged gap. The positive field is a
+device for bounding the whole operator, not a restriction to linear
+speeds.
+
+The nontrivial $S_5$ types are $(4,1)$, $(3,2)$, $(3,1,1)$,
+$(2,2,1)$, $(2,1,1,1)$ and $(1^5)$. The moment block is covered by
+(S60), the rotation hook by (S56), the mixed block by (S74), the
+third exterior hook by (S73), and the sign by (S62). Hence for each
+fixed $0<\rho<1$,
+
+\[
+ \boxed{\text{Full five-cell S37-type gap modulo rotations}
+                     \quad\Longleftrightarrow\quad
+                       \text{the five-cell standard inequality (S51).}}
+ \tag{S76}
+\]
+
+For sufficiency, (S51) has a positive gap by the compact normalized
+operator and the positive lower bound on $a_\rho$. Taking the minimum
+over the six symmetry types gives the active gap, and (S42) lifts it
+uniformly in dimension. Necessity follows by restricting to the active
+standard block. This equivalence does not prove the remaining standard
+inequality, which retains the precise two-part test (S70).
+
+## The standard block at small correlation and a limit of the even comparison
+
+Two further facts distinguish the higher-cell standard problem from a
+direct repetition of (S32). Its initial interaction has a simple exact
+rank-one description, but the elementary antipodal pointwise comparison
+used in the three-cell proof fails in higher cell counts.
+
+### The exact initial standard spectral minimum
+
+Put $v_k=\nu_{12}(F_{12})$, $\mu=\nu_{12}/v_k$ on the full
+facet, $p=p_0/|p_0|$, and $s_k^2=\operatorname{Var}_\mu(p\cdot x)$.
+For $G_0$-invariant $h$ with $\int h\,d\nu_{12}=0$, define
+$q_{{\rm std},\rho}(h)=\rho^{-1}
+(\int a_\rho h^2d\nu_{12}-\iint K_{{\rm std},\rho}hh\,d\nu_{12}^2)$.
+Then for every fixed $k\ge3$,
+
+\[
+ \boxed{\displaystyle
+ \lim_{\rho\downarrow0}\ inf_{\substack{\|h\|_{L^2(\nu_{12})}=1\\
+           h\ G_0\text{-invariant},\ \int h\,d\nu_{12}=0}}
+ q_{{\rm std},\rho}(h)
+       =\ell\left(1-\frac{s_k^2}{2}\right)\ge\frac\ell2.}
+ \tag{S77}
+\]
+
+In particular this block has gap at least $\ell/3$ on some
+fixed-$k$ positive-correlation interval, without using the accepted
+full first-moment stability theorem. No interval endpoint is evaluated
+here and no conclusion for every correlation follows from this limit.
+
+First $\ell=kv_k$: Gaussian divergence on $T_i$ gives
+$b_i^*=\sum_{j\ne i}v_kn_{ij}=(kv_k/\sqrt2)(e_i-k^{-1}\mathbf1)$.
+The difference of two such moments has length $kv_k$.
+The row identity (S49) gives $a_\rho/\rho\to kv_k$ pointwise.
+On the mean-zero scalar space, the compressed interaction
+$K_{{\rm std},\rho}/\rho$ converges in Hilbert--Schmidt norm to the
+compressed derivative of its kernel at zero. This derivative is
+
+\[
+        2x\cdot y+\sum_{l=3}^k x\cdot(2l)y
+                  =x\cdot\left(kI-\sum_lw_lw_l^T\right)y.
+\]
+
+Indeed the constant kernel is $k$ and is annihilated by the mean-zero
+compression. For $|\rho|\le1/4$, two derivatives of the kernels
+have a common integrable Gaussian-times-polynomial square bound,
+so Taylor's formula proves the claimed Hilbert--Schmidt convergence
+with $O_k(\rho)$ error after division by $\rho$.
+Symmetry forces $m_h=\int xh\,d\nu_{12}$ into $\mathbb Rp_0$.
+Since $\sum_lw_l=kp_0$ and $w_l\cdot p_0=1/2$, the limiting
+interaction is exactly $(k/2)|m_h|^2$. Its only nonzero eigenvalue
+on this scalar space is $(k/2)v_ks_k^2=\ell s_k^2/2$, attained
+by the centered function $p\cdot x-\mathbb E_\mu[p\cdot x]$.
+
+The classical convex-Gaussian Poincare bound gives $s_k^2\le1$.
+The precise inspected input is Brandolini--Chiacchio--Henrot--Trombetti,
+Theorem 1.1 and the mean-zero Rayleigh characterization, pp. 1--2 of
+the [retained arXiv v2](sources/brandolini-chiacchio-henrot-trombetti-poincare-12096469v2.pdf).
+It concerns convex $C^2$ domains with a uniform interior sphere
+condition; a polyhedral facet is not directly within those hypotheses.
+For the application here, approximate each bounded convex set
+$F_{12}\cap B_R\subset H$ by bounded smooth strictly convex domains.
+Apply that theorem to the linear function centered by its conditional
+Gaussian mean. Its gradient has norm $1$, so its conditional variance
+is at most $1$. Gaussian moments of orders zero through two converge
+under the bounded convex approximation. Then let $R\to\infty$;
+Gaussian moment domination proves the same variance bound on $F_{12}$.
+The sphere radius may depend on the approximating domain; the
+Poincare constant $1$ does not. For $k=3$, the facet is a halfline
+and $s_3^2=1-2/\pi\le1$ directly. We use the mean-zero Rayleigh
+statement, with the conditional mean normalized by the domain's
+Gaussian measure.
+
+Finally (B7) gives $a_\rho/\rho\ge\ell/\sigma$. Together with
+the interaction norm limit this proves the uniform lower limit in
+(S77). Testing its centered linear eigenfunction gives the matching
+upper limit by dominated convergence, using the upper bound in (B7).
+This argument does not assert uniform convergence of the multiplier
+on the unbounded facet. That convergence is unnecessary and generally
+fails. The covariance bound is an imported analytic input, not a
+consequence of the finite checker.
+
+### A pointwise antipodal OU comparison fails from seven cells onward
+
+Let the candidate antipodal folded kernel be
+
+\[
+ \mathcal E_\rho(x,y)=\Gamma_\rho(x,y)
+       \sum_{\pi\in G_0}
+          \left(e^{\tau x\cdot\pi y}+e^{-\tau x\cdot\pi y}\right).
+\]
+
+It is the even OU kernel on the supporting space $H$, folded by
+$G_0$ and restricted to the facet, up to a fixed positive normalization.
+For every fixed $k\ge7$ and $0<\rho<1$,
+
+\[
+ \boxed{\displaystyle
+  \inf_{x,y\in W}
+       \frac{\mathcal K_{{\rm std},\rho}(x,y)}{\mathcal E_\rho(x,y)}=0.}
+ \tag{S78}
+\]
+
+Thus no positive constant depending only on $k,\rho$ supplies this
+particular pointwise lower comparison. This is not a counterexample
+to (S51), nor does it rule out an integrated or different reflected
+comparison.
+
+For the proof begin with chamber rays $x=r_3$, $y=r_{k-1}$.
+Rearrangement gives $x\cdot gy\le x\cdot y=3k$ for every
+$g\in S_{\{2,\ldots,k\}}$. The remaining-label transposition
+$\pi_*=(3k)$ instead gives
+$x\cdot\pi_*y=k(3-k)$. Hence
+$-x\cdot\pi_*y-x\cdot y=k(k-6)>0$.
+This strict inequality persists at interior chamber points. For an
+explicit choice put $R=\sum_{m=2}^{k-1}r_m$,
+$\epsilon=k^{-4}$, $x_\epsilon=r_3+\epsilon R$ and
+$y_\epsilon=r_{k-1}+\epsilon R$. Both lie in $W$. The perturbation
+of the strict difference has magnitude at most
+$3/\sqrt k+1/(2k^3)<2$, using
+$|R|\le k^{5/2}/2$ and $|r_3|+|r_{k-1}|<3k$; the original
+difference is at least $7$.
+
+Set $A=x_\epsilon\cdot y_\epsilon$ and
+$B=-x_\epsilon\cdot\pi_*y_\epsilon>A$. The folded standard
+kernel has $k(k-2)!$ positive exponential terms counting its
+coefficients, all with exponent at most $\tau A$. The antipodal
+kernel contains the term with exponent $\tau B$. At scaled points
+$t x_\epsilon,t y_\epsilon$ their common $\Gamma_\rho$ cancels,
+leaving
+
+\[
+ \frac{\mathcal K_{{\rm std},\rho}(t x_\epsilon,t y_\epsilon)}
+      {\mathcal E_\rho(t x_\epsilon,t y_\epsilon)}
+   \le k(k-2)!\exp\!\left(-\tau t^2(B-A)\right)\longrightarrow0.
+\]
+
+This proves (S78) at every fixed positive correlation. The checker
+verifies the ray algebra, the exact interior perturbation and exponent
+separation for $7\le k\le20$, with a $k=6$ equality control. The
+unbounded-scale conclusion follows from the displayed exponential
+bound, not from sampled values of the kernel.
+
+## Convex Gaussian Poincare does not give the missing nonlocal mass estimate
+
+The local covariance argument in (S77) cannot simply be extended to a
+nonlocal comparison for every convex Gaussian domain. In fact the
+following candidate inequality is false:
+
+\[
+ \iint_{\Omega^2}M_\rho(x,y)h(x)h(y)d\gamma_d(x)d\gamma_d(y)
+       \le\rho\int_\Omega R_\rho(x)h(x)^2d\gamma_d(x),\qquad
+ R_\rho(x)=\int_\Omega M_\rho(x,y)d\gamma_d(y),\quad
+ \int_\Omega h\,d\gamma_d=0.
+\]
+
+It would have the right ordinary-mass constraint and row multiplier
+for a one-step Poincare comparison. However, for **every** fixed
+$0<\rho<1$, it fails on a positive orthant in some finite dimension,
+even for a permutation-invariant linear $h$.
+At $\rho=1/2$ there is the explicit counterexample
+
+\[
+ \boxed{\begin{gathered}
+ \Omega=(0,\infty)^{19},\qquad
+ h(x)=\sum_{i=1}^{19}x_i-19\sqrt{\frac2\pi},\\
+ \frac12\int_\Omega R_{1/2}h^2d\gamma_{19}
+     -\iint_{\Omega^2}M_{1/2}h(x)h(y)d\gamma_{19}^2
+       =\left(\frac13\right)^{19}
+                 \frac{19(62-36\sqrt3)}{64\pi}
+                    <-\frac1{32}\left(\frac13\right)^{19}<0.
+ \end{gathered}}
+ \tag{S79}
+\]
+
+This does not refute (S51): the simplex standard kernel includes the
+specific adjacent-facet terms, and its domain is not this orthant.
+It rules out deriving the needed nonlocal inequality from convexity,
+Gaussianity and the ordinary mean constraint alone.
+
+Here is a self-contained calculation. Let $(X,Y)$ be a standard
+normal pair with correlation $\rho$, and write
+$A=\mathbb P(X>0,Y>0)=1/4+\arcsin(\rho)/(2\pi)$.
+Put $\mu_0=\mathbb E[X\mid X>0]=\sqrt{2/\pi}$ and
+$\alpha=\mathbb E[X\mid X>0,Y>0]$. Gaussian integration by parts
+gives
+
+\[
+ \alpha=\frac{(1+\rho)\phi(0)}{2A},\qquad
+ D=\mathbb E[X^2\mid X,Y>0]
+       =1+\frac{\rho\sqrt{1-\rho^2}}{2\pi A},\qquad
+ C=\mathbb E[XY\mid X,Y>0]
+       =\rho+\frac{\sqrt{1-\rho^2}}{2\pi A}.
+\]
+
+For example, write $c=\rho/\sqrt{1-\rho^2}$ and integrate
+$x\phi(x)\Phi(cx)$ and $x^2\phi(x)\Phi(cx)$ on the halfline.
+For the cross moment use
+$\mathbb E[Y1_{\{Y>0\}}\mid X=x]
+=\rho x\Phi(cx)+\sqrt{1-\rho^2}\phi(cx)$.
+The quadrant probability follows from the Gaussian polar angle.
+These formulas use the Gaussian-relative Mehler kernel and no surface
+measure normalization.
+
+Put $h_d(x)=\sum_i x_i-d\mu_0$. Its ordinary Gaussian integral
+on $(0,\infty)^d$ is zero by independence, and it belongs to $L^2$.
+Under the conditional joint law of all $d$ pairs in the positive
+quadrant, its mean is $d(\alpha-\mu_0)$, its variance is
+$d(D-\alpha^2)$ and its cross covariance is $d(C-\alpha^2)$.
+Consequently the exact normalized difference is
+
+\[
+ \frac{\rho\int R_\rho h_d^2d\gamma_d
+                  -\iint M_\rho h_dh_d\,d\gamma_d^2}{A^d}
+   =d\bigl[\rho D-C+(1-\rho)\alpha^2\bigr]
+                     -(1-\rho)d^2(\alpha-\mu_0)^2.
+\]
+
+For $0<\rho<1$, strict convexity of $\arcsin$ between its endpoints
+gives $2\arcsin(\rho)/\pi<\rho$, hence $\alpha>\mu_0$.
+The negative term is therefore quadratic in $d$ with a strictly
+negative coefficient, while the other term is linear. This proves the
+all-correlation counterexample family in finite, sufficiently large
+dimensions. It identifies the mass-weight mismatch concretely: the
+ordinary centering is $d\mu_0$, whereas the pair-conditioned measure
+has mean $d\alpha$.
+
+For the explicit instance in (S79), $A=1/3$,
+$\alpha=(9/8)\mu_0$, $D=1+3\sqrt3/(8\pi)$ and
+$C=1/2+3\sqrt3/(4\pi)$. Substitution simplifies the difference in
+dimension $d$ to
+
+\[
+       \frac{d(81-d-36\sqrt3)}{64\pi}.
+\]
+
+At $d=19$, its sign is negative since $62^2<36^2\cdot3$.
+For the quantitative margin use $\sqrt3>433/250$ and
+$\pi<22/7$, the latter proved in (S36). Since the numerator is
+negative, directed arithmetic gives
+
+\[
+       \frac{19(62-36\sqrt3)}{64\pi}
+           <-\frac{133}{4000}<-\frac1{32}.
+\]
+
+This proves the bound in (S79). In this particular linear family the
+first negative integer dimension at $\rho=1/2$ is $19$:
+$d=18$ is positive since $63^2>36^2\cdot3$. In dimension one the
+normalized difference is $(20-9\sqrt3)/(16\pi)>0$.
+This is a statement about the displayed family, not a classification
+of all counterexamples in lower dimensions. The ordinary-centering
+estimate does not tensorize in the way a local Poincare inequality does.
+
+Indeed the local Gaussian Poincare gap on an orthant is $2$, by
+even extension in every coordinate and the Gaussian Hermite spectrum.
+Even that sharper local fact is consistent with this nonlocal
+counterexample. The checker certifies the exact quadratic-in-dimension
+moment identity, the rational negative margin and both lower-dimensional
+sign controls; the pair moment integrals, orthant realization and
+all-correlation family use the written proof.
 
 ## Monotonicity and the other global obligations
 
@@ -2225,11 +2706,16 @@ The remaining targets are distinct:
   and the unresolved weighted Poincare inequality (S51).
   Its exact two-part spectral criterion is (S70); a bound on the
   second normalized eigenvalue alone does not settle ordinary balance.
+  Its small-correlation spectral limit is (S77). For $k\ge7$, (S78)
+  rules out directly extending the pointwise antipodal comparison (S32).
+  Equation (S79) also excludes a generic convex-domain ordinary-mass
+  nonlocal Mehler inequality; the special adjacent-facet structure
+  must enter any use of that route.
   The complete rotation hook has the all-correlation gap (S56).
   The $(k-2,2)$ block has the strict gap (S60), and every sign block is
   settled by (S61)--(S66). The third exterior hook is settled by (S73).
-  In four cells only (S51) remains; in five cells the standard and
-  $(2,2,1)$ blocks remain. For $k\ge6$ the other blocks also need estimates.
+  In four and five cells only (S51) remains, by (S76) and its four-cell
+  analogue. For $k\ge6$ the other blocks also need estimates.
   Equation (S42) then handles every ambient dimension.
   Equation (S23) and the full three-cell interface problem are settled
   by (S29)--(S38).
@@ -2288,6 +2774,20 @@ rank-one boundary-pair identity through eight cells, selected positive
 folded exterior matrices, and exact increasing/decreasing coordinate
 controls. The Gaussian creation identity and the all-correlation
 supersolution proof remain written analytic arguments.
+For (S75) the checker exhaustively expands nine fixed rational
+polynomials in sixteen formal variables and checks all 1505 nonzero
+coefficients. The unrestricted matrix conclusion also requires the
+written positive-factorization covering argument. The passage from
+these polynomials to the full five-cell block gap and (S76) is analytic
+and representation-theoretic written mathematics.
+For (S77)--(S78) it checks the rank-one transport algebra, ray dot
+products and exact interior perturbations in stated finite cell ranges.
+The Gaussian covariance input, the Hilbert--Schmidt Taylor limit and
+the unrestricted exponential-scale obstruction are written arguments.
+For (S79) it checks the dimension polynomial and the explicit
+19-dimensional normalized negative margin. The Gaussian pair moments,
+orthant independence and all-correlation family are analytic
+written arguments, not assertions inferred from a bounded dimension scan.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

@@ -647,6 +647,265 @@ def higher_exterior_hook_checks():
             "scope": "Exact third-exterior transport, rank-one junction-pair and selected ordered coordinate identities for 4<=k<=8; selected strict positive folded exterior matrices for 4<=k<=6. A control rejects positivity of abstract row rates without their required ordering. The all-degree Gaussian creation identity S72 and complete third-hook spectral gap S73 are written proofs, not certified by these finite controls."}
 
 
+def five_cell_mixed_certificate():
+    """Exhaustive formal positivity certificate for the five-cell (2,2,1) block."""
+    k, shape = 5, (2, 2, 1)
+
+    @lru_cache(None)
+    def tableaux(partition):
+        if not partition:
+            return ((),)
+        result = []
+        for row, length in enumerate(partition):
+            if row+1 < len(partition) and partition[row+1] == length:
+                continue
+            smaller = list(partition)
+            smaller[row] -= 1
+            smaller = tuple(v for v in smaller if v)
+            result.extend(t+((row, length-1),) for t in tableaux(smaller))
+        return tuple(result)
+
+    def identity(n):
+        return [[Q(i == j) for j in range(n)] for i in range(n)]
+
+    def product(a, b):
+        return [[sum(v*b[r][j] for r, v in enumerate(row) if v)
+                 for j in range(len(b[0]))] for row in a]
+
+    def apply(matrix, vector):
+        return [sum(a*b for a, b in zip(row, vector)) for row in matrix]
+
+    tabs = tableaux(shape)
+    lookup, dimension = {t: i for i, t in enumerate(tabs)}, len(tabs)
+    lengths = []
+    for t in tabs:
+        word = sorted(range(k), key=lambda i: t[i])
+        lengths.append(sum(word[i] > word[j] for i in range(k) for j in range(i+1, k)))
+    generators = []
+    for index in range(k-1):
+        matrix = [[Q(0) for _ in tabs] for _ in tabs]
+        for col, t in enumerate(tabs):
+            axial = (t[index+1][1]-t[index+1][0])-(t[index][1]-t[index][0])
+            matrix[col][col] = Q(1, axial)
+            other = list(t)
+            other[index], other[index+1] = other[index+1], other[index]
+            row = lookup.get(tuple(other))
+            if row is not None:
+                matrix[row][col] = Q(1) if lengths[row] > lengths[col] else 1-Q(1, axial**2)
+        assert product(matrix, matrix) == identity(dimension)
+        generators.append(matrix)
+    for i in range(k-2):
+        a, b = generators[i:i+2]
+        assert product(a, product(b, a)) == product(b, product(a, b))
+    for i in range(k-1):
+        for j in range(i+2, k-1):
+            assert product(generators[i], generators[j]) == product(generators[j], generators[i])
+
+    @lru_cache(None)
+    def representation(g):
+        result, work = identity(dimension), list(g)
+        for target in range(k):
+            pos = work.index(target)
+            while pos > target:
+                work[pos-1], work[pos] = work[pos], work[pos-1]
+                result = product(generators[pos-1], result)
+                pos -= 1
+        return result
+
+    minus = [i for i in range(dimension) if generators[0][i][i] == -1]
+    assert minus == [0, 1, 3]
+    restrict = lambda a: [[a[i][j] for j in minus] for i in minus]
+    average = [[(Q(i == j)+restrict(generators[3])[i][j])/2 for j in range(3)] for i in range(3)]
+    a3 = apply(average, [Q(1)]*3)
+    linear, transports = [[Q(0)]*5 for _ in range(3)], {}
+    for l in range(2, 5):
+        g = list(range(5))
+        g[2], g[l] = g[l], g[2]
+        vector = apply(restrict(representation(tuple(g))), a3)
+        for row, value in enumerate(vector):
+            linear[row][l] = value
+        g = list(range(5))
+        g[1], g[l] = g[l], g[1]
+        transports[l] = [[2*v for v in row] for row in restrict(representation(tuple(g))) ]
+    assert linear == [[Q(0), Q(0), Q(0), Q(5, 4), Q(-5, 4)],
+                      [Q(0), Q(0), Q(5, 4), Q(-5, 12), Q(-5, 6)],
+                      [Q(0), Q(0), Q(5, 8), Q(-5, 8), Q(0)]]
+    metric = [Q(1), Q(9, 8), Q(3, 2)]
+    for matrix in [*transports.values(), restrict(generators[2]), restrict(generators[3])]:
+        assert all(metric[i]*matrix[i][j] == metric[j]*matrix[j][i] for i in range(3) for j in range(3))
+    for index in (2, 3):
+        swapped = [row[:] for row in linear]
+        for row in swapped:
+            row[index], row[index+1] = row[index+1], row[index]
+        assert product(restrict(generators[index]), linear) == swapped
+    rays = [[Q(5-m)]*m+[Q(-m)]*(5-m) for m in range(2, 5)]
+    images = [apply(linear, ray) for ray in rays]
+    assert all(v >= 0 for image in images for v in image)
+    assert all(sum(image[row] for image in images) > 0 for row in range(3))
+
+    nodes = [(0, *rest) for rest in itertools.permutations(range(1, 5))]
+    node_index = {g: i for i, g in enumerate(nodes)}
+    coefficients = [[[Q(0) for _ in nodes] for _ in rays] for _ in range(3)]
+    for rest in itertools.permutations(range(2, 5)):
+        pi = (0, 1, *rest)
+        inverse = [pi.index(i) for i in range(5)]
+        for l in range(2, 5):
+            g = tuple(l if z == 1 else 1 if z == l else z for z in pi)
+            for m, ray in enumerate(rays):
+                z = [ray[i] for i in inverse]
+                field = apply(linear, z)
+                moved = apply(transports[l], field)
+                for row in range(3):
+                    coefficients[row][m][node_index[g]] += field[row]-moved[row]+2*linear[row][l]*(z[1]-z[l])
+
+    # Formal polynomials in twelve Jacobi parameters and four positive diagonal entries.
+    variables, degree_zero = 16, (0,)*16
+    def variable(index):
+        exponent = list(degree_zero)
+        exponent[index] = 1
+        return {tuple(exponent): Q(1)}
+
+    def plus(a, b):
+        result = a.copy()
+        for exponent, value in b.items():
+            result[exponent] = result.get(exponent, Q(0))+value
+        return {e: c for e, c in result.items() if c}
+
+    def multiply(a, b):
+        result = {}
+        for first, c in a.items():
+            for second, d in b.items():
+                exponent = tuple(u+v for u, v in zip(first, second))
+                result[exponent] = result.get(exponent, Q(0))+c*d
+        return {e: c for e, c in result.items() if c}
+
+    def polynomial_identity():
+        return [[{degree_zero: Q(1)} if i == j else {} for j in range(4)] for i in range(4)]
+
+    lower, upper = polynomial_identity(), polynomial_identity()
+    word = (1, 2, 1, 3, 2, 1)
+    for index, i in enumerate(word):
+        for row in range(4):
+            lower[row][i-1] = plus(lower[row][i-1], multiply(lower[row][i], variable(index)))
+    for index, i in enumerate(reversed(word), 6):
+        for row in range(4):
+            upper[row][i] = plus(upper[row][i], multiply(upper[row][i-1], variable(index)))
+    matrix = [[{} for _ in range(4)] for _ in range(4)]
+    for i in range(4):
+        for j in range(4):
+            for r in range(4):
+                matrix[i][j] = plus(matrix[i][j], multiply(multiply(lower[i][r], variable(12+r)), upper[r][j]))
+    monomials = []
+    for g in nodes:
+        poly = {degree_zero: Q(1)}
+        for i in range(1, 5):
+            poly = multiply(poly, matrix[i-1][g.index(i)-1])
+        monomials.append(poly)
+    expected_counts = [[164, 158, 187], [290, 224, 217], [126, 78, 61]]
+    certificates = []
+    for component in range(3):
+        for m in range(3):
+            poly = {}
+            for c, term in zip(coefficients[component][m], monomials):
+                if c:
+                    poly = plus(poly, {e: c*v for e, v in term.items()})
+            assert len(poly) == expected_counts[component][m]
+            assert poly and all(value > 0 for value in poly.values())
+            serialized = json.dumps([[list(e), str(c)] for e, c in sorted(poly.items())], separators=(",", ":"))
+            certificates.append({"component": component+1, "ray": m+2,
+                                 "positive_monomials": len(poly),
+                                 "minimum_coefficient": str(min(poly.values())),
+                                 "maximum_total_degree": max(sum(e) for e in poly),
+                                 "coefficient_sha256": hashlib.sha256(serialized.encode()).hexdigest()})
+    # Positive entries without total positivity do not suffice for the residual.
+    bad = [[3, 5, 5, 3], [2, 6, 6, 5], [4, 4, 4, 1], [6, 3, 6, 6]]
+    weights = [math.prod(bad[i-1][g.index(i)-1] for i in range(1, 5)) for g in nodes]
+    assert bad[0][0]*bad[2][1]-bad[0][1]*bad[2][0] == -8
+    assert sum(c*w for c, w in zip(coefficients[1][0], weights)) == -22825
+    return {"k": 5, "partition": list(shape), "minus_dimension": 3,
+            "Young_Coxeter_and_equivariance": "passed",
+            "linear_field_and_metric": {"L": [[str(v) for v in row] for row in linear],
+                                        "metric_diagonal": [str(v) for v in metric]},
+            "formal_variables": variables, "lower_Jacobi_word": list(word),
+            "upper_Jacobi_word": list(reversed(word)), "polynomials": certificates,
+            "total_positive_coefficients": sum(r["positive_monomials"] for r in certificates),
+            "positive_entries_without_TP_control": "passed",
+            "scope": "Exact exhaustive expansion of nine fixed rational residual immanants under the 16-parameter positive LDU/Jacobi substitution, with all 1505 retained coefficients strictly positive. This is a formal polynomial identity certificate, not sampling. The written TP-factorization covering argument extends the positivity to every strictly TP 4x4 matrix. The analytic supersolution, Hilbert-space gap and ambient Hermite lift remain written proofs; other cell counts and the standard inequality are not certified."}
+
+
+def standard_initial_and_antipodal_controls():
+    """Exact bounded algebra for S77-S78; no covariance or analytic-limit proof."""
+    dot = lambda x, y: sum(a*b for a, b in zip(x, y))
+    initial = []
+    for k in range(3, 13):
+        p0 = [Q(1, 2)-Q(1, k)]*2+[Q(-1, k)]*(k-2)
+        vectors = [[Q(1, 2)]*2+[Q(-int(i == l)) for i in range(2, k)]
+                   for l in range(2, k)]
+        assert dot(p0, p0) == Q(k-2, 2*k)
+        assert [sum(w[i] for w in vectors) for i in range(k)] == [k*a for a in p0]
+        assert all(dot(w, p0) == Q(1, 2) for w in vectors)
+        transported = [k*p0[i]-sum(w[i]*dot(w, p0) for w in vectors) for i in range(k)]
+        assert transported == [Q(k, 2)*a for a in p0]
+        initial.append({"k": k, "moment_direction_eigenvalue": str(Q(k, 2))})
+    obstruction = []
+    for k in range(7, 21):
+        rays = {m: [Q(k-m)]*m+[Q(-m)]*(k-m) for m in range(2, k)}
+        total = [sum(ray[i] for ray in rays.values()) for i in range(k)]
+        x, y = rays[3], rays[k-1]
+        swapped = list(y)
+        swapped[2], swapped[k-1] = swapped[k-1], swapped[2]
+        assert dot(x, y) == 3*k
+        assert dot(x, swapped) == k*(3-k)
+        epsilon = Q(1, k**4)
+        interior_x = [a+epsilon*r for a, r in zip(x, total)]
+        interior_y = [a+epsilon*r for a, r in zip(y, total)]
+        assert sum(interior_x) == sum(interior_y) == 0
+        assert interior_x[0] == interior_x[1] and interior_y[0] == interior_y[1]
+        assert all(interior_x[i] > interior_x[i+1] and interior_y[i] > interior_y[i+1]
+                   for i in range(1, k-1))
+        swapped = list(interior_y)
+        swapped[2], swapped[k-1] = swapped[k-1], swapped[2]
+        gap = -dot(interior_x, swapped)-dot(interior_x, interior_y)
+        assert gap > 0 and abs(gap-k*(k-6)) < 2
+        assert 2*math.factorial(k-2)+(k-2)*math.factorial(k-2) == k*math.factorial(k-2)
+        obstruction.append({"k": k, "epsilon": str(epsilon), "interior_exponent_gap": str(gap)})
+    k = 6
+    x, y = [3]*3+[-3]*3, [1]*5+[-5]
+    swapped = list(y)
+    swapped[2], swapped[5] = swapped[5], swapped[2]
+    assert -dot(x, swapped) == dot(x, y) == 18
+    return {"initial_rank_one_transport": initial, "antipodal_obstruction": obstruction,
+            "six_cell_nonseparation_control": "passed",
+            "scope": "Exact standard first-derivative transport algebra for 3<=k<=12 and ray/interior antipodal exponent separation for 7<=k<=20. The k=6 ray equality controls only this construction. These bounded calculations do not prove the convex-Gaussian covariance bound, Hilbert-Schmidt limit, unrestricted all-k exponential-scale obstruction, or standard stability at every correlation."}
+
+
+def convex_nonlocal_mass_counterexample():
+    """Exact directed rational margin for the actual Mehler counterexample S79."""
+    # Algebra in Q(z)[d], where z represents sqrt(3), after multiplication by pi.
+    # At rho=1/2, pi*alpha^2=81/32, pi*(alpha-mu0)^2=1/32,
+    # and pi*(rho*D-C)=-9*z/16.
+    for dimension in range(1, 21):
+        constant = dimension*Q(81, 64)-dimension**2*Q(1, 64)
+        root_coefficient = -dimension*Q(9, 16)
+        assert (constant, root_coefficient) == (Q(dimension*(81-dimension), 64), -Q(36*dimension, 64))
+    rho, dimension, root_lo, pi_hi = Q(1, 2), 19, Q(433, 250), Q(22, 7)
+    assert root_lo**2 < 3
+    assert 62**2 < 36**2*3 < 63**2
+    assert 20**2 > 9**2*3
+    numerator_hi = dimension*(81-dimension-36*root_lo)
+    assert numerator_hi < 0
+    upper = numerator_hi/(64*pi_hi)
+    assert upper == -Q(133, 4000) < -Q(1, 32)
+    return {"rho": str(rho), "dimension": dimension,
+            "normalized_difference": "19*(62-36*sqrt(3))/(64*pi)",
+            "normalized_difference_upper": str(upper), "negative_margin": "greater than 1/32",
+            "dimension_polynomial": "d*(81-d-36*sqrt(3))/(64*pi)",
+            "ordinary_mean_zero_linear_function": "sum_i x_i - d*sqrt(2/pi)",
+            "first_negative_integer_in_this_linear_family": 19,
+            "one_and_eighteen_dimensional_positive_controls": "passed",
+            "scope": "Exact quadratic-in-dimension moment algebra and directed rational square/interval arithmetic for the linear counterexample on the positive orthant in dimension19 at rho1/2. Dimensions1 and18 are positive within this linear family; no lower-dimensional classification is implied. The Gaussian pair moment identities, ordinary-mean-zero realization and all-correlation finite-dimension family require the written analytic proof. This does not refute the simplex standard inequality S51."}
+
+
 def standard_mass_weight_control():
     """Reject removing the translation eigenvector using the wrong mass weight."""
     rho, weights, a, h = Q(1, 2), [Q(1, 2)]*2, [Q(1), Q(4)], [Q(1), Q(-1)]
@@ -911,6 +1170,9 @@ def main():
                          "standard_mass_weight": standard_mass_weight_control(),
                          "standard_hook_gaussian": standard_hook_gaussian_controls(),
                          "higher_exterior_hooks": higher_exterior_hook_checks(),
+                         "five_cell_mixed_certificate": five_cell_mixed_certificate(),
+                         "standard_initial_and_antipodal": standard_initial_and_antipodal_controls(),
+                         "convex_nonlocal_mass_counterexample": convex_nonlocal_mass_counterexample(),
                          "interval_gap": interval_gap_check()},
         "analytic_claims_certified_by_this_script": False,
         "independent_replay": False,

@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "kind": "period_diagonals_power_phases_quartic_cubic_split",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "bd1108665d92c0f0d5ab85c95488e695bea82914ad960fd6457b71095c9b5b26",
+  "input_sha256": {
+    "POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md": "e734ecb30e9ffa4115d9861a07697721118804ed530cb726a4373815c5963f52",
+    "POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md": "41ef39268c78d0f7d1b0f77d8777d167a59bf062d43d122573ee915a846399fb",
+    "POLYNOMIAL_PASSPORT_COMPONENTS.md": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+    "POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+    "POLYNOMIAL_INTRINSIC_CLASSES_AND_LIFTING.md": "7f7edcd00cce8221f6f705684ef394aa7f56bebc3fb5b53dacd443c53add17c9",
+    "verify_polynomial_lifting_obstructions.py": "8f75e184522b958730f2576c670851e513af1dd169324bd3e926d65238ca1e38",
+    "polynomial_lift_transport_verification.json": "9be38eec134da19cd7eaed98424fe2913052bd5630fbaa0118e9206cf7c16640",
+    "polynomial_lifting_obstructions_verification.json": "e53a06a3c436fa97e601b81339847061bd182233b29c3869300a608c47196c9c",
+    "sources/chen-mullane-salter-tahar-residual-stratified-2026.pdf": "2a03909f472b25eb9ecf9b451adba28fe46e17a490fc135491f99943040ce4c0",
+    "POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md": "2dea2ca7fb7e37f1c4a8f6353c28a92f1421b3b8daf60389404fd66c60625366",
+    "verify_polynomial_passport_components.py": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+    "verify_polynomial_lift_transport.py": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
+    "verify_polynomial_return_braids.py": "7d6222493a39a47ac962fadaac3e4de6b893d21ff3c06a08b1e07627fe027775",
+    "polynomial_involution_components_verification.json": "2a5e321124c45781acbc42152e8f7caf138f5e692ffe756fcb7a6c22af8272d9",
+    "sources/atlas-3a7-45a-generator-1.mtx": "6f72eac1ffeaca92893e7a2eee58b4dddb8ca5edf4194253bdfc2275a519b6fa",
+    "sources/atlas-3a7-45a-generator-2.mtx": "e9a5b77c580bd61cb40ed14efd35777813210b841217fe2fbd6ec86826ae4eb1",
+    "sources/atlas-a7-7-generator-1.gap": "b65337845ec4714585fc18ed7b0e34ef3bf110deefe4c8321a5ac9cda1dd6f8d",
+    "sources/atlas-a7-7-generator-2.gap": "29133aa72a62b7cf5bc5ca97445d4137743fd106ea78d758d4b5f949eb11f3b6",
+    "sources/atlas-a7-group-2026.html": "1eef466d40cb9bcbec1f958b7c6b06ca6480a09fed9854baf887e2104f6e6855",
+    "sources/roberts-venkatesh-hurwitz-monodromy-2015.pdf": "bd12f8767508aa88719881eec037682594f5d5cc9e9bdf6a5dfc28df045023d1",
+    "sources/akita-kawasaki-satoh-schur-covers-2024.pdf": "4a572d784c2d94afdb69ec734c66d9e1889c91d582640c5b6f4e69dfbcc802bb"
+  },
+  "quartic_algebraic_classification": {
+    "formal_remainder_identity": true,
+    "formal_critical_sum_identity": true,
+    "quadratic_pair": [
+      {
+        "b_over_a_squared": [
+          "9/16",
+          "-3/16"
+        ],
+        "critical_quadratic_discriminant": [
+          "-9",
+          "6"
+        ],
+        "common_f_critical_value": [
+          "-3645/262144",
+          "1053/131072"
+        ],
+        "H_critical_value_ratio": -1,
+        "phase_profile": [
+          "T",
+          "T"
+        ],
+        "deck": 1
+      },
+      {
+        "b_over_a_squared": [
+          "9/16",
+          "3/16"
+        ],
+        "critical_quadratic_discriminant": [
+          "-9",
+          "-6"
+        ],
+        "common_f_critical_value": [
+          "-3645/262144",
+          "-1053/131072"
+        ],
+        "H_critical_value_ratio": -1,
+        "phase_profile": [
+          "T",
+          "T"
+        ],
+        "deck": 1
+      }
+    ],
+    "invalid_ramification_or_wrong_grouping_rejected": 4,
+    "even_quartic": {
+      "a": 0,
+      "b": 1,
+      "H_critical_value": "-1/4",
+      "f_critical_value": "1/16",
+      "phase_profile": [
+        "DT",
+        "I"
+      ],
+      "deck": 2
+    }
+  },
+  "complete_degree8_control": {
+    "complete_literal_domain": 40,
+    "same_actual_H576": true,
+    "components": [
+      {
+        "literal_seed": [
+          [
+            1,
+            0,
+            3,
+            4,
+            7,
+            6,
+            5,
+            2
+          ],
+          [
+            0,
+            7,
+            2,
+            3,
+            6,
+            5,
+            4,
+            1
+          ]
+        ],
+        "literal_orbit": 16,
+        "deck": 1,
+        "group_order": 576,
+        "power_phase_return_types": [
+          2,
+          [
+            [
+              [
+                1,
+                1,
+                2
+              ],
+              [
+                1,
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "cubic_value": 2,
+        "orbit_sha256": "f3d0159a51480ef73590e3395b89d79696ef9c19e75a4525ecc89b5f844fda2b"
+      },
+      {
+        "literal_seed": [
+          [
+            1,
+            0,
+            3,
+            6,
+            5,
+            4,
+            7,
+            2
+          ],
+          [
+            0,
+            7,
+            2,
+            5,
+            4,
+            3,
+            6,
+            1
+          ]
+        ],
+        "literal_orbit": 8,
+        "deck": 2,
+        "group_order": 64,
+        "power_phase_return_types": [
+          2,
+          [
+            [
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ]
+          ]
+        ],
+        "cubic_value": null,
+        "orbit_sha256": "2bea0716a81d8e95d068ca26e3554dc9bc01ee01a9c841143201988f56653193"
+      },
+      {
+        "literal_seed": [
+          [
+            1,
+            0,
+            7,
+            4,
+            5,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            7,
+            6,
+            3,
+            4,
+            5,
+            2,
+            1
+          ]
+        ],
+        "literal_orbit": 16,
+        "deck": 1,
+        "group_order": 576,
+        "power_phase_return_types": [
+          2,
+          [
+            [
+              [
+                1,
+                1,
+                2
+              ],
+              [
+                1,
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "cubic_value": 1,
+        "orbit_sha256": "a34714730cb940a4d2b74816967e8e31e913fdce23280775f98f90b5974202dd"
+      }
+    ]
+  },
+  "dihedral_power_phase_example": {
+    "polynomial_coefficients": [
+      0,
+      0,
+      9,
+      0,
+      -6,
+      0,
+      1
+    ],
+    "H_critical_values": [
+      2,
+      -2
+    ],
+    "f_critical_value": 4,
+    "relative_period_mod2": 1,
+    "literal_seed": [
+      [
+        1,
+        0,
+        5,
+        4,
+        3,
+        2
+      ],
+      [
+        0,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    ],
+    "group_order": 12,
+    "literal_orbit": 6,
+    "deck": 2
+  },
+  "abstract_rational_slice_controls": [
+    {
+      "strip_width": 2,
+      "integer_diagonal_components": 1,
+      "complement_components": 1,
+      "excluded_endpoints_and_deleted_points_create_no_false_edges": true
+    },
+    {
+      "strip_width": 3,
+      "integer_diagonal_components": 2,
+      "complement_components": 1,
+      "excluded_endpoints_and_deleted_points_create_no_false_edges": true
+    },
+    {
+      "strip_width": 5,
+      "integer_diagonal_components": 4,
+      "complement_components": 1,
+      "excluded_endpoints_and_deleted_points_create_no_false_edges": true
+    }
+  ],
+  "connected_ambient_cubic_diagonals": {
+    "finite_inherited_records": [
+      {
+        "cyclic_fibre": 2,
+        "ambient_zero_orders": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "ambient_component_count_from_primary_theorem": 1,
+        "diagonal_codimension": 6,
+        "diagonal_dimension": 2,
+        "literal_component_size_from_pinned_D6": 4116,
+        "cubic_value_from_pinned_D6": 1
+      },
+      {
+        "cyclic_fibre": 2,
+        "ambient_zero_orders": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "ambient_component_count_from_primary_theorem": 1,
+        "diagonal_codimension": 6,
+        "diagonal_dimension": 2,
+        "literal_component_size_from_pinned_D6": 4116,
+        "cubic_value_from_pinned_D6": 2
+      },
+      {
+        "cyclic_fibre": 3,
+        "ambient_zero_orders": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "ambient_component_count_from_primary_theorem": 1,
+        "diagonal_codimension": 10,
+        "diagonal_dimension": 2,
+        "literal_component_size_from_pinned_D6": 4116,
+        "cubic_value_from_pinned_D6": 1
+      },
+      {
+        "cyclic_fibre": 3,
+        "ambient_zero_orders": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "ambient_component_count_from_primary_theorem": 1,
+        "diagonal_codimension": 10,
+        "diagonal_dimension": 2,
+        "literal_component_size_from_pinned_D6": 4116,
+        "cubic_value_from_pinned_D6": 2
+      }
+    ],
+    "scope": "D6's pinned written theorem gives every b>=2; these records check b2,b3 dimensions and seed quotient cubic values, not new full lift replays."
+  },
+  "global_cell_graph_implemented": false,
+  "global_scope": "Written G1-G3 reduction/width/power arguments with explicitly imported CMS2026 period model; no full classification follows from these finite controls.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

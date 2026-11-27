@@ -148,6 +148,21 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | The surviving order-twelve Weyl row has a polynomial resultant of order thirty-four | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_RESULTANT.md) |
 | The resultant cuts the small-root indicial divisor to 1694 explicit possibilities | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_RESULTANT.md) |
 | The surviving order-twelve profile has at most two more small roots than high roots | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_RESULTANT.md) |
+| Leading-factor exactness has a weighted plane tree classification | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_SLICE_TREE_CLASSIFICATION.md) |
+| Positive-degree mixed Hamiltonian faces have a multiplicity criterion and marked tree classification | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_SLICE_TREE_CLASSIFICATION.md) |
+| The order-(12,42) leading-factor equation realizes every allowed root-count profile | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_SLICE_TREE_CLASSIFICATION.md) |
+| The pole budget is sufficient for some root positions on a negative-degree mixed face | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_SLICE_TREE_CLASSIFICATION.md) |
+| The order-(12,42) Weyl row has a second resultant of order ninety-nine | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_LEADING_FIELDS.md) |
+| The differential-order algebra in the (12,42) row has an exact monomial basis | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_LEADING_FIELDS.md) |
+| The high-root Newton faces in the (12,42) row have leading fields of degrees five and eight | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_LEADING_FIELDS.md) |
+| The order-ninety-nine resultant has the same indicial accessory root at every small root | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_LEADING_FIELDS.md) |
+| The consecutive high-root leading maps have geometric groups A5 and A8 | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_LEADING_FIELDS.md) |
+| The (12,42) high-root faces and scalar caps survive planar transfer | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_PLANAR_FIBRES.md) |
+| A shared polynomial resultant controls all high roots in the planar transferred profile | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_PLANAR_FIBRES.md) |
+| The exact order-graded algebra transfers to the planar (12,42) profile | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_PLANAR_FIBRES.md) |
+| The simple high-root charts share a quartic of critical values | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_PLANAR_FIBRES.md) |
+| A high root contributes the pole profile (7,1) on the generic planar fibre | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_PLANAR_FIBRES.md) |
+| The generic position projection in the planar (12,42) profile has monodromy S12 | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_PLANAR_FIBRES.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

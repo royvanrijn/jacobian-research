@@ -195,13 +195,13 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Balanced three slabs refute universal perimeter-angle deficit monotonicity | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DEFICIT_AND_PERIMETER.md) |
 | All-correlation three-cell comparison under equal circular masses | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
 | Angular Cauchy relaxation exceeds the simplex even for disjoint balanced arcs | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
-| Translation cuts and dilation constraints at three-cell maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Every pair is adjacent at a three-cell Gaussian noise maximizer | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Three-cell global maximizers require two active coordinates and full moment rank | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Convex or origin-conical balanced three-cell maximizers are regular sectors | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Circular balance and first angular moment compatibility for three cells | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Any first three-cell global transition is strictly above two-fifths | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Independent circular arcs exceed the simplex in a relaxation near one | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Translation cuts and dilation constraints at three-cell maximizers | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Every pair is adjacent at a three-cell Gaussian noise maximizer | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Three-cell global maximizers require two active coordinates and full moment rank | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Convex or origin-conical balanced three-cell maximizers are regular sectors | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Circular balance and first angular moment compatibility for three cells | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Any first three-cell global transition is strictly above two-fifths | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Independent circular arcs exceed the simplex in a relaxation near one | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
 | Moving-partition perimeter compactness and simplex localization near one | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
 | Near-one maximizer score prices vanish relative to the noise length | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
 | Noise-scale Euclidean junction obstruction and small-support rigidity | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
@@ -219,14 +219,14 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Three concurrent affine asymptotes for Euclidean minimizing junctions | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_THREE_CELL_JUNCTION.md) |
 | Exponential convergence and finite-area defect at Euclidean minimizing junctions | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_THREE_CELL_JUNCTION.md) |
 | One exact pair-line separation suffices for Euclidean junction rigidity | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_THREE_CELL_JUNCTION.md) |
-| Homogeneous Euclidean minimizers and small stationary compact defects | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_THREE_CELL_JUNCTION.md) |
-| Every cell of a three-label maximizer uses both active directions | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Strict independent pair-splitting bounds at balanced maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Necessary mixed-variation and balanced patch conditions at simplex ties | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Formal Hermite weights allow transverse first crossings | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Direct global three-cell simplex inequality through correlation 21/50 | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
-| Any first three-cell global transition is strictly above 21/50 | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Balanced low-influence Plurality is Stablest through 21/50 | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Homogeneous Euclidean minimizers and small stationary compact defects | Internal result | stale | [Source](../plurality-stability/EUCLIDEAN_THREE_CELL_JUNCTION.md) |
+| Every cell of a three-label maximizer uses both active directions | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Strict independent pair-splitting bounds at balanced maximizers | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Necessary mixed-variation and balanced patch conditions at simplex ties | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Formal Hermite weights allow transverse first crossings | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Direct global three-cell simplex inequality through correlation 21/50 | Internal result | stale | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| Any first three-cell global transition is strictly above 21/50 | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Balanced low-influence Plurality is Stablest through 21/50 | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
 | The entire rotation hook has a rotational-only kernel at every positive correlation for all cell counts | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | Strict Euclidean Gaussian cut comparison for arbitrary finite-area tripod defects | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_THREE_CELL_JUNCTION.md) |
 | The unique near-one triple junction and the classified noise-length limits | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
@@ -235,39 +235,49 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | The four-cell sign sector has a strict gap at every positive correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | The full four-cell interface problem is exactly one constrained scalar standard inequality | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | An explicit bounded radial test defeats the scalar bound at correlation one half | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
-| Global angular moment bounds with exact arc interaction and a mass-dependent secant penalty | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
-| The coupled bound handles an explicit family of circular mass profiles at correlation one half | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| Global angular moment bounds with exact arc interaction and a mass-dependent secant penalty | Internal result | stale | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| The coupled bound handles an explicit family of circular mass profiles at correlation one half | Internal result | stale | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
 | Uniform tangent alignment and graph closeness on physical compact sets | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
 | Uniform Gaussian nonlinear comparison for small graphs away from the vertex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
 | Relative control of near-one Gaussian interactions and regret in the extreme exterior | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
-| Angular mode deficits and prefix obstruction for compatible three-arc slices | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Angular mode deficits and prefix obstruction for compatible three-arc slices | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
 | All higher-cell sign sectors have all-correlation gaps, explicit for five or more cells | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | No bounded physical defect at an actual near-one maximizer | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
 | Relative control at a moving near-one Gaussian junction | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MOVING_JUNCTION.md) |
 | Strict Gaussian exterior comparison in conical ray tubes near one | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) |
-| A radial core is necessary for a nonsimplex tie at fixed correlation | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_MASS_CONCENTRATION.md) |
-| Radial amplitude must concentrate in any nonsimplex near-one sequence | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_MASS_CONCENTRATION.md) |
+| A radial core is necessary for a nonsimplex tie at fixed correlation | Internal result | stale | [Source](../plurality-stability/THREE_CELL_RADIAL_MASS_CONCENTRATION.md) |
+| Radial amplitude must concentrate in any nonsimplex near-one sequence | Internal result | stale | [Source](../plurality-stability/THREE_CELL_RADIAL_MASS_CONCENTRATION.md) |
 | Every simplex symmetry block has a nonnegative compressed-immanant kernel | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | Exact exterior angular confinement of actual near-one maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
 | Strict comparison for arbitrary changes outside a growing Gaussian radius | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) |
 | The standard gap requires both spectral separation and the correct mass weight | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | All-cell Gaussian identities link the standard and rotation-hook kernels | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | Exact balanced three-cell simplex optimality near correlation one | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md) |
-| Balanced low-influence three-candidate plurality is stablest near correlation one | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md) |
-| Both endpoints of a strict three-cell failure interval have nonsimplex ties | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md) |
+| Balanced low-influence three-candidate plurality is stablest near correlation one | Internal result | stale | [Source](../plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md) |
+| Both endpoints of a strict three-cell failure interval have nonsimplex ties | Internal result | stale | [Source](../plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md) |
 | An all-degree Gaussian creation identity for the complete exterior hooks | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | The complete third exterior hook has a strict gap at every positive correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
-| A conical balanced three-cell maximizer has central simplex geometry | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| One simplex cell determines a balanced three-cell stationary partition | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Exact active negative index and quantitative extrinsic gap at three-cell maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Nonvanishing gradients on active arcs and local triple types at three-cell maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
-| Direct global three-cell Gaussian simplex inequality through correlation11/25 | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
-| Exact consecutive-arc pair envelope near equal circular masses | Internal result | proved | [Source](../plurality-stability/THREE_CELL_JOINT_ANGULAR_ENVELOPE.md) |
-| Quantitative three-cell simplex comparison under small annular mass deviation | Internal result | proved | [Source](../plurality-stability/THREE_CELL_JOINT_ANGULAR_ENVELOPE.md) |
-| The consecutive-arc pair optimization fails for some positive circular masses | Internal result | proved | [Source](../plurality-stability/THREE_CELL_JOINT_ANGULAR_ENVELOPE.md) |
-| Uniform annular localization of every possible three-cell global failure | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| A conical balanced three-cell maximizer has central simplex geometry | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| One simplex cell determines a balanced three-cell stationary partition | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Exact active negative index and quantitative extrinsic gap at three-cell maximizers | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Nonvanishing gradients on active arcs and local triple types at three-cell maximizers | Internal result | stale | [Source](../plurality-stability/THREE_CELL_GLOBAL_OBSTRUCTIONS.md) |
+| Direct global three-cell Gaussian simplex inequality through correlation11/25 | Internal result | stale | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| Exact consecutive-arc pair envelope near equal circular masses | Internal result | stale | [Source](../plurality-stability/THREE_CELL_JOINT_ANGULAR_ENVELOPE.md) |
+| Quantitative three-cell simplex comparison under small annular mass deviation | Internal result | stale | [Source](../plurality-stability/THREE_CELL_JOINT_ANGULAR_ENVELOPE.md) |
+| The consecutive-arc pair optimization fails for some positive circular masses | Internal result | stale | [Source](../plurality-stability/THREE_CELL_JOINT_ANGULAR_ENVELOPE.md) |
+| Uniform annular localization of every possible three-cell global failure | Internal result | stale | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| The complete five-cell (2,2,1) block has an all-correlation gap | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Five-cell full interface stability is equivalent to the standard scalar inequality | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Exact reflection-orbit comparison and the three-type sorting obstruction | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| The initial standard spectral minimum is an exact rank-one covariance formula | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| A direct pointwise antipodal even-OU comparison fails for every k>=7 | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Reflection-triangle rigidity of actual balanced three-cell maximizers | Internal result | stale | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| Finite fixed reflection witnesses for every remaining global failure | Internal result | stale | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| Convex Gaussian domains do not satisfy the required generic ordinary-mass Mehler comparison | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Balanced global consecutive-arc rearrangement is false at every positive correlation | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
+| Direct three-cell comparison beyond the first scalar obstruction | Internal result | stale | [Source](../plurality-stability/THREE_CELL_BEYOND_SCALAR_THRESHOLD.md) |
 
-**Computed obligations:** 44 unresolved; 28 resolved within their exact scope.
+**Computed obligations:** 44 unresolved; 30 resolved within their exact scope.
 
 
 Scope limits:
@@ -358,6 +368,10 @@ Scope limits:
 - At fixed positive correlation, planar balanced nonsimplex maximizers cannot be conical about any point or share one simplex cell. The unconstrained active variation has negative index two and the extra-coordinate blocks have a gap modulo geometric rotations. A reciprocal-gradient estimate constrains the local interface network, including distinct junction gradients and possible rank-one cusps. These restrictions leave the intermediate global comparison open.
 - The exact two-slice envelope near equal masses recovers the balanced standard-sector simplex Hessian. Its tail bounds and the all-profile centered angular bound give a positive lower radial deficit when the squared mass discrepancy is small on a fixed annulus, without a pointwise bound or any restriction on angular shapes. Near a binary mass vector the global two-slice consecutive-arc property is false.
 - DG11 adopts the exact joint angular/annular comparison and the near-one exact theorem in the direct global task. There is one fixed intermediate correlation range and one annulus with a positive squared-mass threshold containing a planar maximizer for any hypothetical strict global failure in any dimension. Conditional Jensen gives a positive distance from every centered simplex. These constants are qualitative; the large-annular-deviation class is not excluded and no certified overlap is inferred.
+- DG12 proves exact reflection-pair cut comparisons and two-type sorting while preserving circular masses. With three pair types, a balanced four-patch example at every fixed positive correlation defeats all type-constant orientations. This excludes that sorting operation and leaves the full inequality open.
+- DG13 classifies actual balanced planar maximizers having at most two reflected pair types for every origin reflection: they are exactly centered regular simplices. Any remaining strict failure has a planar maximizing representative with a uniformly positive three-type witness at one of finitely many fixed reflections. The constants are qualitative and that remaining class is not excluded.
+- DG14 refutes a universal consecutive-arc rearrangement preserving circular masses for balanced planar partitions at every fixed positive correlation, including uniformly interior profiles. Its two-annulus proof controls arbitrary rotations and all self-interactions. It does not falsify simplex optimality or a classification confined to actual global maximizers.
+- ST1-ST6, adopted in DG15, extend the direct comparison strictly past the first separated scalar obstruction rho_s in(11/25,1/2). This is a qualitative all-partition direct interval, using strict Gamma loss on analytic null profiles and annular coercivity, with no new numerical cutoff and no certified overlap closing the all-rho problem.
 
 Tracked obligations (computed states):
 

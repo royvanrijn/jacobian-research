@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md",
+  "assurance": "Explicit imported primary component theorem with a written polynomial/differential and label-quotient bridge; written all-degree group/block/deck proof. Internal exact bounded controls do not independently replay the geometric theorem. Other disconnected passports, finite-group lifting identification and separate split degrees remain open.",
+  "declarations": [
+    {
+      "name": "Lemma F1. Logarithmic derivative correspondence",
+      "node": "ARITH-POLYNOMIAL-LOGARITHMIC-DERIVATIVE-ISORESIDUAL-BRIDGE",
+      "scope": "For one nonidentity arbitrary factor lambda with k parts and s>=2 literal single cycles of lengths q_i, k=1+sum(q_i-1), logarithmic derivative df/f identifies the labeled-root polynomial space modulo target scaling with the genus0 fixed-residue fiber H(q_i-1,-1^(k+1)) at residues(lambda,-N). Positivity proves nonresonance for every integer lambda, including equal/common-divisor parts. The distinct-critical-value locus deletes a proper algebraic divisor and preserves components."
+    },
+    {
+      "name": "Theorem F2. Complete component criterion for the single-cycle tail",
+      "node": "ARITH-POLYNOMIAL-SINGLE-CYCLE-TAIL-ONE-OR-TWO-COMPONENTS",
+      "scope": "For every such passport, full braid components number exactly two iff all q_i are odd and lambda has distinct parts, and one otherwise. Imports actual CGPT2026 Theorem1.7 and its Lemma8.1/Lemma8.6 boundary arguments. Equal-order zero labels preserve surgical parity; a transposition of equal-residue roots flips it. Thus this parity is a sufficient geometric component label after the precise label quotients. It is not automatically a reduced lift for the actual finite monodromy group."
+    },
+    {
+      "name": "Theorem F3. Exact monodromy, every block system, and trivial deck",
+      "node": "ARITH-POLYNOMIAL-SINGLE-CYCLE-TAIL-ACTUAL-GROUP-AND-BLOCKS",
+      "scope": "For every one-arbitrary-factor/single-cycle-tail passport with s>=2, all block-count divisors are div(D) union{N}, D=gcd(lambda). The identical actual embedded group for all tuples is Alt_n^D<P_N> if every tail length is odd, and S_n wr C_D otherwise, n=N/D. Orders, trivial deck and primitive An/Sn specializations follow. Return budget forces every tail inside one block, phases on the incidence tree construct all blocks, and a commutator of aligned tail cycles gives a3cycle whose normal supports give the alternating direct product."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Dawei Chen, Quentin Gendron, Miguel Prado and Guillaume Tahar",
+      "title": "Isoresidual curves",
+      "publication": "Journal de l'Ecole polytechnique — Mathematiques13(2026),891-963",
+      "doi": "10.5802/jep.339",
+      "url": "https://jep.centre-mersenne.org/item/10.5802/jep.339.pdf",
+      "path": "research/arithmetic/sources/chen-gendron-prado-tahar-isoresidual-curves-2026.pdf",
+      "sha256": "0a927b724717a9b23ad7126960dc254bc818411d026cbd95b2281cc1869ba7f3",
+      "inspected": "Actual downloaded published edition, not only an abstract. Definition1.1 p892; Theorem1.7 p895; period coordinates Section2.2; Section8.1.2 p947; Lemma8.1 pp948-949; Lemma8.6 pp952-953; full proof Section8.4 pp955-957.",
+      "application": "All-simple-pole generic fixed-residue fibers with at least two zeros have two components exactly when all zero orders are even. Generic is nonresonant; rho=(lambda,-N) is proved nonresonant. Boundary cyclic-order parity and unique adjacency give the equal-root permutation action. Surgical Arf does not use zero labels. Residue convention differs by2pi i and is reconciled explicitly.",
+      "scope_boundary": "The theorem is imported for genus0 differentials with labeled poles/zeros; local F1-F2 prove the precise polynomial/open-locus/label quotients. It is not a theorem classifying arbitrary disconnected polynomial passports or their finite Schur multipliers."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md",
+      "sha256": "41ef39268c78d0f7d1b0f77d8777d167a59bf062d43d122573ee915a846399fb",
+      "locator": "F1-F3 and exact split-degree/lifting limits"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H1-H3, cactus conventions and exact hook count"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_TWO_TRIPOD_COMPONENTS.md",
+      "sha256": "21f38a29a7e3462560a088ded93e883fabeb1f3344129bf5a74ec6a72dadb7fa",
+      "locator": "E3 elementary connected3cycle support proof, earlier special-family independent classification"
+    },
+    {
+      "path": "research/arithmetic/sources/chen-gendron-prado-tahar-isoresidual-curves-2026.pdf",
+      "sha256": "0a927b724717a9b23ad7126960dc254bc818411d026cbd95b2281cc1869ba7f3",
+      "locator": "Essential fixed-residue theorem, incidence and parity proofs"
+    },
+    {
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "locator": "Polynomial/cactus bridge and Section1.3 exact summed counts"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_single_cycle_tail.py",
+    "checker_sha256": "3bda1f5a29e9288d84381fb7ae53f52def755e176f50a92c59ef8c4436b517b1",
+    "receipt": "research/arithmetic/polynomial_single_cycle_tail_verification.json",
+    "receipt_sha256": "8cef43f478e205260e692f36874947fc7bed41169030bb98b71967f9b3c049bd",
+    "command": "python3 research/arithmetic/verify_polynomial_single_cycle_tail.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "software": "Python3.12.3 standard library, assertions active",
+    "finite_scope": "14 complete connected passports, 85765 literal tuples; each full closure equals independent hook-character and factorial total, with all type placements. Includes3/4 tail factors, lengths2/3/4/5, pure equal-type cases, strict mixed parity roots and cyclic gcd blocks.",
+    "group_certificate": "Every seed has full divisor test, trivial deck test, exact commutator3cycle and normal-conjugate support blocks matching D. Large actual groups are proved in F3, not fully enumerated.",
+    "bridge_certificate": "Four exact rational polynomial derivative examples, all critical values nonzero/distinct, residual roots squarefree. Exhaust all proper residue subsets for finite controls; cyclic list parity and invalid inputs checked.",
+    "limits": "No independent computation of CGPT global geometry. Strict all-odd finite splits retained from earlier two-tripod receipt. Summed split count is exact, but no universal separate-size formula or finite-group reduced lift identification."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal proof and exact computation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Primary theorem/version/hypotheses and nonresonance",
+      "2pi i residue convention",
+      "df/f inverse and target/source quotient",
+      "Nonempty collision-free connected open locus",
+      "Zero and repeated-root label actions",
+      "Boundary parity and unique incidence",
+      "Single-cycle return-budget saturation",
+      "Global phase propagation on contracted tree",
+      "Aligned single-cycle commutator and alternating normal closure",
+      "Symmetric-block upgrade for even tail",
+      "Deck and actual group scope",
+      "Exact total counts versus unproved separate split degrees"
+    ]
+  }
+}

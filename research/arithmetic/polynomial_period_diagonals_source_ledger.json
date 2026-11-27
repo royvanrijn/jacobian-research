@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md",
+  "assurance": "Written arbitrary-passport period/cell reduction and canonical power phases, with an explicit imported November2026 preprint period model. Exact algebraic complete degree8 classification and bounded permutation/phase controls. No global cell enumerator, independent replay, external review, formal verification or arbitrary-passport component completion is asserted.",
+  "declarations": [
+    {
+      "name": "Theorem G1. Every polynomial passport is a colored period diagonal",
+      "node": "ARITH-POLYNOMIAL-COLORED-INTEGER-PERIOD-DIAGONAL",
+      "scope": "For every minimal polynomial passport with a distinguished branch, df/f identifies its exact grouped-value locus with a colored integer-relative-period diagonal in a nonresonant, vertically generic genus0 isoresidual fiber. Same-color periods are integers and different-color periods are not integers. With all labels it is a smooth complex locus of dimension r-2. Full branch conventions require the stated finite label-forgetting quotient, including re-rooting f->f-f(z_j) if the distinguished type repeats."
+    },
+    {
+      "name": "Theorem G2. A finite rational-cell reduction for the distinguished branch",
+      "node": "ARITH-POLYNOMIAL-FINITE-RATIONAL-PERIOD-CELL-REDUCTION",
+      "scope": "The distinguished-branch colored period locus has a finite rational-cell reduction using the actual CMST2026 period model. Each transverse width is at most N by the polynomial lemniscate degree bound; tree periods have absolute real part at most(n-1)N. Subdivide the finite primary period domains and gluing faces by integer real levels and imaginary zero levels, retain exactly valid colored cells, exclude metric-completion collisions, and take incidence components. This is a written finite reduction, not implemented global graph enumeration and not a solved arbitrary-passport classification."
+    },
+    {
+      "name": "Theorem G3. Canonical cyclic power extraction and phase data",
+      "node": "ARITH-POLYNOMIAL-CANONICAL-POWER-PHASE-INVARIANTS",
+      "scope": "For any chosen branch partition lambda, D=gcd(lambda) canonically gives f=h^D up to scaling. For D>1 the standard D-block quotient is cyclic and only that branch acts on it. Same-color critical-point ratios h(z_j)/h(z_i) are locally constant Dth-root phases, equivalently integer relative periods modD. Their bins give cyclically ordered return cycle types. At most one finite branch has all parts with a common divisor>1. These phases neither determine every block system nor classify all components."
+    },
+    {
+      "name": "Theorem G4. Exact algebraic form of the cubic degree-eight pair",
+      "node": "ARITH-POLYNOMIAL-DEGREE8-QUADRATIC-FIELD-CUBIC-COMPONENTS",
+      "scope": "All degree8 polynomials of passport(4,2,2),(2,2,1^4), modulo source/target affine changes, have explicit representatives(z^4+z^2)^2 or[z^2(z^2+z+b)]^2 with b=(9+/-3sqrt3)/16. The latter two share phase(T,T), identical actual H576 and intrinsic classes, deck1/literal16 each, and are separated by the previously proved genuine cubic invariant. The even representative has phase(DT,I), deck2/literal8, group64. Algebraic remainder/critical-value identities prove completeness; the retained exact L8/D5 tables identify actual monodromy and lifts."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Dawei Chen, Scott Mullane, Nick Salter and Guillaume Tahar",
+      "title": "The residual map as a stratified fibration over the resonance arrangement",
+      "arxiv": "2611.07499v1",
+      "date": "2026-11-05",
+      "publication_status": "preprint",
+      "url": "https://arxiv.org/pdf/2611.07499",
+      "path": "research/arithmetic/sources/chen-mullane-salter-tahar-residual-stratified-2026.pdf",
+      "sha256": "2a03909f472b25eb9ecf9b451adba28fe46e17a490fc135491f99943040ce4c0",
+      "inspected": "Actual54-page v1 PDF. Theorem5.3 p24; Definitions5.10/5.16-5.18 pp26-30; Section6.1 strip inverse and Lemma6.2 pp33-34; Lemmas6.7-6.11 pp35-37; Definition6.14 and global gluing pp38-39; Lemma7.8 finite graph types p44; Proposition8.2 p45 and Example8.5 p46.",
+      "application": "Explicit period domains, rational cycle/face equations and finite primary critical-graph model. Standard coefficient-residue convention is reconciled with eta=(2pi i)^-1 df/f. The global period homeomorphism is imported, not independently verified.",
+      "limits": "Its residue-fibration homeomorphism is not asserted to preserve prescribed exponential critical-value diagonals. G1-G3's colored slices, finite level bound and phase quotient are local written arguments."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md",
+      "sha256": "e734ecb30e9ffa4115d9861a07697721118804ed530cb726a4373815c5963f52",
+      "locator": "G1-G4, full-label quotient, finite-reduction and unimplemented-classification boundaries"
+    },
+    {
+      "path": "research/arithmetic/sources/chen-mullane-salter-tahar-residual-stratified-2026.pdf",
+      "sha256": "2a03909f472b25eb9ecf9b451adba28fe46e17a490fc135491f99943040ce4c0",
+      "locator": "Explicit primary period domains, inverse/gluing and finiteness"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md",
+      "sha256": "41ef39268c78d0f7d1b0f77d8777d167a59bf062d43d122573ee915a846399fb",
+      "locator": "F1 differential correspondence and CGPT component criterion"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "Polynomial conventions, every residue block system and exact class totals"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L8 complete degree8 component/group/deck table"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_INTRINSIC_CLASSES_AND_LIFTING.md",
+      "sha256": "7f7edcd00cce8221f6f705684ef394aa7f56bebc3fb5b53dacd443c53add17c9",
+      "locator": "D5 genuine H576 cubic split; D6 infinite connected-ambient diagonal family"
+    },
+    {
+      "path": "research/arithmetic/polynomial_lift_transport_verification.json",
+      "sha256": "9be38eec134da19cd7eaed98424fe2913052bd5630fbaa0118e9206cf7c16640",
+      "locator": "Exact40-tuple degree8 coverage and group/deck data"
+    },
+    {
+      "path": "research/arithmetic/polynomial_lifting_obstructions_verification.json",
+      "sha256": "e53a06a3c436fa97e601b81339847061bd182233b29c3869300a608c47196c9c",
+      "locator": "Same intrinsic H576 classes/cubic values and all-b inherited theorem controls"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_period_diagonals.py",
+    "checker_sha256": "bd1108665d92c0f0d5ab85c95488e695bea82914ad960fd6457b71095c9b5b26",
+    "receipt": "research/arithmetic/polynomial_period_diagonals_verification.json",
+    "receipt_sha256": "5f5156c8ad7b9af6c20f0adca0d0e718595fd21bf037a22849637bba3c12eb5c",
+    "command": "python3 research/arithmetic/verify_polynomial_period_diagonals.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL root",
+    "software": "Python3.12.3 standard library with assertions",
+    "algebraic_scope": "Formal Q[a,b] division and critical-sum identity; both exact Q(sqrt3) parameter roots, all ramification/nonzero-value conditions, the unique even quartic and four invalid parameters. Completeness is written G4.",
+    "permutation_scope": "All40 degree8 literal tuples,3 orbit closures, actual576/64 groups/decks, common phase return types, distinct cubic1/2 values; independent6-tuple degree6 dihedral square example.",
+    "slice_scope": "Abstract rational one-period strip models of widths2,3,5, checking retained integer diagonal points and connected complements without false edges through deleted points. These are incidence-logic controls, not actual global CMS graph generation.",
+    "infinite_family_scope": "Pinned D6 theorem retained; b2/b3 bookkeeping and four seed quotient cubic values replayed. No new full21952-lift execution is claimed.",
+    "unimplemented": "Global primary critical-graph enumeration, gluing, branch-exchange action and graph classification for every arbitrary passport."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal proof/source and exact algebraic audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Exact source convention and vertical genericity",
+      "Relative periods modulo integers and grouped versus excluded values",
+      "Smooth r-2 locus and finite label-forgetting conventions",
+      "Lemniscate degree width bound and finite integer range",
+      "Rational face refinement without metric-completion shortcuts",
+      "Canonical polynomial power and cyclic phase bins",
+      "Quartic normal form, exhaustive +/- critical-value alternatives, exact roots and affine inequivalence",
+      "Deck counts and correspondence with pinned L8/D5 component table",
+      "Connected ambient two-dimensional genuine cubic diagonal family"
+    ]
+  }
+}

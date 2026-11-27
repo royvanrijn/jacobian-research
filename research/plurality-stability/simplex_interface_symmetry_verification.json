@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "af07add0b6216132e4f67e5bae846c3d6cff471ca2766534d83e82ee03c1414e",
-  "proof_source_sha256": "cc0decc3681a78fe06726528432e95b10d16f3704ed4d07a77875f0c1a2e209f",
+  "checker_sha256": "ab5eed90c2b6e29fd21ea5575f49886d0ad0275c9a1b279eee7b0b2adbd30c8e",
+  "proof_source_sha256": "5c7f42535ac4359e1f28d9639e0af9f883104b1f7a2fe920f30594e3c5c8d1f1",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -595,6 +595,270 @@
       ],
       "unordered_positive_rates_control": "passed",
       "scope": "Exact third-exterior transport, rank-one junction-pair and selected ordered coordinate identities for 4<=k<=8; selected strict positive folded exterior matrices for 4<=k<=6. A control rejects positivity of abstract row rates without their required ordering. The all-degree Gaussian creation identity S72 and complete third-hook spectral gap S73 are written proofs, not certified by these finite controls."
+    },
+    "five_cell_mixed_certificate": {
+      "k": 5,
+      "partition": [
+        2,
+        2,
+        1
+      ],
+      "minus_dimension": 3,
+      "Young_Coxeter_and_equivariance": "passed",
+      "linear_field_and_metric": {
+        "L": [
+          [
+            "0",
+            "0",
+            "0",
+            "5/4",
+            "-5/4"
+          ],
+          [
+            "0",
+            "0",
+            "5/4",
+            "-5/12",
+            "-5/6"
+          ],
+          [
+            "0",
+            "0",
+            "5/8",
+            "-5/8",
+            "0"
+          ]
+        ],
+        "metric_diagonal": [
+          "1",
+          "9/8",
+          "3/2"
+        ]
+      },
+      "formal_variables": 16,
+      "lower_Jacobi_word": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "upper_Jacobi_word": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        1
+      ],
+      "polynomials": [
+        {
+          "component": 1,
+          "ray": 2,
+          "positive_monomials": 164,
+          "minimum_coefficient": "25/2",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "ded6c1b9c49c46005cf689bb015eac9624dca3fd7e9cd362ffe68361bf04aca6"
+        },
+        {
+          "component": 1,
+          "ray": 3,
+          "positive_monomials": 158,
+          "minimum_coefficient": "75/4",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "916741014701ca9a37aa9725bd1664f5870e1a39b9e5213168a469d5a3f811d5"
+        },
+        {
+          "component": 1,
+          "ray": 4,
+          "positive_monomials": 187,
+          "minimum_coefficient": "75/4",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "cbf8e4f7c566562e18dfc42592191bf008d47e5e96080fc20ef4432a6533abe9"
+        },
+        {
+          "component": 2,
+          "ray": 2,
+          "positive_monomials": 290,
+          "minimum_coefficient": "25/3",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "2a38bbfbb010a318a16c7e548406497a7adf392be6409a7b51efd733c044d5ce"
+        },
+        {
+          "component": 2,
+          "ray": 3,
+          "positive_monomials": 224,
+          "minimum_coefficient": "25/2",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "d1c1f61a3d10d8c995cbe7b87c24b6f33af2d6865767fd304ccae7e950c9a53c"
+        },
+        {
+          "component": 2,
+          "ray": 4,
+          "positive_monomials": 217,
+          "minimum_coefficient": "25/2",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "ecf4f5ee56173942d3b1f2a0d53bec575d7a5027bc496882f0d7f65c2d0babde"
+        },
+        {
+          "component": 3,
+          "ray": 2,
+          "positive_monomials": 126,
+          "minimum_coefficient": "25/4",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "96067f417977207e60f1159699d17a0628a3d49219ff7ec6ca3e5030c5ed65eb"
+        },
+        {
+          "component": 3,
+          "ray": 3,
+          "positive_monomials": 78,
+          "minimum_coefficient": "25/4",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "2e811cbfed3693895a3fbd2755c4968ffac7821eb29c1be03304e78b77226eaf"
+        },
+        {
+          "component": 3,
+          "ray": 4,
+          "positive_monomials": 61,
+          "minimum_coefficient": "25/4",
+          "maximum_total_degree": 14,
+          "coefficient_sha256": "077365c469311ec420273d88925b77a8bab580cf8a011acfb4448b3298030533"
+        }
+      ],
+      "total_positive_coefficients": 1505,
+      "positive_entries_without_TP_control": "passed",
+      "scope": "Exact exhaustive expansion of nine fixed rational residual immanants under the 16-parameter positive LDU/Jacobi substitution, with all 1505 retained coefficients strictly positive. This is a formal polynomial identity certificate, not sampling. The written TP-factorization covering argument extends the positivity to every strictly TP 4x4 matrix. The analytic supersolution, Hilbert-space gap and ambient Hermite lift remain written proofs; other cell counts and the standard inequality are not certified."
+    },
+    "standard_initial_and_antipodal": {
+      "initial_rank_one_transport": [
+        {
+          "k": 3,
+          "moment_direction_eigenvalue": "3/2"
+        },
+        {
+          "k": 4,
+          "moment_direction_eigenvalue": "2"
+        },
+        {
+          "k": 5,
+          "moment_direction_eigenvalue": "5/2"
+        },
+        {
+          "k": 6,
+          "moment_direction_eigenvalue": "3"
+        },
+        {
+          "k": 7,
+          "moment_direction_eigenvalue": "7/2"
+        },
+        {
+          "k": 8,
+          "moment_direction_eigenvalue": "4"
+        },
+        {
+          "k": 9,
+          "moment_direction_eigenvalue": "9/2"
+        },
+        {
+          "k": 10,
+          "moment_direction_eigenvalue": "5"
+        },
+        {
+          "k": 11,
+          "moment_direction_eigenvalue": "11/2"
+        },
+        {
+          "k": 12,
+          "moment_direction_eigenvalue": "6"
+        }
+      ],
+      "antipodal_obstruction": [
+        {
+          "k": 7,
+          "epsilon": "1/2401",
+          "interior_exponent_gap": "5620533/823543"
+        },
+        {
+          "k": 8,
+          "epsilon": "1/4096",
+          "interior_exponent_gap": "16604997/1048576"
+        },
+        {
+          "k": 9,
+          "epsilon": "1/6561",
+          "interior_exponent_gap": "128404703/4782969"
+        },
+        {
+          "k": 10,
+          "epsilon": "1/10000",
+          "interior_exponent_gap": "199279501/5000000"
+        },
+        {
+          "k": 11,
+          "epsilon": "1/14641",
+          "interior_exponent_gap": "1069157509/19487171"
+        },
+        {
+          "k": 12,
+          "epsilon": "1/20736",
+          "interior_exponent_gap": "1287663019/17915904"
+        },
+        {
+          "k": 13,
+          "epsilon": "1/28561",
+          "interior_exponent_gap": "5702571799/62748517"
+        },
+        {
+          "k": 14,
+          "epsilon": "1/38416",
+          "interior_exponent_gap": "5897161159/52706752"
+        },
+        {
+          "k": 15,
+          "epsilon": "1/50625",
+          "interior_exponent_gap": "23047582277/170859375"
+        },
+        {
+          "k": 16,
+          "epsilon": "1/65536",
+          "interior_exponent_gap": "21461070057/134217728"
+        },
+        {
+          "k": 17,
+          "epsilon": "1/83521",
+          "interior_exponent_gap": "76693231743/410338673"
+        },
+        {
+          "k": 18,
+          "epsilon": "1/104976",
+          "interior_exponent_gap": "66091203577/306110016"
+        },
+        {
+          "k": 19,
+          "epsilon": "1/130321",
+          "interior_exponent_gap": "220706546933/893871739"
+        },
+        {
+          "k": 20,
+          "epsilon": "1/160000",
+          "interior_exponent_gap": "179145269951/640000000"
+        }
+      ],
+      "six_cell_nonseparation_control": "passed",
+      "scope": "Exact standard first-derivative transport algebra for 3<=k<=12 and ray/interior antipodal exponent separation for 7<=k<=20. The k=6 ray equality controls only this construction. These bounded calculations do not prove the convex-Gaussian covariance bound, Hilbert-Schmidt limit, unrestricted all-k exponential-scale obstruction, or standard stability at every correlation."
+    },
+    "convex_nonlocal_mass_counterexample": {
+      "rho": "1/2",
+      "dimension": 19,
+      "normalized_difference": "19*(62-36*sqrt(3))/(64*pi)",
+      "normalized_difference_upper": "-133/4000",
+      "negative_margin": "greater than 1/32",
+      "dimension_polynomial": "d*(81-d-36*sqrt(3))/(64*pi)",
+      "ordinary_mean_zero_linear_function": "sum_i x_i - d*sqrt(2/pi)",
+      "first_negative_integer_in_this_linear_family": 19,
+      "one_and_eighteen_dimensional_positive_controls": "passed",
+      "scope": "Exact quadratic-in-dimension moment algebra and directed rational square/interval arithmetic for the linear counterexample on the positive orthant in dimension19 at rho1/2. Dimensions1 and18 are positive within this linear family; no lower-dimensional classification is implied. The Gaussian pair moment identities, ordinary-mean-zero realization and all-correlation finite-dimension family require the written analytic proof. This does not refute the simplex standard inequality S51."
     },
     "interval_gap": {
       "interval": [

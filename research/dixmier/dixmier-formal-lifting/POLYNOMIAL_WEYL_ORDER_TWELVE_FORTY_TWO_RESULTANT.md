@@ -279,3 +279,12 @@ As a polynomial in \(u=(x-x_0)^{-1}\), it must have
 the form \(a u^3+b\), where \(ab\ne0\).
 Its three simple zeros give the three low roots in
 the displayed form of \(h\).
+
+The [plane tree classification](WEIGHTED_SLICE_TREE_CLASSIFICATION.md#the-order-twelve-profile)
+gives the converse for the leading-factor residue equation
+and describes the admissible complex root positions for
+every root-count profile.
+
+The [second resultant and leading-field calculations](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_LEADING_FIELDS.md)
+give the order-\(99\) operator, its leading algebras on the high-root
+Newton faces, and its common small-root accessory term.
