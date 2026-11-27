@@ -9,7 +9,11 @@ Every proper reflected swap nevertheless strictly loses full noise stability
 at every $0<\rho<1$, by the kernel comparison below. The [external all-cell first-Hermite theorem and its quantitative
 partition consequence](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md) now
 localize improving competitors. A uniform interval of positive-correlation
-optimality remains open.
+optimality is supplied internally by the
+[normal-flux compactness proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md), using
+the external first-moment theorem and its alignment deduction. Independent
+mathematical review is pending; arbitrary positive correlations remain outside
+that interval result.
 
 ## Normalization and comparison with the literature
 
@@ -423,15 +427,16 @@ The [external first-Hermite endpoint and quantitative stability
 estimate](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md) give
 $F_4-W_1(A)<3\rho/4$ and distance at most $K_4\sqrt{3\rho/4}$ for any
 improving competitor. Heilman--Tarter reduces a maximizing competitor to
-three dimensions. The preferred remaining theorem is
-[uniform rigidity of nearby actual maximizers](MAXIMIZER_PERTURBATIVE_RIGIDITY.md).
-The uniform nearby full-kernel comparison for all competitors remains an
-alternative, including tails and asymmetric cycles. A fixed-partition
+three dimensions. The
+[normal-flux compactness proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md)
+now supplies an internal uniform small-correlation rigidity theorem, using
+the saturated OU score regret to control remote transfers. Its conclusion
+also gives the nearby full-kernel inequality. A fixed-partition
 Hermite expansion does not give such an interval.
 The affine replacement used for $W_1$ preserves neither $W_2$ nor noise
 stability, so an affine-only test cannot remove this obstruction.
 
-A uniform small-correlation theorem may still hold. Equations (11)--(13)
+Equations (11)--(13)
 settle the full-noise comparison for every single reflected swap of a
 tetrahedral cell pair, including the remote tails. A remaining full-kernel
 approach could seek balance-preserving rearrangements that improve an

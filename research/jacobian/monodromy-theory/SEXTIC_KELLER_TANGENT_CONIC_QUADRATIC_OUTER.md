@@ -4665,3 +4665,258 @@ point: take the root of its coefficient of \(z\)
 and solve for \(z\) to annul its \(y\)-derivative.
 This contradicts the planar Keller condition in
 the only remaining case.
+
+## Exclusion of the coincident quadratic parameters
+
+**Theorem SexticKellerTangentConicSmoothSquareMemberCoincidentParameterExclusion.**
+Let \(k\) have characteristic zero. Let \(T\in k[x]\)
+be monic affine, \(p,q\in k[x]\) monic of degrees
+two and four, and \(u,w\in k[x]\). Put
+\(U=y^2+Tz\). There is no Keller map
+\[
+             (U^3+E_A,\ pU^2+E_B,\ S),\qquad
+                  S=qU+uy+w,
+\]
+with \(E_A,E_B\) of weights at most five and three,
+respectively, in \((0,1,2)\).
+
+Work over the algebraic closure. Fix the third
+output \(S=s\) and use \(x,y\) on the open set
+\(v=qT\ne0\), where
+\[
+     U=(s-uy-w)/q,\qquad z=(s-qy^2-uy-w)/v .
+\]
+Denote the first and second restricted outputs by
+\(A,B\), in \(k(x)[s,y]\). Their bracket at fixed
+\(s\) is
+\[
+                       A_x B_y-A_y B_x=\kappa/v
+\tag{1}
+\]
+for a nonzero scalar \(\kappa\), up to its sign.
+The bounds on \(E_A,E_B\) give the following list
+of possible powers, with coefficients in \(k(x)\):
+\[
+ \begin{array}{c|l}
+ A& y^5,\ y^4,\ y^3,\ s y^3,\ y^2,\ s y^2,\
+                    y,\ sy,\ s^2y,\ 1,\ s,\ s^2,\ s^3\\
+ B& y^3,\ y^2,\ y,\ sy,\ 1,\ s,\ s^2 .
+ \end{array}
+\]
+For example the terms of weight five in \(E_A\)
+are multiples over \(k[x]\) of \(y^5,y^3z,yz^2\),
+and the terms of weight three in \(E_B\) are
+multiples of \(y^3,yz\). The coefficients of \(s^3\)
+and \(s^2\) in the respective constant-in-\(y\)
+terms are \(a=1/q^3,\ b=p/q^2\).
+
+### Total degree in \(s,y\)
+
+Give \(y\) weight one and decrease the weight of
+\(s\) from above \(5/3\). At \(5/3\), only \(y^5\)
+can tie \(a s^3\) in the first output, and the
+second highest output is \(b s^2\). The expected
+highest bracket is zero by (1). Since \(b\) is
+nonconstant, this eliminates \(y^5\).
+At \(3/2\), the only ties are \(s y^3\) in the first
+output and \(y^3\) in the second. Put \(t=y^3/s^2\).
+Dividing by \(s^3,s^2\) gives highest expressions
+\(a+r(x)t,\ b+d(x)t\). Their bracket in \(x,t\)
+must vanish. If both \(r,d\) are nonzero, the
+coefficient of \(t\) forces \(r/d\) constant
+and the constant coefficient would make a
+nontrivial scalar combination of \(a',b'\) zero.
+Those derivatives have distinct orders at infinity,
+thirteen and seven. If only one coefficient is
+nonzero the other derivative would vanish.
+Hence \(r=d=0\). The isolated \(y^4\) tie in the
+first output at \(4/3\) is likewise impossible
+because \(b'\ne0\).
+
+Consequently \(A,B\) have total \((s,y)\)-degree at
+most three and two. Their homogeneous parts of these
+degrees, after putting \(\theta=y/s\) and dividing
+by \(s^3,s^2\), are polynomials \(f(x,\theta),g(x,\theta)\)
+of degrees at most three and two in \(\theta\), with
+\(f(x,0)=a,\ g(x,0)=b\). Their \(x,\theta\) Jacobian
+vanishes by (1).
+
+If one depends on \(\theta\), the image curve has
+an irreducible equation of total degree at most
+three, by the same polynomial parametrization
+argument as in the quadratic-parameter reduction.
+Its specialization at \(\theta=0\) contains
+\((a(x),b(x))\). If \(q\ne p^2\), the ten monomials
+of total degree at most three in \(a,b\) are
+independent by the valuation comparison there:
+\(a-b^2\) has order \(12+n\) with \(1\le n\le4\)
+and replaces \(a\) in the order-twelve pair,
+with the corresponding replacements at orders
+eighteen and twenty-four. Thus \(q=p^2\), and
+then \(a=b^2\) makes the image curve the parabola.
+So \(f=g^2\). Since \(\deg_\theta f\le3\), \(g\)
+has degree one, say \(g=b+n(x)\theta\) with \(n\ne0\).
+
+### Excluding a nonconstant top on the symbolic level
+
+In this case \(B\) is linear in \(y\), with
+coefficient \(ns+n_0(x)\). Its square determines
+the top of \(A\), which is quadratic in \(y\)
+with \(y^2\)-coefficient \(n^2s+r_0(x)\).
+Using \(x,B\) as coordinates over \(k(s)\)
+makes \(A\) polynomial in \(B\). By (1) its
+\(x\)-derivative at fixed \(B\) is
+\(\kappa/(v(ns+n_0))\). In particular the constant
+coefficient gives a rational primitive in \(x\)
+for this rational function.
+
+If \(n_0/n\) is nonconstant, its generic level
+\(-s\) has simple finite points away from the
+fixed zeros and poles of \(v,n\), by separability.
+At each such point \(dx/(v(ns+n_0))\) has a
+simple pole of nonzero residue. This is impossible
+for the differential of a rational primitive.
+Hence \(s_0=-n_0/n\in k\). On specializing to
+\(s=s_0\), (1) remains valid since the original
+denominators are polynomials in \(x\) alone.
+Then \(B\) is independent of \(y\) and (1)
+forces \(A\) to be linear in \(y\). Hence
+\(r_0=-n^2s_0\).
+
+Write \(t=s-s_0\). There are rational functions
+\(d_j,m_j\in k(x)\) such that
+\[
+ \begin{aligned}
+ B&=tny+bt^2+d_1t+d_0,\\
+ A&=tn^2y^2+(2bn t^2+m_1t+m_0)y
+                              +\text{a polynomial in }t .
+ \end{aligned}
+\]
+In the second line the polynomial in \(t\) has
+coefficients in \(k(x)\) and is independent of \(y\).
+The coefficient of \(B^2\) in \(A\) written in
+\(x,B\) is \(1/t\). Comparing the linear coefficient
+gives \(A=B^2/t+(\alpha(x)+\beta(x)/t)B+L(x,t)\).
+Its \(x\)-derivative at fixed \(B,t\) is
+\(\kappa/(vnt)\), so \(\alpha,\beta\in k\).
+The function \(L\) is a Laurent polynomial in \(t\)
+with at most a simple pole at \(t=0\). Its only
+coefficient possibly nonconstant in \(x\) is the
+one at \(t^{-1}\). Computing it at \(y=0\) gives
+\(-d_0^2-\beta d_0\). Thus
+\[
+         tA=B^2+(\alpha t+\beta)B+tK(t)-G(x),\qquad
+        K\in k[t],\quad G=d_0^2+\beta d_0,
+\tag{2}
+\]
+and \(G\) is nonconstant by (1).
+
+Restore the polynomial map in (2), with \(t=S-s_0\).
+The right-hand expression for \(G(x)\) is now
+polynomial in the source, so \(G(x)\in k[x]\).
+Also \(d_0\in k[x]\), since it is rational and
+satisfies a monic quadratic over \(k[x]\).
+Choose a root \(r\) of \(2d_0+\beta\); it exists
+since \(G\), and hence \(d_0\), is nonconstant.
+Then \(G'(r)=0\). At each point on the source
+plane \(x=r\), differentiate (2) and use the
+invertible differential of the Keller map.
+The derivative of the target polynomial
+\(B^2+(\alpha t+\beta)B+tK(t)-tA\) must vanish.
+Its partials in \(A,B\) force \(t=0,B=-\beta/2\)
+throughout the plane. The two outputs \(S,B\)
+would be constant there, contradicting the
+Keller condition.
+
+### Excluding a top independent of \(y/s\)
+
+If \(f,g\) are independent of \(\theta\), the actual
+\(B\) has degree at most one in \(y\), with
+coefficient \(N(x)\), and \(A\) has degree at
+most two in \(y\). Its \(y^2\) coefficient is
+independent of \(s\) and its \(y\) coefficient
+is at most affine in \(s\). If \(N=0\), (1)
+makes \(A\) linear in \(y\) and forces
+\(-A_y B_x=\kappa/v\). But \(B_x\) has \(s\)-degree
+two with coefficient \(b'\ne0\), which is impossible.
+
+If \(N\ne0\), express \(A\) as a polynomial in
+\(B\) at fixed \(x,s\). By (1) its positive-degree
+coefficients are independent of \(x\), and the
+coefficient \(\lambda\) of \(B^2\) is in \(k\)
+since the \(y^2\) coefficient is independent of \(s\).
+Its coefficient \(C_1(s)\) of \(B\) is polynomial in
+\(s\), as seen by matching \(y\)-coefficients.
+The \(s^2y\) coefficient in \(A\) vanishes, hence
+\(2\lambda b+[s^2]C_1=0\) upon division by \(N\).
+The function \(b\) is nonconstant, so \(\lambda=0\).
+Thus \(A_y=a_0(x)+a_1(x)s\). The coefficient of
+\(sy\) in (1) makes \(a_1/N\) constant in \(x\),
+and the coefficient of \(s^3\) at \(y=0\) gives
+\(Na'-a_1b'=0\). The distinct orders of \(a',b'\)
+at infinity again give a contradiction.
+This proves the exclusion.
+
+**Corollary SexticKellerTangentConicSmoothSquareMemberBinaryInversion.**
+Every characteristic-zero sextic Keller map in the
+binary case of the smooth-common-factor weight-two
+theorem is invertible.
+
+Indeed the affine-output and quadratic-parameter
+reductions apply. Coincident parameters are
+excluded by the theorem just proved, while
+distinct parameters give inversion by the
+distinct-parameter corollary.
+
+## The first corrections in the nonbinary axial tuple
+
+**Theorem SexticKellerTangentConicNonbinaryAxialFirstCorrection.**
+Let \(F\) be a characteristic-zero Keller map of
+ordinary degree at most six with complete highest
+\(z\)-terms \((y z^4,xy z^3,x^2y z^2)\) in an affine
+source frame. Write \(a,b,c\in k[x,y]\) for the
+coefficients of \(z^3,z^2,z\) in its three outputs.
+Then
+\[
+                 x^2a-2xb+c=\lambda x^3y
+                       \qquad(\lambda\in k)
+\]
+and \(b(x,0)=x a(x,0),\ c(x,0)=x^2 a(x,0)\).
+In weights \((0,-1,1)\) its highest tuple is therefore
+\[
+                (Wz^3,xWz^2,x^2Wz),
+                            \qquad W=yz+a(x,0).
+\]
+
+Put \(H=x^2a-2xb+c\) and
+\(\mathcal D=x\partial_x-4y\partial_y\).
+The coefficient of \(z^7\) in the full determinant
+is \(-y(\mathcal D+1)H\). To obtain it, use the
+three highest \(z\)-terms except for replacing one
+by its term of degree one less in \(z\), and sum
+the three determinants. Thus \((\mathcal D+1)H=0\).
+By the ordinary degree bound, \(H\) has degree at
+most five. A monomial \(x^i y^j\) in its kernel
+requires \(i-4j+1=0\). Among nonnegative \(i,j\)
+with \(i+j\le5\), only \((3,1)\) qualifies.
+This proves the claimed formula for \(H\).
+
+Write \(a_0,b_0,c_0\) for the restrictions at \(y=0\).
+Then \(c_0=2xb_0-x^2a_0\). At \(y=0\) the
+coefficient of \(z^6\) in the determinant is
+\[
+  3x^2 a_0 b_0'-2x^2 b_0 a_0'-3x a_0 c_0'
+       +x c_0 a_0'+2 b_0 c_0'-c_0 b_0'.
+\]
+Indeed every term involving a replacement of degree
+two less in \(z\) contains a remaining factor of
+\(y\). The two-replacement terms surviving on the
+plane give the displayed expression. Substitution
+of \(c_0=2xb_0-x^2a_0\) factors it as
+\(2\Delta(x\Delta'+2\Delta)\), where
+\(\Delta=xa_0-b_0\). Since \(\Delta\) is polynomial
+and the field has characteristic zero, its
+vanishing forces \(\Delta=0\).
+Thus \(b_0=xa_0,\ c_0=x^2a_0\). The claimed
+highest tuple follows by comparing \(z\)-degree
+minus \(y\)-degree in each entry.

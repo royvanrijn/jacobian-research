@@ -1,14 +1,15 @@
 # Four-cell maximizers: assignment, interface geometry and the limiting gap
 
-The preferred remaining route is uniform rigidity of actual noise-stability
-maximizers near the tetrahedron. This is an open theorem. The deductions below
-establish its assignment equation, quantitative control of its prices and
+The deductions below establish the maximizer assignment equation, quantitative
+control of its prices and
 interfaces on bounded regions, an estimate on expanding balls, and a spectral
 gap for the limiting first-moment interface form modulo rotations. Combining
 these steps sharpens maximizer localization to $d_4(A)=O(\rho)$ and
-$F_4-W_1(A)=O(\rho^2)$, with original prices $O(\rho^2)$. They do
-**not** establish rigidity for the full noise kernel or a positive-correlation
-interval. These are internal written arguments using the
+$F_4-W_1(A)=O(\rho^2)$, with original prices $O(\rho^2)$.
+The [normal-flux compactness proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md)
+now supplies an internal proof of full-noise maximizer rigidity and a
+dimension-independent small positive-correlation interval using these
+first-moment inputs. These are internal written arguments using the
 [first-moment stability proof](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md),
 including its external preprint input; independent mathematical review and
 formal verification have not occurred.
@@ -17,8 +18,9 @@ Two further deductions control the linear tail issue: the full-noise
 interface Hessian at the tetrahedron has a uniform small-correlation gap
 modulo rotations on the entire Gaussian facet space, and every maximizer
 has one analytic tetrahedral interface chart on a domain containing a ball
-of radius $c/\rho$. A global nonlinear chart and a uniform nonlinear
-remainder estimate are still missing.
+of radius $c/\rho$. The closing compactness proof uses the saturated margin
+and the first-moment rotational-kernel characterization directly, without
+requiring a global continuation of this chart.
 
 ## Closest inspected primary results
 
@@ -65,7 +67,7 @@ be used to assume the desired conclusion.
 Write $\mathcal T$ for the orbit of the central tetrahedral partition under
 orthogonal maps and labels, and
 $d_4(A)=\inf_{T\in\mathcal T}\sum_i\gamma_3(A_i\triangle T_i)$.
-A sufficient **uniform maximizer-rigidity obligation** is:
+The **uniform maximizer-rigidity statement** is:
 
 > There exist $\eta_*>0$ and $0<\rho_*<1$ such that, for every
 > $0<\rho\le\rho_*$, every balanced global maximizer $A$ of $S_\rho$ over
@@ -89,7 +91,9 @@ that this obligation gives the desired inequality in every $d\ge3$ for
 Indeed an improving competitor gives an improving maximizer, its
 three-dimensional reduction has
 $d_4(A)<K_4\sqrt{3\rho/4}\le\eta_*$, and rigidity contradicts improvement.
-This is a proved implication with an open premise. The earlier
+This is a proved implication whose premise is now supplied by the
+[three-dimensional rigidity theorem](SMALL_POSITIVE_CORRELATION_INTERVAL.md).
+The earlier
 [nearby full-kernel comparison](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#localization-and-the-remaining-full-kernel-theorem)
 remains a separate sufficient route. No implication from that inequality to
 uniqueness of maximizers is asserted.
@@ -867,41 +871,24 @@ mass in (P7), however small, is not discarded from any exact comparison.
 No global continuation of this chart, or uniqueness of a maximizing
 solution, follows from (P7) alone.
 
-## The unresolved uniform step
+## Nonlinear closure and review boundary
 
-The proved facts give actual maximizers an assignment equation, bounded
-prices, smooth nearby facet interiors on fixed regions, expanding-ball
-score control, the sharper maximizer bounds (S1), the uniform full-noise
-interface gap (K2), and the common inverse-correlation-scale chart (P6).
-They leave the following work in the maximizer-rigidity obligation:
+The [normal-flux compactness argument](SMALL_POSITIVE_CORRELATION_INTERVAL.md)
+establishes a relative exterior estimate for the exact kernel in (C3)--(C5).
+It normalizes a hypothetical improving or tied sequence by its tetrahedral
+OU score regret, rather than discarding an absolutely small tail. The
+normalized transfers are tight, converge to square-integrable facet fluxes,
+and satisfy the sharp regret lower bound (C11). Their full-kernel interaction
+converges to the first-moment interface interaction in (C12). The limiting
+flux is rotational by (H2), while the nearest-moment gauge removes that
+component. This proves the internal rigidity theorem and then the uniform
+interval through maximizer dimension reduction.
 
-1. Extend (P6) to an admissible global interface class for every localized
-   maximizer, or control the exterior directly from the interior deformation.
-   All junctions inside $\Omega_A$ are now covered; remote components beyond
-   this domain are not excluded.
-2. Control the exact kernel on the tails of that description, uniformly as
-   $\rho\downarrow0$, with an error measured relative to the deformation
-   being excluded. An absolute exponentially small error can still permit
-   an exponentially small nonzero solution. Exact reflected-swap losses
-   concern restricted competitors and cannot simply be iterated on changed
-   cells or used for asymmetric cycles.
-3. Use the full-noise gap (K2) in a uniform nonlinear uniqueness argument
-   in that class, with balance enforced and rotations removed. Its linear
-   transfer from (H2), including linear tail motions, is now proved.
-   A uniform nonlinear remainder and admission of every maximizer remain
-   unproved; neither is implied by the Hessian calculation.
-
-For example, a valid contraction on a complete space containing every such
-maximizer, for the balanced assignment map of (A3) after fixing rotations,
-would finish the argument if it fixes the tetrahedron and has contraction
-factor strictly below one uniformly for small $\rho$. Neither existence of
-that space and chart nor the contraction estimate is proved here. A
-second-variation argument may instead use global maximality through (A1)
-and exclude every nonzero admissible deformation.
-
-The tail-swap obstruction to a relative Hermite estimate for arbitrary
-competitors remains valid. Its members are not offered as maximizing
-solutions of (A3), and it does not refute the maximizer-rigidity route.
-Conversely, discarding those competitors does not supply the missing
-uniform nonlinear tail estimate. These arguments do not establish a
-four-cell small-positive-correlation interval.
+The tail-swap obstruction to the unrestricted relative-Hermite estimate
+remains valid. The closing proof uses saturated OU regret and supplies no
+lower bound proportional to the unrestricted first-moment deficit.
+The quantitative first-moment preprint application, weighted exterior
+estimate, normal-flux lower bound and kernel limit require independent
+mathematical review. Repository checks, this internal self-audit and the
+linearized Hessian calculation are not that review. No explicit numerical
+correlation threshold or conclusion at all positive correlations is asserted.

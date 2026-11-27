@@ -4255,6 +4255,57 @@
               "units": "Gaussian probability"
             }
           ]
+        },
+        {
+          "id": "PIS-GAUSSIAN-REGRET-RELATIVE-EXTERIOR-CONTROL",
+          "title": "Uniform exterior interaction control relative to tetrahedral OU regret",
+          "state": "proved",
+          "scope": "For all ordinary measurable four-cell partitions of R^3, not necessarily balanced for this estimate, all 0<rho<=1/16 and R>=2, let e_i=1_Ai-1_Ti, L_out be tetrahedral OU score regret outside B_R, and Qtilde(v)=sum_i <v_i,(T_rho-Pi_0)v_i>. Then 0<=Qtilde(e_out)<=epsilon(R)*L_out with epsilon(R)->0 uniformly over rho and partitions. C3-C4 give weighted transfer tightness with w=(1+|x|^2)*exp(|x|^2/16) and beta(R)<=C*(1+R^6)*exp(-3*(R^2-1)/8). C5 controls exterior/bulk cross-interactions by positivity. This uses saturated full-kernel regret, not the falsified unrestricted relative-Hermite scale.",
+          "canonical_source": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written analytic proof using explicit imported first-moment inputs",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Internal written proof and normalization/scope self-audit. The external first-moment preprint and its M2-M3/G2 deductions retain their existing assurance limits. Independent mathematical review of the relative exterior estimate, normal-flux lower bound and weighted kernel limit is an open verification task. No finite experiment proves this result; no explicit numerical rho_0, all-positive-correlation theorem, formal proof, submission or release is asserted."
+        },
+        {
+          "id": "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY",
+          "title": "Tetrahedral rigidity for all sufficiently small positive correlations in three dimensions",
+          "state": "proved",
+          "scope": "There exists rho_0>0 such that for every 0<rho<=rho_0, any balanced ordinary measurable four-cell Gaussian partition A of R^3 with S_rho(A)>=S_rho(T) is a central regular tetrahedral partition up to orthogonal maps, labels and null sets. The analytic contradiction proof C6-C12 aligns the closest moment matrix, normalizes ordered transfers by s^2=L_rho/rho, proves weighted tightness and L2 facet-flux compactness, obtains the sharp regret lower bound with coefficient ell/2, and passes the normalized full-kernel interaction to ||D f||^2. H2 makes the limit rotational and the exact moment gauge removes it. Relies on the imported first-moment theorem and M2-M3/G2. No stationarity, global interface chart, explicit numerical rho_0, independent mathematical review or all-positive-correlation claim is supplied.",
+          "canonical_source": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written analytic proof using explicit imported first-moment inputs",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Internal written proof and normalization/scope self-audit. The external first-moment preprint and its M2-M3/G2 deductions retain their existing assurance limits. Independent mathematical review of the relative exterior estimate, normal-flux lower bound and weighted kernel limit is an open verification task. No finite experiment proves this result; no explicit numerical rho_0, all-positive-correlation theorem, formal proof, submission or release is asserted."
+        },
+        {
+          "id": "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY",
+          "title": "A dimension-independent small positive-correlation interval for four balanced Gaussian cells",
+          "state": "proved",
+          "scope": "There exists rho_0>0 independent of d>=3 such that every balanced ordinary measurable four-cell Gaussian partition A of R^d satisfies S_rho(A)<=S_rho(T) for 0<rho<=rho_0. Every global maximizer, and hence every equality case, is a cylindrical central regular tetrahedral partition up to rotation, labels and null sets. Uses the three-dimensional rigidity theorem and published maximizer existence/dimension reduction. This is an internally written analytic theorem under the repository accepted external first-moment input, pending independent mathematical review; rho_0 is qualitative and no theorem for all positive correlations or a first-moment-relative value gap is asserted.",
+          "canonical_source": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written analytic proof using explicit imported first-moment inputs",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Internal written proof and normalization/scope self-audit. The external first-moment preprint and its M2-M3/G2 deductions retain their existing assurance limits. Independent mathematical review of the relative exterior estimate, normal-flux lower bound and weighted kernel limit is an open verification task. No finite experiment proves this result; no explicit numerical rho_0, all-positive-correlation theorem, formal proof, submission or release is asserted."
         }
       ],
       "open_questions": [
@@ -4285,7 +4336,7 @@
         {
           "node": "GAP-PIS-BALANCED-POSITIVE-CORRELATION",
           "kind": "mathematical",
-          "question": "Decide if any balanced Gaussian partition beats the regular simplex at positive correlation. The fixed-partition low-correlation result and finite cubic search do not establish the universal inequality. Every proper reflected swap of a tetrahedral cell pair strictly loses full noise stability for every 0<rho<1; this restricted comparison does not establish the universal inequality.",
+          "question": "Determine whether any balanced four-cell Gaussian partition beats the regular tetrahedron at an arbitrary positive correlation. An internally proved dimension-independent small-positive-correlation interval is now available, using normal-flux compactness and the accepted first-moment input; the full range 0<rho<1 remains unresolved here. Every proper reflected swap loses at every positive correlation, while general asymmetric cycles beyond the small interval remain open.",
           "source": "plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md"
         },
         {
@@ -4307,22 +4358,10 @@
           "source": "plurality-stability/BALANCED_AFFINE_CENTROID_OPTIMIZATION.md"
         },
         {
-          "node": "GAP-PIS-FOUR-CELL-UNIFORM-SMALL-CORRELATION",
-          "kind": "mathematical",
-          "question": "There exists rho_0>0 such that for every d>=3, all balanced measurable four-cell Gaussian partitions A and all0<rho<=rho_0, S_rho(A)<=S_rho(T). The external all-cell first-moment theorem and square-root partition estimate localize every improving competitor to O(sqrt(rho)) Gaussian measure of a tetrahedron; Heilman--Tarter reduces maximizers to three dimensions. A uniform nearby full-kernel comparison remains open, including tails and asymmetric cycles. The relative-Hermite estimate is falsified and retired.",
-          "source": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md"
-        },
-        {
           "node": "GAP-PIS-GENERAL-THREE-CELL-CYCLIC-SWAPS",
           "kind": "mathematical",
           "question": "For every n>=3, 0<rho<1 and equal-measure measurable seeds B_i subset T_i for i=1,2,3, decide nonnegativity of the chosen forward-cycle loss (CY1). The permutation-equivariant S3 subfamily is proved. General seeds, including C3 orbit seeds without the stabilizer-reflection symmetry, still require control of both the linear score loss and quadratic cross-interactions in (CY2). No reduction of arbitrary competitors to cycles is assumed.",
           "source": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md"
-        },
-        {
-          "node": "GAP-PIS-NEARBY-THREE-DIMENSIONAL-FULL-KERNEL",
-          "kind": "mathematical",
-          "question": "There exist eta_0>0 and0<rho_1<1 such that every balanced measurable four-cell partition of R^3 with d_4(A)<=eta_0 satisfies S_rho(A)<=S_rho(T) for every0<rho<=rho_1. The neighborhood and interval are uniform over all measurable competitors, including remote tails and asymmetric cyclic exchanges. No positive lower bound proportional to rho*(F_4-W_1(A)) is required.",
-          "source": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md"
         },
         {
           "node": "VERIFY-PIS-QUANTITATIVE-PARTITION-STABILITY",
@@ -4331,10 +4370,10 @@
           "source": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md"
         },
         {
-          "question": "Uniform local rigidity modulo rotations for actual four-cell noise-stability maximizers, including exact tail control and nonlinear passage from the limiting interface gap.",
-          "source": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-          "kind": "mathematical",
-          "node": "GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY"
+          "node": "VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF",
+          "kind": "verification",
+          "question": "Independently review the relative exterior estimate and C6-C12 normal-flux compactness proof of the four-cell small-positive-correlation interval, including the imported first-moment and dimension-reduction hypotheses.",
+          "source": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md"
         }
       ],
       "scope_notes": [
@@ -4414,7 +4453,7 @@
         "The quantitative stationary boundary theorem excludes every centered rank-three centroidal exactly balanced affine tuple with J>=W_1(T) and lambda_min(C)/tr(C)<=10^(-11). High value gives convex-hull distance>1/25; flattening and a thin-interface Gaussian strip/tail estimate contradict the stationary edge weight1/4. The exact scalar audit has rational area margin1/1500, without numerical Gaussian integration. The remaining normalized shape domain is compact after the explicit local exclusion, but its certified integral bounds, exhaustive cover and high-value stability theorem remain open. No independent review, formal verification, planar value theorem or full positive-correlation comparison is asserted.",
         "The new internal analytic deduction gives d_k(A)<=K_k sqrt(F_k-W_1(A)) for every fixed k>=2, all d>=k-1 and arbitrary measurable balanced partitions. Explicit constants follow from uniformly positive facet weights along the first half of the covariance path, squared edge-length variance, singular-value alignment and direct regret against regular scores. A global Gaussian margin bound includes remote tails. Independent review and priority certification remain pending.",
         "Balanced cyclic swaps among three tetrahedral cells satisfy exact cross-interaction identities CY1-CY3. Full S3-equivariant seeds strictly lose noise stability at every0<rho<1 by CY4 and the original reflected-pair theorem, with equality only for null or complete cycles. Non-equivariant seeds, including C3 orbit seeds without the stabilizer reflection, remain open. No arbitrary-competitor reduction or relative Hermite-tail bound follows.",
-        "First-choice four-cell workstream: uniform local rigidity of actual maximizers. Internal analytic proofs now give d_4(A)=O(rho), first-moment deficit and original prices O(rho^2), a uniform full-noise interface gap modulo rotations on the complete facets including linear tail motions, and one analytic tetrahedral interface chart on a domain containing B_(c/(4*rho)). Its exterior mass is at most a polynomial factor times exp(-c^2/(32*rho^2)), not zero. The remaining step is global nonlinear chart admission or a deformation-relative exterior comparison, followed by uniform nonlinear uniqueness. The all-competitor nearby comparison remains an alternative; the relative-Hermite estimate stays falsified."
+        "The four-cell small-positive-correlation interval now has an internal analytic proof. Saturated tetrahedral score margins imply uniform exterior control relative to OU regret. A normalized hypothetical improving or tied sequence has tight weighted transfer measures and L2 facet-flux limits; its regret has lower bound ell*||f||^2/2 and its interaction converges to ||D f||^2. The first-moment kernel is rotational and the exact nearest-moment gauge removes it. Published maximizer dimension reduction supplies one interval independent of d>=3. The imported first-moment preprint, new normal-flux proof and dimension-reduction application await independent review; no explicit rho_0, formal verification, publication, or all-positive-correlation theorem is claimed. Full-noise interface coercivity and the inverse-correlation-scale chart remain additional internal results."
       ],
       "gap_ids": [
         "MOMENTS-SAFETY-PURITY",
@@ -4473,7 +4512,8 @@
         "GAP-PIS-GENERAL-THREE-CELL-CYCLIC-SWAPS",
         "GAP-PIS-NEARBY-THREE-DIMENSIONAL-FULL-KERNEL",
         "VERIFY-PIS-QUANTITATIVE-PARTITION-STABILITY",
-        "GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY"
+        "GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY",
+        "VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF"
       ],
       "scope_note": " Any specified compact semisimple G/Q and positive-dimensional Qtorus S; full H normalizingS. Marker t^dimS is least unsafe, not all larger markers classified. Native all-char0 pair versus formally-real individual factors; no arbitrary old-phase descent or worldwide-priority assertion. Actual compactQ G/H with positive-dimensionalh and xQ in hperp Lie-free. One-point zero-submersion versus globalregularzero distinct; no generalleast=e, allH classification or complex-priority claim. NativeQ/allchar0 pair and formallyreal factors separately scoped. Actual E=Qsqrt(-d),positive rationalq and chosenrationalP; no allAIform classification. Purea>=3 families have leastunsafe2 and exacteveryorder ranges. Nativeallchar0 versusformalreal factors; complexunit/geometricstrength already has known-pair antecedents.Principal-face route has no CDKW or normal-delta premise. Exact input existence iff nonideal is distinct from product-failure classification. Only stated actual rational models and their scalar extensions are covered.Exact ALG cell/action input and native moment access are assumptions for finite reconstruction; additional positive-strata hypotheses gate finite amplification. No automatic computation or nonsymmetric-measure coefficient claim. UnsafeIFFell>=2;EVERYorderseedIFF2..a,modifiedIFF2..a+1 for a>=D,notasharpgeneralDpuritycutoff. Nativeallchar0pair versusformallyrealindividualMathieufactors; honestnonsphericitybounds. ScalarcoefficientsinKonly,notO(X). EventualsafetyIFFsupport<=1;initialcancellationspreventaneveryordernonmonomialclassification. Existingall-nconstructionandsourcepinsunchanged.Promises and finite Hopf/matrix input format are explicit. Raw original PS remains guarded source/resource evidence outside document-inventory suffixes, with no coverage entry. No first-DH-algorithm or converse classification is claimed. Specificone-variableGaussian+CTansatzwithrealamplifier; noarbitrarycomplexf, fullGaussianMathieuclassificationorJacobianresolution. DLMFcontextonly,allneededidentitieslocallyderived.The sharp boundary requires at least one Laurent variable. Formal-real positivity concerns the separate Gaussian factor only. Structured Gaussian classification keeps fixed degree in EACH constrained circular pair and the full rotational weights; no arbitrary ternary/higher or r=0 arbitrary-field classification.Affine criterion allows Laurent rank zero and variance cancellation. The degree boundary requires positive Laurent rank; degree-bounded phase classes are not algebras, and no rank-zero all-field arbitrary-degree boundary or minimal ordinary total degree is asserted."
     },
@@ -10109,6 +10149,40 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Written proof by the constant third output on a possible common-root plane and a weighted planar determinant comparison."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-COINCIDENT-PARAMETER-EXCLUSION",
+          "title": "The smooth-common-factor affine output has no coincident-parameter Keller completion",
+          "scope": "In characteristic zero, with T a monic affine polynomial in x, p,q monic of degrees two and four, and U=y^2+T*z, no Keller map has form (U^3+E_A,p*U^2+E_B,q*U+u*y+w), for u,w in k[x] and E_A,E_B of weights at most five and three in (0,1,2).",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written exclusion by the generic-level bracket, a polynomial image curve degree bound, a residue at a moving pole, and the rank contradiction on a critical source plane."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-BINARY-INVERSION",
+          "title": "The binary smooth-common-factor branch is invertible",
+          "scope": "Every characteristic-zero degree-at-most-six Keller map in the binary case of the smooth-common-factor weight-two theorem is invertible.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof combining the coincident-parameter exclusion and the distinct-parameter inversion theorem."
         }
       ],
       "open_questions": [
@@ -10185,7 +10259,7 @@
           "source": "jacobian/monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md"
         },
         {
-          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch in fact has complete z-degrees (3,2,1), and its third output is v(x)*z+q(x)*y^2+u(x)*y+w(x) with q monic quartic and v=q*T with T monic affine. In weights (0,1,2) the highest tuple is (U_T*U_D^2,p*U_T*U_D,q*U_T) with U_E=y^2+E*z, p monic quadratic and D monic affine. D differing from T forces q=p^2. Inversion holds if gcd(v,u)=1; a noninvertible completion requires a common root of v,u,q where all three vanish to order at least two and w' is nonzero. Distinct D and T are excluded for noninvertible completions by restricting to that plane. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
+          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
           "source": "jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md",
           "kind": "mathematical",
           "node": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
@@ -269180,7 +269254,7 @@
         "sources": [
           {
             "path": "plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md",
-            "sha256": "bb3537e137afc57dcd4499e995c4fb32d75cad4023390dbec4643f231e6c1f65",
+            "sha256": "3242345a6f749a8a137f5f2bd8085d211645fc6bfd4918ed8a5ba68c982f98cd",
             "locator": "Hermite bounds, use of Theorem 1.1"
           }
         ]
@@ -269197,7 +269271,7 @@
         "sources": [
           {
             "path": "plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md",
-            "sha256": "bb3537e137afc57dcd4499e995c4fb32d75cad4023390dbec4643f231e6c1f65",
+            "sha256": "3242345a6f749a8a137f5f2bd8085d211645fc6bfd4918ed8a5ba68c982f98cd",
             "locator": "Hermite bounds, explicit integral evaluations"
           }
         ]
@@ -269206,7 +269280,7 @@
         "id": "GAP-PIS-BALANCED-POSITIVE-CORRELATION",
         "kind": "gap",
         "title": "Balanced positive-correlation Plurality Is Stablest",
-        "scope": "Decide if any balanced Gaussian partition beats the regular simplex at positive correlation. The fixed-partition low-correlation result and finite cubic search do not establish the universal inequality. Every proper reflected swap of a tetrahedral cell pair strictly loses full noise stability for every 0<rho<1; this restricted comparison does not establish the universal inequality.",
+        "scope": "Determine whether any balanced four-cell Gaussian partition beats the regular tetrahedron at an arbitrary positive correlation. An internally proved dimension-independent small-positive-correlation interval is now available, using normal-flux compactness and the accepted first-moment input; the full range 0<rho<1 remains unresolved here. Every proper reflected swap loses at every positive correlation, while general asymmetric cycles beyond the small interval remain open.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -269214,22 +269288,27 @@
         "sources": [
           {
             "path": "plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md",
-            "sha256": "bb3537e137afc57dcd4499e995c4fb32d75cad4023390dbec4643f231e6c1f65",
+            "sha256": "3242345a6f749a8a137f5f2bd8085d211645fc6bfd4918ed8a5ba68c982f98cd",
             "locator": "Problem and scope; Certification condition"
           },
           {
             "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-            "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+            "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
             "locator": "Consequences for the proposed bridge; Proper reflected swaps strictly lose full noise stability; Effect on the remaining proof route"
           },
           {
             "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-            "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
-            "locator": "Quantified maximizer target and its consequence, R1; The unresolved uniform step"
+            "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
+            "locator": "Quantified maximizer target and its consequence, R1; Nonlinear closure and review boundary"
+          },
+          {
+            "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+            "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+            "locator": "The two interval statements; Passage to arbitrary ambient dimension and proof-audit boundary"
           }
         ],
         "gap_kind": "mathematical",
-        "next_action": "Preferred moonshot: resolve GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY. K2 now transfers the limiting gap to the full-noise interface form uniformly over complete facets, including linear tail motions. P6 admits every maximizer to one tetrahedral chart on a domain containing B_(c/(4*rho)). Prove global chart admission or an exterior estimate relative to the interior deformation, then a uniform nonlinear remainder/uniqueness argument. The exponentially small exterior P7 is not zero. R1 remains the conditional route to a positive interval."
+        "next_action": "Review the new small-correlation proof independently via VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF. The broader mathematical target is correlations beyond its qualitative interval; the retired relative-Hermite estimate stays falsified."
       },
       {
         "id": "MRC-LIVINGSTON-VAN-COTT-BING-DOUBLE-LIFT",
@@ -269747,7 +269826,7 @@
           },
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Consequences for previous four-cell obligations"
           }
         ],
@@ -293144,7 +293223,7 @@
       {
         "id": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION",
         "title": "Three-variable sextic Keller inversion",
-        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch in fact has complete z-degrees (3,2,1), and its third output is v(x)*z+q(x)*y^2+u(x)*y+w(x) with q monic quartic and v=q*T with T monic affine. In weights (0,1,2) the highest tuple is (U_T*U_D^2,p*U_T*U_D,q*U_T) with U_E=y^2+E*z, p monic quadratic and D monic affine. D differing from T forces q=p^2. Inversion holds if gcd(v,u)=1; a noninvertible completion requires a common root of v,u,q where all three vanish to order at least two and w' is nonzero. Distinct D and T are excluded for noninvertible completions by restricting to that plane. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
+        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
         "kind": "gap",
         "status": "open",
         "origin": "internal",
@@ -293591,27 +293670,27 @@
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
             "locator": "KellerSexticConicLeadingDiscriminantExclusion"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
             "locator": "SexticKellerTangentConicQuadraticOuterNonpencilSquarefreeExclusion"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
             "locator": "SexticKellerTangentConicReducedCommonFactorFirstCorrection"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
             "locator": "SexticKellerTangentConicReducedCommonFactorExclusion"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection"
           },
           {
@@ -293632,82 +293711,82 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseJetReduction",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseNormalForm",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseVeronese",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseNonzeroSlope",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseExclusion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryMember",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryNonzeroTransverse",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryFirstLift",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryExclusion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicQuadraticOuterSquareMemberFirstTies",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicQuadraticOuterSquareMemberBinomialExclusion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicDoubledSquareMemberWeightThreeHalves",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberWeightTwo",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicDoubledSquareMemberBinaryRefinement",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledSquareMixedLowXWeights",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledMixedCoprimeAffineOutputInversion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/KELLER_LEADING_PAIR_DE_RHAM_OBSTRUCTION.md",
@@ -293717,52 +293796,67 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledSquareMixedExclusion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberBinaryExclusion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberWeightThreeReduction",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberNonzeroAxialCoefficient",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberTransverseReduction",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberTransverseCuspExclusion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberNonzeroCoefficientExclusion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberAffineOutput",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberQuadraticParameters",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberDistinctParameterInversion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+            "locator": "SexticKellerTangentConicSmoothSquareMemberCoincidentParameterExclusion",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+            "locator": "SexticKellerTangentConicSmoothSquareMemberBinaryInversion",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+            "locator": "SexticKellerTangentConicNonbinaryAxialFirstCorrection",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           }
         ]
       },
@@ -297519,7 +297613,7 @@
           },
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Consequences for previous four-cell obligations"
           }
         ]
@@ -297874,7 +297968,7 @@
           },
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Consequences for previous four-cell obligations, H1"
           }
         ]
@@ -298917,7 +299011,7 @@
         "sources": [
           {
             "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-            "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+            "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
             "locator": "An exactly balanced family; Exact first- and second-moment changes; Consequences for the proposed bridge"
           }
         ]
@@ -298936,7 +299030,7 @@
         "sources": [
           {
             "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-            "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+            "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
             "locator": "Exact first- and second-moment changes, (7); Consequences for the proposed bridge"
           }
         ]
@@ -298945,8 +299039,8 @@
         "id": "GAP-PIS-FOUR-CELL-UNIFORM-SMALL-CORRELATION",
         "kind": "gap",
         "title": "One uniform small positive-correlation interval for four balanced cells",
-        "scope": "There exists rho_0>0 such that for every d>=3, all balanced measurable four-cell Gaussian partitions A and all 0<rho<=rho_0, S_rho(A)<=S_rho(T). The external all-cell first-moment theorem and square-root partition estimate localize improving competitors, and Heilman--Tarter reduces maximizers to three dimensions. The preferred open route is uniform local rigidity of actual maximizers. Assignment, bounded and expanding-ball score estimates, a first-moment interface gap modulo rotations, and the improved maximizer bounds d_4(A)=O(rho), deficit=O(rho^2) are proved internally; the full-noise interface gap K2 and an inverse-correlation-scale chart P6 now also hold, but a global nonlinear tail comparison and uniqueness are not proved. The all-competitor nearby kernel comparison remains an alternative; the relative-Hermite estimate stays falsified and retired.",
-        "status": "open",
+        "scope": "There exists rho_0>0 independent of d>=3 such that every balanced ordinary measurable four-cell Gaussian partition A of R^d satisfies S_rho(A)<=S_rho(T) for 0<rho<=rho_0. Every global maximizer, and hence every equality case, is a cylindrical central regular tetrahedral partition up to rotation, labels and null sets. Uses the three-dimensional rigidity theorem and published maximizer existence/dimension reduction. This is an internally written analytic theorem under the repository accepted external first-moment input, pending independent mathematical review; rho_0 is qualitative and no theorem for all positive correlations or a first-moment-relative value gap is asserted.",
+        "status": "proved",
         "topic": "moments",
         "origin": "internal",
         "gap_kind": "mathematical",
@@ -298955,21 +299049,26 @@
         "sources": [
           {
             "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-            "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+            "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
             "locator": "Effect on the remaining proof route"
           },
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Localization and the remaining full-kernel theorem"
           },
           {
             "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-            "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
-            "locator": "Quantified maximizer target and its consequence, R1; The unresolved uniform step"
+            "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
+            "locator": "Quantified maximizer target and its consequence, R1; Nonlinear closure and review boundary"
+          },
+          {
+            "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+            "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+            "locator": "Three-dimensional rigidity and dimension-independent interval; C3-C12"
           }
         ],
-        "next_action": "Preferred moonshot: resolve GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY. K2 now transfers the limiting gap to the full-noise interface form uniformly over complete facets, including linear tail motions. P6 admits every maximizer to one tetrahedral chart on a domain containing B_(c/(4*rho)). Prove global chart admission or an exterior estimate relative to the interior deformation, then a uniform nonlinear remainder/uniqueness argument. The exponentially small exterior P7 is not zero. R1 remains the conditional route to a positive interval."
+        "next_action": "The mathematical endpoint is discharged by the internal normal-flux compactness proof. Independent mathematical review remains open as VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF. Preserve the external first-moment input and the qualitative nature of rho_0; no assurance flag is upgraded."
       },
       {
         "id": "PIS-TETRAHEDRAL-CELL-MOMENT-TENSORS",
@@ -298983,7 +299082,7 @@
         "sources": [
           {
             "path": "plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md",
-            "sha256": "bb3537e137afc57dcd4499e995c4fb32d75cad4023390dbec4643f231e6c1f65",
+            "sha256": "3242345a6f749a8a137f5f2bd8085d211645fc6bfd4918ed8a5ba68c982f98cd",
             "locator": "Hermite bounds, tetrahedral first moments, diagonal second moments and positive off-diagonal integral"
           }
         ]
@@ -299525,7 +299624,7 @@
         "sources": [
           {
             "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-            "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+            "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
             "locator": "Proper reflected swaps strictly lose full noise stability, (11)-(13), equality characterization and tail corollary"
           }
         ]
@@ -299868,7 +299967,7 @@
         "sources": [
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
             "locator": "KellerSexticConicLeadingDiscriminantExclusion"
           }
         ],
@@ -300119,7 +300218,7 @@
           },
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Consequences for previous four-cell obligations, H1"
           }
         ],
@@ -300144,7 +300243,7 @@
           },
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Consequences for previous four-cell obligations, H1"
           }
         ],
@@ -300163,7 +300262,7 @@
         "sources": [
           {
             "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-            "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+            "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
             "locator": "Balanced three-cell cycles and their cross-interactions, (CY1)-(CY3)"
           },
           {
@@ -300187,7 +300286,7 @@
         "sources": [
           {
             "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-            "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+            "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
             "locator": "Balanced three-cell cycles and their cross-interactions, (CY1)-(CY4) and the remaining non-equivariant seed test"
           }
         ],
@@ -300447,7 +300546,7 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "KellerTransverseVeroneseLeadingExclusion",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           }
         ],
         "topic": "jacobian",
@@ -300614,7 +300713,7 @@
         "sources": [
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "External endpoint and application audit, Milman--Neeman hypotheses and normalization"
           }
         ]
@@ -300631,7 +300730,7 @@
         "sources": [
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "External endpoint and application audit, E1--E2 and local application audit"
           },
           {
@@ -300653,7 +300752,7 @@
         "sources": [
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "External endpoint and application audit"
           }
         ]
@@ -300670,7 +300769,7 @@
         "sources": [
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "External endpoint and application audit"
           }
         ]
@@ -300687,7 +300786,7 @@
         "sources": [
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Localization and the remaining full-kernel theorem, Heilman--Tarter application"
           }
         ]
@@ -300696,21 +300795,26 @@
         "id": "GAP-PIS-NEARBY-THREE-DIMENSIONAL-FULL-KERNEL",
         "kind": "gap",
         "title": "Uniform full-kernel comparison in a neighborhood of the tetrahedron",
-        "scope": "There exist eta_0>0 and0<rho_1<1 such that every balanced measurable four-cell partition of R^3 with d_4(A)<=eta_0 satisfies S_rho(A)<=S_rho(T) for every0<rho<=rho_1. The neighborhood and interval are uniform over all measurable competitors, including remote tails and asymmetric cyclic exchanges. No positive lower bound proportional to rho*(F_4-W_1(A)) is required.",
-        "status": "open",
+        "scope": "There exist eta_0>0 and 0<rho_1<1 such that every balanced measurable four-cell partition of R^3 with d_4(A)<=eta_0 satisfies S_rho(A)<=S_rho(T) for 0<rho<=rho_1. The stronger internal three-dimensional theorem now proves this for all balanced partitions, with equality only for tetrahedra. No first-moment-relative quantitative value gap is asserted; independent mathematical review is pending.",
+        "status": "proved",
         "topic": "moments",
         "origin": "internal",
         "dependency_coverage": "partial",
         "sources": [
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Localization and the remaining full-kernel theorem, nearby full-kernel obligation"
+          },
+          {
+            "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+            "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+            "locator": "Three-dimensional rigidity and dimension-independent interval; C3-C12"
           }
         ],
         "gap_kind": "mathematical",
         "endpoint_role": "alternative_method",
-        "next_action": "Control the complete kernel loss for nearby balanced three-dimensional competitors. Retain remote tails and both orientations of asymmetric cyclic exchanges; use CY1--CY3 as exact tests. The reflected-pair theorem applies only at the original tetrahedral pair, and the disproved relative-Hermite estimate stays retired."
+        "next_action": "The mathematical endpoint is discharged by the internal normal-flux compactness proof. Independent mathematical review remains open as VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF. Preserve the external first-moment input and the qualitative nature of rho_0; no assurance flag is upgraded."
       },
       {
         "id": "VERIFY-PIS-QUANTITATIVE-PARTITION-STABILITY",
@@ -300724,7 +300828,7 @@
         "sources": [
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Literature and assurance limits"
           }
         ],
@@ -300744,7 +300848,7 @@
         "sources": [
           {
             "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-            "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+            "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
             "locator": "Consequences for previous four-cell obligations, Heilman balanced specialization"
           }
         ]
@@ -300817,7 +300921,7 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "KellerQuadraticAffineOutputRootRestriction",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
           }
         ],
         "topic": "jacobian",
@@ -300903,8 +301007,8 @@
         "id": "GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY",
         "kind": "gap",
         "title": "Uniform local rigidity of actual four-cell noise-stability maximizers",
-        "scope": "There exist eta_*>0 and 0<rho_*<1 such that every balanced global maximizer of S_rho among measurable four-cell partitions of R^3 with d_4(A)<=eta_* is a rotated/relabelled central tetrahedral partition up to null sets, simultaneously for every 0<rho<=rho_*. The constants must be uniform over maximizers. Global maximality is retained; no classification of all stationary solutions is required. This sufficient target also excludes non-tetrahedral ties; ruling out improving maximizers alone would suffice for the inequality. The full-noise linearized facet gap K2 and the common inverse-correlation-scale chart P6 are proved internally; extension beyond that domain and a uniform nonlinear comparison remain open.",
-        "status": "open",
+        "scope": "For some eta_*>0 and 0<rho_*<1, every balanced global four-cell maximizer in R^3 with d_4(A)<=eta_* is tetrahedral for every 0<rho<=rho_*. This is now a corollary of the internally proved stronger three-dimensional rigidity theorem, which treats every balanced measurable A with S_rho(A)>=S_rho(T). Independent mathematical review is pending.",
+        "status": "proved",
         "topic": "moments",
         "origin": "internal",
         "gap_kind": "mathematical",
@@ -300913,11 +301017,16 @@
         "sources": [
           {
             "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-            "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
-            "locator": "Quantified maximizer target and its consequence; The unresolved uniform step"
+            "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
+            "locator": "Quantified maximizer target and its consequence; Nonlinear closure and review boundary"
+          },
+          {
+            "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+            "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+            "locator": "Three-dimensional rigidity and dimension-independent interval; C3-C12"
           }
         ],
-        "next_action": "Preferred moonshot: resolve GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY. K2 now transfers the limiting gap to the full-noise interface form uniformly over complete facets, including linear tail motions. P6 admits every maximizer to one tetrahedral chart on a domain containing B_(c/(4*rho)). Prove global chart admission or an exterior estimate relative to the interior deformation, then a uniform nonlinear remainder/uniqueness argument. The exponentially small exterior P7 is not zero. R1 remains the conditional route to a positive interval."
+        "next_action": "The mathematical endpoint is discharged by the internal normal-flux compactness proof. Independent mathematical review remains open as VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF. Preserve the external first-moment input and the qualitative nature of rho_0; no assurance flag is upgraded."
       },
       {
         "id": "ARITH-LYW-GOOD-REDUCTION-AND-POLYNOMIAL-CF-OBSTRUCTION",
@@ -301154,7 +301263,7 @@
         "sources": [
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
             "locator": "KellerConicQuadraticFibreDifferential"
           }
         ]
@@ -301191,7 +301300,7 @@
         "sources": [
           {
             "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-            "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+            "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
             "locator": "Closest inspected primary results, general second-variation audit; A uniform full-noise interface gap, K1 and its derivation"
           }
         ]
@@ -301297,6 +301406,43 @@
           }
         ],
         "next_action": "Bound the rank of the explicit genus-two companion D_R on an infinite nonsingular MCT16 target family, using the exact rank formula in HG8."
+      },
+      {
+        "id": "JAC-SEXTIC-KELLER-TANGENT-CONIC-NONBINARY-AXIAL-FIRST-CORRECTION",
+        "title": "The first correction in the shared nonbinary axial form is constrained",
+        "scope": "If the complete highest z-terms of a degree-at-most-six Keller map are (y*z^4,x*y*z^3,x^2*y*z^2), and a,b,c are the coefficients one lower in z, then x^2*a-2*x*b+c is a scalar multiple of x^3*y, with b(x,0)=x*a(x,0) and c(x,0)=x^2*a(x,0). At (0,-1,1) the highest tuple is (W*z^3,x*W*z^2,x^2*W*z), where W=y*z+a(x,0).",
+        "kind": "source",
+        "status": "proved",
+        "topic": "jacobian",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+            "locator": "SexticKellerTangentConicNonbinaryAxialFirstCorrection",
+            "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
+          }
+        ]
+      },
+      {
+        "id": "VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF",
+        "kind": "gap",
+        "title": "Independent review of the normal-flux small-correlation proof",
+        "scope": "Independently review C3-C12 in SMALL_POSITIVE_CORRELATION_INTERVAL.md and its first-moment inputs: weighted transfer/tail estimates, exact Procrustes moment gauge together with metric localization, positive regret normalization, ordered normal-flux compactness without junction mass, ell/2 lower-bound normalization, and the weighted product-kernel limit. Then audit the dimension-reduction application. The current proof and source audit are internal, not independent mathematical or external review.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "gap_kind": "verification",
+        "endpoint_role": "source_audit",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+            "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+            "locator": "Passage to arbitrary ambient dimension and proof-audit boundary"
+          }
+        ],
+        "next_action": "Reconstruct the proof independently from C1-C12 and check the frozen first-moment preprint/application. Focus on C3-C4, the C9-C11 plane-density normalization and junction exclusion, C12 weighted tightness, and the exact rotation gauge. Structural checks or agreement with the internal derivation do not discharge this review."
       }
     ],
     "implications": [
@@ -449297,7 +449443,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md",
-          "sha256": "bb3537e137afc57dcd4499e995c4fb32d75cad4023390dbec4643f231e6c1f65",
+          "sha256": "3242345a6f749a8a137f5f2bd8085d211645fc6bfd4918ed8a5ba68c982f98cd",
           "locator": "Hermite bounds"
         },
         "dependency_coverage": "partial"
@@ -482735,7 +482881,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-          "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+          "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
           "locator": "Normalization and comparison with the literature, (1); exact moment changes (5)-(7); fixed-correlation estimate (8); Proper reflected swaps strictly lose full noise stability, (11)-(13) and the positive deficit-normalized tail limit"
         },
         "dependency_coverage": "partial"
@@ -483622,7 +483768,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-          "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+          "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
           "locator": "Proper reflected swaps strictly lose full noise stability, (11)-(13), equality characterization and tail corollary"
         }
       },
@@ -484093,7 +484239,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
           "locator": "SexticKellerTangentConicQuadraticOuterNonpencilSquarefreeExclusion"
         }
       },
@@ -484175,7 +484321,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
           "locator": "SexticKellerTangentConicReducedCommonFactorFirstCorrection"
         }
       },
@@ -484191,7 +484337,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
           "locator": "SexticKellerTangentConicReducedCommonFactorExclusion"
         }
       },
@@ -484269,7 +484415,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection"
         }
       },
@@ -484447,7 +484593,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseJetReduction",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -484643,7 +484789,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-          "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+          "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
           "locator": "Equivariant cyclic-swap theorem, (CY3)-(CY4), reflection positivity and equality cases"
         }
       },
@@ -484675,7 +484821,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseNormalForm",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -484738,7 +484884,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseVeronese",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -484830,7 +484976,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseNonzeroSlope",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -484973,7 +485119,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseExclusion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -484989,7 +485135,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryMember",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485050,7 +485196,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryNonzeroTransverse",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485065,7 +485211,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryFirstLift",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485130,7 +485276,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryExclusion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485175,7 +485321,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicQuadraticOuterSquareMemberFirstTies",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485190,7 +485336,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicQuadraticOuterSquareMemberBinomialExclusion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485204,7 +485350,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicDoubledSquareMemberWeightThreeHalves",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485268,7 +485414,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberWeightTwo",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485362,7 +485508,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "External endpoint and application audit, E1--E2"
         },
         "dependency_coverage": "partial"
@@ -485377,7 +485523,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "External endpoint and application audit; From moments to regular-score regret, feasible assignment"
         },
         "dependency_coverage": "partial"
@@ -485392,7 +485538,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "Uniform covariance control with explicit constants; From moments to regular-score regret; Gaussian margin and partition distance, C1--G2"
         },
         "dependency_coverage": "partial"
@@ -485407,7 +485553,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "Localization and the remaining full-kernel theorem, N1"
         },
         "dependency_coverage": "partial"
@@ -485423,7 +485569,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "Localization and the remaining full-kernel theorem, N1--N2 and maximizer contradiction"
         },
         "dependency_coverage": "partial"
@@ -485439,7 +485585,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "Consequences for previous four-cell obligations, Heilman balanced specialization"
         },
         "dependency_coverage": "partial"
@@ -485453,7 +485599,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "External endpoint and application audit; Consequences for previous four-cell obligations"
         },
         "dependency_coverage": "partial"
@@ -485467,7 +485613,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "External endpoint and application audit; Consequences for previous four-cell obligations, planar strictness"
         },
         "dependency_coverage": "partial"
@@ -485482,7 +485628,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "Consequences for previous four-cell obligations, H1 and empty-domain deduction"
         },
         "dependency_coverage": "partial"
@@ -485497,7 +485643,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "Consequences for previous four-cell obligations, H1 and empty-domain deduction"
         },
         "dependency_coverage": "partial"
@@ -485512,7 +485658,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "locator": "Consequences for previous four-cell obligations, H1 and empty-domain deduction"
         },
         "dependency_coverage": "partial"
@@ -485559,7 +485705,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicDoubledSquareMemberBinaryRefinement",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485610,7 +485756,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledSquareMixedLowXWeights",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485626,7 +485772,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledMixedCoprimeAffineOutputInversion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485721,7 +485867,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-          "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+          "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
           "locator": "Assignment and the exact information supplied by global maximality; Normalized scores and prices, A1-B4; What this proves about bounded interfaces; An exact kernel estimate on expanding balls, E1-E4; Sharper localization using the limiting gap, S1-S5"
         },
         "dependency_coverage": "partial"
@@ -485737,7 +485883,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-          "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+          "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
           "locator": "The limiting interface Hessian has only rotational zero modes, H1-H3 and the finite-rank gap proof"
         },
         "dependency_coverage": "partial"
@@ -485753,7 +485899,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-          "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+          "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
           "locator": "Quantified maximizer target and its consequence, R1 and the maximizer contradiction"
         },
         "dependency_coverage": "partial"
@@ -485898,7 +486044,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledSquareMixedExclusion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -485930,7 +486076,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberBinaryExclusion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486031,7 +486177,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberWeightThreeReduction",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486046,7 +486192,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberNonzeroAxialCoefficient",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486127,7 +486273,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberTransverseReduction",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486142,7 +486288,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberTransverseCuspExclusion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486232,7 +486378,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-          "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+          "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
           "locator": "Global score margins and facet normal derivatives, T1-T4 and the reflected Gaussian kernel proof"
         },
         "dependency_coverage": "partial"
@@ -486248,7 +486394,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-          "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+          "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
           "locator": "A uniform full-noise interface gap, including linear tail motions, K1-K4 and rotational mixed-kernel argument"
         },
         "dependency_coverage": "partial"
@@ -486262,7 +486408,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-          "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+          "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
           "locator": "A common interface chart on the scale of inverse correlation, P1-P7"
         },
         "dependency_coverage": "partial"
@@ -486279,7 +486425,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberNonzeroCoefficientExclusion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486371,7 +486517,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberAffineOutput",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486387,7 +486533,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberQuadraticParameters",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486401,7 +486547,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberDistinctParameterInversion",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb"
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
         }
       },
       {
@@ -486417,6 +486563,124 @@
           "sha256": "3092507ab21226f0675efe1361158d5e29b7443450a3f4b0ec0c0dcf99e0c254",
           "locator": "HG8: smoothness for all rational R!=0, degree-two push–pull, all-local Kummer transfer and MCT16"
         }
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-COINCIDENT-PARAMETER-EXCLUSION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-QUADRATIC-PARAMETERS"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-COINCIDENT-PARAMETER-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "locator": "SexticKellerTangentConicSmoothSquareMemberCoincidentParameterExclusion",
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
+        }
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-BINARY-INVERSION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-COINCIDENT-PARAMETER-EXCLUSION",
+          "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-DISTINCT-PARAMETER-INVERSION"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-BINARY-INVERSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "locator": "SexticKellerTangentConicSmoothSquareMemberBinaryInversion",
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88"
+        }
+      },
+      {
+        "id": "PIS-SATURATED-MARGINS-TO-RELATIVE-EXTERIOR-CONTROL",
+        "premises": [
+          "PIS-TETRAHEDRAL-GLOBAL-SCORE-MARGINS"
+        ],
+        "conclusion": "PIS-GAUSSIAN-REGRET-RELATIVE-EXTERIOR-CONTROL",
+        "status": "proved",
+        "proof": {
+          "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+          "locator": "Weighted transfer control and the relative exterior estimate, C1-C5"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "PIS-NORMAL-FLUX-COMPACTNESS-TO-THREE-DIMENSIONAL-RIGIDITY",
+        "premises": [
+          "EXT-PIS-ZHANG-EQUAL-GAUSSIAN-FIRST-MOMENT",
+          "PIS-EQUAL-GAUSSIAN-PARTITION-STABILITY",
+          "PIS-FIRST-MOMENT-INTERFACE-SPECTRAL-GAP",
+          "PIS-TETRAHEDRAL-GLOBAL-SCORE-MARGINS",
+          "PIS-GAUSSIAN-REGRET-RELATIVE-EXTERIOR-CONTROL"
+        ],
+        "conclusion": "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY",
+        "status": "proved",
+        "proof": {
+          "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+          "locator": "Normalizing a hypothetical improving or tied sequence; Ordered normal fluxes and the sharp regret lower bound; The interaction limit and exclusion of the sequence, C6-C12"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "PIS-THREE-DIMENSIONAL-RIGIDITY-AND-DIMENSION-REDUCTION",
+        "premises": [
+          "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY",
+          "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION"
+        ],
+        "conclusion": "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY",
+        "status": "proved",
+        "proof": {
+          "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+          "locator": "Passage to arbitrary ambient dimension and proof-audit boundary"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "PIS-THREE-DIMENSIONAL-RIGIDITY-DISCHARGES-MAXIMIZER-GAP",
+        "premises": [
+          "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY"
+        ],
+        "conclusion": "GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY",
+        "status": "proved",
+        "proof": {
+          "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+          "locator": "Three-dimensional rigidity statement; The interaction limit and exclusion of the sequence"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "PIS-THREE-DIMENSIONAL-RIGIDITY-DISCHARGES-NEARBY-KERNEL",
+        "premises": [
+          "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY"
+        ],
+        "conclusion": "GAP-PIS-NEARBY-THREE-DIMENSIONAL-FULL-KERNEL",
+        "status": "proved",
+        "proof": {
+          "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+          "locator": "Three-dimensional rigidity statement: any hypothetical strictly improving nearby competitor would satisfy its hypotheses"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "PIS-SMALL-CORRELATION-THEOREM-DISCHARGES-INTERVAL",
+        "premises": [
+          "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY"
+        ],
+        "conclusion": "GAP-PIS-FOUR-CELL-UNIFORM-SMALL-CORRELATION",
+        "status": "proved",
+        "proof": {
+          "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+          "locator": "Dimension-independent interval statement and its proof"
+        },
+        "dependency_coverage": "partial"
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -570031,6 +570295,15 @@
                 "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION",
                 "GAP-PIS-FOUR-CELL-UNIFORM-SMALL-CORRELATION"
               ]
+            },
+            {
+              "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+              "locator": "Passage to arbitrary ambient dimension and proof-audit boundary, Lemma2.3 and Theorem1.9",
+              "role": "mathematical_input",
+              "nodes": [
+                "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY",
+                "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION"
+              ]
             }
           ]
         },
@@ -570277,6 +570550,15 @@
               "nodes": [
                 "PIS-MAXIMIZER-ASSIGNMENT-AND-INTERFACE-CONTROL",
                 "GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY"
+              ]
+            },
+            {
+              "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+              "locator": "Inputs and relation to prior work, Section8 and Conjecture3 comparison",
+              "role": "context",
+              "nodes": [
+                "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY",
+                "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY"
               ]
             }
           ]
@@ -570572,6 +570854,36 @@
               "role": "context",
               "nodes": [
                 "ARITH-GENUS-THREE-MORDELL-COVER-UNBOUNDED-THREE-SHA"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "REF-PIS-CHRISTOF-WACHSMUTH-NO-GAP-2018",
+          "title": "No-Gap Second-Order Conditions via a Directional Curvature Functional",
+          "title_status": "source_title",
+          "citation": "Constantin Christof and Gerd Wachsmuth, SIAM Journal on Optimization28 (2018), 2097-2130, DOI10.1137/17M1140418; inspected arXiv:1707.07579v2.",
+          "urls": [
+            "https://arxiv.org/html/1707.07579v2",
+            "https://doi.org/10.1137/17M1140418"
+          ],
+          "local_sources": [],
+          "identifiers": {
+            "arxiv": "1707.07579v2",
+            "doi": "10.1137/17M1140418"
+          },
+          "resource_type": "paper",
+          "verification": "source_read",
+          "verification_basis": "Actual Theorems4.4,6.4,6.12 and Assumptions6.2,6.6 inspected, including the bounded Lipschitz domain, scalar box constraint, switching-level gradient and weak-star quadratic continuity hypotheses. Context only; the unbounded Gaussian multicell weighted tightness and rotation gauge are proved directly here.",
+          "uses": [
+            {
+              "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+              "locator": "Inputs and relation to prior work, explicit no-gap second-order comparison",
+              "role": "context",
+              "nodes": [
+                "PIS-GAUSSIAN-REGRET-RELATIVE-EXTERIOR-CONTROL",
+                "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY",
+                "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY"
               ]
             }
           ]
@@ -578844,8 +579156,8 @@
           "proof_sources": [
             {
               "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-              "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
-              "locator": "Closest inspected primary results; Assignment and the exact information supplied by global maximality; The unresolved uniform step"
+              "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
+              "locator": "Closest inspected primary results; Assignment and the exact information supplied by global maximality; Nonlinear closure and review boundary"
             }
           ],
           "application": "Use the established strategy of combining localization with a nonlinear assignment condition. Prove the local four-cell score and price estimates here. Do not import the three-cell derivative-objective lemma for S_rho or assume hyperstability. The limiting interface gap is proved separately from M2 and finite rank.",
@@ -578877,7 +579189,7 @@
           "proof_sources": [
             {
               "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
-              "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+              "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
               "locator": "Global score margins and facet normal derivatives, T1-T4; A uniform full-noise interface gap, K1-K4; A common interface chart on the scale of inverse correlation, P1-P7"
             }
           ],
@@ -578885,6 +579197,39 @@
           "novelty_limit": "General shape variation, reflection positivity, Gaussian smoothing and finite-rank perturbation are established methods. No novelty certification, global chart, hyperstability, nonlinear rigidity or four-cell positive interval is claimed.",
           "remaining_obligation": "Admit every maximizer to a global nonlinear interface class or bound the exterior relative to its interior deformation, then control a uniform nonlinear remainder. Infinitesimal tail control alone is insufficient.",
           "inspection_scope": "Actual primary statements and the indicated proof passages inspected. Written internal derivations only; no independent mathematical review, numerical spectral certificate or formal verification."
+        },
+        {
+          "id": "ANT-PIS-NORMAL-FLUX-CLOSURE",
+          "title": "Switching-surface curvature and weak-star second-order methods are established predecessors",
+          "relation": "classical_method",
+          "nodes": [
+            "PIS-GAUSSIAN-REGRET-RELATIVE-EXTERIOR-CONTROL",
+            "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY",
+            "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY"
+          ],
+          "references": [
+            {
+              "paper_id": "REF-PIS-CHRISTOF-WACHSMUTH-NO-GAP-2018",
+              "locator": "Theorems4.4,6.4,6.12; Assumptions6.2,6.6",
+              "statement": "Under nondegeneracy, weak-star continuity and a scalar bounded-domain switching-surface condition, positive curvature plus the smooth quadratic term yields local quadratic growth."
+            },
+            {
+              "paper_id": "REF-PIS-HEILMAN-EUCLIDEAN-PARTITIONS-2014",
+              "locator": "Section8 and Conjecture3",
+              "statement": "Four-cell first-moment stability is identified as a missing input for a possible perturbative extension."
+            }
+          ],
+          "proof_sources": [
+            {
+              "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+              "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+              "locator": "Inputs and relation to prior work; C3-C12"
+            }
+          ],
+          "application": "Adapt the measure-valued second-order compactness mechanism with an explicit unbounded Gaussian weighted tail estimate, twelve ordered multicell transfer densities, exact balance, and a Procrustes rotation gauge. Establish each required limit directly rather than importing a bounded scalar theorem.",
+          "novelty_limit": "The general second-order switching-measure mechanism and lower-dimensional curvature cost are established methods. No novelty certification or claim that the cited general theorem already covers the Gaussian multicell setting is made.",
+          "remaining_obligation": "Independent mathematical review of the written proof and the exact imported first-moment and dimension-reduction hypotheses; no explicit quantitative correlation threshold is supplied.",
+          "inspection_scope": "Actual primary theorem statements, standing assumptions and relevant proof passages inspected, with a written self-audit of the local adaptation. No independent review or formalization asserted."
         }
       ]
     },
@@ -766338,7 +766683,7 @@
         },
         {
           "path": "plurality-stability/BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md",
-          "sha256": "bb3537e137afc57dcd4499e995c4fb32d75cad4023390dbec4643f231e6c1f65",
+          "sha256": "3242345a6f749a8a137f5f2bd8085d211645fc6bfd4918ed8a5ba68c982f98cd",
           "role": "proof",
           "explanation": "Exact Hermite analysis and finite numerical search scope.",
           "claims": [
@@ -785931,7 +786276,7 @@
         },
         {
           "path": "plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md",
-          "sha256": "5e20f5758beb99e46be3a326c87b100f3a1fadff345503a5492755d7260a5e7a",
+          "sha256": "4003074600aa149edfcb8e0df16c6bcaee3f0470bc7bd192e5332b5a5c5e3d63",
           "role": "proof",
           "explanation": "Analytic reflected-tail counterexample and its deficit-scale obstruction, plus a full Gaussian kernel proof of strict noise-stability loss for every proper measurable reflected swap at every 0<rho<1. The uniform comparison and high-value first-Hermite stability remain separate obligations. Includes exact three-cell cyclic interaction identities, strict full-kernel loss for S3-equivariant seeds and the open non-equivariant cycle comparison.",
           "claims": [
@@ -787448,7 +787793,7 @@
         },
         {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "2d537eb6422764c50ef97cb28b43ac1ca67bcba69eb53c391a0c7d96cc43cdfb",
+          "sha256": "6d9ac833589a3eadaab76424d82c8a20d755f52e65645aff54c2d92152755f88",
           "role": "proof",
           "claims": [
             "JAC-KELLER-SEXTIC-CONIC-LEADING-DISCRIMINANT-EXCLUSION",
@@ -787484,7 +787829,10 @@
             "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-NONZERO-COEFFICIENT-EXCLUSION",
             "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-AFFINE-OUTPUT",
             "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-QUADRATIC-PARAMETERS",
-            "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-DISTINCT-PARAMETER-INVERSION"
+            "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-DISTINCT-PARAMETER-INVERSION",
+            "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-COINCIDENT-PARAMETER-EXCLUSION",
+            "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-BINARY-INVERSION",
+            "JAC-SEXTIC-KELLER-TANGENT-CONIC-NONBINARY-AXIAL-FIRST-CORRECTION"
           ],
           "dependencies": [
             "JAC-KELLER-LEADING-PAIR-RATIONAL-SLICE",
@@ -787839,9 +788187,39 @@
                 "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-DISTINCT-PARAMETER-INVERSION"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem SexticKellerTangentConicSmoothSquareMemberCoincidentParameterExclusion.",
+              "kind": "theorem",
+              "line": 4670,
+              "title": "Theorem SexticKellerTangentConicSmoothSquareMemberCoincidentParameterExclusion.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-COINCIDENT-PARAMETER-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary SexticKellerTangentConicSmoothSquareMemberBinaryInversion.",
+              "kind": "corollary",
+              "line": 4859,
+              "title": "Corollary SexticKellerTangentConicSmoothSquareMemberBinaryInversion.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-TANGENT-CONIC-SMOOTH-SQUARE-MEMBER-BINARY-INVERSION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem SexticKellerTangentConicNonbinaryAxialFirstCorrection.",
+              "kind": "theorem",
+              "line": 4872,
+              "title": "Theorem SexticKellerTangentConicNonbinaryAxialFirstCorrection.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-TANGENT-CONIC-NONBINARY-AXIAL-FIRST-CORRECTION"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
-          "explanation": "Excludes squarefree factors outside the pencil and the reduced in-pencil factor, and lifts degree-five terms with square common factor and a transverse lower quadratic into a Veronese reference. The doubled common-factor branch with a transverse binary member has explicit divisibility through its first two correction orders. It also determines the transverse highest tuple and absorbs the entire degree-four correction in this branch. The possible transverse discriminant scalar is excluded by a second-order pole comparison. The chart with zero linear slope is excluded by comparing two localized constant rings. A highest determinant coefficient after fixing x and x*z+mu*y excludes the whole doubled common-factor branch with a transverse binary member. For the remaining reduced binary member with a doubled common factor it fixes the first nonbinary weighted frame. The surviving reduced binary member reaches a single parameter lift at the next transverse weight. Comparing the quadratic transverse coefficient with the ordinary sextic excludes the reduced binary member. Integral lifts exclude the early axial ties in the two remaining square-member frames, apart from explicit conic binomials. A first weight change in the unused variable excludes both binomial ties. The next doubled-frame weight is confined to a binary tuple or one axial coefficient form. The first smooth-frame weight has its own binary tuple and the same nonbinary axial normal form. The nontrivial binary doubled-frame tie is reduced to a single mixed correction and its required next weight. In the binary mixed frame an affine transverse component forces residue restrictions and gives inversion under a coprimality hypothesis. A transverse-weight calculation and the low-degree generic-level bracket exclude the binary mixed doubled frame. The smooth-common-factor binary tie at weight two is excluded by two leading-fibre slice obstructions. An exact coefficient ideal calculation and a relative logarithmic residue give the next smooth-common-factor highest tuple through axial weight three. For a nonzero remaining weight-three coefficient, a regular differential on a double cover of an elliptic curve gives the complete axial degrees. A relative differential lemma for a conic and a quadratic in z then restricts the nonzero-coefficient transverse branch to two tuples. At transverse weight, the cusp argument and exact weight-zero determinant exclude the tuple with linear y coefficient. The exact bracket on a generic level of the quadratic output excludes the remaining nonzero weight-three coefficient. The remaining binary smooth-common-factor branch has an affine transverse output, a divisibility relation and two possible quadratic parameters."
+          "explanation": "Excludes squarefree factors outside the pencil and the reduced in-pencil factor, and lifts degree-five terms with square common factor and a transverse lower quadratic into a Veronese reference. The doubled common-factor branch with a transverse binary member has explicit divisibility through its first two correction orders. It also determines the transverse highest tuple and absorbs the entire degree-four correction in this branch. The possible transverse discriminant scalar is excluded by a second-order pole comparison. The chart with zero linear slope is excluded by comparing two localized constant rings. A highest determinant coefficient after fixing x and x*z+mu*y excludes the whole doubled common-factor branch with a transverse binary member. For the remaining reduced binary member with a doubled common factor it fixes the first nonbinary weighted frame. The surviving reduced binary member reaches a single parameter lift at the next transverse weight. Comparing the quadratic transverse coefficient with the ordinary sextic excludes the reduced binary member. Integral lifts exclude the early axial ties in the two remaining square-member frames, apart from explicit conic binomials. A first weight change in the unused variable excludes both binomial ties. The next doubled-frame weight is confined to a binary tuple or one axial coefficient form. The first smooth-frame weight has its own binary tuple and the same nonbinary axial normal form. The nontrivial binary doubled-frame tie is reduced to a single mixed correction and its required next weight. In the binary mixed frame an affine transverse component forces residue restrictions and gives inversion under a coprimality hypothesis. A transverse-weight calculation and the low-degree generic-level bracket exclude the binary mixed doubled frame. The smooth-common-factor binary tie at weight two is excluded by two leading-fibre slice obstructions. An exact coefficient ideal calculation and a relative logarithmic residue give the next smooth-common-factor highest tuple through axial weight three. For a nonzero remaining weight-three coefficient, a regular differential on a double cover of an elliptic curve gives the complete axial degrees. A relative differential lemma for a conic and a quadratic in z then restricts the nonzero-coefficient transverse branch to two tuples. At transverse weight, the cusp argument and exact weight-zero determinant exclude the tuple with linear y coefficient. The exact bracket on a generic level of the quadratic output excludes the remaining nonzero weight-three coefficient. The remaining binary smooth-common-factor branch has an affine transverse output, a divisibility relation and two possible quadratic parameters. The coincident-parameter exclusion completes inversion for the smooth-common-factor binary branch. The first two determinant coefficients give the next highest tuple in the shared nonbinary axial case."
         },
         {
           "path": "arithmetic/MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md",
@@ -789010,7 +789388,7 @@
         },
         {
           "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
-          "sha256": "e1d4bd5dfd3830ca475ad49bbf63e013a5ae14e9e387eaca3bacfbc82b30921e",
+          "sha256": "0d3de55f321b91563d2974b1182cef18c760f81df4e44327eff4461cb342bb07",
           "role": "proof",
           "claims": [
             "EXT-PIS-MILMAN-NEEMAN-GAUSSIAN-MULTIBUBBLE",
@@ -789101,7 +789479,7 @@
         },
         {
           "path": "../unpublished/genus-three-rational-three-torsion/SHA256SUMS.txt",
-          "sha256": "3f9243ef5c41d0ff8df0ec865fd381766bf4480cf22d19390bbacf50f30fcbce",
+          "sha256": "c032d58bd26f66efa67ee6c5417fc8d08097ef657cb91088d1e24ec8dabd2a13",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -789111,7 +789489,7 @@
         },
         {
           "path": "../unpublished/genus-three-rational-three-torsion/genus-three-rational-three-torsion-source.zip",
-          "sha256": "0eeb3d6b0a1e572571a418eff0111834e6b0dd0073f9e1a54883ebcca961efc7",
+          "sha256": "e1a4f13dbe9e0b803a9c06b85772061f1fd64034e187f5942642526ad8496bb2",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
             "ARITH-GENUS-THREE-EXACT-THREE-PRIMARY-SELMER-TRANSFER",
@@ -789206,7 +789584,7 @@
         },
         {
           "path": "../unpublished/genus-three-rational-three-torsion/verification.json",
-          "sha256": "a51e5003c6ec9b81798c10d3e226fe2b7861f25f8bc9f6acf72929b1b1d064c9",
+          "sha256": "c201cc9b8d105e178f92ee7982d9b353f3cef0ff8fa974998aff1bfdaebc52bf",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -789357,7 +789735,7 @@
         {
           "path": "plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md",
           "role": "proof",
-          "sha256": "3afbbec53e4d52552f0ca022efd3fd60835375e6f17110555be79d952e369278",
+          "sha256": "3260b10afe3c595bad6775c842f3b5f1a6bf0acc49d7cbf0563f6dabd9dbdf8f",
           "claims": [
             "PIS-MAXIMIZER-ASSIGNMENT-AND-INTERFACE-CONTROL",
             "PIS-FIRST-MOMENT-INTERFACE-SPECTRAL-GAP",
@@ -789378,7 +789756,7 @@
             "GAP-PIS-FOUR-CELL-UNIFORM-SMALL-CORRELATION"
           ],
           "statements": [],
-          "explanation": "Preferred maximizer-rigidity route with exact open quantifiers and conditional uniform-interval reduction R1. Written proofs of assignment, normalized-price control, bounded and expanding-ball interface score estimates, and the first-moment interface spectral gap modulo rotations. Full-kernel tails, global charts and nonlinear uniqueness remain open; no finite computation or independent review claimed. S1-S5 use the limiting interface gap to improve actual-maximizer distance to O(rho), deficit to O(rho^2), and original prices to O(rho^2). T1-T4 prove saturated full-kernel margins and a global facet normal-derivative lower bound. K1-K4 transfer the spectral gap to the full-noise interface form including linear tail motions. P1-P7 give one common analytic chart on an inverse-correlation-scale domain, with all junctions and an exponentially small but positive uncontrolled exterior."
+          "explanation": "Preferred maximizer-rigidity route with exact open quantifiers and conditional uniform-interval reduction R1. Written proofs of assignment, normalized-price control, bounded and expanding-ball interface score estimates, and the first-moment interface spectral gap modulo rotations. Full-kernel tails, global charts and nonlinear uniqueness remain open; no finite computation or independent review claimed. S1-S5 use the limiting interface gap to improve actual-maximizer distance to O(rho), deficit to O(rho^2), and original prices to O(rho^2). T1-T4 prove saturated full-kernel margins and a global facet normal-derivative lower bound. K1-K4 transfer the spectral gap to the full-noise interface form including linear tail motions. P1-P7 give one common analytic chart on an inverse-correlation-scale domain, with all junctions and an exponentially small but positive uncontrolled exterior. Its nonlinear closure section now points to the separate normal-flux proof; the formerly open maximizer and nearby-kernel endpoints are internally discharged."
         },
         {
           "path": "arithmetic/verify_lyw_polynomial_pell.py",
@@ -789909,6 +790287,29 @@
           "gaps": [],
           "statements": [],
           "explanation": "Inspected Theorem 1(ii)–(iii) and direct quotient proof over the algebraic closure as classical-method comparison. HG8 supplies its rational formulas and its own proof."
+        },
+        {
+          "path": "plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md",
+          "sha256": "74e061aa69e9d7034de8606edf2ad4aaf14affdd05348205e1d0b6027005c2ac",
+          "role": "proof",
+          "claims": [
+            "PIS-GAUSSIAN-REGRET-RELATIVE-EXTERIOR-CONTROL",
+            "PIS-THREE-DIMENSIONAL-SMALL-CORRELATION-RIGIDITY",
+            "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY"
+          ],
+          "dependencies": [
+            "EXT-PIS-ZHANG-EQUAL-GAUSSIAN-FIRST-MOMENT",
+            "PIS-EQUAL-GAUSSIAN-PARTITION-STABILITY",
+            "PIS-FIRST-MOMENT-INTERFACE-SPECTRAL-GAP",
+            "PIS-TETRAHEDRAL-GLOBAL-SCORE-MARGINS",
+            "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION"
+          ],
+          "gaps": [
+            "VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF",
+            "GAP-PIS-BALANCED-POSITIVE-CORRELATION"
+          ],
+          "statements": [],
+          "explanation": "Internal closing proof of a qualitative four-cell Gaussian small-positive-correlation interval: weighted transfer/exterior domination, regret normalization, normal-flux compactness and sharp lower bound, full-kernel interaction limit, rotational contradiction and maximizer dimension reduction. The external first-moment input retains its assurance scope; independent mathematical review is pending."
         }
       ]
     },

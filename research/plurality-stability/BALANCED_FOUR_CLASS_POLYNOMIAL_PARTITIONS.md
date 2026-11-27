@@ -139,7 +139,10 @@ correlation, no positive uniform lower bound proportional to
 $\rho\delta(A)$ holds for all balanced partitions. Nevertheless every
 proper reflected swap strictly loses full noise stability for every
 $0<\rho<1$, by the [full-kernel identity](RELATIVE_HERMITE_TAIL_OBSTRUCTION.md#proper-reflected-swaps-strictly-lose-full-noise-stability).
-A uniform interval over arbitrary balanced partitions remains open.
+A uniform small positive-correlation interval over arbitrary balanced
+partitions now has an [internal analytic proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md)
+using the external first-moment input. Independent mathematical review is
+pending; no conclusion for all positive correlations follows.
 The [external all-cell first-moment theorem and quantitative partition
 estimate](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md) now localize every
 improving competitor to a neighborhood of a tetrahedron. The nearby

@@ -140,5 +140,20 @@
     "Submission or publication",
     "Entire Sha of the fixed Jacobian",
     "Rational geometrically simple deformation or infinite gluing family"
+  ],
+  "repository_checks": [
+    {
+      "command": "make render-navigation",
+      "result": "PASS after recording HG6–HG8; generated status and topic guides refreshed."
+    },
+    {
+      "command": "make check-navigation",
+      "result": "Blocked by unrelated current checker hash drift: ARITH-GENUS-THREE-PELL-NORM-EXACT-WILD-VIRTUALITY. Earlier unmapped affine-shift documents were also encountered while concurrent work was changing the catalogue. No unrelated checker pin was changed by this task."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -q",
+      "cwd": "research",
+      "result": "Interrupted after ten minutes without completion, in test_dependency_catalogue.py:test_squarefree_quartic_bounds_retire_only_with_the_full_exclusion, during graph.evaluate(distinct_blockers=True). No complete suite pass is claimed."
+    }
   ]
 }

@@ -6,7 +6,9 @@ below deduces a dimension-independent square-root distance estimate with
 explicit constants, without optimizing them. This is an internal written
 deduction from that preprint, not a claim made in its frozen edition and
 not an independently reviewed or formally verified theorem. The uniform
-positive-correlation comparison for four cells remains open.
+positive-correlation interval for four cells now has an
+[internal normal-flux compactness proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md)
+using these inputs; independent mathematical review is pending.
 
 ## External endpoint and application audit
 
@@ -381,7 +383,7 @@ relative Hermite control remain valid arbitrarily close to a tetrahedron.
 Metric localization supplies no repair of that retired estimate, and
 pair comparisons cannot be iterated on already changed cells.
 
-The preferred remaining route is now the weaker-domain
+The maximizer-rigidity route is developed in the
 [maximizer-rigidity programme](MAXIMIZER_PERTURBATIVE_RIGIDITY.md): retain
 global maximality and prove uniform local uniqueness modulo rotations.
 Its implication (R1) uses the same localization and dimension reduction.
@@ -390,7 +392,10 @@ and bounded-interface estimates, an expanding-ball kernel estimate, and a
 spectral gap for the limiting first-moment interface form modulo rotations.
 Combining those inputs sharpens actual-maximizer localization to
 $d_4(A)=O(\rho)$ and $F_4-W_1(A)=O(\rho^2)$ in its (S1)--(S5).
-The uniform full-noise tail and nonlinear rigidity step remains open.
+The [normal-flux compactness proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md)
+now supplies a relative exterior estimate and the nonlinear rigidity argument,
+under the same first-moment inputs. Its interval is qualitative; the new
+argument remains internally reviewed only.
 The nearby comparison above remains an alternative sufficient obligation;
 its inequality alone would not classify possible tied maximizers.
 
@@ -408,7 +413,8 @@ The proofs (C1)–(G2), (H1) and (N1)–(N2) are analytic written deductions.
 No finite sample, floating computation, repository consistency check or
 partial upstream Lean replay proves them. Independent mathematical
 review, full formal verification and external review remain unperformed.
-The preferred next research task is uniform rigidity of nearby actual
-maximizers, with the all-competitor nearby comparison retained as an
-alternative. The existing asymmetric-cycle identities remain tests of
-proposed kernel arguments; none supplies the missing rigidity theorem.
+The next verification task is independent review of the
+[small-correlation proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md), especially
+its relative tail control, normal-flux lower bound and exact moment gauge.
+Comparison at arbitrary positive correlation and the general asymmetric-cycle
+problem remain outside that interval theorem.
