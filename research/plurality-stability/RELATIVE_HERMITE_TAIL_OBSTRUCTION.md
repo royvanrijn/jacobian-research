@@ -6,8 +6,10 @@ partition with $\delta(A)=W_1(T)-W_1(A)>0$. This fails already in dimension
 three, arbitrarily close to $T$ in Gaussian measure and in centroid Gram
 space. Consequently the proposed uniform higher-Hermite bound also fails.
 Every proper reflected swap nevertheless strictly loses full noise stability
-at every $0<\rho<1$, by the kernel comparison below. The first-Hermite theorem
-and a uniform interval of positive-correlation optimality remain open.
+at every $0<\rho<1$, by the kernel comparison below. The [external all-cell first-Hermite theorem and its quantitative
+partition consequence](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md) now
+localize improving competitors. A uniform interval of positive-correlation
+optimality remains open.
 
 ## Normalization and comparison with the literature
 
@@ -40,7 +42,7 @@ The closest checked four-cell positive-correlation theorem is
 It assumes that an equal-volume maximizing partition is hyperstable.
 Definition 1.3 imposes, in addition to the usual variation conditions, a
 vanishing mixed variation in the deformation parameter and correlation at
-zero. This hypothesis is not supplied by the unfinished first-Hermite
+zero. This hypothesis is not supplied by the first-Hermite
 theorem, and the source gives no unrestricted relative estimate of the
 form above. The comparison uses the actual definition and theorem, not
 the abstract. No novelty claim is made here.
@@ -417,9 +419,13 @@ three-cell Gaussian rearrangement theorem here.
 
 ## Effect on the remaining proof route
 
-The [full-rank first-Hermite stability obligation](BALANCED_AFFINE_CENTROID_OPTIMIZATION.md#boundary-exclusion-and-the-remaining-global-obligation)
-is unchanged. A fixed-partition Hermite expansion does not transfer its
-eventual solution to one interval uniform over all balanced partitions.
+The [external first-Hermite endpoint and quantitative stability
+estimate](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md) give
+$F_4-W_1(A)<3\rho/4$ and distance at most $K_4\sqrt{3\rho/4}$ for any
+improving competitor. Heilman--Tarter reduces a maximizing competitor to
+three dimensions. The remaining theorem is a uniform nearby full-kernel
+comparison, including tails and asymmetric cycles. A fixed-partition
+Hermite expansion does not give such an interval.
 The affine replacement used for $W_1$ preserves neither $W_2$ nor noise
 stability, so an affine-only test cannot remove this obstruction.
 
@@ -433,11 +439,10 @@ cannot simply be iterated using (11): its proof assumes the initial pair
 is the reflected tetrahedral pair. A quantitative gap proportional to
 the unrestricted $\delta$ cannot be the conclusion, by (8).
 
-The other task is the high-value full-rank first-Hermite stability gap,
-using the [five-dimensional shape Hessian](BALANCED_AFFINE_CENTROID_OPTIMIZATION.md#five-shape-directions-and-the-averaged-trace).
-That finite-dimensional obligation and a uniform full-noise comparison
-remain distinct; resolving the former alone does not resolve the latter.
-The radius-changing subspace there targets equal centroid norms. On
+The [five-dimensional shape Hessian](BALANCED_AFFINE_CENTROID_OPTIMIZATION.md#five-shape-directions-and-the-averaged-trace)
+remains available for the optional all-values stationary classification.
+The external endpoint already excludes non-tetrahedral high-value
+centroidal tuples; it does not prove the uniform full-noise comparison. On
 the full-noise side, (CY4) settles the permutation-equivariant three-cell
 cycles, while (CY1)--(CY3) retain the open interactions for general seeds.
 

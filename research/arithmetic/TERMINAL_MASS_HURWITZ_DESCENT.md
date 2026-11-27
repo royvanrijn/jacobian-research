@@ -13,11 +13,15 @@ simultaneous cyclic contact conditions on a minimizing factor's three
 cut components. Exact phase sets and reapplication of the cut-size
 restriction to new minimizing factors exclude the residual ratio three
 for equal terminals, without controlling middle-middle attachments.
+For a singleton terminal with equal middle and other-terminal sizes,
+minimality forces two paths and their ordered edge pairing. Commuting
+swaps then expose a two-contact leaf capture, excluding this cut for
+every size at least three.
 
 These statements do **not** yet prove extraction from every full-alternating
 tuple. The principal remaining objective is to exclude a positive minimum
 over an entire braid orbit. This needs no monotonicity along a braid.
-Theorem 10 and Corollaries 11 and 13 below give necessary global compatibility
+Theorem 10 and Corollaries 11, 13 and 16 below give necessary global compatibility
 conditions, not that complete exclusion.
 The [overlap-one theorem](PAIRED_HURWITZ_LEAF_EXTRACTION.md#theorem-5-every-full-alternating-dt-tree-reaches-overlap-one)
 does not locate its overlap at the required outer endpoint, or control this
@@ -909,7 +913,7 @@ Exact ratio-three covers actually produce an odd three-label contact;
 they do not by themselves establish code invariance. Corollary 13
 resolves that case through new minimizers instead.
 
-The remaining full-alternating problem is to exclude (31), by forcing
+The remaining full-alternating problem is to exclude (38) below, by forcing
 even intersections for **all** factor pairs or an endpoint decrease.
 The one-cut covers (24) constrain contacts with the minimizer, but do
 not constrain every middle-middle attachment or the overlaps between
@@ -925,8 +929,104 @@ terminal hit is accompanied by a middle hit in every complementary
 twist. Nevertheless \(A,B_0\) overlap in three labels. The last
 factor is removable, so this is not a positive global minimum and
 does not refute the proposed global bridge. Compatibility of all
-minimizing cuts and middle-middle attachments in (31) remains open;
+minimizing cuts and middle-middle attachments in (38) remains open;
 arbitrary extraction and mixed connectivity are not established.
+
+## Lemma 15. Equal-middle singleton cuts force a removable factor
+
+At a positive global orbit minimum, no minimizing factor has terminal
+sizes \((1,t)\) and middle size \(t\) for any \(t\ge3\). This does
+not require full alternating monodromy. The exception \(t=2\) is real.
+
+**Proof.** Place the minimizing factor first by Lemma 9 and write
+\[
+ A=(a\,b)(c\,d),\qquad S=\{a\},\quad |M|=|U|=t,
+ \quad b,c\in M,\ d\in U.
+\]
+Its mass is \(m=t-1\), and \(N=2t+1\). By Theorem 10 and the edge
+counts (28), every complementary factor pairs one edge \(e\) of the
+tree on \(M\) with one edge \(f\) of the tree on \(U\); there are
+no middle-middle factors. For such a pair, let \(M_c(e)\) be the
+component containing \(c\) after deleting \(e\) from the middle
+tree, and let \(U_d(f)\) be the component containing \(d\) after
+deleting \(f\) from the terminal tree. The middle component after
+deleting this factor from the full tree is precisely these two sets,
+joined by \(cd\), together with \(a\) if \(b\in M_c(e)\).
+Its factor mass is at least \(m\), so
+\[
+ |M_c(e)|+|U_d(f)|+\boldsymbol1_{b\in M_c(e)}\le t.       \tag{35}
+\]
+
+If a leaf \(v\) of the middle tree is different from \(b,c\), take
+its incident edge for \(e\). The left side of (35) is then at least
+\((t-1)+1+1=t+1\), a contradiction. Thus the middle tree has no
+leaves except \(b,c\), and is a path with these endpoints. For any
+leaf \(w\ne d\) of the terminal tree, its incident edge \(f\) has
+\(|U_d(f)|=t-1\). Inequality (35) forces
+\(M_c(e)=\{c\}\). The only possible paired edge is therefore the
+unique middle edge incident to \(c\). Distinct terminal leaf edges
+have distinct partners, so there is at most one leaf different from
+\(d\). Every nontrivial tree has at least two leaves; hence the
+terminal tree is a path with endpoint \(d\).
+
+Write the paths in their respective orders as
+\[
+ M=(v_0=b,v_1,\ldots,v_{t-1}=c),\qquad
+ U=(w_0=d,w_1,\ldots,w_{t-1}).
+\]
+If the middle edge \(v_iv_{i+1}\) is paired with terminal edge
+\(w_jw_{j+1}\), (35) becomes
+\((t-i-1)+(j+1)\le t\), or \(j\le i\). The pairing is a
+permutation of \(0,\ldots,t-2\). Summing these inequalities forces
+equality at every index. Thus the complementary factors, in some
+order, are exactly
+\[
+ B_i=(v_i\,v_{i+1})(w_i\,w_{i+1}),\qquad 0\le i\le t-2.   \tag{36}
+\]
+
+Since \(t\ge3\), there is a pair \(B_i,B_{i+1}\). Among all such
+pairs choose one whose positions in the complementary block are
+closest. Every intervening factor commutes with both: a factor that
+failed to commute would have a neighboring index and give a closer
+pair. Hurwitz moves across these commuting factors are literal swaps,
+so bring the chosen pair adjacent without changing any factor or any
+tree degree. Their two common labels \(v_{i+1},w_{i+1}\) are internal
+vertices of their paths, are fixed by \(A\), and occur in no other
+factor. If the adjacent order is \((C,D)\), one positive move gives
+\[
+                    (C,D)\longmapsto(D,DCD).                \tag{37}
+\]
+Conjugation removes both common labels from \(DCD\). They become
+exclusive leaves on the two different edges of the unchanged \(D\),
+as in Lemma 4. Hence the new tuple has mass zero, contradicting the
+positive global minimum.
+
+For \(t=2\), the pair \(((a\,v_0)(v_1\,w_0),
+(v_0\,v_1)(w_0\,w_1))\) is a counterexample to extending the lemma.
+Its Hurwitz orbit has five states, all of mass one; its generated
+group is dihedral of order ten. There is only one complementary
+factor, so the last step is unavailable. \(\square\)
+
+The proof uses global minimality only for Theorem 10 and the ordinary
+factor inequalities (35). Once the pairing (36) holds, arbitrary
+complementary factor order is handled by commuting swaps; no general
+claim about bringing a two-contact pair is used.
+
+## Corollary 16. The remaining positive-minimum cuts
+
+At a positive global orbit minimum, every minimizing factor with
+\(N\ge15\) satisfies one of the following necessary conditions:
+\[
+ \begin{array}{c|c}
+ \text{terminal sizes}&\text{middle size}\\ \hline
+ (s,s),\ s>1&\ell\text{ odd and }\ell\mid s\\
+ (1,t),\ t>1&\ell=2t\text{ with }2\mid t.
+ \end{array}                                                   \tag{38}
+\]
+
+**Proof.** Corollary 13 leaves these cases and \((1,t;t)\). In that
+last case \(N=2t+1\ge15\) implies \(t\ge7\), so Lemma 15 excludes
+it. \(\square\)
 
 ## The remaining plateau-escape obligation
 
@@ -1006,6 +1106,18 @@ degree-fifteen phase-compatible counterexample to the weaker implication.
 These bounded controls supplement the universal written proofs of
 Lemmas 12 and 14 and Corollary 13; they are not the reason those
 statements hold for unbounded sizes.
+
+The [singleton-cut checker](verify_terminal_mass_singleton_equal_cut.py)
+and its [receipt](terminal_mass_singleton_equal_cut_verification.json)
+provide dedicated exact controls for Lemma 15. They enumerate all
+labeled middle and terminal trees and edge pairings for \(2\le t\le4\),
+test the forced path pairing and arbitrary complementary order, and
+replay the final braid with direct exclusive-leaf and lower-cycle
+checks. The positive degree-five dihedral orbit checks the necessary
+exception. The receipt gives the exact larger path-only ranges and
+negative controls. These finite controls supplement the universal
+proof; they do not prove it by extrapolation or settle the remaining
+cuts (38).
 
 The [receipt](terminal_mass_hurwitz_descent_verification.json) and
 [source ledger](terminal_mass_hurwitz_descent_source_ledger.json) record

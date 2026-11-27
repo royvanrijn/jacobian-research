@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-27",
+  "proof_status": "Written proofs extracted from HG1 and HG5 for the single displayed curve; no mathematical status or assurance upgrade.",
+  "edition": {
+    "main.tex": "8d37489d0acd1019ebc893a4dae967cad2f9b7de72c2348fd7123f0fe19ddcfc",
+    "verify_construction.py": "dd3d7081ef67dd6a096c21ba6e5b8bc98b9909a72f2ee57ce1b0863ad538f9e6",
+    "genus-three-rational-three-torsion.pdf": "31962402f86004366a3a71e1bfbc4995a3b742733fdb72321414afff6344f7aa"
+  },
+  "research_and_primary_sources": {
+    "research/arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md": "b1398a21eb8636c5acb40ea967ea8d42a2597f4ec58c31dd34028c047c628d40",
+    "research/arithmetic/verify_genus_three_marked_elliptic_quotients.py": "544ddfddbe7debd36945a48afb25378df6f8f547035aa1524b066c5b95f84ddf",
+    "research/arithmetic/sources/levin-yan-wiljanen-large-three-rank.pdf": "7b78e3c4c7ae4d558b9d5e24338828fd50520537268576a6d50001f8457b113c",
+    "research/arithmetic/sources/howe-leprevost-poonen-split-jacobians.pdf": "6dcc1b8548ab14e1af76d4b88887d979dc4f20329aa8f93f1a60bce38fc66584",
+    "research/arithmetic/sources/muller-reitsma-genus-three-torsion-2211.03372v4.pdf": "de9a8e22c7a839caa7229a557b328cc0f157b2749d494089d5594cfd26cecc7b"
+  },
+  "executor": "Codex / ChatGPT, author-side agent with repository and conversation context",
+  "independence": "Internal proof inspection and replay. The focused checker uses the same displayed construction as the existing Sage checker; agreement is not independent mathematical review.",
+  "environment": {
+    "os": "Ubuntu 24.04 under WSL, canonical checkout",
+    "sage": "10.9",
+    "latexmk": "4.83",
+    "pdftex": "1.40.25 (TeX Live 2023/Debian)",
+    "arithmetic": "Exact QQ rational functions, GF(7) polynomial gcd, and exact elliptic-curve arithmetic",
+    "inputs": "All checker constants included in source; no random seed, numerical tolerance, search bound or external input"
+  },
+  "internal_checks": [
+    {
+      "command": "sage -python unpublished/genus-three-rational-three-torsion/verify_construction.py",
+      "cwd": "repository root",
+      "exit_code": 0,
+      "result": "PASS: squarefree octic, repeated-root negative control, conic inverse and identity, three smooth quartics, three degree-eight elliptic maps, nonzero order-three points and all sign characters."
+    },
+    {
+      "command": "sage -python research/arithmetic/verify_genus_three_marked_elliptic_quotients.py",
+      "cwd": "repository root",
+      "exit_code": 0,
+      "result": "Verified the genus-three maps, independent cube residues, conductors, and the unit-class fixture. Extra local and number-field fixtures are outside the manuscript."
+    },
+    {
+      "command": "SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=genus-three-rational-three-torsion main.tex",
+      "cwd": "paper directory",
+      "exit_code": 0,
+      "result": "Five-page PDF; final log has no LaTeX warnings, undefined references, or overfull/underfull boxes."
+    },
+    {
+      "command": "pdftoppm -r 110 -png unpublished/genus-three-rational-three-torsion/genus-three-rational-three-torsion.pdf .scratch/genus-three-review/page",
+      "cwd": "repository root",
+      "exit_code": 0,
+      "result": "All five pages rendered and visually inspected by the workspace-context agent; no clipped text, overflowing displays, missing glyphs or broken references observed."
+    },
+    {
+      "command": "SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=genus-three-rational-three-torsion main.tex && sha256sum -c SHA256SUMS.txt",
+      "cwd": "fresh extraction of the source ZIP in ignored local storage",
+      "exit_code": 0,
+      "result": "The isolated source bundle built the byte-identical five-page PDF. All six source, metadata, verification and PDF checksums matched. Same environment and executor; this is an internal reproducibility check, not independent replay."
+    }
+  ],
+  "proof_inspection": [
+    "Checked birational conic parametrization and the three invariant subfields; each quotient is recovered by adjoining one square root, so has degree two.",
+    "Checked the quartic-to-elliptic identity, nonsingular targets and function-field degree four, giving three maps of degree eight.",
+    "Checked the triple tangent divisor and nonzero order-three pullbacks by push-pull; the distinct sign characters separate the classes over F3.",
+    "Checked the Galois-equivariant Weil-pairing upper bound using mu_3(Q)={1}.",
+    "Checked cross-term vanishing in the torsion-free Hom group, finite kernel and surjectivity, and duality yielding degree 2^9.",
+    "Checked quadratic-twist descent, inverse torsion and local-point-quotient maps modulo 3^n, Kummer naturality at every place, and the full three-primary Sha argument without finiteness."
+  ],
+  "source_checks": [
+    {
+      "citation": "Levin, Yan and Wiljanen, arXiv:1910.12276v1",
+      "locator": "Theorem 9 and printed p. 13 paragraph after it",
+      "scope": "Exact hyperelliptic genus-three rational three-rank-three existence question; the preceding rank-three example has genus four."
+    },
+    {
+      "citation": "Howe, Leprévost and Poonen, Forum Math. 12 (2000), 315–364",
+      "locator": "Proposition 14 and quotient calculation in its proof, PDF pp. 21–24",
+      "scope": "Classical hyperelliptic gluing at T=0. The manuscript supplies a direct proof for its explicit model rather than invoking unspecified gluing data."
+    },
+    {
+      "citation": "Müller and Reitsma, arXiv:2211.03372v4",
+      "locator": "Theorem 1.1 and Remark 1.2, pp. 1–2",
+      "scope": "Distinguishes exact full torsion and geometrically simple Jacobians. Neither stronger property is asserted here."
+    }
+  ],
+  "contribution_comparison": {
+    "previous_result": "LYW Theorem 9 gives rank three in genus four and asks about (r,g)=(3,3). HLP supplies the classical gluing mechanism.",
+    "present_result": "The displayed octic has genus three and exact rational subgroup J(Q)[3]=(Z/3)^3. Explicit maps give a separate transfer theorem for its twists.",
+    "corollary_check": "This is an explicit use of classical split-Jacobian geometry and prime-to-three isogeny invariance. No new general gluing or descent theorem, historical priority, or current-record claim is asserted.",
+    "essential_step": "The three degree-eight maps and their distinct sign characters establish independent, nonzero pullbacks on this particular curve."
+  },
+  "pdf_only_blind_reader": {
+    "status": "unperformed",
+    "reason": "The present agent has workspace and conversation context; its PDF inspection is not a blind-reader test.",
+    "required_questions": [
+      "What is the contribution?",
+      "Why is it true conceptually?",
+      "Which step is hardest, and where is it proved?",
+      "What are the limitations?",
+      "What prevents verification?"
+    ]
+  },
+  "external_specialist_review": {
+    "status": "unperformed",
+    "reviewer": null,
+    "supplied_context": null,
+    "findings": null
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "historical_priority": "open; bounded inspected-source comparison does not establish a first-in-literature claim",
+  "remaining_obligations": [
+    "Obtain specialist proof review of Theorem 1: quotient function fields, map degrees, sign characters, torsion pullbacks and Weil-pairing bound.",
+    "Obtain specialist proof review of Theorem 2: duality, quadratic-twist descent and all local Kummer conditions without Sha finiteness.",
+    "Perform a PDF-only blind-reader test with no workspace or conversation context and record the exact edition and findings.",
+    "Compare later constructions and exact models before any historical-priority claim; review this standalone result before pursuing extensions."
+  ],
+  "does_not_cover": [
+    "Full rational torsion group",
+    "Geometrically simple Jacobians",
+    "Historical priority",
+    "Class-group rank or counting extensions",
+    "A computation of Selmer or Sha groups",
+    "Submission or publication"
+  ]
+}

@@ -1,11 +1,16 @@
-"""Exact inputs for LY1--LY6; Python 3.12 and SymPy 1.14.0.
+"""Exact inputs for LY1--LY7; Python 3.12 and SymPy 1.14.0.
 
 The integer coefficients are transcribed from Levin--Yan--Wiljanen,
 arXiv:1910.12276v1, Theorem 9, printed p. 12. No numerical root tests.
 The uniform valuation and class-field arguments are in the companion note;
-this checker verifies their polynomial, Sturm and residue inputs.
+this checker verifies their polynomial, Sturm and residue inputs. The optional
+unit probe searches bounded Pell prefixes on three full-slice LY4 fibres.
 """
 
+import argparse
+import hashlib
+import json
+import math
 import platform
 import sympy as s
 
@@ -180,6 +185,7 @@ def verify_five_and_towers():
 
     bad_integer = 6*a*abs(int(f.discriminant()))
     assert all(bad_integer % p == 0 for p in (2, 3, 5, 11))
+    assert all(pow(-3, (q-1)//2, q) == q-1 for q in (5, 11))
     rows = []
     for q, u, argument, radical, zeta, expected, characters in FIVE_CHARACTERS:
         assert s.isprime(q) and q % 3 == 1 and bad_integer % q != 0
@@ -230,6 +236,145 @@ def verify_five_and_towers():
     print("LY4--LY6 exact inputs passed; tower and uniform local arguments remain written proofs.")
 
 
+def unit_residues(radicand, numerator, coefficient, denominator=1):
+    """Residues at both split places, for an already certified integral unit.
+
+    The caller must certify integrality and norm +/-1. A noncube residue is
+    sufficient even for a unit of a nonmaximal order; cube residues for such a
+    unit do not determine the fundamental unit's localization.
+    """
+    if denominator % 3 == 0:
+        raise ValueError("the unit's displayed denominator must be prime to three")
+    roots = [r for r in range(9) if r*r % 9 == radicand % 9]
+    if len(roots) != 2 or radicand % 3 != 1:
+        raise ValueError("three must split in the displayed quadratic algebra")
+    values = [(numerator+coefficient*r)*pow(denominator, -1, 9) % 9
+              for r in roots]
+    if any(value % 3 == 0 for value in values):
+        raise ValueError("the displayed element is not a local unit")
+    return values
+
+
+def pell_prefix(radicand, steps):
+    """First `steps` convergents to sqrt(radicand), using exact complete quotients.
+
+    Q_(j+1)=1 certifies a Pell unit with norm (-1)^(j+1). Only the
+    convergent residues modulo 9 are needed to test its local cube class.
+    Exhausting the budget says nothing about maximal-order units.
+    """
+    if steps < 1:
+        raise ValueError("steps must be positive")
+    a0 = math.isqrt(radicand)
+    if a0*a0 == radicand:
+        raise ValueError("a quadratic nonsquare radicand is required")
+    p, q, a = 0, 1, a0
+    h0, h1, k0, k1 = 0, 1, 1, 0
+    for j in range(steps):
+        h0, h1 = h1, (a*h1+h0) % 9
+        k0, k1 = k1, (a*k1+k0) % 9
+        p_next = a*q-p
+        quotient, remainder = divmod(radicand-p_next*p_next, q)
+        assert remainder == 0 and quotient > 0
+        p, q = p_next, quotient
+        if q == 1:
+            residues = unit_residues(radicand, h1, k1) if radicand % 3 == 1 else None
+            return {"steps": j+1, "pell_unit_found": True,
+                    "norm": (-1)**(j+1), "unit_residues_mod9": residues,
+                    "unit_noncube_at_three": None if residues is None else
+                        any(value not in (1, 8) for value in residues)}
+        a = (a0+p)//q
+    return {"steps": steps, "pell_unit_found": False,
+            "unit_noncube_at_three": None}
+
+
+def verify_unit_criterion():
+    # Modulo 9 the cubes of 3-adic units are exactly +/-1.
+    assert {pow(r, 3, 9) for r in range(9) if r % 3} == {1, 8}
+    # 3+sqrt(10) is an integral norm -1 unit and a noncube at both places.
+    assert 3*3-10 == -1
+    assert unit_residues(10, 3, 1) == [4, 2]
+    assert pell_prefix(10, 1)["unit_noncube_at_three"] is True
+    # Its cube 117+37sqrt(10) is locally cubic. A negative test on an
+    # arbitrary unit therefore cannot be used to exclude separation.
+    assert 117*117-10*37*37 == -1
+    assert unit_residues(10, 117, 37) == [1, 8]
+    # Half-integral units must be supported too: (3+sqrt(13))/2 has norm -1.
+    assert 3*3-13 == -4
+    assert unit_residues(13, 3, 1, 2) == [7, 5]
+    assert pell_prefix(10, 1)["norm"] == -1
+    assert pell_prefix(3, 2)["norm"] == 1
+    assert pell_prefix(13, 1)["pell_unit_found"] is False
+    for arguments in ((3, 2, 1, 1), (10, 3, 1, 3), (10, 1, 1, 1)):
+        try:
+            unit_residues(*arguments)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError("invalid local-unit data were accepted")
+    print("Unit controls: a noncube, its locally cubic cube, and a half-integral unit.")
+
+
+def probe_ly4_units(steps=2000, fibres=3):
+    """A bounded search on the full LY4 slice, not just the local u=1/9 control."""
+    if fibres < 1 or steps < 1:
+        raise ValueError("fibres and steps must be positive")
+    a = Y_COEFFS[0][-1]
+    c = -2*a
+    bad_integer = 6*a*abs(int(poly(F_COEFFS).discriminant()))
+    factors = s.factorint(bad_integer, limit=10000)
+    # Do not silently treat a remaining composite cofactor as one bad prime.
+    assert all(s.isprime(p) for p in factors)
+    assert math.prod(int(p)**int(e) for p, e in factors.items()) == bad_integer
+    bad_primes = sorted(int(p) for p in factors)
+    denominator = math.prod(p**(valuation(2*a, p)+1) for p in bad_primes)
+    from sympy.ntheory.modular import crt
+    primes = [row[0] for row in FIVE_CHARACTERS]
+    numerator0, modulus = map(int, crt(primes, [row[1]*denominator % row[0]
+                                               for row in FIVE_CHARACTERS]))
+    records, offset = [], 0
+    while len(records) < fibres:
+        numerator = numerator0+offset*modulus
+        offset += 1
+        if math.gcd(numerator, denominator) != 1:
+            continue
+        assert all(numerator % p != 0 and
+                   valuation(denominator, p) >= valuation(2*a, p)+1
+                   for p in bad_primes)
+        assert all(numerator*pow(denominator, -1, row[0]) % row[0] == row[1]
+                   for row in FIVE_CHARACTERS)
+        top, bottom = c*numerator**3, denominator**3
+        radicand = sum(b*top**i*bottom**(10-i) for i, b in enumerate(F_COEFFS))
+        assert radicand > 0
+        # Remove certified square factors only. No squarefree/fundamental
+        # discriminant claim is made for the remaining radicand.
+        for p in bad_primes:
+            e = valuation(radicand, p)
+            radicand //= p**(2*(e//2))
+        assert radicand % 3 == 1
+        witness = next((int(p) for p in s.primerange(5, 1000)
+                        if pow(radicand % int(p), (int(p)-1)//2, int(p)) == int(p)-1), None)
+        assert witness is not None  # Exact certificate that this fibre is quadratic.
+        digits = str(radicand)
+        record = {"u_numerator": numerator, "u_denominator": denominator,
+                  "radicand_digits": len(digits),
+                  "radicand_sha256": hashlib.sha256(digits.encode("ascii")).hexdigest(),
+                  "nonsquare_witness_prime": witness,
+                  "full_LY4_slice": True,
+                  **pell_prefix(radicand, steps)}
+        records.append(record)
+    print(json.dumps({"python": platform.python_version(), "sympy": s.__version__,
+                      "bad_primes": bad_primes, "fibres": records}, indent=2))
+
+
 if __name__ == "__main__":
-    verify()
-    verify_five_and_towers()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--unit-probe", action="store_true")
+    parser.add_argument("--steps", type=int, default=2000)
+    parser.add_argument("--fibres", type=int, default=3)
+    args = parser.parse_args()
+    if args.unit_probe:
+        probe_ly4_units(args.steps, args.fibres)
+    else:
+        verify()
+        verify_five_and_towers()
+        verify_unit_criterion()

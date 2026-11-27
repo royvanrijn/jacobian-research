@@ -27,15 +27,18 @@ infinitely many curves with rational rank at most one and
 MCT18 gives a quadratic one-prime point construction and four exact
 rank-one controls. At every nonsingular target, MCT19 determines the
 reduced 3-primary group, the full 3-primary Selmer group and every
-finite 3-power Selmer group. Exactly one divisible Selmer direction
-remains, arising from rational rank one or divisible \(\Sha\).
-The infinite exact-rank-one refinement is conditional on a point
-infinitude statement or an imported ramified-CM converse.
+finite 3-power Selmer group. MCT20 applies the accepted OpenAI
+all-prime converse to identify its unique divisible direction with
+rational rank one. Every nonsingular target has analytic and rational
+rank one, finite entire \(\Sha\), and
+\(\Sha[3^\infty]\cong(\mathbf Z/3)^{2r}\).
 MCT21 sums the matrix densities: the nonsingular fixed blocks have
 prime density \(\delta_r=\frac1{12}\prod_{j=1}^r(1-3^{-(2j-1)})\).
 MCT22 adds the full BSD formula conditionally on the exact low-corank
 theorem of OpenAI. These are densities in the moving prime for fixed
-\(r,R_0\); the external converse and leading-term proofs remain unaudited.
+\(r,R_0\). The converse is an accepted external theorem input;
+its remaining proof review is separate from that acceptance. The
+exact leading-term theorem remains a conditional input.
 Complete normalized matrices are obtained below for selected products of
 two, three and four allowed primes, including spaces with the wild
 coordinate. The cubic local descent has the explicit scalar formula
@@ -1826,11 +1829,13 @@ Taking \(3^n\)-torsion of the first group in (50) proves the second.
 Thus the abstract groups at all higher descent levels are the same
 in the rank-one and rank-zero/divisible alternatives.
 
-The outstanding issue is whether the unique divisible direction in
-(50) comes from a rational point or divisible \(\Sha\). The
-immediate source-review priority is the ramified-CM converse; it
-would settle every nonsingular target. The point construction
-supplies a separate sufficient infinitude route.
+MCT19 alone leaves open whether the unique divisible direction in
+(50) comes from a rational point or divisible \(\Sha\). MCT20
+resolves this using the accepted OpenAI all-prime converse: it is
+the rational point direction. The source application and remaining
+proof-review tasks are recorded below. The point construction
+supplies a separate constructive route, which is no longer needed
+for the existence of these rank-one families.
 
 * **Point route.** Prove that, for every \(r\), some progression
   of \(a\)'s in (43) gives infinitely many primes for which the
@@ -1838,45 +1843,33 @@ supplies a separate sufficient infinitude route.
   with that property. After restricting \(a\) to a progression,
   (43) is an irreducible quadratic polynomial, with discriminant
   a nonzero square times 6. Infinitely many prime values with the
-  required joint Frobenius condition are an additional obligation.
+  required joint Frobenius condition remain an additional obligation
+  for this particular point construction.
   Neither ordinary Chebotarev nor a theorem about prime values of
   irreducible binary cubics supplies that assertion. The finite
   controls above show compatibility for \(r=1\); they do not
   establish this infinite step for any \(r\).
-* **Converse route.** An applicable 3-converse from full Selmer
-  corank one to rational rank one would settle all nonsingular
-  MCT16 targets directly. [Kriz, arXiv:2002.04767v5, Theorems 1.1
-  and 10.13](sources/kriz-ramified-cm-converse-2002.04767v5.pdf)
-  states exactly such an implication for elliptic curves with CM
-  by the full ring of integers at its ramified prime. Here the CM
-  field is \(\mathbf Q(\sqrt{-3})\), its full ring acts over
-  that field through \((x,y)\mapsto(\zeta_3x,y)\), and the
-  ramified prime is 3. It is a different field from the ray field
-  \(\mathbf Q(\sqrt{-2})\). Thus the stated hypotheses match
-  (49), including this additive prime. Assuming that converse,
-  every nonsingular MCT16 target has analytic and rational rank
-  one, finite \(\Sha\), and group (45).
-  Together with MCT16, this would give infinitely many such curves
-  for every \(r\ge1\).
+* **Converse route.** Apply [OpenAI, *The Selmer converse for
+  elliptic curves at every prime*, 7 October 2026, Theorem 1.1,
+  p. 3](sources/openai-selmer-converse-every-prime-2026-10-07.pdf)
+  at \(p=3\) and full Selmer corank one from (49). There is no
+  additional CM, residual-image or reduction hypothesis on the
+  original curve. By that accepted theorem, every nonsingular MCT16
+  target has analytic and rational rank one, finite \(\Sha\),
+  and group (45). Together with MCT16, this gives infinitely many
+  such curves for every \(r\ge1\). The audit below distinguishes
+  this exact application from acceptance of the new proof.
 
-The retained Kriz source was inspected for the exact statement,
-the terminal proof of Theorem 10.13 and its dependence on
-Corollary 10.12, Proposition 10.10 and the earlier reciprocity and
-main-conjecture inputs. That full proof chain has not been audited
-here. The converse route is therefore recorded conditionally in
-this project; it is not an unconditional upgrade of MCT16. The
-ordinary or good-supersingular CM converse theorems cannot simply
-be substituted at this additive ramified prime. No assertion that
-the converse is historically unknown or false follows from this
-local review limit.
+The Kriz proof audit and partial repair are retained below as a
+separate source diagnostic. They are no longer the selected route
+to MCT20: repairing them is unnecessary for the accepted all-prime
+route. The failures of that printed argument do not refute
+the converse, and are not objections to the different OpenAI proof.
+MCT20 uses the selected external theorem as an accepted cited input.
 
-## Conditional rank-one families and the external audit
+## Rank-one families from the accepted external converse
 
-**Corollary MCT20 (conditional exact rank-one families).** Assume the
-corank-one implication for this family, as stated in either Kriz,
-arXiv:2002.04767v5, Theorem 10.13, or OpenAI, *The Selmer converse
-for elliptic curves at every prime*, 7 October 2026, Theorem 1.1.
-For every \(r\ge1\) there
+**Corollary MCT20 (exact rank-one families).** For every \(r\ge1\) there
 are infinitely many pairwise \(\mathbb Q\)-nonisomorphic curves
 \(E_R:y^2=x^3-2R^2\) such that
 \[
@@ -1885,28 +1878,34 @@ are infinitely many pairwise \(\mathbb Q\)-nonisomorphic curves
  \#\Sha(E_R)<\infty,\qquad
  \Sha(E_R)[3^\infty]\cong(\mathbb Z/3)^{2r}.
 \]
-In fact the assertion holds at every nonsingular target of MCT16
-under this assumption.
+In fact the assertion holds at every nonsingular target of MCT16.
+For every such curve and every prime \(\ell\),
+\[
+ \operatorname{corank}_{\mathbf Z_\ell}
+       \operatorname{Sel}_{\ell^\infty}(E_R/\mathbf Q)=1.
+\]
 
 Proof. Fix the \(2r\) primes of MCT16 and a nonsingular alternating
 target matrix. MCT16 supplies infinitely many eligible primes \(q\).
 MCT19 gives full \(3\)-primary Selmer corank one for every resulting
-curve. Over \(K_{\rm CM}=\mathbb Q(\sqrt{-3})\), the automorphism
-\((x,y)\mapsto(\zeta_3x,y)\) gives the full ring
-\(\mathbb Z[\zeta_3]=\mathcal O_{K_{\rm CM}}\) of CM endomorphisms.
-The prime \(3\) ramifies in \(K_{\rm CM}\), so the assumed
-converse gives analytic and rational rank one and finite Sha.
-Alternatively, the unrestricted converse applies directly to (49),
-without any extra CM or reduction hypothesis.
+curve. Theorem 1.1 of OpenAI, *The Selmer converse for elliptic
+curves at every prime*, 7 October 2026, is used here as an accepted
+external theorem. It applies at \(p=3\) directly to this
+full Selmer group and gives analytic and rational rank one and
+finiteness of the entire Sha. No CM calculation or reduction
+condition is needed for this application.
 Substitute rank one in (49) to obtain the stated primary group.
 For distinct moving primes the coefficient ratio \((q_1/q_2)^2\)
 is not a rational sixth power, so these short Weierstrass equations
 are pairwise nonisomorphic over \(\mathbb Q\).
+Finally, for every prime \(\ell\), the primary Kummer sequence
+has Mordell--Weil term of corank one and finite Sha quotient, giving
+the displayed all-prime Selmer corank.
 
 The family proof has three necessary inputs: MCT16 (infinitely many
 nonsingular targets, using MCT14–MCT15 and MS1), MCT19 (the full
 primary structure, using reduced Cassels–Tate duality and Kummer
-sequences), and the ramified-CM converse. MCT17–MCT18 provide a
+sequences), and the all-prime converse. MCT17–MCT18 provide a
 separate point route and finite controls; MCT20 does not require
 prime values of their quadratic polynomial. The standard Weil-sign
 calibration does not affect the nonsingularity or corank conclusions.
@@ -1916,12 +1915,14 @@ states the needed hypothesis in Theorem 1.1 (p. 4) and the rank-one
 conclusion in Theorem 10.13 (p. 198). The CM field in this application
 is distinct from the governing ray field \(\mathbb Q(\sqrt{-2})\).
 Its stated theorem allows the additive ramified prime in this family.
-The following are entry points for the outstanding proof audit.
+The following source audit is retained for the separate Kriz route;
+its unresolved repairs are not prerequisites of the selected route.
 
 | Audit part | Exact location in the retained v5 | Required validation |
 |---|---|---|
 | Corank-one theorem and application | Theorems 1.1 and 10.13, pp. 4 and 198; MCT19 | Check full-ring CM over the CM field and full Selmer corank, with \(p=3\). The statement/hypothesis match has been inspected internally. |
-| Selmer/control comparison | Proposition 10.4, p. 191, (538)–(541); Lemma 10.9, pp. 194–196, (548)–(552) | The abelianization step in (540)/(549) needs a replacement preserving the actual global/local cohomology and Kummer conditions; see the diagnostic below. |
+| Selmer/control comparison | Proposition 10.4, p. 191, (538)–(541); Lemma 10.9, pp. 194–196, (548)–(552) | Restriction over the division field repairs the general cohomology step, retaining the action and twisted coinvariants. The shifted-character comparison remains unproved; see (RC1)–(RC8). |
+| Interpolating Kummer condition | Proposition 9.17, (525), p. 185; Proposition 10.5, (542), p. 192; Theorem 10.8, (545), p. 193; Proposition 10.11, pp. 196–197 | The scalar kernel has rank two; its image after augmentation is the desired line. A rank-one lift and shifted-character Tor/cokernel control need separate proofs. The literal (545) contradicts the stated module ranks. |
 | Nonzero specialization | Corollary 10.12, pp. 197–198, using Proposition 10.11 and Proposition 10.10, pp. 196–197 | The local algebra implication from (557) follows by Nakayama as below. Its Selmer/control inputs and the other specialization hypotheses remain to be validated. |
 | Passage to analytic rank | Theorem 10.13 proof, p. 198: parity, (546), (489)–(490) and (387) | Trace the reciprocity and Heegner-point comparison and all nonzero factors. Check the proof's \(f_0\) branches and any finite-case input where applicable. |
 | Upstream main conjecture and reciprocity | Sections 5–10 and Appendix 11, particularly the input Theorem 8.4 | Audit the complete invoked chain at ramified \(3\), including the treatment of primes dividing the CM roots-of-unity order. A review of the terminal implication alone does not complete this task. |
@@ -1993,14 +1994,207 @@ have zero specialization over a field; for example
 This local algebra repair does not supply the cohomology comparisons
 needed to establish (557).
 
-### The October 7 all-prime alternative
+### Repair attempt: restriction, Kummer kernels and specialization
+
+The cohomology error has a valid replacement at the original
+character. It does not give (539)/(548) at the shifted character.
+There is also a separate incompatibility between the scalar Kummer
+map and the rank-one kernel used later in the printed proof.
+
+**Restriction with the action retained.** Put
+\(K=K_{\rm CM}\), \(F=K_{\mathfrak p}=\mathbb Q_3(\sqrt{-3})\),
+\(\mathcal O=\mathcal O_F\), and \(\lambda=\lambda_E\).
+Let \(L_\infty=K(E[3^\infty])\), \(G=\operatorname{Gal}(\overline K/K)\),
+\(N=\operatorname{Gal}(\overline K/L_\infty)\), and
+\(H=G/N=\Delta\times\Gamma\). Here \(\Gamma\cong\mathbb Z_3^2\).
+Inflation–restriction gives
+\[
+ 0\longrightarrow H^1(H,W(\lambda))
+ \longrightarrow H^1(G,W(\lambda))
+ \longrightarrow
+ \operatorname{Hom}_{\rm cts}(N^{\rm ab},W(\lambda))^H
+ \longrightarrow H^2(H,W(\lambda)).                       \tag{RC1}
+\]
+This abelianizes \(N\), which acts trivially on the coefficients,
+and retains the conjugation action of \(H\). It does not abelianize
+\(G\). Choose \(h\in\Gamma\) with \(\lambda(h)\ne1\), and let
+\(C_h\cong\mathbb Z_3\) be its closed procyclic subgroup.
+Multiplication by \(\lambda(h)-1\) is surjective on \(W(\lambda)\).
+Thus \(H^1(C_h,W(\lambda))=0\), while \(H^0(C_h,W(\lambda))\)
+is killed by that scalar and all higher cohomology is zero.
+Hochschild–Serre for \(C_h\subset H\) then shows that the end
+terms in (RC1) are killed by \(\lambda(h)-1\), so their
+rationalized Pontryagin duals vanish. The same argument applies
+to local restriction with its decomposition group at \(\mathfrak p\).
+
+For a compact module with its action retained, dualizing an
+equivariant Hom gives twisted **coinvariants**. In particular,
+\(\operatorname{Hom}(M,F/\mathcal O)^H\) is dual to \(M_H\),
+not to \(M^H\). Inserting the character means first twisting
+\(M\) by \(\lambda^{-1}\). This is the corrected descent
+procedure; the local-unit and ramification identifications must
+still be made for each specified character and local condition.
+
+**The Kummer quotient that is justified at the base character.**
+Write \(B=S'(\lambda)\),
+\(A=H^1(K_{\mathfrak p},W(\lambda))\), and let
+\(P\subset A\) be the local Kummer image. Put
+\(D(M)=\operatorname{Hom}_{\mathcal O}(M,F/\mathcal O)
+       \otimes_{\mathcal O}F\).
+These Selmer and local groups are cofinitely generated. The
+definition of the usual Selmer group is the exact sequence
+\[
+ 0\longrightarrow S(\lambda)\longrightarrow B
+       \longrightarrow A/P .
+\]
+Since \(F/\mathcal O\) is injective as an \(\mathcal O\)-module,
+dualizing and then tensoring with \(F\) proves
+\[
+ D(S(\lambda))\cong
+ D(B)\big/\operatorname{im}\bigl(D(A/P)\longrightarrow D(B)\bigr).
+                                                               \tag{RC2}
+\]
+Here \(D(A/P)\) is exactly the annihilator of \(P\) in \(D(A)\).
+Consequently this quotient has \(F\)-dimension one when
+\(r_3(E/\mathbb Q)=1\), by Shapiro's lemma as in (537).
+This uses no finiteness of \(\Sha\) or rational point assumption.
+With valid class-field descent identifications, (RC2) is the
+corresponding quotient at the augmentation ideal for the
+\(\lambda\)-twisted modules. It supplies no identification with
+a different character fiber.
+
+**The scalar kernel has rank two, not one.** In the notation
+of the retained paper, put
+\[
+ R=\mathcal O[[\Gamma]][1/3]
+   \cong\mathcal O[[T_1,T_2]][1/3],\qquad
+ I=(T_1,T_2),\qquad \mathcal U=U^1_{\chi}(\lambda^{-1}).
+\]
+Proposition 8.3 gives \(\mathcal U\cong R^2\).
+Definition 9.12 and the explicit action on p. 188 give a scalar
+\(R\)-linear map
+\(\delta_E:\mathcal U\to R/I=F\).
+Thus \(I\mathcal U\subset D_E:=\ker\delta_E\) and
+\(\operatorname{rank}_R D_E=2\), even if \(\delta_E\) were zero.
+When it is surjective, choose a basis \(u_1,u_2\) with
+\(\delta_E(u_1)=1,\delta_E(u_2)=0\). Then exactly
+\[
+ D_E=Iu_1\oplus Ru_2,\qquad
+ D_E/I\mathcal U=F\overline u_2.                          \tag{RC3}
+\]
+The line on the right is the local Kummer annihilator. A
+rank-one summand \(Ru_2\) can lift this line, but is not \(D_E\).
+The equality in Proposition 9.17, (525), p. 185, and the equality
+\(U_0=\ker\delta_E\) in Proposition 10.5, (542), p. 192, cannot
+hold with these definitions and ranks.
+
+More strongly, let \(\mathcal E\) be the rank-one global-unit
+module of Proposition 8.3. If \(\mathcal E\subset D_E\), as
+asserted in (544), then \(D_E/\mathcal E\) is a finitely
+generated module of rank one. Its support is all of
+\(\operatorname{Spec}R\), so Nakayama gives
+\[
+ (D_E/\mathcal E)\otimes_R R/J\ne0
+ \quad\hbox{for every maximal ideal }J.                  \tag{RC4}
+\]
+Indeed a positive-rank module over a domain has zero annihilator,
+and hence cannot vanish after localization at any maximal ideal.
+In particular, the vanishing (545) is incompatible with the
+literal scalar-kernel definition, independently of the
+abelianization error. A repair must change the module used as
+the interpolating local condition, with a proved specialization
+property; changing the proof of (540) alone cannot suffice.
+
+**The shifted character and the missing Tor term.** Write
+\(\lambda=\chi\psi\), with \(\chi\) on \(\Delta\) and \(\psi\)
+on \(\Gamma\). For a raw module \(M\), the fiber of
+\(M_\chi(\lambda^{-1})\) at
+\(J=(\gamma-\psi(\gamma)^{-2})\) has raw \(\Gamma\)-character
+\(\psi^{-1}\), retaining \(\Delta\)-character \(\chi\).
+It therefore corresponds to
+\[
+ \rho^\sharp=\chi\psi^{-1},
+ \qquad \lambda^{-1}=\chi^{-1}\psi^{-1}.                 \tag{RC5}
+\]
+Even when these finite characters coincide, the original
+\(\lambda\)-fiber is at \(I\), not \(J\). Tate duality pairs
+\(F(\lambda)\) with \(F(\epsilon_{\rm cyc}\lambda^{-1})\);
+it does not remove the cyclotomic twist. This is explicit in
+[Rubin, *Euler systems*, I, Definition 1.3, Example 1.4 and
+Theorem 4.1, printed pp. 2 and 8](sources/rubin-euler-systems-aws-1999.pdf).
+These statements allow the local field above 3; they do not
+identify the two different character fibers.
+
+There is also a necessary base-change correction. Set
+\(Z=\operatorname{im}(\mathcal U\to\mathcal X)\) and
+\(Y=\operatorname{coker}(\mathcal U\to\mathcal X)\).
+For \(k_J=R/J\), the exact sequence is
+\[
+ \operatorname{Tor}_1^R(Y,k_J)\longrightarrow Z\otimes_R k_J
+ \longrightarrow\mathcal X\otimes_R k_J
+ \longrightarrow Y\otimes_R k_J\longrightarrow0.         \tag{RC6}
+\]
+Thus the kernel of the specialized reciprocity map need not
+be the image of the specialized global-unit module. The
+possible extra kernel is the image of the Tor term. The
+identification used in Proposition 10.11 requires controlling
+this term and the cokernel, not merely knowing dimensions.
+
+An exact module example demonstrates the remaining gap.
+Let \(J=(T_1-a,T_2-b)\ne I\), choosing coordinates with \(a\ne0\),
+and put \(h=T_1-a\). Evaluation is at continuous characters,
+so \(a,b\) lie in the maximal ideal of \(\mathcal O\).
+Take
+\[
+ \begin{gathered}
+ \mathcal U=Ru_1\oplus Ru_2,\quad \mathcal X=R,\quad
+ \operatorname{rec}(u_1)=h,\quad\operatorname{rec}(u_2)=0,\\
+ \mathcal E=Ru_2,\quad \mathcal C=hRu_2,\quad Y=R/(h),\quad
+ \delta(u_1)=1,\quad\delta(u_2)=0\quad\text{in }R/I.
+ \end{gathered}                                         \tag{RC7}
+\]
+There is an exact sequence
+\(0\to\mathcal E\to\mathcal U\to\mathcal X\to Y\to0\),
+and the characteristic-ideal equality is
+\(\operatorname{char}(\mathcal E/\mathcal C)
+ =\operatorname{char}(Y)=(h)\).
+At \(I\), the quotient in (RC2) is \(F\): its local annihilator
+is \(F\overline u_2\), whose reciprocity image is zero.
+Also \(U_0=\operatorname{sat}(\mathcal C)=Ru_2\) and one may
+take \(U_2=Ru_1\). Nevertheless
+\[
+ \lambda_0=h,\quad \lambda_0(J)=0,\qquad
+ (\mathcal X/\operatorname{rec}(U_2))\otimes_R k_J=k_J,
+ \qquad \operatorname{Tor}_1^R(Y,k_J)=k_J.                \tag{RC8}
+\]
+The Tor assertion follows by tensoring the resolution
+\(0\to R\xrightarrow{h}R\to R/(h)\to0\).
+The module \(\mathcal X\) is free, so torsion-freeness and the
+absence of pseudonull submodules do not exclude this example.
+Hence even the corrected base-character corank-one datum,
+these module ranks and this main-conjecture-shaped equality
+do not formally imply (557) or nonzero \(\lambda_0(J)\).
+This is an algebraic countermodel to that deduction; no
+realization by an elliptic curve is asserted.
+
+The partial repair establishes (RC1)–(RC3) and the requisite
+base-change sequence. It leaves an arithmetic interpolation
+problem: construct a rank-one local condition with the actual
+Kummer fibers, prove which character it controls, and rule out
+the Tor/cokernel obstruction at the shifted character.
+No such result has been proved here. The literal-kernel
+contradiction (RC4) prevents accepting the printed terminal
+chain unchanged. MCT20 instead uses the separate accepted all-prime
+converse; MCT22's exact leading-term formula remains conditional.
+
+### Selected all-prime route: application and proof audit
 
 The retained [OpenAI preprint, *The Selmer converse for elliptic
 curves at every prime*, 7 October 2026](sources/openai-selmer-converse-every-prime-2026-10-07.pdf),
 Theorem 1.1, p. 3, states the same required implication for every
 elliptic curve over \(\mathbb Q\) and every prime. At \(p=3\),
-(49) is its full Selmer-corank hypothesis. Its stated conclusion
-would discharge the mathematical assumption in MCT20, including
+(49) is its full Selmer-corank hypothesis. Its accepted conclusion
+supplies the external input in MCT20, including
 analytic rank one and finiteness of the entire \(\Sha\).
 
 The PDF is pinned to openai/math commit
@@ -2008,28 +2202,85 @@ The PDF is pinned to openai/math commit
 bdb2f21b345a4f0fc9943a4e39bee27fedae5cf1e6842c40b3a77bd528ddea01.
 The downloaded bytes also match upstream Git blob
 384525874a5e9989e574a5f9ce7c9883258cc732.
-The statement and the following proof entry points were inspected;
-this is not acceptance of the full argument.
+The PDF has the same bytes at commit
+3344da59991ed94f9ba711217b29c1d760badfa6. The source-level audit
+used the sections in `build/sections/` at that commit, in addition
+to the retained PDF. This is a targeted internal audit, not a
+completed validation of the whole argument.
 
-| All-prime proof input | Exact PDF location | Outstanding audit |
+**Exact application.** The Selmer group in Theorem 1.1 uses the
+Kummer conditions at every place, as does (49); its corank includes
+the possible divisible Sha direction. Thus the hypothesis is
+already proved by MCT19, rather than being an assumption about
+Mordell--Weil rank or finiteness of Sha. At \(p=3\), its conclusion
+forces \(\rho=1\) in (50), removes the sole divisible summand, and
+gives the finite group in MCT20. It applies separately to every
+nonsingular target. Infinitude then uses MCT16; the selected-block
+prime density uses MCT21. This theorem supplies no exact leading-term
+formula: MCT22 retains its separate exact-BSD input.
+
+**Companion dependency and the necessary branch.** The odd-prime
+proof uses the analytic twist-density assertion of [OpenAI,
+*Goldfeld's analytic density conjecture and the 2-converse for
+elliptic curves*, Theorem 1.2, p. 2](sources/openai-goldfeld-two-converse-2026-10-07.pdf).
+That assertion combines its pointwise 2-converse with Smith's
+Selmer-corank densities. For our odd \(R\), the cubic
+\(X^3-2R^2\) is irreducible over \(\mathbf Q\): a rational
+root would be integral, but its cube would have 2-adic valuation
+one. Hence \(E_R[2]\) is irreducible. Quadratic twisting leaves
+this representation unchanged. The companion's irreducible branch
+(Section 10, beginning p. 65) therefore suffices for the original
+curve and all auxiliary quadratic twists; its rational-2-torsion
+branch need not be an input to this application. The companion's
+introductory citation of the later all-prime theorem is contextual:
+the displayed 2-converse/density route does not use that theorem
+as a proof premise.
+
+The companion PDF is retained at commit
+3344da59991ed94f9ba711217b29c1d760badfa6, Git blob
+58b8904f39b2a12534732010191fd35435559a61, SHA-256
+c417858c9fe566daacb7738741dc66e211eea148b3da587eb5ee68eaad208d64.
+Its first theorem page was also inspected visually.
+
+| Proof component | Inspection and finding | Limit of this audit |
 |---|---|---|
-| Auxiliary fields | Theorems 2.1–2.2, p. 6; Lemma 2.3 and Proposition 2.4, pp. 7–8 | The separate companion *Goldfeld's analytic density conjecture and the 2-converse for elliptic curves*, Theorems 1.1–1.2, supplies the two-converse and twist-density inputs. The odd-prime field selection uses the latter. This companion proof has not been audited here. |
-| Cohomological upper bound | Proposition 3.7, pp. 17–18, using Lemmas 3.3–3.6 | Validate admissible cochains, coefficient exactness and the strict-case obstruction at arbitrary odd \(p\), including 3. |
-| Automorphic and local comparison | Sections 4–8, pp. 20–61 | Validate the theta congruence, cusp lifting, transfer and local conditions without imposing ordinary reduction on \(E_R\). |
-| Extension lower bound | Proposition 9.7, pp. 67–68, using the preceding matrix-algebra and corner arguments | Validate extension extraction and the length bound over the full Artin coefficient ring, and its compatibility with Proposition 3.7. |
+| Auxiliary fields, Sections 1--2 | The full-corank interface and the density-based selection of the quadratic and biquadratic fields match this application. The density input is a separate theorem, not ordinary Chebotarev alone. | The companion's new pointwise 2-converse must still be validated. |
+| Upper bound, Section 3, especially Proposition 3.7, pp. 17--18 | Read the admissible-cochain construction, coefficient exact sequences, first-order cup-product obstruction and strict-case two-dimensional obstruction. The argument is for odd primes and includes 3; it does not require residual irreducibility of the original 3-torsion. No defect was identified in these inspected arguments. | This finding is a scoped proof inspection, not independent verification of the complete arithmetic construction. |
+| Theta periods and jets, Sections 4--6 | Read the divided-power/Fock normalization, raw local factors, squared period identity and coefficient argument recovering small jets without taking a square root in a nonreduced ring. | Uniform integrality of the moment measure in Lemma 4.5, and its compatibility with the global period identity, remain proof-review tasks (OA1). |
+| Cusp lifting and parameters, Sections 7--8 | Read the ordinary target geometry, normalized trace operators, full infinitesimal characters, transfer, parity correction and Hodge--Newton flags. Ordinary reduction is imposed on the target construction, not on \(E_R\). The external theorem checks below remove several possible hypothesis objections. | Integral cusp lifting through the full Artin coefficient ring in Proposition 7.6 remains to be reconstructed from the stated geometric inputs (OA2). |
+| Extension lower bound, Section 9, especially Proposition 9.7, pp. 67--68 | Read the finite matrix-algebra construction, henselian corners, characteristic-zero nonvanishing argument, Fitting-ideal base change and the length contradiction. Its use of the full Artin ring is explicit. | The polynomial local identities must be checked to impose the required local conditions on every extracted Artin extension, including nilpotents (OA3). |
+| Companion irreducible route | Read its binary congruence/clearing algebra, integral Kummer and Galois-evaluation constructions, fixed-multiplier descent at 2, height-one switching, cyclotomic interpolation and punctured-cube saturation. No counterexample was obtained from these inspected arguments. | The coefficient trace/prime-transfer rules feeding the matrix and saturation construction still need a complete application check; together with the uniform clearing estimates this is OA4. This is review of the accepted converse's proof dependency, not a separate premise of MCT20. |
+
+Several external inputs were checked at their actual statements:
+
+| Primary source | Exact scope checked | Consequence for this audit |
+|---|---|---|
+| [Smith, arXiv:2503.17619v1](https://arxiv.org/html/2503.17619v1), Theorem 1.1 | The full 2-primary Selmer-corank densities are stated for every elliptic curve. The analytic consequence is separate. | The companion uses the Selmer theorem, not an analytic-density conclusion conditional on BSD. |
+| [Labesse, *Changement de base CM et séries discrètes*](https://webusers.imj-prg.fr/~michael.harris/CBCM.pdf), Corollary 5.3, author PDF pp. 42--44 | Discrete series and sign property (*), with totally real base degree at least two; full infinitesimal character and local base change at split or unramified places. | The auxiliary real quadratic field has the required degree. The OpenAI sign argument is an additional proof, not a hypothesis that may be omitted. |
+| [Salamanca Riba (1988)](https://www.numdam.org/article/CM_1988__68_3_251_0.pdf), Theorem 1.2, printed p. 253 | Regular integral infinitesimal character for \(\operatorname{SU}(p,q)\). | This theorem is not restricted to strongly regular parameters; that proposed objection to the \(\operatorname{U}(3,1)\) application does not apply. |
+| [Barnet-Lamb--Gee--Geraghty--Taylor, *Local-global compatibility for l=p, II*](https://www.numdam.org/item/10.24033/asens.2212.pdf), Theorem 1.1 | Monodromy domination for regular algebraic essentially conjugate-self-dual cuspidal representations; equality has an additional Shin-regularity condition. | The source uses domination, so a missing Shin-regularity hypothesis does not invalidate that particular step. |
+| [Burungale--Tian, arXiv:2506.03465v2](https://arxiv.org/html/2506.03465v2), Theorem 2.6 and Remark 2.7 | Kato's main conjecture for CM forms after tensoring with \(\mathbf Q_p\), for every prime. The integral version is distinguished explicitly. | It supplies the rational CM input at 2 in the companion; it does not supply the new uniform integral estimates. |
+| [Burungale--He--Tian--Ye, arXiv:2508.19706v2](https://arxiv.org/html/2508.19706v2), Theorem 1.1 and Corollary 4.20 | Nonvanishing for self-dual CM Hecke characters along the stated auxiliary-prime twists; no restriction to one special CM type in the statement used. | The auxiliary nonvanishing input has the required scope. Its full proof was not independently rederived. |
 
 Kriz is cited for context in this preprint's introduction; the
 displayed odd-prime proof route uses the companion density theorem,
-the upper bound and extension extraction instead. Its broader
-statement is therefore an alternative audit route, not an audited
-repair of Kriz's cohomology comparison.
+the upper bound and extension extraction instead. The chosen route
+therefore requires neither a repair nor an acceptance of Kriz's
+cohomology comparison.
 
-MCT20 remains conditional. The next concrete priority is a valid
-replacement for (540)/(549), or validation of the separate all-prime
-route, followed by the remaining imported dependencies. Formula
-(50) rules out distinguishing the alternatives from the abstract
-finite Selmer groups alone. Additional arithmetic that identifies
-a non-torsion rational point would still settle a particular curve.
+**Acceptance and audit disposition (27 November 2026).** At the
+user's direction, Theorem 1.1 is accepted as an external theorem for
+this project. Its exact application is checked, and its mathematical
+consequences are propagated without a further converse assumption.
+MCT20 and the rank-one consequence of MCT21 therefore have proved
+status using that cited input. The former converse hypothesis and
+rank-one infinitude gap are resolved by this route. OA1--OA4 remain
+open proof-review tasks; acceptance does not assert their completion,
+independent replay, formal verification or external review. Kriz
+repair is not required. MCT22 remains conditional only on the separate
+exact leading-term input. Formula (50) still shows why finite descent
+group types alone could not have distinguished the two alternatives;
+the accepted converse supplies the additional arithmetic conclusion.
 
 ## Positive density and the conditional full BSD formula
 
@@ -2043,8 +2294,7 @@ This set has natural density among all rational primes
                     \left(1-3^{-(2j-1)}\right).             \tag{51}
 \]
 Its relative density among eligible primes is \(12\delta_r\).
-Every member satisfies MCT19, without a converse assumption.
-In particular, under the assumption of MCT20, all these curves
+Every member satisfies MCT19. By MCT20, all these curves
 have analytic and rational rank one, finite \(\Sha\), and
 \(\Sha[3^\infty]\cong(\mathbf Z/3)^{2r}\).
 
@@ -2069,7 +2319,7 @@ density \(1/(12\cdot3^{\binom{2r}{2}})\). Summing this finite
 collection proves (51). The unknown reference block and common
 nonzero normalization factor only permute all matrix targets;
 they do not change their equal densities or the number of
-nonsingular targets. MCT19 and the conditional MCT20 give the
+nonsingular targets. MCT19 and MCT20 give the
 remaining assertions.
 
 Thus, with \(\pi(X)\) denoting the number of rational primes
@@ -2107,7 +2357,9 @@ The limit compares a sequence of densities of different fixed
 prime families; it is not the density of an intersection over \(r\).
 
 **Corollary MCT22 (conditional positive-density exact BSD families).**
-Assume Theorem 1.1 of OpenAI, *Exact Birch–Swinnerton-Dyer Formula
+The ranks, finiteness of Sha and primary groups below already follow
+from MCT20--MCT21. For the additional leading-term assertion, assume
+Theorem 1.1 of OpenAI, *Exact Birch–Swinnerton-Dyer Formula
 from Low Selmer Corank*, 7 October 2026, including its companion
 inputs. For every fixed \(r\ge1\) and \(R_0\) as in MCT16,
 each \(q\in\mathcal P_{r,R_0}\) gives a curve \(E=E_{R_0q}\)
@@ -2152,9 +2404,9 @@ Indeed the finite group splits into its primary parts, so
 prime to 3. MCT16 also gives \(E(\mathbf Q)[3]=0\), hence
 \(v_3(L'(E,1)/(\Omega_E\operatorname{Reg}_E\prod c_\ell))=2r\).
 These valuations are of the positive rational normalized quotients
-asserted by (54), not of the unnormalized real derivative. Finiteness
-of the whole \(\Sha\) also gives full Selmer corank one at every
-other prime, by the primary Kummer sequence.
+asserted by (54), not of the unnormalized real derivative. Full Selmer
+corank one at every prime already follows from MCT20, independently
+of this additional leading-term assumption.
 
 ### Exact leading-term source interface and audit boundary
 
@@ -2168,7 +2420,7 @@ The actual theorem pages were inspected in both rendered PDFs.
 
 | Input | Exact statement and proof entry | Match or remaining obligation |
 |---|---|---|
-| Unrestricted converse | Converse Theorem 1.1, p. 3 | Full Selmer conditions at every place agree with (49); choose \(p=3\), corank 1. Its rank and whole-\(\Sha\) conclusions imply MCT20. The proof audit above remains open. |
+| Unrestricted converse | Converse Theorem 1.1, p. 3 | Accepted external input. Full Selmer conditions at every place agree with (49); choose \(p=3\), corank 1. Its rank and whole-\(\Sha\) conclusions establish MCT20. The proof-review tasks above remain open separately. |
 | Exact leading term | Exact BSD Theorem 1.1, (1.1)–(1.2), p. 3 | The hypothesis prime is any prime, including 3. It explicitly allows CM and arbitrary reduction. The height, period, local and torsion normalizations are retained in (54). Statement matching is not proof acceptance. |
 | Companion inputs | Exact BSD Theorems 2.1–2.2, p. 7; Theorem 2.5, p. 8 | These import the unrestricted converse, the two-primary leading term, and the separate analytic twist-density theorem. Their proofs, including the two-primary formula and the density companion, have not been validated here. |
 | Integral comparison and CM assembly | Exact BSD Sections 3–9, particularly Proposition 9.5 and Theorem 9.6, pp. 86–89; Proposition 10.1, pp. 89–90, and Corollary 10.2, p. 90; Lemma 10.3 and Proposition 10.4, p. 91; proof of Theorem 1.1, p. 92 | Check the integral unit and central-specialization arguments and the pair identity at odd primes; the rank-one CM branch uses a rank-zero CM companion. The terminal assembly was inspected, not the complete upstream chain. |
@@ -2188,9 +2440,10 @@ not a proof that no formalization exists anywhere. The upstream
 [README](https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/README.md)
 describes mixed verification stages and possible issues in unformalized
 results. No formal verification or external review of these inputs is
-claimed. The outstanding source audit is therefore retained explicitly;
-MCT20 and MCT22 remain conditional, while MCT21's block density does
-not depend on either external converse or BSD formula.
+claimed. The outstanding source reviews are retained explicitly.
+MCT20 and MCT21's arithmetic consequence use the accepted external
+converse; MCT21's matrix count does not need it. MCT22's exact BSD
+formula remains conditional on its separate, unaccepted input.
 
 The [density verifier](verify_mordell_prime_density.py) exhaustively
 enumerates the alternating matrices in dimensions 2 and 4, compares

@@ -8,9 +8,11 @@ three, then $W_1\le0.3252948978196\ldots<1/3<W_1(T)$, by the exact bound
 below. This holds for arbitrary measurable balanced partitions. A planar
 centroidal configuration in strictly convex quadrilateral position is unstable
 on adding a third Gaussian coordinate. Together these facts exclude every
-rank-deficient global maximum in dimension at least three. The global theorem
-therefore reduces to the full-rank stationary stability obligation. The
-separate value comparison for all planar configurations remains open.
+rank-deficient global maximum in dimension at least three. The global
+theorem now has an external proof through
+[Zhang's all-cell covariance comparison](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#external-endpoint-and-application-audit).
+It also settles the strict planar value comparison. The stationary
+classification below is an alternative route, no longer a prerequisite.
 The balanced Hessian now has an explicit five-dimensional shape reduction,
 a trace identity and exact tetrahedral eigenvalues. The local theorem below
 also has an explicit polar Frobenius radius $10^{-5}$. These results do not
@@ -19,7 +21,9 @@ The quantitative boundary theorem below excludes high-value full-rank
 stationarity whenever $\lambda_{\min}(C)/\operatorname{tr}C\le10^{-11}$.
 A deterministic search from 76 asymmetric initializations
 converged numerically to the tetrahedral Gram matrix. The global balanced
-first-order comparison remains open in this work.
+first-order comparison is supplied by that external preprint. The
+[quantitative partition estimate](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#gaussian-margin-and-partition-distance)
+and the nearby full-kernel obligation now take priority.
 
 ## Affine reduction
 
@@ -359,17 +363,18 @@ zero diagonal. Thus these directions fill the off-diagonal eigenspace.
 A sign for unequal radii must use
 stationarity and the high-value hypothesis, not just proximity to $T$.
 
-The **equal-radius stability obligation remains open**: every centered
+The **equal-radius stability obligation is resolved by the external endpoint**: every centered
 rank-three centroidal exactly balanced tuple with $J\ge W_1(T)$ and
 nonpositive balanced second variation in every site direction should
-have $g_1=g_2=g_3=g_4$. This is sufficient for the existing high-value
-stability gap. The [equal-centroid-norm theorem](BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md#hermite-bounds)
+have $g_1=g_2=g_3=g_4$. This supplies an alternative sufficient stationary criterion. The [equal-centroid-norm theorem](BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md#hermite-bounds)
 already gives $W_1\le W_1(T)$ in that case, with equality only for the
 tetrahedral partition. Thus a non-tetrahedral stationary tuple at or
 above the tetrahedral value necessarily has unequal radii. Proving a
 positive direction in (RH) for every such unequal-radius tuple is a
-stronger, targeted sufficient test for the obligation. Neither this
-sign nor the equal-radius stability obligation has been proved.
+stronger, targeted sufficient test for the obligation. There are no non-tetrahedral centroidal tuples at this value level, by
+[the exact objective identity](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#consequences-for-previous-four-cell-obligations).
+The unequal-radius high-value domain is empty, so its proposed positive
+Hessian assertion is vacuous; no new Hessian sign computation is claimed.
 This bridge concerns first-Hermite mass and balanced quantization;
 it supplies no uniform full-noise comparison.
 
@@ -874,8 +879,8 @@ deliberately invalid constant choices were rejected. Reproduce it from
 the repository root with
 `python3 research/plurality-stability/check_stationary_boundary_margin.py`.
 No certified balance solve or numerical Gaussian integration is used
-in this boundary theorem. The high-value stability gap on the remaining
-compact shape region is still open.
+in this boundary theorem. The external endpoint now excludes every
+non-tetrahedral centroidal tuple at the high-value threshold.
 
 ## Boundary exclusion and the remaining global obligation
 
@@ -925,13 +930,14 @@ strictly improves its value. This again contradicts maximality.
 The remaining sufficient statement can be restricted to the tetrahedral
 value level:
 
-**High-value full-rank stability gap (open):** every centered rank-three
+**High-value full-rank stability statement (resolved):** every centered rank-three
 centroidal balanced affine tuple with $J\ge W_1(T)$, other than the
 tetrahedral centroid tuple up to orthogonal maps and label permutations,
 has an improving site perturbation for $J$. A positive value of (BV)
-in one direction is sufficient. This statement remains open.
+in one direction is sufficient. Its non-tetrahedral domain is empty by
+the external first-moment theorem and (H1) in the quantitative note.
 
-The immediate targeted route is the equal-radius stability obligation
+An alternative stationary route uses the equal-radius criterion
 above. A positive direction in the three-dimensional radius restriction
 (RH) whenever the radii differ, at these high-value stationary tuples,
 would connect the shape Hessian directly to the established equal-norm
@@ -962,16 +968,15 @@ deficit, so that bridge is retired. Nevertheless every proper reflected
 swap of a tetrahedral cell pair strictly loses full noise stability for
 every $0<\rho<1$, by an exact Gaussian kernel comparison. That theorem
 does not reduce arbitrary balanced competitors to reflected swaps.
-The high-value gap above can be attacked with the five shape directions;
-a uniform full-noise comparison still requires its own argument.
+The external theorem discharges the high-value endpoint; a uniform
+full-noise comparison still requires its own argument. The quantitative
+note states the localization and sufficient nearby comparison.
 
-The **planar value gap remains open** as a separate comparison: every
-balanced four-cell affine assignment in $\mathbb R^2$, including ties
-subdivided into equal masses, should have $W_1<W_1(T)$. It is no longer
-a required premise of the route above. A planar configuration violating
-this value bound would have to have its first moments in strict convex
-quadrilateral position, by (NE). Its instability in dimension three
-does not by itself rule out a large planar value.
+The **planar value comparison is resolved**: every balanced four-cell
+affine assignment in $\mathbb R^2$, including ties subdivided into equal
+masses, has $W_1<W_1(T)$ by the external theorem's strict
+lower-dimensional case. The internal quadrilateral lift alone supplies
+ambient instability, rather than this direct value comparison.
 
 Conversely, the global first-Hermite inequality together with the proved
 boundary exclusion would settle this strict planar comparison. Extend a
@@ -983,7 +988,8 @@ contrary to the boundary exclusion. Thus the planar comparison is a
 consequence of the global bound, even though it is not a required premise
 of the remaining stability route.
 
-For a computer-assisted route, the explicit local theorem below supplies
+For an optional independent computer-assisted route, the explicit
+local theorem below supplies
 a polar Frobenius neighborhood of radius $10^{-5}$. A complete interval proof
 still needs rigorous Gaussian integral enclosures and an exhaustive cover
 of the remaining compact normalized Gram domain.

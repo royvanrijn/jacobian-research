@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "kind": "terminal_mass_singleton_equal_cut_controls",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "d82814f5a9b55a86d391de91b7edd38814c98e2e897537a7a6c66131678c3f52",
+  "input_sha256": {
+    "TERMINAL_MASS_HURWITZ_DESCENT.md": "a14f07f9ed293f23f9f4f67db1446e39d8a20278aeab32588627788e66d90fef",
+    "verify_terminal_mass_hurwitz_descent.py": "0718f36bc5814aec06d6746934619353fe4545f9d37ae956ce7782d24cba5a1f",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f"
+  },
+  "all_labeled_tree_controls": [
+    {
+      "t": 2,
+      "tree_pairings_tested": 1,
+      "all_factor_mass_survivors": 1,
+      "survivors_captured_in_both_signs": 0
+    },
+    {
+      "t": 3,
+      "tree_pairings_tested": 18,
+      "all_factor_mass_survivors": 2,
+      "survivors_captured_in_both_signs": 2
+    },
+    {
+      "t": 4,
+      "tree_pairings_tested": 1536,
+      "all_factor_mass_survivors": 12,
+      "survivors_captured_in_both_signs": 12
+    }
+  ],
+  "all_path_pairing_controls": [
+    {
+      "t": 3,
+      "pairings_tested": 2,
+      "survivors": 1
+    },
+    {
+      "t": 4,
+      "pairings_tested": 6,
+      "survivors": 1
+    },
+    {
+      "t": 5,
+      "pairings_tested": 24,
+      "survivors": 1
+    },
+    {
+      "t": 6,
+      "pairings_tested": 120,
+      "survivors": 1
+    },
+    {
+      "t": 7,
+      "pairings_tested": 720,
+      "survivors": 1
+    },
+    {
+      "t": 8,
+      "pairings_tested": 5040,
+      "survivors": 1
+    }
+  ],
+  "all_complementary_order_controls": [
+    {
+      "t": 3,
+      "orders_tested": 2,
+      "longest_word": 1
+    },
+    {
+      "t": 4,
+      "orders_tested": 6,
+      "longest_word": 1
+    },
+    {
+      "t": 5,
+      "orders_tested": 24,
+      "longest_word": 2
+    },
+    {
+      "t": 6,
+      "orders_tested": 120,
+      "longest_word": 2
+    },
+    {
+      "t": 7,
+      "orders_tested": 720,
+      "longest_word": 3
+    },
+    {
+      "t": 8,
+      "orders_tested": 5040,
+      "longest_word": 3
+    }
+  ],
+  "larger_order_controls": [
+    {
+      "t": 16,
+      "order": [
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "word": [
+        15
+      ]
+    },
+    {
+      "t": 16,
+      "order": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "word": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "t": 32,
+      "order": [
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "word": [
+        31
+      ]
+    },
+    {
+      "t": 32,
+      "order": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29
+      ],
+      "word": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    }
+  ],
+  "boundary_and_negative_controls": {
+    "t2_complete_orbit_size": 5,
+    "t2_orbit_minimum_mass": 1,
+    "t2_generated_group_order": 10,
+    "invalid_capture_inputs_rejected": 3,
+    "cut_mass_without_all_factor_minimality": 6,
+    "same_tuple_global_mass": 0
+  },
+  "scope": "Internal bounded exact controls of Lemma 15. All labeled tree pairs and edge pairings for t=2..4, all path edge pairings and complementary orders for t=3..8, four larger literal orders, both signs of final capture, product preservation and lower full-cycle deletion. The unbounded exclusion follows from the written proof, not these finite enumerations. No all-degree extraction or mixed connectivity.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

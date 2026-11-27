@@ -1,0 +1,42 @@
+{
+  "title": "A genus-three hyperelliptic curve with rational Jacobian three-torsion of rank three",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "An explicit hyperelliptic genus-three curve has rational Jacobian three-torsion (Z/3)^3; dual degree-2^9 isogenies give three-primary Selmer and Sha transfer on every quadratic twist.",
+  "status": "ready-for-review",
+  "published": false,
+  "catalogued_on": "2026-11-27",
+  "source": "main.tex",
+  "pdf": "genus-three-rational-three-torsion.pdf",
+  "build": "SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=genus-three-rational-three-torsion main.tex",
+  "abstract": "We exhibit a hyperelliptic curve of genus three over the rationals whose Jacobian has rational three-torsion isomorphic to \\((\\Z/3\\Z)^3\\). This supplies the genus-three example asked for by Levin, Yan and Wiljanen. The curve is a double cover of a rational conic with two commuting sign involutions. Three explicit maps of degree eight to elliptic curves with rational points of order three produce independent torsion classes; the Weil pairing gives the matching upper bound. Pullback and pushforward give dual isogenies of degree \\(2^9\\). Consequently, for every quadratic twist and every \\(n\\geq1\\), its \\(3^n\\)-Selmer group and \\(3^n\\)-torsion in the Tate--Shafarevich group identify with those of the product of the three elliptic twists, without a finiteness assumption.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "source_bundle": "genus-three-rational-three-torsion-source.zip",
+  "verification_record": "verification.json",
+  "checksums": "SHA256SUMS.txt",
+  "research_results": [
+    "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
+    "ARITH-GENUS-THREE-EXACT-THREE-PRIMARY-SELMER-TRANSFER"
+  ],
+  "next_steps": [
+    "Obtain specialist proof review of Theorem 1: quotient function fields, map degrees, sign characters, torsion pullbacks and Weil-pairing bound.",
+    "Obtain specialist proof review of Theorem 2: duality, quadratic-twist descent and all local Kummer conditions without Sha finiteness.",
+    "Perform a PDF-only blind-reader test with no workspace or conversation context and record the exact edition and findings.",
+    "Compare later constructions and exact models before any historical-priority claim; review this standalone result before pursuing extensions."
+  ],
+  "verification": {
+    "scope": "Written proofs of the extracted HG1 existence theorem and the HG5 transfer for this curve, inspected primary comparisons, exact Sage algebra and author-side rendered PDF review.",
+    "limits": "External specialist review, historical priority, independent replay, formal verification and PDF-only blind review remain open. Full rational torsion and geometric simplicity are outside the assertions."
+  },
+  "source_bundle_members": {
+    "main.tex": "main.tex",
+    "verify_construction.py": "verify_construction.py",
+    "README.md": "README.md",
+    "metadata.json": "metadata.json",
+    "verification.json": "verification.json",
+    "SHA256SUMS.txt": "SHA256SUMS.txt"
+  }
+}

@@ -396,10 +396,19 @@ squarefree parts equal the real fundamental discriminants.
 
 For these class-rank thresholds, the inspected Levin–Yan–Wiljanen
 Theorem 1 gives \(\gg X^{1/30}/\log X\) fields, with a different
-local specialization. Equation (16) improves that particular
-enumerative bound and pairs the two signs by the mirror relation.
-This comparison concerns the exact cited theorem; a broader
-historical or current-record claim requires a separate literature audit.
+local specialization. However,
+[Kulkarni–Levin, Theorem 1.5](sources/kulkarni-levin-hilbert-irreducibility-2111.15582.pdf),
+arXiv:2111.15582v1, printed p. 3, already proves both the real
+rank-four and imaginary rank-five counts with exactly the lower bound
+in (16). Its proof on printed p. 8 replaces the earlier quantitative
+Hilbert irreducibility input by their Theorem 1.2. Thus the exponent
+and logarithmic denominator in (16) are not a new enumerative improvement
+over that literature. The additional statements to compare are the
+simultaneous mirror pairing, the five specialized local-cube classes
+and the prescribed splitting structure. The cited count alone makes
+no assertion of their novelty. The targeted primary-source search did
+not supply an infinitude theorem for real rank five or the LY4 unit
+condition; this is not a comprehensive historical-priority determination.
 
 ## Infinite towers with several completely split primes
 
@@ -458,12 +467,150 @@ with the real discriminant bound \(X/3\). Complete splitting holds
 in the entire infinite extension. The classical tower mechanism
 supplies no additional virtual class or real class-rank improvement.
 
+## The real rank-five target
+
+**Proposition LY7 (unit separation and its finite local test).** On a
+quadratic LY4 fibre let \(W_K\) be the span of its five marked classes
+in the virtual-unit space \(V_3(K)\), and let
+\(U_K=\mathcal O_K^\times/\mathcal O_K^{\times3}\). Then
+\[
+ \dim\operatorname{im}(W_K\longrightarrow\operatorname{Cl}(K)[3])
+                         =5-\dim(W_K\cap U_K).
+ \tag{18}
+\]
+Consequently unit separation \(W_K\cap U_K=0\) gives real class
+\(3\)-rank at least five, retaining the rank-five imaginary mirror
+and splitting statements of LY4 and LY6. A sufficient condition is
+the existence of **any integral unit** \(\eta\) whose image in one
+completion above three is not a cube. A fundamental-unit certificate
+is unnecessary for this sufficient direction.
+
+Indeed apply the exact sequence in MO7 to this five-dimensional
+space. Localization vanishes on \(W_K\) by LY4. If an integral unit
+has nonzero localization, the map on the one-dimensional \(U_K\)
+is nonzero, hence injective, proving separation. Equivalently, if
+\(\eta=\pm\epsilon^j\) for a fundamental unit \(\epsilon\), its
+noncube localization forces both \(3\nmid j\) and noncube localization
+of \(\epsilon\). The criterion on \(\epsilon\) is sufficient, not
+necessary for \(W_K\cap U_K=0\).
+
+For an explicit test write \(K=\mathbb Q(\sqrt d)\), with \(d>0\)
+squarefree. On LY4, three splits, so \(d\equiv1\pmod3\) and both
+completions are \(\mathbb Q_3\). For a certified integral unit
+\(\eta=(A+B\sqrt d)/2\), choose either root \(r\) of \(d\bmod9\).
+Its local image is a cube if and only if
+\[
+                  (A+Br)/2\equiv1\text{ or }-1\pmod9.
+ \tag{19}
+\]
+To see this, decompose \(\mathbb Z_3^\times=\{\pm1\}\times
+(1+3\mathbb Z_3)\). Cubing maps the second factor onto
+\(1+9\mathbb Z_3\), since the convergent three-adic logarithm
+identifies cubing with multiplication by three. Thus its unit cubes
+are precisely \(\pm(1+9\mathbb Z_3)\). The conjugate of a global
+unit is \(N(\eta)/\eta\), and \(\pm1\) are cubes, so the two
+places give the same cube/noncube verdict.
+
+The norm equation also gives convenient coefficient tests. If
+\(N(\eta)=1\), (19) holds exactly when \(B\equiv0\pmod9\):
+the conjugate images are inverses, so (19) implies their difference
+\(Br\) is zero, and conversely \(B=0\bmod9\) and the norm
+equation imply each image squares to one modulo nine. If
+\(N(\eta)=-1\), (19) holds exactly when \(A\equiv0\pmod9\),
+because their sum is \(x-x^{-1}\). In particular noncube
+localization of a fundamental unit is equivalent to
+\(v_3(\log(\epsilon^2))=1\); larger valuation gives a local cube.
+This is a regulator condition on the actual field, not a consequence
+of the parameter congruences (12)–(13).
+
+The missing infinitude statement is now: prove unit separation on
+infinitely many **distinct fields** of LY4. Infinitely many parameters
+alone do not establish it. The stronger sufficient route seeks an
+integral noncube unit in each of infinitely many such fields. Even
+that infinitude would not automatically retain the count (16); that
+requires a separate quantitative argument or a uniform admissible
+slice. The faster degree-ten real rank-four target below remains a
+separate question. Raising exponents in existing cyclic class-group
+factors does not increase the five-dimensional image in (18).
+
+## Exact bounded fibre probe
+
+The checker provides a first bounded unit search on the **full** LY4
+slice, rather than treating the local control \(u=1/9\) as a global
+example. Set
+\[
+ E=\prod_{p\mid6a\Delta}p^{v_p(2a)+1},\qquad
+ Q=73\cdot79\cdot97\cdot103\cdot109.
+\]
+Take the least nonnegative solution \(N_0\) of
+\(N_0\equiv u_q E\pmod q\) for the five rows of (13), then take
+the first three positive integers \(N=N_0+jQ\), \(j\ge0\), with
+\(\gcd(N,E)=1\). Their parameters \(u=N/E\) satisfy (12) and
+(13). Here \(N_0=23040989\), and \(E\) has 91 decimal digits.
+The checker factors \(6a|\Delta|\) using a bounded trial step,
+verifies every remaining factor is prime, and verifies the product;
+it rejects an uncertified composite cofactor.
+
+Put \(T=cN^3\), \(B=E^3\). The exact positive integer
+\[
+                R=\sum_{i=0}^{10}F_i T^i B^{10-i}
+\]
+represents \(f(cu^3)\) modulo rational squares. Remove the largest
+even power of each prime in \(S\) from \(R\), obtaining \(R_0\).
+No full squarefree factorization is claimed or required. Each retained
+\(R_0\) is a quadratic nonresidue modulo 59, certifying a quadratic
+fibre, and is \(1\bmod3\). Since \(K=\mathbb Q(\sqrt{R_0})\),
+an integer Pell solution gives an integral unit of \(K\) even if
+\(\mathbb Z[\sqrt{R_0}]\) is a nonmaximal order.
+
+The internally executed probe used Python 3.12.3 and SymPy 1.14.0:
+
+| Numerator \(N\) | Digits of \(R_0\) | Convergents tested | Pell unit found |
+|---:|---:|---:|---|
+| 23040989 | 2570 | 2000 | no |
+| 50266021573 | 2570 | 2000 | no |
+| 113069747303 | 2570 | 2000 | no |
+
+For complete quotients \(P_j,Q_j\) of \(\sqrt{R_0}\), use
+\(P_0=0,Q_0=1,a_0=\lfloor\sqrt{R_0}\rfloor\) and
+\[
+ P_{j+1}=a_jQ_j-P_j,\quad
+ Q_{j+1}=(R_0-P_{j+1}^2)/Q_j,\quad
+ a_{j+1}=\lfloor(a_0+P_{j+1})/Q_{j+1}\rfloor.
+\]
+For the convergent \(h_j/k_j\), the determinant identity for successive
+convergents gives
+\(h_j^2-R_0k_j^2=(-1)^{j+1}Q_{j+1}\). Thus \(Q_{j+1}=1\)
+certifies a Pell unit. Convergent residues modulo nine suffice for
+(19); the complete quotients are computed exactly. The probe outputs
+the exact parameter, a SHA-256 of the decimal radicand, a nonsquare
+witness and the step budget, so these inputs can be regenerated.
+
+No maximal-order fundamental unit or local separation verdict was
+obtained in these three fibres. The result only excludes a Pell unit
+among the stated prefixes. It supplies neither a separation frequency,
+distinctness of these three fields, nor evidence against infinitude.
+A locally cubic unit of a nonmaximal order would also leave the
+fundamental-unit question undecided: its exponent in the maximal-order
+unit group might be divisible by three. The checker demonstrates this
+failure mode with \(3+\sqrt{10}\), which is a local noncube, and its
+cube \(117+37\sqrt{10}\), which is locally cubic.
+
+The next useful step is a source of certified units on a thinner
+LY4 subfamily, or a parameter model with substantially smaller field
+discriminants that preserves all five virtual classes. Merely extending
+these prefixes does not provide a mechanism for infinitude. Any
+explicit unit construction must establish integrality, its norm and
+the noncube residue in the same fibres, and then prove distinct-field
+infinitude; congruences on the parameter alone do not do this.
+
 ## Replay and limits
 
 From the repository root in its existing Linux environment:
 
 ```sh
 .venv/bin/python research/arithmetic/verify_lyw_degree_ten_mirror_slice.py
+.venv/bin/python research/arithmetic/verify_lyw_degree_ten_mirror_slice.py --unit-probe --steps 2000 --fibres 3
 ```
 
 Internally replayed with Python 3.12.3 and SymPy 1.14.0. The checker
@@ -475,7 +622,10 @@ the degree-thirty cover, the global cube normalization (11), all five
 character rows and determinant, and the five normalized values
 \(1\bmod27\) at \(u=3^{-2}\). The two tower polynomial values are
 checked with exact rational arithmetic. It rejects a perturbed norm
-identity and duplicated character rows. The universal local argument,
+identity and duplicated character rows. The default replay also checks
+the modulo-nine unit criterion on a noncube, its locally cubic cube,
+and a half-integral unit, and rejects invalid local-unit data. The
+separate bounded probe has exactly the scope recorded above. The universal local argument,
 Kummer descent, tower cuts and application of the counting theorem are written proofs
 above, not conclusions established merely by this finite replay.
 Independent replay, formal verification, external review and
@@ -491,3 +641,13 @@ condition in MO7. The counts and towers concern these class-group
 constructions; the three fixed elliptic-twist properties of MO3 have
 not been transferred. No generic fifth direction on the exhausted
 cubic covers of the marked octic is asserted.
+
+A separate target on the faster degree-ten family is real
+class rank four on infinitely many LY2 fields. If \(W\) is its
+four-dimensional virtual space, \(W\cap\mathcal O_K^\times/
+\mathcal O_K^{\times3}=0\) suffices. As in MO7, a fundamental unit
+that is not a cube in one completion above three implies this
+separation, because all of \(W\) localizes to zero there. No such
+infinite subfamily is established here. Retaining the exponent
+\(1/5\) needs a uniform admissible slice or a separate quantitative
+argument; LY4–LY5's degree-thirty count does not settle that target.

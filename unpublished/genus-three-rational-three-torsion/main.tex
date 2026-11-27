@@ -1,0 +1,394 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage[expansion=false]{microtype}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Jac}{\operatorname{Jac}}
+\newcommand{\Sel}{\operatorname{Sel}}
+\DeclareMathOperator{\Sha}{Sha}
+\DeclareMathOperator{\divisor}{div}
+\hypersetup{pdftitle={A genus-three hyperelliptic curve with rational Jacobian three-torsion of rank three},pdfauthor={Roy van Rijn}}
+\title[A genus-three curve with rational three-torsion]{A genus-three hyperelliptic curve with rational Jacobian three-torsion of rank three}
+\author{Roy van Rijn}
+\subjclass[2020]{11G30, 11G10, 14H40}
+\keywords{hyperelliptic curve, rational torsion, split Jacobian, Selmer group}
+\date{}
+\begin{document}
+\begin{abstract}
+We exhibit a hyperelliptic curve of genus three over the rationals whose
+Jacobian has rational three-torsion isomorphic to \((\Z/3\Z)^3\).
+This supplies the genus-three example asked for by Levin, Yan and Wiljanen.
+The curve is a double cover of a rational conic with two commuting sign
+involutions. Three explicit maps of degree eight to elliptic curves with
+rational points of order three produce independent torsion classes; the
+Weil pairing gives the matching upper bound. Pullback and pushforward
+give dual isogenies of degree \(2^9\). Consequently, for every quadratic
+twist and every \(n\geq1\), its \(3^n\)-Selmer group and
+\(3^n\)-torsion in the Tate--Shafarevich group identify with those of
+the product of the three elliptic twists, without a finiteness assumption.
+\end{abstract}
+\maketitle
+
+\section{The existence question and the example}
+
+For a smooth projective curve \(C/\Q\) of genus \(g\), the Weil pairing
+bounds the dimension of \(\Jac(C)(\Q)[3]\) over \(\F_3\) by \(g\).
+Levin, Yan and Wiljanen \cite[Theorem~9 and the following discussion]{LYW}
+give hyperelliptic examples attaining this bound in genera one, two and
+four. Their rank-three example has genus four, and they ask whether
+a hyperelliptic curve with genus three and rational Jacobian
+three-torsion of rank three exists. We give such a curve.
+
+\begin{theorem}\label{thm:main}
+Let \(C/\Q\) be the smooth projective model of \(R^2=F(t)\), where
+\begin{equation}\label{eq:octic}
+\begin{split}
+ F(t)={}&t^8-6t^7-t^6+18t^5+93t^4\\
+        &{}-36t^3-4t^2+48t+16.
+\end{split}
+\end{equation}
+Then \(C\) is hyperelliptic of genus three and
+\[
+ \Jac(C)(\Q)[3]\simeq(\Z/3\Z)^3.
+\]
+For \((h_1,h_2,h_3)=(3/2,-3/4,-7/6)\), set
+\begin{equation}\label{eq:elliptic}
+ E_i:\quad Y^2=X^3+(h_iX+h_i+1)^2.
+\end{equation}
+There are explicit morphisms \(\pi_i:C\to E_i\) of degree eight.
+Writing \(A=E_1\times E_2\times E_3\) and \(J=\Jac(C)\), the maps
+\[
+ \Phi=\sum_i\pi_i^*:A\longrightarrow J,
+ \qquad
+ \Psi=(\pi_{1*},\pi_{2*},\pi_{3*}):J\longrightarrow A
+\]
+are dual isogenies satisfying
+\begin{equation}\label{eq:composites}
+ \Psi\Phi=[8]_A,\qquad \Phi\Psi=[8]_J,
+ \qquad \deg\Phi=\deg\Psi=2^9.
+\end{equation}
+\end{theorem}
+
+The construction belongs to the classical method of splitting a
+Jacobian into elliptic factors. In particular,
+Howe, Lepr\'evost and Poonen \cite[Proposition~14]{HLP} construct
+hyperelliptic genus-three Jacobians by gluing three elliptic curves
+when their twisting factor vanishes. Our proof gives the conic,
+the three quotients and all maps directly; it does not require
+an application of that proposition with implicit gluing data.
+
+The reason three independent classes survive is simple. Each elliptic
+curve in \eqref{eq:elliptic} has a rational point of order three.
+Pulling it back along a degree-eight map cannot kill it, because
+pushforward followed by pullback is multiplication by eight on the
+elliptic curve. Independence is a different issue: three maps alone
+would not suffice. Here the two sign involutions place the three
+pullbacks in different characters of a group of order four. Since four
+is invertible modulo three, these characters separate the classes.
+The same separation makes the off-diagonal push--pull maps vanish,
+and gives \eqref{eq:composites}.
+
+The assertion concerns \(J(\Q)[3]\), the subgroup killed by three.
+It does not determine the full rational torsion group. Also \(J\) is
+geometrically nonsimple because of its elliptic factors.
+M\"uller and Reitsma \cite[Theorem~1.1 and Remark~1.2]{MR} distinguish
+the occurrence of an exact full torsion group from that of a subgroup,
+and study geometrically simple examples. Theorem~\ref{thm:main}
+addresses the existence question above; it does not give a
+geometrically simple example or assert an exact full torsion group.
+
+The isogeny has a further consequence. For an abelian variety \(B/\Q\)
+and a squareclass \(d\in\Q^\times/\Q^{\times2}\), let \(B^d\) denote
+the quadratic twist by the automorphism \([-1]\). We use
+\(\Sel_m(B/\Q)\) for the Selmer group for multiplication by \(m\),
+and \(\Sha(B/\Q)\) for the Tate--Shafarevich group.
+
+\begin{theorem}\label{thm:descent}
+For the varieties in Theorem~\ref{thm:main}, every rational
+squareclass \(d\) and every integer \(n\geq1\), the twisted maps induce
+isomorphisms
+\begin{align*}
+ \Sel_{3^n}(J^d/\Q)&\simeq
+       \bigoplus_{i=1}^3\Sel_{3^n}(E_i^d/\Q),\\
+ \Sha(J^d/\Q)[3^n]&\simeq
+       \bigoplus_{i=1}^3\Sha(E_i^d/\Q)[3^n].
+\end{align*}
+They also identify the full three-primary Tate--Shafarevich groups.
+No finiteness assumption on these groups is required.
+\end{theorem}
+
+\section{The conic and its three elliptic quotients}
+
+Put \(d_0=3(t^2+2)\) and define functions on \(C\) by
+\begin{equation}\label{eq:parameter}
+ x=\frac{t^2-4t-2}{d_0},\qquad
+ y=\frac{-2t^2-4t+4}{d_0},\qquad
+ w=\frac{12R}{d_0^2}.
+\end{equation}
+They satisfy
+\begin{equation}\label{eq:conic}
+ 6x^2+3y^2=2,\qquad
+ w^2=-\frac92x^4-\frac{117}{16}y^4+\frac{59}{18}.
+\end{equation}
+Conversely, generically \(t=(y-2/3)/(x-1/3)\). Thus
+\eqref{eq:conic} is a birational model of \(C\); it comes from
+parametrizing the conic by lines through \((1/3,2/3)\).
+
+Modulo seven the polynomial \(F\) and its derivative are coprime.
+As \(F\) is monic of degree eight, it is squarefree over \(\Q\).
+The double cover of \(\mathbf P^1\) therefore has eight simple branch
+points, and Riemann--Hurwitz gives genus three. In particular all
+nonconstant rational maps below extend uniquely to morphisms of
+smooth projective curves. Apparent poles in their formulas create no
+additional restrictions on the theorem.
+
+The conic model has commuting involutions
+\[
+ \sigma_x(x,y,w)=(-x,y,w),\qquad
+ \sigma_y(x,y,w)=(x,-y,w).
+\]
+Together they generate a group \(G\simeq(\Z/2\Z)^2\).
+The quotients by \(\sigma_x,\sigma_y,\sigma_x\sigma_y\), respectively,
+have coordinates and equations
+\begin{equation}\label{eq:rows}
+\begin{array}{c|cc|rrr}
+ i&z_i&v_i&a_i&b_i&c_i\\ \hline
+ 1&y&w&-135/16&3/2&25/9\\
+ 2&x&w/2&-135/16&39/8&1/144\\
+ 3&x/y&-w/(3y^2)&25/9&59/18&1/144
+\end{array}
+\qquad
+ v_i^2=a_i z_i^4+b_i z_i^2+c_i.
+\end{equation}
+For the first two rows, eliminate \(x^2\) or \(y^2\) in
+\eqref{eq:conic}. For the third, use
+\(y^2=2/(3(2z_3^2+1))\). These substitutions give the displayed
+equations. They also show that each fixed field is generated by
+the stated \(z_i,v_i\): adjoining \(x\), \(y\), or \(y\), respectively,
+recovers \(\Q(C)\) in degree two.
+
+Each quartic on the right in \eqref{eq:rows} is squarefree:
+\(a_ic_i\ne0\) and \(b_i^2-4a_ic_i\ne0\).
+Its smooth projective double cover has genus one, with a rational
+point \((0,\sqrt{c_i})\). We next give the degree-four map from
+each such curve to the desired elliptic target.
+
+\begin{lemma}\label{lem:quartic}
+Let \(a,b,c\in\Q\) with \(ac(b^2-4ac)\ne0\).
+On the genus-one curve \(v^2=az^4+bz^2+c\), set
+\begin{equation}\label{eq:quartic-map}
+ U=\frac{v^2}{4z^2},\qquad
+ V=\frac{v}{8z}\left(az^2-\frac{c}{z^2}\right).
+\end{equation}
+These functions define a morphism of degree four to
+\begin{equation}\label{eq:target}
+ V^2=U\left(U^2-\frac b2U+\frac{b^2-4ac}{16}\right).
+\end{equation}
+The involution \((z,v)\mapsto(-z,v)\) sends \((U,V)\) to \((U,-V)\).
+\end{lemma}
+\begin{proof}
+Directly,
+\[
+ \frac{V^2}{U}=\frac1{16}(az^2-c/z^2)^2
+             =U^2-\frac b2U+\frac{b^2-4ac}{16}.
+\]
+The cubic in \eqref{eq:target} is squarefree by the hypotheses:
+its quadratic factor has nonzero constant term and discriminant
+\(ac\). Hence the target is elliptic. As a function of \(z\),
+\[
+ U=\frac{az^4+bz^2+c}{4z^2}
+\]
+has degree four. The map \(z\) from the quartic curve to
+\(\mathbf P^1\) has degree two, while \(U\) on the target elliptic
+curve has degree two. The tower of function fields therefore gives
+degree \((2\cdot4)/2=4\) for the displayed map.
+The final assertion follows directly from the formulas.
+\end{proof}
+
+Apply Lemma~\ref{lem:quartic} to each row, and put
+\(X_i=U_i-1\), \(Y_i=V_i\).
+In all three cases substitution into \eqref{eq:target} gives
+\eqref{eq:elliptic}. More explicitly the coefficient identities are
+\[
+ h_i^2=3-b_i/2,\quad
+ 2h_i(h_i+1)=3-b_i+(b_i^2-4a_ic_i)/16,
+ \quad
+ (h_i+1)^2=1-b_i/2+(b_i^2-4a_ic_i)/16.
+\]
+Composing the quotient map of degree two with this map of degree
+four gives \(\pi_i\) of degree eight. The equations of the targets
+are nonsingular, since their discriminants are
+\(16(h_i+1)^3(4h_i^3-27(h_i+1))\ne0\).
+
+The action on the maps is
+\begin{equation}\label{eq:characters}
+\begin{array}{c|rr}
+ &\sigma_x&\sigma_y\\ \hline
+ \pi_1&+&-\\
+ \pi_2&-&+\\
+ \pi_3&-&-
+\end{array}
+\end{equation}
+where a minus sign means composition with \([-1]\) on the elliptic
+curve. For \(\pi_3\), either sign change sends \(z_3\) to
+\(-z_3\) and fixes \(v_3\); for the other two maps this is immediate
+from \eqref{eq:rows}. The lemma proves all the signs.
+
+\section{The three rational torsion classes}
+
+On \(E_i\), let \(O_i\) be the point at infinity and put
+\[
+ P_i=(0,-h_i-1),\qquad f_i=Y+h_iX+h_i+1.
+\]
+The line \(f_i=0\) meets the cubic only at \(P_i\), with
+intersection multiplicity three, because substitution leaves
+\(X^3=0\). Also \(f_i\) has a pole of order three at \(O_i\).
+Consequently
+\begin{equation}\label{eq:divisor}
+ \divisor(f_i)=3(P_i)-3(O_i).
+\end{equation}
+Since \(h_i+1\ne0\), the point \(P_i\ne O_i\) has order exactly three.
+
+Define \(D_i=\pi_i^*([P_i-O_i])\in J(\Q)[3]\).
+Push--pull for finite morphisms of curves gives
+\[
+ \pi_{i*}\pi_i^*=[\deg\pi_i]=[8]
+ \quad\hbox{on }E_i=\Jac(E_i).
+\]
+It follows that \(D_i\ne0\). By \eqref{eq:characters}, the action
+of \(G\) on \(D_i\) is the corresponding nontrivial character
+\(\chi_i:G\to\{\pm1\}\).
+For clarity, if \(\sum_i e_iD_i=0\) with \(e_i\in\F_3\), apply
+\[
+ \frac14\sum_{g\in G}\chi_j(g)g^*
+\]
+on \(J[3]\). Character orthogonality yields \(e_jD_j=0\).
+Thus each \(e_j=0\), and the three classes are independent.
+
+Finally the canonical principal polarization gives a nondegenerate
+Galois-equivariant alternating pairing
+\[
+ e_3:J[3]\times J[3]\longrightarrow\mu_3.
+\]
+On rational points its value lies in \(\mu_3(\Q)=\{1\}\).
+Hence \(J(\Q)[3]\) is an isotropic subspace of the six-dimensional
+symplectic \(\F_3\)-space \(J[3](\overline\Q)\), so its dimension
+is at most three. This proves the torsion assertion of
+Theorem~\ref{thm:main}.
+
+The pulled-back functions \(f_i\circ\pi_i\) make the classes explicit
+as cube-divisor functions by \eqref{eq:divisor}.
+The proof uses their divisors on the curve and requires no
+specialization to quadratic number fields.
+
+\section{Dual isogenies and descent on every quadratic twist}
+
+We first finish the isogeny assertion in Theorem~\ref{thm:main}.
+If \(i\ne j\), choose \(g\in G\) with
+\(\chi_i(g)=-\chi_j(g)\). Its action \(g^*\) on \(J\) is an
+involution. Equations \eqref{eq:characters} give
+\[
+ g^*\pi_j^*=\chi_j(g)\pi_j^*,\qquad
+ \pi_{i*}g^*=\chi_i(g)\pi_{i*}.
+\]
+Therefore \(\pi_{i*}\pi_j^*=-\pi_{i*}\pi_j^*\).
+The group of homomorphisms of abelian varieties has no integer
+torsion: the image of a homomorphism killed by a nonzero integer
+is connected and contained in a finite group scheme, and in
+characteristic zero must be zero. Thus all cross terms vanish.
+The diagonal terms are \([8]\), proving \(\Psi\Phi=[8]_A\).
+
+It follows that \(\ker\Phi\subset A[8]\) is finite. Since \(A\)
+and \(J\) both have dimension three, \(\Phi\) is an isogeny.
+Now \((\Phi\Psi-[8]_J)\Phi=0\), and surjectivity of \(\Phi\)
+gives \(\Phi\Psi=[8]_J\). Pullback and pushforward are dual
+under the canonical principal polarizations of curve Jacobians.
+Hence \(\deg\Phi=\deg\Psi\), and
+\[
+ (\deg\Phi)^2=\deg[8]_A=8^6
+\]
+gives \(\deg\Phi=8^3=2^9\), as claimed.
+
+\begin{proof}[Proof of Theorem~\ref{thm:descent}]
+The homomorphisms \(\Phi\) and \(\Psi\) are defined over \(\Q\)
+and commute with \([-1]\). They therefore descend on every
+quadratic twist to maps \(\Phi^d:A^d\to J^d\) and
+\(\Psi^d:J^d\to A^d\) with the same composites \([8]\).
+Here \(A^d=E_1^d\times E_2^d\times E_3^d\).
+
+Fix \(m=3^n\), and choose \(a\in\Z\) with \(8a\equiv1\pmod m\).
+On \(m\)-torsion, \(\Phi^d\) and \(a\Psi^d\) are inverse
+Galois-module maps. They induce inverse maps on global and
+local first cohomology of these torsion modules.
+For each completion \(k=\Q_v\), they also give inverse maps
+\[
+ A^d(k)/mA^d(k)\ \longleftrightarrow\ J^d(k)/mJ^d(k).
+\]
+Indeed the composites are multiplication by \(8a\), which is the
+identity modulo \(m\). Naturality in the Kummer exact sequence
+\[
+ 0\longrightarrow B[m]\longrightarrow B
+ \xrightarrow{[m]}B\longrightarrow0
+\]
+identifies the images of these quotients in \(H^1(k,B[m])\).
+This argument applies at every place, including three and the real
+place. Defining the Selmer group as the global cohomology classes
+lying in all these local Kummer images proves the first isomorphism.
+Cohomology and the Kummer conditions for a finite product are the
+direct sums of those for its factors.
+
+For the second assertion use
+\[
+ \Sha(B/\Q)=\ker\left(H^1(\Q,B)\longrightarrow
+                              \prod_v H^1(\Q_v,B)\right).
+\]
+Functoriality gives maps on these kernels, with composites \([8]\).
+On the subgroups killed by \(3^n\), multiplication by \(a\)
+again gives inverse maps. On the union of these subgroups,
+multiplication by eight is an automorphism: on every element
+of finite three-power order its inverse is the unique inverse
+modulo that order. Thus the full three-primary groups are also
+isomorphic. The argument uses no finiteness assumption.
+\end{proof}
+
+\paragraph{Verification.}
+All defining identities and maps are given above over \(\Q\).
+An accompanying SageMath checker verifies squarefreeness modulo seven,
+the conic and quotient identities, the degrees of the three maps,
+the orders of the marked elliptic points, and the sign characters.
+These exact algebraic checks support the displayed construction.
+The independence, Weil-pairing bound, duality and compatibility with
+all local Kummer conditions are the written arguments above;
+the checker does not compute Selmer or Tate--Shafarevich groups.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+\bibitem{HLP}
+E.~W.~Howe, F.~Lepr\'evost and B.~Poonen,
+\emph{Large torsion subgroups of split Jacobians of curves of genus two or three},
+Forum Math. \textbf{12} (2000), 315--364.
+\href{https://arxiv.org/abs/math/9809210}{arXiv:math/9809210}.
+
+\bibitem{LYW}
+A.~Levin, S.~Yan and L.~Wiljanen,
+\emph{Quadratic fields with a class group of large \(3\)-rank},
+\href{https://arxiv.org/abs/1910.12276v1}{arXiv:1910.12276v1} (2019).
+
+\bibitem{MR}
+J.~S.~M\"uller and B.~Reitsma,
+\emph{Computing torsion subgroups of Jacobians of hyperelliptic curves of genus \(3\)},
+\href{https://arxiv.org/abs/2211.03372v4}{arXiv:2211.03372v4} (2023).
+\end{thebibliography}
+\end{document}
