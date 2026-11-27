@@ -3,7 +3,7 @@
 The [global octic proof](GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md) excludes
 degree eight by classifying the singular generic order directly and
 using its actual polynomial generators through degeneration. The
-[current global bound](GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md) is eighteen
+[current global bound](GLOBAL_CONDUCTOR_TWENTY_EXCLUSION.md) is twenty-two
 for an actual noninvertible complex plane Keller map in a source frame
 with \(P\) monic of positive \(x\)-degree. On arbitrary specialized lines
 the lower bounds are two for conductor degree and one for normalization

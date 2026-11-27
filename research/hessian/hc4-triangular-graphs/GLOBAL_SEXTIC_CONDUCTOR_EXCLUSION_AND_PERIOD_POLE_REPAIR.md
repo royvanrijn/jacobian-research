@@ -444,5 +444,5 @@ No formal verification, independent whole-proof replay or external
 human review is claimed.
 
 This sextic exclusion gave even global coordinate-conductor degree at
-least eight. The [current lower bound](GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md)
-is eighteen. Automatic trace/codifferent integrality, HC4 and JC2 remain open.
+least eight. The [current lower bound](GLOBAL_CONDUCTOR_TWENTY_EXCLUSION.md)
+is twenty-two. Automatic trace/codifferent integrality, HC4 and JC2 remain open.

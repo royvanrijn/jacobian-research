@@ -626,8 +626,8 @@ are unbounded.
 
 The norm classification concerns identities in \(K\). Individual
 integer specializations may attain additional norm values. In particular,
-the simultaneous translation through 9 and the prescribed-norm problem
-for arbitrary \(N\) remain open here.
+infinitely many extensions within this Pell family through position 9
+and the prescribed-norm problem for arbitrary \(N\) remain open.
 
 ## 13. Power substitutions also exclude position 9
 
@@ -687,7 +687,228 @@ order. This proves the obstruction for every \(b,h\).
 Individual integer points on these covers may still represent position
 \(9\) as a sum of two squares.
 
-## 14. Review and computation scope
+## 14. Finiteness on curves above the Pell conic
+
+**Proposition Erdos675PellCurveFiniteness.** Let \(C\) be a smooth
+projective geometrically integral curve over \(\mathbb Q\) with
+rational functions \(z,k\) inducing a nonconstant map to the projective
+completion of \(z^2-3k^2=-2\). If \((2k^2-1)^2+8\) is a sum of two
+squares in \(\mathbb Q(C)\), then only finitely many \(P\in C(\mathbb Q)\)
+have both \(z(P)\) and \(k(P)\) in \(\mathbb Z\).
+
+For the proof, let \(B\) be the affine Pell conic and let \(C^\circ\)
+be its preimage under the induced morphism of smooth projective
+curves. The morphism is finite, so \(C^\circ\) is affine and its
+coordinate ring is finite over \(\mathbb Q[B]\). Choose finitely
+many algebra generators of \(\mathbb Q[C^\circ]\), and for each
+choose a monic equation over \(\mathbb Q[B]\). Invert the finitely
+many primes in the coefficients of these equations. At every
+rational point with \(z,k\) integral, the generator values are
+then integral over the resulting localization of \(\mathbb Z\).
+They belong to that localization because it is integrally closed
+in \(\mathbb Q\). Thus these points form an \(S\)-integral set on
+\(C^\circ\) for one fixed finite set \(S\).
+
+Suppose this set is infinite. Siegel's theorem gives genus zero
+and at most two geometric points of \(C\setminus C^\circ\).
+We use the number-field \(S\)-integral statement, including the
+positive-genus case with at most two points at infinity.
+[Corvaja–Zannier, Theorem 1 and the following paragraph, p. 268](sources/corvaja-zannier-integral-curves-2002.pdf)
+
+Put \(L=\mathbb Q(\sqrt3)\) and \(v=z+k\sqrt3\). Over \(L\) the
+completion of \(B\) is a projective line with coordinate \(v\),
+and its two missing points are the zero and pole of \(v\).
+Each has a preimage, so \(C\setminus C^\circ\) has exactly two
+geometric points. They are \(L\)-rational since the fiber over
+each of the two \(L\)-points has a single geometric point and
+the characteristic is zero. They are exchanged by conjugation
+over \(\mathbb Q\). Pick a rational \(P_0\in C^\circ\) with
+\(z(P_0),k(P_0)\) integral. A genus-zero projective curve
+with this point is a projective line over \(\mathbb Q\).
+Choose a coordinate \(w\) over \(L\) with its zero and pole
+above the zero and pole of \(v\), normalized by \(w(P_0)=1\).
+For the nontrivial conjugation \(\sigma\) of \(L/\mathbb Q\),
+\(w^\sigma w\) is constant by its divisor and equals \(1\)
+at \(P_0\). The divisor of \(v\) on \(C\) now gives
+\[
+ v=v(P_0)w^h\qquad(h\ge1).
+\]
+Consequently \(X=(w+w^{-1})/2\) and
+\(Y=(w-w^{-1})/(2\sqrt3)\) identify \(\mathbb Q(C)\) with the
+function field of \(X^2-3Y^2=1\). Indeed both are fixed by
+\(\sigma\), and after extending constants to \(L\) they recover
+the coordinate \(w=X+Y\sqrt3\).
+
+For an integer point of the Pell conic, its value \(v\) is
+\(\pm(1+\sqrt3)(2+\sqrt3)^b\) for some \(b\in\mathbb Z\).
+To check this, change its sign and multiply it by a power
+of \(2+\sqrt3\) to bring it into
+\([1+\sqrt3,5+3\sqrt3)\). These operations preserve integrality
+of the coefficients and the norm \(-2\). In this interval,
+\(k=(v+2/v)/(2\sqrt3)\) is in \([1,3)\). The integer \(k=2\)
+would require \(z^2=10\), so \(k=1\) and the interval selects
+\(v=1+\sqrt3\).
+We can remove the sign of \(v(P_0)\) by replacing \((z,k)\)
+by \((-z,-k)\), leaving \((2k^2-1)^2+8\) unchanged.
+The resulting map is exactly a power cover from
+Erdos675PellPowerCoverObstruction. Its norm obstruction
+contradicts the hypothesis, proving finiteness.
+
+In particular, let \(V\) be the surface given by
+\[
+ z^2-3k^2=-2,\qquad x^2+y^2=(2k^2-1)^2+8 .
+\]
+Every proper algebraic subset of \(V\) contains only finitely
+many of its integer points. The surface is geometrically integral:
+over \(\overline{\mathbb Q}\) its second equation becomes
+\((x+iy)(x-iy)=(2k^2-1)^2+8\) over the integral base, with
+nonzero right-hand side. On a curve dominating the base the
+normalization and the proposition give finitely many integer
+points, after discarding the finitely many points where the
+normalization is not an isomorphism. On a vertical curve the
+base coordinates are fixed, and the real circle bounds the
+integer coordinates \(x,y\). Geometric curve components that
+are not defined over \(\mathbb Q\) can contribute rational
+points only in their finite intersections with distinct
+Galois conjugates. Thus any infinite set of integer Pell
+specializations with position \(9\) represented would give
+Zariski-dense integer points on this surface. The finiteness
+assertion on curves leaves the existence of such an infinite
+set open.
+
+## 15. Norm identities on a fixed parameter curve
+
+**Proposition Erdos675FixedCurveNormOffsets.** Let \(C/\mathbb Q\)
+be a smooth projective geometrically integral curve and let
+\(t\in F=\mathbb Q(C)\) be nonconstant. For integers \(1\le a\le A\),
+at most \(O_{C,t}(\sqrt A\log(2A))\) of the functions \(t+a\)
+are Gaussian norms from \(F(i)\). Fix \(b\ge1\). If \(t+b\)
+is nonsquare in \(F(i)\), then at most
+\(O_{C,t,b}(\sqrt J\log(2J))\) of the integers \(0\le j\le J\)
+give a Gaussian norm \(t+b+j^2\). The number \(r\) of distinct
+\(b\)'s for which the entire family \(t+b+j^2\), \(j\ge0\),
+consists of norms satisfies \(2^r\mid\deg(t)\). If \(r\ge1\),
+the genus of \(C\) is at least \(1+2^{r-2}(r-3)\).
+In particular a genus-zero curve certifies at most two
+complete families of this form.
+
+Put \(K=\mathbb Q(i)\). For a rational value \(u\), suppose
+the fiber of \(t=-u\) on \(C_K\) is the spectrum of a field,
+and the morphism is unramified there. Then \(t+u\) has order
+one at that unique closed point. Since the fiber descends
+to \(\mathbb Q\), complex conjugation fixes this point and
+preserves its valuation. Every \(g\bar g\) with \(g\in F(i)\)
+has even order there.
+
+We use quantitative Hilbert irreducibility over \(\mathbb Q\)
+for monic irreducible polynomials with rational-function
+coefficients. At most \(O(\sqrt A\log(2A))\) integers up to \(A\)
+can fail to preserve the full arithmetic Galois group,
+apart from the finite set of poles and inseparable fibers.
+Regularity of the splitting field is unnecessary.
+[Zywina, Theorem 1.2, p. 2, attributing the bound to Cohen and Serre](sources/zywina-quantitative-hit-2010.pdf)
+
+Apply this with a primitive element of \(K(C)/\mathbb Q(t)\).
+Its minimal polynomial has degree \(2\deg(t)\) and is
+irreducible over \(\mathbb Q(t)\). On a nonempty open part
+of the base, the algebra of the finite cover is presented
+by this polynomial. Indeed the polynomial algebra and the
+finite coordinate algebra have the same generic fiber and
+become isomorphic after localizing the base. At an integral
+specialization that retains irreducibility, the specialized
+algebra is a field over \(\mathbb Q\) containing \(K\).
+The cover viewed over \(K\) therefore also has a single
+closed point in that fiber. Applying this to \(t=-a\), and
+discarding the finitely many ramified fibers, proves the
+first bound.
+
+For the second bound use the base change \(t=-b-T^2\), with
+\(T\) a new rational parameter. Its generic algebra over \(K\)
+is a field if \(t+b\) is nonsquare in \(F(i)\). In fact its
+function field is \(K(C)(\sqrt{-(t+b)})\), and \(-1\) is
+square in \(K\). This field has degree \(\deg(t)\) over \(K(T)\)
+and degree \(2\deg(t)\) over \(\mathbb Q(T)\).
+The same primitive-element argument at \(T=j\) proves the
+bound for \(t+b+j^2\). The finite exceptions also cover the
+preimages of all branch values of the original map \(t\).
+
+If all the members of one of these families are norms, the
+bound forces \(t+b\) to be square in \(F(i)\). When \(t\)
+takes a positive value at a rational point of \(C\), this is
+equivalent to \(t+b\) being square in \(F\). Indeed a square
+in \(F(i)\) that belongs to \(F\) is a square or the negative
+of a square in \(F\). A positive rational value of \(t+b\)
+excludes the negative case, since a putative square root
+cannot have a pole there. Conversely, if \(t+b=s^2\) with
+\(s\in F\), then \(t+b+j^2=s^2+j^2\).
+
+For distinct \(b_1,\ldots,b_r\), the classes of \(t+b_\ell\)
+in \(K(t)^\times/K(t)^{\times2}\) are independent, by their
+orders at the respective points \(t=-b_\ell\). The same
+holds after extending constants to \(\overline{\mathbb Q}\).
+Adjoining all their square roots gives a degree \(2^r\)
+subextension of \(K(C)/K(t)\) when all the relevant families
+are certified. Over \(\overline{\mathbb Q}\) this cover has
+ramification index two over each \(t=-b_\ell\) and over
+infinity, and is unramified elsewhere. At infinity the
+ratios \((t+b_\ell)/(t+b_1)\) are local squares, so the
+inertia still has order two. Riemann–Hurwitz gives its
+genus \(1+2^{r-2}(r-3)\), and a nonconstant map from
+\(C_{\overline{\mathbb Q}}\) to this cover proves the
+stated genus bound.
+
+One consequence concerns a fixed finite collection of
+curves, with functions \(t_1,\ldots,t_s\) of degrees
+\(d_1,\ldots,d_s\). Among the first
+\(1+\sum_\ell\lfloor\log_2 d_\ell\rfloor\) positive squares
+there is a \(b\) for which every \(t_\ell+b\) is nonsquare
+in the respective field after adjoining \(i\). This uses
+the degree argument directly for every \(b\) whose function
+has a square root. For this \(b\), the norm identities on
+the collection miss all but \(O(\sqrt J\log(2J))\) values
+of \(j\le J\), although every \(b+j^2\) belongs to \(E\).
+Thus a fixed finite list of nonconstant curve identities
+cannot give the positive positions for arbitrary initial
+blocks. The curves can vary with the block length, and
+individual specializations can represent offsets outside
+the corresponding function-field norm sets.
+
+**Corollary Erdos675FixedParameterNormOffsets.** The two
+counting bounds and the finite-collection obstruction hold
+for any geometrically integral parameter variety \(X/\mathbb Q\)
+with a nonconstant rational function \(t\). The degree and
+genus bounds use the curve whose function field is the
+relative algebraic closure of \(\mathbb Q(t)\) in
+\(\mathbb Q(X)\).
+
+To see this, let \(L\) be that relative algebraic closure.
+It is finite over \(\mathbb Q(t)\), and
+\(\mathbb Q(X)/L\) is regular in characteristic zero.
+Let \(C\) be the smooth projective model of \(L\).
+The dominant rational map \(X\to C\) is a morphism on
+a nonempty smooth open of \(X\). Its generic fiber is
+geometrically integral by regularity. After restricting
+to a nonempty open of \(C\) and its preimage, all fibers
+are geometrically integral. We use finite type over a
+noetherian integral base and shrink to the open where
+the morphism is smooth and surjective.
+[Stacks Project, Lemmas 37.27.5 and 37.26.4](https://stacks.math.columbia.edu/tag/0559)
+[Geometric reducedness](https://stacks.math.columbia.edu/tag/0578)
+
+For the specializations selected in the proof above, the
+fiber on \(C_K\) is an unramified single closed point away
+from the finitely many removed values. Its pullback to
+the chosen open of \(X_K\) is an integral divisor of
+multiplicity one. This follows from flatness and geometric
+integrality of the fiber, with \(t+u\) a uniformizer at the
+base point. The divisor is fixed by complex conjugation,
+so it gives the same odd-order obstruction to a norm
+in \(K(X)\). Finally \(K(C)\) is relatively algebraically
+closed in \(K(X)\) by regularity after extending constants.
+Thus any square root of \(t+b\) in \(K(X)\) already lies in
+\(K(C)\), as required in the parabolic and degree arguments.
+
+## 16. Review and computation scope
 
 The [exact checker](verify_erdos675_reduction.py) independently enumerates
 two-square representations in a bounded range, checks locked valuations

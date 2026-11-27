@@ -89,6 +89,9 @@ exclude \((10,6,3)\). The
 excludes \((12,8,6,7)\), and the
 [filtered parameter comparisons](CONDUCTOR_EIGHTEEN_FILTERED_PARAMETER_EXCLUSIONS.md)
 exclude \((14,4,7),(15,6,4),(8,6,7)\).
-Consequently only \((10,3),(7,4),(10,4,11),(9,6,7)\)
-remain at degree eighteen. Higher conductors and automatic
-codifferent landing remain open.
+These exclusions reduce degree eighteen to
+\((10,3),(7,4),(10,4,11),(9,6,7)\). The
+[degree-eighteen theorem](GLOBAL_CONDUCTOR_EIGHTEEN_EXCLUSION.md)
+excludes these four embeddings and gives the lower bound twenty. The
+[degree-twenty theorem](GLOBAL_CONDUCTOR_TWENTY_EXCLUSION.md) gives the
+current global bound twenty-two.

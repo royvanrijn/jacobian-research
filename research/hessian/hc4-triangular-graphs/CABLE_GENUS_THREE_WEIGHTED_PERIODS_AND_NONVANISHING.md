@@ -234,7 +234,7 @@ It neither turns (H,X) into a target automorphism nor proves a
 Jacobian-preserving reduction to the quartic branch. The later
 [global sextic exclusion](GLOBAL_SEXTIC_CONDUCTOR_EXCLUSION_AND_PERIOD_POLE_REPAIR.md)
 closed global conductor degree six, including its cable branch. The
-[current global bound](GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md) is eighteen.
+[current global bound](GLOBAL_CONDUCTOR_TWENTY_EXCLUSION.md) is twenty-two.
 Individual special fibres may still have degree two, four or six.
 Higher conductors and automatic target/trace integrality remain open.
 Independent replay, formal verification and external review are

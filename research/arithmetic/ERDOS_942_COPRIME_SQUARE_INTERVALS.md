@@ -221,7 +221,7 @@ coordinates, since the two linear parts are independent over
 \(\mathbb Q\). Its probability of taking the value zero is at
 most \(1/X\). Otherwise its logarithmic size is \(O(m^2\log m)\),
 so it has \(O(m^2)\) prime divisors larger than \(X\). For each
-such prime at which \(u,u'\) are not both zero, at most one
+such prime at which at least one of \(u,u'\) is a unit, at most one
 choice of \(h_\ell\) gives the collision. Summing over
 coordinates gives \(O(m^3/X)\) per pair.
 
@@ -247,8 +247,11 @@ in one such interval \((q,q+1)\). The threshold ensured \(q\ge m\),
 and the coefficient and argument bounds give
 \(\log q=O(n\log B+\log H)=O(m^2\log m)\). This proves the
 claimed lower bound since \(x/\log x\) is increasing for \(x>e\).
+Taking a sufficiently large constant multiple of a prescribed
+multiplicity parameter gives the hypotheses and conclusion of the
+cubic logarithmic height theorem below.
 
-## A larger lower bound from choosing the cancellation coefficients modulo primes
+## Earlier cubic logarithmic height bound
 
 **Theorem (Coprime occupancy with exponent one third).** For each integer
 \(m\ge2\), there is an interval \((q^2,(q+1)^2)\) containing at least

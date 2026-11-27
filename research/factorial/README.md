@@ -1014,8 +1014,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Universal two-sevenths L8 native cusp | Internal result | proved | [Source](image-rigidity/BINARY_QUADRATIC_L8_SEVENTH_POWER_CANCELLATION_AND_SHORT_GRID_PROOF.md) |
 | Actual-support windows for binary phases with prime-power axis terms and constant shifts | Internal result | proved | [Source](image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md) |
 | Trinomial three-windows with a sufficiently distant third exponent | Internal result | proved | [Source](image-rigidity/SFC_UNIVARIATE_TRINOMIALS.md) |
+| Quadratic triangle moments in prime-power windows | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) |
 
-**Computed obligations:** 59 unresolved; 36 resolved within their exact scope.
+**Computed obligations:** 60 unresolved; 36 resolved within their exact scope.
 
 
 Scope limits:
@@ -1141,6 +1142,7 @@ Scope limits:
 - Erdős #404: at boundaries N=p^r the middle third of the missed valuations requires signed factorial corrections of span Omega_p(r/log r) and more than log r/(10 log log r) terms. This bounds standalone repairs, including changes between two candidate sums, and leaves the infinite path question open.
 - At the first wild three-adic radius, the next linked degree-eight moment identity forces both adjacent ternary digits to vanish. This closes the XY foreign column. The X^4 or Y^4 column is also excluded for all prime-power axes by a uniform precision-four lift. At the next radius the low even-digit foreign branch obeys the three-start pole constraints; a unit foreign coefficient with two surviving poles is excluded at both radii and at all radii on prime-to-three grids.
 - All three second-radius low foreign candidate classes now have explicit simultaneous residue solutions in the cubic-axis XY model, for every block quotient. This isolates the need for higher-precision actual-moment equations at that radius.
+- The D=1 monomial triangle has an all-order simplex recurrence. Four moments suffice in every window and three suffice at each odd-prime-power window start; the remaining three-moment windows stay explicit.
 
 Tracked obligations (computed states):
 
@@ -1183,5 +1185,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Construct increasing indices starting at 1 such that the 5-adic valuations of their partial factorial sums tend to infinity. The compactness implication from f(1,5)=infinity is proved in the canonical note, but that premise is open.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-INFINITE-SEQUENCE
 - **mathematical / open:** [At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 size four remains only for the low-adjacent-digit nonsingleton profile (10) with the exact restrictions (11), (16), (17), and (19). Foreign XY and the axis quartic are fully excluded at this radius. At L>=9 the remaining sizes run from 3 through L+1 when c=0 or through L when c!=0. On the low even-digit foreign four-term branch the L=9 candidates satisfy (25) and (26).](image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md) — GAP-FACTORIAL-BINARY-THREE-ADIC-WILD-CANCELED-ROW
 - **mathematical / open:** [For every characteristic-zero field, 0<=a<b<c, ABC!=0 and n>=1, at least one of the factorial moments of A*x^a+B*x^b+C*x^c at orders n,n+1,n+2 is nonzero.](image-rigidity/SFC_UNIVARIATE_TRINOMIALS.md) — GAP-SFC-ARBITRARY-UNIVARIATE-TRINOMIALS
+- **mathematical / open:** [For every n>=1 with 2n+1 not a prime power, rule out P_n=P_(n+1)=P_(n+2)=0 for abc Delta!=0 with distinct complex coefficients and all a+b+c-2t nonzero. Every common zero must obey the exact two-power relation (3) at the same point.](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) — GAP-SFC-D1-TRIANGLE-NONPRIME-POWER-WINDOWS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

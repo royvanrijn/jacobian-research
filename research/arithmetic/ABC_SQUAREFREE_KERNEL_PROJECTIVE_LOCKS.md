@@ -1678,12 +1678,11 @@ of \(k,a\) and the signature. The same bound holds with
 \(\exp d_{\rm fld}(P)\le T\), including proper-degree fibres.
 
 Each choice of three forms in \(F\) gives a primitive positive
-additive triple by one of
+additive triple. With \(L_\pm=u\pm v\), the relations are
 \[
- v+(u-v)=u,\quad u+v=u+v,\quad
- 2v+(u-v)=u+v,\quad (u-v)+(u+v)=2u.
+ v+L_-=u,\qquad u+v=L_+,\qquad
+ 2v+L_-=L_+,\qquad L_-+L_+=2u.
 \]
-In the second equality the right side is the single form \(u+v\).
 The two doubled relations are primitive, since \(u-v\)
 and \(u+v\) are odd and the original forms are pairwise coprime.
 For each relation its ordered triple determines \(u,v\), and
@@ -1737,20 +1736,130 @@ Taking \((5,5,5)\) and \(S=\{2,5\}\) in the triple argument
 gives \(O(T^{3/4}(1+\log T)^A)\) pairs of all heights with
 \(R(u,v)\le T\), since \(Q_0\le R(u,v)\) in that application.
 
-Two selected forms alone cannot supply a height-free count by
-their defects. For any choice of two forms and any fixed positive
-integer \(r\), their ratio maps \(0<t<1\) bijectively onto an open
-interval in \(\mathbb R_{>0}\). Choose the ratio \(c\) of one admissible pair and set the
-ratio to \(cz^r\) with rational
-\(z\equiv1\bmod 2^n\) in \(\mathbb Q_2\) for sufficiently large
-\(n\). Infinitely many such rational \(z\) lie in the real
-interval because the rationals in that 2-adic class are real
-dense. Outside \(2\) and the primes with nonzero valuation on \(c\), coprimality of the
-two forms forces each valuation to be a multiple of \(r\).
-The primitive pairs are distinct, so the defect support on
-the two forms is contained in one fixed finite set.
-
 The count is uniform over heights for a fixed discriminant
 budget. In (K13) the relevant budget grows as a power of the
 height. The pointwise lower bound must still control how large
 \(u\) can be within each ramification class.
+
+### Two-form defect data allow infinitely many pairs
+
+For any two distinct forms and any fixed positive integer \(r\),
+their ratio is a fractional linear function of \(t\) and maps
+\(0<t<1\) bijectively onto an open positive real interval. Choose
+the ratio \(c\) of one admissible pair. Set the ratio to \(cz^r\)
+with \(z\equiv1\bmod 2^n\) in \(\mathbb Q_2\). Take \(n\) large
+enough that the inverse image keeps \(v_2(t)\ne0\), the condition
+for the numerator and denominator in lowest terms to have
+opposite parity. In the real topology the condition on the
+ratio permits an interval about \(z=1\). For arbitrarily large
+odd denominators \(B\), rational numbers \(A/B\) with
+\(A\equiv B\bmod 2^n\) have mesh \(2^n/B\), so infinitely many
+distinct positive \(z\) meet both conditions. Outside \(2\) and
+the support of \(c\), coprimality of the two forms forces each
+valuation to be a multiple of \(r\). This gives infinitely many
+distinct admissible pairs with the defects on the two selected
+forms contained in one fixed finite set.
+
+## Split primes obstruct integral charts for the cyclic fibres
+
+An effective integral-point bound needs integrality of its chosen
+coordinate. For example, Bilu's quantitative Siegel theorem
+requires \(f(P)\) to be an \(S\)-integer and assumes the cover
+given by \(f\) is Galois and the genus is positive. The map \(t\)
+on \(C_k\) meets the cover and genus hypotheses. The places over
+a fixed set and the primes of the specialization discriminant
+do not in general supply its integrality hypothesis, even if one
+can choose among finitely many coordinates.
+[Bilu, §1.1, Theorem 1.1](https://archive.mpim-bonn.mpg.de/id/eprint/376/1/preprint_1995_105.pdf).
+
+Fix \(k\ge2\), a finite rational prime set \(S\), nonconstant
+\(f_1,\ldots,f_m\in K(C_k)\) with \(m\ge1\), and one geometric
+pole \(Q_i\) of each \(f_i\). Let \(e_i\in\{1,k\}\) be the
+ramification index of \(t\) at \(Q_i\), \(d_i>0\) the pole order
+of \(f_i\), and \(A=\sum_{i=1}^m(e_i+1)\).
+Fix an integer \(H\ge1\) and a nonempty open interval
+\(I\subset(0,1)\). For every sufficiently large \(X\) there is
+an admissible pair with \(t=v/u\in I\), \(u\ll_{I,k,S,f_i,Q_i,H}
+X^{HA}\), and full specialization degree \(k\) over \(K\).
+For every \(i\) there are \(H\) distinct primes \(p\in[X,2X]\)
+outside \(S\) that split completely in \(L=K(P)\) and at
+which \(f_i(P)\) has valuation \(-d_i\) at some place of \(L\).
+This holds for every lift \(P\) of \(t\), allowing the place
+over \(p\) to depend on \(P\).
+
+In particular the product of these omitted denominator primes
+for each chart is \(\gg u^{1/A}\). Even if one adds any \(H-1\)
+extra rational primes to \(S\) and the ramified-prime set,
+each chart still has an omitted denominator prime
+\(\gg u^{1/(HA)}\). The heights in this conclusion are
+unbounded.
+
+### Local splitting and global height
+
+Let \(E/\mathbb Q\) be a fixed finite Galois field containing
+\(K\) and the fields of the chosen poles. Chebotarev for the
+identity class and the prime number theorem supply the \(Hm\)
+distinct completely split primes in \([X,2X]\) for all
+sufficiently large \(X\). Assign \(H\) to each \(Q_i\).
+At each such prime, choose an embedding \(E\hookrightarrow
+\mathbb Q_p\), so that \(Q_i\) has local coordinates over
+\(\mathbb Q_p\). Omit a fixed finite set of bad primes in
+the local calculations.
+[Chebotarev, natural-density form](sources/lenstra-chebotarev-density-notes.pdf).
+
+Write \(t_i=t(Q_i)\). If \(Q_i\) is unramified, \(t_i\) is
+finite and \(y_i=y(Q_i)\) is nonzero. Choose the congruence
+\(t-t_i\equiv p\bmod p^2\) in \(\mathbb Q_p\). Hensel's lemma
+gives the root of \(y^k=q(t)\) near \(y_i\). Here \(t-t_i\)
+is a local uniformizer and has valuation one at the chosen
+point. If \(Q_i\) lies over a branch point, take \(x=t-t_i\)
+or \(x=1/t\) at infinity, and take \(w=y\) at a zero of \(q\)
+or \(w=1/y\) at a pole of \(q\). The equation is \(w^k=x U(x)\)
+with \(U(0)\ne0\) and \(U\) regular at zero. Impose
+\[
+ x\equiv U(0)^{-1}p^k\bmod p^{k+1}.
+\]
+This makes \(xU(x)/p^k\) congruent to one modulo \(p\).
+Hensel's lemma yields a point with \(v_p(w)=1\), and \(w\)
+is a local uniformizer at the pole of \(f_i\). In either case
+\(f_i\) times the uniformizer to the power \(d_i\) is a regular
+unit at \(Q_i\). After excluding finitely many reduction
+primes, it evaluates to a \(p\)-adic unit at the constructed
+point. Thus \(v_p(f_i)=-d_i\). The root constructed in
+\(\mathbb Q_p\), together with \(\mu_k\subset\mathbb Q_p\),
+splits the entire specialized polynomial there. Each local
+condition is one primitive projective congruence on \([v:u]\)
+modulo \(p^{e_i+1}\).
+
+Choose also an odd prime \(r\nmid k\), fixed independently
+of \(X\), and impose \(u\equiv1,\ v\equiv r\bmod r^2\).
+Then \(v_r(q(t))=1\). At any prime of \(K\) above \(r\) this
+is still valuation one, so \(Y^k-q(t)\) is Eisenstein and
+the specialization has full degree. Impose \(u\equiv2\),
+\(v\equiv1\bmod4\) for opposite parity. The Chinese remainder
+theorem combines all the primitive local conditions into a
+residue pair modulo \(M=4r^2\prod_p p^{e_{i(p)}+1}\).
+Choose a positive representative \(u\asymp_I M\) large enough
+that \(Iu\) has length greater than \(M\), and take the
+representative \(v\) in \(Iu\). Dividing by \(\gcd(u,v)\)
+preserves every local condition, since that gcd is prime to
+\(M\). This gives the asserted height bound.
+
+The field \(L\) is the splitting field over \(\mathbb Q\)
+of \(Y^k-q(t)\). Each chosen prime is completely split there.
+For each global lift and each chosen \(p\), irreducibility
+over \(K\) lets one embed the lift field into \(\mathbb Q_p\)
+over the chosen embedding of \(K\) by sending its \(y\) to
+the local root near \(Q_i\). The associated place gives the
+asserted negative valuation. The product and size conclusions
+follow from \(p\ge X\) and \(u\ll X^{HA}\). A fixed bound on
+\(u\) would give only finitely many \(t\) and lifts, with only
+finitely many denominator primes for all \(f_i\). Hence
+the constructed heights tend to infinity as \(X\) increases.
+
+A pointwise proof of (K13) using effective integral-point
+estimates would therefore need additional control of these
+split denominator primes, or an integrality construction that
+varies with the fibre. The construction places no smallness
+condition on the full discriminant and does not give
+counterexamples to (K13).

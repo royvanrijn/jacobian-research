@@ -4,7 +4,7 @@
 \((P,Q)\) be a complex polynomial plane Keller map in a source
 frame with \(P\) monic of positive longitudinal degree. Its
 generic coordinate order cannot have reduced characteristic
-sequence \((12,8,6,r)\) for \(r=3\) or \(7\). The successive
+sequence \((12,8,6,r)\) for \(r=3,7,9\). The successive
 approximate roots force two generator centroids to coincide.
 Centering the longitudinal coordinate at that point removes
 the constant term of the parameter Jacobian.
@@ -45,9 +45,9 @@ are scalar multiples of \(1,V,W,S\), and \(V\) has nonzero
 coefficient because it must cancel the highest term of \(S^2\).
 In the new coordinates of (1) the same expression for \(T\)
 therefore lies in the span of \(S_0^2,V,W,S_0,1\). Since
-\(\deg T\le7\), it follows by monicity that
+\(\deg T\le9\), it follows by monicity that
 \[
-                       V=S_0^2+O(u^8)
+                       V=S_0^2+O(u^9)
 \tag{2}
 \]
 at longitudinal infinity.
@@ -99,9 +99,9 @@ contributes negative powers. All comparisons hold with the
 extended derivation on the finite coefficient field.
 
 The pole semigroup is \(\langle3,8\rangle\) for \(r=3\)
-and \(\langle6,7,8\rangle\) for \(r=7\). Thus the evaluated
+and \(\langle6,8,r\rangle\) for \(r=7,9\). Thus the evaluated
 \(H(W,V)\) in (3), of degree at most four, belongs to the span
-of \(1,T\) for \(r=3\) and is constant for \(r=7\).
+of \(1,T\) for \(r=3\) and is constant for \(r=7,9\).
 Comparing degree three gives \(k'=0\). Comparing degree two
 eliminates the possible \(T\) coefficient. The constant term
 in (3) is now zero on the left and \(J\rho\ne0\) on the right.

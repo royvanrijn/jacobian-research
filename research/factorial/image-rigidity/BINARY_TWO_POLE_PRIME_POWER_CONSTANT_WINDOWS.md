@@ -1141,6 +1141,105 @@ Python 3.12 via
 The representative reductions above are independent of
 the computation and supply its all-start and all-axis scope.
 
+### Bounded digit windows at the first radius
+
+**Finite upper profiles at precision four.** For the
+remaining first-radius four-term families satisfying
+(10), (11), (17) and (19), the four normalized
+moment rows modulo \(I_4\) depend on \(H\bmod27\)
+and on finitely many realizable exponent profiles.
+This includes unbounded upper quotients
+\(\lfloor\alpha/Q_x\rfloor,\lfloor\beta/Q_y\rfloor\).
+For each axis it suffices to retain five digits
+immediately below it and seven immediately above,
+together with the axis height truncated at five.
+In addition the foreign-only factorial residues
+\(F_m\bmod81\) are needed for \(m\le5\), with only
+\(m=1,2\) needed at total digit count at least four.
+The profile reduction leaves the exact exclusion of
+the remaining first-radius rows open.
+
+Indeed the scalar bounds in the quartic calculation
+apply to all integral native coefficients with
+\(v(k)=1/3\). At precision \(I_4\) they give
+\(-27\le\ell\le8\) and \(H\bmod27\), so all axis
+counts are at most \(35\). The foreign-only factorial
+ratio for \(m\) insertions is
+\[
+ F_m=\frac{(m\alpha)!(m\beta)!}
+           {m!(\alpha!\beta!)^m}.
+\]
+With total foreign digit count \(\sigma\),
+Legendre's formula gives
+\(v_3(F_m)\ge(\sigma-1)v_3(m!)\) as in Section 9.
+Since \(v(u)=1/3\), counts \(m\ge6\) do not enter
+\(I_4\). At \(\sigma\ge4\) the same holds for
+\(3\le m\le5\). The pure axis factor uses only the
+height-zero flag, by the modulus \(81\) identity in
+the quartic calculation.
+
+For a cross-binomial factor on either axis write
+\(Q=3^q\), \(N=m\alpha\) for that axis and
+\(d=\lfloor N/Q\rfloor\). The other coordinate uses
+\(\beta\) in place of \(\alpha\). Separate its upper
+binomial by repeatedly splitting each factorial
+into its \(3\)-free part and its multiples of three.
+For \(g(n)=\prod_{1\le k\le n,\,3\nmid k}k\) this gives
+the exact factorization
+\[
+ \binom{Qx+N}{Qx}
+   =\binom{x+d}{x}
+      \prod_{j=0}^{q-1}
+         \frac{g(x3^{q-j}+N_j)}{g(x3^{q-j})g(N_j)},
+       \qquad N_j=\lfloor N/3^j\rfloor .
+\]
+The powers of three cancel in the \(q\) splitting
+steps since \(Qx\) is divisible by \(3^q\).
+Modulo \(81\) the relation \(g(n+81)=-g(n)\)
+makes each product factor one when \(q-j\ge4\).
+The remaining factors use \(N_j\bmod81\) for
+\(q-3\le j<q\), omitting negative \(j\).
+The upper binomial modulo \(81\) depends only on
+\(d\bmod3^7\). To prove this, in Vandermonde's
+identity for \(\binom{x+d+\delta}{x}\) take
+\(3^7\mid\delta\). For \(1\le a\le x\le35\),
+the factor \(\binom{\delta}{a}\) has valuation at
+least \(7-v_3(a)\ge4\).
+
+For \(m\le5\), multiplication by \(m\) in a word
+of zeros and ones has carry at most two, and a
+zero clears it. Along successive ones the carry
+stabilizes after at most two digits. Thus two
+preceding digits determine the incoming carry at
+any position. The five digits below the axis give
+the three positions \(q-3,q-2,q-1\) and the
+preceding digits needed by their incoming carries.
+The seven above it suffice for \(d\bmod3^7\),
+and include the upper digits needed by the unit
+product windows. Absent digits are zero.
+
+For the \(F_m\) data, the finite transfer with
+bounded carries described in the low-exponent
+profile lemma of Section 9 works across the axis
+boundary as well. Mark the boundary in each input
+digit word, keep the last five lower digits and
+the first seven upper digits, and retain the unit
+residue product and valuation sum for each required
+\(m\). The valuation sums can be saturated at
+\(4+v_3(m!)\), since reaching that bound on either
+axis already gives \(F_m=0\bmod81\).
+One tracks the total digit count up to four and its
+parity, and counts the runs modulo three, keeping
+the previous digit across the boundary. The last
+lower digit and first two upper digits enforce
+(10) and (19). These checks also enforce (17)
+using the run count. All states are finite, every
+allowed word has a path, and every accepting path
+gives a pair of words. The four rows at \(I_4\)
+can thus be tested through an exact finite
+reachability problem followed by the linked
+moment calculation.
+
 ## 9. Low foreign exponents at larger critical radii
 
 Suppose \(p=3,\ L=3^h\ge9\), and the foreign term of a
@@ -1979,6 +2078,131 @@ The argument uses exact congruences only through
 \(I_{43/9}\), so higher foreign insertions cannot
 restore a zero block.
 
+### The second-radius lift for two ternary ones
+
+**Two-digit second-radius exclusion.** In the hypotheses of
+Section 9, the four-window at \(L=9\) holds when the
+two foreign exponents have altogether exactly two
+ternary ones. This includes shifted products
+\(X^{3^r}Y^{3^s}\) and axis terms \(X^{3^r+3^s}\)
+with \(r<s\), including \(X^4\).
+**Second-radius low even-digit exclusion.** Together
+with the high digit-count exclusion, this gives the
+four-window for the entire sector of Section 9 at
+\(L=9\) with \(v(u)>0\).
+
+Use the three starts (25) and the parameters (27).
+For a target precision \(I_W\), let
+\(w_m=4m/9+v_3(m!)\). The term with \(m\) foreign
+insertions has value at least \(w_m\). Here the
+largest \(W\) used is \(38/9\), so \(m\ge6\)
+is omitted. For \(w_m<W\) the required integer
+accuracy is \(h_m=\lceil W-w_m\rceil\).
+At that accuracy the insertion data consist of
+\(F_m/m!\) modulo \(3^{h_m}\) and the two
+cross-binomial polynomials from the finite native
+profile calculation, taken modulo \(3^{h_m}\).
+Legendre's bound in that calculation gives
+\(v_3(F_m/m!)\ge0\). Multiplying the stored residue
+by \(m!\) and \(u^m\) gives the required precision
+for the moment. The pure axis quotient uses at
+most modulus \(243\), at which it depends only on
+whether the axis height is zero or positive.
+
+For each foreign word with \(j\) ones, enumerate
+the \(j+1\) lengths of the zero runs before,
+between and after the ones, including zeros up to
+the declared axis height. Each length can be
+capped at \(\lceil W\rceil+2\) without changing any
+stored data. For the factorial units, use the
+product \(g(mn_i+c_{m,i})/g(n_i)^m\) at digit
+position \(i\) from the preceding finite-profile
+argument. Its window has at most \(h_m\) digits.
+Every carry for \(m\le5\) is at most two and
+therefore clears at a zero digit. In a long
+zero run only the first position can have an
+incoming carry, and only the last \(h_m-1\)
+positions can see a subsequent one. At each
+other position the valuation contribution and
+the carry are zero and the unit contribution is
+one. The cap retains both edges and keeps their
+windows disjoint. For the axis cross binomial,
+the retained polynomial uses the leading
+\(h_m-1\) digits and the multiplication carry at
+their lower edge. With at most two ones this
+carry is determined by the two preceding digits
+if there are that many. The stated cap preserves
+this upper window and whether the height is zero.
+Thus it preserves all relevant binomial
+polynomials and all residues of \(F_m/m!\).
+Every bounded zero-run word is itself allowed.
+
+The [checker](verify_binary_two_digit_second_radius.py)
+enumerates the splits \((1,1)\) and \((0,2)\) of
+the two ones and interchanges the axes if needed.
+At precision three there are eighteen profiles
+in the first split and thirty in the second.
+The program uses the separated axis factors for
+\(R\) and computes \(DR\) by taking the first
+difference of each of its axis factors, extended
+by zero at axis count \(-1\). Convolution with the
+normalized shift coefficients gives
+\(\widetilde E_s,\widetilde E_{s+1},Z_{s+2},Z_{s+3}\)
+directly. The first two moment rows give the
+residue centers and, in the ramified charts, the
+lower bounds on parameter deviations by the same
+ninth-power comparison as for (28). The reduction
+of the last row uses the first two ninth-power
+pivots and the linear third pivot. A nonzero value
+of its initial coefficient at the forced residues
+excludes the block.
+
+For \(W=3\), the scalar estimates following (27)
+give the period \(H\bmod9\). The comparison in the
+high digit-count lift applies unchanged at \(W=4\)
+with this period, since \((DR)_n\in I_1\) for \(n>2\)
+also with two foreign digits. It gives period
+\(H\bmod27\) for \(4<W\le5\). In the latter two
+comparisons the two uncombined rows are transported
+at precision one unit below the two \(Z\) rows.
+The checker verifies that every multiplier using
+either of the first two rows has valuation at
+least one, which suffices for the reducing identity
+at the target precision. The residue-center and
+initial parameter-bound checks use orders below
+the transfer cutoffs.
+
+At each later stage the checker tests only
+refinements of the preceding profiles and
+starting classes that survived. The refinement map
+uses the same exponent word with the earlier cutoffs.
+Smaller \(h_m\) remove factors already one at that
+precision, and simply reduce the foreign residues,
+so this map is independent of the representative.
+The resulting counts across both splits are
+\[
+\begin{array}{c|c|r|r}
+s & W & \text{tested} & \text{retained}\\ \hline
+17 & 3 & 432 & 0\\
+20 & 3 & 432 & 189\\
+20 & 4 & 486 & 135\\
+20 & 38/9 & 405 & 0\\
+23 & 3 & 432 & 99\\
+23 & 4 & 135 & 18\\
+23 & 37/9 & 54 & 0
+\end{array}
+\]
+The precision-four profiles at \(s=23\) are
+represented by the axis quartic with axis height
+three, and the other axis either linear or
+nonlinear. Their final constant obstruction has
+valuation four. The precision-four profiles
+retained at \(s=20\) have terminal obstructions at
+valuation at most \(113/27\). All three starts are
+therefore excluded. Replay the reductions from the
+repository root with
+\(\texttt{python3 research/factorial/image-rigidity/verify_binary_two_digit_second_radius.py}\).
+
 ### A unit low foreign coefficient
 
 **Unit foreign coefficient.** Keep the low even-digit
@@ -2067,7 +2291,9 @@ shows that the full modulo-three equations alone leave this
 profile. Its actual solutions must satisfy (11), (16) and
 the vanishing adjacent digits in (19). Within those
 conditions the fourth power on an axis is also excluded by
-(21)–(22) and the subsequent linked lifts.
+(21)–(22) and the subsequent linked lifts. The bounded
+upper profiles give a finite first-radius reduction
+at precision four for the other foreign-column cases.
 At \(L\ge9\), a candidate block of length at least three is
 confined to the canceled row, with its one allowed left
 extension when \(c=0\). Only support lengths at most
@@ -2084,9 +2310,9 @@ many realizable native profiles at precision four.
 For digit counts at least four, (29) gives exactly
 the surviving congruence profiles at precision four.
 The subsequent linked lifts exclude all three starts
-for exact blocks. At \(L=9\), the low even-digit sector
-still requires the remaining two-digit profiles
-beyond \(XY\). For a unit low foreign coefficient it
+for exact blocks. The two-digit exclusion completes
+the low even-digit, positive-valuation sector at
+\(L=9\). For a unit low foreign coefficient the analysis
 also excludes the first two critical radii and all
 radii on prime-to-three grids, when both distinct
 poles survive. One must use the linked
