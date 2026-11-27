@@ -390,13 +390,9 @@ the actual stability.
 
 ## The large-alphabet endpoint
 
-The localization uses fixed-\(k\) moment alignment, and the exterior
-and smoothing bounds also depend on \(k\). The remaining target is
-\[
-\exists M\ge3\quad \forall k\ge M,\ \forall d\ge k-1,\
-\forall\,0<r\le 1/(k-1),\ \forall f:\mathbb R^d\to\Delta_k
-\quad S_{-r}(f)\ge S_{-r}(T).
-\]
-A lower bound \(r_k\ge1/(k-1)\) for all sufficiently large \(k\)
-or a separate comparison on the portion outside the fixed-cell
-neighborhood would complete this interval.
+For every fixed \(k\), the argument above supplies exact
+same-partition and matched-mass paired optimality near zero,
+uniformly in ambient dimension. For sufficiently large \(k\),
+the [full negative voting interval](NEGATIVE_VOTING_INTERVAL.md#exact-gaussian-simplex-minimization)
+is covered for the same-partition problem by combining stronger
+uniform localization with a quantitative local comparison.

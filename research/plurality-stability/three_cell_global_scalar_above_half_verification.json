@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "precision_bits": 100,
+  "radial_panels_per_correlation_ball": 16384,
+  "radial_limit": 12,
+  "mode_order": 80,
+  "row_order": 16,
+  "interval": {
+    "rho_bounds": ["1/2", "53/100"],
+    "correlation_slabs": 160,
+    "slab_widths": ["1/4000", "1/8000"],
+    "tail_upper": 0.0059032888680121695,
+    "total_upper": 1.9882264995612788
+  }
+}

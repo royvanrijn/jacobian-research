@@ -2,9 +2,10 @@
 
 This note proves a direct comparison for **every** ordinary balanced Gaussian
 three-cell partition in every dimension at
-\(0<\rho\le8859/20000=0.44295\). Sections FA1–FA7 give
+\(0<\rho\le447/1000=0.447\). Sections FA1–FA7 give
 \([11/25,221/500]\) and the [projected extension](#fa8-projected-extension-to-044295)
-covers the adjoining slab. The proof isolates one adverse radial direction, uses the
+covers the next slab. The full-cap and radius-weighted extensions in FA9–FA10
+cover the remaining two slabs. The proof isolates one adverse radial direction, uses the
 simplex constraints to limit its amplitude, and pays for its positive
 contribution with unavoidable angular loss. There is no assumption of
 closeness to a simplex, stationarity, or continuation of maximizers.
@@ -14,7 +15,10 @@ tails, from [the checker](check_three_cell_finite_amplitude.py). Its
 [verification record](three_cell_finite_amplitude_verification.json) retains
 the entire cover and source pins. The result has internal checking only;
 independent replay, formal verification and external review are unperformed.
-The all-positive-correlation target remains open.
+FA11 gives a relative score margin. FA12 combines the same argument with the
+[separate scalar comparison](THREE_CELL_GLOBAL_SCALAR_THROUGH_HALF.md)
+to reach 0.535. FA13 carries the margin past the sharp scalar cutoff 0.58. The all-positive-correlation
+target remains open.
 
 ## FA1. Statement and imported comparison
 
@@ -517,6 +521,337 @@ annular comparisons are recomputed, and Arb checks the constants
 in (FA19)–(FA21), including (FA20) and the outside-cube margin.
 The replay certifies this slab only. Its lower endpoint is already
 covered by FA1.
+
+## FA9. Full-cap extension to 0.445
+
+On \([8859/20000,89/200]\) the
+[directed checker](check_three_cell_finite_amplitude_cap_extension.py)
+and [cover](three_cell_finite_amplitude_cap_extension_verification.json)
+give
+\[
+ \frac{268}{1000}\le D\le\frac{273}{1000},\quad
+ \frac{4011}{2000}\le a_u\le\frac{503}{250},\quad
+ \|\mathcal A\|_{\rm HS}^2\le\frac{111}{25},\quad
+ \|P\mathcal A u\|^2\le\frac1{60000},\qquad P=I-u u^{\mathsf T}.
+ \tag{FA22}
+\]
+On each spectral child the last bound subtracts
+\((a_u-2)^2\) from \(\|(\mathcal A-2)u\|^2\), with an exact
+rational lower bound on the subtracted square. The orthogonal
+block has squared norm at most \(111/25-(4011/2000)^2<(13/20)^2\).
+Thus
+\[
+ \sum_i q(z_i)\le \frac3{250}A^2+2r AG-\frac{27}{20}G^2,
+ \qquad r^2=1/60000.                                               \tag{FA23}
+\]
+For \(A\ge A_0=9/500\), (FA20) with the certified inputs
+\(c_*=187/100,\ C_*=14/25,\ j_*=107/1000\) gives
+\(G^2/A^2>0.010157\). A nonnegative value in (FA23) instead
+requires \(G^2/A^2<0.009478\).
+
+For \(A<A_0\), apply the
+[exact angular cap formula](THREE_CELL_EXACT_ANGULAR_MOMENT_ENVELOPE.md#an-interior-range-with-a-closed-cap-formula)
+on the cube \([5/24,11/24]^3\), which lies in its domain
+\([\arccos(4/5)/\pi,1/2]^3\). Write \(\Gamma_{\rm ex}\) for the
+deficit of its optimal pairing from \(\sum_i a_i(p)a_i(q)\).
+As in (AM5), set \(w_i=a_i(p)a_i(q)\). Then
+\[
+ \Gamma_{\rm ex}\ge
+ \frac{\sum_{i<j}w_iw_j(1-\cos(\pi(p_k-q_k)))}{\sum_i w_i}
+ \ge \frac7{250}|p-q|^2,
+ \quad k\text{ the label other than }i,j.
+\]
+Use \(w_i\ge\sin^2(5\pi/24)/\pi^2\),
+\(\sum_iw_i\le9/(4\pi^2)\), and
+\(1-\cos(\pi d)\ge(\pi^2/2-\pi^4/384)d^2\) for \(|d|\le1/4\).
+The cover verifies the resulting coefficient bound.
+With \(|v+w|^2\ge(2/7)|v|^2-(2/5)|w|^2\), this yields the
+annular penalty
+\(\frac1{125} A^2(\phi(t)-\phi(s))^2
+ -\frac{43}{500}(|\epsilon_t|^2+|\epsilon_s|^2)\).
+If an endpoint leaves the cube, (FA13) gives a residual at least
+\(\zeta=1/8-\sqrt{2/3}A_0(97/20)\), and the certificate checks
+\(\frac{43}{500}\zeta^2>(2(97/20)A_0)^2/125\).
+The penalty is then nonpositive and holds by nonnegativity of the
+actual angular deficit. The annular Dirichlet integral exceeds
+\(8/5\). Integrating and using (FA15) bounds the angular deficit
+below by \((8/625)A^2-(172/135)G^2\).
+Subtract this in the comparison (DG29), retaining the actual
+angular deficit in place of its lower bound \(\Gamma\).
+The determinant is positive since
+\((8/625-3/250)(27/20-172/135)>1/60000\).
+Together with the large-amplitude comparison this gives strict
+loss for nonzero radial defects and the same tie characterization
+as FA8. Dimension reduction gives the global comparison.
+
+The directed replay uses 160 spectral children, eight
+Hilbert–Schmidt slabs, the same analytic tails as FA7, and the
+certified cap and annular constants:
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_finite_amplitude_cap_extension.py --output .scratch/three-cell-cap-extension-replay.json
+
+## FA10. Radius-weighted angular errors through 0.447
+
+On \([89/200,447/1000]\), the
+[weighted checker](check_three_cell_finite_amplitude_weighted_extension.py)
+and [cover](three_cell_finite_amplitude_weighted_extension_verification.json)
+give
+\[
+ D\in[268/1000,274/1000],\qquad
+ a_u\in[4023/2000,8071/4000],\quad
+ \|P\mathcal A u\|^2\le\frac1{60000},\quad
+ \|\mathcal A\|_{\rm HS}^2\le\frac{89}{20}.
+\]
+Since \(89/20-(4023/2000)^2<(16/25)^2\),
+\(\sum_i q(z_i)\le(71/4000)A^2+2r AG-(34/25)G^2\) with
+\(r^2=1/60000\). Use \(A_0=1/40\). The pole clipping (FA20)
+with \(c_*=373/200,\ C_*=14/25,\ j_*=107/1000\) gives
+\(G^2/A^2>0.013929\) for \(A\ge A_0\). The scalar bound
+is negative since its nonnegative region would require
+\(G^2/A^2<0.013756\).
+
+On the annulus \(I=\{t:5/16\le\sqrt t\le2\}\) let \(P_*=97/20\),
+\(c=7/625\) and
+\[
+ E(t)=\max\!\left\{\frac{7499}{100000},
+ \frac{c A_0^2(P_*+|\phi(t)|)^2}
+ {(1/6-\sqrt{2/3}A_0|\phi(t)|)^2}\right\}.
+\]
+The denominator before squaring is positive on \(I\).
+For \(A<A_0\) the following holds on \(I^2\):
+\[
+ \Gamma(p(t),p(s))\ge c A^2(\phi(t)-\phi(s))^2
+                   -E(t)|\epsilon_t|^2-E(s)|\epsilon_s|^2.       \tag{FA24}
+\]
+In the cube \([1/6,1/2]^3\) the directed checker verifies
+\(\Gamma\ge (2/125)|p-q|^2\). Split the square with
+\(|v+w|^2\ge(7/10)|v|^2-(7/3)|w|^2\), and bound
+\(|\epsilon_t-\epsilon_s|^2\) by twice the sum of the squares.
+The required endpoint penalty is \(28/375<7499/100000\).
+If an endpoint \(t\) leaves the cube, its residual has size
+at least \(1/6-\sqrt{2/3}A_0|\phi(t)|\) and its own
+\(E(t)|\epsilon_t|^2\) cancels the full positive term of
+(FA24). The argument is identical if \(s\) leaves the cube.
+
+The checker verifies the **weighted row** inequality
+\[
+ \frac{E(t)}{J_+(t)}\int_I V(t,s)d\nu(s)\le\frac{11}{20}
+ \quad(t\in I).
+\]
+It bounds the row on 512 radial boxes by directed Riemann sums
+after removing the common \(x e^{-\kappa x^2}\) factor, where
+\(x=\sqrt t\). The separate annular integral divided by the
+trial normalization is at least \(163/100\). Integrating (FA24)
+therefore gives \(\mathcal L(p)\ge (7/625)(163/100)A^2-(11/10)G^2\).
+The final negative quadratic has positive determinant since
+\[
+ \big((7/625)(163/100)-71/4000\big)(34/25-11/10)>1/60000 .
+\]
+This proves the comparison and tie rigidity as in FA8. This
+extension certifies the entire larger cube by adaptive splitting
+and checks 160 spectral children and eight Hilbert–Schmidt slabs,
+with the FA7 analytic tails:
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_finite_amplitude_weighted_extension.py --output .scratch/three-cell-weighted-extension-replay.json
+
+## FA11. A global planar margin relative to transfer cost
+
+On \(11/25\le\rho\le447/1000\), every balanced ordinary planar
+partition \(B\) admits an oriented simplex \(T_B\) such that
+\[
+ S_\rho(T_B)-S_\rho(B)\ge c L_\rho(B;T_B)
+ \tag{FA25}
+\]
+with a uniform \(c>0\). Use the actual angular deficit
+\(\mathcal D(t,s)=\sum_i(a_i(t)a_i(s)-u_i(t)\cdot u_i(s))\)
+from (DG27), where \(u_i\) are the first angular vector moments and
+\(a_i=\sin(\pi p_i)/\pi\). The derivation of (DG29) retains
+\(\mathcal D\) before applying the lower bound \(\Gamma\).
+With \(E=S_\rho(T)-S_\rho(B)\), all four slab arguments give
+\[
+ E\ge10^{-5}\int J_+|p-\mathbf1/3|^2d\nu
+           +\frac1{50}\iint V(t,s)\mathcal D(t,s)d\nu(t)d\nu(s).
+ \tag{FA26}
+\]
+Indeed, for small \(A\) apply only \(49/50\) of the angular
+bound. For each slab, write the scalar estimate as
+\(e_0 A^2+2rAG-\delta G^2\) and the angular bound as
+\(a A^2-bG^2\). The four pairs \((a,b)\) are
+\((3/800,20/27)\), \((1/160,20/27)\), \((8/625,172/135)\)
+and \(((7/625)(163/100),11/10)\).
+In each case \(49a/50-e_0-10^{-5}\) and
+\(\delta-49b/50-10^{-5}\) are positive with product exceeding
+\(r^2\). For large \(A\) the verified clipping lower bounds for
+\(z=G^2/A^2\) exceed, respectively,
+\(.0025648,.0057,.01015,.0139\). At these four rational lower
+bounds, \(\delta z-2r\sqrt z-e_0>10^{-5}(1+z)\), using
+the respective upper estimates \(r<.0045,.0082,.0041,.0041\)
+and \(\sqrt z<.051,.076,.101,.118\) (at the four endpoints).
+The derivative of the left side is at least \(1\) thereafter.
+This proves (FA26) in the large-amplitude regime while keeping
+the entire angular deficit.
+
+Let \(J=[1,2]\), \(w(t)=\sqrt t\,e^{-t/3-2\sqrt t}\).
+For \(s\in J\), the displayed formula for \(V\) gives
+\(V(t,s)\ge c_0 w(t)\) uniformly on these slabs, using
+\(\kappa\le1/3\) and \(2\rho/(1-\rho^2)\le4/3\).
+Integration and (FA15) give \(J_+(t)\ge c_1 w(t)\).
+Put \(d_i(t)=a_i(t)^2-|u_i(t)|^2\). The identity
+\[
+ 2\mathcal D(t,s)=\sum_i\big[d_i(t)+d_i(s)+|u_i(t)-u_i(s)|^2
+                                      -(a_i(t)-a_i(s))^2\big]
+\]
+bounds the sum of its three nonnegative terms in the measure
+\(w(t)d\nu(t)1_J(s)d\nu(s)\) by \(C E\).
+For the subtracted square use the 1-Lipschitz bound for \(a_i\),
+the first term of (FA26), and \(\inf_J w>0\). Averaging over \(J\)
+gives a slice \(s\) with \(|p(s)-\mathbf1/3|^2+\sum_i d_i(s)\le CE\)
+and \(\int w\sum_i|u_i(t)-u_i(s)|^2d\nu\le CE\).
+The three vectors \(u_i(s)\) close and their lengths differ from
+\(a_*=\sin(\pi/3)/\pi\) by \(O(\sqrt E)\).
+For small \(E\), standardize the direction of \(u_1(s)\).
+The cosine law and the nonzero sine at \(2\pi/3\) give a regular
+ordered triple of unit vectors \(v_i\), with an allowed reflection,
+such that \(\sum_i|u_i(s)-a_*v_i|^2\le CE\).
+For \(E\) bounded away from zero, (FA25) follows from boundedness
+of \(L_\rho\), so only small \(E\) is needed.
+
+At radius \(t\), define the angular score loss
+\(R(t)=\sum_i(a_*-v_i\cdot u_i(t))\ge0\), using the
+winning-direction simplex \(T_B\) with sites \(v_i\).
+Taylor's theorem and \(\sum_i p_i=1\) bound
+\(\sum_i(a_*-a_i(t))\) by \(C|p(t)-\mathbf1/3|^2\).
+On \(p_i(t)\in[1/6,1/2]\) for every label, use
+\[
+ a_i(t)-v_i\cdot u_i(t)
+ =\frac{d_i(t)+|u_i(t)-a_i(t)v_i|^2}{2a_i(t)} .
+\]
+Off this cube \(R\) is bounded and the \(w\,d\nu\)-measure is
+\(O(E)\) by (FA26). Thus \(\int w R\,d\nu\le CE\).
+
+On a fixed physical ball of radius \(R_0\), reflection bounds the
+OU score loss of each transfer by
+\(2\Phi(\rho x_N/\sqrt{1-\rho^2})-1\le C x_N\), where
+\(x_N\) is its distance to the pair plane. The first inequality
+integrates the nonnegative reflected kernel difference on the
+winning cell instead of the full positive half-line. Here
+\(x_N=\sqrt{2t}(v_i-v_j)\cdot\omega/\sqrt3\) for the unit angle
+\(\omega\). Therefore \(L_{\rm core}\le C_{R_0}\int w R\,d\nu\le C_{R_0}E\).
+By (B3) and its global version in the
+[continuation note](POSITIVE_CORRELATION_CONTINUATION.md#relative-exterior-control-below-every-fixed-correlation-bound),
+the centered interaction of the core defect is at most
+\(C L_{\rm core}\) and that of the tail at most
+\(\varepsilon(R_0)L_{\rm tail}\), with \(\varepsilon(R_0)\to0\).
+Positivity of the centered operator bounds the full interaction
+by twice the sum of these bounds. Fix \(R_0\) so that
+\(2\varepsilon(R_0)\le1\). The exact identity (B1) then gives
+\(E\ge L_{\rm tail}-C L_{\rm core}\), hence (FA25).
+
+Finally, (CT5) in the
+[correlation contact note](THREE_CELL_CORRELATION_CONTACT.md#a-holomorphic-estimate-relative-to-score-regret)
+gives, with this same choice of \(T_B\) at \(r=447/1000\),
+\[
+ |\Delta_{r+h}(B;T_B)-\Delta_r(B;T_B)|
+ \le C|h|L_r(B;T_B)
+\]
+for sufficiently small \(|h|\), by summing the Taylor series.
+Here \(\Delta_\rho=S_\rho(T_B)-S_\rho(B)\).
+Thus the margin gives an additional open right neighborhood
+of \(447/1000\) with strict planar comparison away from rotated
+simplices. Maximizer dimension reduction gives the global comparison
+and rigidity there. This argument gives a positive, unevaluated length
+for the extra neighborhood.
+
+## FA12. Scalar extension and transfer-cost margin through 0.535
+
+The separate [global scalar comparison](THREE_CELL_GLOBAL_SCALAR_THROUGH_HALF.md)
+supplies the interval through \(53/100\). A
+[supplemental directed cover](three_cell_global_scalar_narrow_extension_verification.json)
+extends its criterion (GH6), (GH9)–(GH10) to \([53/100,107/200]\).
+It uses 100-bit Arb, 80 rational slabs of width \(1/16000\),
+16384 radial panels up to 12, \(m=16\) row terms and \(N=96\).
+The centered finite norm plus the trace tail is below \(399/200\),
+leaving a radial deficit at least \(1/200\) against the full row \(J\).
+The planar comparison and equality case follow as in the scalar proof.
+Replay with the [retained supplemental checker](check_three_cell_global_scalar_narrow_extension.py):
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_global_scalar_narrow_extension.py --start 8480 --stop 8560 --denominator 16000 --modes 96 --cap 399/200
+
+The scalar comparison also admits the relative margin (FA25) on
+\([11/25,107/200]\), including a positive extension beyond \(107/200\).
+
+In fact (GH2) estimates the full aligned-arc envelope, so the
+derivation of (DG29) can subtract \(\iint V\mathcal D\,d\nu d\nu\)
+from (GH4). For each same-label angular pairing split
+\(e^{a\cos\theta}\) into \(ae^{-a}\cos\theta\) and a remainder
+whose derivative as a function of \(\cos\theta\) is nonnegative.
+Circular rearrangement bounds the remainder by the aligned arcs
+of the same masses, with a constant added to the kernel if needed.
+The removed first-mode interaction is exactly the difference
+\(\mathcal D\) from the aligned arcs, with the radial factor \(V\).
+The directed negative radial margin in (GH6)–(GH10) therefore gives
+\[
+ E\ \ge\ \frac1{200}\int J_1(t)|p-\mathbf1/3|^2d\nu
+                   +\iint V(t,s)\mathcal D(t,s)d\nu(t)d\nu(s).
+ \tag{FA27}
+\]
+Here \(J_1\) is the first term in (GH5), and the scalar
+subintervals control \(J_m\) and \(J\), respectively, both at
+least \(J_1\). For \(w(t)=\sqrt t\,e^{-(2/3)t-3\sqrt t}\)
+one has \(J_1(t)\ge c w(t)\) by its explicit positive first term.
+For \(s\in[1,2]\) also \(V(t,s)\ge c w(t)\), since on the whole
+band \(\kappa\le2/3\) and \((2\rho/(1-\rho^2))\sqrt2\le3\).
+This gives precisely the two estimates used in the reference-slice
+and core–tail proof of (FA25). Thus the margin holds uniformly through
+\(107/200\). Apply (CT5) at this endpoint and reduce actual maximizers
+to the plane as in FA11. The resulting global comparison includes
+a right neighborhood of \(107/200\) with simplex equality rigidity.
+
+### Scalar trace tails on arbitrary compact positive bands
+
+The convergence restriction in (GH10) can be removed by using
+a shorter part of the same positive angular measure. For
+\(0<v<1/3\) set \(q=2v-3v^2/2\) and \(a=\cos^2(\pi v)\).
+In the even folded difference measure of (GH5), the positive
+part on \([0,v]\) has mass \(q\) and \(\cos^2(\pi u)\ge a\).
+The rest of the positive part has squared cosine at least \(1/4\),
+and the negative part has squared cosine at most \(1/4\).
+Thus \(M_{2j}-P_{2j}\ge q(a^j-4^{-j})\). As in (GH9), this gives,
+with \(x=\sqrt t\),
+\[
+ J(t)\ge\frac q4 e^{-\kappa x^2}
+                     (e^{a\kappa x^2}-e^{\kappa x^2/4}).
+\]
+On any compact band \([\rho_-,b]\subset(0,1)\), choose
+\(a>(2b-1)/b^2\) by shrinking \(v\).
+For sufficiently large fixed \(x\), this lower bound is at least
+\((q/8)e^{-(1-a)\kappa x^2}\). The same Gaussian integration as
+in (GH10) now gives a geometric trace tail on the outer range
+with ratio \(r=2\rho/(1+a\rho^2)<1\) uniformly. The bounded
+inner range is controlled by the first row term and the
+factorial tail. This makes the tail summation available on each
+compact positive band. It leaves the sign of the centered
+finite block as a separate comparison.
+
+## FA13. Transfer-cost margin past the sharp scalar endpoint
+
+The [sharp aligned-arc scalar comparison](THREE_CELL_SHARP_POSITIVE_ARC_ENVELOPE.md)
+extends the explicit cutoff to \(29/50\) with a negative radial
+margin at least \(1/1000\) against its full row weight \(J\) on
+\([53/100,29/50]\). Its bound estimates the same full aligned-arc
+envelope as in FA12, so the entire first angular deficit
+\(\iint V\mathcal D\) is still available. The sharp row has a
+positive first term proportional to \(\sqrt t e^{-\kappa t}\)
+by (SP4), with positive coefficient uniformly on the compact
+band. The proof of (FA27) gives the same two weighted estimates
+with \(1/1000\) as radial coefficient and
+\(w(t)=\sqrt t e^{-2t/3-3\sqrt t}\) on the full combined band
+\([11/25,29/50]\). Indeed on this band
+\(\kappa\le2/3\) and \((2\rho/(1-\rho^2))\sqrt2\le3\).
+The reference-slice and core–tail argument then gives a uniform
+relative margin (FA25) up to \(29/50\). By (CT5) a positive right
+neighborhood of \(29/50\) has the global inequality and simplex
+equality rigidity. The length of that neighborhood is unevaluated.
 
 ## Remaining all-correlation obligation
 

@@ -6,7 +6,7 @@
   "exit_code": 0,
   "checker_sha256": "b5ba93535a04b6a71602e64918247027fb2f0a91d50a317bc61cdb222f0a84f4",
   "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
-  "proof_source_sha256": "2118222450fa5dae4549187defc5d804de54c2e38c57917d2235b187eecd7ad1",
+  "proof_source_sha256": "5d31df4767af645f6ee10ead0ebcc8c5e5f9907875b679e2c2761ec9d803aa0f",
   "input_sources": [
     {
       "path": "plurality-stability/sources/cut_bounds_6b720fe57bfe/plur_cert.py",

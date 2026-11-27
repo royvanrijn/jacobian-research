@@ -28,6 +28,10 @@ higher-row gap by themselves.
 The exterior Gaussian identity (S72) and a linear positive
 supersolution also settle the whole third exterior hook
 $(k-3,1,1,1)$ for every $k\ge4$, by (S73).
+Equation (S91) supplies a positive harmonic polynomial field in every
+higher exterior degree and an exact one-dimensional formula for its
+truncated image. Its sufficient supersolution comparison remains open
+in the intermediate degrees.
 The four-cell problem reduces
 to one scalar standard-sector inequality. The exact polynomial
 certificate (S74)--(S76) also settles the five-cell $(2,2,1)$ block,
@@ -3661,6 +3665,195 @@ frames in specified finite Young models and compatible vertical-strip
 and reverse-tableau chains through ten cells; the unrestricted frame,
 reconstruction and Gaussian similarity arguments are written proofs.
 
+### Positive harmonic fields for every higher exterior hook
+
+There is a common polynomial field behind the linear supersolution
+in (S73) and the sign Vandermonde in (S63). Its positivity is valid in
+every exterior degree. Its Gaussian facet integrals reduce to one
+dimension, including the adjacent transports. The remaining comparison
+between those integrals is stated separately below.
+
+**Theorem S91 (positive hook fields and exact moment reduction).**
+
+Let $k\ge4$, $q=k-2$, $2\le p\le q$, and $0<\rho<1$, with
+$\sigma=\sqrt{1-\rho^2}$. Put
+$e=p(p-1)/2$, $s_p=(-1)^{(p-1)(p-2)/2}$ and let $P_H$ be
+orthogonal projection onto $H$. Define
+
+\[
+ W_p(x)=s_p\,p_0\wedge P_Hx\wedge P_H(x^{\odot2})
+                      \wedge\cdots\wedge P_H(x^{\odot(p-1)}).
+ \tag{S91a}
+\]
+
+Powers here are coordinate powers. This is a $G_0$-equivariant,
+homogeneous harmonic polynomial field of degree $e$ on $H$. Every
+coordinate in the increasing Helmert exterior basis is strictly
+positive on $W$. It is invariant under adding a common constant to
+the $k$ coordinates before projecting the power columns.
+The corresponding full symmetry block is
+$V_{(k-p-1,1^{p+1})}$, with the complete field model from (S72).
+
+Here is a direct proof of the strict sign. Put
+$X_j^{(r)}=\sum_{i=1}^j x_i^r-jx_{j+1}^r$ and
+$\alpha_j=1/\sqrt{j(j+1)}$. The coordinate for
+$2\le j_1<\cdots<j_p\le k-1$ is
+$s_p\prod_t\alpha_{j_t}$ times the determinant with rows
+$(1,X_{j_t}^{(1)},\ldots,X_{j_t}^{(p-1)})$.
+Subtract consecutive rows, starting at the bottom, and use
+
+\[
+ X_{j_{t+1}}^{(r)}-X_{j_t}^{(r)}
+   =\sum_{l=j_t}^{j_{t+1}-1}(l+1)
+              \int_{x_{l+2}}^{x_{l+1}}r z^{r-1}\,dz.
+\]
+
+Multilinearity expresses the remaining determinant as $(p-1)!$
+times a positive weighted sum of integrals of
+$\det[z_t^{r-1}]_{t,r=1}^{p-1}$ over successively lower, disjoint
+intervals. Almost everywhere in each such product,
+$z_1>\cdots>z_{p-1}$. That Vandermonde has sign $s_p$ and is
+nonzero. This proves the asserted strict positivity for every $p$.
+
+For the harmonic and integral statements, set
+$b_i=e_i-k^{-1}\mathbf1\in H$, $3\le i\le k$. Since
+$\sum_{i=3}^k b_i=-2p_0$, expansion of the wedge gives the identity
+
+\[
+ W_p(x)=-\frac{s_p}{2}
+       \sum_{\substack{I\subset\{3,\ldots,k\}\\|I|=p}}
+          \det[x_i^r]_{\substack{i\in I\ \mathrm{increasing}\\0\le r<p}}
+                      \bigwedge_{i\in I\ \mathrm{increasing}}b_i.
+ \tag{S91b}
+\]
+
+Each determinant is a Vandermonde, independent of a common coordinate
+shift and harmonic in its variables. For example, its Laplacian is
+alternating of degree $e-2$, whereas every alternating polynomial is
+divisible by the degree-$e$ Vandermonde. These observations also prove
+harmonicity on $H$: use independent coordinates with the tied top
+coordinate of variance $1/2$ and the other coordinates of variance
+$1$, then remove the independent common trace. Thus for an isotropic
+standard Gaussian $Z_H$ on $H$,
+$\mathbb E W_p(\rho x+\sigma Z_H)=\rho^e W_p(x)$.
+
+The same expansion computes the truncated integral exactly. For a
+mean vector $\mu\in H$ define
+
+\[
+ T_r(\mu_i,u)=\int_{-\infty}^u z^r\,
+               \frac1\sigma\phi((z-\mu_i)/\sigma)\,dz,\qquad
+ g_{\mu_2}(u)=\frac{\sqrt2}{\sigma}
+                      \phi(\sqrt2(u-\mu_2)/\sigma).
+\]
+
+For a fixed linear map $C:H\to H$, write
+
+\[
+ \begin{split}
+ P(\mu)&=\int_{\mathbb R}g_{\mu_2}(u)
+                         \prod_{i=3}^kT_0(\mu_i,u)\,du,\\
+ J_p(C,\mu)&=-\frac{s_p}{2}\sum_{|I|=p}
+          \left(\bigwedge_{i\in I}Cb_i\right)
+       \int_{\mathbb R}g_{\mu_2}(u)
+          \det[T_r(\mu_i,u)]_{\substack{i\in I\\0\le r<p}}
+                     \prod_{j\notin I,\ j\ge3}T_0(\mu_j,u)\,du.
+ \end{split} \tag{S91c}
+\]
+
+All set indices in the wedge and determinant are increasing.
+If $Y=\mu+\sigma Z_H$, these are respectively
+$\mathbb P(Y\in F_{12})$ and
+$\mathbb E[\mathbf1_{F_{12}}(Y)\Lambda^pC W_p(Y)]$.
+Indeed, before removing the common trace, the tied coordinate
+$U\sim N(\mu_2,\sigma^2/2)$ is independent of the coordinates
+$Y_i\sim N(\mu_i,\sigma^2)$, $i\ge3$. Both the facet event and
+(S91b) are invariant under that trace removal. Conditional on $U=u$,
+the coordinates are independent. Each determinant term has distinct
+coordinate indices, so its integral is the displayed determinant of
+unnormalized moments, times the spectator probabilities. Polynomial
+Gaussian integrability justifies the finite expansion and Fubini.
+No multivariate quadrature is required for this identity.
+
+The moments use only $\phi,\Phi$ and a finite recurrence. With
+$z=(u-\mu_i)/\sigma$,
+
+\[
+ T_0=\Phi(z),\quad T_1=\mu_i\Phi(z)-\sigma\phi(z),\quad
+ T_r=\mu_iT_{r-1}+(r-1)\sigma^2T_{r-2}
+                              -\sigma u^{r-1}\phi(z)\quad(r\ge2).
+\]
+
+Let $\mu_0=\rho x$, $\mu_l=\rho D_lx$ and
+$c_l=\exp[-\rho^2(w_l\cdot x)^2/(4\sigma^2)]$.
+Completing the Gaussian square in each kernel gives the exact formulas
+
+\[
+ \begin{split}
+ \mathsf K_pW_p(x)
+   &=\frac{\phi_0}{\sigma}
+          \left[2J_p(I,\mu_0)+\sum_{l=3}^kc_lJ_p(C_l,\mu_l)\right],\\
+ a_\rho(x)/\rho
+   &=\frac{\phi_0}{\sigma}
+             \left[2P(\mu_0)+\sum_{l=3}^kc_lP(\mu_l)\right].
+ \end{split} \tag{S91d}
+\]
+
+In particular the following is a concrete **sufficient comparison**
+for every remaining exterior hook:
+
+\[
+ 2J_p(I,\mu_0)+\sum_lc_lJ_p(C_l,\mu_l)
+    \ \le\ \rho^e\left[2P(\mu_0)+\sum_lc_lP(\mu_l)\right]W_p(x)
+ \tag{S91e}
+\]
+
+coordinatewise on $W$. This inequality is **not proved here** for
+$3\le p<q$. Its correlation parameter can be removed exactly.
+Write $P^{[1]},J_p^{[1]}$ for (S91c) at variance parameter $\sigma=1$,
+and set $z=\rho x/\sigma$. Homogeneity and the substitution
+$u=\sigma v$ give
+
+\[
+ P(\mu)=P^{[1]}(\mu/\sigma),\qquad
+ J_p(C,\mu)=\sigma^eJ_p^{[1]}(C,\mu/\sigma).
+\]
+
+Consequently (S91e) is equivalent to the single unit-variance inequality
+
+\[
+ 2J_p^{[1]}(I,z)+\sum_l e^{-(w_l\cdot z)^2/4}
+                                      J_p^{[1]}(C_l,D_lz)
+ \ \le\ \left[2P^{[1]}(z)+\sum_l e^{-(w_l\cdot z)^2/4}
+                                      P^{[1]}(D_lz)\right]W_p(z).
+ \tag{S91f}
+\]
+
+As $x$ ranges over $W$, so does $z$. Thus a proof of the **pointwise
+field comparison for all $x$** at any one positive correlation would
+prove it at every positive correlation. A spectral bound at one
+correlation alone does not supply that hypothesis.
+If (S91e) holds at a fixed $(k,p,\rho)$, the positive
+folded kernel from (S72), applied to $\psi=\sqrt{a_\rho}W_p$,
+gives $\|a_\rho^{-1/2}\mathsf K_pa_\rho^{-1/2}\|
+\le\rho^{e-1}$. To see this, integrate
+$|Tz|\le T|z|$ against $\psi$ for each eigenvector of the compact
+self-adjoint $T$, and use (S91e). For $p\ge3$ this would yield the
+explicit full-multiplicity gap
+$\ell\sigma^{-1}(1-\rho^{e-1})$, independently of the ambient
+dimension by the unused-coordinate Hermite factorization.
+At $p=2$, (S73) already proves the strict residual behind the
+non-strict factor $1$. At $p=q\ge3$, the comparison and explicit factor
+are already proved by (S63)--(S66). The intermediate-degree comparison
+remains the obligation; positivity and free harmonicity alone do not
+control the truncated adjacent terms in (S91d).
+
+The exact controls below check selected positive wedge coordinates,
+(S91b), free Gaussian Vandermonde moments, the moment recurrence and
+adjacent $C_lb_i$ identities. The all-degree positivity, harmonicity,
+one-dimensional integration formula and conditional Schur conclusion
+are written arguments. No finite numerical sampling certifies (S91e).
+
 ## Monotonicity and the other global obligations
 
 **Raw-deficit obstruction.** For every $k\ge2$, the unnormalized
@@ -3708,6 +3901,9 @@ The remaining targets are distinct:
   common scalar spectral reduction for every fixed representation height.
   The highest projection is bounded below on equivariant fields, and
   (S90) specifies its closed physical image and reconstruction.
+  For the remaining exterior hooks, (S91) gives a positive harmonic
+  comparison field and exact one-dimensional Gaussian moment formulas.
+  The sufficient intermediate-degree inequality (S91e) is open.
   The required scalar spectral-radius and fixed-space bounds are open;
   the next simple odd-kernel positivity argument is explicitly false.
   The exact tied-height reduction (S84) supplies a two-variable
@@ -3821,6 +4017,13 @@ vertical two-strip through ten cells is extended to each permitted
 size, with a compatible reverse-tableau chain. The all-size coset and
 strict frame proofs, imported Young/Pieri/content inputs, reconstruction,
 closed-image intertwining and full spectral inclusion are written arguments.
+For (S91), the exact controls check positive polynomial fields, their
+transported Vandermonde expansion and free Gaussian moments in every
+exterior degree for four through eight cells. Finite product measures
+check the determinant of unnormalized truncated moments, including
+spectator factors, and a formal identity checks the Gaussian moment
+recurrence through order nine. These controls do not prove the
+intermediate-degree truncated supersolution comparison (S91e).
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

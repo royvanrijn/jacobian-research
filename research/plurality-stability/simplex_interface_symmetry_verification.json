@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "76c5a0c6eb1e5753b90b1fbed8de561834e1212f5da52a06bb1e9a9a693fcb97",
-  "proof_source_sha256": "ed525f9d98373e4feb50653c1e9b856290d5d08473d84ad626aa068a137ff67a",
+  "checker_sha256": "6ac7d25865780862ad5d96de1e2ef060c600fc356408b5a82525a443e9218872",
+  "proof_source_sha256": "f317f347a295c2789e9eca94e1e19682f057dafa1487c4f8a06402269d618f53",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -2139,6 +2139,151 @@
       ],
       "unordered_positive_rates_control": "passed",
       "scope": "Exact third-exterior transport, rank-one junction-pair and selected ordered coordinate identities for 4<=k<=8; selected strict positive folded exterior matrices for 4<=k<=6. A control rejects positivity of abstract row rates without their required ordering. The all-degree Gaussian creation identity S72 and complete third-hook spectral gap S73 are written proofs, not certified by these finite controls."
+    },
+    "harmonic_hook_moments": {
+      "positive_harmonic_field_cases": [
+        {
+          "k": 4,
+          "p": 2,
+          "degree": 1,
+          "strictly_positive_coordinates": 1,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 5,
+          "p": 2,
+          "degree": 1,
+          "strictly_positive_coordinates": 3,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 5,
+          "p": 3,
+          "degree": 3,
+          "strictly_positive_coordinates": 1,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 6,
+          "p": 2,
+          "degree": 1,
+          "strictly_positive_coordinates": 6,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 6,
+          "p": 3,
+          "degree": 3,
+          "strictly_positive_coordinates": 4,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 6,
+          "p": 4,
+          "degree": 6,
+          "strictly_positive_coordinates": 1,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 7,
+          "p": 2,
+          "degree": 1,
+          "strictly_positive_coordinates": 10,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 7,
+          "p": 3,
+          "degree": 3,
+          "strictly_positive_coordinates": 10,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 7,
+          "p": 4,
+          "degree": 6,
+          "strictly_positive_coordinates": 5,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 7,
+          "p": 5,
+          "degree": 10,
+          "strictly_positive_coordinates": 1,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 8,
+          "p": 2,
+          "degree": 1,
+          "strictly_positive_coordinates": 15,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 8,
+          "p": 3,
+          "degree": 3,
+          "strictly_positive_coordinates": 20,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 8,
+          "p": 4,
+          "degree": 6,
+          "strictly_positive_coordinates": 15,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 8,
+          "p": 5,
+          "degree": 10,
+          "strictly_positive_coordinates": 6,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        },
+        {
+          "k": 8,
+          "p": 6,
+          "degree": 15,
+          "strictly_positive_coordinates": 1,
+          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"
+        }
+      ],
+      "truncated_product_moment_controls": [
+        {
+          "k": 6,
+          "p": 2,
+          "accepted_product_atoms": 16,
+          "transported_determinant_of_moments_identity": "passed",
+          "spectator_probability_control": "passed"
+        },
+        {
+          "k": 6,
+          "p": 3,
+          "accepted_product_atoms": 16,
+          "transported_determinant_of_moments_identity": "passed",
+          "spectator_probability_control": "passed"
+        },
+        {
+          "k": 6,
+          "p": 4,
+          "accepted_product_atoms": 16,
+          "transported_determinant_of_moments_identity": "passed",
+          "spectator_probability_control": "no spectators"
+        }
+      ],
+      "truncated_Gaussian_moment_recurrence_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "scope": "Exact selected positive hook-field coordinates, shift invariance, transported Vandermonde expansion and free Gaussian determinant moments for k4..k8 in every p2..k-2. Finite product measures at k6 check the determinant-of-unnormalized-moments formula and reject omitted spectator probabilities. A formal polynomial identity checks the truncated Gaussian recurrence through order9, and exact rank-one algebra checks the adjacent map and Gaussian square-completion factor. The unrestricted positivity, harmonicity, Gaussian integral reduction and conditional spectral conclusion S91 are written arguments. The proposed truncated supersolution inequality S91e remains unproved; no quadrature or finite sample certifies it."
     },
     "representation_hermite_floors": {
       "cell_range": [

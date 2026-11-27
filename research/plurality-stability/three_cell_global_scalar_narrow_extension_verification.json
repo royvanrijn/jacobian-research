@@ -1,0 +1,18 @@
+{
+  "checker_sha256": "827b923ff66c2e976527b6489db79d3a1008db87d9ed8e4832f0595671e9f4cb",
+  "precision_bits": 100,
+  "panels": 16384,
+  "modes": 96,
+  "rows": 16,
+  "radius": 12,
+  "status": "pass",
+  "cap": "399/200",
+  "rho_bounds": [
+    "53/100",
+    "107/200"
+  ],
+  "correlation_slabs": 80,
+  "slab_width": "1/16000",
+  "tail_upper": 0.0013119370433400947,
+  "total_upper": 1.9932254233672213
+}

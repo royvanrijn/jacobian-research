@@ -1648,6 +1648,144 @@ def quadrature():
     return {"numpy_version": np.__version__, "scope": "Uncertified Nystrom exploration on [0,10]; no tail, discretization or rounding error enclosure; not an all-rho or fixed-rho proof.", "cases": output}
 
 
+def harmonic_hook_moment_controls():
+    """Exact bounded controls for S91; no truncated supersolution bound."""
+    def determinant(matrix):
+        matrix = [list(map(Q, row)) for row in matrix]
+        result = Q(1)
+        for col in range(len(matrix)):
+            pivot = next((i for i in range(col, len(matrix)) if matrix[i][col]), None)
+            if pivot is None:
+                return Q(0)
+            if pivot != col:
+                matrix[col], matrix[pivot] = matrix[pivot], matrix[col]
+                result = -result
+            value = matrix[col][col]
+            result *= value
+            for i in range(col+1, len(matrix)):
+                factor = matrix[i][col]/value
+                for j in range(col+1, len(matrix)):
+                    matrix[i][j] -= factor*matrix[col][j]
+        return result
+
+    def coordinate(v, j):
+        return sum(v[:j])-j*v[j]
+
+    def dot(a, b):
+        return sum(x*y for x, y in zip(a, b))
+
+    def gaussian_moment(r, mean, variance):
+        return sum(Q(math.factorial(r), math.factorial(r-2*j)*math.factorial(j)*2**j)
+                   *mean**(r-2*j)*variance**j for j in range(r//2+1))
+
+    cases, discrete_cases = [], []
+    rho, variance = Q(1, 2), Q(3, 4)
+    for k in range(4, 9):
+        q = k-2
+        x = [Q(0), Q(0)]+[-Q((i+1)*(i+2), 2) for i in range(q)]
+        x = [v-sum(x)/k for v in x]
+        p0 = [Q(1, 2)-Q(1, k)]*2+[Q(-1, k)]*q
+        b = [[Q(i == j)-Q(1, k) for i in range(k)] for j in range(2, k)]
+        w = [Q(1, 2), Q(1, 2), Q(-1)]+[Q(0)]*(k-3)
+        transform = lambda v: [a-2*c*dot(w, v) for a, c in zip(v, w)]
+        assert transform(b[0]) == [2*a-c for a, c in zip(p0, b[0])]
+        assert all(transform(v) == v for v in b[1:])
+        dx = [a-c*dot(w, x) for a, c in zip(x, w)]
+        assert dot(dx, dx)-dot(x, x) == -dot(w, x)**2/2
+
+        for p in range(2, q+1):
+            sign, degree = (-1)**((p-1)*(p-2)//2), p*(p-1)//2
+            components = list(itertools.combinations(range(2, k), p))
+            subsets = list(itertools.combinations(range(q), p))
+
+            def field(value, moved=False):
+                columns = [p0]
+                for r in range(1, p):
+                    power = [v**r for v in value]
+                    columns.append([v-sum(power)/k for v in power])
+                if moved:
+                    columns = list(map(transform, columns))
+                return [sign*determinant([[coordinate(col, j) for col in columns] for j in rows])
+                        for rows in components]
+
+            selected = field(x)
+            assert all(v > 0 for v in selected)
+            assert all(-v < 0 for v in selected)
+            assert field([v+Q(7, 3) for v in x]) == selected
+            assert field([Q(4, 3)*v for v in x]) == [Q(4, 3)**degree*v for v in selected]
+            for moved in (False, True):
+                vectors = list(map(transform, b)) if moved else b
+                reconstruction = []
+                for rows in components:
+                    value = sum(determinant([[x[i+2]**r for r in range(p)] for i in subset])
+                                *determinant([[coordinate(vectors[i], j) for i in subset] for j in rows])
+                                for subset in subsets)
+                    reconstruction.append(-sign*value/2)
+                assert reconstruction == field(x, moved)
+            for subset in subsets:
+                original = determinant([[x[i+2]**r for r in range(p)] for i in subset])
+                expected = determinant([[gaussian_moment(r, rho*x[i+2], variance) for r in range(p)]
+                                        for i in subset])
+                assert expected == rho**degree*original
+                assert expected != rho**(degree-1)*original
+            cases.append({"k": k, "p": p, "degree": degree,
+                          "strictly_positive_coordinates": len(selected),
+                          "wedge_expansion_shift_and_free_Gaussian_controls": "passed"})
+
+            if k == 6:
+                probabilities = (Q(1, 5), Q(1, 3))
+                supports = [(-Q(i+1), -Q(i+1, 2)) for i in range(q)]
+                mass = sum(probabilities)
+                moments = [[sum(probabilities[j]*supports[i][j]**r for j in range(2))
+                            for r in range(p)] for i in range(q)]
+                actual = [Q(0)]*len(components)
+                for choices in itertools.product(range(2), repeat=q):
+                    weight = math.prod(probabilities[j] for j in choices)
+                    value = [Q(0), Q(0)]+[supports[i][j] for i, j in enumerate(choices)]
+                    image = field(value, True)
+                    actual = [a+weight*v for a, v in zip(actual, image)]
+                expected = []
+                without_spectators = []
+                vectors = list(map(transform, b))
+                for rows in components:
+                    value = Q(-sign, 2)*sum(determinant([moments[i] for i in subset])
+                        *determinant([[coordinate(vectors[i], j) for i in subset] for j in rows])
+                        for subset in subsets)
+                    without_spectators.append(value)
+                    expected.append(value*mass**(q-p))
+                assert actual == expected
+                if p < q:
+                    assert actual != without_spectators
+                discrete_cases.append({"k": k, "p": p, "accepted_product_atoms": 2**q,
+                    "transported_determinant_of_moments_identity": "passed",
+                    "spectator_probability_control": "passed" if p < q else "no spectators"})
+
+    # T_r = P_r(mu,v) Phi + sigma Q_r(mu,u,v) phi, with v=sigma^2.
+    def add(*terms):
+        out = {}
+        for coefficient, value in terms:
+            for powers, c in value.items():
+                out[powers] = out.get(powers, Q(0))+coefficient*c
+        return {powers: c for powers, c in out.items() if c}
+
+    def times(value, powers):
+        return {tuple(a+b for a, b in zip(key, powers)): c for key, c in value.items()}
+
+    first, second = [{(0, 0, 0): Q(1)}, {(1, 0, 0): Q(1)}], [{}, {(0, 0, 0): Q(-1)}]
+    for r in range(2, 10):
+        first.append(add((1, times(first[-1], (1, 0, 0))), (r-1, times(first[-2], (0, 0, 1)))))
+        second.append(add((1, times(second[-1], (1, 0, 0))),
+                          (r-1, times(second[-2], (0, 0, 1))), (-1, {(0, r-1, 0): Q(1)})))
+    for r, (a, b) in enumerate(zip(first, second)):
+        derivative = {(i, j-1, h): j*c for (i, j, h), c in b.items() if j}
+        identity = add((1, a), (1, times(derivative, (0, 0, 1))),
+                       (-1, times(b, (0, 1, 0))), (1, times(b, (1, 0, 0))))
+        assert identity == {(0, r, 0): Q(1)}
+    return {"positive_harmonic_field_cases": cases, "truncated_product_moment_controls": discrete_cases,
+            "truncated_Gaussian_moment_recurrence_orders": list(range(10)),
+            "scope": "Exact selected positive hook-field coordinates, shift invariance, transported Vandermonde expansion and free Gaussian determinant moments for k4..k8 in every p2..k-2. Finite product measures at k6 check the determinant-of-unnormalized-moments formula and reject omitted spectator probabilities. A formal polynomial identity checks the truncated Gaussian recurrence through order9, and exact rank-one algebra checks the adjacent map and Gaussian square-completion factor. The unrestricted positivity, harmonicity, Gaussian integral reduction and conditional spectral conclusion S91 are written arguments. The proposed truncated supersolution inequality S91e remains unproved; no quadrature or finite sample certifies it."}
+
+
 def perimeter_controls():
     import numpy as np
     q = NormalDist().inv_cdf(2/3)
@@ -1699,6 +1837,7 @@ def main():
                          "standard_mass_weight": standard_mass_weight_control(),
                          "standard_hook_gaussian": standard_hook_gaussian_controls(),
                          "higher_exterior_hooks": higher_exterior_hook_checks(),
+                         "harmonic_hook_moments": harmonic_hook_moment_controls(),
                          "representation_hermite_floors": representation_hermite_floor_checks(),
                          "height_standard_reduction": height_standard_reduction_controls(),
                          "five_cell_mixed_certificate": five_cell_mixed_certificate(),

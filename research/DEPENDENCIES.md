@@ -10,9 +10,9 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 15234 claim/source nodes, 12358 implication rules and 134 documented equivalence components. conditional: 33; falsified: 34; open: 623; proved: 14544.
+The graph contains 15306 claim/source nodes, 12403 implication rules and 134 documented equivalence components. conditional: 33; falsified: 34; open: 623; proved: 14613; stale: 3.
 
-The complete endpoint inventory contains 683 records. Curated topic obligation lists omit 91 unresolved endpoints. Inspect the full graph from the repository root.
+The complete endpoint inventory contains 686 records. Curated topic obligation lists omit 93 unresolved endpoints. Inspect the full graph from the repository root.
 
 ```sh
 python3 research/scripts/research.py gaps --all
@@ -168,7 +168,7 @@ Replace `ID` with a node identifier below. Simulation is read only and explicitl
 
 Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have native integer, radial-primitive absolute scalar-nonpower witnesses in balanced degree4 and EVERY degree>=6, with the SAME fixed original markerZ surviving EVERY positive order. Every pure radially primitive balanced quintic is safe. Allowing radial factors gives degree-five counterexamples by padding an unsafe quartic. Three or more pairs have witnesses in EVERY balanced degree>=2 with one fixed marker at every order. All polynomial automorphisms preserve the normalized rank-one trace for every n>=2. Further reductions classify noncentral constant affine cubic shapes, exclude unsafe degree5/7 in the entire invariant-zero mixed cubic branch, and prove actual prime-balanced Image counterexamples automatically absolute scalar-nonpower. A constant-invariant/fixed-shape bridge isolates the smooth elliptic j frontier without treating constant j as a constant K(x)-curve. Every hypothetical unsafe exact-height3 degree5/7 member has nonzero discriminant and nonconstant j. The full automorphism orbits of the three specified Hopf seeds now have exact degree spectra: f4 all even degrees>=4, f6 all multiples of3>=6, and f8 the stated odd-multiplier spectrum with first prime11. Every affine reductive homogeneous space now has a normalized trace preserved by all algebraic automorphisms over every characteristic-zero extension. The trace is independent of presentation, preserved by isomorphisms, and compatible with marked normalized algebra trace along arbitrary finite-etale maps within the class; geometric K-action forms need no K-point. Explicit standard rational-form product and quaternion pairs now fail Mathieu over every characteristic-zero field, and EVERY nondegenerate even-dimensional quadratic complement of dimension>=4 has the same fixed-marked all-order failure. Over every formally real field, the standard compact-form factors and scalar torus separately have Mathieu kernels while their product fails, proved by rational Gram/SOS and exact Laurent cancellation. Every isotropic nondegenerate quadratic complement of dimension>=3 over any characteristic-zero field now has explicit all-order fixed-marker Mathieu counterexamples, including an absolutely non-proper-power phase. The seed has exact mixed moments and sharp pure-power and monomial-marker thresholds. A direct uniform normalizer now supplies a regular absolutely unit-nonpower pure phase and ONE fixed marker surviving every positive order on EVERY nondegenerate quadratic complement of dimension>=3 over EVERY characteristic-zero field, with sharp pure-power and monomial-marker thresholds. The normalized Reynolds kernel on a nondegenerate positive-dimensional quadratic complement is now classified over EVERY characteristic-zero field: Mathieu iff dimension<=2 iff no absolute unit-nonpower pure phase with ONE all-orders surviving marker. Within this exact family the global property and strong-witness existence are invariant under every scalar extension. Polyhedral joint-density normalizers give one fixed unit at every order on compact rational torus-normalizer quotients. Radial-wall invariant tests construct rational all-order unit counterexamples from actual nonabelian zero-submersion data. An exact ternary unitary/orthogonal radius law yields rational sharp pure-power and scalar-marker profiles on all specified data and full normalizer quotients. Positive polyhedral strata and actual invariant tests give fixed all-order Laurent units; a principal Weyl-face construction realizes this over every characteristic-zero extension for actual compact rational quotients with nonideal stabilizer Lie algebra. Algebraic reconstruction of actual principal-face densities and conditional finite amplifier certification are recorded with exact-data and full-component symmetry gates. A fixeddegree4 SO3-radius circuit gives explicit unitary-block product counterexamples in every n>=3 and sharp scalar-monomial marker profiles for every sufficient pure family a>=2n-3. The unitary SO3-block family now has a complete eventual scalar Laurent marker classification: the safe space is exactly tK[t^-1]. A terminating exact presentation-to-witness algorithm is proved for promised compact rational nonideal homogeneous inputs. A self-contained Gaussian method obstruction proves eventual positivity for every nonzero real polynomial radial amplifier in the displayed Laurent normalizer. For every characteristic-zero field and positive Laurent rank, the Gaussian_n times Laurent constant-term kernel is Mathieu exactly when n<=2; n>=3 has a native rational quadratic all-order unit counterpair. Exact circular homogenization gives the stated fixed-degree structured Gaussian/nullcone classifications. Native affine Gaussian phases in every Gaussian dimension and Laurent rank have exact pure/eventual/all-marker-safe classification by omission of zero from conv(supp a union supp sum b_i^2), with fixed-power large-prime detections in the opposite case. At positive Laurent rank the universal bounded-Gaussian-degree pure-to-safe implication holds exactly when n<=2 or d<=1. Full-sphere leading binary-form packets and exact-half roots have elementary infinite-nonvanishing obstructions; specified quintic four-root and five-double-root configurations are also excluded using scoped ordinary-prime theorems and locally verified full-End cases. The all-degree sphere phase class P(y)+xS(t) has exact pure/eventual/fullambient-marker classification by P(0)=0 and(P=0 or S=0),with uniform safe cutoff m>deg(marker). Every degree<=6 sphere phase of angular support[-1,1] has exact pure/eventual/full-sphere-marker classification: one-sided with zero height core or isotropic linear; safe members obey m>deg(marker). Newtonfaces reduce genuineQnonzero strippedquintics to exact18/15-dimensional residuals;evenmixedpurequintics requirext4andatleasttwo specifiednegativeleaders. Prime-face residue identities give individualeventualparameterdependence and properPURE/fixedtail parameterimages; explicitresidual andEVENquinticapplications leave finiteorproperalgebraictargets. Local End-case analysis reduces the specified cyclotomic E7/E9 sixfold signature to the absolutely simple full-EndE frontier; any field defining that action containsE. Known ordinary cases and the optional prime-face reverse refinement are tracked separately. Existing computable sphere prefixes and prime-face rigidity combine into algorithms for necessary parameter polynomials and exact finite geometric PURE parameter sets in the specified one-parameter charts. Balanced Prym ordinarity excludes the entire even D=0,BCnonzero quintic chart over every characteristic-zero field; with the old Newton boundary, a genuine mixed even eventual quintic must have nonzero y^5 coefficient. An exact rational chart certificate excludes finite native moment vanishing through14 in the normalized odd-angular D0 quintic slice. Repeated-cubic full-BD even quintic faces are non-eventually-pure; the distinct-root E5-sixfold residual reduces to absolutely simple full EndE5. The eight-coefficient odd-angular quintic family with BC nonzero has an exact sharp native moment14 obstruction, with a separate smooth Q101/number-field prefix13 witness. The seven-term C0 odd-angular quintic family with BD nonzero has an exact sharp native moment12 obstruction, with separate smooth Q103 and number-field prefix11 witnesses. In the exact eight-dimensional even-t/odd-angular stripped quintic subspace, PURE phases are exactly angular one-sided; all such phases are safe against every full quadric-algebra marker.
 
-**Computed obligation progress:** 11 falsified; 46 open; 19 proved / discharged.
+**Computed obligation progress:** 11 falsified; 45 open; 20 proved / discharged.
 
 **Authored scope assessment:** The universal GVC/GMC dimension classifications and Gaussian dimension-degree boundary are claimed closed in their exact domains. Higher-dimensional GMC is refuted by witnesses; general Gaussian extensions is not an unrestricted open GMC claim.
 
@@ -354,15 +354,17 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 
 **Authored scope assessment:** RMA1-RMA4 give all-positive-correlation weighted compactness and uniformly finite adverse radial spaces. RMA5-RMA12 give global polynomial angular losses and qualitative finite-order domination of every radial quadratic direction on compact correlation intervals. At99/100 a160-bit two-mode matrix dominates the isolated positive direction in the explicit span{f,g}, with margin1/30000 in coefficient norm. FA1-FA7 now prove finite-amplitude domination for every partition on[11/25,221/500], giving the explicit direct cutoff221/500. The nonlinear comparison on the remaining correlations stays open.
 
-**Authored scope assessment:** The ordinary-balanced tetrahedral standard block has a weighted spectral gap through 23/25. Together with the other symmetry sectors this gives a full interface gap in that range. It leaves the global four-cell comparison open.
-
-**Authored scope assessment:** The exact free-mass fractional negative-correlation theorem is dimension-uniform for each fixed k near zero. For k=3, Heilman's inequality extends to fractional assignments on the full negative voting interval. For growing k, the whole negative voting interval has a uniform additive O(|rho|/k) comparison and near-optimal mass control. The exact large-k comparison remains open.
+**Authored scope assessment:** For four cells the dihedral angular comparison overlaps the initial spectral certificate and proves the full balanced interface gap at every positive correlation. A finite first global transition must have a nonsimplex tied maximizer.
 
 **Authored scope assessment:** At rho=-1/3 the four-cell matched-mass tetrahedral pair has a certified weighted Hessian gap modulo common rotations. The gap upgrades to nearby measurable fractional pairs in a dimension-independent neighborhood of the pair orbit and the correlation. The common mass vector is free.
 
-**Authored scope assessment:** GAC1-GAC9 retain global angular compatibility across radii at every feasible amplitude. The exact rank-one loss is a2D disk optimization; three half-mass types have a sharp positive loss despite zero pairwise penalties. GAC10-GAC13 approximate the true prescribed-profile optimum with an explicit uniform finite-angular-order error. Neither a positive correction nor an approximation error proves the remaining global sign; the explicit all-partition cutoff stays221/500.
+**Authored scope assessment:** GAC1-GAC9 retain global angular compatibility across radii at every feasible amplitude. The exact rank-one loss is a2D disk optimization; three half-mass types have a sharp positive loss despite zero pairwise penalties. GAC10-GAC13 approximate the true prescribed-profile optimum with an explicit uniform finite-angular-order error. Neither a positive correction nor an approximation error proves the remaining global sign; this bound alone supplies no new cutoff; the separate current all-mass scalar proof reaches53/100.
 
-**Authored scope assessment:** For sufficiently large k, the full negative voting interval has a matched-mass weighted local gap of order log(k)/k and strict local measurable simplex minimization uniformly in d. Possible global same-partition improvers with free masses approach the simplex in label measure by V20. The radius required to turn this localization into the full exact global inequality is unresolved.
+**Authored scope assessment:** The five-cell full local gap holds through 41/50 and on a qualitative interval adjacent to one. The all-cell standard-sector rescaled gap has an exact positive Gaussian Neumann limit for each fixed k>=4. Overlap of the five-cell intervals remains unproved.
+
+**Authored scope assessment:** The full negative voting interval is proved for all sufficiently large alphabets and all d>=k-1. Actual same-partition Gaussian noise stability is minimized uniquely by the simplex up to its symmetries, over measurable fractions with free masses. The negative discrete low-influence corollary includes the voting endpoint. The common matched-mass pair result is local on the voting scale.
+
+**Authored scope assessment:** The sharp two-mode theorem computes the exact weighted first/second Fourier energy at every circular mass. A complete4D mass-cube cover supports an explicit finite-amplitude gap epsilon^2/500 at3/5 on the bounded DG5 radial family, for all centered unit label directions and arbitrary angular shapes. This is restricted-profile domination, not all-partition optimality at3/5. Shared first moments alone leave the positive DG39 witness unchanged; the two-mode or higher shared loss must be compared with the full adverse radial coefficient region.
 
 | Principal claim | Graph state | Dependency coverage | Current blockers |
 |---|---|---|---|
@@ -599,6 +601,8 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | [PIS-FOUR-CELL-INTERFACE-STANDARD-SCALAR-EQUIVALENCE](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
 | [PIS-FOUR-CELL-INTERFACE-GAP-THROUGH-17-25](plurality-stability/TETRAHEDRAL_STANDARD_GAP.md) | proved | partial | none in declared routes |
 | [PIS-FOUR-CELL-INTERFACE-GAP-THROUGH-23-25](plurality-stability/TETRAHEDRAL_STANDARD_GAP.md) | proved | partial | none in declared routes |
+| [PIS-FOUR-CELL-ALL-CORRELATION-INTERFACE-GAP](plurality-stability/TETRAHEDRAL_STANDARD_GAP.md) | proved | partial | none in declared routes |
+| [PIS-FOUR-CELL-FIRST-TRANSITION-FORCES-GLOBAL-TIE](plurality-stability/TETRAHEDRAL_STANDARD_GAP.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-RADIAL-SCALAR-FAILURE-AT-HALF](plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY](plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-HALF-CORRELATION-EXPLICIT-PROFILE-COMPARISON](plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) | proved | partial | none in declared routes |
@@ -614,6 +618,9 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | [PIS-THREE-CELL-NEAR-ONE-RADIAL-AMPLITUDE-CONCENTRATION](plurality-stability/THREE_CELL_RADIAL_MASS_CONCENTRATION.md) | proved | partial | none in declared routes |
 | [PIS-ALL-CELL-COMPRESSED-IMMANANT-KERNELS](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-NEAR-ONE-ACTUAL-EXTERIOR-CONFINEMENT](plurality-stability/THREE_CELL_NEAR_ONE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-NEAR-ONE-QUADRATIC-MASS-PENALTY](plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-NEAR-ONE-FOURTH-SCORE-EXPONENTIAL-LOCALIZATION](plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-NEAR-ONE-THREE-LABEL-EXTERIOR-COMPARISON](plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) | proved | partial | none in declared routes |
 | [PIS-ALL-CELL-NEAR-ONE-SEPARATED-EXTERIOR-COMPARISON](plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-NEAR-ONE-UNRESTRICTED-GROWING-EXTERIOR](plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) | proved | partial | none in declared routes |
 | [PIS-ALL-CELL-STANDARD-MASS-SCHUR-CRITERION](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
@@ -634,6 +641,9 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | [PIS-THREE-CELL-GLOBAL-FAILURE-ANNULAR-LOCALIZATION](plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) | proved | partial | none in declared routes |
 | [PIS-FIVE-CELL-MIXED-ALL-CORRELATION-GAP](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
 | [PIS-FIVE-CELL-INTERFACE-STANDARD-SCALAR-EQUIVALENCE](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
+| [PIS-FIVE-CELL-INTERFACE-GAP-THROUGH-41-50](plurality-stability/FIVE_CELL_STANDARD_GAP.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md) | stale | partial | PROOF-PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE (stale); SRC-PIS-STANDARD-SECTOR-NEAR-ONE-CONFINEMENT-AND-LIMIT (stale) |
+| [PIS-FIVE-CELL-INTERFACE-GAP-NEAR-ONE](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md) | stale | partial | PROOF-PIS-FIVE-CELL-INTERFACE-GAP-NEAR-ONE (stale); PROOF-PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE (stale); SRC-PIS-STANDARD-SECTOR-NEAR-ONE-CONFINEMENT-AND-LIMIT (stale) |
 | [PIS-THREE-CELL-REFLECTION-ORBIT-COMPARISON](plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) | proved | partial | none in declared routes |
 | [PIS-ALL-CELL-STANDARD-INITIAL-SPECTRAL-MINIMUM](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
 | [PIS-SEVEN-PLUS-CELL-ANTIPODAL-POINTWISE-OBSTRUCTION](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
@@ -695,6 +705,10 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | [PIS-THREE-CELL-GAUSSIAN-TRANSITION-TOP-EIGENVALUE](plurality-stability/THREE_CELL_PRODUCT_RECOMBINATION.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-TWO-COPY-CHANNEL-COMPARISON](plurality-stability/THREE_CELL_PRODUCT_RECOMBINATION.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-NEAR-ISOTROPIC-FINITE-PRODUCT-RIGIDITY](plurality-stability/THREE_CELL_PRODUCT_RECOMBINATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-89-200](plurality-stability/THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-447-1000](plurality-stability/THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-107-200](plurality-stability/THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-FINITE-AMPLITUDE-RELATIVE-STABILITY](plurality-stability/THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-8859-20000](plurality-stability/THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-221-500](plurality-stability/THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md) | proved | partial | none in declared routes |
 | [PIS-ALL-CELL-ANTISYMMETRY-HEIGHT-KERNEL-HIERARCHY](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
@@ -740,6 +754,26 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | [PIS-NEAR-UNIFORM-GAUSSIAN-COVARIANCE-COERCIVITY](plurality-stability/NEGATIVE_VOTING_COVARIANCE.md) | proved | partial | none in declared routes |
 | [PIS-NEGATIVE-VOTING-CENTROID-SPREAD](plurality-stability/NEGATIVE_VOTING_INTERVAL.md) | proved | partial | none in declared routes |
 | [PIS-LARGE-ALPHABET-NEGATIVE-VOTING-LOCALIZATION](plurality-stability/NEGATIVE_VOTING_INTERVAL.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-ONE-HALF](plurality-stability/THREE_CELL_GLOBAL_SCALAR_THROUGH_HALF.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-53-100](plurality-stability/THREE_CELL_GLOBAL_SCALAR_THROUGH_HALF.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CANDIDATE-DISCRETE-THROUGH-53-100](plurality-stability/THREE_CELL_GLOBAL_SCALAR_THROUGH_HALF.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-HARMONIC-HOOK-FIELDS-MOMENT-REDUCTION](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) | proved | partial | none in declared routes |
+| [PIS-LARGE-ALPHABET-NEGATIVE-VOTING-EXPONENTIAL-LOCALIZATION](plurality-stability/NEGATIVE_VOTING_EXPONENTIAL_LOCALIZATION.md) | proved | partial | none in declared routes |
+| [PIS-LARGE-ALPHABET-NEGATIVE-VOTING-POLYNOMIAL-LOCAL-RADIUS](plurality-stability/NEGATIVE_VOTING_POLYNOMIAL_NEIGHBORHOOD.md) | proved | partial | none in declared routes |
+| [PIS-LARGE-ALPHABET-NEGATIVE-VOTING-EXACT](plurality-stability/NEGATIVE_VOTING_INTERVAL.md) | proved | partial | none in declared routes |
+| [PIS-LARGE-ALPHABET-NEGATIVE-VOTING-DISCRETE](plurality-stability/NEGATIVE_VOTING_INTERVAL.md) | proved | partial | none in declared routes |
+| [PIS-NEGATIVE-SIMPLEX-RELATIVE-QUADRATIC-HERMITE](plurality-stability/NEGATIVE_VOTING_RELATIVE_TAIL.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-SHARP-FIRST-SECOND-ANGULAR-ENERGY](plurality-stability/THREE_CELL_SHARP_TWO_MODE_ENERGY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-GLOBAL-TWO-MODE-MATRIX-AND-POLAR-BOUND](plurality-stability/THREE_CELL_SHARP_TWO_MODE_ENERGY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-CERTIFIED-TWO-MODE-CUBE-AND-AMPLITUDE-AT-THREE-FIFTHS](plurality-stability/THREE_CELL_SHARP_TWO_MODE_ENERGY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-SHARED-FIRST-MOMENT-CRITERION-FAILURE-AT-99-100](plurality-stability/THREE_CELL_SHARP_TWO_MODE_ENERGY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-SHARP-POSITIVE-CIRCULAR-TAYLOR-COEFFICIENT](plurality-stability/THREE_CELL_SHARP_POSITIVE_ARC_ENVELOPE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-20](plurality-stability/THREE_CELL_SHARP_POSITIVE_ARC_ENVELOPE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-29-50](plurality-stability/THREE_CELL_SHARP_POSITIVE_ARC_ENVELOPE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CANDIDATE-DISCRETE-THROUGH-29-50](plurality-stability/THREE_CELL_SHARP_POSITIVE_ARC_ENVELOPE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-SHARP-ARC-QUARTIC-AND-FIRST-MOMENT-DEFICIT](plurality-stability/THREE_CELL_SHARP_SCALAR_REMAINDERS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-QUARTIC-ONE-MODE-AMPLITUDE-CRITERION](plurality-stability/THREE_CELL_SHARP_SCALAR_REMAINDERS.md) | proved | partial | none in declared routes |
+| [PIS-LARGE-ALPHABET-NEGATIVE-VOTING-COVARIANCE-CONTROL](plurality-stability/NEGATIVE_VOTING_INTERVAL.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -756,22 +790,22 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | GAP-IMAGE-PRACTICAL-PURITY-TELESCOPING-BOUND | mathematical | open | partial | Develop a certified multivariable telescoping backend and a usable explicit bound on B(d) and B(n,d). Existence and computability are proved; ordinary scalar order and coefficient degrees alone cannot bound delayed formal solutions. The exact two-height class already has an explicit quartic prefix. Classifying safe forms and individual uncovered prime degrees are separate questions. | GAP-IMAGE-PRACTICAL-PURITY-TELESCOPING-BOUND (open) |
 | GAP-IMAGE2-ODD-PRIME-PRIMITIVE | mathematical | falsified | partial | Existence over a characteristic-zero field of a radially primitive, absolutely nonpower balanced quintic Image counterexample in two contraction pairs. | none in declared routes |
 | GAP-PIS-ALL-CELL-POSITIVE-CORRELATION | mathematical | open | partial | For every k>=2, d>=k-1 and every 0<rho<1 prove that the balanced regular-simplex Gaussian partition globally maximizes noise stability, with equality rigidity. The fixed-k small-correlation interval is now proved internally under the accepted first-moment input. The full correlation range remains open here. At a finite first continuation endpoint, rule out a nonsimplex tied global maximizer and improving maximizers approaching the simplex orbit. Local stability does not exclude the first mechanism, and the pointwise perimeter limit does not by itself control moving maximizers. The continuation obstruction is now sharpened: at a finite first endpoint there is a nonsimplex tied global maximizer or an additional nonrotational interface zero mode. Under B10, the uniform nearby comparison B11 already handles all measurable changes. | GAP-PIS-ALL-CELL-POSITIVE-CORRELATION (open) |
-| GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL | mathematical | open | partial | For every fixed k>=2 and every 0<rho<1, establish or refute nonnegativity of the full Gaussian simplex interface form on balanced L2 facet speeds with exactly the geometric rotational kernel. The assertion is now proved with an explicit dimension-independent gap for k=3 at every positive correlation (and is vacuous in the active k=2 space). For k=4 the full form has a positive dimension-independent gap through rho=23/25 by the weighted tetrahedral spectral certificate. For k>=5 the full form is proved on the explicit initial interval rho<=1/(6*sqrt(3)*k*(k-1)) by S83, while the remaining arbitrary-correlation obligation is open. A positive spectral answer still does not rule out a nonsimplex tied global maximizer. | GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL (open) |
-| GAP-PIS-BALANCED-POSITIVE-CORRELATION | mathematical | open | partial | Determine whether any balanced four-cell Gaussian partition beats the regular tetrahedron at an arbitrary positive correlation. An internally proved dimension-independent small-positive-correlation interval is now available, using normal-flux compactness and the accepted first-moment input; the full range 0<rho<1 remains unresolved here. Every proper reflected swap loses at every positive correlation, while general asymmetric cycles beyond the small interval remain open. | GAP-PIS-BALANCED-POSITIVE-CORRELATION (open) |
+| GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL | mathematical | open | partial | For every fixed k>=2 and every 0<rho<1, establish or refute nonnegativity of the full Gaussian simplex interface form on balanced L2 facet speeds with exactly the geometric rotational kernel. The assertion is proved with dimension-independent gaps for k=3 and k=4 at every positive correlation, and is vacuous in the active k=2 space. The tetrahedral proof uses the dihedral comparison and the initial spectral certificate. In five cells the full gap holds through 41/50 and on a qualitative interval adjacent to one. For k>=6 S83 proves the full form on the explicit initial interval rho<=1/(6*sqrt(3)*k*(k-1)); the standard sector is also proved near one at every fixed k, with the remaining higher-cell blocks still to be controlled. A positive spectral answer still does not rule out a nonsimplex tied global maximizer. | GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL (open) |
+| GAP-PIS-BALANCED-POSITIVE-CORRELATION | mathematical | open | partial | Determine whether any balanced four-cell Gaussian partition beats the regular tetrahedron at an arbitrary positive correlation. An internally proved dimension-independent small-positive-correlation interval is now available, using normal-flux compactness and the accepted first-moment input; the full range 0<rho<1 remains unresolved here. Every proper reflected swap loses at every positive correlation, while general asymmetric cycles beyond the small interval remain open. The all-correlation interface theorem forces a nonsimplex global tie at any finite first tetrahedral transition. | GAP-PIS-BALANCED-POSITIVE-CORRELATION (open) |
 | GAP-PIS-DISTANT-COMPACT-CORE-COERCIVITY | mathematical | open | partial | For each fixed k>=2 and each positive orbit-distance cutoff eta within the L1 local neighborhood, find R>=2, theta>0 and K>=0 certifying (14) on the compact active-space body of fractional core transfers at the recorded label-change, mass and positive-semidefinite moment tolerances. Require the quantitative absorption condition of (13)-(14). A strict absolute core bound is sufficient. Zhang's qualitative theorem implies existence for large R; the goal is a proof or certified bound independent of that global comparison. | GAP-PIS-DISTANT-COMPACT-CORE-COERCIVITY (open) |
 | GAP-PIS-EXACT-ARC-SECANT-CRITERION-ALL-CORRELATION | mathematical | falsified | partial | The assertion that the explicit all-profile upper bound E_rho(p) in DG39 is nonpositive for every balanced profile and every0<rho<1 is false. At99/100 let g(t)=sum n_j*(exp(-lambda_j*t)-1/(1+lambda_j))/1000 with lambda(1,4,16,64,256,1024), n(27,37,74,181,145,1000). It is bounded by183/125 and exactly mean zero. The feasible balanced profiles p=1/3+epsilon*(1,-1,0)*g have E_rho(p)/(2epsilon^2) tending to a value in[1.202983953209141e-6,1.2029839532091414e-6]. This refutes a sufficient criterion, not DG39 as an upper bound or simplex optimality. | none in declared routes |
 | GAP-PIS-EXPLICIT-GAMMA-CRITERION-ALL-CORRELATION | mathematical | falsified | partial | The assertion that the right side of DG29, with the explicit Gamma of DG26, is nonpositive for every balanced circular mass profile and every 0<rho<1 is false. At rho=3/5, profiles p(sqrt(2t))=1/3+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34) are feasible and balanced for small epsilon, and the right side divided by 2epsilon^2 tends to a number in [0.0038888594281296417,0.0043384122595988344]. This does not refute the valid upper bound DG29 or simplex optimality. | none in declared routes |
 | GAP-PIS-FULL-RANK-STATIONARY-STABILITY | mathematical | open | partial | Every centered rank-three centroidal balanced Gaussian affine tuple in dimension three, except the tetrahedral centroid tuple up to orthogonal maps and label permutations, has a site perturbation increasing J=2F-\|\|z\|\|_F^2 after exact rebalancing. A positive second variation in the retained Hessian is sufficient; such a classification is not proved. | GAP-PIS-FULL-RANK-STATIONARY-STABILITY (open) |
 | GAP-PIS-GENERAL-THREE-CELL-CYCLIC-SWAPS | mathematical | open | partial | For every n>=3, 0<rho<1 and equal-measure measurable seeds B_i subset T_i for i=1,2,3, decide nonnegativity of the chosen forward-cycle loss (CY1). The permutation-equivariant S3 subfamily is proved. General seeds, including C3 orbit seeds without the stabilizer-reflection symmetry, still require control of both the linear score loss and quadratic cross-interactions in (CY2). No reduction of arbitrary competitors to cycles is assumed. | GAP-PIS-GENERAL-THREE-CELL-CYCLIC-SWAPS (open) |
-| GAP-PIS-LARGE-ALPHABET-FULL-NEGATIVE-VOTING | mathematical | open | partial | Prove there is M>=3 such that for every k>=M, d>=k-1, and -1/(k-1)<=rho<0, the central regular simplex minimizes actual Gaussian same-partition noise stability among all measurable fractional k-label assignments, with cell masses unrestricted. The fixed-k small-negative theorem is dimension-uniform but has no voting-scale threshold. The full voting interval has a dimension-uniform O(\|rho\|/k) additive comparison. The second-degree estimate forces W1(f)>=F_k+\|\|p-1/k\|\|^2/r-O(r/k) for possible improvers, excluding the orthoplex obstruction to coarser moment localization. The full negative voting interval now has a local weighted gap for sufficiently large k, and possible global improvers approach the simplex in label measure at the rate in V20. | GAP-PIS-LARGE-ALPHABET-FULL-NEGATIVE-VOTING (open) |
-| GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY | mathematical | open | partial | For every fixed k>=3 prove or refute existence of epsilon_k>0 such that all balanced Gaussian partitions in d>=k-1 have stability at most the regular simplex for 1-epsilon_k<rho<1, with equality rigidity. Quantitative multi-bubble stability must be paired with nonlocal errors relative to moving competitors; the fixed-partition perimeter limit and fixed-b<1 exterior estimates do not settle this statement. CT12 proves strict comparison away from higher junctions for any fixed cell count and a necessary relative junction-loss bound for unrestricted ties or improvers. | GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY (open) |
+| GAP-PIS-HIGHER-HOOK-HARMONIC-SUPERSOLUTION | mathematical | open | partial | For every k>=6, 3<=p<q=k-2 and z in the ordered facet chamber, prove or refute the coordinatewise unit-variance Gaussian integral inequality S91f for Wp. By the exact rescaling z=rho*x/sigma this is equivalent to S91e for all positive correlations, or to its uniform-in-x pointwise field comparison at any one correlation. A spectral gap at one correlation alone does not supply this stronger condition. This is a sufficient method for all remaining exterior-hook blocks, not an equivalent reformulation of their stability and not a necessary condition for S37. It is already settled at p2 by S73 and at p=q>=3 by S63-S66. No bounded quadrature or sampled point certifies the stated uniform comparison. | GAP-PIS-HIGHER-HOOK-HARMONIC-SUPERSOLUTION (open) |
+| GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY | mathematical | open | partial | For every fixed k>=3 prove or refute existence of epsilon_k>0 such that all balanced Gaussian partitions in d>=k-1 have stability at most the regular simplex for 1-epsilon_k<rho<1, with equality rigidity. Quantitative multi-bubble stability must be paired with nonlocal errors relative to moving competitors; the fixed-partition perimeter limit and fixed-b<1 exterior estimates do not settle this statement. CT12 proves strict comparison away from higher junctions for any fixed cell count and a necessary relative junction-loss bound for unrestricted ties or improvers. CT14–CT18 also treat triple junctions with fourth-score separation at the same radius scale and bound the necessary inner loss linearly in d_R. For k=4, arbitrary exterior-only changes beyond order (1-rho)^(-1/6) are excluded. CT19–CT20 give exponential fourth-score localization for actual maximizers, reducing the tetrahedral sign to polynomial-strength coercivity on a growing ball. | GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY (open) |
 | GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER | mathematical | open | partial | For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. | GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER (open) |
 | GAP-PIS-NORMALIZED-DEFICIT-MONOTONICITY | mathematical | falsified | partial | The candidate universal law says rho -> (S_rho(T)-S_rho(A))/arccos(rho) is nondecreasing on (0,1) for every fixed balanced finite-Gaussian-perimeter k-cell partition A in d>=k-1. FALSIFIED already for k=3,d=2 by the three slabs D5: D9 gives c+beta3*acos(rho)+O(acos(rho)^2), above its limit c near one. This falsifies this precise candidate, not every normalized law or simplex optimality. | none in declared routes |
 | GAP-PIS-POSITIVE-RADIAL-SCALAR-ALL-CORRELATION | mathematical | falsified | partial | The assertion that <f,Kplus_rho f> <=2 integral Jplus_rho*f^2 dnu for every 0<rho<1 and every bounded mean-zero f in L2(exp(-t)dt) is false. The explicit f=exp(-t)+2exp(-16t)-21/34 at rho=1/2 has quotient>2.07. Additive centering cannot change its quadratic form. This falsifies an optional sufficient method beyond its source range, not any Gaussian partition inequality or Heilman Theorem A.1. | none in declared routes |
 | GAP-PIS-SHARP-FIRST-MOMENT-CRITERION-ALL-CORRELATION | mathematical | falsified | partial | The assertion that DG29 with Gamma replaced by the explicit Gamma_sharp of DG34 is nonpositive for all balanced profiles and every0<rho<1 is false. For rho7/10 and p(sqrt(2t))=1/3+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34), its right side divided by2epsilon^2 tends to a value in[0.012105848280513554,0.012685028889351772]. DG8 proves that this penalty is exact among first-moment norm-and-closure constraints near balanced profiles. This does not refute DG29 as an upper bound, or the original Gaussian inequality. | none in declared routes |
 | GAP-PIS-STATIONARY-STABLE-CLASSIFICATION | mathematical | open | partial | For fixed k>=3 and 0<rho<1, determine whether every balanced stationary partition with nonpositive second variation under all mass-preserving smooth deformations must be simplicial. Specify and justify the admissible regularity and junction hypotheses; prove the regular/equal-mass structure rather than assuming it. Ordinary stationarity and second-variation stability are the target, without importing hyperstability as an unstated extra condition. | GAP-PIS-STATIONARY-STABLE-CLASSIFICATION (open) |
-| GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL | goal | open | partial | For every 0<rho<1 and d>=2 prove global simplex Gaussian optimality for measurable partitions of masses 1/3 with equality rigidity, then obtain the balanced low-influence discrete plurality corollary. A first global endpoint must exceed the implicit proved lower cutoff above 11/25 and, if below one, must have a nonsimplex tied global maximizer. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. | GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL (open) |
-| GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY | mathematical | open | partial | For every d>=2, every0<rho<1 and every ordinary balanced Gaussian three-cell partition A, prove Qtilde_rho(1_A-1_T)<=2L_rho(A;T). This is global three-cell Gaussian simplex optimality. The explicit certified direct interval is0<rho<=221/500: DG17/FA1-FA7 certify a global finite-amplitude radial/angular comparison on[11/25,221/500], extending DG10 and DG4. Equal circular masses are settled at every positive correlation. The separate near-one result proves a qualitative interval adjacent to1, but no certified overlap closing the intermediate range is established. In the polar route the exact remaining comparison is R_rho<=D_rho+C_rho. DG5 excludes the scalar all-rho sufficient estimate at1/2. DG6-DG9 retain closure and exact arc interactions and prove restricted profile comparisons, but their sufficient all-profile criteria fail at explicit certified profiles. The complete all-positive-correlation target remains open. The adopted joint-angular theorem now proves the comparison whenever the squared circular-mass deviation is small on a fixed annulus, uniformly on any compact positive correlation interval, with arbitrary angular shapes and arbitrary inner and outer profiles. DG11 combines it with the direct lower and qualitative near-one intervals: any strict failure in any dimension has a planar global maximizer with a definite annular discrepancy in one fixed intermediate correlation range. Excluding those separated profiles remains open. DG12 adds an exact all-reflection cut condition preserving every circular mass. It proves a monotone sorting step for at most two pair types, and falsifies the universal type-constant step with all three types by an explicit balanced construction; it does not close the global inequality. DG13 shows that any nonsimplex actual maximizer must exhibit all three reflected pair types for some reflection. Combined with annular localization and a proved strong compactness argument, every strict failure has a planar maximizing representative detected by a finite fixed family of reflections with uniformly positive masses of all three types. These necessary witnesses and their positive scalar polarization defect are not yet excluded. DG14 proves that even a single ordinary balanced global partition cannot always be replaced nondecreasingly by consecutive arcs at fixed circular masses, for every fixed positive correlation and even uniformly interior mass profiles. It controls radial self-interactions and all measurable rotations, strengthening the earlier bilinear-pair obstruction. A classification restricted to actual global maximizers is not falsified. The current direct lower interval is qualitatively stronger than the explicit11/25 cutoff: ST1-ST6, adopted in DG15, prove comparison for all0<rho<rho_s+epsilon, where11/25<rho_s<1/2 is the first separated scalar obstruction above the certified range and epsilon>0. Strict angular loss of every nonzero scalar null profile and annular coercivity cross that obstruction directly. That qualitative argument alone supplies no numerical endpoint or overlap with the near-one interval. RMA1-RMA4 now isolate a uniformly finite adverse scalar radial space at every compact positive correlation interval, including above1/2. Polynomial angular moment losses give a stronger global upper bound. Some finite angular order dominates the complete radial quadratic space on each compact interval; ordertwo explicitly dominates the old positive direction in span{f,g} at99/100. This is directional domination, not the all-feasible-amplitude nonlinear inequality. FA1-FA7 now realize the nonlinear amplitude program on[11/25,221/500]: feasibility bounds the adverse one-mode amplitude below27/1000 and an annular angular penalty absorbs its positive scalar contribution plus the trial residual. This proves the all-partition direct cutoff221/500; the remaining all-correlation nonlinear comparison is still open. GAC1-GAC9 now retain the same first moment slices across radii via an exact global rank-one optimization. A sharp three-type half-mass loss is positive even when every independently optimized pair deficit vanishes, and remains positive under sufficiently small integrated mass errors. GAC10-GAC13 give a global finite-angular-order envelope with an explicit all-amplitude error uniform over all profiles on each compact correlation range. These results strengthen the global comparison but do not establish the missing scalar-versus-angular sign. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. | GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY (open) |
+| GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL | goal | open | partial | For every 0<rho<1 and d>=2 prove global simplex Gaussian optimality for measurable partitions of masses 1/3 with equality rigidity, then obtain the balanced low-influence discrete plurality corollary. A first global endpoint must exceed the implicit proved lower cutoff above 11/25 and, if below one, must have a nonsimplex tied global maximizer. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. The current explicit global lower-correlation interval reaches 29/50. | GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL (open) |
+| GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY | mathematical | open | partial | For every d>=2, every0<rho<1 and every ordinary balanced Gaussian three-cell partition A, prove Qtilde_rho(1_A-1_T)<=2L_rho(A;T). This is global three-cell Gaussian simplex optimality. The current explicit unrestricted direct comparison is0<rho<=53/100 by GH1-GH10, adopted in DG20. Its sharper all-mass arc envelope and positive radial feature certificate replace the older scalar cutoff; the full all-positive-correlation target remains open. The original finite-amplitude comparison begins with the interval 0<rho<=221/500: DG17/FA1-FA7 certify a global finite-amplitude radial/angular comparison on[11/25,221/500], extending DG10 and DG4. Equal circular masses are settled at every positive correlation. The separate near-one result proves a qualitative interval adjacent to1, but no certified overlap closing the intermediate range is established. In the polar route the exact remaining comparison is R_rho<=D_rho+C_rho. DG5 excludes the scalar all-rho sufficient estimate at1/2. DG6-DG9 retain closure and exact arc interactions and prove restricted profile comparisons, but their sufficient all-profile criteria fail at explicit certified profiles. The complete all-positive-correlation target remains open. The adopted joint-angular theorem now proves the comparison whenever the squared circular-mass deviation is small on a fixed annulus, uniformly on any compact positive correlation interval, with arbitrary angular shapes and arbitrary inner and outer profiles. DG11 combines it with the direct lower and qualitative near-one intervals: any strict failure in any dimension has a planar global maximizer with a definite annular discrepancy in one fixed intermediate correlation range. Excluding those separated profiles remains open. DG12 adds an exact all-reflection cut condition preserving every circular mass. It proves a monotone sorting step for at most two pair types, and falsifies the universal type-constant step with all three types by an explicit balanced construction; it does not close the global inequality. DG13 shows that any nonsimplex actual maximizer must exhibit all three reflected pair types for some reflection. Combined with annular localization and a proved strong compactness argument, every strict failure has a planar maximizing representative detected by a finite fixed family of reflections with uniformly positive masses of all three types. These necessary witnesses and their positive scalar polarization defect are not yet excluded. DG14 proves that even a single ordinary balanced global partition cannot always be replaced nondecreasingly by consecutive arcs at fixed circular masses, for every fixed positive correlation and even uniformly interior mass profiles. It controls radial self-interactions and all measurable rotations, strengthening the earlier bilinear-pair obstruction. A classification restricted to actual global maximizers is not falsified. The current direct lower interval is qualitatively stronger than the explicit11/25 cutoff: ST1-ST6, adopted in DG15, prove comparison for all0<rho<rho_s+epsilon, where11/25<rho_s<1/2 is the first separated scalar obstruction above the certified range and epsilon>0. Strict angular loss of every nonzero scalar null profile and annular coercivity cross that obstruction directly. That qualitative argument alone supplies no numerical endpoint or overlap with the near-one interval. RMA1-RMA4 now isolate a uniformly finite adverse scalar radial space at every compact positive correlation interval, including above1/2. Polynomial angular moment losses give a stronger global upper bound. Some finite angular order dominates the complete radial quadratic space on each compact interval; ordertwo explicitly dominates the old positive direction in span{f,g} at99/100. This is directional domination, not the all-feasible-amplitude nonlinear inequality. FA1-FA7 now realize the nonlinear amplitude program on[11/25,221/500]: feasibility bounds the adverse one-mode amplitude below27/1000 and an annular angular penalty absorbs its positive scalar contribution plus the trial residual. This proves the all-partition direct cutoff221/500; the remaining all-correlation nonlinear comparison is still open. GAC1-GAC9 now retain the same first moment slices across radii via an exact global rank-one optimization. A sharp three-type half-mass loss is positive even when every independently optimized pair deficit vanishes, and remains positive under sufficiently small integrated mass errors. GAC10-GAC13 give a global finite-angular-order envelope with an explicit all-amplitude error uniform over all profiles on each compact correlation range. These results strengthen the global comparison but do not establish the missing scalar-versus-angular sign. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. The all-amplitude GH comparison now proves the explicit cutoff 29/50 with equality rigidity on the added interval. FA9–FA10 now certify 0<rho<=447/1000 using projected residuals and radius-weighted angular errors. FA11 supplies a uniform planar score margin and an unevaluated right neighborhood. FA12 retains the first angular deficit in the separate scalar comparison through 53/100 and proves a uniform score margin with a positive unevaluated right neighborhood. The adjoining scalar slab through 107/200 is directed-certified, with the FA12 relative margin continuing beyond this explicit endpoint. TME1-TME11 now give the sharp all-mass first/second energy tradeoff, global two-mode matrix-field certificates and an extra nonnegative shared polynomial loss. A complete cube certificate makes the angular losses outweigh the positive scalar contribution at3/5 for every centered unit label direction and all\|epsilon\|<=1/40 of the explicit bounded radial profile. TME6 proves that exact sharing of first moments alone cannot fix DG39 on its equal-pair99/100 witness. The full finite-space/all-amplitude domination remains open. FA13 extends the relative score margin through the independent sharp scalar cutoff 29/50 and yields a positive unevaluated right neighborhood. | GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY (open) |
 | GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX | mathematical | open | partial | Determine whether an actual balanced planar three-cell global maximizer at 0<rho<1 can have a positive-area bounded component outside the closure of one strict winner set. The component may contain one or both other labels. The third-negative-direction argument excludes centered disks and some translated circles, with an exclusion also for thin annular trapping. Size, exterior-interaction and angular restrictions leave the unrestricted geometry open. | GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX (open) |
 | GAP-PIS-THREE-CELL-GLOBAL-PROFILE-CONSECUTIVE-ARC-REDUCTION | mathematical | falsified | partial | For each fixed0<rho<1 there exists an ordinary balanced planar partition A whose Gaussian stability strictly exceeds the supremum over every partition C with the same circular masses and consecutive-arc sections at almost every radius. Competitors may choose arbitrary measurable rotations and either cyclic order at every radius. The construction has a thin inner annulus of balanced masses with two opposite label arcs and a disconnected third label, an outer annulus of half/half/zero masses, and pure radial background chosen for exact balance. An explicit cross gap, outer first-harmonic phase coercivity and a completed-square estimate control all self-interactions and rotations. The counterexample persists with all circular masses uniformly positive. This refutes a universal mass-preserving global arc rearrangement, not simplex optimality or a statement restricted to actual global maximizers. The unregularized example has moment rankone. | none in declared routes |
 | GAP-PIS-THREE-CELL-TYPE-CONSTANT-POLARIZATION | mathematical | falsified | partial | The assertion that every ordinary balanced three-cell partition admits a nondecreasing reflection-pair swap choosing one orientation for each unordered label-pair type is false. For every fixed0<rho<1, DG12 specifies a reflection and an ordinary balanced planar partition with types(12,23,31,12) on four reflected patch pairs. The split signs(1,-1,1,-1) beat every type-constant orientation, uniformly by4333*epsilon^2/6400>0. All swaps in this class preserve each circular mass. This does not falsify simplex optimality or the exact all-cut criterion. | none in declared routes |
@@ -789,6 +823,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | VERIFY-GAUSSIAN-H21-CURRENT-PROOF | verification | open | complete | Independent mathematical review of the enlarged H21 proof, including the full marked-curve comparison, sharp common-root strip, actual simple-origin kernel and full residual inverse-kernel contour proof. Internal source audits have checked the displayed universal arguments and reconciled the finite controls with their limited scopes; these are not independent or external mathematical review. | VERIFY-GAUSSIAN-H21-CURRENT-PROOF (open) |
 | VERIFY-PIS-ALL-CELL-NEAR-ONE-SEPARATED-EXTERIOR | verification | open | partial | Independently reconstruct CT12-CT13, the merging and reference-change estimates, the randomized seam and dimension-uniform active slicing, and the thin perturbation scale example. The higher-junction problem remains separate. | VERIFY-PIS-ALL-CELL-NEAR-ONE-SEPARATED-EXTERIOR (open) |
 | VERIFY-PIS-DIMENSION-INDEPENDENT-LOCAL-COMPARISON | verification | open | partial | Independently reconstruct L1-L3: conditional facet covariance and centered edge potentials, uniform nearest-moment alignment, transverse Hermite cancellation, fractional active flux, and the use of Zhang's fractional equality case for dimension-uniform global localization. | VERIFY-PIS-DIMENSION-INDEPENDENT-LOCAL-COMPARISON (open) |
+| VERIFY-PIS-LARGE-ALPHABET-NEGATIVE-VOTING-EXACT | verification | open | partial | Independently reconstruct VL1–VL12, PN1–PN11 and VG1–VG2, including the centered weighted Hessian mass penalty, prescribed-mass covariance path, and smoothed ordering application. Verify the cited multi-bubble and common-noise maximum results in the scopes used. The current audit is internal. | VERIFY-PIS-LARGE-ALPHABET-NEGATIVE-VOTING-EXACT (open) |
 | VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF | verification | open | partial | Independently review C3-C12 and the fixed-cell extension A1-A9 in SMALL_POSITIVE_CORRELATION_INTERVAL.md: all-cell interface kernel from M2, tree-bump balance correction, reflection margins, dimension-dependent weighted tails, exact moment gauge, normal-flux limits without junction mass, ell/2 normalization, product-kernel limit, general-k dimension reduction and positive-correlation continuation compactness. Imported first-moment and geometric proofs retain their separate audit limits. The current proof is internal, not independent mathematical or external review. Also audit POSITIVE_CORRELATION_CONTINUATION.md B2-B14: the strict Gaussian exponent window, Hilbert-Schmidt full interaction, rotational mixed nullity, variable facet coefficient and sharp half factor, weak product-kernel convergence, uniform conditional local growth and the refined first-transition alternative. B10 remains a hypothesis outside the small-correlation interval. | VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF (open) |
 | VERIFY-PIS-QUANTITATIVE-CORE-TAIL-CONTINUATION | verification | open | partial | Check the normal projection, compact interaction estimate and correction maps of B15-B16, the band truncation and strict certificate completeness of B17, and the equality continuation past 221/500. The finite-amplitude directed certificate retains its separate review scope. | VERIFY-PIS-QUANTITATIVE-CORE-TAIL-CONTINUATION (open) |
 | VERIFY-PIS-QUANTITATIVE-PARTITION-STABILITY | verification | open | partial | Review the frozen external preprint application and written C1--G2 proof, especially the score-space coarea normalization, uniform facet bound, covariance coercivity, singular-value alignment and global margin step. The current derivation and application audit are internal; no independent mathematical or external review has occurred. | VERIFY-PIS-QUANTITATIVE-PARTITION-STABILITY (open) |
@@ -831,6 +866,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | GAP-PIS-NEARBY-THREE-DIMENSIONAL-FULL-KERNEL | mathematical | proved / discharged | partial | There exist eta_0>0 and 0<rho_1<1 such that every balanced measurable four-cell partition of R^3 with d_4(A)<=eta_0 satisfies S_rho(A)<=S_rho(T) for 0<rho<=rho_1. The stronger internal three-dimensional theorem now proves this for all balanced partitions, with equality only for tetrahedra. No first-moment-relative quantitative value gap is asserted; independent mathematical review is pending. | none in declared routes |
 | GAP-PIS-EUCLIDEAN-THREE-LABEL-JUNCTION-RIGIDITY | goal | proved | partial | Every planar compact-perturbation minimizer of the unit Euclidean Gaussian convolution cut with three nonempty phases is a regular tripod up to an isometry, labels and null sets. The affine asymptotes and exponential tails reduce it to strict finite-area comparison. | none in declared routes |
 | GAP-PIS-FOUR-CELL-UNIFORM-SMALL-CORRELATION | mathematical | proved / discharged | partial | There exists rho_0>0 independent of d>=3 such that every balanced ordinary measurable four-cell Gaussian partition A of R^d satisfies S_rho(A)<=S_rho(T) for 0<rho<=rho_0. Every global maximizer, and hence every equality case, is a cylindrical central regular tetrahedral partition up to rotation, labels and null sets. Uses the three-dimensional rigidity theorem and published maximizer existence/dimension reduction. This is an internally written analytic theorem under the repository accepted external first-moment input, pending independent mathematical review; rho_0 is qualitative and no theorem for all positive correlations or a first-moment-relative value gap is asserted. | none in declared routes |
+| GAP-PIS-LARGE-ALPHABET-FULL-NEGATIVE-VOTING | mathematical | proved / discharged | partial | For all sufficiently large k, d>=k-1 and -1/(k-1)<=rho<0, the regular simplex minimizes actual Gaussian same-partition stability over measurable fractional assignments with free masses. Established by exponential localization combined with a polynomial local radius in VG1. | none in declared routes |
 | VERIFY-IMAGE2-NULLCONE-APPLICATION | verification | proved / discharged | partial | Identify the geometric group action and prove eventual vanishing for every fixed original polynomial marker on its nullcone. The verified action is the full orthogonal action on the Hopf quadric, transported to balanced bidegree by setting R=1. | none in declared routes |
 
 ```mermaid
@@ -1260,7 +1296,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 83 routes (3410 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 83 routes (3463 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -1268,7 +1304,7 @@ Current unconditional proof-source leaves are omitted from this diagram; each di
 
 Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 
-**Computed obligation progress:** 29 open; 7 proved / discharged.
+**Computed obligation progress:** 28 open; 8 proved / discharged.
 
 **Authored scope assessment:** Retained ordinary characteristic-zero polynomial Keller constructions have determinant one and explicit collisions; their internal consequence is failure of the unrestricted Jacobian conjecture. The earlier full-JC-open summary was inconsistent with these source claims. This is internal assurance, not external acceptance.
 
@@ -1675,6 +1711,8 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | [JAC-SEXTIC-KELLER-644-CLOSED-QUARTIC-RATIO-INVERSION](jacobian/monodromy-theory/SEXTIC_KELLER_644_CLOSED_QUARTIC_RATIO.md) | proved | complete | none in declared routes |
 | [JAC-SEXTIC-KELLER-644-REDUCED-CONIC-LINEAR-TERM-EXCLUSION](jacobian/monodromy-theory/SEXTIC_KELLER_MIXED_DEGREE_LEADING_REDUCTIONS.md) | proved | complete | none in declared routes |
 | [JAC-PLANE-FULL-NEWTON-BOUNDARY-RATIONAL-SLICE](dixmier/dixmier-formal-lifting/WEIGHTED_HAMILTONIAN_SLICE_FULL_BOUNDARY.md) | proved | complete | none in declared routes |
+| [JAC-PLANE-MAX-ELEVEN-PARTIAL-DEGREE-CHARZERO](jacobian/planar-degree-frontier/PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) | proved | complete | none in declared routes |
+| [JAC-THREE-VARIABLE-MAX11-POLYNOMIAL-GENERIC-FIBRE-CHART](jacobian/planar-degree-frontier/PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) | proved | complete | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -1694,7 +1732,6 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | GAP-JC2-EXTERNAL-MINIMAL-RAMIFICATION-POSITIVITY | verification | open | partial | Audit the external minimal-resolution positivity theorem and its preceding genus interface. Relate whole-source boundary or codifferent conditions to nefness, bigness, and adjoint genus on the same minimal resolution of the finite projective normalization. The reported inequalities allow singular normalizations and use the full determinant divisor. | GAP-JC2-EXTERNAL-MINIMAL-RAMIFICATION-POSITIVITY (open) |
 | GAP-JC2-EXTERNAL-SIX-SHEET-GENUS-ONE-SOURCE | verification | open | partial | Identify and inspect the reported Chinese-language exclusion and unavailable imported material. Match its cusp, sheet and genus hypotheses to the retained six-sheet directional-slice cases before importing a proof dependency. | GAP-JC2-EXTERNAL-SIX-SHEET-GENUS-ONE-SOURCE (open) |
 | GAP-JC2-MAX11-COMMON-SOURCE-FRAME | mathematical | open | partial | For an identified surviving family, exhibit a genuine polynomial source frame and target coordinates with both full partial degrees at most 11 in the same source variable. In the tested immersed fold longitudinal frame and planar (12,42) momentum direction, existing bounds exclude that application. Check the other direction or a different framing under the actual polynomial-source hypotheses. | GAP-JC2-MAX11-COMMON-SOURCE-FRAME (open) |
-| GAP-JC2-MAX11-GGV-ENDPOINT-INTERFACE | verification | open | partial | Supply PlaneKellerStandardEndpointGCDObstruction from Guccione–Guccione–Valqui Corollary 7.9, or justify its actual large-shear uses. Match Definition 4.3 at both ends of the right face, or give a normalization preserving the numerical gcd needed in the Lean route. The separate restriction on globally minimal B is not an arbitrary-pair substitute. | GAP-JC2-MAX11-GGV-ENDPOINT-INTERFACE (open) |
 | GAP-JC2-RESIDUAL-LAURENT-EXCLUSION-VERIFICATION | verification | open | partial | Audit exhaustiveness of the normalized GGHV reductions, check the correspondence between both Laurent configurations and Helali's two systems, and independently verify the two characteristic-zero exclusions or their exact certificates. | GAP-JC2-RESIDUAL-LAURENT-EXCLUSION-VERIFICATION (open) |
 | GAP-RULING-SIX | mathematical | open | partial | The ENTIRE retained marked quadratic ruling-six algebra is closed by PF187/188. Its previously explicit common-source-pencil, complete algebraic A1 boundary and whole root-chart inputs are NOW proved by the individual-coordinate and exact-volume common-pencil notes; the given-replica route already bypasses Rentschler. No larger-D or surviving quartic subcase remains in that fixed model. This residual coverage obligation concerns unexpanded structural/classification imports and which actual noninvertible maps fall into that retained marked quadratic model, rather than the now-solved common-coordinate input. Higher rulings, other deck classes, original ramified primes and automatic ordinary-codifferent/target integrality remain outside the stated closure. HC4/JC2 remain open. | GAP-RULING-SIX (open) |
 | JAC-GAP-BUNDLE-EXISTENTIAL-FREENESS | mathematical | open | partial | For prescribed bases determine existential freeness/trivializability of the canonical receiver bundle without requiring an automorphism-invariant natural frame, which is already obstructed. | JAC-GAP-BUNDLE-EXISTENTIAL-FREENESS (open) |
@@ -1709,6 +1746,7 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | GOAL-JAC-INDEX-FOUR-UNIFORM-207 | mathematical | open | partial | For every characteristic-zero field and every dimension, every homogeneous cubic H with (JH)^4=0 gives I-H a polynomial inverse of degree at most 207. | EQUIV-JAC-INDEX-FOUR-BOUND207-AND-FINITE-WEIGHTED-INTERVAL (open) |
 | GAP-JAC-INDEX-FOUR-WEIGHTED-GRADE104 | mathematical | open | partial | Decide rational membership of U_104 in the complete recursively reduced length-four ternary shuffle relation space. Nonmembership gives an exact-index-four triangular inverse of degree 209. Membership leaves the other 102 grades. The literal 58-variable example has a sharp single-parallel-layer barrier at 207 even with all its coordinates allowed. The complete grade-104 recursive scan would enumerate at least 2829774 columns and over 5.21e24 root substitutions. | EQUIV-JAC-INDEX-FOUR-BOUND207-AND-FINITE-WEIGHTED-INTERVAL (open) |
 | GAP-JAC-CUBIC-CUBE-ZERO | mathematical | proved / discharged | partial | Close the exact fixedp=3 cubic subtree-shuffle case: eventual membership from grade15 and uniform inverse degree bound29. Higher path lengths and the all-index family are separate. | none in declared routes |
+| GAP-JC2-MAX11-GGV-ENDPOINT-INTERFACE | verification | proved / discharged | partial | Supply PlaneKellerStandardEndpointGCDObstruction from Guccione–Guccione–Valqui Corollary 7.9, or justify its actual large-shear uses. Match Definition 4.3 at both ends of the right face, or give a normalization preserving the numerical gcd needed in the Lean route. The separate restriction on globally minimal B is not an arbitrary-pair substitute. | none in declared routes |
 | GAP-HESSIAN-AUTOMATIC-ONE-VELOCITY-CODIFFERENT | mathematical | open | partial | For EVERY actual complex plane Keller map, establish that in a source-finite polynomial frame and a generic target linear coordinate P*, the ONE source velocity P*_x belongs to the ORDINARY full trace-dual Lambda={a:Tr(aS) subset B}. The new theorem shows this suffices for inversion, and is equivalent there to transverse coordinate y in S. Neither regularity on U nor source polynomiality supplies its ramified-prime pole bounds. No automatic membership is proved. Universally this is equivalent to the two-velocity full-normalization landing and JC2. An exceptional fold gives an exact marked double pole for a transverse target derivative of any affine source coordinate with nonzero a coefficient. Automatic membership remains open. Each polar omitted prime has a normalized marked trace of pole order floor(q/e)+1 and target residue −q d times the transverse derivative of its image equation modulo that equation. In every source-finite frame one global marked trace can attain the precise common-denominator pole order along every omitted image simultaneously. | PLANE-INVERSE-TRACE-ENERGY-EQUIVALENCES (open); GOAL-DC2 (open); DIX-GAP-PLANE-KELLER-GRAPH-TWO-DEGREE-LM (open) |
 | GOAL-JC2 | goal | open | partial | Every complex polynomial Keller self-map of affine two-space is a polynomial automorphism. | GOAL-DC2 (open); PLANE-INVERSE-TRACE-ENERGY-EQUIVALENCES (open); DIX-GAP-PLANE-KELLER-GRAPH-TWO-DEGREE-LM (open) |
 | JAC-GAP-DERIVATIVE-INTEGRALITY | mathematical | open | partial | Prove the two first source velocities lie in the FULL target normalization S for a generic monic source direction of every actual plane Keller map. R=S[P_v,Q_v] is now proved; this landing forces R=S and the polynomial inverse. Finite normalization over a jet algebra does not prove integrality over target B. Universally this is equivalent to JC2 and to the one-velocity ordinary-codifferent landing in a source-finite frame. | PLANE-INVERSE-TRACE-ENERGY-EQUIVALENCES (open); GOAL-DC2 (open); DIX-GAP-PLANE-KELLER-GRAPH-TWO-DEGREE-LM (open) |
@@ -1858,9 +1896,9 @@ flowchart LR
   class n63 proved
   n64["JAC-CUBIC-INDEX-SEVENTEEN-<br/>SHUFFLE-FAILURE<br/>proved"]
   class n64 proved
-  n65["JAC-FIXED-KELLER-ALTERNATING-<br/>FAMILY<br/>proved"]
+  n65["JAC-PLANE-MAX-ELEVEN-PARTIAL-<br/>DEGREE-CHARZERO<br/>proved"]
   class n65 proved
-  n66["JAC-PLANE-SIX-<br/>SHEET-A6-PUISEUX-TWO-FIVE-<br/>CUSP-COMPOSITE-WIDTH<br/>proved"]
+  n66["JAC-FIXED-KELLER-ALTERNATING-<br/>FAMILY<br/>proved"]
   class n66 proved
   n67["JAC-CUBIC-CUBE-ZERO-ONE-<br/>GENERATOR-ALGEBRA<br/>proved"]
   class n67 proved
@@ -1980,7 +2018,7 @@ flowchart LR
   r28 --> n47
   r29{"AND<br/>DERIVE-JAC-FIXED-KELLER-<br/>ALTERNATING-FAMILY<br/>+4 omitted proof premises<br/>proved"}
   class r29 proved
-  r29 --> n65
+  r29 --> n66
   r30{"AND<br/>DERIVE-JAC-FIXED-KELLER-<br/>FINITE-ETALE-FAMILIES<br/>+3 omitted proof premises<br/>proved"}
   class r30 proved
   r30 --> n73
@@ -2172,17 +2210,17 @@ flowchart LR
   class r81 proved
   n37 --> r81
   r81 --> n51
-  r82{"AND<br/>DERIVE-JAC-PLANE-SIX-<br/>SHEET-A6-ORDINARY-CUSP-<br/>COMPOSITE-WIDTH<br/>+1 omitted proof premise<br/>proved"}
+  r82{"AND<br/>DERIVE-JAC-PLANE-MAX-ELEVEN-<br/>PARTIAL-DEGREE-CHARZERO<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r82 proved
-  n75 --> r82
-  r82 --> n78
-  r83{"AND<br/>DERIVE-JAC-PLANE-SIX-<br/>SHEET-A6-ORDINARY-CUSP-<br/>COPRIME-WIDTHS-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r82 --> n65
+  r83{"AND<br/>DERIVE-JAC-PLANE-SIX-<br/>SHEET-A6-ORDINARY-CUSP-<br/>COMPOSITE-WIDTH<br/>+1 omitted proof premise<br/>proved"}
   class r83 proved
-  n24 --> r83
-  r83 --> n75
-  r84{"AND<br/>DERIVE-JAC-PLANE-SIX-<br/>SHEET-A6-PUISEUX-TWO-FIVE-<br/>CUSP-COMPOSITE-WIDTH<br/>+2 omitted proof premises<br/>proved"}
+  n75 --> r83
+  r83 --> n78
+  r84{"AND<br/>DERIVE-JAC-PLANE-SIX-<br/>SHEET-A6-ORDINARY-CUSP-<br/>COPRIME-WIDTHS-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r84 proved
-  r84 --> n66
+  n24 --> r84
+  r84 --> n75
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -2191,7 +2229,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 82 statements and 85 routes (952 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 82 statements and 85 routes (958 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -2317,6 +2355,7 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 | [HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION](hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_QUARTIC_TETRADECIC_EXCLUSION.md) | proved | complete | none in declared routes |
 | [HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION](hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_TWELVE_EIGHT_SIX_ELEVEN_EXCLUSION.md) | proved | complete | none in declared routes |
 | [HESSIAN-EXCEPTIONAL-FOLD-MINIMAL-WEIGHT-BOUNDARY-EXCLUSION](hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md) | proved | complete | none in declared routes |
+| [HESS-HC4-THREE-BOUNDED-DIRECTIONS-MAX11](jacobian/planar-degree-frontier/PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) | proved | complete | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -2343,26 +2382,26 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 ```mermaid
 flowchart LR
   subgraph e0["PLANE-INVERSE-TRACE-ENERGY-<br/>EQUIVALENCES<br/>independent grounding required"]
-  n57["DIX-GAP-RANK2-BOUNDED-GAUGE<br/>open<br/>OR routes"]
+  n56["DIX-GAP-RANK2-BOUNDED-GAUGE<br/>open<br/>OR routes"]
+  class n56 open
+  n57["GAP-AUTOMATIC-T3-PERFECTION<br/>open"]
   class n57 open
-  n58["GAP-AUTOMATIC-T3-PERFECTION<br/>open"]
+  n58["GAP-HESSIAN-AUTOMATIC-ONE-<br/>VELOCITY-CODIFFERENT<br/>open<br/>OR routes"]
   class n58 open
-  n59["GAP-HESSIAN-AUTOMATIC-ONE-<br/>VELOCITY-CODIFFERENT<br/>open<br/>OR routes"]
+  n59["GOAL-DIX-GENERALIZED-DC1<br/>open"]
   class n59 open
-  n60["GOAL-DIX-GENERALIZED-DC1<br/>open"]
+  n60(["GOAL-DIX-RANK2-POSITIONAL<br/>open"])
   class n60 open
-  n61(["GOAL-DIX-RANK2-POSITIONAL<br/>open"])
+  n61(["GOAL-HC4<br/>open<br/>OR routes"])
   class n61 open
-  n62(["GOAL-HC4<br/>open<br/>OR routes"])
+  n62(["GOAL-JC2<br/>open<br/>OR routes"])
   class n62 open
-  n63(["GOAL-JC2<br/>open<br/>OR routes"])
+  n63["HESS-GAP-ACTUAL-L4<br/>open"]
   class n63 open
-  n64["HESS-GAP-ACTUAL-L4<br/>open"]
+  n64["HESS-GAP-FULL-CODIFFERENT-<br/>MULTIPLICATION<br/>open<br/>OR routes"]
   class n64 open
-  n65["HESS-GAP-FULL-CODIFFERENT-<br/>MULTIPLICATION<br/>open<br/>OR routes"]
+  n65["JAC-GAP-DERIVATIVE-INTEGRALITY<br/>open<br/>OR routes"]
   class n65 open
-  n66["JAC-GAP-DERIVATIVE-INTEGRALITY<br/>open<br/>OR routes"]
-  class n66 open
   r0{"AND<br/>JC2-TO-SIXTH-TRACE-PERFECTION<br/>blocked"}
   class r0 open
   r1{"AND<br/>GENERIC-FIRST-VELOCITY-<br/>LANDING-TO-ONE-CODIFFERENT-<br/>VELOCITY<br/>+1 omitted proof premise<br/>blocked"}
@@ -2420,127 +2459,127 @@ flowchart LR
   class n3 open
   n4["GAP-HESSIAN-CONDUCTOR-<br/>EIGHT-N1-PERIOD<br/>open"]
   class n4 open
-  n5["GAP-HESSIAN-CONDUCTOR-<br/>EIGHT-N2-PERIOD<br/>open"]
-  class n5 open
-  n6["HESSIAN-DIRECT-REPLICA-INDEX<br/>proved"]
+  n5["HESSIAN-DIRECT-REPLICA-INDEX<br/>proved"]
+  class n5 proved
+  n6["HESSIAN-REDUCED-BRANCH<br/>proved"]
   class n6 proved
-  n7["HESSIAN-REDUCED-BRANCH<br/>proved"]
+  n7["HESSIAN-SOURCE-COORDINATE-<br/>COMPLETIONS<br/>proved"]
   class n7 proved
-  n8["HESSIAN-SOURCE-COORDINATE-<br/>COMPLETIONS<br/>proved"]
+  n8["HESSIAN-VALUATION-ONLY-<br/>COORDINATE-COUNTERCONTROL<br/>proved"]
   class n8 proved
-  n9["HESSIAN-VALUATION-ONLY-<br/>COORDINATE-COUNTERCONTROL<br/>proved"]
+  n9["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>CUBIC-NORM-EXCLUSION<br/>proved"]
   class n9 proved
-  n10["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>CUBIC-NORM-EXCLUSION<br/>proved"]
+  n10["HESSIAN-ALL-UNRAMIFIED-<br/>OMITTED-PRIMES-SMOOTH<br/>proved"]
   class n10 proved
-  n11["HESSIAN-ALL-UNRAMIFIED-<br/>OMITTED-PRIMES-SMOOTH<br/>proved"]
+  n11["HESSIAN-COMMON-COORDINATE-<br/>HAMILTONIAN<br/>proved"]
   class n11 proved
-  n12["HESSIAN-COMMON-COORDINATE-<br/>HAMILTONIAN<br/>proved"]
+  n12["HESSIAN-FIRST-SOURCE-FIELD<br/>proved"]
   class n12 proved
-  n13["HESSIAN-FIRST-SOURCE-FIELD<br/>proved"]
+  n13["HESSIAN-CANONICAL-COMPLETION-<br/>TOPOLOGY<br/>proved"]
   class n13 proved
-  n14["HESSIAN-CANONICAL-COMPLETION-<br/>TOPOLOGY<br/>proved"]
+  n14["HESSIAN-CODIFFERENT-<br/>DERIVATION-PREIMAGES<br/>proved"]
   class n14 proved
-  n15["HESSIAN-CODIFFERENT-<br/>DERIVATION-PREIMAGES<br/>proved"]
+  n15["HESSIAN-SOURCE-REGULAR-<br/>INTERMEDIATE-ALGEBRA<br/>proved"]
   class n15 proved
-  n16["HESSIAN-SOURCE-REGULAR-<br/>INTERMEDIATE-ALGEBRA<br/>proved"]
+  n16["HESSIAN-RICCI-FLAT<br/>proved"]
   class n16 proved
-  n17["HESSIAN-RICCI-FLAT<br/>proved"]
+  n17["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>FILTERED-PARAMETER-EXCLUSIONS<br/>proved"]
   class n17 proved
-  n18["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>FILTERED-PARAMETER-EXCLUSIONS<br/>proved"]
+  n18["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>THREE-STAGE-EXCLUSION<br/>proved"]
   class n18 proved
-  n19["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>THREE-STAGE-EXCLUSION<br/>proved"]
+  n19["HESSIAN-CONDUCTOR-TWENTY-<br/>CUBIC-UNDECIC-EXCLUSION<br/>proved"]
   class n19 proved
-  n20["HESSIAN-CONDUCTOR-TWENTY-<br/>CUBIC-UNDECIC-EXCLUSION<br/>proved"]
+  n20["HESSIAN-CONDUCTOR-TWENTY-<br/>FILTERED-PARAMETER-EXCLUSIONS<br/>proved"]
   class n20 proved
-  n21["HESSIAN-CONDUCTOR-TWENTY-<br/>FILTERED-PARAMETER-EXCLUSIONS<br/>proved"]
+  n21["HESSIAN-CONDUCTOR-TWENTY-<br/>QUARTIC-DECIC-EXCLUSION<br/>proved"]
   class n21 proved
-  n22["HESSIAN-CONDUCTOR-TWENTY-<br/>QUARTIC-DECIC-EXCLUSION<br/>proved"]
+  n22["HESSIAN-CONDUCTOR-TWENTY-<br/>QUINTIC-SEXTIC-EXCLUSION<br/>proved"]
   class n22 proved
-  n23["HESSIAN-CONDUCTOR-TWENTY-<br/>QUINTIC-SEXTIC-EXCLUSION<br/>proved"]
+  n23["HESSIAN-CONDUCTOR-TWENTY-<br/>SEXTIC-NONIC-EXCLUSION<br/>proved"]
   class n23 proved
-  n24["HESSIAN-CONDUCTOR-TWENTY-<br/>SEXTIC-NONIC-EXCLUSION<br/>proved"]
+  n24["HESSIAN-CONDUCTOR-TWENTY-<br/>THREE-STAGE-EXCLUSION<br/>proved"]
   class n24 proved
-  n25["HESSIAN-CONDUCTOR-TWENTY-<br/>THREE-STAGE-EXCLUSION<br/>proved"]
+  n25["HESSIAN-CONDUCTOR-TWENTY-<br/>TWELVE-EIGHT-FIVE-EXCLUSION<br/>proved"]
   class n25 proved
-  n26["HESSIAN-CONDUCTOR-TWENTY-<br/>TWELVE-EIGHT-FIVE-EXCLUSION<br/>proved"]
+  n26["HESSIAN-CONDUCTOR-TWENTY-<br/>TWELVE-EIGHT-TEN-FIVE-<br/>EXCLUSION<br/>proved"]
   class n26 proved
-  n27["HESSIAN-CONDUCTOR-TWENTY-<br/>TWELVE-EIGHT-TEN-FIVE-<br/>EXCLUSION<br/>proved"]
+  n27["HESSIAN-CONDUCTOR-TWENTY-TWO-<br/>QUARTIC-TETRADECIC-EXCLUSION<br/>proved"]
   class n27 proved
-  n28["HESSIAN-CONDUCTOR-TWENTY-TWO-<br/>QUARTIC-TETRADECIC-EXCLUSION<br/>proved"]
+  n28["HESSIAN-CONDUCTOR-TWENTY-TWO-<br/>TWELVE-EIGHT-SIX-ELEVEN-<br/>EXCLUSION<br/>proved"]
   class n28 proved
-  n29["HESSIAN-CONDUCTOR-TWENTY-TWO-<br/>TWELVE-EIGHT-SIX-ELEVEN-<br/>EXCLUSION<br/>proved"]
+  n29["HESSIAN-DIRECTIONAL-CONDUCTOR-<br/>COLLISION-SCHEME<br/>proved"]
   class n29 proved
-  n30["HESSIAN-DIRECTIONAL-CONDUCTOR-<br/>COLLISION-SCHEME<br/>proved"]
+  n30["HESSIAN-DIRECTIONAL-DEGREE-<br/>TWO-ELEMENT-EXCLUSION<br/>proved"]
   class n30 proved
-  n31["HESSIAN-DIRECTIONAL-DEGREE-<br/>TWO-ELEMENT-EXCLUSION<br/>proved"]
+  n31["HESSIAN-DIRECTIONAL-THREE-TWO-<br/>LAURENT-EXCLUSION<br/>proved"]
   class n31 proved
-  n32["HESSIAN-DIRECTIONAL-THREE-TWO-<br/>LAURENT-EXCLUSION<br/>proved"]
+  n32["HESSIAN-COMMON-COORDINATE-<br/>ROOT-CHARTS<br/>proved"]
   class n32 proved
-  n33["HESSIAN-COMMON-COORDINATE-<br/>ROOT-CHARTS<br/>proved"]
+  n33["HESSIAN-UNRAMIFIED-RESIDUE-<br/>DEGREE<br/>proved"]
   class n33 proved
-  n34["HESSIAN-UNRAMIFIED-RESIDUE-<br/>DEGREE<br/>proved"]
+  n34["HESSIAN-LOGARITHMIC-TRACE-<br/>DEFECT<br/>proved"]
   class n34 proved
-  n35["HESSIAN-LOGARITHMIC-TRACE-<br/>DEFECT<br/>proved"]
+  n35["HESSIAN-TARGET-INVARIANTS-AND-<br/>TRACE-TRANSPORT<br/>proved"]
   class n35 proved
-  n36["HESSIAN-TARGET-INVARIANTS-AND-<br/>TRACE-TRANSPORT<br/>proved"]
+  n36["HESSIAN-REPLICA-SOURCE-IMAGE<br/>proved"]
   class n36 proved
-  n37["HESSIAN-REPLICA-SOURCE-IMAGE<br/>proved"]
+  n37["HESSIAN-MOMENT-TRACE<br/>proved"]
   class n37 proved
-  n38["HESSIAN-MOMENT-TRACE<br/>proved"]
+  n38["HESSIAN-CUBIC-QUINTIC-OCTIC-<br/>CONDUCTOR-EXCLUSION<br/>proved"]
   class n38 proved
-  n39["HESSIAN-CUBIC-QUINTIC-OCTIC-<br/>CONDUCTOR-EXCLUSION<br/>proved"]
+  n39["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>CUBIC-DECIC-EXCLUSION<br/>proved"]
   class n39 proved
-  n40["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>CUBIC-DECIC-EXCLUSION<br/>proved"]
+  n40["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>QUARTIC-DECIC-EXCLUSION<br/>proved"]
   class n40 proved
-  n41["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>QUARTIC-DECIC-EXCLUSION<br/>proved"]
+  n41["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>QUARTIC-SEPTIC-EXCLUSION<br/>proved"]
   class n41 proved
-  n42["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>QUARTIC-SEPTIC-EXCLUSION<br/>proved"]
+  n42["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>SEXTIC-NONIC-EXCLUSION<br/>proved"]
   class n42 proved
-  n43["HESSIAN-CONDUCTOR-EIGHTEEN-<br/>SEXTIC-NONIC-EXCLUSION<br/>proved"]
+  n43["HESSIAN-CONDUCTOR-FOURTEEN-<br/>CABLE-EXCLUSION<br/>proved"]
   class n43 proved
-  n44["HESSIAN-CONDUCTOR-FOURTEEN-<br/>CABLE-EXCLUSION<br/>proved"]
+  n44["HESSIAN-CONDUCTOR-FOURTEEN-<br/>DEGREE-NINE-CABLE-EXCLUSION<br/>proved"]
   class n44 proved
-  n45["HESSIAN-CONDUCTOR-FOURTEEN-<br/>DEGREE-NINE-CABLE-EXCLUSION<br/>proved"]
+  n45["HESSIAN-CONDUCTOR-FOURTEEN-<br/>QUARTIC-DECIC-EXCLUSION<br/>proved"]
   class n45 proved
-  n46["HESSIAN-CONDUCTOR-FOURTEEN-<br/>QUARTIC-DECIC-EXCLUSION<br/>proved"]
+  n46["HESSIAN-CONDUCTOR-FOURTEEN-<br/>THREE-STAGE-EXCLUSION<br/>proved"]
   class n46 proved
-  n47["HESSIAN-CONDUCTOR-FOURTEEN-<br/>THREE-STAGE-EXCLUSION<br/>proved"]
+  n47["HESSIAN-CONDUCTOR-TWELVE-<br/>CABLE-EXCLUSIONS<br/>proved"]
   class n47 proved
-  n48["HESSIAN-CONDUCTOR-TWELVE-<br/>CABLE-EXCLUSIONS<br/>proved"]
+  n48["HESSIAN-CONDUCTOR-TWELVE-<br/>HYPERELLIPTIC-CUBIC-EXCLUSIONS<br/>proved"]
   class n48 proved
-  n49["HESSIAN-CONDUCTOR-TWELVE-<br/>HYPERELLIPTIC-CUBIC-EXCLUSIONS<br/>proved"]
+  n49["HESSIAN-CONDUCTOR-TWELVE-<br/>QUARTIC-QUINTIC-EXCLUSION<br/>proved"]
   class n49 proved
-  n50["HESSIAN-CONDUCTOR-TWELVE-<br/>QUARTIC-QUINTIC-EXCLUSION<br/>proved"]
+  n50["HESSIAN-CONDUCTOR-FOURTEEN-<br/>HYPERELLIPTIC-EMBEDDING-<br/>EXCLUSION<br/>proved<br/>OR routes"]
   class n50 proved
-  n51["HESSIAN-CONDUCTOR-FOURTEEN-<br/>HYPERELLIPTIC-EMBEDDING-<br/>EXCLUSION<br/>proved<br/>OR routes"]
+  n51["HESSIAN-HYPERELLIPTIC-OCTIC-<br/>CONDUCTOR-EXCLUSION<br/>proved<br/>OR routes"]
   class n51 proved
-  n52["HESSIAN-HYPERELLIPTIC-OCTIC-<br/>CONDUCTOR-EXCLUSION<br/>proved<br/>OR routes"]
+  n52["HESSIAN-HYPERELLIPTIC-TARGET-<br/>COORDINATE-EXCLUSION<br/>proved<br/>OR routes"]
   class n52 proved
-  n53["HESSIAN-HYPERELLIPTIC-TARGET-<br/>COORDINATE-EXCLUSION<br/>proved<br/>OR routes"]
+  n53["HESSIAN-CONDUCTOR-FOURTEEN-<br/>CUBIC-ORDER-ALTERNATE-<br/>EMBEDDINGS<br/>proved"]
   class n53 proved
-  n54["HESSIAN-CONDUCTOR-FOURTEEN-<br/>CUBIC-ORDER-ALTERNATE-<br/>EMBEDDINGS<br/>proved"]
+  n54["HESSIAN-INDIVIDUAL-BOUNDARY-<br/>COORDINATES<br/>proved"]
   class n54 proved
-  n55["HESSIAN-INDIVIDUAL-BOUNDARY-<br/>COORDINATES<br/>proved"]
+  n55["HESSIAN-QUINTIC-GRAPH<br/>proved"]
   class n55 proved
-  n56["HESSIAN-QUINTIC-GRAPH<br/>proved"]
-  class n56 proved
-  n67["HESSIAN-CONDUCTOR-SIXTEEN-<br/>QUARTIC-DECIC-EXCLUSION<br/>proved"]
+  n66["HESSIAN-CONDUCTOR-SIXTEEN-<br/>QUARTIC-DECIC-EXCLUSION<br/>proved"]
+  class n66 proved
+  n67["HESSIAN-CONDUCTOR-FOURTEEN-<br/>CUBIC-OCTIC-EXCLUSION<br/>proved"]
   class n67 proved
-  n68["HESSIAN-CONDUCTOR-FOURTEEN-<br/>CUBIC-OCTIC-EXCLUSION<br/>proved"]
+  n68["HESSIAN-COMMON-SOURCE-PENCIL<br/>proved"]
   class n68 proved
-  n69["HESSIAN-COMMON-SOURCE-PENCIL<br/>proved"]
+  n69["HESSIAN-PLINTH-AND-INVARIANT-<br/>REPLICA-EXTENSION<br/>proved"]
   class n69 proved
-  n70["HESSIAN-PLINTH-AND-INVARIANT-<br/>REPLICA-EXTENSION<br/>proved"]
+  n70["HESSIAN-RAMIFIED-FOLD-COMMON-<br/>POLES<br/>proved"]
   class n70 proved
-  n71["HESSIAN-RAMIFIED-FOLD-COMMON-<br/>POLES<br/>proved"]
+  n71["HESSIAN-ROOT-CHART-CYCLIC-<br/>KELLER-TRANSFER<br/>proved"]
   class n71 proved
-  n72["HESSIAN-ROOT-CHART-CYCLIC-<br/>KELLER-TRANSFER<br/>proved"]
+  n72["HESSIAN-GLOBAL-OCTIC-<br/>CONDUCTOR-EXCLUSION<br/>proved"]
   class n72 proved
-  n73["HESSIAN-GLOBAL-OCTIC-<br/>CONDUCTOR-EXCLUSION<br/>proved"]
+  n73["HESSIAN-EXCEPTIONAL-FOLD-<br/>WHOLE-CHART-AND-IMAGE<br/>proved"]
   class n73 proved
-  n74["HESSIAN-EXCEPTIONAL-FOLD-<br/>WHOLE-CHART-AND-IMAGE<br/>proved"]
+  n74["HESSIAN-ENTIRE-ETALE-CYCLIC-<br/>TRANSFER<br/>proved"]
   class n74 proved
-  n75["HESSIAN-ENTIRE-ETALE-CYCLIC-<br/>TRANSFER<br/>proved"]
+  n75["HESS-HC4-THREE-BOUNDED-<br/>DIRECTIONS-MAX11<br/>proved"]
   class n75 proved
   n76["HESSIAN-GLOBAL-CONDUCTOR-TEN-<br/>EXCLUSION<br/>proved"]
   class n76 proved
@@ -2566,360 +2605,363 @@ flowchart LR
   class n86 proved
   n87["HESSIAN-GENERIC-SOURCE-LINE-<br/>TRANSVERSE-COLLISIONS<br/>proved"]
   class n87 proved
-  n63 --> r0
-  r0 --> n58
-  n66 --> r1
-  r1 --> n59
-  n63 --> r2
-  r2 --> n59
-  n63 --> r3
-  r3 --> n62
-  n63 --> r4
-  r4 --> n62
-  n61 --> r5
-  r5 --> n63
-  n65 --> r6
-  r6 --> n63
-  n66 --> r7
-  n13 --> r7
-  r7 --> n63
-  n62 --> r8
-  r8 --> n63
-  n60 --> r9
-  r9 --> n63
-  n62 --> r10
-  r10 --> n63
-  n59 --> r11
-  r11 --> n63
-  n57 --> r12
-  r12 --> n63
-  n38 --> r13
-  n58 --> r13
-  r13 --> n63
-  n58 --> r14
-  r14 --> n63
-  n63 --> r15
-  r15 --> n64
-  n64 --> r16
-  r16 --> n65
-  n63 --> r17
-  r17 --> n65
-  n63 --> r18
-  r18 --> n57
-  n63 --> r19
-  r19 --> n60
-  n63 --> r20
-  r20 --> n61
-  n63 --> r21
-  r21 --> n66
-  n59 --> r22
-  r22 --> n66
-  r23{"AND<br/>DERIVE-HESSIAN-ALL-UNRAMIFIED-<br/>OMITTED-PRIMES-SMOOTH<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
+  n62 --> r0
+  r0 --> n57
+  n65 --> r1
+  r1 --> n58
+  n62 --> r2
+  r2 --> n58
+  n62 --> r3
+  r3 --> n61
+  n62 --> r4
+  r4 --> n61
+  n60 --> r5
+  r5 --> n62
+  n64 --> r6
+  r6 --> n62
+  n65 --> r7
+  n12 --> r7
+  r7 --> n62
+  n61 --> r8
+  r8 --> n62
+  n59 --> r9
+  r9 --> n62
+  n61 --> r10
+  r10 --> n62
+  n58 --> r11
+  r11 --> n62
+  n56 --> r12
+  r12 --> n62
+  n37 --> r13
+  n57 --> r13
+  r13 --> n62
+  n57 --> r14
+  r14 --> n62
+  n62 --> r15
+  r15 --> n63
+  n63 --> r16
+  r16 --> n64
+  n62 --> r17
+  r17 --> n64
+  n62 --> r18
+  r18 --> n56
+  n62 --> r19
+  r19 --> n59
+  n62 --> r20
+  r20 --> n60
+  n62 --> r21
+  r21 --> n65
+  n58 --> r22
+  r22 --> n65
+  r23{"AND<br/>DERIVE-HESS-HC4-THREE-BOUNDED-<br/>DIRECTIONS-MAX11<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r23 proved
-  r23 --> n11
-  r24{"AND<br/>DERIVE-HESSIAN-CANONICAL-<br/>COMPLETION-TOPOLOGY<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
+  r23 --> n75
+  r24{"AND<br/>DERIVE-HESSIAN-ALL-UNRAMIFIED-<br/>OMITTED-PRIMES-SMOOTH<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r24 proved
-  r24 --> n14
-  r25{"AND<br/>DERIVE-HESSIAN-CODIFFERENT-<br/>DERIVATION-PREIMAGES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r24 --> n10
+  r25{"AND<br/>DERIVE-HESSIAN-CANONICAL-<br/>COMPLETION-TOPOLOGY<br/>+1 pinned source<br/>+5 omitted proof premises<br/>proved"}
   class r25 proved
-  n7 --> r25
-  r25 --> n15
-  r26{"AND<br/>DERIVE-HESSIAN-COMMON-<br/>COORDINATE-HAMILTONIAN<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r25 --> n13
+  r26{"AND<br/>DERIVE-HESSIAN-CODIFFERENT-<br/>DERIVATION-PREIMAGES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r26 proved
-  r26 --> n12
-  r27{"AND<br/>DERIVE-HESSIAN-COMMON-<br/>COORDINATE-ROOT-CHARTS<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  n6 --> r26
+  r26 --> n14
+  r27{"AND<br/>DERIVE-HESSIAN-COMMON-<br/>COORDINATE-HAMILTONIAN<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r27 proved
-  n14 --> r27
-  n12 --> r27
-  r27 --> n33
-  r28{"AND<br/>DERIVE-HESSIAN-COMMON-SOURCE-<br/>PENCIL<br/>+1 pinned source<br/>proved"}
+  r27 --> n11
+  r28{"AND<br/>DERIVE-HESSIAN-COMMON-<br/>COORDINATE-ROOT-CHARTS<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r28 proved
-  n55 --> r28
-  n14 --> r28
-  n33 --> r28
-  n12 --> r28
-  r28 --> n69
-  r29{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-CUBIC-DECIC-EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  n13 --> r28
+  n11 --> r28
+  r28 --> n32
+  r29{"AND<br/>DERIVE-HESSIAN-COMMON-SOURCE-<br/>PENCIL<br/>+1 pinned source<br/>proved"}
   class r29 proved
-  r29 --> n40
-  r30{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-CUBIC-NORM-EXCLUSION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n54 --> r29
+  n13 --> r29
+  n32 --> r29
+  n11 --> r29
+  r29 --> n68
+  r30{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-CUBIC-DECIC-EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r30 proved
-  r30 --> n10
-  r31{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-FILTERED-PARAMETER-<br/>EXCLUSIONS<br/>+2 omitted proof premises<br/>proved"}
+  r30 --> n39
+  r31{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-CUBIC-NORM-EXCLUSION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r31 proved
-  r31 --> n18
-  r32{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-QUARTIC-DECIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r31 --> n9
+  r32{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-FILTERED-PARAMETER-<br/>EXCLUSIONS<br/>+2 omitted proof premises<br/>proved"}
   class r32 proved
-  r32 --> n41
-  r33{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-QUARTIC-SEPTIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r32 --> n17
+  r33{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-QUARTIC-DECIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r33 proved
-  r33 --> n42
-  r34{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-SEXTIC-NONIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r33 --> n40
+  r34{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-QUARTIC-SEPTIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r34 proved
-  r34 --> n43
-  r35{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-THREE-STAGE-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  r34 --> n41
+  r35{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-SEXTIC-NONIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r35 proved
-  r35 --> n19
-  r36{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-CABLE-EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r35 --> n42
+  r36{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>EIGHTEEN-THREE-STAGE-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r36 proved
-  r36 --> n44
-  r37{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-CUBIC-OCTIC-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r36 --> n18
+  r37{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-CABLE-EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r37 proved
-  n53 --> r37
-  r37 --> n68
-  r38{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-CUBIC-ORDER-<br/>ALTERNATE-EMBEDDINGS<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r37 --> n43
+  r38{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-CUBIC-OCTIC-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r38 proved
-  n32 --> r38
-  r38 --> n54
-  r39{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-DEGREE-NINE-CABLE-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  n52 --> r38
+  r38 --> n67
+  r39{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-CUBIC-ORDER-<br/>ALTERNATE-EMBEDDINGS<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r39 proved
-  r39 --> n45
-  r40{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-FROM-DEGREE-TWO-<br/>ELEMENT-EXCLUSION<br/>+1 omitted proof premise<br/>proved"}
+  n31 --> r39
+  r39 --> n53
+  r40{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-DEGREE-NINE-CABLE-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r40 proved
-  n31 --> r40
-  r40 --> n51
-  r41{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-HYPERELLIPTIC-<br/>EMBEDDING-EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r40 --> n44
+  r41{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-FROM-DEGREE-TWO-<br/>ELEMENT-EXCLUSION<br/>+1 omitted proof premise<br/>proved"}
   class r41 proved
-  r41 --> n51
-  r42{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-QUARTIC-DECIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  n30 --> r41
+  r41 --> n50
+  r42{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-HYPERELLIPTIC-<br/>EMBEDDING-EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r42 proved
-  r42 --> n46
-  r43{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-THREE-STAGE-EXCLUSION<br/>+3 omitted proof premises<br/>proved"}
+  r42 --> n50
+  r43{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-QUARTIC-DECIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r43 proved
-  r43 --> n47
-  r44{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>SIXTEEN-QUARTIC-DECIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r43 --> n45
+  r44{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>FOURTEEN-THREE-STAGE-EXCLUSION<br/>+3 omitted proof premises<br/>proved"}
   class r44 proved
-  r44 --> n67
-  r45{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWELVE-CABLE-EXCLUSIONS<br/>+3 omitted proof premises<br/>proved"}
+  r44 --> n46
+  r45{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>SIXTEEN-QUARTIC-DECIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r45 proved
-  r45 --> n48
-  r46{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWELVE-HYPERELLIPTIC-CUBIC-<br/>EXCLUSIONS<br/>+3 omitted proof premises<br/>proved"}
+  r45 --> n66
+  r46{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWELVE-CABLE-EXCLUSIONS<br/>+3 omitted proof premises<br/>proved"}
   class r46 proved
-  r46 --> n49
-  r47{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWELVE-QUARTIC-QUINTIC-<br/>EXCLUSION<br/>+3 omitted proof premises<br/>proved"}
+  r46 --> n47
+  r47{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWELVE-HYPERELLIPTIC-CUBIC-<br/>EXCLUSIONS<br/>+3 omitted proof premises<br/>proved"}
   class r47 proved
-  r47 --> n50
-  r48{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-CUBIC-UNDECIC-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r47 --> n48
+  r48{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWELVE-QUARTIC-QUINTIC-<br/>EXCLUSION<br/>+3 omitted proof premises<br/>proved"}
   class r48 proved
-  r48 --> n20
-  r49{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-FILTERED-PARAMETER-<br/>EXCLUSIONS<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r48 --> n49
+  r49{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-CUBIC-UNDECIC-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r49 proved
-  r49 --> n21
-  r50{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-QUARTIC-DECIC-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r49 --> n19
+  r50{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-FILTERED-PARAMETER-<br/>EXCLUSIONS<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r50 proved
-  r50 --> n22
-  r51{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-QUINTIC-SEXTIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r50 --> n20
+  r51{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-QUARTIC-DECIC-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r51 proved
-  r51 --> n23
-  r52{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-SEXTIC-NONIC-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r51 --> n21
+  r52{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-QUINTIC-SEXTIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r52 proved
-  r52 --> n24
-  r53{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-THREE-STAGE-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  r52 --> n22
+  r53{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-SEXTIC-NONIC-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r53 proved
-  r53 --> n25
-  r54{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-TWELVE-EIGHT-FIVE-<br/>EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r53 --> n23
+  r54{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-THREE-STAGE-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r54 proved
-  r54 --> n26
-  r55{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-TWELVE-EIGHT-TEN-FIVE-<br/>EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  r54 --> n24
+  r55{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-TWELVE-EIGHT-FIVE-<br/>EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r55 proved
-  r55 --> n27
-  r56{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-TWO-QUARTIC-TETRADECIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r55 --> n25
+  r56{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-TWELVE-EIGHT-TEN-FIVE-<br/>EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r56 proved
-  r56 --> n28
-  r57{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-TWO-TWELVE-EIGHT-SIX-<br/>ELEVEN-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r56 --> n26
+  r57{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-TWO-QUARTIC-TETRADECIC-<br/>EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r57 proved
-  r57 --> n29
-  r58{"AND<br/>DERIVE-HESSIAN-COORDINATE-<br/>CONDUCTOR<br/>+1 omitted proof premise<br/>proved"}
+  r57 --> n27
+  r58{"AND<br/>DERIVE-HESSIAN-CONDUCTOR-<br/>TWENTY-TWO-TWELVE-EIGHT-SIX-<br/>ELEVEN-EXCLUSION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r58 proved
-  n85 --> r58
-  r58 --> n86
-  r59{"AND<br/>DERIVE-HESSIAN-CUBIC-QUINTIC-<br/>OCTIC-CONDUCTOR-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  r58 --> n28
+  r59{"AND<br/>DERIVE-HESSIAN-COORDINATE-<br/>CONDUCTOR<br/>+1 omitted proof premise<br/>proved"}
   class r59 proved
-  r59 --> n39
-  r60{"AND<br/>DERIVE-HESSIAN-DIRECT-REPLICA-<br/>INDEX<br/>+1 pinned source<br/>proved"}
+  n85 --> r59
+  r59 --> n86
+  r60{"AND<br/>DERIVE-HESSIAN-CUBIC-QUINTIC-<br/>OCTIC-CONDUCTOR-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r60 proved
-  r60 --> n6
-  r61{"AND<br/>DERIVE-HESSIAN-DIRECTIONAL-<br/>CONDUCTOR-COLLISION-SCHEME<br/>+1 omitted proof premise<br/>proved"}
+  r60 --> n38
+  r61{"AND<br/>DERIVE-HESSIAN-DIRECT-REPLICA-<br/>INDEX<br/>+1 pinned source<br/>proved"}
   class r61 proved
-  r61 --> n30
-  r62{"AND<br/>DERIVE-HESSIAN-DIRECTIONAL-<br/>DEGREE-TWO-ELEMENT-EXCLUSION<br/>+3 omitted proof premises<br/>proved"}
+  r61 --> n5
+  r62{"AND<br/>DERIVE-HESSIAN-DIRECTIONAL-<br/>CONDUCTOR-COLLISION-SCHEME<br/>+1 omitted proof premise<br/>proved"}
   class r62 proved
-  r62 --> n31
-  r63{"AND<br/>DERIVE-HESSIAN-DIRECTIONAL-<br/>THREE-TWO-LAURENT-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  r62 --> n29
+  r63{"AND<br/>DERIVE-HESSIAN-DIRECTIONAL-<br/>DEGREE-TWO-ELEMENT-EXCLUSION<br/>+3 omitted proof premises<br/>proved"}
   class r63 proved
-  r63 --> n32
-  r64{"AND<br/>DERIVE-HESSIAN-ENTIRE-ETALE-<br/>CYCLIC-TRANSFER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r63 --> n30
+  r64{"AND<br/>DERIVE-HESSIAN-DIRECTIONAL-<br/>THREE-TWO-LAURENT-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r64 proved
-  n72 --> r64
-  n69 --> r64
-  n33 --> r64
-  n14 --> r64
-  n6 --> r64
-  r64 --> n75
-  r65{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-DOUBLE-MARKED-TRACE-POLE<br/>proved"}
+  r64 --> n31
+  r65{"AND<br/>DERIVE-HESSIAN-ENTIRE-ETALE-<br/>CYCLIC-TRANSFER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r65 proved
-  n74 --> r65
-  n15 --> r65
-  r65 --> n77
-  r66{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-MINIMAL-WEIGHT-BOUNDARY-<br/>EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n71 --> r65
+  n68 --> r65
+  n32 --> r65
+  n13 --> r65
+  n5 --> r65
+  r65 --> n74
+  r66{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-DOUBLE-MARKED-TRACE-POLE<br/>proved"}
   class r66 proved
-  n79 --> r66
-  n74 --> r66
-  r66 --> n81
-  r67{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-SOURCE-DEGREE-BOUND<br/>+2 omitted proof premises<br/>proved"}
+  n73 --> r66
+  n14 --> r66
+  r66 --> n77
+  r67{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-MINIMAL-WEIGHT-BOUNDARY-<br/>EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r67 proved
-  n74 --> r67
-  r67 --> n78
-  r68{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-WEIGHTED-DEGREE-BOUND<br/>+3 omitted proof premises<br/>proved"}
+  n79 --> r67
+  n73 --> r67
+  r67 --> n81
+  r68{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-SOURCE-DEGREE-BOUND<br/>+2 omitted proof premises<br/>proved"}
   class r68 proved
-  n74 --> r68
-  r68 --> n79
-  r69{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-WHOLE-CHART-AND-IMAGE<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  n73 --> r68
+  r68 --> n78
+  r69{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-WEIGHTED-DEGREE-BOUND<br/>+3 omitted proof premises<br/>proved"}
   class r69 proved
-  n71 --> r69
-  n8 --> r69
-  r69 --> n74
-  r70{"AND<br/>DERIVE-HESSIAN-FIRST-SOURCE-<br/>FIELD<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  n73 --> r69
+  r69 --> n79
+  r70{"AND<br/>DERIVE-HESSIAN-EXCEPTIONAL-<br/>FOLD-WHOLE-CHART-AND-IMAGE<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r70 proved
-  r70 --> n13
-  r71{"AND<br/>DERIVE-HESSIAN-GENERIC-SOURCE-<br/>LINE-TRANSVERSE-COLLISIONS<br/>+1 omitted proof premise<br/>proved"}
+  n70 --> r70
+  n7 --> r70
+  r70 --> n73
+  r71{"AND<br/>DERIVE-HESSIAN-FIRST-SOURCE-<br/>FIELD<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r71 proved
-  n30 --> r71
-  n85 --> r71
-  r71 --> n87
-  r72{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-EIGHTEEN-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  r71 --> n12
+  r72{"AND<br/>DERIVE-HESSIAN-GENERIC-SOURCE-<br/>LINE-TRANSVERSE-COLLISIONS<br/>+1 omitted proof premise<br/>proved"}
   class r72 proved
-  n83 --> r72
-  n40 --> r72
-  n42 --> r72
-  n41 --> r72
-  n43 --> r72
-  r72 --> n84
-  r73{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-FOURTEEN-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n29 --> r72
+  n85 --> r72
+  r72 --> n87
+  r73{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-EIGHTEEN-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r73 proved
-  n80 --> r73
-  n31 --> r73
-  n44 --> r73
-  n68 --> r73
-  n54 --> r73
-  n47 --> r73
-  n45 --> r73
-  n46 --> r73
-  r73 --> n82
-  r74{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-SIXTEEN-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n83 --> r73
+  n39 --> r73
+  n41 --> r73
+  n40 --> r73
+  n42 --> r73
+  r73 --> n84
+  r74{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-FOURTEEN-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r74 proved
-  n82 --> r74
+  n80 --> r74
+  n30 --> r74
+  n43 --> r74
   n67 --> r74
-  r74 --> n83
-  r75{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-TEN-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n53 --> r74
+  n46 --> r74
+  n44 --> r74
+  n45 --> r74
+  r74 --> n82
+  r75{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-SIXTEEN-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r75 proved
-  n73 --> r75
-  n52 --> r75
-  n39 --> r75
-  r75 --> n76
-  r76{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-TWELVE-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n82 --> r75
+  n66 --> r75
+  r75 --> n83
+  r76{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-TEN-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r76 proved
-  n76 --> r76
-  n49 --> r76
-  n50 --> r76
-  n48 --> r76
-  n31 --> r76
-  r76 --> n80
-  r77{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-TWENTY-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n72 --> r76
+  n51 --> r76
+  n38 --> r76
+  r76 --> n76
+  r77{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-TWELVE-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r77 proved
-  n84 --> r77
-  n23 --> r77
-  n20 --> r77
-  n22 --> r77
-  n24 --> r77
-  r77 --> n85
-  r78{"AND<br/>DERIVE-HESSIAN-GLOBAL-OCTIC-<br/>CONDUCTOR-EXCLUSION<br/>+4 omitted proof premises<br/>proved"}
+  n76 --> r77
+  n48 --> r77
+  n49 --> r77
+  n47 --> r77
+  n30 --> r77
+  r77 --> n80
+  r78{"AND<br/>DERIVE-HESSIAN-GLOBAL-<br/>CONDUCTOR-TWENTY-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r78 proved
-  n39 --> r78
-  n31 --> r78
-  r78 --> n73
-  r79{"AND<br/>DERIVE-HESSIAN-HYPERELLIPTIC-<br/>OCTIC-CONDUCTOR-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n84 --> r78
+  n22 --> r78
+  n19 --> r78
+  n21 --> r78
+  n23 --> r78
+  r78 --> n85
+  r79{"AND<br/>DERIVE-HESSIAN-GLOBAL-OCTIC-<br/>CONDUCTOR-EXCLUSION<br/>+4 omitted proof premises<br/>proved"}
   class r79 proved
-  r79 --> n52
-  r80{"AND<br/>DERIVE-HESSIAN-OCTIC-<br/>HYPERELLIPTIC-FROM-DEGREE-TWO-<br/>ELEMENT-EXCLUSION<br/>proved"}
+  n38 --> r79
+  n30 --> r79
+  r79 --> n72
+  r80{"AND<br/>DERIVE-HESSIAN-HYPERELLIPTIC-<br/>OCTIC-CONDUCTOR-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r80 proved
-  n31 --> r80
-  r80 --> n52
-  r81{"AND<br/>DERIVE-HESSIAN-HYPERELLIPTIC-<br/>TARGET-COORDINATE-EXCLUSION<br/>+1 omitted proof premise<br/>proved"}
+  r80 --> n51
+  r81{"AND<br/>DERIVE-HESSIAN-OCTIC-<br/>HYPERELLIPTIC-FROM-DEGREE-TWO-<br/>ELEMENT-EXCLUSION<br/>proved"}
   class r81 proved
-  r81 --> n53
-  r82{"AND<br/>DERIVE-HESSIAN-TARGET-<br/>COORDINATE-FROM-DEGREE-TWO-<br/>ELEMENT-EXCLUSION<br/>proved"}
+  n30 --> r81
+  r81 --> n51
+  r82{"AND<br/>DERIVE-HESSIAN-HYPERELLIPTIC-<br/>TARGET-COORDINATE-EXCLUSION<br/>+1 omitted proof premise<br/>proved"}
   class r82 proved
-  n31 --> r82
-  r82 --> n53
-  r83{"AND<br/>DERIVE-HESSIAN-INDIVIDUAL-<br/>BOUNDARY-COORDINATES<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r82 --> n52
+  r83{"AND<br/>DERIVE-HESSIAN-TARGET-<br/>COORDINATE-FROM-DEGREE-TWO-<br/>ELEMENT-EXCLUSION<br/>proved"}
   class r83 proved
-  n14 --> r83
-  n33 --> r83
-  r83 --> n55
-  r84{"AND<br/>DERIVE-HESSIAN-LOGARITHMIC-<br/>TRACE-DEFECT<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n30 --> r83
+  r83 --> n52
+  r84{"AND<br/>DERIVE-HESSIAN-INDIVIDUAL-<br/>BOUNDARY-COORDINATES<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r84 proved
-  n15 --> r84
-  n7 --> r84
-  r84 --> n35
-  r85{"AND<br/>SOURCE-ROUTE-HESSIAN-MOMENT-<br/>TRACE<br/>+1 omitted proof premise<br/>proved"}
+  n13 --> r84
+  n32 --> r84
+  r84 --> n54
+  r85{"AND<br/>DERIVE-HESSIAN-LOGARITHMIC-<br/>TRACE-DEFECT<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r85 proved
-  r85 --> n38
-  r86{"AND<br/>DERIVE-HESSIAN-PLINTH-AND-<br/>INVARIANT-REPLICA-EXTENSION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n14 --> r85
+  n6 --> r85
+  r85 --> n34
+  r86{"AND<br/>SOURCE-ROUTE-HESSIAN-MOMENT-<br/>TRACE<br/>+1 omitted proof premise<br/>proved"}
   class r86 proved
-  n69 --> r86
-  n33 --> r86
-  n12 --> r86
-  n15 --> r86
-  r86 --> n70
-  r87{"AND<br/>SOURCE-ROUTE-HESSIAN-QUINTIC-<br/>GRAPH<br/>+1 omitted proof premise<br/>proved"}
+  r86 --> n37
+  r87{"AND<br/>DERIVE-HESSIAN-PLINTH-AND-<br/>INVARIANT-REPLICA-EXTENSION<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r87 proved
-  r87 --> n56
-  r88{"AND<br/>DERIVE-HESSIAN-RAMIFIED-FOLD-<br/>COMMON-POLES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  n68 --> r87
+  n32 --> r87
+  n11 --> r87
+  n14 --> r87
+  r87 --> n69
+  r88{"AND<br/>SOURCE-ROUTE-HESSIAN-QUINTIC-<br/>GRAPH<br/>+1 omitted proof premise<br/>proved"}
   class r88 proved
-  n69 --> r88
-  r88 --> n71
-  r89{"AND<br/>DERIVE-HESSIAN-REDUCED-BRANCH<br/>+1 pinned source<br/>proved"}
+  r88 --> n55
+  r89{"AND<br/>DERIVE-HESSIAN-RAMIFIED-FOLD-<br/>COMMON-POLES<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r89 proved
-  r89 --> n7
-  r90{"AND<br/>DERIVE-HESSIAN-REPLICA-SOURCE-<br/>IMAGE<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n68 --> r89
+  r89 --> n70
+  r90{"AND<br/>DERIVE-HESSIAN-REDUCED-BRANCH<br/>+1 pinned source<br/>proved"}
   class r90 proved
-  n16 --> r90
-  r90 --> n37
-  r91{"AND<br/>SOURCE-ROUTE-HESSIAN-RICCI-<br/>FLAT<br/>+1 omitted proof premise<br/>proved"}
+  r90 --> n6
+  r91{"AND<br/>DERIVE-HESSIAN-REPLICA-SOURCE-<br/>IMAGE<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r91 proved
-  r91 --> n17
-  r92{"AND<br/>DERIVE-HESSIAN-ROOT-CHART-<br/>CYCLIC-KELLER-TRANSFER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n15 --> r91
+  r91 --> n36
+  r92{"AND<br/>SOURCE-ROUTE-HESSIAN-RICCI-<br/>FLAT<br/>+1 omitted proof premise<br/>proved"}
   class r92 proved
-  n69 --> r92
-  n33 --> r92
-  n14 --> r92
-  r92 --> n72
-  r93{"AND<br/>DERIVE-HESSIAN-SOURCE-<br/>COORDINATE-COMPLETIONS<br/>+1 pinned source<br/>proved"}
+  r92 --> n16
+  r93{"AND<br/>DERIVE-HESSIAN-ROOT-CHART-<br/>CYCLIC-KELLER-TRANSFER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r93 proved
-  r93 --> n8
-  r94{"AND<br/>DERIVE-HESSIAN-SOURCE-REGULAR-<br/>INTERMEDIATE-ALGEBRA<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  n68 --> r93
+  n32 --> r93
+  n13 --> r93
+  r93 --> n71
+  r94{"AND<br/>DERIVE-HESSIAN-SOURCE-<br/>COORDINATE-COMPLETIONS<br/>+1 pinned source<br/>proved"}
   class r94 proved
-  r94 --> n16
-  r95{"AND<br/>DERIVE-HESSIAN-TARGET-<br/>INVARIANTS-AND-TRACE-TRANSPORT<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  r94 --> n7
+  r95{"AND<br/>DERIVE-HESSIAN-SOURCE-REGULAR-<br/>INTERMEDIATE-ALGEBRA<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r95 proved
-  n6 --> r95
-  n15 --> r95
-  n7 --> r95
-  r95 --> n36
-  r96{"AND<br/>DERIVE-HESSIAN-UNRAMIFIED-<br/>RESIDUE-DEGREE<br/>+1 pinned source<br/>proved"}
+  r95 --> n15
+  r96{"AND<br/>DERIVE-HESSIAN-TARGET-<br/>INVARIANTS-AND-TRACE-TRANSPORT<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r96 proved
+  n5 --> r96
   n14 --> r96
-  r96 --> n34
-  r97{"AND<br/>DERIVE-HESSIAN-VALUATION-ONLY-<br/>COORDINATE-COUNTERCONTROL<br/>+1 pinned source<br/>proved"}
+  n6 --> r96
+  r96 --> n35
+  r97{"AND<br/>DERIVE-HESSIAN-UNRAMIFIED-<br/>RESIDUE-DEGREE<br/>+1 pinned source<br/>proved"}
   class r97 proved
-  r97 --> n9
-  r98{"AND<br/>DC2-TO-JC2-BY-EXACT-COTANGENT<br/>+2 omitted proof premises<br/>blocked"}
-  class r98 open
-  r98 --> n63
-  r99{"AND<br/>RANK2-ALL-FINITE-PBW-IDENTITY-<br/>INVERSES-TO-COTANGENT<br/>+2 omitted proof premises<br/>blocked"}
+  n13 --> r97
+  r97 --> n33
+  r98{"AND<br/>DERIVE-HESSIAN-VALUATION-ONLY-<br/>COORDINATE-COUNTERCONTROL<br/>+1 pinned source<br/>proved"}
+  class r98 proved
+  r98 --> n8
+  r99{"AND<br/>DC2-TO-JC2-BY-EXACT-COTANGENT<br/>+2 omitted proof premises<br/>blocked"}
   class r99 open
-  r99 --> n57
+  r99 --> n62
+  r100{"AND<br/>RANK2-ALL-FINITE-PBW-IDENTITY-<br/>INVERSES-TO-COTANGENT<br/>+2 omitted proof premises<br/>blocked"}
+  class r100 open
+  r100 --> n56
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -2928,7 +2970,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 88 statements and 100 routes (336 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 88 statements and 101 routes (338 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -5184,6 +5226,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | [DIX-ORDER-TWELVE-FORTY-TWO-PLANAR-DISTINCT-SIMPLE-DOUBLE-ENDS](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_HIGH_DOUBLE_ENDS.md) | proved | complete | none in declared routes |
 | [DIX-ORDER-TWELVE-FORTY-TWO-PLANAR-GLOBAL-EXCHANGE-FIXED-POINTS](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_HIGH_DOUBLE_ENDS.md) | proved | complete | none in declared routes |
 | [DIX-PLANE-WEYL-ZERO-SUM-WEIGHT-RATIONAL-SLICE](dixmier/dixmier-formal-lifting/WEIGHTED_HAMILTONIAN_SLICE_FULL_BOUNDARY.md) | proved | complete | none in declared routes |
+| [DIX-JAC-AXIS-LEADING-FACTOR-ROOT-TRANSLATION](jacobian/planar-degree-frontier/PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) | proved | complete | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -5267,39 +5310,39 @@ flowchart LR
   class n22 proved
   n23["DIX-PLANE-WEYL-BOUNDARY-<br/>ADMISSIBLE-SLICE-JET-EXCLUSION<br/>proved"]
   class n23 proved
-  n24["DIX-POLYNOMIAL-GCD-TWO-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"]
+  n24["DIX-JAC-AXIS-LEADING-FACTOR-<br/>ROOT-TRANSLATION<br/>proved"]
   class n24 proved
-  n25["DIX-POLYNOMIAL-GCD-THREE-<br/>INFINITY-DEGREE-BOUND<br/>proved"]
+  n25["DIX-POLYNOMIAL-GCD-TWO-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"]
   class n25 proved
-  n26["DIX-POLYNOMIAL-GCD-THREE-<br/>MULTI-ROOT-MULTIPLICITIES<br/>proved"]
+  n26["DIX-POLYNOMIAL-GCD-THREE-<br/>INFINITY-DEGREE-BOUND<br/>proved"]
   class n26 proved
-  n27["DIX-POLYNOMIAL-GCD-THREE-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"]
+  n27["DIX-POLYNOMIAL-GCD-THREE-<br/>MULTI-ROOT-MULTIPLICITIES<br/>proved"]
   class n27 proved
-  n28["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THROUGH-FIFTEEN<br/>proved"]
+  n28["DIX-POLYNOMIAL-GCD-THREE-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"]
   class n28 proved
-  n29["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THROUGH-THIRTY-ONE<br/>proved"]
+  n29["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THROUGH-FIFTEEN<br/>proved"]
   class n29 proved
-  n30["DIX-POLYNOMIAL-WEYL-CENTERED-<br/>CORNER-NONCOPRIME<br/>proved"]
+  n30["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THROUGH-THIRTY-ONE<br/>proved"]
   class n30 proved
-  n31["DIX-POLYNOMIAL-WEYL-CENTERED-<br/>RATIONAL-INTERTWINER-RIGIDITY<br/>proved"]
+  n31["DIX-POLYNOMIAL-WEYL-CENTERED-<br/>CORNER-NONCOPRIME<br/>proved"]
   class n31 proved
-  n32["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THIRTY-TWO-FACES<br/>proved"]
+  n32["DIX-POLYNOMIAL-WEYL-CENTERED-<br/>RATIONAL-INTERTWINER-RIGIDITY<br/>proved"]
   class n32 proved
-  n33["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THIRTY-TWO<br/>proved"]
+  n33["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THIRTY-TWO-FACES<br/>proved"]
   class n33 proved
-  n34["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>GCD-SIXTEEN-QUOTIENTS<br/>proved"]
+  n34["DIX-MONIC-POLYNOMIAL-ORDER-<br/>THIRTY-TWO<br/>proved"]
   class n34 proved
-  n35["DIX-POLYNOMIAL-FOUR-SIX-<br/>INFINITY-DEGREE-GATE<br/>proved"]
+  n35["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>GCD-SIXTEEN-QUOTIENTS<br/>proved"]
   class n35 proved
-  n36["DIX-POLYNOMIAL-FOUR-SIX-<br/>STRING-EXCLUSION<br/>proved"]
+  n36["DIX-POLYNOMIAL-FOUR-SIX-<br/>INFINITY-DEGREE-GATE<br/>proved"]
   class n36 proved
-  n37["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>DEGREE-THROUGH-THIRTY-THREE<br/>proved"]
+  n37["DIX-POLYNOMIAL-FOUR-SIX-<br/>STRING-EXCLUSION<br/>proved"]
   class n37 proved
-  n38["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>DEGREE-THROUGH-FORTY-ONE<br/>proved"]
+  n38["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>DEGREE-THROUGH-THIRTY-THREE<br/>proved"]
   class n38 proved
-  n39["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>FORTY-TWO-RESIDUAL<br/>proved"]
+  n39["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>DEGREE-THROUGH-FORTY-ONE<br/>proved"]
   class n39 proved
-  n40["DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FORTY-<br/>NINE-FROM-F7<br/>proved<br/>OR routes"]
+  n40["DIX-POLYNOMIAL-WEYL-BERNSTEIN-<br/>FORTY-TWO-RESIDUAL<br/>proved"]
   class n40 proved
   n41["DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FIFTY-ONE-<br/>FROM-F7<br/>proved"]
   class n41 proved
@@ -5379,384 +5422,376 @@ flowchart LR
   class n78 proved
   n79["DIX-ORDER-TWELVE-FORTY-TWO-<br/>PLANAR-GLOBAL-EXCHANGE-FIXED-<br/>POINTS<br/>proved"]
   class n79 proved
-  r0{"AND<br/>DERIVE-DIX-KF-FAITHFUL-<br/>BOUNDED-GRAPH-TRANSFER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  r0{"AND<br/>DERIVE-DIX-JAC-AXIS-LEADING-<br/>FACTOR-ROOT-TRANSLATION<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r0 proved
-  r0 --> n0
-  r1{"AND<br/>DERIVE-DIX-KF-JC2-TO-<br/>GENERALIZED-DC1<br/>+1 pinned source<br/>proved"}
+  r0 --> n24
+  r1{"AND<br/>DERIVE-DIX-KF-FAITHFUL-<br/>BOUNDED-GRAPH-TRANSFER<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r1 proved
-  r1 --> n1
-  r2{"AND<br/>DERIVE-DIX-KF-UNIFORM-BOUND-<br/>TO-FAITHFUL-FAMILIES<br/>+1 omitted proof premise<br/>proved"}
+  r1 --> n0
+  r2{"AND<br/>DERIVE-DIX-KF-JC2-TO-<br/>GENERALIZED-DC1<br/>+1 pinned source<br/>proved"}
   class r2 proved
-  r2 --> n5
-  r3{"AND<br/>DERIVE-DIX-LEADING-FACTOR-<br/>SLICE-TREE-CLASSIFICATION<br/>+3 omitted proof premises<br/>proved"}
+  r2 --> n1
+  r3{"AND<br/>DERIVE-DIX-KF-UNIFORM-BOUND-<br/>TO-FAITHFUL-FAMILIES<br/>+1 omitted proof premise<br/>proved"}
   class r3 proved
-  r3 --> n21
-  r4{"AND<br/>DERIVE-DIX-MIXED-NEGATIVE-<br/>WEIGHT-SLICE-MULTIPLICITY-<br/>EXISTENCE<br/>+1 omitted proof premise<br/>proved"}
+  r3 --> n5
+  r4{"AND<br/>DERIVE-DIX-LEADING-FACTOR-<br/>SLICE-TREE-CLASSIFICATION<br/>+3 omitted proof premises<br/>proved"}
   class r4 proved
-  n7 --> r4
-  r4 --> n11
-  r5{"AND<br/>DERIVE-DIX-MIXED-POSITIVE-<br/>WEIGHT-SLICE-TREE-<br/>CLASSIFICATION<br/>+1 omitted proof premise<br/>proved"}
+  r4 --> n21
+  r5{"AND<br/>DERIVE-DIX-MIXED-NEGATIVE-<br/>WEIGHT-SLICE-MULTIPLICITY-<br/>EXISTENCE<br/>+1 omitted proof premise<br/>proved"}
   class r5 proved
-  n6 --> r5
-  n13 --> r5
-  r5 --> n16
-  r6{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THIRTY-TWO<br/>+1 pinned source<br/>proved"}
+  n7 --> r5
+  r5 --> n11
+  r6{"AND<br/>DERIVE-DIX-MIXED-POSITIVE-<br/>WEIGHT-SLICE-TREE-<br/>CLASSIFICATION<br/>+1 omitted proof premise<br/>proved"}
   class r6 proved
-  n32 --> r6
-  n29 --> r6
-  r6 --> n33
-  r7{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THIRTY-TWO-FACES<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
+  n6 --> r6
+  n13 --> r6
+  r6 --> n16
+  r7{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THIRTY-TWO<br/>+1 pinned source<br/>proved"}
   class r7 proved
-  n29 --> r7
-  r7 --> n32
-  r8{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THROUGH-FIFTEEN<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  n33 --> r7
+  n30 --> r7
+  r7 --> n34
+  r8{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THIRTY-TWO-FACES<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r8 proved
-  n24 --> r8
-  n19 --> r8
-  n20 --> r8
-  r8 --> n28
-  r9{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THROUGH-THIRTY-ONE<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  n30 --> r8
+  r8 --> n33
+  r9{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THROUGH-FIFTEEN<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r9 proved
+  n25 --> r9
+  n19 --> r9
   n20 --> r9
   r9 --> n29
-  r10{"AND<br/>DERIVE-DIX-MONIC-SCALAR-<br/>COMMUTATOR-RESIDUE<br/>+1 pinned source<br/>proved"}
+  r10{"AND<br/>DERIVE-DIX-MONIC-POLYNOMIAL-<br/>ORDER-THROUGH-THIRTY-ONE<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r10 proved
-  r10 --> n4
-  r11{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DEGREE-SIXTEEN-<br/>CUSP-DOUBLE-BRANCHES<br/>+2 omitted proof premises<br/>proved"}
+  n20 --> r10
+  r10 --> n30
+  r11{"AND<br/>DERIVE-DIX-MONIC-SCALAR-<br/>COMMUTATOR-RESIDUE<br/>+1 pinned source<br/>proved"}
   class r11 proved
-  n76 --> r11
-  n72 --> r11
-  r11 --> n78
-  r12{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DEGREE-SIXTEEN-<br/>OUTER-PROFILES<br/>+2 omitted proof premises<br/>proved"}
+  r11 --> n4
+  r12{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DEGREE-SIXTEEN-<br/>CUSP-DOUBLE-BRANCHES<br/>+2 omitted proof premises<br/>proved"}
   class r12 proved
-  n63 --> r12
-  n57 --> r12
-  r12 --> n76
-  r13{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DIFFERENTIAL-ORDER-<br/>ALGEBRA<br/>+2 omitted proof premises<br/>proved"}
+  n76 --> r12
+  n72 --> r12
+  r12 --> n78
+  r13{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DEGREE-SIXTEEN-<br/>OUTER-PROFILES<br/>+2 omitted proof premises<br/>proved"}
   class r13 proved
-  n49 --> r13
-  r13 --> n50
-  r14{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DISTINCT-SIMPLE-<br/>DOUBLE-ENDS<br/>proved"}
+  n63 --> r13
+  n57 --> r13
+  r13 --> n76
+  r14{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DIFFERENTIAL-ORDER-<br/>ALGEBRA<br/>+2 omitted proof premises<br/>proved"}
   class r14 proved
-  n70 --> r14
-  n51 --> r14
-  n54 --> r14
-  r14 --> n77
-  r15{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DOUBLE-POINT-<br/>RESULTANTS<br/>proved"}
+  n49 --> r14
+  r14 --> n50
+  r15{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DISTINCT-SIMPLE-<br/>DOUBLE-ENDS<br/>proved"}
   class r15 proved
-  n50 --> r15
-  n61 --> r15
-  n62 --> r15
-  r15 --> n65
-  r16{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DOUBLE-RESULTANT-<br/>CONTENT<br/>proved"}
+  n70 --> r15
+  n51 --> r15
+  n54 --> r15
+  r15 --> n77
+  r16{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DOUBLE-POINT-<br/>RESULTANTS<br/>proved"}
   class r16 proved
-  n65 --> r16
-  n51 --> r16
-  n53 --> r16
-  n54 --> r16
-  r16 --> n69
-  r17{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-EXACT-DEGREE-AND-<br/>GENUS<br/>proved"}
+  n50 --> r16
+  n61 --> r16
+  n62 --> r16
+  r16 --> n65
+  r17{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-DOUBLE-RESULTANT-<br/>CONTENT<br/>proved"}
   class r17 proved
-  n56 --> r17
+  n65 --> r17
+  n51 --> r17
   n53 --> r17
   n54 --> r17
-  r17 --> n57
-  r18{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-FULL-GEOMETRIC-<br/>MONODROMY<br/>+1 omitted proof premise<br/>proved"}
+  r17 --> n69
+  r18{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-EXACT-DEGREE-AND-<br/>GENUS<br/>proved"}
   class r18 proved
-  n66 --> r18
-  n57 --> r18
+  n56 --> r18
+  n53 --> r18
   n54 --> r18
-  r18 --> n74
-  r19{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-GENERIC-POSITION-<br/>MONODROMY<br/>+1 omitted proof premise<br/>proved"}
+  r18 --> n57
+  r19{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-FULL-GEOMETRIC-<br/>MONODROMY<br/>+1 omitted proof premise<br/>proved"}
   class r19 proved
-  n53 --> r19
-  n51 --> r19
-  n48 --> r19
-  r19 --> n54
-  r20{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-GLOBAL-EXCHANGE-<br/>FIXED-POINTS<br/>proved"}
+  n66 --> r19
+  n57 --> r19
+  n54 --> r19
+  r19 --> n74
+  r20{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-GENERIC-POSITION-<br/>MONODROMY<br/>+1 omitted proof premise<br/>proved"}
   class r20 proved
-  n70 --> r20
-  n71 --> r20
-  n78 --> r20
-  r20 --> n79
-  r21{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-HIGH-DOUBLE-<br/>BRANCHES<br/>proved"}
+  n53 --> r20
+  n51 --> r20
+  n48 --> r20
+  r20 --> n54
+  r21{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-GLOBAL-EXCHANGE-<br/>FIXED-POINTS<br/>proved"}
   class r21 proved
-  n55 --> r21
-  n65 --> r21
-  n51 --> r21
-  n53 --> r21
-  r21 --> n70
-  r22{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-HIGH-DOUBLE-<br/>LEADING-PAIRS<br/>proved"}
+  n70 --> r21
+  n71 --> r21
+  n78 --> r21
+  r21 --> n79
+  r22{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-HIGH-DOUBLE-<br/>BRANCHES<br/>proved"}
   class r22 proved
-  n48 --> r22
-  n50 --> r22
+  n55 --> r22
+  n65 --> r22
+  n51 --> r22
   n53 --> r22
-  r22 --> n55
-  r23{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-HIGH-ROOT-FIBRE-<br/>POLES<br/>+1 omitted proof premise<br/>proved"}
+  r22 --> n70
+  r23{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-HIGH-DOUBLE-<br/>LEADING-PAIRS<br/>proved"}
   class r23 proved
-  n51 --> r23
   n48 --> r23
-  r23 --> n53
-  r24{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-HIGH-ROOT-TRANSFER<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
+  n50 --> r23
+  n53 --> r23
+  r23 --> n55
+  r24{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-HIGH-ROOT-FIBRE-<br/>POLES<br/>+1 omitted proof premise<br/>proved"}
   class r24 proved
-  r24 --> n48
-  r25{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-MULTIPLICITY-TWO-<br/>OUTER-PROFILES<br/>+1 omitted proof premise<br/>proved"}
+  n51 --> r24
+  n48 --> r24
+  r24 --> n53
+  r25{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-HIGH-ROOT-TRANSFER<br/>+1 pinned source<br/>+3 omitted proof premises<br/>proved"}
   class r25 proved
-  n63 --> r25
-  n60 --> r25
-  r25 --> n67
-  r26{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-NONHIGH-DOUBLE-ENDS<br/>proved"}
+  r25 --> n48
+  r26{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-MULTIPLICITY-TWO-<br/>OUTER-PROFILES<br/>+1 omitted proof premise<br/>proved"}
   class r26 proved
-  n65 --> r26
-  n62 --> r26
-  r26 --> n71
-  r27{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-BRANCH-<br/>SEMIGROUP<br/>proved"}
+  n63 --> r26
+  n60 --> r26
+  r26 --> n67
+  r27{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-NONHIGH-DOUBLE-ENDS<br/>proved"}
   class r27 proved
-  n59 --> r27
-  n51 --> r27
-  n50 --> r27
-  r27 --> n60
-  r28{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-DOUBLE-<br/>ALGEBRA<br/>proved"}
+  n65 --> r27
+  n62 --> r27
+  r27 --> n71
+  r28{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-BRANCH-<br/>SEMIGROUP<br/>proved"}
   class r28 proved
-  n65 --> r28
-  n60 --> r28
-  n63 --> r28
-  r28 --> n72
-  r29{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-FIBRE-PROFILE<br/>+2 omitted proof premises<br/>proved"}
+  n59 --> r28
+  n51 --> r28
+  n50 --> r28
+  r28 --> n60
+  r29{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-DOUBLE-<br/>ALGEBRA<br/>proved"}
   class r29 proved
-  n52 --> r29
-  n50 --> r29
-  r29 --> n56
-  r30{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-LOCAL-DEGREES<br/>proved"}
+  n65 --> r29
+  n60 --> r29
+  n63 --> r29
+  r29 --> n72
+  r30{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-FIBRE-PROFILE<br/>+2 omitted proof premises<br/>proved"}
   class r30 proved
-  n61 --> r30
-  n60 --> r30
-  r30 --> n63
-  r31{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-RANK-ZERO-<br/>OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
+  n52 --> r30
+  n50 --> r30
+  r30 --> n56
+  r31{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-LOCAL-DEGREES<br/>proved"}
   class r31 proved
-  n63 --> r31
-  r31 --> n68
-  r32{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-POLAR-NORM<br/>proved"}
+  n61 --> r31
+  n60 --> r31
+  r31 --> n63
+  r32{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-OUTER-RANK-ZERO-<br/>OBSTRUCTION<br/>+1 omitted proof premise<br/>proved"}
   class r32 proved
-  n59 --> r32
-  n54 --> r32
-  n51 --> r32
-  r32 --> n61
-  r33{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-POSITION-LIFT-<br/>UNSATURATED<br/>proved"}
+  n63 --> r32
+  r32 --> n68
+  r33{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-POLAR-NORM<br/>proved"}
   class r33 proved
-  n65 --> r33
-  n50 --> r33
+  n59 --> r33
   n54 --> r33
-  r33 --> n73
-  r34{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-QUADRATIC-CHARTS<br/>proved"}
+  n51 --> r33
+  r33 --> n61
+  r34{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-POSITION-LIFT-<br/>UNSATURATED<br/>proved"}
   class r34 proved
-  n49 --> r34
-  r34 --> n51
-  r35{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-RESIDUE-COVER<br/>+1 omitted proof premise<br/>proved"}
+  n65 --> r34
+  n50 --> r34
+  n54 --> r34
+  r34 --> n73
+  r35{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-QUADRATIC-CHARTS<br/>proved"}
   class r35 proved
-  n59 --> r35
-  n50 --> r35
-  r35 --> n62
-  r36{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-RESIDUE-<br/>PERMUTATION-LIFTING<br/>+1 omitted proof premise<br/>proved"}
+  n49 --> r35
+  r35 --> n51
+  r36{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-RESIDUE-COVER<br/>+1 omitted proof premise<br/>proved"}
   class r36 proved
-  n62 --> r36
-  n60 --> r36
-  n51 --> r36
-  r36 --> n66
-  r37{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-SHARED-RESULTANT<br/>+1 omitted proof premise<br/>proved"}
+  n59 --> r36
+  n50 --> r36
+  r36 --> n62
+  r37{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-RESIDUE-<br/>PERMUTATION-LIFTING<br/>+1 omitted proof premise<br/>proved"}
   class r37 proved
-  n48 --> r37
-  r37 --> n49
-  r38{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-THREE-WEIGHT-<br/>PROPAGATION<br/>proved"}
+  n62 --> r37
+  n60 --> r37
+  n51 --> r37
+  r37 --> n66
+  r38{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-SHARED-RESULTANT<br/>+1 omitted proof premise<br/>proved"}
   class r38 proved
-  n49 --> r38
-  r38 --> n52
-  r39{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-TRIANGULAR-FIBRE-<br/>POLES<br/>+1 omitted proof premise<br/>proved"}
+  n48 --> r38
+  r38 --> n49
+  r39{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-THREE-WEIGHT-<br/>PROPAGATION<br/>proved"}
   class r39 proved
-  n53 --> r39
-  n57 --> r39
-  r39 --> n58
-  r40{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-TRIANGULAR-FIBRE-<br/>TOPOLOGY<br/>+1 omitted proof premise<br/>proved"}
+  n49 --> r39
+  r39 --> n52
+  r40{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-TRIANGULAR-FIBRE-<br/>POLES<br/>+1 omitted proof premise<br/>proved"}
   class r40 proved
-  n58 --> r40
-  n66 --> r40
-  n51 --> r40
-  r40 --> n75
-  r41{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-TRIANGULAR-POLAR-<br/>NORM<br/>proved"}
+  n53 --> r40
+  n57 --> r40
+  r40 --> n58
+  r41{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-TRIANGULAR-FIBRE-<br/>TOPOLOGY<br/>+1 omitted proof premise<br/>proved"}
   class r41 proved
-  n61 --> r41
-  n59 --> r41
-  r41 --> n64
-  r42{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-UNSPLIT-OUTER-<br/>PROFILE<br/>proved"}
+  n58 --> r41
+  n66 --> r41
+  n51 --> r41
+  r41 --> n75
+  r42{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-TRIANGULAR-POLAR-<br/>NORM<br/>proved"}
   class r42 proved
-  n56 --> r42
-  n57 --> r42
-  n50 --> r42
-  r42 --> n59
-  r43{"AND<br/>DERIVE-DIX-ORDER-TWELVE-<br/>LEADING-FACTOR-TREE-<br/>CLASSIFICATION<br/>+2 omitted proof premises<br/>proved"}
+  n61 --> r42
+  n59 --> r42
+  r42 --> n64
+  r43{"AND<br/>DERIVE-DIX-ORDER-TWELVE-FORTY-<br/>TWO-PLANAR-UNSPLIT-OUTER-<br/>PROFILE<br/>proved"}
   class r43 proved
-  n21 --> r43
-  n16 --> r43
-  r43 --> n47
-  r44{"AND<br/>DERIVE-DIX-PLANE-HAMILTONIAN-<br/>SLICE-ARBITRARILY-MANY-MIXED-<br/>EDGES<br/>proved"}
+  n56 --> r43
+  n57 --> r43
+  n50 --> r43
+  r43 --> n59
+  r44{"AND<br/>DERIVE-DIX-ORDER-TWELVE-<br/>LEADING-FACTOR-TREE-<br/>CLASSIFICATION<br/>+2 omitted proof premises<br/>proved"}
   class r44 proved
-  n13 --> r44
-  n6 --> r44
-  r44 --> n17
-  r45{"AND<br/>DERIVE-DIX-PLANE-HAMILTONIAN-<br/>SLICE-BOUNDARY-GLUING<br/>proved"}
+  n21 --> r44
+  n16 --> r44
+  r44 --> n47
+  r45{"AND<br/>DERIVE-DIX-PLANE-HAMILTONIAN-<br/>SLICE-ARBITRARILY-MANY-MIXED-<br/>EDGES<br/>proved"}
   class r45 proved
-  n2 --> r45
-  n8 --> r45
-  r45 --> n13
-  r46{"AND<br/>DERIVE-DIX-PLANE-HAMILTONIAN-<br/>SLICE-MIXED-CHAIN-GLOBAL-<br/>OBSTRUCTION<br/>proved"}
+  n13 --> r45
+  n6 --> r45
+  r45 --> n17
+  r46{"AND<br/>DERIVE-DIX-PLANE-HAMILTONIAN-<br/>SLICE-BOUNDARY-GLUING<br/>proved"}
   class r46 proved
-  n17 --> r46
-  r46 --> n22
-  r47{"AND<br/>DERIVE-DIX-PLANE-MIXED-WEIGHT-<br/>HAMILTONIAN-SLICE-ROOT-<br/>INTERPOLATION<br/>proved"}
+  n2 --> r46
+  n8 --> r46
+  r46 --> n13
+  r47{"AND<br/>DERIVE-DIX-PLANE-HAMILTONIAN-<br/>SLICE-MIXED-CHAIN-GLOBAL-<br/>OBSTRUCTION<br/>proved"}
   class r47 proved
-  n2 --> r47
-  r47 --> n6
-  r48{"AND<br/>DERIVE-DIX-PLANE-NEGATIVE-<br/>DEGREE-HAMILTONIAN-SLICE-<br/>INTERPOLATION<br/>proved"}
+  n17 --> r47
+  r47 --> n22
+  r48{"AND<br/>DERIVE-DIX-PLANE-MIXED-WEIGHT-<br/>HAMILTONIAN-SLICE-ROOT-<br/>INTERPOLATION<br/>proved"}
   class r48 proved
   n2 --> r48
-  r48 --> n7
-  r49{"AND<br/>DERIVE-DIX-PLANE-NEGATIVE-<br/>DEGREE-HAMILTONIAN-SLICE-<br/>SATURATED-ROOTS<br/>proved"}
+  r48 --> n6
+  r49{"AND<br/>DERIVE-DIX-PLANE-NEGATIVE-<br/>DEGREE-HAMILTONIAN-SLICE-<br/>INTERPOLATION<br/>proved"}
   class r49 proved
-  n7 --> r49
-  r49 --> n12
-  r50{"AND<br/>DERIVE-DIX-PLANE-WEIGHTED-<br/>HAMILTONIAN-SLICE-POLE-TEST<br/>+1 pinned source<br/>proved"}
+  n2 --> r49
+  r49 --> n7
+  r50{"AND<br/>DERIVE-DIX-PLANE-NEGATIVE-<br/>DEGREE-HAMILTONIAN-SLICE-<br/>SATURATED-ROOTS<br/>proved"}
   class r50 proved
-  r50 --> n2
-  r51{"AND<br/>DERIVE-DIX-PLANE-WEIGHTED-<br/>HAMILTONIAN-SLICE-POSITIVE-<br/>EDGE-COMPATIBILITY<br/>+1 pinned source<br/>proved"}
+  n7 --> r50
+  r50 --> n12
+  r51{"AND<br/>DERIVE-DIX-PLANE-WEIGHTED-<br/>HAMILTONIAN-SLICE-POLE-TEST<br/>+1 pinned source<br/>proved"}
   class r51 proved
-  n2 --> r51
-  r51 --> n8
-  r52{"AND<br/>DERIVE-DIX-PLANE-WEYL-<br/>BOUNDARY-ADMISSIBLE-SLICE-JET-<br/>EXCLUSION<br/>proved"}
+  r51 --> n2
+  r52{"AND<br/>DERIVE-DIX-PLANE-WEIGHTED-<br/>HAMILTONIAN-SLICE-POSITIVE-<br/>EDGE-COMPATIBILITY<br/>+1 pinned source<br/>proved"}
   class r52 proved
-  n14 --> r52
-  n17 --> r52
-  r52 --> n23
-  r53{"AND<br/>DERIVE-DIX-PLANE-WEYL-<br/>HAMILTONIAN-SLICE-FIXED-<br/>CYCLIC-JETS<br/>proved"}
+  n2 --> r52
+  r52 --> n8
+  r53{"AND<br/>DERIVE-DIX-PLANE-WEYL-<br/>BOUNDARY-ADMISSIBLE-SLICE-JET-<br/>EXCLUSION<br/>proved"}
   class r53 proved
-  n2 --> r53
   n14 --> r53
-  r53 --> n18
-  r54{"AND<br/>DERIVE-DIX-PLANE-WEYL-<br/>WEIGHTED-HAMILTONIAN-SLICE-<br/>CLASSICAL-JET<br/>+1 pinned source<br/>proved"}
+  n17 --> r53
+  r53 --> n23
+  r54{"AND<br/>DERIVE-DIX-PLANE-WEYL-<br/>HAMILTONIAN-SLICE-FIXED-<br/>CYCLIC-JETS<br/>proved"}
   class r54 proved
   n2 --> r54
-  n8 --> r54
-  r54 --> n14
-  r55{"AND<br/>DERIVE-DIX-PLANE-WEYL-ZERO-<br/>SUM-WEIGHT-RATIONAL-SLICE<br/>+1 pinned source<br/>proved"}
+  n14 --> r54
+  r54 --> n18
+  r55{"AND<br/>DERIVE-DIX-PLANE-WEYL-<br/>WEIGHTED-HAMILTONIAN-SLICE-<br/>CLASSICAL-JET<br/>+1 pinned source<br/>proved"}
   class r55 proved
-  r55 --> n3
-  r56{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-HIGHER-ROOT-LOCAL-GATE<br/>+1 omitted proof premise<br/>proved"}
+  n2 --> r55
+  n8 --> r55
+  r55 --> n14
+  r56{"AND<br/>DERIVE-DIX-PLANE-WEYL-ZERO-<br/>SUM-WEIGHT-RATIONAL-SLICE<br/>+1 pinned source<br/>proved"}
   class r56 proved
-  r56 --> n9
-  r57{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-INFINITY-DEGREE-GATE<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  r56 --> n3
+  r57{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-HIGHER-ROOT-LOCAL-GATE<br/>+1 omitted proof premise<br/>proved"}
   class r57 proved
-  n9 --> r57
-  r57 --> n35
-  r58{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-LEADING-FACTOR-RESIDUE<br/>proved"}
+  r57 --> n9
+  r58{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-INFINITY-DEGREE-GATE<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r58 proved
-  n4 --> r58
-  r58 --> n10
-  r59{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-STRING-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n9 --> r58
+  r58 --> n36
+  r59{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-LEADING-FACTOR-RESIDUE<br/>proved"}
   class r59 proved
-  n10 --> r59
-  n9 --> r59
-  r59 --> n36
-  r60{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-DEGREE-PAIR-BOUNDS<br/>+2 omitted proof premises<br/>proved"}
+  n4 --> r59
+  r59 --> n10
+  r60{"AND<br/>DERIVE-DIX-POLYNOMIAL-FOUR-<br/>SIX-STRING-EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r60 proved
-  n25 --> r60
-  n45 --> r60
-  r60 --> n46
-  r61{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-INFINITY-DEGREE-BOUND<br/>+1 pinned source<br/>proved"}
+  n10 --> r60
+  n9 --> r60
+  r60 --> n37
+  r61{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-DEGREE-PAIR-BOUNDS<br/>+2 omitted proof premises<br/>proved"}
   class r61 proved
-  n20 --> r61
-  r61 --> n25
-  r62{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-LEADING-FACTOR<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
+  n26 --> r61
+  n45 --> r61
+  r61 --> n46
+  r62{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-INFINITY-DEGREE-BOUND<br/>+1 pinned source<br/>proved"}
   class r62 proved
-  n15 --> r62
-  r62 --> n20
-  r63{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-MULTI-ROOT-<br/>MULTIPLICITIES<br/>+2 omitted proof premises<br/>proved"}
+  n20 --> r62
+  r62 --> n26
+  r63{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-LEADING-FACTOR<br/>+1 pinned source<br/>+2 omitted proof premises<br/>proved"}
   class r63 proved
-  n20 --> r63
-  r63 --> n26
-  r64{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-NONDIVIDING-ORDERS-<br/>EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
+  n15 --> r63
+  r63 --> n20
+  r64{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-MULTI-ROOT-<br/>MULTIPLICITIES<br/>+2 omitted proof premises<br/>proved"}
   class r64 proved
   n20 --> r64
   r64 --> n27
-  r65{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-TWO-<br/>LEADING-FACTOR<br/>+1 omitted proof premise<br/>proved"}
+  r65{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-<br/>THREE-NONDIVIDING-ORDERS-<br/>EXCLUSION<br/>+2 omitted proof premises<br/>proved"}
   class r65 proved
-  r65 --> n15
-  r66{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-TWO-<br/>LOW-DEGREE-LEADING-FACTOR<br/>+1 omitted proof premise<br/>proved"}
+  n20 --> r65
+  r65 --> n28
+  r66{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-TWO-<br/>LEADING-FACTOR<br/>+1 omitted proof premise<br/>proved"}
   class r66 proved
-  r66 --> n19
-  r67{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-TWO-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"}
+  r66 --> n15
+  r67{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-TWO-<br/>LOW-DEGREE-LEADING-FACTOR<br/>+1 omitted proof premise<br/>proved"}
   class r67 proved
-  n15 --> r67
-  n19 --> r67
-  r67 --> n24
-  r68{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-DEGREE-THROUGH-<br/>FORTY-ONE<br/>+3 pinned sources<br/>+1 omitted proof premise<br/>proved"}
+  r67 --> n19
+  r68{"AND<br/>DERIVE-DIX-POLYNOMIAL-GCD-TWO-<br/>NONDIVIDING-ORDERS-EXCLUSION<br/>proved"}
   class r68 proved
-  n37 --> r68
-  n33 --> r68
-  r68 --> n38
-  r69{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-DEGREE-THROUGH-<br/>THIRTY-THREE<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
+  n15 --> r68
+  n19 --> r68
+  r68 --> n25
+  r69{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-DEGREE-THROUGH-<br/>FORTY-ONE<br/>+3 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r69 proved
+  n38 --> r69
   n34 --> r69
-  r69 --> n37
-  r70{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-FIFTY-SIX-PLANAR-<br/>SYSTEMS<br/>+6 pinned sources<br/>+2 omitted proof premises<br/>proved"}
+  r69 --> n39
+  r70{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-DEGREE-THROUGH-<br/>THIRTY-THREE<br/>+1 pinned source<br/>+1 omitted proof premise<br/>proved"}
   class r70 proved
-  n43 --> r70
-  n41 --> r70
-  r70 --> n44
-  r71{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-FORTY-TWO-RESIDUAL<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
+  n35 --> r70
+  r70 --> n38
+  r71{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-FIFTY-SIX-PLANAR-<br/>SYSTEMS<br/>+6 pinned sources<br/>+2 omitted proof premises<br/>proved"}
   class r71 proved
-  n38 --> r71
-  r71 --> n39
-  r72{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-GCD-SIXTEEN-<br/>QUOTIENTS<br/>+3 pinned sources<br/>proved"}
+  n43 --> r71
+  n41 --> r71
+  r71 --> n44
+  r72{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-FORTY-TWO-RESIDUAL<br/>+2 pinned sources<br/>+1 omitted proof premise<br/>proved"}
   class r72 proved
-  n32 --> r72
-  n33 --> r72
-  r72 --> n34
-  r73{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-FIVE<br/>+5 pinned sources<br/>+2 omitted proof premises<br/>proved"}
+  n39 --> r72
+  r72 --> n40
+  r73{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-GCD-SIXTEEN-<br/>QUOTIENTS<br/>+3 pinned sources<br/>proved"}
   class r73 proved
-  n42 --> r73
-  n41 --> r73
-  r73 --> n43
-  r74{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-NINE<br/>+4 pinned sources<br/>+2 omitted proof premises<br/>proved"}
+  n33 --> r73
+  n34 --> r73
+  r73 --> n35
+  r74{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-FIVE<br/>+5 pinned sources<br/>+2 omitted proof premises<br/>proved"}
   class r74 proved
-  n44 --> r74
-  n43 --> r74
   n42 --> r74
-  r74 --> n45
-  r75{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-THREE<br/>+3 pinned sources<br/>+2 omitted proof premises<br/>proved"}
+  n41 --> r74
+  r74 --> n43
+  r75{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-NINE<br/>+4 pinned sources<br/>+2 omitted proof premises<br/>proved"}
   class r75 proved
-  n41 --> r75
-  n39 --> r75
-  r75 --> n42
-  r76{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CENTERED-CORNER-NONCOPRIME<br/>+3 omitted proof premises<br/>proved"}
+  n44 --> r75
+  n43 --> r75
+  n42 --> r75
+  r75 --> n45
+  r76{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>BERNSTEIN-THROUGH-FIFTY-THREE<br/>+3 pinned sources<br/>+2 omitted proof premises<br/>proved"}
   class r76 proved
-  r76 --> n30
-  r77{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CENTERED-RATIONAL-INTERTWINER-<br/>RIGIDITY<br/>+3 omitted proof premises<br/>proved"}
+  n41 --> r76
+  n40 --> r76
+  r76 --> n42
+  r77{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CENTERED-CORNER-NONCOPRIME<br/>+3 omitted proof premises<br/>proved"}
   class r77 proved
   r77 --> n31
-  r78{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FIFTY-ONE-<br/>FROM-F7<br/>+3 pinned sources<br/>+2 omitted proof premises<br/>proved"}
+  r78{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CENTERED-RATIONAL-INTERTWINER-<br/>RIGIDITY<br/>+3 omitted proof premises<br/>proved"}
   class r78 proved
-  n40 --> r78
-  n38 --> r78
-  r78 --> n41
-  r79{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FORTY-<br/>NINE-FROM-F7<br/>+5 omitted proof premises<br/>proved"}
+  r78 --> n32
+  r79{"AND<br/>DERIVE-DIX-POLYNOMIAL-WEYL-<br/>CONDITIONAL-THROUGH-FIFTY-ONE-<br/>FROM-F7<br/>+3 pinned sources<br/>+3 omitted proof premises<br/>proved"}
   class r79 proved
-  n38 --> r79
-  n34 --> r79
-  r79 --> n40
-  r80{"AND<br/>PLANAR-F7-ALTERNATIVE-TO-WEYL-<br/>DEGREES-THROUGH-FORTY-NINE<br/>+5 omitted proof premises<br/>proved"}
-  class r80 proved
-  n38 --> r80
-  n34 --> r80
-  r80 --> n40
+  n39 --> r79
+  r79 --> n41
   classDef proved fill:#e6f4ea,stroke:#2e7d32
   classDef conditional fill:#fff8e1,stroke:#a66b00
   classDef open fill:#fff4e5,stroke:#bf6a00
@@ -5765,7 +5800,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 81 routes (693 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 80 routes (695 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -6373,7 +6408,7 @@ Current unconditional proof-source leaves are omitted from this diagram; each di
 
 Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)). A common-kernel-gcd refined square-quotient weight gives another coefficient-uniform actual C6 tail, with an explicit reverse route to the previous quotient tail. Elementary real-quadratic norm recovery removes the kernel-gcd coefficient loop and yields stronger selected-cycle weighted tails, with an explicit chi coefficient gain. Fixed mixed powers2<=k<j,3|j,k∤j admit kernel-gcd recovery and chi-sensitive actual path/cycle weights, using casewise norm/Thue lifting; the square-cube case has a separate direct route. A conditional coarse-global-triple to actual-path transfer and exact majorant comparison identify a limited exponent-only barrier; they supply no prescribed-sum improvement. Dual graphs give uniform positive-coefficient counts for unrestricted products of two fixed powers; the squarefull3/10result has a separatefullscope alternate proof. Exact-five carriers give stronger restricted sectors for3-full sums. Coherent six-cycles give the unconditional all-target bound r3(N)<<N^(33/134+epsilon), resolving the positive-saving target; the stronger carrier support-capacity estimate remains open. On the original marked-octic parameter line, MO2a gives ≫ X^(1/4)/(log X)^2 imaginary quadratic fields of class 3-rank at least three, improving the explicit Kulkarni–Levin Theorem 1.5 bound; proof review and current-record comparison remain open. The marked octic also gives simultaneous real and imaginary-mirror class 3-rank bounds three and four, at least forty complex cubic fields of a common fundamental discriminant, three positive-rank elliptic twists and ≫ X^(1/12)/(log X)^2 distinct fields. Every nonzero rational scaling of its genus-eleven cubic cover has exactly four rational three-torsion directions; real class rank four remains open.
 
-**Computed obligation progress:** 214 open; 37 proved / discharged.
+**Computed obligation progress:** 215 open; 37 proved / discharged.
 
 **Authored scope assessment:** For every fixed imaginary quadratic field K, with arbitrary finite ideal class group G, ordered primitive principal norm numerical-value sums and the individual local/genus-shadow sums have sharp scale N J_K(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside that local set. For B=2G nonzero, every0<delta<delta_star(B) gives R_Lambda-R_P<<K,delta N J_K/log^(1+delta)N uniformly allN>=3 and all target valuations, where delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4. In particular the exponent1/5 works in every fixed field; constants remain field dependent. If2G=0, the individual sets coincide and the error is zero. The relative comparison holds on sufficiently large admissible targets. No endpoint, varying-field uniformity, mixed-field theorem, leading constant, numerical cutoff or exact exception list is asserted here.
 
@@ -6720,6 +6755,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 **Authored scope assessment:** W1–W3 of POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md close every min(a,b)=3 duplicated-cycle passport: exactly two full components, actualS_(2b+4) andS2-wr-A_(b+2)/S_(b+2) according to parity, all blocks/decks and separate sizes. The primitive quadratic residue model has discriminant first jet2b^2(b+1), proving geometric irreducibility overC(t) for allb. W1 also gives an explicit degree-min(a,b)-1 residue polynomial with no hidden vertical factors for all lengths. X1-X4 independently close every duplicated length; all other unresolved profiles remain open.
 
 **Authored scope assessment:** X1–X4 of POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md classify all duplicated-cycle passports(a^2 1^(2b-2)),(b^2 1^(2a-2)),T for alla,b>=2. Exactly four complementary core shapes reduce to one primitive path orbit by opposite-color captures and independent cyclic-distance moves; the aligned matching gives the sole quadratic imprimitive orbit. Actual groups, every block/deck and exact separate sizes are determined. No auxiliary residue-curve irreducibility is required. Other first-deficit, deeper and zero-simple profiles remain open outside resolved families.
+
+**Authored scope assessment:** Y1–Y5 of POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md close every admissible k2,s1,p4 first deficit under full and fixed-order pure braids. Arbitrary two-cycle pairs normalize by three support-mismatch escapes and star reattachments exchanging internal/leaf roles; exactly one primitiveS_N component occurs, plus one quadratic component only when both pairs repeat. The3+1 split follows from the even-tail component criterion. All groups/blocks/decks and separate exact counts are explicit. Remaining first-deficit profiles include k2,p>=5,s>=2 and k>=3; deeper and zero-simple cases remain in the overall classification goal.
 
 | Principal claim | Graph state | Dependency coverage | Current blockers |
 |---|---|---|---|
@@ -8875,6 +8912,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | [ARITH-POLYNOMIAL-DT-DUPLICATED-CYCLE-TWO-COMPONENTS](arithmetic/POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md) | proved | partial | none in declared routes |
 | [ARITH-POLYNOMIAL-DUPLICATED-THREE-CYCLE-TWO-COMPONENTS](arithmetic/POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md) | proved | partial | none in declared routes |
 | [ARITH-POLYNOMIAL-DUPLICATED-CYCLE-TWO-COMPONENT-CLASSIFICATION](arithmetic/POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md) | proved | partial | none in declared routes |
+| [ARITH-POLYNOMIAL-TWO-CYCLE-PAIR-COMPONENT-CLASSIFICATION](arithmetic/POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -8976,10 +9014,10 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | GAP-ARITH-MORDELL-RAY-FROBENIUS-ONLY-PAIRING-FORMULA | mathematical | open | partial | Give every tame and wild entry using normalized pairwise governing fields and Frobenius symbols, with all absolute reference constants evaluated. The terminating norm/local algorithm is not this representation. | GAP-ARITH-MORDELL-RAY-FROBENIUS-ONLY-PAIRING-FORMULA (open) |
 | GAP-ARITH-MORDELL-RAY-QUANTITATIVE-MATRIX-GENERATION | mathematical | open | partial | Find useful uniform witness-height, denominator-factorization, local-precision or runtime control for complete matrices at growing admissible prime support. MCT13 proves termination but gives no useful quantitative bound. | GAP-ARITH-MORDELL-RAY-QUANTITATIVE-MATRIX-GENERATION (open) |
 | GAP-ARITH-PELL-FIVE-CLASS-NONCUBE-UNIT-FAMILY | mathematical | open | partial | Construct a new squarefree Pellian hyperelliptic model, for example P^2+1 with five independent classes from 2PZ_i+Z_i^2-1=H_i^3 and deg Z_i<deg P, and a nonempty integral specialization slice with five independent virtual classes locally cubic at3, an integral noncube unit at3, and infinitely many distinct real quadratic fields. Then the unit-line argument gives real class3-rank at least five. This is separate from the LY4-specific goals and does not inherit their count or mirror splitting structure. CP1 constructs an explicit quartic with two sections meeting the integral, localized and independent conditions, and proves that its Jacobian has precisely two directions. The higher-rank construction remains open. SN2 excludes every integral degree-preserving septic model at five, irrespective of reduction multiplicities. SN3 exhibits rational septic models outside that chart with full local and zero global three-rank. SN4–SN6 restrict the primitive negative-valuation septic charts at five; if the primitive reduction splits with at least three root residues, the five marked directions require one of three explicit affine profiles and all rows quintic. VF1–VF2 prove that any fixed virtual rows on a full integral progression have divisible affine divisors. On a thin common set they can add at most one class direction beyond affine Picard torsion, through a split rational fiber with divisible affine point class. VF5 rules out the extra rational split-fiber route on the fixed CP1 curve itself. | GAP-ARITH-PELL-FIVE-CLASS-NONCUBE-UNIT-FAMILY (open) |
-| GAP-ARITH-POLYNOMIAL-FIRST-DEFICIT-DETERMINANT-FACTORS | mathematical | open | partial | For every admissible polynomial passport withs=p-k-1>=1, determine admissible geometric moment-determinant factor orbits under the exact finite labels and each primitive component's critical-value degree/literal size. U1-U2 already classify every actual group, block system, deck and the sole possible imprimitive component. X1-X4 now completely classify that entire duplicated-cycle family for alla,b>=2:exactly two components, with every separate size. V1-V4 and W1-W3 retain its rational/quadratic subfamily models. Other first-deficit passports remain open beyond the existing bounded and uniform subfamilies, including unequal within-color cycle lengths, higher-p two-heavy-factor profiles andk>=3. Auxiliary factors before a finite quotient are not claimed irreducible merely from one primitive full component. | GAP-ARITH-POLYNOMIAL-FIRST-DEFICIT-DETERMINANT-FACTORS (open) |
+| GAP-ARITH-POLYNOMIAL-FIRST-DEFICIT-DETERMINANT-FACTORS | mathematical | open | partial | For every admissible polynomial passport withs=p-k-1>=1, determine admissible geometric moment-determinant factor orbits under the exact finite labels and each primitive component's critical-value degree/literal size. U1-U2 already classify all actual groups, blocks, decks and the unique possible imprimitive component. Y1-Y5 now completely classify k2,s1,p4, including arbitrary unequal two-cycle pairs and the3+1 split, under both full and fixed-order pure braids. Exactly one primitive component occurs; only both repeated two-cycle profiles have the additional quadratic component. Every separate size is explicit. Remaining first-deficit profiles include k2,p>=5,s=p-3>=2 and k>=3, outside existing resolved families. A single component after finite labels does not assert irreducibility of every auxiliary curve before quotienting. | GAP-ARITH-POLYNOMIAL-FIRST-DEFICIT-DETERMINANT-FACTORS (open) |
 | GAP-ARITH-POLYNOMIAL-LARGER-FIBRE-RETURN-ORBITS | mathematical | open | partial | For every quotient component, original passport and canonical proper divisor, classify the exact R1 inner-braid subgroup action on admissible degree-b returns for b>=5 outside L5's free-cyclic family. R3-R4 now resolve every b4 sector by a four-state A4 criterion, and L4 resolves b2/3. Retain full inner components and the restricted subgroup; inner component, group and return-type labels alone are not sufficient. | GAP-ARITH-POLYNOMIAL-LARGER-FIBRE-RETURN-ORBITS (open) |
 | GAP-ARITH-POLYNOMIAL-PERIOD-DIAGONAL-COMPONENT-CLASSIFICATION | mathematical | open | partial | Use G1-G2 to construct and classify all distinguished-branch colored integral-period cell graphs, carry out the finite full-branch quotient including repeated distinguished types, and attach exact literal/absolute counts, actual monodromy, every block system, deck and genuine lifting data. G3 phase bins are necessary but not sufficient; G4 and D6 supply explicit residual cubic splits. This is the unresolved general diagonal classification, not an achieved endpoint. | GAP-ARITH-POLYNOMIAL-PERIOD-DIAGONAL-COMPONENT-CLASSIFICATION (open) |
-| GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS | mathematical | open | partial | Classify every primitiveS_N/A_N polynomial passport with at least three finite values. Existing index-two mixtures, involution/simple, one-heavy-factor single-cycle-tail and stable Hermite families retain their exact scopes; single-cycle-tail splitting occurs precisely for odd tails and strict heavy partition. X1-X4 now give one primitiveS_(2a+2b-2) component for the entire duplicated-cycle first-deficit family, with exact separate size for alla,b>=2. Other unequal-cycle and higher-p first-deficit profiles, deeper and zero-simple cases, separate split degrees and complete finite-group lifting identification remain unresolved. | GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS (open) |
+| GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS | mathematical | open | partial | Classify all primitiveS_N/A_N polynomial passports with at least three finite values. Existing index-two, involution/simple, single-cycle-tail and stable Hermite families retain their exact hypotheses. Y1-Y5 now give one primitiveS_N component for every first-deficit k2,s1,p4 passport, including unequal two-cycle pairs and3+1, under full and fixed-order pure braids with explicit separate sizes. Remaining first-deficit k2,p>=5,s>=2 and k>=3, deeper/zero-simple profiles, separate odd-tail split degrees and complete finite-group lifting identification stay open outside resolved families. | GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS (open) |
 | GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION | mathematical | open | partial | Determine defined and sufficient reduced central-extension data for every actual group and branch-class list in the minimal polynomial domain. D3 gives zero reduced multiplier for Sn with a transposition; D4 resolves A7 DT classes with C3; D5 supplies genuine H576 cubic separation; D6 propagates it to all-b C_b-wr-A7 sectors; D7 gives a strict-class quadratic criterion and genuine primitive A15 separation. Other groups/classes and their completeness remain open. Intrinsic class refinement is applied before lifting. | GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION (open) |
 | GAP-ARITH-POLYNOMIAL-SINGLE-CYCLE-TAIL-SPLIT-DEGREES | mathematical | open | partial | When all tail lengths are odd and lambda has distinct parts, F2 proves exactly two parity-labeled components and gives their exact summed literal/absolute counts. Determine the two separate degrees in all s and q_i; equality is established only in the earlier two-tripod subfamily and is not inferred universally. | GAP-ARITH-POLYNOMIAL-SINGLE-CYCLE-TAIL-SPLIT-DEGREES (open) |
 | GAP-ARITH-POWERFUL-FIXED-OFFSET-SHARP-ERROR | mathematical | open | partial | For unequal fixed offsets u>v, improve the error in the aligned common-neighbor graph argument itself from O_(u,v)(r^(-11/5)) to O_(u,v)(r^(-5/2)) after the leading saving 2/r^2. The numerical count at that threshold follows from the stronger abc endpoint bound. | GAP-ARITH-POWERFUL-FIXED-OFFSET-SHARP-ERROR (open) |
@@ -9048,6 +9086,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | VERIFY-ARITH-POLYNOMIAL-RETURN-BRAIDS-AND-QUARTIC-GLUING | verification | open | partial | Review R1-R6, including all exact Artin hypotheses, the root chart and substitution convention, identity deletion, the A4 four-label image, the complete index-three return list, Schreier component completeness, finite canonical-fibre examples and exact cyclic-outer J-wr-C_d group. Current review and replay are internal. | VERIFY-ARITH-POLYNOMIAL-RETURN-BRAIDS-AND-QUARTIC-GLUING (open) |
 | VERIFY-ARITH-POLYNOMIAL-SINGLE-CYCLE-TAIL-COMPONENTS | verification | open | partial | Review actual CGPT published theorem and proofs, df/f nonresonance and connected open-locus bridge, finite label quotient, actual group and block normal-closure proof, and source-pinned exact controls. Current review is internal. | VERIFY-ARITH-POLYNOMIAL-SINGLE-CYCLE-TAIL-COMPONENTS (open) |
 | VERIFY-ARITH-POLYNOMIAL-STABLE-HERMITE-CLASSIFICATION | verification | open | partial | Audit the full moment-incidence converse, moving-point derivative, kernel-bundle conormal/product dimension bound, smooth pure dimension and exclusion of every deficient-rank component, corrected primary count/existence, quotient/orbit interpretation, strengthened return budget, gcd power blocks/deck and all count conventions. Independently replay the exact charts/differentials/colored-braid totals. | VERIFY-ARITH-POLYNOMIAL-STABLE-HERMITE-CLASSIFICATION (open) |
+| VERIFY-ARITH-POLYNOMIAL-TWO-CYCLE-PAIR-PURE-NORMALIZATION | verification | open | partial | Audit Y1-Y5:unequal four-core completeness; all support mismatches includingO/B inverse exchange; periodic word rigidity; role reattachments; distance complements; canonical normalization; pure braid bookkeeping; aligned pure lift anchors; literal centralizer conversion; exact sizes and3+1 primary input. Current audit/replay is internal only. | VERIFY-ARITH-POLYNOMIAL-TWO-CYCLE-PAIR-PURE-NORMALIZATION (open) |
 | VERIFY-ARITH-POLYNOMIAL-TWO-TRIPOD-CLASSIFICATION | verification | open | partial | Reconstruct E1-E3 unrestricted proof, cycle-label transport, mixed-braid generators, zero-offset normalization, equal-length quotient, identical3cycle exception, gcd block construction and actual alternating direct-product normal closure. Independently replay exact controls; current audit/replay is internal. | VERIFY-ARITH-POLYNOMIAL-TWO-TRIPOD-CLASSIFICATION (open) |
 | VERIFY-ARITH-QUADRATIC-THREE-TORSION-PRIME-PATHS | verification | open | partial | Independently review the coherent split-prime path count and full-modulus lattice proof behind the signed second and fourth quadratic 3-torsion moments and the conductor consequences. | VERIFY-ARITH-QUADRATIC-THREE-TORSION-PRIME-PATHS (open) |
 | VERIFY-RATIONAL-LINE-COUNT | verification | open | partial | Review the current rational local converse, exact target-height content/polygon calculation, coprime twisted convolution, uniform stratum tail control and Selberg-Delange hypotheses. Retained finite arithmetic audits and old Lean integer certificates do not certify the new asymptotic. | VERIFY-RATIONAL-LINE-COUNT (open) |
@@ -9109,7 +9148,7 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | GAP-ARITH-D23-CORE-FIVE-PRINCIPAL-ATOMS | mathematical | proved / discharged | partial | RESOLVED: every principal splitp andc5/10/15 hascp inU+U, by selected-other-block tail, explicit2^30 onset and the completed3701503-case finite bridge. Together with complete nonprincipal cubes and exact neutral descent this closes the ENTIRE inertcore5 with exceptions{5,10,15,115,230,345}. Other cores and global40 remain open. | none in declared routes |
 | GAP-PRIMITIVE-NORM-EXACT-23 | mathematical | open | partial | Prove completeness of the40 actual admissible exceptions in CN3Finite, largest3818. Classification through2^24 and existence at every529-admissible N>=2^249 are now proved. The exact global formula is equivalent to no further exception in2^24<N<2^249. This middle bridge remains open; the all-large result does not close it. Every nonprincipal neutral cube atom c*p³ for c5/10/15 is now proved, by an explicit2^43 target onset and complete633-prime bridge. All principal neutral atoms are now proved by the sharper2^30 onset and completed finite bridge; all inert cores together and the full middle interval remain open. The ENTIRE inert-prime core5 is now classified, including arbitrary split multiplier exponents and optional23, with exactly{5,10,15,115,230,345} as failures. Principal and nonprincipal neutral-atom obligations for that core are closed. The full40-exception formula and residual middle interval outside the known cones/closedcore5 remain OPEN. The ENTIRE inert-prime core7 is now also classified, with exactly{21,483} as failures, by coefficient21 principal/cube atom coverage and exact phase descent. Generic40 completeness, other inert cores and the remaining generic middle interval stay OPEN. | EQUIV-D23-EXACT-SUMSET-RESIDUAL (open) |
 | GAP-ARITH-RANDOM-PRIME-CRITICAL-NATURAL-DENSITY | mathematical | open | partial | For every fixed k>=2 in the random prime semigroup model with 2 admitted, gamma=1-1/k and lambda=1, the k-fold sumset kC has almost surely natural density 1-E_U exp(-B S(U)). The expectation holds the realized prime set fixed and averages auxiliary Haar coordinates. The complementary lower density bound is established. The conditional intensity and unexposed-support overlap estimates would together give equality. | GAP-ARITH-RANDOM-PRIME-CRITICAL-SUPPORT-OVERLAP (open); GAP-ARITH-RANDOM-PRIME-CRITICAL-TWO-COPY-ENERGY-UPPER (open); GAP-ARITH-RANDOM-PRIME-CRITICAL-BOUNDED-TEST-INTENSITY (open) |
-| GAP-ARITH-HIGHER-INDEX-DISCONNECTED-TREE-FACTORS | mathematical | open | partial | For everyN and every nonidentity finite passport of index sumN-1 with fixed full-cycle product, classify all braid components, exact literal/absolute/marked conventions, actual monodromy, blocks, decks and lifting data. Unrestricted connectivity is false. The existing index-two mixture and pure-DT results, r<=2 classification, proper-primitive exceptions, involution/simple and single-cycle-tail families, and stable Hermite ranges remain resolved with their stated hypotheses. Literal return transport gives complete fibre2/3/4 criteria and cyclic-inner classifications, with inherited lifting obstructions. At the first positive deficit U1-U3 give complete actual groups and an exact geometric determinant reduction; X1-X4 now close the entire duplicated-cycle branch at all lengths, with oneS_N and one quadratic imprimitive component and separate sizes. Other first-deficit profiles, deeper deficits, zero-simple passports, remaining primitiveS_N/A_N components, larger noncyclic fibres and complete reduced lifting obstruction classification remain open outside already resolved families. A component classification, not unqualified connectivity, remains the overall target. | GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS (open); GAP-ARITH-POLYNOMIAL-LARGER-FIBRE-RETURN-ORBITS (open); GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION (open) |
+| GAP-ARITH-HIGHER-INDEX-DISCONNECTED-TREE-FACTORS | mathematical | open | partial | For everyN and every nonidentity finite passport of index sumN-1 with fixed full-cycle product, classify all braid components with precise literal/absolute/marked conventions, actual monodromy, blocks, decks and genuine lifting obstructions. Unrestricted connectivity is false. Existing index-two mixtures, pure-DT classification, r<=2 cases, proper-primitive exceptions, involution/simple and single-cycle-tail families, and stable Hermite ranges retain their exact scopes. Return transport gives complete fibre2/3/4 criteria, cyclic-inner classifications and inherited lifting obstructions. At the first positive deficit U1-U3 give actual groups and an exact geometric determinant reduction; Y1-Y5 now close all k2,s1,p4 passports under full and fixed-order pure braids, with one primitive component and the sole repeated-pair quadratic exception, and all separate sizes. Other first-deficit profiles k2,p>=5 or k>=3, deeper deficits, zero-simple passports, remaining primitiveS_N/A_N components, larger noncyclic fibres and complete reduced lifting classification remain open outside resolved families. The objective remains a complete classification, not unrestricted connectivity. | GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS (open); GAP-ARITH-POLYNOMIAL-LARGER-FIBRE-RETURN-ORBITS (open); GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION (open) |
 | GAP-ARITH-MORDELL-ONE-MOVING-PRIME-EXACT-RANK-ONE | mathematical | proved / discharged | partial | For every r>=1 choose the admissible fixed R0 of MCT16. Infinitely many eligible q have nonsingular fixed block; by MCT19 and the accepted OpenAI converse, E_(R0*q) has analytic and rational rank one, a non-torsion rational point, finite entire Sha and Sha[3^infinity]=(Z/3)^(2r). The selected primes have the exact positive density of MCT21. This former existence gap is resolved; an explicit generator and prime infinitude in the separate MCT18 point polynomial are not asserted. | none in declared routes |
 | GAP-ARITH-PRIME-DISCRIMINANT-GAP-TIGHTNESS | mathematical | open | partial | For each fixed class 3 or 7 mod 8, fix any one theta with 0<theta<2/19 and epsilon>0. For p uniformly sampled from the primes up to X in that class, prove that the probability of an eligible gap in (X^theta,C_epsilon X^(3+epsilon)] tends to zero, where C_epsilon is supplied by the uniform polynomial bound. For every such fixed choice this condition is equivalent to full total variation convergence. | EQUIV-ARITH-FULL-PRIME-DISCRIMINANT-GAP-LAW-AND-INTERMEDIATE-TAIL (open) |
 | GOAL-ARITH-PRIME-DISCRIMINANT-FULL-GAP-LAW | mathematical | open | partial | In each fixed class 3 or 7 mod 8, the law of the full (untruncated) gap set E_p for primes sampled up to X converges in total variation to the corresponding independent fair odd-prime gap set. | EQUIV-ARITH-FULL-PRIME-DISCRIMINANT-GAP-LAW-AND-INTERMEDIATE-TAIL (open) |
@@ -9638,7 +9677,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 80 routes (5187 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 80 routes (5196 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -10442,3 +10481,14 @@ flowchart LR
 Overview: 80 statements and 82 routes (825 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
+
+## Changed or missing evidence
+
+These declarations require inspection and revalidation. Updating a digest alone does not repair the supporting argument.
+
+| Owner | Source | Freshness |
+|---|---|---|
+| GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL | [plurality-stability/STANDARD_SECTOR_NEAR_ONE.md](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md) | changed |
+| SRC-PIS-STANDARD-SECTOR-NEAR-ONE-CONFINEMENT-AND-LIMIT | [plurality-stability/STANDARD_SECTOR_NEAR_ONE.md](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md) | changed |
+| PROOF-PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE | [plurality-stability/STANDARD_SECTOR_NEAR_ONE.md](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md) | changed |
+| PROOF-PIS-FIVE-CELL-INTERFACE-GAP-NEAR-ONE | [plurality-stability/STANDARD_SECTOR_NEAR_ONE.md](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md) | changed |

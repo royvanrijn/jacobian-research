@@ -70,7 +70,7 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
-      "sha256": "c648d457fdc6e504c4d86fa3734326544291fa195048f450260b4f2761713d3d",
+      "sha256": "0c76e879a3e43a792e8278abdafe26807d6bc08b4ea5cb11e9749d2884fce61b",
       "locator": "U1-U5 full statements, written proofs and remaining obligations"
     },
     {
@@ -93,7 +93,7 @@
     "checker": "research/arithmetic/verify_polynomial_first_deficit.py",
     "checker_sha256": "e6332460b3022183191e73635215ebab17ee5e1f170dc3399943eb23f28a1888",
     "receipt": "research/arithmetic/polynomial_first_deficit_verification.json",
-    "receipt_sha256": "573fda0317ac2044b81371a3edc5c01f493900063136d3a365940105a5e9e4ee",
+    "receipt_sha256": "1e27448eb04531f863b24a7fe8b79b1bf26d212d1b06f71c6c0655ff1daf6315",
     "command": "python3 research/arithmetic/verify_polynomial_first_deficit.py",
     "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
     "software": "Python3.12.3 standard library, assertions active",

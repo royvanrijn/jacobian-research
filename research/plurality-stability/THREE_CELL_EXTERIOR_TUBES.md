@@ -650,9 +650,8 @@ even if they lie near higher junctions. The same slicing gives
 this estimate for an active radial cutoff in higher ambient
 dimension. These arguments leave changes near higher junctions
 at smaller radii and their mixed interactions with other changes
-as separate obligations. A three-label normal section would
-require control across unequal fiber masses; the balanced
-planar near-one theorem does not supply that comparison.
+as separate obligations. The guarded triple comparison below treats three-label normal
+sections with unequal fiber masses.
 
 ### Necessary junction loss for a tie and the scale of the estimate
 
@@ -705,3 +704,314 @@ upper bound \(C_k(1-\rho)(R+1)^2\), by
 \(1-\rho^m\le m(1-\rho)\) in the tangential Hermite expansion.
 This excludes a radius-independent positive relative margin at
 \(R=o(1/e)\), even for smooth separated perturbations.
+
+## Changes away from four-label junctions
+
+Let \(k\ge4\) and use the score gaps of (CT12). There are
+\(K_k,c_k>0\) and \(\rho_k<1\) such that for \(\rho_k<\rho<1\)
+and \(R\ge K_k e^{-1/3}\), every ordinary partition \(U\)
+agreeing with \(T\) off \(\{g_4\ge8R\}\) satisfies
+\[
+ S_\rho(T)-S_\rho(U)\ge c_k d_R L_\rho(U;T),
+ \qquad d_R=\min(e^2R^2,1).
+ \tag{CT14}
+\]
+There is no volume constraint. For \(k=4\), \(g_4\) is comparable
+to the active radius since the score differences span the active
+space. Thus (CT14) covers arbitrary changes solely beyond a constant
+times \(e^{-1/3}\), including along triple junction rays.
+
+### A guarded triple of incident cells
+
+For a triple \(I\), split the active space into the plane of its
+site differences and its orthogonal complement, with coordinates
+\(y,z\). Put \(\bar b=\frac13\sum_{i\in I}b_i\) and
+\(m_l=(\bar b-b_l)/(\ell\sqrt{2/3})\) for \(l\notin I\).
+These are tangential unit vectors. In
+\(G_R=\{z:m_l\cdot z\ge R\text{ for all }l\notin I\}\), the
+reference \(T\) is the product \(H\) of the balanced tripod with
+the tangent space. The incident normal scores have sum zero, and
+the excluded sites have zero normal scores.
+
+For changes supported on the guard, write \(B_z\) for the normal
+partition, taking all \(k\) labels, and \(L_z\) for its transfer
+cost against \(H\).
+Put \(m(z)=|\boldsymbol\gamma_2(B_z)-\boldsymbol\gamma_2(H)|\),
+\(F_z=S_\rho(H)-S_\rho(B_z)\) on the normal plane,
+\(L_H=\int L_z\,d\gamma\), and \(V=\int m^2\,d\gamma\).
+Merging all extra labels into one incident label can only decrease
+disagreement. The merged mass defect has norm at most \(C_k m(z)\).
+By the [quadratic mass bound (R15)](THREE_CELL_NEAR_ONE_EXACT.md#a-uniform-quadratic-penalty-for-unequal-masses),
+\(F_z\ge-C_ke\,m(z)^2\), or \(Q_z\le2L_z+C_ke\,m(z)^2\) in
+terms of the normal self-interaction. Use the halfspace compression
+norm preceding (CT10), after the normal OU square root, in the halfspace \(\{m_l\cdot z\ge R\}\) containing
+the guard. For \(F=S_\rho(H)-S_\rho(B)\) this gives
+\[
+ F\ge c d_R L_H-C_ke V.                                               \tag{CT15}
+\]
+
+There is a sharper relation between mass and loss,
+\[
+ m(z)^2\le C_k(\sigma+m(z))L_z,\qquad \sigma=\sqrt{1-\rho^2}.          \tag{CT16}
+\]
+Split incident transfers at distance \(\sigma\) from their pair
+planes as in (P14). The squared changed mass in the thin region
+is at most \(C_k\sigma L_z\), by the first-normal-moment strip
+bound and Cauchy–Schwarz in the section variable. Thick changed
+mass costs at least a constant per point. The same is true of
+transfers into an extra label, since the winning incident OU score
+is at least \(1/3\). Therefore \(m^2\le C_k(\sigma L_z+L_z^2)\).
+Taking the minimum with \(m^2\) on the right and using
+\(\min(m^2,C_kL_z^2)\le\sqrt{C_k}\,m L_z\) proves (CT16).
+
+Let \(Z,W\) have the correlated pair law in the tangent space,
+write \(b_z=1_{B_z}\) as a vector of indicators, and put
+\(D_{zw}=\|T_\rho^{1/2}(b_z-b_w)\|_2^2\), \(D=\frac12\mathbb E D_{ZW}\).
+The operator here acts on the normal plane. Expansion gives
+\(F=\int F_z\,d\gamma+D\). Write \(N_z=1-S_\rho(B_z)\). Then
+\[
+ |m(z)-m(w)|\le\sqrt2\,\gamma_2(B_z\ne B_w)
+ \le (D_{zw}+2N_z+2N_w)/\sqrt2 .
+\]
+The last inequality uses the positive form \(I-T_\rho\) to bound
+its energy on \(b_z-b_w\). Conditional on \(Z=z\), the mean of
+\(\operatorname{sgn}((Z-W)\cdot m_l)\) is
+\(2\Phi((1-\rho)m_l\cdot z/\sigma)-1\), at least
+\(c\min(eR,1)\) on \(G_R\). The mass error vanishes off the guard.
+Exchange \(Z,W\) to write its expected product with \(m(Z)^3\)
+as half the expectation of this sign times \(m(Z)^3-m(W)^3\).
+The last display bounds that by
+\(C_k\mathbb E[(m(Z)^2+m(W)^2)(D_{ZW}+N_Z+N_W)]\).
+Since \(m\) is bounded and \(N_z\le Ce+(F_z)_+\), this is at most
+\(C_k(D+\int(F_z)_+d\gamma+eV)\).
+Use \(\int(F_z)_-d\gamma\le C_keV\) to conclude
+\[
+ F\ge c_k\min(eR,1)\int m^3d\gamma-C_keV.                            \tag{CT17}
+\]
+
+Average (CT15) and (CT17). If \(eR\le1\), take a large fixed
+\(M_k\) and absorb the negative mass term by the cubic term
+on \(m\ge M_k/R\). On \(m<M_k/R\), (CT16) bounds that term
+by \(C_ke(\sigma+M_k/R)L_H\). The \(1/R\) contribution is
+absorbed by \(d_R=e^2R^2\) on increasing \(K_k\) in
+\(R\ge K_ke^{-1/3}\), and the \(\sigma\) contribution is
+absorbed since \(\sigma=O(e)\). If \(eR>1\), use (CT15) and
+\(m(z)^2\le C_k L_z\). Thus \(F\ge c'_k d_R L_H\).
+
+On \(G_R\) the true reference gives the same defect as \(H\).
+One also has \(|L_\rho(B;T)-L_H|\le C_k e^{-c R^2/\sigma^2}L_H\).
+Conditional on \(z\), an excluded reference label can win at a
+correlated point only when some \(m_l\cdot Z'<0\), with probability at
+most \(C_k e^{-c R^2/\sigma^2}\). Given \(Z'\), the union of the excluded
+winning regions in the normal plane is invariant under the reflection
+exchanging two incident labels: it is defined by the maximum of their three
+scores being below a common threshold. The two kernels paired by
+that reflection have a difference of fixed sign on the winner
+side. The lost incident margin is therefore between zero and
+the full tripod margin times the stated probability, by normal
+and tangential independence. A transfer into an extra label has
+\(H\)-margin at least \(1/3\), so its absolute error of at most twice
+that probability is also a relative bound. The identity \(2L-Q\)
+gives the guarded comparison for \(T\).
+
+### Combining the triples and the separated region
+
+Choose \(\theta\) uniformly from \([4,5]\) and group the defect on
+\(\{g_4\ge8R\}\) into \(g_3>\theta R\) and groups indexed by the
+three highest labels where \(g_3\le\theta R\). The first part is
+covered by (CT12). In the other parts the three incident labels
+all beat each excluded label by at least \(3\ell R\), so
+\(z\in G_R\). Distinct triples are separated by \(6R\), by
+testing a difference of labels in their symmetric difference.
+A closer pair separated by the grouping therefore crosses the
+single threshold, with probability at most \(C_k |x-x'|/R\)
+by Lipschitz continuity of \(g_3\).
+
+Multiplying the conjugated kernel by distance is bounded by
+\(C_k\sigma\) times a widened Gaussian. The widened convolution
+argument following (CT13) bounds its interaction on the absolute
+defect by \(C_k L_\rho(B;T)\). On pairs at distance at least
+a constant times \(R\) the same argument gains
+\(e^{-cR^2/\sigma^2}\). Averaging the isolated comparisons leaves
+mixed error at most \(C_k(\sigma/R+e^{-cR^2/\sigma^2})L_\rho(B;T)\).
+If \(eR\le1\) the ratio of the first error to \(d_R\) is
+\(O_k(1/(eR^3))\). If \(eR>1\) it tends uniformly to zero.
+Choose \(K_k\) sufficiently large. This proves (CT14) in the
+active dimension. Its ambient lift uses the same active slicing
+as (CT12).
+
+### Necessary core loss for an unrestricted tie
+
+Take \(L_{\rm far}\) on \(\{g_4\ge16R\}\) and \(L_{\rm in}\)
+on its complement. Every ordinary partition satisfies
+\[
+ S_\rho(T)-S_\rho(U)\ge c'_k d_R L_{\rm far}-C_k L_{\rm in}.
+ \tag{CT18}
+\]
+To see this, choose a random threshold \(q\) uniformly on
+\([8R,16R]\) and split the defect into transfers with \(g_4\ge q\)
+and \(g_4<q\). The isolated exterior comparison controls at least
+\(c_k d_R L_{\rm far}\) by (CT14). The isolated interior piece loses
+at worst \(-C_k L_{\rm in}\), using the absolute-defect convolution
+bound on \(Q\). The probability that a close pair is routed to
+different pieces is at most \(C_k|x-x'|/R\), because \(g_4\) is
+Lipschitz. The same widened-kernel argument as in (CT14) bounds the
+mean mixed error by \(C_k(\sigma/R+e^{-cR^2/\sigma^2})
+(L_{\rm in}+L_{\rm far})\). Increasing \(K_k\) absorbs the
+\(L_{\rm far}\) contribution into half of the exterior margin.
+The remaining error is bounded by \(C'_k L_{\rm in}\).
+This proves (CT18), first in the active space and then by slicing.
+Thus any tie or improvement must have
+\(L_{\rm in}\ge c''_k d_R L_{\rm far}\).
+The same two-threshold argument for \(g_3\) gives the analogous
+linear-in-\(d_R\) comparison for (CT12), with loss beyond \(8R\)
+and on its complement. The sign of the inner deficit remains
+the unrestricted near-one obligation.
+
+### Exponential localization for actual maximizers
+
+Fix \(k\ge4\) and let \(A\) be a balanced actual maximizer. Use
+Heilman–Tarter to work in dimension \(k-1\), embedding a smaller
+active space there if necessary, and align the reference \(T\).
+Let \(\ell_A(x)\) denote the pointwise OU transfer cost, \(L=\int\ell_A\,d\gamma\),
+and \(L(r)=\int_{\{g_4\ge r\}}\ell_A\,d\gamma\).
+There are \(K,c,C>0\) depending only on \(k\) such that, uniformly
+near \(\rho=1\), with \(r_0=K e^{-1/3}\), one has
+\[
+ L(R)\le C L
+   \exp\!\left(-c\int_{r_0}^{R}\min(e t^2,t)\,dt\right)
+ \qquad (R\ge r_0).                                                 \tag{CT19}
+\]
+For \(k=4\), \(g_4\) is comparable to the active radius. In particular,
+a fixed fraction of the transfer cost is confined inside radius
+\(O_k(e^{-1/3})\), and the fraction beyond radius
+\(C_{k,p}[e^{-1}\log(1/e)]^{1/3}\) is at most \(e^p\) for any fixed \(p>0\).
+
+The near-one compactness (P2)–(P3) holds in the fixed dimension
+\(k-1\). The simplex noise energy divided by \(e\) converges to
+\(\sqrt{2/\pi}\) times its Gaussian perimeter. This follows by
+directional slicing across its flat facets in (P2); on a fixed
+direction the translated Gaussian facet weights converge to their
+original weights. The difference quotient integrated in the
+midpoint is bounded by \(C_k |z|\exp(C e^2|z|^2)\), by counting
+facet crossings over the translated segment and bounding the
+translated weights by a wider Gaussian. This bound is integrable
+uniformly in small \(e\). Milman–Neeman's Gaussian multi-bubble
+theorem at \(k\le (k-1)+1\) therefore gives \(L^1(\gamma)\) convergence
+to the simplex orbit for these maximizers. Choose a reference
+alignment giving this convergence. Exact stationarity of \(A\) or a
+description of its interfaces is unnecessary for the following
+fixed-volume repair.
+
+Let \(D=\{A\ne T\}\) and \(D_r=D\cap\{g_4\ge r\}\). The function
+\(g_4\) is continuous and piecewise linear, with gradient of length
+one on each ordering chamber, so \(g_4\le |x|\) and it is 1-Lipschitz.
+The strip argument for (P14) gives
+\[
+ \gamma(D)^2\le CL,\qquad \gamma(D_r)^2\le C e^{-c r^2}L(r).
+\]
+For the exterior thin strips the transverse projection is at
+radius at least \(\sqrt{r^2-\sigma^2}\), and Cauchy–Schwarz in that
+projection gives the Gaussian tail factor. The thick strips use
+\(\gamma(D_r)\le\gamma\{|x|\ge r\}\) and the saturated margin.
+
+Truncate the defect on \(\{g_4\ge r\}\) to obtain \(A^{<r}\).
+The \(k-1\) compact volume bumps on independent simplex facets
+have a uniformly invertible volume matrix for \(A^{<r}\) by
+\(L^1\) alignment. For example take independent label differences
+from the edges of a tree and choose disjoint bump supports away
+from higher junctions. Their supports are inside \(\{g_4<r_0\}\)
+when \(e\) is small. The volume adjustment has parameter
+\(O(\gamma(D_r))\) by the implicit function theorem, whose Jacobian
+control follows from bounded derivatives of the smooth flow
+Jacobian. Its cost in disagreement is at most
+\(C(\gamma(D)\gamma(D_r)+\gamma(D_r)^2)\le C e^{-c r^2}L\).
+To verify the cost, the derivative at \(T\) is zero since incident
+OU scores agree on each facet. The fixed-flow first derivative at
+\(A^{<r}\) differs by \(O(\gamma(D))\) and its second derivative
+is uniformly bounded. The pullback proof in (P15) applies in
+dimension \(k-1\): each standardized flow difference is bounded
+by a constant times the standardized endpoint displacement by
+the Lipschitz flow derivatives. A first derivative is supported
+where at least one endpoint lies in a fixed bump ball. Integrating
+the displacement polynomial conditional on the changed endpoint
+is uniformly bounded, using Gaussian tails if the other endpoint
+must enter the ball from far away. This proves the first-derivative
+comparison for measurable partitions and the uniform second
+derivative bound.
+
+Write \(h=1_A-1_T\), \(h_{<r}=h\,1_{\{g_4<r\}}\) and
+\(h_{\ge r}=h-h_{<r}\). Compare the balanced repaired core to
+the maximizer using the exact deficit \(2L-Q\), and use (CT14)
+on \(h_{\ge r}\) with scale \(r/8\). With
+\(d(r)=\min(e^2r^2,1)\), increasing \(K\) gives
+\[
+ c d(r)L(r)\le
+ 2|\langle h_{<r},T_\rho h_{\ge r}\rangle|+C e^{-c r^2}L
+ \quad(r\ge r_0).                                                  \tag{CT20}
+\]
+
+Choose a small fixed \(\epsilon>0\) and define
+\[
+ \Phi(s)=\epsilon\int_{r_0}^{\max(s,r_0)}\min(e t^2,t)\,dt,
+ \qquad W(x)=\exp(\Phi(g_4(x))).
+\]
+Integrate (CT20) against \(\Phi'(r)e^{\Phi(r)}/d(r)\,dr\) on
+\(r\ge r_0\). The left side is \(c\int(W-1)\ell_A\,d\gamma\).
+For a pair \(x,y\) set \(u=|x-y|/\sigma\) and
+\(v=\sigma(|x|+|y|)\). The integral of the cutoff weight over
+the cutoffs that separate the pair is at most
+\[
+ C\epsilon\,u(1+v)\sqrt{W(x)W(y)}\,\exp(C\epsilon u v).
+\]
+The cutoff range has length at most \(|x-y|\), the ratio
+\(\Phi'/d\) is \(\epsilon\max(1/e,r)\), and the endpoint
+oscillation of \(\Phi\circ g_4\) is at most
+\(\epsilon (|x|+|y|)|x-y|\).
+The conjugated kernel (P16) has an exponential bound
+\(\exp(-c u^2-c v^2)\). For small \(\epsilon\) it absorbs the
+polynomial and the \(uv\) term, leaving a widened Gaussian with
+a spare factor \(\exp(-c'\sigma^2(|x|^2+|y|^2))\).
+Use the absolute defects multiplied by
+\(\sqrt W\,\exp(-c'\sigma^2|x|^2)\) in the conjugated space.
+The interaction is at most \(C\epsilon\int W\ell_A\,d\gamma\).
+On thick strips use the convolution norm and the saturated
+margin. In a thin section with tangent coordinate \(z\), the
+oscillation of \(\log W\) is at most
+\(\epsilon\sigma(|z|+\sigma)\) on the interval of width \(\sigma\).
+Its exponential is absorbed by the spare factor
+\(\exp(-2c'\sigma^2|z|^2)\) in the squared-section estimate.
+The first-normal-moment bound in (P14) thus applies with \(W\).
+
+The repair term integrates to \(O(L)\) since \(\Phi(r)\le
+\epsilon r^2/2\) and \(r_0\ge K e^{-1/3}\), which absorbs the
+factor \(1/e\) in the cutoff weight. These bounds give
+integrability of \(W\ell_A\) by \(g_4\le|x|\). Absorb the mixed
+term by taking \(\epsilon\) small. Then
+\(\int W\ell_A\,d\gamma\le C L\), proving (CT19).
+For \(R\ge2r_0\), the integral from \(r_0\) to \(R\) in (CT19)
+is at least a constant times \(\min(e R^3,R^2)\).
+
+For the tetrahedron, this reduces an exact near-one proof to a
+comparison in a growing ball. Given any fixed \(B>0\), take
+\(R=C_{k,B}[e^{-1}\log(1/e)]^{1/3}\) so that \(L(R)\le e^{2B}L\)
+and let \(\widehat A\) be the balanced repaired truncation.
+The uncentered interaction bound \(Q\le C L\), Cauchy–Schwarz
+for OU and the repair estimate give
+\[
+ |\Delta_\rho(A)-\Delta_\rho(\widehat A)|\le C_B e^B L .
+\]
+Also \(L_\rho(\widehat A;T)=L-L(R)+O(\sigma^{-1}e^{-cR^2}L)\).
+For this last bound pull back the score integrals by the repair
+flow. The derivative of the difference of the integrals at
+\(A^{<R}\) and \(T\) is at most \(C\gamma(D)/\sigma\) since
+the scores have gradient \(O(1/\sigma)\) on the bump supports.
+The score cost of flowing \(T\) itself is quadratic in the
+flow parameter divided by \(\sigma\): transferred points
+lie in thin compact strips and the score vanishes on the
+original facets. Using the \(O(\gamma(D_R))\) parameter bound
+proves the assertion. Hence a lower bound
+\(\Delta_\rho(U)\ge c e^p L_\rho(U;T)\) for balanced defects
+supported in these balls, for some fixed \(p\) and the radius
+constant corresponding to \(B>p\), would imply exact
+tetrahedral optimality and equality rigidity near one.

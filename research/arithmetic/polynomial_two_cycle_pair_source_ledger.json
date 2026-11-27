@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md",
+  "assurance": "Internal written all-length full/pure component classification for the two-cycle-pair family and the complete k2,s1 first deficit, with exact bounded controls. No novelty, independent replay, external review, formal verification or arbitrary-passport classification asserted.",
+  "declarations": [
+    {
+      "node": "ARITH-POLYNOMIAL-TWO-CYCLE-PAIR-FOUR-CORES",
+      "name": "Theorem Y1. General four-core description",
+      "scope": "For all four lengths>=2, N=a1+a2+b1+b2-2, deleting T leaves two AB components. The core is a matching, either colored two-edge star plus an isolated heavy-cycle vertex, or an alternating four-cycle-vertex path plus one isolated sheet. AB is full on each component. Paths are determined by the internal/leaf role choices and two oriented distances in1..|Ai|-1 and1..|Bi|-1, with one T anchor, and every choice occurs."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-TWO-CYCLE-PAIR-MATCHING-ESCAPE",
+      "name": "Lemma Y2. Every nonaligned matching escapes",
+      "scope": "Under pure braids and absolute relabeling, every star reaches a path. A matching has periodic support words O B^(b-1) A^(a-1) on its components. Any differing endpoint letters permit a literal capture: A/B gives a path, O/A a star, and O/B gives a path after Q1^-1 Q2^2 Q1. Identical endpoint words for every synchronized shift force equal component periods, aligned shared sheets and both repeated within-color lengths. Only the known aligned quadratic lifts are left."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-TWO-CYCLE-PAIR-PURE-PATH-NORMALIZATION",
+      "name": "Theorem Y3. Pure path normalization with independent cycle roles",
+      "scope": "For arbitrary two-cycle profiles, detaching the A-leaf and reattaching to either B-cycle prescribes beta or exchanges the B internal/leaf roles while keeping A literal. Heavy exchange complements and swaps distances; the conjugate construction independently controls alpha or exchanges A roles while keeping B literal. All operations are pure. Choose the smaller internal lengths, alpha=beta=1 and one T anchor to normalize every path. Conjugates of T under the transitive AB group fixing the isolated sheet generateS_N."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-TWO-CYCLE-PAIR-PURE-COMPONENTS-AND-SIZES",
+      "name": "Theorem Y4. All components, markings, groups and sizes",
+      "scope": "For all two-cycle-pair plus one-T passports there is exactly one primitiveS_N component under full braids and fixed-order PB3, plus one quadratic component iff a1=a2 andb1=b2. Primitive blocks1,N/deck1; quadraticS2 wrK with K=A_m ifboth repeated lengths odd,elseS_m,blocks1,m,2m/deck2. Ordered totalH=N^2(A0-1)(B0-1)/((1+deltaA)(1+deltaB)); primitive pure literalH minusm^2 whenquadratic, otherwiseH; absolute dividesbyN. Quadratic pure literalm^2,absolutem. Multiply byW=3*(2-indicator(equal heavy multisets)) for full placements. Full twist is pure."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-FIRST-DEFICIT-TWO-HEAVY-ONE-SIMPLE-COMPONENTS",
+      "name": "Corollary Y5. The complete two-heavy, one-simple first deficit",
+      "scope": "The entire admissible positive first-deficit sector k2,s1,p4 has exactly one primitiveS_N component, plus a second component only for both repeated two-cycle profiles. The2+2 split is Y4. The3+1 split is one arbitrary factor with three nontrivial cycles and q-2 fixed points, q>=3, and tails(q,T); the even T tail gives one component byF2, actualS_N byU1/F3. All three types are distinct, so fixed-order connectivity is pure. Ordered literal total isN^2 q(q-1)/M for M=product of multiplicity factorials of the three nontrivial lengths; absolute dividesbyN and full multipliesby6."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Gareth A. Jones and Alexander Zvonkin",
+      "title": "Orbits of braid groups on cacti",
+      "doi": "10.17323/1609-4514-2002-2-1-127-160",
+      "url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "inspected": "Actual Theorem1.1 and Sections1.3,2.2,5.4 retained author PDF, as audited in the predecessor.",
+      "application": "Polynomial/cactus/braid correspondence and count conventions; quotient-copy comparison.",
+      "scope_boundary": "No unrestricted connectivity or unequal-cycle normalization is imported."
+    },
+    {
+      "authors": "Bronislaw Wajnryb",
+      "title": "Orbits of Hurwitz action for coverings of a sphere with two special fibers",
+      "doi": "10.1016/S0019-3577(97)89139-2",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2396/1/preprint_1995_75.pdf",
+      "path": "research/arithmetic/sources/wajnryb-two-special-fibers-1995.pdf",
+      "sha256": "b1ede26039b48d20de120333ca57accb919bd0ef6a9da2c0c3fdb15c76c91cb0",
+      "inspected": "Actual definition and Theorem1 on retained pp1-2 rechecked for the unequal-cycle approach.",
+      "application": "Precise comparison with a fixed-monodromy connectivity theorem.",
+      "scope_boundary": "Three nonsimple values, including infinity, fail its at-most-two hypothesis."
+    },
+    {
+      "authors": "I.P. Goulden and D.M. Jackson",
+      "title": "The Combinatorial Relationship Between Trees, Cacti and Certain Connection Coefficients for the Symmetric Group",
+      "doi": "10.1016/S0195-6698(05)80015-0",
+      "url": "https://uwaterloo.ca/math/sites/default/files/uploads/documents/gjeurjc1992.pdf",
+      "path": "research/arithmetic/sources/goulden-jackson-cacti-1992.pdf",
+      "sha256": "a43abccf0519d4839d4c012a4990cff66c9ed4636bc459512e84a2825fc78331",
+      "inspected": "Actual Section3 pp361-363 and corrected cycle-count hypothesis from proof p363, audited in U2/K1.",
+      "application": "Independent ordered totals and explicit separate sizes; not component connectedness.",
+      "scope_boundary": "The printed hypothesis discrepancy is corrected from the proof."
+    },
+    {
+      "authors": "Dawei Chen, Quentin Gendron, Miguel Prado and Guillaume Tahar",
+      "title": "Isoresidual curves",
+      "doi": "10.5802/jep.339",
+      "url": "https://jep.centre-mersenne.org/articles/10.5802/jep.339/",
+      "path": "research/arithmetic/sources/chen-gendron-prado-tahar-isoresidual-curves-2026.pdf",
+      "sha256": "0a927b724717a9b23ad7126960dc254bc818411d026cbd95b2281cc1869ba7f3",
+      "inspected": "Published actual Theorem1.7 p895 rechecked; labeled-fiber/nonresonance bridge and finite label action in F1-F3 were inspected.",
+      "application": "Only through F2 for Y5's3+1 split:two zero orders q-1 and1, hence not the all-even exception; all poles simple, nonresonant integer residues.",
+      "scope_boundary": "The two-cycle-pair connectivity proof does not use the isoresidual component theorem. No unproved identification with finite-group lifting parity is made."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md",
+      "sha256": "fa1d84c8f35bfe2dbf769a0537727ad943efefbd768bf2b9ef3dd3b23c5ba3a8",
+      "locator": "Y1-Y5 general lengths, mismatch escape, role normalization, pure/full counts and k2,s1 closure"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md",
+      "sha256": "223a7a0e369615e8dd0829c115148739c0641bbaaa72bcd6db48ee2baecd7474",
+      "locator": "X2 literal rotation/capture identities independent of repeated lengths"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
+      "sha256": "0c76e879a3e43a792e8278abdafe26807d6bc08b4ea5cb11e9749d2884fce61b",
+      "locator": "U1-U2 actual groups and unique quadratic lift/count conventions"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md",
+      "sha256": "41ef39268c78d0f7d1b0f77d8777d167a59bf062d43d122573ee915a846399fb",
+      "locator": "F1-F3 exact isoresidual bridge/component/group result for3+1"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_two_cycle_pair.py",
+    "checker_sha256": "933a6e6979598c161bb671d11a03e5457e0e0a2a5806706e446c942a33387c8c",
+    "receipt": "research/arithmetic/polynomial_two_cycle_pair_verification.json",
+    "receipt_sha256": "bf0a2ec5647a2079eb5f8bc0c3948ec53681c700cb423d2fae9c20a619392f6a",
+    "command": "python3 research/arithmetic/verify_polynomial_two_cycle_pair.py",
+    "software": "Python3.12.3 standard library, assertions active",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "normalization_scope": "85 ordered four-length domains:all81 choices2..4 plus four asymmetric larger choices throughdegree31, maximum length17. 336 path-distance pairs,780 changes of each distance, 672 role exchanges,1272 star controls and452 matching escapes across all three mismatch types. Nine aligned repeated-pair matchings correctly remain outside the primitive route. Every normalized path agrees with an independently constructed canonical absolute label.",
+    "component_scope": "25 complete two-cycle-pair passports, including equal heavy profiles with unequal within-color lengths, and six complete3+1 passports. Closures use only six signed pure generators. 31 distinct complete passports represent774027 literal tuples. All exact groups, block divisors, decks and independent character totals checked.",
+    "negative_scope": "Three invalid domains rejected. Exact unequal matching witness with no opposite-exclusive capture still escapes by an O/A orO/B contact; unequal phase-zero matching is not labeled imprimitive.",
+    "limits": "Uniform conclusions use Y1-Y5's written proof and the explicit primary input to the3+1 case. No finite extrapolation, no arbitrary first-deficit classification, no auxiliary residue-curve irreducibility or genus/rationality assertion."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal written proof/source and exact permutation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Four-core enumeration without equal-length assumptions",
+      "All three support-mismatch escapes, including the inverse-heavy-exchange word",
+      "Equality of infinite support words forces equal least periods and both repeated lengths",
+      "Star reattachment controls distances or changes which cycle is internal",
+      "Complemented distance convention under heavy exchange",
+      "Both role switches and exact canonical normalization",
+      "Every combined braid is pure; sheet relabelings commute with braid operations",
+      "Aligned lift anchors form one pure absolute orbit",
+      "Full twist belongs to PB3 and removes centralizer relabelings",
+      "DirectS_N monodromy, all blocks/decks and equal-profile placement counts",
+      "3+1 primary theorem hypotheses and distinct factor types",
+      "Correct multiplicity factorials in both count formulas"
+    ]
+  }
+}

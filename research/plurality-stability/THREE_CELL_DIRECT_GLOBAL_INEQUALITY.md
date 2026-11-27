@@ -4,16 +4,19 @@ The unrestricted inequality
 \(\widetilde Q_\rho(e)\leq2L_\rho(A;T)\) remains open here.
 The exact expansion (B1) in the [continuation note](POSITIVE_CORRELATION_CONTINUATION.md)
 makes it equivalent to \(S_\rho(A)\leq S_\rho(T)\), including for
-partitions far from the simplex. Proposition DG17 gives a direct
-computer-assisted proof for every balanced three-cell partition in every
-dimension \(d\geq2\) throughout \(0<\rho\leq221/500\), extending DG4
-and DG10. It isolates one adverse radial direction, limits its amplitude
+partitions far from the simplex. The current explicit direct comparison,
+adopted in DG20, holds for every balanced three-cell partition in every
+dimension \(d\geq2\) throughout \(0<\rho\leq53/100\).
+Its [all-mass scalar proof](THREE_CELL_GLOBAL_SCALAR_THROUGH_HALF.md)
+uses a sharper arc envelope and positive radial features with directed
+tails. DG17 gives an earlier finite-amplitude comparison through
+\(221/500\): it isolates one adverse radial direction, limits its amplitude
 by feasibility, and pays for its positive contribution with unavoidable
-angular loss. The proof is global in partition distance.
-The [scalar-threshold argument](THREE_CELL_BEYOND_SCALAR_THRESHOLD.md),
-adopted in DG15 below, extends the direct comparison qualitatively
-past the first obstruction to that separated scalar criterion. It gives
-no further explicit numerical cutoff.
+angular loss. Both arguments are global in partition distance.
+The earlier [scalar-threshold argument](THREE_CELL_BEYOND_SCALAR_THRESHOLD.md),
+adopted in DG15 below, crosses the first obstruction to its separated
+scalar criterion qualitatively. It gives no further explicit numerical
+endpoint beyond the current all-mass scalar comparison.
 A separate [near-one result](THREE_CELL_NEAR_ONE_EXACT.md) records a qualitative
 interval adjacent to one. The full all-positive-correlation statement remains
 open; no overlap closing the intermediate range is established here. The argument also proves the comparison
@@ -2396,3 +2399,82 @@ Its supremum can be approached with at most\(6(n+1)\) switches per slice.
 This uniform error is global in amplitude; it does not prove the envelope
 is nonpositive. The coupled radial optimization and the all-correlation
 comparison remain open. DG18 supplies no new correlation cutoff beyond DG17.
+
+
+## Sharp retention of the second angular mode
+
+### Proposition DG19 (global two-mode support and an explicit adverse-profile comparison)
+
+For a circular set of mass \(p\), and nonnegative weights \(r,s\), the
+[sharp two-mode theorem](THREE_CELL_SHARP_TWO_MODE_ENERGY.md) proves
+
+\[
+ \max_E\{r|\widehat{1_E}(1)|^2+s|\widehat{1_E}(2)|^2\}
+ =\frac{\sin^2(\pi p)}{\pi^2}
+                 \max\{r+s\cos^2(\pi p),s\}.
+\]
+
+The maximizer is an arc or two equal antipodal arcs. The optimal
+second-mode excess coefficient relative to the first-mode squared cap
+deficit is \(\sin^2(\pi p)\), strengthening AM7's sufficient coefficient.
+TME3--TME7 give global pair and shared-radius matrix bounds and a further
+nonnegative angular loss in the polar comparison at every amplitude.
+They retain the two harmonics together; treating the second arc moment
+as an independent norm cap would be false.
+
+A full directed four-dimensional mass cover certifies both penalties on
+\(|p_i-1/3|\le1/20\). In particular, at \(\rho=3/5\), for the radial
+function \(f(t)=e^{-t}+2e^{-16t}-21/34\), every centered unit label vector
+\(v\) and every \(|\epsilon|\le1/40\), arbitrary angular shapes with
+masses \(1/3+\epsilon v_i f(t)\) have deficit at least
+\(\epsilon^2/500\). The scalar contribution is positive; the two
+certified angular losses outweigh it. This is an explicit restricted-profile
+comparison beyond DG7's qualitative amplitude statement, not a global
+optimality theorem at \(3/5\).
+
+TME6 also proves a limit of the first-mode framework: for the bounded
+six-exponential witness at \(99/100\) in a two-equal-mass label direction,
+one common arc field attains every exact first-mode pair optimum.
+Replacing that penalty by its fully shared version therefore leaves
+DG39's positive quadratic coefficient unchanged. The assertion concerns
+that remainder envelope and does not falsify actual simplex optimality.
+Higher angular information or a stronger remainder comparison is needed.
+The all-positive-correlation inequality remains open.
+
+
+## Adopting the all-mass scalar comparison through 0.53
+
+### Corollary DG20 (current explicit unrestricted direct interval)
+
+For every \(d\ge2\), every ordinary measurable balanced Gaussian
+three-cell partition \(A\), and every \(0<\rho\le53/100\),
+
+\[
+ S_\rho(A)\le S_\rho(T),\qquad
+ \widetilde Q_\rho(1_A-1_T)\le2L_\rho(A;T).
+\]
+
+The first assertion is the current theorem of the
+[all-mass scalar note](THREE_CELL_GLOBAL_SCALAR_THROUGH_HALF.md),
+GH1--GH10, adopting its written proof and internal directed certificates.
+It applies to all circular mass profiles and arbitrary angular shapes.
+The second assertion follows by the exact expansion (B1), as in DG4.
+No continuation of maximizing partitions or closeness hypothesis is used.
+
+The new angular envelope (GH2) is global in both probability vectors.
+Its positive radial feature expansion and mean-zero centering have a
+certified norm below two on the full interval. The high-mode tail above
+one half uses the exponential lower bound for the full row weight in
+(GH9), rather than extending the polynomial trace estimate beyond its
+range. The retained through-half cover reports an upper norm below
+1.92573 on 240 covering intervals; the adjoining cover through53/100
+reports an upper norm below1.98823 on160 covering intervals, including
+the analytic tail. Both saved runs pass and the registered checker hash
+matches the current source. This adoption is not an independent replay,
+formal verification or external review.
+
+The explicit lower interval is therefore stronger than DG17. The
+shared-radius and two-mode bounds DG18--DG19 remain useful potential
+corrections on the remaining range; they are not needed for (GH2)'s
+current certified interval. No overlap with the qualitative near-one
+interval closes all positive correlations here.

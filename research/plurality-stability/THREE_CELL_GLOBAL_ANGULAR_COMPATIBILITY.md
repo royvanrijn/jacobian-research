@@ -537,3 +537,13 @@ finite-mode contribution. Positivity of an angular correction,
 quadratic directional domination, and uniform approximation error
 do not by themselves establish that comparison. The direct global
 inequality for all \(0<\rho<1\) remains open.
+
+The [sharp two-mode comparison](THREE_CELL_SHARP_TWO_MODE_ENERGY.md)
+now supplies an explicit second-order shared loss. Its one-set energy
+formula is exact at every mass, and (TME4) gives a matrix-field certificate
+for common first and second moments. The separate quadratic Taylor term
+\((1+\cos\theta)^2\) provides the extra nonnegative loss in (TME7),
+which can be added to (GAC7) without double counting. On the certified
+mass cube the two mode penalties pay for the bounded radial obstruction
+at \(3/5\) throughout an explicit amplitude interval. They do not yet
+dominate the complete adverse radial space at every feasible amplitude.

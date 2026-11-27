@@ -388,6 +388,11 @@ The entire duplicated-cycle component problem, including
 there is exactly one primitive component for all lengths,
 in addition to U2's unique imprimitive component. Its
 separate size is therefore the aggregate (5).
+The [general two-cycle-pair classification](POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md)
+also resolves unequal within-color lengths and, with the
+single-cycle-tail theorem, the complete \(k=2,s=1,p=4\)
+sector. Its conclusions hold under pure braids on each
+fixed ordered passport as well as under full braids.
 
 For arbitrary passports (1), factor the determinant (7)
 geometrically, remove factors with empty good locus, compute
@@ -396,6 +401,9 @@ critical-value-map degree. U1--U2 already determine every
 actual monodromy group, block system and deck group at this
 level. Uniform primitive connectedness for the other
 profiles has not been proved.
+The remaining first-deficit profiles include \(k=2,p\ge5\)
+with \(s=p-3\ge2\), and \(k\ge3\), outside already
+resolved families.
 In particular rational factorization alone does not certify
 geometric factorization. The general component goal, all
 deeper deficits and zero-simple passports outside already

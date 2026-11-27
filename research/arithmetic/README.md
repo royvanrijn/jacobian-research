@@ -2160,8 +2160,9 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Two rational components for a double transposition and a duplicated cycle | Internal result | proved | [Source](POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md) |
 | A quadratic residue model closes the duplicated-three-cycle family | Internal result | proved | [Source](POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md) |
 | Two components for all duplicated-cycle lengths | Internal result | proved | [Source](POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md) |
+| Two cycle pairs: complete components and pure braid normalization | Internal result | proved | [Source](POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md) |
 
-**Computed obligations:** 214 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 215 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -2339,6 +2340,7 @@ Scope limits:
 - V1–V4 of POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md close the complete min(a,b)=2 first-deficit duplicated-cycle family for everyb>=2: exactly two full components, actual S_(2b+2) and S2-wr-S_(b+1), all blocks/decks and separate exact sizes. The unordered critical-pair quotient makes the primitive residue equation linear, yielding rational moduli fields and uniform rational CRT witnesses in both sectors. Forty exact charts and11 complete bounded passports support the proof. The separate quadratic theorem closesmin3; X1-X4 close all duplicated lengths; other unresolved first-deficit and deeper profiles remain open.
 - W1–W3 of POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md close every min(a,b)=3 duplicated-cycle passport: exactly two full components, actualS_(2b+4) andS2-wr-A_(b+2)/S_(b+2) according to parity, all blocks/decks and separate sizes. The primitive quadratic residue model has discriminant first jet2b^2(b+1), proving geometric irreducibility overC(t) for allb. W1 also gives an explicit degree-min(a,b)-1 residue polynomial with no hidden vertical factors for all lengths. X1-X4 independently close every duplicated length; all other unresolved profiles remain open.
 - X1–X4 of POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md classify all duplicated-cycle passports(a^2 1^(2b-2)),(b^2 1^(2a-2)),T for alla,b>=2. Exactly four complementary core shapes reduce to one primitive path orbit by opposite-color captures and independent cyclic-distance moves; the aligned matching gives the sole quadratic imprimitive orbit. Actual groups, every block/deck and exact separate sizes are determined. No auxiliary residue-curve irreducibility is required. Other first-deficit, deeper and zero-simple profiles remain open outside resolved families.
+- Y1–Y5 of POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md close every admissible k2,s1,p4 first deficit under full and fixed-order pure braids. Arbitrary two-cycle pairs normalize by three support-mismatch escapes and star reattachments exchanging internal/leaf roles; exactly one primitiveS_N component occurs, plus one quadratic component only when both pairs repeat. The3+1 split follows from the even-tail component criterion. All groups/blocks/decks and separate exact counts are explicit. Remaining first-deficit profiles include k2,p>=5,s>=2 and k>=3; deeper and zero-simple cases remain in the overall classification goal.
 
 Tracked obligations (computed states):
 
@@ -2509,5 +2511,6 @@ Tracked obligations (computed states):
 - **verification / open:** [Independently audit/replay the all-b two-component DT/duplicated-cycle theorem and rational moduli fields.](POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md) — VERIFY-ARITH-POLYNOMIAL-DT-DUPLICATED-CYCLE-CLASSIFICATION
 - **verification / open:** [Independently audit/replay the uniform duplicated-three-cycle classification and general reduced residue model.](POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md) — VERIFY-ARITH-POLYNOMIAL-DUPLICATED-THREE-CYCLE-CLASSIFICATION
 - **verification / open:** [Independently audit and replay X1-X4's complete duplicated-cycle classification.](POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md) — VERIFY-ARITH-POLYNOMIAL-DUPLICATED-CYCLE-PATH-NORMALIZATION
+- **verification / open:** [Independently audit/replay the arbitrary two-cycle-pair and k2,s1 pure/full classification.](POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md) — VERIFY-ARITH-POLYNOMIAL-TWO-CYCLE-PAIR-PURE-NORMALIZATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

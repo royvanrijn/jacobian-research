@@ -296,4 +296,9 @@ No claim is made that every pair-ordered auxiliary residue curve is
 irreducible, rational or of specified genus.
 Other first-deficit profiles, deeper deficits and zero-simple passports
 outside the already classified families remain open.
+The [general two-cycle-pair theorem](POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md)
+now handles unequal within-color lengths by exchanging the internal
+and leaf cycle roles. It also proves pure braid connectivity on
+each fixed ordered passport, including in the duplicated sector,
+and closes the entire \(k=2,s=1,p=4\) first deficit.
 Independent mathematical review and replay remain pending.

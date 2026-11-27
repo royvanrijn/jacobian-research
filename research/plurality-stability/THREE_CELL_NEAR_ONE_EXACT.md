@@ -598,6 +598,57 @@ rotation and null sets. Thus the same interval and equality
 conclusion hold in all such dimensions.
 [Heilman–Tarter](https://stevenheilman.org/~heilman/papers/plurthreeB.pdf)
 
+## A uniform quadratic penalty for unequal masses
+
+There are absolute \(C>0\) and \(\rho_0<1\) such that for any ordinary
+three-cell partition \(A\) in \(d\ge2\), \(\rho_0<\rho<1\), and
+\(e=\sqrt{2(1-\rho)}\),
+\[
+ S_\rho(T)-S_\rho(A)\ge
+ -C e\big|\boldsymbol\gamma(A)-(1/3)\mathbf1\big|^2 .
+ \tag{R15}
+\]
+Here \(T\) is the balanced simplex. For a contradiction take
+\(\rho_j\to1\) and partitions with the deficit less than
+\(-j e_j |m_j|^2\), where \(m_j=\boldsymbol\gamma(A_j)-(1/3)\mathbf1\).
+Write \(N_\rho=1-S_\rho\). The bounds \(N_\rho(A_j)\ge0\) and
+\(N_\rho(T)\le C e_j\) imply \(|m_j|^2\le C/j\). The masses are
+eventually positive. Replace each competitor by an actual maximizer
+at its own masses and use Heilman–Tarter to work in the plane.
+
+In (P2)–(P3) of the [near-one reduction](THREE_CELL_NEAR_ONE.md)
+the noise bound is still \(N_{\rho_j}(A_j)\le N_{\rho_j}(T)\),
+and limiting masses are \(1/3\) by \(L^1\) convergence and \(m_j\to0\).
+The equal-mass perimeter equality forces an aligned tripod and the
+same energy-measure convergence. For (P4) the two compact volume
+variations still have independent limiting mass columns. They
+repair to the masses of \(A_j\). Global maximality at those masses
+gives the winning-score system by the linearized assignment argument.
+Fixed-volume stationarity with the bumps gives the \(o(e_j)\)
+multiplier bound.
+The repairs for replacements and blow-ups in (P6)–(P8) use the
+same target masses. Exterior confinement (P17)–(P18) uses this
+stationarity and the limiting tripod. In (P18), identically equal
+winning scores for two labels would make the OU image of their
+indicator difference constant. Injectivity on the nonconstant
+Hermite modes would make their difference constant, impossible for
+disjoint cells both of positive mass. The
+[moving-junction construction (MJ0)](THREE_CELL_MOVING_JUNCTION.md)
+then applies with the same rank-two repair and the adjusted score tie.
+
+For fixed large \(R\), (R1)–(R7) and (R9)–(R12) apply with one
+assembly change. The signed-strip estimate preceding (R8) gives
+\[
+ e_j|\boldsymbol\gamma(C)-(1/3)\mathbf1|^2
+ \le 2e_j |m_j|^2+C\gamma_1([R,\infty))E_O .
+\]
+It bounds \(\boldsymbol\gamma(C)-\boldsymbol\gamma(A_j)\) by the
+same outer changes, and \(\boldsymbol\gamma(A_j)-(1/3)\mathbf1=m_j\).
+The anchored core estimate already permits unequal masses, so
+(R11) and (R14) acquire only the error \(-C e_j|m_j|^2\).
+Fix \(R\) as in (R14) and let \(j\) grow. The two energy
+coefficients are positive, giving the claimed contradiction.
+
 ## Discrete plurality on the near-one interval
 
 Fix $\rho_*<\rho<1$ and $\epsilon>0$. There are an integer

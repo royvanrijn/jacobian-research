@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-28",
+  "command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_sharp_two_mode.py --output .scratch/sharp-two-mode-production.json",
+  "working_directory": "canonical Ubuntu-24.04 WSL repository root",
+  "exit_code": 0,
+  "checker": "check_three_cell_sharp_two_mode.py",
+  "checker_sha256": "73cb26f4de93271c5581cd7fb266b02c6f13aee5fd146f66e5802a86246ee74e",
+  "proof_source": "THREE_CELL_SHARP_TWO_MODE_ENERGY.md",
+  "proof_source_sha256": "509dff0fe752b0b323bf9d07bcc78079647cbc196ed6d6cb9a7a0db094fec620",
+  "input_sources": [
+    {
+      "path": "plurality-stability/check_three_cell_coupled_radial.py",
+      "sha256": "3d34471ddee5b3d3ad6e680ac645fce7ff53aa6e0288ff6b8f4dfe9edaee9b1a"
+    }
+  ],
+  "result": {
+    "status": "pass",
+    "exact_mass_cube": [
+      "17/60",
+      "23/60"
+    ],
+    "probability_constraints": "p3=1-p1-p2; q3=1-q1-q2; all coordinates in cube",
+    "maximum_second_to_first_weight": "1/4",
+    "gram_coercivities": [
+      "1/10",
+      "3/40"
+    ],
+    "cube_arb_precision_bits": 100,
+    "scalar_arb_precision_bits": 120,
+    "cube": {
+      "status": "pass",
+      "attempts": 66241,
+      "accepted": 31528,
+      "infeasible": 1593,
+      "minimum_first_coefficient": 0.47152583929710085,
+      "minimum_second_coefficient": 2.531838326031618e-05,
+      "minimum_absorption_margin": 0.0002311367894732137,
+      "minimum_coercivity_margins": [
+        0.00451671881310176,
+        0.003287390726715481,
+        5.5451681190125326e-08,
+        0.005061840446433052,
+        0.0067671975819393985,
+        9.991310186437285e-09
+      ],
+      "elapsed_seconds": 3.4676252510398626
+    },
+    "family": {
+      "rho": "3/5",
+      "exponents": [
+        0,
+        1,
+        16
+      ],
+      "coefficients": [
+        "-21/34",
+        "1",
+        "2"
+      ],
+      "exact_radial_mean": "0",
+      "label_direction": "every centered unit vector in R^3",
+      "amplitude_interval": [
+        "-1/40",
+        "1/40"
+      ],
+      "scalar_quadratic_coefficient": [
+        0.009696214146325561,
+        0.010145766978249503
+      ],
+      "first_mode_loss_lower": [
+        0.009291767549477269,
+        0.009291767549477274
+      ],
+      "second_polynomial_loss": [
+        0.0032223371417935357,
+        0.0032223371417935366
+      ],
+      "corrected_quadratic_upper": [
+        -0.0028178905453999925,
+        -0.0023683377125665586
+      ],
+      "maximum_coordinate_deviation": [
+        0.0486295757758425,
+        0.048629575775842517
+      ],
+      "guaranteed_gap": "epsilon^2/500",
+      "scalar_replay": {
+        "status": "pass",
+        "rho": "3/5",
+        "exponents": [
+          0,
+          1,
+          16
+        ],
+        "coefficients": [
+          "-21/34",
+          "1",
+          "2"
+        ],
+        "exact_mean": "0",
+        "panels": 8192,
+        "arb_precision_bits": 120,
+        "angular_rule": "interval Riemann enclosures over every subinterval of [0,2/3]",
+        "numerator_enclosure": [
+          0.061343027511578885,
+          0.06164049965533565
+        ],
+        "denominator_enclosure": [
+          0.025747366338997813,
+          0.02582340668217192
+        ],
+        "numerator_minus_twice_denominator": [
+          0.009696214146780308,
+          0.010145766977794755
+        ],
+        "rayleigh_quotient_enclosure": [
+          2.375481594353914,
+          2.3940506801009183
+        ],
+        "closure_correction_enclosure": [
+          0.005807354718423294,
+          0.0058073547184232955
+        ],
+        "corrected_quadratic_coefficient": [
+          0.0038888594281296417,
+          0.0043384122595988344
+        ],
+        "sharp_first_moment_coefficient": [
+          -0.0019184952902936525,
+          -0.001468942458824461
+        ],
+        "exact_gram_controls": {
+          "closing_rational_cases": 4,
+          "nonclosing_control_rejected": true,
+          "bound_and_defect_pairs": [
+            [
+              "30/127",
+              "4/5"
+            ],
+            [
+              "18/65",
+              "4/5"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "30/127",
+              "3947/100"
+            ]
+          ]
+        },
+        "scope": "The scalar radial bound fails at this selected correlation. The elementary correction repairs the profile at 1/2; the sharp local first-moment correction repairs it also at 3/5 but fails at 7/10. Positive upper-bound coefficients do not prove improving Gaussian partitions. Finite Gram controls support the written algebraic lemma, not an unrestricted proof by sampling."
+      }
+    },
+    "controls": {
+      "balanced_point": true,
+      "excessive_second_weight_rejected": true,
+      "excessive_coercivity_rejected": true,
+      "incomplete_cover_rejected": true
+    },
+    "checker_sha256": "73cb26f4de93271c5581cd7fb266b02c6f13aee5fd146f66e5802a86246ee74e",
+    "input_source": {
+      "path": "check_three_cell_coupled_radial.py",
+      "sha256": "3d34471ddee5b3d3ad6e680ac645fce7ff53aa6e0288ff6b8f4dfe9edaee9b1a"
+    },
+    "environment": {
+      "python": "3.12.3",
+      "python_flint": "0.9.0"
+    },
+    "elapsed_seconds": 3.6080945120193064
+  },
+  "scope": "The exact all-mass one-set energy and global matrix bounds use the written analytic proof. This full-domain directed computation certifies only the mass cube|p_i-1/3|,|q_i-1/3|<=1/20, the two Gram coercivities and absorption at c1>=4c2, and the explicit rho3/5 bounded-radial-family comparison for all centered unit label vectors and|epsilon|<=1/40. It is not an all-partition theorem at3/5 or an all-correlation proof.",
+  "assurance": {
+    "internal_check": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  }
+}

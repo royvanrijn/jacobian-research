@@ -1,0 +1,86 @@
+{
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "precision_bits": 512,
+  "standard_gap_in_units_of_ell": "1/1000",
+  "slabs": [
+    {
+      "left": "0",
+      "right": "1/3",
+      "degree": 6,
+      "size": 22,
+      "trace_exponent": 2,
+      "trace": "[0.310291414387 +/- 4.58e-13]",
+      "norm_bound": "[0.557038072654 +/- 4.13e-13]",
+      "operator_tail_bound": "[0.00665473992300 +/- 3.71e-17]"
+    },
+    {
+      "left": "1/3",
+      "right": "1/2",
+      "degree": 8,
+      "size": 40,
+      "trace_exponent": 2,
+      "trace": "[0.772690111559 +/- 3.23e-13]",
+      "norm_bound": "[0.879027935597 +/- 3.43e-13]",
+      "operator_tail_bound": "[0.0189504117339 +/- 4.47e-14]"
+    },
+    {
+      "left": "1/2",
+      "right": "3/5",
+      "degree": 10,
+      "size": 66,
+      "trace_exponent": 4,
+      "trace": "[0.490623268919 +/- 4.55e-13]",
+      "norm_bound": "[0.836925952881 +/- 1.82e-13]",
+      "operator_tail_bound": "[0.0293339886380 +/- 2.86e-15]"
+    },
+    {
+      "left": "3/5",
+      "right": "7/10",
+      "degree": 14,
+      "size": 146,
+      "trace_exponent": 4,
+      "trace": "[0.841667474340 +/- 9.31e-14]",
+      "norm_bound": "[0.957822723587 +/- 2.80e-13]",
+      "operator_tail_bound": "[0.0329026725834 +/- 3.83e-15]"
+    },
+    {
+      "left": "7/10",
+      "right": "3/4",
+      "degree": 16,
+      "size": 203,
+      "trace_exponent": 4,
+      "trace": "[0.998125946983 +/- 4.42e-13]",
+      "norm_bound": "[0.999531157128 +/- 2.29e-13]",
+      "operator_tail_bound": "[0.0486226729597 +/- 9.06e-15]"
+    },
+    {
+      "left": "3/4",
+      "right": "4/5",
+      "degree": 20,
+      "size": 357,
+      "trace_exponent": 16,
+      "trace": "[0.901934614156 +/- 1.87e-13]",
+      "norm_bound": "[0.993569933712 +/- 2.01e-13]",
+      "operator_tail_bound": "[0.0559317432553 +/- 3.64e-14]"
+    },
+    {
+      "left": "4/5",
+      "right": "41/50",
+      "degree": 21,
+      "size": 405,
+      "trace_exponent": 16,
+      "trace": "[0.895835071057 +/- 4.49e-13]",
+      "norm_bound": "[0.993148643585 +/- 1.23e-13]",
+      "operator_tail_bound": "[0.0751535527065 +/- 1.76e-14]"
+    }
+  ],
+  "command": ".venv/bin/python research/plurality-stability/check_five_cell_weighted_gap.py",
+  "checker_sha256": "bcdeb53c618c2aa4f20aa5e09825e794006b5eea7883bc2aa4937ff210374abc",
+  "helper_sha256": {
+    "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+    "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+  },
+  "scope": "Internal exact rational and 512-bit Arb replay of the ordinarily balanced five-cell standard-sector comparison on seven slabs covering 0<rho<=41/50.",
+  "internal_control": "The separate direct multivariate polynomial products give exactly the same interaction and planar matrices as the packed-polynomial algorithm through degree 9. Both checkers are internal."
+}

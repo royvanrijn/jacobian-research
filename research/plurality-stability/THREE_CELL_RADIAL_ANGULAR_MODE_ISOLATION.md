@@ -416,3 +416,14 @@ Their finite angular hierarchy approximates the true prescribed-profile
 optimum with an explicit error uniform over all profiles on each compact
 correlation range. This is an approximation theorem, not a sign or
 domination theorem; its coupled radial optimization remains to be bounded.
+
+The [sharp two-mode energy](THREE_CELL_SHARP_TWO_MODE_ENERGY.md) gives a
+global way to strengthen the angular side. It computes the optimal
+one-set first/second-harmonic energy at every mass, gives a common-slice
+matrix certificate, and adds a second nonnegative polynomial loss in
+(TME7). A complete cube certificate pays for the scalar obstruction of
+DG5 at \(3/5\), for every centered unit label direction and
+\(|\epsilon|\le1/40\). TME6 shows why full shared first moments alone
+do not repair DG39 on its bounded \(99/100\) witness. The new two-mode
+bound still needs to be compared with the entire adverse radial block
+and its orthogonal remainder at all feasible amplitudes.

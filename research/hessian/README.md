@@ -80,6 +80,7 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 | The (14,4,11) conductor-twenty-two embedding is excluded | Internal result | proved | [Source](hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_QUARTIC_TETRADECIC_EXCLUSION.md) |
 | The (12,8,6,11) conductor-twenty-two embedding is excluded | Internal result | proved | [Source](hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_TWELVE_EIGHT_SIX_ELEVEN_EXCLUSION.md) |
 | Exceptional polar folds require source a-degree at least twenty-four | Internal result | proved | [Source](hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md) |
+| Three partial degrees at most eleven suffice in the four-variable Hessian problem | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) |
 
 **Computed obligations:** 11 unresolved; 3 resolved within their exact scope.
 

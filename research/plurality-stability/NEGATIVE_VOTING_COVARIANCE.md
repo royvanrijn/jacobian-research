@@ -217,24 +217,71 @@ are multiplied by \(\sqrt n\), and the common Gaussian component
 makes zero contribution to its expectation. Let
 \(C(t)=C_p(Q_t)\), \(C_*=C_p(Q_*)\), and let \(S_*\) denote
 the Gaussian perimeter of the shifted regular fan with masses \(p\).
-The score covariance derivative and flux identities in
-[Zhang's comparison](sources/zhang-equal-gaussian-cells-ebfd905.md)
-apply with the objective linear term \(p\cdot\lambda\).
-The change from equal to prescribed masses does not affect flux,
-price derivatives, or the balancing implicit function theorem.
-For \(0<t<1\) its equations give
+Here are the derivative and flux identities for the prescribed
+mass objective. For \(Q\) positive on \(E\), factor \(Q=BB^T\)
+with \(B:\mathbb R^n\to E\) invertible. The rows \(b_i\) are
+affinely independent scores. The minimizing prices exist:
+in the gauge \(\min_i\lambda_i=0\), testing the largest
+score against any zero-priced label gives an objective lower
+bound \(p\cdot\lambda\ge(\min_i p_i)\max_i\lambda_i\).
+Ties are Gaussian-null and differentiation in the prices
+gives the winning masses \(p\). All pair facets have positive
+area for every finite price vector, since the score
+differences against one label give invertible coordinates.
+Thus the price Hessian is strictly positive on the mean-zero
+gauge. The prices are unique and locally smooth there by the
+implicit function theorem. The needed smoothness of the
+winner probabilities follows by expressing the winning regions
+in the nonsingular score-difference coordinates. Their cones
+are fixed in these coordinates, and local parameter derivatives
+of the Gaussian densities admit integrable polynomial-Gaussian
+majorants.
+
+Write \(L_Q\) for the price Laplacian, with weights
+\(w_{ij}=A_{ij}/\ell_{ij}\), where \(A_{ij}\) is the ordinary
+Gaussian interface area of the winning cells and
+\(\ell_{ij}=|b_i-b_j|\).
+Gaussian integration by parts gives their moment matrix
+\(M=L_Q B\). Indeed each inward unit normal of cell \(i\)
+is \((b_i-b_j)/\ell_{ij}\) at its \(ij\) interface.
+A ball cutoff removes the unbounded-boundary term by Gaussian
+decay. The balancing prices cancel in the objective, giving
+\(C_p(Q)=\langle M,B\rangle_F=\operatorname{tr}(L_Q Q)\).
+For any centered covariance variation \(D=BRB^T\) with \(R\)
+symmetric, realize \(Q+sD\) by \(B(I+sR)^{1/2}\).
+The derivative at \(s=0\) of the score objective is the
+pairing of the winning moment matrix with \(BR/2\).
+The price derivative cancels because the masses equal \(p\).
+Consequently
+\[
+ dC_p(Q)[D]=\frac12\operatorname{tr}(L_Q D).
+ \tag{VC5a}
+\]
+This reconstructs the identities in
+[Zhang's covariance method](sources/zhang-equal-gaussian-cells-ebfd905.md)
+directly for the masses used here.
+
+Since \(tH=Q_t-Q_*\), (VC5a) yields
+\(2tC'(t)=C(t)-\operatorname{tr}(L_t)/n\). Thus for \(0<t<1\),
 \[
  t(C^2-C_*^2)'=C^2-C_*^2-D(t),\qquad
  D(t)=C(t)\operatorname{tr}(L_t)/n-C_*^2 .
 \]
-At \(Q_*\), all edge lengths are \(\sqrt{2/n}\), giving
-\(C_*^2=2 S_*^2/n\). The shifted regular fan minimizes perimeter
-among partitions with masses \(p\) by
+At \(Q_*\) all edge lengths are \(\sqrt{2/n}\), so by flux
+\(C_*^2=2 S_*^2/n\). For the winning cells at \(Q_t\), let
+\(S(t)=\sum_e w_e(t)\ell_e(t)\) be their Gaussian perimeter.
+The shifted regular fan minimizes perimeter among partitions
+with these masses by
 [Milman–Neeman, Theorem 1.1](https://annals.math.princeton.edu/2022/195-1/p02).
-The proof in Zhang's covariance comparison therefore gives
+Using \(C(t)=\sum_e w_e(t)\ell_e(t)^2\),
+\(\operatorname{tr}L_t=2\sum_e w_e(t)\), and \(S(t)\ge S_*\),
+the weighted square expansion gives
 \[
- D(t)\ge \frac2n
-       \sum_{e<f}w_e(t)w_f(t)\big(\ell_e(t)-\ell_f(t)\big)^2 .
+ D(t)=\frac2n\left[
+ S(t)^2-S_*^2
+ +\sum_{e<f}w_e(t)w_f(t)(\ell_e(t)-\ell_f(t))^2
+ \right]\ge
+ \frac2n\sum_{e<f}w_e(t)w_f(t)(\ell_e(t)-\ell_f(t))^2 .
 \]
 Unlike the equal-mass argument, a linear term remains at the initial
 covariance. Integrating with this term retained gives
@@ -377,4 +424,4 @@ This applies to balanced and free-mass possible improvers.
 
 Combining (VC1) with the signed second-degree estimate gives a
 [sharper label localization](NEGATIVE_VOTING_INTERVAL.md#dimension-uniform-localization-on-the-voting-scale).
-The global exact comparison remains open.
+This estimate is used in the [exact large-alphabet same-partition theorem](NEGATIVE_VOTING_INTERVAL.md#exact-gaussian-simplex-minimization).

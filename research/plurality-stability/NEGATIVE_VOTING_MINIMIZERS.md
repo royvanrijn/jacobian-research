@@ -55,16 +55,27 @@ the proportions summing to one give
  \le2\sum_{p_i>u}\alpha_i\|b_i\|
  \le C\sqrt{\log k}\,\|p-u\mathbf 1\|_1 .
 \]
-For \(p=u\mathbf1\), simply take \(g=f\). The balanced first-moment
-inequality [in its fractional form](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#external-endpoint-and-application-audit)
-gives \(W_1(g)\le F_k\). Expanding the squared moments and dropping
-the nonnegative squared differences gives
+For \(p=u\mathbf1\), simply take \(g=f\). Before applying a covariance bound, expand
+\(W_1(g)=\sum_i\|b_i+(b_i(g)-b_i)\|^2\). Dropping the
+nonnegative squared differences bounds
 \[
- W_1(f)-F_k\le
+ W_1(f)-W_1(g)\le
  2\sum_i \|b_i\|\,\|b_i-b_i(g)\|
  \le C\frac{\log k}{\sqrt{k}}\,\delta .
  \tag{M4}
 \]
+At this point the rough scalar bound (V3a) gives
+\(\delta=O(1/k)\), uniformly in the voting interval.
+Consequently (M3)–(M4) give \(W_1(g)\ge F_k-o(\log k/k)\),
+in particular \(W_1(g)\gtrsim\log k/k\).
+The balanced halfspace centroid bound
+\(\|b_i(g)\|\le C\sqrt{\log k}/k\) then bounds every normalized
+diagonal entry of the centroid covariance of \(g\) by \(C_0/k\).
+The balanced case \(p=u\) of
+[the prescribed-mass estimate (VC1)](NEGATIVE_VOTING_COVARIANCE.md)
+applies directly to this covariance and gives \(W_1(g)\le F_k\).
+This turns (M4) into
+\(W_1(f)-F_k\le C(\log k)\delta/\sqrt{k}\).
 Combining (M3) and (M4) with the quadratic inequality
 \(\delta^2\le C r(\log k)\delta/\sqrt{k}+C r^2/k\)
 proves the first assertion of (M1). Substitution into (M4) gives the

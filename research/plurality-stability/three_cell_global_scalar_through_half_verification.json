@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "precision_bits": 100,
+  "radial_panels_per_correlation_ball": 8192,
+  "mode_order": 48,
+  "row_order": 12,
+  "point": {
+    "rho": "1/2",
+    "finite_upper": 1.8768097516149285,
+    "tail_upper": 0.012852837148544885,
+    "total_upper": 1.8896625888798886
+  },
+  "interval": {
+    "rho_bounds": ["11/25", "1/2"],
+    "correlation_slabs": 240,
+    "slab_width": "1/4000",
+    "total_upper": 1.9257289597492846
+  }
+}

@@ -1,19 +1,23 @@
-# The balanced tetrahedral interface gap through correlation 23/25
+# The balanced tetrahedral interface gap at every positive correlation
 
-For every \(0<\rho\le23/25\), the tetrahedral standard sector of the
-Gaussian simplex interface form has gap at least \(\ell/1000\). Here
-\(\ell\) is the distance between two of the four Gaussian cell-moment
-vectors. The constant-coefficient comparison below reaches \(17/25\).
-The [variable-coefficient comparison](#extension-using-the-variable-local-coefficient)
-extends it to \(23/25\). The other tetrahedral sectors are covered by
+For every fixed \(0<\rho<1\), the full balanced Gaussian tetrahedral
+interface form has a strictly positive gap off geometric rotations
+in all ambient dimensions \(d\ge3\).
+A [dihedral comparison](#all-positive-correlations-by-a-dihedral-comparison)
+gives a positive standard-sector gap for \(\rho\ge2/3\).
+The constant-coefficient certificate covers \(0<\rho\le17/25\).
+The [variable-coefficient certificate](#extension-using-the-variable-local-coefficient)
+also gives a standard-sector gap at least \(\ell/1000\) throughout
+\(0<\rho\le23/25\), where \(\ell\) is the distance between two Gaussian
+cell-moment vectors. The other tetrahedral sectors are covered by
 [(S56), (S60) and (S61)](SIMPLEX_INTERFACE_SYMMETRY.md#four-cells-domination-settles-the-remaining-sign-block).
-It follows that for every fixed correlation in this range and every
-ambient dimension \(d\ge3\), the balanced full-interface form has a
-strictly positive gap off the geometric rotations, with a gap constant
-independent of \(d\) by [(S42)](SIMPLEX_INTERFACE_SYMMETRY.md#every-cell-count-the-active-gap-lifts-to-all-ambient-dimensions).
-The remaining standard-sector correlations are \(23/25<\rho<1\).
+The gap constant is independent of \(d\) by
+[(S42)](SIMPLEX_INTERFACE_SYMMETRY.md#every-cell-count-the-active-gap-lifts-to-all-ambient-dimensions).
 The interface result gives the local comparison under
-[(B10)–(B11)](POSITIVE_CORRELATION_CONTINUATION.md) in the proved range.
+[(B10)–(B11)](POSITIVE_CORRELATION_CONTINUATION.md) in the active
+space at every positive correlation.
+A [separate Gaussian Neumann limit](STANDARD_SECTOR_NEAR_ONE.md)
+gives the exact first-order scale of the standard-sector gap near one.
 A distant nonsimplex global tie is a separate open obligation.
 
 ## Ordinary balance and the tetrahedral angle
@@ -480,3 +484,201 @@ The full replay uses 640-bit Arb arithmetic. A separate internal
 coefficient comparison through degree eight and a check of the summed
 reflected masses against an independent full-wedge formula also passed.
 Independent mathematical review and formal verification remain open.
+
+## All positive correlations by a dihedral comparison
+
+Let \(q_{\rm std,\rho}(h)=\mathfrak q_\rho(f^{v,h})/(4|v|^2)\)
+as in (T1). For every ordinarily balanced even \(h\) on the
+tetrahedral facet,
+\[
+ \frac{\sigma_\rho}{\ell}q_{\rm std,\rho}(h)
+ \ \ge\
+ \frac{1-\rho}{\rho}
+ \left(1+\rho-\frac{\pi}{2\alpha}\right)
+ \|h\|_{L^2(\nu_{12})}^2,\qquad \alpha=\arctan\sqrt2.
+ \tag{TD1}
+\]
+In particular the bound is positive for
+\(\rho>\pi/(2\alpha)-1\), and the original certificate through
+\(17/25\) covers the rest. The comparison uses the ordinary mean
+throughout.
+
+### Six images on a wider wedge
+
+Set \(\beta=\pi/3>\alpha\). In the plane, the two edge reflections at
+angles \(0,\beta\) generate the order-six dihedral group \(D_3\).
+The images of the wedge \(W_\beta=\{0<\theta<\beta\}\) partition
+the plane up to measure zero. For the planar Mehler kernel
+\(M_\rho^{(2)}\) with respect to \(\gamma_2\), put
+\[
+ L_\beta(x,y)=\sum_{g\in D_3}M_\rho^{(2)}(x,gy),
+ \qquad x,y\in W_\beta.
+\]
+The operator with this kernel on \(L^2(\gamma_2|_{W_\beta})\) is the
+restriction of planar Gaussian noise to the \(D_3\)-invariant
+functions. In fact any function \(f\) on \(W_\beta\) extends to such a
+function by symmetry, and partitioning the integration variable into
+the six wedges gives the kernel and its row sum one. Both the full
+norm and the full squared-difference energy of the extension are six
+times their values on \(W_\beta\). Ordinary mean zero removes the
+constant Hermite mode. Invariance under rotation by \(2\pi/3\)
+removes both linear modes, since the mean vector against the two
+coordinate functions would have to be fixed by this rotation.
+The planar Mehler eigenvalues in degrees \(m\ge2\) are \(\rho^m\).
+Consequently
+\[
+ \frac12\iint_{W_\beta^2} L_\beta(x,y)(f(x)-f(y))^2\,
+                             d\gamma_2(x)d\gamma_2(y)
+ \ \ge\ (1-\rho^2)\int_{W_\beta} f^2\,d\gamma_2 .
+ \tag{TD2}
+\]
+The group-image construction has an analogue for Euclidean Neumann
+heat kernels in [Stempak, Theorem 1.1 and §6.2](https://arxiv.org/pdf/2012.03045).
+Here the Gaussian formula follows from the invariant extension just
+described. The comparison with the tetrahedral kernel requires the
+additional inequalities below.
+
+### Comparing the angular factors
+
+In the folded facet \(W_\alpha\), let the angular coordinates of
+\(x,y\) be \(\theta,\varphi\in[0,\alpha]\), with radii \(r,s\).
+Write
+\[
+ d=|\theta-\varphi|,\quad S=\theta+\varphi,\quad
+ X=\frac{\cos\theta\sin\varphi}{\sqrt2},\quad
+ Y=\frac{\sin\theta\cos\varphi}{\sqrt2},\quad
+ Z=\frac{\sin\theta\sin\varphi}{2}.
+\]
+Set \(D_0=\cos d,\ D_1=\cos S\) and
+\[
+ U=X+Y+Z,\qquad V=|X-Y|-Z,\qquad
+ V_-=-|X-Y|-Z,\qquad U_-=-X-Y+Z.
+\]
+With \(\xi=\rho rs/\sigma_\rho^2\) the common radial factor is
+\[
+ B_\rho(r,s)=\sigma_\rho^{-2}
+          \exp[-\rho^2(r^2+s^2)/(2\sigma_\rho^2)] .
+\]
+The folded tetrahedral kernel from (S49) is
+\(2\sigma_\rho^{-1}B_\rho(r,s)\,\mathcal F_\xi\), where
+\[
+ \mathcal F_\xi
+ =e^{\xi D_0}+e^{\xi D_1}
+       +\tfrac12\big(e^{\xi U}+e^{\xi V}
+                           +e^{\xi V_-}+e^{\xi U_-}\big).
+\]
+Indeed, folding sums the two \((34)\) images in each term of (S49).
+The same-facet terms give \(D_0,D_1\). For an adjacent facet, the
+compression of \((23)\) to the plane in the orthonormal basis
+\((p,q)\) is
+\[
+ D=\begin{pmatrix}0&1/\sqrt2\\ 1/\sqrt2&1/2\end{pmatrix}.
+\]
+This follows by taking the four inner products of \(p,q\) with
+\((23)p,(23)q\). The other adjacent facet has the conjugate compression
+under \((34)\), which changes the sign of the \(q\) coordinate.
+The four resulting angular exponents are exactly the four adjacent
+terms above. The factor \(\sigma_\rho^{-1}\) is the ratio of ambient to
+planar Mehler prefactors.
+
+The angular dilation \(D_\angle\) takes \((r,\theta)\) to
+\((r,\beta\theta/\alpha)\). Put \(d'=\beta d/\alpha\) and
+\(S'=\beta S/\alpha\). The six angular exponents of \(L_\beta\) at
+the dilated points are
+\[
+ \cos d',\ \cos S',\ \cos(2\beta-S'),\ \cos(2\beta-d'),\
+ \cos(2\beta+d'),\ \cos(2\beta+S').
+\]
+Let \(\mathcal G_\xi\) be the sum of their exponentials at scale
+\(\xi\). The comparison is
+\[
+                 \mathcal F_\xi\ \ge\ \tfrac23\mathcal G_\xi
+                      \qquad(\xi\ge0).
+ \tag{TD3}
+\]
+To prove it, compare the 24 exponents in \(6\mathcal F_\xi\),
+counted with multiplicity, to the 24 exponents in \(4\mathcal G_\xi\).
+The former list has six copies each of \(D_0,D_1\) and three copies of
+each adjacent exponent. The latter list has four copies of each
+dihedral image.
+
+The following uses \(U\ge\cos(2\alpha-S)\) and
+\(V\ge\cos(2\alpha-d)\). The matrix \(D\) has eigenvalue \(1\) along
+the ray at angle \(\alpha\) and eigenvalue \(-1/2\) on its orthogonal
+line. For both vectors at angles in \([-\alpha,\alpha]\), the
+coordinates along the oriented line at angle \(\alpha+\pi/2\) have
+the same sign. Replacing \(-1/2\) by \(-1\) therefore only decreases
+their bilinear pairing, and replaces \(D\) by ordinary reflection
+across the ray at angle \(\alpha\). Pairing the angular vectors at
+\(\theta,\varphi\) gives the bound on \(U\). For \(V\), exchange
+\(\theta,\varphi\) if necessary so that \(\theta\ge\varphi\), and
+pair the vectors at \(\theta,-\varphi\).
+
+Now match the first four dihedral images as follows.
+
+| Dihedral exponent | Four tetrahedral exponents dominating it |
+|---|---|
+| \(\cos d'\) | four copies of \(D_0\) |
+| \(\cos S'\) | four copies of \(D_1\) |
+| \(\cos(2\beta-S')\) | three copies of \(U\) and one of \(D_0\) |
+| \(\cos(2\beta-d')\) | one copy of \(D_0\), two of \(D_1\) and one of \(V\) |
+
+Here \(d\le 2\alpha-S\), \(S\le 2\alpha-d\),
+\(d\le 2\alpha-d\), and angular dilation increases every indicated
+comparison angle within \([0,\pi]\). The two unused dihedral
+exponents are at most \(-1/2\). The eight unused tetrahedral
+exponents have sum
+\[
+ 2V+3V_-+3U_-=-|X-Y|-3(X+Y)-2Z
+     \ \ge\ -2\sqrt2-2/3\ > -4.
+\]
+The lower bound uses \(|X-Y|\le1/\sqrt2\),
+\(X+Y\le1/\sqrt2\), and \(2Z\le\sin^2\alpha=2/3\).
+By Jensen's inequality the eight remaining exponentials sum to
+at least \(8e^{-\xi/2}\), proving (TD3). This covers the vertex
+and both wedge edges by continuity.
+
+### Ordinary balance and the gap
+
+Write \(K_\rho=K_{{\rm std},\rho}\) from (S49) and let
+\(\mathcal E_\rho(h)\) be its squared-difference integral on the full
+facet, with the factor \(1/2\) from (S51). Folding to \(W_\alpha\)
+contributes a factor two outside the double integral and uses the
+folded kernel just compared. Also \(d\nu_{12}=\phi_0\,d\gamma_2\)
+on the facet. The dilation transports \(\gamma_2|_{W_\alpha}\)
+to \((\alpha/\beta)\gamma_2|_{W_\beta}\), as seen in polar
+coordinates. In particular \(f=h\circ D_\angle^{-1}\) is ordinarily
+mean zero. In the double integral the change of variables costs
+\((\alpha/\beta)^2\), while the norm changes by only one factor
+\(\alpha/\beta\). Thus (TD2)–(TD3) give
+\[
+ \mathcal E_\rho(h)\ \ge\
+ \frac{2\phi_0}{\sigma_\rho}\,
+    \frac{2\alpha}{\pi}(1-\rho^2)
+                  \|h\|_{L^2(\nu_{12})}^2.
+ \tag{TD4}
+\]
+Explicitly, the factor in front of the reference energy in (TD2) is
+\(2(2/\sigma_\rho)\phi_0^2 (2/3)(\alpha/\beta)^2\),
+and \(\|h\|_{L^2(\nu_{12})}^2
+=2\phi_0(\alpha/\beta)\|f\|_{L^2(\gamma_2|_{W_\beta})}^2\).
+The local term subtracted in (S51) is at most
+\((1-\rho)(2\phi_0/\sigma_\rho)\|h\|_{L^2(\nu_{12})}^2\) by (B7).
+This proves (TD1) using \(\ell=4\phi_0\alpha/\pi\).
+
+For an exact overlap check,
+\(\cos(2\alpha)=-1/3<(1-\sqrt5)/4=\cos(3\pi/5)\),
+where the strict inequality follows from \(5<49/9\).
+Thus \(2\alpha>3\pi/5\) and
+\(\pi/(2\alpha)-1<2/3<17/25\). This proves the rotation-only
+kernel and a positive gap at every fixed \(0<\rho<1\) by (S56),
+(S60)–(S61) and (S42). The angular argument is analytic. The
+all-correlation conclusion uses the original rational and ball
+certificate on the overlap and the interval below it.
+
+Let \(r_4\) be the endpoint of the initial global tetrahedral
+optimality interval in the active space. If \(r_4<1\), the
+[first-transition alternative](POSITIVE_CORRELATION_CONTINUATION.md#the-first-continuation-endpoint-has-a-tie-or-an-additional-zero-mode)
+forces an ordinary balanced nonsimplex maximizer tied with the
+tetrahedron at \(r_4\), because the interface form there has only
+rotational zero modes.

@@ -409,9 +409,9 @@ gives a dimension-uniform strict local comparison for measurable
 fractional pairs with matched free masses, with equality on the
 common simplex orbit. One may take the two assignments to be equal.
 The measurable neighborhood in that implication can depend on \(k,r\).
-The [global comparison](NEGATIVE_VOTING_INTERVAL.md) still requires
-placing every competitive assignment inside an applicable
-neighborhood or comparing it directly with the simplex.
+The [polynomial local radius](NEGATIVE_VOTING_POLYNOMIAL_NEIGHBORHOOD.md)
+quantifies this neighborhood and supplies the local step in the
+[global same-partition comparison](NEGATIVE_VOTING_INTERVAL.md#exact-gaussian-simplex-minimization).
 
 ## A first global transition requires a distinct tied pair
 
@@ -487,5 +487,7 @@ must then be \(A\), by strict pointwise optimality of the
 reflected simplex scores away from the facet planes. The same
 argument on the first side would make the original limit
 \((A,A)\), a contradiction. This establishes the ordinary
-distinct tie. It identifies a remaining global obstruction for
-the paired route to the same-partition voting inequality.
+distinct tie. It identifies the first-transition obstruction for the global
+matched-mass paired inequality. The same-partition proof uses
+the local gap through (PN1), with exponential localization of
+same-partition competitors.

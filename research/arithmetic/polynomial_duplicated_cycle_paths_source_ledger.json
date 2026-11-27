@@ -63,12 +63,12 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md",
-      "sha256": "36f9713f9eecde010d5958b035eb1b4ced5bf2fe24da2f9668c72155478ab714",
+      "sha256": "223a7a0e369615e8dd0829c115148739c0641bbaaa72bcd6db48ee2baecd7474",
       "locator": "X1-X4 all-length four-core classification and independent path-distance normalization"
     },
     {
       "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
-      "sha256": "c648d457fdc6e504c4d86fa3734326544291fa195048f450260b4f2761713d3d",
+      "sha256": "0c76e879a3e43a792e8278abdafe26807d6bc08b4ea5cb11e9749d2884fce61b",
       "locator": "U2 unique quadratic lift, actual group, blocks, deck and exact aggregate count"
     },
     {
@@ -84,9 +84,9 @@
   ],
   "verification": {
     "checker": "research/arithmetic/verify_polynomial_duplicated_cycle_paths.py",
-    "checker_sha256": "9657d2c0cac2e296c1378747f3508f79e96eaa8cb4d8444784dfc0d1e51baef6",
+    "checker_sha256": "61a0a953f060f3ba23c22ba89b42fdeba754fb8538b53c70735b36145c4adc51",
     "receipt": "research/arithmetic/polynomial_duplicated_cycle_paths_verification.json",
-    "receipt_sha256": "3e09dbef955fe5f79412485be6bc0a21221a50c2b4df32d7fd197cf57f83346c",
+    "receipt_sha256": "ed8c499f3359a7f4fc43cdf21c4106e29db0afac74a9f472803abbbf01e1c5be",
     "command": "python3 research/arithmetic/verify_polynomial_duplicated_cycle_paths.py",
     "software": "Python3.12.3 standard library, assertions active",
     "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",

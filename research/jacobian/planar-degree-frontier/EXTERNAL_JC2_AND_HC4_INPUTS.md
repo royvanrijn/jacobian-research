@@ -37,13 +37,14 @@ total degrees (aS,bS), u < v, and a Keller pair. It concludes gcd(u,v) > 2.
 After swapping x and y, the right endpoint of the first polynomial is
 (au,av). Guccione–Guccione–Valqui Corollary 7.9 gives this gcd conclusion
 for a standard (a,b)-pair. Definition 4.3 also imposes the negative
-(1,-1)-weight condition on the *start* of the right face. The displayed
-interface directly controls the end. The remaining source audit is to
-derive the start condition, or produce an admissible normalization that
-keeps the needed endpoint gcd, at least on the actual large-shear inputs
-used in the max-11 proof. The classical implication remains conditional
-on this interface in this DAG. The same corollary’s assertion about B
-concerns the globally minimal counterexample degree gcd.
+(1,-1)-weight condition on the *start* of the right face. Proposition 5.20 supplies the missing start condition while preserving
+the right endpoint. A direct leading-factor slice proof gives the same
+normalization by translating a root of multiplicity greater than u.
+Together with Nagata's theorem this discharges both mathematical inputs to
+the Lean headline. The two statements remain explicit Lean parameters.
+The same corollary’s assertion about B concerns the globally minimal
+counterexample degree gcd.
+[Endpoint proof and transfers](PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) ·
 [Primary text, Definition 4.3 and Corollary 7.9](https://arxiv.org/pdf/1401.1784v3) ·
 [Lean interface and large-shear adapter](https://github.com/dcposch/jc2-lean/blob/6ee763cd623649a5af0517dd12d7202ce2e2ea3c/max11-partial-y/EndpointGCDRoute.lean)
 

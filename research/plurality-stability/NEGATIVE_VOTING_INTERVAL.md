@@ -7,12 +7,80 @@ write
  S_{-r}(f)=\sum_i\mathbb E[f_i(X)f_i(Y)],
  \qquad \operatorname{Cov}(X,Y)=-rI_d.
 \]
-Let \(T_k\) denote the central regular simplex partition, extended
-cylindrically to dimension \(d\). The exact target is the existence of
-one \(M\) such that \(S_{-r}(f)\ge S_{-r}(T_k)\) for all \(k\ge M\),
-all \(0<r\le1/(k-1)\), all \(d\ge k-1\), and all such \(f\).
-The comparison below is uniform in every one of these parameters.
-It leaves an additive error of order \(r/k\).
+## Exact Gaussian simplex minimization
+
+There is an integer \(M\ge3\) such that for every \(k\ge M\),
+every \(d\ge k-1\), every \(0<r\le1/(k-1)\), and every measurable
+\(f:\mathbb R^d\to\Delta_k\),
+\[
+ S_{-r}(f)\ge S_{-r}(1_{T_k}),
+ \tag{VG1}
+\]
+where \(T_k\) is the regular central simplex extended cylindrically
+to dimension \(d\). The cell masses are unrestricted. Equality
+holds exactly for a regular central simplex assignment, up to
+orthogonal maps, labels and null sets.
+
+To prove this, consider an assignment with
+\(S_{-r}(f)\le S_{-r}(1_{T_k})\).
+[Exponential localization (VL1)](NEGATIVE_VOTING_EXPONENTIAL_LOCALIZATION.md)
+bounds its summed label \(L^1\) distance to a simplex by
+\(C\exp[-c/(r^2 k(\log k)^2)]\).
+Since \(r\le1/(k-1)\), this is at most
+\(C\exp[-c' k/(\log k)^2]\), uniformly in \(d,r\).
+[The polynomial local comparison (PN1)](NEGATIVE_VOTING_POLYNOMIAL_NEIGHBORHOOD.md)
+holds when the distance of a pair to a common simplex is at
+most \(k^{-A}\), with one fixed \(A\). Apply it to \((f,f)\).
+Its pair-distance bound is twice the single-assignment bound,
+and \(2C\exp[-c' k/(\log k)^2]\le k^{-A}\) for all
+sufficiently large \(k\). This gives the inequality and the
+equality classification in (VG1).
+
+The localization uses the prescribed-mass covariance estimate,
+which derives its flux identities directly and uses the published
+Gaussian multi-bubble theorem.
+The second-degree estimate requires a Gaussian maximum comparison
+after a common Gaussian shift, in the scope of
+[Mulgund's Theorem 2.1](https://arxiv.org/pdf/2607.14087v2)
+or [Friedland–Guédon–Souli, Corollary 1.5](https://arxiv.org/pdf/2609.38904v1).
+The local step uses the signed weighted Hessian throughout the
+voting interval. The proof has internal mathematical audit.
+The value of \(M\) is qualitative.
+
+## Discrete low-influence voting
+
+For \(k\ge M\) and any \(\epsilon>0\) there are a low-degree cutoff
+\(D\) and an influence threshold \(\tau>0\), depending on
+\(k,\epsilon\), such that every \(f:[k]^N\to\Delta_k\)
+with all coordinate influences through degree \(D\) at most
+\(\tau\) satisfies
+\[
+ S_\rho(f)\ge
+       \lim_{m\to\infty} S_\rho(\mathrm{PLUR}_{m,k})-\epsilon
+ \qquad\left(-\frac1{k-1}\le\rho<0\right).
+ \tag{VG2}
+\]
+This is the negative-correlation inequality of Plurality Is Stablest,
+with the same low-degree thresholds for the entire interval.
+There is no balance premise.
+
+For a fixed \(\rho\), [Isaksson–Mossel, arXiv:0903.3362v3,
+Theorem 7.1 and Lemma 7.3](https://arxiv.org/pdf/0903.3362v3)
+give, respectively, Gaussian replacement in dimension \(N(k-1)\)
+with arbitrarily small error in stability, and the simplex
+value as the plurality limit. Their range includes the endpoint
+\(-1/(k-1)\). Apply (VG1) in dimension \(N(k-1)\) to the
+replacement. To take thresholds uniform in \(\rho\), use a
+finite sufficiently fine net in the closed interval
+\([-1/(k-1),0]\). The zero value is bounded below by \(1/k\)
+by Cauchy–Schwarz. Both the discrete stability of any \(f\)
+and the Gaussian simplex stability are Lipschitz uniformly
+on this interval. Their power-series coefficients are
+nonnegative with sum at most 1, and
+\(\sup_{j\ge1}j(k-1)^{-(j-1)}<\infty\). Take the maximum
+of the degree cutoffs and the minimum of the influence
+thresholds over the net, allocating part of the error to
+the Lipschitz differences.
 
 ## V1. Uniform full-interval comparison and mass control
 
@@ -477,16 +545,36 @@ their spread.
 
 **The scalar comparison.** Let \(X\) be standard Gaussian and
 conditionally draw the label \(I\) with probabilities \(f_i(X)\).
-For \(Y=v_I\cdot X\), write \(Y_*\) for the maximum of the unit
-regular-simplex scores. Pointwise \(Y\le\max_i v_i\cdot X\).
-[Mulgund, *Stochastic Domination of Gaussian Maxima by the Regular
-Simplex*, arXiv:2609.28452v2, Theorem 1.1](https://arxiv.org/pdf/2609.28452v2)
-bounds the latter maximum in stochastic order by \(Y_*\).
-Its hypothesis is unit variance for each Gaussian score with
-any positive semidefinite correlation matrix, including
-singular matrices. Normalizing individual directions is what
-passes from that theorem to the present comparison.
-Denote \(a=\mathbb E Y_*=\sqrt{kF_k}\), \(B_*=\mathbb E Y_*^2\),
+Write \(Y=v_I\cdot X\) and let \(Y_*\) be the maximum of
+the unit regular-simplex scores. Take \(\alpha=(k-1)/k\).
+Add independent common Gaussian noise \(N\) of variance
+\(1/(k-1)\) to the scores \(v_i\cdot X\). If \(G_0\) is their
+Gram matrix, multiplying the shifted vector by \(\sqrt\alpha\)
+gives a unit-variance Gaussian vector with covariance
+\(\alpha G_0+\mathbf1\mathbf1^T/k\).
+Its maximum is stochastically dominated by the maximum of \(k\)
+independent standard normals by
+[Mulgund, *Stochastic Domination of Gaussian Maxima: A Resolution of the Weak Simplex Conjecture*, arXiv:2607.14087v2, Theorem 2.1](https://arxiv.org/pdf/2607.14087v2).
+The theorem permits singular covariance and requires
+\(R-\mathbf1\mathbf1^T/k\succeq0\) for the compared
+correlation matrix \(R\), as holds here.
+The same comparison follows from
+[Friedland–Guédon–Souli, *On partition functions of Gaussian random variables*, arXiv:2609.38904v1, Corollary 1.5 and Remark 1.6](https://arxiv.org/pdf/2609.38904v1)
+with the common log-concave profile a half-line indicator.
+
+For the regular unit simplex scores this common-noise
+construction gives independent coordinates after scaling.
+Since \(Y\le\max_i v_i\cdot X\) pointwise, it follows that
+\[
+ \widetilde Y=Y+N\ \le_{\rm st}\
+   \widetilde Y_*=Y_*+N',\qquad
+ \widetilde Y_*\ \stackrel{\rm law}=\ \alpha^{-1/2} M_k ,
+ \tag{V12a}
+\]
+where \(N'\) is also independent of the regular scores and has
+the same variance. The common shift leaves both original means
+and their second-moment difference unchanged. Denote
+\(a=\mathbb E Y_*=\sqrt{kF_k}\), \(B_*=\mathbb E Y_*^2\),
 and \(B=\mathbb E Y^2\). Then \(m=\mathbb EY\le a\).
 Also \(m\ge c\sqrt{\log k}\), because \(m_i\le C\sqrt{\log k}\)
 by the halfspace centroid bound and (V3a), and
@@ -511,18 +599,24 @@ therefore give, for sufficiently large \(k\),
  0\le a^2-m^2\le k\Delta+2H-\frac{k}{2r}\delta^2 .
  \tag{V13}
 \]
-For a dimension-independent comparison of second moments, couple
-\(Y,Y_*\) in nondecreasing quantile order. With
-\(R=\sqrt{2\log(k/r^2)}\), the increasing function
-\(\psi_R(t)=\min(t_+,R)^2\) has Lipschitz constant \(2R\).
-Since \(Y_*\ge0\) and \(\Pr(Y_*>t)\le k e^{-t^2/2}\) for
-\(t\ge0\), this yields
+Couple the smoothed variables in (V12a) in nondecreasing
+quantile order. For \(R>0\), put \(\psi_R(t)=\min(t,R)^2\).
+Its slope is bounded above by \(2R\) on the entire real line,
+so for \(x\le y\) the difference
+\(\psi_R(y)-\psi_R(x)\) is at most \(2R(y-x)\). This one-sided
+bound suffices even for negative scores.
+The difference between \(\widetilde Y_*^2\) and
+\(\psi_R(\widetilde Y_*)\) has expectation at most
+\((2k/\alpha)e^{-\alpha R^2/2}\) by the Gaussian union bound,
+while the corresponding difference for \(\widetilde Y\)
+is nonnegative. Thus for any \(R>0\),
 \[
- B_*-B\le 2R(a-m)+2k e^{-R^2/2}
-       \le C (R/a)(k\Delta+2H)+2r^2 .
+ B_*-B \le 2R(a-m)+(2k/\alpha)e^{-\alpha R^2/2}.
  \tag{V14}
 \]
-The last inequality uses \(a+m\ge a\) and (V13).
+Taking \(R=\sqrt{(2/\alpha)\log(k/r^2)}\) and using
+\(a+m\ge a\) in (V13) bounds this by
+\(C(R/a)(k\Delta+2H)+Cr^2\).
 
 **The matrix constraint.** Let \(V_i=v_i v_i^T\) and
 \(\bar V=k^{-1}\sum_i V_i\). The centered second moments \(A_i\)
@@ -749,13 +843,11 @@ has full centroid rank \(k-1\) for sufficiently large \(k\),
 and its normalized covariance has all active eigenvalues
 \((1+o(1))/(k-1)\).
 
-The [local Hessian and measurable comparison](NEGATIVE_VOTING_HESSIAN.md)
-hold at every correlation in this range. To combine them with
-(V17) into the exact global inequality requires a quantitative
-local radius large enough for the right side of (V20), or a
-comparison that covers the remaining neighborhood directly.
+The polynomial-distance estimate here is strengthened in
+[exponential localization](NEGATIVE_VOTING_EXPONENTIAL_LOCALIZATION.md).
+The stronger version fits the local radius in (PN1).
 
-## Exact results and the remaining comparison
+## Earlier interval and large-alphabet comparisons
 
 [Khot–Kindler–Mossel–O'Donnell, *Optimal Inapproximability Results
 for MAX-CUT and Other 2-Variable CSPs?*, Proposition 11.4, final
@@ -789,12 +881,6 @@ multiplicities. Thus the actual stability converges. The approximation
 gives the value inequality for fractional assignments. It does not
 transfer equality classification by itself.
 
-The large-alphabet target requires eliminating the loss in (V3).
-The scalar Borell comparison alone leaves the positive gap (V2) even
-on the simplex. Control of the joint geometry at the \(r/k\)
-scale, or a sharper comparison that vanishes at \(T_k\), is
-required. The [exact small-negative interval](NEGATIVE_SMALL_CORRELATION.md)
-for each fixed \(k\) has a threshold that can depend on \(k\).
-A bound at least \(1/(k-1)\) for all sufficiently large \(k\)
-remains open here. The estimates and source applications above
-have been checked internally.
+The three-cell result and (VG1) have different ranges of \(k\).
+The exact result (VG1) proves the requested eventual Gaussian
+inequality and its discrete consequence (VG2).

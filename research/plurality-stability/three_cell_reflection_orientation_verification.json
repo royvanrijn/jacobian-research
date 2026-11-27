@@ -9,7 +9,7 @@
   },
   "checker_sha256": "0c8bc7c352f7ff9c0340014b817ebf13d372a35ac199962b46ee1abff37ef2ad",
   "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
-  "proof_source_sha256": "2118222450fa5dae4549187defc5d804de54c2e38c57917d2235b187eecd7ad1",
+  "proof_source_sha256": "5d31df4767af645f6ee10ead0ebcc8c5e5f9907875b679e2c2761ec9d803aa0f",
   "result": {
     "status": "pass",
     "arithmetic": "exact Python Fraction arithmetic",

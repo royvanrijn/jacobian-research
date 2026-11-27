@@ -20,14 +20,19 @@ def supports(g):
     return [set(cy) for cy in c.cycles(g, False)]
 
 
-def forest(state):
+def forest(state, repeated=True):
     A, B, T = state
     N = len(A)
     ac, bc, tc = (supports(g) for g in state)
     assert len(ac) == len(bc) == 2 and len(tc) == 1 and len(tc[0]) == 2
-    a, = {len(x) for x in ac}
-    b, = {len(x) for x in bc}
-    assert a >= 2 and b >= 2 and N == 2*(a+b-1)
+    lengths_a, lengths_b = tuple(map(len, ac)), tuple(map(len, bc))
+    assert min(lengths_a+lengths_b) >= 2
+    assert N == sum(lengths_a+lengths_b)-2
+    if repeated:
+        a, = set(lengths_a)
+        b, = set(lengths_b)
+    else:
+        a = b = None
     assert c.index(A)+c.index(B)+c.index(T) == N-1
     assert len(c.cycles(m.product(state))) == 1
     edges = []
@@ -67,7 +72,8 @@ def forest(state):
     else:
         kind = "B-star"
         assert da == [1, 1] and sorted(db) == [0, 2]
-    return dict(a=a, b=b, N=N, ac=ac, bc=bc, da=da, db=db, kind=kind,
+    return dict(a=a, b=b, lengths_a=lengths_a, lengths_b=lengths_b,
+                N=N, ac=ac, bc=bc, da=da, db=db, kind=kind,
                 outside=outside, components=components, R=R, edge_count=len(edges))
 
 
