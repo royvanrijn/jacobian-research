@@ -2149,8 +2149,9 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Balanced affine cube-leading Mestre constructions cannot degenerate to genus three | Internal result | proved | [Source](GENUS_THREE_MESTRE_DEGENERATIONS.md) |
 | Polynomial return transport, small-block sufficiency and cyclic lifting | Internal result | proved | [Source](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md) |
 | Return braids, complete quartic gluing and inherited component obstructions | Internal result | proved | [Source](POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md) |
+| Complete components for two bundled involutions and simple branches | Internal result | proved | [Source](POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md) |
 
-**Computed obligations:** 200 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 201 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -2317,6 +2318,7 @@ Scope limits:
 - A1–A8 of INDEX_TWO_HURWITZ_MIXTURES.md establish arbitrary minimal T/DT connectivity, even under the pure braid group for every ordered passport. The collective maximum puts all other Ts in a unique largest cut component; Q^5 exchanges two T markings with literal endpoint restored. The only multiple index-two orbits are the four pure-DT degree-seven ones. A9–A10 exhibit higher-index proper and imprimitive monodromy; A11 gives a genuine genus-one spin split outside minimality. General disconnected higher-index extraction/restoration and independent review remain open.
 - The active higher-index Hurwitz target is complete genus-zero polynomial component classification. H1–H9 give cycle-incidence trees, the complete block-divisor lattice, exact quotient/fibre budgets and a uniform two-factor plane-tree classifier. Six degree11 components all have A11 and standard spin+1; the degree15 split has groups A15 and C3 wr A5, both spin-1, with cyclic stabilizers1 and3. Primitive Sn/An components for r>=3 and joint imprimitive lift gluing remain open; group or spin classification alone does not close the target.
 - R1–R6 of POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md identify every return transport as an inner Artin braid, classify all fibre4 gluing by a four-state A4 action, realize every possible split pattern and lift every inner component obstruction through cyclic outer covers. For every d>=2, at least six components have the same embedded A11 wr C_d. Together with L4/L5, fibres2/3/4 and the free-cyclic family are established; primitive Sn/An, remaining fibres>=5 and reduced lifting data keep the full goal open.
+- B1–B6 of POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md classify every full component for two bundled involutions A,B>=2 and any positive number of transposition factors. The labels come from published Bogatyrev-Gendron Corollary2, and new internal derivations give the literal S_n-wr-dihedral monodromy, all block divisors, deck groups and exact Mobius/factorial sizes. There is one primitive Sn component when both bundled involutions have fixed points. For every odd prime p>=5 there are exactly two same-group S_p-wr-C2 components on2p sheets. Other primitive passports, remaining return actions and reduced lifting classification stay open.
 
 Tracked obligations (computed states):
 
@@ -2465,7 +2467,7 @@ Tracked obligations (computed states):
 - **verification / open:** [Independently review Lemma 19, Theorem 20 and the base/absorption/marking dependency chain.](TERMINAL_MASS_HURWITZ_DESCENT.md) — VERIFY-ARITH-HURWITZ-FIXED-PROJECTION-EXTRACTION
 - **verification / open:** [Independently review M1--M7: both Q^2 pruning identities, maximization and common complementary phases, unique-largest paired-leaf alignment, the three-way type obstruction, diagonal star induction, outside support in the five-move escape, degree-five boundary, all four pure degree-seven cores, mixed-nine completeness, one-anchor restoration, exact marking, monodromy and lifting conventions. Present proof audit and replay are internal only.](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md) — VERIFY-ARITH-MIXED-HURWITZ-ISOLATION-CONNECTIVITY
 - **verification / open:** [Independently review the arbitrary-mixture collective isolation, pure braid connectivity and obstruction proof.](INDEX_TWO_HURWITZ_MIXTURES.md) — VERIFY-ARITH-INDEX-TWO-MIXTURE-PROOF
-- **mathematical / open:** [Classify primitive Sn/An components with at least three finite branch values.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS
+- **mathematical / open:** [Classify the remaining primitive Sn/An passports beyond the now complete two-involution/simple family.](POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md) — GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS
 - **mathematical / open:** [Complete imprimitive classification using the restricted inner-braid action, beyond the proved fibre2/3/4 and free-cyclic subdomains.](POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md) — GAP-ARITH-POLYNOMIAL-IMPRIMITIVE-LIFT-GLUING
 - **mathematical / open:** [Determine the reduced lifting invariants actually defined in each genus-zero monodromy/passport domain and any limits on their sufficiency.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION
 - **verification / open:** [Independently review the uniform block/two-factor reductions and exact finite component certificates.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — VERIFY-ARITH-POLYNOMIAL-PASSPORT-COMPONENT-PROOF
@@ -2473,5 +2475,6 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Classify the remaining restricted inner-braid subgroup orbits for fibres at least5; every fibre4 case is now resolved by R3-R4.](POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md) — GAP-ARITH-POLYNOMIAL-LARGER-FIBRE-RETURN-ORBITS
 - **verification / open:** [Independently review and replay the return-tuple bijection, exact transport, cyclic family and b4 obstruction.](POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md) — VERIFY-ARITH-POLYNOMIAL-LIFT-TRANSPORT
 - **verification / open:** [Independently review and replay the universal return-braid realization and complete fibre4 criterion.](POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md) — VERIFY-ARITH-POLYNOMIAL-RETURN-BRAIDS-AND-QUARTIC-GLUING
+- **verification / open:** [Independently review and replay the involution/simple-family labels, groups and exact component sizes.](POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md) — VERIFY-ARITH-POLYNOMIAL-INVOLUTION-COMPONENT-CLASSIFICATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -120,7 +120,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Centered Weyl corners have a common divisor greater than one | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md) |
 | Differential orders ten and eleven force polynomial Weyl generation | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md) |
 | Order-twelve residuals have a nontrivial common multiplicity divisor | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md) |
-| The multiplicity-26 two-flow mate reduces to a single cube | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| The multiplicity-26 and multiplicity-30 Weyl edges both have a pure cube mate | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | The order-seven operator independently excludes the primitive multiplicity-26 branch | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | The even multiplicity-26 profiles have fixed four-type and indicial constraints | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | The even Weyl profile gives a primitive length-two commutator problem | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
@@ -135,7 +135,13 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Classical rational slice jets obstruct weighted Weyl and plane Keller mates | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
 | A boundary-admissible one-parameter family has no plane or Weyl mate | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
 | Higher Hamiltonian slice tests are independent exactness tests on one cyclic cover | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
-| Newton-face descent excludes the multiplicity-26 Weyl branch with a small root | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| Newton-face descent excludes every multiplicity-26 root in the (12,18) Weyl row | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| Root interpolation for negative-degree mixed Hamiltonian slices | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| An explicit root-position criterion when the negative-degree pole bound is saturated | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| Differential order determines the fractional powers in a scalar mate | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
+| The even multiplicity-26 branch has a fixed order-nine Weyl face | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| A multiplicity-thirty root forces a single root in reduced orders (12,18) | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| The reduced (12,18) Weyl branch is excluded over the rationals | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

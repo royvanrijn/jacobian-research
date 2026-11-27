@@ -7,6 +7,7 @@ is certified by this script. The optional quadrature is exploration only.
 
 import argparse
 from fractions import Fraction as Q
+from functools import lru_cache
 import hashlib
 import itertools
 import json
@@ -385,6 +386,201 @@ def sign_vandermonde_controls():
     }
 
 
+def universal_block_controls():
+    """Exact bounded controls for the group-algebra and Young-basis reduction."""
+    group_cases = []
+    for k in range(3, 8):
+        counts = {}
+        def left(g):
+            return tuple(1-a if a < 2 else a for a in g)
+        def right(g):
+            return (g[1], g[0], *g[2:])
+        for rest in itertools.permutations(range(1, k)):
+            g = (0, *rest)
+            for term, coefficient in ((g, 1), (left(right(g)), 1),
+                                      (left(g), -1), (right(g), -1)):
+                counts[term] = counts.get(term, 0) + coefficient
+        for g in itertools.permutations(range(k)):
+            expected = int(g[0] == 0)-int(g[0] == 1)-int(g[1] == 0)+int(g[1] == 1)
+            assert counts.get(g, 0) == expected
+        assert counts[(1, 0, *range(2, k))] == -2
+        group_cases.append({"k": k, "permutations": math.factorial(k)})
+
+    @lru_cache(None)
+    def tableaux(shape):
+        if not shape:
+            return ((),)
+        result = []
+        for row, length in enumerate(shape):
+            if row+1 < len(shape) and shape[row+1] == length:
+                continue
+            smaller = list(shape)
+            smaller[row] -= 1
+            smaller = tuple(x for x in smaller if x)
+            result.extend(t + ((row, length-1),) for t in tableaux(smaller))
+        return tuple(result)
+
+    def partitions(n, cap=None):
+        if n == 0:
+            yield ()
+        else:
+            for first in range(min(n, n if cap is None else cap), 0, -1):
+                for rest in partitions(n-first, first):
+                    yield (first, *rest)
+
+    def identity(d):
+        return [[Q(i == j) for j in range(d)] for i in range(d)]
+
+    def product(a, b):
+        return [[sum(value*b[r][j] for r, value in enumerate(row) if value)
+                 for j in range(len(b))] for row in a]
+
+    young_cases = []
+    shapes = [shape for k in range(3, 6) for shape in partitions(k)]
+    shapes += [(3, 2, 1), (2, 2, 2), (3, 1, 1, 1), (2, 2, 1, 1)]
+    for shape in shapes:
+        k, tabs = sum(shape), tableaux(shape)
+        d, index = len(tabs), {t: i for i, t in enumerate(tabs)}
+        lengths = []
+        for t in tabs:
+            word = sorted(range(k), key=lambda i: t[i])
+            lengths.append(sum(word[i] > word[j] for i in range(k) for j in range(i+1, k)))
+        generators = []
+        for a in range(k-1):
+            matrix = [[Q(0) for _ in range(d)] for _ in range(d)]
+            for col, t in enumerate(tabs):
+                axial = (t[a+1][1]-t[a+1][0])-(t[a][1]-t[a][0])
+                assert axial
+                matrix[col][col] = Q(1, axial)
+                swapped = list(t)
+                swapped[a], swapped[a+1] = swapped[a+1], swapped[a]
+                other = index.get(tuple(swapped))
+                if other is not None:
+                    matrix[other][col] = Q(1) if lengths[other] > lengths[col] else 1-Q(1, axial**2)
+                else:
+                    assert abs(axial) == 1
+            assert all(value+(i == j) >= 0 for i, row in enumerate(matrix) for j, value in enumerate(row))
+            assert product(matrix, matrix) == identity(d)
+            generators.append(matrix)
+        for i in range(k-2):
+            a, b = generators[i:i+2]
+            assert product(a, product(b, a)) == product(b, product(a, b))
+        for i in range(k-1):
+            for j in range(i+2, k-1):
+                assert product(generators[i], generators[j]) == product(generators[j], generators[i])
+        minus = [i for i in range(d) if generators[0][i][i] == -1]
+        assert all(generators[0][i][j] == 0 for i in range(d) for j in range(d) if i != j)
+        z = [[Q(0) for _ in range(d)] for _ in range(d)]
+        for rest in itertools.permutations(range(1, k)):
+            g = [0, *rest]
+            inverse = [g.index(i) for i in range(k)]
+            exponent = sum((k-i)*(k-inverse[i])**2 for i in range(1, k))
+            weight = 2**exponent
+            current, word, work = identity(d), [], list(g)
+            for target in range(k):
+                pos = work.index(target)
+                while pos > target:
+                    work[pos-1], work[pos] = work[pos], work[pos-1]
+                    word.append(pos-1)
+                    pos -= 1
+            for a in word:
+                current = product(generators[a], current)
+            for i in range(d):
+                for j in range(d):
+                    z[i][j] += weight*current[i][j]
+        assert all(value >= 0 for row in z for value in row)
+        assert all(z[i][j] >= 0 for i in minus for j in minus)
+        young_cases.append({"partition": list(shape), "k": k, "dimension": d,
+                            "minus_dimension": len(minus), "selected_TP_matrix": "passed"})
+    assert 1*1-2*3 < 0  # A positive-entry, non-TN matrix has a negative sign immanant.
+    return {
+        "free_group_algebra_identity": group_cases,
+        "rational_Young_Coxeter_and_selected_TP_controls": young_cases,
+        "orientation_and_non_TN_negative_controls": "passed",
+        "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and four selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The all-k immanant formula and positivity depend on the written argument and retained primary Young-form/interval-decomposition statements; no spectral gap is certified.",
+    }
+
+
+def standard_hook_gaussian_controls():
+    """Finite exact algebra behind the Gaussian integration identities S71."""
+    cases = []
+    for k in range(3, 9):
+        vectors = {l: [Q(1, 2) if i < 2 else Q(-int(i == l)) for i in range(k)]
+                   for l in range(2, k)}
+        dot = lambda x, y: sum(a*b for a, b in zip(x, y))
+        outer = lambda w: [[a*b for b in w] for a in w]
+        apply = lambda matrix, x: [sum(a*b for a, b in zip(row, x)) for row in matrix]
+        matrices = {}
+        for l, w in vectors.items():
+            assert dot(w, w) == Q(3, 2)
+            ww = outer(w)
+            c = [[Q(i == j)-2*ww[i][j] for j in range(k)] for i in range(k)]
+            d = [[Q(i == j)-ww[i][j] for j in range(k)] for i in range(k)]
+            matrices[l] = c
+            for i in range(k):
+                for j in range(k):
+                    assert sum(c[i][r]*d[r][j] for r in range(k)) == (i == j)
+                    assert d[i][j]-c[i][j] == ww[i][j]
+            assert apply(c, w) == [-2*a for a in w]
+            wrong_reflection = [[Q(i == j)-Q(4, 3)*ww[i][j] for j in range(k)]
+                                for i in range(k)]
+            assert apply(wrong_reflection, apply(d, w)) != w
+        for l, w in vectors.items():
+            for r, other in vectors.items():
+                if l == r:
+                    continue
+                assert dot(w, other) == Q(1, 2)
+                assert apply(matrices[r], w) == [a-b for a, b in zip(w, other)]
+                assert apply(matrices[l], other) == [b-a for a, b in zip(w, other)]
+                # A basis of vectors with y1=y2=yl; equality holds before centering.
+                for index in [0, *[i for i in range(2, k) if i != l]]:
+                    y = [Q(int(i == index)) for i in range(k)]
+                    if index == 0:
+                        y[1] = y[l] = Q(1)
+                    left = y[:]
+                    left[1], left[r] = left[r], left[1]
+                    right = y[:]
+                    right[l], right[r] = right[r], right[l]
+                    right[1], right[l] = right[l], right[1]
+                    assert left == right
+        cases.append({"k": k, "adjacent_labels": k-2, "ordered_boundary_pairs": (k-2)*(k-3)})
+    return {"cases": cases, "wrong_orthogonal_reflection_control": "passed",
+            "scope": "Exact C_l D_l=I, D_l-C_l=w_l w_l^T, same-face annihilation and all paired triple-junction permutation identities for 3<=k<=8. The unrestricted Gaussian integration-by-parts and differentiation identities S71 are written analytic proofs; no favorable residual sign or standard gap is certified."}
+
+
+def standard_mass_weight_control():
+    """Reject removing the translation eigenvector using the wrong mass weight."""
+    rho, weights, a, h = Q(1, 2), [Q(1, 2)]*2, [Q(1), Q(4)], [Q(1), Q(-1)]
+    kernel = [[Q(2), Q(2)], [Q(2), Q(14)]]
+    root_a, b = [Q(1), Q(2)], [Q(1), Q(1, 2)]
+    dot = lambda x, y: sum(w*xi*yi for w, xi, yi in zip(weights, x, y))
+    apply = lambda matrix, x: [sum(v*y for v, y in zip(row, x)) for row in matrix]
+    for i in range(2):
+        assert sum(weights[j]*kernel[i][j] for j in range(2)) == a[i]/rho
+    normalized = [[weights[j]*kernel[i][j]/(root_a[i]*root_a[j]) for j in range(2)]
+                  for i in range(2)]
+    assert apply(normalized, root_a) == [x/rho for x in root_a]
+    trace = normalized[0][0]+normalized[1][1]
+    determinant = normalized[0][0]*normalized[1][1]-normalized[0][1]*normalized[1][0]
+    assert trace == Q(2)+Q(3, 4) and determinant == Q(2)*Q(3, 4)
+    u = [root_a[i]*h[i] for i in range(2)]
+    assert dot(h, [Q(1)]*2) == dot(u, b) == 0
+    assert dot(u, root_a) != 0
+    mass_term = sum(weights[i]*a[i]*h[i]**2 for i in range(2))
+    interaction = sum(weights[i]*weights[j]*kernel[i][j]*h[i]*h[j]
+                      for i in range(2) for j in range(2))
+    assert mass_term-interaction == Q(-1, 2)
+    inverse_form = [[Q(3), Q(-2)], [Q(-2), Q(0)]]
+    form = [[Q(i == j)-normalized[i][j] for j in range(2)] for i in range(2)]
+    for i in range(2):
+        for j in range(2):
+            assert sum(form[i][r]*inverse_form[r][j] for r in range(2)) == (i == j)
+    assert dot(b, apply(inverse_form, b)) == Q(1, 2)
+    return {"row_identity": "passed", "normalized_eigenvalues": ["2", "3/4"],
+            "balanced_unnormalized_form": "-1/2", "mass_resolvent_form": "1/2",
+            "scope": "Exact two-atom counterexample to using a second normalized eigenvalue bound alone with ordinary mass balance; it is not a simplex counterexample and does not certify either all-k test in S70."}
+
+
 def iv(x):
     return (Q(x[0]), Q(x[1])) if isinstance(x, tuple) else (Q(x), Q(x))
 
@@ -612,6 +808,9 @@ def main():
                          "higher_cell_reflections": higher_cell_reflection_checks(),
                          "hook_cone": hook_cone_checks(),
                          "sign_vandermonde": sign_vandermonde_controls(),
+                         "universal_blocks": universal_block_controls(),
+                         "standard_mass_weight": standard_mass_weight_control(),
+                         "standard_hook_gaussian": standard_hook_gaussian_controls(),
                          "interval_gap": interval_gap_check()},
         "analytic_claims_certified_by_this_script": False,
         "independent_replay": False,

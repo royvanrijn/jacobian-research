@@ -977,6 +977,107 @@ coordinates and using $C^k$ score convergence. In the unit
 limits the pair tie line of either a tripod or a halfplane
 is exactly straight.
 
+## Exterior confinement of actual maximizers
+
+Fix $\eta>0$. There is a fixed radius $R_\eta<\infty$ such
+that, along every sequence of planar balanced global maximizers aligned
+to the simplex $T$ as $\rho\uparrow1$, all sufficiently late members
+agree with $T$ outside $B_{R_\eta}$ except in the three conical tubes
+$|t|\le\eta s$, $s>0$, about the outward interface rays. This is an
+exact statement about the labels, including at arbitrarily large
+radii. The proof uses the winning score equations and the estimate
+$|\beta|=o(e)$.
+
+First take a fixed $b>1$ and a standard planar Gaussian $Z$.
+Uniformly for $|u|\le b$, one has
+
+\[
+ \Pr(|\rho u+\sigma Z|\le b)
+ \ \ge\ \tfrac12+\sigma\phi(0)\frac{b-b^{-1}}2+o(\sigma),
+ \qquad \sigma=\sqrt{1-\rho^2}.
+ \tag{P17}
+\]
+
+The probability is minimized at $|u|=b$. By rotation, condition
+on the component of $Z$ perpendicular to $u$ and use that the
+Gaussian mass of a symmetric interval decreases as its center is
+shifted away from zero. At $u=b(1,0)$, conditional on $Z_2=w$ with
+$|w|\le b/(2\sigma)$, the upper threshold for $Z_1$ is
+\[
+ \sigma\left(\frac{b}{1+\rho}
+       -\frac{w^2}{b+\sqrt{b^2-\sigma^2w^2}}\right).
+\]
+The lower endpoint is at most $-c_b/\sigma$, and the omitted
+Gaussian probability $\Pr(|Z_2|>b/(2\sigma))$ is exponentially
+small. The difference of the upper cumulative probability from
+$1/2$, divided by $\sigma$, is bounded by $C_b(1+w^2)$ and
+converges to $\phi(0)(b-w^2/b)/2$. Integrating gives (P17).
+
+Fix one reference cell $T_i$ with unit bisector $a$. Choose an
+angular wedge with bisector $a$ and half-opening
+$\theta<\pi/3$, large enough to contain the directions in this
+cell outside the two adjacent ray tubes. For example, when
+$0<\eta<1$, take $\theta=\pi/3-(\arctan\eta)/2$. Let $n_+,n_-$
+be the two outward unit normals of this narrower wedge. Fix
+$B>0$ and choose $L>0$ sufficiently large. For $R>L$ put
+\[
+ K_R=\{y:n_\pm\cdot y\le B,\ a\cdot y\ge L,\ |y|\le R\},
+ \qquad E_R=K_R+\overline B_b(0).
+\]
+Because $\theta<\pi/3$, increasing $L$ ensures that every
+$E_R$ lies strictly inside $T_i$ with fixed positive angular
+slack. Indeed if $a\cdot y=v\ge L$ and $j\perp a$ is a unit
+vector, then $|j\cdot y|\le (B+v\sin\theta)/\cos\theta$.
+The bounded displacement by $\overline B_b(0)$ preserves a
+strict angular margin for sufficiently large $L$. This also
+shows that all points represented as $x=y+u\in E_R$, $|u|\le b$,
+with $a\cdot y\le2L$ lie in one fixed compact subset of
+$\operatorname{int}T_i$, independent of $R$.
+
+Choose a finite starting radius $R_0$ for which $K_{R_0}$
+has nonempty interior. At each sufficiently late member of the
+sequence, the index $i$ is the strict score winner on $E_{R_0}$
+and on the fixed compact set for $a\cdot y\le2L$, by bounded
+winner-set convergence. Suppose all of $E_R$ belongs to the
+closed winner set of $i$. These closed sets describe the
+partition up to null sets. Indeed every pair score difference is
+analytic and is not identically zero. Integration against the
+Gaussian measure and the equal masses force the price difference
+to vanish if the pair scores are identically equal, and then
+injectivity of $T_\rho$ on $L^2(\gamma_2)$ contradicts that the two
+indicators are distinct. Thus $E_R$ belongs to $A_i$ up to a null
+set. If $x=y+u\in E_R$ has $a\cdot y>2L$, then $\rho y\in K_R$
+for $\rho>1/2$. The two side supports satisfy $B>0$, the radial
+constraint is preserved by contraction, and the lower axial
+constraint holds because $\rho a\cdot y>L$. Therefore (P17)
+gives
+\[
+ T_\rho1_{A_i}(x)\ \ge\ T_\rho1_{E_R}(x)
+          \ \ge\ \Pr(|\rho u+\sigma Z|\le b)
+          \ \ge\ \tfrac12+c_b\sigma .
+ \tag{P18}
+\]
+Every other unadjusted score is at most $1-T_\rho1_{A_i}(x)$.
+The margin beats every price difference by (P4), so $i$ is a
+strict winner throughout $E_R$, also when $a\cdot y\le2L$ by
+the known labels on the fixed compact set.
+
+The compact sets $E_R$ depend continuously on $R\ge R_0$ in
+Hausdorff distance. To approximate a point in $K_R$ for a
+slightly smaller radius, interpolate it toward a fixed interior
+point of $K_{R_0}$ of norm less than $R_0$, keeping both side
+and axial constraints and reducing its norm by convexity of the
+norm. Continuity from above follows by compactness and the
+closed inequalities. Thus the set of radii with $E_R$ in the
+closed winner set is closed, and it is open by the strict score
+margin just proved and compactness at each finite $R$. It
+contains $R_0$, so it contains every $R\ge R_0$. The union of
+these $E_R$ covers all sufficiently large points in the directions
+of $T_i$ outside the ray tubes. Applying this to the three
+labels gives the asserted confinement. In particular, the
+exterior part of an actual maximizing defect has the support
+required by the [exterior tube comparison](THREE_CELL_EXTERIOR_TUBES.md).
+
 ## Exact comparison on bounded noise-scale supports
 
 For each fixed $R>0$ there are $c_R>0$ and $\rho_R<1$ such that
@@ -1336,10 +1437,12 @@ Ordinary Gaussian perimeter convergence suppresses the
 $e^2$ corrections that this test resolves. The gap in the
 [spectral theorem](SIMPLEX_INTERFACE_SYMMETRY.md) is of order $e$, and
 the fixed-correlation measurable comparison has a neighborhood depending
-on $\rho$. A uniform comparison still has to couple the moving
-junction to the open-ray deformations, including those for which the
-vertex displacement is large compared to $e$. Extending the
-bounded-physical-region graph control to the radii needed by (P11)
-and combining it with (P15) are further obligations.
+on $\rho$. The [local moving-junction estimate](THREE_CELL_MOVING_JUNCTION.md)
+controls the displacement of the vertex even when it is large
+compared to $e$. The [exterior comparison](THREE_CELL_EXTERIOR_TUBES.md)
+applies to arbitrary label changes in the ray tubes with no upper
+cutoff. A uniform comparison still has to combine the junction and
+exterior estimates for a single competitor and handle defects
+outside the tubes.
 
 The arguments are written analytic proofs with internal review.

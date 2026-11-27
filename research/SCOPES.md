@@ -12,7 +12,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Topic scope:** Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have native integer, radial-primitive absolute scalar-nonpower witnesses in balanced degree4 and EVERY degree>=6, with the SAME fixed original markerZ surviving EVERY positive order. Every pure radially primitive balanced quintic is safe. Allowing radial factors gives degree-five counterexamples by padding an unsafe quartic. Three or more pairs have witnesses in EVERY balanced degree>=2 with one fixed marker at every order. All polynomial automorphisms preserve the normalized rank-one trace for every n>=2. Further reductions classify noncentral constant affine cubic shapes, exclude unsafe degree5/7 in the entire invariant-zero mixed cubic branch, and prove actual prime-balanced Image counterexamples automatically absolute scalar-nonpower. A constant-invariant/fixed-shape bridge isolates the smooth elliptic j frontier without treating constant j as a constant K(x)-curve. Every hypothetical unsafe exact-height3 degree5/7 member has nonzero discriminant and nonconstant j. The full automorphism orbits of the three specified Hopf seeds now have exact degree spectra: f4 all even degrees>=4, f6 all multiples of3>=6, and f8 the stated odd-multiplier spectrum with first prime11. Every affine reductive homogeneous space now has a normalized trace preserved by all algebraic automorphisms over every characteristic-zero extension. The trace is independent of presentation, preserved by isomorphisms, and compatible with marked normalized algebra trace along arbitrary finite-etale maps within the class; geometric K-action forms need no K-point. Explicit standard rational-form product and quaternion pairs now fail Mathieu over every characteristic-zero field, and EVERY nondegenerate even-dimensional quadratic complement of dimension>=4 has the same fixed-marked all-order failure. Over every formally real field, the standard compact-form factors and scalar torus separately have Mathieu kernels while their product fails, proved by rational Gram/SOS and exact Laurent cancellation. Every isotropic nondegenerate quadratic complement of dimension>=3 over any characteristic-zero field now has explicit all-order fixed-marker Mathieu counterexamples, including an absolutely non-proper-power phase. The seed has exact mixed moments and sharp pure-power and monomial-marker thresholds. A direct uniform normalizer now supplies a regular absolutely unit-nonpower pure phase and ONE fixed marker surviving every positive order on EVERY nondegenerate quadratic complement of dimension>=3 over EVERY characteristic-zero field, with sharp pure-power and monomial-marker thresholds. The normalized Reynolds kernel on a nondegenerate positive-dimensional quadratic complement is now classified over EVERY characteristic-zero field: Mathieu iff dimension<=2 iff no absolute unit-nonpower pure phase with ONE all-orders surviving marker. Within this exact family the global property and strong-witness existence are invariant under every scalar extension. Polyhedral joint-density normalizers give one fixed unit at every order on compact rational torus-normalizer quotients. Radial-wall invariant tests construct rational all-order unit counterexamples from actual nonabelian zero-submersion data. An exact ternary unitary/orthogonal radius law yields rational sharp pure-power and scalar-marker profiles on all specified data and full normalizer quotients. Positive polyhedral strata and actual invariant tests give fixed all-order Laurent units; a principal Weyl-face construction realizes this over every characteristic-zero extension for actual compact rational quotients with nonideal stabilizer Lie algebra. Algebraic reconstruction of actual principal-face densities and conditional finite amplifier certification are recorded with exact-data and full-component symmetry gates. A fixeddegree4 SO3-radius circuit gives explicit unitary-block product counterexamples in every n>=3 and sharp scalar-monomial marker profiles for every sufficient pure family a>=2n-3. The unitary SO3-block family now has a complete eventual scalar Laurent marker classification: the safe space is exactly tK[t^-1]. A terminating exact presentation-to-witness algorithm is proved for promised compact rational nonideal homogeneous inputs. A self-contained Gaussian method obstruction proves eventual positivity for every nonzero real polynomial radial amplifier in the displayed Laurent normalizer. For every characteristic-zero field and positive Laurent rank, the Gaussian_n times Laurent constant-term kernel is Mathieu exactly when n<=2; n>=3 has a native rational quadratic all-order unit counterpair. Exact circular homogenization gives the stated fixed-degree structured Gaussian/nullcone classifications. Native affine Gaussian phases in every Gaussian dimension and Laurent rank have exact pure/eventual/all-marker-safe classification by omission of zero from conv(supp a union supp sum b_i^2), with fixed-power large-prime detections in the opposite case. At positive Laurent rank the universal bounded-Gaussian-degree pure-to-safe implication holds exactly when n<=2 or d<=1. Full-sphere leading binary-form packets and exact-half roots have elementary infinite-nonvanishing obstructions; specified quintic four-root and five-double-root configurations are also excluded using scoped ordinary-prime theorems and locally verified full-End cases. The all-degree sphere phase class P(y)+xS(t) has exact pure/eventual/fullambient-marker classification by P(0)=0 and(P=0 or S=0),with uniform safe cutoff m>deg(marker). Every degree<=6 sphere phase of angular support[-1,1] has exact pure/eventual/full-sphere-marker classification: one-sided with zero height core or isotropic linear; safe members obey m>deg(marker). Newtonfaces reduce genuineQnonzero strippedquintics to exact18/15-dimensional residuals;evenmixedpurequintics requirext4andatleasttwo specifiednegativeleaders. Prime-face residue identities give individualeventualparameterdependence and properPURE/fixedtail parameterimages; explicitresidual andEVENquinticapplications leave finiteorproperalgebraictargets. Local End-case analysis reduces the specified cyclotomic E7/E9 sixfold signature to the absolutely simple full-EndE frontier; any field defining that action containsE. Known ordinary cases and the optional prime-face reverse refinement are tracked separately. Existing computable sphere prefixes and prime-face rigidity combine into algorithms for necessary parameter polynomials and exact finite geometric PURE parameter sets in the specified one-parameter charts. Balanced Prym ordinarity excludes the entire even D=0,BCnonzero quintic chart over every characteristic-zero field; with the old Newton boundary, a genuine mixed even eventual quintic must have nonzero y^5 coefficient. An exact rational chart certificate excludes finite native moment vanishing through14 in the normalized odd-angular D0 quintic slice. Repeated-cubic full-BD even quintic faces are non-eventually-pure; the distinct-root E5-sixfold residual reduces to absolutely simple full EndE5. The eight-coefficient odd-angular quintic family with BC nonzero has an exact sharp native moment14 obstruction, with a separate smooth Q101/number-field prefix13 witness. The seven-term C0 odd-angular quintic family with BD nonzero has an exact sharp native moment12 obstruction, with separate smooth Q103 and number-field prefix11 witnesses. In the exact eight-dimensional even-t/odd-angular stripped quintic subspace, PURE phases are exactly angular one-sided; all such phases are safe against every full quadric-algebra marker.
 
-**Computed obligation progress:** 8 falsified; 44 open; 18 proved / discharged; 1 stale.
+**Computed obligation progress:** 9 falsified; 44 open; 19 proved / discharged.
 
 **Authored scope assessment:** The universal GVC/GMC dimension classifications and Gaussian dimension-degree boundary are claimed closed in their exact domains. Higher-dimensional GMC is refuted by witnesses; general Gaussian extensions is not an unrestricted open GMC claim.
 
@@ -174,9 +174,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Authored scope assessment:** The direct three-cell comparison is now recorded separately: exact polar deficit DG3 retains a nonnegative angular Cauchy remainder C_rho and a radial mean gain R_rho. Fixed-measure circular rearrangement settles all positive correlations when the three circular masses are each 1/3, including arbitrary C3-equivariant three-cell partitions. An exactly balanced family of disjoint consecutive arcs proves that discarding C_rho gives an upper bound strictly above the simplex near rho=1; the positive asymptotic coefficient is (4-2*pi/sqrt(3))/9. This is an obstruction to that proof shortcut, not a counterexample to simplex optimality. The unrestricted coupled inequality DG4 remains open; no assurance flags are upgraded.
 
-**Authored scope assessment:** The direct global three-cell inequality is internally proved through rho=21/50 in every d>=2, adapting Heilman arXiv2608.00333v1 Corollary A.3 and the positive radial certificate. The entire interval[2/5,21/50] was covered by85 accepted directed slabs; h_plus^2<3.999335108. Exact upstream modules and wrapper bytes, environment and tail-domain audit are retained. This argument is global in partition distance and bypasses continuation on that interval. Correlations above 21/50 remain open; no assurance flag is upgraded.
+**Authored scope assessment:** The direct global three-cell inequality is internally proved through rho=21/50 in every d>=2, adapting Heilman arXiv2608.00333v1 Corollary A.3 and the positive radial certificate. The entire interval[2/5,21/50] was covered by85 accepted directed slabs; h_plus^2<3.999335108. Exact upstream modules and wrapper bytes, environment and tail-domain audit are retained. This argument is global in partition distance and bypasses continuation on that interval. A separate analytic comparison gives exact optimality and rigidity on an interval ending at one. Intermediate correlations remain open.
 
 **Authored scope assessment:** At rho=1/2 the bounded mean-zero test f=exp(-t)+2exp(-16t)-21/34 rigorously has positive radial quotient>2.07, so the scalar all-correlation sufficient bound is falsified, not the Gaussian simplex conjecture. An explicit symmetric Gram expression Gamma now lower bounds the angular moment-closure deficit for all interior circular profiles and gives the global coupled upper bound DG29. Its balanced expansion has coefficient 1/16. The resulting correction makes the same obstructing profile coefficient strictly negative, proving a restricted all-angular-shapes comparison at rho=1/2 for sufficiently small multiples of that profile. The unrestricted cutoff remains 21/50 and the all-rho goal stays open. Directed enclosures and rational controls are internal only. A further directed test at rho=3/5 gives a positive corrected coefficient >0.0038, so the elementary Gamma functional cannot by itself prove all correlations. DG32 records a stronger matrix-dual bound under explicit sign conditions; its uniform use remains to be established.
+
+**Authored scope assessment:** For balanced three-cell partitions, the near-one proof joins a moving-core Taylor comparison with the conical exterior comparison. Rolling-ball confinement is exact for actual maximizers. The annular cutoff cost is relative to both energies and the two merged binary profiles control the signed volume error. The threshold is qualitative, dimension-independent, and internal. The discrete corollary holds on the same interval. The intermediate global problem remains open.
 
 ### GVC-GMC-IMAGE
 
@@ -2900,11 +2902,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Bounded disagreement divided by e=sqrt(2(1-rho)) gives Gaussian L1 compactness in fixed dimension and sharp perimeter liminf. Balanced planar three-cell partitions with disagreement at most simplex disagreement plus o(e) converge modulo subsequence and orbit to the simplex. Their direction-resolved energy measures converge narrowly. Every fixed-distance planar competitor is excluded sufficiently near one, and actual maximizers localize in every d>=2.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal review of the written proof. External theorem inputs and the scoped upstream certificate replay have separate records.
 
@@ -2914,11 +2916,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For aligned balanced planar three-cell maximizers as rho increases to one, the centered score prices are o(e), e=sqrt(2(1-rho)). The pullback first variation passes to perimeter via direction-resolved energy convergence and control by the widened Mehler kernel. Two fixed mass derivatives are independent at the limiting simplex.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal review of the written proof. External theorem inputs and the scoped upstream certificate replay have separate records.
 
@@ -2928,11 +2930,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** A compact Euclidean improvement of the 120-degree three-sector Gaussian-kernel cut would yield exactly balanced Gaussian improvements for all sufficiently large rho. Each nonzero competitor supported in a disk of radius less than pi*(1-exp(-1))*exp(-25/32)/(24*32) strictly loses, and the Euclidean Hessian is positive on each bounded-support speed space. The separate Euclidean finite-area comparison resolves larger finite changes.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-EUCLIDEAN-JUNCTION-TEST (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal review of the written proof. External theorem inputs and the scoped upstream certificate replay have separate records.
 
@@ -2942,11 +2944,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Centered about any bounded point sequence, e-scale rescalings of planar balanced near-one maximizers are precompact in local strong L1. Every limit is an ordinary compact-perturbation minimizer of the fixed Euclidean Gaussian convolution cut with arbitrary replacement volumes. Outer volume repair and strict Gaussian positive definiteness remove both the physical mass constraint and fractional weak limits.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal review of the written proof. External theorem inputs and the scoped upstream certificate replay have separate records.
 
@@ -2956,11 +2958,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At bounded winner points of planar balanced maximizers, the phase has a fixed positive area fraction in all balls from radius R0*sqrt(2(1-rho)) to small r0. This implies local Hausdorff localization and excludes third labels on fixed compact open-ray portions. The remaining two labels at noise-length blow-up limits there are halfplanes by Cinti–Serra–Valdinoci.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal review of the written proof. External theorem inputs and the scoped upstream certificate replay have separate records.
 
@@ -3012,11 +3014,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For aligned planar balanced Gaussian maximizers, rescalings at lengths tending to zero but larger than the noise length are precompact locally in measure at bounded centers. Limits are compact perimeter minimizers with all nonempty phases infinite: constant, halfplane pair, or a 120-degree tripod. The local normalized cut converges at radii whose spheres carry no limiting interface measure. The proof also applies with constant midpoint weight and no repair to Euclidean Gaussian-cut minimizer blow-downs at diverging lengths.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-INTERMEDIATE-SCALE-TRIPODS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale); EXT-PIS-NPT-PLANAR-INFINITE-AREA-CLASSIFICATION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3026,11 +3028,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For aligned balanced near-one planar maximizers, there is a triple tie in any fixed small disk around the limiting junction, and the set of ties in that disk has diameter O(sqrt(1-rho)). No claim of uniqueness within the noise length.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-NOISE-LENGTH-TRIPLE-TIE-LOCALIZATION (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-INTERMEDIATE-SCALE-TRIPODS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale); EXT-PIS-NPT-PLANAR-INFINITE-AREA-CLASSIFICATION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3054,11 +3056,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Every pair of winners on a fixed compact set of the aligned plane of balanced near-one Gaussian maximizers satisfies a uniform positive lower bound on e times its score-difference gradient norm, with e=sqrt(2(1-rho)). The third gradient need not be quantitatively independent.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-SCALED-PAIR-GRADIENT-LOWER-BOUND (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3068,11 +3070,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For the Euclidean 120-degree tripod and Gaussian kernel, all nontrivial compact changes holding one phase fixed, or whose directed transfers have distinct sources and distinct destinations, strictly increase cut. No balance or symmetric shape required.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-EUCLIDEAN-JUNCTION-TEST (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3082,11 +3084,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** The planar tripod loses to a compactly modified simplex-valued profile in the convex sum of scalar total-variation cuts. The improvement comes from averaging opposite cutoff translations and taking the cutoff radius large. This does not disprove ordinary compact minimality or the soft agreement extension.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-EUCLIDEAN-JUNCTION-TEST (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3096,11 +3098,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Every whole-plane compact-perturbation minimizer of the unit Gaussian cut with three nonempty phases has exactly three analytic far interface graphs approaching concurrent rays at 120 degrees. Their offsets and slopes tend to zero. Two conserved stress potentials determine the normals and concurrent offsets. No classification of the core.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-INTERMEDIATE-SCALE-TRIPODS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale); EXT-PIS-NPT-PLANAR-INFINITE-AREA-CLASSIFICATION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3110,11 +3112,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For any planar three-phase compact-perturbation minimizer of the unit Gaussian cut, each branch graph converges exponentially to its affine asymptote. The partition differs from the resulting translated and rotated tripod by finite area. No bound excluding a nonzero finite-area defect.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-INTERMEDIATE-SCALE-TRIPODS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale); EXT-PIS-NPT-PLANAR-INFINITE-AREA-CLASSIFICATION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3124,11 +3126,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** If a planar three-phase Euclidean unit Gaussian compact-perturbation minimizer has the two incident labels on their correct sides of just one pair line of its asymptotic tripod, it equals that tripod. Finite-area polarization forces reflection symmetry, and the vertical translates give an exact scalar calibration. The hypothesis remains open for unrestricted minimizers.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-INTERMEDIATE-SCALE-TRIPODS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale); EXT-PIS-NPT-PLANAR-INFINITE-AREA-CLASSIFICATION (stale); PROOF-PIS-THREE-CELL-EUCLIDEAN-JUNCTION-TEST (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3138,11 +3140,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Every origin-homogeneous three-phase planar Euclidean compact-perturbation minimizer for the unit Gaussian convolution cut is the regular tripod. A Euclidean winner partition agreeing with a tripod outside a compact set and differing on sufficiently small total area is exactly that tripod, uniformly in the support radius.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-INTERMEDIATE-SCALE-TRIPODS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale); EXT-PIS-NPT-PLANAR-INFINITE-AREA-CLASSIFICATION (stale); PROOF-PIS-THREE-CELL-EUCLIDEAN-JUNCTION-TEST (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal review. Claims are confined to the stated class and hypotheses.
 
@@ -3206,7 +3208,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 [Direct global three-cell simplex inequality through correlation 21/50](plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md)
 
-**Exact scope:** For every d>=2, every ordinary measurable Gaussian three-cell partition A with all masses 1/3, and every 0<rho<=21/50, S_rho(A)<=S_rho(T), equivalently Qtilde_rho(1_A-1_T)<=2L_rho(A;T). The new direct certificate covers [2/5,21/50]; the accepted Heilman Theorem A.1 supplies the lower interval. The planar argument is global in partition distance and uses no continuation. Maximizer existence/dimension reduction transfers it to all d>=2. The complete range 21/50<rho<1 remains unresolved.
+**Exact scope:** For every d>=2, every ordinary measurable Gaussian three-cell partition A with all masses 1/3, and every 0<rho<=21/50, S_rho(A)<=S_rho(T), equivalently Qtilde_rho(1_A-1_T)<=2L_rho(A;T). The new direct certificate covers [2/5,21/50]; the accepted Heilman Theorem A.1 supplies the lower interval. The planar argument is global in partition distance and uses no continuation. Maximizer existence/dimension reduction transfers it to all d>=2. A separate analytic result treats the near-one interval; this certificate does not address intermediate correlations.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -3248,7 +3250,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 [The entire rotation hook has a rotational-only kernel at every positive correlation for all cell counts](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md)
 
-**Exact scope:** For every k>=3 and every 0<rho<1, the entire active-space rotation-hook isotypic component V_(k-2,1,1) of the Gaussian simplex interface form is nonnegative, its kernel is precisely the single geometric rotation copy, and it has a positive L2 gap modulo that copy. The complete multiplicity space is H12-valued equivariant fields, not merely radial scalar fields. Its folded kernel is strictly entrywise positive in chamber-gap coordinates; the rotation field and positive chamber Gram matrix give positive right and left eigenfunctions. A direct L1/eigenvector argument bounds the spectrum and makes eigenvalue1 simple. The gap is at least ell*delta_(k,rho)/sqrt(1-rho^2), where delta>0 is the remaining spectral separation, not an explicitly evaluated function. The separate S60-S61 proofs now also settle the two-row block for every k>=4 and all sign blocks; standard and the remaining nonhook k>=5 sectors still need bounds.
+**Exact scope:** For every k>=3 and every 0<rho<1, the entire active-space rotation-hook isotypic component V_(k-2,1,1) of the Gaussian simplex interface form is nonnegative, its kernel is precisely the single geometric rotation copy, and it has a positive L2 gap modulo that copy. The complete multiplicity space is H12-valued equivariant fields, not merely radial scalar fields. Its folded kernel is strictly entrywise positive in chamber-gap coordinates; the rotation field and positive chamber Gram matrix give positive right and left eigenfunctions. A direct L1/eigenvector argument bounds the spectrum and makes eigenvalue1 simple. The gap is at least ell*delta_(k,rho)/sqrt(1-rho^2), where delta>0 is the remaining spectral separation, not an explicitly evaluated function. The separate S60-S66 proofs now also settle the two-row block for every k>=4 and all sign blocks; standard and the remaining nonhook k>=5 sectors still need bounds.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -3278,11 +3280,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For planar balanced near-one maximizers, all noise-length limits at bounded centers are constant partitions, halfplane pairs, or regular tripods. For aligned sequences every fixed bounded disk containing the limiting junction has exactly one triple tie for all sufficiently large indices. Its noise-length rescalings converge subsequentially in local measure and interface shape to a centered tripod, with three analytic arcs and incident angles tending to 120 degrees. Every bounded pair-tie sequence at distance much greater than the noise length from the junction has halfplane microscopic limits. Exact global Gaussian optimality near one remains open.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-UNIQUE-TRIPLE-JUNCTION (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-INTERMEDIATE-SCALE-TRIPODS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale); EXT-PIS-NPT-PLANAR-INFINITE-AREA-CLASSIFICATION (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-NOISE-LENGTH-TRIPLE-TIE-LOCALIZATION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** The written proof and its application hypotheses were internally reviewed.
 
@@ -3292,11 +3294,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each fixed R>0 sufficiently close to rho=1, every ordinary planar Gaussian partition agreeing with the central simplex outside B_(R e)(0), e=sqrt(2(1-rho)), has deficit at least c_R times the square of its changed Lebesgue area divided by e^2. No balance assumption. The bound is uniform at fixed R and does not control supports at radii that diverge in noise units.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-BOUNDED-NOISE-SCALE-COMPARISON (stale); PROOF-PIS-THREE-CELL-EUCLIDEAN-JUNCTION-TEST (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** The compact soft-profile limit and the normalized interface limit have separate mechanisms. Both are proved in the written argument.
 
@@ -3358,9 +3360,9 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 ### PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY
 
-[Explicit angular moment compatibility and its sharp local refinement](plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md)
+[Global angular moment bounds with exact arc interaction and a mass-dependent secant penalty](plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md)
 
-**Exact scope:** For every pair of three-label circular partitions and every positive angular parameter, their first moments obey the explicit closing-triple penalty Gamma(p,q) in DG26-DG28, positive for distinct interior mass profiles. Separating a*exp(-a)/I0(a) times the first cosine mode and rearranging only the monotone remainder improves the aligned-arc radial upper bound by minus integral V_rho*Gamma. The global inequality DG29 holds for every balanced ordinary planar three-cell partition at every fixed 0<rho<1, without stationarity or closeness. No claim is made that this stronger upper bound is always nonpositive. At rho=3/5 the displayed upper bound itself is positive for sufficiently small multiples of the explicit profile, so this elementary Gamma is insufficient to prove the full target. The additional matrix upper bound DG32 is available under its stated coefficient-sign hypotheses. DG8 defines a stronger globally valid positive-part matrix penalty Gamma_sharp. Its local coefficient at the balanced profile is exactly1/8 and is optimal under the first-moment closure and individual norm bounds. The same explicit small mass profile is therefore strictly worse than the simplex at rho=3/5 with arbitrary angular shapes. At rho=7/10 its corrected radial upper-bound coefficient is strictly positive, so even the sharpened separated criterion does not settle all profiles. The unrestricted global cutoff remains21/50.
+**Exact scope:** For every balanced ordinary planar three-cell partition and fixed0<rho<1, DG6 proves the global upper bound DG29 using an explicit closing-moment penalty Gamma. DG8 supplies a stronger globally valid matrix penalty Gamma_sharp, whose coefficient near balanced profiles is1/8 and is optimal under the individual norm-and-closure constraints. DG9 proves the stronger all-profile bound DG39 using the exact aligned-arc interaction B_a and the mass-dependent cosine secant coefficient c_a(p_i+q_i). These bounds require no stationarity, closeness, or arc hypothesis on the actual angular cells. The explicit profile f=exp(-t)+2exp(-16t)-21/34 strictly loses for sufficiently small multiples at1/2,3/5 and9/10, with arbitrary angular shapes. Uniform nonpositivity of these sufficient upper bounds is not asserted: the elementary criterion fails at3/5, the separated sharp-moment criterion at7/10, and the exact-arc/secant criterion at99/100 for the distinct six-exponential bounded profile in DG9. The unrestricted all-profile cutoff remains21/50.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -3368,7 +3370,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Current blockers:** none in declared routes.
 
-**Verification limits:** Internal mathematical self-audit and full directed witness run only. Exact radial integration removes the infinite numerical domain. The Gram identity and its uniform balanced expansion are written proofs; four rational cases and a rejected nonclosing input are controls, not an unrestricted verification. The corrected profile comparison does not change the global cutoff 21/50 or establish the full positive-correlation theorem. DG8 independently derives the two-dimensional matrix formula and checks the missing coefficient-sign issue using positive parts; the Procrustes primary theorem was inspected for context. The new full checker run also includes exact rho7/10. The all-rho target is still open.
+**Verification limits:** Internal proof audit and full checker run only. DG5-DG8 fixed-correlation radial coefficients use complete interval angular enclosures; DG9 coefficients use exact integral reductions and160-bit Arb evaluation with no quadrature. The new kernel majorant is proved by convexity with the required monotonicity and nonnegativity hypotheses explicit, including complements and a removable secant limit. The quantitative Christ-Iliopoulou theorem was inspected for context, not used as a mathematical premise. No independent replay, formal verification or external review is claimed.
 
 ### PIS-THREE-CELL-HALF-CORRELATION-EXPLICIT-PROFILE-COMPARISON
 
@@ -3390,11 +3392,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For any sequence of aligned planar balanced Gaussian maximizers with rho tending to one, oriented normals at all bounded winning pair ties converge uniformly to the corresponding simplex normals. About the unique bounded-region triple tie the interfaces are single analytic graphs on fixed bounded ray segments, with C1 offsets tending to zero and e^(k−1) times the kth derivatives tending to zero for k>=2. The physical compact radius is fixed.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-BOUNDED-GRAPH-ALIGNMENT (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIQUE-TRIPLE-JUNCTION (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-INTERMEDIATE-SCALE-TRIPODS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-UNIFORM-PHASE-DENSITY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MICROSCOPIC-MINIMIZERS (stale); EXT-PIS-CSV-GAUSSIAN-HALFPLANE (stale); EXT-PIS-NPT-PLANAR-INFINITE-AREA-CLASSIFICATION (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-NOISE-LENGTH-TRIPLE-TIE-LOCALIZATION (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof, with scope confined to the stated competitor class or maximizer regime.
 
@@ -3404,11 +3406,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each r0,M>0 and every rho sufficiently close to one, a planar partition changed from the central simplex by only normal graph strips supported at tangential parameters [r0,M/e] obeys strict comparison for nonzero graphs whose uniform height and Lipschitz bounds are sufficiently small depending on r0,M. The deficit bounds from below c/e times the sum of scalar tangential Mehler Dirichlet forms. The height/slope threshold is uniform in e, and no mass balance is required.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-OPEN-RAY-GRAPH-COMPARISON (stale); SRC-PIS-SCALAR-GRAPH-DEFICIT-IDENTITY (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof, with scope confined to the stated competitor class or maximizer regime.
 
@@ -3418,11 +3420,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every planar competitor at sufficiently large rho, the self-interaction of its defect exterior to physical radius R has bound C exp(−c e^2 R^2) times its exterior simplex regret. For aligned planar balanced global maximizers and R>=K0/e, the exterior regret fraction is bounded by C times this discount plus the explicit Gaussian tail tau_R. This is a relative estimate obtained by exact balancing of the truncated competitor.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-THREE-CELL-NEAR-ONE-RELATIVE-EXTREME-TAIL (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS (stale); PROOF-PIS-THREE-CELL-NEAR-ONE-PRICE-DECAY (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof, with scope confined to the stated competitor class or maximizer regime.
 
@@ -3453,6 +3455,188 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 **Current blockers:** none in declared routes.
 
 **Verification limits:** Internal derivation, primary-statement/application audit and self-review. The retained published matrix input is Theorem3 with its h-transform and normalization, not an internally inferred simplex theorem. Exact selected Gaussian moments/minor inequalities do not certify the universal source application, common-center Gaussian lift, pointwise supersolution or spectral proof. Independent mathematical review, independent replay and formal verification remain unperformed.
+
+### PIS-THREE-CELL-NEAR-ONE-BOUNDED-PHYSICAL-DEFECT-EXCLUSION
+
+[No bounded physical defect at an actual near-one maximizer](plurality-stability/THREE_CELL_NEAR_ONE.md)
+
+**Exact scope:** For every fixed physical R<infinity, an actual balanced planar global maximizer at sufficiently large rho that agrees with a central labeled simplex outside B_R is that simplex. Analytic score equalities on the exterior rays force all score prices equal and the triple tie at the origin, after which the unique bounded-region graphs coincide with the reference rays. This does not address general competitors fixed outside B_R.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal review and explicit scope.
+
+### PIS-THREE-CELL-NEAR-ONE-MOVING-CORE-CONTROL
+
+[Relative control at a moving near-one Gaussian junction](plurality-stability/THREE_CELL_MOVING_JUNCTION.md)
+
+**Exact scope:** For aligned planar balanced near-one global maximizers, the weighted noise-sized part of the local graph deformation and e times squared vertex displacement are bounded by fixed-chart local sector edge forms and e times the total-speed L2 norm, up to an exponentially small relative discrepancy term. No restriction on p/e and no prescribed shape of the exterior labels.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal review and explicit scope.
+
+### PIS-THREE-CELL-NEAR-ONE-CONICAL-TUBE-EXTERIOR-COMPARISON
+
+[Strict Gaussian exterior comparison in conical ray tubes near one](plurality-stability/THREE_CELL_EXTERIOR_TUBES.md)
+
+**Exact scope:** For narrow fixed conical tubes along the three simplex rays beyond a large fixed physical R, every distinct ordinary planar partition agreeing with the simplex off the tubes strictly loses for correlations sufficiently close to one. Arbitrary labels and measurable tube changes of unbounded radial support are allowed, with no volume constraints. The disjoint complementary comparison for exterior changes uniformly separated from reference interfaces also holds, without a combined seam estimate.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal review and explicit scope.
+
+### PIS-THREE-CELL-RADIAL-CORE-NECESSITY-AT-TIE
+
+[A radial core is necessary for a nonsimplex tie at fixed correlation](plurality-stability/THREE_CELL_RADIAL_MASS_CONCENTRATION.md)
+
+**Exact scope:** At each fixed positive rho, a balanced planar ordinary partition with stability at least the simplex must either be a simplex or have at least c(1−rho^2) of its squared radial mass deviation inside a finite centered radius R(rho). Explicit residual multipliers bound defects from the centered-arc comparison for every width, with sharper exponential control for interior widths.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal review and explicit scope.
+
+### PIS-THREE-CELL-NEAR-ONE-RADIAL-AMPLITUDE-CONCENTRATION
+
+[Radial amplitude must concentrate in any nonsimplex near-one sequence](plurality-stability/THREE_CELL_RADIAL_MASS_CONCENTRATION.md)
+
+**Exact scope:** For every fixed K>0, sufficiently near rho=1, all balanced planar partitions with radial squared-error norm H sufficiently small and radial L-infinity error M<=K H satisfy strict simplex comparison unless they are a simplex. No profile derivative or arc hypothesis. Along any aligned nonsimplex sequence of actual near-one maximizers H tends to zero and M/H tends to infinity.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal review and explicit scope.
+
+### PIS-ALL-CELL-COMPRESSED-IMMANANT-KERNELS
+
+[Every simplex symmetry block has a nonnegative compressed-immanant kernel](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md)
+
+**Exact scope:** For every k>=3, every 0<rho<1 and every irreducible S_k type lambda, the full ordered-chamber multiplicity space is L2(W;V_lambda^-), where V_lambda^- is the (12)-minus space. Its exact unnormalized interaction kernel is 2*Gamma*exp(tau*x2*y2)*P_lambda*R_lambda(Z(A))*P_lambda, with A=(exp(tau*xi*yj))_(i,j=2,...,k) and Z(A)=sum product A_(i,pi(i))*pi^-1. The group-algebra factorization sum_g(d.gd)*exp(tau*x.gy)*g=(1-(12))*W1*(1-(12)) fixes the factor2. In a fixed orthonormal Young basis every entry of every block kernel is nonnegative: A is strictly TP, its group-algebra sum lies in the interval-symmetrizer cone, interval symmetrizers act by nonnegative matrices, and P_lambda is diagonal0/1. This is pointwise entry positivity, not a claim that the normalized spectrum lies below1 or that remaining blocks are stable. The standard unbalanced translation eigenvalue is1/rho>1.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal primary-statement/application audit and exact bounded controls only. The universal pointwise positivity uses the retained external interval-cone and Young-form statements plus the written projection proof. Finite Coxeter/group-algebra checks do not certify the all-k inputs or any spectral-gap bound. Independent mathematical review, independent replay and formal verification remain unperformed.
+
+### PIS-THREE-CELL-NEAR-ONE-ACTUAL-EXTERIOR-CONFINEMENT
+
+[Exact exterior angular confinement of actual near-one maximizers](plurality-stability/THREE_CELL_NEAR_ONE.md)
+
+**Exact scope:** For every fixed tube aperture and every sequence of planar balanced global maximizers aligned to the simplex as rho tends to one, all sufficiently late members agree with the simplex beyond a fixed physical radius except in the three conical interface tubes.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal review and explicit scope.
+
+### PIS-THREE-CELL-NEAR-ONE-UNRESTRICTED-GROWING-EXTERIOR
+
+[Strict comparison for arbitrary changes outside a growing Gaussian radius](plurality-stability/THREE_CELL_EXTERIOR_TUBES.md)
+
+**Exact scope:** Uniformly near rho=1, with e=sqrt(2(1-rho)), any ordinary planar partition agreeing with the central simplex in a disk of radius R>=K e^(-1/3) has simplex deficit at least c min(e^2 R^2,1) times its linear regret. There is no balance or angular support hypothesis.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof with internal review and explicit scope.
+
+### PIS-ALL-CELL-STANDARD-MASS-SCHUR-CRITERION
+
+[The standard gap requires both spectral separation and the correct mass weight](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md)
+
+**Exact scope:** For every k>=3 and 0<rho<1, on the complete standard multiplicity space let T=a^(-1/2)Kstd*a^(-1/2), psi=sqrt(a), e=psi/||psi||, b=1/sqrt(a), b1=<b,e>>0, bperp=b-b1*e, c=1/rho-1 and lambda*=sup spec(T on e-perp). The row identity makes 1/rho the simple largest eigenvalue. The strictly positive ordinary-nu-mean-zero standard gap S51 is equivalent to lambda*<1 and c*<bperp,((I-T)|e-perp)^(-1)bperp><b1^2. If beta=c*<bperp,A^(-1)bperp>/b1^2<1 and delta=1-lambda*>0, the standard interface gap is at least mu*(1-beta)*delta*b1^2/||b||^2. Equivalently the second condition is <b,(I-T)^(-1)b><0 once the first holds. Neither condition is established here for every higher-cell simplex and correlation. An exact two-atom positive kernel with row a/rho and normalized eigenvalues 2,3/4 nevertheless has negative ordinary-balanced form -1/2; this refutes discarding the second condition, not simplex stability.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The equivalence is a written proof using the standard kernel row identity, compactness and elementary rank-one constrained inertia. The checker proves only the explicit two-atom identities. The all-k full-interface theorem remains open.
+
+### PIS-ALL-CELL-STANDARD-HOOK-GAUSSIAN-IDENTITIES
+
+[All-cell Gaussian identities link the standard and rotation-hook kernels](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md)
+
+**Exact scope:** For every k>=3 and 0<rho<1, and every C1 function h on H=1-perp intersect {y1=y2}, invariant under labels3,...,k, with h and its first derivatives at most polynomially growing, the full-facet standard and rotation-hook kernels satisfy K_hook(yh)=sigma^2*K_hook(grad h) +rho*x*K_std h and grad(K_std h)=rho*K_hook(grad h) +rho/sigma^2*sum_l w_l R_l h, where R_l h integrates the adjacent Mehler kernel times (y2-yl)h. Here w_l=(e1+e2)/2-el, D_l=I-w_l*w_l^T is tangent compression of (2l), and C_l=I-2*w_l*w_l^T=D_l^(-1) is the hook transport. On y2=yl the self and l terms annihilate the outward normal; the other boundary terms cancel under (lr), using C_r w_l=w_l-w_r and (2r)y=(2l)(lr)y on that face. Gaussian decay justifies integration by parts. At h=1 these identities recover K_hook y=a*x and grad a=rho^2/sigma^2*sum_l w_l R_l1. The derivative of (a-K_std)h has the explicit residual -rho/sigma^2*sum_l w_l(R_l h-rho*h*R_l1); no favorable sign or arbitrary-correlation standard gap is asserted.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** The universal identities are written analytic arguments for the stated regularity and growth class. Exact finite controls through k=8 verify only the matrix inverse, boundary annihilation and paired permutation identities. The residual sign and the remaining standard gap are open.
+
+### PIS-THREE-CELL-NEAR-ONE-EXACT-OPTIMALITY
+
+[Exact balanced three-cell simplex optimality near correlation one](plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md)
+
+**Exact scope:** There is a qualitative rho_*<1 independent of dimension. For rho_*<rho<1 and every d>=2, the central regular simplex globally maximizes Gaussian noise stability among ordinary measurable three-cell partitions with all masses 1/3, and equality is rigid up to rotations, labels and null sets.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Analytic proof with internal mathematical review. No external mathematical review or formal verification.
+
+### PIS-THREE-CANDIDATE-DISCRETE-NEAR-ONE
+
+[Balanced low-influence three-candidate plurality is stablest near correlation one](plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md)
+
+**Exact scope:** For each fixed rho in the near-one interval and epsilon>0 there are D and tau>0, uniform in the number of voters, such that any uniform ternary simplex-valued rule with means 1/3 and all degree-D coordinate influences at most tau has stability at most limiting ternary plurality stability plus epsilon. Each vote is independently retained with probability rho and otherwise resampled uniformly.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Analytic proof with internal mathematical review. No external mathematical review or formal verification.
+
+### PIS-THREE-CELL-STRICT-FAILURE-INTERVAL-TIED-ENDPOINTS
+
+[Both endpoints of a strict three-cell failure interval have nonsimplex ties](plurality-stability/THREE_CELL_NEAR_ONE_EXACT.md)
+
+**Exact scope:** If any positive correlation has strict global suboptimality of the balanced three-cell simplex, every connected component (a,b) of that strict failure set satisfies 21/50<a<b<1 and admits nonsimplex balanced global ties at both endpoints. This does not assert existence of any strict failure or exclude isolated tied maxima.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Analytic proof with internal mathematical review. No external mathematical review or formal verification.
 
 ### Supporting statements and targets
 
@@ -6119,12 +6303,13 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 - **GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER** (mathematical; open): For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity.
 - **GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY** (mathematical; open): For every fixed k>=3 prove or refute existence of epsilon_k>0 such that all balanced Gaussian partitions in d>=k-1 have stability at most the regular simplex for 1-epsilon_k<rho<1, with equality rigidity. Quantitative multi-bubble stability must be paired with nonlocal errors relative to moving competitors; the fixed-partition perimeter limit and fixed-b<1 exterior estimates do not settle this statement.
 - **GAP-PIS-NORMALIZED-DEFICIT-MONOTONICITY** (mathematical; falsified): The candidate universal law says rho -> (S_rho(T)-S_rho(A))/arccos(rho) is nondecreasing on (0,1) for every fixed balanced finite-Gaussian-perimeter k-cell partition A in d>=k-1. FALSIFIED already for k=3,d=2 by the three slabs D5: D9 gives c+beta3*acos(rho)+O(acos(rho)^2), above its limit c near one. This falsifies this precise candidate, not every normalized law or simplex optimality.
-- **GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY** (mathematical; open): For every d>=2, every 0<rho<1 and every ordinary balanced Gaussian three-cell partition A, prove Qtilde_rho(1_A-1_T)<=2L_rho(A;T). By exact quadratic expansion this is global three-cell Gaussian simplex optimality. A new direct computer-assisted proof now establishes every balanced competitor for 0<rho<=21/50; the interval 21/50<rho<1 remains open. In the active plane the exact remaining comparison is R_rho<=D_rho+C_rho. Equal circular masses are settled at every positive correlation. Dropping C_rho cannot establish the full statement near one. DG5 now proves that the optional scalar positive radial norm estimate itself fails at rho=1/2. DG6 supplies the explicit nonlinear angular moment-closure correction DG29, and DG7 handles one nontrivial circular-mass profile at rho=1/2. Uniform control over all profiles above 21/50 remains open. The assertion that the elementary corrected radial upper bound DG29 is always nonpositive is now separately falsified at rho=3/5, so further information is required. DG8 optimizes the first-moment norm-and-closure penalty near balanced profiles, with coefficient1/8, and repairs that explicit profile at3/5. At7/10 even its resulting separated upper bound is positive. The full target is unchanged and needs angular information beyond this particular first-moment separation.
+- **GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY** (mathematical; open): For every d>=2, every0<rho<1 and every ordinary balanced Gaussian three-cell partition A, prove Qtilde_rho(1_A-1_T)<=2L_rho(A;T). This is equivalent to global three-cell Gaussian simplex optimality. DG4 proves all balanced competitors for0<rho<=21/50 by a direct computer-assisted radial certificate. The full range21/50<rho<1 remains open. Equal circular masses are settled at every positive correlation; the exact planar obligation is R_rho<=D_rho+C_rho. DG5 excludes the scalar radial sufficient estimate at1/2. DG6 and DG8 retain moment closure; DG9 further retains the exact arc interaction and improves its cosine coefficient by a mass-dependent secant majorant. These are globally valid upper bounds and give restricted-profile comparisons through9/10, but their sufficient uniform nonpositivity criteria fail at the explicitly certified profiles/correlations, most recently DG39 at99/100. More joint angular information remains necessary for this route.
 - **GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL** (mathematical; open): For every 0<rho<1 and d>=2 prove global simplex Gaussian optimality for measurable partitions of masses 1/3 with equality rigidity, then obtain the balanced low-influence discrete plurality corollary. A first global endpoint must be greater than 21/50 and, if below one, have a nonsimplex tied global maximizer.
-- **GAP-PIS-EUCLIDEAN-THREE-LABEL-JUNCTION-RIGIDITY** (mathematical; stale): Every planar compact-perturbation minimizer of the unit Euclidean Gaussian convolution cut with three nonempty phases is a regular tripod up to an isometry, labels and null sets. The affine asymptotes and exponential tails reduce it to strict finite-area comparison.
+- **GAP-PIS-EUCLIDEAN-THREE-LABEL-JUNCTION-RIGIDITY** (mathematical; proved / discharged): Every planar compact-perturbation minimizer of the unit Euclidean Gaussian convolution cut with three nonempty phases is a regular tripod up to an isometry, labels and null sets. The affine asymptotes and exponential tails reduce it to strict finite-area comparison.
 - **GAP-PIS-POSITIVE-RADIAL-SCALAR-ALL-CORRELATION** (mathematical; falsified): The assertion that <f,Kplus_rho f> <=2 integral Jplus_rho*f^2 dnu for every 0<rho<1 and every bounded mean-zero f in L2(exp(-t)dt) is false. The explicit f=exp(-t)+2exp(-16t)-21/34 at rho=1/2 has quotient>2.07. Additive centering cannot change its quadratic form. This falsifies an optional sufficient method beyond its source range, not any Gaussian partition inequality or Heilman Theorem A.1.
 - **GAP-PIS-EXPLICIT-GAMMA-CRITERION-ALL-CORRELATION** (mathematical; falsified): The assertion that the right side of DG29, with the explicit Gamma of DG26, is nonpositive for every balanced circular mass profile and every 0<rho<1 is false. At rho=3/5, profiles p(sqrt(2t))=1/3+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34) are feasible and balanced for small epsilon, and the right side divided by 2epsilon^2 tends to a number in [0.0038888594281296417,0.0043384122595988344]. This does not refute the valid upper bound DG29 or simplex optimality.
 - **GAP-PIS-SHARP-FIRST-MOMENT-CRITERION-ALL-CORRELATION** (mathematical; falsified): The assertion that DG29 with Gamma replaced by the explicit Gamma_sharp of DG34 is nonpositive for all balanced profiles and every0<rho<1 is false. For rho7/10 and p(sqrt(2t))=1/3+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34), its right side divided by2epsilon^2 tends to a value in[0.012105848280513554,0.012685028889351772]. DG8 proves that this penalty is exact among first-moment norm-and-closure constraints near balanced profiles. This does not refute DG29 as an upper bound, or the original Gaussian inequality.
+- **GAP-PIS-EXACT-ARC-SECANT-CRITERION-ALL-CORRELATION** (mathematical; falsified): The assertion that the explicit all-profile upper bound E_rho(p) in DG39 is nonpositive for every balanced profile and every0<rho<1 is false. At99/100 let g(t)=sum n_j*(exp(-lambda_j*t)-1/(1+lambda_j))/1000 with lambda(1,4,16,64,256,1024), n(27,37,74,181,145,1000). It is bounded by183/125 and exactly mean zero. The feasible balanced profiles p=1/3+epsilon*(1,-1,0)*g have E_rho(p)/(2epsilon^2) tending to a value in[1.202983953209141e-6,1.2029839532091414e-6]. This refutes a sufficient criterion, not DG39 as an upper bound or simplex optimality.
 
 Tracked obligations from the catalogue:
 
@@ -10740,6 +10925,118 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Written prime-divisor lift, rational coefficient field and residue arguments with exact replay of the double- and triple-root signed brackets.
 
+### JAC-SEXTIC-KELLER-SQUARE-CUSP-ZERO-AXIAL-SLOPE-SCALAR-REDUCTION
+
+[The zero-slope square cusp reduces to a binary or repeated affine scalar](jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md)
+
+**Exact scope:** For k=e=delta=0, a noninvertible square-cusp completion has a binary third output of y-degree two or three, or third output alpha*(x-zeta)^2*z+h with h of y-degree at most two and h restricted to x=zeta constant. The y-coefficients are divisible by (x-zeta)^2 and the derivative in x on that plane is a nonzero scalar.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written weighted comparison, affine-coefficient residue analysis, and bounded fibre completion.
+
+### JAC-SEXTIC-KELLER-SQUARE-CUSP-BINARY-SCALAR-EXCLUSION
+
+[The remaining binary scalar in the zero-slope square cusp is excluded](jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md)
+
+**Exact scope:** In the k=e=delta=0 sector a completion whose third output h is binary is invertible. A noninvertible completion would force its first axial coefficient to be (x-zeta)^3. The twisted differential dx/((x-zeta)*h_y) on the generic level has a nonzero residue even when h is constant on x=zeta.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written constant-field and generic-fibre residue proof with exact residue replay.
+
+### JAC-SEXTIC-KELLER-SQUARE-CUSP-REPEATED-AFFINE-EXCLUSION
+
+[The repeated affine scalar in the zero-slope square cusp is excluded](jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md)
+
+**Exact scope:** The repeated affine-coefficient residual scalar has no Keller completion in the zero-slope square cusp. The formal residue forces the leading y-coefficient of the first mate to be a pure cube in the repeated root parameter. The signed generic-level bracket excludes the last quartic mate.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written critical-plane, cyclic differential and signed-weight proof with exact monomial and bracket replay.
+
+### JAC-SEXTIC-KELLER-SQUARE-CUSP-INVERSION
+
+[Sextic Keller maps in the cubic-outer square cusp are invertible](jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md)
+
+**Exact scope:** Every characteristic-zero sextic Keller map with ordinary highest tuple (P^3,P*x^4,x^6), P=x*z+y^2, is invertible, including the k=e=delta=0 sector.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written combination of the complete square-cusp case split and its generic-fibre exclusions.
+
+### JAC-SEXTIC-KELLER-TANGENT-CONIC-CUBIC-OUTER-INVERSION
+
+[Cubic outer maps on a tangent-conic pencil force sextic inversion](jacobian/monodromy-theory/SEXTIC_KELLER_SQUARE_CUSP_WEIGHTED_DESCENT.md)
+
+**Exact scope:** A characteristic-zero three-variable Keller map of ordinary degree six is invertible when its highest tuple consists of three independent basepoint-free binary cubics on a tangent-conic pencil (x*z+y^2,x*y) or (x*z+y^2,x^2) in an affine source frame over the algebraic closure.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written combination of the normal-form classification and the complete square-cusp inversion.
+
+### JAC-SEXTIC-KELLER-644-ALIGNED-LINEAR-POWERS-INVERSION
+
+[The aligned quartic and sextic powers force a weighted-square coordinate](jacobian/monodromy-theory/SEXTIC_KELLER_644_CLOSED_QUARTIC_RATIO.md)
+
+**Exact scope:** For a characteristic-zero Keller map with ordinary highest forms x^4,x^6,C, where C is quartic, C(0,y,z) is nonzero, and C/x^4 is a closed projective parameter, the quartic has a polynomial coordinate completion with inverse degree at most four and the map is invertible. The least-weight mixed correction is impossible. The fourth and sixth edge coefficients force the weighted square.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written Laurent filtration argument with exact support and binomial coefficient checks.
+
+### JAC-SEXTIC-KELLER-644-CLOSED-QUARTIC-RATIO-INVERSION
+
+[Profile (6,4,4) with coprime quartics and closed ratio is invertible](jacobian/monodromy-theory/SEXTIC_KELLER_644_CLOSED_QUARTIC_RATIO.md)
+
+**Exact scope:** A three-variable characteristic-zero Keller map of ordinary component degrees (6,4,4) is invertible when the two quartic highest forms are coprime and their projective ratio is closed over the algebraic closure. Generic squarefree members can be chosen in the lower pencil. The pure powers reduction then applies.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written reduction using squarefree pencil members and aligned linear powers.
+
+### JAC-SEXTIC-KELLER-644-REDUCED-CONIC-LINEAR-TERM-EXCLUSION
+
+[The reduced tangent-conic quartic pencil has no linear term in its singular member](jacobian/monodromy-theory/SEXTIC_KELLER_MIXED_DEGREE_LEADING_REDUCTIONS.md)
+
+**Exact scope:** In the sextic (6,4,4) conic-pencil frame p=x*z+y^2,q=x*y with quartic highest forms p^2,q^2, the coefficient of p^2*q in the sextic highest form is zero. The protected x=0 and y=0 valuations obstruct a common rational slice for the sextic and p^2 if that coefficient is nonzero.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof by comparison of the two protected divisorial orders over q=0.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -11161,7 +11458,7 @@ Tracked obligations from the catalogue:
 - **GAP-JAC-PLANE-SIX-SHEET-ADMISSION** (mathematical; open): Exclude actual polynomial plane Keller maps of generic sheet degree six. Retain the refined S6 and A6 affine cusp profiles and the full normalization. The two saturated S6 profiles and the A6 case with two unramified primes require nonabelian Orevkov invariant. With one unramified prime A6 requires a unique A1 source singularity over an ordinary cusp, and with zero its sole intrinsic cusp is (2,5). All cases have no proper intermediate field. In the smooth six-sheet cases, the S₆ directional bounds are 7, 7 and 8, with weighted total-degree bounds 8, 8 and 9. A sole-transposition exceptional fold has original longitudinal degree at least 48. The immersed sole-transposition slice strengthens the fold bound to 60, with restriction degrees (8,10) at equality. The immersed A₆ sole 3-cycle branch has composite width at least six and genus at least two. At width six the remaining genus and pole-count pairs are (2,4) and (3,2). In both cuspidal alternating profiles, every width is composite and at least six, the ordinary degree of the ramified curve is at least eight, and no polynomial target frame has coprime widths. The singular width-five genus-two profile is excluded. Marked admission of the mixed symmetric elliptic slices remains open.
 - **GAP-JAC-QUINTIC-INDEPENDENT-LEADING-COMPLETION** (mathematical; proved / discharged): In characteristic zero no polynomial Keller map has degree-five leading vector (z⁵,z³q,zq²), q=x²+yz.
 - **GAP-JAC-QUINTIC-DEPENDENT-QUARTIC-COMPLETION** (mathematical; proved / discharged): Every degree-five three-variable Keller map over a characteristic-zero field is invertible.
-- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION** (mathematical; open): Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). The cubic-outer square-cusp sector with k nonzero is invertible. For e nonzero the exceptional constant affine-scalar plane is excluded by its planar degree pair. For e=0 the third component is affine in z. Two affine outputs give a bounded fibre completion; a quadratic middle output is excluded in the noninvertible branch by a residue and a signed weight on the generic fixed-third fibre. The k=0 sector is also invertible when e is nonzero, by axial descent to an affine middle output and the simple-component residue obstruction to its transverse parameter. For k=e=0 the (2,3,5) tuple is uncorrected and at (2,3,6) it is (x^3*z^3,x^5*z+sigma*x^2*z^2,x^6+delta*x^3*z). In particular the first and third z-degrees are 3 and at most 1. The k=e=0 sector with delta nonzero is invertible by the prime-support lift and the affine-coefficient residue analysis. The residual cubic-outer square cusp has k=e=delta=0. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled square-member frame with ordinary tuple (x^2*P^2,x^4*P,x^6) is invertible. The remaining axial weight-five corrections are excluded by the transverse lift, and the final transverse degree argument forces a bounded coordinate completion or a squarefree-factor contradiction. The third axial residue excludes the nonbinary smooth-common-factor branch. Together with the binary inversion theorem and the other exclusions, this proves inversion for all quadratic outer maps on a tangent-conic pencil. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven. In the shared nonbinary axial frame the leading-field differentials and the first ordinary axial correction are exact. The second correction requires the two recorded scalar residue equations.
+- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION** (mathematical; open): Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The last cubic case in the classification has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). The cubic-outer square-cusp sector with k nonzero is invertible. For e nonzero the exceptional constant affine-scalar plane is excluded by its planar degree pair. For e=0 the third component is affine in z. Two affine outputs give a bounded fibre completion; a quadratic middle output is excluded in the noninvertible branch by a residue and a signed weight on the generic fixed-third fibre. The k=0 sector is also invertible when e is nonzero, by axial descent to an affine middle output and the simple-component residue obstruction to its transverse parameter. For k=e=0 the (2,3,5) tuple is uncorrected and at (2,3,6) it is (x^3*z^3,x^5*z+sigma*x^2*z^2,x^6+delta*x^3*z). In particular the first and third z-degrees are 3 and at most 1. The k=e=0 sector with delta nonzero is invertible by the prime-support lift and the affine-coefficient residue analysis. The final k=e=delta=0 cases are settled by excluding the binary and repeated affine third outputs. Thus every tangent-conic cubic outer map in the stated class is invertible. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled square-member frame with ordinary tuple (x^2*P^2,x^4*P,x^6) is invertible. The remaining axial weight-five corrections are excluded by the transverse lift, and the final transverse degree argument forces a bounded coordinate completion or a squarefree-factor contradiction. The third axial residue excludes the nonbinary smooth-common-factor branch. Together with the binary inversion theorem and the other exclusions, this proves inversion for all quadratic outer maps on a tangent-conic pencil. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case or when the projective quartic ratio is closed. The closed-ratio case passes through (x^6,x^4,C) and the first weighted square. The coprime nonbinary case with nonclosed ratio reduces to quadratic outer forms on a closed conic pencil. In the reduced tangent-conic frame, the p^2*q term of the sextic vanishes. Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven. In the shared nonbinary axial frame the leading-field differentials and the first ordinary axial correction are exact. The second correction requires the two recorded scalar residue equations.
 
 Tracked obligations from the catalogue:
 
@@ -11177,7 +11474,7 @@ Tracked obligations from the catalogue:
 - **GAP-JAC-INDEX-FOUR-WEIGHTED-GRADES-104-206 — mathematical; open.** [Do all 103 weighted cubic Engel classes U_104 through U_206 vanish? One certified nonzero class gives an exact-index-four counterexample to the proposed degree ceiling 207.](jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md)
 - **GAP-JAC-BGV-UNRESTRICTED-WITT-DEGREE-GROWTH — mathematical; open.** [Does every common degree cap eventually fail for unrestricted lifts of the odd-prime BGV seed?](jacobian/mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md)
 - **GAP-JAC-PLANE-SIX-SHEET-ADMISSION — mathematical; open.** [Exclude actual polynomial plane Keller maps of generic sheet degree six. Retain the refined S6 and A6 affine cusp profiles and the full normalization. The two saturated S6 profiles and the A6 case with two unramified primes require nonabelian Orevkov invariant. With one unramified prime A6 requires a unique A1 source singularity over an ordinary cusp, and with zero its sole intrinsic cusp is (2,5). All cases have no proper intermediate field. In the smooth six-sheet cases, the S₆ directional bounds are 7, 7 and 8, with weighted total-degree bounds 8, 8 and 9. A sole-transposition exceptional fold has original longitudinal degree at least 48. The immersed sole-transposition slice strengthens the fold bound to 60, with restriction degrees (8,10) at equality. The immersed A₆ sole 3-cycle branch has composite width at least six and genus at least two. At width six the remaining genus and pole-count pairs are (2,4) and (3,2). In both cuspidal alternating profiles, every width is composite and at least six, the ordinary degree of the ramified curve is at least eight, and no polynomial target frame has coprime widths. The singular width-five genus-two profile is excluded. Marked admission of the mixed symmetric elliptic slices remains open.](jacobian/monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md)
-- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION — mathematical; open.** [Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). The cubic-outer square-cusp sector with k nonzero is invertible. For e nonzero the exceptional constant affine-scalar plane is excluded by its planar degree pair. For e=0 the third component is affine in z. Two affine outputs give a bounded fibre completion; a quadratic middle output is excluded in the noninvertible branch by a residue and a signed weight on the generic fixed-third fibre. The k=0 sector is also invertible when e is nonzero, by axial descent to an affine middle output and the simple-component residue obstruction to its transverse parameter. For k=e=0 the (2,3,5) tuple is uncorrected and at (2,3,6) it is (x^3*z^3,x^5*z+sigma*x^2*z^2,x^6+delta*x^3*z). In particular the first and third z-degrees are 3 and at most 1. The k=e=0 sector with delta nonzero is invertible by the prime-support lift and the affine-coefficient residue analysis. The residual cubic-outer square cusp has k=e=delta=0. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled square-member frame with ordinary tuple (x^2*P^2,x^4*P,x^6) is invertible. The remaining axial weight-five corrections are excluded by the transverse lift, and the final transverse degree argument forces a bounded coordinate completion or a squarefree-factor contradiction. The third axial residue excludes the nonbinary smooth-common-factor branch. Together with the binary inversion theorem and the other exclusions, this proves inversion for all quadratic outer maps on a tangent-conic pencil. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.](jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md)
+- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION — mathematical; open.** [Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The last cubic case in the classification has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). The cubic-outer square-cusp sector with k nonzero is invertible. For e nonzero the exceptional constant affine-scalar plane is excluded by its planar degree pair. For e=0 the third component is affine in z. Two affine outputs give a bounded fibre completion; a quadratic middle output is excluded in the noninvertible branch by a residue and a signed weight on the generic fixed-third fibre. The k=0 sector is also invertible when e is nonzero, by axial descent to an affine middle output and the simple-component residue obstruction to its transverse parameter. For k=e=0 the (2,3,5) tuple is uncorrected and at (2,3,6) it is (x^3*z^3,x^5*z+sigma*x^2*z^2,x^6+delta*x^3*z). In particular the first and third z-degrees are 3 and at most 1. The k=e=0 sector with delta nonzero is invertible by the prime-support lift and the affine-coefficient residue analysis. The final k=e=delta=0 cases are settled by excluding the binary and repeated affine third outputs. Thus every tangent-conic cubic outer map in the stated class is invertible. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled square-member frame with ordinary tuple (x^2*P^2,x^4*P,x^6) is invertible. The remaining axial weight-five corrections are excluded by the transverse lift, and the final transverse degree argument forces a bounded coordinate completion or a squarefree-factor contradiction. The third axial residue excludes the nonbinary smooth-common-factor branch. Together with the binary inversion theorem and the other exclusions, this proves inversion for all quadratic outer maps on a tangent-conic pencil. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case or when the projective quartic ratio is closed. The closed-ratio case passes through (x^6,x^4,C) and the first weighted square. The coprime nonbinary case with nonclosed ratio reduces to quadratic outer forms on a closed conic pencil. In the reduced tangent-conic frame, the p^2*q term of the sextic vanishes. Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.](jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md)
 
 ## Hessian and Schur reductions
 
@@ -29499,9 +29796,9 @@ Tracked obligations from the catalogue:
 
 ### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-HIGH-ROOT-PURE-CUBE
 
-[The multiplicity-26 two-flow mate reduces to a single cube](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md)
+[The multiplicity-26 and multiplicity-30 Weyl edges both have a pure cube mate](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md)
 
-**Exact scope:** For the (12,18) multiplicity-26 branch with a small root, ordinary polynomial normalization gives Q=(P^(3/2))_+ with nonzero scalar commutator. If e=2 the high-root edge excludes all three odd fourth-root terms.
+**Exact scope:** For the (12,18) edge at a root of multiplicity 26 or 30, polynomial target normalization gives Q=(P^(3/2))_+ with nonzero scalar commutator. Any other fractional term would force a commuting face of higher differential order.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
 
@@ -29509,7 +29806,7 @@ Tracked obligations from the catalogue:
 
 **Current blockers:** none in declared routes.
 
-**Verification limits:** Written derivation with internal symbolic and arithmetic controls.
+**Verification limits:** Written proof by rational fractional-power cancellation and the first translated weight.
 
 ### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-HIGH-ROOT-ODD-LOW-MULTIPLICITY-EXCLUSION
 
@@ -29709,9 +30006,9 @@ Tracked obligations from the catalogue:
 
 ### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-MULTIPLICITY-TWENTY-SIX-EXCLUSION
 
-[Newton-face descent excludes the multiplicity-26 Weyl branch with a small root](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md)
+[Newton-face descent excludes every multiplicity-26 root in the (12,18) Weyl row](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md)
 
-**Exact scope:** A characteristic-zero polynomial scalar-commutator Weyl pair of reduced orders (12,18) cannot have a common leading factor with a geometric root of multiplicity 26 and another root of multiplicity less than six. In particular at common-factor degree thirty only the single multiplicity-thirty root remains in this row.
+**Exact scope:** A characteristic-zero polynomial scalar-commutator Weyl pair of reduced orders (12,18) cannot have a common leading factor with a geometric root of multiplicity 26, regardless of the other roots.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
 
@@ -29719,7 +30016,91 @@ Tracked obligations from the catalogue:
 
 **Current blockers:** none in declared routes.
 
-**Verification limits:** Written proof by the exact order-nine commutator, the first competing signed Newton face, its rational differential equation, and the commutator weight bound at (-1,4).
+**Verification limits:** Written Newton-face descent starting from the order-nine even face without a small-root hypothesis.
+
+### DIX-PLANE-NEGATIVE-DEGREE-HAMILTONIAN-SLICE-INTERPOLATION
+
+[Root interpolation for negative-degree mixed Hamiltonian slices](dixmier/dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md)
+
+**Exact scope:** For primitive strictly mixed weights of positive sum and negative degree, the toric exponents are positive. Removing the integral exponents gives a unique triangular Laurent match at infinity unless no nonintegral exponents remain. Rational slice existence is equivalent to the stated root evaluations of the matched polynomial. The criterion allows any number of roots and any positive multiplicities.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof by the signed toric equation, resonant divisors and triangular matching at infinity.
+
+### DIX-PLANE-NEGATIVE-DEGREE-HAMILTONIAN-SLICE-SATURATED-ROOTS
+
+[An explicit root-position criterion when the negative-degree pole bound is saturated](dixmier/dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md)
+
+**Exact scope:** If all finite nonzero root exponents are nonintegral and the number of distinct roots is the integral endpoint exponent, the slice exists exactly when the displayed evaluations of the derivative of the reduced root polynomial hold. For equal multiplicities the reduced root polynomial is u^n plus a nonzero constant.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof by polynomial interpolation on every distinct root and the forced leading coefficient.
+
+### DIX-POLYNOMIAL-WEYL-FRACTIONAL-POWER-MATE
+
+[Differential order determines the fractional powers in a scalar mate](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md)
+
+**Exact scope:** For a polynomial Weyl pair over an algebraically closed characteristic-zero field with ord P=a*g>=2, ord Q=b*g and lc P=h^a, set e=gcd(g,root multiplicities of h), or e=g for constant h. The mate is a constant linear combination of the nonnegative parts of the powers P^(j/(a*e)), 0<=j<=b*e. There is no small-root hypothesis.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written rational pseudodifferential order cancellation above the scalar commutator.
+
+### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-HIGH-ROOT-EVEN-FACE
+
+[The even multiplicity-26 branch has a fixed order-nine Weyl face](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md)
+
+**Exact scope:** In the (12,18) multiplicity-26 branch with e=2, subtracting an order minus six commuting remainder if present leaves order minus nine. The order-nine polynomial resultant has weight fifteen and the displayed fixed polynomial top face. No small root is required.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written leading-order comparison and exact one-variable face equation.
+
+### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-MULTIPLICITY-THIRTY-POWER
+
+[A multiplicity-thirty root forces a single root in reduced orders (12,18)](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md)
+
+**Exact scope:** At a multiplicity-thirty root in reduced orders (12,18), the polynomial resultant W=Q^2-P^3+2cP has weight and differential order eleven. This forces e=6, so h is a sixth power and has only one root, of multiplicity thirty.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written weight comparison and forced vanishing orders at the roots of the common face.
+
+### DIX-POLYNOMIAL-WEYL-ORDER-TWELVE-EIGHTEEN-RATIONAL-EXCLUSION
+
+[The reduced (12,18) Weyl branch is excluded over the rationals](dixmier/dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md)
+
+**Exact scope:** No proper polynomial Weyl pair over Q can have reduced orders (12,18). More generally this row is excluded over any characteristic-zero field in which neither of the two displayed cubics has a root. The translated (6,30) edge forces a root of one of those cubics in the field of coefficients.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written root-field reduction with exact elimination and irreducibility modulo eleven.
 
 ### Supporting statements and targets
 
@@ -31673,7 +32054,7 @@ Tracked obligations from the catalogue:
 
 **Topic scope:** Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)). A common-kernel-gcd refined square-quotient weight gives another coefficient-uniform actual C6 tail, with an explicit reverse route to the previous quotient tail. Elementary real-quadratic norm recovery removes the kernel-gcd coefficient loop and yields stronger selected-cycle weighted tails, with an explicit chi coefficient gain. Fixed mixed powers2<=k<j,3|j,k∤j admit kernel-gcd recovery and chi-sensitive actual path/cycle weights, using casewise norm/Thue lifting; the square-cube case has a separate direct route. A conditional coarse-global-triple to actual-path transfer and exact majorant comparison identify a limited exponent-only barrier; they supply no prescribed-sum improvement. Dual graphs give uniform positive-coefficient counts for unrestricted products of two fixed powers; the squarefull3/10result has a separatefullscope alternate proof. Exact-five carriers give stronger restricted sectors for3-full sums. Coherent six-cycles give the unconditional all-target bound r3(N)<<N^(33/134+epsilon), resolving the positive-saving target; the stronger carrier support-capacity estimate remains open. On the original marked-octic parameter line, MO2a gives ≫ X^(1/4)/(log X)^2 imaginary quadratic fields of class 3-rank at least three, improving the explicit Kulkarni–Levin Theorem 1.5 bound; proof review and current-record comparison remain open. The marked octic also gives simultaneous real and imaginary-mirror class 3-rank bounds three and four, at least forty complex cubic fields of a common fundamental discriminant, three positive-rank elliptic twists and ≫ X^(1/12)/(log X)^2 distinct fields. Every nonzero rational scaling of its genus-eleven cubic cover has exactly four rational three-torsion directions; real class rank four remains open.
 
-**Computed obligation progress:** 200 open; 37 proved / discharged.
+**Computed obligation progress:** 201 open; 37 proved / discharged.
 
 **Authored scope assessment:** For every fixed imaginary quadratic field K, with arbitrary finite ideal class group G, ordered primitive principal norm numerical-value sums and the individual local/genus-shadow sums have sharp scale N J_K(N)/logN on every sufficiently large pair-primitive locally admissible target, and vanish outside that local set. For B=2G nonzero, every0<delta<delta_star(B) gives R_Lambda-R_P<<K,delta N J_K/log^(1+delta)N uniformly allN>=3 and all target valuations, where delta_star(B)=min_(prime ell divides |B|)(ell-1)/(2ell)>=1/4. In particular the exponent1/5 works in every fixed field; constants remain field dependent. If2G=0, the individual sets coincide and the error is zero. The relative comparison holds on sufficiently large admissible targets. No endpoint, varying-field uniformity, mixed-field theorem, leading constant, numerical cutoff or exact exception list is asserted here.
 
@@ -31998,6 +32379,8 @@ Tracked obligations from the catalogue:
 **Authored scope assessment:** The active higher-index Hurwitz target is complete genus-zero polynomial component classification. H1–H9 give cycle-incidence trees, the complete block-divisor lattice, exact quotient/fibre budgets and a uniform two-factor plane-tree classifier. Six degree11 components all have A11 and standard spin+1; the degree15 split has groups A15 and C3 wr A5, both spin-1, with cyclic stabilizers1 and3. Primitive Sn/An components for r>=3 and joint imprimitive lift gluing remain open; group or spin classification alone does not close the target.
 
 **Authored scope assessment:** R1–R6 of POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md identify every return transport as an inner Artin braid, classify all fibre4 gluing by a four-state A4 action, realize every possible split pattern and lift every inner component obstruction through cyclic outer covers. For every d>=2, at least six components have the same embedded A11 wr C_d. Together with L4/L5, fibres2/3/4 and the free-cyclic family are established; primitive Sn/An, remaining fibres>=5 and reduced lifting data keep the full goal open.
+
+**Authored scope assessment:** B1–B6 of POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md classify every full component for two bundled involutions A,B>=2 and any positive number of transposition factors. The labels come from published Bogatyrev-Gendron Corollary2, and new internal derivations give the literal S_n-wr-dihedral monodromy, all block divisors, deck groups and exact Mobius/factorial sizes. There is one primitive Sn component when both bundled involutions have fixed points. For every odd prime p>=5 there are exactly two same-group S_p-wr-C2 components on2p sheets. Other primitive passports, remaining return actions and reduced lifting classification stay open.
 
 ### ARITHMETIC-COMMON-ARITHMETIC-FIBERS
 
@@ -61955,6 +62338,20 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Current internal PASS:230 symbolic word edges with inverses, relations and phases; all quartic fibres and A4 subgroups;26576 direct original states;12 cyclic-outer inheritance controls. Unbounded statements use the written argument and Artin's actual theorem. Large wreath groups are proved structurally, not enumerated.
 
+### ARITH-POLYNOMIAL-INVOLUTION-SIMPLE-COMPONENT-CLASSIFICATION
+
+[Complete components for two bundled involutions and simple branches](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md)
+
+**Exact scope:** For every N,A,B,s with2<=B<=A<=N/2,s>=1,A+B+s=N-1, all full components of(2^A1^(N-2A)),(2^B1^(N-2B)),T^s have explicit degree/partition labels, literal group S_n wr Delta_m, complete divisor lattice, deck group and exact Mobius/factorial orbit sizes. Component completeness imports published Bogatyrev-Gendron Corollary2. In particular each positive-fixed-point passport has exactly one primitive Sn component, and degree2p gives two same-group S_p-wr-C2 components for every odd prime p>=5.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal exact PASS on164457 literal tuples in19 components across10 complete passports. Every label and ordered-placement count checked; group equality uses the complete normal-transposition graph and exact quotient, with12 additional full group closures. Separate exact arithmetic controls do not extend the braid-tested domain.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -62987,6 +63384,7 @@ Tracked obligations from the catalogue:
 | ARITH-POLYNOMIAL-BLOCK-DIVISOR-LATTICE | claim | proved / partial | Every invariant block system of a group containing the fixed long cycle P_N is a congruence partition modulo a divisor d of N. The generator congruence test is exact, and the admissible divisor set is a braid-invariant lattice closed under gcd and lcm. | [arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md](arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md): Lemma H2. The invariant block-divisor lattice |
 | ARITH-POLYNOMIAL-CYCLE-INCIDENCE-TREE | claim | proved / partial | For any minimal full-cycle polynomial tuple, the bipartite incidence graph of sheet vertices and nontrivial cycle vertices is a tree. Cycles within one factor have disjoint supports; whole-factor braiding moves them together. Conversely every such support tree expands to a transposition tree and full-cycle product. | [arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md](arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md): Lemma H1. The cycle-incidence tree |
 | ARITH-POLYNOMIAL-TWO-FACTOR-COMPONENT-CLASSIFICATION | claim | proved / partial | For all degrees and arbitrary two-factor minimal passports, Q^2 is conjugation by P^-1. Every literal full component is the explicit union of at most2N cyclic conjugates of a pair and its Q image; pure components are cyclic conjugacy classes. Bicolored plane trees with retained cyclic orders classify ordered absolute components; color exchange is added when appropriate for full braids. Centralizer symmetry is retained. | [arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md](arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md): Theorem H4. Complete classification with two finite branch values |
+| ARITH-POLYNOMIAL-INVOLUTION-ORDERED-CLASS-COUNT | claim | proved / partial | For a,b>=0,a,b<=floor(n/2),s>=1,a+b+s=n-1, the exact ordered product-P_n count is n^(s+1)(n-a-1)!(n-b-1)!/[a!b!(n-2a)!(n-2b)!], including identity heavy entries. A self-contained hook-character/Krawtchouk evaluation proves this, retaining rational factors exactly. | [arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md): Lemma B4. An exact ordered class count |
 | ARITH-POLYNOMIAL-TRANSPOSITION-WREATH-MONODROMY | claim | proved / partial | Every transitive group containing a transposition is the full imprimitive wreath S_a wr K, with canonical blocks from the normal-closure support graph and normal subgroup S_a^e. This is independent of the chosen transposition. Its natural centralizer is trivial for a>=3 and diagonal C2 for a2. No genus assumption or component uniqueness follows. | [arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md](arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md): Lemma L6. Monodromy containing a transposition |
 | PQR-ACTUAL-REDUCED-CUBIC-AND-INTEGRAL-LIFT | claim | proved / partial | In the selected actual positive coprime squarefree-kernel graph, ell=(c1^2-c2^2)/alpha^2 is a nonzero integer; g=gcd(b1,b2) is squarefree and g^3\|ell. Put b_i=g*u_i and L=ell/g^3. Actual units give gcd(kappa1,kappa2*d)=1, hence kappa1\|L. The kernels u1,u2 are distinct coprime squarefree positives, each coprime to d, so (u1,u2,d) is primitive; the three signed cubic coefficients are nonzero. No gcd(alpha,g)=1 is assumed. | [arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md](arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md): Section2;equation9 |
 | PQR-UNIFORM-ELEMENTARY-NORM-COUNT | claim | proved / partial | For every squarefree integer D>1, nonzero signed integer M and H>=1, all integer solutions x^2-D*y^2=M with max(abs(x),abs(y))<=H number O(tau(abs(M))*2^omega(abs(M))*(1+log(H*(1+sqrt(D))))), with an absolute constant. Primitive gcd reduction, invertible y modulo abs(Mprime), all ramified primes and2, modulus1/zero-coordinate/sign cases, integral norm-one ratios and integer-trace spacing are supplied locally. Under fixed polynomial bounds in n this is O_epsilon(n^epsilon), uniformly in D,M,H, with no ideals/class-number/Dirichlet or Estermann theorem premise. | [arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md](arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md): Lemma1;Section1 |
@@ -63488,6 +63886,7 @@ Tracked obligations from the catalogue:
 | ARITH-DEGREE12-SCALAR-AFFINE-EXCEPTIONAL-ARITHMETIC-CERTIFICATES | claim | proved / partial | Atc=-1/4,-1/3,-1/2,-1, directquadratictrace/Eulerreconstruction gives6necessaryequations plusaninverseforlambda*q0*Discq*Normrho*NormDelta. Fourretainedrationalarithmeticcircuits,148/94/79/94nodes, eachreconstruct1 fromthoseactualinputs. No triangularinversionoradditionalparameterpoleappears. c0 andr00 arehandledbytheuniformendpointtheorems. | [arithmetic/DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md](arithmetic/DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md): Section4 exceptional directsystems |
 | ARITH-UNIFORM-SCALAR-AFFINE-TRACE-SQUARE-NECESSITY | claim | proved / partial | On u+v=2+(2c+1)M,uv=(1+cM)², C=(P(u)-P(v))/(u-v),T=P(u)+P(v),D=T-MC. At allpairedvalues w: C1,Tw,Cprime=-1/(2w),Tprime1/2. ThusD=κq² withκnonzero, q\|(C-1),q\|(C+2MCprime); D(-1/c)=2P0nonzero coversleadingdegree-dropcases. This isnecessaryforallh, not a converseexistenceassertion. | [arithmetic/DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md](arithmetic/DEGREE_TWELVE_SCALAR_AFFINE_OBSTRUCTION.md): Section2 |
 | ARITH-POLYNOMIAL-DEGREE15-PRIMITIVE-IMPRIMITIVE-SPLIT | claim | proved / partial | The degree15 passport (3^3 1^6),(3^3 1^6),(3 1^12) has exactly two full components: A15 of58725 literal tuples,3915 absolute classes and pure fixed-pattern size19575; C3 wr A5 of75 literal tuples,15 absolute classes and pure fixed-pattern size25. Their cyclic stabilizers have orders1,3; both spins are-1. The imprimitive quotient has d5,b3, quotient index4 and fibre-return index2. | [arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md](arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md): Theorem H7. A genus-zero primitive/imprimitive split on fifteen sheets |
+| ARITH-POLYNOMIAL-INVOLUTION-WREATH-GROUP-AND-BLOCK-LATTICE | claim | proved / partial | For every tuple in this family, its literal monodromy is the same standard S_n wr Delta_m, N=nm, where n is the least Pell degree and Delta_m is the natural Chebyshev group (trivial/C2/dihedral). All block-count divisors are exactly divisors(m) union {N}. Normal transposition-support components are the finest proper blocks; the deck group is trivial for n>=3 and diagonalC2 for n2. Pell and permutation primitivity agree in this family, using the Chebyshev quotient and square-free-part identity. | [arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md): Theorem B2. Monodromy, every block system and deck symmetry |
 | ARITH-POLYNOMIAL-LITERAL-RETURN-TUPLE-BIJECTION | claim | proved / partial | For each fixed literal quotient q of r factors, original minimal lifts with product P_(bd) are in literal bijection with M=(r-1)d+1 return factors on b letters, product P_b and total index b-1. Local cycle inflation ell*nu is the only original-passport constraint. Explicit reconstruction and product straightening recover every original permutation exactly. | [arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md](arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md): Theorem L2. A literal degree-reducing return-tuple bijection |
 | ARITH-POLYNOMIAL-GROUP-BLOCK-SPIN-DATA-INSUFFICIENT | claim | proved / partial | There exist six genus-zero components of the same passport with identical literal monodromy group A11, no nontrivial block systems, the same finite alternating-group conjugacy classes and the same standard spin. Therefore these data are not a complete component invariant. | [arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md](arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md): Group, block and standard-spin data do not classify components |
 | PQR-ROOT-AND-KERNEL-GCD-RECOVERY | claim | proved / partial | For each fixed coefficient datum AND reduced kernel solution capable of an actual path, the local norm lemma gives O_epsilon(n^epsilon) pairs c1,c2. Then X=(n-kappa2*d^3*c1^2)/(kappa1*r1^2*u1^3) is fixed; discard nonpositive/nonintegral values. Positive X has at most one alpha^2*g^3 decomposition with g squarefree. Recovered kernels b_i=g*u_i specify at most one selected actual path; no extra g,alpha,square factor, root sign or representation multiplicity is summed. | [arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md](arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md): Section2;equation13 |
@@ -63752,6 +64151,7 @@ Tracked obligations from the catalogue:
 | ARITH-POLYNOMIAL-CANONICAL-DIVISOR-CLASSIFICATION-REDUCTION | claim | proved / partial | For every imprimitive component choose the largest proper admissible block-count divisor d*. This invariant numerical choice partitions the imprimitive domain without overcounting nonunique decomposition chains. Quotient and fibre degrees are smaller than N; deleting quotient identities creates no new full-braid components. Complete primitive Sn/An classification plus known rigid/exceptional cases and the remaining return actions would therefore yield the full classification by induction. The latter inputs remain open. | [arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md](arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md): Proposition L9. A canonical divisor prevents decomposition overcounting |
 | ARITH-POLYNOMIAL-DEGREE8-COUPLED-RETURN-OBSTRUCTION | claim | proved / partial | The degree8 passport(4,2,2),(2,2,1^4) has full literal orbit sizes16,16,8 and exact groups576,576,64 with deck orders1,1,2. Both576 groups are the identical parity kernel H in S4 wr S2. In the all-transposition-return sector the quotient and full inner components are each unique, but the quotient-stabilizer action has two8-cycles, giving two glued components. Direct complete enumeration proves this finite sharpness result. | [arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md](arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md): Theorem L8. The first nontrivial return-coupling obstruction |
 | ARITH-POLYNOMIAL-FREE-CYCLIC-BRANCH-LIFT-CLASSIFICATION | claim | proved / partial | For any b>=2 and degree-d quotient passport, add one single b-cycle branch and replace all other quotient factors by b disjoint copies. In the union of original components preserving blocks of size b, there is exactly one component above each quotient component. Stabilizer image on the d marked blocks is exactly K; group C_b wr K, literal size d(s+1)L, deck order b and absolute size(s+1)L. Other original components lacking this block system are excluded explicitly. | [arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md](arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md): Theorem L5. Complete lifting over a free cyclic branch |
+| ARITH-POLYNOMIAL-INVOLUTION-IMPORTED-COMPONENT-LABELS | claim | proved / partial | For N,A,B,s with s>=1,2<=B<=A<=floor(N/2),A+B+s=N-1, all full braid components of passport(2^A1^(N-2A)),(2^B1^(N-2B)),T^s have exactly the labels of published Bogatyrev-Gendron Theorem1.2 and Corollary2. If both fixed counts are positive: one per n\|N with N/n odd and n>=N-2B. If one fixed count is zero: one per n\|N with N/n even and admissible unordered positive partition e+f=2s+2, e,f<=n, same parity as n. This is an explicitly imported completeness theorem. | [arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md): Theorem B1. Complete imported component labels |
 | ARITH-POLYNOMIAL-QUARTIC-RETURN-FIBRES | claim | proved / partial | For block size4, the complete return budget list is one4cycle, C3+T, DT+T or T+T+T. The first three cases have one root-phase orbit and therefore no additional gluing components above a decorated quotient component. Three transpositions give16 literal returns and four free root-phase orbits. | [arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md): Lemma R3. The four-sheet return fibres |
 | ARITH-POLYNOMIAL-RETURN-ARTIN-BRAID-REALIZATION | claim | proved / partial | For every minimal polynomial quotient, normalized return transport with free generators is a positive peripheral substitution preserving their ordered product. Artin's actual Theorem16 realizes it as an inner braid independently of fibre degree. The exact substitution cocycle supplies the quotient-stabilizer subgroup of B_M; full inner braid availability is not asserted. | [arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md): Theorem R1. Universal realization of return transport by inner braids |
 | ARITH-POLYNOMIAL-SMALL-BLOCK-GLUING-CLASSIFICATION | claim | proved / partial | For b=2 or3, decorated quotient braid components, recording every return partition at its quotient cycle, are sufficient component labels. The only literal fibre multiplicities are1 or3, and available full-twist root phases connect them. The cyclic stabilizer formula is bs/f and corresponding absolute orbit sizes agree. This does not extend to b4. | [arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md](arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md): Theorem L4. Decorated quotient components are sufficient for \(b=2,3\) |
@@ -63857,6 +64257,8 @@ Tracked obligations from the catalogue:
 | ARITH-DEGREE10-AFFINE-TRACE-GEOMETRIC-S4-BRANCH | claim | proved / partial | The exact primitive quartic discriminant product has a squarefree degree30 factor coprime to every other factor and leading coefficient. Each root has discriminant valuation1 and transposition inertia. Normality in arithmeticS4 and conjugacy of transpositions give full geometricS4 and geometric integrality. | [arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md](arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md): Theorem1, discriminant product and geometric group |
 | ARITH-DEGREE26-AFFINE-TRACE-LOCAL-ALGEBRAIC-POINT | claim | proved / partial | The exact t2,s22 modulo29 kernel and numerator satisfy every good-open unit and partial_sPhi6=13. Simple-root Hensel gives a Q29 point algebraic overQ of degree<=12, hence a number-field point with regularA26. The polynomial is nonzero and integral at29. This does not give a Q-rational point. | [arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md](arithmetic/ODD_AFFINE_CRITICAL_TRACE_CURVES.md): Section6 |
 | ARITH-QUADRATIC-SPECTRAL-REAL-GATES | claim | proved / partial | The square-root spectral cover has real points if t0>0 or t2>0; when both are negative it is real-soluble iff \|t1\|>2+2sqrt(t0*t2) on the smooth stratum. An actual good paired point has all criticalz real iff q splits overR and theta(r)>2\|r\| for every qroot. Real solubility alone is weaker; Qsolubility of the cover is not necessary for rational coefficient pencils. | [arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md](arithmetic/QUADRATIC_SPECTRAL_PAIRING_AND_ELLIPTIC_DIVISORS.md): Section4 |
+| ARITH-POLYNOMIAL-INVOLUTION-EXACT-COMPONENT-SIZES | claim | proved / partial | For every admissible component label, a finite Mobius sum over odd divisors gives its primitive ordered inner count. Multiplication by the exact quotient-pair, attachment and type-placement counts gives all literal orbit sizes in equations13-14. Dividing by N, with deck factor2 only for n2, gives all absolute sizes. No unproved primitive connectivity or generic relabeling division enters the count. | [arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md): Theorem B5. Exact literal and absolute component sizes |
+| ARITH-POLYNOMIAL-INVOLUTION-LITERAL-COMPONENT-CRITERION | claim | proved / partial | A complete component label is computable directly from the literal permutations: normal transposition supports determine n,m; for odd m no extra label is required, while for even m the two fixed quotient slots of the smaller bundled factor give e,f from the fixed-point counts of its return involutions. This reads the imported partition invariant without a polynomial equation. | [arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md): Theorem B3. Reading the complete component label from permutations |
 | ARITH-POLYNOMIAL-INNER-COMPONENT-AND-BLOCK-MONODROMY | claim | proved / partial | The full inner braid orbit is an invariant of the original component preserving the stated blocks. Its literal generated group equals the group induced on root block zero by its setwise stabilizer in the original monodromy group. This is necessary and is not asserted sufficient. | [arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md): Corollary R2. The inner component and its monodromy |
 | ARITH-POLYNOMIAL-QUARTIC-RETURN-A4-CLASSIFICATION | claim | proved / partial | For every quotient degree and branch count, all block-size4 gluing components are determined by an explicit four-state edge action in A4 in the triple-T sector and by the decoration in all other sectors. The complete Schreier subgroup H_Y has point orbit pattern1+1+1+1,2+2,1+3 or4; an h-point orbit gives4h\|Y\| literal tuples. Deck rotations and the canonical-divisor filter are retained. This is a uniform four-state criterion over the decorated quotient graph, not an assertion of connectivity or a classification for b>=5. | [arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md): Theorem R4. A complete \(A_4\) criterion for four-sheet gluing |
 | PQR-V-WEIGHTED-PATH-MOMENT | claim | proved / partial | For V=alpha^3*g^(3/2)/sqrt(eprime)>0, using positive real square roots and canonical squarefree kernel eprime, the sum over all selected actual shared-right paths is O_epsilon(n^epsilon*R1^2*R2). Three polynomial-height dyadic parameters cancel the coefficient frequency exactly; no field square-root adjunction is involved. | [arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md](arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md): Theorem3;Section4;equation16 |
@@ -63946,6 +64348,7 @@ Tracked obligations from the catalogue:
 | CGR-CRITICAL-SQUARE-QUOTIENT-SECTOR | claim | proved / partial | In the coefficient-shaped critical rectangle, K1 R1^2 R2=16n^(131/153)/(kappa1^(19/9)kappa2^(14/9)). Cycles with some W>=n^(53/153)/(kappa1^(19/9)kappa2^(14/9)) meet n^(26/51+epsilon), with swapped exponents on shared-left paths. Coefficient-one membership forces alpha>=n^(53/459)e^(1/6). Small thresholds use the1/R2 boundary, not1. This doesnot proveH/residual or5/17. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Section11,equations21--23 |
 | CGR-WEIGHTED-CYCLE-MOMENT-AND-TAIL | claim | proved / partial | For every Y>=1 in the general rectangle, cycles with alpha^4 gamma>=Y at any shared-right path number O_epsilon(n^epsilon K1 R1^2 R2^2/Y), and the sum of alpha^4 gamma over all shared-right paths in all simple cycles is O_epsilon(n^epsilon K1 R1^2 R2^2). Dyadic losses are absorbed in epsilon; the side-swapped version also holds. | [arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md](arithmetic/ERDOS_943_COUPLED_PATH_ROOT_GCD.md): Theorem1;Section3,equations10--11 |
 | ARITH-DEGREE10-AFFINE-TRACE-GENUS-LOWER-BOUND | claim | proved / partial | The geometrically integral degree4 cover has at least30 simple branch contributions. Riemann-Hurwitz gives2g-2>=-8+30 and genus>=12. Other ramification may increase genus; no exact genus is claimed. | [arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md](arithmetic/DEGREE_TEN_AFFINE_TRACE_CURVE_ARITHMETIC.md): Theorem1, Riemann-Hurwitz conclusion |
+| ARITH-POLYNOMIAL-INVOLUTION-PRIMITIVE-UNIQUENESS-AND-SAME-GROUP-FAMILY | claim | proved / partial | In every such passport with both bundled fixed counts positive, exactly one component is primitive Sn; if one bundled involution is fixed-point-free none is primitive. For every odd prime p>=5, degree2p passport(2^p),(2^(p-3)1^6),T,T has exactly two components with the same standard S_p wr C2, block divisors1,2,2p and trivial deck group, labelled1+5 and3+3. Their literal sizes are p^3(p^2-9)(p^2-1)/20 and p^3(p^2-1)^2/12. The new partition label is not identified with a reduced Schur or spin invariant. | [arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md): Corollary B6. Primitive connectivity and a same-group infinite family |
 | ARITH-POLYNOMIAL-CYCLIC-OUTER-OBSTRUCTION-INHERITANCE | claim | proved / partial | Every degree-b polynomial inner tuple with literal group J has a cyclic outer lift of degree bd for each d>=2, with passport(d^b) plus the inner factors extended by fixed points, literal group the standard J wr C_d, and the original inner tuple after deleting identity returns. Distinct full inner components stay distinct. Hence every d>=2 gives at least six components with the same standard A11 wr C_d for passport(d^11),(3^2 1^(11d-6)),(3^3 1^(11d-9)); for odd d the standard spin is+1. This is not a complete list of that passport's components. | [arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md): Theorem R5. Every inner component obstruction survives a cyclic outer lift |
 | ARITH-POLYNOMIAL-QUARTIC-GLUING-SHARPNESS | claim | proved / partial | All four A4 point-orbit patterns occur in explicit complete finite quotient sectors. For the degree16 passport(2^5 1^6)^3, its whole block-size4 sector has2048 literal tuples in four components256,256,768,768, deck order1 and absolute sizes16,16,48,48. Their block-count divisors are exactly1,4,16, so canonical selection really has fibre4. Other sectors of that passport are not excluded. | [arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md): Proposition R6. All four component patterns occur |
 | PQR-COEFFICIENT-GAIN-WEIGHTED-CYCLE-TAIL | claim | proved / partial | Under the same actual graph/cap/codegree gates, sum_C6 sum_paths V <<_epsilon n^epsilon*K1*R1^2*R2/chi1, and every real Y>0 tail with some V>=Y is <=this prefactor/Y. The side-swapped version uses the corresponding coefficient. If kappa1 is squarefree, chi1=kappa1. No full C6/global target saving or unrestricted coefficient aggregate follows. | [arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md](arithmetic/ERDOS_943_PELL_RECOVERED_KERNEL_GCD_WEIGHT.md): Corollary4;Section6 |
@@ -64553,7 +64956,7 @@ Tracked obligations from the catalogue:
 - **VERIFY-ARITH-INDEX-TWO-MIXTURE-PROOF** (verification; open): Review A1–A11: the maximum over all Ts, preservation under arbitrary complementary factors, phase containment and aligned leaves, noncircular induction/restoration, Q^5 support scope, stabilizer image S_k x S_m, pure-PB exceptions, monodromy, Fried lift convention, higher-index families and the complete nonminimal lifting split. Present audit and execution are internal only.
 - **GAP-ARITH-HIGHER-INDEX-DISCONNECTED-TREE-FACTORS** (mathematical; open): For every N and every nonidentity finite passport with index sum N-1 and fixed full-cycle product, classify every braid component with exact literal/absolute/marked conventions, actual monodromy, blocks, deck groups and lifting data. H4 resolves r<=2; H10 imports the proper-primitive exceptions. L1-L9 and R1-R6 give literal return transport, the restricted inner-braid subgroup, complete fibre2/3/4 criteria, cyclic-inner classification, inherited inner obstructions and a canonical imprimitive reduction. Primitive Sn/An passports with r>=3, remaining fibres>=5 and reduced lifting classification remain open.
 - **VERIFY-ARITH-GENUS-THREE-RANK-ZERO-THREE-SHA** (verification; open): Review HG13–HG14: rational HLP descent and isogeny direction; all-prime Tate ratios including nonsplit primes; the normal-order variance and bounded tail; companion-only prime; root-number and local-square compatibility; positive-density restriction of Smith Corollary 1.3; Cassels kernel factors; zero Mordell-Weil quotient; and twist-compatible prime-to-three Sha transfer. Compare earlier constructions before claiming priority. Current proof and computation are internal only.
-- **GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS** (mathematical; open): Determine every braid component for arbitrary primitive Sn or An tuples in the minimal polynomial domain with r>=3. The rigid r2 boundary is classified by H4; its six A11 components disprove sufficiency of monodromy+blocks+standard spin in the full domain. No connectedness theorem for this remaining primitive scope is currently supplied.
+- **GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS** (mathematical; open): Classify every primitive Sn/An polynomial passport with r>=3. B6 now resolves the entire two-bundled-involution plus positive-simple-branch family: exactly one primitive Sn component when both bundled factors have fixed points and none otherwise. Other arbitrary disconnected cycle types remain unresolved; no unrestricted primitive connectivity theorem is supplied.
 - **GAP-ARITH-POLYNOMIAL-IMPRIMITIVE-LIFT-GLUING** (mathematical; open): Classify every imprimitive component using the literal return bijection and exact restricted inner-braid action. L4 resolves fibres2/3; R3-R4 resolve fibre4 by a four-state A4 criterion; L5-L7 resolve the free-cyclic family and L9 chooses one divisor without duplication. The remaining fibres>=5 are open. Preserve actual groups, full block lattices, deck symmetry and genuine lifting data.
 - **GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION** (mathematical; open): Determine which reduced central-extension invariants are defined and component-separating in the genus-zero polynomial domain, with exact monodromy and branch-class hypotheses. Standard spin is forced for every odd-order passport by H5, and arbitrary DT signs are not canonical; nonminimal genus-one splits are outside this target.
 - **VERIFY-ARITH-POLYNOMIAL-PASSPORT-COMPONENT-PROOF** (verification; open): Independently review H1–H10, including the imported table scope, every regular-cycle block system, exact return budget, all-degree Q^2 classifier, critical-value color convention, six A11 group words, the imprimitive deck group, finite count completeness, odd-order spin hypotheses and refinement/coalescence limits. Current proof audit and replay are internal only.
@@ -64561,6 +64964,7 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-POLYNOMIAL-LARGER-FIBRE-RETURN-ORBITS** (mathematical; open): For every quotient component, original passport and canonical proper divisor, classify the exact R1 inner-braid subgroup action on admissible degree-b returns for b>=5 outside L5's free-cyclic family. R3-R4 now resolve every b4 sector by a four-state A4 criterion, and L4 resolves b2/3. Retain full inner components and the restricted subgroup; inner component, group and return-type labels alone are not sufficient.
 - **VERIFY-ARITH-POLYNOMIAL-LIFT-TRANSPORT** (verification; open): Review L1–L9: root chart uniqueness, boundary edge order and literal inverse, passport inflation, complete Schreier stabilizer action, full-twist phase availability, sufficiency limited to b2/3, free-branch exact image K/deck counts, full symmetric normal closure, inherited four pure7 components, identical576 subgroup obstruction and numerical canonical-divisor selection. Current audit and execution are internal only.
 - **VERIFY-ARITH-POLYNOMIAL-RETURN-BRAIDS-AND-QUARTIC-GLUING** (verification; open): Review R1-R6, including all exact Artin hypotheses, the root chart and substitution convention, identity deletion, the A4 four-label image, the complete index-three return list, Schreier component completeness, finite canonical-fibre examples and exact cyclic-outer J-wr-C_d group. Current review and replay are internal.
+- **VERIFY-ARITH-POLYNOMIAL-INVOLUTION-COMPONENT-CLASSIFICATION** (verification; open): Review the exact published import and convention match; group and finest-block proof, least Pell degree identification, literal return labels, hook/Krawtchouk and Mobius counts including identity slots and even assignment factors; same-group prime family. Current proof audit and replay are internal.
 
 Tracked obligations from the catalogue:
 
@@ -64709,7 +65113,7 @@ Tracked obligations from the catalogue:
 - **VERIFY-ARITH-HURWITZ-FIXED-PROJECTION-EXTRACTION — verification; open.** [Independently review Lemma 19, Theorem 20 and the base/absorption/marking dependency chain.](arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md)
 - **VERIFY-ARITH-MIXED-HURWITZ-ISOLATION-CONNECTIVITY — verification; open.** [Independently review M1--M7: both Q^2 pruning identities, maximization and common complementary phases, unique-largest paired-leaf alignment, the three-way type obstruction, diagonal star induction, outside support in the five-move escape, degree-five boundary, all four pure degree-seven cores, mixed-nine completeness, one-anchor restoration, exact marking, monodromy and lifting conventions. Present proof audit and replay are internal only.](arithmetic/MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md)
 - **VERIFY-ARITH-INDEX-TWO-MIXTURE-PROOF — verification; open.** [Independently review the arbitrary-mixture collective isolation, pure braid connectivity and obstruction proof.](arithmetic/INDEX_TWO_HURWITZ_MIXTURES.md)
-- **GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS — mathematical; open.** [Classify primitive Sn/An components with at least three finite branch values.](arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md)
+- **GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS — mathematical; open.** [Classify the remaining primitive Sn/An passports beyond the now complete two-involution/simple family.](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md)
 - **GAP-ARITH-POLYNOMIAL-IMPRIMITIVE-LIFT-GLUING — mathematical; open.** [Complete imprimitive classification using the restricted inner-braid action, beyond the proved fibre2/3/4 and free-cyclic subdomains.](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md)
 - **GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION — mathematical; open.** [Determine the reduced lifting invariants actually defined in each genus-zero monodromy/passport domain and any limits on their sufficiency.](arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md)
 - **VERIFY-ARITH-POLYNOMIAL-PASSPORT-COMPONENT-PROOF — verification; open.** [Independently review the uniform block/two-factor reductions and exact finite component certificates.](arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md)
@@ -64717,6 +65121,7 @@ Tracked obligations from the catalogue:
 - **GAP-ARITH-POLYNOMIAL-LARGER-FIBRE-RETURN-ORBITS — mathematical; open.** [Classify the remaining restricted inner-braid subgroup orbits for fibres at least5; every fibre4 case is now resolved by R3-R4.](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md)
 - **VERIFY-ARITH-POLYNOMIAL-LIFT-TRANSPORT — verification; open.** [Independently review and replay the return-tuple bijection, exact transport, cyclic family and b4 obstruction.](arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md)
 - **VERIFY-ARITH-POLYNOMIAL-RETURN-BRAIDS-AND-QUARTIC-GLUING — verification; open.** [Independently review and replay the universal return-braid realization and complete fibre4 criterion.](arithmetic/POLYNOMIAL_PASSPORT_QUARTIC_RETURN_CLASSIFICATION.md)
+- **VERIFY-ARITH-POLYNOMIAL-INVOLUTION-COMPONENT-CLASSIFICATION — verification; open.** [Independently review and replay the involution/simple-family labels, groups and exact component sizes.](arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md)
 
 ## Formal verification
 

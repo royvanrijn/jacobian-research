@@ -331,3 +331,49 @@ over \(k(p)\). The rescaled \(\mathcal P\) is
 Subtracting \(-\widehat\ell\) from \(\mathcal Q\)
 therefore exposes \(f=x/(2\ell)\), with
 \(\{\ell^2,f\}=1\).
+
+
+## Fractional powers by differential order
+
+**Proposition PolynomialWeylFractionalPowerMate.**
+Let \(P,Q\) be a polynomial differential pair over an
+algebraically closed characteristic-zero field with nonzero
+scalar commutator, \(\operatorname{ord}P=ag\ge2\) and
+\(\operatorname{ord}Q=bg\), where \(g\) is the gcd of
+their orders. Normalize \(\operatorname{lc}P=h^a\), put
+\(e=\gcd(g,\{\operatorname{mult}_r h\})\), and take \(e=g\)
+when \(h\) is constant. In the field of rational
+pseudodifferential operators take \(V=P^{1/(ae)}\) with
+leading coefficient \(h^{1/e}\). Then
+\[
+              Q=\sum_{j=0}^{be}\gamma_j(V^j)_+,
+                    \qquad \gamma_j\in k .
+\]
+Here the plus sign retains nonnegative differential orders.
+There is no restriction on the presence of a small root.
+
+The chosen power \(h^{1/e}\) belongs to \(k[x]\).
+To construct \(V\), start with \(h^{1/e}D^{g/e}\).
+At each successively lower order, adding a new coefficient
+\(v\) changes the next unmatched coefficient of \(V^{ae}\)
+by \(ae\,h^{(ae-1)/e}v\).
+Every derivative of the new coefficient contributes only
+at lower orders. This constructs \(V\) recursively over
+\(k(x)\), and \(V\) commutes with \(P=V^{ae}\).
+
+If a rational pseudodifferential remainder \(T\) with
+\([T,P]=[Q,P]\) has order \(s\ge0\) and leading coefficient
+\(t_s\ne0\), the coefficient of order \(ag+s-1>0\)
+gives \(s(h^a)'t_s-ag h^a t_s'=0\).
+Thus \(t_s^{ag}/(h^a)^s\) is constant.
+Taking orders at the roots of \(h\) gives \(g/e\mid s\).
+When \(h\) is constant this divisibility is automatic.
+The quotient of \(t_s\) by the leading coefficient of
+\(V^{se/g}\) is constant, so subtract the corresponding
+multiple of that power and lower the order.
+After finitely many cancellations the remainder has
+negative order, giving the formula.
+This is differential-order cancellation as in the proof
+of the pseudodifferential centralizer theorem, applied
+only at orders above the scalar commutator.
+[Previato, Rueda and Zurro, Lemma 2.2 and Theorem 2.6](https://arxiv.org/pdf/1902.01361)

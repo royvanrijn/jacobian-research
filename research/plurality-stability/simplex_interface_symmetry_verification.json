@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "94fe8d277882f460a484a9cd65f6340c36420d18800965336cf09f13bb5d5f3f",
-  "proof_source_sha256": "10ea471c2b96668861e9edef97e7583e26c332274413bf7b0fe430e9f012b6d8",
+  "checker_sha256": "1bfc772afdb1512b1956a457726d5db1fe471ff603281319fdb53a9ce53a2a04",
+  "proof_source_sha256": "dd2b2bdf09b018e552c5a4ac699f2f08977c67f30b41d54183860c6d1a8915b0",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -259,6 +259,284 @@
       "positive_entries_without_total_positivity_control": "passed",
       "wrong_rho_degree_and_k3_k4_scope_controls": "passed",
       "scope": "Exact selected Gaussian Vandermonde moments and exponential-matrix minor comparisons for 1<=q<=6, and rejection of insufficient hypotheses or the wrong rho exponent. This does not certify the imported Hermitian transition theorem, the universal Schur-complement argument, the Gaussian facet lift or the all-parameter spectral estimate."
+    },
+    "universal_blocks": {
+      "free_group_algebra_identity": [
+        {
+          "k": 3,
+          "permutations": 6
+        },
+        {
+          "k": 4,
+          "permutations": 24
+        },
+        {
+          "k": 5,
+          "permutations": 120
+        },
+        {
+          "k": 6,
+          "permutations": 720
+        },
+        {
+          "k": 7,
+          "permutations": 5040
+        }
+      ],
+      "rational_Young_Coxeter_and_selected_TP_controls": [
+        {
+          "partition": [
+            3
+          ],
+          "k": 3,
+          "dimension": 1,
+          "minus_dimension": 0,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1
+          ],
+          "k": 3,
+          "dimension": 2,
+          "minus_dimension": 1,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "k": 3,
+          "dimension": 1,
+          "minus_dimension": 1,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            4
+          ],
+          "k": 4,
+          "dimension": 1,
+          "minus_dimension": 0,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1
+          ],
+          "k": 4,
+          "dimension": 3,
+          "minus_dimension": 1,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2
+          ],
+          "k": 4,
+          "dimension": 2,
+          "minus_dimension": 1,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1
+          ],
+          "k": 4,
+          "dimension": 3,
+          "minus_dimension": 2,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "k": 4,
+          "dimension": 1,
+          "minus_dimension": 1,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            5
+          ],
+          "k": 5,
+          "dimension": 1,
+          "minus_dimension": 0,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            4,
+            1
+          ],
+          "k": 5,
+          "dimension": 4,
+          "minus_dimension": 1,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2
+          ],
+          "k": 5,
+          "dimension": 5,
+          "minus_dimension": 2,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1
+          ],
+          "k": 5,
+          "dimension": 6,
+          "minus_dimension": 3,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "k": 5,
+          "dimension": 5,
+          "minus_dimension": 3,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "k": 5,
+          "dimension": 4,
+          "minus_dimension": 3,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "k": 5,
+          "dimension": 1,
+          "minus_dimension": 1,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2,
+            1
+          ],
+          "k": 6,
+          "dimension": 16,
+          "minus_dimension": 8,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2
+          ],
+          "k": 6,
+          "dimension": 5,
+          "minus_dimension": 3,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "k": 6,
+          "dimension": 10,
+          "minus_dimension": 6,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "k": 6,
+          "dimension": 9,
+          "minus_dimension": 6,
+          "selected_TP_matrix": "passed"
+        }
+      ],
+      "orientation_and_non_TN_negative_controls": "passed",
+      "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and four selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The all-k immanant formula and positivity depend on the written argument and retained primary Young-form/interval-decomposition statements; no spectral gap is certified."
+    },
+    "standard_mass_weight": {
+      "row_identity": "passed",
+      "normalized_eigenvalues": [
+        "2",
+        "3/4"
+      ],
+      "balanced_unnormalized_form": "-1/2",
+      "mass_resolvent_form": "1/2",
+      "scope": "Exact two-atom counterexample to using a second normalized eigenvalue bound alone with ordinary mass balance; it is not a simplex counterexample and does not certify either all-k test in S70."
+    },
+    "standard_hook_gaussian": {
+      "cases": [
+        {
+          "k": 3,
+          "adjacent_labels": 1,
+          "ordered_boundary_pairs": 0
+        },
+        {
+          "k": 4,
+          "adjacent_labels": 2,
+          "ordered_boundary_pairs": 2
+        },
+        {
+          "k": 5,
+          "adjacent_labels": 3,
+          "ordered_boundary_pairs": 6
+        },
+        {
+          "k": 6,
+          "adjacent_labels": 4,
+          "ordered_boundary_pairs": 12
+        },
+        {
+          "k": 7,
+          "adjacent_labels": 5,
+          "ordered_boundary_pairs": 20
+        },
+        {
+          "k": 8,
+          "adjacent_labels": 6,
+          "ordered_boundary_pairs": 30
+        }
+      ],
+      "wrong_orthogonal_reflection_control": "passed",
+      "scope": "Exact C_l D_l=I, D_l-C_l=w_l w_l^T, same-face annihilation and all paired triple-junction permutation identities for 3<=k<=8. The unrestricted Gaussian integration-by-parts and differentiation identities S71 are written analytic proofs; no favorable residual sign or standard gap is certified."
     },
     "interval_gap": {
       "interval": [

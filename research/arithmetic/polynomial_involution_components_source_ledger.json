@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md",
+  "assurance": "Complete classification of the stated full-braid family, with component completeness explicitly imported from the published primary paper. Monodromy, permutation labels and exact sizes have internal written derivations and bounded exact controls. The arbitrary-passport goal remains open. No independent replay, formal verification, external review or priority claim for these derivations.",
+  "declarations": [
+    {
+      "name": "Theorem B1. Complete imported component labels",
+      "node": "ARITH-POLYNOMIAL-INVOLUTION-IMPORTED-COMPONENT-LABELS",
+      "scope": "For N,A,B,s with s>=1,2<=B<=A<=floor(N/2),A+B+s=N-1, all full braid components of passport(2^A1^(N-2A)),(2^B1^(N-2B)),T^s have exactly the labels of published Bogatyrev-Gendron Theorem1.2 and Corollary2. If both fixed counts are positive: one per n|N with N/n odd and n>=N-2B. If one fixed count is zero: one per n|N with N/n even and admissible unordered positive partition e+f=2s+2, e,f<=n, same parity as n. This is an explicitly imported completeness theorem."
+    },
+    {
+      "name": "Theorem B2. Monodromy, every block system and deck symmetry",
+      "node": "ARITH-POLYNOMIAL-INVOLUTION-WREATH-GROUP-AND-BLOCK-LATTICE",
+      "scope": "For every tuple in this family, its literal monodromy is the same standard S_n wr Delta_m, N=nm, where n is the least Pell degree and Delta_m is the natural Chebyshev group (trivial/C2/dihedral). All block-count divisors are exactly divisors(m) union {N}. Normal transposition-support components are the finest proper blocks; the deck group is trivial for n>=3 and diagonalC2 for n2. Pell and permutation primitivity agree in this family, using the Chebyshev quotient and square-free-part identity."
+    },
+    {
+      "name": "Theorem B3. Reading the complete component label from permutations",
+      "node": "ARITH-POLYNOMIAL-INVOLUTION-LITERAL-COMPONENT-CRITERION",
+      "scope": "A complete component label is computable directly from the literal permutations: normal transposition supports determine n,m; for odd m no extra label is required, while for even m the two fixed quotient slots of the smaller bundled factor give e,f from the fixed-point counts of its return involutions. This reads the imported partition invariant without a polynomial equation."
+    },
+    {
+      "name": "Lemma B4. An exact ordered class count",
+      "node": "ARITH-POLYNOMIAL-INVOLUTION-ORDERED-CLASS-COUNT",
+      "scope": "For a,b>=0,a,b<=floor(n/2),s>=1,a+b+s=n-1, the exact ordered product-P_n count is n^(s+1)(n-a-1)!(n-b-1)!/[a!b!(n-2a)!(n-2b)!], including identity heavy entries. A self-contained hook-character/Krawtchouk evaluation proves this, retaining rational factors exactly."
+    },
+    {
+      "name": "Theorem B5. Exact literal and absolute component sizes",
+      "node": "ARITH-POLYNOMIAL-INVOLUTION-EXACT-COMPONENT-SIZES",
+      "scope": "For every admissible component label, a finite Mobius sum over odd divisors gives its primitive ordered inner count. Multiplication by the exact quotient-pair, attachment and type-placement counts gives all literal orbit sizes in equations13-14. Dividing by N, with deck factor2 only for n2, gives all absolute sizes. No unproved primitive connectivity or generic relabeling division enters the count."
+    },
+    {
+      "name": "Corollary B6. Primitive connectivity and a same-group infinite family",
+      "node": "ARITH-POLYNOMIAL-INVOLUTION-PRIMITIVE-UNIQUENESS-AND-SAME-GROUP-FAMILY",
+      "scope": "In every such passport with both bundled fixed counts positive, exactly one component is primitive Sn; if one bundled involution is fixed-point-free none is primitive. For every odd prime p>=5, degree2p passport(2^p),(2^(p-3)1^6),T,T has exactly two components with the same standard S_p wr C2, block divisors1,2,2p and trivial deck group, labelled1+5 and3+3. Their literal sizes are p^3(p^2-9)(p^2-1)/20 and p^3(p^2-1)^2/12. The new partition label is not identified with a reduced Schur or spin invariant."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Andrei Bogatyrëv and Quentin Gendron",
+      "title": "The space of solvable Pell–Abel equations",
+      "publication": "Compositio Mathematica161(2025),1483-1511",
+      "doi": "10.1112/S0010437X25007158",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6104CD101814B5CB6C9573F517913EC5/S0010437X25007158a.pdf/space_of_solvable_pellabel_equations.pdf",
+      "path": "research/arithmetic/sources/bogatyrev-gendron-pell-abel-2025.pdf",
+      "sha256": "f1bac7cda93f5f4110e855190274a0aad25deea8d0103cd44ac96e77048ba77c",
+      "inspected": "Published Theorem1.2 p1484; Corollary2 pp1485-1486 and its exact hypotheses; Section2 Theorem2.1 and Remark1(2), pp1487-1488; Theorem5.4 and proof stages in Section5.4, pp1497-1502; degree partitions and Lemma6.1 in Section6.1, pp1503-1504.",
+      "hypotheses": "Two bundled involutions with A,B>=2, positive simple-factor count g=s, A+B+s=N-1. Positive partitions count square-free Pell roots; the covering source still has genus0.",
+      "application": "Component completeness and the primitive Pell partition labels are imported in B1. Their least Pell degree is identified with the transposition-normal block size only after the proof in B2. No new proof of the published connectivity theorem is claimed."
+    },
+    {
+      "authors": "Peter Müller",
+      "title": "Primitive Monodromy Groups of Polynomials",
+      "url": "https://ypfmde.github.io/Papers/mon.pdf",
+      "path": "research/arithmetic/sources/mueller-primitive-polynomial-monodromy-author.pdf",
+      "sha256": "d8965d633757a5569d0ef3e0a85ee535f6c151b0bff3f8b4cc74b366ff116954",
+      "inspected": "Actual Appendix retained p12, paragraph between TheoremR.2 and TheoremR.3: Lüroth/intermediate subgroup correspondence.",
+      "application": "Essential block/decomposition bridge over C in B2. No uniqueness of maximal decomposition chains is assumed."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md",
+      "sha256": "2dea2ca7fb7e37f1c4a8f6353c28a92f1421b3b8daf60389404fd66c60625366",
+      "locator": "B1-B6, full unmarked scope and explicit residual obligations"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H2-H4 block/divisor/tree conventions; exact hook-character count"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L2 literal lift, L3 full twist and L6 normal transposition wreath theorem"
+    },
+    {
+      "path": "research/arithmetic/verify_polynomial_lift_transport.py",
+      "sha256": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
+      "locator": "Literal lift/extract and normal-transposition support helpers"
+    },
+    {
+      "path": "research/arithmetic/verify_polynomial_passport_components.py",
+      "sha256": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+      "locator": "Independent ordinary braid closures, hook totals, block and deck tests"
+    },
+    {
+      "path": "research/arithmetic/sources/bogatyrev-gendron-pell-abel-2025.pdf",
+      "sha256": "f1bac7cda93f5f4110e855190274a0aad25deea8d0103cd44ac96e77048ba77c",
+      "locator": "Essential imported classification and least Pell solution degree"
+    },
+    {
+      "path": "research/arithmetic/sources/mueller-primitive-polynomial-monodromy-author.pdf",
+      "sha256": "d8965d633757a5569d0ef3e0a85ee535f6c151b0bff3f8b4cc74b366ff116954",
+      "locator": "Block/polynomial decomposition correspondence over C"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_involution_components.py",
+    "checker_sha256": "d6bde612a95ae7107989f5a95f68b6fafe79f0d60b1cefa254add8269708ec6c",
+    "receipt": "research/arithmetic/polynomial_involution_components_verification.json",
+    "receipt_sha256": "2a5e321124c45781acbc42152e8f7caf138f5e692ffe756fcb7a6c22af8272d9",
+    "command": "python3 research/arithmetic/verify_polynomial_involution_components.py",
+    "software": "Python3.12.3, standard library only, assertions active",
+    "working_directory": "Canonical Ubuntu-24.04 WSL repository root",
+    "exact_domains": "Ten explicitly listed passports in degrees6,7,8(two),9,10(two),12,18,14, with the exact bundled and simple multiplicities in the receipt. Complete closures contain164457 literal tuples in19 components, with every tuple's label and ordered placement counts checked.",
+    "arithmetic_domains": "850 factorial-versus-independent-hook totals through degree20 (217 with an identity heavy slot);560 partition-count checks;2415 exact divisor-sum checks through degree40. Prime formula controls p5,7,11,13,17,19 are arithmetic only beyond the directly exhausted p5,p7 cases.",
+    "group_certificates": "Every representative has the complete normal-transposition edge graph and exact dihedral quotient closure. These plus the written L6/B2 theorem certify full wreath equality. Twelve generated-group closures with predicted order<=70000 were actually enumerated; the seven larger groups were not. Block lattices and cyclic deck groups are checked exactly.",
+    "negative_inputs": "Four rejected inputs: no simple branch, incorrect index sum, bundled factor outside A/B>=2 scope, and a nonpositive primitive partition.",
+    "proof_boundary": "All-degree completeness is imported from the published theorem with its exact scope, not extrapolated from these finite domains. Factorial and Mobius formulas have separate written proofs. The general question whether a lone simple branch suffices with arbitrary noninvolutory factors remains open."
+  },
+  "mathematical_review": {
+    "scope": "Internal audit of published-version theorem numbering and hypotheses, full/absolute braid conventions, least Pell degree versus permutation primitivity, finest transposition blocks, small dihedral degrees, complete literal partition extraction, Krawtchouk character sum including identity positions, exact divisor exclusion and even-m assignment factor, deck correction, prime-family completeness and separation from reduced-spin claims.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "remaining_frontier": "General primitive Sn/An passports, remaining restricted return actions outside the now classified involution/simple and prior cyclic/small-fibre families, and reduced lifting classification remain open. Pure or individually marked braid components are not asserted by B1-B6."
+}

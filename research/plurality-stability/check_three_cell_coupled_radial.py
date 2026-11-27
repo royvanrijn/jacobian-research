@@ -2,7 +2,7 @@
 
 The full-rho simplex inequality is not asserted. Run with the existing
 Python environment containing python-flint; all retained interval inputs
-are fixed below. The analytic proofs are DG5--DG8 in the direct note.
+are fixed below. The analytic proofs are DG5--DG9 in the direct note.
 """
 from fractions import Fraction
 import json
@@ -134,8 +134,66 @@ def gram_controls():
             'bound_and_defect_pairs':[[str(x),str(y)] for x,y in cases]}
 
 
+def closed_arc_coefficient(rho_value,exponents,coefficients):
+    """DG40: every angular and radial integration has been done analytically."""
+    assert 0<rho_value<1
+    assert len(exponents)==len(coefficients)
+    assert all(a>=0 for a in exponents)
+    assert sum((c/(1+a) for a,c in zip(exponents,coefficients)),Fraction(0))==0
+    ctx.prec=160
+    rho=arb(rho_value.numerator)/rho_value.denominator
+    d=1-rho*rho
+    def kernel(a,b,z):
+        # All exponents used by these fixed certificates are integers.
+        assert isinstance(a,int) and isinstance(b,int)
+        return d*quadrant((1+a*d)*(1+b*d),-rho*z)
+    c=[arb(v.numerator)/v.denominator for v in coefficients]
+    def pairing(z,diagonal=False):
+        return sum((x*y*kernel(a+b,0,z) if diagonal else x*y*kernel(a,b,z)
+                    for a,x in zip(exponents,c) for b,y in zip(exponents,c)),arb(0))
+    n0=pairing(arb(1));nc=pairing(-arb(1)/2);nm=pairing(-arb(1))
+    d0=pairing(arb(1),True);dc=pairing(-arb(1)/2,True);dm=pairing(-arb(1),True)
+    exact_arc=(n0+nc-d0+dc)/2
+    secant_correction=(dc-dm-nc+nm)/2
+    value=exact_arc-secant_correction
+    # The combined expression must agree without numerical quadrature.
+    assert (value-(n0+2*nc-nm-d0+dm)/2).contains(0)
+    return {'rho':str(rho_value),'exponents':list(exponents),
+            'coefficients':[str(c) for c in coefficients],'exact_mean':'0',
+            'arb_precision_bits':160,'quadrature':'none; closed quadrant formulas only',
+            'exact_arc_quadratic_coefficient':enclose(exact_arc),
+            'secant_closure_correction':enclose(secant_correction),
+            'corrected_exact_arc_coefficient':enclose(value)}
+
+
+def exact_arc_controls():
+    f_exponents=(0,1,16)
+    f_coefficients=(Fraction(-21,34),Fraction(1),Fraction(2))
+    comparison=closed_arc_coefficient(Fraction(9,10),f_exponents,f_coefficients)
+    assert comparison['corrected_exact_arc_coefficient'][1]<-0.06
+    # A distinct bounded mean-zero profile, not the preceding f, limits
+    # the stronger exact-arc/secant criterion at correlation 99/100.
+    exponents=(1,4,16,64,256,1024)
+    coefficients=tuple(Fraction(n,1000) for n in (27,37,74,181,145,1000))
+    constant=-sum((c/(1+a) for a,c in zip(exponents,coefficients)),Fraction(0))
+    limitation=closed_arc_coefficient(Fraction(99,100),(0,)+exponents,
+                                     (constant,)+coefficients)
+    assert limitation['corrected_exact_arc_coefficient'][0]>0.0000012
+    try:
+        closed_arc_coefficient(Fraction(9,10),(0,),(Fraction(1),))
+    except AssertionError:
+        pass
+    else:
+        raise AssertionError('a nonzero-mean profile must be rejected')
+    return {'status':'pass','nine_tenths_profile_comparison':comparison,
+            'ninety_nine_hundredths_limit_test':limitation,
+            'nonzero_mean_control_rejected':True,
+            'scope':'DG9 exact arc interaction and measure-dependent secant bound. The fixed small profile at9/10 loses for arbitrary angular shapes. At99/100 a different feasible balanced small profile makes this sufficient upper-bound criterion positive; no improving Gaussian partition is asserted.'}
+
+
 if __name__=='__main__':
     result=certificate()
     result['three_fifths_limit_test']=certificate(rho_value=Fraction(3,5))
     result['seven_tenths_limit_test']=certificate(rho_value=Fraction(7,10))
+    result['exact_arc_secant_controls']=exact_arc_controls()
     print(json.dumps(result,indent=2))

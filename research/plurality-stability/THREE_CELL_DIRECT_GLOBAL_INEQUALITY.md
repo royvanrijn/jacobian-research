@@ -13,6 +13,10 @@ of almost every circle. For general balanced partitions it isolates an
 exact missing inequality and proves that discarding the angular
 Cauchy--Schwarz remainder cannot establish it near correlation one.
 The counterexample is to an upper-bound strategy, not to simplex optimality.
+Propositions DG6, DG8 and DG9 retain progressively more angular information,
+including a globally valid measure-dependent rearrangement bound with the
+exact arc interaction. The certified restricted-profile comparisons and
+limitations of those sufficient criteria do not extend the unrestricted cutoff.
 
 ## Primary results and scope
 
@@ -944,7 +948,183 @@ This is a limitation of the specified upper-bound criterion, not a
 counterexample to the original inequality. The unrestricted cutoff
 remains \(21/50\).
 
-Run both the directed witness and the exact rational controls from the
+### Proposition DG9 (measure-dependent rearrangement with the exact arc interaction)
+
+Let \(B_a(p,q)=\langle1_{I_p},U_a1_{I_q}\rangle_\sigma\), where
+the two arcs have the same center. For \(a>0\) and \(0\le s\le2\), put
+
+\[
+ c_a(s)=\frac{e^{a\cos(\pi s)}-e^{-a}}
+                  {(1+\cos(\pi s))I_0(a)},\qquad
+ c_a(1)=\frac{ae^{-a}}{I_0(a)}.
+ \tag{DG37}
+\]
+
+The value at one is the continuous limit. For arbitrary measurable
+\(E,F\subset S^1\) of masses \(p,q\), with first moments \(u,v\),
+
+\[
+ \langle1_E,U_a1_F\rangle
+ \le B_a(p,q)-c_a(p+q)
+       \left[\frac{\sin(\pi p)\sin(\pi q)}{\pi^2}-u\cdot v\right].
+ \tag{DG38}
+\]
+
+This improves the mass-independent coefficient used in DG6:
+\(c_a(s)\ge ae^{-a}/I_0(a)\) for every \(s\).
+For three-component profiles define
+\(c_a^*(p,q)=\min_i c_a(p_i+q_i)\). For every ordinary balanced
+planar three-cell partition, with \(p_t=p(\sqrt{2t})\), one therefore has
+
+\[
+\begin{split}
+ S_\rho(A)-S_\rho(T)\le\mathcal E_\rho(p):=
+ \iint R_0(t,s)\bigg[&\sum_i B_{a(t,s)}(p_{t,i},p_{s,i})
+                         -3B_{a(t,s)}(1/3,1/3)\\
+ &-c_{a(t,s)}^*(p_t,p_s)\Gamma_\sharp(p_t,p_s)\bigg]d\nu(t)d\nu(s).
+\end{split}
+ \tag{DG39}
+\]
+
+This keeps the exact arc interaction instead of its scalar quadratic
+envelope in (DG29), as well as a stronger moment penalty. The bound is
+valid for all profiles, including those far from the balanced one.
+It does not assume that the actual circular cells are arcs.
+
+Here is the proof of (DG38). First suppose \(p+q\le1\), and set
+\(z_0=\cos(\pi(p+q))\). Temporarily omit the positive factor
+\(I_0(a)^{-1}\), and let \(c\) be the secant slope of \(e^{az}\)
+between \(-1\) and \(z_0\). With
+\(R(z)=e^{az}-cz\), convexity gives
+\(R(-1)=R(z_0)\), \(R(z)\le R(z_0)\) for \(z\in[-1,z_0]\),
+and \(R\) is nondecreasing on \([z_0,1]\). Consequently the function
+which equals \(R(z_0)\) below \(z_0\) and \(R(z)\) above it is a
+nondecreasing majorant \(\widehat R\) of \(R\). Add a constant if
+necessary to make this kernel nonnegative; the added constant cancels
+from the comparison because both pairings have masses \(p,q\).
+Apply the circular rearrangement theorem used in DG6 to
+\(\widehat R(\cos\vartheta)\). On the aligned pair of arcs,
+\(|\vartheta|\le\pi(p+q)\), so \(\widehat R=R\) there.
+Restoring the separated cosine term proves (DG38). The case
+\(p+q=1\) follows either directly or by the continuous secant limit.
+
+If \(p+q>1\), apply the same argument to \(E^c,F^c\). Their first
+moments are \(-u,-v\); their sine caps are unchanged. Since \(U_a\)
+is Markov,
+\(\langle1_E,U_a1_F\rangle=p+q-1+
+\langle1_{E^c},U_a1_{F^c}\rangle\), and the identical relation
+holds for the aligned arcs. The complement masses sum to \(2-p-q\),
+which has the same cosine in (DG37). This proves all cases, including
+empty or full sets. Convexity also gives the asserted lower bound on
+the secant slope by the derivative at \(-1\).
+
+Each individual cosine deficit in (DG38) is nonnegative by its norm
+caps. Their sum is at least \(\Gamma_\sharp\) by DG8. Summation
+therefore proves the angular version of (DG39), and polar integration
+proves the displayed bound. All its terms are integrable. Indeed
+\(0\le\sum_iB_a(p_i,q_i)\le\sum_i\min(p_i,q_i)\le1\), and (DG38)
+shows that its total subtracted penalty, including
+\(c_a^*\Gamma_\sharp\), lies between zero and this arc sum.
+The radial Markov measure is a probability measure.
+
+The arc interaction is itself an explicit one-dimensional integral.
+Define the even function
+\(\Psi_a(u)=\int_0^{|u|}(|u|-v)k_a(\pi v)dv\). Direct endpoint
+integration gives
+\(B_a(p,q)=[\Psi_a(p+q)-\Psi_a(p-q)]/2\). In particular, at
+\(p=q=1/3\), its second derivatives are
+
+\[
+ (B_a)_{pp}=\tfrac12[k_a(2\pi/3)-k_a(0)],\qquad
+ (B_a)_{pq}=\tfrac12[k_a(2\pi/3)+k_a(0)].
+\]
+
+These identities permit a closed, nonquadrature check of the local
+coefficient of (DG39). For any bounded finite exponential sum
+\(f(t)=\sum_j d_j e^{-\lambda_jt}\) with \(\lambda_j\ge0\) and
+\(\sum_jd_j/(1+\lambda_j)=0\), use the profiles (DG30) with this
+\(f\). For \(z\in\{1,-1/2,-1\}\), define
+
+\[
+\begin{split}
+ H_z(\lambda,\mu)&=d\,\Xi(P_{\lambda\mu},-\rho z),\\
+ N_z&=\sum_{j,k}d_jd_k H_z(\lambda_j,\lambda_k),\qquad
+ D_z=\sum_{j,k}d_jd_k H_z(\lambda_j+\lambda_k,0).
+\end{split}
+\]
+
+Here \(d=1-\rho^2\), and \(\Xi,P\) are the exact quadrant formulas
+in DG5. Then
+
+\[
+ \mathcal E_\rho(p)=2\epsilon^2 E_\rho(f)+O(\epsilon^3),\qquad
+ E_\rho(f)=\tfrac12[N_1+2N_{-1/2}-N_{-1}-D_1+D_{-1}].
+ \tag{DG40}
+\]
+
+For completeness, the exact arc part contributes
+\([N_1+N_{-1/2}-D_1+D_{-1/2}]/2\). At the balanced profile
+\(R_0c_a(2/3)=2R_0(e^{-a/2}-e^{-a})/I_0(a)\).
+Combining this identity with the coefficient \(1/8\) from (DG35)
+subtracts
+\([D_{-1/2}-D_{-1}-N_{-1/2}+N_{-1}]/2\). The sum is (DG40).
+The expansion is uniform over angular shapes. For each fixed
+\(\rho<1\), derivatives of the arc kernels and the local secant
+coefficient are bounded by a polynomial in \(a\) times
+\(e^a/I_0(a)\). The product with \(R_0\) is integrable, since its
+radial exponent is a positive definite Gaussian quadratic form.
+Thus the bounded profile and the uniform expansion (DG35) justify
+the integrated \(O(\epsilon^3)\), even though the minimum in
+\(c_a^*\) need not be differentiable.
+
+For the explicit \(f\) of (DG21), the directed checker gives, at
+\(\rho=9/10\),
+\(E_\rho(f)\in[-0.06164098388637688,-0.061640983886376864]\).
+It follows that all partitions with this sufficiently small circular
+mass profile strictly lose to the simplex at \(\rho=9/10\), with
+arbitrary angular shapes. This is again a restricted-profile result.
+
+The sufficient assertion \(\mathcal E_\rho(p)\le0\) for every
+balanced profile and every correlation is false. Set
+
+\[
+ g(t)=\frac1{1000}\sum_{j=1}^6 n_j
+        \left(e^{-\lambda_jt}-\frac1{1+\lambda_j}\right),\qquad
+ (\lambda_j)=(1,4,16,64,256,1024),\quad
+ (n_j)=(27,37,74,181,145,1000).
+\]
+
+This is exactly mean zero and \(|g|\le183/125\), so the profiles
+\(1/3+\epsilon(1,-1,0)g(t)\) are balanced and feasible for small
+\(\epsilon\). At \(\rho=99/100\), the same closed formula gives
+
+\[
+ E_{99/100}(g)\in
+ [1.202983953209141\mathbin{\cdot}10^{-6},
+  1.2029839532091414\mathbin{\cdot}10^{-6}].
+\]
+
+Both new enclosures use 160-bit Arb evaluation of closed quadrant
+expressions; there is no angular or radial numerical quadrature.
+The strictly positive value makes (DG39)'s right side positive for
+small nonzero \(\epsilon\). It does not determine the actual noise
+stability of those partitions. The bound (DG39) is valid but still
+loses angular information needed for the full theorem.
+
+The closest inspected quantitative rearrangement input is
+[Christ--Iliopoulou](https://preprint.press.jhu.edu/ajm/sites/default/files/AJM-christ-iliop.pdf),
+Theorem 1.3, printed p. 4, with Definitions 1.6--1.7.
+For fixed \(\eta>0\), the three measures must be \(\eta\)-strictly
+admissible and \(\eta\)-bounded, including a lower measure bound and
+a total measure at most \(2-\eta\). A sufficiently small convolution
+deficit then gives distance at most \(C_\eta\sqrt\delta\) to
+compatibly centered parallel rank-one Bohr triples. Its actual statement
+and hypotheses were inspected. Converting such stability to a useful
+explicit moment-and-remainder penalty, while controlling admissibility
+across the radial parameters, is a further obligation. This theorem is
+context here and is not used to prove (DG37)--(DG40).
+
+Run the directed witnesses, closed-form coefficients and rational controls from the
 repository root with the existing environment:
 
 ```sh
@@ -970,8 +1150,12 @@ obstructing profile. Its elementary version is itself insufficient at
 \(\rho=3/5\). Proposition DG8 obtains the optimal first-moment
 coefficient near balanced profiles, repairs that particular profile at
 \(\rho=3/5\), and proves that even this sharpened separated criterion
-fails at \(\rho=7/10\). A uniform proof therefore needs a sharper
-angular remainder envelope, additional modes or a different mechanism.
+fails at \(\rho=7/10\). Proposition DG9 retains the exact arc
+interaction and uses a stronger measure-dependent secant penalty. It
+handles the explicit profile at \(\rho=9/10\), but its own sufficient
+all-profile criterion fails at \(\rho=99/100\) for a different bounded
+mean-zero profile. A uniform proof therefore still needs a sharper
+joint angular estimate, additional modes or a different mechanism.
 Proposition DG3 rules out proving the stronger mass-only inequality after
 the angular Cauchy step throughout \((0,1)\). It does not rule out
 stronger coupled angular estimates, a different direct proof, or the

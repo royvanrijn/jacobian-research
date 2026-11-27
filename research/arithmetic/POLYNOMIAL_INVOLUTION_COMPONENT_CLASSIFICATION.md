@@ -229,7 +229,7 @@ no division by \(n\) or rounding of a rational class weight occurs.
 
 **Proof.** Put \(h=n-1\), and define
 \[
- K_j(a)=[x^j](1+x)^{h-a}(1-x)^a.
+ K_j(a)=\operatorname{coeff}_{x^j}\bigl((1+x)^{h-a}(1-x)^a\bigr).
 \]
 These are the hook characters of the involution class. For a
 transposition,

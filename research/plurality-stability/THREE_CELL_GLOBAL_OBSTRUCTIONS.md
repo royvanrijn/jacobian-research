@@ -9,7 +9,7 @@ maximizer at the first continuation endpoint must escape both classes.
 The last section gives a counterexample to a circular rearrangement
 relaxation that drops disjointness while retaining all circular masses.
 
-## The known global interval and its continuation endpoint
+## The known global intervals and their continuation endpoints
 
 Heilman's July 2026 preprint proves the dimension-independent balanced
 inequality for $0<\rho\le2/5$. The precise statement is Theorem A.1,
@@ -34,6 +34,13 @@ simplex rigidity on the active plane. Thus the first transition
 correlation is **strictly greater than $21/50$**: the
 [three-cell continuation implication](SIMPLEX_INTERFACE_SYMMETRY.md#reflected-kernels-close-the-three-cell-spectral-problem)
 would require a nonsimplex tied maximizer at any first transition.
+
+The [exact comparison near one](THREE_CELL_NEAR_ONE_EXACT.md)
+gives a second interval of global optimality with equality rigidity,
+ending at $1$. If strict suboptimality occurs in between, each
+connected interval of strict suboptimality has a nonsimplex tied
+maximizer at both endpoints. The same near-one comparison yields the
+balanced low-influence plurality inequality on that interval.
 
 The preprint's Theorem 1.3 gives the discrete interval through $2/5$.
 The same implication with the extended Gaussian bound now gives the

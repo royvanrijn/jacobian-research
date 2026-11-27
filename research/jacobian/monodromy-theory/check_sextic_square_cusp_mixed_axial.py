@@ -164,6 +164,46 @@ def check_nonzero_axial_slope_fibres():
         assert expand(bracket - expected) == 0
 
 
+def check_square_cusp_zero_slope_fibres():
+    from sympy import diff, residue
+    x, y, u, t, a, b = symbols("x y u t a b")
+    # The signed initial bracket after the repeated affine scalar reduction.
+    first, second = Function("U")(u), Function("V")(u)
+    slope = Rational(3, 2)
+    for exponent in (6, Rational(13, 2), 7):
+        pair = Matrix([first/x**exponent, second/x**4])
+        pair = pair.subs(u, x**slope*y)
+        expected = (4*diff(first, u)*second - exponent*first*diff(second, u))
+        expected = x**(slope-1-exponent-4)*expected.subs(u, x**slope*y)
+        assert expand(pair.jacobian((x, y)).det() - expected) == 0
+
+    # After the plane and leading-coefficient constraints, list all signed
+    # candidates at and above the asserted top weights.
+    def faces(bounds, threshold):
+        return {
+            (i, j, l, -2*i+3*j+4*l)
+            for l, row in enumerate(bounds)
+            for j, i in enumerate(row)
+            if i is not None and -2*i+3*j+4*l >= threshold
+        }
+
+    first_bounds = (
+        (0, 0, 0, 0, 1, 1, 3), (0, 0, 0, 1, 1), (0, 0, 1), (0,)
+    )
+    second_bounds = (
+        (0, 0, 1, 1, 2), (0, 1, 1), (1,)
+    )
+    assert faces(first_bounds, 12) == {
+        (3, 6, 0, 12), (1, 5, 0, 13), (1, 4, 1, 14),
+        (1, 2, 2, 12), (0, 0, 3, 12),
+    }
+    assert faces(second_bounds, 8) == {(2, 4, 0, 8), (1, 2, 1, 8)}
+
+    # A double pole of the twisted form on the binary constant root line
+    # has this nonzero simple-residue coefficient.
+    assert (residue(1/(a*(u-b)**2*(u+b)**2), u, b)+1/(4*a*b**3)).simplify() == 0
+
+
 if __name__ == "__main__":
     check_first_axial_weight()
     check_fractional_coefficient()
@@ -173,4 +213,5 @@ if __name__ == "__main__":
     check_zero_k_axial_binomial()
     check_both_zero_projective_index()
     check_nonzero_axial_slope_fibres()
+    check_square_cusp_zero_slope_fibres()
     print("Checked axial supports, binomial expansion, fibre brackets, and projective field ratios.")

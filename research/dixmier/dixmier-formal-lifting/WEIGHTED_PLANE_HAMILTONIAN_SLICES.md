@@ -198,6 +198,134 @@ The equal-multiplicity polynomial
 at the two roots \(1,-1\).
 
 
+## Strictly mixed weights and negative degree
+
+**Theorem MixedWeightNegativeDegreeHamiltonianSliceInterpolation.**
+Let \(k\) have characteristic zero, and use primitive weights
+\((-a,b)\) with \(b>a>0\). Suppose the nonconstant weighted
+polynomial \(p\) has degree \(-D<0\). Write
+\[
+ p=x^i y^j G(u),\qquad u=x^b y^a,\qquad
+ G(u)=c\prod_\ell(u-\lambda_\ell)^{m_\ell},\qquad G(0)\ne0 .
+\]
+Here \(i,j\ge0\), and the roots are distinct in the algebraic
+closure. Put
+\[
+ \mu=(i-j)/D,\qquad \alpha_\ell=(b-a)m_\ell/D .
+\]
+These exponents are positive. Include a factor \(u^\mu\)
+in \(B\) if \(\mu\) is integral, and include
+\((u-\lambda_\ell)^{\alpha_\ell}\) in \(B\) exactly when
+\(\alpha_\ell\) is integral. Let
+\[
+ B(u)=u^{\mu_0}\prod_{\alpha_\ell\in\mathbb Z}
+                      (u-\lambda_\ell)^{\alpha_\ell},
+ \qquad \mu_0=\begin{cases}\mu&\mu\in\mathbb Z,\\0&\mu\notin\mathbb Z,\end{cases}
+\]
+and write \(M=\deg B\), \(\mu_1=\mu-\mu_0\), and
+\[
+ A(u)=\frac{\mu_1}{u}+
+                  \sum_{\alpha_\ell\notin\mathbb Z}
+                  \frac{\alpha_\ell}{u-\lambda_\ell},\qquad
+ \sigma=\mu_1+\sum_{\alpha_\ell\notin\mathbb Z}\alpha_\ell .
+\]
+
+If \(\sigma=0\), a rational Hamiltonian slice always exists.
+Otherwise there is a unique polynomial \(N\) of degree at most
+\(M\) determined by matching the coefficients at infinity from
+\(u^{M-1}\) down through \(u^{-1}\) in
+\[
+                         N'+A N=B/u.                         \tag{8}
+\]
+A rational Hamiltonian slice exists precisely when
+\(N(\lambda_\ell)=0\) for every nonintegral \(\alpha_\ell\)
+and, if \(\mu_1\ne0\), \(\mu_1 N(0)=B(0)\).
+In particular the number of nonintegral \(\alpha_\ell\)
+cannot exceed \(M\) for a slice to exist.
+
+The toric coordinate of the pole test is \(t=u^{-1}\).
+At the endpoint \((i,j)\) its exponent \(E\) in \(P(t)\)
+satisfies \(\nu E-\beta=(j-i)/(-D)=\mu\).
+Substitute \(h(t)=-H(u)\) in (1). The resulting equation is
+\[
+                uH'+\left(\mu+
+                   \sum_\ell\frac{\alpha_\ell u}{u-\lambda_\ell}
+                     \right)H=1.                            \tag{9}
+\]
+Equivalently the relative differential is a nonzero scalar
+multiple of \(u^{\mu-1}\prod_\ell(u-\lambda_\ell)^{\alpha_\ell}du\)
+on the fixed cyclic cover. In particular the pullback is
+regular at all finite points. Oka's mixed-face analysis
+assumes positive degree in this nonexceptional weight range.
+[Oka, §4.3](https://math.ac.vn/uploads/files/0702123.pdf)
+
+The possible finite poles of \(H\) in (9) have order
+\(\mu\) at zero and \(\alpha_\ell\) at a root, and can occur
+only when those orders are integers. Indeed the leading
+derivative of a pole of order \(s>0\) can cancel only against
+the corresponding logarithmic coefficient with residue \(s\).
+At infinity a positive degree \(s\) of \(H\) would give a
+nonzero leading coefficient multiplied by
+\(s+\mu+\sum_\ell\alpha_\ell\). Thus \(H=N/B\) with
+\(\deg N\le M\). Substitution gives (8).
+If \(\sigma=0\), then \(A=0\), \(\mu=\mu_0>0\) and \(B/u\)
+is polynomial, so integrate (8) directly.
+
+If \(\sigma>0\), the leading Laurent term of
+\((\partial_u+A)(u^n)\) is \((n+\sigma)u^{n-1}\).
+All these coefficients are nonzero for \(0\le n\le M\)
+in characteristic zero. Thus the matching at infinity
+determines \(N\) triangularly. Its leading coefficient is
+\(1/(M+\sigma)\), so \(N\ne0\).
+The unmatched rational function has only possible simple
+poles at the nonintegral root positions and, if \(\mu_1\ne0\),
+at zero. The stated equalities kill these poles.
+The remainder is then polynomial and \(O(u^{-2})\) at
+infinity, hence zero. This proves necessity and sufficiency.
+A solution constructed over the algebraic closure descends
+by the normalized trace as in the pole test.
+
+For instance, in weights \((-1,2)\) the family
+\[
+ p=x^6y^2(x^2y-\lambda_1)(x^2y-\lambda_2)
+\]
+has degree \(-2\), and for distinct nonzero \(\lambda_1,\lambda_2\)
+the slice criterion is exactly \(\lambda_1+\lambda_2=0\).
+Here \(\mu=2,\ \alpha_1=\alpha_2=1/2,\ B=u^2\).
+Both roots must divide \(N\), and its leading coefficient
+is \(1/3\). Substitution of
+\(N=(u-\lambda_1)(u-\lambda_2)/3\) into (8) gives
+\(u-(\lambda_1+\lambda_2)/2\) on its left side.
+This example uses the positions of the roots even at fixed
+multiplicities and endpoint exponents. For \(\lambda_1+\lambda_2\ne0\),
+the weighted symbol cannot be the leading part of a plane
+Keller component or a Weyl operator with a scalar commutator
+mate, by their respective leading slice theorems.
+
+
+**Corollary MixedWeightNegativeDegreeSaturatedRoots.**
+In the negative-degree interpolation theorem, suppose all
+\(\alpha_\ell\) are nonintegral, and the number \(n\ge1\) of
+distinct roots equals \(\mu\). Put \(G_{\mathrm{red}}(u)=
+\prod_\ell(u-\lambda_\ell)\). There is a rational slice
+if and only if
+\[
+  (1+\alpha_\ell)G_{\mathrm{red}}'(\lambda_\ell)
+          =\left(n+\sum_j\alpha_j\right)\lambda_\ell^{n-1}
+             \quad\text{for every }\ell .
+\]
+In particular, if all the root multiplicities are equal,
+the criterion becomes \(G_{\mathrm{red}}(u)=u^n+c_1\) with
+\(c_1\ne0\).
+
+Here \(B=u^n\), and a successful \(N\) of degree at most
+\(n\) must be \(G_{\mathrm{red}}/(n+\sum_\ell\alpha_\ell)\).
+Both sides of (8) are then polynomials of degree at most
+\(n-1\), so equality is equivalent to evaluating them
+at the \(n\) distinct roots. For equal \(\alpha_\ell\)
+the left side of (8) is \(G_{\mathrm{red}}'/n\).
+This gives the stated criterion in every degree.
+
 ## Positive weights and compatibility of exposed edges
 
 **Corollary WeightedHamiltonianSlicePositiveEdgeCompatibility.**

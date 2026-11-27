@@ -1944,3 +1944,358 @@ again forces \(U^2/V^3\) constant in \(Y\), which contradicts
 the multiplicity at any root of \(V\).
 This excludes the repeated-root obstruction and proves inversion.
 The inverse descends to the original field.
+
+
+## The zero-slope residual scalar
+
+**Theorem SexticKellerSquareCuspZeroAxialSlopeScalarReduction.**
+In the \(k=e=\delta=0\) square-cusp sector, a noninvertible
+completion has one of the following forms for its third component.
+
+- \(C=h(x,y)\), with \(2\le\deg_y h\le3\).
+- \(C=\alpha X^2 z+h(x,y)\), where \(X=x-\zeta\) for a
+  scalar \(\zeta\), \(\alpha\ne0\), and
+  \(h=h_0(x)+X^2h_1(x)y+\rho X^2y^2\), with
+  \(h_0'(\zeta)\ne0\) and \(\deg h_1\le2\).
+
+The alternatives are over the algebraic closure. In the
+second case, the constant-restriction root is the only root
+of the affine coefficient.
+
+By the prior support, the coefficient of \(z\) in \(C\) is
+\(\eta xy+\alpha x^2+\beta y+\gamma x+\epsilon\).
+At \(w=7\), \(C_*=x^6+\eta Ty\), with \(T=xz\).
+The normalized middle form is \(Tx^4+bT^2y/x^2\).
+For \(\sigma=0\) use \(B\) itself, and for \(\sigma\ne0\)
+use \(B^\flat\) and the polynomial \(N\) above. At fixed \(T\)
+the bracket has a term proportional to \(b\eta y\).
+The vanishing of the leading determinant first gives \(b\eta=0\).
+If \(\eta=0\), independence of \(x^6\) and \(y\) forces \(b=0\).
+If \(b=0\), independence of \(Tx^4\) and \(y\) forces \(\eta=0\).
+For the determinant with \(N\), the expected weight is
+\(3w+6+5w+18+12-(w+5)\) at \(w=7\), greater than
+the actual weight \(4w+8\) of a scalar multiple of \(B^2\).
+The analogous determinant of \(A,B,C\) is constant.
+
+Write \(a=\alpha x^2+\beta y+\gamma x+\epsilon\), so \(C=az+h\).
+If \(\beta\ne0\), the simple graph \(a=0\) has residue
+\(\pm dx/\beta\). The linear-source residue proposition makes
+\(h\bmod a=\ell x+\mu_0\) with \(\ell\ne0\).
+In the coordinates \((C,a,z+s_2)\), where
+\(s_2=(h-\ell x-\mu_0)/a\), the recovered \(x\) has degree
+at most two. If \(\alpha\ne0\), \(y\) has degree at most
+four and \(s_2\) has \((2,3)\)-weight at most eight,
+so the recovered \(z\) has degree at most ten.
+If \(\alpha=0\), \(y\) has degree at most two and \(s_2\)
+has weight at most nine, so the recovered \(z\) has degree
+at most eight. The bounded coordinate-completion theorem
+applies in either case.
+
+If \(a\) is a nonzero constant, \(C\) is a graph coordinate
+with inverse completion of degree at most six. For \(a\)
+nonconstant univariate, the parallel-fibre construction applies
+when every root restriction is affine with nonzero slope.
+For \(d=\deg a\in\{1,2\}\) the inverse \(y\) on each fibre
+has degree at most \(d+1\). The coefficient bounds in \(h\)
+give degree at most \(\max(1+3(d+1),2+2(d+1),4+(d+1),6)-d\)
+for the inverse \(z\). This is at most eight. The fibrewise
+planar degree bound gives inversion. Otherwise there is a
+repeated root \(\zeta\) with constant restriction and
+\(h_x(\zeta,y)\) a nonzero constant, by the normal-residue
+proposition. The coefficient of \(y^3\) in \(h\) has degree
+at most one and vanishes twice at \(\zeta\).
+The coefficients of \(y^2,y\) similarly vanish twice and
+have degrees at most two and four. These facts give the
+second alternative.
+
+Finally, if \(a=0\) and \(h\) has \(y\)-degree zero, then
+\(h\) gives a critical point since its degree in \(x\) is six.
+If the \(y\)-degree is one, use the
+[parallel-coefficient scalar exclusion](SEXTIC_KELLER_PARALLEL_COEFFICIENT_SCALAR.md)
+for a nonconstant coefficient of \(y\). A constant nonzero
+coefficient gives a graph completion with inverse degree at
+most six. This proves the first alternative.
+
+
+### Exclusion of the binary scalar
+
+**Proposition SexticKellerSquareCuspBinaryScalarExclusion.**
+In the \(k=e=\delta=0\) square-cusp sector, every Keller
+completion with \(C=h(x,y)\) is invertible.
+
+By SexticKellerSquareCuspZeroAxialSlopeScalarReduction it
+suffices to exclude a completion with \(2\le\deg_y h\le3\).
+Use \(D=h_y\partial_x-h_x\partial_y\), with orientation
+chosen so that \(D(A)B_z-A_z D(B)=\pm\kappa\).
+The \(D\)-constants in \(k(x,y)\) are \(k(h)\). Here is a
+proof over the algebraic closure. Since \(D\ne0\) and the
+characteristic is zero, its field of constants is the relative
+algebraic closure of \(k(h)\) in \(k(x,y)\). This is a
+one-variable function field, rational by restricting its curve
+map to a general affine line on which \(h\) is nonconstant
+and applying Lüroth's theorem. Let \(f=u/v\) be a rational
+generator with \(u,v\in k[x,y]\) coprime, and write \(h=H(f)\).
+If \(H\) has a pole at a finite \(a\), then \(u-av\) must
+be a nonzero scalar: otherwise an irreducible factor gives
+a divisor \(f=a\) and hence a pole of the polynomial \(h\).
+If \(H\) has a pole at infinity, \(v\) must likewise be scalar.
+There is at most one such scalar linear combination up to
+scaling, as \(f\) is nonconstant. Move that value to infinity;
+then \(f\) and \(H\) are polynomials. Since \(h\) is a
+submersion, \(H\) is linear. Indeed a root of \(H'\)
+would give a critical point on the corresponding nonempty
+level of \(f\). This proves the constant-field assertion.
+
+Let \(n=\deg_z B\le2\), and let \(b_n\) be its leading
+coefficient. If \(n=0\), the Keller bracket is
+\(-A_zD(B)\), impossible by \(\deg_z A=3\).
+For \(1\le n\le2\), its top coefficient gives
+\(D(a_3^n/b_n^3)=0\), with \(a_3=[z^3]A\).
+If this ratio, written in reduced form in \(h\), has a
+finite zero or pole at \(h=\eta\), then \(h-\eta\) divides
+\(a_3^n\) or \(b_n^3\), respectively.
+The polynomial \(h-\eta\) is squarefree by submersion.
+Thus it divides \(a_3\) or \(b_n\), which is impossible
+since \(h\) has degree six and each of those coefficients
+has degree strictly less than six. The ratio is therefore
+constant. Since \(\gcd(3,n)=1\), unique factorization and
+the highest part \(x^3\) of \(a_3\) give \(a_3=(x-\zeta)^3\).
+
+On the geometric generic level \(h=t\), let \(\omega\) be
+the dual one-form to \(D\), given by \(dx/h_y\). The Keller
+condition makes \(\omega/(x-\zeta)\) rationally exact.
+Indeed expand \(L=A^{-1/3}\) formally at \(z=\infty\) with
+leading term \((x-\zeta)^{-1}z^{-1}\). The identity
+\[
+        D(B A_z L)-\partial_z(B D(A)L)=\pm\kappa L
+\]
+gives the result by taking \(z^{-1}\)-coefficients, since
+a \(z\)-derivative contributes zero. This applies the
+formal residue mechanism of
+[Wang and Yan, Proposition 3.17](https://arxiv.org/pdf/2610.36495v1)
+to the normalized generic level of the binary scalar.
+
+If \(h(\zeta,y)\) is nonconstant, the generic fibre meets
+\(x=\zeta\) at simple points of the polynomial in \(y\).
+At every such point \(x-\zeta\) is a parameter and \(h_y\)
+is a unit. The differential has a nonzero residue, so
+cannot be exact. Thus \(h(\zeta,y)\) is constant. Then
+\(h_x(\zeta,y)\) is nowhere zero, hence is a nonzero scalar.
+The coefficients of the positive powers of \(y\) in \(h\)
+are all divisible by \((x-\zeta)^2\).
+The coefficient of \(y^3\) has degree at most one, so
+vanishes. Translate \(x\) to set \(\zeta=0\).
+Since \(\deg_y h\ge2\) and its quadratic coefficient has
+degree at most two,
+\[
+                   h=\alpha x^2y^2+b(x)y+g(x),
+                   \qquad x^2\mid b,\quad g'(0)\ne0.
+\]
+Complete the square with \(Y=y+b/(2\alpha x^2)\).
+The polynomial \(g-b^2/(4\alpha x^2)\) has nowhere vanishing
+derivative, by submersion on \(Y=0\). Thus
+\(h=\mu_0+\lambda x+\alpha x^2Y^2\), with \(\lambda\ne0\).
+
+On \(h=t\) put \(u=xY\). The function field is rational in
+\(u\), with \(x=(t-\mu_0-\alpha u^2)/\lambda\), and
+\[
+                 \frac{\omega}{x}=-\frac{du}{\lambda x^2}.
+\]
+At either point \(u=u_0\) with \(u_0^2=(t-\mu_0)/\alpha\),
+this differential has nonzero residue:
+\((u-u_0)^2/x^2\) is a nonzero scalar multiple of
+\((u+u_0)^{-2}\), with nonzero derivative at \(u_0\).
+This contradicts rational exactness, excluding the final
+binary scalar case.
+
+
+### Exclusion of the repeated affine coefficient
+
+**Proposition SexticKellerSquareCuspRepeatedAffineExclusion.**
+The repeated affine-coefficient alternative of
+SexticKellerSquareCuspZeroAxialSlopeScalarReduction has no
+Keller completion.
+
+Translate \(X=x-\zeta\), put \(\lambda=h_0'(\zeta)\ne0\)
+and \(\mu_0=h_0(\zeta)\), and use
+\[
+ C=\mu_0+\lambda X+\alpha X^2v,\qquad
+ v=z+D_0(X,y).
+\]
+Here \(D_0=\gamma y^2+l(X)y+d(X)\) with
+\(\gamma=\rho/\alpha,\ \deg l\le2\).
+We use the polynomial shear only for this proof and keep
+the original total degree bound on the critical plane.
+
+The restrictions of the original \(A,B\) to \(X=0\) give
+a planar Keller pair since \(C_X=\lambda,\ C_y=C_z=0\)
+there. This pair is an automorphism by the planar degree
+bound. Its degrees are \(6,d_B\le4\), and the leading homogeneous
+form of \(A\) is \(y^6\). By the planar degree-divisibility
+and elementary reduction theorem, \(d_B=1,2,3\), and on
+this plane \(A=H(B)+L\), where \(H\) has degree \(6/d_B\)
+and \(L\) is affine linear. See [Chau, Sections 2–4](https://arxiv.org/pdf/math/0408077v1). For \(d_B=2,3\), elementary
+reductions give an affine \(L\) because a smaller positive
+degree dividing \(d_B\) must be one. The leading form of
+\(B\) is a multiple of \(y^{d_B}\). Since \((B,L)\) is an
+automorphism, \(B\) is affine along every \(L\)-line.
+Thus when \(d_B>1\), \(L\) is proportional to \(y\) up
+to translation and \(B=b_*z+p(y)\), \(b_*\in k^\times\).
+When \(d_B=1\), \(B\) is affine in \(y\) alone.
+In particular after the shear, \(A|_{X=0}\) has \(y\)-degree
+at most six. Its \(y^6\)-coefficient vanishes only if
+\(d_B=2\) and the shear cancels the quadratic in \(p(y)\).
+In that case \(B|_{X=0}\) in \((v,y)\) is affine,
+and \(A|_{X=0}\) is cubic with nonzero \(v^3\)-coefficient.
+
+On \(C=t\), write the two mates as polynomials in \(y\)
+over \(k(t,X)\) using \(v=(t-\mu_0-\lambda X)/(\alpha X^2)\).
+For this argument the tangent derivation is
+\(\mathcal D=-\alpha X^2\partial_X|_t\).
+If a mate has positive \(y\)-degree with nonzero constant
+leading coefficient in the full \((X,v,y)\)-ring, the
+formal residue argument used in the binary case gives
+\(\mathcal D(G)\in k^\times\) for some \(G\in k[X,v]\):
+the root of the leading coefficient can be taken in \(k\),
+and all Laurent coefficients lie in \(k[X,v]\).
+This is impossible, since integrating over \(k(t,X)\)
+would give \(G=c_0/X+H(t)\) with \(c_0\ne0\).
+Writing \(G\) as a polynomial in \(t\) over \(k(X)\)
+forces \(H\in k[t]\), contradicting polynomiality of \(G\)
+in \(X,v\).
+
+If \(\gamma=0\), \(A\) after the shear still has \(y\)-degree
+six with leading coefficient one, by the support bounds for
+\(A_i\). Thus \(\gamma\ne0\).
+After the shear \(B\) has \(y\)-degree at most five, and
+its \(y^5\)-coefficient is scalar: it uses only the \(y\)-term
+of \([z^2]B\) and the \(y^3\)-term of \(B_1\).
+The constant-leading-coefficient obstruction therefore
+gives \(n=\deg_y B\le4\). The bounds for \(A\) give
+\(m=\deg_y A\le7\). If \(m=7\), its coefficient is
+\(-\gamma^3[y]a_3+\gamma^2[y^3]A_2\), of degree at most
+one in \(X\), and vanishes on the critical plane.
+Thus \(a_7\) would be a nonzero scalar multiple of \(X\).
+For \(n=0\) the bracket is impossible since \(m=7\).
+For \(n>0\) its top coefficient gives
+\(a_7^n/b_n^7\in k(t)^\times\), contradicting the integral
+\(X\)-orders because \(1\le n\le4\).
+Hence the \(y^7\)-coefficient is zero:
+\([y^3]A_2=\gamma[y]a_3\), with both sides scalar.
+The \(y^6\)-coefficient is now a polynomial \(a_6(X)\)
+of degree three, with leading term \(-\gamma^3 X^3\).
+Indeed the remaining contributions come from the scalar
+coefficients just compared times \(l(X)\), from
+\([y^2]A_2\) of degree at most two, from \([y^4]A_1\)
+of degree at most one, and from \([y^6]A_0=1\).
+No term involving \(v\) contributes to \(a_6\).
+
+The formal \(y^{-1}\)-residue gives a rational primitive
+for \(dX/(X^2 a_6^{1/6})\) over the generic scalar fibre.
+Write \(W^6=a_6\). Projecting to the character of \(1/W\)
+for the cyclic extension gives a primitive \(S(X)/W\)
+with \(S\in k(t)(X)\). Its equation is
+\[
+                S'-\frac{a_6'}{6a_6}S=\frac1{X^2}.
+\]
+At a finite pole of \(S\), the logarithmic coefficient has
+residue zero or \(-j/6\) for a root of multiplicity \(j\).
+The derivative pole cannot cancel. Therefore \(S\) can have
+only a simple pole, at zero. At infinity the logarithmic
+coefficient is \(-1/(2X)+O(X^{-2})\), which excludes a
+nonzero polynomial part because its leading degree \(i\)
+would give a nonzero term of degree \(i-1\). Hence
+\(S=c_1/X\) with \(c_1\ne0\).
+At a nonzero root of \(a_6\) the equation would require
+\(S\) to vanish, so every root of \(a_6\) is zero.
+Thus \(a_6\) is a scalar multiple of \(X^3\).
+
+The critical plane is consequently the cancellation case
+\(d_B=2\) above. There \(B\) is affine after the shear,
+and \(A\) has total degree three in \(y,v\) and nonzero
+\(v^3\)-coefficient. In particular \([v y^5]A=0\) there.
+By the formula for \([y^3]A_2\) above this coefficient
+equals the scalar \(\gamma^2[y]a_3\) across the full ring.
+Thus \(a_3\) is univariate and \([y^3]A_2=0\).
+
+Now \(m=6\) excludes \(n=0\). The leading bracket relation
+\(a_6^n/b_n^6\in k(t)^\times\) gives
+\(\operatorname{ord}_0 b_n=n/2\); hence \(n=2\) or \(4\).
+For \(n=2\), the
+[quadratic mate theorem](KELLER_REPEATED_PARALLEL_SCALAR_QUADRATIC_MATE.md)
+makes \(b_2\) a square times a scalar in \(k(t)^\times\),
+in contradiction to its odd \(X\)-order. For \(n=4\),
+\(b_4\) is independent of \(v\): the \(v^2\)-coefficient
+has \(y\)-degree at most one, and the \(v\)-coefficient
+at most three. The leading relation therefore gives
+\(b_4=\beta X^2\) with \(\beta\in k^\times\).
+
+Use the signed weights \((-2,3)\) for \(X,y\) on \(C=t\),
+and put \(\Theta=(t-\mu_0)/\alpha\) and \(Y=X^{3/2}y\)
+in an algebraic extension when expressing initial forms.
+Here \(v_*=\Theta X^{-2}\) has weight four.
+The top of \(B\) has weight eight and is
+\[
+                      X^{-4}V(Y),\qquad
+             V(Y)=\beta Y^4+b_*'\Theta Y^2 .
+\]
+Indeed all terms of \(B\) of total degree at least two
+in \(v,y\) vanish on the critical plane. In particular
+the coefficient of \(v^2\) has no \(y\)-term, as that
+term has scalar coefficient, and the coefficient of \(v\)
+has no \(y^3\)-term, also scalar once the \(v^2y\)-term
+has vanished. The only possible tie with \(X^2y^4\)
+is an \(Xv y^2\)-term, giving \(b_*'\Theta Y^2\).
+
+The top of \(A\) has weight at least twelve from its
+nonzero \(a_6\) term. Its \(v^3\)-coefficient is
+univariate, its \(v^2\)-coefficient has \(y\)-degree at
+most two, and its \(v\)-coefficient at most four, by
+\(a_3\) univariate and \([y^3]A_2=0\).
+The coefficients of total \(v,y\)-degree above three
+vanish at \(X=0\). Using these orders, the only possible
+weights above twelve are fourteen from \(Xv y^4\) or
+thirteen from \(X y^5\). In these cases the top is
+\(X^{-7}U(Y)\) with \(U\) a nonzero multiple of \(Y^4\),
+or \(X^{-13/2}U(Y)\) with \(U\) a nonzero multiple of
+\(Y^5\), respectively. At weight twelve it is \(X^{-6}U(Y)\)
+with \(U(0)=a_3(0)\Theta^3\ne0\), from the critical-plane
+\(v^3\)-coefficient.
+
+For a top form \(X^{-q}U(Y)\), the expected weight of
+its bracket with \(X^{-4}V(Y)\) is \(2q+7>4\), whereas
+the actual bracket on the fibre is \(\pm\kappa/(\alpha X^2)\)
+of weight four. Thus \(4U'V-qUV'=0\). If \(q=7\) or
+\(13/2\), the orders at \(Y=0\) in this logarithmic
+identity would require \(4\deg U=q\operatorname{ord}_0 V\),
+where \(\operatorname{ord}_0 V\) is two or four. This
+is impossible for \(\deg U=4,5\), respectively.
+If \(q=6\), \(U(0)\ne0\) gives order zero for \(U\)
+and positive order for \(V\), again impossible.
+This proves the proposition.
+
+**Corollary SexticKellerCubicOuterSquareCuspInversion.**
+Every characteristic-zero sextic Keller map with ordinary
+highest tuple \((P^3,Px^4,x^6)\), \(P=xz+y^2\), is invertible.
+For the cubic outer maps on the tangent-conic pencil the
+square-cusp branch is therefore settled as well.
+
+Indeed the weight \((2,3,4)\) reduction and the affine
+inversion theorems settle \(k\ne0\) or \(e\ne0\).
+SexticKellerSquareCuspNonzeroAxialSlopeInversion settles
+\(k=e=0,\delta\ne0\). The zero-slope scalar reduction and
+the two preceding exclusions settle \(k=e=\delta=0\).
+
+
+**Corollary SexticKellerTangentConicCubicOuterInversion.**
+A characteristic-zero three-variable Keller map of ordinary degree
+six is invertible if its highest tuple is given by three independent
+basepoint-free binary cubics on a tangent-conic pencil
+\((xz+y^2,xy)\) or \((xz+y^2,x^2)\), in affine source coordinates
+over the algebraic closure.
+
+The [tangent-conic cubic classification](SEXTIC_KELLER_TANGENT_CONIC_CUBIC_OUTER.md)
+excludes the reduced singular member and the immersive square-member
+case. Its nonimmersive classification leaves two cusps away from
+the square, already excluded, and the cusp at the square,
+which is settled by the preceding corollary.

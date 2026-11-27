@@ -23,6 +23,9 @@ the missing full active-space gap
 for $k\ge4$ at arbitrary correlation. The remaining higher-cell blocks and
 global optimality remain open. External review and formal verification
 have not occurred.
+The common compressed-immanant formula (S67)--(S69) gives entrywise
+nonnegative matrix kernels in a fixed Young basis for every cell count
+and every symmetry block. It leaves the remaining spectral bounds explicit.
 
 ## The signed facet representation
 
@@ -1668,6 +1671,323 @@ independent scalar threshold $V$ with variance $\sigma^2/2$. It does
 not identify the whole facet operator with an ordinary Weyl-chamber
 OU semigroup, so the metric obstruction noted after (S48) is respected.
 
+## Every symmetry block is a compressed totally positive immanant kernel
+
+There is one formula behind all of the scalar and matrix kernels above.
+For a real irreducible orthogonal representation $R_\lambda$ of $S_k$,
+put $s=(12)$, $P_\lambda=(I-R_\lambda(s))/2$ and
+$V_\lambda^-=\operatorname{ran}P_\lambda$.
+The complete $\lambda$ multiplicity space is
+$L^2(W,\nu_{12};V_\lambda^-)$: ordering all untied coordinates leaves
+only the oriented-facet stabilizer $\langle s\rangle$.
+Schur averaging gives its ordinary vector inner product, up to the
+constant $k!/(2\dim V_\lambda)$, which cancels from spectral bounds.
+
+For $A=[e^{\tau x_i y_j}]_{i,j=2}^k$ define an element of
+$\mathbb R[S_{\{2,\ldots,k\}}]$ by
+
+\[
+ Z(A)=\sum_{\pi\in S_{\{2,\ldots,k\}}}
+                   \left(\prod_{i=2}^kA_{i,\pi(i)}\right)\pi^{-1}.
+\]
+
+Then the full unnormalized interaction kernel in this block is exactly
+
+\[
+ \boxed{\displaystyle
+ \mathcal K_{\lambda,\rho}(x,y)=
+ 2\Gamma_\rho(x,y)e^{\tau x_2y_2}
+       \left.P_\lambda R_\lambda(Z(A))P_\lambda
+                                      \right|_{V_\lambda^-}.}
+ \tag{S67}
+\]
+
+In particular the block need not be scalar, but its finite matrix size
+is exactly $\dim V_\lambda^-$; its entries are explicit immanants of
+the same strictly totally positive exponential matrix.
+
+Here is the group-algebra proof, including the normalization. Put
+$d=e_1-e_2$, $m_g=e^{\tau x\cdot gy}$, and
+$W_1=\sum_{g:g(1)=1}m_g g=e^{\tau x_2y_2}Z(A)$.
+Because $x_1=x_2$ and $y_1=y_2$, $m_g$ is unchanged under left or
+right multiplication by $s$. Thus direct coefficient comparison gives
+
+\[
+ \sum_{g\in S_k}(d\cdot gd)m_g g=(1-s)W_1(1-s).
+ \tag{S68}
+\]
+
+For example the coefficient of $g$ on either side is $m_g$ times
+$\mathbf1_{g(1)=1}-\mathbf1_{g(1)=2}
+-\mathbf1_{g(2)=1}+\mathbf1_{g(2)=2}$.
+The signed facet kernel sums over cosets of $\langle s\rangle$;
+the two representatives of each coset contribute equally after acting
+on $V_\lambda^-$. Therefore the full-group sum is divided by $2$.
+Each factor $1-s$ then acts as $2P_\lambda$, giving the factor $2$
+in (S67), rather than $1$ or $4$.
+The sign representation reduces (S67) to (S46). The standard
+representation reduces it to (S50), including its additional fixed-row
+permanent. The exterior and symmetric second powers give (S52) and
+(S57).
+
+**Pointwise positivity in every block.** There is a fixed orthonormal
+Young basis, independent of $x,y,\rho$, in which every entry of
+$\mathcal K_{\lambda,\rho}(x,y)$ is nonnegative for $x,y\in W$.
+This is an entrywise assertion, not the interface stability inequality.
+Two classical representation and total-positivity inputs suffice:
+
+* In Young's orthogonal form, each adjacent transposition has scalar
+  blocks $1,-1$ or a two-dimensional block with diagonal entries
+  $1/r,-1/r$ and both off-diagonal entries
+  $\sqrt{1-r^{-2}}$, where $|r|\ge2$. Consequently $I+R_\lambda(s_i)$
+  is entrywise nonnegative. Also $R_\lambda((12))$ is diagonal: the
+  entries $1,2$ of a standard tableau share a row or a column.
+  See Vershik--Okounkov, Propositions 6.1--6.2 and (6.3)--(6.5),
+  [retained arXiv v3, p. 23](sources/vershik-okounkov-young-form-0503040v3.pdf).
+* For every totally nonnegative $A$, the group-algebra sum
+  $\sum_\pi(\prod_iA_{i,\pi(i)})\pi$ is a nonnegative linear
+  combination of products of interval symmetrizers
+  $z_J=\sum_{\pi\in S_J}\pi$, with $J$ consecutive.
+  Rhoades--Skandera state this exact decomposition in the proof of
+  Proposition 2.2 and describe its cone inclusion in Section 7,
+  [retained author preprint, pp. 4 and 15](sources/rhoades-skandera-kl-immanants-2005.pdf),
+  crediting Stembridge's Theorem 2.1. Inverting group elements reverses
+  the products, and each $z_J$ is invariant under inversion, so the
+  same statement holds for the convention defining $Z(A)$ above.
+
+The cited statements and relevant formulas were inspected in the
+retained primary texts. Their hypotheses match because every minor of
+$A$ is strictly positive by (S47). No positivity result for arbitrary
+positive-entry matrices is imported.
+
+For completeness, the passage from these inputs to matrix positivity
+does not require a further representation theorem. On an interval
+$J$, average the orthogonal projections
+$(I+R_\lambda(s_i))/2$ over its adjacent generators. This is an
+entrywise nonnegative self-adjoint operator with spectrum in $[0,1]$.
+Its powers converge to the orthogonal projection onto the common
+fixed space, which is $R_\lambda(z_J)/|S_J|$. Hence every interval
+symmetrizer, and every product of them, is entrywise nonnegative in
+the same Young basis. The decomposition above proves this for
+$R_\lambda(Z(A))$. Finally $P_\lambda$ is a diagonal $0,1$ matrix in
+that basis, so compression preserves entrywise nonnegativity. Thus
+
+\[
+        (\mathcal K_{\lambda,\rho}(x,y))_{ab}\ge0
+              \qquad(x,y\in W)
+ \tag{S69}
+\]
+
+for every nontrivial $\lambda$. No assertion of strict positivity of
+all entries is needed here.
+
+This provides an all-$k$ structural explanation of the reflected
+kernel signs. It does not place the normalized spectrum below $1$.
+Indeed the standard block already has the positive translation
+eigenfunction with eigenvalue $1/\rho>1$ before imposing mass balance.
+The remaining tasks are still the constrained standard inequality
+(S51), and appropriate spectral bounds or positive supersolutions for
+the other nonhook blocks when $k\ge5$. Equations (S56), (S60) and
+(S62) provide those additional arguments for the sectors they cover.
+
+## The exact remaining standard-sector spectral test
+
+There are two conditions to check in the standard block, even after
+its positive translation eigenfunction is known. This distinction is
+essential when using the reflected kernels to seek an all-$k$ version
+of (S37).
+
+Work on $L^2(W,\nu_{12})$ with the folded kernel (S50), and put
+
+\[
+ T=a_\rho^{-1/2}\mathcal K_{{\rm std},\rho}a_\rho^{-1/2},\qquad
+ \psi=\sqrt{a_\rho},\quad b=a_\rho^{-1/2},\quad
+ e=\psi/\|\psi\|,\quad c=\rho^{-1}-1>0.
+\]
+
+The row identity gives $T\psi=\rho^{-1}\psi$. Since the kernel is
+strictly positive, this is the simple largest eigenvalue. One can check
+the assertion directly: for an eigenvector $v$, positivity gives
+$|\lambda|\langle\psi,|v|\rangle\le
+\langle T\psi,|v|\rangle=\rho^{-1}\langle\psi,|v|\rangle$;
+equality at the positive eigenvalue forces one sign, and orthogonality
+to $\psi$ then rules out another eigenvector. Compactness supplies the
+remaining spectral separation. Define
+
+\[
+ \lambda_* =\sup\operatorname{spec}(T|_{e^\perp}),\qquad
+ b_1=\langle b,e\rangle>0,\quad b_\perp=b-b_1e.
+\]
+
+For $\lambda_*<1$, let $A=(I-T)|_{e^\perp}>0$. The standard
+inequality (S51), with a positive gap, is equivalent to the two tests
+
+\[
+ \boxed{\quad \lambda_*<1,\qquad
+       c\langle b_\perp,A^{-1}b_\perp\rangle<b_1^2.\quad}
+ \tag{S70}
+\]
+
+Indeed $u=\sqrt{a_\rho}h$ converts ordinary mass balance into
+$\langle u,b\rangle=0$. Write $u=te+v$ with $v\perp e$.
+Then $t=-\langle v,b_\perp\rangle/b_1$ and
+
+\[
+ \langle u,(I-T)u\rangle
+   =\langle v,Av\rangle
+        -\frac{c}{b_1^2}\langle v,b_\perp\rangle^2.
+\]
+
+If $\lambda_*\ge1$, compactness supplies an eigenvector at an
+eigenvalue at least $1$ in $e^\perp$. Its span with $e$ intersects
+$b^\perp$ nontrivially, and the form is nonpositive there. Thus a
+positive balanced gap requires $\lambda_*<1$. Under that condition,
+Cauchy--Schwarz in the $A$ inner product proves sufficiency of the
+second test. It also proves necessity, by taking
+$v=A^{-1}b_\perp$ if $b_\perp\ne0$. Equality in the second test
+gives a balanced zero mode, and reversing it gives a negative mode.
+The case $b_\perp=0$ is immediate.
+
+This also gives a quantitative implication. Put
+$\beta=c\langle b_\perp,A^{-1}b_\perp\rangle/b_1^2$ and
+$\delta=1-\lambda_*>0$. The normalized form on $b^\perp$ is at
+least
+
+\[
+ (1-\beta)\delta\frac{b_1^2}{\|b\|^2}\|u\|^2.
+\]
+
+Consequently the standard part of $\mathfrak q_\rho$ has gap at least
+$\mu_\rho(1-\beta)\delta b_1^2/\|b\|^2$ if (S70) is proved.
+Equivalently its second test is
+$\langle b,(I-T)^{-1}b\rangle<0$, after the first test makes this
+inverse well defined. Neither test has been established here for the
+simplex at every $k\ge4$ and every $0<\rho<1$.
+
+**A control for the mass-weight mismatch.** On two atoms of measure
+$1/2$ each take $\rho=1/2$, $a=(1,4)$ and the symmetric positive
+kernel matrix
+
+\[
+ K=\begin{pmatrix}2&2\\2&14\end{pmatrix}.
+\]
+
+Its integral row sum is $a/\rho$. The normalized integral operator
+has matrix
+$T=\left(\begin{smallmatrix}1&1/2\\1/2&7/4\end{smallmatrix}\right)$,
+eigenvalues $2$ and $3/4$, and positive translation eigenvector
+$\sqrt a=(1,2)$. Nevertheless the ordinarily balanced $h=(1,-1)$
+satisfies
+
+\[
+ \int ah^2d\nu-\iint K(x,y)h(x)h(y)d\nu(x)d\nu(y)=-\tfrac12.
+\]
+
+Here $b=(1,1/2)$ and
+$\langle b,(I-T)^{-1}b\rangle=1/2>0$; the second test fails.
+This is a counterexample to discarding the scalar test or replacing
+ordinary mass balance by spectral orthogonality. It is not a simplex
+counterexample. The checker verifies these two-atom identities exactly.
+
+## The standard and rotation-hook kernels have an exact Gaussian link
+
+There is also a differential explanation of the hook transport matrix
+and the rotational ground state. It keeps the junction term visible
+when trying to extend the one-dimensional OU comparison.
+
+Use the full-facet scalar kernel (S49) and vector hook kernel (S52),
+denoted $K_{\rm std}$ and $\mathsf K_{\rm hook}$. Fix $k\ge3$ and
+$0<\rho<1$. Let $h$ be a $C^1$ function on
+$H=E\cap\{y_1=y_2\}$, invariant under $S_{\{3,\ldots,k\}}$,
+such that $h$ and its first derivatives have at most polynomial
+growth. Gradients below are intrinsic to $H$. Put
+
+\[
+ w_l=(e_1+e_2)/2-e_l,\quad D_l=I-w_lw_l^T,\quad
+ C_l=I-2w_lw_l^T,\qquad
+ (\mathcal R_lh)(x)=\int_{F_{12}}\Gamma_\rho(x,y)
+    e^{\tau x\cdot(2l)y}(y_2-y_l)h(y)d\nu_{12}(y).
+\]
+
+Here $D_l=P_H(2l)|_H$ is the tangent compression of the adjacent
+transposition, whereas $C_l$ is its hook transport. Since
+$|w_l|^2=3/2$, they satisfy $C_lD_l=D_lC_l=I$ on $H$.
+In particular $C_l$ is the inverse tangent compression, rather than
+an orthogonal reflection. The following identities hold on the
+interior of $F_{12}$:
+
+\[
+ \boxed{\begin{aligned}
+ \mathsf K_{\rm hook}(y h(y))(x)
+   &=\sigma^2\mathsf K_{\rm hook}(\nabla h)(x)
+                           +\rho x(K_{\rm std}h)(x),\\
+ \nabla(K_{\rm std}h)(x)
+   &=\rho\mathsf K_{\rm hook}(\nabla h)(x)
+                   +\frac{\rho}{\sigma^2}
+                                    \sum_{l=3}^k w_l\mathcal R_lh(x).
+ \end{aligned}}
+ \tag{S71}
+\]
+
+To prove the first identity, integrate each term of
+$\mathsf K_{\rm hook}\nabla h$ by parts in $y$. Write
+$M_0=\Gamma_\rho e^{\tau x\cdot y}$ and
+$M_l=\Gamma_\rho e^{\tau x\cdot(2l)y}$. Gaussian differentiation
+gives
+
+\[
+ \nabla_y(M_0\phi_H)=-\sigma^{-2}(y-\rho x)M_0\phi_H,
+ \qquad
+ C_l\nabla_y(M_l\phi_H)
+            =-\sigma^{-2}(C_ly-\rho x)M_l\phi_H.
+\]
+
+The constant factor between $\phi_Hd\mathcal H^{k-2}$ and
+$d\nu_{12}$ cancels. There are no surviving boundary terms.
+Indeed on the face $y_2=y_l$ the outward unit normal is
+$m_l=-w_l/|w_l|$, and $M_l=M_0$. Thus the same-facet term and
+the $l$th adjacent term cancel there, since
+$(2I+C_l)m_l=0$. For $r\ne l$,
+$C_rw_l=w_l-w_r=-C_lw_r$. Substitution $y\mapsto(lr)y$
+maps the face $l$ to face $r$, preserves $h$ and its Gaussian surface
+measure, and converts $M_r$ into $M_l$: on the face $l$,
+$(2r)y=(2l)(lr)y$. These terms cancel in pairs. Gaussian decay
+removes the boundary at infinity. The remaining interior integral is
+
+\[
+ \mathsf K_{\rm hook}\nabla h
+    =\sigma^{-2}\bigl(\mathsf K_{\rm hook}(y h)
+                                      -\rho xK_{\rm std}h\bigr).
+\]
+
+For the second identity differentiate $K_{\rm std}h$ in $x$.
+Its linear factors are $y$ in the same-facet term and $D_ly$ in the
+adjacent terms. Subtracting the first identity multiplied by $\rho$
+leaves $D_l-C_l=w_lw_l^T$ and $w_l\cdot y=y_2-y_l$, proving
+the displayed residual. Polynomial growth justifies all differentiations
+and integrations by parts by Gaussian domination.
+
+Setting $h=1$ in the first identity and using
+$K_{\rm std}1=a_\rho/\rho$ recovers
+$\mathsf K_{\rm hook}y=a_\rho x$, the rotation ground-state
+identity, without a maximizing assumption. The second one gives
+$\nabla a_\rho=(\rho^2/\sigma^2)\sum_lw_l\mathcal R_l1$.
+Consequently
+
+\[
+ \nabla\bigl((a_\rho-K_{\rm std})h\bigr)
+  =(a_\rho I-\rho\mathsf K_{\rm hook})\nabla h
+      -\frac{\rho}{\sigma^2}\sum_lw_l
+                     \bigl(\mathcal R_lh-\rho h\mathcal R_l1\bigr).
+\]
+
+Thus the kernels do not satisfy the plain OU derivative intertwining:
+the explicit adjacent-facet residual must be controlled. Its displayed
+identity does not assert a favorable sign for general balanced $h$,
+and does not prove (S51). The exact checker controls the tangent-inverse
+identity and the boundary-pair cancellation for $3\le k\le8$; the
+unrestricted analytic identities are the written argument above.
+
 ## Monotonicity and the other global obligations
 
 **Raw-deficit obstruction.** For every $k\ge2$, the unnormalized
@@ -1694,6 +2014,8 @@ The remaining targets are distinct:
 * Prove the active-space higher-cell gap in (S4). The standard block
   has the positive kernel (S49)--(S50)
   and the unresolved weighted Poincare inequality (S51).
+  Its exact two-part spectral criterion is (S70); a bound on the
+  second normalized eigenvalue alone does not settle ordinary balance.
   The complete rotation hook has the all-correlation gap (S56).
   The $(k-2,2)$ block has the strict gap (S60), and every sign block is
   settled by (S61)--(S66). In four cells only (S51) remains; for
@@ -1740,6 +2062,17 @@ minor inequalities and exact Gaussian Vandermonde moments for one
 through six untied coordinates, with controls for the wrong correlation
 degree, insufficient positivity hypotheses and the $k=3,4$ exceptional
 scopes. It does not verify the imported Hermitian transition theorem.
+For (S67)--(S69) it checks the free group-algebra identity through $k=7$,
+exact rational Young-generator Coxeter relations and selected positive
+immanant matrices for every partition through $k=5$ and four partitions
+at $k=6$. The unrestricted matrix-positivity theorem uses the two retained
+primary statements and the written compression argument.
+It also verifies the exact two-atom mass-weight counterexample following
+(S70). The infinite-dimensional equivalence (S70) is a written proof,
+and neither of its two tests is certified for the general simplex.
+For (S71) it checks the tangent-compression inverse and all boundary-pair
+permutation identities through eight cells, not the analytic integrations
+by parts or a sign bound for their residual.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

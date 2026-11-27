@@ -195,3 +195,155 @@ The [weighted-square coordinate theorem](SEXTIC_KELLER_ALIGNED_CUSP_EXCLUSION.md
 gives inversion. It follows that noninvertibility in the
 linear-square frame requires \(b=0\), and scaling \(Q\)
 gives the claimed pure powers.
+
+
+## Inversion for the closed quartic ratio
+
+**Theorem SexticKeller644AlignedLinearPowersInversion.**
+Let \((P,Q,T)\) be a characteristic-zero three-variable Keller map
+with ordinary highest forms \(x^4,x^6,C\), respectively, where
+\(C\) has degree four, \(h=C(0,y,z)\ne0\), and \(C/x^4\) is a
+closed projective parameter over the algebraic closure.
+Then \(P\) has a polynomial coordinate completion with inverse
+degree at most four, and the map is invertible.
+
+Work over the algebraic closure \(k\). As in the preceding proofs,
+\(k(x,C)\) is relatively algebraically closed in \(k(x,y,z)\),
+and \((x,C)\) is onto. In particular the polynomial kernel
+of \(\det J(x,C,\cdot)\) is \(k[x,C]\). The same formal
+root subtraction as in (1) therefore gives
+\[
+ Q_\epsilon\equiv
+   \sum_{0\le i<11,\;j\ge0}
+      c_{ij}\epsilon^i X^{6-i-4j}T_\epsilon^j
+       \pmod{\epsilon^{11}},
+ \qquad X=P_\epsilon^{1/4}=x+O(\epsilon).
+ \tag{2}
+\]
+For clarity, the rescaled determinant is a nonzero scalar times
+\(\epsilon^{11}\). At the first unmatched order, its coefficient
+equation places the residual in \(k(x,C)\).
+The residual is polynomial after localizing at \(x\), so the
+onto contraction gives \(k[x,x^{-1},C]\).
+Homogeneity of degree \(6-i\) gives the exponents in (2).
+Lifting the invariant coefficient from \(x,C\) to
+\(X,T_\epsilon\) raises the unmatched order.
+This uses the [formal root subtraction for aligned powers](SEXTIC_KELLER_ALIGNED_LINEAR_POWERS.md#formal-expansion-at-the-first-weight),
+adapted here to a quartic third component.
+The ordinary highest sextic gives \(c_{00}=1\) and \(c_{0j}=0\)
+for \(j>0\). Subtract scalar multiples of \(P,T,1\) from \(Q\)
+to set \(c_{20}=c_{21}=c_{60}=0\). Write \(\gamma=c_{11}\).
+
+### Lowest weight and the mixed correction
+
+Since \(P\) is a submersion of degree four, it depends on \(y,z\).
+Decrease the weight of \(x\) from one to the first tie in \(P\)
+with \(x^4\), keeping the other two weights one.
+Write this weight as \(w=r/s\) in lowest terms. The possibilities
+\((r,s)\) are \((1,2),(1,3),(2,3),(1,4),(3,4)\):
+a transverse monomial \(x^u y^v z^b\) of lower ordinary degree
+ties at the ratio of its transverse degree to \(4-u\).
+Put \(a=1-r/s\), and take minimum weights \(a,1,0,0\)
+in \(x,\epsilon,y,z\). With the formal variable
+\(t=\epsilon^{s-r}/x^s\) the minimum parts are
+\[
+ P_{\epsilon,*}=x^4 f(t),\qquad T_{\epsilon,*}=h,\qquad
+ f(0)=1,\quad 1\le\deg_t f\le\lfloor 4/s\rfloor.
+\]
+The coefficient of \(t^n\) in \(f\) is homogeneous of transverse
+degree \(nr\).
+
+The term \(c_{ij}\epsilon^i X^v T_\epsilon^j\) of (2), with
+\(v=6-i-4j\), has minimum weight
+\[
+                       6a+ i(r/s)-4ja.
+\]
+For any least weight among nonzero terms in (2), take the
+smallest \(\epsilon\)-index \(i\) attaining that weight.
+There is only one such \(j\) at that \(i\), and the
+\(\epsilon^i\)-coefficient of the least-weight part is
+\(c_{ij}x^v h^j\). It cannot have \(v<0\), since the left
+side of (2) is polynomial and \(i<11\). This proves that
+the least weight is bounded below by the smallest weight
+of a nonzero term with \(v\ge0\).
+The only possibilities for \(v\ge0\) after the target
+subtractions are \(j=0\) and \((i,j)=(1,1)\).
+
+If \(\gamma\ne0\), the weight of \(\epsilon X T_\epsilon\)
+is below \(6a\), since \(r/s\le3/4<4/5\).
+It is then the least weight. The other indices at that
+weight have
+\(i=1+n(s-r),\ j=1+nr/4\) with \(n>0,\ 4\mid nr\).
+The contribution from \((1,1)\) is
+\(\epsilon x h\gamma f(t)^{1/4}\).
+For \(1\le n\le\lfloor4/s\rfloor\), no other indices
+contribute at its \(\epsilon^{1+n(s-r)}\)-coefficient,
+since \(0<nr<4\). These indices are all below eleven,
+and \(1-ns<0\). Polynomiality requires the corresponding
+coefficients in \(f^{1/4}\) to vanish. This makes \(f=1\)
+to its full degree, contrary to the tie. Hence \(\gamma=0\).
+
+### The weighted square
+
+Now the least weight in (2) is \(6a\).
+The terms at equality have
+\(i=n(s-r),\ j=nr/4\) with \(n\ge0,\ 4\mid nr\).
+Division by \(x^6\) gives the following series for that
+weight:
+\[
+ f(t)^{3/2}+
+ \sum_{\substack{n>0,\;4\mid nr\\ n(s-r)<11}}
+      d_n\,h^{nr/4}t^n f(t)^{(6-ns)/4}.
+ \tag{3}
+\]
+A coefficient of \(t^n\) must vanish if \(ns>6\) and
+\(n(s-r)<11\), again by polynomiality in \(x\).
+No higher-weight part of (2) enters these equations.
+
+For \(s=4\), \(f=1+L t\) and the correction terms in
+(3) start at \(n=4\). Its coefficient at \(n=2\) is
+\(3L^2/8\), so \(L=0\), impossible.
+For \(s=3\), \(f=1+L t\) again. For \(r=1\) the
+corrections start at \(n=4\). For \(r=2\) the first
+one is a multiple of \(h t^2\), since \(6-2s=0\),
+and the next starts at \(n=4\). Thus at \(n=3\) both
+cases give \(-L^3/16=0\), a contradiction.
+
+It remains that \(r=1,\ s=2\). Write \(f=1+L t+M t^2\).
+Through order six the series (3) is \(f^{3/2}+D t^4 f^{-1/2}\),
+where \(D=d_4 h\).
+At \(n=4\) the vanishing gives
+\(D=-3(L^2-4M)^2/128\).
+With this substitution the coefficient at \(n=6\) is
+\(- (L^2-4M)^3/512\). Both computations are reproduced by
+the [exact coefficient checker](check_sextic_644_closed_quartic_ratio.py).
+The vanishing at \(n=6\) gives \(M=L^2/4\).
+The nontrivial tie implies \(L\ne0\). Thus the highest
+form of \(P\) in weights \((1,2,2)\) is
+\((x^2+L/2)^2\), with \(L\) a nonzero linear form in the
+transverse variables. The
+[weighted-square coordinate theorem](SEXTIC_KELLER_ALIGNED_CUSP_EXCLUSION.md)
+gives the bounded completion and inversion. Inversion descends
+by uniqueness of the formal inverse.
+
+**Corollary SexticKeller644ClosedQuarticRatioInversion.**
+Let \(F\) be a characteristic-zero three-variable Keller map
+of ordinary component degrees \((6,4,4)\).
+If the two quartic highest forms are coprime and their
+projective ratio is closed over the algebraic closure, then
+\(F\) is invertible.
+
+Indeed one can choose two independent squarefree members of
+the lower pencil by a constant target change over the
+algebraic closure. On the complement of the base locus the
+pencil gives a nonconstant projective morphism to a line, so
+its generic fibre is generically smooth in characteristic zero
+and reduced. No component of a member is contained in the
+base locus since the generators are coprime. Equivalently,
+a repeated component in a finite fibre lies in the critical
+locus of the ratio and is therefore one of finitely many
+irreducible divisors. Thus squarefree members form a nonempty
+open subset of the parameter line. Closedness is unchanged
+by a fractional linear transform of the ratio. The pure-powers
+reduction and the preceding theorem apply, and the inverse
+descends to the original field.

@@ -1,73 +1,70 @@
-# The multiplicity-26 Weyl edge and the fractional-power mate
+# The multiplicity-26 and multiplicity-30 Weyl edges
 
-Work over \(\mathbb C\). The case under consideration has reduced
-orders \(12,18\), with leading coefficients proportional to \(h^2,h^3\).
-Assume there is a multiplicity-26 root of \(h\), translated to zero,
-and at least one small root (a root of multiplicity less than six).
-Put \(e=\gcd(6,\{\operatorname{mult}_r h\})\), so \(e=1\) or \(2\).
-
-The [translated high-root calculation](POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md#the-crossing-at-520-inside-the-gcd-six-support)
-gives the edge from \((6,26)\) to \((5,20)\) in Fourier coordinates
-of weight \((6,-1)\). In the original differential coordinates use
-weight \((-1,6)\) on \((x,y)\) and put \(z=x^6 y\).
-The two top symbols are proportional to \(R^2,R^3\), where
+Work over an algebraically closed characteristic-zero field.
+Consider reduced differential orders \(12,18\) with leading
+coefficients proportional to \(h^2,h^3\). Translate a root
+of \(h\) of multiplicity \(u\in\{26,30\}\) to zero.
+Use the weight \((-1,6)\) on \((x,y)\) and put \(z=x^6y\).
+The top symbols are proportional to \(R^2,R^3\), with
+\(R=x^{-\omega}r(z)\), \(\omega=36-u\), and
 \[
-                  R=x^{-10}r(z),\qquad
-                  r(z)=\rho z^5(z+\beta),\quad \rho\beta\ne0 .
+\begin{array}{c|c|c}
+ u & \omega & r(z)\\ \hline
+ 26 & 10 & \rho z^5(z+\beta),\quad \rho\beta\ne0\\
+ 30 & 6 & zL(z),\quad \deg L=5,\quad L(0)\ne0 .
+\end{array}
 \]
-In particular their weights are 20 and 30. The Poisson loss is 5.
-These local endpoints use the multiplicity-26 branch of the
-order-twelve calculation and do not require a bound on \(\deg h\).
-The [next-face argument](#exclusion-by-the-next-newton-face)
-excludes the entire stated branch.
+These are the translated
+[(5,20) and (6,30) crossings](POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md#the-crossing-at-520-inside-the-gcd-six-support)
+in the Fourier coordinates. In both cases \(r\) has degree
+six and at least one simple root. The commutator loses weight
+five. Write \(e=\gcd(6,\{\operatorname{mult}_r h\})\).
 
-## The negative fractional-power coefficients
+## Normalization to the pure cube
 
-**Proposition PolynomialWeylOrderTwelveHighRootPureCube.** In the
-stated multiplicity-26 branch, after constant scalings, subtraction
-of a scalar and a multiple of \(P\) from \(Q\), and translation of
-\(P\) by a scalar, the pair satisfies
+**Proposition PolynomialWeylOrderTwelveHighRootPureCube.**
+At either of the stated translated edges, after constant
+scalings, subtraction of a scalar and a multiple of \(P\)
+from \(Q\), and translation of \(P\) by a scalar, the pair
+satisfies
 \[
                  Q=(P^{3/2})_+,\qquad [Q,P]=\kappa\ne0 .
 \]
-The leading coefficient of \(P\) can be written \(h^2\), and the
-positive root in the formal differential expansion is chosen to
-have leading coefficient \(h\). The changes preserve the
-multiplicity-26 edge.
+The normalization preserves its two top symbols, up to the
+stated constant scalings.
 
-The [small-root fractional-power formula](POLYNOMIAL_WEYL_SMALL_ROOT_SPECTRAL_CONSTRAINTS.md#fractional-powers-in-the-differential-mate)
-gives the powers \(P^{j/(2e)}\) in \(Q\).
-Normalize the coefficient of \(P^{3/2}\) to one. Subtract the
-\(P\) and constant terms and absorb the \(P^{1/2}\) term by
-translation of \(P\): the differential part of
-\((P+d)^{3/2}\) is \((P^{3/2})_++(3d/2)(P^{1/2})_+\).
-The other binomial terms have negative differential order.
-This proves the claim for \(e=1\). For \(e=2\), after also
-rewriting the remaining terms in the translated variable,
-only \(P^{j/4}\) with \(j=1,3,5\) could remain.
+Use the
+[fractional-power expansion by differential order](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#fractional-powers-by-differential-order)
+to write \(Q=\sum_{j=0}^{3e}\gamma_j(P^{j/(2e)})_+\).
+Normalize \(\gamma_{3e}=1\).
+Subtract the \(P\) and constant terms and absorb \(P^{1/2}\)
+by translation of \(P\). For example
+\(((P+d)^{3/2})_+=(P^{3/2})_++(3d/2)(P^{1/2})_+\).
+When rewriting all the other terms in the translated variable,
+their indices only decrease by multiples of \(2e\);
+thus they do not generate new indices divisible by \(e\).
 
-Suppose the largest such \(j\) has nonzero coefficient.
-Then \(Q^2-P^3\) has differential order \(18+3j\) and
-leading coefficient proportional to \(h^{3+j/2}\).
-Its weight is at least \(30+5j>15\) by that monomial
-at the high root. Its commutator with \(P\) is
-\(2\kappa Q\) of weight 30, so its top symbol must Poisson
-commute with \(R^2\).
-A homogeneous symbol \(x^{-w}A(z)\) doing so has
-\[
-                 w A r'-10 A' r=0.
-\]
-At the simple root of \(r\), this forces \(w\) to be a
-nonnegative multiple of 10 and \(A\) proportional to
-\(r^{w/10}\). In particular the next possible weight above
-\(30+5j\) forces differential order at least
-\(18+3(j+1)\), contradicting the order \(18+3j\).
-Thus the odd coefficients also vanish.
+Suppose the largest remaining \(j\) with \(\gamma_j\ne0\)
+exists. Then \(e\nmid j\), and \(Q^2-P^3\) has differential
+order \(18+6j/e\), with leading coefficient proportional
+to \(h^{3+j/e}\). In particular its weight is at least
+\(\omega(3+j/e)\) by the translated root. Its commutator
+with \(P\) is \(2\kappa Q\) of weight \(3\omega\).
+Since \(\omega(3+j/e)+2\omega-5>3\omega\),
+its top symbol must Poisson commute with \(R^2\).
+
+A homogeneous commuting symbol \(x^{-w}A(z)\) satisfies
+\(w A r'-\omega A'r=0\). At a simple root of \(r\)
+this forces \(w/\omega\) to be a nonnegative integer.
+Then \(A\) is proportional to \(r^{w/\omega}\).
+The next possible weight at least \(\omega(3+j/e)\)
+therefore forces differential order strictly above
+\(18+6j/e\), a contradiction. This proves the proposition.
 
 ## The four-simple-root profile is excluded
 
 **Theorem PolynomialWeylOrderTwelveHighRootOddLowMultiplicityExclusion.**
-Under the above hypotheses \(e=1\) is impossible.
+At a multiplicity-26 root, \(e=1\) is impossible.
 In particular the degree-thirty boundary profile
 \(h=A\,x^{26}(x^4-\lambda_0)\), \(A\lambda_0\ne0\), is excluded.
 More generally in the degree-thirty branch with a high root
@@ -135,7 +132,49 @@ for 26 and the remaining roots for four. If any of those
 multiplicities is odd, their common gcd with 6 and 26 is one.
 The only remaining partitions are \((4)\) and \((2,2)\).
 
-## The remaining even profiles
+## The even face at multiplicity 26
+
+**Proposition PolynomialWeylOrderTwelveHighRootEvenFace.**
+At a multiplicity-26 root with \(e=2\), set \(U=P^{1/2}\)
+in the pure cube normalization. There is a constant \(c\)
+for which \(U^3-Q-cU^{-1}\) has differential order \(-9\).
+The operator \(W=Q^2-P^3+2cP\) then has order nine and
+weight fifteen at \((-1,6)\). In the notation of (1)
+its top symbol is \(x^{-15}w(z)\), where
+\[
+        w=rG,\qquad
+        G=-\frac{2\kappa}{15\beta^2}\,z(z+\beta)(z-\beta/2).
+\]
+
+Put \(S=U^3-Q\). In \(S\) or its successive remainders,
+the only possible leading orders in \((-11,0)\) are
+\(-3,-6,-9\): their leading coefficients are proportional
+to \(h^{j/6}\) by differential-order comparison.
+Order \(-3\) is impossible since \(Q^2-P^3\) would have
+order fifteen and weight at least twenty-five, by the
+multiplicity-26 root. A weight above fifteen requires a
+commuting top face, which in this case would have weight
+at least thirty and differential order at least eighteen.
+Remove order \(-6\), if present, by subtracting \(cU^{-1}\).
+Order below \(-11\) would make the commutator zero.
+If the remainder has order \(-11\), its leading coefficient
+is \(\kappa B/(12h^2)\), since \(h^{-11/6}\) is not
+rational for \(e=2\). The order-seven contradiction from
+(1) applies without change. Thus the remainder has
+order \(-9\) and leading coefficient proportional to
+\(h^{-3/2}\).
+
+This makes \(W\) have order nine, and its leading
+coefficient gives weight at least fifteen. A larger weight
+would require a commuting top face of order at least twelve.
+Thus the weight is fifteen and (1) holds. Its root orders
+force \(w/r\) to vanish at both \(0,-\beta\).
+The equation \(G'-(r'/2r)G=-\kappa/10\) gives the
+displayed cubic. Substituting it verifies the equation,
+and the difference of two solutions would be proportional
+to \(r^{1/2}\), which is not rational.
+
+## The small-root consequence of the even face
 
 **Corollary PolynomialWeylOrderTwelveHighRootEvenProfile.**
 If the multiplicity-26 branch with a small root survives,
@@ -150,22 +189,8 @@ integer classes \(0,\ldots,k-1\) with \(k=6-u\).
 - In the \((4)\) partition, its quadruple root has
   \(0,0,1,1\bmod 2\), or \(1/2,1/2,3/2,3/2\bmod 2\).
 
-The pure cube proposition still applies for \(e=2\).
-For \(S=U^3-Q\) the leading rational term of negative
-order above \(-11\) can now have order \(-3,-6,-9\).
-Order \(-3\) is impossible: \(Q^2-P^3\) would have order
-15 and weight at least 25 from its leading coefficient
-proportional to \(h^{5/2}\). Its commuting top face
-would require order at least 18. Subtract \(cU^{-1}\)
-as above to remove order \(-6\) if present.
-The remaining operator must have order \(-9\); otherwise
-it has order \(-11\) and the preceding degree-one
-contradiction applies. The leading coefficient at
-order \(-11\) in that case is still \(\kappa B/(12h^2)\),
-since \(h^{-11/6}\) is not rational for \(e=2\) either.
-
-The nonzero coefficient at order \(-9\) in
-\(S-cU^{-1}\) is a constant times \(h^{-3/2}\).
+The even-face proposition supplies a nonzero order-minus-nine
+coefficient proportional to \(h^{-3/2}\).
 In the fixed scalar wave with \(Z^{12}=\lambda\)
 it contributes a nonzero term of degree \(-9\) to the
 \(Q\) logarithmic derivative equation, after cancellation
@@ -193,22 +218,6 @@ integer or all four belong to a single noninteger
 sector. In that sector (3) gives
 \(4\eta+2\equiv2\bmod2\), so it is half-integral.
 Translation invariance yields precisely the two lists.
-
-As an additional check in the surviving case, \(W\) from
-above has differential order 9 and weight 15. A larger
-weight would force a commuting top symbol of order
-at least 12. Its leading coefficient gives weight 15
-exactly, and (1) has the unique polynomial solution
-\[
-                  w=rG,\qquad
-         G=-\frac{2\kappa}{15\beta^2}\,z(z+\beta)(z-\beta/2).
-\]
-Indeed the root orders in (1) force the two zeros of
-\(G\), and its equation
-\(G'-(r'/2r)G=-\kappa/10\) determines the remaining
-factor. Both the small-root classes and this high-root
-face are necessary conditions for the remaining even
-branches. They supply no polynomial Weyl pair.
 
 ## A primitive length-two commutator problem
 
@@ -332,10 +341,7 @@ reduction and the order-34 resultant.
 **Theorem PolynomialWeylOrderTwelveMultiplicityTwentySixExclusion.**
 A polynomial Weyl pair of reduced differential orders \((12,18)\)
 with nonzero scalar commutator cannot have a common leading factor
-with a root of multiplicity 26 and a root of multiplicity less than
-six. In particular, at common-factor degree thirty, the only
-remaining root profile in the \((12,18)\) row is a single root
-of multiplicity thirty.
+with a root of multiplicity 26.
 
 By the odd-multiplicity exclusion we may assume \(e=2\).
 Use the normalized pair and its polynomial \(W\) above.
@@ -438,9 +444,126 @@ and the commutator loses at least three units of weight,
 \(Q\) has weight at most zero. The same bound on the
 commutator then makes \([Q,P]\) have weight at most
 minus three, contradicting the nonzero scalar.
-Every multiplicity-26 profile with a small root is
-therefore excluded. At degree thirty, a
-multiplicity-26 profile has small roots with total
-multiplicity four. The characteristic-zero statement follows
-by embedding a finitely generated coefficient field, enlarged to
-include the specified roots, into \(\mathbb C\).
+This excludes every multiplicity-26 profile. No small-root
+spectral information is used in the next-face argument.
+
+
+## The multiplicity-thirty root forces a sixth power
+
+**Theorem PolynomialWeylOrderTwelveMultiplicityThirtyPower.**
+In reduced orders \((12,18)\), the presence of a root of
+multiplicity thirty forces \(h\) to be the thirtieth power
+of a linear polynomial up to a nonzero scalar.
+
+Use the pure cube normalization at \(u=30\), so
+\(\omega=6\). Put \(U=P^{1/2}\), \(S=U^3-Q\).
+As \([S,P]=-\kappa\), the order of \(S\) is between
+\(-11\) and \(-1\).
+For a leading order \(j>-11\), its coefficient is
+proportional to \(h^{j/6}\).
+If \(j>-6\), \(Q^2-P^3\) has differential order \(18+j\)
+and weight at least \(18+j>11\) at the multiplicity-thirty
+root. Its commutator with \(P\) is \(2\kappa Q\), so its top
+must commute with \(R^2\). This forces its weight to be a
+multiple of six and its differential order to be at least
+that weight. Since \(18+j\) is strictly between twelve
+and eighteen, this is impossible.
+
+Remove a leading order \(-6\) if present by subtracting
+\(cU^{-1}\) from \(S\), and denote the resulting order by
+\(j\le-7\). Then \(W=Q^2-P^3+2cP\) has order \(18+j\le11\).
+Its weight is exactly eleven: anything lower cannot
+give \(2\kappa Q=[W,P]\), and anything higher would give
+a commuting top of differential order at least twelve.
+Write its top as \(x^{-11}w(z)\). Its bracket equation
+is
+\[
+                       6w'r-11wr'=\kappa r^2.              \tag{7}
+\]
+Here \(r=zL(z)\) has at least two distinct roots, all of
+multiplicity at most five. At a root of multiplicity \(m\),
+if \(w\) has order \(v\), the leading coefficient on the
+left has nonzero multiplier \(6v-11m\).
+Matching orders gives \(v=m+1\).
+Thus \(\deg w\ge\deg r+2=8\). If \(8\le\deg w<11\),
+the left side has degree \(\deg w+5>12\), with nonzero
+leading coefficient. It cannot equal the right side.
+Therefore \(\deg w=11\), forcing \(j=-7\).
+
+At this leading differential order the rational coefficient
+of the remainder is proportional to \(h^{-7/6}\).
+Since seven is coprime to six, all multiplicities of \(h\)
+are divisible by six. The
+[perfect-power residue obstruction](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#perfect-power-leading-factors)
+now gives a single root, of multiplicity thirty as claimed.
+
+## The coefficient field at the multiplicity-thirty edge
+
+**Corollary PolynomialWeylOrderTwelveEighteenRationalExclusion.**
+There is no proper polynomial Weyl pair over \(\mathbb Q\) with
+nonzero scalar commutator and reduced differential orders
+\((12,18)\). More generally the same holds over any
+characteristic-zero field over which both cubics
+\[
+    64c^3-216c^2+324c-81,\qquad
+    448k^3-1323k^2+3888k-3888
+\]
+have no root.
+
+Take the order-twelve reduction and the multiplicity-26
+exclusion. A multiplicity-thirty root remains, and the
+preceding theorem implies that it is the only root of \(h\).
+It therefore belongs to the coefficient field, since \(h\)
+has characteristic zero. In the translated edge the common
+factor \(R\) can be defined over this field by taking the ratio
+of the cubed and squared highest symbols. Thus \(L\) and
+the scalar equation
+\[
+                     6zG'+(1-5zL'/L)G=1
+\]
+can be taken over it, by normalization of the nonzero
+constant on the right.
+
+For ratio \(2:3\) the
+[(6,30) successor table](POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md#the-local-successors-at-630)
+requires a maximal root of \(L\) of multiplicity three.
+The degree-five polynomial \(L\) has a unique such root,
+which is nonzero and defined over the coefficient field.
+Scale \(z\) to place it at one. The other multiplicities
+are either \((2)\) or \((1,1)\).
+
+In the \((2)\) case, write \(L\) up to scalar as
+\((z-1)^3(z-c)^2\). Here \(c\) belongs to the coefficient
+field and \(c\ne0,1\). The equation forces
+\(G=(z-1)(z-c)(A z^2+B z+C)\).
+Comparison from constant term upwards gives
+\[
+ cC=1,\qquad 7cB+(8c+3)C=0,\qquad
+ 13cA+(2c-3)B-12C=0,\qquad (4c+9)A+6B=0 .
+\]
+The value \(4c+9=0\) would force \(B=0\), contrary to the
+second equation. The other three equations substituted into the
+third give the first cubic in the statement.
+
+In the \((1,1)\) case put
+\(L=(z-1)^3(z^2-h_1 z+k)\) up to scalar, with
+\(h_1,k\) in the coefficient field and \(k\ne0\).
+Now \(G=(z-1)(z^2-h_1 z+k)(A z+B)\).
+Coefficient comparison gives \(Bk=-1\) and
+\(7kA=(2h_1-8k)B\).
+After these substitutions the two remaining equations are
+\[
+ \begin{aligned}
+ h_1^2-4h_1k-9h_1+15k&=0,\\
+ 16h_1^2-19h_1k+16k^2-21k&=0 .
+ \end{aligned}
+\]
+Their resultant in \(h_1\) is \(7k\) times the second
+cubic in the statement. Since \(k\ne0\), this gives a
+root in the coefficient field.
+
+Both cubics are irreducible over \(\mathbb Q\): they
+have degree three modulo eleven and take nonzero values
+at every residue. The coefficient identities, resultant
+and residue check are reproduced by the
+[order-twelve checker](verify_weyl_order_twelve.py).

@@ -7,9 +7,9 @@
     "python": "3.12.3",
     "python-flint": "0.9.0"
   },
-  "checker_sha256": "a6861386da2553b1d507783f3cccf13af861cd1b4205587dcb5c739f8cf06534",
+  "checker_sha256": "3d34471ddee5b3d3ad6e680ac645fce7ff53aa6e0288ff6b8f4dfe9edaee9b1a",
   "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
-  "proof_source_sha256": "555106ed206b2c3211fc623624653f43f998836e3ba83eef67d9feeb09deac69",
+  "proof_source_sha256": "4e7c4dbdb5d353680bcaff8bb9388f0b53fa26bdac731b2fb4c4951db5ae55b5",
   "result": {
     "status": "pass",
     "rho": "1/2",
@@ -215,16 +215,85 @@
         ]
       },
       "scope": "The scalar radial bound fails at this selected correlation. The elementary correction repairs the profile at 1/2; the sharp local first-moment correction repairs it also at 3/5 but fails at 7/10. Positive upper-bound coefficients do not prove improving Gaussian partitions. Finite Gram controls support the written algebraic lemma, not an unrestricted proof by sampling."
+    },
+    "exact_arc_secant_controls": {
+      "status": "pass",
+      "nine_tenths_profile_comparison": {
+        "rho": "9/10",
+        "exponents": [
+          0,
+          1,
+          16
+        ],
+        "coefficients": [
+          "-21/34",
+          "1",
+          "2"
+        ],
+        "exact_mean": "0",
+        "arb_precision_bits": 160,
+        "quadrature": "none; closed quadrant formulas only",
+        "exact_arc_quadratic_coefficient": [
+          -0.05382486132813042,
+          -0.053824861328130406
+        ],
+        "secant_closure_correction": [
+          0.007816122558246456,
+          0.00781612255824646
+        ],
+        "corrected_exact_arc_coefficient": [
+          -0.06164098388637688,
+          -0.061640983886376864
+        ]
+      },
+      "ninety_nine_hundredths_limit_test": {
+        "rho": "99/100",
+        "exponents": [
+          0,
+          1,
+          4,
+          16,
+          64,
+          256,
+          1024
+        ],
+        "coefficients": [
+          "-688761381/23286770000",
+          "27/1000",
+          "37/1000",
+          "37/500",
+          "181/1000",
+          "29/200",
+          "1"
+        ],
+        "exact_mean": "0",
+        "arb_precision_bits": 160,
+        "quadrature": "none; closed quadrant formulas only",
+        "exact_arc_quadratic_coefficient": [
+          6.66256376236585e-05,
+          6.662563762365852e-05
+        ],
+        "secant_closure_correction": [
+          6.542265367044935e-05,
+          6.542265367044938e-05
+        ],
+        "corrected_exact_arc_coefficient": [
+          1.202983953209141e-06,
+          1.2029839532091414e-06
+        ]
+      },
+      "nonzero_mean_control_rejected": true,
+      "scope": "DG9 exact arc interaction and measure-dependent secant bound. The fixed small profile at9/10 loses for arbitrary angular shapes. At99/100 a different feasible balanced small profile makes this sufficient upper-bound criterion positive; no improving Gaussian partition is asserted."
     }
   },
-  "certified_scope": "At rho=1/2 the bounded exactly mean-zero function f=exp(-t)+2exp(-16t)-21/34 violates the scalar radial inequality. The elementary Gamma correction repairs its small profile at1/2 but fails at3/5. The sharp first-moment correction repairs the same small profile at3/5 but has a strictly positive upper-bound coefficient at7/10. None of the positive coefficients proves an improving partition.",
-  "analytic_scope": "DG6 proves the all-profile Gram bound and coupled angular inequality. DG8 gives a globally valid positive-part matrix refinement, sharp among norm-and-closure bounds near balanced profiles, with local coefficient1/8. Its Taylor expansion and the directed coefficients prove the restricted-profile comparisons. These analytic assertions are written proofs, not claims of unrestricted verification from finite controls.",
-  "arithmetic_scope": "All infinite radial integrals are reduced analytically to closed quadrant formulas. Arb encloses every angular integrand on each of 8192 intervals, at 100-bit precision; no sampled angular rule or omitted radial tail is used.",
+  "certified_scope": "DG5-DG8 directed scalar radial witnesses and elementary and sharp first-moment coefficients at1/2,3/5,7/10 remain certified. DG9 also evaluates the exact arc/secant coefficient without quadrature: at9/10 the original explicit bounded mean-zero profile has coefficient in[-0.06164098388637688,-0.061640983886376864], proving its sufficiently small balanced mass profiles lose for arbitrary angular shapes. At99/100 the distinct six-exponential bounded mean-zero profile specified in the result has coefficient in[1.202983953209141e-6,1.2029839532091414e-6], so that sufficient all-profile criterion fails. No actual improving partition is claimed.",
+  "analytic_scope": "DG6 proves angular moment closure, DG8 the globally valid matrix refinement and optimal local coefficient1/8, and DG9 a measure-dependent secant rearrangement bound retaining the exact arc interaction. The analytic proofs cover all stated angular partitions and profiles; finite arithmetic controls do not establish these unrestricted analytic facts by sampling. Uniform integrated Taylor expansions transfer the fixed-profile coefficient signs to sufficiently small feasible balanced profiles.",
+  "arithmetic_scope": "DG5-DG8 reduce all infinite radial integrals to closed quadrant formulas and enclose the remaining angular integrands on8192 full intervals at100-bit Arb precision. The new DG9 coefficients have no numerical quadrature: every angular and radial integral is reduced analytically, then evaluated by160-bit Arb arithmetic. Exact Fraction arithmetic verifies both profile means and rejects a nonzero-mean control.",
   "assurance": {
     "internal_replay": true,
     "independent_replay": false,
     "formal_verification": false,
     "external_review": false
   },
-  "limits": "The original all-positive-correlation goal remains open. Profile comparisons at1/2 and3/5 concern sufficiently small multiples of one explicit circular-mass profile with arbitrary angular shapes. Failure of the separated-first-moment upper bound at7/10 is a limitation of that sufficient criterion, not a counterexample to simplex optimality. The unrestricted global cutoff remains21/50."
+  "limits": "The unrestricted direct inequality remains open above21/50. The fixed-profile comparisons at1/2,3/5 and9/10 allow arbitrary angular shapes but only sufficiently small multiples of the specified circular-mass profile. Positive upper-bound coefficients at3/5,7/10 and99/100 refute particular sufficient criteria, not simplex optimality. Independent replay, formal verification and external review are unperformed."
 }

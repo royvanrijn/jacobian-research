@@ -56,7 +56,14 @@ For $u=P_{\mathrm{st}}h$, $v=P_{\mathrm{sg}}h$, and $H_e=\{(r,s)\in[0,R]^2:|r-s|
  D_+(u)=e^{-2}\iint_{H_e}|u(r)-u(s)|^2\,dr\,ds,\quad
  D_-(v)=e^{-2}\iint_{H_e}\min(rs/e^2,1)\,rs\,|v(r)/r-v(s)/s|^2\,dr\,ds .
 \]
-Values on the axes do not affect the integral. These are bounded by $C_R$ times the corresponding simplex squared-difference forms for any extension past $R$. In Lebesgue coordinates the same-ray tangential Gaussian kernel is bounded below by $c_R e^{-2}$ on $H_e$. The sign difference of the same-ray and cross-ray kernels equals the same-ray kernel times $1-\exp(-3\rho rs/(2\sigma^2))$, which is comparable to $\min(rs/e^2,1)$.
+Values on the axes do not affect the integral. These are bounded
+by $C_R$ times the corresponding simplex squared-difference forms
+for any extension past $R$. The full same-ray Mehler interaction
+kernel with its facet weights written against $dr\,ds$ is bounded
+below by $c_R e^{-2}$ on $H_e$. In the sign sector, the difference
+of the same-ray and cross-ray kernels equals the same-ray kernel
+times $1-\exp(-3\rho rs/(2\sigma^2))$, comparable to
+$\min(rs/e^2,1)$. [Simplex sector formulas (S18) and (S31)](SIMPLEX_INTERFACE_SYMMETRY.md)
 
 The estimates are
 \[

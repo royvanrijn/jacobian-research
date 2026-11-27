@@ -24,11 +24,13 @@ degrees in this boundary case are \((72,108)\).
 
 The [primitive leading-factor obstruction](POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md#consequences-for-centered-rectangles-and-low-orders)
 requires a common multiplicity divisor greater than one in every
-row. In the degree-thirty multiplicity-26 branch, only the
-small-root partitions \((4)\) and \((2,2)\) pass that condition.
-The [next-face exclusion](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#exclusion-by-the-next-newton-face)
-rules out both. At degree thirty the \((12,18)\) row therefore
-requires a single multiplicity-thirty root.
+row. In the \((12,18)\) row, the
+[next-face exclusion](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#exclusion-by-the-next-newton-face)
+rules out every multiplicity-26 root. The
+[multiplicity-thirty argument](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#the-multiplicity-thirty-root-forces-a-sixth-power)
+then forces a single root of multiplicity thirty over the
+algebraic closure. The coefficient-field test in the same
+source excludes this entire row over \(\mathbb Q\).
 
 ## The crossings at gcd six
 

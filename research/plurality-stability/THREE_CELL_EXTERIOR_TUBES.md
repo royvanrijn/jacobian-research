@@ -296,3 +296,150 @@ vanishes only on the normal origin, so $L_{i,s}=0$ implies
 its fiber equals the original half-line almost everywhere.
 The vanished $m_i$ shows there are no extra-label changes
 to undo, proving $U=T$.
+
+## Exterior changes separated from the reference interfaces
+
+There is also a strict comparison for a separate class of exterior
+competitors. Fix $\delta>0$ and sufficiently large $R$. Suppose
+every changed point lies outside $B_R$, and inside its original
+simplex cell at distance at least $\delta |x|$ from its two supporting
+lines. Then $U$ strictly loses to $T$ for $\rho$ sufficiently
+close to one, unless the labels agree almost everywhere.
+
+Write $m$ for the Gaussian area of the change. At such a point
+the conditional Gaussian centered at $\rho x$ almost surely stays
+inside the same reference cell up to probability
+$C e^{-c_\delta R^2/\sigma^2}$. The simplex regret therefore
+obeys $L\ge(1-C e^{-c_\delta R^2/\sigma^2})m$. On the entire
+exterior region the conjugated Mehler kernel (P16) bounds
+the interaction by
+
+\[
+ Q\le 2\lambda_{\rho,R}m,\qquad
+ \lambda_{\rho,R}=\rho^{-1}
+                     \exp[-(1-\rho)R^2/(2(1+\rho))].
+\]
+
+Indeed the second factor of (P16) gives the stated discount
+and the Gaussian convolution left over has $L^2$ norm at
+most $\rho^{-1}$ in the plane. The sum of squared indicator
+changes is two on each changed point. For $R>2$ fixed,
+$1-\lambda_{\rho,R}\ge c_R(1-\rho)$ near one, by expanding
+its logarithm. This dominates the exponentially small
+regret error. The deficit $2L-Q$ is consequently positive
+if $m>0$.
+
+## Arbitrary changes beyond a growing exterior radius
+
+There are absolute $K<\infty$ and $\rho_0<1$ such that, for
+$\rho_0<\rho<1$ and $R\ge K e^{-1/3}$, every ordinary planar
+partition agreeing with the central simplex inside $B_R$ has
+strictly smaller stability unless it agrees with the simplex
+almost everywhere. No volume or angular support condition is
+imposed. If $L$ denotes its simplex regret on the changed set,
+the deficit is at least $c\min(e^2R^2,1)L$.
+
+First strengthen the comparison for a single tube supported in
+$s\ge r\ge R_0$. For its halfspace reference $H$, write $L_H$
+for the linear regret, and use the single global merge and its
+$V$ from (CT6). At a fixed $s$, merging the third label decreases
+the diagonal normal cut, and one-dimensional fiber sorting
+decreases it further. The normal diagonal bound preceding (CT1)
+then gives a diagonal deficit of at least $-Ce p(s)^2$. By the
+deficit identity this says
+\[
+  \langle h_s,T_\rho^{(1)}h_s\rangle\le 2L_s^H+Ce p(s)^2,
+\]
+with scalar products summed across labels. On the tangential
+line the Gaussian operator compressed to $s\ge r$ has norm at
+most
+\[
+ \lambda_1(r)=\rho^{-1/2}\exp[-(1-\rho)r^2/(2(1+\rho))],
+\]
+by the one-dimensional version of (P16). Factor the full
+operator into tangential and normal factors and apply that norm
+bound to $(T_\rho^{(1)})^{1/2}h_s$ in the normal variable. The
+result is $Q(h)\le\lambda_1(r)(2L_H+CeV)$. For $R_0$ fixed
+sufficiently large, $1-\lambda_1(r)\ge c\min(e^2r^2,1)$ for
+all $r\ge R_0$ and sufficiently small $e$, by the formula for
+the logarithm of $\lambda_1$. A fixed small positive weight on
+this bound, with the rest of the weight on (CT6), gives
+\[
+ N(U_i^H)-N(H)\ge c\left(\min(e^2r^2,1)L_H+eV+
+       \int_r^\infty q_r(s)(L_s-L_s^*+m_i(s))\,d\gamma_1(s)\right).
+ \tag{CT10}
+\]
+The constants are uniform in $r$, since the drift estimate (CT3)
+may use the fixed support threshold $R_0$. Changing the
+reference from the halfspace to the tripod costs at most
+$C\int q_0(s)(L_s+m_i(s))\,d\gamma_1(s)$ by the regret
+comparison preceding (CT7). This is absorbed in the last two
+terms of (CT10), since $L_s^*\le Cp(s)^2/\sigma$ and the
+ratio in (CT7) is exponentially small uniformly for $r\ge R_0$.
+Also $L_H$ and the simplex regret are comparable in this tube.
+For incident transfers their difference is at most $q_0(s)$ times
+the halfspace regret. For a transfer to the third label the
+halfspace regret is at least $1/2$ and the difference is at most
+$2q_0(s)$. Thus the tripod deficit of a single tube change is
+at least $c\min(e^2r^2,1)$ times its simplex regret. Changes
+wholly in the deep exterior of the cells likewise have deficit
+at least this factor times their Gaussian mass, using the
+two-dimensional compression bound above with radius $r$ and
+the saturated score margin there.
+
+To combine these bounds, choose fixed $0<\theta_1<\theta_2$
+sufficiently small for the tube comparison, and choose $\theta$
+uniformly in $[\theta_1,\theta_2]$. Split the changed set $D$
+into four disjoint groups, one for each ray's angular tube of
+half-width $\theta$, and the remaining cell interiors. For
+each group compare to the partition making only that group's
+label changes. In a tube the tangential support starts at
+$r=R\cos\theta_2$. Put $d_R=\min(e^2R^2,1)$ and let $S$ be
+the enlarged angular seam, where the smallest angle to the
+rays lies in $[\theta_1/2,2\theta_2]$. The seam is at distance
+at least $c|x|$ from the incident supporting lines, so simplex
+regret per changed point is at least a fixed constant there.
+The sum of the four localized deficits is therefore at least
+$c d_R(L+\gamma_2(D\cap S))$ uniformly in $\theta$.
+
+The full deficit differs from the sum by the negative of the
+mixed interactions. Consider first pairs with
+$|x-y|\le\delta\min(|x|,|y|)$ for a sufficiently small fixed
+$\delta>0$. If such a pair can be assigned to different groups,
+both points belong to $S$, and the probability of separation is
+at most $C|x-y|/R$. They cannot lie in two distinct tubes, and
+separation between a tube and the bulk occurs only when $\theta$
+lies between their angles to that ray. Those angles differ by
+at most $C|x-y|/\min(|x|,|y|)$. Multiply the conjugated kernel
+(P16) by $|x-y|$ and drop its confinement factor. The resulting
+convolution kernel has $L^1$ norm $O(\sigma)$. The defect vector
+has squared norm two on $D$, so the expected absolute mixed
+interaction of the close pairs is at most
+$C(\sigma/R)\gamma_2(D\cap S)$.
+
+All other changed pairs have $|x-y|\ge\delta R$. Extract
+$e^{-cR^2/\sigma^2}$ from (P16), leaving a positive Gaussian
+convolution of width comparable to $\sigma$ with bounded
+$L^1$ norm. Its interaction on the absolute defect is at most
+$CL$. For each ordered transfer split by the inward distance
+$t$ to its pair line. On $t\ge\sigma$ use the convolution norm
+and the saturated regret. On $0\le t\le\sigma$ drop the normal
+Gaussian factor and bound squared section length by the first
+normal moment, as in (P14). The tangential convolution then has
+norm $C/\sigma$, and the regret controls the first moment divided
+by $\sigma$. Sum the pieces by Cauchy–Schwarz for this positive
+convolution operator.
+
+Subtracting the expected absolute mixed interactions gives
+\[
+ S_\rho(T)-S_\rho(U)\ge
+ \bigl(c d_R-C e^{-c'R^2/\sigma^2}\bigr)L
+ +\bigl(c d_R-C\sigma/R\bigr)\gamma_2(D\cap S).
+ \tag{CT11}
+\]
+The second coefficient is nonnegative for $R\ge K e^{-1/3}$,
+using $\sigma\asymp e$ and $e^2R^3\ge K^3$ when $eR\le1$.
+The exponential term in the first coefficient is at most
+$c d_R/2$ there for sufficiently small $e$. The regret is
+strictly positive for every change of positive Gaussian area
+since the simplex score ties lie on lines. This proves the claim.

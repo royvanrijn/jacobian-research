@@ -649,3 +649,40 @@ the square completion is a polynomial coordinate
 change of the affine plane. If \(b\) is constant the
 geometric generic fibre is reducible. This leaves
 \(\deg b=1\), giving the last stated form.
+
+
+## The linear coefficient on the reduced singular member
+
+**Proposition SexticKeller644ReducedConicLinearTermExclusion.**
+In the \((6,4,4)\) conic-pencil frame with
+\(p=xz+y^2,\ q=xy\) and lower highest forms \(p^2,q^2\),
+write the sextic highest form as
+\[
+                 A=a_0p^3+a_1p^2q+a_2pq^2+a_3q^3 .
+\]
+Then \(a_1=0\).
+
+Suppose \(a_1\ne0\), and put
+\(D=\det\partial(A,p^2)/\partial(p,q)=-2p A_q\).
+On \(q=0\) this is \(-2a_1p^3\).
+At the generic points of \(x=0\) and \(y=0\),
+\(dp,dq\) are independent and \(p\ne0\).
+For example at \(x=0\) use \(dq=y\,dx\) and the nonzero
+\(dy\)-coefficient of \(dp\), and at \(y=0\) use \(dq=x\,dy\)
+and the nonzero \(dz\)-coefficient of \(dp\).
+Thus \(dA,d(p^2)\) are independent at both generic points.
+The [leading-pair rational slice theorem](KELLER_LEADING_PAIR_RATIONAL_SLICE.md)
+gives a primitive for \(J(A,p^2,\cdot)=\kappa\) regular
+at both of them.
+
+Since \(J(p,q,x)=-x^2\), one rational primitive is
+\(\kappa/(xD)\). It has a pole at \(x=0\) and is regular
+at \(y=0\). The other primitives differ from it by
+an element of \(k(p,q)\), since \(k(x,y,z)=k(p,q)(x)\)
+and \(x\) has nonzero derivative for this Jacobian
+derivation. Both divisors dominate \(q=0\) in the
+\((p,q)\)-plane, and \(q\) has order one on each.
+Thus any invariant correction has the same order on
+the two divisors. Regularity at \(y=0\) forces it
+to be regular there and then at \(x=0\). It cannot
+cancel the pole. This contradiction gives \(a_1=0\).
