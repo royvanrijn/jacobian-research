@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "evidence_type": "internal_exact_finite_transcription_and_negative_controls",
+  "scope": "Only the explicitly listed primes and identities; all-prime proof is written.",
+  "command": ".venv/bin/python research/factorial/image-rigidity/verify_bilinear_doubled_prime_ramification.py",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "sources": {
+    "BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md": "9ac1e12968a415c60e79725eff5ea5412a11a4ceaf09c8854f69605d0478d219",
+    "verify_bilinear_doubled_prime_ramification.py": "43eba38a61f9c2a53fd7093891cd37213c44bb71ce6699d8eef5db8af054b8c0"
+  },
+  "native_checks": [
+    {
+      "p": 3,
+      "n": 5,
+      "integer_coefficient_divisibilities": 21,
+      "universal_identities": 2,
+      "valuation_slope_controls": 6
+    },
+    {
+      "p": 5,
+      "n": 9,
+      "integer_coefficient_divisibilities": 55,
+      "universal_identities": 2,
+      "valuation_slope_controls": 6
+    },
+    {
+      "p": 7,
+      "n": 13,
+      "integer_coefficient_divisibilities": 105,
+      "universal_identities": 2,
+      "valuation_slope_controls": 6
+    },
+    {
+      "p": 11,
+      "n": 21,
+      "integer_coefficient_divisibilities": 253,
+      "universal_identities": 2,
+      "valuation_slope_controls": 6
+    },
+    {
+      "p": 13,
+      "n": 25,
+      "integer_coefficient_divisibilities": 351,
+      "universal_identities": 2,
+      "valuation_slope_controls": 6
+    },
+    {
+      "p": 17,
+      "n": 33,
+      "integer_coefficient_divisibilities": 595,
+      "universal_identities": 2,
+      "valuation_slope_controls": 6
+    }
+  ],
+  "exact_discriminant_controls": [
+    {
+      "p": 3,
+      "degree_A": 5,
+      "resonance_degree": 4,
+      "discriminant_degree": 20,
+      "gcd": "1"
+    },
+    {
+      "p": 5,
+      "degree_A": 9,
+      "resonance_degree": 8,
+      "discriminant_degree": 72,
+      "gcd": "1"
+    },
+    {
+      "p": 7,
+      "degree_A": 13,
+      "resonance_degree": 12,
+      "discriminant_degree": 156,
+      "gcd": "1"
+    }
+  ],
+  "negative_controls": {
+    "degree_bound_removed": {
+      "polynomial": "9*A**6 + 6*A**3 + 1",
+      "p": 3,
+      "root_valuation": "-1/3",
+      "gcd_degree": 3,
+      "rejected": true
+    }
+  },
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false
+}

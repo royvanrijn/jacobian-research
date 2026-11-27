@@ -3,7 +3,7 @@
 from fractions import Fraction as Q
 from itertools import product
 
-from sympy import expand, symbols
+from sympy import diff, expand, symbols
 
 from check_sextic_doubled_square_third_mixed import (
     competing_monomials, cut, jacobian, weight,
@@ -125,10 +125,79 @@ def check_isolated_third_correction():
     assert all(expand(equation) == 0 for equation in equations)
 
 
+def check_isolated_second_correction():
+    monomials = {m for m in product(range(7), repeat=3) if sum(m) <= 6}
+    start = (
+        {(4, 0, 2), (3, 2, 1), (2, 4, 0)},
+        {(5, 0, 1), (4, 2, 0)},
+        {(6, 0, 0)},
+    )
+    square = {(2, 0, 2), (1, 2, 1), (0, 4, 0)}
+    pure = cut((monomials,) * 3, (2, 3, 4), start)
+    axial = cut(pure, (1, 2, 3), (start[0], start[1] | square, start[2]))
+    ties = competing_monomials(
+        axial, (0, 2, 3), 0, 0, 1, ((2, 4, 0), (0, 4, 0), (6, 0, 0)),
+    )
+    assert tuple({s: terms for s, terms in rows.items() if s < 1} for rows in ties) == (
+        {Q(1, 2): {(0, 0, 3), (0, 3, 1)}}, {},
+        {Q(5, 6): {(0, 1, 1)}, Q(4, 5): {(1, 2, 0)}, Q(3, 4): {(2, 0, 1)},
+         Q(2, 3): {(0, 2, 0), (3, 1, 0)}, Q(3, 5): {(1, 0, 1)},
+         Q(1, 2): {(0, 0, 1), (2, 1, 0)}, Q(2, 5): {(1, 1, 0)},
+         Q(1, 3): {(0, 1, 0)}},
+    )
+    refined = cut(
+        axial, (4, 10, 16), (start[0], square, start[2] | {(1, 2, 0), (2, 0, 1)}),
+    )
+    ties = competing_monomials(
+        refined, (0, 2, Q(16, 5)), 0, 0, Q(4, 5),
+        ((2, 4, 0), (0, 4, 0), (1, 2, 0)),
+    )
+    assert tuple({s: terms for s, terms in rows.items() if s < Q(4, 5)}
+                 for rows in ties) == (
+        {Q(3, 5): {(0, 3, 1)}, Q(2, 5): {(1, 1, 2)}, Q(1, 5): {(0, 1, 2)}},
+        {}, {},
+    )
+
+
+def check_simultaneous_corrections():
+    monomials = {m for m in product(range(7), repeat=3) if sum(m) <= 6}
+    start = (
+        {(4, 0, 2), (3, 2, 1), (2, 4, 0)},
+        {(5, 0, 1), (4, 2, 0)},
+        {(6, 0, 0)},
+    )
+    pure = cut((monomials,) * 3, (2, 3, 4), start)
+    axial = cut(
+        pure, (1, 2, 3),
+        (start[0], start[1] | {(2, 0, 2), (1, 2, 1), (0, 4, 0)},
+         start[2] | {(3, 0, 1), (2, 2, 0)}),
+    )
+    ties = competing_monomials(
+        axial, (0, 2, 3), 0, 0, 1, ((2, 4, 0), (0, 4, 0), (2, 2, 0)),
+    )
+    assert tuple({s: terms for s, terms in rows.items() if s < 1} for rows in ties) == (
+        {Q(1, 2): {(0, 0, 3), (0, 3, 1)}}, {},
+        {Q(1, 2): {(0, 1, 1)}},
+    )
+    x, y, z = symbols("x y z")
+    a, b, ell, u, v, w, q = symbols("a b ell u v w q")
+    A = x**2*y**4+a*z**3+b*y**3*z
+    C = x**2*y**2+ell*y*z
+    assert expand(
+        diff(A,x)*diff(C,z)-diff(A,z)*diff(C,x)
+        -2*x*y**2*((ell-b)*y**3-3*a*z**2)
+    ) == 0
+    Y = y+v/ell
+    Z = ell*z+q*Y+u-2*q*v/ell
+    assert expand(Y*Z+w-u*v/ell+q*v**2/ell**2-(q*y**2+u*y+w+(ell*y+v)*z)) == 0
+
+
 if __name__ == "__main__":
     check_weights()
     check_coefficients()
     check_y_lifts()
     check_veronese_fibre()
     check_isolated_third_correction()
+    check_isolated_second_correction()
+    check_simultaneous_corrections()
     print("Uncorrected doubled-square frame: axial support, determinants and fibre identities verified.")

@@ -1,0 +1,884 @@
+{
+  "schema_version": 1,
+  "kind": "arbitrary_index_two_hurwitz_mixtures",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "1f66c391650dc11f5226c25470dcae22a3800643c1b1d737b1fb687831fc2d3f",
+  "input_sha256": {
+    "INDEX_TWO_HURWITZ_MIXTURES.md": "f3bed58efbe552cba1725486066f944c07219811530daf10df4998990a20fa0a",
+    "MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md": "f1dd3df9f3241f00ecd86aa17068a916c1cd58a90c04ea274a33fad8a035d9a8",
+    "verify_mixed_hurwitz_isolation.py": "6763c1ebf292c314c3cf9b7f7f9de345beb0191143e4b832d0516b8bebc0336b",
+    "verify_terminal_mass_hurwitz_descent.py": "0718f36bc5814aec06d6746934619353fe4545f9d37ae956ce7782d24cba5a1f",
+    "verify_terminal_mass_projection_escape.py": "499cfbbbad29fb9cba94511c2e45b6b92c4c7d977c47f1c8a0e2d52afdd4e706",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f",
+    "sources/muehle-nadeau-alternating-3-cycles-2019.pdf": "65e7ae091188b0fbeee021d72f2a22e092350885eea053386d1e9cae8733aa7b",
+    "sources/fried-lifting-invariants-math-0611591v4.pdf": "e8ab94bcfbc60a43415bb2bfc6d44058deda67c48f78e45e8bfdb11f00607900"
+  },
+  "complete_minimal_mixture_controls": {
+    "complete_domains": [
+      {
+        "degree": 3,
+        "three_cycles": 1,
+        "DTs": 0,
+        "literal_full_orbit": 1,
+        "literal_fully_marked_orbit": 1,
+        "class_character_fixed_pattern_total": 1,
+        "maximum_T_component": 1,
+        "states_with_isolated_T": 1,
+        "orbit_sha256": "d7b3d4012540102c40a23acdeee417e06a42a74a5d66c7efe59f4e4aa0537c5c",
+        "pure_orbit_sha256": "d7b3d4012540102c40a23acdeee417e06a42a74a5d66c7efe59f4e4aa0537c5c",
+        "literal_seed": [
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "group_order": 3
+      },
+      {
+        "degree": 5,
+        "three_cycles": 1,
+        "DTs": 1,
+        "literal_full_orbit": 10,
+        "literal_fully_marked_orbit": 5,
+        "class_character_fixed_pattern_total": 5,
+        "maximum_T_component": 2,
+        "states_with_isolated_T": 0,
+        "orbit_sha256": "a9997877652ebd68a16a0d8baca4e964fc3989d6bb80b93033c55167e5b5e231",
+        "pure_orbit_sha256": "13002a887204e302b5a49e336ddce1e1485ded4a0cdb8e0e06a272240b1e4b5d",
+        "literal_seed": [
+          [
+            2,
+            1,
+            4,
+            3,
+            0
+          ],
+          [
+            1,
+            0,
+            3,
+            2,
+            4
+          ]
+        ],
+        "group_order": 60
+      },
+      {
+        "degree": 5,
+        "three_cycles": 2,
+        "DTs": 0,
+        "literal_full_orbit": 5,
+        "literal_fully_marked_orbit": 5,
+        "class_character_fixed_pattern_total": 5,
+        "maximum_T_component": 3,
+        "states_with_isolated_T": 5,
+        "orbit_sha256": "1ee53898243e376b31c2e2be857bad0a3a7babc865d84249fe5af96f033e0d47",
+        "pure_orbit_sha256": "1ee53898243e376b31c2e2be857bad0a3a7babc865d84249fe5af96f033e0d47",
+        "literal_seed": [
+          [
+            3,
+            1,
+            2,
+            4,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4
+          ]
+        ],
+        "group_order": 60
+      },
+      {
+        "degree": 7,
+        "three_cycles": 1,
+        "DTs": 2,
+        "literal_full_orbit": 588,
+        "literal_fully_marked_orbit": 196,
+        "class_character_fixed_pattern_total": 196,
+        "maximum_T_component": 5,
+        "states_with_isolated_T": 105,
+        "orbit_sha256": "7d761fbff7b90a4f79ac4ad12622ca54150714f98b777e09f3862421b3d01cc8",
+        "pure_orbit_sha256": "f885ad3e7fd68549532584a0cde2603d9d13d0678009061e686d30fd6e25fca7",
+        "literal_seed": [
+          [
+            5,
+            1,
+            2,
+            4,
+            3,
+            0,
+            6
+          ],
+          [
+            4,
+            1,
+            2,
+            3,
+            0,
+            6,
+            5
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "group_order": 2520
+      },
+      {
+        "degree": 7,
+        "three_cycles": 2,
+        "DTs": 1,
+        "literal_full_orbit": 294,
+        "literal_fully_marked_orbit": 98,
+        "class_character_fixed_pattern_total": 98,
+        "maximum_T_component": 5,
+        "states_with_isolated_T": 210,
+        "orbit_sha256": "a223277ef2590d7ab9ddafd9a58c6c3f6d63f3554a7c6bfa5b6d765f72f0b635",
+        "pure_orbit_sha256": "145561180ab0d6f5cca1dfe57311221a76152ff23fa5daf1ae6e828bbb42a63b",
+        "literal_seed": [
+          [
+            4,
+            1,
+            2,
+            3,
+            6,
+            5,
+            0
+          ],
+          [
+            3,
+            1,
+            2,
+            0,
+            5,
+            4,
+            6
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "group_order": 2520
+      },
+      {
+        "degree": 7,
+        "three_cycles": 3,
+        "DTs": 0,
+        "literal_full_orbit": 49,
+        "literal_fully_marked_orbit": 49,
+        "class_character_fixed_pattern_total": 49,
+        "maximum_T_component": 5,
+        "states_with_isolated_T": 49,
+        "orbit_sha256": "4d9095866c4fb024b2f51f1bec282699ec7ad071842ed07e1e1a6798fb147844",
+        "pure_orbit_sha256": "4d9095866c4fb024b2f51f1bec282699ec7ad071842ed07e1e1a6798fb147844",
+        "literal_seed": [
+          [
+            5,
+            1,
+            2,
+            3,
+            4,
+            6,
+            0
+          ],
+          [
+            3,
+            1,
+            2,
+            4,
+            0,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "group_order": 2520
+      },
+      {
+        "degree": 9,
+        "three_cycles": 1,
+        "DTs": 3,
+        "literal_full_orbit": 78732,
+        "literal_fully_marked_orbit": 19683,
+        "class_character_fixed_pattern_total": 19683,
+        "maximum_T_component": 7,
+        "states_with_isolated_T": 14112,
+        "orbit_sha256": "34fb445c35086a17e092229e4fb0195c232915f6aca88f4c24f4c453d3c459f0",
+        "pure_orbit_sha256": "005b010fd37fb3ed78e844950494fbe0647b182fe73db0ff7447fd584fe0d9b7",
+        "literal_seed": [
+          [
+            6,
+            1,
+            2,
+            4,
+            3,
+            5,
+            0,
+            7,
+            8
+          ],
+          [
+            5,
+            1,
+            2,
+            3,
+            4,
+            0,
+            8,
+            7,
+            6
+          ],
+          [
+            4,
+            1,
+            2,
+            3,
+            0,
+            5,
+            7,
+            6,
+            8
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "group_order": null
+      },
+      {
+        "degree": 9,
+        "three_cycles": 2,
+        "DTs": 2,
+        "literal_full_orbit": 39366,
+        "literal_fully_marked_orbit": 6561,
+        "class_character_fixed_pattern_total": 6561,
+        "maximum_T_component": 7,
+        "states_with_isolated_T": 19818,
+        "orbit_sha256": "9c2db1882668a4e8c1275d048f2b431b73acfa29590a1e3061dcf9077c62a462",
+        "pure_orbit_sha256": "a7ab56220a9898285cb4297fce80a6bb05a57ca32d0fcbdfa9f983bd6004a6b4",
+        "literal_seed": [
+          [
+            7,
+            1,
+            2,
+            3,
+            4,
+            6,
+            5,
+            0,
+            8
+          ],
+          [
+            6,
+            1,
+            2,
+            3,
+            4,
+            5,
+            0,
+            8,
+            7
+          ],
+          [
+            3,
+            1,
+            2,
+            4,
+            0,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "group_order": null
+      },
+      {
+        "degree": 9,
+        "three_cycles": 3,
+        "DTs": 1,
+        "literal_full_orbit": 8748,
+        "literal_fully_marked_orbit": 2187,
+        "class_character_fixed_pattern_total": 2187,
+        "maximum_T_component": 7,
+        "states_with_isolated_T": 7884,
+        "orbit_sha256": "ee419c691b22fa5124a80d718e033a714bfc66e91eb44b726574a276f428da8c",
+        "pure_orbit_sha256": "dcf5a326158b028fd1b5ec1d1676d7bc7506583a4ea07edddde656074aecc341",
+        "literal_seed": [
+          [
+            6,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            7,
+            0
+          ],
+          [
+            5,
+            1,
+            2,
+            3,
+            4,
+            0,
+            7,
+            6,
+            8
+          ],
+          [
+            3,
+            1,
+            2,
+            4,
+            0,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "group_order": null
+      },
+      {
+        "degree": 9,
+        "three_cycles": 4,
+        "DTs": 0,
+        "literal_full_orbit": 729,
+        "literal_fully_marked_orbit": 729,
+        "class_character_fixed_pattern_total": 729,
+        "maximum_T_component": 7,
+        "states_with_isolated_T": 729,
+        "orbit_sha256": "9bf84ea1b96ab4032fa72b658e601636d214e3397a45450bccad3e8bc983c05e",
+        "pure_orbit_sha256": "9bf84ea1b96ab4032fa72b658e601636d214e3397a45450bccad3e8bc983c05e",
+        "literal_seed": [
+          [
+            7,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            0
+          ],
+          [
+            5,
+            1,
+            2,
+            3,
+            4,
+            6,
+            0,
+            7,
+            8
+          ],
+          [
+            3,
+            1,
+            2,
+            4,
+            0,
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "group_order": null
+      }
+    ],
+    "literal_T_pair_cut_comparisons": 140860,
+    "strict_nonlargest_cut_comparisons": 18552
+  },
+  "fully_marked_stabilizer_controls": {
+    "canonical_mixture_controls": 59,
+    "literal_mark_transposition_loops": 359,
+    "separated_T_pair_examples": [
+      {
+        "k": 3,
+        "m": 2,
+        "pair": [
+          2,
+          3
+        ],
+        "word": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "k": 3,
+        "m": 2,
+        "pair": [
+          2,
+          4
+        ],
+        "word": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          -4
+        ]
+      }
+    ],
+    "four_T_pair_orientations": 4,
+    "disjoint_T_pair_does_not_have_odd_local_period": true
+  },
+  "collective_pruning_with_other_Ts": {
+    "paired_tree_orders_with_other_Ts": 824,
+    "nonzero_phase_controls": 560,
+    "examples": [
+      {
+        "smaller_size": 3,
+        "largest_size": 5,
+        "other_Ts": 2,
+        "large_DTs": 0,
+        "gather_word": [
+          -3,
+          -2
+        ],
+        "twist_phase": 2,
+        "strict_component_gain": 2
+      },
+      {
+        "smaller_size": 4,
+        "largest_size": 5,
+        "other_Ts": 2,
+        "large_DTs": 0,
+        "gather_word": [
+          -3,
+          -2
+        ],
+        "twist_phase": 3,
+        "strict_component_gain": 3
+      }
+    ]
+  },
+  "pure_DT_boundary_controls": {
+    "complete_pure_small_orbits": [
+      {
+        "degree": 5,
+        "literal_orbit": 5,
+        "absolute_orbit": 1,
+        "group_order": 10,
+        "representative": [
+          [
+            0,
+            4,
+            3,
+            2,
+            1
+          ],
+          [
+            4,
+            3,
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "degree": 7,
+        "literal_orbit": 147,
+        "absolute_orbit": 21,
+        "group_order": 2520,
+        "representative": [
+          [
+            0,
+            1,
+            2,
+            4,
+            3,
+            6,
+            5
+          ],
+          [
+            0,
+            6,
+            4,
+            3,
+            2,
+            5,
+            1
+          ],
+          [
+            6,
+            4,
+            2,
+            3,
+            1,
+            5,
+            0
+          ]
+        ]
+      },
+      {
+        "degree": 7,
+        "literal_orbit": 147,
+        "absolute_orbit": 21,
+        "group_order": 2520,
+        "representative": [
+          [
+            0,
+            1,
+            3,
+            2,
+            4,
+            6,
+            5
+          ],
+          [
+            0,
+            6,
+            2,
+            4,
+            3,
+            5,
+            1
+          ],
+          [
+            6,
+            4,
+            2,
+            3,
+            1,
+            5,
+            0
+          ]
+        ]
+      },
+      {
+        "degree": 7,
+        "literal_orbit": 49,
+        "absolute_orbit": 7,
+        "group_order": 168,
+        "representative": [
+          [
+            0,
+            1,
+            3,
+            2,
+            6,
+            5,
+            4
+          ],
+          [
+            0,
+            6,
+            2,
+            3,
+            5,
+            4,
+            1
+          ],
+          [
+            6,
+            3,
+            2,
+            1,
+            4,
+            5,
+            0
+          ]
+        ]
+      },
+      {
+        "degree": 7,
+        "literal_orbit": 49,
+        "absolute_orbit": 7,
+        "group_order": 168,
+        "representative": [
+          [
+            0,
+            1,
+            4,
+            3,
+            2,
+            6,
+            5
+          ],
+          [
+            0,
+            6,
+            3,
+            2,
+            4,
+            5,
+            1
+          ],
+          [
+            6,
+            4,
+            2,
+            3,
+            1,
+            5,
+            0
+          ]
+        ]
+      }
+    ],
+    "literal_pure_braid_degree5_orbit": 5,
+    "fully_marked_degree7_orbits": [
+      {
+        "group_order": 2520,
+        "literal_pure_braid_orbit": 147,
+        "minimum_DT_mass": 0
+      },
+      {
+        "group_order": 2520,
+        "literal_pure_braid_orbit": 147,
+        "minimum_DT_mass": 0
+      },
+      {
+        "group_order": 168,
+        "literal_pure_braid_orbit": 49,
+        "minimum_DT_mass": 1
+      },
+      {
+        "group_order": 168,
+        "literal_pure_braid_orbit": 49,
+        "minimum_DT_mass": 1
+      }
+    ]
+  },
+  "canonical_spin_controls": [
+    {
+      "three_cycle_factors": 1,
+      "degree": 3,
+      "canonical_odd_lift_spin": 1
+    },
+    {
+      "three_cycle_factors": 2,
+      "degree": 5,
+      "canonical_odd_lift_spin": -1
+    },
+    {
+      "three_cycle_factors": 3,
+      "degree": 7,
+      "canonical_odd_lift_spin": -1
+    },
+    {
+      "three_cycle_factors": 4,
+      "degree": 9,
+      "canonical_odd_lift_spin": 1
+    }
+  ],
+  "higher_index_boundary_controls": {
+    "minimal_dihedral_family": [
+      {
+        "degree": 5,
+        "factor_index": 2,
+        "literal_pair_orbit": 5,
+        "group_order": 10,
+        "nontrivial_block_residue_modulus": null
+      },
+      {
+        "degree": 9,
+        "factor_index": 4,
+        "literal_pair_orbit": 9,
+        "group_order": 18,
+        "nontrivial_block_residue_modulus": 3
+      },
+      {
+        "degree": 13,
+        "factor_index": 6,
+        "literal_pair_orbit": 13,
+        "group_order": 26,
+        "nontrivial_block_residue_modulus": null
+      },
+      {
+        "degree": 25,
+        "factor_index": 12,
+        "literal_pair_orbit": 25,
+        "group_order": 50,
+        "nontrivial_block_residue_modulus": 5
+      },
+      {
+        "degree": 45,
+        "factor_index": 22,
+        "literal_pair_orbit": 45,
+        "group_order": 90,
+        "nontrivial_block_residue_modulus": 3
+      },
+      {
+        "degree": 65,
+        "factor_index": 32,
+        "literal_pair_orbit": 65,
+        "group_order": 130,
+        "nontrivial_block_residue_modulus": 5
+      }
+    ],
+    "minimal_imprimitive_family_with_a_three_cycle": [
+      {
+        "degree": 9,
+        "higher_cycle_length": 3,
+        "higher_factor_index": 6,
+        "group_order": 81
+      },
+      {
+        "degree": 15,
+        "higher_cycle_length": 5,
+        "higher_factor_index": 12,
+        "group_order": 1215
+      },
+      {
+        "degree": 21,
+        "higher_cycle_length": 7,
+        "higher_factor_index": 18,
+        "group_order": 15309
+      }
+    ]
+  },
+  "nonminimal_lifting_obstruction": {
+    "degree": 5,
+    "factor_count": 3,
+    "complete_domain": 125,
+    "genus_with_cycle_at_infinity": 1,
+    "orbits": [
+      {
+        "literal_orbit": 75,
+        "absolute_orbit": 15,
+        "spin": 1,
+        "group_order": 60,
+        "literal_representative": [
+          [
+            0,
+            1,
+            3,
+            4,
+            2
+          ],
+          [
+            0,
+            4,
+            1,
+            3,
+            2
+          ],
+          [
+            2,
+            1,
+            4,
+            3,
+            0
+          ]
+        ],
+        "orbit_sha256": "295c5affb33db57188f62f0d98232b2378bc46eda95874e813b9dbfc11fd9ba5"
+      },
+      {
+        "literal_orbit": 50,
+        "absolute_orbit": 10,
+        "spin": -1,
+        "group_order": 60,
+        "literal_representative": [
+          [
+            0,
+            1,
+            3,
+            4,
+            2
+          ],
+          [
+            4,
+            0,
+            2,
+            3,
+            1
+          ],
+          [
+            4,
+            0,
+            2,
+            3,
+            1
+          ]
+        ],
+        "orbit_sha256": "4f231022082996b4a406647afda6d5ef281eb2faf51f6ba5411a8a44aa168cd1"
+      }
+    ],
+    "rejected_by_minimal_tree_validator": true
+  },
+  "scope": "Bounded exact controls, complete minimal mixture domains through N=9, and the complete nonminimal N=5 three-cycle triple domain. Universal mixture connectivity is a written collective-cut proof and induction from the one-T theorem; no unrestricted higher-index or nonminimal connectivity is inferred. No independent replay or formal verification.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

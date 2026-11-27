@@ -7180,3 +7180,329 @@ and \(G=\alpha H+\beta S+j(x)\) for constants
 \(F_1\) has a nonzero \(y^4\)-coefficient and the
 other two are at most quadratic in \(y\).
 This excludes \(c=0,f\ne0\).
+
+
+## The isolated second-output correction at \((1,2,3)\)
+
+**Theorem SexticKellerDoubledSquareUncorrectedAxialThreeIsolatedSecondInversion.**
+In the corrected \((1,2,3)\) tuple, a Keller map with
+\(c\ne0,\ f=0\) is invertible.
+
+Scale the second output by \(1/c\) and lower the \(x\)-weight
+\(s\) from one, keeping \(y,z\)-weights two and three.
+The reference tuple is \((x^2y^4,y^4,x^6)\).
+The possible ties, from the weight-\((2,3,4)\) and
+\((1,2,3)\) supports, are
+\[
+\begin{array}{c|lll}
+ s&A&B&C\\ \hline
+5/6&&&yz\\
+4/5&&&xy^2\\
+3/4&&&x^2z\\
+2/3&&&y^2,\ x^3y\\
+3/5&&&xz\\
+1/2&z^3,\ y^3z&&z,\ x^2y\\
+2/5&&&xy\\
+1/3&&&y
+\end{array}
+\]
+Here \(A,B,C\) denote the weighted highest parts at the
+weights under consideration. The
+[axial checker](check_sextic_doubled_square_uncorrected_axial.py)
+also verifies the subsequent support comparisons.
+At every tie the expected determinant weight is positive,
+so the highest tuple has rank at most two.
+In particular a tie consisting of a single \(z\)-dependent
+term in \(C\) is impossible, since \(A,B\) already fix
+\(x,y\) algebraically.
+
+At \(s=4/5\), if the correction to \(C\) is nonzero
+\(\lambda xy^2\), the binary image field is \(k(X,H)\)
+for \(X=x^2=A/B,\ H=xy^2=(C-X^3)/\lambda\).
+On increasing the unused \(z\)-weight to the first tie,
+at most \(16/5\) by the ordinary \(x^3 y^2 z\) term
+of \(A\), the image specializes to the same binary
+image. The lifted identities \(A=H^2,\ C=X^3+\lambda H\)
+make \(H,X\) polynomial. The weight \(8/5\) forces \(X=x^2\).
+The only new term possible in \(H\) of weight \(24/5\)
+involving \(z\) is \(x^2 z\) at \(16/5\); its coefficient
+is fixed by the ordinary \(2x^3y^2z\) term in \(A\).
+Thus \(H=xP\), and \(B=H^2/X=P^2\).
+We obtain the tuple \((x^2P^2,P^2,x^6+\lambda xP)\)
+at weights \((4/5,2,16/5)\).
+
+In this new frame, decrease the \(x\)-weight to zero
+with the other weights fixed. Relative to
+\((x^2y^4,y^4,\lambda xy^2)\), the only possible ties
+are isolated in the first output: \(y^3z,\ xyz^2,\ yz^2\)
+at \(3/5,2/5,1/5\), respectively.
+The other two outputs fix \(x,y\) algebraically and
+force all three coefficients to vanish. At zero the
+actual third output has the form
+\[
+                        C_0=q(x)y^2+u(x)y+v(x)z+w(x),
+\]
+with \(\deg q=1,\deg v=2\), where the top coefficients
+come from the \((4/5,2,16/5)\) tuple.
+The same frame gives \(\deg u\le3,\deg w\le6\).
+The [affine-output root restriction](#residues-and-coordinate-completion-for-the-affine-transverse-output)
+makes \(v\) proportional to \(q^2\) and \(u\) a unit
+modulo \(v\). The
+[degree-five inverse completion](#the-three-quadratic-corrections)
+therefore applies: \(q^2=0\) modulo \(v\), so the inverse
+of \(q y^2+u y+w\) there has degree at most two in its
+argument. Lifting its coefficients to degree at most one
+in \(x\) gives \(L(x,t)\) of total degree at most three.
+The coordinates \((x,C_0,(y-L(x,C_0))/v)\) have inverse
+degrees at most three in \(y\) and five in \(z\).
+The planar pair over each level of \(C_0\) then has degree
+at most thirty, and the retained planar bound and
+[specialization and descent argument](LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md)
+give invertibility.
+
+It remains to exclude the case of no correction at \(4/5\).
+At \(s=2/3\) the possible binary correction is
+\(C=x^6+d y^2+e x^3y\). Suppose \(e\ne0\).
+With \(X=x^2,\ Y=y^2,\ T=xy\) and \(D=C-X^3\), the binary
+image field is \(k(X,T)\): \(X=A/B\), \(B=Y^2\), and
+\[
+        D=dY+eXT,\qquad D^2+d^2 B=(2dD+e^2 X^3)Y.
+\]
+The last denominator is nonzero as a rational function
+in the binary variables. Raise the \(z\)-weight to its
+first tie, at most \(10/3\) by \(x^3y^2z\) in \(A\).
+The lifted \(Y\) is polynomial by \(B=Y^2\).
+If \(X\) has a pole of order \(m\), then \(T^2=XY\)
+implies that \(T\) has pole order at most \(m/2\).
+Thus \(X^3\) dominates both corrections in \(C\), a
+contradiction. So \(X,T\) are polynomial and their
+weights \(4/3,8/3\) force them both to be unchanged.
+Hence \(Y=T^2/X\) is unchanged as well, precluding the tie.
+
+If \(e=0,\ d\ne0\) at \(2/3\), the binary image field
+is \(k(X,Y)\), with \(Y=(C-X^3)/d\).
+Under the same weight increase \(Y\) is polynomial
+by \(B=Y^2\) and \(X\) by \(C=X^3+dY\).
+The only possible addition to \(Y=y^2\) of weight four
+involves \(xz\) at \(z\)-weight \(10/3\).
+As before \(A=XY^2\) fixes its coefficient to one.
+At weights rescaled to \((1,3,5)\) the tuple is then
+\((x^2P^2,P^2,x^6+dP)\). The actual third output
+already has the affine form \(C_0\) above with \(q\)
+nonzero constant and \(v\) of degree one, contrary to
+the affine-output root restriction. This eliminates \(2/3\).
+
+At \(s=1/2\) fix \(y\) using \(B=y^4\). The bracket
+in \(x,z\) of \(A=x^2y^4+a z^3+b y^3z\) and
+\(C=x^6+d z+e x^2y\) vanishes. The coefficient of
+\(z^2\) forces \(a=0\), the coefficient of \(x^5y^3\)
+then gives \(b=0\), and the coefficient of \(xy^4\)
+gives \(d=0\).
+If the remaining \(e x^2y\) is nonzero, the binary
+image field is \(k(X,y)\). At a first \(z\)-tie the
+lift of \(y\) is polynomial by \(B=y^4\), and \(X\)
+is polynomial since \(X^3\) dominates \(eXy\) at
+any pole of \(X\) in \(C\).
+The weights of \(X,y\) are both below three, so they
+remain unchanged, impossible at a tie. The same
+argument removes a nonzero \(y\) correction at \(s=1/3\),
+where again the field is \(k(X,y)\).
+
+For a nonzero \(\lambda xy\) correction at \(2/5\),
+\(T=xy=(C-X^3)/\lambda\) is rational in the binary
+image and \(Y=T^2/X\). As at \(2/3\), \(Y\) lifts
+polynomially by \(B=Y^2\). At a pole of \(X\),
+\(X^3\) dominates \(T\) since \(T^2=XY\).
+Then \(X,T\) lift polynomially without changing,
+also impossible. Thus if no invertible branch was
+reached, \(x^6\) is the highest third output at every
+\(0<s<1\). This forces the actual third output to
+depend only on \(x\); its derivative has degree five
+and divides the Jacobian, a contradiction.
+
+
+## The simultaneous axial corrections at \((1,2,3)\)
+
+**Lemma KellerProductPlusUnivariateComponentObstruction.**
+In characteristic zero, an output of a three-variable Keller
+map cannot be \(Y Z+\tau(x)\) in polynomial coordinates
+\((x,Y,Z)\) if the univariate polynomial \(\tau\) has
+degree at least two.
+
+On its generic level \(S\), the other two outputs would
+make the relative volume form exact as a regular form.
+Indeed their differentials wedge to a nonzero constant
+multiple of that form, and this wedge is the derivative
+of the first output times the differential of the second.
+After extension to the algebraic closure of the generic
+level field, the surface is \(Y Z=S-\tau(x)\).
+Up to a constant its volume is \(dx\wedge dY/Y\) on
+\(Y\ne0\). This is the standard volume form whose
+nonzero de Rham class on a smooth Danielewski surface
+of degree at least two is proved in
+[Dubouloz, Kunyavskiĭ and Regeta, §4.2.1](https://pure.mpg.de/rest/items/item_3499143_3/component/file_3499144/content).
+Here the obstruction also follows by residues.
+
+If \(\alpha\) is a regular primitive, its restriction
+to \(Y\ne0\) differs from \(x\,dY/Y\) by a closed
+regular form on the Laurent-polynomial cylinder.
+Every such form is \(dH+\gamma\,dY/Y\) with
+\(\gamma\) constant. One can integrate its \(dx\)
+coefficient as a polynomial in \(x\); subtracting
+that derivative leaves a Laurent-polynomial multiple
+of \(dY\) independent of \(x\), for which only the
+\(Y^{-1}\) term survives integration.
+At the generic point of \(Y=0,x=\rho\), for any
+root \(\rho\) of \(S-\tau(x)\), use the local
+parameters \(Y,Z\), since \(\tau'(\rho)\ne0\).
+The coefficient of \(dY/Y\) at fixed \(Z\) in an
+exact rational form is zero, by Laurent expansion.
+Regularity of \(\alpha\) therefore requires
+\(\rho+\gamma=0\) at every root. There are at least
+two distinct roots on the generic level, a contradiction.
+
+**Theorem SexticKellerDoubledSquareUncorrectedAxialThreeCorrectedInversion.**
+Under the uncorrected weight-\((2,3,4)\) hypotheses, if
+the binary tuple at weights \((1,1,3)\) is corrected,
+the map is invertible. Consequently only the uncorrected
+binary tuple at \((1,1,3)\) remains in this frame.
+
+The preceding results reduce the proof to \(c f\ne0\)
+in the \((1,2,3)\) tuple
+\((x^2P^2,x^4P+cP^2,x^6+f x^2P)\).
+Scale the second and third outputs by \(1/c,1/f\).
+Lower the \(x\)-weight \(s\) from one with the
+\(y,z\)-weights two and three. The reference tuple
+is \((x^2y^4,y^4,x^2y^2)\). The support bounds give
+only one possible positive intermediate tie, at
+\(s=1/2\):
+\[
+         (x^2y^4+a z^3+b y^3z,\quad y^4,\quad
+                             x^2y^2+\ell yz).
+\]
+These comparisons are reproduced by the
+[axial checker](check_sextic_doubled_square_uncorrected_axial.py).
+The determinant of the leading tuple vanishes.
+In the \(x,z\) bracket at fixed \(y\), the
+coefficients of \(z^2\) and the constant term
+in \(z\) give \(a=0,\ b=\ell\).
+
+If \(\ell\ne0\), the actual third output has form
+\[
+                q(x)y^2+u(x)y+w(x)+(\ell y+v(x))z .
+\]
+The \((1,2,3)\) leading part gives \(\deg q=2\),
+\(\deg v=3\), and the same support bound gives
+\(\deg u\le4,\deg w\le6\).
+In polynomial coordinates
+\[
+   Y=y+v/\ell,\qquad Z=\ell z+qY+u-2qv/\ell,
+\]
+this output becomes \(Y Z+\tau(x)\), where
+\(\tau=w-uv/\ell+qv^2/\ell^2\).
+The last summand has degree eight, strictly above
+the degrees of the other two. This contradicts
+the product-plus-univariate obstruction.
+Thus the tie at \(s=1/2\) is absent.
+
+At \(s=0\) the first two outputs have
+\((0,2,3)\)-weight at most eight and have
+\(y^4\)-coefficients \(p(x),1\), respectively, with
+\(\deg p=2\). The third has the affine form
+\(C_0=q y^2+u y+v z+w\) with the same degree bounds.
+Every root of \(v\) is a root of \(q\) by the
+[affine-output root restriction](#residues-and-coordinate-completion-for-the-affine-transverse-output).
+If \(u\) is coprime to \(v\), invert
+\(qy^2+uy+w\) modulo \(v\). Here \(q^3=0\) in
+the quotient since \(\deg v=3\), so the inverse
+polynomial in the argument \(t\) has degree at most
+three by the nilpotent-quadratic iteration.
+Lift its coefficients to degree at most two in \(x\),
+giving \(L(x,t)\) of total degree at most five.
+The coordinates \((x,C_0,(y-L(x,C_0))/v)\) have
+inverse degrees at most five in \(y\) and nine in
+\(z\): in the inverse \(y=L+vh\) and
+\(z=(t-qy^2-uy-w)/v\), the last numerator has
+degree at most twelve and is divisible by \(v\).
+The composed planar degrees are at most fifty-four.
+The retained planar bound and
+[specialization and descent argument](LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md)
+therefore give inversion.
+
+Suppose instead that \(u,v\) have a common root.
+The root restriction makes it a double root of \(q\).
+After translating \(x\), the normalized leading
+coefficients from \((1,2,3)\) give \(q=x^2,\ v=x^3\).
+For the two quartic outputs use the procedure of the
+[two quartic transverse parts lemma](#an-affine-output-below-two-quartic-transverse-parts):
+raise the \(z\)-weight from three to four.
+The only extra initial tie is \(yz^2\), which vanishes
+by independence of the derivatives of \(p/x^4,1/x^4\)
+in the two-output bracket calculation of that lemma.
+At weights rescaled to \((0,1,2)\), take fixed
+\(S=x^2 U\), where \(U=y^2+xz\). Put \(H=y^2/S\)
+on this level. The two other highest parts divided
+by \(S^2\) are polynomials in \(H\) of degree at
+most two, with coefficients rational in \(x\).
+
+If both are independent of \(H\), the highest tuple
+is \((pU^2,U^2,x^2U)\). Apply the final bracket
+argument of the two-quartic lemma. Its two
+\(S^2\)-coefficients on a level of the actual third
+output are \(p/x^4,1/x^4\), which are nonconstant
+of distinct positive orders at infinity. The
+linear-output and cubic-quadratic comparisons there
+apply to these orders, giving a contradiction.
+
+Otherwise the image of the two polynomials in \(H\)
+on the generic \(S\)-level has dimension one by the
+vanishing leading determinant. Its degree is at most
+two, since at a generic fixed \(x\) the polynomial
+parametrization of degree at most two is dominant
+onto that same curve. The image contains the curve
+traced at \(z=0\). Subtract a constant multiple of
+the second output from the first to remove the constant
+term of \(p\); then this curve in \(t=1/x\) is
+\[
+                        (t^2+\alpha t^3,\ t^4).
+\]
+If \(\alpha\ne0\), no curve equation of degree at
+most two holds: the \(A^2\) term of such an equation
+would contribute \(2\alpha t^5\) with no other
+contribution at that order, and after it is removed
+the other five monomials have distinct orders.
+Hence \(\alpha=0\) and the image curve is the
+parabola whose second coordinate is the square
+of the first. At this weight write \(A,B,C\)
+for the highest tuple after the shear.
+The parabola equation is \(A^2=B C^2\).
+Thus \(V=A/C\) is polynomial because \(V^2=B\).
+Its weight is two and its restriction at \(z=0\)
+is \(y^2\), so \(V=y^2+D(x)z\). The \(y^2z\)
+coefficient of \(B=V^2\) has degree one in \(x\),
+with leading term \(2x\) from the \((1,2,3)\) tuple.
+Thus \(D=x+\delta\).
+If \(\delta=0\), \(V=U\) and the parametrization
+is independent of \(H\), contrary to this case.
+
+For \(\delta\ne0\) the highest pair \(B=V^2,\ C=x^2 U\)
+would have a rational slice at weights \((0,1,2)\).
+The formal proof of the
+[leading-pair slice theorem](KELLER_LEADING_PAIR_RATIONAL_SLICE.md)
+applies to these nonnegative weights: the weight-zero
+variable is simply unscaled, and the formal rectification
+and determinant coefficient extraction are unchanged.
+On a generic geometric component fix \(V=v_0\)
+and \(C=S\). Eliminating \(z\) gives
+\[
+    y^2=S/x^2+(S/x-x v_0)/\delta,\qquad
+              \omega\ \propto\ \frac{dx}{x^2 y}.
+\]
+In fact the Jacobian of \(V,C\) in \(y,z\)
+is a nonzero constant times \(x^2 y\), and passing
+to \(V^2,C\) multiplies it by \(2v_0\).
+Above \(x=0\), \(y\) has a simple pole on the
+unramified double cover. The differential has a
+simple pole with nonzero residue there, a contradiction.
+This excludes the last common-root case and proves
+inversion for every corrected axial tuple.

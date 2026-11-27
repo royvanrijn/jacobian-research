@@ -128,8 +128,45 @@
   ],
   "repository_checks": {
     "date": "2026-11-27",
-    "status": "Final paper-scoped source, declaration, proof-link and artifact checks recorded below; repository-wide checks run separately.",
-    "scope": "Consistency and artifact reproduction, not mathematical proof verification."
+    "render_navigation": {
+      "command": "make render-navigation",
+      "result": "passed"
+    },
+    "check_navigation": {
+      "command": "make check-navigation",
+      "result": "blocked_by_concurrent_unrelated_inventory_changes",
+      "observed_errors": [
+        "unmapped retained document: arithmetic/INDEX_TWO_HURWITZ_MIXTURES.md",
+        "unmapped retained document: arithmetic/sources/fried-lifting-invariants-math-0611591v4.pdf",
+        "unmapped retained document: arithmetic/sources/muehle-nadeau-alternating-3-cycles-2019.pdf",
+        "unmapped retained document: arithmetic/sources/ulmer-function-field-l-polynomial-rank-excerpt.pdf"
+      ]
+    },
+    "paper_scoped_checks": {
+      "result": "passed",
+      "indexed_statements": 11,
+      "explicit_tex_proof_links": 10,
+      "scope": "All article statement nodes have current supported routes; paper source/declaration inventory, citations, proof links, exact title and abstract, final reader PDF hash, source/PDF/archive checksums, source ZIP contents, clean-build byte identity, UTF-8/LF conventions and separate assurance flags checked."
+    },
+    "diff_check": {
+      "command": "git diff --check",
+      "result": "passed"
+    },
+    "scope": "Artifact/source consistency only, not mathematical proof verification. Unrelated concurrent repository changes are not certified by the scoped checks.",
+    "final_recheck": {
+      "date": "2026-11-27",
+      "artifact_checksums": "passed: source, PDF and source archive",
+      "latexmk": "passed: designated PDF is current",
+      "pdf_metadata": "passed: exact title and nine pages",
+      "render_navigation": "passed on retry: 4136 results rendered",
+      "check_navigation": "blocked by unrelated concurrent arithmetic and factorial coverage changes",
+      "observed_errors": [
+        "unmapped retained document: arithmetic/sources/smith-bsd-implies-goldfeld-2503.17619v1.pdf",
+        "source has no graph mapping: arithmetic/sources/muehle-nadeau-alternating-3-cycles-2019.pdf",
+        "changed coverage source: factorial/image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md",
+        "unmapped source declaration in that factorial document: doubled-prime nonexceptional windows"
+      ]
+    }
   },
   "bibliographic_audit": {
     "Heilman_2014": "Printed author edition and bibliography give no.71; journal HTML mirror labels article99. The article cites printed no.71 with DOI10.1214/EJP.v19-3083.",

@@ -382,5 +382,7 @@ The [source ledger](mixed_hurwitz_isolation_source_ledger.json) pins the proof,
 inputs and current replay. Independent mathematical review, independent replay,
 formal verification and historical priority are not asserted. Theorems M6--M7
 concern precisely one 3-cycle, all other finite factors DTs, and a full-cycle
-product; more general index-two passports and refined lifted domains are
+product. The [arbitrary-mixture theorem](INDEX_TWO_HURWITZ_MIXTURES.md)
+extends connectivity to any number of 3-cycles by a collective maximum,
+and also proves fully marked connectivity. Refined lifted domains remain
 separate questions.

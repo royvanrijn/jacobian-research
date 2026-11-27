@@ -143,8 +143,10 @@ For every \(k\ge1,m\ge0\), \(X_{k,m}\) has one literal full braid orbit,
 and one absolute orbit. An isolated 3-cycle can be restored at any old anchor
 with either orientation; no extra attachment orbit is introduced.
 
-**Proof.** Induct on \(k\), with the already proved one-3-cycle theorem
-as base. For \(k\ge2\), isolate a factor by Theorem A3 and move it last
+**Proof.** First work up to arbitrary simultaneous relabeling, allowing the
+product to range over the conjugacy class of \(P\). This is equivalent to
+the absolute fixed-product quotient. Induct on \(k\), with the already
+proved one-3-cycle theorem as base. For \(k\ge2\), isolate a factor by Theorem A3 and move it last
 by positive moves. Every crossed factor fixes its two exclusive leaves, so
 only its old anchor changes. Delete it and normalize the lower tuple by
 induction, leaving the last factor untouched.
@@ -216,9 +218,11 @@ graph on all DT strands, generating \(S_m\). The cases \(m\le1\) need no
 DT transposition. The literal stabilizer thus maps onto
 \(S_k\times S_m\), the full group of type-preserving strand permutations.
 
-Given two tuples with the same ordered passport, Theorem A4 supplies a
-braid between them. Its strand permutation preserves the two type sets.
-Multiply by a base-tuple stabilizer with the inverse type permutations;
+Conjugating these loops by a connecting braid transports this full
+type-preserving stabilizer image to any tuple. Given two tuples with the
+same ordered passport, Theorem A4 supplies a braid between them. Its strand
+permutation preserves the two type sets. Multiply by a stabilizer at the
+starting tuple with the inverse type permutations;
 the adjusted braid has identity strand permutation and the same endpoint.
 This is an element of \(PB_r\). \(\square\)
 
@@ -318,8 +322,56 @@ classes modulo \(d\) are nontrivial blocks. Parity is
 and its \(n-1\) distinct edge occurrences make a tree. \(\square\)
 
 This gives proper monodromy at arbitrarily large higher indices, including
-proper primitive dihedral groups in prime degree. It prevents extending the
-index-two small-support argument by degree alone. Single-cycle higher-index
+proper primitive dihedral groups in prime degree: a transitive action of
+prime degree is primitive. It prevents extending the index-two small-support
+argument by degree alone.
+
+## Lemma A10. A higher-index imprimitive family containing a 3-cycle
+
+For odd \(b\ge3\), set \(n=3b\) and
+\[
+ T=(0\ b\ 2b),\qquad
+ B=(0\ 1\ \cdots\ b-1)(b\ b+1\ \cdots\ 2b-1)
+                   (2b\ 2b+1\ \cdots\ 3b-1).                 \tag{8}
+\]
+Then \(TB=(0\ 1\ \cdots\ 3b-1)\), their indices sum to \(n-1\),
+and their expanded graph is a tree. Both factors are even, yet the group
+is \(C_3\wr C_b=C_3^b\rtimes C_b\) of order \(3^b b\), with the
+nontrivial blocks \(\{i,i+b,i+2b\}\), \(0\le i<b\).
+
+**Proof.** Track the three ends of the displayed b-cycles to check the
+full-cycle product. The conjugates \(B^iTB^{-i}\), \(0\le i<b\), are
+disjoint 3-cycles on exactly the displayed blocks. They generate \(C_3^b\),
+and \(B\) cyclically permutes those blocks with order \(b\). This proves
+the claimed semidirect product. The two edges of \(T\) connect the three
+disjoint b-vertex paths in the expansion of \(B\), giving a tree. \(\square\)
+
+Thus even a distinguished 3-cycle does not force alternating monodromy
+after disconnected higher-index factors are admitted.
+
+## Lemma A11. A genuine lifting split outside the minimal tree domain
+
+On five sheets, factorizations of a fixed 5-cycle into **three** 3-cycles
+have 125 literal tuples in exactly two full braid orbits, of sizes 75 and
+50. Both groups are \(A_5\), but their standard spin products are \(+1\)
+and \(-1\), respectively. Their absolute orbit sizes are 15 and 10.
+
+**Proof.** The retained checker directly enumerates all ordered pairs of
+the 20 3-cycles, completes the third from the product equation, and checks
+full signed braid closure. Exact group closure and rational Clifford lift
+products give the stated two values. A same-order odd lift is conjugation
+equivariant, so its product is preserved by Hurwitz moves. The fixed-product
+centralizer of order five acts freely, since a nonidentity 5-cycle power
+cannot preserve a three-element support. This proves the finite assertion.
+The exact inputs and the two orbit digests are retained in the receipt.
+\(\square\)
+
+This example has finite index sum six, exceeding \(N-1=4\), and genus
+one after the full cycle at infinity is included. It is deliberately outside
+the present hypothesis \(N=2r+1\). A full-cycle product alone is insufficient
+to assert the tree representation or the connectivity theorem.
+
+Single-cycle higher-index
 genus-zero passports are already covered by Liu--Osserman. Ripoll's primitive
 block theorem covers one nonreflection block with all remaining factors
 reflections, not arbitrary collections of disconnected higher-index factors.
@@ -336,6 +388,7 @@ The [checker](verify_index_two_hurwitz_mixtures.py),
 universal written proofs from finite controls. They retain collective-cut
 comparisons, exact literal marking loops, complete small fixed-product
 mixture and pure-braid domains, spin normalization checks and the dihedral
-family controls. The unrestricted theorem is not an extrapolation of those
+and imprimitive-family controls, and the complete nonminimal lifting split
+of Lemma A11. The unrestricted theorem is not an extrapolation of those
 finite domains. Independent mathematical review, independent replay, formal
 verification and priority are not asserted.

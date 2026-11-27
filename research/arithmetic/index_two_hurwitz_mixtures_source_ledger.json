@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/INDEX_TWO_HURWITZ_MIXTURES.md",
+  "assurance": "Internal written universal proofs, exact bounded controls and imported spin/monodromy theorems with inspected hypotheses. No independent mathematical review, independent replay, formal verification or priority claim.",
+  "declarations": [
+    {
+      "name": "Lemma A1. Comparing two connected factors",
+      "node": "ARITH-INDEX-TWO-COLLECTIVE-CUT-COMPARISON",
+      "scope": "In a minimal index-two full-cycle tree, if another connected 3-cycle C lies in a T-cut component V, then L_C>=N-|V|+1. If V is not uniquely largest this is at least L_T+2. A collective orbit maximum over all T factors, with k>=2, has a unique largest component containing every other T."
+    },
+    {
+      "name": "Lemma A2. DT pruning with other 3-cycles in the large component",
+      "node": "ARITH-INDEX-TWO-COLLECTIVE-DT-PRUNING",
+      "scope": "At that collective maximum, both smaller cut components are singletons. The DT Q^2/Q^-2 single-contact pruning, complementary full-cycle phase densities, equal smaller-tree synchronization, exclusive-leaf alignment and Q^2 strict descent remain valid with all other T factors in the largest component."
+    },
+    {
+      "name": "Theorem A3. Collective 3-cycle isolation",
+      "node": "ARITH-INDEX-TWO-COLLECTIVE-T-ISOLATION",
+      "scope": "Every X_{k,m}, k>=2, admits an isolated T with two exclusive leaves; deletion gives X_{k-1,m}. With the one-T base, T isolation holds exactly except (k,m)=(1,1); (1,0) deletes to the one-sheet empty tuple. No monodromy assumption."
+    },
+    {
+      "name": "Theorem A4. Connectivity for arbitrary mixtures containing a 3-cycle",
+      "node": "ARITH-INDEX-TWO-MIXTURE-CONNECTIVITY",
+      "scope": "For all k>=1,m>=0,N=2(k+m)+1, every tuple with fixed full-cycle product and k 3-cycles/m DTs lies in one literal full braid orbit and one absolute orbit. T restoration at any old anchor and either orientation adds no attachment orbit. Proof is collective isolation plus induction from the one-T theorem."
+    },
+    {
+      "name": "Lemma A5. A five-move exchange of two 3-cycle markings",
+      "node": "ARITH-INDEX-TWO-T-MARKING-EXCHANGE",
+      "scope": "Two T supports in this tree domain meet at most once. For a one-contact pair Q^5 fixes both literal permutations and swaps their strand marks. The adjacent loop fixes the complementary forest at every step. Gathering and undoing yields a loop on any separated such pair that fixes the whole endpoint tuple and swaps only its two marks; intermediate gathering can change outside edges."
+    },
+    {
+      "name": "Theorem A6. Fully marked connectivity",
+      "node": "ARITH-INDEX-TWO-FULLY-MARKED-CONNECTIVITY",
+      "scope": "For all k>=1,m>=0 and every fixed ordered type pattern, PB_r is transitive on literal fixed-full-cycle tuples. At a canonical tuple all Ts share anchor0 and Q^5 loops generate S_k; odd-order DT loops in W_m generate S_m. The literal stabilizer surjects S_k x S_m, cancelling the strand permutation of a full connecting braid."
+    },
+    {
+      "name": "Theorem A7. Removable factors and complete index-two exceptions",
+      "node": "ARITH-INDEX-TWO-EXTRACTION-AND-EXCEPTIONS",
+      "scope": "Every positive-T mixture with m>=1 has a removable DT and arbitrary two-fresh-leaf distinct-anchor DT restoration reaches its unique component. Across all minimal index-two domains, pure DTs have no tuples at N3, one D5 orbit at N5, two A7 and two order168 orbits at N7, and one An orbit for odd N>=9. These pure rows acquire no extra pure-braid splitting. Pure5-to7 restoration retains the two genuine A7 attachment-distance classes."
+    },
+    {
+      "name": "Proposition A8. Monodromy, inner classes and spin",
+      "node": "ARITH-INDEX-TWO-MONODROMY-AND-LIFTING",
+      "scope": "Positive-T mixtures have A3 at N3 and An at every odd N>=5. Fixed-product inner and absolute quotients agree; ranging over both An classes of the long cycle with only even relabeling retains two product-class components. Standard DT lift signs are not canonical. In the pure-T corner canonical odd-order lifts have the single spin (-1)^(r choose 2), including infinity P^-1; no extra original-domain lifting split. Independently specified lifted branch elements are outside this classification."
+    },
+    {
+      "name": "Lemma A9. A higher-index dihedral family",
+      "node": "ARITH-HIGHER-INDEX-DIHEDRAL-TREE-FAMILY",
+      "scope": "For every odd n>=5, A(x)=-x,B(x)=-x-1 give a minimal tree factorization of x+1 by two type2^((n-1)/2)1 factors, one literal B2 orbit of size n, and group D_(2n). Composite n admits residue blocks; n=1 mod4 is even. Thus higher-index proper monodromy persists in arbitrarily large degree, including primitive prime degree."
+    },
+    {
+      "name": "Lemma A10. A higher-index imprimitive family containing a 3-cycle",
+      "node": "ARITH-HIGHER-INDEX-THREE-CYCLE-WREATH-FAMILY",
+      "scope": "For every odd b>=3, T=(0 b 2b) and B the three consecutive b-cycles on 3b labels have product the standard long cycle and total index3b-1, with expanded tree, but group C3 wr C_b of order3^b b. The b column blocks are nontrivial. A literal T no longer forces An after disconnected higher-index factors are allowed."
+    },
+    {
+      "name": "Lemma A11. A genuine lifting split outside the minimal tree domain",
+      "node": "ARITH-NONMINIMAL-THREE-CYCLE-SPIN-SPLIT",
+      "scope": "Outside minimality, exactly125 literal factorizations of fixed P5 by three Ts split into full signed B3 orbits75 and50, with groups A5 and canonical spin +1,-1, respectively; absolute sizes15,10. Complete direct finite enumeration and exact Clifford arithmetic prove this finite assertion. It has genus1 and is rejected by the minimal-tree validator."
+    }
+  ],
+  "primary_source_comparison": [
+    {
+      "authors": "Henri Mühle and Philippe Nadeau",
+      "title": "A poset structure on the alternating group generated by 3-cycles",
+      "version": "Algebraic Combinatorics 2(6), 2019, pp1285–1310",
+      "url": "https://www.numdam.org/article/ALCO_2019__2_6_1285_0.pdf",
+      "path": "research/arithmetic/sources/muehle-nadeau-alternating-3-cycles-2019.pdf",
+      "sha256": "65e7ae091188b0fbeee021d72f2a22e092350885eea053386d1e9cae8733aa7b",
+      "inspected": "Actual retained PDF: Proposition3.1, Theorem1.2, Proposition6.2 and its proof",
+      "role": "context for the already known pure-T corner",
+      "conclusion": "An odd full cycle has reduced T length r=(N-1)/2 and a transitive reduced T action. A DT has T length2; replacing DTs changes length to r+m and does not supply the paired mixed action."
+    },
+    {
+      "authors": "Fu Liu and Brian Osserman",
+      "version": "arXiv:math/0609118v1",
+      "url": "https://arxiv.org/html/math/0609118v1",
+      "inspected": "Actual primary HTML, Proposition1.1, Theorem1.2, Section2 pure-cycle definition",
+      "role": "context, not an imported mixed-DT theorem",
+      "conclusion": "Single-cycle genus-zero passports include the all-T corner and higher single-cycle factors. DTs and disconnected higher factors fail the single-cycle hypothesis."
+    },
+    {
+      "authors": "Vivien Ripoll",
+      "version": "arXiv:0903.3604v3",
+      "url": "https://arxiv.org/html/0903.3604v3",
+      "inspected": "Actual primary HTML, Definition0.3 and Theorem0.4",
+      "role": "context, not an imported paired-block theorem",
+      "conclusion": "Primitive factorizations allow one nonreflection block, all others reflections; arbitrary mixtures of index2 or disconnected higher-index factors are not this theorem."
+    },
+    {
+      "authors": "Gareth A. Jones",
+      "version": "arXiv:1209.5169v1, retained source",
+      "path": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "inspected": "Actual retained PDF Theorem1.1, previously inspected for the one-T theorem",
+      "role": "mathematical input to A8 monodromy only",
+      "conclusion": "Primitive plus a literal3-cycle fixing at least3 points implies An. N>=7 satisfies this, after the explicit support<=4 block argument. N3,5 are separate finite bases."
+    },
+    {
+      "authors": "Michael D. Fried",
+      "title": "Alternating groups and moduli space lifting invariants",
+      "version": "arXiv:math/0611591v4",
+      "url": "https://arxiv.org/html/math/0611591v4",
+      "path": "research/arithmetic/sources/fried-lifting-invariants-math-0611591v4.pdf",
+      "sha256": "e8ab94bcfbc60a43415bb2bfc6d44058deda67c48f78e45e8bfdb11f00607900",
+      "inspected": "Actual primary HTML and retained PDF Section2.3, Invariance Corollary2.3 and proof, printed pp9–10",
+      "role": "mathematical input to the pure-T spin formula only; no connectivity import",
+      "conclusion": "For a transitive genus0 product-one tuple of odd-order elements, spin=(-1)^sum w(g), w=sum over cycle lengths ell of (ell^2-1)/8. Applying to T1,...,Tr,P^-1 has genus0, all odd order, and exponent r+(N^2-1)/8 congruent binom(r,2) mod2."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/INDEX_TWO_HURWITZ_MIXTURES.md",
+      "sha256": "f3bed58efbe552cba1725486066f944c07219811530daf10df4998990a20fa0a",
+      "locator": "A1–A11; universal and finite scopes separated"
+    },
+    {
+      "path": "research/arithmetic/MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md",
+      "sha256": "f1dd3df9f3241f00ecd86aa17068a916c1cd58a90c04ea274a33fad8a035d9a8",
+      "locator": "TheoremM7 one-T induction base, removable DT and exact small exceptions"
+    },
+    {
+      "path": "research/arithmetic/mixed_hurwitz_isolation_verification.json",
+      "sha256": "b31c86f52787705e4ca0e695bf2f0c3be8c9e50295ad9c9f5eba5e395a77f49e",
+      "locator": "Current internal one-T replay; no new pure9/11/13 census"
+    },
+    {
+      "path": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
+      "sha256": "f54e47a6de99123044a87f0e44f5e75065a0d4d734f41db3489a5bdb65be0109",
+      "locator": "Theorem20 pure-DT extraction and classification"
+    },
+    {
+      "path": "research/arithmetic/UNIFORM_TWO_LEAF_DT_ABSORPTION.md",
+      "sha256": "ab1a18bddd9bce55f938f3b8ad024e09d81b32590047e3730a227a163ad93254",
+      "locator": "Explicit W_m, odd pair-product orders, pure5-to7 attachment-distance boundary"
+    },
+    {
+      "path": "research/arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md",
+      "sha256": "e53c9f25872a75b09b60601c816968056ac5b5ce934477cf3b6c137ec76742e6",
+      "locator": "Exact class-character total, used for bounded mixture completeness"
+    },
+    {
+      "path": "research/arithmetic/DEGREE_FOURTEEN_HURWITZ_ORBIT.md",
+      "sha256": "2cdd1ade6d5afee867abe97510bf82fa9a3d0cc4f3af3180915b12b21aac76b1",
+      "locator": "Retained pure9/11/13 finite bases; no new replay claimed"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_index_two_hurwitz_mixtures.py",
+    "checker_sha256": "1f66c391650dc11f5226c25470dcae22a3800643c1b1d737b1fb687831fc2d3f",
+    "receipt": "research/arithmetic/index_two_hurwitz_mixtures_verification.json",
+    "receipt_sha256": "1dfcf00d891b7d09fd77a2edbfedbd738446faed83714d197ee1212b71429418",
+    "command": "python3 research/arithmetic/verify_index_two_hurwitz_mixtures.py",
+    "working_directory": "canonical Ubuntu-24.04 WSL repository root",
+    "software": "Python3.12.3, standard library only; active assertions required",
+    "deterministic_inputs": "Canonical tree seeds; full signed braid closure and explicit pure meridians for every k>=1,k+m=1..4, checked against exact character totals. All four pure7 representatives and complete pure5/7 domains. Canonical marking controls for k+m<=10 plus (12,8),(8,12),(20,0),(1,20). Four independent one-contact T orientations and a disjoint control. All103 paired smaller-tree orders at s=2..4, each with four large T/DT cores in two orders, giving824 gathering/full-twist/alignment/strict-descent controls with other Ts in the large component. Rational Euclidean Clifford algebra with T lift (e_a-e_b)(e_b-e_c)/2 and F^N extracting the central spin for an odd N-cycle. Dihedral n=5,9,13,25,45,65; wreath b=3,5,7; direct20^2 completion of the nonminimal N5 triple-T domain.",
+    "scope": "PASS: ten complete mixture domains throughN9,140860 ordered T-cut comparisons (18552 strict cases),359 literal marking-transposition loops over59 canonical controls;824 paired-tree gathering/alignment/strict-descent controls with other Ts in the large component; pure-PB7 orbit sizes147,147,49,49; pure-T spin r1..4; higher-index boundary families and the complete125-tuple nonminimal split. These bounded controls do not prove an unrestricted theorem."
+  },
+  "mathematical_review": {
+    "scope": "Internal audit of collective quantifiers, arbitrary complementary factors in pruning/gathering, literal versus absolute anchor transport, fixed-product centralizer, stabilizer-to-pure-braid argument, all pure7 exceptions, minimality and lift conventions.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "remaining_frontier": "Independent review and replay remain open. General disconnected higher-index minimal full-cycle passports need their own extraction/restoration and component classification; A9/A10 rule out degree-only alternating-monodromy claims. A11 proves a genuine spin split outside minimality. No unrestricted higher-index or nonminimal connectivity is asserted."
+}

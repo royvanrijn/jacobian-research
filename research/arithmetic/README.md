@@ -2103,8 +2103,8 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A genuine moving prime and a global unit realize each lower shift on the same real quadratic fields | Internal result | proved | [Source](RAMIFIED_CYCLOTOMIC_MIRROR_AFFINE_SHIFTS.md) |
 | An explicit genus-three Mordell cover transfers arbitrarily large three-primary Sha | Internal result | proved | [Source](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md) |
 | Every rational Pell coordinate on the marked genus-three curve has the same dyadic obstruction | Internal result | proved | [Source](GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md) |
-| An explicit quartic Pell model gives two ordinary class directions and a noncubic unit | Internal result | proved | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
-| The two ordinary Pell directions and the wild unit give exact scalar affine discriminant strata | Internal result | proved | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
+| An explicit quartic Pell model gives two ordinary class directions and a noncubic unit | Internal result | stale | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
+| The two ordinary Pell directions and the wild unit give exact scalar affine discriminant strata | Internal result | stale | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
 | Every smooth septic square-plus-one model at five has Jacobian three-rank at most four | Internal result | proved | [Source](SEPTIC_PELL_FIVE_DIRECTION_CONSTRUCTION.md) |
 | The exact powerful-pair period is a narrow ring class unit index | Internal result | proved | [Source](PELL_PERIOD_RING_CLASS_INERTIA.md) |
 | The position of ramified inertia determines its first cyclic detection degree | Internal result | proved | [Source](PELL_PERIOD_RING_CLASS_INERTIA.md) |
@@ -2125,8 +2125,14 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | In the composite mirror all primary wild conductors are simultaneous and exact | Internal result | proved | [Source](PELL_PRIME_PATH_WILD_AFFINE_FIELDS.md) |
 | Infinite simple genus-three exact [3,3] family with rational Weierstrass point | Internal result | proved | [Source](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md) |
 | Two rational-Weierstrass norm directions satisfy simultaneous all-prime virtuality | Internal result | proved | [Source](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md) |
+| The quartic Pell Mordell curve has generic rank exactly three | Internal result | stale | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
+| The quartic Pell progression gives a counted rank-three Mordell conductor family | Internal result | stale | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
+| Prescribed deep Pell ring class inertia coexists with rank-two Mordell points | Internal result | proved | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
+| A prime-path Mordell model has generic rank exactly two at unbounded ring class depth | Internal result | proved | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
+| The marked Pell points form full generic integral Mordell-Weil bases | Internal result | stale | [Source](PELL_NORM_SECTIONS_MORDELL_RANK.md) |
+| Arbitrary index-two Hurwitz mixtures and fully marked connectivity | Internal result | proved | [Source](INDEX_TWO_HURWITZ_MIXTURES.md) |
 
-**Computed obligations:** 189 unresolved; 36 resolved within their exact scope.
+**Computed obligations:** 191 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -2287,9 +2293,10 @@ Scope limits:
 - HG6 determines all eight rational points and the full finite group [3,6,12] of order 216, with conductor 243000. HG7 gives a smooth five-dimensional marked-norm coefficient scheme with directions breaking the known involutions. Rational geometrically simple examples, rational infinite families, simultaneous virtual directions with a rational Weierstrass point and rank control in the large-Sha family remain open.
 - HG8 supplies an explicit genus-three hyperelliptic family with rational Weierstrass points and unbounded elementary three-primary Sha by a degree-eight isogeny to E_R times a genus-two Jacobian and MCT16. Only the elliptic rank is controlled; bounding the genus-two companion rank remains open. This classical two-quotient construction does not require the MCT20 external converse.
 - AFM5 supplies an exact four-way sharp-count equivalence: the full quadratic 3-torsion second moment, the unrestricted degree-36 count, the degree-nine scalar mirror count and common-fundamental-discriminant cubic pairs. A degree-nine exponent beta transfers to 2beta/9 in degree36, beta/6 in degree54, 4beta in the cubic minimum moment and 4beta in the 2gamma-th elliptic-conductor moment. The beta=1/4 endpoint remains open; it would supply the full k<=3 moment and separation1/81 at existing conditional record cost, while genuine abc valuation/retention/chart extraction and pointwise elliptic counts remain separate.
-- The fixed-projection argument establishes pure-DT extraction for every odd N>=15, and the retained degree-thirteen base and two-leaf absorption establish residual pure-DT connectivity. Mixed connectivity remains open; independent mathematical review of this closure is pending.
+- The fixed-projection argument establishes pure-DT extraction for every odd N>=15, and the retained degree-thirteen base and two-leaf absorption establish residual pure-DT connectivity. The one-T theorem and arbitrary-mixture collective isolation now give all minimal index-two mixture connectivity, with the pure-DT degree-seven exceptions retained. Independent mathematical review is pending.
 - SP1 reduces septic Pell rows to degree profiles (2,3) and (5,4), with individual nonzero torsion but no automatic independence. SP2 exhausts all15625 normalized F5 polynomials and bounds every smooth septic square-plus-one Jacobian three-rank by four. A degree-preserving integral rank-five candidate must therefore be bad at five. The explicit bad-at-five S7 control meets the unit/local-cube congruences for one section and has exactly one rational direction. The five-class endpoint stays open.
 - Theorem M7 of the mixed isolation note establishes one literal unmarked and exactly marked mixed full-cycle orbit for every odd N>=3, T isolation for N>=7 with the genuine N=5 boundary, removable-DT extraction and arbitrary fresh-leaf restoration. Its complete mixed-nine base bridges all four pure-seven cores. Pure and mixed connectivity now complete the original even full-alternating passport criterion for every even n>=8. Independent mathematical review and arithmetic realization questions remain separate.
+- A1–A8 of INDEX_TWO_HURWITZ_MIXTURES.md establish arbitrary minimal T/DT connectivity, even under the pure braid group for every ordered passport. The collective maximum puts all other Ts in a unique largest cut component; Q^5 exchanges two T markings with literal endpoint restored. The only multiple index-two orbits are the four pure-DT degree-seven ones. A9–A10 exhibit higher-index proper and imprimitive monodromy; A11 gives a genuine genus-one spin split outside minimality. General disconnected higher-index extraction/restoration and independent review remain open.
 
 Tracked obligations (computed states):
 
@@ -2437,5 +2444,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [For E(q) the number of Q-isogeny classes of elliptic curves of conductor q, prove sum_(q<=Q) E(q)^(2gamma)<<_epsilon Q^(1+epsilon) for Q>=2 and every epsilon>0, with gamma as in PTBW Theorem 1.12. This is implied by the sharp full quadratic 3-torsion second moment, hence by the AFM5 sharp degree-nine count or equivalent cubic-pair bound. No converse is asserted.](ELLIPTIC_CONDUCTOR_MOMENTS_FROM_QUADRATIC_TORSION.md) — GAP-ARITH-ELLIPTIC-CONDUCTOR-2GAMMA-LINEAR-MOMENT
 - **verification / open:** [Independently review Lemma 19, Theorem 20 and the base/absorption/marking dependency chain.](TERMINAL_MASS_HURWITZ_DESCENT.md) — VERIFY-ARITH-HURWITZ-FIXED-PROJECTION-EXTRACTION
 - **verification / open:** [Independently review M1--M7: both Q^2 pruning identities, maximization and common complementary phases, unique-largest paired-leaf alignment, the three-way type obstruction, diagonal star induction, outside support in the five-move escape, degree-five boundary, all four pure degree-seven cores, mixed-nine completeness, one-anchor restoration, exact marking, monodromy and lifting conventions. Present proof audit and replay are internal only.](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md) — VERIFY-ARITH-MIXED-HURWITZ-ISOLATION-CONNECTIVITY
+- **verification / open:** [Independently review the arbitrary-mixture collective isolation, pure braid connectivity and obstruction proof.](INDEX_TWO_HURWITZ_MIXTURES.md) — VERIFY-ARITH-INDEX-TWO-MIXTURE-PROOF
+- **mathematical / open:** [Classify extraction/restoration and genuine monodromy/lifting components for arbitrary disconnected higher-index factors in the minimal full-cycle tree domain.](INDEX_TWO_HURWITZ_MIXTURES.md) — GAP-ARITH-HIGHER-INDEX-DISCONNECTED-TREE-FACTORS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

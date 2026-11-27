@@ -1,6 +1,6 @@
-"""Exact polynomial, local, independence, and reduction data for CP1–CP2."""
+"""Exact polynomial, local, independence, and reduction data for CP1–CP4."""
 
-from sage.all import CRT_list, GF, QQ, ZZ, PolynomialRing, matrix
+from sage.all import CRT_list, EllipticCurve, GF, QQ, ZZ, PolynomialRing, QuadraticField, matrix
 
 
 ring = PolynomialRing(QQ, "t")
@@ -141,10 +141,101 @@ def verify_local_affine_orbits():
     assert 3 + 2*2 == 7
 
 
+def verify_family_squareclasses():
+    gaussian = QuadraticField(-1, "i")
+    i = gaussian.gen()
+    parameter_ring = PolynomialRing(gaussian, "w")
+    w = parameter_ring.gen()
+    fraction = parameter_ring.fraction_field()
+    quartic_ring = PolynomialRing(fraction, "t")
+    u = quartic_ring.gen()
+    v = 1/(24*(1+2*w*w))
+    z = w*v
+    s = u - 3/(8*v)
+    quartic = (
+        s+3+6*v*(s+1)**2+12*v*v*(s+1)*(s*s+3)
+        + 8*v**3*(s*s+3)**2-8*z*z*(s*s+3)
+    )/(16*z)
+    assert quartic == quartic(-u)
+    a, b, c = quartic[4], quartic[2], quartic[0]
+    assert a == v*v/(2*w)
+    constant = (c-i)/a
+    discriminant = (b*b-4*a*(c-i))/(a*a)
+    assert constant == -19440*(w*w+i*w-QQ(1)/5)*(w*w-i*w/3+QQ(1)/3)**3
+    assert discriminant == 147456*(w-3*i/4)*(w+i/4)**3*(w*w+QQ(1)/2)**2
+    first = w**4+QQ(3)/5*w*w+QQ(1)/25
+    second = w**4+QQ(7)/9*w*w+QQ(1)/9
+    assert (w*w+i*w-QQ(1)/5)*(w*w-i*w-QQ(1)/5) == first
+    assert (w*w-i*w/3+QQ(1)/3)*(w*w+i*w/3+QQ(1)/3) == second
+    assert (w-3*i/4)*(w+3*i/4) == w*w+QQ(9)/16
+    assert (w+i/4)*(w-i/4) == w*w+QQ(1)/16
+
+    C = gaussian(constant(QQ(1)/48))
+    D = gaussian(discriminant(QQ(1)/48))
+    values = [C, D, C.conjugate(), D.conjugate()]
+    places = [
+        gaussian.ideal(p, i-r)
+        for p, r in [(101, 10), (101, -10), (1297, 36), (1297, -36)]
+    ]
+    rows = [[gaussian.ideal(value).valuation(place) % 2 for value in values] for place in places]
+    assert matrix(GF(2), rows).rank() == 4
+
+
+def verify_rank_zero_descents():
+    square_mod_eight = {0, 1, 4}
+    for u in range(8):
+        for v in range(8):
+            if (u | v) & 1:
+                assert (-u**4+15*u*u*v*v-25*v**4) % 8 not in square_mod_eight
+            if u & 1:
+                assert (2*u**4-20*u*u*v*v+32*v**4) % 8 not in square_mod_eight
+            if u & 1 and v & 1:
+                assert (2*u**4-5*u*u*v*v+2*v**4) % 8 == 7
+    for A, B, primes, order, points in [
+        (10, 9, (5, 7), 8, [(0, 0), (-1, 0), (-9, 0), (3, 12), (3, -12), (-3, 6), (-3, -6)]),
+        (15, 25, (3, 7), 4, [(0, 0), (5, 25), (5, -25)]),
+    ]:
+        curve = EllipticCurve([0, A, 0, B, 0])
+        for prime in primes:
+            assert curve.discriminant() % prime != 0
+            assert curve.change_ring(GF(prime)).cardinality() == order
+        assert len(set(points)) == order-1
+        assert all(y*y == x*(x*x+A*x+B) for x, y in points)
+
+
+def verify_squarefree_slice():
+    refined = {25 if modulus == 5 else modulus: residue for modulus, residue in conditions.items()}
+    moduli = [ZZ(m) for m in refined]
+    start = CRT_list(list(refined.values()), moduli)
+    period = ZZ(1)
+    for modulus in moduli:
+        period *= modulus
+    integral_quartic = P((start+period*t)/128)
+    assert integral_quartic.denominator() == 1
+    assert integral_quartic.change_ring(GF(2)) == 1
+    polynomial = integral_quartic**2+1
+    for prime in period.prime_divisors():
+        if prime == 2:
+            continue
+        modulus = 25 if prime == 5 else prime
+        if prime == 5:
+            assert polynomial[0] % modulus == 15
+        else:
+            assert polynomial[0] % modulus != 0
+        assert all(coefficient % modulus == 0 for coefficient in polynomial.list()[1:])
+    assert set(polynomial.leading_coefficient().numerator().prime_divisors()) <= set(period.prime_divisors())
+    assert {k: sum(m*n for r, m in [(0, 5), (2, 2), (4, 1)]
+                   for s, n in [(0, 5), (2, 2), (4, 1)] if r+s == k)
+            for k in range(0, 9, 2)} == {0: 25, 2: 20, 4: 14, 6: 4, 8: 1}
+
+
 if __name__ == "__main__":
     verify_identities()
     verify_integral_slice()
     verify_three_and_cubic_residues()
     verify_good_reduction()
     verify_local_affine_orbits()
-    print("CP1–CP2 exact certificates passed")
+    verify_family_squareclasses()
+    verify_rank_zero_descents()
+    verify_squarefree_slice()
+    print("CP1–CP4 exact certificates passed")

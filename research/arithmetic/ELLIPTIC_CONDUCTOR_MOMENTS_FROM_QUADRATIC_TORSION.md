@@ -59,3 +59,12 @@ Theorem 1.1 of [Koymans–Thorner](https://arxiv.org/pdf/2309.07204) specializes
 In the witness construction the ideal of \(\bar\beta_i\beta_j/p_0^3\) is \((\bar{\mathfrak p}_i\mathfrak p_j)^3\), and \(\alpha_{12}\alpha_{23}=p_2^3\alpha_{13}\) follows from \(\beta_2\bar\beta_2=p_0^3p_2^3\) including when the middle vertex is the anchor. The signed coefficient minors satisfy the Plücker relation. Three products of equal edge colors would share a common scalar \(c^2\), where \(c\) is the common positive cube-free part, and canceling \(c^2\) gives the signed Fermat equation. Counting nonmonochromatic four-subsets then counts adjacent edge pairs with multiplicity at most \(s-3\) in a coset of size \(s\). The split-prime estimate in Heath-Brown–Pierce (2.5)–(2.7) is used at a common \(Z\) in each \((X,H)\) box, with \(Z\gg X^{1/6}\). Summing a moment uses only logarithmically many \(H\)-boxes, or the pointwise bound on the exceptional portion.
 
 For the full-modulus count, the even part of a \(q_i\) requires \(v_2(y_i)\ge3\). In the corresponding norm congruence the left side has valuation two, forcing \(v_2(j)=1\). Dividing by four at 2 yields a unit cube congruence. An even \(r\) instead forces both \(y_i\) odd. Thus no two retained moduli share a 2-part. The cofactor constraints in the rank-two branch come from substituting the congruences into integer minors. They do not require reducing a basis of the plane to a linearly independent pair modulo a composite modulus. After division by the common gcd of the cofactor parameters, scaling the primitive coefficient-plane lattice by the reciprocal box widths gives the covolume in the proof. The primitive modulus triple bound in a line is needed to handle the first minimum separately from the rank-two bound. These checks are internal. Independent review of the lattice count, the witness construction and the complete import chain remains open.
+
+## Explicit high-rank conductor families
+
+[PM2–PM3](PELL_NORM_SECTIONS_MORDELL_RANK.md) give separate
+lower counts on the two Pell families. They give exact conductors
+for a rank-at-least-three quartic slice and for rank-at-least-two
+curves carrying the high-order moving prime and its prescribed
+affine Frobenius. The generic ranks and bases are determined
+in PM1, PM4 and PM5.

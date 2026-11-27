@@ -63,7 +63,7 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md",
-      "sha256": "468f14520ced6bbc29095bb12003a54f0d8c5137ac0b41bf6a7768b4ac306738",
+      "sha256": "f1dd3df9f3241f00ecd86aa17068a916c1cd58a90c04ea274a33fad8a035d9a8",
       "locator": "Lemmas M1--M5, Theorems M6--M7 and Monodromy, inner components and lifting invariants"
     },
     {
@@ -106,7 +106,7 @@
     "checker": "research/arithmetic/verify_mixed_hurwitz_isolation.py",
     "checker_sha256": "6763c1ebf292c314c3cf9b7f7f9de345beb0191143e4b832d0516b8bebc0336b",
     "receipt": "research/arithmetic/mixed_hurwitz_isolation_verification.json",
-    "receipt_sha256": "afb4cacef189b4c6c8925d4e09dfd8691e842daf24f487fb0712f28779edf4b2",
+    "receipt_sha256": "b31c86f52787705e4ca0e695bf2f0c3be8c9e50295ad9c9f5eba5e395a77f49e",
     "command": "python3 research/arithmetic/verify_mixed_hurwitz_isolation.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
@@ -119,5 +119,5 @@
     "formal_verification": false,
     "external_review": false
   },
-  "remaining_frontier": "No mathematical gap in the stated mixed one-3-cycle full-cycle domain is asserted. Independent mathematical review and historical comparison remain separate. Other index-two mixtures, non-full-cycle products and prescribed lifted branch elements are not classified by this theorem."
+  "remaining_frontier": "The one-3-cycle theorem is complete in its stated domain. INDEX_TWO_HURWITZ_MIXTURES.md extends connectivity to arbitrary minimal index-two mixtures and the pure braid action by a separate collective comparison, without iterating the uniqueness hypothesis. Non-full-cycle products, independently prescribed lifted branch elements and general disconnected higher-index factors remain separate. Independent review is pending."
 }

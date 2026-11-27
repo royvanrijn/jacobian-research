@@ -126,6 +126,12 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | The surviving even Weyl profile gives a primitive length-two commutator problem | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | Weighted Weyl symbols reduce to exactness on explicit cyclic curves | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
 | Weighted powers of a binomial sum cannot be leading symbols of scalar commutator pairs | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
+| A finite pole test for rational Hamiltonian slices at signed weights | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| A truncated-series test for all mixed-weight root multiplicities | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| Positive face compatibility for plane Keller and rank-one Weyl pairs | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| Signed slice tests glue independently across exposed Newton edges | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| Arbitrarily long mixed Newton chains pass every signed slice test | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| Full rational slices fail for the boundary-admissible mixed chains | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

@@ -247,11 +247,158 @@ common scalar extension. The multiplicities follow by counting
 the lines and planes of a three-dimensional space over
 \(\mathbb F_3\).
 
+## Factorization of the whole reflected family
+
+**Theorem CP3.** For every \(w\in\mathbb Q^\times\), the quartic
+\(P_w\) defined in CP1 has \(P_w^2+1\) irreducible over \(\mathbb Q\).
+In particular, changing the rational symmetry parameter of these two
+norm sections cannot replace the octic by smaller rational factors.
+
+Put \(P_w=a t^4+b t^2+c\) and take \(i^2=-1\). The leading coefficient
+is \(a=v^2/(2w)\ne0\). For \(P_w-i\) use the monic constant and
+discriminant in the quadratic variable \(t^2\)
+\[
+ C=(c-i)/a,\qquad D=(b^2-4a(c-i))/a^2.
+\]
+The defining formula gives
+\[
+\begin{split}
+ C&=-19440(w^2+iw-1/5)(w^2-iw/3+1/3)^3,\\
+ D&=147456(w-3i/4)(w+i/4)^3(w^2+1/2)^2.
+\end{split}
+\]
+Their rational norm squareclasses are respectively
+\[
+  (25w^4+15w^2+1)(9w^4+7w^2+1),\qquad
+  (16w^2+1)(16w^2+9).
+\]
+Both are nonsquares. Here are the two descents that enforce this.
+
+For the second norm, put \(X=4w\). If
+\((X^2+1)(X^2+9)=Y^2\), then \((X^2,XY)\) lies on
+\(E:y^2=x(x^2+10x+9)\). Under the two-isogeny rank formula,
+the \(x\)-squareclass images on \(E\) and its isogenous curve
+\(E':y^2=x(x-4)(x-16)\) have product of sizes \(2^{2+r}\).
+The primitive quartic criterion for a class \(d\) on
+\(y^2=x(x^2+A x+B)\) is
+\(n^2=d u^4+A u^2v^2+(B/d)v^4\) for coprime integers \(u,v\).
+The possible classes on \(E\) are \(1,-1,3,-3\). On \(E'\)
+only \(1,2\) are possible because \(x\ge0\). The equation for
+\(2\) is \(n^2=2u^4-20u^2v^2+32v^4\). If \(u\) is odd, the
+right side is \(2\) or \(6\bmod8\). Otherwise \(v\) is odd. For
+\(4\mid u\) its dyadic valuation is five, and for \(u=2u_0\) with
+\(u_0\) odd its quotient by \(16\) is \(7\bmod8\). Thus \(E\) has
+rank zero. Good reduction at five and seven bounds the torsion
+order by eight since each count is eight. The eight displayed
+coordinates are the point at infinity, \(x=0,-1,-9\) with
+\(y=0\), and \((3,\pm12),(-3,\pm6)\). The only positive \(x\)
+is \(3\), which cannot equal \(X^2\).
+
+For the first norm write \(w=A/B\) in lowest terms. The integers
+\[
+ I=25A^4+15A^2B^2+B^4,\qquad J=9A^4+7A^2B^2+B^4
+\]
+are positive, odd and coprime. A common odd prime would divide
+\(I-J=8A^2(2A^2+B^2)\). The case of a prime dividing \(A\) is
+excluded by coprimality of \(A,B\). The other case leaves
+\(I\equiv-A^4\) at that prime. If the norm were square, \(I\)
+would be square. Writing \(Y^2=I/B^4\) gives a point
+\((25w^2,25wY)\) on \(E_1:y^2=x(x^2+15x+25)\).
+The isogenous curve is \(y^2=x(x-5)(x-25)\), whose squareclass
+image has size two with possible classes \(1,5\).
+On \(E_1\) the candidates are \(1,-1,5,-5\). The class \(5\)
+is represented by \((5,25)\). The class \(-1\) is impossible
+because \(-u^4+15u^2v^2-25v^4\) is \(3,5\) or \(7\bmod8\)
+for coprime \(u,v\). This also excludes \(-5\), so \(E_1\) has
+rank zero. The reductions at three and seven both have order four.
+The nonzero positive \(x\) of a rational point is therefore \(5\),
+from the four known points \(O,(0,0),(5,\pm25)\). It cannot
+equal \(25w^2\). The formula and squareclass criterion in these
+descents are those in [Dixit–Murty–Pathak, Section 2](sources/dixit-murty-pathak-mordell-weil-rank.pdf).
+
+Consequently \(C,D\) are both nonsquares in \(\mathbb Q(i)\).
+The nonsquare \(D\) excludes a root of \(P_w-i\) and a
+factorization into even quadratics. In every factorization into
+monic quadratics, evenness gives
+\((t^2+\lambda t+\mu)(t^2-\lambda t+\nu)\) and
+\(\lambda(\nu-\mu)=0\). If \(\lambda\ne0\), then \(C=\mu^2\).
+Thus \(P_w-i\) is irreducible over \(\mathbb Q(i)\). Every root
+of \(P_w^2+1\) generates a field containing \(i\), so its
+rational degree is eight.
+
+## The fixed slice and its squarefree sieve
+
+**Corollary CP4.** At \(w=1/48\), the degree-eight splitting
+group is the wreath product \(D_4\wr C_2\) in its action on two
+blocks of four, where \(D_4\) has order eight. Among unramified
+primes where the model retains degree, the numbers \(0,2,4,6,8\)
+of roots have respective natural densities
+\[
+              (89,20,14,4,1)/128.
+\]
+On refining CP1 to \(N\equiv2\bmod25\), the integral octic
+\(f(j)=P((N_0'+L'j)/128)^2+1\) has no fixed square divisor.
+Its squarefree sieve has a positive product of local densities.
+
+For the group calculation, use the classes \(C,D,\bar C,\bar D\)
+in \(\mathbb Q(i)^\times/\mathbb Q(i)^{\times2}\). At the primes
+over \(101\) with \(i\equiv\pm10\) the only odd valuations occur
+for \(C\) and \(\bar C\), on opposite branches. At the primes over
+\(1297\) with \(i\equiv\pm36\), the only odd valuations occur for
+\(D\) and \(\bar D\), on opposite branches. Thus the four classes
+are independent. Each even quartic splitting field is contained
+in a \(D_4\) action on its two opposite pairs and contains the
+quadratic roots of its \(C,D\). The independent two quadratic
+classes force its group to be \(D_4\). Any nontrivial intersection
+of the two splitting fields would give a common quadratic
+subfield, since a nontrivial quotient of a finite \(2\)-group
+has such a quotient. Each \(D_4\) has three quadratic subfields
+and they are precisely the ones from the two independent
+classes and their product. Hence the two splitting fields are
+disjoint over \(\mathbb Q(i)\). Conjugation exchanges the blocks,
+giving the full order-\(128\) wreath product over \(\mathbb Q\).
+In a block preserved by Frobenius, the numbers \(0,2,4\) of
+fixed points have multiplicities \(5,2,1\) in \(D_4\). Block
+exchange precludes fixed points. Convolving the two block
+counts and adjoining the exchange coset gives the densities
+by [Chebotarev](sources/milne-cft403.pdf).
+
+On the refined slice \(f\equiv2\bmod8\), \(f\equiv15\bmod25\),
+and \(f\) is a unit at all other primes dividing \(L'\). At
+\(p\nmid L'\), the leading coefficient is a unit. If
+\(p\equiv3\bmod4\), \(f\) has no roots modulo \(p\). Every
+remaining \(p\nmid L'\) is at least \(13\), so a degree-eight
+polynomial cannot vanish identically on \(\mathbb F_p\).
+Writing \(\rho(p^2)=\#\{j\bmod p^2:f(j)\equiv0\bmod p^2\}\),
+we get \(\rho(p^2)<p^2\) everywhere, and \(\rho(p^2)\le8\)
+at all but finitely many primes by simple-root lifting.
+This proves positivity of \(\delta=\prod_p(1-\rho(p^2)/p^2)\).
+
+**Conditional consequence.** Assume the \(abc\) conjecture.
+[Granville's Theorem 1](sources/granville-count-squarefrees-1998-excerpt.pdf)
+applies to \(f\), which is separable, integral and has fixed
+divisor squarefree. The number of squarefree values for
+\(1\le j\le T\) is asymptotic to \(\delta T\).
+If \(A_f\) is the leading coefficient, the number of
+distinct quadratic fields from these squarefree values of
+discriminant at most \(X\) is asymptotic to
+\(\delta(X/(4A_f))^{1/8}\). Their discriminant is \(D=4f(j)\).
+The corresponding Mordell models of
+[PM2](PELL_NORM_SECTIONS_MORDELL_RANK.md) have conductor
+\(144 f(j)^2=9D^2\), since \(v_2(f)=1\) and \(v_3(f)=0\).
+Thus the same subfamily gives asymptotically
+\(\delta(X/(144 A_f^2))^{1/16}\) distinct conductors up to \(X\).
+Both counts use eventual strict monotonicity of \(f\).
+The unconditional argument gives all fixed finite sieves.
+For squarefree values themselves it leaves the large-prime-square
+tail of Granville's sieve.
+
 ## Scope and verification
 
 The [exact checker](verify_quartic_pell_two_class_directions.py)
 verifies the polynomial identities, denominators and local data,
-the residue-class independence and finite-field Frobenius calculation.
+the residue-class independence and finite-field Frobenius calculation,
+the symbolic squareclasses, two local descents and the fixed octic sieve data.
 Run it with Sage's Python. The prime-to-three ramification and the
 class-group and field-count conclusions use the written arguments.
 The five-direction replacement in LY9 remains open. In particular

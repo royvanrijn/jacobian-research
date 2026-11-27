@@ -1,6 +1,6 @@
-# Prime-terminal Chebyshev squarefreeness and pure-cross three-windows
+# Prime and doubled-prime pure-cross three-windows
 
-This proof excludes every noncentral resonance of odd prime terminal order. Combining it with the already proved canonical opposite-axis theorem also closes the pure-cross three-window at every odd prime terminal order. General composite terminal orders are not covered by the new argument.
+Sections 1--7 exclude every noncentral resonance of odd prime terminal order. Combining this with the canonical opposite-axis theorem closes the pure-cross three-window at every odd prime terminal order. Sections 8--12 prove the doubled-prime window when the two linear coefficients do not have quotient \(\pm i\). Other composite terminals and that exceptional quotient at doubled primes remain outside the new theorem.
 
 ## 1. Statement and normalization
 
@@ -215,5 +215,118 @@ In the necessary equation \((e/d)^p=-1\), the noncentral cases are the primitive
 
 No finite computation is a premise of Sections 1--5. The noncentral proof is self-contained. The final all-phase prime-terminal theorem additionally uses the exact existing canonical opposite-axis squarefreeness theorem specified in Section 6.
 
-This is not an all-start pure-cross theorem and does not close general binary quadratic SFC, SFC(2), or SFC(3). It is an infinite class of starting indices \(p-2\), with no coefficient restriction beyond the actual three-term hypothesis \(Bde\ne0\). Composite terminal orders remain separate.
+This is not an all-start pure-cross theorem and does not close general binary quadratic SFC, SFC(2), or SFC(3). It is an infinite class of starting indices \(p-2\), with no coefficient restriction beyond the actual three-term hypothesis \(Bde\ne0\). The following doubled-prime result has an additional, explicit axis restriction.
+
+## 8. Doubled primes away from the fourth-root axis ratios
+
+**Theorem (doubled-prime nonexceptional windows).** Let \(p\) be any odd prime, \(n=2p-1\), and let \(c\) satisfy
+\[
+                 T_{2p}(c)=0,\qquad T_2(c)\ne0.
+\]
+Then \(G_n(c,b)\) is squarefree over \(\mathbb C\). Consequently, over every characteristic-zero field, if
+\[
+ f=BXY+dX+eY,\qquad Bde\ne0,\qquad d^2+e^2\ne0,
+\]
+the three factorial moments at powers \(2p-2,2p-1,2p\) cannot all vanish.
+
+This is uniform in the prime and in all three coefficients. The excluded axis quotients are exactly \(e/d=\pm i\) after scalar extension. The theorem does not restrict the normalized cross coefficient to be real or to have a real conjugate.
+
+Set \(u=2c\), \(A=2b\) and use \(F_n\) from (1). Composition of the Laurent identities for \(D_N\) gives
+\[
+ D_{2p}(u)=D_p(u^2-2),\qquad
+ D_{2p}(u)=(u^2-2)M_p(u^2-2),\quad M_p(w)=D_p(w)/w.       \tag{17}
+\]
+Thus the nonexceptional resonances are exactly
+\[
+                         M_p(u^2-2)=0.                     \tag{18}
+\]
+It suffices to prove that \(F_{2p-1}(u,A)\) has no repeated root at any such algebraic \(u\).
+
+## 9. A tame coefficient field and two possible root valuations
+
+Embed the algebraic parameters in \(\overline{\mathbb Q}_p\), and normalize \(v(p)=1\). Put \(w=u^2-2\). Section 2 proves that \(M_p\) is Eisenstein, of degree \(p-1\), and hence
+\[
+                           v(w)=1/(p-1).                   \tag{19}
+\]
+For completeness this valuation follows directly from the constant coefficient of valuation one and the other nonleading coefficients of valuation at least one: the unique possible tie of minimal terms is between the leading term and the constant term.
+
+The reduction \(\bar u=a\) satisfies \(a^2=2\). Choose a finite unramified extension \(L/\mathbb Q_p\) containing a square root \(a_0\) of 2 with that residue. In the complete field \(L(w)\), the simple residue root of \(X^2-(2+w)\) lifts uniquely, since \(2a\ne0\). Therefore the chosen \(u\) belongs to \(L(w)\). The polynomial \(M_p\) is still Eisenstein over \(L\), and
+\[
+                   v(L(w)^\times)=\frac1{p-1}\mathbb Z.    \tag{20}
+\]
+Indeed the powers \(1,w,\ldots,w^{p-2}\) form a basis; their valuations are distinct modulo \(\mathbb Z\), so a linear combination has the valuation of its unique least term. The same observation proves their independence and the Eisenstein degree assertion. Also \(u\) cannot belong to an unramified extension: \(u^2-2=w\) has the nonintegral valuation (19).
+
+Write
+\[
+                    F_n(u,A)=\sum_{j=0}^n a_j(u)A^j,
+              \qquad a_j(u)=E_n^{(j)}(u),\quad n=2p-1.
+\]
+Every coefficient of \(a_j(u)\) as an integer polynomial is divisible by \(j!\). Thus \(v(a_j(u))\ge0\) for \(j<p\) and \(v(a_j(u))\ge1\) for \(p\le j\le2p-1\).
+The Laurent formula for \(E_n\), reduced modulo \(p\), gives
+\[
+ E_{2p-1}(u)\equiv u^p(u^2-4)^{(p-1)/2}\pmod p.           \tag{21}
+\]
+For example substitute \(u=z+z^{-1}\):
+\((z^{2p}-z^{-2p})/(z-z^{-1})=u^p(z-z^{-1})^{p-1}\) in characteristic \(p\). Injectivity of that substitution proves (21).
+Since \(a^2=2\), both \(a\) and \(a^2-4=-2\) are nonzero. Consequently
+\[
+ v(a_0(u))=0,\quad v(a_{p-1}(u))=0,\quad
+                         v(a_{2p-1}(u))=1.                \tag{22}
+\]
+For the middle assertion differentiate (21) \(p-1\) times: the result is \((p-1)!u^p\) modulo \(p\). The last assertion uses \(a_n=n!\) and \(v((2p-1)!)=1\).
+
+These bounds show directly that every root \(A\) has valuation
+\[
+                            v(A)=0\quad\hbox{or}\quad -1/p. \tag{23}
+\]
+If \(v(A)>0\), the constant term is uniquely least. If \(t=v(A)<0\), every term other than those with indices \(p-1\) and \(2p-1\) has valuation strictly above at least one of those two terms. Their valuations can tie only when
+\((p-1)t=1+(2p-1)t\), or \(t=-1/p\). This argument requires no degree-preserving reduction of the whole polynomial modulo \(p\).
+
+If \(v(A)=-1/p\), the powers \(1,A,\ldots,A^{p-1}\) are linearly independent over \(L(w)\): their valuations are distinct modulo the group (20). Thus \([L(w,A):L(w)]\ge p\). In characteristic zero an irreducible factor containing a repeated root must divide \(F_n\) at least twice. That would require degree at least \(2p\), whereas \(\deg_A F_n=2p-1\). No root of negative valuation can repeat.
+
+## 10. Integral double roots would force an unramified parameter
+
+It remains to exclude a repeated root of valuation zero. Let its residue be \(\alpha\ne0\). The telescoping identity (8) remains valid for this \(n\). The differentiated Chebyshev equation also gives the integer identity
+\[
+ -A^4F_{AA}-(3A^3+2uA^2)F_A
+ +[n(n+2)A^2-uA+4-u^2]F
+       =(4-u^2)E_n(u)-(n+1)A D_{n+1}(u).                  \tag{24}
+\]
+It follows by collecting the coefficient of every power of \(A\); in particular its two initial terms are included. This is also (A.5) of the real-conjugate-ratio note under \(u=2c,A=2b\).
+
+Reduce at \((u,A)=(a,\alpha)\). Since \(n+1=2p\), \(\bar F=\bar F_A=0\) gives
+\[
+ \bar F_u=-\frac{E_n(a)}{\alpha}\ne0,\qquad
+ \bar F_{AA}=-\frac{(4-a^2)E_n(a)}{\alpha^4}\ne0.           \tag{25}
+\]
+Here \(E_n(a)\ne0\) follows from (21), and \(4-a^2=2\ne0\). Therefore the two equations \(F=F_A=0\), in the two unknowns \(u,A\), have invertible Jacobian at the residue point: its determinant is \(\bar F_u\bar F_{AA}\).
+
+Choose a further finite unramified extension \(L'\) containing the residues \(a,\alpha\). The simple-system version of Hensel lifting gives a solution \((\widehat u,\widehat A)\) in its valuation ring with these residues. It is the only such solution even after passing to any algebraic extension. The elementary argument is useful here. Newton correction with the inverse Jacobian doubles the positive valuation of the error at each step, giving a convergent solution in the complete unramified field. For uniqueness, subtract two solutions and let \(s>0\) be the minimum valuation of their coordinate differences. The invertible integral linear term has minimum valuation exactly \(s\), while every Taylor remainder has valuation at least \(2s\); they cannot sum to zero.
+
+The hypothesized pair \((u,A)\) must consequently equal this unramified pair. But \(u\) cannot be unramified by (19). This excludes every remaining repeated root and proves squarefreeness in (18).
+
+The ramification comparison is indispensable. The two-equation Jacobian argument forces a *critical parameter* to be unramified; it does not assert squarefreeness for every integral parameter with the same residue.
+
+## 11. Phase conclusion and the exact remaining axis family
+
+For a hypothetical zero triple ending at \(2p\), the native reduction (15) applies. With \(s^2=de\) and \(u=(d+e)/s\),
+\[
+                    u^2-2=\frac{d^2+e^2}{de}.              \tag{26}
+\]
+If \(d^2+e^2\ne0\), equations (17)--(18) put it in the proved squarefree sector. This contradicts the repeated-root requirement. The argument is algebraic: the resonant \(u\) and any repeated \(A\) are algebraic over \(\mathbb Q\), so their field embeds into \(\overline{\mathbb Q}_p\); the contradiction rules them out over every characteristic-zero field.
+
+If \(d^2+e^2=0\), then \(u^2=2\), and \(u\) is unramified at the odd prime. Section 10 gives no contradiction there. The remaining doubled-prime obligation is precisely squarefreeness of
+\[
+                  F_{2p-1}(u,A),\qquad u^2=2,
+                         \quad p\text{ any odd prime}.     \tag{27}
+\]
+This is a fixed axis-ratio family with unrestricted cross coefficient, not a finite set of coefficient profiles. Its \(p=3\) case was already proved by the exact quintic certificate in the first-five-starts note. No all-prime conclusion for (27) is inferred from that case.
+
+The degree and tame-value-group hypotheses in Section 9 cannot be dropped. Over \(\mathbb Q_p\), \((1+pA^p)^2\) has repeated roots of valuation \(-1/p\), but has degree \(2p\). Over \(\mathbb Q_3(\pi)\), \(\pi^3=3\), the degree-three polynomial \((A-\pi^{-1})^2(A+\pi^{-1})\) has a repeated root of valuation \(-1/3\); its coefficient value group already contains thirds. In particular the proof above does not extend to prime-power terminals by replacing \(p\) with \(p^r\).
+
+## 12. Reproducible supplemental checks
+
+At \(p=3\), the resonance polynomial is \(M_3(u^2-2)=(u^2-2)^2-3\). For \(a^2=2\) in characteristic three, direct differentiation of \(E_5=u^5-4u^3+3u\) gives \(\bar F_5(a,A)=-a-A+aA^2\). Its unique double root is \(A=a\), with \(\bar F_u=1\) and \(\bar F_{AA}=2a\). This illustrates the unit fold explicitly; its lift is unramified and cannot equal a root of the displayed Eisenstein-in-\(u^2-2\) resonance. The negative-valuation branch has root degree at least three and cannot repeat in degree five.
+
+The [doubled-prime checker](verify_bilinear_doubled_prime_ramification.py) independently constructs the integer Chebyshev recurrences. It checks (21), both differential identities, coefficient divisibility, and the three endpoint valuations for the explicitly recorded primes. It also checks exact discriminant coprimality with \(M_p(u^2-2)\) at three small primes, and rejects removal of the degree bound using \((1+3A^3)^2\). The [receipt](bilinear_doubled_prime_ramification_verification.json) records the environment, source hashes, precise finite domains and actual outcome. These checks are internal transcription and small-case controls; the proof for all odd primes is Sections 8--11. No independent replay, external review, or formal verification is claimed.
 

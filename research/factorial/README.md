@@ -1071,8 +1071,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Three factorial moments suffice at starts 2^k-7 of the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_EARLIER_DYADIC_WINDOWS.md) |
 | Explicit corner cutoffs for factorial families with nonliftable Gaussian zeros | Internal result | proved | [Source](image-rigidity/SFC_EXPLICIT_GAUSSIAN_NONLIFTING_CUTOFF.md) |
 | Two-moment multiplication closure and a modular marked-rank obstruction | Internal result | proved | [Source](image-rigidity/STEPANOV_AUXILIARY_DETERMINANTS_SFC2.md) |
+| Pure-cross three-windows at doubled odd primes off the fourth-root axis ratios | Internal result | proved | [Source](image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md) |
 
-**Computed obligations:** 75 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 76 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
