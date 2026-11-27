@@ -140,6 +140,6 @@ The statement concerns differential operators with actual polynomial
 coefficients. For a polynomial pair with nonconstant leading
 coefficients, passing to an algebraic coefficient cover to normalize
 them does not supply the polynomial hypothesis used in (3)–(6).
-The unrestricted \((4,6)\) problem over algebraic function fields
-and actual polynomial admission with nonconstant leading coefficients
-remain separate obligations.
+The [full polynomial exclusion](POLYNOMIAL_FOUR_SIX_STRING_EXCLUSION.md)
+covers nonconstant leading coefficients by a different argument.
+The unrestricted algebraic-function-field problem remains open.

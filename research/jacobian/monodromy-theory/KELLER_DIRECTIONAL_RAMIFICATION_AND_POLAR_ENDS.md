@@ -211,3 +211,12 @@ restriction degree \(j\ge7\). The
 gives \(a\)-degree at least \(6j\) for that coordinate in the same
 original source frame. Unramified omitted primes are allowed and
 there is no upper bound on \(b\)-degree.
+
+## Stronger bounds for smooth finite normalization
+
+The [smooth-normalization argument](KELLER_SMOOTH_NORMALIZATION_POLAR_BOUNDARY.md)
+sharpens the six-sheet symmetric bounds to weighted directional costs
+\(7,7,8\) and the sole-transposition fold to longitudinal degree at least
+48. The [immersed-branch restriction](KELLER_IMMERSED_SOLE_BRANCH_PROJECTION.md)
+raises the bound to 54 in the immersed sole-transposition slice and
+requires composite width at least six in the immersed alternating case.

@@ -100,3 +100,10 @@ rank-two lift is supplied. No finite search or new computational
 certificate is needed for the global corollary; its mathematical inputs
 remain the two scoped classifications. No formal verification,
 independent whole-proof replay, external review or priority claim is made.
+
+## Stronger polynomial order bound
+
+The [reduced-order theorem](POLYNOMIAL_GCD_TWO_AND_REDUCED_ORDER_BOUNDS.md)
+raises the bound for a nonsurjective polynomial Weyl pair to composite
+orders at least six. In a triangularly reduced presentation neither
+order divides the other and their gcd is at least three.

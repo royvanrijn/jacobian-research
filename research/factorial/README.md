@@ -1015,8 +1015,55 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Actual-support windows for binary phases with prime-power axis terms and constant shifts | Internal result | proved | [Source](image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md) |
 | Trinomial three-windows with a sufficiently distant third exponent | Internal result | proved | [Source](image-rigidity/SFC_UNIVARIATE_TRINOMIALS.md) |
 | Quadratic triangle moments in prime-power windows | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) |
+| Divided-power dominance at prime-power progressions | Internal result | unmapped | [Source](image-rigidity/SFC_DIVIDED_POWER_DOMINANCE_WINDOWS.md) |
+| Automata for factorial moments after a common monomial shift | Internal result | unmapped | [Source](image-rigidity/FACTORIAL_SHIFTED_MOMENT_AUTOMATA.md) |
+| Shifted prime-power windows for quadratic triangle moments | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) |
+| Factorial nonvanishing under blockwise radial perturbations | Internal result | unmapped | [Source](image-rigidity/SFC_RADIAL_BLOCK_PERTURBATIONS.md) |
+| Relative valuation and cancellation in factorial moment automata | Internal result | unmapped | [Source](image-rigidity/FACTORIAL_RELATIVE_VALUATION_AUTOMATA.md) |
+| Logarithmic residues for factorial moment towers | Internal result | unmapped | [Source](image-rigidity/SFC_LOGARITHMIC_TOWER_RESIDUES.md) |
+| An orbit obstruction for every fixed shift of quadratic triangle moments | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) |
+| Third shifted prime-power windows at seven for quadratic triangle moments | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) |
+| Additional shifted factorial windows from individual cubic roots | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) |
+| Fourth shifted prime-power windows for factorial triangle moments | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) |
+| Strong Factorial for products of perturbed radial powers | Internal result | unmapped | [Source](image-rigidity/SFC_POWERED_RADIAL_FACTOR_CLASSIFICATION.md) |
+| Fifth shifted prime-power windows for factorial triangle moments | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) |
+| Deepest rational order centers for factorial windows | Internal result | unmapped | [Source](image-rigidity/SFC_DEEPEST_RATIONAL_ORDER_WINDOWS.md) |
+| Two consecutive factorial moments near a mixed quadratic anchor | Internal result | unmapped | [Source](image-rigidity/SFC_MIXED_ANCHOR_CONSTANT_SHIFT.md) |
+| Two-window nonvanishing with truncated factorial weights | Internal result | unmapped | [Source](image-rigidity/SFC_TRUNCATED_FACTORIAL_CONSTANT_SHIFT.md) |
+| Constant shifts of phases near higher-degree monomials | Internal result | unmapped | [Source](image-rigidity/SFC_HIGHER_DEGREE_CONSTANT_SHIFT.md) |
+| Shallow dyadic two-windows and ramification bounds for prime-power anchor pairs | Internal result | unmapped | [Source](image-rigidity/SFC_DYADIC_SHALLOW_WINDOWS.md) |
+| Divisor sieve for factorial windows under one row translation | Internal result | proved | [Source](image-rigidity/SFC_ROW_TRANSLATION_DIVISOR_SIEVE.md) |
+| Fixed factorial window decisions under independent common heights | Internal result | proved | [Source](image-rigidity/SFC_INDEPENDENT_COMMON_HEIGHT_DECISION.md) |
+| Initial factorial window for every common translate of 1, X, Y² | Internal result | unmapped | [Source](image-rigidity/SFC_INDEPENDENT_COMMON_HEIGHT_DECISION.md) |
+| Quadratic Gaussian odd starts through 155 and intermediate-prime lifting obstructions | Internal result | proved | [Source](image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md) |
+| Independent-height window decisions for any number of doubled degree classes | Internal result | proved | [Source](image-rigidity/SFC_MULTIPLE_DOUBLED_DEGREE_INDEPENDENT_HEIGHTS.md) |
+| Gaussian jets and first lifting tests for all bivariate common heights | Internal result | proved | [Source](image-rigidity/SFC_BIVARIATE_TRANSLATION_GAUSSIAN_JETS.md) |
+| Higher Gaussian lifting and integer height obstructions for homogeneous bivariate supports | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_CENTERED_HIGHER_LIFT.md) |
+| Dyadic restrictions at every possible quadratic triangle three-moment zero | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_BOUNDARY.md) |
+| Exact reductions of quadratic triangle moments at two binary boundary indices | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_BOUNDARY.md) |
+| Three quadratic triangle moments suffice in every window containing a binary boundary | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_BOUNDARY.md) |
+| Quadratic triangle windows exclude coefficient fields of degree at most two | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_BOUNDARY.md) |
+| Separated degree clusters and finite reductions across all bivariate degrees | Internal result | proved | [Source](image-rigidity/SFC_SEPARATED_DEGREE_CLUSTER_WINDOWS.md) |
+| Uniform large-exponent exclusion for the initial homogeneous trinomial window | Internal result | proved | [Source](image-rigidity/SFC_UNIFORM_HOMOGENEOUS_TRINOMIAL_INITIAL_CORNER.md) |
+| An effective absolute degree reduction for initial homogeneous trinomial windows | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_AXIS_DEGREE_SIEVE.md) |
+| Dyadic leading layer for power-of-two triangle exponents | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_PREFIX_WINDOWS.md) |
+| Residue restriction for quadratic triangle windows above a dyadic prefix | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_PREFIX_WINDOWS.md) |
+| Roots-of-unity gcd tests for quadratic triangle windows above Q and 3Q | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_PREFIX_WINDOWS.md) |
+| Three quadratic triangle moments suffice at n=25 times a power of two minus one | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_DYADIC_PREFIX_WINDOWS.md) |
+| Fixed-window factorial resultant tests on unbounded exponent profiles | Internal result | open | [Source](image-rigidity/SFC_FIXED_WINDOW_DIGIT_RESULTANT_TESTS.md) |
+| Initial homogeneous trinomial windows at all heights through span twelve | Internal result | unmapped | [Source](image-rigidity/SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md) |
+| Sparse factorial orders by fractional axis induction | Internal result | proved | [Source](image-rigidity/SFC_SPARSE_ORDERS_FRACTIONAL_AXIS_INDUCTION.md) |
+| Shifted homogeneous trinomial degree and height sieves at orders two, three and q | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_AXIS_WINDOWS_2_3_Q.md) |
+| Uniform high-order support-sized nonvanishing for powered factorial triangles | Internal result | proved | [Source](image-rigidity/SFC_POWERED_TRIANGLE_EVENTUAL_WINDOWS.md) |
+| The initial support-sized window for every powered factorial triangle | Internal result | proved | [Source](image-rigidity/SFC_POWERED_TRIANGLE_EVENTUAL_WINDOWS.md) |
+| The second support-sized window for powered factorial triangles | Internal result | proved | [Source](image-rigidity/SFC_POWERED_TRIANGLE_EVENTUAL_WINDOWS.md) |
+| Finite reduction for the powered factorial triangle | Internal result | proved | [Source](image-rigidity/SFC_POWERED_TRIANGLE_EVENTUAL_WINDOWS.md) |
+| Strong Factorial for powered triangles at every start | Internal result | proved | [Source](image-rigidity/SFC_POWERED_TRIANGLE_EVENTUAL_WINDOWS.md) |
+| Leading factorial layers at orders Q-3 and Q-4 in the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_BEFORE_DYADIC_BOUNDARY.md) |
+| Dyadic residue and lift classification for a possible quadratic triangle zero at Q-4 | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_BEFORE_DYADIC_BOUNDARY.md) |
+| Three quadratic triangle moments suffice immediately before a dyadic boundary | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_BEFORE_DYADIC_BOUNDARY.md) |
 
-**Computed obligations:** 61 unresolved; 36 resolved within their exact scope.
+**Computed obligations:** 68 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -1185,7 +1232,10 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Construct increasing indices starting at 1 such that the 5-adic valuations of their partial factorial sums tend to infinity. The compactness implication from f(1,5)=infinity is proved in the canonical note, but that premise is open.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-INFINITE-SEQUENCE
 - **mathematical / open:** [At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 size four remains only for the low-adjacent-digit nonsingleton profile (10) with the exact restrictions (11), (16), (17), and (19). Foreign XY and the axis quartic are fully excluded at this radius. At L>=9 the remaining sizes run from 3 through L+1 when c=0 or through L when c!=0. On the low even-digit foreign four-term branch the L=9 candidates satisfy (25) and (26).](image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md) — GAP-FACTORIAL-BINARY-THREE-ADIC-WILD-CANCELED-ROW
 - **mathematical / open:** [For every characteristic-zero field, 0<=a<b<c, ABC!=0 and n>=1, at least one of the factorial moments of A*x^a+B*x^b+C*x^c at orders n,n+1,n+2 is nonzero.](image-rigidity/SFC_UNIVARIATE_TRINOMIALS.md) — GAP-SFC-ARBITRARY-UNIVARIATE-TRINOMIALS
-- **mathematical / open:** [For every n>=1 with 2n+1 not a prime power, rule out P_n=P_(n+1)=P_(n+2)=0 for abc Delta!=0 with distinct complex coefficients and all a+b+c-2t nonzero. Every common zero must obey the exact two-power relation (3) at the same point.](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) — GAP-SFC-D1-TRIANGLE-NONPRIME-POWER-WINDOWS
-- **mathematical / open:** [Is there an infinite sequence of distinct increasing factorial indices whose partial sums have valuations tending to infinity at some fixed prime?](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE
+- **mathematical / open:** [For every n>=1 outside the proved prime-power and shifted windows, including their individual-root refinements and the fourth- and fifth-shift windows, rule out P_n=P_(n+1)=P_(n+2)=0 for abc Delta!=0 with distinct complex coefficients and all a+b+c-2t nonzero. Every common zero must obey the exact two-power relation (3) at the same point.](image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md) — GAP-SFC-D1-TRIANGLE-NONPRIME-POWER-WINDOWS
+- **mathematical / open:** [Do there exist a prime p and an infinite increasing sequence a_1<a_2<... of positive indices whose partial factorial sums have p-adic valuations tending to infinity? Equivalently, does f(a,p)=infinity hold for some positive a and prime p by compactness? The recorded p=5 and a=1 route is sufficient. The existence of many cancelling starts in Z_p, with a Hausdorff dimension lower bound, gives no individual positive-integer start. A uniform prime-41 certificate gives f(1,41)>=199623130720, with the first unhandled carry boundary of size eight.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE
+- **mathematical / open:** [For bivariate supports with a unique least p-adic slope, does every window of the actual support size contain an integer center with a nonzero full normalized expansion (7)?](image-rigidity/SFC_LOGARITHMIC_TOWER_RESIDUES.md) — GAP-SFC-ISOLATED-SLOPE-TOWER-ADJACENT-GERMS
+- **mathematical / open:** [Can moving-center jet minors rule out all sufficiently deep exact zero windows for each bivariate phase with a strictly isolated effective slope?](image-rigidity/SFC_DEEPEST_RATIONAL_ORDER_WINDOWS.md) — GAP-SFC-DEEPEST-ORDER-JET-MINORS
+- **mathematical / open:** [Prove a sufficient carry lift for factorial subsums at prime 41 through all jumps of size at least eight, including unbounded jump sizes. The exact one-block and two-block proof covers all jumps through size seven. A uniform covering proof would give f(1,41)=infinity and solve the existence question in Erdős #404.](ERDOS_404_FACTORIAL_SUMS.md) — GAP-FACT-ERDOS404-PRIME41-UNBOUNDED-JUMPS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

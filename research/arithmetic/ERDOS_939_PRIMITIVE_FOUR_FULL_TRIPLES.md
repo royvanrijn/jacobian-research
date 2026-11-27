@@ -30,6 +30,39 @@ High-quality \(abc\)-triples have been examined in connection with this problem 
 
 The [curated-table checker](verify_erdos_939_curated.py) independently disqualifies all 241 entries in de Smit's good-quality table by finding an exact prime valuation below four. Across the good, merit and unbeaten tables, the checker reconstructs 539 distinct triples and certifies 529 exclusions. Of the 371 entries with \(c\ge2^{63}\), it certifies 361 exclusions. The other ten entries have a hidden factor in the source and reported quality at most \(1.0883\). Their exclusions are supported by the tabulated quality and lack an independent valuation or radical certificate here. [Good table mirror](https://numberdb.org/files/T62/abc-quality.html) · [Merit table archive](https://web.archive.org/web/20251211064253id_/https://pub.math.leidenuniv.nl/~smitbde/abc/?set=3) · [Unbeaten table archive](https://web.archive.org/web/20251211063930id_/https://pub.math.leidenuniv.nl/~smitbde/abc/?set=4)
 
+## Cohn's cubic tangent construction
+
+Cohn's tangent step on a diagonal cubic gives a map on primitive signed triples. Write \(u+v+w=0\), where \(u,v,w\) are nonzero and pairwise coprime. Put \((d_1,d_2,d_3)=(v-w,w-u,u-v)\) and define
+\[
+T(u,v,w)=\frac{(u d_1^3,v d_2^3,w d_3^3)}{G},
+\qquad
+G=\begin{cases}
+27&u\equiv v\equiv w\pmod 3,\\
+1&\text{otherwise}.
+\end{cases}
+\]
+The raw sum is zero by substitution of \(w=-u-v\). The map commutes with permutations up to a common sign. The only primitive nonzero seeds with a zero difference are the permutations and sign changes of \((1,1,-2)\), whose image has a zero coordinate. [Cohn, p. 439](https://pub.math.leidenuniv.nl/~smitbde/edu/bachsem/3-powerful_abc-triple.pdf)
+
+**Proposition (Odd valuations and the first 4-full iterate).**
+
+For any seed with three nonzero differences, \(T\) is primitive and preserves each positive odd-prime valuation on its original coordinate. The even coordinate has valuation at least \(5\) in the image. The image is 4-full exactly when all odd primes dividing the seed have exponent at least \(4\), every \(p\ge5\) dividing a difference divides it at least twice, and, if \(3\nmid uvw\), the unique difference divisible by \(9\) is divisible by \(27\). If the seed is outside the 4-full locus, the first iterate is its only possible first visit to that locus.
+
+To prove this, the six linear forms \(u,v,w,d_1,d_2,d_3\) in \((u,v)\) have pairwise determinants in \(\{\pm1,\pm2,\pm3\}\). At \(p\ge5\) at most one form vanishes modulo \(p\), so an old valuation survives and a new valuation is \(3v_p(d_i)\). Exactly one of \(u,v,w\) is even, say \(u\). Then \(d_1=u+2v\) is even and the other two differences are odd. If \(v_2(u)=1\), then \(v_2(d_1)\ge2\), giving image valuation at least \(7\). If \(v_2(u)\ge2\), then \(v_2(d_1)=1\), giving image valuation \(v_2(u)+3\). In particular an even valuation of \(4\) in a solution rules out a Cohn preimage.
+
+If \(3\) divides one coordinate, the other two are opposite units modulo \(3\), so all differences are units and the old valuation survives. Otherwise the three coordinates are congruent to the same unit \(s\bmod3\). Write them as \(s+3u_i\). The identity gives \(\sum_i u_i=-s\), so the three \(u_i\) are neither all equal nor all distinct modulo \(3\). Exactly one difference is divisible by \(9\), and the other two have valuation \(1\). Dividing by \(27\) leaves a power of \(3\) in just the coordinate of the exceptional difference and the new exponent is \(3(v_3(d_i)-1)\). These calculations give the content \(G\) and pairwise coprimality after division. They also show that after the first step all defects are odd-prime valuations below \(4\), which persist at every subsequent step in the domain.
+
+**Corollary (Height bound for 4-full tangent images).**
+
+If a primitive positive 4-full triple comes from \(T\), its largest term exceeds \(10^{72}/27\). The complete ABC@home archive below \(10^{18}\) contains no eligible primitive preimage. The additional archive below \(2^{63}\) contains none among its listed rows.
+
+In fact, normalize a nondegenerate preimage to \((a,b,-c)\) with \(a<b\), \(a+b=c\). Then \(c>2\) and its odd prime valuations must all be at least \(4\). For \(R=\operatorname{rad}(abc)\), this gives \(R^4\le8abc\le2c^3<c^4\), since the exponent at \(2\) is at least \(1\). Such a seed must appear in the complete \(R<c\) archive if \(c<10^{18}\). The [seed checker](verify_erdos_939_cohn.py) tested all 14,482,065 rows in that archive and all 9,345,651 rows in the additional archive. It found no row whose three odd parts are 4-full. The height in the image is \(b(a+c)^3/G\), since the second signed coordinate is negative and the other two are positive. For \(t=b/c\in[1/2,1)\), the function \(t(2-t)^3\) is decreasing and exceeds \(1\). Thus the height in the image exceeds \(c^4/27\). [ABC@home archives](https://pub.math.leidenuniv.nl/~smitbde/abc/index.php?set=1)
+
+**Corollary (Tangent seeds with bounded prime support).**
+
+If every prime dividing a primitive positive triple is at most \(53\), or if its radical is at most \(10^7\), the triple has an odd prime valuation below \(4\) unless it is \((1,1,2)\). In either domain no triple is 4-full and no seed yields a 4-full tangent iterate.
+
+For these two domains, von Känel and Matschke's Theorem B supplies the completeness of the normalized \(S\)-unit tables. The checker verified each equation, gcd, radical and supported factorization by exact division. The tables contain 1,663,449 and 432,408 rows, with largest terms 7,058,844,079,092,540,383 and 8,251,953,408 respectively. In each, \((1,1,2)\) was the only row with all odd prime valuations at least four. Its tangent step has a zero coordinate. The completeness theorem is an external input to the replay. [Theorem B](https://arxiv.org/pdf/1605.06079#page=8) · [Authors' tables 1 and 2](https://bmatschke.github.io/solving-classical-diophantine-equations/#s-unit-equation)
+
 ## Fixed-coefficient quartics
 
 The canonical factorization of a 4-full integer is \(n=x^4d_5^5d_6^6d_7^7\), with \(d_5,d_6,d_7\) squarefree and pairwise coprime. For a prime of exponent \(4k+r\) with \(1\le r\le3\), put it in \(d_{4+r}\) and put \(p^{k-1}\) in \(x\). At residue \(r=0\), put \(p^k\) in \(x\). This recovers the factors uniquely and permits \(x\) to share primes with its own coefficient \(D=d_5^5d_6^6d_7^7\).
@@ -86,3 +119,14 @@ g++ -std=c++20 -O3 research/arithmetic/verify_erdos_939_squares.cpp -o /tmp/erdo
 The archive SHA-256 digests are `8d40b46d6962aa14b2f4723eafcbaa68644a786a5b35db0d706a22ce51fd912c` for `abctriples_below_1018.gz` and `a7e6b9c755a156f44407fb944d425faf688e9a1398ca66015f8ca6afd0979c2b` for `big_triples.gz`. The independently generated native and canonical-factorization lists use sorted unsigned 16-byte little-endian values. Their SHA-256 digests are `f3629b893469607a71274662ada4dae823e4cf55a08bece81da1ffe20b776df5` for the summands and `fc56c9269c915823da7395f12298f515a7086863f7df226253d313f9dce3293b` for the targets.
 
 For the curated replay, save the three linked HTML snapshots as `good.html`, `merit.html` and `unbeaten.html` in one directory. The [curated-table checker](verify_erdos_939_curated.py) pins their SHA-256 digests. Run `python3 research/arithmetic/verify_erdos_939_curated.py DIRECTORY`.
+
+For the tangent seed checks, reuse the two ABC@home archives above and download the authors' two \(S\)-unit tables. The [seed checker](verify_erdos_939_cohn.py) verifies the SHA-256 digests of all four inputs.
+
+~~~sh
+curl -fL https://bmatschke.github.io/solving-classical-diophantine-equations/s-unit-equation/solutions_2_3_5_7_11_13_17_19_23_29_31_37_41_43_47_53.txt -o sunits53.txt
+curl -fL https://bmatschke.github.io/solving-classical-diophantine-equations/s-unit-equation/solutions_uptoRadical_10000000.txt -o sunits-radical.txt
+python3 research/arithmetic/verify_erdos_939_cohn.py abc-small abctriples_below_1018.gz
+python3 research/arithmetic/verify_erdos_939_cohn.py abc-additional big_triples.gz
+python3 research/arithmetic/verify_erdos_939_cohn.py primes-53 sunits53.txt
+python3 research/arithmetic/verify_erdos_939_cohn.py radical-1e7 sunits-radical.txt
+~~~

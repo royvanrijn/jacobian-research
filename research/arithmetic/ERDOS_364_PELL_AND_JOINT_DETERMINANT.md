@@ -28,6 +28,129 @@ If \(p\parallel t\) and \(p\nmid k\), it follows that \(p\parallel T_k\), imposs
 
 There is no extra kernel factor in counting \((t,k)\), since \(q\) is the squarefree part of \(t^2-1\). We have \(t<\epsilon<(2X)^{1/k}\) and \(k=O(\log(2X))\) since \(\epsilon>2\sqrt7\). The elementary estimate for powerful integers up to \(Y\) is \(O(Y^{1/2})\), by summing \((Y/b^3)^{1/2}\) over \(b\). Counting \(t=f_0w\) over \(f_0\mid\operatorname{rad}(k)\) therefore gives \(O(k(2X)^{1/(2k)})\) for each \(k\). The term \(k=3\) and the sum over \(k\ge5\) give the unconditional bound \(C(X)-F(X)\ll X^{1/6}\).
 
+## Power-of-two centers and forced non-Wieferich primes
+
+An even center \(b^k\), with \(b\ge2\) even and \(k\ge2\), has coprime neighbours \(b^k-1,b^k+1\). Both are powerful exactly when \(b^{2k}-1\) is powerful. Granville applied this observation to \(b=2\), showing that a finite set of base-two non-Wieferich primes would give a powerful triple. Keeping the order at each prime gives a more selective criterion. [Granville, pp. 215–217](https://dms.umontreal.ca/~andrew/PDF/PowerfulFLT.pdf)
+
+**Proposition (Exact order criterion for a power center).**
+
+For each odd prime \(p\nmid b\), put \(r_p=\operatorname{ord}_p(b)\) and \(d_p=r_p/\gcd(r_p,2)\). Call \(p\) base-\(b\) Wieferich if \(b^{p-1}\equiv1\bmod p^2\). The neighbours of \(b^k\) are both powerful if and only if \(p\mid k\) for every base-\(b\) non-Wieferich prime \(p\nmid b\) with \(d_p\mid k\). For a prime cutoff \(B\), start with \(M=1\) and process such primes in increasing order through \(B\), multiplying \(M\) by \(p\) when \(d_p\mid M\). The resulting \(M_B\) is the least positive integer satisfying the order criterion at all primes through \(B\), and divides every other such integer. For \(b=2\), the sequence \(M_B\) stabilizes if and only if there is a consecutive powerful triple with center a power of two.
+
+Indeed \(p\mid b^{2k}-1\) if and only if \(d_p\mid k\). In that case, binomial lifting at the odd prime gives
+\[
+ v_p(b^{2k}-1)=v_p(b^{r_p}-1)+v_p(k)
+             =v_p(b^{p-1}-1)+v_p(k).
+\]
+All primes dividing the product are odd and coprime to \(b\). This proves the criterion. Since \(d_p<p\), later primes cannot change whether \(d_p\) divides the product. At its step, if \(d_p\) divides the current product, every solution to the truncated criterion must contain \(p\). Otherwise the current product itself passes that step. Induction gives both minimality and feasibility for \(M_B\). If an exponent works at every prime, then every \(M_B\) divides it and the sequence stabilizes. If the sequence stabilizes, its limit passes the criterion at every prime. At \(b=2\) it is divisible by \(3\), forced at the first step, so the center itself is powerful.
+
+**Theorem (Wieferich burden of a power-of-two counterexample).**
+
+If \(2^k-1,2^k,2^k+1\) are all powerful, then \(k\) is divisible by an explicit product of \(795\) distinct odd primes that exceeds \(10^{6283}\). Moreover there are at least \(2^{795}\) distinct base-two Wieferich primes, all exceeding the greatest prime divisor of \(k\), and at least one base-two Wieferich prime exceeds \(2k\).
+
+The [ordered sweep](verify_erdos_364_power_centers.cpp) checks all \(50{,}847{,}533\) odd primes through \(10^9\) using an odd least-prime-factor sieve. It marks \(789\) forced primes for \(b=2\), with largest \(999{,}375{,}343\). The current \(M\) is squarefree and odd. The test \(d_p\mid M\) is equivalent to \(b^{\gcd(2M,p-1)}\equiv1\bmod p\). The exponent for this test is computed as twice the product of the marked odd primes dividing \(p-1\). The modular test at \(p^2\) then recognizes the non-Wieferich primes among these candidates.
+
+The [additional certificate](verify_erdos_364_power_center_certificate.py) uses six simple prime divisors of \(2^{2j}-1\) beyond that cutoff. The indices are \(j=43,127,129\) and all divide \(M_{10^9}\), since \(3,43,127\) appear in the sweep. Each additional prime exceeds \(j\), so \(2^{2j}-1\) having valuation one at that prime forces it to divide \(k\) by lifting. The checker gives the full factorization of \(p-1\) and an integer witness \(a\) for each such prime. It verifies \(a^{p-1}\equiv1\bmod p\) and \(\gcd(a^{(p-1)/\ell}-1,p)=1\) at each prime \(\ell\mid p-1\). For any prime divisor of \(p\) these tests force the order of \(a\) to be \(p-1\), proving primality. The script also verifies the two congruences at \(p,p^2\) and the bound on the product.
+
+To obtain the lower bound on the number of Wieferich primes, let \(q\) be the greatest prime divisor of \(k\), so \(q\ge7\), and write \(w\) for the number of distinct odd prime factors of \(k\). For every divisor \(j\) of the odd part of \(k\) that is divisible by \(q\), use primitive primes of orders \(j\) and \(2j\). There are at least \(2^{w-1}\) such divisors, by taking \(q\) times a product of any subset of the other odd prime factors. Each order exceeds or equals \(q\), so its prime is greater than \(q\) and cannot divide \(k\). It nevertheless divides \(2^{2k}-1\). The order criterion therefore requires it to be base-two Wieferich. The orders \(j,2j\) are distinct as \(j\) varies over odd divisors. This supplies at least \(2^w\ge2^{795}\) such primes. A primitive prime of order \(2k\) supplies the last assertion.
+
+Here the required primitive primes admit a short direct proof. For an index \(n\) whose greatest prime divisor \(q\) is at least \(7\), the cyclotomic value \(\Phi_n(2)\) has an odd prime divisor of order \(n\). To see this, for any odd prime \(\ell\) write \(f=\operatorname{ord}_\ell(2)\). If \(f\nmid n\), the cyclotomic valuation is zero. If \(n=fm\), then Möbius inversion of \(2^n-1=\prod_{d\mid n}\Phi_d(2)\) gives the valuation
+\[
+ \sum_{j\mid m}\mu(m/j)\big(v_\ell(2^f-1)+v_\ell(j)\big).
+\]
+For \(m=1\) the prime has order \(n\). For \(m>1\) the sum is one if \(m\) is a power of \(\ell\) and zero otherwise. In the former case \(\ell=q\), since \(f\mid\ell-1\). Thus without a prime of order \(n\), the odd number \(\Phi_n(2)\) would divide \(q\). On the other hand, the cyclotomic product gives
+\[
+ \Phi_n(2)\ \ge\ 2^{\varphi(n)}\prod_{d\ge1}(1-2^{-d})
+           \ >\ 2^{\varphi(n)}/4\ \ge\ 2^{q-1}/4\ >\ q .
+\]
+The infinite product exceeds \(1/4\) by retaining its first two factors and using the bound \(1-\sum_{d\ge3}2^{-d}\) on the remaining product. This applies to all the indicated orders \(j,2j,2k\).
+
+Replay both checks from the repository root with GCC 13.3.0 and Python 3.12.3.
+
+~~~sh
+g++ -std=c++20 -O3 research/arithmetic/verify_erdos_364_power_centers.cpp -o /tmp/erdos364-centers
+/tmp/erdos364-centers 2 1000000000 > /tmp/erdos364-base2.csv
+python3 research/arithmetic/verify_erdos_364_power_center_certificate.py /tmp/erdos364-base2.csv
+~~~
+
+The order criterion does not establish non-stabilization. A full exclusion of power-of-two centers, and the existence question for general centers in Erdős #364, remain open.
+
+### Odd valuations at least three
+
+**Theorem (Cubic Wieferich burden for power-of-two centers).**
+Suppose \(2^k-1,2^k,2^k+1\) are powerful. Put
+\(m=\operatorname{rad}(k/2^{v_2(k)})\), \(w=\omega(m)\), and let
+\(q\) be the largest prime divisor of \(m\). There are at least
+\(2^{w+1}-2w-1\) distinct primes \(\ell\nmid k\) with
+\(v_\ell(2^{\ell-1}-1)\) odd and at least three. At least \(2^w-1\)
+lie above \(q\), with at least \(2^{w-1}-1\) in each class
+\(3,7\bmod8\), and one exceeds \(2m\). In particular the total
+is at least \(2^{796}-1591\), with at least \(2^{795}-1\) above
+\(2^{127}-1\). At the least admissible exponent \(k\), the
+prime exceeding \(2m\) exceeds \(2k\).
+
+For each divisor \(j>1\) of \(m\), consider the two squarefree indices
+\(j,2j\). The Möbius product gives
+\[
+ \Phi_j(2)=\prod_{d\mid j}(2^d-1)^{\mu(j/d)}\equiv7\pmod8,\qquad
+ \Phi_{2j}(2)=\prod_{d\mid j}(2^d+1)^{\mu(j/d)}\equiv3\pmod8 .
+\]
+For the first congruence \(d=1\) gives \(1\), every other \(d\)
+gives \(-1\bmod8\), and \(\sum_{d\mid j}\mu(j/d)=0\) while
+\(\mu(j)=\pm1\). For the second congruence use
+\(\Phi_{2j}(X)=\Phi_j(-X)\). The \(d=1\) factor gives \(3\bmod8\)
+and every other factor gives \(1\bmod8\).
+
+Write \(f_\ell=\operatorname{ord}_\ell(2)\) for an odd prime \(\ell\).
+The cyclotomic valuation formula above shows that at a squarefree
+index \(t\), a prime \(\ell\) dividing \(\Phi_t(2)\) has either
+\(t=f_\ell\) or \(t=\ell f_\ell\). In the latter case the prime
+divides \(t\) and has valuation one. Discard every index in the
+chosen set for which some prime of \(k\) divides \(\Phi_t(2)\).
+Each odd prime of \(k\) discards at most two indices. The prime
+\(3\) divides \(k\) by the order criterion and discards at most
+one, since \(f_3=2\) and the index \(2\) is excluded. Of the
+\(2^{w+1}-2\) chosen indices, at least \(2^{w+1}-2w-1\) remain.
+
+At any retained index \(t\), all primes in \(\Phi_t(2)\) have
+order \(t\) and lie outside \(k\). For each such prime, lifting
+gives
+\[
+ v_\ell(\Phi_t(2))=v_\ell(2^t-1)
+     =v_\ell(2^{2k}-1)=v_\ell(2^{\ell-1}-1),
+\]
+since \(t\) divides \(2k\) and \(\ell-1\), and \(\ell\nmid k\).
+The product \(2^{2k}-1\) is powerful, so all of these exponents
+are at least two. The cyclotomic value is a nonsquare modulo
+\(8\), hence it has a prime with odd exponent at least three.
+Primes obtained at distinct indices are distinct because
+their orders are distinct. The condition \(v_\ell(2^{\ell-1}-1)\ge3\)
+is the order-two Wieferich condition in Skula's terminology.
+[Skula, Proposition 2.2](https://math.colgate.edu/~integers/t19/t19.pdf)
+
+When \(\ell\) has order \(j\) with \(j\) odd, \(2\) is a square
+modulo \(\ell\). The supplementary law for \(2\) gives
+\(\ell\equiv1,7\bmod8\), so the factor \(\Phi_j(2)\equiv7\bmod8\)
+requires a prime in the class \(7\) to odd exponent. At order
+\(2j\), the order divides \((\ell-1)/2\) exactly when
+\(\ell\equiv1\bmod4\). The supplementary law gives
+\(\ell\equiv1,3\bmod8\) in the two cases, respectively. Thus
+\(\Phi_{2j}(2)\equiv3\bmod8\) requires an odd exponent in the
+class \(3\).
+
+For the \(2^{w-1}\) choices of \(j\) divisible by \(q\), a prime
+of order \(j\) or \(2j\) exceeds \(q\). The only possible prime
+of \(k\) in those cyclotomic values is therefore the one at an
+index \(t=q f_q\) with an imprimitive divisor \(q\). At most one
+index is lost across both parities. In particular at least one
+of \(m,2m\) is retained. An odd prime of either order satisfies
+\(2m\mid \ell-1\). The previously certified exponent divisors
+give \(w\ge795\) and \(q\ge2^{127}-1\). If any exponent works,
+the least one is the odd squarefree limit of the order sweep,
+so there \(m=k\).
+
+The power-of-two existence question still requires proving
+non-stabilization or finding an admissible exponent.
+
 ## Transfers from the preprint counting statements
 
 Plymesser's [powerful-products paper](sources/plymesser-powerful-products-hexagon2611.00602-v1.0.1.pdf), Lemma 8.3, states that for every \(\varepsilon>0\) there is \(\eta>0\) such that fixed positive integer coefficients \(f_i\le Y^\eta\) give \(O_\varepsilon(Y^{\theta+\varepsilon})\) starts, where \(\theta=77/320\) and the three terms belong to the respective \(f_i\) times the powerful integers. For fixed \(k\) the possible coefficients from the repair form a finite set. Apply the lemma with start \(t-2\) and \(Y=(2X)^{1/k}\), increasing the threshold for \(X\) to fit \(Y^\eta\). Using it at \(k=3,5\), and the elementary middle-term bound for \(k\ge7\), gives

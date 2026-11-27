@@ -93,6 +93,10 @@ void run(int Z, bool annulus) {
     for (int x=lo|1;x<=hi;x+=2) for (int y=lo|1;y<=hi;y+=2)
         if (std::gcd(x,y)==1) pairs.push_back({x,y,static_cast<int>(inv(x,y))});
     integer total=0, rank=0, pos=0, unit=0, win=0, rankwin=0;
+    integer max_rank_lift=0, large_rank_lifts=0;
+    integer max_window_lift=0, large_window_lifts=0;
+    integer close_rank=0, close_window=0;
+    const wide lift_threshold=wide(V)*V*V;
     for (int i=0;i<P;++i) for (int j=i+1;j<P;++j) for (int k=j+1;k<P;++k)
         for (const auto [x,y,xinv]:pairs) {
             // z/y is a square root of p_i^3/p_j^3 modulo x;
@@ -122,20 +126,40 @@ void run(int Z, bool annulus) {
                         if (one) ++pos;
                         if (std::gcd(E,1LL*ps[i]*ps[j]*ps[k])!=1) continue;
                         if (one) ++unit;
-                        if (in_field_window(E,X,sq_primes)) {
-                            ++win;
-                            if (one) ++rankwin;
+                        const bool in_window=in_field_window(E,X,sq_primes);
+                        if (in_window) ++win;
+                        if (!one) continue;
+                        const integer gx=std::gcd(integer(x),integer((A-B)/x));
+                        const integer gy=std::gcd(integer(y),integer((C-B)/y));
+                        const integer gz=std::gcd(z,integer((A-C)/z));
+                        const integer lift=std::max({gx,gy,gz});
+                        const bool large=wide(lift)*lift*lift*lift>=lift_threshold;
+                        max_rank_lift=std::max(max_rank_lift,lift);
+                        if (large) ++large_rank_lifts;
+                        const auto close=[Z](wide first, wide second) {
+                            return Z*(std::max(first,second)-std::min(first,second))
+                                <= std::max(first,second);
+                        };
+                        const bool near=close(A,B) || close(B,C) || close(A,C);
+                        if (near) ++close_rank;
+                        if (in_window) {
+                            ++rankwin;
+                            max_window_lift=std::max(max_window_lift,lift);
+                            if (large) ++large_window_lifts;
+                            if (near) ++close_window;
                         }
                     }
                 }
             }
         }
     std::cout<<Z<<" "<<P<<" "<<lo<<" "<<hi<<" "<<X<<" "<<total<<" "<<rank<<" "
-             <<pos<<" "<<unit<<" "<<win<<" "<<rankwin<<std::endl;
+             <<pos<<" "<<unit<<" "<<win<<" "<<rankwin<<" "<<max_rank_lift
+             <<" "<<large_rank_lifts<<" "<<max_window_lift<<" "<<large_window_lifts
+             <<" "<<close_rank<<" "<<close_window<<std::endl;
 }
 int main() {
     constexpr std::array<int, 8> scales{16, 24, 32, 48, 64, 96, 128, 192};
-    std::cout << "Z prime_count lo hi X all rank1 positive_rank1 unit_rank1 window_all window_rank1\n";
+    std::cout << "Z prime_count lo hi X all rank1 positive_rank1 unit_rank1 window_all window_rank1 max_unit_rank1_lift large_unit_rank1_lift max_window_rank1_lift large_window_rank1_lift close_unit_rank1 close_window_rank1\n";
     for (int Z : scales) {
         run(Z, true);
         if (Z <= 128) run(Z, false);

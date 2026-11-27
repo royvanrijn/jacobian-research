@@ -354,3 +354,5 @@ This equivalence concerns the specified rectangular graph and exponent 26/51. It
 The five box estimates, uniform three-tenths theorem, fixed-kernel multiplicity and gcd normalization are in the dual-graph source linked above. The cycle conversion uses Morris--Saxton's precise simple six-cycle supersaturation statement. The opposite-root-gcd frequency uses Heath-Brown's primitive diagonal-cubic theorem uniformly in nonzero signed integer coefficients. Primitivity follows from actual coprime summands; coefficients are fixed during each graph count.
 
 The new localization, coefficient gate, large-gcd split and rectangular-sector arithmetic are written in full here. The two cycle estimates in Section 7 remain mathematical obligations. No finite experiment, count for a fixed label tuple, or imported average over targets is substituted for their pointwise frequency bound.
+
+The [rectangular continuation argument](ERDOS_943_CRITICAL_RECTANGULAR_CONTINUATION.md) proves further sectors at the same pointwise budget and gives a narrower equivalent cycle count within this coefficient family.

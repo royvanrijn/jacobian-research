@@ -181,10 +181,9 @@ only remaining case, proving the result.
 
 The [complete constant-leading polynomial exclusion](MONIC_POLYNOMIAL_FOUR_SIX_STRING_EXCLUSION.md)
 also treats nonconstant \(v\) in equations (1)–(3). The
-[centered rectangle](CENTERED_46_RECTANGLE_NEWTON_FACE_GATE.md) permits
-nonconstant order-four leading coefficients. Passing to a coefficient
-cover to make the leading coefficient monic can leave the polynomial
-ring. Its descent is part of the
+[full polynomial exclusion](POLYNOMIAL_FOUR_SIX_STRING_EXCLUSION.md)
+also handles nonconstant order-four leading coefficients. Outside that
+order pair, descent from a monic coefficient cover still belongs to the
 [polynomial Ore admission problem](POLYNOMIAL_ORE_INTERTWINER_AND_SUBPRINCIPAL_DESCENT.md).
 The calculation does not put a formal position correction in \(A_1\)
 or establish a finite matrix realization of a prescribed center map.

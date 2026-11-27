@@ -225,3 +225,277 @@ A weaker sufficient target concerns only nearby representations. For \(0<\delta<
 **Open question.** Prove positive upper density for the fixed \(F\). The immediate estimate missing in this approach is a constant-order average upper bound on actual nonsquare fibers at \(g=1,\ H\asymp P\). On the squarefree-coefficient subfamily, (6) leaves the signed discrepancy at large reduced denominators with three active frequencies, and a logarithmic loss for two active frequencies. The square-discriminant fibers and the sparse exceptional character classes contribute \(o(P^3)\) over all dyadic \(H\) and \(g\). The remaining nonsquare fibres still require a lattice count, including the ranges with \(g>1\), or a direct bound on the high-multiplicity tail. For a complete second-moment route, an \(O(PH^2)\) bound per dyadic \(H\) and per \(g\le P/H\) would sum to \(O(P^3)\), since \(\sum_H H\ll P\).
 
 A finite enumeration on \([1,P]^3\) checked (1) for every collision. At \(P=160\) the distinct values numbered \(0.866706\,P^3\), the energy was \(1.30083\,P^3\), and \(0.999266\) of triples had multiplicity at most four. Among ordered collisions with \(g=1\), three nonzero differences and \(\|\mathbf d\|_\infty\ge P/4\), four had square \(S\). These finite figures only check the reduction and give examples in the exceptional locus.
+
+## First moments for higher full powers
+
+A positive integer is \(r\)-full if each prime dividing it has
+valuation at least \(r\). Let \(R_r(n)\) denote the number of
+unordered representations of \(n\) by exactly \(r\) positive
+\(r\)-full integers, with repeated summands allowed.
+
+**Theorem (A lower bound in every progression for higher full powers).**
+For each fixed \(r\ge5\) there are positive \(\eta_r,C_r\) such that,
+uniformly in \(X\ge2\), \(1\le M\le\eta_r X^{1/r}\), and
+\(a\bmod M\),
+\[
+ \sum_{\substack{n\le X\\n\equiv a\bmod M}} R_r(n)\ \ge\ C_r X/M.
+ \tag{8}
+\]
+One can take \(C_5=3/2\). For sufficiently large \(r\) one can
+take \(C_r=\exp(c r^2/\log r)\) for an absolute \(c>0\).
+
+Beyer de Ryke proves a complement theorem for \(r=3\) by making
+the first moment small on a fixed progression. Ghidelli,
+Remark 2.4, identifies summable large-prime deviations as an
+obstruction for a fixed diagonal form in higher degree. The
+argument here supplies a finite collection of genuine \(r\)-full
+coefficient tuples with local lower bounds at every prime power.
+In degree five and all sufficiently large degrees, even the
+unordered first moment exceeds the size of every fixed
+progression asymptotically. [Beyer de Ryke, Theorem 1.1 and §5](https://arxiv.org/html/2609.35772v1)
+· [Ghidelli, Remark 2.4 and §3.3](https://arxiv.org/pdf/1910.05070)
+
+### Local congruences and a box count
+
+For positive \(r\)-full coefficients \(A_i\), let
+\(G(\mathbf x)=\sum_{i=1}^r A_i x_i^r\) and define
+\(\rho_M(a)=M^{1-r}\#\{\mathbf x\bmod M:G(\mathbf x)\equiv a\bmod M\}\).
+The Chinese remainder theorem gives the product of the local
+\(\rho_{p^\ell}(a)\) over \(p^\ell\parallel M\).
+For any finite collection of coefficient tuples, choose \(\eta_r\)
+small enough that each \(U_i=(X/(rA_i))^{1/r}\) satisfies
+\(M\le U_i/20\) when \(M\le\eta_r X^{1/r}\). In \(1\le x_i\le U_i\),
+each residue class contains at least \(U_i/M-1\) integers and the
+sum is at most \(X\). Consequently each coefficient tuple supplies at least
+\[
+ (19/20)^r\,\frac{X}{rM}\,\rho_M(a)\prod_i A_i^{-1/r}
+ \tag{9}
+\]
+ordered representations. When the coefficient is fixed in a
+coordinate, it is uniquely recovered within the collection.
+The varying coefficients below are canonical: all their nonzero
+prime exponents are in \([r+1,2r-1]\). They are therefore uniquely
+determined by the corresponding summand, using its exponents modulo
+\(r\). There is no repetition in counting ordered representations
+over these choices. Dividing the total by \(r!\) gives a lower bound
+for the unordered count.
+
+For \(p\nmid r\), write \(t\) for the number of unit coefficients at
+\(p\), and \(g_p=\gcd(r,p-1)\). For a nonzero additive frequency and
+a unit coefficient, the monomial sum modulo \(p\) is a sum of
+\(g_p-1\) nontrivial multiplicative Gauss sums. Each has magnitude
+\(\sqrt p\). Orthogonality gives an error at most
+\(p((g_p-1)/\sqrt p)^t\) in the normalized count. Discarding the
+points with all active coordinates zero costs at most \(p^{1-t}\)
+in the same normalization. Every remaining point is nonsingular and
+has \(p^{r-1}\) lifts at each new level for each prescribed lift of
+the target. In particular
+\[
+ \rho_{p^\ell}(a)\ \ge\
+   1-p((g_p-1)/\sqrt p)^t-p^{1-t}\qquad(\ell\ge1,\ p\nmid r).
+ \tag{10}
+\]
+
+For an initial proof of (8) with some \(C_r>0\) for every \(r\ge5\),
+take \(A_1=1,A_2=b^{r+1}\) and all remaining coefficients \(1\).
+Include every prime \(p\le16r^4\) in a fixed modulus \(D\) with
+exponent \(e_p=2v_p(r)+1\). Choose \(x_1=0\) if \(a\) is a unit at
+\(p\), and \(x_1=1\) otherwise. Prescribe \(b\equiv a-x_1^r\bmod
+p^{e_p}\) and take \(x_2\equiv b^{-1}\bmod p^{e_p}\), so the
+difference is a unit and \(b^{r+1}x_2^r\equiv b\).
+Choose \(1\le b\le D\) by the Chinese remainder theorem. At these
+primes, hold every coordinate except \(x_2\) in its prescribed class,
+with \(x_3,\ldots,x_r\) zero modulo \(p^{e_p}\). The derivative in
+\(x_2\) has valuation \(v_p(r)\), so Hensel's lemma gives a root
+to every precision and the normalized count is at least
+\(p^{-e_p(r-1)}\). This bound also holds at exponents less than
+\(e_p\) by direct reduction. At a prime above \(16r^4\), (10) is
+positive even with only \(r-1\) active coefficients. Except for
+the finitely many primes dividing \(b\), its errors are
+\(O_r(p^{1-r/2})\) and summable. There are only finitely many
+possible \(b\), so the product has a uniform positive lower bound
+over all \(M,a\). Apply (9) to the chosen coefficient tuple.
+
+### Exponential lower bound for large exponents
+
+Put \(Y=16r^2\), and let \(\mathcal B\) consist of all primes dividing
+\(r\) and all primes \(p\le16g_p^2\). As before give them exponents
+\(e_p=2v_p(r)+1\) in the product \(D\).
+For each \(g\mid r\), the primes \(p\le16g^2\) with
+\(p\equiv1\bmod g\) number \(O(g)\) even among integers.
+Since \(\sum_{g\mid r}g\le r(1+\log r)\), we obtain
+\[
+                 \log D=O(r\log^2 r).
+ \tag{11}
+\]
+The powers from \(p\mid r\) add \(O(\log r)\) to the logarithm.
+Each modulus \(p^{e_p}\) is at most \(16r^3\):
+if \(p\mid r\), then \(p^{2v_p(r)+1}\le r^3\).
+
+Reserve coordinate 1 with coefficient 1 and two further coordinates
+per binary digit, with \(J=\lceil\log_2(16r^3)\rceil\) digits. Their
+coefficients are \(b_i^{r+1}\), for \(2J\) positive pairwise coprime
+\(b_i\) of specified unit residue classes modulo \(D\). At every
+odd \(p\in\mathcal B\), give the pair for digit \(j\) residues
+\(2^j,1\) modulo \(p^{e_p}\), and use only the first slot if the
+digit is needed. At \(p=2\) give the pair for \(j\ge1\) residues
+\(1,2^j-1\), both odd, and use both slots for that digit. For \(j=0\)
+use one slot of residue \(1\). A selected slot is realized by
+\(x_i=b_i^{-1}\), making \(b_i^{r+1}x_i^r\equiv b_i\bmod p^{e_p}\),
+and an unused slot has \(x_i=0\).
+
+The \(b_i\) can be chosen with
+\(\sum_i\log b_i=O(r\log^3 r)\). If the product of the earlier
+choices is \(B\), with \(\gcd(B,D)=1\), each prime dividing \(B\)
+forbids one residue of the progression parameter for the new
+choice. Of the first \(2\cdot4^{\omega(B)}\) parameters, at least one
+survives: inclusion-exclusion gives main term at least
+\(2\cdot2^{\omega(B)}\) and error at most \(2^{\omega(B)}\).
+The new logarithm is therefore at most
+\(\log D+O(1+\omega(B))\).
+Splitting prime factors of \(B\) at \(\sqrt r\) shows
+\(\omega(B)\le\sqrt r+2\log B/\log r\). The cumulative logarithm
+thus obeys a recurrence with multiplier \(1+O(1/\log r)\)
+and increment \(O(\log D+\sqrt r+1)\). Iterating for \(2J=O(\log r)\)
+steps and using (11) gives the asserted size bound.
+
+Fix the \(d=r-1-2J\) freely variable coordinates arbitrarily
+at any small prime \(p\in\mathcal B\). With \(x_1=1\), use the
+reserved digits to give the residual target modulo \(p^{e_p}\).
+For each free choice, this prescribes classes for the \(2J\)
+digits, and \(x_1\) can lift by Hensel's lemma, since its derivative
+has valuation \(v_p(r)\). At local precision \(\ell<e_p\) use
+reduction of a chosen lifting of the free coordinates.
+The local normalized count is at least \(p^{-2J e_p}\).
+The product over these primes is bounded below by
+\(\exp(-O(r\log^3 r))\).
+
+In the free slots assign each prime \(Y<p\le Y^2\) dividing none
+of the \(b_i\) to at most one slot, with exponent \(r+j\) for
+\(1\le j<r\), or leave it unused. In each resulting tuple at most
+one coefficient is divisible by any prime outside \(\mathcal B\),
+so \(t\ge r-1\) there. The total of the losses in (10) outside
+\(\mathcal B\) is \(o(1)\) as \(r\to\infty\).
+Indeed for \(p\le Y\) the first loss is at most \(p\,4^{-(r-1)}\),
+with total \(O(Y^2 4^{-(r-1)})\). For \(p>Y\) sum
+\(r^{r-1}p^{1-(r-1)/2}\), which has total
+\(O(Y^2 4^{-(r-1)})\) by comparing even the sum over all integers
+with its integral. The remaining losses are at most
+\(\sum_{p}p^{2-r}=o(1)\). Thus the large-prime product is at least
+\(1/2\) for all sufficiently large \(r\).
+
+The sum of \(\prod_i A_i^{-1/r}\) over these tuples is
+\[
+ \left(\prod_i b_i^{-(1+1/r)}\right)
+    \prod_{\substack{Y<p\le Y^2\\p\nmid\prod_i b_i}}
+       \left(1+d\sum_{j=1}^{r-1}p^{-1-j/r}\right).
+\]
+In the prime range shown, the inner sum is \(\gg r/(p\log r)\)
+by keeping \(j\le r/\log p\). It is at most \((r-1)/p\).
+For large \(r\), \(d\ge r/2\) and thus the log of each factor
+is \(\gg r^2/(p\log r)\).
+The prime reciprocal sum over the range tends to \(\log 2\).
+The removed primes have total reciprocal weight
+\(O(\sum_i\log b_i/Y)=o(1)\). Hence the prime product is at
+least \(\exp(c_0 r^2/\log r)\) for an absolute \(c_0>0\).
+The reserved weights and their local cost total at worst
+\(\exp(-O(r\log^3 r))\), which is of smaller logarithmic order.
+The \((19/20)^r/(r\,r!)\) factor in (9) also has smaller
+logarithmic order. This gives the large-\(r\) bound in (8).
+[Rosser–Schoenfeld, Theorem 5](sources/rosser_schoenfeld_1962.pdf)
+
+### Certified bound in degree five
+
+Fix \(Y=20000\). For each prime \(p\le Y\), assign exponent
+\(5+j\), \(1\le j\le4\), to each of \(k\) chosen coefficients.
+Permit \(k\le1\) if \(p=5\) or \(p\equiv1\bmod5\), and permit
+\(k\le3\) otherwise. Write \(w_p=\sum_{j=1}^4p^{-1-j/5}\)
+and let \(d_{p,t}\) be a lower bound on the local normalized
+count with \(t=5-k\) unit coefficients, using solutions with
+at least one unit coordinate among those coefficients.
+The other coordinates are free at the base level.
+For \(p\ne5\) use the base level \(p\) and nonsingular lifting
+as in (10). If \(p\not\equiv1\bmod5\), bijectivity of fifth
+powers gives \(d_{p,t}=1-p^{1-t}\). If \(p\equiv1\bmod5\), the
+checker below computes the minimum over all targets and all
+unit coefficient classes modulo fifth powers, for \(t=4,5\).
+
+At \(p=5\) use the base level \(25\), where inactive coefficients
+vanish. The exact minima are \(5625\) for \(t=4\) and \(203125\)
+for \(t=5\), before division by \(25^{t-1}\).
+These give \(d_{5,4}=9/25\) and \(d_{5,5}=13/25\).
+They are also lower bounds at level \(5\), by bijectivity
+there and removal of the solutions with all active coordinates
+zero modulo five. For \(e\ge2\), changing \(x\) to \(x+5^{e-1}u\)
+changes its fifth power by \(5^e x^4u\bmod 5^{e+1}\).
+For each previously counted vector modulo \(5^{e-1}\),
+all its lifts modulo \(5^e\) have the same value modulo \(5^e\).
+At least one active \(x_i\) is a unit, so exactly a fraction
+\(1/5\) of those lifts attains the prescribed next digit of the
+target. Each such lift extends to \(5^5\) vectors modulo
+\(5^{e+1}\) without a further change in value. Thus the count
+grows by \(5^4\) per precision, preserving the normalized bound.
+
+The coefficient summation factor at a prime \(p\le Y\) is
+\[
+                  L_p=\sum_k\binom5k w_p^k d_{p,5-k},
+ \tag{12}
+\]
+with the allowed \(k\)'s as above. If a prime is absent from
+\(M\), its local lower bound in (12) is still admissible since
+each of the selected \(d_{p,t}\) is at most one. For \(p>Y\)
+all five coefficients are units. For primes \(p\equiv1\bmod5\),
+the same Gauss expansion as in (10) gives the improved bound
+\(1-204p^{-3/2}-p^{-4}\).
+For the zero target exactly
+\((4^5-4)/5=204\) choices of the five nontrivial characters can
+have trivial product. For nonzero targets the sum in the
+additive frequency is at most \(\sqrt p\) for each character
+choice, giving normalized error at most \(4^5/p^2\), smaller
+than \(204p^{-3/2}\) for \(p>Y\).
+At other primes use \(1-p^{-4}\). Since the first loss occurs
+only for \(p\equiv1\bmod5\),
+\[
+ 204\sum_{\substack{p>Y\\p\equiv1\bmod5}}p^{-3/2}
+     +\sum_{p>Y}p^{-4}
+ \le \frac{408}{5\sqrt{Y-4}}+\frac1{3Y^3}<\frac35 .
+\]
+The first term comes from the integral comparison on the integers
+in the class \(1\bmod5\), and the second from summing over all
+integers above \(Y\). The product over the primes above \(Y\) is
+therefore at least \(2/5\), for every modulus.
+
+The [exact checker](verify_erdos940_quintic_first_moment.cpp) gives
+\(\prod_{p\le Y}L_p\ge 3144418409525320/10^{12}>3000\).
+The convolution for the finite primes uses orbits of the group
+of unit fifth powers, since each single-term distribution is
+constant on these orbits. At each target orbit it counts pairs
+of summand orbits by enumerating one residue and subtracting it
+from a target representative. The recursion uses all multisets
+of active coefficient orbits and subtracts the all-nonunit
+active solutions at target zero. The weights and product are
+rounded downward using integers. For a prime \(p\), the single-term
+fiber bound of five gives at most \(5p^{t-1}\) solutions at
+each active target with \(t\) coefficients. The checker uses
+64-bit counts in that range and 128-bit products for the
+fixed-point arithmetic. From the repository root, run
+
+~~~sh
+g++ -std=c++20 -O2 -Wall -Wextra -Wconversion \
+  research/arithmetic/verify_erdos940_quintic_first_moment.cpp \
+  -o /tmp/verify_erdos940_quintic_first_moment
+/tmp/verify_erdos940_quintic_first_moment
+~~~
+
+Now sum (9) over all these finite coefficient tuples, using (12)
+and the tail bound. Divide by \(5!\) to obtain the constant
+\((19/20)^5(2/5)(3000/(5\cdot 5!))>3/2\) in (8).
+
+**Open question (Higher-degree complement).** For \(r\ge5\), prove
+that infinitely many integers are absent from sums of at most \(r\)
+positive \(r\)-full integers, or establish cofinite coverage for
+some \(r\). The degree-five and large-degree first moments above
+exceed the progression size, so the upper first-moment comparison
+with the progression size cannot give missing integers in these
+ranges. The first moment allows both concentration on a sparse set
+and representation of every sufficiently large target.

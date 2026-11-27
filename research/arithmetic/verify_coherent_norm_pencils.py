@@ -1,8 +1,9 @@
 """Exact bounded examples for the coherent norm pencils (standard library)."""
 
+from fractions import Fraction
 from functools import cache
 from itertools import combinations
-from math import gcd, isqrt
+from math import gcd, isqrt, prod
 
 
 FIELDS = (23, 31, 59, 83)
@@ -78,6 +79,101 @@ def normalized_traces(primes, coefficients):
     return tuple(trace for trace, _ in quotients), e
 
 
+def odd_part(n):
+    n = abs(n)
+    return n // (n & -n)
+
+
+def check_cayley(primes, coefficients, traces, defect, *, check_orbit=False):
+    p1, p2, p3 = primes
+    x, y, z = coefficients
+    u12, u23, u13 = traces
+    denominators = ((p2*p3)**3, (p1*p3)**3, (p1*p2)**3)
+    xi = tuple(Fraction(u*u, denominator) - 2 for u, denominator in
+               zip((u23, u13, u12), denominators))
+    assert tuple(q.denominator for q in xi) == denominators
+    assert sum(q*q for q in xi) - prod(xi) == 4
+    w = prod(primes)**3
+    a, b, c = xi
+    q = (u12*u23*u13, defect*u12*y*z, defect*u23*x*z, -defect*u13*x*y)
+    assert q == tuple(w * v for v in
+                      (2+a+b+c, 2-a-b+c, 2+a-b-c, 2-a+b-c))
+    assert sum(q) == 8*w and sum(Fraction(1, v) for v in q) == 0
+    assert all(q[0] + v > 0 for v in q[1:])
+    assert 8 % gcd(*q) == 0
+    assert odd_part(gcd(*q[1:])) == odd_part(defect)
+    assert odd_part(gcd(q[0], defect)) == 1
+    for missing, expected in enumerate(
+            (gcd(x, u23, u13), gcd(y, u12, u13), gcd(z, u12, u23)), 1):
+        assert odd_part(gcd(*(v for i, v in enumerate(q) if i != missing))) == (
+            odd_part(expected)**2
+        )
+
+    content = gcd(*q)
+    assert content == (8 if defect % 2 == 0 else 1 if x*y*z % 2 else 2)
+    node = tuple(gcd(*(v // content for i, v in enumerate(q) if i != missing))
+                 for missing in range(4))
+    assert node[0] == (defect if defect % 2 else defect // 4)
+    divisor = 1 if defect % 2 else 2
+    t12, t23, t13 = (value // divisor for value in traces)
+    square_roots = (gcd(x, t23, t13), gcd(y, t12, t13), gcd(z, t12, t23))
+    assert node[1:] == tuple(v*v for v in square_roots)
+    a, b, c = p1**3*y*y, p2**3*z*z, p3**3*x*x
+    for small, root, difference in zip(coefficients, square_roots,
+                                       (a-b, c-b, a-c)):
+        quotient, remainder = divmod(difference, small*root)
+        assert remainder == 0
+        assert odd_part(root) == odd_part(gcd(small, quotient*root))
+
+    adjusted = [2 if defect % 2 and value % 2 == 0 else 1
+                for value in coefficients]
+    pair_factors = []
+    reduced = tuple(value // content for value in q)
+    residuals = [abs(reduced[v]) // prod(node[w] for w in range(4) if w != v)
+                 for v in range(4)]
+    for i, p in enumerate((p3, p1, p2), 1):
+        j, k = (v for v in (1, 2, 3) if v != i)
+        trace_scale = 2 if defect % 2 == 0 else adjusted[i - 1]
+        a_i, a_remainder = divmod(abs(coefficients[i - 1]),
+                                  adjusted[i - 1]*square_roots[i - 1])
+        e_i, e_remainder = divmod(abs(traces[i - 1]),
+                                  trace_scale*square_roots[j - 1]*square_roots[k - 1])
+        assert a_remainder == e_remainder == 0
+        assert gcd(residuals[j], residuals[k]) == a_i
+        assert gcd(residuals[0], residuals[i]) == e_i
+        factor, remainder = divmod(2*trace_scale**2, content)
+        assert remainder == 0
+        assert reduced[0] + reduced[i] == factor*p**3*node[j]*node[k]*e_i**2
+        assert reduced[j] + reduced[k] == factor*p**3*node[0]*node[i]*a_i**2
+        pair_factors.extend((a_i, e_i))
+    assert all(gcd(a, b) == 1 for a, b in combinations(pair_factors, 2))
+
+    p1_cube, p2_cube, p3_cube = (p**3 for p in primes)
+    common = gcd(x, u23, u13)
+    assert gcd(odd_part(common), defect*prod(primes)) == 1
+    assert x*x*p3_cube == p2_cube*z*z - u12*z*y + p1_cube*y*y
+    assert x*u23 == 2*p2_cube*z - u12*y
+    assert (2*p2_cube*z - u12*y) % (x*common) == 0
+    assert (u12*u12 - 4*p1_cube*p2_cube) % (x*x) == 0
+    assert (x*x*p3_cube - p2_cube*z*z - p1_cube*y*y) % (y*z) == 0
+
+    def walk(point, previous, prime, remaining_steps):
+        if not remaining_steps:
+            return
+        for i in range(3):
+            if i == previous:
+                continue
+            other = [point[j] for j in range(3) if j != i]
+            changed = list(point)
+            changed[i] = prod(other) - point[i]
+            first_prime = primes[i] if prime is None else prime
+            assert all(v.denominator % first_prime == 0 for v in changed)
+            walk(changed, i, first_prime, remaining_steps - 1)
+
+    if check_orbit:
+        walk(xi, None, None, 6)
+
+
 def run_field(d, orientations=None):
     generators = {p: (a, b) for p, a, b in prime_cubes(d)}
     if orientations is not None:
@@ -100,7 +196,7 @@ def run_field(d, orientations=None):
     def v(a, b):
         return edges[a, b][1]
 
-    for a, b, c in combinations(generators, 3):
+    for index, (a, b, c) in enumerate(combinations(generators, 3)):
         u, anchor = edges[a, b]
         x, y = v(a, c), v(b, c)
         assert anchor % gcd(x, y) == 0
@@ -113,6 +209,8 @@ def run_field(d, orientations=None):
         traces, e = normalized_traces((a, b, c), signed)
         assert e == d * delta**2 and gcd(e, a*b*c) == 1
         assert traces == (edges[a, b][0], edges[b, c][0], edges[a, c][0])
+
+        check_cayley((a, b, c), signed, traces, e, check_orbit=(index == 0))
 
     counts = {2: 0, 3: 0}
     first_collision = None

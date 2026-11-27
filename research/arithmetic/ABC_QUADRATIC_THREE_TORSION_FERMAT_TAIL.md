@@ -128,6 +128,8 @@ Multiplying by the \(a'\) count and summing \(P'\ll P\) gives \(O_\varepsilon(X^
 \]
 This finishes the small-\(P\) case. Summing rank two over the dyadic scales gives \(O_\varepsilon(X^\varepsilon Z^2V^{4/3})\).
 
+The [rank-two divisor bound](ABC_RANK_TWO_NORM_PLANE_DIVISORS.md#counting-the-rank-two-congruences) also gives \(O_\varepsilon(X^\varepsilon(Z^2V+Z^3V^{1/2}))\), by retaining the nonzero integer quotient \(S/Q\) in (6) and factoring after one modulus is fixed.
+
 Therefore the number of selected prime paths is \(O_\varepsilon(X^\varepsilon(Z^3+V^3+Z^2V^{4/3}))\). The six-variable recovery of the full witness, including \(\delta,d\), is unchanged. Divide by the per-discriminant lower bound \(\gg_\eta Z^3 H^2 X^{-1-4\eta}\) from (2) in the witness selection and substitute \(Z=X^{1/2+4\eta}/H\) to get the two new decaying terms of (1) on \(H\ge X^{3/14}\). For \(H<X^{3/14}\), its \(X^{5/2}/H^8\) term already dominates the classical first-moment bound \(X/H\). Absorb the split-prime exceptions and handle real signs as in the witness selection.
 
 ## Moment consequences and remaining terms

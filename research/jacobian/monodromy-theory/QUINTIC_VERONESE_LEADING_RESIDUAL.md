@@ -68,7 +68,13 @@ For \(r=3\), take \(M\) to be the coefficient at \(z^{-3}\) after the three canc
 \]
 The right side vanishes at \(u=0\), contradicting \(\kappa\ne0\).
 
-The lower-\(z\)-degree Veronese factors and the other quintic leading-part types lie outside this exclusion.
+The [quadratic-in-\(z\) proof](QUINTIC_VERONESE_QUADRATIC_Z_EXCLUSION.md)
+excludes \(\deg_z g=2\), and the
+[weighted square exclusion](QUINTIC_VERONESE_SQUARE_EXCLUSION.md)
+completes \(\deg_z g=1\). The
+[binary factor exclusion](QUINTIC_VERONESE_BINARY_RANK_EXCLUSIONS.md)
+settles \(\deg_z g=0\), completing the Veronese leading class.
+The [quintic leading-part reduction](QUINTIC_KELLER_LEADING_PART_RESIDUAL.md) gives the last independent normal form and the dependent branch. The [completion exclusion](QUINTIC_KELLER_TERNARY_PENCIL_TRANSVERSE_PARAMETER.md#independent-degree-five-leading-parts) eliminates that independent form.
 
 ## Collision construction targets
 

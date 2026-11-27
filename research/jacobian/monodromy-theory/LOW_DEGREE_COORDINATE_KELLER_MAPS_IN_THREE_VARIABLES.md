@@ -71,3 +71,6 @@ The explicit completion hypothesis gives the conclusion irrespective
 of the degree of \(R\) within the total-degree bound. The cubic
 classification in their Proposition 3.16 has separate quartic
 hypotheses.
+
+The [sextic cubic-component theorem](SEXTIC_KELLER_CUBIC_COMPONENT.md)
+extends the low-degree target conclusion to components of degree three.

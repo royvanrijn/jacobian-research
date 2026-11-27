@@ -1,9 +1,9 @@
 # Necessary Newton faces for the centered order-(4,6) rectangle
 
 This is an exact necessary-condition calculation and a method control,
-not an exclusion of the order-(4,6) case or a claim that it lies beyond
-published degree bounds. It proves no new DC1 counterexample or global
-normalization theorem.
+with no global normalization claim. A [separate argument](POLYNOMIAL_FOUR_SIX_STRING_EXCLUSION.md)
+excludes every actual polynomial differential-order \((4,6)\) pair
+with a nonzero scalar commutator.
 
 Let \(k\) be a characteristic-zero field, \([D,x]=1\), and let
 \(P,Q\in A_1(k)\) satisfy \([Q,P]=\kappa\in k^\times\).

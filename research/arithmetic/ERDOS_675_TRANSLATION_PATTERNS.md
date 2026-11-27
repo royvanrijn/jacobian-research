@@ -10,7 +10,7 @@ as in the supplied prior proof posted by Liam Price. This record reviews
 that construction, proves an exact reduction of the fixed norm problem,
 and separates positive local densities from the missing global existence
 assertion. No novelty claim is made for the construction, reductions or
-bounded worked examples. The minimal-translation growth question is
+bounded worked examples. The squarefree minimal-translation question is
 outside this record.
 
 Let \(E=\{x^2+y^2>0:x,y\in\mathbb Z\}\). For a set
@@ -276,6 +276,49 @@ positions remain to be represented together. The current two-point
 comparison theorem does not supply that conclusion. Higher-rank
 finite-complexity results do not supply it either merely by adding dummy
 variables: the linear parts of these one-variable forms remain parallel.
+
+## Forced prime divisors of a return
+
+**Theorem Erdos675ReturnSize.** Let \(E\) be the positive sums of two squares. Suppose \(t\ge1\) satisfies \(a+t\in E\) whenever \(a\in E\cap[1,N]\). Then every prime \(p\equiv3\bmod4\) with \(200p^{3/2}\le N\) divides \(t\). In particular, for all sufficiently large \(N\),
+\[
+                         t\ \ge\ \exp(cN^{2/3})
+\]
+for an absolute constant \(c>0\).
+
+Liu's Lemmas 6 and 7 use two norms in the same nonzero class modulo \(p\) that differ modulo \(p^2\). His Theorem 2 bounds the shift using prime witnesses and Linnik's theorem. We obtain the needed witnesses of size at most \(200p^{3/2}\) using a compactly supported Fourier weight on the norm conic. The norm witnesses need no specified classes modulo \(p^2\) beyond being distinct there. [Liu, Theorem 2 and Remark 12](https://leon2k2k2k.github.io/assets/pdf/erdos/erdos675a.pdf)
+
+Fix \(p\equiv3\bmod4\) and \(r\in\mathbb F_p^\times\). The conic \(x^2+y^2=r\) has \(p+1\) points over \(\mathbb F_p\), by the norm map from \(\mathbb F_{p^2}^\times\). For any nonzero frequency \((u,v)\) its complete sum satisfies
+\[
+ \left|\sum_{x^2+y^2=r}e_p(ux+vy)\right|\ \le\ 2\sqrt p ,
+ \qquad e_p(z)=\exp(2\pi i z/p).
+\]
+Indeed, insert additive orthogonality and complete the squares in \(x,y\) for each nonzero multiplier \(s\). The product of the two quadratic Gauss sums at \(s\) is the constant \(-p\), so the normalized sum is the negative of
+\[
+                  \sum_{s\ne0}e_p\!\left(-rs-\frac{u^2+v^2}{4s}\right).
+\]
+The zero multiplier vanishes since at least one frequency is nonzero. Both coefficients of the Kloosterman sum are nonzero, the second by anisotropy over \(\mathbb F_p\), so the bound follows. This is the prime-modulus case of Tolev's conic calculation. [Tolev, equations (51), (56) and (58)](https://arxiv.org/pdf/1106.3474v2) · [Weil, p. 207](https://www.pnas.org/doi/pdf/10.1073/pnas.34.5.204)
+
+Suppose first that \(p>153^2\), and put \(H=\lceil2p^{3/4}\rceil\). Periodize \(w(x)=(1-|x|/H)_+\) from \(\mathbb Z\) to \(\mathbb F_p\). With the unnormalized Fourier transform, its coefficients are \(H^{-1}|\sum_{j=0}^{H-1}e_p(uj)|^2\). Thus \(\widehat w(0)=H\) and \(\sum_u|\widehat w(u)|=p\), since \(w(0)=1\). Translating the weight leaves the absolute Fourier coefficients unchanged. For any centers \((c_1,c_2)\), Fourier inversion yields the lower bound
+\[
+ \sum_{x^2+y^2=r} w(x-c_1)w(y-c_2)
+          \ \ge\ \frac{p+1}{p^2}H^2-2\sqrt p\ >\ 0 .
+\]
+Use the centers \((0,0)\) and \((3H,0)\). The first yields a positive norm below \(2H^2\); the second yields one above \(4H^2\) and below \(17H^2\). These bounds use the integer representatives in the support of each weight. They give different integers congruent to \(r\bmod p\), both below \(17H^2\le153p^{3/2}<p^2\). Consequently the two norms differ modulo \(p^2\).
+
+If \(p\le153^2\), choose a modular solution with \(x\not\equiv0\bmod p\), interchanging the coordinates if needed. Lift both coordinates into \([-(p-1)/2,(p-1)/2]\). For a second solution replace \(x\) by \(x-\operatorname{sgn}(x)p\). Its square changes by \(p^2-2p|x|\), which is nonzero modulo \(p^2\). Both norms are at most \((5/4)p^2<200p^{3/2}\). This completes the witness construction for every inert prime.
+
+If \(p\nmid t\), use the two witnesses for \(r=-t\bmod p\). For at least one of them, \(a+t\) has valuation one at \(p\), contradicting \(a+t\in E\). Thus \(p\mid t\) whenever \(200p^{3/2}\le N\). The prime number theorem in arithmetic progressions gives
+\[
+ \log t \ \ge\ \sum_{\substack{p\le(N/200)^{2/3}\\p\equiv3\bmod4}}\log p
+       =\left(\frac{1}{2\cdot200^{2/3}}+o(1)\right)N^{2/3}.
+\]
+The modulus is fixed at four, as in Liu's argument.
+
+**Corollary Erdos675ReturnValuations.** For a return as in the theorem and every prime \(p\equiv3\bmod4\), an even valuation \(v_p(t)=r\) is impossible if \(200p^{r+3/2}\le N\). An odd valuation \(v_p(t)=r\) is impossible if \(p^{r+1}\le N\). At two, \(v_2(t)\ge\lfloor\log_2N\rfloor-1\).
+
+If \(r\) is even, apply the witness argument to \(t/p^r\) and multiply both positive norm witnesses by \(p^r\), a square. One of the enlarged witnesses gives valuation \(r+1\) in its translate. If \(r\) is odd, \(a=p^{r+1}\) is a square whose translate has valuation \(r\). For the dyadic assertion write \(t=2^r u\) with \(u\) odd. When \(u\equiv1\bmod4\) use \(a=2^{r+1}\), and when \(u\equiv3\bmod4\) use \(a=2^{r+2}\). Both choices are norms, and in each case the odd part of \(t+a\) is \(3\bmod4\), which is incompatible with being a sum of two squares. If \(2^{r+2}\le N\), this contradicts the return.
+
+These bounds apply to the size and divisibility of any return. The existence of a positive return for every initial block in (T.1) remains open.
 
 ## 7. An elementary initial-block example
 
@@ -908,7 +951,389 @@ closed in \(K(X)\) by regularity after extending constants.
 Thus any square root of \(t+b\) in \(K(X)\) already lies in
 \(K(C)\), as required in the parabolic and degree arguments.
 
-## 16. Review and computation scope
+## Degree and leading coefficient of a polynomial construction
+
+**Theorem Erdos675PolynomialLeadingDivisibility.** Let
+\(T\in\mathbb Q[X]\) have degree \(d\ge1\), positive leading
+coefficient \(A\), and integer values on \(\mathbb Z\).
+Suppose \(T(X)+a\) is a Gaussian norm in \(\mathbb Q(X)\) for
+each \(a\in E\cap[1,N]\). Write \(Y=(N/200)^{2/3}\). Then
+\[
+  \prod_{\substack{p\le Y\\p\equiv3\ (4)}}p\ \mid\ d!A.
+\]
+The quotient of \(T\) by this product is integer-valued on all
+integers. If \(T\in\mathbb Z[X]\), each prime in the product
+with \(p>d\) divides every coefficient. A primitive integral
+construction, whose coefficients have gcd one, must therefore have
+\(d\ge(1-o(1))Y\) as \(N\) grows. At any fixed degree an
+integral construction must have
+\[
+                \log A\ \ge\ (1/2+o(1))Y.
+\]
+
+Choose a rational-function norm identity for each prescribed
+positive offset. For every sufficiently large integer \(x\),
+all the identities specialize without poles and \(T(x)>0\).
+A positive rational Gaussian norm that is an integer belongs
+to \(E\), since all its inert prime valuations are even. Thus
+\(T(x)+a\) belongs to \(E\) at every prescribed positive position.
+By Theorem Erdos675ReturnSize, each prime in the product divides
+\(T(x)\) for every sufficiently large integer \(x\). Taking the
+\(d\)-th forward difference gives \(\Delta^d T(x)=d!A\), an
+integer divisible by the product. For the quotient assertion,
+shift the parameter origin to a sufficiently large integer and
+use Newton interpolation in the binomial basis. All forward
+differences at that origin are divisible by the product, and
+the binomial basis takes integer values on every integer. If
+the coefficients are integral, reduction modulo a prime in the
+product gives a polynomial vanishing at every residue. For
+\(p>d\) it is the zero polynomial, giving coefficientwise divisibility.
+
+For primitive integral \(T\), all primes in the product must
+be at most \(d\). The largest such prime is
+\((1-o(1))Y\) by the prime number theorem in the class three
+modulo four. At fixed degree the primes with \(p>d\) give
+\(\log A\ge\sum_{d<p\le Y,\ p\equiv3\ (4)}\log p
+=(1/2+o(1))Y\). More generally for \(d\le Y\) this sum
+equals \((Y-d)/2+o(Y)\) uniformly in \(d\), which gives a
+tradeoff when both degree and coefficients vary. These conclusions
+already follow from the positive positions. They also apply if
+one starts with an integral-output polynomial on a fixed
+arithmetic progression of parameter values and first substitutes
+its affine parametrization into \(T\).
+
+## Quartic polynomial norm identities
+
+**Theorem Erdos675QuarticNormOffsets.** Let \(T\) be an integral quartic
+with positive leading coefficient \(A\). The number of integers
+\(1\le a\le N\) for which \(T(X)+a\) is a norm from
+\(\mathbb Q(i)(X)\) to \(\mathbb Q(X)\) is
+\[
+ \ll r_2(A)\left(1+\sqrt N+A^{1/8}N^{3/8}\right),
+ \qquad r_2(A)=\#\{(u,v)\in\mathbb Z^2:u^2+v^2=A\}.
+\]
+The implied constant is absolute. A monic integral quartic cannot
+certify even the three offsets \(1,2,4\).
+
+Write \(K=\mathbb Q(i)\) and
+\(T(X)=AX^4+bX^3+cX^2+dX+e\). If \(T+a\) is a rational-function
+norm, it is the norm of a Gaussian integer polynomial
+\(Q=\alpha X^2+z_1X+z_0\). For this integrality assertion, split
+off the positive integer content of \(T+a\). Its primitive part
+is also primitive over \(\mathbb Z[i]\), since a \(\mathbb Z\)-linear
+combination of its coefficients is one. In \(K[X]\), a
+self-conjugate monic irreducible factor has even exponent in a
+norm. Take half of each such exponent and all the factors from
+one side of each conjugate pair. By Gauss's lemma, the factors
+can be taken primitive over \(\mathbb Z[i]\). The resulting
+primitive product and its conjugate multiply to the original
+primitive part up to a real unit. Both leading coefficients
+are positive, so that unit is one. The content is therefore
+itself a rational Gaussian norm. Its inert prime exponents
+are even, so it is a Gaussian integer norm by the two-square
+criterion. Multiply the primitive product by a Gaussian
+integer of that norm.
+
+Fix \(\alpha\in\mathbb Z[i]\) of norm \(A\) and
+\(g=\gcd(|\Re\alpha|,|\Im\alpha|)>0\). Write
+\[
+ z_1/\alpha=B+is,\qquad z_0/\alpha=u+iv,\qquad B=b/(2A).
+\]
+The relation fixing \(B\) shows that all feasible \(s\) lie in
+a coset of \(g^{-1}\mathbb Z\). Indeed the Gaussian integers \(z\)
+with \(\Re(z\bar\alpha)=0\) form the lattice
+\((i\alpha/g)\mathbb Z\). The coefficient of \(X^2\) gives
+\(c/A=B^2+s^2+2u\), with \(Au\in g\mathbb Z\). Hence the
+distinct \(s^2\) lie in a coset of \((2g/A)\mathbb Z\).
+
+Use \(X=Y-B/2\) and write
+\[
+ A^{-1}T(Y-B/2)=Y^4+CY^2+DY+F.
+\]
+In this coordinate the normalized quadratic has the form
+\(Y^2+isY+u'+iv'\), with \(2u'+s^2=C\) and \(2s v'=D\).
+If \(s\ne0\), put \(w=s^2\). The constant coefficient is then
+\[
+             F+a/A=H(w),\qquad
+             H(w)=\frac{(C-w)^2}{4}+\frac{D^2}{4w}.
+\]
+On \(w>0\), \(H''(w)\ge1/2\). On each of its at most two
+monotone branches, the \(w\)'s with values in an interval of
+length \((N-1)/A\) have diameter at most
+\(2\sqrt{(N-1)/A}\). This follows by integrating the inequality
+for \(H''\) from the endpoint where the absolute derivative is
+smaller. Spacing in \(w\) bounds the number of offsets on that
+branch by \(1+\sqrt{AN}/g\). For a fixed sign of \(s\), taking
+square roots restricts the \(s\)'s to an interval of diameter
+at most \(\sqrt{2}(N/A)^{1/4}\). Their lattice spacing gives the
+second bound \(O(1+g(N/A)^{1/4})\) after summing over both signs.
+The minimum of these bounds is at most
+\(O(1+A^{1/8}N^{3/8})\), using the geometric mean of the two
+nonconstant terms.
+
+If \(s=0\), \(D=0\) and the real part \(u'=C/2\) is fixed.
+The imaginary part \(v'=v\) lies in a coset of \(g^{-1}\mathbb Z\)
+because the real part of \(z_0/\alpha\) is fixed. Now
+\(F+a/A=C^2/4+v^2\). On each sign interval the possible \(v\)'s
+have diameter at most \(\sqrt{(N-1)/A}\), giving
+\(O(1+g\sqrt{N/A})=O(1+\sqrt N)\) offsets. Sum over the
+\(r_2(A)\) choices for \(\alpha\). The leading-coefficient obstruction above uses positivity at
+all offsets. This estimate counts norm offsets for an arbitrary
+integral quartic, including those certifying only some offsets.
+
+For the monic assertion take \(\alpha=1\) by multiplying the
+quadratic by a Gaussian unit. Then \(B,s,u,v\) are integers
+and \(s^2\equiv c-B^2\bmod2\). If \(s=0\) never occurs,
+the positive squares \(s^2\) of this fixed parity are spaced
+by at least eight. Each monotone branch has diameter at most
+\(2\sqrt3\) when \(a\in[1,4]\). Thus at most two offsets
+can occur. If \(s=0\) does occur, put \(u_0=(c-B^2)/2\)
+and \(a_0=u_0^2-e\). All feasible \(s\) are even. For
+\(s=2k\ne0\), matching the coefficients before translating
+gives \(u=u_0-2k^2\) and \(v=Bk\). Thus \(a-a_0\equiv
+(Bk)^2\bmod4\). When \(s=0\), \(a-a_0=v^2\) has the same
+restriction to zero or one modulo four. The three desired
+offsets occupy three distinct residue classes.
+
+**Corollary Erdos675EvenQuarticNormObstruction.** There is a fixed
+initial block for which no quartic in \(\mathbb Q[X]\) that becomes
+even after a rational translation of \(X\) certifies all positive
+positions by Gaussian norm identities. This holds with arbitrary
+leading coefficient in that class.
+
+After the translation the norm computation over \(\mathbb Q(i)[X]\)
+still applies, with rational coefficients for \(B,s,u,v\).
+Polynomial norm factors over this field are obtained by allocating
+conjugate factors as above and choosing a leading constant of the
+required norm. Evenness gives \(D=0\). Therefore either \(s=0\),
+in which case \(F+a/A-C^2/4\) is a rational square, or \(v'=0\),
+in which case \(F+a/A\) is a rational square. Each of these two
+conditions can hold on no nonconstant four-term arithmetic
+progression of offsets, by the theorem on four rational squares.
+[Conrad, Theorem 3.4](https://kconrad.math.uconn.edu/blurbs/ugradnumthy/4squarearithprog.pdf)
+
+Choose an arithmetic progression of positive sums of two squares
+long enough for the two-colour, four-term case of van der Waerden's
+theorem. Such a progression exists by applying Green and Tao's
+Theorem 1.2 to the primes one modulo four, which have relative
+density one half among primes. If every offset were certified,
+colour each position by one of its two square conditions. A
+monochromatic four-term subprogression contradicts the preceding
+square theorem. The largest element of the chosen progression
+gives one fixed initial block for the obstruction.
+[Green and Tao, Theorem 1.2](https://annals.math.princeton.edu/wp-content/uploads/annals-v167-n2-p03.pdf)
+[Van der Waerden, pp. 212–216](https://cir.nii.ac.jp/crid/1573387449045250304)
+
+For a quadratic \(AX^2+bX+e\), a norm identity instead forces
+\(A(e+a)-b^2/4=(\Im(z_0\bar\alpha))^2\) with \(N(\alpha)=A\).
+The four norm offsets \(1,5,9,13\) already form a forbidden
+progression for that condition. The degree of a nonzero
+polynomial norm is even because its order at infinity is even.
+These obstructions address identities in the parameter. The
+original question concerns integer translations, which can also
+come from specializations without such identities.
+
+## 16. Norms on two-squareclass Pell curves
+
+Let \(b<c\) be rational, \(D_1,D_2\) positive rational, and consider
+\[
+                t+b=D_1 x^2,\qquad t+c=D_2 y^2 .                    \tag{T.18}
+\]
+The two linear factors have distinct roots, so they give a
+biquadratic extension of \(\mathbb Q(t)\) with function field
+\(F=\mathbb Q(t,x,y)\). The curve is geometrically integral.
+
+**Proposition Erdos675TwoSquareclassCriterion.**
+Fix an offset \(a\), and suppose the curve has a rational seed with
+\(t=t_0\) such that \(t_0+a>0\) is a sum of two rational squares.
+For \(a\ne b,c\), put
+\[
+                      U=\frac{a-b}{D_1},\qquad V=\frac{a-c}{D_2}.
+\]
+Then \(t+a\) is a norm from \(F(i)\) exactly when \(U\), \(V\), or
+\(-UV\) is a rational square. For \(a=b\) or \(a=c\), the
+corresponding square identity in (T.18) supplies the norm.
+
+For necessity, expand at \(t=-a+s\). The function field embeds in
+\(L((s))\), where \(L=\mathbb Q(\sqrt{-U},\sqrt{-V})\). The nonzero
+constant terms of the two radicands allow their square roots to be
+expanded in \(s\). If \(i\notin L\), conjugation on \(L(i)((s))\)
+preserves the order in \(s\), so every Gaussian norm has even order.
+But \(t+a=s\) has order one. Thus \(i\in L\), which holds if and only
+if one of \(U,V,-UV\) is square, by the quadratic subfields of a
+biquadratic field. This also holds when the residue squareclasses
+are trivial or dependent, by omitting repeated squareclasses.
+
+If \(U\) is square, \(t+a=D_1(x^2+U)\), and the seed shows
+\(D_1\) is a rational norm by taking a quotient of two norms.
+The same argument works for \(V\) and at the branch offsets.
+If \(-UV\) is square then \(b<a<c\), and
+\[
+                  t+a=A x^2+B y^2,\qquad
+ A=\frac{(c-a)D_1}{c-b},\quad B=\frac{(a-b)D_2}{c-b}.
+\]
+Since \(AB\) is a square, \(B/A\) is a rational square.
+The seed gives \(A\) as a rational norm, and the identity proves
+the claim by multiplicativity.
+
+### Obstruction at the three square offsets through 9
+
+**Theorem Erdos675TwoSquareclassSquareAnchorObstruction.**
+Suppose (T.18) has a rational point with \(t_0\) a nonnegative integer
+and \(t_0+a\in E\) for \(a=1,2,4,5,8,9\). If the curve makes one of
+\(t+1,t+4,t+9\) a rational square in its function field, then at least
+one of those six positive offsets fails to be a Gaussian norm in
+that field. Thus this family of Pell identities cannot certify
+the initial block through 9 using any of its three square offsets
+as a square.
+
+The nontrivial squareclasses in \(\mathbb Q(t)\) killed by (T.18) are
+the two radicands \((t+b)/D_1,(t+c)/D_2\) and their product.
+Comparing the valuations at \(t=-b,-c\) shows that making \(t+d\)
+square requires a branch at \(d\) with square multiplier, which
+we normalize to 1. Call the other branch \(c\), whether it is
+above or below \(d\), and write its multiplier as \(D>0\).
+At the seed, write \(t_0=m^2-d\) with \(m\) an integer, and
+\(w^2=D(t_0+c)\) with \(w\) rational. Multiplying \(D\) by a
+rational square scales all the square roots, so we may assume
+\(v_3(D)\in\{0,1\}\).
+
+Take first \(d=1\). The offsets \(a=4,8,9\) have
+\(a-1=3,7,8\), all nonsquares. They must satisfy one of two
+conditions in the proposition:
+\[
+ k_a^2=D(a-c)\quad (a\ge c),\qquad
+ k_a^2=D(a-1)(c-a)\quad (a\le c).                                  \tag{T.19}
+\]
+At equality either condition uses \(k_a=0\). As \(a\) increases,
+the middle-interval condition can switch to the direct condition
+at most once. The seed has \(3\nmid m\), because if \(3\mid m\)
+then \(m^2+3=t_0+4\) has valuation one at 3.
+
+If all three positions use the direct condition, adding \(w^2\)
+to \(k_a^2\) gives \(D(m^2+a-1)\). At \(a=4\) the right side has
+valuation \(v_3(D)\). A sum of two 3-adic squares has even
+valuation, so \(D\) is a 3-adic unit and \(w,k_4\) are integral at
+3. At \(a=9\) the right side is zero modulo 3, forcing
+\(w,k_9\equiv0\bmod3\). The equations at \(a=4,8\) then
+require \(D\) and \(2D\) both to be nonzero squares modulo 3.
+
+In the mixed case with only 4 in the middle interval, the relation
+\(D(4-c)+4D(9-c)=5D(8-c)\) gives
+\(k_4^2+15k_8^2=12k_9^2\). Scale to a primitive integer triple.
+Reduction modulo 3 gives \(3\mid k_4\). On division by 3, it gives
+\(2k_8^2\equiv k_9^2\bmod3\), which forces both remaining
+coordinates to be divisible by 3. When 4 and 8 both lie in the
+middle interval, the corresponding equation is
+\(7k_4^2-15k_8^2=84k_9^2\). First \(7\mid k_8\), and division
+by 7 then gives \(k_4^2\equiv5k_9^2\bmod7\). Both coordinates
+are divisible by 7, contradicting primitivity again.
+
+If all three positions use the middle-interval condition, the
+first two give
+\[
+ w^2-k_4^2/3=D(m^2+3),\qquad
+ w^2-k_8^2/7=D(m^2+7).
+\]
+In the first equation the two valuation parities are distinct.
+If \(v_3(D)=0\), then \(w\) is a unit, \(3\mid k_4\), and
+\(D\equiv1\bmod3\). The second equation would have
+\(1-k_8^2\equiv2\bmod3\), which is impossible.
+If \(v_3(D)=1\), the first equation forces \(3\mid w\).
+In the second equation a term of valuation at least two
+minus one of even valuation cannot have valuation one.
+This exhausts (T.19).
+
+Now let \(d=4\) or \(9\). The other branch must have \(c\le1\)
+for the offset \(1\) to pass the real squareclass test. For \(d=4\),
+the offsets \(1,2,9\) then require \(k_a^2=D(a-c)\), since
+\((a-4)\) is either negative or nonsquare and these offsets
+are outside the open middle interval. As before,
+\(k_a^2+w^2=D(m^2+a-4)\). The seed condition at \(1\)
+forces \(3\nmid m\), since otherwise \(m^2-3\) has valuation
+one. At \(a=1\) we get \(v_3(D)=0\), and at \(a=9\) we get
+\(3\mid w\). The offsets \(1,2\) would then require \(D,2D\)
+both square modulo 3.
+
+For \(d=9\), take \(a=1,2,4,5\), all using the direct
+condition. If \(3\nmid m\), then the three seed values
+\(m^2-7,m^2-4,m^2-1\) at \(2,5,8\) are all divisible
+by 3 and two have valuation one. Thus \(3\mid m\).
+The seed value at \(1\) is now a 3-adic unit, so \(D\) is
+a unit. All the \(k_a\) and \(w\) in
+\(k_a^2+w^2=D(m^2+a-9)\) are integral at 3.
+If \(w\equiv0\bmod3\), the offsets 1 and 2 require both
+\(D,2D\) square. Otherwise the two square residues at the
+classes \(a\equiv1,2\bmod3\) would have to be 0 and 1,
+in one order or the other. The pair of offsets in the
+zero class gives two \(k_a\)'s divisible by 3. Their squares
+differ by \(3D\), an impossibility.
+
+### Necessary prime divisors of the branch difference
+
+**Corollary Erdos675TwoSquareclassBranchDivisors.**
+Suppose (T.18) has a rational point with \(t=t_0\) a nonnegative
+integer, and certifies \(t+a\) as a Gaussian norm for every
+\(a\in E\cap[1,N]\). At every prime \(p\equiv3\bmod4\) with
+\(p\ge11\) and \(200p^{3/2}\le N\), both branches are
+\(p\)-adically integral and
+\[
+       b\equiv c\equiv-t_0\bmod p,\qquad
+       v_p(D_1)\equiv v_p(D_2)\bmod2,\qquad
+       \left(\frac{D_1^*/D_2^*}{p}\right)=-1 ,
+\]
+where \(D_j^*=D_j p^{-v_p(D_j)}\). In particular the reduced
+numerator of \(c-b\) is divisible by the product of these
+primes, whose logarithm is
+\((1/2+o(1))(N/200)^{2/3}\).
+
+Use the norm witnesses in Theorem Erdos675ReturnSize. Each
+nonzero residue modulo \(p\) contains a positive norm at most
+\(N\). If \(b\) has negative \(p\)-adic valuation, then at
+every integer \(a\) the class of \(U=(a-b)/D_1\) in
+\(\mathbb Q_p^\times/\mathbb Q_p^{\times2}\) is \([-1]\).
+Indeed \(t_0+b\) is a pole at \(p\), and
+\[
+         U=-x_0^2\left(1-\frac{t_0+a}{t_0+b}\right).
+\]
+The parenthesis is a \(p\)-adic square. The norm criterion
+would require \(V=(a-c)/D_2\) square for every positive
+offset. If \(c\) is also a pole, \(V\) again has class
+\([-1]\). If \(c\) is integral, choose a nonzero residue
+different from \(c\) at which \(V\) is nonsquare, using
+its odd valuation or its nonresidue unit part. Either
+case is impossible. The same argument excludes a pole
+at \(c\).
+
+Away from \(a=0,b,c\bmod p\), the valuations of \(U,V\) have the
+parities of \(v_p(D_1),v_p(D_2)\). If the parities differ, the
+product term has odd valuation and the one even-valuation
+class must be square at every witness. Half the residue
+classes have the opposite unit character before the at
+most three exclusions. Suppose the parities agree.
+If \(b,c\) are distinct modulo \(p\), each simultaneous
+pair of signs of the two unit characters occurs at least
+\((p-5)/4\) times away from the two roots. This follows by
+expanding the two sign indicators. The sum of the product
+of the untwisted characters is \(-1\), by the substitution
+\((a-b)/(a-c)\) on \(a\ne c\), and each of the two linear
+character sums has absolute value at most one after the
+root exclusions. Therefore after excluding \(0\bmod p\)
+there is still a nonzero residue where both signs are
+negative. None of \(U,V,-UV\) is a square there.
+If the roots coincide modulo \(p\) and \(D_1^*/D_2^*\) is
+a residue, the two signs are identical, so again they
+are both negative at some nonzero residue. This proves
+the parity and character requirements.
+
+Finally, if \(t_0+b\) is a unit, then \(t_0+c\) is a unit
+of the same residue and (T.18) forces \(D_1^*/D_2^*\)
+to be a residue. Hence both \(t_0+b\) and \(t_0+c\) are
+zero modulo \(p\). The prime number theorem in arithmetic
+progressions counts the resulting divisors of the branch
+difference.
+
+## 17. Review and computation scope
 
 The [exact checker](verify_erdos675_reduction.py) independently enumerates
 two-square representations in a bounded range, checks locked valuations

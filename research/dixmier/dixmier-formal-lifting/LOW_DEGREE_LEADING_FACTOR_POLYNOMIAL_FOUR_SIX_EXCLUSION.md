@@ -237,7 +237,7 @@ equation (2) all take place in the same Laurent polynomial symbol
 ring. The log-derivation obstruction on the generic level applies
 verbatim and gives the contradiction.
 
-The remaining actual polynomial case requires \(\deg h\ge3\) and
-no root of multiplicity exactly two. Roots of multiplicity three or
-higher, and unrestricted algebraic-function-field strings, are
-outside this local obstruction.
+The local argument leaves the case \(\deg h\ge3\) with no exact
+double root. The [full polynomial exclusion](POLYNOMIAL_FOUR_SIX_STRING_EXCLUSION.md)
+settles that case. Strings over unrestricted algebraic function
+fields remain outside the polynomial proof.

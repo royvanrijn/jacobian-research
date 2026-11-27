@@ -91,7 +91,7 @@ The same checker gives an explicit relaxed rank-one record outside this real loc
 
 The bound (3) controls completions of fixed anchor data in a specified cube class. The [rank-one lattice count](ABC_QUADRATIC_THREE_TORSION_FERMAT_TAIL.md#rank-two-and-the-primitive-coefficient-plane) varies the discriminant and the anchor data, and its per-field cosets can be much smaller than \(Z^{1/4}\) in the range that governs the second moment. A power saving on the full set of occupied rank-one records still requires an aggregate restriction across those pencils, or a different selection of paths. The \(17/14\) second-moment exponent and the low joint three-edge thresholds are unaffected by (3).
 
-A saving to \(V^{3-\sigma}\) on the rank-one count would replace its tail arm by \(X^{5/2-\sigma}/H^{8-3\sigma}\), with the same subpower allowances. For \(0\le\sigma\le1/9\) its crossover with the first moment \(X/H\) occurs at \(H=X^{(3/2-\sigma)/(7-3\sigma)}\). At \(\sigma=1/9\) this meets the unchanged rank-two crossover at \(X^{5/24}\), giving the proposed \(29/24\) ceiling for this one-term improvement.
+A saving to \(V^{3-\sigma}\) on the rank-one count would replace its tail arm by \(X^{5/2-\sigma}/H^{8-3\sigma}\), with the same subpower allowances. For \(0\le\sigma\le1/9\) its crossover with the first moment \(X/H\) occurs at \(H=X^{(3/2-\sigma)/(7-3\sigma)}\). At \(\sigma=1/9\) this gives \(29/24\) for the second moment. The [rank-two divisor bound](ABC_RANK_TWO_NORM_PLANE_DIVISORS.md#consequence-for-a-future-rank-one-saving) lowers the rank-two crossover to \(X^{1/5}\). Reaching the corresponding conditional second-moment exponent \(6/5\) would require \(\sigma=1/4\) uniformly down to that lower threshold.
 
 ## Census at the rank-one crossover
 
@@ -112,6 +112,8 @@ For each \(x,y\), the first two divisibilities give the square-root lists for \(
 
 In the wider box \([1,2V]^3\) at \(Z=128\), there are \(122720\) congruence incidences, \(162\) rank-one incidences and \(4\) meeting all rank-one and field conditions. At \(Z=192\) in the annulus, the positivity and prime-unit tests together remove \(26\) of the \(142\) rank-one records, and another \(111\) fail the field window. These finite controls identify which tests do the work at these scales. The aggregate rank-one gap requires an estimate over growing \(Z\), with all relevant coefficient boxes.
 
+The census also reports the largest trace lift among prime-unit rank-one records and among field-window rank-one records. The [large-lift count](ABC_COHERENT_NORM_LARGE_LIFT_COUNT.md#exact-replay-near-the-crossover) gives selected outputs and uses the full gcd rather than its radical.
+
 Replay with a C++17 GNU compiler from the repository root:
 
 ~~~sh
@@ -119,3 +121,5 @@ mkdir -p .scratch/prime-path-census
 g++ -O3 -std=c++17 -Wall -Wextra -Werror \n    research/arithmetic/census_coherent_norm_rank_one.cpp -o .scratch/prime-path-census/replay
 .scratch/prime-path-census/replay
 ~~~
+
+The [Cayley cubic realization](ABC_COHERENT_NORM_CAYLEY_CUBIC.md) retains the prime denominators, field-window content and three odd square torsor variables of the normalized triangle.

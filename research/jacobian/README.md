@@ -52,8 +52,152 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Directional ramification lower bounds and polar ends | Internal result | proved | [Source](monodromy-theory/KELLER_DIRECTIONAL_RAMIFICATION_AND_POLAR_ENDS.md) |
 | Affine projection bounds for every six-sheet plane Keller profile | Internal result | proved | [Source](monodromy-theory/KELLER_DIRECTIONAL_RAMIFICATION_AND_POLAR_ENDS.md) |
 | Degree 207 persists for every parallel cubic extension of the literal 58-variable model | Internal result | proved | [Source](subtree-shuffling/LITERAL_INDEX_FOUR_58_FULL_PARALLEL_EXTENSION.md) |
+| A bounded coordinate completion reduces three-variable Keller inversion to planar degree | Internal result | proved | [Source](monodromy-theory/LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md) |
+| A low-degree target component forces inversion through degree six | Internal result | proved | [Source](monodromy-theory/LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md) |
+| No quadratic-in-z quintic Veronese leading part | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_QUADRATIC_Z_EXCLUSION.md) |
+| The exceptional cubic scalar has no quintic Keller completion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_CUBIC_COMPONENT.md) |
+| A cubic target component forces three-variable quintic inversion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_CUBIC_COMPONENT.md) |
+| The two surviving weighted linear-z Veronese forms | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_LINEAR_Z_WEIGHTED_REDUCTION.md) |
+| The scalar weighted linear-z quintic form is impossible | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_SCALAR_WEIGHTED_EXCLUSION.md) |
+| Polar boundary obstruction for smooth finite Keller normalizations | Internal result | proved | [Source](monodromy-theory/KELLER_SMOOTH_NORMALIZATION_POLAR_BOUNDARY.md) |
+| Six-sheet symmetric projection bounds in every coordinate | Internal result | proved | [Source](monodromy-theory/KELLER_SMOOTH_NORMALIZATION_POLAR_BOUNDARY.md) |
+| The sole-transposition six-sheet fold has longitudinal degree at least 48 | Internal result | proved | [Source](monodromy-theory/KELLER_SMOOTH_NORMALIZATION_POLAR_BOUNDARY.md) |
+| Width at least five for the immersed six-sheet alternating branch | Internal result | proved | [Source](monodromy-theory/KELLER_SMOOTH_NORMALIZATION_POLAR_BOUNDARY.md) |
+| Affine first component in the remaining quintic Veronese square chart | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_SQUARE_RESIDUAL.md) |
+| The quadratic z coefficient depends on x alone in the quintic square chart | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_SQUARE_TRANSVERSE_COEFFICIENT.md) |
+| Every immersed sole Keller branch has composite projection width | Internal result | proved | [Source](monodromy-theory/KELLER_IMMERSED_SOLE_BRANCH_PROJECTION.md) |
+| Genus at least two with immersed sole index-three ramification | Internal result | proved | [Source](monodromy-theory/KELLER_IMMERSED_SOLE_BRANCH_PROJECTION.md) |
+| Composite width at least six in the immersed six-sheet alternating profile | Internal result | proved | [Source](monodromy-theory/KELLER_IMMERSED_SOLE_BRANCH_PROJECTION.md) |
+| The immersed sole-transposition six-sheet fold has longitudinal degree at least 54 | Internal result | proved | [Source](monodromy-theory/KELLER_IMMERSED_SOLE_BRANCH_PROJECTION.md) |
+| The weighted square quintic Veronese form is impossible | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_SQUARE_EXCLUSION.md) |
+| No linear-in-z common factor in the quintic Veronese leading class | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_SQUARE_EXCLUSION.md) |
+| Binary quintic Veronese factors force one of two affine quadratic z coefficients | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_BINARY_Z_REDUCTION.md) |
+| Binary Veronese rank reduction to one nonconstant affine quadratic z coefficient | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_BINARY_RANK_EXCLUSIONS.md) |
+| No binary common factor in the quintic Veronese leading class | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_BINARY_RANK_EXCLUSIONS.md) |
+| The quintic Veronese leading part is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_VERONESE_BINARY_RANK_EXCLUSIONS.md) |
+| Independent binary quintic leading parts are excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_INDEPENDENT_BINARY_LEADING_EXCLUSION.md) |
+| Low-degree first integrals of the quintic conic pencil | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_CONIC_PENCIL_FIRST_INTEGRALS.md) |
+| The rank-two restriction of the quintic square pencil is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_CONIC_PENCIL_FORMAL_SLICE.md) |
+| External linear factors of binary quintic conic pencils are excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_EXTERNAL_BINARY_CONIC_PENCIL_EXCLUSION.md) |
+| Linear arguments in independent quintic Keller leading forms are excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_LINEAR_ARGUMENT_LEADING_EXCLUSION.md) |
+| Logarithmic quartic and higher Keller fibre obstruction | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_COMPONENT_BOUNDARY_OBSTRUCTION.md) |
+| Nodes, cusps and tacnodes cannot exhaust a quartic Keller component boundary | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_COMPONENT_BOUNDARY_OBSTRUCTION.md) |
+| Reduction of the independent quintic Keller leading cases to a ternary pencil | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_LEADING_PART_RESIDUAL.md) |
+| Directional slice genus in the six-sheet alternating cusp profiles | Internal result | proved | [Source](monodromy-theory/KELLER_SIX_SHEET_CUSP_SLICE_GENUS.md) |
+| Exact resolved elliptic fibre for the transverse alternating width-four case | Internal result | proved | [Source](monodromy-theory/KELLER_SIX_SHEET_CUSP_SLICE_GENUS.md) |
+| Elliptic equality cases at mixed symmetric directional cost eight | Internal result | proved | [Source](monodromy-theory/KELLER_SIX_SHEET_CUSP_SLICE_GENUS.md) |
+| Two Weierstrass models at the low-width six-sheet elliptic residual | Internal result | proved | [Source](monodromy-theory/KELLER_SIX_SHEET_CUSP_SLICE_GENUS.md) |
+| Exact first two determinant equations for the ternary quintic pencil | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_TERNARY_PENCIL_FIRST_EQUATIONS.md) |
+| A nonzero quartic x⁴ term rules out the ternary quintic completion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_TERNARY_PENCIL_NONZERO_QUARTIC_EXCLUSION.md) |
+| Two further quartic parameters are fixed in a ternary quintic Keller completion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_TERNARY_PENCIL_UNEQUAL_PARAMETERS.md) |
+| Ordinary triple points do not suffice for a reduced quartic Keller boundary | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_TRIPLE_BOUNDARY_AND_LINEAR_COMPONENTS.md) |
+| Cubic transversality obstructs quartic Keller boundaries on repeated support | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_TRIPLE_BOUNDARY_AND_LINEAR_COMPONENTS.md) |
+| Residue primitives are polynomial in the affine-linear component restriction | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_TRIPLE_BOUNDARY_AND_LINEAR_COMPONENTS.md) |
+| A quartic component linear in a source coordinate with squarefree quadratic coefficient | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_TRIPLE_BOUNDARY_AND_LINEAR_COMPONENTS.md) |
+| Weighted equal-parameter quintic completions have zero or square second leading form | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_TERNARY_PENCIL_EQUAL_PARAMETERS.md) |
+| The transverse xz parameter in the ternary quintic quartic part vanishes | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_TERNARY_PENCIL_TRANSVERSE_PARAMETER.md) |
+| The ternary conic pencil has no polynomial quintic Keller completion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_TERNARY_PENCIL_TRANSVERSE_PARAMETER.md) |
+| Every three-variable quintic Keller map has dependent leading parts | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_TERNARY_PENCIL_TRANSVERSE_PARAMETER.md) |
+| A residue at a repeated coefficient line forces a linear restriction | Internal result | proved | [Source](monodromy-theory/KELLER_LINEAR_SOURCE_COEFFICIENT_CUBIC_CLASSIFICATION.md) |
+| Quartic components with parallel coefficient support and linear restrictions force inversion | Internal result | proved | [Source](monodromy-theory/KELLER_LINEAR_SOURCE_COEFFICIENT_CUBIC_CLASSIFICATION.md) |
+| Three coefficient configurations remain for quartic components linear in a source variable | Internal result | proved | [Source](monodromy-theory/KELLER_LINEAR_SOURCE_COEFFICIENT_CUBIC_CLASSIFICATION.md) |
+| A bilinear Keller component has constant product coefficient | Internal result | proved | [Source](monodromy-theory/KELLER_LINEAR_SOURCE_COEFFICIENT_CUBIC_CLASSIFICATION.md) |
+| A quadratic Keller suspension gives a plane Jacobian mate | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_QUADRATIC_SUSPENSIONS_AND_HIGHER_CONTACT.md) |
+| Quartic components quadratic in a source direction with constant quadratic coefficient force inversion | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_QUADRATIC_SUSPENSIONS_AND_HIGHER_CONTACT.md) |
+| Further resolution and residue tests at higher-contact quartic double points | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_QUADRATIC_SUSPENSIONS_AND_HIGHER_CONTACT.md) |
+| A reduced quartic Keller boundary requires a nonordinary point with small quadratic jet | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_QUADRATIC_SUSPENSIONS_AND_HIGHER_CONTACT.md) |
+| Rank-two quintic leading forms constrain the quartic factorization and pencil | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_QUARTIC_PENCIL.md) |
+| A pure cyclic Keller suspension gives a plane Jacobian mate | Internal result | proved | [Source](monodromy-theory/KELLER_PURE_CYCLIC_SUSPENSION_COMPLETION.md) |
+| Pure cyclic component suspensions force inversion through degree five | Internal result | proved | [Source](monodromy-theory/KELLER_PURE_CYCLIC_SUSPENSION_COMPLETION.md) |
+| The zero cubic coefficient in the rank-two cubic pencil forces inversion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_CUBIC_PENCIL_ZERO_GAMMA.md) |
+| An irreducible cubic factor in the rank-two quintic leading quartic forces inversion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_CUBIC_PENCIL_CLOSURE.md) |
+| A reduced quintic quartic boundary needs a bad double point | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_REDUCED_BOUNDARY_PENCIL_RESIDUAL.md) |
+| A reduced low-factor quartic boundary must be two conics with higher contact | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_REDUCED_BOUNDARY_PENCIL_RESIDUAL.md) |
+| Necessary leading-pencil forms in top rank one | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_REDUCED_BOUNDARY_PENCIL_RESIDUAL.md) |
+| A quartic Keller boundary cannot consist of two conics with contact four | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_CONTACT_FOUR_CONIC_EXCLUSION.md) |
+| A reduced cancelling quartic forces inversion in top rank two | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_CONTACT_FOUR_CONIC_EXCLUSION.md) |
+| The rank-one conic pencil has a doubled-line fixed factor | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_CONIC_PENCIL.md) |
+| The quartic-argument double-conic completion in top rank two is impossible | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_DOUBLE_CONIC_QUARTIC_PENCIL.md) |
+| The rank-one cubic pencil has an affine-linear source component | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_CONIC_PENCIL.md) |
+| Primitive cubic pencils are excluded in top rank one | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_CONIC_PENCIL.md) |
+| Quintic noninvertibility requires nonreduced cancelling quartics | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_CONIC_PENCIL.md) |
+| Both cancelling cubic terms vanish on the fixed repeated line | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_LINE_PENCIL_CUBIC_RESTRICTION.md) |
+| Primitive conic pencils are excluded in top rank one | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_DOUBLE_LINE_CONIC_PENCIL.md) |
+| Primitive quartic pencils are excluded in top rank one | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_QUARTIC_PENCIL_CLOSURE.md) |
+| The generic mixed rank-two double-conic pencil is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_DOUBLE_CONIC_GENERIC_PENCIL.md) |
+| The mixed rank-two double-conic pencil requires zero parameters | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_DOUBLE_CONIC_EXCEPTIONAL_PENCILS.md) |
+| The transverse mixed double-conic pencil has a necessary Laurent form | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_DOUBLE_CONIC_LAURENT_RESIDUAL.md) |
+| The mixed double-conic pencil is excluded for a transverse conic | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_DOUBLE_CONIC_LAURENT_RESIDUAL.md) |
+| A quintic Keller map of top rank one cannot have a triple fixed line | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_TRIPLE_FIXED_LINE_PENCIL_EXCLUSION.md) |
+| The fixed double line forces a normalized cancelling component | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_FIXED_DOUBLE_LINE_NORMAL_FORM.md) |
+| A quintic Keller map of top rank one cannot have a double fixed line | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_FIXED_DOUBLE_LINE_NORMAL_FORM.md) |
+| Quintic noninvertibility requires top rank two and a nonreduced quartic | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_ONE_FIXED_DOUBLE_LINE_NORMAL_FORM.md) |
+| The remaining mixed tangent double-conic pencil is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_TANGENT_DOUBLE_CONIC.md) |
+| A rank-two double conic requires a pure fifth power in the quintic span | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_DOUBLE_CONIC_PENCIL_RESIDUAL.md) |
+| A nonzero quadratic correction in the pure-fifth-power leading span is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_DOUBLE_CONIC_PENCIL_RESIDUAL.md) |
+| The tangent pure-fifth double conic is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_TANGENT_PURE_FIFTH_DOUBLE_CONIC.md) |
+| The transverse pure-fifth double conic is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_PURE_FIFTH_TRANSVERSE_DOUBLE_CONIC.md) |
+| A noninvertible quintic Keller map requires a repeated line at the quartic boundary | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_PURE_FIFTH_TRANSVERSE_DOUBLE_CONIC.md) |
+| The cubic vanishes on a repeated line of any binary quartic boundary | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_BINARY_QUARTIC_REPEATED_CUBIC_VANISHING.md) |
+| A nondegenerate two-variable quadratic Keller component has square discriminant | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_BINARY_QUARTIC_REPEATED_CUBIC_VANISHING.md) |
+| A multiplicity-two binary quartic line with zero cubic forces an affine source component | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_BINARY_QUARTIC_REPEATED_CUBIC_VANISHING.md) |
+| Primitive quartic and quintic pencils with repeated lines are excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_REPEATED_LINE_PENCIL.md) |
+| A closed cubic pencil containing the quartic member forces inversion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_CLOSED_CUBIC_PENCIL.md) |
+| The binary multiplicity-two quartic component cannot be planar | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_BINARY_QUARTIC_REPEATED_CUBIC_VANISHING.md) |
+| A cubic pencil with pure quartic requires a repeated binary cubic | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_CUBIC_PURE_QUARTIC.md) |
+| A double line and irreducible conic constrain the cubic and the fibre discriminant | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_DOUBLE_LINE_IRREDUCIBLE_CONIC.md) |
+| A pure leading quartic with nonzero binary cubic forces inversion | Internal result | proved | [Source](monodromy-theory/KELLER_PURE_QUARTIC_NONZERO_BINARY_CUBIC.md) |
+| The repeated affine scalar with quadratic binary mate term is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_BINARY_REPEATED_AFFINE_SCALAR_EXCLUSION.md) |
+| A pure fourth-power quartic component forces quintic inversion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_PURE_QUARTIC_AND_BINARY_TRIPLE_LINE.md) |
+| The binary repeated-line primitive pencil reduces to a single scalar | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_PURE_QUARTIC_AND_BINARY_TRIPLE_LINE.md) |
+| The reducible square conic in primitive degree two is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_REDUCIBLE_SQUARE_CONIC_PENCIL.md) |
+| A transverse irreducible conic with a double line forces inversion | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_LINE_CONIC_STATIONARY_FIBRES.md) |
+| The tangent conic with double line has one scalar normal form | Internal result | proved | [Source](monodromy-theory/KELLER_QUARTIC_LINE_CONIC_STATIONARY_FIBRES.md) |
+| Two quintic spans remain for a transverse reduced line pair | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_TRANSVERSE_DOUBLE_LINE_CONIC_PENCILS.md) |
+| The zero-parameter mixed reduced-line pencil is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_ZERO_MIXED_REDUCED_LINE_PENCIL.md) |
+| The cubic term vanishes along the double line of the reduced line pair | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_PURE_FIFTH_REDUCED_LINE_PENCIL.md) |
+| The pure-fifth reduced-line pencil forces quintic inversion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_PURE_FIFTH_REDUCED_LINE_PENCIL.md) |
+| The tangent double-line scalar permits only two quintic spans | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_TANGENT_LINE_CONIC_SPANS.md) |
+| The tangent-conic quintic span divisible by the conic is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_TANGENT_LINE_CONIC_Q_SPAN.md) |
+| The tangent pure-fifth scalar has a quartic first noninvariant layer | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_TANGENT_LINE_CONIC_P_SPAN.md) |
+| The exceptional plane constrains the tangent pure-fifth coefficients | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_TANGENT_LINE_CONIC_P_SPAN.md) |
+| The tangent irreducible-conic quintic branch is excluded | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_RANK_TWO_TANGENT_LINE_CONIC_P_EXCLUSION.md) |
+| The binary triple-line quintic scalar has no Keller completion | Internal result | proved | [Source](monodromy-theory/QUINTIC_KELLER_BINARY_TRIPLE_LINE_SCALAR_EXCLUSION.md) |
+| Three-variable Keller maps are invertible through degree five | Internal result | proved | [Source](monodromy-theory/THREE_VARIABLE_KELLER_INVERSION_THROUGH_DEGREE_FIVE.md) |
+| The exceptional cubic scalar has no sextic Keller completion | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md) |
+| A cubic target component forces three-variable inversion through degree six | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md) |
+| The immersed six-sheet transposition fold has longitudinal degree at least 60 | Internal result | proved | [Source](monodromy-theory/KELLER_IMMERSED_FOLD_DEGREE_PAIR.md) |
+| A smooth two-pole elliptic Keller slice forces polynomial factors with prescribed poles | Internal result | proved | [Source](monodromy-theory/KELLER_TWO_POLE_ELLIPTIC_SLICE_MARKED_FACTORS.md) |
+| A singular alternating width-four slice has a marked degree-four factor | Internal result | proved | [Source](monodromy-theory/KELLER_TWO_POLE_ELLIPTIC_SLICE_MARKED_FACTORS.md) |
+| A scalar linear in v with nonconstant leading coefficient has no affine y mate | Internal result | proved | [Source](monodromy-theory/KELLER_REPEATED_PARALLEL_SCALAR_AFFINE_MATE.md) |
+| Quadratic mates of parallel coefficient scalars have fibre-supported leading coefficient | Internal result | proved | [Source](monodromy-theory/KELLER_REPEATED_PARALLEL_SCALAR_QUADRATIC_MATE.md) |
+| Sextic Keller maps exclude parallel nonconstant coefficient scalars | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_PARALLEL_COEFFICIENT_SCALAR.md) |
+| Degree-seven Keller maps exclude parallel coefficient scalars of degree at least five | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_PARALLEL_COEFFICIENT_SCALAR.md) |
+| The singular alternating width-four pair cannot have a simple pole | Internal result | proved | [Source](monodromy-theory/KELLER_SINGULAR_ALTERNATING_SIMPLE_POLE_EXCLUSION.md) |
+| The singular alternating width-four pair cannot have two triple poles | Internal result | proved | [Source](monodromy-theory/KELLER_ALTERNATING_ELLIPTIC_TRIPLE_POLES.md) |
+| Singular six-sheet alternating maps have directional width at least five | Internal result | proved | [Source](monodromy-theory/KELLER_ALTERNATING_ELLIPTIC_TRIPLE_POLES.md) |
+| A tangent coordinate in the singular alternating profile has slice genus at least two | Internal result | proved | [Source](monodromy-theory/KELLER_ALTERNATING_ELLIPTIC_TRIPLE_POLES.md) |
+| A quadratic mate contains both exceptional fibre components in its leading coefficient | Internal result | proved | [Source](monodromy-theory/KELLER_QUADRATIC_MATE_EXCEPTIONAL_FIBRE.md) |
+| Quartic affine-source Keller components reduce to explicit scalars through degree seven | Internal result | proved | [Source](monodromy-theory/QUARTIC_AFFINE_SOURCE_COMPONENTS_THROUGH_DEGREE_SEVEN.md) |
+| The sextic triple-line shear excludes mates of free-variable degree at most two | Internal result | proved | [Source](monodromy-theory/QUARTIC_AFFINE_SOURCE_COMPONENTS_THROUGH_DEGREE_SEVEN.md) |
+| The minimum ordinary degree of a noninvertible three-variable Keller map is six or seven | Internal result | proved | [Source](monodromy-theory/THREE_VARIABLE_KELLER_INVERSION_THROUGH_DEGREE_FIVE.md) |
+| Three simple immersed criticals force one simple mark on the rational end | Internal result | proved | [Source](monodromy-theory/KELLER_WIDTH_FIVE_ALTERNATING_ELLIPTIC_MARKS.md) |
+| Three simple immersed critical points are excluded in the width-five elliptic A6 slice | Internal result | proved | [Source](monodromy-theory/KELLER_WIDTH_FIVE_ALTERNATING_THREE_SIMPLE_EXCLUSION.md) |
+| The surviving width-five elliptic A6 slice has a double and a simple immersed critical point | Internal result | proved | [Source](monodromy-theory/KELLER_WIDTH_FIVE_ALTERNATING_THREE_SIMPLE_EXCLUSION.md) |
+| Exact sheet degree for a monomial-coefficient quadratic Keller mate | Internal result | proved | [Source](monodromy-theory/KELLER_PARABOLIC_SHEAR_QUADRATIC_MATES.md) |
+| The parabolic quartic shear excludes affine and quadratic mates through degree seven | Internal result | proved | [Source](monodromy-theory/KELLER_PARABOLIC_SHEAR_QUADRATIC_MATES.md) |
+| The double and simple critical pattern is excluded in the width-five elliptic A6 slice | Internal result | proved | [Source](monodromy-theory/KELLER_WIDTH_FIVE_ALTERNATING_DOUBLE_SIMPLE_EXCLUSION.md) |
+| A singular alternating elliptic slice has width at least six | Internal result | proved | [Source](monodromy-theory/KELLER_WIDTH_FIVE_ALTERNATING_DOUBLE_SIMPLE_EXCLUSION.md) |
+| The sextic tangent-conic scalar excludes low free-variable mate degrees | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_MATE.md) |
+| Sextic triple-line shears exclude cubic mates | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_TRIPLE_LINE_CUBIC_MATE.md) |
+| The sextic triple-line shear excludes free degrees four and five | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_TRIPLE_LINE_QUARTIC_QUINTIC_MATES.md) |
+| Coprime monic Laurent mates with scalar bracket have consecutive degrees | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_TRIPLE_LINE_COPRIME_POLE_LEMMA.md) |
+| The sextic triple-line shear excludes free degrees five and six | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_TRIPLE_LINE_COPRIME_POLE_LEMMA.md) |
+| The sextic-quartic leading-power pattern has no Keller mates | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_TRIPLE_LINE_SEXTIC_QUARTIC_MATES.md) |
+| The triple-line quartic scalar has no sextic Keller completion | Internal result | proved | [Source](monodromy-theory/SEXTIC_KELLER_TRIPLE_LINE_SEXTIC_QUARTIC_MATES.md) |
+| The parabolic quartic scalar has no sextic Keller completion | Internal result | proved | [Source](monodromy-theory/KELLER_PARABOLIC_SHEAR_QUADRATIC_MATES.md) |
 
-**Computed obligations:** 23 unresolved; 5 resolved within their exact scope.
+**Computed obligations:** 24 unresolved; 7 resolved within their exact scope.
 
 
 Scope limits:
@@ -84,11 +228,15 @@ Scope limits:
 - The exact inverse-line data of the 48-variable cubic give thirteen exact-index-3 grade-prefix witnesses with inverse degrees 5,7,...,29 in dimensions 3,4,6,9,13,19,28,38,42,45,46,47,48. They supply the nonvanishing side of the length-three shuffle threshold directly.
 - The candidate cubic index-four ceiling 207, also for the retained scaffold with arbitrary restart rounds, is equivalent to the 103 weighted class identities U_104 through U_206. Any failing grade in the block gives an exact-index-four triangular witness of inverse degree 209 through 413.
 - Every noninvertible plane Keller map has generic degree at least five by the published low-sheet exclusions and birational inversion. The exact product descriptions carry field degree and permutation action to Hessian and positional Weyl assignments.
-- Marked quadratic models with ord_0 M>=2 exclude ruling excess zero. The reduced S2 and MX0 double-zero frames also exclude excess one. The (8,12) bound is then seven; larger excess and global coverage remain open.
+- Marked quadratic models with ord_0 M>=2 exclude ruling excess zero. The central first jet excludes excess one at every marked order when both central restrictions are nonzero. In that scope the (8,12) ruling bound is seven. Larger excess, vanishing central restrictions and global coverage remain open.
 - For p=3 the unrestricted minimum lift degree is 81 at both moduli 9 and 27. A bounded Witt tower can be chosen compatibly, so unrestricted degree growth is equivalent to excluding any integral polynomial lift of the seed. The degree growth is proved for lifts affine along a lift of the fixed residue line.
 - The planar degree assessment tracks the Santibáñez-Leal certificate route for (72,108) and the normalized Giraudin F2 and degree-147 exclusions. These exact scopes have separate verification obligations.
 - Global directional coordinate-conductor degrees two through twenty of even degree are excluded. In a monic longitudinal frame the global degree is even and at least twenty-two, with defect at least eleven where its leading coefficient is nonzero. The specialized conductor lower bound is two on arbitrary source lines.
-- The [degree-two element exclusion](../hessian/hc4-triangular-graphs/DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md) applies at every conductor to the generic directional order in a monic longitudinal frame, including after algebraic extension of the parameter field. It excludes every characteristic sequence containing 2, including degree-two approximate roots.
+- The degree-two element exclusion applies at every conductor to the generic directional order in a monic longitudinal frame, including after algebraic extension of the parameter field. It excludes every characteristic sequence containing 2, including degree-two approximate roots.
+- Every three-variable characteristic-zero Keller map of ordinary degree at most five is invertible. The ordinary-degree lower bound for noninvertibility is six.
+- For a noninvertible three-variable sextic Keller map, every nonzero target-linear combination has ordinary degree at least four.
+- The parallel-coefficient scalar r=g(x)+A(x)v with A nonconstant is excluded through degree six, and through degree seven if its degree is at least five.
+- In three variables the minimum ordinary degree of a noninvertible Keller map is either six or seven. The degree-seven upper bound is realized by the retained Alpöge–Gallagher example.
 
 Tracked obligations (computed states):
 
@@ -103,6 +251,7 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Cubic eventual shuffle membership holds forp<=3 and fails for everyp>=17. Determine the least failing length in[4,17], particularly whether fixedp4 has a finite dimension-uniform inverse bound or an unbounded inverse family. The58-variable index4 example gives only a lower bound207; the7/9 fibre obstructions and scalar restart barriers do not decide this alternative.](subtree-shuffling/SUBTREE_SHUFFLE_AND_INVERSE_DEGREE.md) — GAP-JAC-SUBTREE-SHUFFLE-UNIFORM
 - **mathematical / open:** [Do all 103 weighted cubic Engel classes U_104 through U_206 vanish? One certified nonzero class gives an exact-index-four counterexample to the proposed degree ceiling 207.](subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md) — GAP-JAC-INDEX-FOUR-WEIGHTED-GRADES-104-206
 - **mathematical / open:** [Does every common degree cap eventually fail for unrestricted lifts of the odd-prime BGV seed?](mixed-characteristic-lifting/BGV_ODD_PRIME_LIFTING.md) — GAP-JAC-BGV-UNRESTRICTED-WITT-DEGREE-GROWTH
-- **mathematical / open:** [Exclude actual polynomial plane Keller maps of generic sheet degree six. Retain the refined S6 and A6 affine cusp profiles and the full normalization. The two saturated S6 profiles and the A6 case with two unramified primes require nonabelian Orevkov invariant. With one unramified prime A6 requires a unique A1 source singularity over an ordinary cusp, and with zero its sole intrinsic cusp is (2,5). All cases have no proper intermediate field. A sole transposition branch has width at least six in every target coordinate, a sole 3-cycle branch width at least four. An exceptional fold with the sole transposition profile requires original longitudinal degree at least 42.](monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md) — GAP-JAC-PLANE-SIX-SHEET-ADMISSION
+- **mathematical / open:** [Exclude actual polynomial plane Keller maps of generic sheet degree six. Retain the refined S6 and A6 affine cusp profiles and the full normalization. The two saturated S6 profiles and the A6 case with two unramified primes require nonabelian Orevkov invariant. With one unramified prime A6 requires a unique A1 source singularity over an ordinary cusp, and with zero its sole intrinsic cusp is (2,5). All cases have no proper intermediate field. In the smooth six-sheet cases, the S₆ directional bounds are 7, 7 and 8, with weighted total-degree bounds 8, 8 and 9. A sole-transposition exceptional fold has original longitudinal degree at least 48. The immersed sole-transposition slice strengthens the fold bound to 60, with restriction degrees (8,10) at equality. The immersed A₆ sole 3-cycle branch has composite width at least six and genus at least two. At width six the remaining genus and pole-count pairs are (2,4) and (3,2). In the smooth cuspidal alternating case width is at least five and genus at least two. In the singular alternating case width is at least five, every genus-one coordinate has width at least six, and width five forces slice genus and pole count (2,2). Marked admission of the mixed symmetric elliptic slices remains open.](monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md) — GAP-JAC-PLANE-SIX-SHEET-ADMISSION
+- **mathematical / open:** [Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. For a quartic component affine in a source direction, the triple-line and parabolic shears are excluded. The tangent-conic scalar requires both free mate degrees at least three after localization, and the squarefree coefficient residual remains. The minimum ordinary degree of a noninvertible map is six or seven.](monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md) — GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

@@ -303,6 +303,60 @@ Its Theorem 5.1 is an exact infinite path criterion. The block
 condition above is a sufficient residue test that allows jumps to
 be handled by several preceding blocks. The unbounded-jump extension remains open.
 
+## The set of cancelling \(p\)-adic starts
+
+For \(a\in\mathbb Z_p\) define \(W_j(a)=\prod_{i=1}^j(a+i)\) with \(W_0=1\), and set
+\[
+ \mathcal Z_p=\left\{a\in\mathbb Z_p:
+    F_{\epsilon}(a)=\sum_{j\ge0}\epsilon_j W_j(a)=0,\
+    \epsilon_0=1,\ \epsilon_j\in\{0,1\}\right\}.
+\]
+A product of \(j\) consecutive terms in \(\mathbb Z_p\) has valuation at least \(J_p(j)\). For the general setting of factorial polynomial series, see [Anashin and Khrennikov, §3.10.2](https://doi.org/10.1515/9783110203011.1.48). The series therefore converges uniformly in both \(a\) and \(\epsilon\). At a positive integer \(a\), membership in \(\mathcal Z_p\) is equivalent to \(f(a,p)=\infty\), by the compactness argument above after normalization by \(a!\).
+
+**Proposition (Finite root bound for each fixed pattern).**
+
+On the residue disc \(-m+p\mathbb Z_p\), choose a representative \(m\ge1\), \(m\ne2\). Each fixed pattern has at most \(v_p(F_\epsilon(-m))\) zeros on that disc, counted with multiplicity. In particular, for \(p=2\) each pattern has at most three roots on \(\mathbb Z_2\), and all its roots are even.
+
+In \(W_j(-m+px)\), every factor with index congruent to \(m\bmod p\) is divisible by \(p\) as a polynomial in \(x\). Thus the series converges coefficientwise and in the supremum norm on coefficients, since at least \(\lfloor j/p\rfloor\) factors contribute. Its coefficients tend to zero. The coefficient of \(x^i\) is divisible by \(p^i\). At the constant term, the finite negative-start argument gives \(F_\epsilon(-m)\ne0\). The last coefficient of maximal absolute value has index at most \(v_p(F_\epsilon(-m))\). For completeness, if a series \(\sum c_n x^n\) with coefficients tending to zero has last maximal index \(d\) and a root \(z\in\mathbb Z_p\), division by \(x-z\) gives coefficients \(\sum_{i>n}c_i z^{i-n-1}\). They tend to zero and their last maximal index is \(d-1\). This proves the root bound by iteration. For \(p=2\) use \(m=1\) and \(m=4\). The former value is \(1\), and the latter is a subsum with \(1\) required of \(1,-3,6,-6\), whose maximal valuation is \(3\).
+
+**Theorem (Hausdorff dimension of constructed cancelling starts).**
+
+The set \(\mathcal Z_p\) is compact and nowhere dense. Every neighbourhood of \(-2\) contains a compact subset of \(\mathcal Z_p\) of Hausdorff dimension \((p-1)/p\). For \(p=5\), there is such a subset of dimension \(3104/3125\) in every neighbourhood of \(-2\). The dimension is with respect to the metric \(|a-b|_p\).
+
+Compactness follows by projecting the closed zero set in \(\mathbb Z_p\times\{0,1\}^{\mathbb N}\). The excluded negative integers other than \(-2\) are dense, so \(\mathcal Z_p\) has empty interior. To construct subsets, write \(t=a+2\) and
+\[
+ R_n(t)=\prod_{i=1}^n(t+i).
+\]
+Fix the first three coefficients of \(F_\epsilon\) to one. Their sum is \(t^2\). At each later offset \(j=n+2\) the term is \((t-1)tR_n(t)\), so it suffices to solve
+\[
+                   t=(1-t)\sum_{n\in E}R_n(t)                    \tag{404.4}
+\]
+for a set \(E\) of positive offsets.
+
+Take a power \(L\) of \(p\) and \(1\le D\le J_p(L)\). Suppose that for every sufficiently large multiple \(b=kL\), subsets of the ratios \(R_{b+i}(0)/R_b(0)\) for \(0\le i<L\) cover every residue modulo \(p^D\). Choose one subset for each residue, using the empty subset for residue zero. Fix \(M\ge D\), and let the choice in each block be one digit from \(0,\ldots,p^D-1\). On \(t\in p^M\mathbb Z_p\), the polynomial ratios \(R_{b+i}(t)/R_b(t)\), interpreted as products, retain their residues modulo \(p^D\). The \(L\) factors of the ratio \(R_{b+L}(t)/R_b(t)\) give it valuation at least \(J_p(L)\ge D\).
+
+Use only sufficiently late blocks so all polynomials \(R_n(p^M x)\) in (404.4) have coefficients divisible by \(p^{M+1}\). The right-hand side maps \(p^M\mathbb Z_p\) into itself and is \(p^{-1}\)-Lipschitz there, by subtracting its values in the variable \(x=t/p^M\). Thus iteration starting from \(0\) gives a unique \(t\) for every digit word. A nonzero word cannot have \(t=0\), since its first nonzero block at \(0\) has strictly lower valuation than all subsequent blocks. The negative-start calculation excludes every negative integral start except \(-2\).
+
+For two words first differing at block \(b=kL\), neither root is a zero of \(R_b\). At either root \(t\), the two right-hand sides have difference of valuation
+\[
+ \gamma_t(kL)+e,\qquad
+ \gamma_t(n)=\sum_{i=1}^n v_p(t+i),\qquad 0\le e<D.              \tag{404.5}
+\]
+The first differing block gives the value in this range by its distinct residue. Subsequent blocks are divisible by \(R_{(k+1)L}(t)\) and cannot change that valuation. The contraction inequality shows that (404.5) is also the valuation of the difference of the two fixed points. Thus the digit words map injectively to the roots. The bound \(\gamma_t(n)\ge J_p(n)\) gives continuity.
+
+For the dimension, if the first \(m\) digits are fixed, the resulting set has diameter at most \(p^{-J_p((k_0+m)L)}\), where \(k_0\) indexes the first usable block. There are \(p^{Dm}\) such sets, so the dimension is at most \((p-1)D/L\). For the lower bound, give the digits independent uniform probabilities. For any \(\delta>0\) and all large positive integers \(i\), roots with \(v_p(t+i)\ge\delta i\) agree on all digits through block starts
+\[
+                kL\ \le\ \frac{\delta i}{2\log_p i}.
+\]
+Indeed every factor \(t+j\) at such a start, \(1\le j\le kL<i\), has the valuation of the nonzero integer \(j-i\), at most \(\log_p i\). A first difference there would give a valuation at most \(\delta i/2+D-1\) by (404.5), whereas any two roots in the indicated ball differ by a multiple of \(p^{\lceil\delta i\rceil}\). The probabilities of these events are therefore summable in \(i\), since each is at most \(p^{-c_\delta i/\log i}\) for some \(c_\delta>0\). Counting the tail union of the events and taking \(\delta\) through positive reciprocal integers gives \(v_p(t+i)=o(i)\) for almost every root in this measure. For such \(t\), \(\max_{1\le i\le n}v_p(t+i)=o(n)\). Counting the multiples of \(p^h\) among the \(n\) factors, with an error of at most one for each nonzero level, now gives \(\gamma_t(n)=n/(p-1)+o(n)\).
+
+For almost every \(t\), a ball of radius \(p^{-K}\) around \(t\) forces agreement on \((p-1)K/L+o(K)\) initial digits, by (404.5). Its mass is at most \(p^{-((p-1)D/L)K+o(K)}\). For any \(s<(p-1)D/L\), restrict to a positive-measure set on which the bound \(p^{-sK}\) holds for all \(K\) beyond one fixed threshold. Any sufficiently small ball meeting this set can be centred at a point in the set without changing the ball. Summing the ball bounds over any cover proves that the Hausdorff dimension is at least \(s\), which gives the claimed dimension as \(s\) increases.
+
+For every prime take \(L=p\) and \(D=1\). Inside a block the normalized weights modulo \(p\) are \(0!,1!,\ldots,(p-1)!\). Each is a unit. Adding a new nonzero class to a set of subsum residues strictly enlarges it unless it already equals \(\mathbb F_p\), because a nonzero translation generates the group. Thus every residue is attained.
+
+For \(p=5\), take \(L=3125=5^5\) and \(D=J_5(L-5)=776\). Inside any interval \([b,b+L)\) with \(L\mid b\), every positive multiple of five after \(b\) and before \(b+L\) has jump size at most four. The uniform checks in the [local covering criterion](#a-local-covering-criterion-at-every-carry-boundary) then give full residue coverage through \(b+L-5\) by induction starting at \(b\) with precision zero. The chosen block for each jump starts at or after \(b\) because the first distance to a size-\(r\) boundary is at least \(5^r\), at least the tested width. Also \(J_5(b+L-5)-J_5(b)=J_5(L-5)\), by equality of the valuations at relative indices \(1,\ldots,L-5\). Hence (404.4) constructs a set of dimension \(4\cdot 776/3125\). These dimension bounds concern \(p\)-adic starts. The existence of a positive integer in \(\mathcal Z_p\) remains open.
+
+
 ## How large a correction must be near a prime power
 
 An ordinary block at a multiple \(n\) of \(5\) has some spare
@@ -418,3 +472,316 @@ It applies also to differences between two candidate fillings.
 A full lifting argument must account for corrections of growing
 size, or avoid requiring such standalone corrections. The
 existence of an infinite carry path for (404.1) remains open.
+
+## Prime 41 and equal low residues
+
+**Theorem (Prime 41 before the first size-eight jump).**
+The factorials at indices \(2\) through \(41^8-42\) have
+subsums in every residue modulo \(41^{199623130720}\).
+In particular \(f(1,41)\ge199623130720\).
+
+For a fixed prime \(p\), write \(J(n)=v_p(n!)\). It suffices
+at each boundary \(N\equiv0\bmod p\) to find an earlier positive
+multiple \(A\) of \(p\) such that the subset sums from indices
+\(A,\ldots,N-1\), divided by \(A!\), cover the modulus
+\(p^{J(N)-J(A)}\). In fact, use induction to realize the
+desired residue modulo \(p^{J(A)}\) before index \(A\).
+After subtraction and division by \(p^{J(A)}\), multiplication
+by the unit \(A!/p^{J(A)}\) leaves the entire local target group
+available. This is the covering implication from the five-adic
+argument. The initial boundary \(p=41\) is covered by indices
+\(2,\ldots,p-1\). The subset sums of \(2!,3!\) give four distinct
+residues because these two units agree neither with each other
+nor with each other's negatives. Each of the remaining \(p-4\)
+terms enlarges the support by at least one unless it already
+covers the group.
+
+For \(r=v_p(N)\le6\), take \(A=N-p\). The needed precision
+is \(r\). The normalized weights
+\[
+                 w_j(N)=\prod_{i=1}^j(N-p+i)\quad(0\le j<p)
+\]
+depend only on \(N\bmod p^r=0\) when reduced modulo \(p^r\).
+They are consequently also the reductions of the weights at
+\(N=p^6\) modulo \(p^6\). The one-block test at prime \(41\)
+covers this entire modulus. The same block width works at all
+boundaries with jump at most six.
+
+For \(v_p(N)=7\), take \(A=N-2p\), \(C=N-p\) and \(Q=p^7\).
+Now \(J(C)-J(A)=1\), \(J(N)-J(C)=7\).
+Let \(S\subseteq\mathbb Z/Q\mathbb Z\) be the subset support
+from \(C,\ldots,N-1\) normalized by \(C!\). It is the same
+at every boundary divisible by \(p^7\). In the prefix block
+\(A,\ldots,C-1\) write
+\[
+ u_j=\frac{(A+j)!}{A!},\qquad
+ \lambda=\frac{C!}{pA!},\qquad 0\le j<p.
+\]
+Choose exactly one term from each of the disjoint pairs of offsets
+\[
+ (0,1),\ (5,7),\ (6,19),\ (8,22),\ (9,26),\ (11,15),\
+ (18,32),\ (23,30).
+\]
+Each pair has equal values modulo \(p\). The unpaired terms
+have subset sums attaining every class modulo \(p\).
+Thus any requested low digit can be attained while preserving
+all the choices within the pairs. After selecting one fixed
+representative from each pair and any unpaired subset with the
+required low digit, all pair switches change only the upper residue.
+In units normalized by \(C!\), their changes are
+\[
+                    \lambda^{-1}(u_j-u_i)/p\bmod Q.
+\]
+The sums of subsets of these eight changes, added to \(S\),
+cover the entire upper group in every one of the forty classes
+for \(N/p^7\bmod p\) with \(v_p(N)=7\). The changes depend only
+on \(N\bmod p^8\), which determines the \(u_j\bmod p^8\) and
+the unit \(\lambda\bmod Q\). The upper offset from the chosen
+representatives and unpaired subset only translates the group.
+
+The [exact checker](verify_erdos404_prime41_packets.cpp) computes
+the one-block supports by cyclic bitset updates. It tests the
+paired and unpaired conditions and the forty finite translations
+of the complement. The first tested nonzero shift is from pair
+\((0,1)\). Its reduction modulo \(p^6\) is shared across the forty
+classes. To test the first intersections, the checker groups the
+missing residues of \(S\) by their low part modulo \(p^6\). For a
+shift with low part \(s\), two missing residues \(a,b\) can have
+\(a-b\) equal to the shift only if their low parts differ by \(s\).
+A sorted merge finds these pairs of low parts, and the high digits
+identify the classes whose first shift equals \(a-b\bmod Q\).
+Direct membership tests apply the remaining shifts.
+The seventh-power one-block support has \(194716659405\) residues
+and misses \(37614476\). The paired two-block test closes those
+omissions in the forty boundary classes.
+
+From the repository root, replay with GCC 13.3.0 and OpenMP.
+The largest cyclic update uses two bitsets occupying
+approximately \(45.4\) GiB in total.
+
+~~~sh
+g++ -std=c++20 -O3 -march=native -Wall -Wextra -fopenmp \
+  research/factorial/verify_erdos404_prime41_packets.cpp \
+  -o /tmp/verify_erdos404_prime41_packets
+OMP_NUM_THREADS=12 /tmp/verify_erdos404_prime41_packets
+~~~
+
+Induction applies at every boundary through \(N=p^8-p\).
+There \(J(N)=\sum_{i=1}^{7}p^i-7=199623130720\).
+Selecting residue \(-1\) and putting back \(1!\) proves the
+lower bound. A uniform extension through jumps of unbounded
+size remains open. The first size-eight boundary requires
+an additional argument.
+
+## A long finite dyadic carry
+
+**Proposition (Exact dyadic excess at start 34).**
+For \(1\le a\le80\), the value \(f(a,2)\) is finite.
+The largest excess \(f(a,2)-v_2(a!)\) in that range occurs at
+\(a=34\), where it is \(18412\). The first boundary at which
+the carry from \(34!\) cannot lift is \(18448\).
+
+Odd \(a\) have excess zero since the next factor \(a+1\) is
+even. For even \(a\), group indices as \(n,n+1\), starting
+at \(n=a\). Put \(J(n)=v_2(n!)\). Process two consecutive
+factorials at a time, representing earlier partial sums after
+division by \(2^{J(n)}\) and by the fixed odd part of \(a!\).
+If the unit weight at \(n\) is \(u\), the two weights are
+\(u,(n+1)u\). The first slot at \(a\) is required. At the next
+boundary \(n+2\), a residue can continue only if its bottom
+\(v_2(n+2)\) bits vanish, in which case those bits are divided
+out. The new unit weight is
+\[
+                    (n+1)\operatorname{odd}(n+2)u,
+\]
+where \(\operatorname{odd}(m)=m/2^{v_2(m)}\).
+For cutoff \(B\), store only residues modulo \(2^{J(B)-J(n)}\)
+at stage \(n\), preserving every divisibility test through \(B\).
+At the first empty successor set, all attained valuations lie
+strictly below \(J(n+2)\). Their maximum is \(J(n)\) plus the
+maximum valuation of the discarded low remainders. Earlier
+rejections have valuation less than \(J(n)\), and every
+subsequent factorial has valuation at least \(J(n+2)\).
+Consequently the finite failure gives the exact supremum even
+when arbitrary later indices are allowed.
+
+The [dyadic checker](verify_erdos404_dyadic_excess.py) tests
+the forty even starts through \(80\), with cutoff \(4096\)
+except for start \(34\), where the cutoff is \(18448\).
+It finds every other maximum excess at most \(1522\).
+At \(34\) it gives \(J(18446)=18441\) and maximum valuation
+\(18444\), with \(J(34)=32\). Replay from the repository root.
+
+~~~sh
+python3 research/factorial/verify_erdos404_dyadic_excess.py
+~~~
+
+The exact excess at \(34\) also holds for its residue class
+modulo \(2^{18413}\), since the normalized products
+\(\prod_{i=1}^j(a+i)\) agree at that precision throughout the
+class. The existence of an infinite carry path at some
+prime remains open.
+
+## Cancelling starts from variable residue alphabets
+
+**Theorem (Dyadic cancellation dimension and excess density).**
+Every \(2\)-adic neighbourhood of \(-2\) contains a compact
+subset of \(\mathcal Z_2\) of dimension \(d_2>0.91598\),
+where \(d_2\) is the periodic alphabet exponent in (404.6)
+below. For fixed \(m\ge1\), the positive integer starts \(a\)
+with \(f(a,2)-J_2(a)\ge m\) have a natural density
+\(\Delta_2(m)\); the condition includes infinite excess.
+There are constants \(c,C>0\) such that
+\[
+              \Delta_2(m)\ge c(m+1)^{-C}2^{-(1-d_2)m}.
+\]
+At \(p=41\) the corresponding conclusions hold with
+\(d_{41}=1-321/41^8\) in place of \(d_2\), and \(41\) in place
+of the base \(2\) in the density estimate.
+
+The dyadic construction uses all the distinct residues available
+at each block. Its alphabet changes with the valuation of the next
+boundary. Blocks can contribute even when they miss some residues.
+
+### A periodic alphabet criterion
+
+Use the fixed point equation (404.4) in the variable \(t=a+2\).
+Fix a block length \(L\), put \(b_k=kL\), and choose
+\(1\le D_k\le D_{\max}\). Suppose that on \(t\in p^M\mathbb Z_p\),
+where \(M\ge D_{\max}\), the normalized product between consecutive
+block starts is divisible by \(p^{D_k}\):
+\[
+                      p^{D_k}\mid\prod_{i=1}^L(t+b_k+i).
+\]
+Let \(A_k\) be the attainable subset residues of
+\(\prod_{j=1}^i(b_k+j)\), \(0\le i<L\), modulo \(p^{D_k}\),
+with the empty product for \(i=0\). Suppose \(|A_k|\ge2\)
+and the alphabet sizes are periodic of period \(P_0\). Define
+\[
+                 d=\frac{p-1}{LP_0}
+                            \sum_{0\le k<P_0}\log_p|A_k|.       \tag{404.6}
+\]
+All of these products give the same normalized weights at
+\(t\) modulo \(p^{D_k}\), since \(M\ge D_{\max}\).
+Choose one subset for each residue, taking the empty subset
+for zero. Use only blocks from a fixed sufficiently large
+\(k_0\) onward. The right side of (404.4) then maps
+\(p^M\mathbb Z_p\) to itself with Lipschitz constant at most
+\(p^{-1}\), as in the fixed-alphabet construction. Each word gives
+one root. No such root is a negative integer in the \(t\)-variable:
+that would give the excluded negative integer start \(a=t-2\ne-2\).
+The zero root in the \(t\)-variable is obtained from the all-zero word.
+
+For two words first differing at \(k\), apply the same contraction
+comparison at either root \(t\). The two sums differ there in
+valuation \(\gamma_t(b_k)+e\), where
+\(\gamma_t(n)=\sum_{j=1}^n v_p(t+j)\) and \(0\le e<D_k\).
+The later blocks start at valuation at least
+\(\gamma_t(b_k)+D_k\), so they leave this valuation unchanged.
+Comparison of the two fixed points gives this exact valuation
+for their difference. The map from words is injective.
+Agreement through \(r\) successive blocks gives distances
+at most \(p^{-J_p(b_{k_0+r})}\). Thus the map is continuous,
+its image \(C_p\) is compact, and the usual prefix covers
+give dimension at most \(d\). Indeed the number of prefixes
+of \(r\) digits is \(p^{d Lr/(p-1)+O(1)}\) by periodicity.
+
+Give the digits independent uniform probabilities. To get
+logarithmic control of the metric under this measure, fix
+\(i\ge2\) and take \(h_i=\lceil A\log_p(i+1)\rceil\) with \(A\)
+a sufficiently large constant. If \(v_p(t+i)\ge h_i\), then
+for \(n<i\) the factors \(t+j\) have the same valuations
+as \(i-j\), since \(v_p(i-j)< h_i\). Legendre's formula gives
+\[
+ \gamma_t(n)=J_p(i-1)-J_p(i-1-n)
+                  \le \frac{n}{p-1}+\log_p i+1.
+\]
+Two roots in the ball \(v_p(t+i)\ge h_i\) must therefore
+agree on all blocks with \(b_k\le(p-1)h_i/2\), for sufficiently
+large \(i\). A first difference there would have valuation
+at most \(h_i/2+\log_p i+1+D_{\max}<h_i\).
+The ball has measure \(O(p^{-d h_i/2})\) by the prefix count,
+and these bounds are summable if \(Ad/2>2\).
+By Borel–Cantelli, almost every \(t\) satisfies
+\(v_p(t+i)\le C(t)\log_p(i+1)\) for all \(i\).
+Choose a fixed \(C_0\) for which the set of such
+\(t\) with \(C(t)\le C_0\) has positive measure.
+
+On this set, count the multiples of \(p^e\) among
+\(t+1,\ldots,t+n\). Each active level contributes at most
+\(np^{-e}+1\), and there are at most \(C_0\log_p(n+1)\)
+levels. Thus \(\gamma_t(n)\le n/(p-1)+O(\log(n+1))\)
+uniformly on the set. A ball of radius \(p^{-m}\) centred
+there enforces agreement on all blocks with
+\(b_k\le(p-1)m-O(\log(m+1))\), with the implicit constant
+chosen large enough for the first-difference test.
+The measure of the restriction to this positive-measure set
+therefore assigns each radius-\(p^{-m}\) ball mass
+\(O((m+1)^C p^{-dm})\). A ball meeting the set can be
+centred there without changing the ball. This bound proves
+the lower dimension \(d\) and shows that at least
+\(\gg (m+1)^{-C}p^{dm}\) residue classes modulo \(p^m\)
+meet \(C_p\).
+
+For a positive start \(a\), divisibility of an anchored sum
+after division by \(a!\) through \(p^m\) depends only on
+\(a\bmod p^m\). Indeed all \(W_j(a)\) are integer polynomials,
+and \(J_p(j)\ge m\) makes \(W_j(a)\) zero at this precision
+for every \(a\). Every class meeting \(C_p-2\) has such an
+anchored finite sum for every positive representative.
+Divide the occupied class bound by \(p^m\) to obtain
+the excess-density bound in the theorem. This counts
+positive starts with a finite-precision witness, leaving
+positive integer membership in \(\mathcal Z_p\) open.
+
+### The two block choices
+
+For \(p=2\), use \(L=16\) and
+\[
+                     D_k=15+\min(v_2(k+1),5).
+\]
+Take \(M\ge20\). The first fifteen factors between block starts
+have valuation sum \(J_2(15)=11\), since \(t+b_k\) is
+divisible by \(16\). The last factor is \(t+16(k+1)\)
+with valuation at least \(4+\min(v_2(k+1),5)\).
+This proves the required product divisibility.
+Each block has at least the two distinct residues zero
+and one, and its alphabet depends only on \(b_k\bmod 2^{D_k}\).
+The alphabet sizes and the precisions are periodic with
+\(P_0=2^{16}\).
+
+The [exact alphabet checker](verify_erdos404_dyadic_dimension.py)
+computes the product \(P_2=\prod_{k<P_0}|A_k|\).
+For a cap index \(j=\min(v_2(k+1),5)\), the normalized
+weights depend only on \(k\bmod 2^{11+j}\), and the
+condition on \(v_2(k+1)\) is periodic with this modulus.
+Enumerate each allowed class once and give it multiplicity
+\(2^{5-j}\) in the full period. The cyclic support update
+adds the translate by each successive weight to the current
+bit set, starting from the empty sum. The resulting
+\(\lfloor\log_2 P_2\rfloor=960483\) is obtained by taking
+the bit length of the exact product and subtracting one.
+In (404.6), \(d_2=\log_2 P_2/(16\cdot 2^{16})>0.91598\).
+The test uses the same exact bit set update as the
+five-adic local checker. From the repository root run
+
+~~~sh
+python3 research/factorial/verify_erdos404_dyadic_dimension.py
+~~~
+
+For \(p=41\), take \(L=p^8\), \(D_k=D=J_p(L-p)\), and
+\(M\ge D\). In \([b_k,b_k+L-p]\) no interior boundary
+has a carry of size eight. At each size-\(r\) carry,
+\(1\le r\le7\), the width \(p\) or \(2p\) used in the
+[prime-41 covering proof](#prime-41-and-equal-low-residues)
+fits entirely on or after the first index \(b_k\):
+the first possible relative boundary of size \(r\)
+is \(p^r\). With zero initial precision at \(b_k\),
+the block induction proves that sums from this block
+cover modulo \(p^{J_p(b_k+L-p)-J_p(b_k)}=p^D\).
+The equality follows from the relative index valuation
+identity below \(p^8\). Also \(D<J_p(L)\), so
+our required next-block divisibility holds for the
+nearby \(t\) as well. Thus all the alphabets have size
+\(p^D\). Since \((p-1)D=p^8-8p+7\), the dimension formula
+gives \(d_{41}=1-321/41^8\).
