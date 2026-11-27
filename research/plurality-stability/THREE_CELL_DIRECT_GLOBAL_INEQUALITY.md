@@ -773,8 +773,176 @@ The checker also performs exact rational controls of the Gram identity,
 both one-sided bounds, the coincident-triple case and a rejected
 nonclosing triple. These finite controls are supplementary to the
 unrestricted algebraic proof of Proposition DG6. The all-profile
-dominance of the right side of (DG29) remains open; Corollary DG7 does
-not extend the unrestricted cutoff in Proposition DG4.
+claim that the right side of (DG29) is always nonpositive is false.
+At \(\rho=3/5\), the same checker and the same mean-zero function give
+
+\[
+       N-2D-\frac{D_B-N_B}{4j_1}>0.0038.
+\]
+
+The enclosure is
+\([0.0038888594281296417,0.0043384122595988344]\).
+Consequently the upper bound in (DG29) is positive for small nonzero
+profiles (DG30) at that correlation. This does not establish the sign of
+any actual stability deficit: (DG29) remains a valid upper bound.
+It shows that its particular elementary penalty is not sufficient for
+the full goal. Corollary DG7 does not extend the unrestricted cutoff in
+Proposition DG4.
+
+There is a concrete algebraic refinement to pursue. On
+\(H=\mathbf1^\perp\), let \(X\) be positive definite and extend it
+and \(X^{-1}\) by zero on \(\mathbf1\). Put
+\(\lambda_i(X)=2X_{ii}+X_{jk}\) for distinct \(i,j,k\).
+If all \(\lambda_i(X)\) and \(\lambda_i(X^{-1})\) are nonnegative,
+the same length constraints give the additional bound
+
+\[
+ \Delta\geq\sum_i a_i b_i
+       -\tfrac12[\operatorname{tr}_H(XG(a))
+                         +\operatorname{tr}_H(X^{-1}G(b))].
+ \tag{DG32}
+\]
+
+Here \(G(u)\) denotes the actual Gram matrix \((u_i\cdot u_j)\).
+Matrix Cauchy--Schwarz gives
+\(\sum_i u_i\cdot v_i\leq
+\tfrac12[\operatorname{tr}(XG(u))+\operatorname{tr}(X^{-1}G(v))]\).
+For a closing triple,
+\(\operatorname{tr}(XG(u))=\sum_i\lambda_i(X)|u_i|^2\);
+the nonnegative coefficients allow replacement by \(a_i^2\), and
+similarly for \(v\). Taking a maximum with zero and with (DG26) is
+therefore valid. The following refinement makes a profile-dependent
+choice explicit, handles possible negative coefficients, and computes
+its exact local strength. A uniform radial comparison is still absent.
+
+### Proposition DG8 (sharp first-moment penalty near balanced profiles)
+
+For interior profiles, put \(A=G(a)|_H\), \(B=G(b)|_H\),
+\(h=\sqrt{\det_H A\det_H B}\), and
+
+\[
+ F=\sqrt{\operatorname{tr}_H(AB)+2h},\qquad
+ X=\frac{B+hA^{-1}}{F}.
+ \tag{DG33}
+\]
+
+These matrices are positive definite on \(H\). Extend \(X,X^{-1}\)
+by zero on \(\mathbf1\), and use the coefficients from (DG32).
+Writing \(c_+=\max(c,0)\), define
+
+\[
+ \Gamma_\sharp(p,q)=\max\!\left\{\Gamma(p,q),\,
+ \sum_i a_i b_i-\frac12\sum_i
+  [\lambda_i(X)_+a_i^2+\lambda_i(X^{-1})_+b_i^2]\right\}.
+ \tag{DG34}
+\]
+
+Set \(\Gamma_\sharp=0\) on the boundary. This is a nonnegative,
+globally valid first-moment deficit bound, so (DG29) remains valid when
+\(\Gamma\) is replaced by \(\Gamma_\sharp\). At the balanced profile,
+uniformly for bounded zero-sum \(x,y\),
+
+\[
+ \Gamma_\sharp(\mathbf1/3+\epsilon x,
+                    \mathbf1/3+\epsilon y)
+       =\frac{\epsilon^2}{8}\|x-y\|^2+O(\epsilon^3).
+ \tag{DG35}
+\]
+
+This coefficient is optimal if the only constraints used on the first
+moments are closure and their individual norm bounds. In fact, for all
+\(p,q\) in a sufficiently small fixed neighborhood of \(\mathbf1/3\),
+the exact minimum deficit under those constraints is
+\(\sum_i a_i b_i-F\).
+
+The fixed-Gram step is the two-matrix orthogonal Procrustes problem.
+[Ten Berge (1977)](https://three-mode.leidenuniv.nl/pdf/t/tenberge1977pmet.pdf),
+Theorem 2, printed p. 269, was inspected: the matrices are real and the
+rotation ranges over all orthogonal matrices; the optimum makes the
+cross product symmetric positive semidefinite. That result does not
+supply the individual norm inequalities needed here. The calculation
+and the additional sign issue are proved explicitly below; no novelty
+is claimed for the matrix optimization.
+
+For positive \(2\times2\) matrices, Cayley--Hamilton gives
+\(XAX=B\) and
+\(\operatorname{tr}(XA)=\operatorname{tr}(X^{-1}B)=F\).
+For example, apply Cayley--Hamilton to
+\(A^{1/2}BA^{1/2}\); its positive square root is
+\((A^{1/2}BA^{1/2}+hI)/F\). Matrix Cauchy as in (DG32) still
+applies when some length coefficients are negative. In that case use
+\(\lambda_i(X)|u_i|^2\leq\lambda_i(X)_+a_i^2\), and likewise
+for \(v\). This proves (DG34) without a sign assumption. Taking its
+maximum with the already valid \(\Gamma\) preserves the inequality.
+The bound is measurable, and it is bounded by the same actual deficit
+as \(\Gamma\), so the integrability argument for (DG29) still applies.
+
+At \(p=q=\mathbf1/3\), \(X=I_H\) and all six length coefficients
+are one. By continuity they remain strictly positive near this pair.
+In that neighborhood (DG34)'s second entry is \(\sum_i a_i b_i-F\).
+Choose closing two-dimensional vector triples with Gram matrices
+\(G(a),G(b)\), which exist because these are Gram matrices of the
+three arc moments. A singular value decomposition of the cross matrix
+shows that an orthogonal transformation of the second triple attains
+pairing \(F\): the maximum is the sum of its two singular values,
+and the square of this sum is \(\operatorname{tr}(AB)+2h\). Hence the
+norm-and-closure relaxation attains the bound, proving its stated
+optimality. This also shows that this entry is at least \(\Gamma\)
+in that neighborhood. The optimizing moment triples themselves are
+realizable by consecutive arc partitions, after a rotation or reversal
+of one circle; the remainder kernel need not attain its rearrangement
+envelope at this relative orientation.
+
+Here are details of the local expansion. Write
+\(a_*=\sqrt3/(2\pi)\), \(s=3a_*^2/2\), and let \(M(x)\)
+be the symmetric matrix with diagonal \(a_*x_i\) and off-diagonal
+entry \(M(x)_{ij}=a_*x_k\), for distinct indices. Then
+\(A=sI_H+\epsilon M(x)|_H+O(\epsilon^2)\),
+\(\operatorname{tr}M(x)=0\), and
+\(\|M(x)-M(y)\|_F^2=3a_*^2\|x-y\|^2\).
+Expanding (DG33), or its two-dimensional square-root formula, gives
+
+\[
+ F=\tfrac12\operatorname{tr}(A+B)
+             -\frac{\|A-B\|_F^2}{8s}+O(\epsilon^3).
+\]
+
+Also
+\(\operatorname{tr}G(a)=3a_*^2-\epsilon^2\|x\|^2/2+O(\epsilon^3)\)
+and
+\(\sum_i a_i b_i=3a_*^2+\epsilon^2[x\cdot y/4
+-3(\|x\|^2+\|y\|^2)/8]+O(\epsilon^3)\).
+Substitution proves (DG35). The expansions are uniform on bounded
+tangent sets because the matrices stay in a compact positive definite
+neighborhood and the coefficient signs stay positive.
+
+For the profile (DG30), replacing \(\Gamma\) by
+\(\Gamma_\sharp\) therefore replaces (DG31)'s coefficient by
+
+\[
+             N-2D-\frac{D_B-N_B}{2j_1}.
+ \tag{DG36}
+\]
+
+At \(\rho=3/5\), its directed enclosure is
+\([-0.0019184952902936525,-0.001468942458824461]\).
+Consequently every partition with (DG30)'s circular mass profile
+strictly loses to the simplex for sufficiently small nonzero
+\(\epsilon\) at that correlation, with arbitrary angular shapes.
+The same uniform Taylor argument as in DG7 proves this assertion.
+
+Even this sharper separated-first-moment criterion is not sufficient
+at every correlation. At \(\rho=7/10\), (DG36) lies in
+\([0.012105848280513554,0.012685028889351772]\).
+Thus the right side of (DG29), using \(\Gamma_\sharp\), is positive
+for the same balanced profiles and sufficiently small nonzero
+\(\epsilon\). Since its first-moment penalty is exact in that
+neighborhood, improving a bound that uses only those norm and closure
+constraints cannot fix this coefficient. The remainder rearrangement
+envelope or additional angular information must also be strengthened.
+This is a limitation of the specified upper-bound criterion, not a
+counterexample to the original inequality. The unrestricted cutoff
+remains \(21/50\).
 
 Run both the directed witness and the exact rational controls from the
 repository root with the existing environment:
@@ -798,7 +966,12 @@ Proposition DG5 rules out extending the particular scalar operator
 estimate in (DG17) through \(\rho=1/2\), even with optimal additive
 centering. Proposition DG6 supplies an explicit nonlinear correction
 retaining moment closure, and Corollary DG7 shows it handles that
-obstructing profile. A bound uniform over all profiles is still needed.
+obstructing profile. Its elementary version is itself insufficient at
+\(\rho=3/5\). Proposition DG8 obtains the optimal first-moment
+coefficient near balanced profiles, repairs that particular profile at
+\(\rho=3/5\), and proves that even this sharpened separated criterion
+fails at \(\rho=7/10\). A uniform proof therefore needs a sharper
+angular remainder envelope, additional modes or a different mechanism.
 Proposition DG3 rules out proving the stronger mass-only inequality after
 the angular Cauchy step throughout \((0,1)\). It does not rule out
 stronger coupled angular estimates, a different direct proof, or the

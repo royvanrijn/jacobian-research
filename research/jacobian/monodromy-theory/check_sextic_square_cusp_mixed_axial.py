@@ -119,6 +119,51 @@ def check_both_zero_projective_index():
     assert rem(cubic.subs({sigma:r, theta:1}), quadratic.subs({sigma:r, theta:1}), r) == 64*r-64
 
 
+def check_nonzero_axial_slope_fibres():
+    from sympy import diff
+    x, y, u, theta, rho, sigma, beta, d, a20, a13 = symbols(
+        "x y u theta rho sigma beta d a20 a13"
+    )
+
+    # Substitution uses the lowest x-order of each scalar coefficient.
+    # For a double root and beta != 0 the top of A is its z^2 term.
+    z2 = theta/x**2
+    p2 = x*z2 + y**2
+    b2 = sigma*(p2**2-y**4) + beta*z2
+    a2 = a20*z2**2
+    det = expand(Matrix([a2, b2]).jacobian((x, y)).det())
+    assert det == -16*a20*sigma*theta**3*y/x**6
+    a2 = p2**3 + d*x*z2**2
+    assert expand(x**3*a2.subs(y, u/x**Rational(1, 2))
+                  - ((theta+u**2)**3 + d*theta**2)) == 0
+    assert expand(x**2*b2.subs({y:u/x**Rational(1, 2), beta:0})
+                  - sigma*(theta**2+2*theta*u**2)) == 0
+
+    # For a triple root the pure y^3 term of A_1 can also tie.
+    z3 = (theta-rho*(x*y)**2)/x**3
+    p3 = x*z3 + y**2
+    a3 = p3**3 + a20*z3**2 + a13*y**3*z3
+    b3 = sigma*(p3**2-y**4)
+    expected_a = (
+        (theta+(1-rho)*u**2)**3
+        + a20*(theta-rho*u**2)**2 + a13*u**3*(theta-rho*u**2)
+    )
+    expected_b = sigma*(theta-rho*u**2)*(theta+(2-rho)*u**2)
+    assert expand(x**6*a3.subs(y, u/x) - expected_a) == 0
+    assert expand(x**4*b3.subs(y, u/x) - expected_b) == 0
+
+    first, second = Function("U")(u), Function("V")(u)
+    for exponent, denominator, slope in ((3, 2, Rational(1, 2)), (6, 4, 1)):
+        pair = Matrix([first/x**exponent, second/x**denominator])
+        pair = pair.subs(u, x**slope*y)
+        bracket = pair.jacobian((x, y)).det()
+        expected = (
+            denominator*diff(first, u)*second - exponent*first*diff(second, u)
+        ).subs(u, x**slope*y)
+        expected *= x**(slope-1-exponent-denominator)
+        assert expand(bracket - expected) == 0
+
+
 if __name__ == "__main__":
     check_first_axial_weight()
     check_fractional_coefficient()
@@ -127,4 +172,5 @@ if __name__ == "__main__":
     check_generic_fibre()
     check_zero_k_axial_binomial()
     check_both_zero_projective_index()
+    check_nonzero_axial_slope_fibres()
     print("Checked axial supports, binomial expansion, fibre brackets, and projective field ratios.")

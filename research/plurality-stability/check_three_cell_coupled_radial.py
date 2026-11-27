@@ -2,7 +2,7 @@
 
 The full-rho simplex inequality is not asserted. Run with the existing
 Python environment containing python-flint; all retained interval inputs
-are fixed below. The analytic proofs are DG5--DG7 in the direct note.
+are fixed below. The analytic proofs are DG5--DG8 in the direct note.
 """
 from fractions import Fraction
 import json
@@ -27,9 +27,12 @@ def first_mode(prod,rho,d,j1):
                       -3*rho/(delta*delta))
 
 
-def certificate(panels=8192,precision=100):
+def certificate(panels=8192,precision=100,rho_value=Fraction(1,2)):
     ctx.prec=precision
-    rho=arb(1)/2;d=1-rho*rho;pi=arb.pi()
+    assert rho_value in (Fraction(1,2),Fraction(3,5),Fraction(7,10))
+    rho=arb(rho_value.numerator)/rho_value.denominator
+    d_exact=1-rho_value*rho_value
+    d=arb(d_exact.numerator)/d_exact.denominator;pi=arb.pi()
     j1=(9-pi*arb(3).sqrt())/(4*pi*pi)
     exponents=(0,1,16)
     coefficients=(Fraction(-21,34),Fraction(1),Fraction(2))
@@ -40,8 +43,8 @@ def certificate(panels=8192,precision=100):
         for b,z in zip(exponents,coeff):
             # Products are rational here; identify equal ones without using
             # an approximate floating-point key.
-            kn=(Fraction(1)+Fraction(3*a,4))*(Fraction(1)+Fraction(3*b,4))
-            kd=Fraction(1)+Fraction(3*(a+b),4)
+            kn=(Fraction(1)+a*d_exact)*(Fraction(1)+b*d_exact)
+            kd=Fraction(1)+(a+b)*d_exact
             nterms[kn]=nterms.get(kn,arb(0))+c*z
             dterms[kd]=dterms.get(kd,arb(0))+c*z
     ndata=[(arb(p.numerator)/p.denominator,c) for p,c in nterms.items()]
@@ -63,9 +66,18 @@ def certificate(panels=8192,precision=100):
     residual=nvalue-2*dvalue
     correction=(db-nb)/(4*j1)
     corrected=residual-correction
+    sharp_corrected=residual-2*correction
     assert dvalue>0 and residual>0,(str(nvalue),str(dvalue),str(residual))
-    assert correction>0 and corrected<0,(str(correction),str(corrected))
-    return {'status':'pass','rho':'1/2','exponents':list(exponents),
+    assert correction>0
+    if rho_value==Fraction(1,2):
+        assert corrected<0,str(corrected)
+    else:
+        assert corrected>0,str(corrected)
+    if rho_value in (Fraction(1,2),Fraction(3,5)):
+        assert sharp_corrected<0,str(sharp_corrected)
+    else:
+        assert sharp_corrected>0,str(sharp_corrected)
+    return {'status':'pass','rho':str(rho_value),'exponents':list(exponents),
             'coefficients':[str(c) for c in coefficients],
             'exact_mean':'0','panels':panels,'arb_precision_bits':precision,
             'angular_rule':'interval Riemann enclosures over every subinterval of [0,2/3]',
@@ -74,8 +86,9 @@ def certificate(panels=8192,precision=100):
             'rayleigh_quotient_enclosure':enclose(nvalue/dvalue),
             'closure_correction_enclosure':enclose(correction),
             'corrected_quadratic_coefficient':enclose(corrected),
+            'sharp_first_moment_coefficient':enclose(sharp_corrected),
             'exact_gram_controls':gram_controls(),
-            'scope':'Scalar radial inequality fails at rho=1/2. The explicit angular-closure correction makes this one profile coefficient negative. Finite Gram controls support the written algebraic lemma; they are not its unrestricted proof. No full-rho Gaussian partition theorem is asserted.'}
+            'scope':'The scalar radial bound fails at this selected correlation. The elementary correction repairs the profile at 1/2; the sharp local first-moment correction repairs it also at 3/5 but fails at 7/10. Positive upper-bound coefficients do not prove improving Gaussian partitions. Finite Gram controls support the written algebraic lemma, not an unrestricted proof by sampling.'}
 
 
 def dot(x,y):
@@ -122,4 +135,7 @@ def gram_controls():
 
 
 if __name__=='__main__':
-    print(json.dumps(certificate(),indent=2))
+    result=certificate()
+    result['three_fifths_limit_test']=certificate(rho_value=Fraction(3,5))
+    result['seven_tenths_limit_test']=certificate(rho_value=Fraction(7,10))
+    print(json.dumps(result,indent=2))

@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "d21d0da20f41d9e0c7b9f7ef5d876fd031aeec060d20cfb497df7d6c97e50209",
-  "proof_source_sha256": "959595fe6b4cd0c279de24eaf07df4d1bf1982e4534a665d6d7c6f1ae8a6ec4e",
+  "checker_sha256": "94fe8d277882f460a484a9cd65f6340c36420d18800965336cf09f13bb5d5f3f",
+  "proof_source_sha256": "10ea471c2b96668861e9edef97e7583e26c332274413bf7b0fe430e9f012b6d8",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -186,6 +186,79 @@
       "four_cell_sign_domination_control": "passed",
       "outside_chamber_and_wrong_reflection_coefficient_controls": "passed",
       "scope": "Exact finite exterior/symmetric transport, Gram and ordered-residual exponent identities, selected strictly positive folded matrices for 3<=k<=7, and one exact four-cell sign domination control. Exponentials are exact powers of two after factoring a common positive term. These controls do not certify all x,y,k,rho; the universal pairing, supersolution and spectral arguments S54-S61 remain written mathematics."
+    },
+    "sign_vandermonde": {
+      "cases": [
+        {
+          "q_untied": 1,
+          "k": 3,
+          "vandermonde_degree": 0,
+          "rho": "1/2",
+          "variance": "3/4",
+          "gaussian_vandermonde_expectation": "1",
+          "sign_schur_factor": "2",
+          "strict_explicit_gap_factor": null,
+          "exponential_minor_comparison": "passed"
+        },
+        {
+          "q_untied": 2,
+          "k": 4,
+          "vandermonde_degree": 1,
+          "rho": "1/2",
+          "variance": "3/4",
+          "gaussian_vandermonde_expectation": "1/2",
+          "sign_schur_factor": "1",
+          "strict_explicit_gap_factor": null,
+          "exponential_minor_comparison": "passed"
+        },
+        {
+          "q_untied": 3,
+          "k": 5,
+          "vandermonde_degree": 3,
+          "rho": "1/2",
+          "variance": "3/4",
+          "gaussian_vandermonde_expectation": "1/4",
+          "sign_schur_factor": "1/4",
+          "strict_explicit_gap_factor": "3/4",
+          "exponential_minor_comparison": "passed"
+        },
+        {
+          "q_untied": 4,
+          "k": 6,
+          "vandermonde_degree": 6,
+          "rho": "1/2",
+          "variance": "3/4",
+          "gaussian_vandermonde_expectation": "3/16",
+          "sign_schur_factor": "1/32",
+          "strict_explicit_gap_factor": "31/32",
+          "exponential_minor_comparison": "passed"
+        },
+        {
+          "q_untied": 5,
+          "k": 7,
+          "vandermonde_degree": 10,
+          "rho": "1/2",
+          "variance": "3/4",
+          "gaussian_vandermonde_expectation": "9/32",
+          "sign_schur_factor": "1/512",
+          "strict_explicit_gap_factor": "511/512",
+          "exponential_minor_comparison": "passed"
+        },
+        {
+          "q_untied": 6,
+          "k": 8,
+          "vandermonde_degree": 15,
+          "rho": "1/2",
+          "variance": "3/4",
+          "gaussian_vandermonde_expectation": "135/128",
+          "sign_schur_factor": "1/16384",
+          "strict_explicit_gap_factor": "16383/16384",
+          "exponential_minor_comparison": "passed"
+        }
+      ],
+      "positive_entries_without_total_positivity_control": "passed",
+      "wrong_rho_degree_and_k3_k4_scope_controls": "passed",
+      "scope": "Exact selected Gaussian Vandermonde moments and exponential-matrix minor comparisons for 1<=q<=6, and rejection of insufficient hypotheses or the wrong rho exponent. This does not certify the imported Hermitian transition theorem, the universal Schur-complement argument, the Gaussian facet lift or the all-parameter spectral estimate."
     },
     "interval_gap": {
       "interval": [

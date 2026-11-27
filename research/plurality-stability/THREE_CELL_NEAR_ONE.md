@@ -6,9 +6,9 @@ dimension reduction. Their rescaled position-and-direction measures also
 converge to the simplex interface measures. The corresponding score
 prices are smaller than the noise length. At the noise length, every
 three-label minimizing limit is a Euclidean tripod. Actual maximizers
-have a unique triple score tie on bounded sets near the limiting
-junction. Uniform comparison of shrinking deformations is still needed
-for exact near-one optimality.
+have a unique triple score tie and uniformly aligned interface graphs
+on bounded physical sets. The open-ray graph comparison and relative
+exterior estimate give additional control of shrinking deformations.
 
 ## Compactness and the sharp perimeter lower bound
 
@@ -632,6 +632,46 @@ around $x_j$ for large $j$, with $c>0$ by the class-distance
 consequence of density at that scale. Rescaling further at
 $e_j$ yields the two-phase halfplane classification.
 
+## A bounded physical defect cannot maximize
+
+For every fixed $R<\infty$, if $\rho$ is sufficiently close to one,
+a balanced planar global maximizer that agrees with a labeled
+central simplex off $B_R$ is that simplex almost everywhere.
+
+Suppose otherwise along a sequence $\rho_j\uparrow1$. Use the
+exterior simplex as reference. The compactness conclusion from
+(P3) aligns the maximizers to this same reference in the limit:
+any limit simplex agrees with it off $B_R$, which fixes the
+labeled sectors. On each open exterior ray the incident adjusted
+scores agree. The unadjusted score difference is real analytic
+on the supporting line, so it equals its pair price difference
+on the entire line. At points tending to infinity along the
+ray, the unadjusted difference tends to zero. The central
+simplex scores tie identically there by reflection, and the
+conditional probability of hitting the bounded defect tends
+to zero for each fixed $\rho_j>0$. Thus all pair prices are equal
+and the three unadjusted differences vanish on their supporting
+lines. This use of line analyticity is the same mechanism as
+in the flat-interface argument of Heilman–Mossel–Neeman.
+[Corollary 5.1](https://www.stevenheilman.org/~heilman/papers/PluralityV5.pdf)
+
+There is therefore a triple tie at the origin, which is the
+only one in any fixed larger disk by the preceding section.
+On each positive simplex ray the incident labels are tied
+everywhere and win near the outer endpoint, where the partition
+agrees with the exterior simplex. On the open ray their common
+score cannot cross the third score without another triple tie.
+They therefore win along the entire ray in the disk.
+By the bounded graph result below, each pair interface is
+a unique normal graph on bounded outgoing ray segments.
+Since each reference ray already consists of winning pair ties
+from the same vertex, those graphs coincide with the reference
+rays. All other points of the disk have the reference labels
+by continuity and the exterior assignment. This is a
+contradiction. The comparison excludes bounded defect support
+for actual global maximizers, including supports much larger
+than a fixed number of noise lengths.
+
 ## Tangent alignment across bounded physical regions
 
 Along any sequence of aligned planar balanced maximizers as $\rho_j\uparrow1$,
@@ -1079,8 +1119,9 @@ The supports may cover arbitrarily many noise lengths.
 First compare a binary graph $y=g(s)$ with the full flat line.
 Write $\sigma=\sqrt{1-\rho^2}$ and let $C_\rho(u,v)$ be the
 disagreement probability for two correlated normal coordinates
-thresholded at $u,v$, respectively. If $p_\rho(a,b)$ is their
-joint density and $D_\rho(u)=C_\rho(u,u)-C_\rho(0,0)$, then
+thresholded at $u,v$, respectively. Write $\phi,\Phi$ for the scalar
+Gaussian density and distribution function, $p_\rho(a,b)$ for the
+joint density and $D_\rho(u)=C_\rho(u,u)-C_\rho(0,0)$. Then
 
 \[
  C_\rho(u,v)-C_\rho(0,0)=
@@ -1278,7 +1319,8 @@ to pair variables gives uniformly finite Gaussian moments.
 By stationarity of $A$ the volume repair changes disagreement
 by at most $C(|\beta|m_R+m_R^2)$ in absolute value.
 
-By (B1) the disagreement change from truncation alone is
+By the [exact deficit expansion (B1)](POSITIVE_CORRELATION_CONTINUATION.md)
+the disagreement change from truncation alone is
 $-2L_R+Q_R+2\langle h_0-h_R,T_\rho h_R\rangle$.
 Global optimality makes the sum of this change and the repair
 cost nonnegative. By (P14) and Cauchy–Schwarz for the positive
@@ -1294,10 +1336,10 @@ Ordinary Gaussian perimeter convergence suppresses the
 $e^2$ corrections that this test resolves. The gap in the
 [spectral theorem](SIMPLEX_INTERFACE_SYMMETRY.md) is of order $e$, and
 the fixed-correlation measurable comparison has a neighborhood depending
-on $\rho$. The Euclidean classification and (P9) settle fixed
-noise-length limits and perturbations supported on any fixed
-number of noise lengths. The remaining near-one problem is to
-compare the original Gaussian maximizers with the simplex for
-perturbations across increasing ranges of noise-scale radii.
+on $\rho$. A uniform comparison still has to couple the moving
+junction to the open-ray deformations, including those for which the
+vertex displacement is large compared to $e$. Extending the
+bounded-physical-region graph control to the radii needed by (P11)
+and combining it with (P15) are further obligations.
 
 The arguments are written analytic proofs with internal review.

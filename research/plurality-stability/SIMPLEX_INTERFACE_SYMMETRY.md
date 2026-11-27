@@ -15,8 +15,9 @@ sign and standard kernels also have exact positive determinant and
 permanent formulas on an ordered chamber. In the rotation hook, positivity
 in chamber-gap coordinates and a left/right ground-state argument prove
 the rotational-only kernel and a positive gap at every correlation for
-every $k$. A strict supersolution also settles the $(k-2,2)$ sector for
-all $k\ge4$ and the four-cell sign sector. The four-cell problem reduces
+every $k$. Strict supersolutions also settle the $(k-2,2)$ and sign
+sectors for all $k\ge4$, with the explicit sign bound (S62) for $k\ge5$.
+The four-cell problem reduces
 to one scalar standard-sector inequality. These results do not supply
 the missing full active-space gap
 for $k\ge4$ at arbitrary correlation. The remaining higher-cell blocks and
@@ -268,8 +269,9 @@ In particular, for $0<\rho\le b<1$ and sign speeds,
 \]
 
 For four cells the interaction starts at normalized order $\rho^2$;
-for five cells at order $\rho^5$. No arbitrary-correlation sign conclusion
-follows from this suppression alone.
+for five cells at order $\rho^5$. The all-correlation sign gap is proved
+in (S62)--(S66), using additional total-positivity and Gaussian-matrix
+arguments; suppression alone would not prove it.
 
 ## Three cells: a full positive-correlation sign-sector theorem
 
@@ -1011,7 +1013,7 @@ pointwise positivity, are what prove (S37).
 For $k\ge4$, (S46) supplies positivity in the sign chamber, but rotations
 belong to the hook representation, not the sign representation. There
 is no rotational sign ground state to substitute into (S18). The exact
-remaining sign-sector assertion is
+sign-sector assertion is
 
 \[
  \left\|a_\rho^{-1/2}\mathcal K_\rho
@@ -1021,12 +1023,12 @@ remaining sign-sector assertion is
 
 The operator is compact, self-adjoint and nonnegative as a quadratic
 form, by restriction of the Mehler form. A positive kernel alone gives
-neither this norm bound nor comparison with $a_\rho$. The four-cell
-case is proved below by (S61); it remains open here for $k\ge5$. A positive
+neither this norm bound nor comparison with $a_\rho$. It is proved below
+by (S61) for four cells and (S62)--(S66) for every higher cell count. A positive
 supersolution $w$ satisfying
 $\mathcal K_\rho w\le\theta_\rho a_\rho w$ with
-$\theta_\rho<1$ would suffice by the weighted Schur bound; no such
-all-correlation supersolution is established here for $k\ge5$.
+$\theta_\rho<1$ suffices by the weighted Schur bound. The polynomial
+supersolution in (S66) gives $\theta_\rho=\rho^{e_k-1}<1$ for $k\ge5$.
 
 In particular (S46) cannot simply inherit the ordinary Weyl-chamber OU
 spectrum. In the coordinates $a=(x_2,x_3,\ldots,x_k)$, the facet metric
@@ -1040,10 +1042,10 @@ semigroup in the facet metric. For $k=3$ the facet is one dimensional
 and the separate pointwise comparisons (S32) supply the needed bridge.
 
 The all-$k$ dimensional part of (S37) is settled by (S42). Its active
-balanced gap for $k\ge4$, including (S48) and the standard and nonhook
+balanced gap for $k\ge4$, in the standard and remaining nonhook
 blocks in (S4), is still an open mathematical obligation. The rotation
-hook, two-row moment block and four-cell sign block are settled by
-(S56), (S60) and (S61) below. Neither a global simplex
+hook, two-row moment block and sign block are settled by
+(S56), (S60) and (S62)--(S66) below. Neither a global simplex
 inequality nor exclusion of tied maximizers follows from these
 reductions.
 
@@ -1331,8 +1333,8 @@ $\Lambda^2E$ copy in the full isotypic space, namely geometric
 rotations. This proves the hook theorem. The constant is a proved
 positive spectral constant, not an evaluated explicit function of
 $k,\rho$. The argument is a matrix version of the positive
-ground-state mechanism behind (S18). The two-row block and four-cell
-sign block are treated next; the standard and remaining higher-cell
+ground-state mechanism behind (S18). The two-row and sign blocks are
+treated next; the standard and remaining higher-cell
 nonhook bounds require further arguments.
 
 ## Every cell count: a strict supersolution for the two-row moment sector
@@ -1487,14 +1489,184 @@ After normalization by $a_\rho^{-1/2}$ it is a positive strict left
 supersolution as well, since this scalar kernel is symmetric.
 The same eigenvalue argument proves (S48) for $k=4$: its sign sector
 has no zero modes and has a strictly positive $L^2$ gap for every
-$0<\rho<1$. No claim about sign sectors for $k\ge5$ follows from
-this four-cell domination.
+$0<\rho<1$. The higher-cell sign sectors require the separate
+Gaussian-matrix comparison (S62)--(S66).
 
 Combining (S56), (S60) and (S61), the **entire four-cell active-space
 interface assertion is equivalent to the single standard-sector
 inequality (S51)**. A proof of that inequality, with a positive gap,
 would give the full four-cell analogue of (S37) in every ambient
 dimension by (S42). That scalar inequality is not proved here.
+
+## Every cell count: a Vandermonde supersolution settles the sign sector
+
+**All-cell sign theorem.** For every $k\ge4$ and every $0<\rho<1$,
+the entire active sign sector has a strictly positive $L^2$ gap and
+no kernel. For $k\ge5$ the following bound is explicit. Set
+$q=k-2$ and $e_k=q(q-1)/2$. Then
+
+\[
+ \mathfrak q_\rho(f)\ge\frac{\ell}{\sigma}
+                  (1-\rho^{e_k-1})\|f\|^2
+       \qquad(k\ge5,\ f\text{ in the sign sector}).
+ \tag{S62}
+\]
+
+For $k=4$ the positive spectral gap from (S61) applies. The proof below
+also supplies a strict supersolution in that case. Three-cell sign
+speeds instead have their geometric rotation kernel, as in (S18).
+
+### A totally positive minor comparison
+
+If $A$ is a strictly totally positive $p\times p$ matrix, $p\ge2$,
+and $D=A_{2:p,2:p}$, then
+
+\[
+                   0<\det A<A_{11}\det D.
+ \tag{S63}
+\]
+
+Here is an elementary proof, including the needed hypothesis. Eliminate
+the last row and column, using its positive diagonal entry as pivot.
+Every minor of the resulting Schur complement is a bordered minor of
+$A$ divided by that pivot, so the complement is strictly totally
+positive. Its top-left entry is strictly smaller than $A_{11}$.
+The ratio $\det A/\det D$ is unchanged by this elimination. Repeat
+until the ratio is a scalar pivot; this proves (S63). Positive entries
+alone would not suffice for this inequality.
+
+Apply (S63) to $A=[e^{\tau x_i y_j}]_{i,j=2}^k$. Every one of its
+minors is positive by the exponential argument used in (S47).
+Writing
+$D=[e^{\tau x_i y_j}]_{i,j=3}^k$, define the folded self-facet kernel
+
+\[
+ S_\rho(x,y)=\Gamma_\rho(x,y)e^{2\tau x_2y_2}\det D.
+ \qquad
+        0<\mathcal K_\rho(x,y)<2S_\rho(x,y)
+                    \quad(x,y\in W).
+ \tag{S64}
+\]
+
+This $S_\rho$ is precisely the alternating fold, in labels $3,\ldots,k$,
+of the single same-facet Mehler kernel. No adjacent-facet terms or
+factorials are included in it.
+
+### The Gaussian matrix comparison
+
+Put $w(x)=\Delta(x_3,\ldots,x_k)
+=\prod_{3\le i<j\le k}(x_i-x_j)>0$ on $W$, and let
+$R_{\rm self}(x)=\int_{F_{12}}M_\rho(x,y)d\nu_{12}(y)$.
+We will prove
+
+\[
+ \int_W S_\rho(x,y)w(y)d\nu_{12}(y)
+             \le\rho^{e_k}w(x)R_{\rm self}(x).
+ \tag{S65}
+\]
+
+First, the restricted Mehler measure equals $\phi(0)/\sigma$ times
+the law of a Gaussian on $H$ with mean $\rho x$ and covariance
+$\sigma^2I_H$. For functions invariant under common translation of
+all coordinates, that law can be represented by independent variables
+
+\[
+ V\sim N(\rho x_2,\sigma^2/2),\qquad
+ Z_l\sim N(\rho x_l,\sigma^2),\quad 3\le l\le k.
+\]
+
+Indeed subtract $(2V+\sum_lZ_l)/k$ from all $k$ coordinates of
+$(V,V,Z_3,\ldots,Z_k)$. The resulting vector has the stated Gaussian
+law on $H$. Both the event $V\ge\max_lZ_l$ and the Vandermonde of
+the $Z_l$ are invariant under this subtraction. Hence
+
+\[
+ R_{\rm self}=\frac{\phi(0)}\sigma
+                 \mathbb P\{\max_lZ_l\le V\},\qquad
+ \int_WS_\rho w\,d\nu_{12}
+  =\frac{\phi(0)}\sigma
+          \mathbb E\bigl[\Delta(Z)\mathbf1_{\{\max_lZ_l\le V\}}\bigr].
+\]
+
+The second identity follows either by splitting the full facet into
+remaining-coordinate chambers or directly from the determinant fold.
+The Vandermonde is signed on the full facet, so it cannot be bounded
+pointwise by its value at the mean.
+
+The needed imported identity is the Hermitian-matrix realization of
+the Vandermonde transform. For ordered $b=(x_3,\ldots,x_k)$, let
+$G$ be a full $q\times q$ Hermitian Gaussian matrix with independent
+real diagonal entries of variance $1$, and independent real and
+imaginary parts of each upper off-diagonal entry of variance $1/2$.
+Then the ordered eigenvalues of
+$\mathsf H=\rho\operatorname{diag}(b)+\sigma G$ have density
+
+\[
+ \det[\phi_\sigma(y_i-\rho b_j)]_{i,j=1}^q
+                \frac{\Delta(y)}{\rho^{e_k}\Delta(b)}
+       \quad\text{on }y_1>\cdots>y_q.
+\]
+
+This is Grabiner, Theorem 3, combined with the determinant formula (6),
+Section 6.1 and the Vandermonde $h$-transform in Section 6.2,
+printed pp. 179, 186 and 197--200. The Gaussian normalization on
+p. 197, the arbitrary-start $h$-transform on p. 198, and harmonicity
+in Theorem 7 on p. 199 were inspected in the
+[retained primary text](sources/grabiner-weyl-chamber-1999.pdf).
+Apply the Brownian theorem at time $\sigma^2$, starting at the
+ordered vector $\rho b$. Its denominator is
+$\Delta(\rho b)=\rho^{e_k}\Delta(b)$. We use the full Hermitian
+space, including its trace coordinate; replacing it by the traceless
+space would change the diagonal covariance. This is an application
+of the classical matrix theorem, not a new noncollision theorem.
+
+Split the independent Gaussian integral into ordered chambers and
+antisymmetrize. The displayed density gives, for every real $v$,
+
+\[
+ \mathbb E[\Delta(Z)\mathbf1_{\{\max Z_l\le v\}}]
+    =\rho^{e_k}\Delta(b)\,
+                   \mathbb P\{\lambda_{\max}(\mathsf H)\le v\}.
+\]
+
+The diagonal of $\mathsf H$ has exactly the independent law of the
+$Z_l$. For every Hermitian matrix its largest eigenvalue is at least
+each diagonal entry, by the Rayleigh quotient on the coordinate
+vectors. Couple $\mathsf H$ with its own diagonal and with the
+independent $V$ above. Integrating the last display against $V$ proves
+(S65). All expectations are finite Gaussian polynomial moments.
+
+### The spectral bound
+
+The row identity (S49) gives
+$a_\rho=\rho(2R_{\rm self}+\sum_{l=3}^kR_l^{\rm adj})$, where
+every adjacent row integral $R_l^{\rm adj}$ is strictly positive.
+Combining this with (S64)--(S65) gives the pointwise supersolution
+
+\[
+         0<\mathcal K_\rho w
+              <2\rho^{e_k}R_{\rm self}w
+              <\rho^{e_k-1}a_\rho w
+                     \quad\text{on }W.
+ \tag{S66}
+\]
+
+For $k\ge5$, $\theta=\rho^{e_k-1}<1$. The compact symmetric
+normalized sign operator $T=a_\rho^{-1/2}\mathcal K_\rho
+a_\rho^{-1/2}$ has the positive $L^2$ supersolution
+$\psi=\sqrt{a_\rho}w$ with $T\psi\le\theta\psi$.
+For an eigenvector $u$, integrate $|Tu|\le T|u|$ against $\psi$,
+as after (S55), to obtain $|\lambda|\le\theta$.
+Conjugating back and using $a_\rho/\rho\ge\ell/\sigma$ proves (S62).
+For $k=4$, $e_k=1$ and the same argument with the strict inequality
+in (S66) gives $|\lambda|<1$ for every nonzero eigenvalue;
+compactness then supplies a positive gap.
+
+This comparison uses only the ordinary Weyl-chamber motion of the
+untied $q$ coordinates. The duplicated coordinate remains the
+independent scalar threshold $V$ with variance $\sigma^2/2$. It does
+not identify the whole facet operator with an ordinary Weyl-chamber
+OU semigroup, so the metric obstruction noted after (S48) is respected.
 
 ## Monotonicity and the other global obligations
 
@@ -1519,13 +1691,13 @@ $\Delta_\rho/\arccos\rho$ by a balanced three-slab partition.
 
 The remaining targets are distinct:
 
-* Prove the active-space higher-cell gap in (S4). For $k\ge5$ the sign
-  block has the positive determinant kernel (S46), with the remaining
-  norm bound (S48); the standard block has the positive kernel (S49)--(S50)
+* Prove the active-space higher-cell gap in (S4). The standard block
+  has the positive kernel (S49)--(S50)
   and the unresolved weighted Poincare inequality (S51).
   The complete rotation hook has the all-correlation gap (S56).
-  The $(k-2,2)$ block has the strict gap (S60), and the four-cell sign
-  block is settled by (S61). In four cells only (S51) remains.
+  The $(k-2,2)$ block has the strict gap (S60), and every sign block is
+  settled by (S61)--(S66). In four cells only (S51) remains; for
+  $k\ge5$ the other nonhook blocks also need estimates.
   Equation (S42) then handles every ambient dimension.
   Equation (S23) and the full three-cell interface problem are settled
   by (S29)--(S38).
@@ -1563,6 +1735,11 @@ controls; it also checks the symmetric transport, two-row Gram and
 ordered-residual exponent identities, selected positive two-row matrices,
 and one exact four-cell sign domination. The universal pairing,
 supersolution and spectral arguments are written proofs.
+For (S63)--(S66) it checks selected nonsymmetric exponential-matrix
+minor inequalities and exact Gaussian Vandermonde moments for one
+through six untied coordinates, with controls for the wrong correlation
+degree, insufficient positivity hypotheses and the $k=3,4$ exceptional
+scopes. It does not verify the imported Hermitian transition theorem.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

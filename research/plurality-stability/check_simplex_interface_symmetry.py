@@ -321,6 +321,70 @@ def elementary_half_point_and_reflections():
     }
 
 
+def sign_vandermonde_controls():
+    """Bounded exact normalization and minor controls for S63-S66."""
+    def determinant(rows):
+        matrix = [[Q(value) for value in row] for row in rows]
+        value = Q(1)
+        for i in range(len(matrix)):
+            pivot = next((j for j in range(i, len(matrix)) if matrix[j][i]), None)
+            if pivot is None:
+                return Q(0)
+            if pivot != i:
+                matrix[i], matrix[pivot] = matrix[pivot], matrix[i]
+                value = -value
+            p = matrix[i][i]
+            value *= p
+            for j in range(i+1, len(matrix)):
+                factor = matrix[j][i] / p
+                for l in range(i+1, len(matrix)):
+                    matrix[j][l] -= factor * matrix[i][l]
+        return value
+
+    def gaussian_moment(order, mean, variance):
+        return sum(Q(math.factorial(order),
+                     2**r * math.factorial(r) * math.factorial(order-2*r))
+                   * variance**r * mean**(order-2*r)
+                   for r in range(order//2+1))
+
+    rho, variance = Q(1, 2), Q(3, 4)
+    cases = []
+    for q in range(1, 7):
+        degree = q*(q-1)//2
+        b = list(range(q, 0, -1))
+        moments = [[gaussian_moment(q-1-j, rho*value, variance)
+                    for j in range(q)] for value in b]
+        vandermonde = math.prod(b[i]-b[j] for i in range(q) for j in range(i+1, q))
+        expected = rho**degree * vandermonde
+        assert determinant(moments) == expected > 0
+        assert expected != rho**(degree-1) * vandermonde
+        theta = rho**(degree-1)
+        assert (1-theta > 0) == (q >= 3)
+
+        p = q+1
+        a, c = list(range(p, 0, -1)), [j*j for j in range(p, 0, -1)]
+        matrix = [[2**(x*y) for y in c] for x in a]
+        full, tail = determinant(matrix), determinant([row[1:] for row in matrix[1:]])
+        assert 0 < full < matrix[0][0]*tail
+        cases.append({"q_untied": q, "k": q+2, "vandermonde_degree": degree,
+                      "rho": str(rho), "variance": str(variance),
+                      "gaussian_vandermonde_expectation": str(expected),
+                      "sign_schur_factor": str(theta),
+                      "strict_explicit_gap_factor": str(1-theta) if q >= 3 else None,
+                      "exponential_minor_comparison": "passed"})
+
+    # All entries positive is insufficient for the totally positive comparison.
+    bad = [[1, 1, 100], [100, 10, 1], [1, 1, 10]]
+    assert determinant(bad) == 8100
+    assert determinant(bad) > bad[0][0] * determinant([row[1:] for row in bad[1:]])
+    return {
+        "cases": cases,
+        "positive_entries_without_total_positivity_control": "passed",
+        "wrong_rho_degree_and_k3_k4_scope_controls": "passed",
+        "scope": "Exact selected Gaussian Vandermonde moments and exponential-matrix minor comparisons for 1<=q<=6, and rejection of insufficient hypotheses or the wrong rho exponent. This does not certify the imported Hermitian transition theorem, the universal Schur-complement argument, the Gaussian facet lift or the all-parameter spectral estimate.",
+    }
+
+
 def iv(x):
     return (Q(x[0]), Q(x[1])) if isinstance(x, tuple) else (Q(x), Q(x))
 
@@ -547,6 +611,7 @@ def main():
                          "elementary_half_point_and_reflections": elementary_half_point_and_reflections(),
                          "higher_cell_reflections": higher_cell_reflection_checks(),
                          "hook_cone": hook_cone_checks(),
+                         "sign_vandermonde": sign_vandermonde_controls(),
                          "interval_gap": interval_gap_check()},
         "analytic_claims_certified_by_this_script": False,
         "independent_replay": False,

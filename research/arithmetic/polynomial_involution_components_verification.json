@@ -1,0 +1,1573 @@
+{
+  "schema_version": 1,
+  "kind": "two_bundled_involutions_and_simple_branches",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "d6bde612a95ae7107989f5a95f68b6fafe79f0d60b1cefa254add8269708ec6c",
+  "input_sha256": {
+    "POLYNOMIAL_INVOLUTION_COMPONENT_CLASSIFICATION.md": "2691cdfe550e27fab762cf0d6dbb0685085434714c42795663c05b3e71f09021",
+    "POLYNOMIAL_PASSPORT_COMPONENTS.md": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+    "POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+    "verify_polynomial_passport_components.py": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+    "verify_polynomial_lift_transport.py": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
+    "sources/bogatyrev-gendron-pell-abel-2025.pdf": "f1bac7cda93f5f4110e855190274a0aad25deea8d0103cd44ac96e77048ba77c"
+  },
+  "arithmetic_controls": {
+    "factorial_vs_hook_character_domains": 850,
+    "domains_with_identity_heavy_entry": 217,
+    "factorial_count_max_degree": 20,
+    "primitive_partition_domains": 560,
+    "partition_max_simple_count": 14,
+    "partition_max_inner_degree": 40,
+    "divisor_sum_domains": 2415,
+    "divisor_sum_max_degree": 40,
+    "scope": "Exact arithmetic identities in these finite domains; no additional braid orbit assertions."
+  },
+  "exact_component_controls": {
+    "complete_passports": [
+      {
+        "degree": 6,
+        "bundled_indices": [
+          2,
+          2
+        ],
+        "simple_factors": 1,
+        "ordered_character_total": 81,
+        "full_type_placements": 3,
+        "complete_literal_domain": 243,
+        "components": [
+          {
+            "inner_degree": 2,
+            "outer_degree": 3,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 1,
+            "fixed_ordered_original_count": 9,
+            "literal_component_size": 27,
+            "absolute_component_size": 9,
+            "cyclic_stabilizer_order": 2,
+            "group": "S2 wr Delta_3",
+            "group_order": 48,
+            "all_block_count_divisors": [
+              1,
+              3,
+              6
+            ],
+            "literal_seed": [
+              [
+                0,
+                2,
+                1,
+                3,
+                5,
+                4
+              ],
+              [
+                5,
+                1,
+                3,
+                2,
+                4,
+                0
+              ],
+              [
+                3,
+                1,
+                2,
+                0,
+                4,
+                5
+              ]
+            ],
+            "orbit_sha256": "2273f57c61c3ffd8cf39ff39c8aa79ea121eb1c848c853c3ae0109c2bcd31763",
+            "all_literal_labels_checked": 27,
+            "normal_transposition_support_edges": 3,
+            "exact_quotient_group_order": 6,
+            "exact_generated_group_closure": 48,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 6,
+            "outer_degree": 1,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 72,
+            "fixed_ordered_original_count": 72,
+            "literal_component_size": 216,
+            "absolute_component_size": 36,
+            "cyclic_stabilizer_order": 1,
+            "group": "S6 wr Delta_1",
+            "group_order": 720,
+            "all_block_count_divisors": [
+              1,
+              6
+            ],
+            "literal_seed": [
+              [
+                0,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              [
+                0,
+                4,
+                3,
+                2,
+                1,
+                5
+              ],
+              [
+                5,
+                1,
+                2,
+                3,
+                4,
+                0
+              ]
+            ],
+            "orbit_sha256": "6116236e7958f4668a7655d444b71f44dcdb9a405fd66da27c60083d2645ab9d",
+            "all_literal_labels_checked": 216,
+            "normal_transposition_support_edges": 15,
+            "exact_quotient_group_order": 1,
+            "exact_generated_group_closure": 720,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 7,
+        "bundled_indices": [
+          3,
+          2
+        ],
+        "simple_factors": 1,
+        "ordered_character_total": 98,
+        "full_type_placements": 6,
+        "complete_literal_domain": 588,
+        "components": [
+          {
+            "inner_degree": 7,
+            "outer_degree": 1,
+            "primitive_degree_partition": [
+              1,
+              3
+            ],
+            "primitive_ordered_inner_count": 98,
+            "fixed_ordered_original_count": 98,
+            "literal_component_size": 588,
+            "absolute_component_size": 84,
+            "cyclic_stabilizer_order": 1,
+            "group": "S7 wr Delta_1",
+            "group_order": 5040,
+            "all_block_count_divisors": [
+              1,
+              7
+            ],
+            "literal_seed": [
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              [
+                0,
+                5,
+                4,
+                3,
+                2,
+                1,
+                6
+              ],
+              [
+                6,
+                1,
+                2,
+                3,
+                4,
+                5,
+                0
+              ]
+            ],
+            "orbit_sha256": "4fe95b70e4d3888cf2e88e8fbc33f6ab2bea6fe6d2d14a3729c17961a95871ff",
+            "all_literal_labels_checked": 588,
+            "normal_transposition_support_edges": 21,
+            "exact_quotient_group_order": 1,
+            "exact_generated_group_closure": 5040,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 8,
+        "bundled_indices": [
+          3,
+          3
+        ],
+        "simple_factors": 1,
+        "ordered_character_total": 256,
+        "full_type_placements": 3,
+        "complete_literal_domain": 768,
+        "components": [
+          {
+            "inner_degree": 8,
+            "outer_degree": 1,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 256,
+            "fixed_ordered_original_count": 256,
+            "literal_component_size": 768,
+            "absolute_component_size": 96,
+            "cyclic_stabilizer_order": 1,
+            "group": "S8 wr Delta_1",
+            "group_order": 40320,
+            "all_block_count_divisors": [
+              1,
+              8
+            ],
+            "literal_seed": [
+              [
+                0,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              [
+                0,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                7
+              ],
+              [
+                7,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                0
+              ]
+            ],
+            "orbit_sha256": "927e6eb89992d20bb9e8c46ea6f5abb66b61838fca57f4251c8bf79dcac39485",
+            "all_literal_labels_checked": 768,
+            "normal_transposition_support_edges": 28,
+            "exact_quotient_group_order": 1,
+            "exact_generated_group_closure": 40320,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 8,
+        "bundled_indices": [
+          4,
+          2
+        ],
+        "simple_factors": 1,
+        "ordered_character_total": 40,
+        "full_type_placements": 6,
+        "complete_literal_domain": 240,
+        "components": [
+          {
+            "inner_degree": 2,
+            "outer_degree": 4,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 1,
+            "fixed_ordered_original_count": 8,
+            "literal_component_size": 48,
+            "absolute_component_size": 12,
+            "cyclic_stabilizer_order": 2,
+            "group": "S2 wr Delta_4",
+            "group_order": 128,
+            "all_block_count_divisors": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "literal_seed": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                7,
+                6
+              ],
+              [
+                0,
+                3,
+                2,
+                1,
+                4,
+                7,
+                6,
+                5
+              ],
+              [
+                4,
+                1,
+                2,
+                3,
+                0,
+                5,
+                6,
+                7
+              ]
+            ],
+            "orbit_sha256": "8f290062bde58422a00ea9220cbfb822a0b36fefa0b1d0162001b994dcb01e02",
+            "all_literal_labels_checked": 48,
+            "normal_transposition_support_edges": 4,
+            "exact_quotient_group_order": 8,
+            "exact_generated_group_closure": 128,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 4,
+            "outer_degree": 2,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 16,
+            "fixed_ordered_original_count": 32,
+            "literal_component_size": 192,
+            "absolute_component_size": 24,
+            "cyclic_stabilizer_order": 1,
+            "group": "S4 wr Delta_2",
+            "group_order": 1152,
+            "all_block_count_divisors": [
+              1,
+              2,
+              8
+            ],
+            "literal_seed": [
+              [
+                7,
+                4,
+                3,
+                2,
+                1,
+                6,
+                5,
+                0
+              ],
+              [
+                0,
+                3,
+                2,
+                1,
+                6,
+                5,
+                4,
+                7
+              ],
+              [
+                6,
+                1,
+                2,
+                3,
+                4,
+                5,
+                0,
+                7
+              ]
+            ],
+            "orbit_sha256": "ece426b4b27495973e0b0d82930ad1b3181f20de72b1e0e69421e286712fcf98",
+            "all_literal_labels_checked": 192,
+            "normal_transposition_support_edges": 12,
+            "exact_quotient_group_order": 2,
+            "exact_generated_group_closure": 1152,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 9,
+        "bundled_indices": [
+          4,
+          3
+        ],
+        "simple_factors": 1,
+        "ordered_character_total": 270,
+        "full_type_placements": 6,
+        "complete_literal_domain": 1620,
+        "components": [
+          {
+            "inner_degree": 3,
+            "outer_degree": 3,
+            "primitive_degree_partition": [
+              1,
+              3
+            ],
+            "primitive_ordered_inner_count": 3,
+            "fixed_ordered_original_count": 27,
+            "literal_component_size": 162,
+            "absolute_component_size": 18,
+            "cyclic_stabilizer_order": 1,
+            "group": "S3 wr Delta_3",
+            "group_order": 1296,
+            "all_block_count_divisors": [
+              1,
+              3,
+              9
+            ],
+            "literal_seed": [
+              [
+                0,
+                2,
+                1,
+                6,
+                5,
+                4,
+                3,
+                8,
+                7
+              ],
+              [
+                8,
+                1,
+                6,
+                5,
+                4,
+                3,
+                2,
+                7,
+                0
+              ],
+              [
+                6,
+                1,
+                2,
+                3,
+                4,
+                5,
+                0,
+                7,
+                8
+              ]
+            ],
+            "orbit_sha256": "ca92b3df319a7cce8dfb3dd9c73e1ffe7d86f9a50ccb32b869992186430cdaff",
+            "all_literal_labels_checked": 162,
+            "normal_transposition_support_edges": 9,
+            "exact_quotient_group_order": 6,
+            "exact_generated_group_closure": 1296,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 9,
+            "outer_degree": 1,
+            "primitive_degree_partition": [
+              1,
+              3
+            ],
+            "primitive_ordered_inner_count": 243,
+            "fixed_ordered_original_count": 243,
+            "literal_component_size": 1458,
+            "absolute_component_size": 162,
+            "cyclic_stabilizer_order": 1,
+            "group": "S9 wr Delta_1",
+            "group_order": 362880,
+            "all_block_count_divisors": [
+              1,
+              9
+            ],
+            "literal_seed": [
+              [
+                0,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              [
+                0,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                8
+              ],
+              [
+                8,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                0
+              ]
+            ],
+            "orbit_sha256": "cbc4fd6f4777bb3198bcb697498c4a04135b6aa222012a9d10447033a3bb8b62",
+            "all_literal_labels_checked": 1458,
+            "normal_transposition_support_edges": 36,
+            "exact_quotient_group_order": 1,
+            "exact_generated_group_closure": null,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 10,
+        "bundled_indices": [
+          5,
+          2
+        ],
+        "simple_factors": 2,
+        "ordered_character_total": 700,
+        "full_type_placements": 12,
+        "complete_literal_domain": 8400,
+        "components": [
+          {
+            "inner_degree": 5,
+            "outer_degree": 2,
+            "primitive_degree_partition": [
+              1,
+              5
+            ],
+            "primitive_ordered_inner_count": 25,
+            "fixed_ordered_original_count": 200,
+            "literal_component_size": 2400,
+            "absolute_component_size": 240,
+            "cyclic_stabilizer_order": 1,
+            "group": "S5 wr Delta_2",
+            "group_order": 28800,
+            "all_block_count_divisors": [
+              1,
+              2,
+              10
+            ],
+            "literal_seed": [
+              [
+                9,
+                2,
+                1,
+                4,
+                3,
+                6,
+                5,
+                8,
+                7,
+                0
+              ],
+              [
+                0,
+                1,
+                8,
+                3,
+                6,
+                5,
+                4,
+                7,
+                2,
+                9
+              ],
+              [
+                8,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                0,
+                9
+              ],
+              [
+                0,
+                1,
+                6,
+                3,
+                4,
+                5,
+                2,
+                7,
+                8,
+                9
+              ]
+            ],
+            "orbit_sha256": "d390807de45aa687197e63bd3c01fc639ed56fbb6643a0ec3563c63e91e2bbab",
+            "all_literal_labels_checked": 2400,
+            "normal_transposition_support_edges": 20,
+            "exact_quotient_group_order": 2,
+            "exact_generated_group_closure": 28800,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 5,
+            "outer_degree": 2,
+            "primitive_degree_partition": [
+              3,
+              3
+            ],
+            "primitive_ordered_inner_count": 125,
+            "fixed_ordered_original_count": 500,
+            "literal_component_size": 6000,
+            "absolute_component_size": 600,
+            "cyclic_stabilizer_order": 1,
+            "group": "S5 wr Delta_2",
+            "group_order": 28800,
+            "all_block_count_divisors": [
+              1,
+              2,
+              10
+            ],
+            "literal_seed": [
+              [
+                9,
+                2,
+                1,
+                6,
+                5,
+                4,
+                3,
+                8,
+                7,
+                0
+              ],
+              [
+                0,
+                1,
+                2,
+                5,
+                4,
+                3,
+                8,
+                7,
+                6,
+                9
+              ],
+              [
+                2,
+                1,
+                0,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              [
+                0,
+                1,
+                8,
+                3,
+                4,
+                5,
+                6,
+                7,
+                2,
+                9
+              ]
+            ],
+            "orbit_sha256": "f0a59d044fef1b22a3abe9c452cc97ab706f521d81beeb18785cc7857113bfc7",
+            "all_literal_labels_checked": 6000,
+            "normal_transposition_support_edges": 20,
+            "exact_quotient_group_order": 2,
+            "exact_generated_group_closure": 28800,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 10,
+        "bundled_indices": [
+          4,
+          4
+        ],
+        "simple_factors": 1,
+        "ordered_character_total": 625,
+        "full_type_placements": 3,
+        "complete_literal_domain": 1875,
+        "components": [
+          {
+            "inner_degree": 2,
+            "outer_degree": 5,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 1,
+            "fixed_ordered_original_count": 25,
+            "literal_component_size": 75,
+            "absolute_component_size": 15,
+            "cyclic_stabilizer_order": 2,
+            "group": "S2 wr Delta_5",
+            "group_order": 320,
+            "all_block_count_divisors": [
+              1,
+              5,
+              10
+            ],
+            "literal_seed": [
+              [
+                0,
+                4,
+                3,
+                2,
+                1,
+                5,
+                9,
+                8,
+                7,
+                6
+              ],
+              [
+                9,
+                3,
+                2,
+                1,
+                5,
+                4,
+                8,
+                7,
+                6,
+                0
+              ],
+              [
+                5,
+                1,
+                2,
+                3,
+                4,
+                0,
+                6,
+                7,
+                8,
+                9
+              ]
+            ],
+            "orbit_sha256": "78eac026bc1260550bacc2f6f218fece658fc0c5051ba01bf5c6c3bfd064f0ac",
+            "all_literal_labels_checked": 75,
+            "normal_transposition_support_edges": 5,
+            "exact_quotient_group_order": 10,
+            "exact_generated_group_closure": 320,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 10,
+            "outer_degree": 1,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 600,
+            "fixed_ordered_original_count": 600,
+            "literal_component_size": 1800,
+            "absolute_component_size": 180,
+            "cyclic_stabilizer_order": 1,
+            "group": "S10 wr Delta_1",
+            "group_order": 3628800,
+            "all_block_count_divisors": [
+              1,
+              10
+            ],
+            "literal_seed": [
+              [
+                0,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              [
+                0,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                9
+              ],
+              [
+                9,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                0
+              ]
+            ],
+            "orbit_sha256": "684fbaef000997c5bf128462917cc260d2191f6c69948af4e0f2db8b578f3fe7",
+            "all_literal_labels_checked": 1800,
+            "normal_transposition_support_edges": 45,
+            "exact_quotient_group_order": 1,
+            "exact_generated_group_closure": null,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 12,
+        "bundled_indices": [
+          6,
+          3
+        ],
+        "simple_factors": 2,
+        "ordered_character_total": 2688,
+        "full_type_placements": 12,
+        "complete_literal_domain": 32256,
+        "components": [
+          {
+            "inner_degree": 3,
+            "outer_degree": 4,
+            "primitive_degree_partition": [
+              3,
+              3
+            ],
+            "primitive_ordered_inner_count": 3,
+            "fixed_ordered_original_count": 96,
+            "literal_component_size": 1152,
+            "absolute_component_size": 96,
+            "cyclic_stabilizer_order": 1,
+            "group": "S3 wr Delta_4",
+            "group_order": 10368,
+            "all_block_count_divisors": [
+              1,
+              2,
+              4,
+              12
+            ],
+            "literal_seed": [
+              [
+                9,
+                4,
+                3,
+                2,
+                1,
+                8,
+                7,
+                6,
+                5,
+                0,
+                11,
+                10
+              ],
+              [
+                0,
+                3,
+                2,
+                1,
+                4,
+                7,
+                6,
+                5,
+                8,
+                11,
+                10,
+                9
+              ],
+              [
+                4,
+                1,
+                2,
+                3,
+                0,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                8,
+                5,
+                6,
+                7,
+                4,
+                9,
+                10,
+                11
+              ]
+            ],
+            "orbit_sha256": "4a7a026e5ae7ec9bed482a45ed5e1cbce6ff343ad14ed943e6602945426a6a7e",
+            "all_literal_labels_checked": 1152,
+            "normal_transposition_support_edges": 12,
+            "exact_quotient_group_order": 8,
+            "exact_generated_group_closure": 10368,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 6,
+            "outer_degree": 2,
+            "primitive_degree_partition": [
+              2,
+              4
+            ],
+            "primitive_ordered_inner_count": 324,
+            "fixed_ordered_original_count": 2592,
+            "literal_component_size": 31104,
+            "absolute_component_size": 2592,
+            "cyclic_stabilizer_order": 1,
+            "group": "S6 wr Delta_2",
+            "group_order": 1036800,
+            "all_block_count_divisors": [
+              1,
+              2,
+              12
+            ],
+            "literal_seed": [
+              [
+                11,
+                2,
+                1,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                10,
+                9,
+                0
+              ],
+              [
+                0,
+                1,
+                2,
+                7,
+                6,
+                5,
+                4,
+                3,
+                10,
+                9,
+                8,
+                11
+              ],
+              [
+                2,
+                1,
+                0,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              [
+                0,
+                1,
+                10,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                2,
+                11
+              ]
+            ],
+            "orbit_sha256": "d9f1d7574c75148499d08853ad40f2af4d44b49d5864202c337cc9cda6688ff0",
+            "all_literal_labels_checked": 31104,
+            "normal_transposition_support_edges": 30,
+            "exact_quotient_group_order": 2,
+            "exact_generated_group_closure": null,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 18,
+        "bundled_indices": [
+          8,
+          8
+        ],
+        "simple_factors": 1,
+        "ordered_character_total": 6561,
+        "full_type_placements": 3,
+        "complete_literal_domain": 19683,
+        "components": [
+          {
+            "inner_degree": 2,
+            "outer_degree": 9,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 1,
+            "fixed_ordered_original_count": 81,
+            "literal_component_size": 243,
+            "absolute_component_size": 27,
+            "cyclic_stabilizer_order": 2,
+            "group": "S2 wr Delta_9",
+            "group_order": 9216,
+            "all_block_count_divisors": [
+              1,
+              3,
+              9,
+              18
+            ],
+            "literal_seed": [
+              [
+                0,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                9,
+                17,
+                16,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              [
+                17,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                9,
+                8,
+                16,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                0
+              ],
+              [
+                9,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                0,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+              ]
+            ],
+            "orbit_sha256": "82f6f39d75d490c580bbf89504b4321cb14b6e4385e3f39bb6f0420679082979",
+            "all_literal_labels_checked": 243,
+            "normal_transposition_support_edges": 9,
+            "exact_quotient_group_order": 18,
+            "exact_generated_group_closure": 9216,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 6,
+            "outer_degree": 3,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 72,
+            "fixed_ordered_original_count": 648,
+            "literal_component_size": 1944,
+            "absolute_component_size": 108,
+            "cyclic_stabilizer_order": 1,
+            "group": "S6 wr Delta_3",
+            "group_order": 2239488000,
+            "all_block_count_divisors": [
+              1,
+              3,
+              18
+            ],
+            "literal_seed": [
+              [
+                0,
+                2,
+                1,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                17,
+                16
+              ],
+              [
+                17,
+                1,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                16,
+                0
+              ],
+              [
+                15,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                0,
+                16,
+                17
+              ]
+            ],
+            "orbit_sha256": "e0761ea7556c60e63bb98d751ed5080de29f896762bf8238719156f7c4b01ae6",
+            "all_literal_labels_checked": 1944,
+            "normal_transposition_support_edges": 45,
+            "exact_quotient_group_order": 6,
+            "exact_generated_group_closure": null,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 18,
+            "outer_degree": 1,
+            "primitive_degree_partition": [
+              2,
+              2
+            ],
+            "primitive_ordered_inner_count": 5832,
+            "fixed_ordered_original_count": 5832,
+            "literal_component_size": 17496,
+            "absolute_component_size": 972,
+            "cyclic_stabilizer_order": 1,
+            "group": "S18 wr Delta_1",
+            "group_order": 6402373705728000,
+            "all_block_count_divisors": [
+              1,
+              18
+            ],
+            "literal_seed": [
+              [
+                0,
+                17,
+                16,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+              ],
+              [
+                0,
+                16,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                17
+              ],
+              [
+                17,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                0
+              ]
+            ],
+            "orbit_sha256": "f23b89dc5ed90e5d428b02fc092b983d9fdbc77000ca97d53cb67b0000416727",
+            "all_literal_labels_checked": 17496,
+            "normal_transposition_support_edges": 153,
+            "exact_quotient_group_order": 1,
+            "exact_generated_group_closure": null,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      },
+      {
+        "degree": 14,
+        "bundled_indices": [
+          7,
+          4
+        ],
+        "simple_factors": 2,
+        "ordered_character_total": 8232,
+        "full_type_placements": 12,
+        "complete_literal_domain": 98784,
+        "components": [
+          {
+            "inner_degree": 7,
+            "outer_degree": 2,
+            "primitive_degree_partition": [
+              1,
+              5
+            ],
+            "primitive_ordered_inner_count": 343,
+            "fixed_ordered_original_count": 2744,
+            "literal_component_size": 32928,
+            "absolute_component_size": 2352,
+            "cyclic_stabilizer_order": 1,
+            "group": "S7 wr Delta_2",
+            "group_order": 50803200,
+            "all_block_count_divisors": [
+              1,
+              2,
+              14
+            ],
+            "literal_seed": [
+              [
+                13,
+                2,
+                1,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                10,
+                9,
+                12,
+                11,
+                0
+              ],
+              [
+                0,
+                1,
+                12,
+                7,
+                6,
+                5,
+                4,
+                3,
+                10,
+                9,
+                8,
+                11,
+                2,
+                13
+              ],
+              [
+                12,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                0,
+                13
+              ],
+              [
+                0,
+                1,
+                10,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                2,
+                11,
+                12,
+                13
+              ]
+            ],
+            "orbit_sha256": "e6cd05443d1b4a09dc66aa1d9822edb4c9fd6d4707d70c0cf5b0de50379efe49",
+            "all_literal_labels_checked": 32928,
+            "normal_transposition_support_edges": 42,
+            "exact_quotient_group_order": 2,
+            "exact_generated_group_closure": null,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          },
+          {
+            "inner_degree": 7,
+            "outer_degree": 2,
+            "primitive_degree_partition": [
+              3,
+              3
+            ],
+            "primitive_ordered_inner_count": 1372,
+            "fixed_ordered_original_count": 5488,
+            "literal_component_size": 65856,
+            "absolute_component_size": 4704,
+            "cyclic_stabilizer_order": 1,
+            "group": "S7 wr Delta_2",
+            "group_order": 50803200,
+            "all_block_count_divisors": [
+              1,
+              2,
+              14
+            ],
+            "literal_seed": [
+              [
+                13,
+                2,
+                1,
+                10,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                12,
+                11,
+                0
+              ],
+              [
+                0,
+                1,
+                2,
+                9,
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                12,
+                11,
+                10,
+                13
+              ],
+              [
+                2,
+                1,
+                0,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              [
+                0,
+                1,
+                12,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                2,
+                13
+              ]
+            ],
+            "orbit_sha256": "6b924582c66f72b6f8010ddf50e224e8e4aa01651549c0f5e561356cad650e09",
+            "all_literal_labels_checked": 65856,
+            "normal_transposition_support_edges": 42,
+            "exact_quotient_group_order": 2,
+            "exact_generated_group_closure": null,
+            "group_basis": "complete normal-transposition graph + exact quotient closure; B2"
+          }
+        ]
+      }
+    ],
+    "complete_literal_states": 164457
+  },
+  "same_group_prime_family": {
+    "formula_only_prime_controls": [
+      {
+        "prime": 5,
+        "literal_component_sizes": [
+          2400,
+          6000
+        ],
+        "group_order": 28800
+      },
+      {
+        "prime": 7,
+        "literal_component_sizes": [
+          32928,
+          65856
+        ],
+        "group_order": 50803200
+      },
+      {
+        "prime": 11,
+        "literal_component_sizes": [
+          894432,
+          1597200
+        ],
+        "group_order": 3186701844480000
+      },
+      {
+        "prime": 13,
+        "literal_component_sizes": [
+          2952768,
+          5167344
+        ],
+        "group_order": 77551576087265280000
+      },
+      {
+        "prime": 17,
+        "literal_component_sizes": [
+          19809216,
+          33958656
+        ],
+        "group_order": 253027093011094340370432000000
+      },
+      {
+        "prime": 19,
+        "literal_component_sizes": [
+          43458624,
+          74077200
+        ],
+        "group_order": 29595060906949638427087208448000000
+      }
+    ],
+    "direct_complete_orbits_for_p5_p7": "Recorded separately among exact_component_controls",
+    "scope": "The unbounded prime-family conclusion is B6's proof, not extrapolation from this list."
+  },
+  "negative_controls": {
+    "no_simple_branch_rejected": true,
+    "wrong_index_budget_rejected": true,
+    "outside_A_B_at_least_two_scope_rejected": true,
+    "nonpositive_primitive_partition_rejected": true
+  },
+  "scope": "All-degree component sufficiency is imported explicitly from the published Bogatyrev--Gendron Theorem1.2/Corollary2. Monodromy, blocks, literal label extraction, factorial/Mobius orbit sizes and prime-family conclusions have written derivations B2-B6. Only the listed ten passports are directly exhausted by ordinary braid closures and independent hook totals.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

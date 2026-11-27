@@ -7,9 +7,9 @@
     "python": "3.12.3",
     "python-flint": "0.9.0"
   },
-  "checker_sha256": "a0e99d609c9c43da756604b7fa7346bba1b95dcbd21a26bc351bb6bb91e62d39",
+  "checker_sha256": "a6861386da2553b1d507783f3cccf13af861cd1b4205587dcb5c739f8cf06534",
   "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
-  "proof_source_sha256": "392bfdb6a9aeb7c89636cc18d0a723f1dabfcf415cc5a72f5a58884342ac83d8",
+  "proof_source_sha256": "555106ed206b2c3211fc623624653f43f998836e3ba83eef67d9feeb09deac69",
   "result": {
     "status": "pass",
     "rho": "1/2",
@@ -51,6 +51,10 @@
       -0.004245765430352803,
       -0.0038946723461615682
     ],
+    "sharp_first_moment_coefficient": [
+      -0.010055901137890488,
+      -0.00970480805369925
+    ],
     "exact_gram_controls": {
       "closing_rational_cases": 4,
       "nonclosing_control_rejected": true,
@@ -73,10 +77,148 @@
         ]
       ]
     },
-    "scope": "Scalar radial inequality fails at rho=1/2. The explicit angular-closure correction makes this one profile coefficient negative. Finite Gram controls support the written algebraic lemma; they are not its unrestricted proof. No full-rho Gaussian partition theorem is asserted."
+    "scope": "The scalar radial bound fails at this selected correlation. The elementary correction repairs the profile at 1/2; the sharp local first-moment correction repairs it also at 3/5 but fails at 7/10. Positive upper-bound coefficients do not prove improving Gaussian partitions. Finite Gram controls support the written algebraic lemma, not an unrestricted proof by sampling.",
+    "three_fifths_limit_test": {
+      "status": "pass",
+      "rho": "3/5",
+      "exponents": [
+        0,
+        1,
+        16
+      ],
+      "coefficients": [
+        "-21/34",
+        "1",
+        "2"
+      ],
+      "exact_mean": "0",
+      "panels": 8192,
+      "arb_precision_bits": 100,
+      "angular_rule": "interval Riemann enclosures over every subinterval of [0,2/3]",
+      "numerator_enclosure": [
+        0.06134302751180626,
+        0.061640499655108275
+      ],
+      "denominator_enclosure": [
+        0.02574736633894097,
+        0.025823406682228763
+      ],
+      "numerator_minus_twice_denominator": [
+        0.009696214146780308,
+        0.010145766977794755
+      ],
+      "rayleigh_quotient_enclosure": [
+        2.375481594353914,
+        2.3940506801009183
+      ],
+      "closure_correction_enclosure": [
+        0.005807354718423294,
+        0.0058073547184232955
+      ],
+      "corrected_quadratic_coefficient": [
+        0.0038888594281296417,
+        0.0043384122595988344
+      ],
+      "sharp_first_moment_coefficient": [
+        -0.0019184952902936525,
+        -0.001468942458824461
+      ],
+      "exact_gram_controls": {
+        "closing_rational_cases": 4,
+        "nonclosing_control_rejected": true,
+        "bound_and_defect_pairs": [
+          [
+            "30/127",
+            "4/5"
+          ],
+          [
+            "18/65",
+            "4/5"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "30/127",
+            "3947/100"
+          ]
+        ]
+      },
+      "scope": "The scalar radial bound fails at this selected correlation. The elementary correction repairs the profile at 1/2; the sharp local first-moment correction repairs it also at 3/5 but fails at 7/10. Positive upper-bound coefficients do not prove improving Gaussian partitions. Finite Gram controls support the written algebraic lemma, not an unrestricted proof by sampling."
+    },
+    "seven_tenths_limit_test": {
+      "status": "pass",
+      "rho": "7/10",
+      "exponents": [
+        0,
+        1,
+        16
+      ],
+      "coefficients": [
+        "-21/34",
+        "1",
+        "2"
+      ],
+      "exact_mean": "0",
+      "panels": 8192,
+      "arb_precision_bits": 100,
+      "angular_rule": "interval Riemann enclosures over every subinterval of [0,2/3]",
+      "numerator_enclosure": [
+        0.08697342209621971,
+        0.08736406436470469
+      ],
+      "denominator_enclosure": [
+        0.031897268395517146,
+        0.031991537564784296
+      ],
+      "numerator_minus_twice_denominator": [
+        0.022990346966196385,
+        0.023569527574125112
+      ],
+      "rayleigh_quotient_enclosure": [
+        2.7186383791267867,
+        2.738919943571091
+      ],
+      "closure_correction_enclosure": [
+        0.005442249342614042,
+        0.005442249342614044
+      ],
+      "corrected_quadratic_coefficient": [
+        0.017548097622672846,
+        0.018127278232420562
+      ],
+      "sharp_first_moment_coefficient": [
+        0.012105848280513554,
+        0.012685028889351772
+      ],
+      "exact_gram_controls": {
+        "closing_rational_cases": 4,
+        "nonclosing_control_rejected": true,
+        "bound_and_defect_pairs": [
+          [
+            "30/127",
+            "4/5"
+          ],
+          [
+            "18/65",
+            "4/5"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "30/127",
+            "3947/100"
+          ]
+        ]
+      },
+      "scope": "The scalar radial bound fails at this selected correlation. The elementary correction repairs the profile at 1/2; the sharp local first-moment correction repairs it also at 3/5 but fails at 7/10. Positive upper-bound coefficients do not prove improving Gaussian partitions. Finite Gram controls support the written algebraic lemma, not an unrestricted proof by sampling."
+    }
   },
-  "certified_scope": "At rho=1/2, the exact bounded mean-zero test f=e^(-t)+2e^(-16t)-21/34 violates the scalar positive radial inequality, and the explicit angular-closure correction makes its quadratic coefficient strictly negative.",
-  "analytic_scope": "The all-profile Gram bound and coupled angular inequality are written proofs in DG6; their finite rational controls are not an unrestricted verification. DG7 uses the uniform local expansion of that written bound plus the certified negative coefficient.",
+  "certified_scope": "At rho=1/2 the bounded exactly mean-zero function f=exp(-t)+2exp(-16t)-21/34 violates the scalar radial inequality. The elementary Gamma correction repairs its small profile at1/2 but fails at3/5. The sharp first-moment correction repairs the same small profile at3/5 but has a strictly positive upper-bound coefficient at7/10. None of the positive coefficients proves an improving partition.",
+  "analytic_scope": "DG6 proves the all-profile Gram bound and coupled angular inequality. DG8 gives a globally valid positive-part matrix refinement, sharp among norm-and-closure bounds near balanced profiles, with local coefficient1/8. Its Taylor expansion and the directed coefficients prove the restricted-profile comparisons. These analytic assertions are written proofs, not claims of unrestricted verification from finite controls.",
   "arithmetic_scope": "All infinite radial integrals are reduced analytically to closed quadrant formulas. Arb encloses every angular integrand on each of 8192 intervals, at 100-bit precision; no sampled angular rule or omitted radial tail is used.",
   "assurance": {
     "internal_replay": true,
@@ -84,5 +226,5 @@
     "formal_verification": false,
     "external_review": false
   },
-  "limits": "This refutes a sufficient scalar operator estimate, not Gaussian simplex optimality. The comparison at rho=1/2 is restricted to sufficiently small multiples of the explicit circular-mass profile. The unrestricted all-positive-correlation target remains open."
+  "limits": "The original all-positive-correlation goal remains open. Profile comparisons at1/2 and3/5 concern sufficiently small multiples of one explicit circular-mass profile with arbitrary angular shapes. Failure of the separated-first-moment upper bound at7/10 is a limitation of that sufficient criterion, not a counterexample to simplex optimality. The unrestricted global cutoff remains21/50."
 }
