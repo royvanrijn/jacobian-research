@@ -30,8 +30,10 @@ supersolution also settle the whole third exterior hook
 $(k-3,1,1,1)$ for every $k\ge4$, by (S73).
 Equation (S91) supplies a positive harmonic polynomial field in every
 higher exterior degree and an exact one-dimensional formula for its
-truncated image. Its sufficient supersolution comparison remains open
-in the intermediate degrees.
+truncated image. The convex clipping argument (S92) settles the fourth
+exterior hook $(k-4,1^4)$ for every $k\ge5$, with the explicit gap
+$\ell\sqrt{1-\rho^2}$. The sufficient comparison remains open in the
+other intermediate exterior degrees.
 The four-cell problem reduces
 to one scalar standard-sector inequality. The exact polynomial
 certificate (S74)--(S76) also settles the five-cell $(2,2,1)$ block,
@@ -3808,8 +3810,9 @@ for every remaining exterior hook:
  \tag{S91e}
 \]
 
-coordinatewise on $W$. This inequality is **not proved here** for
-$3\le p<q$. Its correlation parameter can be removed exactly.
+coordinatewise on $W$. The case $p=3$ is proved in (S92) below;
+the intermediate cases $4\le p<q$ remain open. Its correlation
+parameter can be removed exactly.
 Write $P^{[1]},J_p^{[1]}$ for (S91c) at variance parameter $\sigma=1$,
 and set $z=\rho x/\sigma$. Homogeneity and the substitution
 $u=\sigma v$ give
@@ -3844,8 +3847,9 @@ $\ell\sigma^{-1}(1-\rho^{e-1})$, independently of the ambient
 dimension by the unused-coordinate Hermite factorization.
 At $p=2$, (S73) already proves the strict residual behind the
 non-strict factor $1$. At $p=q\ge3$, the comparison and explicit factor
-are already proved by (S63)--(S66). The intermediate-degree comparison
-remains the obligation; positivity and free harmonicity alone do not
+are already proved by (S63)--(S66), and (S92) proves $p=3$.
+The remaining intermediate-degree comparison is the obligation;
+positivity and free harmonicity alone do not
 control the truncated adjacent terms in (S91d).
 
 The exact controls below check selected positive wedge coordinates,
@@ -3853,6 +3857,252 @@ The exact controls below check selected positive wedge coordinates,
 adjacent $C_lb_i$ identities. The all-degree positivity, harmonicity,
 one-dimensional integration formula and conditional Schur conclusion
 are written arguments. No finite numerical sampling certifies (S91e).
+
+### The fourth exterior hook: a convex clipping argument
+
+**Theorem S92 (fourth exterior hook).**
+
+For every $k\ge5$, $d\ge k-1$ and $0<\rho<1$, the complete
+$V_{(k-4,1^4)}$ isotypic block of the cylindrical interface form has
+no kernel and satisfies
+
+\[
+ \boxed{\qquad \mathfrak q_\rho(f)\ge
+             \ell\sqrt{1-\rho^2}\,\|f\|^2.\qquad} \tag{S92}
+\]
+
+This includes all $L^2$ multiplicities. At five cells it agrees with
+the sign estimate; the new cases are $k\ge6$. It proves (S91e)--(S91f)
+for $p=3$. The other intermediate exterior degrees and the standard
+constraint are not resolved by this theorem.
+
+#### Combining the conditional adjacent terms
+
+Use unit variance as in (S91f), and subtract the common top mean.
+Write the remaining means as $0>m_3>\cdots>m_k$, and put
+$z=P_H(0,0,m_3,\ldots,m_k)$. Fix a common truncation level $u$.
+Define
+
+\[
+ f(t)=\lambda(u-t),\quad \lambda(v)=\phi(v)/\Phi(v),\quad
+ f_0=f(0),\quad f_i=f(m_i),\quad r_i=f_i/f_0,
+\]
+
+and let $M_{ir}$ be the $r$th moment of $N(m_i,1)$ conditioned to be
+at most $u$, with $M_{0r}$ the corresponding moment at mean zero.
+Set
+
+\[
+ A=2p_0+\sum_{i=3}^kr_i b_i,\qquad
+ U_r=\sum_{i=3}^k(M_{ir}-M_{0r})b_i.
+\]
+
+For every $p\ge2$ the self and adjacent integrands in (S91f), after
+division by the common positive factor
+$g_0(u)\prod_i\Phi(u-m_i)$, sum exactly to
+
+\[
+                 s_p A\wedge U_1\wedge\cdots\wedge U_{p-1}.
+ \tag{S92a}
+\]
+
+The scalar row integrand divided by that factor is $2+\sum_i r_i$.
+Indeed the adjacent scalar density ratio is
+
+\[
+ e^{-m_l^2/4}\frac{g_{m_l/2}(u)\Phi(u)}
+                         {g_0(u)\Phi(u-m_l)}=r_l.
+\]
+
+Under that adjacent law only coordinate $l$ changes from mean $m_l$
+to mean zero. Since $C_lp_0=b_l$, $C_lb_l=-\sum_i b_i$ and
+$C_lb_i=b_i$ for $i\ne l$, its conditional field expectation is
+$s_p b_l\wedge U_1\wedge\cdots\wedge U_{p-1}$.
+One can take expectations columnwise here: repeated occurrences of
+one coordinate in the wedge have repeated vector factors and vanish;
+the surviving terms have distinct independent coordinate indices.
+Replacing $\sum_iM_{ir}b_i$ by $U_r$ in the self term adds only a
+multiple of $p_0$. Summing proves (S92a). This identity does not assert
+the higher-degree comparison by itself.
+
+For $p=3$, let
+
+\[
+ F=P_H(f_0,f_0,f_3,\ldots,f_k),\quad
+ Z=P_H(0,0,m_3^2,\ldots,m_k^2),\quad
+ T=P_H(0,0,m_3f_3,\ldots,m_kf_k),\quad
+ S=2f_0+\sum_i f_i.
+\]
+
+The first two truncated-moment formulas give
+$A=F/f_0$, $U_1=z-F$ and $U_2=Z-T-uF$.
+Consequently the desired conditional residual, multiplied by $f_0$,
+is
+
+\[
+ R(f)=S W_3(z)+F\wedge z\wedge(Z-T)
+       =L(f)+Q(f),\qquad
+ L(f)=-(Sp_0-F)\wedge z\wedge Z,\quad
+ Q(f)=-F\wedge z\wedge T. \tag{S92b}
+\]
+
+We prove that every Helmert coordinate of $R(f)$ is nonnegative for
+any positive increasing convex function $f$ on $[m_k,0]$ whose
+secant slopes lie in $[0,1]$.
+
+#### A three-coordinate clipping inequality
+
+For $0<a<b<c$ write $X=(a,b,c)^T$ and
+$\det(v,X,w)$ for the determinant with those three columns.
+Let $Y$ be a convex piecewise linear function on $[0,\infty)$ with
+$Y(0)=0$. For a threshold $S\ge0$ write
+$A_S=\min(X,S)$, $V_S=S\mathbf1-A_S$ and
+$Y_S=Y(\min(X,S))$, all entrywise. Then
+
+\[
+ L_S=\det(V_S,X,Y(X))\ge0,\qquad
+ D_{S,T}=\det(A_S,X,A_T)\le0\quad(0\le S\le T),
+\]
+
+and
+
+\[
+ C_0=(S+T)\det(\mathbf1,X,Y(X))
+       -\det(A_S,X,Y(X)-Y_T)
+       -\det(A_T,X,Y(X)-Y_S)\ge0. \tag{S92c}
+\]
+
+Here is a direct finite-dimensional proof. $L_S$ is linear between
+the thresholds $a,b,c$. At $S\le a$ it vanishes. At $S=b$ it is
+$(b-a)(bY(c)-cY(b))\ge0$, since $Y(x)/x$ is nondecreasing;
+at $S=c$ it is $c\det(\mathbf1,X,Y(X))\ge0$. For $S\ge c$
+it is $S\det(\mathbf1,X,Y(X))$. This proves its sign everywhere.
+
+For the other assertions put $H_R(X)=(X-R)_+$,
+$D_R=\det(\mathbf1,X,H_R(X))$ and
+$E(A,B)=\det(H_A(X),X,H_B(X))$. The nonzero parts of $D_R$ are
+$(c-b)(R-a)$ for $a\le R\le b$ and
+$(b-a)(c-R)$ for $b\le R\le c$. For $0\le A\le B$,
+
+\[
+ E(A,B)=\begin{cases}
+ -A D_B,& A\le a,\\
+ -a(c-b)(B-A),&a\le A\le B\le b,\\
+ -a(b-A)(c-B),&a\le A\le b\le B\le c,\\
+ 0,& b\le A\ \text{or}\ c\le B.
+ \end{cases}
+\]
+
+These formulas agree at the shared boundaries and cover all cases.
+They show $D_{S,T}=E(S,T)\le0$. By linearity in $Y$, it remains
+to prove (S92c) for a linear function and for $Y=H_R$, $R\ge0$.
+The linear part cancels. For the hinge the expression is
+
+\[
+ (S+T)D_R+E(S,\max(T,R))+E(T,\max(S,R)).
+\]
+
+If $R\le S$ this is $(S+T)D_R\ge0$. If $T\le R$ it is
+$L_S(H_R)+L_T(H_R)\ge0$. For $S\le R\le T$, set
+$B=E(S,T)-E(R,T)$. When $D_R=0$ the displayed formulas give
+$B\ge0$. Otherwise they give $B\ge-aD_R$: for
+$a\le R\le b$, $R\le T\le b$ this is immediate; for
+$a\le R\le b\le T\le c$ first use
+$B\ge-a(R-a)(c-T)$; for $b\le R\le T\le c$ use
+$B\ge-a(b-a)(c-T)$. In the last two cases $T\ge R$ gives the
+claimed bound, and for $T\ge c$ one has $B=0$.
+Thus the expression is at least $(S+T-a)D_R\ge0$, since
+$D_R>0$ implies $T\ge R>a$. Every convex piecewise linear $Y$
+is a linear function plus a nonnegative sum of hinges, completing
+the proof. The exact checker also gives an exhaustive coefficient
+certificate: all 60 orderings of $a,b,c,S,T,R$ with $a<b<c$ and
+$S<T$ have nonnegative cubic gap coefficients, with 240 nonzero
+coefficients in total. Equalities follow by continuity.
+
+#### Applying clipping to the polynomial residual
+
+Use the Helmert coordinates divided by their positive factors
+$\alpha_j$. Write
+
+\[
+ X_j=\sum_{i=1}^j m_i-jm_{j+1},\qquad
+ Y_j=-\sum_{i=1}^j m_i^2+jm_{j+1}^2,\qquad m_1=m_2=0.
+\]
+
+Starting with $(X_1,Y_1)=(0,0)$, these vertices form an increasing
+convex piecewise linear curve $Y(X)$: the first slope is $-m_3>0$,
+and the later slopes are $-(m_{j+1}+m_{j+2})$, strictly increasing.
+Extend its final segment linearly if necessary. For a hinge
+$h_l(t)=(t-m_l)_+$ put $S_l=X_{l-1}$. Its $F$ coordinates are
+$A_l=\min(X,S_l)$, its scalar sum is $S_l$, and its $T$ coordinates
+are $-Y_{S_l}-m_l A_l$. These identities follow by separating rows
+whose endpoint is above or below $m_l$.
+
+For a fixed triple of Helmert indices, (S92b) therefore has linear
+hinge term $L_l=\det(V_{S_l},X,Y)$, already nonnegative.
+Let $Q_{lj}$ be its symmetric quadratic polarization on two hinges,
+and set $C_{lj}=(L_l+L_j)/2+Q_{lj}$. For $l\le j$, direct expansion
+gives
+
+\[
+ 2C_{lj}=C_0+(m_j-m_l)D_{S_l,S_j}\ge0,
+\]
+
+using (S92c), $m_j\le m_l$ and $D_{S_l,S_j}\le0$.
+The omitted factors $\alpha_{j_1}\alpha_{j_2}\alpha_{j_3}$ are positive.
+
+On the finite set of means write the convex function exactly as
+$f=c+\sum_{l=3}^k\eta_lh_l$, where $c=f(m_k)>0$,
+$\eta_l\ge0$ and $s=\sum_l\eta_l\le1$. Indeed the $\eta_l$
+are successive differences of the ordered secant slopes, with a
+final zero slope appended; their sum is the top secant slope.
+The constant has $F=0$ and $T=cz$, so all its quadratic cross terms
+vanish. Thus each residual coordinate is
+
+\[
+ R(f)=kc\,W_3+(1-s)\sum_l\eta_lL_l
+                         +\sum_{l,j}\eta_l\eta_jC_{lj}\ge0.
+ \tag{S92d}
+\]
+
+This proves the comparison for every such convex function, without
+an upper bound on the number of means.
+
+#### Mills convexity and the full operator bound
+
+The needed Mills facts are classical; the primary
+[Barrow--Cohen paper](https://www.jstor.org/stable/2236746),
+*Ann. Math. Statist.* 25 (1954), 405--408, states the equivalent
+truncated-moment inequality in (2). For completeness they follow
+directly here. If $Z$ is standard normal and
+$T=v-Z\mid Z\le v$, let $r=\mathbb ET=v+\lambda(v)>0$ and
+$V=\operatorname{Var}T=1-\lambda(v)r>0$.
+Differentiation gives $\lambda'=-\lambda r\in(-1,0)$ and
+$\lambda''=\lambda(r^2-V)$. The survival function of $T$ is
+$S_T(t)=\Phi(v-t)/\Phi(v)$ for $t\ge0$, with strictly increasing
+hazard $\lambda(v-t)$. Therefore
+$S_T(s+t)<S_T(s)S_T(t)$ for $s,t>0$. Integration yields
+$\mathbb ET^2<2(\mathbb ET)^2$, so $V<r^2$ and $\lambda''>0$.
+All integrals converge by Gaussian tails. Hence $f(t)=\lambda(u-t)$
+is positive, increasing and convex, with derivative in $(0,1)$,
+and (S92d) applies at every truncation level.
+
+Multiply the conditional comparison by its positive common density
+and integrate over $u$. This proves (S91f) at $p=3$, and its exact
+scaling proves (S91e) at every correlation. The positive field and
+nonnegative folded kernel from (S91) then give
+$\|a_\rho^{-1/2}\mathsf K_3a_\rho^{-1/2}\|\le\rho^2$ on the
+entire multiplicity space. The local bound
+$a_\rho/\rho\ge\ell/\sigma$ proves the active-space gap
+$\ell(1-\rho^2)/\sigma=\ell\sigma$. Unused Hermite degree $r$
+multiplies the interaction by $\rho^r$, preserving this bound in
+every $d\ge k-1$. This completes (S92).
+
+The exact replay checks the complete clipped-curve polynomial
+certificate, finite rational hinge/residual identities and conditional
+wedge controls. The all-size hinge decomposition, Mills argument,
+Gaussian integrations and complete Hilbert-space spectral passage
+remain written mathematics with internal review only.
 
 ## Monotonicity and the other global obligations
 
@@ -3890,10 +4140,12 @@ The remaining targets are distinct:
   The complete rotation hook has the all-correlation gap (S56).
   Every nonstandard two-row block has the strict gap (S87), extending
   the $(k-2,2)$ case (S60), and every sign block is
-  settled by (S61)--(S66). The third exterior hook is settled by (S73).
-  In four and five cells only (S51) remains, by (S76) and its four-cell
-  analogue. For $k\ge6$ the other blocks with at least three rows
-  also need estimates outside
+  settled by (S61)--(S66). The third and fourth exterior hooks are
+  settled by (S73) and (S92), respectively.
+  The [four-cell](TETRAHEDRAL_STANDARD_GAP.md) and
+  [five-cell](FIVE_CELL_A3_BRIDGE.md) comparisons settle (S51) in
+  those two cases and complete their full interface gaps. For $k\ge6$
+  other blocks with at least three rows also need estimates outside
   the explicit Hermite-floor ranges (S80)--(S81). At fixed correlation
   those ranges cover every sufficiently deep representation, leaving
   only partitions with $O_\rho(\log k)$ boxes outside their first row.
@@ -3903,7 +4155,8 @@ The remaining targets are distinct:
   (S90) specifies its closed physical image and reconstruction.
   For the remaining exterior hooks, (S91) gives a positive harmonic
   comparison field and exact one-dimensional Gaussian moment formulas.
-  The sufficient intermediate-degree inequality (S91e) is open.
+  Its degree-$3$ comparison is settled by (S92); the sufficient
+  intermediate-degree inequalities (S91e) for $p\ge4$ remain open.
   The required scalar spectral-radius and fixed-space bounds are open;
   the next simple odd-kernel positivity argument is explicitly false.
   The exact tied-height reduction (S84) supplies a two-variable
@@ -4023,7 +4276,17 @@ exterior degree for four through eight cells. Finite product measures
 check the determinant of unnormalized truncated moments, including
 spectator factors, and a formal identity checks the Gaussian moment
 recurrence through order nine. These controls do not prove the
-intermediate-degree truncated supersolution comparison (S91e).
+remaining intermediate-degree truncated supersolution comparisons (S91e).
+For (S92), all 60 real-variable order types for the clipped-curve
+inequality are expanded as cubic polynomials in nonnegative successive
+gaps, with all 240 nonzero coefficients positive. Ten analogous types
+verify the clipped-pair sign. Finite rational hinge and conditional
+product controls test the residual identities, including rejection of
+an omitted tent term, reversed thresholds and a missing slope bound.
+The unrestricted clipping and convex-slope arguments, self-contained
+Mills proof, Gaussian integration and full-block operator conclusion
+are written mathematics; no external review or formal verification
+is inferred from the exact polynomial replay.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

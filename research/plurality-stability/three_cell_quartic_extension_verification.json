@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "precision_bits": 140,
+  "radial_panels_per_slab": 8192,
+  "radial_limit": 12,
+  "mode_order": 136,
+  "row_order": 24,
+  "rho_bounds": ["29/50", "3/5"],
+  "correlation_slabs": 20,
+  "slab_widths": ["1/1000"],
+  "max_scalar_e_upper": 0.06855814140612437,
+  "max_scalar_residual_upper": 0.09314782266444203,
+  "min_scalar_delta_lower": 1.297019979574584
+}

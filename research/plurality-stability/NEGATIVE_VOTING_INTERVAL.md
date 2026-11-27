@@ -9,7 +9,7 @@ write
 \]
 ## Exact Gaussian simplex minimization
 
-There is an integer \(M\ge3\) such that for every \(k\ge M\),
+Take \(M=\lceil e^{3000}\rceil\). For every \(k\ge M\),
 every \(d\ge k-1\), every \(0<r\le1/(k-1)\), and every measurable
 \(f:\mathbb R^d\to\Delta_k\),
 \[
@@ -19,9 +19,12 @@ every \(d\ge k-1\), every \(0<r\le1/(k-1)\), and every measurable
 where \(T_k\) is the regular central simplex extended cylindrically
 to dimension \(d\). The cell masses are unrestricted. Equality
 holds exactly for a regular central simplex assignment, up to
-orthogonal maps, labels and null sets.
+orthogonal maps, labels and null sets. The
+[explicit cutoff proof](NEGATIVE_VOTING_EXPLICIT_CUTOFF.md)
+tracks the constants through both comparisons below and uses
+first variation at a minimizer for the preliminary mass bound.
 
-To prove this, consider an assignment with
+For the qualitative argument, consider an assignment with
 \(S_{-r}(f)\le S_{-r}(1_{T_k})\).
 [Exponential localization (VL1)](NEGATIVE_VOTING_EXPONENTIAL_LOCALIZATION.md)
 bounds its summed label \(L^1\) distance to a simplex by
@@ -45,7 +48,6 @@ after a common Gaussian shift, in the scope of
 or [Friedland–Guédon–Souli, Corollary 1.5](https://arxiv.org/pdf/2609.38904v1).
 The local step uses the signed weighted Hessian throughout the
 voting interval. The proof has internal mathematical audit.
-The value of \(M\) is qualitative.
 
 ## Discrete low-influence voting
 

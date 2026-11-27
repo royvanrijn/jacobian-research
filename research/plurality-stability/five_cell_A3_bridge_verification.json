@@ -1,0 +1,96 @@
+{
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "precision_bits": 192,
+  "map": {
+    "angular_bins": 256,
+    "inverse_dyadic_bits": 42,
+    "area_ratio": "[1.2128263509667 +/- 4.33e-14]",
+    "azimuth_derivative_lower": "[0.92502979315757 +/- 2.47e-15]",
+    "last_gap_ratio_lower": "[1.0147511401118 +/- 3.02e-14]"
+  },
+  "radial": {
+    "row_cap": "[1.9405221615468 +/- 1.08e-14]",
+    "schur_cap": "990793/1000000",
+    "scaled_gap_margin": "1/200",
+    "radial_slabs": [
+      {
+        "left": "41/50",
+        "right": "33/40",
+        "schur_upper": "[0.99079254074387 +/- 2.87e-16]"
+      },
+      {
+        "left": "33/40",
+        "right": "83/100",
+        "schur_upper": "[0.98549914298485 +/- 3.78e-15]"
+      },
+      {
+        "left": "83/100",
+        "right": "167/200",
+        "schur_upper": "[0.98045301817863 +/- 4.77e-15]"
+      },
+      {
+        "left": "167/200",
+        "right": "21/25",
+        "schur_upper": "[0.97564257614639 +/- 1.64e-15]"
+      },
+      {
+        "left": "21/25",
+        "right": "17/20",
+        "schur_upper": "[0.97684860552669 +/- 3.04e-15]"
+      },
+      {
+        "left": "17/20",
+        "right": "43/50",
+        "schur_upper": "[0.96801213895790 +/- 1.17e-15]"
+      },
+      {
+        "left": "43/50",
+        "right": "87/100",
+        "schur_upper": "[0.96001383710637 +/- 1.44e-15]"
+      },
+      {
+        "left": "87/100",
+        "right": "22/25",
+        "schur_upper": "[0.95279652030443 +/- 2.80e-15]"
+      },
+      {
+        "left": "22/25",
+        "right": "89/100",
+        "schur_upper": "[0.94631572182575 +/- 1.09e-15]"
+      },
+      {
+        "left": "89/100",
+        "right": "9/10",
+        "schur_upper": "[0.94053940846499 +/- 4.28e-15]"
+      },
+      {
+        "left": "9/10",
+        "right": "23/25",
+        "schur_upper": "[0.94449449834850 +/- 3.76e-15]"
+      },
+      {
+        "left": "23/25",
+        "right": "47/50",
+        "schur_upper": "[0.93631801467065 +/- 5.90e-16]"
+      },
+      {
+        "left": "47/50",
+        "right": "19/20",
+        "schur_upper": "[0.92217559015621 +/- 2.29e-15]"
+      }
+    ]
+  },
+  "command": ".venv/bin/python research/plurality-stability/check_five_cell_A3_bridge.py",
+  "scope": "Internal spherical-map and radial bridge replay on 256 angular boxes and 13 exact correlation slabs. The bare row bound overlaps at 19/20.",
+  "checker_sha256": "2b805a5db90d0a645587fb60f4f65c637ed1fbde166892bedf705f6f6477925a",
+  "helper_sha256": {
+    "check_five_cell_weighted_gap.py": "bcdeb53c618c2aa4f20aa5e09825e794006b5eea7883bc2aa4937ff210374abc",
+    "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+    "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+  },
+  "negative_controls": {
+    "one_angular_box": "Invalid angular weight 0",
+    "one_radial_slab": "Radial Schur bound failed on 41/50 to 19/20: [1.1265197054989392886592533097715066790663602358484488378 +/- 2.62e-56]"
+  }
+}

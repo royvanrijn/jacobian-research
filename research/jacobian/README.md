@@ -343,6 +343,13 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Plane Keller components must pass the rational-slice test on the full Newton boundary | Internal result | proved | [Source](../dixmier/dixmier-formal-lifting/WEIGHTED_HAMILTONIAN_SLICE_FULL_BOUNDARY.md) |
 | Planar Keller inversion through common partial degree eleven | Internal result | proved | [Source](planar-degree-frontier/PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) |
 | A polynomial rank-two generic-fibre chart transfers planar max-11 to three variables | Internal result | proved | [Source](planar-degree-frontier/PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) |
+| The partial-degree-fourteen reduction leaves (8,12) and (9,12) before the standard-corner test | Internal result | proved | [Source](planar-degree-frontier/PARTIAL_DEGREE_FOURTEEN_AND_WEYL_TRANSFER.md) |
+| Quadratic polynomial charts with bounded top coefficient suffice on a sextic generic fibre | Internal result | proved | [Source](planar-degree-frontier/PARTIAL_DEGREE_FOURTEEN_AND_WEYL_TRANSFER.md) |
+| Small planar partial-degree gcds force explicit leading-factor multiplicities | Internal result | proved | [Source](planar-degree-frontier/SMALL_PARTIAL_GCD_STANDARD_CORNERS.md) |
+| Common partial degrees through seventeen force planar Keller inversion | Internal result | proved | [Source](planar-degree-frontier/SMALL_PARTIAL_GCD_STANDARD_CORNERS.md) |
+| Cubic polynomial charts with bounded top coefficient suffice on a sextic generic fibre | Internal result | proved | [Source](planar-degree-frontier/SMALL_PARTIAL_GCD_STANDARD_CORNERS.md) |
+| Common partial degrees through twenty force planar Keller inversion | Internal result | proved | [Source](planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY.md) |
+| A cubic polynomial generic-fibre chart suffices for sextic Keller inversion | Internal result | proved | [Source](planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY.md) |
 
 **Computed obligations:** 28 unresolved; 8 resolved within their exact scope.
 

@@ -348,9 +348,10 @@ Run from the canonical checkout:
     python3 research/arithmetic/verify_polynomial_two_cycle_pair.py
 
 This resolves the full \(k=2,s=1,p=4\) first-deficit sector.
-The remaining first-deficit problem includes \(k=2,p\ge5\)
-with \(s=p-3\ge2\), and \(k\ge3\), outside already resolved
-families. Deeper deficits, zero-simple passports, larger-fibre
+The [two-heavy first-deficit theorem](POLYNOMIAL_TWO_HEAVY_FIRST_DEFICIT_COMPONENTS.md)
+now also closes every \(k=2,p\ge5\), \(s=p-3\ge2\) profile.
+The remaining first-deficit problem has \(k\ge3\), outside
+already resolved families. Deeper deficits, zero-simple passports, larger-fibre
 lifting transport and the complete obstruction classification
 remain in the overall goal.
 No assertion about every auxiliary residue curve before its

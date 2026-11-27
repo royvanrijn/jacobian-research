@@ -68,7 +68,7 @@
     },
     {
       "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
-      "sha256": "0c76e879a3e43a792e8278abdafe26807d6bc08b4ea5cb11e9749d2884fce61b",
+      "sha256": "16aade0668b09fceae403f6428b4f651e1de553ca19199c9c9b9e76ad00ce730",
       "locator": "U2 unique quadratic lift, actual group, blocks, deck and exact aggregate count"
     },
     {
@@ -86,7 +86,7 @@
     "checker": "research/arithmetic/verify_polynomial_duplicated_cycle_paths.py",
     "checker_sha256": "61a0a953f060f3ba23c22ba89b42fdeba754fb8538b53c70735b36145c4adc51",
     "receipt": "research/arithmetic/polynomial_duplicated_cycle_paths_verification.json",
-    "receipt_sha256": "ed8c499f3359a7f4fc43cdf21c4106e29db0afac74a9f472803abbbf01e1c5be",
+    "receipt_sha256": "40718853d40f621e45394860db604d80c331f80d24ab5b70561eb6e7fdb66d27",
     "command": "python3 research/arithmetic/verify_polynomial_duplicated_cycle_paths.py",
     "software": "Python3.12.3 standard library, assertions active",
     "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",

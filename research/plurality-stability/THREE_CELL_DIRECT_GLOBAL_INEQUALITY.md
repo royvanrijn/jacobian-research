@@ -5,11 +5,13 @@ The unrestricted inequality
 The exact expansion (B1) in the [continuation note](POSITIVE_CORRELATION_CONTINUATION.md)
 makes it equivalent to \(S_\rho(A)\leq S_\rho(T)\), including for
 partitions far from the simplex. The current explicit direct comparison,
-adopted in DG20, holds for every balanced three-cell partition in every
-dimension \(d\geq2\) throughout \(0<\rho\leq53/100\).
-Its [all-mass scalar proof](THREE_CELL_GLOBAL_SCALAR_THROUGH_HALF.md)
-uses a sharper arc envelope and positive radial features with directed
-tails. DG17 gives an earlier finite-amplitude comparison through
+adopted in DG21, holds for every balanced three-cell partition in every
+dimension \(d\geq2\) throughout \(0<\rho\leq61/100\).
+Its [same-label variance proof](THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md)
+uses the sharp arc envelope, a global angular variance reserve, and
+positive radial features with directed tails. DG20 records the earlier
+all-mass scalar comparison through \(53/100\), and DG17 gives a
+finite-amplitude comparison through
 \(221/500\): it isolates one adverse radial direction, limits its amplitude
 by feasibility, and pays for its positive contribution with unavoidable
 angular loss. Both arguments are global in partition distance.
@@ -2444,7 +2446,7 @@ The all-positive-correlation inequality remains open.
 
 ## Adopting the all-mass scalar comparison through 0.53
 
-### Corollary DG20 (current explicit unrestricted direct interval)
+### Corollary DG20 (unrestricted scalar comparison through 53/100)
 
 For every \(d\ge2\), every ordinary measurable balanced Gaussian
 three-cell partition \(A\), and every \(0<\rho\le53/100\),
@@ -2478,3 +2480,43 @@ shared-radius and two-mode bounds DG18--DG19 remain useful potential
 corrections on the remaining range; they are not needed for (GH2)'s
 current certified interval. No overlap with the qualitative near-one
 interval closes all positive correlations here.
+
+
+## Paying for the radial obstruction with a stronger global variance loss
+
+### Corollary DG21 (unrestricted direct comparison through 61/100)
+
+For every \(d\ge2\), every ordinary measurable balanced Gaussian
+three-cell partition \(A\), and every \(0<\rho\le61/100\),
+
+\[
+ S_\rho(A)\le S_\rho(T),\qquad
+ \widetilde Q_\rho(1_A-1_T)\le2L_\rho(A;T).
+\]
+
+The [same-label comparison](THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md),
+SLV1--SLV7, strengthens the sharp scalar bound by
+\(17\rho\pi(1-\rho^2)\operatorname{Var}_{\mu_\rho}(p)/1000\),
+where \(d\mu_\rho\) is proportional to
+\(\sqrt t e^{-\rho^2t/(1-\rho^2)}d\nu(t)\).
+This loss holds for every feasible amplitude and every \(0<\rho<1\).
+It combines the positive slack when two slices favor the same label
+with the separate quartic difference slack. The key cumulative-density
+comparison SLV2 prevents the same-label contribution from being
+weakened by an exponentially small factor.
+
+The resulting corrected radial operator has a directed norm upper
+bound below \(1999/1000\) throughout \([29/50,61/100]\).
+The full 40-slab cover, including the mean-zero transport error and
+infinite feature and radial tails, reports an upper bound below
+1.998842. The preceding sharp scalar theorem supplies correlations
+through \(29/50\). Existence and planar reduction of maximizers,
+equality for uniform circular masses, and the exact expansion B1
+then give the displayed unrestricted comparison. Equality on the
+new interval determines the simplex, up to the usual symmetries.
+
+This is a global repair of the scalar criterion by angular loss;
+it uses neither continuation nor a small-distance hypothesis.
+The proof and certificate have internal verification only. The
+all-positive-correlation inequality remains open, since no sign proof
+for the corrected operator on the whole remaining interval is supplied.

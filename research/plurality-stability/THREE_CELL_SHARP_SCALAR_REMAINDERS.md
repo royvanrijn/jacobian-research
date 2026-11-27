@@ -348,3 +348,87 @@ profile with $d\nu/d\mu_1-1$. Cauchy–Schwarz gives the bound,
 and the integral is elementary in $t$. Combining this estimate
 with $m_0^2+s_2=M_2$ allows use of the sharper constraint
 $m_0^2\le\chi M_2/(1+\chi)$ when optimizing (SR14).
+
+The cosine scalar penalty in (SR6) can replace the quartic penalty
+when the profile has very little mixed mass. For the tilt $\mu$ in
+(SR6) set $P=\mathbb E_\mu(1-|p|^2)$. Convexity of
+$x\mapsto\cos(\pi\sqrt x/2)$ on $[0,1]$ bounds it by the chord
+$1-x$. With $x=(2p_i-1)^2$ this gives
+$a_i(p)\le(4/\pi)p_i(1-p_i)$. Also
+$p_i(1-p_i)\le(1-|p|^2)/2$, as seen by summing the products
+$p_jp_k$ over the unordered pairs of labels. Thus
+$\max_i\mathbb E_\mu a_i\le (2/\pi)P$ and
+$\sum_i\mathbb E_\mu a_i\le(4/\pi)P$. In (SR6), using
+$\mathbb E_\mu|z|^2=2/3-P$ gives
+\[
+ \mathbb E_{\mu\otimes\mu}\Phi(p,q)
+           \ge\frac1{\pi^2}\left(\frac5{12}+\frac{11}4P-8P^2\right).
+                                                               \tag{SR17}
+\]
+In particular this is at least $5/(12\pi^2)$ for $P\le11/32$.
+The two tilted measures obey $d\mu/d\mu_1\le(1+\rho)^{3/2}$ by
+their exact gamma normalizations. A small value of the purity
+factor under $\mu_1$ therefore guarantees a positive cosine loss,
+while larger values can be used in the quartic estimate. The
+normalization multiplying (SR17) in the radial penalty is
+$\rho\pi(1-\rho)/(2(1+\rho)^2)$.
+
+In the one-mode decomposition there is a separate purity lower
+bound from the direction transverse to $\alpha$. Let $n$ be a
+unit centered label vector perpendicular to $\alpha$ and write
+$b_i=\mathbb E_{\mu_1}p_i$. The variance of $n_i$ when a label is
+sampled with probabilities $p_i$ is at most $1-|p|^2$: write it as
+$\sum_{i<j}p_i p_j(n_i-n_j)^2$ and use $(n_i-n_j)^2\le2$.
+Since $n\cdot p=n\cdot g$ and $\max_i n_i^2\le2/3$, this gives
+\[
+ \mathbb E_{\mu_1}(1-|p|^2)
+    \ge \sum_i b_i n_i^2 - BG^2
+    \ge 2/3-u_\rho-BG^2,
+ \qquad u_\rho=\frac{e^{-1/2}}
+          {3\Gamma(3/2)d_\rho^{3/2}\sqrt{2\kappa}}.             \tag{SR18}
+\]
+For the last inequality, balance under $\nu$ gives $b_i\le u_\rho$
+using the maximum of the density $d\mu_1/d\nu$. Therefore
+$\sum_i b_i n_i^2\ge u_\rho-(2/3)\sum_i(u_\rho-b_i)=2/3-u_\rho$.
+This lower bound uses only the transverse residual to charge
+imperfection of the one-mode representation. It can replace the
+first inequality of (SR10) whenever it is stronger.
+
+There is also a sharper raw second-moment bound if the trial's
+raw tilted moment $M_\phi=\mathbb E_{\mu_1}\phi^2$ is bounded.
+Let $W$ be the multiplier $d\mu_1/(J_m\,d\nu)$ on the weighted
+space, extended to label-valued functions. Thus $0\preceq W\preceq B I$.
+For $r=G/A\le\sqrt{(B-M_\phi)/M_\phi}$ with $M_\phi>0$, one has
+\[
+          \mathbb E_{\mu_1}|z|^2
+               \le A^2(\sqrt{M_\phi}+r\sqrt{B-M_\phi})^2 .      \tag{SR19}
+\]
+Indeed take the weighted unit vectors $v=(\alpha/A)\phi$ and
+$w=g/G$ when $G>0$. If $t=\langle w,Ww\rangle$, positivity of
+$W$ and $BI-W$ and orthogonality show
+$|\langle v,Ww\rangle|^2\le\min(M_\phi t,(B-M_\phi)(B-t))$.
+The upper bound for the quadratic expression
+$M_\phi+2r|\langle v,Ww\rangle|+r^2t$ increases up to
+$t=B-M_\phi$. On the remaining interval it decreases under the
+stated condition on $r$, by differentiating the square-root
+bound there. Substitution gives (SR19). The case $G=0$ is an
+identity. The right hand side is increasing in $M_\phi$ up to
+$B/(1+r^2)$, so a certified upper bound in that range can be used.
+
+For the low-purity alternative (SR17), the exact density ratio
+gives a stronger bound than its supremum. Let $F$ be the gamma
+distribution function of shape $3/2$ and rate one. If
+$P_1=\mathbb E_{\mu_1}(1-|p|^2)$ and $F(x_0)\ge3P_1/2$, then
+\[
+                     P\le\frac23 F((1+\rho)x_0) .              \tag{SR20}
+\]
+The function $1-|p|^2$ ranges in $[0,2/3]$. Its expectation under
+$\mu$ with a specified expectation under $\mu_1$ is maximized by
+placing it at $2/3$ on an initial radial interval, because
+$d\mu/d\mu_1$ decreases in the radius. This follows by subtracting
+the density ratio at the cutoff and checking the sign on both
+sides. In the variable $(1+\kappa)t$ the measure $\mu_1$ has
+distribution function $F$, and $\mu$ has effective rate $1+\rho$.
+This gives (SR20). Combining exact tilt concentration with the
+two possible nonlinear penalties is a finite-amplitude route beyond
+the verified interval.

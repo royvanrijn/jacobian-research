@@ -65,7 +65,7 @@
     },
     {
       "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
-      "sha256": "0c76e879a3e43a792e8278abdafe26807d6bc08b4ea5cb11e9749d2884fce61b",
+      "sha256": "16aade0668b09fceae403f6428b4f651e1de553ca19199c9c9b9e76ad00ce730",
       "locator": "U1-U3 actual groups, unique imprimitive component, independent aggregate count and factor criterion"
     },
     {
@@ -83,7 +83,7 @@
     "checker": "research/arithmetic/verify_polynomial_duplicated_three_cycle.py",
     "checker_sha256": "724bc9dd35362f47f82cb4908507189fa766fdae1ce2c291a8eed76411fe4996",
     "receipt": "research/arithmetic/polynomial_duplicated_three_cycle_verification.json",
-    "receipt_sha256": "b89517ed41b2dcdd1b49f9b27ff37a7e8e88e98529ebddae471c48723ce31c8b",
+    "receipt_sha256": "7de018d7c508b5704e166d9696f04b3422a022ba398a35998b1241c0dceb8265",
     "command": "python3 research/arithmetic/verify_polynomial_duplicated_three_cycle.py",
     "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
     "software": "Python3.12.3 standard library, assertions active",

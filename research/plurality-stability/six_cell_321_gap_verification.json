@@ -1,0 +1,366 @@
+{
+  "k": 6,
+  "shape": [
+    3,
+    2,
+    1
+  ],
+  "linear_field": [
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "-1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "-1/3",
+      "-2/3",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1/2",
+      "-1/2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1/2",
+      "1/2",
+      "-1"
+    ],
+    [
+      "0",
+      "0",
+      "1/2",
+      "-1/6",
+      "1/3",
+      "-2/3"
+    ],
+    [
+      "0",
+      "0",
+      "3/8",
+      "3/8",
+      "-1/4",
+      "-1/2"
+    ],
+    [
+      "0",
+      "0",
+      "3/8",
+      "-3/8",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "3/16",
+      "3/16",
+      "-3/8",
+      "0"
+    ]
+  ],
+  "metric_diagonal": [
+    "1",
+    "9/8",
+    "3/2",
+    "4/3",
+    "3/2",
+    "8/5",
+    "8/5",
+    "32/15"
+  ],
+  "chamber_ray_values": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "6",
+      "3",
+      "0",
+      "3",
+      "9/4",
+      "9/4",
+      "9/8"
+    ],
+    [
+      "6",
+      "4",
+      "0",
+      "3",
+      "2",
+      "9/2",
+      "0",
+      "9/4"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "6",
+      "4",
+      "3",
+      "0",
+      "0"
+    ]
+  ],
+  "jacobi_lower_word": [
+    1,
+    2,
+    1,
+    3,
+    2,
+    1,
+    4,
+    3,
+    2,
+    1
+  ],
+  "coefficient_denominator": 8,
+  "total_nonzero_coefficients": 744735,
+  "residuals": [
+    {
+      "ray": 2,
+      "component": 1,
+      "nonzero_coefficients": 15776,
+      "minimum_coefficient": "12",
+      "coefficient_sha256": "3efc40fad85c57c9c739d89a2b6b111dbf9edd887c601cf3d96c520ca0cb29dc"
+    },
+    {
+      "ray": 2,
+      "component": 2,
+      "nonzero_coefficients": 27960,
+      "minimum_coefficient": "8",
+      "coefficient_sha256": "605a29774c306f934d501f3dda4f73654b420709b8e03f98f637750c2324afe2"
+    },
+    {
+      "ray": 2,
+      "component": 3,
+      "nonzero_coefficients": 12928,
+      "minimum_coefficient": "6",
+      "coefficient_sha256": "ea84a0590c4da9d2ecf8654739d858f722826040edec3486b8999a24f75ada94"
+    },
+    {
+      "ray": 2,
+      "component": 4,
+      "nonzero_coefficients": 33304,
+      "minimum_coefficient": "6",
+      "coefficient_sha256": "b3b70f4cfed99615b9e89b757d5a8297a8dec2d2af7f708db2bf77bc0d801137"
+    },
+    {
+      "ray": 2,
+      "component": 5,
+      "nonzero_coefficients": 39648,
+      "minimum_coefficient": "4",
+      "coefficient_sha256": "2b5ea36f7352ea54190cc7077542fc089500ad448e3d8b2a5cbb35121af19039"
+    },
+    {
+      "ray": 2,
+      "component": 6,
+      "nonzero_coefficients": 39648,
+      "minimum_coefficient": "9/2",
+      "coefficient_sha256": "74727c4ea21d5a4fffdc86f107e9538593e186409de868fb157215c21a8f2dfc"
+    },
+    {
+      "ray": 2,
+      "component": 7,
+      "nonzero_coefficients": 12928,
+      "minimum_coefficient": "9/2",
+      "coefficient_sha256": "58f39fe71fe7ccca874148eefa8c4b6b9345af2bb0646f6c52595479ba91c408"
+    },
+    {
+      "ray": 2,
+      "component": 8,
+      "nonzero_coefficients": 27960,
+      "minimum_coefficient": "9/4",
+      "coefficient_sha256": "ce1c85d250ba8ed0f6359e523ca0dfa1381c78a2671d8747b81ecbe27f79107a"
+    },
+    {
+      "ray": 3,
+      "component": 1,
+      "nonzero_coefficients": 15376,
+      "minimum_coefficient": "18",
+      "coefficient_sha256": "e89c87e5535682f5b2cf046a5dba76990f683a014c91a68f2d93a7d02c61d5fe"
+    },
+    {
+      "ray": 3,
+      "component": 2,
+      "nonzero_coefficients": 25273,
+      "minimum_coefficient": "12",
+      "coefficient_sha256": "14612df47d1e971d5c4d8b4ea8f44d36d2bede6414f0e46463b87419f694158e"
+    },
+    {
+      "ray": 3,
+      "component": 3,
+      "nonzero_coefficients": 11051,
+      "minimum_coefficient": "6",
+      "coefficient_sha256": "97265eebc050733bba0671784a8abd892be39a5883cf61af0cbd2f0ad7dd94db"
+    },
+    {
+      "ray": 3,
+      "component": 4,
+      "nonzero_coefficients": 33049,
+      "minimum_coefficient": "9",
+      "coefficient_sha256": "7a913e0f3b2bbc5f4e122424e2b26c5d2e523d356d1ff54c5cf57c6583e6d604"
+    },
+    {
+      "ray": 3,
+      "component": 5,
+      "nonzero_coefficients": 36616,
+      "minimum_coefficient": "6",
+      "coefficient_sha256": "36b41c5fc8cb3c450bf7beaf0854824e53d7d8678438ccdeace73d405b8b9ee7"
+    },
+    {
+      "ray": 3,
+      "component": 6,
+      "nonzero_coefficients": 36616,
+      "minimum_coefficient": "9/2",
+      "coefficient_sha256": "1b3f214d7cbccb8af64a3f5b0252f7db7c7daa3d04234ebfaf7d6c6b4dcfd0cb"
+    },
+    {
+      "ray": 3,
+      "component": 7,
+      "nonzero_coefficients": 11051,
+      "minimum_coefficient": "9/2",
+      "coefficient_sha256": "32e75ce73ee07f647c1629514714fa48b4d72e829cdd5de4558760f6f91d036b"
+    },
+    {
+      "ray": 3,
+      "component": 8,
+      "nonzero_coefficients": 25273,
+      "minimum_coefficient": "9/4",
+      "coefficient_sha256": "1a4c7091a0bbf79f8b605175ea739428089bd6a9db6020f414f1220fcdfe20e5"
+    },
+    {
+      "ray": 4,
+      "component": 1,
+      "nonzero_coefficients": 16056,
+      "minimum_coefficient": "18",
+      "coefficient_sha256": "c6a26addafc32888e730db3eec06dc8793722020da54f35db790eea6e88b4a77"
+    },
+    {
+      "ray": 4,
+      "component": 2,
+      "nonzero_coefficients": 24925,
+      "minimum_coefficient": "12",
+      "coefficient_sha256": "56cd46c336b5655d058036b40ede6c21e8bf7792b2531ab12dc2f800debaa6f0"
+    },
+    {
+      "ray": 4,
+      "component": 3,
+      "nonzero_coefficients": 10405,
+      "minimum_coefficient": "6",
+      "coefficient_sha256": "4c37213cd2e0b8d2351b6e78cce83ca479bc8ce1b510e82dc08622b5cf1550c6"
+    },
+    {
+      "ray": 4,
+      "component": 4,
+      "nonzero_coefficients": 35147,
+      "minimum_coefficient": "9",
+      "coefficient_sha256": "e6719deb616b036a2302c6cb8421d33705663e13128d7bc25119983908506f7c"
+    },
+    {
+      "ray": 4,
+      "component": 5,
+      "nonzero_coefficients": 36937,
+      "minimum_coefficient": "6",
+      "coefficient_sha256": "a24f1f64c262785166470a2a26d8a97b05e37ee911ba5ea3361484b14267461f"
+    },
+    {
+      "ray": 4,
+      "component": 6,
+      "nonzero_coefficients": 32444,
+      "minimum_coefficient": "9/2",
+      "coefficient_sha256": "0047722aa90d09d30c108d09b6162cc066d47e1478cd843f8ea5678330722350"
+    },
+    {
+      "ray": 4,
+      "component": 7,
+      "nonzero_coefficients": 8658,
+      "minimum_coefficient": "9/2",
+      "coefficient_sha256": "8456bb39db967f52dcac8e0074e9a5a08ae5de7891b86faa6ff0e540f004421e"
+    },
+    {
+      "ray": 4,
+      "component": 8,
+      "nonzero_coefficients": 18767,
+      "minimum_coefficient": "9/4",
+      "coefficient_sha256": "3f19afec7fddedc8fc5e5a04ad8c9cb342c26322706619d6ab985423daffdd11"
+    },
+    {
+      "ray": 5,
+      "component": 1,
+      "nonzero_coefficients": 12291,
+      "minimum_coefficient": "18",
+      "coefficient_sha256": "1b5b5223d1f0ecc95e74e328e71b7bd2b43be385c6f42466d8b61d997b430927"
+    },
+    {
+      "ray": 5,
+      "component": 2,
+      "nonzero_coefficients": 17975,
+      "minimum_coefficient": "12",
+      "coefficient_sha256": "5434b79588d0e4ed5251c548d386ce81916c0c966e2c030234fcebe36b817a3a"
+    },
+    {
+      "ray": 5,
+      "component": 3,
+      "nonzero_coefficients": 6694,
+      "minimum_coefficient": "6",
+      "coefficient_sha256": "3b9861232a480be2fec652af1b78e5e07100d97ec44d53c3244ea85e98f84be0"
+    },
+    {
+      "ray": 5,
+      "component": 4,
+      "nonzero_coefficients": 35120,
+      "minimum_coefficient": "9",
+      "coefficient_sha256": "60cc99494560cbca1586e6f9a93d2970693bb51f7b1b0232badf84ff8a0bae2c"
+    },
+    {
+      "ray": 5,
+      "component": 5,
+      "nonzero_coefficients": 36397,
+      "minimum_coefficient": "6",
+      "coefficient_sha256": "c803ebfa0d4c07401380482623dc208eb5dfd92a867f1fec0cb05a346d3f0a12"
+    },
+    {
+      "ray": 5,
+      "component": 6,
+      "nonzero_coefficients": 29423,
+      "minimum_coefficient": "9/2",
+      "coefficient_sha256": "e690d14c06a398a7dbe7f8440827569c6a1e0e73ec83f2509c9a491bf1638c34"
+    },
+    {
+      "ray": 5,
+      "component": 7,
+      "nonzero_coefficients": 5754,
+      "minimum_coefficient": "9/2",
+      "coefficient_sha256": "1c946a7657431f03e734516aaee297cd02d5fe7732170c7ee7f30fb995f37a68"
+    },
+    {
+      "ray": 5,
+      "component": 8,
+      "nonzero_coefficients": 13285,
+      "minimum_coefficient": "9/4",
+      "coefficient_sha256": "27cc6d1c5968c52b1b0c6fae1795c89a6948ece72e6f4be17466817d950deb4c"
+    }
+  ]
+}

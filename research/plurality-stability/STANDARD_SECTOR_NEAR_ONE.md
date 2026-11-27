@@ -7,7 +7,9 @@ by the Gaussian Neumann problem on a single facet. Compactness on the
 unbounded facet is essential here. The conjugated same-facet Mehler
 kernel supplies a Gaussian confinement bound, so a possible sequence
 of low-energy modes cannot escape along the facet or concentrate at its
-edges. The tetrahedral limiting constant is explicit.
+edges. The normalized limiting gap is exactly one at every cell
+count. The same compactness argument gives convergence of every
+fixed variational level.
 
 ## Statement and normalization
 
@@ -54,8 +56,9 @@ infimum over nonzero invariant balanced \(L^2(\nu)\) functions.
               =\lambda_k-1>0 .
  \tag{SN1}
 \]
-For \(k=4,5,6\), \(\lambda_k=2\), so the constant on the right is
-exactly one. For \(k=5\), the standard result and
+For every \(k\ge4\), \(\lambda_k=2\), with eigenspace spanned by
+\(|x|^2-n\). Thus the constant on the right is exactly one.
+For \(k=5\), the standard result and
 [(S76)](SIMPLEX_INTERFACE_SYMMETRY.md#strict-supersolution-and-the-five-cell-reduction)
 give the full balanced interface gap off rotations near one, and
 [(S42)](SIMPLEX_INTERFACE_SYMMETRY.md#every-cell-count-the-active-gap-lifts-to-all-ambient-dimensions)
@@ -327,12 +330,87 @@ Use radial cutoffs near zero and infinity with derivative bounded
 by a constant times \(r^{-1}\) on their transition annuli. The
 resulting gradient errors vanish by integrability of \(g/r\).
 
-For \(n\ge3\), \(\Lambda>n-1\) yields \(\beta>1\), so the radial
-decomposition gives \(\lambda_k\ge\min(2,\beta)>1\).
-For \(k=4\) the angular value gives \(\beta=\pi/\alpha>2\), and the
-radial function attains \(\lambda_4=2\).
+For \(n\ge3\), the estimate \(\Lambda>n-1\) already gives
+\(\beta>1\) for unrestricted facet functions. To identify the
+standard-sector constant, use the sharper estimate on the ordered
+facet.
 
-### The sharp Gaussian Neumann value in five and six cells
+### The ordered facet has angular Neumann gap strictly above \(2n\)
+
+In the coordinates \(g_i=x_2-x_{i+2}\), \(1\le i\le n\), order the
+cone by \(0\le g_1\le\cdots\le g_n\). Restriction identifies the
+invariant Sobolev space with the ordinary Sobolev space on this
+chamber. Conversely, extend by permuting the untied labels. Traces
+match across the ordering walls since each transposition fixes
+its wall pointwise. The full-facet squared norm and Dirichlet
+energy are both \(n!\) times their chamber values. The same
+argument applies on the spherical link.
+
+In these coordinates the Euclidean metric is
+\((I+J/2)^{-1}\), with \(J=\mathbf 1\mathbf 1^\top\), since the
+gradients of the \(g_i\) have Gram matrix \(I+J/2\). The inward
+wall covectors are
+\[
+ b_0=e_1,\qquad b_j=e_{j+1}-e_j\quad(1\le j<n).
+\]
+They are independent, and their pairwise dual-metric inner
+products are \(-1\) for consecutive indices and \(0\) for all
+other distinct pairs. Indeed each \(b_j\), \(j\ge1\), has sum
+zero, so the \(J/2\) term contributes only to \(\|b_0\|^2\).
+Thus the ordered spherical chamber is a simplex with all
+interior dihedral angles at most \(\pi/2\).
+
+For \(n\ge3\), Corollary 1.3 of Edelen–Li gives a first
+nonconstant Neumann eigenvalue at least \(2n\) on this chamber
+in \(S^{n-1}\). In the equality case an eigenfunction
+is the restriction of a homogeneous harmonic quadratic.
+[Edelen–Li, *Sharp Neumann eigenvalue estimates and \(C^2\)
+elliptic regularity in non-obtuse polyhedral domains*, arXiv
+v1, Corollary 1.3](sources/edelen-li-2608.17194v1.pdf)
+
+Suppose that quadratic is \(x^\top Mx\) with \(M=M^\top\)
+and \(\operatorname{tr}M=0\). Neumann data on the relative
+interior of each face give \(x^\top M\nu=0\) there, since
+the unit normal \(\nu\) to the wall already lies in the
+tangent space of the sphere along the wall. The face spans
+the wall plane, so \(M\nu\) is proportional to \(\nu\).
+Consecutive wall normals have nonzero inner product.
+Eigenvectors of a real symmetric matrix for different
+eigenvalues are orthogonal, so all wall normals have the
+same eigenvalue. They form a basis, so \(M\) is scalar.
+Harmonicity gives \(M=0\), excluding equality. For \(n=2\),
+the explicit interval value above gives the same strict
+inequality. In particular,
+\[
+ \Lambda_{\mathrm{ord}}>2n,\qquad
+ \lambda_k=2 \qquad(k\ge4).
+ \tag{SN10}
+\]
+In the radial separation this strict inequality gives
+\(\beta>2\); equality in the Gaussian Rayleigh quotient
+therefore requires a radial function. Full-space Hermite
+expansion leaves precisely the span of \(r^2-n\).
+
+The same argument covers chains of tied blocks. Let \(B_1,\ldots,B_s\)
+be disjoint coordinate blocks of positive sizes \(m_1,\ldots,m_s\)
+with \(s\ge2\). Restrict to coordinates that take the constant
+value \(t_i\) on \(B_i\), satisfy \(\sum_i m_i t_i=0\), and are
+ordered \(t_1\ge\cdots\ge t_s\). The \(s-1\) wall normals are
+\[
+ n_i=\frac{\mathbf1_{B_i}}{m_i}
+       -\frac{\mathbf1_{B_{i+1}}}{m_{i+1}},\qquad 1\le i<s.
+\]
+They form a basis of the centered block-constant subspace.
+Consecutive inner products are \(-1/m_{i+1}\), and all other
+distinct pairs are orthogonal. Thus for \(s\ge4\) the same
+Neumann comparison and connectedness argument give a strict
+angular gap above \(2(s-1)\). For \(s=3\) there is an acute
+interval with gap above \(4\). For \(s=2\) the chamber is a
+half-line, and even extension gives the same Gaussian
+Rayleigh value \(2\). In every case the first ordinary Gaussian
+Neumann eigenspace is exactly the span of \(|x|^2-(s-1)\).
+
+### Explicit angular bounds in five and six cells
 
 For the invariant functions we can use the ordered sector of \(F\)
 where \(0\le g_1\le\cdots\le g_n\), with
@@ -397,6 +475,106 @@ an angular bound \(\Lambda>2n\), which gives \(\beta>2\) in the
 radial separation. Since \(r^2-n\) is invariant and attains the
 radial value, \(\lambda_5=\lambda_6=2\).
 
-This completes (SN1). The argument uses the written compactness
-and spectral proofs, with the two cited analytic inputs.
+## Higher limiting levels
+
+Let \(0=\Lambda_0<\Lambda_1\le\Lambda_2\le\cdots\) be the ordered
+spherical chamber Neumann values with multiplicities.
+Write \(\beta_j\ge0\) for the solution of
+\(\beta_j(\beta_j+n-2)=\Lambda_j\), with \(\beta_0=0\). On the
+balanced subspace \(X\subset L^2(F,\gamma_H)\) of invariant
+functions, let \(\xi_d(\rho)\) be the \(d\)-th min–max value of
+the quadratic form in (SN2), starting at \(d=1\).
+
+**Theorem (Higher limiting levels).** For every fixed \(k\ge4\)
+and \(d\ge1\), \(\xi_d(\rho)\) converges as \(\rho\uparrow1\) to
+the \(d\)-th member, in nondecreasing order with multiplicity,
+of
+\[
+ \big\{\beta_j+2m-1:\ j,m\ge0,\ (j,m)\ne(0,0)\big\}.
+ \tag{SN11}
+\]
+For \(\rho\) sufficiently close to one at each fixed \(k,d\),
+these first \(d\) min–max values are discrete eigenvalues.
+The angle-independent family contributes \(1,3,5,\ldots\)
+to the limit. Its first member precedes every angular value
+by (SN10). The ordering at higher levels is given by (SN11).
+
+To obtain the limit spectrum, diagonalize on the spherical
+chamber in angular eigenfunctions \(Y_j\). With \(w(r)\) the
+radial weight above, the radial operator in \(Y_j\) has form
+\(\int(|u'|^2+\Lambda_j r^{-2}|u|^2)w\,dr\). Substitute
+\(u=r^{\beta_j}v\) and use the radial square identity. The
+form becomes \(\beta_j\|u\|^2\) plus the derivative form in
+the weight \(r^{n+2\beta_j-1}e^{-r^2/2}\,dr\). For \(j>0\)
+the identity extends from compactly supported radial tests
+by the cutoffs already used above. For \(j=0\) there is
+no inverse-square term. In \(s=r^2/2\) the derivative form
+is \(2\int s|\partial_s v|^2 s^{\alpha_j}e^{-s}\,ds\),
+with \(\alpha_j=n/2+\beta_j-1\).
+
+The radial differential operator in that weight is
+\(-2[s\partial_s^2+(\alpha_j+1-s)\partial_s]\). It preserves
+each polynomial degree filtration and has leading
+coefficient \(2m\) on monic polynomials of degree \(m\).
+Integration by parts makes it symmetric, so the associated
+Laguerre polynomials, obtained by orthogonalizing monomials,
+are its eigenfunctions. Their separated functions belong
+to the original form domain and have zero radial flux at
+zero against smooth tests, since for \(j>0\) the flux is
+\(O(r^{n+\beta_j-2})\) and \(\beta_j>2\), and for \(j=0\)
+the radial derivative is \(O(r)\). Cutoffs extend the weak
+eigenvalue identity to the form domain. The polynomials are
+dense in the Gamma-weighted space. Indeed the Laplace
+transform of an \(L^2\) function times the Gamma density is
+analytic on \(\operatorname{Re}z<1/2\). Orthogonality to every
+monomial makes its Taylor series at zero vanish. Uniqueness
+of the Fourier transform then gives the zero function.
+Thus \(r^{\beta_j}L_m^{(\alpha_j)}(r^2/2)Y_j\) form a
+complete eigenbasis for the Gaussian form. The shift by
+\(-1\) and the omission of the constant pair give (SN11).
+Since \(\beta_j\to\infty\), only finitely many pairs occur
+below any fixed energy.
+
+For the upper limit in (SN11), approximate each member of
+the first \(d\) limit eigenspaces, taking only \(d\)
+orthonormal vectors, by the balanced smooth tests used in
+(SN3). Polarization gives convergence of the form matrices
+on the resulting finite-dimensional spaces. Taking the
+approximation error to zero proves the min–max upper bound.
+
+For the lower limit, take \(\rho_i\uparrow1\) realizing the
+lower limit and \(d\)-dimensional spaces with Rayleigh
+suprema within \(o(1)\) of \(\xi_d(\rho_i)\). Choose
+orthonormal bases. Each basis vector has bounded
+\(J_{\rho_i}/(1-\rho_i)\) by (SN2), so one finite diagonal
+extraction gives strong limits for the entire basis.
+The limit vectors stay orthonormal and balanced. For each
+fixed linear combination, (SN8) gives the gradient lower
+limit. The potential term converges to minus the squared
+norm by strong convergence and \(0<b_\rho\le1\). This
+bounds the limiting Rayleigh supremum on the span of the
+limit vectors by the lower limit of \(\xi_d(\rho_i)\), as
+required.
+
+For fixed \(0<\rho<1\), the integral operator of the
+rescaled form is compact. Its kernel is bounded in
+absolute value by a finite multiple of the Mehler kernel,
+which is Hilbert–Schmidt by the ambient Hermite expansion
+with squared-norm sum \((1-\rho^2)^{-n}\).
+The diagonal term of (SN2) is bounded below by
+\(p_F/(1-\rho)-1\), using the self-facet row bound in (SN5)
+and nonnegativity of the adjacent rows. These properties
+persist under compression to \(X\). The bottom of the
+essential spectrum is therefore at least that lower bound.
+It tends to infinity, whereas every fixed variational
+level has a finite limit, proving the discreteness
+assertion. In particular the limiting first level is simple
+and the limiting second level is \(\min\{3,\beta_1-1\}>1\).
+The first eigenvalue of the rescaled form is simple for
+\(\rho\) sufficiently close to one, and its normalized
+eigenfunction converges up to sign to the normalized
+\(r^2-n\). This follows by the first two level limits
+and the same compactness and lower-limit argument applied
+to first eigenfunctions.
+
 External mathematical review and formal verification remain open.

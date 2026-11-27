@@ -79,7 +79,7 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md",
-      "sha256": "fa1d84c8f35bfe2dbf769a0537727ad943efefbd768bf2b9ef3dd3b23c5ba3a8",
+      "sha256": "d762dfdae9a27ba80f05522dd7e3c9c37e1d99a24a8a80cab1f6920747e1e815",
       "locator": "Y1-Y5 general lengths, mismatch escape, role normalization, pure/full counts and k2,s1 closure"
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
-      "sha256": "0c76e879a3e43a792e8278abdafe26807d6bc08b4ea5cb11e9749d2884fce61b",
+      "sha256": "16aade0668b09fceae403f6428b4f651e1de553ca19199c9c9b9e76ad00ce730",
       "locator": "U1-U2 actual groups and unique quadratic lift/count conventions"
     },
     {
@@ -102,14 +102,14 @@
     "checker": "research/arithmetic/verify_polynomial_two_cycle_pair.py",
     "checker_sha256": "933a6e6979598c161bb671d11a03e5457e0e0a2a5806706e446c942a33387c8c",
     "receipt": "research/arithmetic/polynomial_two_cycle_pair_verification.json",
-    "receipt_sha256": "bf0a2ec5647a2079eb5f8bc0c3948ec53681c700cb423d2fae9c20a619392f6a",
+    "receipt_sha256": "a3b264490130eca87513e1f3fdadb2ee952e60549ec1b593044148a5574195fc",
     "command": "python3 research/arithmetic/verify_polynomial_two_cycle_pair.py",
     "software": "Python3.12.3 standard library, assertions active",
     "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
     "normalization_scope": "85 ordered four-length domains:all81 choices2..4 plus four asymmetric larger choices throughdegree31, maximum length17. 336 path-distance pairs,780 changes of each distance, 672 role exchanges,1272 star controls and452 matching escapes across all three mismatch types. Nine aligned repeated-pair matchings correctly remain outside the primitive route. Every normalized path agrees with an independently constructed canonical absolute label.",
     "component_scope": "25 complete two-cycle-pair passports, including equal heavy profiles with unequal within-color lengths, and six complete3+1 passports. Closures use only six signed pure generators. 31 distinct complete passports represent774027 literal tuples. All exact groups, block divisors, decks and independent character totals checked.",
     "negative_scope": "Three invalid domains rejected. Exact unequal matching witness with no opposite-exclusive capture still escapes by an O/A orO/B contact; unequal phase-zero matching is not labeled imprimitive.",
-    "limits": "Uniform conclusions use Y1-Y5's written proof and the explicit primary input to the3+1 case. No finite extrapolation, no arbitrary first-deficit classification, no auxiliary residue-curve irreducibility or genus/rationality assertion."
+    "limits": "Uniform Y1-Y5 conclusions use their written proof and primary input to3+1. Z1-Z5 now independently close every k2 positive first deficit. First-deficit k>=3, deeper/zero-simple cases and general lifting classification remain open. No finite extrapolation or auxiliary residue-curve irreducibility/genus/rationality claim."
   },
   "mathematical_review": {
     "status": "pending",

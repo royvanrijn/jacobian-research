@@ -1,0 +1,1321 @@
+{
+  "schema_version": 1,
+  "kind": "two_heavy_complete_first_deficit",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "07bf12640d5956fb15a296b49455bcb171dfb70c5fd31c5aac5b17553ea7c3a1",
+  "input_sha256": {
+    "POLYNOMIAL_TWO_HEAVY_FIRST_DEFICIT_COMPONENTS.md": "49eab17f53b268809de5e0f83e5678d213588a48301eaa0fa1393139f8de7e13",
+    "POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md": "d762dfdae9a27ba80f05522dd7e3c9c37e1d99a24a8a80cab1f6920747e1e815",
+    "POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md": "16aade0668b09fceae403f6428b4f651e1de553ca19199c9c9b9e76ad00ce730",
+    "POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md": "223a7a0e369615e8dd0829c115148739c0641bbaaa72bcd6db48ee2baecd7474",
+    "POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md": "41ef39268c78d0f7d1b0f77d8777d167a59bf062d43d122573ee915a846399fb",
+    "POLYNOMIAL_PASSPORT_COMPONENTS.md": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+    "POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+    "verify_polynomial_two_cycle_pair.py": "933a6e6979598c161bb671d11a03e5457e0e0a2a5806706e446c942a33387c8c",
+    "verify_polynomial_duplicated_cycle_paths.py": "61a0a953f060f3ba23c22ba89b42fdeba754fb8538b53c70735b36145c4adc51",
+    "verify_polynomial_first_deficit.py": "e6332460b3022183191e73635215ebab17ee5e1f170dc3399943eb23f28a1888",
+    "verify_polynomial_stable_hermite.py": "31b4ae6baa08745f52573c9800d0c940b6c7859fe3b596c025a3f519e1218533",
+    "verify_polynomial_phase_interpolation.py": "ed5b5aa8fd7afa01d8fdfc3f78c97bbdfbdd5a4c02175a4471b77abe734f0c91",
+    "verify_polynomial_involution_components.py": "d6bde612a95ae7107989f5a95f68b6fafe79f0d60b1cefa254add8269708ec6c",
+    "verify_polynomial_lift_transport.py": "90fb74f4edc71e7e871261d97cf97a624a8efe602d972cbb517dd727c45ee78e",
+    "verify_polynomial_passport_components.py": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+    "sources/jones-zvonkin-braid-cacti-2002.pdf": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+    "sources/goulden-jackson-cacti-1992.pdf": "a43abccf0519d4839d4c012a4990cff66c9ed4636bc459512e84a2825fc78331",
+    "sources/wajnryb-two-special-fibers-1995.pdf": "b1ede26039b48d20de120333ca57accb919bd0ef6a9da2c0c3fdb15c76c91cb0",
+    "sources/chen-gendron-prado-tahar-isoresidual-curves-2026.pdf": "0a927b724717a9b23ad7126960dc254bc818411d026cbd95b2281cc1869ba7f3",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_index_two_hurwitz_mixtures.py": "1f66c391650dc11f5226c25470dcae22a3800643c1b1d737b1fb687831fc2d3f",
+    "verify_mixed_hurwitz_isolation.py": "6763c1ebf292c314c3cf9b7f7f9de345beb0191143e4b832d0516b8bebc0336b"
+  },
+  "constructive_controls": [
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "states": 7,
+      "checks": 84,
+      "outside_creations": 3,
+      "deleted_edges": 1
+    },
+    {
+      "profiles": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "states": 7,
+      "checks": 87,
+      "outside_creations": 3,
+      "deleted_edges": 1
+    },
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "states": 7,
+      "checks": 105,
+      "outside_creations": 6,
+      "deleted_edges": 1
+    },
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "states": 7,
+      "checks": 119,
+      "outside_creations": 6,
+      "deleted_edges": 2
+    },
+    {
+      "profiles": [
+        [
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "states": 7,
+      "checks": 141,
+      "outside_creations": 6,
+      "deleted_edges": 3
+    },
+    {
+      "profiles": [
+        [
+          3
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "states": 7,
+      "checks": 49,
+      "outside_creations": 6,
+      "deleted_edges": 0
+    },
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "states": 7,
+      "checks": 49,
+      "outside_creations": 6,
+      "deleted_edges": 0
+    },
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "states": 7,
+      "checks": 148,
+      "outside_creations": 6,
+      "deleted_edges": 3
+    }
+  ],
+  "three_edge_graph_controls": [
+    {
+      "A_cycles": 2,
+      "B_cycles": 2,
+      "capacities": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 4,
+      "directed_leaf_moves": 8
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 2,
+      "capacities": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 4,
+      "directed_leaf_moves": 8
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 2,
+      "capacities": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "three_edge_forests": 4,
+      "directed_leaf_moves": 8
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 3,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 18,
+      "directed_leaf_moves": 60
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 3,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 20,
+      "directed_leaf_moves": 72
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 3,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "three_edge_forests": 19,
+      "directed_leaf_moves": 66
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 4,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 48,
+      "directed_leaf_moves": 216
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 4,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 56,
+      "directed_leaf_moves": 264
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 4,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "three_edge_forests": 52,
+      "directed_leaf_moves": 240
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 5,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 100,
+      "directed_leaf_moves": 560
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 5,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 120,
+      "directed_leaf_moves": 680
+    },
+    {
+      "A_cycles": 2,
+      "B_cycles": 5,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "three_edge_forests": 110,
+      "directed_leaf_moves": 620
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 2,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 18,
+      "directed_leaf_moves": 60
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 2,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 20,
+      "directed_leaf_moves": 72
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 2,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "three_edge_forests": 19,
+      "directed_leaf_moves": 66
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 3,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 78,
+      "directed_leaf_moves": 468
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 3,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 84,
+      "directed_leaf_moves": 540
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 3,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "three_edge_forests": 81,
+      "directed_leaf_moves": 504
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 4,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 204,
+      "directed_leaf_moves": 1656
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 4,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 220,
+      "directed_leaf_moves": 1872
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 4,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "three_edge_forests": 210,
+      "directed_leaf_moves": 1740
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 5,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 420,
+      "directed_leaf_moves": 4200
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 5,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 455,
+      "directed_leaf_moves": 4680
+    },
+    {
+      "A_cycles": 3,
+      "B_cycles": 5,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "three_edge_forests": 433,
+      "directed_leaf_moves": 4392
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 2,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 48,
+      "directed_leaf_moves": 216
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 2,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 56,
+      "directed_leaf_moves": 264
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 2,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "three_edge_forests": 52,
+      "directed_leaf_moves": 240
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 3,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 204,
+      "directed_leaf_moves": 1656
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 3,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 220,
+      "directed_leaf_moves": 1872
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 3,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "three_edge_forests": 210,
+      "directed_leaf_moves": 1740
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 4,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 528,
+      "directed_leaf_moves": 5760
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 4,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 560,
+      "directed_leaf_moves": 6336
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 4,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "three_edge_forests": 544,
+      "directed_leaf_moves": 6048
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 5,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 1080,
+      "directed_leaf_moves": 14400
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 5,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 1140,
+      "directed_leaf_moves": 15600
+    },
+    {
+      "A_cycles": 4,
+      "B_cycles": 5,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "three_edge_forests": 1108,
+      "directed_leaf_moves": 14952
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 2,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 100,
+      "directed_leaf_moves": 560
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 2,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 120,
+      "directed_leaf_moves": 680
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 2,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "three_edge_forests": 110,
+      "directed_leaf_moves": 620
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 3,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 420,
+      "directed_leaf_moves": 4200
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 3,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 455,
+      "directed_leaf_moves": 4680
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 3,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "three_edge_forests": 442,
+      "directed_leaf_moves": 4488
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 4,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 1080,
+      "directed_leaf_moves": 14400
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 4,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 1140,
+      "directed_leaf_moves": 15600
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 4,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "three_edge_forests": 1108,
+      "directed_leaf_moves": 14952
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 5,
+      "capacities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_edge_forests": 2200,
+      "directed_leaf_moves": 35600
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 5,
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "three_edge_forests": 2300,
+      "directed_leaf_moves": 38000
+    },
+    {
+      "A_cycles": 5,
+      "B_cycles": 5,
+      "capacities": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "three_edge_forests": 2250,
+      "directed_leaf_moves": 36800
+    }
+  ],
+  "complete_component_controls": [
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "simple_factors": 2,
+      "degree": 8,
+      "pure_generators": 12,
+      "fixed_order_pure_absolute_size": 320,
+      "fixed_order_pure_literal_size": 2560,
+      "full_type_placements": 12,
+      "full_literal_domain": 30720,
+      "literal_seed": [
+        [
+          5,
+          1,
+          2,
+          4,
+          3,
+          0,
+          7,
+          6
+        ],
+        [
+          4,
+          1,
+          2,
+          3,
+          0,
+          7,
+          6,
+          5
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "group": {
+        "actual_group_order": 40320,
+        "normal_transposition_support_edges": 28,
+        "all_block_count_divisors": [
+          1,
+          8
+        ],
+        "deck": 1
+      },
+      "orbit_sha256": "52a6d7b518ec782489ef7f7944c12777ae68694a743683da6f4e23d9b9f8454d"
+    },
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "simple_factors": 2,
+      "degree": 9,
+      "pure_generators": 12,
+      "fixed_order_pure_absolute_size": 1350,
+      "fixed_order_pure_literal_size": 12150,
+      "full_type_placements": 12,
+      "full_literal_domain": 145800,
+      "literal_seed": [
+        [
+          5,
+          1,
+          2,
+          4,
+          3,
+          0,
+          7,
+          6,
+          8
+        ],
+        [
+          4,
+          1,
+          2,
+          3,
+          0,
+          7,
+          6,
+          8,
+          5
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "group": {
+        "actual_group_order": 362880,
+        "normal_transposition_support_edges": 36,
+        "all_block_count_divisors": [
+          1,
+          9
+        ],
+        "deck": 1
+      },
+      "orbit_sha256": "34559f8808d019cfeafcc0e353e2cf01c54ccc757152fae7c5a892367518d580"
+    },
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "simple_factors": 2,
+      "degree": 9,
+      "pure_generators": 12,
+      "fixed_order_pure_absolute_size": 81,
+      "fixed_order_pure_literal_size": 729,
+      "full_type_placements": 12,
+      "full_literal_domain": 8748,
+      "literal_seed": [
+        [
+          8,
+          1,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          0
+        ],
+        [
+          5,
+          1,
+          2,
+          3,
+          4,
+          7,
+          6,
+          0,
+          8
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "group": {
+        "actual_group_order": 362880,
+        "normal_transposition_support_edges": 36,
+        "all_block_count_divisors": [
+          1,
+          9
+        ],
+        "deck": 1
+      },
+      "orbit_sha256": "1e35462e43ebe706cb523da27314efdb4a7b577c70f01c8c4d1f7cc82d4a5e8f"
+    },
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "simple_factors": 3,
+      "degree": 10,
+      "pure_generators": 20,
+      "fixed_order_pure_absolute_size": 8750,
+      "fixed_order_pure_literal_size": 87500,
+      "full_type_placements": 20,
+      "full_literal_domain": 1750000,
+      "literal_seed": [
+        [
+          7,
+          1,
+          2,
+          4,
+          3,
+          6,
+          5,
+          0,
+          9,
+          8
+        ],
+        [
+          6,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          9,
+          8,
+          7
+        ],
+        [
+          4,
+          1,
+          2,
+          3,
+          0,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "group": {
+        "actual_group_order": 3628800,
+        "normal_transposition_support_edges": 45,
+        "all_block_count_divisors": [
+          1,
+          10
+        ],
+        "deck": 1
+      },
+      "orbit_sha256": "f079fe578834246f29c936aba79297277232d206ec3de6f67538bcc2ba830652"
+    },
+    {
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "simple_factors": 3,
+      "degree": 10,
+      "pure_generators": 20,
+      "fixed_order_pure_absolute_size": 25000,
+      "fixed_order_pure_literal_size": 250000,
+      "full_type_placements": 10,
+      "full_literal_domain": 2500000,
+      "literal_seed": [
+        [
+          7,
+          1,
+          2,
+          3,
+          6,
+          5,
+          4,
+          0,
+          9,
+          8
+        ],
+        [
+          6,
+          1,
+          2,
+          3,
+          5,
+          4,
+          0,
+          9,
+          8,
+          7
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          2,
+          1,
+          0,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "group": {
+        "actual_group_order": 3628800,
+        "normal_transposition_support_edges": 45,
+        "all_block_count_divisors": [
+          1,
+          10
+        ],
+        "deck": 1
+      },
+      "orbit_sha256": "bb72c91d5f02d7a159ff69d06c2fadf55af5c1b8b544d5cc162798af3eef3e9f"
+    }
+  ],
+  "complete_passport_count": 5,
+  "complete_literal_domains": 4435268,
+  "negative_controls": {
+    "rejected": 3,
+    "incorrect_component_rotation_exponent_rejected": true
+  },
+  "scope": "Written Z1-Z5 classify the complete positive first deficit with two non-transposition factors and s=p-3>=1 transpositions. Everyp>=5 has one primitiveS_N component, also under fixed-order pure braids; p4 is Y's two-cycle classification with its sole quadratic exception. Universal hub and forest moves, three-edge graph normalization, component-phase loop and labeled one-heavy cabling prove the uniform claim. Finite controls are not extrapolated. First-deficit k>=3, deeper and zero-simple passports remain open.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

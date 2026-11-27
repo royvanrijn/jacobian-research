@@ -59,7 +59,7 @@
     },
     {
       "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
-      "sha256": "0c76e879a3e43a792e8278abdafe26807d6bc08b4ea5cb11e9749d2884fce61b",
+      "sha256": "16aade0668b09fceae403f6428b4f651e1de553ca19199c9c9b9e76ad00ce730",
       "locator": "U1-U3 first-deficit groups, complete imprimitive sector and geometric factor criterion"
     },
     {
@@ -77,7 +77,7 @@
     "checker": "research/arithmetic/verify_polynomial_dt_duplicated_cycle.py",
     "checker_sha256": "2c9b314831061b86b4fe2ac8a31aeaada66eae6edba776d017439f092ae59478",
     "receipt": "research/arithmetic/polynomial_dt_duplicated_cycle_verification.json",
-    "receipt_sha256": "76826c2acdffb67052805000c7f9d8610fd597ad1b592c98f2f13753e7423608",
+    "receipt_sha256": "c4a032cd6248210af24b0232e3ad933b0ebfedf4f403da16df86b50be9aaee00",
     "command": "python3 research/arithmetic/verify_polynomial_dt_duplicated_cycle.py",
     "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
     "software": "Python3.12.3 standard library, assertions active",

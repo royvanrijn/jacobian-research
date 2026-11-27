@@ -16,15 +16,15 @@ the following restrictions.
   infinite on some fibers.
 - On a compact positive correlation band, approximate realization
   of a spanning tree by reflections forces an actual maximizer close
-  to the simplex orbit. In the four-cell active space the all-correlation
-  local gap then excludes nonsimplex maximizers with sufficiently small
-  spanning-tree reflection error.
+  to the simplex orbit. In the four- and five-cell active spaces the
+  all-correlation local gap then excludes nonsimplex maximizers with
+  sufficiently small spanning-tree reflection error.
 
 The single-reflection sign argument is the one used in
 [the three-cell reflection reduction](THREE_CELL_REFLECTION_REDUCTION.md#orientation-and-gaussian-rearrangement).
 Here the transpositions propagate through the entire graph and fix the
 geometry of each component. The result applies to actual global
-maximizers, including a potential tetrahedral tie at the first
+maximizers, including a potential four- or five-cell tie at the first
 continuation endpoint.
 
 ## Sorting a reflected pair
@@ -282,15 +282,15 @@ Their pair normals change by \(O(\sqrt\varepsilon)\).
 Apply the central halfspace angle formula again and take the
 union of the wrong-side events over pairs. This gives (RG5).
 
-For four cells in dimension three, the
-[all-correlation interface gap](TETRAHEDRAL_STANDARD_GAP.md) and
+In the active space for [four cells](TETRAHEDRAL_STANDARD_GAP.md)
+or [five cells](FIVE_CELL_A3_BRIDGE.md), the all-correlation gap and
 [(B10)–(B11)](POSITIVE_CORRELATION_CONTINUATION.md#an-interface-gap-implies-a-uniform-measurable-local-comparison)
 give a neighborhood of the simplex orbit with strict local
 comparison, uniformly on \([a,b]\) by a finite cover of the band.
 With \(\varepsilon\) sufficiently small, (RG5) places the
-maximizer in this neighborhood, so it is tetrahedral. In
+maximizer in this neighborhood, so it is the regular simplex partition. In
 particular a nonsimplex tied maximizer at a hypothetical
-finite tetrahedral transition has a positive spanning-tree
+finite four- or five-cell transition has a positive spanning-tree
 reflection defect on any compact correlation band containing it.
 This excludes approximate full reflection symmetry in the active
 space. It leaves open the existence of a sufficiently asymmetric

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_TWO_HEAVY_FIRST_DEFICIT_COMPONENTS.md",
+  "assurance": "Internal written complete k2 positive first-deficit classification, with exact finite controls. The final cabling step uses the actual labeled primary isoresidual component theorem; it does not infer refined connectivity from bundled connectivity alone. No novelty, independent replay, external review, formal verification or arbitrary-passport classification asserted.",
+  "declarations": [
+    {
+      "node": "ARITH-POLYNOMIAL-TRANSPOSITION-HUB-NORMALIZATION",
+      "name": "Lemma Z1. A transposition hub with the heavy factors fixed",
+      "scope": "For any minimal full-cycle tuple with two fixed heavy permutations and positive literal transpositions, deleting the T edges gives s+1 heavy components, with AB full on each. For any root sheetr in one component, braids and absolute relabeling keep both heavy factors literal and make everyT=(r,xj), one outer endpoint in every other heavy component. Gather a nonroot edge last, rotate it by the full complementary prefix, and increase root degree; then align all root endpoints."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-TWO-HEAVY-OUTSIDE-AND-EDGE-DELETION",
+      "name": "Lemma Z2. An outside sheet and edge deletion",
+      "scope": "At the two-heavy first deficit s=p-3, the bipartite heavy forest satisfies e=z+2, z counting sheets fixed by both heavies. Forp>=5, e2,z0 leaves an isolated heavy cycle. Make it a quotient leaf, rotate its T endpoint to opposite-exclusive support and capture to create an outside sheet. With an outside sheet any heavy edge can be deleted, reducing e,z byone, using an exclusive outside T leaf and the literal two-move capture. Both colors are covered."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-TWO-HEAVY-THREE-EDGE-FOREST-NORMALIZATION",
+      "name": "Lemma Z3. Buffered leaf transfers normalize the heavy forest",
+      "scope": "With an outside buffer, any heavy leaf cycle transfers to any free slot of the opposite color, retaining all other heavy incidences and restoring the outside count. Delete to e3,z1. Every three-edge bipartite forest with at least two cycles of each color reaches P4 by leaf transfers. Role exchanges and an explicit three-transfer isolated-cycle replacement select any two cycles of each color; same-neighbor transfers prescribe both path distances. Degrees introduced are at most2. Hence one prescribed P4 plus isolated heavy cycles is the heavy-forest normal form."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-TWO-HEAVY-COMPONENT-PHASE-CABLING",
+      "name": "Lemma Z4. Independent phases and labeled attachment normalization",
+      "scope": "For s>=2 and one outside sheetw, normalize T to a w-hub. A pure loop combines a prefix(A,B,Tj) full twist to powerLj+1 with the inverse two-heavy twist to powerLj+1, realizing just the AB-component rotationRj while fixing everyT. The labeled one-heavy log-derivative fiber has s simple zeros, simple poles with residues (R-cycle lengths),-N and no resonance; primary CGPT Theorem1.7 makes it connected with both roots and simple points labeled. Cable the R strand by A,B. Its residual conjugator fixes each R-cycle and is a product of rotations; the explicit pure loops remove it. Thus attachment orders and phases normalize without losing the heavy refinement."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-TWO-HEAVY-FIRST-DEFICIT-COMPLETE-COMPONENTS",
+      "name": "Theorem Z5. Complete two-heavy first-deficit classification",
+      "scope": "For every positive first deficit with two non-transposition factors, p>=4,s=p-3,N=sum(a)+sum(b)-2, allp>=5 have exactly one actualS_N component, also under fixed-order pure braids, blocks1,N anddeck1. The p4 base has one primitive component and only the known both-repeated two-cycle profiles have a second quadratic component. Ordered literal totalH=N^(s+1)*(u+B0-3)!/((B0-2)!prod ma!)*(v+A0-3)!/((A0-2)!prod mb!). Forp>=5 this is the pure literal size, pure absoluteH/N; full placements multiply by(s+2)(s+1)/(1+indicator(equal heavy profiles)). Pure transitivity uses Q^3 literal stabilizers exchanging hub-T strand marks; the pure full twist supplies literal centralizer rotations."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Dawei Chen, Quentin Gendron, Miguel Prado and Guillaume Tahar",
+      "title": "Isoresidual curves",
+      "doi": "10.5802/jep.339",
+      "url": "https://jep.centre-mersenne.org/articles/10.5802/jep.339/",
+      "path": "research/arithmetic/sources/chen-gendron-prado-tahar-isoresidual-curves-2026.pdf",
+      "sha256": "0a927b724717a9b23ad7126960dc254bc818411d026cbd95b2281cc1869ba7f3",
+      "inspected": "Published introduction p892 explicitly labels poles and zeros; Definition1.1 p892 and actual Theorem1.7 p895 rechecked. F1's exact log-derivative bridge and collision removal were inspected.",
+      "application": "Z4:one-heavy R plus s>=2 simple branches, every zero order1, labeled positive residues and-N. No proper subset residue sum vanishes. At least four simple poles and odd zero orders exclude both exceptional families. Both R-cycle and simple-branch labels are retained.",
+      "scope_boundary": "Its one-heavy connectivity is lifted by an explicit cabled braid and corrected component-phase loops. It is not used as a direct two-heavy theorem."
+    },
+    {
+      "authors": "Gareth A. Jones and Alexander Zvonkin",
+      "title": "Orbits of braid groups on cacti",
+      "doi": "10.17323/1609-4514-2002-2-1-127-160",
+      "url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "inspected": "Actual Theorem1.1 and Sections1.3,2.2,5.4 as audited in the preceding sources.",
+      "application": "Polynomial/cactus/braid correspondence and precise count conventions.",
+      "scope_boundary": "No unrestricted connectivity or new forest normalization imported."
+    },
+    {
+      "authors": "I.P. Goulden and D.M. Jackson",
+      "title": "The Combinatorial Relationship Between Trees, Cacti and Certain Connection Coefficients for the Symmetric Group",
+      "doi": "10.1016/S0195-6698(05)80015-0",
+      "url": "https://uwaterloo.ca/math/sites/default/files/uploads/documents/gjeurjc1992.pdf",
+      "path": "research/arithmetic/sources/goulden-jackson-cacti-1992.pdf",
+      "sha256": "a43abccf0519d4839d4c012a4990cff66c9ed4636bc459512e84a2825fc78331",
+      "inspected": "Actual Section3 pp361-363; corrected theorem hypothesis from proof p363, audited in K1/U2.",
+      "application": "General ordered total(8), not transitivity.",
+      "scope_boundary": "Printed cycle-count hypothesis slip is not reused."
+    },
+    {
+      "authors": "Bronislaw Wajnryb",
+      "title": "Orbits of Hurwitz action for coverings of a sphere with two special fibers",
+      "doi": "10.1016/S0019-3577(97)89139-2",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2396/1/preprint_1995_75.pdf",
+      "path": "research/arithmetic/sources/wajnryb-two-special-fibers-1995.pdf",
+      "sha256": "b1ede26039b48d20de120333ca57accb919bd0ef6a9da2c0c3fdb15c76c91cb0",
+      "inspected": "Actual definition and Theorem1 retained pp1-2, rechecked in the two-heavy program.",
+      "application": "Precise closest connectivity comparison.",
+      "scope_boundary": "Infinity and the two heavy values are three nonsimple values, outside its theorem."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_TWO_HEAVY_FIRST_DEFICIT_COMPONENTS.md",
+      "sha256": "49eab17f53b268809de5e0f83e5678d213588a48301eaa0fa1393139f8de7e13",
+      "locator": "Z1-Z5 full all-profile k2 first-deficit proof"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_TWO_CYCLE_PAIR_COMPONENTS.md",
+      "sha256": "d762dfdae9a27ba80f05522dd7e3c9c37e1d99a24a8a80cab1f6920747e1e815",
+      "locator": "Y1-Y5 p4 base, groups/counts and pure convention"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
+      "sha256": "16aade0668b09fceae403f6428b4f651e1de553ca19199c9c9b9e76ad00ce730",
+      "locator": "General first-deficit setup and corrected cactus counting input"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_SINGLE_CYCLE_TAIL_COMPONENTS.md",
+      "sha256": "41ef39268c78d0f7d1b0f77d8777d167a59bf062d43d122573ee915a846399fb",
+      "locator": "F1 labeled log-derivative bridge/collision deletion and F2 single-cycle-heavy case"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_two_heavy_first_deficit.py",
+    "checker_sha256": "07bf12640d5956fb15a296b49455bcb171dfb70c5fd31c5aac5b17553ea7c3a1",
+    "receipt": "research/arithmetic/polynomial_two_heavy_first_deficit_verification.json",
+    "receipt_sha256": "236fe8ffe4441e7e3ae986efeb76ff09f11a4dc84d82aa8d60866d9a70b8d2ad",
+    "command": "python3 research/arithmetic/verify_polynomial_two_heavy_first_deficit.py",
+    "software": "Python3.12.3 standard library, assertions active",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "constructive_scope": "Eight profile pairs throughdegree25, p5..8, including both single-cycle-heavy directions. 56 exact states,782 hub/edge/phase/transfer/cabling/stabilizer controls,42 outside creations from e2 states and11 edge deletions. Both colors of leaf transfer tested; the component-rotation word is checked as a pure literal action fixing everyT.",
+    "graph_scope": "48 complete finite graph domains:2..5 cycles per color, all capacities2, all3 or alternating2/3. All20272 admissible three-edge forests lie in the canonical path's leaf-transfer component. The uniform proof separately classifies the four shapes and gives role/replacement moves.",
+    "component_scope": "Five complete fixed-order pure braid closures, p5 or6,s2 or3, throughdegree10, representing4435268 full literal tuples. ExactS_N normal-transposition graph, blocks/deck, independent hook and cactus totals and every type-placement multiplier checked.",
+    "negative_scope": "Three inadmissible forest/move domains rejected; replacing Lj+1 byLj in the phase word is explicitly detected.",
+    "limits": "Uniform scope uses the written graph/phase/cabling proof and the precise primary labeled-fiber input. No finite extrapolation, no k>=3 first-deficit classification, no deeper/zero-simple classification, and no auxiliary determinant irreducibility asserted."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal proof/source/exact permutation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Hub gathering preserves original cut sides and increases root degree",
+      "Heavy product full cycles on complementary tree components",
+      "At p>=5,e2 one isolated heavy cycle exists; opposite-exclusive support is nonempty",
+      "Exclusive outside leaf construction and any-edge deletion",
+      "Buffered leaf transfer with other T factors allowed to change",
+      "All four three-edge shapes and capacity-safe reduction",
+      "Role switches and three-transfer replacement of isolated cycle identities",
+      "Cyclic distance freedom after core normalization",
+      "Lj+1 component-rotation exponent, gathering conjugation and pure word",
+      "Actual primary labeled poles/zeros and nonresonant positive residue vector",
+      "Cabled braid conjugates both heavies together; residual centralizer fixes each R-cycle",
+      "Independent phase loops remove the complete refinement ambiguity",
+      "Q^3 stabilizers give S_s on simple markings; pure full twist handles literal labels",
+      "DirectS_N group proof and exact factorial/type-placement formulas"
+    ]
+  }
+}

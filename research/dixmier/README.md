@@ -197,6 +197,9 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | The degree-sixteen ordered double curve has six, eight, or twelve exchange-fixed points | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_HIGH_DOUBLE_ENDS.md) |
 | Zero-sum weights require nonzero weighted degree for a rational slice | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_HAMILTONIAN_SLICE_FULL_BOUNDARY.md) |
 | A common root translation normalizes both axial leading rows | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PARTIAL_DEGREE_SLICES_AND_HESSIAN_TRANSFER.md) |
+| A simultaneous triangular shear realizes the two axial corner sums as total degrees | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PARTIAL_DEGREE_FOURTEEN_AND_WEYL_TRANSFER.md) |
+| Weyl center reduction preserves differential orders and top-coefficient degrees as planar partial data | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PARTIAL_DEGREE_FOURTEEN_AND_WEYL_TRANSFER.md) |
+| Two differential orders through twenty force Weyl generation | Internal result | proved | [Source](../jacobian/planar-degree-frontier/SMALL_PARTIAL_GCD_STANDARD_CORNERS.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

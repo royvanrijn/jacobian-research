@@ -425,3 +425,161 @@ This applies to balanced and free-mass possible improvers.
 Combining (VC1) with the signed second-degree estimate gives a
 [sharper label localization](NEGATIVE_VOTING_INTERVAL.md#dimension-uniform-localization-on-the-voting-scale).
 This estimate is used in the [exact large-alphabet same-partition theorem](NEGATIVE_VOTING_INTERVAL.md#exact-gaussian-simplex-minimization).
+
+## Numerical constants for the covariance estimate
+
+For \(B_0=2000\), the constants in (VC1) may be taken as
+\[
+ k_0=\lceil e^{1000}\rceil,\qquad
+ \epsilon=e^{-50},\qquad c=e^{-1201},\qquad C=e^{1500}.
+ \tag{VC9}
+\]
+The inequalities below only use \(\log k\ge1000\). Put \(a=e^{-1000}\)
+and restrict the early path to \(t\le a/z^2\).
+Mills' inequalities give
+\[
+ \log k\le z^2\le2\log k,\qquad z/k\le\phi(z)\le 2z/k .
+\]
+For the lower bound on \(z^2\), at \(y=\sqrt{\log k}\) use
+\(Q_{\rm N}(y)\ge \phi(y)y/(1+y^2)\ge 1/k\).
+The remaining bounds follow from the Gaussian Chernoff and Mills
+bounds.
+
+The entries of \(R_t-I\) in (VC2) have absolute value at most
+\(2001t\). Conditioning on one or two coordinates uses a covariance
+block with inverse norm at most two, since the block differs from
+identity in operator norm by at most \(4002t\). Its conditional
+mean in any remaining coordinate is at most \(10^5t\) times the
+largest absolute value of the fixed coordinates, and its
+conditional variances differ from one by at most \(10^5t\).
+After conditioning on one coordinate the remaining standardized
+correlations have absolute value at most \(10^5t\).
+These bounds follow directly by bounding the conditioning row
+in Euclidean norm by \(\sqrt2\cdot2001t\). For a conditional
+threshold of the form \(x\) after fixing \(X_i=x\), its
+standardized value differs from \(x\) in absolute value by at
+most \(10^5t|x|\), using the one-coordinate Schur complement.
+
+For \(|\lambda_i|\le1/z\) in (VC3) restrict the tie height to
+\([z+10/z,z+11/z]\). The preceding conditional estimates
+give other standardized thresholds at least \(z+7/z\).
+The two fixed coordinates have squared radial length at most
+\(2z^2+49\), and the corresponding inverse covariance differs
+from identity by at most \(10^4t\). The density is therefore
+at least \(e^{-28}\phi(z)^2\). The conditional union bound is
+at most \(e^{-7}\), using
+\(Q_{\rm N}(z+7/z)\le e^{-7}/k\).
+Integrating on the height interval proves (VC4) with \(c_0=e^{-40}\)
+throughout this early path.
+
+For zero prices, one can take \(\eta=e^{-60}\) in (VC5).
+For its upper estimate use equicorrelation
+\(\theta=10^5t\) and conditional threshold \((1+10^5t)x\)
+on \(x\ge0\). The resulting \(c_t\) is at least \(1-10^7t\).
+On \(0\le M_{k-1}\le2z\), the normal hazard rate bound by
+\(2(1+y)\) shows
+\(Q_{\rm N}(c_t M_{k-1})\le e^{10^9 a} Q_{\rm N}(M_{k-1})\).
+The contribution for \(M_{k-1}<0\) is at most \(2^{1-k}\)
+and for \(M_{k-1}>2z\) is at most \(e^{-1.9 z^2}\).
+The contribution from \(x<0\) is bounded by
+\[
+ \exp\bigl(-\tfrac12e^{3z^2/8}\bigr)+
+ \exp\bigl(-z^2/(16\theta)\bigr),
+\]
+with the second term zero at \(\theta=0\).
+Indeed \(kQ_{\rm N}(z/2)\ge e^{3z^2/8}\) and the independent
+common normal would have to fall below
+\(-\sqrt{1-\theta}z/(2\sqrt\theta)\) otherwise.
+Each of these four exterior contributions is at most
+\(e^{-65}/k\) for \(\log k\ge1000\), while
+\(e^{10^9a}-1\le e^{-65}\).
+Using \(\mathbb E Q_{\rm N}(M_{k-1})=1/k\) gives
+\(kP_i(0)\le1+e^{-60}\).
+
+For the lower estimate restrict to \(v=kQ_{\rm N}(x)\) in
+\([e^{-80},100]\). Gaussian tail translation locates \(x\) between
+\(z-20/z\) and \(z+100/z\).
+The conditional standardized thresholds all lie in
+\([z-21/z,z+101/z]\). In this box the bivariate densities
+that enter the orthant comparison are at most
+\(e^{50}\phi(z)^2\), since their covariance differs
+from identity by at most \(10^5t\) in operator norm.
+The sum of their products with absolute correlation
+increments is at most \(2\cdot10^5 e^{50}a\).
+For the independent part, the change from the threshold \(x\)
+to each of the standardized conditional thresholds changes
+its normal tail by a relative factor between
+\(e^{-10^7a}\) and \(e^{10^7a}\), again by the hazard bound.
+The product changes in absolute value by at most \(10^{10}a\)
+because \(v\le100\). Also
+\(\left|(1-v/k)^{k-1}-e^{-v}\right|\le 3\cdot10^4/k\)
+by the Taylor bound for \(\log(1-v/k)\).
+The density ratio \(\phi_{\operatorname{Var}(X_i)}(x)/\phi(x)\)
+is between \(e^{-10^7a}\) and \(e^{10^7a}\) throughout the window.
+Inserting these bounds in the \(dv=-k\phi(x)dx\) integral
+and using
+\(\int_{e^{-80}}^{100}e^{-v}dv\ge1-e^{-80}-e^{-100}\)
+proves \(kP_i(0)\ge1-e^{-60}\).
+
+The proof of the balancing box now applies because
+\(\epsilon+\eta<e^{-40}\). The unscaled facet weights on the
+early path are at least \(\sqrt n\,e^{-40}z/k^2\).
+All squared length differences satisfy
+\[
+ (\ell_e(t)-\ell_f(t))^2\ge
+ \frac{k}{32000}t^2(d_e-d_f)^2
+\]
+by the bound on the diagonal of \(Q_t\). Using
+\(q=k(k-1)/2\ge k^2/4\) in the edge variance computation and
+integrating \(t\) over \([0,a/z^2]\) gives
+\[
+ \int_0^1D(t)t^{-2}\,dt
+ \ge e^{-1200}
+       \left(\|\operatorname{diag}H\|_2^2+\|H\|_F^2/k\right).
+\]
+
+For the slope estimate at \(Q_*\), use the weight derivatives
+at scaled prices in the balancing box. Their absolute bounds
+are \(e^{100}z^2/k^2\) for the two tied-coordinate derivatives
+and \(e^{100}z^2/k^3\) for each other derivative.
+For a check of the constants, the Mills substitution in (VH2)
+gives \(I_j(k)\le e^{20}z^{j-1}/k^j\) for \(j=2,3\).
+On \(y\ge0\) one can use
+\(\phi(y)\le2(1+y)Q_{\rm N}(y)\) and
+\((1+y)/z\le 4(1+\sqrt{\log_+(1/v)})\) after
+substituting \(v=kQ_{\rm N}(y)\).
+Then \((1-v/k)^{k-j}\le e^{-v/2}\) and
+\[
+ \int_0^\infty v^{j-1}
+       (1+\sqrt{\log_+(1/v)})^{j-1}e^{-v/2}\,dv\le 20 .
+\]
+The negative half contributes at most \(2^{-(k-j)}\)
+to the original \(I_j\). For the shifted price integrals use
+\(y=x+1/z\). On \(|y|\le2z\) each density factor is at most
+\(e^4\phi(y)\) and a tied-coordinate derivative adds at most
+\(3z\). These contributions fit within \(e^{100}\) times
+the required powers of \(z\) and \(k\). For \(y>2z\),
+\(6y/z\le y^2/16\), so the product of density factors is
+bounded by \(e^{-(j/2-1/16)y^2}\).
+Integrating with a possible factor \(1+y\) gives at most
+\(100e^{-(2j-1/2)z^2}\) by retaining \(e^{-y^2/16}\)
+for integration. This is negligible compared with
+\(z^{j-1}/k^j\). For \(y<-2z\) use
+\(\Phi(y)^{k-j}\le2^{-(k-j)}\) and integrability of the
+shifted Gaussian density products.
+
+The balanced price norm therefore obeys
+\(\|\lambda_0\|_2\le e^{40}k\|\delta\|_2/z\) and
+\(\|\widehat w(0,\lambda_0)-\widehat w(0,0)\|_{\ell^2(e)}
+ \le e^{142}z\|\delta\|_2/\sqrt k\).
+Also \(C_*\le 2z/\sqrt k\) using
+\(\mathbb E M_k\le z+1/z\), from integrating the union bound on
+the maximum above \(z\).
+The initial slope in (VC6) thus has absolute value at most
+\[
+ e^{144}z^2\|\delta\|_2
+          \left(\|\operatorname{diag}H\|_2^2+\|H\|_F^2/k\right)^{1/2}.
+\]
+Absorb this by Young's inequality with half the early-path
+integral. Since \(z^4\le4(\log k)^2\), the result gives
+the constants in (VC9).

@@ -1786,6 +1786,205 @@ def harmonic_hook_moment_controls():
             "scope": "Exact selected positive hook-field coordinates, shift invariance, transported Vandermonde expansion and free Gaussian determinant moments for k4..k8 in every p2..k-2. Finite product measures at k6 check the determinant-of-unnormalized-moments formula and reject omitted spectator probabilities. A formal polynomial identity checks the truncated Gaussian recurrence through order9, and exact rank-one algebra checks the adjacent map and Gaussian square-completion factor. The unrestricted positivity, harmonicity, Gaussian integral reduction and conditional spectral conclusion S91 are written arguments. The proposed truncated supersolution inequality S91e remains unproved; no quadrature or finite sample certifies it."}
 
 
+def fourth_hook_convexity_certificate():
+    """Complete clipped-curve certificate and bounded S92 algebra controls."""
+    def add(*terms):
+        result = {}
+        for scale, polynomial in terms:
+            for key, value in polynomial.items():
+                result[key] = result.get(key, 0)+scale*value
+        return {key: value for key, value in result.items() if value}
+
+    def multiply(a, b):
+        result = {}
+        for first, v in a.items():
+            for second, w in b.items():
+                key = tuple(i+j for i, j in zip(first, second))
+                result[key] = result.get(key, 0)+v*w
+        return {key: value for key, value in result.items() if value}
+
+    def constant(value, size):
+        return {(0,)*size: value} if value else {}
+
+    def polynomial_determinant(columns):
+        return add(*[(parity(order), multiply(multiply(columns[0][order[0]], columns[1][order[1]]),
+                                               columns[2][order[2]]))
+                     for order in itertools.permutations(range(3))])
+
+    def encode(polynomial):
+        return [[list(key), value] for key, value in sorted(polynomial.items())]
+
+    curve_cases, clip_cases = [], []
+    for names, destination in [(('a', 'b', 'c', 'S', 'T', 'R'), curve_cases),
+                               (('a', 'b', 'c', 'S', 'T'), clip_cases)]:
+        size = len(names)
+        variables = [{tuple(int(i == j) for i in range(size)): 1} for j in range(size)]
+        for order in itertools.permutations(names):
+            position = {v: i for i, v in enumerate(order)}
+            if not (position['a'] < position['b'] < position['c'] and position['S'] < position['T']):
+                continue
+            values = {v: add(*[(1, z) for z in variables[:i+1]]) for i, v in enumerate(order)}
+            x = [values[v] for v in ('a', 'b', 'c')]
+            hinge = lambda t: [add((1, values[v]), (-1, values[t])) if position[v] > position[t] else {}
+                               for v in ('a', 'b', 'c')]
+            if size == 6:
+                later = lambda a, b: a if position[a] > position[b] else b
+                tent = polynomial_determinant([[constant(1, size)]*3, x, hinge('R')])
+                polynomial = add((1, multiply(add((1, values['S']), (1, values['T'])), tent)),
+                    (1, polynomial_determinant([hinge('S'), x, hinge(later('T', 'R'))])),
+                    (1, polynomial_determinant([hinge('T'), x, hinge(later('S', 'R'))])))
+            else:
+                clip = lambda t: [values[v] if position[v] < position[t] else values[t]
+                                  for v in ('a', 'b', 'c')]
+                polynomial = add((-1, polynomial_determinant([clip('S'), x, clip('T')])))
+            assert all(value > 0 and sum(key) == 3 for key, value in polynomial.items())
+            destination.append({'ordering': list(order), 'nonnegative_gap_polynomial': encode(polynomial)})
+    assert len(curve_cases) == 60 and sum(len(c['nonnegative_gap_polynomial']) for c in curve_cases) == 240
+    assert sum(not c['nonnegative_gap_polynomial'] for c in curve_cases) == 30
+    assert len(clip_cases) == 10 and sum(len(c['nonnegative_gap_polynomial']) for c in clip_cases) == 4
+
+    def determinant(matrix):
+        matrix = [list(map(Q, row)) for row in matrix]
+        result = Q(1)
+        for j in range(len(matrix)):
+            pivot = next((i for i in range(j, len(matrix)) if matrix[i][j]), None)
+            if pivot is None:
+                return Q(0)
+            if pivot != j:
+                matrix[j], matrix[pivot] = matrix[pivot], matrix[j]
+                result = -result
+            value = matrix[j][j]
+            result *= value
+            for i in range(j+1, len(matrix)):
+                factor = matrix[i][j]/value
+                for l in range(j+1, len(matrix)):
+                    matrix[i][l] -= factor*matrix[j][l]
+        return result
+
+    def det3(a, b, c):
+        return determinant(list(zip(a, b, c)))
+
+    point = [Q(1), Q(2), Q(3)]
+    hinge = lambda t: [max(v-t, 0) for v in point]
+    lower, upper = Q(3, 2), Q(5, 2)
+    omitted_tent = det3(hinge(lower), point, hinge(upper))
+    assert omitted_tent == -Q(1, 4)
+    assert det3([min(v, upper) for v in point], point, [min(v, lower) for v in point]) == Q(1, 4)
+
+    def coordinate(value, j):
+        return sum(value[:j])-j*value[j]
+
+    hinge_controls = []
+    for k in range(5, 10):
+        q = k-2
+        means = [Q(0), Q(0)]+[-Q((i+1)*(i+2), 2) for i in range(q)]
+        project = lambda value: [coordinate(value, j) for j in range(2, k)]
+        x, z = project(means), project([v*v for v in means])
+        one = [Q(1)]*q
+        triples = list(itertools.combinations(range(q), 3))
+        wedge = lambda a, b, c: [det3([a[i] for i in ids], [b[i] for i in ids], [c[i] for i in ids])
+                                 for ids in triples]
+        wp = [-v for v in wedge(one, x, z)]
+        assert all(v > 0 for v in wp)
+        hinges, linear, pair = [], [], {}
+        for l in range(2, k):
+            f = [max(v-means[l], 0) for v in means]
+            a = project(f)
+            total = sum(f)
+            t = project([v*w for v, w in zip(means, f)])
+            assert a == [min(v, total) for v in x]
+            assert total == x[l-2]
+            clipped_z = [z[min(j, l-2)] for j in range(q)]
+            assert t == [v-means[l]*w for v, w in zip(clipped_z, a)]
+            v = [total-w for w in a]
+            ll = [-r for r in wedge(v, x, z)]
+            assert all(r >= 0 for r in ll)
+            hinges.append((f, a, t, total, clipped_z))
+            linear.append(ll)
+        for l, j in itertools.combinations_with_replacement(range(q), 2):
+            _, a, t, total, zz = hinges[l]
+            _, aa, tt, total_j, zzz = hinges[j]
+            q1, q2 = wedge(a, x, tt), wedge(aa, x, t)
+            c = [(linear[l][i]+linear[j][i]-q1[i]-q2[i])/2 for i in range(len(triples))]
+            yy, yy_l, yy_j = [-v for v in z], [-v for v in zz], [-v for v in zzz]
+            d = wedge(a, x, aa)
+            first = wedge(one, x, yy)
+            second = wedge(a, x, [v-w for v, w in zip(yy, yy_j)])
+            third = wedge(aa, x, [v-w for v, w in zip(yy, yy_l)])
+            c0 = [(total+total_j)*v-w-t for v, w, t in zip(first, second, third)]
+            assert all(2*c[i] == c0[i]+(means[j+2]-means[l+2])*d[i] for i in range(len(c)))
+            assert all(v >= 0 for v in c)
+            pair[l, j] = c
+        weights, base = [Q(1, 2*q)]*q, Q(1, 3)
+        f = [base+sum(weights[l]*hinges[l][0][i] for l in range(q)) for i in range(k)]
+        a = project(f)
+        t = project([v*w for v, w in zip(means, f)])
+        direct = [sum(f)*v+w for v, w in zip(wp, wedge(a, x, [v-w for v, w in zip(z, t)]))]
+        rebuilt = [k*base*wp[i]+(1-sum(weights))*sum(weights[l]*linear[l][i] for l in range(q))
+                   +sum(weights[l]*weights[j]*pair[min(l, j), max(l, j)][i]
+                        for l in range(q) for j in range(q)) for i in range(len(wp))]
+        assert direct == rebuilt and all(v > 0 for v in direct)
+        hinge_controls.append({'k': k, 'exterior_degree': 3, 'coordinate_triples': len(triples),
+                               'hinge_pairs': len(pair), 'exact_residual_decomposition': 'passed'})
+        if k == 6:
+            f = [Q(1, 100)+20*max(v+3, 0) for v in means]
+            a, t = project(f), project([v*w for v, w in zip(means, f)])
+            bad = [sum(f)*v+w for v, w in zip(wp, wedge(a, x, [v-w for v, w in zip(z, t)]))]
+            assert min(bad) < 0
+
+    # Finite independent product measures test the all-degree conditional wedge identity.
+    k, q = 6, 4
+    p0 = [Q(1, 2)-Q(1, k)]*2+[Q(-1, k)]*q
+    b = [[Q(i == j)-Q(1, k) for i in range(k)] for j in range(2, k)]
+    supports = [(-Q(i+1), -Q(i+2)) for i in range(q)]
+    probabilities = (Q(1, 3), Q(2, 3))
+    top_support, top_probabilities = (Q(-1, 2), Q(-3, 2)), (Q(2, 5), Q(3, 5))
+    ratios = [Q(1, i+2) for i in range(q)]
+    conditional_controls = []
+    for p in range(2, 5):
+        sign = (-1)**((p-1)*(p-2)//2)
+        rows = list(itertools.combinations(range(2, k), p))
+        def exterior(columns):
+            return [sign*determinant([[coordinate(column, j) for column in columns] for j in ids])
+                    for ids in rows]
+        def expectation(l=None):
+            result = [Q(0)]*len(rows)
+            for choice in itertools.product(range(2), repeat=q):
+                values = [Q(0), Q(0)]+[top_support[a] if i == l else supports[i][a]
+                                       for i, a in enumerate(choice)]
+                weight = math.prod(top_probabilities[a] if i == l else probabilities[a]
+                                   for i, a in enumerate(choice))
+                columns = [p0]
+                for r in range(1, p):
+                    power = [v**r for v in values]
+                    columns.append([v-sum(power)/k for v in power])
+                if l is not None:
+                    w = [Q(1, 2), Q(1, 2)]+[-Q(i == l) for i in range(q)]
+                    columns = [[v-2*t*sum(a*c for a, c in zip(w, column)) for v, t in zip(column, w)]
+                               for column in columns]
+                value = exterior(columns)
+                result = [a+weight*v for a, v in zip(result, value)]
+            return result
+        direct = [2*v for v in expectation()]
+        for l in range(q):
+            direct = [a+ratios[l]*v for a, v in zip(direct, expectation(l))]
+        a = [2*p0[i]+sum(ratios[l]*b[l][i] for l in range(q)) for i in range(k)]
+        columns = [a]
+        for r in range(1, p):
+            top = sum(probability*v**r for probability, v in zip(top_probabilities, top_support))
+            moments = [sum(probability*v**r for probability, v in zip(probabilities, support))
+                       for support in supports]
+            columns.append([sum((moments[l]-top)*b[l][i] for l in range(q)) for i in range(k)])
+        assert direct == exterior(columns)
+        conditional_controls.append({'k': k, 'p': p, 'product_atoms_per_term': 2**q,
+                                     'summed_conditional_wedge_identity': 'passed'})
+    return {'clipped_curve_cases': curve_cases, 'clipped_pair_sign_cases': clip_cases,
+            'nonzero_curve_coefficients': 240, 'nonzero_pair_coefficients': 4,
+            'hinge_residual_controls': hinge_controls, 'conditional_wedge_controls': conditional_controls,
+            'omitted_tent_reversed_threshold_and_missing_slope_bound_controls': 'passed',
+            'scope': 'Complete exact formal cubic coefficient certificate on all60 orderings of a,b,c,S,T,R with a<b<c and S<T, and all10 orderings for the clipped-pair sign. Nonnegative gap variables cover every admissible real configuration, with coincidences by continuity; the convex-curve hinge extension is the written covering proof. Finite rational controls at k5..k9 check the hinge transports, polarized residual and convex slope decomposition; independent finite product laws at k6 check the all-degree conditional wedge identity. The unrestricted Mills, Gaussian integration, supersolution and full L2/ambient spectral conclusions S92 remain written arguments. No external review, independent replay or formal verification is asserted.'}
+
+
 def perimeter_controls():
     import numpy as np
     q = NormalDist().inv_cdf(2/3)
@@ -1838,6 +2037,7 @@ def main():
                          "standard_hook_gaussian": standard_hook_gaussian_controls(),
                          "higher_exterior_hooks": higher_exterior_hook_checks(),
                          "harmonic_hook_moments": harmonic_hook_moment_controls(),
+                         "fourth_hook_convexity": fourth_hook_convexity_certificate(),
                          "representation_hermite_floors": representation_hermite_floor_checks(),
                          "height_standard_reduction": height_standard_reduction_controls(),
                          "five_cell_mixed_certificate": five_cell_mixed_certificate(),

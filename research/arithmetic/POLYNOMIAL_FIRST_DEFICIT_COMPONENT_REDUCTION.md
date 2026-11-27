@@ -401,9 +401,11 @@ critical-value-map degree. U1--U2 already determine every
 actual monodromy group, block system and deck group at this
 level. Uniform primitive connectedness for the other
 profiles has not been proved.
-The remaining first-deficit profiles include \(k=2,p\ge5\)
-with \(s=p-3\ge2\), and \(k\ge3\), outside already
-resolved families.
+The [two-heavy first-deficit theorem](POLYNOMIAL_TWO_HEAVY_FIRST_DEFICIT_COMPONENTS.md)
+now classifies every \(k=2\) profile, including all higher
+cycle counts, with the sole quadratic exception already
+identified in U1--U2. The remaining first-deficit profiles
+have \(k\ge3\), outside already resolved families.
 In particular rational factorization alone does not certify
 geometric factorization. The general component goal, all
 deeper deficits and zero-simple passports outside already

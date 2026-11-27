@@ -8,10 +8,11 @@ five-cell sectors already have positive gaps by
 For every fixed correlation in the certified range and every ambient
 dimension \(d\ge4\), (S42) gives a positive gap off geometric rotations
 with a gap constant independent of \(d\). The
-[Gaussian Neumann limit](STANDARD_SECTOR_NEAR_ONE.md) gives a separate
-qualitative five-cell interval adjacent to one. Overlap of these
-intervals remains open. The interface theorem concerns the second
-variation and the corresponding local comparison.
+[reflection-chamber comparison](FIVE_CELL_A3_BRIDGE.md) covers
+\(41/50\le\rho<1\), so the five-cell interface gap holds at
+every positive correlation. The
+[Gaussian Neumann limit](STANDARD_SECTOR_NEAR_ONE.md) gives the
+exact first-order scale of the standard-sector gap near one.
 
 ## The three facet gaps
 

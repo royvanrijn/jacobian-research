@@ -57,6 +57,10 @@ The composition still fixes \(x\) and adds a polynomial in
 
 ## The planar frontier
 
+The later [standard-corner argument](SMALL_PARTIAL_GCD_STANDARD_CORNERS.md)
+excludes both profiles in the reduction below and proves inversion
+through common partial degree seventeen.
+
 **Theorem PlanarPartialDegreeFourteenResidual.**
 Over a characteristic-zero field, planar Keller pairs of
 positive partial-degree gcd at most two are invertible.
