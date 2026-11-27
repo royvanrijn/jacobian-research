@@ -361,6 +361,69 @@ All phases with a nonreal value of \(B^2/(de)\) remain outside this
 proof. The independent opposite-axis theorem \(e=-d\), valid for all
 complex cross coefficients, remains available.
 
+## B.5. Strict Cauchy energy still allows nonreal Jordan blocks
+
+**Proposition (strict Cauchy energy does not imply simplicity).** The real-node compression (B.5) can have double nonreal eigenvalues even when the selected node is the largest one, \(J\) is negative definite, and
+\[
+                   JK+K^tJ={\bf1}{\bf1}^t+D,\qquad D>0
+\]
+with \(D\) diagonal. Thus real simple interpolation nodes, the Cauchy off-diagonal entries, and this strict energy identity together do not prove squarefreeness.
+
+Use the same polynomial \(h\) as the derivative-transform counterexample in A.5, and set
+\[
+ P(t)=\int_0^t h(s)\,ds=\frac{tQ(t)}{12000},\qquad
+ Q(t)=121t^4+2200t^3+12400t^2+24000t+12000.
+\]
+The four disjoint intervals in the table below each contain one zero of \(Q\), by their endpoint signs. These are all its zeros, and they are simple and negative. Consequently \(P\) has five distinct real zeros, with selected largest node \(c=0\).
+
+For a zero \(x_i\) of \(Q\), put
+\[
+ S_i=\frac{P''(x_i)}{2P'(x_i)},\qquad
+ K_{ii}=S_i+\frac1{x_i},\quad K_{ij}=\frac1{x_i-x_j}.
+\]
+The general-node energy calculation in B.1 gives \(J=\operatorname{diag}(x_i)<0\) and
+\[
+ JK+K^tJ={\bf1}{\bf1}^t+
+       \operatorname{diag}\left(1+\frac{x_iP''(x_i)}{P'(x_i)}\right).
+\]
+At a zero of \(Q\), the diagonal summand is
+\[
+ 3+\frac{x_iQ''(x_i)}{Q'(x_i)}=\frac{R(x_i)}{Q'(x_i)},\qquad
+ R(t)=2904t^3+33000t^2+99200t+72000.
+\]
+It is strictly positive. Here is an exact interval certificate: both \(Q'\) and \(R\) have the indicated sign throughout each closed interval.
+
+| Interval | Signs of \(Q\) at endpoints | Common sign of \(Q',R\) |
+|---|---|---|
+| \((-19/2,-47/5)\) | \(+,-\) | \(-\) |
+| \((-11/2,-27/5)\) | \(-,+\) | \(+\) |
+| \((-13/5,-5/2)\) | \(+,-\) | \(-\) |
+| \((-4/5,-3/4)\) | \(-,+\) | \(+\) |
+
+These signs can be checked using rational arithmetic alone. For a cubic \(W\), write \(W(a+(b-a)y)=\sum_j d_jy^j\). Its Bernstein coefficients on \([0,1]\) are \(\sum_{j\le k}d_j\binom{k}{j}/\binom{3}{j}\), for \(0\le k\le3\). In each of the eight cases all four coefficients have the sign in the table. The [retained receipt](chebyshev_compressed_differentiation_verification.json) contains every endpoint value and Bernstein coefficient, reconstructed by the [exact checker](verify_chebyshev_compressed_differentiation.py). The identity \(W=\sum_k\beta_k\binom3k y^k(1-y)^{3-k}\) proves the interval signs.
+
+Nevertheless \(K\) is not diagonalizable. In the space of polynomials of degree at most four vanishing at zero, the compression has the operator formula
+\[
+                q\longmapsto q'-q'(0)h(t).
+\]
+This follows directly from B.1: projection subtracts \(q'(0)P'/P'(0)\), and \(P'(0)=1\). In the basis \(t,t^2,t^3,t^4\) its matrix is
+\[
+ A=\begin{pmatrix}
+ -4&2&0&0\\
+ -31/10&0&3&0\\
+ -11/15&0&0&4\\
+ -121/2400&0&0&0
+ \end{pmatrix}.
+\]
+It is similar to \(K\) by the interpolation and diagonal changes in B.1. Direct calculation gives
+\[
+ \det(\lambda I-A)=(\lambda^2+2\lambda+11/10)^2,
+ \qquad B=A^2+2A+(11/10)I\ne0,\qquad B^2=0.
+\]
+The irreducible quadratic has roots \(-1\pm i/\sqrt{10}\). The minimal polynomial must therefore be its square, so each eigenvalue has a nontrivial Jordan block. Equivalently \(\det(I-bK)=(1+2b+11b^2/10)^2\), agreeing with A.5.
+
+This is a counterexample to a matrix-simplicity principle, not to a factorial window. The nodes here are not Chebyshev nodes. Any proof of Chebyshev-resonant squarefreeness must use an additional feature beyond the properties in the counterexample's statement.
+
 ## C. Algebraic real conjugates and exact initial starts
 
 ### C.1. Transfer to an arbitrary real conjugate

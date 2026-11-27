@@ -1,14 +1,14 @@
 {
   "edition_date": "2026-11-27",
-  "review_basis": "Revised standalone every-fixed-k article. Internal analytic self-audit and PDF-only reading; no external human review.",
+  "review_basis": "Attribution-only revision of the standalone every-fixed-k article. Source-aware editorial and layout review; the isolated internal PDF-only review below applies to the preceding recorded edition. No external human review.",
   "source_files": {
-    "main.tex": "54414f6f9aa12705b5ca3ab9aaabbdf8b267158482c301469e3b5e3ed527bcec",
-    "README.md": "18a7b4a7c4334d333a0a224c3e11ac256c7e0e765c23a3ec145dd0bb1250892f",
-    "metadata.json": "37fed4ddd98ef6c8d00acdb5efe6a3b1d96cd031007f30f11f8b8533d01e2997"
+    "main.tex": "b3965a381566ab180fb9972b1c5490036e1b7c874e50fe2ab08fe1894e9b1c5d",
+    "README.md": "3a4eba79bb271394e98dda56df04637ee0aab589a7032e1061384292777ce836",
+    "metadata.json": "6b371b4e350abae19e19dcc50f00aa2d6de1eb129a30337bc486b26f2f040290"
   },
   "pdf": {
     "path": "plurality-small-positive-correlations.pdf",
-    "sha256": "8c2527d72320c7dd25fed7c4cba8cc0d170840506c4dc5093b60d71c63fd18a9",
+    "sha256": "b9237ff0c0a682d3d4ec57788085d6988015738eab7d437fec2ed08fba294abc",
     "pages": 9
   },
   "build": {
@@ -78,21 +78,23 @@
       "49e563472e64bdc88605d0b3f85abb173cfc7b47b3ce499331626e90e325df9f",
       "4b72d6087d5731da1ae4f0fe48c574be4c696e8291750c2b3639c9c3b8e1a242"
     ],
-    "external_review": false
+    "external_review": false,
+    "edition_status": "Precedes the attribution-only revision. Its PDF hash and findings are preserved; no new isolated PDF-only reading is asserted for the current edition."
   },
   "visual_review": {
     "performed": true,
-    "scope": "All nine final-edition pages rendered and inspected by the isolated PDF reader. Source-aware authoring review inspected every page of the preceding nine-page version, a full contact sheet, and the final page at full resolution. No clipping, overlap or obstructive line breaks observed. All fonts embedded, with no Type3 fonts.",
-    "result": "passed"
+    "scope": "Source-aware review of the attribution revision: all nine pages rendered at 100 dpi and inspected in a contact sheet; pages1-2 inspected individually at full rendered size. No clipping, overlap or obstructive line breaks observed.",
+    "result": "passed",
+    "pdf_sha256": "b9237ff0c0a682d3d4ec57788085d6988015738eab7d437fec2ed08fba294abc"
   },
   "source_archive_reproduction": {
     "archive": "source.zip",
-    "sha256": "970eabd252e594b6528afe57e6b49e42c99bbbe120fb9547dcdc47de78d1a953",
+    "sha256": "239aa4e9811fbbc5f05c3047e5062cb27dafa6be80c4e1febfbe6a08b48a3739",
     "contents": [
       "main.tex"
     ],
     "result": "passed",
-    "scope": "Final source archive extracted into an isolated directory and built with the documented command/environment. Source and designated PDF are byte-identical; this certifies artifact reproduction, not mathematical replay."
+    "scope": "Current attribution-revision archive extracted into a fresh temporary directory and built with the documented command/environment. Source and designated PDF are byte-identical; this certifies artifact reproduction, not mathematical replay."
   },
   "mathematical_dependencies": [
     {
@@ -166,6 +168,34 @@
         "changed coverage source: factorial/image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md",
         "unmapped source declaration in that factorial document: doubled-prime nonexceptional windows"
       ]
+    },
+    "attribution_revision": {
+      "date": "2026-11-27",
+      "check_navigation": {
+        "command": "make check-navigation",
+        "result": "blocked_by_concurrent_unrelated_inventory_changes",
+        "baseline": "Before editing, check-navigation already failed on two unmapped arithmetic source PDFs and three stale genus-three paper bundle entries.",
+        "observed_errors": [
+          "unmapped retained document: arithmetic/PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md",
+          "unmapped retained document: arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+          "unmapped retained document: arithmetic/sources/betrema-zvonkin-plane-trees-shabat-1996.pdf",
+          "unmapped retained document: arithmetic/sources/mueller-primitive-polynomial-monodromy-author.pdf",
+          "unmapped retained document: arithmetic/verify_pell_virtual_affine_fibers.py",
+          "unmapped retained document: factorial/image-rigidity/chebyshev_compressed_differentiation_verification.json",
+          "unmapped retained document: factorial/image-rigidity/verify_bilinear_bad_prime_discriminant_order.py",
+          "changed coverage source: factorial/image-rigidity/BILINEAR_REAL_CONJUGATE_RATIO_THREE_WINDOW.md",
+          "changed coverage source: factorial/image-rigidity/verify_chebyshev_compressed_differentiation.py"
+        ]
+      },
+      "paper_scoped_checks": {
+        "result": "passed",
+        "scope": "Bundle coverage and graph pins; 11 article statement mappings and 10 explicit proof links; portfolio metadata; current source/PDF/archive checksums. Artifact/source consistency only."
+      },
+      "render_navigation": "not run: no mathematical status, theorem, graph route or assurance change",
+      "diff_check": {
+        "command": "git diff --check",
+        "result": "passed"
+      }
     }
   },
   "bibliographic_audit": {
@@ -175,9 +205,28 @@
   "checklist_outcomes": {
     "scope": "Title, abstract, Theorems1.1/6.1 and metadata consistently give every fixed k>=2, d>=k-1, a qualitative threshold depending on k and equality rigidity.",
     "essential_arguments": "Sections2-6 supply the complete essential argument, including the credited first-moment covariance proof and fixed-mass existence. Published geometric and dimension-reduction theorems remain imported.",
-    "human_readability": "The opening question, exact theorem, strip-cost example and contradiction precede technical machinery. The PDF-only reader identified contribution, mechanism, hardest step and limitations.",
+    "human_readability": "The abstract and introduction explicitly distinguish Zhang's first-moment endpoint, including k>=4, from this paper's passage to small positive correlations. The earlier PDF-only reader identified the contribution, mechanism, hardest step and limitations of its recorded edition.",
     "uniformity_and_degeneracies": "Constants depend on k; only actual maximizers are dimension reduced. Singular covariances, deficient-rank moments and k=2 zero-dimensional facets are covered.",
     "computation": "No finite experiment or computational certificate is used to prove the theorem. Build and archive equality certify artifacts only.",
     "assurance": "Internal authoring audit and isolated AI reading only. No external review, independent mathematical replay, formal proof, submission or publication."
+  },
+  "editorial_revision": {
+    "date": "2026-11-27",
+    "scope": "Credit clarity in the abstract and introduction; matching metadata abstract and refreshed source/PDF/archive. The mathematical body from Section2 onward is byte-identical to the preceding Git edition.",
+    "attribution": "Zhang supplies the equal-cell first-moment theorem for every k>=2, including k>=4. This paper supplies the nonlinear passage to small positive correlations via measurable-transfer compactness.",
+    "checks": {
+      "mathematical_body_unchanged": "passed: Section2 through end compared with Git HEAD",
+      "metadata_abstract": "passed: exact match to the LaTeX abstract",
+      "latex_build": "passed: nine pages; no warnings or undefined references",
+      "archive_reproduction": "passed: clean build gives byte-identical source and PDF",
+      "visual_review": "passed: all-page contact sheet and full-size pages1-2",
+      "paper_scoped_consistency": "passed: all seven bundle coverage records and graph evidence pins, 11 statement mappings, 10 proof links, portfolio metadata and source/PDF/archive checksums",
+      "diff_check": "passed: git diff --check"
+    },
+    "current_edition_pdf_only_reading": {
+      "performed": false,
+      "scope": "The isolated reading above remains tied to its earlier PDF hash."
+    },
+    "assurance_scope": "Editorial and artifact consistency only. No new mathematical proof, independent replay, formal verification or external review."
   }
 }

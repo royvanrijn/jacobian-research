@@ -18,6 +18,8 @@ The two top symbols are proportional to \(R^2,R^3\), where
 In particular their weights are 20 and 30. The Poisson loss is 5.
 These local endpoints use the multiplicity-26 branch of the
 order-twelve calculation and do not require a bound on \(\deg h\).
+The [next-face argument](#exclusion-by-the-next-newton-face)
+excludes the entire stated branch.
 
 ## The negative fractional-power coefficients
 
@@ -311,26 +313,134 @@ The parenthesis has degree four and leading coefficient
 nonzero, consistently with (3). The new primitiveness by itself
 therefore yields no contradiction through this first resultant.
 
-**Open obligation.** Exclude polynomial solutions of the two-operator
-system
-\[
- [[W,P],P]=2\kappa^2,\qquad
- [W,P]^2=4\kappa^2(W+P^3-2cP)
-\]
-in this order-\((12,9)\) branch, retaining its leading coefficients,
-root multiplicities and known critical face. A successful extension
-of the primitive obstruction must use further coefficients of this
-system or a new consequence of its exact second commutator. Equation
-(4) shows that its principal part alone supplies no obstruction.
-This remains the existing
-[global polynomial constraint gap](POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md);
-neither even profile is excluded here.
+The [next-face argument below](#exclusion-by-the-next-newton-face)
+excludes the even profiles using the polynomial order-nine
+operator and its first commutator. The equations in (2)
+retain the original pair on the face used there.
 
 The existing [exact checker](verify_weyl_primitive_leading_resultant.py)
 also checks (2) in the abstract Weyl algebra over \(\mathbb Q[\kappa,c]\),
 the cancellations and degree in (5), and (4) for three nonzero
 rational \(\beta\)'s. Run
 `python3 research/dixmier/dixmier-formal-lifting/verify_weyl_primitive_leading_resultant.py`
-from the repository root. These are exact internal controls for
-the written argument, not a test of polynomial admission or a
-resolution of the open obligation.
+from the repository root. These are exact internal controls for the length-two
+reduction and the order-34 resultant.
+
+
+## Exclusion by the next Newton face
+
+**Theorem PolynomialWeylOrderTwelveMultiplicityTwentySixExclusion.**
+A polynomial Weyl pair of reduced differential orders \((12,18)\)
+with nonzero scalar commutator cannot have a common leading factor
+with a root of multiplicity 26 and a root of multiplicity less than
+six. In particular, at common-factor degree thirty, the only
+remaining root profile in the \((12,18)\) row is a single root
+of multiplicity thirty.
+
+By the odd-multiplicity exclusion we may assume \(e=2\).
+Use the normalized pair and its polynomial \(W\) above.
+A diagonal Weyl automorphism \(x\mapsto a x,\ y\mapsto a^{-1}y\)
+changes \(z\) by a fifth power. Over \(\mathbb C\) it allows
+\(\beta=1\); constant rescaling of \(P,Q\) gives \(r=z^5(z+1)\).
+Rescale \(W\) to an operator \(B\) with \([B,P]=Q\), so that
+its highest symbol at weight \((-1,6)\) is
+\(-x^{-15}r z(z+1)(2z-1)/30\).
+In particular, at the low-\(z\) endpoints of the known edge,
+\(P,B\) contain \(x^{-20}z^{10},x^{-15}z^6/30\), respectively.
+
+Write the symbols using symmetric ordering, so the symbol of a
+commutator at weight loss \(w\) is the Poisson bracket in the
+convention \(J(P,B)=P_x B_y-P_y B_x\) for \([B,P]\).
+For \(w>0\) all further commutator terms have strictly lower
+weight. A monomial of \(P\) has the form \(x^{i-20}z^j\)
+with \(i,j\ge0\), and the corresponding form for \(B\)
+is \(x^{i-15}z^j\) with \(i,j\ge0\).
+At weights \((-q,6q-p)\), the losses from the weights of the
+two endpoint monomials are \(qi+p(j-10)\) and \(qi+p(j-6)\).
+For \(i=0\) those losses are nonnegative, with equality
+only at the endpoints.
+
+Suppose a monomial with \(i>0\) gives a ratio
+\((10-j)/i\) for \(P\), or \((6-j)/i\) for \(B\), exceeding
+\(1/2\). Take the largest such ratio \(q/p\) in lowest terms.
+The weights have positive sum \(5q-p\). At these weights the
+top symbols of \(P,B\) are
+\[
+        x^{-20}z^{10}U(t),\qquad x^{-15}z^6 V(t),
+        \qquad t=x^p/z^q,
+\]
+where \(U,V\) are polynomials, \(U(0)=1,\ V(0)=1/30\), and
+at least one is nonconstant. The top bracket is
+\[
+ x^{-30}z^{15}S(t),\qquad
+ S=30UV+(20q-10p)tUV'+(6p-15q)tU'V.
+\]
+This follows by differentiating \(t=x^p/z^q\) in the
+coordinates \(x,z=x^6y\), for which the bracket of
+\(x^l A(z)\) and \(x^m C(z)\) is
+\(x^{l+m+5}(lAC'-mA'C)\).
+Since \(S(0)=1\), this is the top symbol of \(Q\).
+Its weight is \(30q-15p\), positive and \(3/2\) times
+the weight \(20q-10p\) of \(P\). The weight bound on
+\([Q,P]\) is \(45q-24p\). A negative bound contradicts the
+scalar commutator directly. If it is zero, then \((p,q)=(15,8)\).
+Polynomial support gives \(\deg U\le1\) and \(\deg V=0\),
+since the two symbols have \(y\)-exponents \(10-qj\) and
+\(6-qj\) at index \(j\). It also gives \(\deg S\le1\) from
+the bracket formula. Therefore the top symbols of \(P,Q\)
+are divisible by \(y^2,y^7\), respectively, and their
+bracket cannot be a nonzero scalar at weight zero.
+Consequently the bound is positive, and their top
+symbols Poisson commute.
+
+The quotient of the square of the \(Q\)-symbol by
+the cube of the \(P\)-symbol is \(S^2/U^3\).
+Poisson commutation makes its derivative in \(t\) zero,
+since \(t\) has weight zero and \(P\) has positive weight
+in the toric chart. Its constant value is one by
+\(U(0)=S(0)=1\). Thus \(U=R^2,\ S=R^3\) for a polynomial
+\(R\) with \(R(0)=1\).
+The bracket equation divided by \(R\) becomes
+\[
+ R^2=30RV+(20q-10p)tRV'-(30q-12p)tR'V.                 \tag{6}
+\]
+Every root of \(R\) is nonzero. At a root of multiplicity \(e\),
+if \(V\) has order \(j\le e\), the derivative
+terms in (6) have a nonzero coefficient at order \(e+j-1\),
+since \((30q-12p)/(20q-10p)>1\). This order is strictly
+less than \(2e\), a contradiction. Hence \(V=RL\) for a
+polynomial \(L\) vanishing at each root of \(R\).
+If \(R\) is constant, (6) reduces to
+\(1=30V+(20q-10p)tV'\), so \(V=1/30\), also impossible
+at the first competing face.
+
+For nonconstant \(R\) set \(n=\deg R\) and \(k=\deg L\ge1\).
+Divide (6) by \(R^2\) and compare the leading power of \(t\)
+at infinity. This gives
+\[
+              30+(20q-10p)k=(10q-2p)n .
+\]
+Polynomial support gives \(2qn\le10\) from the \(y\)-exponent
+of the last term of the \(P\)-symbol. It follows that
+\[
+        30+10(2q-p)\le (10q-2p)n\le 50-10p/q,
+\]
+which forces \(q\le1\) since \(2q-p>0\).
+The case \(q=1\) requires \(p=1\) and equality in the
+bound, with \(n=5\). But then the last \(P\)-term would
+be \(x^{-20} z^{10}(x/z)^{10}=x^{-10}\), which is not a
+polynomial. This rules out the first competing face.
+
+It follows that every monomial of \(P\) has weight at
+most zero at \((-1,4)\), and every monomial of \(B\)
+has weight at most three there. Since \([B,P]=Q\)
+and the commutator loses at least three units of weight,
+\(Q\) has weight at most zero. The same bound on the
+commutator then makes \([Q,P]\) have weight at most
+minus three, contradicting the nonzero scalar.
+Every multiplicity-26 profile with a small root is
+therefore excluded. At degree thirty, a
+multiplicity-26 profile has small roots with total
+multiplicity four. The characteristic-zero statement follows
+by embedding a finitely generated coefficient field, enlarged to
+include the specified roots, into \(\mathbb C\).

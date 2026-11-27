@@ -12,14 +12,14 @@
   "source_archive": "source.zip",
   "source_bundle": "source.zip",
   "build": "SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=plurality-small-positive-correlations main.tex",
-  "verification": "Analytic all-cell proof, including the attributed first-moment covariance argument, with published geometric inputs. Warning-free LaTeX build and all-page visual inspection; the current PDF-only review and archive reproduction are recorded in verification.json. No external specialist review or formal verification.",
+  "verification": "Analytic all-cell proof, including the attributed first-moment covariance argument, with published geometric inputs. Warning-free LaTeX build and all-page visual inspection of the attribution revision; the earlier PDF-only review and current archive reproduction are recorded in verification.json. No external specialist review or formal verification.",
   "verification_record": "verification.json",
   "next_steps": [
     "Obtain specialist mathematical review of the covariance path, moment alignment and measurable-transfer compactness proof.",
     "Complete the historical comparison for the fixed-cell extension before selecting a submission venue."
   ],
   "catalogued_on": "2026-11-27",
-  "abstract": "For every fixed $k\\ge2$, we prove that the central regular-simplex\npartition maximizes Gaussian noise stability among all equal-measure\nmeasurable $k$-cell partitions in every dimension $d\\ge k-1$, for all\nsufficiently small positive correlations. The interval is independent of $d$, and\nequality determines the simplex partition up to orthogonal maps, labels\nand cylindrical extension. The proof combines Zhang's first-moment\ncomparison with compactness for measurable label changes, normalized by\ntheir exact Ornstein--Uhlenbeck score loss. Weighted Gaussian tightness\ngives a limiting facet flux whose sharp quadratic cost forces\nrotationality; moment alignment removes that mode. The threshold is\nqualitative and may depend on the number of cells.",
+  "abstract": "Zhang proved regular-simplex optimality for the sum of squared Gaussian\ncell first moments for every $k\\ge2$, including the $k\\ge4$ endpoint.\nBuilding on his theorem, we prove that, for every fixed $k\\ge2$, the central\nregular-simplex partition maximizes Gaussian noise stability among all\nequal-measure measurable $k$-cell partitions in every dimension $d\\ge k-1$,\nfor all sufficiently small positive correlations. The interval is independent\nof $d$, and equality determines the simplex partition up to orthogonal maps,\nlabels and cylindrical extension. Our contribution is the passage from\nfirst-moment optimality to positive-correlation optimality using compactness\nfor measurable label changes normalized by their exact Ornstein--Uhlenbeck\nscore loss. Weighted Gaussian tightness yields a limiting facet flux whose\nsharp quadratic cost forces rotationality; moment alignment removes that\nmode. The threshold is qualitative and may depend on the number of cells.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "resource_type": {

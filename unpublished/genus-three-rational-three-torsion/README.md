@@ -121,6 +121,40 @@ These sources and their digests are also indexed in the existing
 The bounded source comparison establishes the cited question and the
 scope distinction. It does not settle historical priority.
 
+## Construction priorities from the primary literature
+
+A focused literature check on 27 November 2026 inspected the actual statements
+below. The search located no later resolution of the Müller–Reitsma exceptions;
+this bounded observation does not establish their present open status.
+
+| Precise target | What is available here | Remaining step |
+|---|---|---|
+| Levin–Yan–Wiljanen, question after Theorem 9: a hyperelliptic genus-three curve over $\mathbb Q$ with rational Jacobian three-rank three | HG1 supplies such a curve. HG6 also determines its full torsion as [3,6,12]. | Independent proof review and a priority comparison; no additional existence construction is needed. |
+| Müller–Reitsma, Theorem 1.1: exact full torsion [3,3,3] on a geometrically simple hyperelliptic genus-three Jacobian | HG7 gives marked norm equations and rational tangent directions. | An actual rational smooth solution, a geometric-simplicity certificate, and exclusion of all additional torsion. Formal deformations alone do not suffice. |
+| The same theorem: exact full torsion [6,6] | HG11 already supplies a geometrically simple family with two independent rational three-torsion classes. | Preserve those classes while producing exactly two independent rational two-torsion classes, then bound the entire torsion group. The existing HG11 congruence subfamily has exact torsion [3,3], so a different specialization or family is required. |
+| A genus-three rational-Weierstrass construction with three independent virtual directions | HG11–HG12 supply two directions and simultaneous local virtuality. | A third independent class and compatible local conditions. This is a construction target motivated by the class-group application, rather than a separately verified published open question. |
+
+The Sha comparison needs a further distinction. Theorem 1.5 of
+[Flynn–Shnidman, with an appendix by Fisher](https://people.maths.ox.ac.uk/flynn/arts/art42.pdf)
+proves arbitrarily large elementary $p$-torsion in Sha for absolutely simple
+abelian varieties over $\mathbb Q$, for every prime $p$. Its introduction
+explicitly credits the earlier $p=3$ case to Cassels. Consequently, existence
+of a subgroup $(\mathbb Z/3)^{2r}$ for arbitrary $r$, without further
+restrictions on the variety, is not a new open question.
+The paper also poses a different question in the paragraph following
+Theorem 1.5: order-$p$ Sha elements for varieties with Mumford–Tate group
+$\mathrm{GSp}_{2g}$ and irreducible mod-$p$ representation. A split gluing
+does not meet those hypotheses. Neither does HG11 at $p=3$, because its
+rational three-torsion makes that representation reducible.
+
+MCT16's prescribed alternating blocks, the exact entire three-primary
+group in its later refinements, and HG14's rank-zero genus-three Jacobians
+are narrower constructions. They should be compared under their exact rank,
+dimension, polarization, splitting and group-structure hypotheses before
+any novelty claim. A subgroup assertion does not determine the entire
+three-primary Sha. The present literature check imports no new theorem
+into HG1–HG6 and upgrades no review assurance.
+
 For the PDF-only reader test, supply only the PDF to a reader without
 workspace or conversation context. Record the exact PDF hash, supplied
 context, contribution as understood, conceptual mechanism, hardest step,

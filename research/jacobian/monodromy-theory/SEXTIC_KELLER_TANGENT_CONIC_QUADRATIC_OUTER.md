@@ -7748,3 +7748,326 @@ impossible. This excludes the tie at two.
 There is no remaining tie through \(5/2\), contrary
 to the ordinary \(x^2y^4\) term. This proves the
 weight-four reduction for all cases.
+
+
+## Inversion for the remaining weight-four correction
+
+**Theorem SexticKellerDoubledSquareUncorrectedAxialFourCorrectedInversion.**
+Under the uncorrected \((2,3,4)\) and \((1,1,3)\)
+hypotheses, a corrected \((1,1,4)\) tuple gives inversion.
+In particular the axial tuple of a noninvertible map in
+this frame is uncorrected through weight four.
+
+Use the alternatives of the preceding theorem for \(c\ne0\).
+If the first \(y\)-tie is at \(5/2\), the highest third part
+is \(x^6+c xP\) at weights \((1,5/2,4)\).
+Its full third output is therefore
+\(q(x)y^2+u(x)y+v(x)z+w(x)\), with
+\(\deg q=1,\deg u\le3,\deg v=2,\deg w\le6\).
+The affine-output root restriction makes \(v\) a
+multiple of \(q^2\) and makes \(u\) coprime to \(v\).
+The degree-five inverse completion in the
+[isolated second-output case](#the-isolated-second-output-correction-at-123)
+uses precisely these bounds and gives inversion.
+
+The other alternative for a noninvertible map arose
+at the \(y\)-tie of weight two. In the proof of that
+alternative, the weight-\((1,2,4)\) tuple before the
+translation of \(x\) was
+\[
+       (x^4z^2,\ x^3(x^2+\delta y)z,\
+                 x^2(x^2+\delta y)^2+c x^2z),
+                              \qquad c\delta\ne0.
+\]
+The same highest parts remain after the translation,
+since the \(x\)-weight is positive. In the polynomial
+coordinates from the reduction the actual third output
+is \(C=x^2 V+w(x)\) with \(w'(0)\ne0\), where
+\[
+                  V=c z+\delta^2 y^2+\ell(x)y,
+                           \qquad \deg\ell\le2 .
+\]
+Let \(F,G\) denote the first two outputs in
+\((x,y,V)\). Assign \(V\) weight four, so that the
+substitution for \(z\) preserves the weight bounds.
+The top weighted parts of these outputs are obtained
+from the displayed ones by this substitution using
+the term of degree two in \(\ell\) (zero if absent).
+
+The leading \(y\)-degree of \(F\) is at least four,
+because its \(y^4\)-coefficient has leading term
+a nonzero multiple of \(x^4\).
+The degree is at most five: no \(y^6\) term occurs
+in the highest part of weight twelve.
+If its degree is five, the leading coefficient
+has degree at most one in \(x\) and is independent
+of \(V\): weight two for that coefficient is possible
+only from \(x^2\), and it would have produced
+\(x^2y^5\) in the highest part, which is absent.
+If its degree is four, the leading coefficient
+is univariate of degree four. The only monomial
+in that coefficient involving \(V\) could be
+\(V\) itself, and this would have appeared as
+\(y^4 V\) in the highest part, which is absent.
+Likewise \(G\) has \(y\)-degree three or four, with a
+univariate coefficient of degree three if its degree
+is three, from the term \(x^3 y^3\) in its highest
+part. In degree four its coefficient is constant:
+a term \(xy^4\) would appear at its top weight nine,
+and no such term occurs.
+
+On \(k[x,V]\) use the derivation
+\[
+    D=x^2\partial_x-(2xV+w'(x))\partial_V
+                         =x^2\partial_x|_C .
+\]
+The Keller identity is \(D(F)G_y-F_yD(G)=\kappa_0\)
+for some nonzero scalar, with sign depending on
+the order of variables. The rational constants of
+\(D\) are \(k(C)\), and
+\(k[x,x^{-1},V]=k[x,x^{-1},C]\).
+In particular their intersection with this localized
+ring is \(k[C]\).
+There is no polynomial \(D\)-primitive of a nonzero
+constant: a rational primitive is a nonzero multiple
+of \(1/x\) plus an invariant, and an invariant in
+the localization is polynomial in \(C\) and
+cannot cancel the pole.
+
+The formal residue identity in the
+[exceptional cubic scalar argument](SEXTIC_KELLER_CUBIC_COMPONENT.md#the-exceptional-scalar-and-three-residue-restrictions)
+applies to this derivation without change: for a
+mate of positive \(y\)-degree \(m\) with leading
+coefficient \(p\), take the \(y^{-1}\)-coefficient
+of the chain-rule identity with binomial series
+\(F^{-1/m}\), or use \(G\) instead of \(F\).
+It gives a \(D\)-primitive of a nonzero multiple
+of \(p^{-1/m}\), polynomial when \(p\) is constant.
+It follows that \(G\) cannot have degree four.
+Now the leading bracket coefficient gives
+\(p^3/q^m\in k^*\), where \(p,q\) are the leading
+\(y\)-coefficients of \(F,G\) and \(m=\deg_y F\).
+Indeed both coefficients are univariate, the
+leading equation gives \(D(p^3/q^m)=0\), and
+\(k(x)\cap k(C)=k\). Degree comparison forces
+\(m=4\). Since \(\deg p=4,\deg q=3\) and the
+exponents in the ratio are coprime, \(p,q\) are
+nonzero multiples of \(L^4,L^3\), respectively,
+for a monic linear \(L\).
+The residue identity now requires a rational
+primitive of \(dx/(x^2 L(x))\) at fixed \(C\).
+If the root of \(L\) is nonzero, the simple pole
+there is impossible. Thus \(L=x\).
+
+Pass to the generic level \(C=S\), put \(u=1/x\)
+and \(Y=xy\), and divide \(F,G\) by constants to
+make them monic in \(Y\) of degrees four and three.
+The bracket in \(u,Y\) is a nonzero constant
+times \(u\), since the Jacobian of the change
+\((x,y)\mapsto(u,Y)\) is \(-1/x\).
+Translate \(Y\) rationally to depress \(G\) to
+\(Y_0^3+bY_0+c_0\). The parameter change keeps the
+same bracket because it translates \(Y\) by a
+function of \(u,S\).
+The leading bracket coefficient gives that the
+cubic coefficient of \(F\) in \(Y_0\) is independent
+of \(u\); remove it by subtracting a \(k(S)\)-multiple
+of \(G\). Write the remaining first output as
+\(Y_0^4+dY_0^2+eY_0+f_0\).
+All these coefficients are rational in \(u\) over
+\(k(S)\). Comparing the coefficients of \(Y_0^4\),
+\(Y_0^3\) and \(Y_0^2\) gives
+\[
+       d=4b/3+d_0,\qquad e=4c_0/3+e_0,\qquad
+                   f_0=2b^2/9+2d_0 b/3+f_{00},
+\]
+where \(d_0,e_0,f_{00}\in k(S)\).
+Set \(b_1=b+3d_0/2\), \(c_1=c_0+3e_0/4\).
+The \(Y_0\)-coefficient then gives \(b_1c_1\in k(S)\).
+The constant coefficient integrates to
+\[
+                 \frac4{27}b_1^3-\frac{d_0}{3}b_1^2
+                      -\frac23 c_1^2
+                          =\lambda u^2+h(S),\qquad \lambda\in k^\times .
+\]
+The [axial checker](check_sextic_doubled_square_uncorrected_axial.py)
+replays the coefficient comparison.
+If \(b_1\) is nonconstant, at a pole of \(b_1\)
+the relation \(b_1c_1\in k(S)\) makes \(c_1\)
+regular, including the case \(c_1=0\).
+The left side then has pole order a positive
+multiple of three, while the right side has at
+most a double pole. Thus \(b_1\) is constant in
+\(u\). The identity forces \(c_1\) to be a nonconstant
+rational function whose square is affine in \(u^2\),
+so \(c_1=\alpha u\) with \(\alpha\in k^\times\).
+
+Returning to the localized source ring, the actual
+normalized cubic is
+\[
+                         G=Y_0^3+b(C)Y_0+h_0(C)+\alpha/x .
+\]
+Indeed the coefficients of the depressed cubic lie
+in \(k[x,x^{-1},V]\), since its original coefficients
+lie there and depression uses just their polynomial
+combinations. The invariant coefficients \(b,h_0\)
+are therefore polynomial in \(C\) by the intersection
+above. If \(Y_0\) has a pole at \(x=0\), its cube
+has strictly higher pole order than all other
+terms, impossible since \(G\) is polynomial. If it
+is regular there, the term \(\alpha/x\) itself gives
+a pole, again impossible.
+This excludes the common-root alternative and
+finishes the weight-four inversion proof.
+
+
+## Inversion in the doubled square-member frame
+
+**Theorem SexticKellerDoubledSquareMemberInversion.**
+A characteristic-zero sextic Keller map in the
+doubled square-member tangent-conic frame, with ordinary
+highest tuple \((x^2P^2,x^4P,x^6)\), is invertible.
+
+By the \((2,3,4)\) reduction and exclusion of the
+third-output corrections, the highest tuple in those
+weights is \((x^2P^2,x^4P+k xP^2,x^6)\).
+The branch \(k\ne0\) is invertible by the
+[second-output correction theorem](#the-second-output-mixed-correction).
+The corrected binary tuples at axial weights three and
+four have also been settled. Thus it suffices to consider
+the uncorrected tuples at all three of these weights.
+
+### Weight five
+
+The support bounds leave no tie between axial weights
+four and five. At five the potential highest tuple is
+\[
+                      (x^4z^2,\ x^5z+a z^2,\
+                                    x^6+(b x+e y)z).
+\]
+The [axial checker](check_sextic_doubled_square_uncorrected_axial.py)
+reproduces this support comparison.
+The first two entries are independent in \(x,z\) for
+every \(a\), so rank at most two gives \(e=0\).
+
+Suppose \((a,b)\ne(0,0)\). Put \(t=z/x^5\).
+The two binary image ratios
+\[
+ R=\frac{B^2}{AC}=\frac{(1+a t)^2}{1+b t},
+ \qquad
+ S=\frac{A^2}{BC^3}=\frac{t^3}{(1+a t)(1+b t)^3}
+\]
+recover \(t\). In fact \(S\) has a zero of order
+three at zero, where \(R=1\). There are no other
+finite zeros of \(S\). Its only possible zero at
+infinity is when \(a,b\ne0\), in which case \(R\)
+has a pole there. Thus the place at zero is alone
+above its restriction to \(k(R,S)\), so the index
+divides three. Since \(R\) is nonconstant of
+degree at most two, the index is one.
+The binary image field is now \(k(X,V)\) with
+\(X=x^2\), \(V=xz\): \(B/C\) recovers \(X^2=x^4\)
+from \(t\), and \(C\) recovers \(X^3\), hence \(X\);
+then \(V=t X^3\).
+The three binary equations are
+\[
+           A=XV^2,\qquad B=X^2 V+a V^2/X,
+                                      \qquad C=X^3+bV .
+\]
+
+Raise the \(y\)-weight from one to the first tie, at most
+three by \(x^2y^4\) in \(A\).
+The expected determinant weight remains positive,
+so the binary image field lifts as in the previous
+arguments. At a pole of \(X\), the equation for \(A\)
+forces \(V\) to vanish, and \(C\) then has a pole.
+Thus \(X\) lifts polynomially. The lift of \(V\)
+is polynomial too: if \(a\ne0\), at a pole of \(V\)
+the term \(aV^2/X\) has strictly smaller order
+than \(X^2V\); if \(b\ne0\), the term \(bV\) would
+give a pole in \(C\).
+The polynomial \(X\) has weight two and ordinary
+degree two, and can change from \(x^2\) only by
+\(\delta y\) at \(w_y=2\).
+The equation \(A=XV^2\) bounds the ordinary degree
+of \(V\) by two. At weight six the only possible
+change to \(V=xz\) is a multiple of \(y^2\) at
+\(w_y=3\).
+
+If \(a\ne0\) the polynomiality of \(B\) forces
+\(X\mid V^2\), impossible for either change:
+\(x^2+\delta y\) does not divide \(x^2z^2\) when
+\(\delta\ne0\), and \(P\) is not divisible by \(x\)
+when \(X=x^2,\ V=P\) at three.
+Here the coefficient of \(y^2\) in the latter lift
+is fixed by \(2x^3y^2z\) in the ordinary sextic of \(A\).
+Assume then \(a=0,\ b\ne0\). At a nontrivial tie
+at two the lifts are \(X=x^2+\delta y,\ V=xz\)
+with \(\delta\ne0\). A generic level pair of
+\(A=XV^2,\ B=X^2V\) fixes \(X,V\) algebraically.
+On fixed \(X,V\), solving for \(y,z\) gives a
+relative differential proportional to \(dx/x\)
+since \(J(X,V,x)=\delta x\).
+The Jacobian from \(X,V\) to \(A,B\) is nonzero
+at generic levels. Hence the residue at zero
+contradicts the rational slice.
+At a tie at three the lifts are \(X=x^2,\ V=P\),
+giving highest tuple \((x^2P^2,x^4P,x^6+bP)\)
+at \((1,3,5)\).
+The third output now has the full form
+\(q(x)y^2+u(x)y+v(x)z+w(x)\) with \(q=b\ne0\)
+constant and \(v\) of degree one. This contradicts
+the affine-output root restriction.
+Thus even at weight five the tuple is uncorrected.
+
+### The full transverse degrees
+
+The combined axial support bounds now make
+\(F_1\) quadratic in \(z\), \(F_2\) linear in \(z\),
+and \(F_3=C(x,y)+\gamma z\) with \(\gamma\) constant.
+Indeed at weight four, \(z^3\) in the first
+output is in the top weight and absent; all higher
+\(z\)-terms have too much weight. At five, \(z^2\)
+in the second output and any \(x,y\)-dependent
+coefficient of \(z\) in the third output are likewise
+excluded, and terms of larger \(z\)-degree have too
+much weight.
+If \(\gamma\ne0\), the third output is a coordinate
+with the graph completion \((x,y,F_3)\) of inverse
+degree at most six. The resulting planar degree
+is at most thirty-six, so the retained planar
+bound and specialization give inversion.
+
+Suppose \(\gamma=0\). Write \(a_2=[z^2]F_1\) and
+\(b_1=[z]F_2\), of ordinary degrees four and five
+in \(x,y\), respectively, by the original sextics.
+The coefficient of \(z^2\) in the determinant gives
+\[
+                     J_{x,y}(a_2/b_1^2,C)=0 .
+\]
+Work over \(\mathbb C\), by embedding a finitely
+generated coefficient field; the inverse descends
+as in the bounded planar specialization argument.
+The polynomial \(C\) is noncritical by the Keller
+condition, hence closed by the
+[closed-generator theorem](sources/wang-yan-2610.36495v1.pdf),
+Proposition 2.2: a nonlinear outer polynomial would
+give a critical point over a root of its derivative
+on a nonempty level of the inner polynomial.
+Its rational Hamiltonian constants are therefore
+\(\mathbb C(C)\), by Lemma 2.3 of the same source.
+
+Write \(a_2/b_1^2=G(C)/H(C)\) with coprime univariate
+\(G,H\). Their substitutions are coprime by a
+Bézout identity. The denominator \(H(C)\) thus
+divides \(b_1^2\), so \(\deg H\le1\) since
+\(\deg C=6\).
+Ordinary numerator degree minus denominator degree
+in \(a_2/b_1^2\) is minus six, forcing
+\(\deg G=0,\ \deg H=1\).
+Thus \(C-\lambda\) divides \(b_1^2\) for some
+\(\lambda\). It is squarefree by the submersion
+condition, and hence divides \(b_1\), contrary
+to their degrees six and five. This contradiction
+settles the independent-of-\(z\) case and finishes
+the doubled square-member frame.

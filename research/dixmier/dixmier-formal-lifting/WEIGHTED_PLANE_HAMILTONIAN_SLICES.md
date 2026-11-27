@@ -619,3 +619,61 @@ monomial using
 The obstruction at either order occurs below \(2w=10\),
 where (4) is required in both settings. This excludes the
 entire family, including the unperturbed \(f_4\).
+
+
+## Higher coefficients on a fixed cyclic cover
+
+**Proposition WeightedHamiltonianSliceFixedCyclicJets.**
+Keep the primitive weights, toric coordinates and volume form
+of the pole test, and assume the principal degree \(d\ne0\).
+Write the rescaled symbol as \(z^dQ(h,t)\), where
+\(h=\epsilon/z\) and \(Q(h,t)=\sum_{i\ge0}h^iP_i(t)\).
+On the fixed generic level \(\eta\), let \(z_0^d=\eta/P_0(t)\).
+A rational formal jet satisfying (4) through order \(n\)
+exists exactly when each of the following relative forms is
+rationally exact in \(k(\eta,t,z_0)\), for \(0\le j\le n\):
+\[
+ \omega_j=\frac{z_0^{w-j}t^{a-b-1}}{d\eta}
+       [h^j]\left(\frac{Q(h,t)}{P_0(t)}\right)^{-(w-j)/d}\,dt.
+ \tag{6}
+\]
+In particular \(\omega_w=0\). The tests are necessary for
+Weyl mates at \(j<2w\) and for plane Keller mates at all \(j\).
+Over an algebraic closure each test is equivalent to the
+rational equation
+\[
+ tH'+\left(a-b-\frac{w-j}{d}\frac{tP_0'}{P_0}\right)H
+     =[h^j](Q/P_0)^{-(w-j)/d}.
+ \tag{7}
+\]
+
+To identify the varying generic levels with the fixed one,
+write \(z=z_0v\), with \(v(0)=1\) and \(v^d=P_0/Q(h,t)\).
+Then \(q=\epsilon/z_0=hv\). Formal inversion determines \(h\)
+in \(q\), and hence \(v\). Substitution identifies the two
+rational-coefficient formal algebras since the reduction
+\(z\mapsto z_0,\ t\mapsto t\) is an isomorphism over \(k\).
+Under this identification the rescaled symbol becomes \(\eta\).
+The relative form determined by \(dP_\epsilon\wedge\omega_\epsilon
+=dx\wedge dy\), with \(\epsilon\) held fixed, is
+\[
+ \omega_\epsilon=\frac{z_0^w t^{a-b-1}}{d\eta}
+          \frac{v^w}{1-hQ_h/(dQ)}\,dt .
+\]
+Extraction of \([q^j]\) in the last factor is formal residue
+extraction with \(q^{-j}dq/q\). Using
+\(dq/q=(1-hQ_h/(dQ))\,dh/h\) and \(q^{-j}v^w=h^{-j}v^{w-j}\)
+gives (6), including the factor \(z_0^{-j}\) on returning to
+coefficients in \(\epsilon\).
+The slice equation in these coordinates is the relative
+primitive equation, which is coefficientwise over the fixed
+field. A primitive may be projected to the character of
+\(z_0^{w-j}\) under the cyclic action over \(k(\eta,t)\).
+Writing it as \(z_0^{w-j}t^{a-b}H/(d\eta)\) gives (7).
+If there is a solution over \(k(\eta,t)\), specialize \(\eta\)
+away from the finitely many values making its denominator
+identically zero. This gives a solution over \(k(t)\) after
+the algebraic closure. Conversely a solution after extending
+constants descends by normalized trace from a finite constant
+extension. This proves the criterion and the claimed
+independence of the coefficient tests.

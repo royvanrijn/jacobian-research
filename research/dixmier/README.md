@@ -123,7 +123,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | The multiplicity-26 two-flow mate reduces to a single cube | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | The order-seven operator independently excludes the primitive multiplicity-26 branch | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | The even multiplicity-26 profiles have fixed four-type and indicial constraints | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
-| The surviving even Weyl profile gives a primitive length-two commutator problem | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| The even Weyl profile gives a primitive length-two commutator problem | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | Weighted Weyl symbols reduce to exactness on explicit cyclic curves | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
 | Weighted powers of a binomial sum cannot be leading symbols of scalar commutator pairs | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
 | A finite pole test for rational Hamiltonian slices at signed weights | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
@@ -134,6 +134,8 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Full rational slices fail for the boundary-admissible mixed chains | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
 | Classical rational slice jets obstruct weighted Weyl and plane Keller mates | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
 | A boundary-admissible one-parameter family has no plane or Weyl mate | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| Higher Hamiltonian slice tests are independent exactness tests on one cyclic cover | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_PLANE_HAMILTONIAN_SLICES.md) |
+| Newton-face descent excludes the multiplicity-26 Weyl branch with a small root | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

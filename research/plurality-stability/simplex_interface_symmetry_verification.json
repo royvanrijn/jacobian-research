@@ -1,6 +1,7 @@
 {
-  "checker_sha256": "2604ffa354b4914f48136c6b8a9bf3b56bbedb84a5dbad55c4076aed70dce4fd",
-  "proof_source_sha256": "7c21b6632989de7ab4c718a4a3cf20242031c6c0e61562e0e2c509b1f055b568",
+  "checker_sha256": "fd56d19611f6ee09c3309ab936f82715d4227630de218f78c1a36f78dbf68748",
+  "proof_source_sha256": "b3380a693ebfa9267f58e3ca16270113f7c06ebbf6a2800f9d7fd3f598ae6668",
+  "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
       "permutations_checked": 30,
@@ -11,6 +12,29 @@
       "H_half_upper_less_than_7_over_4": true,
       "scope": "Rational arithmetic in S21; uses analytic Gaussian integral and classical 3<pi<22/7 from the proof.",
       "gap": "ell*(2/sqrt(3)-1), sign sector at rho=1/2 only"
+    },
+    "elementary_half_point_and_reflections": {
+      "R_half_upper": "2650234883/825000000",
+      "L_half_lower": "4619803/4687500",
+      "G_half_upper": "32058163928093/60424804687500",
+      "G_half_less_than_9_over_16": true,
+      "reflection_difference_coefficients_in_u": {
+        "plus": [
+          "0",
+          "6",
+          "6",
+          "4",
+          "1"
+        ],
+        "minus": [
+          "0",
+          "0",
+          "6",
+          "4",
+          "1"
+        ]
+      },
+      "scope": "Exact finite algebra in S32/S36. The all-correlation theorem additionally uses the written OU parity spectra, ground-state identities, interaction monotonicity and extra-dimensional Hermite decomposition; this script does not verify those analytic arguments."
     },
     "interval_gap": {
       "interval": [
@@ -44,49 +68,117 @@
         "nodes": 180,
         "cutoff": 10,
         "rho": 0.1,
-        "largest_constrained_generalized_eigenvalue": 0.23933767159473626
+        "largest_constrained_generalized_eigenvalue": 0.23933767159473626,
+        "standard_L2_minimum": 0.482315270320472,
+        "sign_L2_minimum_off_rotations": 0.6014388176395931,
+        "extra_degree_one_standard_minimum_off_rotations": 0.6014300331970991,
+        "analytic_full_gap_lower": 0.08318689265677265,
+        "analytic_sign_gap_lower": 0.5954138356951382
       },
       {
         "nodes": 180,
         "cutoff": 10,
         "rho": 0.5,
-        "largest_constrained_generalized_eigenvalue": 0.5184438777792926
+        "largest_constrained_generalized_eigenvalue": 0.5184438777792926,
+        "standard_L2_minimum": 0.40904979386246565,
+        "sign_L2_minimum_off_rotations": 0.6520602891284798,
+        "extra_degree_one_standard_minimum_off_rotations": 0.6205001449306329,
+        "analytic_full_gap_lower": 0.1727470747356679,
+        "analytic_sign_gap_lower": 0.5182412242070032
       },
       {
         "nodes": 180,
         "cutoff": 10,
         "rho": 0.9,
-        "largest_constrained_generalized_eigenvalue": 0.8960364434523342
+        "largest_constrained_generalized_eigenvalue": 0.8960364434523342,
+        "standard_L2_minimum": 0.18566520306441814,
+        "sign_L2_minimum_off_rotations": 0.3475179254989742,
+        "extra_degree_one_standard_minimum_off_rotations": 0.3454427727012601,
+        "analytic_full_gap_lower": 0.08643898958416289,
+        "analytic_sign_gap_lower": 0.26084236268632677
       },
       {
         "nodes": 180,
         "cutoff": 10,
         "rho": 0.99,
-        "largest_constrained_generalized_eigenvalue": 0.9898285740542135
+        "largest_constrained_generalized_eigenvalue": 0.9898285740542135,
+        "standard_L2_minimum": 0.057037006464634006,
+        "sign_L2_minimum_off_rotations": 0.11255519963130522,
+        "extra_degree_one_standard_minimum_off_rotations": 0.11253309252034881,
+        "analytic_full_gap_lower": 0.02813743880735808,
+        "analytic_sign_gap_lower": 0.08441660131123276
       },
       {
         "nodes": 360,
         "cutoff": 10,
         "rho": 0.1,
-        "largest_constrained_generalized_eigenvalue": 0.2393376715947513
+        "largest_constrained_generalized_eigenvalue": 0.2393376715947513,
+        "standard_L2_minimum": 0.4823152703204607,
+        "sign_L2_minimum_off_rotations": 0.6014307995470947,
+        "extra_degree_one_standard_minimum_off_rotations": 0.6014271813166907,
+        "analytic_full_gap_lower": 0.08318689265677265,
+        "analytic_sign_gap_lower": 0.5954138356951382
       },
       {
         "nodes": 360,
         "cutoff": 10,
         "rho": 0.5,
-        "largest_constrained_generalized_eigenvalue": 0.5184438777793046
+        "largest_constrained_generalized_eigenvalue": 0.5184438777793046,
+        "standard_L2_minimum": 0.40904979386245277,
+        "sign_L2_minimum_off_rotations": 0.6520602891284809,
+        "extra_degree_one_standard_minimum_off_rotations": 0.6205001449306254,
+        "analytic_full_gap_lower": 0.1727470747356679,
+        "analytic_sign_gap_lower": 0.5182412242070032
       },
       {
         "nodes": 360,
         "cutoff": 10,
         "rho": 0.9,
-        "largest_constrained_generalized_eigenvalue": 0.8960364434523411
+        "largest_constrained_generalized_eigenvalue": 0.8960364434523411,
+        "standard_L2_minimum": 0.18566520306440037,
+        "sign_L2_minimum_off_rotations": 0.3475179254989922,
+        "extra_degree_one_standard_minimum_off_rotations": 0.34544277270124657,
+        "analytic_full_gap_lower": 0.08643898958416289,
+        "analytic_sign_gap_lower": 0.26084236268632677
       },
       {
         "nodes": 360,
         "cutoff": 10,
         "rho": 0.99,
-        "largest_constrained_generalized_eigenvalue": 0.9898285740542166
+        "largest_constrained_generalized_eigenvalue": 0.9898285740542166,
+        "standard_L2_minimum": 0.05703700646461502,
+        "sign_L2_minimum_off_rotations": 0.11255519963137237,
+        "extra_degree_one_standard_minimum_off_rotations": 0.112533092520322,
+        "analytic_full_gap_lower": 0.02813743880735808,
+        "analytic_sign_gap_lower": 0.08441660131123276
+      }
+    ]
+  },
+  "perimeter_controls": {
+    "scope": "Uncertified floating normalization/expansion controls, not a proof of D0-D9 or monotonicity failure.",
+    "q": 0.43072729929545733,
+    "beta3": 0.030046813113270655,
+    "cases": [
+      {
+        "theta": 0.1,
+        "simplex_beta_quotient": 0.030060067723730592,
+        "slab_normalized_deficit_without_jump": 0.10571757621808994,
+        "slab_normalized_limit": 0.10275646377398741,
+        "jump_correction_upper": 1.4893963879124608e-15
+      },
+      {
+        "theta": 0.05,
+        "simplex_beta_quotient": 0.03005012547342422,
+        "slab_normalized_deficit_without_jump": 0.10424775429929777,
+        "slab_normalized_limit": 0.10275646377398741,
+        "jump_correction_upper": 1.349872791482943e-63
+      },
+      {
+        "theta": 0.025,
+        "simplex_beta_quotient": 0.03004764112259916,
+        "slab_normalized_deficit_without_jump": 0.10350485135414936,
+        "slab_normalized_limit": 0.10275646377398741,
+        "jump_correction_upper": 1.1384504995982186e-256
       }
     ]
   }

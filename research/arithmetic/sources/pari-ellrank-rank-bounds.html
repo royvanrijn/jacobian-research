@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>PARI ellrank interface</title>
+<p>PARI/GP official documentation excerpt. <a href="https://pari.math.u-bordeaux.fr/dochtml/html/Elliptic_curves.html#ellrank">Source and full reference</a>.</p>
+<div id="ellrank"></div>
+<h4>ellrank(E, {<em>effort</em> = 0}, {<em>points</em>})</h4>
+<p>
+If E is an elliptic curve over &Qopf;, attempts to compute the
+Mordell-Weil group attached to the curve. The output is [r<sub>1</sub>,r<sub>2</sub>,s,L],
+where
+r<sub>1</sub> &leq; rank(E) &leq; r<sub>2</sub>, s gives informations on the
+Tate-Shafarevic group (see below), and L is a list of independent,
+non-torsion rational points on the curve. E can also be given as the output
+of <code>ellrankinit(E)</code>.</p>
+<p>
+If <code>points</code> is provided, it must be a vector of rational points on the
+curve, which are not computed again.</p>
+<p>
+The parameter <code>effort</code> is a measure of the time employed to find rational
+points before giving up. If <code>effort</code> is not 0, the search is
+randomized, so rerunning the function might yield different or even
+a different number of rational points. Values up to 10 or so are reasonable
+but the parameter can be increased futher, with running times increasing
+roughly like the <em>cube</em> of the <code>effort</code> value.</p>
+<p></p>
+<p>
+</p><pre class="code">  ? E = ellinit([-127^2,0]);
+  ? ellrank(E)
+  %2 = [1, 1, 0, []] \\ rank is 1 but no point has been found.
+  ? ellrank(E,4) \\ with more effort we find a point.
+  %3 = [1, 1, 0, [[38902300445163190028032/305111826865145547009,
+       680061120400889506109527474197680/5329525731816164537079693913473]]]
+</pre><p></p>
+<p></p>
+<p>
+In addition to the previous calls, the first argument E can be a pair
+[e,f], where e is an elliptic curve given by <code><a href="Elliptic_curves.html#se:ellrankinit"
+    onClick="parent.itemFrame.location='cont_Elliptic_curves.html'">ellrankinit</a></code> and
+f is a quadratic twist of e. We then look for points on f.
+Note that the <code><a href="Elliptic_curves.html#se:ellrankinit"
+    onClick="parent.itemFrame.location='cont_Elliptic_curves.html'">ellrankinit</a></code> initialization is independent of f, so
+this can speed up computations significantly!</p>
+<p>
+<b>Technical explanation.</b>
+The algorithm, which computes the 2-descent and the 2-part of the Cassels
+pairings has an intrinsic limitation: r<sub>1</sub> = r<sub>2</sub> never holds when
+the Tate-Shafarevic group G has 4-torsion. Thus, in this case we cannot
+determine the rank precisely. The algorithm computes unconditionally three
+quantities:</p>
+<p>
+<b>*</b> the rank C of the 2-Selmer group.</p>
+<p>
+<b>*</b> the rank T of the 2-torsion subgroup.</p>
+<p>
+<b>*</b> the (even) rank s of G[2]/2G[4]; then r<sub>2</sub> is defined
+by r<sub>2</sub> = C - T - s.</p>
+<p>
+The following quantities are also relevant:</p>
+<p>
+<b>*</b> the rank R of the free part of E(&Qopf;); it always holds that
+r<sub>1</sub> &leq; R &leq; r<sub>2</sub>.</p>
+<p>
+<b>*</b> the rank S of G[2] (conjecturally even); it always holds that
+s &leq; S and that C = T + R + S. Then r<sub>2</sub> = C - T - s &geq; R.</p>
+<p>
+When the conductor of E is small, the BSD conjecture can be used
+to (conditionally) find the true rank:</p>
+<p>
+</p><pre class="code">  ? E=ellinit([-113^2,0]);
+  ? ellrootno(E) \\ rank is even (parity conjecture)
+  %2 = 1
+  ? ellrank(E)
+  %3 = [0, 2, 0, []] \\ rank is either 0 or 2, $2$-rank of $G$ is
+  ? ellrank(E, 3) \\ try harder
+  %4 = [0, 2, 0, []] \\ no luck
+  ? [r,L] = ellanalyticrank(E) \\ assume BSD
+  %5 = [0, 3.9465...]
+  ? L / ellbsd(E) \\ analytic rank is 0, compute Sha
+  %6 = 16.0000000000000000000000000000000000000
+</pre><p></p>
+<p>
+We find that the rank is 0 and the cardinal of the Tate-Shafarevich group
+is 16 (assuming BSD!). Moreover, since s = 0, it is isomorphic to
+(&Zopf;/4&Zopf;)<sup>2</sup>.</p>
+<p>
+When the rank is 1 and the conductor is small, <code><a href="Elliptic_curves.html#se:ellheegner"
+    onClick="parent.itemFrame.location='cont_Elliptic_curves.html'">ellheegner</a></code> can be used
+to find a non-torsion point:</p>
+<p>
+</p><pre class="code">   ? E = ellinit([-157^2,0]);
+   ? ellrank(E)
+   %2 = [1, 1, 0, []] \\ rank is 1, no point found
+   ? ellrank(E, 5) \\ Try harder
+   time = 1,094 ms.
+   %3 = [1, 1, 0, []] \\ No luck
+   ? ellheegner(E) \\ use analytic method
+   time = 492 ms.
+   %4 = [69648970982596494254458225/166136231668185267540804, ...]
+</pre><p>
+In this last example, an <code>effort</code> about 10 would also
+(with probability about 80%) find a random point, not necessarily the
+Heegner point, in about 5 seconds.</p>
+<p>
+The library syntax is <code>GEN <b>ellrank</b>(GEN E, long effort, GEN points = NULL, long prec)</code>.</p>
+<p>
+
+<hr>
+<div id="se:ellrankinit"></div>
+
+</html>

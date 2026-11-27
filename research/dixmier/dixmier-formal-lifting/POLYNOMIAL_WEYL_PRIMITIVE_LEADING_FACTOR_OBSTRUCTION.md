@@ -224,8 +224,9 @@ leading factor with \(P\) is primitive for the new gcd three. The
 [length-two commutator reduction](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#a-primitive-length-two-commutator-problem)
 retains the defining identity for \(W\) and computes its first
 order-34 binomial resultant. The new pair has a nonzero critical-face
-bracket, so the scalar theorem above does not apply to it. Excluding
-the two resulting even profiles remains open.
+bracket. The [next-face argument](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#exclusion-by-the-next-newton-face)
+uses the first commutator at a different weight to exclude both
+even profiles.
 
 ## Exact controls
 

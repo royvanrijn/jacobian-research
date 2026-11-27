@@ -12,6 +12,7 @@ import itertools
 import json
 import math
 from pathlib import Path
+from statistics import NormalDist
 
 
 def parity(p):
@@ -85,6 +86,46 @@ def explicit_gap_check():
         "H_half_upper_less_than_7_over_4": True,
         "scope": "Rational arithmetic in S21; uses analytic Gaussian integral and classical 3<pi<22/7 from the proof.",
         "gap": "ell*(2/sqrt(3)-1), sign sector at rho=1/2 only",
+    }
+
+
+def elementary_half_point_and_reflections():
+    """The finite polynomial/rational arithmetic used in S32 and S36."""
+    x = Q(93, 100)
+    assert x - x**3/6 + x**5/120 - x**7/5040 > Q(4, 5)
+    x = Q(101, 500)
+    assert x - x**3/6 > Q(1, 5)
+    x = Q(411, 1000)
+    assert x - x**3/6 + x**5/120 < Q(2, 5)
+    x = Q(253, 1000)
+    assert x - x**3/6 > Q(1, 4)
+    assert 16 * (Q(1, 5) - Q(1, 5)**3/3) - Q(4, 239) > Q(25, 8)
+    assert 3 * Q(577, 1000)**2 < 1
+    assert 15 * Q(258, 1000)**2 < 1
+    assert 6 * Q(409, 1000)**2 > 1
+    assert 21 * Q(219, 1000)**2 > 1
+    R = Q(4, 3)*(1+2*Q(93, 100)/Q(25, 8))
+    R += 2*Q(409, 1000)*(1+2*Q(101, 500)/Q(25, 8))
+    R += Q(219, 1000)*(1-2*Q(411, 1000)/Q(22, 7))
+    L = Q(4, 3)*Q(577, 1000) + Q(258, 1000)*(1-2*Q(253, 1000)/Q(25, 8))
+    upper = Q(16, 9)*R - Q(16, 3)*L*L
+    assert R == Q(2650234883, 825000000)
+    assert L == Q(4619803, 4687500)
+    assert upper == Q(32058163928093, 60424804687500)
+    assert 0 < upper < Q(9, 16)
+    # With u=w-1>=0, compare the exact two difference polynomials.
+    plus = [Q(math.comb(4, j)) + (2 if j <= 1 else 0) - (3 if j == 0 else 0) for j in range(5)]
+    minus = [Q(math.comb(4, j)) - (4 if j <= 1 else 0) + (3 if j == 0 else 0) for j in range(5)]
+    assert plus == [0, 6, 6, 4, 1]
+    assert minus == [0, 0, 6, 4, 1]
+    assert all(x >= 0 for x in plus + minus)
+    # Replacing 3/2 by 2 in K- >= c*D is false for every w>1.
+    assert 4*(1-Q(2)) < 0
+    return {
+        "R_half_upper": str(R), "L_half_lower": str(L),
+        "G_half_upper": str(upper), "G_half_less_than_9_over_16": True,
+        "reflection_difference_coefficients_in_u": {"plus": [str(x) for x in plus], "minus": [str(x) for x in minus]},
+        "scope": "Exact finite algebra in S32/S36. The all-correlation theorem additionally uses the written OU parity spectra, ground-state identities, interaction monotonicity and extra-dimensional Hermite decomposition; this script does not verify those analytic arguments.",
     }
 
 
@@ -250,8 +291,52 @@ def quadrature():
             basis, _ = np.linalg.qr(constraint[:, None], mode="complete")
             reduced = basis[:, 1:].T @ scaled @ basis[:, 1:]
             maximum = float(np.linalg.eigvalsh(reduced)[-1])
-            output.append({"nodes": count, "cutoff": 10, "rho": rho, "largest_constrained_generalized_eigenvalue": maximum})
+            standard_basis, _ = np.linalg.qr(np.sqrt(w)[:, None], mode="complete")
+            sign_basis, _ = np.linalg.qr((np.sqrt(w)*r)[:, None], mode="complete")
+            def restricted_min(matrix, basis):
+                return float(np.linalg.eigvalsh(basis[:, 1:].T @ matrix @ basis[:, 1:]) [0])
+            standard_min = restricted_min(np.diag(a/rho)-(2*same+other)/rho, standard_basis)
+            sign_min = restricted_min(np.diag(a/rho)-2*(same-other)/rho, sign_basis)
+            mixed_rotation_min = restricted_min(np.diag(a/rho)-(2*same+other), standard_basis)
+            ell = 1.5*phi0
+            gap = ell*(1/sigma-math.sqrt(3)/2) if rho <= .5 else ell*(1-rho)*(3*rho-1)/(3*rho*sigma)
+            assert standard_min >= gap-1e-8
+            assert sign_min >= ell*sigma-1e-8
+            assert mixed_rotation_min >= ell*sigma-1e-8
+            output.append({"nodes": count, "cutoff": 10, "rho": rho,
+                           "largest_constrained_generalized_eigenvalue": maximum,
+                           "standard_L2_minimum": standard_min, "sign_L2_minimum_off_rotations": sign_min,
+                           "extra_degree_one_standard_minimum_off_rotations": mixed_rotation_min,
+                           "analytic_full_gap_lower": gap, "analytic_sign_gap_lower": ell*sigma})
     return {"numpy_version": np.__version__, "scope": "Uncertified Nystrom exploration on [0,10]; no tail, discretization or rounding error enclosure; not an all-rho or fixed-rho proof.", "cases": output}
+
+
+def perimeter_controls():
+    import numpy as np
+    q = NormalDist().inv_cdf(2/3)
+    beta = 3/(4*math.pi**2)-1/(4*math.pi*math.sqrt(3))
+    c = (2*math.exp(-q*q/2)-1.5)/math.pi
+    x, w = np.polynomial.legendre.leggauss(40)
+    cases = []
+    for theta in (.1, .05, .025):
+        u = theta*(x+1)/2
+        Cq = float(theta/2*np.sum(w*np.exp(-q*q/(1+np.cos(u))))/math.pi)
+        NT = 2/3-3/(4*math.pi**2)*((math.pi-theta)**2-math.acos(math.cos(theta)/2)**2)
+        J_upper = math.exp(-q*q/(1-math.cos(theta)))
+        normalized_without_jump = (2*Cq-NT)/theta
+        cases.append({"theta": theta, "simplex_beta_quotient": (3*theta/(2*math.pi)-NT)/theta**2,
+                      "slab_normalized_deficit_without_jump": normalized_without_jump,
+                      "slab_normalized_limit": c,
+                      "jump_correction_upper": 2*J_upper/theta})
+        assert normalized_without_jump-2*J_upper/theta > c
+    for rho in (.1, .5, .9):
+        def I(t):
+            return (.25+math.asin(rho*t)/(2*math.pi))/(2*math.pi*math.sqrt(1-rho*rho*t*t))
+        derivative = 3*math.acos(-rho)/(2*math.pi**2*math.sqrt(1-rho*rho))
+        derivative += 3*math.acos(rho/2)/(4*math.pi**2*math.sqrt(1-rho*rho/4))
+        assert abs(derivative-(6*I(1)+3*I(-.5))) < 1e-12
+    return {"scope": "Uncertified floating normalization/expansion controls, not a proof of D0-D9 or monotonicity failure.",
+            "q": q, "beta3": beta, "cases": cases}
 
 
 def main():
@@ -265,7 +350,9 @@ def main():
     receipt = {
         "checker_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "proof_source_sha256": hashlib.sha256((here / "SIMPLEX_INTERFACE_SYMMETRY.md").read_bytes()).hexdigest(),
-        "exact_checks": {"characters": character_checks(), "half_correlation_bound": explicit_gap_check(), "interval_gap": interval_gap_check()},
+        "perimeter_proof_source_sha256": hashlib.sha256((here / "THREE_CELL_DEFICIT_AND_PERIMETER.md").read_bytes()).hexdigest(),
+        "exact_checks": {"characters": character_checks(), "half_correlation_bound": explicit_gap_check(),
+                         "elementary_half_point_and_reflections": elementary_half_point_and_reflections(), "interval_gap": interval_gap_check()},
         "analytic_claims_certified_by_this_script": False,
         "independent_replay": False,
         "formal_verification": False,
@@ -273,6 +360,7 @@ def main():
     }
     if args.quadrature:
         receipt["standard_sector_exploration"] = quadrature()
+        receipt["perimeter_controls"] = perimeter_controls()
     rendered = json.dumps(receipt, indent=2) + "\n"
     if args.output:
         args.output.write_text(rendered)

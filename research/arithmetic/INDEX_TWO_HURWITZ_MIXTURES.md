@@ -380,6 +380,13 @@ component comparison and restoration theorem appropriate to their number
 of cut components, together with actual block systems and reduced lifting
 invariants. No unrestricted higher-index connectivity theorem is asserted.
 
+The current [component-classification program](POLYNOMIAL_PASSPORT_COMPONENTS.md)
+keeps that full higher-index target open. It classifies the two-factor
+domain, proves block-quotient index budgets, and gives exact genus-zero
+examples with multiple primitive components of the same standard spin
+and with primitive/imprimitive splitting. The genus-one example above
+is not used as a genus-zero counterexample.
+
 ## Evidence and review scope
 
 The [checker](verify_index_two_hurwitz_mixtures.py),

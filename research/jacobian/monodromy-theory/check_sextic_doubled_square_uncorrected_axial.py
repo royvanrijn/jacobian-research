@@ -3,7 +3,7 @@
 from fractions import Fraction as Q
 from itertools import product
 
-from sympy import diff, expand, symbols
+from sympy import Function, Poly, diff, expand, symbols
 
 from check_sextic_doubled_square_third_mixed import (
     competing_monomials, cut, jacobian, weight,
@@ -239,6 +239,63 @@ def check_axial_four_reduction():
         assert actual == desired
 
 
+def check_four_three_bracket():
+    u, y = symbols("u y")
+    b, c, d, e, f = (Function(name)(u) for name in ("b", "c", "d", "e", "f"))
+    d0, e0 = symbols("d0 e0")
+    P, Q = y**4+d*y**2+e*y+f, y**3+b*y+c
+    coefficients = Poly(expand(diff(P,u)*diff(Q,y)-diff(P,y)*diff(Q,u)),y)
+    expected = {
+        4: 3*diff(d,u)-4*diff(b,u),
+        3: 3*diff(e,u)-4*diff(c,u),
+        2: b*diff(d,u)-2*d*diff(b,u)+3*diff(f,u),
+        1: b*diff(e,u)-2*d*diff(c,u)-e*diff(b,u),
+        0: b*diff(f,u)-e*diff(c,u),
+    }
+    for degree, value in expected.items():
+        assert expand(coefficients.nth(degree)-value) == 0
+    normalized = {
+        d: 4*b/3+d0,
+        e: 4*c/3+e0,
+        f: 2*b**2/9+2*d0*b/3,
+    }
+    substitute = lambda value: expand(value.subs(normalized).doit())
+    for degree in (4,3,2):
+        assert substitute(expected[degree]) == 0
+    B, C = b+3*d0/2, c+3*e0/4
+    assert expand(substitute(expected[1])+4*diff(B*C,u)/3) == 0
+    integral = 4*B**3/27-d0*B**2/3-2*C**2/3
+    assert expand(substitute(expected[0])-diff(integral,u)) == 0
+
+
+def check_axial_five_reduction():
+    monomials = {m for m in product(range(7), repeat=3) if sum(m) <= 6}
+    initial = (
+        {(4, 0, 2), (3, 2, 1), (2, 4, 0)},
+        {(5, 0, 1), (4, 2, 0)},
+        {(6, 0, 0)},
+    )
+    ref = ((4, 0, 2), (5, 0, 1), (6, 0, 0))
+    pure = cut((monomials,) * 3, (2, 3, 4), initial)
+    through_four = cut(pure, (1, 1, 4), tuple({m} for m in ref))
+    assert competing_monomials(through_four, (1, 1, 0), 2, 4, 5, ref) == (
+        {},
+        {5: {(0, 0, 2)}},
+        {5: {(1, 0, 1), (0, 1, 1)}},
+    )
+    through_five = cut(through_four, (1, 1, 5), tuple({m} for m in ref))
+    assert tuple(max(m[2] for m in allowed) for allowed in through_five) == (2, 1, 1)
+    assert {m for m in through_five[2] if m[2]} == {(0, 0, 1)}
+    for target, expected in ((2, {2: {(0, 1, 0)}}), (6, {3: {(0, 2, 0)}})):
+        lifts = {}
+        for i, j, k in product(range(3), repeat=3):
+            if j and i+j+k <= 2:
+                y_weight = Q(target-i-5*k, j)
+                if 1 < y_weight <= 3:
+                    lifts.setdefault(y_weight, set()).add((i, j, k))
+        assert lifts == expected
+
+
 if __name__ == "__main__":
     check_weights()
     check_coefficients()
@@ -248,4 +305,6 @@ if __name__ == "__main__":
     check_isolated_second_correction()
     check_simultaneous_corrections()
     check_axial_four_reduction()
+    check_four_three_bracket()
+    check_axial_five_reduction()
     print("Uncorrected doubled-square frame: axial support, determinants and fibre identities verified.")

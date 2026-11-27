@@ -42,7 +42,9 @@ Zhang's argument is credited to the frozen external preprint
 and [attribution ledger](../../research/plurality-stability/sources/zhang-equal-gaussian-cells-sources-ebfd905.md)
 give its exact edition and authorship evidence. The paper supplies that
 argument for reader verification; it does not claim authorship of the
-first-moment comparison.
+first-moment comparison. The abstract explicitly credits Zhang with the
+first-moment endpoint, including $k\ge4$, and identifies this paper's
+contribution as the passage to small positive correlations.
 
 The [first-moment stability proof](../../research/plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md)
 and [fixed-cell normal-flux proof](../../research/plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md)
@@ -65,11 +67,12 @@ without repository files or network access. The designated PDF has nine
 pages. The fixed epoch controls PDF metadata for artifact reproduction;
 it has no mathematical role.
 
-The current source has a warning-free build and an all-page visual
-inspection. The exact PDF-only reader test, its edition, findings and
-any resulting revisions are recorded in [verification.json](verification.json),
-together with the clean archive build and repository checks. Earlier
-four-cell review outcomes do not certify this enlarged edition.
+The attribution revision has a warning-free build and an all-page visual
+inspection. The PDF-only reader test remains tied to its recorded edition
+and has not been repeated for this editorial revision. Its findings and
+revisions are recorded in [verification.json](verification.json), together
+with the current clean archive build and repository checks. Earlier
+four-cell review outcomes do not certify the every-fixed-$k$ article.
 
 External specialist review, formal verification and independent
 mathematical replay have not occurred. No submission, release or

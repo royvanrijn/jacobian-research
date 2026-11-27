@@ -1073,8 +1073,9 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Two-moment multiplication closure and a modular marked-rank obstruction | Internal result | proved | [Source](image-rigidity/STEPANOV_AUXILIARY_DETERMINANTS_SFC2.md) |
 | Pure-cross three-windows at doubled odd primes off the fourth-root axis ratios | Internal result | proved | [Source](image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md) |
 | Good-prime arithmetic lifting of pure-cross factorial three-windows | Internal result | proved | [Source](image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md) |
+| Bad-prime bilinear lifts reduce exactly to actual perfect-square clusters | Internal result | proved | [Source](image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md) |
 
-**Computed obligations:** 76 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 77 unresolved; 39 resolved within their exact scope.
 
 
 Scope limits:

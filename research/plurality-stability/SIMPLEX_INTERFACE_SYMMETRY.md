@@ -4,12 +4,13 @@ This note studies the full interface form from
 [the positive-correlation continuation argument](POSITIVE_CORRELATION_CONTINUATION.md#the-full-interface-form-at-a-fixed-positive-correlation).
 It gives the exact signed induction model for every cell count, identifies
 the mass and rotation constraints, and proves positivity of the complete
-three-cell sign sector for every positive correlation. An analytic
-Hilbert--Schmidt reduction and rational interval certificate also give an
-explicit full three-cell gap throughout $1/4\le\rho\le3/5$. The full
-three-cell problem outside the known intervals, the higher-cell blocks,
-and global optimality remain open. External review and formal verification
-have not occurred.
+three-cell sign sector for every positive correlation. Reflected
+one-dimensional Ornstein--Uhlenbeck comparisons and a single elementary
+bound at correlation $1/2$ now give an explicit full three-cell gap for
+**every $0<\rho<1$**, uniformly in the ambient dimension $d\ge2$.
+The complete proof is in the section on reflected kernels below. The
+higher-cell blocks and global optimality remain open. External review
+and formal verification have not occurred.
 
 ## The signed facet representation
 
@@ -400,8 +401,9 @@ This is a sector gap, not a full-interface or global-optimality theorem.
 
 ## The standard sector and an explicit full gap
 
-The full three-cell interface-kernel assertion is now equivalent to the
-following strict scalar inequality for every $0<\rho<1$:
+The full three-cell interface-kernel assertion in the active plane is
+equivalent to the following strict scalar inequality, proved below for
+every $0<\rho<1$:
 
 \[
  \int a_\rho(r)h(r)^2d\nu(r)
@@ -507,7 +509,256 @@ $\pi=16\arctan(1/5)-4\arctan(1/239)$ enclose $\pi$. The identity
 follows from $\tan(4\arctan(1/5))=120/119$ and the subtraction formula.
 Every subsequent rounding is outward to rational endpoints. The checker
 and receipt below retain the exact grid, bounds, algorithm and hashes;
-replaying this calculation is part of verifying (S27)--(S28).
+replaying this calculation is part of verifying this particular proof
+of (S27)--(S28). The all-correlation proof below needs only the bound
+$G(1/2)<9/16$, for which an elementary certificate is supplied separately.
+
+## Reflected kernels close the three-cell spectral problem
+
+**Boundary interaction monotonicity.** For every fixed cell count and
+balanced speed, (S11) gives
+
+\[
+ B_\rho(f)\le B_b(f)\qquad(0<\rho\le b<1).
+ \tag{S29}
+\]
+
+This is monotonicity of the normalized boundary interaction, not of the
+noise-stability deficit. All coefficients in (S11) are nonnegative and
+the degree-zero coefficient vanishes by balance. The convergent series
+therefore proves (S29) on the entire balanced Hilbert space.
+
+For three cells introduce the two reflected kernels
+
+\[
+ N=M_1+M_{-1},\qquad D=M_1-M_{-1}.
+\]
+
+Here $M_{-1}$ is the same explicit formula (S14), evaluated at $t=-1$;
+it represents reflection to the opposite halfline, not a simplex facet.
+The even and odd extensions of $h$ from $[0,\infty)$ to $\mathbb R$
+identify their operators with $\phi(0)/\sigma$ times the ordinary
+one-dimensional OU operator. Consequently
+
+\[
+ \int N(r,s)d\nu(s)=\frac{\phi(0)}\sigma,\qquad
+ \int D(r,s)s\,d\nu(s)=\frac{\rho\phi(0)}\sigma r.
+ \tag{S30}
+\]
+
+For clarity, the ordinary OU spectrum used here follows from the
+generating function $e^{tx-t^2/2}=\sum_mH_m(x)t^m/\sqrt{m!}$:
+$T_\rho e^{tx-t^2/2}=e^{\rho tx-\rho^2t^2/2}$, so
+$T_\rho H_m=\rho^mH_m$. Gaussian integration of two generating
+functions gives orthonormality. If an $L^2(\gamma_1)$ function is
+orthogonal to every $H_m$, its Gaussian Laplace transform is entire
+with all Taylor coefficients zero; evaluation on imaginary arguments
+and uniqueness of Fourier transforms give that the function is zero.
+This proves completeness as well. Gaussian exponential integrability
+and Cauchy--Schwarz justify these operations.
+
+For even extensions of zero mean, the first allowed Hermite degree is
+$2$. For odd extensions orthogonal to $r$, it is $3$. The OU eigenvalues
+$\rho^m$ therefore give
+
+\[
+ \frac12\iint N(r,s)(h(r)-h(s))^2d\nu d\nu
+ \ge\frac{\phi(0)}\sigma(1-\rho^2)
+                  \inf_b\|h-b\|^2,
+\]
+
+\[
+ \frac12\iint D(r,s)rs
+       (h(r)/r-h(s)/s)^2d\nu d\nu
+ \ge\frac{\phi(0)}\sigma(\rho-\rho^3)
+                  \inf_b\|h-br\|^2.
+ \tag{S31}
+\]
+
+The norms are in $L^2(\nu)$. These are Hilbert-space statements for all
+$h\in L^2(\nu)$, without trace or differentiability assumptions.
+
+The decisive pointwise comparisons are
+
+\[
+ K_+\ge\tfrac32N,\qquad K_-\ge\tfrac32D
+                       \qquad(r,s\ge0).
+ \tag{S32}
+\]
+
+For $z=\rho rs/\sigma^2$ and $w=e^{z/2}\ge1$, multiply by the
+common positive Gaussian factor and by $2e^z$. The two differences
+become respectively
+
+\[
+ w^4+2w-3=(w-1)(w^3+w^2+w+3),\qquad
+ w^4-4w+3=(w-1)^2(w^2+2w+3).
+\]
+
+Thus (S32) is pointwise positivity, not a claimed Loewner comparison of
+the kernels themselves. It can be integrated against the nonnegative
+squared differences in (S18) and (S31).
+
+For the sign sector, (S18), (S31) and (S32) immediately give the explicit
+all-correlation bound
+
+\[
+ \mathfrak q_\rho((h,h,h)/\sqrt3)
+       \ge\ell\sigma\inf_b\|h-br\|^2.
+ \tag{S33}
+\]
+
+For the standard sector put $R(r)=\int K_+(r,s)d\nu(s)=a_\rho(r)/\rho$.
+It is positive and at most $2\phi(0)/\sigma$. The exact rewrite is
+
+\[
+ \rho\mathfrak q_\rho(h)=
+ \frac12\iint K_+(r,s)(h(r)-h(s))^2d\nu d\nu
+                  -(1-\rho)\int R h^2d\nu.
+\]
+
+For $\int h\,d\nu=0$, use (S31)--(S32) and the upper bound on $R$:
+
+\[
+ \mathfrak q_\rho(h)\ge
+   \frac{\phi(0)(1-\rho)(3\rho-1)}{2\rho\sigma}\|h\|^2
+   =\frac{\ell(1-\rho)(3\rho-1)}{3\rho\sigma}\|h\|^2.
+ \tag{S34}
+\]
+
+This is positive for every $\rho>1/3$, including arbitrarily near one.
+For $0<\rho\le1/2$, apply (S29) in the balanced standard sector and
+use the centered-kernel bound at $b=1/2$:
+
+\[
+ B_\rho(h)\le B_{1/2}(h)
+ \le\frac{\ell}{\sqrt{3}/2}\sqrt{G(1/2)}\|h\|^2
+ <\frac{\sqrt3}2\ell\|h\|^2.
+\]
+
+The lower bound $A_\rho\ge\ell\sigma^{-1}I$ proves
+
+\[
+ \mathfrak q_\rho(h)\ge
+  \ell(\sigma^{-1}-\sqrt3/2)\|h\|^2\qquad(0<\rho\le1/2).
+ \tag{S35}
+\]
+
+The two ranges overlap; there is no uncovered correlation interval.
+
+**An elementary certificate at $1/2$.** This proof does not require the
+350-interval calculation. Directly from (S24), write
+$G(1/2)=16\mathscr R/9-16\mathscr L^2/3$, where
+
+\[
+ \mathscr R=\frac43(1+2\arcsin(4/5)/\pi)
+ +\frac2{\sqrt6}(1+2\arcsin(1/5)/\pi)
+ +\frac1{\sqrt{21}}(1-2\arcsin(2/5)/\pi),
+\]
+
+\[
+ \mathscr L=\frac4{3\sqrt3}
+             +\frac1{\sqrt{15}}(1-2\arcsin(1/4)/\pi).
+\]
+
+Use $25/8<\pi<22/7$ and the rational bounds
+
+\[
+ \arcsin(4/5)<93/100,\quad \arcsin(1/5)<101/500,\quad
+ \arcsin(2/5)>411/1000,\quad \arcsin(1/4)<253/1000.
+\]
+
+These follow respectively from the alternating sine bounds through
+degrees $7,3,5,3$ on $[0,1]$. Squaring checks
+$1/\sqrt3>577/1000$, $1/\sqrt{15}>258/1000$,
+$1/\sqrt6<409/1000$, and $1/\sqrt{21}<219/1000$.
+They imply
+
+\[
+ \mathscr R<\frac{2650234883}{825000000},\qquad
+ \mathscr L>\frac{4619803}{4687500},\qquad
+ G(1/2)<\frac{32058163928093}{60424804687500}<\frac9{16}.
+ \tag{S36}
+\]
+
+For completeness the lower bound on $\pi$ follows already from
+Machin's identity and
+$\pi>16(1/5-(1/5)^3/3)-4/239>25/8$.
+The classical upper bound follows from the positive integral
+$\int_0^1x^4(1-x)^4/(1+x^2)dx=22/7-\pi$.
+The checker verifies the displayed polynomial and rational inequalities;
+the argument supplies their analytic connection.
+
+**Full three-cell theorem in every ambient dimension.** Define
+
+\[
+ \kappa_3(\rho)=
+ \begin{cases}
+  \ell(1/\sqrt{1-\rho^2}-\sqrt3/2),&0<\rho\le1/2,\\
+  \displaystyle\frac{\ell(1-\rho)(3\rho-1)}
+                    {3\rho\sqrt{1-\rho^2}},&1/2<\rho<1.
+ \end{cases}
+\]
+
+For every $d\ge2$, the cylindrical three-cell simplex and all balanced
+Gaussian $L^2$ facet speeds satisfy
+
+\[
+ \boxed{\displaystyle
+  \mathfrak q_\rho(f)\ge\kappa_3(\rho)
+               \operatorname{dist}(f,\mathcal R_{3,d})^2,
+                    \qquad0<\rho<1.}
+ \tag{S37}
+\]
+
+Here $\mathcal R_{3,d}$ is the space of geometric rotation speeds;
+$\kappa_3(\rho)>0$ is independent of $d$. In the active plane,
+(S33)--(S35) prove the theorem. Their standard-sector bound is smaller
+than $\ell\sigma$ on the applicable ranges, so it is valid for both
+sectors. At $\rho=1/2$ the resulting full gap is at least
+$\ell/(2\sqrt3)$.
+
+To check every extra-dimensional mode, write
+$x=(rp_{ij},z)$ with $z\in\mathbb R^{d-2}$ and decompose each speed
+in the orthonormal Hermite basis in $z$. The surface measure factors as
+$\nu\otimes\gamma_{d-2}$; the coefficient $a_\rho$ is unchanged and
+the Mehler interaction in extra degree $m$ is multiplied by $\rho^m$.
+Only degree $m=0$ has a mass constraint. In the active sign/standard
+components the forms at degree $m$ are therefore
+
+\[
+ \rho^{-1}\left[\int a_\rho h^2d\nu
+                       -\rho^m\iint K_\pm h h\,d\nu d\nu\right].
+ \tag{S38}
+\]
+
+For sign components with $m\ge1$, (S18) implies
+$K_-\le a_\rho$ as quadratic forms, so (S38) is at least
+$\ell(1-\rho)\sigma^{-1}\|h\|^2$.
+For standard degree $m=1$, (S38) is exactly the $K_+$ squared-difference
+form, hence at least $\ell\sigma\inf_b\|h-b\|^2$ by (S31)--(S32).
+Its kernel consists precisely of constant $h$.
+For standard $m\ge2$, the positive-kernel row identity gives
+$K_+\le a_\rho/\rho$ as forms, and again the gap is at least
+$\ell(1-\rho)\sigma^{-1}$.
+
+The only zero modes are thus the degree-zero sign mode $h=r$ and the
+degree-one standard modes with constant $h$. They are exactly rotation
+within the active plane and rotation mixing that plane with an unused
+coordinate, respectively, of total dimension $1+2(d-2)=2d-3$.
+Parseval and the bounded forms justify the orthogonal sum. The other
+block gaps dominate $\kappa_3(\rho)$: in the upper range the ratio to
+$\ell(1-\rho)/\sigma$ is $(3\rho-1)/(3\rho)<1$, and in the lower
+range this follows from $\sigma\ge\sqrt3/2$. This proves (S37) for
+all $L^2$ speeds, uniformly in $d$.
+
+In particular, the continuation note's conditional measurable local
+growth theorem is unconditional for three cells in the active plane at
+every fixed positive correlation. If the initial three-cell global
+optimality interval ends at $r_3<1$, its endpoint must have a nonsimplex
+tied ordinary global maximizer: the additional-interface-zero-mode
+alternative is now excluded. This remains a global rigidity obligation,
+not a proof of full simplex optimality.
 
 For $k\ge4$, (S4) supplies the precise symmetry blocks but no sign for
 their remaining infinite dimensional parts. In particular (S18) does
@@ -531,12 +782,16 @@ For $k=2$ one may use the centered interval of Gaussian measure $1/2$
 against the halfline; then $F_2=1/\pi$.
 
 A useful monotonicity principle therefore needs a specified normalization
-or a different quantity. The perimeter-scale candidate
-$\Delta_\rho/\arccos\rho$ is not proved monotone here.
+or a different quantity. The
+[perimeter-angle calculation](THREE_CELL_DEFICIT_AND_PERIMETER.md)
+also refutes the universal nondecreasing law for
+$\Delta_\rho/\arccos\rho$ by a balanced three-slab partition.
 
 The remaining targets are distinct:
 
-* Prove (S23), and obtain explicit bounds in all the blocks of (S4).
+* Obtain explicit bounds in the higher-cell blocks of (S4). Equation
+  (S23) and the full three-cell interface problem are settled by
+  (S29)--(S38).
 * Classify stationary stable balanced partitions. Simplex spectral
   stability does not classify critical points away from the simplex.
 * Exclude a nonsimplex maximizer tied with the simplex. The continuation
@@ -546,8 +801,8 @@ The remaining targets are distinct:
   bound together with estimates relative to the deformation of a moving
   competitor. A perimeter limit for each fixed partition is insufficient.
 * Seek stronger moment or perimeter inequalities that control that
-  relative error, and formulate a normalized monotonicity statement
-  before testing it.
+  relative error, and test a modified monotonicity statement that
+  accounts for the simplex junction term.
 
 Run the exact checker and its optional exploratory quadrature with
 
@@ -556,11 +811,13 @@ OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_simpl
 ```
 
 The exact part requires only Python's standard library. It checks all 30
-permutations in the $S_3/S_4$ character examples, (S21), and the interval
-inequalities used in (S27)--(S28), including rejection controls. The
-analytic operator reduction and the all-$k$ representation argument
-still require written proof review. The optional quadrature requires
-NumPy 1.26.4 and evaluates the open standard-sector inequality at four
-chosen correlations with two grids on $[0,10]$. It has no certified
-tail or discretization errors and proves no inequality. Its agreement
-is separate from the rational interval certificate.
+permutations in the $S_3/S_4$ character examples, (S21), the elementary
+polynomial bounds (S32)/(S36), and the interval inequalities used in
+(S27)--(S28), including rejection controls. The analytic operator
+reduction, OU parity spectra, tensor decomposition and all-$k$
+representation argument still require written proof review. The optional
+quadrature uses NumPy 1.26.4 to check the displayed gap constants and
+extra-degree-one block at four chosen correlations, with two grids on
+$[0,10]$, and checks the separate perimeter expansion at three angles.
+It has no certified tail or discretization errors and proves no
+inequality. Its agreement is separate from the exact arithmetic.

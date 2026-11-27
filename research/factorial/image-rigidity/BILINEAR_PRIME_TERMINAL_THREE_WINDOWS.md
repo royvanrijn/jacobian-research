@@ -418,3 +418,40 @@ A concrete control shows why residual separability needs the tame coefficient fi
 \]
 has the same coefficient lower bounds and the same two root valuations as the doubled-prime case \(p=3,m=2\). Its negative-edge polynomial is the separable linear polynomial \(2+Y\), \(Y=3A^3\), but \(b\) is a double root. Its coefficient value group already contains thirds. This refutes the broader residual-separability shortcut, not a factorial-window conjecture. The checker verifies the double root and the simple residual polynomial exactly.
 
+## 14. The exact bad-prime square-cluster obstruction
+
+**Proposition (perfect-square cluster reduction).** Let \(m\ge1\), let \(p>m\) be an odd prime, and let \(u\) satisfy \(D_{mp}(u)=0\ne D_m(u)\). Do not assume \(p\nmid R_m\). After a finite unramified base extension, put \(K=L(D_m(u))\) as in Section 13, so \(v(K^\times)=(p-1)^{-1}\mathbb Z\), and include all roots of the residual polynomial \(r_a\) in the residue field. Then every repeated root of \(r_a\) is exactly double. A repeated root of \(F_{mp-1}(u,A)\) exists if and only if one of the monic degree-\(2p\) Hensel factors attached to those double residual roots is a perfect square in \(K[A]\). In that event the factor is \(Q(A)^2\), with \(Q\) irreducible of degree \(p\). All its \(p\) distinct roots are double roots of \(F_{mp-1}\).
+
+Here the cluster factor is the factor containing exactly the roots with a prescribed nonzero residue \(\overline{pA^p}=\eta\). It is an actual factor of the characteristic-zero polynomial, not a freely chosen polynomial with the same leading reduction.
+
+To prove the residual assertion, set \(F=F_{m-1}\) and work in characteristic \(p\) at a residue \(a\) of \(u\). As in Section 13, \(D_m(a)=0\), \(E_{m-1}(a)\ne0\), and \(4-a^2\ne0\). Also \(F(a,0)\ne0\). At a nonzero repeated root \(\beta\), identities (8) and (24), now with \(n=m-1\), give
+\[
+ F_u(a,\beta)=-E_{m-1}(a)/\beta\ne0,\qquad
+ F_{AA}(a,\beta)=-(4-a^2)E_{m-1}(a)/\beta^4\ne0.          \tag{34}
+\]
+Since \(p\ne2\), the multiplicity is exactly two. Equation (31) is a coefficientwise Frobenius twist and a sign change of variable, so it preserves root multiplicities. Thus each root of \(r_a\) has multiplicity one or two. The first derivative in (34) concerns the untwisted smaller array; differentiating its Frobenius twist with respect to \(a\) would instead give zero in characteristic \(p\).
+
+The scaled polynomial \(\pi^{p-1}F_{mp-1}(u,Z/\pi)\), \(\pi^p=p\), reduces to \(Z^{p-1}r_a(Z^p)\). A root \(\eta\) of \(r_a\) of multiplicity \(e\in\{1,2\}\) consequently has a coprime residue cluster of degree \(ep\). The Hensel and Galois argument of Section 13 puts its monic cluster factor \(C_\eta\) in \(K[A]\), of that exact degree. Every root in this cluster has valuation \(-1/p\), hence minimal-polynomial degree at least \(p\) over \(K\).
+
+Integral repeated roots have already been excluded without a good-prime hypothesis. Simple residual clusters have degree \(p\) and are irreducible and separable by the same degree argument. Suppose now a degree-\(2p\) cluster contains a repeated root with monic minimal polynomial \(Q\) of degree \(d\ge p\). Separability in characteristic zero implies \(Q^2\mid C_\eta\). Hence \(2d\le2p\), forcing \(d=p\) and \(C_\eta=Q^2\). Conversely, if a monic \(C_\eta\) is a square in \(K[A]\), its monic square root has degree \(p\). The valuation degree bound makes that square root irreducible; its characteristic-zero roots are simple, and each becomes exactly double in the cluster. This proves both directions. It is a reduction, not an exclusion of the square factors.
+
+### A low-order discriminant shortcut fails
+
+The order argument of Sections 3--5 does not extend to every lifted terminal merely by removing the integer content of the discriminant. There is an exact obstruction at the bad pair \((m,p)=(5,7)\) in (32).
+
+**Proposition (bad-lift discriminant order, computational).** Put
+\[
+ \Delta(u)=\operatorname{disc}_A F_{34}(u,A)\in\mathbb Z[u],
+ \qquad \Delta=c\Delta_{\rm prim},
+\]
+where \(c>0\) is the gcd of its integer coefficients. Then \(\deg\Delta=1122\), \(v_7(c)=136\), and
+\[
+ \operatorname{ord}_{q}\bigl(\overline{\Delta_{\rm prim}}\bigr)=49,
+ \qquad q(u)=u^4+2u^2-2\in\mathbb F_7[u].                  \tag{33}
+\]
+Here \(q\) is the noncentral factor of \(\overline{D_5}=u q\); the order means the largest exponent for divisibility by the entire polynomial \(q\). In particular it is not less than \(p-1=6\). The reduction at the central factor \(u\) is a unit.
+
+The [exact checker](verify_bilinear_bad_prime_discriminant_order.py) constructs \(E_{34}\) from the integer Chebyshev recurrence, forms \(F_{34}\), computes its discriminant over \(\mathbb Z[u]\), removes its full integer content, and performs exact repeated division modulo seven. The [receipt](bilinear_bad_prime_discriminant_order_verification.json) retains the input coefficients, primitive discriminant modulo seven, quotient by \(q^{49}\), and nonzero next remainder. Multiplying the quotient back by \(q^{49}\) checks the stated order independently of the repeated-division loop. This is one exact finite computational assertion, with the stated environment and no independent-replay or formal-verification claim.
+
+At a noncentral \(D_5\) residue, the Eisenstein lift \(M_7(D_5(u))=0\) has local ramification degree six. Its mod-seven multiplicity therefore cannot contradict the order 49 in (33). A higher-precision argument retaining the actual lifted factorial array is needed if the good-prime assumption is to be removed this way. Neither (33) nor \(7\mid R_5\) asserts a repeated characteristic-zero root or a factorial counterexample.
+

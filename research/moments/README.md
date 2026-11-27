@@ -183,11 +183,18 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | The first-moment rotation gauge is the exact L2 rotation complement | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | Exact first interaction degree in the full simplex sign sector | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | Only rotations vanish in the complete three-cell sign sector at every positive correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
-| The remaining three-cell full-interface problem is one constrained scalar inequality | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| The three-cell interface condition reduces to a constrained scalar inequality | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | An explicit full three-cell interface gap on one-quarter through three-fifths correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | The unnormalized simplex noise-stability deficit is not monotone in correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| The normalized boundary interaction increases with Gaussian correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Reflected OU comparisons give explicit three-cell sector gaps | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| An explicit dimension-independent three-cell interface gap at every positive correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Three-cell measurable local growth at every fixed positive correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Any first three-cell global transition must have a nonsimplex tied maximizer | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| The known three-cell noise value has a nonzero quadratic perimeter-angle correction | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DEFICIT_AND_PERIMETER.md) |
+| Balanced three slabs refute universal perimeter-angle deficit monotonicity | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DEFICIT_AND_PERIMETER.md) |
 
-**Computed obligations:** 44 unresolved; 21 resolved within their exact scope.
+**Computed obligations:** 42 unresolved; 23 resolved within their exact scope.
 
 
 Scope limits:

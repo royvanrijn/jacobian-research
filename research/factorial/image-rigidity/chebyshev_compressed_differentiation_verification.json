@@ -1,0 +1,141 @@
+{
+  "diagonal_corruptions_rejected": 4,
+  "energy_entry_checks": 3894,
+  "node_grid_and_selected_node_cases": 81,
+  "scope": "exact rational controls for compression and energy identities, plus a strict-energy Cauchy counterexample to simplicity",
+  "source_sha256": "dd41d539594e9b2557286ad0b38df678f17d607782227c993db9ce49bc3a1341",
+  "status": "PASS",
+  "strict_cauchy_energy_counterexample": {
+    "compressed_matrix": [
+      [
+        "-4",
+        "2",
+        "0",
+        "0"
+      ],
+      [
+        "-31/10",
+        "0",
+        "3",
+        "0"
+      ],
+      [
+        "-11/15",
+        "0",
+        "0",
+        "4"
+      ],
+      [
+        "-121/2400",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "det_I_minus_bA": "(1+2*b+11*b^2/10)^2",
+    "exact_root_and_positive_diagonal_certificates": [
+      {
+        "Q_endpoint_values": [
+          "38841/16",
+          "-321599/625"
+        ],
+        "Q_prime_Bernstein": [
+          "-61839/2",
+          "-448571/15",
+          "-2168546/75",
+          "-3493332/125"
+        ],
+        "R_Bernstein": [
+          "-381967",
+          "-5600276/15",
+          "-27367676/75",
+          "-44576992/125"
+        ],
+        "common_sign": -1,
+        "interval": [
+          "-19/2",
+          "-47/5"
+        ]
+      },
+      {
+        "Q_endpoint_values": [
+          "-3239/16",
+          "281361/625"
+        ],
+        "Q_prime_Bernstein": [
+          "13449/2",
+          "98929/15",
+          "484606/75",
+          "790428/125"
+        ],
+        "R_Bernstein": [
+          "41497",
+          "622324/15",
+          "3107236/75",
+          "5165568/125"
+        ],
+        "common_sign": 1,
+        "interval": [
+          "-11/2",
+          "-27/5"
+        ]
+      },
+      {
+        "Q_endpoint_values": [
+          "178881/625",
+          "-2375/16"
+        ],
+        "Q_prime_Bernstein": [
+          "-546348/125",
+          "-65414/15",
+          "-13025/3",
+          "-8625/2"
+        ],
+        "R_Bernstein": [
+          "-1735088/125",
+          "-214964/15",
+          "-44240/3",
+          "-15125"
+        ],
+        "common_sign": -1,
+        "interval": [
+          "-13/5",
+          "-5/2"
+        ]
+      },
+      {
+        "Q_endpoint_values": [
+          "-213024/625",
+          "21801/256"
+        ],
+        "Q_prime_Bernstein": [
+          "1017024/125",
+          "629176/75",
+          "259391/30",
+          "142533/16"
+        ],
+        "R_Bernstein": [
+          "1534144/125",
+          "985456/75",
+          "420821/30",
+          "119499/8"
+        ],
+        "common_sign": 1,
+        "interval": [
+          "-4/5",
+          "-3/4"
+        ]
+      }
+    ],
+    "minimal_polynomial": "(lambda^2+2*lambda+11/10)^2",
+    "polynomial_Q_ascending": [
+      "12000",
+      "24000",
+      "12400",
+      "2200",
+      "121"
+    ],
+    "positive_energy_ratio": "R(x)/Q_prime(x), R=3Q_prime+xQ_double_prime",
+    "q_of_A_nonzero_and_square_zero": true
+  }
+}

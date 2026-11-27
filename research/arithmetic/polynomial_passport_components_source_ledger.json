@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+  "assurance": "Internal written reductions and bounded complete classifications, with exact primary theorem hypotheses. The complete arbitrary-passport classification remains open. No independent replay, formal verification, external mathematical review or priority claim.",
+  "declarations": [
+    {
+      "name": "Lemma H1. The cycle-incidence tree",
+      "node": "ARITH-POLYNOMIAL-CYCLE-INCIDENCE-TREE",
+      "scope": "For any minimal full-cycle polynomial tuple, the bipartite incidence graph of sheet vertices and nontrivial cycle vertices is a tree. Cycles within one factor have disjoint supports; whole-factor braiding moves them together. Conversely every such support tree expands to a transposition tree and full-cycle product."
+    },
+    {
+      "name": "Lemma H2. The invariant block-divisor lattice",
+      "node": "ARITH-POLYNOMIAL-BLOCK-DIVISOR-LATTICE",
+      "scope": "Every invariant block system of a group containing the fixed long cycle P_N is a congruence partition modulo a divisor d of N. The generator congruence test is exact, and the admissible divisor set is a braid-invariant lattice closed under gcd and lcm."
+    },
+    {
+      "name": "Theorem H3. The quotient and fibre index budget",
+      "node": "ARITH-POLYNOMIAL-QUOTIENT-FIBRE-INDEX-BUDGET",
+      "scope": "For each invariant d-block system of block size b, ind(g_i)=b ind(q_i)+sum_O ind(h_iO). Minimality forces total quotient index d-1 and total fibre-return index b-1. Projection commutes with braids; quotient components and decorated return-cycle types are necessary invariants, without a sufficiency or independent-inner-braid claim."
+    },
+    {
+      "name": "Theorem H4. Complete classification with two finite branch values",
+      "node": "ARITH-POLYNOMIAL-TWO-FACTOR-COMPONENT-CLASSIFICATION",
+      "scope": "For all degrees and arbitrary two-factor minimal passports, Q^2 is conjugation by P^-1. Every literal full component is the explicit union of at most2N cyclic conjugates of a pair and its Q image; pure components are cyclic conjugacy classes. Bicolored plane trees with retained cyclic orders classify ordered absolute components; color exchange is added when appropriate for full braids. Centralizer symmetry is retained."
+    },
+    {
+      "name": "Proposition H5. Standard spin is forced for every odd-order passport",
+      "node": "ARITH-POLYNOMIAL-ODD-ORDER-GENUS-ZERO-SPIN-RIGIDITY",
+      "scope": "For every genus-zero polynomial passport whose finite factors all have odd order, the standard spin including infinity is fixed by the cycle types, (-1)^(sum w(g_i)+w(P^-1)). Hence standard spin cannot distinguish its components. This does not classify all central covers or independently prescribed lifted branch data."
+    },
+    {
+      "name": "Theorem H6. Six primitive components with the same standard spin",
+      "node": "ARITH-POLYNOMIAL-DEGREE11-SIX-PRIMITIVE-COMPONENTS",
+      "scope": "The degree11 passport (3^2 1^5),(3^3 1^2) has six full components, each22 literal tuples over both placements and11 in one ordering. All have the same literal group A11, no nontrivial blocks, the same finite A11 classes and standard spin+1. The degree9 equal-type pair has three full components18,9,9 and four ordered absolute pure components, all group order1512 and spin+1."
+    },
+    {
+      "name": "Theorem H7. A genus-zero primitive/imprimitive split on fifteen sheets",
+      "node": "ARITH-POLYNOMIAL-DEGREE15-PRIMITIVE-IMPRIMITIVE-SPLIT",
+      "scope": "The degree15 passport (3^3 1^6),(3^3 1^6),(3 1^12) has exactly two full components: A15 of58725 literal tuples,3915 absolute classes and pure fixed-pattern size19575; C3 wr A5 of75 literal tuples,15 absolute classes and pure fixed-pattern size25. Their cyclic stabilizers have orders1,3; both spins are-1. The imprimitive quotient has d5,b3, quotient index4 and fibre-return index2."
+    },
+    {
+      "name": "Lemma H8. Refinement can bridge rigid components in a different passport",
+      "node": "ARITH-POLYNOMIAL-DEGREE11-REFINEMENT-COMPONENT-BRIDGES",
+      "scope": "All18 single-cycle refinements of the six ordered degree11 rigid representatives lie in one complete3267-tuple refined full braid domain. Exact ordinary braid words are retained. Coalescing recovers each original pair; these words do not connect the original rigid passport because they need not preserve the coalescing constraint."
+    },
+    {
+      "name": "Proposition H9. The primitive group reduction",
+      "node": "ARITH-POLYNOMIAL-PRIMITIVE-GROUP-REDUCTION",
+      "scope": "For at least three finite critical values, the only proper primitive polynomial monodromy groups besides Sn,An are the three exceptional PSL3(2),PSL3(3),PSL4(2) cases in degrees7,13,15 and the exact involution passports of Jones–Zvonkin Theorem1.3. This is an imported group reduction, not a general component theorem."
+    },
+    {
+      "name": "Theorem H10. Imported exceptional-passport component classification",
+      "node": "ARITH-POLYNOMIAL-EXCEPTIONAL-PASSPORT-COMPONENT-TABLES",
+      "scope": "Imported complete absolute component tables for the three exceptional passports: degree7 sizes21,21 (A7) and7,7 (PSL3(2)); degree13 size35620 (A13) and four13 (PSL3(3)); degree15 all placements size377835 (A15),135 ((S3 wr S5) intersect A15), and15,15 (PSL4(2)). Tuple cyclic stabilizers are trivial. The degree13/15 computational classifications are imported, not independently replayed here."
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": "Gareth A. Jones and Alexander Zvonkin",
+      "title": "Orbits of braid groups on cacti",
+      "url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "version": "Retained author PDF printed129–162; publisher bibliographic pages127–160, MMJ2(1),2002",
+      "inspected": "Actual primary PDF Section1.1, Theorem1.1 and following discussion; Section1.3 exact counts; Theorem1.3 primitive exceptions; Theorem3.1 central twist; Sections5.3–5.4 and their explicit component statements",
+      "role": "Mathematical input for topological/braid interpretation, H9's necessary group list and H10's complete imported exceptional tables. Section1.3 counts are a comparison; new finite completeness uses the independently derived class-character formula.",
+      "application": "The source explicitly treats r<=2 as a rigid problem, distinguishes identical groups from identical components, and classifies three exceptional primitive passports. Its historical general-open statement is not promoted to a current literature verdict."
+    },
+    {
+      "authors": "Peter Müller",
+      "title": "Primitive Monodromy Groups of Polynomials",
+      "url": "https://ypfmde.github.io/Papers/mon.pdf",
+      "path": "research/arithmetic/sources/mueller-primitive-polynomial-monodromy-author.pdf",
+      "sha256": "d8965d633757a5569d0ef3e0a85ee535f6c151b0bff3f8b4cc74b366ff116954",
+      "version": "17-page author version, placeholder cover metadata; published Contemp.Math.186(1995),385–401",
+      "inspected": "Actual primary PDF Section2.2 theorem, pp3–4, condition(*), and Section2.3 primitive/indecomposable setup and classification argument",
+      "role": "Mathematical input to the primitive group reduction only",
+      "application": "The isolated theorem sentence omits indecomposable; surrounding Section2.3 imposes primitivity. We retain this indispensable hypothesis. Classifying possible groups and branch orders does not classify all braid components."
+    },
+    {
+      "authors": "Jean Bétréma and Alexander Zvonkin",
+      "title": "Plane trees and Shabat polynomials",
+      "url": "https://www.labri.fr/perso/zvonkin/Research/avec-betrema-2.pdf",
+      "path": "research/arithmetic/sources/betrema-zvonkin-plane-trees-shabat-1996.pdf",
+      "sha256": "7020ca1271b051cea17b887b0010093b4a317c6db9e07dd7e577c68b9e7b76fd",
+      "version": "Discrete Mathematics153(1996),47–58",
+      "inspected": "Actual primary PDF Sections2–3, Main Theorem p50, cyclic-order/color definitions and degree-partition lemma p51, examples distinguishing colorings",
+      "role": "Primary context for the Shabat/plane-tree correspondence and retained cyclic orders",
+      "application": "The exact quotient by branch-color exchange in H4 is proved from Q^2=P-conjugation, with ordered and unordered critical-value conventions explicit; no ambiguous color equivalence is imported."
+    },
+    {
+      "authors": "Michael D. Fried",
+      "title": "Alternating groups and moduli space lifting invariants",
+      "url": "https://arxiv.org/html/math/0611591v4",
+      "path": "research/arithmetic/sources/fried-lifting-invariants-math-0611591v4.pdf",
+      "sha256": "e8ab94bcfbc60a43415bb2bfc6d44058deda67c48f78e45e8bfdb11f00607900",
+      "inspected": "Actual primary HTML and cached PDF Section2.3, Invariance Corollary2.3 and proof, pp9–10",
+      "role": "Mathematical input to H5 spin rigidity and finite spin values",
+      "application": "All finite odd-order factors force odd N; adding P^-1 gives a transitive product-one genus0 tuple. Standard spin is determined by cycle lengths for every such passport, not just pure single3-cycle factors."
+    },
+    {
+      "authors": "Gareth A. Jones",
+      "title": "Primitive permutation groups containing a cycle",
+      "path": "research/arithmetic/sources/jones-primitive-cycle-1209.5169v1.pdf",
+      "sha256": "3c52d1ba707db5106a6d2cf242749e1877e8210f875cf9dd43df8b3b1b9f5c57",
+      "inspected": "Retained Theorem1.1 formulation inspected in the predecessor one-T task",
+      "role": "Existing Jordan theorem input for H6/H7 monodromy",
+      "application": "H6 has prime-degree primitivity and explicit group words yielding3-cycles; H7's primitive seed passes the exhaustive block-divisor test and already contains a literal3-cycle."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "11daa1ef5698eb47e08fcf8a6ad6d5857a0785564b06b0103c89e4798077f1a1",
+      "locator": "H1–H10; exact universal, finite and imported scopes and remaining full classification"
+    },
+    {
+      "path": "research/arithmetic/polynomial_passport_components_inputs.json",
+      "sha256": "6fd3f187d31bb4c1c0052adce2bf7ea37814caf7e2dbbef473b8f185df0b6557",
+      "locator": "Literal finite seeds and six explicit group3-cycle certificate words"
+    },
+    {
+      "path": "research/arithmetic/HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md",
+      "sha256": "e53c9f25872a75b09b60601c816968056ac5b5ce934477cf3b6c137ec76742e6",
+      "locator": "The class product as a finite difference: exterior-character orthogonality and the general class-product formula"
+    },
+    {
+      "path": "research/arithmetic/INDEX_TWO_HURWITZ_MIXTURES.md",
+      "sha256": "d00bcd0d26a129ed5831a81fa14cb35d4a1c961756be289b3166232644d64206",
+      "locator": "Earlier index-two classification and explicit limits of its higher-index examples"
+    },
+    {
+      "path": "research/arithmetic/verify_index_two_hurwitz_mixtures.py",
+      "sha256": "1f66c391650dc11f5226c25470dcae22a3800643c1b1d737b1fb687831fc2d3f",
+      "locator": "Literal permutation and pure-meridian helpers; bounded predecessor assertions remain separate"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_passport_components.py",
+    "checker_sha256": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+    "receipt": "research/arithmetic/polynomial_passport_components_verification.json",
+    "receipt_sha256": "3484e213ce51a6eb110a51c52045d9978914ee05a0e56ca2c17eb9cf0dedf5b8",
+    "command": "python3 research/arithmetic/verify_polynomial_passport_components.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL repository root",
+    "software": "Python3.12.3, standard library only, active assertions",
+    "deterministic_inputs": "Direct enumeration of all3^2 permutations and product completion at N9/11. Retained exact group-word certificates for all six N11 representatives. Signed braid and explicit pure-meridian closures of two N15 seeds. Integer-root Clifford lifts, including direct adjacent-root powers calibrated at N9,11,13,15. All18 refinements of N11 representatives, with literal braid words. One complete N13 triple3^2 domain. Dihedral block budgets at N9,15,25 and every N15 imprimitive tuple.",
+    "coverage": "All minimal two-factor passports through N6 independently enumerated, including even degrees and nontrivial deck groups. Complete pair domains N9:36 and N11:66 in one ordering; full orbit sizes18,9,9 and six22. N15: exact character total19600 per pattern/58800 all placements, disjoint full closures58725+75 and pure closures19575+25. Every cyclic stabilizer checked; orders1 and3, giving absolute sizes3915 and15. N11 refined full domain3267 with18 bridge words; N13 full domain10816. A fixed-product nonminimal genus-one input is rejected. H10's exceptional degree13/15 computations are not replayed.",
+    "count_independence": "General exterior-power class-character formula rederived in the existing census note and evaluated with exact Fractions. Compared with the quoted Goulden–Jackson expression, preserving fractional class weights such as28/3. Neither random seeds nor the size of one sampled orbit supplies coverage.",
+    "spin_convention": "A3-cycle lift is (e_a-e_b)(e_b-e_c)/2 in the Euclidean Clifford cover. Products for disjoint3-cycles commute and give the canonical odd-order factor lift. Integer numerators are compared to the adjacent-root lift of P; its Nth power is evaluated by repeated multiplication by two-term vectors, giving the actual central sign."
+  },
+  "mathematical_review": {
+    "scope": "Internal audit of subgroup-preserving braids, every regular-cycle block system, exact quotient return budgets, ordered versus unordered branch colors, all six A11 certificate words, nontrivial imprimitive deck symmetry, literal and absolute counts, standard-spin genus restriction and refinement/coalescence scope.",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "remaining_frontier": "The active target remains complete component classification for all genus-zero polynomial passports. H4 resolves two finite values; H2–H3 constrain imprimitive gluing; H5 rules out standard-spin separation in the odd-order genus-zero domain; H6 shows even group+block+spin data are insufficient. Primitive Sn/An components for r>=3 and the joint braid action on lifts above quotient components remain open."
+}

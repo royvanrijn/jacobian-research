@@ -2140,8 +2140,14 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Explicit rational HLP family has unbounded dual three-isogeny Selmer ratio | Internal result | proved | [Source](GENUS_THREE_RANK_ZERO_THREE_SHA.md) |
 | Rank-zero genus-three Jacobians with arbitrarily large elementary three-Sha | Internal result | proved | [Source](GENUS_THREE_RANK_ZERO_THREE_SHA.md) |
 | A visible large prime counts distinct rank-three Mordell conductors without an exponent loss | Internal result | proved | [Source](QUARTIC_PELL_TWO_CLASS_DIRECTIONS.md) |
+| An infinite set of virtual quadratic norm specializations permits at most one exceptional affine fiber | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
+| Affine Picard torsion and at most one split rational fiber bound fixed Pell class directions | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
+| An l-divisible rational split-fiber class gives a new Jacobian direction under one ramified change of parameter | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
+| A genus-five Pell curve realizes the exceptional geometric direction and a genuine ordinary class | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
+| The fixed quartic Pell curve has no rational affine point for an extra class direction | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
+| Polynomial passport component reductions, rigid classification and exact higher-index splits | Internal result | proved | [Source](POLYNOMIAL_PASSPORT_COMPONENTS.md) |
 
-**Computed obligations:** 192 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 196 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -2306,6 +2312,7 @@ Scope limits:
 - SP1 reduces septic Pell rows to degree profiles (2,3) and (5,4), with individual nonzero torsion but no automatic independence. SP2 exhausts all15625 normalized F5 polynomials and bounds every smooth septic square-plus-one Jacobian three-rank by four. A degree-preserving integral rank-five candidate must therefore be bad at five. The explicit bad-at-five S7 control meets the unit/local-cube congruences for one section and has exactly one rational direction. The five-class endpoint stays open.
 - Theorem M7 of the mixed isolation note establishes one literal unmarked and exactly marked mixed full-cycle orbit for every odd N>=3, T isolation for N>=7 with the genuine N=5 boundary, removable-DT extraction and arbitrary fresh-leaf restoration. Its complete mixed-nine base bridges all four pure-seven cores. Pure and mixed connectivity now complete the original even full-alternating passport criterion for every even n>=8. Independent mathematical review and arithmetic realization questions remain separate.
 - A1–A8 of INDEX_TWO_HURWITZ_MIXTURES.md establish arbitrary minimal T/DT connectivity, even under the pure braid group for every ordered passport. The collective maximum puts all other Ts in a unique largest cut component; Q^5 exchanges two T markings with literal endpoint restored. The only multiple index-two orbits are the four pure-DT degree-seven ones. A9–A10 exhibit higher-index proper and imprimitive monodromy; A11 gives a genuine genus-one spin split outside minimality. General disconnected higher-index extraction/restoration and independent review remain open.
+- The active higher-index Hurwitz target is complete genus-zero polynomial component classification. H1–H9 give cycle-incidence trees, the complete block-divisor lattice, exact quotient/fibre budgets and a uniform two-factor plane-tree classifier. Six degree11 components all have A11 and standard spin+1; the degree15 split has groups A15 and C3 wr A5, both spin-1, with cyclic stabilizers1 and3. Primitive Sn/An components for r>=3 and joint imprimitive lift gluing remain open; group or spin classification alone does not close the target.
 
 Tracked obligations (computed states):
 
@@ -2454,6 +2461,10 @@ Tracked obligations (computed states):
 - **verification / open:** [Independently review Lemma 19, Theorem 20 and the base/absorption/marking dependency chain.](TERMINAL_MASS_HURWITZ_DESCENT.md) — VERIFY-ARITH-HURWITZ-FIXED-PROJECTION-EXTRACTION
 - **verification / open:** [Independently review M1--M7: both Q^2 pruning identities, maximization and common complementary phases, unique-largest paired-leaf alignment, the three-way type obstruction, diagonal star induction, outside support in the five-move escape, degree-five boundary, all four pure degree-seven cores, mixed-nine completeness, one-anchor restoration, exact marking, monodromy and lifting conventions. Present proof audit and replay are internal only.](MIXED_HURWITZ_ISOLATION_AND_CONNECTIVITY.md) — VERIFY-ARITH-MIXED-HURWITZ-ISOLATION-CONNECTIVITY
 - **verification / open:** [Independently review the arbitrary-mixture collective isolation, pure braid connectivity and obstruction proof.](INDEX_TWO_HURWITZ_MIXTURES.md) — VERIFY-ARITH-INDEX-TWO-MIXTURE-PROOF
-- **mathematical / open:** [Classify extraction/restoration and genuine monodromy/lifting components for arbitrary disconnected higher-index factors in the minimal full-cycle tree domain.](INDEX_TWO_HURWITZ_MIXTURES.md) — GAP-ARITH-HIGHER-INDEX-DISCONNECTED-TREE-FACTORS
+- **mathematical / open:** [Classify primitive Sn/An components with at least three finite branch values.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-POLYNOMIAL-PRIMITIVE-SN-AN-COMPONENTS
+- **mathematical / open:** [Determine the joint braid action on admissible imprimitive lifts over quotient components, with return data and deck symmetries.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-POLYNOMIAL-IMPRIMITIVE-LIFT-GLUING
+- **mathematical / open:** [Determine the reduced lifting invariants actually defined in each genus-zero monodromy/passport domain and any limits on their sufficiency.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-POLYNOMIAL-REDUCED-LIFTING-CLASSIFICATION
+- **verification / open:** [Independently review the uniform block/two-factor reductions and exact finite component certificates.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — VERIFY-ARITH-POLYNOMIAL-PASSPORT-COMPONENT-PROOF
+- **mathematical / open:** [Classify all components of arbitrary genus-zero polynomial passports with disconnected higher-index factors; unrestricted connectivity is not the target.](POLYNOMIAL_PASSPORT_COMPONENTS.md) — GAP-ARITH-HIGHER-INDEX-DISCONNECTED-TREE-FACTORS
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

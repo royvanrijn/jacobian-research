@@ -8,7 +8,7 @@
     "sympy": "1.14.0"
   },
   "sources": {
-    "BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md": "a9ad990e66300a0ca8d6869ebcdea67279daa79d595692da16528e55dc10f21d",
+    "BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md": "4376f382e2b91603277f45d3f23235bbf6b16d78d293a913c952d9f761b94ff8",
     "verify_bilinear_doubled_prime_ramification.py": "ce2c56bf712c9166d80c86d763b05c0b8e1fcecfe6ef7006a10735e72a261dc5"
   },
   "native_checks": [

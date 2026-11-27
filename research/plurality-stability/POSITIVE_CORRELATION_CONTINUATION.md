@@ -4,19 +4,21 @@ The [fixed-cell normal-flux proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md#extens
 establishes a qualitative interval of simplex optimality for each fixed
 cell count. This note proves a local comparison at an arbitrary positive
 correlation **under an explicit interface-kernel hypothesis**, and sharpens
-the obstruction to continuing global optimality. The hypothesis is proved
-for sufficiently small correlations; it is not proved throughout $(0,1)$.
+the obstruction to continuing global optimality. For arbitrary fixed cell
+count the hypothesis is proved for sufficiently small correlations. The
+three-cell case is now proved throughout $(0,1)$ by the separate symmetry
+and reflected-kernel argument linked below.
 All proofs and source audits here are internal. Independent mathematical
 review and formal verification remain unperformed.
 
 The [symmetry-sector analysis](SIMPLEX_INTERFACE_SYMMETRY.md) now gives
-the signed $S_k$ facet decomposition. For three cells it proves the
-rotational-only kernel on the entire sign sector at every positive
-correlation, and an explicit full-interface gap on $[1/4,3/5]$ by an
-analytic operator bound and exact rational interval certificate. The
-standard-sector inequality at arbitrary correlation and all higher-cell
+the signed $S_k$ facet decomposition. For three cells it proves an
+explicit full-interface gap modulo rotations for every positive
+correlation, independent of ambient dimension, by reflected OU kernel
+comparisons and an elementary bound at correlation $1/2$. The higher-cell
 blocks remain open. These local results do not exclude a distant tied
-global maximizer.
+global maximizer; for three cells such a tie is now necessary at any
+first global continuation endpoint below one.
 
 Fix $k\ge2$ and $n=k-1$. Let $T=(T_1,\ldots,T_k)$ be the central regular
 simplex partition of $\mathbb R^n$, with cell moments $b_i^*$ and common
@@ -428,5 +430,7 @@ the exterior normalization, the global facet bounds (B7), the compact
 interaction, the exact rotational mixed kernel, simultaneous metric and
 moment alignment, the variable-coefficient factor $1/2$ in (B13), and
 the product-measure limit (B14). The local theorem is an implication
-under (B10), not a proof of that hypothesis throughout $(0,1)$, and
-neither alternative at a finite continuation endpoint has been excluded.
+under (B10), not a proof of that hypothesis for arbitrary cell count
+throughout $(0,1)$. The separate three-cell theorem now supplies (B10)
+at every positive correlation and excludes its extra-zero-mode
+alternative. For $k\ge4$ both endpoint alternatives remain open.

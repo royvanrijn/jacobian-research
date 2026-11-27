@@ -112,7 +112,7 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/INDEX_TWO_HURWITZ_MIXTURES.md",
-      "sha256": "f3bed58efbe552cba1725486066f944c07219811530daf10df4998990a20fa0a",
+      "sha256": "d00bcd0d26a129ed5831a81fa14cb35d4a1c961756be289b3166232644d64206",
       "locator": "A1–A11; universal and finite scopes separated"
     },
     {
@@ -150,7 +150,7 @@
     "checker": "research/arithmetic/verify_index_two_hurwitz_mixtures.py",
     "checker_sha256": "1f66c391650dc11f5226c25470dcae22a3800643c1b1d737b1fb687831fc2d3f",
     "receipt": "research/arithmetic/index_two_hurwitz_mixtures_verification.json",
-    "receipt_sha256": "1dfcf00d891b7d09fd77a2edbfedbd738446faed83714d197ee1212b71429418",
+    "receipt_sha256": "73a120ad32e09ceea6e6d24937f0e4aeea4613ed8a0fcb0ae253d51736f7347c",
     "command": "python3 research/arithmetic/verify_index_two_hurwitz_mixtures.py",
     "working_directory": "canonical Ubuntu-24.04 WSL repository root",
     "software": "Python3.12.3, standard library only; active assertions required",
@@ -163,5 +163,5 @@
     "formal_verification": false,
     "external_review": false
   },
-  "remaining_frontier": "Independent review and replay remain open. General disconnected higher-index minimal full-cycle passports need their own extraction/restoration and component classification; A9/A10 rule out degree-only alternating-monodromy claims. A11 proves a genuine spin split outside minimality. No unrestricted higher-index or nonminimal connectivity is asserted."
+  "remaining_frontier": "Arbitrary minimal index-two mixtures are classified in the stated original domain. The full higher-index component target continues in POLYNOMIAL_PASSPORT_COMPONENTS.md, with a complete two-factor classifier, quotient/fibre budgets and exact higher-index splitting examples. General primitive Sn/An component structure for r>=3, the joint braid action on imprimitive lifts and reduced lifting invariants remain open. The genus-one spin example is not evidence of genus-zero spin splitting. Independent review remains pending."
 }
