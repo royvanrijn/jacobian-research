@@ -90,6 +90,70 @@ Use a simpler certificate verifier when possible. It should check the claimed ma
 
 Describe verification precisely. An author's rerun is an internal replay. A separately performed replay checks reproducibility. An independent mathematical review examines whether the computation and proof establish the stated theorem. Record who performed each check and what was examined; none of these labels implies the others.
 
+## When to extend a search
+
+Before raising a degree cap, expansion order, precision, or search range,
+identify the unresolved proof step and what the next computation could establish.
+Choose a run that serves at least one of these purposes.
+
+1. **Close a delimited obligation.** Use a proved reduction, exhaustive cutoff,
+   or specific certificate requirement to identify what remains to be checked.
+2. **Find a mechanism that extends.** Use selected examples to isolate a
+   recurrence, invariant, compatibility obstruction, or uniform estimate.
+   Identify where the same argument would have to work beyond the tested range.
+3. **Test a proposed argument.** State what a pass or a failure would establish
+   for a particular hypothesis or proof step. Choose the smallest case that can
+   decide it and retain the exact witness or certificate.
+
+After a batch, record the verified range and any change to the proof gap. If
+another run would only enlarge the range while leaving the same gap open,
+revisit the argument before extending the search.
+
+### Applications in this repository
+
+- **Weyl lift degree and order.** The canonically graded scalar Long scheme at
+  spatial cap \(27\) fails through \(h^7\). At a larger cap, identify which
+  new coefficient directions could remove that residual obstruction. Use a
+  higher jet to test an obstruction uniform in the cap or a recursion with one
+  spatial bound valid at every order. [Cap-27 obstruction](../research/dixmier/dixmier-formal-lifting/GRADED_LONG_CAP27_FULL_OBSTRUCTION.md)
+- **Factorial subsum precision.** For \(f(1,5)=\infty\), the missing step is
+  to handle valuation jumps of unbounded size. Use another precision check to
+  test a proposed growing lookback rule or a carry invariant that reaches the
+  target residue \(-1\). Select a jump where that rule could fail.
+  [Factorial subsums and valuation jumps](../research/factorial/ERDOS_404_FACTORIAL_SUMS.md)
+- **Moment prefixes.** For ternary Gaussian cubics, sixteen moments suffice
+  locally along the exceptional orbit. To decide the global sixteen-moment
+  question, identify residual components away from that orbit. On each
+  component, seek a purity certificate or a point satisfying the first sixteen
+  equations with a certified nonzero later moment. Compute later moments to
+  decide a specified component. [Local rigidity and global scope](../research/moments/vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md)
+- **Finite arithmetic coverage.** The thirds-balanced Eisenstein problem has
+  a proved reduction to all-inert targets in a fixed finite interval. An exact
+  check covering that residual set would settle the stated exception list.
+  [Exact reduction](../research/arithmetic/EISENSTEIN_SIFTED_ANGULAR_DISTRIBUTION.md#exact-balanced-exceptions-prime-families-and-reduced-targets)
+
+## Directional-conductor computations
+
+Prioritize structural results in the plane Keller conductor work. Reserve
+searches at higher conductors for computations with one of the purposes below.
+
+1. **Extend an infinite family.** The [three-to-two Laurent exclusion](../research/hessian/hc4-triangular-graphs/CONDUCTOR_FOURTEEN_CUBIC_ORDER_ALTERNATE_EMBEDDINGS.md#the-general-three-to-two-laurent-obstruction)
+   covers the sequences \((3m,2m,r)\) with \(2\le r\le m\) and
+   \(\gcd(m,r)=1\). For \(r>m\), identify which additional Laurent terms
+   can enter the polynomial Jacobian identity and what constraints they
+   satisfy. This is the obstruction to extending the existing argument.
+2. **Extract a uniform lemma from the case proofs.** Compare the
+   [quartic–septic parameter argument](../research/hessian/hc4-triangular-graphs/CONDUCTOR_EIGHTEEN_QUARTIC_SEPTIC_EXCLUSION.md)
+   and the [singular tangent determinant argument](../research/hessian/hc4-triangular-graphs/HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md).
+   Identify hypotheses on the parameter invariants, finite poles and
+   singular-fibre lifts that make the mechanism work independently of
+   conductor degree. Include the behavior at finite degree drops in the
+   proposed statement.
+3. **Use individual cases to test the lemma.** Before calculating a new
+   conductor case, state which proposed hypothesis or proof step it tests.
+   Retain the case if it exposes a failure of the generalization or supplies
+   a specific ingredient needed in its proof.
+
 ## State the exact scope of formal verification
 
 Pin the prover, library versions and build command. Build the target theorem and inspect its transitive assumptions. In Lean, inspect `#print axioms` for the relevant declaration and dependencies, check for `sorry` and `sorryAx`, and identify custom axioms. Distinguish ordinary foundational axioms from unproved mathematical inputs; report each material input with its exact statement.

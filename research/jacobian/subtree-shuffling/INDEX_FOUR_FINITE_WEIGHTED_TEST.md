@@ -65,8 +65,13 @@ quotients before grafting. Exact small replay with
 `verify_subtree_shuffle.py --scan 3 4 12` gives quotient dimension
 1304 out of 3057 unordered shapes at grade 12 and a dual evaluation
 \(188811\) for the weighted inverse class. A 35-second capped attempt
-through grade 15 did not finish. These figures provide no estimate
-for the dimensions of the recursive quotient at grade 104.
+through grade 15 did not finish. These figures do not estimate the
+grade-104 quotient dimension. The [complete recursive scan bound](LITERAL_INDEX_FOUR_58_FULL_PARALLEL_EXTENSION.md#size-of-a-complete-recursive-grade-104-scan)
+gives at least 2,829,774 candidate columns and
+5,211,060,703,987,899,795,082,169 basis substitutions for the standard
+full loop, even after quotienting all smaller grades. These counts
+describe that enumeration. A certificate for the single weighted
+class may use a smaller set of relations.
 
 A rational row combination for the recursively reduced grade-104 vector,
 or a rational dual vanishing on every grade-104 relation and nonzero on

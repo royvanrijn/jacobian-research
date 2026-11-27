@@ -1668,8 +1668,11 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | The 4gamma-th elliptic-curve conductor moment | Internal result | proved | [Source](ELLIPTIC_CONDUCTOR_MOMENTS_FROM_QUADRATIC_TORSION.md) |
 | Uniform cube-class completion bound for coherent norms | Internal result | proved | [Source](ABC_COHERENT_NORM_PENCILS.md) |
 | Six-cycle counts from reduced root differences | Internal result | proved | [Source](ERDOS_943_REDUCED_ROOT_DIFFERENCES.md) |
+| Exact lifting criterion for coherent three-prime norm records | Internal result | proved | [Source](ABC_COHERENT_NORM_PENCILS.md) |
+| Tail for singular six-cycles with large coherent gcd | Internal result | proved | [Source](ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md) |
+| Three-edge congruences and a sharper singular six-cycle tail | Internal result | proved | [Source](ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md) |
 
-**Computed obligations:** 131 unresolved; 25 resolved within their exact scope.
+**Computed obligations:** 133 unresolved; 25 resolved within their exact scope.
 
 
 Scope limits:
@@ -1814,6 +1817,9 @@ Scope limits:
 - Consecutive powerful pairs satisfy N(X)=O_epsilon(X^(12127/49920+epsilon)), from a trace-to-cubic fixed fiber, the quadratic 3-torsion first moment and the original-width reduced determinant estimate at shift one. Both corner orientations and all dyadic windows are covered. The Erdős #365 polylogarithmic count remains open.
 - Erdős #942: small-prime interpolation and coefficient averaging give at least 3m/8 pairwise coprime nonsquare powerful integers in one open square interval with log q=O(m^2 log m), for all sufficiently large m. The uniform logarithmic upper bound and matching exponent for ordinary occupancy remain open.
 - Coherent quadratic norms give an exact two-anchor pencil, a uniform fourth-prime bound in a fixed cube class and a rejected rank-one CRT record. Aggregate occupancy and the signed moment exponents remain open to improvement.
+- A coherent three-prime path lifts with free orientations exactly via the positive integral Heron defect and its incident-prime unit test. The squarefree part of that defect fixes the field.
+- Singular balanced six-cycles have a coherent-gcd upper tail below the trivial bound for G above B^(13/4), with B=2T. The T^2 budget holds for G>=B^(43/12).
+- Three complementary edge gcds force unit square congruences on actual continuation roots. This counts the singular T^2 sector at g_*>=B^(41/12), and at g_*>=B^(11/4+b/3) when the four-edge divisor product is at most B^b.
 
 Tracked obligations (computed states):
 
@@ -1917,5 +1923,7 @@ Tracked obligations (computed states):
 - **verification / open:** [Independently verify the trace-to-cubic fixed fiber in both signs, its class-group average, and the use of Plymesser's original-width determinant window at shift one in the bound with exponent 12127/49920.](ERDOS_365_CONSECUTIVE_POWERFUL_TARGET.md) — VERIFY-ARITH-ERDOS365-SUBQUARTER-PROOF
 - **mathematical / open:** [For some fixed 0<sigma<=1/9, obtain O_epsilon(X^epsilon V^(3-sigma)) for the full-modulus rank-one records occupied by actual coherent split-prime paths in the prime-path proof, with d in [X,2X), Z=X^(1/2+4eta)/H, V=Z^3/sqrt(X), and X^(5/24)<=H<=C X^(1597/5000) with the existing auxiliary allowances.](ABC_COHERENT_NORM_PENCILS.md) — GAP-ARITH-ABC-OCCUPIED-RANK-ONE-NORM-RECORDS
 - **mathematical / open:** [Bound by O_epsilon(T^(2+epsilon)) the original high-lcm residual actual selected-edge cycles with the further restriction D_*>T^(1/2), uniformly at every balanced target N. Retain the original determinant alternatives and kernel lcm conditions.](ERDOS_943_REDUCED_ROOT_DIFFERENCES.md) — GAP-ARITH-ERDOS943-CYCLES-LARGE-REDUCED-ROOT-DIFFERENCES
+- **mathematical / open:** [Bound by O_epsilon(T^(2+epsilon)) uniformly all selected-edge actual six-cycles with both original high kernel-side lcms and D_*>T^(1/2), in either the nonsingular sector or the singular sector T^(1/2)<g_*<(2T)^(43/12). All original residual restrictions continue to apply.](ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md) — GAP-ARITH-ERDOS943-CYCLES-INTERMEDIATE-COHERENT-GCD
+- **mathematical / open:** [Bound by O_epsilon(T^(2+epsilon)) the original high-lcm, large-reduced-difference selected-edge cycles at every balanced target, requiring on the singular branch additionally T^(1/2)<g_*<(2T)^(41/12) and failure of (8) in both cyclic orientations. Keep the nonsingular branch and the original exact common-target conditions.](ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md) — GAP-ARITH-ERDOS943-CYCLES-THREE-EDGE-CONGRUENCE-RESIDUAL
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

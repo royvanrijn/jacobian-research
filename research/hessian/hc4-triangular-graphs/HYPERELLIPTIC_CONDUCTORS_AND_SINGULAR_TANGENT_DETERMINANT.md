@@ -15,8 +15,10 @@ There is no \(K\)-polynomial target automorphism that gives a
 coordinate of \(x\)-degree two on the generic line. In particular
 no reduced characteristic sequence \((2d+1,2)\) occurs for any
 integer \(d\ge1\). The statement includes all drops in the conductor
-degree at finite parameters. A degree-two element of \(A\) obtained
-without a target-coordinate change is a separate embedding question.
+degree at finite parameters. The [reflection theorem](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md)
+excludes every degree-two element of the generic order, including
+elements supplied by approximate roots. The argument below establishes
+the target-coordinate case by controlling the action scale.
 
 ## The canonical order over the parameter line
 

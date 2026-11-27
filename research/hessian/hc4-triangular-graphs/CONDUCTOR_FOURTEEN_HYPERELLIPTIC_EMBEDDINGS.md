@@ -10,6 +10,10 @@ this exhausts the embeddings with degree semigroup
 \(\langle2,15\rangle\) in
 [conductor degree fourteen](CONDUCTOR_FOURTEEN_CHARACTERISTIC_SEQUENCES.md).
 
+The [all-degree reflection theorem](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md)
+also excludes both sequences from actual Keller orders because their
+last approximate roots have degree two.
+
 Both exclusions follow over the algebraic closure of the generic
 parameter field. The necessary approximate-root equation has no
 solution with a nonzero degree-two term.

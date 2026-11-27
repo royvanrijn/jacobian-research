@@ -169,9 +169,9 @@ the lower bound and its equality classification. ∎
 When additionally n=2p=m^2+1 for an odd integer m, the
 [Arala Hasse construction](ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md),
 Theorem 3, attains this minimum for infinitely many pairwise
-linearly disjoint K/Q. Its Corollary 4 places the entire
-minimum-rank family inside one fixed polynomial Keller map of
-four-dimensional affine space.
+linearly disjoint K/Q. Its Corollary 5 realizes infinitely many minimum-rank algebras
+as complete fibres of one fixed polynomial Keller map of
+three-dimensional affine space.
 
 For n=14 the unique optimal factor degrees are 14,364,2002,1716,
 which sum to 4096=2^12. For n=22 the minimum is 1048576=2^20.

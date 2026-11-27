@@ -80,17 +80,16 @@ degree drop.
 
 | Reduced sequence | Exclusion |
 |---|---|
-| \((13,2)\) | Six reflected actions. The sole finite leading-coefficient resonance forces vanishing of the action of a specialized simple nodal pair. |
+| \((13,2)\) | The [all-degree exclusion of degree-two elements](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md) rules out the quadratic generator. |
 | \((7,3)\) | Integrated cubic–septic parameter identities. Finite coefficient poles and nonhomogeneous ramification contradict the finite pairs, and the homogeneous specialization contradicts the fixed-order actions. |
 | \((5,4)\) | Integrated quartic–quintic parameter identities and an exact obstruction to the alternate specialized embedding of the fixed order. |
 | \((6,4,9)\) | A rational scale and a collision sextic control every finite pole of the quartic–sextic parameter equation. |
 | \((9,6,4)\) | Exact square-root tails reduce the parameter identities to a cubic relation. Finite-pair estimates and the homogeneous reflected actions give the final obstruction. |
 | \((10,4,5)\) | The polynomial part of the parameter Jacobian and the semigroup degrees are incompatible with a nonzero constant determinant. |
 
-The first two proofs are in the
-[hyperelliptic and cubic–septic exclusions](CONDUCTOR_TWELVE_HYPERELLIPTIC_AND_CUBIC_EXCLUSIONS.md).
-The third is in the
-[quartic–quintic exclusion](CONDUCTOR_TWELVE_QUARTIC_QUINTIC_EXCLUSION.md).
+The [hyperelliptic and cubic–septic note](CONDUCTOR_TWELVE_HYPERELLIPTIC_AND_CUBIC_EXCLUSIONS.md)
+contains the cubic–septic proof and a separate period proof for \((13,2)\).
+The third branch proof is the [quartic–quintic exclusion](CONDUCTOR_TWELVE_QUARTIC_QUINTIC_EXCLUSION.md).
 The last three are in the
 [cable exclusions](CONDUCTOR_TWELVE_CABLE_EXCLUSIONS.md).
 This exhausts the degree-twelve characteristic sequences.

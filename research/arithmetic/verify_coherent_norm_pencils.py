@@ -63,6 +63,21 @@ def partitions(edges, vertices):
             assert sum(edge in pairs for edge in ((a, b), (a, c), (b, c))) != 2
 
 
+def normalized_traces(primes, coefficients):
+    p1, p2, p3 = primes
+    x, y, z = coefficients
+    assert gcd(x, y) == gcd(x, z) == gcd(y, z) == 1
+    assert gcd(x, p1 * p2) == gcd(y, p2 * p3) == gcd(z, p1 * p3) == 1
+    a, b, c = p1**3 * y**2, p2**3 * z**2, p3**3 * x**2
+    assert (a - b) % x == (c - b) % y == (a - c) % z == 0
+    quotients = [divmod(n, d) for n, d in
+                 ((a + b - c, y*z), (b + c - a, x*z), (b - a - c, x*y))]
+    assert all(remainder == 0 for _, remainder in quotients)
+    e, remainder = divmod(4*a*c - (a + c - b)**2, (x*y*z)**2)
+    assert remainder == 0
+    return tuple(trace for trace, _ in quotients), e
+
+
 def run_field(d, orientations=None):
     generators = {p: (a, b) for p, a, b in prime_cubes(d)}
     if orientations is not None:
@@ -92,6 +107,12 @@ def run_field(d, orientations=None):
         assert anchor**2 * c**3 == b**3 * x**2 - u * x * y + a**3 * y**2
         up, vp = multiply(edges[a, b], edges[b, c], d)
         assert (up, vp) == tuple(b**3 * k for k in edges[a, c])
+        original = (v(a, b), v(b, c), v(a, c))
+        delta = gcd(*original)
+        signed = tuple(value // delta for value in original)
+        traces, e = normalized_traces((a, b, c), signed)
+        assert e == d * delta**2 and gcd(e, a*b*c) == 1
+        assert traces == (edges[a, b][0], edges[b, c][0], edges[a, c][0])
 
     counts = {2: 0, 3: 0}
     first_collision = None
@@ -141,6 +162,7 @@ def relaxed_rank_one_record():
         if i * i + j * j + k * k <= radius**2 and (p3 * i - p1 * k) % z == 0
     }
     assert small_vectors == {(0, 0, 0), (p1, p2, p3), (-p1, -p2, -p3)}
+    assert normalized_traces((p1, p2, p3), (x, y, z))[1] < 0
     print("Relaxed rank-one record has no imaginary quadratic norm lift.")
 
 
@@ -151,4 +173,8 @@ if __name__ == "__main__":
             totals[key] += value
     assert totals == {2: 0, 3: 5642}
     assert run_field(43, {17: 1, 59: -1, 127: 1, 139: 1}) == {2: 1, 3: 0}
+    run_field(2)
+    _, e = normalized_traces((3, 5, 7), (1, 2, 1))
+    assert e == 10475 and gcd(e, 3*5*7) == 5
+    print("Positive-Heron control fails the incident-prime unit test at 5.")
     relaxed_rank_one_record()

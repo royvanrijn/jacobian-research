@@ -20,10 +20,14 @@ and the same positive increments, proper gcd drops, strict inequality
 and freeness apply. The [exact enumeration](verify_conductor_twenty_characteristic_sequences.py)
 replays all six cases.
 
-## Reduction to four embeddings
+## Reduction to two embeddings
 
-The [degree-two target-coordinate theorem](HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md)
+The [all-degree exclusion of degree-two elements](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md)
 excludes \((23,2)\). The
 [short three-to-two Laurent theorem](CONDUCTOR_FOURTEEN_CUBIC_ORDER_ALTERNATE_EMBEDDINGS.md)
-excludes \((15,10,4)\) with \(m=5,\ r=4\). The four remaining
-sequences are \((8,6,11),(10,4,15),(14,4,11),(12,8,6,11)\).
+excludes \((15,10,4)\) with \(m=5,\ r=4\).
+The [quartic–degree-fourteen proof](CONDUCTOR_TWENTY_TWO_QUARTIC_TETRADECIC_EXCLUSION.md)
+excludes \((14,4,11)\) using the finite collision and scale equations.
+The [three-stage rational parameter obstruction](CONDUCTOR_TWENTY_TWO_TWELVE_EIGHT_SIX_ELEVEN_EXCLUSION.md)
+excludes \((12,8,6,11)\). The two remaining sequences are
+\((8,6,11),(10,4,15)\).

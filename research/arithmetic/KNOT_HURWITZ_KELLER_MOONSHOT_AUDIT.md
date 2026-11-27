@@ -5,8 +5,9 @@ large bridge number. The real paired-cover locus has
 a uniform matching-walk classification and complete real-root spectra.
 One fixed Keller map carries the degree-ten A10 pencil in dimension three;
 arbitrary rational finite-etale families have fixed-map realization in
-dimension four. A different, known alternating cover now supplies uniform
-Hasse families of rank 2^(n-2), including the minimum rank 256 in degree ten.
+dimension four. Arala's concentrated-inertia cover supplies uniform Hasse
+families of rank 2^(n-2) and a fixed three-dimensional Keller realization
+in each admissible degree, including rank 256 in degree ten.
 The degree-fourteen alternating Hurwitz passport has one absolute component. Known graded
 Keller constructions give generic A_n in dimension three for every even
 n>=6, with an explicit fixed-field formula below. Rational paired-critical
@@ -25,7 +26,7 @@ historical priority claim.
 | Hurwitz classification | Degree fourteen and an infinite D5-lobe family | One absolute full-A14 orbit. Ordered one-vertex D5 lobe trees reach the canonical wreath-leaf form in at most quartic cost. The distance grows quadratically for the common-root bouquets. Imprimitive leaf deletion and specified coalesced attachment holonomy are classified. Degree sixteen and arbitrary-tuple uniform connectivity remain open. |
 | One fixed Keller map | Every admissible degree | One fixed rational A3 map for each degree m^2+1, odd m>=3, has infinitely many complete A_n field fibres. The paired degree-ten pencil also has its own fixed map. |
 | Generic alternating Keller group | All even natural actions n>=6; the smallest plane case A4 | Polynomial A3 realizations in all even degrees; regular arithmetic A_(m^2+1) over Q(sqrt(-3)). Every plane A4 action is excluded. General plane realization or exclusion remains open. |
-| Hasse algebras | Uniform admissible degrees | A different concentrated-inertia cover gives minimum-rank-2^(n-2) Hasse families and one fixed A4 map per degree. Numerical optimality follows from Maroti's prior covering theorem; the optimal subgroup family is classified uniformly. The original double-transposition pencil retains its rank-256 density obstruction after every solvable rational base change. |
+| Hasse algebras | Uniform admissible degrees | The concentrated-inertia cover gives minimum-rank Hasse families and one fixed A3 map of generic group S_(2^(n-2)) per admissible degree. Numerical optimality follows from Maroti's prior covering theorem. The optimal subgroup family is classified uniformly. The original double-transposition pencil has a separate rank-301 family on one fixed A4 map and retains its rank-256 density obstruction after every solvable rational base change. |
 | Extremal real nodes | All even degrees at least eight | Uniform real-algebraic existence, matching-walk chambers and spectra. Affine trace is excluded in degree 4h>=12. The quadratic spectral slice has an exact pairing criterion, real-solubility gate and an unavoidable accessory divisor. General rational models in degrees twelve and 26 remain open. |
 
 ## Prime knots and augmentation rank
@@ -574,12 +575,20 @@ four and residual S_(n-4) has the same obstruction for its odd-subset
 and middle-partition element cover, of rank 2^(n-2). This assumes the
 stated rational cover and residual group; it constructs no degree-26 model.
 
-The [fixed finite-etale family theorem](../jacobian/monodromy-theory/FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md)
-places all these rank-301 algebras in complete fibres of one fixed
-Jacobian-one A4 map, with generic S301. Its rational target curve records
-the parameter. The same compiler places each new rank-2^(n-2) family in
-one fixed A4 map, with generic S_(2^(n-2)). A fixed A3 map for these product
-families remains open.
+The [fixed finite-etale family theorem](../jacobian/monodromy-theory/FIXED_KELLER_MAP_FINITE_ETALE_FAMILIES.md#corollary-3-infinitely-many-hasse-failures-in-one-fixed-map)
+places the paired-critical rank-301 product algebras in complete fibres
+along a rational target curve of one fixed Jacobian-one A4 map with
+generic arithmetic and geometric group S301. The distinguished fibres
+have splitting group A10.
+
+For the concentrated-inertia products, the
+[original-parameter threefold realization](ARALA_LAURENT_PENCILS_AND_KELLER_FIBRES.md#corollary-5-one-fixed-threefold-for-the-concentrated-hasse-family)
+places the complete product of rank 2^(n-2) in one fixed Jacobian-one A3
+map for each admissible degree. Its generic arithmetic and geometric
+groups are S_(2^(n-2)). At n=10 that group is S256, while the distinguished
+complete fibres have splitting group A10 and factor degrees 10, 120
+and 126. The individual degree-ten root-field realization concerns a
+separate family of whole fibres.
 
 ## Extremal real geometry
 

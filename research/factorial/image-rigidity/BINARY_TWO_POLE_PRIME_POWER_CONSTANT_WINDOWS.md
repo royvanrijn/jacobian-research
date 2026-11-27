@@ -1240,6 +1240,287 @@ can thus be tested through an exact finite
 reachability problem followed by the linked
 moment calculation.
 
+### Shifted quartics at the first radius
+
+**First-radius shifted quartic restriction.** In the
+first wild four-term case, an exact block with two
+foreign ternary ones requires, up to exchanging
+the variables, two linear axes and a foreign exponent
+\(4\cdot3^r\) with \(r\ge6\). Its start \(9H+5\)
+must satisfy
+\[
+              H\equiv
+                 \begin{cases}
+                   136\pmod {243}&r=6,\\
+                   217\pmod {243}&r\ge7 .
+                 \end{cases}
+\]
+These are necessary conditions for an exact block.
+
+Indeed (17) and (19) force a single run of ones,
+so the two bits belong to the same axis and are
+adjacent. Take \(\alpha=4\cdot3^r,\beta=0\).
+Writing \(Q_x=3^q\), (10) and the adjacent-digit
+condition leave \(q\ge r+3\) or \(r\ge q+2\).
+Use the parameters (21).
+
+At \(I_4\) the foreign-only factor is determined
+by whether \(r=0\) or \(r>0\). To see this, write
+\(P_Q(n)=(Qn)!/(n!(Q!)^n)\). Relative to the
+foreign-only factor for \(4\), the factor for
+\(4\cdot3^r\) is multiplied by
+\(P_{3^r}(4m)/P_{3^r}(4)^m\). Use the pure axis
+congruence modulo \(81\) and the bound on its
+valuation.
+
+In the lower case \(q-r\ge3\), the retained
+cross-binomial polynomial at accuracy \(h\) uses
+\(\lfloor 4m3^r/3^{q-h+1}\rfloor\) and axis
+height \(h-1\). It therefore depends only on the
+gap. The gap can be capped at five at precision
+\(I_4\). For \(m=1,2\) the largest valuation of
+an index in \(\prod_{j=1}^{4m3^r}(1+3^q x/j)\)
+is at most \(r+1\); for \(3\le m\le5\) it is at
+most \(r+2\), and those latter insertions need
+only modulus nine. Thus a gap of at least five
+makes every factor one at the required accuracy.
+
+In the upper case put \(d=4m3^{r-q}\). The
+cross binomial factors as
+\[
+              \binom{x+d}{x}
+                 \frac{P_{3^q}(x+d)}{P_{3^q}(x)P_{3^q}(d)}.
+\]
+The second factor is one modulo \(81\).
+If \(q>0\), use
+\(P_{3^q}(x)\equiv1+9\binom{x+1}{3}\pmod {81}\)
+and the identity
+\(\binom{x+d+1}{3}-\binom{x+1}{3}-\binom{d+1}{3}=xd(x+d)/2\),
+which is zero modulo nine since \(9\mid d\).
+When \(q=0\) the pure factors are one exactly.
+By the upper-binomial period, \(r-q\) can be
+capped at seven, and \(q\) itself may be taken as
+zero or one. The other axis is pure and uses
+only its height-zero flag. These reductions give
+thirty-six profiles at \(I_4\).
+
+The [checker](verify_binary_shifted_quartic_first_radius.py)
+uses the first two cubic pivots and the linear
+third pivot to reduce the last row in the
+\(\pi\)-filtration. Any nonzero value of its
+initial row at their forced residues rules
+out the block. If the remaining coefficient at
+order eleven is \(B-h\) and vanishes at the
+forced residue, then \(v(B-h)\ge1/3\) in a
+zero block. In the normalized first-row pivot
+in \(B^3\), the order-three term then has
+valuation above \(4/3\). Its order-four
+coefficient evaluates to a nonzero residue,
+which also excludes the block. At \(I_4\) the
+only fifteen retained representatives have both
+axes linear, and either \(r=3,\ H\equiv7\bmod9\)
+or \(r\ge4,\ H\equiv1\bmod9\).
+
+For this last sector lift to \(I_7\).
+The pure axis factors of the phase are one,
+and the foreign-only factor above stabilizes
+modulo \(3^7\) for \(r\ge3\). In fact the
+height-\(j\) block of a pure axis quotient is
+one modulo \(3^{2j+1}\) for \(j\ge2\), as in the
+higher-precision second-radius calculation.
+The scalar estimates of the \(X^4\) lift apply
+with \(-54\le\ell\le8\) and \(H\bmod729\).
+For a negative offset the same lower bounds
+\(\mathbf1_{3\mid t}+\mathbf1_{9\mid t}\) suffice,
+and the changed factor has valuation at least
+eight. For a positive offset the denominators
+still have valuation at most one. The axis
+count is therefore at most sixty-two, so the
+upper-binomial period modulo \(3^h\) is still
+\(3^{h+3}\) and \(r\ge10\) uses the \(r=10\)
+profile. Counts \(m\ge9\) already cost at least
+seven. The checker evaluates the residue test
+on the resulting 648 refinements and retains
+only the fifteen representatives in the
+displayed congruence classes.
+
+**Linear-axis exclusion for exponents divisible by twenty-seven.**
+In the remaining first wild
+four-term case with both axes linear, there is no
+exact block if \(27\mid\alpha,\beta\).
+In particular the first-radius shifted quartic
+restriction leaves no two-digit case.
+
+Passing to the valued completion if necessary
+allows use of the copy of \(\mathbb Q_3\) inside it.
+Write \(r=\min(v_3(\alpha),v_3(\beta))\), with
+\(v_3(0)=+\infty\), so \(r\ge3\) and at least one
+exponent has value \(r\). Normalize the two axes
+to \(1,b\). Their factorial expansion gives
+\[
+       DR(T)=\sum_{m\ge0}F_m u^m T^m
+                    (1-T)^{-m\alpha}(1-bT)^{-m\beta}.
+\]
+Put \(V=(u+k)/(3k)\), \(z=-1+3V\), and
+\(k=\pi(1+i+\pi A)\) as in (21). Then \(V\)
+is integral. Divide \(Z_j\) by
+\(k^j(9H)!/(9H+j)!\) for \(j=7,8\), and write
+the quotient as \(P_j(V,k,b)\). With \(n=9H+j\)
+and \((n)_{\underline a}\) the falling factorial,
+its zeroth-order term in \(\alpha,\beta\) is
+\[
+    M_j(V)=\sum_{m\le n}F_m z^m(n)_{\underline m}.
+\]
+Here and in the expansion below the actual \(F_m\)
+are kept fixed. The two first-order terms are
+\(\alpha D_j(V,k)\) and \(\beta D_j(V,k/b)\),
+where
+\[
+      D_j(V,k)=\sum_{\substack{m,s\ge1\\m+s\le n}}
+         \frac{m}{s} F_m z^m(n)_{\underline{m+s}} k^{-s}.
+\]
+These expressions follow by taking the zeroth
+and first powers of the upper exponents in the
+two binomial factors of \(DR(T)\). The normalized
+constant-shift coefficient supplies the falling
+factorial.
+
+A summand of \(D_j\) has valuation at least
+\[
+    w(m,s)=v_3(m!)+v_3(m)+v_3((m+s)!)-v_3(s)-s/3.
+\]
+For \(n'=m+s\ge60\) and \(d=\lfloor\log_3 n'\rfloor\)
+the digit formula gives \(w(m,s)\ge n'/6-2d-1>2/3\).
+The finite check for \(n'<60\) gives \(w(m,s)\ge-1\).
+Only \(m=1,2\) and \(s\le18\) occur with
+\(w(m,s)<2/3\). For those pairs the checker
+also gives
+\(w(m,s)-\max_{1\le a<s}v_3(a)\ge-2\),
+with the empty maximum taken as zero.
+The single-exponent binomial coefficient
+\(\binom{m\alpha+s-1}{s}\) is
+\((m\alpha/s)\prod_{a=1}^{s-1}(1+m\alpha/a)\).
+Replacing the product by one therefore incurs
+valuation at least \(2r-2\) after summation.
+The pairs with \(w(m,s)\ge2/3\) give value at
+least \(r+2/3\) using the bound
+\(v_3\binom{m\alpha+s-1}{s}\ge v_3(m\alpha)-v_3(s)\).
+The same estimates hold for \(\beta\).
+
+For mixed terms with offsets \(s,t\ge1\), the
+valuation is at least \(2r\) plus
+\[
+ v_3(m!)+2v_3(m)+v_3((m+s+t)!)-v_3(s)-v_3(t)-(s+t)/3.
+\]
+For \(n'=m+s+t\ge120\), the latter is at least
+\(n'/6-3d-1\), with \(d=\lfloor\log_3 n'\rfloor\),
+and hence positive. The finite check for smaller
+\(n'\) bounds it below by \(-2\).
+These bounds prove
+\[
+  P_j(V,k,b)\equiv M_j(V)+\alpha D_j(V,k)
+                  +\beta D_j(V,k/b)\pmod {I_{r+2/3}} .
+\]
+
+The polynomial \(M_7(V)/3\) is integral with
+linear reduction of slope one. The \(m=0,1\)
+terms give the slope, and every term with
+\(m\ge2\) contains \(9H+6\) in its falling
+factorial. It has a unique integral root
+\(V_0\in\mathbb Z_3\). At \(m\ge3\), the
+factor \(F_m(n)_{\underline m}\) is divisible
+by nine. The terms \(m=0,1,2\) and the
+congruence \(F_2\equiv-1\bmod9\) from (17)
+and (19) consequently give
+\(V_0\equiv1\bmod3\) and \(M_8'(V_0)/3\equiv0\bmod9\).
+If \(P_7(V,k,b)=0\), the bound \(v(D_7)\ge-1\)
+gives \(v(M_7(V))\ge r-1\). The divided
+difference of \(M_7/3\) at \(V,V_0\) is
+a unit, so \(v(V-V_0)\ge r-2\).
+Taylor expansion and the derivative residue
+give \(M_8(V)\equiv M_8(V_0)\pmod {I_{r+2/3}}\).
+Replacing \(V\) by \(V_0\) in the two
+perturbations to \(P_8\) has the same precision,
+since each power of \(z\) changes by valuation
+at least \(r-1\).
+
+The remaining exact coefficient calculation is
+\[
+                D_8(V_0,k)\equiv2+(1+i)\pi
+                                      \pmod {I_{2/3}}.
+\]
+The checker calculates \(3D_8\bmod\pi^5\)
+using the finite \((m,s)\) list and the binomial
+expansion of \((1+i+\pi A)^{-s}\).
+It checks the identity as a polynomial in
+\(A\), with \(z(V_0)\equiv2\bmod9\) and
+\(F_2\equiv-1\bmod9\). The falling factorials
+can use \(H\bmod3^7\): under such a change
+the top integer changes by a multiple of \(3^9\),
+and \(s\le18\) gives valuation at least one
+for the resulting change of any retained
+derivative term. The checker covers all 2187
+classes. For \(k/b=\pi(1-i+\pi A')\), \(A'\)
+is integral and the same calculation sends
+\(i\) to \(-i\).
+
+Consequently a zero of \(P_8\) would require
+cancellation between the rational \(3\)-adic term
+\(M_8(V_0)+2(\alpha+\beta)\) and
+\(\pi((1+i)\alpha+(1-i)\beta)\) below
+\(I_{r+2/3}\). The latter has valuation
+\(r+1/3\), since \(1+i,1-i\) are independent
+over \(\mathbb F_3\) and at least one of
+\(\alpha/3^r,\beta/3^r\) has nonzero residue.
+The rational term has integer valuation or
+is zero. This contradiction proves the claim.
+
+**First-radius two-digit exclusion.** Together
+with the shifted quartic restriction, this gives
+the four-window for all wild four-term profiles
+with two foreign ternary ones at \(L=3\).
+
+**First-radius four-window with two linear axes.**
+In the remaining first wild four-term case the
+four-window holds for all starts if both axes are
+linear.
+
+The two-digit case is already excluded. With at
+least four foreign ones, the remaining linear-axis
+profiles have \(9\mid\alpha,\beta\) from (10).
+The uniform linear-axis exclusion requires that
+at least one of the two exponents has valuation
+exactly two. The other may be zero. At precision
+\(I_3\) or \(I_{10/3}\), only \(m=0,1,2\)
+foreign insertions contribute, since
+\(v_3(F_m u^m)\ge3v_3(m!)+m/3\) for total digit
+count at least four. In both tests \(m=1,2\)
+need only modulus \(27\). Equations (17) and
+(19) give \(F_2\equiv-1\bmod9\), so the
+modulus-\(27\) values to test are \(8,17,26\).
+
+The upper binomial is simply
+\(\binom{x+m\alpha}{x}\) on the first axis and
+the corresponding expression in \(\beta\) on
+the second. At \(I_3\), \(x\le26\), so the
+upper-binomial period uses each exponent
+modulo \(3^5\). At \(I_{10/3}\), \(x\le35\)
+and the period uses each modulo \(3^6\).
+These are the first three and four bits above
+the two required zero digits, respectively.
+The scalar transfer for \(H\) gives modulus
+nine in the first test and twenty-seven in the
+second. Thus in the first stage there are
+twenty-six unordered pairs of exponent
+prefixes with at least one valuation two,
+three \(F_2\) choices, and nine \(H\) classes.
+Of the 702 representatives, 138 survive the
+test. The [same checker](verify_binary_shifted_quartic_first_radius.py)
+then excludes all 1548 refinements at
+precision \(I_{10/3}\). No characterization
+of the attainable \(F_2\) values within the
+three-element superset is needed.
+
 ## 9. Low foreign exponents at larger critical radii
 
 Suppose \(p=3,\ L=3^h\ge9\), and the foreign term of a
@@ -2294,6 +2575,12 @@ conditions the fourth power on an axis is also excluded by
 (21)–(22) and the subsequent linked lifts. The bounded
 upper profiles give a finite first-radius reduction
 at precision four for the other foreign-column cases.
+The shifted quartic exclusion settles total digit
+count two at this radius. The linear-axis result
+also excludes the case of two linear axes at every
+digit count. The remaining first-radius profiles
+have total digit count at least four and at least
+one nonlinear axis.
 At \(L\ge9\), a candidate block of length at least three is
 confined to the canceled row, with its one allowed left
 extension when \(c=0\). Only support lengths at most

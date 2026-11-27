@@ -28,8 +28,7 @@ in the one-place presentation of the exact order.
 
 | Sequence | Proof |
 |---|---|
-| \((15,2)\) | [Singular tangent determinant](HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md) forces the action scale to be constant through every finite specialization. |
-| \((15,6,2),(15,10,2)\) | [Degree-two approximate roots](CONDUCTOR_FOURTEEN_HYPERELLIPTIC_EMBEDDINGS.md) give a composition identity whose exact coefficient ideals contain \(1\) in every scaling chart. |
+| \((15,2),(15,6,2),(15,10,2)\) | The [all-degree exclusion of degree-two elements](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md) applies to the quadratic generator or last approximate root. |
 | \((8,3)\) | [Cubic–octic parameter equations](CONDUCTOR_FOURTEEN_CUBIC_OCTIC_EXCLUSION.md) and the singular tangent determinant exclude the finite scale degeneration. |
 | \((8,6,3),(12,8,3)\) | [Alternate embeddings of the cubic order](CONDUCTOR_FOURTEEN_CUBIC_ORDER_ALTERNATE_EMBEDDINGS.md) contradict the norm identity and the constant parameter Jacobian, respectively. |
 | \((12,8,6,3)\) | The [two successive approximate roots](CONDUCTOR_FOURTEEN_THREE_STAGE_EMBEDDING.md) force the constant term of the parameter Jacobian to vanish. |
@@ -40,6 +39,11 @@ in the one-place presentation of the exact order.
 This exhausts degree fourteen. The finite-parameter arguments
 use the exact specialized orders and the original monic
 generator. They allow the specialized conductor degree to drop.
+
+The three degree-two cases also have separate proofs. For \((15,2)\)
+the [singular tangent determinant](HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md)
+controls the action scale. The other two cases have
+[exact coefficient certificates](CONDUCTOR_FOURTEEN_HYPERELLIPTIC_EMBEDDINGS.md).
 
 The checkers cited in the branch proofs replay finite
 coefficient, norm, collision and algebraic elimination steps.
@@ -55,15 +59,15 @@ and the unrestricted plane Jacobian conjecture remain open.
 If the exact global directional conductor has degree sixteen
 under the same hypotheses, then \((10,4,9)\) is the sole
 case left by the approximate-root classification and the
-degree-two target-coordinate theorem. The
+[all-degree exclusion of degree-two elements](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md). The
 [quartic–decic proof](CONDUCTOR_SIXTEEN_QUARTIC_DECIC_EXCLUSION.md)
 excludes that case by its parameter equations.
 
 Use the notation \(r_i,d_i,\mu_i\) of the
 [degree-fourteen classification](CONDUCTOR_FOURTEEN_CHARACTERISTIC_SEQUENCES.md).
 With one gcd step, the equation \((r_0-1)(r_1-1)=16\) and
-coprimality give \((17,2)\), excluded by the degree-two
-target-coordinate theorem.
+coprimality give \((17,2)\), excluded because its order contains
+a quadratic generator.
 
 With two steps, \(d=d_2\le7\) and
 \(16=d\mu_2+(d-1)(r_2-1)\). At \(d=2\) the pairs

@@ -51,13 +51,16 @@ as a control.
 
 ## Exclusion of ten embeddings
 
-The [degree-two target-coordinate theorem](HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md)
-excludes \((21,2)\). The
+The [all-degree exclusion of degree-two elements](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md)
+excludes \((21,2),(21,6,2),(21,14,2)\). The first has a degree-two
+generator, and in each of the other two the last approximate root has
+degree two. The [filtered parameter comparison](CONDUCTOR_TWENTY_FILTERED_PARAMETER_EXCLUSIONS.md)
+also excludes \((21,6,2)\), and the
 [short three-to-two Laurent theorem](CONDUCTOR_FOURTEEN_CUBIC_ORDER_ALTERNATE_EMBEDDINGS.md)
-excludes \((21,14,2)\) with \(m=7,\ r=2\).
+also excludes \((21,14,2)\) with \(m=7,\ r=2\).
 
 The [filtered parameter exclusions](CONDUCTOR_TWENTY_FILTERED_PARAMETER_EXCLUSIONS.md)
-rule out \((14,4,9),(15,6,5),(21,6,2),(8,6,9),(10,6,5)\).
+rule out \((14,4,9),(15,6,5),(8,6,9),(10,6,5)\).
 The [common-centroid argument](CONDUCTOR_FOURTEEN_THREE_STAGE_EMBEDDING.md)
 excludes \((12,8,6,9)\). The
 [degree-five approximate-root argument](CONDUCTOR_TWENTY_TWELVE_EIGHT_FIVE_EXCLUSION.md)

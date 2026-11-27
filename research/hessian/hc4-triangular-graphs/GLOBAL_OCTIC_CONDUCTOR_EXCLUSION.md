@@ -13,11 +13,11 @@ retained lower bound one on an arbitrary source line. The
 [degree-ten exclusion](GLOBAL_CONDUCTOR_TEN_EXCLUSION.md) raises
 the global lower bound to twelve.
 
-The
-[characteristic-sequence calculation and cubic–quintic exclusion](CONDUCTOR_EIGHT_CUBIC_QUINTIC_EXCLUSION.md)
-and the
-[hyperelliptic octic exclusion](HYPERELLIPTIC_OCTIC_CONDUCTORS_AND_FOUR_PERIOD_RIGIDITY.md)
+The [characteristic-sequence calculation and cubic–quintic exclusion](CONDUCTOR_EIGHT_CUBIC_QUINTIC_EXCLUSION.md)
+and the [all-degree exclusion of degree-two elements](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md)
 reduce global conductor degree eight to sequence \((6,4,5)\).
+The two degree-two sequences \((9,2)\) and \((9,6,2)\) also have a
+[separate period proof](HYPERELLIPTIC_OCTIC_CONDUCTORS_AND_FOUR_PERIOD_RIGIDITY.md).
 We exclude it by integrating a polynomial parameter equation in the
 actual degree-four and degree-six target generators. The equations
 give one rational parameter, whose finite zeros and poles each

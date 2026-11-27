@@ -5230,8 +5230,8 @@
           "node": "GAP-HESSIAN-AUTOMATIC-ONE-VELOCITY-CODIFFERENT"
         },
         {
-          "question": "For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and trace pairing. The genuine affine geometric survivor is not a supplied Keller target. Empty-unramified-boundary maps, nonpolar folds and higher ramification indices remain separate parts of the original JC2/trace-integrality objective. Exceptional-fold simultaneous admission is now explicit in every a-degree. The Keller condition excludes degrees through 8, and the first possible degree 9 has forced lowest blocks k² and k³. The exact weighted companion equation raises the exceptional-fold source a-degree lower bound to eighteen. At eighteen the only first blocks are powers of b^(-3)u^5(u-1).",
-          "source": "hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md",
+          "question": "For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and ordinary trace pairing. The exceptional type now has a WHOLE ramified plane chart a=s^-2+s*t,b=s, target Jacobian J*s, residue degree1 and branch orders (m,m+1); both target polynomials must ALSO admit substitution t=(a*b^2-1)/b^3 as original source polynomials. Neither the corrected genuine affine whole-chart control nor arbitrary-degree finite linear-Jacobian controls supplies this simultaneous admission. Empty-unramified-boundary maps, nonpolar folds and higher ramification remain separate. Exceptional-fold simultaneous admission is explicit in every a-degree. The Laurent companion and weighted boundary equations exclude source a-degrees through twenty-three, so max(deg_a P,deg_a Q) is at least twenty-four in the normalized chart. The other polar fold family and higher ramification remain separate.",
+          "source": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md",
           "kind": "mathematical",
           "node": "GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION"
         },
@@ -5296,7 +5296,8 @@
         "Marked quadratic models with ord_0 M>=2 exclude ruling excess zero. The reduced S2 and MX0 double-zero frames also exclude excess one. The (8,12) bound is then seven; larger excess and global coverage remain open.",
         "For p=3 the unrestricted minimum lift degree is 81 at both moduli 9 and 27. A bounded Witt tower can be chosen compatibly, so unrestricted degree growth is equivalent to excluding any integral polynomial lift of the seed. The degree growth is proved for lifts affine along a lift of the fixed residue line.",
         "The planar degree assessment tracks the Santibáñez-Leal certificate route for (72,108) and the normalized Giraudin F2 and degree-147 exclusions. These exact scopes have separate verification obligations.",
-        "Global directional coordinate-conductor degrees two through twenty of even degree are excluded. In a monic longitudinal frame the global degree is even and at least twenty-two, with defect at least eleven where its leading coefficient is nonzero. The specialized conductor lower bound is two on arbitrary source lines."
+        "Global directional coordinate-conductor degrees two through twenty of even degree are excluded. In a monic longitudinal frame the global degree is even and at least twenty-two, with defect at least eleven where its leading coefficient is nonzero. The specialized conductor lower bound is two on arbitrary source lines.",
+        "The [degree-two element exclusion](../hessian/hc4-triangular-graphs/DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md) applies at every conductor to the generic directional order in a monic longitudinal frame, including after algebraic extension of the parameter field. It excludes every characteristic sequence containing 2, including degree-two approximate roots."
       ],
       "gap_ids": [
         "GAP-JACOBIAN-1",
@@ -6212,7 +6213,8 @@
               "domain": "actual complex plane Keller pair with an omitted index-two exceptional fold in its normalized (a,b) chart",
               "sense": "lower",
               "value": 18,
-              "units": "maximum of the degrees in a of P and Q"
+              "units": "maximum of the degrees in a of P and Q",
+              "superseded_by": "HESSIAN-EXCEPTIONAL-FOLD-MINIMAL-WEIGHT-BOUNDARY-EXCLUSION"
             }
           ]
         },
@@ -6236,7 +6238,7 @@
         {
           "id": "HESSIAN-HYPERELLIPTIC-TARGET-COORDINATE-EXCLUSION",
           "title": "A directional Keller coordinate cannot reduce to degree two",
-          "scope": "For an actual noninvertible complex plane Keller map with P monic in a longitudinal source direction, over C(y) no polynomial target automorphism gives a coordinate of longitudinal degree two. All reduced embeddings (2d+1,2) are excluded, even through finite conductor degree drops and multiple specialized roots. A degree-two element which is not a target coordinate is outside the statement.",
+          "scope": "For an actual noninvertible complex plane Keller map with P monic in a longitudinal source direction, over C(y) no polynomial target automorphism gives a coordinate of longitudinal degree two. All reduced embeddings (2d+1,2) are excluded, even through finite conductor degree drops and multiple specialized roots. The separate reflection theorem excludes arbitrary degree-two elements of the generic order.",
           "state": "proved",
           "canonical_source": "hessian/hc4-triangular-graphs/HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md",
           "checker": null,
@@ -6764,6 +6766,109 @@
               "units": "global degree in the longitudinal source coordinate"
             }
           ]
+        },
+        {
+          "id": "HESSIAN-DIRECTIONAL-CONDUCTOR-COLLISION-SCHEME",
+          "title": "The directional conductor is the Fitting determinant of the ordered collision scheme",
+          "scope": "For a complex plane Keller map with P monic in a longitudinal frame, the two divided differences on every finite line define an ordered collision scheme whose first projection has zeroth Fitting ideal the exact conductor. Its length is the conductor degree. For restricted degrees m,n>=2 this length is at most (m-1)(n-1)-(gcd(m,n)-1), with equality for coprime degrees.",
+          "state": "proved",
+          "canonical_source": "hessian/hc4-triangular-graphs/GENERIC_SOURCE_LINE_TRANSVERSE_COLLISIONS.md",
+          "proof_type": "written proof",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "complete",
+          "verification_note": "Written proof using finite modules and the distinct-pair incidence morphism."
+        },
+        {
+          "id": "HESSIAN-GENERIC-SOURCE-LINE-TRANSVERSE-COLLISIONS",
+          "title": "Generic source lines have transverse collision pairs",
+          "scope": "On a nonempty Zariski-open set of affine source lines of an actual complex plane Keller map, every ordered distinct collision pair is transverse. The conductor multiplicity at an endpoint counts all distinct mates on the line. The unordered count is the order defect and is at least eleven on generic lines for a noninvertible map.",
+          "state": "proved",
+          "canonical_source": "hessian/hc4-triangular-graphs/GENERIC_SOURCE_LINE_TRANSVERSE_COLLISIONS.md",
+          "proof_type": "written proof",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "complete",
+          "verification_note": "Written proof using finite modules and the distinct-pair incidence morphism.",
+          "bounds": [
+            {
+              "quantity": "unordered-same-line-collision-pair-count",
+              "domain": "actual noninvertible complex plane Keller map; generic affine source lines",
+              "sense": "lower",
+              "value": 11,
+              "units": "unordered pairs"
+            }
+          ]
+        },
+        {
+          "id": "HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION",
+          "title": "The (14,4,11) conductor-twenty-two embedding is excluded",
+          "scope": "For an actual complex plane Keller map with monic longitudinal P, the reduced generic characteristic sequence (14,4,11) is impossible. Exact square-root, collision and scale equations exclude both inhomogeneous cases, and the singular tangent determinant excludes the fixed homogeneous order.",
+          "state": "proved",
+          "canonical_source": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_QUARTIC_TETRADECIC_EXCLUSION.md",
+          "checker": "hessian/hc4-triangular-graphs/verify_conductor_twenty_two_quartic_tetradecic_exclusion.py",
+          "artifact_hash": "sha256:d394920c887623e62071356eb6b0e5a252ef41edaf8024cf1b45c4f7aa0fb07b",
+          "evidence": [],
+          "proof_type": "written proof with exact algebraic replay",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and exact internal algebra replay.",
+          "dependency_coverage": "complete"
+        },
+        {
+          "id": "HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION",
+          "title": "The (12,8,6,11) conductor-twenty-two embedding is excluded",
+          "scope": "For an actual complex plane Keller map with monic longitudinal P, the reduced generic characteristic sequence (12,8,6,11) is impossible. The two constant Laurent coefficients force a rational parameter on a nine-sheeted curve of positive genus, contradicting the nonconstant parameter Jacobian.",
+          "state": "proved",
+          "canonical_source": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_TWELVE_EIGHT_SIX_ELEVEN_EXCLUSION.md",
+          "checker": "hessian/hc4-triangular-graphs/verify_conductor_twenty_two_twelve_eight_six_eleven_exclusion.py",
+          "artifact_hash": "sha256:9656e2fb430bd3dbc2c5e0beb996c834dc3964995990cf6352c20bd3c6169b42",
+          "evidence": [],
+          "proof_type": "written proof with exact algebraic replay",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and exact internal algebra replay.",
+          "dependency_coverage": "complete"
+        },
+        {
+          "id": "HESSIAN-EXCEPTIONAL-FOLD-MINIMAL-WEIGHT-BOUNDARY-EXCLUSION",
+          "title": "Exceptional polar folds require source a-degree at least twenty-four",
+          "scope": "For an actual exceptional (2,1,5) polar fold in the full finite normalization, the maximum of the a-degrees of P and Q is at least twenty-four in the normalized polynomial source coordinates of the whole chart. The proof allows arbitrary b-degrees. It excludes the degree-eighteen first square departure and applies shifted weighted directions and exact original-source admission at higher longitudinal degrees.",
+          "state": "proved",
+          "canonical_source": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "complete",
+          "bounds": [
+            {
+              "quantity": "exceptional-polar-fold-transverse-polynomial-degree",
+              "domain": "actual complex plane Keller pair with an omitted index-two exceptional fold in its normalized (a,b) chart",
+              "sense": "lower",
+              "value": 24,
+              "units": "maximum of the degrees in a of P and Q"
+            }
+          ],
+          "verification_note": "Written exact Laurent and weighted direction proof with internal arithmetic checks."
         }
       ],
       "open_questions": [
@@ -6786,7 +6891,7 @@
           "node": "GAP-AUTOMATIC-T3-PERFECTION"
         },
         {
-          "question": "For actual noninvertible complex plane Keller maps in a monic longitudinal source frame, the global directional coordinate-conductor degree is even and at least twenty-two. The normalization defect is at least eleven on the generic line and on each line where the global leading conductor coefficient is nonzero. On arbitrary specialized lines the lower bounds are two for conductor degree and one for normalization defect. For an actual monic longitudinal plane Keller order of global degree twenty-two, the reduced sequence must be one of (8,6,11),(10,4,15),(14,4,11),(12,8,6,11). Higher conductors, automatic codifferent landing, HC4 and JC2 remain open.",
+          "question": "For actual noninvertible complex plane Keller maps in a monic longitudinal source frame, the global directional coordinate-conductor degree is even and at least twenty-two. The normalization defect is at least eleven on the generic line and on each line where the global leading conductor coefficient is nonzero. On arbitrary specialized lines the lower bounds are two for conductor degree and one for normalization defect. At every conductor the generic order has no degree-two element even over the algebraic closure of C(y). Every reduced characteristic sequence containing 2 is excluded. For an actual monic longitudinal plane Keller order of global degree twenty-two, the reduced sequence must be one of (8,6,11),(10,4,15). Higher conductors, automatic codifferent landing, HC4 and JC2 remain open.",
           "source": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWENTY_EXCLUSION.md",
           "kind": "mathematical",
           "node": "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -6798,8 +6903,8 @@
           "node": "GAP-HESSIAN-AUTOMATIC-ONE-VELOCITY-CODIFFERENT"
         },
         {
-          "question": "For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and trace pairing. The genuine affine geometric survivor is not a supplied Keller target. Empty-unramified-boundary maps, nonpolar folds and higher ramification indices remain separate parts of the original JC2/trace-integrality objective. Exceptional-fold simultaneous admission is now explicit in every a-degree. The Keller condition excludes degrees through 8, and the first possible degree 9 has forced lowest blocks k² and k³. The exact weighted companion equation raises the exceptional-fold source a-degree lower bound to eighteen. At eighteen the only first blocks are powers of b^(-3)u^5(u-1).",
-          "source": "hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md",
+          "question": "For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and ordinary trace pairing. The exceptional type now has a WHOLE ramified plane chart a=s^-2+s*t,b=s, target Jacobian J*s, residue degree1 and branch orders (m,m+1); both target polynomials must ALSO admit substitution t=(a*b^2-1)/b^3 as original source polynomials. Neither the corrected genuine affine whole-chart control nor arbitrary-degree finite linear-Jacobian controls supplies this simultaneous admission. Empty-unramified-boundary maps, nonpolar folds and higher ramification remain separate. Exceptional-fold simultaneous admission is explicit in every a-degree. The Laurent companion and weighted boundary equations exclude source a-degrees through twenty-three, so max(deg_a P,deg_a Q) is at least twenty-four in the normalized chart. The other polar fold family and higher ramification remain separate.",
+          "source": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md",
           "kind": "mathematical",
           "node": "GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION"
         }
@@ -6824,8 +6929,9 @@
         "An exceptional fold gives an exact marked double pole for a transverse target derivative of any affine source coordinate with nonzero a coefficient. Automatic membership remains open.",
         "Each polar omitted prime has a normalized marked trace of pole order floor(q/e)+1 and target residue −q d times the transverse derivative of its image equation modulo that equation.",
         "In the full finite normalization of every complex plane Keller map, all unramified omitted primes are smooth affine lines and their target normalizations are immersive. The result uses the local degree-one case of the boundary resolution and does not require a common source coordinate.",
-        "The exact weighted companion equation raises the exceptional-fold source a-degree lower bound to eighteen. At eighteen the only first blocks are powers of b^(-3)u^5(u-1).",
-        "Global directional coordinate-conductor degrees two through twenty of even degree are excluded. In a monic longitudinal frame the global degree is even and at least twenty-two, with defect at least eleven where its leading coefficient is nonzero. The specialized conductor lower bound is two on arbitrary source lines."
+        "The marked exceptional (2,1,5) fold requires source a-degree at least twenty-four in its normalized polynomial source chart. The bound allows arbitrary b-degrees.",
+        "Global directional coordinate-conductor degrees two through twenty of even degree are excluded. In a monic longitudinal frame the global degree is even and at least twenty-two, with defect at least eleven where its leading coefficient is nonzero. The specialized conductor lower bound is two on arbitrary source lines.",
+        "The [degree-two element exclusion](hc4-triangular-graphs/DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md) applies at every conductor to the generic directional order in a monic longitudinal frame, including after algebraic extension of the parameter field. It excludes every characteristic sequence containing 2, including degree-two approximate roots."
       ],
       "gap_ids": [
         "GAP-HESSIAN-TERMINATION",
@@ -25206,7 +25312,7 @@
           "node": "GAP-FACTORIAL-EIT-VI-ELLIPTIC-ALL-SCALE-PERIOD"
         },
         {
-          "question": "Find a reachable-residue invariant for distinct factorial subset sums containing 1! modulo every 5^j that supports lifting from j to j+1, including carries at 5^j. Finite precision automata and reported witnesses to 20000 do not establish all-precision lifting.",
+          "question": "Find a carry invariant for distinct factorial subset sums containing 1! that supports every precision, including unbounded jumps in factorial valuations. Full residue coverage is proved through precision 488272.",
           "source": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
           "kind": "mathematical",
           "node": "GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT"
@@ -25240,6 +25346,12 @@
           "kind": "mathematical",
           "question": "For every n>=1 with 2n+1 not a prime power, rule out P_n=P_(n+1)=P_(n+2)=0 for abc Delta!=0 with distinct complex coefficients and all a+b+c-2t nonzero. Every common zero must obey the exact two-power relation (3) at the same point.",
           "source": "factorial/image-rigidity/SFC_TRIANGLE_OVERLAP_MOMENTS.md"
+        },
+        {
+          "question": "Is there an infinite sequence of distinct increasing factorial indices whose partial sums have valuations tending to infinity at some fixed prime?",
+          "source": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+          "kind": "mathematical",
+          "node": "GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE"
         }
       ],
       "scope_notes": [
@@ -25358,7 +25470,7 @@
         "Naturally integral binary quadratics with nonpolynomial native residue on the twelfth coefficient grid now have an allconstant six-window at every positive start, with actual-support SFC for dense support five or six. The L8 cube sector is closed on every coefficient grid with dyadic part four. A parallel universal s10 bound improves alpha from nine over forty-nine to three fourteenths; the main assembly continues to use the earlier bound. Remaining nonpolynomial counterexamples lie outside grid12, and any specified discrete grid for an L8 counterexample has a factor eight. Polynomial residues, arbitrary other grids, sparse smaller windows, full quadratic SFC, SFC(2), SFC(3) and the monic anti gate remain open.",
         "A short seventh-power cancellation proof supplies a genuinely independent incoming proof of the existing L8 cubic six-window on every coefficient grid with dyadic part four. It uses only the necessary native profile, not either finite coefficient-bound calculation. The universal native cusp is at least two sevenths; either later coefficient bound gives the optional one-third cusp. All-constant nonpolynomial grid12 and its dense actual-support corollary consequently survive logical withdrawal of the finite native-bound proof through this new route. No arbitrary coefficient-field L8, sparse smaller window, full quadratic SFC, SFC(2), SFC(3) or anti-gate closure is claimed.",
         "A constant-shift transfer for proper binary degree-two residue denominators now gives actual-support windows for explicit prime-power axis supports of arbitrary degree. At three, two geometric poles can cancel simultaneously in a critical row, yielding arbitrarily long leading zero blocks. Tame coefficient grids still exclude actual three-zero blocks, and the exact leading length in the wild sector leaves only the recorded short support windows.",
-        "Erdős #404: backwards selection of blocks gives a sufficient all-jump covering criterion. Uniform jump sizes 1 through 4 and the 24 larger boundaries below 5^7 certify full residue support through precision 19524. The all-precision target f(1,5)=infinity remains open.",
+        "Erdős #404: backward block selection gives full five-adic residue support through precision 488272. At every prime, finite normalized valuation excess occurs on a subprogression of any given arithmetic progression and is unbounded among positive starts. The infinite sequence question remains open.",
         "The full modulo-three lift excludes the first critical two-pole shift on its shape class at every ramification. Outside that class the first critical radius reduces to support four with one positive-valuation foreign column of valuation at most one third.",
         "In the first wild ternary-prime four-term case, all but one digit profile are excluded by the exact finite native equations. The remaining profile satisfies an explicit valuation-4/3 lift that has solutions for every starting-block quotient, so that modulus alone does not decide the exact four-window there.",
         "Erdős #404: at boundaries N=p^r the middle third of the missed valuations requires signed factorial corrections of span Omega_p(r/log r) and more than log r/(10 log log r) terms. This bounds standalone repairs, including changes between two candidate sums, and leaves the infinite path question open.",
@@ -25462,7 +25574,8 @@
         "GAP-FACT-ERDOS404-INFINITE-SEQUENCE",
         "GAP-FACTORIAL-BINARY-THREE-ADIC-WILD-CANCELED-ROW",
         "GAP-SFC-ARBITRARY-UNIVARIATE-TRINOMIALS",
-        "GAP-SFC-D1-TRIANGLE-NONPRIME-POWER-WINDOWS"
+        "GAP-SFC-D1-TRIANGLE-NONPRIME-POWER-WINDOWS",
+        "GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE"
       ],
       "scope_note": " The dense univariate quadratic sharp-window problem is proved by the complete divided-power argument. Its earlier partial resonance frontier and exact equivalence also yield all remaining rational pair coprimality; full binary quadratic SFC and SFC(2) remain open. The new no-carry ordinary Newton-polygon/factor-degree proof removes the height guard and strengthens a necessary dense resonance criterion. Hurwitz integrality is not asserted, and the no-height packet alone supplies no universal Dense seed. Quadraticmomentnativepolygons now transfer atalloddprimeunitconstants, withfull equalityforpdividingmomentindex and a precise genericinitialblock. Bounded degree capacities give additional necessary resonance constraints; that native-polygon packet alone supplies no full quadratic Strong Factorial seed. The existing dense quadratic/residual-coprimality equivalence extends to restricted four-term binary and five-term ternary classes by a reversible linear-adjunction proof. All four restricted members are now proved via the complete Dense theorem; full binary/SFC2/SFC3 goals are not equivalent. The dense univariate quadratic support-three Strong Factorial window is proved by an independent divided-power Hensel factorization and different argument. Existing written equivalences propagate exactly the restricted assertions; full inhomogeneous binary quadratic, SFC(2) and SFC(3) goals remain open. Every nonzero one-variable polynomial of degree at most2 satisfies the actual-support Strong Factorial window. Independently proved sparse strata extend the existing Dense equivalence to this all-support assertion. Full binary quadratic SFC, SFC2 and SFC3 are not concluded. Additional exact binary quadratic sectors: even four-term phases on b=2a,b=2c,a=c; and every nonzero g(x+y) with deg g<=2, with actual support windows. These do not prove the full binary quadratic or SFC2/SFC3 goals. Symmetric bilinear four-support and full symmetric six-support binary quadratics have all-field Strong Factorial windows, with exact four-window transport to the five-term affine-face sector. General binary quadratic SFC/SFC2/SFC3 remain OPEN; no-cross symmetric five-support is a separate OPEN target. Local quadratic face-forcing branches v2z=-1 and>=1 are excluded. Exact exceptional quadratic-family pair-coprimeness is equivalent to the still-OPEN universalT3 gate; it conditionally suffices for the existing symmetric b0 five-window. Necessary prefix starts below46 are excluded without claiming universal closure. Full binary/SFC2/SFC3 remain OPEN. Exact q1/q2 exceptional pairs are coprime; actual symmetric five-moment prefix extends through2641. The remaining q>=5 pair criterion is a new OPEN member equivalent to oldR using proved finite context, retaining oldR/U and b0 only as conditional targets. No infinite/fullbinary/SFC2/SFC3 assertion is proved."
     },
@@ -26186,6 +26299,57 @@
             "No exclusion of an arbitrary higher-degree leading factor or unrestricted algebraic-function-field string."
           ],
           "dependency_coverage": "partial"
+        },
+        {
+          "id": "DIX-KF-JC2-TO-GENERALIZED-DC1",
+          "title": "The plane Jacobian conjecture implies the generalized first Dixmier conjecture",
+          "scope": "Kanel-Belov and Fedorov v2, Proposition 4.3, proves that complex JC2 implies DC'1.",
+          "canonical_source": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+          "state": "proved",
+          "proof_type": "source-audited conditional theorem",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Exact scope of the retained v2 propositions inspected."
+        },
+        {
+          "id": "DIX-KF-FAITHFUL-BOUNDED-GRAPH-TRANSFER",
+          "title": "Bounded faithful graph families give the conditional reverse transfer",
+          "scope": "Generalized DC'1 and a faithful arithmetic family for each complex plane Keller map, with bounded Berest–Wilson invariants of its actual splitting graph modules along the ultrafilter, together imply complex JC2 using v2 Theorem 1.8 and Corollary 1.10.",
+          "canonical_source": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+          "state": "proved",
+          "proof_type": "source-audited conditional theorem",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Exact scope of the retained v2 propositions inspected."
+        },
+        {
+          "id": "DIX-KF-UNIFORM-BOUND-TO-FAITHFUL-FAMILIES",
+          "title": "The uniform graph bound supplies one faithful bounded family per map",
+          "scope": "A uniform two-degree fullness bound on actual splitting graph modules supplies one faithful arithmetic family per complex diagram, with bounded Berest–Wilson invariants along it.",
+          "canonical_source": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+          "state": "proved",
+          "proof_type": "source-audited conditional theorem",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Exact scope of the retained v2 propositions inspected."
         }
       ],
       "open_questions": [
@@ -26277,6 +26441,18 @@
           "node": "DIX-GAP-POLYNOMIAL-FOUR-SIX-NONCONSTANT-LEADING",
           "question": "For an actual polynomial differential pair of orders four and six, determine whether a nonzero constant commutator can occur with leading coefficients proportional to h² and h³, deg h at least three, and no root of exact multiplicity two over an algebraic closure. Analyze higher-degree leading factors whose roots all have multiplicity one or at least three, with exact original polynomial admission. A coefficient-field normalization must account for its derivation and poles. Any connection to Long must preserve all finite original coefficients and the actual classical specialization.",
           "source": "dixmier/dixmier-formal-lifting/LOW_DEGREE_LEADING_FACTOR_POLYNOMIAL_FOUR_SIX_EXCLUSION.md",
+          "kind": "mathematical"
+        },
+        {
+          "node": "GOAL-DIX-GENERALIZED-DC1",
+          "question": "Every unital complex algebra homomorphism from A1(C) to a complex domain Morita equivalent to A1(C) is an isomorphism. This is DC'1 of Kanel-Belov and Fedorov v2.",
+          "source": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+          "kind": "mathematical"
+        },
+        {
+          "node": "DIX-GAP-PLANE-KELLER-GRAPH-FAITHFUL-BOUNDED-FAMILY",
+          "question": "For every complex plane polynomial Keller map of Jacobian one, find a finitely generated integral arithmetic model and one family of reductions to finite fields of characteristics tending to infinity, faithful in a nonprincipal ultraproduct, for which the Berest–Wilson invariants of the actual preserved splitting graph bimodules remain bounded on a set in the ultrafilter.",
+          "source": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
           "kind": "mathematical"
         }
       ],
@@ -30139,7 +30315,7 @@
           "id": "ARITH-UNIFORM-MINIMUM-RANK-ALTERNATING-HASSE-FAMILIES",
           "title": "Minimum-rank alternating Hasse families in every admissible degree",
           "state": "proved",
-          "scope": "For every oddm>=3,n=m^2+1, infinitely many pairwise linearly disjointA_n extensions supply everywhere locally soluble but globally pointless finite etaleQalgebras of GLOBALLY MINIMUM rank2^(n-2). For n>=26 the equality family is uniquely the odd-subset and unordered middle-partition fixed fields. One fixed polynomial determinant-oneA4_Q map carries infinitely many complete fibres in each degree, with genericS_(2^(n-2)). Numerical optimality comes from Maroti; existence/local ramification is the separate Arala-based construction.",
+          "scope": "For every oddm>=3,n=m^2+1, infinitely many pairwise linearly disjointA_n extensions supply everywhere locally soluble but globally pointless finite etaleQalgebras of GLOBALLY MINIMUM rank2^(n-2). For n>=26 the equality family is uniquely the odd-subset and unordered middle-partition fixed fields. One fixed polynomial determinant-oneA3_Q map carries infinitely many complete fibres in each degree, with genericS_(2^(n-2)). Numerical optimality comes from Maroti; existence/local ramification is the separate Arala-based construction.",
           "canonical_source": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
           "checker": "arithmetic/verify_alternating_weighted_cover_priority.py",
           "artifact_hash": "sha256:efc5ec98ff0a2f7ce0ae6750b8b1308973f60bb5a477fa3d2383ddb2bc0f77d5",
@@ -61446,7 +61622,7 @@
           "scope": "For coherent oriented split-prime cube witnesses in any imaginary quadratic field, with primes in [Z,2Z) and edge heights at most V, fix two oriented anchors and one rational cube class for v_1i/v_2i. The number of completion primes is O_epsilon((ZV)^epsilon (1+Z^(-1/12) max(Z,V^(2/3))^(1/3))). The three fixed-anchor opposite-product coincidence comparisons obey the same bound. This is a local completion count, with no aggregate rank-one saving.",
           "canonical_source": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
           "checker": "arithmetic/verify_coherent_norm_pencils.py",
-          "artifact_hash": "sha256:aa9034a61a8ebcfc7a4ac00e3e3421180a52358532b5f4eaff2512357cd806b6",
+          "artifact_hash": "sha256:cfca525f3e7bc35780727c71cc29a45af949bae04eddca4bef1ca64ae6ba7ba9",
           "evidence": [
             "arithmetic/sources/walsh-1308.0574v2.pdf"
           ],
@@ -61493,6 +61669,76 @@
               "parameters": {
                 "Y": ">=1"
               }
+            }
+          ]
+        },
+        {
+          "id": "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION",
+          "title": "Exact lifting criterion for coherent three-prime norm records",
+          "state": "proved",
+          "scope": "For distinct odd primes and pairwise coprime nonzero signed coefficients x,y,z coprime to the incident primes, the three full divisibilities (5) give integral traces and E in (6). The coefficients lift with some choice of prime orientations to a primitive coherent imaginary quadratic prime-ideal triple exactly when E>0 and gcd(E,p_1p_2p_3)=1. The only radicand and scale satisfy E=d*delta^2. This is an existence criterion with free orientations, with no aggregate count or selection claim.",
+          "canonical_source": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
+          "checker": "arithmetic/verify_coherent_norm_pencils.py",
+          "artifact_hash": "sha256:cfca525f3e7bc35780727c71cc29a45af949bae04eddca4bef1ca64ae6ba7ba9",
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written inverse from the normalized coefficients. The exact example checker replays traces, E and incident-prime tests over the recorded bounded fixtures.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For distinct odd primes and pairwise coprime nonzero signed coefficients x,y,z coprime to the incident primes, the three full divisibilities (5) give integral traces and E in (6). The coefficients lift with some choice of prime orientations to a primitive coherent imaginary quadratic prime-ideal triple exactly when E>0 and gcd(E,p_1p_2p_3)=1. The only radicand and scale satisfy E=d*delta^2. This is an existence criterion with free orientations, with no aggregate count or selection claim."
+        },
+        {
+          "id": "ARITH-ERDOS943-LARGE-COHERENT-GCD-TAIL",
+          "title": "Tail for singular six-cycles with large coherent gcd",
+          "state": "proved",
+          "scope": "For balanced coprime selected-edge square-full kernel graphs at every positive target N, B=2T, the number of singular simple six-cycles with g_*>=G is O_epsilon(N^epsilon min(B^3, B^(3/2)+B^(51/4)/G^3)). In particular the T^2 cycle budget holds on G>=B^(43/12) and the T^(3/2) budget holds on G>=B^(15/4), up to arbitrarily small powers. Common divisors of the four edge gcds off each vertex force divisibilities on both selected outer roots and propagate through actual edges.",
+          "canonical_source": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Prime-level gcd support, root-divisor path reconstruction and the existing weighted path tail.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For balanced coprime selected-edge square-full kernel graphs at every positive target N, B=2T, the number of singular simple six-cycles with g_*>=G is O_epsilon(N^epsilon min(B^3, B^(3/2)+B^(51/4)/G^3)). In particular the T^2 cycle budget holds on G>=B^(43/12) and the T^(3/2) budget holds on G>=B^(15/4), up to arbitrarily small powers. Common divisors of the four edge gcds off each vertex force divisibilities on both selected outer roots and propagate through actual edges.",
+          "bounds": [
+            {
+              "quantity": "number of simple six-cycles",
+              "domain": "Balanced selected-edge actual coprime square-full kernel graph at a fixed arbitrary target, singular cycles with intrinsic coherent gcd g_*>=G, B=2T.",
+              "sense": "upper",
+              "expression": "O_epsilon(N^epsilon min(B^3, B^(3/2)+B^(51/4)/G^3))"
+            }
+          ]
+        },
+        {
+          "id": "ARITH-ERDOS943-THREE-COMPLEMENTARY-EDGE-CONTINUATION",
+          "title": "Three-edge congruences and a sharper singular six-cycle tail",
+          "state": "proved",
+          "scope": "Balanced selected-edge coprime square-full graph at arbitrary fixed target N, B=2T. On a singular six-cycle the factor K_i in (6) and the terminal shared vertex's four-edge divisor F force subpower many square-root classes modulo (F*K_i)^2 on a third edge with the initial two edges known. Two successive products at least sqrt(B) give the T^2+epsilon count. This includes singular cycles with product F_v<=B^b and g_*>=B^(11/4+b/3) for fixed b>=0. For G>=B^(10/3), the full singular count with g_*>=G is O_epsilon(N^epsilon (B^2+B^(45/2)/G^6+B^43/G^12)). The T^2+epsilon budget holds for G>=B^(41/12).",
+          "canonical_source": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Exact path ratio, alternating square sum, prime-power root classes including at 2, and actual codegree closure. The uniform tail uses the previous W-weighted path bound.",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Balanced selected-edge coprime square-full graph at arbitrary fixed target N, B=2T. On a singular six-cycle the factor K_i in (6) and the terminal shared vertex's four-edge divisor F force subpower many square-root classes modulo (F*K_i)^2 on a third edge with the initial two edges known. Two successive products at least sqrt(B) give the T^2+epsilon count. This includes singular cycles with product F_v<=B^b and g_*>=B^(11/4+b/3) for fixed b>=0. For G>=B^(10/3), the full singular count with g_*>=G is O_epsilon(N^epsilon (B^2+B^(45/2)/G^6+B^43/G^12)). The T^2+epsilon budget holds for G>=B^(41/12).",
+          "bounds": [
+            {
+              "quantity": "number of simple six-cycles",
+              "domain": "Balanced actual coprime selected-edge square-full kernel graphs, singular simple six-cycles, B=2T and G>=B^(10/3).",
+              "sense": "upper",
+              "expression": "O_epsilon(N^epsilon (B^2+B^(45/2)/G^6+B^43/G^12))"
             }
           ]
         }
@@ -62097,6 +62343,18 @@
           "kind": "mathematical",
           "question": "Bound by O_epsilon(T^(2+epsilon)) the original high-lcm residual actual selected-edge cycles with the further restriction D_*>T^(1/2), uniformly at every balanced target N. Retain the original determinant alternatives and kernel lcm conditions.",
           "source": "arithmetic/ERDOS_943_REDUCED_ROOT_DIFFERENCES.md"
+        },
+        {
+          "node": "GAP-ARITH-ERDOS943-CYCLES-INTERMEDIATE-COHERENT-GCD",
+          "kind": "mathematical",
+          "question": "Bound by O_epsilon(T^(2+epsilon)) uniformly all selected-edge actual six-cycles with both original high kernel-side lcms and D_*>T^(1/2), in either the nonsingular sector or the singular sector T^(1/2)<g_*<(2T)^(43/12). All original residual restrictions continue to apply.",
+          "source": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md"
+        },
+        {
+          "node": "GAP-ARITH-ERDOS943-CYCLES-THREE-EDGE-CONGRUENCE-RESIDUAL",
+          "kind": "mathematical",
+          "question": "Bound by O_epsilon(T^(2+epsilon)) the original high-lcm, large-reduced-difference selected-edge cycles at every balanced target, requiring on the singular branch additionally T^(1/2)<g_*<(2T)^(41/12) and failure of (8) in both cyclic orientations. Keep the nonsingular branch and the original exact common-target conditions.",
+          "source": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md"
         }
       ],
       "scope_notes": [
@@ -62239,7 +62497,10 @@
         "Erdos #364 uses consecutive integers. With the stated preprint inputs, the averaged pair count is O_epsilon(X^((6/25-10^-7)+epsilon)), its small-coefficient extension gives the same all-width exponent for Erdos #137, and Pell repair gives a nonfundamental exponent of (6/25-10^-7)/3. The fixed-quadratic transfer uses its own explicit chart inputs. The separate joint collision estimate remains open.",
         "Consecutive powerful pairs satisfy N(X)=O_epsilon(X^(12127/49920+epsilon)), from a trace-to-cubic fixed fiber, the quadratic 3-torsion first moment and the original-width reduced determinant estimate at shift one. Both corner orientations and all dyadic windows are covered. The Erdős #365 polylogarithmic count remains open.",
         "Erdős #942: small-prime interpolation and coefficient averaging give at least 3m/8 pairwise coprime nonsquare powerful integers in one open square interval with log q=O(m^2 log m), for all sufficiently large m. The uniform logarithmic upper bound and matching exponent for ordinary occupancy remain open.",
-        "Coherent quadratic norms give an exact two-anchor pencil, a uniform fourth-prime bound in a fixed cube class and a rejected rank-one CRT record. Aggregate occupancy and the signed moment exponents remain open to improvement."
+        "Coherent quadratic norms give an exact two-anchor pencil, a uniform fourth-prime bound in a fixed cube class and a rejected rank-one CRT record. Aggregate occupancy and the signed moment exponents remain open to improvement.",
+        "A coherent three-prime path lifts with free orientations exactly via the positive integral Heron defect and its incident-prime unit test. The squarefree part of that defect fixes the field.",
+        "Singular balanced six-cycles have a coherent-gcd upper tail below the trivial bound for G above B^(13/4), with B=2T. The T^2 budget holds for G>=B^(43/12).",
+        "Three complementary edge gcds force unit square congruences on actual continuation roots. This counts the singular T^2 sector at g_*>=B^(41/12), and at g_*>=B^(11/4+b/3) when the four-edge divisor product is at most B^b."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -62397,7 +62658,9 @@
         "VERIFY-ARITH-QUADRATIC-THREE-TORSION-PRIME-PATHS",
         "VERIFY-ARITH-ERDOS365-SUBQUARTER-PROOF",
         "GAP-ARITH-ABC-OCCUPIED-RANK-ONE-NORM-RECORDS",
-        "GAP-ARITH-ERDOS943-CYCLES-LARGE-REDUCED-ROOT-DIFFERENCES"
+        "GAP-ARITH-ERDOS943-CYCLES-LARGE-REDUCED-ROOT-DIFFERENCES",
+        "GAP-ARITH-ERDOS943-CYCLES-INTERMEDIATE-COHERENT-GCD",
+        "GAP-ARITH-ERDOS943-CYCLES-THREE-EDGE-CONGRUENCE-RESIDUAL"
       ],
       "scope_note": "This family bound allows all integer degrees but excludes arbitrary alternative fraction witnesses and transformed Pade sequences. Its uniform height and reduced-congruence gates eventually force d<=6; no bound for the full K_N(T) follows."
     },
@@ -72012,7 +72275,7 @@
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
         "origin": "internal",
-        "next_action": "The complete arbitrary-parity degree-27 scheme fails at h7. Canonical graded degree 28 and higher, nongraded scalar lifts, and changes to the first matrix datum or source/transport architecture remain open. The prescribed Airy first matrix coefficient has no fifth-order jet at degree at most 26. Polynomial source admission, formal acyclicity or position-flat composition alone cannot provide a common all-order bound."
+        "next_action": "For the canonical graded Long tuple, identify which new coefficient directions at a larger spatial cap can absorb the h7 residual. Use a larger jet to test a uniform obstruction or an all-order recursion preserving one spatial cap. In nongraded or matrix routes, target an identified compatibility or transport condition."
       },
       {
         "id": "GOAL-DC2-FAILURE",
@@ -72588,7 +72851,8 @@
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
         "origin": "internal",
-        "endpoint_role": "stronger_theorem"
+        "endpoint_role": "stronger_theorem",
+        "next_action": "Identify residual components of the first-sixteen moment ideal away from the exceptional orbit. On each component, seek a purity certificate or an exact point satisfying all sixteen equations with a nonzero later moment. Use later moments to decide a specified component."
       },
       {
         "id": "FORMAL-SUPPLIED-CHAR-NE2",
@@ -72862,7 +73126,7 @@
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
         "origin": "internal",
-        "next_action": "The complete arbitrary-parity degree-27 scheme fails at h7. Canonical graded degree 28 and higher, nongraded scalar lifts, and changes to the first matrix datum or source/transport architecture remain open. The prescribed Airy first matrix coefficient has no fifth-order jet at degree at most 26. Polynomial source admission, formal acyclicity or position-flat composition alone cannot provide a common all-order bound."
+        "next_action": "Follow the bounded full Long lift goal. Use a higher cap or order to test a uniform obstruction, a recursion preserving one spatial cap, or a specific compatibility condition for a different lift architecture."
       },
       {
         "id": "GAP-MERIDIONAL-RANK-3",
@@ -76158,7 +76422,7 @@
         "title": "Profile-factor rigidity and the canonical plane completion",
         "kind": "claim",
         "status": "open",
-        "scope": "Retained-profile first factors are coordinate explanations; the nonnegative-r sector has a polynomial plane completion; irreducible Jacobian plus embedded line forces the specified plane indecomposability. Arbitrary Laurent-r and stable atomicity are separate.",
+        "scope": "Retained-profile first factors are coordinate explanations; the nonnegative-r sector has a polynomial plane completion; irreducible Jacobian plus embedded line forces the specified plane indecomposability. Arbitrary Laurent-r plane completion and full stable atomicity remain open. The native signal-retaining factor theorem applies in all Laurent degrees.",
         "sources": [
           {
             "path": "jacobian/universal-keller-plane-completion/PROOF.md",
@@ -108518,7 +108782,7 @@
         "title": "Higher coordinate conductors and automatic trace integrality",
         "kind": "gap",
         "status": "open",
-        "scope": "For actual noninvertible complex plane Keller maps in a monic longitudinal source frame, the global directional coordinate-conductor degree is even and at least twenty-two. The normalization defect is at least eleven on the generic line and on each line where the global leading conductor coefficient is nonzero. On arbitrary specialized lines the lower bounds are two for conductor degree and one for normalization defect. For an actual monic longitudinal plane Keller order of global degree twenty-two, the reduced sequence must be one of (8,6,11),(10,4,15),(14,4,11),(12,8,6,11). Higher conductors, automatic codifferent landing, HC4 and JC2 remain open.",
+        "scope": "For actual noninvertible complex plane Keller maps in a monic longitudinal source frame, the global directional coordinate-conductor degree is even and at least twenty-two. The normalization defect is at least eleven on the generic line and on each line where the global leading conductor coefficient is nonzero. On arbitrary specialized lines the lower bounds are two for conductor degree and one for normalization defect. At every conductor the generic order has no degree-two element even over the algebraic closure of C(y). Every reduced characteristic sequence containing 2 is excluded. For an actual monic longitudinal plane Keller order of global degree twenty-two, the reduced sequence must be one of (8,6,11),(10,4,15). Higher conductors, automatic codifferent landing, HC4 and JC2 remain open.",
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_DEGREE_FOUR_CONDUCTOR_EXCLUSION.md",
@@ -108567,22 +108831,22 @@
           },
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md",
-            "sha256": "16fc9af01ac3adb6b2fbbfbbbaa05ee1a70ce0744f51944a42b0ce94c6037c72",
+            "sha256": "6c373a8d0df1c65d2f1fcd39a01cce6522dd218ea85cdec294f320930389f3e6",
             "locator": "Opening theorem and Sections 1–2, exact cable compatibility, matched-pair valuations and global bound ten"
           },
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
-            "sha256": "4be5f0c70ceefdae01e48b5ff98f15266a04297474f628cc900bd4aa74dd79c9",
+            "sha256": "71cb1b87fdbaeed2c0a7205cc0f3eaf7f92c485036458e0e826d655bfa9718c0",
             "locator": "Opening theorem and Sections 1–4, characteristic sequences, parameter scale and finite-fibre repair"
           },
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
-            "sha256": "44e41a3cb65bb8f61accb48ffb283c7c09af97546fe764c3f039690efc9222c7",
+            "sha256": "4ab31f8e85f4069d563e08e004df4ee0ed32890805a00531e3e03f6c62686b94",
             "locator": "Opening theorem and Exclusion in all six sequences"
           },
           {
             "path": "hessian/hc4-triangular-graphs/HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md",
-            "sha256": "f8bcd64c6e9b11769caabcd2a11d3cb4ae271044bcd4941d27cfe5ad06d20cc4",
+            "sha256": "c7e8681faeb131e80bcc867e03e146c6390aaf541cb62910253df941b45b3aab",
             "locator": "HyperellipticTargetCoordinateExclusion, singular tangent determinant and constant-scale contradiction"
           },
           {
@@ -108602,17 +108866,17 @@
           },
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_FOURTEEN_EXCLUSION.md",
-            "sha256": "3e2e0f980fe9da90236624cd08d27418d1d78e40065a49daa753d9144f091bfe",
+            "sha256": "19086c1ef1d4010bbffa27d49b9dcee5d2f9b7382ad297e2171158f685719535",
             "locator": "Opening theorem and Exclusion of all ten embeddings"
           },
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_FOURTEEN_EXCLUSION.md",
-            "sha256": "3e2e0f980fe9da90236624cd08d27418d1d78e40065a49daa753d9144f091bfe",
+            "sha256": "19086c1ef1d4010bbffa27d49b9dcee5d2f9b7382ad297e2171158f685719535",
             "locator": "The next threshold and ConductorSixteenCharacteristicSequences"
           },
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md",
-            "sha256": "db7490109ce7b49b2f16b752dec738615f1d4be827ec67983aafdb0342e9ef1c",
+            "sha256": "a776802e7e66382a288070a3dff079a73524bc05214ffbb3e4c203bbb6756bcc",
             "locator": "KellerDirectionalConductorSixteenExclusion and its degree-sixteen branch reduction"
           },
           {
@@ -108626,9 +108890,19 @@
             "locator": "KellerDirectionalConductorTwentyExclusion and Exclusion of the four remaining embeddings"
           },
           {
+            "path": "hessian/hc4-triangular-graphs/DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md",
+            "sha256": "3f7b92d4b4c3528f1f37ae26dc0d6859f6bf7509145546560cfc8bec3d874c27",
+            "locator": "KellerDirectionalDegreeTwoElementExclusion, the all-conductor generic restriction"
+          },
+          {
+            "path": "hessian/hc4-triangular-graphs/GENERIC_SOURCE_LINE_TRANSVERSE_COLLISIONS.md",
+            "locator": "GenericSourceLineTransverseCollisions",
+            "sha256": "ace3eefe5e1fbdb1161bf44516e85a401985b51794b48369a5510fc02e78d01f"
+          },
+          {
             "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_CHARACTERISTIC_SEQUENCES.md",
-            "sha256": "6ce4ebea4b540af61517a9eb7150802ed6e4946db00d74717b73014f2e3f0cd9",
-            "locator": "Reduction to four embeddings"
+            "locator": "Reduction to two embeddings",
+            "sha256": "e9d822c6a18949e59145cb2ad2a43c99986f6639f572d11ea597890ba7cdbb10"
           }
         ],
         "topics": [
@@ -108639,7 +108913,7 @@
         "evidence_type": "mathematical_obligation",
         "origin": "internal",
         "dependency_coverage": "partial",
-        "next_action": "Exclude or realize the four degree-twenty-two embeddings with exact finite-line specialization, and address automatic ordinary trace-dual landing."
+        "next_action": "Analyze the extra Laurent terms for the three-to-two family when r>m. Extract a conductor-independent lemma from parameter invariants, pole control, and singular tangent determinants. Use individual conductor cases to expose a failure of the proposed lemma or supply a specific proof ingredient. See the directional-conductor computations section of the mathematical validity guide."
       },
       {
         "id": "ARITH-ELLIPTIC-FIXED-RAMIFICATION-FINITENESS",
@@ -124749,6 +125023,11 @@
             "path": "hessian/hc4-triangular-graphs/CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md",
             "sha256": "58314c6470dfa9ff2eebd70d5e6be10142867401a207e0d478a22d7f240692b0",
             "locator": "Section 8, SourceFiniteOneVelocityFullBoundaryTrace"
+          },
+          {
+            "path": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md",
+            "sha256": "94fa7d17b19723b81fb5e1aa4c833e6cfde26ddef1c34bbeed5cfe5ae724652f",
+            "locator": "ExceptionalFoldMinimalWeightBoundaryExclusion"
           }
         ],
         "dependency_coverage": "partial",
@@ -124759,7 +125038,7 @@
         ],
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
-        "next_action": "Derive full-order automatic landing in a source-finite frame, ruling out the exact marked poles from the actual source constraints and preserving every original prime. Exceptional folds already have explicit simultaneous polynomial admission and a marked double-pole witness."
+        "next_action": "Derive full-order automatic landing in a source-finite frame, ruling out the exact marked poles from the actual source constraints and preserving every original prime. An actual survivor in the exceptional fold case must have source a-degree at least twenty-four in its normalized chart. The marked double-pole witness still applies to that case."
       },
       {
         "id": "EVIDENCE-ARITH-ELLIPTIC-THREE-TORSION",
@@ -127929,7 +128208,7 @@
         "title": "Finite-target compatibility of surviving polar folds",
         "kind": "gap",
         "status": "open",
-        "scope": "For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and ordinary trace pairing. The exceptional type now has a WHOLE ramified plane chart a=s^-2+s*t,b=s, target Jacobian J*s, residue degree1 and branch orders (m,m+1); both target polynomials must ALSO admit substitution t=(a*b^2-1)/b^3 as original source polynomials. Neither the corrected genuine affine whole-chart control nor arbitrary-degree finite linear-Jacobian controls supplies this simultaneous admission. Empty-unramified-boundary maps, nonpolar folds and higher ramification remain separate. Exceptional-fold simultaneous admission is now explicit in every a-degree. The Keller condition excludes degrees through 8, and the first possible degree 9 has forced lowest blocks k² and k³. The exact weighted companion equation raises the exceptional-fold source a-degree lower bound to eighteen. At eighteen the only first blocks are powers of b^(-3)u^5(u-1).",
+        "scope": "For actual plane Keller maps with nonempty unramified completion boundary, eliminate or realize the remaining polar index-two types (p,r,n)=(2,1,5) and (p,p+1,p^2+p+1) while preserving the FULL finite target normalization and ordinary trace pairing. The exceptional type now has a WHOLE ramified plane chart a=s^-2+s*t,b=s, target Jacobian J*s, residue degree1 and branch orders (m,m+1); both target polynomials must ALSO admit substitution t=(a*b^2-1)/b^3 as original source polynomials. Neither the corrected genuine affine whole-chart control nor arbitrary-degree finite linear-Jacobian controls supplies this simultaneous admission. Empty-unramified-boundary maps, nonpolar folds and higher ramification remain separate. Exceptional-fold simultaneous admission is explicit in every a-degree. The Laurent companion and weighted boundary equations exclude source a-degrees through twenty-three, so max(deg_a P,deg_a Q) is at least twenty-four in the normalized chart. The other polar fold family and higher ramification remain separate.",
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/RAMIFIED_FOLD_VALUATIONS_AND_COMMON_COORDINATE_POLES.md",
@@ -127965,6 +128244,11 @@
             "path": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_WEIGHTED_JACOBIAN_OBSTRUCTION.md",
             "sha256": "da732a0bef42843218373f8a191fa1b6ffa9477ebbe7c234ab63afd74db1a7b0",
             "locator": "Theorem and Section 2, original-frame degree bound and the equality case"
+          },
+          {
+            "path": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md",
+            "sha256": "94fa7d17b19723b81fb5e1aa4c833e6cfde26ddef1c34bbeed5cfe5ae724652f",
+            "locator": "ExceptionalFoldMinimalWeightBoundaryExclusion"
           }
         ],
         "dependency_coverage": "partial",
@@ -127975,7 +128259,7 @@
         ],
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
-        "next_action": "Resolve the remaining exceptional-fold Keller compatibility from source a-degree eighteen onward using its weighted companion and exact original-source admission. The other polar fold family, empty unramified boundary and higher indices are separate."
+        "next_action": "Resolve the exceptional-fold Keller compatibility at source a-degree twenty-four and higher using the two weighted directions and exact admission. Retain the full finite normalization for the other polar fold family."
       },
       {
         "id": "ARITH-FBS-SINGULAR-MODEL",
@@ -136179,7 +136463,7 @@
         "sources": [
           {
             "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-            "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+            "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
             "locator": "Optimal uniform alternate-cover Hasse families"
           },
           {
@@ -141154,7 +141438,7 @@
         "sources": [
           {
             "path": "arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
-            "sha256": "62c2ab86a85c1bc5512cbc02834e2a31b51a26fa3e62ff4f64b899aaf19bc572",
+            "sha256": "08d237f7881f4f85d5ed7e325ea42e9bae665c74d54bb74caf32eafc05082e49",
             "locator": "Complete quantified written proof and scope"
           },
           {
@@ -141204,7 +141488,7 @@
         "sources": [
           {
             "path": "arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
-            "sha256": "62c2ab86a85c1bc5512cbc02834e2a31b51a26fa3e62ff4f64b899aaf19bc572",
+            "sha256": "08d237f7881f4f85d5ed7e325ea42e9bae665c74d54bb74caf32eafc05082e49",
             "locator": "Theorem1 cost cutoffs"
           }
         ]
@@ -141212,7 +141496,7 @@
       {
         "id": "ARITH-PRIME-HALF-HASSE-MINIMUM-ATTAINMENT",
         "title": "Minimum Hasse ranks and equality factors, attained in admissible prime-half degrees",
-        "scope": "Every finite etaleQalgebra split by anA_(2p) extension, p>=7prime, with all local points and noQpoint has rank>=2^(2p-2). Equality forces exactly the fixed-field multiset of the unique optimal subgroup cover. For admissible n=2p=m^2+1, the concentrated-inertia family attains this bound infinitely often, with linearly disjoint splitting fields and a fixedA4 realization. No infinitude of primes of this special form is asserted.",
+        "scope": "Every finite etaleQalgebra split by anA_(2p) extension, p>=7prime, with all local points and noQpoint has rank>=2^(2p-2). Equality forces exactly the fixed-field multiset of the unique optimal subgroup cover. For admissible n=2p=m^2+1, the concentrated-inertia family attains this bound infinitely often, with linearly disjoint splitting fields and a fixedA3 realization. No infinitude of primes of this special form is asserted.",
         "topic": "arithmetic",
         "kind": "claim",
         "status": "open",
@@ -141221,7 +141505,7 @@
         "sources": [
           {
             "path": "arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
-            "sha256": "62c2ab86a85c1bc5512cbc02834e2a31b51a26fa3e62ff4f64b899aaf19bc572",
+            "sha256": "08d237f7881f4f85d5ed7e325ea42e9bae665c74d54bb74caf32eafc05082e49",
             "locator": "Corollary2 and admissible intersection"
           }
         ]
@@ -141238,7 +141522,7 @@
         "sources": [
           {
             "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-            "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+            "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
             "locator": "Complete quantified written proof and scope"
           },
           {
@@ -141288,7 +141572,7 @@
         "sources": [
           {
             "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-            "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+            "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
             "locator": "TheoremA"
           }
         ]
@@ -141305,7 +141589,7 @@
         "sources": [
           {
             "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-            "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+            "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
             "locator": "LemmaB"
           }
         ]
@@ -198299,7 +198583,7 @@
         "sources": [
           {
             "path": "jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md",
-            "sha256": "53e1dfa05e1c8b19ce503e0d7ae66d73fa75198ce343d780b406ce571715b649",
+            "sha256": "852adfe298f747444745c595f5b547629680845f119df44f507eb06c207640ef",
             "locator": "Finite test for the sharp candidate, condition 1"
           }
         ],
@@ -198318,7 +198602,7 @@
         "sources": [
           {
             "path": "jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md",
-            "sha256": "53e1dfa05e1c8b19ce503e0d7ae66d73fa75198ce343d780b406ce571715b649",
+            "sha256": "852adfe298f747444745c595f5b547629680845f119df44f507eb06c207640ef",
             "locator": "Finite test for the sharp candidate, condition 2"
           }
         ],
@@ -262981,7 +263265,7 @@
         "sources": [
           {
             "path": "jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md",
-            "sha256": "53e1dfa05e1c8b19ce503e0d7ae66d73fa75198ce343d780b406ce571715b649",
+            "sha256": "852adfe298f747444745c595f5b547629680845f119df44f507eb06c207640ef",
             "locator": "The grade-104 membership problem"
           },
           {
@@ -263340,15 +263624,15 @@
         "topic": "factorial",
         "origin": "internal",
         "dependency_coverage": "partial",
-        "scope": "Find a reachable-residue invariant for distinct factorial subset sums containing 1! modulo every 5^j that supports lifting from j to j+1, including carries at 5^j. Finite precision automata and reported witnesses to 20000 do not establish all-precision lifting.",
+        "scope": "Find a carry invariant for distinct factorial subset sums containing 1! that supports every precision, including unbounded jumps in factorial valuations. Full residue coverage is proved through precision 488272.",
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
             "locator": "Uniform lifting obligation and A local covering criterion at every carry boundary"
           }
         ],
-        "next_action": "Develop a growing-lookback cover or a carry-selective replacement. At n=5^r any standalone signed packet for the middle third of the gap needs growing index span and a growing number of selected terms. Independent bounded-size packet lifts cannot handle all gaps."
+        "next_action": "Develop a growing-lookback cover or a carry-selective replacement. Full residue coverage requires a lookback of at least (5.53+o(1))*r at a jump of size r; standalone signed packets in the middle third require growing support."
       },
       {
         "id": "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE",
@@ -263364,11 +263648,11 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
             "locator": "Uniform lifting obligation; Small completed special case"
           }
         ],
-        "next_action": "Prove the all-jump reachability step, or a different all-precision argument for the target residue -1. The current block cover is complete only through the stated precision."
+        "next_action": "Find a growing lookback rule that handles unbounded valuation jumps or a carry invariant that reaches the target residue -1 at every precision. Use further finite runs to test a stated rule at a jump where it could fail."
       },
       {
         "id": "GAP-FACT-ERDOS404-INFINITE-SEQUENCE",
@@ -263384,7 +263668,7 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
             "locator": "Uniform lifting obligation; Small completed special case"
           }
         ],
@@ -263534,7 +263818,7 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
             "locator": "Small completed special case"
           }
         ]
@@ -264421,7 +264705,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Window theorem and Sections 2–4"
           }
         ]
@@ -264439,7 +264723,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Section 5, the odd-prime cancellation and exact ternary-prime boundary"
           }
         ]
@@ -264448,7 +264732,7 @@
         "id": "GAP-FACTORIAL-BINARY-THREE-ADIC-WILD-CANCELED-ROW",
         "kind": "gap",
         "title": "Exclude actual binary windows above a wild ternary-prime canceled row",
-        "scope": "At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 size four remains only for the low-adjacent-digit nonsingleton profile (10) with the exact restrictions (11), (16), (17), and (19). Foreign XY and the axis quartic are fully excluded at this radius. The remaining first-radius rows, including arbitrarily large upper exponents, have a finite exponent-profile reduction at precision four. At L>=9 the remaining sizes run from 3 through L+1 when c=0 or through L when c!=0. At L=9 the positive-valuation low even-digit foreign four-term branch of Section 9 is completely excluded, including the axis quartic and all shifted products. The residue congruence realizations in the high digit-count sector through I_4 are compatible with this exclusion. Other second-radius supports and the higher radii remain.",
+        "scope": "At p=3 for binary phases in condition (2) with two distinct native poles, a wild coefficient grid, a primitive fourth-root frequency ratio and a canceled d=2 row at v(k)=(1-1/L)/2, L=3^h, exclude the remaining actual support-size zero blocks. At L=3 size four remains only for the low-adjacent-digit nonsingleton profile (10) with the exact restrictions (11), (16), (17), and (19). Foreign XY and the axis quartic are fully excluded at this radius. The remaining first-radius rows, including arbitrarily large upper exponents, have a finite exponent-profile reduction at precision four. At total digit count two all shifted quartic cases are excluded, including the family with two linear axes and arbitrarily large shifts. At L=3 only total digit counts at least four and at least one nonlinear axis remain in these wild four-term profiles. Two linear axes are now fully covered. At L>=9 the remaining sizes run from 3 through L+1 when c=0 or through L when c!=0. At L=9 the positive-valuation low even-digit foreign four-term branch of Section 9 is completely excluded, including the axis quartic and all shifted products. The residue congruence realizations in the high digit-count sector through I_4 are compatible with this exclusion. Other second-radius supports and the higher radii remain.",
         "status": "open",
         "topic": "factorial",
         "origin": "internal",
@@ -264456,11 +264740,11 @@
         "gap_kind": "mathematical",
         "endpoint_role": "active_goal",
         "dependency_coverage": "partial",
-        "next_action": "Enumerate the reachable profiles at L=3 using the five lower and seven upper marked digit windows, then lift the remaining linked rows. Begin with total digit count two, where (17) and (19) force two adjacent ones on one axis, and handle high digit counts using only the first two foreign insertions. At L=9 revisit non-low foreign supports and longer windows, and at L>=27 revisit the low even-digit sector.",
+        "next_action": "At L=3 enumerate the high digit-count upper profiles with at least one nonlinear axis. Use the five lower and seven upper marked digit windows, the first two foreign insertion factors, and the linked cubic-residue pivots. Compare those nonconstant pure-axis corrections with the resolved two-linear-axis case. At L=9 revisit non-low foreign profiles and longer windows, and at L>=27 revisit the low even-digit sector.",
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Section 10, Scope and remaining cases"
           }
         ]
@@ -264534,7 +264818,7 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
             "locator": "A local covering criterion at every carry boundary"
           },
           {
@@ -264543,6 +264827,108 @@
             "locator": "verify, exact residue enumeration under Python 3.12.3"
           }
         ]
+      },
+      {
+        "id": "FACT-ERDOS404-LARGE-FINITE-EXCESS",
+        "title": "Arbitrarily large finite excess for sums of distinct factorials",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "written_proof",
+        "scope": "Every arithmetic progression contains a subprogression on which f(a,p)-v_p(a!) is finite and constant for positive a, simultaneously for any fixed finite set of primes. For each prime p and k>=0, these finite excesses are unbounded within a=-2 modulo p^k. Along an unbounded sequence of a the finite excess is at least (3-o(1))*log_p(log a). A fixed normalized subset-sum polynomial containing the initial weight can have no rational root except -2, of multiplicity at most three, attained by the indices a,a+1,a+3.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
+            "locator": "Proposition (Arbitrarily large finite factorial-sum excess)."
+          }
+        ]
+      },
+      {
+        "id": "FACT-ERDOS404-DYADIC-TAIL-OBSTRUCTION",
+        "title": "Full residue coverage fails for every dyadic factorial tail",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "written_proof",
+        "scope": "For every a>=1, the subsums of n!/a! for n>=a omit a residue modulo 16. Also f(a,2)=v_2(a!)+3 for a=4 modulo 8. The all-residue obstruction leaves the single-target dyadic question open.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
+            "locator": "Proposition (Dyadic tails miss a residue modulo sixteen)."
+          }
+        ]
+      },
+      {
+        "id": "FACT-ERDOS404-MINIMUM-COVERING-LOOKBACK",
+        "title": "Minimum lookback for full factorial residue coverage",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "written_proof",
+        "scope": "At a boundary with v_p(N)=r, a preceding block of length W<=p^r covering every normalized residue needs W>=2^(r-1) for p=2 and W>=(r-O_p(log(r+2)))/(log_p(2)-1/(p-1)) for each fixed p>2. At p=5 any width rule 5r+O(1) is insufficient.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
+            "locator": "Proposition (Minimum lookback for full residue coverage)."
+          }
+        ]
+      },
+      {
+        "id": "FACT-ERDOS404-FULL-COVERAGE-BELOW-FIRST-SIZE-NINE",
+        "title": "Full five-adic factorial residue support through precision 488272",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "complete",
+        "evidence_type": "exact_computation",
+        "scope": "All boundaries below 5^9 with jump sizes 5, 6, 7, 8 are covered by widths 40, 40, 45, 50, respectively. The earlier uniform small-jump tests and the block induction give full residue support modulo 5^488272 with indices 2 through 1953119. In particular f(1,5)>=488272.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
+            "locator": "Proposition (Full coverage below the first size-nine jump)."
+          },
+          {
+            "path": "factorial/verify_erdos404_local_blocks.py",
+            "sha256": "682b5a44a29dd206ec719db54d0064fca5db709777554fc9400ed7a3f306576f",
+            "locator": "Uniform jumps of sizes 1 through 4"
+          },
+          {
+            "path": "factorial/verify_erdos404_large_blocks.cpp",
+            "sha256": "9839d2f97191f3eb57f6c75f8bcd9201352472c0276b52665b25932ca9ab5a1f",
+            "locator": "Replay with argument 9, exact split coverage and two negative controls"
+          }
+        ]
+      },
+      {
+        "id": "GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE",
+        "title": "Infinite factorial-index sequence at some prime",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "topic": "factorial",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "Do there exist a prime p and an infinite increasing sequence a_1<a_2<... of positive indices whose partial factorial sums have p-adic valuations tending to infinity? Equivalently, does f(a,p)=infinity hold for some positive a and prime p by compactness? The recorded p=5 and a=1 route is sufficient.",
+        "sources": [
+          {
+            "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
+            "locator": "Opening question of Erdős and Graham, uniform lifting obligation and finite-excess proposition"
+          }
+        ],
+        "next_action": "Find an all-precision cancellation at any fixed prime and positive starting index."
       },
       {
         "id": "EXT-ABC-DAVENPORT-HEILBRONN-POSITIVE-FUNDAMENTAL-CUBIC-FIELDS",
@@ -264575,7 +264961,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "First critical row and Larger critical rows, Sections 6–7"
           }
         ]
@@ -264741,7 +265127,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Four-term foreign-column reduction, Digit-run restriction and Adjacent-digit restriction, Section 8"
           },
           {
@@ -264786,7 +265172,7 @@
         "sources": [
           {
             "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-            "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+            "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
             "locator": "Proposition (Size of corrections at large jumps)."
           }
         ]
@@ -264842,7 +265228,7 @@
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
-            "sha256": "44e41a3cb65bb8f61accb48ffb283c7c09af97546fe764c3f039690efc9222c7",
+            "sha256": "4ab31f8e85f4069d563e08e004df4ee0ed32890805a00531e3e03f6c62686b94",
             "locator": "Characteristic sequences of the exact order"
           }
         ]
@@ -265008,7 +265394,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "First critical quartic exclusion, Section 8"
           },
           {
@@ -265031,8 +265417,105 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Finite upper profiles at precision four, Section 8, cross-binomial factorization across the axis boundary"
+          }
+        ]
+      },
+      {
+        "id": "FACT-BINARY-PRIME-POWER-FIRST-WILD-SHIFTED-QUARTIC-RESTRICTION",
+        "title": "First-radius restriction for shifted quartic foreign terms",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "scope": "For the remaining first-radius four-term profiles with exactly two foreign ternary ones, an exact four-zero block requires a shifted quartic X^(4*3^r) up to exchange of axes, both axes linear, r>=6, and start 9H+5 with H congruent to 136 modulo 243 for r=6 or 217 modulo 243 for r>=7. Exact finite profiles and linked row tests at I_4 and I_7 establish these necessary conditions. The surviving classes remain open.",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
+            "locator": "First-radius shifted quartic restriction, Section 8, including the cutoffs at I_4 and I_7"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_binary_shifted_quartic_first_radius.py",
+            "sha256": "98ba10de10d71372e4f0cd5bf01612315e2e1991c5bad170d69df1e2b56b7356",
+            "locator": "First-radius shifted quartic finite reductions and the exact moment tests through I_7"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_binary_two_digit_second_radius.py",
+            "sha256": "51331f5e4d0f0f2804724c05f07bb8c7e60e6ac87fa53d1c95096758c17b6484",
+            "locator": "Shared pure factorial parts and sparse normalized moment assembly"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_binary_xy_second_radius.py",
+            "sha256": "c04b013ef80a8a4152efa1e99da3692beb2f9a60493d59424013ab808b0c3a2d",
+            "locator": "Shared polynomial arithmetic in ramified coefficient rings"
+          }
+        ]
+      },
+      {
+        "id": "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-DEEP-UPPER",
+        "title": "First-radius linear-axis four-window for foreign exponents divisible by 27",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "scope": "Under the remaining first-radius four-term, distinct-pole wild hypotheses, if both designated axes are linear and the two foreign exponents are divisible by 27, the four-window holds for every start and arbitrary real-valued extensions of v_3. After the first differenced row determines the integral parameter to the needed precision, the second row has a fractional-valuation term of weight min(v_3(alpha),v_3(beta))+1/3, with independent upper-exponent residue directions. This gives the uniform conclusion also at foreign total digit count at least four.",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
+            "locator": "Linear-axis exclusion for exponents divisible by twenty-seven, Section 8"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_binary_shifted_quartic_first_radius.py",
+            "sha256": "98ba10de10d71372e4f0cd5bf01612315e2e1991c5bad170d69df1e2b56b7356",
+            "locator": "Uniform linear-axis derivative, weight bounds and all 2187 starting-quotient residues"
+          }
+        ]
+      },
+      {
+        "id": "FACT-BINARY-PRIME-POWER-FIRST-WILD-TWO-DIGITS",
+        "title": "First-radius four-window with exactly two foreign ternary ones",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "scope": "In the p=L=3 wild four-term canceled two-pole case with exactly two foreign ternary ones, all shifted quartic profiles have a four-window at every start and arbitrary real-valued extensions of v_3. The finite shifted quartic restriction and the uniform linear-axis exclusion cover all cases.",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
+            "locator": "First-radius two-digit exclusion, Section 8, shifted quartic restriction and linear-axis case"
+          }
+        ]
+      },
+      {
+        "id": "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-EXCLUSION",
+        "title": "First-radius four-window for two linear axes",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "factorial",
+        "origin": "internal",
+        "evidence_type": "written_proof",
+        "dependency_coverage": "partial",
+        "scope": "At p=L=3 in the remaining wild four-term case of Section 8, two linear designated axes suffice for the four-window at every start and arbitrary real-valued extensions of v_3. The two-digit and deeply divisible foreign cases reduce the high digit-count sector to minimum foreign exponent valuation two. Its finite modulus-27 insertion profiles are excluded by the linked row calculations at I_3 and I_(10/3).",
+        "sources": [
+          {
+            "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
+            "locator": "First-radius four-window with two linear axes, Section 8, valuation-two finite profiles"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_binary_shifted_quartic_first_radius.py",
+            "sha256": "98ba10de10d71372e4f0cd5bf01612315e2e1991c5bad170d69df1e2b56b7356",
+            "locator": "Exact valuation-two linear-axis calculation on 702 coarse profiles and 1548 refinements"
           }
         ]
       },
@@ -265049,7 +265532,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Quadratic numerator filter, Second critical radius, Late second-radius coefficient alignment, Second-radius residue realizations and Unit foreign coefficient, Section 9"
           }
         ]
@@ -265067,7 +265550,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Second critical XY exclusion, Section 9"
           },
           {
@@ -265090,7 +265573,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Low-digit native profiles at precision four, Section 9"
           }
         ]
@@ -265108,7 +265591,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "High digit-count second-radius exclusion, Section 9, (29)–(30) and the final linked residue comparison"
           },
           {
@@ -265136,7 +265619,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Two-digit second-radius exclusion, Section 9, finite zero-run reduction and linked row counts"
           },
           {
@@ -265169,7 +265652,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-            "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+            "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
             "locator": "Second-radius low even-digit exclusion, Section 9, union of the two-digit and high digit-count cases"
           }
         ]
@@ -265785,7 +266268,7 @@
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_FOURTEEN_EXCLUSION.md",
-            "sha256": "3e2e0f980fe9da90236624cd08d27418d1d78e40065a49daa753d9144f091bfe",
+            "sha256": "19086c1ef1d4010bbffa27d49b9dcee5d2f9b7382ad297e2171158f685719535",
             "locator": "The next threshold and ConductorSixteenCharacteristicSequences"
           }
         ],
@@ -266229,7 +266712,7 @@
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md",
-            "sha256": "db7490109ce7b49b2f16b752dec738615f1d4be827ec67983aafdb0342e9ef1c",
+            "sha256": "a776802e7e66382a288070a3dff079a73524bc05214ffbb3e4c203bbb6756bcc",
             "locator": "Characteristic sequences at degree eighteen"
           }
         ],
@@ -266246,7 +266729,7 @@
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md",
-            "sha256": "db7490109ce7b49b2f16b752dec738615f1d4be827ec67983aafdb0342e9ef1c",
+            "sha256": "a776802e7e66382a288070a3dff079a73524bc05214ffbb3e4c203bbb6756bcc",
             "locator": "Reduction to four embeddings"
           }
         ],
@@ -266416,7 +266899,7 @@
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_CHARACTERISTIC_SEQUENCES.md",
-            "sha256": "63966bcd023a23f52df577209fe983c305d8fd91ff2e4c9e60caf20c34f3e727",
+            "sha256": "08a9196fe069c4265ffc498aed91a9b3cd3e770e7f6494902145893d611c6983",
             "locator": "ConductorTwentyCharacteristicSequences and Exhaustive arithmetic"
           }
         ],
@@ -266450,7 +266933,7 @@
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_CHARACTERISTIC_SEQUENCES.md",
-            "sha256": "63966bcd023a23f52df577209fe983c305d8fd91ff2e4c9e60caf20c34f3e727",
+            "sha256": "08a9196fe069c4265ffc498aed91a9b3cd3e770e7f6494902145893d611c6983",
             "locator": "Exclusion of ten embeddings"
           }
         ],
@@ -266468,8 +266951,8 @@
         "sources": [
           {
             "path": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
-            "sha256": "0eb8a2a8745ce96bb7bb0b3f3920e4fd4183ed531857e5e905ef10585da34685",
-            "locator": "A pencil through two split primes, Local partitions on four and five vertices, and equation (5)"
+            "sha256": "1130a38ec6ac8fe9c94354b9e05414dcd02d67da26845433cc62fb2664121983",
+            "locator": "A pencil through two split primes, Local partitions on four and five vertices, and equation (6)"
           }
         ]
       },
@@ -266481,16 +266964,16 @@
         "topic": "arithmetic",
         "origin": "internal",
         "dependency_coverage": "partial",
-        "scope": "Finite checks for the fixed search bounds in d=23,31,59,83; one oriented quadruple in d=43 has exactly two opposite product cube classes. The specified CRT lattice has rank one in the ball of radius 38 but its prime path has negative Heron defect and no imaginary norm witness.",
+        "scope": "Finite checks for the fixed search bounds in d=23,31,59,83; one oriented quadruple in d=43 has exactly two opposite product cube classes. The specified CRT lattice has rank one in the ball of radius 38 but its prime path has negative Heron defect and no imaginary norm witness. Exact inversion of signed data on all generated triples includes d=2 (the other integral-basis parity). The positive-Heron control at (3,5,7) has E=10475 and fails the incident-prime unit test.",
         "sources": [
           {
             "path": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
-            "sha256": "0eb8a2a8745ce96bb7bb0b3f3920e4fd4183ed531857e5e905ef10585da34685",
+            "sha256": "1130a38ec6ac8fe9c94354b9e05414dcd02d67da26845433cc62fb2664121983",
             "locator": "Exact examples and the unresolved count"
           },
           {
             "path": "arithmetic/verify_coherent_norm_pencils.py",
-            "sha256": "aa9034a61a8ebcfc7a4ac00e3e3421180a52358532b5f4eaff2512357cd806b6",
+            "sha256": "cfca525f3e7bc35780727c71cc29a45af949bae04eddca4bef1ca64ae6ba7ba9",
             "locator": "Exact deterministic examples, selected split roots, full-modulus rejection"
           }
         ],
@@ -266528,11 +267011,11 @@
         "sources": [
           {
             "path": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
-            "sha256": "0eb8a2a8745ce96bb7bb0b3f3920e4fd4183ed531857e5e905ef10585da34685",
+            "sha256": "1130a38ec6ac8fe9c94354b9e05414dcd02d67da26845433cc62fb2664121983",
             "locator": "Exact examples and the unresolved count"
           }
         ],
-        "next_action": "Use (5) and simultaneous fourth-vertex constraints across varying pencils to bound occupancy. The uniform fixed-pencil cube-class count alone is too large for the smallest populated cosets."
+        "next_action": "Count all growing coefficient boxes with positive Heron defect E, gcd(E,p_1p_2p_3)=1 and sf(E) in [X,2X), retaining selected witness restrictions. The exact critical-scale census separates field-window losses from congruence and rank losses and gives a baseline for testing such counts."
       },
       {
         "id": "GAP-ARITH-ERDOS943-CYCLES-LARGE-REDUCED-ROOT-DIFFERENCES",
@@ -266687,7 +267170,7 @@
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_CHARACTERISTIC_SEQUENCES.md",
-            "sha256": "6ce4ebea4b540af61517a9eb7150802ed6e4946db00d74717b73014f2e3f0cd9",
+            "sha256": "e9d822c6a18949e59145cb2ad2a43c99986f6639f572d11ea597890ba7cdbb10",
             "locator": "ConductorTwentyTwoCharacteristicSequences"
           }
         ],
@@ -266695,20 +267178,157 @@
       },
       {
         "id": "HESSIAN-CONDUCTOR-TWENTY-TWO-REMAINING-EMBEDDINGS",
-        "title": "Four reduced embeddings remain at global conductor degree twenty-two",
+        "title": "Two reduced embeddings remain at global conductor degree twenty-two",
         "topic": "hessian",
-        "scope": "For an actual monic longitudinal plane Keller order of global degree twenty-two, the reduced sequence must be one of (8,6,11),(10,4,15),(14,4,11),(12,8,6,11).",
+        "scope": "For an actual monic longitudinal plane Keller order of global degree twenty-two, the reduced sequence must be one of (8,6,11),(10,4,15).",
         "kind": "claim",
         "origin": "internal",
         "status": "open",
         "sources": [
           {
             "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_CHARACTERISTIC_SEQUENCES.md",
-            "sha256": "6ce4ebea4b540af61517a9eb7150802ed6e4946db00d74717b73014f2e3f0cd9",
-            "locator": "Reduction to four embeddings"
+            "locator": "Reduction to two embeddings",
+            "sha256": "e9d822c6a18949e59145cb2ad2a43c99986f6639f572d11ea597890ba7cdbb10"
           }
         ],
         "dependency_coverage": "complete"
+      },
+      {
+        "id": "GAP-ARITH-ERDOS943-CYCLES-INTERMEDIATE-COHERENT-GCD",
+        "title": "Residual cycles with intermediate singular coherent gcd",
+        "scope": "Bound by O_epsilon(T^(2+epsilon)) uniformly all selected-edge actual six-cycles with both original high kernel-side lcms and D_*>T^(1/2), in either the nonsingular sector or the singular sector T^(1/2)<g_*<(2T)^(43/12). All original residual restrictions continue to apply.",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "mathematical_obligation",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+            "sha256": "4b07176a4b206f7a0f65de466b21c896c32e9b5546d5850bae76d59c613b8502",
+            "locator": "Final paragraph, complement of the large coherent gcd tail"
+          }
+        ],
+        "next_action": "Count the singular intermediate coherent-content sector with the actual common-target equations. The run-of-three valuation construction shows why support alone does not suffice."
+      },
+      {
+        "id": "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION",
+        "title": "Exact algebra for the (14,4,11) exclusion",
+        "scope": "Exact square-root, collision and scale equations exclude both inhomogeneous cases, and the singular tangent determinant excludes the fixed homogeneous order.",
+        "kind": "source",
+        "topic": "hessian",
+        "origin": "internal",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/verify_conductor_twenty_two_quartic_tetradecic_exclusion.py",
+            "locator": "Exact coefficient and obstruction computations",
+            "sha256": "d394920c887623e62071356eb6b0e5a252ef41edaf8024cf1b45c4f7aa0fb07b"
+          }
+        ]
+      },
+      {
+        "id": "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION",
+        "title": "Exact algebra for the (12,8,6,11) exclusion",
+        "scope": "The two constant Laurent coefficients force a rational parameter on a nine-sheeted curve of positive genus, contradicting the nonconstant parameter Jacobian.",
+        "kind": "source",
+        "topic": "hessian",
+        "origin": "internal",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "hessian/hc4-triangular-graphs/verify_conductor_twenty_two_twelve_eight_six_eleven_exclusion.py",
+            "locator": "Exact coefficient and obstruction computations",
+            "sha256": "9656e2fb430bd3dbc2c5e0beb996c834dc3964995990cf6352c20bd3c6169b42"
+          }
+        ]
+      },
+      {
+        "id": "GAP-ARITH-ERDOS943-CYCLES-THREE-EDGE-CONGRUENCE-RESIDUAL",
+        "title": "Residual singular cycles after three-edge continuation",
+        "scope": "Bound by O_epsilon(T^(2+epsilon)) the original high-lcm, large-reduced-difference selected-edge cycles at every balanced target, requiring on the singular branch additionally T^(1/2)<g_*<(2T)^(41/12) and failure of (8) in both cyclic orientations. Keep the nonsingular branch and the original exact common-target conditions.",
+        "kind": "gap",
+        "status": "open",
+        "gap_kind": "mathematical",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "evidence_type": "mathematical_obligation",
+        "sources": [
+          {
+            "path": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+            "sha256": "4b07176a4b206f7a0f65de466b21c896c32e9b5546d5850bae76d59c613b8502",
+            "locator": "Final paragraph, complement of the continuation and refined coherent gcd sectors"
+          }
+        ],
+        "next_action": "Exploit simultaneous weak and strong continuations using the exact target equations across the two remaining edges, or count the residual nonsingular ratios."
+      },
+      {
+        "id": "ARITH-ABC-COHERENT-NORM-RANK-ONE-CENSUS",
+        "title": "Exact finite census of rank-one norm records at crossover scales",
+        "kind": "claim",
+        "status": "proved",
+        "topic": "arithmetic",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "scope": "In the eight fixed census scales the program enumerates increasing prime directions in [Z,2Z), positive odd coefficients, all full CRT incidences and rank one in the squared-radius 12Z^2 ball. The annulus at Z=192 has 142 rank-one records, 116 with positive Heron defect and incident prime units, and 5 with sf(E) in the prescribed field window. The counts concern only the stated finite boxes with orientations free.",
+        "sources": [
+          {
+            "path": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
+            "sha256": "1130a38ec6ac8fe9c94354b9e05414dcd02d67da26845433cc62fb2664121983",
+            "locator": "Census at the rank-one crossover, exact enumeration and annulus table"
+          },
+          {
+            "path": "arithmetic/census_coherent_norm_rank_one.cpp",
+            "sha256": "e803022fa3391d9ab8054d5e16e4cb7ad49e732d3355aec8408cec438929100d",
+            "locator": "Deterministic CRT and rank-one census for the fixed scale array"
+          }
+        ],
+        "evidence_type": "exact_computation"
+      },
+      {
+        "id": "GOAL-DIX-GENERALIZED-DC1",
+        "title": "The generalized first Dixmier conjecture",
+        "scope": "Every unital complex algebra homomorphism from A1(C) to a complex domain Morita equivalent to A1(C) is an isomorphism. This is DC'1 of Kanel-Belov and Fedorov v2.",
+        "status": "open",
+        "origin": "internal",
+        "kind": "gap",
+        "topic": "dixmier",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "next_action": "Establish generalized DC'1, retaining the Morita-equivalent domain and the entire algebra map.",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+            "sha256": "5d8134b6a5a60526573cf25e89d28b0f4ae1d9153768119f074c17a43d388f45",
+            "locator": "FaithfulBoundedGraphsGeneralizedDixmierTransfer"
+          }
+        ]
+      },
+      {
+        "id": "DIX-GAP-PLANE-KELLER-GRAPH-FAITHFUL-BOUNDED-FAMILY",
+        "title": "Faithful bounded families of actual plane Keller graph modules",
+        "scope": "For every complex plane polynomial Keller map of Jacobian one, find a finitely generated integral arithmetic model and one family of reductions to finite fields of characteristics tending to infinity, faithful in a nonprincipal ultraproduct, for which the Berest–Wilson invariants of the actual preserved splitting graph bimodules remain bounded on a set in the ultrafilter.",
+        "status": "open",
+        "origin": "internal",
+        "kind": "gap",
+        "topic": "dixmier",
+        "gap_kind": "mathematical",
+        "evidence_type": "mathematical_obligation",
+        "next_action": "Construct one faithful family per map with bounded invariants, or prove a uniform bound for all reductions using the existing two-degree criterion.",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+            "sha256": "5d8134b6a5a60526573cf25e89d28b0f4ae1d9153768119f074c17a43d388f45",
+            "locator": "FaithfulBoundedGraphsGeneralizedDixmierTransfer"
+          }
+        ]
       }
     ],
     "implications": [
@@ -273059,7 +273679,7 @@
         "id": "DERIVE-JAC-INTERMEDIATE-S2",
         "premises": [
           "EVIDENCE-JAC-INTERMEDIATE",
-          "JAC-PLANE-COMPLETION"
+          "JAC-INTERMEDIATE-S1"
         ],
         "conclusion": "JAC-INTERMEDIATE-S2",
         "status": "proved",
@@ -310977,7 +311597,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
-          "sha256": "62c2ab86a85c1bc5512cbc02834e2a31b51a26fa3e62ff4f64b899aaf19bc572",
+          "sha256": "08d237f7881f4f85d5ed7e325ea42e9bae665c74d54bb74caf32eafc05082e49",
           "locator": "Theorem1 cost cutoffs"
         },
         "dependency_coverage": "partial"
@@ -310991,7 +311611,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
-          "sha256": "62c2ab86a85c1bc5512cbc02834e2a31b51a26fa3e62ff4f64b899aaf19bc572",
+          "sha256": "08d237f7881f4f85d5ed7e325ea42e9bae665c74d54bb74caf32eafc05082e49",
           "locator": "Current principal theorem and exact scope"
         },
         "dependency_coverage": "partial"
@@ -311002,13 +311622,13 @@
           "ARITH-ALTERNATING-PRIME-HALF-UNIQUE-MINIMUM",
           "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
           "ARITH-UNIFORM-CONCENTRATED-ALTERNATING-HASSE-FAMILIES",
-          "JAC-UNIFORM-FIXED-A4-ALTERNATING-HASSE-FAMILIES"
+          "JAC-UNIFORM-FIXED-A3-ARALA-HASSE-FAMILIES"
         ],
         "conclusion": "ARITH-PRIME-HALF-HASSE-MINIMUM-ATTAINMENT",
         "status": "proved",
         "proof": {
           "path": "arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
-          "sha256": "62c2ab86a85c1bc5512cbc02834e2a31b51a26fa3e62ff4f64b899aaf19bc572",
+          "sha256": "08d237f7881f4f85d5ed7e325ea42e9bae665c74d54bb74caf32eafc05082e49",
           "locator": "Corollary2 and admissible intersection"
         },
         "dependency_coverage": "partial"
@@ -311023,7 +311643,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-          "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+          "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
           "locator": "TheoremA"
         },
         "dependency_coverage": "partial"
@@ -311037,7 +311657,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-          "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+          "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
           "locator": "LemmaB"
         },
         "dependency_coverage": "partial"
@@ -311053,7 +311673,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-          "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+          "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
           "locator": "Current principal theorem and exact scope"
         },
         "dependency_coverage": "partial"
@@ -311064,14 +311684,14 @@
           "ARITH-KNOWN-ALTERNATING-WEIGHTED-MINIMUM",
           "ARITH-UNIFORM-ALTERNATING-WEIGHTED-EQUALITY",
           "ARITH-UNIFORM-CONCENTRATED-ALTERNATING-HASSE-FAMILIES",
-          "JAC-UNIFORM-FIXED-A4-ALTERNATING-HASSE-FAMILIES",
+          "JAC-UNIFORM-FIXED-A3-ARALA-HASSE-FAMILIES",
           "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY"
         ],
         "conclusion": "ARITH-UNIFORM-MINIMUM-RANK-ALTERNATING-HASSE-FAMILIES",
         "status": "proved",
         "proof": {
           "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-          "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+          "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
           "locator": "Current principal theorem and exact scope"
         },
         "dependency_coverage": "partial"
@@ -430908,7 +431528,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md",
-          "sha256": "53e1dfa05e1c8b19ce503e0d7ae66d73fa75198ce343d780b406ce571715b649",
+          "sha256": "852adfe298f747444745c595f5b547629680845f119df44f507eb06c207640ef",
           "locator": "The grade-104 membership problem"
         }
       },
@@ -430956,6 +431576,20 @@
           "path": "hessian/hc4-triangular-graphs/HYPERELLIPTIC_OCTIC_CONDUCTORS_AND_FOUR_PERIOD_RIGIDITY.md",
           "sha256": "99a0641789946644d7734f6fa29ddd02dcef2d06879ec726d1604ad5886e271c",
           "locator": "Sections 1–4, degree-two characterization, both generator types, period-pole repair and special-fibre exclusion"
+        }
+      },
+      {
+        "id": "DERIVE-HESSIAN-OCTIC-HYPERELLIPTIC-FROM-DEGREE-TWO-ELEMENT-EXCLUSION",
+        "premises": [
+          "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
+        ],
+        "conclusion": "HESSIAN-HYPERELLIPTIC-OCTIC-CONDUCTOR-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md",
+          "sha256": "3f7b92d4b4c3528f1f37ae26dc0d6859f6bf7509145546560cfc8bec3d874c27",
+          "locator": "Opening theorem, applied to the generator u^2 of the hyperelliptic order"
         }
       },
       {
@@ -431118,10 +431752,38 @@
         "status": "proved",
         "proof": {
           "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-          "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+          "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
           "locator": "Uniform lifting obligation; Small completed special case"
         },
         "dependency_coverage": "partial"
+      },
+      {
+        "id": "ERDOS404-FIVE-ADIC-TO-SOME-PRIME-SEQUENCE",
+        "premises": [
+          "GAP-FACT-ERDOS404-INFINITE-SEQUENCE"
+        ],
+        "conclusion": "GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+          "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
+          "locator": "Opening scope and compactness; choose p=5"
+        }
+      },
+      {
+        "id": "ERDOS404-LOW-AND-LARGE-JUMPS-GIVE-488272",
+        "premises": [
+          "FACT-ERDOS404-LOCAL-BLOCKS"
+        ],
+        "conclusion": "FACT-ERDOS404-FULL-COVERAGE-BELOW-FIRST-SIZE-NINE",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+          "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
+          "locator": "Proposition (Full coverage below the first size-nine jump)."
+        }
       },
       {
         "id": "ERDOS942-CPW1-TO-FIXED-COPRIME-OCCUPANCY",
@@ -431447,7 +432109,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
           "locator": "Binary support consequence and Sections 1, 4 and 6"
         }
       },
@@ -431508,13 +432170,14 @@
           "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
           "HESSIAN-CUBIC-QUINTIC-OCTIC-CONDUCTOR-EXCLUSION",
           "HESSIAN-OCTIC-CONDUCTOR-CABLE-RESIDUAL",
-          "HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION"
+          "HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION",
+          "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
         ],
         "status": "proved",
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md",
-          "sha256": "16fc9af01ac3adb6b2fbbfbbbaa05ee1a70ce0744f51944a42b0ce94c6037c72",
+          "sha256": "6c373a8d0df1c65d2f1fcd39a01cce6522dd218ea85cdec294f320930389f3e6",
           "locator": "Opening theorem and Sections 1–2, exact cable compatibility, matched-pair valuations and global bound ten"
         }
       },
@@ -431532,7 +432195,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
-          "sha256": "4be5f0c70ceefdae01e48b5ff98f15266a04297474f628cc900bd4aa74dd79c9",
+          "sha256": "71cb1b87fdbaeed2c0a7205cc0f3eaf7f92c485036458e0e826d655bfa9718c0",
           "locator": "Opening theorem and Sections 1–4, characteristic sequences, parameter scale and finite-fibre repair"
         }
       },
@@ -431645,7 +432308,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
-          "sha256": "44e41a3cb65bb8f61accb48ffb283c7c09af97546fe764c3f039690efc9222c7",
+          "sha256": "4ab31f8e85f4069d563e08e004df4ee0ed32890805a00531e3e03f6c62686b94",
           "locator": "Characteristic sequences of the exact order"
         }
       },
@@ -431706,13 +432369,14 @@
           "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
           "HESSIAN-CONDUCTOR-TWELVE-HYPERELLIPTIC-CUBIC-EXCLUSIONS",
           "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION",
-          "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS"
+          "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS",
+          "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
         ],
         "status": "proved",
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
-          "sha256": "44e41a3cb65bb8f61accb48ffb283c7c09af97546fe764c3f039690efc9222c7",
+          "sha256": "4ab31f8e85f4069d563e08e004df4ee0ed32890805a00531e3e03f6c62686b94",
           "locator": "Opening theorem and Exclusion in all six sequences"
         }
       },
@@ -431972,7 +432636,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md",
-          "sha256": "f8bcd64c6e9b11769caabcd2a11d3cb4ae271044bcd4941d27cfe5ad06d20cc4",
+          "sha256": "c7e8681faeb131e80bcc867e03e146c6390aaf541cb62910253df941b45b3aab",
           "locator": "HyperellipticTargetCoordinateExclusion, singular tangent determinant and constant-scale contradiction"
         }
       },
@@ -432111,7 +432775,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
           "locator": "Second critical XY exclusion, Section 9"
         },
         "dependency_coverage": "partial"
@@ -432174,7 +432838,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/CONDUCTOR_FOURTEEN_HYPERELLIPTIC_EMBEDDINGS.md",
-          "sha256": "b7662a91f6a2f0176fda1612f4384508e0f815f24a01dd098333725d1d392137",
+          "sha256": "81812f1860f28d4c5393883ddd9bb09a6c64f422d3f1cf3056b7f4c9ce3bcd74",
           "locator": "The complete conductor-fourteen branch proof"
         }
       },
@@ -432252,10 +432916,9 @@
           "HESSIAN-COORDINATE-CONDUCTOR-BASE",
           "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION",
           "HESSIAN-CONDUCTOR-FOURTEEN-CHARACTERISTIC-SEQUENCES",
-          "HESSIAN-HYPERELLIPTIC-TARGET-COORDINATE-EXCLUSION",
+          "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION",
           "HESSIAN-CONDUCTOR-FOURTEEN-CABLE-EXCLUSION",
           "HESSIAN-CONDUCTOR-FOURTEEN-CUBIC-OCTIC-EXCLUSION",
-          "HESSIAN-CONDUCTOR-FOURTEEN-HYPERELLIPTIC-EMBEDDING-EXCLUSION",
           "HESSIAN-CONDUCTOR-FOURTEEN-CUBIC-ORDER-ALTERNATE-EMBEDDINGS",
           "HESSIAN-CONDUCTOR-FOURTEEN-THREE-STAGE-EXCLUSION",
           "HESSIAN-CONDUCTOR-FOURTEEN-DEGREE-NINE-CABLE-EXCLUSION",
@@ -432266,7 +432929,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_FOURTEEN_EXCLUSION.md",
-          "sha256": "3e2e0f980fe9da90236624cd08d27418d1d78e40065a49daa753d9144f091bfe",
+          "sha256": "19086c1ef1d4010bbffa27d49b9dcee5d2f9b7382ad297e2171158f685719535",
           "locator": "Opening theorem and Exclusion of all ten embeddings"
         }
       },
@@ -432275,14 +432938,14 @@
         "premises": [
           "HESSIAN-COORDINATE-CONDUCTOR-BASE",
           "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
-          "HESSIAN-HYPERELLIPTIC-TARGET-COORDINATE-EXCLUSION"
+          "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
         ],
         "conclusion": "HESSIAN-CONDUCTOR-SIXTEEN-CHARACTERISTIC-SEQUENCES",
         "status": "proved",
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_FOURTEEN_EXCLUSION.md",
-          "sha256": "3e2e0f980fe9da90236624cd08d27418d1d78e40065a49daa753d9144f091bfe",
+          "sha256": "19086c1ef1d4010bbffa27d49b9dcee5d2f9b7382ad297e2171158f685719535",
           "locator": "The next threshold and ConductorSixteenCharacteristicSequences"
         }
       },
@@ -432342,7 +433005,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
           "locator": "High digit-count second-radius exclusion, Section 9, (29)–(30) and the final linked residue comparison"
         },
         "dependency_coverage": "partial"
@@ -432568,7 +433231,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md",
-          "sha256": "db7490109ce7b49b2f16b752dec738615f1d4be827ec67983aafdb0342e9ef1c",
+          "sha256": "a776802e7e66382a288070a3dff079a73524bc05214ffbb3e4c203bbb6756bcc",
           "locator": "KellerDirectionalConductorSixteenExclusion and its degree-sixteen branch reduction"
         }
       },
@@ -432583,7 +433246,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md",
-          "sha256": "db7490109ce7b49b2f16b752dec738615f1d4be827ec67983aafdb0342e9ef1c",
+          "sha256": "a776802e7e66382a288070a3dff079a73524bc05214ffbb3e4c203bbb6756bcc",
           "locator": "Characteristic sequences at degree eighteen"
         }
       },
@@ -432591,7 +433254,7 @@
         "id": "DERIVE-HESSIAN-CONDUCTOR-EIGHTEEN-REMAINING-EMBEDDINGS",
         "premises": [
           "HESSIAN-CONDUCTOR-EIGHTEEN-CHARACTERISTIC-SEQUENCES",
-          "HESSIAN-HYPERELLIPTIC-TARGET-COORDINATE-EXCLUSION",
+          "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION",
           "HESSIAN-DIRECTIONAL-THREE-TWO-LAURENT-EXCLUSION",
           "HESSIAN-CONDUCTOR-EIGHTEEN-THREE-STAGE-EXCLUSION",
           "HESSIAN-CONDUCTOR-EIGHTEEN-CUBIC-NORM-EXCLUSION",
@@ -432602,7 +433265,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md",
-          "sha256": "db7490109ce7b49b2f16b752dec738615f1d4be827ec67983aafdb0342e9ef1c",
+          "sha256": "a776802e7e66382a288070a3dff079a73524bc05214ffbb3e4c203bbb6756bcc",
           "locator": "Reduction to four embeddings"
         }
       },
@@ -432736,7 +433399,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_CHARACTERISTIC_SEQUENCES.md",
-          "sha256": "63966bcd023a23f52df577209fe983c305d8fd91ff2e4c9e60caf20c34f3e727",
+          "sha256": "08a9196fe069c4265ffc498aed91a9b3cd3e770e7f6494902145893d611c6983",
           "locator": "ConductorTwentyCharacteristicSequences and Exhaustive arithmetic"
         }
       },
@@ -432775,8 +433438,7 @@
         "id": "DERIVE-HESSIAN-CONDUCTOR-TWENTY-REMAINING-EMBEDDINGS",
         "premises": [
           "HESSIAN-CONDUCTOR-TWENTY-CHARACTERISTIC-SEQUENCES",
-          "HESSIAN-HYPERELLIPTIC-TARGET-COORDINATE-EXCLUSION",
-          "HESSIAN-DIRECTIONAL-THREE-TWO-LAURENT-EXCLUSION",
+          "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION",
           "HESSIAN-CONDUCTOR-TWENTY-FILTERED-PARAMETER-EXCLUSIONS",
           "HESSIAN-CONDUCTOR-TWENTY-THREE-STAGE-EXCLUSION",
           "HESSIAN-CONDUCTOR-TWENTY-TWELVE-EIGHT-FIVE-EXCLUSION",
@@ -432787,7 +433449,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_CHARACTERISTIC_SEQUENCES.md",
-          "sha256": "63966bcd023a23f52df577209fe983c305d8fd91ff2e4c9e60caf20c34f3e727",
+          "sha256": "08a9196fe069c4265ffc498aed91a9b3cd3e770e7f6494902145893d611c6983",
           "locator": "Exclusion of ten embeddings"
         }
       },
@@ -432801,7 +433463,7 @@
         "status": "proved",
         "proof": {
           "path": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
-          "sha256": "0eb8a2a8745ce96bb7bb0b3f3920e4fd4183ed531857e5e905ef10585da34685",
+          "sha256": "1130a38ec6ac8fe9c94354b9e05414dcd02d67da26845433cc62fb2664121983",
           "locator": "Uniform bound for one prescribed cube class, equation (4) and the three-anchor specialization"
         },
         "dependency_coverage": "partial"
@@ -432876,7 +433538,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
           "locator": "Two-digit second-radius exclusion, Section 9, finite zero-run reduction and linked row counts"
         },
         "dependency_coverage": "partial"
@@ -432891,7 +433553,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
           "locator": "Second-radius low even-digit exclusion, Section 9, union of the two-digit and high digit-count cases"
         },
         "dependency_coverage": "partial"
@@ -432907,7 +433569,7 @@
         "status": "proved",
         "proof": {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
           "locator": "Finite upper profiles at precision four, Section 8, cross-binomial factorization across the axis boundary"
         },
         "dependency_coverage": "partial"
@@ -433023,7 +433685,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_CHARACTERISTIC_SEQUENCES.md",
-          "sha256": "6ce4ebea4b540af61517a9eb7150802ed6e4946db00d74717b73014f2e3f0cd9",
+          "sha256": "e9d822c6a18949e59145cb2ad2a43c99986f6639f572d11ea597890ba7cdbb10",
           "locator": "ConductorTwentyTwoCharacteristicSequences"
         }
       },
@@ -433031,16 +433693,264 @@
         "id": "DERIVE-HESSIAN-CONDUCTOR-TWENTY-TWO-REMAINING-EMBEDDINGS",
         "premises": [
           "HESSIAN-CONDUCTOR-TWENTY-TWO-CHARACTERISTIC-SEQUENCES",
-          "HESSIAN-HYPERELLIPTIC-TARGET-COORDINATE-EXCLUSION",
-          "HESSIAN-DIRECTIONAL-THREE-TWO-LAURENT-EXCLUSION"
+          "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION",
+          "HESSIAN-DIRECTIONAL-THREE-TWO-LAURENT-EXCLUSION",
+          "HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION",
+          "HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION"
         ],
         "conclusion": "HESSIAN-CONDUCTOR-TWENTY-TWO-REMAINING-EMBEDDINGS",
         "status": "proved",
         "dependency_coverage": "complete",
         "proof": {
           "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_CHARACTERISTIC_SEQUENCES.md",
-          "sha256": "6ce4ebea4b540af61517a9eb7150802ed6e4946db00d74717b73014f2e3f0cd9",
-          "locator": "Reduction to four embeddings"
+          "locator": "Reduction to two embeddings",
+          "sha256": "e9d822c6a18949e59145cb2ad2a43c99986f6639f572d11ea597890ba7cdbb10"
+        }
+      },
+      {
+        "id": "BINARY-FIRST-CRITICAL-UPPER-PROFILES-TO-SHIFTED-QUARTIC",
+        "premises": [
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-X4-EXCLUSION",
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-UPPER-PROFILES-PRECISION-FOUR",
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN"
+        ],
+        "conclusion": "FACT-BINARY-PRIME-POWER-FIRST-WILD-SHIFTED-QUARTIC-RESTRICTION",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
+          "locator": "First-radius shifted quartic restriction, Section 8, including the cutoffs at I_4 and I_7"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "COHERENT-NORM-PENCIL-TO-EXACT-TRIPLE-RECONSTRUCTION",
+        "premises": [
+          "ARITH-ABC-COHERENT-NORM-PENCIL-IDENTITIES"
+        ],
+        "conclusion": "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
+          "sha256": "1130a38ec6ac8fe9c94354b9e05414dcd02d67da26845433cc62fb2664121983",
+          "locator": "Exact reconstruction from three signed coefficients, equations (5)–(7)"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "C6-LARGE-COHERENT-GCD-TAIL",
+        "premises": [
+          "C6-SINGULAR-PRIMITIVE-COHERENT-HEIGHT",
+          "ARITH-ERDOS943-KERNEL-GRAPH-CODEGREE",
+          "CGR-SQUARE-QUOTIENT-WEIGHTED-CYCLE-TAIL"
+        ],
+        "conclusion": "ARITH-ERDOS943-LARGE-COHERENT-GCD-TAIL",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+          "sha256": "4b07176a4b206f7a0f65de466b21c896c32e9b5546d5850bae76d59c613b8502",
+          "locator": "Common divisors on four edges; Reconstruction; The coherent gcd tail, equations (2)–(5)"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "C6-INTERMEDIATE-GCD-RESIDUAL-TO-LARGE-ROOT-DIFFERENCE-RESIDUAL",
+        "premises": [
+          "ARITH-ERDOS943-LARGE-COHERENT-GCD-TAIL",
+          "GAP-ARITH-ERDOS943-CYCLES-INTERMEDIATE-COHERENT-GCD"
+        ],
+        "conclusion": "GAP-ARITH-ERDOS943-CYCLES-LARGE-REDUCED-ROOT-DIFFERENCES",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+          "sha256": "4b07176a4b206f7a0f65de466b21c896c32e9b5546d5850bae76d59c613b8502",
+          "locator": "Theorem and final residual paragraph, split at B^(43/12)"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HESSIAN-DIRECTIONAL-CONDUCTOR-COLLISION-SCHEME",
+        "premises": [
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE"
+        ],
+        "conclusion": "HESSIAN-DIRECTIONAL-CONDUCTOR-COLLISION-SCHEME",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/GENERIC_SOURCE_LINE_TRANSVERSE_COLLISIONS.md",
+          "locator": "DirectionalConductorCollisionScheme",
+          "sha256": "ace3eefe5e1fbdb1161bf44516e85a401985b51794b48369a5510fc02e78d01f"
+        }
+      },
+      {
+        "id": "DERIVE-HESSIAN-GENERIC-SOURCE-LINE-TRANSVERSE-COLLISIONS",
+        "premises": [
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+          "HESSIAN-DIRECTIONAL-CONDUCTOR-COLLISION-SCHEME",
+          "HESSIAN-GLOBAL-CONDUCTOR-TWENTY-EXCLUSION"
+        ],
+        "conclusion": "HESSIAN-GENERIC-SOURCE-LINE-TRANSVERSE-COLLISIONS",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/GENERIC_SOURCE_LINE_TRANSVERSE_COLLISIONS.md",
+          "locator": "GenericSourceLineTransverseCollisions",
+          "sha256": "ace3eefe5e1fbdb1161bf44516e85a401985b51794b48369a5510fc02e78d01f"
+        }
+      },
+      {
+        "id": "BINARY-FIRST-CRITICAL-SHIFTED-QUARTIC-TO-TWO-DIGIT-EXCLUSION",
+        "premises": [
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-SHIFTED-QUARTIC-RESTRICTION",
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-DEEP-UPPER"
+        ],
+        "conclusion": "FACT-BINARY-PRIME-POWER-FIRST-WILD-TWO-DIGITS",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
+          "locator": "First-radius two-digit exclusion, Section 8, shifted quartic restriction and linear-axis case"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "BINARY-FIRST-CRITICAL-UPPER-PROFILES-TO-LINEAR-AXIS-EXCLUSION",
+        "premises": [
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-UPPER-PROFILES-PRECISION-FOUR",
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-FOREIGN-COLUMN"
+        ],
+        "conclusion": "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-DEEP-UPPER",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
+          "locator": "Linear-axis exclusion for exponents divisible by twenty-seven, Section 8"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION",
+        "premises": [
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+          "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
+          "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION"
+        ],
+        "conclusion": "HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_QUARTIC_TETRADECIC_EXCLUSION.md",
+          "locator": "ConductorTwentyTwoQuarticTetradecicExclusion",
+          "sha256": "4acf05ef90378a62abaac8c3eadf0594e1c901ce32d0373716a3d90279ec755d"
+        }
+      },
+      {
+        "id": "DERIVE-HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION",
+        "premises": [
+          "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+          "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
+          "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION"
+        ],
+        "conclusion": "HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_TWELVE_EIGHT_SIX_ELEVEN_EXCLUSION.md",
+          "locator": "ConductorTwentyTwoTwelveEightSixElevenExclusion",
+          "sha256": "a3f0442da8e0482c4adb78739ff9848fa06be45d6735f2779dadc00cf562fada"
+        }
+      },
+      {
+        "id": "BINARY-FIRST-CRITICAL-DIGIT-AND-DEPTH-TO-LINEAR-AXES",
+        "premises": [
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-TWO-DIGITS",
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-DEEP-UPPER",
+          "FACT-BINARY-PRIME-POWER-FIRST-WILD-UPPER-PROFILES-PRECISION-FOUR"
+        ],
+        "conclusion": "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-EXCLUSION",
+        "status": "proved",
+        "proof": {
+          "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
+          "locator": "First-radius four-window with two linear axes, Section 8, valuation-two finite profiles"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "DERIVE-HESSIAN-EXCEPTIONAL-FOLD-MINIMAL-WEIGHT-BOUNDARY-EXCLUSION",
+        "premises": [
+          "HESSIAN-EXCEPTIONAL-FOLD-WEIGHTED-DEGREE-BOUND",
+          "HESSIAN-EXCEPTIONAL-FOLD-POLYNOMIAL-ADMISSION-MODULE",
+          "HESSIAN-EXCEPTIONAL-FOLD-WHOLE-CHART-AND-IMAGE",
+          "EXT-CHAU-COMPONENT"
+        ],
+        "conclusion": "HESSIAN-EXCEPTIONAL-FOLD-MINIMAL-WEIGHT-BOUNDARY-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md",
+          "sha256": "94fa7d17b19723b81fb5e1aa4c833e6cfde26ddef1c34bbeed5cfe5ae724652f",
+          "locator": "ExceptionalFoldMinimalWeightBoundaryExclusion"
+        }
+      },
+      {
+        "id": "C6-THREE-COMPLEMENTARY-EDGES-TO-TAIL",
+        "premises": [
+          "ARITH-ERDOS943-LARGE-COHERENT-GCD-TAIL",
+          "ARITH-ERDOS943-KERNEL-GRAPH-CODEGREE",
+          "CGR-SQUARE-QUOTIENT-WEIGHTED-CYCLE-TAIL"
+        ],
+        "conclusion": "ARITH-ERDOS943-THREE-COMPLEMENTARY-EDGE-CONTINUATION",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+          "sha256": "4b07176a4b206f7a0f65de466b21c896c32e9b5546d5850bae76d59c613b8502",
+          "locator": "Congruences from three complementary edges, equations (6)–(10)"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "C6-THREE-EDGE-CONGRUENCE-RESIDUAL-TO-INTERMEDIATE-GCD",
+        "premises": [
+          "ARITH-ERDOS943-THREE-COMPLEMENTARY-EDGE-CONTINUATION",
+          "GAP-ARITH-ERDOS943-CYCLES-THREE-EDGE-CONGRUENCE-RESIDUAL"
+        ],
+        "conclusion": "GAP-ARITH-ERDOS943-CYCLES-INTERMEDIATE-COHERENT-GCD",
+        "status": "proved",
+        "proof": {
+          "path": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+          "sha256": "4b07176a4b206f7a0f65de466b21c896c32e9b5546d5850bae76d59c613b8502",
+          "locator": "Corollaries (8) and (10) bound the removed singular sectors"
+        },
+        "dependency_coverage": "partial"
+      },
+      {
+        "id": "UNIFORM-PLANE-GRAPH-BOUND-TO-FAITHFUL-BOUNDED-FAMILY",
+        "premises": [
+          "DIX-GAP-PLANE-KELLER-GRAPH-TWO-DEGREE-LM",
+          "DIXMIER-PLANE-KELLER-GRAPH-TWO-DEGREE-LM"
+        ],
+        "conclusion": "DIX-GAP-PLANE-KELLER-GRAPH-FAITHFUL-BOUNDED-FAMILY",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+          "sha256": "5d8134b6a5a60526573cf25e89d28b0f4ae1d9153768119f074c17a43d388f45",
+          "locator": "UniformPlaneGraphBoundSuppliesFaithfulFamilies"
+        }
+      },
+      {
+        "id": "KF-GENERALIZED-DC1-TO-ORDINARY-DC1",
+        "premises": [
+          "GOAL-DIX-GENERALIZED-DC1"
+        ],
+        "conclusion": "GOAL-DC1",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+          "sha256": "5d8134b6a5a60526573cf25e89d28b0f4ae1d9153768119f074c17a43d388f45",
+          "locator": "Opening definition, with D=A"
         }
       }
     ],
@@ -433059,7 +433969,8 @@
           "DIX-GAP-RANK2-BOUNDED-GAUGE",
           "JAC-GAP-DERIVATIVE-INTEGRALITY",
           "GAP-HESSIAN-AUTOMATIC-ONE-VELOCITY-CODIFFERENT",
-          "GOAL-DIX-RANK2-POSITIONAL"
+          "GOAL-DIX-RANK2-POSITIONAL",
+          "GOAL-DIX-GENERALIZED-DC1"
         ],
         "directions": [
           {
@@ -433346,6 +434257,36 @@
               "locator": "Section 6, converse via (3): for a polynomial inverse B=R=S, hence y in S and P*_x in Lambda"
             },
             "dependency_coverage": "partial"
+          },
+          {
+            "id": "JC2-TO-KF-GENERALIZED-DC1",
+            "premises": [
+              "GOAL-JC2"
+            ],
+            "conclusion": "GOAL-DIX-GENERALIZED-DC1",
+            "status": "proved",
+            "dependency_coverage": "complete",
+            "proof": {
+              "path": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+              "sha256": "5d8134b6a5a60526573cf25e89d28b0f4ae1d9153768119f074c17a43d388f45",
+              "locator": "PlaneJacobianToGeneralizedDixmierTransfer"
+            }
+          },
+          {
+            "id": "KF-GENERALIZED-DC1-AND-FAITHFUL-GRAPHS-TO-JC2",
+            "premises": [
+              "GOAL-DIX-GENERALIZED-DC1",
+              "DIX-GAP-PLANE-KELLER-GRAPH-FAITHFUL-BOUNDED-FAMILY",
+              "DIX-EXT-KF-FAITHFUL-GRAPH-REALIZATION"
+            ],
+            "conclusion": "GOAL-JC2",
+            "status": "proved",
+            "dependency_coverage": "complete",
+            "proof": {
+              "path": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+              "sha256": "5d8134b6a5a60526573cf25e89d28b0f4ae1d9153768119f074c17a43d388f45",
+              "locator": "FaithfulBoundedGraphsGeneralizedDixmierTransfer"
+            }
           }
         ]
       },
@@ -440137,7 +441078,7 @@
             "status": "proved",
             "proof": {
               "path": "jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md",
-              "sha256": "53e1dfa05e1c8b19ce503e0d7ae66d73fa75198ce343d780b406ce571715b649",
+              "sha256": "852adfe298f747444745c595f5b547629680845f119df44f507eb06c207640ef",
               "locator": "Condition 1 to condition 2, nonzero universal coefficients give exact-degree triangular witnesses"
             },
             "dependency_coverage": "partial"
@@ -440153,7 +441094,7 @@
             "status": "proved",
             "proof": {
               "path": "jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md",
-              "sha256": "53e1dfa05e1c8b19ce503e0d7ae66d73fa75198ce343d780b406ce571715b649",
+              "sha256": "852adfe298f747444745c595f5b547629680845f119df44f507eb06c207640ef",
               "locator": "Condition 2 to condition 1, quadratic propagation at K=104 and evaluation"
             },
             "dependency_coverage": "partial"
@@ -445514,6 +446455,16 @@
                 "DIXMIER-PLANE-KELLER-GRAPH-FIXED-CHARACTERISTIC-UNIFORMITY",
                 "DIX-PLANE-GRAPH-LARGE-CHARACTERISTIC-SINGLE-DEGREE"
               ]
+            },
+            {
+              "path": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+              "locator": "Proposition 4.3 and Corollary 1.10, including the proof in Section 5.4",
+              "role": "mathematical_input",
+              "nodes": [
+                "DIX-KF-JC2-TO-GENERALIZED-DC1",
+                "DIX-KF-FAITHFUL-BOUNDED-GRAPH-TRANSFER",
+                "DIX-KF-UNIFORM-BOUND-TO-FAITHFUL-FAMILIES"
+              ]
             }
           ],
           "verification": "source_read",
@@ -445713,6 +446664,15 @@
               "role": "mathematical_input",
               "nodes": [
                 "HESSIAN-COORDINATE-CONDUCTOR-BASE"
+              ]
+            },
+            {
+              "path": "hessian/hc4-triangular-graphs/DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md",
+              "locator": "The fixed line, application of Theorem 1.1",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-GWOZDZIEWICZ-ONE-LINE",
+                "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
               ]
             }
           ],
@@ -502700,6 +503660,33 @@
                 "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
                 "HESSIAN-CONDUCTOR-TWENTY-TWO-CHARACTERISTIC-SEQUENCES"
               ]
+            },
+            {
+              "path": "hessian/hc4-triangular-graphs/DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md",
+              "locator": "The degree sequence and the first approximate root",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
+                "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
+              ]
+            },
+            {
+              "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_QUARTIC_TETRADECIC_EXCLUSION.md",
+              "locator": "Approximate-root identities",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
+                "HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION"
+              ]
+            },
+            {
+              "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_TWELVE_EIGHT_SIX_ELEVEN_EXCLUSION.md",
+              "locator": "Approximate-root identities",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
+                "HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION"
+              ]
             }
           ],
           "verification": "source_read",
@@ -502712,24 +503699,28 @@
         {
           "id": "REF-QUARTIC-KELLER-MAPS-AND-TAMENESS-IN-THREE-VARIABLES-0F32F201",
           "title": "Quartic Keller Maps and Tameness in Three Variables",
-          "citation": "Quartic Keller Maps and Tameness in Three Variables",
+          "citation": "Jie Wang and Dan Yan, Quartic Keller Maps and Tameness in Three Variables, arXiv:2610.36495v1 (2026).",
           "urls": [
-            "https://borowiecki.dev/pdf/2610.36495"
+            "https://borowiecki.dev/pdf/2610.36495",
+            "https://arxiv.org/pdf/2610.36495v1"
           ],
           "local_sources": [],
-          "identifiers": {},
+          "identifiers": {
+            "arxiv": "2610.36495"
+          },
           "uses": [
             {
               "path": "jacobian/monodromy-theory/QUINTIC_VERONESE_LEADING_RESIDUAL.md",
-              "locator": "Quartic Keller Maps and Tameness in Three Variables attested at line 5",
-              "role": "application_unverified",
+              "locator": "Introduction, quartic context for the degree-five residual",
+              "role": "context",
               "nodes": []
             }
           ],
-          "verification": "citation_only",
+          "verification": "source_read",
           "resource_type": "paper",
-          "title_status": "citation_label",
-          "verification_basis": "Authored citation identity or locator. Mathematical application and proof review remain separate."
+          "title_status": "source_title",
+          "verification_basis": "Primary v1 theorem statements and relevant passages inspected. The proof and higher-degree cases have separate assurance.",
+          "retained_review_scope": "Section 2.1 on ordinary total degree, Theorems 1.1, 3.1 and 4.1 on the quartic range, Corollary 3.19 and Remark 5.1 on descent."
         },
         {
           "id": "EXT-PAPER-JC2-GIRAUDIN-2611-00709V1",
@@ -503439,12 +504430,20 @@
                 "GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT"
               ],
               "role": "context"
+            },
+            {
+              "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+              "locator": "Proposition 10.1, two-term excess lower bound for starts p^r-2",
+              "nodes": [
+                "FACT-ERDOS404-LARGE-FINITE-EXCESS"
+              ],
+              "role": "context"
             }
           ],
           "verification": "source_read",
           "resource_type": "paper",
           "title_status": "source_title",
-          "verification_basis": "Author-uploaded primary text. Inspected the statements and proofs in §§4–5."
+          "verification_basis": "Author-uploaded primary text. Inspected Theorems 4.2 and 5.1 and Proposition 10.1. The two-term estimate does not bound the maximum from above."
         },
         {
           "id": "EXT-SINGULAR-432-LOCAL-STD",
@@ -504658,6 +505657,58 @@
           "resource_type": "paper",
           "title_status": "source_title",
           "verification_basis": "Primary statement inspected. The citation gives comparison context for the stated component."
+        },
+        {
+          "id": "EXT-PAPER-VAN-DEN-ESSEN-YU-D-RESULTANT",
+          "title": "The D-resultant, singularities and the degree of unfaithfulness",
+          "citation": "Arno van den Essen and Jie-Tai Yu, The D-resultant, singularities and the degree of unfaithfulness, Proc. Amer. Math. Soc. 125 (1997), 689–695.",
+          "identifiers": {
+            "doi": "10.1090/S0002-9939-97-03639-3"
+          },
+          "urls": [
+            "https://hub.hku.hk/bitstream/10722/156137/1/content.pdf",
+            "https://doi.org/10.1090/S0002-9939-97-03639-3"
+          ],
+          "local_sources": [],
+          "resource_type": "paper",
+          "citation_aliases": [],
+          "title_status": "source_title",
+          "verification": "source_read",
+          "verification_basis": "Primary PDF read online, including Proposition 1.1 and Theorem 2.1.",
+          "retained_review_scope": "Monic birational case of Proposition 1.1 and the generated-field hypothesis.",
+          "uses": [
+            {
+              "path": "hessian/hc4-triangular-graphs/GENERIC_SOURCE_LINE_TRANSVERSE_COLLISIONS.md",
+              "locator": "The divided differences and the conductor",
+              "role": "context",
+              "nodes": [
+                "HESSIAN-DIRECTIONAL-CONDUCTOR-COLLISION-SCHEME"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "REF-FACT-ERDOS-GRAHAM-PROBLEM404-1980",
+          "title": "Old and New Problems and Results in Combinatorial Number Theory",
+          "citation": "Paul Erdős and Ronald L. Graham, Monographies de L'Enseignement Mathématique 28, 1980, printed pp. 79–80.",
+          "urls": [
+            "https://mathweb.ucsd.edu/~ronspubs/80_11_number_theory.pdf"
+          ],
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
+              "locator": "Opening scope and quantifiers for the existence question",
+              "role": "context",
+              "nodes": [
+                "GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE",
+                "FACT-ERDOS404-LARGE-FINITE-EXCESS"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "resource_type": "book",
+          "verification_basis": "Inspected the original printed pp. 79–80. The infinitude question allows any prime and any positive starting index."
         }
       ],
       "internal_citations": [
@@ -531571,13 +532622,15 @@
         },
         {
           "path": "arithmetic/ALTERNATING_WEIGHTED_COVERS_PRIORITY_AND_OPTIMAL_HASSE.md",
-          "sha256": "a736c05ab2e80100cc0768e722898ed90d84eeebb56d3fa46cbcb0865bfd04c2",
+          "sha256": "54efe5d04574d0c43c4e66719135bdcfd5ecec68f28db312d1cb9b4efaa90823",
           "role": "proof",
           "claims": [
             "ARITH-UNIFORM-ALTERNATING-WEIGHTED-EQUALITY",
             "ARITH-UNIFORM-MINIMUM-RANK-ALTERNATING-HASSE-FAMILIES"
           ],
-          "dependencies": [],
+          "dependencies": [
+            "JAC-UNIFORM-FIXED-A3-ARALA-HASSE-FAMILIES"
+          ],
           "gaps": [],
           "statements": [
             {
@@ -540741,7 +541794,7 @@
         },
         {
           "path": "arithmetic/KNOT_HURWITZ_KELLER_MOONSHOT_AUDIT.md",
-          "sha256": "541b925d8540280bd1c16c2831724a586601d24ff7f6a7f757dec6e4baf22796",
+          "sha256": "a8fa22162d1746bc89040dd913cc952c30398edd83065c68174d1e29a6b6003e",
           "role": "scope",
           "claims": [
             "MRC-PRIME-FIVE-BRIDGE-AUGMENTATION-GAP",
@@ -540811,7 +541864,8 @@
             "ARITH-D5-ORDERED-ONE-VERTEX-LOBE-TREE",
             "ARITH-UNIFORM-TWO-LEAF-DT-ABSORPTION",
             "ARITH-D5-BUFFERED-BOUQUET-AND-TREE-REACHABILITY",
-            "ARITH-DEGREE26-UNIFORM-TRACE-DENOMINATOR-RESTRICTIONS"
+            "ARITH-DEGREE26-UNIFORM-TRACE-DENOMINATOR-RESTRICTIONS",
+            "JAC-UNIFORM-FIXED-A3-ARALA-HASSE-FAMILIES"
           ],
           "dependencies": [],
           "gaps": [
@@ -540894,12 +541948,14 @@
         },
         {
           "path": "arithmetic/MINIMUM_TOTAL_DEGREES_ALTERNATING_PRIME_HALVES.md",
-          "sha256": "62c2ab86a85c1bc5512cbc02834e2a31b51a26fa3e62ff4f64b899aaf19bc572",
+          "sha256": "08d237f7881f4f85d5ed7e325ea42e9bae665c74d54bb74caf32eafc05082e49",
           "role": "proof",
           "claims": [
             "ARITH-ALTERNATING-PRIME-HALF-UNIQUE-MINIMUM"
           ],
-          "dependencies": [],
+          "dependencies": [
+            "JAC-UNIFORM-FIXED-A3-ARALA-HASSE-FAMILIES"
+          ],
           "gaps": [],
           "statements": [
             {
@@ -681842,14 +682898,15 @@
         },
         {
           "path": "jacobian/subtree-shuffling/INDEX_FOUR_FINITE_WEIGHTED_TEST.md",
-          "sha256": "53e1dfa05e1c8b19ce503e0d7ae66d73fa75198ce343d780b406ce571715b649",
+          "sha256": "852adfe298f747444745c595f5b547629680845f119df44f507eb06c207640ef",
           "role": "proof",
           "claims": [],
           "dependencies": [
             "JAC-SHUFFLE-UNIFORM-INVERSE-DEGREE",
             "JAC-SHUFFLE-QUADRATIC-INVERSE-GAP",
             "JAC-ALL-ROUND-RESTART-UNIFORMITY-EQUIVALENCE",
-            "JAC-CUBIC-INDEX-FOUR-UNIFORM-LOWER207"
+            "JAC-CUBIC-INDEX-FOUR-UNIFORM-LOWER207",
+            "JAC-CUBIC-INDEX-FOUR-GRADE104-RECURSIVE-FULL-SCAN-LOWER-SIZE"
           ],
           "gaps": [
             "GOAL-JAC-INDEX-FOUR-UNIFORM-207",
@@ -698769,18 +699826,23 @@
         },
         {
           "path": "factorial/ERDOS_404_FACTORIAL_SUMS.md",
-          "sha256": "6d647eb554d49a62157c94af9673c1c8b0a1d6294d3104f93ef5c1263e0e3516",
+          "sha256": "acf44f3c460e89de768621aa57a639e03ee591028d02deb4ef5d6a4054e1ba2c",
           "role": "proof",
           "claims": [
             "FACT-ERDOS404-THREE-ADIC-CLASS-SIX",
             "FACT-ERDOS404-LOCAL-BLOCKS",
-            "FACT-ERDOS404-MIDGAP-CORRECTION-SIZE"
+            "FACT-ERDOS404-MIDGAP-CORRECTION-SIZE",
+            "FACT-ERDOS404-FULL-COVERAGE-BELOW-FIRST-SIZE-NINE",
+            "FACT-ERDOS404-LARGE-FINITE-EXCESS",
+            "FACT-ERDOS404-DYADIC-TAIL-OBSTRUCTION",
+            "FACT-ERDOS404-MINIMUM-COVERING-LOOKBACK"
           ],
           "dependencies": [],
           "gaps": [
             "GAP-FACT-ERDOS404-UNIFORM-FIVE-ADIC-CARRY-INVARIANT",
             "GAP-FACT-ERDOS404-F-ONE-FIVE-INFINITE",
-            "GAP-FACT-ERDOS404-INFINITE-SEQUENCE"
+            "GAP-FACT-ERDOS404-INFINITE-SEQUENCE",
+            "GAP-FACT-ERDOS404-ANY-PRIME-INFINITE-SEQUENCE"
           ],
           "statements": [
             {
@@ -698789,9 +699851,49 @@
               "nodes": [
                 "FACT-ERDOS404-MIDGAP-CORRECTION-SIZE"
               ]
+            },
+            {
+              "locator": "Proposition (Arbitrarily large finite factorial-sum excess).",
+              "title": "Proposition (Arbitrarily large finite factorial-sum excess).",
+              "line": 33,
+              "kind": "proposition",
+              "nodes": [
+                "FACT-ERDOS404-LARGE-FINITE-EXCESS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition (Dyadic tails miss a residue modulo sixteen).** For",
+              "title": "Proposition (Dyadic tails miss a residue modulo sixteen).** For",
+              "line": 122,
+              "kind": "proposition",
+              "nodes": [
+                "FACT-ERDOS404-DYADIC-TAIL-OBSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition (Minimum lookback for full residue coverage).",
+              "title": "Proposition (Minimum lookback for full residue coverage).",
+              "line": 155,
+              "kind": "proposition",
+              "nodes": [
+                "FACT-ERDOS404-MINIMUM-COVERING-LOOKBACK"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition (Full coverage below the first size-nine jump).",
+              "title": "Proposition (Full coverage below the first size-nine jump).",
+              "line": 257,
+              "kind": "proposition",
+              "nodes": [
+                "FACT-ERDOS404-FULL-COVERAGE-BELOW-FIRST-SIZE-NINE"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
-          "explanation": "Open all-precision target with compactness implication, exact local carry covering, and an all-prime lower bound on the size of signed corrections in the middle of large gaps."
+          "explanation": "Exact bounded five-adic block coverage, the all-prime finite-excess theorem, and quantitative obstructions to bounded lookback. Existence of an infinite factorial-index sequence remains open."
         },
         {
           "path": "arithmetic/ERDOS_942_COPRIME_SQUARE_INTERVALS.md",
@@ -699488,7 +700590,7 @@
         },
         {
           "path": "factorial/image-rigidity/BINARY_TWO_POLE_PRIME_POWER_CONSTANT_WINDOWS.md",
-          "sha256": "be3cdc1ddc2007baeea24cd92a80869fb46734d9d3d3596cf2f2b8cbfa088948",
+          "sha256": "6f7a9a04344d3f2f458dabf18d1de79672b03aaebd7736ac43ae54aea531e067",
           "role": "proof",
           "claims": [
             "FACT-BINARY-PRIME-POWER-RESIDUE-CONSTANT-TRANSFER",
@@ -699503,7 +700605,11 @@
             "FACT-BINARY-PRIME-POWER-SECOND-WILD-HIGH-DIGIT-STARTS",
             "FACT-BINARY-PRIME-POWER-SECOND-WILD-TWO-DIGITS",
             "FACT-BINARY-PRIME-POWER-SECOND-WILD-LOW-EVEN-DIGITS",
-            "FACT-BINARY-PRIME-POWER-FIRST-WILD-UPPER-PROFILES-PRECISION-FOUR"
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-UPPER-PROFILES-PRECISION-FOUR",
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-SHIFTED-QUARTIC-RESTRICTION",
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-TWO-DIGITS",
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-DEEP-UPPER",
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-EXCLUSION"
           ],
           "dependencies": [
             "FACTORIAL-PRIME-DIGIT-FACTORIAL-RESIDUE",
@@ -699632,6 +700738,30 @@
               "nodes": [
                 "FACT-BINARY-PRIME-POWER-FIRST-WILD-UPPER-PROFILES-PRECISION-FOUR"
               ]
+            },
+            {
+              "locator": "First-radius shifted quartic restriction.",
+              "nodes": [
+                "FACT-BINARY-PRIME-POWER-FIRST-WILD-SHIFTED-QUARTIC-RESTRICTION"
+              ]
+            },
+            {
+              "locator": "First-radius two-digit exclusion.",
+              "nodes": [
+                "FACT-BINARY-PRIME-POWER-FIRST-WILD-TWO-DIGITS"
+              ]
+            },
+            {
+              "locator": "Linear-axis exclusion for exponents divisible by twenty-seven.",
+              "nodes": [
+                "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-DEEP-UPPER"
+              ]
+            },
+            {
+              "locator": "First-radius four-window with two linear axes.",
+              "nodes": [
+                "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-EXCLUSION"
+              ]
             }
           ],
           "explanation": "In arbitrary binary degree, naturally integral nonconstant phases with two designated p-power axis slots and other unit columns satisfying condition (2) have actual-support SFC at all starts for all shifts if the native residue is nonpolynomial and the coefficient grid is prime to p. The distinct-pole criterion also applies without a grid bound when no critical truncated-exponential row cancels both poles. The latter is automatic at p=2 and, at p=3, if the squared frequency ratio differs from -1. The first critical p=3 shift is also covered on wild grids under the full modulo-three support condition."
@@ -699650,7 +700780,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_OCTIC_CONDUCTOR_EXCLUSION.md",
-          "sha256": "16fc9af01ac3adb6b2fbbfbbbaa05ee1a70ce0744f51944a42b0ce94c6037c72",
+          "sha256": "6c373a8d0df1c65d2f1fcd39a01cce6522dd218ea85cdec294f320930389f3e6",
           "role": "proof",
           "claims": [
             "HESSIAN-GLOBAL-OCTIC-CONDUCTOR-EXCLUSION",
@@ -699661,7 +700791,8 @@
             "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
             "HESSIAN-CUBIC-QUINTIC-OCTIC-CONDUCTOR-EXCLUSION",
             "HESSIAN-OCTIC-CONDUCTOR-CABLE-RESIDUAL",
-            "HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION"
+            "HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -699692,7 +700823,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TEN_EXCLUSION.md",
-          "sha256": "4be5f0c70ceefdae01e48b5ff98f15266a04297474f628cc900bd4aa74dd79c9",
+          "sha256": "71cb1b87fdbaeed2c0a7205cc0f3eaf7f92c485036458e0e826d655bfa9718c0",
           "role": "proof",
           "claims": [
             "HESSIAN-GLOBAL-CONDUCTOR-TEN-EXCLUSION",
@@ -699704,7 +700835,8 @@
             "HESSIAN-GLOBAL-OCTIC-CONDUCTOR-EXCLUSION",
             "HESSIAN-HYPERELLIPTIC-OCTIC-CONDUCTOR-EXCLUSION",
             "HESSIAN-CUBIC-QUINTIC-OCTIC-CONDUCTOR-EXCLUSION",
-            "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION"
+            "HESSIAN-GLOBAL-CONDUCTOR-TWELVE-EXCLUSION",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -699873,7 +701005,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_TWELVE_EXCLUSION.md",
-          "sha256": "44e41a3cb65bb8f61accb48ffb283c7c09af97546fe764c3f039690efc9222c7",
+          "sha256": "4ab31f8e85f4069d563e08e004df4ee0ed32890805a00531e3e03f6c62686b94",
           "role": "proof",
           "claims": [
             "HESSIAN-CONDUCTOR-TWELVE-CHARACTERISTIC-SEQUENCES",
@@ -699888,7 +701020,8 @@
             "HESSIAN-CONDUCTOR-TWELVE-QUARTIC-QUINTIC-EXCLUSION",
             "HESSIAN-CONDUCTOR-TWELVE-CABLE-EXCLUSIONS",
             "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
-            "HESSIAN-GLOBAL-CONDUCTOR-FOURTEEN-EXCLUSION"
+            "HESSIAN-GLOBAL-CONDUCTOR-FOURTEEN-EXCLUSION",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -699976,6 +701109,21 @@
           "gaps": [],
           "statements": [],
           "explanation": "Exact Python 3.12 finite zero-run signatures and linked moment row reductions with exactly two ternary ones. Tests (17,3), (20,3), (20,4), (20,38/9), (23,3), (23,4), and (23,37/9) as start and valuation cutoff pairs."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_binary_shifted_quartic_first_radius.py",
+          "sha256": "98ba10de10d71372e4f0cd5bf01612315e2e1991c5bad170d69df1e2b56b7356",
+          "role": "evidence",
+          "claims": [
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-SHIFTED-QUARTIC-RESTRICTION",
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-TWO-DIGITS",
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-DEEP-UPPER",
+            "FACT-BINARY-PRIME-POWER-FIRST-WILD-LINEAR-AXES-EXCLUSION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact Python 3.12 shifted quartic and linear-axis checks. Includes 972 precision-four and 648 precision-seven shifted quartic cases, the uniform derivative through 2187 starting residues and insertion weight bounds, and the final linear-axis valuation-two filters on 702 coarse profiles and 1548 refinements."
         },
         {
           "path": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_WEIGHTED_JACOBIAN_OBSTRUCTION.md",
@@ -700264,13 +701412,14 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md",
-          "sha256": "f8bcd64c6e9b11769caabcd2a11d3cb4ae271044bcd4941d27cfe5ad06d20cc4",
+          "sha256": "c7e8681faeb131e80bcc867e03e146c6390aaf541cb62910253df941b45b3aab",
           "role": "proof",
           "claims": [
             "HESSIAN-HYPERELLIPTIC-TARGET-COORDINATE-EXCLUSION"
           ],
           "dependencies": [
-            "HESSIAN-COORDINATE-CONDUCTOR-BASE"
+            "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -700470,7 +701619,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/CONDUCTOR_FOURTEEN_HYPERELLIPTIC_EMBEDDINGS.md",
-          "sha256": "b7662a91f6a2f0176fda1612f4384508e0f815f24a01dd098333725d1d392137",
+          "sha256": "81812f1860f28d4c5393883ddd9bb09a6c64f422d3f1cf3056b7f4c9ce3bcd74",
           "role": "proof",
           "claims": [
             "HESSIAN-CONDUCTOR-FOURTEEN-HYPERELLIPTIC-EMBEDDING-EXCLUSION"
@@ -700479,7 +701628,8 @@
             "HESSIAN-COORDINATE-CONDUCTOR-BASE",
             "HESSIAN-CONDUCTOR-FOURTEEN-CHARACTERISTIC-SEQUENCES",
             "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
-            "EVIDENCE-HESSIAN-CONDUCTOR-FOURTEEN-HYPERELLIPTIC-EMBEDDING-EXCLUSION"
+            "EVIDENCE-HESSIAN-CONDUCTOR-FOURTEEN-HYPERELLIPTIC-EMBEDDING-EXCLUSION",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
           ],
           "gaps": [],
           "explanation": "(15,6,2) and (15,10,2) are excluded in the exact generic order. A degree-two approximate root gives a square and polynomial composition identity, and exact unit-ideal certificates exclude all ten scaling charts over characteristic zero.",
@@ -700673,7 +701823,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_FOURTEEN_EXCLUSION.md",
-          "sha256": "3e2e0f980fe9da90236624cd08d27418d1d78e40065a49daa753d9144f091bfe",
+          "sha256": "19086c1ef1d4010bbffa27d49b9dcee5d2f9b7382ad297e2171158f685719535",
           "role": "proof",
           "claims": [
             "HESSIAN-GLOBAL-CONDUCTOR-FOURTEEN-EXCLUSION",
@@ -700693,7 +701843,8 @@
             "HESSIAN-CONDUCTOR-FOURTEEN-DEGREE-NINE-CABLE-EXCLUSION",
             "HESSIAN-CONDUCTOR-FOURTEEN-QUARTIC-DECIC-EXCLUSION",
             "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
-            "HESSIAN-GLOBAL-CONDUCTOR-SIXTEEN-EXCLUSION"
+            "HESSIAN-GLOBAL-CONDUCTOR-SIXTEEN-EXCLUSION",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -700713,7 +701864,7 @@
             {
               "locator": "Proposition ConductorSixteenCharacteristicSequences.",
               "kind": "proposition",
-              "line": 52,
+              "line": 57,
               "title": "Proposition ConductorSixteenCharacteristicSequences.",
               "nodes": [
                 "HESSIAN-CONDUCTOR-SIXTEEN-CHARACTERISTIC-SEQUENCES"
@@ -701030,7 +702181,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/GLOBAL_CONDUCTOR_SIXTEEN_EXCLUSION.md",
-          "sha256": "db7490109ce7b49b2f16b752dec738615f1d4be827ec67983aafdb0342e9ef1c",
+          "sha256": "a776802e7e66382a288070a3dff079a73524bc05214ffbb3e4c203bbb6756bcc",
           "role": "proof",
           "claims": [
             "HESSIAN-GLOBAL-CONDUCTOR-SIXTEEN-EXCLUSION",
@@ -701048,7 +702199,8 @@
             "HESSIAN-DIRECTIONAL-THREE-TWO-LAURENT-EXCLUSION",
             "HESSIAN-CONDUCTOR-EIGHTEEN-THREE-STAGE-EXCLUSION",
             "HESSIAN-CONDUCTOR-EIGHTEEN-CUBIC-NORM-EXCLUSION",
-            "HESSIAN-CONDUCTOR-EIGHTEEN-FILTERED-PARAMETER-EXCLUSIONS"
+            "HESSIAN-CONDUCTOR-EIGHTEEN-FILTERED-PARAMETER-EXCLUSIONS",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -701286,7 +702438,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_CHARACTERISTIC_SEQUENCES.md",
-          "sha256": "63966bcd023a23f52df577209fe983c305d8fd91ff2e4c9e60caf20c34f3e727",
+          "sha256": "08a9196fe069c4265ffc498aed91a9b3cd3e770e7f6494902145893d611c6983",
           "role": "proof",
           "claims": [
             "HESSIAN-CONDUCTOR-TWENTY-CHARACTERISTIC-SEQUENCES",
@@ -701301,7 +702453,8 @@
             "HESSIAN-CONDUCTOR-TWENTY-FILTERED-PARAMETER-EXCLUSIONS",
             "HESSIAN-CONDUCTOR-TWENTY-THREE-STAGE-EXCLUSION",
             "HESSIAN-CONDUCTOR-TWENTY-TWELVE-EIGHT-FIVE-EXCLUSION",
-            "HESSIAN-CONDUCTOR-TWENTY-TWELVE-EIGHT-TEN-FIVE-EXCLUSION"
+            "HESSIAN-CONDUCTOR-TWENTY-TWELVE-EIGHT-TEN-FIVE-EXCLUSION",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
@@ -701389,17 +702542,20 @@
         },
         {
           "path": "arithmetic/ABC_COHERENT_NORM_PENCILS.md",
-          "sha256": "0eb8a2a8745ce96bb7bb0b3f3920e4fd4183ed531857e5e905ef10585da34685",
+          "sha256": "1130a38ec6ac8fe9c94354b9e05414dcd02d67da26845433cc62fb2664121983",
           "role": "proof",
           "claims": [
             "ARITH-ABC-COHERENT-NORM-CUBE-CLASS-COMPLETIONS",
             "ARITH-ABC-COHERENT-NORM-PENCIL-IDENTITIES",
-            "ARITH-ABC-COHERENT-NORM-PENCIL-EXAMPLES"
+            "ARITH-ABC-COHERENT-NORM-PENCIL-EXAMPLES",
+            "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION",
+            "ARITH-ABC-COHERENT-NORM-RANK-ONE-CENSUS"
           ],
           "dependencies": [
             "EXT-WALSH-COEFFICIENT-SENSITIVE-PLANE-CURVES",
             "ARITH-ABC-COHERENT-LINKED-SPLIT-PRIME-WITNESSES-VIA-FERMAT-CUBES",
-            "EXT-ABC-FERMAT-EXPONENT-THREE"
+            "EXT-ABC-FERMAT-EXPONENT-THREE",
+            "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION"
           ],
           "gaps": [
             "GAP-ARITH-ABC-OCCUPIED-RANK-ONE-NORM-RECORDS"
@@ -701414,13 +702570,23 @@
                 "ARITH-ABC-COHERENT-NORM-CUBE-CLASS-COMPLETIONS"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition.** Let \\(p_1,p_2,p_3\\) be distinct odd primes, \\(P_i=p_i^3\\), and \\(x,y,z\\) be nonzero signed, pairwise coprime integers with",
+              "kind": "proposition",
+              "line": 56,
+              "title": "Proposition.** Let \\(p_1,p_2,p_3\\) be distinct odd primes, \\(P_i=p_i^3\\), and \\(x,y,z\\) be nonzero signed, pairwise coprime integers with",
+              "nodes": [
+                "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
           "explanation": "Pencil identities, fixed cube-class count, local partitions and exact limits of the rank-one application."
         },
         {
           "path": "arithmetic/verify_coherent_norm_pencils.py",
-          "sha256": "aa9034a61a8ebcfc7a4ac00e3e3421180a52358532b5f4eaff2512357cd806b6",
+          "sha256": "cfca525f3e7bc35780727c71cc29a45af949bae04eddca4bef1ca64ae6ba7ba9",
           "role": "evidence",
           "claims": [
             "ARITH-ABC-COHERENT-NORM-PENCIL-EXAMPLES"
@@ -701757,7 +702923,7 @@
         },
         {
           "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_CHARACTERISTIC_SEQUENCES.md",
-          "sha256": "6ce4ebea4b540af61517a9eb7150802ed6e4946db00d74717b73014f2e3f0cd9",
+          "sha256": "e9d822c6a18949e59145cb2ad2a43c99986f6639f572d11ea597890ba7cdbb10",
           "role": "proof",
           "claims": [
             "HESSIAN-CONDUCTOR-TWENTY-TWO-CHARACTERISTIC-SEQUENCES",
@@ -701768,12 +702934,15 @@
             "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
             "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-CHARACTERISTIC-SEQUENCES",
             "HESSIAN-HYPERELLIPTIC-TARGET-COORDINATE-EXCLUSION",
-            "HESSIAN-DIRECTIONAL-THREE-TWO-LAURENT-EXCLUSION"
+            "HESSIAN-DIRECTIONAL-THREE-TWO-LAURENT-EXCLUSION",
+            "HESSIAN-DIRECTIONAL-DEGREE-TWO-ELEMENT-EXCLUSION",
+            "HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION",
+            "HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION"
           ],
           "gaps": [
             "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
           ],
-          "explanation": "Exact characteristic-sequence enumeration and two immediate exclusions.",
+          "explanation": "Exact necessary characteristic-sequence enumeration and exclusion of four branches.",
           "statements": [
             {
               "locator": "Proposition ConductorTwentyTwoCharacteristicSequences.** Suppose",
@@ -701782,6 +702951,297 @@
               "title": "Proposition ConductorTwentyTwoCharacteristicSequences.** Suppose",
               "nodes": [
                 "HESSIAN-CONDUCTOR-TWENTY-TWO-CHARACTERISTIC-SEQUENCES"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ]
+        },
+        {
+          "path": "arithmetic/ERDOS_943_LARGE_COHERENT_GCD_CYCLES.md",
+          "sha256": "4b07176a4b206f7a0f65de466b21c896c32e9b5546d5850bae76d59c613b8502",
+          "role": "proof",
+          "claims": [
+            "ARITH-ERDOS943-LARGE-COHERENT-GCD-TAIL",
+            "ARITH-ERDOS943-THREE-COMPLEMENTARY-EDGE-CONTINUATION"
+          ],
+          "dependencies": [
+            "C6-SINGULAR-PRIMITIVE-COHERENT-HEIGHT",
+            "ARITH-ERDOS943-KERNEL-GRAPH-CODEGREE",
+            "CGR-SQUARE-QUOTIENT-WEIGHTED-CYCLE-TAIL"
+          ],
+          "gaps": [
+            "GAP-ARITH-ERDOS943-CYCLES-INTERMEDIATE-COHERENT-GCD",
+            "GAP-ARITH-ERDOS943-CYCLES-LARGE-REDUCED-ROOT-DIFFERENCES",
+            "GAP-ARITH-ERDOS943-CYCLES-THREE-EDGE-CONGRUENCE-RESIDUAL"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem.** Uniformly in the target and every \\(G\\ge1\\),",
+              "kind": "theorem",
+              "line": 4,
+              "title": "Theorem.** Uniformly in the target and every \\(G\\ge1\\),",
+              "nodes": [
+                "ARITH-ERDOS943-LARGE-COHERENT-GCD-TAIL"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition (Three-edge continuation).** Given the first two actual selected edges of the path, and prescribed values \\(f=F_{v_{i+2}}\\), \\(K=K_i\\), the possible third edges in singular cycles lie in \\(O_\\varepsilon(N^\\varepsilon)\\) residue classes for their root at \\(v_{i+2}\\) modulo \\((fK)^2\\). Consequently the number of such edges is \\(O_\\varepsilon(N^\\varepsilon(1+B/(fK)^2))\\). Summing over the possible \\(f,K\\) incurs only divisor-many branches. The reverse statement uses \\(F_{v_{i+1}}\\) and the same \\(K_i\\).",
+              "kind": "proposition",
+              "line": 80,
+              "title": "Proposition (Three-edge continuation).** Given the first two actual selected edges of the path, and prescribed values \\(f=F_{v_{i+2}}\\), \\(K=K_i\\), the possible third edges in singular cycles lie in \\(O_\\varepsilon(N^\\varepsilon)\\) residue classes for their root at \\(v_{i+2}\\) modulo \\((fK)^2\\). Consequently the number of such edges is \\(O_\\varepsilon(N^\\varepsilon(1+B/(fK)^2))\\). Summing over the possible \\(f,K\\) incurs only divisor-many branches. The reverse statement uses \\(F_{v_{i+1}}\\) and the same \\(K_i\\).",
+              "nodes": [
+                "ARITH-ERDOS943-THREE-COMPLEMENTARY-EDGE-CONTINUATION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary (Two successive continuations).** Singular cycles for which for some \\(i\\)",
+              "kind": "corollary",
+              "line": 100,
+              "title": "Corollary (Two successive continuations).** Singular cycles for which for some \\(i\\)",
+              "nodes": [
+                "ARITH-ERDOS943-THREE-COMPLEMENTARY-EDGE-CONTINUATION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary (Refined coherent gcd tail).** For \\(G\\ge B^{10/3}\\), the number of singular cycles at \\(g_*\\ge G\\) is",
+              "kind": "corollary",
+              "line": 120,
+              "title": "Corollary (Refined coherent gcd tail).** For \\(G\\ge B^{10/3}\\), the number of singular cycles at \\(g_*\\ge G\\) is",
+              "nodes": [
+                "ARITH-ERDOS943-THREE-COMPLEMENTARY-EDGE-CONTINUATION"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Prime-level support, one- and two-step root congruence propagation, and both upper tails in the high coherent gcd sector."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/GENERIC_SOURCE_LINE_TRANSVERSE_COLLISIONS.md",
+          "sha256": "ace3eefe5e1fbdb1161bf44516e85a401985b51794b48369a5510fc02e78d01f",
+          "role": "proof",
+          "claims": [
+            "HESSIAN-DIRECTIONAL-CONDUCTOR-COLLISION-SCHEME",
+            "HESSIAN-GENERIC-SOURCE-LINE-TRANSVERSE-COLLISIONS"
+          ],
+          "dependencies": [
+            "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+            "HESSIAN-GLOBAL-CONDUCTOR-TWENTY-EXCLUSION"
+          ],
+          "gaps": [
+            "GAP-HESSIAN-HIGHER-COORDINATE-CONDUCTORS"
+          ],
+          "statements": [
+            {
+              "locator": "Theorem DirectionalConductorCollisionScheme.** Let \\(F=(P,Q)\\) be",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem DirectionalConductorCollisionScheme.** Let \\(F=(P,Q)\\) be",
+              "nodes": [
+                "HESSIAN-DIRECTIONAL-CONDUCTOR-COLLISION-SCHEME"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem GenericSourceLineTransverseCollisions.** For a complex plane",
+              "kind": "theorem",
+              "line": 13,
+              "title": "Theorem GenericSourceLineTransverseCollisions.** For a complex plane",
+              "nodes": [
+                "HESSIAN-GENERIC-SOURCE-LINE-TRANSVERSE-COLLISIONS"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Exact resultant and Fitting interpretation on each line, with reduced generic joining-line fibres and the current unordered count."
+        },
+        {
+          "path": "factorial/verify_erdos404_large_blocks.cpp",
+          "sha256": "9839d2f97191f3eb57f6c75f8bcd9201352472c0276b52665b25932ca9ab5a1f",
+          "role": "evidence",
+          "claims": [
+            "FACT-ERDOS404-FULL-COVERAGE-BELOW-FIRST-SIZE-NINE"
+          ],
+          "dependencies": [
+            "FACT-ERDOS404-LOCAL-BLOCKS"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact cyclic bitset and split-prefix update for larger jumps below 5^9 in replay mode 9, with two negative controls. Run jointly with the existing small-jump verifier."
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_QUARTIC_TETRADECIC_EXCLUSION.md",
+          "sha256": "4acf05ef90378a62abaac8c3eadf0594e1c901ce32d0373716a3d90279ec755d",
+          "role": "proof",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION"
+          ],
+          "dependencies": [
+            "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+            "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
+            "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION"
+          ],
+          "gaps": [],
+          "explanation": "Exact square-root, collision and scale equations exclude both inhomogeneous cases, and the singular tangent determinant excludes the fixed homogeneous order.",
+          "statements": [
+            {
+              "locator": "Theorem ConductorTwentyTwoQuarticTetradecicExclusion.** Let \\(F=(P,Q)\\)",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem ConductorTwentyTwoQuarticTetradecicExclusion.** Let \\(F=(P,Q)\\)",
+              "nodes": [
+                "HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ]
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/verify_conductor_twenty_two_quartic_tetradecic_exclusion.py",
+          "sha256": "d394920c887623e62071356eb6b0e5a252ef41edaf8024cf1b45c4f7aa0fb07b",
+          "role": "evidence",
+          "claims": [
+            "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION",
+            "HESSIAN-CONDUCTOR-TWENTY-TWO-QUARTIC-TETRADECIC-EXCLUSION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "explanation": "Exact square-root, collision and scale equations exclude both inhomogeneous cases, and the singular tangent determinant excludes the fixed homogeneous order.",
+          "statements": []
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/CONDUCTOR_TWENTY_TWO_TWELVE_EIGHT_SIX_ELEVEN_EXCLUSION.md",
+          "sha256": "a3f0442da8e0482c4adb78739ff9848fa06be45d6735f2779dadc00cf562fada",
+          "role": "proof",
+          "claims": [
+            "HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION"
+          ],
+          "dependencies": [
+            "HESSIAN-COORDINATE-CONDUCTOR-BASE",
+            "EXT-ASSI-GARCIA-SANCHEZ-ONE-PLACE-SEMIGROUP",
+            "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION"
+          ],
+          "gaps": [],
+          "explanation": "The two constant Laurent coefficients force a rational parameter on a nine-sheeted curve of positive genus, contradicting the nonconstant parameter Jacobian.",
+          "statements": [
+            {
+              "locator": "Theorem ConductorTwentyTwoTwelveEightSixElevenExclusion.** Let",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem ConductorTwentyTwoTwelveEightSixElevenExclusion.** Let",
+              "nodes": [
+                "HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ]
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/verify_conductor_twenty_two_twelve_eight_six_eleven_exclusion.py",
+          "sha256": "9656e2fb430bd3dbc2c5e0beb996c834dc3964995990cf6352c20bd3c6169b42",
+          "role": "evidence",
+          "claims": [
+            "EVIDENCE-HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION",
+            "HESSIAN-CONDUCTOR-TWENTY-TWO-TWELVE-EIGHT-SIX-ELEVEN-EXCLUSION"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "explanation": "The two constant Laurent coefficients force a rational parameter on a nine-sheeted curve of positive genus, contradicting the nonconstant parameter Jacobian.",
+          "statements": []
+        },
+        {
+          "path": "hessian/hc4-triangular-graphs/EXCEPTIONAL_FOLD_MINIMAL_WEIGHT_BOUNDARY_EXCLUSION.md",
+          "sha256": "94fa7d17b19723b81fb5e1aa4c833e6cfde26ddef1c34bbeed5cfe5ae724652f",
+          "role": "proof",
+          "claims": [
+            "HESSIAN-EXCEPTIONAL-FOLD-MINIMAL-WEIGHT-BOUNDARY-EXCLUSION"
+          ],
+          "dependencies": [
+            "HESSIAN-EXCEPTIONAL-FOLD-WEIGHTED-DEGREE-BOUND",
+            "HESSIAN-EXCEPTIONAL-FOLD-POLYNOMIAL-ADMISSION-MODULE",
+            "HESSIAN-EXCEPTIONAL-FOLD-WHOLE-CHART-AND-IMAGE",
+            "EXT-CHAU-COMPONENT"
+          ],
+          "gaps": [
+            "GAP-HESSIAN-RAMIFIED-POLAR-FOLD-REALIZATION"
+          ],
+          "explanation": "For an actual exceptional (2,1,5) polar fold in the full finite normalization, the maximum of the a-degrees of P and Q is at least twenty-four in the normalized polynomial source coordinates of the whole chart. The proof allows arbitrary b-degrees. It excludes the degree-eighteen first square departure and applies shifted weighted directions and exact original-source admission at higher longitudinal degrees.",
+          "statements": [
+            {
+              "locator": "Theorem (ExceptionalFoldMinimalWeightBoundaryExclusion).** Let a complex",
+              "kind": "theorem",
+              "line": 2,
+              "title": "Theorem (ExceptionalFoldMinimalWeightBoundaryExclusion).** Let a complex",
+              "nodes": [
+                "HESSIAN-EXCEPTIONAL-FOLD-MINIMAL-WEIGHT-BOUNDARY-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ]
+        },
+        {
+          "path": "arithmetic/census_coherent_norm_rank_one.cpp",
+          "sha256": "e803022fa3391d9ab8054d5e16e4cb7ad49e732d3355aec8408cec438929100d",
+          "role": "evidence",
+          "claims": [
+            "ARITH-ABC-COHERENT-NORM-RANK-ONE-CENSUS"
+          ],
+          "dependencies": [
+            "ARITH-ABC-COHERENT-NORM-TRIPLE-RECONSTRUCTION"
+          ],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Deterministic census of positive odd normalized records in the fixed crossover boxes."
+        },
+        {
+          "path": "dixmier/dixmier-formal-lifting/KANEL_BELOV_FEDOROV_FAITHFUL_GRAPH_TRANSFERS.md",
+          "sha256": "5d8134b6a5a60526573cf25e89d28b0f4ae1d9153768119f074c17a43d388f45",
+          "role": "proof",
+          "claims": [
+            "DIX-KF-JC2-TO-GENERALIZED-DC1",
+            "DIX-KF-FAITHFUL-BOUNDED-GRAPH-TRANSFER",
+            "DIX-KF-UNIFORM-BOUND-TO-FAITHFUL-FAMILIES"
+          ],
+          "dependencies": [
+            "DIX-EXT-KF-FAITHFUL-GRAPH-REALIZATION",
+            "DIXMIER-PLANE-KELLER-GRAPH-TWO-DEGREE-LM"
+          ],
+          "gaps": [
+            "GOAL-DIX-GENERALIZED-DC1",
+            "DIX-GAP-PLANE-KELLER-GRAPH-FAITHFUL-BOUNDED-FAMILY",
+            "DIX-GAP-PLANE-KELLER-GRAPH-TWO-DEGREE-LM"
+          ],
+          "explanation": "Exact forward and guarded reverse transfers from the retained v2 paper.",
+          "statements": [
+            {
+              "locator": "Theorem PlaneJacobianToGeneralizedDixmierTransfer.** The complex plane",
+              "kind": "theorem",
+              "line": 12,
+              "title": "Theorem PlaneJacobianToGeneralizedDixmierTransfer.** The complex plane",
+              "nodes": [
+                "DIX-KF-JC2-TO-GENERALIZED-DC1"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem FaithfulBoundedGraphsGeneralizedDixmierTransfer.** Assume",
+              "kind": "theorem",
+              "line": 33,
+              "title": "Theorem FaithfulBoundedGraphsGeneralizedDixmierTransfer.** Assume",
+              "nodes": [
+                "DIX-KF-FAITHFUL-BOUNDED-GRAPH-TRANSFER"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary UniformPlaneGraphBoundSuppliesFaithfulFamilies.** The",
+              "kind": "corollary",
+              "line": 66,
+              "title": "Corollary UniformPlaneGraphBoundSuppliesFaithfulFamilies.** The",
+              "nodes": [
+                "DIX-KF-UNIFORM-BOUND-TO-FAITHFUL-FAMILIES"
               ],
               "mapping_kind": "exact-statement"
             }

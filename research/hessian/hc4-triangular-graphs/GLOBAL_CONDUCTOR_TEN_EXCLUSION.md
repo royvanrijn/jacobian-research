@@ -57,6 +57,10 @@ since \(2r_2=6\). Thus only \((11,2)\) and \((6,4,7)\) remain.
 
 ## 2. The hyperelliptic branch \((11,2)\)
 
+The [all-degree exclusion of degree-two elements](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md)
+rules out this sequence. The following period argument gives another
+proof of the branch.
+
 Write \(u=x-h(y)\) for the centred longitudinal coordinate. The
 canonical generators are \(T=u^2\) and \(V=u g(T)\), where
 \(g(T)=\sum_{j=0}^5 a_j T^j\). Choose \(g(u^2)\) to be the

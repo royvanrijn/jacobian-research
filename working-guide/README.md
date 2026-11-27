@@ -20,7 +20,7 @@ Start with the repository [agent instructions](../AGENTS.md). This guide supplie
 | Guide | Use it for |
 |---|---|
 | [Repository workflow](REPOSITORY.md) | Choosing locations, preserving evidence, avoiding clutter, changing status, and running the existing tools. |
-| [Mathematical validity](MATHEMATICS.md) | Statement design, proof dependencies, counterexamples, computations, and formal verification. |
+| [Mathematical validity](MATHEMATICS.md) | Statement design, proof dependencies, counterexamples, and formal verification. See [when to extend a search](MATHEMATICS.md#when-to-extend-a-search) and [directional-conductor priorities](MATHEMATICS.md#directional-conductor-computations). |
 | [Writing papers](PAPERS.md) | A coherent standalone article, reliable citations, readable proofs, and avoiding documented failures in AI-assisted papers. |
 | [Review and release checklist](CHECKLIST.md) | Deciding whether a draft can move to review or an authorized submission. |
 | [Reusable records and outline](TEMPLATES.md) | Compact claim, reference, and verification records and a paper outline. Adapt these inside existing records. |

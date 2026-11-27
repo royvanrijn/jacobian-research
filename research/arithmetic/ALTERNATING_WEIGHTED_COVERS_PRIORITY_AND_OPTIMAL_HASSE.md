@@ -195,7 +195,7 @@ has rank R, a point over every completion of Q, and no Q-point.
 Every such finite etale Q-algebra split by an A_n extension has
 rank at least R. For n>=26, equality forces the displayed family.
 
-For each admissible n, one fixed polynomial Keller map of A4_Q
+For each admissible n, one fixed polynomial Keller map of A3_Q
 contains infinitely many of these minimum-rank algebras as complete
 fibres. Its generic arithmetic and geometric groups are S_R.
 
@@ -210,8 +210,8 @@ Every conjugacy class occurs as an unramified Frobenius by
 [Chebotarev's theorem, Lenstra's notes, Theorem3.1,p3](sources/lenstra-chebotarev-density-notes.pdf).
 Local solubility therefore makes those subgroup classes cover A_n.
 TheoremA proves the minimum rank, and TheoremC classifies equality
-when n>=26. Corollary4 of the same Arala note supplies the single
-A4 map, full-fibre isomorphism and generic symmetric group. ∎
+when n>=26. Corollary5 of the same Arala note supplies the single
+A3 map, full-fibre isomorphism and generic symmetric group. ∎
 
 Thus the Arala Hasse upper bound is globally minimum also in
 admissible composite-half degrees, such as n50. The numerical

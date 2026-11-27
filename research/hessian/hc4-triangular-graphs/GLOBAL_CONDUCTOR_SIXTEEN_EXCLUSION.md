@@ -33,7 +33,7 @@ belongs to the following necessary list:
  (10,6,3),\ (9,6,7),\ (15,6,4),\ (15,10,3),\ (12,8,6,7).
 \end{gathered}
 \]
-The [degree-two target-coordinate theorem](HYPERELLIPTIC_CONDUCTORS_AND_SINGULAR_TANGENT_DETERMINANT.md)
+The [all-degree exclusion of degree-two elements](DEGREE_TWO_ELEMENTS_AND_KELLER_REFLECTION.md)
 excludes \((19,2)\). The
 [short three-to-two cable theorem](CONDUCTOR_FOURTEEN_CUBIC_ORDER_ALTERNATE_EMBEDDINGS.md)
 excludes \((15,10,3)\).
