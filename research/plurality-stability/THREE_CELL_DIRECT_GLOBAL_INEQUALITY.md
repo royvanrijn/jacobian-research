@@ -4,13 +4,16 @@ The unrestricted inequality
 \(\widetilde Q_\rho(e)\leq2L_\rho(A;T)\) remains open here.
 The exact expansion (B1) in the [continuation note](POSITIVE_CORRELATION_CONTINUATION.md)
 makes it equivalent to \(S_\rho(A)\leq S_\rho(T)\), including for
-partitions far from the simplex. Proposition DG10 gives a direct
+partitions far from the simplex. Proposition DG17 gives a direct
 computer-assisted proof for every balanced three-cell partition in every
-dimension \(d\geq2\) throughout \(0<\rho\leq11/25\), extending DG4.
+dimension \(d\geq2\) throughout \(0<\rho\leq221/500\), extending DG4
+and DG10. It isolates one adverse radial direction, limits its amplitude
+by feasibility, and pays for its positive contribution with unavoidable
+angular loss. The proof is global in partition distance.
 The [scalar-threshold argument](THREE_CELL_BEYOND_SCALAR_THRESHOLD.md),
 adopted in DG15 below, extends the direct comparison qualitatively
 past the first obstruction to that separated scalar criterion. It gives
-no new explicit numerical cutoff.
+no further explicit numerical cutoff.
 A separate [near-one result](THREE_CELL_NEAR_ONE_EXACT.md) records a qualitative
 interval adjacent to one. The full all-positive-correlation statement remains
 open; no overlap closing the intermediate range is established here. The argument also proves the comparison
@@ -2312,3 +2315,54 @@ a proof of (DG12). The unrestricted identities and obstruction use the
 written arguments above. The circular comparison imports (DG0) with the
 source-inspection limits stated above. No independent replay, formal
 verification or external mathematical review is asserted.
+
+
+## Finite-amplitude radial and angular comparison
+
+### Proposition DG17 (global comparison through rho equal to 221/500)
+
+For every ordinary balanced Gaussian three-cell partition in every
+\(d\ge2\), the direct inequalities (DG14) hold for
+\(0<\rho\le221/500=0.442\). This improves the explicit cutoff in DG10.
+It uses no continuation or closeness hypothesis.
+
+The proof is [FA1--FA7](THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md).
+On the new interval \([11/25,221/500]\), decompose the weighted circular
+mass profile into one explicit radial trial and its orthogonal remainder,
+with coefficient norm \(A\) and remainder norm \(G\). The directed
+certificate and the written Hilbert--Schmidt block argument give
+
+\[
+ \sum_i q(z_i)\le\frac{31}{10000}A^2
+          +\frac{2}{\sqrt{50000}}AG-\frac75G^2.
+\]
+
+Any profile with nonnegative scalar contribution must have
+\(A<27/1000\), since larger amplitude of the pole at the origin would
+force a correction violating this quadratic bound. Uniform angular
+coercivity on a mass cube extends to arbitrary actual profiles by charging
+the error outside the cube to the negative remainder. On an explicit
+annulus it yields
+
+\[
+ \mathcal L(p)\ge\frac3{800}A^2-\frac{20}{27}G^2.
+\]
+
+Consequently the full stability excess is bounded by
+
+\[
+ -\frac{13}{20000}A^2+\frac{2}{\sqrt{50000}}AG
+                         -\frac{89}{135}G^2\le0.
+\]
+
+The exact determinant is positive. FA7 and the
+[verification record](three_cell_finite_amplitude_verification.json)
+cover the whole new correlation interval and all integration domains,
+including analytic infinite tails. The internal full run passed in
+243.72 seconds. Together with DG10 and the same maximizer dimension
+reduction used there, this proves the stated all-partition cutoff.
+This is a finite-amplitude result on an explicit interval, not the
+all-correlation endpoint of the mode-isolation program in DG16.
+The near-one interval and the qualitative scalar-threshold extension
+remain separately scoped; no overlap closing the remaining range is
+established.

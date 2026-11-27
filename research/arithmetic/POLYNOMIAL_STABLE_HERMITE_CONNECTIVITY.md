@@ -230,9 +230,10 @@ For a fixed product, the remaining relabelings are powers of
 Thus each absolute orbit lifts to a single literal orbit as well.
 \(\square\)
 
-At \(s=p-2\), one cannot have \(k=1\): its sole branch would
-require \(M=N+1\) distinct preimages counted with multiplicity.
-The boundary theorem therefore concerns multiple branch values.
+For \(k=1\), admissibility already requires \(M\le N\):
+its sole branch has \(M\) prescribed preimages counted with
+multiplicity. Every case using the moment equations therefore
+involves multiple non-transposition branch values.
 
 ## Theorem K3. Actual groups, all blocks, deck groups and sizes
 
@@ -362,7 +363,7 @@ as a row vector of moment coefficients, one has
 \[
  \beta\, (dF)_u(\dot u)\,w
              =-\sum_{j=1}^p
-                \frac{\beta(u_j)B_g(u_j)}{P'(u_j)}\,\dot u_j.  \tag{19}
+                \frac{\beta(u_j)B_g(u_j)}{P'(u_j)}\,\dot u_j.  \tag{J}
 \]
 In particular the Jacobian of \(F(u)v=e\) has row rank \(h+1\)
 at every admissible point of (M2).
@@ -371,7 +372,7 @@ If \(U,V\) are nonzero finite-dimensional subspaces of
 \(\mathbb C[z]\), then
 \[
                   \dim\operatorname{span}(UV)
-                                \ge\dim U+\dim V-1.           \tag{20}
+                                \ge\dim U+\dim V-1.           \tag{P}
 \]
 
 **Proof.** Vary one point \(u_j\), keeping \(w\) fixed. The
@@ -383,7 +384,7 @@ polynomial with these jets is
 \[
  \dot g=-\dot u_j
        \frac{g^{(q_j)}(u_j)}{(q_j-1)!}
-       \frac{(z-u_j)^{q_j-1}Q_j(z)}{Q_j(u_j)}.               \tag{21}
+       \frac{(z-u_j)^{q_j-1}Q_j(z)}{Q_j(u_j)}.               \tag{D}
 \]
 Since \(g'=ZB_g\), its scalar coefficient after dividing
 by \(Q\) becomes \(-\dot u_j B_g(u_j)/P'(u_j)\).
@@ -428,7 +429,7 @@ Set
  U=\ker(F^t)\subset\mathbb C[z]_{\le h-1},\qquad
  S=F^{-1}(\mathbb C e),\qquad
  V=\{\,\Phi_w'/Z:w\in S\,\}\subset\mathbb C[z]_{\le s}.
-                                                               \tag{22}
+                                                               \tag{S}
 \]
 Here \(\dim U=\delta\). The smaller degree bound in (S)
 follows from \(\beta e=0\) for \(\beta\in\ker(F^t)\).
@@ -449,7 +450,7 @@ Evaluation at the \(p\) distinct points, followed by division
 by the nonzero \(P'(u_j)\), is injective on this polynomial
 space. By (P) the conormal rank is at least
 \[
-                           \delta+k-r-1.                     \tag{23}
+                           \delta+k-r-1.                     \tag{C}
 \]
 This proves
 \(\dim\Sigma_r\le p-(\delta+k-r-1)\).
@@ -493,23 +494,37 @@ It independently differentiates moving-contour residues to
 test (J), checks the polynomial product/conormal dimensions
 at a feasible rank-deficient configuration, and checks the
 one-dimensional conormal in the excluded degree-six case.
-Two additional complete controls use pure braid generators
+Three additional complete controls use pure braid generators
 and same-type exchanges on a fixed ordered pattern, quotienting
 by product rotations. These generate the colored braid group:
 the pure generators generate its permutation kernel, and
 same-type exchanges generate its finite permutation image.
-The two orbit sizes exhaust the independent fixed-pattern
-absolute totals, giving full domains of 15,360 and 700,000
+The three orbit sizes exhaust the independent fixed-pattern
+absolute totals, giving full domains of 15,360, 700,000 and 1,771,470
 literal tuples after type placements.
+
+| Degree | Finite passport | \(p-k=s\) | Fixed-pattern absolute tuples | Full literal tuples |
+|---|---|---:|---:|---:|
+| 8 | \(\mathrm{DT},3,3,T\) | 1 | 160 | 15,360 |
+| 10 | \(\mathrm{DT},3,3,3,T\) | 1 | 3,500 | 700,000 |
+| 9 | \(\mathrm{DT},\mathrm{DT},3,T,T\) | 2 | 6,561 | 1,771,470 |
+
+Each row is one \(S_N\) component. Here \(3\) denotes one
+three-cycle and all other sheets fixed. These three examples
+lie below the former \(s\ge p-2\) sufficient range.
+The degree-nine row has two disconnected non-transposition
+factors, so it also lies outside the one-arbitrary-factor
+and single-cycle-tail family.
+
 The bounded domains and all inputs are retained in
 [the receipt](polynomial_stable_hermite_verification.json);
 [the source ledger](polynomial_stable_hermite_source_ledger.json)
 separates the written proof and imported existence/count input
 from these finite controls. The all-parameter statements use
-K1--K3, not an extrapolation of the finite orbits.
+K1--K6, not an extrapolation of the finite orbits.
 
 The general component goal remains open below \(s=p-k\),
-and at \(s=0\).
+and at \(s=0\), outside the subfamilies already classified.
 Power phases, intrinsic branch classes and genuine reduced
 lifting splits already occur outside this range. Neither
 unrestricted connectivity nor a general period-cell gluing

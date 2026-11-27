@@ -2156,8 +2156,10 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Colored period reduction and explicit algebraic cubic coupling pair | Internal result | proved | [Source](POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md) |
 | Rational Hermite charts for positive-dimensional power-phase components | Internal result | proved | [Source](POLYNOMIAL_HERMITE_POWER_PHASE_CHARTS.md) |
 | A simple-branch threshold for arbitrary polynomial passport components | Internal result | proved | [Source](POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md) |
+| First-deficit polynomial monodromy and a determinant component criterion | Internal result | proved | [Source](POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md) |
+| Two rational components for a double transposition and a duplicated cycle | Internal result | proved | [Source](POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md) |
 
-**Computed obligations:** 209 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 212 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:
@@ -2331,6 +2333,8 @@ Scope limits:
 - G1–G4 of POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md give every passport as a colored integer-period diagonal and a finite rational-cell reduction via the explicitly imported November2026 CMST period model. Root gcd produces canonical power phases, which are insufficient: the exact quartic-square parameters(9+/-3sqrt3)/16 give the same-phase/same-class H576 cubic pair. General graph construction/classification and full-branch quotient actions remain open; connected ambient fibers can contain genuinely cubic-split positive-dimensional diagonals.
 - J1–J4 of POLYNOMIAL_HERMITE_POWER_PHASE_CHARTS.md give exact rational coefficient models for the positive-dimensional stable family(2^n),(2^a1^(2n-2a)),T^(n-a-1),n>2a>=4. Every phase component is rational overQ of dimension n-a-1, with S_n-wr-C2, all blocks/deck and exact sizes. A working Hermite/norm generator and degree10 surfaces test grouped critical-value diagonals. This is a separate proof/model for previously classified counts; it does not implement general period graphs or add a genuine lifting split.
 - K1–K6 of POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md classify all arbitrary polynomial passports with s>=max(1,p-k), p the total nontrivial cycles and k the number of non-transposition factors: one component, full CRT/moment coefficient spaces, rational root-marked locus, unirational affine quotient and exact actual groups/blocks/decks/counts. A moving-point Vandermonde Jacobian and polynomial-product conormal bound exclude every deficient-rank component. At least two such factors force S_N; a single factor has the gcd cyclic wreath group. The degree6 DT,DT,T split lies one level below. General lower-simple and zero-simple classification stays open.
+- U1–U5 of POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md resolve all actual monodromy/blocks/decks at s=p-k-1>=1 and the unique imprimitive component family: two duplicated single-cycle quotient factors plus oneT, groupS2-wr-A_m/S_m and exact sizes. All remaining components correspond exactly to finite label orbits of admissible geometric factors of one explicit moment determinant. Degree6 factors are proved geometrically;12 bounded passports representing1894278 literals are fully classified. Uniform factor-orbit evaluation and separate primitive component degrees remain open.
+- V1–V4 of POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md close the complete min(a,b)=2 first-deficit duplicated-cycle family for everyb>=2: exactly two full components, actual S_(2b+2) and S2-wr-S_(b+1), all blocks/decks and separate exact sizes. The unordered critical-pair quotient makes the primitive residue equation linear, yielding rational moduli fields and uniform rational CRT witnesses in both sectors. Forty exact charts and11 complete bounded passports support the proof. Remaining duplicated-cycle lengths both>=3, higher-p k2, other first-deficit and deeper passports stay open.
 
 Tracked obligations (computed states):
 
@@ -2496,5 +2500,8 @@ Tracked obligations (computed states):
 - **mathematical / open:** [Classify the colored integer-period cell graphs and full-branch quotients, with actual groups, counts, blocks, decks and lifting data.](POLYNOMIAL_PERIOD_DIAGONALS_AND_POWER_PHASES.md) — GAP-ARITH-POLYNOMIAL-PERIOD-DIAGONAL-COMPONENT-CLASSIFICATION
 - **verification / open:** [Independently audit/replay the rational Hermite phase charts and stable-range exact sizes.](POLYNOMIAL_HERMITE_POWER_PHASE_CHARTS.md) — VERIFY-ARITH-POLYNOMIAL-HERMITE-PHASE-RATIONALITY
 - **verification / open:** [Independently audit/replay the stable Hermite simple-branch threshold and exact groups/counts.](POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md) — VERIFY-ARITH-POLYNOMIAL-STABLE-HERMITE-CLASSIFICATION
+- **mathematical / open:** [Classify admissible geometric first-deficit determinant factor orbits and separate component degrees.](POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md) — GAP-ARITH-POLYNOMIAL-FIRST-DEFICIT-DETERMINANT-FACTORS
+- **verification / open:** [Independently audit/replay the first-deficit monodromy, determinant and bounded component proofs.](POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md) — VERIFY-ARITH-POLYNOMIAL-FIRST-DEFICIT-REDUCTION
+- **verification / open:** [Independently audit/replay the all-b two-component DT/duplicated-cycle theorem and rational moduli fields.](POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md) — VERIFY-ARITH-POLYNOMIAL-DT-DUPLICATED-CYCLE-CLASSIFICATION
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

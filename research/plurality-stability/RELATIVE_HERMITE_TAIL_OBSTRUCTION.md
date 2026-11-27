@@ -238,6 +238,147 @@ interval. The estimate does not require a sign for the noise-stability
 difference. The next theorem establishes that it is strictly positive for
 every member of this family.
 
+## A compact-core test with saturated transfer cost
+
+Fix $k\ge2$ in the active space $E=\mathbf 1^\perp$, of dimension $k-1$.
+Use the score loss $\mathcal L_\rho$ and the centered quadratic transfer
+interaction $\widetilde Q_\rho$ from (C1)–(C2) of the
+[normal-flux proof](SMALL_POSITIVE_CORRELATION_INTERVAL.md). For transfers
+$h_{ij}$ out of $T_i$, write $t=n_{ij}\cdot x$ and define, on a
+measurable region $D$,
+
+\[
+ C_D=\sum_{i\ne j}\int_D \min(t,1)h_{ij}\,d\gamma,\qquad
+ I_D=\sum_{i\ne j}\int_D t h_{ij}\,d\gamma.
+\]
+
+The reflection formula (A4) also gives an upper bound for the score.
+Put $u=\rho t/\sqrt{1-\rho^2}$. The reflected density difference in
+the formula is nonnegative on the whole positive normal halfspace.
+Integrating over that halfspace in place of $T_i$ gives
+$U_{\rho,ij}\le 2\Phi(u)-1$. Together with (A4) this makes the score
+comparable to $\min(u,1)$. In particular
+$\mathcal L_\rho^D/\rho\ge a_k C_D$ for some $a_k>0$.
+
+The quadratic remainder in the changed indicators $e^D=e1_D$
+satisfies, for $0<\rho\le r=1/16$,
+
+\[
+ 0\le\widetilde Q_\rho(e^D)-\rho\|M_D\|_F^2
+ \le (\rho/r)^2\sum_i\langle e_i^D,T_r e_i^D\rangle,
+ \qquad (M_D)_i=\int x e_i^D\,d\gamma.
+ \tag{12}
+\]
+
+This is the Hermite spectral bound from total degree two onward. The
+fixed-$r$ Mehler kernel is bounded by $C_k w(x)w(y)$ with the weight
+in (A6). Thus (C3) in the active dimension bounds the right side by
+$C_k\rho^2 C_D$, and by $C_k\rho^2\beta(R) C_D$ when
+$D\subset\{|x|>R\}$. The same weighted estimate bounds the **squares**
+of exterior mass and first-moment errors by $C_k\beta(R) C_D$.
+These estimates use the cutoff pieces without imposing separate balance.
+
+The raw higher-Hermite surplus of a full partition includes the cross
+term with the simplex indicators. For the remote reflected boxes,
+at each fixed $\rho>0$ its value is
+$\rho\delta(A_R)-(S_\rho(T)-S_\rho(A_R))\ge c\rho R p_R-4p_R$ by
+(6) and (8). The saturated cost of the two transfers is at most
+$2p_R$. Thus replacing the deficit by a saturated cost inside a bound
+on the raw Hermite surplus still fails. Keeping the exact $\mathcal L_\rho$
+in the tail preserves the cancellation of that cross term with the
+large linear first-moment loss.
+
+Let $D_c=\{|x|\le R\}$ and $D_t=\{|x|>R\}$, with subscripts $c,t$ for
+the associated quantities. On $D_c$ the reflection identity gives
+$U_{\rho,ij}=0$ on the full pair plane. Integrating the uniform
+gradient limit (A5) from that plane gives
+$\mathcal L_\rho^c/\rho\ge\ell I_c-o_R(1) C_c$, where
+$o_R(1)\to0$ as $\rho\downarrow0$ at fixed $R$, using $I_c\le R C_c$
+for $R\ge2$. Independently,
+$\widetilde Q_\rho(e^c)\le C_k\rho C_c$ and
+$\widetilde Q_\rho(e^t)\le C_k\rho\beta(R) C_t$ by (C3)–(C4).
+The centered OU operator is positive semidefinite, so its mixed
+interaction after division by $\rho$ is bounded by
+$C_k\sqrt{\beta(R) C_c C_t}$. Young's inequality and (12) therefore give,
+for each $a>0$,
+
+\[
+ \frac{S_\rho(T)-S_\rho(A)}{\rho}
+ \ge G_c-(a+o_R(1)) C_c
+      +\left[2a_k-C_k(1+a^{-1})\beta(R)\right] C_t,
+ \qquad
+ G_c=2\ell I_c-\|M_c\|_F^2.
+ \tag{13}
+\]
+
+This uses balance only for the full exact comparison (C2).
+The mixed term spends some core slack, even when the tail has
+arbitrarily small cost.
+
+A sufficient compact-core certificate can allow errors from the tail.
+Choose $T$ by nearest regular moment alignment. In active coordinates the
+full aligned moment matrix $B_A$ is symmetric positive semidefinite by
+orthogonal Procrustes, including when it has deficient rank. Let
+$m_c=\int e^c\,d\gamma$ and let $\mathcal S_+$ be the cone of symmetric
+positive semidefinite maps on $E$. Full balance and the full alignment
+imply
+
+\[
+ \Xi_c:=\|m_c\|^2+\operatorname{dist}_F(B_*+M_c,\mathcal S_+)^2
+       \le \|m_t\|^2+\|M_t\|_F^2\le C_k\beta(R)C_t.
+\]
+
+For a radius $R$ and constants $\theta>0$, $K\ge0$, a sufficient test
+on the core restrictions of distant aligned competitors is
+
+\[
+ G_c\ \ge\ \theta C_c-K\Xi_c.
+ \tag{14}
+\]
+
+If $C_k[1+4/\theta+K]\beta(R)<a_k$ (enlarging $C_k$ in (13) if
+needed), choose $a=\theta/4$ and then sufficiently small $\rho$ in
+(13). This yields a strictly positive gap for each nontrivial distant
+competitor. The local theorem (L1) handles the remaining neighbors,
+and Heilman–Tarter dimension reduction applies to global maximizers.
+Condition (14) is an unresolved sufficient test. In particular, making
+$R$ large does not suffice if the core slack vanishes or its penalty
+constant grows too fast. Symmetry alone in place of positive
+semidefiniteness would allow label-swapped simplexes with a symmetric
+reflection matrix.
+
+The search can use a compact finite-dimensional body. For each
+$x\in T_i\cap D_c$, permit staying or transferring fractionally to
+$j\ne i$, with $\sum_j h_{ij}(x)\le1$. With $d_{ij}$ the label vector
+$\mathbf e_j-\mathbf e_i$, the possible $(m_c,M_c,C_c,\mu_c)$ are
+integrals of selections in the convex hull of zero and the vectors
+$(d_{ij},d_{ij}x^T,\min(t,1),1)$. Here $\mu_c$ is changed-label mass.
+This body is compact by weak-* compactness of the admissible transfer
+densities. Its support function is the integral of the pointwise
+maximum of the corresponding linear scores, including zero for staying.
+Also $G_c=F_k-\|B_*+M_c\|_F^2$ by expansion. For full competitors
+with orbit distance at least $\eta$, it suffices to test core tuples
+with $\mu_c\ge \eta/2-\gamma(D_t)$, $\|m_c\|\le\sqrt2\,\gamma(D_t)$
+and $\operatorname{dist}_F(B_*+M_c,\mathcal S_+)
+\le\sqrt2\int_{D_t}|x|d\gamma$. These conditions retain all actual
+competitors without assuming exact core balance. A strict absolute
+lower bound for $G_c$ on this set would also supply the needed slack,
+since $C_c\le1$.
+
+Zhang's qualitative first-moment theorem would imply such a bound for
+all sufficiently large $R$. Otherwise take a sequence of admissible
+cores with $R\to\infty$ and $G_c\le o(1)$, extend them by the simplex
+labels, and take a weak fractional limit. The mass and moment
+tolerances give exact balance and positive semidefinite moments in
+the limit. Since $G_c=F_k-\|B_*+M_c\|^2$, Zhang's fractional equality
+case gives a regular simplex. Its positive semidefinite moment matrix
+forces it to be $B_*=aP$, and its labels then coincide with those of
+$T$. Testing the weak limit against those indicators forces
+$\mu_c\to0$, contradicting the lower bound for distant cores. This
+argument retains the global first-moment input. The independent
+certificate still to find is a strict verified core bound with the
+quantified tail absorption in (13)–(14).
+
 ## Proper reflected swaps strictly lose full noise stability
 
 Let $n\ge3$ and extend the tetrahedral cells cylindrically to $\mathbb R^n$.

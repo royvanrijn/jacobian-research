@@ -373,6 +373,228 @@ The global version of (B5) and the margin bound imply
 $(\sum_i\gamma_n(A_i\triangle (T_A)_i))^2\le C L_\rho(A;T_A)/\rho$.
 As $\rho$ stays near the positive $r$, this proves the second inequality.
 
+## An effective local radius from truncated normal flux
+
+The preceding comparison admits an error bound in the active dimension.
+Fix $0<b<1$ and a set of correlations $J\subset(0,b]$ on which
+$B_\rho(g)\le(1-\theta)A_\rho(g)$ on $\mathcal G$, with a given
+$0<\theta<1$. Here $A_\rho,B_\rho$ are the two interface terms in
+(B6), and $\mathcal G$ is the balanced space with rotational moment
+component zero. A uniform interface gap gives such a $\theta$ by
+the argument of (B12). In particular, the explicit gaps (S37) and
+(S83) supply the premise on three-cell closed interior bands and on
+the all-cell initial interval, respectively.
+
+Choose the nearest regular moment alignment and put $s^2=L_\rho/\rho$.
+For $R\ge2$ and $0<h<1$, retain the transfer $i\to j$ only when
+$|x|\le R$, $0\le t=n_{ij}\cdot x\le h$, and its projection
+$z=x-tn_{ij}$ belongs to $F_{ij}$. Project each retained transfer,
+divided by $s$, onto the facet. Let $\theta_{ij}$ be its nonnegative
+density with respect to $\nu_{ij}$ and put
+$f_{ij}=\theta_{ji}-\theta_{ij}$. The pointwise one-sided density
+inequality of (C9)–(C11) applies to these restrictions as well.
+Write $\lambda^f$ for the resulting vector of signed facet measures.
+
+The loss of normalized mass and moment in this projection, and
+the error in the normalized interaction, are controlled by
+
+\[
+ E(R,h,s)=C_{k,b}\sqrt{\beta_{n,\alpha}(R)}
+              +C_{k,b,R}\big(\sqrt h+s/h\big).
+ \tag{B15}
+\]
+
+Indeed the exterior weighted total variation is bounded by
+$C_{k,b}\sqrt{\beta_{n,\alpha}(R)}$ by (B3), with a constant independent
+of $R$. Inside the ball, transfers with $t>h$ have mass at most
+$C_k s^2/h$ by (A4). If $x\in T_i$ and $t\le h$ but $z\notin F_{ij}$,
+some remaining defining inequality of $F_{ij}$ is violated at $z$
+by at most $C_k h$. Its tangential linear functional is nonzero.
+The corresponding strip in the plane has Gaussian surface measure
+$O_k(h)$, and the projected thin densities have uniformly bounded
+plane $L^2$ norm by (C9). This discards $O_k(\sqrt h)$ normalized
+mass. For $k=2$ there are no such strips. Moving the remaining mass
+from $x$ to $z$ changes first moments by $O_k(h)$.
+These estimates give the mass and moment bound in (B15).
+
+For the interaction bound, $K_\rho=(M_\rho-1)/\rho$ is uniformly
+bounded by $C_{k,b}w_\alpha\otimes w_\alpha$ by (B4), and its first
+spatial derivatives on compact products are bounded uniformly for
+$0<\rho\le b$, by differentiating the Mehler formula, with its
+continuous extension at $\rho=0$. The normalized full transfers and
+the projected facet measures have uniformly bounded weighted
+variation, the latter by the plane $L^2$ bound. Hence in the double
+integral, exterior terms cost $O_{k,b}(\sqrt{\beta_{n,\alpha}(R)})$.
+The remaining discards cost $O_{k,b,R}(\sqrt h+s/h)$ and the retained
+projections cost $O_{k,b,R}(h)$ by the compact derivative bound.
+Thus the difference between $\widetilde Q_\rho(e)/L_\rho$ and the
+$K_\rho$ interaction of $\lambda^f$ is bounded by (B15). The centered
+kernel is used for the projected measures even before balance is restored.
+
+Reflection and the bounded second spatial derivatives of the normalized
+score on the compact ball give
+$U_{\rho,ij}(z+tn_{ij})/\rho\ge (a_{\rho,ij}(z)/\rho-C_{k,b,R}h)t$.
+The lower bound $\ell$ for $a_{\rho,ij}/\rho$ and the one-sided density
+inequality therefore give
+
+\[
+ A_\rho(f)\le\frac{2}{1-C_{k,b,R}h/\ell}
+ \tag{B16}
+\]
+
+when the denominator is positive. This uses
+$(\theta_{ji}-\theta_{ij})^2\le\theta_{ij}^2+\theta_{ji}^2$.
+The exact balances and moment gauge for the full transfers make the
+mass and rotational moment defects of $f$ at most (B15).
+Remove the mass defect with constant speeds on a fixed spanning
+tree of positive-area facets. Each edge constant is its tree flow
+divided by its facet area, so the $L^2$ correction is bounded by a
+fixed multiple of the defect. Then remove the remaining skew moment
+with a rotation speed using the isomorphism
+$\mathcal D:\mathcal R_k\to\mathcal V$. Both operations are finite
+linear maps with norms bounded by facet Gaussian integrals and
+$B_*$. They produce $g\in\mathcal G$ with
+$\|g-f\|\le C_k E(R,h,s)$. The bounds for $A_\rho$ and $K_\rho$
+on the weighted facet space make the change in the two quadratic
+terms at most a fixed multiple of $E$ when $E\le1$.
+
+Consequently $\widetilde Q_\rho(e)/L_\rho$ is bounded by
+$(1-\theta)2/(1-C_{k,b,R}h/\ell)+C_{k,b}E(R,h,s)$,
+after enlarging the constants. Choose $R$ first to control the
+exterior error, then $h$ to control the strips and the denominator,
+then an upper bound on $s$. This makes the expression at most
+$2-\theta$ uniformly on $J$. These choices only use the specified gap,
+Gaussian tail and strip integrals, compact kernel derivative bounds,
+and the finite correction maps.
+
+An effective cutoff can be imposed directly on the aligned linear
+regret $r_1=F_k-\langle B_*,B_A\rangle_F=\ell\sum_{i\ne j}\int t h_{ij}$.
+The upper reflection bound
+$U_{\rho,ij}\le 2\Phi(\rho t/\sqrt{1-\rho^2})-1$ from the
+[saturated transfer comparison](RELATIVE_HERMITE_TAIL_OBSTRUCTION.md#a-compact-core-test-with-saturated-transfer-cost)
+gives $s^2\le (2\phi_1(0)/(\ell\sqrt{1-b^2}))r_1$. For a partition
+at summed label distance $d$ from the orbit, Bessel's inequality
+and nearest-moment alignment give $\|B_A-B_*\|_F\le\sqrt d$,
+so $r_1\le\sqrt{F_k d}$. This yields an effective form of (B11) in active
+dimension, with constants that can also be used as $\rho\downarrow0$
+if the relative interface gap is uniform there. Dimension reduction
+then suffices for local exclusion of actual global maximizers in higher
+dimension. No numerical local radius has been evaluated here.
+
+## A finite test for distant competitors on a correlation band
+
+Fix $I=[a,b]\subset(0,1)$ and work in dimension $n$. The compact-core
+test (13)–(14) extends to this band by keeping the exact score loss
+and finitely many quadratic Hermite terms. For any $b<r<1$, choose a
+weight as in (B2) at $r$. Write $e^c=e1_{\{|x|\le R\}}$,
+$L_c=L_\rho^c$, $L_t=L_\rho^{\rm out}$, and
+
+\[
+ P_N(\rho,e^c)=\sum_{m=1}^N\rho^m\sum_i\|\Pi_m e_i^c\|_2^2 .
+\]
+
+The fixed-$r$ Mehler bound and (B5) bound
+$\sum_i\langle e_i^c,T_r e_i^c\rangle$ by a constant times
+$L_c/\rho$. For $m>N$ we have $\rho^{m-1}\le
+r^{m-1}(b/r)^N$. Thus the omitted interaction is at most
+$\tau_N L_c$, where $\tau_N=C_{k,r}(b/r)^N$. Combining with (C5)
+gives, for every $u>0$,
+
+\[
+ S_\rho(T)-S_\rho(A)\ \ge\
+ (2-u-\tau_N)L_c-P_N(\rho,e^c)
+ +[2-\varepsilon_{k,b}(R)(1+C_0/u)]L_t .
+ \tag{B17}
+\]
+
+Use the core body of (14), replacing the truncated cost coordinate by
+$L_c$ and retaining the Hermite coefficients through degree $N$.
+Take $N\ge1$ so the body retains the core first moments. Its support
+function is still the integral of the pointwise maximum over staying
+and the possible target labels. In the transfer coordinates of (14),
+the additional linear features for $i\to j$ are $U_{\rho,ij}(x)$ and
+$(\mathbf e_j-\mathbf e_i)H_\nu(x)$ for the orthonormal Hermites
+$1\le|\nu|\le N$. The mass error, distance to the positive semidefinite
+moment cone, and lower bound on changed-label mass are the same as in
+(14). They include every aligned distant competitor.
+With the effective linear-regret cutoff $r_*$ one may replace the
+changed-label coordinate by the constraint
+$-\langle B_*,M_c\rangle_F\ge r_*-\ell\int_{|x|>R}|x|\,d\gamma_n$.
+The last term bounds the omitted linear regret because the total
+transfer density at a point is at most one.
+
+A strictly positive lower bound for
+$(2-u-\tau_N)L_c-P_N$ on this relaxed distant body, together with
+$\varepsilon_{k,b}(R)(1+C_0/u)<2$, excludes distant ties and
+improvers over the band. This is a finite-dimensional test. A strict
+bound can be enclosed by finitely many support directions and verified
+integrals on the fixed ball: the feature vectors are bounded there,
+and increasingly fine directional nets give outer polytopes
+converging to the compact body. The closed tolerance constraints and
+continuity of the objective preserve strict margins in sufficiently
+accurate outer bodies. A finite correlation mesh also suffices.
+For fixed transfers
+$L_c=-\sum_i\langle e_i^c,T_\rho1_{T_i}\rangle$, and the OU and
+truncated OU operators have Lipschitz constant at most
+$\sup_{m\ge1}mb^{m-1}$ on $I$, by their Hermite eigenvalues.
+Since $\sum_i\|e_i^c\|^2\le2$, the objective is uniformly Lipschitz
+in $\rho$ with an explicit bound. The core constraints are fixed in
+$\rho$, so strict mesh margins larger than the interpolation error
+bound the whole band.
+
+Alternatively the body can be held fixed for all $\rho$ in the band.
+Truncate the score to $T_\rho\Pi_{\le N}(1_{T_i}-1_{T_j})$, where
+$\Pi_{\le N}$ is the sum of Hermite projections through degree $N$.
+Its remainder is $T_r T_{\rho/r}(I-\Pi_{\le N})(1_{T_i}-1_{T_j})$.
+The input to $T_r$ has $L^2$ norm at most $C(\rho/r)^{N+1}$,
+and $T_r$ maps $L^2$ to functions with uniformly bounded gradients
+on the fixed ball, by the $L^2$ norm of the spatial derivative of its
+Mehler kernel there. The remainder vanishes on the whole pair plane
+by reflection, which commutes with the projections. Its pointwise
+error is therefore bounded by $C_{R,r}t(\rho/r)^{N+1}$. Using
+$t\le R\min(t,1)$ on the core and (A4), the score-loss error is at
+most $\delta_N L_c$ with $\delta_N=C_{k,R,r}(b/r)^N$.
+The truncated score loss $L_c^{(N)}$ is polynomial in $\rho$ and
+linear in the same core Hermite features as $P_N$.
+For $2-u-\tau_N>0$ one can thus test
+$(2-u-\tau_N)L_c^{(N)}/(1+\delta_N)-P_N$ in (B17).
+The support function uses polynomial features and constraints
+independent of $\rho$. At a fixed $R$ the additional score error
+tends to zero as $N\to\infty$.
+
+Strict global uniqueness on $I$ implies the existence of such a
+certificate for every fixed positive distant cutoff $\eta$. Otherwise
+there are relaxed cores with $R\to\infty$, correlations converging in
+$I$, and $2L_c-\widetilde Q_\rho(e^c)\le o(1)$. Extend each core by
+$T$ and take a weak fractional limit in the fixed active dimension.
+The tolerances imply balance and the positive semidefinite moment gauge
+in the limit, and the mismatch probability stays at least $\eta/2$.
+Compactness of the OU operators and norm continuity in $\rho$ pass
+the objective to the limit. The additional constant Hermite term
+is $\|\int e^c\|^2$ and tends to zero. The limit is a fractional
+maximizer, which must be ordinary by the strictly positive quadratic
+variation on the balanced feasible set. By uniqueness and the
+positive semidefinite gauge it is $T$, contradicting the mismatch
+lower bound, or the positive linear-regret lower bound when that
+constraint is used. Hence the exact core deficit has a uniform positive
+lower bound for all sufficiently large $R$. Choose $u$ and $\tau_N$
+small enough to retain some of that bound, using $0\le L_c\le1$,
+and then $R$ large for the tail absorption. Truncation subtracts
+nonnegative interaction and so cannot reduce this margin further.
+
+[De–Mossel–Neeman, Theorem 2.2](https://theoryofcomputing.org/articles/v015a006/v015a006.pdf)
+supplies additive approximate optimization via bounded-degree
+polynomial threshold functions and approximate dimension reduction.
+The test here instead uses the exact active dimension for actual
+maximizers and separates a strict comparison away from the orbit
+from a local comparison at the simplex. When the interface gap is
+available, the effective local radius and (B17) together give a way
+to certify equality rigidity on a band. For three cells, this applies
+to the intermediate range between the direct comparison and the
+qualitative near-one interval. It supplies no numerical certificate
+for that range. The tail and degree choices are for $b<1$ and are
+not uniform at the perimeter endpoint.
+
 ## The first continuation endpoint has a tie or an additional zero mode
 
 The interface hypothesis is available for every fixed $k$ on some small
@@ -434,3 +656,53 @@ under (B10), not a proof of that hypothesis for arbitrary cell count
 throughout $(0,1)$. The separate three-cell theorem now supplies (B10)
 at every positive correlation and excludes its extra-zero-mode
 alternative. For $k\ge4$ both endpoint alternatives remain open.
+
+## Strict continuation past the three-cell bound \(221/500\)
+
+There is an $\varepsilon>0$ such that for every $d\ge2$ the balanced
+regular tripod is globally optimal throughout
+$0<\rho\le221/500+\varepsilon$. Every maximizer on
+$[11/25,221/500+\varepsilon]$ is a cylindrical regular tripod.
+The strict extension uses the equality information in the
+[finite-amplitude comparison](THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md)
+and the three-cell local gap. Its extra length is qualitative.
+
+Work in the active plane, as permitted for actual maximizers by
+Heilman–Tarter. On $[11/25,221/500]$, (FA6) excludes a tie when
+the scalar radial sum is negative. If the sum is nonnegative,
+(FA6)–(FA7) and the strict determinant in (FA17) force $A=G=0$
+in the trial-plus-remainder decomposition. Thus any tying partition
+has equal masses on almost every circle. The equal-circle argument
+(DG2) gives $\mathcal D_\rho\ge0$ and $\mathcal R_\rho=0$.
+Equality in (DG3) therefore forces $\mathcal C_\rho=0$. Its angular
+quadratic kernel has strictly positive Fourier multipliers at every
+positive concentration parameter. The radial pair density is strictly
+positive for positive radii, so almost every pair of slices has identical
+centered cell indicators. Fubini gives one angular partition independent
+of radius.
+
+For that angular partition the nonnegative self-comparison with the
+three equal arcs has zero integral in (DG3). Its kernel parameter
+$\kappa=\rho r u/(1-\rho^2)$ has full support in $(0,\infty)$,
+and the comparison is continuous in $\kappa$. Equality therefore
+holds for every $\kappa>0$. Differentiate at zero. The normalized
+circular kernel has derivative $\cos(\theta-\varphi)$ there, so the
+sum of squared first circular Fourier moments equals that of the three
+equal arcs. For a set of given angular mass $1/3$, the norm of
+its first Fourier moment is maximized uniquely by an arc, up to
+rotation and null sets: choose its moment phase, then integrate
+cosine over its upper level set of that measure. Each cell must
+attain this separate bound. The three equal arcs tile the circle
+and yield the regular tripod.
+
+If nonsimplex maximizers existed at correlations arbitrarily close
+to the right of $221/500$, reduce each to the active plane and take
+a strongly convergent subsequence by positive-correlation maximizer
+compactness. The limit maximizes at $221/500$ and hence is a tripod.
+The full three-cell interface gap at this correlation and (B11)
+exclude all those nearby nonsimplex maximizers, a contradiction.
+This proves the stated extension. In particular the first failure,
+if any, lies strictly beyond this endpoint, and the finite band
+test has a strict certificate in principle on a short band containing
+the endpoint. No ordering relative to the earlier implicit
+threshold extension or overlap with the near-one interval is asserted.

@@ -446,7 +446,8 @@ def colored_braid_controls():
     """Complete fixed-pattern absolute closures, using the colored braid group."""
     rows = []
     for profiles, s in ((((2, 2), (3,), (3,)), 1),
-                        (((2, 2), (3,), (3,), (3,)), 1)):
+                        (((2, 2), (3,), (3,), (3,)), 1),
+                        (((2, 2), (2, 2), (3,)), 2)):
         N, p, _, passport = domain(profiles, s)
         seed = tree_seed(profiles, s)
         group = group_control(seed, N, 1)

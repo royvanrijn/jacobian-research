@@ -17,6 +17,12 @@ in chamber-gap coordinates and a left/right ground-state argument prove
 the rotational-only kernel and a positive gap at every correlation for
 every $k$. Strict supersolutions also settle the $(k-2,2)$ and sign
 sectors for all $k\ge4$, with the explicit sign bound (S62) for $k\ge5$.
+The single-reflection argument (S85)--(S87) further settles every
+nonstandard two-row block $(k-p,p)$, $2\le p\le\lfloor k/2\rfloor$,
+at every positive correlation, with one gap constant valid for all $p$.
+The antisymmetry hierarchy (S88)--(S89) identifies the next obstruction
+and embeds every three-row block into one scalar spectral problem;
+it supplies no new higher-row gap by itself.
 The exterior Gaussian identity (S72) and a linear positive
 supersolution also settle the whole third exterior hook
 $(k-3,1,1,1)$ for every $k\ge4$, by (S73).
@@ -2998,6 +3004,513 @@ establishing any new global optimality claim or an arbitrary-correlation
 full gap. In particular (S83) is an explicit, restricted-correlation
 extension of (S37) to every cell count.
 
+## An exact two-variable kernel for tied-height standard speeds
+
+A useful test family for the remaining ordinary-mass inequality has
+an exact reduction independent of the number of coordinates. Realize
+the cylindrical simplex in $\mathbb R^k$ with cells
+$T_i=\{x_i\ge x_j\ \forall j\}$. The common-coordinate direction
+is unused by the partition. On $F_{ij}$ take
+$f_{ij}(x)=(c_i-c_j)h(x_i)$, where $c\in E\setminus\{0\}$.
+The tied height is the actual coordinate $x_i=x_j$ in this
+$k$-dimensional realization, rather than its projection onto $E$.
+
+Let $\phi,\Phi$ be the standard normal density and distribution
+function, and let $p_\rho(u,v),F_\rho(u,v)$ be the density and lower
+distribution function of a standard bivariate normal pair with
+correlation $\rho$. Write $F_u=\partial_uF_\rho$ and
+$F_v=\partial_vF_\rho$, and define
+
+\[
+ m_k(u)=\sqrt2\,\phi(u)^2\Phi(u)^{k-2},\qquad
+ \mathcal J_{k,\rho}(u,v)=
+ 4p_\rho(u,v)^2F_\rho(u,v)^{k-2}
+ +2(k-2)p_\rho(u,v)F_u(u,v)F_v(u,v)F_\rho(u,v)^{k-3}.
+\]
+
+For $k\ge3$, $0<\rho<1$ and $h\in L^2(m_kdu)$, the exact norm,
+balance constraint and form are
+
+\[
+ \boxed{\begin{aligned}
+ \|f\|^2&=k|c|^2\int m_kh^2,\qquad
+ Cf=0\ \Longleftrightarrow\ \int m_kh=0,\\
+ \frac{\mathfrak q_\rho(f)}{k|c|^2}
+   &=\iint\mathcal J_{k,\rho}(u,v)
+            \bigl[h(u)^2-\rho^{-1}h(u)h(v)\bigr]du\,dv.
+ \end{aligned}}
+ \tag{S84}
+\]
+
+The second term in $\mathcal J$ is indispensable: it is the full
+adjacent-facet contribution, not a tail correction to the same-facet
+kernel. The formula includes every dimension of this height family
+but does not cover every $G_0$-invariant function in (S51).
+
+For a direct derivation, let $(X_l,Y_l)$ be independent standard
+normal pairs of correlation $\rho$, $1\le l\le k$. Surface
+integration on $X_1=X_2$ introduces
+$\delta((X_1-X_2)/\sqrt2)=\sqrt2\delta(X_1-X_2)$.
+Integrating the other $X$ coordinates below their common value $u$
+gives $m_k(u)du$. Thus $\int m_k=v_k$.
+For the same-facet Mehler interaction impose
+$X_1=X_2=u$, $Y_1=Y_2=v$. The two surface factors multiply to $2$.
+The two tied pairs supply $p_\rho^2$, and the other $k-2$ pairs
+supply $F_\rho^{k-2}$. Multiplying by the coefficient $2$ in
+(S49) gives the first term of $\mathcal J$.
+
+For one adjacent term impose $X_1=X_2=u$, $Y_1=Y_3=v$.
+The pair with label $1$ supplies $p_\rho(u,v)$, while integration
+of $Y_2\le v$ and $X_3\le u$ supplies respectively
+
+\[
+ F_u=\phi(u)\Phi((v-\rho u)/\sigma),\qquad
+ F_v=\phi(v)\Phi((u-\rho v)/\sigma).
+\]
+
+The other $k-3$ pairs supply $F_\rho^{k-3}$. The surface factor
+is again $2$, and (S49) has $k-2$ such adjacent terms. This gives
+the second term of $\mathcal J$. Integrating the row identity
+$K_{\rm std}1=a_\rho/\rho$ against $h(u)^2$ supplies the local
+term in (S84). The norm and balance follow from (S49) or directly
+from $\sum_{i<j}(c_i-c_j)^2=k|c|^2$ and $\sum_ic_i=0$.
+The argument first applies to bounded $h$; boundedness of the full
+interface form and the displayed norm extend it to the stated
+$L^2$ space. No numerical integration enters the reduction.
+
+This is a one-dimensional operator problem with a two-variable kernel.
+Set $r(u)=\int\mathcal J_{k,\rho}(u,v)dv$.
+The local bounds give
+$\ell/\sigma\le r(u)/m_k(u)\le2\phi_0/\sigma$.
+On $L^2(du)$ the normalized interaction and the ordinary balance
+vector are
+
+\[
+ T_h(u,v)=\frac{\mathcal J_{k,\rho}(u,v)}
+                      {\rho\sqrt{r(u)r(v)}},\qquad
+ b_h(u)=\frac{m_k(u)}{\sqrt{r(u)}}.
+\]
+
+The positive translation eigenvector is $\sqrt r$, with eigenvalue
+$1/\rho$. The operator is compact, as a bounded compression and
+normalization of the full compact interaction. Consequently the
+two tests (S70) apply to this family, with $T_h,b_h$; the balance
+condition is still ordinary $m_k$-mean, not $r$-mean. Positivity of
+this restricted family would not prove (S51). A negative member,
+however, would refute the full cylindrical interface assertion,
+and therefore its active-space version by (S42).
+
+Two identities check the normalization and connect this reduction
+to the simplex noise stability $S_\rho(T)$:
+
+\[
+ \mathcal J_{k,0}(u,v)=k\,m_k(u)m_k(v),\qquad
+ \iint\mathcal J_{k,\rho}=
+                    \frac{2}{k(k-1)}\frac{d}{d\rho}S_\rho(T).
+\]
+
+For the second identity,
+$S_\rho(T)=k\int p_\rho F_\rho^{k-1}$.
+Direct differentiation of the Gaussian density gives
+$\partial_\rho p_\rho=\partial_u\partial_vp_\rho$ and hence
+$\partial_\rho F_\rho=p_\rho$. Integrating by parts twice shows
+that the derivative of $\int p_\rho F_\rho^{k-1}$ is
+$(k-1)/2$ times $\int\mathcal J$. Gaussian decay justifies the
+differentiations and boundary limits at every fixed $0<\rho<1$.
+
+The linear test $h(u)=u-\mu_k$, with
+$\mu_k=v_k^{-1}\int um_k(u)du$, has an additional exact feature.
+Write $x=x_E+z\mathbf1/\sqrt k$. Then
+$h(x_i)=(x_{E,i}-\mu_k)+z/\sqrt k$.
+The second term is a degree-one unused-coordinate standard speed,
+which is a geometric rotation. Different unused Hermite degrees
+are orthogonal for the form. Therefore (S84) for this linear test
+equals the active-space standard form of $x_{E,i}-\mu_k$;
+its extra trace contribution has exactly zero form. Nonlinear
+height functions generally contain other unused-coordinate degrees,
+so this identification is not asserted for them.
+
+The checker controls the Gaussian conditioning matrices, surface
+coefficients and formal differentiation coefficients in a stated
+finite range. The all-$k$ surface integration, compact compression
+and trace decomposition above are written proofs. Uncertified
+height-family quadrature is not part of the proof receipt and
+supplies no sign conclusion for (S84) or (S51).
+
+## Triple antisymmetry isolates the remaining transport obstruction
+
+The adjacent transports admit a simpler description that does not
+depend on the shape of the representation. Let $R_\lambda$ be an
+orthogonal irreducible representation, $P=(I-R_\lambda((12)))/2$
+and $V^-=\operatorname{ran}P$. For $l\ge3$ put
+
+\[
+ A_l=\frac16\sum_{g\in S_{\{1,2,l\}}}
+                       \operatorname{sgn}(g)R_\lambda(g).
+\]
+
+This is the orthogonal projection onto the subspace transforming
+by the sign character of these three labels. Its range lies in
+$V^-$. The exact full-facet multiplicity kernel is
+
+\[
+ \boxed{\begin{aligned}
+ T_l&=2PR_\lambda((2l))P|_{V^-}=I-3A_l|_{V^-},\\
+ K_{\lambda,\rho}(x,y)
+   &=K_{{\rm std},\rho}(x,y)I
+                         -3\sum_{l=3}^kM_l(x,y)A_l|_{V^-}.
+ \end{aligned}}
+ \tag{S85}
+\]
+
+Here the fields are $G_0$-equivariant on the full reference facet,
+and $M_l=\Gamma_\rho e^{\tau x\cdot(2l)y}$ as before. To check
+the algebra without an imported character calculation, write
+$s=(12)$, $t=(2l)$ and $u=sts=(1l)$ in $\mathbb R[S_3]$.
+Then
+$2PtP=(t-st-ts+u)/2=P-3A_l$.
+The self coefficient is $2I$, and the two adjacent facets give
+$R(t)+R(sts)=2PR(t)P$ on $V^-$, which proves (S85).
+
+For the rotation hook $A_l=(2/3)w_lw_l^T$, recovering $C_l$.
+For the sign representation $A_l=I$, recovering the self-minus-
+adjacent scalar kernel. Thus the possible negative adjacent
+transport is exactly triple-label antisymmetry. In particular all
+$A_l$ vanish if $\lambda$ has at most two rows. Repeated one-box
+branching, in the retained Vershik--Okounkov Theorem 5.8, proves
+this: restriction to three labels cannot contain the three-row
+shape $(1,1,1)$. Conversely a shape with at least three rows admits
+a Young-graph path beginning with this vertical three-strip, so
+its three-label sign projection is nonzero. The same assertion
+holds for any chosen three labels by conjugation.
+
+The positive-semidefinite projectors in (S85) do not supply an
+operator ordering of the integral kernels. For example on the ray
+$x=sw_l$, $y=tw_l$ inside $F_{12}$, the exponential part of $M_l$
+is $e^{-3\tau st/4}$. At two distinct positive ray parameters its
+two-by-two kernel matrix has negative determinant. The common
+Gaussian factors are positive row/column congruences, so they do
+not change this sign. Continuous small supported test functions
+give the corresponding failure of positive semidefiniteness on
+the facet. Thus simply discarding the last term of (S85) is not
+justified. The vanishing of that term in two-row representations,
+however, can be used exactly.
+
+## A single untied-coordinate reflection controls every nontrivial scalar type
+
+Fix $k\ge4$, $0<\rho<1$ and $s=(34)$. Write
+$F^+=\{x\in F_{12}:x_3>x_4\}$. The scalar standard kernel
+commutes with $G_0=S_{\{3,\ldots,k\}}$. On scalar functions odd
+under $s$, its folded kernel is
+
+\[
+ K^{\rm odd}(x,y)=K_{\rm std}(x,y)-K_{\rm std}(x,sy)
+                                      \quad(x,y\in F^+).
+\]
+
+It is strictly positive on the relative interior of this product.
+No ordering of the other coordinates is needed. The self term is
+strictly positive, since
+$x\cdot y-x\cdot sy=(x_3-x_4)(y_3-y_4)>0$.
+Every adjacent term except those indexed by $3,4$ has the same
+positive exponent difference. For the two exceptional terms, put
+$E_l(y)=e^{\tau x\cdot(2l)y}$ and
+
+\[
+ \alpha=\tau(x_2-x_3)\ge0,\quad
+ \beta=\tau(x_3-x_4)>0,\quad
+ u=y_2-y_3\ge0,\quad t=y_3-y_4>0.
+\]
+
+The exact factorization already used in (S58) is
+
+\[
+ \frac{E_3(y)+E_4(y)-E_3(sy)-E_4(sy)}{E_3(sy)}
+  =(e^{\alpha t}-1)(e^{\beta t}-e^{-\beta u})
+                                +(e^{\beta t}-1)>0.
+\]
+
+This proves the stated positivity on the half-facet, rather than
+only on the fully ordered chamber.
+
+Set $w(x)=x_3-x_4>0$ on $F^+$. Projecting the Gaussian rotation
+identity $K_1y=a_\rho x$ onto the coordinate difference $3-4$
+gives exactly the component of (S59)
+
+\[
+ a_\rho w-K_{\rm std}w=2(R_3-R_4),\qquad
+ R_l(x)=\int_{F_{12}}M_l(x,y)(y_2-y_l)d\nu_{12}(y).
+\]
+
+Here $R_3>R_4$ on all of $F^+$: substitute $y\mapsto sy$ in
+$R_4$. Both integrals then have the factor $y_2-y_3$, and the
+exponent difference is
+$\tau(x_3-x_4)(y_2-y_4)>0$ in the facet interior. Since $w$ is
+odd, $K_{\rm std}w$ is precisely the folded integral of
+$K^{\rm odd}w$. Thus $\psi=\sqrt{a_\rho}w>0$ is a strict
+supersolution for the compact self-adjoint positive-kernel operator
+$T^{\rm odd}=a_\rho^{-1/2}K^{\rm odd}a_\rho^{-1/2}$:
+$T^{\rm odd}\psi<\psi$ almost everywhere. The eigenvector
+argument of (S73), pairing $|Tz|\le T|z|$ with $\psi$, gives
+$|\lambda|<1$ for every nonzero eigenvalue. Compactness yields
+$\theta_{k,\rho}=\|T^{\rm odd}\|<1$.
+
+This also controls the entire nontrivial $G_0$ part of the scalar
+space, not just one chosen odd subspace. Let $E_{G_0}$ denote group
+averaging on $L^2(F_{12},\nu_{12})$. The coefficient $a_\rho$ is
+$G_0$-invariant, so normalization commutes with the group action.
+Every nontrivial irreducible $G_0$ representation has a nonzero
+$s$-minus space: if one transposition acted as the identity on the
+whole representation, conjugacy and generation would make the
+representation trivial. Every nonzero eigenvalue of the compact
+normalized scalar operator on $\ker E_{G_0}$ consequently also
+occurs on the $s$-odd space. Its norm is therefore at most
+$\theta_{k,\rho}$. It follows that
+
+\[
+ \boxed{\frac1\rho\left[\int a_\rho h^2d\nu_{12}
+                  -\iint K_{\rm std}hh\,d\nu_{12}^2\right]
+ \ge\frac{\ell}{\sigma}(1-\theta_{k,\rho})\|h\|^2
+      \quad\text{if }E_{G_0}h=0.}
+ \tag{S86}
+\]
+
+The remaining scalar standard problem (S51) instead has
+$E_{G_0}h=h$ and only its ordinary Gaussian mean zero. It is not
+covered by (S86). The invariant translation function $h=1$ has
+normalized eigenvalue $1/\rho>1$, so removal of the nontrivial-type
+condition would be false.
+In contrast $E_{G_0}h=0$ implies both $\int h\,d\nu_{12}=0$ and
+$\int a_\rho h\,d\nu_{12}=0$, because the measure and $a_\rho$
+are group invariant. The mass-weight mismatch in (S70) is therefore
+absent on the scalar types controlled by this reflection.
+
+## Every nonstandard two-row block has an all-correlation gap
+
+For every $k\ge4$, $2\le p\le\lfloor k/2\rfloor$,
+$d\ge k-1$ and $0<\rho<1$, the complete
+$V_{(k-p,p)}$ isotypic interface space has no kernel and satisfies
+
+\[
+ \boxed{\mathfrak q_{\rho,d}(f)
+       \ge\kappa^{\rm 2row}_{k,\rho}\|f\|^2,\qquad
+ \kappa^{\rm 2row}_{k,\rho}=
+                \frac{\ell}{\sigma}(1-\theta_{k,\rho})>0.}
+ \tag{S87}
+\]
+
+The constant is independent of both the ambient dimension and the
+choice of $p$; its spectral factor is qualitative. This includes
+all multiplicities and all $L^2$ speeds. It extends (S60), whose
+case is $p=2$, and includes $(3,3)$ at six cells and every higher
+nonstandard two-row shape.
+
+Indeed the vertical two-strip rule (S4) identifies $V^-_{(k-p,p)}$
+under $G_0$ with the single irreducible
+$V_{(k-p-1,p-1)}$. Removing one box from each of the two rows is
+the only allowed removal. Formula (S85) makes the raw kernel
+$K_{\rm std}I$ on this entire multiplicity space. For $p\ge2$
+the remaining-label representation is nontrivial. Every component
+of an equivariant field therefore has zero group average, so
+(S86), applied componentwise, proves the active-space assertion.
+The constant normalization of the multiplicity norm cancels.
+For $p=1$ the remaining-label representation is trivial, exactly
+the standard sector excluded from this argument.
+
+For extra unused coordinates, orthogonal Hermite degree $m$
+multiplies the normalized interaction by $\rho^m$. Its norm is at
+most $\rho^m\theta_{k,\rho}\le\theta_{k,\rho}$, with unchanged
+local coefficient. Parseval gives (S87) in every ambient dimension.
+No mass constraint is present in these nonstandard types.
+
+The checker verifies the three-label group-algebra corner and its
+Young-model projections in a finite range, the exponential
+factorization and selected half-facet comparisons without ordering
+the other coordinates. It rejects the wrong half-facet and the
+positive-projector/operator-ordering shortcut. The unrestricted
+branching, strict supersolution, nontrivial-type spectral transfer
+and whole-block theorem are written internal proofs, without
+independent replay, external review or formal verification.
+
+## Antisymmetry gives an exact hierarchy by representation height
+
+For a label set $S$, write
+$E_S=(|S|!)^{-1}\sum_{g\in S_S}\operatorname{sgn}(g)R_\lambda(g)$.
+These are orthogonal sign projections, with $E_{\{1,2\}}=P$ and
+$E_{\{1,2,l\}}=A_l$. If $|S|=m$, $r\notin S$ and
+$t=(jr)$ for any $j\in S$, the exact group-algebra identities are
+
+\[
+ E_SR(t)E_S=\frac1mE_S-\frac{m+1}{m}E_{S\cup\{r\}},\qquad
+ E_SE_{tS}E_S=\frac1{m^2}E_S+
+                 \left(1-\frac1{m^2}\right)E_{S\cup\{r\}}.
+\]
+
+Indeed right cosets of $S_S$ in $S_{S\cup\{r\}}$ give
+$(m+1)E_{S\cup\{r\}}=E_S-\sum_{i\in S}E_SR((ir))$.
+Multiplying on the right by $E_S$, all $m$ compressed transpositions
+are equal by conjugation inside $S_S$. This proves the first identity.
+Squaring it gives the second because the larger sign projection is
+nested in $E_S$. For three-label projections in a representation with
+at most three rows this gives $A_lA_rA_l=A_l/9$ for distinct $l,r$.
+The possible four-label sign subspace is exactly the correction to
+that relation.
+
+There is also an exact Gaussian-kernel hierarchy. Take
+$S=\{1,\ldots,m\}$ with $2\le m\le k$, and put $u_S=E_Sh$ for
+a full-facet $G_0$-equivariant $V^-$-valued field $h$. Define the
+scalar kernel
+
+\[
+ L_m(x,y)=2M_0(x,y)-2\sum_{r=3}^mM_r(x,y)
+  +\sum_{l=m+1}^k\left[M_l(x,y)
+                  -\sum_{r=3}^mM_l(x,(rl)y)\right].
+\]
+
+Then
+
+\[
+ \boxed{E_SK_\lambda h
+   =L_m(E_Sh)-(m+1)\sum_{l=m+1}^k
+       \int_{F_{12}}M_l(\,\cdot\,,y)
+                        E_{S\cup\{l\}}h(y)d\nu_{12}(y).}
+ \tag{S88}
+\]
+
+To verify every term, for $l\in S\setminus\{1,2\}$ the transport
+has $E_ST_l=-2E_S$. For $l\notin S$, multiply the preceding coset
+identity by $P$. The two terms indexed by $1,2$ combine to $E_ST_l$,
+and all the other transpositions belong to $G_0$. Thus
+
+\[
+ E_ST_lh(y)=u_S(y)-\sum_{r=3}^mu_S((rl)y)
+                         -(m+1)E_{S\cup\{l\}}h(y).
+\]
+
+Changing $y\mapsto(rl)y$ in those integrals proves (S88), with
+unchanged surface measure and facet. It first holds for bounded
+fields and extends by the bounded Gaussian operators. At $m=2$
+it is (S85); at $m=k$ it is the full sign kernel. If $\lambda$ has
+exactly $m$ rows, every higher sign projection in (S88) vanishes
+by branching, and the projected field satisfies a scalar intertwining.
+This statement by itself does not assert that the highest projection
+detects every field in an arbitrary-height multiplicity space.
+
+## All three-row blocks embed into one scalar spectral problem
+
+The triple projections do detect every higher-row field, with a
+quantitative bound. Put $q=k-2$ and
+$c_\lambda=\sum_{(i,j)\in\lambda}(j-i)$, the sum of box contents.
+On a remaining-label branch $V_\mu\subset V_\lambda^-$ from (S4),
+
+\[
+ \sum_{l=3}^kA_l
+       =\frac{k-3-c_\lambda+c_\mu}{3}I.
+\]
+
+For completeness, let $C_k$ be the sum of all transpositions and
+$C_{G_0}$ the sum of those on the remaining labels. On $V^-$,
+$C_k=-I+\sum_lT_l+C_{G_0}$; substitute (S85).
+The classical content eigenvalues of the transposition sums give
+the displayed formula. They follow by summing the Young--Jucys--Murphy
+elements: Vershik--Okounkov, retained version math/0503040v3,
+definition and (2.1) on printed page 10, and the content-spectrum
+statement in Theorem 5.8 on page 22. These exact statements were
+inspected; no Gaussian spectral comparison is imported from them.
+
+If $\lambda/\mu$ removes boxes from rows $i<j$, this eigenvalue is
+
+\[
+ \frac{\sum_{r\notin\{i,j\}}\lambda_r+i+j-3}{3}.
+\]
+
+It is zero in two-row shapes and is at least $1/3$ in every shape
+with three or more rows. Hence these sign subspaces span $V^-$.
+For equivariant fields in any such higher-row block this also gives
+$\|A_3h\|^2\ge\|h\|^2/(3q)$ by group averaging.
+For $\lambda=(a,b,c)$ with three positive rows, the possible
+eigenvalues are $c/3,(b+1)/3,(a+2)/3$, omitting any inadmissible
+strip removal. In particular, for $G_0$-equivariant fields,
+
+\[
+ \frac{c}{3q}\|h\|^2\le\|A_3h\|^2
+        =\frac1q\sum_{l=3}^k\|A_lh\|^2
+                     \le\frac{a+2}{3q}\|h\|^2.
+\]
+
+The middle equality uses $A_l=R((3l))A_3R((3l))$ and a
+measure-preserving change of variables. Thus $h\mapsto A_3h$ is
+a bounded injection with closed image on the full multiplicity space.
+The same bounds hold after normalization by $\sqrt{a_\rho}$,
+since this scalar multiplier is $G_0$-invariant.
+
+Set $\mathcal L_3=a_\rho^{-1/2}L_3a_\rho^{-1/2}$ on scalar
+$L^2(F_{12},\nu_{12})$. The explicit kernel is
+
+\[
+ L_3=2M_0-2M_3+
+                \sum_{l=4}^k\bigl[M_l-M_l(\,\cdot\,,(3l)\,\cdot\,)\bigr].
+\]
+
+It is compact but is not asserted to be self-adjoint in this scalar
+inner product. For every three-row $\lambda$, (S88) and the closed
+injection give
+
+\[
+ \boxed{A_3(a_\rho^{-1/2}K_\lambda a_\rho^{-1/2})
+                =\mathcal L_3 A_3.}
+ \tag{S89}
+\]
+
+In particular every nonzero eigenvalue of every normalized three-row
+block is an eigenvalue of this one scalar operator: a nonzero
+component of $A_3h$ supplies a scalar eigenfunction. The positive
+function $\sqrt{a_\rho}(x_2-x_3)$ has eigenvalue $1$, by applying
+the intertwining to the exact rotation field.
+
+The three-label sign fiber transforms under
+$H_3=S_{\{4,\ldots,k\}}$ by the shape $(a-1,b-1,c-1)$, from the
+vertical three-strip rule. Consequently the scalar components lie
+in $H_3$ types with at most three rows. The scalar kernel commutes
+with $H_3$. Let $\mathscr U_3$ be the closed sum of those isotypic
+subspaces of scalar $L^2(F_{12},\nu_{12})$. It would suffice to
+bound the spectral radius of $\mathcal L_3|_{\mathscr U_3}$ by $1$
+and prove that its fixed space consists only of the positive
+function above. The sign fiber has a fixed vector only for the
+rotation hook. Thus these scalar assertions would exclude eigenvalue
+$1$ in every other three-row block; compactness would give a strict
+gap. Neither scalar assertion is proved here. A bound on the whole
+scalar space is stronger than this sufficient condition, and no
+corresponding sufficiency claim for every higher-row block follows
+from (S89).
+
+The positive-kernel argument of (S86) cannot be repeated for this
+scalarization. Already at $k=5$, take
+
+\[
+ x=(7,7,-6,0,-8),\qquad y=(27,27,7,-23,-38)/5.
+\]
+
+Both lie in the facet interior and have $x_4>x_5$, $y_4>y_5$.
+At $\tau=5\log2$, the difference
+$[L_3(x,y)-L_3(x,(45)y)]/\Gamma_\rho(x,y)$ has leading term
+$-2^{680}$. Its positive terms have coefficient sum $8$ and
+exponents at most $650$, so it is less than
+$-2^{680}+8\,2^{650}<0$.
+Rescaling both points preserves this sign at every fixed positive
+correlation. This is a pointwise obstruction to that particular
+reflection proof, not an interface instability: the five-cell mixed
+block is already positive by (S74). The spectral problem may require
+a different cone or a direct operator estimate.
+
+The exact checker verifies nested coset identities in specified finite
+groups, the transposition-content frame identities and spectral
+polynomials in finite Young models, and the displayed negative
+reflection witness. The general coset proof, branching/content
+application, bounded Gaussian intertwining and closed-image spectral
+inclusion are the unrestricted written arguments. No new all-correlation
+gap is inferred from this reduction.
+
 ## Monotonicity and the other global obligations
 
 **Raw-deficit obstruction.** For every $k\ge2$, the unnormalized
@@ -3032,13 +3545,22 @@ The remaining targets are distinct:
   nonlocal Mehler inequality; the special adjacent-facet structure
   must enter any use of that route.
   The complete rotation hook has the all-correlation gap (S56).
-  The $(k-2,2)$ block has the strict gap (S60), and every sign block is
+  Every nonstandard two-row block has the strict gap (S87), extending
+  the $(k-2,2)$ case (S60), and every sign block is
   settled by (S61)--(S66). The third exterior hook is settled by (S73).
   In four and five cells only (S51) remains, by (S76) and its four-cell
-  analogue. For $k\ge6$ the other blocks also need estimates outside
+  analogue. For $k\ge6$ the other blocks with at least three rows
+  also need estimates outside
   the explicit Hermite-floor ranges (S80)--(S81). At fixed correlation
   those ranges cover every sufficiently deep representation, leaving
   only partitions with $O_\rho(\log k)$ boxes outside their first row.
+  Equations (S88)--(S89) give the exact antisymmetry hierarchy and a
+  common scalar spectral reduction for every three-row block. The
+  required scalar spectral-radius and fixed-space bounds are open;
+  the next simple odd-kernel positivity argument is explicitly false.
+  The exact tied-height reduction (S84) supplies a two-variable
+  diagnostic kernel with its original mass constraint; its restricted
+  sign problem is also open and would not by itself settle (S51).
   Equation (S42) then handles every ambient dimension.
   Equation (S23) and the full three-cell interface problem are settled
   by (S29)--(S38).
@@ -3083,7 +3605,7 @@ degree, insufficient positivity hypotheses and the $k=3,4$ exceptional
 scopes. It does not verify the imported Hermitian transition theorem.
 For (S67)--(S69) it checks the free group-algebra identity through $k=7$,
 exact rational Young-generator Coxeter relations and selected positive
-immanant matrices for every partition through $k=5$ and four partitions
+immanant matrices for every partition through $k=5$ and six partitions
 at $k=6$. The unrestricted matrix-positivity theorem uses the two retained
 primary statements and the written compression argument.
 It also verifies the exact two-atom mass-weight counterexample following
@@ -3125,6 +3647,24 @@ and rational endpoint substitutions are checked, with controls that
 reject inclusion of an unbalanced constant term or an unsubtracted
 first-moment term. The unrestricted nonnegative series comparison
 and operator-norm conclusion are the written argument.
+For (S84), exact conditional Gaussian matrices at four rational
+correlations and formal surface/differentiation coefficient controls
+through fourteen cells reject independent adjacent normals and an
+omitted adjacent term. They do not certify the surface integrals,
+compact compression, trace decomposition or any standard-sector sign.
+For (S85)--(S87), the finite Young models check the triple-sign
+projection and scalar adjacent corner for two-row shapes. Exact
+exponential comparisons on selected half-facet points and the
+exceptional-pair factorization test the one-reflection argument
+without imposing a full order on the remaining labels. A negative
+two-point adjacent-kernel determinant rejects the termwise operator
+ordering shortcut. These checks do not certify the all-$k$ branching,
+compact supersolution or nontrivial-type spectral transfer proofs.
+For (S88)--(S89), formal coset/corner identities are checked in finite
+groups through $S_6$, frame/content identities in the finite Young
+models, and an exact negative five-cell scalar-reflection witness.
+The all-size coset proof, imported content formula, closed-image
+intertwining and full spectral inclusion are written arguments.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

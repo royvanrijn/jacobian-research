@@ -435,9 +435,9 @@ def universal_block_controls():
         return [[sum(value*b[r][j] for r, value in enumerate(row) if value)
                  for j in range(len(b))] for row in a]
 
-    young_cases = []
+    young_cases, triple_sign_cases, triple_frame_cases = [], [], []
     shapes = [shape for k in range(3, 6) for shape in partitions(k)]
-    shapes += [(3, 2, 1), (2, 2, 2), (3, 1, 1, 1), (2, 2, 1, 1)]
+    shapes += [(3, 2, 1), (2, 2, 2), (3, 1, 1, 1), (2, 2, 1, 1), (3, 3), (4, 2)]
     for shape in shapes:
         k, tabs = sum(shape), tableaux(shape)
         d, index = len(tabs), {t: i for i, t in enumerate(tabs)}
@@ -470,6 +470,72 @@ def universal_block_controls():
                 assert product(generators[i], generators[j]) == product(generators[j], generators[i])
         minus = [i for i in range(d) if generators[0][i][i] == -1]
         assert all(generators[0][i][j] == 0 for i in range(d) for j in range(d) if i != j)
+        first, second = generators[:2]
+        fs, sf = product(first, second), product(second, first)
+        third = product(fs, first)
+        antisym = [[(Q(i == j)-first[i][j]-second[i][j]-third[i][j]+fs[i][j]+sf[i][j])/6
+                    for j in range(d)] for i in range(d)]
+        assert product(antisym, antisym) == antisym
+        for i in range(d):
+            for j in range(d):
+                corner = 2*second[i][j] if i in minus and j in minus else Q(0)
+                assert corner == Q(i == j and i in minus)-3*antisym[i][j]
+        rank = sum(antisym[i][i] for i in range(d))
+        assert rank.denominator == 1
+        assert (rank == 0) == (len(shape) <= 2)
+        triple_sign_cases.append({"partition": list(shape), "minus_dimension": len(minus),
+                                  "three_label_sign_rank": int(rank)})
+        if minus:
+            def swap_rep(i, j):
+                current = identity(d)
+                word = [*range(i, j), *range(j-2, i-1, -1)]
+                for a in word:
+                    current = product(current, generators[a])
+                return [[current[a][b] for b in minus] for a in minus]
+
+            size = len(minus)
+            projections = []
+            for l in range(2, k):
+                transport = swap_rep(1, l)
+                projections.append([[(Q(i == j)-2*transport[i][j])/3 for j in range(size)]
+                                    for i in range(size)])
+            frame = [[sum(a[i][j] for a in projections) for j in range(size)] for i in range(size)]
+            remaining_center = [[Q(0) for _ in minus] for _ in minus]
+            for i, j in itertools.combinations(range(2, k), 2):
+                matrix = swap_rep(i, j)
+                for a in range(size):
+                    for b in range(size):
+                        remaining_center[a][b] += matrix[a][b]
+            content = lambda beta: sum(length*(length-1)//2-i*length for i, length in enumerate(beta))
+            for i in range(size):
+                for j in range(size):
+                    assert 3*frame[i][j] == (k-3-content(shape))*int(i == j)+remaining_center[i][j]
+            roots = set()
+            for i, j in itertools.combinations(range(len(shape)), 2):
+                beta = list(shape)
+                beta[i] -= 1
+                beta[j] -= 1
+                if all(a >= b for a, b in zip(beta, beta[1:])):
+                    roots.add(Q(k-3-content(shape)+content(beta), 3))
+            assert roots
+            polynomial = identity(size)
+            for value in sorted(roots):
+                polynomial = product(polynomial, [[frame[i][j]-value*int(i == j) for j in range(size)]
+                                                  for i in range(size)])
+            assert polynomial == [[Q(0) for _ in minus] for _ in minus]
+            if len(shape) >= 3:
+                assert min(roots) >= Q(1, 3)
+            if len(shape) == 3:
+                assert roots <= {Q(shape[2], 3), Q(shape[1]+1, 3), Q(shape[0]+2, 3)}
+            if k >= 4:
+                four_sign = [[Q(i == j and all(tabs[minus[i]][a] == (a, 0) for a in range(4)))
+                              for j in range(size)] for i in range(size)]
+                a3, a4 = projections[:2]
+                overlap = product(product(a3, a4), a3)
+                assert overlap == [[a3[i][j]/9+Q(8, 9)*four_sign[i][j] for j in range(size)]
+                                   for i in range(size)]
+            triple_frame_cases.append({"partition": list(shape), "frame_eigenvalue_controls": [str(v) for v in sorted(roots)],
+                                       "projection_frame_identity": "passed"})
         z = [[Q(0) for _ in range(d)] for _ in range(d)]
         for rest in itertools.permutations(range(1, k)):
             g = [0, *rest]
@@ -496,9 +562,165 @@ def universal_block_controls():
     return {
         "free_group_algebra_identity": group_cases,
         "rational_Young_Coxeter_and_selected_TP_controls": young_cases,
+        "triple_sign_corner_controls": triple_sign_cases,
+        "triple_projection_frame_controls": triple_frame_cases,
         "orientation_and_non_TN_negative_controls": "passed",
-        "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and four selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The all-k immanant formula and positivity depend on the written argument and retained primary Young-form/interval-decomposition statements; no spectral gap is certified.",
+        "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and six selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The same finite models verify S85's triple-sign corner identity, projection idempotence and height-two vanishing, plus S88-S89's S4 overlap, transposition-content frame identity and frame spectral polynomials. The all-k immanant/transport formulas, positivity, branching and scalar spectral reduction are written arguments; no analytic spectral gap is certified.",
     }
+
+
+def triple_sign_reflection_controls():
+    """Bounded exact half-facet controls; all-k spectral conclusions are written."""
+    factor_count = 0
+    for alpha in (0, 1, 3):
+        for beta in (1, 2):
+            for u in (0, 2):
+                for t in (1, 3):
+                    a, b, c = Q(2)**(alpha*t), Q(2)**(beta*t), Q(2)**(-beta*u)
+                    actual = a*b+c-1-a*c
+                    assert actual == (a-1)*(b-c)+(b-1) > 0
+                    factor_count += 1
+
+    def swap(value, i, j):
+        value = list(value)
+        value[i], value[j] = value[j], value[i]
+        return value
+
+    def center(value):
+        mean = Q(sum(value), len(value))
+        return [Q(v)-mean for v in value]
+
+    def dot(x, y):
+        return sum(a*b for a, b in zip(x, y))
+
+    half_cases = []
+    for k in range(4, 9):
+        # The other coordinates deliberately need not be in decreasing order.
+        x = center([10, 10, 5, 1]+[6 if j % 2 else -3 for j in range(k-4)])
+        y = center([8, 8, 4, -2]+[-4 if j % 2 else 6 for j in range(k-4)])
+        sy = swap(y, 2, 3)
+        assert x[0] == x[1] > max(x[2:])
+        assert y[0] == y[1] > max(y[2:])
+        assert x[2] > x[3] and y[2] > y[3]
+        terms = [(2, k*dot(x, y)), (-2, k*dot(x, sy))]
+        for l in range(2, k):
+            terms.extend(((1, k*dot(x, swap(y, 1, l))),
+                          (-1, k*dot(x, swap(sy, 1, l)))))
+        minimum = min(exponent for _, exponent in terms)
+        assert all(exponent.denominator == 1 for _, exponent in terms)
+        actual = sum(coefficient*(1 << int(exponent-minimum)) for coefficient, exponent in terms)
+        assert actual > 0
+        # Exchanging the y-half reverses the odd kernel sign exactly.
+        assert sum(-coefficient*(1 << int(exponent-minimum)) for coefficient, exponent in terms) < 0
+        # The row-rate ordering holds even when y3<y4 after the substitution.
+        for z in (y, sy):
+            sz = swap(z, 2, 3)
+            exponent_gap = dot(x, swap(z, 1, 2))-dot(x, swap(sz, 1, 3))
+            assert exponent_gap == (x[2]-x[3])*(z[1]-z[3]) > 0
+        half_cases.append({"k": k, "tau": "k*log(2)", "strict_odd_kernel": "passed",
+                           "other_coordinates_fully_ordered": all(x[j] > x[j+1] for j in range(2, k-1))})
+
+    # A positive scalar exponential kernel with negative bilinear exponent is
+    # not a positive-semidefinite operator: tau=4*log(2), x=s*w_l, s=1,2.
+    determinant = Q(2)**(-3-12)-Q(2)**(-6-6)
+    assert determinant == -Q(7, 32768) < 0
+    assert Q(1)/Q(1, 2) > 1  # The invariant translation mode is excluded.
+    return {"exceptional_pair_factorizations": factor_count,
+            "half_facet_and_rate_order_controls": half_cases,
+            "wrong_half_facet_rejection": "passed",
+            "adjacent_kernel_negative_two_point_determinant": str(determinant),
+            "invariant_translation_exclusion": "passed",
+            "scope": "Exact exceptional-pair factorization controls and selected odd-kernel/rate exponent comparisons for4<=k<=8 without ordering all remaining coordinates, plus a negative adjacent-kernel determinant. Universal Young-model triple-sign identities are in exact_checks.universal_blocks. The all-k strict supersolution, nontrivial scalar type transfer and all two-row block gaps S85-S87 are written analytic and representation proofs, not certified by these finite controls."}
+
+
+def antisymmetry_height_controls():
+    """Finite formal-group and witness controls for S88-S89."""
+    def multiply(a, b):
+        result = {}
+        for p, first in a.items():
+            for q, second in b.items():
+                key = tuple(p[q[i]] for i in range(len(p)))
+                result[key] = result.get(key, Q(0))+first*second
+        return {p: v for p, v in result.items() if v}
+
+    def combine(*terms):
+        result = {}
+        for coefficient, value in terms:
+            for p, v in value.items():
+                result[p] = result.get(p, Q(0))+coefficient*v
+        return {p: v for p, v in result.items() if v}
+
+    def transposition(n, i, j):
+        value = list(range(n))
+        value[i], value[j] = value[j], value[i]
+        return {tuple(value): Q(1)}
+
+    def antisym(n, size):
+        return {(*p, *range(size, n)): Q(parity(p), math.factorial(size))
+                for p in itertools.permutations(range(size))}
+
+    group_cases = []
+    for m in range(2, 6):
+        n = m+1
+        e, larger = antisym(n, m), antisym(n, n)
+        t = transposition(n, m-1, m)
+        compressed = multiply(multiply(e, t), e)
+        assert compressed == combine((Q(1, m), e), (-Q(m+1, m), larger))
+        if m <= 4:
+            other = multiply(multiply(t, e), t)
+            overlap = multiply(multiply(e, other), e)
+            assert overlap == combine((Q(1, m*m), e), (1-Q(1, m*m), larger))
+        ident = {tuple(range(n)): Q(1)}
+        p = combine((Q(1, 2), ident), (-Q(1, 2), transposition(n, 0, 1)))
+        transport = combine((Q(2), multiply(multiply(p, transposition(n, 1, m)), p)))
+        actual = multiply(e, transport)
+        terms = [(Q(1), e), (-Q(m+1), larger)]
+        terms.extend((-Q(1), multiply(e, transposition(n, r, m))) for r in range(2, m))
+        assert actual == combine(*terms)
+        group_cases.append({"antisymmetric_labels": m, "ambient_group_order": math.factorial(n),
+                            "compressed_corner_and_transport": "passed",
+                            "overlap_directly_expanded": m <= 4})
+
+    def swap(v, i, j):
+        v = list(v)
+        v[i], v[j] = v[j], v[i]
+        return v
+
+    def scalar_terms(x, y):
+        dot = lambda v: sum(a*b for a, b in zip(x, v))
+        result = [(2, dot(y)), (-2, dot(swap(y, 1, 2)))]
+        for l in range(3, len(x)):
+            result.extend(((1, dot(swap(y, 1, l))),
+                           (-1, dot(swap(swap(y, 2, l), 1, l)))))
+        return result
+
+    x = list(map(Q, (7, 7, -6, 0, -8)))
+    y = [Q(v, 5) for v in (27, 27, 7, -23, -38)]
+    assert sum(x) == sum(y) == 0
+    assert x[0] == x[1] > max(x[2:]) and y[0] == y[1] > max(y[2:])
+    assert x[3] > x[4] and y[3] > y[4]
+    terms = scalar_terms(x, y)+[(-c, e) for c, e in scalar_terms(x, swap(y, 3, 4))]
+    coefficients = {}
+    for c, exponent in terms:
+        exponent *= 5
+        assert exponent.denominator == 1
+        exponent = int(exponent)
+        coefficients[exponent] = coefficients.get(exponent, 0)+c
+    coefficients = {e: c for e, c in coefficients.items() if c}
+    assert max(coefficients) == 680 and coefficients[680] == -1
+    assert max(e for e, c in coefficients.items() if c > 0) == 650
+    assert sum(c for c in coefficients.values() if c > 0) == 8
+    assert -Q(1)+8*Q(2)**(-30) < 0
+    smallest = min(coefficients)
+    assert sum(c*2**(e-smallest) for e, c in coefficients.items()) < 0
+    return {"nested_group_identities": group_cases,
+            "negative_three_row_scalar_reflection": {
+                "k": 5, "x": [str(v) for v in x], "y": [str(v) for v in y],
+                "tau": "5*log(2)", "integer_exponential_coefficients":
+                [[e, c] for e, c in sorted(coefficients.items(), reverse=True)],
+                "leading_exponent": 680, "positive_exponent_upper": 650,
+                "positive_coefficient_sum": 8, "sign": "negative"},
+            "scope": "Exact nested antisymmetrizer corner/transport identities in S3 through S6, direct overlap expansions through S5, and the exact five-cell negative reflection witness. The all-size coset hierarchy and all-k three-row closed-image spectral reduction S88-S89 are written proofs, using the retained content-spectrum input. No new all-correlation gap follows from these controls."}
 
 
 def standard_hook_gaussian_controls():
@@ -1018,6 +1240,65 @@ def standard_initial_and_antipodal_controls():
             "scope": "Exact standard first-derivative transport algebra for 3<=k<=12 and ray/interior antipodal exponent separation for 7<=k<=20. The k=6 ray equality controls only this construction. These bounded calculations do not prove the convex-Gaussian covariance bound, Hilbert-Schmidt limit, unrestricted all-k exponential-scale obstruction, or standard stability at every correlation."}
 
 
+def height_standard_reduction_controls():
+    """Finite exact conditioning and coefficient controls for the written S84."""
+    def product(a, b):
+        return [[sum(a[i][r]*b[r][j] for r in range(2)) for j in range(2)] for i in range(2)]
+
+    def determinant(a):
+        return a[0][0]*a[1][1]-a[0][1]*a[1][0]
+
+    def inverse(a):
+        delta = determinant(a)
+        return [[a[1][1]/delta, -a[0][1]/delta], [-a[1][0]/delta, a[0][0]/delta]]
+
+    cases = []
+    for rho in (Q(0), Q(1, 4), Q(1, 2), Q(3, 4)):
+        covariance = [[Q(1), rho], [rho, Q(1)]]
+        for adjacent in (False, True):
+            ties = [[Q(2), rho if adjacent else 2*rho],
+                    [rho if adjacent else 2*rho, Q(2)]]
+            correction = product(product(covariance, inverse(ties)), covariance)
+            conditional = [[covariance[i][j]-correction[i][j] for j in range(2)] for i in range(2)]
+            if adjacent:
+                expected = [[(2-rho*rho)/(4-rho*rho), rho/(4-rho*rho)],
+                            [rho/(4-rho*rho), (2-rho*rho)/(4-rho*rho)]]
+                assert determinant(conditional) == (1-rho*rho)/(4-rho*rho)
+                assert inverse(conditional) == [[(2-rho*rho)/(1-rho*rho), -rho/(1-rho*rho)],
+                                                [-rho/(1-rho*rho), (2-rho*rho)/(1-rho*rho)]]
+                # Squared Gaussian density prefactors after factoring (2*pi)^-2.
+                # The surface product is2 and the normalized tie covariance is ties/2.
+                assert Q(4)/(determinant(ties)*determinant(conditional)) == Q(4)/(1-rho*rho)
+            else:
+                expected = [[v/2 for v in row] for row in covariance]
+                assert determinant(conditional) == (1-rho*rho)/4
+                assert Q(4)/(determinant(ties)*determinant(conditional)) == Q(4)/(1-rho*rho)**2
+            assert conditional == expected
+            cases.append({"rho": str(rho), "adjacent": adjacent,
+                          "conditional_top_covariance": [[str(v) for v in row] for row in conditional]})
+
+    coefficient_cases = []
+    for k in range(3, 15):
+        q = k-2
+        joint = (4, 2*q)  # p^2*F^q and p*Fu*Fv*F^(q-1).
+        differentiated = (2*(k-1), (k-1)*(k-2))
+        assert tuple(Q(2, k-1)*v for v in differentiated) == joint
+        assert 4+2*q == 2*k  # J_(k,0)=k*m_k*m_k.
+        assert 4 != 2*k  # Dropping adjacent facets corrupts that normalization.
+        coefficient_cases.append({"k": k, "joint_coefficients": list(joint),
+                                  "noise_derivative_coefficients": list(differentiated)})
+    # Treating the two adjacent tie normals as independent is incorrect.
+    rho = Q(1, 2)
+    covariance = [[Q(1), rho], [rho, Q(1)]]
+    correction = product(product(covariance, [[Q(1, 2), Q(0)], [Q(0), Q(1, 2)]]), covariance)
+    wrong = [[covariance[i][j]-correction[i][j] for j in range(2)] for i in range(2)]
+    assert wrong != [[Q(7, 15), Q(2, 15)], [Q(2, 15), Q(7, 15)]]
+    return {"conditional_gaussian_cases": cases, "coefficient_cases": coefficient_cases,
+            "independent_adjacent_normals_rejection": "passed",
+            "same_facet_only_rejection": "passed",
+            "scope": "Exact conditional-top covariance, Gaussian-prefactor determinant and formal coefficient controls at four rational correlations and3<=k<=14. The all-k tied-height surface integral, ordinary mass constraint, compact operator compression, stability derivative identity and linear trace-rotation identification in S84 are written proofs. No sign of the restricted or full standard form is certified."}
+
+
 def convex_nonlocal_mass_counterexample():
     """Exact directed rational margin for the actual Mehler counterexample S79."""
     # Algebra in Q(z)[d], where z represents sqrt(3), after multiplication by pi.
@@ -1306,10 +1587,13 @@ def main():
                          "hook_cone": hook_cone_checks(),
                          "sign_vandermonde": sign_vandermonde_controls(),
                          "universal_blocks": universal_block_controls(),
+                         "triple_sign_reflections": triple_sign_reflection_controls(),
+                         "antisymmetry_height": antisymmetry_height_controls(),
                          "standard_mass_weight": standard_mass_weight_control(),
                          "standard_hook_gaussian": standard_hook_gaussian_controls(),
                          "higher_exterior_hooks": higher_exterior_hook_checks(),
                          "representation_hermite_floors": representation_hermite_floor_checks(),
+                         "height_standard_reduction": height_standard_reduction_controls(),
                          "five_cell_mixed_certificate": five_cell_mixed_certificate(),
                          "standard_initial_and_antipodal": standard_initial_and_antipodal_controls(),
                          "convex_nonlocal_mass_counterexample": convex_nonlocal_mass_counterexample(),

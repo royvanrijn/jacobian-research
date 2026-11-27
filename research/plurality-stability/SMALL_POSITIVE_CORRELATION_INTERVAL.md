@@ -12,6 +12,9 @@ the same conclusion for **every fixed $k\ge2$**, with a threshold depending
 on $k$ but independent of the ambient dimension $d\ge k-1$. It includes the
 all-cell interface-kernel argument and the dimension-dependent tail estimates;
 the four-cell proof is retained explicitly as its original specialization.
+The [dimension-independent local comparison](#dimension-independent-local-comparison)
+below proves a nearby-partition theorem without the global first-moment
+input, using the same active-space transfer estimates.
 
 **Three-dimensional rigidity.** There exists $\rho_0>0$ such that, for every
 $0<\rho\le\rho_0$, every balanced measurable four-cell partition $A$ of
@@ -705,6 +708,224 @@ applications to (C9)--(C12). The $k=2$ zero-dimensional facet and trivial
 balanced speed space have been treated explicitly. No finite computation
 or source-consistency check establishes the analytic theorem, and no
 all-positive-correlation conclusion or publication is asserted.
+
+## Dimension-independent local comparison
+
+Fix \(k\ge2\), let \(n=k-1\), and write \(d_k(A)\) for the infimum of
+\(\sum_i\gamma_d(A_i\triangle T_i)\) over the cylindrical regular-simplex
+orbit in \(\mathbb R^d\), with labels included. For every \(0<c<2/k\)
+there are \(\eta,\rho_0,C>0\), depending only on \(k,c\), such that every
+balanced measurable partition in any \(d\ge n\) with \(d_k(A)<\eta\)
+satisfies, for \(0<\rho\le\rho_0\),
+
+\[
+ S_\rho(T)-S_\rho(A)\ \ge\ c\,\mathcal L_\rho(A;T)
+ \ \ge\ C\rho\,d_k(A)^2.
+ \tag{L1}
+\]
+
+Here \(T\) is the simplex whose moment matrix is closest to that of \(A\),
+and \(\mathcal L_\rho(A;T)\) is the loss against its exact OU scores.
+The proof applies to arbitrary nearby partitions and uses neither
+global first-moment optimality nor dimension reduction for maximizers.
+The covariance estimate below gives the part of the local gap (S82)
+needed in the aligned gauge, directly from convexity of the facets.
+The general switching-surface comparison cited above does not factor
+out Gaussian directions transverse to an active space.
+
+### An interface estimate in the moment gauge
+
+Identify the active space with \(E=\mathbf1^\perp\subset\mathbb R^k\).
+Let \(P\) be the orthogonal projection onto \(E\) and \(e_i\) the
+coordinate vectors of \(\mathbb R^k\). The regular moment rows are
+\(b_i^*=aPe_i\), with \(a>0\) and
+\(\ell=\sqrt2a\). Indeed, symmetry fixes each moment along \(Pe_i\),
+and Gaussian flux gives \(b_i^*=v\sum_{j\ne i}(e_i-e_j)/\sqrt2\),
+where \(v=\nu_{ij}(F_{ij})\) is the common facet area. In particular
+\(\ell=kv\).
+
+For a balanced facet speed \(f\), suppose that \(H=\mathcal D f\),
+written as a \(k\times k\) matrix with rows in \(E\), is symmetric.
+Both its row and column sums vanish. With \(p_{ij}=e_i-e_j\), the facet
+mean of \(p_{ij}^THx\) is \(\alpha(H_{ii}-H_{jj})\): the conditional
+mean of \(x\) on the facet is \(\alpha P(e_i+e_j)\) by the
+permutations preserving the unordered pair. Here \(\alpha\) is the
+same for all pairs and may be taken to be zero when \(k=2\).
+Balance cancels the pairing of these constant differences with \(f\).
+
+The conditional covariance on \(F_{ij}\) is bounded by the identity
+on its plane. In plane coordinates, the logarithm of the moment
+generating function of this conditional Gaussian is
+\(|u|^2/2+\log Z(u)-\log Z(0)\), where
+\(Z(u)=\int_{F_{ij}}\phi_{n-1}(x-u)\,dx\).
+Prékopa's marginal theorem gives log concavity of \(Z\) because
+\(\phi_{n-1}(x-u)\) is jointly log concave and the facet is convex.
+The Hessian at zero gives the covariance bound. The point facet for
+\(k=2\) has zero covariance. [Prékopa, Theorem 6, p. 342](https://rutcor.rutgers.edu/Prekopa/pdf/SCIENT2.pdf).
+
+Let \(\Pi_{ij}\) be orthogonal projection onto the pair plane in \(E\).
+Subtracting the facet means and applying Cauchy–Schwarz gives
+
+\[
+ \|H\|_F^2
+ =\sum_{i<j}\int_{F_{ij}} f_{ij}\,p_{ij}^THx\,d\nu_{ij}
+ \le \|f\|_{\mathcal H}
+       \left(v\sum_{i<j}\|\Pi_{ij}Hp_{ij}\|^2\right)^{1/2}.
+\]
+
+The unprojected sum is \(k\|H\|_F^2\) since
+\(\sum_{i<j}p_{ij}p_{ij}^T=kP\). The removed sum is
+\(\tfrac12\sum_{i<j}h_{ij}^2\), where \(h_{ij}=p_{ij}^THp_{ij}\).
+The symmetric matrix \(J=(h_{ij})\) has zero diagonal and
+\(H=-PJP/2\). Thus \(\sum_{i<j}h_{ij}^2\ge2\|H\|_F^2\).
+Using \(v=\ell/k\) proves
+
+\[
+ \|\mathcal D f\|_F^2\le (1-1/k)\ell\|f\|_{\mathcal H}^2
+ \qquad (\mathcal D f=(\mathcal D f)^T).
+ \tag{L2}
+\]
+
+### Uniform alignment and the active flux limit
+
+Suppose a sequence approaches the simplex orbit, possibly with varying
+ambient dimensions. Choose comparison simplices \(T^0\) with
+\(\sum_i\gamma_d(A_i\triangle T_i^0)\to0\). Projection onto the first
+Hermites gives
+\(\|B_A-B_{T^0}\|_F^2\le\sum_i\gamma_d(A_i\triangle T_i^0)\).
+For the closest regular moment matrix \(B_*\),
+\(\|B_*-B_{T^0}\|_F\le2\|B_A-B_{T^0}\|_F\). The regret of the labels
+of \(T^0\) against the linear scores of \(B_*\) is precisely
+\(\tfrac12\|B_*-B_{T^0}\|_F^2\), since the two regular matrices have
+the same Frobenius norm. The Gaussian mass of the strip where the largest
+and second-largest \(B_*\) scores differ by at most \(u\) is at most
+\(C_k u\) by a union bound over pairs. Off the strip a changed label
+costs at least \(u\). Thus the simplices of \(B_*\) and \(B_{T^0}\)
+approach one another in label measure, uniformly in \(d\).
+
+Rotate \(B_*\) to \(a[P,0]\) on \(E\oplus\mathbb R^{d-n}\) and write
+points as \((x,z)\). Orthogonality of \(B_A-B_*\) to the moment orbit
+follows by differentiating the squared distance at a minimum.
+Active skew rotations give all skew active moment matrices as tangents.
+Mixed rotations give every centered transverse moment block, since
+\(B_*=a[P,0]\) has rank \(n\). Hence the active block of \(B_A-B_*\)
+is symmetric and the transverse block vanishes.
+
+Along a sequence with \(\rho\to0\), set \(s^2=\mathcal L_\rho(A;T)/\rho\)
+for \(A\ne T\). The score bound \(|U_{\rho,ij}(x)|/\rho\le C_k w(x)\)
+follows by integrating the normalized active Mehler kernel against
+\(1_{T_i}-1_{T_j}\). Since the label distance to \(T\) tends to zero and
+\(w\) is Gaussian integrable in the fixed active dimension, \(s\to0\).
+The transfers \(h_{ij}(x,z)=1_{T_i\cap A_j}(x,z)\) have averages
+\(\bar h_{ij}(x)=\int h_{ij}(x,z)d\gamma_{d-n}(z)\) with
+\(0\le\bar h_{ij}\le1\), supported in \(T_i\), and with the same
+total score loss. Equations (C9)–(C11) in dimension \(n\) use exactly
+these bounds, support, (A4)–(A6), and the vanishing normal mass away
+from the pair planes. They therefore apply to the averaged transfers.
+Along a subsequence the signed active transfers
+\(\int(1_{A_i}-1_{T_i})(x,z)d\gamma_{d-n}(z)\,d\gamma_n(x)/s\)
+converge to the facet measures in (C10). Their masses and first moments
+pass to the limit by the weighted tails. The resulting \(f\) is balanced,
+\(\mathcal D f\) is symmetric by the gauge, and
+\(1\ge\ell\|f\|_{\mathcal H}^2/2\).
+
+### Interaction and quadratic growth
+
+Put \(e_i(x,z)=1_{A_i}(x,z)-1_{T_i}(x)\) and
+\[
+ J_i(z)=s^{-1}\int w(x)|e_i(x,z)|\,d\gamma_n(x).
+\]
+Apply the global version of (C3) in dimension \(n\) at each fixed
+\(z\), using the conditional loss from (A4). Integrating the squared
+estimates in \(z\) gives \(\sum_i\|J_i\|_2^2\le C_k\) and
+\(\sum_i\gamma_d(A_i\triangle T_i)\le s\sum_i\|J_i\|_2\).
+
+Let \(u_{i,p,q}\) be the component of \(e_i/s\) of Hermite degree \(p\)
+in the active coordinates and degree \(q\) in the transverse coordinates.
+Fix \(r=1/16\). Parseval and the active kernel bound in (A6) give
+\[
+ \sum_{i,p,q} r^p\|u_{i,p,q}\|_2^2
+ =\sum_i\int
+ \left\langle e_i(\cdot,z)/s,T_r^x(e_i(\cdot,z)/s)\right\rangle
+ \,d\gamma_{d-n}(z)
+ \le C_k\sum_i\|J_i\|_2^2.
+\]
+Here \(T_r^x\) acts on the active coordinates alone. The constant
+term is removed in the exact interaction, and \(u_{i,0,1}=0\) by
+the moment gauge. For \(p+q\ge2\) and \(0<\rho\le r\),
+\(\rho^{p+q-1}\le (\rho/r^2)r^p\). Thus the normalized interaction
+from all these terms is \(O_k(\rho)\) uniformly in \(d\). Only the
+active first moments survive. Their convergence in (C10) gives
+\[
+ \frac{\widetilde Q_\rho(e)}{\mathcal L_\rho(A;T)}
+ \ \longrightarrow\ \|\mathcal D f\|_F^2\ \le\ 2(1-1/k).
+\]
+
+If the first inequality of (L1) failed for every choice of \(\eta,\rho_0\),
+a sequence with \(d_k(A)\to0\) and \(\rho\to0\) would have
+\(\widetilde Q_\rho(e)/\mathcal L_\rho(A;T)>2-c\) by the exact
+comparison (C2). This contradicts the limit since \(c<2/k\).
+The second inequality of (L1) follows from the bound on label distance
+by a constant times \(s\). This is an internal analytic proof. The
+conditional covariance, exact moment gauge, averaged flux limit and
+transverse interaction estimates are the steps for mathematical review.
+
+### The remaining global implication
+
+For an independent proof of the global theorem it suffices to show that
+balanced maximizers in dimension \(k-1\) approach the simplex orbit as
+\(\rho\downarrow0\). Existence and Heilman–Tarter dimension reduction
+then give the theorem from (L1). The local argument
+gives no such localization for a distant maximizer. The full global
+inequality would itself imply \(W_1(A)\le W_1(T)\) for every balanced
+partition by dividing its noise deficit by \(\rho\) and letting
+\(\rho\downarrow0\).
+
+With the existing global input, (L1) strengthens the global theorem to
+\[
+ S_\rho(T)-S_\rho(A)\ge C_k\rho\,d_k(A)^2
+ \tag{L3}
+\]
+for every balanced measurable \(A\) in any \(d\ge k-1\) and all sufficiently
+small positive \(\rho\), with constants depending only on \(k\).
+Only the qualitative conclusion and equality case of Zhang's
+first-moment theorem are needed. This proof avoids dimension reduction
+for noise-stability maximizers.
+
+In fact any sequence with \(W_1(A)\to W_1(T)\) approaches the simplex
+orbit uniformly in ambient dimension. Rotate the span of the moment rows
+into \(E\) and average the cell indicators over the remaining coordinates.
+The resulting balanced fractional partitions on \(E\) have the same
+first moments and have a weakly convergent subsequence in \(L^2\).
+The first moments pass to the limit. Equality in the fractional
+first-moment theorem gives a regular simplex indicator vector.
+Testing the fractional sequence against those simplex indicators gives
+convergence of the original partitions in Gaussian label distance to
+that cylindrical simplex. Thus outside the neighborhood of radius
+\(\eta\) in (L1) the first-moment deficit has a positive uniform lower
+bound \(\epsilon\). The Parseval remainder in the noise expansion is
+at most \((1-1/k)\rho^2\), so for small enough \(\rho\) the noise
+deficit there is at least \(\rho\epsilon/2\), hence at least
+\((\epsilon/8)\rho d_k(A)^2\) since \(d_k(A)\le2\).
+Inside the neighborhood (L1) gives (L3). In a fixed dimension the
+simplex orbit is compact in label distance, so zero orbit distance
+characterizes the equality case.
+
+For a short self-contained localization argument, Zhang's covariance
+comparison can be written along the additive ray \(Q+sQ_*\), with
+\(Q_*=P/n\) and \(\operatorname{tr}Q=1\). In the notation of the
+[first-moment proof](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md),
+set \(F=W_1(T)\) and \(g(s)=\mathcal C(Q+sQ_*)^2\). For \(s>0\),
+the envelope formula gives \(g'(s)=\mathcal C\,\operatorname{tr}L/n\).
+The Gaussian multi-bubble perimeter bound and weighted
+Cauchy–Schwarz give \(g'(s)\ge F\), strictly if \(Q\ne Q_*\) since
+the positive facet weights then see unequal pair lengths. Homogeneity
+and differentiability at \(Q_*\), where \(L_*=\sqrt F P\), give
+\(g(s)=Fs+F+o(1)\) as \(s\to\infty\). Therefore \(g(s)-Fs\) increases
+to \(F\). Continuity at zero covers singular \(Q\), giving
+\(\mathcal C(Q)^2<F\) off \(Q_*\). This is Zhang's geometric mechanism
+with a different parametrization. The uniform quadratic covariance
+estimate is unnecessary for the localization step.
 
 ## A rigorous continuation boundary in correlation
 

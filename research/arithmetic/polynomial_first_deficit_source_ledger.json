@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
+  "assurance": "Internal written uniform monodromy/imprimitive component classification and determinant reduction, with exact bounded component and algebraic certificates. The determinant criterion leaves uniform geometric factor-orbit classification and separate primitive degrees open. No novelty, independent replay, external review, formal verification or complete arbitrary-passport classification is asserted.",
+  "declarations": [
+    {
+      "name": "Theorem U1. The only imprimitive possibility at the first deficit",
+      "node": "ARITH-POLYNOMIAL-FIRST-DEFICIT-IMPRIMITIVE-PASSPORT-EXCLUSION",
+      "scope": "For all admissible minimal full-cycle polynomial passports with k>=1 non-transposition factors of index>=2, s>=1 literal transpositions, p nontrivial cycles in the k factors, and s=p-k-1: k>=2; every imprimitive tuple has exactly s1,k2,p4 and passport(a^2 1^(2b-2)),(b^2 1^(2a-2)),T on2m sheets,m=a+b-1,a,b>=2. Its canonical normal transposition blocks have size2. Every other tuple at this level has actual S_N, only block counts1,N and deck1. Proof uses equality in the return budget, not a finite census."
+    },
+    {
+      "name": "Theorem U2. The complete imprimitive component",
+      "node": "ARITH-POLYNOMIAL-FIRST-DEFICIT-IMPRIMITIVE-COMPONENT-CLASSIFICATION",
+      "scope": "For every a,b>=2 the exceptional passport has exactly one imprimitive full component: actual S2 wr K, with K=A_m if both a,b odd and K=S_m otherwise; all blocks1,m,2m and deck2. With W=3*(2-indicator(a=b)), its literal size is W*m^2, absolute W*m. Every remaining component is S_(2m), deck1; combined literal size W*m^2*((2a-1)*(2b-1)-1). The separate number of primitive components is not asserted uniformly."
+    },
+    {
+      "name": "Theorem U3. One determinant indexes all first-deficit components",
+      "node": "ARITH-POLYNOMIAL-FIRST-DEFICIT-DETERMINANT-COMPONENT-CRITERION",
+      "scope": "At every positive first deficit s=p-k-1, set F_li=sum residues of z^l/Q over color i,l0..k-1. Let T be its first k-1 rows and Delta the determinant after removing one column. Full components are exactly finite label-group orbits of geometric irreducible factors of Delta meeting rankF=k-1,rankT=k-2 and all exact good-polynomial exclusions. Lower feasible ranks have incidence dimension<=p-delta+1<p by the repeated unrestricted moment/conormal calculation; none supports an extra component. This is a component equivalence/reduction, not an evaluated uniform factorization or count."
+    },
+    {
+      "name": "Proposition U4. The degree-six determinant separates the two groups",
+      "node": "ARITH-POLYNOMIAL-FIRST-DEFICIT-DEGREE6-GEOMETRIC-FACTORS",
+      "scope": "For a=b2, with ordered first critical pair0,1 and secondx,y, U=x+y-1,V=xy, the determinant is 2U*P/[V^3*(V-U)^3], P=-3V^2+U*(2U+3)*V-(U+1)*U^2. U is exactly the imprimitive component. P is geometrically irreducible by w=V/U and nonsquare ordered-root discriminant -w*(w-1)*(15w^2-15w+4)/(2w-1)^2. This gives the two components with literal27/216 and absolute9/36 independently of a global imported component theorem."
+    },
+    {
+      "name": "Proposition U5. Complete bounded first-deficit controls",
+      "node": "ARITH-POLYNOMIAL-FIRST-DEFICIT-BOUNDED-COMPONENT-CLASSIFICATIONS",
+      "scope": "For every2<=a<=b<=5, the exceptional passport has exactly two full components with the U2 imprimitive size and one S_(2m) component of the aggregate primitive size. Complete bounded controls only. Additionally degree8 DT,DT,3,T is one S8 component of38400 literal tuples and degree9 DT,DT,DT,T,T is one S9 component of1771470 literal tuples. Independent ordered hook totals are exhausted by signed colored-braid absolute closures and cyclic literal multiplicities."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Gareth A. Jones and Alexander Zvonkin",
+      "title": "Orbits of braid groups on cacti",
+      "publication": "Moscow Mathematical Journal2(1)(2002), publisher127-160; retained author129-162",
+      "doi": "10.17323/1609-4514-2002-2-1-127-160",
+      "url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "inspected": "Actual retained Section5.4, especially quotient-copy and attachment construction pp157-158; Theorem1.1 polynomial/cactus correspondence and Section1.3 class count previously inspected.",
+      "application": "Primary comparison for quotient-copy construction and polynomial orbit convention.",
+      "scope_boundary": "The first-deficit theorem and determinant reduction are written here; no general component classification is imported."
+    },
+    {
+      "authors": "Yury Kochetkov",
+      "title": "Chebyshev polynomials, Zolotarev polynomials and plane trees",
+      "publication": "Retained arXiv1212.6317v1,27December2012,8-page preprint",
+      "arxiv": "1212.6317v1",
+      "url": "https://arxiv.org/pdf/1212.6317v1",
+      "path": "research/arithmetic/sources/kochetkov-zolotarev-trees-2012.pdf",
+      "sha256": "f0e0bc299cb47304390721be0e92b1747b73004965e81012856fcc8cf04a539b",
+      "inspected": "Actual v1 Sections3 and6 coefficient varieties and low-degree examples, definitions in Section1 and passport discussion in Section4.",
+      "application": "Comparison for coefficient varieties of three-critical-value polynomials.",
+      "scope_boundary": "No component count or geometric irreducibility assertion is imported from these low-degree examples; rational and geometric factorization are kept distinct."
+    },
+    {
+      "authors": "I.P. Goulden and D.M. Jackson",
+      "title": "The Combinatorial Relationship Between Trees, Cacti and Certain Connection Coefficients for the Symmetric Group",
+      "doi": "10.1016/S0195-6698(05)80015-0",
+      "url": "https://uwaterloo.ca/math/sites/default/files/uploads/documents/gjeurjc1992.pdf",
+      "path": "research/arithmetic/sources/goulden-jackson-cacti-1992.pdf",
+      "sha256": "a43abccf0519d4839d4c012a4990cff66c9ed4636bc459512e84a2825fc78331",
+      "inspected": "Original Section3 pp361-363 and corrected sum cycle counts=(r-1)N+1 in proof final line; source audit retained in the Hermite note.",
+      "application": "Existence and exact fixed-ordered class totals only.",
+      "scope_boundary": "Printed theorem hypothesis slip is corrected explicitly from the actual proof, not silently propagated; it is not a component theorem."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
+      "sha256": "8d60c6a8f71ed11b2707dca6f3cd33144869858ba2f16f4c7dba9c69a87eb3a3",
+      "locator": "U1-U5 full statements, written proofs and remaining obligations"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_STABLE_HERMITE_CONNECTIVITY.md",
+      "sha256": "0bbb8467522953f8de6302fcc220bc4c52a9f441f2249b9ebdbdd7fe93e27bb8",
+      "locator": "K1/K5/K6 algebraic identities and conormal proof before imposing the stable numerical inequality; repeated in U3"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L5 free cyclic lift and L6 full symmetric normal transposition base"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H2 congruence blocks and H3 return budget"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_first_deficit.py",
+    "checker_sha256": "e6332460b3022183191e73635215ebab17ee5e1f170dc3399943eb23f28a1888",
+    "receipt": "research/arithmetic/polynomial_first_deficit_verification.json",
+    "receipt_sha256": "7e93fda5c20a5d2cc0925d9c758ed8abc3188cc4afbea1b3bedbf3c1bece625e",
+    "command": "python3 research/arithmetic/verify_polynomial_first_deficit.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "software": "Python3.12.3 standard library, assertions active",
+    "family_scope": "All ten2<=a<=b<=5 cases; two disjoint complete fixed-pattern absolute colored-braid closures in each; normal transposition graph, exact quotient group closure, block/deck and independent hook totals checked.",
+    "mixed_scope": "Complete fixed-pattern absolute closures of sizes400 and19683 for the degree8 and9 mixed passports, representing full literal domains38400 and1771470 after exact rotations/type placements.",
+    "complete_scope": "12 distinct complete passports represent1894278 literal tuples. These are exact quotient-orbit counts, not a claim that every literal tuple was separately stored.",
+    "determinant_scope": "Degree6 identity after clearing denominators has bidegree at most(4,4); exact5x5 grid certifies equality. Rational parametrization and squarefree ordered-root discriminant identities checked independently overQ[z]. A valid exact imprimitive CRT chart checks all critical-value exclusions and the source involution.",
+    "negative_scope": "Four invalid first-deficit domains and one corrupted determinant-factor identity rejected.",
+    "limits": "Finite controls do not prove uniform primitive connectedness. U3 is an exact geometric-factor/label reduction; no generic absolute-factorization or component-degree implementation is claimed. Exploratory Sage rational factors are not a proof input."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal written proof/source/exact computation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "All equality cases of normal-transposition return budget",
+      "Two-cycle quotient group and full free-quadratic lift",
+      "All blocks/deck and full versus ordered sizes",
+      "Moment/conormal derivation outside stable inequality",
+      "No lower-rank components and exact determinant good-open",
+      "Finite label action and connected affine quotients",
+      "Degree6 geometric quadratic-cover proof",
+      "Complete bounded closures versus independent class totals"
+    ]
+  }
+}

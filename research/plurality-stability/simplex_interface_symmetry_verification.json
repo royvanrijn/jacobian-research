@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "54943248a56a4427abd05b982da50d1dbfe0946815c9871f8790e210c7f2eb97",
-  "proof_source_sha256": "176ad15ae157e4763bf77f19699933ea5c3ec4e19e1a4f119a2ad76fd78e2a7c",
+  "checker_sha256": "b83e9adf990ad5ef96086ee5bb234e5f859903f928dcea97c4ecf51cad9d6a39",
+  "proof_source_sha256": "0312790c1841178f9a87018167938592b0bd2a51393dc7605cb38c442a6f6c2a",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -487,10 +487,562 @@
           "dimension": 9,
           "minus_dimension": 6,
           "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            3,
+            3
+          ],
+          "k": 6,
+          "dimension": 5,
+          "minus_dimension": 2,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            4,
+            2
+          ],
+          "k": 6,
+          "dimension": 9,
+          "minus_dimension": 3,
+          "selected_TP_matrix": "passed"
+        }
+      ],
+      "triple_sign_corner_controls": [
+        {
+          "partition": [
+            3
+          ],
+          "minus_dimension": 0,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            2,
+            1
+          ],
+          "minus_dimension": 1,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "minus_dimension": 1,
+          "three_label_sign_rank": 1
+        },
+        {
+          "partition": [
+            4
+          ],
+          "minus_dimension": 0,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            3,
+            1
+          ],
+          "minus_dimension": 1,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            2,
+            2
+          ],
+          "minus_dimension": 1,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1
+          ],
+          "minus_dimension": 2,
+          "three_label_sign_rank": 1
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "minus_dimension": 1,
+          "three_label_sign_rank": 1
+        },
+        {
+          "partition": [
+            5
+          ],
+          "minus_dimension": 0,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            4,
+            1
+          ],
+          "minus_dimension": 1,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            3,
+            2
+          ],
+          "minus_dimension": 2,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1
+          ],
+          "minus_dimension": 3,
+          "three_label_sign_rank": 1
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "minus_dimension": 3,
+          "three_label_sign_rank": 1
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "minus_dimension": 3,
+          "three_label_sign_rank": 2
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "minus_dimension": 1,
+          "three_label_sign_rank": 1
+        },
+        {
+          "partition": [
+            3,
+            2,
+            1
+          ],
+          "minus_dimension": 8,
+          "three_label_sign_rank": 2
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2
+          ],
+          "minus_dimension": 3,
+          "three_label_sign_rank": 1
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "minus_dimension": 6,
+          "three_label_sign_rank": 3
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "minus_dimension": 6,
+          "three_label_sign_rank": 3
+        },
+        {
+          "partition": [
+            3,
+            3
+          ],
+          "minus_dimension": 2,
+          "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            4,
+            2
+          ],
+          "minus_dimension": 3,
+          "three_label_sign_rank": 0
+        }
+      ],
+      "triple_projection_frame_controls": [
+        {
+          "partition": [
+            2,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "0"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "1"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "0"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2
+          ],
+          "frame_eigenvalue_controls": [
+            "0"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "2/3",
+            "4/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "2"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            4,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "0"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2
+          ],
+          "frame_eigenvalue_controls": [
+            "0"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "2/3",
+            "5/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "1/3",
+            "4/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "4/3",
+            "7/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "1/3",
+            "1",
+            "5/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2
+          ],
+          "frame_eigenvalue_controls": [
+            "4/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "4/3",
+            "8/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "2/3",
+            "2",
+            "8/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            3,
+            3
+          ],
+          "frame_eigenvalue_controls": [
+            "0"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            4,
+            2
+          ],
+          "frame_eigenvalue_controls": [
+            "0"
+          ],
+          "projection_frame_identity": "passed"
         }
       ],
       "orientation_and_non_TN_negative_controls": "passed",
-      "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and four selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The all-k immanant formula and positivity depend on the written argument and retained primary Young-form/interval-decomposition statements; no spectral gap is certified."
+      "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and six selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The same finite models verify S85's triple-sign corner identity, projection idempotence and height-two vanishing, plus S88-S89's S4 overlap, transposition-content frame identity and frame spectral polynomials. The all-k immanant/transport formulas, positivity, branching and scalar spectral reduction are written arguments; no analytic spectral gap is certified."
+    },
+    "triple_sign_reflections": {
+      "exceptional_pair_factorizations": 24,
+      "half_facet_and_rate_order_controls": [
+        {
+          "k": 4,
+          "tau": "k*log(2)",
+          "strict_odd_kernel": "passed",
+          "other_coordinates_fully_ordered": true
+        },
+        {
+          "k": 5,
+          "tau": "k*log(2)",
+          "strict_odd_kernel": "passed",
+          "other_coordinates_fully_ordered": true
+        },
+        {
+          "k": 6,
+          "tau": "k*log(2)",
+          "strict_odd_kernel": "passed",
+          "other_coordinates_fully_ordered": false
+        },
+        {
+          "k": 7,
+          "tau": "k*log(2)",
+          "strict_odd_kernel": "passed",
+          "other_coordinates_fully_ordered": false
+        },
+        {
+          "k": 8,
+          "tau": "k*log(2)",
+          "strict_odd_kernel": "passed",
+          "other_coordinates_fully_ordered": false
+        }
+      ],
+      "wrong_half_facet_rejection": "passed",
+      "adjacent_kernel_negative_two_point_determinant": "-7/32768",
+      "invariant_translation_exclusion": "passed",
+      "scope": "Exact exceptional-pair factorization controls and selected odd-kernel/rate exponent comparisons for4<=k<=8 without ordering all remaining coordinates, plus a negative adjacent-kernel determinant. Universal Young-model triple-sign identities are in exact_checks.universal_blocks. The all-k strict supersolution, nontrivial scalar type transfer and all two-row block gaps S85-S87 are written analytic and representation proofs, not certified by these finite controls."
+    },
+    "antisymmetry_height": {
+      "nested_group_identities": [
+        {
+          "antisymmetric_labels": 2,
+          "ambient_group_order": 6,
+          "compressed_corner_and_transport": "passed",
+          "overlap_directly_expanded": true
+        },
+        {
+          "antisymmetric_labels": 3,
+          "ambient_group_order": 24,
+          "compressed_corner_and_transport": "passed",
+          "overlap_directly_expanded": true
+        },
+        {
+          "antisymmetric_labels": 4,
+          "ambient_group_order": 120,
+          "compressed_corner_and_transport": "passed",
+          "overlap_directly_expanded": true
+        },
+        {
+          "antisymmetric_labels": 5,
+          "ambient_group_order": 720,
+          "compressed_corner_and_transport": "passed",
+          "overlap_directly_expanded": false
+        }
+      ],
+      "negative_three_row_scalar_reflection": {
+        "k": 5,
+        "x": [
+          "7",
+          "7",
+          "-6",
+          "0",
+          "-8"
+        ],
+        "y": [
+          "27/5",
+          "27/5",
+          "7/5",
+          "-23/5",
+          "-38/5"
+        ],
+        "tau": "5*log(2)",
+        "integer_exponential_coefficients": [
+          [
+            680,
+            -1
+          ],
+          [
+            650,
+            1
+          ],
+          [
+            640,
+            2
+          ],
+          [
+            520,
+            -2
+          ],
+          [
+            380,
+            -2
+          ],
+          [
+            290,
+            1
+          ],
+          [
+            260,
+            2
+          ],
+          [
+            250,
+            -1
+          ],
+          [
+            160,
+            1
+          ],
+          [
+            65,
+            -1
+          ],
+          [
+            -230,
+            -1
+          ],
+          [
+            -335,
+            1
+          ]
+        ],
+        "leading_exponent": 680,
+        "positive_exponent_upper": 650,
+        "positive_coefficient_sum": 8,
+        "sign": "negative"
+      },
+      "scope": "Exact nested antisymmetrizer corner/transport identities in S3 through S6, direct overlap expansions through S5, and the exact five-cell negative reflection witness. The all-size coset hierarchy and all-k three-row closed-image spectral reduction S88-S89 are written proofs, using the retained content-spectrum input. No new all-correlation gap follows from these controls."
     },
     "standard_mass_weight": {
       "row_identity": "passed",
@@ -1676,6 +2228,259 @@
       ],
       "unbalanced_and_unsubtracted_remainder_rejections": "passed",
       "scope": "Exact graded-character controls through k=9 for the first degree in E tensor Sym^m(E) and the D=0/1 classification, rational Schur-bound algebra, the first two-column instance, and bounded Hermite-power/explicit initial-endpoint controls. The m=0/1 rejection controls require balance and subtraction of the first moment. These controls do not assert interface attainment of the polynomial target degree. The all-k Hermite vanishing, Schur bound, infinite-family positive gap and convex-covariance first-moment/explicit initial full-gap deductions in S80-S83 are written proofs."
+    },
+    "height_standard_reduction": {
+      "conditional_gaussian_cases": [
+        {
+          "rho": "0",
+          "adjacent": false,
+          "conditional_top_covariance": [
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "0",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "rho": "0",
+          "adjacent": true,
+          "conditional_top_covariance": [
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "0",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "rho": "1/4",
+          "adjacent": false,
+          "conditional_top_covariance": [
+            [
+              "1/2",
+              "1/8"
+            ],
+            [
+              "1/8",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "rho": "1/4",
+          "adjacent": true,
+          "conditional_top_covariance": [
+            [
+              "31/63",
+              "4/63"
+            ],
+            [
+              "4/63",
+              "31/63"
+            ]
+          ]
+        },
+        {
+          "rho": "1/2",
+          "adjacent": false,
+          "conditional_top_covariance": [
+            [
+              "1/2",
+              "1/4"
+            ],
+            [
+              "1/4",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "rho": "1/2",
+          "adjacent": true,
+          "conditional_top_covariance": [
+            [
+              "7/15",
+              "2/15"
+            ],
+            [
+              "2/15",
+              "7/15"
+            ]
+          ]
+        },
+        {
+          "rho": "3/4",
+          "adjacent": false,
+          "conditional_top_covariance": [
+            [
+              "1/2",
+              "3/8"
+            ],
+            [
+              "3/8",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "rho": "3/4",
+          "adjacent": true,
+          "conditional_top_covariance": [
+            [
+              "23/55",
+              "12/55"
+            ],
+            [
+              "12/55",
+              "23/55"
+            ]
+          ]
+        }
+      ],
+      "coefficient_cases": [
+        {
+          "k": 3,
+          "joint_coefficients": [
+            4,
+            2
+          ],
+          "noise_derivative_coefficients": [
+            4,
+            2
+          ]
+        },
+        {
+          "k": 4,
+          "joint_coefficients": [
+            4,
+            4
+          ],
+          "noise_derivative_coefficients": [
+            6,
+            6
+          ]
+        },
+        {
+          "k": 5,
+          "joint_coefficients": [
+            4,
+            6
+          ],
+          "noise_derivative_coefficients": [
+            8,
+            12
+          ]
+        },
+        {
+          "k": 6,
+          "joint_coefficients": [
+            4,
+            8
+          ],
+          "noise_derivative_coefficients": [
+            10,
+            20
+          ]
+        },
+        {
+          "k": 7,
+          "joint_coefficients": [
+            4,
+            10
+          ],
+          "noise_derivative_coefficients": [
+            12,
+            30
+          ]
+        },
+        {
+          "k": 8,
+          "joint_coefficients": [
+            4,
+            12
+          ],
+          "noise_derivative_coefficients": [
+            14,
+            42
+          ]
+        },
+        {
+          "k": 9,
+          "joint_coefficients": [
+            4,
+            14
+          ],
+          "noise_derivative_coefficients": [
+            16,
+            56
+          ]
+        },
+        {
+          "k": 10,
+          "joint_coefficients": [
+            4,
+            16
+          ],
+          "noise_derivative_coefficients": [
+            18,
+            72
+          ]
+        },
+        {
+          "k": 11,
+          "joint_coefficients": [
+            4,
+            18
+          ],
+          "noise_derivative_coefficients": [
+            20,
+            90
+          ]
+        },
+        {
+          "k": 12,
+          "joint_coefficients": [
+            4,
+            20
+          ],
+          "noise_derivative_coefficients": [
+            22,
+            110
+          ]
+        },
+        {
+          "k": 13,
+          "joint_coefficients": [
+            4,
+            22
+          ],
+          "noise_derivative_coefficients": [
+            24,
+            132
+          ]
+        },
+        {
+          "k": 14,
+          "joint_coefficients": [
+            4,
+            24
+          ],
+          "noise_derivative_coefficients": [
+            26,
+            156
+          ]
+        }
+      ],
+      "independent_adjacent_normals_rejection": "passed",
+      "same_facet_only_rejection": "passed",
+      "scope": "Exact conditional-top covariance, Gaussian-prefactor determinant and formal coefficient controls at four rational correlations and3<=k<=14. The all-k tied-height surface integral, ordinary mass constraint, compact operator compression, stability derivative identity and linear trace-rotation identification in S84 are written proofs. No sign of the restricted or full standard form is certified."
     },
     "five_cell_mixed_certificate": {
       "k": 5,

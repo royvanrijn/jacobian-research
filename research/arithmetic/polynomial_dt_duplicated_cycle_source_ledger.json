@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md",
+  "assurance": "Internal written all-b rational-quotient, nonempty-chart and complete two-component proofs, with exact bounded algebraic/permutation controls. The b2 component count already occurs in the retained BG theorem. No novelty, independent replay, external review, formal verification or unrestricted component classification is asserted.",
+  "declarations": [
+    {
+      "name": "Theorem V1. The primitive residue curve has a rational quotient",
+      "node": "ARITH-POLYNOMIAL-DT-DUPLICATED-CYCLE-RATIONAL-RESIDUE-QUOTIENT",
+      "scope": "For all b>=2 and passport(2^2 1^(2b-2)),(b^2 1^2),T onN=2b+2 sheets, normalize the DT critical pair0,1 and use S=x+y,V=xy,U=S-1,W=V-U. The primitive residue equation, after forgetting the order of x,y, is the single rational graph V=b*B_b(t)/((t-1)^2*A_b(t)), U=-b*B_b(t)/((t-1)*A_b(t)),t=W/V, A_b=sum_(j0..b-1)(j+1)(b-j)t^j,B_b=sum_(j0..b)t^j. The cleared equation is linear inV and its coefficients have gcd exactly t-1 overC. Thus there is one geometric quotient component; no unproved ordered-root irreducibility is assumed. The imprimitive locus is exactly U0."
+    },
+    {
+      "name": "Lemma V2. Exact coefficient charts and uniform nonemptiness",
+      "node": "ARITH-POLYNOMIAL-DT-DUPLICATED-CYCLE-UNIFORM-COEFFICIENT-CHARTS",
+      "scope": "Every such normalized polynomial has the exact rational CRT chart E=P^2*((P^2)^(-1) modB^b), f=E/L,v=1/L, P=z(z-1),B=z^2-Sz+V,L=coeff_z^N E. Coprimality, discB!=0, L!=0 and the linear critical quotient A=f'/(NPB^(b-1)) give all exact exclusions, including w=f(alpha)!=0,v. Both sectors are uniformly nonempty overQ: primitive t2 has V=b*(2^(b+1)-1)/((b-2)*2^(b+1)+b+4) in(1,3), S1-V; imprimitive S1,V2. B is positive onR, a Rolle/weighted-mean argument puts the remaining critical point in(0,1), and positivity excludes w=v. Finite charts are controls, not the existence proof."
+    },
+    {
+      "name": "Theorem V3. Complete components, actual groups and exact sizes",
+      "node": "ARITH-POLYNOMIAL-DT-DUPLICATED-CYCLE-GROUPS-AND-SIZES",
+      "scope": "For every b>=2 there are exactly two absolute and two literal full-braid orbits. Putm=b+1,W=3*(2-indicator(b2)). Primitive: actual S_(2m), blocks1,2m,deck1, literal2Wm^2(3b-2),absoluteWm(3b-2). Imprimitive: actual S2 wr S_m,blocks1,m,2m,deck2,literalWm^2,absoluteWm. The rational quotient proof establishes primitive connectedness uniformly; U1-U2 give actual groups and exact count subtraction. W includes every distinct factor-type placement."
+    },
+    {
+      "name": "Theorem V4. Rational moduli coordinates and exceptional label action",
+      "node": "ARITH-POLYNOMIAL-DT-DUPLICATED-CYCLE-RATIONAL-MODULI-COORDINATES",
+      "scope": "Both affine-quotient moduli components are rational overQ. Forb>2 exact fields areQ(t+1/t) primitive andQ(V) imprimitive. Reflection exchanges the DT critical pair and sends t to1/t. Forb2 also exchange equal heavy profiles: q=t+1/t maps to1/(q+2)-2, and V maps toV/(4V-1). Exact invariant coordinates are(q+2)+1/(q+2) and4V^2/(4V-1). No universal unmarked polynomial descent is asserted; coefficient charts retain their indicated finite markings."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Andrei Bogatyrev and Quentin Gendron",
+      "title": "The space of solvable Pell–Abel equations",
+      "publication": "Compositio Mathematica161(2025),1483-1511",
+      "doi": "10.1112/S0010437X25007158",
+      "url": "https://doi.org/10.1112/S0010437X25007158",
+      "path": "research/arithmetic/sources/bogatyrev-gendron-pell-abel-2025.pdf",
+      "sha256": "f1bac7cda93f5f4110e855190274a0aad25deea8d0103cd44ac96e77048ba77c",
+      "inspected": "Actual retained published passport p1485 and Corollary2 p1486, including the simple-involution hypotheses and degree/divisor conditions.",
+      "application": "Known previous component classification for b2, N6,A=B2,g1.",
+      "scope_boundary": "For b>2 the heavy factor consists of b-cycles, not transpositions, so this two-involution corollary is not imported to obtain the new all-b proof."
+    },
+    {
+      "authors": "Bronislaw Wajnryb",
+      "title": "Orbits of Hurwitz action for coverings of a sphere with two special fibers",
+      "publication": "Retained MPIM95-75,25July1995; published Indagationes Mathematicae7(4)(1996),549-558",
+      "doi": "10.1016/S0019-3577(97)89139-2",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2396/1/preprint_1995_75.pdf",
+      "path": "research/arithmetic/sources/wajnryb-two-special-fibers-1995.pdf",
+      "sha256": "b1ede26039b48d20de120333ca57accb919bd0ef6a9da2c0c3fdb15c76c91cb0",
+      "inspected": "Actual retained preprint definitions p1 and Theorem1 p2; special means every critical value other than a single transposition. Read precise fixed-group/branching hypotheses.",
+      "application": "Closest general fixed-monodromy connectivity comparison with two nonsimple fibres.",
+      "scope_boundary": "The full cycle at infinity and both heavy finite branches are nonsimple here, giving three special values. Theorem1 does not supply connectivity of this family. Comparison only."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md",
+      "sha256": "e69e2ccf39279d6135e42caf738771a9ba0ef306e97db917fb7b57372e2e2ca1",
+      "locator": "V1-V4 rational primitive quotient, uniform positive real charts, exact groups/sizes and label fields"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
+      "sha256": "8d60c6a8f71ed11b2707dca6f3cd33144869858ba2f16f4c7dba9c69a87eb3a3",
+      "locator": "U1-U3 first-deficit groups, complete imprimitive sector and geometric factor criterion"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L5-L6 cyclic branch and normal transposition base"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H1-H3 tree, blocks and polynomial interpretation"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_dt_duplicated_cycle.py",
+    "checker_sha256": "2c9b314831061b86b4fe2ac8a31aeaada66eae6edba776d017439f092ae59478",
+    "receipt": "research/arithmetic/polynomial_dt_duplicated_cycle_verification.json",
+    "receipt_sha256": "ae9bf173432b022c0be0100855a7fa29024a39105de3d957f82d1ffcd998cca9",
+    "command": "python3 research/arithmetic/verify_polynomial_dt_duplicated_cycle.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "software": "Python3.12.3 standard library, assertions active",
+    "chart_scope": "40 exact rational monic charts, both sectors at b2..20 and32, through degree66. All CRT congruences, degree drop, critical quotient, exact values and every exclusion checked.",
+    "identity_scope": "D_b=-(t-1)^3 A_b, exact gcd=t-1 and palindromic identities;33 exact residue and source-reflection points at b2..12,t2,3,4/3;3 equal-profile primitive and3 imprimitive color involution controls.",
+    "component_scope": "Every b2..12,11 distinct complete passports representing253593 literal tuples, via disjoint complete fixed-pattern absolute colored-braid closures. Both normal transposition graphs, quotient normal-transposition graph certifying S_m, all block divisors, deck and independent hook totals checked. No factorial-size group enumeration is assumed.",
+    "negative_scope": "Seven invalid parameters/coefficient charts and one corrupted denominator identity rejected.",
+    "limits": "Uniform rationality, connectedness and nonemptiness are written V1-V4 proofs. No finite-range extrapolation or ordered-root geometric irreducibility assumption; other first-deficit/deeper/zero-simple passports remain open."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal written proof/source/exact computation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Exact two-double-pole residue formula",
+      "Birational symmetric coordinates and primitive linear equation",
+      "No omitted vertical components: gcd overC",
+      "Finite critical-root quotient rather than unproved ordered-root irreducibility",
+      "CRT converse and all exact open conditions",
+      "Uniform real-positive rational witnesses and critical-value noncollision",
+      "Exactly two full components and all count conventions",
+      "Source reflection and exceptional equal-profile color action",
+      "Independent finite class total exhaustion and normal-transposition group certificates"
+    ]
+  }
+}

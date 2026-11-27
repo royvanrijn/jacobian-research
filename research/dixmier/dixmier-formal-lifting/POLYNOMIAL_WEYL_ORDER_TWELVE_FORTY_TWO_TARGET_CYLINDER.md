@@ -277,3 +277,13 @@ the polar norm. Subtracting from \(11M\) gives
 The sum on the normalized polar, with component
 multiplicities, is the intersection multiplicity
 of the two derivatives at the boundary.
+
+The [residue-monodromy theorem](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_RESIDUE_MONODROMY.md)
+classifies the square–cube residue factors and proves that this unsplit
+profile has full symmetric or alternating geometric monodromy,
+according to the parity of the number of pairs of high roots.
+
+The [position double locus](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_POSITION_DOUBLE_LOCUS.md)
+uses the polar resultant at zero momentum difference. Its two resultant
+leading coefficients determine the norm of that difference and the
+saturation obstruction for the graph lift.
