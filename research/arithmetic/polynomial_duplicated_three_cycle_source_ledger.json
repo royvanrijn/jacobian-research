@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md",
+  "assurance": "Internal written all-b geometric irreducibility and complete two-component classification, with a uniform all-a,b reduced residue equation and exact bounded algebraic/permutation controls. The nonsquare certificate is overC(t), not rational factorization. No novelty, independent replay, external review, formal verification or arbitrary-passport classification is asserted.",
+  "declarations": [
+    {
+      "name": "Theorem W1. A reduced-degree residue equation for arbitrary \\(a,b\\)",
+      "node": "ARITH-POLYNOMIAL-DUPLICATED-CYCLE-REDUCED-RESIDUE-POLYNOMIAL",
+      "scope": "For everya,b>=2, normalizing the first critical pair0,1 and taking the second pair unordered yields S=x+y,V=xy,U=S-1,W=V-U,t=W/V. An explicit binomial polynomial H_a,b gives residue(-1)^a*(H(S,V)/V^m-H(2-S,W)/W^m). The primitive equation F_a,b=[t^m H(1+V(1-t),V)-H(1-V(1-t),tV)]/(t-1) has exact V-degreea-1 and content1 overC[t]. Explicit first-two-coefficient root-of-unity values exclude every omitted vertical component. The involution(t,V)->(1/t,tV) forgets first-pair ordering; equal-profile color exchange is taken only after both pair orderings are quotiented. By exchanginga,b the residual degree ismin(a,b)-1."
+    },
+    {
+      "name": "Theorem W2. Uniform geometric irreducibility when \\(a=3\\)",
+      "node": "ARITH-POLYNOMIAL-DUPLICATED-THREE-CYCLE-GEOMETRIC-IRREDUCIBILITY",
+      "scope": "For everyb>=3, F_3,b is geometrically irreducible. Its explicit quadratic coefficients r0,r1,r2 have discriminant D(0)=0,D'(0)=2b^2(b+1) !=0 after removal of(t-1)^2. The simple t0 zero proves nonsquareness overC(t); Gauss's lemma and the content proof give plane geometric irreducibility. The collision boundary is used only for valuation. U2's independent positive primitive aggregate count supplies nonempty exact good open, hence one primitive full component for allb, without finite extrapolation."
+    },
+    {
+      "name": "Theorem W3. Complete groups, blocks, deck and separate sizes",
+      "node": "ARITH-POLYNOMIAL-DUPLICATED-THREE-CYCLE-GROUPS-AND-SIZES",
+      "scope": "For everyb>=3, passport(3^2 1^(2b-2)),(b^2 1^4),T onN=2m,m=b+2 has exactly two absolute and two literal full-braid orbits. With W=3*(2-indicator(b3)): primitive actualS_(2m),blocks1,2m,deck1,literal2Wm^2(5b-3),absoluteWm(5b-3); imprimitive actualS2 wrK,K=A_m for oddb andS_m for evenb,blocks1,m,2m,deck2,literalWm^2,absoluteWm. All type placements and the equal-profile b3 case are included."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Bronislaw Wajnryb",
+      "title": "Orbits of Hurwitz action for coverings of a sphere with two special fibers",
+      "publication": "Retained MPIM95-75 preprint; published Indagationes Mathematicae7(4)(1996),549-558",
+      "doi": "10.1016/S0019-3577(97)89139-2",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2396/1/preprint_1995_75.pdf",
+      "path": "research/arithmetic/sources/wajnryb-two-special-fibers-1995.pdf",
+      "sha256": "b1ede26039b48d20de120333ca57accb919bd0ef6a9da2c0c3fdb15c76c91cb0",
+      "inspected": "Definition p1 and actual Theorem1 p2; precise two-nonsimple-value, fixed-group and branching-data hypotheses.",
+      "application": "Primary connectivity comparison only.",
+      "scope_boundary": "Infinity and both heavy finite branches are nonsimple here, giving three special values. No connectivity conclusion is imported."
+    },
+    {
+      "authors": "Andrei Bogatyrev and Quentin Gendron",
+      "title": "The space of solvable Pell–Abel equations",
+      "publication": "Compositio Mathematica161(2025),1483-1511",
+      "doi": "10.1112/S0010437X25007158",
+      "url": "https://doi.org/10.1112/S0010437X25007158",
+      "path": "research/arithmetic/sources/bogatyrev-gendron-pell-abel-2025.pdf",
+      "sha256": "f1bac7cda93f5f4110e855190274a0aad25deea8d0103cd44ac96e77048ba77c",
+      "inspected": "Published passport p1485 and Corollary2 p1486: two finite products of transpositions.",
+      "application": "Primary comparison with the previously used two-involution family.",
+      "scope_boundary": "Both heavy factors here have cycles of length>=3; the involution component theorem does not apply."
+    },
+    {
+      "authors": "I.P. Goulden and D.M. Jackson",
+      "title": "The Combinatorial Relationship Between Trees, Cacti and Certain Connection Coefficients for the Symmetric Group",
+      "doi": "10.1016/S0195-6698(05)80015-0",
+      "url": "https://uwaterloo.ca/math/sites/default/files/uploads/documents/gjeurjc1992.pdf",
+      "path": "research/arithmetic/sources/goulden-jackson-cacti-1992.pdf",
+      "sha256": "a43abccf0519d4839d4c012a4990cff66c9ed4636bc459512e84a2825fc78331",
+      "inspected": "Original Section3 pp361-363 and corrected cycle-count hypothesis from proof p363, audited in the first-deficit and Hermite sources.",
+      "application": "Through U2: positive total and primitive aggregate count, exact sizes; no component conclusion imported.",
+      "scope_boundary": "Printed theorem hypothesis slip is corrected from the actual proof. Uniform geometric irreducibility is proved separately by W1-W2."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md",
+      "sha256": "a12cb00148a79d3b59f2e3623c0dcec7ce5d479cc85f423b2f6f9bb23cb4d76b",
+      "locator": "W1-W3 general residue reduction, quadratic nonsquare certificate and all-b component proof"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
+      "sha256": "c648d457fdc6e504c4d86fa3734326544291fa195048f450260b4f2761713d3d",
+      "locator": "U1-U3 actual groups, unique imprimitive component, independent aggregate count and factor criterion"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md",
+      "sha256": "eeba580ab1e036d6bc000788566c64887732f0971c3a2a298722a1818ffc4090",
+      "locator": "V1-V4 min(a,b)=2 predecessor and distinct rational-versus-quadratic scope"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L5-L6 group/base and fixed-product conventions"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_duplicated_three_cycle.py",
+    "checker_sha256": "724bc9dd35362f47f82cb4908507189fa766fdae1ce2c291a8eed76411fe4996",
+    "receipt": "research/arithmetic/polynomial_duplicated_three_cycle_verification.json",
+    "receipt_sha256": "5f5074689797d011cdd31dd74e32eda0f70cd19226bfb2632ac0e74e9991728b",
+    "command": "python3 research/arithmetic/verify_polynomial_duplicated_three_cycle.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "software": "Python3.12.3 standard library, assertions active",
+    "general_scope": "48 exact reduced residue models a2..7,b2..9;192 independent exact local-residue points compare the binomial expansion and reduced equation, with exact content and first-two-coefficient/t0 identities.",
+    "quadratic_scope": "20 exact quadratic models b3..20,32,64, each independently compared with the general residue generator and verified discriminant order1. An exact Q[b] calculation certifies the first-jet polynomial2b^2(b+1); it is not a finite interpolation claim.",
+    "component_scope": "All tenb3..12 complete two-component passports throughdegree28, representing505875 literal tuples via disjoint fixed-pattern absolute colored-braid closures and exact cyclic/type-placement multiplicities. Independent ordinary hook counts exhausted in every case.",
+    "group_scope": "Normal transposition graphs certify the primitive full symmetric group and imprimitive symmetric base. Conjugates of a literal three-cycle cover every quotient three-subset, proving containment ofA_m; generator parity gives exactlyA_m orS_m. All block divisors and deck checked.",
+    "negative_scope": "Four invalid domains/corrupted discriminant jets rejected; the t0 branch point is explicitly checked to be a forbidden collision, not an admissible witness.",
+    "limits": "Uniform quadratic irreducibility and nonemptiness use the written expansion/odd valuation and independent class count. No genus/rationality assertion for the quadratic model. X1-X4 independently classify full components for every duplicated length; geometric factors of auxiliary models before finite quotients are not determined here. Other first-deficit and deeper passports remain open."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal written proof/source/exact computation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Exact all-a,b local residue expansion",
+      "Content and no omitted vertical components overC[t]",
+      "Degree min(a,b)-1 and all finite label quotients",
+      "Quadratic coefficient derivation and first jet",
+      "Odd valuation overC(t), not rational factorization",
+      "Nonempty good open via independent positive primitive count",
+      "Exactly two full components with parity-dependent wreath quotient",
+      "All blocks/deck and literal/absolute conventions",
+      "Bounded exact closure totals and all-triples alternating-group certificates"
+    ]
+  }
+}

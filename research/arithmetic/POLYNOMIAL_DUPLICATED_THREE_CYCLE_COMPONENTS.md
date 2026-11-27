@@ -262,12 +262,15 @@ group. The [receipt](polynomial_duplicated_three_cycle_verification.json)
 and [source ledger](polynomial_duplicated_three_cycle_source_ledger.json)
 record exact domains, inputs and assurance limits.
 
-W1 gives a lower-degree algebraic route for all duplicated
-cycle lengths. The cases \(\min(a,b)\le3\) now have complete
-component classifications. Geometric factors and their
-finite label action remain to be determined for
-\(\min(a,b)\ge4\), and for the other unresolved first-deficit
-passports, including higher-\(p\) two-factor profiles.
+W1 gives a lower-degree algebraic model for all duplicated
+cycle lengths. Their complete component classification for
+every length is now supplied by the independent
+[four-core path normalization](POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md).
+It proves one primitive component after the finite label
+quotient, without asserting irreducibility of every
+auxiliary curve before that quotient. Other unresolved
+first-deficit passports, including higher-\(p\) two-factor
+profiles, still require their geometric factor and label analysis.
 Deeper deficits and zero-simple passports remain in the
 overall goal outside already resolved subfamilies.
 No genus or rationality assertion is made for the

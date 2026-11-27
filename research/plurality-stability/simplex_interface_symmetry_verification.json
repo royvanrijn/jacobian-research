@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "b83e9adf990ad5ef96086ee5bb234e5f859903f928dcea97c4ecf51cad9d6a39",
-  "proof_source_sha256": "0312790c1841178f9a87018167938592b0bd2a51393dc7605cb38c442a6f6c2a",
+  "checker_sha256": "76c5a0c6eb1e5753b90b1fbed8de561834e1212f5da52a06bb1e9a9a693fcb97",
+  "proof_source_sha256": "ed525f9d98373e4feb50653c1e9b856290d5d08473d84ad626aa068a137ff67a",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -507,6 +507,33 @@
           "dimension": 9,
           "minus_dimension": 3,
           "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "k": 6,
+          "dimension": 5,
+          "minus_dimension": 4,
+          "selected_TP_matrix": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "k": 6,
+          "dimension": 1,
+          "minus_dimension": 1,
+          "selected_TP_matrix": "passed"
         }
       ],
       "triple_sign_corner_controls": [
@@ -691,6 +718,29 @@
           ],
           "minus_dimension": 3,
           "three_label_sign_rank": 0
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "minus_dimension": 4,
+          "three_label_sign_rank": 3
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "minus_dimension": 1,
+          "three_label_sign_rank": 1
         }
       ],
       "triple_projection_frame_controls": [
@@ -899,10 +949,914 @@
             "0"
           ],
           "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "2",
+            "10/3"
+          ],
+          "projection_frame_identity": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "frame_eigenvalue_controls": [
+            "4"
+          ],
+          "projection_frame_identity": "passed"
+        }
+      ],
+      "all_height_projection_frame_controls": [
+        {
+          "partition": [
+            2,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 1,
+          "single_projection_rank": 0,
+          "cosets": 1,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 1,
+          "single_projection_rank": 0,
+          "cosets": 2,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 1,
+          "single_projection_rank": 0,
+          "cosets": 2,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 2,
+          "single_projection_rank": 2,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "2",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 2,
+          "single_projection_rank": 1,
+          "cosets": 2,
+          "frame_determinant": "8/9",
+          "frame_trace": "2",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 2,
+          "single_projection_rank": 0,
+          "cosets": 1,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 2,
+          "frame_determinant": "2",
+          "frame_trace": "2",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            4,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            4,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 1,
+          "single_projection_rank": 0,
+          "cosets": 3,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 2,
+          "single_projection_rank": 2,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "2",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 2,
+          "single_projection_rank": 0,
+          "cosets": 3,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 3,
+          "single_projection_rank": 3,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 3,
+          "single_projection_rank": 1,
+          "cosets": 3,
+          "frame_determinant": "20/27",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 3,
+          "single_projection_rank": 0,
+          "cosets": 3,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 3,
+          "single_projection_rank": 3,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 3,
+          "single_projection_rank": 1,
+          "cosets": 3,
+          "frame_determinant": "16/27",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 3,
+          "single_projection_rank": 0,
+          "cosets": 3,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 3,
+          "single_projection_rank": 3,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 3,
+          "single_projection_rank": 2,
+          "cosets": 3,
+          "frame_determinant": "196/27",
+          "frame_trace": "6",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 3,
+          "single_projection_rank": 1,
+          "cosets": 3,
+          "frame_determinant": "25/32",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 5,
+          "minus_dimension": 3,
+          "single_projection_rank": 0,
+          "cosets": 1,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 3,
+          "frame_determinant": "3",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 3,
+          "frame_determinant": "3",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 5,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 8,
+          "single_projection_rank": 8,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "8",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 8,
+          "single_projection_rank": 2,
+          "cosets": 4,
+          "frame_determinant": "125/729",
+          "frame_trace": "8",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            2,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 8,
+          "single_projection_rank": 0,
+          "cosets": 6,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 3,
+          "single_projection_rank": 3,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 3,
+          "single_projection_rank": 1,
+          "cosets": 4,
+          "frame_determinant": "64/27",
+          "frame_trace": "4",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            2
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 3,
+          "single_projection_rank": 0,
+          "cosets": 6,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 6,
+          "single_projection_rank": 6,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "6",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 6,
+          "single_projection_rank": 3,
+          "cosets": 4,
+          "frame_determinant": "32768/729",
+          "frame_trace": "12",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 6,
+          "single_projection_rank": 1,
+          "cosets": 6,
+          "frame_determinant": "27/64",
+          "frame_trace": "6",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 5,
+          "minus_dimension": 6,
+          "single_projection_rank": 0,
+          "cosets": 4,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 6,
+          "single_projection_rank": 6,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "6",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 6,
+          "single_projection_rank": 3,
+          "cosets": 4,
+          "frame_determinant": "1024/27",
+          "frame_trace": "12",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 6,
+          "single_projection_rank": 1,
+          "cosets": 6,
+          "frame_determinant": "3125/11664",
+          "frame_trace": "6",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 5,
+          "minus_dimension": 6,
+          "single_projection_rank": 0,
+          "cosets": 4,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            3
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 2,
+          "single_projection_rank": 2,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "2",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            3,
+            3
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 2,
+          "single_projection_rank": 0,
+          "cosets": 4,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            4,
+            2
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 3,
+          "single_projection_rank": 3,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "3",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            4,
+            2
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 3,
+          "single_projection_rank": 0,
+          "cosets": 4,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 4,
+          "single_projection_rank": 4,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "4",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 4,
+          "single_projection_rank": 3,
+          "cosets": 4,
+          "frame_determinant": "2000/27",
+          "frame_trace": "12",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 4,
+          "single_projection_rank": 2,
+          "cosets": 6,
+          "frame_determinant": "1029/16",
+          "frame_trace": "12",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 5,
+          "minus_dimension": 4,
+          "single_projection_rank": 1,
+          "cosets": 4,
+          "frame_determinant": "432/625",
+          "frame_trace": "4",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 6,
+          "minus_dimension": 4,
+          "single_projection_rank": 0,
+          "cosets": 1,
+          "frame_determinant": "0",
+          "frame_trace": "0",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 2,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 3,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 4,
+          "frame_determinant": "4",
+          "frame_trace": "4",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 4,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 6,
+          "frame_determinant": "6",
+          "frame_trace": "6",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 5,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 4,
+          "frame_determinant": "4",
+          "frame_trace": "4",
+          "remaining_group_commutation": "passed"
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "antisymmetric_labels": 6,
+          "minus_dimension": 1,
+          "single_projection_rank": 1,
+          "cosets": 1,
+          "frame_determinant": "1",
+          "frame_trace": "1",
+          "remaining_group_commutation": "passed"
         }
       ],
       "orientation_and_non_TN_negative_controls": "passed",
-      "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and six selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The same finite models verify S85's triple-sign corner identity, projection idempotence and height-two vanishing, plus S88-S89's S4 overlap, transposition-content frame identity and frame spectral polynomials. The all-k immanant/transport formulas, positivity, branching and scalar spectral reduction are written arguments; no analytic spectral gap is certified."
+      "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and eight selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The same finite models verify S85's triple-sign corner identity, projection idempotence and height-two vanishing, plus S88-S89's S4 overlap, transposition-content frame identity and frame spectral polynomials. For S90 they verify exact conjugate-projection frame determinants, remaining-group commutation, the m2/m3 specializations and vanishing above the representation height. The all-k immanant/transport formulas, positivity, branching, strict frame bound and closed-image scalar spectral reduction are written arguments; no analytic spectral gap is certified."
     },
     "triple_sign_reflections": {
       "exceptional_pair_factorizations": 24,
@@ -968,6 +1922,44 @@
           "ambient_group_order": 720,
           "compressed_corner_and_transport": "passed",
           "overlap_directly_expanded": false
+        }
+      ],
+      "highest_projection_tableau_chain_controls": [
+        {
+          "k": 2,
+          "vertical_strip_and_reverse_tableau_chains": 1
+        },
+        {
+          "k": 3,
+          "vertical_strip_and_reverse_tableau_chains": 3
+        },
+        {
+          "k": 4,
+          "vertical_strip_and_reverse_tableau_chains": 9
+        },
+        {
+          "k": 5,
+          "vertical_strip_and_reverse_tableau_chains": 20
+        },
+        {
+          "k": 6,
+          "vertical_strip_and_reverse_tableau_chains": 43
+        },
+        {
+          "k": 7,
+          "vertical_strip_and_reverse_tableau_chains": 81
+        },
+        {
+          "k": 8,
+          "vertical_strip_and_reverse_tableau_chains": 150
+        },
+        {
+          "k": 9,
+          "vertical_strip_and_reverse_tableau_chains": 257
+        },
+        {
+          "k": 10,
+          "vertical_strip_and_reverse_tableau_chains": 434
         }
       ],
       "negative_three_row_scalar_reflection": {
@@ -1042,7 +2034,7 @@
         "positive_coefficient_sum": 8,
         "sign": "negative"
       },
-      "scope": "Exact nested antisymmetrizer corner/transport identities in S3 through S6, direct overlap expansions through S5, and the exact five-cell negative reflection witness. The all-size coset hierarchy and all-k three-row closed-image spectral reduction S88-S89 are written proofs, using the retained content-spectrum input. No new all-correlation gap follows from these controls."
+      "scope": "Exact nested antisymmetrizer corner/transport identities in S3 through S6, direct overlap expansions through S5, vertical-strip extension and compatible reverse-tableau chains for every partition through k10, and the exact five-cell negative reflection witness. The all-size coset hierarchy, strict highest-projection frame and closed-image scalar spectral reduction S88-S90 are written proofs, using the retained Young/Pieri inputs. No new all-correlation gap follows from these controls."
     },
     "standard_mass_weight": {
       "row_identity": "passed",

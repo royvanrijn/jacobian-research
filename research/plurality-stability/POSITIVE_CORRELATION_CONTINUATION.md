@@ -136,6 +136,16 @@ $\min\{\rho t/\sqrt{1-\rho^2},1\}\ge\rho\min\{t,1\}$.
 Sum (B5) over ordered transfers and use (B4) to obtain (B3).
 For the second line restrict the transfers themselves to the exterior.
 Positivity of $T_\rho-\Pi_0$ supplies the mixed-term estimate (C5).
+One usable constant in the saturated margin is $\ell^2/(\ell+2)$.
+In the reflection formula, write $m=\rho x/\sqrt{1-\rho^2}$ and
+integrate over $m+T_i\subset T_i$. The difference of the reflected
+densities there is at least $\phi_n(z)(1-e^{-2m_N z_N})$, where
+$z\in T_i$ and $m_N,z_N$ are the normal coordinates. Use
+$1-e^{-u}\ge u/(1+u)$ and Cauchy–Schwarz with
+$\int_{T_i}z_N\,d\gamma_n=\ell/2$ and
+$\int_{T_i}z_N^2d\gamma_n\le1/2$ to obtain
+$U_{\rho,ij}(x)\ge \ell^2 m_N/(\ell+2m_N)$.
+This is at least $(\ell^2/(\ell+2))\min\{m_N,1\}$.
 The available exponential tail margin $1/2-2\alpha$ tends to zero
 as $b\uparrow1$; this argument gives no uniform endpoint control.
 For example $\alpha=(1+3b)/(8(1+b))$ is admissible and gives the

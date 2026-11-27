@@ -54,12 +54,12 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md",
-      "sha256": "e69e2ccf39279d6135e42caf738771a9ba0ef306e97db917fb7b57372e2e2ca1",
+      "sha256": "eeba580ab1e036d6bc000788566c64887732f0971c3a2a298722a1818ffc4090",
       "locator": "V1-V4 rational primitive quotient, uniform positive real charts, exact groups/sizes and label fields"
     },
     {
       "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
-      "sha256": "8d60c6a8f71ed11b2707dca6f3cd33144869858ba2f16f4c7dba9c69a87eb3a3",
+      "sha256": "c648d457fdc6e504c4d86fa3734326544291fa195048f450260b4f2761713d3d",
       "locator": "U1-U3 first-deficit groups, complete imprimitive sector and geometric factor criterion"
     },
     {
@@ -77,7 +77,7 @@
     "checker": "research/arithmetic/verify_polynomial_dt_duplicated_cycle.py",
     "checker_sha256": "2c9b314831061b86b4fe2ac8a31aeaada66eae6edba776d017439f092ae59478",
     "receipt": "research/arithmetic/polynomial_dt_duplicated_cycle_verification.json",
-    "receipt_sha256": "ae9bf173432b022c0be0100855a7fa29024a39105de3d957f82d1ffcd998cca9",
+    "receipt_sha256": "8c8f1cc74828002346566cae488c925201c98be8f59c876b37e72e5c53bd6091",
     "command": "python3 research/arithmetic/verify_polynomial_dt_duplicated_cycle.py",
     "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
     "software": "Python3.12.3 standard library, assertions active",

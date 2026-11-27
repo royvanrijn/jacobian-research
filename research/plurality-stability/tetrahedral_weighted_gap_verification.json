@@ -1,0 +1,97 @@
+{
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "precision_bits": 640,
+  "standard_gap_in_units_of_ell": "1/1000",
+  "slabs": [
+    {
+      "left": "17/25",
+      "right": "77/100",
+      "degree": 25,
+      "operator_tail_bound": "[0.00477826981513 +/- 4.49e-15]",
+      "trace_exponent": 4,
+      "trace": "[0.818966134933 +/- 3.87e-13]",
+      "norm_bound": "[0.951297785806 +/- 1.52e-14]"
+    },
+    {
+      "left": "77/100",
+      "right": "41/50",
+      "degree": 28,
+      "operator_tail_bound": "[0.0126996106652 +/- 3.18e-14]",
+      "trace_exponent": 8,
+      "trace": "[0.576016529792 +/- 2.75e-13]",
+      "norm_bound": "[0.933371140020 +/- 2.91e-13]"
+    },
+    {
+      "left": "41/50",
+      "right": "17/20",
+      "degree": 34,
+      "operator_tail_bound": "[0.0130992374430 +/- 3.94e-14]",
+      "trace_exponent": 8,
+      "trace": "[0.739305299279 +/- 6.12e-14]",
+      "norm_bound": "[0.962948314649 +/- 3.30e-13]"
+    },
+    {
+      "left": "17/20",
+      "right": "7/8",
+      "degree": 39,
+      "operator_tail_bound": "[0.0180018280058 +/- 4.08e-14]",
+      "trace_exponent": 16,
+      "trace": "[0.654961793888 +/- 2.82e-13]",
+      "norm_bound": "[0.973898053739 +/- 1.18e-13]"
+    },
+    {
+      "left": "7/8",
+      "right": "89/100",
+      "degree": 44,
+      "operator_tail_bound": "[0.0195057580328 +/- 2.15e-14]",
+      "trace_exponent": 16,
+      "trace": "[0.738479879733 +/- 8.92e-14]",
+      "norm_bound": "[0.981230788295 +/- 3.65e-14]"
+    },
+    {
+      "left": "89/100",
+      "right": "9/10",
+      "degree": 48,
+      "operator_tail_bound": "[0.0209239172226 +/- 3.77e-14]",
+      "trace_exponent": 16,
+      "trace": "[0.806727012015 +/- 3.84e-13]",
+      "norm_bound": "[0.986666566909 +/- 4.79e-13]"
+    },
+    {
+      "left": "9/10",
+      "right": "91/100",
+      "degree": 54,
+      "operator_tail_bound": "[0.0201947148590 +/- 1.22e-14]",
+      "trace_exponent": 32,
+      "trace": "[0.833720384552 +/- 1.23e-13]",
+      "norm_bound": "[0.994333080312 +/- 6.46e-14]"
+    },
+    {
+      "left": "91/100",
+      "right": "183/200",
+      "degree": 56,
+      "operator_tail_bound": "[0.0227291820880 +/- 3.23e-14]",
+      "trace_exponent": 16,
+      "trace": "[0.954111634959 +/- 2.05e-13]",
+      "norm_bound": "[0.997068393288 +/- 1.68e-13]"
+    },
+    {
+      "left": "183/200",
+      "right": "23/25",
+      "degree": 60,
+      "operator_tail_bound": "[0.0220938896669 +/- 1.75e-14]",
+      "trace_exponent": 32,
+      "trace": "[0.853033458474 +/- 1.47e-13]",
+      "norm_bound": "[0.995044926215 +/- 4.03e-13]"
+    }
+  ],
+  "command": ".venv/bin/python research/plurality-stability/check_tetrahedral_weighted_gap.py",
+  "checker_sha256": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020",
+  "helper_sha256": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+  "scope": "Internal 640-bit exact rational and directed arithmetic replay on nine slabs covering 17/25 through 23/25. Positive margin is reserved in the sigma-scaled form. The operator tail bound is the scalar cap before subtraction of the certified planar deficits.",
+  "internal_controls": [
+    "Exact ambient coefficient comparison through degree 8 against the original rational implementation.",
+    "Two unequal reflected folded masses at tilt rate one, with their mean enclosing the same exact value as an independent full-wedge formula."
+  ]
+}

@@ -112,3 +112,7 @@ For the two nonzero simple-root points \(Y-X\) also has order \(-3\), while the 
 When \(d_0=d_1\), exactly one of the two values matches, with equal normalized parameters \(v\). Along a fixed \(P\)-level the first base derivative of \(Q\) in a chart at a simple root \(\rho\) is a fixed sign times \(\kappa/(2v r_{b_*}'(\rho))\). This follows from \(P=v^2+C_{b_*}(x-b_*)\) and the coordinate change \(x_{b_*}^3v=u(x_{b_*},x_{b_*}^3 Y)\), whose rescaled transverse derivative on the boundary is \(r_{b_*}'(\rho)\). Along the moving level the extra derivatives through \(P\) cancel between the two matching functions, since the restricted \(P,Q\) formulas are the same at \(d_0=d_1\). The fixed-level slopes differ by the [first-face derivative comparison](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_PLANAR_FIBRES.md#monodromy-of-the-generic-position-projection). The matching difference therefore has order one. This gives total order \(6+\epsilon_{b_*}\) from the two simple-root points.
 
 The leading coefficient of the degree-eleven divided difference is a scalar times \(h^2\), of order thirty here. Its power \(41\) contributes \(1230\) to the resultant. The resulting content order is \(1230+16+6+\epsilon_{b_*}=1252+\epsilon_{b_*}\). Comparing with the leading coefficient \(f^{1751}g\) gives the formula.
+
+The [high-root double charts](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_HIGH_DOUBLE_ENDS.md)
+distribute the ordered sheets among the first, scalar and simple charts.
+They show that exchange contributes no fixed point at a high root.

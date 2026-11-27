@@ -376,18 +376,26 @@ Run from the canonical checkout:
 
 ## Remaining obligation
 
-The entire subcase \(\min(a,b)=2\) of (2) is now classified,
-with two rational components and exact separate sizes, in
-[the DT/duplicated-cycle theorem](POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md).
-The residual duplicated-cycle problem therefore starts at
-\(a,b\ge3\).
+The subcases \(\min(a,b)=2\) and \(\min(a,b)=3\) of (2)
+are now classified, with exact separate sizes, in the
+[DT/duplicated-cycle theorem](POLYNOMIAL_DT_DUPLICATED_CYCLE_COMPONENTS.md)
+and the [quadratic residue theorem](POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md).
+The latter also gives a residue polynomial of degree
+\(\min(a,b)-1\) for arbitrary lengths.
+The entire duplicated-cycle component problem, including
+\(a,b\ge4\), is closed by the independent
+[four-core path normalization](POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md):
+there is exactly one primitive component for all lengths,
+in addition to U2's unique imprimitive component. Its
+separate size is therefore the aggregate (5).
 
 For arbitrary passports (1), factor the determinant (7)
 geometrically, remove factors with empty good locus, compute
 the finite label action, and determine each component's
 critical-value-map degree. U1--U2 already determine every
 actual monodromy group, block system and deck group at this
-level. Uniform primitive connectedness has not been proved.
+level. Uniform primitive connectedness for the other
+profiles has not been proved.
 In particular rational factorization alone does not certify
 geometric factorization. The general component goal, all
 deeper deficits and zero-simple passports outside already

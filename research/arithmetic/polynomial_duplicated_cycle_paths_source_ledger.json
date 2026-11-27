@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md",
+  "assurance": "Internal written all-length component classification with exact bounded controls. No novelty claim, independent replay, external mathematical review, formal verification, or classification of arbitrary passports is asserted.",
+  "declarations": [
+    {
+      "node": "ARITH-POLYNOMIAL-DUPLICATED-CYCLE-FOUR-FOREST-CORES",
+      "name": "Theorem X1. Four complementary cores",
+      "scope": "For all a,b>=2, deleting T in passport(a^2 1^(2b-2)),(b^2 1^(2a-2)),T leaves exactly two AB components. The bipartite four-cycle core is exactly a matching, an A-star plus isolated A-cycle, a B-star plus isolated B-cycle, or an alternating four-vertex path plus one isolated sheet. AB is a full cycle on each component. Path cyclic orders are determined up to relabeling by independent oriented distances alpha in1..a-1 and beta in1..b-1, with the T anchor still free; every pair occurs."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-DUPLICATED-CYCLE-ROTATION-AND-CAPTURE",
+      "name": "Lemma X2. Synchronized rotation and opposite-color capture",
+      "scope": "For all such tuples, Q1^(2k) followed by relabeling by(AB)^k restores A,B and rotates both T endpoints by(AB)^k. If T=(u,v), B movesu and fixesv, the literal identity Q2^2(A,B,T)=(A,TBT,(u,B^-1u)) holds. It replacesu byv only in the chosen B-cycle, leaving A and the complementary B-cycle literal."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-DUPLICATED-CYCLE-PRIMITIVE-PATH-NORMALIZATION",
+      "name": "Theorem X3. Uniform normalization of every primitive tuple",
+      "scope": "For everya,b>=2, all star cores and all nonzero-phase matching cores braid to a path. The matching color word O B^(b-1) A^(a-1) has opposite-color pairs at every nonzero phase. At a path, two captures through an A-star independently prescribe beta while A and the complementary B-cycle stay literal. Heavy exchange maps(alpha,beta) to(b-beta,a-alpha), permitting independent alpha control. Hence every path normalizes to(1,1) and one T anchor. A,B fix the isolated sheet and are transitive on the rest, so conjugates of T generateS_N. Only aligned matchings remain, and they are the single quadratic lift component."
+    },
+    {
+      "node": "ARITH-POLYNOMIAL-DUPLICATED-CYCLE-ALL-LENGTHS-GROUPS-AND-SIZES",
+      "name": "Corollary X4. Complete groups, blocks, decks and orbit sizes",
+      "scope": "For all a,b>=2, m=a+b-1,N2m,W=3*(2-indicator(a=b)),D=(2a-1)(2b-1), exactly two full absolute/literal components exist. Primitive: actualS_N, blocks1,N,deck1,literalWm^2(D-1),absoluteWm(D-1)/2. Quadratic: actualS2 wrK withK=A_m ifa,b odd,elseS_m,blocks1,m,N,deck2,literalWm^2,absoluteWm. Full twists identify all product-centralizer relabelings. Equal profiles and all type placements are included."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Gareth A. Jones and Alexander Zvonkin",
+      "title": "Orbits of braid groups on cacti",
+      "doi": "10.17323/1609-4514-2002-2-1-127-160",
+      "url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "inspected": "Actual Theorem1.1, Sections1.3,2.2 and5.4 in retained author PDF.",
+      "application": "Polynomial/cactus/full-braid correspondence; count conventions; quotient-copy comparison.",
+      "scope_boundary": "The four-core path normalization is proved separately, not inferred from exceptional examples."
+    },
+    {
+      "authors": "Bronislaw Wajnryb",
+      "title": "Orbits of Hurwitz action for coverings of a sphere with two special fibers",
+      "doi": "10.1016/S0019-3577(97)89139-2",
+      "url": "https://archive.mpim-bonn.mpg.de/id/eprint/2396/1/preprint_1995_75.pdf",
+      "path": "research/arithmetic/sources/wajnryb-two-special-fibers-1995.pdf",
+      "sha256": "b1ede26039b48d20de120333ca57accb919bd0ef6a9da2c0c3fdb15c76c91cb0",
+      "inspected": "Definition p1 and actual Theorem1 p2 of retained MPIM95-75 preprint.",
+      "application": "Closest general connectivity comparison.",
+      "scope_boundary": "Its at-most-two nonsimple values hypothesis fails: infinity and both heavy finite values are nonsimple."
+    },
+    {
+      "authors": "I.P. Goulden and D.M. Jackson",
+      "title": "The Combinatorial Relationship Between Trees, Cacti and Certain Connection Coefficients for the Symmetric Group",
+      "doi": "10.1016/S0195-6698(05)80015-0",
+      "url": "https://uwaterloo.ca/math/sites/default/files/uploads/documents/gjeurjc1992.pdf",
+      "path": "research/arithmetic/sources/goulden-jackson-cacti-1992.pdf",
+      "sha256": "a43abccf0519d4839d4c012a4990cff66c9ed4636bc459512e84a2825fc78331",
+      "inspected": "Actual Section3 pp361-363, including corrected cycle-count hypothesis from proof p363, audited in U2's sources.",
+      "application": "Ordered total m^2(2a-1)(2b-1) through U2; no connectivity conclusion.",
+      "scope_boundary": "Printed hypothesis slip is not reused; component transitivity has its independent path proof."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md",
+      "sha256": "36f9713f9eecde010d5958b035eb1b4ced5bf2fe24da2f9668c72155478ab714",
+      "locator": "X1-X4 all-length four-core classification and independent path-distance normalization"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_FIRST_DEFICIT_COMPONENT_REDUCTION.md",
+      "sha256": "c648d457fdc6e504c4d86fa3734326544291fa195048f450260b4f2761713d3d",
+      "locator": "U2 unique quadratic lift, actual group, blocks, deck and exact aggregate count"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H1 cycle-incidence tree"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_LIFT_TRANSPORT.md",
+      "sha256": "50598f08864d608c03e571346322c7bc7e80447ef923f8141820f0f1cc2832c9",
+      "locator": "L5-L6 return lift and group/block/deck conventions"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_duplicated_cycle_paths.py",
+    "checker_sha256": "9657d2c0cac2e296c1378747f3508f79e96eaa8cb4d8444784dfc0d1e51baef6",
+    "receipt": "research/arithmetic/polynomial_duplicated_cycle_paths_verification.json",
+    "receipt_sha256": "3e09dbef955fe5f79412485be6bc0a21221a50c2b4df32d7fd197cf57f83346c",
+    "command": "python3 research/arithmetic/verify_polynomial_duplicated_cycle_paths.py",
+    "software": "Python3.12.3 standard library, assertions active",
+    "working_directory": "Canonical Ubuntu-24.04 WSL checkout root",
+    "normalization_scope": "40 ordered domains:all2<=a,b<=7 plus(2,17),(4,13),(7,19),(16,17), throughdegree64. 339 nonaligned matching escapes;455 path-distance pairs;1939 beta changes and1939 alpha changes; 1134 star-anchor controls. Each normalized path's absolute label matches a separately constructed canonical seed. Literal identities, twists/relabelings, core classifications and unchanged complementary cycles checked.",
+    "component_scope": "10 complete two-component colored-braid closures, including eight passports with both lengths>=4; 726819 literal tuples represented. Every core count agrees with its independent combinatorial formula; separate exact groups, all blocks, deck and independent hook totals exhausted.",
+    "negative_scope": "Four invalid domains or impossible aligned-matching escapes rejected.",
+    "limits": "Written X1-X4 prove the uniform claim; the finite bounds are controls. No auxiliary residue-curve geometric irreducibility, rationality or genus claim, and no general first-deficit/deeper/zero-simple classification."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal written proof and exact computation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Complete incidence-core enumeration, including the isolated sheet",
+      "Literal Q2^2 capture with the other heavy factor unchanged",
+      "Actual braid plus simultaneous relabeling for synchronized rotation",
+      "All nonzero cyclic phases admit opposite-color capture",
+      "Star excursions prescribe beta and retain alpha and the complementary cycle",
+      "Heavy exchange complements and swaps distances, permitting alpha control",
+      "Canonical path uniqueness and no orientation or anchor residual",
+      "Direct star-transposition proof of full symmetric monodromy",
+      "Aligned matching identification and U2's exact lifted component",
+      "Literal versus absolute and equal-type-placement counts"
+    ]
+  }
+}

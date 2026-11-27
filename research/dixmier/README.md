@@ -191,6 +191,11 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Rank-zero germs of ramification index four and excess at most nine have five cusp pairs | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_INDEX_FOUR_CUSPS.md) |
 | The degree-sixteen order-(12,42) profile has six possible outer Puiseux lists | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_INDEX_FOUR_CUSPS.md) |
 | The ordered double locus at the degree-sixteen outer cusps has exact ramification indices | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_INDEX_FOUR_CUSPS.md) |
+| The leading high-root pairs have exact simple double-point counts | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_HIGH_DOUBLE_ENDS.md) |
+| The ordered double locus has 24 index-seven branches at every high root | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_HIGH_DOUBLE_ENDS.md) |
+| The distinct simple high-root charts give an exact unbounded double end | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_HIGH_DOUBLE_ENDS.md) |
+| The degree-sixteen ordered double curve has six, eight, or twelve exchange-fixed points | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_HIGH_DOUBLE_ENDS.md) |
+| Zero-sum weights require nonzero weighted degree for a rational slice | Internal result | proved | [Source](dixmier-formal-lifting/WEIGHTED_HAMILTONIAN_SLICE_FULL_BOUNDARY.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

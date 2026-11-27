@@ -435,9 +435,10 @@ def universal_block_controls():
         return [[sum(value*b[r][j] for r, value in enumerate(row) if value)
                  for j in range(len(b))] for row in a]
 
-    young_cases, triple_sign_cases, triple_frame_cases = [], [], []
+    young_cases, triple_sign_cases, triple_frame_cases, height_frame_cases = [], [], [], []
     shapes = [shape for k in range(3, 6) for shape in partitions(k)]
-    shapes += [(3, 2, 1), (2, 2, 2), (3, 1, 1, 1), (2, 2, 1, 1), (3, 3), (4, 2)]
+    shapes += [(3, 2, 1), (2, 2, 2), (3, 1, 1, 1), (2, 2, 1, 1),
+               (3, 3), (4, 2), (2, 1, 1, 1, 1), (1, 1, 1, 1, 1, 1)]
     for shape in shapes:
         k, tabs = sum(shape), tableaux(shape)
         d, index = len(tabs), {t: i for i, t in enumerate(tabs)}
@@ -536,6 +537,62 @@ def universal_block_controls():
                                    for i in range(size)]
             triple_frame_cases.append({"partition": list(shape), "frame_eigenvalue_controls": [str(v) for v in sorted(roots)],
                                        "projection_frame_identity": "passed"})
+            def permutation_corner(g):
+                current, work = identity(d), list(g)
+                for target in range(k):
+                    pos = work.index(target)
+                    while pos > target:
+                        work[pos-1], work[pos] = work[pos], work[pos-1]
+                        current = product(generators[pos-1], current)
+                        pos -= 1
+                return [[current[a][b] for b in minus] for a in minus]
+
+            def exact_determinant(matrix):
+                matrix = [row[:] for row in matrix]
+                result = Q(1)
+                for col in range(len(matrix)):
+                    pivot = next((row for row in range(col, len(matrix)) if matrix[row][col]), None)
+                    if pivot is None:
+                        return Q(0)
+                    if pivot != col:
+                        matrix[col], matrix[pivot] = matrix[pivot], matrix[col]
+                        result = -result
+                    value = matrix[col][col]
+                    result *= value
+                    for row in range(col+1, len(matrix)):
+                        factor = matrix[row][col]/value
+                        for j in range(col+1, len(matrix)):
+                            matrix[row][j] -= factor*matrix[col][j]
+                return result
+
+            for m in range(2, min(k, len(shape)+1)+1):
+                sign_indices = [a for a, t in enumerate(minus)
+                                if all(tabs[t][j] == (j, 0) for j in range(m))]
+                height_frame = [[Q(0) for _ in minus] for _ in minus]
+                for subset in itertools.combinations(range(2, k), m-2):
+                    g = (0, 1, *subset, *[j for j in range(2, k) if j not in subset])
+                    direct = permutation_corner(g)
+                    inverse = permutation_corner(tuple(g.index(j) for j in range(k)))
+                    assert product(direct, inverse) == identity(size)
+                    for i in range(size):
+                        for j in range(size):
+                            height_frame[i][j] += sum(direct[i][r]*inverse[r][j] for r in sign_indices)
+                determinant = exact_determinant(height_frame)
+                assert (determinant > 0) == (len(shape) >= m)
+                if m == 2:
+                    assert height_frame == identity(size)
+                if m == 3:
+                    assert height_frame == frame
+                for generator in generators[2:]:
+                    corner = [[generator[a][b] for b in minus] for a in minus]
+                    assert product(height_frame, corner) == product(corner, height_frame)
+                if len(shape) < m:
+                    assert not any(value for row in height_frame for value in row)
+                height_frame_cases.append({"partition": list(shape), "antisymmetric_labels": m,
+                    "minus_dimension": size, "single_projection_rank": len(sign_indices),
+                    "cosets": math.comb(k-2, m-2), "frame_determinant": str(determinant),
+                    "frame_trace": str(sum(height_frame[i][i] for i in range(size))),
+                    "remaining_group_commutation": "passed"})
         z = [[Q(0) for _ in range(d)] for _ in range(d)]
         for rest in itertools.permutations(range(1, k)):
             g = [0, *rest]
@@ -564,8 +621,9 @@ def universal_block_controls():
         "rational_Young_Coxeter_and_selected_TP_controls": young_cases,
         "triple_sign_corner_controls": triple_sign_cases,
         "triple_projection_frame_controls": triple_frame_cases,
+        "all_height_projection_frame_controls": height_frame_cases,
         "orientation_and_non_TN_negative_controls": "passed",
-        "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and six selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The same finite models verify S85's triple-sign corner identity, projection idempotence and height-two vanishing, plus S88-S89's S4 overlap, transposition-content frame identity and frame spectral polynomials. The all-k immanant/transport formulas, positivity, branching and scalar spectral reduction are written arguments; no analytic spectral gap is certified.",
+        "scope": "Exact S68 coefficient identity for 3<=k<=7; exact rational seminormal Coxeter relations and nonnegative I+s_i matrices for every partition through k=5 and eight selected k=6 partitions; selected nonsymmetric TP exponential-matrix sums and their (12)-minus corners. The same finite models verify S85's triple-sign corner identity, projection idempotence and height-two vanishing, plus S88-S89's S4 overlap, transposition-content frame identity and frame spectral polynomials. For S90 they verify exact conjugate-projection frame determinants, remaining-group commutation, the m2/m3 specializations and vanishing above the representation height. The all-k immanant/transport formulas, positivity, branching, strict frame bound and closed-image scalar spectral reduction are written arguments; no analytic spectral gap is certified.",
     }
 
 
@@ -634,7 +692,7 @@ def triple_sign_reflection_controls():
 
 
 def antisymmetry_height_controls():
-    """Finite formal-group and witness controls for S88-S89."""
+    """Finite formal-group, tableau-chain and witness controls for S88-S90."""
     def multiply(a, b):
         result = {}
         for p, first in a.items():
@@ -681,6 +739,54 @@ def antisymmetry_height_controls():
                             "compressed_corner_and_transport": "passed",
                             "overlap_directly_expanded": m <= 4})
 
+    def partitions(n, cap=None):
+        if not n:
+            yield ()
+        else:
+            for first in range(min(n, n if cap is None else cap), 0, -1):
+                for rest in partitions(n-first, first):
+                    yield (first, *rest)
+
+    def remove(shape, rows):
+        result = tuple(value-int(i in rows) for i, value in enumerate(shape))
+        return tuple(v for v in result if v) if all(a >= b for a, b in zip(result, result[1:])) else None
+
+    def transpose(shape):
+        return tuple(sum(value > col for value in shape) for col in range(max(shape, default=0)))
+
+    def boxes(shape):
+        return {(i, j) for i, length in enumerate(shape) for j in range(length)}
+
+    chain_cases = []
+    for k in range(2, 11):
+        count = 0
+        for shape in partitions(k):
+            for pair in itertools.combinations(range(len(shape)), 2):
+                mu = remove(shape, pair)
+                if mu is None:
+                    continue
+                for m in range(2, len(shape)+1):
+                    extensions = [rows for rows in itertools.combinations(range(len(shape)), m)
+                                  if set(pair) <= set(rows) and remove(shape, rows) is not None]
+                    assert extensions
+                    gamma = remove(shape, extensions[0])
+                    a, b, c = map(transpose, (gamma, mu, shape))
+                    first, second = boxes(b)-boxes(a), boxes(c)-boxes(b)
+                    strip = boxes(c)-boxes(a)
+                    assert len(strip) == m and len({j for i, j in strip}) == m
+                    assert len(first) == m-2 and len(second) == 2
+                    tableau = sorted(boxes(a))+sorted(first)+sorted(second)
+                    labels = {position: i for i, position in enumerate(tableau)}
+                    assert len(labels) == k
+                    assert set(tableau[:k-2]) == boxes(b)
+                    for (i, j), value in labels.items():
+                        if (i, j+1) in labels:
+                            assert value < labels[i, j+1]
+                        if (i+1, j) in labels:
+                            assert value < labels[i+1, j]
+                    count += 1
+        chain_cases.append({"k": k, "vertical_strip_and_reverse_tableau_chains": count})
+
     def swap(v, i, j):
         v = list(v)
         v[i], v[j] = v[j], v[i]
@@ -714,13 +820,14 @@ def antisymmetry_height_controls():
     smallest = min(coefficients)
     assert sum(c*2**(e-smallest) for e, c in coefficients.items()) < 0
     return {"nested_group_identities": group_cases,
+            "highest_projection_tableau_chain_controls": chain_cases,
             "negative_three_row_scalar_reflection": {
                 "k": 5, "x": [str(v) for v in x], "y": [str(v) for v in y],
                 "tau": "5*log(2)", "integer_exponential_coefficients":
                 [[e, c] for e, c in sorted(coefficients.items(), reverse=True)],
                 "leading_exponent": 680, "positive_exponent_upper": 650,
                 "positive_coefficient_sum": 8, "sign": "negative"},
-            "scope": "Exact nested antisymmetrizer corner/transport identities in S3 through S6, direct overlap expansions through S5, and the exact five-cell negative reflection witness. The all-size coset hierarchy and all-k three-row closed-image spectral reduction S88-S89 are written proofs, using the retained content-spectrum input. No new all-correlation gap follows from these controls."}
+            "scope": "Exact nested antisymmetrizer corner/transport identities in S3 through S6, direct overlap expansions through S5, vertical-strip extension and compatible reverse-tableau chains for every partition through k10, and the exact five-cell negative reflection witness. The all-size coset hierarchy, strict highest-projection frame and closed-image scalar spectral reduction S88-S90 are written proofs, using the retained Young/Pieri inputs. No new all-correlation gap follows from these controls."}
 
 
 def standard_hook_gaussian_controls():

@@ -2,8 +2,9 @@
 
 This note proves a direct comparison for **every** ordinary balanced Gaussian
 three-cell partition in every dimension at
-\(0<\rho\le221/500=0.442\). The new interval is
-\([11/25,221/500]\). It isolates one adverse radial direction, uses the
+\(0<\rho\le8859/20000=0.44295\). Sections FA1–FA7 give
+\([11/25,221/500]\) and the [projected extension](#fa8-projected-extension-to-044295)
+covers the adjoining slab. The proof isolates one adverse radial direction, uses the
 simplex constraints to limit its amplitude, and pays for its positive
 contribution with unavoidable angular loss. There is no assumption of
 closeness to a simplex, stationarity, or continuation of maximizers.
@@ -416,6 +417,106 @@ quadratic determinant are separately enclosed with Arb. Negative
 controls reject an excessive coercivity constant, an insufficient
 midpoint remainder, and deliberately incomplete correlation covers.
 These controls supplement the complete written reductions.
+
+## FA8. Projected extension to 0.44295
+
+The direct comparison holds on the adjoining slab
+\(221/500\le\rho\le8859/20000\). The
+[directed checker](check_three_cell_finite_amplitude_projected_extension.py)
+and [retained cover](three_cell_finite_amplitude_projected_extension_verification.json)
+give the following replacements for (FA5):
+
+\[
+ \frac{268}{1000}\le D\le\frac{272}{1000},\qquad
+ \frac{399}{200}\le a_u\le\frac{1003}{500},\qquad
+ \|(\mathcal A-2)u\|^2\le\frac1{15000},\qquad
+ \|\mathcal A\|_{\rm HS}^2\le\frac{22}{5}.
+ \tag{FA18}
+\]
+
+The trial (FA4) and its exact centering are unchanged. Since
+\(22/5-(399/200)^2<(13/20)^2\), the proof of (FA6) now gives
+\[
+ \sum_i q(z_i)\le \frac3{500}A^2+2\mathsf r AG-\frac{27}{20}G^2,
+ \qquad \mathsf r^2=1/15000.
+ \tag{FA19}
+\]
+When the sum is nonnegative and \(A>0\), this bounds \(G^2/A^2\)
+by \(H^2<0.005328\), using (FA7) with these constants.
+If \(A=0\), nonnegativity instead forces \(G=0\).
+
+Use the full simplex circumradius in the
+[amplitude obstruction (AP3)](THREE_CELL_FINITE_AMPLITUDE_PROJECTION.md#a-stronger-analytic-version-of-the-one-mode-calculation).
+The current cover verifies (FA8) with \(c_*=15/8\),
+\(C_*=14/25\), \(j_*=107/1000\), and origin cutoff \(1/10\).
+Indeed \(|p-\mathbf 1/3|\le\sqrt{2/3}\). For \(A\ge A_0=1/100\)
+the residual divided by \(A\) is therefore at least
+\((c_*/x-C_*-\sqrt{2/3}/A_0)_+\) on the origin band.
+Integrating its square against
+\(J_+(x^2)e^{-x^2}2x\,dx\ge2j_*x^2\,dx\) over the positive part gives
+\[
+ \frac{G^2}{A^2}
+ \ge\frac{2j_*c_*^3 A_0}{3(\sqrt{2/3}+A_0C_*)}
+ >0.005719 .
+ \tag{FA20}
+\]
+The integration endpoint is below \(1/10\), as required.
+This contradicts the bound from (FA19), so any profile with a
+nonnegative scalar sum and nonzero trial component has \(A<A_0\).
+
+The cover verifies the same cube inequality (FA12) and annular
+inputs (FA13). For \(A<A_0\) the references \(p^0\) have the same
+coordinate margin formula \(\zeta=1/6-\sqrt{2/3}A_0 P_*\).
+Inside the cube use
+\(|v+w|^2\ge(5/6)|v|^2-5|w|^2\) in place of the bound in (FA14).
+Then the coefficient of \(A^2(\phi(t)-\phi(s))^2\) is \(1/240\)
+and the coefficient of the two squared residuals stays \(1/20\).
+If one actual vector leaves the cube, the bound still holds because
+\(\zeta^2/20>(2P_*A_0)^2/240\) and \(\Gamma\ge0\).
+The resulting integrated loss is at least \(A^2/160-(20/27)G^2\)
+by (FA13) and (FA15). Subtract it in (FA2) to obtain
+\[
+ S_\rho(A)-S_\rho(T)
+ \le-\frac{A^2}{4000}+2\mathsf r AG-\frac{329}{540}G^2.
+ \tag{FA21}
+\]
+The determinant is \((1/4000)(329/540)-1/15000>0\).
+Together with the strictly losing case of a negative scalar sum,
+this proves the planar comparison, and maximizer dimension
+reduction gives the result in every \(d\ge2\).
+
+Every tie on the added slab has \(A=G=0\) in the radial
+decomposition, hence equal masses at almost every radius. By (DG2)
+the angular self-deficit in (DG3) is nonnegative, so equality
+forces its angular difference term to vanish. The strictly positive
+Fourier multipliers of the circular kernel then force the slices to
+agree across almost every pair of radii. For this single angular
+partition, equality of the angular self-comparison holds at every
+positive kernel parameter by continuity and full support of the radial
+pair measure. Differentiating at zero gives the sum of squared first
+circular Fourier moments of three equal arcs. For each cell, the
+first Fourier magnitude is maximized uniquely by an arc of its mass:
+choose the phase, then integrate cosine on its upper level set.
+Thus the three cells are equal arcs tiling the circle. Equality cases
+in higher dimensions are actual maximizers and reduce by the same
+dimension theorem.
+
+Run the supplemental replay from the repository root:
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_finite_amplitude_projected_extension.py --output .scratch/projected-extension-replay.json
+
+The driver uses the SHA-pinned base implementation of FA7. Its
+two audited substitutions in the angular integration retarget the
+correlation enclosure and widen the trial upper normalization
+from \(271/1000\) to \(272/1000\). The spectral calculations reuse
+FA7's interpolation, midpoint remainder, and analytic infinite
+tails on 76 child panels in two parents. Four Hilbert–Schmidt slabs
+reuse the original kernels and tail bounds. Both covers are audited
+against the exact rational endpoints. The full angular cube and
+annular comparisons are recomputed, and Arb checks the constants
+in (FA19)–(FA21), including (FA20) and the outside-cube margin.
+The replay certifies this slab only. Its lower endpoint is already
+covered by FA1.
 
 ## Remaining all-correlation obligation
 

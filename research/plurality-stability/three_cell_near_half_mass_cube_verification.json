@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "mass_radius": "11/50",
+  "panels_per_correlation_ball": 4096,
+  "precision_bits": 100,
+  "point": {
+    "rho": "1/2",
+    "core_upper": 1.7513029234052853,
+    "tail_upper": 2.4585169808392813e-05,
+    "total_upper": 1.7513275085750937
+  },
+  "interval": {
+    "rho_bounds": [
+      "11/25",
+      "53/100"
+    ],
+    "slabs": 90,
+    "slab_width": "1/1000",
+    "total_upper": 1.912730008594229
+  }
+}

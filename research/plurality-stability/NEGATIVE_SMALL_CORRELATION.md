@@ -22,16 +22,10 @@ up to orthogonal transformations, labels and null sets. The masses
 from the [equal-cell first-moment input and moment alignment estimate
 (M2)](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#from-moments-to-regular-score-regret).
 
-For three cells, Heilman's *Sharp Hardness for MAX-3-CUT and Quantum
-MAX-CUT*, [arXiv:2608.00333](https://arxiv.org/abs/2608.00333),
-Theorem 7.1, gives the full negative voting interval
-\([-1/2,0)\) for ordinary measurable partitions with free masses in
-every dimension \(d\ge2\). Its proof minimizes a bilinear functional
-over pairs with corresponding masses equal and applies planar
-dimension reduction and circular rearrangement. Section 1.4 identifies
-the rearrangement obstruction for four or more cells. The argument
-below uses first-moment geometry in the \(k-1\) active coordinates.
-The threshold in (N1) may depend on \(k\).
+The [negative voting interval note](NEGATIVE_VOTING_INTERVAL.md#exact-results-and-the-remaining-comparison)
+records Heilman's full three-cell interval and its fractional lift.
+The argument below applies to each fixed cell count using first-moment
+geometry in the \(k-1\) active coordinates.
 
 ## Localization with free masses
 
@@ -259,6 +253,140 @@ and use (N8) and convergence of the normalized moment matrix.
 Nonpositivity of the original difference would give \(\|H\|_F^2\ge2\).
 The contradiction excludes every such sequence and proves (N1)
 with equality rigidity and a threshold depending only on \(k\).
+
+## Exact matched-mass minimization near zero
+
+The fixed-cell theorem also holds for two assignments with
+corresponding masses matched. Write
+\[
+ P_r(F,G)=\sum_i\langle F_i,T_{-r}G_i\rangle,\qquad
+ \int F_i\,d\gamma_d=\int G_i\,d\gamma_d=p_i .
+\]
+For every fixed \(k\ge2\) there is \(r_k^{\rm pair}>0\), independent
+of \(d\ge k-1\), such that \(P_r(F,G)\ge P_r(T,T)\) whenever
+\(0<r\le r_k^{\rm pair}\). Equality holds exactly when both
+assignments are the same cylindrical regular-simplex partition,
+up to simultaneous orthogonal transformations, labels and null
+sets. The common mass vector is free.
+
+**Joint localization.** For a sequence with \(r\downarrow0\)
+and \(P_r(F,G)\le P_r(T,T)\), Parseval and Cauchy–Schwarz give
+\[
+ \|p-u\|^2+r\left(F_k-\langle B_F,B_G\rangle_F\right)\le2r^2 .
+ \tag{N10}
+\]
+The bound on degrees at least two is \(r^2\), since each assignment
+has squared \(L^2\) norm at most one. In particular \(p\to u\).
+Rebalance \(F\) and \(G\) individually by the proportional
+operation following (N3). The moment errors are \(o(1)\) uniformly
+in \(d\), and Zhang's balanced endpoint gives
+\(\|B_F\|_F^2,\|B_G\|_F^2\le F_k+o(1)\).
+Inequality (N10) then yields \(\|B_F-B_G\|_F=o(1)\) and both
+individual first moments tend to the optimum. Apply the
+regular-score alignment after (N3) to \(F\). This gives a regular
+moment matrix near both \(B_F\) and \(B_G\).
+Choose \(B_*\) closest to their average. It is still \(o(1)\)
+from both matrices. The two regular-score regrets and strip
+bounds then put both assignments at \(o(1)\) label distance
+from this common \(T\), uniformly in \(d\).
+In the coordinates of that \(T\), the average moment error is
+symmetric on the active coordinates and zero in the transverse
+coordinates.
+
+**Flux comparison.** Put \(e=F-T\), \(h=G-T\), and take
+\(L=L_r(F)+L_r(G)\), where each \(L_r\) is the exact nonnegative
+transfer loss preceding (N6). Expansion gives
+\[
+ P_r(F,G)-P_r(T,T)
+ =L+\|p-u\|^2-r\langle B_e,B_h\rangle_F+R_r,
+ \qquad |R_r|\le C_k r L .
+ \tag{N11}
+\]
+The remainder bound is the cross version of (N8). Apply the
+active smoothing estimate on slices to each of \(e,h\). Then use
+\(r^{j+q-1}\le (r/b^2)b^j\) on active degree \(j\) and transverse
+degree \(q\) with \(j+q\ge2\), and Cauchy–Schwarz on the two
+normalized Hermite series. The bounds use \(L/r\) as the
+normalization for both transfers.
+
+Along a nontrivial sequence put \(s^2=L/r\). As in (N7), \(s\to0\)
+and the active moment errors of each transfer are \(O(s)\).
+In (N11) use
+\[
+ \langle B_e,B_h\rangle_F
+ =\tfrac14\|B_e+B_h\|_F^2-\tfrac14\|B_e-B_h\|_F^2.
+\]
+The positive contribution to this scalar product is \(O(s^2)\):
+the sum of moment errors has zero transverse block in the
+common gauge. Nonpositive deficit in (N11) thus gives
+\(\|p-u\|^2=O(L)\), hence \((p-u)/s\to0\).
+Apply the compact active normal-flux passage of (N9) to both
+assignments simultaneously. If \(v,w\) are their limiting
+signed facet speeds, respectively, the common loss bound gives
+\[
+ \frac{\ell}{2}\bigl(\|v\|^2_{\mathcal H}+\|w\|^2_{\mathcal H}\bigr)\le1 .
+\]
+Both fluxes are balanced because the common mass error divided
+by \(s\) tends to zero. Their summed first-moment matrix
+\(\mathcal D(v+w)\) is symmetric by the average moment gauge
+and is the limit of \((B_e+B_h)/s\) in the active block.
+The conditional covariance estimate (L2) gives
+\[
+ \frac14\|\mathcal D(v+w)\|_F^2
+ \le\frac{\ell}{4}(1-1/k)\|v+w\|_{\mathcal H}^2
+ \le 1-1/k .
+\]
+Dividing (N11) by \(L\) and retaining the nonnegative mass and
+moment-difference terms now gives a lower limit at least \(1/k\).
+This contradicts nonpositive deficit. If \(L=0\), all transfers
+vanish by (N5), so both assignments equal the reference simplex.
+This proves the paired result and its equality case.
+
+## A relative Hermite bound fails at negative correlation
+
+In the tetrahedral coordinates of
+[the reflected-box calculation](RELATIVE_HERMITE_TAIL_OBSTRUCTION.md#an-exactly-balanced-family),
+replace the interval for \(U\) by \((R,R+1)\) and keep the negative
+interval for \(N\) and the condition on \(V\). This preserves
+containment in \(T_2\) and exact balance under the exchange. With
+the definitions of that calculation, \(a_R=-\int N>0\),
+\(b_R=\int UN<-Ra_R\), and
+\(|b_R|\le(R+1)\phi_1(4R)\to0\). Its moment identities remain valid
+with this signed \(b_R\). In particular
+\[
+0<\delta_R=8\sqrt2 c\,a_R-8a_R^2\le8\sqrt2 c\,a_R,\qquad
+W_2(A_R)-W_2(T)=8\sqrt2 h\,b_R+8b_R^2 .
+\]
+For all large \(R\) this gives
+\((W_2(T)-W_2(A_R))/\delta_R\ge hR/(2c)\).
+Taking \(r\downarrow0\) at each fixed \(R\) in the Hermite series
+therefore rules out any finite \(C\) and \(r_0>0\) with
+\[
+\sum_{m\ge2}(-r)^{m-2}\big(W_m(A)-W_m(T)\big)
+\ \ge -C\big(W_1(T)-W_1(A)\big)
+\]
+for every balanced tetrahedral competitor of positive first-moment
+deficit and every \(0<r\le r_0\).
+
+The exact kernel gives a strict comparison for these exchanges.
+For any \(k\), fix two simplex cells exchanged by \(G_{ij}\) and swap
+a seed \(D\subset T_i\) with \(G_{ij}D\subset T_j\).
+The union of the two cells is fixed. Their difference of indicators
+is odd under \(G_{ij}\), and on \(T_i\) the swap changes it from
+\(1\) to \(1-2\,1_D\). Folding the quadratic form of this difference
+onto \(T_i\), with \(M_\rho\) the Mehler density relative to the two
+Gaussian marginals, gives
+\[
+ S_\rho(A)-S_\rho(T)=
+ -4\int_{D\times(T_i\setminus D)}
+   \left(M_\rho(x,y)-M_\rho(x,G_{ij}y)\right)
+   \,d\gamma_d(x)\,d\gamma_d(y).
+\]
+The folded kernel has the strict sign of \(\rho\) off the reflection
+plane since \(x\cdot(y-G_{ij}y)=2(n_{ij}\cdot x)(n_{ij}\cdot y)>0\).
+For \(\rho<0\), every seed of positive measure with a
+positive-measure complement in \(T_i\) therefore strictly increases
+the actual stability.
 
 ## The large-alphabet endpoint
 

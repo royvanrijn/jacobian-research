@@ -13,6 +13,12 @@ in DG5 and DG9. The older bound has one positive direction in that space.
 This provides a concrete mode-isolation and angular-domination calculation.
 The finite-amplitude domination needed for the unrestricted global
 inequality remains open. All results below have internal checking only.
+The [finite-amplitude certificate](THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md)
+settles every partition on \([11/25,221/500]\).
+The [global angular compatibility bound](THREE_CELL_GLOBAL_ANGULAR_COMPATIBILITY.md)
+keeps the same slices across radii, including a strict loss invisible to
+pairwise envelopes and a uniform finite-angular-order error for all amplitudes.
+Its sign on the remaining correlations is not proved.
 
 Use \(d\nu(t)=e^{-t}dt\), \(r=\sqrt{2t}\), and the scalar
 \(K_+,J_+\) of [DG15](THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md).
@@ -398,3 +404,15 @@ needed. RMA12 proves the directional quadratic assertion uniformly;
 RMA14 makes one adverse block fully quantitative. Neither assertion
 proves this finite-amplitude inequality. The all-correlation target
 \(\widetilde Q_\rho(e)\le2L_\rho(A;T)\) remains open.
+
+There is a distinction between raising the order of the pair envelope
+and retaining global radial compatibility. In the
+[shared-radius comparison](THREE_CELL_GLOBAL_ANGULAR_COMPATIBILITY.md),
+GAC8 gives a sharp positive common-slice moment loss for three half-mass
+types, even though every pair deficit in (RMA6) is zero. GAC7 retains this
+additional loss globally and at all amplitudes. GAC10--GAC13 instead
+optimize two entire radial fields, keeping the same slice in every pairing.
+Their finite angular hierarchy approximates the true prescribed-profile
+optimum with an explicit error uniform over all profiles on each compact
+correlation range. This is an approximation theorem, not a sign or
+domination theorem; its coupled radial optimization remains to be bounded.

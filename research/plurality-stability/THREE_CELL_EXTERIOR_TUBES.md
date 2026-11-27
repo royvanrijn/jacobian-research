@@ -443,3 +443,265 @@ The exponential term in the first coefficient is at most
 $c d_R/2$ there for sufficiently small $e$. The regret is
 strictly positive for every change of positive Gaussian area
 since the simplex score ties lie on lines. This proves the claim.
+
+## Changes away from higher junctions for any cell count
+
+Fix \(k\ge3\), let \(n=k-1\), and let \(b_i\) be the cell moments of
+the regular simplex in its active space, with
+\(\ell=|b_i-b_j|\) for \(i\ne j\). Use the ordered scores
+\(s_{(1)}(x)\ge s_{(2)}(x)\ge\cdots\) of \(s_i(x)=b_i\cdot x\), and set
+\(g_j=(s_{(1)}-s_{(j)})/\ell\). There are constants
+\(K_k,c_k>0\), \(\rho_k<1\), such that for every
+\(\rho_k<\rho<1\) and \(R\ge K_k e^{-1/3}\), every ordinary partition
+\(U\) that agrees with \(T\) off \(\{g_3\ge4R\}\) satisfies
+
+\[
+ S_\rho(T)-S_\rho(U)\ \ge\ c_k\min(e^2R^2,1)L_\rho(U;T).
+ \tag{CT12}
+\]
+
+The same statement holds in every \(d\ge n\), with the score gaps
+computed in the active projection and the same constants. There is
+no volume constraint. In particular, equality forces agreement
+almost everywhere. Thus changes can be arbitrary on the part of the
+exterior where the third-largest score is sufficiently separated
+from the winner. This includes changes into labels other than the
+two leading labels. For three cells \(g_3\) is comparable to \(|x|\)
+in the active plane, recovering the order of the radius in (CT11).
+For higher cell counts, the condition excludes neighborhoods where
+three or more scores are close, even at large radius.
+
+### One pair of incident cells
+
+Work first in the active space. For a pair \(i,j\) put
+\(x=z+tn_{ij}\), \(n_{ij}=(b_i-b_j)/\ell\), and
+\[
+ m_l=\frac{b_i+b_j-2b_l}{\sqrt3\ell}\quad(l\ne i,j),
+ \qquad G_R=\{z\in n_{ij}^{\perp}: m_l\cdot z\ge R
+                                  \text{ for every }l\ne i,j\}.
+\]
+The \(m_l\) are unit tangential vectors. The incident scores at \(z\)
+are equal and exceed score \(l\) by
+\(\sqrt3\,\ell(m_l\cdot z)/2\). For general \(t\), the greater
+incident score increases by \(\ell|t|/2\) and the other labels'
+scores are independent of \(t\). Thus \(T\) is the binary reference
+\(H\) on \(G_R\times\mathbb R\), and at any \(z\) the region in the
+normal fiber occupied by other reference labels is a centered
+interval, possibly empty.
+
+Consider changes supported on \(G_R\times\mathbb R\) against \(H\).
+Write \(q_G(z)=\Pr(Z'\notin G_R\mid Z=z)\) for correlated tangential
+Gaussians. Merge every introduced nonincident label into one of the
+two incident labels, using the better of the two global merges.
+Neither merge increases disagreement. Counting pairs with one
+endpoint outside \(G_R\), in both orders, gives a gain in cut of at
+least \(\int q_G m\,d\gamma_{n-1}\), where \(m(z)\) is the total
+nonincident mass in the original changed fiber. Sort the merged
+binary fibers by the one-dimensional two-set Borell comparison in
+(CT5). Every pair of fibers gains, and pairs with one unchanged
+fiber gain \(2\int q_G(L_z-L_z^*)\,d\gamma_{n-1}\) after summing both
+orders. Here \(L_z,L_z^*\) are the unsorted and sorted binary regrets.
+
+The disagreement calculation (CT1)–(CT2) for the sorted thresholds
+uses only the normal pair. In (CT3), test with the sign of the
+difference of the two coordinates in one fixed direction \(m_l\).
+On the support \(G_R\) this coordinate is at least \(R\).
+The conditional expectation of the sign is the same scalar drift
+as in (CT3). Hence (CT4) with a fixed large support threshold
+\(R_0\le R\) gives a reserve \(c e V\), where
+\(V=\int p(z)^2\,d\gamma_{n-1}\) and \(p\) is the sorted mass change
+in the notation of (CT2).
+
+The diagonal bound of (CT10) also holds for each normal fiber with
+any number of extra labels: merging and sorting the same fiber
+can only decrease its cut, and the sorted diagonal deficit is at
+least \(-Ce p(z)^2\). With \(h\) the vector transfer against \(H\)
+and \(L_H\) its full binary-reference score loss (all extra reference
+labels absent), this gives
+\[
+ Q(h)\le\lambda_1(R)(2L_H+CeV),\qquad
+ \lambda_1(R)=\rho^{-1/2}
+              \exp[-(1-\rho)R^2/(2(1+\rho))].
+\]
+Indeed \(G_R\) is contained in the tangential halfspace
+\(m_l\cdot z\ge R\), so the tangential OU compression is bounded
+by the scalar compression there, tensored with an OU contraction
+in the remaining directions. Apply it after the square root of
+the normal OU operator. For \(R\ge R_0\) and \(\rho\) near one,
+\(1-\lambda_1(R)\ge c\min(e^2R^2,1)\).
+Combining a fixed small weight of this bound with the sorting and
+merging gain gives
+\[
+ S_\rho(H)-S_\rho(U^H)\ \ge\
+ c_k\left(\min(e^2R^2,1)L_H+eV+
+          \int q_G(L_z-L_z^*+m)\,d\gamma_{n-1}\right).
+ \tag{CT13}
+\]
+
+To change the reference back to \(T\), let
+\(q_0(z)=\Pr(\min_l m_l\cdot Z'<0\mid Z=z)\).
+For \(z\in G_R\), (CT7) applied to each scalar projection gives
+\[
+ q_0(z)\le \sum_l\Phi(-\rho m_l\cdot z/\sigma)
+          \le C_k e^{-cR^2/\sigma^2} q_G(z).
+\]
+The centered normal intervals of nonincident reference labels
+make the incident-to-incident regret error at most
+\(\int q_0 L_z\,d\gamma_{n-1}\), by the density comparison before
+(CT7). Those transfers survive the merge. For transfers into any
+extra label the error is at most \(2\int q_0m\,d\gamma_{n-1}\).
+Split \(L_z=L_z-L_z^*+L_z^*\) and use \(L_z^*\le C p(z)^2/\sigma\).
+The first and extra-label errors are absorbed by the \(q_G\)
+reserve in (CT13). The sorted error is absorbed by \(eV\), since
+\(\sigma^{-1}e^{-cR^2/\sigma^2}\ll e\) uniformly for \(R\ge R_0\).
+The quadratic self-interaction is identical for the two references.
+Their regrets are comparable: for incident changes the error
+is bounded pointwise by \(q_0\) times binary regret, and for
+nonincident changes the binary regret is at least \(1/2\).
+This proves a simplex deficit of at least
+\(c_k\min(e^2R^2,1)L\) for any single guarded pair.
+
+### Combining different pairs and the interiors
+
+Fix a partition with changed set \(D\subset\{g_3\ge4R\}\).
+For \(\theta\in[1,2]\), split its changes into a bulk group
+\(g_2>\theta R\) and pair groups \(g_2\le\theta R\) indexed
+by the two highest scores. In each pair group both incident
+scores exceed every other by at least \(2\ell R\). Its tangential
+coordinates lie in \(G_R\), so (CT13) and the reference comparison
+apply to the partition making only that group's changes.
+Two distinct pair groups have mutual distance at least \(4R\):
+take one label in each pair outside the other pair and test their
+score difference at the two points.
+
+In the bulk the winner beats every other by more than \(\ell R\),
+and \(|x|\ge R\). Conditional Gaussian tails along all pair normals
+give loss at least \(1-C_k e^{-cR^2/\sigma^2}\) per changed point.
+The conjugated kernel (P16) in dimension \(n\) has prefactor
+\((2\pi\sigma^2)^{-n/2}\). Its compression to \(|x|\ge R\)
+has norm at most
+\(\lambda_n(R)=\rho^{-n/2}\exp[-(1-\rho)R^2/(2(1+\rho))]\),
+by the norm of the remaining Gaussian convolution.
+The squared label defect is two per changed point. Thus for
+\(R\ge R_0(k)\) the bulk deficit also bounds
+\(c_k d_R L_{\rm bulk}\), where \(d_R=\min(e^2R^2,1)\).
+
+Let \(D_{\rm seam}=D\cap\{R/2\le g_2\le3R\}\).
+On the seam the score loss per change is bounded below by a
+positive constant, by the same conditional Gaussian estimate.
+The sum of all isolated deficits is therefore at least
+\(c_k d_R(L+\gamma_n(D_{\rm seam}))\) for every \(\theta\).
+Only mixed interactions remain. For pairs \(x,y\) at distance at
+most \(\delta R\) with a sufficiently small fixed \(\delta>0\),
+separation by the grouping can occur only between bulk and a
+pair group. Both points then belong to the seam. The function
+\(g_2\) is Lipschitz with a fixed constant, since the ordered
+scores inherit the maximum Lipschitz constant of the linear
+scores. With \(\theta\) uniform on \([1,2]\), separation probability
+is at most \(C_k|x-y|/R\).
+Multiplying the conjugated kernel by \(|x-y|\) leaves a convolution
+of norm \(O_k(\sigma)\) after discarding the confinement factor.
+Since each defect has squared length two on the seam, the expected
+absolute close-pair error is at most
+\(C_k(\sigma/R)\gamma_n(D_{\rm seam})\).
+
+For all other pairs extract \(e^{-cR^2/\sigma^2}\) from the
+conjugated kernel and bound the remaining widened Gaussian
+convolution against the absolute defects. Its interaction is
+at most \(C_k L\) as follows. For each ordered transfer split at
+normal distance \(\sigma\) to its pair plane. On the thicker
+part the convolution norm and the saturated score margin
+control the squared Gaussian norm by its loss. On the thinner
+part drop the normal Gaussian factor; the remaining tangential
+convolution has norm \(C_k/\sigma\).
+The squared section length, with the Gaussian square-root
+density, is bounded by \(C\) times the first normal moment,
+as in (P14). The saturated margin bounds that moment divided
+by \(\sigma\) by its loss. Sum the pieces by Cauchy–Schwarz for
+the positive convolution. This gives the stated uniform bound
+in the active dimension.
+
+As in (CT11), the resulting two errors are bounded by
+\(C_k e^{-cR^2/\sigma^2}L+C_k(\sigma/R)\gamma_n(D_{\rm seam})\).
+They are absorbed for \(R\ge K_k e^{-1/3}\) and \(\rho\) close
+enough to one. Indeed \(\sigma/R=O(e/R)\) and
+\(d_R=e^2R^2\) for \(eR\le1\), so \(eR^3\) is the
+relevant ratio. If \(eR>1\), \(d_R=1\). This proves (CT12).
+The saturated margin makes \(L>0\) whenever the changed set
+has positive Gaussian measure.
+
+For the ambient lift use the uncentered interaction \(Q\) in
+the exact expansion \(2L-Q\), since the slices need not balance.
+Condition on the correlated transverse variables \(w,w'\).
+Positive definiteness of the active OU operator gives
+\(\langle h_w,T_\rho^{\rm act}h_{w'}\rangle
+\le[Q_{\rm act}(h_w)+Q_{\rm act}(h_{w'})]/2\).
+Integrating bounds the full interaction by the mean of the
+active self-interactions, while the full loss is exactly the
+mean of active losses. Each slice has the required active support,
+so (CT12) follows with the same constants.
+
+The convolution argument also gives the dimension-\(n\) form of
+(P14): for changes supported on \(|x|\ge R\), retain the full
+confinement discount in (P16) to obtain
+\(Q\le C_k e^{-c e^2R^2}L\). Thus arbitrary changes solely beyond
+\(K_k/e\) strictly lose when \(K_k\) is sufficiently large,
+even if they lie near higher junctions. The same slicing gives
+this estimate for an active radial cutoff in higher ambient
+dimension. These arguments leave changes near higher junctions
+at smaller radii and their mixed interactions with other changes
+as separate obligations. A three-label normal section would
+require control across unequal fiber masses; the balanced
+planar near-one theorem does not supply that comparison.
+
+### Necessary junction loss for a tie and the scale of the estimate
+
+For arbitrary changes, split the score loss into \(L_{\rm sep}\) on
+\(\{g_3\ge4R\}\) and \(L_{\rm jun}\) on its complement. Apply (CT12)
+to the separated piece alone. The other piece has
+\(Q_{\rm jun}\le C_k L_{\rm jun}\) by the convolution bound above at
+\(R=0\). The same bound on \(Q_{\rm sep}\) and positivity of OU
+give a mixed term of size at most
+\(C_k\sqrt{L_{\rm sep}L_{\rm jun}}\). Consequently
+\[
+ S_\rho(T)-S_\rho(U)
+ \ge c_k d_R L_{\rm sep}
+     -C_k\big(L_{\rm jun}+\sqrt{L_{\rm sep}L_{\rm jun}}\big).
+\]
+Thus any tie or improvement must have
+\(L_{\rm jun}\ge c'_k d_R^2 L_{\rm sep}\) when (CT12) applies:
+if \(L_{\rm jun}\le L_{\rm sep}\), divide by \(L_{\rm sep}>0\)
+and square the resulting bound on the square root of the ratio;
+otherwise the conclusion follows from \(d_R\le1\).
+This holds also for arbitrary ambient dimension by active slicing.
+
+Even exactly balanced changes along one deep facet can have relative
+loss of order at most \(e^2(R+1)^2\). To see this, take two disjoint
+smooth tangential bumps on balls of radius \(a=(R+1)^{-1}\),
+centered a distance \(3a\) apart along an interior facet ray at
+distance \(O_k(R+1)\) from the origin. Choose the positions so all
+guards \(m_l\cdot z\) exceed \(6R\) on the supports. Gaussian
+densities on the two balls are comparable to their common central
+density, since displacement times the center norm is bounded.
+Take opposite multiples of a fixed smooth bump to give a nonzero
+mean-zero function \(p\) with
+\(\|\nabla p\|_2^2\le C_k (R+1)^2\|p\|_2^2\).
+Change the binary threshold to
+\(t>\Phi^{-1}(1/2+\alpha p(z))\), for \(\alpha\) sufficiently small.
+The integral of \(p\) being zero gives exact volume balance, and
+all changes remain in the separated region.
+
+At fixed \(\rho,R\), as \(\alpha\to0\) the binary-reference cost
+satisfies \(L_H/\alpha^2\to(\rho/\sigma)\|p\|_2^2\).
+This follows from \(B_\rho'(0)=2\rho\phi(0)/\sigma\) and the
+threshold derivative \(p/\phi(0)\). The normal kernel at zero is
+\(\sigma^{-1}\) relative to standard Gaussian measure, so
+\(Q/\alpha^2\to(2/\sigma)\langle p,T_\rho^{\rm tan}p\rangle\);
+the compact supports and small graph heights justify both limits.
+The simplex loss is between a fixed positive multiple of \(L_H\)
+and \(L_H\) by the incident reflection comparison, with identical
+interaction. Thus the relative simplex deficit has limiting
+upper bound \(C_k(1-\rho)(R+1)^2\), by
+\(1-\rho^m\le m(1-\rho)\) in the tangential Hermite expansion.
+This excludes a radius-independent positive relative margin at
+\(R=o(1/e)\), even for smooth separated perturbations.

@@ -20,9 +20,11 @@ sectors for all $k\ge4$, with the explicit sign bound (S62) for $k\ge5$.
 The single-reflection argument (S85)--(S87) further settles every
 nonstandard two-row block $(k-p,p)$, $2\le p\le\lfloor k/2\rfloor$,
 at every positive correlation, with one gap constant valid for all $p$.
-The antisymmetry hierarchy (S88)--(S89) identifies the next obstruction
-and embeds every three-row block into one scalar spectral problem;
-it supplies no new higher-row gap by itself.
+The antisymmetry hierarchy (S88)--(S90) identifies the next obstruction
+and embeds every block of each fixed height into one scalar spectral
+problem, with an explicit closed physical image. The highest sign
+projection loses no equivariant field. These reductions supply no new
+higher-row gap by themselves.
 The exterior Gaussian identity (S72) and a linear positive
 supersolution also settle the whole third exterior hook
 $(k-3,1,1,1)$ for every $k\ge4$, by (S73).
@@ -3511,6 +3513,154 @@ application, bounded Gaussian intertwining and closed-image spectral
 inclusion are the unrestricted written arguments. No new all-correlation
 gap is inferred from this reduction.
 
+### Highest antisymmetry detects every representation height
+
+The three-row detection argument has an all-height extension. The
+ingredients are the classical vertical/horizontal Pieri rule for every
+strip size (Macdonald, Chapter I, (5.16)--(5.17), pp. 73--74, with the
+characteristic map (7.3), (7.5)--(7.6), pp. 113--114) used in (S4),
+and the Young branching and positive orthogonal-generator formulas
+in the retained Vershik--Okounkov Theorem 5.8 and Section 6. The following
+frame argument concerns these finite representations; none of those
+imported statements supplies a Gaussian spectral estimate.
+
+**Theorem S90 (highest-sign frame and scalar reduction).**
+
+Let
+$\lambda\vdash k$ have at least two rows, let $2\le m\le k$, and put
+
+\[
+ N_m=\binom{k-2}{m-2},\qquad
+ F_{\lambda,m}=\left.\sum_{\substack{S\supset\{1,2\}\\|S|=m}}
+                           E_S\right|_{V_\lambda^-}.
+\]
+
+If $\lambda$ has fewer than $m$ rows, $F_{\lambda,m}=0$.
+If it has at least $m$ rows, this finite-dimensional self-adjoint
+operator is strictly positive. Write
+$\alpha_{\lambda,m}=\min\operatorname{spec}F_{\lambda,m}>0$.
+Every $G_0$-equivariant $L^2$ field then satisfies
+
+\[
+ \boxed{\quad
+ \|E_{[m]}h\|^2=\frac1{N_m}\int
+          \langle h,F_{\lambda,m}h\rangle\,d\nu_{12}
+       \ge\frac{\alpha_{\lambda,m}}{N_m}\|h\|^2.
+ \quad} \tag{S90}
+\]
+
+Here $[m]=\{1,\ldots,m\}$. The same assertion holds with any
+positive $G_0$-invariant scalar weight, in particular $a_\rho$.
+The constant is qualitative and finite-dimensional. A single $E_{[m]}$
+need not be injective on the pointwise vector space; (S90) uses
+equivariance on the entire facet.
+
+To prove strict positivity, $F_{\lambda,m}$ commutes with $G_0$.
+By vertical two-strip Pieri,
+$V_\lambda^-|_{G_0}$ is a multiplicity-free sum of $V_\mu$ with
+$\lambda/\mu$ a vertical two-strip. It suffices to show that each
+such summand has nonzero overlap with $\operatorname{ran}E_{[m]}$.
+Extend its two removed boxes to a vertical $m$-strip
+$\lambda/\gamma$. This extension always exists when
+$m\le\operatorname{height}(\lambda)$: within each block of equal
+row lengths, a removable vertical strip selects a bottom suffix;
+increase those suffixes one row at a time until $m$ rows are selected.
+Thus $\gamma\subseteq\mu$ and $\mu/\gamma$ is a vertical
+$(m-2)$-strip.
+
+Twist by the sign character, replacing $\lambda,\mu,\gamma$ by
+their conjugates and $E_{[m]}$ by the $S_{[m]}$ symmetrizer.
+Use the orthogonal Young basis with the reversed label order
+$k,k-1,\ldots,1$. There is a basis tableau whose first $k-m$
+boxes have shape $\gamma'$ and first $k-2$ boxes have shape
+$\mu'$: complete these three nested diagrams successively.
+It belongs to the $G_0$ isotypic space of shape $\mu'$.
+Fix the initial filling of $\gamma'$. On the remaining skew-tableau
+space, $\lambda'/\gamma'$ is a horizontal $m$-strip. Horizontal
+Pieri says that its $S_{[m]}$ invariant space has dimension one.
+The graph of its standard skew tableaux under admissible adjacent
+swaps is connected: these tableaux are the linear extensions of the
+box order, and moving the first differing element to its prescribed
+place connects any two linear extensions by swaps of incomparable
+neighbors.
+
+In this orthogonal basis each $I+R(s_i)$ is entrywise nonnegative,
+with strictly positive entries on those edges. The average of the
+projections $(I+R(s_i))/2$, $1\le i<m$, is a nonnegative
+irreducible matrix with spectrum in $[0,1]$. Its eigenvalue $1$ is
+simple by horizontal Pieri, so its invariant vector is strictly
+positive. Its powers tend to the symmetrizer, whose diagonal at our
+chosen tableau is therefore positive. Consequently the trace of
+the $G_0$ isotypic projection times $E_{[m]}$ is positive.
+The latter projector has range in $V_\lambda^-$ before twisting.
+Every conjugate $E_S$ has the same trace on that summand, proving
+that $F_{\lambda,m}$ has a positive scalar there. This proves
+strict positivity on all of $V_\lambda^-$.
+
+Finally $G_0$ acts transitively on the $N_m$ sets $S$, and its
+action preserves the facet measure and the scalar weight.
+Equivariance makes all $\|E_Sh\|$ equal. Summing their squares
+gives (S90), with no pointwise injectivity assumption.
+
+Suppose now that $\lambda$ has **exactly $m$ rows**. The next
+antisymmetrizers in (S88) vanish. Hence, with
+$\mathcal L_m=a_\rho^{-1/2}L_ma_\rho^{-1/2}$,
+
+\[
+ E_{[m]}\bigl(a_\rho^{-1/2}K_\lambda a_\rho^{-1/2}\bigr)
+       =(\mathcal L_m\otimes I)E_{[m]}.
+\]
+
+This is a closed-image similarity, not just a formal projection.
+Its image can be specified without taking a closure. Put
+$B_m=S_{\{3,\ldots,m\}}\times S_{\{m+1,\ldots,k\}}$ and
+choose representatives $g$ of $G_0/B_m$ carrying
+$\{3,\ldots,m\}$ to each $(m-2)$-subset. For a field $u$ with
+values in $E_{[m]}V_\lambda$ and
+$u(bx)=R_\lambda(b)u(x)$, define
+
+\[
+ (\mathcal R_{\lambda,m}u)(x)
+   =F_{\lambda,m}^{-1}\sum_{g\in G_0/B_m}
+                          R_\lambda(g)u(g^{-1}x),\qquad
+ \Pi_{\lambda,m}=E_{[m]}\mathcal R_{\lambda,m}.
+\]
+
+The sum is independent of the representatives and is $G_0$-equivariant.
+For $u=E_{[m]}h$ it equals $F_{\lambda,m}h$ before applying the
+inverse, so $\mathcal R_{\lambda,m}E_{[m]}h=h$.
+In fact $\Pi_{\lambda,m}$ is the orthogonal projection onto the
+physical image: for $A:h\mapsto E_{[m]}h$, the adjoint is
+$A^*u=N_m^{-1}\sum_gR_\lambda(g)u(g^{-1}x)$ and
+$A^*A=F_{\lambda,m}/N_m$. Thus
+$\Pi_{\lambda,m}=A(A^*A)^{-1}A^*$.
+It commutes with multiplication by $a_\rho$.
+The normalized block is similar, by the bounded bijection $A$, to
+$(\mathcal L_m\otimes I)|_{\operatorname{ran}\Pi_{\lambda,m}}$.
+
+The fiber $E_{[m]}V_\lambda$ is the sign representation of
+$S_{\{3,\ldots,m\}}$ times the irreducible representation of
+$H_m=S_{\{m+1,\ldots,k\}}$ with shape
+$\nu=(\lambda_1-1,\ldots,\lambda_m-1)$, omitting zeros.
+This is again vertical Pieri: a vertical strip of size $m$ removes
+one box from every row. The scalar kernel $L_m$ commutes with both
+factors of $B_m$. Consequently every nonzero eigenvalue of every
+height-$m$ block occurs in this single scalar operator, on functions
+alternating in labels $3,\ldots,m$ and in an $H_m$ type of at most
+$m$ rows. Exact equivalence holds on the physical images above;
+an estimate on the entire larger scalar space is only a sufficient,
+possibly stronger condition.
+
+At $m=2$ this recovers the two-row scalarization, and at $m=k$ it
+recovers the sign block and its folded determinant. At $m=3$,
+(S89) supplies sharper explicit frame constants. No scalar spectral
+bound is proved by (S90). In particular the ordinary balance constraint
+in the standard block remains (S51), and the other unsolved
+higher-row bounds remain necessary. The exact checker tests conjugate
+frames in specified finite Young models and compatible vertical-strip
+and reverse-tableau chains through ten cells; the unrestricted frame,
+reconstruction and Gaussian similarity arguments are written proofs.
+
 ## Monotonicity and the other global obligations
 
 **Raw-deficit obstruction.** For every $k\ge2$, the unnormalized
@@ -3554,9 +3704,11 @@ The remaining targets are distinct:
   the explicit Hermite-floor ranges (S80)--(S81). At fixed correlation
   those ranges cover every sufficiently deep representation, leaving
   only partitions with $O_\rho(\log k)$ boxes outside their first row.
-  Equations (S88)--(S89) give the exact antisymmetry hierarchy and a
-  common scalar spectral reduction for every three-row block. The
-  required scalar spectral-radius and fixed-space bounds are open;
+  Equations (S88)--(S90) give the exact antisymmetry hierarchy and a
+  common scalar spectral reduction for every fixed representation height.
+  The highest projection is bounded below on equivariant fields, and
+  (S90) specifies its closed physical image and reconstruction.
+  The required scalar spectral-radius and fixed-space bounds are open;
   the next simple odd-kernel positivity argument is explicitly false.
   The exact tied-height reduction (S84) supplies a two-variable
   diagnostic kernel with its original mass constraint; its restricted
@@ -3605,7 +3757,7 @@ degree, insufficient positivity hypotheses and the $k=3,4$ exceptional
 scopes. It does not verify the imported Hermitian transition theorem.
 For (S67)--(S69) it checks the free group-algebra identity through $k=7$,
 exact rational Young-generator Coxeter relations and selected positive
-immanant matrices for every partition through $k=5$ and six partitions
+immanant matrices for every partition through $k=5$ and eight partitions
 at $k=6$. The unrestricted matrix-positivity theorem uses the two retained
 primary statements and the written compression argument.
 It also verifies the exact two-atom mass-weight counterexample following
@@ -3660,11 +3812,15 @@ without imposing a full order on the remaining labels. A negative
 two-point adjacent-kernel determinant rejects the termwise operator
 ordering shortcut. These checks do not certify the all-$k$ branching,
 compact supersolution or nontrivial-type spectral transfer proofs.
-For (S88)--(S89), formal coset/corner identities are checked in finite
+For (S88)--(S90), formal coset/corner identities are checked in finite
 groups through $S_6$, frame/content identities in the finite Young
 models, and an exact negative five-cell scalar-reflection witness.
-The all-size coset proof, imported content formula, closed-image
-intertwining and full spectral inclusion are written arguments.
+The same models check conjugate highest-sign frame determinants and
+commutation, with vanishing above the representation height. Every
+vertical two-strip through ten cells is extended to each permitted
+size, with a compatible reverse-tableau chain. The all-size coset and
+strict frame proofs, imported Young/Pieri/content inputs, reconstruction,
+closed-image intertwining and full spectral inclusion are written arguments.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

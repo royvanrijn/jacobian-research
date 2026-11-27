@@ -180,6 +180,9 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Positive local coefficient and compact interaction for every simplex interface form | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
 | An interface-kernel criterion for uniform measurable local quadratic growth | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
 | Every fixed-cell simplex has a full interface gap at small positive correlation | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
+| Effective active-space local radius from a uniform simplex interface gap | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
+| Finite core certificate criterion for distant competitors on a compact correlation band | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
+| Three-cell simplex optimality extends strictly past 221/500 | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
 | A finite first global transition has a nonsimplex tie or an extra interface zero mode | Internal result | proved | [Source](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) |
 | Signed induction and symmetry blocks of every Gaussian simplex interface | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | The first-moment rotation gauge is the exact L2 rotation complement | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
@@ -237,6 +240,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | The four-cell sign sector has a strict gap at every positive correlation | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | The full four-cell interface problem is exactly one constrained scalar standard inequality | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | The balanced tetrahedral interface gap through correlation 17/25 | Internal result | proved | [Source](../plurality-stability/TETRAHEDRAL_STANDARD_GAP.md) |
+| The balanced tetrahedral interface gap through correlation 23/25 | Internal result | proved | [Source](../plurality-stability/TETRAHEDRAL_STANDARD_GAP.md) |
 | An explicit bounded radial test defeats the scalar bound at correlation one half | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
 | Global angular moment bounds with exact arc interaction and a mass-dependent secant penalty | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
 | The coupled bound handles an explicit family of circular mass profiles at correlation one half | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md) |
@@ -252,6 +256,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Radial amplitude must concentrate in any nonsimplex near-one sequence | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_MASS_CONCENTRATION.md) |
 | Every simplex symmetry block has a nonnegative compressed-immanant kernel | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | Exact exterior angular confinement of actual near-one maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_ONE.md) |
+| All-cell near-one comparison away from higher junctions | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) |
 | Strict comparison for arbitrary changes outside a growing Gaussian radius | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) |
 | The standard gap requires both spectral separation and the correct mass weight | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | All-cell Gaussian identities link the standard and rotation-hook kernels | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
@@ -332,11 +337,53 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | The sharp Gaussian cap on the largest three-label transition eigenvalue | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PRODUCT_RECOMBINATION.md) |
 | All two-copy Gaussian lookup tables are controlled by single-cell split constraints | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PRODUCT_RECOMBINATION.md) |
 | An open near-isotropic family is stable under all finite label products | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PRODUCT_RECOMBINATION.md) |
+| Direct global three-cell Gaussian simplex inequality through 0.44295 | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md) |
 | Direct global three-cell Gaussian simplex inequality through correlation221/500 | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FINITE_AMPLITUDE_COMPARISON.md) |
 | Antisymmetry gives an exact Gaussian kernel hierarchy by representation height | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
 | Every three-row block embeds into one scalar spectral problem | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| Three-cell negative voting interval for fractional assignments | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_INTERVAL.md) |
+| Uniform large-alphabet comparison on the full negative voting interval | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_INTERVAL.md) |
+| Dimension-independent simplex optimality at small negative correlation | Internal result | proved | [Source](../plurality-stability/NEGATIVE_SMALL_CORRELATION.md) |
+| Weighted negative paired interface gaps lift in ambient dimension | Internal result | proved | [Source](../plurality-stability/NEGATIVE_SIMPLEX_INTERFACE_LIFT.md) |
+| The full negative rotation-hook block has a weighted gap | Internal result | proved | [Source](../plurality-stability/NEGATIVE_SIMPLEX_INTERFACE_LIFT.md) |
+| Exact first angular moment pairing at arbitrary circular masses | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_ANGULAR_MOMENT_ENVELOPE.md) |
+| A full-cap analytic range and uniform angular coercivity | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_ANGULAR_MOMENT_ENVELOPE.md) |
+| A three-radius penalty for incompatible first moment transports | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_ANGULAR_MOMENT_ENVELOPE.md) |
+| The first-mode cap deficit controls higher moment errors linearly | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_ANGULAR_MOMENT_ENVELOPE.md) |
+| A degree-one decomposition of the geometry of a tied competitor | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_ANGULAR_MOMENT_ENVELOPE.md) |
+| Exact simplex clipping cost at the radial pole | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FINITE_AMPLITUDE_PROJECTION.md) |
+| Analytic angular coercivity strengthens the finite-amplitude radial margin | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FINITE_AMPLITUDE_PROJECTION.md) |
+| A general finite-dimensional sufficient test for the nonlinear radial comparison | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FINITE_AMPLITUDE_PROJECTION.md) |
+| Orthoplex assignments give a large-alphabet first-moment localization obstruction | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_INTERVAL.md) |
+| A balanced negative Hermite-tail bound relative to first moments fails | Internal result | proved | [Source](../plurality-stability/NEGATIVE_SMALL_CORRELATION.md) |
+| Weighted negative paired Hessian gaps imply a dimension-uniform measurable local inequality | Internal result | proved | [Source](../plurality-stability/NEGATIVE_SIMPLEX_INTERFACE_LIFT.md) |
+| A weighted Hessian gap at the four-cell negative voting endpoint | Internal result | proved | [Source](../plurality-stability/TETRAHEDRAL_NEGATIVE_PAIRED_LOCAL.md) |
+| The negative tetrahedral pair locally minimizes over nearby measurable matched-mass pairs | Internal result | proved | [Source](../plurality-stability/TETRAHEDRAL_NEGATIVE_PAIRED_LOCAL.md) |
+| Global first angular moment compatibility across radii | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_ANGULAR_COMPATIBILITY.md) |
+| Global angular hierarchy with a uniform error at every amplitude | Internal result | proved | [Source](../plurality-stability/THREE_CELL_GLOBAL_ANGULAR_COMPATIBILITY.md) |
+| Highest antisymmetry detects every height and gives closed scalar spectral images | Internal result | proved | [Source](../plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md) |
+| A maximizer saturating its exact circular pairing envelope is a simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_ANGULAR_SATURATION_RIGIDITY.md) |
+| Exact shared first angular interaction when two circular masses agree | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EQUAL_PAIR_ANGULAR_MOMENTS.md) |
+| The full shared first angular moment body at arbitrary circular masses | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SIMULTANEOUS_FIRST_MOMENT_ENVELOPE.md) |
+| A finite angular moment comparison with a uniform tail and a simplex distance constraint | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SIMULTANEOUS_FIRST_MOMENT_ENVELOPE.md) |
+| A perimeter-controlled radial mesh for exact circular comparisons | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SIMULTANEOUS_FIRST_MOMENT_ENVELOPE.md) |
+| Exact balanced feasibility penalties in the adverse radial space | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FINITE_AMPLITUDE_PROJECTION.md) |
+| An explicit one-dimensional Gaussian stability gap near correlation one half | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_HALF_MAXIMIZER_BOUNDS.md) |
+| Directional perimeter and a quantitative planar moment rank near correlation one half | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_HALF_MAXIMIZER_BOUNDS.md) |
+| A uniform score sublevel bound for planar maximizers near one half | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_HALF_MAXIMIZER_BOUNDS.md) |
+| A circular mass cube of strict simplex optimality across correlation one half | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NEAR_HALF_MASS_CUBE.md) |
+| Exact matched-mass negative Gaussian simplex minimization near zero | Internal result | proved | [Source](../plurality-stability/NEGATIVE_SMALL_CORRELATION.md) |
+| Exact two-row variance and the large-alphabet first-moment facet gap | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_HESSIAN.md) |
+| The full weighted paired Hessian gap throughout the large-alphabet negative voting interval | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_HESSIAN.md) |
+| Uniform in dimension measurable local simplex comparison on the full negative voting interval | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_HESSIAN.md) |
+| A first global transition on the negative voting interval requires a distinct tied pair | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_HESSIAN.md) |
+| Negative Gaussian minimizers are pure with free masses on the same and paired domains | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_MINIMIZERS.md) |
+| Refined mass bounds and approximate affine selection at the negative voting scale | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_MINIMIZERS.md) |
+| Polynomial covariance coercivity with nearly uniform prescribed Gaussian masses | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_COVARIANCE.md) |
+| Centroid-length spread controls the second Hermite deficit on the negative voting scale | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_INTERVAL.md) |
+| Large-alphabet possible improvers approach the simplex throughout the negative voting interval | Internal result | proved | [Source](../plurality-stability/NEGATIVE_VOTING_INTERVAL.md) |
 
-**Computed obligations:** 45 unresolved; 30 resolved within their exact scope.
+**Computed obligations:** 46 unresolved; 30 resolved within their exact scope.
 
 
 Scope limits:
@@ -433,7 +480,11 @@ Scope limits:
 - ST1-ST6, adopted in DG15, extend the direct comparison strictly past the first separated scalar obstruction rho_s in(11/25,1/2). This is a qualitative all-partition direct interval, using strict Gamma loss on analytic null profiles and annular coercivity, with no new numerical cutoff and no certified overlap closing the all-rho problem.
 - The direct three-cell Gaussian comparison and the corresponding low-influence ternary plurality comparison extend strictly beyond 11/25 and beyond the first separated scalar obstruction between 11/25 and 1/2. Analytic bounded null profiles have strict angular loss, and the annular coercivity controls small profiles. The endpoint is implicit. The same estimates give a quadratic planar orbit-distance deficit near the threshold. The unrestricted intermediate interval remains open.
 - RMA1-RMA4 give all-positive-correlation weighted compactness and uniformly finite adverse radial spaces. RMA5-RMA12 give global polynomial angular losses and qualitative finite-order domination of every radial quadratic direction on compact correlation intervals. At99/100 a160-bit two-mode matrix dominates the isolated positive direction in the explicit span{f,g}, with margin1/30000 in coefficient norm. FA1-FA7 now prove finite-amplitude domination for every partition on[11/25,221/500], giving the explicit direct cutoff221/500. The nonlinear comparison on the remaining correlations stays open.
-- The ordinary-balanced tetrahedral standard block has a certified gap through 17/25. Together with the other symmetry sectors this gives a full interface gap in that range. It leaves the global four-cell comparison open.
+- The ordinary-balanced tetrahedral standard block has a weighted spectral gap through 23/25. Together with the other symmetry sectors this gives a full interface gap in that range. It leaves the global four-cell comparison open.
+- The exact free-mass fractional negative-correlation theorem is dimension-uniform for each fixed k near zero. For k=3, Heilman's inequality extends to fractional assignments on the full negative voting interval. For growing k, the whole negative voting interval has a uniform additive O(|rho|/k) comparison and near-optimal mass control. The exact large-k comparison remains open.
+- At rho=-1/3 the four-cell matched-mass tetrahedral pair has a certified weighted Hessian gap modulo common rotations. The gap upgrades to nearby measurable fractional pairs in a dimension-independent neighborhood of the pair orbit and the correlation. The common mass vector is free.
+- GAC1-GAC9 retain global angular compatibility across radii at every feasible amplitude. The exact rank-one loss is a2D disk optimization; three half-mass types have a sharp positive loss despite zero pairwise penalties. GAC10-GAC13 approximate the true prescribed-profile optimum with an explicit uniform finite-angular-order error. Neither a positive correction nor an approximation error proves the remaining global sign; the explicit all-partition cutoff stays221/500.
+- For sufficiently large k, the full negative voting interval has a matched-mass weighted local gap of order log(k)/k and strict local measurable simplex minimization uniformly in d. Possible global same-partition improvers with free masses approach the simplex in label measure by V20. The radius required to turn this localization into the full exact global inequality is unresolved.
 
 Tracked obligations (computed states):
 
@@ -450,5 +501,6 @@ Tracked obligations (computed states):
 - **verification / open:** [Independently review C3-C12 and the fixed-cell extension A1-A9 in SMALL_POSITIVE_CORRELATION_INTERVAL.md: all-cell interface kernel from M2, tree-bump balance correction, reflection margins, dimension-dependent weighted tails, exact moment gauge, normal-flux limits without junction mass, ell/2 normalization, product-kernel limit, general-k dimension reduction and positive-correlation continuation compactness. Imported first-moment and geometric proofs retain their separate audit limits. The current proof is internal, not independent mathematical or external review. Also audit POSITIVE_CORRELATION_CONTINUATION.md B2-B14: the strict Gaussian exponent window, Hilbert-Schmidt full interaction, rotational mixed nullity, variable facet coefficient and sharp half factor, weak product-kernel convergence, uniform conditional local growth and the refined first-transition alternative. B10 remains a hypothesis outside the small-correlation interval.](../plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md) — VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF
 - **mathematical / open:** [For every k>=2, d>=k-1 and every 0<rho<1 prove that the balanced regular-simplex Gaussian partition globally maximizes noise stability, with equality rigidity. The fixed-k small-correlation interval is now proved internally under the accepted first-moment input. The full correlation range remains open here. At a finite first continuation endpoint, rule out a nonsimplex tied global maximizer and improving maximizers approaching the simplex orbit. Local stability does not exclude the first mechanism, and the pointwise perimeter limit does not by itself control moving maximizers. The continuation obstruction is now sharpened: at a finite first endpoint there is a nonsimplex tied global maximizer or an additional nonrotational interface zero mode. Under B10, the uniform nearby comparison B11 already handles all measurable changes.](../plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md) — GAP-PIS-ALL-CELL-POSITIVE-CORRELATION
 - **mathematical / open:** [For every fixed k>=2 and every 0<rho<1, establish or refute nonnegativity of the full Gaussian simplex interface form q_rho on balanced L2 facet speeds with kernel exactly the rotational speeds. For k>=3, S83 proves this on the explicit initial interval rho<=1/(6*sqrt(3)*k*(k-1)); the arbitrary-correlation conclusion remains open for k>=4. B10 would give a uniform measurable local comparison near each positive correlation and exclude the extra-zero-mode mechanism at a first global endpoint. Even a positive answer does not rule out a nonsimplex tied global maximizer and is not by itself a proof of the Standard Simplex Conjecture.](../plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md) — GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL
+- **mathematical / open:** [Does regular-simplex optimality hold for all sufficiently large k throughout [-1/(k-1),0), uniformly in d>=k-1, for measurable fractional assignments with free masses?](../plurality-stability/NEGATIVE_VOTING_INTERVAL.md) — GAP-PIS-LARGE-ALPHABET-FULL-NEGATIVE-VOTING
 
 [Exact scopes and verification limits](../STATUS.md). Publication, formal verification and independent review are separate statuses. [Dependency routes](../DEPENDENCIES.md) and [scope audit](../SCOPES.md) expose remaining gaps.

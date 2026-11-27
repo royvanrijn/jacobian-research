@@ -1,0 +1,14 @@
+{
+  "command": ".venv/bin/python research/plurality-stability/check_tetrahedral_negative_paired.py",
+  "python": "3.12.3",
+  "python_flint": "0.9.0",
+  "precision_bits": 96,
+  "gauss_legendre_order": 32,
+  "radial_cutoff": 12,
+  "rank_six_residual_hilbert_schmidt_squared_quadrature": "[0.413469201992567468 +/- 3.44e-19]",
+  "absolute_quadrature_and_exterior_error": "[0.00280646134608954190 +/- 1.35e-21]",
+  "rank_six_residual_hilbert_schmidt_norm_bound": "33/50",
+  "normalized_weight_mean_upper": "[0.783695179339635629 +/- 2.04e-19]",
+  "normalized_reciprocal_weight_mean_upper": "[1.48630071709602694 +/- 2.35e-18]",
+  "weighted_balance_angle_squared_upper": "[0.141488459880525497 +/- 1.20e-19]"
+}

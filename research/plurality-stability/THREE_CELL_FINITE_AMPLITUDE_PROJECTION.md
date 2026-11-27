@@ -132,12 +132,17 @@ nonnegativity. Integrating (AP4) and using
  \mathcal L_{\mathrm{ex}}(p)
        \ge \frac9{320}A^2-\frac{20}{27}G^2.                 \tag{AP5}
 \]
-This provides a larger radial deficit margin
-on the certified band of (FA5) using its retained
-spectral and radial inputs. The angular estimate
-itself is analytic, and no mass-cube box search
-is needed for (AP4). The estimates here impose
-no new correlation cutoff.
+Combining (AP5) with (FA6) gives the stricter
+quadratic upper bound
+$-(1001/40000)A^2+2RAG-(89/135)G^2$ for $A<1/200$.
+It is uniformly negative relative to $A^2+G^2$.
+When $A\ge1/200$, (AP3) puts $G/A$ uniformly beyond
+the positive cone of (FA6), which directly supplies
+such a negative margin. Thus this provides a larger
+radial deficit margin on the certified band of
+(FA5) using its retained spectral and radial inputs.
+The angular estimate itself is analytic. The
+estimates here impose no new correlation cutoff.
 
 ## A finite-dimensional test with an optimized angular penalty
 
@@ -178,3 +183,110 @@ is therefore nonpositivity of the right side of (AP6)
 on that finite-dimensional set with $\sum_i\alpha_i=0$.
 Additional angular modes or the simultaneous compatibility
 loss may still be needed to make this test pass.
+
+## Exact clipping with balance and prescribed adverse coefficients
+
+The feasibility term in (AP6) can retain the rebalancing cost and the
+requirement that $\alpha$ stay the adverse projection. Let
+$e_1,\ldots,e_m$ be an orthonormal basis of $E_\rho$ in $L^2(\nu)$,
+and define $g_0=1/J$, $g_j=e_j/\sqrt J$ for $1\le j\le m$.
+They are orthogonal in $L^2(J\,d\nu)$ since
+$e_j\perp J^{-1/2}$ in the balance space (RMA2).
+Also $\|g_j\|_{L^2(Jd\nu)}=1$ for $j\ge1$ and
+$\|g_0\|_{L^2(Jd\nu)}^2=\int 1/J\,d\nu<\infty$ by (RMA1).
+For a trial profile $\bar p=p_*+\alpha/\sqrt J$ let
+\[
+ \mathcal D(\alpha)=\inf\Big\{\int J|p-\bar p|^2d\nu:
+  p(t)\in\Delta_3\text{ a.e.},\quad
+  \int Jg_j(p-\bar p)d\nu=0\quad(0\le j\le m)\Big\}.
+                                                               \tag{AP7}
+\]
+Use $+\infty$ when the constraints are infeasible. The constraint $j=0$
+imposes the prescribed global masses. The others preserve the adverse
+projection. For an actual profile with projection $\alpha$, its squared
+remainder is at least $\mathcal D(\alpha)$. The proof of (AP6) thus permits
+replacing its final integral by $\mathcal D(\alpha)$, restricting to
+the feasible coefficient vectors. A direct lower bound is
+\[
+ \mathcal D(\alpha)\ \ge\ \int J|h|^2d\nu
+   +\frac{|\int h\,d\nu|^2}{\int 1/J\,d\nu}
+   +\sum_{j=1}^m\left|\int Jg_jh\,d\nu\right|^2,
+ \qquad h(t)=\Pi_{\Delta_3}(\bar p(t))-\bar p(t).                \tag{AP8}
+\]
+Indeed, orthogonal projection onto the pointwise simplex gives
+$|p-\bar p|^2\ge |h|^2+|p-\Pi_{\Delta_3}\bar p|^2$.
+The second difference has moments against $g_j$ equal to the negatives
+of those of $h$. Its squared weighted norm bounds the sum of the
+squared norms of its orthogonal projections onto the $g_j$.
+
+The exact cost itself has the finite-multiplier dual
+\[
+ \mathcal D(\alpha)=
+ \sup_{\mu_0,\ldots,\mu_m\in\mathbf1^\perp}
+  \int J(t)\left[\operatorname{dist}(\bar p(t)-v(t),\Delta_3)^2
+                                  -|v(t)|^2\right]d\nu(t),
+ \qquad v=\sum_{j=0}^m\mu_jg_j.                                 \tag{AP9}
+\]
+To include boundary coefficients, let $F(b)$ be the value in (AP7) with
+the moment constraints equal to $b$ instead of zero. The set of
+simplex-valued profiles is bounded, convex, and closed in
+$L^2(J\,d\nu;\mathbb R^3)$, hence weakly compact. The moment map is
+weakly continuous and the squared norm is weakly lower semicontinuous.
+Consequently $F$ is a proper closed convex function of finitely many
+moments, with values $+\infty$ allowed. Its value at zero equals the
+supremum of its affine minorants at zero by finite-dimensional
+separation of the epigraph. Equivalently, it is the supremum over
+$\mu$ of the infimum of the squared norm plus $2\int Jv\cdot(p-\bar p)d\nu$.
+Completing the square and projecting pointwise gives (AP9). The
+pointwise projection is measurable, so the infimum is attained for
+each finite multiplier. The outer supremum need not be attained.
+This strengthens the finite-amplitude test without requiring a
+new spectral estimate. Its sign beyond the existing proved ranges
+still needs to be shown.
+
+## The exact feasible region of adverse coefficients
+
+Write $\alpha_i=\sum_{j=1}^m a_{ij}e_j$ and
+$k(t)=\sqrt{J(t)}(e_1(t),\ldots,e_m(t))$. The coefficient region
+$\mathcal A$ consists of the arrays $a$ obtained from balanced
+simplex-valued profiles. It is compact and convex by the same weak
+compactness argument as (AP7). Every such profile is realized by
+measurable consecutive arcs. For any $\xi_i\in\mathbb R^m$ with
+$\sum_i\xi_i=0$ its support function is
+\[
+ \sup_{a\in\mathcal A}\sum_i\xi_i\cdot a_i
+ =\min_{\lambda\in\mathbb R^3}
+     \left[\frac13\sum_i\lambda_i
+          +\int\max_i\{\xi_i\cdot k(t)-\lambda_i\}\,d\nu(t)\right].
+                                                               \tag{AP10}
+\]
+In fact $a_i=\int k(p_i-1/3)d\nu$ and the constant term cancels
+since $\sum_i\xi_i=0$. Let $V(u)$ be the maximal value of this
+linear objective before centering over profiles of global masses
+$u\in\Delta_3$. Mixing profiles gives concavity and $V$ is finite
+since $k$ is integrable. An affine majorant supporting $V$ at the
+interior mass $p_*$ exists. Its slope $\lambda$ gives equality in
+(AP10): with the mass constraints removed, the modified objective
+is maximized by choosing the label with maximal pointwise score.
+Conversely each price vector gives an upper bound by the same
+pointwise maximization.
+
+If $m=1$, this region is explicit. Let $Q:[0,1]\to\mathbb R$ be
+the nondecreasing quantile of the scalar $k(t)$ under $\nu$, and
+put $c_j=\int_{(j-1)/3}^{j/3}Q(u)du-\tfrac13\int k\,d\nu$,
+for $j=1,2,3$. Then
+\[
+     \mathcal A=\operatorname{conv}\{(c_{\pi(1)},c_{\pi(2)},
+                                  c_{\pi(3)}):\pi\in S_3\} .    \tag{AP11}
+\]
+To verify this, sort the scalar prices $\xi_1\le\xi_2\le\xi_3$.
+The uncentered objective is $\xi_1\int k\,d\nu$ plus
+$(\xi_2-\xi_1)\int k(p_2+p_3)d\nu+(\xi_3-\xi_2)\int kp_3d\nu$.
+Both coefficients are nonnegative, and both terms are maximized
+by taking the largest $2/3$ and $1/3$ of the values of $k$,
+respectively. The nested selections can split quantile ties on
+the nonatomic radial measure. Thus the same profile maximizes
+both terms, giving precisely the support of the stated convex
+hull in each direction. This replaces the enclosing ball in a
+one-mode test by the exact feasible polygon. It also bounds any
+coefficient norm by $\sqrt{c_1^2+c_2^2+c_3^2}$.

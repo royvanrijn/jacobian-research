@@ -314,9 +314,13 @@ and [source ledger](polynomial_dt_duplicated_cycle_source_ledger.json)
 give exact domains and source pins.
 The uniform claims use V1--V4, not finite extrapolation.
 
-The residual determinant problem still includes
-\(\min(a,b)\ge3\) in U2's duplicated-cycle family and
-the other first-deficit passports. Deeper deficits and
+The case \(\min(a,b)=3\) is also closed by the
+[quadratic residue theorem](POLYNOMIAL_DUPLICATED_THREE_CYCLE_COMPONENTS.md).
+The entire duplicated-cycle family is now closed by the
+[four-core path normalization](POLYNOMIAL_DUPLICATED_CYCLE_PATH_NORMALIZATION.md),
+which gives exactly two components for all lengths.
+The residual determinant problem includes
+the other unresolved first-deficit passports. Deeper deficits and
 the unrestricted component classification remain open
 outside already resolved families. Independent replay,
 mathematical review and formal verification remain pending.

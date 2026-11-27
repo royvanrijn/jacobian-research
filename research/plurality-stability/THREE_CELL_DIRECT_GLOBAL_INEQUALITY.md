@@ -2366,3 +2366,33 @@ all-correlation endpoint of the mode-isolation program in DG16.
 The near-one interval and the qualitative scalar-threshold extension
 remain separately scoped; no overlap closing the remaining range is
 established.
+
+
+## Angular compatibility shared across radii
+
+### Proposition DG18 (global moment loss and an all-amplitude angular hierarchy)
+
+For every fixed positive correlation and every ordinary balanced planar
+partition, (GAC7) of the
+[global angular compatibility note](THREE_CELL_GLOBAL_ANGULAR_COMPATIBILITY.md)
+is a valid upper bound for the stability excess, at least as strong as
+(DG29). It retains the actual common first-moment field through a global
+rank-one minorant of the positive radial loss kernel. Its exact optimization
+reduces to one compact two-dimensional matrix disk and pointwise convex
+three-point geometric-median supports. No small-amplitude hypothesis is used.
+
+The shared-radius constraint can matter even when every pair envelope is
+exact. For the three half-mass types, the sharp common-slice deficit is
+(GAC8), strictly positive whenever all three weighted types occur. Every
+separately optimized pair penalty, including the polynomial ones, vanishes
+on this family. The loss is stable under integrated mass errors by (GAC9).
+
+There is also a global finite-angular-order envelope (GAC12), using the same
+two radial fields in every pairing. For all mass profiles and all
+\(0<\rho\le b<1\), its excess over the true prescribed-profile optimum is
+at most
+\(4(1-b)^{-2}[(4b)/(1+3b)]^{n+1}\).
+Its supremum can be approached with at most\(6(n+1)\) switches per slice.
+This uniform error is global in amplitude; it does not prove the envelope
+is nonpositive. The coupled radial optimization and the all-correlation
+comparison remain open. DG18 supplies no new correlation cutoff beyond DG17.

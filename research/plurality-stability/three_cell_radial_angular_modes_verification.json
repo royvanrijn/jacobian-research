@@ -9,7 +9,7 @@
   },
   "checker_sha256": "d4352437e3c17d0cf71be52d8855aa9d11425d848a2ae206d9fcdf5a09a10efa",
   "proof_source": "THREE_CELL_RADIAL_ANGULAR_MODE_ISOLATION.md",
-  "proof_source_sha256": "c344b5597e62efdd7aab771cd8735bf759e446dabca9041dc4e4efd5429828ba",
+  "proof_source_sha256": "ff5c91e2d2a4109aa615e04c46f6574204a06803a32c0d91e9f25c391bbee1c8",
   "input_sources": [
     {
       "path": "plurality-stability/check_three_cell_coupled_radial.py",
